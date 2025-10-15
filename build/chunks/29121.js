@@ -12,8 +12,8 @@ var Chunk979554 = require("./979554.js"),
   Chunk388032 = require("./388032.jsx");
 let o = e => {
     if (null == e) return "";
-    let t = a.intl.string(a.t.z7y5vF);
-    return "baseVariantName" in e && null != e.baseVariantName && e.variantLabel !== t ? a.intl.formatToPlainString(a.t.BZN5k2, {
+    let t = a.intl.string(a.t.z7y5vL);
+    return "baseVariantName" in e && null != e.baseVariantName && e.variantLabel !== t ? a.intl.formatToPlainString(a.t.BZN5k5, {
       baseVariantName: e.baseVariantName,
       variantLabel: e.variantLabel
     }) : e.name
@@ -21,8 +21,8 @@ let o = e => {
   s = e => null == e ? "" : "baseVariantName" in e && null != e.baseVariantName ? e.baseVariantName : null != e.variants && e.variants.length > 0 ? e.variants[0].baseVariantName : e.name,
   l = e => {
     if (null == e) return "";
-    let t = a.intl.string(a.t.z7y5vF);
-    return null != e.baseVariantName && e.variantLabel !== t ? a.intl.formatToPlainString(a.t.BZN5k2, {
+    let t = a.intl.string(a.t.z7y5vL);
+    return null != e.baseVariantName && e.variantLabel !== t ? a.intl.formatToPlainString(a.t.BZN5k5, {
       baseVariantName: e.baseVariantName,
       variantLabel: e.variantLabel
     }) : e.name
@@ -35,11 +35,11 @@ let o = e => {
           product: t
         });
       case r.Z.PROFILE_EFFECT:
-        return a.intl.formatToPlainString(a.t.eR7moP, {
+        return a.intl.formatToPlainString(a.t.eR7moK, {
           product: t
         });
       case r.Z.NAMEPLATE:
-        return a.intl.formatToPlainString(a.t.YFOwHj, {
+        return a.intl.formatToPlainString(a.t.YFOwHh, {
           product: t
         });
       default:

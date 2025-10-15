@@ -22,12 +22,12 @@ function u() {
     platformType: exports,
     children: [(0, Chunk951288.jsx)("div", {
       className: Chunk102971.message,
-      children: Chunk388032.intl.format(Chunk388032.t.RzEB5v, {
+      children: Chunk388032.intl.format(Chunk388032.t.RzEB5u, {
         name: require.name
       })
     }), (0, Chunk951288.jsx)("div", {
       className: i()(Chunk102971.message, Chunk102971.details),
-      children: Chunk388032.intl.string(Chunk388032.t["Q+lNwZ"])
+      children: Chunk388032.intl.string(Chunk388032.t["Q+lNwc"])
     })]
   })
 }

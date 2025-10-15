@@ -1,3 +1,0 @@
-/** Chunk was on 32141 **/
-/** chunk id: 590577, original params: n (module,exports,require) **/
-module.exports = JSON.parse('{"Z1NZwX":["Đ\xe3 x\xf3a"],"+a5G2l":["Kh\xf4ng khả dụng"],"Ys/RrB":["Ngoại tuyến"],"60kAzo":["Trực tuyến"],"aCyHe2":["Kh\xf4ng khả dụng"],"k+RTIm":["Thư mục"],"nB5OZ4":["Thư mục"],"rOMEZd":["T\xean"],"K+zMYp":["G\xf3i"],"k0Y0BE":["Tới xem n\xe0o"],"P2ihv7":["Mời Bạn B\xe8"],"yIH2oI":["Quản l\xfd kế hoạch"],"feUiM/":["C\xe0i đặt"],"n+ZX7y":["Trạng th\xe1i m\xe1y chủ"]}')

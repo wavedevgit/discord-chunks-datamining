@@ -43,7 +43,7 @@ function g(e) {
     } catch (t) {
       null != e && x(e)
     }
-  }, O = d.intl.string(d.t["ETE/oC"]), y = !p && j ? d.intl.formatToPlainString(d.t.nula34, {
+  }, O = d.intl.string(d.t["ETE/oK"]), y = !p && j ? d.intl.formatToPlainString(d.t.nula39, {
     ruleName: null == f ? true : f.name
   }) : true;
   return null != h && (y = (0, r.jsx)(l.Text, {

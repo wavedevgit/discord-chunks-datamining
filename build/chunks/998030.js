@@ -6,7 +6,7 @@ require.d(exports, {
 });
 var Chunk427164 = require("./427164.js"),
   Chunk46841 = require("./46841.js"),
-  Chunk47280 = require("./47280.js");
+  Chunk283066 = require("./283066.js");
 let o = (0, Chunk427164.le)({
   name: "2025-09-wishlist-in-dm-gifting-flow",
   kind: "user",
@@ -28,7 +28,7 @@ function s(e) {
     location: t
   } = e, n = o.useConfig({
     location: t
-  }).enabled, r = (0, a.ZP)({
+  }).enabled, r = (0, a.Z)({
     location: t
   }), s = (0, i.S)({
     location: t

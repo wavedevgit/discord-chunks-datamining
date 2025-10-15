@@ -27,10 +27,10 @@ function g(e) {
     children: [(0, r.jsx)(a.Heading, {
       variant: "heading-md/semibold",
       className: h.header,
-      children: f.intl.string(f.t.HcbnMM)
+      children: f.intl.string(f.t.HcbnMD)
     }), (0, r.jsx)(a.Text, {
       variant: "text-sm/normal",
-      children: f.intl.format(f.t.NkFrzN, {
+      children: f.intl.format(f.t.NkFrzM, {
         onPrivacyClick: () => {
           (0, u.openUserSettings)(c.n.DATA_AND_PRIVACY_PANEL, {
             section: d.oAB.DATA_AND_PRIVACY
@@ -43,13 +43,13 @@ function g(e) {
         variant: "primary",
         size: "sm",
         fullWidth: true,
-        text: f.intl.string(f.t.ebojgD),
+        text: f.intl.string(f.t.ebojgI),
         onClick: () => (0, o.g)([d.pjP.PERSONALIZATION], [])
       }), (0, r.jsx)(a.Button, {
         variant: "secondary",
         size: "sm",
         fullWidth: true,
-        text: f.intl.string(f.t.f3Pet9),
+        text: f.intl.string(f.t.f3Pet7),
         onClick: () => n(p.L.DISMISS)
       })]
     })]

@@ -58,7 +58,7 @@ function y(e) {
       className: E.welcomeCardText,
       color: "status-positive-text",
       variant: "heading-xl/medium",
-      children: g.intl.format(g.t.MLKSln, {
+      children: g.intl.format(g.t.MLKSlp, {
         username: t,
         usernameHook: (e, t) => (0, r.jsx)(a.Text, {
           tag: "span",
@@ -81,7 +81,7 @@ function O(e) {
   return (0, r.jsxs)("div", {
     className: E.welcomeCard,
     role: "img",
-    "aria-label": g.intl.formatToPlainString(g.t["utf8+W"], {
+    "aria-label": g.intl.formatToPlainString(g.t["utf8+f"], {
       username: i
     }),
     children: [(0, r.jsx)(p.Z, {

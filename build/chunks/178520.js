@@ -27,16 +27,16 @@ function s(t, e, n) {
           let O = e.toLowerCase();
           for (let t of null != I ? I : [])
             if (l()(O, t.toLowerCase())) returntrue;
-          let S = false;
+          let A = false;
           if (null != d) {
             let t = null == (c = (0, u.qgQ)(d)) ? true : c.toLowerCase();
-            null != t && (S = l()(O, t))
+            null != t && (A = l()(O, t))
           }
-          if (null != T && !S) {
+          if (null != T && !A) {
             let t = null == (E = (0, u.qgQ)(T)) ? true : E.toLowerCase();
-            null != t && (S = l()(O, t))
+            null != t && (A = l()(O, t))
           }
-          return S
+          return A
         }(t, e, E, n) || c,
         T = false;
       if ((0, r.Lk)(t))

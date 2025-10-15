@@ -38,18 +38,18 @@ let T = (0, Chunk131704.createChannelRecord)({
     } = e;
     switch (r) {
       case y.n_.ACTIVITY:
-        let a = v.intl.formatToPlainString(v.t.WmvMCo, {
+        let a = v.intl.formatToPlainString(v.t.WmvMCg, {
             username: n
           }),
           o = "\n> ".concat(i);
         return null != i ? "".concat(E.jd).concat(a, "*").concat(o, "\n").concat(t) : "".concat(E.jd).concat(a, "*\n").concat(t);
       case y.n_.AVATAR:
-        let s = v.intl.formatToPlainString(v.t.lpaBsB, {
+        let s = v.intl.formatToPlainString(v.t.lpaBsL, {
           username: n
         });
         return "".concat(E.jd).concat(s, "*\n").concat(t);
       case y.n_.STATUS:
-        let l = v.intl.formatToPlainString(v.t.lFXgFV, {
+        let l = v.intl.formatToPlainString(v.t.lFXgFR, {
             username: n
           }),
           c = "\n> ".concat(i);
@@ -61,11 +61,11 @@ let T = (0, Chunk131704.createChannelRecord)({
   A = e => {
     switch (e) {
       case y.n_.ACTIVITY:
-        return v.t.Qn081O;
+        return v.t.Qn081N;
       case y.n_.AVATAR:
-        return v.t.xGNPFK;
+        return v.t.xGNPFB;
       case y.n_.STATUS:
-        return v.t.g9BTCM;
+        return v.t.g9BTCA;
       default:
         (0, _.vE)(e)
     }

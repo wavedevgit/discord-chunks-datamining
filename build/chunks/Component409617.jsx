@@ -26,9 +26,9 @@ function C(n) {
     onClose: s,
     onNext: C,
     onBack: j
-  } = n, _ = (0, g.U0)(), E = (0, r.e7)([x.Z], () => x.Z.getFreeTextAppealReason()), [I, v] = a.useState(""), [T, S] = a.useState(false);
+  } = n, _ = (0, g.U0)(), E = (0, r.e7)([x.Z], () => x.Z.getFreeTextAppealReason()), [v, I] = a.useState(""), [T, S] = a.useState(false);
   a.useEffect(() => {
-    v(null != E ? E : ""), S(_ === p.bK.SOMETHING_ELSE)
+    I(null != E ? E : ""), S(_ === p.bK.SOMETHING_ELSE)
   }, [E, _, i]);
   let A = p.RY.map(n => ({
     value: n,
@@ -43,12 +43,12 @@ function C(n) {
       children: [(0, t.jsx)(o.Heading, {
         className: N.title,
         variant: "heading-xl/semibold",
-        children: u.intl.string(u.t["C5q+pW"])
+        children: u.intl.string(u.t["C5q+pa"])
       }), (0, t.jsx)(o.Text, {
         className: N.subtitle,
         color: "header-secondary",
         variant: "text-md/normal",
-        children: u.intl.string(u.t.VEcRhw)
+        children: u.intl.string(u.t.VEcRh4)
       }), null != s && (0, t.jsx)(o.olH, {
         "data-migration-pending": true,
         className: N.closeButton,
@@ -62,7 +62,7 @@ function C(n) {
         value: _,
         options: A,
         onChange: n => {
-          S(n === p.bK.SOMETHING_ELSE), n !== p.bK.SOMETHING_ELSE && (v(""), c.Z.dispatch({
+          S(n === p.bK.SOMETHING_ELSE), n !== p.bK.SOMETHING_ELSE && (I(""), c.Z.dispatch({
             type: "SAFETY_HUB_APPEAL_SIGNAL_CUSTOM_INPUT_CHANGE",
             userInput: ""
           })), c.Z.dispatch({
@@ -74,19 +74,19 @@ function C(n) {
         children: [(0, t.jsx)(o.Kx8, {
           rows: 4,
           maxLength: 1024,
-          placeholder: u.intl.string(u.t.bQrZIN),
-          value: I,
-          onChange: v,
+          placeholder: u.intl.string(u.t.bQrZIC),
+          value: v,
+          onChange: I,
           autoFocus: true
         }), (0, t.jsx)(o.Text, {
           variant: "text-sm/normal",
           color: "header-muted",
-          children: u.intl.string(u.t.xfNY3L)
+          children: u.intl.string(u.t.xfNY3N)
         })]
       }), (0, t.jsx)(o.Text, {
         variant: "text-sm/normal",
         className: h.disclaimer,
-        children: u.intl.format(u.t["8k9GCW"], {})
+        children: u.intl.format(u.t["8k9GCQ"], {})
       })]
     }), (0, t.jsx)(o.mzw, {
       "data-migration-pending": true,
@@ -94,20 +94,20 @@ function C(n) {
         direction: "horizontal-reverse",
         children: [(0, t.jsx)(o.Button, {
           variant: "primary",
-          text: u.intl.string(u.t.PDTjLN),
+          text: u.intl.string(u.t.PDTjLC),
           onClick: () => {
             c.Z.dispatch({
               type: "SAFETY_HUB_APPEAL_SIGNAL_CUSTOM_INPUT_CHANGE",
-              userInput: I
+              userInput: v
             }), null == C || C()
           }
         }), (0, t.jsx)(o.Button, {
           variant: "secondary",
-          text: u.intl.string(u.t["13/7kX"]),
+          text: u.intl.string(u.t["13/7kZ"]),
           onClick: () => {
             c.Z.dispatch({
               type: "SAFETY_HUB_APPEAL_SIGNAL_CUSTOM_INPUT_CHANGE",
-              userInput: I
+              userInput: v
             }), null == j || j()
           }
         })]

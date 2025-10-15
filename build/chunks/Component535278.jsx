@@ -27,13 +27,13 @@ function g(e, t) {
     minimumFractionDigits: 0,
     maximumFractionDigits: 0
   }).format(t / 100);
-  return e.days > 0 ? h.intl.formatToPlainString(h.t["7mw8CZ"], {
+  return e.days > 0 ? h.intl.formatToPlainString(h.t["7mw8CQ"], {
     days: e.days,
     discountPercentage: n
-  }) : e.hours > 0 ? h.intl.formatToPlainString(h.t["0hYT6o"], {
+  }) : e.hours > 0 ? h.intl.formatToPlainString(h.t["0hYT6u"], {
     hours: e.hours,
     discountPercentage: n
-  }) : h.intl.formatToPlainString(h.t["2rh7rw"], {
+  }) : h.intl.formatToPlainString(h.t["2rh7r6"], {
     minutes: Math.max(e.minutes, 1),
     discountPercentage: n
   })
@@ -66,7 +66,7 @@ let E = function(e) {
       children: g(y, Number(b.discount.amount))
     }), (0, r.jsx)(f.OJ, {
       onClick: v,
-      text: h.intl.string(h.t.zLXssK)
+      text: h.intl.string(h.t.zLXssL)
     })]
   }) : (0, r.jsxs)(i.qXd, {
     color: i.DM8.PREMIUM_TIER_2,
@@ -78,7 +78,7 @@ let E = function(e) {
       className: m.premiumIcon
     }), g(y, Number(b.discount.amount)), (0, r.jsx)(i.EyT, {
       onClick: v,
-      children: h.intl.string(h.t.zLXssK)
+      children: h.intl.string(h.t.zLXssL)
     })]
   })
 }

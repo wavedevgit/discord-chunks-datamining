@@ -47,7 +47,7 @@ function b(e) {
     children: [(0, r.jsx)(l.zxk, {
       disabled: !v,
       variant: "primary",
-      text: f.intl.string(f.t.yG2pUi),
+      text: f.intl.string(f.t.yG2pUl),
       onClick: y
     }), (0, r.jsx)("div", {
       className: h.hiddenInputContainer,

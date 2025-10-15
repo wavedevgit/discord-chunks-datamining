@@ -23,7 +23,7 @@ function m(e) {
   return l()(null != n, "Guild not found"), (0, r.jsxs)(o.AL, {
     guildId: t,
     children: [(0, r.jsx)(c.Z, {
-      children: g.intl.string(g.t["WMyX2+"])
+      children: g.intl.string(g.t.WMyX29)
     }), (0, r.jsx)(s.LZC, {
       size: 32
     }), (0, r.jsx)(d.Z, {

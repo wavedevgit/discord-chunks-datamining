@@ -35,10 +35,10 @@ function p(e, t) {
       }));
       return e.push({
         id: d.Sk.ONLINE,
-        label: u.intl.string(u.t.WbGtnH)
+        label: u.intl.string(u.t.WbGtnJ)
       }, {
         id: d.Sk.OFFLINE,
-        label: u.intl.string(u.t.Vv0abJ)
+        label: u.intl.string(u.t.Vv0abG)
       }), e.map(e => {
         var t, n;
         let {

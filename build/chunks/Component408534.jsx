@@ -43,7 +43,7 @@ function j(e) {
     onSelect: n,
     onInteraction: S,
     navId: "more-settings-context",
-    "aria-label": x.intl.string(x.t.FTLzdR),
+    "aria-label": x.intl.string(x.t.FTLzdX),
     children: [(0, i.jsx)(l.kSQ, {
       children: Z !== v.d4z.GUILD_STAGE_VOICE ? L : null
     }), (0, i.jsxs)(l.kSQ, {

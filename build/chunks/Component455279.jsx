@@ -61,7 +61,7 @@ class b extends Chunk647438.PureComponent {
         disabled: i
       } = this.props,
       a = (0, Chunk13140.BB)(require, true);
-    return e = "RECORDING" === exports ? Chunk388032.intl.string(Chunk388032.t.bmOri0) : 0 === require.length ? Chunk388032.intl.string(Chunk388032.t.co3wt9) : Chunk388032.intl.string(Chunk388032.t.idFMvH), (0, Chunk951288.jsx)(Chunk481060.tEY, {
+    return e = "RECORDING" === exports ? Chunk388032.intl.string(Chunk388032.t.bmOri4) : 0 === require.length ? Chunk388032.intl.string(Chunk388032.t.co3wt7) : Chunk388032.intl.string(Chunk388032.t.idFMvL), (0, Chunk951288.jsx)(Chunk481060.tEY, {
       focusTarget: this._inputRef,
       ringTarget: this._containerRef,
       children: (0, Chunk951288.jsx)("div", {
@@ -77,7 +77,7 @@ class b extends Chunk647438.PureComponent {
             className: Chunk151028.keybindInput,
             children: (0, Chunk951288.jsx)("input", {
               id: this._inputId,
-              placeholder: Chunk388032.intl.string(Chunk388032.t.nWRdnl),
+              placeholder: Chunk388032.intl.string(Chunk388032.t.nWRdnp),
               type: "text",
               ref: this.setInputRef,
               readOnly: true,

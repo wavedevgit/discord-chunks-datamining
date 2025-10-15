@@ -174,15 +174,15 @@ class A extends Chunk647438.PureComponent {
       return (null != (t = e.inviter.username) ? t : "").toLocaleLowerCase()
     }).value();
     return (0, Chunk951288.jsxs)(Chunk481060.iA_, {
-      "aria-label": Chunk388032.intl.string(Chunk388032.t["9F90ic"]),
+      "aria-label": Chunk388032.intl.string(Chunk388032.t["9F90iY"]),
       selectionMode: "none",
       children: [(0, Chunk951288.jsxs)(Chunk481060.xDH, {
         children: [(0, Chunk951288.jsx)(Chunk481060.DwJ, {
           children: Chunk388032.intl.string(Chunk388032.t.EgHyKy)
         }), (0, Chunk951288.jsx)(Chunk481060.DwJ, {
-          children: Chunk388032.intl.string(Chunk388032.t.LBlFEN)
+          children: Chunk388032.intl.string(Chunk388032.t.LBlFEB)
         }), (0, Chunk951288.jsx)(Chunk481060.DwJ, {
-          children: Chunk388032.intl.string(Chunk388032.t["1aM27d"])
+          children: Chunk388032.intl.string(Chunk388032.t["1aM27e"])
         })]
       }), (0, Chunk951288.jsx)(Chunk481060.RMI, {
         items: Chunk120356,
@@ -223,7 +223,7 @@ class A extends Chunk647438.PureComponent {
                   })
                 }), (0, n.jsx)(u.hU, {
                   size: "sm",
-                  "aria-label": E.intl.string(E.t.N86XcP),
+                  "aria-label": E.intl.string(E.t.N86XcH),
                   variant: "critical-secondary",
                   icon: u.XHJ,
                   onClick: () => this.handleRevoke(e)
@@ -248,7 +248,7 @@ class A extends Chunk647438.PureComponent {
         }
       }), (0, Chunk951288.jsx)(Chunk481060.OZU, {
         className: Chunk197571.marginTop20,
-        children: Chunk388032.intl.string(Chunk388032.t["03/rlQ"])
+        children: Chunk388032.intl.string(Chunk388032.t["03/rlZ"])
       })]
     })
   }
@@ -273,10 +273,10 @@ class A extends Chunk647438.PureComponent {
       transitionState: t
     } = this.props;
     return (0, Chunk951288.jsx)(Chunk159691.u_l, {
-      title: Chunk388032.intl.string(Chunk388032.t["9F90ic"]),
-      subtitle: Chunk388032.intl.string(Chunk388032.t.WDw38H),
+      title: Chunk388032.intl.string(Chunk388032.t["9F90iY"]),
+      subtitle: Chunk388032.intl.string(Chunk388032.t.WDw38P),
       actions: [{
-        text: Chunk388032.intl.string(Chunk388032.t.i4jeWR),
+        text: Chunk388032.intl.string(Chunk388032.t.i4jeWV),
         onClick: this.handleClose
       }],
       onClose: module,

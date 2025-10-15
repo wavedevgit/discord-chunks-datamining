@@ -70,7 +70,7 @@ function h(e) {
       children: e => (0, i.jsx)(O.Z, {
         onClick: l,
         icon: s.Dio,
-        tooltip: b.intl.string(b.t.cpT0Cq),
+        tooltip: b.intl.string(b.t.cpT0Cg),
         className: a()(E.closeButton, e)
       })
     })]

@@ -27,21 +27,21 @@ function C(e) {
     onError: j,
     onClose: p,
     redirectUri: v
-  } = e, [b, f] = r.useState(false), k = r.useCallback(async e => {
-    let t, n, {
-        location: r
+  } = e, [f, k] = n.useState(false), b = n.useCallback(async e => {
+    let t, r, {
+        location: n
       } = e,
       {
         callbackCode: s,
         callbackState: l
       } = d;
     try {
-      t = await o.Z.completeTwoWayLink(a, r, s, l)
+      t = await o.Z.completeTwoWayLink(a, n, s, l)
     } catch (e) {
       var i;
-      N.error("".concat(a, " link error:"), e), n = null == (i = e.body) ? true : i.code
+      N.error("".concat(a, " link error:"), e), r = null == (i = e.body) ? true : i.code
     }
-    null != t ? C() : j(n)
+    null != t ? C() : j(r)
   }, [a, d, C, j]), {
     header: g,
     body: E,
@@ -51,48 +51,48 @@ function C(e) {
     clientId: t,
     scopes: s,
     responseType: "code",
-    callback: k,
+    callback: b,
     isTrustedName: true,
     isEmbeddedFlow: true,
     redirectUri: v,
     isTwoWayLinkDiscordConsent: true
-  }), R = r.useCallback(() => {
-    l()(null != O, "sendAuthorize not available"), f(true), O(true)
+  }), y = n.useCallback(() => {
+    l()(null != O, "sendAuthorize not available"), k(true), O(true)
   }, [O]);
-  return (0, n.jsxs)(u.Z, {
-    children: [(0, n.jsxs)(i.xBx, {
+  return (0, r.jsxs)(u.Z, {
+    children: [(0, r.jsxs)(i.xBx, {
       direction: c.Z.Direction.VERTICAL,
       className: m.header,
       separator: false,
-      children: [(0, n.jsx)(i.Text, {
+      children: [(0, r.jsx)(i.Text, {
         className: m.stepHeader,
         variant: "text-xs/bold",
         color: "header-secondary",
-        children: h.intl.format(h.t.fHz6eR, {
+        children: h.intl.format(h.t.fHz6eX, {
           number: 2,
           total: 2
         })
-      }), null != p && (0, n.jsx)(i.olH, {
+      }), null != p && (0, r.jsx)(i.olH, {
         className: m.closeButton,
         onClick: p
       })]
-    }), (0, n.jsxs)(i.hzk, {
+    }), (0, r.jsxs)(i.hzk, {
       className: m.consentContent,
       paddingFix: false,
-      children: [(0, n.jsx)("div", {
+      children: [(0, r.jsx)("div", {
         className: m.consentHeader,
         children: g
       }), E, T]
-    }), (0, n.jsx)(i.mzw, {
+    }), (0, r.jsx)(i.mzw, {
       className: m.footer,
-      children: (0, n.jsx)("div", {
+      children: (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: m.footerButton,
-        children: (0, n.jsx)(i.Button, {
+        children: (0, r.jsx)(i.Button, {
           variant: "primary",
-          text: h.intl.string(h.t.ZN4hkc),
-          loading: b,
-          onClick: R
+          text: h.intl.string(h.t.ZN4hkZ),
+          loading: f,
+          onClick: y
         })
       })
     })]

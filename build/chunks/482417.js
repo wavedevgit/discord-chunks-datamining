@@ -64,13 +64,13 @@ function f(e) {
     m = f.name,
     g = {
       onClick: () => (0, i.o)(o.Hw.TRACK, u.external_id),
-      ariaDescription: s.intl.formatToPlainString(s.t.xTsar2, {
+      ariaDescription: s.intl.formatToPlainString(s.t.xTsar6, {
         itemName: _
       })
     },
     E = {
       onClick: () => (0, i.o)(o.Hw.ARTIST, f.external_id),
-      ariaDescription: s.intl.formatToPlainString(s.t.xTsar2, {
+      ariaDescription: s.intl.formatToPlainString(s.t.xTsar6, {
         itemName: m
       })
     };
@@ -83,7 +83,7 @@ function f(e) {
     titleClickable: g,
     subtitleClickable: E,
     thumbnailClickable: g,
-    userDescription: s.t.CcVI1T,
+    userDescription: s.t.CcVI1d,
     providerIconProps: t
   })
 }

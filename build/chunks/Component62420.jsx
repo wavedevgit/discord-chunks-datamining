@@ -31,7 +31,7 @@ function d(e) {
   }
   return null == u && 0 === f.length ? null : (0, i.jsxs)(r.sNh, {
     id: "move-to-category",
-    label: o.intl.string(o.t.FAplms),
+    label: o.intl.string(o.t.FAplmp),
     children: [null != u && (0, i.jsx)(r.kSQ, {
       children: (0, i.jsx)(r.sNh, {
         id: "favorite-uncategorized",

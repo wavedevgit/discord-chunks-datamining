@@ -227,7 +227,7 @@ function D(e) {
       scaleFontToUserSetting: true,
       children: t.pollMedia.text
     }), t.didSelfVote && (0, r.jsx)(s.T, {
-      children: y.intl.string(y.t["8DAM+5"])
+      children: y.intl.string(y.t["8DAM+/"])
     }), a && (0, r.jsx)(R, {
       percentage: t.votesPercentage,
       label: t.votes,

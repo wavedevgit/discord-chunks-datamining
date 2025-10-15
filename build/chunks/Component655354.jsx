@@ -26,7 +26,7 @@ function u(e) {
     }) : (0, r.jsx)(a.Text, {
       variant: "text-xs/medium",
       className: c.text,
-      children: s.intl.string(s.t.k5WiPf)
+      children: s.intl.string(s.t.k5WiPT)
     })
   })
 }

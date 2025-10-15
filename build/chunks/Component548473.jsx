@@ -1,10 +1,10 @@
 /** Chunk was on 58227 **/
 /** chunk id: 548473, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  B0: () => A,
+  B0: () => P,
   ZP: () => L,
-  _I: () => C,
-  xm: () => P
+  _I: () => A,
+  xm: () => C
 }), require("./49124.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -81,7 +81,7 @@ function G(e) {
   }, [n, t, e]), n
 }
 
-function P() {
+function C() {
   let e = G(Chunk180504);
   return (0, Chunk951288.jsx)("div", {
     className: a()(Chunk577436.leftArt, Chunk577436.altFloat),
@@ -92,7 +92,7 @@ function P() {
   })
 }
 
-function A() {
+function P() {
   let e = G(Chunk535170);
   return (0, Chunk951288.jsx)("div", {
     className: a()(Chunk577436.rightArt, Chunk577436.altFloat),
@@ -103,12 +103,12 @@ function A() {
   })
 }
 
-function C(e) {
+function A(e) {
   let {
     guild: t,
     mainIslandClassName: n,
     balloonDogClassName: i
-  } = e, s = (0, c.e7)([m.Z], () => m.Z.useReducedMotion), d = r.useRef(null), u = G(S), g = I.ZP.getGuildIconURL({
+  } = e, s = (0, c.e7)([m.Z], () => m.Z.useReducedMotion), d = r.useRef(null), u = G(E), g = I.ZP.getGuildIconURL({
     id: t.id,
     icon: t.icon,
     size: 96
@@ -116,7 +116,7 @@ function C(e) {
   return r.useEffect(() => {
     let e;
     return null != d.current && null != g ? (0, p.OF)(g).then(t => {
-      let n = (0, E.Z)(JSON.parse(JSON.stringify(T)), g, t[0]);
+      let n = (0, S.Z)(JSON.parse(JSON.stringify(T)), g, t[0]);
       e = o().loadAnimation({
         container: d.current,
         renderer: "svg",
@@ -188,7 +188,7 @@ function L(e) {
           variant: "text-lg/normal",
           color: "always-white",
           id: a,
-          children: v.intl.format(v.t["j59F/c"], {
+          children: v.intl.format(v.t["j59F/f"], {
             guildName: null == t ? true : t.name
           })
         }), o ? (0, l.jsx)(d.$jN, {
@@ -197,12 +197,12 @@ function L(e) {
           className: b.__invalid_subtitle,
           variant: "heading-xxl/normal",
           color: "always-white",
-          children: v.intl.string(v.t.Q5ibtV)
+          children: v.intl.string(v.t.Q5ibtb)
         }) : (0, l.jsx)(d.Heading, {
           className: b.__invalid_subtitle,
           variant: "heading-xxl/normal",
           color: "always-white",
-          children: v.intl.string(v.t["Alcl/e"])
+          children: v.intl.string(v.t["Alcl/f"])
         })]
       })]
     })

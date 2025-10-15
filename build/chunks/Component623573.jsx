@@ -59,7 +59,7 @@ function p(e) {
     },
     onStepChange: () => {},
     header: (0, r.jsx)(o.xBx, {
-      title: u.intl.string(u.t.eQ2bLp)
+      title: u.intl.string(u.t.eQ2bLi)
     }),
     analyticsLocation: n,
     hideBreadcrumbs: true,
@@ -74,7 +74,7 @@ function p(e) {
     transitionState: t,
     onClose: i,
     size: "sm",
-    "aria-label": u.intl.string(u.t.eQ2bLp),
+    "aria-label": u.intl.string(u.t.eQ2bLi),
     children: (0, r.jsx)("form", {
       className: d.form,
       onSubmit: g,

@@ -28,7 +28,7 @@ function l(e) {
     icon: n(154239),
     timestamp: t.timestamp,
     compact: l,
-    children: null != m ? o.intl.format(o.t.AcqBmO, {
+    children: null != m ? o.intl.format(o.t.AcqBmJ, {
       username: p,
       usernameHook: h,
       callDuration: m
@@ -40,16 +40,16 @@ function l(e) {
     icon: n(344163),
     timestamp: t.timestamp,
     compact: l,
-    children: [null != m ? o.intl.format(o.t["7TeC1P"], {
+    children: [null != m ? o.intl.format(o.t["7TeC1N"], {
       username: p,
       usernameHook: h,
       callDuration: m
-    }) : o.intl.format(o.t.LuB5RD, {
+    }) : o.intl.format(o.t.LuB5RE, {
       username: p,
       usernameHook: h
     }), u ? (0, r.jsx)(a.Z.Action, {
       onClick: f,
-      children: o.intl.string(o.t.oa9mvZ)
+      children: o.intl.string(o.t.oa9mvb)
     }) : null]
   })
 }

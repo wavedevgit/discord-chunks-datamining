@@ -1,5 +1,5 @@
 /** Chunk was on 48748 **/
-/** chunk id: 281556, original params: t,n,i (module,exports,require) **/
+/** chunk id: 281556, original params: t,i,n (module,exports,require) **/
 module.exports = {
   missingEntitlementImage: "missingEntitlementImage__65266",
   text: "text__65266"

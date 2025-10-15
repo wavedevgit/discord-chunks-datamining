@@ -51,7 +51,7 @@ function u(e, t) {
 }
 
 function d(e) {
-  return e ? o.intl.string(o.t.S5anIc) : o.intl.string(o.t.q3O3J8)
+  return e ? o.intl.string(o.t.S5anIS) : o.intl.string(o.t.q3O3Jy)
 }
 
 function f(e) {

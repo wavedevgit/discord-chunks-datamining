@@ -57,7 +57,7 @@ class h extends Chunk647438.Component {
       circle: (0, Chunk951288.jsx)(p, {
         IconComponent: Chunk481060.Que
       }),
-      smallHeader: Chunk388032.intl.string(Chunk388032.t.u81aYY),
+      smallHeader: Chunk388032.intl.string(Chunk388032.t.u81aYW),
       text: (0, Chunk55935.vc)(module.releaseDate, "LL")
     });
     if (module.type === Chunk981631.AzA.RELEASE_DATE) return (0, Chunk951288.jsx)(f, {
@@ -65,7 +65,7 @@ class h extends Chunk647438.Component {
       circle: (0, Chunk951288.jsx)(p, {
         IconComponent: Chunk481060.Que
       }),
-      smallHeader: Chunk388032.intl.string(Chunk388032.t.qpwaNY),
+      smallHeader: Chunk388032.intl.string(Chunk388032.t.qpwaNT),
       text: (0, Chunk55935.vc)(module.releaseDate, "LL")
     });
     if (module.type === Chunk981631.AzA.EARLY_ACCESS)
@@ -75,7 +75,7 @@ class h extends Chunk647438.Component {
           IconComponent: Chunk481060.d$P,
           className: Chunk529368.earlyAccess
         }),
-        smallHeader: Chunk388032.intl.string(Chunk388032.t.HYys0s),
+        smallHeader: Chunk388032.intl.string(Chunk388032.t.HYys0t),
         text: (0, Chunk55935.vc)(module.releaseDate, "LL")
       });
       else return (0, Chunk951288.jsx)(f, {
@@ -84,7 +84,7 @@ class h extends Chunk647438.Component {
           IconComponent: Chunk481060.d$P,
           className: Chunk529368.earlyAccess
         }),
-        text: Chunk388032.intl.string(Chunk388032.t.HYys0s)
+        text: Chunk388032.intl.string(Chunk388032.t.HYys0t)
       });
     return module.type === Chunk981631.AzA.FLAVOR_TEXT ? (0, Chunk951288.jsx)(f, {
       circle: (0, Chunk951288.jsx)(p, {

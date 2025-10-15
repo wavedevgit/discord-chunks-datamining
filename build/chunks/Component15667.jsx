@@ -8,7 +8,7 @@ require("./647438.js");
 var Chunk392711 = require("./392711.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk833540 = require("./833540.js"),
+  Chunk764295 = require("./764295.js"),
   Chunk158168 = require("./158168.js");
 let c = e => {
   let t = (0, i.flatMap)(e.history, e => {
@@ -25,7 +25,7 @@ let c = e => {
       className: s.breadcrumbsHeader,
       color: "header-secondary",
       variant: "heading-sm/semibold",
-      children: e.isModeratorReport ? a.intl.string(o.default["6mx/DP"]) : a.intl.string(a.t["+3V9Tp"])
+      children: e.isModeratorReport ? a.intl.string(o.default["6mx/DA"]) : a.intl.string(a.t["+3V9Tk"])
     }), t.map((e, t) => (0, r.jsxs)("div", {
       className: s.breadcrumbContainer,
       children: [(0, r.jsx)("div", {

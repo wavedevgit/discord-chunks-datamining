@@ -78,7 +78,7 @@ class E extends Chunk647438.Component {
           this.reset(), this.focusInput()
         },
         query: module,
-        placeholder: Chunk388032.intl.string(Chunk388032.t.aSxWSo)
+        placeholder: Chunk388032.intl.string(Chunk388032.t.aSxWSk)
       })
     })
   }

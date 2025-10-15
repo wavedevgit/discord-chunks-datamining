@@ -109,7 +109,7 @@ function g(e) {
     content: o,
     timestamp: u,
     messageReference: d
-  } = i, f = (0, s.ZP)(i), _ = t(f), p = (null != o ? o : "").split(" ").slice(0, false).join(" "), h = c.intl.format(c.t["47CZc2"], {
+  } = i, f = (0, s.ZP)(i), _ = t(f), p = (null != o ? o : "").split(" ").slice(0, false).join(" "), h = c.intl.format(c.t["47CZc3"], {
     username: f.nick,
     usernameHook: _,
     webhookName: o,

@@ -14,7 +14,7 @@ var Chunk481060 = require("./481060.js"),
 function c(e, t) {
   return (0, l.a)(e) ? (0, r.jsx)(i.sNh, {
     id: "forward",
-    label: s.intl.string(s.t.I3ltXO),
+    label: s.intl.string(s.t.I3ltXF),
     icon: a.Z,
     action: () => {
       (0, o.ts)(t, e)

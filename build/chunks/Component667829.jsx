@@ -207,7 +207,7 @@ class G extends Chunk647438.Component {
       isPreviewing: n,
       showValueWhenDisabled: r
     } = this.props;
-    return module && !require ? Chunk951288 ? "" : Chunk388032.intl.string(Chunk388032.t.IYKTTc) : exports
+    return module && !require ? Chunk951288 ? "" : Chunk388032.intl.string(Chunk388032.t.IYKTTU) : exports
   }
   render() {
     var e, t, n, i, a, s;
@@ -441,8 +441,8 @@ class G extends Chunk647438.Component {
         } = e;
         return "is_directory" === t
       })) && (0, h.openUploadError)({
-        title: w.intl.string(w.t.azO1Pe),
-        help: w.intl.string(w.t["Koklr/"])
+        title: w.intl.string(w.t.azO1PT),
+        help: w.intl.string(w.t.Koklr6)
       }), false) : (e.preventDefault(), e.stopPropagation(), this.saveCurrentText(), O(I), this.focus(), true)
     }), this._unsubscribe = S.p8.subscribe(e => {
       requestAnimationFrame(() => {

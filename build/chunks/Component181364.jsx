@@ -14,7 +14,7 @@ var Chunk13245 = require("./13245.js"),
   Chunk312839 = require("./312839.js"),
   Chunk987650 = require("./987650.js"),
   Chunk388032 = require("./388032.jsx");
-let p = e => (0, s.QR)(e, (0, c.P)(), u.t["z8/sgJ"]);
+let p = e => (0, s.QR)(e, (0, c.P)(), u.t["z8/sgI"]);
 
 function h(e) {
   let {
@@ -39,7 +39,7 @@ function h(e) {
     return e
   }({
     icon: n(328756),
-    title: u.intl.string(u.t.pkXAeG),
+    title: u.intl.string(u.t.pkXAeH),
     body: null,
     hint: p,
     notifType: d.n0.WelcomeNudge

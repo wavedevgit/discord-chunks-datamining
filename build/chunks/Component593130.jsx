@@ -68,7 +68,7 @@ function Z(e) {
         }), (0, r.jsx)(c.Heading, {
           variant: "heading-md/semibold",
           className: b.title,
-          children: p.intl.string(p.t.E3H5lE)
+          children: p.intl.string(p.t.E3H5lJ)
         }), Z ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)("div", {
             className: b.divider
@@ -104,7 +104,7 @@ function Z(e) {
         }) : null, (0, r.jsx)(c.P3F, {
           className: b.closeIcon,
           onClick: a,
-          "aria-label": p.intl.string(p.t.cpT0Cq),
+          "aria-label": p.intl.string(p.t.cpT0Cg),
           children: (0, r.jsx)(c.Dio, {
             size: "md",
             color: "currentColor"
@@ -138,7 +138,7 @@ function w(e) {
     onChange: e => n(e),
     onClear: () => n(""),
     onKeyDown: e => "Enter" === e.key && l(),
-    placeholder: p.intl.string(p.t.h0JN7Q),
-    "aria-label": p.intl.string(p.t.h0JN7Q)
+    placeholder: p.intl.string(p.t.h0JN7e),
+    "aria-label": p.intl.string(p.t.h0JN7e)
   })
 }

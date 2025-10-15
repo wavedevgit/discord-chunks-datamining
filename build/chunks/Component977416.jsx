@@ -39,8 +39,8 @@ function O(e) {
       }
       return i
     }(e, ["gameName", "onClick"]);
-  let f = null != i ? i : p.intl.string(p.t.GIWFlF),
-    O = p.intl.formatToPlainString(p.t["3mb1s5"], {
+  let f = null != i ? i : p.intl.string(p.t.GIWFlJ),
+    O = p.intl.formatToPlainString(p.t["3mb1s7"], {
       game: f
     }),
     y = (0, o.e7)([u.Z], () => u.Z.suggestedFetchIsLoading);
@@ -106,7 +106,7 @@ function y(e) {
       className: m.header,
       children: [(0, n.jsx)(c.P3F, {
         className: m.dismissButton,
-        "aria-label": p.intl.string(p.t["pUR+3g"]),
+        "aria-label": p.intl.string(p.t["pUR+3t"]),
         onClick: i,
         children: (0, n.jsx)(c.Dio, {
           size: "sm",
@@ -116,7 +116,7 @@ function y(e) {
         id: u,
         variant: "text-xs/medium",
         color: "text-secondary",
-        children: p.intl.string(p.t.zMUr6Z)
+        children: p.intl.string(p.t.zMUr6e)
       })]
     }), (0, n.jsx)(f.Z, {
       games: r,

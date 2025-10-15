@@ -115,9 +115,9 @@ function b(e) {
     null == (t = R.onBlur) || t.call(R, e, y), null == (n = D.setIsFocused) || n.call(D, false)
   }, j = i.useMemo(() => {
     var e, t;
-    return null === C || "" === C ? null : null != C ? C : P ? null != A && (null != (e = null == T ? true : T.length) ? e : 0) < A ? u.intl.formatToPlainString(u.t["62rk1K"], {
+    return null === C || "" === C ? null : null != C ? C : P ? null != A && (null != (e = null == T ? true : T.length) ? e : 0) < A ? u.intl.formatToPlainString(u.t["62rk1N"], {
       minLength: A
-    }) : null != I && (null != (t = null == T ? true : T.length) ? t : 0) > I ? u.intl.formatToPlainString(u.t.ICT5S6, {
+    }) : null != I && (null != (t = null == T ? true : T.length) ? t : 0) > I ? u.intl.formatToPlainString(u.t.ICT5S0, {
       maxLength: I
     }) : null : null
   }, [C, P, A, I, null == T ? true : T.length]), k = null != C && "" !== C || null != j;

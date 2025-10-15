@@ -12,8 +12,8 @@ var Chunk481060 = require("./481060.js"),
 function c(e) {
   return (0, r.jsx)(i.sNh, {
     id: "delete-channel",
-    label: o.intl.string(o.t.Jg0R7Q),
-    subtext: o.intl.string(o.t["+mNKM9"]),
+    label: o.intl.string(o.t.Jg0R7e),
+    subtext: o.intl.string(o.t["+mNKMz"]),
     color: "danger",
     action: () => (0, i.ZDy)(async () => {
       let {

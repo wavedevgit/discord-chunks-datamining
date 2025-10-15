@@ -14,7 +14,7 @@ let o = function() {
   return (0, Chunk951288.jsx)(Chunk993750.Z, {
     children: (0, Chunk951288.jsx)(Chunk353672.Z, {
       tips: module,
-      headerText: Chunk388032.intl.string(Chunk388032.t["0QSL1C"])
+      headerText: Chunk388032.intl.string(Chunk388032.t["0QSL1N"])
     })
   })
 }

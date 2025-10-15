@@ -39,13 +39,13 @@ function c(e) {
     }), (0, r.jsx)(l.Text, {
       color: "header-secondary",
       variant: "text-md/normal",
-      children: o.intl.string(o.t.jmq9GC)
+      children: o.intl.string(o.t.jmq9GB)
     }), d || u ? (0, r.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
       className: i.cta,
       children: (0, r.jsx)(l.Button, {
         variant: "primary",
-        text: o.intl.string(o.t.rBIGBL),
+        text: o.intl.string(o.t.rBIGBA),
         onClick: c
       })
     }) : null]

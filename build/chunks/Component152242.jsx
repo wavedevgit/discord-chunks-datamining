@@ -53,7 +53,7 @@ let O = {
   }({}, e)),
   options: {
     isLargeModal: true,
-    useBreadcrumbLabel: () => Chunk388032.intl.string(Chunk388032.t["W685+b"])
+    useBreadcrumbLabel: () => Chunk388032.intl.string(Chunk388032.t["W685+f"])
   }
 };
 
@@ -72,7 +72,7 @@ function S(e) {
       onClick: () => t(u),
       disabled: a,
       loading: s,
-      text: T.intl.string(T.t.XiOHRX)
+      text: T.intl.string(T.t.XiOHRU)
     }), l ? (0, i.jsx)(m.Z, {
       onClick: n
     }) : null]
@@ -128,7 +128,7 @@ function k(e) {
             validateSelectedGift: R,
             searchableSelectWrapperClassName: E.recipientPickerSelectWrapper
           }), (0, i.jsx)(f.Z, {
-            sectionTitle: T.intl.string(T.t.B3miE8),
+            sectionTitle: T.intl.string(T.t.B3miEx),
             onTextChange: e => null == p ? true : p(e),
             pendingText: m,
             currentText: m,
@@ -143,7 +143,7 @@ function k(e) {
               className: E.giftPreviewContainer,
               children: [(0, i.jsx)(r.vwX, {
                 className: E.giftPreviewTitle,
-                children: T.intl.string(T.t.PpoJzt)
+                children: T.intl.string(T.t.PpoJzs)
               }), (0, i.jsxs)("div", {
                 className: E.giftPreviewContent,
                 children: [(0, i.jsx)("div", {
@@ -200,7 +200,7 @@ function G(e) {
   return (0, i.jsx)("div", {
     className: E.viewItemButton,
     children: (0, i.jsx)(r.Avr, {
-      text: T.intl.string(T.t.ImioFL),
+      text: T.intl.string(T.t.ImioFB),
       onClick: function() {
         var e;
         t();

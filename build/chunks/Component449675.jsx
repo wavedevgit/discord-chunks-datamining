@@ -12,9 +12,9 @@ var Chunk481060 = require("./481060.js"),
 function l(e) {
   var t, r, {
       ruleName: l,
-      onConfirm: f
+      onConfirm: a
     } = e,
-    u = function(e, t) {
+    f = function(e, t) {
       if (null == e) return {};
       var r, n, o = function(e, t) {
         if (null == e) return {};
@@ -30,8 +30,8 @@ function l(e) {
       return o
     }(e, ["ruleName", "onConfirm"]);
   let {
-    setEditingRule: a
-  } = (0, c.V)(), b = null != l ? l : i.intl.string(i.t.ffR2cM);
+    setEditingRule: u
+  } = (0, c.V)(), p = null != l ? l : i.intl.string(i.t.ffR2cH);
   return (0, n.jsx)(o.ConfirmModal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
@@ -49,17 +49,17 @@ function l(e) {
       })
     }
     return e
-  }({}, u), r = r = {
-    header: i.intl.string(i.t.kknTmH),
-    cancelText: i.intl.string(i.t["ETE/oC"]),
-    confirmText: i.intl.string(i.t["cY+Oob"]),
+  }({}, f), r = r = {
+    header: i.intl.string(i.t.kknTmJ),
+    cancelText: i.intl.string(i.t["ETE/oK"]),
+    confirmText: i.intl.string(i.t["cY+Ooa"]),
     onConfirm: () => {
-      a(null), null == f || f()
+      u(null), null == a || a()
     },
     children: (0, n.jsx)(o.Text, {
       variant: "text-md/normal",
-      children: i.intl.format(i.t["ff/gx7"], {
-        ruleName: b
+      children: i.intl.format(i.t["ff/gx8"], {
+        ruleName: p
       })
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {

@@ -1,8 +1,8 @@
 /** Chunk was on 31667 **/
 /** chunk id: 880229, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ImportBenefitsFromRoleModal: () => A,
-  ImportBenefitsFromSubscriptionListingModal: () => D
+  ImportBenefitsFromRoleModal: () => W,
+  ImportBenefitsFromSubscriptionListingModal: () => L
 }), require("./388685.js"), require("./953529.js"), require("./361932.js"), require("./187205.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -36,9 +36,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk161270 = require("./161270.js");
 let z = (0, Chunk313201.hQ)(),
   E = (0, Chunk313201.hQ)(),
-  O = (0, Chunk624138.Mg)(Chunk477690.Z.IMPORT_BENEFITS_MODAL_ROLE_ICON_SIZE);
+  P = (0, Chunk624138.Mg)(Chunk477690.Z.IMPORT_BENEFITS_MODAL_ROLE_ICON_SIZE);
 
-function P(e) {
+function R(e) {
   var t;
   let {
     emojiId: n,
@@ -53,7 +53,7 @@ function P(e) {
   })
 }
 
-function R(e) {
+function O(e) {
   let {
     icon: t,
     children: n,
@@ -62,34 +62,34 @@ function R(e) {
     onChange: a
   } = e, s = r || l;
   return (0, i.jsxs)("label", {
-    className: o()(M.row, {
-      [M.checked]: s,
-      [M.disabled]: l
+    className: o()(B.row, {
+      [B.checked]: s,
+      [B.disabled]: l
     }),
     children: [(0, i.jsx)("div", {
-      className: M.rowIconWrapper,
+      className: B.rowIconWrapper,
       children: t
     }), (0, i.jsx)("div", {
-      className: M.rowText,
+      className: B.rowText,
       children: n
     }), (0, i.jsxs)("div", {
-      className: M.rowCheckbox,
+      className: B.rowCheckbox,
       children: [(0, i.jsx)(m.tEY, {
         children: (0, i.jsx)("input", {
           type: "checkbox",
           checked: s,
           disabled: l,
-          className: M.checkboxInput,
+          className: B.checkboxInput,
           onChange: function(e) {
             a(e.target.checked)
           }
         })
       }), (0, i.jsx)("div", {
-        className: M.checkboxDisplay,
+        className: B.checkboxDisplay,
         children: (0, i.jsx)(m.dz2, {
           size: "md",
           color: "currentColor",
-          className: M.checkboxIcon,
+          className: B.checkboxIcon,
           "aria-hidden": true
         })
       })]
@@ -97,7 +97,7 @@ function R(e) {
   })
 }
 
-function L(e) {
+function D(e) {
   let {
     title: t,
     selectAllText: n,
@@ -107,18 +107,18 @@ function L(e) {
     onToggleBenefit: a
   } = e, s = r.every(e => o.has(e));
   return r.length > 0 ? (0, i.jsxs)("div", {
-    className: M.section,
+    className: B.section,
     children: [(0, i.jsx)(m.Heading, {
       variant: "heading-md/semibold",
       color: "header-primary",
       children: t
     }), r.length - l.size > 1 && (0, i.jsx)("div", {
-      className: M.list,
-      children: (0, i.jsx)(R, {
+      className: B.list,
+      children: (0, i.jsx)(O, {
         icon: (0, i.jsx)(m.avL, {
           size: "md",
           color: "currentColor",
-          className: M.rowIcon
+          className: B.rowIcon
         }),
         checked: s,
         onChange: function(e) {
@@ -131,12 +131,12 @@ function L(e) {
         })
       })
     }), (0, i.jsx)("div", {
-      className: M.list,
-      children: r.map(e => (0, i.jsxs)(R, {
-        icon: (0, i.jsx)(P, {
+      className: B.list,
+      children: r.map(e => (0, i.jsxs)(O, {
+        icon: (0, i.jsx)(R, {
           emojiId: e.emoji_id,
           emojiName: e.emoji_name,
-          className: M.rowIcon
+          className: B.rowIcon
         }),
         checked: o.has(e),
         disabled: l.has(e),
@@ -155,7 +155,7 @@ function L(e) {
   }) : null
 }
 
-function D(e) {
+function L(e) {
   let {
     transitionState: t,
     fromSubscriptionListing: n,
@@ -182,32 +182,32 @@ function D(e) {
     children: (0, i.jsxs)(a.Modal, {
       transitionState: t,
       onClose: d,
-      title: B.intl.format(B.t["7zpiYL"], {
+      title: M.intl.format(M.t["7zpiYG"], {
         tierName: n.name
       }).toString(),
       actions: [{
         variant: "secondary",
-        text: B.intl.string(B.t["ETE/oC"]),
+        text: M.intl.string(M.t["ETE/oK"]),
         onClick: d
       }, {
         variant: "primary",
-        text: B.intl.string(B.t["27a21y"]),
+        text: M.intl.string(M.t["27a219"]),
         disabled: 0 === u.size,
         onClick: b
       }],
       children: [0 === g.length && 0 === j.length && (0, i.jsx)(m.Text, {
         variant: "text-md/normal",
-        children: B.intl.string(B.t["I+16xv"])
-      }), (0, i.jsx)(L, {
-        title: B.intl.string(B.t.S2kKzP),
-        selectAllText: B.intl.string(B.t["5Q/fLO"]),
+        children: M.intl.string(M.t["I+16xs"])
+      }), (0, i.jsx)(D, {
+        title: M.intl.string(M.t.S2kKzM),
+        selectAllText: M.intl.string(M.t["5Q/fLC"]),
         benefits: g,
         dupeBenefits: p,
         selectedBenefits: u,
         onToggleBenefit: v
-      }), (0, i.jsx)(L, {
-        title: B.intl.string(B.t.RdwKw7),
-        selectAllText: B.intl.string(B.t.aJPLVE),
+      }), (0, i.jsx)(D, {
+        title: M.intl.string(M.t.RdwKw8),
+        selectAllText: M.intl.string(M.t.aJPLVF),
         benefits: j,
         dupeBenefits: _,
         selectedBenefits: u,
@@ -227,13 +227,13 @@ function H(e) {
   } = e, a = (0, p.p9)({
     guildId: n,
     roleId: r.id,
-    size: O
+    size: P
   });
   return (0, i.jsxs)(m.P3F, {
-    className: M.roleRow,
+    className: B.roleRow,
     onClick: o,
     children: [(0, i.jsx)("div", {
-      className: M.rowIconWrapper,
+      className: B.rowIconWrapper,
       children: null != a ? (0, i.jsx)(f.Z, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -256,24 +256,24 @@ function H(e) {
         width: 23,
         height: 23,
         color: null != (t = r.colorString) ? t : Z.Pbq,
-        className: M.roleRowIconDefault
+        className: B.roleRowIconDefault
       })
     }), (0, i.jsxs)("div", {
-      className: M.rowText,
+      className: B.rowText,
       children: [(0, i.jsx)(m.Text, {
         color: "header-primary",
         variant: "text-md/normal",
-        className: M.__invalid_benefitTitle,
+        className: B.__invalid_benefitTitle,
         children: r.name
       }), (0, i.jsx)(m.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
-        children: B.intl.format(B.t["2KzH89"], {
+        children: M.intl.format(M.t["2KzH8/"], {
           num: l
         })
       })]
     }), (0, i.jsx)("div", {
-      className: M.rowCheckbox,
+      className: B.rowCheckbox,
       children: (0, i.jsx)(I.Z, {
         direction: I.Z.Directions.RIGHT
       })
@@ -305,7 +305,7 @@ function F(e) {
     } : []
   }), [l, a]);
   return c.length > 0 ? (0, i.jsx)("div", {
-    className: M.list,
+    className: B.list,
     children: c.map(e => (0, i.jsx)(H, {
       guildId: t.id,
       role: e.role,
@@ -314,11 +314,11 @@ function F(e) {
     }, e.role.id))
   }) : (0, i.jsx)(m.Text, {
     variant: "text-md/normal",
-    children: B.intl.string(B.t.u09gKk)
+    children: M.intl.string(M.t.u09gKi)
   })
 }
 
-function G(e) {
+function K(e) {
   let {
     onClose: t,
     guildId: n,
@@ -330,15 +330,15 @@ function G(e) {
       children: [(0, i.jsx)(m.Heading, {
         id: z,
         variant: "heading-md/semibold",
-        children: B.intl.string(B.t["3JrZ/P"])
+        children: M.intl.string(M.t["3JrZ/P"])
       }), (0, i.jsx)(m.olH, {
         "data-migration-pending": true,
-        className: M.modalCloseButton,
+        className: B.modalCloseButton,
         onClick: t
       })]
     }), (0, i.jsx)(m.hzk, {
       "data-migration-pending": true,
-      className: M.modalContent,
+      className: B.modalContent,
       children: (0, i.jsx)(F, {
         guild: l,
         onSelect: r
@@ -347,7 +347,7 @@ function G(e) {
   })
 }
 
-function W(e) {
+function G(e) {
   let {
     onClose: t,
     guildId: n,
@@ -384,26 +384,26 @@ function W(e) {
     onSubmit: function(e) {
       e.preventDefault(), a(h.map(e => e.id).filter(e => f.has(e))), t()
     },
-    className: M.slideForm,
+    className: B.slideForm,
     children: [(0, i.jsxs)(m.xBx, {
       "data-migration-pending": true,
       children: [(0, i.jsx)(m.Heading, {
         id: E,
         variant: "heading-md/semibold",
-        children: B.intl.format(B.t.iuPodG, {
+        children: M.intl.format(M.t.iuPodH, {
           roleName: c.name
         })
       }), (0, i.jsx)(m.olH, {
         "data-migration-pending": true,
-        className: M.modalCloseButton,
+        className: B.modalCloseButton,
         onClick: t
       })]
     }), (0, i.jsxs)(m.hzk, {
       "data-migration-pending": true,
-      className: M.modalContent,
+      className: B.modalContent,
       children: [h.length > 1 && (0, i.jsx)("div", {
-        className: M.list,
-        children: (0, i.jsx)(R, {
+        className: B.list,
+        children: (0, i.jsx)(O, {
           icon: (0, i.jsx)(m.avL, {
             size: "md",
             color: "currentColor"
@@ -415,17 +415,17 @@ function W(e) {
           children: (0, i.jsx)(m.Text, {
             color: "header-primary",
             variant: "text-md/normal",
-            children: B.intl.string(B.t["5Q/fLO"])
+            children: M.intl.string(M.t["5Q/fLC"])
           })
         })
       }), (0, i.jsx)("div", {
-        className: M.list,
+        className: B.list,
         children: h.map(e => {
           var t;
           let n = null != (t = (0, x.Th)(e.type)) ? t : m.VL1;
-          return (0, i.jsx)(R, {
+          return (0, i.jsx)(O, {
             icon: (0, i.jsx)("div", {
-              className: M.rowIcon,
+              className: B.rowIcon,
               children: (0, i.jsx)(n, {
                 size: "custom",
                 color: "currentColor",
@@ -438,7 +438,7 @@ function W(e) {
             children: (0, i.jsx)(m.Text, {
               color: "header-primary",
               variant: "text-md/normal",
-              className: M.__invalid_benefitTitle,
+              className: B.__invalid_benefitTitle,
               children: e.name
             })
           }, e.id)
@@ -450,11 +450,11 @@ function W(e) {
         direction: "horizontal-reverse",
         children: [(0, i.jsx)(m.Button, {
           variant: "primary",
-          text: B.intl.string(B.t["1j8Sow"]),
+          text: M.intl.string(M.t["1j8So6"]),
           type: "submit"
         }), (0, i.jsx)(m.Button, {
           variant: "secondary",
-          text: B.intl.string(B.t["ETE/oC"]),
+          text: M.intl.string(M.t["ETE/oK"]),
           onClick: o
         })]
       })
@@ -462,7 +462,7 @@ function W(e) {
   })
 }
 
-function A(e) {
+function W(e) {
   let {
     transitionState: t,
     guildId: n,
@@ -480,14 +480,14 @@ function A(e) {
       width: 440,
       children: [(0, i.jsx)(m.Mi4, {
         id: 0,
-        children: (0, i.jsx)(G, {
+        children: (0, i.jsx)(K, {
           onClose: l,
           guildId: n,
           onSelect: s
         })
       }), (0, i.jsx)(m.Mi4, {
         id: 1,
-        children: (0, i.jsx)(W, {
+        children: (0, i.jsx)(G, {
           onClose: l,
           guildId: n,
           role: a,

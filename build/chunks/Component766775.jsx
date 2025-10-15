@@ -49,7 +49,7 @@ function m(e) {
             className: f.formContainer,
             children: [(0, i.jsx)(r.Dx, {
               className: f.header,
-              children: _.intl.string(_.t.UNFvtM)
+              children: _.intl.string(_.t.UNFvtL)
             }), (0, i.jsxs)(o.C3N, {
               children: [m, h]
             })]
@@ -59,7 +59,7 @@ function m(e) {
         className: f.modalFooter,
         children: [(0, i.jsx)(o.Button, {
           variant: "secondary",
-          text: _.intl.string(_.t.cpT0Cq),
+          text: _.intl.string(_.t.cpT0Cg),
           onClick: a
         }), (0, i.jsx)(o.Button, {
           variant: "active",

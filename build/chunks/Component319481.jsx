@@ -18,17 +18,17 @@ function l(t) {
       var r, n, o = function(t, e) {
         if (null == t) return {};
         var r, n, o = {},
-          c = Object.keys(t);
-        for (n = 0; n < c.length; n++) r = c[n], e.indexOf(r) >= 0 || (o[r] = t[r]);
+          i = Object.keys(t);
+        for (n = 0; n < i.length; n++) r = i[n], e.indexOf(r) >= 0 || (o[r] = t[r]);
         return o
       }(t, e);
       if (Object.getOwnPropertySymbols) {
-        var c = Object.getOwnPropertySymbols(t);
-        for (n = 0; n < c.length; n++) r = c[n], !(e.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(t, r) && (o[r] = t[r])
+        var i = Object.getOwnPropertySymbols(t);
+        for (n = 0; n < i.length; n++) r = i[n], !(e.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(t, r) && (o[r] = t[r])
       }
       return o
     }(t, ["onConfirm"]);
-  return (0, n.jsx)(c.ConfirmModal, (e = function(t) {
+  return (0, n.jsx)(i.ConfirmModal, (e = function(t) {
     for (var e = 1; e < arguments.length; e++) {
       var r = null != arguments[e] ? arguments[e] : {},
         n = Object.keys(r);
@@ -46,15 +46,15 @@ function l(t) {
     }
     return t
   }({
-    header: i.intl.string(i.t["5yTUuc"]),
-    confirmText: i.intl.string(i.t.TyCVIq),
-    cancelText: i.intl.string(i.t["ETE/oC"]),
+    header: c.intl.string(c.t["5yTUub"]),
+    confirmText: c.intl.string(c.t.TyCVIi),
+    cancelText: c.intl.string(c.t["ETE/oK"]),
     confirmButtonColor: o.zx.Colors.BRAND,
     onConfirm: l
   }, u), r = r = {
-    children: (0, n.jsx)(c.Text, {
+    children: (0, n.jsx)(i.Text, {
       variant: "text-md/normal",
-      children: i.intl.string(i.t.dRhrXh)
+      children: c.intl.string(c.t.dRhrXl)
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : (function(t, e) {
     var r = Object.keys(t);

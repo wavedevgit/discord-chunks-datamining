@@ -415,7 +415,7 @@ class em extends(r = Chunk647438.PureComponent) {
             variant: "text-sm/normal",
             className: ei.reactionTooltipText,
             "aria-label": "super reaction tooltip cta",
-            children: ee.intl.string(ee.t.ZbNJXn)
+            children: ee.intl.string(ee.t.ZbNJXl)
           })]
         }) : this.userCanBurstReact() ? (0, i.jsxs)("div", {
           className: s()(ei.burstReactionTooltipPrompt, ei.burstReactionTooltipSpacer, ei.burstReactionTooltipPromptClickable),
@@ -429,7 +429,7 @@ class em extends(r = Chunk647438.PureComponent) {
               variant: "text-sm/normal",
               className: ei.reactionTooltipText,
               "aria-label": "super reaction tooltip cta",
-              children: ee.intl.string(ee.t.kVfuVu)
+              children: ee.intl.string(ee.t.kVfuVl)
             })
           })]
         }) : this.userCanBurstReact() || this.isKeyboardNavigation ? null : (0, i.jsx)("div", {
@@ -438,11 +438,11 @@ class em extends(r = Chunk647438.PureComponent) {
             children: [(0, i.jsx)(h.Text, {
               variant: "text-sm/normal",
               "aria-label": "super reaction tooltip upsell",
-              children: ee.intl.string(ee.t.W1bMkq)
+              children: ee.intl.string(ee.t.W1bMkp)
             }), (0, i.jsx)(P.Z, {
               subscriptionTier: $.Si.TIER_2,
               textOptions: {
-                textOverride: ee.intl.string(ee.t.mr4K7D)
+                textOverride: ee.intl.string(ee.t.mr4K7O)
               },
               className: ei.burstReactionTooltipUpsellCta,
               onClick: e => e.stopPropagation()

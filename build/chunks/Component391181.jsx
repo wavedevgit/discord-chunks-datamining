@@ -81,39 +81,39 @@ function O(e) {
     children: (0, r.jsxs)(s.v2r, {
       navId: "guild-product-context",
       onClose: g,
-      "aria-label": p.intl.string(p.t.Z146dM),
+      "aria-label": p.intl.string(p.t.Z146dH),
       onSelect: E,
       children: [(0, r.jsxs)(s.kSQ, {
         children: [t && (0, r.jsx)(s.sNh, {
           id: "guild-product-edit",
-          label: p.intl.string(p.t.EEfce4),
+          label: p.intl.string(p.t.EEfce3),
           action: c
         }), i && (0, r.jsx)(s.sNh, {
           id: "guild-product-copy-link",
-          label: p.intl.string(p.t.XR26uj),
+          label: p.intl.string(p.t.XR26ur),
           icon: s.xPt,
           action: f
         }), a && (0, r.jsx)(s.sNh, {
           id: "guild-product-test-download",
-          label: p.intl.string(p.t.aXoI6U),
+          label: p.intl.string(p.t.aXoI6e),
           icon: s._8t,
           action: _
         })]
       }), (0, r.jsxs)(s.kSQ, {
         children: [n && (0, r.jsx)(s.sNh, {
           id: "guild-product-unpublish",
-          label: p.intl.string(p.t.QrkMlN),
+          label: p.intl.string(p.t.QrkMlJ),
           action: u
         }), o && (0, r.jsx)(s.sNh, {
           id: "guild-product-delete",
-          label: p.intl.string(p.t.zWjqvB),
+          label: p.intl.string(p.t.zWjqvL),
           color: "danger",
           action: d
         })]
       }), (0, r.jsx)(s.kSQ, {
         children: l && (0, r.jsx)(s.sNh, {
           id: "guild-product-report",
-          label: p.intl.string(p.t["6yUzvG"]),
+          label: p.intl.string(p.t["6yUzvL"]),
           color: "danger",
           action: m
         })
@@ -171,7 +171,7 @@ function v(e) {
         } = n;
         return (0, r.jsx)(s.P3F, b(g({}, e), {
           innerRef: I,
-          "aria-label": p.intl.formatToPlainString(p.t.RtqjeB, {
+          "aria-label": p.intl.formatToPlainString(p.t.RtqjeH, {
             productName: t.name
           }),
           "aria-haspopup": "listbox",
@@ -227,7 +227,7 @@ function I(e) {
     }),
     onClick: T ? true : i,
     onContextMenu: N,
-    "aria-label": p.intl.formatToPlainString(p.t["X/yAKs"], {
+    "aria-label": p.intl.formatToPlainString(p.t["X/yAKi"], {
       productName: t.name
     }),
     children: [(0, r.jsx)("img", {

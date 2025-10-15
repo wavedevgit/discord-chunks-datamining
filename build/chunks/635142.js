@@ -7,9 +7,9 @@ require.d(exports, {
 var Chunk388032 = require("./388032.jsx");
 
 function i(e) {
-  return e > 0 && e % 7 == 0 ? r.intl.formatToPlainString(r.t.EmoBD2, {
+  return e > 0 && e % 7 == 0 ? r.intl.formatToPlainString(r.t.EmoBDw, {
     weeks: e / 7
-  }) : r.intl.formatToPlainString(r.t["k2UNz+"], {
+  }) : r.intl.formatToPlainString(r.t.k2UNz8, {
     days: e
   })
 }

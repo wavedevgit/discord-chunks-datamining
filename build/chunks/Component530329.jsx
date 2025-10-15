@@ -43,11 +43,11 @@ function p(e) {
     m = l.useMemo(() => {
       switch (t) {
         case u.pC.AVATAR:
-          return d.intl.format(d.t["pvw/HH"], {
+          return d.intl.format(d.t["pvw/HB"], {
             onClick: g
           });
         case u.pC.BANNER:
-          return d.intl.format(d.t.aCrz1e, {
+          return d.intl.format(d.t.aCrz1d, {
             onClick: g
           });
         default:
@@ -73,7 +73,7 @@ function p(e) {
     return e
   }({
     text: m,
-    button: d.intl.string(d.t.BmJkbd),
+    button: d.intl.string(d.t.BmJkbW),
     buttonAnalyticsObject: {
       section: c.jXE.USER_PROFILE
     },

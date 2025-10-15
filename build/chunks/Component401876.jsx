@@ -16,7 +16,7 @@ function s(e) {
     onRecurrenceChange: s
   } = e, d = l.useMemo(() => (0, a.zi)(t, n), [n, t]), c = (0, a.P8)(t), o = e => e.toString();
   return (0, r.jsx)(i.PhF, {
-    label: u.intl.string(u.t["59TVxL"]),
+    label: u.intl.string(u.t["59TVxM"]),
     required: true,
     placeholder: "gaming",
     options: c,

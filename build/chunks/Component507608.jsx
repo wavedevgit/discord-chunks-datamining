@@ -1,7 +1,7 @@
 /** Chunk was on 77803 **/
 /** chunk id: 507608, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  AF: () => B,
+  AF: () => G,
   hd: () => K,
   zz: () => z
 }), require("./388685.js"), require("./953529.js"), require("./781311.js");
@@ -72,12 +72,12 @@ function A(e, n) {
     Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
   }), e
 }
-let L = new Intl.DateTimeFormat(Chunk388032.intl.currentLocale, {
+let B = new Intl.DateTimeFormat(Chunk388032.intl.currentLocale, {
   month: "short",
   day: "numeric"
 });
 
-function B(e) {
+function G(e) {
   let {
     app: n,
     guildId: t,
@@ -122,7 +122,7 @@ function B(e) {
       backgroundSrc: b,
       animatedBackgroundSrc: v,
       prefersReducedMotion: g
-    }), (0, r.jsx)(G, {
+    }), (0, r.jsx)(L, {
       appId: n.id,
       subscriptions: s,
       otps: o,
@@ -131,7 +131,7 @@ function B(e) {
   })
 }
 
-function G(e) {
+function L(e) {
   let {
     appId: n,
     subscriptions: t,
@@ -155,7 +155,7 @@ function G(e) {
     }), i.length > 0 && (0, r.jsxs)("div", {
       children: [(0, r.jsx)(u.Heading, {
         variant: "heading-lg/semibold",
-        children: F.intl.string(F.t.yUGTs8)
+        children: F.intl.string(F.t.yUGTs7)
       }), (0, r.jsx)("div", {
         className: _.productSection,
         children: i.map(e => (0, r.jsx)(K, {
@@ -177,15 +177,15 @@ function z(e) {
     onDetails: j
   } = e, {
     data: x
-  } = (0, g.H)(d.skuId), O = null == x ? true : x[0], I = (0, a.e7)([P.Z], () => P.Z.get(d.skuId), [d.skuId]), k = (0, a.e7)([y.Z], () => y.Z.getGuild(c), [c]), S = (0, a.e7)([P.Z], () => P.Z.getParentSKU(d.skuId), [d.skuId]), N = (0, b.Ev)(S, c), w = null == N ? true : N.subscription, Z = (0, b.cr)(S, c), E = null != w && (0, v.Jf)(w, I), R = null != Z && (null == N || null == (n = N.subscriptionPlan) ? true : n.id) !== (null == Z ? true : Z.subscriptionPlan.id), M = false === E && (null == Z ? true : Z.subscriptionPlan.skuId) === d.skuId, B = (null == N ? true : N.subscriptionPlan.skuId) === d.skuId, {
-    openModal: G,
+  } = (0, g.H)(d.skuId), O = null == x ? true : x[0], I = (0, a.e7)([P.Z], () => P.Z.get(d.skuId), [d.skuId]), k = (0, a.e7)([y.Z], () => y.Z.getGuild(c), [c]), S = (0, a.e7)([P.Z], () => P.Z.getParentSKU(d.skuId), [d.skuId]), N = (0, b.Ev)(S, c), w = null == N ? true : N.subscription, Z = (0, b.cr)(S, c), E = null != w && (0, v.Jf)(w, I), R = null != Z && (null == N || null == (n = N.subscriptionPlan) ? true : n.id) !== (null == Z ? true : Z.subscriptionPlan.id), M = false === E && (null == Z ? true : Z.subscriptionPlan.skuId) === d.skuId, G = (null == N ? true : N.subscriptionPlan.skuId) === d.skuId, {
+    openModal: L,
     subscriptionPurchaseButtonState: z,
     isGuildSubscribed: K
   } = (0, h.Z)({
     skuId: d.skuId,
     initialSubscribeForGuild: c,
     analyticsLocation: C.Sbl.APP_STOREFRONT
-  }), V = i.useMemo(() => {
+  }), q = i.useMemo(() => {
     var e;
     return null == (e = d.benefits) ? true : e.map(e => ({
       id: e.id,
@@ -193,7 +193,7 @@ function z(e) {
       description: e.description,
       icon: (0, f.n)(s, e.icon)
     }))
-  }, [s, d.benefits]), H = i.useMemo(() => null != d.thumbnail ? (0, T.q)(s, d.thumbnail, 256) : true, [s, d.thumbnail]), q = i.useCallback(e => (0, r.jsx)(D.pV, A(U({}, e), {
+  }, [s, d.benefits]), V = i.useMemo(() => null != d.thumbnail ? (0, T.q)(s, d.thumbnail, 256) : true, [s, d.thumbnail]), H = i.useCallback(e => (0, r.jsx)(D.pV, A(U({}, e), {
     appId: s,
     subscriptionType: p,
     skuId: d.skuId,
@@ -201,11 +201,11 @@ function z(e) {
     state: z
   })), [s, p, d.skuId, O, z]), J = i.useMemo(() => {
     if (R && (null == w ? true : w.currentPeriodEnd) != null) {
-      let e = L.format(null == w ? true : w.currentPeriodEnd);
-      if (B) return F.intl.formatToPlainString(F.t.EV2lZz, {
+      let e = B.format(null == w ? true : w.currentPeriodEnd);
+      if (G) return F.intl.formatToPlainString(F.t.EV2lZ2, {
         date: e
       });
-      if (M) return F.intl.formatToPlainString(F.t["2w6+NN"], {
+      if (M) return F.intl.formatToPlainString(F.t["2w6+ND"], {
         date: e
       })
     }
@@ -213,9 +213,9 @@ function z(e) {
       children: [null != k && (0, r.jsx)(m.Z, {
         guild: k,
         size: m.Z.Sizes.MINI
-      }), F.intl.string(F.t.l8ufqL)]
+      }), F.intl.string(F.t.l8ufqK)]
     })
-  }, [null == w ? true : w.currentPeriodEnd, k, R, B, K, M]), W = null != J ? (0, r.jsx)(u.Text, {
+  }, [null == w ? true : w.currentPeriodEnd, k, R, G, K, M]), W = null != J ? (0, r.jsx)(u.Text, {
     color: "header-secondary",
     variant: "text-sm/normal",
     className: _.subscriptionCardSubtext,
@@ -226,14 +226,14 @@ function z(e) {
     subtitle: W,
     maxBenefits: null != W ? o.ZI - 1 : o.ZI,
     description: null != (l = d.description) ? l : true,
-    imgSrc: H,
-    onPurchase: G,
-    renderPurchaseButton: q,
-    benefitItems: null != V ? V.map(e => (0, r.jsx)(o.Gm, {
+    imgSrc: V,
+    onPurchase: L,
+    renderPurchaseButton: H,
+    benefitItems: null != q ? q.map(e => (0, r.jsx)(o.Gm, {
       description: e.title,
       icon: e.icon
     }, e.id)) : true,
-    onDetails: null != j ? j : null != V ? () => {
+    onDetails: null != j ? j : null != q ? () => {
       (0, u.ZDy)(async () => {
         let {
           SubscriptionDetailsModal: e
@@ -263,7 +263,7 @@ function K(e) {
     I = null != (l = null == g || null == (n = g.description) ? true : n.trim()) ? l : true,
     k = (null == g ? true : g.headerBackground) != null && null != (o = w.Z.toURLSafe((0, S._W)(m, g.headerBackground, 256))) ? o : true,
     Z = f.type === C.epS.DURABLE && h,
-    T = f.type === C.epS.DURABLE ? Z ? F.intl.string(F.t.bm82mm) : F.intl.string(F.t["6gprwf"]) : true,
+    T = f.type === C.epS.DURABLE ? Z ? F.intl.string(F.t.bm82mp) : F.intl.string(F.t["6gprwc"]) : true,
     {
       price: M
     } = f;

@@ -14,7 +14,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function d(n) {
+function b(n) {
   for (var e = 1; e < arguments.length; e++) {
     var t = null != arguments[e] ? arguments[e] : {},
       r = Object.keys(t);
@@ -39,20 +39,20 @@ function E(n) {
     guild: t,
     channel: r,
     stageInstance: l
-  } = n, b = (0, i.e7)([a.ZP], () => null != t ? a.ZP.getDefaultChannel(t.id, true, s.Plq.CREATE_INSTANT_INVITE) : null), d = (0, i.e7)([u.Z], () => (0, o.b)(u.Z, t, r, l)), E = (0, c._k)({
+  } = n, d = (0, i.e7)([a.ZP], () => null != t ? a.ZP.getDefaultChannel(t.id, true, s.Plq.CREATE_INSTANT_INVITE) : null), b = (0, i.e7)([u.Z], () => (0, o.b)(u.Z, t, r, l)), E = (0, c._k)({
     location: "invite_people_menu_item"
-  }), f = E.isInCallEntrypointEnabled || E.isVoiceChannelEntrypointEnabled || d && null != r ? r : b, O = p(e, t, f), j = y(e, f);
-  return d ? O : j
+  }), f = E.isInCallEntrypointEnabled || E.isVoiceChannelEntrypointEnabled || b && null != r ? r : d, O = p(e, t, f), j = y(e, f);
+  return b ? O : j
 }
 
 function f(n, e) {
   let t = (0, c.jW)({
     location: "invite_menu_item"
   });
-  if (t.isGuildEntrypointEnabled && null != e && [s.InstantInviteSources.GUILD_HEADER, s.InstantInviteSources.GUILD_CONTEXT_MENU].includes(e)) return b.intl.string(b.t.Sd8Ixw);
-  if (null == n) return t.isGuildEntrypointEnabled ? b.intl.string(b.t.Sd8Ixw) : b.intl.string(b.t.BN75l9);
+  if (t.isGuildEntrypointEnabled && null != e && [s.InstantInviteSources.GUILD_HEADER, s.InstantInviteSources.GUILD_CONTEXT_MENU].includes(e)) return d.intl.string(d.t.Sd8Ix8);
+  if (null == n) return t.isGuildEntrypointEnabled ? d.intl.string(d.t.Sd8Ix8) : d.intl.string(d.t.BN75l5);
   let r = n.type === s.d4z.GUILD_VOICE;
-  return t.isVoiceChannelEntrypointEnabled && r ? b.intl.string(b.t["EE+P0H"]) : t.isTextChannelEntrypointEnabled ? b.intl.string(b.t["0jeAXt"]) : b.intl.string(b.t.BN75l9)
+  return t.isVoiceChannelEntrypointEnabled && r ? d.intl.string(d.t["EE+P0N"]) : t.isTextChannelEntrypointEnabled ? d.intl.string(d.t["0jeAXl"]) : d.intl.string(d.t.BN75l5)
 }
 let p = (n, e, i) => {
     if (null == e) return null;
@@ -68,7 +68,7 @@ let p = (n, e, i) => {
         } = await Promise.all([t.e("74318"), t.e("7654"), t.e("81404")]).then(t.bind(t, 560114));
         return t => {
           var c, o;
-          return (0, r.jsx)(l, (c = d({}, t), o = o = {
+          return (0, r.jsx)(l, (c = b({}, t), o = o = {
             guild: e,
             channel: i,
             source: n
@@ -97,7 +97,7 @@ let p = (n, e, i) => {
         let {
           default: n
         } = await t.e("18332").then(t.bind(t, 633057));
-        return e => (0, r.jsx)(n, d({}, e))
+        return e => (0, r.jsx)(n, b({}, e))
       })
     })
   }

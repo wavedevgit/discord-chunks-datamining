@@ -72,7 +72,7 @@ let g = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk
       avatarDecorationOverride: (null == t ? true : t.type) === o.Z.AVATAR_DECORATION ? t : true,
       size: E,
       onlyAnimateOnHoverOrFocus: !i
-    }), v = d.intl.formatToPlainString(d.t.Do2lxE, {
+    }), v = d.intl.formatToPlainString(d.t.Do2lxM, {
       a11y_text: t.label
     });
     return (0, r.jsx)(g, m(p({}, y), {

@@ -24,7 +24,7 @@ function p(e, t) {
       try {
         (0, a.qc)(t.id, e.id, n)
       } catch (e) {
-        (0, l.showToast)((0, l.createToast)(b.intl.string(b.t.xsfC2S), l.ToastType.FAILURE))
+        (0, l.showToast)((0, l.createToast)(b.intl.string(b.t.xsfC2d), l.ToastType.FAILURE))
       }
     }, [t.id, e.id]),
     m = i.useCallback(() => {
@@ -40,7 +40,7 @@ function p(e, t) {
     }, [t.id, e, y]);
   return n && !p && O ? (0, r.jsx)(l.sNh, {
     id: "add-confetti-potion",
-    label: b.intl.string(b.t.icaJW5),
+    label: b.intl.string(b.t.icaJW1),
     icon: l.l22,
     action: m
   }) : null

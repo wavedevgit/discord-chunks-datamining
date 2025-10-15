@@ -58,12 +58,12 @@ function w(n) {
     onSelect: t
   } = n, o = (0, N.Z)(e), c = (0, b.Z)(e), s = (0, h.l)(e), u = (0, h.P)(e), j = (0, Z.Z)(e), k = (0, p.Z)(e), S = (0, x.Z)(e), E = (0, P.ZP)(e), g = (0, _.Z)(e), Q = (0, C.Z)(e), m = (0, d.Z)({
     id: e.id,
-    label: y.intl.string(y.t.gFHI3k)
+    label: y.intl.string(y.t.gFHI3t)
   }), O = (0, a.Z)(e), w = (0, v.ZP)(e), A = (0, f.Mn)("ChannelContextFavoritesMenu");
   return (0, l.jsxs)(i.v2r, {
     navId: "channel-context",
     onClose: r.Zy,
-    "aria-label": y.intl.string(y.t.Xm41aV),
+    "aria-label": y.intl.string(y.t.Xm41aW),
     onSelect: t,
     children: [(0, l.jsx)(i.kSQ, {
       children: o
@@ -92,12 +92,12 @@ function A(n) {
     onSelect: o
   } = n, c = (0, N.Z)(e), s = (0, b.Z)(e), u = (0, h.l)(e), Z = (0, h.P)(e), p = (0, Q.Z)(e), x = (0, P.ZP)(e), m = (0, C.Z)(e), O = (0, E.Z)(e, t), w = (0, j.Z)(e, t), A = (0, k.Z)(e, t), T = (0, S.Z)(e), M = (0, d.Z)({
     id: e.id,
-    label: y.intl.string(y.t.gFHI3k)
+    label: y.intl.string(y.t.gFHI3t)
   }), H = (0, a.Z)(e), I = (0, g.Z)(e, "list_text_channel_context_menu"), L = (0, _.Z)(e), X = (0, v.ZP)(e), q = (0, f.Mn)("ChannelContextMenuNormal");
   return (0, l.jsxs)(i.v2r, {
     navId: "channel-context",
     onClose: r.Zy,
-    "aria-label": y.intl.string(y.t.Xm41aV),
+    "aria-label": y.intl.string(y.t.Xm41aW),
     onSelect: o,
     children: [(0, l.jsxs)(i.kSQ, {
       children: [c, u]

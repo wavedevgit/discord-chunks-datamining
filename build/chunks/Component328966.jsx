@@ -31,7 +31,7 @@ function c(e) {
       isInline: false,
       children: (0, r.jsxs)("span", {
         className: o.edited,
-        children: ["(", a.intl.string(a.t.C8sXIM), ")"]
+        children: ["(", a.intl.string(a.t.C8sXIC), ")"]
       })
     })]
   }) : null

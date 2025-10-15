@@ -13,13 +13,13 @@ var Chunk481060 = require("./481060.js"),
 let c = new Chunk302155.Z({
   onSwitchSuccess(e, t) {
     setTimeout(() => {
-      t && (0, i.uL)(s.Z5c.ME), (0, r.showToast)((0, r.createToast)(l.intl.formatToPlainString(l.t.wx7O3L, {
+      t && (0, i.uL)(s.Z5c.ME), (0, r.showToast)((0, r.createToast)(l.intl.formatToPlainString(l.t.wx7O3N, {
         username: e.username
       }), r.ToastType.SUCCESS))
     }, 100)
   },
   onSwitchError() {
-    (0, Chunk481060.showToast)((0, Chunk481060.createToast)(Chunk388032.intl.string(Chunk388032.t.pqvKWA), Chunk481060.ToastType.FAILURE))
+    (0, Chunk481060.showToast)((0, Chunk481060.createToast)(Chunk388032.intl.string(Chunk388032.t.pqvKWF), Chunk481060.ToastType.FAILURE))
   },
   onTokenSet() {
     (0, Chunk481060.Mr3)(Chunk71509.Ui), (0, Chunk481060.Mr3)(Chunk71509._5)

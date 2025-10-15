@@ -54,7 +54,7 @@ function j(e) {
     onMouseLeave: G
   } = (0, f.Z)(200, 300);
 
-  function W(e) {
+  function z(e) {
     null != A && (0, c.jW)(e, async () => {
       let {
         default: e
@@ -97,12 +97,12 @@ function j(e) {
     })
   }
 
-  function z() {
+  function W() {
     (0, d.v)(P, d.d.SOUNDBOARD), E === x.D.SOUNDBOARD ? (null == S || S(true), G()) : (null != E ? (Z(), F()) : Z(), null == S || S(x.D.SOUNDBOARD))
   }
-  let q = r.useRef(null);
+  let K = r.useRef(null);
   return (0, i.jsx)(s.y, {
-    targetElementRef: q,
+    targetElementRef: K,
     shouldShow: H && (E === x.D.SOUNDBOARD || null == E) || E === x.D.SOUNDBOARD,
     animation: s.y.Animation.FADE,
     animationPosition: "top",
@@ -134,14 +134,14 @@ function j(e) {
       })
     },
     children: () => (0, i.jsx)(v.d, {
-      ref: q,
+      ref: K,
       isTrayButton: true,
       themeable: j,
-      label: w ? O.intl.string(O.t["Ox4/zU"]) : M ? O.intl.string(O.t["+YBKYI"]) : R ? O.intl.string(O.t.X1lQli) : true,
+      label: w ? O.intl.string(O.t["Ox4/zc"]) : M ? O.intl.string(O.t["+YBKYG"]) : R ? O.intl.string(O.t.X1lQlp) : true,
       iconComponent: I,
       disabled: L,
-      onContextMenu: W,
-      onClick: z,
+      onContextMenu: z,
+      onClick: W,
       onMouseEnter: () => {
         F(), T()
       },

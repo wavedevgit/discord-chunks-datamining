@@ -59,7 +59,7 @@ function p(e) {
     onClosePopout: n,
     onOpenPopout: i
   } = e, u = f(e, ["popoutOpen", "onClosePopout", "onOpenPopout"]);
-  let _ = t ? l.intl.string(l.t["7Dwcnj"]) : l.intl.string(l.t.JzWezz);
+  let _ = t ? l.intl.string(l.t["7Dwcnp"]) : l.intl.string(l.t.JzWez8);
   return (0, r.jsx)(s.Z, d({
     label: _,
     onClick: t ? n : i,

@@ -81,9 +81,9 @@ function I(e) {
     V = null != A,
     F = h.Z.getVideoComponent(),
     G = p.default.getId(),
-    [W, z] = r.useState(null),
-    q = (0, c.Z)(W),
-    [Y, K] = r.useState(true),
+    [z, W] = r.useState(null),
+    K = (0, c.Z)(z),
+    [Y, q] = r.useState(true),
     [X, J] = r.useState(false),
     Q = R.type === v.fO.ACTIVITY,
     $ = (0, u.Z)(Q ? R.applicationId : true),
@@ -97,20 +97,20 @@ function I(e) {
     eo = (null != (t = (0, c.Z)(R.id)) ? t : R.id) !== R.id,
     es = 0;
   (Q || en) && (es += 72), Q && !en && (el ? es += 48 : es += 8), en && (es += .5 * P + 8);
-  let ec = r.useMemo(() => Q && $ ? k / (U - 2 * es) : ee && null != W && W.width > 0 && W.height > 0 ? W.width / W.height : S, [ee, W, Q, k, U, es, $]),
+  let ec = r.useMemo(() => Q && $ ? k / (U - 2 * es) : ee && null != z && z.width > 0 && z.height > 0 ? z.width / z.height : S, [ee, z, Q, k, U, es, $]),
     eu = U - 2 * es,
     ed = Q && $ ? k : eu * ec,
     ep = Math.floor(Math.min(k, ed) / ec),
     eh = U > k / ec + 72 + P + 8;
   n = en || Q ? en ? false : false : 40 + Math.max(0, 72 - (U - ep) / 2), r.useEffect(() => {
     let e = setTimeout(() => {
-      K(false)
+      q(false)
     }, 250);
     return () => {
       clearTimeout(e)
     }
   }, []);
-  let ef = Y || null == q,
+  let ef = Y || null == K,
     em = ef ? "animate-never" : "animate-always",
     eg = (0, s.q_F)({
       value: +!!en,
@@ -159,7 +159,7 @@ function I(e) {
       }
     }, em),
     ev = r.useCallback(e => {
-      z(e), K(false)
+      W(e), q(false)
     }, []),
     ex = en ? [] : (0, C.n3)(T, R, G),
     {

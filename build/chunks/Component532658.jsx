@@ -207,7 +207,7 @@ let K = Chunk647438.memo(function(e) {
           children: (0, r.jsx)(c.Text, {
             variant: "text-xs/medium",
             color: "text-default",
-            children: D.intl.format(D.t.uFcReq, {
+            children: D.intl.format(D.t.uFcRen, {
               nick: t
             })
           })

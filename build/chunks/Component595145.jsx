@@ -119,8 +119,8 @@ function ea(e) {
       relationshipType: I.Z.getRelationshipType(t.id),
       originApplicationId: I.Z.getOriginApplicationId(t.id)
     })),
-    eU = (0, o.e7)([y.Z], () => y.Z.hidePersonalInformation),
-    eM = null == ew ? true : ew.getBannerURL({
+    eM = (0, o.e7)([y.Z], () => y.Z.hidePersonalInformation),
+    eU = null == ew ? true : ew.getBannerURL({
       canAnimate: false,
       size: 1024
     }),
@@ -139,7 +139,7 @@ function ea(e) {
     ez = (0, C.Z)(t.id),
     eH = (0, S.Z)(t.id),
     eW = (0, m.Dt)(),
-    eK = eo.intl.format(eo.t.KRe1Fk, {
+    eK = eo.intl.format(eo.t.KRe1Fh, {
       name: eD
     });
   return i.useEffect(() => {
@@ -178,17 +178,17 @@ function ea(e) {
                 variant: "heading-sm/normal",
                 color: "text-primary",
                 children: [(0, l.jsx)(s.nn4, {
-                  children: "".concat(eo.intl.string(eo.t.apVial), ": ").concat(eK)
+                  children: "".concat(eo.intl.string(eo.t.apViam), ": ").concat(eK)
                 }), (0, l.jsx)("span", {
                   "aria-hidden": true,
-                  children: eo.intl.string(eo.t.apVial)
+                  children: eo.intl.string(eo.t.apViam)
                 })]
               }), (0, l.jsx)(s.Button, {
                 size: "sm",
                 variant: "secondary",
-                text: eo.intl.string(eo.t.ojM1xJ),
+                text: eo.intl.string(eo.t.ojM1xM),
                 onClick: eg,
-                "aria-label": eo.intl.string(eo.t.cpT0Cq)
+                "aria-label": eo.intl.string(eo.t.cpT0Cg)
               })]
             }) : (0, l.jsx)(s.nn4, {
               children: (0, l.jsx)(s.H, {
@@ -201,10 +201,10 @@ function ea(e) {
                 user: t,
                 displayProfile: ew,
                 themeType: er.l.MODAL_V2,
-                children: [null != eM && (0, l.jsx)("div", {
+                children: [null != eU && (0, l.jsx)("div", {
                   className: es.backgroundImage,
                   style: {
-                    backgroundImage: "url(".concat(eM, ")")
+                    backgroundImage: "url(".concat(eU, ")")
                   }
                 }), null != eS.interactionType && (0, l.jsx)(r.animated.div, {
                   style: eC,
@@ -248,7 +248,7 @@ function ea(e) {
                       guildId: ec,
                       onClose: eg,
                       nickname: O.ZP.useName(null == ew ? true : ew.guildId, ed, t),
-                      nicknameIcons: (0, l.jsx)(M.Z, {
+                      nicknameIcons: (0, l.jsx)(U.Z, {
                         size: "sm",
                         userId: t.id
                       }),
@@ -287,7 +287,7 @@ function ea(e) {
                     }), t.isProvisional && (0, l.jsx)(z.Z.Overlay, {
                       className: es.profileOverlay,
                       children: (0, l.jsx)(Q.Z, {
-                        heading: eo.intl.string(eo.t.Iyka0U),
+                        heading: eo.intl.string(eo.t.Iyka0d),
                         headingVariant: "text-md/semibold",
                         headingIcon: (0, l.jsx)(s.Mgn, {
                           size: "xs",
@@ -299,7 +299,7 @@ function ea(e) {
                           variant: "text-sm/normal"
                         })
                       })
-                    }), t.id === ea.id && (0, l.jsx)(U.Z, {
+                    }), t.id === ea.id && (0, l.jsx)(M.Z, {
                       isPremiumUser: (0, N.I5)(ea),
                       onInteraction: eg
                     }), (0, l.jsx)(G.Z, {
@@ -316,16 +316,16 @@ function ea(e) {
                         relationshipType: eR,
                         onClose: eg
                       })
-                    }), (null == ew ? true : ew.bio) != null && (null == ew ? true : ew.bio) !== "" && !eU && (0, l.jsx)(L.Z, {
+                    }), (null == ew ? true : ew.bio) != null && (null == ew ? true : ew.bio) !== "" && !eM && (0, l.jsx)(L.Z, {
                       userBio: ew.bio,
                       setLineClamp: false
                     }), eF.length > 0 && (0, l.jsx)(Q.Z, {
-                      heading: eo.intl.string(eo.t["Uv/eTx"]),
+                      heading: eo.intl.string(eo.t["Uv/eT0"]),
                       children: (0, l.jsx)(k.Z, {
                         applicationIds: eF
                       })
                     }), (0, l.jsx)(Q.Z, {
-                      heading: eo.intl.string(eo.t.a6XYD9),
+                      heading: eo.intl.string(eo.t.a6XYDw),
                       children: (0, l.jsx)(F.Z, {
                         userId: t.id,
                         guildId: null == ew ? true : ew.guildId,
@@ -340,7 +340,7 @@ function ea(e) {
                       headingColor: "currentColor",
                       scrollIntoView: eh === el.Tb.ROLES
                     }), ez.length > 0 && (0, l.jsx)(Q.Z, {
-                      heading: eo.intl.string(eo.t["3fe7U5"]),
+                      heading: eo.intl.string(eo.t["3fe7U1"]),
                       scrollIntoView: eh === el.Tb.CONNECTIONS,
                       children: (0, l.jsx)(q.Z, {
                         connections: ez,

@@ -53,7 +53,7 @@ function b(e) {
         case x.kEZ.OPEN:
           return (0, r.jsxs)(d.ZP, {
             children: [(0, r.jsx)(d.Dx, {
-              children: v.intl.string(v.t.csrAMJ)
+              children: v.intl.string(v.t.csrAMD)
             }), (0, r.jsx)(d.DK, {
               children: "Check your Discord app to continue with one-time login."
             })]
@@ -61,7 +61,7 @@ function b(e) {
         case x.kEZ.OPENING:
           return (0, r.jsxs)(d.ZP, {
             children: [(0, r.jsx)(d.Dx, {
-              children: v.intl.string(v.t["Z+hCVU"])
+              children: v.intl.string(v.t["Z+hCVV"])
             }), (0, r.jsx)(d.Hh, {})]
           });
         case x.kEZ.OPEN_FAIL:
@@ -82,12 +82,12 @@ function b(e) {
               style: {
                 marginTop: "8px"
               },
-              children: v.intl.string(v.t["2ixEBi"])
+              children: v.intl.string(v.t["2ixEBg"])
             })]
           });
           return (0, r.jsxs)(d.ZP, {
             children: [(0, r.jsx)(d.Dx, {
-              children: v.intl.string(v.t.qllnGm)
+              children: v.intl.string(v.t.qllnGh)
             }), (0, r.jsx)(d.DK, {
               children: g ? "Unable to open Discord automatically. Please open Discord manually and try again, or continue in browser." : "Continue your one-time login in the browser."
             }), (0, r.jsx)(d.zx, {

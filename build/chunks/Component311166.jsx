@@ -37,11 +37,11 @@ function o(e) {
         gap: 4,
         children: [(0, r.jsx)(l.Heading, {
           variant: "heading-xl/semibold",
-          children: a.intl.string(a.t.GG6vbr)
+          children: a.intl.string(a.t.GG6vbm)
         }), (0, r.jsx)(l.Text, {
           color: "text-secondary",
           variant: "text-sm/normal",
-          children: a.intl.string(a.t.q5lgwV)
+          children: a.intl.string(a.t.q5lgwc)
         })]
       })
     }), (0, r.jsx)(i.Z, (t = function(e) {

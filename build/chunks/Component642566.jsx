@@ -14,8 +14,8 @@ function s(n) {
     onClose: t
   } = n;
   return (0, o.jsx)(i.C, {
-    title: r.intl.string(r.t["8YK70c"]),
-    body: r.intl.string(r.t.moyYLf),
+    title: r.intl.string(r.t["8YK70d"]),
+    body: r.intl.string(r.t.moyYLS),
     onClose: t,
     onContinue: e
   })

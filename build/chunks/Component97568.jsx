@@ -18,7 +18,7 @@ let c = e => {
     children: [(0, i.jsx)(o.Text, {
       variant: "eyebrow",
       color: "text-muted",
-      children: a.intl.string(a.t.s64CMg)
+      children: a.intl.string(a.t.s64CMj)
     }), (0, i.jsx)(r.Z, {
       flaggedContent: t
     })]

@@ -1,7 +1,7 @@
 /** Chunk was on 36312 **/
 /** chunk id: 153932, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => x
+  default: () => N
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -70,38 +70,38 @@ function y(e) {
         location: "Spam requests modal"
       }
     })
-  }, h = n === g.Skl.OFFLINE ? g.Skl.UNKNOWN : n, _ = o ? f.intl.string(f.t.pO68Oz) : f.intl.string(f.t["gp+Ytz"]);
+  }, h = n === g.Skl.OFFLINE ? g.Skl.UNKNOWN : n, _ = o ? O.intl.string(O.t.pO68Oz) : O.intl.string(O.t["gp+Yt7"]);
   return (0, s.jsx)("div", {
-    className: O.spamRequest,
-    children: (0, s.jsx)(p.Z, {
+    className: f.spamRequest,
+    children: (0, s.jsx)(m.Z, {
       isFocused: false,
       user: t,
-      className: O.listItem,
-      activeClassName: O.active,
+      className: f.listItem,
+      activeClassName: f.active,
       onClick: () => (0, b.openUserProfileModal)({
         userId: t.id,
         sourceAnalyticsLocations: i
       }),
       children: e => (0, s.jsxs)("div", {
-        className: O.listItemContents,
+        className: f.listItemContents,
         children: [(0, s.jsx)(u.Z, {
           user: t,
           hovered: e,
           status: h,
           subText: _,
-          className: O.userInfo
+          className: f.userInfo
         }), (0, s.jsxs)("div", {
-          className: O.actions,
-          children: [(0, s.jsx)(m.Z, {
+          className: f.actions,
+          children: [(0, s.jsx)(p.Z, {
             icon: a.dz2,
-            actionType: m.Z.ActionTypes.ACCEPT,
-            tooltip: f.intl.string(f.t.Zcibdf),
+            actionType: p.Z.ActionTypes.ACCEPT,
+            tooltip: O.intl.string(O.t.ZcibdX),
             onClick: l,
             shouldHighlight: e
-          }), (0, s.jsx)(m.Z, {
+          }), (0, s.jsx)(p.Z, {
             icon: a.Dio,
-            actionType: m.Z.ActionTypes.DENY,
-            tooltip: f.intl.string(f.t.xuio0C),
+            actionType: p.Z.ActionTypes.DENY,
+            tooltip: O.intl.string(O.t.xuio0N),
             onClick: r,
             shouldHighlight: e
           })]
@@ -111,52 +111,52 @@ function y(e) {
   })
 }
 
-function x(e) {
+function N(e) {
   let {
     transitionState: t,
     onClose: n
   } = e, {
     rows: d
-  } = (0, l.cj)([h.ZP], () => h.ZP.getState()), m = d.filter(g.pJs.PENDING_IGNORED), p = d.filter(g.pJs.SPAM), u = p.length + m.length;
+  } = (0, l.cj)([h.ZP], () => h.ZP.getState()), p = d.filter(g.pJs.PENDING_IGNORED), m = d.filter(g.pJs.SPAM), u = m.length + p.length;
   return o.useEffect(() => {
     0 === u && n()
   }, [u, n]), (0, s.jsxs)(a.Y0X, {
     transitionState: t,
-    className: O.modal,
+    className: f.modal,
     impression: {
       impressionName: i.ImpressionNames.FRIEND_REQUESTS_SPAM_INBOX
     },
     parentComponent: "OtherFriendRequestsModal",
     children: [(0, s.jsxs)(a.xBx, {
       separator: false,
-      className: O.modalHeader,
+      className: f.modalHeader,
       children: [(0, s.jsx)(a.Heading, {
         variant: "heading-lg/bold",
-        className: O.heading,
-        children: f.intl.string(f.t.kaYqnm)
+        className: f.heading,
+        children: O.intl.string(O.t.kaYqnp)
       }), (0, s.jsx)(a.Text, {
         variant: "text-md/medium",
         color: "header-secondary",
-        children: f.intl.string(f.t.tRxb4H)
+        children: O.intl.string(O.t.tRxb4O)
       })]
     }), (0, s.jsxs)(a.hzk, {
-      className: O.modalContent,
-      children: [m.map(e => (0, o.createElement)(y, j(_({}, e), {
+      className: f.modalContent,
+      children: [p.map(e => (0, o.createElement)(y, j(_({}, e), {
         isFocused: false,
         key: e.key,
         ignoredUser: true
-      }))), p.map(e => (0, o.createElement)(y, j(_({}, e), {
+      }))), m.map(e => (0, o.createElement)(y, j(_({}, e), {
         isFocused: false,
         key: e.key
       })))]
     }), u > 1 && (0, s.jsx)("div", {
-      className: O.modalFooter,
+      className: f.modalFooter,
       children: (0, s.jsx)(r.zx, {
-        className: O.clearAllButton,
+        className: f.clearAllButton,
         onClick: () => {
           c.Z.clearPendingSpamAndIgnored(), n()
         },
-        children: f.intl.string(f.t.O8k7O4)
+        children: O.intl.string(O.t.O8k7Oz)
       })
     })]
   })

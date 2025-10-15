@@ -187,7 +187,7 @@ let R = Chunk647438.memo(function(e) {
     }) : p ? (0, i.jsx)("div", {
       ref: f,
       children: (0, i.jsx)(I.E, {
-        emptyText: _.intl.string(_.t.aTiM42),
+        emptyText: _.intl.string(_.t["aTiM4+"]),
         icon: s.Odl,
         absolute: true
       })

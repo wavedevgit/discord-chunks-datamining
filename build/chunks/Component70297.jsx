@@ -41,7 +41,7 @@ function C(e) {
         className: g.description,
         variant: "text-md/normal",
         color: "always-white",
-        children: f.intl.string(f.t.CXh95Z)
+        children: f.intl.string(f.t.CXh95e)
       }), (0, l.jsx)(o.Button, {
         variant: "overlay-primary",
         onClick: () => {
@@ -67,16 +67,16 @@ function C(e) {
         className: g.heading,
         variant: "heading-lg/semibold",
         color: "header-primary",
-        children: f.intl.string(f.t.utqWEC)
+        children: f.intl.string(f.t.utqWEB)
       }), (0, l.jsx)(o.Text, {
         variant: "text-md/normal",
         color: "header-secondary",
-        children: f.intl.string(f.t["+9etcM"])
+        children: f.intl.string(f.t["+9etcH"])
       }), (0, l.jsx)(o.Text, {
         className: g.tip,
         variant: "text-md/normal",
         color: "header-secondary",
-        children: f.intl.format(f.t.Z0axjk, {})
+        children: f.intl.format(f.t.Z0axjo, {})
       })]
     })]
   });

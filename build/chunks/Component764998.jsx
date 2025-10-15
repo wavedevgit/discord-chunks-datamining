@@ -46,16 +46,16 @@ function c(e) {
     }
     return e
   }({
-    header: i.intl.formatToPlainString(i.t["f/BAbC"], {
+    header: i.intl.formatToPlainString(i.t["f/BAbG"], {
       gameName: a.name
     }),
     confirmText: i.intl.string(i.t.RVy6Vl),
-    cancelText: i.intl.string(i.t["96dwMR"]),
+    cancelText: i.intl.string(i.t["96dwMT"]),
     onConfirm: c
   }, l), r = r = {
     children: (0, n.jsx)(o.Text, {
       variant: "text-md/normal",
-      children: i.intl.format(i.t["FP+NKV"], {
+      children: i.intl.format(i.t["FP+NKS"], {
         gameName: a.name
       })
     })

@@ -157,7 +157,7 @@ let O = () => 80,
           }), (0, n.jsx)(o.Text, {
             variant: "text-xs/normal",
             color: "header-primary",
-            children: (0, m.ad)(t, r) ? x.intl.string(x.t.CHf9iJ) : x.intl.string(x.t.PoWNfe)
+            children: (0, m.ad)(t, r) ? x.intl.string(x.t.CHf9iI) : x.intl.string(x.t.PoWNfX)
           })]
         }, y)).with(p.oT, () => (0, n.jsxs)(f, {
           style: j,
@@ -171,7 +171,7 @@ let O = () => 80,
           }), (0, n.jsx)(o.Text, {
             variant: "text-xs/normal",
             color: "header-primary",
-            children: x.intl.string(x.t.pWG4ze)
+            children: x.intl.string(x.t.pWG4zc)
           })]
         }, y)).otherwise(e => {
           let r = (null == i ? true : i.skuId) === e.skuId;

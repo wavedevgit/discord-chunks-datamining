@@ -1,7 +1,7 @@
-/** Chunk was on 46154 **/
-/** chunk id: 438536, original params: t,n,e (module,exports,require) **/
+/** Chunk was on 85994 **/
+/** chunk id: 438536, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -11,14 +11,14 @@ var Chunk442837 = require("./442837.js"),
   Chunk346479 = require("./346479.js"),
   Chunk388032 = require("./388032.jsx");
 
-function d(t, n) {
-  return (0, l.e7)([r.Z], () => r.Z.hasJoined(t.id)) ? (0, i.jsx)(a.sNh, {
+function _(e, t) {
+  return (0, l.e7)([a.Z], () => a.Z.hasJoined(e.id)) ? (0, i.jsx)(r.sNh, {
     id: "leave-thread",
-    label: t.isForumPost() ? o.intl.string(o.t["2LsZdT"]) : o.intl.string(o.t["fa/84m"]),
-    action: () => s.Z.leaveThread(t, n)
-  }) : (0, i.jsx)(a.sNh, {
+    label: e.isForumPost() ? u.intl.string(u.t["2LsZdX"]) : u.intl.string(u.t["fa/84u"]),
+    action: () => o.Z.leaveThread(e, t)
+  }) : (0, i.jsx)(r.sNh, {
     id: "join-thread",
-    label: t.isForumPost() ? o.intl.string(o.t.ihLPiO) : o.intl.string(o.t["10kukS"]),
-    action: () => s.Z.joinThread(t, n)
+    label: e.isForumPost() ? u.intl.string(u.t.ihLPiI) : u.intl.string(u.t["10kukZ"]),
+    action: () => o.Z.joinThread(e, t)
   })
 }

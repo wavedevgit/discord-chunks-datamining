@@ -14,7 +14,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx");
 
 function u(e, n, t) {
-  return 0 === e.length ? "" : d.intl.format(t ? d.t.cJZxWf : d.t.Kj5GIT, {
+  return 0 === e.length ? "" : d.intl.format(t ? d.t.cJZxWV : d.t.Kj5GIS, {
     count: e.length,
     extraCount: Math.max(e.length - 2, 0),
     role1: e[0],
@@ -30,9 +30,9 @@ function m(e) {
     selectedRoleIds: m,
     selectedChannelIds: h,
     itemHook: p
-  } = e, f = null == n ? true : n.id, g = (0, l.Wu)([a.Z], () => null != f ? a.Z.getManyRoles(f, m) : [], [f, m]), x = (0, l.Wu)([i.Z, s.default, o.Z], () => Array.from(h).map(e => i.Z.getChannel(e)).filter(c.lm).map(e => (0, r.F6)(e, s.default, o.Z, true))), _ = g.map(e => "@".concat(e.name)), C = (null == t ? true : t.singleSelect) ? "" : d.intl.string(d.t.JshhEl), b = "";
+  } = e, f = null == n ? true : n.id, g = (0, l.Wu)([a.Z], () => null != f ? a.Z.getManyRoles(f, m) : [], [f, m]), x = (0, l.Wu)([i.Z, s.default, o.Z], () => Array.from(h).map(e => i.Z.getChannel(e)).filter(c.lm).map(e => (0, r.F6)(e, s.default, o.Z, true))), _ = g.map(e => "@".concat(e.name)), C = (null == t ? true : t.singleSelect) ? "" : d.intl.string(d.t.JshhEh), b = "";
   if (0 === x.length && _.length > 0) C = u(_, p);
-  else x.length > 0 && (C = 0 === x.length ? "" : d.intl.format(d.t.Rj841R, {
+  else x.length > 0 && (C = 0 === x.length ? "" : d.intl.format(d.t.Rj841d, {
     count: x.length,
     extraCount: Math.max(x.length - 2, 0),
     channel1: x[0],
@@ -52,20 +52,20 @@ function h(e) {
     selectedRoleIds: u,
     selectedChannelIds: m,
     itemHook: h
-  } = e, p = null == n ? true : n.id, f = (0, l.Wu)([a.Z], () => null != p ? a.Z.getManyRoles(p, u) : [], [p, u]), g = (0, l.Wu)([i.Z, s.default, o.Z], () => Array.from(m).map(e => i.Z.getChannel(e)).filter(c.lm).map(e => (0, r.F6)(e, s.default, o.Z, true))), x = f.map(e => "@".concat(e.name)), _ = (null == t ? true : t.singleSelect) ? "" : d.intl.string(d.t.JshhEl);
-  return 0 === g.length && x.length > 0 ? _ = d.intl.format(d.t.vdtNYa, {
+  } = e, p = null == n ? true : n.id, f = (0, l.Wu)([a.Z], () => null != p ? a.Z.getManyRoles(p, u) : [], [p, u]), g = (0, l.Wu)([i.Z, s.default, o.Z], () => Array.from(m).map(e => i.Z.getChannel(e)).filter(c.lm).map(e => (0, r.F6)(e, s.default, o.Z, true))), x = f.map(e => "@".concat(e.name)), _ = (null == t ? true : t.singleSelect) ? "" : d.intl.string(d.t.JshhEh);
+  return 0 === g.length && x.length > 0 ? _ = d.intl.format(d.t.vdtNYW, {
     count: x.length,
     extraCount: Math.max(x.length - 2, 0),
     role1: x[0],
     role2: x[1],
     itemHook: h
-  }) : g.length > 0 && 0 === x.length ? _ = d.intl.format(d.t.ZKywGU, {
+  }) : g.length > 0 && 0 === x.length ? _ = d.intl.format(d.t.ZKywGR, {
     count: g.length,
     extraCount: Math.max(g.length - 2, 0),
     channel1: g[0],
     channel2: g[1],
     itemHook: h
-  }) : g.length > 0 && x.length > 0 && (_ = d.intl.format(d.t.WewRHM, {
+  }) : g.length > 0 && x.length > 0 && (_ = d.intl.format(d.t.WewRHB, {
     channelCount: g.length,
     extraChannelCount: Math.max(g.length - 2, 0),
     channel1: g[0],

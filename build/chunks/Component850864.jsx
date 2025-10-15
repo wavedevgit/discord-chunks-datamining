@@ -33,10 +33,10 @@ function N(e) {
     saveOnClose: n
   } = e, [c, d] = i.useState("new"), N = i.useMemo(() => [{
     value: "new",
-    name: j.intl.string(j.t["4e5u3l"])
+    name: j.intl.string(j.t["4e5u3t"])
   }, {
     value: "existing",
-    name: j.intl.string(j.t.cmkOsU)
+    name: j.intl.string(j.t.cmkOsb)
   }], []), E = (0, l.e7)([o.Z], () => o.Z.theme);
   i.useEffect(() => () => {
     let e = g.Z.getSettings();
@@ -50,13 +50,13 @@ function N(e) {
       children: [(0, r.jsx)(s.Heading, {
         className: v.header,
         variant: "heading-lg/extrabold",
-        children: j.intl.string(j.t.tbUZVr)
+        children: j.intl.string(j.t.tbUZVl)
       }), (0, r.jsx)("div", {
         className: v.descriptionSection,
         children: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "header-secondary",
-          children: j.intl.string(j.t.DvHCq5)
+          children: j.intl.string(j.t.DvHCq6)
         })
       }), (0, r.jsx)("div", {
         className: v.section,
@@ -68,13 +68,13 @@ function N(e) {
       }), (0, r.jsx)(s.Heading, {
         className: v.header,
         variant: "heading-lg/extrabold",
-        children: j.intl.string(j.t["roY/wu"])
+        children: j.intl.string(j.t["roY/ws"])
       }), (0, r.jsx)("div", {
         className: v.descriptionSection,
         children: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "header-secondary",
-          children: j.intl.format(j.t["/lWYYS"], {})
+          children: j.intl.format(j.t["/lWYYW"], {})
         })
       }), (0, r.jsx)("div", {
         className: v.section,
@@ -86,13 +86,13 @@ function N(e) {
       }), (0, r.jsx)(s.Heading, {
         className: v.header,
         variant: "heading-lg/extrabold",
-        children: j.intl.string(j.t.hEjHyH)
+        children: j.intl.string(j.t.hEjHyM)
       }), (0, r.jsxs)("div", {
         className: v.descriptionSection,
         children: [(0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "header-secondary",
-          children: j.intl.string(j.t.YnvKVE)
+          children: j.intl.string(j.t.YnvKVF)
         }), (0, r.jsxs)("ul", {
           className: v.bulletList,
           children: [(0, r.jsx)("li", {
@@ -107,14 +107,14 @@ function N(e) {
               tag: "span",
               variant: "text-sm/medium",
               color: "header-secondary",
-              children: j.intl.string(j.t["Fq+UsH"])
+              children: j.intl.string(j.t["Fq+UsL"])
             })
           }), (0, r.jsx)("li", {
             children: (0, r.jsx)(s.Text, {
               tag: "span",
               variant: "text-sm/medium",
               color: "header-secondary",
-              children: j.intl.string(j.t.LeEPoH)
+              children: j.intl.string(j.t.LeEPoK)
             })
           })]
         })]
@@ -137,12 +137,12 @@ function N(e) {
         children: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "header-secondary",
-          children: j.intl.string(j.t.EVV6uZ)
+          children: j.intl.string(j.t.EVV6ub)
         })
       }), (0, r.jsx)("img", {
         className: v.previewImage,
         src: I,
-        alt: j.intl.string(j.t.ST4UOy)
+        alt: j.intl.string(j.t.ST4UOz)
       }), (0, r.jsx)(s.sY7, {
         options: N,
         value: c,

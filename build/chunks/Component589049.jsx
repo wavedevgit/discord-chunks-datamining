@@ -25,7 +25,7 @@ function f() {
     f = (0, Chunk526665.wy)(require);
   return module === Chunk981631.IlC.APP || Chunk358085.isPlatformEmbedded || f ? (0, Chunk951288.jsx)(Chunk481060.sNh, {
     id: "voice-and-video-settings",
-    label: Chunk388032.intl.string(Chunk388032.t.dsXapM),
+    label: Chunk388032.intl.string(Chunk388032.t.dsXapK),
     action: () => {
       f || (0, Chunk174609.Z)(), (0, Chunk518596.openUserSettings)(Chunk313789.n.VOICE_AND_VIDEO_PANEL, {
         section: Chunk981631.oAB.VOICE,

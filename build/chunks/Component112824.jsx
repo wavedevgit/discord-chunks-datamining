@@ -69,11 +69,11 @@ function j(e) {
       children: [(0, r.jsx)(c.Heading, {
         variant: "text-md/semibold",
         color: "header-primary",
-        children: f.intl.string(f.t["+vaUlM"])
+        children: f.intl.string(f.t["+vaUlJ"])
       }), (0, r.jsx)(c.Text, {
         variant: "text-sm/medium",
         color: "header-secondary",
-        children: f.intl.format(f.t.RXAtdO, {
+        children: f.intl.format(f.t.RXAtdH, {
           numPerms: g.length
         })
       })]
@@ -83,18 +83,18 @@ function j(e) {
       height: 24,
       width: 24,
       className: h.warning,
-      "aria-label": f.intl.string(f.t["bG7Gu+"])
+      "aria-label": f.intl.string(f.t.bG7Gu7)
     }) : (0, r.jsx)(c.owK, {
       size: "custom",
       color: "currentColor",
       height: 24,
       width: 24,
       className: h.check,
-      "aria-label": f.intl.string(f.t.YQix8y)
+      "aria-label": f.intl.string(f.t["YQix8/"])
     })]
   });
   return m ? j ? (0, r.jsx)(o.u, {
-    text: f.intl.string(f.t["E5v/a/"]),
+    text: f.intl.string(f.t["E5v/a2"]),
     children: (0, r.jsx)("div", {
       className: l()(h.simpleItemWrapper, h.disabled),
       children: v

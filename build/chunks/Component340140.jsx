@@ -30,14 +30,14 @@ class d extends Chunk647438.PureComponent {
       problem: r
     } = this.state;
     return (0, Chunk951288.jsxs)(Chunk159691.u_l, {
-      title: Chunk388032.intl.string(Chunk388032.t.qnJ9W3),
-      subtitle: Chunk388032.intl.string(Chunk388032.t["7vw0h+"]),
+      title: Chunk388032.intl.string(Chunk388032.t.qnJ9W1),
+      subtitle: Chunk388032.intl.string(Chunk388032.t["7vw0h4"]),
       actions: [{
-        text: Chunk388032.intl.string(Chunk388032.t["ETE/oC"]),
+        text: Chunk388032.intl.string(Chunk388032.t["ETE/oK"]),
         variant: "secondary",
         onClick: require
       }, {
-        text: Chunk388032.intl.string(Chunk388032.t.E48BIc),
+        text: Chunk388032.intl.string(Chunk388032.t.E48BIS),
         variant: "primary",
         onClick: this.handleSubmit,
         disabled: null == Chunk647438
@@ -45,8 +45,8 @@ class d extends Chunk647438.PureComponent {
       onClose: require,
       transitionState: exports,
       children: [(0, Chunk951288.jsx)(Chunk648159.Z, {}), (0, Chunk951288.jsx)(Chunk481060.q4e, {
-        label: Chunk388032.intl.string(Chunk388032.t["6Y1t5P"]),
-        placeholder: Chunk388032.intl.string(Chunk388032.t.U0kGk6),
+        label: Chunk388032.intl.string(Chunk388032.t["6Y1t5O"]),
+        placeholder: Chunk388032.intl.string(Chunk388032.t.U0kGk5),
         options: (0, Chunk538211.Z)({
           isStreamer: module,
           isEndStream: false
@@ -73,7 +73,7 @@ class d extends Chunk647438.PureComponent {
       } = this.props, {
         problem: s
       } = this.state;
-      (0, o.Z)({
+      (0, u.Z)({
         problem: s,
         stream: t,
         feedback: "",
@@ -96,7 +96,7 @@ class d extends Chunk647438.PureComponent {
           }
           return t
         }({
-          body: c.intl.string(c.t.mMTVnv)
+          body: c.intl.string(c.t.mMTVnp)
         }, n))
       })
     })

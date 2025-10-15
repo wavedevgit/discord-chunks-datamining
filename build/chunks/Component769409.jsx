@@ -40,11 +40,11 @@ let u = (e, t) => {
     },
     f = () => {
       u ? a.Z.show({
-        title: s.intl.string(s.t.pvRCSu),
-        body: s.intl.string(s.t.DRi46S),
-        confirmText: s.intl.string(s.t["6GQDFu"]),
+        title: s.intl.string(s.t.pvRCSk),
+        body: s.intl.string(s.t.DRi46e),
+        confirmText: s.intl.string(s.t["6GQDFh"]),
         confirmVariant: "critical-primary",
-        cancelText: s.intl.string(s.t.DmDzZB),
+        cancelText: s.intl.string(s.t.DmDzZG),
         onConfirm: () => (0, i.Mr3)(l),
         onCancel: o.dG
       }) : (0, i.Mr3)(l)

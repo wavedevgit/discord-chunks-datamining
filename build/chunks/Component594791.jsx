@@ -16,7 +16,7 @@ function c() {
     t = Chunk695346.R$.useSetting();
   return module ? null : (0, Chunk951288.jsx)(Chunk481060.S89, {
     id: "preview-markdown-toggle",
-    label: Chunk388032.intl.string(Chunk388032.t.sHJ9wZ),
+    label: Chunk388032.intl.string(Chunk388032.t.sHJ9wc),
     action: () => {
       let e = !exports;
       Chunk626135.default.track(Chunk981631.rMx.PREVIEW_MARKDOWN_TOGGLED, {

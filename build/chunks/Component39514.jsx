@@ -87,9 +87,9 @@ class Z extends Chunk647438.PureComponent {
     } = this.props, {
       error: r
     } = this.state, i = null != r ? r.code : null;
-    return i === S.evJ.INVALID_GIFT_SELF_REDEMPTION ? C.intl.string(C.t.wa9h7F) : i === S.evJ.INVALID_GIFT_REDEMPTION_OWNED && (null == n ? true : n.productLine) === S.POd.COLLECTIBLES ? C.intl.string(C.t.mdLtb5) : null != t || i === S.evJ.INVALID_GIFT_REDEMPTION_OWNED ? C.intl.format(C.t.PIdmg3, {
+    return i === S.evJ.INVALID_GIFT_SELF_REDEMPTION ? C.intl.string(C.t.wa9h7O) : i === S.evJ.INVALID_GIFT_REDEMPTION_OWNED && (null == n ? true : n.productLine) === S.POd.COLLECTIBLES ? C.intl.string(C.t.mdLtb2) : null != t || i === S.evJ.INVALID_GIFT_REDEMPTION_OWNED ? C.intl.format(C.t.PIdmg4, {
       libraryLink: S.Z5c.APPLICATION_LIBRARY
-    }) : e.isClaimed || i === S.evJ.INVALID_GIFT_REDEMPTION_EXHAUSTED ? C.intl.string(C.t.ilcBeX) : i === S.evJ.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED ? C.intl.string(C.t.ypuSd8) : true
+    }) : e.isClaimed || i === S.evJ.INVALID_GIFT_REDEMPTION_EXHAUSTED ? C.intl.string(C.t.ilcBeX) : i === S.evJ.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED ? C.intl.string(C.t.ypuSd3) : true
   }
   renderSpinner(e) {
     return (0, r.jsxs)(g.ZP, {
@@ -109,13 +109,13 @@ class Z extends Chunk647438.PureComponent {
         className: Chunk197571.marginBottom8
       }), (0, Chunk951288.jsx)(Chunk388905.Dx, {
         className: l()(Chunk197571.marginTop8, Chunk197571.marginBottom8),
-        children: Chunk388032.intl.string(Chunk388032.t.KPowgn)
+        children: Chunk388032.intl.string(Chunk388032.t.KPowgo)
       }), (0, Chunk951288.jsx)(Chunk388905.DK, {
-        children: Chunk388032.intl.string(Chunk388032.t.j8734b)
+        children: Chunk388032.intl.string(Chunk388032.t.j8734e)
       }), (0, Chunk951288.jsx)(Chunk388905.zx, {
         className: l()(Chunk197571.marginTop40, Chunk197571.marginBottom8),
         onClick: () => exports(module),
-        children: Chunk388032.intl.string(Chunk388032.t.fIv16B)
+        children: Chunk388032.intl.string(Chunk388032.t.fIv16O)
       }), (0, Chunk951288.jsx)(Chunk388905.zx, {
         onClick: () => window.open(Chunk63063.Z.getArticleURL(Chunk981631.BhN.GIFTING), "_blank"),
         look: Chunk388905.zx.Looks.LINK,
@@ -128,15 +128,15 @@ class Z extends Chunk647438.PureComponent {
     return (0, Chunk951288.jsxs)(Chunk388905.ZP, {
       children: [(0, Chunk951288.jsx)(Chunk388905.Dx, {
         className: Chunk197571.marginBottom8,
-        children: Chunk388032.intl.string(Chunk388032.t.csrAMJ)
+        children: Chunk388032.intl.string(Chunk388032.t.csrAMD)
       }), (0, Chunk951288.jsx)(Chunk388905.DK, {
-        children: Chunk388032.intl.string(Chunk388032.t["m1+IBn"])
+        children: Chunk388032.intl.string(Chunk388032.t["m1+IBg"])
       }), (0, Chunk951288.jsx)(Chunk388905.zx, {
         className: Chunk197571.marginTop40,
         onClick: () => this.setState({
           continueOnWeb: true
         }),
-        children: Chunk388032.intl.string(Chunk388032.t["qsI+EH"])
+        children: Chunk388032.intl.string(Chunk388032.t["qsI+EB"])
       })]
     })
   }
@@ -149,17 +149,17 @@ class Z extends Chunk647438.PureComponent {
         src: n(892235),
         className: A.marginBottom8
       }), (0, r.jsx)(g.Dx, {
-        children: C.intl.format(C.t["ivLUf/"], {
+        children: C.intl.format(C.t.ivLUf3, {
           username: e.username
         })
       }), (0, r.jsx)(g.DK, {
         className: A.marginTop20,
-        children: C.intl.string(C.t["8Su18+"])
+        children: C.intl.string(C.t["8Su18/"])
       }), (0, r.jsx)(g.zx, {
         disabled: t,
         className: A.marginTop40,
         onClick: this.handleResendVerification,
-        children: t ? C.intl.string(C.t.CMa9Rv) : C.intl.string(C.t.lm1UKt)
+        children: t ? C.intl.string(C.t.CMa9Rk) : C.intl.string(C.t.lm1UKi)
       }), (0, r.jsx)(g.zx, {
         look: g.zx.Looks.LINK,
         color: g.zx.Colors.LINK,
@@ -178,13 +178,13 @@ class Z extends Chunk647438.PureComponent {
         disabled: null != n,
         className: A.marginTop40,
         onClick: this.handleAccept,
-        children: C.intl.string(C.t.n6I6k4)
+        children: C.intl.string(C.t.n6I6k5)
       }), null != n ? (0, r.jsx)(g.DK, {
         className: A.marginTop20,
         children: n
       }) : (0, r.jsx)(g.i_, {
         className: A.marginTop20,
-        children: C.intl.format(C.t.NYM08s, {
+        children: C.intl.format(C.t.NYM08v, {
           userTag: I.ZP.getUserTag(t),
           onLogoutClick: this.handleLogout
         })
@@ -206,13 +206,13 @@ class Z extends Chunk647438.PureComponent {
       continueOnWeb: u
     } = this.state;
     if (module === Chunk981631.kEZ.OPEN && !Chunk533307) return this.renderAppOpened();
-    if (module === Chunk981631.kEZ.OPENING) return this.renderSpinner(Chunk388032.intl.string(Chunk388032.t["Z+hCVU"]));
-    if (l) return this.renderSpinner(Chunk388032.intl.string(Chunk388032.t.bhJseN));
-    if (null == Chunk647438) return Chunk120356 ? this.renderExpiredInvite() : this.renderSpinner(Chunk388032.intl.string(Chunk388032.t.b3lf1c));
+    if (module === Chunk981631.kEZ.OPENING) return this.renderSpinner(Chunk388032.intl.string(Chunk388032.t["Z+hCVV"]));
+    if (l) return this.renderSpinner(Chunk388032.intl.string(Chunk388032.t.bhJseH));
+    if (null == Chunk647438) return Chunk120356 ? this.renderExpiredInvite() : this.renderSpinner(Chunk388032.intl.string(Chunk388032.t.b3lf1d));
     if (Chunk120356) {
       if (require) {
         let e = this.state.currentUser;
-        return Chunk893776 || null == module ? this.renderSpinner(Chunk388032.intl.string(Chunk388032.t.bYb2nS)) : this.requiresVerification && null != module ? this.renderVerification(module) : this.renderAuthenticated(Chunk647438, module)
+        return Chunk893776 || null == module ? this.renderSpinner(Chunk388032.intl.string(Chunk388032.t.bYb2nZ)) : this.requiresVerification && null != module ? this.renderVerification(module) : this.renderAuthenticated(Chunk647438, module)
       }
       return "login" === this.getMode() ? (0, Chunk951288.jsx)(Chunk781428.Z, {
         giftCodeSKU: exports,

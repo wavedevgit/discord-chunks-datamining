@@ -115,7 +115,7 @@ function v(e) {
     [D, w, L],
     [(0, u.Z)({
       application: R,
-      label: b.intl.string(b.t.WqhZss),
+      label: b.intl.string(b.t.WqhZsr),
       onSuccess: () => T({
         action: "COPY_APP_LINK",
         analyticsLocations: S
@@ -132,7 +132,7 @@ function v(e) {
         navId: "user-bot-profile-overflow-menu",
         onSelect: true,
         onClose: t,
-        "aria-label": b.intl.string(b.t.AXIHpV),
+        "aria-label": b.intl.string(b.t.AXIHpa),
         children: M.map((e, t) => (0, r.jsx)(o.kSQ, {
           children: e.map(e => e)
         }, t))
@@ -142,7 +142,7 @@ function v(e) {
       ref: I,
       action: "PRESS_OPTIONS",
       icon: o.xhG,
-      tooltipText: b.intl.string(b.t["UKOtz+"])
+      tooltipText: b.intl.string(b.t.UKOtz8)
     }, e))
   })
 }

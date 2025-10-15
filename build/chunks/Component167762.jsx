@@ -48,7 +48,7 @@ var i, Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk712103 = require("./712103.js");
 
-function V(e) {
+function H(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -67,7 +67,7 @@ function V(e) {
   return e
 }
 
-function J(e, t) {
+function K(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -95,7 +95,7 @@ function Q(e, t) {
   }
   return r
 }
-let K = Chunk481060.EFr.SIZE_32,
+let J = Chunk481060.EFr.SIZE_32,
   B = [Chunk297781.OV, Chunk297781.wO, Chunk297781.f, Chunk297781.v1, Chunk297781.pQ];
 var Y = ((i = {}).USER_CONTEXT_MENU = "user_context_menu", i.OPEN_DIRECT_MESSAGE = "open_direct_message", i.SEND_FRIEND_REQUEST = "send_friend_request", i.SEND_ACTIVITY_INVITE = "send_activity_invite", i.ASK_TO_JOIN = "ask_to_join", i.DECLINE_FRIEND_REQUEST = "decline_friend_request", i.ACCEPT_FRIEND_REQUEST = "accept_friend_request", i.CANCEL_FRIEND_REQUEST = "cancel_friend_request", i.OPEN_FRIEND_MODAL = "open_friend_modal", i.OPEN_SETTINGS_MODAL = "open_settings_modal", i.SEARCH_FRIENDS = "search_friends", i);
 let X = Chunk647438.memo(e => {
@@ -117,7 +117,7 @@ let X = Chunk647438.memo(e => {
     eventHandlers: q
   } = (0, x.Z)({
     userId: F,
-    size: K,
+    size: J,
     animateOnHover: true,
     guildId: null
   }), Q = (0, s.JA)("".concat(u)), [Y, X] = l.useState(false), [$, ee] = l.useState({}), et = i.filter(e => e.type === W.IIU.PLAYING && (0, m.Z)(e, W.xjy.JOIN)), en = (0, c.Wu)([R.Z], () => R.Z.getActivities().filter(e => e.type === W.IIU.PLAYING && (0, m.Z)(e, W.xjy.JOIN))), {
@@ -151,12 +151,12 @@ let X = Chunk647438.memo(e => {
   }, []), eg = l.useCallback(() => {
     if (null != a) {
       let e = a.traits,
-        t = J(V({}, a), {
+        t = K(H({}, a), {
           traits: e.slice(0, 3)
         });
       return (0, r.jsx)(_.Gk, {
         location: _.Gt.FRIENDS_POPOUT,
-        className: H.badgesContainer,
+        className: V.badgesContainer,
         children: B.map((e, n) => (0, r.jsx)(e, {
           entry: t
         }, n))
@@ -192,7 +192,7 @@ let X = Chunk647438.memo(e => {
       let {
         default: e
       } = await Promise.all([n.e("79695"), n.e("69220")]).then(n.bind(n, 881351));
-      return n => (0, r.jsx)(e, J(V({}, n), {
+      return n => (0, r.jsx)(e, K(H({}, n), {
         user: t,
         appContext: w
       }))
@@ -210,35 +210,35 @@ let X = Chunk647438.memo(e => {
     })
   }, [t.id, T]), eO = l.useCallback(async (e, n) => {
     if (e.preventDefault(), e.stopPropagation(), null != n.application_id && "" !== n.application_id && !$[n.application_id]) try {
-      ee(e => J(V({}, e), {
+      ee(e => K(H({}, e), {
         [n.application_id]: true
       })), await f.Z.sendActivityInviteUser({
         type: W.mFx.JOIN,
         userId: t.id,
         activity: n,
         location: W.Sbl.FRIENDS_POPOUT
-      }), null == T || T("send_activity_invite", t.id), ee(e => J(V({}, e), {
+      }), null == T || T("send_activity_invite", t.id), ee(e => K(H({}, e), {
         [n.application_id]: false
       }))
     } finally {
-      ee(e => J(V({}, e), {
+      ee(e => K(H({}, e), {
         [n.application_id]: false
       }))
     }
   }, [T, $, t.id]), eN = l.useCallback(async (e, n) => {
     if (e.preventDefault(), e.stopPropagation(), null != n.application_id && "" !== n.application_id && !$[n.application_id]) try {
-      ee(e => J(V({}, e), {
+      ee(e => K(H({}, e), {
         [n.application_id]: true
       })), await f.Z.sendActivityInviteUser({
         type: W.mFx.JOIN_REQUEST,
         userId: t.id,
         activity: n,
         location: W.Sbl.FRIENDS_POPOUT
-      }), null == T || T("ask_to_join", t.id), ee(e => J(V({}, e), {
+      }), null == T || T("ask_to_join", t.id), ee(e => K(H({}, e), {
         [n.application_id]: false
       }))
     } finally {
-      ee(e => J(V({}, e), {
+      ee(e => K(H({}, e), {
         [n.application_id]: false
       }))
     }
@@ -254,26 +254,26 @@ let X = Chunk647438.memo(e => {
         isShown: l
       } = n;
       return (0, r.jsxs)("div", {
-        className: H.row,
+        className: V.row,
         ref: ed,
-        children: [(0, r.jsx)(S.Z, V({
-          innerClassName: H.rowInner,
+        children: [(0, r.jsx)(S.Z, H({
+          innerClassName: V.rowInner,
           onContextMenu: eh,
           onMouseEnter: ef,
           onMouseLeave: ep,
-          avatar: (0, r.jsx)(d.qEK, J(V({}, q), {
-            size: K,
+          avatar: (0, r.jsx)(d.qEK, K(H({}, q), {
+            size: J,
             src: M,
             isMobile: es,
             isTyping: false,
             status: eo,
-            className: H.avatar,
+            className: V.avatar,
             "aria-label": t.username,
             statusTooltip: true,
             avatarDecoration: L
           })),
           name: (0, r.jsx)("span", {
-            className: H.username,
+            className: V.username,
             children: null != (i = null != k ? k : t.globalName) ? i : t.username
           }),
           subText: eg(),
@@ -281,7 +281,7 @@ let X = Chunk647438.memo(e => {
           nameplate: er,
           hovered: Y
         }, e, Q)), (0, r.jsxs)(C.ZP, {
-          className: H.hoverBar,
+          className: V.hoverBar,
           children: [j === W.OGo.PENDING_INCOMING ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(C.sF, {
               label: z.intl.string(z.t.MMlhsr),
@@ -295,7 +295,7 @@ let X = Chunk647438.memo(e => {
                 }), null == T || T("accept_friend_request", t.id)
               }
             }), (0, r.jsx)(C.sF, {
-              label: z.intl.string(z.t.ytCpKs),
+              label: z.intl.string(z.t.ytCpKi),
               icon: d.Dio,
               onClick: e => {
                 e.preventDefault(), e.stopPropagation(), h.Z.removeRelationship(t.id, {
@@ -312,18 +312,18 @@ let X = Chunk647438.memo(e => {
               }), null == T || T("cancel_friend_request", t.id)
             }
           }) : E ? (0, r.jsx)(C.sF, {
-            label: z.intl.string(z.t.w5uwoI),
+            label: z.intl.string(z.t.w5uwoK),
             icon: d.oLu,
             onClick: em
           }) : null, (0, r.jsxs)(r.Fragment, {
             children: [et.map(e => (0, r.jsx)(C.sF, {
-              label: $[e.application_id] ? z.intl.string(z.t["8BEiNn"]) : z.intl.string(z.t.OKsSCR),
+              label: $[e.application_id] ? z.intl.string(z.t["8BEiNj"]) : z.intl.string(z.t.OKsSCQ),
               icon: $[e.application_id] ? d.dz2 : d.V9,
               onClick: t => eN(t, e)
             }, e.application_id)), en.map(e => {
               var n;
               return (0, r.jsx)(C.sF, {
-                label: $[e.application_id] ? z.intl.string(z.t["8BEiNn"]) : z.intl.formatToPlainString(z.t["KHLo+F"], {
+                label: $[e.application_id] ? z.intl.string(z.t["8BEiNj"]) : z.intl.formatToPlainString(z.t["KHLo+P"], {
                   channel: null != (n = t.globalName) ? n : t.username,
                   game: e.name
                 }),
@@ -336,7 +336,7 @@ let X = Chunk647438.memo(e => {
             icon: d.kBi,
             onClick: ey
           }), (0, r.jsx)(C.sF, {
-            label: z.intl.string(z.t["UKOtz+"]),
+            label: z.intl.string(z.t.UKOtz8),
             icon: d.xhG,
             onClick: eh
           })]
@@ -458,7 +458,7 @@ let et = Chunk647438.memo(function(e) {
                 activities: p ? f : d,
                 nickname: o
               };
-            p ? (r.sameActivity.push(g), l.delete(e)) : d.length > 0 ? r.activities.push(g) : u ? r.activities.push(J(V({}, g), {
+            p ? (r.sameActivity.push(g), l.delete(e)) : d.length > 0 ? r.activities.push(g) : u ? r.activities.push(K(H({}, g), {
               activities: s
             })) : a === W.Skl.ONLINE || a === W.Skl.IDLE || a === W.Skl.DND ? r.online.push(g) : r.offline.push(g)
           }
@@ -526,16 +526,16 @@ let et = Chunk647438.memo(function(e) {
       let {
         default: e
       } = await n.e("23087").then(n.bind(n, 29131));
-      return t => (0, r.jsx)(e, J(V({}, t), {
+      return t => (0, r.jsx)(e, K(H({}, t), {
         onClose: o
       }))
     }), null == p || p("open_settings_modal")
-  }, [o, p]), K = l.useCallback(() => {
+  }, [o, p]), J = l.useCallback(() => {
     (0, d.ZDy)(async () => {
       let {
         default: e
       } = await n.e("49078").then(n.bind(n, 539725));
-      return t => (0, r.jsx)(e, V({}, t))
+      return t => (0, r.jsx)(e, H({}, t))
     }), null == p || p("open_friend_modal")
   }, [p]), B = l.useCallback(e => {
     let {
@@ -543,50 +543,50 @@ let et = Chunk647438.memo(function(e) {
     } = e, n = "", i = 0;
     switch (t) {
       case 0:
-        n = z.intl.string(z.t.fyA115), i = w.friendRequests.length;
+        n = z.intl.string(z.t.fyA119), i = w.friendRequests.length;
         break;
       case 1:
         n = S.currentActivityName, i = w.sameActivity.length;
         break;
       case 3:
-        n = z.intl.string(z.t.qm9dSj), i = w.suggestions.length;
+        n = z.intl.string(z.t.qm9dSk), i = w.suggestions.length;
         break;
       case 2:
-        n = z.intl.string(z.t.TxqPQR), i = w.activities.length;
+        n = z.intl.string(z.t.TxqPQU), i = w.activities.length;
         break;
       case 4:
-        n = z.intl.string(z.t.WbGtnH), i = w.online.length;
+        n = z.intl.string(z.t.WbGtnJ), i = w.online.length;
         break;
       case 5:
-        n = z.intl.string(z.t.Vv0abJ), i = w.offline.length
+        n = z.intl.string(z.t.Vv0abG), i = w.offline.length
     }
     let l = (3 === t || 0 === t) && i > 3,
       a = N.includes(t);
     return (0, r.jsxs)(E.Z, {
-      className: H.section,
+      className: V.section,
       children: [(0, r.jsx)(d.nn4, {
-        children: z.intl.format(z.t.Uaqbke, {
+        children: z.intl.format(z.t.UaqbkZ, {
           title: n,
           count: i
         })
       }), (0, r.jsxs)(d.P3F, {
         onClick: () => l && k(t),
         "aria-hidden": true,
-        className: l ? H.sectionCollapsible : true,
+        className: l ? V.sectionCollapsible : true,
         children: [n, " — ", i, l ? a ? (0, r.jsx)(d.Fbu, {
           size: "md",
           color: "currentColor",
-          className: H.chevronIcon
+          className: V.chevronIcon
         }) : (0, r.jsx)(d.CJ0, {
           size: "md",
           color: "currentColor",
-          className: H.chevronIcon
+          className: V.chevronIcon
         }) : null]
       })]
     })
   }, [S.currentActivityName, w.friendRequests.length, w.sameActivity.length, w.suggestions.length, w.activities.length, w.online.length, w.offline.length, N, k]), Y = l.useCallback(e => {
     let t;
-    return null == (t = 0 === e.section ? w.friendRequests[e.row] : 1 === e.section ? w.sameActivity[e.row] : 3 === e.section ? w.suggestions[e.row] : 2 === e.section ? w.activities[e.row] : 4 === e.section ? w.online[e.row] : w.offline[e.row]) || null == t.user ? null : (0, r.jsx)(X, J(V({}, t), {
+    return null == (t = 0 === e.section ? w.friendRequests[e.row] : 1 === e.section ? w.sameActivity[e.row] : 3 === e.section ? w.suggestions[e.row] : 2 === e.section ? w.activities[e.row] : 4 === e.section ? w.online[e.row] : w.offline[e.row]) || null == t.user ? null : (0, r.jsx)(X, K(H({}, t), {
       index: e.row,
       closeParentPopout: o,
       isSuggestion: 3 === e.section,
@@ -603,28 +603,28 @@ let et = Chunk647438.memo(function(e) {
   return (0, r.jsxs)("div", {
     className: t,
     children: [null != f ? (0, r.jsx)("div", {
-      className: H.header,
+      className: V.header,
       children: f()
     }) : (0, r.jsxs)("div", {
-      className: H.header,
+      className: V.header,
       children: [(0, r.jsx)(d.Heading, {
         variant: "heading-lg/semibold",
-        children: z.intl.string(z.t.TdEu5X)
+        children: z.intl.string(z.t.TdEu5e)
       }), (0, r.jsxs)("div", {
-        className: H.controlButtons,
+        className: V.controlButtons,
         children: [(0, r.jsx)(u.u, {
-          text: z.intl.string(z.t.w5uwoI),
+          text: z.intl.string(z.t.w5uwoK),
           children: (0, r.jsx)(d.hU, {
-            "aria-label": z.intl.string(z.t.w5uwoI),
+            "aria-label": z.intl.string(z.t.w5uwoK),
             size: "sm",
             variant: "secondary",
             icon: d.oLu,
-            onClick: K
+            onClick: J
           })
         }), (0, r.jsx)(u.u, {
-          text: z.intl.string(z.t["3D5yo/"]),
+          text: z.intl.string(z.t["3D5yo6"]),
           children: (0, r.jsx)(d.hU, {
-            "aria-label": z.intl.string(z.t["3D5yo/"]),
+            "aria-label": z.intl.string(z.t["3D5yo6"]),
             size: "sm",
             variant: "secondary",
             icon: d.xhG,
@@ -633,20 +633,20 @@ let et = Chunk647438.memo(function(e) {
         })]
       })]
     }), (0, r.jsx)("div", {
-      className: H.searchContainer,
+      className: V.searchContainer,
       children: (0, r.jsx)(d.E1j, {
         query: P,
         onChange: A,
         onClear: D,
-        placeholder: z.intl.string(z.t["5h0QOP"]),
+        placeholder: z.intl.string(z.t["5h0QOD"]),
         autoFocus: m
       })
     }), en ? (0, r.jsx)("div", {
-      className: H.emptyStateContainer,
+      className: V.emptyStateContainer,
       children: (0, r.jsx)(d.Text, {
         variant: "text-md/normal",
         color: "text-muted",
-        children: z.intl.string(z.t["7sW4h1"])
+        children: z.intl.string(z.t["7sW4h4"])
       })
     }) : (0, r.jsx)(s.bG, {
       navigator: _,
@@ -657,9 +657,9 @@ let et = Chunk647438.memo(function(e) {
             role: n
           } = e, l = Q(e, ["ref", "role"]);
           return (0, r.jsx)(d.Wdt, {
-            children: e => (0, r.jsx)(d.aVo, V({
+            children: e => (0, r.jsx)(d.aVo, H({
               innerRole: n,
-              innerAriaLabel: z.intl.string(z.t.TdEu5X),
+              innerAriaLabel: z.intl.string(z.t.TdEu5e),
               ref: e => {
                 var n;
                 v.current = e, t.current = null != (n = null == e ? true : e.getScrollerNode()) ? n : null
@@ -696,8 +696,8 @@ function en(e) {
       return i ? null == t || t() : null == n || n(), i
     })
   }, [n, t]), g = l.useCallback(() => (0, r.jsx)(et, {
-    containerClassName: H.container,
-    listClassName: H.list,
+    containerClassName: V.container,
+    listClassName: V.list,
     closePopout: f,
     autoFocus: true
   }), [f]);

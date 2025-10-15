@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk819640 = require("./819640.js"),
   Chunk476044 = require("./476044.js"),
   Chunk921944 = require("./921944.js"),
-  Chunk149829 = require("./149829.js"),
+  Chunk989308 = require("./989308.js"),
   Chunk388032 = require("./388032.jsx");
 
 function v(e) {
@@ -23,8 +23,8 @@ function v(e) {
     targetRef: n,
     isCardVisible: v
   } = e, x = (0, l.e7)([d.Z], () => d.Z.hasLayers()), _ = (0, s.f9)(), b = t.skuId === o.A$ ? {
-    title: g.intl.string(m.default.YWo6VL),
-    body: g.intl.string(m.default.gXVvKc),
+    title: g.intl.string(m.default.YWo6VF),
+    body: g.intl.string(m.default.gXVvKS),
     dismissibleContentType: a.z.VANITY_URL_POWERUP_EDUCATIONAL_POPOVER
   } : null, h = [];
   null == b || x || !v || _ || h.push(b.dismissibleContentType);

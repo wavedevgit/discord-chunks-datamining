@@ -53,14 +53,14 @@ function b(e) {
   }), [t]), m = i.useMemo(() => [{
     type: a.Y.USER_INSTALL,
     icon: o.oLu,
-    title: f.intl.string(f.t.aCg60P),
-    subtitle: f.intl.string(f.t.YeiIUZ),
+    title: f.intl.string(f.t.aCg60N),
+    subtitle: f.intl.string(f.t.YeiIUV),
     beta: false
   }, {
     type: a.Y.GUILD_INSTALL,
     icon: o.QTo,
-    title: f.intl.string(f.t.E64YCz),
-    subtitle: f.intl.string(f.t.bbtoKm),
+    title: f.intl.string(f.t.E64YCw),
+    subtitle: f.intl.string(f.t.bbtoKi),
     beta: false
   }].filter(e => {
     var n, r;
@@ -144,7 +144,7 @@ function O(e) {
       children: (0, r.jsx)(o.Text, {
         variant: "text-xs/medium",
         color: "text-default",
-        children: f.intl.string(f.t.LO4f0P)
+        children: f.intl.string(f.t.LO4f0N)
       })
     }) : null]
   })
@@ -208,7 +208,7 @@ function I(e) {
       children: [(0, r.jsx)(o.Text, {
         variant: "text-sm/semibold",
         color: "text-brand",
-        children: O ? f.intl.string(f.t.u4YJ8g) : f.intl.string(f.t["N/tajD"])
+        children: O ? f.intl.string(f.t.u4YJ8v) : f.intl.string(f.t["N/tajI"])
       }), O ? (0, r.jsx)(o.u04, {
         size: "sm",
         color: o.TVs.colors.TEXT_BRAND

@@ -35,16 +35,16 @@ function y(e) {
         color: "currentColor",
         className: C.bannerIcon
       }),
-      bannerHeader: b.intl.format(b.t.GgMwjk, {
+      bannerHeader: b.intl.format(b.t.GgMwjo, {
         guildName: null != (t = null == n ? true : n.name) ? t : ""
       }),
-      bannerSubtext: b.intl.string(b.t.ONjwD5),
+      bannerSubtext: b.intl.string(b.t.ONjwDw),
       textStyles: C.bannerContainer,
       headerStyles: C.bannerHeader,
       children: (0, i.jsx)(l.Button, {
         variant: "primary",
         size: "sm",
-        text: b.intl.string(b.t.Viksoo),
+        text: b.intl.string(b.t.Viksoq),
         onClick: () => r()
       })
     })
@@ -60,7 +60,7 @@ function _(e) {
   } = (0, o.ZP)(a.Z.AUTOMOD_PROFILE_QUARANTINE_ALERT), [u, d] = (0, h.ww)({
     guildId: null != (t = null == r ? true : r.id) ? t : f.lds,
     analyticsLocations: c
-  }), p = d ? b.intl.string(b.t["9ph2v7"]) : b.intl.string(b.t.ldh9Cg), m = d ? b.intl.string(b.t["/PGQf0"]) : b.intl.string(b.t.WikgZ1);
+  }), p = d ? b.intl.string(b.t["9ph2v7"]) : b.intl.string(b.t.ldh9Cg), m = d ? b.intl.string(b.t["/PGQf3"]) : b.intl.string(b.t.WikgZ2);
   return (0, i.jsx)("div", {
     children: (0, i.jsx)(s.i, {
       bannerIcon: (0, i.jsx)(l.ics, {
@@ -68,7 +68,7 @@ function _(e) {
         color: "currentColor",
         className: C.bannerIcon
       }),
-      bannerHeader: b.intl.format(b.t.kcYdTq, {
+      bannerHeader: b.intl.format(b.t.kcYdTk, {
         guildName: null != (n = null == r ? true : r.name) ? n : ""
       }),
       bannerSubtext: p,

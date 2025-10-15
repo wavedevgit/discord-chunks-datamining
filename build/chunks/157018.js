@@ -21,11 +21,11 @@ function u(e) {
         let t = (0, i.F6)(e, s.default, a.Z);
         switch (e.type) {
           case c.d4z.GUILD_VOICE:
-            return d.intl.formatToPlainString(d.t.bkpadO, {
+            return d.intl.formatToPlainString(d.t.bkpadH, {
               channelName: t
             });
           case c.d4z.GUILD_STAGE_VOICE:
-            return d.intl.formatToPlainString(d.t.TPPk2T, {
+            return d.intl.formatToPlainString(d.t.TPPk2d, {
               channelName: t
             });
           default:

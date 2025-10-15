@@ -44,13 +44,13 @@ let u = e => {
           className: a()(c.icon, {
             [c.visible]: !t
           }),
-          "aria-label": l.intl.string(l.t["5h0QOP"])
+          "aria-label": l.intl.string(l.t["5h0QOD"])
         }), (0, r.jsx)(s.Dio, {
           color: "currentColor",
           className: a()(c.clear, {
             [c.visible]: t
           }),
-          "aria-label": l.intl.string(l.t.VkKicb)
+          "aria-label": l.intl.string(l.t.VkKicX)
         })]
       })
     })

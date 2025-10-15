@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk590433 = require("./590433.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk833540 = require("./833540.js"),
+  Chunk764295 = require("./764295.js"),
   Chunk678437 = require("./678437.js");
 
 function M(t) {
@@ -44,57 +44,57 @@ function h(t) {
     onClose: N,
     modReportId: R
   } = t, {
-    analyticsLocations: y
-  } = (0, d.ZP)(), v = null != (n = null != (e = null == I ? true : I[0]) ? e : null == y ? true : y[0]) ? n : null, x = (0, o.e7)([m.default], () => m.default.getUser(h), [h]), [U, k] = i.useState(O.DisableCommunicationDuration.DURATION_60_SEC), [j, P] = i.useState(""), [B, L] = i.useState(false), [Z, w] = i.useState(false), H = (0, o.e7)([T.Z], () => {
+    analyticsLocations: x
+  } = (0, d.ZP)(), y = null != (n = null != (e = null == I ? true : I[0]) ? e : null == x ? true : x[0]) ? n : null, v = (0, o.e7)([m.default], () => m.default.getUser(h), [h]), [U, k] = i.useState(O.DisableCommunicationDuration.DURATION_60_SEC), [j, P] = i.useState(""), [B, L] = i.useState(false), [Z, w] = i.useState(false), H = (0, o.e7)([T.Z], () => {
     var t;
     return null == (t = T.Z.getChannel(R)) ? true : t.isArchivedThread()
   }), F = (0, _.sE)(M, {
-    location: v,
+    location: y,
     targetUserId: h
-  }), G = i.useCallback(async () => {
-    if (null != x) {
+  }), K = i.useCallback(async () => {
+    if (null != v) {
       L(true);
       try {
-        await c.Z.setCommunicationDisabledDuration(M, h, U, j, v, R), Z && null != R && E.Z.resolveFlag(R), F(_.jQ.TIMEOUT), (0, u.showToast)((0, u.createToast)(A.intl.formatToPlainString(A.t.O9C3Nt, {
-          user: D.ZP.getName(M, null, x)
+        await c.Z.setCommunicationDisabledDuration(M, h, U, j, y, R), Z && null != R && E.Z.resolveFlag(R), F(_.jQ.TIMEOUT), (0, u.showToast)((0, u.createToast)(C.intl.formatToPlainString(C.t.O9C3Nj, {
+          user: D.ZP.getName(M, null, v)
         }), u.ToastType.SUCCESS)), N()
       } catch (t) {
-        (0, u.showToast)((0, u.createToast)(A.intl.string(A.t.epyCuh), u.ToastType.FAILURE))
+        (0, u.showToast)((0, u.createToast)(C.intl.string(C.t.epyCur), u.ToastType.FAILURE))
       } finally {
         L(false)
       }
     }
-  }, [M, x, h, N, U, j, v, F, R, Z]);
+  }, [M, v, h, N, U, j, y, F, R, Z]);
   return ((0, s.ZP)(() => {
-    null != x && g.default.track(C.rMx.OPEN_MODAL, {
+    null != v && g.default.track(A.rMx.OPEN_MODAL, {
       type: O.Cl,
       guild_id: M,
-      other_user_id: x.id
+      other_user_id: v.id
     })
   }), i.useEffect(() => {
-    (null == x || null == M) && N()
-  }, [M, x, N]), null == x || null == M) ? null : (0, l.jsx)(a.Modal, {
+    (null == v || null == M) && N()
+  }, [M, v, N]), null == v || null == M) ? null : (0, l.jsx)(a.Modal, {
     transitionState: p,
-    title: A.intl.formatToPlainString(A.t.OhsOy0, {
-      user: D.ZP.getName(M, null, x)
+    title: C.intl.formatToPlainString(C.t.OhsOy8, {
+      user: D.ZP.getName(M, null, v)
     }),
-    subtitle: A.intl.format(A.t.Ns83GT, {
+    subtitle: C.intl.format(C.t.Ns83GR, {
       helpdeskArticle: O.cu
     }),
     actions: [{
-      text: A.intl.string(A.t["ETE/oC"]),
+      text: C.intl.string(C.t["ETE/oK"]),
       onClick: N,
       variant: "secondary"
     }, {
-      text: A.intl.string(A.t.MlPTIi),
-      onClick: G,
+      text: C.intl.string(C.t.MlPTIi),
+      onClick: K,
       loading: B
     }],
     actionBarInput: null == R || H ? true : (0, l.jsx)(u.Checkbox, {
       checked: Z,
       onChange: t => w(t),
       labelType: "secondary",
-      label: A.intl.string(S.default["8yIKem"])
+      label: C.intl.string(S.default["8yIKen"])
     }),
     onClose: N,
     children: (0, l.jsxs)(u.Kqy, {
@@ -103,7 +103,7 @@ function h(t) {
         gap: 8,
         children: [(0, l.jsx)(u.Heading, {
           variant: "heading-sm/semibold",
-          children: A.intl.string(A.t["9XsExm"])
+          children: C.intl.string(C.t["9XsExs"])
         }), (0, l.jsx)(r.hE, {
           buttons: f.map(t => (function(t, e, n) {
             let {
@@ -125,11 +125,11 @@ function h(t) {
         gap: 8,
         children: [(0, l.jsx)(u.Heading, {
           variant: "heading-sm/semibold",
-          children: A.intl.string(A.t.ewHW15)
+          children: C.intl.string(C.t.ewHW19)
         }), (0, l.jsx)(u.Kx8, {
           value: j,
           onChange: t => P(t),
-          placeholder: A.intl.string(A.t.GakiH1),
+          placeholder: C.intl.string(C.t.GakiHx),
           rows: 4,
           maxLength: O.GN
         })]

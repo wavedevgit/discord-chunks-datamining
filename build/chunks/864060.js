@@ -146,37 +146,37 @@ function F(e, t, n) {
       e.isManaged() && n.bot && s === (0, r.F6)(e, v.default, T.Z) || (s = G(s, e))
   }
   let f = t.content;
-  if ((0, g.Z)(t) && null == (f = A.Z.stringify(t, e))) throw new a.Z("NotificationTextUtils").warn("SystemMessageUtils.stringify(...) could not convert", {
+  if ((0, g.Z)(t) && null == (f = Z.Z.stringify(t, e))) throw new a.Z("NotificationTextUtils").warn("SystemMessageUtils.stringify(...) could not convert", {
     message: t
   }), Error("failed to stringify system message");
   let h = "sticker_items" in t ? t.sticker_items : "stickerItems" in t ? t.stickerItems : t.stickers;
-  if ("message_reference" in t ? (0, o.s)(t) : (0, o.Z)(t)) l = w.intl.string(w.t["9ddYKt"]);
-  else if (null != t.activity && null != t.application) l = t.activity.type === R.mFx.JOIN ? w.intl.formatToPlainString(V(e, w.t.E8CgCh, w.t.c6KHWJ, w.t.Fy7rJN), {
+  if ("message_reference" in t ? (0, o.s)(t) : (0, o.Z)(t)) l = w.intl.string(w.t["9ddYKi"]);
+  else if (null != t.activity && null != t.application) l = t.activity.type === R.mFx.JOIN ? w.intl.formatToPlainString(V(e, w.t.E8CgCg, w.t.c6KHWF, w.t.Fy7rJC), {
     user: i,
     game: t.application.name
-  }) : t.activity.type === R.mFx.JOIN_REQUEST ? w.intl.formatToPlainString(V(e, w.t["/TD0la"], w.t["/TD0la"], w.t["/TD0la"]), {
+  }) : t.activity.type === R.mFx.JOIN_REQUEST ? w.intl.formatToPlainString(V(e, w.t["/TD0lZ"], w.t["/TD0lZ"], w.t["/TD0lZ"]), {
     user: i,
     game: t.application.name
   }) : "";
   else if (null != t.activity && t.activity.type === R.mFx.LISTEN) {
-    let t = V(e, w.t.SaDdmN, w.t.qsODhp, w.t.WeiMTW);
+    let t = V(e, w.t.SaDdmJ, w.t.qsODho, w.t.WeiMTU);
     l = w.intl.formatToPlainString(t, {
       user: i
     })
-  } else if (null != h && h.length > 0) l = w.intl.formatToPlainString(w.t.zY4v1B, {
+  } else if (null != h && h.length > 0) l = w.intl.formatToPlainString(w.t.zY4v1N, {
     stickerName: h[0].name
   });
-  else if (t.type === R.uaV.PREMIUM_REFERRAL) l = w.intl.formatToPlainString(w.t.lieTqU, {
-    username: Z.ZP.getName(n)
+  else if (t.type === R.uaV.PREMIUM_REFERRAL) l = w.intl.formatToPlainString(w.t.lieTqa, {
+    username: A.ZP.getName(n)
   });
-  else if (null != t.poll) l = w.intl.formatToPlainString(w.t.ImizdM, {
+  else if (null != t.poll) l = w.intl.formatToPlainString(w.t.ImizdH, {
     question: t.poll.question.text
   });
   else if (t.type === R.uaV.POLL_RESULT) {
     var p, E, N;
     let e = null == (N = t.embeds) || null == (E = N[0]) || null == (p = E.fields) ? true : p.find(e => ("name" in e ? e.name : e.rawName) === "poll_question_text"),
       n = null != e ? "value" in e ? e.value : e.rawValue : "";
-    l = w.intl.formatToPlainString(w.t["9WrecI"], {
+    l = w.intl.formatToPlainString(w.t["9WrecH"], {
       question: n
     })
   } else l = 0 !== f.length && e.type === R.d4z.DM && !n.bot && f.startsWith("> -# *") ? (l = c.ZP.unparse(f, e.id, true)).substring(0, 1) + l.substring(4) : c.ZP.unparse(f, e.id, true);
@@ -195,10 +195,10 @@ function F(e, t, n) {
         return "".concat(n, " ").concat(l)
       }
     }
-    if ((0, x.yE)(null != (t = e.flags) ? t : 0, R.iLy.IS_VOICE_MESSAGE)) return w.intl.string(w.t.slFYgi);
+    if ((0, x.yE)(null != (t = e.flags) ? t : 0, R.iLy.IS_VOICE_MESSAGE)) return w.intl.string(w.t.slFYgo);
     if (true !== e.attachments && e.attachments.length > 0) {
       let t = (0, d.Z)(e.attachments[0]);
-      return w.intl.formatToPlainString(w.t["51OkwL"], {
+      return w.intl.formatToPlainString(w.t["51OkwM"], {
         filename: t
       })
     }

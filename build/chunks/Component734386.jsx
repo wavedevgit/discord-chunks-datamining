@@ -75,12 +75,12 @@ function M(e) {
       locked: true,
       channelType: t.type
     }), (0, i.jsx)(I.Ot, {
-      children: N.intl.format(N.t.I3R7Vn, {
+      children: N.intl.format(N.t.I3R7Vl, {
         channelName: o
       })
     }), (0, i.jsx)(I.jz, {
       className: w.markup,
-      children: N.intl.format(N.t.QuwqjG, {
+      children: N.intl.format(N.t.QuwqjI, {
         channelName: o,
         topicHook: () => y.Z.parseTopic(t.topic, true, {
           channelId: t.id
@@ -89,14 +89,14 @@ function M(e) {
     }), B ? (0, i.jsxs)("div", {
       className: A.channelSettingButtons,
       children: [(0, i.jsx)(P.Z, {
-        label: N.intl.string(N.t.dMJ3Y6),
+        label: N.intl.string(N.t.dMJ3Y2),
         onClick: () => l(true),
         icon: (0, i.jsx)(d.BFJ, {
           size: "xs",
           color: "currentColor"
         })
       }), (0, i.jsx)(P.Z, {
-        label: N.intl.string(N.t["3gUsJb"]),
+        label: N.intl.string(N.t["3gUsJS"]),
         onClick: function() {
           p.ZP.open(t.id)
         },
@@ -131,7 +131,7 @@ function M(e) {
             tag: "span",
             variant: "text-md/normal",
             color: "text-muted",
-            children: N.intl.string(N.t.rt0ERW)
+            children: N.intl.string(N.t.rt0ERU)
           })]
         })
       }(), k.map((e, n) => {

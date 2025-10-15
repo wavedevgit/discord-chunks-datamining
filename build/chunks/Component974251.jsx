@@ -78,10 +78,10 @@ let V = Chunk647438.memo(function(e) {
     className: V,
     channel: F,
     draftType: G,
-    editorTextContent: W,
-    setValue: z,
-    canOnlyUseTextCommands: q
-  } = e, Y = (0, C.bp)(), K = r.useRef(null), X = r.useRef(null), J = (0, o.e7)([P.Z], () => P.Z.getActivities()), Q = (0, o.e7)([f.Z], () => f.Z.getSettings().clipsEnabled), $ = (0, o.e7)([f.Z], () => f.Z.getLastClipsSession()), ee = (0, o.Wu)([f.Z], () => f.Z.getNewClipIds()), et = (0, o.e7)([O.ZP], () => null == O.ZP.getCurrentSidebarChannelId(F.id)), {
+    editorTextContent: z,
+    setValue: W,
+    canOnlyUseTextCommands: K
+  } = e, Y = (0, C.bp)(), q = r.useRef(null), X = r.useRef(null), J = (0, o.e7)([P.Z], () => P.Z.getActivities()), Q = (0, o.e7)([f.Z], () => f.Z.getSettings().clipsEnabled), $ = (0, o.e7)([f.Z], () => f.Z.getLastClipsSession()), ee = (0, o.Wu)([f.Z], () => f.Z.getNewClipIds()), et = (0, o.e7)([O.ZP], () => null == O.ZP.getCurrentSidebarChannelId(F.id)), {
     showClipsHeaderEntrypoint: en
   } = h.NV.useExperiment({
     location: "ChannelAttachButton"
@@ -106,7 +106,7 @@ let V = Chunk647438.memo(function(e) {
   r.useEffect(() => {
     let e = () => {
       var e;
-      return null == (e = K.current) ? true : e.activateUploadDialogue()
+      return null == (e = q.current) ? true : e.activateUploadDialogue()
     };
     return I.S.subscribe(R.CkL.UPLOAD_FILE, e), () => {
       I.S.unsubscribe(R.CkL.UPLOAD_FILE, e)
@@ -126,7 +126,7 @@ let V = Chunk647438.memo(function(e) {
       canStartThreads: em || eg,
       useSlate: eb,
       hasClips: ec,
-      canUseApplicationCommands: !q,
+      canUseApplicationCommands: !K,
       channel: F,
       activities: J,
       newClipsCount: ev,
@@ -172,11 +172,11 @@ let V = Chunk647438.memo(function(e) {
               channel: F,
               onFileUpload: () => {
                 var e;
-                return null == (e = K.current) ? true : e.activateUploadDialogue()
+                return null == (e = q.current) ? true : e.activateUploadDialogue()
               },
               draftType: G,
-              editorTextContent: W,
-              setValue: z,
+              editorTextContent: z,
+              setValue: W,
               openClips: ef
             }));
           default:
@@ -188,10 +188,10 @@ let V = Chunk647438.memo(function(e) {
         className: a()(U.attachButton, V),
         childClassName: U.attachButtonInner,
         isActive: false,
-        "aria-label": k.intl.string(k.t.d56gCa),
+        "aria-label": k.intl.string(k.t.d56gCQ),
         onDoubleClick: ed ? () => {
           var e;
-          return null == (e = K.current) ? true : e.activateUploadDialogue()
+          return null == (e = q.current) ? true : e.activateUploadDialogue()
         } : true,
         "aria-haspopup": "menu"
       }, e), {
@@ -202,7 +202,7 @@ let V = Chunk647438.memo(function(e) {
     children: [(0, i.jsx)("div", {
       className: U.uploadInput,
       children: (0, i.jsx)(u.Z, {
-        ref: K,
+        ref: q,
         onChange: e => {
           var t, n, i;
           t = e.currentTarget.files, null != (n = e.currentTarget.err) && "ETOOLARGE" === n.code ? (0, T.G)(F, []) : (0, T.d)(t, F, G, {

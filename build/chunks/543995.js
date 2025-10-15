@@ -4,10 +4,10 @@
 require.d(exports, {
   m: () => a
 });
-var Chunk47280 = require("./47280.js"),
+var Chunk283066 = require("./283066.js"),
   Chunk474936 = require("./474936.js");
 let a = () => {
-  let e = (0, Chunk47280.ZP)({
+  let e = (0, Chunk283066.Z)({
       location: "useGiftStyles"
     }),
     t = Chunk474936.QI;

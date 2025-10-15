@@ -24,29 +24,29 @@ function S(e) {
     transitionState: S
   } = e, [L, T] = (0, u.US)([o.z.Q2_2025_MARKETING_MOMENT_FOLLOW_UP_MODAL]);
   return (0, c.ZP)(i.Z.REVERSE_TRIAL_UPSELL_MODAL), n.useEffect(() => () => {
-    T(b.L.USER_DISMISS)
+    T(l.L.USER_DISMISS)
   }, [T]), (0, s.jsx)(_.Z, {
     artURL: A,
-    artContainerClassName: C.artContainer,
-    artClassName: C.art,
+    artContainerClassName: b.artContainer,
+    artClassName: b.art,
     enableArtBoxShadow: false,
     type: t,
-    title: l.intl.string(l.t.aupMtf),
-    body: l.intl.string(l.t.AXmOUb),
-    bodyClassName: C.subHeader,
-    glowUp: l.intl.string(l.t.AXmOUb),
+    title: C.intl.string(C.t.aupMtb),
+    body: C.intl.string(C.t.AXmOUV),
+    bodyClassName: b.subHeader,
+    glowUp: C.intl.string(C.t.AXmOUV),
     onSubscribeClick: () => {
-      T(b.L.TAKE_ACTION)
+      T(l.L.TAKE_ACTION)
     },
-    secondaryCTA: l.intl.string(l.t.SXYIpB),
-    secondaryCTAClassName: C.secondaryCTA,
-    footerClassName: C.footer,
-    headerClassName: C.header,
+    secondaryCTA: C.intl.string(C.t.SXYIpK),
+    secondaryCTAClassName: b.secondaryCTA,
+    footerClassName: b.footer,
+    headerClassName: b.header,
     onSecondaryClick: function() {
-      T(b.L.TAKE_ACTION), a(), (0, r.uL)(d.Z5c.APPLICATION_STORE)
+      T(l.L.TAKE_ACTION), a(), (0, r.uL)(d.Z5c.APPLICATION_STORE)
     },
-    subscribeButtonText: l.intl.string(l.t.J61px0),
-    subscribeButtonClassname: C.subscribeButton,
+    subscribeButtonText: C.intl.string(C.t.J61px8),
+    subscribeButtonClassname: b.subscribeButton,
     useSubscribeButtonGradient: true,
     hidePremiumOfferUpsell: true,
     showEnhancedUpsell: true,
@@ -56,6 +56,6 @@ function S(e) {
       object: d.qAy.BUTTON_CTA
     },
     transitionState: S,
-    onClose: () => (T(b.L.USER_DISMISS), a())
+    onClose: () => (T(l.L.USER_DISMISS), a())
   })
 }

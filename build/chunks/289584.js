@@ -18,21 +18,21 @@ function g(e, t) {
     [g, m] = r.useState(false),
     [x, b] = r.useState(null),
     f = r.useMemo(() => u.Z.getStageInstanceByChannel(null == e ? true : e.id), [null == e ? true : e.id]),
-    h = (0, o.J)(e);
+    h = (0, c.J)(e);
   return {
     loading: g,
     error: x,
     onSave: async r => {
       let {
-        topic: o,
+        topic: c,
         privacyLevel: u,
         sendStartNotification: g
       } = r;
-      if (null != e && "" !== o && null != u) {
+      if (null != e && "" !== c && null != u) {
         m(true), b(null), null != n && (l.Z.selectGuild(n), i.default.selectVoiceChannel(e.id));
         try {
           let n;
-          null != f ? n = await c.Ef(e, o, u) : (n = await c.HO(e, o, u, null != g && g), h && s.Kw(d.v.LIVE_STAGE_NOTIFICATION_BADGE)), t(n)
+          null != f ? n = await o.Ef(e, c, u) : (n = await o.HO(e, c, u, null != g && g), h && s.Kw(d.v.LIVE_STAGE_NOTIFICATION_BADGE)), t(n)
         } catch (e) {
           b(new a.Hx(e)), m(false)
         }

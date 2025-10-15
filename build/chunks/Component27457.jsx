@@ -53,7 +53,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk7504 = require("./7504.js");
-let q = [Chunk354459.fO.ACTIVITY],
+let Q = [Chunk354459.fO.ACTIVITY],
   $ = Chunk647438.memo(e => {
     var t, n, r, o, c, h, Z;
     let {
@@ -137,10 +137,10 @@ let q = [Chunk354459.fO.ACTIVITY],
     let eJ = i.useCallback(() => {
         null != eN && d.Z.toggleLocalMute(eN, W.Yn.STREAM)
       }, [eN]),
-      eQ = i.useCallback(e => {
+      eq = i.useCallback(e => {
         null == H || H(M, e)
       }, [H, M]),
-      eq = i.useCallback(e => {
+      eQ = i.useCallback(e => {
         null == P || P(M, e)
       }, [P, M]),
       e$ = i.useCallback((e, t, n) => {
@@ -168,7 +168,7 @@ let q = [Chunk354459.fO.ACTIVITY],
           focused: ef,
           idle: eI,
           premiumIndicator: false
-        }), e1 = J.intl.formatToPlainString(J.t.gHPz3Q, {
+        }), e1 = J.intl.formatToPlainString(J.t.gHPz3d, {
           streamerName: M.user.username
         });
         break;
@@ -190,7 +190,7 @@ let q = [Chunk354459.fO.ACTIVITY],
         }), e7 = (0, l.jsx)(Y.T, {
           participant: M,
           channelId: er.id
-        }), e1 = J.intl.formatToPlainString(J.t["iC/x/Q"], {
+        }), e1 = J.intl.formatToPlainString(J.t["iC/x/f"], {
           username: M.user.username
         });
         break;
@@ -201,7 +201,7 @@ let q = [Chunk354459.fO.ACTIVITY],
           selected: eu,
           channel: er,
           width: es
-        }), e1 = J.intl.formatToPlainString(J.t.YCvOsO, {
+        }), e1 = J.intl.formatToPlainString(J.t.YCvOsL, {
           activityName: null == eR ? true : eR.name
         });
         break;
@@ -223,8 +223,8 @@ let q = [Chunk354459.fO.ACTIVITY],
     return (0, l.jsx)(p.Z, {
       section: F.jXE.VOICE_CHANNEL_TILE,
       children: (0, l.jsx)("div", {
-        className: s()(Q.wrapper, {
-          [Q.ringing]: eP
+        className: s()(q.wrapper, {
+          [q.ringing]: eP
         }, et),
         style: ei,
         onMouseEnter: () => {
@@ -236,23 +236,23 @@ let q = [Chunk354459.fO.ACTIVITY],
         children: (0, l.jsxs)(x.Z, {
           shakeLocation: K.oZ.VOICE_USER,
           isShaking: eM,
-          className: Q.tile,
+          className: q.tile,
           children: [(0, l.jsx)(z.Z, {
             ref: e4,
-            className: s()(Q.tile, {
-              [Q.noBorder]: ed,
-              [Q.noInteraction]: null == H,
-              [Q.idle]: eI
+            className: s()(q.tile, {
+              [q.noBorder]: ed,
+              [q.noInteraction]: null == H,
+              [q.idle]: eI
             }),
             noBorder: ed,
             style: el,
             participantUserId: eN,
             children: (0, l.jsxs)(u.kL8, {
               "aria-label": e1,
-              className: Q.tileChild,
-              onDoubleClick: eq,
+              className: q.tileChild,
+              onDoubleClick: eQ,
               onContextMenu: e => e$(e, M.type === X.fO.STREAM),
-              onClick: eQ,
+              onClick: eq,
               onMouseDown: $,
               onKeyDown: ee,
               focusProps: {
@@ -263,7 +263,7 @@ let q = [Chunk354459.fO.ACTIVITY],
                 onComplete: () => (0, T.H)(eN),
                 userId: eN
               }) : null, M.type === X.fO.USER ? (0, l.jsx)("div", {
-                className: Q.voiceChannelEffectsContainer,
+                className: q.voiceChannelEffectsContainer,
                 children: (0, l.jsx)(g.Z, {
                   userId: eN,
                   channelId: er.id,
@@ -274,16 +274,16 @@ let q = [Chunk354459.fO.ACTIVITY],
                   }
                 })
               }) : null, e0, ed ? null : (0, l.jsx)("div", {
-                className: Q.indicators,
+                className: q.indicators,
                 children: e7
               }), eu ? (0, l.jsx)("div", {
-                className: Q.selectedScreen,
+                className: q.selectedScreen,
                 children: (0, l.jsx)(e8, {
                   size: "md",
                   color: "currentColor",
-                  className: Q.selectedIcon
+                  className: q.selectedIcon
                 })
-              }) : null, q.includes(M.type) ? null : (0, l.jsx)(en, (h = function(e) {
+              }) : null, Q.includes(M.type) ? null : (0, l.jsx)(en, (h = function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                   var n = null != arguments[t] ? arguments[t] : {},
                     l = Object.keys(n);
@@ -332,9 +332,9 @@ let q = [Chunk354459.fO.ACTIVITY],
               })(Object(Z)).forEach(function(e) {
                 Object.defineProperty(h, e, Object.getOwnPropertyDescriptor(Z, e))
               }), h)), ec && !ed ? (0, l.jsx)("div", {
-                className: s()(Q.border, {
-                  [Q.voiceChannelEffect]: !ef && (ek || null != ez),
-                  [Q.speaking]: eM && !ef && !ek
+                className: s()(q.border, {
+                  [q.voiceChannelEffect]: !ef && (ek || null != ez),
+                  [q.speaking]: eM && !ef && !ek
                 })
               }) : null]
             })
@@ -393,8 +393,8 @@ function et(e) {
   return (0, l.jsx)(c.u, {
     text: n,
     children: (0, l.jsx)("div", {
-      className: s()(Q.overlayButton, {
-        [Q.hideWhenInactive]: i
+      className: s()(q.overlayButton, {
+        [q.hideWhenInactive]: i
       }),
       children: (0, l.jsx)(u.hU, {
         size: "sm",
@@ -463,90 +463,90 @@ let en = Chunk647438.memo(e => {
       muted: E
     });
   return (0, l.jsxs)("div", {
-    className: s()(Q.overlayContainer, {
-      [Q.compact]: k
+    className: s()(q.overlayContainer, {
+      [q.compact]: k
     }),
     children: [(0, l.jsx)("div", {
-      className: s()(Q.overlayTop, {
-        [Q.small]: r < 195
+      className: s()(q.overlayTop, {
+        [q.small]: r < 195
       }),
       children: A || p === F.ZUi.AUTO_PROBING ? t ? (0, l.jsx)("div", {
-        className: Q.status,
+        className: q.status,
         children: (0, l.jsx)(u.Amn, {
           size: "md",
           color: "currentColor"
         })
       }) : (0, l.jsxs)("div", {
-        className: s()(Q.overlayTitle, Q.videoDisabledTitle),
+        className: s()(q.overlayTitle, q.videoDisabledTitle),
         children: [(0, l.jsx)("div", {
-          className: Q.status,
+          className: q.status,
           children: (0, l.jsx)(u.Amn, {
             size: "md",
             color: "currentColor"
           })
         }), (0, l.jsx)(u.Text, {
           variant: "text-sm/normal",
-          className: Q.overlayTitleText,
-          children: J.intl.string(J.t.m2Hyj0)
+          className: q.overlayTitleText,
+          children: J.intl.string(J.t.m2Hyj4)
         })]
       }) : null
     }), !D && (0, l.jsxs)("div", {
-      className: s()(Q.overlayBottom, {
-        [Q.small]: r < 195
+      className: s()(q.overlayBottom, {
+        [q.small]: r < 195
       }),
       children: [(0, l.jsxs)(u.Text, {
-        className: Q.experimentOverlayTitle,
+        className: q.experimentOverlayTitle,
         color: "none",
         variant: k ? "text-sm/normal" : "text-md/normal",
         children: [null != G && g === X.fO.USER && (0, l.jsx)(G, {
-          className: s()(Q.experimentTitleIcon, {
-            [Q.compact]: k
+          className: s()(q.experimentTitleIcon, {
+            [q.compact]: k
           }),
           size: "xs",
           color: "currentColor"
         }), f ? (0, l.jsx)("div", {
-          className: Q.blocked,
+          className: q.blocked,
           children: (0, l.jsx)(u.t6m, {
             size: "lg",
-            className: Q.blockedIcon,
+            className: q.blockedIcon,
             color: o.Z.unsafe_rawColors.RED_400.css
           })
         }) : null, m ? (0, l.jsx)("div", {
-          className: Q.ignored,
+          className: q.ignored,
           children: (0, l.jsx)(u.kZF, {
             size: "lg",
-            className: Q.blockedIcon
+            className: q.blockedIcon
           })
         }) : null, t ? null : (0, l.jsx)(ee, {
           participantType: g,
           platform: I,
-          className: s()(Q.experimentTitleIcon, {
-            [Q.compact]: k
+          className: s()(q.experimentTitleIcon, {
+            [q.compact]: k
           })
         }), null == n || "" === n || t ? null : (0, l.jsx)("span", {
-          className: s()(Q.overlayTitleText, P),
+          className: s()(q.overlayTitleText, P),
           children: n
         }), x && (0, l.jsx)(c.u, {
           text: J.intl.string(J.t.ZEem6O),
           children: (0, l.jsx)(u.tQf, {
-            className: Q.secureFramesIcon,
+            className: q.secureFramesIcon,
             size: "xs",
             color: o.Z.colors.HEADER_PRIMARY,
             "aria-label": J.intl.string(J.t.mR9cf3)
           })
         })]
       }), !d && (0, l.jsxs)("div", {
-        className: Q.overlayButtonContainer,
+        className: q.overlayButtonContainer,
         children: [(0, l.jsx)(et, {
           onClick: e => {
             e.stopPropagation(), L(true), j(e, true, X.A5.THREE_DOT)
           },
-          tooltipText: J.intl.string(J.t["+1H47t"]),
+          tooltipText: J.intl.string(J.t["+1H47u"]),
           icon: u.xhG,
           hideWhenInactive: !U
         }), z && (0, l.jsx)(et, {
           onClick: R,
-          tooltipText: b ? J.intl.string(J.t.YqAjXy) : J.intl.string(J.t.w4m945),
+          tooltipText: b ? J.intl.string(J.t.YqAjX1) : J.intl.string(J.t["w4m94+"]),
           icon: b ? u.OyP : u.gj8,
           hideWhenInactive: !b && !U
         })]

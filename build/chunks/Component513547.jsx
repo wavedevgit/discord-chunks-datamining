@@ -2,7 +2,7 @@
 /** chunk id: 513547, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   al: () => b,
-  ck: () => C
+  ck: () => x
 }), require("./388685.js"), require("./539854.js"), require("./784620.js"), require("./973216.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -283,7 +283,7 @@ let b = {
     }
   },
   j = e => e,
-  x = e => {
+  C = e => {
     let [t] = a.useState([]);
     return t.push({
       value: e.value,
@@ -296,7 +296,7 @@ let b = {
     })
   };
 
-function C(e) {
+function x(e) {
   var t, n, a;
   let {
     label: i,
@@ -307,7 +307,7 @@ function C(e) {
     dataPoints: l,
     width: 300,
     height: 100
-  }) : "number" == typeof l ? (0, r.jsx)(x, {
+  }) : "number" == typeof l ? (0, r.jsx)(C, {
     converter: p,
     value: l,
     width: 300,

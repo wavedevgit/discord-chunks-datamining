@@ -25,7 +25,7 @@ function m(e) {
     setSelectedFilter: b
   } = (0, u.Z)(), _ = (0, p.d)(e => e.setInboxReadState);
   if (!i) return null;
-  let O = m === h.V5.ALL ? f.intl.string(f.t["2pAkDA"]) : f.intl.string(f.t.HcoRu0);
+  let O = m === h.V5.ALL ? f.intl.string(f.t["2pAkDA"]) : f.intl.string(f.t.HcoRu7);
   return (0, r.jsx)(o.u, {
     position: "bottom",
     text: O,

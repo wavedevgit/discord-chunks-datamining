@@ -132,7 +132,7 @@ function C(e) {
   }), i = (0, c.BU)(f.Uq / 1024, {
     useKibibytes: true
   });
-  return _.intl.format(_.t.tRuxk9, {
+  return _.intl.format(_.t.tRuxk5, {
     maxSize: r,
     premiumMaxSize: i,
     onClick: n

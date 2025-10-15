@@ -1,7 +1,7 @@
 /** Chunk was on 4093 **/
 /** chunk id: 122186, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => S,
+  Z: () => N,
   c: () => Z
 });
 var Chunk951288 = require("./951288.js"),
@@ -43,9 +43,9 @@ function f(e) {
     a = r.useCallback(() => {
       if (null != i) {
         var e;
-        return null != (e = (0, g.fr)(i, j.Si.TIER_2)) ? e : p.intl.string(p.t.Y2WKTl)
+        return null != (e = (0, g.fr)(i, j.Si.TIER_2)) ? e : p.intl.string(p.t.Y2WKTk)
       }
-      return p.intl.string(p.t.Y2WKTl)
+      return p.intl.string(p.t.Y2WKTk)
     }, [i]);
   return (0, l.jsx)(x.Z, function(e) {
     for (var n = 1; n < arguments.length; n++) {
@@ -93,12 +93,12 @@ function Z() {
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-xs/medium",
       className: Chunk476215.reverseTrialEducationText,
-      children: Chunk388032.intl.format(Chunk388032.t.GimLpS, {})
+      children: Chunk388032.intl.format(Chunk388032.t.GimLpa, {})
     })]
   })
 }
 
-function S(e) {
+function N(e) {
   let {
     message: n,
     onClose: t,
@@ -121,7 +121,7 @@ function S(e) {
       }), (0, l.jsx)(o.Text, {
         variant: "text-sm/medium",
         className: s()(v.upsellText, v.enhancedUpsellText),
-        children: null != n ? n : p.intl.format(p.t["L/zCto"], {
+        children: null != n ? n : p.intl.format(p.t["L/zCtr"], {
           onClick: () => r({
             analyticsLocation: a,
             onClose: t

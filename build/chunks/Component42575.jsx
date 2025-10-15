@@ -49,13 +49,13 @@ function g(e) {
         children: [(0, r.jsx)(c.Z, {
           icon: i.dz2,
           actionType: c.Z.ActionTypes.ACCEPT,
-          tooltip: f.intl.string(f.t.Zcibdf),
+          tooltip: f.intl.string(f.t.ZcibdX),
           onClick: _,
           shouldHighlight: e
         }), (0, r.jsx)(c.Z, {
           icon: i.Dio,
           actionType: c.Z.ActionTypes.DENY,
-          tooltip: f.intl.string(f.t.xuio0C),
+          tooltip: f.intl.string(f.t.xuio0N),
           onClick: O,
           shouldHighlight: e
         })]

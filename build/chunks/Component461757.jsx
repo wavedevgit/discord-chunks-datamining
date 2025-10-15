@@ -1,7 +1,7 @@
 /** Chunk was on 9573 **/
 /** chunk id: 461757, original params: n,t,l (module,exports,require) **/
 require.d(exports, {
-  Z: () => o
+  Z: () => s
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -10,12 +10,12 @@ var Chunk481060 = require("./481060.js"),
   Chunk109764 = require("./109764.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function o(n, t, l) {
-  return null != n ? (0, a.Z)(n, l, t) : (0, i.jsx)(e.sNh, {
+function s(n, t, l) {
+  return null != n ? (0, r.Z)(n, l, t) : (0, i.jsx)(e.sNh, {
     id: "channel-copy-link",
-    label: c.intl.string(c.t.WqhZss),
+    label: c.intl.string(c.t.WqhZsr),
     action: () => {
-      (0, s.JG)(null != t ? t : "")
+      (0, a.JG)(null != t ? t : "")
     }
   })
 }

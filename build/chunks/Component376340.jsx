@@ -19,39 +19,39 @@ function c(e) {
     body: d,
     content: x
   } = e;
-  return (0, n.jsxs)(l.Z, {
-    children: [(0, n.jsxs)(r.xBx, {
+  return (0, r.jsxs)(l.Z, {
+    children: [(0, r.jsxs)(n.xBx, {
       direction: s.Z.Direction.VERTICAL,
       className: o.header,
       separator: false,
-      children: [(0, n.jsx)("div", {
+      children: [(0, r.jsx)("div", {
         className: o.illustration,
         children: t
-      }), (0, n.jsx)(r.Heading, {
+      }), (0, r.jsx)(n.Heading, {
         className: o.title,
         variant: "heading-xl/extrabold",
         children: c
-      }), (0, n.jsx)(r.olH, {
+      }), (0, r.jsx)(n.olH, {
         className: o.closeButton,
         onClick: a
       })]
-    }), (0, n.jsxs)(r.hzk, {
+    }), (0, r.jsxs)(n.hzk, {
       className: o.body,
       paddingFix: false,
-      children: [(0, n.jsx)(r.Text, {
+      children: [(0, r.jsx)(n.Text, {
         tag: "p",
         variant: "text-md/normal",
         color: "header-secondary",
         children: d
       }), x]
-    }), (0, n.jsx)(r.mzw, {
+    }), (0, r.jsx)(n.mzw, {
       className: o.footer,
-      children: (0, n.jsx)("div", {
+      children: (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: o.footerButton,
-        children: (0, n.jsx)(r.Button, {
+        children: (0, r.jsx)(n.Button, {
           variant: "primary",
-          text: i.intl.string(i.t.i4jeWR),
+          text: i.intl.string(i.t.i4jeWV),
           onClick: a
         })
       })

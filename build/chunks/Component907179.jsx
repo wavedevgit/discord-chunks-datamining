@@ -17,7 +17,7 @@ function o(e) {
   return (0, r.jsx)(i.O1, {
     size: o,
     action: t ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
-    text: a.intl.string(a.t["UJKH/l"]),
+    text: a.intl.string(a.t["UJKH/v"]),
     variant: "primary",
     autoFocus: true,
     fullWidth: false,

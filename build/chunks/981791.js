@@ -13,11 +13,11 @@ function a(e) {
     username: n,
     usernameHook: a = r.dG4
   } = e;
-  return null != t ? i.intl.format(i.t.dXdgno, {
+  return null != t ? i.intl.format(i.t.dXdgnp, {
     username: n,
     applicationName: t.name,
     usernameHook: a
-  }) : i.intl.format(i.t.O829Uu, {
+  }) : i.intl.format(i.t.O829Ul, {
     username: n,
     usernameHook: a
   })

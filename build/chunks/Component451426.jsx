@@ -27,7 +27,7 @@ function N(n) {
     onBack: j
   } = n, _ = (0, s.e7)([d.Z], () => d.Z.getAppealClassificationId()), {
     classification: E
-  } = (0, m.YG)(null != _ ? _ : g.lds), I = (0, x.c7)(null == E ? true : E.description), v = (0, s.e7)([d.Z], () => d.Z.getIsSubmitting()), T = (0, s.e7)([d.Z], () => d.Z.getAppealSignal()), S = (0, s.e7)([d.Z], () => d.Z.getFreeTextAppealReason()), [A, k] = a.useState(false), [Z, L] = a.useState(""), P = a.useCallback(n => {
+  } = (0, m.YG)(null != _ ? _ : g.lds), v = (0, x.c7)(null == E ? true : E.description), I = (0, s.e7)([d.Z], () => d.Z.getIsSubmitting()), T = (0, s.e7)([d.Z], () => d.Z.getAppealSignal()), S = (0, s.e7)([d.Z], () => d.Z.getFreeTextAppealReason()), [A, k] = a.useState(false), [Z, L] = a.useState(""), P = a.useCallback(n => {
     r.Z.dispatch({
       type: "SAFETY_HUB_APPEAL_SIGNAL_CUSTOM_INPUT_CHANGE",
       userInput: n
@@ -49,12 +49,12 @@ function N(n) {
       children: [(0, t.jsx)(l.Heading, {
         className: h.title,
         variant: "heading-xl/semibold",
-        children: p.intl.string(p.t["C5q+pW"])
+        children: p.intl.string(p.t["C5q+pa"])
       }), (0, t.jsx)(l.Text, {
         className: h.subtitle,
         color: "header-secondary",
         variant: "text-md/normal",
-        children: p.intl.string(p.t["G2g/g5"])
+        children: p.intl.string(p.t["G2g/g4"])
       }), null != N && (0, t.jsx)(l.olH, {
         "data-migration-pending": true,
         className: h.closeButton,
@@ -81,7 +81,7 @@ function N(n) {
           children: (0, t.jsx)(l.Heading, {
             variant: "heading-md/normal",
             color: "text-link",
-            children: S.length > 0 ? p.intl.string(p.t.tnE3bZ) : p.intl.string(p.t.uoQFIp)
+            children: S.length > 0 ? p.intl.string(p.t.tnE3bW) : p.intl.string(p.t.uoQFIi)
           })
         })
       }), A && i && (0, t.jsx)("div", {
@@ -94,13 +94,13 @@ function N(n) {
         className: h.policyContainer,
         children: (0, t.jsx)(l.Text, {
           variant: "text-md/semibold",
-          children: I
+          children: v
         })
       }), (0, t.jsx)(l.Text, {
         variant: "text-xs/medium",
         color: "header-secondary",
         className: u.footerText,
-        children: p.intl.string(p.t["d6qgY/"])
+        children: p.intl.string(p.t.d6qgY2)
       })]
     }), (0, t.jsxs)(l.mzw, {
       "data-migration-pending": true,
@@ -116,14 +116,14 @@ function N(n) {
           direction: "horizontal-reverse",
           children: [(0, t.jsx)(l.Button, {
             variant: "secondary",
-            text: p.intl.string(p.t["13/7kX"]),
+            text: p.intl.string(p.t["13/7kZ"]),
             onClick: j,
-            disabled: v
+            disabled: I
           }), (0, t.jsx)(l.Button, {
             variant: "critical-primary",
-            text: p.intl.string(p.t.geKm7t),
+            text: p.intl.string(p.t.geKm7u),
             onClick: b,
-            loading: v
+            loading: I
           })]
         })
       })]

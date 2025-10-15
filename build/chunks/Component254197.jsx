@@ -20,7 +20,7 @@ function l(e) {
       variant: "text-xs/semibold",
       color: "text-default",
       className: s.header,
-      children: o.intl.string(o.t["Uv/eTx"])
+      children: o.intl.string(o.t["Uv/eT0"])
     }), (0, r.jsx)("div", {
       className: s.list,
       children: t.map(e => {

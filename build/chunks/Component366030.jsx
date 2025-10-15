@@ -88,13 +88,13 @@ function Z(e) {
   } = e;
   if (null != s) switch (a) {
     case D.iO.LESS_THAN:
-      t = M.intl.format(M.t["2p7dA3"], {
+      t = M.intl.format(M.t["2p7dAw"], {
         description: s,
         count: Math.max(0, Number(o) - 1)
       });
       break;
     case D.iO.GREATER_THAN:
-      t = M.intl.format(M.t["2p7dA3"], {
+      t = M.intl.format(M.t["2p7dAw"], {
         description: s,
         count: Math.max(0, Number(o) + 1)
       });
@@ -199,7 +199,7 @@ function V(e) {
     var e, t;
     return null != (t = null == (e = T.ZP.getSelfMember(d)) ? true : e.roles.includes(l)) && t
   }, [d, l]);
-  return t = 1 === o.length && 1 === o[0].length ? M.intl.string(M.t.jDym4E) : 1 === o.length ? M.intl.format(M.t["0eBj3x"], {}) : M.intl.format(M.t.D7uftB, {}), (0, r.jsxs)("div", {
+  return t = 1 === o.length && 1 === o[0].length ? M.intl.string(M.t.jDym4O) : 1 === o.length ? M.intl.format(M.t["0eBj39"], {}) : M.intl.format(M.t.D7uftL, {}), (0, r.jsxs)("div", {
     className: j.popout,
     children: [(0, r.jsx)("div", {
       className: j.popoutHeaderContainer,
@@ -224,7 +224,7 @@ function V(e) {
         className: j.viewConnectionsButton,
         color: _.zx.Colors.PRIMARY,
         onClick: a,
-        children: M.intl.string(M.t.hgKDnG)
+        children: M.intl.string(M.t.hgKDnJ)
       })]
     })]
   })
@@ -279,7 +279,7 @@ function H(e) {
     align: "top",
     nudgeAlignIntoViewport: true,
     children: e => (0, r.jsx)(d.u, {
-      text: M.intl.string(M.t.Wpsnar),
+      text: M.intl.string(M.t.Wpsnam),
       children: (0, r.jsxs)("div", B(U({
         ref: g,
         className: j.badge

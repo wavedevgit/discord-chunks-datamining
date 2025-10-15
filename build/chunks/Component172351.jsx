@@ -76,7 +76,7 @@ function g(e) {
     }, (0, o.JS)(g.id)))
   };
   return (0, r.jsx)(d.Z, {
-    heading: _.intl.string(_.t["0hKkS+"]),
+    heading: _.intl.string(_.t["0hKkS0"]),
     children: (0, r.jsx)("ul", {
       className: p.list,
       children: v.map(e => (0, r.jsx)("li", {

@@ -70,7 +70,7 @@ let x = Chunk647438.forwardRef(function(e, t) {
           [v.buttonActive]: m
         }),
         onClick: O,
-        "aria-label": _.intl.string(_.t.erHFxI),
+        "aria-label": _.intl.string(_.t.erHFxM),
         "aria-expanded": m,
         "aria-haspopup": "dialog",
         focusProps: {

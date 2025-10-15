@@ -22,7 +22,7 @@ let h = e => {
   return (i.useEffect(() => {
     t && l === o.z.CHURN_DISCOUNT_PREMIUM_TAB_BADGE && h(d.L.TAKE_ACTION)
   }, [t, h, l]), l === o.z.CHURN_DISCOUNT_PREMIUM_TAB_BADGE) ? (0, r.jsx)(u._y, {
-    badgeCopy: p.intl.format(p.t.AYcXGW, {
+    badgeCopy: p.intl.format(p.t.AYcXGR, {
       discountOfferAmount: n.discount.amount
     }).toString(),
     isTabSelected: t,
@@ -38,7 +38,7 @@ let h = e => {
     }), (0, r.jsx)(s.Text, {
       variant: "eyebrow",
       color: "text-secondary",
-      children: p.intl.format(p.t.AYcXGW, {
+      children: p.intl.format(p.t.AYcXGR, {
         discountOfferAmount: n.discount.amount
       })
     })]

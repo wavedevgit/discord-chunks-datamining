@@ -23,7 +23,7 @@ let f = e => {
     guild: e.guild,
     onDismissed: () => e.markAsDismissed(c.L.UNKNOWN),
     onClick: () => (0, a.$Z)("CHANNEL_NOTICE"),
-    message: u.intl.string(u.t.Qhk8cs),
+    message: u.intl.string(u.t.Qhk8cn),
     cta: t,
     trackingSource: s.PsQ.QUICK_SWITCHER_NOTICE,
     type: s.vID.QUICKSWITCHER,

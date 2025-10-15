@@ -14,16 +14,16 @@ var Chunk70956 = require("./70956.js"),
 
 function l() {
   return [{
-    label: Chunk388032.intl.string(Chunk388032.t.cs8A1c),
+    label: Chunk388032.intl.string(Chunk388032.t.cs8A1d),
     value: Chunk70956.Z.Minutes.HOUR
   }, {
-    label: Chunk388032.intl.string(Chunk388032.t.zFKbrF),
+    label: Chunk388032.intl.string(Chunk388032.t.zFKbrK),
     value: Chunk70956.Z.Minutes.DAY
   }, {
-    label: Chunk388032.intl.string(Chunk388032.t.TmPIZX),
+    label: Chunk388032.intl.string(Chunk388032.t.TmPIZW),
     value: 3 * Chunk70956.Z.Minutes.DAY
   }, {
-    label: Chunk388032.intl.string(Chunk388032.t["/7i2el"]),
+    label: Chunk388032.intl.string(Chunk388032.t["/7i2en"]),
     value: Chunk70956.Z.Minutes.WEEK
   }]
 }

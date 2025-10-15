@@ -29,7 +29,7 @@ function m(e) {
       hours: String(n).padStart(2, "0"),
       minutes: String(r).padStart(2, "0"),
       seconds: String(i).padStart(2, "0"),
-      countdownString: d.intl.formatToPlainString(d.t.U0Hhr7, {
+      countdownString: d.intl.formatToPlainString(d.t.U0Hhr6, {
         duration: new Date(0, 0, 0, n, r, i)
       })
     }
@@ -201,7 +201,7 @@ function y(e) {
       }), (0, r.jsx)(c.Text, {
         variant: null != t ? t : "text-sm/medium",
         color: "header-primary",
-        children: d.intl.string(d.t.VZsY3r)
+        children: d.intl.string(d.t.VZsY3t)
       })]
     }), (0, r.jsx)("div", {
       className: p.digitsContainer,

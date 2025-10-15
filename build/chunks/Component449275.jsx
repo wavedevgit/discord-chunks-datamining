@@ -17,7 +17,7 @@ class s extends Chunk647438.PureComponent {
     return null == exports.legalNotice ? null : (0, Chunk951288.jsxs)("div", {
       className: module,
       children: [(0, Chunk951288.jsx)(Chunk770146.Z, {
-        children: Chunk388032.intl.string(Chunk388032.t.m8OiMv)
+        children: Chunk388032.intl.string(Chunk388032.t.m8OiMj)
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk419295.content,
         children: exports.legalNotice

@@ -52,12 +52,12 @@ function g(e) {
     termsUrl: p.EYA.TERMS,
     paidURL: p.EYA.PAID_TERMS,
     privacyUrl: p.EYA.PRIVACY
-  }) : v.interval === _.rV.MONTH && (t = 1 === v.intervalCount ? h.intl.format(h.t.m27GpI, {
+  }) : v.interval === _.rV.MONTH && (t = 1 === v.intervalCount ? h.intl.format(h.t.m27GpK, {
     price: I,
     termsUrl: p.EYA.TERMS,
     paidURL: p.EYA.PAID_TERMS,
     privacyUrl: p.EYA.PRIVACY
-  }) : h.intl.format(h.t["9xf5Vx"], {
+  }) : h.intl.format(h.t["9xf5V1"], {
     price: I,
     termsUrl: p.EYA.TERMS,
     paidURL: p.EYA.PAID_TERMS,

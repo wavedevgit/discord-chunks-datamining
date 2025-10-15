@@ -69,20 +69,20 @@ let w = Chunk647438.memo(function(e) {
       chatOpen: n
     } = e, i = (0, r.jsx)(m.ZP.Icon, {
       icon: u.Dio,
-      tooltip: P.intl.string(P.t.cpT0Cq),
+      tooltip: T.intl.string(T.t.cpT0Cg),
       onClick: t
     });
     return (0, r.jsxs)(m.ZP, {
       toolbar: i,
-      className: a()(T.headerContainer, {
-        [T.chatOpen]: n
+      className: a()(P.headerContainer, {
+        [P.chatOpen]: n
       }),
       children: [(0, r.jsx)(m.ZP.Icon, {
         icon: u.V9,
         disabled: true,
-        "aria-label": P.intl.string(P.t.TYZgzW)
+        "aria-label": T.intl.string(T.t.TYZgzc)
       }), (0, r.jsx)(m.ZP.Title, {
-        children: P.intl.string(P.t.TYZgzW)
+        children: T.intl.string(T.t.TYZgzc)
       })]
     })
   }),
@@ -125,7 +125,7 @@ let w = Chunk647438.memo(function(e) {
         })
       };
     return (0, r.jsxs)("div", {
-      className: T.participantRowContainer,
+      className: P.participantRowContainer,
       children: [(0, r.jsx)(y.Z, {
         targetElementRef: m,
         user: a.user,
@@ -138,22 +138,22 @@ let w = Chunk647438.memo(function(e) {
           var t;
           return (0, r.jsxs)(u.P3F, R(N({
             innerRef: m,
-            className: T.participantMemberContainer,
+            className: P.participantMemberContainer,
             onContextMenu: M
           }, e), {
             children: [(0, r.jsx)(p.Z, {
               size: u.EFr.SIZE_40,
-              className: T.participantAvatar,
+              className: P.participantAvatar,
               user: a.user,
               isMobile: E,
               status: Z
             }), (0, r.jsxs)("div", {
-              className: T.participantTextContainer,
+              className: P.participantTextContainer,
               children: [(0, r.jsx)(u.PUh, {
                 name: a.userNick,
                 colorString: null != (t = null == w ? true : w.colorString) ? t : null,
                 colorStrings: A,
-                className: T.participantName
+                className: P.participantName
               }), (0, r.jsx)(u.Text, {
                 variant: "text-xs/normal",
                 color: "header-secondary",
@@ -163,9 +163,9 @@ let w = Chunk647438.memo(function(e) {
           }))
         }
       }), (0, r.jsxs)("div", {
-        className: T.buttonContainer,
+        className: P.buttonContainer,
         children: [(0, r.jsx)(d.u, {
-          text: L ? P.intl.string(P.t.h9rsTd) : P.intl.string(P.t.f0T7hI),
+          text: L ? T.intl.string(T.t.h9rsTU) : T.intl.string(T.t.f0T7hI),
           asContainer: true,
           children: (0, r.jsx)(u.hU, {
             onClick: function() {
@@ -174,13 +174,13 @@ let w = Chunk647438.memo(function(e) {
             disabled: L || j,
             icon: u.Lrb,
             variant: "secondary",
-            "aria-label": L ? P.intl.string(P.t.h9rsTd) : P.intl.string(P.t.f0T7hI)
+            "aria-label": L ? T.intl.string(T.t.h9rsTU) : T.intl.string(T.t.f0T7hI)
           })
         }), (0, r.jsx)(d.u, {
-          text: P.intl.string(P.t.moABMy),
+          text: T.intl.string(T.t.moABMz),
           asContainer: true,
           children: (0, r.jsx)(u.hU, {
-            "aria-label": P.intl.string(P.t.moABMy),
+            "aria-label": T.intl.string(T.t.moABMz),
             onClick: function() {
               (0, x.DT)(l, a.user.id, true)
             },
@@ -196,7 +196,7 @@ let w = Chunk647438.memo(function(e) {
       channel: t
     } = e, [n, i] = (0, S.h)(t.id);
     return (0, r.jsx)(u.rsf, {
-      label: P.intl.string(P.t.GYCh0W),
+      label: T.intl.string(T.t.GYCh0d),
       checked: n,
       onChange: i
     })
@@ -208,12 +208,12 @@ let w = Chunk647438.memo(function(e) {
         className: Chunk112848.emptyStateTitle,
         variant: "text-lg/semibold",
         color: "header-primary",
-        children: Chunk388032.intl.string(Chunk388032.t["7R24mX"])
+        children: Chunk388032.intl.string(Chunk388032.t["7R24mZ"])
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         className: Chunk112848.emptyStateBody,
         variant: "text-sm/normal",
         color: "header-secondary",
-        children: Chunk388032.intl.string(Chunk388032.t.Rpr2s0)
+        children: Chunk388032.intl.string(Chunk388032.t.Rpr2s7)
       })]
     })
   });
@@ -225,14 +225,14 @@ function M(e) {
     chatOpen: i
   } = e, l = (0, v.Fd)(t.id), s = [+!!(0, c.e7)([j.Z], () => j.Z.can(Z.Pl.MANAGE_CHANNELS, t) || j.Z.can(Z.Pl.MANAGE_ROLES, t)), Math.max(1, l.length)];
   return (0, r.jsxs)("div", {
-    className: a()(T.container, {
-      [T.chatOpen]: i
+    className: a()(P.container, {
+      [P.chatOpen]: i
     }),
     children: [(0, r.jsx)(w, {
       toggleRequestToSpeakSidebar: n,
       chatOpen: i
     }), (0, r.jsx)(u.aVo, {
-      className: T.contentContainer,
+      className: P.contentContainer,
       sections: s,
       sectionHeight: function(e) {
         return 40 * (1 === e)
@@ -274,12 +274,12 @@ function M(e) {
           section: t
         } = e;
         return 1 === t ? (0, r.jsx)(u.Text, {
-          className: T.listTitle,
+          className: P.listTitle,
           variant: "text-xs/bold",
           color: "header-secondary",
-          children: l.length > 0 ? P.intl.formatToPlainString(P.t["5z7q5a"], {
+          children: l.length > 0 ? T.intl.formatToPlainString(T.t["5z7q5e"], {
             numHands: l.length
-          }) : P.intl.string(P.t.TYZgzW)
+          }) : T.intl.string(T.t.TYZgzc)
         }, "participants-section") : null
       }
     })]

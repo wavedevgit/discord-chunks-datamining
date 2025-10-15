@@ -60,10 +60,10 @@ function I(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let T = () => [Chunk388032.intl.string(Chunk388032.t["EgWTY+"]), Chunk388032.intl.string(Chunk388032.t.umBn5f), Chunk388032.intl.string(Chunk388032.t.dG1wD1), Chunk388032.intl.string(Chunk388032.t.SesI4S), Chunk388032.intl.string(Chunk388032.t.RnMLvl)],
+let T = () => [Chunk388032.intl.string(Chunk388032.t.EgWTY2), Chunk388032.intl.string(Chunk388032.t.umBn5e), Chunk388032.intl.string(Chunk388032.t.dG1wDw), Chunk388032.intl.string(Chunk388032.t.SesI4e), Chunk388032.intl.string(Chunk388032.t.RnMLvr)],
   S = () => {
     var e;
-    return null != (e = l().sample(T())) ? module : Chunk388032.intl.string(Chunk388032.t["EgWTY+"])
+    return null != (e = l().sample(T())) ? module : Chunk388032.intl.string(Chunk388032.t.EgWTY2)
   },
   A = (e, t) => {
     let [n, r] = (0, _.US)([c.z.HALLOWEEN_APP_ICONS_TRICK_ICON_WEB_BADGE]), [i, a] = (0, _.US)([c.z.HALLOWEEN_APP_ICONS_TREAT_ICON_WEB_BADGE]);

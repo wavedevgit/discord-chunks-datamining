@@ -59,11 +59,11 @@ function p(e) {
     children: p ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(i.QTo, c(u({}, d), {
         color: "currentColor"
-      })), o.intl.string(o.t.XIhSoj)]
+      })), o.intl.string(o.t.XIhSoq)]
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(i.tBG, c(u({}, d), {
         color: "currentColor"
-      })), o.intl.string(o.t.dxfZph)]
+      })), o.intl.string(o.t.dxfZpq)]
     })
   })
 }

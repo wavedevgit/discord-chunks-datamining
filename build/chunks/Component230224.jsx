@@ -2,7 +2,7 @@
 /** chunk id: 230224, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  GB: () => O,
+  GB: () => y,
   JI: () => N,
   UM: () => A,
   V6: () => S,
@@ -48,12 +48,12 @@ let x = 100,
     } = e;
     return null != t
   },
-  y = e => !N(e) && (!!j(e) || null != e.inviter && !I(e) && !(e => {
+  O = e => !N(e) && (!!j(e) || null != e.inviter && !I(e) && !(e => {
     var t;
     let n = E(e);
     return (null != (t = null == n ? true : n.memberCount) ? t : 0) > x
   })(e)),
-  O = e => {
+  y = e => {
     let {
       guild: t,
       user: n,
@@ -82,7 +82,7 @@ function S(e) {
     textClassName: i,
     className: s
   } = e, a = E(n);
-  return null == a || y(n) || (null == n || null == (t = n.guild) ? true : t.id) === m.fQ ? null : (0, r.jsx)(o.EJ, {
+  return null == a || O(n) || (null == n || null == (t = n.guild) ? true : t.id) === m.fQ ? null : (0, r.jsx)(o.EJ, {
     className: l()(_.activityCount, s),
     online: a.onlineCount,
     total: a.memberCount,
@@ -95,15 +95,15 @@ function C(e) {
   let {
     invite: t,
     showBigUserIcon: n
-  } = e, s = i.useMemo(() => n ? null : v(t) && null != t.target_user ? d.ZP.getUserAvatarURL(t.target_user) : y(t) && null != t.inviter ? d.ZP.getUserAvatarURL(t.inviter) : null, [t, n]), l = f.intl.string(f.t["3rE1P8"]);
+  } = e, s = i.useMemo(() => n ? null : v(t) && null != t.target_user ? d.ZP.getUserAvatarURL(t.target_user) : O(t) && null != t.inviter ? d.ZP.getUserAvatarURL(t.inviter) : null, [t, n]), l = f.intl.string(f.t["3rE1Pz"]);
   if (b(t)) {
     var c, u;
-    l = (null == (c = t.channel) ? true : c.name) != null && (null == (u = t.inviter) ? true : u.username) != null ? f.intl.format(f.t.Lu4h18, {
+    l = (null == (c = t.channel) ? true : c.name) != null && (null == (u = t.inviter) ? true : u.username) != null ? f.intl.format(f.t.Lu4h19, {
       username: t.inviter.username
-    }) : f.intl.string(f.t.OsdY8B)
-  } else v(t) && null != t.target_user ? l = f.intl.formatToPlainString(f.t.x2L32Q, {
+    }) : f.intl.string(f.t.OsdY8P)
+  } else v(t) && null != t.target_user ? l = f.intl.formatToPlainString(f.t.x2L32d, {
     username: t.target_user.username
-  }) : I(t) ? l = f.intl.string(f.t["FDsl+J"]) : y(t) && null != t.inviter && (l = f.intl.format(f.t.spU2mI, {
+  }) : I(t) ? l = f.intl.string(f.t["FDsl+P"]) : O(t) && null != t.inviter && (l = f.intl.format(f.t.spU2mJ, {
     username: h.ZP.getFormattedName(t.inviter)
   }));
   return (0, r.jsxs)("div", {
@@ -136,7 +136,7 @@ function A(e) {
     className: _.inviteJoinContainer,
     children: [(0, r.jsx)(o.DK, {
       className: _.appIn,
-      children: f.intl.string(f.t["3gg9fF"])
+      children: f.intl.string(f.t["3gg9fH"])
     }), (0, r.jsxs)("div", {
       className: _.guildContainer,
       children: [(0, r.jsx)(o.Vj, {
@@ -158,11 +158,11 @@ function A(e) {
     }))) : n = e
   } else if (null != s) {
     let e = h.ZP.getFormattedName(s);
-    n = f.intl.formatToPlainString(f.t["4aF92R"], {
+    n = f.intl.formatToPlainString(f.t["4aF92d"], {
       username: e
     }), i = (0, r.jsx)(o.DK, {
       className: _.directInviteSubTitle,
-      children: f.intl.format(f.t.Quj7HX, {
+      children: f.intl.format(f.t.Quj7HR, {
         username: e
       })
     })

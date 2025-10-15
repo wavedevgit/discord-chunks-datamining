@@ -44,7 +44,7 @@ function v(t) {
       children: [(0, l.jsx)(r.Heading, {
         variant: "heading-lg/semibold",
         color: "text-primary",
-        children: o.intl.string(o.t.oV10fv)
+        children: o.intl.string(o.t.oV10fn)
       }), (0, l.jsx)(r.Kx8, {
         value: u,
         maxLength: d.iF,
@@ -70,7 +70,7 @@ let O = function(t) {
   } = a.useMemo(() => {
     let t = [],
       e = [];
-    return c && (t.push(E), e.push(o.intl.string(o.t.UyBQF7))), t.push(f), e.push(o.intl.string(o.t.LhMLCk)), {
+    return c && (t.push(E), e.push(o.intl.string(o.t.UyBQFx))), t.push(f), e.push(o.intl.string(o.t.LhMLCg)), {
       questionItems: t,
       questionTitles: e
     }
@@ -81,7 +81,7 @@ let O = function(t) {
       searchContext: e
     })
   }, [n, e]);
-  let [h, p] = a.useState(0), S = 0 === h, N = h === g.length - 1, D = a.useMemo(() => {
+  let [h, S] = a.useState(0), p = 0 === h, N = h === g.length - 1, D = a.useMemo(() => {
     let t = g[h],
       e = _[h];
     return (0, l.jsx)(v, function(t) {
@@ -104,11 +104,11 @@ let O = function(t) {
     }({
       title: e
     }, t))
-  }, [g, _, h]), L = a.useMemo(() => g.every(s.cp), [g]), I = a.useMemo(() => {
+  }, [g, _, h]), C = a.useMemo(() => g.every(s.cp), [g]), I = a.useMemo(() => {
     let t = g[h];
     return (0, s.cp)(t)
-  }, [g, h]), C = a.useCallback(() => {
-    L && ((0, u.z4)({
+  }, [g, h]), T = a.useCallback(() => {
+    C && ((0, u.z4)({
       rating: n,
       searchContext: e,
       unsatisfiedQuestionOption: c ? (0, s.HO)(E) : null,
@@ -116,35 +116,35 @@ let O = function(t) {
       describeSearchQuestionOption: (0, s.HO)(f),
       describeSearchQuestionText: (0, s.sG)(f)
     }), O())
-  }, [L, n, e, c, E, f, O]), T = a.useCallback(() => {
-    if (S) return void O();
-    p(h - 1)
-  }, [S, h, O]), M = a.useCallback(() => {
-    p(h + 1)
+  }, [C, n, e, c, E, f, O]), L = a.useCallback(() => {
+    if (p) return void O();
+    S(h - 1)
+  }, [p, h, O]), M = a.useCallback(() => {
+    S(h + 1)
   }, [h]), y = a.useMemo(() => {
     let t = [];
-    return S ? t.push({
+    return p ? t.push({
       variant: "secondary",
-      text: o.intl.string(o.t["ETE/oC"]),
+      text: o.intl.string(o.t["ETE/oK"]),
       onClick: O
     }) : t.push({
       variant: "secondary",
-      text: o.intl.string(o.t["13/7kX"]),
-      onClick: T
+      text: o.intl.string(o.t["13/7kZ"]),
+      onClick: L
     }), N ? t.push({
       variant: "primary",
-      text: o.intl.string(o.t["4Zpxtl"]),
-      onClick: C,
-      disabled: !L
+      text: o.intl.string(o.t["4Zpxtr"]),
+      onClick: T,
+      disabled: !C
     }) : t.push({
       variant: "primary",
-      text: o.intl.string(o.t.PDTjLN),
+      text: o.intl.string(o.t.PDTjLC),
       onClick: M,
       disabled: !I
     }), t
-  }, [S, N, L, I, O, T, C, M]);
+  }, [p, N, C, I, O, L, T, M]);
   return (0, l.jsx)(i.Modal, {
-    title: o.intl.string(o.t.LRGdVy),
+    title: o.intl.string(o.t.LRGdV1),
     actions: y,
     onClose: O,
     transitionState: r,

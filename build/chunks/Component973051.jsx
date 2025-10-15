@@ -57,10 +57,10 @@ function x(e) {
     setCurrentStep: j,
     disableTracking: _,
     previousPromptIndex: b
-  } = e, O = l.useRef(null), y = (0, i.e7)([c.Z], () => c.Z.getRulesPrompt(n.id)), [N, C] = l.useState(null != (t = null == y ? true : y.response) && t), E = (0, i.e7)([c.Z], () => c.Z.get(n.id)), P = l.useRef(null), I = l.useRef(null), Z = l.useCallback(async () => {
-    if (null != E && null != y) {
+  } = e, O = l.useRef(null), y = (0, i.e7)([c.Z], () => c.Z.getRulesPrompt(n.id)), [N, C] = l.useState(null != (t = null == y ? true : y.response) && t), P = (0, i.e7)([c.Z], () => c.Z.get(n.id)), E = l.useRef(null), Z = l.useRef(null), I = l.useCallback(async () => {
+    if (null != P && null != y) {
       try {
-        await s.ZP.submitVerificationForm(n.id, g(h({}, E), {
+        await s.ZP.submitVerificationForm(n.id, g(h({}, P), {
           formFields: [g(h({}, y), {
             response: N
           })]
@@ -68,7 +68,7 @@ function x(e) {
       } catch (e) {}
       v()
     }
-  }, [n.id, E, y, N, v]);
+  }, [n.id, P, y, N, v]);
 
   function w(e) {
     let [t] = e;
@@ -76,32 +76,32 @@ function x(e) {
   }
   return (l.useEffect(() => {
     let e = new IntersectionObserver(w, {
-        root: P.current,
+        root: E.current,
         rootMargin: "0px",
         threshold: 0
       }),
-      t = I.current;
+      t = Z.current;
     return null != t && null != t.lastElementChild && e.observe(t.lastElementChild), () => {
       null != t && null != t.lastElementChild && e.unobserve(t.lastElementChild)
     }
-  }, [I, P]), null == y) ? null : (0, r.jsx)("div", {
+  }, [Z, E]), null == y) ? null : (0, r.jsx)("div", {
     className: p.prompt,
     children: (0, r.jsxs)("div", {
       className: p.promptContent,
-      ref: P,
+      ref: E,
       children: [(0, r.jsxs)(a.h21, {
         className: p.scrollerContent,
         ref: O,
         children: [(0, r.jsx)(a.Text, {
           variant: "text-sm/medium",
           color: "text-muted",
-          children: f.intl.string(f.t["b1JC+l"])
+          children: f.intl.string(f.t["b1JC+v"])
         }), (0, r.jsx)(a.Heading, {
           variant: "heading-xl/semibold",
-          children: f.intl.string(f.t.prJqwT)
+          children: f.intl.string(f.t.prJqwc)
         }), (0, r.jsx)("div", {
           className: p.termsFieldBody,
-          ref: I,
+          ref: Z,
           children: y.values.map((e, t) => (0, r.jsxs)("div", {
             className: p.termsRow,
             children: [(0, r.jsx)(a.Text, {
@@ -126,7 +126,7 @@ function x(e) {
           children: false !== b && (0, r.jsx)(a.Button, {
             variant: "secondary",
             size: "md",
-            text: f.intl.string(f.t["13/7kX"]),
+            text: f.intl.string(f.t["13/7kZ"]),
             onClick: () => {
               !_ && (d.default.track(m.rMx.GUILD_ONBOARDING_STEP_COMPLETED, g(h({}, (0, o.hH)(n.id)), {
                 step: false,
@@ -149,12 +149,12 @@ function x(e) {
             className: p.helpText,
             variant: "text-xs/normal",
             color: "text-muted",
-            children: N ? f.intl.string(f.t.arAe3I) : f.intl.string(f.t.D0CVAc)
+            children: N ? f.intl.string(f.t.arAe3N) : f.intl.string(f.t.D0CVAQ)
           }), (0, r.jsx)(a.Button, {
             variant: "primary",
             size: "md",
-            text: "".concat(f.intl.string(f.t["8SuVoE"]), " \uD83C\uDF89"),
-            onClick: Z,
+            text: "".concat(f.intl.string(f.t["8SuVoK"]), " \uD83C\uDF89"),
+            onClick: I,
             disabled: !N
           })]
         })]

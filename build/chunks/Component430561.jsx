@@ -76,7 +76,7 @@ function R(e) {
   let {
     children: t,
     widgetId: n
-  } = e, i = (0, s.e7)([p.Z], () => p.Z.getWidget(n), [n]), a = C(i, N), o = () => (0, b.Q)((0, y.P)(), O.t["1XA04X"], O.intl.string(O.t.uZZGzf), {
+  } = e, i = (0, s.e7)([p.Z], () => p.Z.getWidget(n), [n]), a = C(i, N), o = () => (0, b.Q)((0, y.P)(), O.t["1XA04e"], O.intl.string(O.t.uZZGzc), {
     useFlexboxLayout: true,
     highlightAdminWarningIfElevated: false,
     keybindClassName: v.keybind
@@ -116,7 +116,7 @@ function P(e) {
     onClick: t
   } = e;
   if ((0, s.e7)([h.default], () => h.default.isLocked((0, m.getPID)()))) return null;
-  let n = O.intl.string(O.t["3D5yo/"]);
+  let n = O.intl.string(O.t["3D5yo6"]);
   return (0, r.jsx)(c.u, {
     text: n,
     "aria-label": n,
@@ -135,7 +135,7 @@ function w(e) {
   let {
     widgetId: t,
     showAllStreams: n
-  } = e, i = n ? O.intl.string(O.t.q2B3rh) : O.intl.string(O.t.JKGi6o), a = () => {
+  } = e, i = n ? O.intl.string(O.t.q2B3rq) : O.intl.string(O.t.JKGi6u), a = () => {
     (0, d.zG)(t, {
       showAllStreams: !n
     })
@@ -158,7 +158,7 @@ function D(e) {
   let {
     id: t,
     pinned: n
-  } = e, i = n ? O.intl.string(O.t.cSu80j) : O.intl.string(O.t.cM8Vnm), a = (0, s.e7)([h.default], () => h.default.isLocked((0, m.getPID)()));
+  } = e, i = n ? O.intl.string(O.t.cSu80t) : O.intl.string(O.t.cM8Vnp), a = (0, s.e7)([h.default], () => h.default.isLocked((0, m.getPID)()));
   return (0, r.jsx)(c.u, {
     text: i,
     "aria-label": i,

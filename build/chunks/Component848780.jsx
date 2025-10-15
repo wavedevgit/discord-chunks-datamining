@@ -25,6 +25,6 @@ function c(e) {
     variant: "primary",
     size: "sm",
     textVariant: "text-sm/medium",
-    text: l.intl.string(l.t.QbcRCJ)
+    text: l.intl.string(l.t.QbcRCA)
   })
 }

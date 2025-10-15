@@ -25,11 +25,11 @@ let u = function(e) {
     children: [(0, r.jsx)(l.Heading, {
       variant: "heading-lg/semibold",
       color: "header-primary",
-      children: c.intl.string(c.t.runNF8)
+      children: c.intl.string(c.t.runNFx)
     }), (0, r.jsx)(s.Z, {
       className: d.contentContainer,
       grantedPermissions: u,
-      grantedPermissionsHeader: c.intl.string(c.t.SLgiNH)
+      grantedPermissionsHeader: c.intl.string(c.t.SLgiND)
     })]
   }) : null
 }

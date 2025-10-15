@@ -38,7 +38,7 @@ function S(e) {
   return (0, r.jsx)("div", {
     className: I.selectTeamContainer,
     children: (0, r.jsx)(a.zxk, {
-      text: E.intl.string(E.t["5k6FfR"]),
+      text: E.intl.string(E.t["5k6FfX"]),
       disabled: !n,
       onClick: t,
       fullWidth: true
@@ -62,8 +62,8 @@ function T(e) {
     value: e.id
   })), [n]), b = async () => {
     await u(t, o, y.wW.GUILD_ROLE_SUBSCRIPTIONS) && (p(t.id), (0, _.B)({
-      title: E.intl.string(E.t["AP/2qe"]),
-      body: E.intl.string(E.t.kHMgaK)
+      title: E.intl.string(E.t["AP/2qa"]),
+      body: E.intl.string(E.t.kHMgaG)
     }))
   };
   return (0, r.jsxs)(r.Fragment, {
@@ -72,13 +72,13 @@ function T(e) {
       children: [(0, r.jsx)(s.q4e, {
         className: I.teamSelect,
         options: h,
-        placeholder: E.intl.string(E.t.QXf93A),
+        placeholder: E.intl.string(E.t.QXf93N),
         value: o,
         isDisabled: 0 === h.length || f || !l,
         onChange: e => c(e),
-        "aria-label": E.intl.string(E.t.QXf93A)
+        "aria-label": E.intl.string(E.t.QXf93N)
       }), (0, r.jsx)(a.zxk, {
-        text: E.intl.string(E.t["9HU3ZV"]),
+        text: E.intl.string(E.t["9HU3ZW"]),
         onClick: b,
         loading: g,
         disabled: null == o || f || !l
@@ -120,12 +120,12 @@ let P = e => {
       className: I.nonOwnerNotice,
       children: (0, r.jsx)(s.M14, {
         type: "warning",
-        children: E.intl.string(E.t.t56qWO)
+        children: E.intl.string(E.t.t56qWF)
       })
     }), (0, r.jsx)(s.gNt, {
-      label: E.intl.string(E.t["sYLCY/"]),
+      label: E.intl.string(E.t.sYLCY2),
       disabled: !a,
-      description: E.intl.format(E.t["5mfqpW"], {
+      description: E.intl.format(E.t["5mfqpa"], {
         onCreateTeamHook: Z
       }),
       children: P ? (0, r.jsx)(T, {
@@ -137,7 +137,7 @@ let P = e => {
         isGuildOwner: a
       })
     }), (0, r.jsx)(s.gNt, {
-      label: E.intl.string(E.t["0n7R2X"]),
+      label: E.intl.string(E.t["0n7R2d"]),
       children: (0, r.jsx)(C.Z, {
         guildId: t.id,
         allPeriods: []

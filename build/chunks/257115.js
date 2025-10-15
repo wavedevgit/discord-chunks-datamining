@@ -9,8 +9,8 @@ var Chunk927923 = require("./927923.js"),
 function l(e) {
   switch (e) {
     case i.YE.XBOX:
-      return r.intl.string(r.t.T0uYK9);
+      return r.intl.string(r.t.T0uYKy);
     case i.YE.PLAYSTATION:
-      return r.intl.string(r.t.FWAzS6)
+      return r.intl.string(r.t.FWAzS0)
   }
 }

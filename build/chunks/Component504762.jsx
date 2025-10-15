@@ -17,19 +17,19 @@ function s() {
       className: Chunk926440.content,
       children: [(0, Chunk951288.jsx)("img", {
         src: Chunk217110,
-        alt: Chunk388032.intl.string(Chunk388032.t.MvLOqp)
+        alt: Chunk388032.intl.string(Chunk388032.t.MvLOqq)
       }), (0, Chunk951288.jsx)(Chunk481060.LZC, {
         size: 12
       }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
         className: Chunk926440.header,
         variant: "heading-lg/semibold",
-        children: Chunk388032.intl.string(Chunk388032.t.t18lFj)
+        children: Chunk388032.intl.string(Chunk388032.t.t18lFh)
       }), (0, Chunk951288.jsx)(Chunk481060.LZC, {
         size: 8
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
-        children: Chunk388032.intl.string(Chunk388032.t.TvGJgk)
+        children: Chunk388032.intl.string(Chunk388032.t.TvGJgo)
       })]
     })
   })

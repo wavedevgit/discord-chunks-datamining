@@ -68,19 +68,19 @@ function _(e) {
       messageId: n,
       flash: true
     })
-  }, g = () => null != t.messageReference ? null == c ? l.intl.format(l.t.lD5tup, {
+  }, g = () => null != t.messageReference ? null == c ? l.intl.format(l.t.lD5tur, {
     usernameHook: h,
     username: p,
     messageOnClick: m
-  }) : l.intl.format(l.t.yIDvPL, {
+  }) : l.intl.format(l.t.yIDvPD, {
     usernameHook: h,
     username: p,
     pinsActionOnClick: c,
     messageOnClick: m
-  }) : null == c ? l.intl.format(l.t.vfkjqx, {
+  }) : null == c ? l.intl.format(l.t.vfkjq6, {
     usernameHook: h,
     username: p
-  }) : l.intl.format(l.t.R7vZGZ, {
+  }) : l.intl.format(l.t.R7vZGR, {
     usernameHook: h,
     username: p,
     pinsActionOnClick: c

@@ -32,7 +32,7 @@ let E = "***@***.***",
 function I(e, t) {
   if (e instanceof f.dm) return e.id === O ? {
     brand: null,
-    label: m.intl.string(m.t.eQ2bLp)
+    label: m.intl.string(m.t.eQ2bLi)
   } : {
     brand: t ? d.ZP.Types.UNKNOWN : e.brand,
     label: m.intl.formatToPlainString(m.t.QvBAQk, {
@@ -49,7 +49,7 @@ function I(e, t) {
   };
   if (e instanceof f.fv) return {
     brand: d.ZP.Types.GIROPAY,
-    label: m.intl.string(m.t["y+0MQZ"])
+    label: m.intl.string(m.t["y+0MQU"])
   };
   if (e instanceof f.Vg) return {
     brand: d.ZP.Types.PRZELEWY24,
@@ -57,19 +57,19 @@ function I(e, t) {
   };
   else if (e instanceof f.sn) return {
     brand: d.ZP.Types.PAYSAFECARD,
-    label: m.intl.string(m.t.e3APTT)
+    label: m.intl.string(m.t.e3APTU)
   };
   else if (e instanceof f.o_) return {
     brand: d.ZP.Types.GCASH,
-    label: m.intl.string(m.t.PjehcF)
+    label: m.intl.string(m.t.PjehcH)
   };
   else if (e instanceof f.kX) return {
     brand: d.ZP.Types.GRABPAY,
-    label: m.intl.string(m.t.T5davE)
+    label: m.intl.string(m.t.T5davL)
   };
   else if (e instanceof f.z) return {
     brand: d.ZP.Types.MOMO_WALLET,
-    label: m.intl.string(m.t.J0A1Vk)
+    label: m.intl.string(m.t.J0A1Vl)
   };
   else if (e instanceof f.Xc) return {
     brand: d.ZP.Types.VENMO,
@@ -77,25 +77,25 @@ function I(e, t) {
   };
   else if (e instanceof f.Om) return {
     brand: d.ZP.Types.KAKAOPAY,
-    label: m.intl.string(m.t.CSVexi)
+    label: m.intl.string(m.t.CSVexs)
   };
   else if (e instanceof f.JC) return {
     brand: d.ZP.Types.GOPAY_WALLET,
-    label: m.intl.string(m.t["43J8JK"])
+    label: m.intl.string(m.t["43J8JC"])
   };
   else if (e instanceof f.U4) return {
     brand: d.ZP.Types.BANCONTACT,
-    label: m.intl.string(m.t["1ITkfq"])
+    label: m.intl.string(m.t["1ITkfn"])
   };
   else if (e instanceof f.D0) return {
     brand: d.ZP.Types.EPS,
-    label: m.intl.format(m.t.hSPoZw, {
+    label: m.intl.format(m.t.hSPoZ2, {
       bank: (0, u.Ul)(e.bank)
     })
   };
   else if (e instanceof f.jc) return {
     brand: d.ZP.Types.IDEAL,
-    label: null == e.bank ? m.intl.string(m.t.nSbwqC) : m.intl.format(m.t["9kUlRU"], {
+    label: null == e.bank ? m.intl.string(m.t.nSbwqK) : m.intl.format(m.t["9kUlRU"], {
       bank: (0, u.YE)(e.bank)
     })
   };
@@ -108,7 +108,7 @@ function I(e, t) {
 
 function T(e, t) {
   let n = null;
-  return e && null != t && !t.canRedeemTrial() ? n = m.intl.string(m.t.SvheW9) : e && null != t && t.hasFlag(h.Cw.NEW) && (n = m.intl.format(m.t.d7ZLKA, {
+  return e && null != t && !t.canRedeemTrial() ? n = m.intl.string(m.t.SvheW1) : e && null != t && t.hasFlag(h.Cw.NEW) && (n = m.intl.format(m.t.d7ZLKC, {
     helpDeskArticle: _.Z.getArticleURL(p.BhN.PAYMENT_AUTHORIZATION_CHARGE)
   })), n
 }
@@ -174,7 +174,7 @@ function S(e) {
       variant: "primary",
       fullWidth: true,
       onClick: h,
-      text: m.intl.string(m.t.eQ2bLp)
+      text: m.intl.string(m.t.eQ2bLi)
     }) : (0, r.jsx)(c.q4e, {
       options: P,
       value: n,
@@ -185,7 +185,7 @@ function S(e) {
         [g.paymentSourceHasWarning]: null != w
       }, y),
       optionClassName: S,
-      placeholder: m.intl.string(m.t["8lqkf8"]),
+      placeholder: m.intl.string(m.t["8lqkf3"]),
       renderOptionValue: e => {
         let [t] = e;
         return A ? (0, r.jsx)(c.$jN, {

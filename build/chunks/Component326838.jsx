@@ -45,7 +45,7 @@ function O(e) {
         className: _.title,
         variant: "text-md/semibold",
         color: "interactive-active",
-        children: b.intl.format(b.t.vtUO3Y, {
+        children: b.intl.format(b.t.vtUO3d, {
           username: l
         })
       }), (0, r.jsxs)("div", {
@@ -56,7 +56,7 @@ function O(e) {
           isHoveringInvite: d
         }), (0, r.jsx)(u.M0o, {
           className: _.deleteButton,
-          tooltip: b.intl.string(b.t.oyYWHE),
+          tooltip: b.intl.string(b.t.oyYWHB),
           color: u.YX$.SECONDARY,
           icon: (0, r.jsx)(u.XHJ, {
             size: "xs"
@@ -81,7 +81,7 @@ function O(e) {
           variant: "text-xxs/semibold",
           className: _.__invalid_metaText,
           color: "text-muted",
-          children: b.intl.string(b.t["//8UqT"])
+          children: b.intl.string(b.t["//8Uqa"])
         })
       })]
     })]
@@ -113,7 +113,7 @@ function y(e) {
       disabled: g,
       size: c.Ph.SMALL,
       onClick: O,
-      children: b.intl.string(b.t["s+J8Dl"])
+      children: b.intl.string(b.t["s+J8Dg"])
     });
     else return null;
   return o && p ? (0, r.jsx)(c.zx, {
@@ -122,16 +122,16 @@ function y(e) {
     disabled: g,
     size: c.Ph.SMALL,
     onClick: y,
-    children: b.intl.string(b.t["/loN98"])
+    children: b.intl.string(b.t["/loN9/"])
   }) : null != n.fallback_url ? (0, r.jsx)(c.zx, {
     className: _.primaryButton,
     disabled: g,
     size: c.Ph.SMALL,
     color: c.Tt.TRANSPARENT,
     onClick: () => (0, d.Z)(n.fallback_url),
-    children: b.intl.string(b.t["27y8KF"])
+    children: b.intl.string(b.t["27y8KC"])
   }) : (0, r.jsx)(s.u, {
-    text: b.intl.formatToPlainString(b.t.issFLA, {
+    text: b.intl.formatToPlainString(b.t.issFLC, {
       gameTitle: n.application_name
     }),
     children: (0, r.jsx)(c.zx, {
@@ -146,7 +146,7 @@ function y(e) {
           variant: "text-xxs/medium",
           className: _.launchToJoinText,
           color: "text-muted",
-          children: b.intl.string(b.t.dai1Ow)
+          children: b.intl.string(b.t.dai1Oz)
         }), (0, r.jsx)(u.d3s, {
           size: "xxs",
           color: u.TVs.colors.TEXT_MUTED.css

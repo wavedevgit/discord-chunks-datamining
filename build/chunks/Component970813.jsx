@@ -19,8 +19,8 @@ function l() {
   return (0, Chunk722932.X0)({
     location: "UserSettingsSoundmojiVolume"
   }) ? (0, Chunk951288.jsx)(Chunk674343.Z, {
-    label: Chunk388032.intl.string(Chunk388032.t["2JbvKw"]),
-    description: Chunk388032.intl.string(Chunk388032.t.INenzY),
+    label: Chunk388032.intl.string(Chunk388032.t["2JbvKy"]),
+    description: Chunk388032.intl.string(Chunk388032.t.INenzc),
     volume: module,
     onVolumeChange: exports
   }) : null

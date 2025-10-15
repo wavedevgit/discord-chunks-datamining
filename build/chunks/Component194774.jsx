@@ -45,7 +45,7 @@ function b(e) {
     }) : null,
     disabled: !x,
     onChange: v,
-    hint: f.intl.string(f.t.uPvxqJ),
+    hint: f.intl.string(f.t.uPvxqK),
     enabled: x,
     maxFileSizeBytes: p.B,
     onFileSizeError: () => (0, s.Z)(p.B)

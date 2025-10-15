@@ -154,7 +154,7 @@ function L(e) {
     children: [(0, l.jsx)(c.Heading, {
       variant: "heading-xl/bold",
       color: "header-primary",
-      children: w.intl.string(w.t.owvC9U)
+      children: w.intl.string(w.t.owvC9f)
     }), (0, l.jsx)("img", {
       className: E.emptyStateImage,
       src: A,
@@ -169,7 +169,7 @@ function L(e) {
           null != e && (0, p.uL)(P.Z5c.CHANNEL(n.id, e.id))
         },
         fullWidth: true,
-        text: w.intl.string(w.t["3iCBUn"])
+        text: w.intl.string(w.t["3iCBUl"])
       })
     })]
   }) : (0, l.jsxs)("div", {
@@ -177,7 +177,7 @@ function L(e) {
     children: [(0, l.jsx)(c.Heading, {
       variant: "heading-lg/bold",
       color: "header-primary",
-      children: w.intl.string(w.t.xwY4La)
+      children: w.intl.string(w.t.xwY4LS)
     }), r.map(e => (0, l.jsx)(k, {
       resource: e
     }, e.channelId))]

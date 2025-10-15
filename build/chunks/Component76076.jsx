@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk583140 = require("./583140.js");
 let x = {
     [Chunk228168.qb.WIDGET_ADDED]: {
-      message: Chunk388032.intl.string(Chunk388032.t.fFP1Uy),
+      message: Chunk388032.intl.string(Chunk388032.t.fFP1U1),
       icon: (0, Chunk951288.jsx)(Chunk481060.dz2, {
         size: "sm",
         color: Chunk481060.TVs.colors.STATUS_POSITIVE.css
@@ -26,7 +26,7 @@ let x = {
       toast_id: "user_profile_widget_added"
     },
     [Chunk228168.qb.WIDGET_REMOVED]: {
-      message: Chunk388032.intl.string(Chunk388032.t.zzsK7h),
+      message: Chunk388032.intl.string(Chunk388032.t.zzsK7u),
       icon: (0, Chunk951288.jsx)(Chunk481060.dz2, {
         size: "sm",
         color: Chunk481060.TVs.colors.STATUS_POSITIVE.css
@@ -43,7 +43,7 @@ let x = {
       type: Chunk481060.ToastType.FAILURE
     },
     [Chunk228168.qb.SOMETHING_WENT_WRONG]: {
-      message: Chunk388032.intl.string(Chunk388032.t.F8FvUy),
+      message: Chunk388032.intl.string(Chunk388032.t.F8FvU1),
       icon: (0, Chunk951288.jsx)(Chunk481060.Uz9, {
         size: "sm",
         color: Chunk481060.TVs.colors.STATUS_DANGER.css

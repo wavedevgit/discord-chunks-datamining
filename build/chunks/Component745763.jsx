@@ -27,7 +27,7 @@ function d(n) {
     }), (0, e.jsx)(o.kSQ, {
       children: (0, e.jsx)(o.sNh, {
         id: "copy",
-        label: r.intl.string(r.t.OpuAlK),
+        label: r.intl.string(r.t.OpuAlJ),
         action: () => i.ZP.copy(t)
       })
     })]

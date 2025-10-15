@@ -17,7 +17,7 @@ function l(e) {
     visuallyHideLabel: s
   } = e, u = (0, a.Z)(t);
   return u.length > 0 ? (0, n.jsx)(i.Z, {
-    label: o.intl.formatToPlainString(o.t.ujhJdG, {
+    label: o.intl.formatToPlainString(o.t.ujhJdH, {
       numFriends: u.length
     }),
     className: c,

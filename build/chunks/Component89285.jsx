@@ -14,7 +14,7 @@ function s(e) {
   let {
     name: t,
     onRetry: n
-  } = e, s = null != t ? t : a.intl.string(a.t["11pdXZ"]);
+  } = e, s = null != t ? t : a.intl.string(a.t["11pdXV"]);
   return (0, r.jsx)("div", {
     className: o.container,
     children: (0, r.jsxs)("div", {
@@ -32,7 +32,7 @@ function s(e) {
         }), (0, r.jsx)(i.Text, {
           variant: "text-sm/normal",
           color: "text-feedback-warning",
-          children: a.intl.string(a.t.tmGHjc)
+          children: a.intl.string(a.t.tmGHjY)
         })]
       })]
     })

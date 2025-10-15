@@ -15,13 +15,13 @@ function r(t) {
   } = t;
   return (0, s.jsx)(a.Modal, {
     transitionState: i,
-    title: e.intl.string(e.t.elyVbv),
+    title: e.intl.string(e.t.elyVbm),
     onClose: n,
     actions: [{
-      text: e.intl.string(e.t.BddRzS),
+      text: e.intl.string(e.t.BddRzc),
       variant: "primary",
       onClick: n
     }],
-    subtitle: e.intl.string(e.t.nIeRep)
+    subtitle: e.intl.string(e.t.nIeRen)
   })
 }

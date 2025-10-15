@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk441536 = require("./441536.js"),
   Chunk535396 = require("./535396.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk149829 = require("./149829.js"),
+  Chunk989308 = require("./989308.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk765179 = require("./765179.js"),
   Chunk630564 = require("./630564.js");
@@ -148,7 +148,7 @@ function k(e) {
           className: D.button,
           children: (0, r.jsx)(f.Button, {
             variant: "primary",
-            text: P.intl.string(P.t.oPAx73),
+            text: P.intl.string(P.t["oPAx7+"]),
             onClick: B,
             fullWidth: true
           })
@@ -156,7 +156,7 @@ function k(e) {
           className: D.button,
           children: (0, r.jsx)(f.Button, {
             variant: "secondary",
-            text: P.intl.string(P.t.GoCQxU),
+            text: P.intl.string(P.t.GoCQxc),
             onClick: Z,
             fullWidth: true
           })
@@ -167,7 +167,7 @@ function k(e) {
       text: P.intl.string(P.t.y2b7CA)
     }), b && (0, r.jsx)(f.IGR, {
       className: D.topPerksCardNew,
-      text: P.intl.string(P.t.oW0eUd),
+      text: P.intl.string(P.t.oW0eUV),
       color: l.Z.BG_BRAND
     }), L && (0, r.jsx)("div", {
       className: D.shineLine
@@ -190,7 +190,7 @@ let U = 3,
       className: w.container,
       children: [(0, r.jsx)(d.X6q, {
         variant: "heading-xxl/extrabold",
-        children: P.intl.string(R.default.wjI18Q)
+        children: P.intl.string(R.default.wjI18f)
       }), (0, r.jsx)(d.xvT, {
         variant: "text-lg/medium",
         children: P.intl.format(R.default.S562fn, {

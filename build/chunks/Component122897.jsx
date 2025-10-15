@@ -28,8 +28,8 @@ function m() {
   return (0, Chunk951288.jsxs)(Chunk838436.U, {
     setting: Chunk726985.s6.PRIVACY_DIRECT_MESSAGE_SPAM_FILTER_V2,
     children: [(0, Chunk951288.jsx)(Chunk838436.H, {
-      header: Chunk388032.intl.string(Chunk388032.t.tiCXaH),
-      description: Chunk388032.intl.format(Chunk388032.t.RvjRRI, {
+      header: Chunk388032.intl.string(Chunk388032.t.tiCXaG),
+      description: Chunk388032.intl.format(Chunk388032.t.RvjRRE, {
         appealLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.SAFE_DIRECT_MESSAGING)
       })
     }), (0, Chunk951288.jsx)(Chunk755721.Gu, {

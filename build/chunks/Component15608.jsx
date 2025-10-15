@@ -38,10 +38,10 @@ function x(e) {
   } = e, x = (0, c.Pp)();
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(s.xBx, {
-      title: d.intl.formatToPlainString(d.t.T7aLYT, {
+      title: d.intl.formatToPlainString(d.t.T7aLYW, {
         guildName: o
       }),
-      subtitle: d.intl.string(d.t["RA+St6"])
+      subtitle: d.intl.string(d.t["RA+St7"])
     }), (0, i.jsx)(s.fef, {
       children: (0, i.jsx)(r.w0Z, {
         className: u.scroller,
@@ -82,7 +82,7 @@ function x(e) {
             className: u.optionHeader,
             color: "header-secondary",
             variant: "text-xs/bold",
-            children: d.intl.string(d.t.JGDkfg)
+            children: d.intl.string(d.t.JGDkfn)
           }), (0, i.jsx)(m, {
             guildTemplate: x[c.sE.HUB_STUDY],
             onClick: a
@@ -108,7 +108,7 @@ function x(e) {
       leading: (0, i.jsx)(r.Avr, {
         textVariant: "text-sm/medium",
         variant: "secondary",
-        text: d.intl.string(d.t["13/7kX"]),
+        text: d.intl.string(d.t["13/7kZ"]),
         onClick: l
       })
     })]

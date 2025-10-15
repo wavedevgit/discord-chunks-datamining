@@ -24,7 +24,7 @@ function p(e) {
   return (0, i.jsxs)(o.Y0X, {
     transitionState: n,
     size: o.CgR.SMALL,
-    "aria-label": c.intl.string(c.t.WbFpq4),
+    "aria-label": c.intl.string(c.t.WbFpq6),
     parentComponent: "ScheduledMessageCreateModal",
     children: [(0, i.jsx)(o.olH, {
       onClick: l,
@@ -34,7 +34,7 @@ function p(e) {
       className: u.header,
       children: (0, i.jsx)(o.Heading, {
         variant: "heading-xl/medium",
-        children: c.intl.string(c.t["3+ii4F"])
+        children: c.intl.string(c.t["3+ii4O"])
       })
     }), (0, i.jsx)(o.hzk, {
       children: (0, i.jsxs)("div", {
@@ -43,7 +43,7 @@ function p(e) {
           className: u.column,
           children: (0, i.jsx)(o.Wrb, {
             required: true,
-            label: c.intl.string(c.t.pSZKvM),
+            label: c.intl.string(c.t.pSZKvL),
             value: m,
             onSelect: e => {
               g(e)
@@ -55,7 +55,7 @@ function p(e) {
         }), (0, i.jsx)("div", {
           className: u.column,
           children: (0, i.jsx)(o.MGJ, {
-            label: c.intl.string(c.t.GOmEb8),
+            label: c.intl.string(c.t.GOmEb2),
             required: true,
             value: m,
             onChange: e => {
@@ -73,12 +73,12 @@ function p(e) {
         className: u.cancelButton,
         children: (0, i.jsx)(o.Button, {
           variant: "secondary",
-          text: c.intl.string(c.t["ETE/oC"]),
+          text: c.intl.string(c.t["ETE/oK"]),
           onClick: l
         })
       }), (0, i.jsx)(o.Button, {
         variant: "primary",
-        text: c.intl.string(c.t.iQ1SwX),
+        text: c.intl.string(c.t.iQ1Swc),
         onClick: () => {
           (0, s._e)({
             channelId: t.id,

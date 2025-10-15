@@ -96,20 +96,20 @@ let k = e => {
       onChangePlanClick: l
     } = e;
     return n && (t || a) ? null : (0, r.jsx)(u.gNt, {
-      label: M.intl.string(M.t["4neDM+"]),
+      label: M.intl.string(M.t["4neDMz"]),
       children: (0, r.jsx)("div", {
         className: j.__invalid_rowButtons,
         children: n ? (0, r.jsx)(u.Button, {
           variant: "primary",
-          text: M.intl.string(M.t.y3mAE4),
+          text: M.intl.string(M.t.y3mAEx),
           onClick: s,
           loading: i
         }) : (0, r.jsxs)(r.Fragment, {
           children: [!t && !a && (0, r.jsx)(m.Z, {
-            label: M.intl.string(M.t.FRbWR8),
+            label: M.intl.string(M.t.FRbWR0),
             onClick: l
           }), (0, r.jsx)(m.Z, {
-            label: M.intl.string(M.t.Dx0lF7),
+            label: M.intl.string(M.t.Dx0lFx),
             onClick: o
           })]
         })
@@ -133,7 +133,7 @@ let k = e => {
     } = (0, E.uP)(null == l ? true : l.id), V = (null == t ? true : t.paymentGateway) === D.gg$.APPLE_PARTNER;
     if (null == a || null == n || null == y) return null;
     let H = () => {
-        null != l && ((0, v.uL)(D.Z5c.CHANNEL(l.id, L.oC.ROLE_SUBSCRIPTIONS)), (0, T.default)(), f.Z.show(D.kVF.BACK_TO_PREVIOUS_SCREEN, true, M.intl.string(M.t.DvbaM4), () => (0, S.openUserSettings)(I.n.SUBSCRIPTIONS_PANEL, {
+        null != l && ((0, v.uL)(D.Z5c.CHANNEL(l.id, L.oC.ROLE_SUBSCRIPTIONS)), (0, T.default)(), f.Z.show(D.kVF.BACK_TO_PREVIOUS_SCREEN, true, M.intl.string(M.t.DvbaMz), () => (0, S.openUserSettings)(I.n.SUBSCRIPTIONS_PANEL, {
           section: D.oAB.SUBSCRIPTIONS,
           subsection: x.cP
         })))
@@ -173,18 +173,18 @@ let k = e => {
             label: J,
             value: Q
           }), (0, r.jsx)(k, {
-            label: M.intl.string(M.t.dltUMH),
+            label: M.intl.string(M.t.dltUMD),
             value: q,
             showInfoIcon: $,
             infoIconTooltipText: $ ? M.intl.string(M.t["/q6fpa"]) : true
           }), (0, r.jsx)(k, {
-            label: M.intl.string(M.t.AOcwWB),
+            label: M.intl.string(M.t.AOcwWF),
             value: X
           })]
         }), (0, r.jsx)(u.LZC, {
           size: 16
         }), !K && !V && (0, r.jsx)(u.gNt, {
-          label: M.intl.string(M.t.wmMFvA),
+          label: M.intl.string(M.t.wmMFvL),
           children: (0, r.jsx)(U, {
             subscription: t
           })
@@ -198,16 +198,16 @@ let k = e => {
           onResubscribeClick: W
         })]
       }) : null, en = () => K ? (0, r.jsx)(u.IGR, {
-        text: M.intl.string(M.t["7uFZGt"])
+        text: M.intl.string(M.t["7uFZGh"])
       }) : $ ? (0, r.jsx)(u.IGR, {
-        text: M.intl.string(M.t["6anton"]),
+        text: M.intl.string(M.t["6antoq"]),
         color: s.Z.BRAND_500
       }) : z ? (0, r.jsx)(c.u, {
-        text: M.intl.string(M.t.eSuJE2),
+        text: M.intl.string(M.t.eSuJEx),
         children: (0, r.jsx)("div", {
           children: (0, r.jsx)(u.IGR, {
             className: j.paymentDueBadge,
-            text: M.intl.string(M.t.NrRwIl),
+            text: M.intl.string(M.t.NrRwIi),
             color: s.Z.YELLOW_300
           })
         })
@@ -215,7 +215,7 @@ let k = e => {
         text: M.intl.string(M.t.nv1IqK),
         children: (0, r.jsx)("div", {
           children: (0, r.jsx)(u.IGR, {
-            text: M.intl.string(M.t["sBl3X/"]),
+            text: M.intl.string(M.t.sBl3X1),
             color: h.Z.INTERACTIVE_MUTED
           })
         })
@@ -240,7 +240,7 @@ let k = e => {
               children: [(0, r.jsx)(u.Text, {
                 variant: "text-md/medium",
                 className: j.guildName,
-                children: null != l ? l.name : M.intl.string(M.t["He+cmd"])
+                children: null != l ? l.name : M.intl.string(M.t["He+cmZ"])
               }), (0, r.jsxs)("div", {
                 className: j.headerSubtitleContainer,
                 children: [(0, r.jsx)(u.Text, {
@@ -251,7 +251,7 @@ let k = e => {
               })]
             }), (0, r.jsx)(u.P3F, {
               onClick: i(m),
-              "aria-label": M.intl.string(M.t.e5eQOy),
+              "aria-label": M.intl.string(M.t.e5eQOz),
               "aria-controls": B,
               "aria-expanded": _,
               focusProps: {

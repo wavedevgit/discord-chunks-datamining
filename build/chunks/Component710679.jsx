@@ -41,10 +41,10 @@ function Z(e) {
     creator_id: L,
     name: T,
     description: M,
-    entity_type: G,
-    image: _,
+    entity_type: _,
+    image: G,
     recurrence_rule: R
-  } = N, A = (0, b.DK)(N), B = (0, i.e7)([h.ZP], () => h.ZP.isInterestedInEventRecurrence(I, A), [I, A]), U = (0, i.e7)([l.Z], () => l.Z.isLurking(S), [S]), z = (0, i.e7)([c.Z], () => c.Z.getStageInstanceByChannel(D), [D]), J = (0, i.e7)([s.Z], () => s.Z.getGuild(S), [S]), q = (0, i.e7)([o.Z], () => o.Z.getChannel(D), [D]), H = (0, i.e7)([g.default], () => g.default.getUser(L), [L]), {
+  } = N, A = (0, b.DK)(N), B = (0, i.e7)([h.ZP], () => h.ZP.isInterestedInEventRecurrence(I, A), [I, A]), U = (0, i.e7)([l.Z], () => l.Z.isLurking(S), [S]), z = (0, i.e7)([c.Z], () => c.Z.getStageInstanceByChannel(D), [D]), J = (0, i.e7)([s.Z], () => s.Z.getGuild(S), [S]), H = (0, i.e7)([o.Z], () => o.Z.getChannel(D), [D]), q = (0, i.e7)([g.default], () => g.default.getUser(L), [L]), {
     speakers: K
   } = (0, v.Z)({
     id: D,
@@ -58,9 +58,9 @@ function Z(e) {
       guildId: S,
       instance: z
     }
-  }), W = (0, i.e7)([d.Z], () => d.Z.getChannelId()), F = (0, h.xt)(N), V = W === D && null != W && F, Q = K.filter(e => e.type === a.Ui.VOICE), X = Q.length, Y = (0, i.e7)([u.Z], () => u.Z.can(C.Plq.CONNECT, q), [q]), $ = (0, m.ZP)(N), ee = null != J, en = (0, y.Z)({
+  }), W = (0, i.e7)([d.Z], () => d.Z.getChannelId()), F = (0, h.xt)(N), V = W === D && null != W && F, Q = K.filter(e => e.type === a.Ui.VOICE), X = Q.length, Y = (0, i.e7)([u.Z], () => u.Z.can(C.Plq.CONNECT, H), [H]), $ = (0, m.ZP)(N), ee = null != J, en = (0, y.Z)({
     guild: J,
-    channel: q,
+    channel: H,
     guildScheduledEvent: N,
     isActive: F,
     recurrenceId: A,
@@ -88,13 +88,13 @@ function Z(e) {
     return e
   }({
     guild: J,
-    channel: q,
-    creator: H,
+    channel: H,
+    creator: q,
     name: T,
-    entityType: G,
+    entityType: _,
     description: null != M ? M : true,
     location: null != (n = (0, f.cS)(N)) ? n : true,
-    imageSource: null != _ ? (0, x.Z)(N) : true,
+    imageSource: null != G ? (0, x.Z)(N) : true,
     imageLocation: O.Q.THUMBNAIL,
     isActive: F,
     isUserLurking: U,

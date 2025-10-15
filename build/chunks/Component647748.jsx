@@ -22,7 +22,7 @@ function l(t) {
     instructionText: h,
     transitionState: m,
     children: j
-  } = t, [f, C] = a.useState(""), [g, v] = a.useState(null), _ = a.Children.count(j) > 0 ? (0, r.jsx)(i.Zbd, {
+  } = t, [f, g] = a.useState(""), [v, C] = a.useState(null), _ = a.Children.count(j) > 0 ? (0, r.jsx)(i.Zbd, {
     type: i.Zbd.Types.WARNING,
     className: o.card,
     children: (0, r.jsx)(i.Text, {
@@ -37,7 +37,7 @@ function l(t) {
     parentComponent: "TextEntryConfirm",
     children: (0, r.jsxs)("form", {
       onSubmit: function(t) {
-        if (t.preventDefault(), f.toLowerCase() !== l.toLowerCase()) return void v(c);
+        if (t.preventDefault(), f.toLowerCase() !== l.toLowerCase()) return void C(c);
         null == e || e(), n()
       },
       children: [(0, r.jsx)(i.xBx, {
@@ -55,13 +55,13 @@ function l(t) {
             label: h,
             value: f,
             autoComplete: "off",
-            onChange: C,
+            onChange: g,
             autoFocus: true
-          }), null != g && "" !== g ? (0, r.jsx)(i.Text, {
+          }), null != v && "" !== v ? (0, r.jsx)(i.Text, {
             color: "text-danger",
             variant: "text-xs/normal",
             className: o.error,
-            children: g
+            children: v
           }) : null]
         })]
       }), (0, r.jsx)(i.mzw, {
@@ -69,11 +69,11 @@ function l(t) {
           direction: "horizontal-reverse",
           children: [(0, r.jsx)(i.Button, {
             variant: "critical-primary",
-            text: null != p ? p : s.intl.string(s.t["cY+Oob"]),
+            text: null != p ? p : s.intl.string(s.t["cY+Ooa"]),
             type: "submit"
           }), (0, r.jsx)(i.Button, {
             variant: "secondary",
-            text: null != x ? x : s.intl.string(s.t["ETE/oC"]),
+            text: null != x ? x : s.intl.string(s.t["ETE/oK"]),
             onClick: n
           })]
         })

@@ -43,39 +43,39 @@ function g() {
   }, [b]);
   let y = {
       [Chunk531441.Sn.ALL_GOOD]: {
-        title: Chunk388032.t.uaKrRi,
-        description: Chunk388032.intl.format(Chunk388032.t.pEdBD4, {
+        title: Chunk388032.t.uaKrRk,
+        description: Chunk388032.intl.format(Chunk388032.t.pEdBDw, {
           termsOfService: Chunk800530.sQ.TOS_LINK,
           communityGuidelines: Chunk800530.sQ.COMMUNITY_GUIDELINES
         }),
-        status: Chunk388032.t["/Idfao"],
+        status: Chunk388032.t["/Idfam"],
         Icon: Chunk481060.owK,
         color: Chunk692547.Z.colors.STATUS_POSITIVE
       },
       [Chunk531441.Sn.LIMITED]: {
-        title: Chunk388032.t.epkcmS,
-        description: Chunk388032.intl.string(Chunk388032.t["774juc"]),
-        status: Chunk388032.t.umleq4,
+        title: Chunk388032.t.epkcmZ,
+        description: Chunk388032.intl.string(Chunk388032.t["774jub"]),
+        status: Chunk388032.t.umleq6,
         Icon: Chunk481060.Mgn,
         color: Chunk692547.Z.colors.STATUS_WARNING
       },
       [Chunk531441.Sn.VERY_LIMITED]: {
-        title: Chunk388032.t.crzE2X,
-        description: Chunk388032.intl.string(Chunk388032.t["T/Ufh9"]),
-        status: Chunk388032.t.WBtMHf,
+        title: Chunk388032.t.crzE2d,
+        description: Chunk388032.intl.string(Chunk388032.t["T/Ufh4"]),
+        status: Chunk388032.t.WBtMHR,
         Icon: Chunk481060.Mgn,
         color: Chunk692547.Z.unsafe_rawColors.ORANGE_345
       },
       [Chunk531441.Sn.AT_RISK]: {
-        title: Chunk388032.t.XRNVzO,
-        description: Chunk388032.intl.string(Chunk388032.t["hbH+9S"]),
-        status: Chunk388032.t["7f+4Lg"],
+        title: Chunk388032.t.XRNVzM,
+        description: Chunk388032.intl.string(Chunk388032.t["hbH+9f"]),
+        status: Chunk388032.t["7f+4Li"],
         Icon: Chunk481060.Mgn,
         color: Chunk692547.Z.colors.STATUS_DANGER
       },
       [Chunk531441.Sn.SUSPENDED]: {
-        title: Chunk388032.t.MExFkz,
-        description: Chunk388032.intl.string(Chunk388032.t["2liUvt"]),
+        title: Chunk388032.t.MExFk5,
+        description: Chunk388032.intl.string(Chunk388032.t["2liUvr"]),
         status: Chunk388032.t["0OONGB"],
         Icon: Chunk481060.k$p,
         color: Chunk692547.Z.colors.ICON_MUTED

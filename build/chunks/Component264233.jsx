@@ -30,22 +30,22 @@ function g() {
     className: Chunk201848.__invalid_emptyStateContainer,
     children: (0, Chunk951288.jsx)(Chunk240126.Z, {
       Icon: Chunk481060.iWm,
-      header: Chunk388032.intl.string(Chunk388032.t.PbSPWc),
-      tip: Chunk388032.intl.string(Chunk388032.t.BxNbSz)
+      header: Chunk388032.intl.string(Chunk388032.t.PbSPWV),
+      tip: Chunk388032.intl.string(Chunk388032.t.BxNbS0)
     })
   }) : (0, Chunk951288.jsx)(Chunk481060.h21, {
     children: (0, Chunk951288.jsxs)("div", {
       className: Chunk201848.invitesContainer,
       children: [require.length > 0 && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
         children: [(0, Chunk951288.jsx)(m, {
-          title: Chunk388032.intl.string(Chunk388032.t.yflAJV)
+          title: Chunk388032.intl.string(Chunk388032.t.yflAJS)
         }), require.map(e => (0, r.jsx)(p.Z, {
           invite: e,
           expired: false
         }, e.invite_id))]
       }), Chunk392711.length > 0 && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
         children: [(0, Chunk951288.jsx)(m, {
-          title: Chunk388032.intl.string(Chunk388032.t.f0Ia4V)
+          title: Chunk388032.intl.string(Chunk388032.t.f0Ia4e)
         }), Chunk392711.map(e => (0, r.jsx)(p.Z, {
           invite: e,
           expired: true
@@ -116,7 +116,7 @@ function b() {
 
 function _() {
   return 0 === (0, Chunk442837.Wu)([Chunk317632.Z], () => Chunk317632.Z.getInvites()).length ? null : (0, Chunk951288.jsx)(Chunk481060.M0o, {
-    tooltip: Chunk388032.intl.string(Chunk388032.t["Zy3MR/"]),
+    tooltip: Chunk388032.intl.string(Chunk388032.t.Zy3MR0),
     color: Chunk481060.YX$.SECONDARY,
     icon: (0, Chunk951288.jsx)(Chunk481060.XHJ, {
       size: "xs"

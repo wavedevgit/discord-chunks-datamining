@@ -74,14 +74,14 @@ function A(e) {
       color: "header-secondary",
       className: v.text,
       variant: "text-sm/normal",
-      children: O.intl.format(O.t.B3V0FM, {
+      children: O.intl.format(O.t.B3V0FB, {
         count: Math.min(T, a + 1)
       })
     }), (0, r.jsx)(c.Text, {
       color: "text-link",
       className: v.createThreadButton,
       variant: "text-sm/semibold",
-      children: O.intl.string(O.t.rBIGBL)
+      children: O.intl.string(O.t.rBIGBA)
     })]
   })
 }
@@ -134,7 +134,7 @@ function C(e) {
             color: "header-secondary",
             className: o()(v.text, v.replyLabel),
             variant: "text-sm/normal",
-            children: O.intl.format(O.t["8E4GxS"], {
+            children: O.intl.format(O.t["8E4Gxc"], {
               userHook: (e, t) => (0, r.jsx)(c.PUh, {
                 className: v.name,
                 name: E,
@@ -150,7 +150,7 @@ function C(e) {
           children: [u && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(l.u, {
               asContainer: true,
-              text: s ? O.intl.string(O.t.DH2o6R) : O.intl.string(O.t.utGGIY),
+              text: s ? O.intl.string(O.t.DH2o6e) : O.intl.string(O.t.utGGIS),
               children: (0, r.jsx)(c.P3F, {
                 role: "switch",
                 "aria-checked": s,
@@ -162,9 +162,9 @@ function C(e) {
                   children: [(0, r.jsx)(c.lOy, {
                     size: "md",
                     color: "currentColor",
-                    "aria-label": O.intl.string(O.t.P8tvKG),
+                    "aria-label": O.intl.string(O.t.P8tvKC),
                     className: v.mentionIcon
-                  }), s ? O.intl.string(O.t.p9jC2r) : O.intl.string(O.t.U7f3bK)]
+                  }), s ? O.intl.string(O.t.p9jC2t) : O.intl.string(O.t.U7f3bG)]
                 })
               })
             }), (0, r.jsx)("div", {

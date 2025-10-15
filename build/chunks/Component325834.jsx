@@ -83,7 +83,7 @@ let h = e => {
     }, [_, t, i]), A = (0, b.SQ)(n);
     return (0, r.jsx)(c.u, {
       asContainer: true,
-      text: y.intl.string(y.t["6cfuDj"]),
+      text: y.intl.string(y.t["6cfuDg"]),
       "aria-label": false,
       shouldShow: E,
       children: (0, r.jsx)(u.P3F, g(O({}, C), {

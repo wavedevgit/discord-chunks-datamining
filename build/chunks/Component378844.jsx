@@ -50,12 +50,12 @@ let y = e => {
     notPhoneVerified: x,
     newAccount: C,
     newMember: E
-  } = (0, l.e7)([p.Z], () => p.Z.getCheck(r), [r]), S = 0 === t ? m.intl.string(m.t["6zY8BI"]) : null, I = null, P = null;
-  return (0 === t && (v ? (I = m.intl.string(m.t.IRxUlG), P = m.intl.string(m.t.fiNVin)) : x ? (I = m.intl.string(m.t.vW8iUF), P = m.intl.string(m.t["50gfOv"])) : j ? (I = m.intl.string(m.t.vdSOpz), P = m.intl.string(m.t.lm1UKt)) : E ? (I = m.intl.formatToPlainString(m.t.v1ktYb, {
+  } = (0, l.e7)([p.Z], () => p.Z.getCheck(r), [r]), S = 0 === t ? m.intl.string(m.t["6zY8BA"]) : null, I = null, P = null;
+  return (0 === t && (v ? (I = m.intl.string(m.t.IRxUlJ), P = m.intl.string(m.t.fiNVio)) : x ? (I = m.intl.string(m.t.vW8iUF), P = m.intl.string(m.t["50gfOj"])) : j ? (I = m.intl.string(m.t.vdSOp6), P = m.intl.string(m.t.lm1UKi)) : E ? (I = m.intl.formatToPlainString(m.t.v1ktYW, {
     min: f.YeM.MEMBER_AGE
-  }), P = m.intl.string(m.t.BddRzS)) : C && (I = m.intl.formatToPlainString(m.t.sncw41, {
+  }), P = m.intl.string(m.t.BddRzc)) : C && (I = m.intl.formatToPlainString(m.t["sncw4+"], {
     min: f.YeM.ACCOUNT_AGE
-  }), P = m.intl.string(m.t.BddRzS))), null == S || null == I) ? null : (0, i.jsxs)(a.VqE, {
+  }), P = m.intl.string(m.t.BddRzc))), null == S || null == I) ? null : (0, i.jsxs)(a.VqE, {
     className: b.container,
     "aria-labelledby": y,
     children: [(0, i.jsx)("img", {
@@ -93,13 +93,13 @@ let y = e => {
               }) : j && (s.Z.verifyResend(), (0, a.h7j)(e => {
                 var t, n, r;
                 return (0, i.jsx)(a.ConfirmModal, (n = _({
-                  header: m.intl.string(m.t.LykQYk),
-                  confirmText: m.intl.string(m.t.BddRzS),
+                  header: m.intl.string(m.t.LykQYm),
+                  confirmText: m.intl.string(m.t.BddRzc),
                   confirmButtonColor: o.zx.Colors.BRAND
                 }, e), r = r = {
                   children: (0, i.jsx)(a.Text, {
                     variant: "text-md/normal",
-                    children: m.intl.format(m.t.azKEPy, {
+                    children: m.intl.format(m.t.azKEPz, {
                       email: null == (t = h.default.getCurrentUser()) ? true : t.email
                     })
                   })
@@ -118,7 +118,7 @@ let y = e => {
           })
         }) : null, v || x || j ? (0, i.jsx)(a.Avr, {
           onClick: O,
-          text: m.intl.string(m.t.oEAioF),
+          text: m.intl.string(m.t.oEAioK),
           variant: "secondary"
         }) : null]
       })]

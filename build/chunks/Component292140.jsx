@@ -35,7 +35,7 @@ function g(e) {
   }), (0, r.jsxs)(i.v2r, {
     navId: "now-playing-menu",
     onClose: n,
-    "aria-label": h.intl.string(h.t.ogxXGq),
+    "aria-label": h.intl.string(h.t.ogxXGh),
     onSelect: g,
     children: [m, (0, r.jsxs)(i.kSQ, {
       children: [b, _]

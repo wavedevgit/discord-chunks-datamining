@@ -85,11 +85,11 @@ function T(e) {
     if (e.pipWindow.component === m.NYg.ACTIVITY && null != b) {
       var t;
       let e = null == (t = d.Z.getApplication(b.applicationId)) ? true : t.name;
-      return null == e ? E.intl.string(E.t["8raC1P"]) : E.intl.formatToPlainString(E.t["a9+V+V"], {
+      return null == e ? E.intl.string(E.t["8raC1N"]) : E.intl.formatToPlainString(E.t["a9+V+f"], {
         activityName: e
       })
     }
-    return null == e.participant || e.participant.type !== g.fO.STREAM ? E.intl.string(E.t["ng/Kwl"]) : E.intl.formatToPlainString(E.t.sqmFRg, {
+    return null == e.participant || e.participant.type !== g.fO.STREAM ? E.intl.string(E.t["ng/Kws"]) : E.intl.formatToPlainString(E.t.sqmFRk, {
       username: e.participant.userNick
     })
   }

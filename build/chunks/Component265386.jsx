@@ -48,7 +48,7 @@ function b(e) {
     };
     return (0, r.jsx)(p.Z, {
       variant: "text-xs/normal",
-      text: g.intl.formatToPlainString(g.t["hq/Qze"], {
+      text: g.intl.formatToPlainString(g.t["hq/Qzc"], {
         guildName: n.name
       }),
       onClick: e

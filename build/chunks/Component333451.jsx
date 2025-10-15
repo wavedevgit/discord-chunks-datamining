@@ -1,5 +1,5 @@
 /** Chunk was on 24920 **/
-/** chunk id: 333451, original params: e,t,n (module,exports,require) **/
+/** chunk id: 333451, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => T
 });
@@ -30,44 +30,44 @@ var Chunk951288 = require("./951288.js"),
 
 function L(e) {
   let {
-    shouldUpsellFromNoneTier: t
-  } = e, n = (0, a.e7)([S.default], () => S.default.locale);
+    shouldUpsellFromNoneTier: n
+  } = e, t = (0, a.e7)([S.default], () => S.default.locale);
   return (0, i.jsxs)("div", {
-    className: M.perksList,
+    className: b.perksList,
     children: [(0, i.jsx)(h.Z, {
       icon: u.Ucv,
-      iconClassName: M.perkIconGuild,
-      description: b.intl.formatToPlainString(b.t.sQBgs2, {
+      iconClassName: b.perkIconGuild,
+      description: M.intl.formatToPlainString(M.t.sQBgs7, {
         numFreeGuildSubscriptions: O.cb
       }),
       color: u.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK.css
     }), (0, i.jsx)(h.Z, {
       icon: u.Ucv,
-      iconClassName: M.perkIconGuild,
-      description: b.intl.formatToPlainString(b.t["1A6vXi"], {
-        percent: (0, y.T3)(n, O.Rr / 100)
+      iconClassName: b.perkIconGuild,
+      description: M.intl.formatToPlainString(M.t["1A6vXl"], {
+        percent: (0, y.T3)(t, O.Rr / 100)
       }),
       color: u.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK.css
-    }), t ? (0, i.jsx)(h.Z, {
+    }), n ? (0, i.jsx)(h.Z, {
       icon: u.EO4,
-      iconClassName: M.perkIconChatPerks,
-      description: b.intl.string(b.t.Z9b2x2)
+      iconClassName: b.perkIconChatPerks,
+      description: M.intl.string(M.t.Z9b2x8)
     }) : null, (0, i.jsx)(h.Z, {
       icon: u.hGI,
-      iconClassName: M.perkIconStream,
-      description: b.intl.string(b.t["8dqG5E"])
+      iconClassName: b.perkIconStream,
+      description: M.intl.string(M.t["8dqG5O"])
     }), (0, i.jsx)(h.Z, {
       icon: u.rG2,
-      iconClassName: M.perkIconUpload,
-      description: b.intl.string(b.t.cBorIy)
+      iconClassName: b.perkIconUpload,
+      description: M.intl.string(M.t.cBorIy)
     })]
   })
 }
 
 function T(e) {
-  var t;
+  var n;
   let {
-    premiumSubscriptionPlan: n,
+    premiumSubscriptionPlan: t,
     onClose: r,
     onBack: a,
     onSkip: h,
@@ -80,7 +80,7 @@ function T(e) {
     sourceAnalyticsLocations: C
   } = (0, p.ZP)(d.Z.GUILD_BOOSTING_PREMIUM_UPSELL), {
     theme: A
-  } = (0, u.TCT)(), R = (0, o.ap)(A) ? c.zx.Colors.PRIMARY : c.zx.Colors.WHITE, v = null == n || null == n.premiumSubscriptionType, k = f.ZP.getPrice(O.Xh.PREMIUM_MONTH_TIER_2, false, false, x), D = (0, I.T4)(k.amount, k.currency), w = (0, P.N)(), Z = null == w ? true : w.trial_id, U = (null == w || null == (t = w.subscription_trial) ? true : t.sku_id) === O.Si.TIER_2;
+  } = (0, u.TCT)(), R = (0, o.ap)(A) ? c.zx.Colors.PRIMARY : c.zx.Colors.WHITE, v = null == t || null == t.premiumSubscriptionType, k = f.ZP.getPrice(O.Xh.PREMIUM_MONTH_TIER_2, false, false, x), D = (0, I.T4)(k.amount, k.currency), Z = (0, P.N)(), w = null == Z ? true : Z.trial_id, U = (null == Z || null == (n = Z.subscription_trial) ? true : n.sku_id) === O.Si.TIER_2;
   return l.useEffect(() => {
     g.default.track(N.rMx.PREMIUM_UPSELL_VIEWED, {
       type: O.cd.GUILD_PREMIUM_UPSELL_MODAL,
@@ -89,20 +89,20 @@ function T(e) {
   }, [C]), (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)(u.hzk, {
       "data-migration-pending": true,
-      className: M.content,
+      className: b.content,
       children: [(0, i.jsx)(u.olH, {
         "data-migration-pending": true,
         onClick: r,
-        className: M.closeButton
+        className: b.closeButton
       }), U && (0, i.jsx)(_.dz, {
-        className: M.premiumTrialBadge
+        className: b.premiumTrialBadge
       }), (0, i.jsx)("div", {
-        className: s()(M.upsellImage, {
-          [M.upsellImageWithTrialOffer]: U
+        className: s()(b.upsellImage, {
+          [b.upsellImageWithTrialOffer]: U
         })
       }), (0, i.jsx)("div", {
-        className: M.bodyText,
-        children: null != Z ? b.intl.string(b.t.AoSzEr) : b.intl.format(b.t["7vePZb"], {
+        className: b.bodyText,
+        children: null != w ? M.intl.string(M.t.AoSzEh) : M.intl.format(M.t["7vePZW"], {
           monthlyPrice: D
         })
       }), (0, i.jsx)(L, {
@@ -113,67 +113,67 @@ function T(e) {
       align: m.Z.Align.CENTER,
       justify: m.Z.Justify.END,
       children: [(0, i.jsxs)("div", {
-        className: M.footerRight,
+        className: b.footerRight,
         children: [(0, i.jsx)(c.zx, {
           "data-migration-pending": true,
           look: c.zx.Looks.LINK,
           color: R,
           onClick: h,
-          children: b.intl.string(b.t["SI/adm"])
+          children: M.intl.string(M.t["SI/adn"])
         }), (0, i.jsx)(u.Button, {
           variant: "active",
-          text: null != Z ? b.intl.string(b.t["Gd/XHF"]) : b.intl.string(b.t.p2moip),
+          text: null != w ? M.intl.string(M.t["Gd/XHB"]) : M.intl.string(M.t.p2moio),
           type: "submit",
           onClick: () => {
-            var e, t;
+            var e, n;
             r(), (0, E.Z)({
               initialPlanId: null,
               subscriptionTier: O.Si.TIER_2,
               analyticsLocations: j,
               analyticsObject: (e = function(e) {
-                for (var t = 1; t < arguments.length; t++) {
-                  var n = null != arguments[t] ? arguments[t] : {},
-                    i = Object.keys(n);
-                  "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-                    return Object.getOwnPropertyDescriptor(n, e).enumerable
-                  }))), i.forEach(function(t) {
+                for (var n = 1; n < arguments.length; n++) {
+                  var t = null != arguments[n] ? arguments[n] : {},
+                    i = Object.keys(t);
+                  "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+                    return Object.getOwnPropertyDescriptor(t, e).enumerable
+                  }))), i.forEach(function(n) {
                     var i;
-                    i = n[t], t in e ? Object.defineProperty(e, t, {
+                    i = t[n], n in e ? Object.defineProperty(e, n, {
                       value: i,
                       enumerable: true,
                       configurable: true,
                       writable: true
-                    }) : e[t] = i
+                    }) : e[n] = i
                   })
                 }
                 return e
-              }({}, y), t = t = {
+              }({}, y), n = n = {
                 section: N.jXE.PREMIUM_GUILD_PURCHASE_MODAL
-              }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-                var n = Object.keys(e);
+              }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, n) {
+                var t = Object.keys(e);
                 if (Object.getOwnPropertySymbols) {
                   var i = Object.getOwnPropertySymbols(e);
-                  n.push.apply(n, i)
+                  t.push.apply(t, i)
                 }
-                return n
-              })(Object(t)).forEach(function(n) {
-                Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+                return t
+              })(Object(n)).forEach(function(t) {
+                Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
               }), e),
               analyticsSourceLocation: T,
               onSubscriptionConfirmation: S,
-              trialId: Z
+              trialId: w
             })
           }
         })]
       }), (0, i.jsx)("div", {
-        className: M.backStep,
+        className: b.backStep,
         children: (0, i.jsx)(c.zx, {
           "data-migration-pending": true,
           color: R,
           look: c.zx.Looks.LINK,
           size: c.zx.Sizes.NONE,
           onClick: () => a(),
-          children: b.intl.string(b.t["13/7kX"])
+          children: M.intl.string(M.t["13/7kZ"])
         })
       })]
     })]

@@ -44,7 +44,7 @@ function C(e) {
     fade: true,
     ref: O,
     role: "region",
-    "aria-label": b.intl.formatToPlainString(b.t["4OP4Uk"], {
+    "aria-label": b.intl.formatToPlainString(b.t["4OP4Ul"], {
       applicationName: L
     }),
     children: [(0, i.jsx)(y.Z, {

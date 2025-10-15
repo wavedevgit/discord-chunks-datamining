@@ -22,7 +22,7 @@ function c(e) {
       children: [(0, r.jsx)("div", {
         className: o.halfWidth,
         children: (0, r.jsx)(a.g, {
-          label: s.intl.string(s.t.KuYcnU),
+          label: s.intl.string(s.t.KuYcnZ),
           canManageGuild: t,
           guildId: n.id,
           afkChannelId: n.afkChannelId
@@ -30,7 +30,7 @@ function c(e) {
       }), (0, r.jsx)("div", {
         className: o.halfWidth,
         children: (0, r.jsx)(l.M, {
-          label: s.intl.string(s.t.brhYaR),
+          label: s.intl.string(s.t.brhYaW),
           canManageGuild: t,
           afkChannelId: n.afkChannelId,
           afkTimeout: n.afkTimeout
@@ -39,7 +39,7 @@ function c(e) {
     }), (0, r.jsx)(i.xvT, {
       variant: "text-sm/medium",
       color: "text-secondary",
-      children: s.intl.string(s.t.ffEOKP)
+      children: s.intl.string(s.t.ffEOKC)
     })]
   })
 }

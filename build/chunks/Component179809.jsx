@@ -50,8 +50,8 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
       renderChildNode: G,
       folderButtonSize: U,
       folderButtonContent: B,
-      "aria-setsize": F,
-      "aria-posinset": V
+      "aria-setsize": V,
+      "aria-posinset": F
     } = e, {
       id: H,
       name: z,
@@ -78,7 +78,7 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
       X(e)
     }, []), en = i.useCallback(e => {
       ("ArrowRight" === e.key && !s || "ArrowLeft" === e.key && s) && M()
-    }, [M, s]), er = null != z && "" !== z ? z : null != T && "" !== T ? T : E.intl.string(E.t.xV9hVh), ei = (0, c.Ie)("".concat(H)), el = "folder-items-".concat(H), eo = function(e) {
+    }, [M, s]), er = null != z && "" !== z ? z : null != T && "" !== T ? T : E.intl.string(E.t.xV9hVl), ei = (0, c.Ie)("".concat(H)), el = "folder-items-".concat(H), eo = function(e) {
       let t = (0, p.dQu)(p.TVs.modules.guildbar.FOLDER_SIZE),
         n = (0, p.dQu)(p.TVs.modules.guildbar.AVATAR_SIZE),
         r = (0, p.dQu)(p.TVs.space.SPACE_XS);
@@ -134,8 +134,8 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
             onKeyDown: en,
             treeItemProps: ei,
             folderButtonContent: B,
-            "aria-setsize": F,
-            "aria-posinset": V
+            "aria-setsize": V,
+            "aria-posinset": F
           })
         })
       }), A ? (0, r.jsx)(y.ZP, {

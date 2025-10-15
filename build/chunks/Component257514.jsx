@@ -1,7 +1,7 @@
 /** Chunk was on 6284 **/
 /** chunk id: 257514, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => A
+  default: () => O
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,17 +19,17 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk304495 = require("./304495.js");
 
-function A(t) {
+function O(t) {
   let {
     transitionState: e,
     application: n,
-    storeListing: A,
+    storeListing: O,
     subscription: E,
     guild: S,
     onClose: P
   } = t, {
     analyticsLocations: T
-  } = (0, o.ZP)(c.Z.APPLICATION_SUBSCRIPTION_CANCELLATION_MODAL), {
+  } = (0, c.ZP)(o.Z.APPLICATION_SUBSCRIPTION_CANCELLATION_MODAL), {
     cancelSubscription: f,
     error: g,
     submitting: m
@@ -76,12 +76,12 @@ function A(t) {
       location_stack: T
     })
   }, [T]);
-  let L = (0, _.KW)(A.skuFlags);
+  let L = (0, _.KW)(O.skuFlags);
   return (0, i.jsx)(l.ExpressiveModal, {
     actions: [{
       loading: m,
       onClick: b,
-      text: N.intl.string(N.t.KSqyfW),
+      text: A.intl.string(A.t.KSqyfX),
       variant: "critical-primary"
     }],
     graphic: {
@@ -90,14 +90,14 @@ function A(t) {
       aspectRatio: "16/9",
       props: {
         application: n,
-        className: O.largeAppIcon
+        className: N.largeAppIcon
       }
     },
-    title: N.intl.string(N.t.CeCHk1),
-    subtitle: L ? N.intl.format(N.t.fZP9QD, {
+    title: A.intl.string(A.t.CeCHk5),
+    subtitle: L ? A.intl.format(A.t.fZP9QE, {
       applicationName: n.name,
       timestamp: E.currentPeriodEnd.getTime()
-    }) : N.intl.format(N.t["3LeWBF"], {
+    }) : A.intl.format(A.t["3LeWBA"], {
       guild: null == S ? true : S.name,
       applicationName: n.name,
       timestamp: E.currentPeriodEnd.getTime()
@@ -105,14 +105,14 @@ function A(t) {
     transitionState: e,
     onClose: P,
     children: (0, i.jsxs)("div", {
-      className: O.cancelModalBody,
+      className: N.cancelModalBody,
       children: [null != g ? (0, i.jsx)(l.M14, {
         type: "critical",
         children: g.message
       }) : null, (0, i.jsx)(d.G9, {
         applicationId: n.id,
-        storeListingBenefits: A.benefits,
-        className: O.benefitsContainer
+        storeListingBenefits: O.benefits,
+        className: N.benefitsContainer
       })]
     })
   })

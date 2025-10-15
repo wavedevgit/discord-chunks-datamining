@@ -159,7 +159,7 @@ let I = {
   [Chunk982183.r0.ACK]: {
     type: "standard",
     Icon: Chunk481060.dz2,
-    label: Chunk388032.intl.string(Chunk388032.t.e6RscS),
+    label: Chunk388032.intl.string(Chunk388032.t.e6RscX),
     onClick: e => {
       s.Z.dispatch({
         type: "NOTIFICATIONS_INBOX_ITEM_ACK",
@@ -174,7 +174,7 @@ let I = {
   },
   [Chunk982183.r0.BOOKMARK]: {
     type: "menu",
-    label: Chunk388032.intl.string(Chunk388032.t["9p3D9p"]),
+    label: Chunk388032.intl.string(Chunk388032.t["9p3D9v"]),
     Icon: e => null != h.Z.getSavedMessage(e.message.channel_id, e.message.id) ? (0, r.jsx)(a.plf, j({}, e)) : (0, r.jsx)(a.gt9, j({}, e)),
     interactionType: Chunk804932.s_.BOOKMARK,
     Menu: e => {
@@ -192,7 +192,7 @@ let I = {
         onSelect: () => null,
         children: [null != i ? (0, r.jsx)(a.sNh, {
           id: "remove-from-for-later",
-          label: y.intl.string(y.t.SvXS1Z),
+          label: y.intl.string(y.t.SvXS1d),
           icon: a.plf,
           action: () => (0, p.x)({
             channelId: t.channel_id,
@@ -202,7 +202,7 @@ let I = {
           })
         }) : (0, r.jsx)(a.sNh, {
           id: "create-bookmark",
-          label: y.intl.string(y.t["9p3D9p"]),
+          label: y.intl.string(y.t["9p3D9v"]),
           icon: a.gt9,
           action: () => (0, p.z)({
             channelId: t.channel_id,
@@ -216,7 +216,7 @@ let I = {
   [Chunk982183.r0.SETTINGS]: {
     type: "menu",
     Icon: Chunk481060.Dkj,
-    label: Chunk388032.intl.string(Chunk388032.t.h850Ss),
+    label: Chunk388032.intl.string(Chunk388032.t.h850Sk),
     interactionType: Chunk804932.s_.SETTINGS,
     Menu: e => {
       let {
@@ -226,11 +226,11 @@ let I = {
       return t.isThread() ? (0, r.jsx)(f.Z, x(j({}, n), {
         channel: t,
         navId: "thread-context",
-        label: y.intl.string(y.t["1NBjqb"])
+        label: y.intl.string(y.t["1NBjqa"])
       })) : (0, r.jsx)(u.Z, x(j({}, n), {
         channel: t,
         navId: "channel-context",
-        label: y.intl.string(y.t.Xm41aV)
+        label: y.intl.string(y.t.Xm41aW)
       }))
     }
   }

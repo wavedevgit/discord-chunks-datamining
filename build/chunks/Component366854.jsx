@@ -31,13 +31,13 @@ let p = function(t) {
       }
       return o
     }(t, ["channelId", "application", "onClose"]);
-  let [O, y] = o.useState(false), g = async () => {
+  let [O, y] = o.useState(false), j = async () => {
     try {
       y(true), await a.ZP.removeLinkedLobby(p), u()
     } catch (t) {
       y(false), l.Z.show({
-        title: s.intl.string(s.t.vFzPFj),
-        body: s.intl.string(s.t["6D5WVg"])
+        title: s.intl.string(s.t.vFzPFh),
+        body: s.intl.string(s.t["6D5WVl"])
       })
     }
   };
@@ -59,17 +59,17 @@ let p = function(t) {
     }
     return t
   }({
-    header: s.intl.string(s.t.JmUENg),
-    confirmText: s.intl.string(s.t["cY+Oob"]),
-    cancelText: s.intl.string(s.t["ETE/oC"]),
+    header: s.intl.string(s.t.JmUENj),
+    confirmText: s.intl.string(s.t["cY+Ooa"]),
+    cancelText: s.intl.string(s.t["ETE/oK"]),
     confirmButtonColor: i.zx.Colors.BRAND,
-    onConfirm: g,
+    onConfirm: j,
     loading: O,
     onClose: u
   }, f), r = r = {
     children: (0, n.jsx)(c.Text, {
       variant: "text-sm/normal",
-      children: s.intl.format(s.t["6l2osp"], {
+      children: s.intl.format(s.t["6l2osr"], {
         applicationName: b.name
       })
     })

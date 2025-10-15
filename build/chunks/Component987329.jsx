@@ -54,7 +54,7 @@ let f = e => {
         onClick: e => {
           (0, s.v)(f, s.d.MORE), n(e)
         },
-        label: h.intl.string(h.t.PdRCRg),
+        label: h.intl.string(h.t.PdRCRk),
         iconComponent: l.xhG,
         color: "primaryDark",
         isActive: r

@@ -78,7 +78,7 @@ function y(e) {
 function O() {
   return {
     id: String(Date.now()),
-    title: Chunk388032.intl.string(Chunk388032.t.vY91C9),
+    title: Chunk388032.intl.string(Chunk388032.t.vY91Cw),
     options: [],
     singleSelect: false,
     required: false,

@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk639777 = require("./639777.js"),
   Chunk495804 = require("./495804.js"),
   Chunk441536 = require("./441536.js"),
-  Chunk149829 = require("./149829.js"),
+  Chunk989308 = require("./989308.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk931942 = require("./931942.js");
 
@@ -121,7 +121,7 @@ function j(e) {
           children: [(0, r.jsx)(s.xvT, {
             className: v.text,
             variant: "text-xs/semibold",
-            children: y.intl.string(O.default.NI6Ihe)
+            children: y.intl.string(O.default.NI6IhY)
           }), t.premiumSubscriberCount >= j && (0, r.jsx)(s.xvT, {
             className: v.text,
             variant: "text-xs/semibold",
@@ -132,9 +132,9 @@ function j(e) {
           children: [(0, r.jsx)(s.xvT, {
             className: o()(v.text, v.boostCountText),
             variant: "text-xs/semibold",
-            children: N ? y.intl.formatToPlainString(O.default["Ehpq+7"], {
+            children: N ? y.intl.formatToPlainString(O.default["Ehpq+/"], {
               appliedBoostCount: E
-            }) : y.intl.formatToPlainString(O.default["/rbPDs"], {
+            }) : y.intl.formatToPlainString(O.default["/rbPDg"], {
               appliedBoostCount: E,
               maxBoostCount: j
             })

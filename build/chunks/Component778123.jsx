@@ -16,7 +16,7 @@ function l(e) {
   let t = (0, s.e7)([c.ZP], () => c.ZP.isMuteScheduledEventsEnabled(e), [e]);
   return (0, i.jsx)(d.S89, {
     id: "mute-events",
-    label: u.intl.string(u.t.ONG3Yz),
+    label: u.intl.string(u.t.ONG3Y2),
     action: () => {
       var n;
       return n = {

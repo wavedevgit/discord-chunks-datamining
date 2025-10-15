@@ -36,7 +36,7 @@ function u(e) {
 function d(e) {
   let {
     onClick: t,
-    "aria-label": n = s.intl.string(s.t.cpT0Cq)
+    "aria-label": n = s.intl.string(s.t.cpT0Cg)
   } = e, {
     firstFocusableItemProps: c
   } = i.useContext(a.MJU);

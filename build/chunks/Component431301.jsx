@@ -38,7 +38,7 @@ function x() {
       children: [(0, Chunk951288.jsx)(Chunk793030.X6q, {
         variant: "heading-lg/semibold",
         color: "header-primary",
-        children: Chunk388032.intl.string(Chunk388032.t.UKgg5N)
+        children: Chunk388032.intl.string(Chunk388032.t.UKgg5O)
       }), (0, Chunk951288.jsx)(Chunk413682.w, {
         canManageGuild: x,
         premiumProgressBarEnabled: exports.premiumProgressBarEnabled

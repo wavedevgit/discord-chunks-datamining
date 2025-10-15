@@ -75,7 +75,7 @@ function E(e) {
       className: p.inputWrapper,
       children: (0, r.jsx)(s.oil, {
         required: true,
-        label: _.intl.string(_.t.fF4zxq),
+        label: _.intl.string(_.t.fF4zxs),
         value: v,
         maxLength: 5,
         onChange: e => I(e),
@@ -90,12 +90,12 @@ function E(e) {
       loading: b,
       disabled: !A || 0 === y.length || "localhost" === T && 0 === v.length,
       variant: L ? "critical-primary" : "active",
-      text: L ? _.intl.string(_.t.d6TR3I) : _.intl.string(_.t.qwuK5I),
+      text: L ? _.intl.string(_.t.d6TR3N) : _.intl.string(_.t.qwuK5O),
       onClick: x
     }], [y.length, b, L, A, v.length, x, T]);
   return (0, r.jsxs)(a.Modal, {
-    title: _.intl.string(_.t.f8fzky),
-    subtitle: _.intl.string(_.t.a6Vill),
+    title: _.intl.string(_.t.f8fzk5),
+    subtitle: _.intl.string(_.t.a6Vilp),
     actions: M,
     onClose: t,
     transitionState: n,
@@ -109,23 +109,23 @@ function E(e) {
           required: true,
           value: y,
           maxLength: 19,
-          error: A ? null : _.intl.string(_.t.gPNgKO),
+          error: A ? null : _.intl.string(_.t.gPNgKC),
           onChange: R,
           disabled: b
         })
       }), (0, r.jsx)("div", {
         className: p.inputWrapper,
         children: (0, r.jsx)(s.q4e, {
-          label: _.intl.string(_.t["/GTqXG"]),
+          label: _.intl.string(_.t["/GTqXF"]),
           isDisabled: !A || "" === y,
           value: T,
           options: [{
             value: "localhost",
-            label: _.intl.string(_.t["+Y9Y6r"]),
+            label: _.intl.string(_.t["+Y9Y6u"]),
             key: "localhost"
           }, {
             value: "proxy",
-            label: _.intl.string(_.t.uaksyW),
+            label: _.intl.string(_.t.uaksyc),
             key: "proxy"
           }],
           onChange: P,

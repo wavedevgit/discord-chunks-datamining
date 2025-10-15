@@ -53,18 +53,18 @@ class m extends Chunk647438.Component {
           tag: "strong",
           variant: "text-md/normal",
           className: Chunk197571.marginBottom20,
-          children: Chunk388032.intl.string(Chunk388032.t.UCEXPq)
+          children: Chunk388032.intl.string(Chunk388032.t.UCEXPj)
         })
       }), (0, Chunk951288.jsx)(Chunk481060.mzw, {
         children: (0, Chunk951288.jsxs)(Chunk481060.ButtonGroup, {
           direction: "horizontal-reverse",
           children: [(0, Chunk951288.jsx)(Chunk481060.Button, {
             variant: "primary",
-            text: Chunk388032.intl.string(Chunk388032.t.taPRcJ),
+            text: Chunk388032.intl.string(Chunk388032.t.taPRcH),
             onClick: this.handleRequestElevated
           }), (0, Chunk951288.jsx)(Chunk481060.Button, {
             variant: "secondary",
-            text: Chunk388032.intl.string(Chunk388032.t.of0VoB),
+            text: Chunk388032.intl.string(Chunk388032.t.of0VoK),
             onClick: this.handleStreamWithoutSound
           })]
         })

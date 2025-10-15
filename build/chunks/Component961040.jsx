@@ -54,7 +54,7 @@ function b(e) {
     onRequestClose: v,
     spacing: b,
     renderPopout: () => (0, r.jsx)(a.VqE, {
-      "aria-label": g.intl.string(g.t.GSmTKJ),
+      "aria-label": g.intl.string(g.t.GSmTKC),
       className: o()({
         [m.repositionLayerTitlebarPopout]: x === d.u3.TITLE_BAR_LEFT,
         [m.repositionLayerSidebarPopout]: x === d.u3.SERVER_RAIL_TOP

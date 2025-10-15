@@ -65,15 +65,15 @@ function x(e) {
       children: [(0, r.jsx)(s.Heading, {
         variant: "heading-md/semibold",
         color: "header-primary",
-        children: d ? N.intl.string(N.t.XBboAK) : N.intl.formatToPlainString(N.t.EQa7os, {
+        children: d ? N.intl.string(N.t.XBboAA) : N.intl.formatToPlainString(N.t.EQa7oq, {
           questName: n.config.messages.questName
         })
       }), (0, r.jsx)(s.Text, {
         variant: "text-xs/normal",
         color: "header-secondary",
-        children: d ? N.intl.formatToPlainString(N.t.APddvF, {
+        children: d ? N.intl.formatToPlainString(N.t.APddvL, {
           expirationDate: l
-        }) : N.intl.formatToPlainString(N.t["pX+fmn"], {
+        }) : N.intl.formatToPlainString(N.t["pX+fmp"], {
           expirationDate: i
         })
       })]
@@ -126,7 +126,7 @@ function A(e) {
     sourceQuestContent: g.jn.ACTIVITY_PANEL
   }), V = (0, d.Rt)(b), F = (0, m.CR)({
     quest: b
-  }), z = V ? F : N.intl.string(N.t.l7E81v);
+  }), z = V ? F : N.intl.string(N.t.l7E81t);
   return (0, r.jsxs)("div", {
     ref: e => {
       c.current = e
@@ -153,7 +153,7 @@ function A(e) {
         children: e => {
           var t, n;
           return (0, r.jsx)(s.P3F, (t = P({}, e), n = n = {
-            "aria-label": N.intl.string(N.t.DEoVWZ),
+            "aria-label": N.intl.string(N.t.DEoVWV),
             children: (0, r.jsx)(s.xhG, {
               size: "md",
               color: "currentColor",
@@ -211,13 +211,13 @@ function A(e) {
         variant: "primary",
         size: "sm",
         fullWidth: true,
-        text: N.intl.string(N.t.VN1Ajl),
+        text: N.intl.string(N.t.VN1Ajo),
         onClick: D
       }), G && (0, r.jsx)(s.Button, {
         variant: "primary",
         size: "sm",
         fullWidth: true,
-        text: N.intl.string(N.t.cfY4PE),
+        text: N.intl.string(N.t.cfY4PD),
         onClick: M
       })]
     })]

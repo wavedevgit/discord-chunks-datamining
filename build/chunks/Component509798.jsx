@@ -20,14 +20,14 @@ function s(e) {
       className: a.errorHeader,
       children: [(0, r.jsx)(i.Heading, {
         variant: "heading-xl/semibold",
-        children: l.intl.string(l.t["/n9BoR"])
+        children: l.intl.string(l.t["/n9Boa"])
       }), (0, r.jsx)(i.Text, {
         variant: "text-md/normal",
-        children: l.intl.string(l.t.DwKFKd)
+        children: l.intl.string(l.t.DwKFKS)
       })]
     }), (0, r.jsx)(i.Button, {
       variant: "primary",
-      text: l.intl.string(l.t.w3ND8L),
+      text: l.intl.string(l.t.w3ND8P),
       onClick: t
     })]
   })

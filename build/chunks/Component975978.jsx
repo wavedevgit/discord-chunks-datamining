@@ -73,7 +73,7 @@ let C = e => {
         color: s.Z.colors.HEADER_PRIMARY,
         "aria-hidden": true
       }), (0, r.jsx)(l.nn4, {
-        children: b.intl.string(b.t["tq+6t/"])
+        children: b.intl.string(b.t["tq+6t7"])
       })]
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.P$X, {
@@ -81,7 +81,7 @@ let C = e => {
         color: s.Z.colors.HEADER_PRIMARY,
         "aria-hidden": true
       }), (0, r.jsx)(l.nn4, {
-        children: b.intl.string(b.t.l4qZrp)
+        children: b.intl.string(b.t.l4qZrq)
       })]
     })
   },
@@ -142,7 +142,7 @@ let C = e => {
     let {
       premiumType: t,
       priceString: n
-    } = e, i = t === E.PremiumTypes.TIER_0 ? b.intl.string(b.t.tUbSDK) : b.intl.string(b.t.Ipxkog);
+    } = e, i = t === E.PremiumTypes.TIER_0 ? b.intl.string(b.t.tUbSDA) : b.intl.string(b.t.Ipxkoq);
     return (0, r.jsxs)("div", {
       className: y.planTitleWithPrice,
       children: [(0, r.jsxs)("div", {
@@ -174,7 +174,7 @@ let C = e => {
           className: y.headerLabelCell,
           children: (0, r.jsx)(l.Heading, {
             variant: "heading-xl/bold",
-            children: b.intl.string(b.t.ED4UVD)
+            children: b.intl.string(b.t.ED4UVF)
           })
         }), (0, r.jsx)("th", {
           scope: "col",
@@ -215,7 +215,7 @@ let C = e => {
       j = (0, g.e)();
     if (s) n = null;
     else {
-      let e = null != S ? b.intl.string(b.t.IBYG5U) : b.intl.string(b.t.TR2B4T);
+      let e = null != S ? b.intl.string(b.t.IBYG5e) : b.intl.string(b.t.TR2B4e);
       n = (0, r.jsx)(m.E, {
         className: o()(y.pill, y.pillGradient),
         text: e
@@ -230,7 +230,7 @@ let C = e => {
           className: y.titleText,
           variant: "display-md",
           color: "header-primary",
-          children: b.intl.string(b.t.DbPgAd)
+          children: b.intl.string(b.t.DbPgAQ)
         }), (0, r.jsxs)("div", {
           className: y.tableWrapper,
           children: [(0, r.jsxs)("div", {

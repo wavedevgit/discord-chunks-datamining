@@ -31,7 +31,7 @@ function f(e) {
     }
     return o
   }(e, ["channel", "onClose"]);
-  let s = a.intl.format(a.t.AVVUse, {
+  let s = a.intl.format(a.t.AVVUsb, {
     onLearnMore: function() {
       n(), (0, o.z)()
     }
@@ -56,7 +56,7 @@ function f(e) {
   }({
     artURL: u.Z,
     type: l.cd.MESSAGE_LENGTH_UPSELL,
-    title: a.intl.string(a.t.SeL3ec),
+    title: a.intl.string(a.t.SeL3eX),
     body: s,
     glowUp: s,
     analyticsSource: {

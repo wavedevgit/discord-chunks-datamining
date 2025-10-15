@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk314794 = require("./314794.js"),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk47280 = require("./47280.js"),
+  Chunk283066 = require("./283066.js"),
   Chunk876917 = require("./876917.jsx"),
   Chunk594174 = require("./594174.js"),
   Chunk508925 = require("./508925.jsx"),
@@ -53,7 +53,7 @@ let C = e => {
     } = e, [a] = t.items, l = (0, d.e7)([h.default], () => {
       let e = h.default.getCurrentUser();
       return s()(null != e, "User cannot be undefined"), e
-    }), w = Object.values(u.a).includes(t.skuId), _ = (0, p.ZP)({
+    }), w = Object.values(u.a).includes(t.skuId), _ = (0, p.Z)({
       location: "CollectiblesProductPreview"
     });
     return (0, o.EQ)(t.type).with(c.Z.PROFILE_EFFECT, () => (0, n.jsx)("div", {
@@ -89,15 +89,15 @@ let C = e => {
     })).with(c.Z.EXTERNAL_SKU, () => {
       if (w)
         if (r) return (0, n.jsx)("img", {
-          src: _ ? E : x,
-          alt: y.intl.string(y.t.t0xkSB),
+          src: _ ? x : E,
+          alt: y.intl.string(y.t.t0xkSE),
           style: {
             width: "100%"
           }
         });
         else return (0, n.jsx)("img", {
           src: O,
-          alt: y.intl.string(y.t.g5W1g8)
+          alt: y.intl.string(y.t.g5W1g4)
         });
       return (0, n.jsx)(m.b, {
         product: t

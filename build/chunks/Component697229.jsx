@@ -22,7 +22,7 @@ function u(e) {
     id: "add-channel-to-category",
     icon: l.oFk,
     color: "brand",
-    label: s.intl.string(s.t["6uDHk6"]),
+    label: s.intl.string(s.t["6uDHk5"]),
     action: function() {
       (0, l.ZDy)(async () => {
         let {

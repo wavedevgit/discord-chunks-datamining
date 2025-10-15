@@ -30,10 +30,10 @@ function O(e) {
     message: t,
     rendered: n
   } = e;
-  return null == (0, g.xE)(t.content) ? b.intl.format(b.t.k6Jc9Y, {
+  return null == (0, g.xE)(t.content) ? b.intl.format(b.t.k6Jc9f, {
     username: null,
     usernameHook: () => null
-  }) : b.intl.format(b.t.IihHB0, {
+  }) : b.intl.format(b.t.IihHBw, {
     emojiPreview: n,
     emojiName: null,
     username: null,
@@ -76,7 +76,7 @@ function v(e) {
         variant: "text-sm/semibold",
         color: "text-secondary",
         className: y.ctaText,
-        children: b.intl.format(b.t.z5Rnl8, {
+        children: b.intl.format(b.t.z5Rnl5, {
           renderedEmoji: (0, r.jsx)(u.Z, {
             emojiName: f.name,
             size: "default",
@@ -124,10 +124,10 @@ function I(e) {
     compact: n,
     contentClassName: y.content,
     children: (0, r.jsx)("span", {
-      children: null == v || null == T ? b.intl.format(b.t.k6Jc9Y, {
+      children: null == v || null == T ? b.intl.format(b.t.k6Jc9f, {
         username: p.nick,
         usernameHook: O
-      }) : b.intl.format(b.t.IihHB0, {
+      }) : b.intl.format(b.t.IihHBw, {
         username: p.nick,
         usernameHook: O,
         emojiPreview: (0, r.jsx)(f.Y, {

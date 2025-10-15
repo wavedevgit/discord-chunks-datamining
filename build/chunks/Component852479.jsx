@@ -73,7 +73,7 @@ function f(e) {
       children: (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
         color: "always-white",
-        children: m.intl.format(m.t["/i5uJ1"], {
+        children: m.intl.format(m.t["/i5uJy"], {
           count: v,
           date: h
         })
@@ -92,7 +92,7 @@ function f(e) {
             color: "always-white",
             className: p.memberNoticeAction,
             children: [(0, r.jsx)("div", {
-              children: m.intl.string(m.t.rkyOzK)
+              children: m.intl.string(m.t.rkyOzM)
             }), (0, r.jsx)(s.tBG, {
               size: "custom",
               color: "currentColor",

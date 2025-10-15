@@ -30,7 +30,7 @@ function u(e) {
         text: l.intl.string(l.t["1iI46O"]),
         onClick: c
       }),
-      children: l.intl.format(l.t["LJzl+0"], {
+      children: l.intl.format(l.t["LJzl+/"], {
         helpCenterLink: a.Z.getArticleURL(s.BhN.SYSTEM_SERVICE)
       })
     })

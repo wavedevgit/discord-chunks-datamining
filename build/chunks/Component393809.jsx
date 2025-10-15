@@ -16,28 +16,28 @@ function l(t) {
     guildId: r,
     transitionState: n,
     onClose: l
-  } = t, [A, _] = e.useState(false), [u, N] = e.useState(false), O = async () => {
+  } = t, [A, _] = a.useState(false), [u, N] = a.useState(false), O = async () => {
     _(true);
     try {
       await (0, o.zo)(r), l()
     } finally {
       _(false)
     }
-  }, s = c.intl.string(c.t["22itmo"]);
-  return (0, i.jsx)(a.Modal, {
+  }, s = c.intl.string(c.t["22itmp"]);
+  return (0, i.jsx)(e.Modal, {
     size: "md",
     transitionState: n,
     onClose: l,
     "aria-label": s,
     title: s,
-    subtitle: c.intl.string(c.t.kdbm9C),
+    subtitle: c.intl.string(c.t.kdbm9P),
     actions: [{
       variant: "secondary",
       onClick: l,
-      text: c.intl.string(c.t["ETE/oC"])
+      text: c.intl.string(c.t["ETE/oK"])
     }, {
       variant: "primary",
-      text: c.intl.string(c.t["cY+Oob"]),
+      text: c.intl.string(c.t["cY+Ooa"]),
       disabled: !u,
       onClick: O,
       loading: A

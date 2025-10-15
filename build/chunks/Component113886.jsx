@@ -43,9 +43,9 @@ let l = e => {
     }
     return e
   }({
-    header: s.intl.string(s.t["mFP/qw"]),
-    cancelText: s.intl.string(s.t["ETE/oC"]),
-    confirmText: s.intl.string(s.t.hDtbsz),
+    header: s.intl.string(s.t["mFP/q6"]),
+    cancelText: s.intl.string(s.t["ETE/oK"]),
+    confirmText: s.intl.string(s.t.hDtbs7),
     onConfirm: g
   }, f), r = r = {
     children: (0, n.jsx)(o.Kx8, {

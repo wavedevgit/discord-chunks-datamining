@@ -45,16 +45,16 @@ function j(e) {
     ref: n,
     children: [(0, r.jsxs)(a.vwX, {
       className: x.title,
-      children: [b.intl.string(b.t["5XZKy/"]), (0, r.jsx)(p.xl, {
+      children: [b.intl.string(b.t["5XZKy8"]), (0, r.jsx)(p.xl, {
         guild: t
       })]
     }), (0, r.jsx)(a.Text, {
       variant: "text-sm/medium",
       color: "text-secondary",
       className: x.description,
-      children: j ? b.intl.format(b.t["J/v84B"], {
+      children: j ? b.intl.format(b.t["J/v84O"], {
         helpCenterArticle: d.Z.getArticleURL(h.BhN.GUILD_VANITY_URL)
-      }) : b.intl.format(b.t.koklFG, {
+      }) : b.intl.format(b.t.koklFB, {
         helpCenterArticle: d.Z.getArticleURL(h.BhN.GUILD_VANITY_URL)
       })
     }), (0, r.jsx)(f.z, {

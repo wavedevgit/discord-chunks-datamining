@@ -38,7 +38,7 @@ function m(e) {
   }), u = null != i ? i : c;
   if (null == u || !p.al.has(u)) return null;
   let m = null != n,
-    b = m ? u === p.YE.XBOX ? f.intl.string(f.t.UjA4HX) : f.intl.string(f.t.QCw1oW) : u === p.YE.XBOX ? f.intl.format(f.t["ynEs/Y"], {}) : f.intl.format(f.t.TZ17Bg, {});
+    b = m ? u === p.YE.XBOX ? f.intl.string(f.t.UjA4HR) : f.intl.string(f.t.QCw1oa) : u === p.YE.XBOX ? f.intl.format(f.t["ynEs/f"], {}) : f.intl.format(f.t.TZ17Bg, {});
   return (0, r.jsxs)("div", {
     className: l()(h.root, m ? h.connecting : h.connected),
     children: [(0, r.jsx)(g, {

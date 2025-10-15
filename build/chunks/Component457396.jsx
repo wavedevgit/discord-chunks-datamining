@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 457396, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  g: () => K,
+  g: () => q,
   i: () => Y
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
@@ -54,9 +54,9 @@ let Y = e => {
     } = e, n = (0, a.e7)([_.default], () => _.default.getCurrentUser()), r = (0, a.e7)([O.Z], () => O.Z.getPremiumTypeSubscription()), i = (0, A.N)(), l = (0, x.Ng)(), o = (0, C.Vi)(), s = (0, G.V)(), c = (0, y.Qo)(n, r), u = (0, a.e7)([I.Z], () => I.Z.getCreatedAtOverride()), d = t || null != i || null != l || o || null != s || c, p = null != u ? u : null == n ? true : n.createdAt;
     return d || null != n && null != p && Date.now() - p.getTime() > 12096e5
   },
-  K = e => {
+  q = e => {
     let t, n, I;
-    var K, q, {
+    var q, K, {
         selected: Q,
         nitroTabButtonRef: X,
         route: J,
@@ -146,7 +146,7 @@ let Y = e => {
       let e = (0, w.$q)();
       n = (0, r.jsx)(D._y, {
         isTabSelected: Q,
-        badgeCopy: W.intl.string(W.t.OS9KPu),
+        badgeCopy: W.intl.string(W.t.OS9KPj),
         offerExpiresAt: true === e ? null == eo ? true : eo.expires_at : null
       }), I = 4
     } else ex === o.z.VOICE_FILTER_EARLY_ACCESS_PREMIUM_TAB_BADGE || ex === o.z.CUSTOM_THEMES_PREMIUM_TAB_BADGE || ex === o.z.GAME_WIDGETS_PREMIUM_TAB_BADGE ? (n = (0, r.jsx)(D._y, {
@@ -181,7 +181,7 @@ let Y = e => {
     }), I = 4);
     eh && (n = (0, r.jsx)(D._y, {
       isTabSelected: Q,
-      badgeCopy: W.intl.string(W.t.RDE0Sc),
+      badgeCopy: W.intl.string(W.t.RDE0SU),
       offerExpiresAt: null
     }), I = 4, eL = () => {
       v.default.track(F.rMx.NITRO_TAB_VISITED, {
@@ -189,7 +189,7 @@ let Y = e => {
         has_premium: ei
       }), (0, w.ZL)()
     });
-    let eR = (0, r.jsx)(c.Qj, (K = function(e) {
+    let eR = (0, r.jsx)(c.Qj, (q = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -212,23 +212,23 @@ let Y = e => {
       route: J,
       icon: s.SrA,
       text: (0, r.jsx)(f.Z, {
-        children: el ? W.intl.string(W.t["4gwVVn"]) : W.intl.string(W.t.Ipxkog)
+        children: el ? W.intl.string(W.t["4gwVVl"]) : W.intl.string(W.t.Ipxkoq)
       }),
       locationState: $,
       onClick: eL
-    }, ee, ea), q = q = {
+    }, ee, ea), K = K = {
       className: t,
       children: n
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(K, Object.getOwnPropertyDescriptors(q)) : (function(e, t) {
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(q, Object.getOwnPropertyDescriptors(K)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
         var r = Object.getOwnPropertySymbols(e);
         n.push.apply(n, r)
       }
       return n
-    })(Object(q)).forEach(function(e) {
-      Object.defineProperty(K, e, Object.getOwnPropertyDescriptor(q, e))
-    }), K));
+    })(Object(K)).forEach(function(e) {
+      Object.defineProperty(q, e, Object.getOwnPropertyDescriptor(K, e))
+    }), q));
     return eg ? (0, r.jsx)(M.C, {
       children: eR
     }) : e_ && eZ === o.z.CHURN_DISCOUNT_PREMIUM_TAB_COACHMARK && 8 === I ? (0, r.jsx)(L.Z, {

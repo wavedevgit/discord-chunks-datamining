@@ -29,7 +29,7 @@ let g = "isHideDevBanner",
       b = () => (0, Chunk951288.jsx)(Chunk481060.P3F, {
         onClick: m,
         className: Chunk36398.closeButton,
-        "aria-label": Chunk388032.intl.string(Chunk388032.t.WAI6xu),
+        "aria-label": Chunk388032.intl.string(Chunk388032.t.WAI6xs),
         children: (0, Chunk951288.jsx)(Chunk481060.Dio, {
           size: "md",
           color: "currentColor",
@@ -40,13 +40,13 @@ let g = "isHideDevBanner",
       className: a()(Chunk36398.devBanner, Chunk36398.buildOverride),
       children: [(0, Chunk951288.jsx)(Chunk820254.Z, {
         className: Chunk36398.icon
-      }), Chunk388032.intl.string(Chunk388032.t.Wj3LW4), (0, Chunk951288.jsx)(b, {})]
+      }), Chunk388032.intl.string(Chunk388032.t.Wj3LW1), (0, Chunk951288.jsx)(b, {})]
     }) : "staging" === window.GLOBAL_ENV.RELEASE_CHANNEL ? (0, Chunk951288.jsxs)("div", {
       className: a()(Chunk36398.devBanner, Chunk36398.staging),
       children: [(0, Chunk951288.jsx)(Chunk820254.Z, {
         className: Chunk36398.icon
-      }), Chunk388032.intl.format(Chunk388032.t.uyrfYF, {
-        buildNumber: "458119"
+      }), Chunk388032.intl.format(Chunk388032.t.uyrfYG, {
+        buildNumber: "458156"
       }), (0, Chunk951288.jsx)(b, {})]
     }) : null
   }

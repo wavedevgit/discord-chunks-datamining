@@ -15,7 +15,7 @@ function a(e) {
     notificationCenterVariant: n
   } = (0, l.pN)({
     location: "NotificationsInboxTooltip"
-  }), a = n === l.jP.LEGACY ? o.intl.string(o.t.GSmTKJ) : o.intl.string(o.t.HcoRu0);
+  }), a = n === l.jP.LEGACY ? o.intl.string(o.t.GSmTKC) : o.intl.string(o.t.HcoRu7);
   return (0, r.jsx)(i.u, {
     spacing: 12,
     position: "right",

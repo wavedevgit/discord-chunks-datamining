@@ -35,11 +35,11 @@ let f = () => require.e("43841").then(require.t.bind(require, 737848, 19)).then(
         className: h.textContainer,
         children: [(0, i.jsx)(a.Heading, {
           variant: "heading-md/semibold",
-          children: p.intl.string(p.t.OmBThA)
+          children: p.intl.string(p.t.OmBThI)
         }), (0, i.jsx)(a.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
-          children: p.intl.string(p.t.zcs5ko)
+          children: p.intl.string(p.t.zcs5kp)
         })]
       })]
     }) : null : (0, i.jsx)("div", {

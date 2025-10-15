@@ -1,7 +1,7 @@
 /** Chunk was on 47672 **/
 /** chunk id: 332664, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => L
+  Z: () => R
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -25,51 +25,51 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk817320 = require("./817320.js");
 
-function L(e) {
+function R(e) {
   var t;
   let {
     modalType: n,
     header: i,
     body: s,
-    problemTitle: L,
-    problems: R,
+    problemTitle: R,
+    problems: L,
     transitionState: D,
     ratingOptions: I,
     ratingEmojiKind: T,
     ratingTextLabels: j,
-    freeformNeededProblems: C = [],
-    otherKey: M,
+    freeformNeededProblems: M = [],
+    otherKey: C,
     hideDontShowAgainCheckbox: x,
     startRating: A = null,
     hideHelpDeskLink: P = false,
-    onSubmit: F,
-    onClose: $,
-    impression: y,
+    onSubmit: y,
+    onClose: F,
+    impression: $,
     freeformDescription: U
-  } = e, k = (0, o.Z)(R), [B, Z] = l.useState(false), [G, H] = l.useState(A), [w, J] = l.useState(null), [Y, z] = l.useState(d().shuffle(R)), [K, Q] = l.useState(""), X = (0, E.Dt)(), V = (0, u.Z)(G), q = (0, u.Z)(B), W = (0, u.Z)(w), ee = (0, u.Z)(F), et = (0, u.Z)(K), en = null;
-  return null == G ? en = "RATING" : G !== S.aZ.GOOD && null == w ? en = "PROBLEM" : null != w && C.includes(w.value) && (en = "FREEFORM"), l.useEffect(() => {
-    d().isEqual(k, R) || z((0, N.Bi)(R, M))
-  }, [R, k, M]), (0, c.ZP)(() => (f.default.track(_.rMx.OPEN_MODAL, {
+  } = e, k = (0, o.Z)(L), [Z, B] = l.useState(false), [G, H] = l.useState(A), [w, J] = l.useState(null), [Y, K] = l.useState(d().shuffle(L)), [z, Q] = l.useState(""), V = (0, E.Dt)(), X = (0, u.Z)(G), q = (0, u.Z)(Z), W = (0, u.Z)(w), ee = (0, u.Z)(y), et = (0, u.Z)(z), en = null;
+  return null == G ? en = "RATING" : G !== g.aZ.GOOD && null == w ? en = "PROBLEM" : null != w && M.includes(w.value) && (en = "FREEFORM"), l.useEffect(() => {
+    d().isEqual(k, L) || K((0, h.Bi)(L, C))
+  }, [L, k, C]), (0, c.ZP)(() => (f.default.track(_.rMx.OPEN_MODAL, {
     type: n,
     source: "Feedback Modal"
   }), () => {
     ee.current({
-      rating: V.current,
+      rating: X.current,
       problem: W.current,
       dontShowAgain: q.current,
       feedback: et.current
     })
   })), (0, a.jsxs)(b.Y0X, {
-    impression: y,
+    impression: $,
     transitionState: D,
     className: p.modalRoot,
-    "aria-labelledby": X,
+    "aria-labelledby": V,
     parentComponent: "FeedbackModal",
     children: [(0, a.jsxs)(b.xBx, {
       separator: false,
       className: p.headerContainer,
       children: [(0, a.jsx)(b.Heading, {
-        id: X,
+        id: V,
         variant: "heading-xl/extrabold",
         color: "none",
         children: i
@@ -81,28 +81,28 @@ function L(e) {
       })]
     }), ("RATING" === en || "PROBLEM" === en && null == j) && (0, a.jsx)("div", {
       className: r()(p.problemInfo, p.ratingSelectorContainer),
-      children: (0, a.jsx)(g.Z, {
+      children: (0, a.jsx)(S.Z, {
         ratingOptions: I,
         emojiKind: T,
         textLabels: j,
         selectedRating: G,
         onChangeRating: function(e) {
-          H(e), e === S.aZ.GOOD && $()
+          H(e), e === g.aZ.GOOD && F()
         }
       })
     }), "PROBLEM" === en && (0, a.jsx)(b.hzk, {
       children: (0, a.jsx)(b.gNt, {
-        label: L,
+        label: R,
         children: (0, a.jsx)(v.Z, {
           options: Y,
           onClick: function(e) {
-            J(e), C.includes(e.value) || $()
+            J(e), M.includes(e.value) || F()
           },
           hideCaret: e => {
             let {
               value: t
             } = e;
-            return !C.includes(t)
+            return !M.includes(t)
           }
         })
       })
@@ -110,20 +110,20 @@ function L(e) {
       className: p.__invalid_content,
       children: (0, a.jsx)(b.Kx8, {
         label: null != (t = null == U ? true : U(w)) ? t : m.intl.string(m.t.h95hcn),
-        helperText: P ? true : m.intl.format(m.t.ybi2tD, {
-          helpdeskURL: h.Z.getSubmitRequestURL()
+        helperText: P ? true : m.intl.format(m.t.ybi2tL, {
+          helpdeskURL: N.Z.getSubmitRequestURL()
         }),
-        value: K,
-        maxLength: S.iF,
+        value: z,
+        maxLength: g.iF,
         onChange: Q
       })
     }), "RATING" === en && !x && (0, a.jsx)(b.mzw, {
       className: p.footer,
       direction: O.Z.Direction.HORIZONTAL,
       children: (0, a.jsx)(b.Checkbox, {
-        checked: B,
-        onChange: () => Z(!B),
-        label: m.intl.string(m.t["5E9SB9"]),
+        checked: Z,
+        onChange: () => B(!Z),
+        label: m.intl.string(m.t["5E9SBw"]),
         labelType: "secondary"
       })
     }), ("FREEFORM" === en || "PROBLEM" === en && null != j) && (0, a.jsx)(b.mzw, {
@@ -134,15 +134,15 @@ function L(e) {
         children: [(0, a.jsx)(b.Button, {
           variant: "secondary",
           size: "sm",
-          text: m.intl.string(m.t["13/7kX"]),
+          text: m.intl.string(m.t["13/7kZ"]),
           onClick: () => {
             "FREEFORM" === en ? (J(null), Q("")) : H(null)
           }
         }), (0, a.jsx)(b.Button, {
           variant: "primary",
           size: "sm",
-          text: m.intl.string(m.t.geKm7t),
-          onClick: $
+          text: m.intl.string(m.t.geKm7u),
+          onClick: F
         })]
       })
     })]

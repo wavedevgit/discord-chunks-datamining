@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk966117 = require("./966117.js"),
   Chunk197571 = require("./197571.js");
-class C extends Chunk647438.PureComponent {
+class x extends Chunk647438.PureComponent {
   render() {
     var e, t;
     let {
@@ -112,7 +112,7 @@ class C extends Chunk647438.PureComponent {
       className: Chunk966117.allowSelection,
       children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-md/medium",
-        children: Chunk388032.intl.string(Chunk388032.t.wU9IN2) + (null != Chunk647438 ? " - " + Chunk647438 : "")
+        children: Chunk388032.intl.string(Chunk388032.t.wU9INz) + (null != Chunk647438 ? " - " + Chunk647438 : "")
       }), (0, Chunk481250.VE)(Chunk226961), 0 === Chunk476221.length ? null : (0, Chunk951288.jsx)(Chunk481060.izJ, {
         className: Chunk197571.marginBottom20
       }), (0, Chunk481250.VE)(Chunk476221)]
@@ -131,4 +131,4 @@ let Z = Chunk442837.ZP.connectStores([Chunk226961.ZP, Chunk19780.Z, Chunk246946.
     mediaSessionId: d.Z.getMediaSessionId(),
     hostname: g.Z.getShortHostname(l)
   }
-})(C)
+})(x)

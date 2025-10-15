@@ -25,7 +25,7 @@ function c(e, t, n) {
   } = e, _ = Object.keys(f);
   if (0 === i().intersection(_, t).length) return {
     valid: false,
-    reason: l.intl.formatToPlainString(l.t.wySUzv, {
+    reason: l.intl.formatToPlainString(l.t.wySUzs, {
       requestedTargets: _.map(e => {
         var t;
         return null != (t = o.o0[e]) ? t : "unknown"
@@ -36,7 +36,7 @@ function c(e, t, n) {
     let e = r === s.R5N.PTB ? r.toUpperCase() : "".concat(r.charAt(0).toUpperCase()).concat(r.slice(1));
     return {
       valid: false,
-      reason: l.intl.formatToPlainString(l.t.GOEF0C, {
+      reason: l.intl.formatToPlainString(l.t.GOEF0N, {
         releaseChannel: e
       })
     }
@@ -57,7 +57,7 @@ function c(e, t, n) {
     }
     if (!e) return {
       valid: false,
-      reason: l.intl.formatToPlainString(l.t.GOEF0C, {
+      reason: l.intl.formatToPlainString(l.t.GOEF0N, {
         releaseChannel: d.join(", ")
       })
     }
@@ -65,10 +65,10 @@ function c(e, t, n) {
   let p = null != c ? new Date(c).getTime() : null;
   return null != p && p < Date.now() ? {
     valid: false,
-    reason: l.intl.string(l.t["8eRE6S"])
+    reason: l.intl.string(l.t["8eRE6e"])
   } : u.length > 0 && !u.includes(a.default.getId()) ? {
     valid: false,
-    reason: l.intl.string(l.t.qZgV0a)
+    reason: l.intl.string(l.t.qZgV0d)
   } : {
     valid: true
   }

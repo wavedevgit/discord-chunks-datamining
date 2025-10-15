@@ -15,11 +15,11 @@ function r(n) {
     libraryApplication: t,
     onPlay: i,
     onSelect: r
-  } = n, u = (0, c.Z)(t, i);
+  } = n, u = (0, d.Z)(t, i);
   return (0, a.jsx)(e.v2r, {
     navId: "launch-context",
-    onClose: d.Zy,
-    "aria-label": l.intl.string(l.t.tKobzb),
+    onClose: c.Zy,
+    "aria-label": l.intl.string(l.t.tKobzc),
     onSelect: r,
     children: u
   })

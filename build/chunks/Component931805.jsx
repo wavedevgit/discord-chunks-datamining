@@ -35,7 +35,7 @@ function g() {
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk912743.rowContainer,
     children: [(0, Chunk951288.jsx)("div", {
-      children: Chunk388032.intl.string(Chunk388032.t.AKcFUj)
+      children: Chunk388032.intl.string(Chunk388032.t.AKcFUl)
     }), (0, Chunk951288.jsx)(Chunk481060.rgF, {
       size: "xs",
       color: "currentColor",

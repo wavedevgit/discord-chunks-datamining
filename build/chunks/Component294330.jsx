@@ -185,7 +185,7 @@ function N(e) {
                 className: I.memberDetailsText,
                 variant: "text-xs/normal",
                 color: "header-secondary",
-                children: y.intl.format(y.t["LC+S+m"], {
+                children: y.intl.format(y.t["LC+S+v"], {
                   membersOnline: t.presenceCount
                 })
               })]
@@ -197,7 +197,7 @@ function N(e) {
                 className: I.memberDetailsText,
                 variant: "text-xs/normal",
                 color: "header-secondary",
-                children: y.intl.format(y.t.zRl6XR, {
+                children: y.intl.format(y.t.zRl6XV, {
                   count: t.memberCount
                 })
               })]

@@ -23,12 +23,12 @@ function d(e) {
     })
   }, [t]);
   return (0, r.jsx)(l.C3N, {
-    label: c.intl.string(c.t.FOYxgr),
-    description: c.intl.format(c.t["c6Cy/h"], {
+    label: c.intl.string(c.t.FOYxgo),
+    description: c.intl.format(c.t["c6Cy/v"], {
       helpdeskArticle: a.Z.getArticleURL(o.BhN.CONVERSATION_SUMMARIES)
     }),
     children: (0, r.jsx)(l.rsf, {
-      label: c.intl.string(c.t.vmEDQs),
+      label: c.intl.string(c.t.vmEDQk),
       badge: "beta",
       checked: t.has(o.oNc.SUMMARIES_ENABLED_BY_USER),
       onChange: d,

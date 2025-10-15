@@ -83,7 +83,7 @@ function b(e) {
         }), (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "text-secondary",
-          children: m.intl.format(m.t["LC+S+m"], {
+          children: m.intl.format(m.t["LC+S+v"], {
             membersOnline: t.onlineCount
           })
         })]
@@ -94,7 +94,7 @@ function b(e) {
         }), (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "text-secondary",
-          children: m.intl.format(m.t.zRl6XR, {
+          children: m.intl.format(m.t.zRl6XV, {
             count: t.memberCount
           })
         })]
@@ -104,7 +104,7 @@ function b(e) {
       children: (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
         color: "text-secondary",
-        children: m.intl.format(m.t.zb2Q56, {
+        children: m.intl.format(m.t["zb2Q5+"], {
           createdAtDate: c
         })
       })

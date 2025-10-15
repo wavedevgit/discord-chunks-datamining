@@ -61,7 +61,7 @@ function _(e) {
         },
         className: u.closeButton,
         onClick: o,
-        "aria-label": c.intl.string(c.t.WAI6xu),
+        "aria-label": c.intl.string(c.t.WAI6xs),
         children: (0, r.jsx)(s.Dio, {
           size: "sm"
         })

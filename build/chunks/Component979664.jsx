@@ -67,7 +67,7 @@ function g(e) {
           size: "sm",
           variant: "primary",
           disabled: !o,
-          text: d.intl.string(d.t.r3JdsT)
+          text: d.intl.string(d.t.r3Jdsb)
         }), (0, r.jsx)(s.ZP, {
           tabIndex: 0,
           onChange: m,
@@ -77,7 +77,7 @@ function g(e) {
     }), null != t.icon ? (0, r.jsx)(a.Button, {
       variant: "critical-secondary",
       size: "sm",
-      text: d.intl.string(d.t.x8AlTm),
+      text: d.intl.string(d.t.x8AlTk),
       onClick: g,
       disabled: !o
     }) : null]
@@ -93,8 +93,8 @@ function m(e) {
   return (0, r.jsx)("section", {
     className: u.container,
     children: (0, r.jsx)(a.gNt, {
-      label: d.intl.string(d.t.FkQnxJ),
-      description: d.intl.string(d.t.KjkA0W),
+      label: d.intl.string(d.t.FkQnxM),
+      description: d.intl.string(d.t.KjkA0d),
       errorMessage: s,
       children: (0, r.jsx)(g, {
         profile: t,

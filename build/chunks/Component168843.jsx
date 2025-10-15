@@ -20,7 +20,7 @@ function p(e) {
     channelId: t
   } = e, n = (0, i.e7)([o.ZP], () => o.ZP.getSection(t)), p = (0, i.e7)([c.Z], () => c.Z.getGuildId()), f = n === u.ULH.MEMBERS;
   return (0, r.jsx)(d.JO, {
-    tooltip: f ? h.intl.string(h.t.Axvx8c) : h.intl.string(h.t.gxChDx),
+    tooltip: f ? h.intl.string(h.t.Axvx8f) : h.intl.string(h.t.gxChDw),
     icon: l.BFJ,
     onClick: () => {
       s.ZP.trackWithMetadata(u.rMx.MEMBER_LIST_TOGGLED, {

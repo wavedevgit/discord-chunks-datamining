@@ -187,7 +187,7 @@ function X() {
     }), ee && !Chunk921944 && (0, Chunk951288.jsx)(Chunk53691.p, {
       className: Chunk391371.floatingNitroUpsell,
       showUpsell: ee && !Q,
-      text: Chunk388032.intl.format(Chunk388032.t.TmfgI2, {
+      text: Chunk388032.intl.format(Chunk388032.t.TmfgIy, {
         onClick: () => (0, Chunk267717.y)({
           analyticsSource: X
         })
@@ -203,7 +203,7 @@ function X() {
             behavior: "smooth"
           })
         },
-        text: Chunk388032.intl.string(Chunk388032.t.uw9zI7),
+        text: Chunk388032.intl.string(Chunk388032.t.uw9zIy),
         icon: Chunk481060.SrA
       })
     })]

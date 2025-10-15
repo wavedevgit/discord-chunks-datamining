@@ -46,7 +46,7 @@ let w = e => {
         children: t
       }), !a && (0, r.jsx)(d.Text, {
         variant: "text-xs/normal",
-        children: T.intl.format(T.t.ZLoNtm, {
+        children: T.intl.format(T.t.ZLoNtr, {
           numTotal: s,
           numAvailable: (0, _.Qi)(i, l)
         })
@@ -57,7 +57,7 @@ let w = e => {
     className: Chunk486217.placeholderCard,
     children: (0, Chunk951288.jsx)("img", {
       className: Chunk486217.placeholderImg,
-      alt: Chunk388032.intl.string(Chunk388032.t.wl4ntJ),
+      alt: Chunk388032.intl.string(Chunk388032.t.wl4ntL),
       src: require("./872732.js")
     })
   }),
@@ -72,7 +72,7 @@ let w = e => {
     return (0, r.jsx)(d.Button, {
       variant: "primary",
       size: "sm",
-      text: T.intl.string(T.t.O1REe1),
+      text: T.intl.string(T.t.O1REe3),
       onClick: () => {
         v.default.track(I.rMx.OPEN_MODAL, {
           type: I.jXE.CREATE_STICKER_MODAL,
@@ -133,7 +133,7 @@ let w = e => {
         guildStickers: g,
         currentGuildTier: A,
         tier: I.Eu4.NONE,
-        children: T.intl.string(T.t.tfVXhP)
+        children: T.intl.string(T.t.tfVXhI)
       })
     }, {
       tier: I.Eu4.TIER_1,
@@ -141,7 +141,7 @@ let w = e => {
         guildStickers: g,
         currentGuildTier: A,
         tier: I.Eu4.TIER_1,
-        children: T.intl.string(T.t.nzXtaS)
+        children: T.intl.string(T.t.nzXtaW)
       })
     }, {
       tier: I.Eu4.TIER_2,
@@ -149,7 +149,7 @@ let w = e => {
         guildStickers: g,
         currentGuildTier: A,
         tier: I.Eu4.TIER_2,
-        children: T.intl.string(T.t["h33/uW"])
+        children: T.intl.string(T.t["h33/ub"])
       })
     }, {
       tier: I.Eu4.TIER_3,
@@ -157,7 +157,7 @@ let w = e => {
         guildStickers: g,
         currentGuildTier: A,
         tier: I.Eu4.TIER_3,
-        children: T.intl.string(T.t.BfF6ED)
+        children: T.intl.string(T.t.BfF6EB)
       })
     }];
     return (0, r.jsx)(N.Z, {
@@ -182,17 +182,17 @@ let w = e => {
           F = g.slice(G, U),
           H = F.length > 0,
           W = A < j.tier,
-          z = (i = g.length, i < (0, _.A3)(I.Eu4.NONE) ? I.Eu4.NONE : i < (0, _.A3)(I.Eu4.TIER_1) ? I.Eu4.TIER_1 : i < (0, _.A3)(I.Eu4.TIER_2) ? I.Eu4.TIER_2 : i < (0, _.A3)(I.Eu4.TIER_3) || null != t && t.features.has(I.oNc.MORE_STICKERS) && i < u.D.MAX_STICKER_SLOTS ? I.Eu4.TIER_3 : I.Eu4.NONE),
-          V = N && !W && z === j.tier && U !== F.length,
-          K = V || F.length > 0,
+          V = (i = g.length, i < (0, _.A3)(I.Eu4.NONE) ? I.Eu4.NONE : i < (0, _.A3)(I.Eu4.TIER_1) ? I.Eu4.TIER_1 : i < (0, _.A3)(I.Eu4.TIER_2) ? I.Eu4.TIER_2 : i < (0, _.A3)(I.Eu4.TIER_3) || null != t && t.features.has(I.oNc.MORE_STICKERS) && i < u.D.MAX_STICKER_SLOTS ? I.Eu4.TIER_3 : I.Eu4.NONE),
+          z = N && !W && V === j.tier && U !== F.length,
+          K = z || F.length > 0,
           Y = U - G,
           q = n(872732),
           X = B - F.length,
-          J = V ? Math.min(5 - (F.length + 0) % 5, X) : 0,
-          Q = [];
-        for (let e = 0; e < J; e++) Q.push((0, r.jsx)(Z, {}, "placeholder-".concat(e)));
+          Q = z ? Math.min(5 - (F.length + 0) % 5, X) : 0,
+          J = [];
+        for (let e = 0; e < Q; e++) J.push((0, r.jsx)(Z, {}, "placeholder-".concat(e)));
         let $ = t.premiumTier < j.tier && D >= I.oCV[j.tier],
-          ee = T.intl.string(T.t.dtFw5c),
+          ee = T.intl.string(T.t.dtFw5e),
           et = () => {
             var e, n;
             let r;
@@ -212,14 +212,14 @@ let w = e => {
         $ && (k ? (et = () => {
           let e = S.Cp[j.tier];
           null != e && (0, b.H6)(t.id, e)
-        }, ee = T.intl.string(T.t.g7lkrU), t.premiumTier + 1 !== j.tier && (en = true, l = T.intl.string(T.t.mTMkY2))) : (en = true, l = T.intl.string(T.t.hwPEJR)));
-        let er = z === O + 1 && z > A,
-          ei = V || er || O > A;
+        }, ee = T.intl.string(T.t.g7lkra), t.premiumTier + 1 !== j.tier && (en = true, l = T.intl.string(T.t.mTMkY2))) : (en = true, l = T.intl.string(T.t.hwPEJS)));
+        let er = V === O + 1 && V > A,
+          ei = z || er || O > A;
         return er ? s = (0, r.jsx)(p.Z, {
           guild: t,
           size: c.zx.Sizes.SMALL,
           color: c.zx.Colors.GREEN,
-          buttonText: T.intl.string(T.t.Vbkh2l),
+          buttonText: T.intl.string(T.t.Vbkh2t),
           targetBoostedGuildTier: A + 1,
           analyticsLocation: {
             page: I.ZY5.GUILD_SETTINGS,
@@ -227,7 +227,7 @@ let w = e => {
             object: I.qAy.BOOST_UPSELL_NEXT_LEVEL_HEADER,
             objectType: (0, _.ge)(j.tier)
           }
-        }) : V && (s = (0, r.jsx)(R, {
+        }) : z && (s = (0, r.jsx)(R, {
           guild: t
         })), (0, r.jsxs)(E.Z, {
           subscriptionCount: L,
@@ -245,27 +245,27 @@ let w = e => {
               isDisabled: W,
               sticker: e,
               canManageSticker: w(e)
-            }, e.id)), Q]
-          }), !W && !V && 0 === F.length && (0, r.jsx)("div", {
+            }, e.id)), J]
+          }), !W && !z && 0 === F.length && (0, r.jsx)("div", {
             className: a()(P.emptyTierWrapper, P.unusedTierWrapper),
             children: (0, r.jsx)(d.Text, {
               variant: "text-md/normal",
               color: "header-secondary",
-              children: T.intl.string(T.t.lqwv0J)
+              children: T.intl.string(T.t.lqwv0N)
             })
           }), W && !H && (0, r.jsxs)("div", {
             className: P.emptyTierWrapper,
             children: [(0, r.jsx)("img", {
-              alt: T.intl.string(T.t.BAhswr),
+              alt: T.intl.string(T.t.BAhsws),
               className: P.emptyTierImage,
               src: q
             }), (0, r.jsx)(d.Text, {
               className: P.unlockTierCtaHeading,
               variant: "text-md/normal",
               color: "header-secondary",
-              children: j.tier === I.Eu4.TIER_1 ? T.intl.formatToPlainString(T.t.psMYux, {
+              children: j.tier === I.Eu4.TIER_1 ? T.intl.formatToPlainString(T.t.psMYu7, {
                 numAdditional: Y
-              }) : T.intl.formatToPlainString(T.t.bLykEe, {
+              }) : T.intl.formatToPlainString(T.t.bLykER, {
                 numAdditional: Y,
                 numTotal: U
               })

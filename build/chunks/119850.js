@@ -14,7 +14,7 @@ var Chunk647438 = require("./647438.js"),
 let c = () => {
     let e = null != (0, Chunk848572.y3)(),
       [t] = (0, Chunk243778.US)(module ? [Chunk704215.z.WHATS_NEW_TENURE_BADGE_REWARD] : []);
-    return exports === Chunk704215.z.WHATS_NEW_TENURE_BADGE_REWARD ? Chunk388032.intl.string(Chunk388032.t["jyYgZ+"]).toLocaleUpperCase() : null
+    return exports === Chunk704215.z.WHATS_NEW_TENURE_BADGE_REWARD ? Chunk388032.intl.string(Chunk388032.t.jyYgZ2).toLocaleUpperCase() : null
   },
   u = () => {
     let e = null != (0, Chunk848572.y3)(),

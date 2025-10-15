@@ -340,7 +340,7 @@ function e_(e) {
   return r.useMemo(() => {
     var t;
     let n = null == (t = e.config.ctaConfig) ? true : t.buttonLabel;
-    return null != n ? n : (0, C.q8)(e) || (0, C.Pb)(e) || (0, C.pO)(e) || (0, C.Vl)(e) || e.config.features.includes(k.S7.NON_GAMING_PLAY_QUEST) ? B.intl.string(B.t.hvVgAZ) : B.intl.string(B.t.lwQdjB)
+    return null != n ? n : (0, C.q8)(e) || (0, C.Pb)(e) || (0, C.pO)(e) || (0, C.Vl)(e) || e.config.features.includes(k.S7.NON_GAMING_PLAY_QUEST) ? B.intl.string(B.t.hvVgAQ) : B.intl.string(B.t.lwQdjI)
   }, [e])
 }
 
@@ -429,42 +429,42 @@ function eI(e, t, n, r) {
   }), s = (0, C.Pb)(e);
   if ((0, C.$J)(e) && !(0, C.Nj)({
       quest: e
-    })) return B.intl.format(B.t["l4S+cQ"], {
+    })) return B.intl.format(B.t["l4S+cX"], {
     minutes: i,
     onClick: o,
     gameTitle: j.r.build(e.config).application.name
   });
-  if ((0, C.$J)(e)) return s ? B.intl.format(B.t.gbtCpW, {
+  if ((0, C.$J)(e)) return s ? B.intl.format(B.t.gbtCpa, {
     onClick: o,
     minutes: i
-  }) : B.intl.format(B.t.Ajlcd7, {
+  }) : B.intl.format(B.t.Ajlcd3, {
     minutes: i,
     onClick: o,
     gameTitle: j.r.build(e.config).application.name
   });
-  if (s) return B.intl.format(B.t.Hu8SKW, {
+  if (s) return B.intl.format(B.t.Hu8SKS, {
     targetMinutes: i
   });
   if ((0, C.q8)(e)) {
     let t = j.r.build(e.config).defaultWatchVideoTask,
       n = null == t ? true : t.messages.videoTitle;
-    return null == n ? B.intl.string(B.t["o+e9yh"]) : B.intl.formatToPlainString(B.t["9m9Mna"], {
+    return null == n ? B.intl.string(B.t["o+e9ys"]) : B.intl.formatToPlainString(B.t["9m9MnZ"], {
       videoTitle: n
     })
   }
   if (null != a) return a.title;
   if ((0, C.pO)(e))
-    if ((0, C.KM)(e)) return B.intl.format(B.t["1NaRSs"], {
+    if ((0, C.KM)(e)) return B.intl.format(B.t["1NaRSk"], {
       minutes: i
     });
-    else return B.intl.format(B.t.xHXCyf, {
+    else return B.intl.format(B.t.xHXCyc, {
       minutes: i,
       activityName: e.config.application.name
     });
-  let l = B.t["6zWtV8"];
+  let l = B.t["6zWtV1"];
   return (0, C.Nj)({
     quest: e
-  }) && (l = e.config.features.includes(k.S7.NON_GAMING_PLAY_QUEST) ? B.t.fe7Xec : B.t["wmOh/q"]), B.intl.format(l, {
+  }) && (l = e.config.features.includes(k.S7.NON_GAMING_PLAY_QUEST) ? B.t.fe7XeX : B.t["wmOh/v"]), B.intl.format(l, {
     minutes: i,
     gameTitle: e.config.messages.gameTitle
   })
@@ -584,10 +584,10 @@ let eN = e => {
     let {
       xboxAccounts: e,
       playstationAccounts: t
-    } = eC(), n = module.length > 0, r = exports.length > 0, i = require && !Chunk647438 || !require && Chunk647438, a = Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUEST_HOW_TO_PLAYSTATION), o = Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUEST_HOW_TO_XBOX), s = Chunk388032.intl.format(Chunk388032.t.beN4DG, {
+    } = eC(), n = module.length > 0, r = exports.length > 0, i = require && !Chunk647438 || !require && Chunk647438, a = Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUEST_HOW_TO_PLAYSTATION), o = Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUEST_HOW_TO_XBOX), s = Chunk388032.intl.format(Chunk388032.t.beN4DA, {
       psHelpdeskArticle: Chunk278074,
       xboxHelpdeskArticle: Chunk754700
-    }), l = Chunk388032.intl.format(Chunk388032.t.HVS7nh, {
+    }), l = Chunk388032.intl.format(Chunk388032.t.HVS7np, {
       helpdeskArticle: Chunk647438 ? Chunk278074 : Chunk754700
     });
     return {
@@ -641,7 +641,7 @@ function ex(e, t, n) {
     }),
     l = (null == (r = e.userStatus) ? true : r.claimedAt) != null,
     c = ep(null == (i = e.userStatus) ? true : i.claimedAt);
-  return l ? B.intl.formatToPlainString(B.t.lOVr0O, {
+  return l ? B.intl.formatToPlainString(B.t.lOVr0N, {
     claimDate: c
   }) : null != o ? o.description : null != s ? s : null
 }
@@ -718,7 +718,7 @@ function ek(e) {
     p = (0, I.isWeb)() && _ && !(0, C.Gd)(e),
     h = (0, I.isMac)() && i.taskType === o.X.STREAM_ON_DESKTOP && _,
     m = [];
-  return h && m.push(B.intl.string(B.t.MFGxFM)), p && m.push(B.intl.string(B.t.BV6xDm)), m
+  return h && m.push(B.intl.string(B.t.MFGxFB)), p && m.push(B.intl.string(B.t.BV6xDg)), m
 }
 
 function eU(e) {
@@ -762,16 +762,16 @@ function eB(e) {
     o = eO(e),
     s = (null == (t = e.userStatus) ? true : t.completedAt) != null,
     l = null != o ? o.percentComplete : i.percentComplete;
-  if (s) return B.intl.string(B.t["ij5E/5"]);
+  if (s) return B.intl.string(B.t["ij5E//"]);
   if ((null == (n = e.userStatus) ? true : n.enrolledAt) != null && l > 0) {
     let e = (0, v.T3)(r, l, {
       roundingMode: "floor"
     });
-    return B.intl.formatToPlainString(B.t.lVZaXD, {
+    return B.intl.formatToPlainString(B.t.lVZaXF, {
       percent: e
     })
   }
-  return a === P.LI.SELECT ? B.intl.string(B.t.EMrUHQ) : (0, C.$J)(e) ? B.intl.string(B.t.mOrpXG) : B.intl.string(B.t["7e5k7L"])
+  return a === P.LI.SELECT ? B.intl.string(B.t.EMrUHR) : (0, C.$J)(e) ? B.intl.string(B.t.mOrpXF) : B.intl.string(B.t["7e5k7O"])
 }
 
 function eZ(e) {
@@ -794,27 +794,27 @@ function eZ(e) {
     onGameSheetOpened: c,
     onGameSheetClosed: u
   }), b = null != _ ? _.percentComplete : f.percentComplete;
-  if (p) return B.intl.formatToPlainString(B.t.APddvF, {
+  if (p) return B.intl.formatToPlainString(B.t.APddvL, {
     expirationDate: d
   });
   if (a)
-    if (s === P.LI.SELECT) return B.intl.string(B.t.sWUpN8);
+    if (s === P.LI.SELECT) return B.intl.string(B.t.sWUpNz);
     else {
       if (!(0, C.Pb)(i) || !h || m) return E;
       let e = j.r.build(i.config).defaultRewardNameWithArticle;
-      return B.intl.format(B.t["1votF6"], {
+      return B.intl.format(B.t["1votFx"], {
         rewardNameWithArticle: e,
         targetMinutes: f.targetMinutes
       })
-    } if ((0, C.q8)(i)) return B.intl.string(B.t["o+e9yh"]);
+    } if ((0, C.q8)(i)) return B.intl.string(B.t["o+e9ys"]);
   if (b > 0)
-    if (!g) return B.intl.string(B.t.mOrpXG);
+    if (!g) return B.intl.string(B.t.mOrpXF);
     else return (0, C.AV)({
       quest: i,
       taskDetails: f,
       thirdPartyTaskDetails: null != _ ? _ : true
     });
-  return B.intl.string(B.t.S6UUc5)
+  return B.intl.string(B.t.S6UUc3)
 }
 
 function eF(e, t) {
@@ -835,28 +835,28 @@ function eV(e) {
     a = (0, C.f$)(e),
     o = (0, c.e7)([E.default], () => E.default.getCurrentUser()),
     s = (0, T.I5)(o, G.PremiumTypes.TIER_2);
-  if (null == n) return B.intl.formatToPlainString(B.t.l9uXL8, {
+  if (null == n) return B.intl.formatToPlainString(B.t.l9uXLy, {
     decorationName: t
   });
-  let l = B.intl.formatToPlainString(B.t.o97tNn, {
+  let l = B.intl.formatToPlainString(B.t.o97tNj, {
       rewardName: t
     }),
-    u = B.intl.formatToPlainString(B.t.PkyRZo, {
+    u = B.intl.formatToPlainString(B.t.PkyRZm, {
       rewardName: t,
       expirationDate: r
     }),
-    d = B.intl.formatToPlainString(B.t.ie4YK0, {
+    d = B.intl.formatToPlainString(B.t.ie4YKy, {
       rewardName: t,
       duration: n
     }),
-    f = B.intl.formatToPlainString(B.t.yCpc0U, {
+    f = B.intl.formatToPlainString(B.t.yCpc0d, {
       duration: n,
       rewardName: t
     }),
     _ = s ? l : d,
     p = s ? u : f,
     h = i ? _ : p;
-  return a ? h : B.intl.formatToPlainString(B.t.tTlItm, {
+  return a ? h : B.intl.formatToPlainString(B.t.tTlItr, {
     duration: n,
     decorationName: t
   })

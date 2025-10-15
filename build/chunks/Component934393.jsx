@@ -40,7 +40,7 @@ function p(e) {
   };
   return (0, r.jsx)(u.O1, {
     icon: n,
-    text: _.intl.formatToPlainString(_.t.XWSHTb, {
+    text: _.intl.formatToPlainString(_.t.XWSHTU, {
       platform: a.Z.get(t).name
     }),
     fullWidth: !g,

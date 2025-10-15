@@ -95,7 +95,7 @@ function R(e) {
           applicationId: R.id
         }, R))
     }, [R, w, D, null == P ? true : P.guild_id, n]),
-    x = w ? T.intl.string(T.t["Cia+A8"]) : T.intl.string(T.t.NgXl3C);
+    x = w ? T.intl.string(T.t["Cia+Aw"]) : T.intl.string(T.t.NgXl3N);
   if (null == R || !(0, d.Eb)(R)) return null;
   let {
     customInstallUrl: M
@@ -109,12 +109,12 @@ function R(e) {
       return (0, r.jsx)(o.v2r, {
         navId: "user-bot-profile-add-app",
         onClose: t,
-        "aria-label": T.intl.string(T.t.dbkxVm),
+        "aria-label": T.intl.string(T.t.dbkxVl),
         onSelect: true,
         children: (0, r.jsx)(o.kSQ, {
           children: (0, r.jsx)(o.sNh, {
             id: "copy",
-            label: T.intl.string(T.t.XWDihq),
+            label: T.intl.string(T.t.XWDiho),
             action: () => (0, g.JG)((0, u.J)(R))
           })
         })

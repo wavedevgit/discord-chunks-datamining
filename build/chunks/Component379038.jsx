@@ -29,14 +29,14 @@ function p(e) {
   });
   return (0, r.jsxs)(i.Modal, {
     transitionState: p,
-    title: g.intl.string(g.t.wmVmXN),
+    title: g.intl.string(g.t.wmVmXF),
     actions: [{
       variant: "secondary",
-      text: g.intl.string(g.t["ETE/oC"]),
+      text: g.intl.string(g.t["ETE/oK"]),
       onClick: b
     }, {
       variant: "primary",
-      text: g.intl.string(g.t.e5VEcE),
+      text: g.intl.string(g.t.e5VEcH),
       onClick: m,
       loading: D,
       disabled: (0, c.Y4)(j, f)

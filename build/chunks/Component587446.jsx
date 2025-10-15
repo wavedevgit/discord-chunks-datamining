@@ -15,7 +15,7 @@ var Chunk120356 = require("./120356.js"),
 
 function u(e) {
   let {
-    text: t = l.intl.string(l.t["5AFxuK"]),
+    text: t = l.intl.string(l.t["5AFxuL"]),
     className: n
   } = e;
   return (0, r.jsx)(o.u, {

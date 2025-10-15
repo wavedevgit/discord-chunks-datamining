@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk531578 = require("./531578.js"),
   Chunk388032 = require("./388032.jsx");
-let p = [Chunk701488.K8.OTHER, Chunk701488.K8.ADS, Chunk701488.K8.NOT_FUN];
+let m = [Chunk701488.K8.OTHER, Chunk701488.K8.ADS, Chunk701488.K8.NOT_FUN];
 
 function f(e) {
   var t;
@@ -36,16 +36,16 @@ function f(e) {
       source: "Activity End"
     })
   }, [g]);
-  let j = (null == (t = g.embeddedActivityConfig) ? true : t.displays_advertisements) === true;
+  let T = (null == (t = g.embeddedActivityConfig) ? true : t.displays_advertisements) === true;
   return (0, i.jsx)(c.Z, {
     modalType: "activity",
-    header: m.intl.formatToPlainString(m.t.QXYwoD, {
+    header: p.intl.formatToPlainString(p.t.QXYwoK, {
       applicationName: g.name
     }),
-    body: m.intl.string(m.t["9hk2KF"]),
-    problemTitle: m.intl.string(m.t.g1q5fr),
-    problems: (0, _.Z)(true, j),
-    freeformNeededProblems: p,
+    body: p.intl.string(p.t["9hk2KC"]),
+    problemTitle: p.intl.string(p.t.g1q5fn),
+    problems: (0, _.Z)(true, T),
+    freeformNeededProblems: m,
     onSubmit: function(e) {
       var t;
       let {
@@ -91,7 +91,7 @@ function f(e) {
           }
           return e
         }({
-          body: m.intl.string(m.t["zuHR+y"])
+          body: p.intl.string(p.t["zuHR+/"])
         }, t))
       }))
     },

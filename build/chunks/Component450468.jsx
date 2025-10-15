@@ -45,7 +45,7 @@ function v(e) {
         children: t
       })
     }), (0, r.jsx)("div", {
-      children: b.intl.string(b.t.DY2CXs)
+      children: b.intl.string(b.t.DY2CXl)
     })]
   })
 }
@@ -56,7 +56,7 @@ function I() {
     children: [(0, Chunk951288.jsx)("div", {
       className: Chunk409150.uncancelImage
     }), (0, Chunk951288.jsx)("div", {
-      children: Chunk388032.intl.string(Chunk388032.t.G27uHe)
+      children: Chunk388032.intl.string(Chunk388032.t.G27uHR)
     })]
   })
 }
@@ -83,15 +83,15 @@ function T(e) {
         o()((0, E.uV)(e) <= (0, E.uV)(y.additionalPlans), "Uncanceling should not increase the number of guild subscriptions"), await O(y, e, t, d), S(2)
       } catch (t) {
         let e = t instanceof f.HF ? t : new f.HF(t, t.code);
-        R(b.intl.string(e.code === _.SM.BILLING_PAUSE_INVALID_UPDATE ? b.t.dq4vq7 : b.t["5mlOCW"])), C(false)
+        R(b.intl.string(e.code === _.SM.BILLING_PAUSE_INVALID_UPDATE ? b.t.dq4vq6 : b.t["5mlOCQ"])), C(false)
       }
     }, [y, t, d]),
     w = () => {
       switch (T) {
         case 1:
-          return b.intl.string(b.t.l52ih2);
+          return b.intl.string(b.t.l52ih4);
         case 2:
-          return b.intl.string(b.t.H9QUAB);
+          return b.intl.string(b.t.H9QUAA);
         default:
           return ""
       }
@@ -101,19 +101,19 @@ function T(e) {
         case 1:
           return [{
             variant: "secondary",
-            text: b.intl.string(b.t.oEAioF),
+            text: b.intl.string(b.t.oEAioK),
             disabled: A,
             onClick: a
           }, {
             variant: "primary",
-            text: b.intl.string(b.t.etZP4B),
+            text: b.intl.string(b.t.etZP4O),
             loading: A,
             onClick: P
           }];
         case 2:
           return [{
             variant: "primary",
-            text: b.intl.string(b.t.BddRzS),
+            text: b.intl.string(b.t.BddRzc),
             onClick: a
           }];
         default:

@@ -75,7 +75,7 @@ function j(e) {
       className: a()(v.iconContainer, {
         [v.petite]: s
       }),
-      "aria-label": _.intl.string(_.t["0qPSMV"]),
+      "aria-label": _.intl.string(_.t["0qPSMT"]),
       onClick: () => (0, C.ND)(r, g),
       children: [null != m ? (0, i.jsx)("img", {
         src: m,
@@ -99,8 +99,8 @@ function j(e) {
     }), null != m && d ? (0, i.jsx)(c.Avr, {
       variant: "critical",
       onClick: l,
-      "aria-label": _.intl.string(_.t["uY+Nk/"]),
-      text: _.intl.string(_.t["uY+Nk/"]),
+      "aria-label": _.intl.string(_.t["uY+Nk5"]),
+      text: _.intl.string(_.t["uY+Nk5"]),
       textVariant: "text-sm/medium",
       size: "sm",
       role: "button",
@@ -154,13 +154,13 @@ let E = function(e) {
         n()
       },
       children: (0, i.jsx)(o.Modal, {
-        title: _.intl.string(_.t["5Q9+/L"]),
+        title: _.intl.string(_.t["5Q9+/P"]),
         actions: [{
-          text: _.intl.string(_.t["ETE/oC"]),
+          text: _.intl.string(_.t["ETE/oK"]),
           variant: "secondary",
           onClick: f
         }, {
-          text: _.intl.string(_.t["R3BPH+"]),
+          text: _.intl.string(_.t.R3BPHx),
           variant: "primary",
           type: "submit",
           disabled: Z === P && !w
@@ -176,7 +176,7 @@ let E = function(e) {
             onIconRemove: () => A(null),
             analyticsLocations: M
           }), (0, i.jsx)(c.oil, {
-            "aria-label": _.intl.string(_.t.GEGW3P),
+            "aria-label": _.intl.string(_.t.GEGW3N),
             placeholder: null != I ? I : "",
             value: Z,
             onChange: T,

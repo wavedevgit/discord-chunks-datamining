@@ -45,7 +45,7 @@ let p = {
       selected: n === t,
       index: t,
       game: e
-    }, e.id)), _ = d.t["/U2VW+"], p = d.intl.string(d.t.URyqtP);
+    }, e.id)), _ = d.t["/U2VW1"], p = d.intl.string(d.t.URyqtL);
     return (0, r.jsxs)(i.Fragment, {
       children: [(0, l.gm)({
         titleWithQuery: _,

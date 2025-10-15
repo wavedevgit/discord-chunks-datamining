@@ -59,11 +59,11 @@ class O extends Chunk647438.Component {
         onClick: this.handleClick,
         children: [(0, Chunk951288.jsx)(Chunk481060.P3F, {
           onClick: this.handleClick,
-          "aria-label": Chunk388032.intl.string(Chunk388032.t.mKwsSp),
+          "aria-label": Chunk388032.intl.string(Chunk388032.t.mKwsSk),
           className: Chunk413140.topicClickTarget
         }), null == module.linkedLobby || exports ? Chunk454585.Z.parseTopic(module.topic, true, {
           channelId: module.id
-        }) : Chunk388032.intl.string(Chunk388032.t["XJVlf/"])]
+        }) : Chunk388032.intl.string(Chunk388032.t.XJVlf3)]
       })]
     }) : null
   }

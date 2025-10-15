@@ -236,7 +236,7 @@ function A(e) {
     className: o()(m.attachedCaretButtonContainer, A && m.popoutOpen, g, U && [m.fullRegionDropdownButton, T[w]]),
     children: [B, null != v ? (0, r.jsx)(_.Z, {
       children: (0, r.jsx)(c.P3F, {
-        "aria-label": h.intl.string(h.t.PdRCRg),
+        "aria-label": h.intl.string(h.t.PdRCRk),
         onClick: C ? true : v,
         className: o()(m.contextMenuNub, N && m.attachedCaret, S[D], A && [m.popoutOpen, m.active], C && m.disabled),
         children: (0, r.jsx)(d.Z, {

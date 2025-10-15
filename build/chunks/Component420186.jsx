@@ -51,11 +51,11 @@ let N = () => {
         children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "eyebrow",
           color: "header-secondary",
-          children: Chunk388032.intl.string(Chunk388032.t["A5wHQ/"])
+          children: Chunk388032.intl.string(Chunk388032.t.A5wHQ0)
         }), (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-sm/medium",
           color: "interactive-normal",
-          children: Chunk388032.intl.string(Chunk388032.t.UKCSEd)
+          children: Chunk388032.intl.string(Chunk388032.t.UKCSER)
         })]
       }), (0, Chunk951288.jsx)("div", {
         className: r()(Chunk181174.caret, {
@@ -78,17 +78,17 @@ let N = () => {
           color: "header-secondary",
           children: Chunk388032.intl.string(Chunk388032.t.me1lRk)
         }), (0, Chunk951288.jsx)(Chunk481060.oil, {
-          placeholder: Chunk388032.intl.string(Chunk388032.t["09Q8yp"]),
+          placeholder: Chunk388032.intl.string(Chunk388032.t["09Q8ys"]),
           maxLength: Chunk981631.l$U,
           value: N,
           onChange: E
         })]
       }), (0, Chunk951288.jsx)(Chunk51331.ZP, {
-        title: Chunk388032.intl.string(Chunk388032.t["/2ed37"]),
+        title: Chunk388032.intl.string(Chunk388032.t["/2ed39"]),
         value: f,
         onChange: I
       }), Chunk120356 && (0, Chunk951288.jsx)(Chunk51331.ZP, {
-        title: Chunk388032.intl.string(Chunk388032.t.bN4m1G),
+        title: Chunk388032.intl.string(Chunk388032.t.bN4m1N),
         value: h,
         onChange: v
       })]

@@ -48,18 +48,18 @@ function y(e) {
       className: v.staffIndicator,
       children: (0, r.jsx)(o.IGR, {
         color: a.Z.unsafe_rawColors.BRAND_500.css,
-        text: E.intl.string(E.t.oMx98L)
+        text: E.intl.string(E.t.oMx98P)
       })
     }), (0, r.jsx)(m.Z, {
       icon: o.dz2,
       actionType: m.Z.ActionTypes.ACCEPT,
-      tooltip: E.intl.string(E.t.Zcibdf),
+      tooltip: E.intl.string(E.t.ZcibdX),
       onClick: h,
       shouldHighlight: c
     }), (0, r.jsx)(m.Z, {
       icon: o.Dio,
       actionType: m.Z.ActionTypes.DENY,
-      tooltip: E.intl.string(E.t.xuio0C),
+      tooltip: E.intl.string(E.t.xuio0N),
       onClick: b,
       shouldHighlight: c
     })]
@@ -85,7 +85,7 @@ function I(e) {
   return (0, r.jsx)(m.Z, {
     icon: o.Dio,
     actionType: m.Z.ActionTypes.DENY,
-    tooltip: E.intl.string(E.t.eaq81S),
+    tooltip: E.intl.string(E.t.eaq81d),
     onClick: c,
     shouldHighlight: a
   })
@@ -97,7 +97,7 @@ function C(e) {
     applicationId: n,
     userTag: a,
     isProvisional: s
-  } = e, p = i.useMemo(() => t ? E.intl.string(E.t["Uv/eTx"]) : a, [t, a]), f = (0, l.e7)([c.Z], () => null != n ? c.Z.getApplication(n) : null);
+  } = e, p = i.useMemo(() => t ? E.intl.string(E.t["Uv/eT0"]) : a, [t, a]), f = (0, l.e7)([c.Z], () => null != n ? c.Z.getApplication(n) : null);
   return (0, r.jsxs)("div", {
     className: v.applicationSublabel,
     children: [!s && (0, r.jsx)(o.Text, {

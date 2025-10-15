@@ -78,7 +78,7 @@ class C extends Chunk647438.PureComponent {
       }));
     return (0, Chunk951288.jsx)(Chunk481060.nsm, {
       className: Chunk397660.root,
-      label: Chunk388032.intl.string(Chunk388032.t.w8gMqh),
+      label: Chunk388032.intl.string(Chunk388032.t.w8gMqq),
       options: Chunk647438,
       value: require,
       onChange: this.handleChangeVoiceRegion,
@@ -107,7 +107,7 @@ class C extends Chunk647438.PureComponent {
         id: n.region
       } : {
         id: "automatic",
-        name: p.intl.string(p.t.JEmsap),
+        name: p.intl.string(p.t.JEmsam),
         vip: false,
         deprecated: false,
         hidden: false

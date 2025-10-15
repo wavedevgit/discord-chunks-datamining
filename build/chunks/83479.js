@@ -10,7 +10,7 @@ var Chunk647438 = require("./647438.js"),
 let o = function(e) {
     var t, n, r, l;
     let o = arguments.length > 1 && true !== arguments[1] && arguments[1];
-    if (o) return a.intl.formatToPlainString(a.t["/0Yndu"], {
+    if (o) return a.intl.formatToPlainString(a.t["/0Yndn"], {
       num: null == (t = e.bundledProducts) ? true : t.length
     });
     let s = null != (n = e.bundledProducts) ? n : [],
@@ -19,19 +19,19 @@ let o = function(e) {
       d = s.find(e => e.type === i.Z.NAMEPLATE);
     if (null != d) {
       let e = [];
-      null != c && e.push(a.intl.formatToPlainString(a.t.Ntv9Jt, {
+      null != c && e.push(a.intl.formatToPlainString(a.t.Ntv9Ji, {
         itemName: c.name
-      })), null != u && e.push(a.intl.formatToPlainString(a.t["3Y8q7a"], {
+      })), null != u && e.push(a.intl.formatToPlainString(a.t["3Y8q7e"], {
         itemName: u.name
-      })), null != d && e.push(a.intl.formatToPlainString(a.t["2keXky"], {
+      })), null != d && e.push(a.intl.formatToPlainString(a.t["2keXk5"], {
         itemName: d.name
       }));
       let t = e.join(", ").replace(/, ([^,]*)$/, " & $1");
-      return a.intl.formatToPlainString(a.t.Ofrqj6, {
+      return a.intl.formatToPlainString(a.t.Ofrqj4, {
         joinedItems: t
       })
     }
-    return a.intl.formatToPlainString(a.t.BS1Cuy, {
+    return a.intl.formatToPlainString(a.t.BS1Cu7, {
       decoName: null != (r = null == c ? true : c.name) ? r : "",
       pfxName: null != (l = null == u ? true : u.name) ? l : ""
     })
@@ -44,11 +44,11 @@ let o = function(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
     switch (null == e ? true : e.type) {
       case i.Z.AVATAR_DECORATION:
-        return a.intl.string(a.t["3lv7q2"]);
+        return a.intl.string(a.t["3lv7q6"]);
       case i.Z.PROFILE_EFFECT:
-        return a.intl.string(a.t.VhJL72);
+        return a.intl.string(a.t["VhJL7+"]);
       case i.Z.NAMEPLATE:
-        return a.intl.string(a.t.ik37EZ);
+        return a.intl.string(a.t.ik37ER);
       case i.Z.BUNDLE:
         return o(e, t);
       default:

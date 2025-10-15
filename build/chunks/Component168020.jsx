@@ -40,7 +40,7 @@ let a = e => {
       tag: "div",
       children: e
     }, t)), (0, r.jsx)(l.nn4, {
-      children: o.intl.format(o.t.j6IyVe, {
+      children: o.intl.format(o.t.j6IyVV, {
         days: a,
         hours: c,
         minutes: u

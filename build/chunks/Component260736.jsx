@@ -36,7 +36,7 @@ function _(e) {
         }),
         timestamp: n.timestamp,
         compact: t,
-        children: d.intl.format(d.t.u0qJ4z, {
+        children: d.intl.format(d.t["u0qJ4+"], {
           actorName: p.nick,
           actorHook: h
         })
@@ -52,11 +52,11 @@ function _(e) {
           color: "text-default",
           variant: "text-sm/semibold",
           className: f.title,
-          children: d.intl.string(d.t["Fh/mk/"])
+          children: d.intl.string(d.t["Fh/mk5"])
         }), (0, r.jsx)(i.Text, {
           color: "text-primary",
           variant: "text-xs/normal",
-          children: d.intl.format(d.t["bmGF+V"], {
+          children: d.intl.format(d.t["bmGF+f"], {
             helpCenterLink: m
           })
         })]

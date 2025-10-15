@@ -1,7 +1,7 @@
 /** Chunk was on 37971 **/
 /** chunk id: 848548, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  default: () => d
+  default: () => l
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -10,7 +10,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk389094 = require("./389094.js");
 
-function d(t) {
+function l(t) {
   let {
     transitionState: n,
     onClose: e
@@ -22,19 +22,19 @@ function d(t) {
       separator: false,
       children: (0, i.jsx)(r.Heading, {
         variant: "heading-lg/semibold",
-        children: s.intl.string(s.t.bAhz9l)
+        children: s.intl.string(s.t.bAhz9v)
       })
     }), (0, i.jsxs)(r.hzk, {
       children: [(0, i.jsx)(r.Text, {
         variant: "text-md/normal",
-        children: s.intl.string(s.t["7KjxW3"])
+        children: s.intl.string(s.t["7KjxW1"])
       }), (0, i.jsx)("div", {
-        className: l.art
+        className: d.art
       })]
     }), (0, i.jsx)(r.mzw, {
       children: (0, i.jsx)(r.Button, {
         variant: "primary",
-        text: s.intl.string(s.t.BddRzS),
+        text: s.intl.string(s.t.BddRzc),
         type: "submit",
         onClick: () => {
           (0, a.Z)(), e()

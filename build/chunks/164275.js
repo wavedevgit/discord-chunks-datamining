@@ -7,7 +7,7 @@ require.d(exports, {
 });
 var Chunk873546 = require("./873546.js"),
   Chunk325100 = require("./325100.js"),
-  Chunk47280 = require("./47280.js"),
+  Chunk283066 = require("./283066.js"),
   Chunk17100 = require("./17100.js"),
   Chunk474936 = require("./474936.js");
 
@@ -16,7 +16,7 @@ function l(e, t, n) {
 }
 
 function c() {
-  return (0, Chunk47280.YI)({
+  return (0, Chunk283066.Y)({
     location: "wowMomentEligibilityUtils"
   }) && (0, Chunk17100.u)({
     location: "wowMomentEligibilityUtils"

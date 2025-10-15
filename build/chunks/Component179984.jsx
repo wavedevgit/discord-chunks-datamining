@@ -90,7 +90,7 @@ let Z = () => {
     children: (0, Chunk951288.jsx)(Chunk481060.Heading, {
       className: Chunk17355.mostPopularText,
       variant: "heading-deprecated-12/extrabold",
-      children: Chunk388032.intl.string(Chunk388032.t["o/oRJB"])
+      children: Chunk388032.intl.string(Chunk388032.t["o/oRJC"])
     })
   }),
   V = e => {
@@ -204,7 +204,7 @@ let Z = () => {
         location: "PlanComparisonTable"
       });
     if (!G || !W) return null;
-    let eu = ec ? w.intl.string(w.t.XXENra) : w.intl.string(w.t.ED4UVD),
+    let eu = ec ? w.intl.string(w.t.XXENra) : w.intl.string(w.t.ED4UVF),
       ed = {
         label: (0, r.jsx)(u.Heading, {
           className: D.__invalid_textColor,
@@ -265,7 +265,7 @@ let Z = () => {
       withBottomBorderRadius: true,
       buttonsRow: null == J
     }), n = x ? null : null != J || null != $ ? (0, r.jsx)(N.Cy, {
-      text: null != J ? w.intl.string(w.t.IBYG5U) : w.intl.string(w.t.ce1v3V),
+      text: null != J ? w.intl.string(w.t.IBYG5e) : w.intl.string(w.t.ce1v3d),
       className: D.freeTrialPillWithSparkles,
       colorOptions: J === P.Si.TIER_0 ? z ? N.VE.PREMIUM_TIER_0_GRADIENT_FILL : N.VE.PREMIUM_TIER_0_WHITE_FILL : z ? X ? N.VE.PREMIUM_TIER_2_OLD_GRADIENT_FILL : N.VE.PREMIUM_TIER_2_NEW_GRADIENT_FILL : N.VE.PREMIUM_TIER_2_WHITE_FILL
     }) : el ? (0, r.jsx)(Z, {}) : (0, r.jsx)(F, {});
@@ -278,7 +278,7 @@ let Z = () => {
         children: [(0, r.jsx)(u.Heading, {
           className: o()(D.titleText, D.__invalid_textColor),
           variant: "heading-xxl/extrabold",
-          children: null != L ? L : w.intl.string(w.t.FIbMh9)
+          children: null != L ? L : w.intl.string(w.t.FIbMh4)
         }), (0, r.jsxs)("div", {
           className: D.tableWrapper,
           children: [(0, r.jsx)("div", {

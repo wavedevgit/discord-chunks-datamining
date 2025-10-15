@@ -26,48 +26,48 @@ function y(t) {
     guildEventId: e,
     recurrenceId: n,
     channel: y,
-    guild: h,
-    analyticsContext: P,
-    isRecurrenceItem: O = false,
+    guild: O,
+    analyticsContext: h,
+    isRecurrenceItem: P = false,
     onSelect: m
-  } = t, N = (0, b.Z)({
+  } = t, j = (0, b.Z)({
     guildEventId: e,
     recurrenceId: n,
-    guild: h,
+    guild: O,
     channel: y
-  }), j = (0, s.Z)({
+  }), N = (0, s.Z)({
     guildEventId: e,
     recurrenceId: n,
-    guild: h,
+    guild: O,
     channel: y
   }), _ = (0, d.Z)({
     guildEventId: e,
-    guild: h,
+    guild: O,
     channel: y,
     recurrenceId: n,
-    isRecurrenceItem: O
-  }), w = (0, g.Z)(e, h, y), S = (0, E.Z)(e, h, y), D = (0, a.Z)(e, h.id, n), T = (0, f.Z)(e), x = (0, u.Z)({
+    isRecurrenceItem: P
+  }), w = (0, g.Z)(e, O, y), S = (0, E.Z)(e, O, y), D = (0, a.Z)(e, O.id, n), T = (0, f.Z)(e), x = (0, u.Z)({
     id: e,
-    label: Z.intl.string(Z.t.WZwPO4)
+    label: Z.intl.string(Z.t.WZwPOz)
   }), I = (0, u.Z)({
     id: n,
-    label: Z.intl.string(Z.t.NZRGQo)
-  }), C = (0, c.Z)(e, h.id, y, n), G = (0, v.Z)({
+    label: Z.intl.string(Z.t.NZRGQk)
+  }), C = (0, c.Z)(e, O.id, y, n), G = (0, v.Z)({
     guildEventId: e,
-    guildId: h.id,
+    guildId: O.id,
     recurrenceId: n
   });
   return (0, l.jsx)(o.Z, {
-    context: P,
+    context: h,
     object: p.qAy.CONTEXT_MENU,
     children: (0, l.jsxs)(r.v2r, {
       navId: "user-context",
       onClose: i.Zy,
-      "aria-label": Z.intl.string(Z.t.liqwPJ),
+      "aria-label": Z.intl.string(Z.t.liqwPD),
       onSelect: m,
       children: [(0, l.jsxs)(r.kSQ, {
-        children: [C, !O && S, _, !O && w, j, N, D, O && G]
-      }), !O && (0, l.jsx)(r.kSQ, {
+        children: [C, !P && S, _, !P && w, N, j, D, P && G]
+      }), !P && (0, l.jsx)(r.kSQ, {
         children: T
       }), (0, l.jsxs)(r.kSQ, {
         children: [x, I]

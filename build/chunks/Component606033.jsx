@@ -81,7 +81,7 @@ let b = function(e) {
               options: x,
               value: _,
               onChange: L,
-              placeholder: g.intl.string(g.t.Zw8jxn),
+              placeholder: g.intl.string(g.t.Zw8jxs),
               clearable: true,
               filter: (e, t) => {
                 if ((0, s.Ew)(null == t ? true : t.trim())) return e;
@@ -93,7 +93,7 @@ let b = function(e) {
               }
             }, "".concat(_, "-").concat(null != (b = null == E || null == (n = E.config) || null == (t = n.messages) ? true : t.questName) ? b : "")), (0, r.jsx)(a.hU, {
               onClick: v,
-              "aria-label": g.intl.string(g.t.wzzjk9),
+              "aria-label": g.intl.string(g.t.wzzjk5),
               icon: a.DuK,
               loading: P
             })]
@@ -109,19 +109,19 @@ let b = function(e) {
           disabled: y,
           loading: y,
           variant: "secondary",
-          text: g.intl.string(g.t.jQEfRT)
+          text: g.intl.string(g.t.jQEfRU)
         }), (0, r.jsx)(a.Button, {
           onClick: Z,
           disabled: y,
           loading: y,
           variant: "secondary",
-          text: g.intl.string(g.t.taqkwK)
+          text: g.intl.string(g.t.taqkwM)
         }), (0, r.jsx)(a.Button, {
           onClick: w,
           disabled: y,
           loading: y,
           variant: "secondary",
-          text: g.intl.string(g.t.cKSLr4)
+          text: g.intl.string(g.t.cKSLr6)
         }), (0, r.jsx)(a.yRy, {
           targetElementRef: T,
           shouldShow: C,
@@ -134,14 +134,14 @@ let b = function(e) {
               className: m.copyInput,
               children: (0, r.jsx)(o.Z, {
                 value: h.$w.QUEST_PREVIEW_TOOL_2(_),
-                text: g.intl.string(g.t.WqhZss)
+                text: g.intl.string(g.t.WqhZsr)
               })
             })
           }),
           children: () => (0, r.jsx)(a.hU, {
             buttonRef: T,
             onClick: () => S(!C),
-            "aria-label": g.intl.string(g.t.rNGQfD),
+            "aria-label": g.intl.string(g.t.rNGQfH),
             icon: a.TIy,
             variant: "secondary"
           })

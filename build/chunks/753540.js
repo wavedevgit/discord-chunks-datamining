@@ -23,6 +23,6 @@ function s(e, n, t) {
 
 function c(e, n) {
   return (0, l.e7)([r.ZP], () => {
-    if (null != n && r.ZP.isChannelOptedIn(e, n, true)) return a.intl.string(a.t.Lz94y1)
+    if (null != n && r.ZP.isChannelOptedIn(e, n, true)) return a.intl.string(a.t.Lz94y8)
   })
 }

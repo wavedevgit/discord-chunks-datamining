@@ -35,23 +35,23 @@ function d(t) {
       type: "image",
       src: _
     },
-    title: u.intl.string(u.t.uFxYq0),
+    title: u.intl.string(u.t.uFxYq6),
     onClose: n,
     transitionState: d,
     actions: [{
       variant: "secondary",
-      text: u.intl.string(u.t["ETE/oC"]),
+      text: u.intl.string(u.t["ETE/oK"]),
       onClick: n
     }, {
       variant: "primary",
-      text: u.intl.string(u.t.rXV81H),
+      text: u.intl.string(u.t.rXV81N),
       loading: A,
       onClick: g
     }],
     children: (0, a.jsx)(l.Text, {
       className: E.description,
       variant: "text-md/normal",
-      children: u.intl.format(u.t.oMFSgi, {
+      children: u.intl.format(u.t.oMFSgo, {
         oldEmail: null == C ? true : C.email
       })
     })

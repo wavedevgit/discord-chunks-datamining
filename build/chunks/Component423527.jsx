@@ -149,7 +149,7 @@ class eu extends(r = Chunk647438.PureComponent) {
     } = this.state;
     (t.apiErrors !== s || t.parsedDateOfBirth !== l) && (this.hasError("email") || this.hasError("phone") ? null != this.emailRef && this.emailRef.focus() : this.hasError("username") ? null != this.usernameRef && this.usernameRef.focus() : this.hasError("global_name") ? null != this.globalNameRef && this.globalNameRef.focus() : this.hasError("password") ? null != this.passwordRef && this.passwordRef.focus() : null == this.state.parsedDateOfBirth ? null != this.dateOfBirthRef.current && this.dateOfBirthRef.current.focus() : this.hasError("retry_after") && "number" == typeof s.retry_after && (this.setState({
       isRateLimited: true
-    }), this._retryTimer.start(s.retry_after * H.Z.Millis.SECOND, () => {
+    }), this._retryTimer.start(s.retry_after * W.Z.Millis.SECOND, () => {
       this.setState({
         isRateLimited: false
       })
@@ -232,7 +232,7 @@ class eu extends(r = Chunk647438.PureComponent) {
       onChange: e => this.setState({
         consent: e
       }),
-      subText: Chunk388032.intl.format(Chunk388032.t.qMDAP0, {
+      subText: Chunk388032.intl.format(Chunk388032.t.qMDAPz, {
         termsURL: Chunk981631.EYA.TERMS,
         privacyURL: Chunk981631.EYA.PRIVACY
       }),
@@ -242,7 +242,7 @@ class eu extends(r = Chunk647438.PureComponent) {
       variant: "text-sm/normal",
       color: "text-secondary",
       className: a()(Chunk197571.marginTop8, Chunk33724.consentSubText),
-      children: Chunk388032.intl.format(Chunk388032.t["KI+BSb"], {
+      children: Chunk388032.intl.format(Chunk388032.t["KI+BSU"], {
         termsURL: Chunk981631.EYA.TERMS,
         privacyURL: Chunk981631.EYA.PRIVACY
       })
@@ -261,15 +261,15 @@ class eu extends(r = Chunk647438.PureComponent) {
       children: [(0, Chunk951288.jsx)(Chunk588705.R, {}), (0, Chunk951288.jsxs)(Chunk388905.gO, {
         className: Chunk33724.authBlock,
         children: [(0, Chunk951288.jsx)(Chunk28664.u, {
-          text: Chunk388032.intl.string(Chunk388032.t["hBB85/"]),
+          text: Chunk388032.intl.string(Chunk388032.t["hBB85+"]),
           position: "right",
           children: (0, Chunk951288.jsx)(Chunk388905.II, {
-            label: Chunk388032.intl.string(Chunk388032.t["9AjdkD"]),
+            label: Chunk388032.intl.string(Chunk388032.t["9AjdkJ"]),
             autoFocus: true,
             className: Chunk197571.marginBottom8,
             name: "username",
             value: require,
-            placeholder: Chunk388032.intl.string(Chunk388032.t["09Q8yp"]),
+            placeholder: Chunk388032.intl.string(Chunk388032.t["09Q8ys"]),
             onChange: exports,
             onFocus: () => this.trackInputFocus("username"),
             onBlur: () => this.trackInputBlur("username")
@@ -278,20 +278,20 @@ class eu extends(r = Chunk647438.PureComponent) {
           variant: "text-sm/normal",
           color: "text-secondary",
           className: a()(Chunk197571.marginTop20, Chunk33724.consentSubText),
-          children: Chunk388032.intl.format(Chunk388032.t["KI+BSb"], {
+          children: Chunk388032.intl.format(Chunk388032.t["KI+BSU"], {
             termsURL: Chunk981631.EYA.TERMS,
             privacyURL: Chunk981631.EYA.PRIVACY
           })
         }), (0, Chunk951288.jsx)(Chunk388905.zx, {
           className: Chunk197571.marginTop8,
           disabled: true,
-          children: Chunk388032.intl.string(Chunk388032.t["825cFy"])
+          children: Chunk388032.intl.string(Chunk388032.t["825cFx"])
         }), Chunk188785.a ? null : (0, Chunk951288.jsx)(Chunk388905.zx, {
           look: Chunk388905.zx.Looks.LINK,
           color: Chunk388905.zx.Colors.LINK,
           disabled: true,
           className: Chunk197571.marginTop20,
-          children: Chunk388032.intl.string(Chunk388032.t["1lWxux"])
+          children: Chunk388032.intl.string(Chunk388032.t["1lWxu7"])
         })]
       })]
     })
@@ -314,9 +314,9 @@ class eu extends(r = Chunk647438.PureComponent) {
     } = this.props, {
       consent: t,
       registering: n
-    } = this.state, r = Chunk388905.zx.Colors.BRAND, s = Chunk388032.intl.string(Chunk388032.t["825cFy"]);
+    } = this.state, r = Chunk388905.zx.Colors.BRAND, s = Chunk388032.intl.string(Chunk388032.t["825cFx"]);
     return (0, Chunk951288.jsx)(Chunk28664.u, {
-      text: !exports && module ? Chunk388032.intl.string(Chunk388032.t.AY4IVA) : null,
+      text: !exports && module ? Chunk388032.intl.string(Chunk388032.t.AY4IVF) : null,
       children: (0, Chunk951288.jsx)("div", {
         className: Chunk197571.marginTop8,
         children: (0, Chunk951288.jsx)(Chunk388905.zx, {
@@ -358,13 +358,13 @@ class eu extends(r = Chunk647438.PureComponent) {
         }) : null, (0, Chunk951288.jsxs)(Chunk388905.gO, {
           className: Chunk990547 ? true : Chunk33724.authBlock,
           children: [(0, Chunk951288.jsx)(Chunk481060.oil, {
-            helperText: Chunk388032.intl.string(Chunk388032.t["330TCc"]),
-            label: Chunk388032.intl.string(Chunk388032.t["9AjdkD"]),
+            helperText: Chunk388032.intl.string(Chunk388032.t["330TCQ"]),
+            label: Chunk388032.intl.string(Chunk388032.t["9AjdkJ"]),
             error: null != a ? a : ec(null != r ? r : require),
             autoFocus: true,
             name: "global_name",
             value: Chunk120356,
-            placeholder: Chunk388032.intl.string(Chunk388032.t["09Q8yp"]),
+            placeholder: Chunk388032.intl.string(Chunk388032.t["09Q8ys"]),
             onChange: Chunk442837,
             onFocus: () => {
               this.setState({
@@ -377,7 +377,7 @@ class eu extends(r = Chunk647438.PureComponent) {
               }), this.trackInputBlur("global_name")
             }
           }), Chunk188785.a ? null : (0, Chunk951288.jsx)(Chunk13430.Z, {
-            label: Chunk388032.intl.string(Chunk388032.t.rhBeKe),
+            label: Chunk388032.intl.string(Chunk388032.t.rhBeKS),
             wrapperClassName: Chunk33724.inviteBirthdayInput,
             name: "date_of_birth",
             onChange: this.handleBirthdayChange,
@@ -390,7 +390,7 @@ class eu extends(r = Chunk647438.PureComponent) {
               color: Chunk388905.zx.Colors.LINK,
               onClick: this.handleGotoLogin,
               className: Chunk197571.marginTop20,
-              children: Chunk388032.intl.string(Chunk388032.t["1lWxux"])
+              children: Chunk388032.intl.string(Chunk388032.t["1lWxu7"])
             })
           })]
         })]
@@ -433,21 +433,21 @@ class eu extends(r = Chunk647438.PureComponent) {
         username: b,
         global_name: j,
         password: I,
-        date_of_birth: y
+        date_of_birth: O
       } = {}
     } = this.state, {
-      consentRequired: O,
+      consentRequired: y,
       authBoxClassName: C,
       hasLoggedInAccounts: A
     } = this.props, T = this.renderErrorMessage(), Z = (0, i.jsx)(g.u, {
-      text: !c && O ? er.intl.string(er.t.AY4IVA) : null,
+      text: !c && y ? er.intl.string(er.t.AY4IVF) : null,
       children: (0, i.jsx)("div", {
         className: es.marginTop20,
         children: (0, i.jsx)(N.zx, {
           type: "submit",
           submitting: x,
           disabled: !this.hasConsent() || this.state.isRateLimited,
-          children: er.intl.string(er.t["825cFy"])
+          children: er.intl.string(er.t["825cFx"])
         })
       })
     }), P = async () => {
@@ -462,13 +462,13 @@ class eu extends(r = Chunk647438.PureComponent) {
     }, L = null != e ? (0, i.jsx)(s.Fragment, {
       children: e()
     }, "custom-header") : (0, i.jsx)(N.Dx, {
-      children: er.intl.string(er.t.wC4TlR)
+      children: er.intl.string(er.t.wC4TlZ)
     }, "title"), k = (0, i.jsxs)(N.gO, {
       className: es.marginTop20,
       children: [(0, i.jsx)(N.II, {
         autoFocus: true,
         className: es.marginBottom20,
-        label: er.intl.string(er.t.dI4d4S),
+        label: er.intl.string(er.t.dI4d4e),
         name: "email",
         value: n,
         onChange: e => this.setState({
@@ -485,7 +485,7 @@ class eu extends(r = Chunk647438.PureComponent) {
         onFocus: () => this.trackInputFocus("email"),
         onBlur: () => this.trackInputBlur("email")
       }), (0, i.jsx)(N.II, {
-        label: er.intl.string(er.t["9AjdkD"]),
+        label: er.intl.string(er.t["9AjdkJ"]),
         className: es.marginBottom20,
         name: "global_name",
         value: l,
@@ -515,7 +515,7 @@ class eu extends(r = Chunk647438.PureComponent) {
         children: (0, i.jsx)(p.Text, {
           variant: "text-sm/normal",
           color: "text-default",
-          children: er.intl.string(er.t["330TCc"])
+          children: er.intl.string(er.t["330TCQ"])
         })
       }), (0, i.jsxs)("div", {
         onBlur: () => this.setState({
@@ -524,7 +524,7 @@ class eu extends(r = Chunk647438.PureComponent) {
         onFocus: P,
         tabIndex: false,
         children: [(0, i.jsx)(N.II, {
-          label: er.intl.string(er.t.TWzdWj),
+          label: er.intl.string(er.t.TWzdWl),
           className: es.marginBottom20,
           name: "username",
           value: r,
@@ -539,7 +539,7 @@ class eu extends(r = Chunk647438.PureComponent) {
           onBlur: () => this.trackInputBlur("username")
         }), this.renderUsernameValidation()]
       }), (0, i.jsx)(N.II, {
-        label: er.intl.string(er.t["CIGa+7"]),
+        label: er.intl.string(er.t["CIGa+/"]),
         name: "password",
         value: o,
         onChange: e => this.setState({
@@ -556,12 +556,12 @@ class eu extends(r = Chunk647438.PureComponent) {
         onFocus: () => this.trackInputFocus("password"),
         onBlur: () => this.trackInputBlur("password")
       }), (0, i.jsx)(E.Z, {
-        label: er.intl.string(er.t.rhBeKe),
+        label: er.intl.string(er.t.rhBeKS),
         wrapperClassName: ei.birthdayInput,
         name: "date_of_birth",
         onChange: this.handleBirthdayChange,
         ref: this.dateOfBirthRef,
-        error: null != _ ? _ : ec(y),
+        error: null != _ ? _ : ec(O),
         value: u,
         required: true,
         onFocus: this.trackInputFocus,
@@ -571,7 +571,7 @@ class eu extends(r = Chunk647438.PureComponent) {
         color: N.zx.Colors.LINK,
         onClick: this.handleGotoLogin,
         className: es.marginTop20,
-        children: er.intl.string(er.t["1lWxux"])
+        children: er.intl.string(er.t["1lWxu7"])
       })]
     });
     return t ? (0, i.jsx)(Q.Z, {
@@ -582,7 +582,7 @@ class eu extends(r = Chunk647438.PureComponent) {
         className: ei.flex,
         children: [(0, i.jsx)(N.Dx, {
           className: ei.createAccountTemplateHeader,
-          children: er.intl.string(er.t.wC4TlR)
+          children: er.intl.string(er.t.wC4TlZ)
         }), k]
       }, "register-title")]
     }) : (0, i.jsxs)(N.ZP, {
@@ -602,7 +602,7 @@ class eu extends(r = Chunk647438.PureComponent) {
             className: ei.caret
           }), (0, i.jsx)(p.Text, {
             variant: "text-md/normal",
-            children: er.intl.string(er.t["1MrpWO"])
+            children: er.intl.string(er.t["1MrpWF"])
           })]
         })
       }) : null, L, k]
@@ -648,7 +648,7 @@ class eu extends(r = Chunk647438.PureComponent) {
       })), m.Z.loginReset(), u(t, {
         search: (0, o.stringify)(d),
         source: "register"
-      }), null == a || a(e), W.S.dispatch(X.CkL.WAVE_EMPHASIZE)
+      }), null == a || a(e), H.S.dispatch(X.CkL.WAVE_EMPHASIZE)
     }), el(this, "handleSubmit", e => {
       null == e || e.preventDefault();
       let {
@@ -783,7 +783,7 @@ function eh(e) {
   })).otherwise(() => (0, i.jsx)(p.Text, {
     variant: "text-sm/normal",
     color: "text-default",
-    children: er.intl.string(er.t.z7c4bP)
+    children: er.intl.string(er.t.z7c4bG)
   })) : null != r && r.length > 0 && s.length > 0 ? (0, i.jsx)(p.Text, {
     variant: "text-sm/normal",
     color: "text-default",
@@ -794,7 +794,7 @@ function eh(e) {
   }) : (0, i.jsx)(p.Text, {
     variant: "text-sm/normal",
     color: "text-default",
-    children: er.intl.string(er.t.z7c4bP)
+    children: er.intl.string(er.t.z7c4bG)
   }), (0, i.jsx)(U.Z, {
     show: u && (null == o ? true : o.type) === k.K.ERROR || l,
     top: false,

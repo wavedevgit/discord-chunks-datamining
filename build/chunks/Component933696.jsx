@@ -31,7 +31,7 @@ function u(e) {
     }
     return o
   }(e, ["onClose", "source"]);
-  let b = l.intl.format(l.t.WMO9po, {
+  let b = l.intl.format(l.t.WMO9pq, {
     onAndMore: function() {
       t(), (0, o.z)()
     }
@@ -56,7 +56,7 @@ function u(e) {
   }({
     artURL: f.Z,
     type: a.cd.PREMIUM_GUILD_IDENTITY_MODAL,
-    title: l.intl.string(l.t.kOEBKP),
+    title: l.intl.string(l.t.kOEBKC),
     body: b,
     glowUp: b,
     analyticsSource: n,

@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk271922 = require("./271922.js");
 
-function y(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ function y(e) {
   return e
 }
 
-function O(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -94,12 +94,12 @@ function A(e) {
     onAcceptInvite: n
   } = e;
   return (null == t ? true : t.state) === j.r2o.BANNED ? (0, r.jsx)(c.u, {
-    text: I.intl.string(I.t["5AkWAd"]),
-    buttonCta: I.intl.string(I.t["8osdkn"]),
+    text: I.intl.string(I.t["5AkWAQ"]),
+    buttonCta: I.intl.string(I.t["8osdkp"]),
     onClick: n
   }) : (0, r.jsx)(c.u, {
-    text: I.intl.string(I.t["usP+Mb"]),
-    buttonCta: I.intl.string(I.t["8osdkn"]),
+    text: I.intl.string(I.t["usP+MT"]),
+    buttonCta: I.intl.string(I.t["8osdkp"]),
     onClick: n
   })
 }
@@ -156,7 +156,7 @@ function Z(e) {
   let {
     invite: t
   } = e;
-  return null != t && (0, E.JI)(t) ? (0, r.jsx)(T, O(y({
+  return null != t && (0, E.JI)(t) ? (0, r.jsx)(T, y(O({
     startAnimHeightPx: 0,
     innerStyle: () => N.guildInfoInner
   }, e), {
@@ -174,7 +174,7 @@ function P(e) {
     2: N.inviteCardInnerError,
     0: N.inviteCardInnerLoading
   };
-  return (0, r.jsx)(T, O(y({
+  return (0, r.jsx)(T, y(O({
     startAnimHeightPx: 200,
     innerStyle: e => n[e]
   }, e), {
@@ -182,11 +182,11 @@ function P(e) {
       if (null == t) return (0, r.jsx)(S, {});
       switch (n) {
         case 1:
-          return (0, r.jsx)(v.Z, O(y({}, e), {
+          return (0, r.jsx)(v.Z, y(O({}, e), {
             invite: t
           }));
         case 2:
-          return (0, r.jsx)(A, O(y({}, e), {
+          return (0, r.jsx)(A, y(O({}, e), {
             invite: t
           }));
         default:
@@ -215,9 +215,9 @@ function R(e) {
     className: N.splashBackground,
     style: s,
     contentClassName: N.centerAuthBoxContent,
-    children: [(0, r.jsx)(P, O(y({}, e), {
+    children: [(0, r.jsx)(P, y(O({}, e), {
       onAcceptInvite: n
-    })), (0, r.jsx)(Z, y({}, e))]
+    })), (0, r.jsx)(Z, O({}, e))]
   })
 }
 

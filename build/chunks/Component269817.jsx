@@ -1,7 +1,7 @@
 /** Chunk was on 74194 **/
 /** chunk id: 269817, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  default: () => c
+  default: () => d
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -12,10 +12,10 @@ var Chunk755721 = require("./755721.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk398439 = require("./398439.js");
 
-function c(t) {
+function d(t) {
   let {
     url: n,
-    onClose: c,
+    onClose: d,
     transitionState: x
   } = t, m = (0, r.Dt)();
   return (0, a.jsxs)(s.Y0X, {
@@ -23,21 +23,21 @@ function c(t) {
     "aria-labelledby": m,
     parentComponent: "LinkNotDiscordModal",
     children: [(0, a.jsx)("img", {
-      className: d.art,
+      className: c.art,
       src: e(902623),
       alt: ""
     }), (0, a.jsx)(s.hzk, {
       children: (0, a.jsxs)("div", {
-        className: d.modalContent,
+        className: c.modalContent,
         children: [(0, a.jsx)(s.Heading, {
           id: m,
           variant: "heading-lg/semibold",
-          className: d.title,
-          children: l.intl.string(l.t["biy1X/"])
+          className: c.title,
+          children: l.intl.string(l.t.biy1X1)
         }), (0, a.jsx)(s.Text, {
           variant: "text-md/normal",
-          className: d.body,
-          children: l.intl.format(l.t.J86cyX, {
+          className: c.body,
+          children: l.intl.format(l.t.J86cyc, {
             url: n
           })
         })]
@@ -45,9 +45,9 @@ function c(t) {
     }), (0, a.jsxs)(s.mzw, {
       children: [(0, a.jsx)(s.Button, {
         variant: "primary",
-        text: l.intl.string(l.t["xl8R+2"]),
+        text: l.intl.string(l.t["xl8R+/"]),
         type: "button",
-        onClick: c
+        onClick: d
       }), (0, a.jsx)(i.zx, {
         type: "button",
         size: i.zx.Sizes.MEDIUM,

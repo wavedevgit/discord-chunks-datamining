@@ -80,7 +80,7 @@ function E(e) {
     wrapperClassName: i
   } = e;
   return (0, l.Tt)({
-    location: u.intl.string(u.t["3S2494"])
+    location: u.intl.string(u.t["3S249/"])
   }), (0, r.jsx)(s.f6W, {
     theme: c.BRd.DARK,
     children: e => (0, r.jsx)("div", {

@@ -65,7 +65,7 @@ class f extends Chunk647438.PureComponent {
       totpSecret: a,
       code: p,
       isVerifying: f
-    } = this.state, m = null == (e = Chunk594174.default.getCurrentUser()) ? true : module.email, x = (0, Chunk287880.U0)(null != m ? m : "", Chunk816814), b = (0, Chunk951288.jsx)("form", {
+    } = this.state, m = null == (e = Chunk594174.default.getCurrentUser()) ? true : module.email, b = (0, Chunk287880.U0)(null != m ? m : "", Chunk816814), x = (0, Chunk951288.jsx)("form", {
       onSubmit: this.handleActivate,
       children: (0, Chunk951288.jsxs)(Chunk600164.Z, {
         className: Chunk186603.inputContainer,
@@ -84,7 +84,7 @@ class f extends Chunk647438.PureComponent {
           shrink: 0,
           children: (0, Chunk951288.jsx)(Chunk481060.Button, {
             variant: "primary",
-            text: Chunk388032.intl.string(Chunk388032.t["/a5+YV"]),
+            text: Chunk388032.intl.string(Chunk388032.t["/a5+YW"]),
             type: "submit",
             loading: f
           })
@@ -103,11 +103,11 @@ class f extends Chunk647438.PureComponent {
           shrink: 1,
           children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
             variant: "heading-lg/semibold",
-            children: Chunk388032.intl.string(Chunk388032.t.cDgKte)
+            children: Chunk388032.intl.string(Chunk388032.t.cDgKtb)
           }), (0, Chunk951288.jsx)(Chunk481060.Text, {
             variant: "text-xs/normal",
             className: Chunk186603.subHeader,
-            children: Chunk388032.intl.string(Chunk388032.t["7NGwtH"])
+            children: Chunk388032.intl.string(Chunk388032.t["7NGwtL"])
           })]
         }), (0, Chunk951288.jsx)(Chunk600164.Z.Child, {
           grow: 0,
@@ -123,8 +123,8 @@ class f extends Chunk647438.PureComponent {
             width: 100,
             height: 100
           }),
-          label: Chunk388032.intl.string(Chunk388032.t["9E74Dx"]),
-          text: Chunk388032.intl.format(Chunk388032.t.A7Aehw, {
+          label: Chunk388032.intl.string(Chunk388032.t["9E74Dw"]),
+          text: Chunk388032.intl.format(Chunk388032.t.A7Aeh4, {
             googleAuthURL: "https://support.google.com/accounts/answer/1066447?hl=en",
             authyURL: "https://www.authy.com/"
           })
@@ -132,16 +132,16 @@ class f extends Chunk647438.PureComponent {
           className: Chunk186603.divider
         }), (0, Chunk951288.jsx)(g, {
           image: (0, Chunk951288.jsx)(Chunk198993.ZP, {
-            text: x
+            text: b
           }),
-          label: Chunk388032.intl.string(Chunk388032.t["91InF1"]),
-          text: Chunk388032.intl.string(Chunk388032.t.hFeBkl),
+          label: Chunk388032.intl.string(Chunk388032.t["91InFx"]),
+          text: Chunk388032.intl.string(Chunk388032.t.hFeBkp),
           children: (0, Chunk951288.jsxs)("div", {
             className: Chunk186603.topSpacing,
             children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
               variant: "heading-sm/semibold",
               className: Chunk186603.headerSpacing,
-              children: Chunk388032.intl.string(Chunk388032.t["76IPwr"])
+              children: Chunk388032.intl.string(Chunk388032.t["76IPws"])
             }), (0, Chunk951288.jsx)(Chunk481060.Text, {
               variant: "text-md/normal",
               className: Chunk186603.secret,
@@ -156,9 +156,9 @@ class f extends Chunk647438.PureComponent {
             alt: "",
             src: require("./308777.js")
           }),
-          label: Chunk388032.intl.string(Chunk388032.t["SaD/LY"]),
-          text: Chunk388032.intl.string(Chunk388032.t.vI1zic),
-          children: b
+          label: Chunk388032.intl.string(Chunk388032.t["SaD/LS"]),
+          text: Chunk388032.intl.string(Chunk388032.t.vI1ziY),
+          children: x
         })]
       })]
     })

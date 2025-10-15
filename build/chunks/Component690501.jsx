@@ -32,8 +32,8 @@ function f(e) {
       if (t.length > 0) return (0, r.jsx)(l.k, {
         applications: E
       });
-      if (n) return u.intl.string(u.t["0eWeav"]);
-      if (f) return u.intl.string(u.t.MCgl9c);
+      if (n) return u.intl.string(u.t["0eWeam"]);
+      if (f) return u.intl.string(u.t.MCgl9f);
       throw Error("[GameRelationshipButton] Tooltip text should not be undefined.")
     }, [E, t.length, n, f]),
     icon: i.useMemo(() => {

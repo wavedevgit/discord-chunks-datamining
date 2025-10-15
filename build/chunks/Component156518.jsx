@@ -57,7 +57,7 @@ function m(e) {
         navId: "user-profile-friend-request-buttons",
         onSelect: true,
         onClose: n,
-        "aria-label": p.intl.string(p.t.Jszi3G),
+        "aria-label": p.intl.string(p.t.Jszi3N),
         children: t
       })
     },

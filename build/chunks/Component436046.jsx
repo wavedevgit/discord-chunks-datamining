@@ -24,8 +24,8 @@ function N(e) {
   let {
     onComplete: t,
     onClose: n
-  } = e, [s, N] = o.useState(null), [x, A] = o.useState(null), [T, C] = o.useState(false), j = (0, i.e7)([p.default], () => p.default.getCurrentUser()), y = o.useRef(null);
-  async function O(e) {
+  } = e, [s, N] = o.useState(null), [x, T] = o.useState(null), [A, C] = o.useState(false), j = (0, i.e7)([p.default], () => p.default.getCurrentUser()), O = o.useRef(null);
+  async function y(e) {
     e.preventDefault(), r()(null != s, "Cannot submit null birthday."), C(true);
     try {
       await d.Av(s, h.L0.NEW_USER_FLOW), t()
@@ -33,7 +33,7 @@ function N(e) {
       if (null != e.body && null != e.body.date_of_birth) d.wE(h.L0.NEW_USER_FLOW), d.hp(h.L0.NEW_USER_FLOW), n();
       else {
         var a;
-        (null == e || null == (a = e.body) ? true : a.username) != null ? A(b.intl.string(b.t["TGg/2k"])) : A(null == e ? true : e.body.message)
+        (null == e || null == (a = e.body) ? true : a.username) != null ? T(b.intl.string(b.t["TGg/2t"])) : T(null == e ? true : e.body.message)
       }
     }
     C(false)
@@ -46,11 +46,11 @@ function N(e) {
     }, [N]),
     I = o.useCallback(() => {
       var e;
-      null == (e = y.current) || e.focus()
-    }, [y]);
+      null == (e = O.current) || e.focus()
+    }, [O]);
   return null == j ? null : (0, a.jsxs)("form", {
     className: E.content,
-    onSubmit: O,
+    onSubmit: y,
     children: [(0, a.jsx)(u.gw7, {
       size: "custom",
       width: 56,
@@ -60,7 +60,7 @@ function N(e) {
     }), (0, a.jsx)(u.Heading, {
       className: E.title,
       variant: "heading-xl/semibold",
-      children: b.intl.string(b.t.n7i7sv)
+      children: b.intl.string(b.t.n7i7sr)
     }), (0, a.jsx)(u.Text, {
       color: "text-default",
       className: E.description,
@@ -74,7 +74,7 @@ function N(e) {
         required: true,
         autoFocus: true,
         wrapperClassName: E.formItem,
-        label: b.intl.string(b.t.rhBeKe),
+        label: b.intl.string(b.t.rhBeKS),
         name: "birthday",
         onChange: v,
         onPopulated: I,
@@ -86,13 +86,13 @@ function N(e) {
       children: (0, a.jsx)("div", {
         className: E.buttonWrapper,
         children: (0, a.jsx)(c.zx, {
-          buttonRef: y,
+          buttonRef: O,
           type: "submit",
           size: c.zx.Sizes.LARGE,
-          submitting: T,
+          submitting: A,
           disabled: null == s,
           fullWidth: true,
-          children: b.intl.string(b.t.PDTjLN)
+          children: b.intl.string(b.t.PDTjLC)
         })
       })
     })]

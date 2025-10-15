@@ -16,7 +16,7 @@ function c(e) {
     className: n
   } = e, c = (0, l.Z)(t);
   if (null == c) return null;
-  let s = c === i.u.CAMERA_SEND_LOW_FPS ? o.intl.string(o.t["1NyoVt"]) : true;
+  let s = c === i.u.CAMERA_SEND_LOW_FPS ? o.intl.string(o.t["1NyoVl"]) : true;
   return null != s ? (0, r.jsx)(a.Z, {
     className: n,
     errorMessage: s,

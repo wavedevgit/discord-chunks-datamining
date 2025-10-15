@@ -140,7 +140,7 @@ function T(e, t) {
               [h.smallActionBar]: D
             }),
             onContextMenu: I,
-            "aria-label": p.intl.string(p.t["8Lu3Du"]),
+            "aria-label": p.intl.string(p.t["8Lu3Dg"]),
             children: (0, r.jsx)(u.ZP, {
               className: o()({
                 [h.miniPopover]: D

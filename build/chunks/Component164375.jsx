@@ -23,24 +23,24 @@ function g(e) {
     channelId: t,
     blockedUserIds: n,
     ignoredUserIds: g = [],
-    transitionState: N,
-    onClose: E
+    transitionState: E,
+    onClose: N
   } = e;
   return s.useEffect(() => {
-    d.default.track(x.rMx.GDM_BLOCKED_USER_WARNING_VIEWED, {
+    d.default.track(f.rMx.GDM_BLOCKED_USER_WARNING_VIEWED, {
       channel_id: t,
       warning_medium: m.WR.MODAL,
       blocked_user_ids: n,
       ignored_user_ids: g
     })
   }, [t, n, g]), (0, i.jsx)(u.Z, {
-    headerText: f.intl.string(f.t["mwJJ+f"]),
+    headerText: x.intl.string(x.t["mwJJ+f"]),
     descriptionText: ((e, t) => {
       let n = e > 0,
         i = t > 0;
-      return n && i ? f.intl.string(f.t["0dP7Fk"]) : n ? f.intl.formatToPlainString(f.t.OpIG9d, {
+      return n && i ? x.intl.string(x.t["0dP7Fh"]) : n ? x.intl.formatToPlainString(x.t.OpIG9f, {
         n: e
-      }) : i ? f.intl.formatToPlainString(f.t["D+V4jI"], {
+      }) : i ? x.intl.formatToPlainString(x.t["D+V4jI"], {
         n: t
       }) : null
     })(n.length, g.length),
@@ -54,14 +54,14 @@ function g(e) {
           className: h.icon,
           children: (0, i.jsx)(r.owK, {})
         }),
-        text: f.intl.string(f.t.RIMw54),
+        text: x.intl.string(x.t["RIMw5+"]),
         className: h.row
       }, {
         icon: (0, i.jsx)("div", {
           className: h.icon,
           children: (0, i.jsx)(r.d3s, {})
         }),
-        text: f.intl.string(f.t.bejNWN),
+        text: x.intl.string(x.t.bejNWF),
         className: h.row
       }];
       if (d && c) {
@@ -97,7 +97,7 @@ function g(e) {
       ignoredUserIds: g
     }),
     onDismissAndStay: () => {
-      E(), (0, c.O)(t), d.default.track(x.rMx.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, {
+      N(), (0, c.O)(t), d.default.track(f.rMx.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, {
         action: m.q.CLICK_TO_STAY,
         channel_id: t,
         warning_medium: m.WR.MODAL,
@@ -106,7 +106,7 @@ function g(e) {
       })
     },
     onDismissAndLeave: () => {
-      E(), (0, c.O)(t), a.Z.closePrivateChannel(t, true, true), d.default.track(x.rMx.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, {
+      N(), (0, c.O)(t), a.Z.closePrivateChannel(t, true, true), d.default.track(f.rMx.GDM_BLOCKED_USER_WARNING_ENGAGEMENT, {
         action: m.q.CLICK_TO_LEAVE,
         channel_id: t,
         warning_medium: m.WR.MODAL,
@@ -114,9 +114,9 @@ function g(e) {
         ignored_user_ids: g
       })
     },
-    leaveButtonText: f.intl.string(f.t["Hi1/aQ"]),
-    stayButtonText: f.intl.string(f.t.SW3lpH),
-    transitionState: N,
-    onClose: E
+    leaveButtonText: x.intl.string(x.t["Hi1/aW"]),
+    stayButtonText: x.intl.string(x.t.SW3lpK),
+    transitionState: E,
+    onClose: N
   })
 }

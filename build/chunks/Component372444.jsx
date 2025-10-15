@@ -22,7 +22,7 @@ let m = e => {
     className: i,
     buttonProps: l = {
       color: a.Tt.BRAND_INVERTED,
-      text: u.intl.string(u.t.oqweNx)
+      text: u.intl.string(u.t.oqweNz)
     }
   } = e, {
     color: s,

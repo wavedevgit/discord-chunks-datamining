@@ -23,7 +23,7 @@ function f(e) {
   } = e, f = (0, i.e7)([d.ZP], () => d.ZP.getSection(t.id, null == t ? true : t.isDM())), g = (0, o.ZP)(t.getRecipientId()), m = (0, c.Z)(), b = f === h.ULH.PROFILE && m;
   return (0, r.jsx)(u.JO, {
     disabled: !m || n,
-    tooltip: !m || n ? p.intl.string(p.t.YneDgF) : b ? p.intl.string(p.t.niD64e) : p.intl.string(p.t["+FAsHq"]),
+    tooltip: !m || n ? p.intl.string(p.t.YneDgI) : b ? p.intl.string(p.t.niD64e) : p.intl.string(p.t["+FAsHh"]),
     icon: l.z65,
     onClick: () => {
       (0, s.TY)({

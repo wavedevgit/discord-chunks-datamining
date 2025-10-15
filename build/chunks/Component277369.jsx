@@ -26,13 +26,13 @@ function g(e) {
     children: [(0, r.jsx)(a.Text, {
       variant: "text-sm/normal",
       color: f ? "text-muted" : "text-default",
-      children: null != h ? u.intl.format(u.t.erxwWA, {
+      children: null != h ? u.intl.format(u.t.erxwWF, {
         teamName: h.name
-      }) : u.intl.string(u.t.FGzLkK)
+      }) : u.intl.string(u.t.FGzLkJ)
     }), (0, r.jsx)(a.LZC, {
       size: 16
     }), (0, r.jsx)(l.zxk, {
-      text: null != h ? u.intl.string(u.t["/Fjq5P"]) : u.intl.string(u.t["6ih+b4"]),
+      text: null != h ? u.intl.string(u.t["/Fjq5O"]) : u.intl.string(u.t["6ih+b2"]),
       variant: null != h ? "secondary" : "primary",
       onClick: () => {
         (0, a.ZDy)(async () => {

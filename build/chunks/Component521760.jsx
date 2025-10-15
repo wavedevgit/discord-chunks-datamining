@@ -17,12 +17,12 @@ function e(t) {
     size: "sm",
     transitionState: i,
     onClose: n,
-    title: r.intl.string(r.t["iE/uSw"]),
-    subtitle: r.intl.string(r.t.G6SnvT),
+    title: r.intl.string(r.t["iE/uS0"]),
+    subtitle: r.intl.string(r.t.G6Snvb),
     actions: [{
       variant: "primary",
       onClick: () => n(),
-      text: r.intl.string(r.t.cpT0Cq)
+      text: r.intl.string(r.t.cpT0Cg)
     }]
   })
 }

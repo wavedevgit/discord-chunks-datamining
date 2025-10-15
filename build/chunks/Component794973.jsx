@@ -19,8 +19,8 @@ function d(e, n) {
   }), d = s.Z.getChannel(e);
   return null == d || d.isMultiUserDM() ? null : (0, i.jsx)(r.sNh, {
     id: "close-dm",
-    label: o.intl.string(t ? o.t.oI64T4 : o.t.jsvgc3),
-    subtext: t ? o.intl.string(o.t.JENR6J) : true,
+    label: o.intl.string(t ? o.t.oI64T0 : o.t.jsvgc3),
+    subtext: t ? o.intl.string(o.t.JENR6O) : true,
     action: () => l.Z.closePrivateChannel(e, n)
   })
 }

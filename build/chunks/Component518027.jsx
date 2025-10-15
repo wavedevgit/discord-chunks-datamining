@@ -32,9 +32,9 @@ let p = () => {
         richValue: r
       }), l.Z.saveDraft(e.channel_id, n, u.d.ChannelMessage)
     }, [module]),
-    [O, C] = Chunk647438.useState(false),
-    j = Chunk647438.useCallback(() => C(true), []),
-    w = Chunk647438.useCallback(() => C(false), []);
+    [O, j] = Chunk647438.useState(false),
+    C = Chunk647438.useCallback(() => j(true), []),
+    w = Chunk647438.useCallback(() => j(false), []);
   (0, Chunk647438.useEffect)(() => () => {
     Chunk430742.Z.clearDraft(module.channel_id, Chunk703558.d.ChannelMessage)
   }, [module]);
@@ -45,13 +45,13 @@ let p = () => {
   return (0, Chunk951288.jsx)(Chunk893718.ZP, {
     innerClassName: Chunk784562.messageInput,
     onChange: y,
-    placeholder: Chunk388032.intl.string(Chunk388032.t.ZroO3G),
+    placeholder: Chunk388032.intl.string(Chunk388032.t.ZroO3N),
     channel: exports,
     textValue: _,
     richValue: m,
     type: Chunk541716.Ie.SHARE_CUSTOM_CLIENT_THEME_INPUT,
     onBlur: w,
-    onFocus: j,
+    onFocus: C,
     focused: O,
     onSubmit: v,
     parentModalKey: Chunk135102.tj,

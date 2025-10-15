@@ -32,74 +32,74 @@ let p = e => {
       let e = null != (m = null != (s = null == _ || null == (r = _.guild) ? true : r.id) ? s : null == (l = d.Z.getChannel(null == _ || null == (a = _.channel) ? true : a.id)) ? true : l.getGuildId()) ? m : true;
       e === u.fQ && (e = true);
       let c = await o.Z.sendVerificationEmail(i, true, e),
-        f = c.guilds_info;
-      c.has_matching_guild ? (h(e), t(u.tF.VERIFY_PIN)) : 0 === f.length ? t(u.tF.SUBMIT_SCHOOL) : 1 === f.length ? (h(f[0].id), await o.Z.sendVerificationEmail(i, true, f[0].id), t(u.tF.VERIFY_PIN)) : (n(f), t(u.tF.SELECT_SCHOOL))
+        g = c.guilds_info;
+      c.has_matching_guild ? (h(e), t(u.tF.VERIFY_PIN)) : 0 === g.length ? t(u.tF.SUBMIT_SCHOOL) : 1 === g.length ? (h(g[0].id), await o.Z.sendVerificationEmail(i, true, g[0].id), t(u.tF.VERIFY_PIN)) : (n(g), t(u.tF.SELECT_SCHOOL))
     } catch (e) {
       E(new c.Hx(e))
     } finally {
       S(false)
     }
-  }, I = f.intl.string(f.t.H1jCHH), O = f.intl.string(f.t.YfeHRA);
-  if (x) I = f.intl.string(f.t.LVyxNH), O = f.intl.string(f.t.ECd7Rt);
+  }, I = g.intl.string(g.t.H1jCHB), O = g.intl.string(g.t.YfeHRE);
+  if (x) I = g.intl.string(g.t.LVyxND), O = g.intl.string(g.t.ECd7Rk);
   else if ((null == _ ? true : _.guild) != null && _.guild.id !== u.fQ && (null == _ ? true : _.approximate_member_count) != null) {
     let {
       name: e
     } = _.guild;
-    I = f.intl.formatToPlainString(f.t["4T4+p1"], {
+    I = g.intl.formatToPlainString(g.t["4T4+p6"], {
       guildName: e,
       count: _.approximate_member_count
     })
   }
   return (0, r.jsxs)("div", {
-    className: g.container,
+    className: f.container,
     children: [(0, r.jsx)("div", {
-      className: g.topImage
+      className: f.topImage
     }), (0, r.jsx)(s.Heading, {
-      className: a()(g.centerText, g.header),
+      className: a()(f.centerText, f.header),
       variant: "heading-xl/semibold",
       children: I
     }), (0, r.jsx)("div", {
-      className: g.descriptionWidth,
+      className: f.descriptionWidth,
       children: (0, r.jsx)(s.Text, {
-        className: g.centerText,
+        className: f.centerText,
         variant: "text-sm/normal",
         color: "header-secondary",
         children: O
       })
     }), (0, r.jsxs)("form", {
-      className: g.formContent,
+      className: f.formContent,
       onSubmit: j,
       children: [(0, r.jsx)(s.oil, {
-        label: f.intl.string(f.t.kmCxkf),
-        placeholder: f.intl.string(f.t.ImAOh5),
+        label: g.intl.string(g.t.kmCxkZ),
+        placeholder: g.intl.string(g.t.ImAOh4),
         onChange: e => {
           p(e)
         },
         error: null == N ? true : N.getAnyErrorMessage()
       }), (0, r.jsx)(s.Text, {
         color: "header-secondary",
-        className: g.formDescription,
+        className: f.formDescription,
         variant: "text-sm/normal",
-        children: f.intl.string(f.t.Cv7mmI)
+        children: g.intl.string(g.t.Cv7mmJ)
       }), (0, r.jsx)(s.Button, {
         type: "submit",
         variant: "primary",
         loading: y,
-        text: f.intl.string(f.t["8vmKO0"]),
+        text: g.intl.string(g.t["8vmKOz"]),
         fullWidth: true
       }), (0, r.jsx)(s.Text, {
-        className: g.termsPhrase,
+        className: f.termsPhrase,
         color: "header-secondary",
         variant: "text-xs/normal",
-        children: f.intl.format(f.t.RPT0vj, {
+        children: g.intl.format(g.t.RPT0vr, {
           termsURL: m.EYA.TERMS,
           privacyURL: m.EYA.PRIVACY
         })
       }), x && (0, r.jsx)("div", {
-        className: g.cancelButton,
+        className: f.cancelButton,
         children: (0, r.jsx)(s.Avr, {
           onClick: v,
-          text: f.intl.string(f.t.hO6qJ3)
+          text: g.intl.string(g.t.hO6qJy)
         })
       })]
     })]

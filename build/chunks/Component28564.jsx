@@ -17,21 +17,21 @@ function e(t) {
   } = t;
   return (0, a.jsx)(r.Modal, {
     transitionState: e,
-    "aria-label": l.intl.string(l.t["u/2TkU"]),
+    "aria-label": l.intl.string(l.t["u/2TkZ"]),
     onClose: i,
-    title: l.intl.string(l.t["u/2TkU"]),
+    title: l.intl.string(l.t["u/2TkZ"]),
     actions: [{
-      text: l.intl.string(l.t["ETE/oC"]),
+      text: l.intl.string(l.t["ETE/oK"]),
       variant: "secondary",
       onClick: i
     }, {
-      text: l.intl.string(l.t.dO8DLI),
+      text: l.intl.string(l.t.dO8DLC),
       variant: "critical-primary",
       onClick: n
     }],
     children: (0, a.jsx)(s.Text, {
       variant: "text-md/normal",
-      children: l.intl.string(l.t["9sgGbL"])
+      children: l.intl.string(l.t["9sgGbG"])
     })
   })
 }

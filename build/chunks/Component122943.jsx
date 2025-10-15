@@ -102,7 +102,7 @@ function T(e) {
       channel: t,
       className: o()(b.icon, f)
     }))
-  }), L = () => N ? A : C ? E.intl.string(E.t["9FaEzi"]) : t.isGuildStageVoice() ? E.intl.string(E.t.QygGCN) : E.intl.string(E.t.msxteM);
+  }), L = () => N ? A : C ? E.intl.string(E.t["9FaEzs"]) : t.isGuildStageVoice() ? E.intl.string(E.t.QygGCA) : E.intl.string(E.t.msxteH);
   return (0, r.jsxs)(r.Fragment, {
     children: [D(), !m && (0, r.jsxs)(h.Z, {
       variant: n,
@@ -128,7 +128,7 @@ function S(e) {
     enableTopNavButton: O
   } = (0, d.Cq)({
     location: "VoiceActivityStatusWithCombinedTooltip"
-  }), v = O && null != g ? g : y ? E.intl.string(E.t["9FaEzi"]) : t.isGuildStageVoice() ? E.intl.string(E.t.QygGCN) : E.intl.string(E.t.msxteM), I = null == g || O ? v : "".concat(v, " (").concat(g, ")"), T = p ? I : v;
+  }), v = O && null != g ? g : y ? E.intl.string(E.t["9FaEzs"]) : t.isGuildStageVoice() ? E.intl.string(E.t.QygGCA) : E.intl.string(E.t.msxteH), I = null == g || O ? v : "".concat(v, " (").concat(g, ")"), T = p ? I : v;
   return (0, r.jsx)(m.Z, {
     icon: (0, r.jsx)(_.Z, {
       size: "custom",

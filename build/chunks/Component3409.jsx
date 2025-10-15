@@ -387,7 +387,7 @@ function eP(e) {
   }, [eH, O]);
 
   function e1(e) {
-    (0, c.showToast)((0, c.createToast)(true !== ei ? ei : Q.intl.string(Q.t["VJPg+l"]), c.ToastType.SUCCESS, {
+    (0, c.showToast)((0, c.createToast)(true !== ei ? ei : Q.intl.string(Q.t["VJPg+v"]), c.ToastType.SUCCESS, {
       position: c.ToastPosition.BOTTOM
     })), y(eH, e), e0(m, false)
   }
@@ -512,8 +512,8 @@ function eP(e) {
           } catch (e) {}
         };
       if (eH === N.h8.ATTEMPT_GOOGLE_PAY || eH === N.h8.ATTEMPT_APPLE_PAY) {
-        let e = Q.intl.string(eH === N.h8.ATTEMPT_APPLE_PAY ? Q.t.czhXDv : Q.t.Zj2xQ0),
-          t = Q.intl.string(eH === N.h8.ATTEMPT_APPLE_PAY ? Q.t.WoXvJL : Q.t.wnVVr0);
+        let e = Q.intl.string(eH === N.h8.ATTEMPT_APPLE_PAY ? Q.t.czhXDg : Q.t.Zj2xQ0),
+          t = Q.intl.string(eH === N.h8.ATTEMPT_APPLE_PAY ? Q.t.WoXvJC : Q.t.wnVVr6);
         n = (0, r.jsx)(L.t, {
           onChooseType: tP,
           paymentRequestWallet: eH === N.h8.ATTEMPT_APPLE_PAY ? "applePay" : "googlePay",
@@ -571,7 +571,7 @@ function eP(e) {
         onBack: tA,
         primaryCTA: P.Z.CTAType.CONTINUE,
         primaryType: "submit",
-        primaryText: Q.intl.string(Q.t.PDTjLN),
+        primaryText: Q.intl.string(Q.t.PDTjLC),
         primarySubmitting: e6,
         primaryDisabled: !tI,
         onPrimary: tx
@@ -618,7 +618,7 @@ function eP(e) {
             onBack: tk,
             primaryCTA: P.Z.CTAType.CONTINUE,
             primaryType: "submit",
-            primaryText: Q.intl.string(Q.t.PDTjLN),
+            primaryText: Q.intl.string(Q.t.PDTjLC),
             primarySubmitting: e6,
             primaryDisabled: tj,
             onPrimary: () => tM(t)
@@ -662,7 +662,7 @@ function eP(e) {
       }), o = (0, r.jsx)(eR, {
         onBack: () => e0(N.h8.PAYMENT_TYPE),
         primaryCTA: P.Z.CTAType.CONTINUE,
-        primaryText: Q.intl.string(Q.t.PDTjLN),
+        primaryText: Q.intl.string(Q.t.PDTjLC),
         primaryDisabled: true === tl || "" === tl || "" === e7.info.name,
         onPrimary: () => e0(N.h8.ADDRESS)
       });
@@ -680,7 +680,7 @@ function eP(e) {
       }), o = (0, r.jsx)(eR, {
         onBack: () => e0(N.h8.PAYMENT_TYPE),
         primaryCTA: P.Z.CTAType.CONTINUE,
-        primaryText: Q.intl.string(Q.t.PDTjLN),
+        primaryText: Q.intl.string(Q.t.PDTjLC),
         primaryDisabled: "" === e7.info.name,
         onPrimary: () => e0(N.h8.ADDRESS)
       });
@@ -708,7 +708,7 @@ function eP(e) {
       }), o = (0, r.jsx)(eR, {
         onBack: () => e0(N.h8.PAYMENT_TYPE),
         primaryCTA: P.Z.CTAType.CONTINUE,
-        primaryText: Q.intl.string(Q.t.PDTjLN),
+        primaryText: Q.intl.string(Q.t.PDTjLC),
         primaryDisabled: true === e7.info.name || "" === e7.info.name || true === e7.info.email || "" === e7.info.email || true === tu || "" === tu,
         onPrimary: () => e0(N.h8.ADDRESS)
       });
@@ -720,7 +720,7 @@ function eP(e) {
       o = (0, r.jsx)(eR, {
         onBack: tG,
         primaryCTA: P.Z.CTAType.CONTINUE,
-        primaryText: tU ? Q.intl.string(Q.t.PDTjLN) : Q.intl.string(Q.t.Djzd7L),
+        primaryText: tU ? Q.intl.string(Q.t.PDTjLC) : Q.intl.string(Q.t.Djzd7O),
         onPrimary: () => tU ? e0(N.h8.ADDRESS) : (0, f.i0)()
       });
       break;
@@ -729,7 +729,7 @@ function eP(e) {
       n = (0, r.jsx)(eI, {}), o = (0, r.jsx)(eR, {
         onBack: () => e0(N.h8.PAYMENT_TYPE),
         primaryCTA: P.Z.CTAType.CONTINUE,
-        primaryText: tB ? Q.intl.string(Q.t.PDTjLN) : Q.intl.string(Q.t["4KoTLM"]),
+        primaryText: tB ? Q.intl.string(Q.t.PDTjLC) : Q.intl.string(Q.t["4KoTLC"]),
         onPrimary: () => tB ? e0(N.h8.ADDRESS) : (0, f.og)()
       });
       break;
@@ -744,7 +744,7 @@ function eP(e) {
       n = (0, r.jsx)(eT, {}), o = (0, r.jsx)(eR, {
         onBack: () => e0(N.h8.PAYMENT_TYPE),
         primaryCTA: P.Z.CTAType.CONTINUE,
-        primaryText: tZ ? Q.intl.string(Q.t.PDTjLN) : Q.intl.string(Q.t["9ALP8w"]),
+        primaryText: tZ ? Q.intl.string(Q.t.PDTjLC) : Q.intl.string(Q.t["9ALP8/"]),
         onPrimary: () => tZ ? e0(N.h8.ADDRESS) : (0, K.cp)(),
         primaryDisabled: !tF
       });
@@ -882,7 +882,7 @@ function eP(e) {
       }), o = (0, r.jsx)(eR, {
         onBack: () => e0(p),
         primaryCTA: P.Z.CTAType.CONTINUE,
-        primaryText: Q.intl.string(Q.t.PDTjLN),
+        primaryText: Q.intl.string(Q.t.PDTjLC),
         primarySubmitting: e6,
         primaryDisabled: !e7.isValid || ts,
         onPrimary: tV

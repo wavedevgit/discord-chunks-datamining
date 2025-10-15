@@ -1,7 +1,7 @@
 /** Chunk was on 6368 **/
 /** chunk id: 987999, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => O
+  default: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -17,33 +17,33 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function O(t) {
+function g(t) {
   let {
     guild: e,
     onSelect: n
-  } = t, O = e.id, g = (0, c.Z)({
+  } = t, g = e.id, O = (0, c.Z)({
     id: e.id,
-    label: f.intl.string(f.t["94lLD7"])
-  }), j = (0, i.e7)([u.Z], () => u.Z.getRequest(O)), y = () => {
-    a.Z.removeGuildJoinRequest(O), d.Z.getGuildId() === O && (0, p.uL)(b.Z5c.ME)
+    label: f.intl.string(f.t["94lLDw"])
+  }), j = (0, i.e7)([u.Z], () => u.Z.getRequest(g)), y = () => {
+    a.Z.removeGuildJoinRequest(g), d.Z.getGuildId() === g && (0, p.uL)(b.Z5c.ME)
   };
   return (0, r.jsxs)(o.v2r, {
     navId: "join-request-guild-context",
     onClose: l.Zy,
-    "aria-label": f.intl.string(f.t.HpQykc),
+    "aria-label": f.intl.string(f.t.HpQykZ),
     onSelect: n,
     children: [(null == j ? true : j.applicationStatus) === s.wB.REJECTED && (0, r.jsx)(o.sNh, {
       id: "reapply",
-      label: f.intl.string(f.t.rpFCLs),
+      label: f.intl.string(f.t.rpFCLi),
       action: () => {
-        a.Z.resetGuildJoinRequest(O).then(() => {
-          (0, p.uL)(b.Z5c.GUILD_MEMBER_VERIFICATION(O))
+        a.Z.resetGuildJoinRequest(g).then(() => {
+          (0, p.uL)(b.Z5c.GUILD_MEMBER_VERIFICATION(g))
         })
       },
       color: "default"
     }), (0, r.jsx)(o.sNh, {
       id: "withdraw",
-      label: (null == j ? true : j.applicationStatus) === s.wB.STARTED ? f.intl.string(f.t.OQFlFD) : f.intl.string(f.t.mqtdmQ),
+      label: (null == j ? true : j.applicationStatus) === s.wB.STARTED ? f.intl.string(f.t.OQFlFB) : f.intl.string(f.t.mqtdmZ),
       action: () => {
         (0, o.h7j)(t => {
           var n, i;
@@ -65,14 +65,14 @@ function O(t) {
             }
             return t
           }({
-            header: f.intl.string(f.t.y0CVes),
-            confirmText: f.intl.string(f.t.p89ACt),
-            cancelText: f.intl.string(f.t.oEAioF),
+            header: f.intl.string(f.t.y0CVen),
+            confirmText: f.intl.string(f.t.p89ACg),
+            cancelText: f.intl.string(f.t.oEAioK),
             onConfirm: y
           }, t), i = i = {
             children: (0, r.jsx)(o.Text, {
               variant: "text-md/normal",
-              children: (null == j ? true : j.applicationStatus) === s.wB.STARTED ? f.intl.string(f.t.fJwWVt) : f.intl.format(f.t["9ZezpN"], {
+              children: (null == j ? true : j.applicationStatus) === s.wB.STARTED ? f.intl.string(f.t.fJwWVl) : f.intl.format(f.t["9ZezpK"], {
                 name: e.name
               })
             })
@@ -90,7 +90,7 @@ function O(t) {
       },
       color: "danger"
     }), (0, r.jsx)(o.kSQ, {
-      children: g
+      children: O
     })]
   })
 }

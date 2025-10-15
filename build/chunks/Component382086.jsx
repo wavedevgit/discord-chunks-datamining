@@ -1,7 +1,7 @@
 /** Chunk was on 42483 **/
 /** chunk id: 382086, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  Z: () => g,
+  Z: () => _,
   v: () => u
 });
 var Chunk951288 = require("./951288.js");
@@ -22,13 +22,13 @@ function u(t) {
     onClose: n,
     onBack: e,
     onCreationIntentChosen: u,
-    hasFooter: g = true
-  } = t, _ = (0, i.jsx)(l.zx, {
-    className: m.backButton,
+    hasFooter: _ = true
+  } = t, g = (0, i.jsx)(l.zx, {
+    className: C.backButton,
     look: l.zx.Looks.BLANK,
     size: l.zx.Sizes.MIN,
     onClick: e,
-    children: C.intl.string(C.t["13/7kX"])
+    children: m.intl.string(m.t["13/7kZ"])
   });
 
   function L(t) {
@@ -41,61 +41,61 @@ function u(t) {
     content: (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsxs)(a.xBx, {
         direction: s.Z.Direction.VERTICAL,
-        className: m.header,
+        className: C.header,
         separator: false,
         children: [(0, i.jsx)(a.Heading, {
-          className: m.title,
+          className: C.title,
           variant: "heading-xl/semibold",
-          children: C.intl.string(C.t.f3MvGS)
+          children: m.intl.string(m.t.f3MvGR)
         }), (0, i.jsx)(a.Text, {
-          className: m.subtitle,
+          className: C.subtitle,
           color: "header-secondary",
           variant: "text-md/normal",
-          children: C.intl.string(C.t.nOzc7w)
+          children: m.intl.string(m.t["nOzc7+"])
         }), null != n && (0, i.jsx)(a.olH, {
-          className: m.closeButton,
+          className: C.closeButton,
           onClick: n
         })]
       }), (0, i.jsxs)(a.hzk, {
-        className: m.optionsList,
+        className: C.optionsList,
         children: [p ? (0, i.jsxs)(i.Fragment, {
           children: [(0, i.jsx)(d.Z, {
             icon: a.Nye,
-            message: C.intl.string(C.t.uE7zcu),
+            message: m.intl.string(m.t.uE7zcn),
             onClick: () => L(c.lr.FRIENDS)
           }), (0, i.jsx)(d.Z, {
             icon: a.q3d,
-            message: C.intl.string(C.t.h9Q1lG),
+            message: m.intl.string(m.t.h9Q1lJ),
             onClick: () => L(c.lr.COMMUNITY)
           })]
         }) : (0, i.jsxs)(i.Fragment, {
           children: [(0, i.jsx)(d.Z, {
             icon: a.q3d,
-            message: C.intl.string(C.t.h9Q1lG),
+            message: m.intl.string(m.t.h9Q1lJ),
             onClick: () => L(c.lr.COMMUNITY)
           }), (0, i.jsx)(d.Z, {
             icon: a.Nye,
-            message: C.intl.string(C.t.uE7zcu),
+            message: m.intl.string(m.t.uE7zcn),
             onClick: () => L(c.lr.FRIENDS)
           })]
         }), (0, i.jsx)(a.Text, {
-          className: m.skip,
+          className: C.skip,
           color: "header-secondary",
           variant: "text-sm/normal",
-          children: C.intl.format(C.t["SMc+Gz"], {
+          children: m.intl.format(m.t["SMc+Gx"], {
             onSkip: () => L(null)
           })
         })]
-      }), g && (0, i.jsx)(a.mzw, {
+      }), _ && (0, i.jsx)(a.mzw, {
         justify: s.Z.Justify.BETWEEN,
-        children: _
+        children: g
       })]
     }),
-    footer: _
+    footer: g
   }
 }
 
-function g(t) {
+function _(t) {
   let {
     content: n
   } = u(t);

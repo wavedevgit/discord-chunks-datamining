@@ -33,7 +33,7 @@ function m(e) {
 
 function g(e) {
   return {
-    text: null != e ? e : p.intl.string(p.t.VCsUJu),
+    text: null != e ? e : p.intl.string(p.t.VCsUJi),
     color: "text-danger",
     icon: (0, r.jsx)(c.Mgn, {
       size: "xs",
@@ -46,13 +46,13 @@ function g(e) {
 function E(e, t) {
   switch ((0, f.t$)(t, e)) {
     case f.rQ.SENDING:
-      return m(p.intl.string(p.t.RiLfBY));
+      return m(p.intl.string(p.t.RiLfBQ));
     case f.rQ.CREATED:
-      return m(p.intl.formatToPlainString(p.t["7ePV4t"], {
+      return m(p.intl.formatToPlainString(p.t["7ePV4u"], {
         applicationName: t.author.username
       }));
     case f.rQ.TIMED_OUT:
-      return g(p.intl.string(p.t.h8hzPd));
+      return g(p.intl.string(p.t.h8hzPT));
     case f.rQ.FAILED:
       return g(t.interactionError)
   }

@@ -196,7 +196,7 @@ function Z(e) {
         className: L.roleScroller,
         children: [(0, r.jsx)(g.Z, {
           className: L.roleHeader,
-          "aria-label": D.intl.formatToPlainString(D.t.Uaqbke, {
+          "aria-label": D.intl.formatToPlainString(D.t.UaqbkZ, {
             title: m.name,
             count: y.length
           }),
@@ -206,7 +206,7 @@ function Z(e) {
           })
         }), y, null == E || E <= y.length ? null : (0, r.jsx)(g.Z, {
           className: L.roleHeader,
-          children: D.intl.formatToPlainString(D.t["9oMmZC"], {
+          children: D.intl.formatToPlainString(D.t["9oMmZG"], {
             count: E - y.length
           })
         })]

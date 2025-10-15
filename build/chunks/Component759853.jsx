@@ -31,14 +31,14 @@ let _ = ["#51BC9D"],
     } = e, {
       completionSpring: y,
       startCompletionAnimation: E
-    } = (0, g.G)(), O = (null == (t = b.userStatus) ? true : t.completedAt) != null, S = s.useRef(false), T = (0, d.e7)([p.Z], () => p.Z.useReducedMotion), w = s.useRef(null), P = (0, d.e7)([m.Z], () => m.Z.hasLayers()), N = (0, u.Z)(P), [A, R] = s.useState(null), [B, k] = s.useState(null), I = s.useRef(new i.qA({
+    } = (0, g.G)(), O = (null == (t = b.userStatus) ? true : t.completedAt) != null, S = s.useRef(false), T = (0, d.e7)([p.Z], () => p.Z.useReducedMotion), w = s.useRef(null), P = (0, d.e7)([m.Z], () => m.Z.hasLayers()), N = (0, u.Z)(P), [R, A] = s.useState(null), [B, k] = s.useState(null), I = s.useRef(new i.qA({
       gravity: 0,
       wind: 0
-    })), D = (0, i.uR)(A, B), q = s.useCallback(() => {
+    })), q = (0, i.uR)(R, B), D = s.useCallback(() => {
       if (T) return;
       let e = j.current,
         t = w.current;
-      if (null != t && null != e && D.isReady) {
+      if (null != t && null != e && q.isReady) {
         var n, r, s, a, o, i;
         let {
           x: l,
@@ -47,7 +47,7 @@ let _ = ["#51BC9D"],
           x: d,
           y: u
         } = t.getBoundingClientRect();
-        D.createMultipleConfetti((n = l - d, r = c - u, s = e.clientHeight, a = e.clientWidth, o = function(e) {
+        q.createMultipleConfetti((n = l - d, r = c - u, s = e.clientHeight, a = e.clientWidth, o = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -112,18 +112,18 @@ let _ = ["#51BC9D"],
           Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(i, e))
         }), o), 100)
       }
-    }, [j, w, D, T]), L = (0, u.Z)(v);
+    }, [j, w, q, T]), L = (0, u.Z)(v);
     return (s.useEffect(() => {
-      O && v && !L && (E(), q())
-    }, [v, O, E, q, L]), s.useEffect(() => {
+      O && v && !L && (E(), D())
+    }, [v, O, E, D, L]), s.useEffect(() => {
       O && !P && N && setTimeout(() => {
-        E(), q()
+        E(), D()
       }, 200)
-    }, [O, N, P, E, q]), s.useEffect(() => {
-      D.isReady && (!S.current && O && (E(), q()), S.current = O)
-    }, [O, S, q, E, D]), s.useEffect(() => {
-      C && O && (E(), q())
-    }, [C, O, E, q]), T) ? null : (0, r.jsxs)("div", {
+    }, [O, N, P, E, D]), s.useEffect(() => {
+      q.isReady && (!S.current && O && (E(), D()), S.current = O)
+    }, [O, S, D, E, q]), s.useEffect(() => {
+      C && O && (E(), D())
+    }, [C, O, E, D]), T) ? null : (0, r.jsxs)("div", {
       className: h.wrapper,
       "aria-hidden": "true",
       ref: w,
@@ -146,7 +146,7 @@ let _ = ["#51BC9D"],
           }).to(e => "translateY(".concat(e, "px)"))
         },
         children: [(0, r.jsx)(i.O_, {
-          ref: R,
+          ref: A,
           className: h.confetti,
           environment: I.current
         }), (0, r.jsx)(i.Ji, {

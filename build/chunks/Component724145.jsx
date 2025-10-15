@@ -50,7 +50,7 @@ let B = () => (0, Chunk951288.jsx)("div", {
       }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-md/bold",
         color: "always-white",
-        children: Chunk388032.intl.string(Chunk388032.t.POSLGY)
+        children: Chunk388032.intl.string(Chunk388032.t.POSLGR)
       })]
     })
   }),
@@ -72,7 +72,7 @@ let B = () => (0, Chunk951288.jsx)("div", {
         })
       }), (0, r.jsx)(f.Heading, {
         variant: "heading-lg/extrabold",
-        children: U.intl.string(U.t["xSR+a/"])
+        children: U.intl.string(U.t["xSR+a2"])
       })]
     })
   },
@@ -90,7 +90,7 @@ let B = () => (0, Chunk951288.jsx)("div", {
     }), E = (0, N.Rt)({
       intervalType: null == p || null == (t = p.subscription_trial) ? true : t.interval,
       intervalCount: null == p || null == (n = p.subscription_trial) ? true : n.interval_count
-    }), b = f ? U.intl.string(U.t.IJI7yk) : (null == p || null == (i = p.subscription_trial) ? true : i.sku_id) === k.Si.TIER_2 ? E : U.intl.string(U.t.mr4K7D), I = e => {
+    }), b = f ? U.intl.string(U.t.IJI7ys) : (null == p || null == (i = p.subscription_trial) ? true : i.sku_id) === k.Si.TIER_2 ? E : U.intl.string(U.t.mr4K7O), I = e => {
       e && (null == a || a(), null != o && o(j.L.PRIMARY), null != u && ((0, x.Yk)({
         isPersisted: true,
         themeName: c.Us[u.id],
@@ -135,11 +135,11 @@ let B = () => (0, Chunk951288.jsx)("div", {
         section: M.oAB.APPEARANCE
       })
     }, p = (0, b.B)({
-      no: U.t["3D5yo/"],
-      "sv-SE": U.t["3D5yo/"],
-      uk: U.t["3D5yo/"],
-      de: U.t["3D5yo/"]
-    }, U.t["dqH+qr"]), h = (0, s.EQ)({
+      no: U.t["3D5yo6"],
+      "sv-SE": U.t["3D5yo6"],
+      uk: U.t["3D5yo6"],
+      de: U.t["3D5yo6"]
+    }, U.t["dqH+qq"]), h = (0, s.EQ)({
       isPreview: a,
       isCoachmark: n,
       forceShowCloseButton: c
@@ -147,9 +147,9 @@ let B = () => (0, Chunk951288.jsx)("div", {
       isCoachmark: true
     }, {
       forceShowCloseButton: true
-    }, () => U.intl.string(U.t.cpT0Cq)).with({
+    }, () => U.intl.string(U.t.cpT0Cg)).with({
       isPreview: true
-    }, () => p).otherwise(() => U.intl.string(U.t.Olc2K3)), m = o ? G.editorFooterV2 : G.editorFooter;
+    }, () => p).otherwise(() => U.intl.string(U.t.Olc2Ky)), m = o ? G.editorFooterV2 : G.editorFooter;
     return (0, r.jsxs)("div", {
       className: m,
       children: [a && (0, r.jsx)(F, {

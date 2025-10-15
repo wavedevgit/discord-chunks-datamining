@@ -12,5 +12,5 @@ function o(e, t, n) {
   var o, c;
   if (t.type === l.fO.ACTIVITY) return null != (c = null == n ? true : n.name) ? c : null;
   let s = r.ZP.isGuestOrLurker(e.guild_id, null == (o = t.user) ? true : o.id);
-  return i.ZP.getName(e.getGuildId(), e.id, t.user) + (s ? " ".concat(a.intl.string(a.t["pFO/Ph"])) : "")
+  return i.ZP.getName(e.getGuildId(), e.id, t.user) + (s ? " ".concat(a.intl.string(a.t["pFO/Pj"])) : "")
 }

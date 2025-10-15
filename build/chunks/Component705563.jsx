@@ -48,12 +48,12 @@ function y(e) {
   return null != v && v.applicationStatus === f.wB.SUBMITTED && x ? (0, i.jsxs)("div", {
     className: C.buttons,
     children: [(0, i.jsx)(l.u, {
-      text: b.intl.string(b.t.cdPGbE),
+      text: b.intl.string(b.t.cdPGbG),
       shouldShow: S,
       children: (0, i.jsx)(a.Button, {
         variant: "active",
         size: "sm",
-        text: b.intl.string(b.t.BzjDQJ),
+        text: b.intl.string(b.t.BzjDQE),
         loading: Z,
         onClick: P,
         disabled: S
@@ -61,7 +61,7 @@ function y(e) {
     }), (0, i.jsx)(a.Button, {
       variant: "critical-primary",
       size: "sm",
-      text: b.intl.string(b.t.hDtbsz),
+      text: b.intl.string(b.t.hDtbs7),
       onClick: I,
       disabled: Z || v.applicationStatus !== f.wB.SUBMITTED
     }), n && (0, i.jsx)(a.Button, {
@@ -73,7 +73,7 @@ function y(e) {
       },
       variant: "secondary",
       size: "sm",
-      text: b.intl.string(b.t.iXAna6)
+      text: b.intl.string(b.t.iXAna2)
     }), y && (0, i.jsx)(o.ZP.Divider, {})]
   }) : null
 }

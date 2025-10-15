@@ -24,7 +24,7 @@ class o extends Chunk81825.Z {
     })
   }
   getName(e) {
-    return null != this.name ? this.name : this.id === e ? i.intl.string(i.t.AHqj6c) : i.intl.string(i.t["62f4nE"])
+    return null != this.name ? this.name : this.id === e ? i.intl.string(i.t.AHqj6e) : i.intl.string(i.t["62f4nJ"])
   }
   constructor(e) {
     super(), a(this, "id", true), a(this, "liveBuildId", true), a(this, "name", true), this.id = e.id, this.liveBuildId = e.liveBuildId, this.name = e.name

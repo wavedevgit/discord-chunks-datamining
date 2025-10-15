@@ -15,40 +15,40 @@ function r(t) {
     onConfirm: e,
     onClose: r,
     onDismiss: o
-  } = t, [d, u] = s.useState(false), [b, h] = s.useState(true), [C, k] = s.useState(true);
+  } = t, [d, u] = s.useState(false), [h, b] = s.useState(true), [k, p] = s.useState(true);
   return (0, i.jsx)(a.Modal, {
     transitionState: n,
     onClose: r,
-    title: c.intl.string(c.t["6rP+Bd"]),
-    subtitle: c.intl.string(c.t["1LuCnS"]),
+    title: c.intl.string(c.t["6rP+BQ"]),
+    subtitle: c.intl.string(c.t["1LuCnZ"]),
     actions: [{
       variant: "secondary",
-      text: c.intl.string(c.t["ETE/oC"]),
+      text: c.intl.string(c.t["ETE/oK"]),
       onClick: () => {
         o(), r()
       },
       disabled: d
     }, {
-      text: c.intl.string(c.t["cY+Oob"]),
+      text: c.intl.string(c.t["cY+Ooa"]),
       onClick: () => {
-        d || (u(true), e(b, C), u(false), r())
+        d || (u(true), e(h, k), u(false), r())
       },
       disabled: d,
       loading: d
     }],
     actionBarInput: (0, i.jsx)(l.Checkbox, {
-      checked: C,
+      checked: k,
       onChange: t => {
-        k(t)
+        p(t)
       },
-      label: c.intl.string(c.t.KX8WJm),
+      label: c.intl.string(c.t.KX8WJi),
       labelType: "secondary"
     }),
     children: (0, i.jsx)(l.rsf, {
-      label: c.intl.string(c.t["zLb+ux"]),
-      checked: b,
+      label: c.intl.string(c.t["zLb+u7"]),
+      checked: h,
       onChange: t => {
-        h(t)
+        b(t)
       }
     })
   })

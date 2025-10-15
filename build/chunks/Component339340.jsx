@@ -90,13 +90,13 @@ function T(e) {
       shouldClear: false,
       shouldRefocus: true
     })), V = (0, r.jsx)(a.gNt, {
-      label: b.intl.string(b.t.Fq5lwN),
+      label: b.intl.string(b.t.Fq5lwM),
       errorMessage: D,
       children: (0, r.jsx)(_.ZP, {
         innerClassName: y.textArea,
         textValue: N,
         richValue: G,
-        placeholder: b.intl.formatToPlainString(b.t.DUXxBh, {
+        placeholder: b.intl.formatToPlainString(b.t.DUXxBg, {
           channelName: t.name
         }),
         focused: true,
@@ -120,17 +120,17 @@ function T(e) {
       type: "image",
       src: O
     },
-    title: b.intl.string(b.t["5CyJBd"]),
-    subtitle: b.intl.string(b.t.NRBYju),
+    title: b.intl.string(b.t["5CyJBQ"]),
+    subtitle: b.intl.string(b.t.NRBYjo),
     actions: [{
       variant: "secondary",
-      text: b.intl.string(b.t["ETE/oC"]),
+      text: b.intl.string(b.t["ETE/oK"]),
       onClick: S
     }, {
       variant: "primary",
       loading: P,
       disabled: M,
-      text: b.intl.string(b.t.XqK2I2),
+      text: b.intl.string(b.t.XqK2Iy),
       onClick: U
     }],
     children: V

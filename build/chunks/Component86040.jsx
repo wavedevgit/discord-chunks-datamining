@@ -31,12 +31,12 @@ let c = e => {
             children: s.intl.string(s.t.BxPxhI)
           }), (0, r.jsx)("br", {}), (0, r.jsx)(a.Text, {
             variant: "text-md/normal",
-            children: s.intl.string(s.t.Y3fdOp)
+            children: s.intl.string(s.t.Y3fdOj)
           }), (0, r.jsx)("br", {}), (0, r.jsxs)(a.Text, {
             variant: "text-md/normal",
-            children: [s.intl.string(s.t.Paa4v4), "\xa0", n ? s.intl.string(s.t.StGVvC) : (0, r.jsx)(a.Anchor, {
+            children: [s.intl.string(s.t.Paa4v7), "\xa0", n ? s.intl.string(s.t.StGVvL) : (0, r.jsx)(a.Anchor, {
               onClick: i,
-              children: s.intl.string(s.t.Ex7sk9)
+              children: s.intl.string(s.t.Ex7sk5)
             })]
           })]
         })]
@@ -52,7 +52,7 @@ let c = e => {
         "data-testid": "continue",
         variant: "primary",
         disabled: true,
-        text: Chunk388032.intl.string(Chunk388032.t.g8vPzy)
+        text: Chunk388032.intl.string(Chunk388032.t.g8vPz8)
       })
     })
   })

@@ -31,7 +31,7 @@ function _(e) {
   if (null == c) return null;
   let y = (0, l.EY)(c.thumbnail),
     O = !b && c.has_media_attachment,
-    v = b ? d.intl.string(d.t.UsZEBI) : d.intl.string(d.t.ReFzYZ),
+    v = b ? d.intl.string(d.t.UsZEBA) : d.intl.string(d.t.ReFzYW),
     I = null != g ? s.ZP.getName(c.guild_id, c.channel_id, g) : true,
     T = null == g ? true : g.getAvatarURL(null == _ ? true : _.id, f);
   (null == T || E !== c.guild_id) && (T = o.ZP.getGuildIconURL({
@@ -47,7 +47,7 @@ function _(e) {
     subtitle: c.description,
     ctaText: v,
     coverImage: y,
-    coverImageOverlayText: O ? d.intl.string(d.t.Yonlia) : true,
+    coverImageOverlayText: O ? d.intl.string(d.t.YonliY) : true,
     parentChannelId: c.parent_channel_id,
     threadId: c.channel_id,
     postThread: m,

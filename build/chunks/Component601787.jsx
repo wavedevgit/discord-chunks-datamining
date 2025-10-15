@@ -28,7 +28,7 @@ function i(e) {
       }
       return o
     }(e, ["ruleName", "keyword"]);
-  let u = null != i ? i : c.intl.string(c.t.ffR2cM);
+  let u = null != i ? i : c.intl.string(c.t.ffR2cH);
   return (0, n.jsx)(o.ConfirmModal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
@@ -47,12 +47,12 @@ function i(e) {
     }
     return e
   }({}, a), r = r = {
-    header: c.intl.string(c.t["zib/xJ"]),
-    cancelText: c.intl.string(c.t["ETE/oC"]),
-    confirmText: c.intl.string(c.t["cY+Oob"]),
+    header: c.intl.string(c.t["zib/xM"]),
+    cancelText: c.intl.string(c.t["ETE/oK"]),
+    confirmText: c.intl.string(c.t["cY+Ooa"]),
     children: (0, n.jsx)(o.Text, {
       variant: "text-md/normal",
-      children: c.intl.format(c.t.AxSYKB, {
+      children: c.intl.format(c.t.AxSYKC, {
         ruleName: u,
         keyword: l
       })

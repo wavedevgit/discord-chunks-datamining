@@ -151,7 +151,7 @@ function w(e) {
     animation: o.yRy.Animation.FADE,
     children: e => (0, r.jsx)(E.Z, T(A(T({}, e), {
       buttonRef: v,
-      label: O.intl.string(O.t.tmiYpF),
+      label: O.intl.string(O.t.tmiYpK),
       iconComponent: x,
       onClick: t => {
         (null != S || null != u) && (0, l.v)(null != S ? S : u, l.d.STREAM_SETTINGS), null == e || e.onClick(t)

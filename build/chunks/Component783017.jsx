@@ -28,17 +28,17 @@ let g = e => {
     buttonLoading: g,
     hideClose: N,
     onClose: f
-  } = e, x = (0, a.e7)([c.Z], () => c.Z.useReducedMotion), E = (0, a.e7)([L.default], () => {
-    let e = L.default.getCurrentUser();
+  } = e, x = (0, a.e7)([c.Z], () => c.Z.useReducedMotion), _ = (0, a.e7)([u.default], () => {
+    let e = u.default.getCurrentUser();
     return i()(null != e, "UserSettingsProfileCustomization: user cannot be undefined"), e
-  }), _ = (0, o.rO)() ? Z.Z : p.Z, I = (e => {
+  }), E = (0, o.rO)() ? p.Z : Z.Z, I = (e => {
     switch (e) {
       case H.Yk.PREMIUM_UPDATED:
-        return M.intl.string(M.t["75Wt0E"]);
+        return M.intl.string(M.t["75Wt0N"]);
       case H.Yk.PREMIUM_ACTIVATED:
-        return M.intl.string(M.t.QWljxE);
+        return M.intl.string(M.t.QWljxM);
       default:
-        return M.intl.string(M.t.X79Az5)
+        return M.intl.string(M.t.X79Az8)
     }
   })(t);
   return (0, s.jsxs)("div", {
@@ -54,20 +54,20 @@ let g = e => {
         src: m.Z,
         alt: "",
         className: h.nameplateGlow
-      }) : (0, s.jsx)(u.Z, {
+      }) : (0, s.jsx)(L.Z, {
         playsInline: true,
         muted: true,
         autoPlay: true,
         loop: true,
         className: h.nameplateGlow,
         children: (0, s.jsx)("source", {
-          src: _
+          src: E
         })
       }), (0, s.jsx)(d.Z, {
-        user: E,
+        user: _,
         isHighlighted: true,
         nameplate: null,
-        nameplateData: E.nameplate,
+        nameplateData: _.nameplate,
         className: h.nameplatePreview,
         nameplatePreviewSize: "large"
       })]

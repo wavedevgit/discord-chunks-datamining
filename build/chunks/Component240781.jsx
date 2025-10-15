@@ -50,18 +50,18 @@ let f = [{
       }), null != l && (0, n.jsx)(c.Text, {
         variant: "text-xxs/normal",
         color: "text-muted",
-        children: y.intl.format(y.t.Io7ozn, {
+        children: y.intl.format(y.t.Io7ozs, {
           days: l.days.toString()
         })
       }), (0, n.jsxs)(c.Text, {
         variant: "text-xxs/normal",
         color: "text-muted",
-        children: [i ? y.intl.format(y.t["req+eY"], {
+        children: [i ? y.intl.format(y.t["req+eX"], {
           dateAcquired: a
-        }) : y.intl.format(y.t.gW9R4B, {
+        }) : y.intl.format(y.t.gW9R4O, {
           date: a
         }), null != t.expiresAt && (0, n.jsxs)(n.Fragment, {
-          children: [(0, n.jsx)("br", {}), y.intl.format(y.t.eZSTa5, {
+          children: [(0, n.jsx)("br", {}), y.intl.format(y.t.eZSTa2, {
             date: t.expiresAt.toLocaleDateString(r, {
               minute: "numeric",
               hour: "numeric",
@@ -74,7 +74,7 @@ let f = [{
       }), i && (0, n.jsx)(c.Text, {
         variant: "text-xxs/normal",
         color: "text-muted",
-        children: y.intl.string(y.t.nKdAlO)
+        children: y.intl.string(y.t.nKdAlJ)
       })]
     })
   },
@@ -87,7 +87,7 @@ let f = [{
     } = e, g = (0, o.e7)([x.Z], () => x.Z.getStatus(t.id)), {
       product: P,
       purchase: b
-    } = (0, d.Z)(null == l ? true : l.skuId), E = v.ZP.canUseCollectibles(t), I = (0, u.qS)(b), C = (0, u.G1)(P), A = !E && I, w = (0, p.M)(!C || E), T = (0, m.kd)(P), N = i.useMemo(() => A ? y.intl.string(y.t["7vkeu5"]) : (0, a.EQ)([C, E, w]).with([true, true, false], () => y.intl.string(y.t.hmyYK8)).with([true, false, true], () => y.intl.string(y.t.q0PlFn)).with([true, false, false], () => y.intl.string(y.t["0xs2sA"])).otherwise(() => y.intl.string(y.t.fEGjVQ)), [A, C, E, w]);
+    } = (0, d.Z)(null == l ? true : l.skuId), E = v.ZP.canUseCollectibles(t), I = (0, u.qS)(b), C = (0, u.G1)(P), A = !E && I, w = (0, p.M)(!C || E), T = (0, m.kd)(P), N = i.useMemo(() => A ? y.intl.string(y.t["7vkeu7"]) : (0, a.EQ)([C, E, w]).with([true, true, false], () => y.intl.string(y.t.hmyYKy)).with([true, false, true], () => y.intl.string(y.t.q0PlFh)).with([true, false, false], () => y.intl.string(y.t["0xs2sL"])).otherwise(() => y.intl.string(y.t.fEGjVV)), [A, C, E, w]);
     return null != P && (null == b || A) ? (0, n.jsxs)("div", {
       className: s()(O.modalPreview, O.shopPreviewContainer, h),
       children: [(0, n.jsx)("div", {

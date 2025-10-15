@@ -23,25 +23,25 @@ let o = e => {
   };
   return (0, n.jsxs)(s.v2r, {
     navId: "welcome-settings-context",
-    "aria-label": c.intl.string(c.t.ogxXGq),
+    "aria-label": c.intl.string(c.t.ogxXGh),
     onClose: a.Zy,
     onSelect: b,
     children: [(0, n.jsxs)(s.kSQ, {
       children: [(0, n.jsx)(s.sNh, {
         id: "move-up",
-        label: c.intl.string(c.t["4UBqwA"]),
+        label: c.intl.string(c.t["4UBqwM"]),
         disabled: u <= 0,
         action: () => x(u - 1)
       }), (0, n.jsx)(s.sNh, {
         id: "move-down",
-        label: c.intl.string(c.t.b73Gwa),
+        label: c.intl.string(c.t.b73Gwc),
         disabled: u >= p,
         action: () => x(u + 1)
       })]
     }), (0, n.jsx)(s.kSQ, {
       children: (0, n.jsx)(s.sNh, {
         id: "delete",
-        label: c.intl.string(c.t.JYBc3K),
+        label: c.intl.string(c.t.JYBc3N),
         action: h,
         color: "danger"
       })

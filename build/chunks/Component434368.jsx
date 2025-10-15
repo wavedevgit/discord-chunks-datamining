@@ -73,7 +73,7 @@ function g(e) {
   return (0, r.jsx)(s.v2r, {
     navId: "member-safety-flags",
     onClose: n,
-    "aria-label": b.intl.string(b.t.k9m8Rg),
+    "aria-label": b.intl.string(b.t.k9m8Rk),
     onSelect: m.dG4,
     children: (0, r.jsxs)(s.kSQ, {
       children: [(0, r.jsx)(s.S89, {
@@ -86,7 +86,7 @@ function g(e) {
             width: 16,
             height: 16,
             className: p.unusualDMLabelIcon
-          }), b.intl.string(b.t.ZRnON3)]
+          }), b.intl.string(b.t.ZRnONz)]
         }),
         action: j,
         checked: i.requireUnusualDmActivity
@@ -100,7 +100,7 @@ function g(e) {
             width: 16,
             height: 16,
             className: p.timeoutLabelIcon
-          }), b.intl.string(b.t.z3wbj8)]
+          }), b.intl.string(b.t.z3wbj4)]
         }),
         action: x,
         checked: i.requireCommunicationDisabled
@@ -113,7 +113,7 @@ function g(e) {
               width: 16,
               height: 16,
               className: p.unusualAccountActivityLabelIcon
-            }), b.intl.string(b.t.DIQsD9)]
+            }), b.intl.string(b.t.DIQsDw)]
           }),
           action: v,
           checked: i.requireUnusualAccountActivity
@@ -127,7 +127,7 @@ function g(e) {
               width: 16,
               height: 16,
               className: p.quarantinedLabelIcon
-            }), b.intl.string(b.t.Jloklk)]
+            }), b.intl.string(b.t.Jloklp)]
           }),
           action: y,
           checked: i.requireUsernameQuarantined

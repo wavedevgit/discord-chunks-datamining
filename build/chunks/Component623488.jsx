@@ -36,7 +36,7 @@ function _(e) {
         variant: "text-sm/normal",
         color: "always-white",
         className: f.__invalid_unlockText,
-        children: d.intl.string(d.t.YmIiSe)
+        children: d.intl.string(d.t.YmIiSU)
       })]
     }), n && (0, r.jsx)("div", {
       className: f.draftBadge,
@@ -53,7 +53,7 @@ function p(e) {
     children: [(0, r.jsx)(o.Text, {
       variant: n,
       color: null != t ? "text-link" : "interactive-hover",
-      children: d.intl.string(d.t["5fmYjW"])
+      children: d.intl.string(d.t["5fmYjY"])
     }), (0, r.jsx)(o.ZSh, {
       size: "xs",
       color: "currentColor",
@@ -141,7 +141,7 @@ function h(e) {
         variant: "text-md/medium",
         color: "interactive-active",
         className: f.__invalid_productPrice,
-        children: null != c ? c : d.intl.string(d.t["4uLhAp"])
+        children: null != c ? c : d.intl.string(d.t["4uLhAg"])
       }), (0, r.jsx)(o.Text, {
         variant: "text-xxs/normal",
         color: "text-default",
@@ -165,7 +165,7 @@ function h(e) {
     },
     children: (0, r.jsx)(o.kL8, {
       tag: "article",
-      "aria-label": d.intl.formatToPlainString(d.t["e+TmJa"], {
+      "aria-label": d.intl.formatToPlainString(d.t["e+TmJS"], {
         productName: n
       }),
       className: a()(f.productCard, v ? f.opaqueBackground : f.solidBackground, f.cardClickableContainer),

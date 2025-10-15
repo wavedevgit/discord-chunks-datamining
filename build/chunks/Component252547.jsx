@@ -26,12 +26,12 @@ function f(e) {
       className: u.sectionHeader,
       variant: "text-md/semibold",
       color: "header-primary",
-      children: d.intl.string(d.t.ak8OHk)
+      children: d.intl.string(d.t.ak8OHh)
     }), 0 === t.length ? (0, i.jsx)(s.xvT, {
       variant: "text-xs/semibold",
       color: "text-primary",
       className: m.emptyState,
-      children: d.intl.string(d.t.R5fYVO)
+      children: d.intl.string(d.t.R5fYVF)
     }) : (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)("div", {
         className: a()(m.friends, {
@@ -52,7 +52,7 @@ function f(e) {
         children: [(0, i.jsx)(s.xvT, {
           variant: "text-xs/semibold",
           color: "interactive-normal",
-          children: d.intl.string(d.t.yohc6E)
+          children: d.intl.string(d.t.yohc6O)
         }), (0, i.jsx)(o.CJ0, {
           size: "xs"
         })]

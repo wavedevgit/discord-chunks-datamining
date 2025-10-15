@@ -36,12 +36,12 @@ let x = Chunk647438.forwardRef(function(e, t) {
       }), (0, i.jsx)(c.Heading, {
         variant: "heading-xl/semibold",
         color: "header-primary",
-        children: d.intl.string(d.t.c0FhpS)
+        children: d.intl.string(d.t.c0Fhpa)
       }), (0, i.jsx)(c.Text, {
         className: m.__invalid_subtitle,
         variant: "text-md/normal",
         color: "header-secondary",
-        children: d.intl.string(d.t.dKPfBe)
+        children: d.intl.string(d.t.dKPfBQ)
       })]
     }), (0, i.jsxs)("div", {
       className: o.container,
@@ -58,7 +58,7 @@ let x = Chunk647438.forwardRef(function(e, t) {
           children: (0, i.jsx)(c.Text, {
             variant: "text-sm/medium",
             color: "before" === r ? "header-primary" : "text-muted",
-            children: d.intl.string(d.t.sLv7LF)
+            children: d.intl.string(d.t.sLv7LC)
           })
         }), (0, i.jsx)(c.P3F, {
           className: o.tab,
@@ -66,7 +66,7 @@ let x = Chunk647438.forwardRef(function(e, t) {
           children: (0, i.jsx)(c.Text, {
             variant: "text-sm/medium",
             color: "after" === r ? "header-primary" : "text-muted",
-            children: d.intl.string(d.t.R8eSY9)
+            children: d.intl.string(d.t.R8eSY2)
           })
         })]
       }), (0, i.jsxs)("div", {
@@ -102,41 +102,41 @@ let x = Chunk647438.forwardRef(function(e, t) {
           className: o.channels,
           children: [(0, i.jsx)(u, {
             mention: true,
-            name: d.intl.string(d.t.WFejRi)
+            name: d.intl.string(d.t.WFejRk)
           }), (0, i.jsx)(u, {
-            name: d.intl.string(d.t.jqWm9Z)
-          }), (0, i.jsx)(u, {
-            grey: "after" === r,
-            name: d.intl.string(d.t.p9z9Iw)
+            name: d.intl.string(d.t.jqWm9f)
           }), (0, i.jsx)(u, {
             grey: "after" === r,
-            name: d.intl.string(d.t["2bdWD/"])
-          }), (0, i.jsx)(u, {
-            name: d.intl.string(d.t["Ci+Ouh"])
+            name: d.intl.string(d.t.p9z9Iy)
           }), (0, i.jsx)(u, {
             grey: "after" === r,
-            name: d.intl.string(d.t["/7TEdh"])
+            name: d.intl.string(d.t["2bdWDw"])
+          }), (0, i.jsx)(u, {
+            name: d.intl.string(d.t["Ci+Our"])
           }), (0, i.jsx)(u, {
             grey: "after" === r,
-            name: d.intl.string(d.t["Ime/t8"])
+            name: d.intl.string(d.t["/7TEdn"])
+          }), (0, i.jsx)(u, {
+            grey: "after" === r,
+            name: d.intl.string(d.t["Ime/t7"])
           })]
         })]
       }), (0, i.jsx)(h, {
         hidden: x || "after" === r,
         className: o.tipBefore1,
-        text: d.intl.string(d.t.WrPMOJ)
+        text: d.intl.string(d.t.WrPMOD)
       }), (0, i.jsx)(h, {
         hidden: x || "after" === r,
         className: o.tipBefore2,
-        text: d.intl.string(d.t.pApL75)
+        text: d.intl.string(d.t["pApL7+"])
       }), (0, i.jsx)(h, {
         hidden: x || "before" === r,
         className: o.tipAfter1,
-        text: d.intl.string(d.t.eZb3iS)
+        text: d.intl.string(d.t.eZb3iY)
       }), (0, i.jsx)(h, {
         hidden: x || "before" === r,
         className: o.tipAfter2,
-        text: d.intl.string(d.t.M3KrJV)
+        text: d.intl.string(d.t.M3KrJS)
       })]
     })]
   })

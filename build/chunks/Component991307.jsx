@@ -45,10 +45,10 @@ function p(e) {
       label: m.intl.string(m.t["4MMsWF"]),
       action: () => {
         if (x) return void a.Z.show({
-          title: m.intl.string(m.t.m2Hyj0),
-          body: m.intl.string(m.t.EhaK6B),
-          confirmText: m.intl.string(m.t.ND1my3),
-          cancelText: m.intl.string(m.t.jEqEhy),
+          title: m.intl.string(m.t.m2Hyj4),
+          body: m.intl.string(m.t.EhaK6O),
+          confirmText: m.intl.string(m.t.ND1my8),
+          cancelText: m.intl.string(m.t.jEqEh4),
           onConfirm: () => o.Z.setDisableLocalVideo(e, b.ZUi.MANUAL_ENABLED)
         });
         let n = j ? b.ZUi.MANUAL_ENABLED : b.ZUi.DISABLED;
@@ -62,12 +62,12 @@ function p(e) {
           color: "currentColor",
           width: 12,
           className: v.warningCircle
-        }), m.intl.string(m.t.m2Hyj0)]
+        }), m.intl.string(m.t.m2Hyj4)]
       }) : null
     }, "disable-video") : null,
     y = n ? null : (0, l.jsx)(r.S89, {
       id: "soundboard-sound-mute",
-      label: m.intl.string(m.t.LxhEuG),
+      label: m.intl.string(m.t.LxhEuL),
       action: () => {
         let n = d.Z.getRTCConnection();
         f.default.track(b.rMx.AUDIO_LOCAL_SOUNDBOARD_MUTE_TOGGLED, {
@@ -82,7 +82,7 @@ function p(e) {
     }, "soundboard-sound-mute");
   return n ? [(0, l.jsx)(r.S89, {
     id: "mute",
-    label: m.intl.string(m.t.sWmtI6),
+    label: m.intl.string(m.t.sWmtIy),
     action: () => o.Z.toggleSelfMute({
       context: t,
       location: "User Context Menu"
@@ -90,7 +90,7 @@ function p(e) {
     checked: O
   }, "self-mute"), (0, l.jsx)(r.S89, {
     id: "deafen",
-    label: m.intl.string(m.t.wjcRFX),
+    label: m.intl.string(m.t.wjcRFR),
     action: () => o.Z.toggleSelfDeaf({
       context: t,
       location: "User Context Menu"
@@ -98,7 +98,7 @@ function p(e) {
     checked: h
   }, "self-deafen"), _] : [(0, l.jsx)(r.S89, {
     id: "mute",
-    label: m.intl.string(m.t.sWmtI6),
+    label: m.intl.string(m.t.sWmtIy),
     action: () => o.Z.toggleLocalMute(e, t),
     checked: O
   }, "self-mute"), y, _]

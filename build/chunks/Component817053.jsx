@@ -38,7 +38,7 @@ function p(e) {
   let {
     imageSrc: t,
     gameName: n
-  } = e, [l, a] = i.useState(false), s = null != n ? n : d.intl.string(d.t.GIWFlF);
+  } = e, [l, a] = i.useState(false), s = null != n ? n : d.intl.string(d.t.GIWFlJ);
   return l || null == t ? (0, r.jsx)("div", {
     role: "img",
     "aria-label": s,
@@ -72,7 +72,7 @@ function m(e) {
     source: c.m1.UserProfile,
     sourceUserId: l,
     trackEntryPointImpression: true
-  }), v = null != n ? n : d.intl.string(d.t.GIWFlF), y = d.intl.formatToPlainString(d.t["8QLQB+"], {
+  }), v = null != n ? n : d.intl.string(d.t.GIWFlJ), y = d.intl.formatToPlainString(d.t["8QLQBw"], {
     gameName: v
   }), j = e => m ? e : (0, r.jsx)(s.u, {
     text: v,

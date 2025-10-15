@@ -93,12 +93,12 @@ class w extends Chunk647438.Component {
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/medium",
         color: "header-primary",
-        children: Chunk388032.intl.string(Chunk388032.t["76OoX8"])
+        children: Chunk388032.intl.string(Chunk388032.t["76OoX1"])
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
         className: Chunk744834.tierDefaultUnlockedDescription,
-        children: Chunk388032.intl.string(Chunk388032.t.DaYNQQ)
+        children: Chunk388032.intl.string(Chunk388032.t.DaYNQU)
       })]
     })
   }

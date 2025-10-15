@@ -19,13 +19,13 @@ function s(e) {
     className: o.text,
     children: [null != t && (0, r.jsx)(i.Z, {
       href: t,
-      children: a.intl.string(a.t["8S0kcM"])
+      children: a.intl.string(a.t["8S0kcH"])
     }), null != t && null != n && (0, r.jsx)("span", {
       "aria-disabled": "true",
       children: "•"
     }), null != n && (0, r.jsx)(i.Z, {
       href: n,
-      children: a.intl.string(a.t.ZpyeCm)
+      children: a.intl.string(a.t.ZpyeCg)
     })]
   })
 }

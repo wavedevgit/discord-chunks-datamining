@@ -48,10 +48,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk375790 = require("./375790.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk833540 = require("./833540.js"),
+  Chunk764295 = require("./764295.js"),
   Chunk520310 = require("./520310.js");
 
-function J(e) {
+function Y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -116,7 +116,7 @@ let ee = e => {
     } : true
   }), [t, eu, e_, es, ej, eO]), eS = i.useMemo(() => (0, _.VP)(eu, e_, es, eO, ej), [eu, e_, es, eO, ej]), eT = function(e, t) {
     let n = !(arguments.length > 2) || true === arguments[2] || arguments[2],
-      r = J({}, eO);
+      r = Y({}, eO);
     r[e] = {
       value: t,
       isValid: n
@@ -141,7 +141,7 @@ let ee = e => {
           })(Object(t)).forEach(function(n) {
             Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
           }), e
-        })(J({}, e), {
+        })(Y({}, e), {
           [t]: n
         }))
     }
@@ -155,12 +155,12 @@ let ee = e => {
     eD = (0, c.zu)(),
     eR = ew && eD.length > 0 && ek && null != X(t, "share_with_parents");
   return (0, r.jsxs)("div", {
-    className: K.container,
+    className: J.container,
     children: [(0, r.jsxs)(a.xBx, {
       "data-migration-pending": true,
       separator: false,
       direction: o.Z.Direction.VERTICAL,
-      className: K.header,
+      className: J.header,
       children: [(0, r.jsx)(U.Z, {
         element: X(t, "success")
       }), (0, r.jsx)(T.Z, {
@@ -171,7 +171,7 @@ let ee = e => {
       })]
     }), (0, r.jsxs)(a.hzk, {
       "data-migration-pending": true,
-      className: K.body,
+      className: J.body,
       children: [null != ec && (0, r.jsx)(H.Z, {
         element: ec
       }), null != em && (0, r.jsx)(G.Z, {
@@ -180,7 +180,7 @@ let ee = e => {
         message: n.record
       }), null != X(t, "user_preview") && "user" === n.name ? (0, r.jsx)(W.Z, {
         user: n.record
-      }) : null, null != X(t, "widget_preview") && "widget" === n.name ? (0, r.jsx)(F.Z, {
+      }) : null, null != X(t, "widget_preview") && "widget" === n.name ? (0, r.jsx)(z.Z, {
         widget: n.widget,
         userId: n.user_id
       }) : null, null != X(t, "guild_preview") && "guild" === n.name ? (0, r.jsx)(Z.Z, {
@@ -196,7 +196,7 @@ let ee = e => {
           let {
             type: t
           } = e;
-          return z.O.includes(t)
+          return F.O.includes(t)
         })
       }(t) && (0, r.jsxs)(R.Z, {
         children: [eE && (0, r.jsx)(P.Z, {
@@ -247,7 +247,7 @@ let ee = e => {
       }), null != es && (0, r.jsx)(k.Z, {
         element: es,
         onChange: (e, t) => {
-          let n = J({}, ej);
+          let n = Y({}, ej);
           e in ej ? delete n[e] : n[e] = t, ey(n)
         },
         state: ej
@@ -260,7 +260,7 @@ let ee = e => {
         onChange: eT,
         state: eO
       }), (0, r.jsxs)("div", {
-        className: K.listContainer,
+        className: J.listContainer,
         children: [(0, r.jsx)(h.Z, {
           node: t,
           onSelectChild: eP,
@@ -295,7 +295,7 @@ let ee = e => {
               ev(""), eP(n)
             }).catch(e => {
               var t;
-              (null == (t = e.body) ? true : t.code) === V.evJ.INVALID_FORM_BODY ? ev(Q.intl.string(Q.t.VjAAuP)) : ep ? ev(Q.intl.string(Y.default.psKFdJ)) : ev(Q.intl.string(Q.t.h6D8Vy))
+              (null == (t = e.body) ? true : t.code) === V.evJ.INVALID_FORM_BODY ? ev(Q.intl.string(Q.t.VjAAuL)) : ep ? ev(Q.intl.string(K.default.psKFdH)) : ev(Q.intl.string(Q.t.h6D8V1))
             }).finally(() => {
               ef(false)
             })
@@ -305,7 +305,7 @@ let ee = e => {
       canNavigateBack: et.length > 0
     }), (0, r.jsx)(a.olH, {
       "data-migration-pending": true,
-      className: K.closeButton,
+      className: J.closeButton,
       onClick: er
     })]
   })

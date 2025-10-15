@@ -58,7 +58,7 @@ function x(e) {
     senderId: O,
     warningType: h.pj.LIKELY_ATO,
     header: v.intl.string(v.t.R8UsiI),
-    description: v.intl.string(v.t.lI8nQl),
+    description: v.intl.string(v.t.lI8nQk),
     onDismiss: E,
     buttons: [{
       text: v.intl.string(v.t.tC1pvL),
@@ -79,7 +79,7 @@ function x(e) {
               channelId: t,
               warningId: x,
               senderId: O,
-              description: v.intl.string(v.t["/uid3p"]),
+              description: v.intl.string(v.t["/uid3t"]),
               safetyTipRows: j.map((e, t) => (0, i.jsx)(u.q, {
                 listType: "numbered",
                 index: t,
@@ -87,9 +87,9 @@ function x(e) {
                 description: e.description
               }, t)),
               actionRows: [(0, i.jsx)(d.JZ, {
-                title: v.intl.string(v.t.ftIK2A),
+                title: v.intl.string(v.t.ftIK2N),
                 description: v.intl.string(v.t.w2ve0t),
-                buttonText: v.intl.string(v.t.ftIK2A),
+                buttonText: v.intl.string(v.t.ftIK2N),
                 onButtonPress: () => {
                   P(f.NM.USER_MODAL_MUTE), l()
                 }
@@ -105,7 +105,7 @@ function x(e) {
                 children: (0, i.jsx)(a.Heading, {
                   variant: "heading-sm/medium",
                   color: "text-link",
-                  children: v.intl.format(v.t.UkH122, {
+                  children: v.intl.format(v.t.UkH129, {
                     learnMoreLink: C.D8
                   })
                 })
@@ -121,7 +121,7 @@ function x(e) {
         })
       }
     }, {
-      text: v.intl.string(v.t.ftIK2A),
+      text: v.intl.string(v.t.ftIK2N),
       onClick: () => P(f.NM.USER_BANNER_MUTE)
     }]
   }) : null

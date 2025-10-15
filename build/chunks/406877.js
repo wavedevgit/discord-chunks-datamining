@@ -30,8 +30,8 @@ function c(e, t) {
         } catch (t) {
           let e = t instanceof a.Hx ? t.getAnyErrorMessage() : true;
           i.Z.show({
-            title: l.intl.string(l.t.R0RpRX),
-            body: null != e ? e : l.intl.string(l.t.eAn6z2)
+            title: l.intl.string(l.t.R0RpRU),
+            body: null != e ? e : l.intl.string(l.t.eAn6z8)
           })
         } finally {
           c(false)

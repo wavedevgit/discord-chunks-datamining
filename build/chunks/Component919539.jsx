@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk736530 = require("./736530.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk660886 = require("./660886.js");
+  Chunk345909 = require("./345909.js");
 
 function C(e) {
   let {
@@ -64,10 +64,10 @@ function C(e) {
         h.mX.updateSetting(e), x(e, false)
       };
     (0, b.V)({
-      header: S.intl.string(S.t.yAfu1p),
-      body: S.intl.string(S.t.Ry2z74),
-      confirmText: S.intl.string(S.t.gm1Vej),
-      cancelText: S.intl.string(S.t.p89ACt),
+      header: S.intl.string(S.t.yAfu1t),
+      body: S.intl.string(S.t["Ry2z7+"]),
+      confirmText: S.intl.string(S.t.gm1Ven),
+      cancelText: S.intl.string(S.t.p89ACg),
       confirmButtonColor: a.zx.Colors.BRAND,
       onConfirm: n,
       onCancel: t
@@ -77,22 +77,22 @@ function C(e) {
     setting: v.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_MESSAGE_REQUESTS_V2,
     scrollPosition: O.FY.MESSAGE_REQUESTS_V2,
     children: n === I.T ? (0, r.jsx)(E.ZP, {
-      title: S.intl.string(S.t["3o2ojh"]),
+      title: S.intl.string(S.t["3o2ojo"]),
       value: !N && !w,
       onChange: e => M(e, false),
       disabled: N || P,
-      tooltipText: P ? S.intl.string(A.default["6Af/cw"]) : true,
-      note: S.intl.format(S.t.wkm9a3, {
+      tooltipText: P ? S.intl.string(A.default["6Af/c3"]) : true,
+      note: S.intl.format(S.t.wkm9a2, {
         helpdeskArticle: d.Z.getArticleURL(T.BhN.MESSAGE_REQUESTS)
       })
     }) : (0, r.jsx)(E.ZP, {
-      title: S.intl.string(S.t["3o2ojh"]),
+      title: S.intl.string(S.t["3o2ojo"]),
       value: !D,
       onChange: e => M(e, true),
       disabled: R,
-      note: C ? S.intl.format(S.t.WpnWLc, {
+      note: C ? S.intl.format(S.t.WpnWLS, {
         helpdeskArticle: d.Z.getArticleURL(T.BhN.MESSAGE_REQUESTS)
-      }) : S.intl.format(S.t.wkm9a3, {
+      }) : S.intl.format(S.t.wkm9a2, {
         helpdeskArticle: d.Z.getArticleURL(T.BhN.MESSAGE_REQUESTS)
       })
     })

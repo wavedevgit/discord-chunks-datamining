@@ -11,8 +11,8 @@ function s(e) {
   let {
     children: a
   } = e;
-  return (0, n.jsx)("div", {
-    className: r.slideContainer,
+  return (0, r.jsx)("div", {
+    className: n.slideContainer,
     children: a
   })
 }

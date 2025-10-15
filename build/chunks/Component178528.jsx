@@ -180,7 +180,7 @@ class M extends Chunk647438.PureComponent {
           children: e => (0, i.jsx)(P.ZP.Icon, L({
             ref: this.settingsIconRef,
             icon: l.ewm,
-            label: k.intl.string(k.t["3D5yo/"])
+            label: k.intl.string(k.t["3D5yo6"])
           }, e))
         })
       }) : null,
@@ -204,7 +204,7 @@ class M extends Chunk647438.PureComponent {
         })
       }), null != Chunk442837 && (0, Chunk951288.jsx)("section", {
         className: Chunk613322.panels,
-        "aria-label": Chunk388032.intl.string(Chunk388032.t.StREWK),
+        "aria-label": Chunk388032.intl.string(Chunk388032.t.StREWF),
         children: (0, Chunk951288.jsx)(Chunk840780.Z, {
           guildId: Chunk442837.id
         })

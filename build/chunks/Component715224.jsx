@@ -45,42 +45,42 @@ function p(e) {
   }, [n.systemChannelFlags]), x = i.useCallback(e => b(u.xmn.SUPPRESS_JOIN_NOTIFICATIONS, !e), [b]), j = i.useCallback(e => b(u.xmn.SUPPRESS_PREMIUM_SUBSCRIPTIONS, !e), [b]), v = i.useCallback(e => b(u.xmn.SUPPRESS_UGC_ADDED_NOTIFICATIONS, !e), [b]), _ = i.useCallback(e => b(u.xmn.SUPPRESS_GUILD_REMINDER_NOTIFICATIONS, !e), [b]), C = i.useCallback(e => b(u.xmn.SUPPRESS_JOIN_NOTIFICATION_REPLIES, !e), [b]), O = i.useCallback(e => b(u.xmn.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATIONS, !e), [b]), y = i.useCallback(e => b(u.xmn.SUPPRESS_CHANNEL_PROMPT_DEADCHAT, !e), [b]), N = i.useCallback(e => b(u.xmn.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATION_REPLIES, !e), [b]), E = null != (t = n.systemChannelId) ? t : m, I = (0, o.eI)(n), S = I || (0, c.yE)(n.systemChannelFlags, u.xmn.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATIONS), T = I || (0, c.yE)(n.systemChannelFlags, u.xmn.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATION_REPLIES);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.rsf, {
-      label: g.intl.string(g.t["+f0bXQ"]),
+      label: g.intl.string(g.t["+f0bXV"]),
       checked: !(0, c.yE)(n.systemChannelFlags, u.xmn.SUPPRESS_JOIN_NOTIFICATIONS),
       onChange: x,
       disabled: !p || E === m
     }), (0, r.jsx)(l.rsf, {
-      label: g.intl.string(g.t["72k7jf"]),
+      label: g.intl.string(g.t["72k7jY"]),
       checked: !(0, c.yE)(n.systemChannelFlags, u.xmn.SUPPRESS_JOIN_NOTIFICATION_REPLIES),
       onChange: C,
       disabled: !p || E === m
     }), (0, r.jsx)(l.rsf, {
-      label: g.intl.string(g.t["2L8NCN"]),
+      label: g.intl.string(g.t["2L8NCA"]),
       checked: !(0, c.yE)(n.systemChannelFlags, u.xmn.SUPPRESS_PREMIUM_SUBSCRIPTIONS),
       onChange: j,
       disabled: !p || E === m
     }), (0, r.jsx)(l.rsf, {
-      label: g.intl.string(g.t["NvnW+V"]),
+      label: g.intl.string(g.t["NvnW+f"]),
       checked: !(0, c.yE)(n.systemChannelFlags, u.xmn.SUPPRESS_GUILD_REMINDER_NOTIFICATIONS),
       onChange: _,
       disabled: !p || E === m
     }), h && (0, r.jsx)(l.rsf, {
-      label: g.intl.string(g.t["CLCoc+"]),
+      label: g.intl.string(g.t.CLCoc3),
       checked: !(0, c.yE)(n.systemChannelFlags, u.xmn.SUPPRESS_UGC_ADDED_NOTIFICATIONS),
       onChange: v,
       disabled: !p || E === m
     }), S && (0, r.jsx)(l.rsf, {
-      label: g.intl.string(g.t["54n19R"]),
+      label: g.intl.string(g.t["54n19f"]),
       checked: !(0, c.yE)(n.systemChannelFlags, u.xmn.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATIONS),
       onChange: O,
       disabled: !p || E === m
     }), T && (0, r.jsx)(l.rsf, {
-      label: g.intl.string(g.t["IhF5d+"]),
+      label: g.intl.string(g.t.IhF5d3),
       checked: !(0, c.yE)(n.systemChannelFlags, u.xmn.SUPPRESS_ROLE_SUBSCRIPTION_PURCHASE_NOTIFICATION_REPLIES),
       onChange: N,
       disabled: !p || E === m
     }), f && (0, r.jsx)(l.rsf, {
-      label: g.intl.string(g.t["3yOX1/"]),
+      label: g.intl.string(g.t["3yOX19"]),
       badge: "beta",
       checked: !(0, c.yE)(n.systemChannelFlags, u.xmn.SUPPRESS_CHANNEL_PROMPT_DEADCHAT),
       onChange: y,

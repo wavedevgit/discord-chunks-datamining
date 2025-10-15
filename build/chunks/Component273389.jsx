@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk600164 = require("./600164.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk833540 = require("./833540.js");
+  Chunk764295 = require("./764295.js");
 let c = e => {
   let t, {
       button: n,
@@ -29,8 +29,8 @@ let c = e => {
         null == (e = g.current) || e.focus()
       }
     }, [null == n ? true : n.type]), !b) return null;
-  let x = o.intl.string(o.t.i4jeWR);
-  return (null == n ? true : n.type) === "submit" ? (t = "critical-primary", x = p ? o.intl.string(s.default.ZUyreS) : o.intl.string(o.t["G+vU89"])) : (null == n ? true : n.type) === "next" ? x = o.intl.string(o.t.PDTjLN) : (null == n ? true : n.type) === "cancel" && (x = o.intl.string(o.t["ETE/oC"]), t = "secondary"), (0, r.jsx)(l.mzw, {
+  let x = o.intl.string(o.t.i4jeWV);
+  return (null == n ? true : n.type) === "submit" ? (t = "critical-primary", x = p ? o.intl.string(s.default.ZUyreX) : o.intl.string(o.t["G+vU8/"])) : (null == n ? true : n.type) === "next" ? x = o.intl.string(o.t.PDTjLC) : (null == n ? true : n.type) === "cancel" && (x = o.intl.string(o.t["ETE/oK"]), t = "secondary"), (0, r.jsx)(l.mzw, {
     "data-migration-pending": true,
     direction: a.Z.Direction.HORIZONTAL,
     children: (0, r.jsxs)(l.ButtonGroup, {
@@ -39,7 +39,7 @@ let c = e => {
         onClick: m,
         variant: "secondary",
         disabled: c,
-        text: o.intl.string(o.t["13/7kX"])
+        text: o.intl.string(o.t["13/7kZ"])
       }), f && (0, r.jsx)(l.Button, {
         onClick: () => {
           null != n && u(n)

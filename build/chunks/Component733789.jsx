@@ -41,11 +41,11 @@ function _(e) {
 }
 let O = {
   [Chunk981631.AzA.NOW_PLAYING]: {
-    single: (e, t) => g.intl.format(g.t.NEckza, {
+    single: (e, t) => g.intl.format(g.t.NEckzc, {
       user1: e.username,
       user1Hook: () => t(e)
     }),
-    double: (e, t, n) => g.intl.format(g.t["6uWulc"], {
+    double: (e, t, n) => g.intl.format(g.t["6uWulZ"], {
       user1: e.username,
       user1Hook: () => n(e),
       user2: t.username,
@@ -56,11 +56,11 @@ let O = {
     })
   },
   [Chunk981631.AzA.RECENTLY_PLAYED]: {
-    single: (e, t) => g.intl.format(g.t["nB/JNB"], {
+    single: (e, t) => g.intl.format(g.t["nB/JND"], {
       user1: e.username,
       user1Hook: () => t(e)
     }),
-    double: (e, t, n) => g.intl.format(g.t.AZCcHU, {
+    double: (e, t, n) => g.intl.format(g.t.AZCcHR, {
       user1: e.username,
       user1Hook: () => n(e),
       user2: t.username,
@@ -75,13 +75,13 @@ let O = {
       user1: e.username,
       user1Hook: () => t(e)
     }),
-    double: (e, t, n) => g.intl.format(g.t["0LiGbJ"], {
+    double: (e, t, n) => g.intl.format(g.t["0LiGbG"], {
       user1: e.username,
       user1Hook: () => n(e),
       user2: t.username,
       user2Hook: () => n(t)
     }),
-    other: e => g.intl.format(g.t.Yx1rjU, {
+    other: e => g.intl.format(g.t.Yx1rjY, {
       count: e
     })
   }

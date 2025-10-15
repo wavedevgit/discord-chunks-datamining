@@ -10,7 +10,7 @@ require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk518950 = require("./518950.js"),
   Chunk998502 = require("./998502.js"),
-  Chunk660886 = require("./660886.js"),
+  Chunk345909 = require("./345909.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk574999 = require("./574999.js");
 
@@ -70,7 +70,7 @@ let p = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk
         src: o,
         avatarDecoration: c,
         size: n,
-        "aria-label": l.intl.formatToPlainString(s.default.kFj4h1, {
+        "aria-label": l.intl.formatToPlainString(s.default.kFj4h4, {
           name: t.username
         })
       })

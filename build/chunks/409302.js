@@ -5,7 +5,7 @@ require.d(exports, {
   _: () => o
 });
 var Chunk479446 = require("./479446.js"),
-  Chunk47280 = require("./47280.js"),
+  Chunk283066 = require("./283066.js"),
   Chunk474936 = require("./474936.js");
 let o = (e, t) => {
   let o;
@@ -35,7 +35,7 @@ let o = (e, t) => {
       });
       break;
     case a.Cj.STANDARD_BOX:
-      if ((0, i.YI)({
+      if ((0, i.Y)({
           location: "GiftAnimationData"
         })) switch (t) {
         case r.SR.IDLE:

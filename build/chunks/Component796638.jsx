@@ -1,8 +1,8 @@
 /** Chunk was on 38319 **/
 /** chunk id: 796638, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZB: () => b,
-  ZP: () => E,
+  ZB: () => E,
+  ZP: () => b,
   cF: () => p
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
@@ -25,7 +25,7 @@ function g(e) {
   return e.type === d.fO.USER && e.user.id === n && (null == (t = e.voiceState) ? true : t.selfVideo)
 }
 
-function b(e, t) {
+function E(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {
       tileWidth: _,
       tileMinWidth: 124,
@@ -41,10 +41,10 @@ function b(e, t) {
       cropSelfVideo: f,
       version: p
     } = n,
-    [b, E] = i.useState(Date.now());
+    [E, b] = i.useState(Date.now());
   i.useEffect(() => {
     let e = setTimeout(() => {
-      E(Date.now())
+      b(Date.now())
     }, m);
     return () => {
       clearTimeout(e)
@@ -74,10 +74,10 @@ function b(e, t) {
           }
         })(e, n)),
         [p, _] = (0, l.partition)(i, d.Io),
-        b = p.findIndex(g),
-        E = null;
-      false !== b && (E = p[b], p.splice(b, 1));
-      let h = null == E || f ? e : e - r - c,
+        E = p.findIndex(g),
+        b = null;
+      false !== E && (b = p[E], p.splice(E, 1));
+      let h = null == b || f ? e : e - r - c,
         S = Math.max(0, Math.min(Math.floor((h - c) / (o + c)), u, t.length)),
         y = Math.min((h - c) / S - c, r),
         O = Math.max(0, S - _.length),
@@ -100,18 +100,18 @@ function b(e, t) {
       let j = w.filter(s.lm);
       v.current = (0, l.keyBy)((0, l.range)(j.length), e => j[e].id);
       let Z = [...I, ...j];
-      return null != E && (f && Z.length >= S ? Z[Math.max(0, Z.length - 1)] = E : Z.push(E)), {
+      return null != b && (f && Z.length >= S ? Z[Math.max(0, Z.length - 1)] = b : Z.push(b)), {
         visibleParticipants: Z,
         participantTileWidth: y
       }
-    }, [e, t, b, p, f, u, c, o, r]);
+    }, [e, t, E, p, f, u, c, o, r]);
   return {
     visibleParticipants: h,
     participantTileWidth: S
   }
 }
 
-function E(e) {
+function b(e) {
   let {
     participants: t,
     participantTileWidth: n,

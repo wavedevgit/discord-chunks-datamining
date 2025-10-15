@@ -152,21 +152,21 @@ function A(e) {
     location: "CollectiblesShopHeaderBar"
   }), A = [{
     tab: y.AW.HOME,
-    displayText: T.intl.string(T.t.ijDDwz)
+    displayText: T.intl.string(T.t.ijDDw8)
   }, {
     tab: y.AW.CATALOG,
-    displayText: T.intl.string(T.t.Ah5sJo)
+    displayText: T.intl.string(T.t.Ah5sJi)
   }];
   g && A.push({
     tab: y.AW.ORBS,
-    displayText: T.intl.string(T.t.EBYkzk)
+    displayText: T.intl.string(T.t.EBYkzs)
   });
-  let N = t === y.AW.ORBS ? j.ZY5.SHOP_ORBS_TAB : j.ZY5.COLLECTIBLES_SHOP,
+  let N = t === y.AW.ORBS ? k.ZY5.SHOP_ORBS_TAB : k.ZY5.COLLECTIBLES_SHOP,
     P = l.useCallback(() => {
       (0, _.Y)({
         pageType: N,
-        sectionType: j.jXE.ORBS_BALANCE_MENU,
-        ctaObject: j.qAy.CTA_TO_QUEST_HOME
+        sectionType: k.jXE.ORBS_BALANCE_MENU,
+        ctaObject: k.qAy.CTA_TO_QUEST_HOME
       }), (0, p.navigateToQuestHome)({
         fromContent: s.j.ORBS_BALANCE_MENU
       })
@@ -175,7 +175,7 @@ function A(e) {
     Z = l.useCallback(() => {
       (null == d ? true : d.id) != null && (0, h.openUserProfileModal)({
         userId: d.id,
-        section: k.oh.WISHLIST,
+        section: j.oh.WISHLIST,
         showGuildProfile: false
       })
     }, [null == d ? true : d.id]);
@@ -188,11 +188,11 @@ function A(e) {
       children: [(0, r.jsxs)(c.P3F, {
         className: L.shopHomeLink,
         onClick: () => n(y.AW.HOME),
-        "aria-label": T.intl.string(T.t.pWG4ze) + " home",
+        "aria-label": T.intl.string(T.t.pWG4zc) + " home",
         children: [(0, r.jsx)(v.Z, {
           className: L.discordLogo
         }), (0, r.jsx)(f.Z.Title, {
-          children: T.intl.string(T.t.pWG4ze)
+          children: T.intl.string(T.t.pWG4zc)
         })]
       }), (0, r.jsx)("div", {
         className: L.tabs,
@@ -221,7 +221,7 @@ function A(e) {
         }), x && (0, r.jsx)(c.P3F, {
           className: L.wishlistButton,
           onClick: Z,
-          "aria-label": T.intl.string(T.t["7lZ31J"]),
+          "aria-label": T.intl.string(T.t["7lZ31N"]),
           children: (0, r.jsx)(c.h_8, {
             size: "xs",
             color: "currentColor"
@@ -229,7 +229,7 @@ function A(e) {
         }), g && (0, r.jsx)(b.V9, {
           analyticsPage: N,
           cardAlignment: b.V9.CardAlignment.END,
-          ctaText: T.intl.string(T.t.VC4Mq0),
+          ctaText: T.intl.string(T.t.VC4Mq6),
           ctaOnClick: P,
           className: L.balanceWidgetMenu
         })]

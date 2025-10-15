@@ -89,7 +89,7 @@ function P(e) {
     },
     W = () => j ? null : (0, r.jsx)(o.sNh, {
       id: "view-profile",
-      label: A.intl.string(A.t["+Xp3hq"]),
+      label: A.intl.string(A.t["+Xp3ho"]),
       action: () => {
         Y(), (0, p.pQ)(R({
           action: "PRESS_VIEW_PROFILE",
@@ -114,7 +114,7 @@ function P(e) {
         children: [(0, r.jsx)(o.nn4, {
           children: (0, r.jsx)(o.H, {
             id: z,
-            children: A.intl.format(A.t.KRe1Fk, {
+            children: A.intl.format(A.t.KRe1Fh, {
               name: q
             })
           })

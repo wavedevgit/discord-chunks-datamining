@@ -10,7 +10,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk985002 = require("./985002.js"),
   Chunk957656 = require("./957656.jsx"),
-  Chunk660886 = require("./660886.js"),
+  Chunk345909 = require("./345909.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk544723 = require("./544723.js");
 let b = e => {
@@ -35,12 +35,12 @@ let b = e => {
     onClose: b,
     children: [p && (0, n.jsx)(l.M14, {
       type: "critical",
-      children: u.intl.string(d.default.tJAUyn)
+      children: u.intl.string(d.default.tJAUys)
     }), (0, n.jsxs)(l.fef, {
       children: [(0, n.jsx)(a.Z.Header, {
         currentUser: t,
         otherUser: r,
-        header: u.intl.string(d.default.teIRCR),
+        header: u.intl.string(d.default.teIRCQ),
         icon: (0, n.jsx)(l.Dio, {
           size: "md",
           color: "currentColor",
@@ -48,14 +48,14 @@ let b = e => {
         })
       }), (0, n.jsx)(a.Z.Content, {
         children: (0, n.jsx)(a.Z.Notice, {
-          notice: u.intl.string(d.default.LcM8BS)
+          notice: u.intl.string(d.default.LcM8BQ)
         })
       })]
     }), (0, n.jsx)(l.Go$, {
       actionsFullWidth: true,
       actions: [{
         variant: "secondary",
-        text: u.intl.string(u.t["ETE/oC"]),
+        text: u.intl.string(u.t["ETE/oK"]),
         onClick: b,
         disabled: O
       }, {

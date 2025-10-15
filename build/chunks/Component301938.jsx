@@ -26,7 +26,7 @@ function x(e) {
     setSlide: s,
     ready: x,
     token: E
-  } = e, [v, b] = i.useState(false), [j, I] = i.useState(null), [N, y] = i.useState(null), [O, S] = i.useState(""), C = i.useRef(null);
+  } = e, [v, b] = i.useState(false), [j, I] = i.useState(null), [N, O] = i.useState(null), [y, S] = i.useState(""), C = i.useRef(null);
   return i.useEffect(() => {
     if (x) {
       var e;
@@ -37,7 +37,7 @@ function x(e) {
       src: null == N ? n(26230) : n(935227),
       className: l()(_.marginBottom20, _.marginTop8)
     }), (0, r.jsx)(u.Dx, {
-      children: m.intl.string(m.t.IfBQ56)
+      children: m.intl.string(m.t["IfBQ5+"])
     }), null != N && "" !== N ? (0, r.jsx)(o.Text, {
       variant: "text-sm/normal",
       color: "text-danger",
@@ -47,28 +47,28 @@ function x(e) {
       children: [(0, r.jsx)(u.II, {
         name: "password",
         type: "password",
-        label: m.intl.string(m.t["8dM4FO"]),
+        label: m.intl.string(m.t["8dM4FB"]),
         setRef: C,
         className: _.marginBottom20,
-        value: O,
+        value: y,
         onChange: S,
         error: j,
         autoComplete: "new-password",
         maxLength: 72,
-        placeholder: m.intl.string(m.t["yY/PXY"])
+        placeholder: m.intl.string(m.t["yY/PXV"])
       }), (0, r.jsx)(u.zx, {
         className: _.marginTop8,
         onClick: () => {
           if (!v) {
-            if (0 === O.length) {
-              I(m.intl.string(m.t.R98xD5)), d.S.dispatch(p.CkL.WAVE_EMPHASIZE);
+            if (0 === y.length) {
+              I(m.intl.string(m.t.R98xDw)), d.S.dispatch(p.CkL.WAVE_EMPHASIZE);
               return
             }
-            return null != N && y(null), null != j && I(null), t(""), b(true), h.Z.post({
+            return null != N && O(null), null != j && I(null), t(""), b(true), h.Z.post({
               url: p.ANM.ACCOUNT_REVERT,
               body: {
                 token: E,
-                password: O
+                password: y
               },
               trackedActionData: {
                 event: a.NetworkActionNames.ACCOUNT_REVERT
@@ -82,21 +82,21 @@ function x(e) {
               } = e;
               S(""), t(n), s(g.n.SUCCESS)
             }).catch(e => {
-              if (e instanceof Error) y(m.intl.formatToPlainString(m.t.aTVNes, {
+              if (e instanceof Error) O(m.intl.formatToPlainString(m.t.aTVNen, {
                 statusPageURL: p.yXt.STATUS
               }));
               else {
                 let t = new c.Z(e);
-                t.hasFieldErrors() ? I(t.getAnyErrorMessage()) : y((function(e) {
+                t.hasFieldErrors() ? I(t.getAnyErrorMessage()) : O((function(e) {
                   switch (e) {
                     case p.evJ.ACCOUNT_REVERT_INVALID_TOKEN:
                       return m.intl.string(m.t["11zzGR"]);
                     case p.evJ.ACCOUNT_REVERT_EMAIL_ALREADY_TAKEN:
-                      return m.intl.string(m.t["6qmgaI"]);
+                      return m.intl.string(m.t["6qmgaG"]);
                     case p.evJ.ACCOUNT_REVERT_ACCOUNT_NOT_FOUND:
-                      return m.intl.string(m.t.bChnKs);
+                      return m.intl.string(m.t.bChnKi);
                     default:
-                      return m.intl.format(m.t.aTVNes, {
+                      return m.intl.format(m.t.aTVNen, {
                         statusPageURL: p.yXt.STATUS
                       })
                   }
@@ -110,7 +110,7 @@ function x(e) {
         },
         submitting: v,
         disabled: v,
-        children: m.intl.string(m.t.ezv91b)
+        children: m.intl.string(m.t.ezv91d)
       })]
     }), (0, r.jsx)("div", {
       className: f.buttonContainer,
@@ -119,7 +119,7 @@ function x(e) {
         onClick: () => {
           S(""), s(g.n.START)
         },
-        children: m.intl.string(m.t.rzxnQ8)
+        children: m.intl.string(m.t.rzxnQ0)
       })
     })]
   })

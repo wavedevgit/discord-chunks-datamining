@@ -25,14 +25,14 @@ function f(e) {
     isExpanded: x,
     errors: j,
     onToggleExpand: v
-  } = e, O = r.useMemo(() => {
+  } = e, y = r.useMemo(() => {
     var e;
     return null != (e = t.avatar) && /^data:/.test(e) ? e : (0, u.ov)({
       id: t.id,
       avatar: e,
       discriminator: m.fo$
     })
-  }, [t]), y = r.useCallback(() => {
+  }, [t]), O = r.useCallback(() => {
     (0, a.ZDy)(async () => {
       let {
         ConfirmModal: e
@@ -57,22 +57,22 @@ function f(e) {
           }
           return e
         }({}, n), l = l = {
-          header: b.intl.formatToPlainString(b.t.gBKqZ0, {
+          header: b.intl.formatToPlainString(b.t.gBKqZ2, {
             name: t.name
           }),
-          confirmText: b.intl.string(b.t.CMy0Cj),
-          cancelText: b.intl.string(b.t["ETE/oC"]),
+          confirmText: b.intl.string(b.t.CMy0Cg),
+          cancelText: b.intl.string(b.t["ETE/oK"]),
           onConfirm: () => {
             c.Z.delete(t.guild_id, t.id).catch(() => {
               o.Z.show({
-                title: b.intl.string(b.t.LpbaFV),
-                body: b.intl.string(b.t["/4TwKf"])
+                title: b.intl.string(b.t.LpbaFR),
+                body: b.intl.string(b.t["/4TwKS"])
               })
             })
           },
           children: (0, i.jsx)(a.Text, {
             variant: "text-md/normal",
-            children: b.intl.string(b.t.zO9jrD)
+            children: b.intl.string(b.t.zO9jrK)
           })
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
           var n = Object.keys(e);
@@ -93,7 +93,7 @@ function f(e) {
   }), _.push({
     text: (0, i.jsx)("span", {
       className: g.guildSource,
-      children: b.intl.format(b.t["H/jJ6R"], {
+      children: b.intl.format(b.t["H/jJ6e"], {
         guildHook: () => (0, i.jsx)("span", {
           className: g.sourceName,
           children: t.source_guild.name
@@ -112,7 +112,7 @@ function f(e) {
         direction: "horizontal",
         gap: 16,
         children: [(0, i.jsx)(a.oil, {
-          label: b.intl.string(b.t.I1o5gV),
+          label: b.intl.string(b.t.I1o5gY),
           value: f.name,
           onChange: e => {
             s.Z.updateWebhook({
@@ -122,7 +122,7 @@ function f(e) {
           maxLength: 80,
           error: j.name
         }), (0, i.jsx)(a.q4e, {
-          label: b.intl.string(b.t["4TuWfc"]),
+          label: b.intl.string(b.t["4TuWfX"]),
           value: f.channel_id,
           options: h,
           onChange: e => {
@@ -134,10 +134,10 @@ function f(e) {
       }), (0, i.jsx)(a.izJ, {
         className: g.bottomDivider
       }), (0, i.jsx)(l.Avr, {
-        onClick: y,
+        onClick: O,
         size: "sm",
         variant: "critical",
-        text: b.intl.string(b.t.CMy0Cj)
+        text: b.intl.string(b.t.CMy0Cg)
       })]
     })]
   })), (0, i.jsx)(a.Zbd, {
@@ -154,7 +154,7 @@ function f(e) {
           align: "center",
           children: [(0, i.jsx)(p.Z, {
             name: t.name,
-            imageSrc: O,
+            imageSrc: y,
             details: _
           }), (0, i.jsx)(d.Z, {
             className: g.expandIcon,

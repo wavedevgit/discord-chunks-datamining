@@ -69,7 +69,7 @@ let v = Chunk647438.forwardRef(function(e, t) {
     {
       createMultipleConfettiAt: W
     } = i.useContext(m.h),
-    q = null == x ? true : x.getLegacyUsername();
+    F = null == x ? true : x.getLegacyUsername();
   return i.useEffect(() => {
     !G && P === O.Wq.PREVIEW && n.username.includes(O.nA) && (W(window.innerWidth / 2 + 150, 0, {
       velocity: {
@@ -111,12 +111,12 @@ let v = Chunk647438.forwardRef(function(e, t) {
         displayProfile: x,
         themeType: S.l.SIDEBAR,
         className: _.avatar
-      }), P === O.Wq.PREVIEW && null != q && (0, r.jsx)("div", {
+      }), P === O.Wq.PREVIEW && null != F && (0, r.jsx)("div", {
         className: _.legacyUsernameBadgeContainer,
         children: (0, r.jsx)(c.u, {
           position: "top",
-          text: b.intl.formatToPlainString(b.t.bhrgkA, {
-            legacyUsername: q
+          text: b.intl.formatToPlainString(b.t.bhrgkJ, {
+            legacyUsername: F
           }),
           spacing: 12,
           children: (0, r.jsx)(u.Anchor, {
@@ -137,7 +137,7 @@ let v = Chunk647438.forwardRef(function(e, t) {
       children: [(0, r.jsxs)(u.Kqy, {
         gap: 16,
         children: [P === O.Wq.EDIT_DISPLAY_NAME && (0, r.jsx)(u.oil, {
-          label: b.intl.string(b.t["9AjdkD"]),
+          label: b.intl.string(b.t["9AjdkJ"]),
           value: null != w ? w : "",
           placeholder: E.ZP.getName(n),
           maxLength: O.hy,
@@ -195,7 +195,7 @@ let v = Chunk647438.forwardRef(function(e, t) {
         className: _.memberText,
         color: "text-muted",
         variant: "text-sm/medium",
-        children: b.intl.format(b.t["9rfonh"], {
+        children: b.intl.format(b.t["9rfonp"], {
           date: (0, p.K9)(n.id)
         })
       })]

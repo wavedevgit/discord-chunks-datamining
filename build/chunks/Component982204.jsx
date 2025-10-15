@@ -169,7 +169,7 @@ function w(e) {
     }), f && (0, r.jsxs)(T, {
       children: ["THREE_COLUMN" === o && (0, r.jsx)(S, {}), (0, r.jsx)(A, {
         className: O.invoiceRegularText,
-        children: y.intl.string(y.t["/I8zmP"])
+        children: y.intl.string(y.t["/I8zmJ"])
       }), (0, r.jsx)(C, {
         className: O.invoiceRegularText,
         children: (0, E.T4)(n.tax, n.currency)
@@ -179,7 +179,7 @@ function w(e) {
         className: O.totalRow,
         children: [(0, r.jsx)(S, {
           className: O.invoiceRegularText,
-          children: y.intl.format(y.t["+B5KfG"], {})
+          children: y.intl.format(y.t["+B5KfH"], {})
         }), "THREE_COLUMN" === o && (0, r.jsx)(A, {}), (0, r.jsx)(C, {
           className: O.invoiceRegularText,
           children: (0, E.T4)(n.amount, n.currency)

@@ -317,15 +317,15 @@ function em(e) {
     })
   }, eJ = e => {
     e.preventDefault(), e.stopPropagation();
-    let i = en.intl.formatToPlainString(en.t.hJ5Ap4, {
+    let i = en.intl.formatToPlainString(en.t.hJ5Ap6, {
         name: eR
       }),
-      l = en.intl.format(en.t.SSIVOu, {
+      l = en.intl.format(en.t.SSIVOj, {
         name: eR
       });
-    t.isManaged() && (i = en.intl.formatToPlainString(en.t.hVGjEW, {
+    t.isManaged() && (i = en.intl.formatToPlainString(en.t.hVGjER, {
       name: eR
-    }), l = en.intl.format(en.t.IK1Qvs, {
+    }), l = en.intl.format(en.t.IK1Qvr, {
       name: eR
     })), (0, y.ZDy)(async () => {
       let {
@@ -442,10 +442,10 @@ function em(e) {
               muted: eD,
               subText: t.isSystemDM() ? (0, r.jsx)("div", {
                 className: er.subtext,
-                children: (0, P.Z)(t.id) ? en.intl.string(en.t.FL5T01) : en.intl.string(en.t.NnY5lc)
+                children: (0, P.Z)(t.id) ? en.intl.string(en.t.FL5T09) : en.intl.string(en.t.NnY5lZ)
               }) : t.isMultiUserDM() ? (0, r.jsx)("div", {
                 className: er.subtext,
-                children: en.intl.format(en.t.CxSA5N, {
+                children: en.intl.format(en.t.CxSA5O, {
                   members: t.recipients.length + 1
                 })
               }) : (0, j.Z)({
@@ -482,12 +482,12 @@ function em(e) {
             }),
             children: [eL && !ey ? (0, r.jsx)(eu, {}) : null, eM ? (0, r.jsx)(ed, {}) : null, ek ? (0, r.jsx)(ep, {}) : null, eA && !e5 ? (0, r.jsx)(b.u, {
               asContainer: true,
-              text: en.intl.string(ex ? en.t.Et8qwj : en.t["d+e27s"]),
+              text: en.intl.string(ex ? en.t.Et8qws : en.t["d+e27u"]),
               delay: 500,
               targetElementRef: eU,
               children: (0, r.jsx)(ec, {
                 icon: y.xhG,
-                "aria-label": en.intl.string(en.t.PdRCRg),
+                "aria-label": en.intl.string(en.t.PdRCRk),
                 onClick: e => {
                   eq(e)
                 },
@@ -498,7 +498,7 @@ function em(e) {
               })
             }) : (0, r.jsx)(ec, {
               icon: y.Dio,
-              "aria-label": ex ? en.intl.string(en.t["26C4oi"]) : en.intl.string(en.t.jsvgc3),
+              "aria-label": ex ? en.intl.string(en.t["26C4oq"]) : en.intl.string(en.t.jsvgc3),
               onClick: ex ? eJ : eV,
               onMouseDown: eW,
               nameplate: Y,

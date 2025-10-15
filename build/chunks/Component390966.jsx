@@ -28,30 +28,30 @@ function b(e, t) {
     });
   switch (e) {
     case p.z.WEEKLY:
-      return m.intl.formatToPlainString(m.t.xQM9X0, {
+      return m.intl.formatToPlainString(m.t.xQM9X1, {
         weekday: r
       });
     case p.z.BIWEEKLY:
-      return m.intl.formatToPlainString(m.t.RYscac, {
+      return m.intl.formatToPlainString(m.t.RYscaW, {
         weekday: r
       });
     case p.z.MONTHLY:
       let i = Math.ceil(n.getDate() / 7);
-      return m.intl.formatToPlainString(m.t["4ZN9Ap"], {
+      return m.intl.formatToPlainString(m.t["4ZN9Ag"], {
         weekday: r,
         nth: i
       });
     case p.z.YEARLY:
-      return m.intl.formatToPlainString(m.t["rXUS+j"], {
+      return m.intl.formatToPlainString(m.t["rXUS+v"], {
         date: n.toLocaleString(m.intl.currentLocale, {
           month: "short",
           day: "2-digit"
         })
       });
     case p.z.WEEKDAY_ONLY:
-      return m.intl.string(m.t["2BX6bC"]);
+      return m.intl.string(m.t["2BX6bG"]);
     case p.z.WEEKEND_ONLY:
-      return m.intl.string(m.t["IEi+Rw"]);
+      return m.intl.string(m.t["IEi+R0"]);
     default:
       return null
   }
@@ -60,13 +60,13 @@ function b(e, t) {
 function y(e, t, n, i, a) {
   switch (e) {
     case 1:
-      return a > 0 ? m.intl.formatToPlainString(m.t.PQlCWk, {
+      return a > 0 ? m.intl.formatToPlainString(m.t.PQlCWl, {
         minutes: a
-      }) : m.intl.string(m.t.WINqKV);
+      }) : m.intl.string(m.t.WINqKS);
     case 2:
-      return m.intl.string(m.t.WINqKV);
+      return m.intl.string(m.t.WINqKS);
     case 3:
-      return null != i && "" !== i ? m.intl.format(m.t.vHYgJW, {
+      return null != i && "" !== i ? m.intl.format(m.t.vHYgJS, {
         start: n,
         startHook: e => (0, r.jsx)(d.Text, {
           color: "text-feedback-positive",
@@ -161,7 +161,7 @@ function T(e) {
     guildEventId: C,
     recurrenceId: N
   } = e, R = (0, d.dQu)(c.Z.colors.TEXT_BRAND).hex(), P = (0, d.dQu)(c.Z.colors.TEXT_FEEDBACK_POSITIVE).hex(), w = (0, d.dQu)(c.Z.colors.TEXT_DANGER).hex();
-  null == p && (p = a === h.WX.EXTERNAL ? m.intl.string(m.t.IyZxjH) : m.intl.string(m.t["X2K3/4"]));
+  null == p && (p = a === h.WX.EXTERNAL ? m.intl.string(m.t.IyZxjI) : m.intl.string(m.t["X2K3//"]));
   let D = (0, f.Z)(N, C),
     [{
       startDateTimeString: L,
@@ -178,7 +178,7 @@ function T(e) {
     }
   }, [t, u]);
   let G = L;
-  null != x && "" !== x && (G = m.intl.formatToPlainString(m.t.tXbu7I, {
+  null != x && "" !== x && (G = m.intl.formatToPlainString(m.t.tXbu7O, {
     start: L,
     end: x
   }));
@@ -200,7 +200,7 @@ function T(e) {
     W = null;
   if (null != A) {
     let e = (0, _.Ho)(A);
-    W = m.intl.formatToPlainString(m.t.HmKEqW, {
+    W = m.intl.formatToPlainString(m.t.HmKEqa, {
       recurrenceRule: e.toText()
     });
     let n = l()(t);

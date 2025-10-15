@@ -28,13 +28,13 @@ function b(e) {
   } = e, u = (0, o.EQ)({
     collapsedReason: a
   }).with({
-    collapsedReason: f.t["VFWjc+"]
+    collapsedReason: f.t.VFWjc3
   }, () => (0, i.jsx)(s.kZF, {
     size: "md",
     color: "currentColor",
     className: m.blockedIcon
   })).with({
-    collapsedReason: f.t["+FcYM/"]
+    collapsedReason: f.t["+FcYMz"]
   }, () => (0, i.jsx)(s.t6m, {
     size: "md",
     color: "currentColor",
@@ -59,7 +59,7 @@ function b(e) {
           tag: "span",
           onClick: n,
           className: m.blockedAction,
-          children: t ? f.intl.string(f.t.fgq1gs) : f.intl.string(f.t.XJuakA)
+          children: t ? f.intl.string(f.t.fgq1go) : f.intl.string(f.t.XJuakJ)
         })]
       })
     })

@@ -44,37 +44,37 @@ let N = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     showTransferOwnershipItem: w
   } = e, {
     analyticsLocations: x
-  } = (0, f.ZP)(d.Z.CONTEXT_MENU), R = (0, s.O)(), U = null != (t = null == T ? true : T[0]) ? t : x[0], k = (0, O.sE)(u, {
-    location: U,
+  } = (0, f.ZP)(d.Z.CONTEXT_MENU), U = (0, s.O)(), R = null != (t = null == T ? true : T[0]) ? t : x[0], k = (0, O.sE)(u, {
+    location: R,
     targetUserId: n.id
   }), L = (0, i.e7)([y.Z], () => {
     var e;
     return null != (e = y.Z.getUserVoiceChannelId(u, n.id)) ? e : true
   }, [u, n.id]), q = r.useCallback(() => {
     k(O.jQ.COPY_ID)
-  }, [k]), G = (0, i.e7)([E.ZP], () => E.ZP.isMember(u, n.id), [u, n.id]), B = (0, S.Z)({
+  }, [k]), B = (0, i.e7)([E.ZP], () => E.ZP.isMember(u, n.id), [u, n.id]), G = (0, _.Z)({
     userId: n.id,
     guildId: u,
     sourceAnalyticsLocations: T
   }), V = (0, m.Z)(n.id, M), F = (0, g.Z)({
     guildId: u,
     userId: n.id,
-    analyticsLocation: null != A ? A : R.location,
-    analyticsLocations: [U],
+    analyticsLocation: null != A ? A : U.location,
+    analyticsLocations: [R],
     context: M
-  }), K = (0, p.Z)({
+  }), Y = (0, Z.Z)({
     user: n,
     guildId: u,
-    location: U,
+    location: R,
     channelId: c
-  }), Y = (0, P.Z)({
+  }), K = (0, P.Z)({
     user: n,
     guildId: u,
-    location: U,
+    location: R,
     channelId: c
-  }), Q = (0, Z.Z)(n, u, null != c ? c : L, U), H = (0, h.Z)(c, I), W = (0, v.Z)(n, u), X = (0, _.Z)(n.id, u, false, U), z = (0, b.Z)({
+  }), Q = (0, p.Z)(n, u, null != c ? c : L, R), H = (0, v.Z)(c, I), W = (0, h.Z)(n, u), X = (0, S.Z)(n.id, u, false, R), z = (0, b.Z)({
     id: n.id,
-    label: C.intl.string(C.t["/AXYnE"]),
+    label: C.intl.string(C.t["/AXYnJ"]),
     onSuccess: q
   }), J = (0, j.Z)(n, u), $ = !!(null == n ? true : n.isNonUserBot());
   return (0, l.jsxs)(a.v2r, {
@@ -82,14 +82,14 @@ let N = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     onClose: () => {
       (0, o.Zy)(), null == D || D()
     },
-    "aria-label": C.intl.string(C.t.liqwPJ),
+    "aria-label": C.intl.string(C.t.liqwPD),
     onSelect: N,
     children: [!$ && (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsxs)(a.kSQ, {
-        children: [B, V]
+        children: [G, V]
       }), (0, l.jsxs)(a.kSQ, {
-        children: [F, Y, K]
-      }), G && (0, l.jsxs)(l.Fragment, {
+        children: [F, K, Y]
+      }), B && (0, l.jsxs)(l.Fragment, {
         children: [(0, l.jsx)(a.kSQ, {
           children: Q
         }), (0, l.jsxs)(a.kSQ, {

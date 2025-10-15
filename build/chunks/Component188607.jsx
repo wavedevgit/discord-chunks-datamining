@@ -19,9 +19,9 @@ let p = function(e) {
   } = e, p = (0, i.e7)([s.Z], () => s.Z.getCategories()), m = a.useMemo(() => {
     var e;
     return null == (e = p.find(e => e.id === t)) ? true : e.name
-  }, [p, t]), h = t === o.MU || null == m ? c.intl.string(c.t["FVJt+8"]) : c.intl.formatToPlainString(c.t.FjCaNB, {
+  }, [p, t]), h = t === o.MU || null == m ? c.intl.string(c.t["FVJt+/"]) : c.intl.formatToPlainString(c.t.FjCaND, {
     categoryName: m
-  }), g = t === o.MU ? c.intl.string(c.t.GXiMta) : c.intl.format(c.t.JaLoFF, {
+  }), g = t === o.MU ? c.intl.string(c.t.GXiMtb) : c.intl.format(c.t.JaLoFB, {
     onClick: n
   });
   return (0, r.jsxs)("div", {

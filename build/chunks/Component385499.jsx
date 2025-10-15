@@ -26,26 +26,26 @@ let d = e => {
   switch (n) {
     case l.Hb.SYSTEM_DM:
     case l.Hb.OFFICIAL:
-      d = true, m = c.intl.string(c.t["7s687k"]), h = c.intl.string(c.t.lKQ7Wt);
+      d = true, m = c.intl.string(c.t["7s687u"]), h = c.intl.string(c.t.lKQ7Wl);
       break;
     case l.Hb.SERVER:
-      h = c.intl.string(c.t.PuJGuM);
+      h = c.intl.string(c.t.PuJGuL);
       break;
     case l.Hb.ORIGINAL_POSTER:
-      h = c.intl.string(c.t.fyE8sH);
+      h = c.intl.string(c.t.fyE8sL);
       break;
     case l.Hb.STAFF_ONLY_DM:
-      h = c.intl.string(c.t.oMx98L);
+      h = c.intl.string(c.t.oMx98P);
       break;
     case l.Hb.NOT_STAFF_WARNING:
-      h = c.intl.string(c.t.UWhXbK), g = u.botTagNotStaffWarning;
+      h = c.intl.string(c.t.UWhXbG), g = u.botTagNotStaffWarning;
       break;
     case l.Hb.REMIX:
-      d = false, h = c.intl.string(c.t.uXDG34);
+      d = false, h = c.intl.string(c.t.uXDG39);
       break;
     case l.Hb.BOT:
     default:
-      h = c.intl.string(c.t["9RNkeF"])
+      h = c.intl.string(c.t["9RNkeH"])
   }
   let E = n === l.Hb.ORIGINAL_POSTER,
     b = n === l.Hb.REMIX,
@@ -72,14 +72,14 @@ let d = e => {
   switch (n) {
     case l.Hb.REMIX:
       return (0, r.jsx)(o.u, {
-        text: c.intl.string(c.t.xb0sts),
+        text: c.intl.string(c.t.xb0str),
         position: "top",
         asContainer: true,
         children: O()
       });
     case l.Hb.ORIGINAL_POSTER:
       return (0, r.jsx)(o.u, {
-        text: c.intl.string(c.t.uN6Emt),
+        text: c.intl.string(c.t.uN6Emp),
         position: "top",
         asContainer: true,
         children: O()

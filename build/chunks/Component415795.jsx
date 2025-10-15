@@ -153,7 +153,7 @@ class A extends Chunk647438.Component {
     let {
       guild: e
     } = this.props;
-    return Chunk388032.intl.formatToPlainString(Chunk388032.t.WVq3Lr, {
+    return Chunk388032.intl.formatToPlainString(Chunk388032.t.WVq3Li, {
       name: module.name
     })
   }
@@ -260,7 +260,7 @@ class C extends(r = Chunk647438.Component) {
     let {
       channel: t
     } = this.props, n = null == (e = Chunk430824.Z.getGuild(this.props.channel.guild_id)) ? true : module.name, r = (0, Chunk933557.F6)(exports, Chunk594174.default, Chunk699516.Z), i = (0, Chunk16206.Z)(exports);
-    return Chunk388032.intl.formatToPlainString(Chunk388032.t["Vw/da+"], {
+    return Chunk388032.intl.formatToPlainString(Chunk388032.t["Vw/da2"], {
       name: r,
       type: Chunk951288,
       guild: require
@@ -342,10 +342,10 @@ class N extends Chunk647438.Component {
       channel: e,
       mentions: t
     } = this.props, n = (0, Chunk933557.F6)(module, Chunk594174.default, Chunk699516.Z);
-    return null != exports && exports > 0 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.LYdVfN, {
+    return null != exports && exports > 0 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.LYdVfH, {
       name: require,
       mentions: exports
-    }) : Chunk388032.intl.formatToPlainString(Chunk388032.t.lLSbno, {
+    }) : Chunk388032.intl.formatToPlainString(Chunk388032.t.lLSbnp, {
       name: require
     })
   }
@@ -436,11 +436,11 @@ class R extends Chunk647438.Component {
       mentions: e,
       user: t
     } = this.props, n = this.getDisplayNickname(), r = Chunk51144.ZP.getUserTag(exports);
-    return null != module && module > 0 ? Chunk388032.intl.formatToPlainString(Chunk388032.t["6b9UrR"], {
+    return null != module && module > 0 ? Chunk388032.intl.formatToPlainString(Chunk388032.t["6b9Ura"], {
       name: require,
       id: r,
       mentions: module
-    }) : Chunk388032.intl.formatToPlainString(Chunk388032.t.GWYOAY, {
+    }) : Chunk388032.intl.formatToPlainString(Chunk388032.t.GWYOAQ, {
       name: require,
       id: r
     })
@@ -529,13 +529,13 @@ class D extends Chunk647438.Component {
         children: r
       } = this.props,
       a = (0, Chunk754688.Qj)(require.path);
-    return null == Chunk647438 || true === Chunk647438.messageId ? (e = Chunk388032.intl.string(Chunk388032.t.qbSCqj), t = (0, Chunk951288.jsx)(Chunk481060.xPt, {
+    return null == Chunk647438 || true === Chunk647438.messageId ? (e = Chunk388032.intl.string(Chunk388032.t.qbSCqq), t = (0, Chunk951288.jsx)(Chunk481060.xPt, {
       size: "xs",
       color: "currentColor"
-    })) : (0, Chunk754688.VO)(Chunk647438) ? (e = Chunk388032.intl.string(Chunk388032.t["6Fd/j1"]), t = (0, Chunk951288.jsx)(Chunk481060.acy, {
+    })) : (0, Chunk754688.VO)(Chunk647438) ? (e = Chunk388032.intl.string(Chunk388032.t["6Fd/j4"]), t = (0, Chunk951288.jsx)(Chunk481060.acy, {
       size: "xs",
       color: "currentColor"
-    })) : (e = Chunk388032.intl.string(Chunk388032.t.jQRwp4), t = (0, Chunk951288.jsx)(Chunk481060.mBM, {
+    })) : (e = Chunk388032.intl.string(Chunk388032.t.jQRwp6), t = (0, Chunk951288.jsx)(Chunk481060.mBM, {
       size: "xs",
       color: "currentColor"
     })), (0, Chunk951288.jsxs)("div", {
@@ -587,19 +587,19 @@ class L extends Chunk647438.Component {
       c = Chunk647438 ? Chunk481060.iWm : Chunk481060.jje;
     switch (require.type) {
       case Chunk815372.Ky.SHOP:
-        e = Chunk388032.intl.string(Chunk388032.t.pWG4ze), t = (0, Chunk951288.jsx)(Chunk481060.EOn, {
+        e = Chunk388032.intl.string(Chunk388032.t.pWG4zc), t = (0, Chunk951288.jsx)(Chunk481060.EOn, {
           size: "xs",
           color: "currentColor"
         });
         break;
       case Chunk815372.Ky.NITRO_HOME:
-        e = Chunk388032.intl.string(Chunk388032.t.Ipxkog), t = (0, Chunk951288.jsx)(Chunk481060.SrA, {
+        e = Chunk388032.intl.string(Chunk388032.t.Ipxkoq), t = (0, Chunk951288.jsx)(Chunk481060.SrA, {
           size: "xs",
           color: "currentColor"
         });
         break;
       case Chunk815372.Ky.QUEST_HOME:
-        e = Chunk388032.intl.string(Chunk388032.t.JALI2K), t = (0, Chunk951288.jsx)(Chunk481060.qDn, {
+        e = Chunk388032.intl.string(Chunk388032.t.JALI2N), t = (0, Chunk951288.jsx)(Chunk481060.qDn, {
           size: "xs",
           color: "currentColor"
         });
@@ -612,7 +612,7 @@ class L extends Chunk647438.Component {
         break;
       case Chunk815372.Ky.SETTINGS:
         var u;
-        e = null != (u = require.label) ? Chunk933557 : Chunk388032.intl.string(Chunk388032.t["3D5yo/"]), t = (0, Chunk951288.jsx)(Chunk481060.ewm, {
+        e = null != (u = require.label) ? Chunk933557 : Chunk388032.intl.string(Chunk388032.t["3D5yo6"]), t = (0, Chunk951288.jsx)(Chunk481060.ewm, {
           size: "xs",
           color: "currentColor"
         });

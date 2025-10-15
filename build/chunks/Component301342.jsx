@@ -117,7 +117,7 @@ let N = Chunk647438.memo(function(e) {
         role: U,
         tabIndex: B
       } = G,
-      F = function(e, t) {
+      V = function(e, t) {
         if (null == e) return {};
         var n, r, i = function(e, t) {
           if (null == e) return {};
@@ -132,13 +132,13 @@ let N = Chunk647438.memo(function(e) {
         }
         return i
       }(G, ["role", "tabIndex"]),
-      V = i.useRef(null),
+      F = i.useRef(null),
       H = i.useRef(null),
       z = (0, r.jsxs)("li", {
         className: t,
         "data-dnd-name": l.name,
         children: [(0, r.jsx)(d.tEY, {
-          focusTarget: V,
+          focusTarget: F,
           ringTarget: H,
           offset: {
             left: 4,
@@ -153,12 +153,12 @@ let N = Chunk647438.memo(function(e) {
             }),
             onContextMenu: M,
             children: [(0, r.jsxs)(d.P3F, I(S({
-              innerRef: V,
+              innerRef: F,
               className: E.mainContent,
               tabIndex: B
-            }, F), {
+            }, V), {
               onClick: L,
-              "aria-label": C.intl.formatToPlainString(C.t.y5l3J2, {
+              "aria-label": C.intl.formatToPlainString(C.t.y5l3Jy, {
                 categoryName: l.name
               }),
               "aria-expanded": !R,
@@ -179,9 +179,9 @@ let N = Chunk647438.memo(function(e) {
               onClick: P,
               className: E.children,
               children: D && !j ? (0, r.jsx)(c.u, {
-                text: C.intl.string(C.t["fUYU+j"]),
+                text: C.intl.string(C.t["fUYU+v"]),
                 children: (0, r.jsx)(u.zx, {
-                  "aria-label": C.intl.string(C.t["fUYU+j"]),
+                  "aria-label": C.intl.string(C.t["fUYU+v"]),
                   look: u.zx.Looks.BLANK,
                   size: u.zx.Sizes.NONE,
                   className: o()(E.addButton, E.forceVisible),
@@ -229,7 +229,7 @@ let N = Chunk647438.memo(function(e) {
           })
         }), null != n ? (0, r.jsx)(c.u, {
           asContainer: true,
-          text: C.intl.string(C.t["5qNmsU"]),
+          text: C.intl.string(C.t["5qNmsb"]),
           children: (0, r.jsx)(d.P3F, {
             className: E.dismissButton,
             onClick: n,
@@ -277,7 +277,7 @@ let N = Chunk647438.memo(function(e) {
         children: (0, r.jsx)(g.Z, {
           className: E.name,
           children: (0, r.jsx)(m.Z, {
-            children: C.intl.string(C.t["V/u9Dy"])
+            children: C.intl.string(C.t["V/u9Dw"])
           })
         })
       })

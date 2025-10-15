@@ -23,16 +23,16 @@ function m(t) {
     onConfirm: h,
     onCancel: p,
     onClose: C,
-    transitionState: k
+    transitionState: _
   } = t, {
-    protocol: _,
+    protocol: k,
     authorityPrefix: f,
     hostname: b,
     theRestOfTheUrl: M,
     shouldTrustUrl: g,
-    setShouldTrustUrl: v,
-    handleConfirm: D,
-    handleCancel: L
+    setShouldTrustUrl: L,
+    handleConfirm: v,
+    handleCancel: D
   } = (0, s.X)({
     url: e,
     trustUrl: n,
@@ -45,23 +45,23 @@ function m(t) {
     name: l.ImpressionNames.MASKED_LINK_MODAL
   }), (0, a.jsxs)(r.Modal, {
     size: "md",
-    transitionState: k,
+    transitionState: _,
     onClose: C,
-    title: u.intl.string(u.t["3w1QGl"]),
-    subtitle: m ? u.intl.format(u.t.aCYv1z, {}) : u.intl.string(u.t.soRxRe),
+    title: u.intl.string(u.t["3w1QGh"]),
+    subtitle: m ? u.intl.format(u.t.aCYv19, {}) : u.intl.string(u.t.soRxRU),
     actions: [{
       text: u.intl.string(u.t["/g10LC"]),
       onClick: () => {
-        L(), o.default.track(d.rMx.MASKED_LINK_MODAL_CLICKED, {
+        D(), o.default.track(d.rMx.MASKED_LINK_MODAL_CLICKED, {
           is_trust_url_selected: g,
           action_type: "cancel"
         })
       },
       variant: "secondary"
     }, {
-      text: m ? u.intl.string(u.t.COq6kk) : u.intl.string(u.t.NcJfJG),
+      text: m ? u.intl.string(u.t.COq6kp) : u.intl.string(u.t.NcJfJC),
       onClick: () => {
-        D(), o.default.track(d.rMx.MASKED_LINK_MODAL_CLICKED, {
+        v(), o.default.track(d.rMx.MASKED_LINK_MODAL_CLICKED, {
           is_trust_url_selected: g,
           action_type: "confirm"
         })
@@ -74,7 +74,7 @@ function m(t) {
         tag: "span",
         variant: m ? "text-md/semibold" : "text-md/normal",
         color: m ? "text-default" : "text-muted",
-        children: [_, f]
+        children: [k, f]
       }), (0, a.jsx)(c.Text, {
         tag: "span",
         variant: m ? "text-md/normal" : "text-md/semibold",
@@ -90,10 +90,10 @@ function m(t) {
       className: x.checkboxMana,
       children: (0, a.jsx)(c.Checkbox, {
         checked: g,
-        onChange: t => v(t),
-        label: m ? u.intl.format(u.t["haA+Xw"], {
-          protocol: _.replace(":", "")
-        }) : u.intl.format(u.t.ZgXDsI, {
+        onChange: t => L(t),
+        label: m ? u.intl.format(u.t["haA+X1"], {
+          protocol: k.replace(":", "")
+        }) : u.intl.format(u.t.ZgXDsL, {
           domain: b
         }),
         labelType: "secondary"

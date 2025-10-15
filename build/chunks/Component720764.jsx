@@ -25,18 +25,18 @@ function j(e) {
       guild: n,
       channel: j,
       customWebhooks: v,
-      editedWebhook: O,
-      selectableWebhookChannels: y,
+      editedWebhook: y,
+      selectableWebhookChannels: O,
       refToScroller: _,
       errors: C,
       canNavigate: N
     } = e,
     S = (0, d.ZP)(),
-    [I, w] = r.useState(null),
-    [E, P] = r.useState(null);
+    [I, E] = r.useState(null),
+    [P, w] = r.useState(null);
   if (null != j) t = j;
   else {
-    let e = Object.values(y);
+    let e = Object.values(O);
     t = e.length > 0 ? e[0] : null
   }
   let T = r.useCallback(async () => {
@@ -47,17 +47,17 @@ function j(e) {
           status: n
         } = e;
         return t && t.code === b.evJ.TOO_MANY_WEBHOOKS ? o.Z.show({
-          title: g.intl.string(g.t.cCqsca),
-          body: g.intl.string(g.t["w+QZoX"])
+          title: g.intl.string(g.t.cCqscX),
+          body: g.intl.string(g.t["w+QZoa"])
         }) : 429 === n ? o.Z.show({
-          title: g.intl.string(g.t.cCqsca),
-          body: g.intl.string(g.t["YBM+UW"])
+          title: g.intl.string(g.t.cCqscX),
+          body: g.intl.string(g.t["YBM+UV"])
         }) : o.Z.show({
-          title: g.intl.string(g.t.cCqsca),
-          body: g.intl.string(g.t["/4TwKf"])
+          title: g.intl.string(g.t.cCqscX),
+          body: g.intl.string(g.t["/4TwKS"])
         }), null
       });
-      null != e && (P(e.id), w(e))
+      null != e && (w(e.id), E(e))
     }
   }, [N, t, n]);
   (0, c.ZP)(() => {
@@ -67,7 +67,7 @@ function j(e) {
   return (0, i.jsxs)("div", {
     children: [(0, i.jsx)(a.Text, {
       variant: "text-sm/normal",
-      children: g.intl.format(g.t.WL0d0e, {
+      children: g.intl.format(g.t.WL0d0d, {
         helpdeskArticle: p.Z.getArticleURL(b.BhN.WEBHOOKS),
         developersArticle: b.EYA.API_DOCS_WEBHOOKS
       })
@@ -80,14 +80,14 @@ function j(e) {
         children: (0, i.jsx)(a.Button, {
           variant: "primary",
           size: "sm",
-          text: g.intl.string(g.t["nrO/HH"]),
+          text: g.intl.string(g.t["nrO/HB"]),
           disabled: !Z,
           onClick: T
         })
       }), (0, i.jsx)(m.Z, {
         webhooks: v,
-        editedWebhook: O,
-        selectableWebhookChannels: y,
+        editedWebhook: y,
+        selectableWebhookChannels: O,
         lastCreatedWebhookId: null == I ? true : I.id,
         errors: C,
         canNavigate: N
@@ -109,7 +109,7 @@ function j(e) {
           className: f.emptyStateButton,
           children: (0, i.jsx)(a.Button, {
             variant: "primary",
-            text: g.intl.string(g.t.lOQqJK),
+            text: g.intl.string(g.t.lOQqJC),
             disabled: !t,
             onClick: n
           })

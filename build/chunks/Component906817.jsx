@@ -88,11 +88,11 @@ let _ = Chunk647438.memo(function(e) {
       });
     case u.p2:
       return (0, r.jsx)(d.P, {
-        name: y ? f.intl.string(f.t.mlPMCy) : f.intl.string(f.t.k8fFjp)
+        name: y ? f.intl.string(f.t.mlPMCw) : f.intl.string(f.t.k8fFjo)
       });
     case m.recentsSectionNumber:
       return (0, r.jsx)(d.P, {
-        name: f.intl.string(f.t.gKcrqM),
+        name: f.intl.string(f.t.gKcrqK),
         onDismiss: v
       });
     case m.voiceChannelsSectionNumber: {

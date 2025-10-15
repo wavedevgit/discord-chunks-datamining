@@ -1,7 +1,7 @@
 /** Chunk was on 9924 **/
 /** chunk id: 901066, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => Z
+  Z: () => M
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -138,17 +138,17 @@ function R(e) {
     className: P.actionRow,
     children: [(0, l.jsx)(I, {
       icon: d.owK,
-      label: T.intl.string(T.t.BzjDQJ),
+      label: T.intl.string(T.t.BzjDQE),
       onClick: i,
       disabled: o
     }), (0, l.jsx)(I, {
       icon: d.k$p,
-      label: T.intl.string(T.t.hDtbsz),
+      label: T.intl.string(T.t.hDtbs7),
       onClick: a,
       disabled: o
     }), (0, l.jsx)(I, {
       icon: d.kBi,
-      label: T.intl.string(T.t.KQeYoC),
+      label: T.intl.string(T.t.KQeYoK),
       onClick: s,
       disabled: o
     })]
@@ -174,13 +174,13 @@ function w(e) {
       children: [(0, l.jsx)(d.Text, {
         variant: "text-md/medium",
         color: "header-primary",
-        children: T.intl.string(T.t.bSZkla)
+        children: T.intl.string(T.t.bSZklZ)
       }), null != i && null != r ? (0, l.jsxs)("div", {
         className: P.actionedInfo,
         children: [(0, l.jsx)(d.Text, {
           variant: "text-sm/normal",
           color: "text-muted",
-          children: T.intl.formatToPlainString(T.t.qnimbL, {
+          children: T.intl.formatToPlainString(T.t.qnimbG, {
             username: null != (t = i.global_name) ? t : i.username
           })
         }), (0, l.jsx)("div", {
@@ -193,7 +193,7 @@ function w(e) {
       }) : null, null != a && (0, l.jsx)(d.Text, {
         variant: "text-sm/normal",
         color: "text-muted",
-        children: T.intl.formatToPlainString(T.t.fU5PPM, {
+        children: T.intl.formatToPlainString(T.t.fU5PPD, {
           rejectionReason: a
         })
       })]
@@ -225,7 +225,7 @@ function A(e) {
         children: [(0, l.jsx)(d.Text, {
           variant: "text-sm/normal",
           color: "text-muted",
-          children: T.intl.formatToPlainString(T.t.qnimbL, {
+          children: T.intl.formatToPlainString(T.t.qnimbG, {
             username: null != (t = i.global_name) ? t : i.username
           })
         }), (0, l.jsx)("div", {
@@ -240,7 +240,7 @@ function A(e) {
   })
 }
 
-function M(e) {
+function Z(e) {
   let {
     user: t,
     joinRequest: n
@@ -250,7 +250,7 @@ function M(e) {
       className: P.accountLabel,
       variant: "text-sm/medium",
       color: "text-muted",
-      children: T.intl.string(T.t["ldCE/p"])
+      children: T.intl.string(T.t["ldCE/v"])
     }), (0, l.jsxs)("div", {
       className: P.userInfoContainer,
       children: [(0, l.jsxs)("div", {
@@ -258,7 +258,7 @@ function M(e) {
         children: [(0, l.jsx)(d.Text, {
           variant: "text-sm/normal",
           color: "text-default",
-          children: T.intl.string(T.t.SaDIpL)
+          children: T.intl.string(T.t.SaDIpK)
         }), (0, l.jsx)(d.Text, {
           variant: "text-sm/normal",
           color: "text-default",
@@ -269,7 +269,7 @@ function M(e) {
         children: [(0, l.jsx)(d.Text, {
           variant: "text-sm/normal",
           color: "text-default",
-          children: T.intl.string(T.t["Vt4cn+"])
+          children: T.intl.string(T.t.Vt4cn5)
         }), (0, l.jsx)(d.Text, {
           variant: "text-sm/normal",
           color: "text-default",
@@ -280,7 +280,7 @@ function M(e) {
   })
 }
 
-function Z(e) {
+function M(e) {
   let {
     guildId: t
   } = e, n = (0, b.L)({
@@ -292,7 +292,7 @@ function Z(e) {
     return null != (e = null == n ? true : n.formResponses) ? e : []
   }, [null == n ? true : n.formResponses]), o = r.useMemo(() => null != i ? new v.Z(i) : null, [i]), u = (0, c.e7)([_.Z], () => _.Z.getGuild(t), [t]);
   return ((0, m.Tt)({
-    subsection: T.intl.string(T.t.nqrK8X),
+    subsection: T.intl.string(T.t.nqrK8f),
     location: null == u ? true : u.name
   }), null == n || null == u || null == o || null == i) ? null : (0, l.jsx)("section", {
     className: P.sidebar,
@@ -321,7 +321,7 @@ function Z(e) {
             formFields: s,
             user: o,
             showRequirements: false
-          }), (0, l.jsx)(M, {
+          }), (0, l.jsx)(Z, {
             guildId: t,
             user: o,
             joinRequest: n

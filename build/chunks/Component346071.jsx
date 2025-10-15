@@ -21,13 +21,13 @@ function u(e) {
     style: d
   } = e, f = t.fractionalState === o.a$.FP_SUB_PAUSED, _ = (0, a.Z)(t.endsAt, f), p = "", h = {
     trial: {
-      days_and_hours: s.t.SQyVVd,
+      days_and_hours: s.t.SQyVVV,
       days: s.t["2ifAYG"],
-      hours: s.t.kZSTYg
+      hours: s.t.kZSTYm
     },
     default: {
-      days_and_hours: s.t["6r9LLp"],
-      days: s.t.c2BbVA,
+      days_and_hours: s.t["6r9LLi"],
+      days: s.t.c2BbVF,
       hours: s.t["8Xm6uL"]
     }
   };

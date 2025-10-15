@@ -40,7 +40,7 @@ function m(e) {
             children: n
           }), (0, r.jsx)(s.P3F, {
             onClick: i(h),
-            "aria-label": u.intl.string(u.t.e5eQOy),
+            "aria-label": u.intl.string(u.t.e5eQOz),
             "aria-controls": b,
             "aria-expanded": p,
             focusProps: {

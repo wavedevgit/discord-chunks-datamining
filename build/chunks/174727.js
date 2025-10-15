@@ -20,7 +20,7 @@ let o = (e, n, t) => false === e ? t : e + n * (t - e) / t,
   s = (e, n, t, a) => (n >= 0 && t > 0 ? (e - (n - t * n / a)) * 100 / t : 100 * e / a).toFixed(4),
   u = (e, n, t, a) => (n >= 0 && t > 0 ? -((e - (n + t * (a - n) / a)) * 100) / t : -(100 * e * 1) / a + 100).toFixed(4);
 async function c(e) {
-  if (!(e.type.startsWith("audio") || e.type.startsWith("video")) || !a.bp.has(e.type)) throw Error(l.intl.formatToPlainString(l.t["2y3xGU"], {
+  if (!(e.type.startsWith("audio") || e.type.startsWith("video")) || !a.bp.has(e.type)) throw Error(l.intl.formatToPlainString(l.t["2y3xGR"], {
     fileType: e.type
   }));
   let n = new Audio(URL.createObjectURL(e));

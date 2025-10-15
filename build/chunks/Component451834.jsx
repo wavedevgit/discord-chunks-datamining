@@ -41,7 +41,7 @@ let g = e => {
           children: t
         }), (0, r.jsx)(l.Text, {
           variant: "text-sm/semibold",
-          children: p.intl.format(p.t.QEW8Mq, {
+          children: p.intl.format(p.t.QEW8Mj, {
             onClick: () => {
               o({
                 action: "PRESS_REACT_REPLY_TOAST"
@@ -62,7 +62,7 @@ let g = e => {
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       color: "header-primary",
       variant: "text-sm/semibold",
-      children: Chunk388032.intl.string(Chunk388032.t.tcARX0)
+      children: Chunk388032.intl.string(Chunk388032.t.tcARX1)
     })]
   }),
   b = e => {
@@ -73,7 +73,7 @@ let g = e => {
     } = e, {
       interactionTypeSent: c,
       showInteractionToast: d
-    } = (0, f.Xo)(), m = c === _.P.REPLY ? p.intl.string(p.t.BPaiaa) : p.intl.string(p.t.Ry2EtG), b = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), y = (0, l.Yzy)(d, {
+    } = (0, f.Xo)(), m = c === _.P.REPLY ? p.intl.string(p.t.BPaiaW) : p.intl.string(p.t.Ry2EtL), b = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), y = (0, l.Yzy)(d, {
       from: {
         transform: b ? "translateY(0)" : "translateY(16px)",
         opacity: 0

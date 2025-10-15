@@ -20,7 +20,7 @@ function m(e) {
   return (0, l.jsx)("div", {
     className: d.modalContent,
     children: (0, l.jsx)(i.gNt, {
-      label: u.intl.string(u.t.KPuWsm),
+      label: u.intl.string(u.t.KPuWsr),
       children: (0, l.jsx)(o.Z, {
         children: (0, l.jsx)(c.Z, {
           channel: n,

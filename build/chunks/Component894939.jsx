@@ -73,15 +73,15 @@ function R() {
   }, []);
   return (0, Chunk951288.jsx)(Chunk738486.Z, {
     children: (0, Chunk951288.jsxs)(Chunk481060.C3N, {
-      label: Chunk388032.intl.string(Chunk388032.t.nzUc3B),
-      description: Chunk388032.intl.format(Chunk388032.t.u9RWmv, {
+      label: Chunk388032.intl.string(Chunk388032.t.nzUc3N),
+      description: Chunk388032.intl.format(Chunk388032.t.u9RWmp, {
         helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.SOUNDBOARD)
       }),
       children: [(0, Chunk951288.jsx)(Chunk856768.Z, {
         guildId: exports,
         className: Chunk647484.guildSelector,
         globalOption: {
-          label: Chunk388032.intl.string(Chunk388032.t["CpEUP/"]),
+          label: Chunk388032.intl.string(Chunk388032.t.CpEUPz),
           value: Chunk710111.hY
         },
         onChange: e => {
@@ -90,7 +90,7 @@ function R() {
         renderOptionSuffix: Chunk970813,
         hideDivider: true
       }), (0, Chunk951288.jsxs)(Chunk993413.Z, {
-        title: Chunk388032.intl.format(Chunk388032.t.I2TsYN, {
+        title: Chunk388032.intl.format(Chunk388032.t.I2TsYG, {
           nitroWheelHook: () => (0, Chunk951288.jsx)(Chunk481060.SrA, {
             size: "md",
             color: "currentColor",

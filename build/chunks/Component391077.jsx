@@ -29,7 +29,7 @@ function f(e) {
       className: d.rowDetails,
       children: (0, r.jsx)(o.Heading, {
         variant: "heading-md/semibold",
-        children: u.intl.string(u.t.DFMPWS)
+        children: u.intl.string(u.t.DFMPWV)
       })
     }), (0, r.jsx)(o.Text, {
       className: d.rowCreditCount,
@@ -46,9 +46,9 @@ function _(e) {
     endsAt: i,
     fractionalState: s,
     activationDate: l
-  } = e, f = t ? u.intl.string(u.t["hT6i/0"]) : u.intl.string(u.t["3G0CTC"]), _ = t ? true === l ? null : u.intl.format(u.t["0Vwb/l"], {
+  } = e, f = t ? u.intl.string(u.t["hT6i//"]) : u.intl.string(u.t["3G0CTE"]), _ = t ? true === l ? null : u.intl.format(u.t["0Vwb/v"], {
     activateDate: l
-  }) : s === c.a$.FP_SUB_PAUSED ? u.intl.format(u.t.MMvaIG, {
+  }) : s === c.a$.FP_SUB_PAUSED ? u.intl.format(u.t.MMvaIC, {
     resumeDate: i.toDate()
   }) : null, p = a()({
     [d.fractionalUnactivatedPill]: t,

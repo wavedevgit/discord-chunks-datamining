@@ -23,12 +23,12 @@ let O = (0, Chunk108843.Z)(function(e) {
     onSelect: c
   } = e, o = (0, p.Z)(t), O = (0, d.Z)(t, n), y = (0, u.Z)(t, n), j = (0, s.Z)(t, n), E = (0, b.Z)(t), g = (0, a.Z)({
     id: t.id,
-    label: f.intl.string(f.t.gFHI3k)
+    label: f.intl.string(f.t.gFHI3t)
   });
   return (0, r.jsxs)(i.v2r, {
     navId: "channel-context",
     onClose: l.Zy,
-    "aria-label": f.intl.string(f.t.Xm41aV),
+    "aria-label": f.intl.string(f.t.Xm41aW),
     onSelect: c,
     children: [(0, r.jsx)(i.kSQ, {
       children: o

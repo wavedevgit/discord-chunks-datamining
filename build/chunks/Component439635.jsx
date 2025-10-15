@@ -31,25 +31,25 @@ let Z = (0, Chunk108843.Z)(function(e) {
     guild: t,
     includeTopic: o = false,
     onSelect: c
-  } = e, Z = (0, P.Z)(n), N = (0, g.ZP)(n), w = (0, j.Z)(n), C = (0, d.Z)(n), I = (0, p.Z)(n), S = (0, O.Z)(n), m = (0, y.Z)(n, t), x = (0, s.Z)(n, t), T = (0, b.Z)(n, t, v.d4z.GUILD_TEXT), A = (0, b.Z)(n, t, v.d4z.GUILD_VOICE), D = (0, f.Z)(n), k = (0, a.Z)({
+  } = e, Z = (0, P.Z)(n), N = (0, g.ZP)(n), C = (0, j.Z)(n), S = (0, d.Z)(n), w = (0, p.Z)(n), I = (0, O.Z)(n), m = (0, y.Z)(n, t), x = (0, s.Z)(n, t), T = (0, b.Z)(n, t, v.d4z.GUILD_TEXT), A = (0, b.Z)(n, t, v.d4z.GUILD_VOICE), D = (0, f.Z)(n), k = (0, a.Z)({
     id: n.id,
-    label: _.intl.string(_.t.gFHI3k)
-  }), L = (0, E.Z)(n, "title_context_menu"), M = (0, u.Mn)("ChannelTitleContextMenu"), G = (0, h.ZP)(n);
+    label: _.intl.string(_.t.gFHI3t)
+  }), G = (0, E.Z)(n, "title_context_menu"), L = (0, u.Mn)("ChannelTitleContextMenu"), M = (0, h.ZP)(n);
   return (0, r.jsxs)(i.v2r, {
     navId: "channel-context",
     onClose: l.Zy,
-    "aria-label": _.intl.string(_.t.Xm41aV),
+    "aria-label": _.intl.string(_.t.Xm41aW),
     onSelect: c,
     children: [(0, r.jsx)(i.kSQ, {
       children: Z
     }), (0, r.jsx)(i.kSQ, {
       children: N
     }), (0, r.jsxs)(i.kSQ, {
-      children: [o ? I : M ? G : w, S]
+      children: [o ? w : L ? M : C, I]
     }), (0, r.jsxs)(i.kSQ, {
-      children: [m, C, x, T, A]
+      children: [m, S, x, T, A]
     }), (0, r.jsx)(i.kSQ, {
-      children: L
+      children: G
     }), (0, r.jsx)(i.kSQ, {
       children: D
     }), (0, r.jsx)(i.kSQ, {

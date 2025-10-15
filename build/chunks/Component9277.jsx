@@ -48,7 +48,7 @@ function b(e, t) {
   if (n) return null;
   let w = v === m.X1.GIF && I === a;
   return (0, r.jsx)(u.u, {
-    text: O ? g.intl.string(g.t.mE2e8A) : null,
+    text: O ? g.intl.string(g.t.mE2e8P) : null,
     forceOpen: true,
     children: (0, r.jsx)("div", {
       ref: t,
@@ -62,7 +62,7 @@ function b(e, t) {
         },
         isActive: w,
         pulse: b,
-        "aria-label": g.intl.string(g.t.PtVpk2),
+        "aria-label": g.intl.string(g.t.PtVpk5),
         "aria-expanded": w,
         "aria-haspopup": "dialog",
         "aria-controls": T,

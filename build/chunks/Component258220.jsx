@@ -45,26 +45,26 @@ function h(e) {
     size: "md",
     transitionState: h,
     onClose: E,
-    "aria-label": p.intl.string(p.t.NQkK4l),
-    title: p.intl.string(p.t.NQkK4l),
+    "aria-label": p.intl.string(p.t.NQkK4u),
+    title: p.intl.string(p.t.NQkK4u),
     actionBarInput: (0, r.jsx)(a.Checkbox, {
       checked: m,
       onChange: () => b(!m),
-      label: p.intl.string(p.t["5E9SB9"]),
+      label: p.intl.string(p.t["5E9SBw"]),
       labelType: "secondary"
     }),
     actions: [{
       variant: "secondary",
-      text: p.intl.string(p.t["Ibf5/h"]),
+      text: p.intl.string(p.t["Ibf5/v"]),
       onClick: E
     }, {
       variant: "primary",
-      text: p.intl.string(p.t["/wlDqi"]),
+      text: p.intl.string(p.t["/wlDqq"]),
       onClick: v
     }],
     children: (0, r.jsx)(a.Text, {
       variant: "text-md/normal",
-      children: p.intl.format(p.t.B9eiaK, {
+      children: p.intl.format(p.t.B9eiaG, {
         applicationName: O
       })
     })

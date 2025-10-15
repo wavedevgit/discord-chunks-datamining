@@ -27,8 +27,8 @@ function b(e) {
     query: n
   } = e;
   return (0, r.jsx)(c.E1j, {
-    placeholder: g.intl.string(g.t.vf3ZTa),
-    "aria-label": g.intl.string(g.t.vf3ZTa),
+    placeholder: g.intl.string(g.t.vf3ZTU),
+    "aria-label": g.intl.string(g.t.vf3ZTU),
     query: n,
     onChange: t,
     onClear: () => t("")
@@ -61,7 +61,7 @@ function y(e) {
             tag: "a",
             children: e
           }, t)
-        }) : g.intl.string(g.t.w3GLl9)
+        }) : g.intl.string(g.t.w3GLl5)
       })
     }), y.map(e => (0, r.jsxs)(c.P3F, {
       className: E.selectGuild,
@@ -88,7 +88,7 @@ function y(e) {
         className: E.selectGuildPseudoCta,
         color: "always-white",
         variant: "text-sm/medium",
-        children: t ? g.intl.string(g.t.dUgaF8) : g.intl.string(g.t.Uj0md3)
+        children: t ? g.intl.string(g.t.dUgaFx) : g.intl.string(g.t.Uj0md3)
       })]
     }, e.id))]
   })
@@ -103,7 +103,7 @@ function O(e) {
     selectedSlotGuilds: l
   } = e, [c, u] = i.useState(""), d = async () => {
     await t()
-  }, f = o ? g.intl.string(g.t.IB13DV) : g.intl.string(g.t.cQYceV);
+  }, f = o ? g.intl.string(g.t.IB13DQ) : g.intl.string(g.t.cQYceX);
   return (0, r.jsx)(s.Modal, {
     transitionState: a,
     onClose: d,

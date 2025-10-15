@@ -54,7 +54,7 @@ function p(e) {
     children: (0, r.jsx)(l.zxk, {
       disabled: !(h && n),
       variant: "primary",
-      text: m.intl.string(m.t.yG2pUi),
+      text: m.intl.string(m.t.yG2pUl),
       onClick: j
     })
   }) : (0, r.jsx)(o.P, {

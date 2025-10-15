@@ -1,7 +1,7 @@
 /** Chunk was on 99414 **/
 /** chunk id: 187658, original params: t,n,i (module,exports,require) **/
 require.d(exports, {
-  default: () => d
+  default: () => c
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -11,24 +11,24 @@ var Chunk481060 = require("./481060.js"),
   Chunk647177 = require("./647177.js"),
   Chunk388032 = require("./388032.jsx");
 
-function d(t) {
+function c(t) {
   let {
     onSelect: n,
     backgroundOption: i,
-    optionIsInUse: d
+    optionIsInUse: c
   } = t;
   return (0, r.jsx)(e.v2r, {
     navId: "video-background-context",
     onClose: a.Zy,
     onSelect: n,
-    "aria-label": o.intl.string(o.t.ptxALO),
+    "aria-label": o.intl.string(o.t.ptxALC),
     children: (0, r.jsx)(e.sNh, {
       id: "remove",
       action: () => {
         (0, l.rD)(i) && ((0, s.KH)(i), (0, l.$w)(i))
       },
-      label: (0, l.rD)(i) ? d ? o.intl.string(o.t["xh/P/8"]) : o.intl.string(o.t.oKuPwe) : o.intl.string(o.t.hFYUDN),
-      disabled: !(0, l.rD)(i) || d,
+      label: (0, l.rD)(i) ? c ? o.intl.string(o.t["xh/P//"]) : o.intl.string(o.t.oKuPwc) : o.intl.string(o.t.hFYUDA),
+      disabled: !(0, l.rD)(i) || c,
       color: "danger"
     })
   })

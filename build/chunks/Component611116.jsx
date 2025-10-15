@@ -109,7 +109,7 @@ let E = Chunk647438.memo(function(e) {
     } = (0, l.ZP)();
     return (0, r.jsx)(g, p({
       boxLayout: t,
-      title: u.intl.string(u.t.LRmNAl),
+      title: u.intl.string(u.t.LRmNAg),
       startLeftAligned: e.enablePremiumBrandRefreshDesign
     }, e))
   }),
@@ -119,7 +119,7 @@ let E = Chunk647438.memo(function(e) {
     } = (0, l.ZP)();
     return (0, r.jsx)(g, p({
       boxLayout: t,
-      title: u.intl.string(u.t.EnzW2H),
+      title: u.intl.string(u.t.EnzW2N),
       includeSideGradient: !e.enablePremiumBrandRefreshDesign,
       startLeftAligned: true
     }, e))

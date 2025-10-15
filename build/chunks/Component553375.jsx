@@ -115,7 +115,7 @@ function E(e) {
     });
     return (0, r.jsx)(i.sNh, {
       id: "game-detection-report-issue",
-      label: f.intl.string(f.t.qP2cXd),
+      label: f.intl.string(f.t.qP2cXV),
       action: e
     })
   }
@@ -147,7 +147,7 @@ function b(e) {
   });
   return null == p ? null : (0, r.jsx)(i.sNh, {
     id: "game-profile",
-    label: f.intl.string(f.t.ajHoOr),
+    label: f.intl.string(f.t.ajHoOj),
     action: e => {
       null == o || o({
         action: "PRESS_VIEW_GAME_PROFILE_MENU_ITEM"

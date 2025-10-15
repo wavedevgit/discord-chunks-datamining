@@ -63,7 +63,7 @@ function u(e) {
         children: (0, l.jsx)(a.Text, {
           variant: "text-xs/normal",
           color: "always-white",
-          children: s.intl.format(s.t.EgKsZA, {
+          children: s.intl.format(s.t.EgKsZG, {
             memberCount: r
           })
         })

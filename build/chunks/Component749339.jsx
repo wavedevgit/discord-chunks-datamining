@@ -17,7 +17,7 @@ function c(e) {
     n = (0, a.hv)(t) ? (0, l.np)(t.components) : t.content;
   return null == n || 0 === n.length ? null : (0, r.jsx)(i.sNh, {
     id: "copy-text",
-    label: s.intl.string(s.t.JrGD7E),
+    label: s.intl.string(s.t.JrGD7O),
     icon: i.TIy,
     action: () => {
       (0, o.JG)(n)

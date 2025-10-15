@@ -232,7 +232,7 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
           }) : null, (0, r.jsx)(b.Z, {
             className: G.packHeader,
             "aria-label": U.intl.string(U.t.wbfJFh),
-            children: U.intl.string(U.t["05Z/0l"])
+            children: U.intl.string(U.t["05Z/0t"])
           }, "stickers-you-might-like-header")]
         })
       }
@@ -240,7 +240,7 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
         case P.Ih.FAVORITE:
           return (0, r.jsx)(b.Z, {
             className: G.packHeader,
-            "aria-label": U.intl.formatToPlainString(U.t["7lLCjZ"], {
+            "aria-label": U.intl.formatToPlainString(U.t["7lLCjY"], {
               categoryName: n.name
             }),
             icon: (0, r.jsx)(l.r7p, {
@@ -256,7 +256,7 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
         case P.Ih.RECENT:
           return (0, r.jsx)(b.Z, {
             className: G.packHeader,
-            "aria-label": U.intl.formatToPlainString(U.t["7lLCjZ"], {
+            "aria-label": U.intl.formatToPlainString(U.t["7lLCjY"], {
               categoryName: n.name
             }),
             icon: (0, r.jsx)(l.T39, {
@@ -275,7 +275,7 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
           if (null == e) return null;
           return (0, r.jsx)(b.Z, {
             className: G.packHeader,
-            "aria-label": U.intl.formatToPlainString(U.t["7lLCjZ"], {
+            "aria-label": U.intl.formatToPlainString(U.t["7lLCjY"], {
               categoryName: e.name
             }),
             icon: (0, r.jsx)(p.Z, {
@@ -293,7 +293,7 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
           if (null == e) return null;
           return (0, r.jsx)(b.Z, {
             className: G.packHeader,
-            "aria-label": U.intl.formatToPlainString(U.t["7lLCjZ"], {
+            "aria-label": U.intl.formatToPlainString(U.t["7lLCjY"], {
               categoryName: e.name
             }),
             icon: (0, r.jsx)(D.Z, {
@@ -432,7 +432,7 @@ let Y = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_PICKER_BREA
       children: (0, r.jsxs)("div", {
         className: G.wrapper,
         children: [null != l && 0 === l.sendable.length && 0 === l.sendableWithPremium.length ? (0, r.jsx)(c.Z, {
-          message: U.intl.string(U.t["zc+LQd"]),
+          message: U.intl.string(U.t["zc+LQU"]),
           className: G.__invalid_noSearchResultsContainer,
           noResultsImageURL: B,
           suggestions: (0, r.jsx)(ef, {

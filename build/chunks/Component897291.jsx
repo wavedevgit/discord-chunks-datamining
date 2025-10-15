@@ -105,7 +105,7 @@ function O(e) {
     })
   };
   return (0, r.jsx)(o.u, {
-    text: h.intl.string(h.t.sWtWDX),
+    text: h.intl.string(h.t.sWtWDQ),
     children: (0, r.jsx)(_.Z, y(E({
       className: m.button,
       isActive: false,

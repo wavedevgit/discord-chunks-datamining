@@ -24,18 +24,18 @@ function h(e) {
     userId: t,
     guildId: n,
     channelId: h,
-    location: E,
-    onAction: v,
+    location: v,
+    onAction: E,
     appContext: j
-  } = e, P = i.useContext(f.AnalyticsContext), p = (0, u.Aq)(), S = (0, r.e7)([g.Z], () => null != h ? h : g.Z.getChannelId(n, true), [h, n]), y = (0, r.e7)([c.ZP], () => null == n ? null : c.ZP.getMember(n, t), [n, t]), C = (0, s.m)(n);
-  return null != n && null != y && C ? (0, l.jsx)(o.sNh, {
+  } = e, P = i.useContext(Z.AnalyticsContext), p = (0, u.Aq)(), y = (0, r.e7)([g.Z], () => null != h ? h : g.Z.getChannelId(n, true), [h, n]), S = (0, r.e7)([c.ZP], () => null == n ? null : c.ZP.getMember(n, t), [n, t]), C = (0, s.m)(n);
+  return null != n && null != S && C ? (0, l.jsx)(o.sNh, {
     id: "mod-view",
-    label: O.intl.string(O.t.kj3tz2),
+    label: O.intl.string(O.t.kj3tz8),
     action: () => {
-      null == v || v(), (0, d.i)(j), (0, a.r)(n, t, null != S ? S : b.oC.MEMBER_SAFETY, {
+      null == E || E(), (0, d.i)(j), (0, a.r)(n, t, null != y ? y : b.oC.MEMBER_SAFETY, {
         modViewPanel: m.k.INFO,
-        sourceLocation: null != E ? E : P.location
-      }), p.dispatch(Z.CkL.POPOUT_CLOSE)
+        sourceLocation: null != v ? v : P.location
+      }), p.dispatch(f.CkL.POPOUT_CLOSE)
     }
   }) : null
 }

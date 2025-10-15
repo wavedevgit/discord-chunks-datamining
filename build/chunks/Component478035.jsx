@@ -18,7 +18,7 @@ function d(e) {
     n = (0, o.D)();
   return __OVERLAY__ || t !== s.I_8 && !n ? null : (0, r.jsx)(l.sNh, {
     id: "go-to-original-guild",
-    label: u.intl.string(u.t.WYj55Y),
+    label: u.intl.string(u.t.WYj55e),
     action: function() {
       (0, a.XU)(e.guild_id, e.id)
     }

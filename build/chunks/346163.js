@@ -48,21 +48,21 @@ function h(e) {
     } = (0, l.eC)(null == e ? true : e.id),
     w = C || (null == E ? true : E.isApplicationPending) === true,
     Z = (null == E ? true : E.canApply) === true,
-    R = f.intl.format(f.t.aJUdOi, {
+    R = f.intl.format(f.t.aJUdOj, {
       faqUrl: o.Z.getArticleURL(p.BhN.CREATOR_FAQ)
     });
-  I && P ? t = true === h ? f.intl.format(f.t["0o1Q+t"], {
+  I && P ? t = true === h ? f.intl.format(f.t["0o1Q+v"], {
     communityGuidelineUrl: p.EYA.GUIDELINES
-  }) : f.intl.format(f.t.b6h59n, {
+  }) : f.intl.format(f.t.b6h59v, {
     communityGuidelineUrl: p.EYA.GUIDELINES
-  }) : I && null != S && (t = f.intl.format(f.t.TvX207, {
+  }) : I && null != S && (t = f.intl.format(f.t.TvX209, {
     requestCooldownDuration: S,
     creatorRevenuePolicyUrl: o.Z.getArticleURL(p.BhN.CREATOR_POLICY)
   }));
   let D = n && x && false === b,
     A = n && false === h,
     L = (0, m.f)(),
-    k = I && Z && x ? f.intl.format(f.t.wbVIUB, {}) : true;
+    k = I && Z && x ? f.intl.format(f.t.wbVIUF, {}) : true;
   return r.useEffect(() => {
     D && N()
   }, [N, D]), {

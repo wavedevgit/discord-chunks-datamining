@@ -38,15 +38,15 @@ function m(e) {
       }, "".concat(e.section, "-").concat(e.row))
     }, [x, j, v, m]),
     O = l.useCallback(e => 0 === e.section ? (0, r.jsx)(f, {
-      text: u.intl.formatToPlainString(u.t["4E27fz"], {
+      text: u.intl.formatToPlainString(u.t["4E27f3"], {
         count: j.length
       })
     }, e.section) : 1 === e.section ? (0, r.jsx)(f, {
-      text: u.intl.formatToPlainString(u.t.csPc4D, {
+      text: u.intl.formatToPlainString(u.t.csPc4O, {
         count: v.length
       })
     }, e.section) : (0, r.jsx)(f, {
-      text: u.intl.string(u.t["wUNQ+w"])
+      text: u.intl.string(u.t["wUNQ+/"])
     }, e.section), [j.length, v.length]),
     S = l.useCallback(e => 1 === e && j.length > 0 || 2 === e && (j.length > 0 || v.length > 0) ? 64 : 32, [j.length, v.length]),
     N = l.useCallback(() => {
@@ -67,7 +67,7 @@ function m(e) {
       className: h.list,
       children: (0, r.jsx)(c.Z, {
         channel: t,
-        header: u.intl.string(u.t.HgTQ8p),
+        header: u.intl.string(u.t.HgTQ8v),
         startThread: n
       })
     });

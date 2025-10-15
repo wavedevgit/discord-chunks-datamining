@@ -1,7 +1,7 @@
 /** Chunk was on 8246 **/
 /** chunk id: 540679, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => m
+  default: () => _
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,14 +13,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk9156 = require("./9156.js"),
   Chunk621600 = require("./621600.js"),
   Chunk388032 = require("./388032.jsx");
-let m = t => {
+let _ = t => {
   var e;
   let {
     onClose: n,
-    channelId: m,
-    applicationId: O,
-    transitionState: _
-  } = t, h = (0, d.e7)([o.ZP], () => o.ZP.getChannelMuteConfig(null, m)), p = l.useMemo(() => (0, s.k)().map(t => {
+    channelId: _,
+    applicationId: h,
+    transitionState: m
+  } = t, p = (0, d.e7)([o.ZP], () => o.ZP.getChannelMuteConfig(null, _)), O = l.useMemo(() => (0, s.k)().map(t => {
     let {
       label: e,
       value: n
@@ -31,20 +31,20 @@ let m = t => {
     }
   }), []);
   return (0, i.jsx)(a.Modal, {
-    transitionState: _,
+    transitionState: m,
     onClose: n,
-    title: g.intl.string(g.t.NkwaBs),
+    title: c.intl.string(c.t.NkwaBg),
     actions: [{
       variant: "primary",
-      text: g.intl.string(g.t.cpT0Cq),
+      text: c.intl.string(c.t.cpT0Cg),
       onClick: n
     }],
     children: (0, i.jsx)(r.E, {
-      options: p,
+      options: O,
       onChange: t => {
-        u.Z.updateAppDMOverrideSettings(null, m, O, (0, s.u9)(t), c.ZB.Muted)
+        u.Z.updateAppDMOverrideSettings(null, _, h, (0, s.u9)(t), g.ZB.Muted)
       },
-      value: null != (e = null == h ? true : h.selected_time_window) ? e : true
+      value: null != (e = null == p ? true : p.selected_time_window) ? e : true
     })
   })
 }

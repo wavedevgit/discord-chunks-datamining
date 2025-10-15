@@ -28,11 +28,11 @@ let E = function(t) {
   }, [e]), O = s.useCallback(() => {
     E || (g(true), (0, c.Uj)(n).then(() => {
       e(), (0, d.t)({
-        text: x.intl.string(x.t.FhgVWi),
+        text: x.intl.string(x.t.FhgVWl),
         id: "safety-tools-report-false-positive"
       })
     }).catch(() => {
-      g(false), (0, r.showToast)((0, r.createToast)(x.intl.string(x.t.R0RpRX), r.ToastType.FAILURE))
+      g(false), (0, r.showToast)((0, r.createToast)(x.intl.string(x.t.R0RpRU), r.ToastType.FAILURE))
     }))
   }, [n, e, E]);
   return (0, i.jsxs)(T.Z, {
@@ -47,12 +47,12 @@ let E = function(t) {
       children: [(0, i.jsx)(r.Button, {
         onClick: A,
         fullWidth: true,
-        text: x.intl.string(x.t.qpWnyC)
+        text: x.intl.string(x.t.qpWnyM)
       }), (0, i.jsx)(r.Text, {
         variant: "text-sm/normal",
         color: "text-muted",
         className: _.reportFalsePositiveText,
-        children: x.intl.format(x.t["2uYViD"], {
+        children: x.intl.format(x.t["2uYViI"], {
           reportFalsePositiveHook: (t, e) => (0, i.jsx)(r.P3F, {
             className: _.reportFalsePositiveButton,
             tag: "span",

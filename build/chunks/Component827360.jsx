@@ -31,15 +31,15 @@ let p = e => {
     caretConfig: {
       align: "start"
     },
-    title: u.intl.string(u.t.epBu6F),
-    body: u.intl.string(u.t["o8+3AX"]),
+    title: u.intl.string(u.t.epBu6O),
+    body: u.intl.string(u.t["o8+3AQ"]),
     graphic: {
       type: "image",
       src: d.Z
     },
     gradientColor: "blue",
     actions: [{
-      text: u.intl.string(u.t.dp9qDi),
+      text: u.intl.string(u.t.dp9qDg),
       variant: "primary",
       onClick: () => {
         null == p || p(), (0, s.mK)({

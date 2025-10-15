@@ -26,7 +26,7 @@ function p() {
   if (null == require || !p) return null;
   let h = Chunk13140.BB(require.shortcut, true);
   return {
-    title: Chunk388032.intl.format(Chunk388032.t.S5uhCN, {
+    title: Chunk388032.intl.format(Chunk388032.t.S5uhCA, {
       keybind: h,
       keybindHook: () => (0, Chunk951288.jsx)("span", {
         style: {

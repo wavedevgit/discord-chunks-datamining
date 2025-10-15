@@ -53,11 +53,11 @@ function _(e) {
     className: d.downloadInvoice,
     children: [(0, r.jsx)(o.Anchor, {
       onClick: () => p(false),
-      children: u.intl.formatToPlainString(u.t.R0xzCN, {})
+      children: u.intl.formatToPlainString(u.t.R0xzCA, {})
     }), t.hasRefundInvoiceURLs ? (0, r.jsx)(o.Anchor, {
       className: d.downloadRefundInvoice,
       onClick: () => p(true),
-      children: u.intl.formatToPlainString(u.t["3x6NGw"], {})
+      children: u.intl.formatToPlainString(u.t["3x6NGx"], {})
     }) : null, null != l && "" !== l && (0, r.jsx)(o.M14, {
       type: "critical",
       children: l
@@ -66,11 +66,11 @@ function _(e) {
     className: d.downloadInvoice,
     children: [(0, r.jsx)(o.Anchor, {
       href: g,
-      children: u.intl.formatToPlainString(u.t.R0xzCN, {})
+      children: u.intl.formatToPlainString(u.t.R0xzCA, {})
     }), null != E ? E.map((e, t) => (0, r.jsx)(o.Anchor, {
       className: d.downloadRefundInvoice,
       href: e,
-      children: u.intl.formatToPlainString(u.t["3x6NGw"], {})
+      children: u.intl.formatToPlainString(u.t["3x6NGx"], {})
     }, t)) : null, null != l && "" !== l && (0, r.jsx)(o.M14, {
       type: "critical",
       children: l
@@ -81,7 +81,7 @@ function _(e) {
       onClick: () => {
         h(t, t.paymentSource)
       },
-      children: u.intl.formatToPlainString(u.t.onRIxS, {})
+      children: u.intl.formatToPlainString(u.t.onRIxc, {})
     })
   }) : null
 }

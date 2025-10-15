@@ -21,7 +21,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk585483 = require("./585483.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk124798 = require("./124798.js"),
+  Chunk484718 = require("./484718.js"),
   Chunk256076 = require("./256076.js");
 
 function C(e, t, n) {
@@ -210,15 +210,15 @@ class M extends(r = Chunk647438.PureComponent) {
       "aria-label": Chunk134616 ? function(e) {
         switch (e) {
           case E.S9g.USER_SETTINGS:
-            return v.intl.string(v.t.cduTBL);
+            return v.intl.string(v.t.cduTBA);
           case E.S9g.CHANNEL_SETTINGS:
-            return v.intl.string(v.t.XPDhcc);
+            return v.intl.string(v.t.XPDhcX);
           case E.S9g.COLLECTIBLES_SHOP:
-            return v.intl.string(v.t.pWG4ze);
+            return v.intl.string(v.t.pWG4zc);
           case E.S9g.MANA_PLAYGROUND:
             return "Component Playground";
           case E.S9g.CHECKPOINT:
-            return v.intl.string(y.default["CdU/PF"]);
+            return v.intl.string(y.default["CdU/PD"]);
           default:
             return ""
         }

@@ -31,12 +31,12 @@ function l() {
     }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
       className: Chunk521868.header,
       variant: "heading-xl/semibold",
-      children: Chunk388032.intl.string(Chunk388032.t.yJHJei)
+      children: Chunk388032.intl.string(Chunk388032.t.yJHJen)
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       className: Chunk521868.text,
       color: "header-secondary",
       variant: "text-md/normal",
-      children: Chunk388032.intl.string(Chunk388032.t.p2dIh6)
+      children: Chunk388032.intl.string(Chunk388032.t.p2dIh4)
     })]
   })
 }

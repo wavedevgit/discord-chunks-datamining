@@ -26,9 +26,9 @@ function o(e) {
     }), (0, r.jsx)(i.Heading, {
       variant: "heading-lg/semibold",
       color: "header-primary",
-      children: null != o ? l.intl.formatToPlainString(l.t.f5Jaw7, {
+      children: null != o ? l.intl.formatToPlainString(l.t.f5Jaw8, {
         guildName: o.name
-      }) : l.intl.string(l.t["0sTyEb"])
+      }) : l.intl.string(l.t["0sTyER"])
     }), (0, r.jsxs)("div", {
       className: a.incompleteButtonsContainer,
       children: [(0, r.jsx)(i.Button, {
@@ -36,13 +36,13 @@ function o(e) {
         onClick: n,
         variant: "secondary",
         size: "md",
-        text: l.intl.string(l.t.h3aGmv)
+        text: l.intl.string(l.t.h3aGmp)
       }), (0, r.jsx)(i.Button, {
         fullWidth: true,
         onClick: t,
         variant: "critical-primary",
         size: "md",
-        text: l.intl.string(l.t.OQFlFD)
+        text: l.intl.string(l.t.OQFlFB)
       })]
     })]
   })

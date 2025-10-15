@@ -88,7 +88,7 @@ class S {
     })), E(this, "renderMoreAvatars", () => (0, r.jsx)(s.u, {
       asContainer: true,
       tag: "span",
-      text: x.intl.string(x.t["UTjRE/"]),
+      text: x.intl.string(x.t.UTjREx),
       position: "bottom",
       children: (0, r.jsx)(c.P3F, {
         className: C.moreAvatars,
@@ -148,7 +148,7 @@ function I(e) {
     children: [(0, r.jsx)(v.iz, {
       className: C.divider
     }), (0, r.jsx)(c.IGR, {
-      text: x.intl.string(x.t.l1QVfj),
+      text: x.intl.string(x.t.l1QVfn),
       disableColor: true,
       className: C.akaBadge
     }), l.length > 0 ? (0, r.jsx)(u.ZP, {

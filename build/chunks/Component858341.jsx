@@ -21,13 +21,13 @@ var Chunk374470 = require("./374470.js"),
 function k(e) {
   var n;
   let t, k, Z, {
-      channel: m,
-      message: x,
-      target: S,
+      channel: x,
+      message: S,
+      target: m,
       attachment: _,
       onSelect: j
     } = e,
-    v = S;
+    v = m;
   if (null != _) k = t = _.url;
   else
     for (;
@@ -35,24 +35,24 @@ function k(e) {
   let b = null == (n = document.getSelection()) ? true : n.toString(),
     C = (0, a.Z)(b),
     Q = (0, o.Z)(b),
-    w = (0, f.Z)(x, m),
-    T = (0, p.Z)(x, m),
-    B = (0, u.Z)(x, m),
-    H = (0, h.Z)(x, m),
+    w = (0, f.Z)(S, x),
+    T = (0, p.Z)(S, x),
+    B = (0, u.Z)(S, x),
+    H = (0, h.Z)(S, x),
     I = (0, d.Z)(null != t ? t : k, Z),
     K = (0, r.Z)({
-      id: x.id,
-      label: g.intl.string(g.t.zBoHlf),
-      shiftId: "".concat(x.channel_id, "-").concat(x.id)
+      id: S.id,
+      label: g.intl.string(g.t.zBoHlZ),
+      shiftId: "".concat(S.channel_id, "-").concat(S.id)
     }),
     M = (0, r.Z)({
-      id: x.author.id,
-      label: g.intl.string(g.t.Muw4wm)
+      id: S.author.id,
+      label: g.intl.string(g.t.Muw4ws)
     });
   return (0, l.jsxs)(i.v2r, {
     navId: "message",
     onClose: c.Zy,
-    "aria-label": g.intl.string(g.t.ChPNkN),
+    "aria-label": g.intl.string(g.t.ChPNkJ),
     onSelect: j,
     children: [(0, l.jsx)(i.kSQ, {
       children: C

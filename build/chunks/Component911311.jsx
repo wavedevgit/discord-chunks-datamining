@@ -70,7 +70,7 @@ let E = 2.1,
       b = (0, o.rO)() ? f.Z : _.Z;
     return (0, r.jsx)(c.Z, h({
       gradientColor: "nitro-pink",
-      title: d.intl.string(d.t["9C+41g"]),
+      title: d.intl.string(d.t["9C+41t"]),
       subtitle: g,
       videoSrc: b,
       loopAt: E,

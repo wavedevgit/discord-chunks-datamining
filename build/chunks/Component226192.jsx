@@ -143,14 +143,14 @@ function _(e, t) {
 
 function p(e) {
   (0, i.h7j)(t => (0, r.jsx)(i.ConfirmModal, u(l({
-    header: o.intl.string(o.t.wLGrjB),
-    confirmText: o.intl.string(o.t["cY+Oob"]),
+    header: o.intl.string(o.t.wLGrjI),
+    confirmText: o.intl.string(o.t["cY+Ooa"]),
     onConfirm: e,
-    cancelText: o.intl.string(o.t["ETE/oC"])
+    cancelText: o.intl.string(o.t["ETE/oK"])
   }, t), {
     children: (0, r.jsx)(i.Text, {
       variant: "text-md/normal",
-      children: o.intl.string(o.t.arYQ2X)
+      children: o.intl.string(o.t.arYQ2d)
     })
   })))
 }

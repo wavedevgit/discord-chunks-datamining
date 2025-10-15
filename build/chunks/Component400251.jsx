@@ -2,7 +2,7 @@
 /** chunk id: 400251, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => N,
-  m: () => P
+  m: () => T
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -60,7 +60,7 @@ function Z(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let P = e => {
+let T = e => {
   let {
     onClick: t
   } = e;
@@ -74,12 +74,12 @@ let P = e => {
       variant: "text-sm/semibold",
       color: "header-primary",
       className: I.addServerText,
-      children: C.intl.string(C.t.H9jxS1)
+      children: C.intl.string(C.t.H9jxS0)
     })]
   })
 };
 
-function T(e) {
+function P(e) {
   let {
     entry: t
   } = e, [l, s] = i.useState(false), d = i.useRef(null), {
@@ -91,7 +91,7 @@ function T(e) {
     }),
     children: (0, r.jsxs)(p.ZP, {
       children: [u ? (0, r.jsx)(o.u, {
-        text: C.intl.string(C.t.XnuOvN),
+        text: C.intl.string(C.t.XnuOvL),
         children: (0, r.jsx)(p.zx, {
           onClick: () => {
             (0, c.ZDy)(async () => {
@@ -103,7 +103,7 @@ function T(e) {
               }))
             })
           },
-          "aria-label": C.intl.string(C.t.XnuOvN),
+          "aria-label": C.intl.string(C.t.XnuOvL),
           children: (0, r.jsx)(c.vdY, {
             size: "xs",
             color: "currentColor",
@@ -135,13 +135,13 @@ function T(e) {
             return i
           }(e, ["onClick"]);
           return (0, r.jsx)(o.u, {
-            text: C.intl.string(C.t["UKOtz+"]),
+            text: C.intl.string(C.t.UKOtz8),
             children: (0, r.jsx)(p.zx, Z(E({}, n), {
               onClick: e => {
                 t(e)
               },
               ref: d,
-              "aria-label": C.intl.string(C.t["UKOtz+"]),
+              "aria-label": C.intl.string(C.t.UKOtz8),
               children: (0, r.jsx)(c.xhG, {
                 size: "md",
                 color: "currentColor",
@@ -175,8 +175,8 @@ let N = e => {
     id: l.guildId,
     icon: l.icon,
     size: 40
-  })) ? t : true, P = C.intl.string(C.t.VJlc0S);
-  return p && (P = C.intl.string(C.t.cqWE2Z)), (0, r.jsxs)("div", {
+  })) ? t : true, T = C.intl.string(C.t.VJlc0d);
+  return p && (T = C.intl.string(C.t.cqWE2d)), (0, r.jsxs)("div", {
     className: I.card,
     onContextMenu: e => {
       (0, d.jW)(e, async () => {
@@ -242,7 +242,7 @@ let N = e => {
           }), (0, r.jsx)(c.Text, {
             variant: "text-xs/normal",
             color: "header-secondary",
-            children: C.intl.format(C.t["LC+S+m"], {
+            children: C.intl.format(C.t["LC+S+v"], {
               membersOnline: l.approximatePresenceCount
             })
           })]
@@ -253,7 +253,7 @@ let N = e => {
           }), (0, r.jsx)(c.Text, {
             variant: "text-xs/normal",
             color: "header-secondary",
-            children: C.intl.format(C.t.zRl6XR, {
+            children: C.intl.format(C.t.zRl6XV, {
               count: l.approximateMemberCount
             })
           })]
@@ -264,11 +264,11 @@ let N = e => {
           loading: a,
           variant: p ? "secondary" : "active",
           onClick: O,
-          text: P,
+          text: T,
           fullWidth: true
         })
       })]
-    }), (0, r.jsx)(T, {
+    }), (0, r.jsx)(P, {
       entry: l
     })]
   })

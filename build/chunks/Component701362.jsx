@@ -168,7 +168,7 @@ class x extends Chunk647438.PureComponent {
           }), !Chunk442837 && (0, Chunk951288.jsx)(Chunk576855.Z, {
             type: Chunk576855.Z.Types.INLINE,
             className: Chunk839021.protip,
-            children: __OVERLAY__ ? Chunk388032.intl.string(Chunk388032.t.YRdw70) : Chunk388032.intl.string(Chunk388032.t.CCTgbF)
+            children: __OVERLAY__ ? Chunk388032.intl.string(Chunk388032.t["YRdw7+"]) : Chunk388032.intl.string(Chunk388032.t.CCTgbG)
           })]
         })]
       })

@@ -146,14 +146,14 @@ let X = (e, t, i) => {
             expiresAt: y.expires_at,
             className: F.heroOfferCountdown
           }), (0, r.jsx)(x.Z, {
-            children: j ? Z.intl.format(Z.t["3yZP0G"], {
+            children: j ? Z.intl.format(Z.t["3yZP0N"], {
               percent: y.discount.amount
             }) : m
           }), j && null != O && (0, r.jsx)(l.Text, {
             className: F.churnEntrypointDescriptionBrandRefresh,
             variant: "text-sm/medium",
             color: "text-primary",
-            children: Z.intl.format(Z.t["3Q4wCy"], {
+            children: Z.intl.format(Z.t["3Q4wCw"], {
               discountedPrice: O,
               billingPeriod: (0, E.JP)(y.discount.user_usage_limit_interval),
               numMonths: y.discount.user_usage_limit
@@ -169,12 +169,12 @@ let X = (e, t, i) => {
             variant: "expressive",
             icon: l.SrA,
             size: "md",
-            text: Z.intl.string(Z.t.zrCzVB),
+            text: Z.intl.string(Z.t.zrCzVF),
             onClick: () => X(C, D, L.R.CONFIRM_DISCOUNT)
           }), (0, r.jsx)(R.Z, {
             variant: z || j ? "secondary" : "expressive",
             size: "md",
-            buttonTextOverride: Z.intl.string(Z.t["3KomGa"])
+            buttonTextOverride: Z.intl.string(Z.t["3KomGR"])
           })]
         }), N]
       })
@@ -210,14 +210,14 @@ let X = (e, t, i) => {
           variant: "display-lg",
           color: "always-white",
           className: O ? F.churnDiscountHeader : F.header,
-          children: O && null != p ? Z.intl.format(Z.t["3yZP0G"], {
+          children: O && null != p ? Z.intl.format(Z.t["3yZP0N"], {
             percent: p.discount.amount
           }) : c
         }), O && null != m && (0, r.jsx)(l.Text, {
           className: F.churnEntrypointDescription,
           variant: "text-sm/medium",
           color: "always-white",
-          children: Z.intl.format(Z.t["3Q4wCy"], {
+          children: Z.intl.format(Z.t["3Q4wCw"], {
             discountedPrice: m,
             billingPeriod: (0, E.JP)(p.discount.user_usage_limit_interval),
             numMonths: p.discount.user_usage_limit
@@ -234,13 +234,13 @@ let X = (e, t, i) => {
               variant: "expressive",
               icon: l.SrA,
               size: "md",
-              text: Z.intl.string(Z.t.zrCzVB),
+              text: Z.intl.string(Z.t.zrCzVF),
               onClick: () => X(b, y, L.R.CONFIRM_DISCOUNT),
               fullWidth: true
             }), (0, r.jsx)(R.Z, {
               variant: "overlay-secondary",
               size: "md",
-              buttonTextOverride: Z.intl.string(Z.t.Ve9Ge6),
+              buttonTextOverride: Z.intl.string(Z.t.Ve9Ge3),
               fullWidth: true
             })]
           }), !O && (0, r.jsx)("div", {
@@ -249,7 +249,7 @@ let X = (e, t, i) => {
               look: s.iL.FILLED,
               color: s.Tt.BRAND,
               textOptions: {
-                textOverride: Z.intl.string(Z.t["3KomGa"])
+                textOverride: Z.intl.string(Z.t["3KomGR"])
               },
               className: F.button
             })
@@ -284,7 +284,7 @@ let X = (e, t, i) => {
               look: Chunk755721.iL.FILLED,
               color: Chunk755721.Tt.BRAND,
               textOptions: {
-                textOverride: Chunk388032.intl.string(Chunk388032.t["3KomGa"])
+                textOverride: Chunk388032.intl.string(Chunk388032.t["3KomGR"])
               },
               className: Chunk644219.button
             })
@@ -324,7 +324,7 @@ let X = (e, t, i) => {
             look: s.iL.FILLED,
             color: s.Tt.BRAND,
             textOptions: {
-              textOverride: Z.intl.string(Z.t["3KomGa"])
+              textOverride: Z.intl.string(Z.t["3KomGR"])
             },
             className: F.button
           })
@@ -344,15 +344,15 @@ let X = (e, t, i) => {
       discountedPrice: s
     } = e, {
       analyticsLocations: c
-    } = (0, d.ZP)(u.Z.PREMIUM_MARKETING_HERO_CTA), h = (0, O.W)(), m = (0, b.Vi)(), E = (0, y._O)(), v = Z.intl.string(Z.t.qYKftX), I = (0, S.b)(), T = (0, r.jsx)(J, {
+    } = (0, d.ZP)(u.Z.PREMIUM_MARKETING_HERO_CTA), h = (0, O.W)(), m = (0, b.Vi)(), E = (0, y._O)(), v = Z.intl.string(Z.t.qYKftb), I = (0, S.b)(), T = (0, r.jsx)(J, {
       className: t
-    }), A = Z.intl.string(Z.t.ifwQZb), {
+    }), A = Z.intl.string(Z.t.ifwQZW), {
       fractionalState: C,
       endsAt: N
     } = (0, _.Z)(), R = (0, f.ZP)(N, f.aj.CREDITS_ENDS_IN);
     h || m ? T = (0, r.jsx)(ee, {
       isEligibleForBogoPromotion: m
-    }) : I && (v = Z.intl.string(Z.t.qYKftX), T = (0, r.jsx)($, {}));
+    }) : I && (v = Z.intl.string(Z.t.qYKftb), T = (0, r.jsx)($, {}));
     let P = null;
     if (C === G.a$.NONE || h) P = n ? (0, r.jsx)(j.Z, {
       enablePremiumBrandRefresh: true,
@@ -373,7 +373,7 @@ let X = (e, t, i) => {
             color: "var(--premium-tier-2-purple-for-gradients)"
           })
         }),
-        t = Z.intl.format(Z.t["yR+oDD"], {
+        t = Z.intl.format(Z.t["yR+oDA"], {
           helpCenterLink: g.Z.getArticleURL(B.BhN.FRACTIONAL_PREMIUM_ABOUT)
         });
       P = (0, r.jsx)(p.Z, {

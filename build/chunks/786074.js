@@ -10,7 +10,7 @@ let a = {
   MENTION_EVERYONE: () => ({
     test: "everyone",
     text: "@everyone",
-    description: Chunk388032.intl.string(Chunk388032.t.lHC4zy)
+    description: Chunk388032.intl.string(Chunk388032.t.lHC4z8)
   }),
   MENTION_HERE: () => ({
     test: "here",
@@ -21,7 +21,7 @@ let a = {
     test: "game",
     text: "@game",
     inlineAutocompleteType: "gameMentionInput",
-    description: Chunk388032.intl.string(Chunk388032.t["1kR88y"])
+    description: Chunk388032.intl.string(Chunk388032.t["1kR88/"])
   }),
   LAUNCHABLE_APPLICATIONS: () => Chunk490983.Z.launchableApplicationViewItems
 }

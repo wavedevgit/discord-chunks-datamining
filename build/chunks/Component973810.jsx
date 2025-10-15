@@ -34,14 +34,14 @@ function g(e) {
             data: e
           })
         } catch (e) {
-          e instanceof s.Pd ? j(f.intl.string(f.t.xSCvBf)) : j(e.message)
+          e instanceof s.Pd ? j(f.intl.string(f.t.xSCvBQ)) : j(e.message)
         }
       };
     try {
       let n = await e;
       await t(n)
     } catch (e) {
-      d.Z.captureException(e), j(f.intl.string(f.t.xSCvBf))
+      d.Z.captureException(e), j(f.intl.string(f.t.xSCvBQ))
     } finally {
       S(false)
     }
@@ -59,7 +59,7 @@ function g(e) {
       setSlide: g,
       leadingButton: (0, l.jsx)(a.Button, {
         variant: "primary",
-        text: f.intl.string(f.t.Xr3Eks),
+        text: f.intl.string(f.t.Xr3Ekp),
         loading: b,
         onClick: v,
         fullWidth: true

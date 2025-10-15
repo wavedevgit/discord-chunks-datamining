@@ -206,7 +206,7 @@ function x(e) {
       variant: "text-xs/semibold",
       className: D.discountFooterText,
       lineClamp: 2,
-      children: w.intl.formatToPlainString(w.t.IhKBNX, {
+      children: w.intl.formatToPlainString(w.t.IhKBNT, {
         discountOfferAmount: eU
       })
     })]

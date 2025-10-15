@@ -29,7 +29,7 @@ function f(e) {
     y = (0, i._i)(null != n ? n : b),
     O = (0, i.ho)(y, false, g ? E : null);
   return t = null != _ ? _ : .3 > (0, i.Bd)(y) ? o.Z.unsafe_rawColors.PRIMARY_630.css : o.Z.unsafe_rawColors.WHITE_500.css, (0, r.jsx)(s.u, {
-    text: null != m ? m : d.intl.string(d.t.T3PvV4),
+    text: null != m ? m : d.intl.string(d.t.T3PvV1),
     children: (0, r.jsx)(u.Z, {
       className: p,
       color: O,

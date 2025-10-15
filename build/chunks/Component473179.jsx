@@ -20,7 +20,7 @@ function l(e) {
     navId: "activity-popout-overflow-popout",
     onClose: n,
     onSelect: t,
-    "aria-label": c.intl.string(c.t.SS9Y6P),
+    "aria-label": c.intl.string(c.t.SS9Y6O),
     children: _
   })
 }

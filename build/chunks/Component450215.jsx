@@ -37,15 +37,15 @@ function y(e) {
     groupListingId: I,
     onBeforeDispatchNewListing: S,
     onAfterDispatchNewListing: T
-  } = e, [P, w] = i.useState(s), Z = (0, c.e7)([f.Z], () => f.Z.getSubscriptionListing(P)), R = null == Z, [D, A] = i.useState(R), L = null == Z ? true : Z.subscription_plans[0], k = null != (t = null == Z ? true : Z.published) && t, M = null != (n = null == Z ? true : Z.archived) && n, G = !M && !k && true !== Z, U = true === Z, B = (0, h.mY)(), [F] = x._T(P), [H] = x.mR(P), [W] = x.PK(P), [z] = x.d9(P, 1024), V = "" !== F ? F : C.intl.string(C.t.QWhe9G), K = "" !== F && null != z && "" !== W && null != H && !B, Y = x.rU(P), {
+  } = e, [P, w] = i.useState(s), Z = (0, c.e7)([f.Z], () => f.Z.getSubscriptionListing(P)), R = null == Z, [D, A] = i.useState(R), L = null == Z ? true : Z.subscription_plans[0], k = null != (t = null == Z ? true : Z.published) && t, M = null != (n = null == Z ? true : Z.archived) && n, G = !M && !k && true !== Z, U = true === Z, B = (0, h.mY)(), [F] = x._T(P), [H] = x.mR(P), [W] = x.PK(P), [V] = x.d9(P, 1024), z = "" !== F ? F : C.intl.string(C.t.QWhe9P), K = "" !== F && null != V && "" !== W && null != H && !B, Y = x.rU(P), {
     loading: q,
     error: X,
-    handleCreateOrUpdateFromEditState: J
+    handleCreateOrUpdateFromEditState: Q
   } = x.Xo(), {
-    submitting: Q,
+    submitting: J,
     error: $,
     publishSubscriptionListing: ee
-  } = (0, p.HQ)(), et = q || Q;
+  } = (0, p.HQ)(), et = q || J;
   return (0, r.jsxs)("div", {
     className: O.container,
     children: [(0, r.jsxs)("div", {
@@ -54,20 +54,20 @@ function y(e) {
       }),
       children: [(0, r.jsx)("div", {
         className: O.headerImageContainer,
-        children: null == z ? (0, r.jsx)(j.Z, {
+        children: null == V ? (0, r.jsx)(j.Z, {
           className: O.starIcon,
           "aria-hidden": true
         }) : (0, r.jsx)("img", {
           className: O.headerImage,
-          src: z,
-          alt: V
+          src: V,
+          alt: z
         })
       }), (0, r.jsxs)("div", {
         className: O.headerListingInfo,
         children: [(0, r.jsx)(d.Text, {
           variant: "text-md/medium",
           color: "interactive-active",
-          children: V
+          children: z
         }), (0, r.jsx)(d.LZC, {
           size: 2
         }), (0, r.jsxs)("div", {
@@ -78,11 +78,11 @@ function y(e) {
             className: O.draftBadge
           }), M && (0, r.jsx)(d.IGR, {
             color: (0, u.Lq)(_.Ilk.PRIMARY_500),
-            text: C.intl.string(C.t.nhbtEl),
+            text: C.intl.string(C.t.nhbtEh),
             className: O.archivedBadge
           }), U && (0, r.jsx)(d.IGR, {
             color: (0, u.Lq)(_.Ilk.PRIMARY_500),
-            text: C.intl.string(C.t.aiwXeq),
+            text: C.intl.string(C.t.aiwXen),
             className: O.unsavedBadge
           }), null != L && (0, r.jsxs)(d.Text, {
             color: "interactive-normal",
@@ -97,10 +97,10 @@ function y(e) {
           onClick: () => {
             x.GM(P), R ? null == E || E() : A(false)
           },
-          text: C.intl.string(C.t["ETE/oC"])
+          text: C.intl.string(C.t["ETE/oK"])
         }), (0, r.jsx)(d.Button, {
           variant: "primary",
-          onClick: () => J({
+          onClick: () => Q({
             guildId: l,
             editStateId: P,
             groupListingId: I,
@@ -111,11 +111,11 @@ function y(e) {
           }),
           disabled: !K || !Y,
           loading: et,
-          text: C.intl.string(C.t["R3BPH+"])
+          text: C.intl.string(C.t.R3BPHx)
         })]
       }) : (0, r.jsx)(d.P3F, {
         onClick: () => A(true),
-        "aria-label": C.intl.string(C.t["2qPbmO"]),
+        "aria-label": C.intl.string(C.t["2qPbmJ"]),
         children: (0, r.jsx)(d.vdY, {
           size: "xs",
           color: "currentColor",

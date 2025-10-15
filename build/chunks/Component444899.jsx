@@ -1,7 +1,7 @@
 /** Chunk was on 15076 **/
 /** chunk id: 444899, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  f: () => b
+  f: () => S
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -29,7 +29,7 @@ function N(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class b extends Chunk647438.PureComponent {
+class S extends Chunk647438.PureComponent {
   highlight() {
     this.setState({
       highlight: true
@@ -87,12 +87,12 @@ class b extends Chunk647438.PureComponent {
     let s = (0, Chunk471445.KS)(require);
     if (require.type === Chunk981631.d4z.GUILD_CATEGORY && null != require.guild_id && "" !== require.guild_id) {
       let e = Chunk324067.Z.getCategories(require.guild_id);
-      t = Chunk388032.intl.formatToPlainString(Chunk388032.t["2KzH89"], {
+      t = Chunk388032.intl.formatToPlainString(Chunk388032.t["2KzH8/"], {
         num: null != module[require.id] ? module[require.id].length : 0
       })
-    } else t = null != module ? Chunk388032.intl.formatToPlainString(Chunk388032.t.L1zJgb, {
+    } else t = null != module ? Chunk388032.intl.formatToPlainString(Chunk388032.t.L1zJgY, {
       categoryName: (0, Chunk933557.F6)(module, Chunk594174.default, Chunk699516.Z)
-    }) : Chunk388032.intl.string(Chunk388032.t.uIzfCE);
+    }) : Chunk388032.intl.string(Chunk388032.t.uIzfCA);
     return (0, Chunk951288.jsxs)(Chunk600164.Z, {
       grow: 1,
       className: Chunk385888.nameContainer,

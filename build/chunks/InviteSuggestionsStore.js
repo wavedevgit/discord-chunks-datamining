@@ -19,26 +19,26 @@ var u, c, Chunk442837 = require("./442837.js"),
 let N = new Set,
   E = [],
   j = new Map,
-  S = {
+  T = {
     numFriends: 0,
     numDms: 0,
     numGroupDms: 0,
     numChannels: 0
   };
 
-function T(e) {
+function S(e) {
   let {
     isFriendsInVCInvitesEnabled: t
   } = (0, m.s6)({
     guildId: null == a ? true : a.id,
     location: "InviteSuggestionsStore",
     autoTrackExposure: false
-  }), n = new Set, l = (null == r ? true : r.type) === b.d4z.GUILD_VOICE, i = null;
-  null == a || o === O.Iq.EMBEDDED_APPLICATION || t && l || (i = a.id);
+  }), n = new Set, l = (null == r ? true : r.type) === O.d4z.GUILD_VOICE, i = null;
+  null == a || o === b.Iq.EMBEDDED_APPLICATION || t && l || (i = a.id);
   let s = (0, v.rh)(N, i);
   for (let e of (null == s || _.Z.isBlockedOrIgnored(s.id) || n.add(s.id), p.Z.getUserAffinities())) n.add(e.otherUserId);
   let u = new Set;
-  return o === O.Iq.EMBEDDED_APPLICATION && I.Z.getChannelHistory().map(e => x.Z.getChannel(e)).filter(f.lm).filter(e => e.type === b.d4z.GUILD_TEXT).filter(e => h.Z.can(b.Plq.SEND_MESSAGES, e)).slice(0, 3).forEach(e => u.add(e.id)), (0, v.an)({
+  return o === b.Iq.EMBEDDED_APPLICATION && I.Z.getChannelHistory().map(e => x.Z.getChannel(e)).filter(f.lm).filter(e => e.type === O.d4z.GUILD_TEXT).filter(e => h.Z.can(O.Plq.SEND_MESSAGES, e)).slice(0, 3).forEach(e => u.add(e.id)), (0, v.an)({
     query: e,
     omitUserIds: N,
     suggestedUserIds: n,
@@ -67,7 +67,7 @@ class y extends(u = Chunk442837.ZP.Store) {
     return l
   }
   getInitialCounts() {
-    return S
+    return T
   }
   getSelectedInviteMetadata(e) {
     let t = j.get(e),
@@ -103,8 +103,8 @@ let C = new y(Chunk570140.Z, {
     let {
       rows: g,
       counts: m
-    } = T("");
-    P(g), S = m, l = E.length
+    } = S("");
+    P(g), T = m, l = E.length
   },
   INVITE_SUGGESTIONS_SEARCH: function(e) {
     let {
@@ -113,7 +113,7 @@ let C = new y(Chunk570140.Z, {
     i = "" !== t;
     let {
       rows: n
-    } = T(t);
+    } = S(t);
     n.sort((e, t) => null != e.score && null != t.score ? e.score - t.score : 0), P(n)
   }
 })

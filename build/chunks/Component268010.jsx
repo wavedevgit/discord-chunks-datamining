@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 let I = (e, t, n) => {
-    let r = v.t.LHF6D9,
+    let r = v.t.LHF6Dw,
       i = u.ZP.getName(null == t ? true : t.guild_id, null == t ? true : t.id, n),
       a = e.extra.media_title;
     return v.intl.formatToMarkdownString(r, {
@@ -34,7 +34,7 @@ let I = (e, t, n) => {
       episodeDescription: e.extra.media_subtitle
     }).replaceAll("*", "")
   },
-  T = (e, t) => v.intl.formatToPlainString(v.t.kCbfbN, {
+  T = (e, t) => v.intl.formatToPlainString(v.t.kCbfbG, {
     username: t.username,
     activity: e.extra.media_title
   }),
@@ -74,13 +74,13 @@ let I = (e, t, n) => {
       children: [(0, r.jsx)(b.wG, {
         channel: t,
         entry: n,
-        userDescription: (0, _.kr)(n) ? v.t["LH+Z3y"] : v.t.YuKgml,
+        userDescription: (0, _.kr)(n) ? v.t["LH+Z39"] : v.t.YuKgmp,
         title: n.extra.media_title,
         subtitle: n.extra.media_subtitle,
         headerIcons: (0, r.jsx)(y.Z, {
           onClick: w,
           Icon: o.omf,
-          "aria-label": v.intl.string(v.t.jdJYXw)
+          "aria-label": v.intl.string(v.t.jdJYX1)
         }),
         badges: (0, r.jsx)(E.Gk, {
           location: E.Gt.POPOUT,

@@ -184,7 +184,7 @@ function I(e) {
         onClick: e => {
           null == P || P(e), U(true)
         },
-        "aria-label": h.intl.formatToPlainString(h.t.R8Z8Qr, {
+        "aria-label": h.intl.formatToPlainString(h.t.R8Z8Qk, {
           count: F
         }),
         children: (0, r.jsx)(u.Text, {

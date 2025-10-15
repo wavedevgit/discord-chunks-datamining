@@ -17,7 +17,7 @@ function c(e) {
     message: t,
     compact: n,
     usernameHook: c
-  } = e, u = (0, a.ZP)(t), d = c(u), f = s.intl.format(s.t.Yy6vLs, {
+  } = e, u = (0, a.ZP)(t), d = c(u), f = s.intl.format(s.t.Yy6vLi, {
     username: u.nick,
     usernameHook: d,
     topic: t.content

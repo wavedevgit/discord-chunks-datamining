@@ -333,7 +333,7 @@ let V = Chunk428595.Z.RULES,
           return null != t ? {
             content: "@".concat(t.name)
           } : {
-            content: "@".concat(x.intl.string(x.t["11pdXZ"]))
+            content: "@".concat(x.intl.string(x.t["11pdXV"]))
           }
         }
         return {
@@ -373,7 +373,7 @@ let V = Chunk428595.Z.RULES,
     spoiler: {
       match: o().anyScopeRegex(Chunk981631.$92),
       parse: () => ({
-        content: "<".concat(Chunk388032.intl.string(Chunk388032.t["F+x38C"]).toLowerCase(), ">")
+        content: "<".concat(Chunk388032.intl.string(Chunk388032.t["F+x38P"]).toLowerCase(), ">")
       })
     },
     staticRouteLink: {

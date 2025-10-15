@@ -356,7 +356,7 @@ function q(e) {
         children: t
       }, "command")
     };
-    n = x.intl.format(x.t["rg7U+C"], {
+    n = x.intl.format(x.t["rg7U+P"], {
       userHook: X,
       commandHook: t
     }), B && null != e.renderTargetMessage ? n = (0, r.jsxs)(r.Fragment, {
@@ -384,13 +384,13 @@ function q(e) {
         onClick: e,
         children: (0, r.jsx)("div", {
           className: o()(M.commandName, M.clickable),
-          children: x.intl.string(x.t.YTgRvn)
+          children: x.intl.string(x.t.YTgRvr)
         })
       });
-    n = z ? x.intl.format(x.t.kfV8WM, {
+    n = z ? x.intl.format(x.t.kfV8WF, {
       userHook: X,
       activityHook: t
-    }) : x.intl.format(x.t["6FeSyT"], {
+    }) : x.intl.format(x.t["6FeSyc"], {
       userHook: X
     })
   }

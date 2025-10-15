@@ -17,7 +17,7 @@ function c(e) {
     message: t,
     compact: n,
     usernameHook: c
-  } = e, u = (0, a.ZP)(t), d = c(u), f = s.intl.format(s.t.tv2DNy, {
+  } = e, u = (0, a.ZP)(t), d = c(u), f = s.intl.format(s.t.tv2DNz, {
     username: u.nick,
     usernameHook: d
   });

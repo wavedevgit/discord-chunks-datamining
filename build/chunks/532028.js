@@ -25,7 +25,7 @@ function i(e) {
           return t
         }).join(", "),
         n = e[e.length - 1];
-      return r.intl.formatToPlainString(r.t.PIMweg, {
+      return r.intl.formatToPlainString(r.t.PIMwen, {
         items: t,
         last: n.name
       })

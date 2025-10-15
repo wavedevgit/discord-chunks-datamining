@@ -36,6 +36,6 @@ function c(e) {
     },
     onMouseEnter: u,
     onMouseLeave: d,
-    text: s.intl.string(s.t["+78Pfm"])
+    text: s.intl.string(s.t["+78Pfn"])
   })
 }

@@ -47,7 +47,7 @@ function b(e) {
           color: u.Z.BG_BRAND
         }), (0, r.jsx)(a.Text, {
           variant: "text-xs/medium",
-          children: g.intl.string(g.t.IQjdmV)
+          children: g.intl.string(g.t.IQjdmZ)
         })]
       }), (0, r.jsx)(h.Z, {
         application: I,

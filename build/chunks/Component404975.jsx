@@ -72,7 +72,7 @@ function j(e) {
                 onClick: m,
                 variant: "icon-only",
                 size: "sm",
-                "aria-label": b.intl.string(b.t.cpT0Cq)
+                "aria-label": b.intl.string(b.t.cpT0Cg)
               })
             }), (0, r.jsx)("div", {
               children: h.map(e => (0, r.jsx)(v, {

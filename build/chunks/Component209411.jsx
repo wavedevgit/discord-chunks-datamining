@@ -48,7 +48,7 @@ function x(e) {
     } = e,
     [I, N] = i.useState(E);
 
-  function y(e) {
+  function O(e) {
     let {
       handoffKey: t,
       handoffToken: n,
@@ -69,12 +69,12 @@ function x(e) {
       if (null != e && null != t) {
         let n = null != j ? (0, d.L)(j) : true;
         I ? o.Z.logout("handoff", null).finally(() => {
-          y({
+          O({
             handoffKey: e,
             handoffToken: t,
             handoffSource: n
           })
-        }) : y({
+        }) : O({
           handoffKey: e,
           handoffToken: t,
           handoffSource: n

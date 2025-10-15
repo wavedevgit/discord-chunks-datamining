@@ -30,24 +30,24 @@ function f(t) {
     recurrenceRsvp: c.ZP.getRsvp(e, f, v)
   }), [f, e, v]), y = (0, s.Z)(f, e);
   if (b || (null == y ? true : y.is_canceled)) return null;
-  let h = function() {
+  let O = function() {
     let t = arguments.length > 0 && true !== arguments[0] && arguments[0],
       l = (null == p ? true : p.response) === d.gv.INTERESTED ? d.gv.UNINTERESTED : d.gv.INTERESTED,
       r = t ? null : f;
     a.Z.updateRsvp(e, r, n, l)
   };
   return (0, l.jsxs)(i.sNh, {
-    id: E ? g.intl.string(g.t["7M5gaN"]) : g.intl.string(g.t.FXixvH),
-    label: E ? g.intl.string(g.t["7M5gaN"]) : g.intl.string(g.t.FXixvH),
+    id: E ? g.intl.string(g.t["7M5gaG"]) : g.intl.string(g.t.FXixvL),
+    label: E ? g.intl.string(g.t["7M5gaG"]) : g.intl.string(g.t.FXixvL),
     action: true,
     children: [(0, l.jsx)(i.sNh, {
-      id: g.intl.string(g.t.lwZCFT),
-      label: g.intl.string(g.t.lwZCFT),
-      action: () => h(false)
+      id: g.intl.string(g.t.lwZCFR),
+      label: g.intl.string(g.t.lwZCFR),
+      action: () => O(false)
     }), (0, l.jsx)(i.sNh, {
-      id: g.intl.string(g.t.uoorxi),
-      label: g.intl.string(g.t.uoorxi),
-      action: () => h(true),
+      id: g.intl.string(g.t.uoorxs),
+      label: g.intl.string(g.t.uoorxs),
+      action: () => O(true),
       disabled: null != Z
     })]
   })

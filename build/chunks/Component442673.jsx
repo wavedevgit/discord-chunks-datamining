@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk985002 = require("./985002.js"),
   Chunk957656 = require("./957656.jsx"),
-  Chunk660886 = require("./660886.js"),
+  Chunk345909 = require("./345909.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk601582 = require("./601582.js");
 let u = e => {
@@ -33,12 +33,12 @@ let u = e => {
     onClose: f,
     children: [g && (0, n.jsx)(o.M14, {
       type: "critical",
-      children: s.intl.string(l.default.krIDdy)
+      children: s.intl.string(l.default.krIDd3)
     }), (0, n.jsxs)(o.fef, {
       children: [(0, n.jsx)(a.Z.Header, {
         currentUser: t,
         otherUser: r,
-        header: s.intl.formatToPlainString(l.default["NMSTb/"], {
+        header: s.intl.formatToPlainString(l.default.NMSTb2, {
           isAdult: String(h)
         }),
         icon: (0, n.jsx)(o.Dio, {
@@ -49,25 +49,25 @@ let u = e => {
       }), (0, n.jsxs)(o.Kqy, {
         gap: 16,
         children: [(0, n.jsx)(a.Z.Notice, {
-          notice: h ? s.intl.string(l.default.EvMGLT) : s.intl.string(l.default.f1SUeW)
+          notice: h ? s.intl.string(l.default.EvMGLS) : s.intl.string(l.default.f1SUeX)
         }), (0, n.jsx)(o.Checkbox, {
           checked: p,
           onChange: e => {
             j(e), y(false)
           },
-          label: h ? s.intl.string(l.default["/MYCee"]) : s.intl.string(l.default.VJaHUb)
+          label: h ? s.intl.string(l.default["/MYCeX"]) : s.intl.string(l.default.VJaHUV)
         })]
       })]
     }), (0, n.jsx)(o.Go$, {
       actionsFullWidth: true,
       actions: [{
         variant: "secondary",
-        text: s.intl.string(s.t["ETE/oC"]),
+        text: s.intl.string(s.t["ETE/oK"]),
         onClick: f,
         disabled: m
       }, {
         variant: "critical-primary",
-        text: s.intl.string(l.default["c5L+sl"]),
+        text: s.intl.string(l.default["c5L+sr"]),
         onClick: () => {
           y(false), O(r.id)
         },

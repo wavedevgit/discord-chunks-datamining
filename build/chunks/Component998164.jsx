@@ -67,7 +67,7 @@ function b() {
         children: (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-md/semibold",
           color: "header-primary",
-          children: Chunk388032.intl.string(Chunk388032.t["K/i3iQ"])
+          children: Chunk388032.intl.string(Chunk388032.t["K/i3iY"])
         })
       })]
     })
@@ -98,7 +98,7 @@ function x(e) {
     }), (0, r.jsx)(a.Text, {
       variant: "text-md/normal",
       color: "none",
-      children: g.intl.string(g.t.qce3EM)
+      children: g.intl.string(g.t.qce3EB)
     })]
   })
 }

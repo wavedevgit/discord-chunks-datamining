@@ -42,7 +42,7 @@ function y(e) {
       [O.dropIndicatorBefore]: f,
       [O.dropIndicatorAfter]: p
     }),
-    "aria-label": b.intl.formatToPlainString(b.t["0dR3gw"], {
+    "aria-label": b.intl.formatToPlainString(b.t["0dR3g4"], {
       positionNumber: t + 1
     }),
     children: l

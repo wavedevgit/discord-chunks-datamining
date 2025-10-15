@@ -42,7 +42,7 @@ function p(e) {
     children: (0, r.jsx)(f, {
       src: t,
       size: o.EFr.SIZE_40,
-      "aria-label": u.intl.string(u.t.hG1StD)
+      "aria-label": u.intl.string(u.t.hG1StL)
     })
   })
 }

@@ -54,22 +54,22 @@ function b(e) {
     }
     return e
   }({
-    header: a.intl.string(a.t.VKsXpY),
-    confirmText: a.intl.string(a.t["R3BPH+"]),
-    cancelText: a.intl.string(a.t["ETE/oC"]),
+    header: a.intl.string(a.t.VKsXpa),
+    confirmText: a.intl.string(a.t.R3BPHx),
+    cancelText: a.intl.string(a.t["ETE/oK"]),
     confirmButtonColor: l.zx.Colors.BRAND,
     onConfirm: d
   }, b), r = r = {
     children: (0, n.jsxs)("div", {
       className: s.doubleInput,
       children: [(0, n.jsx)(u.Wrb, {
-        label: a.intl.string(a.t.pSZKvM),
+        label: a.intl.string(a.t.pSZKvL),
         required: true,
         value: p,
         onSelect: j,
         minDate: O
       }), (0, n.jsx)(u.MGJ, {
-        label: a.intl.string(a.t.GOmEb8),
+        label: a.intl.string(a.t.GOmEb2),
         required: true,
         value: p,
         onChange: j

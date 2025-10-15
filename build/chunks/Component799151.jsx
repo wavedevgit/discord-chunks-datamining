@@ -21,13 +21,13 @@ function p(e) {
     className: t
   } = e, n = [{
     keybinds: ["Spacebar", "Enter"],
-    name: f.intl.string(f.t["cs/HVH"])
+    name: f.intl.string(f.t["cs/HVF"])
   }, {
     keybinds: ["up", "down"],
-    name: f.intl.string(f.t.dmMqay)
+    name: f.intl.string(f.t.dmMqa2)
   }, {
     keybinds: ["ESC"],
-    name: f.intl.string(f.t["1ioMJQ"])
+    name: f.intl.string(f.t["1ioMJS"])
   }], a = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), p = (0, d.zP)();
   return (0, c.Yzy)(p, {
     enter: {

@@ -174,7 +174,7 @@ function Q(e) {
     className: b,
     onClick: n,
     onContextMenu: v,
-    "aria-label": B.intl.formatToPlainString(B.t["zLhr9+"], {
+    "aria-label": B.intl.formatToPlainString(B.t["zLhr9/"], {
       applicationName: y,
       applicationDescription: x
     }),
@@ -254,7 +254,7 @@ function J(e) {
           children: (0, l.jsx)(u.Heading, {
             variant: "text-xxs/medium",
             color: "header-primary",
-            children: B.intl.string(B.t["/eVltv"])
+            children: B.intl.string(B.t["/eVltr"])
           })
         }), S && (0, l.jsx)(K, {}), T !== p.ww.NONE && (0, l.jsx)(j.Z, {
           labelType: T
@@ -288,7 +288,7 @@ function J(e) {
             children: (0, l.jsx)(u.Text, {
               variant: "text-xxs/semibold",
               color: "text-muted",
-              children: B.intl.string(B.t["/eVltv"])
+              children: B.intl.string(B.t["/eVltr"])
             })
           }) : null, (0, l.jsx)($, {
             application: t
@@ -308,7 +308,7 @@ function J(e) {
 
 function K() {
   return (0, Chunk951288.jsx)(Chunk28664.u, {
-    text: Chunk388032.intl.string(Chunk388032.t.CfTySQ),
+    text: Chunk388032.intl.string(Chunk388032.t.CfTySU),
     children: (0, Chunk951288.jsx)("div", {
       className: Chunk992878.devShelfBadge,
       children: (0, Chunk951288.jsx)(Chunk880448.Z, {
@@ -566,7 +566,7 @@ function ea(e) {
         variant: N,
         disabled: m || h,
         onClick: x,
-        "aria-label": B.intl.formatToPlainString(B.t["XjP/R+"], {
+        "aria-label": B.intl.formatToPlainString(B.t["XjP/R0"], {
           buttonText: j,
           applicationName: n.name
         }),

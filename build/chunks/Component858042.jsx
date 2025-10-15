@@ -78,7 +78,7 @@ function d(e) {
     });
   return (0, r.jsx)(i.sNh, {
     id: "game-profile-something-wrong",
-    label: o.intl.string(o.t.qP2cXd),
+    label: o.intl.string(o.t.qP2cXV),
     action: d ? _ : f
   })
 }

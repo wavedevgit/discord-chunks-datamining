@@ -60,7 +60,7 @@ function f() {
         return e
       }({}, o), l = l = {
         buttonRef: n,
-        label: p.intl.string(p.t.ZQCf9V),
+        label: p.intl.string(p.t.ZQCf9f),
         isActive: t,
         iconComponent: a.vdY,
         onClick: f

@@ -51,20 +51,20 @@ function _(e) {
       }), (0, d.Z)("verify_email")
     }, []);
   return "failed" === s ? (0, r.jsx)(u.Z, {
-    title: m.intl.string(m.t["PCgG3+"]),
-    subtitle: m.intl.string(m.t.tQpeA3),
-    buttonText: m.intl.string(m.t.dKhVQN),
+    title: m.intl.string(m.t.PCgG39),
+    subtitle: m.intl.string(m.t.tQpeAw),
+    buttonText: m.intl.string(m.t.dKhVQE),
     onButtonClick: E
   }) : "succeeded" === s ? (0, r.jsx)(u.Z, {
-    title: m.intl.string(m.t["dAfGb+"]),
-    buttonText: m.intl.string(m.t["uJWIj/"]),
+    title: m.intl.string(m.t.dAfGb2),
+    buttonText: m.intl.string(m.t.uJWIj4),
     onButtonClick: v,
     image: (0, r.jsx)(l.Om, {
-      alt: m.intl.string(m.t["dAfGb+"])
+      alt: m.intl.string(m.t.dAfGb2)
     })
   }) : (0, r.jsx)(u.Z, {
-    title: m.intl.string(m.t["0c8+5n"]),
-    subtitle: m.intl.string(m.t.ULTCBE),
+    title: m.intl.string(m.t["0c8+5u"]),
+    subtitle: m.intl.string(m.t.ULTCBA),
     loading: true
   })
 }

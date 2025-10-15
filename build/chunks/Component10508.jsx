@@ -32,10 +32,10 @@ let f = t => {
         className: u.discountOfferContent,
         children: [(0, r.jsx)(a.xvT, {
           variant: "text-md/semibold",
-          children: l.status === o.O0b.CANCELED ? c.intl.format(c.t["DC+nPC"], {
+          children: l.status === o.O0b.CANCELED ? c.intl.format(c.t["DC+nPD"], {
             numMonths: e.discount.user_usage_limit,
             discountedPrice: i
-          }) : c.intl.format(c.t.tQvNll, {
+          }) : c.intl.format(c.t.tQvNlp, {
             numMonths: e.discount.user_usage_limit
           })
         }), (0, r.jsx)(p, {
@@ -59,7 +59,7 @@ let f = t => {
         if (d.status === o.O0b.CANCELED) return (0, r.jsx)(a.xvT, {
           variant: "text-md/normal",
           color: "text-secondary",
-          children: c.intl.formatToPlainString(c.t.h2g1Ia, {
+          children: c.intl.formatToPlainString(c.t.h2g1IS, {
             billingPeriod: (0, l.JP)(e.discount.user_usage_limit_interval),
             numMonths: e.discount.user_usage_limit,
             fullPrice: u
@@ -68,7 +68,7 @@ let f = t => {
         return (0, r.jsx)(a.xvT, {
           variant: "text-md/normal",
           color: "text-secondary",
-          children: c.intl.formatToPlainString(c.t.gPzMHa, {
+          children: c.intl.formatToPlainString(c.t.gPzMHR, {
             numMonths: e.discount.user_usage_limit,
             discountedPrice: i,
             regularPrice: u
@@ -78,7 +78,7 @@ let f = t => {
         if (d.status === o.O0b.CANCELED) return (0, r.jsx)(a.xvT, {
           variant: "text-md/normal",
           color: "text-secondary",
-          children: c.intl.formatToPlainString(c.t.iDFk3v, {
+          children: c.intl.formatToPlainString(c.t.iDFk3t, {
             billingPeriod: (0, l.JP)(e.discount.user_usage_limit_interval),
             numMonths: e.discount.user_usage_limit,
             fullPrice: u
@@ -87,7 +87,7 @@ let f = t => {
         return (0, r.jsx)(a.xvT, {
           variant: "text-md/normal",
           color: "text-secondary",
-          children: c.intl.formatToPlainString(c.t.Eq1RHL, {
+          children: c.intl.formatToPlainString(c.t.Eq1RHB, {
             percent: e.discount.amount,
             numMonths: e.discount.user_usage_limit,
             price: u
@@ -97,7 +97,7 @@ let f = t => {
         return (0, r.jsx)(a.xvT, {
           variant: "text-md/normal",
           color: "text-secondary",
-          children: c.intl.formatToPlainString(c.t["2gem05"], {
+          children: c.intl.formatToPlainString(c.t["2gem09"], {
             percent: e.discount.amount,
             numMonths: e.discount.user_usage_limit
           })

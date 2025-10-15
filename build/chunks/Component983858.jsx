@@ -39,12 +39,12 @@ let h = [16, 16, 14, 14, 12, 10, 8],
       })
     });
     let {
-      name: R
-    } = r, L = null != r.discoverySplash && /^data:/.test(r.discoverySplash) ? r.discoverySplash : f.ZP.getGuildDiscoverySplashURL({
+      name: L
+    } = r, R = null != r.discoverySplash && /^data:/.test(r.discoverySplash) ? r.discoverySplash : f.ZP.getGuildDiscoverySplashURL({
       id: r.id,
       splash: r.discoverySplash,
       size: 240 * (0, E.x_)()
-    }), b = (0, a.wj)(y) ? m : g, j = null != (i = f.ZP.getGuildIconURL({
+    }), b = (0, a.wj)(y) ? g : m, j = null != (i = f.ZP.getGuildIconURL({
       id: r.id,
       icon: r.icon,
       size: 40
@@ -79,7 +79,7 @@ let h = [16, 16, 14, 14, 12, 10, 8],
         children: [(0, n.jsx)("div", {
           className: S.splash,
           children: (0, n.jsx)("img", {
-            src: null != L ? L : b,
+            src: null != R ? R : b,
             alt: "",
             className: S.splashImage,
             onLoad: () => P(true)
@@ -113,7 +113,7 @@ let h = [16, 16, 14, 14, 12, 10, 8],
             className: S.guildName,
             variant: "text-md/normal",
             children: (0, n.jsx)("span", {
-              children: R
+              children: L
             })
           })]
         }), (0, n.jsx)("div", {
@@ -133,9 +133,9 @@ let h = [16, 16, 14, 14, 12, 10, 8],
               className: S.dotOnline
             }), (0, n.jsx)(u.Text, {
               variant: "text-xs/normal",
-              children: T ? _.intl.formatToPlainString(_.t.YMor7k, {
+              children: T ? _.intl.formatToPlainString(_.t.YMor7u, {
                 count: M
-              }) : _.intl.formatToPlainString(_.t["LC+S+m"], {
+              }) : _.intl.formatToPlainString(_.t["LC+S+v"], {
                 membersOnline: M
               })
             })]
@@ -145,9 +145,9 @@ let h = [16, 16, 14, 14, 12, 10, 8],
               className: S.dotOffline
             }), (0, n.jsx)(u.Text, {
               variant: "text-xs/normal",
-              children: T ? _.intl.formatToPlainString(_.t.YMor7k, {
+              children: T ? _.intl.formatToPlainString(_.t.YMor7u, {
                 count: G
-              }) : _.intl.formatToPlainString(_.t.zRl6XR, {
+              }) : _.intl.formatToPlainString(_.t.zRl6XV, {
                 count: G
               })
             })]

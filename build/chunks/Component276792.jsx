@@ -65,7 +65,7 @@ function E(e) {
     {
       onClose: P
     } = C,
-    x = null != (v = null == (t = I.button) ? true : t.copy) ? v : m.intl.string(m.t.YScQSF),
+    x = null != (v = null == (t = I.button) ? true : t.copy) ? v : m.intl.string(m.t.YScQSE),
     A = (null == (n = I.button) ? true : n.buttonAction) === a.Wc.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button";
   switch (null == (E = I.button) ? true : E.buttonAction) {
     case a.Wc.OPEN_MARKETING_PAGE:
@@ -105,7 +105,7 @@ function E(e) {
       children: ["\xa0", (0, r.jsx)(s.Anchor, {
         className: b.termsApplyAnchor,
         href: p.Z.getArticleURL(I.helpArticleId),
-        children: m.intl.string(m.t["sBp+u0"])
+        children: m.intl.string(m.t["sBp+u7"])
       })]
     }) : true,
     w = {

@@ -34,7 +34,7 @@ function O(e) {
     header: I,
     footer: T,
     isGift: S = false,
-    giftMessage: A = E.intl.string(E.t["DrgnS+"]),
+    giftMessage: A = E.intl.string(E.t.DrgnS0),
     hideBreadcrumbs: C = false,
     isLoading: N = false,
     purchaseError: R,
@@ -46,7 +46,7 @@ function O(e) {
   } = e, M = null;
   null != v && null == (0, p.ly)(v) ? M = v : null != R ? M = R : null != w && (M = w);
   let j = null != M ? M.message : "";
-  null != M && M instanceof d.HF && (M.code === f.SM.CARD_DECLINED && x && (j += " ".concat(E.intl.string(E.t.iWvwQS))), M.code === f.SM.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED && (j = E.intl.string(E.t.ypuSd8)), M.code === g.evJ.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE && (j = E.intl.string(E.t.mXMmWE)));
+  null != M && M instanceof d.HF && (M.code === f.SM.CARD_DECLINED && x && (j += " ".concat(E.intl.string(E.t.iWvwQU))), M.code === f.SM.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED && (j = E.intl.string(E.t.ypuSd3)), M.code === g.evJ.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE && (j = E.intl.string(E.t.mXMmWF)));
   let {
     stripe: k
   } = (0, _.JL)();

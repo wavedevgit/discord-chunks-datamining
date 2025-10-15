@@ -14,6 +14,6 @@ class s extends Chunk973616.ZP {
     return Chunk726542.Z.get("twitch").icon.lightPNG
   }
   constructor(e) {
-    super(e), this.id = "".concat(o).concat(e.url), this.name = a.intl.string(a.t.JIPtgq)
+    super(e), this.id = "".concat(o).concat(e.url), this.name = a.intl.string(a.t.JIPtgo)
   }
 }

@@ -20,7 +20,7 @@ let d = () => {
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk838344.banner,
     children: [(0, Chunk951288.jsx)(Chunk382791.mn, {
-      text: Chunk388032.intl.string(Chunk388032.t.qYKftX),
+      text: Chunk388032.intl.string(Chunk388032.t.qYKftb),
       className: Chunk838344.pill
     }), (0, Chunk951288.jsx)("img", {
       src: Chunk309389,
@@ -33,7 +33,7 @@ let d = () => {
       children: (0, Chunk951288.jsx)(Chunk481060.Text, {
         color: "text-secondary",
         variant: "text-sm/normal",
-        children: Chunk388032.intl.format(Chunk388032.t.uu1WAa, {
+        children: Chunk388032.intl.format(Chunk388032.t.uu1WAQ, {
           weeks: 1
         })
       })

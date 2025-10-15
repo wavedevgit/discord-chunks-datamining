@@ -31,15 +31,15 @@ function x(e) {
     children: (0, r.jsxs)(a.kSQ, {
       children: [(0, r.jsx)(a.sNh, {
         id: "changelog",
-        label: j.intl.string(j.t.LRmNAl),
+        label: j.intl.string(j.t.LRmNAg),
         action: () => (0, c.Z)(true)
       }), (0, r.jsx)(a.sNh, {
         id: "acknowledgements",
-        label: j.intl.string(j.t["0nUKy3"]),
+        label: j.intl.string(j.t["0nUKy8"]),
         action: () => (0, s.Z)(p.EYA.ACKNOWLEDGEMENTS)
       }), (0, r.jsx)(a.sNh, {
         id: "support",
-        label: j.intl.string(j.t["Yl/Riu"]),
+        label: j.intl.string(j.t["Yl/Rio"]),
         action: () => (0, s.Z)(f.w)
       })]
     })
@@ -66,7 +66,7 @@ function y() {
           tag: "span",
           variant: "text-xxs/normal",
           color: "currentColor",
-          children: Chunk388032.intl.string(Chunk388032.t["Knf/f/"])
+          children: Chunk388032.intl.string(Chunk388032.t["Knf/f3"])
         })
       }), (0, Chunk951288.jsx)("span", {
         className: Chunk989281.bullet,
@@ -78,7 +78,7 @@ function y() {
           tag: "span",
           variant: "text-xxs/normal",
           color: "currentColor",
-          children: Chunk388032.intl.string(Chunk388032.t.uFSTGq)
+          children: Chunk388032.intl.string(Chunk388032.t.uFSTGh)
         })
       }), (0, Chunk951288.jsx)("span", {
         className: Chunk989281.bullet,
@@ -127,7 +127,7 @@ function y() {
               tag: "span",
               variant: "text-xxs/normal",
               color: "currentColor",
-              children: j.intl.string(j.t["UKOtz+"])
+              children: j.intl.string(j.t.UKOtz8)
             })
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
             var n = Object.keys(e);

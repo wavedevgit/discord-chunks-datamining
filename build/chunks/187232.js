@@ -23,65 +23,65 @@ var Chunk242433 = require("./242433.js"),
 let b = {
     skuId: Chunk242433.d.HALLOWEEN_GIFTING_2025_PUMPKIN_TRICK_SKU_ID,
     assetId: "a_dec0db5e1395a9d7df152d6981443cd8",
-    a11yLabel: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0m, {
-      category: Chunk388032.intl.string(Chunk388032.t["6Zuivx"]),
-      name: Chunk388032.intl.string(Chunk388032.t["9PzTtM"])
+    a11yLabel: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0t, {
+      category: Chunk388032.intl.string(Chunk388032.t["6Zuiv7"]),
+      name: Chunk388032.intl.string(Chunk388032.t["9PzTtL"])
     })
   },
   y = {
     skuId: Chunk242433.d.HALLOWEEN_GIFTING_2025_PUMPKIN_TREAT_SKU_ID,
     assetId: "a_8636994a8d0b1c5c8353ebce125c2cef",
-    a11yLabel: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0m, {
-      category: Chunk388032.intl.string(Chunk388032.t["2UeOlY"]),
-      name: Chunk388032.intl.string(Chunk388032.t["9PzTtM"])
+    a11yLabel: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0t, {
+      category: Chunk388032.intl.string(Chunk388032.t["2UeOlZ"]),
+      name: Chunk388032.intl.string(Chunk388032.t["9PzTtL"])
     })
   },
   O = {
     skuId: Chunk242433.d.HALLOWEEN_GIFTING_2025_GHOST_TRICK_SKU_ID,
     assetId: "a_843b6925894c8fa530432ad197eb8dcd",
-    a11yLabel: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0m, {
-      category: Chunk388032.intl.string(Chunk388032.t["6Zuivx"]),
-      name: Chunk388032.intl.string(Chunk388032.t.sBk8mT)
+    a11yLabel: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0t, {
+      category: Chunk388032.intl.string(Chunk388032.t["6Zuiv7"]),
+      name: Chunk388032.intl.string(Chunk388032.t.sBk8mZ)
     })
   },
   v = {
     skuId: Chunk242433.d.HALLOWEEN_GIFTING_2025_GHOST_TREAT_SKU_ID,
     assetId: "a_3835acaf56f5b8cdfb7be072580e618d",
-    a11yLabel: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0m, {
-      category: Chunk388032.intl.string(Chunk388032.t["2UeOlY"]),
-      name: Chunk388032.intl.string(Chunk388032.t.sBk8mT)
+    a11yLabel: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0t, {
+      category: Chunk388032.intl.string(Chunk388032.t["2UeOlZ"]),
+      name: Chunk388032.intl.string(Chunk388032.t.sBk8mZ)
     })
   },
   I = {
     skuId: Chunk242433.d.HALLOWEEN_GIFTING_2025_SKULL_TRICK_SKU_ID,
     assetId: "a_6f0c33fb534c1a0a21c606b50683e9a9",
-    a11yLabel: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0m, {
-      category: Chunk388032.intl.string(Chunk388032.t["6Zuivx"]),
-      name: Chunk388032.intl.string(Chunk388032.t.RbkXxR)
+    a11yLabel: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0t, {
+      category: Chunk388032.intl.string(Chunk388032.t["6Zuiv7"]),
+      name: Chunk388032.intl.string(Chunk388032.t.RbkXxc)
     })
   },
   T = {
     skuId: Chunk242433.d.HALLOWEEN_GIFTING_2025_SKULL_TREAT_SKU_ID,
     assetId: "a_46d01a1f046e4f58894f5b5361ab2e61",
-    a11yLabel: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0m, {
-      category: Chunk388032.intl.string(Chunk388032.t["2UeOlY"]),
-      name: Chunk388032.intl.string(Chunk388032.t.RbkXxR)
+    a11yLabel: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0t, {
+      category: Chunk388032.intl.string(Chunk388032.t["2UeOlZ"]),
+      name: Chunk388032.intl.string(Chunk388032.t.RbkXxc)
     })
   },
   S = {
     skuId: Chunk242433.d.HALLOWEEN_GIFTING_2025_SPIDER_TRICK_SKU_ID,
     assetId: "a_f6fbc6e9dedd53a1b70e5573499ddd11",
-    a11yLabel: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0m, {
-      category: Chunk388032.intl.string(Chunk388032.t["6Zuivx"]),
-      name: Chunk388032.intl.string(Chunk388032.t["FW3Qp/"])
+    a11yLabel: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0t, {
+      category: Chunk388032.intl.string(Chunk388032.t["6Zuiv7"]),
+      name: Chunk388032.intl.string(Chunk388032.t.FW3Qp6)
     })
   },
   A = {
     skuId: Chunk242433.d.HALLOWEEN_GIFTING_2025_SPIDER_TREAT_SKU_ID,
     assetId: "a_f8fdf29cd07f09487165818605cab1dd",
-    a11yLabel: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0m, {
-      category: Chunk388032.intl.string(Chunk388032.t["2UeOlY"]),
-      name: Chunk388032.intl.string(Chunk388032.t["FW3Qp/"])
+    a11yLabel: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.pDrI0t, {
+      category: Chunk388032.intl.string(Chunk388032.t["2UeOlZ"]),
+      name: Chunk388032.intl.string(Chunk388032.t.FW3Qp6)
     })
   },
   C = {
@@ -89,16 +89,16 @@ let b = {
   },
   N = {
     variants: [{
-      name: () => Chunk388032.intl.string(Chunk388032.t["9PzTtM"]),
+      name: () => Chunk388032.intl.string(Chunk388032.t["9PzTtL"]),
       variants: [b, y]
     }, {
-      name: () => Chunk388032.intl.string(Chunk388032.t.sBk8mT),
+      name: () => Chunk388032.intl.string(Chunk388032.t.sBk8mZ),
       variants: [O, v]
     }, {
-      name: () => Chunk388032.intl.string(Chunk388032.t.RbkXxR),
+      name: () => Chunk388032.intl.string(Chunk388032.t.RbkXxc),
       variants: [I, T]
     }, {
-      name: () => Chunk388032.intl.string(Chunk388032.t["FW3Qp/"]),
+      name: () => Chunk388032.intl.string(Chunk388032.t.FW3Qp6),
       variants: [S, A]
     }],
     rewardAssetIdMap: (0, Chunk717401.YV)([b, y, O, v, I, T, S, A]),
@@ -140,16 +140,16 @@ let b = {
     firstTimeNotice: {
       getImageUrl: (e, t) => t ? _.Z : f.Z,
       title: () => Chunk388032.intl.string(Chunk388032.t.UPFiIi),
-      description: () => Chunk388032.intl.string(Chunk388032.t["F/5kFJ"]),
-      cta: () => Chunk388032.intl.string(Chunk388032.t.RzWDqY),
+      description: () => Chunk388032.intl.string(Chunk388032.t["F/5kFB"]),
+      cta: () => Chunk388032.intl.string(Chunk388032.t.RzWDqa),
       analyticsLocation: Chunk100527.Z.GIFTING_PROMOTION_COACHMARK,
       analyticsPage: Chunk981631.ZY5.PREMUIM_UPSELL_GIFTING_PROMOTION
     },
     eligiblePlanIds: [Chunk474936.Xh.PREMIUM_YEAR_TIER_2, Chunk474936.Xh.PREMIUM_MONTH_TIER_2],
     planSelection: {
-      heading: () => Chunk388032.intl.string(Chunk388032.t.ruVnPr),
-      subheading: () => Chunk388032.intl.string(Chunk388032.t.q4BJSJ),
-      mobileSubheading: e => l.intl.formatToPlainString(l.t.eDBuF8, {
+      heading: () => Chunk388032.intl.string(Chunk388032.t.ruVnPj),
+      subheading: () => Chunk388032.intl.string(Chunk388032.t.q4BJSE),
+      mobileSubheading: e => l.intl.formatToPlainString(l.t.eDBuFx, {
         rewardCount: e
       }),
       gradientConfig: C,
@@ -158,22 +158,22 @@ let b = {
       getBackgroundImageUrl: () => Chunk154658.Z
     },
     planSelectionBanner: {
-      desktopBannerText: () => Chunk388032.intl.string(Chunk388032.t.mMgymV),
-      mobileBannerText: () => Chunk388032.intl.string(Chunk388032.t.dAqTcI),
+      desktopBannerText: () => Chunk388032.intl.string(Chunk388032.t.mMgymZ),
+      mobileBannerText: () => Chunk388032.intl.string(Chunk388032.t.dAqTcH),
       getImageUrl: () => Chunk194950.Z,
       gradientConfig: () => C,
       getBackgroundImageUrl: () => Chunk306225.Z
     },
     billingSettingsMarketingBanner: {
       getImageUrl: e => e ? d.Z : u.Z,
-      title: () => Chunk388032.intl.string(Chunk388032.t.CGgAyN),
-      body: () => Chunk388032.intl.string(Chunk388032.t["9rInzW"]),
+      title: () => Chunk388032.intl.string(Chunk388032.t.CGgAyM),
+      body: () => Chunk388032.intl.string(Chunk388032.t["9rInzc"]),
       getBackgroundImageUrl: () => Chunk103865.Z
     },
     giftPurchaseConfirmation: {
-      yearGiftText: Chunk388032.t["rSS+oo"],
-      monthGiftText: Chunk388032.t.gI6Yvv,
-      collectRewardButtonText: () => Chunk388032.intl.string(Chunk388032.t.kMYVwv),
-      rewardCollectedText: () => Chunk388032.intl.string(Chunk388032.t.eZrmtq)
+      yearGiftText: Chunk388032.t["rSS+oq"],
+      monthGiftText: Chunk388032.t.gI6Yvr,
+      collectRewardButtonText: () => Chunk388032.intl.string(Chunk388032.t.kMYVws),
+      rewardCollectedText: () => Chunk388032.intl.string(Chunk388032.t.eZrmtr)
     }
   }

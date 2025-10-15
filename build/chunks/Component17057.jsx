@@ -20,12 +20,12 @@ let c = function(e) {
       className: o.previewCard,
       children: [(0, r.jsx)(i.Heading, {
         variant: "heading-md/semibold",
-        children: a.intl.string(a.t.IcljUu)
+        children: a.intl.string(a.t.IcljUl)
       }), (0, r.jsx)("div", {
         className: s.embedHelper,
         children: (0, r.jsx)("span", {
           className: s.helperText,
-          children: a.intl.string(a.t.q97mEu)
+          children: a.intl.string(a.t.q97mEh)
         })
       }), (0, r.jsx)("div", {
         className: s.embedSections,

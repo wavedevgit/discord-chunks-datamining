@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk551720 = require("./551720.js");
 let p = 1048576,
   h = [{
-    getPerkHeading: () => Chunk388032.intl.string(Chunk388032.t.tIiwuj),
+    getPerkHeading: () => Chunk388032.intl.string(Chunk388032.t.tIiwur),
     getPerkPreviewLightTheme: () => require("./414102.js"),
     getPerkPreviewDarkTheme: () => require("./614600.js"),
     getTier0Value: () => Chunk474936.HO[Chunk981631.Eu4.NONE].limits.emoji,
@@ -25,7 +25,7 @@ let p = 1048576,
     getTier2Value: () => Chunk474936.HO[Chunk981631.Eu4.TIER_2].limits.emoji,
     getTier3Value: () => Chunk474936.HO[Chunk981631.Eu4.TIER_3].limits.emoji
   }, {
-    getPerkHeading: () => Chunk388032.intl.string(Chunk388032.t["3iccet"]),
+    getPerkHeading: () => Chunk388032.intl.string(Chunk388032.t["3iccen"]),
     getPerkPreviewLightTheme: () => require("./73541.js"),
     getPerkPreviewDarkTheme: () => require("./43735.js"),
     getTier0Value: () => Chunk474936.HO[Chunk981631.Eu4.NONE].limits.stickers,
@@ -33,7 +33,7 @@ let p = 1048576,
     getTier2Value: () => Chunk474936.HO[Chunk981631.Eu4.TIER_2].limits.stickers,
     getTier3Value: () => Chunk474936.HO[Chunk981631.Eu4.TIER_3].limits.stickers
   }, {
-    getPerkHeading: () => Chunk388032.intl.string(Chunk388032.t["+smCv9"]),
+    getPerkHeading: () => Chunk388032.intl.string(Chunk388032.t["+smCv7"]),
     getPerkPreviewLightTheme: () => require("./69098.js"),
     getPerkPreviewDarkTheme: () => require("./881755.js"),
     getTier0Value: () => Chunk474936.HO[Chunk981631.Eu4.NONE].limits.soundboardSounds,
@@ -41,59 +41,59 @@ let p = 1048576,
     getTier2Value: () => Chunk474936.HO[Chunk981631.Eu4.TIER_2].limits.soundboardSounds,
     getTier3Value: () => Chunk474936.HO[Chunk981631.Eu4.TIER_3].limits.soundboardSounds
   }, {
-    getPerkHeading: () => Chunk388032.intl.string(Chunk388032.t.SMYauD),
+    getPerkHeading: () => Chunk388032.intl.string(Chunk388032.t.SMYauL),
     getPerkPreviewLightTheme: () => require("./989015.js"),
     getPerkPreviewDarkTheme: () => require("./904257.js"),
-    getTier0Value: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.zZ6Rdi, {
+    getTier0Value: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.zZ6Rdn, {
       resolution: Chunk474936.HO[Chunk981631.Eu4.NONE].limits.screenShareQualityResolution,
       framerate: Chunk474936.HO[Chunk981631.Eu4.NONE].limits.screenShareQualityFramerate
     }),
-    getTier1Value: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.zZ6Rdi, {
+    getTier1Value: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.zZ6Rdn, {
       resolution: Chunk474936.HO[Chunk981631.Eu4.TIER_1].limits.screenShareQualityResolution,
       framerate: Chunk474936.HO[Chunk981631.Eu4.TIER_1].limits.screenShareQualityFramerate
     }),
-    getTier2Value: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.zZ6Rdi, {
+    getTier2Value: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.zZ6Rdn, {
       resolution: Chunk474936.HO[Chunk981631.Eu4.TIER_2].limits.screenShareQualityResolution,
       framerate: Chunk474936.HO[Chunk981631.Eu4.TIER_2].limits.screenShareQualityFramerate
     }),
-    getTier3Value: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.zZ6Rdi, {
+    getTier3Value: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.zZ6Rdn, {
       resolution: Chunk474936.HO[Chunk981631.Eu4.TIER_3].limits.screenShareQualityResolution,
       framerate: Chunk474936.HO[Chunk981631.Eu4.TIER_3].limits.screenShareQualityFramerate
     })
   }, {
-    getPerkHeading: () => Chunk388032.intl.string(Chunk388032.t["/79IDj"]),
+    getPerkHeading: () => Chunk388032.intl.string(Chunk388032.t["/79IDg"]),
     getPerkPreviewLightTheme: () => require("./222185.js"),
     getPerkPreviewDarkTheme: () => require("./415480.js"),
-    getTier0Value: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.w1gmLt, {
+    getTier0Value: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.w1gmLi, {
       bitrate: Chunk474936.HO[Chunk981631.Eu4.NONE].limits.bitrate / 1e3
     }),
-    getTier1Value: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.w1gmLt, {
+    getTier1Value: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.w1gmLi, {
       bitrate: Chunk474936.HO[Chunk981631.Eu4.TIER_1].limits.bitrate / 1e3
     }),
-    getTier2Value: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.w1gmLt, {
+    getTier2Value: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.w1gmLi, {
       bitrate: Chunk474936.HO[Chunk981631.Eu4.TIER_2].limits.bitrate / 1e3
     }),
-    getTier3Value: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.w1gmLt, {
+    getTier3Value: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.w1gmLi, {
       bitrate: Chunk474936.HO[Chunk981631.Eu4.TIER_3].limits.bitrate / 1e3
     })
   }, {
-    getPerkHeading: () => Chunk388032.intl.string(Chunk388032.t.R1U2xC),
+    getPerkHeading: () => Chunk388032.intl.string(Chunk388032.t.R1U2xM),
     getPerkPreviewLightTheme: () => require("./825588.js"),
     getPerkPreviewDarkTheme: () => require("./954499.js"),
-    getTier0Value: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.pIn7Af, {
+    getTier0Value: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.pIn7AQ, {
       size: Chunk474936.HO[Chunk981631.Eu4.NONE].limits.fileSize / p
     }),
-    getTier1Value: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.pIn7Af, {
+    getTier1Value: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.pIn7AQ, {
       size: Chunk474936.HO[Chunk981631.Eu4.TIER_1].limits.fileSize / p
     }),
-    getTier2Value: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.pIn7Af, {
+    getTier2Value: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.pIn7AQ, {
       size: Chunk474936.HO[Chunk981631.Eu4.TIER_2].limits.fileSize / p
     }),
-    getTier3Value: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.pIn7Af, {
+    getTier3Value: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.pIn7AQ, {
       size: Chunk474936.HO[Chunk981631.Eu4.TIER_3].limits.fileSize / p
     })
   }, {
-    getPerkHeading: () => Chunk388032.intl.string(Chunk388032.t.f6vfso),
+    getPerkHeading: () => Chunk388032.intl.string(Chunk388032.t.f6vfsr),
     getPerkPreviewLightTheme: () => require("./241190.js"),
     getPerkPreviewDarkTheme: () => require("./879846.js"),
     getTier0Value: () => Chunk474936.HO[Chunk981631.Eu4.NONE].limits.stageVideoUsers,
@@ -101,7 +101,7 @@ let p = 1048576,
     getTier2Value: () => Chunk474936.HO[Chunk981631.Eu4.TIER_2].limits.stageVideoUsers,
     getTier3Value: () => Chunk474936.HO[Chunk981631.Eu4.TIER_3].limits.stageVideoUsers
   }, {
-    getPerkHeading: () => Chunk388032.intl.string(Chunk388032.t.qDqUME),
+    getPerkHeading: () => Chunk388032.intl.string(Chunk388032.t.qDqUMD),
     getPerkPreviewLightTheme: () => require("./499059.js"),
     getPerkPreviewDarkTheme: () => require("./488349.js"),
     getTier0Value: () => false,
@@ -109,7 +109,7 @@ let p = 1048576,
     getTier2Value: () => true,
     getTier3Value: () => true
   }, {
-    getPerkHeading: () => Chunk388032.intl.string(Chunk388032.t.uwqgbu),
+    getPerkHeading: () => Chunk388032.intl.string(Chunk388032.t.uwqgbm),
     getPerkPreviewLightTheme: () => require("./136631.js"),
     getPerkPreviewDarkTheme: () => require("./692079.js"),
     getTier0Value: () => false,
@@ -122,10 +122,10 @@ let p = 1048576,
     getPerkPreviewDarkTheme: () => require("./866919.js"),
     getTier0Value: () => false,
     getTier1Value: () => false,
-    getTier2Value: () => Chunk388032.intl.string(Chunk388032.t["2TNS3n"]),
-    getTier3Value: () => Chunk388032.intl.string(Chunk388032.t["l+S46U"])
+    getTier2Value: () => Chunk388032.intl.string(Chunk388032.t["2TNS3t"]),
+    getTier3Value: () => Chunk388032.intl.string(Chunk388032.t["l+S46e"])
   }, {
-    getPerkHeading: () => Chunk388032.intl.string(Chunk388032.t["bHa+Ee"]),
+    getPerkHeading: () => Chunk388032.intl.string(Chunk388032.t["bHa+ER"]),
     getPerkPreviewLightTheme: () => require("./872259.js"),
     getPerkPreviewDarkTheme: () => require("./876049.js"),
     getTier0Value: () => false,
@@ -133,7 +133,7 @@ let p = 1048576,
     getTier2Value: () => true,
     getTier3Value: () => true
   }, {
-    getPerkHeading: () => Chunk388032.intl.string(Chunk388032.t.QV6MZQ),
+    getPerkHeading: () => Chunk388032.intl.string(Chunk388032.t.QV6MZW),
     getPerkPreviewLightTheme: () => require("./710717.js"),
     getPerkPreviewDarkTheme: () => require("./945198.js"),
     getTier0Value: () => false,
@@ -158,7 +158,7 @@ function m(e) {
     }), null != i && (0, r.jsx)(l.Text, {
       color: a,
       variant: "text-md/normal",
-      children: f.intl.format(f.t["pob/cL"], {
+      children: f.intl.format(f.t["pob/cH"], {
         subscriptions: u.oCV[i]
       })
     })]
@@ -221,7 +221,7 @@ function b(e) {
       className: _.recommendedTierHighlightTag,
       color: "always-white",
       variant: "text-xs/bold",
-      children: t === u.Eu4.TIER_3 ? f.intl.string(f.t.d849Up) : f.intl.string(f.t.dZeX1z)
+      children: t === u.Eu4.TIER_3 ? f.intl.string(f.t.d849Ul) : f.intl.string(f.t.dZeX19)
     })
   })
 }
@@ -300,7 +300,7 @@ let O = function(e) {
     children: [!d && (0, r.jsx)(l.Heading, {
       className: _.heading,
       variant: "heading-xxl/extrabold",
-      children: f.intl.string(f.t["9GGb9k"])
+      children: f.intl.string(f.t["9GGb9v"])
     }), (0, r.jsxs)("div", {
       className: _.tableWrapper,
       children: [null != s && (0, r.jsx)(b, {
@@ -314,19 +314,19 @@ let O = function(e) {
             className: _.__invalid_tableRow,
             children: [(0, r.jsx)(m, {
               className: _.tableRowHeading,
-              children: f.intl.string(f.t.F5MY0k)
+              children: f.intl.string(f.t.F5MY0t)
             }), !p && (0, r.jsx)(m, {
               tier: u.Eu4.NONE,
-              children: f.intl.string(f.t.mx8j2m)
+              children: f.intl.string(f.t.mx8j2t)
             }), (0, r.jsx)(m, {
               tier: u.Eu4.TIER_1,
-              children: f.intl.string(f.t.nzXtaS)
+              children: f.intl.string(f.t.nzXtaW)
             }), (0, r.jsx)(m, {
               tier: u.Eu4.TIER_2,
-              children: f.intl.string(f.t["h33/uW"])
+              children: f.intl.string(f.t["h33/ub"])
             }), (0, r.jsx)(m, {
               tier: u.Eu4.TIER_3,
-              children: f.intl.string(f.t.BfF6ED)
+              children: f.intl.string(f.t.BfF6EB)
             })]
           })
         }), (0, r.jsx)("tbody", {

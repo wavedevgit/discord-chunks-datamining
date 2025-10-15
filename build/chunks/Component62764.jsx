@@ -38,7 +38,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk228392 = require("./228392.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk833540 = require("./833540.js"),
+  Chunk764295 = require("./764295.js"),
   Chunk319720 = require("./319720.js"),
   Chunk127947 = require("./127947.js"),
   Chunk577650 = require("./577650.js");
@@ -54,7 +54,7 @@ function V(e) {
   return a ? (0, i.jsx)(u.Button, {
     size: "sm",
     variant: "secondary",
-    text: l ? D.intl.string(k.default["2Y4vkk"]) : D.intl.string(k.default.YIbR4r),
+    text: l ? D.intl.string(k.default["2Y4vkp"]) : D.intl.string(k.default.YIbR4u),
     onClick: () => {
       true === s.K.get(S.F) ? d() : (0, u.ZDy)(async () => {
         let {
@@ -88,15 +88,15 @@ function F(e) {
   } = e, {
     ref: O,
     width: j
-  } = (0, h.ZP)(), [S, k] = r.useState(3), [F, G] = r.useState(!n), [W, z] = (0, f.Z)(false, 2e3), q = (0, o.e7)([T.Z], () => T.Z.getChannel(t), [t]), {
+  } = (0, h.ZP)(), [S, k] = r.useState(3), [F, G] = r.useState(!n), [z, W] = (0, f.Z)(false, 2e3), K = (0, o.e7)([T.Z], () => T.Z.getChannel(t), [t]), {
     firstMessage: Y
-  } = (0, M.cl)(q), K = (0, o.e7)([I.Z], () => I.Z.hasJoined(t)), {
+  } = (0, M.cl)(K), q = (0, o.e7)([I.Z], () => I.Z.hasJoined(t)), {
     disableReactionUpdates: X,
     disableReactionCreates: J,
     isLurking: Q,
     isGuest: $,
     isPendingMember: ee
-  } = (0, C.Z)(q), et = (0, E.nw)(q), en = (0, o.e7)([T.Z], () => T.Z.getChannel(s)), ei = (0, w.Bs)(en), er = (0, o.e7)([m.Z], () => m.Z.shouldDisplayPrompt(t) && true === n, [t, n]), el = r.useCallback(e => {
+  } = (0, C.Z)(K), et = (0, E.nw)(K), en = (0, o.e7)([T.Z], () => T.Z.getChannel(s)), ei = (0, w.Bs)(en), er = (0, o.e7)([m.Z], () => m.Z.shouldDisplayPrompt(t) && true === n, [t, n]), el = r.useCallback(e => {
     let t = e[0];
     if (null != t && n) {
       let e = t.intersectionRect,
@@ -117,17 +117,17 @@ function F(e) {
   let [ea, eo] = r.useState(true);
   if (r.useEffect(() => {
       null != j && (k(Math.floor((j - 280) / 58)), eo(false))
-    }, [j]), null == q || null == Y) return null;
+    }, [j]), null == K || null == Y) return null;
   let es = Y.reactions.length > 0,
     ec = () => {
       (0, R.B)({
-        postId: q.id,
+        postId: K.id,
         location: {
           section: L.jXE.CHANNEL_HEADER
         }
-      }), (0, A.JG)((0, N.EO)(q, en), () => z(true))
+      }), (0, A.JG)((0, N.EO)(K, en), () => W(true))
     },
-    eu = K ? u.dz2 : u.Dkj;
+    eu = q ? u.dz2 : u.Dkj;
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)("div", {
       className: a()(U.container, {
@@ -138,7 +138,7 @@ function F(e) {
         className: U.reportedMessageActions,
         children: (0, i.jsx)(P.Z, {
           message: Y,
-          channel: q
+          channel: K
         })
       }) : (0, i.jsxs)("div", {
         className: a()(U.reactButtons, {
@@ -164,7 +164,7 @@ function F(e) {
           })
         }), (0, i.jsx)(v.Z, {
           message: Y,
-          channel: q,
+          channel: K,
           disableReactionCreates: true,
           disableReactionUpdates: X,
           isLurking: Q,
@@ -178,43 +178,43 @@ function F(e) {
         }), !J && (0, i.jsx)(y.X, {
           type: b.O.NORMAL,
           message: Y,
-          channel: q,
+          channel: K,
           useChatFontScaling: false,
           className: a()(H.secondary, U.addReactButton, {
             [U.hasNoReactions]: !es
           }),
           isForumToolbar: true,
-          children: !es && D.intl.string(D.t.xpOyTO)
+          children: !es && D.intl.string(D.t.xpOyTE)
         })]
       }), (0, i.jsxs)("div", {
         className: U.buttons,
         children: [et ? (0, i.jsx)(V, {
-          channel: q
+          channel: K
         }) : (0, i.jsx)(c.u, {
-          text: D.intl.string(D.t.F7oeDv),
+          text: D.intl.string(D.t.F7oeDg),
           children: (0, i.jsx)(u.Button, {
             icon: eu,
             size: "sm",
             variant: "secondary",
-            text: K ? D.intl.string(D.t["7OkUzs"]) : D.intl.string(D.t["3aOv+h"]),
+            text: q ? D.intl.string(D.t["7OkUzs"]) : D.intl.string(D.t["3aOv+v"]),
             onClick: () => {
-              K ? Z.Z.leaveThread(q, "Forum Toolbar") : Z.Z.joinThread(q, "Forum Toolbar")
+              q ? Z.Z.leaveThread(K, "Forum Toolbar") : Z.Z.joinThread(K, "Forum Toolbar")
             }
           })
         }), (0, i.jsx)(c.u, {
-          text: D.intl.string(D.t.WqhZss),
-          children: W ? (0, i.jsx)(u.Button, {
+          text: D.intl.string(D.t.WqhZsr),
+          children: z ? (0, i.jsx)(u.Button, {
             icon: u.dz2,
             size: "sm",
             variant: "secondary",
             onClick: ec,
-            text: D.intl.string(D.t.t5VZ88)
+            text: D.intl.string(D.t["t5VZ8/"])
           }) : (0, i.jsx)(u.hU, {
             icon: u.xPt,
             size: "sm",
             variant: "secondary",
             onClick: ec,
-            "aria-label": D.intl.string(D.t.WqhZss)
+            "aria-label": D.intl.string(D.t.WqhZsr)
           })
         }), !n && (0, i.jsx)(c.u, {
           text: D.intl.string(D.t.nFP4oa),
@@ -224,8 +224,8 @@ function F(e) {
             variant: "secondary",
             onClick: () => {
               d.Z.jumpToMessage({
-                channelId: q.id,
-                messageId: q.id,
+                channelId: K.id,
+                messageId: K.id,
                 flash: true,
                 jumpType: p.SR.INSTANT
               })
@@ -237,7 +237,7 @@ function F(e) {
     }), er && (0, i.jsx)(g.Z, {
       threadId: t
     }), (0, i.jsx)(_.Z, {
-      channel: q,
+      channel: K,
       isLastItem: l
     })]
   })

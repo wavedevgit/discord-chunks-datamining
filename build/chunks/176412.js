@@ -119,8 +119,8 @@ function R(e) {
     source: N,
     fetchesApplication: g,
     onConfirmActivityLaunchChecksAlertOpen: T
-  }), w = "primary", D = null != s ? s : I.intl.string(I.t.zKX8Nu);
-  return C === c.JS.JOIN ? (w = "active", D = I.intl.string(I.t.d9PsMj)) : C !== c.JS.LEAVE || m || (w = "critical-primary", D = I.intl.string(I.t["Hi1/aQ"])), {
+  }), w = "primary", D = null != s ? s : I.intl.string(I.t.zKX8Nj);
+  return C === c.JS.JOIN ? (w = "active", D = I.intl.string(I.t.d9PsMj)) : C !== c.JS.LEAVE || m || (w = "critical-primary", D = I.intl.string(I.t["Hi1/aW"])), {
     onActivityItemSelected: P,
     activityAction: C,
     buttonVariant: w,

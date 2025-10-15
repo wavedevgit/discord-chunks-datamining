@@ -27,15 +27,15 @@ function j(e) {
     applicationIntegration: j
   } = e, {
     application: v
-  } = j, O = null != v.bot ? new b.Z(v.bot) : null, y = (0, a.e7)([g.ZP], () => null != O ? g.ZP.getMember(n.id, O.id) : null, [O, n]), _ = (0, a.e7)([f.Z], () => f.Z.getEveryoneRole(n)), C = (0, a.Wu)([f.Z], () => {
+  } = j, y = null != v.bot ? new b.Z(v.bot) : null, O = (0, a.e7)([g.ZP], () => null != y ? g.ZP.getMember(n.id, y.id) : null, [y, n]), _ = (0, a.e7)([f.Z], () => f.Z.getEveryoneRole(n)), C = (0, a.Wu)([f.Z], () => {
     var e;
-    return f.Z.getManyRoles(n.id, null != (e = null == y ? true : y.roles) ? e : [])
-  }), N = null == O ? true : O.id;
+    return f.Z.getManyRoles(n.id, null != (e = null == O ? true : O.roles) ? e : [])
+  }), N = null == y ? true : y.id;
   r.useEffect(() => {
     null != N && s.Z.requestMembersById(n.id, N)
   }, [n.id, N]);
   let S = r.useMemo(() => l.$e(_.permissions, ...C.map(e => e.permissions)), [C, _]);
-  return null == O ? null : (0, i.jsx)(o.Zbd, {
+  return null == y ? null : (0, i.jsx)(o.Zbd, {
     editable: true,
     className: x.card,
     children: (0, i.jsxs)(p.Z, {
@@ -44,17 +44,17 @@ function j(e) {
         align: p.Z.Align.CENTER,
         children: [(0, i.jsx)("img", {
           alt: "",
-          src: O.getAvatarURL(n.id, 32),
+          src: y.getAvatarURL(n.id, 32),
           className: x.iconWrapper
         }), (0, i.jsx)(o.Text, {
           color: "header-primary",
           variant: "text-sm/normal",
-          children: h.intl.format(h.t.GyhzGw, {
-            user: O.toString()
+          children: h.intl.format(h.t.GyhzGx, {
+            user: y.toString()
           })
         }), (0, i.jsx)(u.Z, {
           className: x.tag,
-          verified: O.isVerifiedBot()
+          verified: y.isVerifiedBot()
         })]
       }), function(e, t, n, r) {
         let a = [],
@@ -64,7 +64,7 @@ function j(e) {
           children: [(0, i.jsx)(o.izJ, {
             className: x.divider
           }), n.length > 0 ? (0, i.jsx)(o.gNt, {
-            label: h.intl.format(h.t.PCs0oo, {
+            label: h.intl.format(h.t.PCs0oq, {
               numRoles: n.length
             }),
             children: (0, i.jsx)(c.ZP, {
@@ -77,12 +77,12 @@ function j(e) {
             })
           }) : null, a.length > 0 || s.length > 0 ? (0, i.jsx)(d.Z, {
             grantedPermissions: a,
-            grantedPermissionsHeader: h.intl.string(h.t["hA4+su"]),
+            grantedPermissionsHeader: h.intl.string(h.t["hA4+sr"]),
             disabledPermissions: s,
-            disabledPermissionsHeader: h.intl.string(h.t["/rEZ2i"])
+            disabledPermissionsHeader: h.intl.string(h.t["/rEZ2t"])
           }) : null]
         })
-      }(O, n, null != (t = null == y ? true : y.roles) ? t : [], S)]
+      }(y, n, null != (t = null == O ? true : O.roles) ? t : [], S)]
     })
   })
 }

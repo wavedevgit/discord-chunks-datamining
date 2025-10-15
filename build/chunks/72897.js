@@ -73,14 +73,14 @@ function b(e) {
       getAllDeviceIdsSortedByFrecency: e => e.getDeviceIdsSortedByFrecency(_.h7.AUDIO_OUTPUT),
       getCurrentDeviceId: e => e.getOutputDeviceId(),
       getSelectedDeviceId: e => e.getSettings().outputDeviceId,
-      getNoDevicesMessage: () => p.intl.string(p.t.xlUg0v)
+      getNoDevicesMessage: () => p.intl.string(p.t.xlUg0t)
     },
     [_.h7.VIDEO_INPUT]: {
       getRawDevices: e => e.getVideoDevices(),
       getAllDeviceIdsSortedByFrecency: e => e.getDeviceIdsSortedByFrecency(_.h7.VIDEO_INPUT),
       getCurrentDeviceId: e => e.getVideoDeviceId(),
       getSelectedDeviceId: e => e.getSettings().videoDeviceId,
-      getNoDevicesMessage: () => p.intl.string(p.t.WKWARY)
+      getNoDevicesMessage: () => p.intl.string(p.t.WKWARU)
     }
   })[e]
 }
@@ -91,7 +91,7 @@ function y() {
   } = (0, Chunk568001.M)({
     location: "getDefaultDevicePrefix"
   });
-  return module ? (0, Chunk358085.isWindows)() ? Chunk388032.intl.string(Chunk388032.t.n4dQ2c) : (0, Chunk358085.isMac)() ? Chunk388032.intl.string(Chunk388032.t.aYrsiB) : Chunk388032.intl.string(Chunk388032.t.Q3YKwS) : Chunk388032.intl.string(Chunk388032.t.bBvAEH)
+  return module ? (0, Chunk358085.isWindows)() ? Chunk388032.intl.string(Chunk388032.t.n4dQ2d) : (0, Chunk358085.isMac)() ? Chunk388032.intl.string(Chunk388032.t.aYrsiI) : Chunk388032.intl.string(Chunk388032.t.Q3YKwc) : Chunk388032.intl.string(Chunk388032.t.bBvAEB)
 }
 
 function O(e, t) {

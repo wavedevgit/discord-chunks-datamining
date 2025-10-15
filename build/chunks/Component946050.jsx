@@ -25,11 +25,11 @@ function u(e) {
       className: c.info,
       children: (0, i.jsx)(r.Text, {
         variant: "text-sm/medium",
-        children: s.intl.format(s.t.P6Y2N1, {})
+        children: s.intl.format(s.t.P6Y2Nz, {})
       })
     }), (0, i.jsx)(r.Button, {
       variant: "secondary",
-      text: s.intl.string(s.t.KyUKhT),
+      text: s.intl.string(s.t.KyUKhY),
       icon: r.UEU,
       size: "sm",
       onClick: () => {

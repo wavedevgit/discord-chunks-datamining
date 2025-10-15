@@ -10,7 +10,7 @@ let a = +Chunk70956.Z.Millis.DAY;
 
 function s(e) {
   var t, n, r;
-  if ((0, i.EO)(e.user)) return l.intl.string(l.t.VaCdhQ);
+  if ((0, i.EO)(e.user)) return l.intl.string(l.t.VaCdhY);
   let s = null == (t = e.member) ? true : t.joinedAt;
-  return null == s ? l.intl.string(l.t.CQmzib) : null != e.member && e.member.roles.length > 0 ? null != (r = null == (n = e.role) ? true : n.name) ? r : l.intl.string(l.t["97/NdO"]) : new Date().getTime() - Date.parse(s) < a ? l.intl.string(l.t.IKE48n) : l.intl.string(l.t.u0gUWt)
+  return null == s ? l.intl.string(l.t.CQmziY) : null != e.member && e.member.roles.length > 0 ? null != (r = null == (n = e.role) ? true : n.name) ? r : l.intl.string(l.t["97/NdH"]) : new Date().getTime() - Date.parse(s) < a ? l.intl.string(l.t.IKE48v) : l.intl.string(l.t.u0gUWl)
 }

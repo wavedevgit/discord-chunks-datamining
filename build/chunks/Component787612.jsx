@@ -25,19 +25,19 @@ function g(e) {
       className: u.column,
       children: [(0, r.jsxs)(i.vwX, {
         className: u.title,
-        children: [d.intl.string(d.t.tzGY0q), (0, r.jsx)(a.hH, {
+        children: [d.intl.string(d.t.tzGY0t), (0, r.jsx)(a.hH, {
           guild: t
         })]
       }), (0, r.jsx)(i.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
         className: u.text,
-        children: d.intl.string(d.t.F7bbrh)
+        children: d.intl.string(d.t.F7bbrq)
       }), (0, r.jsx)(i.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
         className: u.text,
-        children: d.intl.format(d.t.ZYA9PV, {
+        children: d.intl.format(d.t.ZYA9PT, {
           articleURL: l.Z.getArticleURL(c.BhN.GUILD_INVITE_SPLASH)
         })
       }), (0, r.jsx)(s.c, {

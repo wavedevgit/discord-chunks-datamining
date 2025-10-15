@@ -23,7 +23,7 @@ function c(e) {
   return (0, r.jsx)(o.w, {
     questId: t,
     fallbackReason: s.V_.EXCLUDED_QUEST,
-    bodyText: l.intl.string(n ? l.t.NIliWX : l.t.nuWSYZ),
+    bodyText: l.intl.string(n ? l.t.NIliWV : l.t.nuWSYW),
     questContent: i.jn.EXCLUDED_QUEST_EMBED
   })
 }

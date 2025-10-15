@@ -12,7 +12,7 @@ var Chunk481060 = require("./481060.js"),
 function o(e) {
   return null == e.reactions || 0 === e.reactions.length || e.isPoll() && !(0, l.eQ)(e) ? null : (0, r.jsx)(i.sNh, {
     id: "reactions",
-    label: a.intl.string(a.t.wikODq),
+    label: a.intl.string(a.t.wikODg),
     icon: i.EO4,
     action: () => (0, i.ZDy)(async () => {
       let {

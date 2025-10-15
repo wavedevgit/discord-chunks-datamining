@@ -81,7 +81,7 @@ let b = Chunk481060.EFr.SIZE_152,
       })
     })
   },
-  j = e => {
+  P = e => {
     let {
       item: t
     } = e;
@@ -96,7 +96,7 @@ let b = Chunk481060.EFr.SIZE_152,
       })
     })
   },
-  P = e => {
+  j = e => {
     let {
       product: t
     } = e;
@@ -120,7 +120,7 @@ let b = Chunk481060.EFr.SIZE_152,
       className: h.spinnerContainer,
       children: (0, i.jsx)(a.$jN, {})
     });
-    if (n.type === r.Z.BUNDLE) return 0 === n.items.length ? null : (0, i.jsx)(P, {
+    if (n.type === r.Z.BUNDLE) return 0 === n.items.length ? null : (0, i.jsx)(j, {
       product: n
     });
     let s = null == n ? true : n.items[0];
@@ -134,7 +134,7 @@ let b = Chunk481060.EFr.SIZE_152,
           item: s
         });
       case r.Z.NAMEPLATE:
-        return (0, i.jsx)(j, {
+        return (0, i.jsx)(P, {
           item: s
         });
       default:

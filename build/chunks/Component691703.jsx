@@ -62,7 +62,7 @@ function g(e) {
     children: [(0, r.jsx)(l.Heading, {
       variant: "heading-sm/semibold",
       color: "header-primary",
-      children: m.intl.string(m.t.KJEO27)
+      children: m.intl.string(m.t.KJEO29)
     }), (0, r.jsx)(u.Z, {
       guild: t.guild,
       onClick: g

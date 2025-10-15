@@ -169,7 +169,7 @@ function A(e) {
     onSelect: C,
     navId: "channel-attach",
     onClose: m,
-    "aria-label": I.intl.string(I.t.Xm41aV),
+    "aria-label": I.intl.string(I.t.Xm41aW),
     className: Z.menu,
     children: a.map(function(e) {
       var n;

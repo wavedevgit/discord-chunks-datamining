@@ -31,7 +31,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk32482 = require("./32482.js");
 
-function T(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -58,14 +58,14 @@ function w(e) {
     channel: s,
     status: d,
     activities: u
-  } = e, h = (0, a.e7)([_.Z], () => null != _.Z.getTypingUsers(s.id)[t.id]), f = (0, a.e7)([j.default], () => j.default.getCurrentUser()), O = (0, a.e7)([b.Z], () => b.Z.isMobileOnline(t.id)), v = (0, a.e7)([y.Z], () => y.Z.getNickname(t.id)), I = (0, p.Z)(t.id), P = i.useRef(null), N = e => {
+  } = e, h = (0, a.e7)([_.Z], () => null != _.Z.getTypingUsers(s.id)[t.id]), f = (0, a.e7)([j.default], () => j.default.getCurrentUser()), O = (0, a.e7)([b.Z], () => b.Z.isMobileOnline(t.id)), v = (0, a.e7)([y.Z], () => y.Z.getNickname(t.id)), I = (0, p.Z)(t.id), T = i.useRef(null), N = e => {
     (0, o.jW)(e, async () => {
       let {
         default: e
       } = await Promise.all([n.e("79695"), n.e("98783"), n.e("49062")]).then(n.bind(n, 354589));
       return n => {
         var i, l;
-        return (0, r.jsx)(e, (i = T({}, n), l = l = {
+        return (0, r.jsx)(e, (i = P({}, n), l = l = {
           user: t,
           channel: s
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
@@ -95,7 +95,7 @@ function w(e) {
     user: t
   }), [D, L] = i.useState(false);
   return (0, r.jsx)(m.Z, {
-    targetElementRef: P,
+    targetElementRef: T,
     user: t,
     channelId: s.id,
     position: l.tq ? "window_center" : "left",
@@ -122,12 +122,12 @@ function w(e) {
         }
         return i
       }(e, ["onClick", "onMouseDown"]);
-      return (0, r.jsx)(S.Z, T({
-        ref: P,
+      return (0, r.jsx)(S.Z, P({
+        ref: T,
         user: t,
         currentUser: f,
         isOwner: t.id === s.ownerId,
-        ownerTooltipText: Z.intl.string(Z.t["MRXZ+x"]),
+        ownerTooltipText: Z.intl.string(Z.t["MRXZ+/"]),
         shouldAnimateStatus: R,
         isTyping: h,
         status: d,
@@ -204,15 +204,15 @@ function D(e) {
   return (0, r.jsx)(u.Gt, {
     value: o,
     children: (0, r.jsx)("div", {
-      className: P.container,
+      className: T.container,
       children: (0, r.jsx)("aside", {
-        className: P.membersWrap,
+        className: T.membersWrap,
         children: (0, r.jsxs)(s.Ttm, {
-          className: P.members,
+          className: T.members,
           fade: true,
           children: [(0, r.jsxs)(f.Z, {
-            className: P.membersGroup,
-            children: ["".concat(Z.intl.string(Z.t["9Oq93m"]), "—").concat(c.length, " "), p && (0, r.jsx)(h.Z, {
+            className: T.membersGroup,
+            children: ["".concat(Z.intl.string(Z.t["9Oq93t"]), "—").concat(c.length, " "), p && (0, r.jsx)(h.Z, {
               type: h.Z.Types.STAFF_ONLY_DM
             })]
           }), c.map(e => (0, r.jsx)(w, {

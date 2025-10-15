@@ -14,9 +14,9 @@ function a(t) {
     onContinue: n,
     onClose: e,
     errorCode: a
-  } = t, c = a === r.evJ.UNDER_MINIMUM_AGE ? s.intl.string(s.t["3dIn2A"]) : s.intl.string(s.t.qE9nqE);
+  } = t, c = a === r.evJ.UNDER_MINIMUM_AGE ? s.intl.string(s.t["3dIn2N"]) : s.intl.string(s.t.qE9nqK);
   return (0, o.jsx)(i.C, {
-    title: s.intl.string(s.t.eY3qHd),
+    title: s.intl.string(s.t.eY3qHR),
     body: c,
     onClose: e,
     onContinue: n

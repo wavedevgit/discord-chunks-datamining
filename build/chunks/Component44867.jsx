@@ -35,7 +35,7 @@ function m(e) {
             variant: "text-md/semibold",
             color: "header-primary",
             className: g.header,
-            children: u.intl.format(u.t.n1LDQM, {
+            children: u.intl.format(u.t.n1LDQE, {
               removedHook: (e, t) => (0, r.jsx)("strong", {
                 className: g.danger,
                 children: e
@@ -61,7 +61,7 @@ function m(e) {
         guildId: f.id,
         headerContent: (0, r.jsx)(a.Heading, {
           variant: "heading-md/semibold",
-          children: u.intl.format(u.t["+6Hylv"], {
+          children: u.intl.format(u.t["+6Hylp"], {
             doesNotHook: (e, t) => (0, r.jsx)("strong", {
               className: g.danger,
               children: e

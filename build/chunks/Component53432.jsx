@@ -53,14 +53,14 @@ function E() {
       }
     }),
     v = [(0, Chunk951288.jsxs)(Chunk481060.kSQ, {
-      children: [O(Chunk981631.BRd.LIGHT, Chunk388032.intl.string(Chunk388032.t.K2sFfo)), O(Chunk981631.BRd.DARK, Chunk388032.intl.string(Chunk388032.t.SMPT1k)), O(Chunk981631.BRd.DARKER, Chunk388032.intl.string(Chunk388032.t.b8Cei3)), O(Chunk981631.BRd.MIDNIGHT, Chunk388032.intl.string(Chunk388032.t.Do4ZJx)), O("system", Chunk388032.intl.string(Chunk388032.t["7rOU6j"]))]
+      children: [O(Chunk981631.BRd.LIGHT, Chunk388032.intl.string(Chunk388032.t.K2sFfn)), O(Chunk981631.BRd.DARK, Chunk388032.intl.string(Chunk388032.t.SMPT1t)), O(Chunk981631.BRd.DARKER, Chunk388032.intl.string(Chunk388032.t.b8Cei4)), O(Chunk981631.BRd.MIDNIGHT, Chunk388032.intl.string(Chunk388032.t.Do4ZJy)), O("system", Chunk388032.intl.string(Chunk388032.t["7rOU6u"]))]
     }, "theme-items")];
   return v.push((0, Chunk951288.jsxs)(Chunk481060.kSQ, {
     label: "UI Density",
     children: [(0, Chunk951288.jsx)(Chunk481060.k5B, {
       id: "compact-ui",
       group: "list-density",
-      label: Chunk388032.intl.string(Chunk388032.t["7iegX4"]),
+      label: Chunk388032.intl.string(Chunk388032.t["7iegX1"]),
       checked: y === Chunk524437.Pi.COMPACT,
       action: () => {
         Chunk695346.YC.updateSetting(Chunk524437.Pi.COMPACT)
@@ -68,7 +68,7 @@ function E() {
     }), (0, Chunk951288.jsx)(Chunk481060.k5B, {
       id: "default-ui",
       group: "list-density",
-      label: Chunk388032.intl.string(Chunk388032.t.bBvAEH),
+      label: Chunk388032.intl.string(Chunk388032.t.bBvAEB),
       checked: y === Chunk524437.Pi.DEFAULT,
       action: () => {
         Chunk695346.YC.updateSetting(Chunk524437.Pi.DEFAULT)
@@ -87,7 +87,7 @@ function E() {
     children: [(0, Chunk951288.jsx)(Chunk481060.k5B, {
       id: "cozy-chat",
       group: "chat-density",
-      label: Chunk388032.intl.string(Chunk388032.t.Jqj4cZ),
+      label: Chunk388032.intl.string(Chunk388032.t.Jqj4cX),
       checked: !module,
       action: () => {
         Chunk695346.jU.updateSetting(false), (0, Chunk857595.ZZ)()
@@ -95,7 +95,7 @@ function E() {
     }), (0, Chunk951288.jsx)(Chunk481060.k5B, {
       id: "compact-chat",
       group: "chat-density",
-      label: Chunk388032.intl.string(Chunk388032.t["1JNcPS"]),
+      label: Chunk388032.intl.string(Chunk388032.t["1JNcPT"]),
       checked: module,
       action: () => {
         Chunk695346.jU.updateSetting(true), (0, Chunk857595.ZZ)()

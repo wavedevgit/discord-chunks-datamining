@@ -43,33 +43,33 @@ function L(e) {
     application: t,
     guild: n
   } = e, l = (0, v.YB)(n.id), a = (0, v.qi)(n.id), s = a.some(e => null != e.name && null != e.subscription_plans[0] && null != e.description && null != e.image_asset), o = (0, i.Wu)([h.Z], () => a.map(e => h.Z.getRole(n.id, e.role_id)), [n.id, a]).some(e => null != e && 0 !== e.color), c = a.some(e => e.role_benefits.benefits.length > 0), d = null != t && n.features.has(w.oNc.ROLE_SUBSCRIPTIONS_ENABLED), u = [{
-    title: D.intl.string(D.t.p2Rsdl),
+    title: D.intl.string(D.t.p2Rsdn),
     items: [{
-      description: D.intl.string(D.t.zbO7fU),
+      description: D.intl.string(D.t.zbO7fX),
       completed: d
     }]
   }, {
-    title: D.intl.string(D.t["/CfKoD"]),
+    title: D.intl.string(D.t["/CfKoK"]),
     items: [{
-      description: D.intl.string(D.t.zvuI3S),
+      description: D.intl.string(D.t.zvuI3d),
       completed: true
     }, {
-      description: D.intl.string(D.t.cVcEYK),
+      description: D.intl.string(D.t.cVcEYG),
       completed: (null == l ? true : l.description) != null && "" !== l.description
     }, {
-      description: D.intl.string(D.t["88XnXE"]),
+      description: D.intl.string(D.t["88XnXF"]),
       completed: (null == l ? true : l.cover_image_asset) != null
     }]
   }, {
-    title: D.intl.string(D.t.pXbGYc),
+    title: D.intl.string(D.t.pXbGYW),
     items: [{
-      description: D.intl.string(D.t.pCxWKL),
+      description: D.intl.string(D.t.pCxWKC),
       completed: s
     }, {
-      description: D.intl.string(D.t["+amv5Z"]),
+      description: D.intl.string(D.t["+amv5e"]),
       completed: o
     }, {
-      description: D.intl.string(D.t["/P03C6"]),
+      description: D.intl.string(D.t["/P03Cw"]),
       completed: c
     }]
   }];
@@ -94,7 +94,7 @@ function k(e) {
       size: 16
     }), (0, r.jsx)(a.M14, {
       type: "warning",
-      children: D.intl.format(D.t.Yo0ZB2, {
+      children: D.intl.format(D.t.Yo0ZBw, {
         url: w.EYA.DEVELOPER_PORTAL_PAYOUT_SETTINGS(i.id)
       })
     }), (0, r.jsx)(a.LZC, {
@@ -173,10 +173,10 @@ function G(e) {
         gap: 8,
         children: [(0, r.jsx)(a.Heading, {
           variant: "heading-lg/semibold",
-          children: D.intl.string(D.t["KzCF/6"])
+          children: D.intl.string(D.t["KzCF//"])
         }), (0, r.jsx)(a.Text, {
           variant: "text-sm/normal",
-          children: D.intl.string(D.t.KyGv0k)
+          children: D.intl.string(D.t.KyGv0t)
         })]
       }), (0, r.jsx)(y.Z, {
         guild: n
@@ -186,35 +186,35 @@ function G(e) {
         className: A.tabBarContainer,
         children: [(0, r.jsxs)(a.njP, {
           className: A.tabBar,
-          "aria-label": D.intl.string(D.t["+1H47t"]),
+          "aria-label": D.intl.string(D.t["+1H47u"]),
           selectedItem: p,
           type: "top",
           look: "brand",
           onItemSelect: v,
           children: [(0, r.jsx)(s.Z, {
             id: T.ue.BASIC_INFO,
-            disabledTooltip: D.intl.string(D.t.NVDuUX),
+            disabledTooltip: D.intl.string(D.t.NVDuUV),
             disabled: !d,
-            children: D.intl.string(D.t["/CfKoD"])
+            children: D.intl.string(D.t["/CfKoK"])
           }), (0, r.jsx)(s.Z, {
             id: T.ue.TIERS,
-            disabledTooltip: D.intl.string(D.t.NVDuUX),
+            disabledTooltip: D.intl.string(D.t.NVDuUV),
             disabled: !d,
-            children: D.intl.string(D.t.pXbGYc)
+            children: D.intl.string(D.t.pXbGYW)
           }), (0, r.jsx)(s.Z, {
             id: T.ue.EMOJIS,
-            disabledTooltip: D.intl.string(D.t.NVDuUX),
+            disabledTooltip: D.intl.string(D.t.NVDuUV),
             disabled: !d,
-            children: D.intl.string(D.t.XBkDoA)
+            children: D.intl.string(D.t.XBkDoK)
           }), M ? (0, r.jsx)(a.njP.Item, {
             className: A.__invalid_tabBarItem,
             id: T.ue.PAYMENT,
-            children: D.intl.string(D.t.p2Rsdl)
+            children: D.intl.string(D.t.p2Rsdn)
           }) : null]
         }), d && (0, r.jsx)("div", {
           className: A.previewButton,
           children: (0, r.jsx)(l.u, {
-            text: D.intl.string(D.t["1wCH4M"]),
+            text: D.intl.string(D.t["1wCH4O"]),
             children: (0, r.jsx)(a.Button, {
               disabled: R,
               onClick: () => {
@@ -230,7 +230,7 @@ function G(e) {
                   returnToSection: w.pNK.ROLE_SUBSCRIPTIONS
                 }), (0, C.be)(n.id), (0, m.uL)(w.Z5c.CHANNEL(n.id, Z.oC.ROLE_SUBSCRIPTIONS))
               },
-              text: D.intl.string(D.t.vM81yY),
+              text: D.intl.string(D.t.vM81yc),
               size: "sm",
               variant: "secondary"
             })

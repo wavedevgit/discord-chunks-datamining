@@ -58,14 +58,14 @@ function O(e) {
   }
   let I = (0, d.FI)(f[E.PC.CREATED_AT], h),
     T = null,
-    S = b.intl.string(b.t.wzzjk9);
+    S = b.intl.string(b.t.wzzjk5);
   return (null == v || 0 === v.length) && null == I && (T = (0, r.jsx)(s.Text, {
     variant: "text-xs/normal",
     color: "header-secondary",
-    children: b.intl.format(b.t.Up2ni7, {
+    children: b.intl.format(b.t.Up2ni4, {
       helpdeskUrl: m.Z.getArticleURL(g.BhN.CONNECTION_DETAILS)
     })
-  }, "label"), S = b.intl.string(b.t["LVh3/5"])), o && (S = b.intl.string(b.t.i4jeWR)), (0, r.jsxs)("div", {
+  }, "label"), S = b.intl.string(b.t["LVh3//"])), o && (S = b.intl.string(b.t.i4jeWV)), (0, r.jsxs)("div", {
     className: y.metadataContainer,
     children: [T, null == v ? true : v.map((e, t) => (0, r.jsxs)(r.Fragment, {
       children: [e, t < v.length - 1 ? (0, r.jsx)("span", {
@@ -76,7 +76,7 @@ function O(e) {
     }) : null, null != I ? (0, r.jsx)(s.Text, {
       variant: "text-xs/normal",
       color: "header-secondary",
-      children: b.intl.format(b.t["9rfonh"], {
+      children: b.intl.format(b.t["9rfonp"], {
         date: I
       })
     }, "member-since") : null, (0, r.jsx)("div", {
@@ -86,7 +86,7 @@ function O(e) {
         variant: o ? "active" : "secondary",
         loading: c,
         disabled: o,
-        "aria-label": b.intl.string(b.t.sCkLYH),
+        "aria-label": b.intl.string(b.t.sCkLYG),
         onClick: O,
         text: S
       }, "refresh-button")
@@ -156,7 +156,7 @@ function v(e) {
           disabled: 1 !== d || null == t.metadata,
           checked: 1 === p,
           onChange: E,
-          label: b.intl.string(b.t["3l78wo"])
+          label: b.intl.string(b.t["3l78ws"])
         })]
       })]
     }), (0, r.jsx)(s.izJ, {})]
@@ -172,7 +172,7 @@ function I() {
     }), []);
   return 0 === exports.length ? null : (0, Chunk951288.jsx)(Chunk481060.C3N, {
     className: Chunk673449.container,
-    label: Chunk388032.intl.string(Chunk388032.t.aw0GVS),
+    label: Chunk388032.intl.string(Chunk388032.t.aw0GVV),
     children: exports.map(e => (0, r.jsx)(v, {
       account: e,
       handleRefresh: c,

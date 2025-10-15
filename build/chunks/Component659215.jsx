@@ -65,7 +65,7 @@ function b(e) {
       analyticsSource: h
     } = e,
     E = g(e, ["onClose", "analyticsSource"]);
-  let b = f.intl.format(f.t["JmbS+T"], {
+  let b = f.intl.format(f.t["JmbS+f"], {
       onClick: () => {
         (0, o.openUserSettings)(a.n.NITRO_PANEL, {
           section: d.oAB.PREMIUM
@@ -81,7 +81,7 @@ function b(e) {
     modalClassName: _.modalContainer,
     bodyClassName: _.bodyContainer,
     type: u.cd.BURST_REACTION_UPSELL,
-    title: f.intl.string(f.t.N4SCJ0),
+    title: f.intl.string(f.t.N4SCJy),
     body: b,
     glowUp: b,
     analyticsSource: h,
@@ -90,9 +90,9 @@ function b(e) {
       object: d.qAy.BUTTON_CTA
     },
     onClose: i,
-    subscribeButtonText: v ? true : f.intl.string(f.t["8x0jKT"]),
+    subscribeButtonText: v ? true : f.intl.string(f.t["8x0jKS"]),
     subscriptionTier: null != (n = null == y || null == (t = y.subscription_trial) ? true : t.sku_id) ? n : u.Si.TIER_2,
-    backButtonText: f.intl.string(f.t.f3Pet9)
+    backButtonText: f.intl.string(f.t.f3Pet7)
   }, E))
 }
 

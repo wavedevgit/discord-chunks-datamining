@@ -15,7 +15,7 @@ function s(e) {
   let t = (0, r.e7)([o.Z], () => o.Z.isCollapsed(e.id), [e.id]);
   return __OVERLAY__ ? null : (0, i.jsx)(l.S89, {
     id: "hide-voice-names",
-    label: c.intl.string(c.t.LxzNiu),
+    label: c.intl.string(c.t.LxzNio),
     action: () => a.Z.update(e.id),
     checked: t
   })

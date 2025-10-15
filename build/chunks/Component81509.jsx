@@ -40,7 +40,7 @@ function b(e) {
       }), (0, r.jsx)(a.Text, {
         variant: "text-md/normal",
         color: "always-white",
-        children: f.intl.string(f.t["3NNXPW"])
+        children: f.intl.string(f.t["3NNXPT"])
       })]
     })]
   })
@@ -91,9 +91,9 @@ function j(e) {
     }), (0, r.jsx)(a.Text, {
       variant: "text-md/normal",
       color: "interactive-active",
-      children: f.intl.format(f.t.m0b6Kj, {
+      children: f.intl.format(f.t.m0b6Ki, {
         attributionName: n,
-        attributionTitle: null != i ? i : f.intl.string(f.t.pclUFJ)
+        attributionTitle: null != i ? i : f.intl.string(f.t.pclUFB)
       })
     })]
   })
@@ -114,7 +114,7 @@ function v(e) {
         variant: "text-xs/semibold",
         color: "header-primary",
         className: h.premiumEmojisTitle,
-        children: f.intl.string(f.t.wg53L8)
+        children: f.intl.string(f.t.wg53Ly)
       }), (0, r.jsxs)("div", {
         className: h.premiumEmojisRow,
         children: [(0, r.jsxs)("div", {
@@ -138,7 +138,7 @@ function v(e) {
             variant: "secondary",
             disabled: null == i,
             onClick: d,
-            text: f.intl.string(f.t.mQ2IGa),
+            text: f.intl.string(f.t.mQ2IGR),
             fullWidth: true
           })
         })]
@@ -149,7 +149,7 @@ function v(e) {
         variant: "secondary",
         disabled: null == i,
         onClick: d,
-        text: f.intl.string(f.t.mQ2IGa),
+        text: f.intl.string(f.t.mQ2IGR),
         fullWidth: true
       })
     })
@@ -209,7 +209,7 @@ function C(e) {
     children: [(0, r.jsx)(a.Heading, {
       variant: "heading-lg/semibold",
       color: "header-primary",
-      children: f.intl.string(f.t["tJp+QV"])
+      children: f.intl.string(f.t["tJp+QU"])
     }), (0, r.jsx)(a.LZC, {
       size: 24
     }), (0, r.jsx)(m.Z, {

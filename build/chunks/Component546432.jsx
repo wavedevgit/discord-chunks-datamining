@@ -142,14 +142,14 @@ let F = e => {
     imageUrl: n,
     mimeType: t
   }, "app")), null != a && b.push((0, r.jsx)(l.u, {
-    text: R.intl.string(R.t["/XT3ij"]),
+    text: R.intl.string(R.t["/XT3io"]),
     children: (0, r.jsx)(c.P3F, {
       className: o()(w.hoverButton, P.removeMosaicItemHoverButton),
       focusProps: {
         offset: 2
       },
       onClick: a,
-      "aria-label": R.intl.string(R.t["0+xZH0"]),
+      "aria-label": R.intl.string(R.t["0+xZHx"]),
       children: (0, r.jsx)(c.XHJ, {
         size: "custom",
         color: "currentColor",
@@ -158,7 +158,7 @@ let F = e => {
       })
     })
   }, "remove")), s && b.push((0, r.jsx)(l.u, {
-    text: R.intl.string(R.t["1WjMbC"]),
+    text: R.intl.string(R.t["1WjMbG"]),
     children: (0, r.jsx)(h.Z, {
       target: "_blank",
       rel: "noreferrer noopener",
@@ -281,7 +281,7 @@ function V(e) {
           }
         },
         onClick: () => u(n),
-        "aria-label": R.intl.string(R.t["0+xZH0"]),
+        "aria-label": R.intl.string(R.t["0+xZHx"]),
         children: (0, r.jsx)(c.Dio, {
           size: "xs",
           color: "currentColor"

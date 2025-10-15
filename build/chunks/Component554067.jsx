@@ -64,7 +64,7 @@ function C(e) {
           page_type: n
         })
       },
-      placeholder: "en-US" === E ? f.intl.string(f.t.arz34K) : f.intl.string(f.t["hIt/Nm"])
+      placeholder: "en-US" === E ? f.intl.string(f.t.arz34O) : f.intl.string(f.t["hIt/Nj"])
     })
   })
 }

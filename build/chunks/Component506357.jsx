@@ -112,16 +112,16 @@ function S(e) {
           size: "xs",
           color: "currentColor"
         }), (0, r.jsx)("span", {
-          children: b.intl.string(b.t["c+7oa7"])
+          children: b.intl.string(b.t["c+7oa2"])
         })]
       })
     })]
   });
-  let k = (0, m.CG)(P) ? b.intl.formatToPlainString(b.t.tZTx2E, {
+  let k = (0, m.CG)(P) ? b.intl.formatToPlainString(b.t.tZTx2N, {
       guildName: N.name
-    }) : (0, m.kk)(P) ? b.intl.formatToPlainString(b.t["1bSmxr"], {
+    }) : (0, m.kk)(P) ? b.intl.formatToPlainString(b.t["1bSmxs"], {
       guildName: N.name
-    }) : b.intl.formatToPlainString(b.t.W87xDE, {
+    }) : b.intl.formatToPlainString(b.t.W87xDA, {
       guildName: N.name
     }),
     U = D && A === E.oC.MEMBER_SAFETY;
@@ -137,7 +137,7 @@ function S(e) {
       children: (0, r.jsx)("div", {
         className: y.actionButtonInner,
         children: (0, r.jsx)("span", {
-          children: b.intl.string(b.t.zDJDhr)
+          children: b.intl.string(b.t.zDJDho)
         })
       })
     })]

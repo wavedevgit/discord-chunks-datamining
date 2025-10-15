@@ -90,8 +90,8 @@ let k = Chunk647438.memo(function(e) {
     guildNode: G,
     setRef: U,
     onDragStart: B,
-    onDragEnd: F,
-    route: V,
+    onDragEnd: V,
+    route: F,
     guild: H,
     animatable: z,
     selected: W = false,
@@ -129,7 +129,7 @@ let k = Chunk647438.memo(function(e) {
         nodeId: G.id
       }),
       end() {
-        null == F || F(), (0, g.V1)(j.ZP.getCompatibleGuildFolders())
+        null == V || V(), (0, g.V1)(j.ZP.getCompatibleGuildFolders())
       },
       collect: e => ({
         dragging: e.isDragging()
@@ -143,18 +143,18 @@ let k = Chunk647438.memo(function(e) {
     [ev] = i.useState(() => new d.sW(70, () => ey(true)));
   i.useEffect(() => () => ev.cancel(), [ev]);
   let ej = i.useCallback(() => {
-      if (null != V) return void(0, _.uL)(V, {
+      if (null != F) return void(0, _.uL)(F, {
         state: L
       });
       (0, O.X)(eo, {
         state: L
       })
-    }, [eo, V]),
+    }, [eo, F]),
     ex = i.useCallback(() => {
-      if (null != V || null == H || q || !et) return;
+      if (null != F || null == H || q || !et) return;
       let e = (0, b.V)(H.id);
       null != e && h.Z.preload(H.id, e)
-    }, [V, H, q, et]),
+    }, [F, H, q, et]),
     eC = (0, u.e7)([v.ZP], () => v.ZP.isCurrentUserGuest(eo)),
     eE = i.useCallback(e => {
       null == H || eC || J(e, H)
@@ -185,7 +185,7 @@ let k = Chunk647438.memo(function(e) {
         eO || e_(false)
       }
     }) : (0, r.jsx)(p.LYs, D(R({
-      ariaLabel: T.intl.formatToPlainString(T.t["/uzRss"], {
+      ariaLabel: T.intl.formatToPlainString(T.t["/uzRsr"], {
         guildName: H.name,
         mentions: X
       }),

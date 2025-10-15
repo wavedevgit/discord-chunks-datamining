@@ -37,7 +37,7 @@ function h() {
   }, g.id)), (0, Chunk951288.jsx)(Chunk481060.Kqy, {
     id: "guild-list-unread-dms",
     role: "group",
-    "aria-label": Chunk388032.intl.string(Chunk388032.t.YUU0RF),
+    "aria-label": Chunk388032.intl.string(Chunk388032.t.YUU0RE),
     gap: "xs",
     hidden: f.length < 1,
     children: (0, Chunk951288.jsx)(Chunk215569.W, {

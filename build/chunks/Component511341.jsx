@@ -31,18 +31,18 @@ let O = e => {
   } = e, a = ":".concat(t.name, ":");
   switch (r) {
     case h.n_.ACTIVITY:
-      let o = b.intl.formatToPlainString(b.t.EUFEJt, {
+      let o = b.intl.formatToPlainString(b.t.EUFEJi, {
           username: n
         }),
         s = "\n> ".concat(i);
       return null != i ? "".concat(_.jd).concat(o, "*").concat(s, "\n").concat(a) : "".concat(_.jd).concat(o, "*\n").concat(a);
     case h.n_.AVATAR:
-      let l = b.intl.formatToPlainString(b.t.E6H15q, {
+      let l = b.intl.formatToPlainString(b.t.E6H15u, {
         username: n
       });
       return "".concat(_.jd).concat(l, "*\n").concat(a);
     case h.n_.STATUS:
-      let u = b.intl.formatToPlainString(b.t.XPQgL2, {
+      let u = b.intl.formatToPlainString(b.t.XPQgLy, {
           username: n
         }),
         d = "\n> ".concat(i);

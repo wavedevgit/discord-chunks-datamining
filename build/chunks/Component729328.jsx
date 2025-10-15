@@ -21,7 +21,7 @@ function s(t) {
       separator: false,
       children: (0, r.jsx)(e.Heading, {
         variant: "heading-md/semibold",
-        children: a.intl.string(a.t.KTjjrG)
+        children: a.intl.string(a.t.KTjjrK)
       })
     }), (0, r.jsx)(e.hzk, {
       children: "string" == typeof s ? (0, r.jsx)(e.Text, {
@@ -31,7 +31,7 @@ function s(t) {
     }), (0, r.jsx)(e.mzw, {
       children: (0, r.jsx)(e.Button, {
         variant: "primary",
-        text: a.intl.string(a.t.i4jeWR),
+        text: a.intl.string(a.t.i4jeWV),
         onClick: n
       })
     })]

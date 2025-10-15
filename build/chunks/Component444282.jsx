@@ -124,7 +124,7 @@ function b(e) {
         }), (0, r.jsx)(s.Text, {
           className: g.optionHelp,
           variant: "text-sm/normal",
-          children: m.intl.string(m.t.IJyOUf)
+          children: m.intl.string(m.t.IJyOUV)
         }), (0, r.jsx)(c.Z, {
           ref: b,
           onChange: N,

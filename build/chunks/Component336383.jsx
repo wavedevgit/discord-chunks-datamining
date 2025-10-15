@@ -105,7 +105,7 @@ let I = Chunk647438.forwardRef(function(e, t) {
     "aria-labelledby": I,
     children: (0, r.jsx)(s.kL8, {
       className: m.clickableContainer,
-      "aria-label": h.intl.string(h.t.pD1L1u),
+      "aria-label": h.intl.string(h.t.pD1L1t),
       focusProps: {
         ringTarget: t
       },

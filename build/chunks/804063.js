@@ -12,19 +12,19 @@ var Chunk668781 = require("./668781.js"),
 function s(e) {
   let t = null;
   return i.Z.isBlockedForMessage(e) ? t = {
-    title: o.t["j7eA/g"],
-    body: o.t.dTNNgr
+    title: o.t["j7eA/v"],
+    body: o.t.dTNNgo
   } : i.Z.isIgnoredForMessage(e) ? t = {
-    title: o.t.XyWoKV,
+    title: o.t.XyWoKS,
     body: o.t["8t8doK"]
   } : (0, a.DQ)(e) && (t = {
-    title: o.t["6vJKFk"],
-    body: o.t.zKNgPF
+    title: o.t["6vJKFh"],
+    body: o.t.zKNgPD
   }), null == t || (r.Z.show({
     title: o.intl.string(t.title),
     body: o.intl.formatToPlainString(t.body, {
       name: e.author.username
     }),
-    confirmText: o.intl.string(o.t.BddRzS)
+    confirmText: o.intl.string(o.t.BddRzc)
   }), false)
 }

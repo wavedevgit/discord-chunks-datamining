@@ -37,16 +37,16 @@ let _ = e => {
   }, []);
   let y = null != E ? E : "",
     {
-      handleCardVisibilityChange: j
+      handleCardVisibilityChange: k
     } = (0, d.E)(y, "home", "marketing wide banner"),
     {
-      bannerURL: k
+      bannerURL: j
     } = (0, g.UI)(_);
-  if (null == k) return null;
+  if (null == j) return null;
   let T = b === f.AW.ORBS;
   return (0, r.jsx)(s.$, {
     innerRef: v,
-    onChange: j,
+    onChange: k,
     threshold: 0,
     children: (0, r.jsxs)("div", {
       ref: v,
@@ -59,7 +59,7 @@ let _ = e => {
         }),
         children: (0, r.jsx)("img", {
           ref: O,
-          src: k,
+          src: j,
           alt: _.title,
           className: o()(h.wideBannerArt, {
             [h.wideBannerArtOrbs]: T
@@ -88,7 +88,7 @@ let _ = e => {
             },
             lineClamp: 2,
             variant: T ? "text-md/medium" : "text-sm/medium",
-            children: T ? C.intl.format(C.t.SFFP7K, {
+            children: T ? C.intl.format(C.t.SFFP7O, {
               helpdeskArticle: c.Z.getArticleURL(p.BhN.VIRTUAL_CURRENCY_LEARN_MORE)
             }) : _.body
           })]
@@ -98,7 +98,7 @@ let _ = e => {
         children: (0, r.jsx)(a.Button, {
           variant: "overlay-primary",
           onClick: () => m("shop wide banner", y),
-          text: C.intl.string(C.t.jVcuVY)
+          text: C.intl.string(C.t.jVcuVV)
         })
       })]
     })

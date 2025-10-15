@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
 function b() {
   let [e, t] = (0, Chunk243778.US)([Chunk704215.z.RESTRICTED_ACCOUNTS_SETTING_NOTICE]);
   return Chunk647438.useMemo(() => module === Chunk704215.z.RESTRICTED_ACCOUNTS_SETTING_NOTICE, [module]) ? (0, Chunk951288.jsx)(Chunk907995.f, {
-    label: Chunk388032.t.zqv4nV,
+    label: Chunk388032.t.zqv4nZ,
     labelHook: () => {
       (0, Chunk518596.openUserSettings)(Chunk313789.n.CONTENT_AND_SOCIAL_PANEL, {
         section: Chunk981631.oAB.CONTENT_AND_SOCIAL,

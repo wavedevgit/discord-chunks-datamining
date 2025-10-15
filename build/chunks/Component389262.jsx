@@ -23,7 +23,7 @@ function d(t) {
     actions: [{
       variant: "secondary",
       onClick: i,
-      text: l.intl.string(l.t["JtWl+a"])
+      text: l.intl.string(l.t["JtWl+f"])
     }],
     "aria-labelledby": p,
     graphic: {
@@ -32,14 +32,14 @@ function d(t) {
     },
     onClose: i,
     transitionState: e,
-    title: l.intl.formatToPlainString(l.t.wLFT6z, {
+    title: l.intl.formatToPlainString(l.t["wLFT6+"], {
       tier: d.summary
     }),
     children: (0, a.jsx)(n.Text, {
       className: o.subtitle,
       variant: "text-md/medium",
       color: "header-secondary",
-      children: l.intl.format(l.t.OsAK9h, {
+      children: l.intl.format(l.t.OsAK9v, {
         timestamp: null == u ? true : u.currentPeriodEnd
       })
     })

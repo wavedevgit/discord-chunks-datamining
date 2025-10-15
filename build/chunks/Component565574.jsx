@@ -49,7 +49,7 @@ function d(e) {
         return e
       }({
         size: l.zx.Sizes.ICON,
-        "aria-label": a.intl.string(a.t["+1H47t"]),
+        "aria-label": a.intl.string(a.t["+1H47u"]),
         color: l.zx.Colors.PRIMARY,
         className: c.streamOptionsButton,
         buttonRef: n

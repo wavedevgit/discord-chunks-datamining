@@ -86,13 +86,13 @@ function g(e) {
       text: function(e) {
         switch (e) {
           case s.z.DESKTOP:
-            return d.intl.string(d.t.KT6uCJ);
+            return d.intl.string(d.t.KT6uCA);
           case s.z.XBOX:
-            return d.intl.string(d.t.DDWUJp);
+            return d.intl.string(d.t.DDWUJi);
           case s.z.PLAYSTATION:
-            return d.intl.string(d.t.fzMz2s);
+            return d.intl.string(d.t.fzMz2t);
           case s.z.NINTENDO:
-            return d.intl.string(d.t.AMW8je);
+            return d.intl.string(d.t.AMW8jY);
           default:
             return null
         }

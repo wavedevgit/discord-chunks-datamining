@@ -42,7 +42,7 @@ function c(e) {
   return (0, r.jsx)(i.Modal, {
     title: n,
     actions: [{
-      text: o.intl.string(o.t["NX+WJN"]),
+      text: o.intl.string(o.t["NX+WJC"]),
       onClick: s
     }],
     transitionState: t,

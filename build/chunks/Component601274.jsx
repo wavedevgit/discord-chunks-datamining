@@ -16,7 +16,7 @@ var Chunk442837 = require("./442837.js"),
 function d(e, t) {
   return (0, r.e7)([c.Z], () => c.Z.can(s.Plq.CONNECT, e), [e]) && e.isGuildVocal() ? (0, i.jsx)(l.sNh, {
     id: "open-chat",
-    label: u.intl.string(u.t.ZXxLQg),
+    label: u.intl.string(u.t.ZXxLQk),
     action: () => {
       a.Z.updateChatOpen(e.id, true), (0, o.XU)(t.id, e.id)
     }

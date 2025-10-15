@@ -45,7 +45,7 @@ function b(e) {
     children: [(0, r.jsx)(a.Heading, {
       variant: "heading-xl/semibold",
       className: m.joinCtaTitle,
-      children: g.intl.format(g.t.xHMpym, {
+      children: g.intl.format(g.t.xHMpys, {
         serverName: O,
         channelName: null == x ? true : x.name
       })

@@ -24,8 +24,8 @@ let i = () => {
     onClear: () => {
       exports("")
     },
-    placeholder: Chunk388032.intl.string(Chunk388032.t["5h0QOP"]),
-    "aria-label": Chunk388032.intl.string(Chunk388032.t["5h0QOP"]),
+    placeholder: Chunk388032.intl.string(Chunk388032.t["5h0QOD"]),
+    "aria-label": Chunk388032.intl.string(Chunk388032.t["5h0QOD"]),
     autoFocus: true
   })
 }

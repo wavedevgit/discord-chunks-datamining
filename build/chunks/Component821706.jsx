@@ -91,7 +91,7 @@ function y(e) {
   return {
     action: d.yM.SEND_FRIEND_REQUEST,
     icon: a.oLu,
-    text: _.intl.string(_.t.w5uwoI),
+    text: _.intl.string(_.t.w5uwoK),
     onClick: r
   }
 }
@@ -153,9 +153,9 @@ let T = {
     [Chunk981631.OGo.PENDING_INCOMING]: Chunk481060.iHX
   },
   S = {
-    [Chunk981631.OGo.FRIEND]: () => Chunk388032.intl.string(Chunk388032.t.G7jMpU),
-    [Chunk981631.OGo.PENDING_OUTGOING]: () => Chunk388032.intl.string(Chunk388032.t["s/+byI"]),
-    [Chunk981631.OGo.PENDING_INCOMING]: () => Chunk388032.intl.string(Chunk388032.t["6QQCQ+"])
+    [Chunk981631.OGo.FRIEND]: () => Chunk388032.intl.string(Chunk388032.t.G7jMpa),
+    [Chunk981631.OGo.PENDING_OUTGOING]: () => Chunk388032.intl.string(Chunk388032.t["s/+byM"]),
+    [Chunk981631.OGo.PENDING_INCOMING]: () => Chunk388032.intl.string(Chunk388032.t["6QQCQ0"])
   };
 
 function A(e) {

@@ -43,7 +43,7 @@ function h(e) {
       className: c.heading,
       variant: "heading-xl/semibold",
       color: "header-primary",
-      children: u.intl.format(u.t.pGj5u2, {
+      children: u.intl.format(u.t.pGj5u7, {
         count: h
       })
     }), (0, n.jsx)(o.Exd, {

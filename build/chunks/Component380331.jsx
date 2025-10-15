@@ -232,7 +232,7 @@ let z = e => {
     rowCountBySection: X,
     children: e => U >= W && (0, r.jsx)(f.P3F, {
       "aria-hidden": !Q,
-      "aria-label": N.intl.string(N.t.dT0ctw),
+      "aria-label": N.intl.string(N.t.dT0ct7),
       className: o()(R.unicodeShortcut, {
         [R.unicodeShortcutInvisible]: !Q
       }),

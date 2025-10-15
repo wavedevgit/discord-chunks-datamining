@@ -180,7 +180,7 @@ async function G(e) {
       pids: e
     })
   }).catch(e => {
-    R.Z.show(P.kVF.LAUNCH_GAME_FAILURE, D.intl.string(D.t.YZEBdj)), l.Z.dispatch({
+    R.Z.show(P.kVF.LAUNCH_GAME_FAILURE, D.intl.string(D.t.YZEBdn)), l.Z.dispatch({
       type: "GAME_LAUNCH_FAIL",
       applicationId: t,
       error: f

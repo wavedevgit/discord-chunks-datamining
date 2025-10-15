@@ -1,0 +1,3 @@
+/** Chunk was on 68162 **/
+/** chunk id: 866157, original params: n (module,exports,require) **/
+module.exports = JSON.parse('{"Z1NZwc":"Odstraněno","+a5G2t":"Nedostupn\xe9","Ys/RrK":"Offline","60kAzs":"Online","aCyHe3":"Nedostupn\xe9","k+RTIi":"Um\xedstěn\xed","nB5OZ2":"Um\xedstěn\xed","rOMEZW":"Jm\xe9no","K+zMYm":"Pl\xe1n","k0Y0BA":"Koukni na to","P2ihv7":"Pozvat př\xe1tele","yIH2oK":"Spravovat pl\xe1n","feUiMz":"Nastaven\xed","n+ZX7+":"Stav serveru"}')

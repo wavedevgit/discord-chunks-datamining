@@ -46,16 +46,16 @@ function O(e) {
             className: _.coachmarkTextContainer,
             children: [(0, r.jsx)(o.Heading, {
               variant: "heading-md/medium",
-              children: b.intl.string(b.t["0YV0YE"])
+              children: b.intl.string(b.t["0YV0YG"])
             }), (0, r.jsx)(o.Text, {
               variant: "text-xs/normal",
               color: "text-muted",
-              children: b.intl.string(b.t["0UQVDL"])
+              children: b.intl.string(b.t["0UQVDA"])
             })]
           }), (0, r.jsx)(o.Button, {
             variant: "primary",
             size: "sm",
-            text: b.intl.string(b.t["4r+amb"]),
+            text: b.intl.string(b.t["4r+amZ"]),
             fullWidth: true,
             onClick: p
           })]
@@ -110,7 +110,7 @@ function y(e) {
   } = e, [n, y] = i.useState(false), v = (0, l.e7)([d.Z], () => d.Z.getGuildId()), j = (0, l.e7)([u.Z], () => u.Z.hasFetchedRequestToJoinGuilds), x = (0, f.Z)(), C = (0, a.Z)(v), E = i.useMemo(() => {
     let e = (0, h.qQ)({
       folderId: p.S.PENDING_JOIN_REQUESTS_FOLDER,
-      folderName: b.intl.string(b.t["scsU+l"]),
+      folderName: b.intl.string(b.t["scsU+v"]),
       expanded: n,
       guildIds: []
     });

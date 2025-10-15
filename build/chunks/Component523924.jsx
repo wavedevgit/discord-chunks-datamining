@@ -44,15 +44,15 @@ let p = e => {
         id: t,
         variant: "heading-lg/semibold",
         color: "header-primary",
-        children: (null == m ? true : m.name) != null ? u.intl.formatToPlainString(u.t["P+/gzA"], {
+        children: (null == m ? true : m.name) != null ? u.intl.formatToPlainString(u.t["P+/gzM"], {
           guildName: m.name
-        }) : u.intl.string(u.t.gBPcuP)
+        }) : u.intl.string(u.t.gBPcuL)
       }), null != g && "" !== g ? (0, r.jsxs)(o.Text, {
         variant: "text-md/medium",
         color: "header-secondary",
         children: [(0, r.jsx)("span", {
           className: d.rejectionReasonLabel,
-          children: u.intl.string(u.t.cf1psW)
+          children: u.intl.string(u.t.cf1psb)
         }), (0, r.jsx)("span", {
           children: g
         })]
@@ -61,10 +61,10 @@ let p = e => {
       className: d.confirmationButtonRow,
       children: [(0, r.jsx)(a.u, {
         asContainer: true,
-        text: _ ? u.intl.formatToPlainString(u.t.A0f0P7, {
+        text: _ ? u.intl.formatToPlainString(u.t.A0f0Pz, {
           days: O
         }) : null,
-        "aria-label": _ ? u.intl.formatToPlainString(u.t.A0f0P7, {
+        "aria-label": _ ? u.intl.formatToPlainString(u.t.A0f0Pz, {
           days: O
         }) : true,
         children: (0, r.jsx)(o.Button, {

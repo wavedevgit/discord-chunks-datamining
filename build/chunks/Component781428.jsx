@@ -196,9 +196,9 @@ class X extends(r = Chunk647438.PureComponent) {
       className: module,
       children: [(0, Chunk951288.jsx)(Chunk388905.Hh, {}), (0, Chunk951288.jsx)(Chunk388905.Dx, {
         className: Chunk197571.marginBottom8,
-        children: Chunk388032.intl.string(Chunk388032.t.S6RMNA)
+        children: Chunk388032.intl.string(Chunk388032.t.S6RMND)
       }), (0, Chunk951288.jsx)(Chunk388905.DK, {
-        children: Chunk388032.intl.string(Chunk388032.t.YZiJbh)
+        children: Chunk388032.intl.string(Chunk388032.t.YZiJbm)
       })]
     })
   }
@@ -216,24 +216,24 @@ class X extends(r = Chunk647438.PureComponent) {
         className: Chunk197571.marginBottom20
       }), (0, Chunk951288.jsx)(Chunk388905.Dx, {
         className: Chunk197571.marginBottom8,
-        children: Chunk388032.intl.format(Chunk388032.t.ot19hv, {
+        children: Chunk388032.intl.format(Chunk388032.t.ot19ho, {
           name: module.toString()
         })
       }), (0, Chunk951288.jsx)(Chunk388905.DK, {
         className: Chunk197571.marginBottom40,
-        children: Chunk388032.intl.string(Chunk388032.t["2xkqzT"])
+        children: Chunk388032.intl.string(Chunk388032.t["2xkqzc"])
       }), (0, Chunk951288.jsxs)(Chunk388905.gO, {
         children: [(0, Chunk951288.jsx)(Chunk388905.zx, {
           onClick: () => exports(Chunk981631.Z5c.APP),
           className: Chunk197571.marginBottom8,
-          children: Chunk388032.intl.format(Chunk388032.t.fohtv2, {
+          children: Chunk388032.intl.format(Chunk388032.t.fohtv7, {
             name: module.toString()
           })
         }), (0, Chunk951288.jsx)(Chunk388905.zx, {
           look: Chunk388905.zx.Looks.LINK,
           color: Chunk388905.zx.Colors.LINK,
           onClick: this.handleReset,
-          children: Chunk388032.intl.string(Chunk388032.t.nO564d)
+          children: Chunk388032.intl.string(Chunk388032.t.nO564e)
         })]
       })]
     })
@@ -241,7 +241,7 @@ class X extends(r = Chunk647438.PureComponent) {
   renderDisabledAccount() {
     let {
       authBoxClassName: e
-    } = this.props, t = this.props.loginStatus === Chunk981631.u34.ACCOUNT_DISABLED, n = exports ? Chunk388032.intl.string(Chunk388032.t["j3rC+U"]) : Chunk388032.intl.string(Chunk388032.t.ZFWofo), r = exports ? Chunk388032.intl.string(Chunk388032.t["6eNTWe"]) : Chunk388032.intl.string(Chunk388032.t["pCBti+"]);
+    } = this.props, t = this.props.loginStatus === Chunk981631.u34.ACCOUNT_DISABLED, n = exports ? Chunk388032.intl.string(Chunk388032.t["j3rC+f"]) : Chunk388032.intl.string(Chunk388032.t.ZFWofn), r = exports ? Chunk388032.intl.string(Chunk388032.t["6eNTWV"]) : Chunk388032.intl.string(Chunk388032.t.pCBti4);
     return (0, Chunk951288.jsx)(Chunk388905.ZP, {
       tag: "form",
       onSubmit: this.handleReset,
@@ -258,10 +258,10 @@ class X extends(r = Chunk647438.PureComponent) {
           children: [(0, Chunk951288.jsx)(Chunk388905.zx, {
             color: Chunk388905.zx.Colors.BRAND,
             type: "submit",
-            children: Chunk388032.intl.string(Chunk388032.t.JhDw5o)
+            children: Chunk388032.intl.string(Chunk388032.t.JhDw5u)
           }), (0, Chunk951288.jsx)("div", {
             className: a()(Chunk197571.marginTop8, Chunk132825.needAccount),
-            children: Chunk388032.intl.format(Chunk388032.t.js2rr5, {
+            children: Chunk388032.intl.format(Chunk388032.t.js2rr6, {
               onClick: this.handleCancelAccountDeletion
             })
           })]
@@ -282,7 +282,7 @@ class X extends(r = Chunk647438.PureComponent) {
           className: Chunk197571.marginBottom20,
           alpha2: exports.alpha2,
           countryCode: exports.code.split(" ")[0],
-          label: Chunk388032.intl.string(Chunk388032.t.tUjnxr),
+          label: Chunk388032.intl.string(Chunk388032.t.tUjnxs),
           onChange: (e, t) => this.setState({
             login: e,
             loginPrefix: t
@@ -297,7 +297,7 @@ class X extends(r = Chunk647438.PureComponent) {
           required: true
         }), (0, Chunk951288.jsx)(Chunk388905.II, {
           className: Chunk197571.marginBottom20,
-          label: Chunk388032.intl.string(Chunk388032.t["CIGa+7"]),
+          label: Chunk388032.intl.string(Chunk388032.t["CIGa+/"]),
           onChange: e => this.setState({
             password: e
           }),
@@ -311,18 +311,18 @@ class X extends(r = Chunk647438.PureComponent) {
           className: Chunk197571.marginBottom8,
           type: "submit",
           disabled: true,
-          children: Chunk388032.intl.string(Chunk388032.t.dKhVQN)
+          children: Chunk388032.intl.string(Chunk388032.t.dKhVQE)
         }), (0, Chunk951288.jsx)(Chunk388905.zx, {
           disabled: true,
           look: Chunk388905.zx.Looks.LINK,
           color: Chunk388905.zx.Colors.LINK,
-          children: Chunk388032.intl.string(Chunk388032.t.wWIufs)
+          children: Chunk388032.intl.string(Chunk388032.t.wWIufn)
         }), (0, Chunk951288.jsx)(Chunk388905.zx, {
           disabled: true,
           className: Chunk197571.marginTop4,
           look: Chunk388905.zx.Looks.LINK,
           color: Chunk388905.zx.Colors.LINK,
-          children: Chunk388032.intl.string(Chunk388032.t.tmE73r)
+          children: Chunk388032.intl.string(Chunk388032.t.tmE73t)
         })]
       })]
     })
@@ -338,23 +338,23 @@ class X extends(r = Chunk647438.PureComponent) {
         disableAutofocusOnDefaultForm: u
       } = this.props,
       h = !this.hasError("email") && this.hasError("password");
-    return n = null != r ? (0, i.jsx)(B.Z, {
+    return n = null != r ? (0, i.jsx)(G.Z, {
       invite: r
     }) : null != s ? (0, i.jsx)(U.Z, {
       giftCode: s
     }) : (0, i.jsxs)("div", {
-      className: W.header,
+      className: H.header,
       children: [(0, i.jsx)(_.Dx, {
-        className: H.marginBottom8,
-        children: K.intl.string(K.t["7fNJgA"])
+        className: W.marginBottom8,
+        children: K.intl.string(K.t["7fNJgI"])
       }, "title"), false === (0, M.isAndroidWeb)() ? (0, i.jsx)(_.DK, {
-        children: K.intl.string(K.t.euS7r4)
+        children: K.intl.string(K.t.euS7r6)
       }, "subtitle") : null]
     }), (0, i.jsxs)(E.Z, {
       direction: E.Z.Direction.HORIZONTAL,
       align: E.Z.Align.CENTER,
       children: [(0, i.jsxs)("div", {
-        className: W.mainLoginContainer,
+        className: H.mainLoginContainer,
         children: [this.canShowChooseAccount && this.state.dismissedChooseAccount && (0, i.jsx)(_.zx, {
           onClick: () => {
             this.setState(e => J(Y({}, e), {
@@ -363,26 +363,26 @@ class X extends(r = Chunk647438.PureComponent) {
           },
           look: _.zx.Looks.LINK,
           color: _.zx.Colors.PRIMARY,
-          className: W.goBackButton,
+          className: H.goBackButton,
           children: (0, i.jsxs)("div", {
-            className: W.content,
+            className: H.content,
             children: [(0, i.jsx)(d.V7D, {
               size: "xs",
               color: "currentColor",
-              className: W.caret
+              className: H.caret
             }), (0, i.jsx)(d.Text, {
               variant: "text-md/normal",
-              children: K.intl.string(K.t["1MrpWO"])
+              children: K.intl.string(K.t["1MrpWF"])
             })]
           })
         }), n, (0, i.jsx)(d.y5t, {
           children: (0, i.jsxs)(_.gO, {
-            className: H.marginTop20,
+            className: W.marginTop20,
             children: [(0, i.jsx)(C.Z, {
               alpha2: o.alpha2,
               countryCode: o.code.split(" ")[0],
-              className: H.marginBottom20,
-              label: K.intl.string(K.t.tUjnxr),
+              className: W.marginBottom20,
+              label: K.intl.string(K.t.tUjnxs),
               error: null != (t = this.renderError("login")) ? t : this.renderError("email"),
               onChange: (e, t) => this.setState({
                 login: e,
@@ -397,7 +397,7 @@ class X extends(r = Chunk647438.PureComponent) {
               autoFocus: !h && !c && !u,
               required: true
             }), (0, i.jsx)(_.II, {
-              label: K.intl.string(K.t["CIGa+7"]),
+              label: K.intl.string(K.t["CIGa+/"]),
               error: this.renderError("password"),
               onChange: e => this.setState({
                 password: e
@@ -414,31 +414,31 @@ class X extends(r = Chunk647438.PureComponent) {
               onClick: this.handleForgotPassword,
               look: _.zx.Looks.LINK,
               color: _.zx.Colors.LINK,
-              className: a()(H.marginBottom20, H.marginTop4),
-              children: K.intl.string(K.t.wWIufs)
+              className: a()(W.marginBottom20, W.marginTop4),
+              children: K.intl.string(K.t.wWIufn)
             }), (0, i.jsx)(_.zx, {
               type: "submit",
               submitting: l === z.u34.LOGGING_IN,
               color: _.zx.Colors.BRAND,
-              className: H.marginBottom8,
-              children: K.intl.string(K.t.dKhVQN)
+              className: W.marginBottom8,
+              children: K.intl.string(K.t.dKhVQE)
             }), (0, i.jsxs)("div", {
-              className: H.marginTop4,
+              className: W.marginTop4,
               children: [(0, i.jsx)("span", {
-                className: W.needAccount,
-                children: K.intl.string(K.t.tmE73r)
+                className: H.needAccount,
+                children: K.intl.string(K.t.tmE73t)
               }), (0, i.jsx)(_.zx, {
                 onClick: this.handleGotoRegister,
                 look: _.zx.Looks.LINK,
                 color: _.zx.Colors.LINK,
-                className: W.smallRegisterLink,
-                children: K.intl.string(K.t.pV8xeR)
+                className: H.smallRegisterLink,
+                children: K.intl.string(K.t.pV8xeX)
               })]
             })]
           })
         })]
       }), (0, i.jsx)(d.y5t, {
-        children: e ? (0, i.jsx)(G.Z, {
+        children: e ? (0, i.jsx)(B.Z, {
           authTokenCallback: this.handleAuthToken,
           conditionalMediationAbortController: this.state.conditionalMediationAbortController
         }) : null
@@ -465,7 +465,7 @@ class X extends(r = Chunk647438.PureComponent) {
     return (0, i.jsx)(F.Z, {
       onSubmit: this.handleLogin,
       tag: "form",
-      className: a()(this.props.authBoxClassName, W.horizontalAuthBox),
+      className: a()(this.props.authBoxClassName, H.horizontalAuthBox),
       children: () => [(0, i.jsx)(b.Z, {
         guildTemplate: e
       }, "template"), this.renderDefaultForm(false)]
@@ -502,8 +502,8 @@ class X extends(r = Chunk647438.PureComponent) {
       tag: "form",
       className: module,
       children: (0, Chunk951288.jsx)(Chunk379760.Z, {
-        title: Chunk388032.intl.string(Chunk388032.t.w55Oco),
-        subtitle: Chunk388032.intl.format(Chunk388032.t.CfRZBj, {
+        title: Chunk388032.intl.string(Chunk388032.t.w55Ocn),
+        subtitle: Chunk388032.intl.format(Chunk388032.t.CfRZBg, {
           onResendClick: this.handleResendCode
         }),
         error: exports,
@@ -523,7 +523,7 @@ class X extends(r = Chunk647438.PureComponent) {
       className: module,
       children: (0, Chunk951288.jsx)(Chunk379760.Z, {
         title: Chunk388032.intl.string(Chunk388032.t["+xqy3d"]),
-        subtitle: Chunk388032.intl.format(Chunk388032.t.ef4uZ7, {
+        subtitle: Chunk388032.intl.format(Chunk388032.t.ef4uZ2, {
           onResendClick: this.handleResendCode
         }),
         error: exports,
@@ -650,7 +650,7 @@ class X extends(r = Chunk647438.PureComponent) {
       try {
         let {
           token: n
-        } = await O.Z.verifyPhone(t, e, false);
+        } = await y.Z.verifyPhone(t, e, false);
         await g.Z.authorizeIPAddress(n), this.handleLogin()
       } catch (e) {
         null != e.body && null != e.body.message && this.setState({
@@ -667,7 +667,7 @@ class X extends(r = Chunk647438.PureComponent) {
       try {
         let {
           token: n
-        } = await O.Z.verifyPhone(this.getFullLogin(), e, false);
+        } = await y.Z.verifyPhone(this.getFullLogin(), e, false);
         t(z.Z5c.RESET, {
           search: (0, o.stringify)({
             token: n,
@@ -701,14 +701,14 @@ class X extends(r = Chunk647438.PureComponent) {
       try {
         if (k.S.dispatch(z.CkL.WAVE_EMPHASIZE), !await g.Z.forgotPassword(t)) return;
         (0, d.h7j)(e => (0, i.jsx)(d.ConfirmModal, J(Y({
-          header: K.intl.string(K.t.f5Pi7A),
-          confirmText: K.intl.string(K.t.BddRzS),
+          header: K.intl.string(K.t.f5Pi7O),
+          confirmText: K.intl.string(K.t.BddRzc),
           confirmButtonColor: _.zx.Colors.BRAND,
-          className: c.tq ? W.mobile : ""
+          className: c.tq ? H.mobile : ""
         }, e), {
           children: (0, i.jsx)(d.Text, {
             variant: "text-md/normal",
-            children: K.intl.format(K.t["6u5hQ9"], {
+            children: K.intl.format(K.t["6u5hQ0"], {
               email: t
             })
           })
@@ -720,7 +720,7 @@ class X extends(r = Chunk647438.PureComponent) {
         })
       }
     }), q(this, "handleResendCode", () => {
-      O.Z.resendCode(this.getFullLogin())
+      y.Z.resendCode(this.getFullLogin())
     }), q(this, "handleReset", e => {
       null != e && e.preventDefault(), g.Z.loginReset(), this.setState({
         password: "",

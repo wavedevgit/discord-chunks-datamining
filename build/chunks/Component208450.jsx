@@ -118,13 +118,13 @@ class Y extends Chunk647438.PureComponent {
       handleDroppedFiles: this.handleDroppedFiles,
       handleDrop: this.handleDrop,
       keyBindingFn: this.handleKeyBind,
-      placeholder: null != n ? n : G.intl.string(G.t["5h0QOP"]),
+      placeholder: null != n ? n : G.intl.string(G.t["5h0QOD"]),
       editorState: t,
       onChange: this.setEditorState,
       role: "combobox",
       ariaExpanded: e,
       ariaControls: e ? V : true,
-      ariaLabel: G.intl.string(G.t["5h0QOP"]),
+      ariaLabel: G.intl.string(G.t["5h0QOD"]),
       ariaAutoComplete: "list"
     })
   }
@@ -239,7 +239,7 @@ class Y extends Chunk647438.PureComponent {
           queryString: n,
           query: t,
           searchEverywhere: null != r && r
-        }), d.uvj.announce(G.intl.string(G.t.pKCxWP)), this.handleBlur(true)
+        }), d.uvj.announce(G.intl.string(G.t.pKCxWF)), this.handleBlur(true)
       }
       returntrue
     }), Z(this, "handleClearSearch", e => {
@@ -523,9 +523,9 @@ function W(e) {
       location: "Search"
     }),
     L = A || P,
-    x = i.useMemo(() => t.type === U.aib.DMS ? G.intl.string(G.t.m7OrlR) : L ? G.intl.formatToPlainString(G.t.LDZtFO, {
+    x = i.useMemo(() => t.type === U.aib.DMS ? G.intl.string(G.t.m7OrlZ) : L ? G.intl.formatToPlainString(G.t.LDZtFB, {
       name: I
-    }) : G.intl.string(G.t["5h0QOP"]), [t.type, L, I]);
+    }) : G.intl.string(G.t["5h0QOD"]), [t.type, L, I]);
   return (0, r.jsx)(Y, {
     className: n,
     searchContext: t,

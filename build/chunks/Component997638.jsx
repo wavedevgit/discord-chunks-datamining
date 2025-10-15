@@ -104,7 +104,7 @@ class O extends Chunk647438.PureComponent {
         children: [(0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           size: "sm",
-          text: Chunk388032.intl.string(Chunk388032.t["+IrDzN"]),
+          text: Chunk388032.intl.string(Chunk388032.t["+IrDzM"]),
           onClick: this.handleDismiss
         }), (0, Chunk951288.jsx)(Chunk755721.zx, {
           size: Chunk755721.Ph.SMALL,
@@ -112,7 +112,7 @@ class O extends Chunk647438.PureComponent {
           onClick: Chunk120356,
           color: (0, Chunk780384.ap)(Chunk647438) ? Chunk755721.zx.Colors.PRIMARY : Chunk755721.zx.Colors.WHITE,
           className: Chunk626135 ? Chunk206659.buttonSkipLeftAlign : Chunk206659.buttonSkipCenterAlign,
-          children: Chunk388032.intl.string(Chunk388032.t["33wtxt"])
+          children: Chunk388032.intl.string(Chunk388032.t["33wtxs"])
         })]
       })]
     })

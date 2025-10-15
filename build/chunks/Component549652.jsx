@@ -1,7 +1,7 @@
 /** Chunk was on 57047 **/
 /** chunk id: 549652, original params: t,e,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => B
+  default: () => b
 }), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -35,7 +35,7 @@ function N() {
     window.close()
   } catch (t) {}
 }
-class B extends Chunk647438.PureComponent {
+class b extends Chunk647438.PureComponent {
   componentDidMount() {
     let {
       stage: t,
@@ -63,13 +63,13 @@ class B extends Chunk647438.PureComponent {
         className: Chunk197571.marginBottom20
       }), (0, Chunk951288.jsx)(Chunk388905.Dx, {
         className: Chunk197571.marginBottom8,
-        children: Chunk388032.intl.string(Chunk388032.t.YsLqvs)
+        children: Chunk388032.intl.string(Chunk388032.t.YsLqvr)
       }), (0, Chunk951288.jsx)(Chunk388905.DK, {
         className: Chunk197571.marginBottom40,
-        children: Chunk388032.intl.string(Chunk388032.t.CSBYDo)
+        children: Chunk388032.intl.string(Chunk388032.t.CSBYDg)
       }), (0, Chunk951288.jsx)(Chunk388905.zx, {
         onClick: this.handleOpenApp,
-        children: Chunk388032.intl.string(Chunk388032.t.fIv16B)
+        children: Chunk388032.intl.string(Chunk388032.t.fIv16O)
       })]
     })
   }
@@ -80,13 +80,13 @@ class B extends Chunk647438.PureComponent {
         className: Chunk197571.marginBottom20
       }), (0, Chunk951288.jsx)(Chunk388905.Dx, {
         className: Chunk197571.marginBottom8,
-        children: Chunk388032.intl.string(Chunk388032.t.hsLIsW)
+        children: Chunk388032.intl.string(Chunk388032.t.hsLIsb)
       }), (0, Chunk951288.jsx)(Chunk388905.DK, {
         className: Chunk197571.marginBottom40,
-        children: Chunk388032.intl.string(Chunk388032.t.CSBYDo)
+        children: Chunk388032.intl.string(Chunk388032.t.CSBYDg)
       }), (0, Chunk951288.jsx)(Chunk388905.zx, {
         onClick: this.handleOpenApp,
-        children: Chunk388032.intl.string(Chunk388032.t.fIv16B)
+        children: Chunk388032.intl.string(Chunk388032.t.fIv16O)
       })]
     })
   }
@@ -94,9 +94,9 @@ class B extends Chunk647438.PureComponent {
     return (0, Chunk951288.jsxs)(Chunk388905.ZP, {
       children: [(0, Chunk951288.jsx)(Chunk388905.Hh, {}), (0, Chunk951288.jsx)(Chunk388905.Dx, {
         className: Chunk197571.marginBottom8,
-        children: Chunk388032.intl.string(Chunk388032.t.ctWa65)
+        children: Chunk388032.intl.string(Chunk388032.t["ctWa6+"])
       }), (0, Chunk951288.jsx)(Chunk388905.DK, {
-        children: Chunk388032.intl.string(Chunk388032.t["53IHoo"])
+        children: Chunk388032.intl.string(Chunk388032.t["53IHoq"])
       })]
     })
   }

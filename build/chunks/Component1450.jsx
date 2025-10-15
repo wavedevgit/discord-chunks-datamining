@@ -65,12 +65,12 @@ let v = e => {
         color: "interactive-normal",
         className: O.body,
         variant: "text-sm/normal",
-        children: y.intl.format(y.t.AXWla1, {
+        children: y.intl.format(y.t.AXWla2, {
           count: (0, g.A3)(E.Eu4.TIER_1)
         })
       }), (0, r.jsx)(l.Avr, {
         variant: "primary",
-        text: y.intl.string(y.t["Gb+BJD"]),
+        text: y.intl.string(y.t["Gb+BJC"]),
         onClick: e
       })]
     })
@@ -90,10 +90,10 @@ let v = e => {
         color: "interactive-normal",
         className: O.body,
         variant: "text-sm/normal",
-        children: y.intl.string(y.t.S83wgh)
+        children: y.intl.string(y.t.S83wgo)
       }), (0, r.jsx)(l.Avr, {
         variant: "primary",
-        text: y.intl.string(y.t.bwNjug),
+        text: y.intl.string(y.t.bwNjur),
         onClick: e
       })]
     })

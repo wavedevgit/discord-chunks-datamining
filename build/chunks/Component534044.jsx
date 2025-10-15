@@ -39,12 +39,12 @@ function u(n) {
       }), (0, t.jsx)(l.Heading, {
         className: g.title,
         variant: "heading-xl/semibold",
-        children: x.intl.string(x.t.QMbTSu)
+        children: x.intl.string(x.t.QMbTSk)
       }), (0, t.jsx)(l.Heading, {
         className: g.subtitle,
         color: "header-secondary",
         variant: "text-md/normal",
-        children: x.intl.string(x.t.Qdx8AP)
+        children: x.intl.string(x.t.Qdx8AA)
       }), null != a && (0, t.jsx)(l.olH, {
         "data-migration-pending": true,
         className: g.closeButton,
@@ -60,11 +60,11 @@ function u(n) {
         className: m.actionsHeader,
         children: x.intl.string(x.t["9BRc1N"])
       }), (0, t.jsx)(c.Z, {
-        text: x.intl.string(x.t.PxL38B),
+        text: x.intl.string(x.t.PxL38P),
         url: d.sQ.COMMUNITY_GUIDELINES,
         onClick: () => u(d.n0.ClickCommunityGuidelinesLink)
       }), (0, t.jsx)(c.Z, {
-        text: x.intl.string(x.t.qC3XKa),
+        text: x.intl.string(x.t.qC3XKS),
         url: d.sQ.WARNING_SYSTEM_HELPCENTER_LINK,
         onClick: () => u(d.n0.ClickWarningSystemHelpcenterLink)
       })]
@@ -72,7 +72,7 @@ function u(n) {
       "data-migration-pending": true,
       children: (0, t.jsx)(l.Button, {
         variant: "primary",
-        text: x.intl.string(x.t.i4jeWR),
+        text: x.intl.string(x.t.i4jeWV),
         onClick: i
       })
     })]

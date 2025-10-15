@@ -40,10 +40,10 @@ function g(e) {
     showCTA: r,
     responsive: i = true
   } = e, g = [
-    [f.intl.string(f.t["73h51J"]), f.intl.string(f.t["gbjs/6"])],
-    [f.intl.string(f.t.mCoH0V), f.intl.string(f.t["l/BuSI"])],
-    [f.intl.string(f.t.psQktv), f.intl.string(f.t.nMhIZQ)],
-    [f.intl.string(f.t["0ItLmF"]), f.intl.string(f.t.yQHqsC)]
+    [f.intl.string(f.t["73h51N"]), f.intl.string(f.t["gbjs//"])],
+    [f.intl.string(f.t.mCoH0d), f.intl.string(f.t["l/BuSE"])],
+    [f.intl.string(f.t.psQktr), f.intl.string(f.t.nMhIZW)],
+    [f.intl.string(f.t["0ItLmJ"]), f.intl.string(f.t.yQHqsL)]
   ];
   return (0, n.jsx)("div", {
     className: o()({
@@ -63,9 +63,9 @@ function g(e) {
           children: [(0, n.jsx)(s.Text, {
             variant: "text-lg/medium",
             color: "header-primary",
-            children: f.intl.string(f.t["67arYL"])
+            children: f.intl.string(f.t["67arYG"])
           }), r && (0, n.jsx)(l.zxk, {
-            text: f.intl.string(f.t.oyzLpD),
+            text: f.intl.string(f.t.oyzLpK),
             icon: s.ZSh,
             iconPosition: "end",
             size: "md",

@@ -21,8 +21,8 @@ let p = e => {
   };
   return (0, r.jsx)(i.J2, {
     targetElementRef: t,
-    title: u.intl.string(u.t.K2DyeS),
-    body: u.intl.string(u.t["JICo+3"]),
+    title: u.intl.string(u.t.K2DyeX),
+    body: u.intl.string(u.t["JICo+/"]),
     graphic: {
       type: "image",
       src: d.Z
@@ -36,7 +36,7 @@ let p = e => {
       align: "start"
     },
     actions: [{
-      text: u.intl.string(u.t.t2N81y),
+      text: u.intl.string(u.t.t2N819),
       onClick: () => {
         o.default.track(c.rMx.REFERRAL_PROGRAM_SHARE_MODAL_CTA_CLICKED, {
           location_stack: [a.Z.HOME_PAGE_PREMIUM_TAB]

@@ -31,11 +31,11 @@ function O(e) {
     specMap: A
   } = e, T = g.Plq[l], m = null != (n = null == (t = A[T.toString()]) ? true : t.title) ? n : (0, E.wt)(T), O = I._o.has(T), f = (0, a.Wu)([d.Z], () => d.Z.getManyRoles(_.id, i), [_.id, i]);
   return (0, r.jsx)(o.u, {
-    "aria-label": N.intl.string(N.t["0g8Xd/"]),
+    "aria-label": N.intl.string(N.t["0g8Xd3"]),
     __unsupportedReactNodeAsText: (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(u.Text, {
         variant: "text-sm/normal",
-        children: O ? N.intl.string(N.t["GEuu/O"]) : N.intl.string(N.t.wgGiCk)
+        children: O ? N.intl.string(N.t["GEuu/P"]) : N.intl.string(N.t.wgGiCg)
       }), f.map(e => (0, r.jsx)("div", {
         className: h.roleTooltipItem,
         children: (0, r.jsx)(c.Z, {
@@ -72,7 +72,7 @@ let f = Chunk647438.memo(function(e) {
       children: (0, r.jsx)(u.Text, {
         variant: "text-sm/normal",
         color: "text-feedback-positive",
-        children: N.intl.string(N.t.sXhykX)
+        children: N.intl.string(N.t.sXhykZ)
       })
     });
     let e = [];
@@ -97,14 +97,14 @@ let f = Chunk647438.memo(function(e) {
       children: [(0, r.jsx)(u.Text, {
         variant: "eyebrow",
         color: "header-secondary",
-        children: N.intl.string(N.t.ZCq2nC)
+        children: N.intl.string(N.t.ZCq2nJ)
       }), (0, r.jsxs)(u.P3F, {
         className: h.viewAllPermissions,
         onClick: () => n(m.k.PERMISSIONS),
         children: [(0, r.jsx)(u.Text, {
           variant: "eyebrow",
           color: "interactive-normal",
-          children: N.intl.format(N.t["0x6aTm"], {
+          children: N.intl.format(N.t["0x6aTk"], {
             count: d
           })
         }), (0, r.jsx)(u.Fbu, {

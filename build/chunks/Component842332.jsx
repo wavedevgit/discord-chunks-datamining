@@ -73,21 +73,21 @@ function p(e) {
       if (y) return {
         icon: s.$2U,
         onClick: _,
-        "aria-label": u.intl.string(u.t.ZF2oBs),
+        "aria-label": u.intl.string(u.t.ZF2oBg),
         disabled: e || f || null == n && p.textValue.trim().length < 10,
-        tooltip: u.intl.string(u.t.ZF2oBs),
+        tooltip: u.intl.string(u.t.ZF2oBg),
         loading: f
       }
     }, [y, _, f, n, p.textValue]),
     O = i.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
       return y ? (0, r.jsx)(a.u, {
-        text: u.intl.string(u.t.ZF2oBs),
+        text: u.intl.string(u.t.ZF2oBg),
         children: (0, r.jsx)(s.hU, {
           icon: s.$2U,
           variant: "secondary",
           size: "sm",
-          "aria-label": u.intl.string(u.t.ZF2oBs),
+          "aria-label": u.intl.string(u.t.ZF2oBg),
           onClick: _,
           disabled: e || f || null == n && p.textValue.trim().length < 10,
           loading: f,

@@ -15,20 +15,20 @@ function o(e) {
   return r.useMemo(() => {
     if ("" === e.name) return null;
     if (0 === t.length) return null;
-    if (1 === t.length) return u.intl.formatToPlainString(u.t["J+Wpst"], {
+    if (1 === t.length) return u.intl.formatToPlainString(u.t["J+Wpsr"], {
       first: t[0]
     });
-    if (2 === t.length) return u.intl.formatToPlainString(u.t.gwRP0Y, {
+    if (2 === t.length) return u.intl.formatToPlainString(u.t.gwRP0d, {
       first: t[0],
       second: t[1]
     });
-    if (3 === t.length) return u.intl.formatToPlainString(u.t.QDB5et, {
+    if (3 === t.length) return u.intl.formatToPlainString(u.t.QDB5en, {
       first: t[0],
       second: t[1],
       third: t[2]
     });
     let n = t.length - 3;
-    return u.intl.formatToPlainString(u.t.VYfueb, {
+    return u.intl.formatToPlainString(u.t.VYfueX, {
       first: t[0],
       second: t[1],
       third: t[2],

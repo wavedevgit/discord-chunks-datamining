@@ -54,7 +54,7 @@ function h(e) {
             onClick: e => {
               e.stopPropagation(), m()
             },
-            text: _.intl.string(_.t["4EGMWL"])
+            text: _.intl.string(_.t["4EGMWF"])
           })]
         })]
       })

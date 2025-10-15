@@ -22,28 +22,28 @@ function c(t) {
       type: "image",
       src: o
     },
-    title: l.intl.string(l.t.hhR7gX),
+    title: l.intl.string(l.t.hhR7gY),
     onClose: n,
     transitionState: c,
     actions: [{
       variant: "secondary",
-      text: l.intl.string(l.t.rwTBFs),
+      text: l.intl.string(l.t.rwTBFh),
       onClick: e
     }, {
       variant: "primary",
-      text: l.intl.string(l.t["ETE/oC"]),
+      text: l.intl.string(l.t["ETE/oK"]),
       onClick: n
     }],
     children: [(0, a.jsx)(r.Text, {
       className: s.description,
       variant: "text-md/normal",
-      children: l.intl.format(l.t.rqWXUf, {
+      children: l.intl.format(l.t.rqWXUV, {
         hcArticle: i.j1
       })
     }), (0, a.jsx)(r.Text, {
       className: s.description,
       variant: "text-md/normal",
-      children: l.intl.string(l.t["3LW10C"])
+      children: l.intl.string(l.t["3LW10N"])
     })]
   })
 }

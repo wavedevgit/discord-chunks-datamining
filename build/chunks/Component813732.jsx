@@ -62,7 +62,7 @@ function z() {
         className: Chunk49122.noItemsIcon
       }), (0, Chunk951288.jsx)("span", {
         className: Chunk49122.cardText,
-        children: Chunk388032.intl.string(Chunk388032.t["jy/hyj"])
+        children: Chunk388032.intl.string(Chunk388032.t["jy/hys"])
       })]
     })
   })
@@ -73,8 +73,8 @@ function q() {
   return Chunk647438.useEffect(() => {
     (0, Chunk496929.yD)(Chunk474936.CL)
   }, []), (0, Chunk951288.jsx)(Chunk481060.C3N, {
-    label: Chunk388032.intl.string(Chunk388032.t["2GKrvn"]),
-    description: Chunk388032.intl.string(Chunk388032.t.kNEjGm),
+    label: Chunk388032.intl.string(Chunk388032.t["2GKrvr"]),
+    description: Chunk388032.intl.string(Chunk388032.t.kNEjGh),
     children: null != module && Chunk74538.ZP.hasAccountCredit(module) ? (0, Chunk951288.jsx)(Chunk639056.Z, {
       className: Chunk49122.accountCredit,
       entitlements: module
@@ -91,7 +91,7 @@ function X(e, t) {
     }), (0, r.jsx)(l.Text, {
       variant: "text-md/normal",
       className: K.accountCreditDescription,
-      children: W.intl.format(W.t["7Zi06b"], {
+      children: W.intl.format(W.t["7Zi06e"], {
         helpCenterLink: M.Z.getArticleURL(V.BhN.FRACTIONAL_PREMIUM_ABOUT)
       })
     }), (0, r.jsx)(U.Z, {

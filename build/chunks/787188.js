@@ -4,7 +4,7 @@ require.d(exports, {
   _: () => l
 });
 var Chunk535396 = require("./535396.js"),
-  Chunk149829 = require("./149829.js"),
+  Chunk989308 = require("./989308.js"),
   Chunk388032 = require("./388032.jsx");
 
 function l(e, t, n) {
@@ -17,11 +17,11 @@ function l(e, t, n) {
     removingAt: e.storeRemovalDate
   } : t.type === r.A3.LEVEL_ACTIVATED ? {
     type: "active",
-    statusText: o.intl.formatToPlainString(i.default.WRRYUT, {
-      perkName: null != (s = null == (a = t.sourcePowerup) ? true : a.title) ? s : o.intl.string(o.t.BfF6ED)
+    statusText: o.intl.formatToPlainString(i.default.WRRYUV, {
+      perkName: null != (s = null == (a = t.sourcePowerup) ? true : a.title) ? s : o.intl.string(o.t.BfF6EB)
     })
   } : t.type === r.A3.POWERUP_ACTIVATED ? {
     type: "active",
-    statusText: o.intl.string(i.default.FFLkmx)
+    statusText: o.intl.string(i.default.FFLkm5)
   } : null
 }

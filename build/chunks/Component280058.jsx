@@ -26,11 +26,11 @@ function f() {
   }
   return (0, Chunk951288.jsx)(Chunk838436.U, {
     children: (0, Chunk951288.jsx)(Chunk51331.ZP, {
-      title: Chunk388032.intl.string(Chunk388032.t["3o2ojh"]),
+      title: Chunk388032.intl.string(Chunk388032.t["3o2ojo"]),
       value: !require && !f,
       onChange: e => _(e),
       disabled: require,
-      note: Chunk388032.intl.format(Chunk388032.t.IoztJ0, {
+      note: Chunk388032.intl.format(Chunk388032.t.IoztJy, {
         helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.MESSAGE_REQUESTS)
       })
     })

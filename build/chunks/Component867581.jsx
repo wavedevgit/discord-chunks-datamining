@@ -40,11 +40,11 @@ let O = "hTKzmak",
         children: [(0, l.jsx)(s.Heading, {
           className: I.rowText,
           variant: "heading-md/semibold",
-          children: f.intl.string(f.t.DwDxDU)
+          children: f.intl.string(f.t.DwDxDQ)
         }), (0, l.jsx)(s.Text, {
           className: I.rowText,
           variant: "text-xs/normal",
-          children: f.intl.string(f.t["5RL4CD"])
+          children: f.intl.string(f.t["5RL4CA"])
         })]
       }), (0, l.jsx)("img", {
         className: I.rowArrow,
@@ -59,15 +59,15 @@ function C(e) {
     onBack: t,
     onClose: n,
     isSlideReady: r
-  } = e, [o, d] = i.useState(""), [m, N] = i.useState(false), [T, C] = i.useState(null), h = i.useRef(null);
+  } = e, [o, d] = i.useState(""), [m, N] = i.useState(false), [T, C] = i.useState(null), g = i.useRef(null);
   i.useEffect(() => {
     var e;
-    r && (null == (e = h.current) || e.focus())
+    r && (null == (e = g.current) || e.focus())
   }, [r]);
-  let g = e => {
+  let h = e => {
     e.preventDefault();
     let t = o.trim();
-    if ("" === t) return void C(f.intl.string(f.t.IRq5ah));
+    if ("" === t) return void C(f.intl.string(f.t.IRq5am));
     C(null), N(true);
     let r = t.split("/"),
       l = r[r.length - 1];
@@ -77,7 +77,7 @@ function C(e) {
       let {
         invite: t
       } = e;
-      if (N(false), null == t) return void C(f.intl.string(f.t["GEYI+Z"]));
+      if (N(false), null == t) return void C(f.intl.string(f.t["GEYI+f"]));
       if (null != t.channel) {
         let e = c.ZP.getInviteContext("Join Guild", t);
         c.ZP.acceptInvite({
@@ -87,7 +87,7 @@ function C(e) {
             n(), c.ZP.transitionToInvite(e)
           }
         }).then(() => {}, e => {
-          e instanceof u.yZ || e instanceof u.Hx ? C((0, p.O)(e.code)) : C(f.intl.string(f.t.dDZRdy))
+          e instanceof u.yZ || e instanceof u.Hx ? C((0, p.O)(e.code)) : C(f.intl.string(f.t.dDZRd3))
         })
       }
     }, e => {
@@ -104,7 +104,7 @@ function C(e) {
       children: [(0, l.jsx)(s.Heading, {
         className: I.title,
         variant: "heading-xl/semibold",
-        children: f.intl.string(f.t.riOUtB)
+        children: f.intl.string(f.t.riOUtL)
       }), (0, l.jsx)(s.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
@@ -116,21 +116,21 @@ function C(e) {
     }), (0, l.jsxs)(s.hzk, {
       className: I.__invalid_content,
       children: [(0, l.jsx)("form", {
-        onSubmit: g,
+        onSubmit: h,
         className: I.inputForm,
         children: (0, l.jsx)(s.oil, {
-          label: f.intl.string(f.t.qreV25),
+          label: f.intl.string(f.t.qreV29),
           required: true,
           error: T,
           value: o,
           onChange: d,
           placeholder: "".concat(S).concat(O),
-          inputRef: h
+          inputRef: g
         })
       }), (0, l.jsx)(s.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
-        children: f.intl.string(f.t.Bnq46H)
+        children: f.intl.string(f.t.Bnq46O)
       }), (0, l.jsx)("div", {
         className: I.sampleLinks,
         children: E.map(e => (0, l.jsx)(s.P3F, {
@@ -145,15 +145,15 @@ function C(e) {
       className: I.footer,
       children: [(0, l.jsx)(s.Button, {
         variant: "primary",
-        text: f.intl.string(f.t["Ts/9Ac"]),
+        text: f.intl.string(f.t["Ts/9AQ"]),
         loading: m,
-        onClick: g
+        onClick: h
       }), (0, l.jsx)(a.zx, {
         color: a.zx.Colors.PRIMARY,
         look: a.zx.Looks.LINK,
         size: a.zx.Sizes.MIN,
         onClick: t,
-        children: f.intl.string(f.t["13/7kX"])
+        children: f.intl.string(f.t["13/7kZ"])
       })]
     })]
   })

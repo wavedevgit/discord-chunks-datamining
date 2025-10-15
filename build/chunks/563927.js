@@ -10,7 +10,7 @@ var Chunk442837 = require("./442837.js"),
 
 function o(e) {
   let t = (0, r.e7)([i.default], () => i.default.locale.startsWith("en-"));
-  return ":pizza:" === e && t ? a.intl.formatToPlainString(a.t["1knDPI"], {
+  return ":pizza:" === e && t ? a.intl.formatToPlainString(a.t["1knDPD"], {
     emojiName: e
   }) : e
 }

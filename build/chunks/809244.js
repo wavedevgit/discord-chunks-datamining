@@ -10,10 +10,10 @@ var Chunk687516 = require("./687516.js"),
 function a(e, t, n) {
   let a = (0, i.Cf)(n),
     o = r.ZP.getName(e.getGuildId(), e.id, t);
-  return null == n ? o : (null == a ? true : a.name) != null ? l.intl.formatToPlainString(l.t["9jpVOZ"], {
+  return null == n ? o : (null == a ? true : a.name) != null ? l.intl.formatToPlainString(l.t["9jpVOT"], {
     applicationName: null == a ? true : a.name,
     username: o
-  }) : l.intl.formatToPlainString(l.t["+h0Z59"], {
+  }) : l.intl.formatToPlainString(l.t["+h0Z5+"], {
     username: o
   })
 }

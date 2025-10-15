@@ -86,7 +86,7 @@ class y extends Chunk647438.PureComponent {
       },
       children: [Chunk388032.intl.format(Chunk388032.t.IIHUUF, {
         subscriptionId: this.props.subscription.id
-      }), " ", Chunk388032.intl.format(Chunk388032.t.fh65ES, {
+      }), " ", Chunk388032.intl.format(Chunk388032.t.fh65ER, {
         helpLink: b
       })]
     }) : this.props.children
@@ -113,7 +113,7 @@ function O(e) {
   }, b = e => {
     _(p({
       route: u.j.SWITCH_APP_PLANS
-    }, e)), n(f.intl.string(f.t.VFqtkP), E)
+    }, e)), n(f.intl.string(f.t.VFqtkJ), E)
   }, [O, v] = i.useState({});
   i.useEffect(() => {
     for (let n of t) {

@@ -23,7 +23,7 @@ function l(e) {
   }, "content").trim() : "", _ = t.required, p = "" === f;
   if (null == n) return _ ? {
     success: false,
-    error: s.intl.string(s.t.JZJQL2)
+    error: s.intl.string(s.t.JZJQLy)
   } : {
     success: true
   };
@@ -31,7 +31,7 @@ function l(e) {
     success: true
   } : _ ? {
     success: false,
-    error: s.intl.string(s.t.JZJQL2)
+    error: s.intl.string(s.t.JZJQLy)
   } : {
     success: false,
     error: (0, o.al)(t)

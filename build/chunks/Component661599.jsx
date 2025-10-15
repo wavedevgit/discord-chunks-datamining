@@ -18,8 +18,8 @@ class d extends Chunk647438.PureComponent {
       onClick: () => (0, Chunk518596.openUserSettings)(Chunk313789.n.ACCOUNT_PANEL, {
         section: Chunk981631.oAB.ACCOUNT
       }),
-      message: Chunk388032.intl.format(Chunk388032.t["oCd+at"], {}),
-      cta: Chunk388032.intl.string(Chunk388032.t["8dCrV9"]),
+      message: Chunk388032.intl.format(Chunk388032.t["oCd+am"], {}),
+      cta: Chunk388032.intl.string(Chunk388032.t["8dCrV1"]),
       trackingSource: Chunk981631.PsQ.GUILD_MFA_WARNING,
       type: Chunk981631.vID.MFA_WARNING,
       image: Chunk510342,

@@ -109,12 +109,12 @@ function C() {
         variant: "heading-lg/semibold",
         color: "header-primary",
         className: Chunk301578.searchResultsHeader,
-        children: Chunk388032.intl.format(Chunk388032.t.zHdzqW, {
+        children: Chunk388032.intl.format(Chunk388032.t.zHdzqa, {
           query: G
         })
       }), P && (0, Chunk951288.jsx)(Chunk680180.Z, {
         query: x,
-        placeholder: Chunk388032.intl.string(Chunk388032.t["5h0QOP"]),
+        placeholder: Chunk388032.intl.string(Chunk388032.t["5h0QOD"]),
         onTextChange: A,
         onClear: Z,
         onSubmit: w,

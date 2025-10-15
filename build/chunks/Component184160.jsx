@@ -23,20 +23,20 @@ function _(e) {
   } = e, {
     activeSubscription: i,
     selectedSkuId: _,
-    setSelectedPlanId: f,
-    startedPaymentFlowWithPaymentSourcesRef: h
+    setSelectedPlanId: h,
+    startedPaymentFlowWithPaymentSourcesRef: f
   } = (0, C.JL)(), {
     isGift: m
   } = (0, d.wD)(), x = null != i ? (0, s.Af)(i) : null, g = null != x ? (0, s.gq)(x.planId) : null, j = null != x ? (0, s.Rd)(x.planId) : null, b = (0, u.Kp)({
     isTrial: false,
     isGift: m,
     selectedSkuId: _,
-    startedPaymentFlowWithPaymentSources: h.current
+    startedPaymentFlowWithPaymentSources: f.current
   });
   return a()(null != j, "Expected premium type"), (0, r.jsx)(o.Z, {
     premiumType: j,
-    titleText: p.intl.string(p.t["7VcWW0"]),
-    subtitleText: p.intl.format(p.t.Qk34Ik, {
+    titleText: p.intl.string(p.t["7VcWW1"]),
+    subtitleText: p.intl.format(p.t.Qk34Ii, {
       subscriptionName: g
     }),
     footer: (0, r.jsxs)(l.ButtonGroup, {
@@ -44,14 +44,14 @@ function _(e) {
       align: "center",
       children: [(0, r.jsx)(l.Button, {
         variant: "primary",
-        text: p.intl.string(p.t["3PatSz"]),
+        text: p.intl.string(p.t["3PatS0"]),
         onClick: () => {
-          b ? (f((0, u.nA)(_, i)), t(c.h8.REVIEW)) : t(c.h8.PLAN_SELECT)
+          b ? (h((0, u.nA)(_, i)), t(c.h8.REVIEW)) : t(c.h8.PLAN_SELECT)
         }
       }), (0, r.jsx)(l.Button, {
         variant: "secondary",
         onClick: n,
-        text: p.intl.string(p.t.h9tkAK)
+        text: p.intl.string(p.t.h9tkAA)
       })]
     }),
     onClose: n,

@@ -44,7 +44,7 @@ function g(e) {
         variant: "secondary",
         icon: a.XHJ,
         onClick: () => n(t),
-        "aria-label": d.intl.string(d.t.dVS92c),
+        "aria-label": d.intl.string(d.t.dVS92d),
         disabled: i
       })
     })]

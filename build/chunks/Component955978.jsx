@@ -45,7 +45,7 @@ function O(e, t, n) {
           variant: "text-sm/medium",
           color: "interactive-normal",
           className: y.bodyText,
-          children: g.intl.format(g.t["q7/rgv"], {
+          children: g.intl.format(g.t["q7/rgo"], {
             username: null != I ? I : v.username,
             gameName: j,
             gameIcon: () => null != b || null != x ? (0, i.jsx)(s.Z, {

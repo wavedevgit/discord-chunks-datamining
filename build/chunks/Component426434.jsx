@@ -40,11 +40,11 @@ function x(e) {
       })
     }, 1e3);
   if (!j) return null;
-  y || (t = _ ? h.intl.format(h.t.nFwNyR, {
+  y || (t = _ ? h.intl.format(h.t.nFwNyc, {
     settingsHook: () => (0, c.openUserSettings)(o.n.ACCOUNT_PANEL, {
       section: f.oAB.ACCOUNT
     })
-  }) : h.intl.string(h.t["9Ghu40"]));
+  }) : h.intl.string(h.t["9Ghu4+"]));
   let E = n.features.has(f.oNc.DISCOVERABLE);
   return (0, r.jsxs)("div", {
     className: b.simpleItemWrapper,
@@ -53,14 +53,14 @@ function x(e) {
       children: [(0, r.jsx)(s.Heading, {
         variant: "text-md/semibold",
         color: "header-primary",
-        children: h.intl.string(h.t.lbBfEQ)
+        children: h.intl.string(h.t.lbBfER)
       }), (0, r.jsxs)(s.Text, {
         variant: "text-sm/medium",
         color: "header-secondary",
-        children: [h.intl.string(h.t["a/93J6"]), " ", t]
+        children: [h.intl.string(h.t["a/93Jy"]), " ", t]
       })]
     }), !y || O && E ? (0, r.jsx)(a.u, {
-      text: E ? h.intl.string(h.t["KG1V/E"]) : _ ? h.intl.string(h.t.NmsheT) : h.intl.string(h.t.LieBta),
+      text: E ? h.intl.string(h.t["KG1V/P"]) : _ ? h.intl.string(h.t.NmsheX) : h.intl.string(h.t.LieBtb),
       children: (0, r.jsx)(p.Z, {
         checked: O,
         disabled: true,

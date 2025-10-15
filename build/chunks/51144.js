@@ -94,17 +94,17 @@ function O(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
   switch (e) {
     case o.Skl.ONLINE:
-      return t ? s.intl.string(s.t["9hghLD"]) : s.intl.string(s.t.WbGtnH);
+      return t ? s.intl.string(s.t["9hghLC"]) : s.intl.string(s.t.WbGtnJ);
     case o.Skl.OFFLINE:
-      return s.intl.string(s.t.Vv0abJ);
+      return s.intl.string(s.t.Vv0abG);
     case o.Skl.IDLE:
-      return s.intl.string(s.t.qWbtVU);
+      return s.intl.string(s.t.qWbtVV);
     case o.Skl.DND:
-      return s.intl.string(s.t.jaNpQH);
+      return s.intl.string(s.t.jaNpQE);
     case o.Skl.INVISIBLE:
-      return s.intl.string(s.t.bg24HO);
+      return s.intl.string(s.t.bg24HB);
     case o.Skl.STREAMING:
-      return s.intl.string(s.t.XKYej5);
+      return s.intl.string(s.t.XKYej4);
     case o.Skl.UNKNOWN:
     default:
       return null
@@ -138,7 +138,7 @@ function T(e) {
 }
 
 function S(e, t, n) {
-  if (null == e) return s.intl.string(s.t.sKdZ6U);
+  if (null == e) return s.intl.string(s.t.sKdZ6e);
   if (!h(e.username)) return d;
   let r = n;
   if ("always" === t.identifiable ? r = false : "never" === t.identifiable && (r = true), "0" !== e.discriminator && e.discriminator !== o.fo$ && !t.forcePomelo) return "username" === t.mode || r ? e.username : "".concat(e.username, "#").concat(e.discriminator);

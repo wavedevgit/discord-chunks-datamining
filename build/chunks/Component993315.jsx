@@ -19,8 +19,8 @@ function d() {
   return (0, Chunk951288.jsx)(Chunk838436.U, {
     setting: Chunk726985.s6.PRIVACY_DATA_BASIC_SERVICE_V2,
     children: (0, Chunk951288.jsx)(Chunk838436.H, {
-      header: Chunk388032.intl.string(Chunk388032.t.D60Gfj),
-      description: Chunk388032.intl.format(Chunk388032.t.R5N31P, {
+      header: Chunk388032.intl.string(Chunk388032.t.D60Gfn),
+      description: Chunk388032.intl.format(Chunk388032.t.R5N31N, {
         onClick: () => {
           module(Chunk313789.n.ACCOUNT_PANEL, {
             section: Chunk981631.oAB.ACCOUNT,

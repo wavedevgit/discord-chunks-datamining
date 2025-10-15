@@ -25,39 +25,39 @@ function g(t) {
   let {
     guildId: g,
     userId: w,
-    anaylticsLocations: C,
-    transitionState: x,
+    anaylticsLocations: x,
+    transitionState: C,
     onClose: D
   } = t, {
     analyticsLocations: k
-  } = (0, c.ZP)(), _ = null != (e = null != (n = null == C ? true : C[0]) ? n : null == k ? true : k[0]) ? e : null, T = (0, s.e7)([h.default], () => h.default.getUser(w), [w]), [S, U] = (0, f.ZP)(w, g), [Z, E] = i.useState(false), P = i.useCallback(async () => {
-    if (null != T) {
-      E(true);
+  } = (0, c.ZP)(), T = null != (e = null != (n = null == x ? true : x[0]) ? n : null == k ? true : k[0]) ? e : null, _ = (0, s.e7)([p.default], () => p.default.getUser(w), [w]), [S, Z] = (0, f.ZP)(w, g), [E, P] = i.useState(false), U = i.useCallback(async () => {
+    if (null != _) {
+      P(true);
       try {
-        await o.Z.setCommunicationDisabledDuration(g, w, null, null, _), (0, r.showToast)((0, r.createToast)(b.intl.string(b.t["/Mmbfv"]), r.ToastType.SUCCESS)), D()
+        await o.Z.setCommunicationDisabledDuration(g, w, null, null, T), (0, r.showToast)((0, r.createToast)(b.intl.string(b.t["/Mmbfn"]), r.ToastType.SUCCESS)), D()
       } catch (t) {
-        (0, r.showToast)((0, r.createToast)(b.intl.string(b.t.epyCuh), r.ToastType.FAILURE))
+        (0, r.showToast)((0, r.createToast)(b.intl.string(b.t.epyCur), r.ToastType.FAILURE))
       } finally {
-        E(false)
+        P(false)
       }
     }
-  }, [g, T, w, D, _]), j = i.useCallback(() => {
-    U || D()
-  }, [U, D]);
+  }, [g, _, w, D, T]), j = i.useCallback(() => {
+    Z || D()
+  }, [Z, D]);
   return ((0, u.ZP)(() => {
-    null != T && p.default.track(v.rMx.OPEN_MODAL, {
+    null != _ && h.default.track(v.rMx.OPEN_MODAL, {
       type: m.av,
       guild_id: g,
-      other_user_id: T.id
+      other_user_id: _.id
     })
   }), i.useEffect(() => {
-    (null == T || null == g) && D()
-  }), null == T || null == g) ? null : (0, l.jsx)(a.Modal, {
-    transitionState: x,
+    (null == _ || null == g) && D()
+  }), null == _ || null == g) ? null : (0, l.jsx)(a.Modal, {
+    transitionState: C,
     onClose: D,
-    title: b.intl.string(b.t["+ZD3ou"]),
-    subtitle: b.intl.format(b.t["t+abNU"], {
-      username: T.username,
+    title: b.intl.string(b.t["+ZD3oq"]),
+    subtitle: b.intl.format(b.t["t+abNT"], {
+      username: _.username,
       countdown: t => null == S ? null : (0, l.jsx)(d.Z, {
         className: y.countdown,
         deadline: new Date(S),
@@ -67,19 +67,19 @@ function g(t) {
       })
     }),
     actions: [{
-      text: b.intl.string(b.t["ETE/oC"]),
+      text: b.intl.string(b.t["ETE/oK"]),
       onClick: D,
       variant: "secondary"
     }, {
-      text: b.intl.string(b.t.qXtNtS),
-      onClick: P,
-      loading: Z,
+      text: b.intl.string(b.t.qXtNtb),
+      onClick: U,
+      loading: E,
       variant: "critical-primary"
     }],
     children: (0, l.jsx)(r.Text, {
       variant: "text-md/normal",
       color: "interactive-normal",
-      children: b.intl.format(b.t.KtENkK, {
+      children: b.intl.format(b.t.KtENkJ, {
         link: m.cu
       })
     })

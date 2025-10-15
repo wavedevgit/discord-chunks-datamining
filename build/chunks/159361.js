@@ -18,15 +18,15 @@ function l(e) {
       if (isNaN(t) || t < n) return;
       let r = Math.round((t - n) / 6e4),
         l = e => Math.round(r / e);
-      return r >= 43200 ? i.intl.formatToPlainString(i.t.kridzK, {
+      return r >= 43200 ? i.intl.formatToPlainString(i.t.kridzM, {
         months: l(43200)
-      }) : r >= 10080 ? i.intl.formatToPlainString(i.t.EmoBD2, {
+      }) : r >= 10080 ? i.intl.formatToPlainString(i.t.EmoBDw, {
         weeks: l(10080)
-      }) : r >= 1440 ? i.intl.formatToPlainString(i.t["k2UNz+"], {
+      }) : r >= 1440 ? i.intl.formatToPlainString(i.t.k2UNz8, {
         days: l(1440)
-      }) : r >= 60 ? i.intl.formatToPlainString(i.t.xCjYxK, {
+      }) : r >= 60 ? i.intl.formatToPlainString(i.t.xCjYxM, {
         hours: l(60)
-      }) : i.intl.formatToPlainString(i.t.iXLF9W, {
+      }) : i.intl.formatToPlainString(i.t.iXLF9f, {
         minutes: r
       })
     }(null == e || null == (n = e.rejection) ? true : n.can_reapply_at)

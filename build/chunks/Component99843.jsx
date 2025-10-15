@@ -24,10 +24,10 @@ let b = e => {
     return (0, p.m$)({
       channelId: t.id
     }) ? (0, r.jsx)(l.u, {
-      text: g.intl.string(g.t.QyZ4Td),
+      text: g.intl.string(g.t.QyZ4TU),
       children: (0, r.jsx)(o.tQf, {
         size: "xs",
-        "aria-label": g.intl.string(g.t.VHXh8a),
+        "aria-label": g.intl.string(g.t.VHXh8f),
         color: o.TVs.colors.INTERACTIVE_NORMAL
       })
     }) : null
@@ -39,7 +39,7 @@ let b = e => {
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.u, {
         asContainer: true,
-        text: g.intl.string(g.t["5Q9+/L"]),
+        text: g.intl.string(g.t["5Q9+/P"]),
         position: "bottom",
         children: (0, r.jsxs)(o.P3F, {
           className: m.hoverableContainer,
@@ -94,7 +94,7 @@ let b = e => {
               location: s.Z.HEADER_BAR
             })
           },
-          "aria-label": g.intl.string(g.t["5Q9+/L"]),
+          "aria-label": g.intl.string(g.t["5Q9+/P"]),
           children: [(0, r.jsx)(u.Z, {
             className: m.gdmIcon,
             "aria-hidden": true,

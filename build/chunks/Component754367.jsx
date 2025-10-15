@@ -26,9 +26,9 @@ function _() {
       children: (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "critical-secondary",
         size: "sm",
-        text: Chunk388032.intl.string(Chunk388032.t["4iKQ/3"]),
+        text: Chunk388032.intl.string(Chunk388032.t["4iKQ//"]),
         onClick: () => {
-          (0, Chunk680924.Z)(Chunk388032.intl.string(Chunk388032.t["4iKQ/3"]), Chunk388032.intl.string(Chunk388032.t.sQ42iT), Chunk846027.Z.reset)
+          (0, Chunk680924.Z)(Chunk388032.intl.string(Chunk388032.t["4iKQ//"]), Chunk388032.intl.string(Chunk388032.t.sQ42iY), Chunk846027.Z.reset)
         }
       })
     })]

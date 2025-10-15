@@ -49,8 +49,8 @@ function l(e) {
     c = 0;
   return (s = Math.round(60 * (s = 0 === o ? 0 : a === t ? (n - r) / o % 6 : a === n ? (r - t) / o + 2 : (t - n) / o + 4))) < 0 && (s += 360), c = (a + i) / 2, {
     h: s,
-    s: l = +(100 * (l = 0 === o ? 0 : o / (1 - Math.abs(2 * c - 1)))).toFixed(1),
-    l: c = +(100 * c).toFixed(1)
+    s: +(l = 0 === o ? 0 : o / (1 - Math.abs(2 * c - 1))).toFixed(3),
+    l: +c.toFixed(3)
   }
 }
 
@@ -62,8 +62,10 @@ function c(e) {
       h: i,
       s: a,
       l: o
-    } = l(e);
-  return t ? "hsla(".concat(i, ", calc(var(--saturation-factor, 1) * ").concat(a, "%), ").concat(o, "%, ").concat(r, ")") : null != n ? "hsla(".concat(i, ", ").concat(n * a, "%, ").concat(o, "%, ").concat(r, ")") : "hsla(".concat(i, ", ").concat(a, "%, ").concat(o, "%, ").concat(r, ")")
+    } = l(e),
+    s = +(100 * a).toFixed(1),
+    c = +(100 * o).toFixed(1);
+  return t ? "hsla(".concat(i, ", calc(var(--saturation-factor, 1) * ").concat(s, "%), ").concat(c, "%, ").concat(r, ")") : null != n ? "hsla(".concat(i, ", ").concat(n * s, "%, ").concat(c, "%, ").concat(r, ")") : "hsla(".concat(i, ", ").concat(s, "%, ").concat(c, "%, ").concat(r, ")")
 }
 
 function u(e) {

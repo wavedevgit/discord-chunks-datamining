@@ -55,9 +55,9 @@ let S = e => {
     entityType: s
   } = e, d = n === E.d4z.GUILD_STAGE_VOICE, g = (0, f.Q)(l, s), h = (0, p.sR)(t, n);
   return (0, r.jsx)(o.VcW, {
-    label: d ? N.intl.string(N.t.S7GjDz) : N.intl.string(N.t["7RYWCP"]),
+    label: d ? N.intl.string(N.t.S7GjDw) : N.intl.string(N.t["7RYWCA"]),
     required: true,
-    helperText: g ? true : N.intl.string(N.t.F3bDaX),
+    helperText: g ? true : N.intl.string(N.t.F3bDaW),
     value: null == l ? true : l.id,
     options: h.map(e => ({
       value: e.id,
@@ -87,16 +87,16 @@ let S = e => {
 function I(e, t, n, r) {
   return t ? {
     disabled: true,
-    tooltipText: N.intl.string(N.t.yutP5U)
+    tooltipText: N.intl.string(N.t.yutP5e)
   } : n ? 0 === r && e !== O.WX.EXTERNAL ? {
     disabled: true,
-    tooltipText: N.intl.string(N.t["DkY+cO"])
+    tooltipText: N.intl.string(N.t["DkY+cH"])
   } : {
     disabled: false,
     tooltipText: null
   } : {
     disabled: true,
-    tooltipText: N.intl.string(N.t.HeF1kV)
+    tooltipText: N.intl.string(N.t.HeF1kZ)
   }
 }
 let T = (e, t) => n => {
@@ -137,7 +137,7 @@ function Z(e) {
     p = (0, b.xC)(c),
     j = (0, h.xt)(n);
   return null == c || c === O.WX.NONE ? null : c === O.WX.EXTERNAL ? (0, r.jsx)(o.oil, {
-    label: N.intl.string(N.t.yx785A),
+    label: N.intl.string(N.t.yx785O),
     required: true,
     onChange: e => {
       i({
@@ -146,7 +146,7 @@ function Z(e) {
         }
       })
     },
-    placeholder: N.intl.string(N.t.mkCMia),
+    placeholder: N.intl.string(N.t.mkCMiY),
     maxLength: O.gG,
     value: null != v ? v : "",
     inputRef: m
@@ -167,20 +167,20 @@ function w(e) {
     onChange: i
   } = e, a = (0, s.e7)([d.Z], () => d.Z.getGuild(t), [t]), c = (0, v.Z)(t, true), u = (0, v.Z)(t, E.d4z.GUILD_VOICE), g = (0, v.Z)(t, E.d4z.GUILD_STAGE_VOICE), m = (0, p.sR)(t, E.d4z.GUILD_VOICE), x = (0, j.q)(a), f = null == a ? true : a.features.has(E.oNc.COMMUNITY), b = (0, h.xt)(n), y = T(i, n), C = l.useMemo(() => {
     let e = [P({
-      name: N.intl.string(N.t.BVZqJl),
+      name: N.intl.string(N.t.BVZqJi),
       value: O.WX.VOICE,
-      desc: N.intl.string(N.t["EV//4f"]),
+      desc: N.intl.string(N.t["EV//4e"]),
       leadingIcon: o.gj8
     }, I(O.WX.VOICE, b, u, m.length)), P({
-      name: N.intl.string(N.t.w7ipbz),
+      name: N.intl.string(N.t.w7ipb2),
       value: O.WX.EXTERNAL,
-      desc: N.intl.string(N.t.DYxrHm),
+      desc: N.intl.string(N.t.DYxrHh),
       leadingIcon: o._tJ
     }, I(O.WX.EXTERNAL, b, c, 0))];
     return f ? [P({
-      name: N.intl.string(N.t.EErMzA),
+      name: N.intl.string(N.t.EErMzM),
       value: O.WX.STAGE_INSTANCE,
-      desc: N.intl.string(N.t.LgALpp),
+      desc: N.intl.string(N.t.LgALpq),
       leadingIcon: o.ewx
     }, I(O.WX.STAGE_INSTANCE, b, g, x.length)), ...e] : e
   }, [c, u, g, f, m.length, x.length, b]);
@@ -207,11 +207,11 @@ function D(e) {
       gap: 4,
       children: [(0, r.jsx)(o.Heading, {
         variant: "heading-xl/semibold",
-        children: N.intl.string(N.t["DC+Qm8"])
+        children: N.intl.string(N.t["DC+Qm5"])
       }), (0, r.jsx)(o.Text, {
         color: "text-secondary",
         variant: "text-sm/normal",
-        children: N.intl.string(N.t.IwmXLP)
+        children: N.intl.string(N.t.IwmXLC)
       })]
     }), (0, r.jsx)(w, {
       guildId: t,

@@ -62,14 +62,14 @@ function y(e, t) {
 let O = 2700,
   v = "> -# *",
   I = {
-    [Chunk228168.n_.AVATAR]: () => Chunk388032.intl.string(Chunk388032.t["fEUP/i"]),
-    [Chunk228168.n_.STATUS]: () => Chunk388032.intl.string(Chunk388032.t.TKdBC8),
-    [Chunk228168.n_.ACTIVITY]: () => Chunk388032.intl.string(Chunk388032.t.bSe71F)
+    [Chunk228168.n_.AVATAR]: () => Chunk388032.intl.string(Chunk388032.t["fEUP/v"]),
+    [Chunk228168.n_.STATUS]: () => Chunk388032.intl.string(Chunk388032.t.TKdBCw),
+    [Chunk228168.n_.ACTIVITY]: () => Chunk388032.intl.string(Chunk388032.t.bSe71N)
   },
   T = {
-    [Chunk228168.n_.AVATAR]: () => Chunk388032.intl.string(Chunk388032.t.xvN0fV),
-    [Chunk228168.n_.STATUS]: () => Chunk388032.intl.string(Chunk388032.t["C/vzS7"]),
-    [Chunk228168.n_.ACTIVITY]: () => Chunk388032.intl.string(Chunk388032.t.ObfsSj)
+    [Chunk228168.n_.AVATAR]: () => Chunk388032.intl.string(Chunk388032.t.xvN0fX),
+    [Chunk228168.n_.STATUS]: () => Chunk388032.intl.string(Chunk388032.t["C/vzS0"]),
+    [Chunk228168.n_.ACTIVITY]: () => Chunk388032.intl.string(Chunk388032.t.ObfsSk)
   };
 
 function S(e) {
@@ -123,7 +123,7 @@ function S(e) {
     }),
     children: [(0, r.jsx)(l.u, {
       asContainer: true,
-      text: h.intl.string(h.t.nhaI4b),
+      text: h.intl.string(h.t.nhaI4e),
       shouldShow: a,
       delay: 0,
       "aria-label": false,
@@ -139,7 +139,7 @@ function S(e) {
       })
     }), (0, r.jsx)(l.u, {
       asContainer: true,
-      text: h.intl.string(h.t.RmDYKK),
+      text: h.intl.string(h.t.RmDYKC),
       shouldShow: a,
       delay: 0,
       "aria-label": false,
@@ -160,7 +160,7 @@ function S(e) {
       };
       return (0, r.jsx)(l.u, {
         asContainer: true,
-        text: h.intl.string(h.t["UKOtz+"]),
+        text: h.intl.string(h.t.UKOtz8),
         shouldShow: a,
         delay: 0,
         "aria-label": false,
@@ -169,7 +169,7 @@ function S(e) {
         }, e), {
           onClick: t,
           className: m.button,
-          "aria-label": h.intl.string(h.t["UKOtz+"]),
+          "aria-label": h.intl.string(h.t.UKOtz8),
           children: (0, r.jsx)(c.xhG, {
             size: "xs",
             className: m.icon

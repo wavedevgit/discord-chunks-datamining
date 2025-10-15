@@ -94,7 +94,7 @@ function v(e) {
           }), s(e.toLowerCase())
         },
         onClear: I,
-        placeholder: C.intl.string(C.t.s5MnmC)
+        placeholder: C.intl.string(C.t.s5MnmJ)
       }), N ? (0, l.jsx)(a.Button, {
         icon: a.qJs,
         onClick: w,

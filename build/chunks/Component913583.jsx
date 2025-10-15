@@ -24,14 +24,14 @@ function d(e) {
   }), (0, r.jsxs)(a.ZP, {
     className: u.chooseAccountAuthBox,
     children: [(0, r.jsx)(a.Dx, {
-      children: c.intl.string(c.t.bVbB63)
+      children: c.intl.string(c.t["bVbB6+"])
     }), (0, r.jsx)(s.Text, {
       className: u.chooseAccountHelpText,
       variant: "text-md/normal",
       color: "header-secondary",
-      children: c.intl.string(c.t["0M5fN7"])
+      children: c.intl.string(c.t["0M5fNz"])
     }), (0, r.jsx)(o.Z, {
-      actionText: c.intl.string(c.t["DSN+hw"]),
+      actionText: c.intl.string(c.t["DSN+h4"]),
       onAction: e => {
         e === o.W.LOGIN_REQUIRED && t()
       }
@@ -41,7 +41,7 @@ function d(e) {
         variant: "secondary",
         size: "md",
         textVariant: "text-sm/medium",
-        text: c.intl.string(c.t["9g2mqT"]),
+        text: c.intl.string(c.t["9g2mqa"]),
         onClick: t
       })
     })]

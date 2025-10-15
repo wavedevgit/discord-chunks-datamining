@@ -32,7 +32,7 @@ function f(e) {
       color: "currentColor"
     }),
     timestamp: t.timestamp,
-    children: m ? d.intl.format("" === t.content ? d.t.AI1ZZr : d.t.geP3rU, {
+    children: m ? d.intl.format("" === t.content ? d.t.AI1ZZm : d.t.geP3ra, {
       username: p.nick,
       usernameHook: h,
       channelName: (0, r.jsx)(a.Text, {
@@ -45,10 +45,10 @@ function f(e) {
         tag: "span",
         variant: "text-md/medium",
         color: "text-link",
-        children: d.intl.string(d.t["5Q9+/L"])
+        children: d.intl.string(d.t["5Q9+/P"])
       }, "edit-group-button-".concat(t.id)),
       onEditGroup: () => (0, s.B)(t.channel_id, o.Z.GROUP_DM_SYSTEM_MESSAGE_NAME)
-    }) : d.intl.format(_ ? d.t.SOQ4hJ : d.t.oItgEw, {
+    }) : d.intl.format(_ ? d.t.SOQ4hI : d.t.oItgEx, {
       username: p.nick,
       usernameHook: h,
       channelName: t.content

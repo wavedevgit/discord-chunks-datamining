@@ -85,7 +85,7 @@ function v(e) {
       children: [(0, r.jsx)(l.whL, {
         size: "custom",
         color: "currentColor",
-        "aria-label": m.intl.string(m.t.mSfLs0),
+        "aria-label": m.intl.string(m.t.mSfLs7),
         className: g.backButton,
         width: 20,
         height: 20
@@ -97,7 +97,7 @@ function v(e) {
       })]
     }), p && null != i ? (0, r.jsx)(h.Z, {
       onClick: i,
-      label: m.intl.string(m.t.BEuDEn)
+      label: m.intl.string(m.t.BEuDEh)
     }) : null, d]
   })
 }

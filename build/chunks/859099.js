@@ -23,7 +23,7 @@ function c(e) {
   let {
     relationship: t
   } = e, n = t.userIgnored;
-  t.type !== o.OGo.PENDING_INCOMING || n || (r.uv.announce(s.intl.formatToPlainString(s.t.zH0kC7, {
+  t.type !== o.OGo.PENDING_INCOMING || n || (r.uv.announce(s.intl.formatToPlainString(s.t.zH0kCw, {
     username: t.user.username
   })), a.T(t.user))
 }
@@ -32,7 +32,7 @@ function u(e) {
   let {
     user: t
   } = e;
-  r.uv.announce(s.intl.formatToPlainString(s.t["/+7xky"], {
+  r.uv.announce(s.intl.formatToPlainString(s.t["/+7xk5"], {
     username: t.username
   })), a.z(t)
 }

@@ -19,20 +19,20 @@ function s(t, e, n) {
   function d() {
     let l = arguments.length > 0 && true !== arguments[0] && arguments[0],
       r = "".concat(location.protocol, "//").concat(location.host).concat(c.Z5c.GUILD_EVENT_DETAILS(e, t, l ? null : n));
-    (0, u.JG)(r, () => (0, i.showToast)((0, i.createToast)(a.intl.string(a.t["L/PwZf"]), i.ToastType.SUCCESS)))
+    (0, u.JG)(r, () => (0, i.showToast)((0, i.createToast)(a.intl.string(a.t["L/PwZW"]), i.ToastType.SUCCESS)))
   }
   return (0, l.jsx)(i.sNh, {
-    id: a.intl.string(a.t["9o+VKx"]),
-    label: a.intl.string(a.t["9o+VKx"]),
+    id: a.intl.string(a.t["9o+VKy"]),
+    label: a.intl.string(a.t["9o+VKy"]),
     action: s ? true : () => d(true),
     children: s && (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsx)(i.sNh, {
-        id: a.intl.string(a.t.QLtDqP),
-        label: a.intl.string(a.t.QLtDqP),
+        id: a.intl.string(a.t.QLtDqK),
+        label: a.intl.string(a.t.QLtDqK),
         action: () => d(false)
       }), (0, l.jsx)(i.sNh, {
-        id: a.intl.string(a.t.AYnhB7),
-        label: a.intl.string(a.t.AYnhB7),
+        id: a.intl.string(a.t.AYnhBw),
+        label: a.intl.string(a.t.AYnhBw),
         action: () => d(true)
       })]
     })

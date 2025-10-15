@@ -21,10 +21,10 @@ function d(e) {
       sku_id: t
     });
     let e = "".concat(location.protocol, "//").concat(location.host).concat(c.Z5c.COLLECTIBLES_SHOP).concat((0, s.aK)(n) ? "?tab=".concat(n) : "", "#itemSkuId=").concat(t);
-    (0, o.JG)(e, () => (0, l.showToast)((0, l.createToast)(u.intl.string(u.t["L/PwZf"]), l.ToastType.SUCCESS)))
+    (0, o.JG)(e, () => (0, l.showToast)((0, l.createToast)(u.intl.string(u.t["L/PwZW"]), l.ToastType.SUCCESS)))
   }, [t, n]);
   return (0, r.jsx)(l.hU, {
-    "aria-label": u.intl.string(u.t.WqhZss),
+    "aria-label": u.intl.string(u.t.WqhZsr),
     onClick: d,
     icon: l.xPt,
     variant: "overlay-secondary",

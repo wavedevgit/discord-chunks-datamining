@@ -104,14 +104,14 @@ function y(e) {
       }),
       children: (0, i.jsx)(c.qJs, {
         size: "custom",
-        "aria-label": b.intl.string(b.t["/jubeD"]),
+        "aria-label": b.intl.string(b.t["/jubeH"]),
         color: o.Z.unsafe_rawColors.WHITE_500.css,
         width: 20,
         height: 20
       })
     }) : (0, i.jsx)(c.Button, {
       variant: "primary",
-      text: b.intl.string(b.t["/jubeD"]),
+      text: b.intl.string(b.t["/jubeH"]),
       disabled: !r,
       onClick: y
     })]
@@ -153,7 +153,7 @@ function C(e) {
     children: (0, i.jsx)(p.Z, {
       tag: t,
       disabled: !l,
-      ariaLabel: b.intl.formatToPlainString(b.t.jhSvB9, {
+      ariaLabel: b.intl.formatToPlainString(b.t.jhSvBw, {
         name: t.name
       }),
       onClick: l ? () => r(t) : true

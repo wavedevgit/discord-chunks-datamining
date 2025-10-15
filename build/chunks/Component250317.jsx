@@ -52,7 +52,7 @@ function C(e) {
             isGift: false
           })
         },
-        text: b.intl.string(b.t.boqtTA),
+        text: b.intl.string(b.t.boqtTE),
         fullWidth: true
       }), (0, n.jsx)(i.Button, {
         icon: i.OgN,
@@ -62,7 +62,7 @@ function C(e) {
             isGift: true
           })
         },
-        text: b.intl.string(b.t.QAZA5f),
+        text: b.intl.string(b.t.QAZA5e),
         fullWidth: true
       })]
     })]
@@ -101,7 +101,7 @@ function _(e) {
   })
 }
 
-function f(e) {
+function v(e) {
   let {
     socialLayerTenantMetadata: t,
     selectedCarouselItemIndex: a,
@@ -125,7 +125,7 @@ function f(e) {
   })
 }
 
-function v(e) {
+function f(e) {
   let {
     onClick: t,
     children: a,
@@ -163,7 +163,7 @@ function I(e) {
       className: h.modalContent,
       children: [(0, n.jsxs)("div", {
         className: h.infoContainer,
-        children: [(0, n.jsx)(f, {
+        children: [(0, n.jsx)(v, {
           applicationId: p,
           socialLayerTenantMetadata: null == j || null == (a = j.tenantMetadata) ? true : a.socialLayer,
           selectedCarouselItemIndex: k
@@ -178,9 +178,9 @@ function I(e) {
           storefront: x.storefront
         }), (0, n.jsx)("div", {
           className: h.modalHeaderButtonsContainer,
-          children: (0, n.jsx)(v, {
+          children: (0, n.jsx)(f, {
             onClick: I,
-            "aria-label": b.intl.string(b.t.cpT0Cq),
+            "aria-label": b.intl.string(b.t.cpT0Cg),
             children: (0, n.jsx)(i.Dio, {
               size: "md",
               color: "currentColor"

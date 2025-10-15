@@ -37,13 +37,13 @@ function f(e) {
         n(), _.startAnimation(false)
       },
       className: d.button,
-      "aria-label": u.intl.string(u.t["44yJxh"]),
+      "aria-label": u.intl.string(u.t["44yJxs"]),
       children: _.render()
     }), (0, r.jsxs)(o.P3F, {
       onClick: () => {
         n(), _.startAnimation(false)
       },
-      "aria-label": "".concat(p, ": ").concat(u.intl.string(u.t["44yJxh"])),
+      "aria-label": "".concat(p, ": ").concat(u.intl.string(u.t["44yJxs"])),
       className: d.select,
       children: [(0, r.jsx)("img", {
         alt: "",

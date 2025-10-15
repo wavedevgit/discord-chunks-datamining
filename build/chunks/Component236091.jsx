@@ -27,7 +27,7 @@ let g = e => {
       r = null == (e = c.ZP.getVisibleGame()) ? true : e.windowHandle;
     return null != i && !!p.Z.getSettings().clipsEnabled && !!n || null != r && !!p.Z.getSettings().decoupledClipsEnabled && !!g || s.Z.getParticipants(t).some(e => e.type === h.fO.USER && p.Z.isClipsEnabledForUser(e.user.id))
   }) ? (0, i.jsx)(a.u, {
-    text: f.intl.string(f.t.DJXW3G),
+    text: f.intl.string(f.t.DJXW3N),
     children: (0, i.jsxs)("div", {
       className: m.clipsEnabledIndicator,
       children: [(0, i.jsx)(o.G2e, {
@@ -36,7 +36,7 @@ let g = e => {
         color: l.Z.unsafe_rawColors.PRIMARY_500.css,
         className: m.clipBadgeIcon
       }), (0, i.jsx)(o.IGR, {
-        text: f.intl.string(f.t.pCMkDb),
+        text: f.intl.string(f.t.pCMkDQ),
         shape: o.Dv2.ROUND_RIGHT,
         color: l.Z.unsafe_rawColors.PRIMARY_500.css,
         className: m.clipBadgeText

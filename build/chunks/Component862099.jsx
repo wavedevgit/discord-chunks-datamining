@@ -3,7 +3,7 @@
 require.d(exports, {
   Co: () => Q,
   ZP: () => X,
-  bZ: () => q,
+  bZ: () => K,
   gt: () => B
 }), require("./388685.js");
 var r, Chunk951288 = require("./951288.js"),
@@ -68,7 +68,7 @@ let B = Chunk647438.memo(function(e) {
       }), null != u && (0, i.jsx)(c.P3F, {
         onClick: u,
         className: G.closeIcon,
-        "aria-label": U.intl.string(U.t.cpT0Cq),
+        "aria-label": U.intl.string(U.t.cpT0Cg),
         children: (0, i.jsx)(c.Dio, {
           size: "xs",
           color: "currentColor"
@@ -117,7 +117,7 @@ function H(e) {
     onClickCloseIcon: () => (0, N.ji)({
       eventId: null == t ? true : t.id
     }),
-    heading: U.intl.string(U.t["X2K3/4"]),
+    heading: U.intl.string(U.t["X2K3//"]),
     topic: t.name,
     location: n.name,
     locationIcon: null != l ? (0, i.jsx)(l, {
@@ -145,7 +145,7 @@ function V(e) {
         notice_type: n
       })
     },
-    text: U.intl.string(U.t.DlcqlU),
+    text: U.intl.string(U.t.DlcqlZ),
     icon: l ? c.dz2 : c.Dkj,
     variant: l ? "secondary" : "primary",
     size: "sm",
@@ -165,9 +165,9 @@ function F(e) {
     startDateTimeString: g,
     upcomingEvent: m,
     diffMinutes: b
-  } = (0, R.ub)(f.toISOString(), null == h ? true : h.toISOString()), _ = m ? b > 0 ? U.intl.formatToPlainString(U.t.PQlCWk, {
+  } = (0, R.ub)(f.toISOString(), null == h ? true : h.toISOString()), _ = m ? b > 0 ? U.intl.formatToPlainString(U.t.PQlCWl, {
     minutes: b
-  }) : U.intl.string(U.t.WINqKV) : U.intl.formatToPlainString(U.t.DC6h3G, {
+  }) : U.intl.string(U.t.WINqKS) : U.intl.formatToPlainString(U.t.DC6h3N, {
     date: g
   });
   return l.useEffect(() => {
@@ -198,7 +198,7 @@ function F(e) {
           }), (0, N.L_)(n.id)
         },
         className: G.closeIcon,
-        "aria-label": U.intl.string(U.t.cpT0Cq),
+        "aria-label": U.intl.string(U.t.cpT0Cg),
         children: (0, i.jsx)(c.Dio, {
           size: "xs",
           color: "currentColor"
@@ -251,7 +251,7 @@ function z(e) {
     onClickCloseIcon: () => (0, N.ji)({
       eventId: null == t ? true : t.id
     }),
-    heading: U.intl.string(U.t["1+boPi"]),
+    heading: U.intl.string(U.t["1+boPj"]),
     topic: t.name,
     location: (0, x.m)(n, true),
     locationIcon: (0, i.jsx)(c._tJ, {
@@ -281,7 +281,7 @@ function W(e) {
     children: (0, i.jsx)(c.Button, {
       variant: "active",
       size: "sm",
-      text: U.intl.string(U.t.z4FcDs),
+      text: U.intl.string(U.t.z4FcDg),
       fullWidth: true,
       onClick: n
     })
@@ -308,18 +308,18 @@ function Y(e) {
   })
 }
 
-function K(e) {
+function q(e) {
   let {
     stageInstance: t,
     channel: n
-  } = e, r = (0, s.Wu)([m.Z], () => [...new Set(m.Z.getMutableParticipants(n.id, b.pV.SPEAKER).map(e => e.user))], [n.id]), l = (0, s.e7)([m.Z], () => m.Z.getParticipantCount(n.id, b.pV.AUDIENCE), [n.id]), a = U.intl.formatToPlainString(U.t["+v2pN2"], {
+  } = e, r = (0, s.Wu)([m.Z], () => [...new Set(m.Z.getMutableParticipants(n.id, b.pV.SPEAKER).map(e => e.user))], [n.id]), l = (0, s.e7)([m.Z], () => m.Z.getParticipantCount(n.id, b.pV.AUDIENCE), [n.id]), a = U.intl.formatToPlainString(U.t["+v2pNz"], {
     count: "".concat(l)
   });
   return (0, i.jsx)(B, {
     onClickCloseIcon: () => (0, N.ji)({
       stageId: null == t ? true : t.id
     }),
-    heading: U.intl.string(U.t["X2K3/4"]),
+    heading: U.intl.string(U.t["X2K3//"]),
     location: n.name,
     details: a,
     detailsIcon: (0, i.jsx)(c.VWR, {
@@ -344,23 +344,23 @@ function K(e) {
     })
   })
 }
-var q = ((r = {})[r.VOICE = 1] = "VOICE", r[r.STAGE = 2] = "STAGE", r[r.STUDY_ROOM = 3] = "STUDY_ROOM", r);
+var K = ((r = {})[r.VOICE = 1] = "VOICE", r[r.STAGE = 2] = "STAGE", r[r.STUDY_ROOM = 3] = "STUDY_ROOM", r);
 
 function Q(e) {
   let {
     channel: t,
     speakers: n,
     voiceType: r
-  } = e, a = t.getGuildId(), d = l.useMemo(() => n.slice(0, 3), [n]), p = (0, s.e7)([v.Z], () => v.Z.can(M.Plq.CONNECT, t)), f = (0, E.Z)(t.id), h = U.intl.string(U.t.VJlc0S);
+  } = e, a = t.getGuildId(), d = l.useMemo(() => n.slice(0, 3), [n]), p = (0, s.e7)([v.Z], () => v.Z.can(M.Plq.CONNECT, t)), f = (0, E.Z)(t.id), h = U.intl.string(U.t.VJlc0d);
   switch (r) {
     case 1:
-      h = U.intl.string(U.t.VJlc0S);
+      h = U.intl.string(U.t.VJlc0d);
       break;
     case 2:
-      h = U.intl.string(U.t.ZYO5OK), (null == f ? true : f.speaker) ? h = U.intl.string(U.t["/cnSFc"]) : null != f && (h = U.intl.string(U.t.btSGOj));
+      h = U.intl.string(U.t.ZYO5OD), (null == f ? true : f.speaker) ? h = U.intl.string(U.t["/cnSFR"]) : null != f && (h = U.intl.string(U.t.btSGOj));
       break;
     case 3:
-      h = U.intl.string(U.t.wBoE6L);
+      h = U.intl.string(U.t.wBoE6O);
       break;
     default:
       (0, C.vE)(r)
@@ -404,10 +404,10 @@ let X = Chunk647438.memo(function(e) {
   if (n) return (0, i.jsx)(f.Z, {
     guild: t
   });
-  null == l || u ? h && (d = (0, i.jsx)(K, {
+  null == l || u ? h && (d = (0, i.jsx)(q, {
     stageInstance: o,
     channel: r
-  })) : l.entity_type === k.WX.STAGE_INSTANCE && h ? d = (0, i.jsx)(K, {
+  })) : l.entity_type === k.WX.STAGE_INSTANCE && h ? d = (0, i.jsx)(q, {
     stageInstance: o,
     channel: r
   }) : l.entity_type === k.WX.EXTERNAL ? d = (0, i.jsx)(z, {

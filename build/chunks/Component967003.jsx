@@ -19,9 +19,9 @@ function d(e) {
   } = (0, s.G)({
     location: "useInputProfileItems"
   }), n = {
-    [c._.VOICE_ISOLATION]: u.intl.string(u.t.cjPbpT),
-    [c._.STUDIO]: u.intl.string(u.t.VZPR0R),
-    [c._.CUSTOM]: u.intl.string(u.t["N/PQjv"])
+    [c._.VOICE_ISOLATION]: u.intl.string(u.t.cjPbpa),
+    [c._.STUDIO]: u.intl.string(u.t.VZPR0d),
+    [c._.CUSTOM]: u.intl.string(u.t["N/PQjo"])
   }, d = (0, i.e7)([a.Z], () => a.Z.getActiveInputProfile()), p = t.map(t => (0, r.jsx)(o.k5B, {
     id: t,
     group: "input-profiles",
@@ -33,7 +33,7 @@ function d(e) {
   }, t));
   return (0, r.jsx)(o.sNh, {
     id: "input-profiles",
-    label: u.intl.string(u.t.LM3U3k),
+    label: u.intl.string(u.t.LM3U3t),
     subtext: n[null != d ? d : c._.CUSTOM],
     children: p
   })

@@ -39,9 +39,9 @@ let p = function(e) {
               children: n
             }), (0, r.jsx)("div", {
               className: d.rate,
-              children: (c = e[e.length - 1] / t * 1e3) > 1e3 ? u.intl.formatToPlainString(u.t["WU+gTX"], {
+              children: (c = e[e.length - 1] / t * 1e3) > 1e3 ? u.intl.formatToPlainString(u.t["WU+gTU"], {
                 size: Math.round(c / 1e3)
-              }) : u.intl.formatToPlainString(u.t.wnF6TH, {
+              }) : u.intl.formatToPlainString(u.t.wnF6TE, {
                 size: Math.round(c)
               })
             })]

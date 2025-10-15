@@ -75,7 +75,7 @@ function j(e) {
   }), W = null != v && I && Y, K = V && I, z = (0, D.G)(n), q = (0, D.z)(n), X = i.useMemo(() => {
     let e = [];
     return I ? (K && e.push({
-      label: null == Z ? x.intl.string(x.t.RscU7I) : F ? x.intl.string(x.t.DPfdsq) : x.intl.string(x.t.sqe0hj),
+      label: null == Z ? x.intl.string(x.t.RscU7O) : F ? x.intl.string(x.t.DPfdsr) : x.intl.string(x.t.sqe0ho),
       trackingArea: R.j_.PLAY,
       onClick() {
         (0, c.G6)({
@@ -90,7 +90,7 @@ function j(e) {
       },
       disabled: F
     }), !K && W && e.push({
-      label: x.intl.string(x.t.JeK1Wg),
+      label: x.intl.string(x.t.JeK1Wl),
       trackingArea: R.j_.PLAY,
       onClick() {
         (0, _.W)({
@@ -146,7 +146,7 @@ function k(e) {
         compactDisplay: "short"
       }),
       r = null != (t = null == (e = c.directoryEntry) ? true : e.guild_count) ? t : 0;
-    return 0 === r ? null : x.intl.format(x.t["6IW6Wi"], {
+    return 0 === r ? null : x.intl.format(x.t["6IW6Wl"], {
       guildCount: n.format(r)
     })
   }, [null == (t = c.directoryEntry) ? true : t.guild_count, u, d]), _ = null == (o = c.categories) || null == (n = o.at(0)) ? true : n.name;
@@ -191,7 +191,7 @@ function U(e) {
     if (d.length > 0) return (0, r.jsx)(N.K, {
       activityUsers: d,
       guildId: c,
-      activityText: x.intl.formatToPlainString(x.t["IJa+46"], {
+      activityText: x.intl.formatToPlainString(x.t["IJa+4+"], {
         count: d.length
       })
     });
@@ -199,9 +199,9 @@ function U(e) {
       children: [(0, r.jsx)(l.YqE, {
         size: "xxs",
         color: "currentColor"
-      }), x.intl.string(x.t.TsWCdW)]
+      }), x.intl.string(x.t.TsWCdX)]
     });
-    let e = a > 0 ? x.intl.format(x.t.z8EAJW, {
+    let e = a > 0 ? x.intl.format(x.t.z8EAJS, {
       count: a
     }) : x.intl.string(x.t.RjceQU);
     return (0, r.jsxs)(r.Fragment, {

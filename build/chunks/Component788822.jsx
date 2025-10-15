@@ -32,7 +32,7 @@ let C = e => {
     x = (0, d.YG)(_, m),
     S = l.useRef(null),
     y = null == m ? true : m.bodyText,
-    j = (0, a.sp)();
+    k = (0, a.sp)();
   return (0, r.jsx)(i.$, {
     innerRef: S,
     onChange: O,
@@ -62,13 +62,13 @@ let C = e => {
       }),
       onClick: () => {
         E("shop marketing tile", v), s.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-          collectibles_shop_session_id: null == j ? true : j.sessionId,
+          collectibles_shop_session_id: null == k ? true : k.sessionId,
           sku_id: v,
           page_type: "home",
-          page_section: null == j ? true : j.pageSection,
-          page_category: null == j ? true : j.pageCategory,
+          page_section: null == k ? true : k.pageSection,
+          page_category: null == k ? true : k.pageCategory,
           tile_type: "FEATURED_BLOCK",
-          tile_position: String(null == j ? true : j.tilePosition),
+          tile_position: String(null == k ? true : k.tilePosition),
           cta_name: null
         })
       },
@@ -91,16 +91,16 @@ let C = e => {
         className: p.featuredBlockButtonContainer,
         children: (0, r.jsx)(o.Button, {
           variant: "overlay-primary",
-          text: f.intl.string(f.t.jVcuVY),
+          text: f.intl.string(f.t.jVcuVV),
           onClick: e => {
             E("shop marketing take me there button", v), e.stopPropagation(), s.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-              collectibles_shop_session_id: null == j ? true : j.sessionId,
+              collectibles_shop_session_id: null == k ? true : k.sessionId,
               sku_id: v,
               page_type: "home",
-              page_section: null == j ? true : j.pageSection,
-              page_category: null == j ? true : j.pageCategory,
+              page_section: null == k ? true : k.pageSection,
+              page_category: null == k ? true : k.pageCategory,
               tile_type: "FEATURED_BLOCK",
-              tile_position: String(null == j ? true : j.tilePosition),
+              tile_position: String(null == k ? true : k.tilePosition),
               cta_name: "Take me there button"
             })
           }

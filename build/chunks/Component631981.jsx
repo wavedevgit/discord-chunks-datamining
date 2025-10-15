@@ -20,12 +20,12 @@ let f = (0, Chunk883385.Z)(function(e) {
   return (0, n.jsx)(o.v2r, {
     navId: "favorite-server-context",
     onClose: i.Zy,
-    "aria-label": b.intl.string(b.t.liqwPJ),
+    "aria-label": b.intl.string(b.t.liqwPD),
     onSelect: t,
     children: (0, n.jsx)(o.kSQ, {
       children: (0, n.jsx)(o.S89, {
         id: "mute-server",
-        label: b.intl.string(b.t.vRzp7P),
+        label: b.intl.string(b.t.vRzp7O),
         action: () => (0, u._Z)(),
         checked: r
       })

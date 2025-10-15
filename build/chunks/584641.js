@@ -1,3 +1,0 @@
-/** Chunk was on 58808 **/
-/** chunk id: 584641, original params: s (module,exports,require) **/
-module.exports = JSON.parse('{"JA5C7L":["क्लियर करें"],"WfH9in":["बंद करें"],"m3Vfcs":["इसे फिर से न दिखाएं?"],"cgdAs2":["(एक नए टैब में खुलेगा)"],"VMNfsY":["सलेक्ट किया गया"],"YpT3kk":["एनलार्ज करें और वीडियो प्ले करें"]}')

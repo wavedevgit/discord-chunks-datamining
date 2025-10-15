@@ -65,23 +65,23 @@ function x(e) {
       }
     })
   }, [t, n]);
-  let V = () => t === C.hX.FRIEND_ANNIVERSARY ? w.intl.formatToPlainString(w.t.BWJvAK, {
+  let V = () => t === C.hX.FRIEND_ANNIVERSARY ? w.intl.formatToPlainString(w.t.BWJvAA, {
       friendUserName: v.ZP.getName(a)
     }) : (0, I.Ou)(t),
-    H = () => t === C.hX.FRIEND_ANNIVERSARY ? w.intl.formatToPlainString(w.t.S3fdq7, {
+    H = () => t === C.hX.FRIEND_ANNIVERSARY ? w.intl.formatToPlainString(w.t.S3fdq6, {
       numberOfYears: F
     }) : (0, I.Ou)(t),
     Y = () => {
       switch (G) {
         case C.X2.VIEW_ALL:
-          return w.intl.string(w.t.WkxniM);
+          return w.intl.string(w.t.WkxniI);
         case C.X2.SEND_MESSAGE:
-          return w.intl.string(w.t.I61IsE);
+          return w.intl.string(w.t.I61IsL);
         default:
           return
       }
     },
-    W = () => t === C.hX.FRIEND_ANNIVERSARY ? w.intl.formatToPlainString(w.t["L2s/N3"], {
+    W = () => t === C.hX.FRIEND_ANNIVERSARY ? w.intl.formatToPlainString(w.t["L2s/Nz"], {
       numberOfYears: F
     }) : (0, I.Ou)(t),
     K = e => {
@@ -201,7 +201,7 @@ function x(e) {
             }), (0, r.jsx)(d.Text, {
               variant: "text-sm/medium",
               className: o()(D.buttonText, er),
-              children: w.intl.string(w.t["wg/30i"])
+              children: w.intl.string(w.t["wg/30t"])
             })]
           })
         })]

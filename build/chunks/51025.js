@@ -188,7 +188,7 @@ function w(e, t) {
     let {
       default: t
     } = e;
-    t.showNotification(i.getIconURL(g), m.intl.string(m.t["1wR7yI"]), m.intl.formatToPlainString(m.t["89VAgW"], {
+    t.showNotification(i.getIconURL(g), m.intl.string(m.t["1wR7yM"]), m.intl.formatToPlainString(m.t["89VAgY"], {
       name: i.name
     }), {
       notif_type: "Game Library Game Installed"

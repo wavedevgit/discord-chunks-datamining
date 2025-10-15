@@ -72,7 +72,7 @@ let w = () => (0, Chunk951288.jsx)("div", {
     children: (0, Chunk951288.jsx)(Chunk481060.Heading, {
       className: Chunk893296.mostPopularText,
       variant: "text-xs/bold",
-      children: Chunk388032.intl.string(Chunk388032.t.TR2B4T)
+      children: Chunk388032.intl.string(Chunk388032.t.TR2B4e)
     })
   }),
   D = () => (0, Chunk951288.jsx)("div", {
@@ -80,7 +80,7 @@ let w = () => (0, Chunk951288.jsx)("div", {
     children: (0, Chunk951288.jsx)(Chunk481060.Heading, {
       className: Chunk893296.mostPopularText,
       variant: "heading-deprecated-12/extrabold",
-      children: Chunk388032.intl.string(Chunk388032.t.IBYG5U)
+      children: Chunk388032.intl.string(Chunk388032.t.IBYG5e)
     })
   }),
   L = e => {
@@ -110,7 +110,7 @@ let w = () => (0, Chunk951288.jsx)("div", {
         className: n ? v.basicCheckMark : v.premiumCheckMark,
         "aria-hidden": true
       }), (0, r.jsx)(c.nn4, {
-        children: O.intl.string(O.t["tq+6t/"])
+        children: O.intl.string(O.t["tq+6t7"])
       })]
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(c.Dio, {
@@ -119,7 +119,7 @@ let w = () => (0, Chunk951288.jsx)("div", {
         className: v.closeIcon,
         "aria-hidden": true
       }), (0, r.jsx)(c.nn4, {
-        children: O.intl.string(O.t.l4qZrp)
+        children: O.intl.string(O.t.l4qZrq)
       })]
     })
   },
@@ -231,7 +231,7 @@ let w = () => (0, Chunk951288.jsx)("div", {
         scope: "row",
         className: v.labelCell,
         children: (0, r.jsx)(L, {
-          text: O.intl.string(O.t["09yRK3"]),
+          text: O.intl.string(O.t["09yRKy"]),
           variant: "text-lg/bold"
         })
       }), (0, r.jsx)("td", {

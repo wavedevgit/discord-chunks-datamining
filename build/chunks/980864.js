@@ -8,7 +8,7 @@ var Chunk416867 = require("./416867.jsx"),
   Chunk388032 = require("./388032.jsx");
 let a = () => {
   (0, Chunk416867.B)({
-    title: Chunk388032.intl.string(Chunk388032.t.oPV2cy),
-    body: Chunk388032.intl.string(Chunk388032.t.DdRizV)
+    title: Chunk388032.intl.string(Chunk388032.t.oPV2c3),
+    body: Chunk388032.intl.string(Chunk388032.t.DdRizc)
   })
 }

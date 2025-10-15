@@ -1,7 +1,7 @@
 /** Chunk was on 38319 **/
 /** chunk id: 90753, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => E
 }), require("./539854.js");
 var Chunk647438 = require("./647438.js"),
   Chunk846519 = require("./846519.js"),
@@ -18,8 +18,8 @@ var Chunk647438 = require("./647438.js"),
   Chunk813900 = require("./813900.js");
 let g = 1e3 / 60;
 
-function b(e, t, n, b) {
-  let E = (0, a.dQu)(l.Z.unsafe_rawColors.BRAND_500).hex(),
+function E(e, t, n, E) {
+  let b = (0, a.dQu)(l.Z.unsafe_rawColors.BRAND_500).hex(),
     v = (0, a.dQu)(l.Z.unsafe_rawColors.BLACK_500).hex(),
     h = (0, a.dQu)(l.Z.unsafe_rawColors.WHITE_500).hex(),
     S = r.useRef({}),
@@ -45,10 +45,10 @@ function b(e, t, n, b) {
         if (null == m) return;
         let {
           width: g,
-          height: b
-        } = f.getBoundingClientRect(), E = [];
+          height: E
+        } = f.getBoundingClientRect(), b = [];
         n.forEach(e => {
-          if (null == c.Z.getVoiceStateForChannel(a, e.userId)) return void E.push(e);
+          if (null == c.Z.getVoiceStateForChannel(a, e.userId)) return void b.push(e);
           ! function(e) {
             let {
               drawable: t,
@@ -92,26 +92,26 @@ function b(e, t, n, b) {
             drawable: e,
             context: m,
             canvasWidth: g,
-            canvasHeight: b,
+            canvasHeight: E,
             fallbackColor: r,
             outlineColorDark: o,
             outlineColorLight: u,
             linesDrawnAt: i,
-            deadDrawables: E,
+            deadDrawables: b,
             streamerId: l
           })
-        }), E.length > 0 && (0, s.fW)(E, l)
+        }), b.length > 0 && (0, s.fW)(b, l)
       }({
         canvasRef: e,
         drawables: n,
-        fallbackColor: E,
+        fallbackColor: b,
         linesDrawnAt: S,
         streamerId: t,
         outlineColorDark: v,
         outlineColorLight: h,
-        channelId: b
+        channelId: E
       })
-    }, [e, b, E, v, h]);
+    }, [e, E, b, v, h]);
   r.useEffect(() => {
     let t = new ResizeObserver(() => {
       let t = e.current;

@@ -60,7 +60,7 @@ let p = e => {
       variant: "text-xs/normal",
       color: "interactive-normal",
       className: d.tierPeriod,
-      children: u.intl.format(u.t.isLGyX, {
+      children: u.intl.format(u.t.isLGyc, {
         period: (0, s.JE)({
           interval: g.interval,
           interval_count: g.interval_count

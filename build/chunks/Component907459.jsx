@@ -41,10 +41,10 @@ let D = () => {
     return (0, Chunk951288.jsx)(Chunk767714.Z, {
       size: Chunk755721.zx.Sizes.MEDIUM,
       textOptions: {
-        textOverride: Chunk647438 ? Chunk388032.intl.string(Chunk388032.t.IJI7yk) : o ? (0, Chunk74538.Rt)({
+        textOverride: Chunk647438 ? Chunk388032.intl.string(Chunk388032.t.IJI7ys) : o ? (0, Chunk74538.Rt)({
           intervalType: null == Chunk120356 || null == (t = Chunk120356.subscription_trial) ? true : exports.interval,
           intervalCount: null == Chunk120356 || null == (n = Chunk120356.subscription_trial) ? true : require.interval_count
-        }) : Chunk388032.intl.string(Chunk388032.t.mr4K7D)
+        }) : Chunk388032.intl.string(Chunk388032.t.mr4K7O)
       },
       subscriptionTier: Chunk474936.Si.TIER_2
     })
@@ -69,7 +69,7 @@ let D = () => {
         className: w.title,
         children: [(0, r.jsx)(u.Heading, {
           variant: "heading-lg/extrabold",
-          children: P.intl.string(P.t["hb/wE0"])
+          children: P.intl.string(P.t["hb/wEx"])
         }), (0, r.jsx)(E.Z, {
           className: w.premiumIcon
         })]
@@ -91,7 +91,7 @@ let D = () => {
         onClick: a,
         variant: "secondary",
         fullWidth: true,
-        text: i || t ? P.intl.string(P.t["dqH+qr"]) : P.intl.string(P.t.Olc2K3)
+        text: i || t ? P.intl.string(P.t["dqH+qq"]) : P.intl.string(P.t.Olc2Ky)
       })]
     })
   };

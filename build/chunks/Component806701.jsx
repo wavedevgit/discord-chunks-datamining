@@ -42,10 +42,10 @@ function m(e) {
       className: s()(g.marginBottom20, g.marginTop8)
     }), (0, r.jsx)(a.Dx, {
       className: g.marginBottom8,
-      children: d.intl.string(d.t["8UcxI6"])
+      children: d.intl.string(d.t["8UcxIy"])
     }), (0, r.jsx)(l.Text, {
       variant: "text-md/normal",
-      children: d.intl.string(d.t.O37hMl)
+      children: d.intl.string(d.t.O37hMj)
     }), (0, r.jsxs)(a.gO, {
       className: s()(g.marginBottom20, g.marginTop20),
       children: [(0, r.jsx)(l.Text, {
@@ -53,28 +53,28 @@ function m(e) {
       }), (0, r.jsxs)("ul", {
         className: h.listContainer,
         children: [(0, r.jsx)(p, {
-          children: d.intl.string(d.t.Gj1Zry)
+          children: d.intl.string(d.t.Gj1Zr6)
         }), (0, r.jsx)(o.Z, {}), (0, r.jsx)(p, {
-          children: d.intl.string(d.t["8C6t3B"])
+          children: d.intl.string(d.t["8C6t3N"])
         }), (0, r.jsx)(o.Z, {}), (0, r.jsx)(p, {
-          children: d.intl.string(d.t.mToZMA)
+          children: d.intl.string(d.t.mToZMD)
         }), (0, r.jsx)(o.Z, {}), (0, r.jsx)(p, {
-          children: d.intl.string(d.t.TPEvkc)
+          children: d.intl.string(d.t.TPEvkZ)
         }), (0, r.jsx)(o.Z, {}), (0, r.jsx)(p, {
-          children: d.intl.string(d.t.H8Y1Ln)
+          children: d.intl.string(d.t.H8Y1Li)
         })]
       })]
     }), (0, r.jsxs)("div", {
       className: h.buttonContainer,
       children: [(0, r.jsx)(a.zx, {
         onClick: () => t(c.n.PASSWORD),
-        children: d.intl.string(d.t.GgCRqR)
+        children: d.intl.string(d.t.GgCRqa)
       }), (0, r.jsx)(a.zx, {
         color: a.zx.Colors.PRIMARY,
         onClick: () => i(u.Z5c.LOGIN, {
           source: "account_revert"
         }),
-        children: d.intl.string(d.t["B/yHcQ"])
+        children: d.intl.string(d.t["B/yHcX"])
       })]
     })]
   })

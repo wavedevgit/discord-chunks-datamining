@@ -13,12 +13,12 @@ let o = 60,
   c = 2592e3,
   u = 31104e3,
   d = () => ({
-    seconds: Chunk388032.t.sMPmtq,
-    minutes: Chunk388032.t.N9M4N1,
-    hours: Chunk388032.t.p0KedC,
-    days: Chunk388032.t.gjK5av,
-    months: Chunk388032.t.kHo4Or,
-    years: Chunk388032.t.KjKr2P
+    seconds: Chunk388032.t.sMPmtr,
+    minutes: Chunk388032.t.N9M4Nz,
+    hours: Chunk388032.t.p0KedH,
+    days: Chunk388032.t.gjK5am,
+    months: Chunk388032.t.kHo4Oj,
+    years: Chunk388032.t.KjKr2N
   }),
   f = (e, t) => null != t && null != t[e],
   _ = (e, t, n) => {

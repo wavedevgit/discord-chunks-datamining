@@ -1,7 +1,7 @@
 /** Chunk was on 72891 **/
 /** chunk id: 48217, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  c: () => g
+  c: () => _
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -15,7 +15,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk131115 = require("./131115.js");
 
-function _(e) {
+function g(e) {
   let {
     guild: t,
     banner: n
@@ -42,7 +42,7 @@ function _(e) {
   })
 }
 
-function g(e) {
+function _(e) {
   let {
     analyticsLocations: t,
     analyticsLocation: n,
@@ -55,21 +55,21 @@ function g(e) {
     analyticsSourceLocation: n,
     guild: a,
     headerProps: {
-      title: u.intl.string(u.t["rv2H+1"]),
+      title: u.intl.string(u.t["rv2H+/"]),
       subtitle: function(e, t) {
         let n = (0, l.nW)(e);
-        return t ? u.intl.formatToPlainString(u.t["TR/Uyt"], {
+        return t ? u.intl.formatToPlainString(u.t["TR/Uys"], {
           targetLevelOrPlan: n
-        }) : u.intl.formatToPlainString(u.t.B253V6, {
+        }) : u.intl.formatToPlainString(u.t.B253V1, {
           targetLevelOrPlan: n
         })
       }(f, o),
-      image: (0, i.jsx)(_, {
+      image: (0, i.jsx)(g, {
         guild: a,
         banner: r
       })
     },
-    perkIntro: u.intl.string(u.t.ZuItcI),
+    perkIntro: u.intl.string(u.t.ZuItcH),
     perks: o ? (0, s.zC)() : (0, s.XO)()
   })
 }

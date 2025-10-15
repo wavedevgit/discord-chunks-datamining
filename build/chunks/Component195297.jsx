@@ -78,7 +78,7 @@ function b(e) {
     })
   }
   a.useEffect(() => {
-    g.default.track(N.rMx.OPEN_MODAL, {
+    _.default.track(N.rMx.OPEN_MODAL, {
       type: N.jXE.GIF_PICKER_AVATAR_OR_BANNER_MODAL,
       location_stack: I,
       location: {
@@ -106,7 +106,7 @@ function b(e) {
         children: [(0, i.jsx)(l.Heading, {
           className: A.titleCase,
           variant: "heading-lg/semibold",
-          children: h.intl.string(h.t["xsC+/y"])
+          children: h.intl.string(h.t["xsC+//"])
         }), (0, i.jsx)(l.olH, {
           onClick: o,
           className: A.modalCloseButton
@@ -124,7 +124,7 @@ function b(e) {
         }), j && (0, i.jsx)(l.$jN, {
           className: A.spinner
         })]
-      }), v && w && (0, i.jsx)(_.Z, {
+      }), v && w && (0, i.jsx)(g.Z, {
         uploadType: P,
         analyticsSource: Z,
         showUpsell: true,

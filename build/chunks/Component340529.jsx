@@ -68,7 +68,7 @@ function y(e) {
     }), null != d && (0, n.jsx)(c.P3F, {
       className: v.tabPreviewClose,
       onClick: d,
-      "aria-label": m.intl.string(m.t.WAI6xu),
+      "aria-label": m.intl.string(m.t.WAI6xs),
       children: (0, n.jsx)(c.k$p, {
         size: "xs",
         color: "currentColor"
@@ -93,8 +93,8 @@ function _(e) {
             width: 20,
             height: 20
           }),
-          title: m.intl.string(m.t.odvTUp),
-          body: m.intl.string(m.t["0JFpRW"]),
+          title: m.intl.string(m.t.odvTUl),
+          body: m.intl.string(m.t["0JFpRU"]),
           selected: i === f.y.GUILD_PRODUCTS,
           onClick: () => o(f.y.GUILD_PRODUCTS)
         }, e);
@@ -104,8 +104,8 @@ function _(e) {
             width: 20,
             height: 20
           }),
-          title: m.intl.string(m.t["KzCF/6"]),
-          body: r ? m.intl.string(m.t["jqz+ly"]) : m.intl.format(m.t.ycs4oO, {
+          title: m.intl.string(m.t["KzCF//"]),
+          body: r ? m.intl.string(m.t["jqz+l5"]) : m.intl.format(m.t.ycs4oK, {
             openRoleSubPage: () => (0, u.uL)(O.Z5c.CHANNEL(t.id, x.oC.ROLE_SUBSCRIPTIONS))
           }),
           disabled: !r,
@@ -124,8 +124,8 @@ function _(e) {
             width: 20,
             height: 20
           }),
-          title: m.intl.string(m.t.odvTUp),
-          body: m.intl.string(m.t["827i8I"]),
+          title: m.intl.string(m.t.odvTUl),
+          body: m.intl.string(m.t["827i8P"]),
           selected: i === f.y.GUILD_PRODUCTS_PREVIEW,
           onClick: () => {
             o(f.y.GUILD_PRODUCTS_PREVIEW), s.K.set(h.Hr, "true")
@@ -142,7 +142,7 @@ function _(e) {
     children: [(0, n.jsx)(c.Heading, {
       variant: "heading-sm/bold",
       className: v.header,
-      children: m.intl.string(m.t.GF433I)
+      children: m.intl.string(m.t.GF433N)
     }), (0, n.jsx)(c.LZC, {
       size: 12
     }), (0, n.jsxs)("div", {

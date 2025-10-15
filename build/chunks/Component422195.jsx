@@ -57,7 +57,7 @@ let C = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LI
         "aria-setsize": D,
         "aria-posinset": a,
         children: (0, r.jsx)(c.P3F, {
-          "aria-label": S.intl.string(S.t.y3LQCG),
+          "aria-label": S.intl.string(S.t.y3LQCA),
           className: o()(A.stickerCategory, A.stickerCategoryGeneric, {
             [A.stickerCategoryGenericDisabled]: w && !E,
             [A.stickerCategoryGenericSelected]: !g && E && 0 === t,
@@ -78,7 +78,7 @@ let C = (0, Chunk624138.Mg)(Chunk477690.Z.STICKERS_CONSTANTS_STICKER_CATEGORY_LI
         "aria-setsize": D,
         "aria-posinset": a,
         children: (0, r.jsx)(c.P3F, {
-          "aria-label": S.intl.string(S.t.RxAmVC),
+          "aria-label": S.intl.string(S.t.RxAmVF),
           className: o()(A.stickerCategory, A.stickerCategoryGeneric, A.stickerCategoryGenericLast, {
             [A.stickerCategoryGenericDisabled]: w && !R,
             [A.stickerCategoryGenericSelected]: !g && R && t === C

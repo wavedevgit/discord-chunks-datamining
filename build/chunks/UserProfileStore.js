@@ -209,17 +209,17 @@ function J(e) {
     er = null != z.badges ? z.badges.map(e => {
       let t = (0, m.fv)(e.id);
       if ((e.id === N || null != t) && null != J) {
-        let n = y.intl.formatToPlainString(y.t["8zbGNR"], {
+        let n = y.intl.formatToPlainString(y.t["8zbGNT"], {
           date: J
         });
-        return null != t && (n = y.intl.formatToPlainString(y.t.Hu4jfi, {
+        return null != t && (n = y.intl.formatToPlainString(y.t.Hu4jfn, {
           date: J
         })), T(v({}, e), {
           description: n
         })
       }
       return e.id.startsWith(R) && null != ee ? T(v({}, e), {
-        description: y.intl.formatToPlainString(y.t.IWkAq7, {
+        description: y.intl.formatToPlainString(y.t.IWkAq6, {
           date: ee
         })
       }) : e

@@ -76,7 +76,7 @@ function A() {
     onClick: e => e.stopPropagation(),
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
-      children: Chunk388032.intl.string(Chunk388032.t["2JbvKw"])
+      children: Chunk388032.intl.string(Chunk388032.t["2JbvKy"])
     }), (0, Chunk951288.jsx)(Chunk481060.iRW, {
       onValueChange: exports,
       className: Chunk937309.slider,
@@ -111,7 +111,7 @@ function C(e) {
         variant: "text-xs/medium",
         color: "always-white",
         className: y.infoNitroText,
-        children: b.intl.string(b.t["BMw+7I"])
+        children: b.intl.string(b.t["BMw+7O"])
       }), (0, r.jsx)(u.IGR, {
         text: "BETA",
         color: s.Z.BG_BRAND,
@@ -145,7 +145,7 @@ function N(e) {
         className: y.infoSoundInnerContainer,
         children: (0, r.jsx)(u.Text, {
           variant: "text-sm/normal",
-          children: b.intl.string(b.t.D6eYmf)
+          children: b.intl.string(b.t.D6eYmZ)
         })
       })]
     })]
@@ -218,7 +218,7 @@ function P(e) {
     children: [(0, r.jsx)(R, {
       setTooltipShowing: i,
       renderPopout: () => (0, r.jsx)(A, {}),
-      tooltipText: b.intl.string(b.t["19lt24"]),
+      tooltipText: b.intl.string(b.t["19lt29"]),
       position: "top",
       children: (0, r.jsx)(u.gj8, {
         size: "md",
@@ -231,7 +231,7 @@ function P(e) {
         sound: t,
         channel: n
       }, e)),
-      tooltipText: b.intl.string(b.t["KVbJU/"]),
+      tooltipText: b.intl.string(b.t.KVbJU1),
       position: "right",
       children: (0, r.jsx)(u.d3s, {
         size: "md",

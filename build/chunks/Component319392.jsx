@@ -31,18 +31,18 @@ function b() {
             src: Chunk726542.Z.get(Chunk981631.ABu.XBOX).icon.whiteSVG,
             alt: ""
           })
-        }), Chunk388032.intl.string(Chunk388032.t["12Kx2v"])]
+        }), Chunk388032.intl.string(Chunk388032.t["12Kx2t"])]
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         tag: "p",
         variant: "text-md/normal",
         color: "header-secondary",
-        children: Chunk388032.intl.string(Chunk388032.t.M5yEcb)
+        children: Chunk388032.intl.string(Chunk388032.t.M5yEcX)
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/medium",
         color: "header-secondary",
         children: (0, Chunk951288.jsx)(Chunk481060.Anchor, {
           href: Chunk63063.Z.getArticleURL(Chunk981631.BhN.XBOX_CONNECTION),
-          children: Chunk388032.intl.string(Chunk388032.t.hvVgAZ)
+          children: Chunk388032.intl.string(Chunk388032.t.hvVgAQ)
         })
       })]
     }), (0, Chunk951288.jsx)(Chunk198993.ZP, {
@@ -64,8 +64,8 @@ function g(e) {
       height: "160",
       alt: ""
     }),
-    title: u.intl.string(u.t["7QsHmh"]),
-    body: u.intl.string(u.t.byYNPX),
+    title: u.intl.string(u.t["7QsHmp"]),
+    body: u.intl.string(u.t.byYNPT),
     content: (0, o.jsx)(b, {}),
     onClose: t
   })

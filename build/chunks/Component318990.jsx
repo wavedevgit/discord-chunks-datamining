@@ -47,9 +47,9 @@ function _() {
       animateOnHover: true
     }),
     _ = e => null != e.globalName ? e.globalName : e.username,
-    p = Chunk647438.useMemo(() => module.length >= 2 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.c7ETJH, {
+    p = Chunk647438.useMemo(() => module.length >= 2 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.c7ETJC, {
       username: _(module[0])
-    }) : 1 === module.length ? Chunk388032.intl.formatToPlainString(Chunk388032.t.dpjXPL, {
+    }) : 1 === module.length ? Chunk388032.intl.formatToPlainString(Chunk388032.t.dpjXPD, {
       username: _(module[0])
     }) : "", [module]);
   return 0 === module.length ? null : (0, Chunk951288.jsxs)("div", {

@@ -25,29 +25,29 @@ let d = new Set(["awaiting_browser_checkout", "awaiting_browser_checkout_google_
 function _(e) {
   switch (e) {
     case "plan_select":
-      return l.intl.string(l.t["r+SebU"]);
+      return l.intl.string(l.t["r+SebW"]);
     case "payment_type":
     case "add_payment_steps":
-      return l.intl.string(l.t.Sb6wI1);
+      return l.intl.string(l.t.Sb6wIy);
     case "awaiting_purchase_token_auth":
     case "review":
-      return l.intl.string(l.t.QBnNHq);
+      return l.intl.string(l.t.QBnNHh);
     case "shop":
-      return l.intl.string(l.t.xj9ooX);
+      return l.intl.string(l.t.xj9ooa);
     case "payment_request_information":
-      return l.intl.string(l.t.DDPRXs);
+      return l.intl.string(l.t.DDPRXl);
     case "credit_card_information":
-      return l.intl.string(l.t.yMPCXL);
+      return l.intl.string(l.t.yMPCXF);
     case "address":
-      return l.intl.string(l.t["50Auo2"]);
+      return l.intl.string(l.t["50Auo6"]);
     case "paypal_information":
-      return l.intl.string(l.t.RVHDnH);
+      return l.intl.string(l.t.RVHDnJ);
     case "venmo_information":
-      return l.intl.string(l.t.bzQdwW);
+      return l.intl.string(l.t.bzQdwc);
     case "przelewy24_information":
-      return l.intl.string(l.t.BW0R4v);
+      return l.intl.string(l.t.BW0R4u);
     case "cash_app_information":
-      return l.intl.string(l.t.Gz1fyE);
+      return l.intl.string(l.t.Gz1fyM);
     case "gift_customization":
       return l.intl.string(l.t.R0vK0N)
   }

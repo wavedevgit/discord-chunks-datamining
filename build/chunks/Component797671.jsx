@@ -34,36 +34,36 @@ function y(e) {
     transitionState: T,
     onSubmit: N,
     onClose: B
-  } = e, [R, M] = r.useState(E.Sc2), [S, j] = r.useState(E.d4z.GUILD_TEXT), [D, k] = r.useState(""), [G, Z] = r.useState(false), A = (0, a.e7)([f.Z], () => f.Z.getGuild(y), [y]), H = (0, b.m)(y), O = (0, m.Ui)(A), U = r.useMemo(() => (function(e) {
+  } = e, [R, M] = r.useState(C.Sc2), [j, D] = r.useState(C.d4z.GUILD_TEXT), [S, k] = r.useState(""), [Z, G] = r.useState(false), A = (0, a.e7)([f.Z], () => f.Z.getGuild(y), [y]), H = (0, b.m)(y), O = (0, m.Ui)(A), U = r.useMemo(() => (function(e) {
     let {
       canCreateStageChannel: t,
       canCreateMediaChannel: n
     } = e, r = [{
       icon: d.VL1,
-      label: w.intl.string(w.t.pnuRXC),
-      value: E.d4z.GUILD_TEXT,
-      description: w.intl.string(w.t["Hf5Lb+"])
+      label: L.intl.string(L.t.pnuRXF),
+      value: C.d4z.GUILD_TEXT,
+      description: L.intl.string(L.t.Hf5Lb2)
     }, {
       icon: d.gj8,
-      label: w.intl.string(w.t.Sx55Oh),
-      value: E.d4z.GUILD_VOICE,
-      description: w.intl.string(w.t.pqfkoF)
+      label: L.intl.string(L.t.Sx55Oj),
+      value: C.d4z.GUILD_VOICE,
+      description: L.intl.string(L.t.pqfkoK)
     }];
     return t && r.push({
       icon: d.ewx,
-      label: w.intl.string(w.t.pNWst0),
-      value: E.d4z.GUILD_STAGE_VOICE,
-      description: w.intl.string(w.t.VPAwgo)
+      label: L.intl.string(L.t.pNWst7),
+      value: C.d4z.GUILD_STAGE_VOICE,
+      description: L.intl.string(L.t.VPAwgo)
     }), r.push({
       icon: d.Mmi,
-      label: w.intl.string(w.t.eAVID5),
-      value: E.d4z.GUILD_FORUM,
-      description: w.intl.string(w.t.iZ5pgg)
+      label: L.intl.string(L.t.eAVIDw),
+      value: C.d4z.GUILD_FORUM,
+      description: L.intl.string(L.t.iZ5pgo)
     }), n && r.push({
       icon: d.XBm,
-      label: w.intl.string(w.t["6x6fVg"]),
-      value: E.d4z.GUILD_MEDIA,
-      description: w.intl.string(w.t.JyCrwS),
+      label: L.intl.string(L.t["6x6fVl"]),
+      value: C.d4z.GUILD_MEDIA,
+      description: L.intl.string(L.t.JyCrwc),
       isBeta: true
     }), r.map(e => {
       let {
@@ -107,24 +107,24 @@ function y(e) {
       value: t.id,
       label: t.name
     }
-  }), [V]), F = null != (n = null == (t = U.find(e => e.value === S)) ? true : t.channelIcon) ? n : L.Vq, q = "" !== D;
+  }), [V]), F = null != (n = null == (t = U.find(e => e.value === j)) ? true : t.channelIcon) ? n : E.Vq, q = "" !== S;
   return (0, i.jsx)("form", {
     onSubmit: function(e) {
       if (e.preventDefault(), !q) return;
-      Z(true);
+      G(true);
       let t = {
-        type: S,
-        name: D,
+        type: j,
+        name: S,
         parent_id: "null" !== R ? R : true,
         permission_overwrites: [{
           id: y,
           type: u.BN.ROLE,
           allow: v.Hn,
-          deny: E.Plq.VIEW_CHANNEL
+          deny: C.Plq.VIEW_CHANNEL
         }]
       };
-      C.Z.post({
-        url: E.ANM.GUILD_CHANNELS(y),
+      w.Z.post({
+        url: C.ANM.GUILD_CHANNELS(y),
         body: t,
         oldFormErrors: true,
         trackedActionData: {
@@ -142,50 +142,50 @@ function y(e) {
       }).then(e => {
         p.Z.checkGuildTemplateDirty(y), N(e.body.id), B()
       }, e => {}).finally(() => {
-        Z(false)
+        G(false)
       })
     },
     children: (0, i.jsx)(o.Modal, {
       transitionState: T,
-      title: w.intl.string(w.t["fUYU+j"]),
+      title: L.intl.string(L.t["fUYU+v"]),
       onClose: B,
       actionBarInput: (0, i.jsx)(d.Avr, {
-        text: w.intl.string(w.t["13/7kX"]),
+        text: L.intl.string(L.t["13/7kZ"]),
         onClick: B
       }),
       actions: [{
         variant: "primary",
-        text: w.intl.string(w.t["R3BPH+"]),
-        loading: G,
+        text: L.intl.string(L.t.R3BPHx),
+        loading: Z,
         disabled: !q,
         type: "submit"
       }],
       children: (0, i.jsxs)(d.Kqy, {
         gap: 16,
         children: [(0, i.jsx)(d.q4e, {
-          label: w.intl.string(w.t.vHCZwr),
-          placeholder: w.intl.string(w.t["g/Rr2S"]),
+          label: L.intl.string(L.t.vHCZws),
+          placeholder: L.intl.string(L.t["g/Rr2d"]),
           value: R,
           options: W,
           onChange: e => M(e)
         }), (0, i.jsx)(c.Gu, {
-          label: w.intl.string(w.t["7ZcXG2"]),
+          label: L.intl.string(L.t["7ZcXGx"]),
           options: U,
-          value: S,
+          value: j,
           onChange: e => {
             let {
               value: t
             } = e;
-            return j(t)
+            return D(t)
           }
         }), (0, i.jsx)(d.oil, {
-          label: w.intl.string(w.t.PVbHDl),
-          value: D,
+          label: L.intl.string(L.t.PVbHDg),
+          value: S,
           onChange: function(e) {
-            (0, h.zi)(S) && (e = (0, x.Nj)(e)), k(e)
+            (0, h.zi)(j) && (e = (0, x.Nj)(e)), k(e)
           },
-          maxLength: E.HN8,
-          placeholder: w.intl.string(w.t["bw/b8E"]),
+          maxLength: C.HN8,
+          placeholder: L.intl.string(L.t["bw/b8P"]),
           leading: F,
           autoFocus: true
         })]

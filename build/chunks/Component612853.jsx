@@ -27,7 +27,7 @@ function u(e) {
     }), (0, r.jsx)(o.Text, {
       variant: "text-sm/medium",
       className: a()(l.lockIconText, null != n ? n : true),
-      children: s.intl.string(s.t.Kv6Z4I)
+      children: s.intl.string(s.t.Kv6Z4O)
     })]
   })
 }

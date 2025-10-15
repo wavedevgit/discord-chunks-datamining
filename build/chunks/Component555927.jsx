@@ -87,7 +87,7 @@ function p(e) {
   return g > 0 && h.push((0, r.jsx)(l.sNh, {
     id: "unknown-members-".concat(null == a ? true : a.session_id),
     render: e => (0, r.jsx)(s.Y, d(u({}, e), {
-      label: c.intl.formatToPlainString(c.t["6Kqn9M"], {
+      label: c.intl.formatToPlainString(c.t["6Kqn9P"], {
         count: g
       })
     }))
@@ -119,7 +119,7 @@ function f(e) {
   if (o.length <= 1 && 0 === h.length) {
     var g, m;
     return (0, r.jsx)(l.kSQ, {
-      label: n.length > 1 ? c.intl.formatToPlainString(c.t.C4WXvc, {
+      label: n.length > 1 ? c.intl.formatToPlainString(c.t.C4WXvb, {
         memberCount: n.length
       }) : true,
       children: p({
@@ -157,7 +157,7 @@ function f(e) {
     }),
     _ = h.map(e => e.id);
   return [...b, (0, r.jsx)(l.kSQ, {
-    label: "".concat(c.intl.string(c.t["mIx+gG"]), " - ").concat(h.length),
+    label: "".concat(c.intl.string(c.t["mIx+gI"]), " - ").concat(h.length),
     children: p({
       priorityMembers: t.filter(e => {
         let {

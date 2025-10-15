@@ -1,0 +1,3 @@
+/** Chunk was on 86677 **/
+/** chunk id: 393378, original params: i (module,exports,require) **/
+module.exports = JSON.parse('{"Z1NZwc":"Silindi","+a5G2t":"Mevcut Değil","Ys/RrK":"\xc7evrim dışı","60kAzs":"\xc7evrim i\xe7i","aCyHe3":"Mevcut Değil","k+RTIi":"Konum","nB5OZ2":"Konum","rOMEZW":"İsim","K+zMYm":"Plan","k0Y0BA":"Bir g\xf6z at","P2ihv7":"Arkadaşlarını Davet Et","yIH2oK":"Planı Y\xf6net","feUiMz":"Ayarlar","n+ZX7+":"Sunucu Durumu"}')

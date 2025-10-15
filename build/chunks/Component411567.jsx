@@ -19,7 +19,7 @@ function d(e) {
     return 0 === t.length || t.every(e => c.Z.isCollapsed(e.id))
   }) ? null : (0, r.jsx)(l.sNh, {
     id: "collapse-all-categories",
-    label: u.intl.string(u.t["9dqzUr"]),
+    label: u.intl.string(u.t["9dqzUl"]),
     action: () => (0, o.N5)(e.guild_id)
   })
 }

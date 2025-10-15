@@ -623,7 +623,7 @@ class es extends(r = Chunk647438.PureComponent) {
       isVisible: o = true,
       image: l,
       isGalleryImage: c = false,
-      alt: u = Chunk388032.intl.string(Chunk388032.t.X4IxWL),
+      alt: u = Chunk388032.intl.string(Chunk388032.t.X4IxWF),
       allImages: d = null
     } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, {
       renderImageComponent: f,

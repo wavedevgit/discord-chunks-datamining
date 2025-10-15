@@ -26,8 +26,8 @@ function m(e) {
     hasMemberSearch: l,
     headerText: m,
     onClose: k,
-    overwrittenKeys: C,
-    search: j,
+    overwrittenKeys: j,
+    search: C,
     searchPlaceholderText: v,
     selectedPermissionCount: E,
     transitionState: w
@@ -37,10 +37,10 @@ function m(e) {
     query: T,
     results: P,
     setQuery: S
-  } = j(n), [Z, _] = r.useState({}), q = r.useMemo(() => Object.keys(Z).length, [Z]), I = q + E >= g._n, N = r.useMemo(() => P.filter(e => {
+  } = C(n), [Z, _] = r.useState({}), q = r.useMemo(() => Object.keys(Z).length, [Z]), I = q + E >= g._n, N = r.useMemo(() => P.filter(e => {
     let t = (0, p.rE)(e.id, e.type);
-    return !C.includes(t)
-  }), [C, P]), D = r.useCallback((e, t) => {
+    return !j.includes(t)
+  }), [j, P]), D = r.useCallback((e, t) => {
     _(n => {
       let i = (0, p.rE)(e, t),
         r = function(e) {
@@ -100,10 +100,10 @@ function m(e) {
   return r.useEffect(() => {
     d.Z.requestMembers(n, true, 200, false)
   }, [n]), (0, i.jsx)(a.Modal, {
-    "aria-label": h.intl.string(h.t["N+InBa"]),
+    "aria-label": h.intl.string(h.t["N+InBQ"]),
     transitionState: w,
     title: m,
-    subtitle: I ? h.intl.string(h.t["XTwtW/"]) : true,
+    subtitle: I ? h.intl.string(h.t.XTwtW1) : true,
     onClose: k,
     input: (0, i.jsx)(c.E1j, {
       query: T,
@@ -113,11 +113,11 @@ function m(e) {
       onClear: () => S("")
     }),
     actions: [{
-      text: h.intl.string(h.t["ETE/oC"]),
+      text: h.intl.string(h.t["ETE/oK"]),
       onClick: k,
       variant: "secondary"
     }, {
-      text: h.intl.string(h.t.OYkgVk),
+      text: h.intl.string(h.t.OYkgVl),
       onClick: H,
       variant: "primary",
       disabled: 0 === q

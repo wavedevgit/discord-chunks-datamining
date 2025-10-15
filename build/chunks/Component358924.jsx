@@ -117,12 +117,12 @@ let ea = [14, 14, 12, 12, 10, 8, 6],
         location_stack: n
       }
     }), (0, i.jsx)(p.u, {
-      text: ei.intl.string(ei.t.JVwWva),
+      text: ei.intl.string(ei.t.JVwWvb),
       children: (0, i.jsx)(f.Button, {
         size: "sm",
         variant: "primary",
         icon: f.v3n,
-        text: ei.intl.string(ei.t.YsIsPU),
+        text: ei.intl.string(ei.t.YsIsPT),
         onClick: t
       })
     })
@@ -204,7 +204,7 @@ let ea = [14, 14, 12, 12, 10, 8, 6],
             color: w.Z.BG_BRAND
           }), (0, i.jsx)(f.Text, {
             variant: "text-xs/medium",
-            children: ei.intl.formatToPlainString(ei.t.RmiYF3, {
+            children: ei.intl.formatToPlainString(ei.t.RmiYFx, {
               gameName: a
             })
           })]
@@ -447,7 +447,7 @@ eO.Header = e_, eO.Body = e => {
         src: t,
         className: el.gameSectionIcon
       }) : null, (0, i.jsxs)("div", {
-        children: [eo(n), es(ei.intl.formatToPlainString(ei.t.C4WXvc, {
+        children: [eo(n), es(ei.intl.formatToPlainString(ei.t.C4WXvb, {
           memberCount: r.totalSize
         }))]
       }), (0, i.jsx)(en.Z, {
@@ -545,7 +545,7 @@ eO.Header = e_, eO.Body = e => {
         className: el.xboxSectionIcon
       }), (0, i.jsxs)("div", {
         className: el.__invalid_xboxSectionDetails,
-        children: [eo(t), es(ei.intl.string(ei.t["JG9r+9"]))]
+        children: [eo(t), es(ei.intl.string(ei.t["JG9r+/"]))]
       })]
     })
   })
@@ -649,7 +649,7 @@ eO.Header = e_, eO.Body = e => {
     applicationStream: a,
     onPreviewClick: o,
     guildId: s
-  } = e, u = (0, c.e7)([q.Z], () => q.Z.getChannel(a.channelId)), [d, p] = (0, U.wq)(u), h = (0, i.jsxs)(f.P3F, {
+  } = e, u = (0, c.e7)([K.Z], () => K.Z.getChannel(a.channelId)), [d, p] = (0, U.wq)(u), h = (0, i.jsxs)(f.P3F, {
     onClick: d ? o : true,
     className: el.applicationStreamingPreviewWrapper,
     children: [(0, i.jsx)(G.Z, {
@@ -661,7 +661,7 @@ eO.Header = e_, eO.Body = e => {
       color: "always-white",
       children: (0, U.P9)(p)
     })]
-  }), g = null != (n = null == (t = (0, C.Z)(r, a)) ? true : t.activityText) ? n : ei.intl.string(ei.t.eXan7B);
+  }), g = null != (n = null == (t = (0, C.Z)(r, a)) ? true : t.activityText) ? n : ei.intl.string(ei.t.eXan7O);
   return (0, i.jsxs)(eu, {
     children: [(0, i.jsxs)("div", {
       className: el.applicationStreamingSection,
@@ -690,7 +690,7 @@ eO.Header = e_, eO.Body = e => {
       return s(t)
     })
   }, [u]);
-  let d = (0, c.Wu)([Q.default, K.default], () => Array.from(a).map(e => K.default.getId() === e ? null : Q.default.getUser(e)).filter(ee.lm)),
+  let d = (0, c.Wu)([Q.default, q.default], () => Array.from(a).map(e => q.default.getId() === e ? null : Q.default.getUser(e)).filter(ee.lm)),
     p = (0, m.O)(),
     {
       analyticsLocations: h
@@ -742,7 +742,7 @@ eO.Header = e_, eO.Body = e => {
           children: (0, i.jsx)(f.Button, {
             variant: "primary",
             size: "sm",
-            text: ei.intl.string(ei.t.VJlc0S),
+            text: ei.intl.string(ei.t.VJlc0d),
             onClick: e => {
               e.stopPropagation(), (0, _.Z)({
                 applicationId: u,

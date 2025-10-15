@@ -106,7 +106,7 @@ class Z extends(n = Chunk647438.PureComponent) {
           alpha2: exports.alpha2,
           countryCode: exports.code.split(" ")[0],
           className: Chunk197571.marginBottom20,
-          label: Chunk388032.intl.string(Chunk388032.t.tUjnxr),
+          label: Chunk388032.intl.string(Chunk388032.t.tUjnxs),
           error: null != (t = this.renderError("login")) ? module : this.renderError("email"),
           onChange: (t, e) => this.setState({
             login: t,
@@ -121,7 +121,7 @@ class Z extends(n = Chunk647438.PureComponent) {
           autoFocus: !n,
           required: true
         }), (0, Chunk951288.jsx)(Chunk388905.II, {
-          label: Chunk388032.intl.string(Chunk388032.t["CIGa+7"]),
+          label: Chunk388032.intl.string(Chunk388032.t["CIGa+/"]),
           error: this.renderError("password"),
           onChange: t => this.setState({
             password: t
@@ -140,7 +140,7 @@ class Z extends(n = Chunk647438.PureComponent) {
             onClick: this.handleForgotPassword,
             look: Chunk755721.zx.Looks.LINK,
             color: Chunk755721.zx.Colors.LINK,
-            children: Chunk388032.intl.string(Chunk388032.t.wWIufs)
+            children: Chunk388032.intl.string(Chunk388032.t.wWIufn)
           }), (0, Chunk951288.jsx)(Chunk388905.zx, {
             onClick: () => (function(t) {
               let e = E.isPlatformEmbedded && v.ZP.supportsFeature(I.eRX.WEBAUTHN) ? v.ZP.webAuthnAuthenticate : t => {
@@ -155,7 +155,7 @@ class Z extends(n = Chunk647438.PureComponent) {
             look: Chunk755721.zx.Looks.LINK,
             color: Chunk755721.zx.Colors.LINK,
             disabled: require,
-            children: Chunk388032.intl.string(Chunk388032.t["/kpMDt"])
+            children: Chunk388032.intl.string(Chunk388032.t["/kpMDg"])
           })]
         })]
       })
@@ -168,8 +168,8 @@ class Z extends(n = Chunk647438.PureComponent) {
     } = this.props;
     return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk793030.xBx, {
-        title: Chunk388032.intl.string(Chunk388032.t.bPP34Q),
-        subtitle: Chunk388032.intl.string(Chunk388032.t.rvx0T4)
+        title: Chunk388032.intl.string(Chunk388032.t.bPP34e),
+        subtitle: Chunk388032.intl.string(Chunk388032.t.rvx0T0)
       }), (0, Chunk951288.jsx)(Chunk793030.fef, {
         children: this.renderDefaultForm()
       }), (0, Chunk951288.jsx)(Chunk793030.Go$, {
@@ -177,12 +177,12 @@ class Z extends(n = Chunk647438.PureComponent) {
           variant: "secondary",
           size: "md",
           onClick: exports,
-          text: Chunk388032.intl.string(Chunk388032.t["13/7kX"]),
+          text: Chunk388032.intl.string(Chunk388032.t["13/7kZ"]),
           type: "button"
         }),
         actions: [{
           variant: "primary",
-          text: Chunk388032.intl.string(Chunk388032.t["3PatSz"]),
+          text: Chunk388032.intl.string(Chunk388032.t["3PatS0"]),
           onClick: this.handleLogin,
           loading: module === Chunk981631.u34.LOGGING_IN
         }]
@@ -206,8 +206,8 @@ class Z extends(n = Chunk647438.PureComponent) {
   }
   renderDisabledAccount() {
     let t = this.props.loginStatus === Chunk981631.u34.ACCOUNT_DISABLED,
-      e = module ? Chunk388032.intl.string(Chunk388032.t["j3rC+U"]) : Chunk388032.intl.string(Chunk388032.t.ZFWofo),
-      r = module ? Chunk388032.intl.string(Chunk388032.t["6eNTWe"]) : Chunk388032.intl.string(Chunk388032.t["pCBti+"]);
+      e = module ? Chunk388032.intl.string(Chunk388032.t["j3rC+f"]) : Chunk388032.intl.string(Chunk388032.t.ZFWofn),
+      r = module ? Chunk388032.intl.string(Chunk388032.t["6eNTWV"]) : Chunk388032.intl.string(Chunk388032.t.pCBti4);
     return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk793030.xBx, {
         title: exports,
@@ -216,13 +216,13 @@ class Z extends(n = Chunk647438.PureComponent) {
         leading: (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
           color: "text-secondary",
-          children: Chunk388032.intl.format(Chunk388032.t.js2rr5, {
+          children: Chunk388032.intl.format(Chunk388032.t.js2rr6, {
             onClick: this.handleCancelAccountDeletion
           })
         }),
         actions: [{
           variant: "primary",
-          text: Chunk388032.intl.string(Chunk388032.t.JhDw5o),
+          text: Chunk388032.intl.string(Chunk388032.t.JhDw5u),
           onClick: this.handleReset
         }]
       })]
@@ -249,7 +249,7 @@ class Z extends(n = Chunk647438.PureComponent) {
     return (0, Chunk951288.jsx)(Chunk793030.fef, {
       children: (0, Chunk951288.jsx)(Chunk379760.Z, {
         title: Chunk388032.intl.string(Chunk388032.t["+xqy3d"]),
-        subtitle: Chunk388032.intl.format(Chunk388032.t.ef4uZ7, {
+        subtitle: Chunk388032.intl.format(Chunk388032.t.ef4uZ2, {
           onResendClick: this.handleResendCode
         }),
         error: module,
@@ -322,13 +322,13 @@ class Z extends(n = Chunk647438.PureComponent) {
       try {
         if (R.S.dispatch(I.CkL.WAVE_EMPHASIZE), !await f.Z.forgotPassword(r)) return;
         (0, p.h7j)(t => (0, o.jsx)(p.ConfirmModal, M(D({
-          header: T.intl.string(T.t.f5Pi7A),
-          confirmText: T.intl.string(T.t.BddRzS),
+          header: T.intl.string(T.t.f5Pi7O),
+          confirmText: T.intl.string(T.t.BddRzc),
           confirmButtonColor: h.zx.Colors.BRAND
         }, t), {
           children: (0, o.jsx)(p.Text, {
             variant: "text-md/normal",
-            children: T.intl.format(T.t["6u5hQ9"], {
+            children: T.intl.format(T.t["6u5hQ0"], {
               email: r
             })
           })

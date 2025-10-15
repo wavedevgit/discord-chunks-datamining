@@ -80,7 +80,7 @@ function h(e) {
       className: l.seeMore,
       variant: "text-sm/medium",
       color: "text-brand",
-      children: [d ? s.intl.string(s.t["JQX/Pb"]) : s.intl.string(s.t.Fbrd8J), d ? (0, r.jsx)(o.u04, {
+      children: [d ? s.intl.string(s.t["JQX/PT"]) : s.intl.string(s.t.Fbrd8P), d ? (0, r.jsx)(o.u04, {
         color: a.Z.colors.TEXT_BRAND,
         size: "xs"
       }) : (0, r.jsx)(o.CJ0, {

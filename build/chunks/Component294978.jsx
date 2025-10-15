@@ -14,11 +14,11 @@ var Chunk392711 = require("./392711.js"),
   Chunk388032 = require("./388032.jsx");
 
 function u(e) {
-  let t = (0, s.Xb)(e),
+  let t = (0, d.Xb)(e),
     r = (0, l.e7)([c.Z], () => !a().isEmpty(c.Z.getThreadsForGuild(e.id)));
   return t && r ? (0, i.jsx)(o.sNh, {
     id: "active-threads",
-    label: d.intl.string(d.t.TM6err),
+    label: s.intl.string(s.t.TM6erq),
     icon: o.kBi,
     action: () => {
       (0, o.ZDy)(async () => {

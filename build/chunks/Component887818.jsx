@@ -35,7 +35,7 @@ d.Toggle = function(e) {
   } = e, {
     isOpen: a,
     toggleOpen: d
-  } = i.useContext(u), f = a ? s.u04 : s.CJ0, _ = null != n ? n : a ? l.intl.string(l.t.fgq1gs) : l.intl.string(l.t.XJuakA);
+  } = i.useContext(u), f = a ? s.u04 : s.CJ0, _ = null != n ? n : a ? l.intl.string(l.t.fgq1go) : l.intl.string(l.t.XJuakJ);
   return (0, r.jsxs)(s.P3F, {
     className: o()(c.toggle, t),
     onClick: d,

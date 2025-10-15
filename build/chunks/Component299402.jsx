@@ -28,12 +28,12 @@ function O(e) {
     onClose: O,
     onSlideChange: S,
     hasJoinButton: E
-  } = e, [b, C] = o.useState(n), h = (0, c.Z)(b), [g, x] = o.useState(null), [w, L] = o.useState(null), [v, y] = o.useState(null), [D, j] = o.useState(false);
+  } = e, [b, C] = o.useState(n), g = (0, c.Z)(b), [h, x] = o.useState(null), [w, L] = o.useState(null), [v, y] = o.useState(null), [D, j] = o.useState(false);
   o.useEffect(() => {
     C(n)
   }, [C, n]), o.useEffect(() => {
-    b !== h && S(b)
-  }, [S, b, h]);
+    b !== g && S(b)
+  }, [S, b, g]);
   let A = o.useCallback(e => {
       C(I._m.CREATION_INTENT), L(e), u.default.track(N.rMx.GUILD_TEMPLATE_SELECTED, {
         template_name: e.id,
@@ -97,7 +97,7 @@ function O(e) {
               onGuildCreated: M,
               onClose: O,
               onBack: P,
-              isSlideReady: g === I._m.CUSTOMIZE_GUILD,
+              isSlideReady: h === I._m.CUSTOMIZE_GUILD,
               isCommunity: D
             })
           }), (0, r.jsx)(s.Mi4, {
@@ -108,7 +108,7 @@ function O(e) {
               createdGuildId: v,
               onClose: O,
               onChannelPromptCompleted: k,
-              isSlideReady: g === I._m.CHANNEL_PROMPT
+              isSlideReady: h === I._m.CHANNEL_PROMPT
             })
           }), (0, r.jsx)(s.Mi4, {
             id: I._m.JOIN_GUILD,
@@ -117,7 +117,7 @@ function O(e) {
             children: (0, r.jsx)(f.Z, {
               onBack: P,
               onClose: O,
-              isSlideReady: g === I._m.JOIN_GUILD
+              isSlideReady: h === I._m.JOIN_GUILD
             })
           })]
         })

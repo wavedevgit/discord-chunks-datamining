@@ -26,15 +26,15 @@ function h(e) {
     member: t
   } = e, n = (0, a.e7)([A.Z], () => A.Z.getGuild(t.guildId)), i = (0, a.e7)([_.Z], () => _.Z.getSortedRoles(t.guildId)), h = l.useMemo(() => i.filter(e => e.id !== t.highestRoleId && t.roles.includes(e.id)), [t.roles, t.highestRoleId, i]), O = (0, a.e7)([c.Z], () => c.Z.getEnhancedMember(t.guildId, t.userId), [t.guildId, t.userId]), f = (0, E.zq)(O), R = (0, E.vN)(t), S = (0, a.e7)([T.Z], () => T.Z.can(m.Plq.MANAGE_ROLES, n), [n]);
   return null == n ? null : (0, r.jsx)(u.gNt, {
-    label: g.intl.string(g.t["LPJmL/"]),
+    label: g.intl.string(g.t.LPJmLy),
     children: (0, r.jsx)(I.WM, {
       children: (0, r.jsx)(I._2, {
         description: t.roles.length > 0 || S ? (0, r.jsxs)("div", {
           className: N.roleContainer,
           children: [(0, r.jsx)(o.u, {
             asContainer: true,
-            "aria-label": g.intl.string(g.t["0g8Xd/"]),
-            text: g.intl.string(g.t["93S+lG"]),
+            "aria-label": g.intl.string(g.t["0g8Xd3"]),
+            text: g.intl.string(g.t["93S+lJ"]),
             children: (0, r.jsx)(u.P3F, {
               children: (0, r.jsx)(d.Z, {
                 className: s()(N.roleTooltipItem, N.highestRole),
@@ -48,8 +48,8 @@ function h(e) {
             guildId: t.guildId
           }, e.id)), S && (0, r.jsx)(o.u, {
             asContainer: true,
-            "aria-label": g.intl.string(g.t.ljnBlo),
-            text: g.intl.string(g.t.ljnBlo),
+            "aria-label": g.intl.string(g.t.ljnBlp),
+            text: g.intl.string(g.t.ljnBlp),
             children: (0, r.jsx)(u.P3F, {
               onClick: R,
               className: N.addRoleContainer,
@@ -66,7 +66,7 @@ function h(e) {
           className: N.noRoles,
           children: (0, r.jsx)(u.Text, {
             variant: "text-sm/normal",
-            children: g.intl.string(g.t.nZfHsf)
+            children: g.intl.string(g.t.nZfHsb)
           })
         })
       })

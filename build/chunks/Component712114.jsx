@@ -37,14 +37,14 @@ function h(e) {
       className: p.header,
       color: "header-primary",
       variant: "heading-md/extrabold",
-      children: d.intl.format(d.t["+qxkzC"], {
+      children: d.intl.format(d.t["+qxkzM"], {
         count: n.newClipIds.length
       })
     }), (0, i.jsx)(a.Text, {
       color: "text-default",
       className: p.__invalid_content,
       variant: "text-sm/medium",
-      children: d.intl.format(d.t["7XX0/X"], {
+      children: d.intl.format(d.t["7XX0/f"], {
         applicationName: n.applicationName
       })
     }), (0, i.jsx)("div", {
@@ -58,7 +58,7 @@ function h(e) {
           }
         }), (0, i.jsx)(a.Button, {
           variant: "primary",
-          text: d.intl.string(d.t.md4qKz),
+          text: d.intl.string(d.t.md4qKy),
           onClick: t
         })]
       })

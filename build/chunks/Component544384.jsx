@@ -63,7 +63,7 @@ function E(e) {
       navId: "manage-streams",
       onClose: p,
       onInteraction: O,
-      "aria-label": null != v ? m.intl.string(m.t.S5anIc) : m.intl.string(m.t.fjBNo1),
+      "aria-label": null != v ? m.intl.string(m.t.S5anIS) : m.intl.string(m.t.fjBNo6),
       children: [(0, r.jsx)(o.kSQ, {
         children: I.map(e => {
           let {
@@ -82,7 +82,7 @@ function E(e) {
       }), l ? null : S, l ? null : (0, r.jsx)(o.kSQ, {
         children: (0, r.jsx)(o.sNh, {
           id: "more-options",
-          label: m.intl.string(m.t.PdRCRg),
+          label: m.intl.string(m.t.PdRCRk),
           children: T
         })
       })]

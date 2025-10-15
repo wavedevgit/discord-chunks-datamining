@@ -189,7 +189,7 @@ function Z(e) {
     onClose: () => {
       i()
     },
-    "aria-label": y.intl.string(y.t["u/7Rdc"]),
+    "aria-label": y.intl.string(y.t["u/7RdX"]),
     onSelect: v.dG4,
     children: D ? (0, r.jsxs)(C.kSQ, {
       children: [(0, r.jsx)(C.sNh, {
@@ -228,11 +228,11 @@ function Z(e) {
           query: null != L ? L : "",
           onChange: k,
           ref: t,
-          placeholder: y.intl.string(y.t.YwJnGz)
+          placeholder: y.intl.string(y.t.YwJnGx)
         }))
       }, "invite-code-filter-search"), (0, r.jsx)(C.Clw, {}), (0, r.jsx)(C.k5B, {
         id: "join-source-type-option-all",
-        label: y.intl.string(y.t.an9Ry3),
+        label: y.intl.string(y.t.an9Ry8),
         checked: null == L && null == I,
         disabled: false,
         action: () => T(null),

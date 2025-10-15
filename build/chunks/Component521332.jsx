@@ -31,7 +31,7 @@ function b(e) {
   }), (0, r.jsx)(c.JZ, {
     title: t,
     description: n,
-    buttonText: s ? f.intl.string(f.t["h+WsPb"]) : f.intl.string(f.t.A8t4Nf),
+    buttonText: s ? f.intl.string(f.t["h+WsPT"]) : f.intl.string(f.t.A8t4NT),
     buttonDisabled: s,
     onButtonPress: () => {
       l(), d(true), a(p.M4.SETTINGS_UPSELLS_APPLY_CLICKED)
@@ -53,7 +53,7 @@ function x(e) {
     children: [(0, r.jsx)(a.Heading, {
       variant: "text-sm/semibold",
       className: h.header,
-      children: f.intl.string(f.t["1yxTIJ"])
+      children: f.intl.string(f.t["1yxTIC"])
     }), (0, r.jsx)("div", {
       className: h.upsellsContainer,
       children: j.map((e, n) => {

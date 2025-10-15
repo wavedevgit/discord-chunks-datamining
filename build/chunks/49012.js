@@ -52,8 +52,8 @@ function R(e, t) {
     x = i().sanitizeUrl(e.href);
   if (null == x) {
     null != t && t.preventDefault(), a.Z.show({
-      title: C.intl.string(C.t.x87gan),
-      body: C.intl.format(C.t["9rqRwl"], {
+      title: C.intl.string(C.t.x87gam),
+      body: C.intl.format(C.t["9rqRws"], {
         url: e.href
       }),
       isDismissable: true,

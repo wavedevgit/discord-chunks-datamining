@@ -41,7 +41,7 @@ class _ extends(r = Chunk647438.PureComponent) {
         tag: "div",
         color: "text-feedback-positive",
         className: Chunk574657.pro,
-        children: [Chunk388032.intl.string(Chunk388032.t["8tvIiN"]), ":"]
+        children: [Chunk388032.intl.string(Chunk388032.t["8tvIiI"]), ":"]
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         className: s()(Chunk574657.tip, require),
         variant: "text-sm/normal",

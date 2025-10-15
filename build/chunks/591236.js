@@ -53,8 +53,8 @@ let _ = {
       autocompletes: t,
       onHover: a,
       onClick: s,
-      titleWithQuery: d.t.o1Nmpc,
-      titleWithoutQuery: d.intl.string(d.t.sMOuuS),
+      titleWithQuery: d.t.o1Nmpa,
+      titleWithoutQuery: d.intl.string(d.t.sMOuub),
       Component: r.ZP.Emoji,
       getProps: e => ({
         emoji: e,

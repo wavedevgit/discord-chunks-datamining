@@ -153,8 +153,8 @@ function j(e) {
     })
   }, [a]);
   return (0, r.jsx)(l.gNt, {
-    label: g.intl.string(g.t.S6JNrh),
-    description: g.intl.string(g.t.l7Ig5Z),
+    label: g.intl.string(g.t.S6JNrq),
+    description: g.intl.string(g.t.l7Ig5e),
     children: (0, r.jsx)("div", {
       className: m.grid,
       children: x.map(e => {

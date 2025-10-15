@@ -26,18 +26,18 @@ function d() {
   return (0, Chunk951288.jsxs)(Chunk921801.F, {
     setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_ATTENUATION,
     children: [(0, Chunk951288.jsx)(Chunk481060.iRW, {
-      label: Chunk388032.intl.string(Chunk388032.t.oSdBvW),
-      description: Chunk388032.intl.string(Chunk388032.t["0A/8Rt"]),
+      label: Chunk388032.intl.string(Chunk388032.t.oSdBvb),
+      description: Chunk388032.intl.string(Chunk388032.t["0A/8Rk"]),
       initialValue: module,
       onValueChange: e => {
         o.Z.setAttenuation(e, t, n)
       }
     }), (0, Chunk951288.jsx)(Chunk481060.rsf, {
-      label: Chunk388032.intl.string(Chunk388032.t["9dHxRY"]),
+      label: Chunk388032.intl.string(Chunk388032.t["9dHxRU"]),
       checked: exports,
       onChange: t => o.Z.setAttenuation(e, t, n)
     }), (0, Chunk951288.jsx)(Chunk481060.rsf, {
-      label: Chunk388032.intl.string(Chunk388032.t.SMt0Gr),
+      label: Chunk388032.intl.string(Chunk388032.t.SMt0Gh),
       checked: require,
       onChange: n => o.Z.setAttenuation(e, t, n)
     })]

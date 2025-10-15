@@ -77,8 +77,8 @@ let v = {
         autocompletes: t,
         onHover: a,
         onClick: o,
-        titleWithQuery: E.t.uferGG,
-        titleWithoutQuery: E.intl.string(E.t["fT+Yjp"]),
+        titleWithQuery: E.t.uferGB,
+        titleWithoutQuery: E.intl.string(E.t["fT+Yjo"]),
         Component: l.ZP.Sticker,
         getProps: e => {
           let {

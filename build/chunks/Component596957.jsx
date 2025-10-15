@@ -172,31 +172,31 @@ let L = function(e) {
       }
     }, [V, A]),
     Y = i.useMemo(() => V.filter(e => e.type === S.OGo.PENDING_INCOMING).length, [V]),
-    K = A === S.pJs.PENDING && Y > 0 && Y >= C.yf,
-    q = i.useCallback(e => {
+    q = A === S.pJs.PENDING && Y > 0 && Y >= C.yf,
+    K = i.useCallback(e => {
       e.stopPropagation(), s.Z.confirmClearPendingRelationships(Y)
     }, [Y]),
     Q = i.useCallback(e => {
       let n = function(e, t, n) {
         switch (e) {
           case S.pJs.ONLINE:
-            return T.intl.formatToPlainString(T.t.BagU2U, {
+            return T.intl.formatToPlainString(T.t.BagU2d, {
               online: t.toString()
             });
           case S.pJs.PENDING:
-            if (0 === n) return T.intl.formatToPlainString(T.t["g+3FIa"], {
+            if (0 === n) return T.intl.formatToPlainString(T.t["g+3FIS"], {
               count: t.toString()
             });
-            if (1 === n) return T.intl.formatToPlainString(T.t.npJsRl, {
+            if (1 === n) return T.intl.formatToPlainString(T.t.npJsRk, {
               count: t.toString()
             });
             throw Error("Unexpected pending friend requests section index: ".concat(n));
           case S.pJs.SUGGESTIONS:
-            return T.intl.formatToPlainString(T.t["DYMZ/p"], {
+            return T.intl.formatToPlainString(T.t["DYMZ/v"], {
               count: t.toString()
             });
           default:
-            return T.intl.formatToPlainString(T.t.rHRrhC, {
+            return T.intl.formatToPlainString(T.t.rHRrhI, {
               count: t.toString()
             })
         }
@@ -206,12 +206,12 @@ let L = function(e) {
         children: [(0, r.jsx)(y.Z, {
           id: t,
           title: n
-        }), K && (0, r.jsx)("div", {
+        }), q && (0, r.jsx)("div", {
           className: N.clearButton,
           children: (0, r.jsx)(a.Avr, {
-            text: T.intl.string(T.t.O8k7O4),
-            onClick: q,
-            "aria-label": T.intl.string(T.t.O8k7O4),
+            text: T.intl.string(T.t.O8k7Oz),
+            onClick: K,
+            "aria-label": T.intl.string(T.t.O8k7Oz),
             textVariant: "text-sm/medium"
           })
         })]
@@ -222,7 +222,7 @@ let L = function(e) {
           title: n
         })
       }, n)
-    }, [W, A, t, K, q]);
+    }, [W, A, t, q, K]);
   if (i.useEffect(() => {
       A === S.pJs.ALL && (0, f.d$)()
     }, [A]), 0 === V.length && "" === k[A]) return (0, r.jsx)(w, {
@@ -252,7 +252,7 @@ let L = function(e) {
         footer: H && !J ? (0, r.jsx)("div", {
           className: N.viewSpamButton,
           children: (0, r.jsx)(a.Avr, {
-            text: T.intl.string(T.t.R40bU2),
+            text: T.intl.string(T.t.R40bU1),
             onClick: Z,
             textVariant: "text-xs/medium",
             variant: "secondary"

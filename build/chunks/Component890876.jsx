@@ -21,7 +21,7 @@ function l(e) {
     className: s.footer,
     children: (0, r.jsx)(i.O1, {
       variant: "primary",
-      text: o.intl.string(o.t.hZkfwY),
+      text: o.intl.string(o.t.hZkfwc),
       onClick: () => {},
       fullWidth: true
     })

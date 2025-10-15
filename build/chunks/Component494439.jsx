@@ -17,7 +17,7 @@ function u(e) {
   } = e, u = (0, i.Aq)();
   return (0, l.jsx)(r.sNh, {
     id: "user-profile-overlay",
-    label: null != t ? t : a.intl.string(a.t.LYju5J),
+    label: null != t ? t : a.intl.string(a.t.LYju5O),
     action: () => {
       null == n || n(), u.dispatch(o.CkL.POPOUT_CLOSE)
     }

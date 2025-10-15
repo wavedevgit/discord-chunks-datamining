@@ -28,11 +28,11 @@ function d(e, t, n) {
     return t && (e.hasLoadedAnything && e.sortOrder === s.As.ReallyOldChannel ? l.push((0, r.jsx)(o.Z, {
       className: u.divider,
       contentClassName: u.dividerContent,
-      children: c.intl.string(c.t.roBMzj)
+      children: c.intl.string(c.t.roBMzs)
     }, "old-divider")) : e.hasLoadedAnything && e.sortOrder === s.As.NoNotifications && l.push((0, r.jsx)(o.Z, {
       className: u.divider,
       contentClassName: u.dividerContent,
-      children: c.intl.string(c.t["2Ys7nu"])
+      children: c.intl.string(c.t["2Ys7np"])
     }, "disabled-divider"))), l.push((0, r.jsx)(a.Z, {
       channel: e,
       markChannelRead: i,

@@ -13,7 +13,7 @@ var Chunk481060 = require("./481060.js"),
 function o(e, t) {
   return s.isPlatformEmbedded && (null == e ? true : e.length) !== 0 ? (0, i.jsx)(l.sNh, {
     id: "copy",
-    label: a.intl.string(a.t.OpuAlK),
+    label: a.intl.string(a.t.OpuAlJ),
     hint: (0, s.isMac)() ? "⌘C" : "Ctrl+C",
     action: () => {
       r.ZP.copy(e), null == t || t.focus()

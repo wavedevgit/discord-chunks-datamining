@@ -33,7 +33,7 @@ let y = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
     } = e;
     return (0, i.jsx)(d.Z, {
       value: t,
-      hideMessage: l ? I.intl.string(I.t["6HzNgZ"]) : null,
+      hideMessage: l ? I.intl.string(I.t["6HzNgY"]) : null,
       buttonColor: r.zx.Colors.BRAND,
       onCopy: s,
       autoFocus: n,
@@ -53,13 +53,13 @@ let y = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
       changePage: N,
       inviteChannel: f,
       source: E,
-      code: b,
-      guildScheduledEvent: T,
+      code: T,
+      guildScheduledEvent: b,
       disabled: _,
-      application: P
+      application: M
     } = e, {
-      maxAge: Z,
-      maxUses: M,
+      maxAge: P,
+      maxUses: Z,
       networkError: A,
       showVanityURL: w,
       flags: V
@@ -69,11 +69,11 @@ let y = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
         channel: null == f ? true : f.id,
         channel_type: null == f ? true : f.type,
         location: E,
-        code: b,
-        guild_scheduled_event_id: null == T ? true : T.id,
-        application_id: null == P ? true : P.id
+        code: T,
+        guild_scheduled_event_id: null == b ? true : b.id,
+        application_id: null == M ? true : M.id
       })
-    }, [null == P ? true : P.id, f, E, b, T]);
+    }, [null == M ? true : M.id, f, E, T, b]);
     return (0, i.jsxs)(o.Kqy, {
       gap: 16,
       children: [(0, i.jsx)(y, {
@@ -86,18 +86,18 @@ let y = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
         onChange: e => j((0, g.mB)(V, s.$.IS_APPLICATION_BYPASS, e)),
         disabled: _,
         label: I.intl.string(I.t["1i1bUl"]),
-        description: I.intl.string(I.t["jvd/LF"])
+        description: I.intl.string(I.t["jvd/LC"])
       }), n || w ? null : (0, i.jsxs)(o.Text, {
         variant: "text-xs/normal",
         className: S.footerText,
-        children: [(0, m.Vg)(Z, M), " ", a ? (0, i.jsx)(o.Anchor, {
+        children: [(0, m.Vg)(P, Z), " ", a ? (0, i.jsx)(o.Anchor, {
           onClick: () => N(v.RV.SETTINGS),
-          children: I.intl.string(I.t["VNe8P/"])
+          children: I.intl.string(I.t.VNe8Pz)
         }) : null]
       }), !n && a && w ? (0, i.jsxs)(o.Text, {
         variant: "text-xs/normal",
         className: S.footerText,
-        children: [I.intl.string(I.t["0M2U95"]), " "]
+        children: [I.intl.string(I.t["0M2U9/"]), " "]
       }) : null, null != A ? (0, i.jsx)(p.W, {
         guild: t,
         error: A,

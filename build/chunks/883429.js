@@ -23,8 +23,8 @@ async function _(e, t, n) {
       title: t,
       body: n
     }) : (null == (i = e.body) ? true : i.code) === d.evJ.INVALID_FORM_BODY && (null == (o = e.body) ? true : o.errors.emoji) && a.Z.show({
-      title: f.intl.string(f.t.T8sBLJ),
-      body: f.intl.string(f.t.aHt1Bd)
+      title: f.intl.string(f.t.T8sBLC),
+      body: f.intl.string(f.t.aHt1BQ)
     })
   }
 }
@@ -56,14 +56,14 @@ let p = {
       },
       rejectWithError: false
     });
-    _(() => n, f.intl.string(f.t.T8sBLJ), f.intl.string(f.t.imcb5u))
+    _(() => n, f.intl.string(f.t.T8sBLC), f.intl.string(f.t.imcb5u))
   },
   deleteForumTag(e, t) {
     let n = r.tn.del({
       url: d.ANM.FORUM_TAG(e, t),
       rejectWithError: false
     });
-    _(() => n, f.intl.string(f.t["0ZkNDU"]), f.intl.string(f.t.imcb5u))
+    _(() => n, f.intl.string(f.t["0ZkNDQ"]), f.intl.string(f.t.imcb5u))
   },
   updateForumPostTags: async (e, t) => (await o.Z.unarchiveThreadIfNecessary(e), r.tn.patch({
     url: d.ANM.CHANNEL(e),

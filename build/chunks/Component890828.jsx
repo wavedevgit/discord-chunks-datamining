@@ -82,7 +82,7 @@ let P = e => [e.userId, ... function(e) {
       overflowCountClassName: _.overflowCount,
       overflowCountVariant: "text-xs/semibold",
       disableUserPopout: true,
-      "aria-label": T.intl.string(T.t.TxqPQR)
+      "aria-label": T.intl.string(T.t.TxqPQU)
     })
   }),
   k = Chunk647438.memo(function(e) {
@@ -112,7 +112,7 @@ let P = e => [e.userId, ... function(e) {
         className: _.guildIconWrapper,
         children: (0, i.jsx)(p.Ft, {
           guildId: l.id,
-          guildName: null != (t = l.name) ? t : T.intl.string(T.t.DmIUGK),
+          guildName: null != (t = l.name) ? t : T.intl.string(T.t.DmIUGB),
           guildIcon: l.icon,
           iconSize: 32
         })
@@ -208,7 +208,7 @@ let P = e => [e.userId, ... function(e) {
       }), (0, i.jsxs)(m, {
         className: _.channelList,
         children: [a && 0 === n.length && (0, i.jsx)(M, {
-          emptyText: T.intl.string(T.t.nxSS03)
+          emptyText: T.intl.string(T.t.nxSS09)
         }), n.map(e => (0, i.jsx)(L, {
           channelId: e,
           isHighlighted: e === d,
@@ -264,7 +264,7 @@ function z(e) {
   return l.length > 0 || u.length > 0 ? (0, i.jsxs)(s.zJl, {
     className: o()(_.channelList, _.channelListWrapper),
     children: [l.length > 0 && (0, i.jsx)(V, {
-      sectionHeader: T.intl.string(T.t.lnk2NQ),
+      sectionHeader: T.intl.string(T.t.lnk2NT),
       channelIds: l.slice(0, 3),
       hasQuery: false,
       query: t,
@@ -272,7 +272,7 @@ function z(e) {
       onSelect: e => r(e, "recent channel"),
       scrollable: false
     }), u.length > 0 && (0, i.jsx)(V, {
-      sectionHeader: T.intl.string(T.t["0lvb9O"]),
+      sectionHeader: T.intl.string(T.t["0lvb9P"]),
       channelIds: u.slice(0, 8),
       hasQuery: false,
       query: t,
@@ -281,7 +281,7 @@ function z(e) {
       scrollable: false
     })]
   }) : (0, i.jsx)(M, {
-    emptyText: T.intl.string(T.t["3ET7Ay"])
+    emptyText: T.intl.string(T.t["3ET7Aw"])
   })
 }
 
@@ -351,7 +351,7 @@ function W(e) {
       children: (0, i.jsx)(s.E1j, {
         autoFocus: true,
         query: d,
-        placeholder: T.intl.string(T.t.UyA6ST),
+        placeholder: T.intl.string(T.t.UyA6SU),
         onClear: () => {
           h("")
         },
@@ -360,11 +360,11 @@ function W(e) {
           h(e)
         },
         inputProps: {
-          "aria-label": T.intl.string(T.t.UyA6ST)
+          "aria-label": T.intl.string(T.t.UyA6SU)
         }
       })
     }), y ? (0, i.jsx)(V, {
-      sectionHeader: v ? T.intl.format(T.t.qdXiQ1, E) : T.intl.format(T.t["Aq+8wB"], E),
+      sectionHeader: v ? T.intl.format(T.t.qdXiQ0, E) : T.intl.format(T.t["Aq+8wM"], E),
       channelIds: p.map(e => {
         let {
           channel: t

@@ -17,8 +17,8 @@ let d = "Xbox two way upsell",
   f = () => {
     let e = Chunk63063.Z.getArticleURL(Chunk981631.BhN.XBOX_CONNECTION);
     return (0, Chunk951288.jsx)(Chunk249881.t, {
-      title: Chunk388032.intl.string(Chunk388032.t["2okkZV"]),
-      body: Chunk388032.intl.format(Chunk388032.t.OnERSS, {
+      title: Chunk388032.intl.string(Chunk388032.t["2okkZW"]),
+      body: Chunk388032.intl.format(Chunk388032.t.OnERSU, {
         help_article: module
       }),
       img: (0, Chunk951288.jsx)("img", {

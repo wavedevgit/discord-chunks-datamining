@@ -1,7 +1,7 @@
 /** Chunk was on 47495 **/
 /** chunk id: 512070, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -15,28 +15,28 @@ var Chunk120356 = require("./120356.js"),
   Chunk131016 = require("./131016.js"),
   Chunk7284 = require("./7284.js"),
   Chunk660662 = require("./660662.js"),
-  Chunk592186 = require("./592186.js"),
+  Chunk693450 = require("./693450.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk959389 = require("./959389.js"),
   Chunk204469 = require("./204469.js");
 
-function b(e) {
+function _(e) {
   let {
     selectedFontId: t,
     setSelectedFontId: n,
     displayName: o,
-    className: b
-  } = e, _ = t !== i.C.DEFAULT, S = (0, u.mR)(o), {
-    enabled: j
+    className: _
+  } = e, b = t !== i.C.DEFAULT, S = (0, u.mR)(o), {
+    enabled: C
   } = d.wL.useConfig({
     location: "DisplayNameStylesFontSelection"
   });
   return (0, l.jsxs)("div", {
-    className: b,
+    className: _,
     children: [(0, l.jsxs)(a.X6q, {
       variant: "heading-md/semibold",
       className: h.selectorHeading,
-      children: [g.intl.string(f.default.nP0ngb), (0, l.jsx)(c.SrA, {
+      children: [g.intl.string(f.default.nP0ngY), (0, l.jsx)(c.SrA, {
         size: "xs",
         color: c.TVs.colors.TEXT_DEFAULT
       })]
@@ -65,14 +65,14 @@ function b(e) {
           })
         }, e)
       })
-    }), _ && S && j && (0, l.jsxs)("div", {
+    }), b && S && C && (0, l.jsxs)("div", {
       className: x.nonLatinDisclaimer,
       children: [(0, l.jsx)(a.d3s, {
         size: "lg"
       }), (0, l.jsx)(a.xvT, {
         variant: "text-sm/normal",
         color: "text-secondary",
-        children: g.intl.string(f.default["+O1xL2"])
+        children: g.intl.string(f.default["+O1xLy"])
       })]
     })]
   })

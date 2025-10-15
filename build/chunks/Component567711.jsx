@@ -25,10 +25,10 @@ function g(e, t) {
     E = (0, o.NK)(null != O ? O : null);
   if (null == g || null == O) return null;
   let y = null != E && E.actions.hasOwnProperty(a.d.SET_COMPLETED) ? a.d.UNSET_COMPLETED : a.d.SET_COMPLETED,
-    Z = y === a.d.SET_COMPLETED ? b.intl.string(b.t.VWNyUu) : b.intl.string(b.t.l9GqxI);
+    p = y === a.d.SET_COMPLETED ? b.intl.string(b.t.VWNyUl) : b.intl.string(b.t.l9GqxM);
   return n && null != t ? (0, l.jsx)(i.sNh, {
     id: "mark-automod-alert-completed",
-    label: Z,
+    label: p,
     action: () => {
       (0, u.Xx)(t, g, y)
     }

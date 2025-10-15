@@ -91,21 +91,21 @@ class C extends Chunk647438.PureComponent {
         return (0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: "heading-md/semibold",
           className: Chunk577021.searchHeader,
-          children: Chunk388032.intl.string(Chunk388032.t.y3LQCG)
+          children: Chunk388032.intl.string(Chunk388032.t.y3LQCA)
         });
       case Chunk981631.wI2.TRENDING_GIFS:
         return (0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: "heading-md/semibold",
           className: Chunk577021.searchHeader,
-          children: Chunk388032.intl.string(Chunk388032.t.H6zNFz)
+          children: Chunk388032.intl.string(Chunk388032.t.H6zNFx)
         });
       default:
         return (0, Chunk951288.jsx)(Chunk481060.E1j, {
           query: module,
           onChange: this.handleChangeQuery,
           onClear: this.handleClearQuery,
-          placeholder: Chunk388032.intl.string(Chunk388032.t.TnYqke),
-          "aria-label": Chunk388032.intl.string(Chunk388032.t.TnYqke),
+          placeholder: Chunk388032.intl.string(Chunk388032.t.TnYqkZ),
+          "aria-label": Chunk388032.intl.string(Chunk388032.t.TnYqkZ),
           ref: this.props.searchBarRef,
           autoFocus: true
         })
@@ -118,7 +118,7 @@ class C extends Chunk647438.PureComponent {
     return null != module && (t = (0, Chunk951288.jsx)(Chunk481060.P3F, {
       onClick: this.handleClearQuery,
       className: Chunk577021.backButton,
-      "aria-label": Chunk388032.intl.string(Chunk388032.t["13/7kX"]),
+      "aria-label": Chunk388032.intl.string(Chunk388032.t["13/7kZ"]),
       children: (0, Chunk951288.jsx)(Chunk481060.whL, {
         size: "md",
         color: "currentColor"

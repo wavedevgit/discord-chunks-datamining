@@ -14,7 +14,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk839008 = require("./839008.js"),
   Chunk685184 = require("./685184.js"),
   Chunk9377 = require("./9377.jsx"),
-  Chunk234786 = require("./234786.js"),
+  Chunk659854 = require("./659854.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk783385 = require("./783385.js");
 
@@ -78,7 +78,7 @@ let o = function(A) {
       usernameStyle: {
         color: "var(--brand-400)"
       },
-      message: Q.intl.string(l.default.bpghV6)
+      message: Q.intl.string(l.default.bpghV1)
     }), (0, v.jsx)(H, {
       className: i.unfocusedMessage,
       avatar: h.Z,
@@ -86,14 +86,14 @@ let o = function(A) {
       usernameStyle: {
         color: "var(--green-230)"
       },
-      message: Q.intl.string(l.default.rnpv79)
+      message: Q.intl.string(l.default["rnpv7+"])
     }), (0, v.jsx)(H, {
       avatar: n.Z,
       username: "Lily",
       usernameStyle: {
         color: "var(--orange-300)"
       },
-      message: Q.intl.string(l.default.u7tjsh),
+      message: Q.intl.string(l.default.u7tjsr),
       decorations: (0, v.jsx)(w.S, function(A) {
         for (var t = 1; t < arguments.length; t++) {
           var g = null != arguments[t] ? arguments[t] : {},
@@ -119,7 +119,7 @@ let o = function(A) {
       usernameStyle: {
         color: "var(--brand-400)"
       },
-      message: Q.intl.string(l.default.GlWVJH)
+      message: Q.intl.string(l.default.GlWVJC)
     }), (0, v.jsx)(H, {
       className: i.unfocusedMessage,
       avatar: n.Z,
@@ -127,7 +127,7 @@ let o = function(A) {
       usernameStyle: {
         color: "var(--orange-300)"
       },
-      message: Q.intl.string(l.default.AIp9hh)
+      message: Q.intl.string(l.default.AIp9ho)
     })]
   })
 }

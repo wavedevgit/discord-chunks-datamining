@@ -24,7 +24,7 @@ function l(e) {
     user: t,
     gameRelationships: n,
     menuItemId: "add-game-friend",
-    label: s.intl.string(s.t.X76oLM),
+    label: s.intl.string(s.t.X76oLC),
     onClick: l
   })
 }

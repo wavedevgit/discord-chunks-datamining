@@ -76,7 +76,7 @@ let b = Chunk647438.memo(function(e) {
       wrapChildren: S
     })
   }) : d ? t ? null : (0, i.jsx)(a.E, {
-    emptyText: g.intl.string(g.t.O1Nbjq),
+    emptyText: g.intl.string(g.t.O1Nbjo),
     icon: o.Dkj,
     absolute: true
   }) : null

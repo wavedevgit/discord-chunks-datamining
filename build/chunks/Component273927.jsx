@@ -41,13 +41,13 @@ function v(e) {
       children: [(0, r.jsx)(l.Text, {
         variant: "text-md/semibold",
         color: "interactive-active",
-        children: b.intl.string(i ? b.t.PFOUKW : b.t["93ZDWE"])
+        children: b.intl.string(i ? b.t.PFOUKS : b.t["93ZDWF"])
       }), (0, r.jsx)(l.Text, {
         variant: "text-md/medium",
         color: "header-secondary",
-        children: i ? b.intl.format(b.t["r91W/h"], {
+        children: i ? b.intl.format(b.t["r91W/v"], {
           numberOfBlockedUsers: n
-        }) : b.intl.format(b.t.rXUeOl, {
+        }) : b.intl.format(b.t.rXUeOj, {
           numberOfIgnoredUsers: n
         })
       })]
@@ -90,7 +90,7 @@ function I(e) {
       })]
     }), (0, r.jsx)(l.Button, {
       variant: "secondary",
-      text: b.intl.string(p ? b.t.XyHpKH : b.t["8wXU9B"]),
+      text: b.intl.string(p ? b.t.XyHpKC : b.t["8wXU9P"]),
       onClick: E,
       loading: m
     })]
@@ -126,7 +126,7 @@ function T(e) {
           children: (0, r.jsx)(l.Text, {
             variant: "text-sm/semibold",
             color: "text-default",
-            children: b.intl.format(b.t.jULEDr, {
+            children: b.intl.format(b.t.jULEDg, {
               numberOfUsers: o + O < n.length ? O : n.length - o
             })
           })
@@ -160,8 +160,8 @@ function C() {
     scrollPosition: Chunk526761.FY.RESTRICTED_ACCOUNTS,
     scrollHighlightDelay: 900,
     children: [(0, Chunk951288.jsx)(Chunk838436.H, {
-      header: Chunk388032.intl.string(Chunk388032.t["3wRort"]),
-      description: Chunk388032.intl.format(Chunk388032.t["0aNQo9"], {
+      header: Chunk388032.intl.string(Chunk388032.t["3wRorq"]),
+      description: Chunk388032.intl.format(Chunk388032.t["0aNQo6"], {
         helpArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.STEALTH_REMEDIATION_FEATURE_GUIDE)
       })
     }), (0, Chunk951288.jsx)(S, {}), (0, Chunk951288.jsx)(A, {})]

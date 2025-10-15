@@ -27,10 +27,10 @@ function x(t) {
     className: g.teamSetup,
     children: 0 !== a.length && (0, i.jsx)(r.q4e, {
       options: a,
-      placeholder: h.intl.string(h.t.QXf93A),
+      placeholder: h.intl.string(h.t.QXf93N),
       value: e,
       onChange: n,
-      "aria-label": h.intl.string(h.t.QXf93A)
+      "aria-label": h.intl.string(h.t.QXf93N)
     })
   })
 }
@@ -41,25 +41,25 @@ function f(t) {
     requireTeamSetup: n,
     onClose: g,
     transitionState: f
-  } = t, [C, E] = a.useState(), [v, S] = a.useState(false), {
+  } = t, [C, v] = a.useState(), [E, S] = a.useState(false), {
     teams: j
   } = (0, u.Z)(), y = j.filter(t => t.payout_account_status === p.C.ACTIVE), T = a.useMemo(() => y.map(t => ({
     label: t.name,
     value: t.id
   })), [y]), b = () => {
     S(t => !t)
-  }, _ = () => {
+  }, k = () => {
     g(), (0, d.df)(e, C)
-  }, k = a.useCallback(() => {
+  }, _ = a.useCallback(() => {
     (0, o.Z)(m.EYA.DEVELOPER_PORTAL_TEAMS)
   }, []);
   if (!n) return (0, i.jsx)(l.Modal, {
-    title: h.intl.string(h.t.GfObDE),
+    title: h.intl.string(h.t.GfObDA),
     actions: [{
       variant: "primary",
-      text: h.intl.string(h.t.geKm7t),
-      onClick: _,
-      disabled: !v
+      text: h.intl.string(h.t.geKm7u),
+      onClick: k,
+      disabled: !E
     }],
     onClose: g,
     transitionState: f,
@@ -68,7 +68,7 @@ function f(t) {
       onChange: b,
       size: 20,
       type: s.M0.INVERTED,
-      value: v,
+      value: E,
       children: (0, i.jsx)(r.Text, {
         variant: "text-md/normal",
         color: "header-secondary",
@@ -79,25 +79,25 @@ function f(t) {
   {
     let t = 0 === T.length;
     return (0, i.jsxs)(l.Modal, {
-      title: h.intl.string(h.t.inJKQv),
-      subtitle: t ? h.intl.format(h.t.Jyy4pV, {}) : h.intl.string(h.t.U1Vz24),
+      title: h.intl.string(h.t.inJKQk),
+      subtitle: t ? h.intl.format(h.t.Jyy4pa, {}) : h.intl.string(h.t.U1Vz29),
       actions: [{
         variant: "primary",
-        text: t ? h.intl.string(h.t.JddVgE) : h.intl.string(h.t.geKm7t),
-        onClick: t ? k : _
+        text: t ? h.intl.string(h.t.JddVgI) : h.intl.string(h.t.geKm7u),
+        onClick: t ? _ : k
       }],
       onClose: g,
       transitionState: f,
       size: "md",
       children: [!t && (0, i.jsx)(x, {
         selectedTeamId: C,
-        onSetSelectedTeamId: E,
+        onSetSelectedTeamId: v,
         teamOptions: T
       }), (0, i.jsx)(s.$q, {
         onChange: b,
         size: 20,
         type: s.M0.INVERTED,
-        value: v,
+        value: E,
         children: (0, i.jsx)(r.Text, {
           variant: "text-md/normal",
           color: "header-secondary",

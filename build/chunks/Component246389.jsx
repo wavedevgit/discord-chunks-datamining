@@ -31,7 +31,7 @@ let b = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     onClose: () => {
       (0, o.Zy)(), null == b || b()
     },
-    "aria-label": _.intl.string(_.t.liqwPJ),
+    "aria-label": _.intl.string(_.t.liqwPD),
     onSelect: u,
     children: (0, l.jsx)(r.kSQ, {
       children: O

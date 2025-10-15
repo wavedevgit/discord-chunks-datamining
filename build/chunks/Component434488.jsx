@@ -81,7 +81,7 @@ function Z(e) {
       className: S.root,
       children: [(0, i.jsx)(c.u, {
         asContainer: true,
-        text: E.intl.string(E.t.qJvTKQ),
+        text: E.intl.string(E.t.qJvTKS),
         children: (0, i.jsx)(u.P3F, {
           onClick: () => {
             (0, b.Z)({
@@ -223,12 +223,12 @@ function T(e) {
           children: [(0, i.jsx)(u.Button, {
             variant: "secondary",
             icon: v,
-            text: d.isInCallEntrypointEnabled ? E.intl.string(E.t["EE+P0H"]) : E.intl.string(E.t["6Qgrev"]),
+            text: d.isInCallEntrypointEnabled ? E.intl.string(E.t["EE+P0N"]) : E.intl.string(E.t["6Qgren"]),
             onClick: f
           }), (0, i.jsx)(u.Button, {
             variant: "secondary",
             icon: y,
-            text: E.intl.string(E.t.qnFavR),
+            text: E.intl.string(E.t.qnFavb),
             onClick: C
           })]
         })]
@@ -268,7 +268,7 @@ function N(e) {
       children: [s > 300 ? (0, i.jsx)(u.Text, {
         className: S.heading,
         variant: s > 550 ? "text-md/semibold" : "text-sm/semibold",
-        children: E.intl.string(E.t["7BKMcG"])
+        children: E.intl.string(E.t["7BKMcH"])
       }) : null, (0, i.jsx)("div", {
         className: a()(S.activitiesContainer, {
           [S.activitiesContainerSmol]: s <= 300
@@ -291,7 +291,7 @@ function N(e) {
         },
         children: [(0, i.jsx)(v.Z, {}), (0, i.jsx)(u.Text, {
           variant: "text-sm/medium",
-          children: E.intl.string(E.t["5E9SB9"])
+          children: E.intl.string(E.t["5E9SBw"])
         })]
       }), (0, i.jsx)(u.P3F, {
         className: S.closeButtonContainer,

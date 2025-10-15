@@ -15,7 +15,7 @@ var Chunk990547 = require("./990547.js"),
   Chunk799360 = require("./799360.js"),
   Chunk342386 = require("./342386.js"),
   Chunk771934 = require("./771934.js"),
-  Chunk687101 = require("./687101.js"),
+  Chunk119475 = require("./119475.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk640744 = require("./640744.js"),
   Chunk758335 = require("./758335.js");
@@ -32,9 +32,9 @@ function g() {
     }
   });
   let t = (0, Chunk799360.B)({
-      "en-US": Chunk687101.default["f/cLEi"],
-      "en-GB": Chunk687101.default["f/cLEi"]
-    }, Chunk687101.default.CARxAC),
+      "en-US": Chunk119475.default["f/cLEh"],
+      "en-GB": Chunk119475.default["f/cLEh"]
+    }, Chunk119475.default.CARxAA),
     n = () => {
       (0, Chunk771934.DI)(Chunk771934.Ln.APPEARANCE_SETTINGS), (0, Chunk550385.XO)(Chunk550385.wh.CUSTOM_THEME, {
         from: Chunk550385.tE.SETTING
@@ -57,13 +57,13 @@ function g() {
         children: exports
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
-        children: Chunk388032.intl.string(Chunk687101.default.nla4RG)
+        children: Chunk388032.intl.string(Chunk119475.default.nla4RE)
       })]
     }), (0, Chunk951288.jsx)("div", {
       className: Chunk640744.buttonContainer,
       children: (0, Chunk951288.jsx)(Chunk159691.zxk, {
         variant: "primary",
-        text: Chunk388032.intl.string(Chunk388032.t.uw9zI7),
+        text: Chunk388032.intl.string(Chunk388032.t.uw9zIy),
         onClick: require
       })
     })]

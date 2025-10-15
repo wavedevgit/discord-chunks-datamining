@@ -104,7 +104,7 @@ class m extends Chunk647438.PureComponent {
         gap: 8,
         children: [h, l === d.Pl.MANAGE_MESSAGES ? (0, i.jsx)(a.Wn, {
           messageType: a.QYI.WARNING,
-          children: u.intl.string(u.t["2XIdPp"])
+          children: u.intl.string(u.t["2XIdPj"])
         }) : null, "string" == typeof b && "" !== b && (0, i.jsx)(a.Text, {
           variant: "text-xs/medium",
           color: "text-feedback-critical",

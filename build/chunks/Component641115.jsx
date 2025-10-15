@@ -87,12 +87,12 @@ function R() {
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       className: Chunk381994.upsellText,
       variant: "text-sm/medium",
-      children: Chunk388032.intl.string(Chunk388032.t.sEAnVH)
+      children: Chunk388032.intl.string(Chunk388032.t.sEAnVF)
     })]
   })
 }
 
-function D(e) {
+function w(e) {
   let n, t, {
       type: r,
       selected: i,
@@ -108,17 +108,17 @@ function D(e) {
       label: h
     } = r;
   return a ? (n = (0, l.jsx)(d.jSM, {
-    tooltipClassName: I.tooltip,
+    tooltipClassName: E.tooltip,
     spacing: 6,
-    "aria-label": T.intl.string(T.t.sEAnVH),
+    "aria-label": T.intl.string(T.t.sEAnVF),
     text: (0, l.jsx)(R, {}),
     children: (0, l.jsx)("div", {
-      className: I.textContainer,
+      className: E.textContainer,
       onMouseEnter: () => x(true),
       onMouseLeave: () => x(false),
       children: (0, l.jsx)(d.Text, {
         variant: "text-xs/bold",
-        className: s()(I.selectorNitroText, I.enhancedSelectorNitroText),
+        className: s()(E.selectorNitroText, E.enhancedSelectorNitroText),
         children: h
       })
     })
@@ -126,20 +126,20 @@ function D(e) {
     analyticsLocation: o,
     onClose: m
   })) : (n = (0, l.jsx)("div", {
-    className: I.textContainer,
+    className: E.textContainer,
     children: (0, l.jsx)(d.Text, {
       variant: "text-xs/normal",
-      className: s()(I.selectorText, {
-        [I.enhancedSelectorNitroText]: c
+      className: s()(E.selectorText, {
+        [E.enhancedSelectorNitroText]: c
       }),
       children: h
     })
   }), t = () => u(g)), {
     content: n,
-    className: s()(I.selectorButton, {
-      [I.selectorButtonSelected]: i,
-      [I.perksDemo]: c,
-      [I.premiumUpsell]: a
+    className: s()(E.selectorButton, {
+      [E.selectorButtonSelected]: i,
+      [E.perksDemo]: c,
+      [E.premiumUpsell]: a
     }),
     onClick: t
   }
@@ -155,60 +155,60 @@ function _(e) {
     onFPSChange: j,
     onPresetChange: R,
     targetGuildPremiumTier: _,
-    captureDeviceSelected: M
-  } = e, w = (0, o.e7)([Z.default], () => {
+    captureDeviceSelected: D
+  } = e, M = (0, o.e7)([Z.default], () => {
     let e = Z.default.getCurrentUser();
     return c()(null != e, "StreamSettings: user cannot be undefined"), e
-  }), U = (0, o.e7)([f.Z, v.Z], () => v.Z.getChannel(f.Z.getVoiceChannelId())), z = S.ZP.canStreamQuality(S.U2.MID, w), {
-    location: L
+  }), U = (0, o.e7)([f.Z, v.Z], () => v.Z.getChannel(f.Z.getVoiceChannelId())), L = N.ZP.canStreamQuality(N.U2.MID, M), {
+    location: z
   } = (0, x.O)(), G = (0, g.Zq)({
     autoTrackExposure: false
-  }), W = (0, p.B4)(), B = !z && !G, [V, F] = r.useState(false), H = M ? b.z8 : b.WC, Y = A(y({}, L), {
+  }), W = (0, p.B4)(), V = !L && !G, [B, F] = r.useState(false), H = D ? b.z8 : b.WC, X = A(y({}, z), {
     section: P.jXE.STREAM_SETTINGS
-  }), X = (0, l.jsx)(u.hE, {
-    buttons: H.map(e => D({
+  }), Y = (0, l.jsx)(u.hE, {
+    buttons: H.map(e => w({
       type: e,
       selected: e.value === i,
-      needsPremium: !(0, N.Z)(t, e.value, s, w, _, U),
+      needsPremium: !(0, S.Z)(t, e.value, s, M, _, U),
       needsDemo: W && e.value !== b.ApplicationStreamResolutions.RESOLUTION_720,
-      analyticsLocation: Y,
+      analyticsLocation: X,
       onClick: () => a(e.value),
       onClose: n,
       setIsHovering: F
     }))
   }), q = (0, l.jsx)(u.hE, {
-    buttons: b.k0.map(e => D({
+    buttons: b.k0.map(e => w({
       type: e,
       selected: e.value === s,
-      needsPremium: !(0, N.Z)(t, i, e.value, w, _, U),
+      needsPremium: !(0, S.Z)(t, i, e.value, M, _, U),
       needsDemo: W && e.value === b.ApplicationStreamFPS.FPS_60,
-      analyticsLocation: Y,
+      analyticsLocation: X,
       onClick: () => j(e.value),
       onClose: n,
       setIsHovering: F
     }))
   }), K = [{
     value: b.ApplicationStreamPresets.PRESET_VIDEO,
-    label: T.intl.string(T.t.HcwHcx)
-  }, ...M ? [] : [{
+    label: T.intl.string(T.t.HcwHc3)
+  }, ...D ? [] : [{
     value: b.ApplicationStreamPresets.PRESET_DOCUMENTS,
-    label: T.intl.string(T.t["/RfohG"])
+    label: T.intl.string(T.t["/RfohI"])
   }], {
     value: b.ApplicationStreamPresets.PRESET_CUSTOM,
-    label: T.intl.string(T.t["+eOtrD"])
+    label: T.intl.string(T.t["+eOtrK"])
   }], J = t === b.ApplicationStreamPresets.PRESET_DOCUMENTS ? (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)(h.Z, {
       children: (0, l.jsx)(d.gNt, {
-        label: T.intl.string(T.t.rHyPXg),
+        label: T.intl.string(T.t.rHyPXl),
         children: (0, l.jsx)(d.Text, {
           variant: "text-xs/normal",
-          children: T.intl.format(T.t["U+hmag"], {
+          children: T.intl.format(T.t["U+hmam"], {
             fps: s
           })
         })
       })
-    }), B ? (0, l.jsx)(C.Z, {
-      message: T.intl.string(T.t.deDogB),
+    }), V ? (0, l.jsx)(C.Z, {
+      message: T.intl.string(T.t.deDogI),
       onClose: n,
       openStreamUpsellModal: k
     }) : null, W && (0, l.jsx)(C.c, {})]
@@ -216,25 +216,25 @@ function _(e) {
     gap: 16,
     children: [(0, l.jsxs)(d.NIo, {
       children: [(0, l.jsx)(d.gNt, {
-        label: T.intl.string(T.t.rHyPXg),
-        children: X
+        label: T.intl.string(T.t.rHyPXl),
+        children: Y
       }), (0, l.jsx)(d.gNt, {
-        label: T.intl.string(T.t.SkkeIt),
+        label: T.intl.string(T.t.SkkeIi),
         children: q
       })]
-    }), B ? (0, l.jsx)(C.Z, {
+    }), V ? (0, l.jsx)(C.Z, {
       onClose: n,
       openStreamUpsellModal: k,
-      glow: V
+      glow: B
     }) : null, W && (0, l.jsx)(C.c, {})]
   });
-  return (0, l.jsx)(m.Z, A(y({}, Y), {
+  return (0, l.jsx)(m.Z, A(y({}, X), {
     children: (0, l.jsx)("div", {
-      className: E.modalContent,
+      className: I.modalContent,
       children: (0, l.jsxs)("div", {
-        className: I.qualitySettingsContainer,
+        className: E.qualitySettingsContainer,
         children: [(0, l.jsx)(d.q4e, {
-          label: T.intl.string(T.t.ax4Fnc),
+          label: T.intl.string(T.t.ax4FnZ),
           value: t,
           className: O.marginTop8,
           options: K,

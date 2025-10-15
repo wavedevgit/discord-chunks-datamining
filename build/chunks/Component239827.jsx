@@ -76,10 +76,10 @@ let p = Chunk647438.forwardRef(function(e, t) {
   } = e, p = f(e, ["currentPageIndex", "numPages", "onChangePage", "children", "showPageCount"]);
   let h = n <= 0,
     m = n >= i - 1,
-    g = _ ? o.intl.format(o.t.MtpIwg, {
+    g = _ ? o.intl.format(o.t.MtpIws, {
       currentPage: n + 1,
       numPages: i
-    }) : o.intl.format(o.t.bKI77c, {
+    }) : o.intl.format(o.t.bKI77e, {
       currentPage: n + 1
     });
   return (0, r.jsxs)("div", d(c({
@@ -94,7 +94,7 @@ let p = Chunk647438.forwardRef(function(e, t) {
           icon: a.V7D,
           disabled: h,
           onClick: () => l(n - 1),
-          "aria-label": o.intl.string(o.t.vgfxaA)
+          "aria-label": o.intl.string(o.t.vgfxaG)
         }), (0, r.jsx)(a.Text, {
           variant: "text-sm/medium",
           children: g
@@ -103,7 +103,7 @@ let p = Chunk647438.forwardRef(function(e, t) {
           icon: a.Fbu,
           disabled: m,
           onClick: () => l(n + 1),
-          "aria-label": o.intl.string(o.t.XiOHRX)
+          "aria-label": o.intl.string(o.t.XiOHRU)
         })]
       })
     })]

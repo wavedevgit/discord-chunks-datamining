@@ -169,7 +169,7 @@ function N() {
       }), (0, Chunk951288.jsx)(Chunk481060.hU, {
         size: "sm",
         variant: "icon-only",
-        "aria-label": Chunk388032.intl.string(Chunk388032.t.VkKicb),
+        "aria-label": Chunk388032.intl.string(Chunk388032.t.VkKicX),
         icon: Chunk481060.XHJ,
         onClick: Chunk31336.Zw
       })]

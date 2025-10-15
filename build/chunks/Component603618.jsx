@@ -84,7 +84,7 @@ function X(e, t) {
   }), e
 }
 
-function J(e) {
+function q(e) {
   let {
     entry: t,
     currentUserActivity: n,
@@ -113,7 +113,7 @@ function J(e) {
               n = null != (i = D.Z.getChannel(e)) ? i : null;
             o()(null != n, "Send channel must be defined"), (0, N.uL)(H.Z5c.CHANNEL(n.guild_id, n.id)), (0, C.i)(H.IlC.OVERLAY, true), true === t.extra.fake_inventory_item ? await (0, j.k)({
               channel: n,
-              content: Y.intl.formatToPlainString(Y.t.UVBA9g, {
+              content: Y.intl.formatToPlainString(Y.t.UVBA9v, {
                 gameName: t.extra.game_name
               }),
               whenReady: true,
@@ -151,7 +151,7 @@ function J(e) {
         value: G.bk.CHAT,
         userId: a.id
       })
-    }, x = v ? Y.intl.string(Y.t["3fRySx"]) : Y.intl.string(Y.t.XHxDIV), I = v ? (0, i.jsx)(p.ejJ, {
+    }, x = v ? Y.intl.string(Y.t["3fRyS0"]) : Y.intl.string(Y.t.XHxDIS), I = v ? (0, i.jsx)(p.ejJ, {
       color: "currentColor",
       size: "sm"
     }) : (0, i.jsx)(p.Uuj, {
@@ -182,7 +182,7 @@ function J(e) {
   })
 }
 
-function q(e) {
+function J(e) {
   var t;
   let {
     entry: n,
@@ -207,7 +207,7 @@ function q(e) {
         m("unsent")
       }
     }
-  }, y = Y.intl.string(Y.t.OKsSCR);
+  }, y = Y.intl.string(Y.t.OKsSCQ);
   return (0, i.jsx)(d.u, {
     text: y,
     "aria-label": y,
@@ -273,11 +273,11 @@ function $(e) {
           entry: t
         }, "entry-".concat(n)))
       })]
-    }), (0, i.jsx)(q, {
+    }), (0, i.jsx)(J, {
       entry: t,
       currentUserActivity: n,
       idx: r
-    }), (0, i.jsx)(J, {
+    }), (0, i.jsx)(q, {
       entry: t,
       currentUserActivity: n,
       idx: r
@@ -324,7 +324,7 @@ function et(e) {
         variant: "text-xs/medium",
         color: "header-secondary",
         tag: "div",
-        children: Y.intl.string(Y.t.y9eo7a)
+        children: Y.intl.string(Y.t.y9eo7e)
       })
     }), t.map((e, t) => (0, i.jsx)($, {
       idx: t,
@@ -442,7 +442,7 @@ function er(e) {
       },
       size: h.Ph.SMALL,
       color: h.Tt.PRIMARY,
-      children: Y.intl.string(Y.t["6Qgrev"])
+      children: Y.intl.string(Y.t["6Qgren"])
     }) : null]
   })
 }

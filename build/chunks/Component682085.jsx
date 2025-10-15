@@ -87,11 +87,11 @@ function b() {
     children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
       variant: "heading-md/medium",
       color: "header-primary",
-      children: Chunk388032.intl.string(Chunk388032.t["oqalC+"])
+      children: Chunk388032.intl.string(Chunk388032.t.oqalCw)
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
       color: "text-secondary",
-      children: Chunk388032.intl.format(Chunk388032.t.YnNFWa, {
+      children: Chunk388032.intl.format(Chunk388032.t.YnNFWV, {
         applicationName: b.name
       })
     })]
@@ -125,7 +125,7 @@ function b() {
               size: 128
             }), w, (0, r.jsx)(o.Button, {
               icon: o.qJs,
-              text: y.intl.string(y.t["lBG2s/"]),
+              text: y.intl.string(y.t.lBG2s7),
               size: "md",
               color: "secondary",
               onClick: S

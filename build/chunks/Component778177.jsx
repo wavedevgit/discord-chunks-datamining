@@ -247,7 +247,7 @@ function en(e) {
     onClick: t,
     onFocus: n
   }, d), {
-    "aria-label": G.intl.formatToPlainString(G.t.WoiGrV, {
+    "aria-label": G.intl.formatToPlainString(G.t.WoiGra, {
       suggestion: f
     }),
     children: [_, (0, r.jsx)(h.qJs, {
@@ -259,28 +259,28 @@ function en(e) {
 }
 let er = {
   [Chunk981631.dCx.FILTER_FROM]: {
-    titleText: () => Chunk388032.intl.string(Chunk388032.t.catERA),
+    titleText: () => Chunk388032.intl.string(Chunk388032.t.catERE),
     component: $
   },
   [Chunk981631.dCx.FILTER_MENTIONS]: {
-    titleText: () => Chunk388032.intl.string(Chunk388032.t["l3K4B/"]),
+    titleText: () => Chunk388032.intl.string(Chunk388032.t.l3K4Bw),
     component: $
   },
   [Chunk981631.dCx.FILTER_HAS]: {
-    titleText: () => Chunk388032.intl.string(Chunk388032.t.IC7gHM)
+    titleText: () => Chunk388032.intl.string(Chunk388032.t.IC7gHB)
   },
   [Chunk981631.dCx.FILTER_FILE_TYPE]: {
-    titleText: () => Chunk388032.intl.string(Chunk388032.t.SXIfVw)
+    titleText: () => Chunk388032.intl.string(Chunk388032.t.SXIfV1)
   },
   [Chunk981631.dCx.FILTER_IN]: {
-    titleText: () => Chunk388032.intl.string(Chunk388032.t.vHyCgl),
+    titleText: () => Chunk388032.intl.string(Chunk388032.t.vHyCgo),
     component: ee
   },
   [Chunk981631.rtL.DATES]: {
-    titleText: () => Chunk388032.intl.string(Chunk388032.t.UiL5ey)
+    titleText: () => Chunk388032.intl.string(Chunk388032.t.UiL5e3)
   },
   [Chunk981631.rtL.HISTORY]: {
-    titleText: () => Chunk388032.intl.string(Chunk388032.t.tSZd5c),
+    titleText: () => Chunk388032.intl.string(Chunk388032.t.tSZd5e),
     groupTip(e) {
       let {
         searchContext: t
@@ -305,15 +305,15 @@ let er = {
     component: en
   },
   [Chunk981631.rtL.SEARCH_OPTIONS]: {
-    titleText: () => Chunk388032.intl.string(Chunk388032.t["8Zkyw+"]),
+    titleText: () => Chunk388032.intl.string(Chunk388032.t["8Zkyw8"]),
     groupTip: () => (0, Chunk951288.jsx)(Chunk681715.u, {
-      text: Chunk388032.intl.string(Chunk388032.t.hvVgAZ),
+      text: Chunk388032.intl.string(Chunk388032.t.hvVgAQ),
       position: "left",
       children: (0, Chunk951288.jsx)("div", {
         className: Chunk495824.searchLearnMore,
         children: (0, Chunk951288.jsx)(Chunk481060.Anchor, {
           href: Chunk63063.Z.getArticleURL(Chunk981631.BhN.USING_SEARCH),
-          title: Chunk388032.intl.string(Chunk388032.t.hvVgAZ),
+          title: Chunk388032.intl.string(Chunk388032.t.hvVgAQ),
           children: (0, Chunk951288.jsx)(Chunk481060.idN, {
             size: "md",
             color: "currentColor"
@@ -601,7 +601,7 @@ class ei extends Chunk647438.PureComponent {
         className: B.datePickerHint,
         children: [(0, r.jsxs)("span", {
           className: B.hint,
-          children: [G.intl.string(G.t.fmtCi3), "\xa0"]
+          children: [G.intl.string(G.t.fmtCi4), "\xa0"]
         }), (0, r.jsx)(h.P3F, {
           tag: "span",
           className: B.hintValue,

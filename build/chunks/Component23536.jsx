@@ -52,7 +52,7 @@ function y(e) {
     }, [t.id, _]),
     I = (0, l.e7)([h.Z], () => (0, a.ap)(h.Z.theme));
   return (0, r.jsx)(s.VqE, {
-    "aria-label": m.intl.string(m.t["mp1N/2"]),
+    "aria-label": m.intl.string(m.t["mp1N//"]),
     children: (0, r.jsx)(g.ZP, {
       channel: t,
       onFetch: v,
@@ -62,7 +62,7 @@ function y(e) {
       analyticsName: "Channel Pins",
       renderEmptyState: function() {
         if (_.length > 0) return;
-        let e = m.intl.string(t.isPrivate() ? m.t.rhqcbJ : m.t.fmyaWJ),
+        let e = m.intl.string(t.isPrivate() ? m.t.rhqcbG : m.t.fmyaWF),
           i = I ? n(306059) : n(281485);
         return (0, r.jsx)(g.nH, {
           msg: e,
@@ -71,7 +71,7 @@ function y(e) {
       },
       renderHeader: () => (0, r.jsx)(g.h4, {
         icon: s.qQX,
-        title: m.intl.string(m.t["mp1N/2"])
+        title: m.intl.string(m.t["mp1N//"])
       }),
       onCloseMessage: function(e, n) {
         null != e && (n.shiftKey ? o.Z.unpinMessage(t, e.id) : u.Z.confirmUnpin(t, e))
@@ -79,7 +79,7 @@ function y(e) {
       onJump: y,
       loadMore: C,
       getProTip: function() {
-        return t.isPrivate() ? m.intl.string(m.t["3dLGAs"]) : m.intl.string(m.t.KTbRcg)
+        return t.isPrivate() ? m.intl.string(m.t["3dLGAg"]) : m.intl.string(m.t.KTbRcn)
       },
       listName: "pins"
     })

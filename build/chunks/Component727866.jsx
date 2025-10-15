@@ -29,13 +29,13 @@ let o = (e, t) => {
   },
   s = {
     getTextInVoiceSendMessageChannelPermissionText: function(e) {
-      return e ? a.intl.format(a.t.Q1rwpr, {
+      return e ? a.intl.format(a.t.Q1rwpq, {
         warningHook: o
-      }) : a.intl.string(a.t.WQ6zpT)
+      }) : a.intl.string(a.t.WQ6zpa)
     },
     getTextInVoiceReadMessageHistoryChannelPermissionText: function(e) {
-      return e ? a.intl.format(a.t.Rx4pbJ, {
+      return e ? a.intl.format(a.t.Rx4pbG, {
         warningHook: o
-      }) : a.intl.string(a.t.cuMfH0)
+      }) : a.intl.string(a.t.cuMfHx)
     }
   }

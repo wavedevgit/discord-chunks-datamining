@@ -71,7 +71,7 @@ function b(e) {
     className: p.cardContentsContainer,
     children: [(0, r.jsxs)(d.Z, {
       step: 1,
-      header: m.intl.string(m.t["ue+tnb"]),
+      header: m.intl.string(m.t["ue+tnZ"]),
       children: [(0, r.jsx)(o.Z, {
         onChangeText: O,
         maxWordCount: g.RH,
@@ -90,7 +90,7 @@ function b(e) {
       type: u.Z.Type.ARROW_DOWN
     }), (0, r.jsx)(d.Z, {
       step: 2,
-      header: m.intl.string(m.t["18TOiQ"]),
+      header: m.intl.string(m.t["18TOiY"]),
       children: (0, r.jsx)(a.Z, {
         rule: _,
         onChangeRule: C
@@ -99,7 +99,7 @@ function b(e) {
       type: u.Z.Type.CROSS
     }), (0, r.jsx)(d.Z, {
       step: 3,
-      header: m.intl.string(m.t.eq3gjh),
+      header: m.intl.string(m.t.eq3gjo),
       children: (0, r.jsx)(c.Z, {
         rule: _,
         onChangeRule: C

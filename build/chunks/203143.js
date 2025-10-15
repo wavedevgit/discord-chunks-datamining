@@ -137,7 +137,7 @@ function B(e) {
     title: n,
     body: r,
     confirmText: w.intl.string(w.t["9VLmlZ"]),
-    cancelText: w.intl.string(w.t["2m+Sqk"]),
+    cancelText: w.intl.string(w.t["2m+Sqq"]),
     onConfirm: () => {
       f.Z.joinGuild(t, {
         source: P.vtS.POLL_ALERT
@@ -155,8 +155,8 @@ function Z(e) {
   if (null == i) return;
   if (m.Z.isLurking(i.guild_id)) return void B({
     guildId: i.guild_id,
-    title: w.intl.string(w.t["7LpysO"]),
-    body: w.intl.string(w.t["5sHHoy"])
+    title: w.intl.string(w.t["7LpysL"]),
+    body: w.intl.string(w.t["5sHHo6"])
   });
   let a = T.Z.getMessage(t, n);
   if (null == a || null == a.poll || 0 === a.poll.answers.length) return;
@@ -236,12 +236,12 @@ async function Y(e) {
   if (null == r) return;
   if (m.Z.isLurking(r.guild_id)) return void B({
     guildId: r.guild_id,
-    title: w.intl.string(w.t.Qic1FD),
-    body: w.intl.string(w.t["5sHHoy"])
+    title: w.intl.string(w.t.Qic1FB),
+    body: w.intl.string(w.t["5sHHo6"])
   });
   if (!I.Z.canChatInGuild(r.guild_id)) return void d.Z.show({
-    title: w.intl.string(w.t.p245wu),
-    body: w.intl.string(w.t["U/uodt"])
+    title: w.intl.string(w.t.p245ws),
+    body: w.intl.string(w.t["U/uodn"])
   });
   let a = (0, N.fU)(t, n);
   i()(null != a, "Must not be able to vote without existing state!");
@@ -262,12 +262,12 @@ async function Y(e) {
       channelId: t,
       messageId: n,
       answerIds: e
-    }), (0, N.eu)(t, n, () => true), c.uv.announce(0 === e.length ? w.intl.string(w.t["xcvy+3"]) : w.intl.string(w.t.o20GSo))
+    }), (0, N.eu)(t, n, () => true), c.uv.announce(0 === e.length ? w.intl.string(w.t["xcvy+/"]) : w.intl.string(w.t.o20GSk))
   } catch (e) {
     var s, l, u;
     d.Z.show({
-      title: w.intl.string(w.t.iufib1),
-      body: null != (u = null != (l = null == (s = e.getAnyErrorMessage) ? true : s.call(e)) ? l : e.message) ? u : w.intl.string(w.t.eAn6z2)
+      title: w.intl.string(w.t.iufib2),
+      body: null != (u = null != (l = null == (s = e.getAnyErrorMessage) ? true : s.call(e)) ? l : e.message) ? u : w.intl.string(w.t.eAn6z8)
     }), await H({
       channelId: t,
       messageId: n,
@@ -287,8 +287,8 @@ async function W(e) {
   } = e, r = O.Z.getChannel(t);
   if (null != r) return m.Z.isLurking(r.guild_id) ? void B({
     guildId: r.guild_id,
-    title: w.intl.string(w.t.B9QnBp),
-    body: w.intl.string(w.t.BVZCTn)
+    title: w.intl.string(w.t.B9QnBg),
+    body: w.intl.string(w.t.BVZCTk)
   }) : ((0, N.eu)(t, n, e => {
     var n;
     return {
@@ -499,8 +499,8 @@ let q = {
       messageId: n
     } = e;
     await d.Z.confirm({
-      title: w.intl.string(w.t["+rfkTK"]),
-      body: w.intl.string(w.t.H2I1gL)
+      title: w.intl.string(w.t["+rfkTE"]),
+      body: w.intl.string(w.t.H2I1gI)
     }) && await C.W({
       channelId: t,
       messageId: n

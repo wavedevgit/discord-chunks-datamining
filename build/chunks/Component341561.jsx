@@ -150,8 +150,8 @@ let D = {
         autocompletes: t,
         onHover: d,
         onClick: f,
-        titleWithQuery: y.t.ksAVYt,
-        titleWithoutQuery: y.intl.string(y.t.sMOuuS),
+        titleWithQuery: y.t.ksAVYm,
+        titleWithoutQuery: y.intl.string(y.t.sMOuub),
         Component: a.ZP.Emoji,
         getProps: e => ({
           emoji: e,
@@ -167,8 +167,8 @@ let D = {
         autocompletes: l,
         onHover: d,
         onClick: p,
-        titleWithQuery: 0 === t.length ? y.t.ksAVYt : null,
-        titleWithoutQuery: 0 === t.length ? y.intl.string(y.t.sMOuuS) : null,
+        titleWithQuery: 0 === t.length ? y.t.ksAVYm : null,
+        titleWithoutQuery: 0 === t.length ? y.intl.string(y.t.sMOuub) : null,
         Component: a.ZP.EmojiUpsell,
         getProps: e => {
           let {
@@ -190,8 +190,8 @@ let D = {
         autocompletes: o,
         onHover: d,
         onClick: f,
-        titleWithQuery: y.t.uferGG,
-        titleWithoutQuery: y.intl.string(y.t["fT+Yjp"]),
+        titleWithQuery: y.t.uferGB,
+        titleWithoutQuery: y.intl.string(y.t["fT+Yjo"]),
         Component: a.ZP.Sticker,
         getProps: e => {
           let {
@@ -217,8 +217,8 @@ let D = {
         autocompletes: s,
         onHover: d,
         onClick: f,
-        titleWithQuery: y.t["0cKBGM"],
-        titleWithoutQuery: y.intl.string(y.t.EHlAMc),
+        titleWithQuery: y.t["0cKBGB"],
+        titleWithoutQuery: y.intl.string(y.t.EHlAMT),
         Component: a.ZP.Soundmoji,
         getProps: e => {
           let {

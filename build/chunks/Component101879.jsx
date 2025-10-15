@@ -23,12 +23,12 @@ function f() {
     children: [(0, Chunk951288.jsx)(Chunk481060.RyX, {
       onClick: () => exports(Chunk921944.L.DISMISS),
       noticeType: Chunk981631.kVF.IGNORE_USER_FEEDBACK_NAGBAR
-    }), Chunk388032.intl.string(Chunk388032.t.XkeW9N), (0, Chunk951288.jsx)(Chunk481060.NoS, {
+    }), Chunk388032.intl.string(Chunk388032.t.XkeW9P), (0, Chunk951288.jsx)(Chunk481060.NoS, {
       onClick: () => {
         (0, Chunk496729.v3)(), exports(Chunk921944.L.TAKE_ACTION)
       },
       noticeType: Chunk981631.kVF.IGNORE_USER_FEEDBACK_NAGBAR,
-      children: Chunk388032.intl.string(Chunk388032.t.vcdNKv)
+      children: Chunk388032.intl.string(Chunk388032.t.vcdNKi)
     })]
   })
 }

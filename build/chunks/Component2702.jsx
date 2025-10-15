@@ -29,41 +29,41 @@ function _(e) {
   } = e, y = (0, u.e7)([f.default], () => {
     let e = f.default.getCurrentUser();
     return s()(null != e, "ChangeUsernameModal: currentUser cannot be undefined"), e
-  }), T = r.useMemo(() => S.ZP.canEditDiscriminator(y) && !y.hasUniqueUsername(), [y]), [p, R] = r.useState(y.username), [L, M] = r.useState(y.discriminator), [P, A] = r.useState(""), [b, C] = r.useState(false), U = (0, u.e7)([E.Z], () => E.Z.getErrors()), w = y.hasUniqueUsername(), N = (0, m.a)(p, w, false, y.username), I = r.useRef(null), k = r.useMemo(() => {
+  }), T = r.useMemo(() => S.ZP.canEditDiscriminator(y) && !y.hasUniqueUsername(), [y]), [p, L] = r.useState(y.username), [R, M] = r.useState(y.discriminator), [A, P] = r.useState(""), [b, U] = r.useState(false), C = (0, u.e7)([E.Z], () => E.Z.getErrors()), w = y.hasUniqueUsername(), N = (0, m.a)(p, w, false, y.username), I = r.useRef(null), k = r.useMemo(() => {
     var e, t, n;
-    return null != (n = null == U || null == (e = U.username) ? true : e[0]) ? n : null == U || null == (t = U.discriminator) ? true : t[0]
-  }, [U]);
+    return null != (n = null == C || null == (e = C.username) ? true : e[0]) ? n : null == C || null == (t = C.discriminator) ? true : t[0]
+  }, [C]);
   r.useEffect(() => {
     if (a === d.Dvm.ENTERED) {
       var e;
       null == (e = I.current) || e.focus()
     }
   }, [a]);
-  let x = L !== y.discriminator;
-  async function Z(e) {
-    e.preventDefault(), C(true);
+  let x = R !== y.discriminator;
+  async function G(e) {
+    e.preventDefault(), U(true);
     let t = await (0, g.Mn)({
       username: p,
-      discriminator: T ? L : true,
-      password: P
+      discriminator: T ? R : true,
+      password: A
     });
-    C(false), (null == t ? true : t.ok) && _()
+    U(false), (null == t ? true : t.ok) && _()
   }
   return (0, i.jsx)("form", {
-    onSubmit: Z,
+    onSubmit: G,
     children: (0, i.jsx)(l.Modal, {
       onClose: _,
       transitionState: a,
-      title: v.intl.string(v.t.m5or54),
-      subtitle: v.intl.string(v.t.SLJvy0),
+      title: v.intl.string(v.t["m5or5+"]),
+      subtitle: v.intl.string(v.t.SLJvy8),
       actions: [{
         variant: "secondary",
-        text: v.intl.string(v.t["ETE/oC"]),
+        text: v.intl.string(v.t["ETE/oK"]),
         onClick: _
       }, {
         variant: "primary",
-        text: v.intl.string(v.t.i4jeWR),
-        onClick: Z,
+        text: v.intl.string(v.t.i4jeWV),
+        onClick: G,
         loading: b
       }],
       children: (0, i.jsxs)(d.Kqy, {
@@ -90,12 +90,12 @@ function _(e) {
               }
               return e
             }({
-              label: v.intl.string(v.t.TWzdWj),
+              label: v.intl.string(v.t.TWzdWl),
               error: k,
               name: "username",
               value: p,
               maxLength: h.l$U,
-              onChange: R,
+              onChange: L,
               inputRef: I,
               fullWidth: true
             }, (n = y.hasUniqueUsername(), (0, o.EQ)(N).with({
@@ -109,12 +109,12 @@ function _(e) {
             }, e => ({
               successMessage: e
             })).otherwise(() => n ? {
-              helperText: v.intl.string(v.t.z7c4bP)
+              helperText: v.intl.string(v.t.z7c4bG)
             } : {})))), !y.hasUniqueUsername() && (0, i.jsx)(d.oil, {
               name: "discriminator",
-              "aria-label": v.intl.string(v.t.ozumaN),
+              "aria-label": v.intl.string(v.t.ozumaG),
               maxLength: 4,
-              value: L,
+              value: R,
               onChange: M,
               disabled: !T,
               leading: "#"
@@ -123,14 +123,14 @@ function _(e) {
             variant: "text-xs/normal",
             color: "header-secondary",
             className: O.discriminatorChangeWarning,
-            children: v.intl.string(v.t.mConUX)
+            children: v.intl.string(v.t.mConUV)
           }) : null]
         }), (0, i.jsx)(d.oil, {
-          label: v.intl.string(v.t.TmdnJ3),
-          error: null == U || null == (t = U.password) ? true : t[0],
+          label: v.intl.string(v.t.TmdnJy),
+          error: null == C || null == (t = C.password) ? true : t[0],
           type: "password",
-          value: P,
-          onChange: A
+          value: A,
+          onChange: P
         })]
       })
     })

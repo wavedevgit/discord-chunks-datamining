@@ -87,17 +87,17 @@ class m extends Chunk647438.PureComponent {
     } = this.props;
     return null != exports[module] && false === exports[module].hasPermission ? (0, Chunk951288.jsx)("div", {
       className: Chunk901650.error,
-      children: Chunk388032.intl.string(Chunk388032.t.cEUT8B)
+      children: Chunk388032.intl.string(Chunk388032.t.cEUT8P)
     }) : this.hasEnoughDiskSpace(module) ? null : (0, Chunk951288.jsx)("div", {
       className: Chunk901650.error,
-      children: Chunk388032.intl.string(Chunk388032.t["duXbE/"])
+      children: Chunk388032.intl.string(Chunk388032.t.duXbEx)
     })
   }
   renderLabel(t, e) {
     let {
       installationPathsMetadata: s
     } = this.props, l = null != e ? e : t;
-    return null != s[t] && null != s[t].availableKB ? u.intl.formatToPlainString(u.t["Y+M3rp"], {
+    return null != s[t] && null != s[t].availableKB ? u.intl.formatToPlainString(u.t["Y+M3rq"], {
       path: l,
       size: (0, o.BU)(s[t].availableKB, {
         useKibibytes: true
@@ -113,7 +113,7 @@ class m extends Chunk647438.PureComponent {
     return (0, Chunk951288.jsxs)("div", {
       className: exports,
       children: [(0, Chunk951288.jsx)(Chunk481060.q4e, {
-        label: Chunk388032.intl.string(Chunk388032.t.WTJuNr),
+        label: Chunk388032.intl.string(Chunk388032.t.WTJuNj),
         autoFocus: require,
         options: this.getOptions(),
         value: module,

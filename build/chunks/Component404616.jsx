@@ -157,7 +157,7 @@ let eo = 72,
         role: S,
         onFocus: T
       } = _,
-      M = function(e, t) {
+      k = function(e, t) {
         if (null == e) return {};
         var n, a, l = function(e, t) {
           if (null == e) return {};
@@ -173,7 +173,7 @@ let eo = 72,
         return l
       }(_, ["role", "onFocus"]),
       {
-        isFocused: k,
+        isFocused: M,
         handleFocus: I,
         handleBlur: R
       } = (0, $.Z)(T);
@@ -191,14 +191,14 @@ let eo = 72,
           ringTarget: y
         },
         onContextMenu: w,
-        "aria-label": el.intl.formatToPlainString(el.t.pgYN6c, {
+        "aria-label": el.intl.formatToPlainString(el.t.pgYN6e, {
           title: g.name,
           count: j
         }),
         className: es.focusTarget,
         onFocus: I,
         onBlur: R
-      }, M)), (0, a.jsxs)("div", {
+      }, k)), (0, a.jsxs)("div", {
         className: es.left,
         children: [(0, a.jsx)(x.y5t, {
           children: (0, a.jsx)(ed, {
@@ -209,7 +209,7 @@ let eo = 72,
             containerWidth: u
           })
         }), (0, a.jsx)(x.Rny, {
-          enabled: !k,
+          enabled: !M,
           children: (0, a.jsx)(eg, {
             channel: g,
             firstMessage: p,
@@ -287,7 +287,7 @@ function em(e) {
     n = (0, h.e7)([K.Z], () => K.Z.getSearchQuery(e.parent_id)),
     a = (0, H.d)(e.guild_id, "forum_post_use_highlighted_channel_name"),
     s = l.useMemo(() => (0, p.nC)(t && null != n ? n : "", a), [t, n, a]);
-  return l.useMemo(() => (0, M.ZP)({
+  return l.useMemo(() => (0, k.ZP)({
     content: e.name,
     embeds: []
   }, {
@@ -312,13 +312,13 @@ let eh = Chunk647438.memo(function(e) {
     className: es.blockedMessage,
     variant: "text-sm/medium",
     color: "text-muted",
-    children: el.intl.string(el.t.Lkp2fB)
+    children: el.intl.string(el.t.Lkp2fH)
   });
   else if (c) g = (0, a.jsx)(x.Text, {
     className: es.blockedMessage,
     variant: "text-sm/medium",
     color: "text-muted",
-    children: el.intl.string(el.t.yWK7ZM)
+    children: el.intl.string(el.t.yWK7ZG)
   });
   else {
     let {
@@ -341,7 +341,7 @@ let eh = Chunk647438.memo(function(e) {
       variant: "text-sm/medium",
       color: i ? "header-secondary" : "text-muted",
       className: es.messageContent,
-      children: null == t ? u ? null : el.intl.string(el.t.mE3KJN) : e
+      children: null == t ? u ? null : el.intl.string(el.t.mE3KJC) : e
     })
   }
   return (0, a.jsxs)(P.aQ.Provider, {
@@ -433,7 +433,7 @@ function ef(e) {
       className: es.newMessageCount,
       variant: "text-sm/semibold",
       color: "text-brand",
-      children: ["(", el.intl.format(el.t.z3PEth, {
+      children: ["(", el.intl.format(el.t.z3PEtr, {
         count: i
       }), ")"]
     })]
@@ -448,7 +448,7 @@ function ex(e) {
     disableReactionCreates: r,
     isLurking: i,
     isPendingMember: o
-  } = (0, k.Z)(n);
+  } = (0, M.Z)(n);
   return null == s || r ? null : (0, a.jsx)(R.le, {
     className: es.updateReactionButton,
     message: t,
@@ -477,7 +477,7 @@ function ej(e) {
     disableReactionUpdates: r,
     isLurking: i,
     isPendingMember: o
-  } = (0, k.Z)(l);
+  } = (0, M.Z)(l);
   return null == s ? null : (0, a.jsx)(R.le, ei({
     className: es.updateReactionButton,
     message: n,
@@ -497,7 +497,7 @@ function eb(e) {
     channel: n
   } = e, {
     sortOrder: l
-  } = (0, W.H)(n.parent_id), s = (0, G.xw)(n, l), r = null == (t = n.threadMetadata) ? true : t.createTimestamp, i = null == r ? null : el.intl.formatToPlainString(el.t["13euCd"], {
+  } = (0, W.H)(n.parent_id), s = (0, G.xw)(n, l), r = null == (t = n.threadMetadata) ? true : t.createTimestamp, i = null == r ? null : el.intl.formatToPlainString(el.t["13euCQ"], {
     timestamp: (0, U.vc)(u()(r), "LLLL")
   });
   return (0, a.jsx)(f.u, {
@@ -547,7 +547,7 @@ function ev(e) {
   if (s) {
     var j;
     return (0, a.jsx)("div", {
-      "aria-label": null != (j = null != u ? u : f) ? j : el.intl.string(el.t.hqwnc2),
+      "aria-label": null != (j = null != u ? u : f) ? j : el.intl.string(el.t.hqwnc3),
       className: r()(es.thumbnailContainer, es.obscuredThumbnailPlaceholder),
       style: {
         maxWidth: ec,

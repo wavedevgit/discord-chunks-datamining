@@ -144,7 +144,7 @@ let tt = false;
 (0, Chunk912471.DL)(), Chunk442837.ZP.initialize(), Chunk298969.Z.loadServer(), Chunk358085.isPlatformEmbedded && (Chunk998502.ZP.on("USER_SETTINGS_OPEN", (e, t) => {
   eY.Z.getLayers().includes(e5.S9g.USER_SETTINGS) || (0, eU.openUserSettings)()
 }), Chunk998502.ZP.on("LAUNCH_APPLICATION", (e, t) => {
-  let n = eK.Z.getActiveLibraryApplication(t);
+  let n = eq.Z.getActiveLibraryApplication(t);
   e3.playApplication(t, n, {
     analyticsParams: {
       location: {
@@ -279,10 +279,10 @@ let ts = [{
       action: i
     } = t.params;
     return e0.Z.whenInitialized(() => {
-      eK.Z.whenInitialized(() => {
+      eq.Z.whenInitialized(() => {
         switch (i) {
           case "launch": {
-            let e = eK.Z.getActiveLibraryApplication(n);
+            let e = eq.Z.getActiveLibraryApplication(n);
             if (null == e) return;
             e3.playApplication(e.id, e, {
               analyticsParams: {
@@ -298,7 +298,7 @@ let ts = [{
             eX.Z.whenInitialized(() => h.Wt(n));
             break;
           case "uninstall": {
-            let e = eK.Z.getActiveLibraryApplication(n);
+            let e = eq.Z.getActiveLibraryApplication(n);
             if (null == e) return;
             (0, u.W)(e.id, e.branchId, e5.Sbl.URI_SCHEME)
           }
@@ -491,7 +491,7 @@ function tu(e) {
     guildId: n,
     pathname: r
   } = e;
-  if (!q.Z.isConnected()) return;
+  if (!K.Z.isConnected()) return;
   let {
     location: i
   } = (0, ey.s1)();
@@ -519,7 +519,7 @@ class td extends Chunk647438.PureComponent {
       key: i
     } = e, o = "REPLACE" === t;
     ! function(e) {
-      if (q.Z.isConnected() || q.Z.isTryingToConnect()) return;
+      if (K.Z.isConnected() || K.Z.isTryingToConnect()) return;
       let t = eH.default.getToken();
       null != t && null != function(e) {
         for (let {
@@ -546,7 +546,7 @@ class td extends Chunk647438.PureComponent {
         threadId: s
       } = to(n), c = (0, ev.Ss)(r), u = (0, ev.cq)(i), d = (0, ev.cq)(s), h = eQ.Z.getGuildId(), g = h !== r;
       if (c && g && p.Z.selectGuild(r), c && u) {
-        let n = eq.Z.getChannelId(h),
+        let n = eK.Z.getChannelId(h),
           a = n !== i;
         if (!tt || g || a || null != o) {
           tt = true, f.default.selectChannel({
@@ -590,7 +590,7 @@ class td extends Chunk647438.PureComponent {
     }(n, r), (0, U.pN)(n, i, o), n !== e5.Z5c.ME || o || e$.ZP.getState().section !== e5.pJs.YOU || d.Z.setSection(e5.pJs.ONLINE)
   }
   ensureChannelMatchesGuild(e) {
-    if (!q.Z.isConnected()) return null;
+    if (!K.Z.isConnected()) return null;
     let {
       pathname: t
     } = e, n = tc(t);

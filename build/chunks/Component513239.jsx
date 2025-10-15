@@ -16,10 +16,10 @@ function e(t) {
   return (0, s.jsx)(r.Modal, {
     transitionState: n,
     size: "sm",
-    title: a.intl.string(a.t.wLrh03),
-    subtitle: a.intl.string(a.t.DW9yJj),
+    title: a.intl.string(a.t.wLrh09),
+    subtitle: a.intl.string(a.t.DW9yJi),
     actions: [{
-      text: a.intl.string(a.t.BddRzS),
+      text: a.intl.string(a.t.BddRzc),
       variant: "primary",
       onClick: i
     }],

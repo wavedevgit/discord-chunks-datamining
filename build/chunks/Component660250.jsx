@@ -37,8 +37,8 @@ let j = function(e) {
     })
   }, [m]), _ = {
     transitionState: j,
-    title: O.intl.string(O.t.QogHld),
-    subtitle: O.intl.string(O.t.qODBkW)
+    title: O.intl.string(O.t.QogHlZ),
+    subtitle: O.intl.string(O.t.qODBkZ)
   }, w = (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsxs)("div", {
       className: y.verification,
@@ -47,7 +47,7 @@ let j = function(e) {
         children: [(0, n.jsx)(l.Heading, {
           variant: "text-sm/bold",
           color: "header-primary",
-          children: O.intl.string(O.t.cgBTyO)
+          children: O.intl.string(O.t.cgBTyM)
         }), null != x && (0, n.jsx)(p.H, {
           className: y.copyIcon,
           chunks: x,
@@ -63,7 +63,7 @@ let j = function(e) {
       className: y.footer,
       variant: "text-sm/normal",
       color: "text-muted",
-      children: O.intl.format(O.t["H3+ktv"], {
+      children: O.intl.format(O.t["H3+ktr"], {
         helpArticle: (0, u.uV)()
       })
     })]

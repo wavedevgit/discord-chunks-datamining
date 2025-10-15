@@ -70,7 +70,7 @@ let m = e => {
       className: _.errorBlock,
       children: (0, r.jsx)(o.M14, {
         type: "critical",
-        children: f.intl.string(f.t.vZ8y7l)
+        children: f.intl.string(f.t.vZ8y7u)
       })
     }) : null, (0, r.jsx)(s.ZP, h({
       className: _.__invalid_formItem,

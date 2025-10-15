@@ -13,5 +13,5 @@ function a() {
 }
 
 function o() {
-  (0, Chunk481060.showToast)((0, Chunk481060.createToast)(Chunk388032.intl.string(Chunk388032.t.s35OuK), Chunk481060.ToastType.FAILURE))
+  (0, Chunk481060.showToast)((0, Chunk481060.createToast)(Chunk388032.intl.string(Chunk388032.t.s35OuL), Chunk481060.ToastType.FAILURE))
 }

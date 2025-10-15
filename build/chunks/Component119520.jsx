@@ -32,12 +32,12 @@ class d extends Chunk647438.PureComponent {
         modalType: Chunk480916.it.NSFW_APP_LISTING,
         onAgree: this.handleAgree,
         onDisagree: this.handleDisagree,
-        title: Chunk388032.intl.formatToPlainString(Chunk388032.t.n5PGEY, {
+        title: Chunk388032.intl.formatToPlainString(Chunk388032.t.n5PGER, {
           name: module
         }),
-        description: Chunk388032.intl.string(Chunk388032.t["bJx/aL"]),
-        agreement: Chunk388032.intl.string(Chunk388032.t.odZq8d),
-        disagreement: Chunk388032.intl.string(Chunk388032.t.hieTsG)
+        description: Chunk388032.intl.string(Chunk388032.t["bJx/aG"]),
+        agreement: Chunk388032.intl.string(Chunk388032.t.odZq8f),
+        disagreement: Chunk388032.intl.string(Chunk388032.t.hieTsL)
       })
     })
   }

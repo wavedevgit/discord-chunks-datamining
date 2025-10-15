@@ -75,7 +75,7 @@ function h(e) {
     "aria-label": n
   } = e, i = _(e, ["className", "aria-label"]);
   return (0, r.jsx)(o.P3F, f(u({}, i), {
-    "aria-label": null != n ? n : s.intl.string(s.t.N86XcP),
+    "aria-label": null != n ? n : s.intl.string(s.t.N86XcH),
     className: a()(l.button, t),
     children: (0, r.jsx)(o.k$p, {
       size: "xs",

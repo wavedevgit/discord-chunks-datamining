@@ -14,10 +14,10 @@ let o = e => {
     tooltipDelay: t
   } = e;
   return (0, r.jsx)(i.u, {
-    text: s.intl.string(s.t["JCFN/y"]),
+    text: s.intl.string(s.t["JCFN//"]),
     delay: t,
     children: (0, r.jsx)(l.hU, {
-      "aria-label": s.intl.string(s.t["JCFN/y"]),
+      "aria-label": s.intl.string(s.t["JCFN//"]),
       variant: "primary",
       icon: l.OgN,
       size: "md",

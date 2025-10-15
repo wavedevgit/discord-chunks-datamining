@@ -25,7 +25,7 @@ function b(e) {
     primaryEntryPointCommand: n,
     application: a,
     showAppLauncherPopup: s = false
-  } = e, [p, b] = i.useState(false), C = (0, r.e7)([l.ZP], () => l.ZP.getCurrentEmbeddedActivity()), y = s ? g.t.cpT0Cq : g.t["0hKkS+"], _ = i.useMemo(() => null != n ? (0, d.XZ)(n.displayName) : g.intl.string(g.t["3xjX0U"]), [n]), v = true !== a.flags && (0, f.yE)(a.flags, m.udG.EMBEDDED), x = null != C && C.applicationId === a.id && (0, o.p)(C.location) === t.channel.id, {
+  } = e, [p, b] = i.useState(false), C = (0, r.e7)([l.ZP], () => l.ZP.getCurrentEmbeddedActivity()), y = s ? g.t.cpT0Cg : g.t["0hKkS0"], _ = i.useMemo(() => null != n ? (0, d.XZ)(n.displayName) : g.intl.string(g.t["3xjX0d"]), [n]), v = true !== a.flags && (0, f.yE)(a.flags, m.udG.EMBEDDED), x = null != C && C.applicationId === a.id && (0, o.p)(C.location) === t.channel.id, {
     analyticsLocations: O
   } = (0, u.ZP)(c.Z.APP_DMS_ENTRY_POINT_COMMAND_BUTTON), j = null != t.channel.recipients ? t.channel.recipients[0] : true;
   return {
@@ -34,7 +34,7 @@ function b(e) {
       context: t,
       applicationId: a.id,
       botUserId: j
-    }) && v ? x ? g.intl.string(g.t["Hi1/aQ"]) : null != _ ? _ : g.intl.string(g.t.zKX8Nu) : g.intl.string(y),
+    }) && v ? x ? g.intl.string(g.t["Hi1/aW"]) : null != _ ? _ : g.intl.string(g.t.zKX8Nj) : g.intl.string(y),
     hasActiveMatchingEmbeddedActivity: x,
     isEmbeddedApp: v,
     currentEmbeddedActivity: C,

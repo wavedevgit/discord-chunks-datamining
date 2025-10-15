@@ -30,9 +30,9 @@ function u(e) {
     x = null != b ? v.slice(0, b) : v,
     y = null != b ? v.slice(b) : [],
     h = null != p ? p : l.Fragment,
-    g = null != (t = null == j ? true : j(d, y.length)) ? t : (n = y.length, d ? s.intl.formatToPlainString(s.t["3SHL+d"], {
+    g = null != (t = null == j ? true : j(d, y.length)) ? t : (n = y.length, d ? s.intl.formatToPlainString(s.t["3SHL+f"], {
       count: n
-    }) : s.intl.formatToPlainString(s.t["8JRFyZ"], {
+    }) : s.intl.formatToPlainString(s.t["8JRFyc"], {
       count: n
     }));
   return (0, r.jsx)(h, {

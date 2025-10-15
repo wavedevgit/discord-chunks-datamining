@@ -39,9 +39,9 @@ function A(e) {
     guildId: N,
     channelId: C,
     subsection: D,
-    onClose: Z
+    onClose: k
   } = e, {
-    voiceActivityStatusEnabled: k
+    voiceActivityStatusEnabled: Z
   } = (0, s.U)({
     location: "UserProfileModalV2Activity"
   }), _ = (0, p.b)({
@@ -49,17 +49,17 @@ function A(e) {
   }), R = (0, c.P6)("UserProfileModalV2Activity"), {
     live: L,
     recent: G,
-    stream: U
+    stream: M
   } = (0, m.Z)(t.id), {
-    voiceChannel: M,
+    voiceChannel: U,
     voiceActivity: W
   } = (0, h.Z)({
     userId: t.id,
     guildId: N
-  }), F = (0, i.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t.id)), B = t.id === n.id, z = (0, i.e7)([f.Z, d.Z], () => {
+  }), F = (0, i.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t.id)), B = t.id === n.id, H = (0, i.e7)([f.Z, d.Z], () => {
     let e = B ? f.Z.getStatus() : d.Z.getStatus(t.id);
     return e === l.Skl.OFFLINE || e === l.Skl.INVISIBLE
-  }), H = L.length > 0 || null != U, Y = k && null == U && null == W && null != M, V = !z && (H || Y), q = G.length > 0, K = L.some(e => (0, a.Z)(e));
+  }), z = L.length > 0 || null != M, Y = Z && null == M && null == W && null != U, V = !H && (z || Y), q = G.length > 0, K = L.some(e => (0, a.Z)(e));
   if (!V && !q && F) return (0, r.jsx)("div", {
     className: T.cards,
     children: Array.from({
@@ -78,12 +78,12 @@ function A(e) {
   if (!V && !q && !F) {
     var X;
     return B ? (0, r.jsx)(O.Uf, {
-      onClose: Z
+      onClose: k
     }) : (0, r.jsx)(O.P9, {
       user: t,
       guildId: null != (X = null == A ? true : A.guildId) ? X : N,
       channelId: C,
-      onClose: Z
+      onClose: k
     })
   }
   return (0, r.jsxs)(P.F, {
@@ -92,7 +92,7 @@ function A(e) {
     children: [(() => {
       let e = B && R && !K;
       return V ? (0, r.jsx)(I.Z, {
-        heading: E.intl.string(E.t.J6STd9),
+        heading: E.intl.string(E.t.J6STd3),
         children: (0, r.jsxs)("ul", {
           className: T.cards,
           children: [e && (0, r.jsx)("li", {
@@ -103,41 +103,41 @@ function A(e) {
             children: (0, r.jsx)(x.Z, {
               user: t,
               currentUser: n,
-              voiceChannel: M,
-              onClose: Z
+              voiceChannel: U,
+              onClose: k
             })
-          }), null != U && (0, r.jsx)("li", {
+          }), null != M && (0, r.jsx)("li", {
             children: (0, r.jsx)(b.Z, {
               user: t,
               currentUser: n,
-              stream: U,
-              onClose: Z
+              stream: M,
+              onClose: k
             })
           }), L.map((e, i) => (0, r.jsx)("li", {
             children: (0, r.jsx)(y.Z, {
               user: t,
               currentUser: n,
               activity: e,
-              onClose: Z
+              onClose: k
             })
           }, "live-".concat(i))), _ && Y && (0, r.jsx)("li", {
             children: (0, r.jsx)(x.Z, {
               user: t,
               currentUser: n,
-              voiceChannel: M,
-              onClose: Z
+              voiceChannel: U,
+              onClose: k
             })
           })]
         })
       }) : e ? (0, r.jsx)(I.Z, {
-        heading: E.intl.string(E.t.J6STd9),
+        heading: E.intl.string(E.t.J6STd3),
         children: (0, r.jsx)(v.Z, {
           variant: "horizontal"
         })
       }) : null
     })(), q ? (0, r.jsx)(I.Z, {
-      heading: E.intl.string(E.t.jzgEoL),
-      introText: B ? E.intl.format(E.t["4bk9Ak"], {
+      heading: E.intl.string(E.t.jzgEoK),
+      introText: B ? E.intl.format(E.t["4bk9Ag"], {
         learnMoreHook: (e, t) => (0, r.jsx)(l.Anchor, {
           href: g.Z.getArticleURL(w.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
@@ -150,7 +150,7 @@ function A(e) {
           children: (0, r.jsx)(j.Z, {
             user: t,
             entry: e,
-            onClose: Z
+            onClose: k
           })
         }, e.id))
       })

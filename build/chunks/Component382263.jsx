@@ -44,7 +44,7 @@ let x = {
   }({}, e)),
   options: {
     isLargeModal: true,
-    useBreadcrumbLabel: () => Chunk388032.intl.string(Chunk388032.t["W685+b"])
+    useBreadcrumbLabel: () => Chunk388032.intl.string(Chunk388032.t["W685+f"])
   }
 };
 
@@ -63,7 +63,7 @@ function O(e) {
       onClick: () => n(u),
       disabled: r,
       loading: s,
-      text: j.intl.string(j.t.XiOHRX)
+      text: j.intl.string(j.t.XiOHRU)
     }), i ? (0, l.jsx)(c.Z, {
       onClick: t
     }) : null]
@@ -103,7 +103,7 @@ function C(e) {
             selectedSkuId: k,
             validateSelectedGift: M
           }), (0, l.jsx)(o.Z, {
-            sectionTitle: j.intl.string(j.t.B3miE8),
+            sectionTitle: j.intl.string(j.t.B3miEx),
             onTextChange: e => null == x ? true : x(e),
             pendingText: b,
             currentText: b,

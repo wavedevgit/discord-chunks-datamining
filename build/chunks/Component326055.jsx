@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk603213 = require("./603213.jsx"),
   Chunk606876 = require("./606876.jsx"),
   Chunk535396 = require("./535396.js"),
-  Chunk149829 = require("./149829.js"),
+  Chunk989308 = require("./989308.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk802795 = require("./802795.js");
 
@@ -107,7 +107,7 @@ function j(e) {
           }), null != N && (0, r.jsx)(l.Text, {
             className: h.description,
             variant: "text-sm/normal",
-            children: C.intl.formatToPlainString(f.default.NAFGkH, {
+            children: C.intl.formatToPlainString(f.default.NAFGkJ, {
               level: N.title
             })
           }), (0, r.jsx)(g.q, {

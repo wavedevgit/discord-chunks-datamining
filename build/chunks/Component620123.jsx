@@ -41,7 +41,7 @@ class d extends Chunk647438.Component {
         label: e.name,
         value: e.id
       })) : [],
-      placeholder: Chunk442837 ? Chunk388032.intl.string(Chunk388032.t.hKcgP5) : Chunk388032.intl.string(Chunk388032.t.QV60Uq),
+      placeholder: Chunk442837 ? Chunk388032.intl.string(Chunk388032.t.hKcgPz) : Chunk388032.intl.string(Chunk388032.t.QV60Ul),
       value: exports,
       onChange: this.handleChange,
       className: require,

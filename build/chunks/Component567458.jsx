@@ -21,10 +21,10 @@ function s(e) {
     }), (0, r.jsx)(i.Text, {
       variant: "text-sm/normal",
       className: o.content,
-      children: a.intl.string(a.t.rdzeVP)
+      children: a.intl.string(a.t.rdzeVF)
     }), (0, r.jsx)(i.Button, {
       variant: "overlay-primary",
-      text: a.intl.string(a.t["NX+WJN"]),
+      text: a.intl.string(a.t["NX+WJC"]),
       fullWidth: true,
       onClick: () => {
         t(l.L.AUTO)

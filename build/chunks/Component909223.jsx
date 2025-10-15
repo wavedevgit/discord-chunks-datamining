@@ -2,7 +2,7 @@
 /** chunk id: 909223, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => y
+  Z: () => O
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -56,9 +56,9 @@ function j(e, t) {
 }
 Chunk442837.ZP.initialize();
 let I = {
-    [Chunk82554.BM.MESSAGE]: Chunk388032.t.fuqnBC,
-    [Chunk82554.BM.USER]: Chunk388032.t.F4jrRW,
-    [Chunk82554.BM.GUILD]: Chunk388032.t.gH3aMs
+    [Chunk82554.BM.MESSAGE]: Chunk388032.t.fuqnBA,
+    [Chunk82554.BM.USER]: Chunk388032.t.F4jrRU,
+    [Chunk82554.BM.GUILD]: Chunk388032.t.gH3aMj
   },
   N = e => {
     let {
@@ -79,8 +79,8 @@ let I = {
           onFormSubmit: l,
           onResend: t,
           onSuccess: o,
-          headerText: x.intl.string(x.t.H3Q7U8),
-          confirmButtonText: x.intl.string(x.t["13ofGu"]),
+          headerText: x.intl.string(x.t.H3Q7U1),
+          confirmButtonText: x.intl.string(x.t["13ofGh"]),
           impression: {
             impressionName: s.ImpressionNames.URF_CONFIRM_EMAIL_CODE
           }
@@ -95,8 +95,8 @@ let I = {
         } = await n.e("20670").then(n.bind(n, 993018));
         return t => (0, r.jsx)(e, j(b({}, t), {
           onSuccess: l,
-          headerText: x.intl.string(x.t.ZLRYGU),
-          confirmButtonText: x.intl.string(x.t.PDTjLN)
+          headerText: x.intl.string(x.t.ZLRYGR),
+          confirmButtonText: x.intl.string(x.t.PDTjLC)
         }))
       }),
       children: [(0, r.jsx)(a.Text, {
@@ -108,7 +108,7 @@ let I = {
       })]
     })
   },
-  y = () => {
+  O = () => {
     let [e, t] = Chunk647438.useState(true), [n, s] = Chunk647438.useState([]), h = (0, Chunk442837.e7)([Chunk314897.default], () => Chunk314897.default.isAuthenticated()), g = (0, Chunk442837.e7)([Chunk353926.Z], () => Chunk353926.Z.hasLoadedExperiments), b = () => {
       (0, Chunk185625.Jj)().then(e => {
         let {
@@ -134,10 +134,10 @@ let I = {
     }) : null != require && require.length > 0 && (0, Chunk951288.jsxs)(Chunk388905.ZP, {
       children: [(0, Chunk951288.jsx)(Chunk388905.Dx, {
         className: Chunk197571.marginBottom8,
-        children: Chunk388032.intl.string(Chunk388032.t.Z11w18)
+        children: Chunk388032.intl.string(Chunk388032.t.Z11w19)
       }), (0, Chunk951288.jsx)(Chunk388905.DK, {
         className: Chunk197571.marginBottom8,
-        children: Chunk388032.intl.format(Chunk388032.t["532l+q"], {
+        children: Chunk388032.intl.format(Chunk388032.t["532l+v"], {
           supportURL: Chunk63063.Z.getArticleURL(Chunk981631.BhN.COPYRIGHT_AND_IP_POLICY)
         })
       }), (0, Chunk951288.jsx)("div", {

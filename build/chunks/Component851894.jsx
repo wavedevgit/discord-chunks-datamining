@@ -145,7 +145,7 @@ function Z(e) {
     value: n,
     children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
-      children: D.intl.format(D.t["/PTB2E"], {
+      children: D.intl.format(D.t["/PTB2N"], {
         helpCenterLink: T.Z.getArticleURL(w.BhN.GUILD_PROFILES)
       })
     }), null != t ? (0, r.jsxs)(r.Fragment, {
@@ -158,7 +158,7 @@ function Z(e) {
         profilePreviewTitle: (0, r.jsx)(l.Heading, {
           variant: "heading-md/medium",
           className: L.profilePreviewTitle,
-          children: D.intl.formatToPlainString(D.t.Tc0slG, {
+          children: D.intl.formatToPlainString(D.t.Tc0slJ, {
             guildName: null == t ? true : t.name
           })
         }),

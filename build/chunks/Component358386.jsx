@@ -18,7 +18,7 @@ function s(e, t) {
   return null == d || null == s || e.id === d.ownerId || e.bot || !(0, a.yn)(d, s) ? null : (0, l.jsx)(i.sNh, {
     id: "transfer-ownership",
     color: "danger",
-    label: c.intl.string(c.t.Z5s7PM),
+    label: c.intl.string(c.t.Z5s7PD),
     action: () => (0, i.ZDy)(async () => {
       let {
         default: t

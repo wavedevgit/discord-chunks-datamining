@@ -1,8 +1,8 @@
 /** Chunk was on 66201 **/
 /** chunk id: 501801, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  mp: () => b,
-  tP: () => x,
+  mp: () => x,
+  tP: () => b,
   xO: () => D
 }), require("./539854.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
@@ -34,13 +34,13 @@ function D(e, t) {
   let n = R.vc[e.targetType];
   return null != n && true === n[t.key]
 }
-let U = {
+let L = {
   [Chunk981631.vB8.CREATE]: Chunk404211.typeCreate,
   [Chunk981631.vB8.UPDATE]: Chunk404211.typeUpdate,
   [Chunk981631.vB8.DELETE]: Chunk404211.typeDelete
 };
 
-function L(e) {
+function U(e) {
   let {
     applicationId: t
   } = e, n = (0, A.q)(t);
@@ -58,14 +58,14 @@ function M(e, t) {
     }
   }, e)
 }
-class b extends Chunk647438.PureComponent {
+class x extends Chunk647438.PureComponent {
   render() {
     let {
       actionType: e,
       targetType: t,
       action: n,
       themeOverride: l
-    } = this.props, i = null != Chunk647438 ? Chunk404211["themeOverride".concat((0, Chunk624138.De)(Chunk647438))] : null, a = s()(Chunk404211.icon, U[module], require === Chunk981631.rsA.MESSAGE_DELETE ? Chunk404211.targetMessage : require === Chunk981631.rsA.AUTO_MODERATION_BLOCK_MESSAGE || require === Chunk981631.rsA.AUTO_MODERATION_FLAG_TO_CHANNEL || require === Chunk981631.rsA.AUTO_MODERATION_USER_COMMUNICATION_DISABLED || require === Chunk981631.rsA.AUTO_MODERATION_QUARANTINE_USER ? Chunk404211.autoModerationBlockMessage : ({
+    } = this.props, i = null != Chunk647438 ? Chunk404211["themeOverride".concat((0, Chunk624138.De)(Chunk647438))] : null, a = s()(Chunk404211.icon, L[module], require === Chunk981631.rsA.MESSAGE_DELETE ? Chunk404211.targetMessage : require === Chunk981631.rsA.AUTO_MODERATION_BLOCK_MESSAGE || require === Chunk981631.rsA.AUTO_MODERATION_FLAG_TO_CHANNEL || require === Chunk981631.rsA.AUTO_MODERATION_USER_COMMUNICATION_DISABLED || require === Chunk981631.rsA.AUTO_MODERATION_QUARANTINE_USER ? Chunk404211.autoModerationBlockMessage : ({
       [Chunk981631.KFR.ALL]: Chunk404211.targetAll,
       [Chunk981631.KFR.GUILD]: Chunk404211.targetGuild,
       [Chunk981631.KFR.CHANNEL]: Chunk404211.targetChannel,
@@ -98,7 +98,7 @@ class b extends Chunk647438.PureComponent {
   }
 }
 
-function x(e) {
+function b(e) {
   let {
     log: t,
     guild: n,
@@ -196,13 +196,13 @@ function x(e) {
                 return (0, r.jsxs)("li", {
                   children: [(0, r.jsxs)("div", {
                     className: C.onboardingChangeLogItemTitle,
-                    children: [(0, r.jsx)(b, {
+                    children: [(0, r.jsx)(x, {
                       actionType: S.vB8.CREATE,
                       targetType: t.targetType,
                       action: t.action
                     }), (0, r.jsx)(d.Text, {
                       variant: "text-md/normal",
-                      children: p.intl.format(p.t.CZ1tyo, {
+                      children: p.intl.format(p.t.CZ1tys, {
                         title: i
                       })
                     })]
@@ -210,12 +210,12 @@ function x(e) {
                     className: C.onboardingChangeLogItemChanges,
                     children: [u.length > 0 && (0, r.jsx)(d.Text, {
                       variant: "text-md/normal",
-                      children: p.intl.format(p.t["gt/5z1"], {
+                      children: p.intl.format(p.t["gt/5z8"], {
                         roles: u.join(", ")
                       })
                     }), c.length > 0 && (0, r.jsx)(d.Text, {
                       variant: "text-md/normal",
-                      children: p.intl.format(p.t["4q006W"], {
+                      children: p.intl.format(p.t["4q006e"], {
                         channels: c.join(", ")
                       })
                     })]
@@ -224,13 +224,13 @@ function x(e) {
               }), _.map(e => (0, r.jsx)("li", {
                 children: (0, r.jsxs)("div", {
                   className: C.onboardingChangeLogItemTitle,
-                  children: [(0, r.jsx)(b, {
+                  children: [(0, r.jsx)(x, {
                     actionType: S.vB8.DELETE,
                     targetType: t.targetType,
                     action: t.action
                   }), (0, r.jsx)(d.Text, {
                     variant: "text-md/normal",
-                    children: p.intl.format(p.t["m3dt+K"], {
+                    children: p.intl.format(p.t["m3dt+P"], {
                       title: e.title
                     })
                   })]
@@ -243,13 +243,13 @@ function x(e) {
                 return (o().isEqual(e.title, n.title) || g.push("title"), o().isEqual(e.description, n.description) || g.push("description"), 0 === A.length && 0 === T.length && 0 === I.length && 0 === m.length && 0 === g.length) ? null : (0, r.jsxs)("li", {
                   children: [(0, r.jsxs)("div", {
                     className: C.onboardingChangeLogItemTitle,
-                    children: [(0, r.jsx)(b, {
+                    children: [(0, r.jsx)(x, {
                       actionType: S.vB8.UPDATE,
                       targetType: t.targetType,
                       action: t.action
                     }), (0, r.jsx)(d.Text, {
                       variant: "text-md/normal",
-                      children: p.intl.format(p.t["WZO+ia"], {
+                      children: p.intl.format(p.t["WZO+iY"], {
                         title: l
                       })
                     })]
@@ -257,27 +257,27 @@ function x(e) {
                     className: C.onboardingChangeLogItemChanges,
                     children: [A.length > 0 && (0, r.jsx)(d.Text, {
                       variant: "text-md/normal",
-                      children: p.intl.format(p.t["R+km+d"], {
+                      children: p.intl.format(p.t["R+km+f"], {
                         roles: A.join(", ")
                       })
                     }), T.length > 0 && (0, r.jsx)(d.Text, {
                       variant: "text-md/normal",
-                      children: p.intl.format(p.t.xIVRoU, {
+                      children: p.intl.format(p.t.xIVRoa, {
                         roles: T.join(", ")
                       })
                     }), I.length > 0 && (0, r.jsx)(d.Text, {
                       variant: "text-md/normal",
-                      children: p.intl.format(p.t.iYowX4, {
+                      children: p.intl.format(p.t.iYowX1, {
                         channels: I.join(", ")
                       })
                     }), m.length > 0 && (0, r.jsx)(d.Text, {
                       variant: "text-md/normal",
-                      children: p.intl.format(p.t.JLdJpL, {
+                      children: p.intl.format(p.t.JLdJpK, {
                         channels: m.join(", ")
                       })
                     }), g.map((t, l) => (0, r.jsx)(d.Text, {
                       variant: "text-md/normal",
-                      children: p.intl.format(p.t["0698za"], {
+                      children: p.intl.format(p.t["0698zc"], {
                         key: t,
                         oldValue: e[t],
                         newValue: n[t]
@@ -308,9 +308,9 @@ function x(e) {
                         className: C.onboardingChangeLogItemTitle,
                         children: (0, r.jsx)(d.Text, {
                           variant: "text-md/normal",
-                          children: p.intl.format(p.t["PrOzA+"], {
-                            oldUser: null != (i = null == o ? true : o.username) ? i : p.intl.string(p.t.PoWNfe),
-                            newUser: null != (s = null == u ? true : u.username) ? s : p.intl.string(p.t.PoWNfe)
+                          children: p.intl.format(p.t.PrOzAw, {
+                            oldUser: null != (i = null == o ? true : o.username) ? i : p.intl.string(p.t.PoWNfX),
+                            newUser: null != (s = null == u ? true : u.username) ? s : p.intl.string(p.t.PoWNfX)
                           })
                         })
                       })
@@ -320,8 +320,8 @@ function x(e) {
                         className: C.onboardingChangeLogItemTitle,
                         children: (0, r.jsx)(d.Text, {
                           variant: "text-md/normal",
-                          children: p.intl.format(p.t.oB7rBb, {
-                            oldMessage: null != (a = null == t ? true : t.message) ? a : p.intl.string(p.t.PoWNfe),
+                          children: p.intl.format(p.t.oB7rBQ, {
+                            oldMessage: null != (a = null == t ? true : t.message) ? a : p.intl.string(p.t.PoWNfX),
                             newMessage: e.message
                           })
                         })
@@ -343,13 +343,13 @@ function x(e) {
                     children: [c.map(e => (0, r.jsx)("li", {
                       children: (0, r.jsxs)("div", {
                         className: C.onboardingChangeLogItemTitle,
-                        children: [(0, r.jsx)(b, {
+                        children: [(0, r.jsx)(x, {
                           actionType: S.vB8.CREATE,
                           targetType: s,
                           action: a
                         }), (0, r.jsx)(d.Text, {
                           variant: "text-md/normal",
-                          children: p.intl.format(p.t.oFSu66, {
+                          children: p.intl.format(p.t["oFSu6+"], {
                             name: e.title
                           })
                         })]
@@ -357,13 +357,13 @@ function x(e) {
                     }, e.channel_id)), E.map(e => (0, r.jsx)("li", {
                       children: (0, r.jsxs)("div", {
                         className: C.onboardingChangeLogItemTitle,
-                        children: [(0, r.jsx)(b, {
+                        children: [(0, r.jsx)(x, {
                           actionType: S.vB8.DELETE,
                           targetType: s,
                           action: a
                         }), (0, r.jsx)(d.Text, {
                           variant: "text-md/normal",
-                          children: p.intl.format(p.t.GssWar, {
+                          children: p.intl.format(p.t.GssWam, {
                             name: e.title
                           })
                         })]
@@ -383,13 +383,13 @@ function x(e) {
                     children: [c.map(e => (0, r.jsx)("li", {
                       children: (0, r.jsxs)("div", {
                         className: C.onboardingChangeLogItemTitle,
-                        children: [(0, r.jsx)(b, {
+                        children: [(0, r.jsx)(x, {
                           actionType: S.vB8.CREATE,
                           targetType: s,
                           action: a
                         }), (0, r.jsx)(d.Text, {
                           variant: "text-md/normal",
-                          children: p.intl.format(p.t.HlGndE, {
+                          children: p.intl.format(p.t.HlGndH, {
                             name: e.title
                           })
                         })]
@@ -397,13 +397,13 @@ function x(e) {
                     }, e.channel_id)), E.map(e => (0, r.jsx)("li", {
                       children: (0, r.jsxs)("div", {
                         className: C.onboardingChangeLogItemTitle,
-                        children: [(0, r.jsx)(b, {
+                        children: [(0, r.jsx)(x, {
                           actionType: S.vB8.DELETE,
                           targetType: s,
                           action: a
                         }), (0, r.jsx)(d.Text, {
                           variant: "text-md/normal",
-                          children: p.intl.format(p.t["7pysg6"], {
+                          children: p.intl.format(p.t["7pysg4"], {
                             name: e.title
                           })
                         })]
@@ -432,8 +432,8 @@ function x(e) {
           let I = p.intl.format(i, {
             oldValue: u,
             newValue: c,
-            count: Array.isArray(c) ? c.length : 0,
-            subtarget: null != (n = null != (t = o.options.subtarget) ? t : A.subtarget) ? n : "",
+            count: Array.isArray(c) ? c.length : null,
+            subtarget: null != (n = null != (t = o.options.subtarget) ? t : A.subtarget) ? n : null,
             newColorHook: (e, t) => M(t, A.newValue),
             newColorsHook: (e, t) => {
               let {
@@ -467,7 +467,7 @@ function x(e) {
             }, t),
             applicationHook: (e, t) => {
               var n;
-              return (0, r.jsx)(L, {
+              return (0, r.jsx)(U, {
                 applicationId: null != (n = null == u ? true : u.application_id) ? n : null == c ? true : c.application_id
               }, t)
             }

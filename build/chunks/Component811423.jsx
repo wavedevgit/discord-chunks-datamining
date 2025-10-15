@@ -18,7 +18,7 @@ function c(e, t) {
     children: (0, i.jsx)(l.sNh, {
       id: "report-app",
       color: "danger",
-      label: s.intl.string(s.t.NgA5vp),
+      label: s.intl.string(s.t.NgA5vr),
       action: () => (0, a.uu)({
         application: e,
         entrypoint: "activity_ui_channel_call",

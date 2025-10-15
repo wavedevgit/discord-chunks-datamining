@@ -59,7 +59,7 @@ function N(e) {
     location: "UserProfileVoiceActivityCard"
   }), U = () => {
     if (t.id !== n.id) return null;
-    let e = i.isDM() || i.isGroupDM() ? A.intl.string(A.t["+DsWbX"]) : A.intl.string(A.t.xOVEjc);
+    let e = i.isDM() || i.isGroupDM() ? A.intl.string(A.t["+DsWbW"]) : A.intl.string(A.t.xOVEjY);
     return (0, r.jsx)(s.u, {
       text: e,
       children: (0, r.jsx)(l.d3s, {
@@ -73,7 +73,7 @@ function N(e) {
       onAction: D,
       onClose: R
     })
-  }), B = i.isDM() || i.isGroupDM() ? A.intl.string(A.t["9FaEzi"]) : i.isGuildStageVoice() ? A.intl.string(A.t.QygGCN) : A.intl.string(A.t.msxteM);
+  }), B = i.isDM() || i.isGroupDM() ? A.intl.string(A.t["9FaEzs"]) : i.isGuildStageVoice() ? A.intl.string(A.t.QygGCA) : A.intl.string(A.t.msxteH);
   return (0, r.jsx)(u.Gt, {
     value: w,
     children: (0, r.jsxs)(E.Z, {

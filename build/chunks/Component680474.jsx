@@ -46,7 +46,7 @@ function _(e) {
       }), (0, r.jsx)(i.X6q, {
         variant: "heading-lg/semibold",
         color: "header-primary",
-        children: h.intl.string(h.t["mD+J/i"])
+        children: h.intl.string(h.t["mD+J/v"])
       }), (0, r.jsx)(u.Z, {
         application: t,
         view: "embedded"

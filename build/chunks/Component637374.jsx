@@ -95,7 +95,7 @@ function Y(e) {
       color: "currentColor",
       className: B.libraryIcon
     }), (0, r.jsx)("div", {
-      children: n.isHidden() ? G.intl.string(G.t.Wi99Ro) : G.intl.string(G.t["+tXad7"])
+      children: n.isHidden() ? G.intl.string(G.t.Wi99Rk) : G.intl.string(G.t["+tXad3"])
     })]
   })
 }
@@ -125,17 +125,17 @@ class W extends Chunk647438.PureComponent {
       className: o()(B.invalidPoop, {
         [B.invalidPoopHorizontal]: this.isHorizontal
       })
-    })), Z(this, "renderTitle", () => this.props.isSelfGift ? G.intl.string(G.t.mT9B49) : G.intl.string(G.t.Vo5yHw)), Z(this, "renderActions", () => this.props.isSelfGift ? (0, r.jsx)(d.Button, {
+    })), Z(this, "renderTitle", () => this.props.isSelfGift ? G.intl.string(G.t["mT9B4+"]) : G.intl.string(G.t.Vo5yHx)), Z(this, "renderActions", () => this.props.isSelfGift ? (0, r.jsx)(d.Button, {
       variant: "primary",
       size: "sm",
-      text: G.intl.string(G.t["jcSP+g"]),
+      text: G.intl.string(G.t["jcSP+v"]),
       onClick: this.handleViewInventory
     }) : (0, r.jsx)(d.Button, {
       variant: "primary",
       size: "sm",
-      text: G.intl.string(G.t.bUvv1f),
+      text: G.intl.string(G.t.bUvv1d),
       disabled: true
-    })), Z(this, "renderTagline", () => this.props.isSelfGift ? G.intl.string(G.t.eEM3dq) : G.intl.string(G.t.tB8S6u))
+    })), Z(this, "renderTagline", () => this.props.isSelfGift ? G.intl.string(G.t.eEM3dn) : G.intl.string(G.t.tB8S6u))
   }
 }
 class K extends Chunk647438.Component {
@@ -168,7 +168,7 @@ class K extends Chunk647438.Component {
         children: [e.hasMultipleCopies ? (0, r.jsx)("div", {
           children: this.renderGiftCodeCopiesLeft(e)
         }) : null, e.redeemed || e.isClaimed || null != t || null == e.expiresAt ? null : (0, r.jsx)("div", {
-          children: G.intl.format(G.t.nZBvUR, {
+          children: G.intl.format(G.t.nZBvUV, {
             hours: e.expiresAt.diff(l()(), "h")
           })
         })]
@@ -176,7 +176,7 @@ class K extends Chunk647438.Component {
     })
   }
   renderGiftCodeCopiesLeft(e) {
-    let t = e.isSubscription ? G.t["4iHwKT"] : G.t.YeLq88;
+    let t = e.isSubscription ? G.t["4iHwKS"] : G.t["YeLq8/"];
     return G.intl.format(t, {
       remaining: e.remainingUses,
       total: e.maxUses
@@ -194,7 +194,7 @@ class K extends Chunk647438.Component {
     return (e.redeemed || o || e.isClaimed || !n.verified) && (a.color = u.zx.Colors.BRAND, a.disabled = true), (0, r.jsx)(u.zx, H(F({}, a), {
       className: (0, m.mO)(e) ? B.collectiblesAcceptButton : null,
       size: u.zx.Sizes.SMALL,
-      children: e.redeemed ? G.intl.string(G.t.BTihou) : null != e.giftStyle ? G.intl.string(G.t.TiZFqX) : G.intl.string(G.t.bUvv1f)
+      children: e.redeemed ? G.intl.string(G.t.BTihoq) : null != e.giftStyle ? G.intl.string(G.t.TiZFqa) : G.intl.string(G.t.bUvv1d)
     }))
   }
   isCustomGiftMessage() {
@@ -209,9 +209,9 @@ class K extends Chunk647438.Component {
       isSelfGift: n,
       sku: r
     } = this.props;
-    return this.isCustomGiftMessage() && !n ? G.intl.formatToPlainString(G.t.t1SOId, {
+    return this.isCustomGiftMessage() && !n ? G.intl.formatToPlainString(G.t.t1SOIS, {
       recipientDisplayName: M.ZP.getName(t)
-    }) : null == r ? null : e.isSubscription ? n ? G.intl.string(G.t["2PJ1NP"]) : G.intl.string(G.t.hrnGng) : n ? G.intl.string(G.t.QLEMld) : G.intl.string(G.t.W4DBcy)
+    }) : null == r ? null : e.isSubscription ? n ? G.intl.string(G.t["2PJ1ND"]) : G.intl.string(G.t.hrnGnp) : n ? G.intl.string(G.t.QLEMlZ) : G.intl.string(G.t.W4DBc3)
   }
   renderBody(e) {
     let {
@@ -222,14 +222,14 @@ class K extends Chunk647438.Component {
       subscriptionPlan: a,
       currentUser: o
     } = this.props;
-    if (null == r) return G.intl.string(G.t.ZTNur7);
+    if (null == r) return G.intl.string(G.t.ZTNur6);
     if (!n && this.isCustomGiftMessage() && !e.redeemed) return;
-    let s = r.isPreorder() ? G.intl.formatToPlainString(G.t.evinTd, {
+    let s = r.isPreorder() ? G.intl.formatToPlainString(G.t.evinTU, {
       name: r.name
     }) : r.name;
     if (e.redeemed) return e.isSubscription || (0, m.mO)(e) || (0, D.HL)({
       productLine: null == r ? true : r.productLine
-    }) ? G.intl.string(G.t.mVC3Cv) : G.intl.format(G.t["ss/L+/"], {
+    }) ? G.intl.string(G.t.mVC3Cg) : G.intl.format(G.t["ss/L+/"], {
       skuName: s,
       onViewInLibrary: this.handleViewLibrary
     });
@@ -237,48 +237,48 @@ class K extends Chunk647438.Component {
       skuName: s,
       onViewInLibrary: this.handleViewLibrary
     });
-    if (e.isClaimed) return G.intl.string(G.t.ARWFQX);
-    if (!o.verified) return G.intl.format(G.t.GQxl7v, {
+    if (e.isClaimed) return G.intl.string(G.t.ARWFQU);
+    if (!o.verified) return G.intl.format(G.t.GQxl7u, {
       onClick: this.handleVerificationClick
     });
-    if (n) return e.isSelfRedeemable ? G.intl.string(G.t["lQI+cB"]) : G.intl.formatToPlainString(G.t["A+etHx"], {
+    if (n) return e.isSelfRedeemable ? G.intl.string(G.t["lQI+cH"]) : G.intl.formatToPlainString(G.t["A+etHx"], {
       skuName: s
     });
-    if (e.isExistingPremiumSubscriptionDisallowed) return G.intl.string(G.t.UCIU9y);
-    if (e.hasMultipleCopies) return null != i ? e.isSubscription ? G.intl.format(G.t.l3VxgG, {
+    if (e.isExistingPremiumSubscriptionDisallowed) return G.intl.string(G.t["UCIU9/"]);
+    if (e.hasMultipleCopies) return null != i ? e.isSubscription ? G.intl.format(G.t.l3VxgI, {
       username: M.ZP.getUserTag(i),
       maxUses: e.maxUses,
       skuName: s
-    }) : G.intl.format(G.t["9cYrw5"], {
+    }) : G.intl.format(G.t["9cYrw8"], {
       username: M.ZP.getUserTag(i),
       totalCopies: e.maxUses,
       skuName: s
-    }) : e.isSubscription ? G.intl.formatToPlainString(G.t.svrO3W, {
+    }) : e.isSubscription ? G.intl.formatToPlainString(G.t.svrO3d, {
       maxUses: e.maxUses,
       skuName: s
-    }) : G.intl.formatToPlainString(G.t["3AgAn3"], {
+    }) : G.intl.formatToPlainString(G.t["3AgAn5"], {
       totalCopies: e.maxUses,
       skuName: s
     });
     if (e.isSubscription) {
-      if (null == a) return G.intl.string(G.t.ZTNur7);
+      if (null == a) return G.intl.string(G.t.ZTNur6);
       if (null != i) {
-        let e = a.interval === U.rV.MONTH ? G.t["/RDIEA"] : G.t["3CX6Ev"];
+        let e = a.interval === U.rV.MONTH ? G.t["/RDIEB"] : G.t["3CX6Eh"];
         return G.intl.format(e, {
           username: M.ZP.getUserTag(i),
           skuName: s,
           intervalCount: a.intervalCount
         })
       }
-      let e = a.interval === U.rV.MONTH ? G.t["2O4lo5"] : G.t["+XjmsR"];
+      let e = a.interval === U.rV.MONTH ? G.t["2O4lo6"] : G.t["+Xjmsb"];
       return G.intl.format(e, {
         skuName: s,
         intervalCount: a.intervalCount
       })
     }
-    return null != i ? G.intl.format(G.t["3HsdQ/"], {
+    return null != i ? G.intl.format(G.t["3HsdQ0"], {
       username: M.ZP.getUserTag(i)
-    }) : G.intl.string(G.t.Jdnjjj)
+    }) : G.intl.string(G.t.Jdnjjo)
   }
   renderPromotionActions() {
     return (0, Chunk951288.jsx)(Chunk481060.Button, {
@@ -316,8 +316,8 @@ class K extends Chunk647438.Component {
       onEmbedClick: this.handleClaimPromotion,
       analyticsSection: Chunk981631.jXE.GIFT_CODE_EMBED,
       renderCustomActions: () => this.renderPromotionActions(),
-      renderCustomTitle: () => Chunk388032.intl.string(Chunk388032.t.X4p5uH),
-      renderCustomTagline: () => Chunk388032.intl.string(Chunk388032.t.VIuwD7),
+      renderCustomTitle: () => Chunk388032.intl.string(Chunk388032.t.X4p5uL),
+      renderCustomTagline: () => Chunk388032.intl.string(Chunk388032.t.VIuwDw),
       width: require
     });
     if (null == module || module.revoked)

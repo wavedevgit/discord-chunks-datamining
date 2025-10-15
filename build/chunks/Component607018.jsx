@@ -49,7 +49,7 @@ let p = Chunk647438.forwardRef(function(e, t) {
   return null != v ? (0, r.jsx)(o.Z, {
     onClose: p,
     transitionState: h,
-    title: _.intl.string(_.t.ZtCDc2),
+    title: _.intl.string(_.t.ZtCDc3),
     handleSubmit: P
   }) : (0, r.jsx)(c.default, {
     onClose: p,

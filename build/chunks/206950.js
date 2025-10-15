@@ -51,7 +51,7 @@ function u(e) {
       }), t)),
       u = new s.Z({
         id: "313337",
-        username: c.intl.string(c.t.cqpybK),
+        username: c.intl.string(c.t.cqpybG),
         discriminator: "0000",
         bot: false
       });

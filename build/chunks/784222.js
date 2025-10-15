@@ -193,7 +193,7 @@ let k = [Chunk185923.Z5.DISALLOW_EXTERNAL, Chunk185923.Z5.DISALLOW_CUSTOM],
                   t.push({
                     type: 2,
                     guildId: O.id,
-                    name: w.intl.string(w.t.NZI2Zk),
+                    name: w.intl.string(w.t.NZI2Zm),
                     size: x,
                     rowIndex: e,
                     columnIndex: t.length,

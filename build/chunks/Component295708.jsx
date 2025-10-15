@@ -17,7 +17,7 @@ function c(e) {
     onChangeRule: n
   } = e, [c, d] = i.useState(t.name);
   return (0, r.jsx)(l.oil, {
-    label: o.intl.string(o.t.WVAHxF),
+    label: o.intl.string(o.t.WVAHxM),
     onChange: e => {
       var r, i;
       d(e), n((r = function(e) {
@@ -54,7 +54,7 @@ function c(e) {
     onKeyDown: e => {
       e.which === s.yXg.SPACE && e.stopPropagation()
     },
-    placeholder: o.intl.string(o.t["5AO43K"]),
+    placeholder: o.intl.string(o.t["5AO43N"]),
     maxLength: a.OU,
     value: c
   })

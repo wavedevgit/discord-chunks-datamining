@@ -52,7 +52,7 @@ let H = e => {
       disableVerificationLevel: a,
       headerId: r,
       theme: c
-    } = e, d = (0, o.e7)([S.Z], () => S.Z.getGuild(t.id), [t.id]), x = null != d && d.verificationLevel > T.sFg.NONE, h = (null == d ? true : d.explicitContentFilter) === T.lxg.ALL_MEMBERS, g = (0, u.wj)(c) ? F : U;
+    } = e, d = (0, o.e7)([E.Z], () => E.Z.getGuild(t.id), [t.id]), x = null != d && d.verificationLevel > T.sFg.NONE, h = (null == d ? true : d.explicitContentFilter) === T.lxg.ALL_MEMBERS, g = (0, u.wj)(c) ? F : U;
     return (0, s.jsxs)("div", {
       className: A.container,
       children: [(0, s.jsxs)("div", {
@@ -65,35 +65,35 @@ let H = e => {
           variant: "heading-xl/semibold",
           className: A.header,
           id: r,
-          children: k.intl.string(k.t.QrjLYl)
+          children: k.intl.string(k.t.QrjLYm)
         }), (0, s.jsx)(m.Text, {
           color: "none",
           variant: "text-md/normal",
           className: A.headerCaption,
-          children: k.intl.string(k.t.i1STwu)
+          children: k.intl.string(k.t.i1STws)
         })]
       }), (0, s.jsx)("div", {
         className: A.form,
         children: (0, s.jsx)(m.gNt, {
-          label: k.intl.string(k.t.x4hbeZ),
-          description: x ? k.intl.string(k.t.k5crqq) : k.intl.string(k.t.fHiGA0),
+          label: k.intl.string(k.t.x4hbeX),
+          description: x ? k.intl.string(k.t.k5crqq) : k.intl.string(k.t.fHiGAw),
           children: (0, s.jsx)(m.Checkbox, {
             disabled: a,
             checked: t.verificationLevel > T.sFg.NONE,
             onChange: i,
-            label: k.intl.string(k.t.x4hbeZ)
+            label: k.intl.string(k.t.x4hbeX)
           })
         })
       }), (0, s.jsx)("div", {
         className: A.form,
         children: (0, s.jsx)(m.gNt, {
-          label: k.intl.string(k.t.COu4bk),
-          description: h ? k.intl.string(k.t.qgQLpg) : k.intl.string(k.t.b0MaDV),
+          label: k.intl.string(k.t.COu4bm),
+          description: h ? k.intl.string(k.t.qgQLpq) : k.intl.string(k.t.b0MaDQ),
           children: (0, s.jsx)(m.Checkbox, {
             disabled: n,
             checked: t.explicitContentFilter === T.lxg.ALL_MEMBERS,
             onChange: l,
-            label: k.intl.string(k.t.WAUiMt)
+            label: k.intl.string(k.t.WAUiMj)
           })
         })
       })]
@@ -112,8 +112,8 @@ let H = e => {
     } = e;
     l.useEffect(() => {
       (0, y.BF)({
-        fromStep: _.IO.SAFETY_CHECK,
-        toStep: _.IO.BASICS,
+        fromStep: P.IO.SAFETY_CHECK,
+        toStep: P.IO.BASICS,
         guildId: d
       })
     }, [d]);
@@ -135,13 +135,13 @@ let H = e => {
           color: "none",
           variant: "text-md/normal",
           className: A.headerCaption,
-          children: k.intl.string(k.t["J/fYR8"])
+          children: k.intl.string(k.t["J/fYR0"])
         })]
       }), (0, s.jsx)("div", {
         className: A.form,
         children: (0, s.jsx)(m.VcW, {
-          label: k.intl.string(k.t.dYrhCO),
-          description: k.intl.string(k.t["+Af+Vw"]),
+          label: k.intl.string(k.t.dYrhCA),
+          description: k.intl.string(k.t["+Af+V1"]),
           options: t,
           onChange: i,
           value: n,
@@ -150,8 +150,8 @@ let H = e => {
       }), (0, s.jsx)("div", {
         className: A.form,
         children: (0, s.jsx)(m.VcW, {
-          label: k.intl.string(k.t.vAyDGU),
-          description: k.intl.string(k.t.ZFeonu),
+          label: k.intl.string(k.t.vAyDGR),
+          description: k.intl.string(k.t.ZFeonp),
           options: t,
           onChange: a,
           value: r,
@@ -176,8 +176,8 @@ let H = e => {
     } = e, v = (0, u.wj)(f) ? Z : D;
     return l.useEffect(() => {
       (0, y.BF)({
-        fromStep: _.IO.BASICS,
-        toStep: _.IO.FINISH,
+        fromStep: P.IO.BASICS,
+        toStep: P.IO.FINISH,
         guildId: t.id
       })
     }, [t.id]), (0, s.jsxs)("div", {
@@ -192,18 +192,18 @@ let H = e => {
           variant: "heading-xl/semibold",
           className: A.header,
           id: p,
-          children: k.intl.string(k.t["Pj/s/a"])
+          children: k.intl.string(k.t["Pj/s/f"])
         }), (0, s.jsx)(m.Text, {
           color: "none",
           variant: "text-md/normal",
           className: A.headerCaption,
-          children: k.intl.string(k.t["IL7/no"])
+          children: k.intl.string(k.t["IL7/np"])
         })]
       }), (0, s.jsx)("div", {
         className: A.form,
         children: (0, s.jsx)(d.u, {
-          text: h ? k.intl.string(k.t.PHjrpp) : null,
-          "aria-label": !!h && k.intl.string(k.t.PHjrpp),
+          text: h ? k.intl.string(k.t.PHjrpq) : null,
+          "aria-label": !!h && k.intl.string(k.t.PHjrpq),
           children: (0, s.jsx)("div", {
             children: (0, s.jsx)(m.$qM, {
               type: x.M0.ROW,
@@ -215,7 +215,7 @@ let H = e => {
               }),
               children: (0, s.jsx)(m.Text, {
                 variant: "text-sm/normal",
-                children: k.intl.format(k.t.K8Eg4P, {
+                children: k.intl.format(k.t.K8Eg4O, {
                   infoHook: () => (0, s.jsx)(d.u, {
                     text: k.intl.string(k.t["3h2WyM"]),
                     "aria-label": k.intl.string(k.t["3h2WyM"]),
@@ -231,8 +231,8 @@ let H = e => {
           })
         })
       }), (0, s.jsx)(d.u, {
-        text: g ? k.intl.string(k.t.PHjrpp) : null,
-        "aria-label": !!g && k.intl.string(k.t.PHjrpp),
+        text: g ? k.intl.string(k.t.PHjrpq) : null,
+        "aria-label": !!g && k.intl.string(k.t.PHjrpq),
         children: (0, s.jsx)("div", {
           className: A.checkboxOption,
           children: (0, s.jsx)(m.$qM, {
@@ -244,10 +244,10 @@ let H = e => {
             }),
             children: (0, s.jsx)(m.Text, {
               variant: "text-sm/normal",
-              children: k.intl.format(k.t.v8qCoG, {
+              children: k.intl.format(k.t.v8qCoK, {
                 infoHook: () => (0, s.jsx)(d.u, {
-                  text: k.intl.string(k.t["+Iyaif"]),
-                  "aria-label": k.intl.string(k.t["+Iyaif"]),
+                  text: k.intl.string(k.t["+IyaiY"]),
+                  "aria-label": k.intl.string(k.t["+IyaiY"]),
                   children: (0, s.jsx)(m.d3s, {
                     size: "xs",
                     color: "currentColor",
@@ -261,15 +261,15 @@ let H = e => {
       }), (0, s.jsx)("div", {
         className: A.form,
         children: (0, s.jsx)(m.gNt, {
-          label: k.intl.string(k.t["k+b2Cf"]),
-          description: k.intl.format(k.t["BwbW/Q"], {
-            communityGuidelines: M.Z.getArticleURL(T.BhN.PUBLIC_GUILD_GUILDLINES),
-            typesOfGuilds: M.Z.getArticleURL(T.BhN.FRIEND_COMMUNITY_DISCOVERABLE_GUILD_TYPES)
+          label: k.intl.string(k.t["k+b2CQ"]),
+          description: k.intl.format(k.t["BwbW/f"], {
+            communityGuidelines: L.Z.getArticleURL(T.BhN.PUBLIC_GUILD_GUILDLINES),
+            typesOfGuilds: L.Z.getArticleURL(T.BhN.FRIEND_COMMUNITY_DISCOVERABLE_GUILD_TYPES)
           }),
           children: (0, s.jsx)(m.Checkbox, {
             checked: i,
             onChange: r,
-            label: k.intl.string(k.t["9AG3wI"])
+            label: k.intl.string(k.t["9AG3wM"])
           })
         })
       })]
@@ -282,7 +282,7 @@ function z(e) {
   } = e, {
     name: i,
     color: l
-  } = (0, o.e7)([E.Z], () => E.Z.getEveryoneRole(t));
+  } = (0, o.e7)([S.Z], () => S.Z.getEveryoneRole(t));
   return (0, s.jsx)("div", {
     className: A.__invalid_role,
     children: (0, s.jsxs)("span", {
@@ -313,7 +313,7 @@ function W(e) {
       className: A.tableHeader,
       variant: "text-xs/semibold",
       color: "text-muted",
-      children: k.intl.string(k.t.xU8RDk)
+      children: k.intl.string(k.t.xU8RDg)
     }), (0, s.jsx)("div", {
       className: A.permissionsTable,
       children: t.map((e, t) => (0, s.jsxs)("div", {
@@ -330,12 +330,12 @@ function W(e) {
   })
 }
 
-function V(e) {
+function X(e) {
   let {
     disabledPermissions: t,
     onGetPermisisonName: i
-  } = e, l = k.intl.string(k.t.Yo5qlq);
-  return t.length === _.$X.length && (l = k.intl.string(k.t.FgMS6i)), (0, s.jsxs)("div", {
+  } = e, l = k.intl.string(k.t.Yo5qlp);
+  return t.length === P.$X.length && (l = k.intl.string(k.t.FgMS6u)), (0, s.jsxs)("div", {
     className: A.tableContainer,
     children: [(0, s.jsx)(m.Text, {
       className: A.tableHeader,
@@ -358,17 +358,17 @@ function V(e) {
   })
 }
 
-function X(e) {
+function V(e) {
   let {
     permissions: t
   } = e, i = e => {
     switch (e.toString()) {
       case T.Plq.MENTION_EVERYONE.toString():
-        return k.intl.string(k.t.yCpsQw);
+        return k.intl.string(k.t.yCpsQ0);
       case T.Plq.CREATE_GUILD_EXPRESSIONS.toString():
-        return k.intl.string(k.t.vo2LdY);
+        return k.intl.string(k.t.vo2LdX);
       case T.Plq.MANAGE_GUILD_EXPRESSIONS.toString():
-        return k.intl.string(k.t.cmp2W6);
+        return k.intl.string(k.t.cmp2W1);
       default:
         return (0, j.wt)(e)
     }
@@ -381,7 +381,7 @@ function X(e) {
     children: [0 !== l.length ? (0, s.jsx)(W, {
       enabledPermissions: l,
       onGetPermisisonName: i
-    }) : null, (0, s.jsx)(V, {
+    }) : null, (0, s.jsx)(X, {
       disabledPermissions: n,
       onGetPermisisonName: i
     })]
@@ -397,15 +397,15 @@ let K = e => {
     } = e, o = (0, u.wj)(r) ? Z : D;
     l.useEffect(() => {
       (0, y.BF)({
-        fromStep: _.IO.BASICS,
-        toStep: _.IO.FINISH,
+        fromStep: P.IO.BASICS,
+        toStep: P.IO.FINISH,
         guildId: t.id
       })
     }, [t.id]);
     let x = l.useMemo(() => {
       let e = [],
         i = [];
-      return _.$X.map(s => {
+      return P.$X.map(s => {
         w.oz(s, t) ? e.push(s) : i.push(s)
       }), {
         enabledPermissions: e,
@@ -424,12 +424,12 @@ let K = e => {
           variant: "heading-xl/semibold",
           className: A.updatedHeader,
           id: a,
-          children: k.intl.string(k.t["Pj/s/a"])
+          children: k.intl.string(k.t["Pj/s/f"])
         })]
       }), (0, s.jsx)("div", {
         className: A.updatedForm,
         children: (0, s.jsxs)(m.gNt, {
-          label: k.intl.string(k.t["0q344R"]),
+          label: k.intl.string(k.t["0q344e"]),
           children: [(0, s.jsxs)("div", {
             className: A.checklistRow,
             children: [(0, s.jsx)(m.owK, {
@@ -439,7 +439,7 @@ let K = e => {
               secondaryColor: c.Z.unsafe_rawColors.WHITE_500.css
             }), (0, s.jsx)(m.Text, {
               variant: "text-md/normal",
-              children: k.intl.format(k.t.K8Eg4P, {
+              children: k.intl.format(k.t.K8Eg4O, {
                 infoHook: () => (0, s.jsx)(d.u, {
                   text: k.intl.string(k.t["3h2WyM"]),
                   "aria-label": k.intl.string(k.t["3h2WyM"]),
@@ -460,24 +460,24 @@ let K = e => {
               secondaryColor: c.Z.unsafe_rawColors.WHITE_500.css
             }), (0, s.jsx)(m.Text, {
               variant: "text-md/normal",
-              children: k.intl.string(k.t.LfeFFr)
+              children: k.intl.string(k.t.LfeFFh)
             }), (0, s.jsx)(z, {
               guild: t
             })]
-          }), (0, s.jsx)(X, {
+          }), (0, s.jsx)(V, {
             permissions: x
           })]
         })
       }), (0, s.jsx)("div", {
         className: A.updatedForm,
         children: (0, s.jsx)(m.gNt, {
-          label: k.intl.string(k.t["k+b2Cf"]),
-          description: k.intl.format(k.t["BwbW/Q"], {
-            communityGuidelines: M.Z.getArticleURL(T.BhN.PUBLIC_GUILD_GUILDLINES),
-            typesOfGuilds: M.Z.getArticleURL(T.BhN.FRIEND_COMMUNITY_DISCOVERABLE_GUILD_TYPES)
+          label: k.intl.string(k.t["k+b2CQ"]),
+          description: k.intl.format(k.t["BwbW/f"], {
+            communityGuidelines: L.Z.getArticleURL(T.BhN.PUBLIC_GUILD_GUILDLINES),
+            typesOfGuilds: L.Z.getArticleURL(T.BhN.FRIEND_COMMUNITY_DISCOVERABLE_GUILD_TYPES)
           }),
           children: (0, s.jsx)(m.Checkbox, {
-            label: k.intl.string(k.t["9AG3wI"]),
+            label: k.intl.string(k.t["9AG3wM"]),
             checked: i,
             onChange: n
           })
@@ -492,30 +492,30 @@ let K = e => {
       onClose: n
     } = e;
     l.useEffect(() => {
-      L.default.track(T.rMx.OPEN_MODAL, {
-        type: _.tA
+      M.default.track(T.rMx.OPEN_MODAL, {
+        type: P.tA
       })
     }, []);
     let {
       guild: a
-    } = (0, o.cj)([v.Z], () => v.Z.getProps()), c = (0, o.e7)([b.Z], () => b.Z.theme), [d, u] = l.useState(false), [x, m] = l.useState(!_.$X.some(e => w.oz(e, a))), [j, S] = l.useState(_.b4), [M, y] = l.useState(_.b4), [G] = l.useState(null == a ? true : a.defaultMessageNotifications), [R] = l.useState(null == a ? true : a.verificationLevel), [Z] = l.useState(null == a ? true : a.explicitContentFilter), [D] = l.useState(x), F = (0, o.e7)([E.Z], () => null != a ? E.Z.getEveryoneRole(a) : true), U = (0, o.e7)([C.ZP], () => null != a ? C.ZP.getChannels(a.id) : null), z = (0, p.Dt)(), {
+    } = (0, o.cj)([v.Z], () => v.Z.getProps()), c = (0, o.e7)([b.Z], () => b.Z.theme), [d, u] = l.useState(false), [x, m] = l.useState(!P.$X.some(e => w.oz(e, a))), [j, E] = l.useState(P.b4), [L, y] = l.useState(P.b4), [G] = l.useState(null == a ? true : a.defaultMessageNotifications), [R] = l.useState(null == a ? true : a.verificationLevel), [Z] = l.useState(null == a ? true : a.explicitContentFilter), [D] = l.useState(x), F = (0, o.e7)([S.Z], () => null != a ? S.Z.getEveryoneRole(a) : true), U = (0, o.e7)([C.ZP], () => null != a ? C.ZP.getChannels(a.id) : null), z = (0, p.Dt)(), {
       enabled: W
     } = (0, h.D2)(null != (t = null == a ? true : a.id) ? t : T.lds);
     if (null == a) return null;
-    let V = [{
-      value: _.b4,
-      label: k.intl.string(k.t.Cla0re)
+    let X = [{
+      value: P.b4,
+      label: k.intl.string(k.t.Cla0ra)
     }];
     U[C.sH].forEach(e => {
       let {
         channel: t
       } = e;
-      t.type === T.d4z.GUILD_TEXT && V.push({
+      t.type === T.d4z.GUILD_TEXT && X.push({
         value: t.id,
         label: (0, g.F6)(t, O.default, I.Z, true)
       })
     });
-    let X = R !== T.sFg.NONE,
+    let V = R !== T.sFg.NONE,
       Q = Z === T.lxg.ALL_MEMBERS,
       $ = G === T.bL.ONLY_MENTIONS,
       J = async () => {
@@ -523,7 +523,7 @@ let K = e => {
         if (null == F || !d) return;
         let i = new Set(a.features);
         i.add(T.oNc.COMMUNITY);
-        let s = x ? r.Od(F.permissions, _.mu) : F.permissions,
+        let s = x ? r.Od(F.permissions, P.mu) : F.permissions,
           l = (e = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var i = null != arguments[t] ? arguments[t] : {},
@@ -556,20 +556,20 @@ let K = e => {
         s !== F.permissions && await (0, N.Gf)(a.id, [l]), f.Z.updateGuild({
           features: i,
           rulesChannelId: j,
-          publicUpdatesChannelId: M
+          publicUpdatesChannelId: L
         }), await f.Z.saveGuild(a.id, {
           features: i,
           rulesChannelId: j,
           verificationLevel: a.verificationLevel,
           explicitContentFilter: a.explicitContentFilter,
-          publicUpdatesChannelId: M,
+          publicUpdatesChannelId: L,
           defaultMessageNotifications: a.defaultMessageNotifications
         }), setTimeout(() => {
           n()
         }, 0)
       }, ee = (0, s.jsx)(H, {
         guild: a,
-        disableVerificationLevel: X,
+        disableVerificationLevel: V,
         disableContentFilter: Q,
         onAcceptVerificationLevel: e => {
           if (!e) return void f.Z.updateGuild({
@@ -590,15 +590,15 @@ let K = e => {
         headerId: z,
         theme: c
       }), et = (0, s.jsx)(Y, {
-        selectableChannels: V,
+        selectableChannels: X,
         onRuleChannelChange: e => {
-          S(e)
+          E(e)
         },
         onPublicUpdatesChannelChange: e => {
           y(e)
         },
         ruleChannel: j,
-        publicUpdatesChannel: M,
+        publicUpdatesChannel: L,
         headerId: z,
         theme: c,
         guildId: a.id
@@ -649,26 +649,26 @@ let K = e => {
       }), el = [{
         modalContent: ee,
         disableNextStep: a.explicitContentFilter !== T.lxg.ALL_MEMBERS || a.verificationLevel === T.sFg.NONE,
-        overviewTitle: k.intl.string(k.t.PpYoSj)
+        overviewTitle: k.intl.string(k.t.PpYoSk)
       }, {
         modalContent: et,
-        disableNextStep: null == j || null == M,
-        overviewTitle: k.intl.string(k.t["7MEtIY"])
+        disableNextStep: null == j || null == L,
+        overviewTitle: k.intl.string(k.t["7MEtIS"])
       }, {
         modalContent: ei,
         disableNextStep: !d,
-        overviewTitle: k.intl.string(k.t.Pj9P8E)
+        overviewTitle: k.intl.string(k.t.Pj9P8P)
       }];
-    return (0, s.jsx)(P.Z, {
+    return (0, s.jsx)(_.Z, {
       stepData: el,
-      title: k.intl.string(k.t["6U5XTu"]),
+      title: k.intl.string(k.t["6U5XTk"]),
       transitionState: i,
       onClose: () => {
-        n(), L.default.track(T.rMx.MODAL_DISMISSED, {
-          type: _.tA
+        n(), M.default.track(T.rMx.MODAL_DISMISSED, {
+          type: P.tA
         })
       },
-      completeButtonText: k.intl.string(k.t.XGl4ba),
+      completeButtonText: k.intl.string(k.t.XGl4bW),
       onComplete: J,
       overviewFooter: es,
       sequencerClassName: A.container,

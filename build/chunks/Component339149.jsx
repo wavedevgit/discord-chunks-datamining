@@ -48,52 +48,52 @@ function E(e) {
 }
 let S = {
   [Chunk981631.vxO.INSTALLING]: {
-    [Chunk707409.J6.NONE]: (e, t) => j.intl.formatToPlainString(j.t["p+2sE+"], {
+    [Chunk707409.J6.NONE]: (e, t) => j.intl.formatToPlainString(j.t["p+2sEx"], {
       name: e
     }),
-    [Chunk707409.J6.SECONDS]: (e, t) => j.intl.formatToPlainString(j.t["/0NgPI"], {
+    [Chunk707409.J6.SECONDS]: (e, t) => j.intl.formatToPlainString(j.t["/0NgPD"], {
       name: e,
       timeRemaining: t
     }),
-    [Chunk707409.J6.MINUTES]: (e, t) => j.intl.formatToPlainString(j.t.ZIwMzr, {
+    [Chunk707409.J6.MINUTES]: (e, t) => j.intl.formatToPlainString(j.t.ZIwMzs, {
       name: e,
       timeRemaining: t
     }),
-    [Chunk707409.J6.HOURS]: (e, t) => j.intl.formatToPlainString(j.t["3IQDUi"], {
+    [Chunk707409.J6.HOURS]: (e, t) => j.intl.formatToPlainString(j.t["3IQDUl"], {
       name: e,
       timeRemaining: t
     })
   },
   [Chunk981631.vxO.UPDATING]: {
-    [Chunk707409.J6.NONE]: (e, t) => j.intl.formatToPlainString(j.t["6F9QzC"], {
+    [Chunk707409.J6.NONE]: (e, t) => j.intl.formatToPlainString(j.t["6F9QzM"], {
       name: e
     }),
-    [Chunk707409.J6.SECONDS]: (e, t) => j.intl.formatToPlainString(j.t["2OVgVq"], {
+    [Chunk707409.J6.SECONDS]: (e, t) => j.intl.formatToPlainString(j.t["2OVgVl"], {
       name: e,
       timeRemaining: t
     }),
-    [Chunk707409.J6.MINUTES]: (e, t) => j.intl.formatToPlainString(j.t.mgQg1L, {
+    [Chunk707409.J6.MINUTES]: (e, t) => j.intl.formatToPlainString(j.t.mgQg1N, {
       name: e,
       timeRemaining: t
     }),
-    [Chunk707409.J6.HOURS]: (e, t) => j.intl.formatToPlainString(j.t.aTdq44, {
+    [Chunk707409.J6.HOURS]: (e, t) => j.intl.formatToPlainString(j.t["aTdq4+"], {
       name: e,
       timeRemaining: t
     })
   },
   [Chunk981631.vxO.REPAIRING]: {
-    [Chunk707409.J6.NONE]: (e, t) => j.intl.formatToPlainString(j.t["p+2sE+"], {
+    [Chunk707409.J6.NONE]: (e, t) => j.intl.formatToPlainString(j.t["p+2sEx"], {
       name: e
     }),
-    [Chunk707409.J6.SECONDS]: (e, t) => j.intl.formatToPlainString(j.t["/0NgPI"], {
+    [Chunk707409.J6.SECONDS]: (e, t) => j.intl.formatToPlainString(j.t["/0NgPD"], {
       name: e,
       timeRemaining: t
     }),
-    [Chunk707409.J6.MINUTES]: (e, t) => j.intl.formatToPlainString(j.t.ZIwMzr, {
+    [Chunk707409.J6.MINUTES]: (e, t) => j.intl.formatToPlainString(j.t.ZIwMzs, {
       name: e,
       timeRemaining: t
     }),
-    [Chunk707409.J6.HOURS]: (e, t) => j.intl.formatToPlainString(j.t["3IQDUi"], {
+    [Chunk707409.J6.HOURS]: (e, t) => j.intl.formatToPlainString(j.t["3IQDUl"], {
       name: e,
       timeRemaining: t
     })
@@ -106,7 +106,7 @@ class I extends Chunk647438.PureComponent {
       isPaused: t
     } = this.props;
     if (module.type === Chunk981631.vxO.UPDATING || module.type === Chunk981631.vxO.REPAIRING || module.type === Chunk981631.vxO.INSTALLING) {
-      if (exports) return Chunk388032.intl.string(Chunk388032.t["5oxtFS"]);
+      if (exports) return Chunk388032.intl.string(Chunk388032.t["5oxtFR"]);
       else if (module.stage === Chunk981631.f07.PATCHING || module.stage === Chunk981631.f07.REPAIRING) return (0, Chunk951288.jsx)(Chunk353042.Z, {
         getHistoricalTotalBytes: Chunk417363.Z.getHistoricalTotalBytesWritten,
         updateInterval: 5e3,
@@ -117,7 +117,7 @@ class I extends Chunk647438.PureComponent {
   }
   render() {
     let e = this.renderText();
-    return null != module ? module : Chunk388032.intl.string(Chunk388032.t.cw57ar)
+    return null != module ? module : Chunk388032.intl.string(Chunk388032.t.cw57am)
   }
   constructor(...e) {
     super(...e), C(this, "renderProgressBody", (e, t) => {
@@ -169,7 +169,7 @@ class P extends(r = Chunk647438.PureComponent) {
       firstState: t,
       isPaused: n
     } = this.props;
-    return null == module || null == exports ? Chunk388032.intl.string(Chunk388032.t.cw57ar) : (0, Chunk951288.jsx)(I, {
+    return null == module || null == exports ? Chunk388032.intl.string(Chunk388032.t.cw57am) : (0, Chunk951288.jsx)(I, {
       application: module,
       state: exports,
       isPaused: require

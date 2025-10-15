@@ -22,7 +22,7 @@ function d(e) {
     children: [(0, i.jsx)(l.Text, {
       variant: "text-xs/bold",
       className: u.header,
-      children: c.intl.format(c.t.e95u3C, {
+      children: c.intl.format(c.t.e95u3N, {
         count: n.length
       })
     }), (0, i.jsx)(l.Ttm, {

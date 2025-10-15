@@ -43,7 +43,7 @@ function D(e) {
     participant: n
   } = e;
   return (0, h.Eu)(t, n.id) ? (0, r.jsx)(c.u, {
-    text: A.intl.string(A.t.HFwRpk),
+    text: A.intl.string(A.t.HFwRpq),
     position: "bottom",
     children: (0, r.jsx)("div", {
       className: T.interactive,
@@ -75,7 +75,7 @@ function M(e) {
     user: H,
     streamId: B,
     speaking: q
-  } = t, Y = H.id === W, z = (0, w.ZP)(t), K = (0, o.e7)([I.Z], () => I.Z.isFocused()), G = (0, o.e7)([E.Z], () => E.Z.getWindowFocused(P.KJ3.CHANNEL_CALL_POPOUT)), Q = (0, o.e7)([O.Z], () => null != H.id && O.Z.isLocalVideoDisabled(H.id, (0, p.Z)(t.type)), [H.id, t.type]), X = (0, o.e7)([y.ZP], () => y.ZP.isGuestOrLurker(n.guild_id, H.id)), J = C.ZP.getName(n.getGuildId(), n.id, H) + (X ? " ".concat(A.intl.string(A.t["pFO/Ph"])) : ""), $ = q && (G || K), ee = c < 124 ? N : R, {
+  } = t, Y = H.id === W, z = (0, w.ZP)(t), K = (0, o.e7)([I.Z], () => I.Z.isFocused()), G = (0, o.e7)([b.Z], () => b.Z.getWindowFocused(P.KJ3.CHANNEL_CALL_POPOUT)), Q = (0, o.e7)([O.Z], () => null != H.id && O.Z.isLocalVideoDisabled(H.id, (0, p.Z)(t.type)), [H.id, t.type]), X = (0, o.e7)([y.ZP], () => y.ZP.isGuestOrLurker(n.guild_id, H.id)), J = C.ZP.getName(n.getGuildId(), n.id, H) + (X ? " ".concat(A.intl.string(A.t["pFO/Pj"])) : ""), $ = q && (G || K), ee = c < 124 ? N : R, {
     avatarSrc: et,
     avatarDecorationSrc: en
   } = (0, v.Z)({
@@ -102,7 +102,7 @@ function M(e) {
     userId: t.id,
     width: c,
     selected: s
-  }) : (0, r.jsx)(b.Z, {
+  }) : (0, r.jsx)(E.Z, {
     onResize: Z,
     wrapperClassName: T.videoWrapper,
     className: T.content,

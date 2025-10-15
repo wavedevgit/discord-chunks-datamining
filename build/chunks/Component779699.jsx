@@ -23,7 +23,7 @@ let u = function(e) {
         size: "md",
         color: "currentColor",
         className: c.icon,
-        "aria-label": l.intl.string(l.t.BVZqJl)
+        "aria-label": l.intl.string(l.t.BVZqJi)
       });
       break;
     case "voice-locked":
@@ -31,7 +31,7 @@ let u = function(e) {
         size: "md",
         color: "currentColor",
         className: c.icon,
-        "aria-label": l.intl.string(l.t.aa0FYn)
+        "aria-label": l.intl.string(l.t.aa0FYm)
       });
       break;
     case "stage":
@@ -39,7 +39,7 @@ let u = function(e) {
         size: "lg",
         color: "currentColor",
         className: c.icon,
-        "aria-label": l.intl.string(l.t.EErMzA)
+        "aria-label": l.intl.string(l.t.EErMzM)
       });
       break;
     case "stage-locked":
@@ -47,7 +47,7 @@ let u = function(e) {
         size: "md",
         color: "currentColor",
         className: c.icon,
-        "aria-label": l.intl.string(l.t.pKZ4I8)
+        "aria-label": l.intl.string(l.t.pKZ4Iy)
       });
       break;
     case "thread":
@@ -55,7 +55,7 @@ let u = function(e) {
         size: "md",
         color: "currentColor",
         className: c.icon,
-        "aria-label": l.intl.string(l.t["7Xm5QI"])
+        "aria-label": l.intl.string(l.t["7Xm5QE"])
       });
       break;
     case "text":
@@ -63,7 +63,7 @@ let u = function(e) {
         size: "md",
         color: "currentColor",
         className: c.icon,
-        "aria-label": l.intl.string(l.t.GK18KJ)
+        "aria-label": l.intl.string(l.t.GK18KC)
       });
       break;
     case "forum":
@@ -71,7 +71,7 @@ let u = function(e) {
         size: "md",
         color: "currentColor",
         className: c.icon,
-        "aria-label": l.intl.string(l.t.GbryDd)
+        "aria-label": l.intl.string(l.t.GbryDQ)
       });
       break;
     case "post":
@@ -79,7 +79,7 @@ let u = function(e) {
         size: "md",
         color: "currentColor",
         className: c.icon,
-        "aria-label": l.intl.string(l.t.Y4REmB)
+        "aria-label": l.intl.string(l.t.Y4REmJ)
       });
       break;
     case "home":
@@ -88,7 +88,7 @@ let u = function(e) {
         size: "md",
         color: "currentColor",
         className: c.icon,
-        "aria-label": l.intl.string(l.t.VbpLyU)
+        "aria-label": l.intl.string(l.t.VbpLyc)
       });
       break;
     case "browse":
@@ -97,7 +97,7 @@ let u = function(e) {
         size: "md",
         color: "currentColor",
         className: c.icon,
-        "aria-label": l.intl.string(l.t.et6wav)
+        "aria-label": l.intl.string(l.t.et6wam)
       });
       break;
     case "message":
@@ -105,7 +105,7 @@ let u = function(e) {
         size: "md",
         color: "currentColor",
         className: c.icon,
-        "aria-label": l.intl.string(l.t.BAB0yK)
+        "aria-label": l.intl.string(l.t.BAB0yM)
       });
       break;
     case "locked":
@@ -113,7 +113,7 @@ let u = function(e) {
         size: "md",
         color: "currentColor",
         className: c.icon,
-        "aria-label": l.intl.string(l.t["/YzI63"])
+        "aria-label": l.intl.string(l.t["/YzI6+"])
       });
       break;
     case "media":
@@ -129,7 +129,7 @@ let u = function(e) {
         size: "md",
         color: "currentColor",
         className: c.icon,
-        "aria-label": l.intl.string(l.t.ghtnss)
+        "aria-label": l.intl.string(l.t.ghtnsr)
       })
   }
   return (0, r.jsxs)("span", {

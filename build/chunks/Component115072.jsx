@@ -55,8 +55,8 @@ function k(e) {
   var t, k, T, D;
   let {
     transitionState: N,
-    onClose: L
-  } = e, I = i.useRef(null), A = i.useRef(null), [R, B] = i.useState(""), [M, Z] = i.useState(""), [z, V] = i.useState(), [W, q] = i.useState(""), [G, H] = i.useState([]), [U, Y] = i.useState(), [X, K] = i.useState(), [J, Q] = i.useState(false), [F, $] = i.useState(""), [ee, et] = i.useState(function(e) {
+    onClose: I
+  } = e, A = i.useRef(null), L = i.useRef(null), [R, B] = i.useState(""), [M, Z] = i.useState(""), [V, W] = i.useState(), [q, z] = i.useState(""), [G, H] = i.useState([]), [U, Y] = i.useState(), [X, K] = i.useState(), [J, Q] = i.useState(false), [F, $] = i.useState(""), [ee, et] = i.useState(function(e) {
     switch (e) {
       case "windows":
         return "Windows";
@@ -76,8 +76,8 @@ function k(e) {
       },
       rejectWithError: true
     }).then(e => {
-      if (null != e.body && "6b93762f129fccdfd402c7a2f18528bff5a64390" !== e.body.hash) {
-        let e = new Date("1760557016952"),
+      if (null != e.body && "940ef439a919ece507f1874a3d71b5e9e59c1f1b" !== e.body.hash) {
+        let e = new Date("1760559137256"),
           t = new Date,
           n = (0, j.TD)(t, e);
         n.hours > 6 && eg(n.hours)
@@ -108,11 +108,11 @@ function k(e) {
       }
     }),
     e_ = () => {
-      null == L || L()
+      null == I || I()
     };
   async function eS() {
     var e, t;
-    if (ev(false), "" === R || "" === M || null == z) return void ed(true);
+    if (ev(false), "" === R || "" === M || null == V) return void ed(true);
     let i = null == U || null == (e = U.features) ? true : e.find(e => (0, _.pD)(e) === X);
     ep(true), ed(false);
     let l = (0, S.D)(G.map(e => {
@@ -124,9 +124,9 @@ function k(e) {
       a = await (0, _.ZD)({
         name: R,
         description: M,
-        priority: z,
+        priority: V,
         feature: i,
-        url: W,
+        url: q,
         buildOverride: null != (t = null == eb ? true : eb.id) ? t : null,
         experimentOverrides: eO
       }, true === J ? {
@@ -169,7 +169,7 @@ function k(e) {
   }, [ex]), i.useEffect(() => {
     if (G.length > 0) {
       var e;
-      null == (e = A.current) || e.scrollIntoView({
+      null == (e = L.current) || e.scrollIntoView({
         behavior: "smooth",
         block: "end"
       })
@@ -189,14 +189,14 @@ function k(e) {
   }, [G]);
   return (0, r.jsxs)(u.Y0X, {
     transitionState: N,
-    "aria-label": w.intl.string(w.t.mCCdwi),
+    "aria-label": w.intl.string(w.t.mCCdws),
     size: u.CgR.MEDIUM,
     parentComponent: "BugReporterModal",
     children: [(0, r.jsx)(u.xBx, {
       children: (0, r.jsx)(u.Heading, {
         variant: "heading-lg/semibold",
         children: (0, r.jsx)(u.H, {
-          children: w.intl.string(w.t["5LqopY"])
+          children: w.intl.string(w.t["5Lqopa"])
         })
       })
     }), (0, r.jsx)(u.hzk, {
@@ -205,7 +205,7 @@ function k(e) {
         onSubmit: eS,
         children: [null != eb && (0, r.jsx)(u.ToO, {
           type: u.ToO.Types.DANGER,
-          body: w.intl.format(w.t["yY60+7"], {
+          body: w.intl.format(w.t["yY60+/"], {
             buildOverrideHook: () => (0, r.jsx)("b", {
               children: null == eb ? true : eb.id
             })
@@ -213,10 +213,10 @@ function k(e) {
           title: w.intl.string(w.t["ZP/hEx"])
         }), null == eb && null != eh && (0, r.jsx)(u.ToO, {
           type: u.ToO.Types.DANGER,
-          title: w.intl.formatToPlainString(w.t["ql2Q/e"], {
+          title: w.intl.formatToPlainString(w.t["ql2Q/f"], {
             hours: eh
           }),
-          body: w.intl.string(w.t.x18RUs)
+          body: w.intl.string(w.t.x18RUl)
         }), ex && Object.keys(eO).length > 0 && (0, r.jsx)(u.ToO, {
           type: u.ToO.Types.DANGER,
           title: "You have the following experiments overridden:",
@@ -230,7 +230,7 @@ function k(e) {
             bottom: 8
           },
           children: [(0, r.jsx)(u.oil, {
-            label: w.intl.string(w.t.OZRgjw),
+            label: w.intl.string(w.t.OZRgj4),
             error: ec && "" === R ? w.intl.string(w.t.EkokLy) : null,
             placeholder: "Something is broken on this screen.",
             type: "text",
@@ -238,15 +238,15 @@ function k(e) {
             maxLength: 100,
             onChange: B
           }), (0, r.jsx)(u.Kx8, {
-            label: w.intl.string(w.t["1SplH2"]),
+            label: w.intl.string(w.t["1SplHx"]),
             error: ec && "" === M ? w.intl.string(w.t.EkokLy) : null,
             placeholder: "What did you expect to see?",
             value: M,
             onChange: Z,
             description: ex ? "You can add additional information/media on the ticket after submitting" : true
           }), (0, r.jsx)(u.q4e, {
-            label: w.intl.string(w.t.xMXLda),
-            errorMessage: ec && true === z ? w.intl.string(w.t.EkokLy) : null,
+            label: w.intl.string(w.t.xMXLdX),
+            errorMessage: ec && true === V ? w.intl.string(w.t.EkokLy) : null,
             renderOptionLabel: e => (function(e) {
               let t = e.priority;
               return (0, r.jsxs)("div", {
@@ -275,18 +275,18 @@ function k(e) {
                 })]
               })
             })(e),
-            onChange: V,
+            onChange: W,
             options: (0, _.Tj)().map(e => ({
               priority: e,
               value: e.value,
               label: e.title
             })),
             optionClassName: P.formPriorityOption,
-            value: z,
+            value: V,
             maxVisibleItems: 4,
             closeOnSelect: true
           }), ex && (0, r.jsx)(u.VcW, {
-            label: w.intl.string(w.t["77VVd8"]),
+            label: w.intl.string(w.t["77VVd3"]),
             value: X,
             options: null != (D = null == U || null == (T = U.features) || null == (k = T.filter(e => "" !== (0, _.pD)(e))) || null == (t = k.map(e => {
               var t;
@@ -298,16 +298,16 @@ function k(e) {
             isDisabled: null == U,
             onChange: e => K(e)
           }), (0, r.jsx)(u.oil, {
-            label: w.intl.string(w.t["7p5pqh"]),
-            placeholder: w.intl.string(w.t.HewMzo),
+            label: w.intl.string(w.t["7p5pqq"]),
+            placeholder: w.intl.string(w.t.HewMzs),
             type: "text",
-            value: W,
+            value: q,
             maxLength: 5e3,
-            onChange: q
+            onChange: z
           }), (0, r.jsx)(u.Checkbox, {
             checked: J,
             onChange: e => Q(e),
-            label: w.intl.string(w.t.ayhqiH)
+            label: w.intl.string(w.t.ayhqiI)
           }), J ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(u.oil, {
               label: w.intl.string(w.t.rrI4Tk),
@@ -315,27 +315,27 @@ function k(e) {
               value: F,
               onChange: e => $(e)
             }), (0, r.jsx)(u.q4e, {
-              label: w.intl.string(w.t.kcHxi6),
+              label: w.intl.string(w.t.kcHxi4),
               value: ee,
               options: E,
               onChange: e => et(e)
             }), (0, r.jsx)(u.oil, {
-              label: w.intl.string(w.t.rEtxdg),
+              label: w.intl.string(w.t.rEtxdn),
               placeholder: "Operating System Version",
               value: en,
               onChange: e => er(e)
             }), (0, r.jsx)(u.oil, {
-              label: w.intl.string(w.t["wy1M/t"]),
+              label: w.intl.string(w.t["wy1M/v"]),
               placeholder: "Client Version",
               value: ei,
               onChange: e => el(e)
             }), (0, r.jsx)(u.oil, {
-              label: w.intl.string(w.t.f7kbVu),
+              label: w.intl.string(w.t.f7kbVl),
               placeholder: "Client Build Number",
               value: ea,
               onChange: e => eo(e)
             }), (0, r.jsx)(u.oil, {
-              label: w.intl.string(w.t["4Z5+zg"]),
+              label: w.intl.string(w.t["4Z5+zs"]),
               placeholder: "Locale",
               value: es,
               onChange: e => eu(e)
@@ -343,7 +343,7 @@ function k(e) {
           }) : null, (0, r.jsxs)(s.zx, {
             color: s.zx.Colors.PRIMARY,
             children: [w.intl.string(w.t.HVxmOD), (0, r.jsx)(c.Z, {
-              ref: I,
+              ref: A,
               onChange: e => {
                 var t, n;
                 (null == (n = e.currentTarget) || null == (t = n.files) ? true : t[0]) != null && H([...G, ...Array.from(e.currentTarget.files).map(e => new d.ZP({
@@ -358,7 +358,7 @@ function k(e) {
           }), G.length > 0 ? (0, r.jsx)(u.gNt, {
             label: "Preview",
             children: (0, r.jsx)("div", {
-              ref: A,
+              ref: L,
               className: P.attachments,
               children: G.length > 0 && G.map(e => (0, r.jsxs)("div", {
                 className: P.attachment,
@@ -370,7 +370,7 @@ function k(e) {
                     className: P.removeAttachment,
                     children: (0, r.jsx)(h.ZP, {
                       children: (0, r.jsx)(p.Z, {
-                        tooltip: w.intl.string(w.t.vN7REz),
+                        tooltip: w.intl.string(w.t.vN7REx),
                         onClick: () => {
                           var t;
                           return t = e.id, void H(G.filter(e => e.id !== t))
@@ -409,7 +409,7 @@ function k(e) {
           onClick: eS
         }), (0, r.jsx)(u.Button, {
           variant: "secondary",
-          text: w.intl.string(w.t["ETE/oC"]),
+          text: w.intl.string(w.t["ETE/oK"]),
           onClick: e_
         })]
       })

@@ -36,7 +36,7 @@ function v(e, t, n) {
       let e = u.termRules.map(e => e.value.trim()).filter(e => "" !== e);
       r = [{
         field_type: f.QJ.TERMS,
-        label: p.intl.string(p.t["9suSIA"]),
+        label: p.intl.string(p.t["9suSIC"]),
         values: e,
         required: true
       }]

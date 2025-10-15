@@ -61,7 +61,7 @@ let y = new b(Chunk570140.Z, {}),
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/medium",
       className: o()(Chunk204427.text, Chunk204427.replyLabel),
-      children: Chunk388032.intl.string(Chunk388032.t["2UvR1E"])
+      children: Chunk388032.intl.string(Chunk388032.t["2UvR1N"])
     }), (0, Chunk951288.jsx)("div", {
       className: Chunk204427.actions,
       children: (0, Chunk951288.jsx)(Chunk962293.B, {

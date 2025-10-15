@@ -62,7 +62,7 @@ function h(e) {
   return (0, s.q)(t.id), (0, r.jsx)(c.O1, f({
     action: "PRESS_APP_STOREFRONT",
     icon: a.EOn,
-    text: u.intl.string(u.t.V7j5aZ),
+    text: u.intl.string(u.t.V7j5aW),
     onClick: n,
     variant: "primary"
   }, i))

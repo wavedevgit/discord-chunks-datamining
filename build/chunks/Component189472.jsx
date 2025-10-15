@@ -30,11 +30,11 @@ let f = e => {
     }, m.ZB.Muted), s.Z.showMuteSuccessToast(t.id, n))
   }, [h, n, t, f]);
   return (0, r.jsx)(c.JZ, {
-    title: g.intl.formatToPlainString(g.t.TRp5wR, {
+    title: g.intl.formatToPlainString(g.t.TRp5wc, {
       username: x
     }),
-    description: g.intl.string(g.t["yM/+AJ"]),
-    buttonText: j ? g.intl.string(g.t.E8x4Nj) : g.intl.string(g.t.HITUcR),
+    description: g.intl.string(g.t["yM/+AA"]),
+    buttonText: j ? g.intl.string(g.t.E8x4Nj) : g.intl.string(g.t.HITUcX),
     buttonDisabled: j,
     onButtonPress: O
   })

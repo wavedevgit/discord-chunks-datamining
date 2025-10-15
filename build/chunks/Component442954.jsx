@@ -62,8 +62,8 @@ let j = {
       default: e
     } = await require.e("20670").then(require.bind(require, 993018));
     return t => (0, a.jsx)(e, v(b({}, t), {
-      headerText: x.intl.string(x.t.ZLRYGU),
-      confirmButtonText: x.intl.string(x.t.PDTjLN),
+      headerText: x.intl.string(x.t.ZLRYGR),
+      confirmButtonText: x.intl.string(x.t.PDTjLC),
       confirmButtonVariant: "primary"
     }))
   },
@@ -72,11 +72,11 @@ let j = {
       default: e
     } = await require.e("56499").then(require.bind(require, 433570));
     return t => (0, a.jsx)(e, v(b({}, t), {
-      headerText: x.intl.string(x.t.H3Q7U8),
+      headerText: x.intl.string(x.t.H3Q7U1),
       onFormSubmit: () => {},
       onResend: () => {},
       onSuccess: () => {},
-      confirmButtonText: x.intl.string(x.t["13ofGu"]),
+      confirmButtonText: x.intl.string(x.t["13ofGh"]),
       impression: {
         impressionName: i.ImpressionNames.URF_CONFIRM_EMAIL_CODE
       }
@@ -884,7 +884,7 @@ let j = {
   InstantInviteRefreshModal: async () => {
     let {
       InstantInviteRefreshModal: e
-    } = await Promise.all([require.e("74318"), require.e("49049"), require.e("28532")]).then(require.bind(require, 265452)), {
+    } = await Promise.all([require.e("74318"), require.e("49049"), require.e("71177")]).then(require.bind(require, 265452)), {
       dangerouslyConstructGuildRecordFromUntypedObject: t
     } = await Promise.resolve().then(require.bind(require, 411198)), {
       createChannelRecord: r

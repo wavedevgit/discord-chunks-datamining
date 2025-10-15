@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk567126 = require("./567126.jsx"),
   Chunk615161 = require("./615161.jsx"),
   Chunk761274 = require("./761274.js"),
-  Chunk489999 = require("./489999.js"),
+  Chunk637824 = require("./637824.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk602804 = require("./602804.js");
 
@@ -75,7 +75,7 @@ function I(e) {
             children: (0, r.jsx)(u.Text, {
               variant: "text-sm/medium",
               color: "button-filled-white-text",
-              children: w.intl.string(w.t.z7WGhv)
+              children: w.intl.string(w.t.z7WGho)
             })
           })
         })]
@@ -101,7 +101,7 @@ function E(e) {
     deviceSources: l,
     screenSources: s,
     sourceType: o,
-    fetchingSources: x,
+    fetchingSources: g,
     selectedSource: O,
     discordSourceId: Z,
     hasPermission: E
@@ -117,10 +117,10 @@ function E(e) {
   }), M = (0, d.e7)([_.Z], () => _.Z.quests), k = (0, b.jx)(M, A, n);
   i.useEffect(() => ((0, h.Ky)(), h.P7), []);
   let D = i.useMemo(() => N ? [...n].sort((e, t) => (0, b.ov)(t, null == k ? true : k.source.id, Z, R) - (0, b.ov)(e, null == k ? true : k.source.id, Z, R)) : n, [k, N, n, Z, R]);
-  if (x) {
+  if (g) {
     if (false === E) {
       let e = false;
-      if ((0, g.isMac)()) {
+      if ((0, x.isMac)()) {
         var B, L;
         let t = null === f.Z || true === f.Z || null == (L = f.Z.remoteApp) || null == (B = L.getVersion) ? true : B.call(L);
         e = !v.o || "0.0.0" === t || a().satisfies(t, "0.0.363")
@@ -131,9 +131,9 @@ function E(e) {
           className: P.errorText,
           variant: "text-md/normal",
           color: "text-danger",
-          children: [w.intl.string(w.t["kW5h/W"]), (0, r.jsx)("br", {}), w.intl.string(w.t["5Jvu1R"])]
+          children: [w.intl.string(w.t["kW5h/f"]), (0, r.jsx)("br", {}), w.intl.string(w.t["5Jvu1d"])]
         }), e && (0, r.jsx)(u.Button, {
-          text: w.intl.string(w.t["XgZk+u"]),
+          text: w.intl.string(w.t["XgZk+v"]),
           onClick: () => {
             m.Z.openSettings(C.Eu.SCREEN_RECORDING)
           }
@@ -167,15 +167,15 @@ function T() {
       variant: "text-lg/medium",
       color: "header-primary",
       className: Chunk602804.emptyHeader,
-      children: Chunk388032.intl.string(Chunk489999.default["/z3YaZ"])
+      children: Chunk388032.intl.string(Chunk637824.default["/z3YaW"])
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/medium",
       color: "text-secondary",
       className: Chunk602804.emptyBody,
-      children: Chunk388032.intl.string(Chunk489999.default.agwSGA)
+      children: Chunk388032.intl.string(Chunk637824.default.agwSGB)
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/semibold",
-      children: Chunk388032.intl.format(Chunk489999.default.xpVzr3, {
+      children: Chunk388032.intl.format(Chunk637824.default.xpVzr6, {
         helpdeskURL: Chunk63063.Z.getArticleURL(0x53d41ade17)
       })
     })]

@@ -59,7 +59,7 @@ let C = Chunk647438.memo(function(e) {
       return e
     }({
       className: s.root,
-      "aria-label": p.intl.string(p.t.shUONg),
+      "aria-label": p.intl.string(p.t.shUONj),
       size: i.CgR.DYNAMIC
     }, f), t = t = {
       parentComponent: "AppLauncherModal",

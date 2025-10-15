@@ -15,7 +15,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk592186 = require("./592186.js");
+  Chunk693450 = require("./693450.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -74,13 +74,13 @@ function E() {
   }, {
     autoTrackExposure: true
   }).enabled, y = (0, Chunk877371.A)("useAccessibilityItems"), O = [{
-    name: Chunk388032.intl.string(Chunk388032.t.YEOEi6),
+    name: Chunk388032.intl.string(Chunk388032.t.YEOEi4),
     value: "username"
   }, {
-    name: Chunk388032.intl.string(Chunk388032.t.mQaro3),
+    name: Chunk388032.intl.string(Chunk388032.t.mQaro6),
     value: "dot"
   }, {
-    name: Chunk388032.intl.string(Chunk388032.t.Ji2EVJ),
+    name: Chunk388032.intl.string(Chunk388032.t.Ji2EVF),
     value: "hidden"
   }];
 
@@ -92,25 +92,25 @@ function E() {
   let I = [(0, Chunk951288.jsx)(Chunk481060.kSQ, {
     children: (0, Chunk951288.jsx)(Chunk481060.S89, {
       id: "reduced-motion",
-      label: Chunk388032.intl.string(Chunk388032.t.b3XBzg),
+      label: Chunk388032.intl.string(Chunk388032.t.b3XBzs),
       checked: exports,
       action: () => (0, Chunk857595.Zt)(exports ? "no-preference" : "reduce")
     })
   }, "reduced-motion"), (0, Chunk951288.jsx)(Chunk481060.kSQ, {
     children: (0, Chunk951288.jsx)(Chunk481060.II_, {
       id: "input",
-      label: Chunk388032.intl.string(Chunk388032.t["5PWWCY"]),
+      label: Chunk388032.intl.string(Chunk388032.t["5PWWCQ"]),
       control: (t, n) => (0, r.jsx)(a._wy, g(h({}, t), {
         ref: n,
         value: 100 * e,
         onChange: e => (0, o.o2)(e / 100),
-        "aria-label": f.intl.string(f.t["5PWWCY"])
+        "aria-label": f.intl.string(f.t["5PWWCQ"])
       }))
     })
   }, "input"), (0, Chunk951288.jsx)(Chunk481060.kSQ, {
     children: (0, Chunk951288.jsx)(Chunk481060.sNh, {
       id: "role-colors",
-      label: Chunk388032.intl.string(Chunk388032.t.uSOPWm),
+      label: Chunk388032.intl.string(Chunk388032.t.uSOPWl),
       children: O.map(e => {
         let {
           name: t,
@@ -128,7 +128,7 @@ function E() {
   }, "role-colors"), (0, Chunk951288.jsx)(Chunk481060.kSQ, {
     children: (0, Chunk951288.jsx)(Chunk481060.S89, {
       id: "display-name-styles",
-      label: Chunk388032.intl.string(Chunk592186.default["2gFUEw"]),
+      label: Chunk388032.intl.string(Chunk693450.default["2gFUEx"]),
       checked: E,
       action: v
     })
@@ -136,14 +136,14 @@ function E() {
   return b && I.unshift((0, Chunk951288.jsx)(Chunk481060.kSQ, {
     children: (0, Chunk951288.jsx)(Chunk481060.S89, {
       id: "high-contrast",
-      label: Chunk388032.intl.string(Chunk388032.t.aZlePv),
+      label: Chunk388032.intl.string(Chunk388032.t.aZlePj),
       checked: p,
       action: () => (0, Chunk857595.vW)(p ? Chunk607070.X.DEFAULT : Chunk607070.X.HIGH)
     })
   }, "high-contrast")), y && I.push((0, Chunk951288.jsx)(Chunk481060.kSQ, {
     children: (0, Chunk951288.jsx)(Chunk481060.S89, {
       id: "switch-icons",
-      label: Chunk388032.intl.string(Chunk388032.t["S3z+pV"]),
+      label: Chunk388032.intl.string(Chunk388032.t["S3z+pa"]),
       checked: m,
       action: () => (0, Chunk857595.ky)(!m)
     })

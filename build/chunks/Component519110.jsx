@@ -67,7 +67,7 @@ function h(t) {
     location: I
   } = (0, c.O)(), w = i.useMemo(() => E(v({}, I), {
     section: m ? j.jXE.EXPRESSION_PICKER : j.jXE.CONTEXT_MENU
-  }), [I, m]), C = (0, f.Go)(), N = (0, l.e7)([y.Z], () => e === d.S.STICKER && null != n ? y.Z.getStickerById(n) : null), k = null != N && C.includes(N.id), x = (0, l.e7)([s.ZP], () => {
+  }), [I, m]), C = (0, f.Go)(), N = (0, l.e7)([O.Z], () => e === d.S.STICKER && null != n ? O.Z.getStickerById(n) : null), k = null != N && C.includes(N.id), x = (0, l.e7)([s.ZP], () => {
     if (e === d.S.EMOJI) {
       if (null != n) return s.ZP.getDisambiguatedEmojiContext().getById(n);
       else if (null != h) {
@@ -76,10 +76,10 @@ function h(t) {
       }
     }
   }), A = (0, u.C1)(null, x);
-  return null != N && e === d.S.STICKER ? (0, O.J8)(N) && !(0, O.V9)(N) ? null : k ? (0, r.jsx)(o.sNh, {
+  return null != N && e === d.S.STICKER ? (0, y.J8)(N) && !(0, y.V9)(N) ? null : k ? (0, r.jsx)(o.sNh, {
     id: "unfavorite",
     action: () => (0, p.hW)(N.id),
-    label: S.intl.string(S.t.XhzKyF)
+    label: S.intl.string(S.t.XhzKyM)
   }) : (0, r.jsx)(o.sNh, {
     id: "favorite",
     action: () => {
@@ -90,11 +90,11 @@ function h(t) {
         })
       }), (0, p.SA)(null == N ? true : N.id)
     },
-    label: S.intl.string(S.t.kWmiPW)
+    label: S.intl.string(S.t.kWmiPT)
   }) : null != x && e === d.S.EMOJI ? A ? (0, r.jsx)(o.sNh, {
     id: "unfavorite",
     action: () => (0, a.Xe)(x),
-    label: S.intl.string(S.t.Ay49KA)
+    label: S.intl.string(S.t.Ay49KC)
   }) : (0, r.jsx)(o.sNh, {
     id: "favorite",
     action: () => {
@@ -105,6 +105,6 @@ function h(t) {
         })
       }), (0, a.$K)(x)
     },
-    label: S.intl.string(S.t.nNsr67)
+    label: S.intl.string(S.t["nNsr6+"])
   }) : true
 }

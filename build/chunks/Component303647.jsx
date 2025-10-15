@@ -17,47 +17,47 @@ function b(t) {
   var e, a;
   let {
     transitionState: b,
-    onClose: p,
-    entry: g
-  } = t, [h, m] = n.useState(null != (e = g.description) ? e : ""), [C, I] = n.useState(null != (a = g.primaryCategoryId) ? a : c.AR.UNCATEGORIZED), [x, _] = n.useState(false), [f, v] = n.useState(null), y = async () => {
-    if (v(null), h !== g.description || C !== g.primaryCategoryId) {
+    onClose: g,
+    entry: h
+  } = t, [p, m] = i.useState(null != (e = h.description) ? e : ""), [x, I] = i.useState(null != (a = h.primaryCategoryId) ? a : c.AR.UNCATEGORIZED), [C, _] = i.useState(false), [f, v] = i.useState(null), y = async () => {
+    if (v(null), p !== h.description || x !== h.primaryCategoryId) {
       _(true);
       try {
-        await (0, o.Dr)(g.channelId, g.guildId, h, C), _(false), p()
+        await (0, o.Dr)(h.channelId, h.guildId, p, x), _(false), g()
       } catch (t) {
         _(false), v(new s.Z(t))
       }
     }
   };
-  return (0, l.jsx)(i.Modal, {
+  return (0, l.jsx)(n.Modal, {
     transitionState: b,
-    "aria-label": u.intl.string(u.t.eQ2bLp),
-    onClose: p,
-    title: u.intl.formatToPlainString(u.t.w9tsNk, {
-      guildName: g.name
+    "aria-label": u.intl.string(u.t.eQ2bLi),
+    onClose: g,
+    title: u.intl.formatToPlainString(u.t.w9tsNj, {
+      guildName: h.name
     }),
-    subtitle: u.intl.string(u.t["vEkX/8"]),
+    subtitle: u.intl.string(u.t["vEkX//"]),
     actions: [{
       variant: "primary",
-      text: u.intl.string(u.t["R3BPH+"]),
+      text: u.intl.string(u.t.R3BPHx),
       onClick: y,
-      loading: x
+      loading: C
     }],
     children: (0, l.jsxs)("div", {
       className: d.createGuild,
       children: [(0, l.jsx)(r.Kx8, {
-        label: u.intl.string(u.t.FFFAGt),
-        value: h,
+        label: u.intl.string(u.t.FFFAGh),
+        value: p,
         maxLength: 200,
-        placeholder: u.intl.string(u.t.VzuITC),
+        placeholder: u.intl.string(u.t.VzuITE),
         onChange: m,
         error: null == f ? true : f.getAnyErrorMessage()
       }), (0, l.jsx)(r.q4e, {
         label: u.intl.string(u.t.Olo8FB),
         placeholder: u.intl.string(u.t.XqMe3N),
-        options: (0, c.b7)(g.channelId),
+        options: (0, c.b7)(h.channelId),
         clearable: false,
-        value: C,
+        value: x,
         onChange: I,
         maxVisibleItems: 4
       })]

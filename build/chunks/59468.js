@@ -21,7 +21,7 @@ async function d(e) {
   }), p = (0, o._)(), h = await p, m = await f, _ = m.filter(e => e.id.startsWith(i.vA.SCREEN)).map(e => {
     var t, n;
     let r = e.name;
-    return "Entire screen" === r ? r = a.intl.string(a.t.R4wpLN) : /^Screen \d+$/.test(r) && (r = a.intl.formatToPlainString(a.t["y/R7n4"], {
+    return "Entire screen" === r ? r = a.intl.string(a.t.R4wpLC) : /^Screen \d+$/.test(r) && (r = a.intl.formatToPlainString(a.t["y/R7n5"], {
       index: parseInt(r.split(" ")[1])
     })), t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -52,15 +52,15 @@ async function d(e) {
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t
-  }), x = function(e, t) {
+  }), g = function(e, t) {
     let n = {};
     return t.forEach(e => {
       n[e.id] = e
     }), e.forEach(e => {
       n[e.id] = e
     }), Object.values(n)
-  }(m.filter(e => e.id.startsWith(i.vA.WINDOW)), h), g = [];
-  return d.includes(i.vA.CAMERA) && (g = Object.entries(u).filter(e => {
+  }(m.filter(e => e.id.startsWith(i.vA.WINDOW)), h), x = [];
+  return d.includes(i.vA.CAMERA) && (x = Object.entries(u).filter(e => {
     let [t, n] = e;
     return !n.disabled
   }).map((e, t) => {
@@ -71,8 +71,8 @@ async function d(e) {
       url: o
     }
   })), {
-    windowSources: x,
+    windowSources: g,
     screenSources: _,
-    cameraSources: g
+    cameraSources: x
   }
 }

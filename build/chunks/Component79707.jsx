@@ -17,7 +17,7 @@ function l(e) {
   } = e;
   return (0, r.jsx)(a.v2r, {
     navId: "global-discovery-tabs-overflow-menu",
-    "aria-label": i.intl.string(i.t.riPnr0),
+    "aria-label": i.intl.string(i.t.riPnr6),
     hideScroller: true,
     onClose: s,
     onSelect: s,

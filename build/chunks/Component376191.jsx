@@ -31,7 +31,7 @@ let y = e => {
       className: v.mutualGuilds,
       variant: "text-sm/normal",
       color: "text-muted",
-      children: E.intl.string(E.t.jpY0X5)
+      children: E.intl.string(E.t.jpY0X1)
     }) : (0, r.jsxs)("div", {
       className: v.mutualGuildsContainer,
       children: [(0, r.jsx)(f.Z, {
@@ -43,7 +43,7 @@ let y = e => {
         className: v.mutualGuilds,
         variant: "text-sm/normal",
         color: "text-muted",
-        children: E.intl.format(E.t.eE3oep, {
+        children: E.intl.format(E.t.eE3oen, {
           count: n.length
         })
       })]
@@ -70,7 +70,7 @@ function C(e) {
       src: (0, p.x)(n, 40, C),
       avatarDecoration: T,
       size: l.EFr.SIZE_40,
-      "aria-label": null != (t = null == c ? true : c.username) ? t : E.intl.string(E.t["30mdIx"])
+      "aria-label": null != (t = null == c ? true : c.username) ? t : E.intl.string(E.t["30mdIy"])
     }), (0, r.jsxs)("div", {
       className: v.userPreview,
       children: [(0, r.jsxs)("div", {

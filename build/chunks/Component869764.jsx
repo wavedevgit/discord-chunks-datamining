@@ -70,10 +70,10 @@ function v(e) {
       height: 32,
       alt: "",
       "aria-hidden": true
-    }) : (0, l.jsx)(S.Z, {
+    }) : (0, l.jsx)(E.Z, {
       emojiId: n,
       emojiName: r,
-      size: S.R.LARGE,
+      size: E.R.LARGE,
       defaultComponent: (0, l.jsx)("div", {
         className: j.channelIconContainer,
         children: (0, l.jsx)(c, {
@@ -118,16 +118,16 @@ function b(e) {
   } = n, {
     id: I,
     name: p
-  } = null != g ? g : {}, O = (0, s.e7)([u.Z], () => u.Z.getChannel(a)), E = (0, c.ZP)(O, true), S = (0, s.e7)([h.Z], () => h.Z.can(x.Plq.VIEW_CHANNEL, O)), T = r.useMemo(() => {
+  } = null != g ? g : {}, O = (0, s.e7)([u.Z], () => u.Z.getChannel(a)), S = (0, c.ZP)(O, true), E = (0, s.e7)([h.Z], () => h.Z.can(x.Plq.VIEW_CHANNEL, O)), T = r.useMemo(() => {
     if (null != O) return () => (0, N.gp)(O.guild_id, O.id)
   }, [O]);
-  if (null == O || !S) return null;
+  if (null == O || !E) return null;
   let _ = null != (t = (0, d.KS)(O)) ? t : o.VL1;
   return (0, l.jsx)(v, {
     variant: "channel",
     channelId: a,
     title: m,
-    channelName: E,
+    channelName: S,
     emojiId: I,
     emojiName: p,
     icon: f,
@@ -140,7 +140,7 @@ function b(e) {
 function D(e) {
   let {
     guildId: t
-  } = e, n = (0, s.e7)([O.Z], () => O.Z.getNewMemberActions(t), [t]), i = (0, s.e7)([E.Z], () => E.Z.getCompletedActions(t)), c = (0, s.e7)([m.ZP], () => m.ZP.getSelfMember(t)), d = (0, s.e7)([g.Z], () => g.Z.getGuild(t));
+  } = e, n = (0, s.e7)([O.Z], () => O.Z.getNewMemberActions(t), [t]), i = (0, s.e7)([S.Z], () => S.Z.getCompletedActions(t)), c = (0, s.e7)([m.ZP], () => m.ZP.getSelfMember(t)), d = (0, s.e7)([g.Z], () => g.Z.getGuild(t));
   r.useEffect(() => {
     var e;
     null == i && (null == c ? true : c.flags) != null && (0, p.yE)(null != (e = c.flags) ? e : 0, T.q.STARTED_HOME_ACTIONS) && (0, N.Fg)(t)
@@ -153,7 +153,7 @@ function D(e) {
     children: [(0, l.jsx)(o.Heading, {
       variant: "heading-lg/bold",
       color: "header-primary",
-      children: _.intl.string(_.t.LhlgY9)
+      children: _.intl.string(_.t.LhlgY2)
     }), n.map(e => (0, l.jsx)(b, {
       action: e,
       completed: (null == i ? true : i[e.channelId]) === true,
@@ -173,7 +173,7 @@ function D(e) {
         children: (0, l.jsx)(o.Text, {
           variant: "text-md/semibold",
           color: "header-primary",
-          children: _.intl.string(_.t["K/i3iQ"])
+          children: _.intl.string(_.t["K/i3iY"])
         })
       })]
     })]

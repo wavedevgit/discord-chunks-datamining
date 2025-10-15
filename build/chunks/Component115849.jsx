@@ -85,7 +85,7 @@ function S(e, t) {
 
 function T(e) {
   let {
-    placeholder: t = h.intl.string(h.t["Rn/sLl"])
+    placeholder: t = h.intl.string(h.t["Rn/sLi"])
   } = e, n = i.useRef(null), a = i.useRef(null), [l, p] = i.useReducer(S, _), {
     canSend: v,
     hint: y,
@@ -111,7 +111,7 @@ function T(e) {
         }
       }).then(() => p({
         type: "SUCCESS",
-        text: h.intl.format(h.t.Rtl1Ep, {
+        text: h.intl.format(h.t.Rtl1Eh, {
           discordTag: t
         })
       }), e => {
@@ -128,7 +128,7 @@ function T(e) {
       children: [(0, r.jsx)(o.Text, {
         tag: "div",
         variant: "heading-md/normal",
-        children: h.intl.string(h.t["Rn/sLl"])
+        children: h.intl.string(h.t["Rn/sLi"])
       }), (0, r.jsx)("img", {
         src: j,
         alt: "Wumpus Waving"
@@ -188,7 +188,7 @@ function T(e) {
         }), (0, r.jsx)(o.Button, {
           variant: "primary",
           size: "sm",
-          text: h.intl.string(h.t["PMsq/b"]),
+          text: h.intl.string(h.t["PMsq/f"]),
           disabled: !v,
           type: "submit"
         })]

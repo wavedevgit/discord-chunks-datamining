@@ -35,11 +35,11 @@ class _ extends Chunk647438.PureComponent {
         phone: g
       } = this.state,
       E = [];
-    return h ? e = Chunk388032.intl.string(Chunk388032.t["4qMI6A"]) : (e = Chunk388032.intl.string(Chunk388032.t.Vp9je2), t = (0, Chunk951288.jsx)(Chunk481060.Text, {
+    return h ? e = Chunk388032.intl.string(Chunk388032.t["4qMI6O"]) : (e = Chunk388032.intl.string(Chunk388032.t.Vp9je3), t = (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
-      children: Chunk388032.intl.format(Chunk388032.t["3BTmqX"], {})
+      children: Chunk388032.intl.format(Chunk388032.t["3BTmqa"], {})
     })), h ? (n = (0, Chunk951288.jsx)(Chunk481060.gNt, {
-      label: Chunk388032.intl.string(Chunk388032.t.Xclkxp),
+      label: Chunk388032.intl.string(Chunk388032.t.Xclkxs),
       hideLabel: true,
       errorMessage: null != f ? f : true,
       children: (0, Chunk951288.jsx)(Chunk7557.Z, {
@@ -47,22 +47,22 @@ class _ extends Chunk647438.PureComponent {
       })
     }), E = [{
       variant: "secondary",
-      text: Chunk388032.intl.string(Chunk388032.t["5b60gi"]),
+      text: Chunk388032.intl.string(Chunk388032.t["5b60go"]),
       onClick: this.handleResendCode,
       loading: _
     }]) : (n = (0, Chunk951288.jsx)(Chunk200357.Z, {
-      label: Chunk388032.intl.string(Chunk388032.t["64bX0M"]),
+      label: Chunk388032.intl.string(Chunk388032.t["64bX0N"]),
       errorMessage: null != f ? f : true,
       className: Chunk520668.field,
       onChange: this.handlePhoneChange,
       submitting: _,
       layerContext: m
     }), E = [{
-      text: Chunk388032.intl.string(Chunk388032.t.TXNS7S),
+      text: Chunk388032.intl.string(Chunk388032.t.TXNS7e),
       disabled: "" === g,
       loading: _,
       onClick: this.handleAddPhone
-    }]), i = h ? Chunk388032.intl.string(Chunk388032.t.Xclkxp) : Chunk388032.intl.string(Chunk388032.t.uR76s6), (0, Chunk951288.jsx)(Chunk793030.Modal, {
+    }]), i = h ? Chunk388032.intl.string(Chunk388032.t.Xclkxs) : Chunk388032.intl.string(Chunk388032.t.uR76s7), (0, Chunk951288.jsx)(Chunk793030.Modal, {
       size: h ? "sm" : "md",
       title: Chunk647438,
       subtitle: module,

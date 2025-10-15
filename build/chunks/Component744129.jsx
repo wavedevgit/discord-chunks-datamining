@@ -153,7 +153,7 @@ function B(e) {
       [w.withGiftBanner]: g
     }),
     children: [(0, r.jsx)(Y, {}), (0, r.jsx)(S.E, {
-      text: null != H ? H : P.intl.string(P.t["6bEcYr"]),
+      text: null != H ? H : P.intl.string(P.t["6bEcYm"]),
       className: w.pill
     }), (0, r.jsx)(E.Z, {
       className: w.wordmark,
@@ -249,7 +249,7 @@ function F(e) {
         variant: "display-md",
         color: "header-primary",
         className: w.premiumCardsHeader,
-        children: P.intl.string(P.t.vLz3Zs)
+        children: P.intl.string(P.t.vLz3Zm)
       }), (0, r.jsxs)("div", {
         ref: l,
         className: w.premiumCards,

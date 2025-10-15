@@ -14,34 +14,34 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk890663 = require("./890663.js");
 let f = [{
-    getQuestion: () => Chunk388032.intl.string(Chunk388032.t.C4J8UB),
-    getAnswer: () => Chunk388032.intl.string(Chunk388032.t.nhkk6k)
+    getQuestion: () => Chunk388032.intl.string(Chunk388032.t.C4J8UF),
+    getAnswer: () => Chunk388032.intl.string(Chunk388032.t.nhkk6u)
   }, {
-    getQuestion: () => Chunk388032.intl.string(Chunk388032.t.ai4ym2),
-    getAnswer: () => Chunk388032.intl.format(Chunk388032.t["8zlqlD"], {
+    getQuestion: () => Chunk388032.intl.string(Chunk388032.t.ai4ym5),
+    getAnswer: () => Chunk388032.intl.format(Chunk388032.t["8zlqlJ"], {
       helpCenterUrl: Chunk63063.Z.getArticleURL(Chunk981631.BhN.GUILD_BOOSTING_FAQ)
     })
   }, {
-    getQuestion: () => Chunk388032.intl.string(Chunk388032.t.kMVGsC),
+    getQuestion: () => Chunk388032.intl.string(Chunk388032.t.kMVGsL),
     getAnswer: () => Chunk388032.intl.string(Chunk388032.t["Vz/SCQ"])
   }, {
     getQuestion: () => Chunk388032.intl.string(Chunk388032.t.kYmXWF),
-    getAnswer: () => Chunk388032.intl.string(Chunk388032.t["+OURPp"])
+    getAnswer: () => Chunk388032.intl.string(Chunk388032.t["+OURPj"])
   }, {
     getQuestion: () => Chunk388032.intl.string(Chunk388032.t["LsX/vb"]),
-    getAnswer: () => Chunk388032.intl.string(Chunk388032.t["3TeauK"])
+    getAnswer: () => Chunk388032.intl.string(Chunk388032.t["3TeauL"])
   }, {
-    getQuestion: () => Chunk388032.intl.string(Chunk388032.t.fRlnXU),
-    getAnswer: () => Chunk388032.intl.string(Chunk388032.t.bTRacj)
+    getQuestion: () => Chunk388032.intl.string(Chunk388032.t.fRlnXV),
+    getAnswer: () => Chunk388032.intl.string(Chunk388032.t.bTRacn)
   }, {
-    getQuestion: () => Chunk388032.intl.string(Chunk388032.t["8Mu5Q9"]),
-    getAnswer: () => Chunk388032.intl.string(Chunk388032.t["2T5iPo"])
+    getQuestion: () => Chunk388032.intl.string(Chunk388032.t["8Mu5Q0"]),
+    getAnswer: () => Chunk388032.intl.string(Chunk388032.t["2T5iPj"])
   }, {
-    getQuestion: () => Chunk388032.intl.string(Chunk388032.t["6EN+TZ"]),
-    getAnswer: () => Chunk388032.intl.string(Chunk388032.t.NZax1u)
+    getQuestion: () => Chunk388032.intl.string(Chunk388032.t["6EN+TU"]),
+    getAnswer: () => Chunk388032.intl.string(Chunk388032.t.NZax1t)
   }, {
-    getQuestion: () => Chunk388032.intl.string(Chunk388032.t.f5B4EW),
-    getAnswer: () => Chunk388032.intl.string(Chunk388032.t.Aje8Pb)
+    getQuestion: () => Chunk388032.intl.string(Chunk388032.t.f5B4ER),
+    getAnswer: () => Chunk388032.intl.string(Chunk388032.t.Aje8PT)
   }],
   _ = function(e) {
     let {

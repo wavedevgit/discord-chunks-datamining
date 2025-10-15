@@ -24,6 +24,6 @@ function l(e) {
     }),
     timestamp: t.timestamp,
     compact: n,
-    children: o.intl.string(o.t.OCs36J)
+    children: o.intl.string(o.t.OCs36O)
   })
 }

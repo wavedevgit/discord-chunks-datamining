@@ -38,7 +38,7 @@ function O(e) {
       draftType: m.d.ChannelMessage
     }), (0, r.jsx)(u.ZP, {
       toolbar: S,
-      "aria-label": _.intl.string(_.t.Pwe8tN),
+      "aria-label": _.intl.string(_.t.Pwe8tL),
       children: (0, h.ud)({
         channel: O,
         parentChannel: x,

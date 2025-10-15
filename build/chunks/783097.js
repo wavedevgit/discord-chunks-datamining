@@ -110,11 +110,11 @@ function w(e) {
 }
 
 function D(e) {
-  return w(e) ? e.name : I.intl.string(I.t.UB2gG2)
+  return w(e) ? e.name : I.intl.string(I.t.UB2gGx)
 }
 
 function L(e) {
-  return w(e) ? e.description : I.intl.string(I.t.X9fusn)
+  return w(e) ? e.description : I.intl.string(I.t.X9fusr)
 }
 
 function x(e) {
@@ -190,9 +190,9 @@ function B(e) {
       }
     } catch (e) {
       throw i.Z.show({
-        title: I.intl.string(I.t["aHO//m"]),
-        body: I.intl.string(I.t.kuzKHK),
-        confirmText: I.intl.string(I.t["5911Lb"]),
+        title: I.intl.string(I.t["aHO//v"]),
+        body: I.intl.string(I.t.kuzKHB),
+        confirmText: I.intl.string(I.t["5911LS"]),
         onConfirm: () => p()
       }), e
     }
@@ -215,8 +215,8 @@ function Z(e) {
     description: e.description
   } : {
     iconURL: null != n ? n : null,
-    name: I.intl.string(I.t.UB2gG2),
-    description: I.intl.string(I.t.X9fusn)
+    name: I.intl.string(I.t.UB2gGx),
+    description: I.intl.string(I.t.X9fusr)
   }
 }
 

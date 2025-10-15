@@ -30,7 +30,7 @@ function O(e) {
     videoEnabled: a,
     onEnable: O,
     onClose: P
-  } = e, _ = m.Z.getCameraComponent(), y = p.qF.useSetting(), [j, x] = n.useState((0, h.P)(w.default.getCurrentUser())), S = (0, s.O)(), {
+  } = e, _ = m.Z.getCameraComponent(), y = p.qF.useSetting(), [j, x] = n.useState((0, g.P)(w.default.getCurrentUser())), S = (0, s.O)(), {
     analyticsLocations: A
   } = (0, u.ZP)(d.Z.CAMERA_PREVIEW);
   n.useEffect(() => {
@@ -63,25 +63,25 @@ function O(e) {
           }, S.location)
         })
       } catch (e) {}
-      await P(), (0, g.Up)(j)
+      await P(), (0, h.Up)(j)
     }, [j, S.location, P]),
-    D = n.useCallback(async () => {
+    I = n.useCallback(async () => {
       await M(), l.Z.setVideoEnabled(true), null == O || O()
     }, [M, O]),
-    I = n.useMemo(() => [{
+    L = n.useMemo(() => [{
       variant: "primary",
-      text: a ? k.intl.string(k.t.KQENhq) : k.intl.string(k.t.kgIe9a),
-      onClick: a ? M : D
-    }], [M, D, a]);
+      text: a ? k.intl.string(k.t.KQENho) : k.intl.string(k.t.kgIe9f),
+      onClick: a ? M : I
+    }], [M, I, a]);
   return (0, r.jsx)(u.Gt, {
     value: A,
     children: (0, r.jsx)(o.Z, {
       page: C.ZY5.PREVIEW_CAMERA_MODAL,
       children: (0, r.jsx)(i.Modal, {
         size: "md",
-        title: a ? k.intl.string(k.t.LAwwbQ) : k.intl.string(k.t["/HITVD"]),
+        title: a ? k.intl.string(k.t.LAwwbW) : k.intl.string(k.t["/HITVF"]),
         actionBarInput: (0, r.jsx)(c.Checkbox, {
-          label: k.intl.string(k.t["3Ppr1h"]),
+          label: k.intl.string(k.t["3Ppr1t"]),
           labelType: "secondary",
           checked: y,
           onChange: () => {
@@ -90,7 +90,7 @@ function O(e) {
             })
           }
         }),
-        actions: I,
+        actions: L,
         onClose: P,
         transitionState: t,
         children: (0, r.jsx)(v.Z, {

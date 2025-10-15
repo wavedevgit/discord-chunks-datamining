@@ -9,11 +9,11 @@ var Chunk668781 = require("./668781.js"),
 
 function l(e) {
   a.Z.show({
-    title: i.intl.string(i.t.RpjdL8),
-    body: i.intl.string(i.t.nOSopS),
-    confirmText: i.intl.string(i.t["sKJ7+Y"]),
+    title: i.intl.string(i.t.RpjdLy),
+    body: i.intl.string(i.t.nOSopa),
+    confirmText: i.intl.string(i.t["sKJ7+f"]),
     confirmVariant: "critical-primary",
-    cancelText: i.intl.string(i.t["7wZ1GY"]),
+    cancelText: i.intl.string(i.t["7wZ1GR"]),
     onConfirm: () => {
       (0, r.v6)(null)
     },

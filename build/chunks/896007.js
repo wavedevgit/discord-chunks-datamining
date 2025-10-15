@@ -71,17 +71,17 @@ function f(e) {
   }), t), E = [];
   E.push({
     section: m,
-    label: "" !== c.name ? c.name : u.intl.string(u.t["154/bL"])
+    label: "" !== c.name ? c.name : u.intl.string(u.t["154/bG"])
   }), E.push(g(d.pNK.PROFILE, N)), E.push(g(d.pNK.TAG, N)), E.push(g(d.pNK.ENGAGEMENT, N)), E.push(g(d.pNK.BOOST_PERKS, N)), O && (E.push({
     section: p
   }), E.push({
     section: m,
-    label: u.intl.string(u.t.m6lkGy)
+    label: u.intl.string(u.t.m6lkGx)
   }), E.push(g(d.pNK.EMOJI, N)), E.push(g(d.pNK.STICKERS, N)), E.push(g(d.pNK.SOUNDBOARD, N))), (f || b || j || C) && (E.push({
     section: p
   }), E.push({
     section: m,
-    label: u.intl.string(u.t.bMAKMK)
+    label: u.intl.string(u.t.bMAKMD)
   }), E.push(g(d.pNK.MEMBERS, N)), E.push(g(d.pNK.ROLES, N)), E.push(g(d.pNK.INVITES, N)), E.push(g(d.pNK.ACCESS, N))), E.push({
     section: p
   }), E.push({
@@ -93,7 +93,7 @@ function f(e) {
     section: p
   }), E.push({
     section: m,
-    label: u.intl.string(u.t["5tbTdV"])
+    label: u.intl.string(u.t["5tbTdX"])
   }), E.push(g(d.pNK.SAFETY, N)), E.push(g(d.pNK.MODERATION, N)), E.push(g(d.pNK.AUDIT_LOG, N)), E.push(g(d.pNK.BANS, N)), E.push(g(d.pNK.GUILD_AUTOMOD, N)));
   let S = c.features.has(d.oNc.COMMUNITY) && v,
     T = y();

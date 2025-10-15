@@ -20,12 +20,12 @@ function u(e) {
     onDismissAndStay: u,
     onDismissAndLeave: _,
     leaveButtonText: m,
-    stayButtonText: x,
-    transitionState: f,
+    stayButtonText: f,
+    transitionState: x,
     impression: h
   } = e;
   return (0, i.jsx)(l.Modal, {
-    transitionState: f,
+    transitionState: x,
     onClose: () => (u(), Promise.resolve()),
     trackingProps: {
       impression: h
@@ -33,7 +33,7 @@ function u(e) {
     title: t,
     subtitle: null != n ? n : true,
     actions: [{
-      text: x,
+      text: f,
       onClick: u,
       variant: "secondary"
     }, {

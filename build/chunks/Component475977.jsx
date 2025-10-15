@@ -72,7 +72,7 @@ let m = () => {
     }), (0, Chunk951288.jsx)(Chunk481060.Button, {
       onClick: T,
       variant: "overlay-primary",
-      text: Chunk388032.intl.string(Chunk388032.t.fYfGgK)
+      text: Chunk388032.intl.string(Chunk388032.t.fYfGgI)
     })]
   })
 }

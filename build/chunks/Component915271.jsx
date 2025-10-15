@@ -37,18 +37,18 @@ class _ extends Chunk647438.PureComponent {
         children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: module.length < 25 ? "heading-xl/bold" : "heading-lg/bold",
           className: Chunk496758.connectionInstructions,
-          children: Chunk388032.intl.format(Chunk388032.t.DowIre, {
+          children: Chunk388032.intl.format(Chunk388032.t.DowIra, {
             venmoUsername: module
           })
         }), (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-md/medium",
           className: Chunk496758.connectionInstructions,
-          children: Chunk388032.intl.string(Chunk388032.t.kmEvnR)
+          children: Chunk388032.intl.string(Chunk388032.t.kmEvnZ)
         })]
       }) : (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/medium",
         className: Chunk496758.connectionInstructions,
-        children: null == require ? Chunk388032.intl.string(Chunk388032.t["2ouZDU"]) : Chunk388032.intl.string(Chunk388032.t.mIL6Jb)
+        children: null == require ? Chunk388032.intl.string(Chunk388032.t["2ouZDQ"]) : Chunk388032.intl.string(Chunk388032.t.mIL6JS)
       })]
     })
   }

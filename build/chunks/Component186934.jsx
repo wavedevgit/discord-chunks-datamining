@@ -28,14 +28,14 @@ function f() {
   return (0, Chunk951288.jsxs)(Chunk921801.F, {
     setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_SIDECHAIN_COMPRESSION,
     children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
-      label: Chunk388032.intl.string(Chunk388032.t["/jwMtn"]),
-      description: Chunk388032.intl.string(Chunk388032.t.zlA23F),
+      label: Chunk388032.intl.string(Chunk388032.t["/jwMtr"]),
+      description: Chunk388032.intl.string(Chunk388032.t.zlA23N),
       checked: module,
       onChange: e => o.Z.setSidechainCompression(e, {
         analyticsLocations: n
       })
     }), (0, Chunk951288.jsx)(Chunk481060.iRW, {
-      label: Chunk388032.intl.string(Chunk388032.t.fhEzfj),
+      label: Chunk388032.intl.string(Chunk388032.t.fhEzfn),
       initialValue: exports,
       minValue: 1,
       onValueChange: e => o.Z.setSidechainCompressionStrength(e, {

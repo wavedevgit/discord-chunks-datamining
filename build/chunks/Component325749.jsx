@@ -168,12 +168,12 @@ function Y(e) {
             iconClassName: G.inviteButtonIcon,
             size: u.zx.Sizes.TINY,
             look: u.zx.Looks.FILLED,
-            buttonText: H.intl.string(H.t["6F9ivu"]),
+            buttonText: H.intl.string(H.t["6F9ivr"]),
             color: u.zx.Colors.TRANSPARENT
           }), et ? (0, o.jsx)(I.Z, {
             onClick: en,
             iconComponent: _.epB,
-            label: H.intl.string(H.t.mseZsD)
+            label: H.intl.string(H.t.mseZsL)
           }) : null, eo ? (0, o.jsx)(N.Z, {
             popoutWindowAlwaysOnTop: er,
             onToggleStayOnTop: ea

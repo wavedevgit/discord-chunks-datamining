@@ -49,13 +49,13 @@ function f(e) {
           color: o.Z.colors.STATUS_DANGER
         }), (0, r.jsx)(s.Text, {
           variant: "text-md/semibold",
-          children: c.intl.string(c.t["4CxGXi"])
+          children: c.intl.string(c.t["4CxGXl"])
         })]
       }), (0, r.jsx)("div", {
         className: u.incidentTiming,
         children: (0, r.jsx)(s.Text, {
           variant: "text-xs/medium",
-          children: c.intl.format(c.t.eevFb6, {
+          children: c.intl.format(c.t.eevFb2, {
             daysAgo: d(E)
           })
         })
@@ -64,13 +64,13 @@ function f(e) {
         children: (0, r.jsx)(s.Text, {
           variant: "text-md/normal",
           color: "text-muted",
-          children: c.intl.string(c.t["5CLb0A"])
+          children: c.intl.string(c.t["5CLb0N"])
         })
       })]
     }), (0, r.jsx)("div", {
       className: u.footerContainer,
       children: (0, r.jsx)(s.Avr, {
-        text: c.intl.string(c.t.zKnzwm),
+        text: c.intl.string(c.t.zKnzws),
         variant: "secondary"
       })
     })]

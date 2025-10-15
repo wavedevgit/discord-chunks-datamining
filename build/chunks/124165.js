@@ -25,10 +25,10 @@ var d = function(e) {
 
 function f() {
   return [{
-    name: Chunk388032.intl.string(Chunk388032.t.uoorxi),
+    name: Chunk388032.intl.string(Chunk388032.t.uoorxs),
     value: 0
   }, {
-    name: Chunk388032.intl.string(Chunk388032.t.lwZCFT),
+    name: Chunk388032.intl.string(Chunk388032.t.lwZCFR),
     value: 1
   }]
 }

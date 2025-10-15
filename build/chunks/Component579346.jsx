@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk626135 = require("./626135.js"),
   Chunk660662 = require("./660662.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk592186 = require("./592186.js"),
+  Chunk693450 = require("./693450.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk745993 = require("./745993.js"),
   Chunk959389 = require("./959389.js");
@@ -23,25 +23,25 @@ function h(e) {
     selectedColors: n,
     setSelectedColors: h,
     defaultColor: x,
-    selectedEffectId: b,
-    className: _
-  } = e, S = b === r.m.GRADIENT, j = (0, o.useCallback)(e => {
+    selectedEffectId: _,
+    className: b
+  } = e, S = _ === r.m.GRADIENT, C = (0, o.useCallback)(e => {
     h([e]), c.default.track(u.rMx.DISPLAY_NAME_STYLES_COLOR_SELECTED, {
       default: e === x,
       colors: [e]
     })
-  }, [h, x]), C = (0, o.useCallback)(e => {
+  }, [h, x]), j = (0, o.useCallback)(e => {
     h(e), c.default.track(u.rMx.DISPLAY_NAME_STYLES_COLOR_SELECTED, {
       default: false,
       colors: e
     })
   }, [h]);
   return (0, l.jsxs)("div", {
-    className: _,
+    className: b,
     children: [(0, l.jsxs)(i.X6q, {
       variant: "heading-md/semibold",
       className: g.selectorHeading,
-      children: [m.intl.string(p.default.JOpi7z), (0, l.jsx)(a.SrA, {
+      children: [m.intl.string(p.default["JOpi7+"]), (0, l.jsx)(a.SrA, {
         size: "xs",
         color: a.TVs.colors.TEXT_DEFAULT
       })]
@@ -52,8 +52,8 @@ function h(e) {
       colors: S ? d.vK : d.gD,
       value: n[0],
       secondaryValue: null != (t = n[1]) ? t : true,
-      onChange: j,
-      onChangeGradientColors: C,
+      onChange: C,
+      onChangeGradientColors: j,
       isGradient: S,
       gradientButtonClassName: f.gradientPicker,
       gradientDegrees: 90,

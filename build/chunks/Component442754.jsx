@@ -25,11 +25,11 @@ function p(e) {
   if (!t || e.isThread()) return null;
   if (e.isCategory()) return (0, r.jsx)(l.sNh, {
     id: "opt-into-category",
-    label: p ? d.intl.string(d.t["3zySTA"]) : d.intl.string(d.t["9mysCh"]),
+    label: p ? d.intl.string(d.t["3zySTE"]) : d.intl.string(d.t["9mysCg"]),
     action: () => O()
   });
-  let y = f ? d.intl.string(d.t.z7I3gd) : d.intl.string(d.t["N2c/Un"]),
-    g = f ? d.intl.string(d.t.M5PWSf) : d.intl.string(d.t.RMpwZu);
+  let y = f ? d.intl.string(d.t.z7I3gY) : d.intl.string(d.t["N2c/Ul"]),
+    g = f ? d.intl.string(d.t.M5PWSU) : d.intl.string(d.t.RMpwZm);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.sNh, {
       id: "opt-in-favorite-channel",
@@ -41,13 +41,13 @@ function p(e) {
       }
     }), b ? (0, r.jsx)(l.sNh, {
       id: "opt-out-category",
-      label: d.intl.string(d.t.jNphKT),
+      label: d.intl.string(d.t.jNphKS),
       action: () => void(null != e.parent_id && (0, c.XQ)(e.guild_id, e.parent_id, false, {
         section: s.jXE.CONTEXT_MENU
       }))
     }) : (0, r.jsx)(l.sNh, {
       id: "opt-into-channel",
-      label: p ? d.intl.string(d.t["3zySTA"]) : d.intl.string(d.t["9mysCh"]),
+      label: p ? d.intl.string(d.t["3zySTE"]) : d.intl.string(d.t["9mysCg"]),
       action: () => O()
     })]
   })

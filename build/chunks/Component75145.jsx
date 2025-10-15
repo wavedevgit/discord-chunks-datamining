@@ -54,7 +54,7 @@ function g() {
           variant: "text-xs/medium",
           color: "always-white",
           lineClamp: 1,
-          children: Chunk388032.intl.string(Chunk388032.t["BMw+7I"])
+          children: Chunk388032.intl.string(Chunk388032.t["BMw+7O"])
         })]
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk788457.nitroTopDividerLockBorderReversed

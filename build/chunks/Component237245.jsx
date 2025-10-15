@@ -83,7 +83,7 @@ function E(e) {
         throwErr: true
       })
     } catch (e) {
-      throw "object" == typeof e && "message" in e ? R(e.message) : R(O.intl.formatToPlainString(O.t.aTVNes, {
+      throw "object" == typeof e && "message" in e ? R(e.message) : R(O.intl.formatToPlainString(O.t.aTVNen, {
         statusPageURL: _.yXt.STATUS
       })), e
     }
@@ -96,7 +96,7 @@ function E(e) {
   }, [T]), U = i.useCallback(async (e, t, n) => {
     let r = t.length > 0 ? [{
       field_type: u.QJ.TERMS,
-      label: O.intl.string(O.t["9suSIA"]),
+      label: O.intl.string(O.t["9suSIC"]),
       values: t,
       required: true
     }] : [];
@@ -169,9 +169,9 @@ function E(e) {
         requireTerms: e,
         termRules: t = []
       } = l;
-      if (t.map(e => e.value.trim()).filter(e => "" !== e).length < 1 && e) return void R(O.intl.string(O.t.TCHkcd))
+      if (t.map(e => e.value.trim()).filter(e => "" !== e).length < 1 && e) return void R(O.intl.string(O.t.TCHkcX))
     }
-    if (l.joinType === j.A.APPLY && !(null == (e = l.pendingVerificationFields) ? true : e.some(e => (0, g._C)(e)))) return void R(O.intl.string(O.t.HGVrI3));
+    if (l.joinType === j.A.APPLY && !(null == (e = l.pendingVerificationFields) ? true : e.some(e => (0, g._C)(e)))) return void R(O.intl.string(O.t.HGVrIy));
     (e => {
       if (D && A > 0 && l.joinType !== j.A.APPLY) return (0, a.ZDy)(async () => {
         let {
@@ -198,8 +198,8 @@ function E(e) {
     })(() => B(e)))
   }, [D, B, l, T, A]), H = l.joinType === j.A.DISCOVERABLE && l.settingsView === v.U.ELIGIBLE_DISABLED, W = null != E.description && I.primaryCategoryId !== C.o3 && I.keywords.length > 0;
   return (0, r.jsx)(s.Z, {
-    message: H ? O.intl.string(O.t.V2G2Yr) : true,
-    onSaveText: H ? O.intl.string(O.t["qjtt/p"]) : true,
+    message: H ? O.intl.string(O.t.V2G2Ym) : true,
+    onSaveText: H ? O.intl.string(O.t["qjtt/v"]) : true,
     submitting: P,
     errorMessage: Z,
     onReset: L,
@@ -235,7 +235,7 @@ function I() {
     }
   });
   return null == module || null == require ? null : module.joinType === Chunk384632.A.DISCOVERABLE && module.settingsView === Chunk386885.U.INELIGIBLE ? (0, Chunk951288.jsx)(Chunk852860.Z, {
-    message: Chunk388032.intl.string(Chunk388032.t.TEXwRt),
+    message: Chunk388032.intl.string(Chunk388032.t.TEXwRk),
     onReset: () => Chunk434404.Z.init(require.id, Chunk981631.pNK.ACCESS)
   }) : (0, Chunk951288.jsx)(E, {
     pendingState: module,

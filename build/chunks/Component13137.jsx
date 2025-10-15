@@ -67,41 +67,41 @@ function h(e) {
       categoriesHeader: x,
       optionsTree: L,
       hideDontShowAgainCheckbox: I,
-      impression: P,
-      transitionState: T
+      impression: M,
+      transitionState: P
     } = e,
-    F = (0, c.Z)(L),
-    [R, M] = l.useState(g(L));
+    T = (0, c.Z)(L),
+    [R, F] = l.useState(g(L));
   l.useEffect(() => {
-    s().isEqual(F, L) || M(g(L))
-  }, [L, F]);
+    s().isEqual(T, L) || F(g(L))
+  }, [L, T]);
   let A = (0, f.Dt)(),
     [k, w] = l.useState(false),
-    [U, Z] = l.useState(D),
-    [$, H] = l.useState(null),
-    [B, G] = l.useState(null),
+    [Z, U] = l.useState(D),
+    [$, B] = l.useState(null),
+    [H, G] = l.useState(null),
     [J, K] = l.useState("");
   (0, d.ZP)(() => null == o ? true : o()), (0, d.zq)(() => {
     var e;
     h({
-      rating: U,
+      rating: Z,
       category: null != (e = null == $ ? true : $.value) ? e : null,
-      problem: B,
+      problem: H,
       dontShowAgain: k,
       feedback: J
     })
   });
   let V = true,
     z = false;
-  return null == U ? (n = (0, a.jsxs)(a.Fragment, {
+  return null == Z ? (n = (0, a.jsxs)(a.Fragment, {
     children: [(0, a.jsx)("div", {
       className: r()(p.problemInfo, p.ratingSelectorContainer),
       children: (0, a.jsx)(_.Z, {
         ratingOptions: N,
         emojiKind: C,
-        selectedRating: U,
+        selectedRating: Z,
         onChangeRating: function(e) {
-          Z(e), e === m.aZ.GOOD && S()
+          U(e), e === m.aZ.GOOD && S()
         }
       })
     }), !I && (0, a.jsx)(u.mzw, {
@@ -110,20 +110,20 @@ function h(e) {
       children: (0, a.jsx)(u.Checkbox, {
         checked: k,
         onChange: () => w(!k),
-        label: E.intl.string(E.t["5E9SB9"]),
+        label: E.intl.string(E.t["5E9SBw"]),
         labelType: "secondary"
       })
     })]
-  }), V = false) : U !== m.aZ.GOOD && null == $ ? (n = (0, a.jsx)(u.hzk, {
+  }), V = false) : Z !== m.aZ.GOOD && null == $ ? (n = (0, a.jsx)(u.hzk, {
     children: (0, a.jsx)(u.gNt, {
       label: x,
       children: (0, a.jsx)(O.Z, {
         options: R,
-        onClick: H,
+        onClick: B,
         hideCaret: () => true
       })
     })
-  }), i = () => Z(null)) : null != $ && null == B ? (n = (0, a.jsx)(u.hzk, {
+  }), i = () => U(null)) : null != $ && null == H ? (n = (0, a.jsx)(u.hzk, {
     children: (0, a.jsx)(u.gNt, {
       label: $.problemsHeader,
       children: (0, a.jsx)(O.Z, {
@@ -141,10 +141,10 @@ function h(e) {
         }
       })
     })
-  }), i = () => H(null)) : null != $ && null != B && (null == (t = $.freeformConfig) ? true : t.value) === B.value && (n = (0, a.jsx)(u.hzk, {
+  }), i = () => B(null)) : null != $ && null != H && (null == (t = $.freeformConfig) ? true : t.value) === H.value && (n = (0, a.jsx)(u.hzk, {
     children: (0, a.jsx)(u.Kx8, {
       label: E.intl.string(E.t.h95hcn),
-      helperText: $.freeformConfig.hideHelpdeskLink ? true : E.intl.format(E.t.ybi2tD, {
+      helperText: $.freeformConfig.hideHelpdeskLink ? true : E.intl.format(E.t.ybi2tL, {
         helpdeskURL: v.Z.getSubmitRequestURL()
       }),
       value: J,
@@ -154,8 +154,8 @@ function h(e) {
   }), i = () => {
     K(""), G(null)
   }, z = true), (0, a.jsxs)(u.Y0X, {
-    impression: P,
-    transitionState: T,
+    impression: M,
+    transitionState: P,
     className: p.modalRoot,
     "aria-labelledby": A,
     parentComponent: "FeedbackModalV2",
@@ -179,12 +179,12 @@ function h(e) {
       children: [(0, a.jsx)(u.Button, {
         variant: "secondary",
         size: "sm",
-        text: E.intl.string(E.t["13/7kX"]),
+        text: E.intl.string(E.t["13/7kZ"]),
         onClick: i
       }), z && (0, a.jsx)(u.Button, {
         variant: "primary",
         size: "sm",
-        text: E.intl.string(E.t.geKm7t),
+        text: E.intl.string(E.t.geKm7u),
         onClick: S
       })]
     })]

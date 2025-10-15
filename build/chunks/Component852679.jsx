@@ -34,7 +34,7 @@ async function p(e) {
   } = e, A = I ? i.u1M : i.z1l, C = l.Z.getPremiumTypeSubscription();
   if (null != C && C.isPurchasedExternally && null != C.paymentGateway) {
     null != g && g(), a.Z.show({
-      title: f.intl.formatToPlainString(f.t["rTk9v/"], {
+      title: f.intl.formatToPlainString(f.t.rTk9v7, {
         paymentGatewayName: d.Vzj[C.paymentGateway]
       }),
       body: f.intl.format(f.t.NY03WF, {

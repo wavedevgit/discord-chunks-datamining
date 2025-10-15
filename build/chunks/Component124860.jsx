@@ -117,7 +117,7 @@ function p(e) {
   return (0, l.jsx)(i.Y0X, {
     transitionState: r,
     size: i.CgR.SMALL,
-    "aria-label": h.intl.string(h.t.saHocI),
+    "aria-label": h.intl.string(h.t.saHocH),
     parentComponent: "MFAModal",
     children: (0, l.jsx)(m, {
       mfaChallenge: t,
@@ -134,7 +134,7 @@ function b(e, t, n) {
     mfaChallenge: e
   }, n)), {
     onCloseCallback: () => {
-      n(Error(h.intl.string(h.t.N2yb9a)))
+      n(Error(h.intl.string(h.t.N2yb9f)))
     }
   })
 }

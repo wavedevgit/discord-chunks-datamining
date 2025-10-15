@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk520317 = require("./520317.js");
 
-function h(e) {
+function v(e) {
   let {
     question: t,
     onChange: n,
@@ -30,9 +30,9 @@ function h(e) {
     inputRef: a
   } = e;
   return (0, r.jsx)(c.Kx8, {
-    label: y.intl.string(y.t.WBiKnI),
+    label: y.intl.string(y.t.WBiKnJ),
     inputRef: a,
-    placeholder: y.intl.string(y.t["/uQqJW"]),
+    placeholder: y.intl.string(y.t["/uQqJS"]),
     value: t,
     onChange: n,
     maxLength: j.Az,
@@ -50,13 +50,13 @@ function P(e) {
     onSelect: n
   } = e, l = (0, p.Z)(), a = l[t];
   return (0, r.jsx)("div", {
-    className: v.duration,
+    className: h.duration,
     children: (0, r.jsx)(c.PhF, {
-      label: y.intl.string(y.t.bGHzxb),
-      "aria-label": y.intl.formatToPlainString(y.t.nXNHNJ, {
+      label: y.intl.string(y.t.bGHzxc),
+      "aria-label": y.intl.formatToPlainString(y.t.nXNHND, {
         duration: a
       }),
-      className: v.durationSelect,
+      className: h.durationSelect,
       options: Object.entries(l).map(e => {
         let [t, n] = e;
         return {
@@ -78,14 +78,14 @@ function w(e) {
     transitionState: n,
     onClose: p,
     initialQuestion: C,
-    initialAnswers: k,
-    initialDuration: x
+    initialAnswers: R,
+    initialDuration: k
   } = e;
   (0, u.Z)({
     type: O.n.MODAL,
     name: a.z.POLL_EDITOR_VIEWED
   });
-  let R = l.useRef(null),
+  let x = l.useRef(null),
     E = l.useRef([]),
     S = l.useRef(null),
     _ = l.useCallback(e => {
@@ -105,22 +105,22 @@ function w(e) {
       setDuration: L,
       handleQuestionChange: T,
       handleAnswerTextChange: Z,
-      handleEmojiSelect: B,
+      handleEmojiSelect: Y,
       canAddMoreAnswers: K,
-      handleRemoveAnswerImage: Y,
+      handleRemoveAnswerImage: B,
       canRemoveMoreAnswers: M,
       handleAddAnswer: z,
       handleRemoveAnswer: H,
-      createPollError: W,
-      handleSubmitPoll: q,
+      createPollError: q,
+      handleSubmitPoll: W,
       fieldErrors: F,
       submitting: G,
       shouldFocusOnInvalidField: V,
       setShouldFocusOnInvalidField: X
     } = (0, m.Z)(t, p, _, {
       initialQuestion: C,
-      initialAnswers: k,
-      initialDuration: x
+      initialAnswers: R,
+      initialDuration: k
     }),
     {
       trackPollCreationCancelled: J
@@ -131,12 +131,12 @@ function w(e) {
     }, [p, J]),
     ee = l.useCallback(() => {
       if (!(0, d.D$)(A, D)) return void s.Z.show({
-        title: y.intl.string(y.t.HMrgcp),
-        body: y.intl.string(y.t["Wxa/j8"]),
+        title: y.intl.string(y.t.HMrgcn),
+        body: y.intl.string(y.t["Wxa/j4"]),
         confirmColor: o.Tt.RED,
-        confirmText: y.intl.string(y.t.TzJA4g),
+        confirmText: y.intl.string(y.t.TzJA4u),
         confirmVariant: "critical-primary",
-        cancelText: y.intl.string(y.t["2BR5R2"]),
+        cancelText: y.intl.string(y.t["2BR5R0"]),
         onConfirm: () => {
           $()
         }
@@ -185,7 +185,7 @@ function w(e) {
   }, [D.length]), l.useEffect(() => {
     if (V) {
       var e, t;
-      if ((null == F ? true : F.question) != null) null == (e = R.current) || e.focus();
+      if ((null == F ? true : F.question) != null) null == (e = x.current) || e.focus();
       else {
         let e = D.findIndex(e => F["answer-".concat(e.localCreationAnswerId)]);
         false !== e && (null == (t = E.current[e]) || t.focusInput())
@@ -194,8 +194,8 @@ function w(e) {
     }
   }, [F, D, V, X, E]);
   let et = l.useCallback(() => {
-      n === c.Dvm.ENTERED && q()
-    }, [q, n]),
+      n === c.Dvm.ENTERED && W()
+    }, [W, n]),
     en = (0, f.Z)({
       disabled: G,
       onSubmit: et
@@ -204,12 +204,12 @@ function w(e) {
       variant: "primary",
       onClick: et,
       submitting: G,
-      text: y.intl.string(y.t.JOj8Zk)
+      text: y.intl.string(y.t.JOj8Zm)
     }], [et, G]);
   return (0, r.jsx)(i.Modal, {
     transitionState: n,
     onClose: p,
-    title: y.intl.string(y.t["GD/8X8"]),
+    title: y.intl.string(y.t["GD/8X1"]),
     actions: er,
     actionBarInput: (0, r.jsx)(c.Checkbox, {
       checked: I,
@@ -217,28 +217,28 @@ function w(e) {
       label: y.intl.string(y.t["Ux+iQU"])
     }),
     children: (0, r.jsxs)("div", {
-      className: v.content,
+      className: h.content,
       onKeyDown: en,
-      children: [null != W && (0, r.jsx)(c.M14, {
+      children: [null != q && (0, r.jsx)(c.M14, {
         type: "critical",
-        children: W.getAnyErrorMessage()
-      }), (0, r.jsx)(h, {
+        children: q.getAnyErrorMessage()
+      }), (0, r.jsx)(v, {
         question: A,
         onChange: T,
         error: null == F ? true : F.question,
-        inputRef: R
+        inputRef: x
       }), (0, r.jsx)(c.LZC, {
         size: 26
       }), (0, r.jsxs)(c.gNt, {
         role: "group",
-        label: y.intl.string(y.t.oMBfeS),
+        label: y.intl.string(y.t.oMBfeX),
         children: [D.map((e, n) => (0, r.jsx)(g.Z, {
           answer: e,
           channelId: t.id,
           index: n,
           isLastAnswer: n === D.length - 1,
-          onEmojiSelect: B,
-          onEmojiRemove: Y,
+          onEmojiSelect: Y,
+          onEmojiRemove: B,
           onAnswerTextChange: Z,
           onRemoveAnswer: H,
           addAnswer: z,
@@ -250,14 +250,14 @@ function w(e) {
             E.current[n] = e
           }
         }, e.localCreationAnswerId)), K && (0, r.jsx)("div", {
-          className: v.addAnswerButton,
+          className: h.addAnswerButton,
           children: (0, r.jsx)(c.Button, {
             icon: c.qJs,
             variant: "secondary",
             onClick: z,
-            "aria-label": y.intl.string(y.t.B2Uvme),
+            "aria-label": y.intl.string(y.t.B2UvmZ),
             buttonRef: S,
-            text: y.intl.string(y.t.B2Uvme)
+            text: y.intl.string(y.t.B2UvmZ)
           })
         })]
       }), (0, r.jsx)(c.LZC, {

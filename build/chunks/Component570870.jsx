@@ -32,9 +32,9 @@ let y = e => {
       context: O
     } = e,
     v = (0, c.e7)([h.Z], () => h.Z.getGuild(null != C ? C : y.guild_id)),
-    P = (0, c.e7)([b.default], () => b.default.getUser(r)),
-    E = (0, f.Z)({
-      user: P,
+    E = (0, c.e7)([b.default], () => b.default.getUser(r)),
+    P = (0, f.Z)({
+      user: E,
       guildId: null == v ? true : v.id,
       context: O
     }),
@@ -113,19 +113,19 @@ let y = e => {
         }
       }, e.id)
     }, [y, U, Z, v, r]),
-    Q = i.useCallback(e => {
+    G = i.useCallback(e => {
       let {
         section: n,
         data: t
       } = e;
       return (0, l.jsx)(s.kSQ, {
-        label: _.intl.string(_.t.V0w2ap),
+        label: _.intl.string(_.t.V0w2am),
         children: t.map(e => L(e, {
           showAppIcon: true
         }))
       }, n.id)
     }, [L]),
-    V = i.useCallback(e => {
+    Q = i.useCallback(e => {
       let {
         section: n,
         data: t
@@ -145,7 +145,7 @@ let y = e => {
         }))
       }, n.id)
     }, [y, L]),
-    Y = (0, l.jsx)(s.II_, {
+    V = (0, l.jsx)(s.II_, {
       id: "command-search",
       control: (e, n) => {
         var t, i;
@@ -169,7 +169,7 @@ let y = e => {
         }({}, e), i = i = {
           query: N,
           onChange: A,
-          placeholder: _.intl.string(_.t.m1UwbP),
+          placeholder: _.intl.string(_.t.m1UwbG),
           ref: n
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(i)) : (function(e, n) {
           var t = Object.keys(e);
@@ -191,16 +191,16 @@ let y = e => {
   else {
     if (0 === M.length) n = (0, l.jsxs)(l.Fragment, {
       children: [F && (0, l.jsxs)(l.Fragment, {
-        children: [Y, (0, l.jsx)(s.Clw, {})]
+        children: [V, (0, l.jsx)(s.Clw, {})]
       }), (0, l.jsx)(s.sNh, {
         id: "menu-commands-empty",
-        label: _.intl.string(_.t.YSNlV2),
+        label: _.intl.string(_.t.YSNlV1),
         disabled: true
       }, "menu-commands-empty")]
     });
     else if (Z)
       if (F) n = (0, l.jsxs)(l.Fragment, {
-        children: [Y, (0, l.jsx)(s.Clw, {}), M.map(e => L(e, {
+        children: [V, (0, l.jsx)(s.Clw, {}), M.map(e => L(e, {
           showAppIcon: true
         }))]
       });
@@ -218,22 +218,22 @@ let y = e => {
             return n.id !== x.bi.FRECENCY
           });
         n = (0, l.jsxs)(l.Fragment, {
-          children: [T && Y, null != e && Q(e), (0, l.jsx)(s.kSQ, {
+          children: [T && V, null != e && G(e), (0, l.jsx)(s.kSQ, {
             label: _.intl.string(_.t.PHjkRE),
-            children: t.map(e => V(e))
+            children: t.map(e => Q(e))
           })]
         })
       }
     else n = M.map(e => L(e, {
       showAppIcon: true
     }));
-    null != E && E.length > 0 && (n = (0, l.jsxs)(l.Fragment, {
-      children: [n, (0, l.jsx)(s.Clw, {}, "separator"), E]
+    null != P && P.length > 0 && (n = (0, l.jsxs)(l.Fragment, {
+      children: [n, (0, l.jsx)(s.Clw, {}, "separator"), P]
     }))
   }
   if (!j.TPd.TEXTUAL.has(y.type))
-    if (null == E) return null;
-    else n = E;
+    if (null == P) return null;
+    else n = P;
   return (0, l.jsx)(s.sNh, {
     id: "apps",
     label: _.intl.string(_.t.PHjkRE),

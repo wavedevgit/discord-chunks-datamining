@@ -55,36 +55,36 @@ let b = function(e) {
       n = arguments.length > 2 && true !== arguments[2] && arguments[2];
     switch (e) {
       case 1:
-        return c.intl.string(c.t.HumZAi);
+        return c.intl.string(c.t.HumZAg);
       case 2:
-        return c.intl.string(c.t.gmCUFw);
+        return c.intl.string(c.t.gmCUFx);
       case 3:
-        return c.intl.string(c.t["Ql/e9Y"]);
+        return c.intl.string(c.t["Ql/e9f"]);
       case 4:
-        return c.intl.string(c.t.Op8B3O);
+        return c.intl.string(c.t.Op8B3N);
       case 5:
-        return c.intl.string(c.t["/3vIRd"]);
+        return c.intl.string(c.t["/3vIRU"]);
       case 6:
-        if (null != t && !n) return c.intl.formatToPlainString(c.t.EIUjRy, {
+        if (null != t && !n) return c.intl.formatToPlainString(c.t.EIUjR0, {
           vanityUrl: t
         });
-        return c.intl.string(c.t.dGiD1O);
+        return c.intl.string(c.t.dGiD1N);
       case 7:
-        return c.intl.string(c.t.vdu7oS);
+        return c.intl.string(c.t.vdu7oa);
       case 8:
         return c.intl.string(c.t["9/ZreX"]);
       default:
-        return c.intl.string(c.t.DvMBkS)
+        return c.intl.string(c.t.DvMBkZ)
     }
   },
   y = e => {
     switch (e) {
       case "twitch":
-        return c.intl.string(c.t.AVGAkw);
+        return c.intl.string(c.t.AVGAk5);
       case "youtube":
-        return c.intl.string(c.t.PHSAsn);
+        return c.intl.string(c.t.PHSAsr);
       default:
-        return c.intl.string(c.t.gmCUFw)
+        return c.intl.string(c.t.gmCUFx)
     }
   },
   O = e => {

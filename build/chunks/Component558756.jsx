@@ -46,6 +46,6 @@ let c = e => {
         }, t))
       })
     },
-    children: d ? s.intl.string(s.t.YqAjXy) : s.intl.string(s.t.w4m945)
+    children: d ? s.intl.string(s.t.YqAjX1) : s.intl.string(s.t["w4m94+"])
   }) : null
 }

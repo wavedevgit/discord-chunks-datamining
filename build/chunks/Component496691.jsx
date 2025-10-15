@@ -41,9 +41,9 @@ class p extends Chunk647438.Component {
           className: m.marketingHeader,
           onChangeLocale: this.handleHeaderLocaleChange,
           mobileClassName: m.marketingHeader,
-          openNavAriaLabel: N.intl.string(N.t.Fs9k3K),
-          hideNavAriaLabel: N.intl.string(N.t.AbfyHI),
-          skipToContentLabel: N.intl.string(N.t["18gavA"])
+          openNavAriaLabel: N.intl.string(N.t.Fs9k3N),
+          hideNavAriaLabel: N.intl.string(N.t.AbfyHB),
+          skipToContentLabel: N.intl.string(N.t["18gavL"])
         }), a(t, i), (0, n.jsx)(s.$, {
           locale: o,
           authRedirectTo: e.pathname,

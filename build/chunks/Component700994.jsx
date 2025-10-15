@@ -24,7 +24,7 @@ function f(e) {
     m = n === c.Yn.STREAM;
   return Z ? null : (0, l.jsx)(r.II_, {
     id: "user-volume",
-    label: m ? g.intl.string(g.t.t4JBnI) : g.intl.string(g.t.m7TNdF),
+    label: m ? g.intl.string(g.t.t4JBnJ) : g.intl.string(g.t.m7TNdH),
     control: (t, i) => {
       var o, s;
       return (0, l.jsx)(r._wy, (o = function(e) {
@@ -51,7 +51,7 @@ function f(e) {
         onChange: t => {
           a.Z.setLocalVolume(e, (0, u.A)(t), n), null == f || f(t)
         },
-        "aria-label": m ? g.intl.string(g.t.t4JBnI) : g.intl.string(g.t.m7TNdF)
+        "aria-label": m ? g.intl.string(g.t.t4JBnJ) : g.intl.string(g.t.m7TNdH)
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {

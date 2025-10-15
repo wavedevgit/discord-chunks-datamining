@@ -52,7 +52,7 @@ function j(e) {
     });
     return e.unshift({
       value: b,
-      label: h.intl.string(h.t.u197b7)
+      label: h.intl.string(h.t.u197b2)
     }), e
   }, [C, l, j]), y = i.useCallback(e => {
     _ ? (0, p.c)(l, f, e !== b ? e : null) : m.Z.updateEmbed(l, f, e !== b ? e : null)

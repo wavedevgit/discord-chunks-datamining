@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk848747 = require("./848747.js");
 
-function g(t, e, i) {
+function d(t, e, i) {
   return e in t ? Object.defineProperty(t, e, {
     value: i,
     enumerable: true,
@@ -40,13 +40,13 @@ class m extends Chunk647438.Component {
     } = this.state;
     switch (module) {
       case 0:
-        return Chunk388032.intl.string(Chunk388032.t.N65ZrW);
+        return Chunk388032.intl.string(Chunk388032.t.N65Zra);
       case 2:
         return Chunk388032.intl.string(Chunk388032.t.DPgrRk);
       case 3:
-        return Chunk388032.intl.string(Chunk388032.t.xypuIv);
+        return Chunk388032.intl.string(Chunk388032.t.xypuIi);
       default:
-        return Chunk388032.intl.string(Chunk388032.t.uEoQdA)
+        return Chunk388032.intl.string(Chunk388032.t.uEoQdH)
     }
   }
   getImageStyle() {
@@ -70,18 +70,18 @@ class m extends Chunk647438.Component {
     } = this.props;
     switch (module) {
       case 0:
-        return Chunk388032.intl.format(Chunk388032.t.RoxWET, {
+        return Chunk388032.intl.format(Chunk388032.t.RoxWER, {
           price: (0, Chunk937615.T4)(exports.amount, exports.currency),
           item: exports.description
         });
       case 2:
-        return Chunk388032.intl.string(Chunk388032.t.PZskfs);
+        return Chunk388032.intl.string(Chunk388032.t.PZskfn);
       case 3:
-        return Chunk388032.intl.format(Chunk388032.t["j0tI/b"], {
+        return Chunk388032.intl.format(Chunk388032.t["j0tI/f"], {
           item: exports.description
         });
       default:
-        return Chunk388032.intl.string(Chunk388032.t.BAr3rB)
+        return Chunk388032.intl.string(Chunk388032.t.BAr3rK)
     }
   }
   renderButtons() {
@@ -90,16 +90,16 @@ class m extends Chunk647438.Component {
       isAwaitingAuthentication: e
     } = this.state;
     return 0 === module ? [{
-      text: Chunk388032.intl.string(Chunk388032.t["2NeVoY"]),
+      text: Chunk388032.intl.string(Chunk388032.t["2NeVoa"]),
       onClick: this.cancelPayment,
       variant: "secondary"
     }, {
-      text: Chunk388032.intl.string(Chunk388032.t.VAqBoE),
+      text: Chunk388032.intl.string(Chunk388032.t.VAqBoK),
       onClick: this.handleAuthenticate,
       variant: "primary",
       loading: exports
     }] : [{
-      text: Chunk388032.intl.string(Chunk388032.t.cpT0Cq),
+      text: Chunk388032.intl.string(Chunk388032.t.cpT0Cg),
       onClick: this.close,
       variant: "primary"
     }]
@@ -123,10 +123,10 @@ class m extends Chunk647438.Component {
     })
   }
   constructor(...t) {
-    super(...t), g(this, "state", {
+    super(...t), d(this, "state", {
       step: 0,
       isAwaitingAuthentication: false
-    }), g(this, "close", async () => {
+    }), d(this, "close", async () => {
       let {
         step: t
       } = this.state, {
@@ -134,7 +134,7 @@ class m extends Chunk647438.Component {
         pendingPayment: i
       } = this.props;
       0 === t && await (0, c.UY)(i.id), e()
-    }), g(this, "cancelPayment", async () => {
+    }), d(this, "cancelPayment", async () => {
       let {
         pendingPayment: t
       } = this.props;
@@ -148,7 +148,7 @@ class m extends Chunk647438.Component {
       this.setState({
         step: 3
       })
-    }), g(this, "handleAuthenticate", async () => {
+    }), d(this, "handleAuthenticate", async () => {
       let {
         pendingPayment: t
       } = this.props;

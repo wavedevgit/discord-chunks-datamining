@@ -19,24 +19,24 @@ function p(t) {
   let {
     target: e,
     onSelect: n
-  } = t, p = e.getAttribute("data-type"), g = e.getAttribute("data-id"), f = e.getAttribute("data-name"), y = e.getAttribute("data-surrogates"), O = "true" === e.getAttribute("data-animated"), j = u.Sb.useSetting(), S = (0, c.Z)({
+  } = t, p = e.getAttribute("data-type"), g = e.getAttribute("data-id"), f = e.getAttribute("data-name"), O = e.getAttribute("data-surrogates"), y = "true" === e.getAttribute("data-animated"), j = u.Sb.useSetting(), S = (0, c.Z)({
     type: p,
     id: g,
     name: f,
     isInExpressionPicker: true
-  }), v = null != y ? (0, r.jsx)(i.sN, {
+  }), v = null != O ? (0, r.jsx)(i.sN, {
     id: "copy",
-    label: d.intl.string(d.t.ad58UB),
-    action: () => (0, s.JG)(y)
+    label: d.intl.string(d.t.ad58UF),
+    action: () => (0, s.JG)(O)
   }) : null, E = (0, a.Z)({
     id: g,
-    shiftId: p === b.S.EMOJI ? "<".concat(O ? "a" : "", ":").concat(null == f ? true : f.split("~")[0], ":").concat(g, ">") : true,
-    label: p === b.S.STICKER ? d.intl.string(d.t.SJ3249) : d.intl.string(d.t.Ap2oVy)
+    shiftId: p === b.S.EMOJI ? "<".concat(y ? "a" : "", ":").concat(null == f ? true : f.split("~")[0], ":").concat(g, ">") : true,
+    label: p === b.S.STICKER ? d.intl.string(d.t["SJ324+"]) : d.intl.string(d.t.Ap2oV1)
   });
   return (0, r.jsx)(l.v2r, {
     navId: "expression-picker",
     onClose: o.Zy,
-    "aria-label": d.intl.string(d.t.XoasSC),
+    "aria-label": d.intl.string(d.t.XoasSE),
     onSelect: n,
     className: "context-menu",
     children: (0, r.jsxs)(l.kSQ, {

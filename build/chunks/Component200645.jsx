@@ -30,23 +30,23 @@ function m(e, t, n) {
 function g(e) {
   switch (e.state) {
     case "unknown":
-      return p.intl.string(p.t["KW+nqT"]);
+      return p.intl.string(p.t["KW+nqa"]);
     case "disabled":
-      return p.intl.string(p.t["Q/wAF7"]);
+      return p.intl.string(p.t["Q/wAFx"]);
     case "disconnected":
-      return p.intl.string(p.t.Xvs9IM);
+      return p.intl.string(p.t.Xvs9IC);
     case "initializing":
-      return p.intl.string(p.t.h4qz8W);
+      return p.intl.string(p.t.h4qz8f);
     case "connecting":
       return p.intl.string(p.t.fSu9XF);
     case "handshaking":
-      return p.intl.string(p.t["00aYLJ"]);
+      return p.intl.string(p.t["00aYLC"]);
     case "running":
-      return p.intl.string(p.t["54TB7Z"]);
+      return p.intl.string(p.t["54TB7e"]);
     case "waiting-for-retry":
-      return p.intl.string(p.t["0FONwi"]);
+      return p.intl.string(p.t["0FONws"]);
     case "failure":
-      return p.intl.string(p.t.Ic0nkd);
+      return p.intl.string(p.t.Ic0nkZ);
     default:
       (0, c.vE)(e.state)
   }
@@ -69,17 +69,17 @@ function E() {
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/medium",
         color: "header-primary",
-        children: Chunk388032.intl.string(Chunk388032.t.roHq80)
+        children: Chunk388032.intl.string(Chunk388032.t["roHq8/"])
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
         color: "text-secondary",
-        children: Chunk388032.intl.format(Chunk388032.t["8CAL+D"], {
+        children: Chunk388032.intl.format(Chunk388032.t["8CAL+P"], {
           helpCenterLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.SYSTEM_SERVICE)
         })
       }), Chunk823379 ? (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
         color: E ? "text-feedback-positive" : "text-feedback-warning",
-        children: E ? Chunk388032.intl.string(Chunk388032.t.KHVMkW) : Chunk388032.intl.format(Chunk388032.t["5Rlr0b"], {
+        children: E ? Chunk388032.intl.string(Chunk388032.t.KHVMkZ) : Chunk388032.intl.format(Chunk388032.t["5Rlr0d"], {
           status: g(Chunk998502)
         })
       }) : null]
@@ -87,7 +87,7 @@ function E() {
       variant: Chunk823379 ? "critical-secondary" : "primary",
       loading: exports,
       onClick: m,
-      text: Chunk823379 ? Chunk388032.intl.string(Chunk388032.t.pAwbdL) : Chunk388032.intl.string(Chunk388032.t["1iI46O"])
+      text: Chunk823379 ? Chunk388032.intl.string(Chunk388032.t.pAwbdH) : Chunk388032.intl.string(Chunk388032.t["1iI46O"])
     })]
   })
 }
@@ -104,7 +104,7 @@ class b extends Chunk647438.PureComponent {
       openOnStartup: e,
       startMinimized: t,
       minimizeToTray: n
-    } = this.state, i = (0, Chunk358085.isLinux)() ? Chunk388032.intl.string(Chunk388032.t["7pPjTW"]) : Chunk388032.intl.string(Chunk388032.t.ZkDZov);
+    } = this.state, i = (0, Chunk358085.isLinux)() ? Chunk388032.intl.string(Chunk388032.t["7pPjTU"]) : Chunk388032.intl.string(Chunk388032.t.ZkDZoq);
     return (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
       gap: 16,
       children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
@@ -113,19 +113,19 @@ class b extends Chunk647438.PureComponent {
         children: Chunk647438
       }), (0, Chunk951288.jsxs)(Chunk481060.C3N, {
         children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
-          label: Chunk388032.intl.string(Chunk388032.t.WQm4p1),
-          description: Chunk388032.intl.string(Chunk388032.t["s/cQrU"]),
+          label: Chunk388032.intl.string(Chunk388032.t.WQm4p6),
+          description: Chunk388032.intl.string(Chunk388032.t["s/cQra"]),
           checked: module,
           onChange: this.handleToggleOpenOnStartup
         }), (0, Chunk358085.isWindows)() ? (0, Chunk951288.jsx)(Chunk481060.rsf, {
-          label: Chunk388032.intl.string(Chunk388032.t.n7Yjes),
-          description: Chunk388032.intl.string(Chunk388032.t.o2FSjB),
+          label: Chunk388032.intl.string(Chunk388032.t.n7Yjen),
+          description: Chunk388032.intl.string(Chunk388032.t.o2FSjI),
           checked: !!module && exports,
           disabled: !module,
           onChange: this.handleToggleStartMinimized
         }) : null, (0, Chunk951288.jsx)(Chunk481060.rsf, {
-          label: Chunk388032.intl.string(Chunk388032.t.abLFes),
-          description: Chunk388032.intl.string(Chunk388032.t["mVuX+j"]),
+          label: Chunk388032.intl.string(Chunk388032.t.abLFen),
+          description: Chunk388032.intl.string(Chunk388032.t["mVuX+v"]),
           checked: require,
           onChange: this.handleToggleMinimizeToTray
         }), (0, Chunk951288.jsx)(E, {})]

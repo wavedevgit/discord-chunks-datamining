@@ -14,7 +14,7 @@ var Chunk481060 = require("./481060.js"),
 function u(e, t) {
   return r.wS ? (0, i.jsx)(l.sNh, {
     id: "copy-link",
-    label: o.intl.string(o.t.Xrt5Po),
+    label: o.intl.string(o.t.Xrt5Pj),
     icon: l.xPt,
     action: () => {
       (0, r.JG)("".concat(location.protocol, "//").concat(location.host).concat(a.Z5c.CHANNEL(t.guild_id, t.id, e.id))), s.default.track(a.rMx.MESSAGE_LINK_COPIED, {

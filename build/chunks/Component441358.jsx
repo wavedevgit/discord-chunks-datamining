@@ -16,9 +16,9 @@ let a = () => (0, Chunk951288.jsxs)("div", {
     src: Chunk652430
   }), (0, Chunk951288.jsx)("div", {
     className: Chunk478394.title,
-    children: Chunk388032.intl.string(Chunk388032.t.MwjTvn)
+    children: Chunk388032.intl.string(Chunk388032.t.MwjTvr)
   }), (0, Chunk951288.jsx)("div", {
     className: Chunk478394.body,
-    children: Chunk388032.intl.string(Chunk388032.t.AKBgPy)
+    children: Chunk388032.intl.string(Chunk388032.t.AKBgPz)
   })]
 })

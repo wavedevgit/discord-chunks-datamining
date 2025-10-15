@@ -16,13 +16,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk50493 = require("./50493.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk833540 = require("./833540.js");
+  Chunk764295 = require("./764295.js");
 
 function b(e) {
   var t, n;
   let {
     channel: b
-  } = e, y = i.useContext(h.AnalyticsContext), _ = (0, c.Aq)(), j = g.intl.string(m.default["Beo/7v"]), {
+  } = e, y = i.useContext(h.AnalyticsContext), _ = (0, c.Aq)(), j = g.intl.string(m.default["Beo/7u"]), {
     firstMessage: O
   } = (0, a.cl)(b), x = null == O || null == (t = O.messageSnapshots) ? true : t[0], v = null == x || null == (n = x.moderatorReport) ? true : n.reported_user_id;
   return b.isModeratorReportChannel() && null != v ? (0, r.jsx)(o.ZP.Icon, {

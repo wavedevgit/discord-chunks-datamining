@@ -66,7 +66,7 @@ let W = (0, Chunk884697.IC)(90),
       onVisibilityChange: K
     } = e, Y = (0, s.O)(e => {
       null == K || K(e)
-    }, .1, null != K), q = l.useRef(null), J = (0, Z.G)("HeroBlock"), Q = (0, u.e7)([h.default], () => h.default.getCurrentUser()), X = (0, N.Z)(), $ = (0, m.sp)(), ee = x.Z.useConfig({
+    }, .1, null != K), q = l.useRef(null), Q = (0, Z.G)("HeroBlock"), J = (0, u.e7)([h.default], () => h.default.getCurrentUser()), X = (0, N.Z)(), $ = (0, m.sp)(), ee = x.Z.useConfig({
       location: "HeroBlock"
     }).showButtonLeftAligned && G !== H.AW.ORBS, et = (0, S.x)("HeroBlock"), en = l.useMemo(() => {
       var e, t;
@@ -115,16 +115,16 @@ let W = (0, Chunk884697.IC)(90),
         }, [i, o, e]),
         totalCards: e ? t : 4
       }
-    })(G !== H.AW.ORBS), e_ = (0, y.a)()(ef), em = (0, j.l)(e_).slice(0, eh), eb = (0, P.St)(em), eE = G === H.AW.ORBS ? D.intl.string(D.t["1CdL8d"]) : J ? D.intl.string(D.t.guWAg1) : et ? D.intl.string(D.t["/QvRak"]) : D.intl.string(D.t.xYKa1T), ev = (0, O.FF)("CollectiblesContent"), eO = (0, E.$2)(en.categorySkuId), ex = v.Z.useConfig({
+    })(G !== H.AW.ORBS), e_ = (0, y.a)()(ef), em = (0, k.l)(e_).slice(0, eh), eb = (0, P.St)(em), eE = G === H.AW.ORBS ? M.intl.string(M.t["1CdL8f"]) : Q ? M.intl.string(M.t.guWAg4) : et ? M.intl.string(M.t["/QvRam"]) : M.intl.string(M.t.xYKa1d), ev = (0, O.FF)("CollectiblesContent"), eO = (0, E.$2)(en.categorySkuId), ex = v.Z.useConfig({
       location: "HeroBlock"
     }).showCardsV2, eS = () => {
       G === H.AW.ORBS ? ((0, C.Y)({
-        pageType: M.ZY5.SHOP_ORBS_TAB,
-        sectionType: M.jXE.ORBS_SHOP_HERO_BLOCK,
-        ctaObject: M.qAy.CTA_TO_QUEST_HOME
+        pageType: D.ZY5.SHOP_ORBS_TAB,
+        sectionType: D.jXE.ORBS_SHOP_HERO_BLOCK,
+        ctaObject: D.qAy.CTA_TO_QUEST_HOME
       }), (0, p.navigateToQuestHome)({
         fromContent: a.j.ORBS_SHOP_HERO_CTA
-      })) : (i("shop latest category hero", !ev || eO ? en.categorySkuId : true), _.default.track(M.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+      })) : (i("shop latest category hero", !ev || eO ? en.categorySkuId : true), _.default.track(D.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
         collectibles_shop_session_id: null == $ ? true : $.sessionId,
         sku_id: en.categorySkuId,
         page_type: G,
@@ -133,11 +133,11 @@ let W = (0, Chunk884697.IC)(90),
         cta_name: "shop latest category hero button"
       }))
     };
-    return null != Q && (n || en !== U) ? (0, r.jsxs)("div", {
+    return null != J && (n || en !== U) ? (0, r.jsxs)("div", {
       ref: Y,
       className: F.heroBlock,
       children: [ed ? (0, R.gT)({
-        isCustomCursorEnabled: J,
+        isCustomCursorEnabled: Q,
         className: F.riveEventOverlay,
         riveEventTargetRef: q
       }) : null, (0, r.jsx)("div", {
@@ -173,7 +173,7 @@ let W = (0, Chunk884697.IC)(90),
             className: F.heroHeaderBadgeLogoSummaryContainer,
             children: [null != en.unpublishedAt && (0, r.jsx)(d.IGR, {
               disableColor: true,
-              text: D.intl.string(D.t["h/uBCR"]),
+              text: M.intl.string(M.t["h/uBCQ"]),
               className: F.limitedTimeBadge
             }), (0, r.jsxs)("div", {
               className: o()(F.heroLogoNameContainer, {
@@ -213,7 +213,7 @@ let W = (0, Chunk884697.IC)(90),
           }),
           ref: eC,
           children: n || ep ? (0, r.jsx)(r.Fragment, {
-            children: [...Array(eh)].map((e, t) => ex ? (0, r.jsx)(B.Z, {}, t) : (0, r.jsx)(k.K, {}, t))
+            children: [...Array(eh)].map((e, t) => ex ? (0, r.jsx)(B.Z, {}, t) : (0, r.jsx)(j.K, {}, t))
           }) : (0, r.jsx)(r.Fragment, {
             children: eb.map((e, t) => {
               let n = b.Z.getCategoryForProduct(e.skuId);
@@ -230,7 +230,7 @@ let W = (0, Chunk884697.IC)(90),
                 }, e.skuId) : (0, r.jsx)(T.Z, {
                   product: e,
                   category: n,
-                  user: Q,
+                  user: J,
                   tab: G,
                   shopBlockType: c.z.HERO
                 }, e.skuId)

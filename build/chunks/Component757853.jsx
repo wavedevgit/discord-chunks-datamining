@@ -49,9 +49,9 @@ function u(e) {
     handleToggleDestination: f,
     disableSelection: b,
     rowClassName: p
-  }), O = a.useRef(null), C = (0, s.Z)("forward-modal", O);
+  }), O = a.useRef(null), j = (0, s.Z)("forward-modal", O);
   return (0, r.jsx)(o.bG, {
-    navigator: C,
+    navigator: j,
     children: (0, r.jsx)(o.SJ, {
       children: e => {
         var t, n, {

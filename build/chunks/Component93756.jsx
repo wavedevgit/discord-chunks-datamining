@@ -32,7 +32,7 @@ function o(t) {
           className: l.__invalid_title,
           variant: "heading-lg/semibold",
           color: "header-primary",
-          children: s.intl.string(s.t.P8nDIN)
+          children: s.intl.string(s.t.P8nDIC)
         }), (0, i.jsx)(a.olH, {
           onClick: e
         })]
@@ -40,18 +40,18 @@ function o(t) {
         variant: "text-md/normal",
         color: "text-default",
         className: l.__invalid_body,
-        children: s.intl.string(s.t.fwFcj5)
+        children: s.intl.string(s.t.fwFcj4)
       })]
     }), (0, i.jsx)(a.mzw, {
       children: (0, i.jsxs)(a.ButtonGroup, {
         direction: "horizontal-reverse",
         children: [(0, i.jsx)(a.Button, {
           variant: "critical-primary",
-          text: s.intl.string(s.t["5I4fSm"]),
+          text: s.intl.string(s.t["5I4fSk"]),
           onClick: d
         }), (0, i.jsx)(a.Button, {
           variant: "secondary",
-          text: s.intl.string(s.t["ETE/oC"]),
+          text: s.intl.string(s.t["ETE/oK"]),
           onClick: e
         })]
       })

@@ -25,15 +25,15 @@ function d() {
     (0, s.Jr)(e, t)
   }, _ = [{
     value: Chunk524437.Q4.BLUR,
-    label: Chunk388032.intl.string(Chunk388032.t.S49Uad)
+    label: Chunk388032.intl.string(Chunk388032.t.S49UaW)
   }, {
     value: Chunk524437.Q4.BLOCK,
-    label: Chunk388032.intl.string(Chunk388032.t["D/157Y"])
+    label: Chunk388032.intl.string(Chunk388032.t["D/157e"])
   }];
   return (0, Chunk951288.jsxs)(Chunk400313.n, {
-    description: Chunk388032.intl.string(Chunk388032.t.XgH9eh),
+    description: Chunk388032.intl.string(Chunk388032.t.XgH9en),
     children: [(0, Chunk951288.jsx)(Chunk947707.Z, {
-      title: Chunk388032.intl.string(Chunk388032.t["+uI23H"]),
+      title: Chunk388032.intl.string(Chunk388032.t["+uI23N"]),
       value: require,
       onChange: e => f({
         goreContentFriendDm: e

@@ -78,16 +78,16 @@ let D = 10,
 function U(e) {
   var t;
   let n = {
-      [T.S7.PACKAGE_ACTION_ADVENTURE]: A.t.PYFVdf,
-      [T.S7.PACKAGE_RPG_MMO]: A.t.rFQo2F,
-      [T.S7.PACKAGE_RACING_SPORTS]: A.t.zDRa6g,
-      [T.S7.PACKAGE_SANDBOX_CREATIVE]: A.t.vz9U2Q,
-      [T.S7.PACKAGE_FAMILY_FRIENDLY]: A.t.IOiAE0,
-      [T.S7.PACKAGE_HOLIDAY_SEASON]: A.t.cJPqvD,
-      [T.S7.PACKAGE_NEW_YEARS]: A.t.S0w2mv
+      [T.S7.PACKAGE_ACTION_ADVENTURE]: A.t.PYFVdX,
+      [T.S7.PACKAGE_RPG_MMO]: A.t.rFQo2N,
+      [T.S7.PACKAGE_RACING_SPORTS]: A.t.zDRa6u,
+      [T.S7.PACKAGE_SANDBOX_CREATIVE]: A.t.vz9U2d,
+      [T.S7.PACKAGE_FAMILY_FRIENDLY]: A.t.IOiAEx,
+      [T.S7.PACKAGE_HOLIDAY_SEASON]: A.t.cJPqvL,
+      [T.S7.PACKAGE_NEW_YEARS]: A.t.S0w2mp
     },
     r = e.config.features.find(e => e in n),
-    i = null != (t = null != r ? n[r] : null) ? t : A.t["D+DkEH"];
+    i = null != (t = null != r ? n[r] : null) ? t : A.t["D+DkEB"];
   return A.intl.string(i)
 }
 let G = e => {
@@ -112,12 +112,12 @@ let G = e => {
           }), (0, r.jsx)(c.Text, {
             variant: "text-sm/normal",
             color: "text-tertiary",
-            children: A.intl.string(A.t.VgN1Bn)
+            children: A.intl.string(A.t.VgN1Bg)
           })]
         })]
       }), (0, r.jsx)(c.P3F, {
         className: C.closeButton,
-        "aria-label": A.intl.string(A.t.cpT0Cq),
+        "aria-label": A.intl.string(A.t.cpT0Cg),
         onClick: n,
         children: (0, r.jsx)(c.Dio, {
           size: "md",

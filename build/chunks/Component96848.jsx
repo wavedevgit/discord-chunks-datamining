@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk907040 = require("./907040.jsx"),
-  Chunk47280 = require("./47280.js"),
+  Chunk283066 = require("./283066.js"),
   Chunk981631 = require("./981631.js"),
   Chunk185923 = require("./185923.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -26,7 +26,7 @@ function g(e) {
   let {
     setEmojiConfetti: t,
     emojiConfetti: n
-  } = e, [a, d] = i.useState(false), f = i.useRef(null), g = (0, u.ZP)({
+  } = e, [a, d] = i.useState(false), f = i.useRef(null), g = (0, u.Z)({
     location: "GiftEmoji"
   }), E = o()(p.text, g && p.refresh), b = e => (0, r.jsxs)("div", {
     className: p.customGiftContent,
@@ -34,10 +34,10 @@ function g(e) {
       className: p.customGiftHeader,
       children: [(0, r.jsx)(l.Text, {
         variant: "text-md/bold",
-        children: _.intl.string(_.t.Hl2Ige)
+        children: _.intl.string(_.t.Hl2IgY)
       }), (0, r.jsx)(l.Text, {
         variant: "text-sm/normal",
-        children: _.intl.string(_.t.stGFA3)
+        children: _.intl.string(_.t.stGFAw)
       })]
     }), e]
   }), y = e => {
@@ -90,7 +90,7 @@ function g(e) {
           className: E,
           variant: "text-sm/semibold",
           lineClamp: 1,
-          children: _.intl.string(_.t.Hl2Ige)
+          children: _.intl.string(_.t.Hl2IgY)
         })]
       }) : (0, r.jsxs)("div", {
         className: p.contentContainer,

@@ -15,14 +15,14 @@ var Chunk915009 = require("./915009.js"),
   Chunk726985 = require("./726985.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk660886 = require("./660886.js");
+  Chunk345909 = require("./345909.js");
 
 function p() {
   let e = Chunk695346.bh.useSetting(),
     t = (0, Chunk695463.W)("DataUsageQuestsSetting"),
     n = (0, Chunk915009.LN)(),
-    p = exports ? Chunk388032.t.sJYh5t : Chunk388032.t.VkS7Yd,
-    h = exports ? Chunk388032.t.cf9mvV : Chunk388032.t["7Q2yX9"];
+    p = exports ? Chunk388032.t.sJYh5u : Chunk388032.t.VkS7YW,
+    h = exports ? Chunk388032.t.cf9mvb : Chunk388032.t["7Q2yX1"];
   return (0, Chunk951288.jsx)(Chunk838436.U, {
     setting: Chunk726985.s6.PRIVACY_DATA_QUESTS_V2,
     children: (0, Chunk951288.jsx)(Chunk51331.ZP, {
@@ -33,7 +33,7 @@ function p() {
       value: !module,
       onChange: e => o.bh.updateSetting(!e),
       disabled: require,
-      tooltipText: require ? Chunk388032.intl.string(Chunk660886.default["6Af/cw"]) : true
+      tooltipText: require ? Chunk388032.intl.string(Chunk345909.default["6Af/c3"]) : true
     })
   })
 }

@@ -24,7 +24,7 @@ let p = (0, Chunk108843.Z)(function(e) {
     userId: t.id
   }), p = (0, s.Z)({
     id: t.id,
-    label: b.intl.string(b.t["/AXYnE"])
+    label: b.intl.string(b.t["/AXYnJ"])
   }), O = (0, u.Z)(t.id), h = t.isNonUserBot();
   return (0, r.jsx)(c.Z, {
     context: n,
@@ -32,7 +32,7 @@ let p = (0, Chunk108843.Z)(function(e) {
     children: (0, r.jsxs)(i.v2r, {
       navId: "user-context",
       onClose: l.Zy,
-      "aria-label": b.intl.string(b.t.liqwPJ),
+      "aria-label": b.intl.string(b.t.liqwPD),
       onSelect: o,
       children: [(0, r.jsxs)(i.kSQ, {
         children: [!h && a, !h && O]

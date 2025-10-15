@@ -67,9 +67,9 @@ function w(e) {
       }), (0, r.jsx)(o.Heading, {
         id: I,
         variant: "heading-md/semibold",
-        children: L.length > 0 ? k.intl.formatToPlainString(k.t.IBdqSu, {
+        children: L.length > 0 ? k.intl.formatToPlainString(k.t.IBdqSk, {
           number: L.length
-        }) : k.intl.string(k.t.tlopTM)
+        }) : k.intl.string(k.t.tlopTE)
       }), D && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)("div", {
           className: E.divider,
@@ -116,12 +116,12 @@ function w(e) {
               }
             }, M)
           },
-          text: k.intl.string(k.t["60lJ0C"])
+          text: k.intl.string(k.t["60lJ0N"])
         })]
       }), (0, r.jsx)(o.P3F, {
         onClick: l,
         className: E.iconButton,
-        "aria-label": k.intl.string(k.t.cpT0Cq),
+        "aria-label": k.intl.string(k.t.cpT0Cg),
         children: (0, r.jsx)(o.Dio, {
           size: "md",
           color: "currentColor",

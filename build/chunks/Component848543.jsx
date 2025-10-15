@@ -116,19 +116,19 @@ function A(e) {
     play: W,
     events: {
       onMouseEnter: Y,
-      onMouseLeave: K
+      onMouseLeave: q
     }
-  } = (0, c.j)(), q = i.useCallback(() => {
+  } = (0, c.j)(), K = i.useCallback(() => {
     R || k(!D)
   }, [R, D]);
   return (0, v.yp)({
     event: S.CkL.TOGGLE_SOUNDBOARD,
-    handler: q
+    handler: K
   }), (0, r.jsx)(g.Gt, {
     value: H,
     children: (0, r.jsx)(u.u, {
       targetElementRef: A,
-      text: Z ? N.intl.string(N.t["Ox4/zU"]) : w ? N.intl.string(N.t["+YBKYI"]) : L ? N.intl.string(N.t.X1lQli) : N.intl.string(N.t["6EJvHt"]),
+      text: Z ? N.intl.string(N.t["Ox4/zc"]) : w ? N.intl.string(N.t["+YBKYG"]) : L ? N.intl.string(N.t.X1lQlp) : N.intl.string(N.t["6EJvHh"]),
       asContainer: true,
       children: (0, r.jsx)(p.yRy, {
         targetElementRef: A,
@@ -170,7 +170,7 @@ function A(e) {
             },
             onMouseLeave: e => {
               var t;
-              null == (t = l.onMouseLeave) || t.call(l, e), K()
+              null == (t = l.onMouseLeave) || t.call(l, e), q()
             },
             onContextMenu: F,
             fullWidth: true,

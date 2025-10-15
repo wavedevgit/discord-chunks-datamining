@@ -113,8 +113,8 @@ let el = (0, Chunk320830.Z)(Chunk781428.Z),
   ej = (0, Chunk320830.Z)(Chunk649156.Z),
   eI = (0, Chunk320830.Z)(Chunk909223.Z),
   eN = (0, Chunk320830.Z)(Chunk424044.Z),
-  ey = (0, Chunk320830.Z)(Chunk521379.Z),
-  eO = (0, Chunk320830.Z)(Chunk360887.Z);
+  eO = (0, Chunk320830.Z)(Chunk521379.Z),
+  ey = (0, Chunk320830.Z)(Chunk360887.Z);
 class eS extends Chunk647438.PureComponent {
   static getDerivedStateFromProps(e, t) {
     var n;
@@ -223,7 +223,7 @@ class eS extends Chunk647438.PureComponent {
         }))
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.LOGIN_ONE_TIME,
-        render: e => (0, r.jsx)(eO, ei({}, e))
+        render: e => (0, r.jsx)(ey, ei({}, e))
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
         impressionName: Chunk990547.ImpressionNames.USER_LOGIN,
         path: Chunk981631.Z5c.LOGIN,
@@ -344,7 +344,7 @@ class eS extends Chunk647438.PureComponent {
         render: e => (0, r.jsx)(eN, ei({}, e))
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.ACCOUNT_REVERT(":token"),
-        render: e => (0, r.jsx)(ey, ei({}, e))
+        render: e => (0, r.jsx)(eO, ei({}, e))
       })]
     })
   }

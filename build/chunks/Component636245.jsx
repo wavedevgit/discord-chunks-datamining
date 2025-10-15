@@ -66,7 +66,7 @@ let _ = e => {
   return (0, r.jsx)(a.Button, u({
     variant: c,
     size: f,
-    text: l.intl.string(l.t.ZYO5OK),
+    text: l.intl.string(l.t.ZYO5OD),
     disabled: h,
     onClick: m,
     fullWidth: true

@@ -90,11 +90,11 @@ let x = function(e) {
     children: [(0, r.jsxs)(i.vwX, {
       className: f.formTitle,
       children: [(0, r.jsx)("div", {
-        children: p.intl.string(p.t.B9grJw)
+        children: p.intl.string(p.t.B9grJy)
       }), y]
     }), (0, r.jsx)(i.R94, {
       className: f.description,
-      children: p.intl.string(p.t.I3YQeV)
+      children: p.intl.string(p.t.I3YQeX)
     }), (0, r.jsxs)("div", {
       className: f.rolePreviewArea,
       children: [(0, r.jsx)("div", {
@@ -131,7 +131,7 @@ let x = function(e) {
         },
         variant: "critical-secondary",
         disabled: x,
-        text: p.intl.string(p.t["uY+Nk/"])
+        text: p.intl.string(p.t["uY+Nk5"])
       }) : null]
     })]
   })

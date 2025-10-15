@@ -91,7 +91,7 @@ function P(e) {
         variant: "text-sm/medium",
         color: "interactive-normal",
         className: T.bodyText,
-        children: w.intl.format(w.t.vTPX23, {
+        children: w.intl.format(w.t.vTPX29, {
           username: a
         })
       })
@@ -104,7 +104,7 @@ function P(e) {
           variant: "text-sm/medium",
           color: "always-white",
           tag: "span",
-          children: w.intl.string(w.t["xl+bTG"])
+          children: w.intl.string(w.t["xl+bTE"])
         })
       })
     })]
@@ -135,7 +135,7 @@ function D(e) {
         variant: "text-sm/medium",
         color: "interactive-normal",
         className: T.bodyText,
-        children: w.intl.format(w.t.NmEczg, {
+        children: w.intl.format(w.t.NmEczs, {
           username: a
         })
       })

@@ -12,7 +12,7 @@ var Chunk481060 = require("./481060.js"),
 
 function l(t, e) {
   return (0, n.jsx)(o.S89, {
-    label: c.intl.string(c.t.XQQQFE),
+    label: c.intl.string(c.t.XQQQFB),
     checked: e,
     id: "widget-layout-type",
     action: () => {

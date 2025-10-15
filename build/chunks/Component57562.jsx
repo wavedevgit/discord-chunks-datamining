@@ -23,7 +23,7 @@ function u(e) {
 
 function d(e, t) {
   let n = (0, o.oX)(e);
-  null != n && (0, i.showToast)((0, i.createToast)(l.intl.string(l.t.MPpEUA), i.ToastType.CUSTOM, {
+  null != n && (0, i.showToast)((0, i.createToast)(l.intl.string(l.t.MPpEUF), i.ToastType.CUSTOM, {
     position: i.ToastPosition.BOTTOM,
     component: (0, r.jsx)(s.Z, {
       achievement: n,

@@ -20,7 +20,7 @@ let o = "1144058522808614923",
         effectId: Chunk522942.m.POP,
         colors: [959694]
       },
-      getName: () => Chunk388032.intl.string(Chunk388032.t["TFc+iF"]),
+      getName: () => Chunk388032.intl.string(Chunk388032.t["TFc+iI"]),
       getHeaderSrc: () => require("./947557.js").Z,
       getBannerSrc: e => e ? n(288097).Z : n(201016).Z
     },
@@ -32,7 +32,7 @@ let o = "1144058522808614923",
         effectId: Chunk522942.m.NEON,
         colors: [2949343]
       },
-      getName: () => Chunk388032.intl.string(Chunk388032.t["4g+5bq"]),
+      getName: () => Chunk388032.intl.string(Chunk388032.t["4g+5bm"]),
       getHeaderSrc: () => require("./808236.js").Z,
       getBannerSrc: e => e ? n(957901).Z : n(673497).Z
     },
@@ -45,7 +45,7 @@ let o = "1144058522808614923",
         effectId: Chunk522942.m.TOON,
         colors: [0xff0000]
       },
-      getName: () => Chunk388032.intl.string(Chunk388032.t.ycg1xj),
+      getName: () => Chunk388032.intl.string(Chunk388032.t.ycg1xs),
       getHeaderSrc: () => require("./265665.js").Z,
       getBannerSrc: e => e ? n(614357).Z : n(421450).Z
     },
@@ -70,7 +70,7 @@ let o = "1144058522808614923",
         effectId: Chunk522942.m.NEON,
         colors: [28737]
       },
-      getName: () => Chunk388032.intl.string(Chunk388032.t.UdNuqi),
+      getName: () => Chunk388032.intl.string(Chunk388032.t.UdNuqq),
       getHeaderSrc: () => require("./338430.js").Z,
       getBannerSrc: e => e ? n(217258).Z : n(892814).Z
     }

@@ -26,8 +26,8 @@ var Chunk442837 = require("./442837.js"),
 
 function v(e, n) {
   let t = (0, i.e7)([c.ZP], () => c.ZP.getChannels(n)[c.Zb], [n]),
-    v = (0, i.e7)([m.Z, d.Z], () => {
-      let t = m.Z.getUserVoiceChannelId(n, e.id);
+    v = (0, i.e7)([O.Z, d.Z], () => {
+      let t = O.Z.getUserVoiceChannelId(n, e.id);
       return d.Z.getChannel(t)
     }, [n, e.id]);
   if ((0, i.e7)([g.ZP], () => g.ZP.isGuestOrLurker(n, e.id), [n, e.id]) || null == v) return null;
@@ -37,15 +37,15 @@ function v(e, n) {
     let {
       channel: t
     } = n;
-    return t.id !== v.id && (x ? f.Z.can(j.Plq.CONNECT, t) && !(0, p.rY)(t, m.Z, Z.Z) : f.Z.can(j.Plq.MOVE_MEMBERS, t) && (f.Z.can(j.Plq.CONNECT, t) || h.BT({
+    return t.id !== v.id && (x ? f.Z.can(j.Plq.CONNECT, t) && !(0, p.rY)(t, O.Z, Z.Z) : f.Z.can(j.Plq.MOVE_MEMBERS, t) && (f.Z.can(j.Plq.CONNECT, t) || h.BT({
       permission: j.Plq.CONNECT,
       user: e,
       context: t
-    })) && !(0, p.rY)(t, m.Z, Z.Z))
+    })) && !(0, p.rY)(t, O.Z, Z.Z))
   });
   return 0 === y.length ? null : (0, l.jsx)(r.sNh, {
     id: "voice-move",
-    label: P.intl.string(P.t.FAplms),
+    label: P.intl.string(P.t.FAplmp),
     children: y.map(t => {
       let {
         channel: i
@@ -55,7 +55,7 @@ function v(e, n) {
         action: () => {
           e.id === s.default.getId() ? u.default.selectVoiceChannel(i.id) : a.Z.setChannel(n, e.id, i.id)
         },
-        label: (0, o.F6)(i, O.default, b.Z)
+        label: (0, o.F6)(i, m.default, b.Z)
       }, i.id)
     })
   })

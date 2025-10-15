@@ -107,7 +107,7 @@ let E = {
         hideDescription: m.hideMentionDescription,
         guildId: p.guild_id
       }, e.id));
-    return m.mentions.user === u.h3.DENY ? (t = f.t.MLiD1e, n = f.intl.string(f.t["LPJmL/"])) : (t = f.t.rPNimn, n = f.intl.string(f.t["9Oq93m"])), (0, r.jsxs)(i.Fragment, {
+    return m.mentions.user === u.h3.DENY ? (t = f.t.MLiD1d, n = f.intl.string(f.t.LPJmLy)) : (t = f.t.rPNimp, n = f.intl.string(f.t["9Oq93t"])), (0, r.jsxs)(i.Fragment, {
       children: [(0, c.gm)({
         titleWithQuery: t,
         titleWithoutQuery: n,

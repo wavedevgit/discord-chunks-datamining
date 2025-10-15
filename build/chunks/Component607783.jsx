@@ -31,7 +31,7 @@ function f(e) {
   }, [v, n, f, t]);
   return !Z || m ? null : (0, l.jsx)(a.sNh, {
     id: "secure-frames-user-verification",
-    label: g.intl.string(g.t["8ErYvY"]),
+    label: g.intl.string(g.t["8ErYvb"]),
     action: p,
     icon: b ? a._uN : null
   })

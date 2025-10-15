@@ -94,7 +94,7 @@ function m(e) {
         variant: "text-sm/normal",
         color: "header-secondary",
         className: u.thankYouText,
-        children: c.intl.string(c.t.X0TrNQ)
+        children: c.intl.string(c.t.X0TrNT)
       })
     })]
   }) : h.has(null != (t = d.application_id) ? t : d.name) ? null : (0, r.jsxs)(r.Fragment, {
@@ -106,17 +106,17 @@ function m(e) {
           variant: "text-sm/normal",
           color: "header-secondary",
           className: u.prompt,
-          children: c.intl.string(c.t["9g7v6Q"])
+          children: c.intl.string(c.t["9g7v6e"])
         }), (0, r.jsxs)("div", {
           className: E ? u.buttonsVertical : u.buttonsHorizontal,
           children: [(0, r.jsx)(a.Button, {
-            text: c.intl.string(c.t.p89ACt),
+            text: c.intl.string(c.t.p89ACg),
             size: "sm",
             variant: "secondary",
             onClick: b,
             fullWidth: E
           }), (0, r.jsx)(a.Button, {
-            text: c.intl.string(c.t.gm1Vej),
+            text: c.intl.string(c.t.gm1Ven),
             size: "sm",
             variant: "secondary",
             onClick: y,

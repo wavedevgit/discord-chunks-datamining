@@ -37,8 +37,8 @@ function m(e) {
     }
   }), (0, r.jsx)(a.J2, {
     targetElementRef: m,
-    title: h.intl.string(h.t.C0m4rQ),
-    body: h.intl.string(h.t.zOHfEX),
+    title: h.intl.string(h.t.C0m4ra),
+    body: h.intl.string(h.t.zOHfER),
     graphic: {
       type: "image",
       src: g

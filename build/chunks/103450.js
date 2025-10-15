@@ -114,7 +114,7 @@ function G(e) {
   if (!((0, h.Z)(B, j.xjy.JOIN) || Q) || null == X) return null;
   let ed = !$ || Q && !el,
     ef = ed && (eu || et) && !z && !en;
-  ed ? eu || et || null == B || (G = U.intl.formatToPlainString(U.t.SqJBnN, {
+  ed ? eu || et || null == B || (G = U.intl.formatToPlainString(U.t.SqJBnJ, {
     name: B.name
   })) : G = U.intl.string(U.t["0OiwfH"]);
   let e_ = null != (n = null == Z ? true : Z.launchId) ? n : null == B ? true : B.session_id,
@@ -180,8 +180,8 @@ function G(e) {
       }
     };
   if (!es && !W) return null;
-  let em = es ? U.intl.string(U.t.VJlc0S) : U.intl.string(U.t.OKsSCR);
-  return el && (em = U.intl.string(U.t.DPfdsq)), {
+  let em = es ? U.intl.string(U.t.VJlc0d) : U.intl.string(U.t.OKsSCQ);
+  return el && (em = U.intl.string(U.t.DPfdsr)), {
     buttonCTA: em,
     tooltip: G,
     handleJoinRequest: eh,

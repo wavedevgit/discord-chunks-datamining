@@ -17,22 +17,22 @@ let d = () => (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     color: "header-primary",
     variant: "text-xs/normal",
     className: Chunk785281.inlineText,
-    children: Chunk388032.intl.string(Chunk388032.t.GcZzp2)
+    children: Chunk388032.intl.string(Chunk388032.t.GcZzp6)
   }), (0, Chunk951288.jsx)(Chunk481060.Text, {
     color: "header-primary",
     variant: "text-xs/normal",
     className: Chunk785281.inlineText,
-    children: Chunk388032.intl.string(Chunk388032.t["/NEGrO"])
+    children: Chunk388032.intl.string(Chunk388032.t["/NEGrK"])
   }), (0, Chunk951288.jsx)(Chunk481060.Text, {
     color: "header-primary",
     variant: "text-xs/normal",
     className: Chunk785281.inlineText,
-    children: Chunk388032.intl.string(Chunk388032.t.eUbuHL)
+    children: Chunk388032.intl.string(Chunk388032.t.eUbuHB)
   }), (0, Chunk951288.jsx)(Chunk481060.Text, {
     color: "header-primary",
     variant: "text-xs/normal",
     className: Chunk785281.inlineText,
-    children: Chunk388032.intl.string(Chunk388032.t.sCAZeI)
+    children: Chunk388032.intl.string(Chunk388032.t.sCAZeH)
   })]
 });
 
@@ -48,16 +48,16 @@ function g(e) {
         className: c.textContainer,
         children: [(0, r.jsx)(i.Heading, {
           variant: "heading-md/semibold",
-          children: o.intl.string(o.t.Sx8Ezi)
+          children: o.intl.string(o.t.Sx8Ezs)
         }), (0, r.jsx)(i.Text, {
           color: "header-secondary",
           variant: "text-xs/normal",
           className: c.descriptionText,
-          children: o.intl.string(o.t.JUzPhm)
+          children: o.intl.string(o.t.JUzPho)
         }), (0, r.jsx)(i.Text, {
           color: "header-secondary",
           variant: "text-xs/normal",
-          children: o.intl.format(o.t.Vh7rP7, {
+          children: o.intl.format(o.t.Vh7rPz, {
             suggestionsHook: d
           })
         })]
@@ -65,7 +65,7 @@ function g(e) {
         className: c.image,
         children: (0, r.jsx)("img", {
           src: u,
-          alt: o.intl.string(o.t["uIm/n4"])
+          alt: o.intl.string(o.t["uIm/n5"])
         })
       })]
     }), (0, r.jsx)("div", {
@@ -76,7 +76,7 @@ function g(e) {
         children: [(0, r.jsx)(i.Button, {
           onClick: t,
           variant: "secondary",
-          text: o.intl.string(o.t["X/3SyA"])
+          text: o.intl.string(o.t["X/3SyM"])
         }), (0, r.jsx)("div", {
           className: c.textButtonWrapper,
           children: (0, r.jsx)(i.Avr, {
@@ -85,7 +85,7 @@ function g(e) {
             },
             variant: "secondary",
             textVariant: "text-sm/medium",
-            text: o.intl.string(o.t["5E9SB9"])
+            text: o.intl.string(o.t["5E9SBw"])
           })
         })]
       })

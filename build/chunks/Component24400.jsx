@@ -23,8 +23,8 @@ function _() {
     children: (0, Chunk951288.jsx)(Chunk51331.ZP, {
       value: module,
       onChange: Chunk278828.Q,
-      title: Chunk388032.intl.string(Chunk388032.t.qFsx5q),
-      note: Chunk388032.intl.format(Chunk388032.t.lunaRv, {
+      title: Chunk388032.intl.string(Chunk388032.t.qFsx5u),
+      note: Chunk388032.intl.format(Chunk388032.t.lunaRk, {
         learnMoreLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.SAFETY_ALERTS)
       })
     })

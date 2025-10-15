@@ -31,12 +31,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 let R = () => (0, Chunk951288.jsxs)(Chunk893996.Z, {
-    title: Chunk388032.intl.string(Chunk388032.t.xVRG4P),
+    title: Chunk388032.intl.string(Chunk388032.t.xVRG4O),
     webSetting: Chunk726985.s6.PRIVACY_AND_SAFETY_CONTENT_CATEGORY,
     children: [(0, Chunk951288.jsx)(Chunk211466.n, {}), (0, Chunk951288.jsx)(Chunk122897.Z, {}), (0, Chunk951288.jsx)(Chunk394655.Z, {}), (0, Chunk951288.jsx)(Chunk24400.Z, {}), (0, Chunk951288.jsx)(Chunk924356.Z, {}), (0, Chunk951288.jsx)(Chunk864239.Z, {})]
   }),
   P = () => (0, Chunk951288.jsxs)(Chunk893996.Z, {
-    title: Chunk388032.intl.string(Chunk388032.t["y62Z/d"]),
+    title: Chunk388032.intl.string(Chunk388032.t["y62Z/f"]),
     webSetting: Chunk726985.s6.PRIVACY_AND_SAFETY_SOCIAL_PERMISSIONS_CATEGORY,
     children: [(0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.PRIVACY_AND_SAFETY_SERVER_SELECTOR,
@@ -44,7 +44,7 @@ let R = () => (0, Chunk951288.jsxs)(Chunk893996.Z, {
     }), (0, Chunk951288.jsx)(Chunk988043.Z, {}), (0, Chunk951288.jsx)(Chunk919539.Z, {}), (0, Chunk951288.jsx)(Chunk301812.Z, {}), (0, Chunk951288.jsx)(Chunk190014.Z, {})]
   }),
   w = () => (0, Chunk951288.jsxs)(Chunk893996.Z, {
-    title: Chunk388032.intl.string(Chunk388032.t["1Qn8iV"]),
+    title: Chunk388032.intl.string(Chunk388032.t["1Qn8iY"]),
     webSetting: Chunk726985.s6.PRIVACY_AND_SAFETY_FRIEND_REQUESTS_CATEGORY,
     children: [(0, Chunk951288.jsx)(Chunk694569.Z, {}), (0, Chunk951288.jsx)(Chunk273927.ZP, {})]
   }),
@@ -55,16 +55,16 @@ let R = () => (0, Chunk951288.jsxs)(Chunk893996.Z, {
 function L() {
   let e = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getSubsection()),
     t = [{
-      title: Chunk388032.intl.string(Chunk388032.t["/7xJCF"]),
+      title: Chunk388032.intl.string(Chunk388032.t["/7xJCA"]),
       component: () => (0, Chunk951288.jsx)(D, {}),
       setting: Chunk726985.s6.CONTENT_SOCIAL_DISCORD_TAB
     }, {
-      title: Chunk388032.intl.string(Chunk388032.t.YpCiMt),
+      title: Chunk388032.intl.string(Chunk388032.t.YpCiMj),
       component: Chunk901151.Z,
       setting: Chunk726985.s6.CONTENT_SOCIAL_CONNECTED_GAMES
     }];
   return (0, Chunk951288.jsx)(Chunk10298.N, {
-    header: Chunk388032.intl.string(Chunk388032.t["+o1pDZ"]),
+    header: Chunk388032.intl.string(Chunk388032.t["+o1pDQ"]),
     notice: (0, Chunk951288.jsx)(Chunk441007.Z, {
       page: Chunk441007.N.CONTENT_AND_SOCIAL
     }),

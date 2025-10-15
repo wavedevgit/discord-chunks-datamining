@@ -34,7 +34,7 @@ function p(e) {
       imageAsset: null != E ? {
         asset: E,
         assetId: "QuestTileBanner",
-        alt: f.intl.string(f.t.jnijWz),
+        alt: f.intl.string(f.t.jnijW1),
         className: o()(_.heroAsset, m)
       } : true,
       videoAsset: null != b ? {

@@ -63,7 +63,7 @@ function f(e) {
         variant: "heading-sm/normal",
         className: l.textContainerRebranded,
         color: "header-primary",
-        children: s.intl.format(s.t.IqxblS, {
+        children: s.intl.format(s.t.IqxblZ, {
           username: d(t)
         })
       })]

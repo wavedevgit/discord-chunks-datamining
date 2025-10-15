@@ -15,12 +15,12 @@ let c = (0, Chunk509613.x1)(Chunk313789.n.LOCALE_PANE, {
     render: () => (0, Chunk951288.jsx)(Chunk649157.Z, {})
   }),
   E = (0, Chunk509613.wf)(Chunk313789.n.LOCALE_PANEL, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t.IHMsPn),
+    useTitle: () => Chunk388032.intl.string(Chunk388032.t.IHMsPj),
     buildLayout: () => [c]
   }),
   d = (0, Chunk509613.m7)(Chunk313789.n.LOCALE_SIDEBAR_ITEM, {
     icon: Chunk657707.os0,
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t.IHMsPn),
+    useTitle: () => Chunk388032.intl.string(Chunk388032.t.IHMsPj),
     legacySearchKey: Chunk726985.s6.LANGUAGE,
     buildLayout: () => [E]
   })

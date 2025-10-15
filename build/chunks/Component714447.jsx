@@ -20,7 +20,7 @@ function s() {
   return (0, Chunk951288.jsx)(Chunk481060.II_, {
     id: "user-volume",
     "aria-haspopup": true,
-    label: Chunk388032.intl.string(Chunk388032.t.kbFsAD),
+    label: Chunk388032.intl.string(Chunk388032.t.kbFsAA),
     control: (r, c) => {
       var a, s;
       return (0, n.jsx)(o._wy, (a = function(e) {
@@ -45,7 +45,7 @@ function s() {
         value: (0, l.P)(e),
         maxValue: 100,
         onChange: e => (0, i.xz)((0, l.A)(e), t),
-        "aria-label": u.intl.string(u.t.kbFsAD)
+        "aria-label": u.intl.string(u.t.kbFsAA)
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
         var r = Object.keys(e);
         if (Object.getOwnPropertySymbols) {

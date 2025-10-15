@@ -31,11 +31,11 @@ function C(e) {
     s = () => null != t && (0, f.T)(t, l);
   return (null == t ? true : t.isGuildStageVoice()) && n ? null != r ? (0, i.jsx)(o.sNh, {
     id: "edit-stage",
-    label: b.intl.string(b.t["I+9bLx"]),
+    label: b.intl.string(b.t["I+9bLy"]),
     action: s
   }) : (0, i.jsx)(o.sNh, {
     id: "start-stage",
-    label: b.intl.string(b.t.OYbHfv),
+    label: b.intl.string(b.t.OYbHfn),
     action: s
   }) : null
 }

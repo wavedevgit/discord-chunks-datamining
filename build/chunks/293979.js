@@ -82,7 +82,7 @@ function M(e, t) {
     b === N.i.SUCCEEDED && (l.Z.dispatch({
       type: "CLEAR_INTERACTION_MODAL_STATE",
       customId: i
-    }), c.Z.removeFiles(e.channelId, U(e.channelId, i).map(e => e.id), E.d.InteractionModal), t()), b === N.i.ERRORED && _(w.intl.string(w.t.uJgdEu))
+    }), c.Z.removeFiles(e.channelId, U(e.channelId, i).map(e => e.id), E.d.InteractionModal), t()), b === N.i.ERRORED && _(w.intl.string(w.t.uJgdEh))
   }, [p, b, t, i, e.channelId]);
   let {
     applicationIconURL: v,

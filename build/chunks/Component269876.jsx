@@ -96,19 +96,19 @@ function O() {
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/normal",
       className: Chunk197571.marginBottom8,
-      children: Chunk388032.intl.string(Chunk388032.t.W3K5Im)
+      children: Chunk388032.intl.string(Chunk388032.t.W3K5Ii)
     })]
   })), (0, Chunk951288.jsxs)(Chunk481060.C3N, {
-    label: Chunk388032.intl.string(Chunk388032.t["sqUm+k"]),
+    label: Chunk388032.intl.string(Chunk388032.t["sqUm+v"]),
     className: Chunk192294.sensitivity,
     children: [I && (0, Chunk951288.jsx)(Chunk481060.rsf, {
-      label: Chunk388032.intl.string(Chunk388032.t.I1Zuq0),
+      label: Chunk388032.intl.string(Chunk388032.t.I1Zuq6),
       checked: O,
       onChange: e => A(_, e)
     }), C, !T && (0, Chunk951288.jsx)(Chunk481060.Wn, {
       messageType: Chunk481060.QYI.WARNING,
       className: Chunk197571.marginBottom8,
-      children: Chunk388032.intl.format(Chunk388032.t["O13I+O"], {
+      children: Chunk388032.intl.format(Chunk388032.t["O13I+P"], {
         onEnableClick: () => Chunk846027.Z.enable(true)
       })
     })]

@@ -15,9 +15,9 @@ var Chunk120356 = require("./120356.js"),
   Chunk787528 = require("./787528.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk726185 = require("./726185.js");
-let _ = (e, t) => (null == e ? true : e.status) === c.Vq.EARNED ? d.intl.format(d.t.Hu4jfi, {
+let _ = (e, t) => (null == e ? true : e.status) === c.Vq.EARNED ? d.intl.format(d.t.Hu4jfn, {
     date: null != t ? t : new Date
-  }) : (null == e ? true : e.status) === c.Vq.UPCOMING ? d.intl.format(d.t.E85fll, {
+  }) : (null == e ? true : e.status) === c.Vq.UPCOMING ? d.intl.format(d.t.E85flp, {
     date: null != t ? t : new Date,
     days: e.daysLeft
   }) : null,

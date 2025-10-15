@@ -34,7 +34,7 @@ let g = e => {
       }), (0, r.jsx)(s.Text, {
         variant: "text-md/normal",
         className: u.trendDescription,
-        children: d.intl.format(d.t.OTHOvZ, {
+        children: d.intl.format(d.t.OTHOvb, {
           value: i
         })
       })]

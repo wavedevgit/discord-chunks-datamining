@@ -28,7 +28,7 @@ let h = e => {
           className: d.textContainer,
           children: [(0, r.jsx)(l.Text, {
             variant: "text-md/medium",
-            children: c.intl.format(c.t["Ks2/3R"], {
+            children: c.intl.format(c.t["Ks2/3d"], {
               selectFileHook: (e, n) => (0, r.jsx)(m, {
                 translatedContent: e,
                 setUserImage: t
@@ -37,7 +37,7 @@ let h = e => {
           }), (0, r.jsx)(l.Text, {
             variant: "text-xs/normal",
             color: "text-tertiary",
-            children: c.intl.string(c.t["UTE8C/"])
+            children: c.intl.string(c.t.UTE8Cw)
           })]
         }), null !== n && (0, r.jsx)(u.H4, {
           error: o.ze.IMAGE_LOAD,

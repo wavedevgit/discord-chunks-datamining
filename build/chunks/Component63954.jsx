@@ -2,7 +2,7 @@
 /** chunk id: 63954, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => U,
-  b: () => Q
+  b: () => V
 }), require("./388685.js"), require("./314940.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -69,11 +69,11 @@ function I(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let D = ["png", "gif", "webp"],
-  q = [...D, "jpg", "jpeg"],
-  L = Array.from(new Set([...q, "gif", "mp4", "webm"]));
+let q = ["png", "gif", "webp"],
+  D = [...q, "jpg", "jpeg"],
+  L = Array.from(new Set([...D, "gif", "mp4", "webm"]));
 
-function Q(e) {
+function V(e) {
   var t, n;
   return {
     code: "PREVIEW-MODE-CODE",
@@ -85,7 +85,7 @@ function Q(e) {
   }
 }
 
-function V() {
+function Q() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {},
     {
       streamProgressSeconds: t = 0,
@@ -176,12 +176,12 @@ let M = "1193992107035983872",
   };
 
 function W() {
-  var e, t, a, d, u, B, Q, M;
+  var e, t, a, d, u, B, V, M;
   let [W, H] = Chunk647438.useState(Z), U = Chunk647438.useCallback(e => {
     H(I(k({}, e), {
       preview: true
     }))
-  }, []), [F, K] = Chunk647438.useState(Chunk899457.a.UNENROLLED), [z, G] = Chunk647438.useState(false), [X, Y] = Chunk647438.useState(false), [J, $] = Chunk647438.useState(null), ee = (M = W.config, (0, Chunk278074.EQ)(M).with({
+  }, []), [F, z] = Chunk647438.useState(Chunk899457.a.UNENROLLED), [K, G] = Chunk647438.useState(false), [X, Y] = Chunk647438.useState(false), [J, $] = Chunk647438.useState(null), ee = (M = W.config, (0, Chunk278074.EQ)(M).with({
     configVersion: 2
   }, e => e.rewardsConfig.rewards).exhaustive());
 
@@ -342,7 +342,7 @@ function W() {
       className: Chunk188764.fields,
       children: (0, Chunk951288.jsx)(Chunk916028.Z, {
         onSelect: function(e) {
-          $(e), null != e && (K(function(e) {
+          $(e), null != e && (z(function(e) {
             if (null == e.userStatus) return O.a.UNENROLLED;
             if (null != e.userStatus.claimedAt) return O.a.CLAIMED;
             if (null != e.userStatus.completedAt) return O.a.COMPLETED_100;
@@ -439,18 +439,18 @@ function W() {
         assetKey: "questBarHeroVideo",
         onFileChange: et,
         filters: L,
-        initialValue: null != (Q = W.config.assets.questBarHeroVideo) ? Q : true
+        initialValue: null != (V = W.config.assets.questBarHeroVideo) ? V : true
       }), (0, Chunk951288.jsx)(Chunk210851.Z, {
         title: "Game Tile",
         assetKey: "gameTile",
         onFileChange: et,
-        filters: [...q, "svg"],
+        filters: [...D, "svg"],
         initialValue: W.config.assets.gameTile
       }), (0, Chunk951288.jsx)(Chunk210851.Z, {
         title: "Logotype",
         assetKey: "logotype",
         onFileChange: et,
-        filters: [...D, "svg"],
+        filters: [...q, "svg"],
         initialValue: W.config.assets.logotype
       }), ed && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
         children: [(0, Chunk951288.jsx)(Chunk210851.Z, {
@@ -469,7 +469,7 @@ function W() {
           title: "Video Player Thumbnail (optional)",
           assetKey: "videoPlayerThumbnail",
           onFileChange: en,
-          filters: q,
+          filters: D,
           initialValue: null == eu ? true : eu.assets.video.thumbnail
         }), (0, Chunk951288.jsx)(Chunk210851.Z, {
           title: "Quest Bar Preview Video (optional)",
@@ -488,10 +488,10 @@ function W() {
     }), ee.map((e, t) => (0, r.jsxs)("div", {
       children: [(0, r.jsxs)(p.Heading, {
         variant: "heading-md/semibold",
-        className: R.subheading,
+        className: A.subheading,
         children: ["Reward #", t + 1]
       }), (0, r.jsxs)("div", {
-        className: R.fields,
+        className: A.fields,
         children: [(0, r.jsx)(v.Z, {
           title: "Name",
           assetKey: "name",
@@ -564,7 +564,7 @@ function W() {
         children: (0, Chunk951288.jsx)(Chunk815183.Z, {})
       }), (0, Chunk951288.jsx)(Chunk899457.Z, {
         onChange: function(e) {
-          switch (K(e), e) {
+          switch (z(e), e) {
             case O.a.UNENROLLED:
               U(I(k({}, W), {
                 userStatus: null
@@ -572,14 +572,14 @@ function W() {
               break;
             case O.a.ENROLLED:
               U(I(k({}, W), {
-                userStatus: V({
+                userStatus: Q({
                   enrolledAt: new Date().toISOString()
                 })
               }));
               break;
             case O.a.COMPLETED_25:
               U(I(k({}, W), {
-                userStatus: V({
+                userStatus: Q({
                   enrolledAt: new Date().toISOString(),
                   streamProgressSeconds: .25 * ec
                 })
@@ -587,7 +587,7 @@ function W() {
               break;
             case O.a.COMPLETED_50:
               U(I(k({}, W), {
-                userStatus: V({
+                userStatus: Q({
                   enrolledAt: new Date().toISOString(),
                   streamProgressSeconds: .5 * ec
                 })
@@ -595,7 +595,7 @@ function W() {
               break;
             case O.a.COMPLETED_75:
               U(I(k({}, W), {
-                userStatus: V({
+                userStatus: Q({
                   enrolledAt: new Date().toISOString(),
                   streamProgressSeconds: .75 * ec
                 })
@@ -603,7 +603,7 @@ function W() {
               break;
             case O.a.COMPLETED_100:
               U(I(k({}, W), {
-                userStatus: V({
+                userStatus: Q({
                   completedAt: new Date().toISOString(),
                   enrolledAt: new Date().toISOString(),
                   streamProgressSeconds: ec
@@ -612,7 +612,7 @@ function W() {
               break;
             case O.a.CLAIMED:
               U(I(k({}, W), {
-                userStatus: V({
+                userStatus: Q({
                   claimedAt: new Date().toISOString(),
                   completedAt: new Date().toISOString(),
                   enrolledAt: new Date().toISOString(),
@@ -692,7 +692,7 @@ function W() {
               children: (0, Chunk951288.jsx)(Chunk134483.Z, {
                 channelId: "123",
                 previewQuest: W,
-                isParticipatingOverride: z
+                isParticipatingOverride: K
               })
             })
           })
@@ -701,7 +701,7 @@ function W() {
         className: Chunk188764.toggleSwitch,
         children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
           label: "Is Participating:",
-          checked: z,
+          checked: K,
           onChange: function(e) {
             G(e)
           }

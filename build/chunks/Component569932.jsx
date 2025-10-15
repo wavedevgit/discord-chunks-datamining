@@ -18,19 +18,19 @@ function u(t) {
     onContinue: e,
     onClose: u
   } = t, p = i.useMemo(() => [{
-    label: l.intl.string(l.t["+eJP7o"]),
-    subLabel: l.intl.string(l.t["+0VIUh"]),
+    label: l.intl.string(l.t["+eJP7u"]),
+    subLabel: l.intl.string(l.t["+0VIUl"]),
     icon: r.gj8
   }, {
-    label: l.intl.string(l.t.ZH4QFa),
+    label: l.intl.string(l.t.ZH4QFR),
     icon: r.iWm
-  }], []), _ = s.Z.getArticleURL(c.BhN.PS_CONNECTION), b = l.intl.format(l.t.kqZQNe, {
+  }], []), _ = s.Z.getArticleURL(c.BhN.PS_CONNECTION), b = l.intl.format(l.t.kqZQNT, {
     helpdeskArticleUrl: _
   });
   return (0, o.jsx)(a.m, {
     platformType: n,
-    headerConnect: l.intl.string(l.t.xAWHOy),
-    headerReconnect: l.intl.string(l.t["ZJ/vBh"]),
+    headerConnect: l.intl.string(l.t.xAWHOz),
+    headerReconnect: l.intl.string(l.t["ZJ/vBg"]),
     body: b,
     onClose: u,
     onContinue: e,

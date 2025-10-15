@@ -29,39 +29,39 @@ let d = e => {
   } = {
     0: {
       icon: o.gm1,
-      description: l.intl.string(l.t.YbdEFK),
+      description: l.intl.string(l.t.YbdEFB),
       color: i.Z.unsafe_rawColors.RED_400.css,
-      tooltip: l.intl.string(l.t.PanA4J)
+      tooltip: l.intl.string(l.t.PanA4O)
     },
     4: {
       icon: o.LB9,
-      description: l.intl.string(l.t["01Papm"]),
+      description: l.intl.string(l.t["01Papq"]),
       color: i.Z.unsafe_rawColors.RED_400.css,
-      tooltip: l.intl.string(l.t.PanA4J)
+      tooltip: l.intl.string(l.t.PanA4O)
     },
     5: {
       icon: s.Z,
-      description: l.intl.string(l.t.sp16MU),
+      description: l.intl.string(l.t.sp16MT),
       color: i.Z.unsafe_rawColors.RED_400.css,
-      tooltip: l.intl.string(l.t.PanA4J)
+      tooltip: l.intl.string(l.t.PanA4O)
     },
     1: {
       icon: o.EmW,
-      description: l.intl.string(l.t["4rjikl"]),
+      description: l.intl.string(l.t["4rjikp"]),
       color: i.Z.unsafe_rawColors.ORANGE_345.css,
-      tooltip: l.intl.string(l.t.dq9aTi)
+      tooltip: l.intl.string(l.t.dq9aTk)
     },
     2: {
       icon: o.d3s,
-      description: l.intl.string(l.t["5VmbbF"]),
+      description: l.intl.string(l.t["5VmbbG"]),
       color: i.Z.unsafe_rawColors.RED_400.css,
-      tooltip: l.intl.string(l.t.PanA4J)
+      tooltip: l.intl.string(l.t.PanA4O)
     },
     3: {
       icon: o.d3s,
       description: l.intl.string(l.t.rjFOZ2),
       color: i.Z.unsafe_rawColors.RED_400.css,
-      tooltip: l.intl.string(l.t.PanA4J)
+      tooltip: l.intl.string(l.t.PanA4O)
     }
   } [n];
   return (0, r.jsxs)("div", {

@@ -45,19 +45,19 @@ function x(e) {
     switch (t) {
       case p.QJ.MULTIPLE_CHOICE:
         return {
-          icon: g.jE$, text: f.intl.string(f.t.ooKh3m)
+          icon: g.jE$, text: f.intl.string(f.t.ooKh3t)
         };
       case p.QJ.PARAGRAPH:
         return {
-          icon: g.OvV, text: f.intl.string(f.t.gG0JBN)
+          icon: g.OvV, text: f.intl.string(f.t.gG0JBA)
         };
       case p.QJ.TEXT_INPUT:
         return {
-          icon: (0, g.GSL)(m.Z), text: f.intl.string(f.t.w6Q9wz)
+          icon: (0, g.GSL)(m.Z), text: f.intl.string(f.t.w6Q9w8)
         };
       case p.QJ.TERMS:
         return {
-          icon: g.snC, text: f.intl.string(f.t["3pz9t3"])
+          icon: g.snC, text: f.intl.string(f.t["3pz9t7"])
         };
       default:
         return null
@@ -177,14 +177,14 @@ function C(e) {
       children: [(0, r.jsx)(g.P3F, {
         className: h.actionButton,
         onClick: e.onEdit,
-        "aria-label": f.intl.string(f.t.bt75uw),
+        "aria-label": f.intl.string(f.t.bt75u7),
         children: (0, r.jsx)(g.vdY, {
           size: "xs"
         })
       }), e.canRemove && (0, r.jsx)(g.P3F, {
         className: h.actionButton,
         onClick: e.onRemove,
-        "aria-label": f.intl.string(f.t.N86XcP),
+        "aria-label": f.intl.string(f.t.N86XcH),
         children: (0, r.jsx)(g.XHJ, {
           size: "xs"
         })

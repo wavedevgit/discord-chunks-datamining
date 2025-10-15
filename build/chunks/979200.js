@@ -41,7 +41,7 @@ function c(e) {
     case i.u$.IP_LOCATION:
       return o.intl.string(o.t["6wPmjo"]);
     case i.u$.DISPLAYS_ADVERTISEMENTS:
-      return o.intl.string(o.t["/uOMKZ"]);
+      return o.intl.string(o.t["/uOMKS"]);
     default:
       return null
   }

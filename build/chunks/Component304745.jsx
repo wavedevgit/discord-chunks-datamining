@@ -57,19 +57,19 @@ function P(e) {
       openInPopout: H,
       analyticsLocation: F
     })
-  }, [t, H, F, V]), W = [];
-  A || W.push(a.z.ACTIVITIES_MINI_SHELF_SPARKLES), (0, h.Z)(t.id) && !A && W.push(a.z.ACTIVITY_GDM_ROCKET_SPARKLE), A || W.push(a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP);
-  let z = r.useRef(false),
-    q = r.useRef(null);
+  }, [t, H, F, V]), z = [];
+  A || z.push(a.z.ACTIVITIES_MINI_SHELF_SPARKLES), (0, h.Z)(t.id) && !A && z.push(a.z.ACTIVITY_GDM_ROCKET_SPARKLE), A || z.push(a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP);
+  let W = r.useRef(false),
+    K = r.useRef(null);
   return (0, i.jsx)(y.ZP, {
-    contentTypes: W,
+    contentTypes: z,
     children: e => {
       let {
         visibleContent: r,
         markAsDismissed: l
       } = e, c = r === a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP && !n && !w;
-      return z.current && !c && l(E.L.AUTO_DISMISS), z.current !== c && (z.current = c), (0, i.jsx)(s.yRy, {
-        targetElementRef: q,
+      return W.current && !c && l(E.L.AUTO_DISMISS), W.current !== c && (W.current = c), (0, i.jsx)(s.yRy, {
+        targetElementRef: K,
         fixed: true,
         shouldShow: w && (P === O.D.ACTIVITY || null == P),
         animation: s.yRy.Animation.FADE,
@@ -107,11 +107,11 @@ function P(e) {
             } = e;
             return (0, i.jsxs)(i.Fragment, {
               children: [(0, i.jsx)(o.u, {
-                text: S.intl.string(S.t.P8vmUv),
+                text: S.intl.string(S.t.P8vmUl),
                 forceOpen: true,
                 shouldShow: c,
                 children: (0, i.jsx)("div", {
-                  ref: q,
+                  ref: K,
                   children: (0, i.jsx)(x.Z, {
                     disabled: A,
                     "aria-label": N,

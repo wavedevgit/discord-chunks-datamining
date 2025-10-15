@@ -33,10 +33,10 @@ function h(e) {
   a()(null != h, "Expected selectedSkuId"), a()(null != m, "Expected application");
   let b = i[h];
   a()(null != b, "Expected sku");
-  let y = g ? _.intl.formatToPlainString(_.t["2VjPTw"], {
+  let y = g ? _.intl.formatToPlainString(_.t["2VjPT0"], {
     itemName: b.name,
     giftRecipient: null != (t = null == E ? true : E.username) ? t : "your recipient"
-  }) : _.intl.formatToPlainString(_.t.wK0IbP, {
+  }) : _.intl.formatToPlainString(_.t.wK0IbG, {
     applicationName: m.name,
     itemName: b.name
   });
@@ -54,7 +54,7 @@ function h(e) {
         className: p.divider
       }), (0, r.jsx)(o.zxk, {
         onClick: n,
-        text: _.intl.string(_.t.cpT0Cq),
+        text: _.intl.string(_.t.cpT0Cg),
         fullWidth: true
       })]
     })]

@@ -79,7 +79,7 @@ function x(e) {
       children: !j && (0, r.jsx)(o.P3F, {
         className: b.cardActionButton,
         onClick: j ? true : p,
-        "aria-label": h.intl.string(h.t.Eoo8h6),
+        "aria-label": h.intl.string(h.t.Eoo8h4),
         "aria-disabled": j,
         children: (0, r.jsx)(o.vdY, {
           size: "xs",

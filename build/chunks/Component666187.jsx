@@ -95,9 +95,9 @@ class I extends(r = Chunk647438.Component) {
       error: e,
       maxLength: t,
       minLength: n
-    } = this.props, r = this.getIsOverflowing() ? Chunk388032.intl.formatToPlainString(Chunk388032.t.ICT5S6, {
+    } = this.props, r = this.getIsOverflowing() ? Chunk388032.intl.formatToPlainString(Chunk388032.t.ICT5S0, {
       maxLength: exports
-    }) : null, i = this.getIsUnderflowing() ? Chunk388032.intl.formatToPlainString(Chunk388032.t["62rk1K"], {
+    }) : null, i = this.getIsUnderflowing() ? Chunk388032.intl.formatToPlainString(Chunk388032.t["62rk1N"], {
       minLength: require
     }) : null;
     return null != module && "" === module || null === module ? null : true !== module ? module : false === this.state.dirty ? null : null != r ? r : Chunk951288
@@ -179,7 +179,7 @@ class I extends(r = Chunk647438.Component) {
           })
         }), null != Chunk15127 && (0, Chunk951288.jsx)(Chunk793030.nn4, {
           id: y,
-          children: Chunk388032.intl.format(Chunk388032.t["+DFxLc"], {
+          children: Chunk388032.intl.format(Chunk388032.t["+DFxLS"], {
             maxLength: Chunk15127
           })
         }), this.renderCharacterCount(), this.renderMaxLength()]

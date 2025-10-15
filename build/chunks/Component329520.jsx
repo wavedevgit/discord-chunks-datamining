@@ -66,9 +66,9 @@ function O(e) {
   if (y && O) return null;
   let N = (0, s.R)("formatActivityString"),
     R = (null == n ? true : n.name) === "" ? null : null == n ? true : n.name,
-    P = null != R ? N ? R : E.intl.format(E.t["0wJXSh"], {
+    P = null != R ? N ? R : E.intl.format(E.t["0wJXSk"], {
       name: R
-    }) : E.intl.string(E.t.eXan7B),
+    }) : E.intl.string(E.t.eXan7O),
     w = !v && null != T && null != S;
   return (0, r.jsxs)(r.Fragment, {
     children: [!y && (0, r.jsx)(p.Z, {
@@ -101,11 +101,11 @@ function v(e) {
     hideTooltip: h = false,
     canTruncate: g = true,
     showChannelName: b = false
-  } = e, y = (0, a.e7)([f.Z], () => f.Z.getChannel(t.channelId)), O = (0, u.ZP)(y), v = (null == n ? true : n.name) === "" ? null : null == n ? true : n.name, I = (0, s.R)("formatActivityString"), T = null != v ? I ? v : E.intl.format(E.t["0wJXSh"], {
+  } = e, y = (0, a.e7)([f.Z], () => f.Z.getChannel(t.channelId)), O = (0, u.ZP)(y), v = (null == n ? true : n.name) === "" ? null : null == n ? true : n.name, I = (0, s.R)("formatActivityString"), T = null != v ? I ? v : E.intl.format(E.t["0wJXSk"], {
     name: v
-  }) : E.intl.string(E.t.eXan7B), S = null != v ? I ? v : E.intl.formatToPlainString(E.t["0wJXSh"], {
+  }) : E.intl.string(E.t.eXan7O), S = null != v ? I ? v : E.intl.formatToPlainString(E.t["0wJXSk"], {
     name: v
-  }) : E.intl.string(E.t.eXan7B), A = null != O ? (0, r.jsxs)(r.Fragment, {
+  }) : E.intl.string(E.t.eXan7O), A = null != O ? (0, r.jsxs)(r.Fragment, {
     children: [T, " (", O, ")"]
   }) : T, C = b ? A : T, N = null != O ? "".concat(S, " (").concat(O, ")") : S;
   return (0, r.jsx)(m.Z, {

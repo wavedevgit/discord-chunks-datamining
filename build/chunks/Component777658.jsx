@@ -78,11 +78,11 @@ function m(e) {
         ConfirmModal: e
       } = await Promise.resolve().then(n.bind(n, 878678));
       return t => (0, r.jsx)(e, h(_({
-        header: d.intl.formatToPlainString(d.t.fPLvZd, {
+        header: d.intl.formatToPlainString(d.t.fPLvZW, {
           name: b
         }),
-        confirmText: d.intl.string(d.t.cvSt1J),
-        cancelText: d.intl.string(d.t["ETE/oC"]),
+        confirmText: d.intl.string(d.t.cvSt1N),
+        cancelText: d.intl.string(d.t["ETE/oK"]),
         onConfirm: () => {
           s.Z.removeFriend(E, {
             location: f
@@ -102,11 +102,11 @@ function m(e) {
   }
   return I ? (0, r.jsx)(o.sNh, {
     id: "remove-friend",
-    label: d.intl.string(d.t.cvSt1J),
+    label: d.intl.string(d.t.cvSt1N),
     action: C
   }) : (0, r.jsx)(o.sNh, {
     id: "add-friend",
-    label: S ? d.intl.string(d.t.xMH6vD) : v,
+    label: S ? d.intl.string(d.t.xMH6vL) : v,
     action: () => {
       S || (s.Z.addRelationship({
         userId: E,

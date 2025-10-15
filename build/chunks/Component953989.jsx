@@ -42,7 +42,7 @@ function m(e) {
     children: [(0, r.jsx)(o.Heading, {
       variant: "heading-sm/semibold",
       color: "header-primary",
-      children: d.intl.string(d.t.Fbjlu3)
+      children: d.intl.string(d.t.Fbjlu7)
     }), (0, r.jsx)("ul", {
       className: u.outerContainer,
       children: m.map((e, t) => (0, r.jsx)("li", {

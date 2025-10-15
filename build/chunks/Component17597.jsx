@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk352138 = require("./352138.js"),
   Chunk629235 = require("./629235.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk847678 = require("./847678.js"),
+  Chunk398158 = require("./398158.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk70402 = require("./70402.js"),
   Chunk736056 = require("./736056.js");
@@ -32,32 +32,32 @@ let T = function(t) {
     onComplete: O,
     dismissable: C,
     classificationId: v
-  } = t, [M, U] = l.useState(o.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), V = l.useRef(M), [b, P] = (0, c.US)([M], true, true), Z = l.useMemo(() => (0, r.Z)(), []), j = l.useRef(false), L = (0, E.GE)();
+  } = t, [M, b] = l.useState(o.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), U = l.useRef(M), [V, Z] = (0, c.US)([M], true, true), L = l.useMemo(() => (0, r.Z)(), []), P = l.useRef(false), j = (0, E.GE)();
   l.useEffect(() => {
-    V.current = b
-  }, [b]);
+    U.current = V
+  }, [V]);
   let {
     loading: G,
-    ageVerificationMethods: D
-  } = (0, x.Z)({
+    ageVerificationMethods: N
+  } = (0, p.Z)({
     onClose: () => {
       null == O || O(), T()
     },
     onMethodClick: () => {
-      U(o.z.AGE_VERIFICATION_SURVEY_MODAL_CLOSE)
+      b(o.z.AGE_VERIFICATION_SURVEY_MODAL_CLOSE)
     },
     classificationId: v
   });
   return l.useLayoutEffect(() => () => {
-    if (j.current) return;
-    let t = V.current;
-    null != t && (j.current = true, _.Z.maybeOpenAgeVerificationUserFeedback({
+    if (P.current) return;
+    let t = U.current;
+    null != t && (P.current = true, _.Z.maybeOpenAgeVerificationUserFeedback({
       location: "age_verification_get_started_modal",
       visibleContent: t
     }))
   }, []), l.useEffect(() => {
-    (0, A.lA)(Z, A.d_.EXPRESSIVE_PRIMARY, n)
-  }, [Z, n]), (0, i.jsx)(a.ExpressiveModal, {
+    (0, A.lA)(L, A.d_.EXPRESSIVE_PRIMARY, n)
+  }, [L, n]), (0, i.jsx)(a.ExpressiveModal, {
     transitionState: e,
     onClose: T,
     gradientColor: "blue",
@@ -66,25 +66,25 @@ let T = function(t) {
       type: "image",
       src: I.Z
     },
-    title: m.intl.string(m.t.JHNunj),
-    subtitle: L ? m.intl.string(p.default["1/6wta"]) : m.intl.format(p.default.RpMIT0, {
+    title: m.intl.string(m.t.JHNunp),
+    subtitle: j ? m.intl.string(h.default["1/6wtb"]) : m.intl.format(h.default.RpMIT0, {
       handleOnHelpUrlHook: () => {
-        R.Z.openUrl(f.Z.getArticleURL(h.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, A.x3)(Z, A.d_.EXPRESSIVE_PRIMARY, A.sU.LEARN_MORE)
+        R.Z.openUrl(f.Z.getArticleURL(x.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, A.x3)(L, A.d_.EXPRESSIVE_PRIMARY, A.sU.LEARN_MORE)
       }
     }),
-    actionBarInput: L ? (0, i.jsx)(s.Text, {
+    actionBarInput: j ? (0, i.jsx)(s.Text, {
       variant: "text-xs/medium",
-      children: m.intl.format(p.default.htWh1G, {
+      children: m.intl.format(h.default.htWh1N, {
         handleOnHelpUrlHook: () => {
-          R.Z.openUrl(f.Z.getArticleURL(h.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, A.x3)(Z, A.d_.EXPRESSIVE_PRIMARY, A.sU.LEARN_MORE)
+          R.Z.openUrl(f.Z.getArticleURL(x.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, A.x3)(L, A.d_.EXPRESSIVE_PRIMARY, A.sU.LEARN_MORE)
         }
       })
     }) : (0, i.jsx)(s.Avr, {
       size: "sm",
       textVariant: "text-sm/medium",
-      text: m.intl.string(m.t["2jxGer"]),
+      text: m.intl.string(m.t["2jxGen"]),
       onClick: () => {
-        (0, A.x3)(Z, A.d_.EXPRESSIVE_PRIMARY, A.sU.LOG_OUT), (0, u.R)("age_verification_get_started_modal")
+        (0, A.x3)(L, A.d_.EXPRESSIVE_PRIMARY, A.sU.LOG_OUT), (0, u.R)("age_verification_get_started_modal")
       }
     }),
     children: (0, i.jsxs)(s.Kqy, {
@@ -108,20 +108,20 @@ let T = function(t) {
         }), (0, i.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "text-feedback-info",
-          children: m.intl.string(p.default.ar3a3q)
+          children: m.intl.string(h.default.ar3a3t)
         })]
-      }), null == D || 0 === D.length ? (0, i.jsxs)(s.Kqy, {
+      }), null == N || 0 === N.length ? (0, i.jsxs)(s.Kqy, {
         direction: "vertical",
         align: "center",
         gap: 16,
         children: [(0, i.jsx)(s.Text, {
           variant: "text-xs/medium",
           color: "text-secondary",
-          children: m.intl.string(p.default.cR6336)
+          children: m.intl.string(h.default.cR6339)
         }), (0, i.jsx)(s.Button, {
           variant: "primary",
           size: "sm",
-          text: m.intl.string(p.default.hDvmYP),
+          text: m.intl.string(h.default.hDvmYG),
           onClick: () => {
             (0, g.Jh)()
           }
@@ -129,7 +129,7 @@ let T = function(t) {
       }) : (0, i.jsx)(s.Kqy, {
         direction: "vertical",
         gap: 8,
-        children: D.map(t => {
+        children: N.map(t => {
           let {
             title: e,
             description: n,
@@ -140,7 +140,7 @@ let T = function(t) {
             title: e,
             description: n,
             buttonDisabled: G,
-            onButtonPress: () => l(Z)
+            onButtonPress: () => l(L)
           }, e)
         })
       })]

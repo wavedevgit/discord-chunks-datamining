@@ -302,8 +302,8 @@ function Z(e) {
     if (t.gifs[B(e.url)] = T(v({}, e), {
         order: r + 1
       }), s.wK.toBinary(t).length > b.vY) return g.Z.show({
-      title: y.intl.string(y.t["+XYXtZ"]),
-      body: y.intl.string(y.t.YSDH9n)
+      title: y.intl.string(y.t["+XYXtb"]),
+      body: y.intl.string(y.t.YSDH9v)
     }), false;
     let a = i().size(t.gifs);
     a > 2 && (t.hideTooltip = true), p.default.track(E.rMx.GIF_FAVORITED, {

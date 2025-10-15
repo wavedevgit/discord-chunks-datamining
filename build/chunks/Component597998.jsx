@@ -177,7 +177,7 @@ function k(e) {
       serverDeaf: p
     });
   m && (a ? K.push((0, r.jsx)(l.u, {
-    text: A.intl.string(A.t["PXMZ/+"]),
+    text: A.intl.string(A.t["PXMZ//"]),
     children: (0, r.jsx)(c.Amn, {
       size: "md",
       color: "currentColor",
@@ -185,14 +185,14 @@ function k(e) {
       colorClass: C.strikethrough
     })
   }, "video")) : K.push((0, r.jsx)(l.u, {
-    text: A.intl.string(A.t.FlNoSV),
+    text: A.intl.string(A.t.FlNoSU),
     children: (0, r.jsx)(c.Odl, {
       size: "md",
       color: "currentColor",
       className: o()(C.icon, N)
     })
   }, "video"))), k && K.push((0, r.jsx)(l.u, {
-    text: A.intl.string(A.t.HFwRpk),
+    text: A.intl.string(A.t.HFwRpq),
     children: (0, r.jsx)(c.Mgn, {
       className: o()(C.icon, N),
       color: c.TVs.colors.STATUS_WARNING_BACKGROUND
@@ -211,7 +211,7 @@ function k(e) {
   }, "xbox")) : (P === S.YE.PLAYSTATION || w === T.wR.PLAYSTATION) && K.push((0, r.jsx)(b.Z, {
     className: o()(C.icon, N)
   }, "playstation")), v && K.push((0, r.jsx)(l.u, {
-    text: A.intl.string(A.t["JH1SJ+"]),
+    text: A.intl.string(A.t.JH1SJy),
     children: (0, r.jsx)(c.tEF, {
       size: "xs",
       color: "currentColor",
@@ -300,7 +300,7 @@ let U = function(e) {
 
   function J() {
     return S && !P ? (0, r.jsx)(l.u, {
-      text: A.intl.string(A.t.BVK71i),
+      text: A.intl.string(A.t.BVK71t),
       children: (0, r.jsx)("div", {
         className: o()(C.iconPriortySpeaker, {
           [C.iconPriortySpeakerSpeaking]: !L && !x && N
@@ -329,7 +329,7 @@ let U = function(e) {
         }),
         children: [null != j ? j : v.ZP.getName(H), U ? (0, r.jsxs)("span", {
           className: C.guestSuffix,
-          children: ["\xa0", A.intl.string(A.t["pFO/Ph"])]
+          children: ["\xa0", A.intl.string(A.t["pFO/Pj"])]
         }) : ""]
       }),
       t = {
@@ -410,10 +410,10 @@ function G(e) {
     })
   };
   return (0, r.jsx)(l.u, {
-    text: A.intl.formatToPlainString(A.t.Sq9xJ7, {
+    text: A.intl.formatToPlainString(A.t.Sq9xJy, {
       game: t.name
     }),
-    "aria-label": A.intl.formatToPlainString(A.t.Sq9xJ7, {
+    "aria-label": A.intl.formatToPlainString(A.t.Sq9xJy, {
       game: t.name
     }),
     children: (0, r.jsx)(m.Z, {
@@ -436,7 +436,7 @@ function B(e) {
     serverDeaf: u
   } = e, d = [];
   if (n) {
-    let e, n = () => i ? A.intl.string(A.t.Q8Uzof) : a ? A.intl.string(A.t.uLddbQ) : A.intl.string(A.t.tjtv3P);
+    let e, n = () => i ? A.intl.string(A.t.Q8Uzoa) : a ? A.intl.string(A.t.uLddbW) : A.intl.string(A.t.tjtv3N);
     e = a || i ? c.v0G : c.nRN;
     let s = (0, r.jsx)(e, {
       className: o()(C.icon, t, {
@@ -458,7 +458,7 @@ function B(e) {
         color: "currentColor"
       });
     d.push((0, r.jsx)(l.u, {
-      text: u ? A.intl.string(A.t.btxSdB) : A.intl.string(A.t.NjmiOL),
+      text: u ? A.intl.string(A.t.btxSdH) : A.intl.string(A.t.NjmiOD),
       children: n
     }, "deaf"))
   }

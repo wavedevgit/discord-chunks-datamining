@@ -17,17 +17,17 @@ let f = () => (0, Chunk951288.jsxs)("div", {
     className: Chunk170337.coachtipInner,
     children: [(0, Chunk951288.jsx)("img", {
       src: Chunk442937,
-      alt: Chunk388032.intl.string(Chunk388032.t["9wkT13"]),
+      alt: Chunk388032.intl.string(Chunk388032.t["9wkT19"]),
       className: Chunk170337.coachtipAsset
     }), (0, Chunk951288.jsxs)("div", {
       className: Chunk170337.coachtipTextContainer,
       children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/semibold",
-        children: Chunk388032.intl.string(Chunk388032.t.V5y3qZ)
+        children: Chunk388032.intl.string(Chunk388032.t.V5y3qa)
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         color: "text-secondary",
-        children: Chunk388032.intl.string(Chunk388032.t.eSDHDk)
+        children: Chunk388032.intl.string(Chunk388032.t.eSDHDg)
       })]
     })]
   }),

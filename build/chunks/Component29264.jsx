@@ -46,24 +46,24 @@ function O(e, t, n) {
       try {
         let e = await u.ZP.saveImage(c, null == n ? true : n.contentType, l.wV);
         if (e === u.mQ.ERRORED) throw Error("NativeUtils.saveImage errored for ".concat(c));
-        e === u.mQ.SAVED && (o.default.track(f.rMx.CONTEXT_MENU_IMAGE_SAVED, b({}, (0, d.v)())), (0, i.showToast)((0, i.createToast)(g.intl.string(g.t.cqpdJW), i.ToastType.SUCCESS)))
+        e === u.mQ.SAVED && (o.default.track(f.rMx.CONTEXT_MENU_IMAGE_SAVED, b({}, (0, d.v)())), (0, i.showToast)((0, i.createToast)(g.intl.string(g.t.cqpdJS), i.ToastType.SUCCESS)))
       } catch (e) {
         o.default.track(f.rMx.CONTEXT_MENU_IMAGE_SAVE_FAILED, b({}, (0, d.v)())), p(g.intl.string(g.t["8Ve/S0"]), e)
       }
     }, y = async () => {
       try {
-        await u.ZP.copyImage(c, null == n ? true : n.contentType), o.default.track(f.rMx.CONTEXT_MENU_IMAGE_COPIED, b({}, (0, d.v)())), (0, i.showToast)((0, i.createToast)(g.intl.string(g.t.bhUpvC), i.ToastType.SUCCESS))
+        await u.ZP.copyImage(c, null == n ? true : n.contentType), o.default.track(f.rMx.CONTEXT_MENU_IMAGE_COPIED, b({}, (0, d.v)())), (0, i.showToast)((0, i.createToast)(g.intl.string(g.t.bhUpvL), i.ToastType.SUCCESS))
       } catch (e) {
-        p(g.intl.string(g.t.PTPbjx), e), o.default.track(f.rMx.CONTEXT_MENU_IMAGE_COPY_FAILED, b({}, (0, d.v)()))
+        p(g.intl.string(g.t.PTPbj4), e), o.default.track(f.rMx.CONTEXT_MENU_IMAGE_COPY_FAILED, b({}, (0, d.v)()))
       }
     };
   return [(0, l.Lz)(e, null == n ? true : n.contentType, null == n ? true : n.originalContentType) ? (0, r.jsx)(i.sNh, {
     id: "copy-image",
-    label: g.intl.string(g.t.tvUqWn),
+    label: g.intl.string(g.t.tvUqWl),
     action: y
   }, "copy-image") : null, (0, r.jsx)(i.sNh, {
     id: "save-image",
-    label: g.intl.string(g.t.PeXhgO),
+    label: g.intl.string(g.t.PeXhgI),
     action: O
   }, "save-image")]
 }

@@ -67,12 +67,12 @@ function h(e) {
         name: e
       }))),
       id: m,
-      placeholder: c.intl.string(c.t.oNauug),
+      placeholder: c.intl.string(c.t.oNauur),
       maxLength: u.VKK
     }), (0, n.jsxs)("div", {
       className: g.roleColorContainer,
       children: [(0, n.jsx)(o.nn4, {
-        children: c.intl.format(c.t["Vlq/pH"], {
+        children: c.intl.format(c.t["Vlq/pK"], {
           color: (0, l.Rf)(h)
         })
       }), (0, n.jsx)(o.yRy, {
@@ -85,7 +85,7 @@ function h(e) {
           variant: "secondary",
           icon: o.ilE,
           buttonRef: a,
-          "aria-label": c.intl.string(c.t.QLgdlS)
+          "aria-label": c.intl.string(c.t.QLgdlZ)
         }))
       })]
     }), (0, n.jsx)(d.Z, {

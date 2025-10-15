@@ -85,7 +85,7 @@ function F(e) {
   } = e;
   return t([m.Q2.MESSAGE, m.Q2.NAVIGATION, m.Q2.DND, m.Q2.CHAT, m.Q2.VOICE_AND_VIDEO, m.Q2.MISCELLANEOUS])
 }
-let V = l()((0, Chunk612226.Rv)()).filter(e => e.description !== x.intl.string(x.t.HnNtEI)).groupBy(e => e.group).value();
+let V = l()((0, Chunk612226.Rv)()).filter(e => e.description !== x.intl.string(x.t.HnNtEB)).groupBy(e => e.group).value();
 class H extends Chunk647438.PureComponent {
   renderMessage() {
     let {
@@ -93,10 +93,10 @@ class H extends Chunk647438.PureComponent {
     } = this.props, t = Chunk13140.BB(module.shortcut);
     return Chunk714338.Z.hasBind(exports) ? (0, Chunk951288.jsx)(Chunk481060.Wn, {
       messageType: Chunk481060.QYI.ERROR,
-      children: Chunk388032.intl.string(Chunk388032.t["7lQlw3"])
+      children: Chunk388032.intl.string(Chunk388032.t["7lQlw8"])
     }) : Chunk295907.Sp.has(exports) ? (0, Chunk951288.jsx)(Chunk481060.Wn, {
       messageType: Chunk481060.QYI.ERROR,
-      children: Chunk388032.intl.format(Chunk388032.t.MOIaNd, {
+      children: Chunk388032.intl.format(Chunk388032.t.MOIaNT, {
         keyboardNavArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.KEYBOARD_NAVIGATION)
       })
     }) : (0, Chunk951288.jsx)(Chunk481060.Text, {
@@ -115,7 +115,7 @@ class H extends Chunk647438.PureComponent {
         [Chunk620842.card]: !this.props.isUserSettingsRedesignEnabled
       }),
       children: [!module && !this.props.isUserSettingsRedesignEnabled && (0, Chunk951288.jsx)(Chunk225433.Z, {
-        "aria-label": Chunk388032.intl.string(Chunk388032.t.qEHmmB),
+        "aria-label": Chunk388032.intl.string(Chunk388032.t.qEHmmJ),
         className: Chunk894462.removeKeybindFloating,
         onClick: this.handleDeleteKeybind
       }), (0, Chunk951288.jsxs)("div", {
@@ -123,7 +123,7 @@ class H extends Chunk647438.PureComponent {
         children: [(0, Chunk951288.jsx)("div", {
           className: Chunk894462.item,
           children: (0, Chunk951288.jsx)(Chunk481060.q4e, {
-            label: Chunk388032.intl.string(Chunk388032.t.UUpAD6),
+            label: Chunk388032.intl.string(Chunk388032.t.UUpADw),
             value: this.props.keybind.action,
             options: this.props.keybindActionTypes,
             onChange: this.handleActionChanged,
@@ -132,7 +132,7 @@ class H extends Chunk647438.PureComponent {
         }), (0, Chunk951288.jsx)("div", {
           className: Chunk894462.item,
           children: (0, Chunk951288.jsx)(Chunk481060.gNt, {
-            label: Chunk388032.intl.string(Chunk388032.t["1La4tC"]),
+            label: Chunk388032.intl.string(Chunk388032.t["1La4tL"]),
             children: (0, Chunk951288.jsx)(Chunk825209.Z, {
               defaultValue: this.props.keybind.shortcut,
               onChange: this.handleShortcutChange
@@ -144,7 +144,7 @@ class H extends Chunk647438.PureComponent {
             variant: "icon-only",
             onClick: this.handleDeleteKeybind,
             icon: Chunk481060.XHJ,
-            "aria-label": Chunk388032.intl.string(Chunk388032.t.qEHmmB)
+            "aria-label": Chunk388032.intl.string(Chunk388032.t.qEHmmJ)
           })
         }), (0, Chunk951288.jsx)("div", {
           className: Chunk894462.switch,
@@ -210,65 +210,65 @@ class Y extends Chunk647438.PureComponent {
       autoTrackExposure: false
     }).separateKeybind ? [{
       value: Chunk981631.kg4.VAD_PRIORITY,
-      label: Chunk388032.intl.string(Chunk388032.t["49d6Nd"])
+      label: Chunk388032.intl.string(Chunk388032.t["49d6NT"])
     }] : [], a = [{
       value: Chunk981631.kg4.UNASSIGNED,
-      label: Chunk388032.intl.string(Chunk388032.t["0Uh579"])
+      label: Chunk388032.intl.string(Chunk388032.t["0Uh57+"])
     }, {
       value: Chunk981631.kg4.PUSH_TO_TALK,
-      label: Chunk388032.intl.string(Chunk388032.t.Y5lgTP)
+      label: Chunk388032.intl.string(Chunk388032.t.Y5lgTE)
     }, {
       value: Chunk981631.kg4.PUSH_TO_TALK_PRIORITY,
-      label: Chunk388032.intl.string(Chunk388032.t.DkSwJ2)
+      label: Chunk388032.intl.string(Chunk388032.t.DkSwJy)
     }, {
       value: Chunk981631.kg4.PUSH_TO_MUTE,
-      label: Chunk388032.intl.string(Chunk388032.t.hSCRqd)
+      label: Chunk388032.intl.string(Chunk388032.t.hSCRqa)
     }, ...Chunk647438, {
       value: Chunk981631.kg4.TOGGLE_MUTE,
-      label: Chunk388032.intl.string(Chunk388032.t.PlkYKD)
+      label: Chunk388032.intl.string(Chunk388032.t.PlkYKC)
     }, {
       value: Chunk981631.kg4.TOGGLE_DEAFEN,
-      label: Chunk388032.intl.string(Chunk388032.t.NvGq1K)
+      label: Chunk388032.intl.string(Chunk388032.t.NvGq1N)
     }, {
       value: Chunk981631.kg4.TOGGLE_VOICE_MODE,
-      label: Chunk388032.intl.string(Chunk388032.t.Wa5H9S)
+      label: Chunk388032.intl.string(Chunk388032.t.Wa5H9f)
     }, {
       value: Chunk981631.kg4.TOGGLE_STREAMER_MODE,
-      label: Chunk388032.intl.string(Chunk388032.t.BK0Ncc)
+      label: Chunk388032.intl.string(Chunk388032.t.BK0NcX)
     }];
     return (0, Chunk365023.l)() && Chunk120356.push({
       value: Chunk981631.kg4.TOGGLE_CAMERA,
-      label: Chunk388032.intl.string(Chunk388032.t.hf8JVT)
+      label: Chunk388032.intl.string(Chunk388032.t.hf8JVV)
     }), module && (Chunk120356.push({
       value: Chunk981631.kg4.TOGGLE_OVERLAY_INPUT_LOCK,
-      label: Chunk388032.intl.string(Chunk388032.t.VsAZcC)
+      label: Chunk388032.intl.string(Chunk388032.t.VsAZcH)
     }), Chunk120356.push({
       value: Chunk981631.kg4.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET,
-      label: Chunk388032.intl.string(Chunk388032.t.hurHWo)
+      label: Chunk388032.intl.string(Chunk388032.t.hurHWl)
     })), exports && ((0, Chunk358085.isWindows)() || Chunk131951.Z.getUseSystemScreensharePicker()) && Chunk120356.push({
       value: Chunk981631.kg4.TOGGLE_GO_LIVE_STREAMING,
-      label: Chunk388032.intl.string(Chunk388032.t.ybdjJD)
+      label: Chunk388032.intl.string(Chunk388032.t.ybdjJC)
     }), (0, Chunk358085.isDesktop)() && (Chunk120356.push({
       value: Chunk981631.kg4.NAVIGATE_BACK,
-      label: Chunk388032.intl.string(Chunk388032.t.gRSaOa)
+      label: Chunk388032.intl.string(Chunk388032.t.gRSaOT)
     }, {
       value: Chunk981631.kg4.NAVIGATE_FORWARD,
-      label: Chunk388032.intl.string(Chunk388032.t.zOXpjU)
+      label: Chunk388032.intl.string(Chunk388032.t.zOXpjY)
     }, {
       value: Chunk981631.kg4.SWITCH_TO_VOICE_CHANNEL,
-      label: Chunk388032.intl.string(Chunk388032.t.ty7Lxy)
+      label: Chunk388032.intl.string(Chunk388032.t.ty7Lx8)
     }, {
       value: Chunk981631.kg4.DISCONNECT_FROM_VOICE_CHANNEL,
-      label: Chunk388032.intl.string(Chunk388032.t.CV7mT7)
+      label: Chunk388032.intl.string(Chunk388032.t.CV7mT0)
     }), require && Chunk120356.push({
       value: Chunk981631.kg4.SOUNDBOARD,
-      label: Chunk388032.intl.string(Chunk388032.t.yPH4xm)
+      label: Chunk388032.intl.string(Chunk388032.t.yPH4xs)
     }, {
       value: Chunk981631.kg4.SOUNDBOARD_HOLD,
-      label: Chunk388032.intl.string(Chunk388032.t["1xFbP/"])
+      label: Chunk388032.intl.string(Chunk388032.t["1xFbPz"])
     }), Chunk951288 && Chunk120356.push({
       value: Chunk981631.kg4.SAVE_CLIP,
-      label: Chunk388032.intl.string(Chunk388032.t.U4URzP)
+      label: Chunk388032.intl.string(Chunk388032.t.U4URzM)
     })), Chunk120356
   }
   get keybindDescriptions() {
@@ -277,20 +277,20 @@ class Y extends Chunk647438.PureComponent {
       canGoLive: t,
       enableClips: n
     } = this.props, r = {
-      [Chunk981631.kg4.UNASSIGNED]: Chunk388032.intl.string(Chunk388032.t.rvlNLv),
-      [Chunk981631.kg4.PUSH_TO_MUTE]: Chunk388032.intl.string(Chunk388032.t.xtESim),
-      [Chunk981631.kg4.PUSH_TO_TALK]: Chunk388032.intl.string(Chunk388032.t.wTcBSy),
-      [Chunk981631.kg4.PUSH_TO_TALK_PRIORITY]: Chunk388032.intl.string(Chunk388032.t.FhHvWH),
-      [Chunk981631.kg4.TOGGLE_MUTE]: Chunk388032.intl.string(Chunk388032.t.X2fbUm),
-      [Chunk981631.kg4.TOGGLE_DEAFEN]: Chunk388032.intl.string(Chunk388032.t.MjREZV),
+      [Chunk981631.kg4.UNASSIGNED]: Chunk388032.intl.string(Chunk388032.t.rvlNLi),
+      [Chunk981631.kg4.PUSH_TO_MUTE]: Chunk388032.intl.string(Chunk388032.t.xtESio),
+      [Chunk981631.kg4.PUSH_TO_TALK]: Chunk388032.intl.string(Chunk388032.t.wTcBS0),
+      [Chunk981631.kg4.PUSH_TO_TALK_PRIORITY]: Chunk388032.intl.string(Chunk388032.t.FhHvWF),
+      [Chunk981631.kg4.TOGGLE_MUTE]: Chunk388032.intl.string(Chunk388032.t.X2fbUl),
+      [Chunk981631.kg4.TOGGLE_DEAFEN]: Chunk388032.intl.string(Chunk388032.t.MjREZW),
       [Chunk981631.kg4.TOGGLE_VOICE_MODE]: Chunk388032.intl.string(Chunk388032.t.snm5YW),
-      [Chunk981631.kg4.TOGGLE_STREAMER_MODE]: Chunk388032.intl.string(Chunk388032.t.YszLLx)
+      [Chunk981631.kg4.TOGGLE_STREAMER_MODE]: Chunk388032.intl.string(Chunk388032.t.YszLLy)
     };
     return Chunk577153.Z.getCurrentConfig({
       location: "UserSettingsKeybinds"
     }, {
       autoTrackExposure: false
-    }).separateKeybind && (Chunk951288[Chunk981631.kg4.VAD_PRIORITY] = Chunk388032.intl.string(Chunk388032.t.rSe8IZ)), (0, Chunk365023.l)() && (Chunk951288[Chunk981631.kg4.TOGGLE_CAMERA] = Chunk388032.intl.string(Chunk388032.t.v1JBtL)), module && (Chunk951288[Chunk981631.kg4.TOGGLE_OVERLAY_INPUT_LOCK] = Chunk388032.intl.string(Chunk388032.t.IoP5vc)), exports && (0, Chunk358085.isWindows)() && (Chunk951288[Chunk981631.kg4.TOGGLE_GO_LIVE_STREAMING] = Chunk388032.intl.string(Chunk388032.t.s4C238)), (0, Chunk358085.isDesktop)() && (Chunk951288[Chunk981631.kg4.NAVIGATE_BACK] = Chunk388032.intl.string(Chunk388032.t.nKDlEt), Chunk951288[Chunk981631.kg4.NAVIGATE_FORWARD] = Chunk388032.intl.string(Chunk388032.t.DK0FFk), Chunk951288[Chunk981631.kg4.SOUNDBOARD] = (0, Chunk358085.isWindows)() ? Chunk388032.intl.string(Chunk388032.t["5wJefL"]) : Chunk388032.intl.string(Chunk388032.t.gzjsSP), Chunk951288[Chunk981631.kg4.SOUNDBOARD_HOLD] = (0, Chunk358085.isWindows)() ? Chunk388032.intl.string(Chunk388032.t.RRkZc9) : Chunk388032.intl.string(Chunk388032.t.laNlTl), require && (Chunk951288[Chunk981631.kg4.SAVE_CLIP] = Chunk388032.intl.string(Chunk388032.t.z3Wbam))), Chunk951288
+    }).separateKeybind && (Chunk951288[Chunk981631.kg4.VAD_PRIORITY] = Chunk388032.intl.string(Chunk388032.t.rSe8IS)), (0, Chunk365023.l)() && (Chunk951288[Chunk981631.kg4.TOGGLE_CAMERA] = Chunk388032.intl.string(Chunk388032.t.v1JBtL)), module && (Chunk951288[Chunk981631.kg4.TOGGLE_OVERLAY_INPUT_LOCK] = Chunk388032.intl.string(Chunk388032.t.IoP5vb)), exports && (0, Chunk358085.isWindows)() && (Chunk951288[Chunk981631.kg4.TOGGLE_GO_LIVE_STREAMING] = Chunk388032.intl.string(Chunk388032.t.s4C239)), (0, Chunk358085.isDesktop)() && (Chunk951288[Chunk981631.kg4.NAVIGATE_BACK] = Chunk388032.intl.string(Chunk388032.t.nKDlEh), Chunk951288[Chunk981631.kg4.NAVIGATE_FORWARD] = Chunk388032.intl.string(Chunk388032.t.DK0FFh), Chunk951288[Chunk981631.kg4.SOUNDBOARD] = (0, Chunk358085.isWindows)() ? Chunk388032.intl.string(Chunk388032.t["5wJefH"]) : Chunk388032.intl.string(Chunk388032.t.gzjsSE), Chunk951288[Chunk981631.kg4.SOUNDBOARD_HOLD] = (0, Chunk358085.isWindows)() ? Chunk388032.intl.string(Chunk388032.t.RRkZc3) : Chunk388032.intl.string(Chunk388032.t.laNlTk), require && (Chunk951288[Chunk981631.kg4.SAVE_CLIP] = Chunk388032.intl.string(Chunk388032.t.z3Wbam))), Chunk951288
   }
   renderKeybinds(e) {
     return e.map((t, n) => (0, r.jsxs)(i.Fragment, {
@@ -314,7 +314,7 @@ class Y extends Chunk647438.PureComponent {
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
-        children: Chunk388032.intl.string(Chunk388032.t.NoKjWP)
+        children: Chunk388032.intl.string(Chunk388032.t.NoKjWF)
       })]
     })
   }
@@ -323,7 +323,7 @@ class Y extends Chunk647438.PureComponent {
       t = l()(this.props.keybinds).reject(e => e.managed && ![D.kg4.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET, D.kg4.SAVE_CLIP].includes(e.action)).reject(t => !e && t.action === D.kg4.SAVE_CLIP).reject(e => !this.props.allowSoundboard && (e.action === D.kg4.SOUNDBOARD || e.action === D.kg4.SOUNDBOARD_HOLD)).sortBy(e => e.id).sortBy(e => true === e.managed ? false : 0).value();
     return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk273313.Z, {
-        title: Chunk388032.intl.string(Chunk388032.t.T9DA2K),
+        title: Chunk388032.intl.string(Chunk388032.t.T9DA2N),
         children: Chunk358085.isPlatformEmbedded ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
           children: [(0, Chunk951288.jsxs)("div", {
             className: Chunk894462.ctaContainer,
@@ -332,7 +332,7 @@ class Y extends Chunk647438.PureComponent {
               children: (0, Chunk951288.jsx)(Chunk481060.Button, {
                 size: "md",
                 onClick: this.handleAddKeybind,
-                text: Chunk388032.intl.string(Chunk388032.t.zk6Xbs),
+                text: Chunk388032.intl.string(Chunk388032.t.zk6Xbm),
                 variant: "primary"
               })
             })]
@@ -343,7 +343,7 @@ class Y extends Chunk647438.PureComponent {
         }) : (0, Chunk951288.jsx)(Chunk481060.Wn, {
           messageType: Chunk481060.QYI.INFO,
           className: Chunk894462.browserNotice,
-          children: Chunk388032.intl.format(Chunk388032.t.mPi3F3, {
+          children: Chunk388032.intl.format(Chunk388032.t.mPi3Fx, {
             downloadLink: Chunk981631.EYA.DOWNLOAD
           })
         })
@@ -352,14 +352,14 @@ class Y extends Chunk647438.PureComponent {
       }), (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
         gap: 48,
         children: [(0, Chunk951288.jsx)(Chunk481060.C3N, {
-          label: Chunk388032.intl.string(Chunk388032.t.Lz5KHI),
+          label: Chunk388032.intl.string(Chunk388032.t.Lz5KHB),
           children: (0, Chunk951288.jsx)("div", {
             className: Chunk894462.defaultKeybindGroup,
             children: (0, Chunk951288.jsxs)("div", {
               className: Chunk894462.defaultKeybind,
               children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
                 variant: "text-md/normal",
-                children: Chunk388032.intl.string(Chunk388032.t.sMWLBj)
+                children: Chunk388032.intl.string(Chunk388032.t.sMWLBg)
               }), (0, Chunk951288.jsx)("div", {
                 className: Chunk894462.defaultKeybindShortcutGroup,
                 children: (0, Chunk951288.jsx)(Chunk481060.M2$, {

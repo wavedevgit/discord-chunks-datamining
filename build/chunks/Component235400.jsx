@@ -70,7 +70,7 @@ function I(e) {
       className: E.modalHeader,
       children: [(0, n.jsx)(s.Heading, {
         variant: "heading-lg/semibold",
-        children: b.intl.string(b.t.HykynS)
+        children: b.intl.string(b.t.HykynZ)
       }), (0, n.jsx)(s.olH, {
         "data-migration-pending": true,
         className: E.modalCloseButton,
@@ -100,7 +100,7 @@ function I(e) {
       className: E.modalFooter,
       children: [null != Z && (!(0, u.qS)(Z) || D) || null === w ? (0, n.jsx)(s.Button, {
         variant: "primary",
-        text: b.intl.string(b.t.Jh8fJz),
+        text: b.intl.string(b.t.Jh8fJy),
         onClick: () => {
           C(w), m()
         },
@@ -108,19 +108,19 @@ function I(e) {
       }) : null == Z && (D || !(0, u.G1)(N)) ? (0, n.jsx)(s.Button, {
         variant: "primary",
         onClick: () => L(null == N ? true : N.skuId),
-        text: b.intl.string(b.t.fYfGgK)
+        text: b.intl.string(b.t.fYfGgI)
       }) : (0, n.jsx)(x.Z, {
         subscriptionTier: P.Si.TIER_2,
         showGradient: !D,
         textOptions: {
-          textOverride: y.ZP.isPremium(t) ? b.intl.string(b.t.KXLX7l) : D ? b.intl.string(b.t.mr4K7D) : b.intl.string(b.t.pj0XBN)
+          textOverride: y.ZP.isPremium(t) ? b.intl.string(b.t.KXLX7u) : D ? b.intl.string(b.t.mr4K7O) : b.intl.string(b.t.pj0XBA)
         }
       }), !D && (0, u.G1)(N) ? (0, n.jsx)(h.Z, {
         product: N,
         onClose: m
       }) : (0, n.jsx)(s.Button, {
         variant: "secondary",
-        text: b.intl.string(b.t["ETE/oC"]),
+        text: b.intl.string(b.t["ETE/oK"]),
         onClick: m
       })]
     })]

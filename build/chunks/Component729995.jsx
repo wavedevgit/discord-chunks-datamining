@@ -154,12 +154,12 @@ function E(e) {
       variant: "heading-lg/semibold",
       color: "header-primary",
       className: C.header,
-      children: _.intl.string(_.t.mhxUsE)
+      children: _.intl.string(_.t.mhxUsL)
     }), (0, r.jsx)(l.Text, {
       variant: "text-md/normal",
       color: "header-secondary",
       className: C.subheader,
-      children: _.intl.string(_.t.GtWdQH)
+      children: _.intl.string(_.t.GtWdQE)
     }), (0, r.jsxs)("div", {
       className: C.help,
       children: [(0, r.jsx)(l.Anchor, {
@@ -168,7 +168,7 @@ function E(e) {
         children: (0, r.jsx)(l.Text, {
           variant: "text-sm/medium",
           color: "text-link",
-          children: _.intl.string(_.t.Ok55Kh)
+          children: _.intl.string(_.t.Ok55Ki)
         })
       }), (0, r.jsx)("div", {
         className: C.helpSeparator
@@ -177,7 +177,7 @@ function E(e) {
         children: (0, r.jsx)(l.Text, {
           variant: "text-sm/medium",
           color: "text-link",
-          children: _.intl.string(_.t["6gsjdM"])
+          children: _.intl.string(_.t["6gsjdH"])
         })
       }), (0, r.jsx)("div", {
         className: C.helpSeparator
@@ -201,15 +201,15 @@ function I() {
         variant: "heading-md/semibold",
         color: "header-primary",
         className: Chunk820983.header,
-        children: Chunk388032.intl.string(Chunk388032.t.WslWRL)
+        children: Chunk388032.intl.string(Chunk388032.t.WslWRE)
       }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
         variant: "text-sm/medium",
         color: "header-secondary",
-        children: [module, Chunk388032.intl.string(Chunk388032.t.z9k21H)]
+        children: [module, Chunk388032.intl.string(Chunk388032.t.z9k21N)]
       }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
         variant: "text-sm/medium",
         color: "header-secondary",
-        children: [module, Chunk388032.intl.string(Chunk388032.t.t1Lele)]
+        children: [module, Chunk388032.intl.string(Chunk388032.t.t1LelZ)]
       })]
     })]
   })
@@ -223,8 +223,8 @@ function S(e) {
   return (0, r.jsx)("div", {
     className: C.review,
     children: (0, r.jsx)(l.rsf, {
-      label: s ? _.intl.string(_.t.MBdTCZ) : _.intl.string(_.t["Wslim+"]),
-      description: s ? _.intl.string(_.t.LokpLi) : _.intl.string(_.t.nBIyJp),
+      label: s ? _.intl.string(_.t.MBdTCQ) : _.intl.string(_.t.Wslim5),
+      description: s ? _.intl.string(_.t.LokpLi) : _.intl.string(_.t.nBIyJi),
       checked: s,
       onChange: () => n(false),
       disabled: !s && !a
@@ -244,10 +244,10 @@ function T(e) {
       className: C.reviewHeaderText,
       children: [(0, r.jsx)(l.Heading, {
         variant: "heading-md/semibold",
-        children: s ? _.intl.string(_.t.FcIcT8) : _.intl.string(_.t.R09tJ2)
+        children: s ? _.intl.string(_.t.FcIcT0) : _.intl.string(_.t.R09tJy)
       }), (0, r.jsx)(l.Text, {
         variant: "text-xs/normal",
-        children: s ? _.intl.string(_.t.ockHVS) : _.intl.string(_.t["u/ji07"])
+        children: s ? _.intl.string(_.t.ockHVV) : _.intl.string(_.t["u/ji09"])
       })]
     }), (0, r.jsxs)("div", {
       className: C.reviewActions,
@@ -255,11 +255,11 @@ function T(e) {
         size: "sm",
         variant: "secondary",
         onClick: a,
-        text: _.intl.string(_.t["6gsjdM"])
+        text: _.intl.string(_.t["6gsjdH"])
       }), (0, r.jsx)(l.Button, {
         variant: "primary",
         size: "sm",
-        text: _.intl.string(_.t.Yz7hsB),
+        text: _.intl.string(_.t.Yz7hsL),
         onClick: () => n(d),
         disabled: !s
       })]
@@ -280,7 +280,7 @@ function P(e) {
     }), (0, r.jsx)(l.Text, {
       variant: "text-sm/medium",
       color: "text-muted",
-      children: _.intl.string(_.t.HVoKZ5)
+      children: _.intl.string(_.t.HVoKZ2)
     })]
   })
 }

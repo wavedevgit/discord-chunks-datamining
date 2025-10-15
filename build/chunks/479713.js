@@ -8,7 +8,7 @@ var Chunk830121 = require("./830121.js"),
 
 function a(e, t, n) {
   if (null != (0, r.el)(e)) return e;
-  let a = l.intl.formatToMarkdownString(l.t.dZJpdG, {
+  let a = l.intl.formatToMarkdownString(l.t.dZJpdH, {
     applicationName: t.name,
     link: n
   });

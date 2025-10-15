@@ -132,10 +132,10 @@ let Y = Object.freeze({
       type: "EDITOR",
       isCoachmark: true,
       isPreview: true
-    }, () => j.intl.string(j.t.D29k16)).with({
+    }, () => j.intl.string(j.t.D29k19)).with({
       type: "EDITOR",
       isCoachmark: true
-    }, () => j.intl.string(j.t["8+vbqd"])).otherwise(() => j.intl.string(j.t.hjV0fZ));
+    }, () => j.intl.string(j.t["8+vbqa"])).otherwise(() => j.intl.string(j.t.hjV0fX));
     return (0, r.jsxs)("div", {
       className: k.title,
       children: [(0, r.jsx)(c.Heading, {
@@ -163,19 +163,19 @@ let Y = Object.freeze({
     }).with({
       type: "EDITOR",
       isPreview: true
-    }, () => j.intl.format(j.t.G8yQXi, {
+    }, () => j.intl.format(j.t.G8yQXl, {
       onPremiumClick: () => m.z
     })).with({
       type: "EDITOR",
       isCoachmark: true
-    }, () => j.intl.string(j.t.jmZiNu)).with({
+    }, () => j.intl.string(j.t.jmZiNj)).with({
       type: "EDITOR",
       isPreview: false
-    }, () => j.intl.string(j.t.dqDFwe)).with({
+    }, () => j.intl.string(j.t.dqDFwc)).with({
       isPreview: true
-    }, () => j.intl.format(j.t["DWIjJ/"], {
+    }, () => j.intl.format(j.t.DWIjJy, {
       onPremiumClick: () => m.z
-    })).otherwise(() => j.intl.string(j.t["np0X/u"]));
+    })).otherwise(() => j.intl.string(j.t["np0X/v"]));
     return (0, r.jsx)(c.Heading, {
       variant: "text-sm/normal",
       className: k.subtext,
@@ -193,7 +193,7 @@ let Y = Object.freeze({
     return "EDITOR" === l && c && u ? (0, r.jsx)(E.ZP, {
       type: D.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
       subscriptionTier: D.Si.TIER_2,
-      children: j.intl.format(j.t.G8yQXi, {
+      children: j.intl.format(j.t.G8yQXl, {
         onPremiumClick: () => m.z
       })
     }) : (0, r.jsxs)("div", {
@@ -383,7 +383,7 @@ let Y = Object.freeze({
       }), t && a && (0, r.jsx)(c.Heading, {
         className: k.upsellText,
         variant: "heading-sm/semibold",
-        children: j.intl.string(j.t.POSLGY)
+        children: j.intl.string(j.t.POSLGR)
       }), (0, r.jsxs)(c.Kqy, {
         direction: "horizontal",
         wrap: true,

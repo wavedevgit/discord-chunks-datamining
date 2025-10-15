@@ -116,11 +116,11 @@ function R(e) {
       className: T.content,
       children: [(0, r.jsx)(o.Text, {
         variant: "text-md/medium",
-        children: S.intl.string(S.t["9Ki66N"])
+        children: S.intl.string(S.t["9Ki66O"])
       }), (0, r.jsx)(o.Text, {
         variant: "text-xs/medium",
         color: "text-secondary",
-        children: null != s.reason && "" !== s.reason ? s.reason : S.intl.string(S.t["t+2Zci"])
+        children: null != s.reason && "" !== s.reason ? s.reason : S.intl.string(S.t["t+2Zcn"])
       }), null != b ? (0, r.jsx)(o.Text, {
         className: T.error,
         color: "text-danger",
@@ -133,11 +133,11 @@ function R(e) {
         direction: "horizontal-reverse",
         children: [(0, r.jsx)(o.Button, {
           variant: "primary",
-          text: S.intl.string(S.t.i4jeWR),
+          text: S.intl.string(S.t.i4jeWV),
           onClick: g
         }), (0, r.jsx)(o.Button, {
           variant: "critical-secondary",
-          text: S.intl.string(S.t.UPcIa5),
+          text: S.intl.string(S.t.UPcIa2),
           onClick: O,
           loading: m
         })]
@@ -265,13 +265,13 @@ function L(e) {
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(o.Heading, {
       variant: "heading-lg/semibold",
-      children: S.intl.string(S.t["7OY0gJ"])
+      children: S.intl.string(S.t["7OY0gI"])
     }), (0, r.jsx)("div", {
       className: T.settingsHeader,
       children: (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
         className: T.description,
-        children: S.intl.format(S.t.JcZ36i, {
+        children: S.intl.format(S.t.JcZ36u, {
           onModerationClick: u
         })
       })
@@ -279,8 +279,8 @@ function L(e) {
       className: T.bansSearchContainer,
       children: [(0, r.jsx)(o.E1j, {
         query: null != l ? l : "",
-        placeholder: S.intl.string(S.t.MiqUmf),
-        "aria-label": S.intl.string(S.t.MiqUmf),
+        placeholder: S.intl.string(S.t.MiqUmZ),
+        "aria-label": S.intl.string(S.t.MiqUmZ),
         onChange: g,
         onKeyDown: f,
         onClear: m
@@ -289,7 +289,7 @@ function L(e) {
         className: T.searchButton,
         children: (0, r.jsx)(o.Button, {
           variant: "primary",
-          text: S.intl.string(S.t["5h0QOP"]),
+          text: S.intl.string(S.t["5h0QOD"]),
           onClick: p,
           disabled: s,
           loading: s
@@ -341,7 +341,7 @@ function k() {
   Chunk647438.useEffect(() => {
     B(W.current)
   }, [B]);
-  let z = Chunk647438.useMemo(() => {
+  let V = Chunk647438.useMemo(() => {
     var e;
     return null != (e = F[G.currentPage - 1]) ? module : []
   }, [F, G.currentPage]);
@@ -355,7 +355,7 @@ function k() {
       children: [!M && (0, Chunk951288.jsx)(A, {
         guild: Chunk239091,
         bans: Chunk246946,
-        sortedBans: z,
+        sortedBans: V,
         ref: Chunk84613
       }), !k && M && (0, Chunk951288.jsxs)(Chunk481060.ubH, {
         theme: Chunk51144,
@@ -370,7 +370,7 @@ function k() {
           style: {
             maxWidth: 300
           },
-          children: Chunk388032.intl.string(Chunk388032.t.ZEiY1D)
+          children: Chunk388032.intl.string(Chunk388032.t.ZEiY1N)
         })]
       })]
     }), (0, Chunk951288.jsx)("div", {

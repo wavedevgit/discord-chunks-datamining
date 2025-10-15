@@ -65,7 +65,7 @@ function v(e) {
     });
     return e.unshift({
       value: b,
-      label: h.intl.string(h.t.wGiHkK)
+      label: h.intl.string(h.t.wGiHkJ)
     }), e
   }, [d]), m = i.useCallback(e => {
     let t = e === b ? null : e;

@@ -102,10 +102,10 @@ let R = (e, t) => "".concat(e, ":").concat(t),
     let w = (0, s.e7)([g.Z], () => n.type === f.B.GUILD ? g.Z.getGuild(n.guildId) : true, [n]),
       D = () => {
         let e = (0, E.nY)(n);
-        return ((null == w ? true : w.name) != null && (e = O.intl.formatToPlainString(O.t["nXv4/B"], {
+        return ((null == w ? true : w.name) != null && (e = O.intl.formatToPlainString(O.t["nXv4/P"], {
           names: e,
           guildName: w.name
-        })), i) ? O.intl.formatToPlainString(O.t["9FI9Z0"], {
+        })), i) ? O.intl.formatToPlainString(O.t["9FI9Z2"], {
           names: e
         }) : e
       },
@@ -231,7 +231,7 @@ function w(e) {
   };
   return I ? (0, r.jsx)(l.aML, {
     "data-migration-pending": true,
-    text: O.intl.formatToPlainString(O.t.glqNsf, {
+    text: O.intl.formatToPlainString(O.t.glqNsb, {
       key: (0, b.isMac)() ? "Opt" : "Alt"
     }),
     position: "top",

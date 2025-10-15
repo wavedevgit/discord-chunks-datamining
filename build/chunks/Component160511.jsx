@@ -65,7 +65,7 @@ function c(e) {
     }), (0, l.jsx)(o.Z.SlideContent, {
       children: (0, l.jsxs)(a.NIo, {
         children: [(0, l.jsx)(a.oil, {
-          label: u.intl.string(u.t.HZPBOd),
+          label: u.intl.string(u.t.HZPBOT),
           inputRef: w,
           onChange: Z,
           placeholder: u.intl.string(u.t.tARzgo),
@@ -77,7 +77,7 @@ function c(e) {
           error: y
         }), (0, l.jsx)(a.Button, {
           variant: "secondary",
-          text: u.intl.string(u.t.ZF29L6),
+          text: u.intl.string(u.t.ZF29Ly),
           loading: m,
           onClick: () => {
             s.tn.post({

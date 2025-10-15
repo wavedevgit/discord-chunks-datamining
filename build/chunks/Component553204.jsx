@@ -21,7 +21,7 @@ let f = (0, Chunk624138.Mg)(Chunk477690.Z.ROLE_ICON_UPLOADER_ICON_SIZE);
 function h(e) {
   let {
     role: t,
-    "aria-label": n = m.intl.string(m.t["MsUY/S"]),
+    "aria-label": n = m.intl.string(m.t["MsUY/f"]),
     className: l,
     onClick: s,
     disabled: g = false

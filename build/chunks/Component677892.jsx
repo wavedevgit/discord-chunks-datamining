@@ -42,7 +42,7 @@ function h(e) {
           variant: "text-xs/semibold",
           color: "status-positive",
           className: f.statusText,
-          children: p.intl.string(p.t.rPnzRf)
+          children: p.intl.string(p.t.rPnzRU)
         })]
       });
       break;
@@ -56,7 +56,7 @@ function h(e) {
           variant: "text-xs/semibold",
           color: "status-warning",
           className: f.statusText,
-          children: p.intl.string(p.t["yTa+di"])
+          children: p.intl.string(p.t["yTa+dn"])
         })]
       });
       break;
@@ -100,14 +100,14 @@ function h(e) {
           size: "sm",
           variant: "secondary",
           onClick: c,
-          text: p.intl.string(p.t.bt75uw)
+          text: p.intl.string(p.t.bt75u7)
         }) : (0, r.jsx)(a.Button, {
           icon: a.ZSh,
           iconPosition: "end",
           size: "sm",
           variant: "secondary",
           onClick: c,
-          text: p.intl.string(p.t["0GWElc"])
+          text: p.intl.string(p.t["0GWElZ"])
         })
       })]
     })]
@@ -132,17 +132,17 @@ function j(e) {
     guildId: t,
     onEdit: n,
     disableGoodStatus: c
-  } = e, d = (0, l.Wu)([s.Z], () => s.Z.getDefaultChannelIds(t)), u = (0, l.e7)([s.Z], () => (0, o.kl)(t, s.Z.getDefaultChannelIds(t), s.Z.getOnboardingPrompts(t)).length), x = i.useMemo(() => new Set(d), [d]), [, j] = (0, o.VF)(t, x), v = j.length, _ = b(t), C = (0, g.O4)(t), O = (0, l.e7)([s.Z], () => s.Z.isAdvancedMode(t)), y = O ? p.intl.formatToPlainString(p.t.nHwnLK, {
+  } = e, d = (0, l.Wu)([s.Z], () => s.Z.getDefaultChannelIds(t)), u = (0, l.e7)([s.Z], () => (0, o.kl)(t, s.Z.getDefaultChannelIds(t), s.Z.getOnboardingPrompts(t)).length), x = i.useMemo(() => new Set(d), [d]), [, j] = (0, o.VF)(t, x), v = j.length, _ = b(t), C = (0, g.O4)(t), O = (0, l.e7)([s.Z], () => s.Z.isAdvancedMode(t)), y = O ? p.intl.formatToPlainString(p.t.nHwnLC, {
     numDefaultChannels: v,
     numFromQuestions: u - v
-  }) : _ ? p.intl.formatToPlainString(p.t.HxEwSv, {
+  }) : _ ? p.intl.formatToPlainString(p.t.HxEwSk, {
     numDefaultChannels: v
-  }) : p.intl.formatToPlainString(p.t.ey3uVZ, {
+  }) : p.intl.formatToPlainString(p.t.ey3uVV, {
     numDefaultChannels: m.md,
     numChattableChannels: m.X
   });
   return (0, r.jsx)(h, {
-    title: O ? p.intl.string(p.t.YZookV) : p.intl.string(p.t["4GSygh"]),
+    title: O ? p.intl.string(p.t.YZookZ) : p.intl.string(p.t["4GSygo"]),
     description: y,
     icon: (0, r.jsx)(a.VL1, {
       size: "md",
@@ -162,7 +162,7 @@ function v(e) {
     disableGoodStatus: i
   } = e, c = (0, l.Wu)([s.Z], () => s.Z.getDefaultChannelIds(t)), d = (0, l.Wu)([s.Z], () => s.Z.getOnboardingPrompts(t)), u = d.length, [g, m] = (0, o.dF)(t, d, c), b = g.length, x = g.length + m.length, j = b / x * 100, v = (0, l.e7)([s.Z], () => s.Z.isAdvancedMode(t)), _ = u > 0, C = "none";
   return _ && (j >= 85 && !i ? C = "good" : j < 85 && (C = "warning")), (0, r.jsx)(h, {
-    title: v ? p.intl.string(p.t.AGjtFv) : p.intl.string(p.t.dqCzoT),
+    title: v ? p.intl.string(p.t.AGjtFh) : p.intl.string(p.t.dqCzoa),
     description: p.intl.format(p.t.iuNisr, {
       numChannels: b,
       numTotalChannels: x,
@@ -194,7 +194,7 @@ function _(e) {
   }, [t, x]), v = !(0, c.av)(g), _ = "none";
   v && (b && !o ? _ = "good" : b || (_ = "required"));
   let C = p.intl.string(p.t.GMOwOD);
-  b ? v || (C = p.intl.string(p.t.wHOoyE)) : C = p.intl.string(p.t.wXFbgZ);
+  b ? v || (C = p.intl.string(p.t.wHOoyM)) : C = p.intl.string(p.t.wXFbgY);
   let O = null;
   return v && m && (O = (0, r.jsx)("div", {
     className: f.inlineSwitch,
@@ -204,7 +204,7 @@ function _(e) {
       disabled: !b
     })
   })), (0, r.jsx)(h, {
-    title: p.intl.string(p.t.mRHqsj),
+    title: p.intl.string(p.t.mRHqsr),
     description: C,
     icon: (0, r.jsx)(a.Vy8, {
       size: "md",

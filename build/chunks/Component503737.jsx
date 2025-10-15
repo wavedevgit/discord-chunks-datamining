@@ -52,19 +52,19 @@ class h extends Chunk317770.Z {
     o ? (0, l.h7j)(e => {
       var n, o;
       return (0, r.jsx)(i.Modal, (n = u({
-        title: c.intl.formatToPlainString(c.t["2tN7ih"], {
+        title: c.intl.formatToPlainString(c.t["2tN7io"], {
           name: t.name
         }),
         actions: [{
           variant: "primary",
-          text: c.intl.string(c.t.BddRzS),
+          text: c.intl.string(c.t.BddRzc),
           onClick: e.onClose,
           autoFocus: true
         }]
       }, e), o = o = {
         children: (0, r.jsx)(l.Text, {
           variant: "text-md/normal",
-          children: c.intl.string(c.t.MAxtks)
+          children: c.intl.string(c.t.MAxtkp)
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
         var n = Object.keys(e);

@@ -183,7 +183,7 @@ let R = Chunk647438.memo(e => {
           className: T.flipCardButtonContainer,
           children: (0, r.jsx)(u.Button, {
             variant: "primary",
-            text: I.intl.string(I.t.dcztdU),
+            text: I.intl.string(I.t.dcztdX),
             onClick: () => w(true)
           })
         })]

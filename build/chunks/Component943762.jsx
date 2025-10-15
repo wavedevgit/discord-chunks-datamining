@@ -42,19 +42,19 @@ function u(e) {
   switch (null == t ? true : t.type) {
     case o.IIU.STREAMING:
       return {
-        text: s.intl.formatToPlainString(s.t.tyCw2q, {
+        text: s.intl.formatToPlainString(s.t.tyCw2t, {
           count: n
         }), Icon: i.m3e
       };
     case o.IIU.LISTENING:
       return {
-        text: s.intl.formatToPlainString(s.t["2l8yka"], {
+        text: s.intl.formatToPlainString(s.t["2l8ykZ"], {
           count: n
         }), Icon: i.RZG
       };
     default:
       return {
-        text: s.intl.formatToPlainString(s.t.yJj035, {
+        text: s.intl.formatToPlainString(s.t.yJj039, {
           count: n
         }), Icon: i.iWm
       }

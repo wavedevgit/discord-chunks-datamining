@@ -63,16 +63,16 @@ function Z(t) {
     onSelect: c
   } = t, o = I(v({}, null != i ? i.location : null), {
     object: j.qAy.CONTEXT_MENU
-  }), u = (0, f.Z)(n, o), Z = (0, p.Z)(n), S = (0, y.Z)(n), A = (0, h.Z)(n), m = (0, g.Z)(n), E = (0, b.Z)(n, e), w = (0, O.Z)(n, e), T = (0, s.Z)(n, e), D = (0, d.Z)(e);
+  }), u = (0, p.Z)(n, o), Z = (0, f.Z)(n), S = (0, y.Z)(n), A = (0, h.Z)(n), E = (0, g.Z)(n), m = (0, b.Z)(n, e), w = (0, O.Z)(n, e), D = (0, s.Z)(n, e), T = (0, d.Z)(e);
   return (0, r.jsxs)(l.v2r, {
     navId: "game-context",
     onClose: a.Zy,
-    "aria-label": P.intl.string(P.t.tKobzb),
+    "aria-label": P.intl.string(P.t.tKobzc),
     onSelect: c,
-    children: [u, Z, S, A, m, E, w, (0, r.jsx)(l.kSQ, {
-      children: T
-    }), (0, r.jsx)(l.kSQ, {
+    children: [u, Z, S, A, E, m, w, (0, r.jsx)(l.kSQ, {
       children: D
+    }), (0, r.jsx)(l.kSQ, {
+      children: T
     })]
   })
 }
@@ -84,7 +84,7 @@ function S(t) {
   } = t, l = (0, i.e7)([c.Z], () => c.Z.getApplication(e), [e]), a = (0, i.e7)([u.Z], () => null != n ? u.Z.getLibraryApplication(e, n) : u.Z.getActiveLibraryApplication(e), [e, n]);
   return null == l || null == a ? (0, r.jsx)(o.default, I(v({}, t), {
     id: e,
-    label: P.intl.string(P.t["FfCL+6"])
+    label: P.intl.string(P.t["FfCL+/"])
   })) : (0, r.jsx)(Z, I(v({}, t), {
     application: l,
     libraryApplication: a

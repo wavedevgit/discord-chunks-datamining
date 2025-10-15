@@ -37,31 +37,31 @@ function h(e) {
     user: t,
     widget: y,
     cta: (0, r.jsx)(f.Z.Cta, {
-      heading: m.intl.format(m.t.OIzLCy, {
+      heading: m.intl.format(m.t.OIzLCw, {
         applicationName: n.name
       }),
-      content: m.intl.format(m.t.BQySru, {
+      content: m.intl.format(m.t.BQySrq, {
         applicationName: n.name
       }),
       buttons: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(a.u, {
-          text: m.intl.string(m.t.WAI6xu),
+          text: m.intl.string(m.t.WAI6xs),
           children: (0, r.jsx)(s.Yd2, {
             variant: "secondary",
             size: "sm",
             icon: s.Dio,
-            "aria-label": m.intl.string(m.t.WAI6xu),
+            "aria-label": m.intl.string(m.t.WAI6xs),
             onClick: () => {
               h(p.L.USER_DISMISS)
             }
           })
         }), (0, r.jsx)(a.u, {
-          text: m.intl.string(m.t["lBG2s/"]),
+          text: m.intl.string(m.t.lBG2s7),
           children: (0, r.jsx)(s.Yd2, {
             variant: "primary",
             size: "sm",
             icon: s.kmB,
-            "aria-label": m.intl.formatToPlainString(m.t.KfGahB, {
+            "aria-label": m.intl.formatToPlainString(m.t.KfGahI, {
               applicationName: n.name
             }),
             onClick: () => {

@@ -32,10 +32,10 @@ function v(e) {
   if (null == I) return null;
   let {
     is_canceled: y = false
-  } = null != j ? j : {}, N = (null == j ? true : j.scheduled_start_time) != null ? new Date(null == j ? true : j.scheduled_start_time) : a, E = (0, g.DK)(I), S = y ? b.p1.CANCELED : b.p1.SCHEDULED;
-  E === n && (S = I.status);
-  let Z = (null == I ? true : I.scheduled_start_time) != null ? (0, g.lh)(j, N, new Date(null == I ? true : I.scheduled_start_time)) : null,
-    P = e => {
+  } = null != j ? j : {}, N = (null == j ? true : j.scheduled_start_time) != null ? new Date(null == j ? true : j.scheduled_start_time) : a, S = (0, g.DK)(I), P = y ? b.p1.CANCELED : b.p1.SCHEDULED;
+  S === n && (P = I.status);
+  let E = (null == I ? true : I.scheduled_start_time) != null ? (0, g.lh)(j, N, new Date(null == I ? true : I.scheduled_start_time)) : null,
+    Z = e => {
       e.stopPropagation(), null != k && (0, s.jW)(e, async () => {
         let {
           default: e
@@ -75,11 +75,11 @@ function v(e) {
     onClick: e => {
       e.stopPropagation(), y || null == x || x(n)
     },
-    onContextMenu: P,
+    onContextMenu: Z,
     "aria-label": "",
     children: [(0, i.jsx)(m.z, {
       startTime: N.toISOString(),
-      status: null != Z ? Z : S,
+      status: null != E ? E : P,
       eventType: I.entity_type,
       guildEventId: I.id,
       recurrenceId: n,
@@ -88,13 +88,13 @@ function v(e) {
       variant: "text-sm/semibold",
       color: "text-danger",
       className: f.canceledStatus,
-      children: h.intl.string(h.t.fyBVRm)
+      children: h.intl.string(h.t.fyBVRk)
     }), (0, i.jsx)(o.u, {
-      text: h.intl.string(h.t["UKOtz+"]),
+      text: h.intl.string(h.t.UKOtz8),
       position: "top",
-      "aria-label": h.intl.string(h.t.bt75uw),
+      "aria-label": h.intl.string(h.t.bt75u7),
       children: (0, i.jsx)(c.P3F, {
-        onClick: P,
+        onClick: Z,
         className: f.iconButton,
         children: (0, i.jsx)(c.xhG, {
           size: "custom",

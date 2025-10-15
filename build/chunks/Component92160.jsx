@@ -59,7 +59,7 @@ function c(e) {
         children: (0, r.jsx)(a.Button, {
           variant: "secondary",
           size: "sm",
-          text: null != i ? i : s.intl.string(s.t["5U0kL8"]),
+          text: null != i ? i : s.intl.string(s.t["5U0kLy"]),
           onClick: c,
           disabled: p
         })
@@ -67,7 +67,7 @@ function c(e) {
         variant: n ? "critical-primary" : "primary",
         size: "sm",
         disabled: null == d || !n || p,
-        text: n ? s.intl.string(s.t.R9GHya) : s.intl.string(s.t.JFfins),
+        text: n ? s.intl.string(s.t.R9GHyc) : s.intl.string(s.t.JFfinp),
         onClick: d
       })]
     })]

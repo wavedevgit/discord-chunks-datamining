@@ -110,7 +110,7 @@ function T(e) {
       v(e), (0, _.FU)(e, T, {
         location: x.location
       }).then(() => R(null)).catch(() => {
-        R(b.intl.string(b.t.ejrSLe)), (0, _.FU)(null, T, {
+        R(b.intl.string(b.t.ejrSLS)), (0, _.FU)(null, T, {
           location: x.location
         })
       })
@@ -131,7 +131,7 @@ function T(e) {
   return P ? (0, r.jsx)("div", {
     className: A,
     children: (0, r.jsx)(o.gNt, {
-      label: b.intl.string(b.t.lZTUPs),
+      label: b.intl.string(b.t.lZTUPj),
       errorMessage: N,
       children: (0, r.jsx)(h.Z, {
         canUseCustomBackgrounds: w,

@@ -29,7 +29,7 @@ function c(t) {
     width: "231",
     height: "160",
     alt: ""
-  }), b = e ? r.intl.string(r.t.TTIocg) : r.intl.string(r.t["6n+UPR"]), C = e ? r.intl.string(r.t.MNmoKH) : r.intl.string(r.t.JaaqIf);
+  }), b = e ? r.intl.string(r.t.TTIocn) : r.intl.string(r.t["6n+UPT"]), C = e ? r.intl.string(r.t.MNmoKC) : r.intl.string(r.t.JaaqIS);
   return (0, o.jsx)(i.t, {
     platformType: n,
     isWaitingForConnection: e,

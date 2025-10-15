@@ -77,8 +77,8 @@ function I(e) {
     h.Z.setIsAgeRestricted(t, e)
   }, [t]), g = n === O.V_K.AGE_RESTRICTED && s !== O.V_K.AGE_RESTRICTED;
   return (0, r.jsx)(a.rsf, {
-    label: y.intl.string(y.t.N9xEJF),
-    description: y.intl.format(y.t.iyQQ62, {
+    label: y.intl.string(y.t.N9xEJC),
+    description: y.intl.format(y.t["iyQQ6+"], {
       helpArticleLink: u.Z.getArticleURL(O.BhN.NSFW_SERVER_AGE_RESTRICTION)
     }),
     checked: o,
@@ -121,7 +121,7 @@ function T() {
     children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
       color: "header-primary",
       variant: "heading-lg/semibold",
-      children: Chunk388032.intl.string(Chunk388032.t.YJlvBM)
+      children: Chunk388032.intl.string(Chunk388032.t.YJlvBA)
     }), (0, Chunk951288.jsx)(Chunk307375.h, {
       onTypePicked: require,
       activeType: Chunk456268,

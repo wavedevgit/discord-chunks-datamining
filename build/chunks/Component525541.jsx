@@ -37,6 +37,6 @@ function u(e) {
     },
     onMouseEnter: m,
     onMouseLeave: g,
-    text: null != u ? u : c.intl.string(c.t.HHZmDn)
+    text: null != u ? u : c.intl.string(c.t.HHZmDg)
   })
 }

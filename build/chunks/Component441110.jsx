@@ -53,10 +53,10 @@ let h = function(e) {
           children: [(0, r.jsx)(i.Heading, {
             variant: "heading-md/semibold",
             className: p.header,
-            children: _.intl.string(_.t["v/OYd2"])
+            children: _.intl.string(_.t["v/OYd3"])
           }), (0, r.jsx)(i.Text, {
             variant: "text-sm/normal",
-            children: _.intl.string(_.t.Z85MlD)
+            children: _.intl.string(_.t.Z85MlJ)
           })]
         })]
       }), (0, r.jsx)("div", {
@@ -65,7 +65,7 @@ let h = function(e) {
         children: (0, r.jsx)(i.Button, {
           variant: "primary",
           size: "sm",
-          text: _.intl.format(_.t["+xsVS6"], {
+          text: _.intl.format(_.t["+xsVS0"], {
             username: n.author.username
           }),
           fullWidth: true,

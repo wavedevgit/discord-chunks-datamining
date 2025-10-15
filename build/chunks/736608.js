@@ -11,7 +11,7 @@ var Chunk509613 = require("./509613.js"),
   Chunk663623 = require("./663623.js"),
   Chunk388032 = require("./388032.jsx");
 let c = (0, Chunk509613.k4)(Chunk313789.n.NOTIFICATIONS_EMAIL_CATEGORY, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t["w/qqKK"]),
+  useTitle: () => Chunk388032.intl.string(Chunk388032.t["w/qqKC"]),
   init: function() {
     let {
       initialized: t

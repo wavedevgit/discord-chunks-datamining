@@ -140,7 +140,7 @@ function M() {
       className: Chunk810688.emptyRolesText,
       variant: "text-md/semibold",
       color: "text-muted",
-      children: Chunk388032.intl.string(Chunk388032.t["vR7M+y"])
+      children: Chunk388032.intl.string(Chunk388032.t["vR7M+/"])
     })]
   })
 }
@@ -177,7 +177,7 @@ function G(e) {
     }
   }), [d, C, O, y, M, G, j]), [{
     isDragging: H
-  }, W] = (0, s.c)(F), z = i.useMemo(() => ({
+  }, W] = (0, s.c)(F), V = i.useMemo(() => ({
     accept: L,
     canDrop: () => !M,
     collect: e => {
@@ -192,8 +192,8 @@ function G(e) {
       roleId: d.id
     })
   }), [M, d]), [{
-    dragSourcePosition: V
-  }, K] = (0, o.L)(z), Y = i.useCallback(e => {
+    dragSourcePosition: z
+  }, K] = (0, o.L)(V), Y = i.useCallback(e => {
     (0, m.jW)(e, async () => {
       let {
         default: e
@@ -217,8 +217,8 @@ function G(e) {
   return (0, r.jsxs)(g.P3F, {
     className: a()(Z.roleRow, {
       [Z.roleRowDisableHover]: N,
-      [Z.containerDragBefore]: null != V && j < V,
-      [Z.containerDragAfter]: null != V && j > V
+      [Z.containerDragBefore]: null != z && j < z,
+      [Z.containerDragAfter]: null != z && j > z
     }),
     onClick: X,
     onContextMenu: Y,
@@ -226,7 +226,7 @@ function G(e) {
       W(K(e))
     },
     "data-dnd-name": d.name,
-    "aria-label": w.intl.formatToPlainString(w.t.Vu0Acc, {
+    "aria-label": w.intl.formatToPlainString(w.t.Vu0AcX, {
       name: d.name,
       count: "".concat(_)
     }),
@@ -262,11 +262,11 @@ function G(e) {
         children: d.name
       }), (null == (l = d.tags) ? true : l.subscription_listing_id) != null && (0, r.jsx)(v.Z, {
         className: Z.subscriptionRoleIcon,
-        "aria-label": w.intl.string(w.t.a2Ak8b)
+        "aria-label": w.intl.string(w.t.a2Ak8f)
       }), (null == (c = d.tags) ? true : c.is_guild_product_role) === true && (0, r.jsx)(b.Z, {})]
     }), (0, r.jsx)(u.u, {
-      text: w.intl.string(w.t.CW75t0),
-      "aria-label": w.intl.formatToPlainString(w.t.Fgs8fD, {
+      text: w.intl.string(w.t.CW75t7),
+      "aria-label": w.intl.formatToPlainString(w.t.Fgs8fH, {
         count: "".concat(_)
       }),
       position: "right",
@@ -290,19 +290,19 @@ function G(e) {
     }), (0, r.jsxs)("div", {
       className: a()(Z.buttonsContainer, R.buttonsSpacing),
       children: [(0, r.jsx)(u.u, {
-        text: M ? w.intl.string(w.t["HO/oXl"]) : w.intl.string(w.t.bt75uw),
+        text: M ? w.intl.string(w.t["HO/oXl"]) : w.intl.string(w.t.bt75u7),
         children: (0, r.jsx)(g.hU, {
           variant: "secondary",
-          "aria-label": M ? w.intl.string(w.t["HO/oXl"]) : w.intl.string(w.t.bt75uw),
+          "aria-label": M ? w.intl.string(w.t["HO/oXl"]) : w.intl.string(w.t.bt75u7),
           icon: M ? g.tEF : g.vdY,
           onClick: X
         })
       }), (0, r.jsx)(u.u, {
-        text: w.intl.string(w.t["UKOtz+"]),
+        text: w.intl.string(w.t.UKOtz8),
         shouldShow: q,
         children: (0, r.jsx)(g.hU, {
           variant: "secondary",
-          "aria-label": w.intl.string(w.t["UKOtz+"]),
+          "aria-label": w.intl.string(w.t.UKOtz8),
           icon: g.xhG,
           onClick: Y,
           disabled: !q

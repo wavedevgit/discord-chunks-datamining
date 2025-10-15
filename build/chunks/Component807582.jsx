@@ -27,16 +27,16 @@ let m = e => {
     j = p.features.has(m),
     v = (0, o.AR)(p.id, "GuildSettingsBoostPerks"),
     _ = (0, c._p)(m);
-  return !j && m === d.oNc.VANITY_URL && v ? null : (j ? (null != _ && (i = u.intl.string(u.t.hUgjyP)), t = (0, r.jsxs)(r.Fragment, {
+  return !j && m === d.oNc.VANITY_URL && v ? null : (j ? (null != _ && (i = u.intl.string(u.t.hUgjyM)), t = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.Ucv, {
       color: s.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
       className: g.unlockedIcon
     }), (0, r.jsx)(s.Heading, {
       variant: "eyebrow",
       className: g.description,
-      children: u.intl.string(u.t["0O+87i"])
+      children: u.intl.string(u.t["0O+87u"])
     })]
-  })) : (null != _ && (i = u.intl.string(u.t.L2wYYj)), t = (0, r.jsxs)(r.Fragment, {
+  })) : (null != _ && (i = u.intl.string(u.t.L2wYYm)), t = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.Ucv, {
       color: "currentColor",
       className: g.icon

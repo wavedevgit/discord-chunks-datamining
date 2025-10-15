@@ -24,7 +24,7 @@ function r(t) {
       r()
     }
   }, [c, n, r]), d = e.useMemo(() => [{
-    text: l.intl.string(l.t["ETE/oC"]),
+    text: l.intl.string(l.t["ETE/oK"]),
     onClick: r,
     variant: "secondary",
     disabled: c
@@ -34,8 +34,8 @@ function r(t) {
     loading: c
   }], [u, c, r]);
   return (0, s.jsx)(a.u_l, {
-    title: l.intl.string(l.t.eJzSDT),
-    subtitle: l.intl.string(l.t.GB4jUw),
+    title: l.intl.string(l.t.eJzSDQ),
+    subtitle: l.intl.string(l.t.GB4jU1),
     actions: d,
     onClose: r,
     transitionState: i

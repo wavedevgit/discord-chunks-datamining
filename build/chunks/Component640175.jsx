@@ -22,11 +22,11 @@ function u(e) {
     defaultSettings: m,
     canManageGuild: p
   } = e, f = (0, l.e7)([s.Z], () => s.Z.getMemberCount(g)), h = i.useMemo(() => [{
-    name: d.intl.string(d.t["n/bTaY"]),
+    name: d.intl.string(d.t["n/bTaW"]),
     value: c.bL.ALL_MESSAGES,
-    desc: null != f && f >= c.qWG ? d.intl.string(d.t["L+P4t2"]) : null
+    desc: null != f && f >= c.qWG ? d.intl.string(d.t["L+P4t7"]) : null
   }, {
-    name: d.intl.string(d.t["6fQPhu"]),
+    name: d.intl.string(d.t["6fQPho"]),
     value: c.bL.ONLY_MENTIONS
   }], [f]), b = i.useCallback(e => {
     o.Z.updateGuild({

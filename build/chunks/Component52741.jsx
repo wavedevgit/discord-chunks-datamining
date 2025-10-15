@@ -32,7 +32,7 @@ function O(e) {
     discountOffer: a
   } = e, o = (0, m.Aq)(i);
   return (0, r.jsx)(r.Fragment, {
-    children: b.intl.format(b.t.sJTwHQ, {
+    children: b.intl.format(b.t.sJTwHR, {
       numMonths: null != (t = a.discount.user_usage_limit) ? t : E.rt,
       discountedPrice: o,
       regularPrice: n
@@ -62,13 +62,13 @@ function v(e) {
       n = f.ZP.formatPriceString(f.ZP.getDefaultPrice(t.id), t.interval),
       i = () => {
         var t, r, i;
-        return o === E.C.PREMIUM_TRIAL ? b.intl.format(b.t["2CGBri"], {
+        return o === E.C.PREMIUM_TRIAL ? b.intl.format(b.t["2CGBrq"], {
           remainingTime: e,
           price: n
-        }) : P.planIdFromItems === E.Xh.PREMIUM_YEAR_TIER_2 ? b.intl.format(b.t["+qqh6g"], {
+        }) : P.planIdFromItems === E.Xh.PREMIUM_YEAR_TIER_2 ? b.intl.format(b.t["+qqh6u"], {
           percent: null != (t = null == L ? true : L.percentage) ? t : E.Bo,
           regularPrice: n
-        }) : b.intl.formatToPlainString(b.t["3ZiutU"], {
+        }) : b.intl.formatToPlainString(b.t["3Ziutb"], {
           percent: null != (r = null == L ? true : L.percentage) ? r : E.M_,
           regularPrice: n,
           numMonths: null != (i = null == L ? true : L.duration) ? i : E.rt
@@ -89,7 +89,7 @@ function v(e) {
         variant: N,
         color: R,
         className: a()(y.trialHeader, C),
-        children: b.intl.format(b.t["9vyovu"], {
+        children: b.intl.format(b.t["9vyovr"], {
           planName: (0, f.aq)(null != (B = E.IW[null != (G = null == U ? true : U.sku_id) ? G : E.Si.NONE]) ? B : E.Xh.PREMIUM_MONTH_TIER_2),
           duration: (0, f.if)({
             intervalType: null != (Z = null == U ? true : U.interval) ? Z : E.rV.DAY,

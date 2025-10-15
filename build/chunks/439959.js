@@ -35,17 +35,17 @@ let d = {
         section: "purchase",
         items: [d, m, ...n.purchase],
         height: 12,
-        header: Chunk388032.intl.string(Chunk388032.t.VqmVqE)
+        header: Chunk388032.intl.string(Chunk388032.t.VqmVqK)
       }, {
         section: "premium_purchase",
         items: n.premium_purchase,
         height: 12,
-        header: Chunk388032.intl.string(Chunk388032.t.TiLCgw)
+        header: Chunk388032.intl.string(Chunk388032.t.TiLCg4)
       }, {
         section: "preview",
         items: n.preview,
         height: 12,
-        header: Chunk388032.intl.string(Chunk388032.t["1vbbee"])
+        header: Chunk388032.intl.string(Chunk388032.t["1vbbeX"])
       }].filter(e => {
         let {
           items: t

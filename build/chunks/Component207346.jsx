@@ -31,25 +31,25 @@ function d(e) {
     }), (0, l.jsx)(r.Heading, {
       className: u.title,
       variant: "heading-xxl/bold",
-      children: c.intl.string(c.t.z2jK6X)
+      children: c.intl.string(c.t.z2jK6e)
     }), (0, l.jsx)("div", {
       className: u.betaTag,
       children: (0, l.jsx)(o.Z, {})
     }), (0, l.jsx)(r.E1j, {
       autoFocus: true,
-      placeholder: c.intl.string(c.t["5h0QOP"]),
+      placeholder: c.intl.string(c.t["5h0QOD"]),
       query: t,
       onChange: n,
       onClear: () => n("")
     }), (0, l.jsx)(r.PhF, {
-      placeholder: c.intl.string(c.t["0XtAW0"]),
+      placeholder: c.intl.string(c.t["0XtAW1"]),
       className: u.sortInput,
       options: [{
         value: "descending",
-        label: c.intl.string(c.t.SCsC5m)
+        label: c.intl.string(c.t.SCsC5u)
       }, {
         value: "ascending",
-        label: c.intl.string(c.t.fdx7aF)
+        label: c.intl.string(c.t.fdx7aG)
       }],
       isSelected: e => e === p,
       select: m,

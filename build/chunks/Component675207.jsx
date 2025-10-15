@@ -133,7 +133,7 @@ function v(e) {
     platformType: t,
     children: [(0, r.jsx)("div", {
       className: y.message,
-      children: b.intl.format(b.t.AOKOe7, {
+      children: b.intl.format(b.t.AOKOe3, {
         name: n.name
       })
     }), (0, r.jsx)("div", {
@@ -161,7 +161,7 @@ function E(e) {
       className: y.buttonContainer,
       children: [(0, r.jsx)("div", {
         className: y.message,
-        children: b.intl.format(b.t["6ig6i5"], {
+        children: b.intl.format(b.t["6ig6i4"], {
           connectionName: o.name
         })
       }), (0, r.jsx)(u.P3F, {
@@ -171,7 +171,7 @@ function E(e) {
         target: "_self",
         children: (0, r.jsx)(i.zx, {
           className: y.btn,
-          children: b.intl.string(b.t.flvacA)
+          children: b.intl.string(b.t.flvacH)
         })
       })]
     })

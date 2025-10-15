@@ -26,11 +26,11 @@ let m = Chunk149765.$e(Chunk981631.Plq.KICK_MEMBERS, Chunk981631.Plq.BAN_MEMBERS
   p = [],
   C = [],
   D = true,
-  U = false,
   L = false,
+  U = false,
   M = true,
-  b = false,
-  x = null,
+  x = false,
+  b = null,
   v = Chunk981631.rsA.ALL,
   P = null,
   j = {},
@@ -131,22 +131,22 @@ class F extends(r = Chunk442837.ZP.Store) {
     return D
   }
   get isLoading() {
-    return U
+    return L
   }
   get isLoadingNextPage() {
-    return L
+    return U
   }
   get hasOlderLogs() {
     return M
   }
   get hasError() {
-    return b
+    return x
   }
   get userIds() {
     return O
   }
   get userIdFilter() {
-    return x
+    return b
   }
   get targetIdFilter() {
     return P
@@ -168,20 +168,20 @@ class F extends(r = Chunk442837.ZP.Store) {
 }) : F[l] = "GuildSettingsAuditLogStore";
 let w = new F(Chunk570140.Z, {
   AUDIT_LOG_FETCH_START: function() {
-    U = true
+    L = true
   },
   AUDIT_LOG_FETCH_SUCCESS: function(e) {
     var t;
-    y = 0, D = false, U = false, M = true, b = false, N = G(e.logs), h = e.integrations, f = e.webhooks, R = e.guildScheduledEvents, S = null != (t = e.automodRules) ? t : [], p = e.threads, C = e.applicationCommands, e.logs.length < I.Rg9 && (M = false)
+    y = 0, D = false, L = false, M = true, x = false, N = G(e.logs), h = e.integrations, f = e.webhooks, R = e.guildScheduledEvents, S = null != (t = e.automodRules) ? t : [], p = e.threads, C = e.applicationCommands, e.logs.length < I.Rg9 && (M = false)
   },
   AUDIT_LOG_FETCH_FAIL: function() {
-    U = false, b = true, N = []
+    L = false, x = true, N = []
   },
   AUDIT_LOG_FETCH_NEXT_PAGE_START: function(e) {
     let {
       isGroupedFetch: t
     } = e;
-    L = true, t && y++
+    U = true, t && y++
   },
   AUDIT_LOG_FETCH_NEXT_PAGE_SUCCESS: function(e) {
     let {
@@ -193,13 +193,13 @@ let w = new F(Chunk570140.Z, {
       threads: s,
       applicationCommands: a
     } = e;
-    if (L = false, h = n, f = r, R = l, S = i, p = s, C = a, (0 === t.length || t.length < I.Rg9) && (M = false), t.length > 0) {
+    if (U = false, h = n, f = r, R = l, S = i, p = s, C = a, (0 === t.length || t.length < I.Rg9) && (M = false), t.length > 0) {
       let e = G(t);
       N = [...N, ...e]
     }
   },
   AUDIT_LOG_FETCH_NEXT_PAGE_FAIL: function() {
-    L = false
+    U = false
   },
   AUDIT_LOG_FILTER_BY_ACTION: function(e) {
     let {
@@ -211,7 +211,7 @@ let w = new F(Chunk570140.Z, {
     let {
       userId: t
     } = e;
-    x = t
+    b = t
   },
   AUDIT_LOG_FILTER_BY_TARGET: function(e) {
     let {
@@ -230,6 +230,6 @@ let w = new F(Chunk570140.Z, {
     })
   },
   GUILD_SETTINGS_CLOSE: function() {
-    N = [], O = [], v = Chunk981631.rsA.ALL, x = null, P = null, j = {}, y = 0, D = true, h = [], f = [], R = [], S = [], p = []
+    N = [], O = [], v = Chunk981631.rsA.ALL, b = null, P = null, j = {}, y = 0, D = true, h = [], f = [], R = [], S = [], p = []
   }
 })

@@ -82,7 +82,7 @@ let N = function(e, t) {
         u = [],
         d = {
           type: v.En.SOUNDMOJI,
-          name: C.intl.string(C.t.f0Ezmv),
+          name: C.intl.string(C.t.f0Ezmp),
           id: v.UX.SOUNDMOJI,
           isNitroLocked: false
         },
@@ -124,7 +124,7 @@ let N = function(e, t) {
           t.push({
             type: v.En.TOP_GUILD_EMOJI,
             id: r,
-            name: C.intl.formatToPlainString(C.t.W6Wi1X, {
+            name: C.intl.formatToPlainString(C.t.W6Wi1d, {
               guildName: A
             }),
             isNitroLocked: false,
@@ -140,7 +140,7 @@ let N = function(e, t) {
           t.push({
             type: v.En.RECENT,
             id: r,
-            name: C.intl.string(C.t["5TvaSm"]),
+            name: C.intl.string(C.t["5TvaSk"]),
             isNitroLocked: false,
             emojis: i,
             emojisDisabled: n
@@ -154,7 +154,7 @@ let N = function(e, t) {
           t.push({
             type: v.En.FAVORITES,
             id: r,
-            name: C.intl.string(C.t.y3LQCG),
+            name: C.intl.string(C.t.y3LQCA),
             isNitroLocked: false,
             emojis: n,
             emojisDisabled: e
@@ -334,33 +334,33 @@ let U = (e, t) => e.type !== v.En.GUILD ? e.id : null != t ? t.name : "",
   G = (e, t) => {
     switch (e) {
       case v.UX.TOP_GUILD_EMOJI:
-        return C.intl.formatToPlainString(C.t.W6Wi1X, {
+        return C.intl.formatToPlainString(C.t.W6Wi1d, {
           guildName: t
         });
       case v.UX.RECENT:
-        return C.intl.string(C.t["5TvaSm"]);
+        return C.intl.string(C.t["5TvaSk"]);
       case v.UX.FAVORITES:
-        return C.intl.string(C.t.y3LQCG);
+        return C.intl.string(C.t.y3LQCA);
       case v.UX.ACTIVITY:
-        return C.intl.string(C.t.O783tR);
+        return C.intl.string(C.t.O783tb);
       case v.UX.FLAGS:
-        return C.intl.string(C.t.vvaizu);
+        return C.intl.string(C.t.vvaizs);
       case v.UX.FOOD:
-        return C.intl.string(C.t.ldm9aY);
+        return C.intl.string(C.t.ldm9aW);
       case v.UX.NATURE:
-        return C.intl.string(C.t.egIBDH);
+        return C.intl.string(C.t.egIBDA);
       case v.UX.OBJECTS:
-        return C.intl.string(C.t.gWm7Mk);
+        return C.intl.string(C.t.gWm7Mj);
       case v.UX.PEOPLE:
-        return C.intl.string(C.t.GX594D);
+        return C.intl.string(C.t.GX594O);
       case v.UX.SYMBOLS:
-        return C.intl.string(C.t.QXMYAb);
+        return C.intl.string(C.t.QXMYAQ);
       case v.UX.TRAVEL:
-        return C.intl.string(C.t.w33hIP);
+        return C.intl.string(C.t.w33hIC);
       case v.UX.PREMIUM_UPSELL:
-        return C.intl.string(C.t.pAF6xE);
+        return C.intl.string(C.t.pAF6xM);
       case v.UX.SOUNDMOJI:
-        return C.intl.string(C.t.f0Ezmv);
+        return C.intl.string(C.t.f0Ezmp);
       default:
         return null != t ? t : e
     }
@@ -425,5 +425,5 @@ function W(e, t, n) {
 }
 
 function K(e, t) {
-  return e === T.Hz.REACTION ? t ? C.intl.string(C.t["h7ES+n"]) : C.intl.string(C.t["6any2A"]) : C.intl.string(C.t.KgK5qg)
+  return e === T.Hz.REACTION ? t ? C.intl.string(C.t["h7ES+v"]) : C.intl.string(C.t["6any2N"]) : C.intl.string(C.t.KgK5qq)
 }

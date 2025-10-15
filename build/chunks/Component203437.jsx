@@ -37,7 +37,7 @@ function _(e) {
       size: "md",
       color: "currentColor",
       className: w.speakerIcon
-    }), j.intl.format(j.t["8Dyg1C"], {
+    }), j.intl.format(j.t["8Dyg1N"], {
       slots: n
     })]
   })
@@ -119,6 +119,6 @@ function C(e) {
     renderOptionPrefix: E,
     renderOptionSuffix: P,
     renderOptionLabel: I,
-    placeholder: 0 === O.length ? j.intl.string(j.t.O3i2gV) : j.intl.string(j.t.CunCMN)
+    placeholder: 0 === O.length ? j.intl.string(j.t.O3i2gY) : j.intl.string(j.t.CunCMD)
   })
 }

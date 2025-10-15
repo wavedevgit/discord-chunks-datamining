@@ -14,14 +14,14 @@ let c = (0, Chunk755930.Yn)([(0, Chunk755930.nn)({
   key: "LISTING_NAME",
   cellClassName: Chunk771598.listingNameColumn,
   renderHeader: () => (0, Chunk951288.jsx)(Chunk755930.qN, {
-    children: Chunk388032.intl.string(Chunk388032.t.OGpGqO)
+    children: Chunk388032.intl.string(Chunk388032.t.OGpGqK)
   }),
   sort: (0, Chunk755930.Qg)(e => e.listing.name.toLowerCase())
 }), (0, Chunk755930.GW)({
   key: "PAYMENTS_COUNT",
   cellClassName: Chunk771598.paymentsCountColumn,
   renderHeader: () => (0, Chunk951288.jsx)(Chunk755930.qN, {
-    children: Chunk388032.intl.string(Chunk388032.t.vpHXJ0)
+    children: Chunk388032.intl.string(Chunk388032.t.vpHXJy)
   }),
   getCount: e => e.paymentsCount,
   sort: (0, Chunk755930.Qg)(e => {
@@ -32,7 +32,7 @@ let c = (0, Chunk755930.Yn)([(0, Chunk755930.nn)({
   key: "PRICE",
   cellClassName: Chunk771598.priceColumn,
   renderHeader: () => (0, Chunk951288.jsx)(Chunk755930.qN, {
-    children: Chunk388032.intl.string(Chunk388032.t.VodAGZ)
+    children: Chunk388032.intl.string(Chunk388032.t.VodAGR)
   }),
   getAmount(e) {
     let {

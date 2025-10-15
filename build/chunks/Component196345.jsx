@@ -53,7 +53,7 @@ function m(e) {
       checked: !!n,
       onChange: t,
       disabled: l,
-      label: c.intl.string(c.t["2EXfGJ"])
+      label: c.intl.string(c.t["2EXfGB"])
     })
   })
 }
@@ -64,7 +64,7 @@ function f(e) {
   } = e;
   return (0, r.jsx)(o.Ih, {
     icon: s.snC,
-    text: c.intl.string(c.t["2xbmoG"]),
+    text: c.intl.string(c.t["2xbmoK"]),
     meetsRequirement: !!t.response
   })
 }
@@ -75,7 +75,7 @@ let h = e => {
     onChange: l
   } = e;
   return (0, r.jsxs)(o.hK, {
-    title: c.intl.string(c.t["Q8OFN+"]),
+    title: c.intl.string(c.t.Q8OFNz),
     children: [(0, r.jsx)(d, {
       className: u.disabledFieldBackground,
       terms: n.values,

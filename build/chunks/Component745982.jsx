@@ -16,13 +16,13 @@ function d(t) {
   let {} = t, e = (0, a.Nn)();
   return (0, i.jsx)(s.Z, {
     heroImageSrc: l,
-    heroImageAlt: o.intl.string(o.t["2mJo21"]),
-    header: o.intl.string(o.t.eAbVfS),
+    heroImageAlt: o.intl.string(o.t["2mJo29"]),
+    header: o.intl.string(o.t.eAbVfX),
     children: (0, i.jsx)("div", {
       className: c.safetyTips,
       children: (0, i.jsx)(r.Z, {
         tips: e,
-        headerText: o.intl.string(o.t["0QSL1C"])
+        headerText: o.intl.string(o.t["0QSL1N"])
       })
     })
   })

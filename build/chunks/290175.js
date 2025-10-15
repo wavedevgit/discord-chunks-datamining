@@ -14,7 +14,7 @@ let o = e => {
   });
   return e === r.a.PREMIUM_TIER_2_3_DAY ? {
     isDisabled: t,
-    disabledReason: t ? a.intl.string(a.t.NbveHD) : null
+    disabledReason: t ? a.intl.string(a.t.NbveHB) : null
   } : {
     isDisabled: false,
     disabledReason: null

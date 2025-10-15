@@ -40,8 +40,8 @@ function y(e) {
   } = (0, l.cj)([o.Z], () => o.Z.getProps()), P = null != (n = null != (t = null == S ? true : S.id) ? t : y) ? n : _.lds, w = null != E, [Z] = (0, m.RD)(P), {
     rulesByTriggerType: R
   } = (0, m.pH)(P), D = {
-    [p.vh.MEMBERS]: C.intl.string(C.t.sx4E5v),
-    [p.vh.CONTENT]: C.intl.string(C.t.fphZb0)
+    [p.vh.MEMBERS]: C.intl.string(C.t.sx4E5u),
+    [p.vh.CONTENT]: C.intl.string(C.t.fphZb2)
   }, A = i.useMemo(() => Object.values(null != R ? R : {}).flat().filter(d.lm), [R]), L = {
     isInEditMode: w,
     setEditingRule: I
@@ -79,7 +79,7 @@ function y(e) {
     children: [(0, r.jsx)(s.Heading, {
       variant: "heading-lg/semibold",
       color: "header-primary",
-      children: C.intl.string(C.t.uRelgx)
+      children: C.intl.string(C.t.uRelg4)
     }), (0, r.jsxs)("div", {
       className: O.descriptionContainer,
       children: [(0, r.jsxs)("div", {
@@ -87,11 +87,11 @@ function y(e) {
         children: [(0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
-          children: C.intl.string(C.t.EwuSCR)
+          children: C.intl.string(C.t.EwuSCQ)
         }), (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           className: O.helpUrl,
-          children: C.intl.format(C.t["B+sgGt"], {
+          children: C.intl.format(C.t["B+sgGh"], {
             helpUrl: u.Z.getArticleURL(_.BhN.GUILD_AUTOMOD_BLOCKED_MESSAGE)
           })
         })]
@@ -100,7 +100,7 @@ function y(e) {
         children: [(0, r.jsx)(s.qEK, {
           src: (0, g.j)(),
           size: s.EFr.SIZE_80,
-          "aria-label": C.intl.string(C.t.hG1StD)
+          "aria-label": C.intl.string(C.t.hG1StL)
         }), (0, r.jsx)(s.IGR, {
           text: (0, r.jsxs)("div", {
             className: O.automodBadgeText,
@@ -111,7 +111,7 @@ function y(e) {
             }), (0, r.jsx)(s.Text, {
               variant: "text-xs/bold",
               className: O.automodText,
-              children: C.intl.string(C.t.hG1StD)
+              children: C.intl.string(C.t.hG1StL)
             })]
           }),
           color: a.Z.unsafe_rawColors.BRAND_500.css,

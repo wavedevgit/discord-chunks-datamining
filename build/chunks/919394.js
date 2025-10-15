@@ -60,10 +60,10 @@ let g = (e, t) => m({
       r = u.default.extractTimestamp(e.extra.application_id);
     if (7 >= i()().diff(i()(r), "days") && n.push({
         iconPath: _.As,
-        text: p.intl.string(p.t.vYuyWf)
+        text: p.intl.string(p.t.vYuyWV)
       }), (0, d.Ol)(e) && n.push({
         iconPath: _.fO,
-        text: p.intl.string(p.t.keY6mW)
+        text: p.intl.string(p.t.keY6mZ)
       }), (0, d.q_)(e)) {
       let t = (0, d.vU)(e);
       n.push({
@@ -74,7 +74,7 @@ let g = (e, t) => m({
       })
     }(0, d.ig)(e) === a.o.GLOBAL && n.push({
       iconPath: _.Op,
-      text: p.intl.string(p.t.kAlUsy)
+      text: p.intl.string(p.t.kAlUs7)
     });
     let o = (0, d.dw)(e);
     if (null != o && n.push({
@@ -92,12 +92,12 @@ let g = (e, t) => m({
     if ((0, d.Jd)(e)) {
       let t = (0, d.yA)(e);
       if (null != t) {
-        let e = p.intl.formatToPlainString(p.t.C0AxoR, {
+        let e = p.intl.formatToPlainString(p.t.C0Axoa, {
           hours: Math.round(t / c.Z.Seconds.HOUR)
         });
         return [{
           iconPath: _.eF,
-          text: "".concat(p.intl.string(p.t["/50eHi"]), " — ").concat(e)
+          text: "".concat(p.intl.string(p.t["/50eHh"]), " — ").concat(e)
         }]
       }
     }

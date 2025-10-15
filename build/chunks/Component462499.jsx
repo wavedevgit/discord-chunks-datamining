@@ -43,31 +43,31 @@ function f(e) {
     onSave: Z,
     onDelete: y,
     onIconUpload: G
-  } = e, [H, P] = i.useState(null != (n = null == _ ? true : _.title) ? n : ""), [S, U] = i.useState(null != (l = null == _ ? true : _.description) ? l : ""), [R, W] = i.useState(function(e) {
+  } = e, [H, S] = i.useState(null != (n = null == _ ? true : _.title) ? n : ""), [P, U] = i.useState(null != (l = null == _ ? true : _.description) ? l : ""), [B, R] = i.useState(function(e) {
     if (null == e) return null;
-    let n = p.Z.getChannel(e.channelId);
+    let n = x.Z.getChannel(e.channelId);
     return null == n ? null : {
       value: n.id,
       label: n.name
     }
-  }(_)), B = (0, o.e7)([j.Z], () => {
+  }(_)), W = (0, o.e7)([j.Z], () => {
     var e;
     return null == (e = j.Z.getResourceChannel(null == _ ? true : _.channelId)) ? true : e.icon
-  }), E = (0, o.Wu)([j.Z], () => {
+  }), K = (0, o.Wu)([j.Z], () => {
     var e, n;
     return (null != (n = null == (e = j.Z.getSettings()) ? true : e.resourceChannels) ? n : []).map(e => e.channelId)
-  }), K = H.length < m.n || null == R, L = i.useCallback(() => {
-    null == R || H.length <= 0 || (Z(b(R, H, S, B)), f())
-  }, [Z, f, H, R, B, S]), T = i.useCallback(() => {
+  }), L = H.length < m.n || null == B, O = i.useCallback(() => {
+    null == B || H.length <= 0 || (Z(b(B, H, P, W)), f())
+  }, [Z, f, H, B, W, P]), E = i.useCallback(() => {
     null == y || y(), f()
-  }, [y, f]), w = i.useCallback(e => {
-    W(e)
-  }, [W]), z = i.useCallback(e => Promise.resolve(x.ZP.getSelectableChannels(N).filter(n => (0, m.k3)(n.channel) && !E.includes(n.channel.id) && t()(e, n.channel.name)).map(e => ({
+  }, [y, f]), J = i.useCallback(e => {
+    R(e)
+  }, [R]), T = i.useCallback(e => Promise.resolve(p.ZP.getSelectableChannels(N).filter(n => (0, m.k3)(n.channel) && !K.includes(n.channel.id) && t()(e, n.channel.name)).map(e => ({
     value: e.channel.id,
     label: e.channel.name
-  }))), [N, E]), F = i.useCallback(e => {
+  }))), [N, K]), w = i.useCallback(e => {
     if (null == e || null == N) return null;
-    let n = p.Z.getChannel(e.value),
+    let n = x.Z.getChannel(e.value),
       l = g.Z.getGuild(N);
     if (null == n || null == l) return null;
     let i = (0, u.KS)(n, l);
@@ -76,21 +76,21 @@ function f(e) {
       color: "currentColor",
       className: I.channelIcon
     })
-  }, [N]), M = i.useCallback(e => {
-    null != G && null != R && G(b(R, H, S), e)
-  }, [R, H, G, S]), O = i.useCallback(() => null == B || null == R ? null : v.ZP.getResourceChannelIconURL({
-    channelId: R.value,
-    icon: B
-  }), [R, B]), V = i.useMemo(() => [{
+  }, [N]), z = i.useCallback(e => {
+    null != G && null != B && G(b(B, H, P), e)
+  }, [B, H, G, P]), F = i.useCallback(() => null == W || null == B ? null : v.ZP.getResourceChannelIconURL({
+    channelId: B.value,
+    icon: W
+  }), [B, W]), M = i.useMemo(() => [{
     variant: "secondary",
-    text: k.intl.string(k.t["ETE/oC"]),
+    text: k.intl.string(k.t["ETE/oK"]),
     onClick: f
   }, {
     variant: "primary",
-    text: k.intl.string(k.t["R3BPH+"]),
-    onClick: L,
-    disabled: K
-  }], [L, K, f]);
+    text: k.intl.string(k.t.R3BPHx),
+    onClick: O,
+    disabled: L
+  }], [O, L, f]);
   return (0, a.jsxs)(s.IX, {
     transitionState: r,
     onClose: f,
@@ -108,7 +108,7 @@ function f(e) {
           children: (0, a.jsx)(d.Heading, {
             variant: "heading-md/semibold",
             color: "header-primary",
-            children: k.intl.string(k.t.iREYFC)
+            children: k.intl.string(k.t.iREYFB)
           })
         })
       }), (0, a.jsxs)("div", {
@@ -116,16 +116,16 @@ function f(e) {
         children: [(0, a.jsxs)(d.Heading, {
           variant: "heading-md/semibold",
           color: "header-primary",
-          children: [k.intl.string(k.t.nPa4Ju), (0, a.jsx)(C.Z, {})]
+          children: [k.intl.string(k.t.nPa4Ji), (0, a.jsx)(C.Z, {})]
         }), (0, a.jsx)(d.VcW, {
-          value: R,
-          renderOptionPrefix: F,
-          options: z,
-          onChange: w
+          value: B,
+          renderOptionPrefix: w,
+          options: T,
+          onChange: J
         }), (0, a.jsx)(d.Text, {
           variant: "text-xs/medium",
           color: "text-muted",
-          children: k.intl.string(k.t.eNDtJK)
+          children: k.intl.string(k.t.eNDtJC)
         })]
       }), (0, a.jsx)("div", {
         className: I.separator
@@ -137,8 +137,8 @@ function f(e) {
           children: [k.intl.string(k.t["lFy+aW"]), (0, a.jsx)(C.Z, {})]
         }), (0, a.jsx)(d.oil, {
           value: H,
-          onChange: P,
-          placeholder: k.intl.string(k.t.XKUimI),
+          onChange: S,
+          placeholder: k.intl.string(k.t.XKUimJ),
           maxLength: m.am
         })]
       }), (0, a.jsx)("div", {
@@ -148,11 +148,11 @@ function f(e) {
         children: [(0, a.jsx)(d.Heading, {
           variant: "heading-md/semibold",
           color: "header-primary",
-          children: k.intl.string(k.t.CnkilH)
+          children: k.intl.string(k.t.CnkilJ)
         }), (0, a.jsx)(d.Kx8, {
-          value: S,
+          value: P,
           onChange: U,
-          placeholder: k.intl.string(k.t.na0V4E),
+          placeholder: k.intl.string(k.t.na0V4O),
           maxLength: m.Vu
         })]
       }), (0, a.jsx)("div", {
@@ -163,35 +163,35 @@ function f(e) {
           children: [(0, a.jsx)(d.Heading, {
             variant: "heading-md/semibold",
             color: "header-primary",
-            children: k.intl.string(k.t.CB6dyu)
+            children: k.intl.string(k.t.CB6dys)
           }), (0, a.jsx)(d.Text, {
             variant: "text-xs/medium",
             color: "text-muted",
-            children: k.intl.string(k.t.Kcdk7D)
+            children: k.intl.string(k.t.Kcdk7O)
           })]
         }), (0, a.jsx)("div", {
           children: (0, a.jsx)(h.Z, {
             className: I.uploader,
             imageClassName: I.uploadImage,
-            image: B,
-            makeURL: O,
+            image: W,
+            makeURL: F,
             icon: (0, a.jsx)(d.rG2, {
               size: "md",
               color: "currentColor"
             }),
             hideSize: true,
-            onChange: M,
+            onChange: z,
             iconClassName: I.uploadImageIcon,
-            showIcon: null == B
+            showIcon: null == W
           })
         })]
       })]
     }), (0, a.jsx)(s.Go$, {
-      actions: V,
+      actions: M,
       leading: null != _ ? (0, a.jsx)(d.Avr, {
-        text: k.intl.string(k.t.N86XcP),
+        text: k.intl.string(k.t.N86XcH),
         variant: "critical",
-        onClick: T
+        onClick: E
       }) : true
     })]
   })

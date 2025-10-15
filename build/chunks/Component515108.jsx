@@ -20,10 +20,10 @@ function m(e) {
   } = e;
   return (0, r.jsx)(i.Modal, {
     size: "md",
-    title: u.intl.string(u.t.Hd3D8W),
+    title: u.intl.string(u.t.Hd3D8f),
     actions: [{
       variant: "primary",
-      text: u.intl.string(u.t.cpT0Cq),
+      text: u.intl.string(u.t.cpT0Cg),
       onClick: t
     }],
     onClose: t,
@@ -31,7 +31,7 @@ function m(e) {
     children: (0, r.jsx)(o.Text, {
       variant: "text-md/medium",
       color: "text-secondary",
-      children: u.intl.string(u.t.Ij97SL)
+      children: u.intl.string(u.t.Ij97SE)
     })
   })
 }
@@ -51,23 +51,23 @@ function p(e) {
     onClose: u,
     transitionState: i
   });
-  let v = C || y;
+  let g = C || y;
   return (0, r.jsx)(l.A, {
     questOrQuests: t,
     questContent: j,
     sourceQuestContent: n,
     children: e => (0, r.jsxs)(r.Fragment, {
-      children: [v ? (0, r.jsx)(o.$jN, {
+      children: [g ? (0, r.jsx)(o.$jN, {
         className: d.spinner,
         type: o.$jN.Type.WANDERING_CUBES
       }) : null, (0, r.jsx)("div", {
         ref: e,
         style: {
-          visibility: v ? "hidden" : "visible"
+          visibility: g ? "hidden" : "visible"
         },
         children: (0, r.jsxs)(o.Y0X, {
           "data-migration-pending": true,
-          transitionState: v ? o.Dvm.HIDDEN : i,
+          transitionState: g ? o.Dvm.HIDDEN : i,
           size: o.CgR.DYNAMIC,
           className: d.modal,
           parentComponent: "QuestRewardV2ModalBase",

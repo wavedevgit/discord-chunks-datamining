@@ -76,9 +76,9 @@ let A = () => {
     },
     R = () => {
       (0, Chunk481060.h7j)(e => (0, r.jsx)(c.ConfirmModal, S(I({
-        header: b.intl.string(b.t.aIz1oV),
-        confirmText: b.intl.string(b.t["cY+Oob"]),
-        cancelText: b.intl.string(b.t["ETE/oC"]),
+        header: b.intl.string(b.t.aIz1oa),
+        confirmText: b.intl.string(b.t["cY+Ooa"]),
+        cancelText: b.intl.string(b.t["ETE/oK"]),
         onConfirm: () => f.Z.removeGuildJoinRequest(v.id),
         confirmButtonColor: l.zx.Colors.BRAND
       }, e), {
@@ -105,13 +105,13 @@ let A = () => {
     M = [Chunk342891.notice, Chunk226910.notice];
   switch (w) {
     case Chunk246364.wB.SUBMITTED:
-      D = Chunk388032.intl.string(Chunk388032.t["5iLvSx"]), L = Chunk388032.intl.string(Chunk388032.t.mqtdmQ), x = R;
+      D = Chunk388032.intl.string(Chunk388032.t["5iLvS0"]), L = Chunk388032.intl.string(Chunk388032.t.mqtdmZ), x = R;
       break;
     case Chunk246364.wB.REJECTED:
-      D = Chunk388032.intl.string(Chunk388032.t.lk30cY), L = Chunk388032.intl.string(Chunk388032.t["8RrsHr"]), x = P, M.push(Chunk342891.error);
+      D = Chunk388032.intl.string(Chunk388032.t.lk30cX), L = Chunk388032.intl.string(Chunk388032.t["8RrsHh"]), x = P, M.push(Chunk342891.error);
       break;
     default:
-      D = Chunk388032.intl.string(Chunk388032.t.G5YKXP), L = Chunk388032.intl.string(Chunk388032.t["r8/DT+"]), x = N
+      D = Chunk388032.intl.string(Chunk388032.t.G5YKXF), L = Chunk388032.intl.string(Chunk388032.t["r8/DT0"]), x = N
   }
   return (0, Chunk951288.jsxs)("div", {
     className: a()(...M),

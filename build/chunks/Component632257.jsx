@@ -43,7 +43,7 @@ let y = e => {
             "aria-hidden": true,
             color: i ? true : o.Z.PREMIUM_TIER_2_PINK
           }), (0, r.jsx)(_.Z.Title, {
-            children: E.intl.string(E.t.Ipxkog)
+            children: E.intl.string(E.t.Ipxkoq)
           })]
         })
       })

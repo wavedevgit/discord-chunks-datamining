@@ -30,19 +30,19 @@ function b() {
     a()(null != t, "Missing default trial duartion option"), l(e ? t.value : null)
   }, [Chunk512722, v]), y = (0, Chunk723047.mY)(), N = (0, Chunk313201.Dt)(), E = (0, Chunk313201.Dt)();
   return (0, Chunk951288.jsxs)(Chunk783454.Z, {
-    title: Chunk388032.intl.string(Chunk388032.t["6anton"]),
-    description: Chunk388032.intl.string(Chunk388032.t.urVijS),
+    title: Chunk388032.intl.string(Chunk388032.t["6antoq"]),
+    description: Chunk388032.intl.string(Chunk388032.t.urVijY),
     children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
-      label: Chunk388032.intl.string(Chunk388032.t["+hTmdb"]),
+      label: Chunk388032.intl.string(Chunk388032.t["+hTmdX"]),
       checked: C,
       onChange: e => O(e),
       disabled: y
     }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
-      label: Chunk388032.intl.string(Chunk388032.t.m1KuWd),
-      description: Chunk388032.intl.string(Chunk388032.t.NB9NLF),
+      label: Chunk388032.intl.string(Chunk388032.t.m1KuWV),
+      description: Chunk388032.intl.string(Chunk388032.t.NB9NLC),
       "aria-labelledby": N,
       options: v,
-      placeholder: Chunk388032.intl.string(Chunk388032.t.WZG1BU),
+      placeholder: Chunk388032.intl.string(Chunk388032.t.WZG1BQ),
       value: require,
       onChange: Chunk512722,
       maxVisibleItems: 5,
@@ -50,8 +50,8 @@ function b() {
     }), (0, Chunk951288.jsx)(Chunk481060.LZC, {
       size: 24
     }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
-      label: Chunk388032.intl.string(Chunk388032.t["/JD9oe"]),
-      description: Chunk388032.intl.string(Chunk388032.t.Cg5eBm),
+      label: Chunk388032.intl.string(Chunk388032.t["/JD9oa"]),
+      description: Chunk388032.intl.string(Chunk388032.t.Cg5eBg),
       "aria-labelledby": E,
       options: _,
       value: b,

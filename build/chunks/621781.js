@@ -13,17 +13,17 @@ function r() {
   let t = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale);
   return Chunk647438.useMemo(() => [{
     value: Chunk356659.OT.SECONDS_30,
-    label: Chunk388032.intl.formatToPlainString(Chunk388032.t["bTFv/3"], {
+    label: Chunk388032.intl.formatToPlainString(Chunk388032.t["bTFv//"], {
       count: 30
     })
   }, {
     value: Chunk356659.OT.MINUTES_1,
-    label: Chunk388032.intl.formatToPlainString(Chunk388032.t.ICo9Nk, {
+    label: Chunk388032.intl.formatToPlainString(Chunk388032.t.ICo9Nj, {
       count: 1
     })
   }, {
     value: Chunk356659.OT.MINUTES_2,
-    label: Chunk388032.intl.formatToPlainString(Chunk388032.t.ICo9Nk, {
+    label: Chunk388032.intl.formatToPlainString(Chunk388032.t.ICo9Nj, {
       count: 2
     })
   }], [module])

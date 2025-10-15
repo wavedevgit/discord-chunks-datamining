@@ -1,7 +1,7 @@
 /** Chunk was on 61536 **/
 /** chunk id: 821312, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => b
+  default: () => p
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,51 +14,51 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk882313 = require("./882313.js");
 
-function b(e) {
+function p(e) {
   let {
     guildId: t,
     transitionState: n,
-    onClose: b
+    onClose: p
   } = e, [f, g] = i.useState([]), [_, O] = i.useState(), h = [{
-    label: d.intl.string(d.t["//3pvi"]),
+    label: d.intl.string(d.t["//3pvr"]),
     value: c.C2.DM_SPAM
   }, {
-    label: d.intl.string(d.t.SdVsip),
+    label: d.intl.string(d.t.SdVsio),
     value: c.C2.MENTION_SPAM
   }, {
-    label: d.intl.string(d.t.uTiSVL),
+    label: d.intl.string(d.t.uTiSVF),
     value: c.C2.CHANNEL_SPAM
   }, {
-    label: d.intl.string(d.t.GQczU8),
+    label: d.intl.string(d.t.GQczU1),
     value: c.C2.SUS_NEW_MEMBERS
   }, {
-    label: d.intl.string(d.t.AAgqy3),
+    label: d.intl.string(d.t.AAgqy8),
     value: c.C2.CHANGING_SETTINGS
   }, {
-    label: d.intl.string(d.t.ryPKb7),
+    label: d.intl.string(d.t.ryPKb2),
     value: c.C2.OTHER
   }], y = i.useCallback(e => {
     g(e)
   }, []);
-  return null == t ? (b(), null) : (0, r.jsx)(l.Modal, {
+  return null == t ? (p(), null) : (0, r.jsx)(l.Modal, {
     transitionState: n,
     title: d.intl.string(d.t.f5hd9P),
     actions: [{
-      text: d.intl.string(d.t["ETE/oC"]),
-      onClick: b,
+      text: d.intl.string(d.t["ETE/oK"]),
+      onClick: p,
       variant: "secondary"
     }, {
-      text: d.intl.string(d.t.nAt0rE),
+      text: d.intl.string(d.t.nAt0rK),
       onClick: function() {
         (0, s.yw)(u.rMx.GUILD_RAID_LOCKDOWN_FEEDBACK, {
           raid_lockdown_feedback_type: f,
           raid_lockdown_feedback_other_reason: _,
           guild_id: t
-        }), b()
+        }), p()
       },
       disabled: 0 === f.length
     }],
-    onClose: b,
+    onClose: p,
     children: (0, r.jsxs)(o.Kqy, {
       gap: 8,
       children: [(0, r.jsx)(a.c, {
@@ -66,9 +66,9 @@ function b(e) {
         onChange: y,
         options: h
       }), f.includes(c.C2.OTHER) && (0, r.jsx)("div", {
-        className: p.textboxContainer,
+        className: b.textboxContainer,
         children: (0, r.jsx)(o.Kx8, {
-          placeholder: d.intl.string(d.t["PAM+JR"]),
+          placeholder: d.intl.string(d.t["PAM+JS"]),
           onChange: O,
           value: _,
           autoFocus: true

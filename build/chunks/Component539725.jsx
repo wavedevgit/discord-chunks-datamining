@@ -16,7 +16,7 @@ function u(e) {
     onClose: n
   } = e;
   return (0, r.jsx)(i.Modal, {
-    title: s.intl.string(s.t.w5uwoI),
+    title: s.intl.string(s.t.w5uwoK),
     transitionState: t,
     onClose: n,
     actions: true,

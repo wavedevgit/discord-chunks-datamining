@@ -114,7 +114,7 @@ function D(e) {
         }), (0, r.jsx)(d.Text, {
           variant: "text-sm/semibold",
           color: "interactive-normal",
-          children: w.intl.string(w.t["13/7kX"])
+          children: w.intl.string(w.t["13/7kZ"])
         })]
       })
     }), (0, r.jsx)("div", {
@@ -143,7 +143,7 @@ function A(e) {
       }), (0, r.jsx)(d.Text, {
         color: t === O.PG.SAFETY_CHECK ? "text-brand" : "text-muted",
         variant: "text-xs/medium",
-        children: w.intl.format(w.t.Me5Mma, {
+        children: w.intl.format(w.t.Me5MmZ, {
           stepNumber: 1
         })
       })]
@@ -157,9 +157,9 @@ function A(e) {
       }), (0, r.jsx)(d.Text, {
         color: t === O.PG.DEFAULT_CHANNELS ? "text-brand" : "text-muted",
         variant: "text-xs/medium",
-        children: c ? w.intl.formatToPlainString(w.t["8mGhOy"], {
+        children: c ? w.intl.formatToPlainString(w.t["8mGhOz"], {
           stepNumber: 2
-        }) : w.intl.formatToPlainString(w.t.vxpuTd, {
+        }) : w.intl.formatToPlainString(w.t.vxpuTU, {
           stepNumber: 2
         })
       })]
@@ -173,7 +173,7 @@ function A(e) {
       }), (0, r.jsx)(d.Text, {
         color: t === O.PG.CUSTOMIZATION_QUESTIONS ? "text-brand" : "text-muted",
         variant: "text-xs/medium",
-        children: c ? w.intl.formatToPlainString(w.t.vb6J5g, {
+        children: c ? w.intl.formatToPlainString(w.t.vb6J5u, {
           stepNumber: 3
         }) : w.intl.formatToPlainString(w.t.ZpdQqK, {
           stepNumber: 3
@@ -189,7 +189,7 @@ function A(e) {
       }), (0, r.jsx)(d.Text, {
         color: t === O.PG.HOME_SETTINGS ? "text-brand" : "text-muted",
         variant: "text-xs/medium",
-        children: w.intl.format(w.t.KVOukh, {
+        children: w.intl.format(w.t.KVOukp, {
           stepNumber: 4
         })
       })]
@@ -202,7 +202,7 @@ function A(e) {
       }), (0, r.jsx)(d.Text, {
         color: t === O.PG.REVIEW ? "text-brand" : "text-muted",
         variant: "text-xs/medium",
-        children: w.intl.format(w.t.oVzkiA, {
+        children: w.intl.format(w.t.oVzkiI, {
           stepNumber: 3 + +!!i + 1
         })
       })]

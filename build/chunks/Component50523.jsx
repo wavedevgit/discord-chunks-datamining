@@ -46,7 +46,7 @@ function v(e) {
     return e.length > 0 ? e[0].compositeInstanceId : true
   }), j = (0, i.e7)([E.ZP], () => E.ZP.getCurrentEmbeddedActivity()), k = (0, b.Z)(), U = x === y.jy.CAN_LAUNCH, G = null != M && (null == j ? true : j.compositeInstanceId) === M, B = null != T ? T : S.customId, Z = [];
   U && Z.push({
-    label: null == M ? O.intl.string(O.t.RscU7I) : G ? O.intl.string(O.t.DPfdsq) : O.intl.string(O.t.sqe0hj),
+    label: null == M ? O.intl.string(O.t.RscU7O) : G ? O.intl.string(O.t.DPfdsr) : O.intl.string(O.t.sqe0ho),
     trackingArea: f.j_.PLAY,
     onClick() {
       (0, g.G6)({
@@ -61,7 +61,7 @@ function v(e) {
     },
     disabled: G
   }), w && !U && Z.push({
-    label: O.intl.string(O.t.JeK1Wg),
+    label: O.intl.string(O.t.JeK1Wl),
     trackingArea: f.j_.PLAY,
     onClick() {
       (0, s.W)({

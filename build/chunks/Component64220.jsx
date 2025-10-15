@@ -29,7 +29,7 @@ function c(e) {
     children: [(0, a.jsx)(i.Text, {
       variant: "text-sm/medium",
       color: "always-white",
-      children: o.intl.string(o.t.fJNqJt)
+      children: o.intl.string(o.t.fJNqJi)
     }), (0, a.jsx)("div", {
       className: s.pointer
     })]

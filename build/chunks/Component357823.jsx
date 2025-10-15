@@ -27,35 +27,35 @@ let C = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     onSelect: a,
     onInteraction: d,
     context: g
-  } = e, C = n.id, M = t.isNonUserBot(), O = t.id === E.default.getId(), S = (0, _.Z)(t), b = (0, s.Z)(t, u, C), I = (0, f.Y)({
-    isOwnSettings: O,
+  } = e, C = n.id, M = t.isNonUserBot(), S = t.id === E.default.getId(), O = (0, _.Z)(t), b = (0, s.Z)(t, u, C), I = (0, A.Y)({
+    isOwnSettings: S,
     userId: t.id,
     channelId: C,
     guildId: u,
     context: g
-  }), [Z, T] = (0, f.E)(t, C, u), h = (0, A.Z)(t, u, C), N = (0, o.Z)({
+  }), [Z, T] = (0, A.E)(t, C, u), h = (0, f.Z)(t, u, C), N = (0, o.Z)({
     id: t.id,
-    label: v.intl.string(v.t["/AXYnE"])
-  }), p = (0, c.Z)(t.id, n);
+    label: v.intl.string(v.t["/AXYnJ"])
+  }), k = (0, c.Z)(t.id, n);
   return (0, i.jsx)(l.v2r, {
     navId: "user-context",
     onClose: r.Zy,
-    "aria-label": v.intl.string(v.t.liqwPJ),
+    "aria-label": v.intl.string(v.t.liqwPD),
     onSelect: a,
     onInteraction: d,
     variant: "fixed",
     children: !M && (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsxs)(l.kSQ, {
-        children: [S, b]
-      }), p, I, !O && (0, i.jsx)(l.kSQ, {
+        children: [O, b]
+      }), k, I, !S && (0, i.jsx)(l.kSQ, {
         children: (0, i.jsxs)(l.sNh, {
           id: "more-options",
-          label: v.intl.string(v.t.PdRCRg),
+          label: v.intl.string(v.t.PdRCRk),
           children: [Z, (0, i.jsx)(l.kSQ, {
             children: h
           }), T]
         })
-      }), O && (0, i.jsx)(l.kSQ, {
+      }), S && (0, i.jsx)(l.kSQ, {
         children: N
       })]
     })

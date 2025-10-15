@@ -52,7 +52,7 @@ function m(e) {
       }),
       icon: a.idN,
       tooltipPosition: g.has(b) ? "left" : true,
-      tooltip: h.intl.string(h.t["cqEoj/"])
+      tooltip: h.intl.string(h.t.cqEoj4)
     }, n))
   })
 }

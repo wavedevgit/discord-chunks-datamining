@@ -127,7 +127,7 @@ function K(e) {
       }), (0, r.jsx)("div", {
         className: k.overflowRolesPopoutHeaderText,
         id: a,
-        children: j.intl.format(j.t.PCs0oo, {
+        children: j.intl.format(j.t.PCs0oq, {
           numRoles: t.length
         })
       })]
@@ -168,7 +168,7 @@ let z = Chunk647438.forwardRef(function(e, t) {
         } = await n.e("5396").then(n.bind(n, 731646));
         return t => (0, r.jsx)(e, Z(G({}, t), {
           id: E.id,
-          label: j.intl.string(j.t.sMsaLg)
+          label: j.intl.string(j.t.sMsaLi)
         }))
       })
     }, [E.id]),
@@ -308,7 +308,7 @@ function X(e) {
         ref: t
       }, e), {
         className: o()(k.addButton, l, c),
-        "aria-label": j.intl.string(j.t.e3Wlyw),
+        "aria-label": j.intl.string(j.t.e3Wly8),
         type: "button"
       }), f), {
         children: (0, r.jsx)(h.qJs, {
@@ -405,7 +405,7 @@ function Q(e) {
         } = e, i = F(e, ["ref"]);
         return (0, r.jsxs)("div", Z(G({
           className: o()(k.root, h),
-          "aria-label": j.intl.formatToPlainString(j.t.PCs0oo, {
+          "aria-label": j.intl.formatToPlainString(j.t.PCs0oq, {
             numRoles: s.length
           }),
           ref: n

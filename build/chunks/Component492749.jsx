@@ -109,7 +109,7 @@ function h(e) {
       addedGuilds: m,
       loading: p
     } = e,
-    [h, _] = l.useState(0);
+    [h, b] = l.useState(0);
   return t = p ? (0, i.jsx)("div", {
     className: C.emptyContainer,
     children: (0, i.jsx)(c.$jN, {})
@@ -123,7 +123,7 @@ function h(e) {
       className: C.emptyText,
       color: "header-secondary",
       variant: "text-md/normal",
-      children: x.intl.string(x.t.liuEhd)
+      children: x.intl.string(x.t.liuEhY)
     })]
   }) : u.map(e => (0, i.jsx)(f, {
     guild: e,
@@ -138,22 +138,22 @@ function h(e) {
       className: C.emptyText,
       color: "header-secondary",
       variant: "text-md/normal",
-      children: x.intl.string(x.t.WJLuKK)
+      children: x.intl.string(x.t.WJLuKC)
     })]
   }) : m.map(e => (0, i.jsx)(j, {
     directoryChannelId: n,
     guild: e
   }, e.id)), (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(a.xBx, {
-      title: x.intl.formatToPlainString(x.t["9SKJdF"], {
+      title: x.intl.formatToPlainString(x.t["9SKJdH"], {
         guildName: d
       }),
-      subtitle: x.intl.string(x.t.pYFZ9p)
+      subtitle: x.intl.string(x.t.pYFZ9v)
     }), (0, i.jsx)(a.fef, {
       controls: (0, i.jsxs)(c.njP, {
         className: C.tabBar,
         selectedItem: h,
-        onItemSelect: _,
+        onItemSelect: b,
         type: "top",
         look: "brand",
         children: [(0, i.jsx)(c.njP.Item, {
@@ -161,13 +161,13 @@ function h(e) {
             [C.selectedTab]: 0 === h
           }),
           id: 0,
-          children: x.intl.string(x.t.FTe8HS)
+          children: x.intl.string(x.t.FTe8HR)
         }), (0, i.jsx)(c.njP.Item, {
           className: r()(C.tabBarItem, {
             [C.selectedTab]: 1 === h
           }),
           id: 1,
-          children: x.intl.string(x.t.epOumr)
+          children: x.intl.string(x.t.epOump)
         })]
       }),
       children: (0, i.jsx)(c.Ttm, {
@@ -181,7 +181,7 @@ function h(e) {
       children: [(0, i.jsx)(c.Heading, {
         variant: "heading-lg/semibold",
         className: C.footerTitle,
-        children: x.intl.string(x.t.pgCZRP)
+        children: x.intl.string(x.t.pgCZRE)
       }), (0, i.jsx)(a.Go$, {
         actionsFullWidth: true,
         actions: [{

@@ -882,7 +882,7 @@ function nn(e) {
 
 function nr(e) {
   let t = e2;
-  if (e2 = t7(e, eA.intl.string(eA.t.xlUg0v)), !p().isEqual(e2, t)) {
+  if (e2 = t7(e, eA.intl.string(eA.t.xlUg0t)), !p().isEqual(e2, t)) {
     let e = tj(),
       n = t9(e2, e.outputDeviceId);
     ez.setAudioOutputDevice(n);
@@ -895,7 +895,7 @@ function nr(e) {
 function ni(e) {
   to = e.length > 0;
   let t = e3;
-  if (e3 = t7(e, eA.intl.string(eA.t.WKWARY)), e7 && !p().isEqual(e3, t)) {
+  if (e3 = t7(e, eA.intl.string(eA.t.WKWARU)), e7 && !p().isEqual(e3, t)) {
     var n;
     let e = true !== e3[e9],
       r = e9 === eS.w5 && (null == (n = t[eS.w5]) ? true : n.disabled);

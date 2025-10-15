@@ -83,6 +83,6 @@ function h(e) {
     isTrayButton: false,
     onClick: d,
     iconComponent: a.Dio,
-    label: l.intl.string(l.t.cpT0Cq)
+    label: l.intl.string(l.t.cpT0Cg)
   }))
 }

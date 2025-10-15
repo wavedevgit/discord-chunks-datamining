@@ -47,7 +47,7 @@ function _(e) {
     }), (0, r.jsx)(c.Text, {
       variant: "text-xs/semibold",
       className: m.barText,
-      children: g.intl.format(g.t["fDlr+F"], {
+      children: g.intl.format(g.t["fDlr+P"], {
         count: b.length
       })
     }), (0, r.jsx)(d.Z, {
@@ -113,7 +113,7 @@ function O(e) {
           variant: "text-xs/semibold",
           color: "interactive-normal",
           className: m.barText,
-          children: g.intl.string(g.t.FCRiT3)
+          children: g.intl.string(g.t.FCRiT0)
         })]
       }) : v === f.x.MENTIONS ? (0, r.jsx)(c.P3F, {
         className: o()(m.bar, m.mentionsBar),
@@ -122,7 +122,7 @@ function O(e) {
           variant: "text-xs/semibold",
           color: "status-danger-text",
           className: m.barText,
-          children: g.intl.format(g.t.EQcLyp, {
+          children: g.intl.format(g.t.EQcLys, {
             count: j
           })
         })

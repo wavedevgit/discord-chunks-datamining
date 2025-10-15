@@ -40,16 +40,16 @@ let s = e => {
     }
     return e
   }({
-    header: p.intl.string(p.t.eZFTbu),
-    confirmText: p.intl.string(p.t.p89ACt),
-    cancelText: p.intl.string(p.t.gm1Vej),
+    header: p.intl.string(p.t.eZFTbm),
+    confirmText: p.intl.string(p.t.p89ACg),
+    cancelText: p.intl.string(p.t.gm1Ven),
     onConfirm: u,
     onCancel: b,
     confirmButtonColor: o.zx.Colors.BRAND
   }, s), r = r = {
     children: (0, n.jsx)(c.Text, {
       variant: "text-md/normal",
-      children: p.intl.format(p.t.oZBduD, O)
+      children: p.intl.format(p.t.oZBduL, O)
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
     var r = Object.keys(e);

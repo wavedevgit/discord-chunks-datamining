@@ -60,9 +60,9 @@ let C = {
       userId: null == t ? true : t.id,
       guildId: n,
       pendingDisplayNameStyles: M
-    }), X = i.useMemo(() => null != a ? I.intl.formatToPlainString(I.t.YJig7C, {
+    }), X = i.useMemo(() => null != a ? I.intl.formatToPlainString(I.t.YJig7O, {
       a11y_text: a.label
-    }) : I.intl.string(I.t.SZeUdR), [a]);
+    }) : I.intl.string(I.t.SZeUdX), [a]);
     return (0, r.jsx)("div", {
       role: "img",
       "aria-label": X,

@@ -35,7 +35,7 @@ function h() {
 function m() {
   if (!h()) return;
   let e = Chunk979651.Z.getCurrentClientVoiceChannelId(null);
-  null != module && (Chunk904245.Z.sendBotMessage(module, Chunk388032.intl.formatToPlainString(Chunk388032.t.XYof5G, {
+  null != module && (Chunk904245.Z.sendBotMessage(module, Chunk388032.intl.formatToPlainString(Chunk388032.t.XYof5O, {
     number: _
   })), Chunk287734.default.selectVoiceChannel(null))
 }

@@ -23,7 +23,7 @@ function a(e) {
     children: a.getAnyErrorMessage()
   });
   let u = null;
-  return d ? u = l.intl.string(l.t.OrkTBn) : null != o ? u = o : null != c && (u = c, t = l.intl.string(l.t["YKw/NQ"])), null != u ? (0, r.jsx)(i.Wn, {
+  return d ? u = l.intl.string(l.t.OrkTBg) : null != o ? u = o : null != c && (u = c, t = l.intl.string(l.t["YKw/NT"])), null != u ? (0, r.jsx)(i.Wn, {
     messageType: i.QYI.WARNING,
     action: (0, r.jsx)(i.zxk, {
       variant: "overlay-secondary",

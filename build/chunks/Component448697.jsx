@@ -70,11 +70,11 @@ function f() {
         children: [(0, r.jsx)(s.Text, {
           variant: "text-sm/semibold",
           color: "text-primary",
-          children: p.intl.format(p.t["r+uZYZ"], {
+          children: p.intl.format(p.t["r+uZYW"], {
             progress: t
           })
         }), (0, r.jsx)(s.Avr, {
-          text: p.intl.string(p.t["ETE/oC"]),
+          text: p.intl.string(p.t["ETE/oK"]),
           onClick: d.ge,
           variant: "always-white",
           textVariant: "text-sm/normal"

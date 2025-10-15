@@ -24,11 +24,11 @@ function u(e) {
   let f = u ? {
     color: i.Tt.GREEN,
     look: i.iL.FILLED,
-    text: c.intl.string(c.t.cYzxGn)
+    text: c.intl.string(c.t.cYzxGh)
   } : true;
   return (0, r.jsx)(l.Z, {
-    header: c.intl.string(c.t.zT9SxY),
-    text: c.intl.formatToPlainString(c.t.OKqEAU, {
+    header: c.intl.string(c.t.zT9Sxc),
+    text: c.intl.formatToPlainString(c.t.OKqEAQ, {
       level: m,
       numAdditional: (0, a.Je)(m)
     }),

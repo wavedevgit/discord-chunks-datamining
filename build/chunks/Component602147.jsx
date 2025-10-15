@@ -64,7 +64,7 @@ let m = Chunk647438.forwardRef(function(e, t) {
       O(), true !== m && m()
     },
     selected: n,
-    tooltip: g.intl.string(g.t["4nEZLk"]),
+    tooltip: g.intl.string(g.t["4nEZLi"]),
     icon: o.Jmo
   })
 })

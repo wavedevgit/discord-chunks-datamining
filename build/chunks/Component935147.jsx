@@ -135,9 +135,9 @@ function W(e) {
   let ec = (null == (n = (0, m.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === U.Si.TIER_2,
     eu = (0, h.Ng)(),
     ed = (0, h.Wp)(eu, U.Si.TIER_2),
-    ef = () => K ? B.intl.string(B.t.AfRWI8) : ed ? B.intl.formatToPlainString(B.t.bkQ4bH, {
+    ef = () => K ? B.intl.string(B.t.AfRWIy) : ed ? B.intl.formatToPlainString(B.t.bkQ4bG, {
       percent: null == eu ? true : eu.discount.amount
-    }) : B.intl.string(B.t.pj0XBN);
+    }) : B.intl.string(B.t.pj0XBA);
   return W ? (0, r.jsx)(c.Gt, {
     value: ea,
     children: (0, r.jsxs)(D.Z, {
@@ -153,7 +153,7 @@ function W(e) {
             size: "md",
             color: "currentColor",
             className: Z.premiumIcon
-          }), B.intl.string(B.t.gMlDNd)]
+          }), B.intl.string(B.t.gMlDNT)]
         }),
         profilePreview: (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(E.Z, {
@@ -168,11 +168,11 @@ function W(e) {
           children: [(0, r.jsxs)("div", {
             children: [(0, r.jsx)(o.Heading, {
               variant: "heading-xl/extrabold",
-              children: B.intl.string(B.t["2zGdAW"])
+              children: B.intl.string(B.t["2zGdAQ"])
             }), (0, r.jsx)(o.Text, {
               className: Z.description,
               variant: "text-sm/normal",
-              children: B.intl.string(B.t.xeEC20)
+              children: B.intl.string(B.t.xeEC29)
             })]
           }), (0, r.jsx)(M.Z, {
             className: Z.customizationSection,
@@ -196,8 +196,8 @@ function W(e) {
             isTryItOutFlow: true,
             onAvatarChange: I.c_,
             showRemoveAvatarButton: false,
-            changeAvatarButtonText: B.intl.string(B.t["7z0D1c"]),
-            sectionTitle: B.intl.string(B.t.vtFfPX)
+            changeAvatarButtonText: B.intl.string(B.t["7z0D1d"]),
+            sectionTitle: B.intl.string(B.t.vtFfPT)
           }), (0, r.jsx)(R.Z, {
             isTryItOutFlow: true,
             className: Z.customizationSection,
@@ -211,17 +211,17 @@ function W(e) {
             isTryItOutFlow: true,
             initialSelectedEffect: et,
             user: F,
-            sectionTitle: B.intl.string(B.t.wR5wOo)
+            sectionTitle: B.intl.string(B.t.wR5wOj)
           }, "effect"), !ec && (0, r.jsx)(o.Text, {
             variant: "text-sm/normal",
-            children: B.intl.string(B.t["smo74/"])
+            children: B.intl.string(B.t["smo74+"])
           })]
         })
       }), !ec && (0, r.jsx)(b.p, {
         onSubscribeModalClose: el,
         className: Z.floatingUpsell,
         showUpsell: true,
-        text: B.intl.format(B.t.TmfgI2, {
+        text: B.intl.format(B.t.TmfgIy, {
           onClick: () => {
             (0, O.y)({
               analyticsSource: eo,

@@ -91,7 +91,7 @@ function B(e) {
       variant: "text-xs/normal",
       className: M.count,
       color: i,
-      children: x.intl.format(x.t["LC+S+m"], {
+      children: x.intl.format(x.t["LC+S+v"], {
         membersOnline: n
       })
     })]
@@ -103,7 +103,7 @@ function B(e) {
       variant: "text-xs/normal",
       className: M.count,
       color: i,
-      children: x.intl.format(x.t.zRl6XR, {
+      children: x.intl.format(x.t.zRl6XV, {
         count: t
       })
     })]
@@ -134,7 +134,7 @@ function Z(e) {
         children: (0, r.jsx)(u.Text, {
           variant: "text-xs/normal",
           color: a,
-          children: x.intl.format(x.t["dc+LW4"], {
+          children: x.intl.format(x.t["dc+LW1"], {
             channelName: t.name,
             serverName: n.name
           })
@@ -150,7 +150,7 @@ function Z(e) {
       children: (0, r.jsx)(u.Text, {
         variant: "text-xs/normal",
         color: a,
-        children: x.intl.format(x.t.u0vaDE, {
+        children: x.intl.format(x.t.u0vaDA, {
           guildName: n.name
         })
       })
@@ -219,9 +219,9 @@ function F(e) {
     if (null == s.guild) return (0, r.jsx)(P.Z, {});
     v = (0, R.Qs)(s.guild)
   }
-  a = H ? D ? x.intl.string(x.t.DPfdsq) : M ? x.intl.string(x.t.sqe0hj) : x.intl.string(x.t.RscU7I) : x.intl.string(x.t["2BP08E"]);
+  a = H ? D ? x.intl.string(x.t.DPfdsr) : M ? x.intl.string(x.t.sqe0ho) : x.intl.string(x.t.RscU7O) : x.intl.string(x.t["2BP08P"]);
   let Y = H && !k || H && D;
-  return (k || (o = x.intl.string(x.t.hHGrWz)), null == s.code || "" === s.code || null == N) ? null : (0, r.jsx)(p.Gt, {
+  return (k || (o = x.intl.string(x.t.hHGrW1)), null == s.code || "" === s.code || null == N) ? null : (0, r.jsx)(p.Gt, {
     value: U,
     children: (0, r.jsx)(V, {
       app: N,
@@ -277,7 +277,7 @@ function V(e) {
   }], [_, a, f, p, y, O]);
   return (0, r.jsx)(h.W, G(k({
     header: t.name,
-    title: x.intl.string(x.t["7vb6nw"]),
+    title: x.intl.string(x.t["7vb6n5"]),
     iconSrc: S
   }, C), {
     onClickBanner: A,
@@ -291,7 +291,7 @@ function V(e) {
       }), a ? R > 0 && (0, r.jsx)(m.K, {
         activityUsers: n,
         guildId: s.id,
-        activityText: x.intl.formatToPlainString(x.t.yJj035, {
+        activityText: x.intl.formatToPlainString(x.t.yJj039, {
           count: R
         })
       }) : (0, r.jsx)(B, {

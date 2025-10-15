@@ -267,7 +267,7 @@ let P = e => {
         className: c,
         variant: "text-sm/normal",
         color: "header-secondary",
-        children: m.intl.format(m.t["LC+S+m"], {
+        children: m.intl.format(m.t["LC+S+v"], {
           membersOnline: n
         })
       })]
@@ -283,7 +283,7 @@ let P = e => {
           className: c,
           variant: "text-sm/normal",
           color: "header-secondary",
-          children: m.intl.format(m.t.zRl6XR, {
+          children: m.intl.format(m.t.zRl6XV, {
             count: i
           })
         })]
@@ -300,7 +300,7 @@ let P = e => {
         tag: "span",
         variant: "text-md/normal",
         color: "header-secondary",
-        children: m.intl.string(m.t["/8WWvE"])
+        children: m.intl.string(m.t["/8WWvL"])
       }), (0, r.jsx)(C, {
         className: g.joiningAsAvatar,
         src: t.getAvatarURL(true, 24),
@@ -323,12 +323,12 @@ let P = e => {
       className: t,
       children: [(0, r.jsx)(o.zx, {
         onClick: () => window.open((0, _.t3)()),
-        children: m.intl.format(m.t.JoS1i3, {
+        children: m.intl.format(m.t.JoS1i4, {
           platform: (0, _.DW)()
         })
       }), (0, r.jsx)(D, {
         className: g.downloadButtonSubtext,
-        children: m.intl.format(m.t.wO1VBk, {
+        children: m.intl.format(m.t.wO1VBg, {
           supportedBrowserURL: p.Z.getArticleURL(h.BhN.SUPPORTED_BROWSERS)
         })
       })]

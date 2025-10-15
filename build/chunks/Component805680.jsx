@@ -273,7 +273,7 @@ function Q(e) {
           }),
           ref: en,
           role: "dialog",
-          "aria-label": B.intl.string(B.t.Utlwvi),
+          "aria-label": B.intl.string(B.t.Utlwvr),
           children: n ? (0, r.jsxs)("div", {
             className: Z.drawerSizingWrapper,
             style: {
@@ -294,14 +294,14 @@ function Q(e) {
                 children: (0, r.jsxs)("div", {
                   className: Z.navList,
                   role: "tablist",
-                  "aria-label": B.intl.string(B.t["2j4Vgd"]),
+                  "aria-label": B.intl.string(B.t["2j4VgY"]),
                   children: [eg ? (0, r.jsx)(q, {
                     id: k._3,
                     "aria-controls": k.vO,
                     "aria-selected": el === x.X1.GIF,
                     isActive: el === x.X1.GIF,
                     viewType: x.X1.GIF,
-                    children: B.intl.string(B.t["6gUTsS"])
+                    children: B.intl.string(B.t["6gUTsb"])
                   }) : null, eE ? (0, r.jsx)(q, {
                     id: G.ED,
                     "aria-controls": G.nZ,
@@ -311,7 +311,7 @@ function Q(e) {
                     viewType: x.X1.STICKER,
                     children: (0, r.jsx)("div", {
                       className: Z.stickersNavItem,
-                      children: B.intl.string(B.t.nf1s3u)
+                      children: B.intl.string(B.t.nf1s3t)
                     })
                   }) : null, (0, r.jsx)(q, {
                     id: k.td,
@@ -319,7 +319,7 @@ function Q(e) {
                     "aria-selected": el === x.X1.EMOJI,
                     isActive: el === x.X1.EMOJI,
                     viewType: x.X1.EMOJI,
-                    children: B.intl.string(B.t.Xu3wE3)
+                    children: B.intl.string(B.t.Xu3wEx)
                   }), e_ && eP && (0, r.jsx)(q, {
                     id: k.Hr,
                     "aria-controls": k.gV,
@@ -328,7 +328,7 @@ function Q(e) {
                     viewType: x.X1.SOUNDBOARD,
                     children: (0, r.jsxs)("div", {
                       className: Z.soundmojiLabelContainer,
-                      children: [B.intl.string(B.t.EHlAMc), null != eT && (0, r.jsx)(p.IGR, {
+                      children: [B.intl.string(B.t.EHlAMT), null != eT && (0, r.jsx)(p.IGR, {
                         text: B.intl.string(B.t.y2b7CA)
                       })]
                     })

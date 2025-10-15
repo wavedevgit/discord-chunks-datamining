@@ -1,7 +1,7 @@
 /** Chunk was on 86513 **/
 /** chunk id: 519801, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => v
 }), require("./997841.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,9 +20,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk750143 = require("./750143.js"),
   Chunk388032 = require("./388032.jsx");
 
-function j(e) {
+function v(e) {
   var t, n;
-  let j, v, {
+  let v, j, {
       showBenefits: y,
       handleClose: O,
       onSubscriptionConfirmation: C
@@ -31,63 +31,63 @@ function j(e) {
       updatedSubscription: S,
       readySlideId: P,
       selectedSku: N,
-      selectedStoreListing: E,
-      application: T
+      selectedStoreListing: T,
+      application: k
     } = (0, d.JL)(),
-    k = (0, l.Z)(g.i),
+    E = (0, l.Z)(g.i),
     {
       createMultipleConfettiAt: _
-    } = i.useContext(o.h),
+    } = r.useContext(o.h),
     w = null != (t = null == N ? true : N.name) ? t : "",
     Z = () => {
       O(), null == C || C()
     },
-    A = P === m.h8.CONFIRM,
-    D = (0, s.KW)(null != (n = null == N ? true : N.flags) ? n : 0),
-    I = null != E && E.benefits.length > 0 ? x.intl.formatToPlainString(x.t["+IQQVM"], {
-      benefitCount: E.benefits.length
+    D = P === m.h8.CONFIRM,
+    A = (0, s.KW)(null != (n = null == N ? true : N.flags) ? n : 0),
+    I = null != T && T.benefits.length > 0 ? x.intl.formatToPlainString(x.t["+IQQVF"], {
+      benefitCount: T.benefits.length
     }) : null;
-  return y ? k ? j = (0, r.jsx)(u.h, {
-    title: x.intl.format(x.t.ea6tZr, {
+  return y ? E ? v = (0, i.jsx)(u.h, {
+    title: x.intl.format(x.t.ea6tZm, {
       tierName: w
     }),
-    subtitle: null != E && E.benefits.length > 0 ? x.intl.formatToPlainString(x.t.HNepft, {
+    subtitle: null != T && T.benefits.length > 0 ? x.intl.formatToPlainString(x.t.HNepfn, {
       benefits: I
     }) : null,
     onConfirm: Z,
-    confirmCta: x.intl.string(x.t.nlkywz)
-  }) : (j = null != E && null != T ? (0, r.jsx)(c.Oc, {
-    icon: E.thumbnail,
-    storeListingBenefits: E.benefits,
-    application: T,
-    title: x.intl.format(x.t["Q+qktS"], {
+    confirmCta: x.intl.string(x.t.nlkyw8)
+  }) : (v = null != T && null != k ? (0, i.jsx)(c.Oc, {
+    icon: T.thumbnail,
+    storeListingBenefits: T.benefits,
+    application: k,
+    title: x.intl.format(x.t["Q+qktb"], {
       tier: w
     }),
-    subtitle: x.intl.string(x.t.ECKxXU),
-    description: D ? x.intl.format(x.t["MAtQk/"], {
-      applicationName: null == T ? true : T.name
-    }) : x.intl.format(x.t.vHkMF4, {
+    subtitle: x.intl.string(x.t.ECKxXV),
+    description: A ? x.intl.format(x.t.MAtQk5, {
+      applicationName: null == k ? true : k.name
+    }) : x.intl.format(x.t.vHkMFx, {
       tier: w
     })
-  }) : (0, r.jsx)(f.Z, {}), v = (0, r.jsx)(p.Z, {
+  }) : (0, i.jsx)(f.Z, {}), j = (0, i.jsx)(p.Z, {
     onPrimary: Z,
     primaryCTA: p.g.CONTINUE,
-    primaryText: x.intl.string(x.t["JtWl+a"])
-  })) : j = k ? (0, r.jsx)(u.m, {
+    primaryText: x.intl.string(x.t["JtWl+f"])
+  })) : v = E ? (0, i.jsx)(u.m, {
     tierName: w,
     onConfirm: Z,
     subscription: S
-  }) : (0, r.jsx)(c.xe, {
+  }) : (0, i.jsx)(c.xe, {
     tierName: w,
     onConfirm: Z,
     subscription: S
-  }), i.useEffect(() => {
-    a.Z.useReducedMotion && A && _(window.innerWidth / 2, window.innerHeight / 2)
-  }, [_, A]), (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(b.C3, {
-      children: [(0, r.jsx)(h.Z, {}), j]
-    }), null != v && (0, r.jsx)(b.O3, {
-      children: v
+  }), r.useEffect(() => {
+    a.Z.useReducedMotion && D && _(window.innerWidth / 2, window.innerHeight / 2)
+  }, [_, D]), (0, i.jsxs)(i.Fragment, {
+    children: [(0, i.jsxs)(b.C3, {
+      children: [(0, i.jsx)(h.Z, {}), v]
+    }), null != j && (0, i.jsx)(b.O3, {
+      children: j
     })]
   })
 }

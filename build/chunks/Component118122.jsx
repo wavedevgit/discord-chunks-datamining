@@ -86,7 +86,7 @@ function C(e) {
     },
     selected: S,
     onContextMenu: x,
-    tooltip: y.intl.string(y.t.l5WIbf),
+    tooltip: y.intl.string(y.t.l5WIbW),
     icon: o.oFk
   });
   return t ? P : (0, r.jsx)("div", {
@@ -96,7 +96,7 @@ function C(e) {
       inlineSpecs: j,
       position: "right",
       children: [P, null != n && (0, r.jsx)(m.ZP, {
-        name: y.intl.string(y.t["45xjM5"]),
+        name: y.intl.string(y.t["45xjMz"]),
         targetNode: n,
         below: true,
         noCombine: true

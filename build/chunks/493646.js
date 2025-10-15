@@ -10,15 +10,15 @@ var Chunk979007 = require("./979007.js"),
 function i(e) {
   switch (e.id) {
     case 4:
-      return a.intl.string(a.t["3m9Egb"]);
+      return a.intl.string(a.t["3m9EgY"]);
     case 6:
-      return a.intl.string(a.t.VJRr3Y);
+      return a.intl.string(a.t.VJRr3d);
     case 8:
-      return a.intl.string(a.t.Uv7mFd);
+      return a.intl.string(a.t.Uv7mFR);
     case 9:
-      return a.intl.string(a.t.TEK9Ax);
+      return a.intl.string(a.t.TEK9Aw);
     case 10:
-      return a.intl.string(a.t.lfBt2T)
+      return a.intl.string(a.t.lfBt2d)
   }
   return ""
 }
@@ -26,6 +26,6 @@ function i(e) {
 function l() {
   return {
     id: Chunk979007.GLOBAL_DISCOVERY_APPS_FEATURED_CATEGORY_ID,
-    name: Chunk388032.intl.string(Chunk388032.t.ijDDwz)
+    name: Chunk388032.intl.string(Chunk388032.t.ijDDw8)
   }
 }

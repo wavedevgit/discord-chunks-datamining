@@ -59,7 +59,7 @@ function C(e) {
     x = !(0, r.e7)([c.Z], () => c.Z.isInChannel(e.id)) && v || _,
     O = (0, p.Z)();
   return y || 0 !== O.length ? y ? (0, i.jsx)(l.sNh, {
-    label: m.intl.string(m.t.PlwgdU),
+    label: m.intl.string(m.t.PlwgdX),
     id: "handoff",
     action: () => {
       (0, u.F)(C)
@@ -70,7 +70,7 @@ function C(e) {
     var o, s;
     return (0, i.jsx)(l.sNh, {
       id: "transfer-".concat(r.type, "-").concat(r.id),
-      label: (o = r.type, s = t, o === f.ABu.XBOX ? s ? m.intl.string(m.t["qVE/VF"]) : m.intl.string(m.t.E8euSk) : o === f.ABu.PLAYSTATION ? s ? m.intl.string(m.t.vzfxmY) : m.intl.string(m.t.QxEYDj) : o === f.ABu.PLAYSTATION_STAGING ? s ? m.intl.string(m.t.BDiXtV) : m.intl.string(m.t["bhdB9+"]) : true),
+      label: (o = r.type, s = t, o === f.ABu.XBOX ? s ? m.intl.string(m.t["qVE/VF"]) : m.intl.string(m.t.E8euSk) : o === f.ABu.PLAYSTATION ? s ? m.intl.string(m.t.vzfxmZ) : m.intl.string(m.t.QxEYDg) : o === f.ABu.PLAYSTATION_STAGING ? s ? m.intl.string(m.t.BDiXtb) : m.intl.string(m.t["bhdB9/"]) : true),
       action: () => (t => {
         if (!t.twoWayLink || t.revoked) return void(0, a.Z)({
           platformType: t.type,

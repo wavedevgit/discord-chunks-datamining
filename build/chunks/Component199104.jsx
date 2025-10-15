@@ -37,7 +37,7 @@ function _() {
             variant: "heading-lg/semibold",
             className: Chunk708567.header,
             id: require,
-            children: Chunk388032.intl.string(Chunk388032.t.F4Zggw)
+            children: Chunk388032.intl.string(Chunk388032.t.F4Zgg4)
           }), (0, Chunk951288.jsx)(Chunk243778.ZP, {
             contentTypes: exports,
             children: e => {

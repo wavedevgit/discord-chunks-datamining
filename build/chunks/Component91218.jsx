@@ -28,7 +28,7 @@ let d = Chunk647438.forwardRef(function(e, t) {
     let e = (0, r.jsx)("img", {
       ref: t,
       alt: "",
-      "aria-label": c.intl.formatToPlainString(c.t["9+YWrE"], {
+      "aria-label": c.intl.formatToPlainString(c.t["9+YWrK"], {
         name: d
       }),
       className: o()(u.roleIcon, n, {

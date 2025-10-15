@@ -73,7 +73,7 @@ function O(e) {
   } = (0, d.KZ)(), N = i.useRef(null);
   return v ? null == I ? (0, r.jsx)(p.O1, {
     action: "EDIT_PROFILE",
-    text: h.intl.string(h.t.s5vZlQ),
+    text: h.intl.string(h.t.s5vZlZ),
     icon: o.vdY,
     autoFocus: true,
     fullWidth: g,
@@ -95,11 +95,11 @@ function O(e) {
         onClose: () => {
           t(), null == O || O()
         },
-        "aria-label": h.intl.string(h.t.AXIHpV),
+        "aria-label": h.intl.string(h.t.AXIHpa),
         children: [(0, r.jsx)(o.sNh, {
           id: "edit-server-profile",
-          label: h.intl.string(h.t["PKQB/H"]),
-          subtext: h.intl.string(h.t.VYHWKJ),
+          label: h.intl.string(h.t["PKQB/P"]),
+          subtext: h.intl.string(h.t.VYHWKC),
           action: () => {
             C({
               action: "EDIT_GUILD_PROFILE"
@@ -108,7 +108,7 @@ function O(e) {
         }), (0, r.jsx)(o.sNh, {
           id: "edit-main-profile",
           label: h.intl.string(h.t.HmFaFB),
-          subtext: h.intl.string(h.t["+EERMk"]),
+          subtext: h.intl.string(h.t["+EERMj"]),
           action: () => {
             C({
               action: "EDIT_PROFILE"
@@ -123,7 +123,7 @@ function O(e) {
       } = e, n = b(e, ["onClick"]);
       return (0, r.jsx)(p.O1, E({
         buttonRef: N,
-        text: h.intl.string(h.t.s5vZlQ),
+        text: h.intl.string(h.t.s5vZlZ),
         icon: o.vdY,
         autoFocus: true,
         fullWidth: g,

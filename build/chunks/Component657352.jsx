@@ -23,13 +23,13 @@ let o = e => {
       className: a.content,
       children: [(0, i.jsx)(r.Heading, {
         variant: "heading-md/semibold",
-        children: l.intl.format(l.t.THgVCC, {
+        children: l.intl.format(l.t.THgVCA, {
           guild: t.name
         })
       }), (0, i.jsx)(r.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
-        children: l.intl.string(l.t["1yq3nO"])
+        children: l.intl.string(l.t["1yq3nJ"])
       }), (0, i.jsx)("div", {
         className: a.buttonContainer,
         children: (0, i.jsx)(r.Button, {

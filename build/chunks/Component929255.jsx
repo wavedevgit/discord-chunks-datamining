@@ -69,7 +69,7 @@ function y(e) {
         className: S.shopScroll,
         ref: f,
         onScroll: p,
-        children: (0, r.jsx)(j, {
+        children: (0, r.jsx)(k, {
           isSmallScreen: v,
           filterBarOpen: b,
           setFilterBarOpen: E,
@@ -87,7 +87,7 @@ function y(e) {
     })
   })
 }
-let j = e => {
+let k = e => {
   let {
     isSmallScreen: t,
     filterBarOpen: n,
@@ -95,8 +95,8 @@ let j = e => {
     tab: a,
     scrollerRef: C,
     sortedCategories: y,
-    setCategoryRef: j
-  } = e, k = (0, d.FF)("CollectiblesBrowse"), T = l.useRef(null), L = (0, g.S)(e => e.hasDefaultFilters()), I = (0, u.sp)(), {
+    setCategoryRef: k
+  } = e, j = (0, d.FF)("CollectiblesBrowse"), T = l.useRef(null), L = (0, g.S)(e => e.hasDefaultFilters()), I = (0, u.sp)(), {
     handlePageChange: B,
     currentPage: A
   } = (0, m.h)({
@@ -132,9 +132,9 @@ let j = e => {
     className: S.inventoryWrapper,
     children: (0, r.jsxs)("div", {
       className: o()(S.inventory, {
-        [S.inventoryFilter]: k
+        [S.inventoryFilter]: j
       }),
-      children: [k && (0, r.jsxs)("div", {
+      children: [j && (0, r.jsxs)("div", {
         className: S.controls,
         children: [(0, r.jsx)("div", {
           className: S.controlsLeftSide,
@@ -147,7 +147,7 @@ let j = e => {
             className: S.sortBy,
             children: [(0, r.jsx)(s.Text, {
               variant: "text-md/semibold",
-              children: x.intl.string(x.t.uaX705)
+              children: x.intl.string(x.t.uaX709)
             }), (0, r.jsx)(h.Z, {})]
           }), (0, r.jsx)("div", {
             ref: P,
@@ -165,7 +165,7 @@ let j = e => {
                 }), i(e)
               },
               variant: "secondary",
-              text: x.intl.string(n ? x.t.fYtm6f : x.t["TeTYE+"]),
+              text: x.intl.string(n ? x.t.fYtm6e : x.t.TeTYEx),
               icon: s.gXV,
               iconPosition: "end"
             })
@@ -178,7 +178,7 @@ let j = e => {
             children: (0, r.jsx)(_.Z, {})
           })
         })]
-      }), k && !L ? (0, r.jsx)(b.Z, {
+      }), j && !L ? (0, r.jsx)(b.Z, {
         scrollerRef: C,
         tab: a
       }, a) : (0, v.RE)(a) ? (0, r.jsx)(E.Z, {
@@ -190,7 +190,7 @@ let j = e => {
         },
         children: (0, r.jsx)(p.Z, {
           sortedCategories: y,
-          setCategoryRef: j,
+          setCategoryRef: k,
           currentPage: A,
           handlePageChange: N
         })

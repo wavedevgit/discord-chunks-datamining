@@ -71,15 +71,15 @@ class x extends(r = Chunk647438.PureComponent) {
     return (0, Chunk951288.jsxs)(Chunk388905.ZP, {
       children: [(0, Chunk951288.jsx)(Chunk388905.Dx, {
         className: Chunk197571.marginBottom8,
-        children: Chunk388032.intl.string(Chunk388032.t.Z33eiP)
+        children: Chunk388032.intl.string(Chunk388032.t.Z33eiI)
       }), (0, Chunk951288.jsx)(Chunk388905.DK, {
-        children: Chunk388032.intl.format(Chunk388032.t.NRWtfC, {
+        children: Chunk388032.intl.format(Chunk388032.t.NRWtfH, {
           guildName: require.name
         })
       }), (0, Chunk951288.jsx)(Chunk388905.zx, {
         className: Chunk197571.marginTop40,
         onClick: () => exports(module),
-        children: Chunk388032.intl.string(Chunk388032.t.fIv16B)
+        children: Chunk388032.intl.string(Chunk388032.t.fIv16O)
       }), (0, Chunk951288.jsx)(Chunk388905.zx, {
         className: Chunk197571.marginTop8,
         color: Chunk388905.zx.Colors.LINK,
@@ -87,7 +87,7 @@ class x extends(r = Chunk647438.PureComponent) {
         onClick: () => {
           exports(Chunk981631.Z5c.USER_GUILD_NOTIFICATION_SETTINGS(require.id))
         },
-        children: Chunk388032.intl.string(Chunk388032.t["cGmT/J"])
+        children: Chunk388032.intl.string(Chunk388032.t["cGmT/P"])
       })]
     })
   }
@@ -104,11 +104,11 @@ class x extends(r = Chunk647438.PureComponent) {
         className: Chunk197571.marginBottom8,
         children: Chunk388032.intl.string(Chunk388032.t.ox9hIS)
       }), (0, Chunk951288.jsx)(Chunk388905.DK, {
-        children: Chunk388032.intl.string(Chunk388032.t["/dcuR5"])
+        children: Chunk388032.intl.string(Chunk388032.t["/dcuR0"])
       }), (0, Chunk951288.jsx)(Chunk388905.zx, {
         className: Chunk197571.marginTop40,
         onClick: () => exports(module),
-        children: Chunk388032.intl.string(Chunk388032.t.fIv16B)
+        children: Chunk388032.intl.string(Chunk388032.t.fIv16O)
       })]
     })
   }

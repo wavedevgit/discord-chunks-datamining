@@ -41,7 +41,7 @@ function d(e) {
 }
 
 function f(e) {
-  u(e, c.intl.string(c.t.MYr3Ka), () => {
+  u(e, c.intl.string(c.t.MYr3KS), () => {
     r.Z.openPrivateChannel({
       recipientIds: e.id
     })

@@ -36,12 +36,12 @@ function b(e) {
     onAdoptTag: r,
     onEditProfile: i
   } = (0, h.Z)(e.guild.id, () => t(x.L.TAKE_ACTION)), c = [{
-    text: f.intl.string(f.t.jwEaiX),
+    text: f.intl.string(f.t.jwEaiY),
     loading: n,
     onClick: r,
     variant: "primary"
   }, {
-    text: f.intl.string(f.t.s5vZlQ),
+    text: f.intl.string(f.t.s5vZlZ),
     onClick: i,
     variant: "secondary"
   }];
@@ -58,10 +58,10 @@ function b(e) {
           guildProfile: e.guild.profile
         }
       },
-      title: f.intl.formatToPlainString(f.t["m/Tc3n"], {
+      title: f.intl.formatToPlainString(f.t["m/Tc3t"], {
         guildName: e.guild.name
       }),
-      body: f.intl.string(f.t.DrAXIr),
+      body: f.intl.string(f.t.DrAXIi),
       actions: c,
       size: "md",
       onRequestClose: () => t(x.L.USER_DISMISS)
@@ -85,12 +85,12 @@ function v(e) {
     onAdoptTag: r,
     onEditProfile: c
   } = (0, h.Z)(e.guild.id, () => t(x.L.TAKE_ACTION)), u = [{
-    text: f.intl.string(f.t.jwEaiX),
+    text: f.intl.string(f.t.jwEaiY),
     loading: n,
     onClick: r,
     variant: "primary"
   }, {
-    text: f.intl.string(f.t.s5vZlQ),
+    text: f.intl.string(f.t.s5vZlZ),
     onClick: c,
     variant: "secondary"
   }];
@@ -107,10 +107,10 @@ function v(e) {
           guildProfile: e.guild.profile
         }
       },
-      title: f.intl.formatToPlainString(f.t.VFqnyU, {
+      title: f.intl.formatToPlainString(f.t.VFqnyc, {
         guildName: e.guild.name
       }),
-      body: f.intl.string(f.t.DrAXIr),
+      body: f.intl.string(f.t.DrAXIi),
       actions: u,
       size: "md",
       onRequestClose: () => t(x.L.USER_DISMISS)

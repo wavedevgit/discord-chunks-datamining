@@ -34,7 +34,7 @@ let g = Chunk647438.memo(function(e) {
     className: f.container,
     children: (0, r.jsxs)("ul", {
       role: "group",
-      "aria-label": h.intl.formatToPlainString(h.t.EiyIi6, {
+      "aria-label": h.intl.formatToPlainString(h.t.EiyIi4, {
         channelName: t.name
       }),
       children: [(0, r.jsx)("div", {

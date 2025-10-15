@@ -45,16 +45,16 @@ function _(e) {
       children: [(0, n.jsx)(l.Heading, {
         variant: "heading-lg/extrabold",
         color: "header-primary",
-        children: h.intl.string(h.t.MatO7M)
+        children: h.intl.string(h.t.MatO7O)
       }), (0, n.jsx)(l.Text, {
         variant: "text-md/normal",
         color: "header-primary",
-        children: h.intl.string(h.t.VyPIeu)
+        children: h.intl.string(h.t.VyPIen)
       })]
     })]
   })
 }
-let f = e => e.toString() === p.Plq.MENTION_EVERYONE.toString() ? h.intl.string(h.t.yCpsQw) : (0, o.wt)(e);
+let f = e => e.toString() === p.Plq.MENTION_EVERYONE.toString() ? h.intl.string(h.t.yCpsQ0) : (0, o.wt)(e);
 
 function g(e) {
   let {
@@ -66,7 +66,7 @@ function g(e) {
       className: j.tableHeader,
       variant: "text-xs/semibold",
       color: "text-muted",
-      children: h.intl.string(h.t["0WZKI4"])
+      children: h.intl.string(h.t["0WZKIy"])
     }), (0, n.jsx)("div", {
       className: j.permissionsTable,
       children: t.map((e, t) => (0, n.jsxs)("div", {
@@ -93,7 +93,7 @@ function v(e) {
       className: j.tableHeader,
       variant: "text-xs/semibold",
       color: "text-muted",
-      children: h.intl.string(h.t.Yo5qlq)
+      children: h.intl.string(h.t.Yo5qlp)
     }), (0, n.jsx)("div", {
       className: j.permissionsTable,
       children: t.map((e, t) => (0, n.jsxs)("div", {
@@ -138,7 +138,7 @@ function O(e) {
     className: j.footer,
     children: [(0, n.jsx)(l.Button, {
       variant: "primary",
-      text: h.intl.string(h.t.iOSdAW),
+      text: h.intl.string(h.t.iOSdAQ),
       onClick: t
     }), (0, n.jsx)(a.zx, {
       look: a.zx.Looks.LINK,

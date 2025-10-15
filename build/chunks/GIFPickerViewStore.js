@@ -137,7 +137,7 @@ function B(e) {
   let t = e.trendingCategories;
   w = [...null != e.trendingGIFPreview ? [{
     type: s.wI2.TRENDING_GIFS,
-    name: l.intl.string(l.t.H6zNFz),
+    name: l.intl.string(l.t.H6zNFx),
     src: k(e.trendingGIFPreview.src),
     format: A
   }] : [], ...t.map(e => f(u({}, e), {

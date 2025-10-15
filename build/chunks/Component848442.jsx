@@ -80,7 +80,7 @@ function Z(e) {
       height: 20,
       className: l()([e, I.shopIcon])
     }),
-    text: S.intl.string(S.t.al5EXL),
+    text: S.intl.string(S.t.al5EXF),
     selected: n,
     onClick: i,
     trailing: (0, r.jsxs)("div", {
@@ -103,7 +103,7 @@ function Z(e) {
             (0, _.dL)(x.Z5c.CHANNEL(t, null == (n = O.ZP.getDefaultChannel(t)) ? true : n.id))
           }
         },
-        "aria-label": S.intl.string(S.t.cpT0Cq),
+        "aria-label": S.intl.string(S.t.cpT0Cg),
         children: (0, r.jsx)(c.k$p, {
           size: "xs",
           color: "currentColor"
@@ -131,7 +131,7 @@ function w(e) {
       height: 20,
       className: e
     }),
-    text: S.intl.string(S.t.al5EXL),
+    text: S.intl.string(S.t.al5EXF),
     selected: i,
     onClick: o,
     onContextMenu: e => {

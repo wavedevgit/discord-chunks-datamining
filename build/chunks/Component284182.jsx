@@ -28,11 +28,11 @@ function h(e) {
     children: [(0, r.jsx)(a.Text, {
       variant: "text-md/semibold",
       color: "text-muted",
-      children: u.intl.string(u.t.omKGKu)
+      children: u.intl.string(u.t.omKGKi)
     }), (0, r.jsx)(a.Text, {
       variant: "text-sm/normal",
       color: "text-muted",
-      children: u.intl.string(u.t["zUjLl+"])
+      children: u.intl.string(u.t.zUjLl5)
     }), (0, r.jsx)("div", {
       children: (0, r.jsx)(a.zJl, {
         className: m.uploadsContainer,

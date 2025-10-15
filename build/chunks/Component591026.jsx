@@ -59,7 +59,7 @@ function b(e) {
     className: p.cardContentsContainer,
     children: [(0, r.jsxs)(d.Z, {
       step: 1,
-      header: m.intl.string(m.t.IGfuTa),
+      header: m.intl.string(m.t.IGfuTU),
       children: [(0, r.jsxs)("div", {
         className: p.mentionLimitContainer,
         children: [(0, r.jsx)("div", {
@@ -73,12 +73,12 @@ function b(e) {
           className: p.mentionLimitTextContainer,
           children: [(0, r.jsx)(a.Heading, {
             variant: "heading-sm/semibold",
-            children: m.intl.string(m.t["s/26oQ"])
+            children: m.intl.string(m.t["s/26oa"])
           }), (0, r.jsx)(a.Text, {
             color: "interactive-normal",
             variant: "text-xs/medium",
             className: p.descriptionHint,
-            children: m.intl.string(m.t["8uW4/N"])
+            children: m.intl.string(m.t["8uW4/P"])
           })]
         }), (0, r.jsx)("div", {
           className: p.stepperContainer,
@@ -109,12 +109,12 @@ function b(e) {
           className: p.mentionLimitTextContainer,
           children: [(0, r.jsx)(a.Heading, {
             variant: "heading-sm/semibold",
-            children: m.intl.string(m.t.XnuC9g)
+            children: m.intl.string(m.t.XnuC9v)
           }), (0, r.jsx)(a.Text, {
             color: "interactive-normal",
             variant: "text-xs/medium",
             className: p.descriptionHint,
-            children: m.intl.string(m.t.EDBe5m)
+            children: m.intl.string(m.t.EDBe5u)
           })]
         }), (0, r.jsx)("div", {
           children: (0, r.jsx)(l.$q, {
@@ -133,7 +133,7 @@ function b(e) {
       type: u.Z.Type.ARROW_DOWN
     }), (0, r.jsx)(d.Z, {
       step: 2,
-      header: m.intl.string(m.t["18TOiQ"]),
+      header: m.intl.string(m.t["18TOiY"]),
       children: (0, r.jsx)(o.Z, {
         rule: b,
         onChangeRule: x
@@ -142,7 +142,7 @@ function b(e) {
       type: u.Z.Type.CROSS
     }), (0, r.jsx)(d.Z, {
       step: 3,
-      header: m.intl.string(m.t.eq3gjh),
+      header: m.intl.string(m.t.eq3gjo),
       children: (0, r.jsx)(c.Z, {
         rule: b,
         onChangeRule: x

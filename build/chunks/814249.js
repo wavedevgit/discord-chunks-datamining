@@ -24,21 +24,21 @@ var o = function(e) {
 function c() {
   return [{
     value: "DUPLICATED",
-    label: Chunk388032.intl.string(Chunk388032.t.wwXl5h)
+    label: Chunk388032.intl.string(Chunk388032.t.wwXl5u)
   }, {
     value: "TOO_GENERIC",
-    label: Chunk388032.intl.string(Chunk388032.t["t+6knu"])
+    label: Chunk388032.intl.string(Chunk388032.t["t+6knp"])
   }, {
     value: "TOO_MANY",
-    label: Chunk388032.intl.string(Chunk388032.t.xnKDnv)
+    label: Chunk388032.intl.string(Chunk388032.t.xnKDnp)
   }, {
     value: "INACCURATE",
-    label: Chunk388032.intl.string(Chunk388032.t.JW5VFj)
+    label: Chunk388032.intl.string(Chunk388032.t.JW5VFh)
   }, {
     value: "NOT_USEFUL",
     label: Chunk388032.intl.string(Chunk388032.t.ZtCNiY)
   }, {
     value: "OTHER",
-    label: Chunk388032.intl.string(Chunk388032.t.BufsKk)
+    label: Chunk388032.intl.string(Chunk388032.t.BufsKi)
   }]
 }

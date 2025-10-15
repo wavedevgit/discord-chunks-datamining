@@ -26,7 +26,7 @@ function v() {
       className: Chunk583140.__invalid_content,
       color: "header-primary",
       variant: "text-md/normal",
-      children: Chunk388032.intl.string(Chunk388032.t["gd/Yqs"])
+      children: Chunk388032.intl.string(Chunk388032.t["gd/Yqq"])
     })]
   })
 }
@@ -38,9 +38,9 @@ function h(n) {
     senderId: i,
     safetyWarning: x
   } = n, h = s.useMemo(() => (null == x ? true : x.feedback_type) === u.ny.UPVOTE, [x]), k = s.useMemo(() => (null == x ? true : x.feedback_type) === u.ny.DOWNVOTE, [x]), p = s.useCallback((n, s) => {
-    (null == x ? true : x.feedback_type) !== n && ((0, d.Ms)(t, e, n), (0, o.showToast)((0, o.createToast)(b.intl.string(b.t["gd/Yqs"]), o.ToastType.CUSTOM, {
+    (null == x ? true : x.feedback_type) !== n && ((0, d.Ms)(t, e, n), (0, o.showToast)((0, o.createToast)(_.intl.string(_.t["gd/Yqq"]), o.ToastType.CUSTOM, {
       component: (0, a.jsx)(v, {})
-    })), (0, _.qc)({
+    })), (0, b.qc)({
       channelId: t,
       warningId: e,
       senderId: i,
@@ -53,15 +53,15 @@ function h(n) {
     children: [(0, a.jsx)(o.Text, {
       variant: "text-sm/medium",
       color: "text-default",
-      children: b.intl.string(b.t.L84yVm)
+      children: _.intl.string(_.t.L84yVl)
     }), (0, a.jsxs)("div", {
       className: g.buttonsContainer,
       children: [(0, a.jsx)(o.P3F, {
         className: c()([g.buttonsBackground, h ? g.buttonsBackgroundActive : g.buttonsBackgroundInactive, {
           [g.disabled]: h
         }]),
-        onClick: () => p(u.ny.UPVOTE, _.NM.FEEDBACK_UPVOTE),
-        "aria-label": b.intl.string(b.t["2GrOCN"]),
+        onClick: () => p(u.ny.UPVOTE, b.NM.FEEDBACK_UPVOTE),
+        "aria-label": _.intl.string(_.t["2GrOCA"]),
         children: (0, a.jsx)(l.Z, {
           className: g.__invalid_buttonIcon,
           color: "interactive-normal"
@@ -70,8 +70,8 @@ function h(n) {
         className: c()([g.buttonsBackground, k ? g.buttonsBackgroundActive : g.buttonsBackgroundInactive, {
           [g.disabled]: k
         }]),
-        onClick: () => p(u.ny.DOWNVOTE, _.NM.FEEDBACK_DOWNVOTE),
-        "aria-label": b.intl.string(b.t.COp9BO),
+        onClick: () => p(u.ny.DOWNVOTE, b.NM.FEEDBACK_DOWNVOTE),
+        "aria-label": _.intl.string(_.t.COp9BA),
         children: (0, a.jsx)(r.Z, {
           className: g.__invalid_buttonIcon,
           color: "interactive-normal"

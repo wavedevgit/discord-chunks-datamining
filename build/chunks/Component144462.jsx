@@ -20,22 +20,22 @@ function c(t) {
   return (0, e.jsx)(a.Modal, {
     onClose: c,
     transitionState: u,
-    title: o.intl.string(o.t.Df4aUN),
-    subtitle: o.intl.string(o.t.eOWEmL),
+    title: o.intl.string(o.t.Df4aUF),
+    subtitle: o.intl.string(o.t.eOWEmJ),
     actions: [{
-      text: o.intl.string(o.t["ETE/oC"]),
+      text: o.intl.string(o.t["ETE/oK"]),
       onClick: () => {
         c()
       },
       variant: "secondary"
     }, {
-      text: o.intl.string(o.t.bt75uw),
+      text: o.intl.string(o.t.bt75u7),
       onClick: () => {
         i(d)
       }
     }],
     children: (0, e.jsx)(l.Kx8, {
-      placeholder: o.intl.string(o.t.gDZw7A),
+      placeholder: o.intl.string(o.t.gDZw7O),
       value: d,
       onChange: h,
       maxLength: r._6

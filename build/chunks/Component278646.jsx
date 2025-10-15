@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk262212 = require("./262212.jsx"),
   Chunk795338 = require("./795338.jsx"),
   Chunk535396 = require("./535396.js"),
-  Chunk149829 = require("./149829.js"),
+  Chunk989308 = require("./989308.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk477487 = require("./477487.js");
 
@@ -37,10 +37,10 @@ function d(e, t) {
       }
       return e
     }({
-      title: c.intl.formatToPlainString(s.default.lFuOFF, {
+      title: c.intl.formatToPlainString(s.default.lFuOFB, {
         perkName: t.title
       }),
-      description: c.intl.formatToPlainString(s.default.y3wHot, {
+      description: c.intl.formatToPlainString(s.default.y3wHoq, {
         perkName: t.title
       }),
       image: (0, r.jsx)(o.m, {
@@ -57,7 +57,7 @@ function d(e, t) {
         className: u.button,
         children: (0, r.jsx)(i.Button, {
           variant: "primary",
-          text: c.intl.string(c.t.cpT0Cq),
+          text: c.intl.string(c.t.cpT0Cg),
           onClick: n.onClose
         })
       })

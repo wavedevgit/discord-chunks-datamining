@@ -41,7 +41,7 @@ let h = e => {
       src: _
     },
     actions: [{
-      text: f.intl.string(f.t.fYfGgK),
+      text: f.intl.string(f.t.fYfGgI),
       variant: "primary",
       onClick: () => {
         null == g || g(), (0, u.uL)(p.Z5c.COLLECTIBLES_SHOP), (0, d.mK)({

@@ -86,7 +86,7 @@ let U = Chunk647438.memo(function(e) {
     gridSectionBoundaries: d,
     observePostVisibilityAnalytics: u
   } = e, m = (0, o.e7)([y.Z], () => y.Z.getChannel(n));
-  return null == m ? null : (0, r.jsx)(G, {
+  return null == m ? null : (0, r.jsx)(V, {
     id: t,
     channel: m,
     goToThread: i,
@@ -99,7 +99,7 @@ let U = Chunk647438.memo(function(e) {
   })
 });
 
-function G(e) {
+function V(e) {
   let {
     id: t,
     channel: n,
@@ -141,7 +141,7 @@ function G(e) {
     {
       onFocus: U
     } = B,
-    G = function(e, t) {
+    V = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -171,12 +171,12 @@ function G(e) {
         ringTarget: b
       },
       onContextMenu: R,
-      "aria-label": D.intl.formatToPlainString(D.t.pgYN6c, {
+      "aria-label": D.intl.formatToPlainString(D.t.pgYN6e, {
         title: n.name,
         count: y
       }),
       className: H.focusTarget
-    }, G)), (0, r.jsxs)("div", {
+    }, V)), (0, r.jsxs)("div", {
       className: H.header,
       children: [(0, r.jsxs)("div", {
         className: H.authorRow,
@@ -210,7 +210,7 @@ function G(e) {
     }), (0, r.jsx)("div", {
       className: H.postBody,
       children: (0, r.jsx)(d.Rny, {
-        children: (0, r.jsx)(V, {
+        children: (0, r.jsx)(G, {
           channel: n,
           firstMessage: v,
           isFirstMessageLoaded: _,
@@ -231,7 +231,7 @@ function G(e) {
   })
 }
 
-function V(e) {
+function G(e) {
   let {
     channel: t,
     firstMessage: n,
@@ -246,11 +246,11 @@ function V(e) {
     isIgnored: null != n && w.Z.isIgnoredForMessage(n)
   }));
   return s ? (0, r.jsx)($, {
-    message: D.intl.string(D.t.Lkp2fB),
+    message: D.intl.string(D.t.Lkp2fH),
     containerWidth: l.width,
     channel: t
   }) : c ? (0, r.jsx)($, {
-    message: D.intl.string(D.t.yWK7ZM),
+    message: D.intl.string(D.t.yWK7ZG),
     containerWidth: l.width,
     channel: t
   }) : (0, r.jsx)(W, {
@@ -354,8 +354,8 @@ function q(e) {
     })]
   })
 }
-let K = e => e.preventDefault(),
-  X = Chunk647438.memo(function(e) {
+let X = e => e.preventDefault(),
+  K = Chunk647438.memo(function(e) {
     return (0, r.jsx)(r.Fragment, {
       children: (0, v.Yi)(B(z({}, e), {
         analyticsSource: "ForumPostMediaPreviewImage"
@@ -388,7 +388,7 @@ let K = e => e.preventDefault(),
         width: e.width,
         height: e.height,
         alt: null != e.alt && a ? g : e.alt,
-        onClick: K,
+        onClick: X,
         shouldRenderAccessory: !m && !u
       }), b = (0, x.d$)(e.src) ? "".concat(e.src, "?format=png") : e.src, C = o && !a ? e.src : b;
       return (0, r.jsxs)("div", {
@@ -408,7 +408,7 @@ let K = e => e.preventDefault(),
           imageClassName: l()(H.thumbnailOverride, {
             [H.obscured]: a
           })
-        })) : (0, r.jsx)(X, B(z({}, f), {
+        })) : (0, r.jsx)(K, B(z({}, f), {
           autoPlay: o && !a,
           containerClassName: H.mosaicMediaContainer,
           imageClassName: l()(H.imageCover, {
@@ -506,7 +506,7 @@ function Q(e) {
       children: [a && null == n && (0, r.jsx)(d.Text, {
         variant: "text-sm/normal",
         color: o ? "header-secondary" : "text-muted",
-        children: D.intl.string(D.t.mE3KJN)
+        children: D.intl.string(D.t.mE3KJC)
       }), a && null != n && (0, r.jsx)(j.ZP, {
         message: n,
         content: h,

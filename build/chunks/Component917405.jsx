@@ -107,7 +107,7 @@ function _(e) {
     }), t))
   }, [T]), {
     connectionStatus: P,
-    connectionStatusText: A
+    connectionStatusText: Z
   } = d.Z.getStatus(r, S);
   return (0, l.jsxs)("div", {
     className: p.rtcConnectionStatusWrapper,
@@ -135,7 +135,7 @@ function _(e) {
                 (0, c.v)(u.Z.RTC_PANEL, c.d.CONNECTION_STATUS), t(e)
               },
               children: (0, l.jsx)(g.Z, {
-                text: A,
+                text: Z,
                 textVariant: I,
                 hasVideo: S,
                 className: N[P],

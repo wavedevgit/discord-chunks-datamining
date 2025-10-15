@@ -44,9 +44,9 @@ function h(e) {
     results: y
   } = (0, d.Z)(p), [x, v] = r.useState(b("")), S = r.useCallback(e => v(b(e)), [v]), {
     queryMode: j
-  } = x, E = r.useRef(null), P = r.useRef(n), Z = g !== E.current ? n : P.current;
+  } = x, E = r.useRef(null), Z = r.useRef(n), P = g !== E.current ? n : Z.current;
   r.useEffect(() => {
-    g !== E.current && (P.current = n), E.current = g
+    g !== E.current && (Z.current = n), E.current = g
   }, [g, n]), r.useLayoutEffect(() => {
     let {
       query: e,
@@ -68,11 +68,11 @@ function h(e) {
       targetDestination: t,
       frequentChannels: _,
       selectedDestinations: n,
-      pinnedDestinations: Z,
+      pinnedDestinations: P,
       originDestination: i,
       includeMissingDMs: f,
       isConnected: O
-    }), [y, C, j, t, _, n, Z, i, f, O]),
+    }), [y, C, j, t, _, n, P, i, f, O]),
     updateSearchText: S
   }
 }

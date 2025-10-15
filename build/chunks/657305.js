@@ -7,5 +7,5 @@ require.d(exports, {
 var Chunk388032 = require("./388032.jsx");
 
 function i(e) {
-  return null != e && "" !== e ? e : r.intl.string(r.t["2YCamo"])
+  return null != e && "" !== e ? e : r.intl.string(r.t["2YCamp"])
 }

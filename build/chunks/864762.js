@@ -10,7 +10,7 @@ var Chunk647438 = require("./647438.js"),
   Chunk981631 = require("./981631.js");
 
 function o(e, a) {
-  let [t, o] = n.useState(l.O.LANDING), c = (0, r.Z)(t), [d, x] = n.useState(null), [u, h] = n.useState(null), [m, N] = n.useState(true), C = n.useCallback(() => {
+  let [t, o] = r.useState(l.O.LANDING), c = (0, n.Z)(t), [d, x] = r.useState(null), [u, h] = r.useState(null), [m, N] = r.useState(true), C = r.useCallback(() => {
     switch (t) {
       case l.O.LANDING:
         o(l.O.PRE_CONNECT);
@@ -21,14 +21,14 @@ function o(e, a) {
       case l.O.ERROR:
         o(l.O.PRE_CONNECT)
     }
-  }, [t]), j = n.useCallback(e => {
+  }, [t]), j = r.useCallback(e => {
     x(null), N(e), o(l.O.ERROR)
-  }, []), p = n.useCallback(e => {
+  }, []), p = r.useCallback(e => {
     x(e), o(l.O.PRE_CONNECT_WAITING)
-  }, []), v = n.useCallback(e => {
+  }, []), v = r.useCallback(e => {
     x(null), h(e), o(l.O.DISCORD_CONSENT)
   }, []);
-  return n.useEffect(() => {
+  return r.useEffect(() => {
     t !== c && s.default.track(i.rMx.ACCOUNT_LINK_STEP, {
       location_stack: e,
       previous_step: c,

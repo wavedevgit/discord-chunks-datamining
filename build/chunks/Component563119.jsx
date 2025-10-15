@@ -62,9 +62,9 @@ let b = "game_console_alert_modal",
     maybeShowPTTAlert(e) {
       if (c.Z.getMode() !== _.pM4.PUSH_TO_TALK || (0, l.zu)(a.z.CONSOLE_PTT_DISABLE_ALERT)) return Promise.resolve();
       let t = {
-        [_.ABu.XBOX]: p.intl.string(p.t.bVZ7vy),
-        [_.ABu.PLAYSTATION]: p.intl.string(p.t["6iqUsf"]),
-        [_.ABu.PLAYSTATION_STAGING]: p.intl.string(p.t["6iqUsf"])
+        [_.ABu.XBOX]: p.intl.string(p.t.bVZ7v7),
+        [_.ABu.PLAYSTATION]: p.intl.string(p.t["6iqUsb"]),
+        [_.ABu.PLAYSTATION_STAGING]: p.intl.string(p.t["6iqUsb"])
       } [e];
       return null == t ? Promise.resolve() : new Promise(e => {
         let n = () => {
@@ -74,7 +74,7 @@ let b = "game_console_alert_modal",
             title: t,
             subtitle: p.intl.string(p.t.bL21zs),
             actions: [{
-              text: p.intl.string(p.t.BddRzS),
+              text: p.intl.string(p.t.BddRzc),
               onClick: n
             }]
           }));
@@ -107,7 +107,7 @@ let b = "game_console_alert_modal",
       let g = e => (0, r.jsx)(i.Modal, E(m({}, e), {
         title: t,
         actions: [{
-          text: p.intl.string(p.t.BddRzS),
+          text: p.intl.string(p.t.BddRzc),
           onClick: h
         }],
         children: c

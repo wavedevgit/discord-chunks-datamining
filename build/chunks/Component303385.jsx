@@ -101,7 +101,7 @@ let g = e => {
           color: "always-white",
           lineClamp: 1,
           variant: "text-xs/medium",
-          children: p.intl.string((null == h ? true : h.label2) ? p.t["3mgEQf"] : p.t["1Wvve2"])
+          children: p.intl.string((null == h ? true : h.label2) ? p.t["3mgEQU"] : p.t["1Wvve3"])
         })
       })]
     })]

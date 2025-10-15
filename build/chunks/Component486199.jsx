@@ -87,7 +87,7 @@ function d(e) {
             variant: u ? "heading-xl/semibold" : "heading-md/medium",
             className: u ? c.header : c.secondaryHeader,
             children: [t, p && (0, i.jsx)(a.u, {
-              text: s.intl.string(s.t.VFuFum),
+              text: s.intl.string(s.t.VFuFur),
               children: (0, i.jsx)(o.Prq, {
                 size: "xs",
                 color: "currentColor",

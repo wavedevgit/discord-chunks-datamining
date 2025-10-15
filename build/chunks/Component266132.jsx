@@ -19,8 +19,8 @@ function d() {
   return (0, Chunk951288.jsxs)(Chunk838436.U, {
     setting: Chunk726985.s6.PRIVACY_ENCRYPTION_VERIFIED_DEVICES_V2,
     children: [(0, Chunk951288.jsx)(Chunk838436.H, {
-      header: Chunk388032.intl.string(Chunk388032.t["5b3FNI"]),
-      description: Chunk388032.intl.format(Chunk388032.t.jrTSWU, {
+      header: Chunk388032.intl.string(Chunk388032.t["5b3FND"]),
+      description: Chunk388032.intl.format(Chunk388032.t.jrTSWV, {
         helpArticle: (0, Chunk630759.pL)()
       })
     }), module.map(e => (0, r.jsx)("div", {

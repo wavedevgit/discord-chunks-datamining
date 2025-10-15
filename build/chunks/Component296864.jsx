@@ -32,17 +32,17 @@ function j(e) {
     privacy_level: k
   } = j, E = (0, a.e7)([d.Z], () => d.Z.getChannel(j.channel_id), [j]), b = (0, a.e7)([h.Z], () => h.Z.getGuild(N), [N]), {
     canManageGuildEvent: w
-  } = (0, o.XJ)(null != E ? E : b), I = w(j), O = (0, a.e7)([c.Z], () => c.Z.isLurking(N), [N]), S = j.entity_type === x.WX.STAGE_INSTANCE, [Z, _] = l.useState(S), [T, {
+  } = (0, o.XJ)(null != E ? E : b), I = w(j), S = (0, a.e7)([c.Z], () => c.Z.isLurking(N), [N]), Z = j.entity_type === x.WX.STAGE_INSTANCE, [O, _] = l.useState(Z), [T, {
     loading: L,
     error: P
   }] = (0, v.Z)();
   if (!I) return null;
-  let G = k === x.j8.PUBLIC ? p.intl.string(p.t.HhlaLP) : p.intl.string(p.t.GI3xXd),
+  let G = k === x.j8.PUBLIC ? p.intl.string(p.t.HhlaLC) : p.intl.string(p.t.GI3xXV),
     A = () => {
       null == f || f(), y(), (0, u.Ku)(false)
     },
     X = async () => {
-      await T(j, Z, {
+      await T(j, O, {
         onSuccess: A
       })
     };
@@ -50,7 +50,7 @@ function j(e) {
     transitionState: t,
     onClose: y,
     title: j.name,
-    subtitle: p.intl.format(p.t.UMajol, {
+    subtitle: p.intl.format(p.t.UMajoq, {
       privacyLevel: G,
       privacyLevelHook: (e, n) => k !== x.j8.PUBLIC ? null : (0, i.jsxs)("div", {
         className: C.privacyLevel,
@@ -66,13 +66,13 @@ function j(e) {
     }),
     actions: [{
       variant: "secondary",
-      text: p.intl.string(p.t.CZGqeT),
+      text: p.intl.string(p.t.CZGqeX),
       onClick: () => {
         y()
       }
     }, {
       variant: "active",
-      text: p.intl.string(p.t.cK1GGY),
+      text: p.intl.string(p.t.cK1GGR),
       onClick: X,
       loading: L
     }],
@@ -83,15 +83,15 @@ function j(e) {
       description: null != (n = j.description) ? n : true,
       imageSource: (0, g.Z)(j),
       isActive: false,
-      isUserLurking: O,
+      isUserLurking: S,
       speakers: [],
       speakerCount: 0,
       rsvped: true,
       guildEvent: j
-    }), S && (0, i.jsx)("div", {
+    }), Z && (0, i.jsx)("div", {
       className: C.verticalSpacing,
       children: (0, i.jsx)(r.XZJ, {
-        checked: Z,
+        checked: O,
         onChange: e => _(e),
         label: p.intl.string(p.t.dGNtgI),
         labelType: "secondary"

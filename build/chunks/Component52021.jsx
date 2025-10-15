@@ -7,7 +7,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk793030 = require("./793030.js"),
   Chunk970683 = require("./970683.js"),
   Chunk775146 = require("./775146.jsx"),
-  Chunk470658 = require("./470658.js"),
+  Chunk948208 = require("./948208.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk835295 = require("./835295.js");
 
@@ -16,7 +16,7 @@ function d() {
     actions: (0, Chunk951288.jsx)(Chunk793030.zxk, {
       variant: "secondary",
       fullWidth: true,
-      text: Chunk388032.intl.string(Chunk470658.default.f0xbih),
+      text: Chunk388032.intl.string(Chunk948208.default.f0xbio),
       icon: Chunk793030.Gr1,
       iconPosition: "end",
       onClick: true
@@ -31,10 +31,10 @@ function d() {
         className: Chunk835295.contentBody,
         children: [(0, Chunk951288.jsx)(Chunk793030.X6q, {
           variant: "heading-md/semibold",
-          children: Chunk388032.intl.string(Chunk470658.default.qE2eqK)
+          children: Chunk388032.intl.string(Chunk948208.default.qE2eqK)
         }), (0, Chunk951288.jsx)(Chunk793030.xvT, {
           variant: "text-sm/medium",
-          children: Chunk388032.intl.string(Chunk470658.default.n4Towj)
+          children: Chunk388032.intl.string(Chunk948208.default.n4Tows)
         })]
       })]
     })

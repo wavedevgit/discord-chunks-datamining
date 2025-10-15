@@ -67,11 +67,11 @@ let m = Chunk185514.Nx.binds["0"],
       className: f.backForwardButtons,
       children: [(0, r.jsx)(o.aML, {
         "data-migration-pending": true,
-        "aria-label": p.intl.string(p.t.B9vzIP),
+        "aria-label": p.intl.string(p.t.B9vzIC),
         tooltipContentClassName: f.navigationTooltip,
         shouldShow: i,
         text: (0, r.jsxs)(r.Fragment, {
-          children: [p.intl.string(p.t.B9vzIP), (0, r.jsx)(o.M2$, {
+          children: [p.intl.string(p.t.B9vzIC), (0, r.jsx)(o.M2$, {
             shortcut: m
           })]
         }),
@@ -89,11 +89,11 @@ let m = Chunk185514.Nx.binds["0"],
         }))
       }), (0, r.jsx)(o.aML, {
         "data-migration-pending": true,
-        "aria-label": p.intl.string(p.t["9KJ29e"]),
+        "aria-label": p.intl.string(p.t["9KJ29f"]),
         tooltipContentClassName: f.navigationTooltip,
         shouldShow: s,
         text: (0, r.jsxs)(r.Fragment, {
-          children: [p.intl.string(p.t["9KJ29e"]), (0, r.jsx)(o.M2$, {
+          children: [p.intl.string(p.t["9KJ29f"]), (0, r.jsx)(o.M2$, {
             shortcut: b
           })]
         }),

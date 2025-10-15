@@ -37,17 +37,17 @@ let p = {
         section: "purchase",
         items: [p, _, ...i.purchase],
         height: 12,
-        header: Chunk388032.intl.string(Chunk388032.t.WfGV52)
+        header: Chunk388032.intl.string(Chunk388032.t["WfGV5+"])
       }, {
         section: "premium_purchase",
         items: i.premium_purchase,
         height: 12,
-        header: Chunk388032.intl.string(Chunk388032.t.TiLCgw)
+        header: Chunk388032.intl.string(Chunk388032.t.TiLCg4)
       }, {
         section: "preview",
         items: i.preview,
         height: 12,
-        header: Chunk388032.intl.string(Chunk388032.t["1vbbee"])
+        header: Chunk388032.intl.string(Chunk388032.t["1vbbeX"])
       }].filter(e => {
         let {
           items: t

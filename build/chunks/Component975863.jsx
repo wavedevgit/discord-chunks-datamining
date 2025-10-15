@@ -37,7 +37,7 @@ function d(t) {
     return o
   }(t, ["onClose", "source"]);
   let O = (0, o.e7)([a.default], () => a.default.getCurrentUser()),
-    g = i.ZP.isPremium(O) ? b.t.E0sNsc : b.t.UBcuto,
+    g = i.ZP.isPremium(O) ? b.t.E0sNsb : b.t.UBcutr,
     j = b.intl.format(g, {
       onLearnMore: function() {
         e(), (0, l.z)()
@@ -63,7 +63,7 @@ function d(t) {
   }({
     artURL: y.Z,
     type: s.cd.CUSTOM_PROFILE_UPSELL,
-    title: b.intl.string(b.t.BbsMm4),
+    title: b.intl.string(b.t.BbsMm5),
     body: j,
     glowUp: j,
     onSecondaryClick: () => {
@@ -72,7 +72,7 @@ function d(t) {
         analyticsSource: n
       })
     },
-    secondaryCTA: b.intl.string(b.t.SpAQib),
+    secondaryCTA: b.intl.string(b.t.SpAQiY),
     analyticsSource: n,
     analyticsLocation: {
       section: f.jXE.USER_PROFILE,

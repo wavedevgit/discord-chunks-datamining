@@ -20,7 +20,7 @@ class E extends(n = Chunk442837.ZP.Store) {
     let e = Chunk128449.L3.map(e => _.find(t => t.categoryId === e)).filter(Chunk823379.lm);
     return [{
       categoryId: Chunk128449.Hk,
-      name: Chunk388032.intl.string(Chunk388032.t.Ym2Ri6)
+      name: Chunk388032.intl.string(Chunk388032.t.Ym2Ri4)
     }, ...module]
   }
   getClanDiscoveryCategories() {
@@ -37,7 +37,7 @@ class E extends(n = Chunk442837.ZP.Store) {
     return d
   }
   getCategoryName(e) {
-    return e === s.Hk ? c.intl.string(c.t.Ym2Ri6) : p[e]
+    return e === s.Hk ? c.intl.string(c.t.Ym2Ri4) : p[e]
   }
 }(i = "displayName") in E ? Object.defineProperty(E, i, {
   value: "GuildDiscoveryCategoryStore",

@@ -93,19 +93,19 @@ function _(e) {
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/medium",
         color: "text-brand",
-        children: b.intl.string(b.t.ujFquz)
+        children: b.intl.string(b.t.ujFqu7)
       })]
     }) : null, n ? null : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         className: x.divider
       }), (0, r.jsx)(o.Heading, {
         variant: "heading-md/bold",
-        children: b.intl.string(b.t.tjrGcb)
+        children: b.intl.string(b.t.tjrGcX)
       }), (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
         className: x.subtitle,
-        children: b.intl.string(b.t.XFa6Q8)
+        children: b.intl.string(b.t.XFa6Q0)
       })]
     })]
   })
@@ -141,8 +141,8 @@ function C(e) {
         required: false
       }));
     if (n.length > h.b3) return void c.Z.show({
-      title: b.intl.string(b.t.Cxtq5x),
-      body: b.intl.formatToPlainString(b.t["pkbZ+U"], {
+      title: b.intl.string(b.t["Cxtq5+"]),
+      body: b.intl.formatToPlainString(b.t["pkbZ+f"], {
         numQuestions: h.b3
       })
     });
@@ -153,12 +153,12 @@ function C(e) {
       children: [n ? null : (0, r.jsxs)("div", {
         children: [(0, r.jsx)(o.Heading, {
           variant: "heading-md/bold",
-          children: b.intl.string(b.t["24Qm4M"])
+          children: b.intl.string(b.t["24Qm4O"])
         }), (0, r.jsx)(o.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
           className: x.subtitle,
-          children: b.intl.string(b.t.QvCcYe)
+          children: b.intl.string(b.t.QvCcYW)
         })]
       }), O.map((e, t) => (0, r.jsx)(f.Z, {
         guild: d,
@@ -197,7 +197,7 @@ function C(e) {
         }), (0, r.jsx)(o.Text, {
           variant: "text-md/medium",
           color: "text-brand",
-          children: b.intl.string(b.t.ujFquz)
+          children: b.intl.string(b.t.ujFqu7)
         })]
       }) : null]
     })]

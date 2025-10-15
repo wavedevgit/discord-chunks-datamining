@@ -118,7 +118,7 @@ let g = e => {
         onPrimary: O
       }))
     }, T = () => null == t ? null : (0, r.jsx)(a.Avr, {
-      text: null != n ? n : u.intl.string(u.t["13/7kX"]),
+      text: null != n ? n : u.intl.string(u.t["13/7kZ"]),
       onClick: t,
       variant: "secondary"
     });

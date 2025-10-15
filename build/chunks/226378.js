@@ -72,44 +72,44 @@ function f(e) {
   } = e, c = null == t, d = {
     disabled: false,
     isJoinAction: !c,
-    text: c ? o.intl.string(o.t.RscU7I) : o.intl.string(o.t.sqe0hj),
+    text: c ? o.intl.string(o.t.RscU7O) : o.intl.string(o.t.sqe0ho),
     tooltip: true
   }, f = (0, i.WS)(s);
   if (null != t && null != r && t.launchId === r.launchId) return u(l({}, d), {
     disabled: true,
-    text: o.intl.string(o.t.DPfdsq),
+    text: o.intl.string(o.t.DPfdsr),
     tooltip: true
   });
   if (c) return u(l({}, d), {
     disabled: !f,
-    tooltip: f ? true : o.intl.string(o.t.f41E1g)
+    tooltip: f ? true : o.intl.string(o.t.f41E1t)
   });
   if (null != n && n !== a.Fw.CAN_JOIN) {
     let e;
     switch (n) {
       case a.Fw.NO_USE_EMBEDDED_ACTIVITIES_PERMISSION:
-        e = o.intl.string(o.t.hHGrWz);
+        e = o.intl.string(o.t.hHGrW1);
         break;
       case a.Fw.ACTIVITY_AGE_GATED:
         e = o.intl.string(o.t["4WuFRE"]);
         break;
       case a.Fw.ACTIVITIES_FEATURE_NOT_ENABLED_FOR_OS:
-        e = o.intl.string(o.t.uGDCcw);
+        e = o.intl.string(o.t.uGDCc3);
         break;
       case a.Fw.ACTIVITY_NOT_SUPPORTED_ON_OS:
-        e = o.intl.string(o.t.UXoQTp);
+        e = o.intl.string(o.t.UXoQTk);
         break;
       case a.Fw.CHANNEL_FULL:
-        e = o.intl.string(o.t.rZfiNq);
+        e = o.intl.string(o.t.rZfiNj);
         break;
       case a.Fw.NO_CHANNEL_CONNECT_PERMISSION:
-        e = o.intl.string(o.t.w5SAps);
+        e = o.intl.string(o.t.w5SApq);
         break;
       case a.Fw.NO_CHANNEL:
       case a.Fw.NO_GUILD:
       case a.Fw.NO_USER:
       case a.Fw.IS_AFK_CHANNEL:
-        e = o.intl.string(o.t.Etp6uI)
+        e = o.intl.string(o.t.Etp6uL)
     }
     return u(l({}, d), {
       disabled: true,

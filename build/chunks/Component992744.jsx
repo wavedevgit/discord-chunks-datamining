@@ -29,7 +29,7 @@ let g = () => {
         icon: Chunk481060.VL1,
         "aria-hidden": true
       }), (0, Chunk951288.jsx)(Chunk984370.Z.Title, {
-        children: Chunk388032.intl.string(Chunk388032.t["8LKchl"])
+        children: Chunk388032.intl.string(Chunk388032.t["8LKcho"])
       })]
     }), (0, Chunk951288.jsxs)("div", {
       className: Chunk503484.content,
@@ -40,11 +40,11 @@ let g = () => {
       }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
         className: Chunk503484.splashHeader,
         variant: "heading-lg/medium",
-        children: Chunk388032.intl.string(Chunk388032.t.m9gRVN)
+        children: Chunk388032.intl.string(Chunk388032.t.m9gRVF)
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         className: Chunk503484.splashText,
         variant: "text-md/normal",
-        children: Chunk388032.intl.string(Chunk388032.t.wC3j56)
+        children: Chunk388032.intl.string(Chunk388032.t["wC3j5+"])
       })]
     })]
   })

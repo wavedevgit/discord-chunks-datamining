@@ -23,13 +23,13 @@ function c(e) {
   return {
     tabs: r.useMemo(() => [{
       id: a.e5.ALL,
-      label: s.intl.string(s.t["0SzXmi"])
+      label: s.intl.string(s.t["0SzXmp"])
     }, t ? {
       id: a.e5.CLAIMED,
-      label: s.intl.string(s.t.zyNYNB)
+      label: s.intl.string(s.t.zyNYND)
     } : null, t && u ? {
       id: a.e5.PREVIEW_TOOL,
-      label: s.intl.string(s.t.BDUDau)
+      label: s.intl.string(s.t.BDUDam)
     } : null].filter(l.lm), [t, u]),
     selectedTab: n,
     onSelectTab: d

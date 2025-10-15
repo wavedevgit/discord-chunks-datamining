@@ -63,11 +63,11 @@ class O extends Chunk647438.PureComponent {
             children: null != Chunk647438 ? Chunk647438 : Chunk391690.Z.getLabelFromPath(require)
           }), Chunk325432 ? (0, Chunk951288.jsx)("span", {
             className: Chunk499126.defaultIndicator,
-            children: Chunk388032.intl.string(Chunk388032.t.bBvAEH)
+            children: Chunk388032.intl.string(Chunk388032.t.bBvAEB)
           }) : null]
         }), null != Chunk579022 && null != module && null != exports ? (0, Chunk951288.jsx)(Chunk570928.Z, {
           className: Chunk499126.rowBody,
-          hoverText: Chunk388032.intl.formatToPlainString(Chunk388032.t["Fxo9e+"], {
+          hoverText: Chunk388032.intl.formatToPlainString(Chunk388032.t.Fxo9e3, {
             available: module,
             total: exports
           }),
@@ -80,7 +80,7 @@ class O extends Chunk647438.PureComponent {
       }), (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "secondary",
         size: "sm",
-        text: Chunk388032.intl.string(Chunk388032.t.bt75uw),
+        text: Chunk388032.intl.string(Chunk388032.t.bt75u7),
         disabled: null != Chunk442837,
         onClick: this.handleStartEditing
       })]
@@ -100,14 +100,14 @@ class O extends Chunk647438.PureComponent {
       children: (0, Chunk951288.jsxs)(Chunk600164.Z, {
         children: [this.renderDiskUsageCircle(), (0, Chunk951288.jsxs)(Chunk600164.Z.Child, {
           children: [(0, Chunk951288.jsx)(Chunk481060.oil, {
-            label: Chunk388032.intl.string(Chunk388032.t.AJkKCB),
+            label: Chunk388032.intl.string(Chunk388032.t.AJkKCA),
             value: require,
             placeholder: Chunk391690.Z.getLabelFromPath(module),
             onChange: this.handleLabelChange
           }), (0, Chunk951288.jsx)("div", {
             className: Chunk197571.marginTop20,
             children: (0, Chunk951288.jsx)(Chunk481060.oil, {
-              label: Chunk388032.intl.string(Chunk388032.t.lnUCwX),
+              label: Chunk388032.intl.string(Chunk388032.t.lnUCwc),
               disabled: true,
               value: module
             })
@@ -117,7 +117,7 @@ class O extends Chunk647438.PureComponent {
               checked: null != Chunk647438 ? Chunk647438 : this.props.isDefault,
               disabled: this.props.isDefault,
               onChange: this.handleToggleDefault,
-              label: Chunk388032.intl.string(Chunk388032.t.Z2MWuH)
+              label: Chunk388032.intl.string(Chunk388032.t.Z2MWuL)
             })
           }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
             className: Chunk499126.separator
@@ -125,7 +125,7 @@ class O extends Chunk647438.PureComponent {
             children: [(0, Chunk951288.jsx)(Chunk481060.Button, {
               variant: "critical-secondary",
               size: "sm",
-              text: Chunk388032.intl.string(Chunk388032.t.iBUzS5),
+              text: Chunk388032.intl.string(Chunk388032.t.iBUzS0),
               disabled: exports || this.props.isDefault,
               onClick: this.handleRemoveLocation
             }), (0, Chunk951288.jsx)(Chunk600164.Z, {
@@ -134,12 +134,12 @@ class O extends Chunk647438.PureComponent {
                 children: [(0, Chunk951288.jsx)(Chunk481060.Button, {
                   variant: "secondary",
                   size: "sm",
-                  text: Chunk388032.intl.string(Chunk388032.t["ETE/oC"]),
+                  text: Chunk388032.intl.string(Chunk388032.t["ETE/oK"]),
                   onClick: this.handleStopEditing
                 }), (0, Chunk951288.jsx)(Chunk481060.Button, {
                   variant: "active",
                   size: "sm",
-                  text: Chunk388032.intl.string(Chunk388032.t["R3BPH+"]),
+                  text: Chunk388032.intl.string(Chunk388032.t.R3BPHx),
                   disabled: module === this.props.path && require === this.props.label && Chunk647438 === this.props.isDefault,
                   onClick: this.handleSaveChanges
                 })]
@@ -200,15 +200,15 @@ class O extends Chunk647438.PureComponent {
         }
         return e
       }({}, e), {
-        header: g.intl.string(g.t.iBUzS5),
-        confirmText: g.intl.string(g.t.iBUzS5),
-        cancelText: g.intl.string(g.t["ETE/oC"]),
+        header: g.intl.string(g.t.iBUzS0),
+        confirmText: g.intl.string(g.t.iBUzS0),
+        cancelText: g.intl.string(g.t["ETE/oK"]),
         onConfirm: () => {
           this.handleStopEditing(), (0, o.iD)(this.props.path)
         },
         children: (0, r.jsx)(a.Text, {
           variant: "text-md/normal",
-          children: g.intl.string(g.t["1XqeW2"])
+          children: g.intl.string(g.t["1XqeW1"])
         })
       })))
     }), _(this, "handleSaveChanges", () => {
@@ -247,7 +247,7 @@ class E extends Chunk647438.PureComponent {
     return (0, Chunk951288.jsx)("div", {
       className: Chunk499126.wrapper,
       children: (0, Chunk951288.jsxs)(Chunk481060.gNt, {
-        label: Chunk388032.intl.string(Chunk388032.t.aLszkC),
+        label: Chunk388032.intl.string(Chunk388032.t.aLszkJ),
         children: [module.map(e => {
           let {
             path: l,
@@ -267,7 +267,7 @@ class E extends Chunk647438.PureComponent {
           children: (0, Chunk951288.jsx)(Chunk481060.Button, {
             variant: "primary",
             size: "sm",
-            text: Chunk388032.intl.string(Chunk388032.t.pnZ2uk),
+            text: Chunk388032.intl.string(Chunk388032.t.pnZ2ur),
             disabled: !Chunk358085.isPlatformEmbedded,
             onClick: this.handleAddInstallationLocation
           })

@@ -55,11 +55,11 @@ function p(e) {
     renderPopout: e => t.isThread() ? (0, r.jsx)(a.Z, d(u({}, e), {
       channel: t,
       navId: "recents-thread-notifications",
-      label: c.intl.string(c.t.ljs3Oe)
+      label: c.intl.string(c.t.ljs3OT)
     })) : (0, r.jsx)(o.Z, d(u({}, e), {
       channel: t,
       navId: "recents-notifications",
-      label: c.intl.string(c.t.ljs3Oe),
+      label: c.intl.string(c.t.ljs3OT),
       location: {
         section: s.jXE.INBOX
       },
@@ -71,7 +71,7 @@ function p(e) {
       } = e;
       return (0, r.jsx)(l.M0o, {
         ref: n,
-        tooltip: c.intl.string(c.t.h850Ss),
+        tooltip: c.intl.string(c.t.h850Sk),
         color: l.YX$.TERTIARY,
         icon: (0, r.jsx)(l.Dkj, {
           size: "xs",

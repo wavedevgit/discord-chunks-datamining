@@ -42,9 +42,9 @@ function y() {
   }, [exports]), module) ? (0, Chunk951288.jsx)(Chunk481060.$jN, {}) : null != y ? (0, Chunk951288.jsxs)(Chunk481060.qXd, {
     color: Chunk481060.DM8.DANGER,
     className: Chunk737943.nagbar,
-    children: [Chunk388032.intl.string(Chunk388032.t.TDRvqs), (0, Chunk951288.jsx)(Chunk481060.EyT, {
+    children: [Chunk388032.intl.string(Chunk388032.t.TDRvqq), (0, Chunk951288.jsx)(Chunk481060.EyT, {
       onClick: () => Chunk103879.yq(),
-      children: Chunk388032.intl.string(Chunk388032.t.R1AN4F)
+      children: Chunk388032.intl.string(Chunk388032.t.R1AN4O)
     })]
   }) : (0, Chunk951288.jsxs)("div", {
     className: Chunk737943.container,

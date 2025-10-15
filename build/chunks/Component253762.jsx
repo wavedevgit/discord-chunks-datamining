@@ -23,9 +23,9 @@ function _(t) {
     platformType: b
   } = t, {
     slide: C,
-    gotoNext: h,
-    gotoError: f,
-    handleWaitingForConnection: T,
+    gotoNext: T,
+    gotoError: h,
+    handleWaitingForConnection: f,
     handleAuthToken: A,
     expectedCallbackState: g,
     callbackData: I,
@@ -43,7 +43,7 @@ function _(t) {
         id: u.O.LANDING,
         children: (0, o.jsx)(c.A, {
           platformType: b,
-          onContinue: h,
+          onContinue: T,
           onClose: e
         })
       }), (0, o.jsx)(i.Mi4, {
@@ -51,9 +51,9 @@ function _(t) {
         children: (0, o.jsx)(l.A, {
           platformType: b,
           isWaitingForConnection: false,
-          onWaitingForConnection: T,
+          onWaitingForConnection: f,
           onAuthToken: A,
-          onError: f,
+          onError: h,
           onClose: e
         })
       }), (0, o.jsx)(i.Mi4, {
@@ -63,7 +63,7 @@ function _(t) {
           isWaitingForConnection: true,
           expectedCallbackState: g,
           onAuthToken: A,
-          onError: f,
+          onError: h,
           onClose: e
         })
       }), (0, o.jsx)(i.Mi4, {
@@ -71,14 +71,14 @@ function _(t) {
         children: (0, o.jsx)(s.E, {
           platformType: b,
           authToken: I,
-          onContinue: h,
-          onError: f,
+          onContinue: T,
+          onError: h,
           onClose: e
         })
       }), (0, o.jsx)(i.Mi4, {
         id: u.O.ERROR,
         children: (0, o.jsx)(a.X, {
-          onContinue: h,
+          onContinue: T,
           onClose: e,
           errorCode: N
         })

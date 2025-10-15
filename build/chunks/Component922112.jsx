@@ -31,7 +31,7 @@ let b = function(e) {
     channelId: C,
     description: O
   } = l, y = u.Z.getChannel(C), N = null;
-  null != y && (0, d.k3)(y) || (N = f.intl.string(f.t.kTdL8X));
+  null != y && (0, d.k3)(y) || (N = f.intl.string(f.t.kTdL8f));
   let E = null == O || 0 === O.length,
     I = g.ZP.getResourceChannelIconURL({
       channelId: l.channelId,
@@ -145,13 +145,13 @@ let b = function(e) {
           children: O
         })]
       }), (0, r.jsx)(s.u, {
-        text: f.intl.string(f.t.bt75uw),
+        text: f.intl.string(f.t.bt75u7),
         children: (0, r.jsx)(o.hU, {
           icon: o.vdY,
           size: "sm",
           variant: "primary",
           onClick: D,
-          "aria-label": f.intl.string(f.t.bt75uw)
+          "aria-label": f.intl.string(f.t.bt75u7)
         })
       })]
     }), null != N && (0, r.jsx)(o.Text, {

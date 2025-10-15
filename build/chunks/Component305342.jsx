@@ -42,7 +42,7 @@ let L = 24,
       benefits: t,
       header: n,
       guildId: a
-    } = e, [o, s] = i.useState(false), l = o ? t : t.slice(0, x), u = t.length > x, f = t.length - x, _ = w.intl.formatToPlainString(w.t.XSdy72, {
+    } = e, [o, s] = i.useState(false), l = o ? t : t.slice(0, x), u = t.length > x, f = t.length - x, _ = w.intl.formatToPlainString(w.t["XSdy7+"], {
       numTruncated: f
     }), p = () => s(e => !e), m = (0, d.Dt)();
     return 0 === t.length ? null : (0, r.jsxs)("div", {
@@ -90,7 +90,7 @@ let L = 24,
         variant: "text-xs/bold",
         color: "header-secondary",
         className: D.sectionHeader,
-        children: w.intl.format(w.t.NAnXEo, {
+        children: w.intl.format(w.t.NAnXEh, {
           count: o.length
         })
       }), (0, r.jsx)(c.LZC, {
@@ -127,7 +127,7 @@ let L = 24,
           variant: "text-xs/bold",
           color: "header-secondary",
           className: D.sectionHeader,
-          children: w.intl.string(w.t.FJZmYx)
+          children: w.intl.string(w.t.FJZmY2)
         }),
         children: [(0, r.jsx)(c.LZC, {
           size: 8
@@ -137,11 +137,11 @@ let L = 24,
           className: D.roleMessagePreview
         })]
       }), (0, r.jsx)(M, {
-        header: w.intl.string(w.t.LtfhAj),
+        header: w.intl.string(w.t.LtfhAg),
         benefits: l,
         guildId: n
       }), (0, r.jsx)(M, {
-        header: w.intl.string(w.t["8oxWpO"]),
+        header: w.intl.string(w.t["8oxWpK"]),
         benefits: u,
         guildId: n
       }), (0, r.jsx)(j, {
@@ -155,7 +155,7 @@ let L = 24,
       onToggle: t,
       isViewAll: n,
       showMoreText: i
-    } = e, a = n ? w.intl.string(w.t["r/xxPU"]) : i;
+    } = e, a = n ? w.intl.string(w.t["r/xxPT"]) : i;
     return (0, r.jsx)(c.Avr, {
       text: a,
       onClick: t,
@@ -180,19 +180,19 @@ let L = 24,
     } = (0, E.Z)(a), M = (null == x ? true : x.id) === t, j = (null == L ? true : L.status) === P.O0b.CANCELED, [G, B] = i.useState(false), [Z, F] = i.useState(false), V = i.useCallback(e => {
       let t = false;
       null != e && (t = e.scrollHeight - e.clientHeight > 1), F(t)
-    }, []), [H] = g._T(t), [Y] = g.PK(t), [W] = g.TT(t), [K] = g.F2(t), z = (0, b.Z)(n, t), q = null != W && null == L && z, X = () => B(e => !e), Q = (0, u.Z)(R.iP), [J, $] = i.useState(false), ee = J || !Q, et = () => $(e => !e), en = (0, s.e7)([f.Z], () => f.Z.isViewingServerShop(n)), er = (null == p ? true : p.published) === true, ei = (null == p ? true : p.soft_deleted) === true, ea = w.intl.string(w.t.KzmEA9);
+    }, []), [H] = g._T(t), [Y] = g.PK(t), [W] = g.TT(t), [K] = g.F2(t), z = (0, b.Z)(n, t), q = null != W && null == L && z, X = () => B(e => !e), Q = (0, u.Z)(R.iP), [J, $] = i.useState(false), ee = J || !Q, et = () => $(e => !e), en = (0, s.e7)([f.Z], () => f.Z.isViewingServerShop(n)), er = (null == p ? true : p.published) === true, ei = (null == p ? true : p.soft_deleted) === true, ea = w.intl.string(w.t.KzmEAw);
     return (er || en) && !ei ? (0, r.jsxs)("article", {
       className: D.container,
       "aria-label": H,
       children: [q && (0, r.jsxs)("div", {
         className: o()(D.tierTrialIndicator, D.tierTopIndicator),
-        children: [w.intl.format(w.t.L2ouip, {
+        children: [w.intl.format(w.t.L2ouio, {
           trialPeriodDuration: (0, h.iG)({
             interval: W.interval,
             interval_count: W.interval_count
           })
         }), (0, r.jsx)(l.u, {
-          text: w.intl.formatToPlainString(w.t.FYyR4o, {
+          text: w.intl.formatToPlainString(w.t.FYyR4u, {
             activeTrialUserLimit: null != K ? K : 0
           }),
           children: (0, r.jsx)(c.d3s, {
@@ -221,7 +221,7 @@ let L = 24,
               disabled: true,
               fullWidth: true,
               variant: j ? "secondary" : "primary",
-              text: j ? w.intl.string(w.t.iKHmu0) : w.intl.string(w.t.XvAuMo)
+              text: j ? w.intl.string(w.t.iKHmu7) : w.intl.string(w.t.XvAuMj)
             }) : (0, r.jsxs)(r.Fragment, {
               children: [O ? null : (0, r.jsx)(c.Wn, {
                 className: D.helpMessage,
@@ -229,7 +229,7 @@ let L = 24,
                 children: v
               }), (0, r.jsx)(c.Button, {
                 fullWidth: true,
-                text: w.intl.string(w.t.fM5ZsX),
+                text: w.intl.string(w.t.fM5Zsb),
                 disabled: !O || S,
                 loading: I,
                 onClick: y,

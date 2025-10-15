@@ -99,9 +99,9 @@ function I(e) {
     artContainerClassName: E.artContainer,
     enableArtBoxShadow: false,
     type: h.cd.UPLOAD_ERROR_UPSELL,
-    title: g.intl.string(g.t["9C+41g"]),
+    title: g.intl.string(g.t["9C+41t"]),
     body: R,
-    context: g.intl.formatToPlainString(g.t.q5fTZp, {
+    context: g.intl.formatToPlainString(g.t.q5fTZm, {
       maxSize: C
     }),
     glowUp: N,

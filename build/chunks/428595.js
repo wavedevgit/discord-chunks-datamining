@@ -238,7 +238,7 @@ let H = e => {
           d = null != l ? _.Z.getRole(l.id, s) : null;
         if (null == d) return {
           type: "text",
-          content: "@".concat(L.intl.string(L.t["YV4F/n"]))
+          content: "@".concat(L.intl.string(L.t["YV4F/v"]))
         };
         let f = (0, u.zI)(null == l ? true : l.id, d) && !(0, c.Gr)(d);
         return {
@@ -286,7 +286,7 @@ let H = e => {
         }
         let l = e[1],
           c = null != l && w.Xyh.test(l.trim()),
-          u = c && n.unknownUserMentionPlaceholder ? "@".concat(L.intl.string(L.t.sKdZ6U)) : e[0];
+          u = c && n.unknownUserMentionPlaceholder ? "@".concat(L.intl.string(L.t.sKdZ6e)) : e[0];
         return {
           userId: i,
           channelId: n.channelId,
@@ -351,7 +351,7 @@ let H = e => {
           channelId: n.channelId,
           content: [{
             type: "text",
-            content: L.intl.string(L.t["11pdXZ"])
+            content: L.intl.string(L.t["11pdXV"])
           }],
           icon: true
         };
@@ -363,7 +363,7 @@ let H = e => {
           channelId: n.channelId,
           content: [{
             type: "text",
-            content: "".concat(null != (a = null == l ? true : l.name) ? a : L.intl.string(L.t["11pdXZ"]))
+            content: "".concat(null != (a = null == l ? true : l.name) ? a : L.intl.string(L.t["11pdXV"]))
           }],
           icon: null != l && null != l.icon_hash ? m.ZP.getApplicationIconURL({
             id: l.id,

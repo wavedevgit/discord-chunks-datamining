@@ -32,7 +32,7 @@ let d = function(e) {
       style: {
         opacity: i
       },
-      children: c.intl.string(c.t.o6FLcF)
+      children: c.intl.string(c.t.o6FLcH)
     })]
   })
 }

@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx");
 
 function T(e) {
-  if (e === a._.WEEK) return I.t.SjOZfm
+  if (e === a._.WEEK) return I.t.SjOZfn
 }
 let S = (e, t, n, r) => {
     let i = T(r),
@@ -38,7 +38,7 @@ let S = (e, t, n, r) => {
       userName: a
     }).replaceAll("*", "")
   },
-  A = (e, t) => I.intl.formatToPlainString(I.t.Osmpr9, {
+  A = (e, t) => I.intl.formatToPlainString(I.t.Osmpr6, {
     username: t.username,
     artist: e.extra.artist.name
   }),
@@ -89,9 +89,9 @@ let S = (e, t, n, r) => {
         headerIcons: C === o.p.SPOTIFY ? (0, r.jsx)(y.Z, {
           onClick: M,
           Icon: u.Z,
-          "aria-label": I.intl.string(I.t["0ZB/XE"])
+          "aria-label": I.intl.string(I.t["0ZB/XF"])
         }) : null,
-        userDescription: I.t.CcVI1T,
+        userDescription: I.t.CcVI1d,
         title: T,
         subtitle: R,
         badges: (0, r.jsx)(E.Gk, {

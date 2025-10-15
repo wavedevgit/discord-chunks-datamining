@@ -20,11 +20,11 @@ function d(e) {
   return (0, i.jsxs)("div", {
     className: r()(o.container, n),
     children: [(0, i.jsx)("img", {
-      alt: l.intl.string(l.t.VoB8Oc),
+      alt: l.intl.string(l.t.VoB8OT),
       src: s,
       className: r()(o.sparkleIcon, o.sparkleBottom)
     }), t, (0, i.jsx)("img", {
-      alt: l.intl.string(l.t.VoB8Oc),
+      alt: l.intl.string(l.t.VoB8OT),
       src: c,
       className: r()(o.sparkleIcon, o.sparkleTop)
     })]

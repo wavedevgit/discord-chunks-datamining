@@ -16,17 +16,17 @@ function s(t) {
     widget: e,
     onSelect: r,
     onClose: s
-  } = t, p = (0, c.Z)(e), b = (0, l.Z)(e.id, "boolean" == typeof e.meta.horizontal && e.meta.horizontal), f = o.useRef(s);
+  } = t, p = (0, c.Z)(e), f = (0, l.Z)(e.id, "boolean" == typeof e.meta.horizontal && e.meta.horizontal), b = o.useRef(s);
   return o.useEffect(() => {
-    f.current = s
+    b.current = s
   }), o.useEffect(() => () => {
     var t;
-    return null == (t = f.current) ? true : t.call(f)
+    return null == (t = b.current) ? true : t.call(b)
   }, []), (0, n.jsxs)(i.v2r, {
     navId: "overlay-go-live-widget-context-menu",
     onClose: a.Zy,
-    "aria-label": u.intl.string(u.t.tPfVWi),
+    "aria-label": u.intl.string(u.t.tPfVWl),
     onSelect: r,
-    children: [b, p]
+    children: [f, p]
   })
 }

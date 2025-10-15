@@ -57,7 +57,7 @@ function b(e) {
       component: (0, r.jsx)(a.nn4, {
         children: (0, r.jsx)(a.H, {
           id: x,
-          children: g.intl.format(g.t.KRe1Fk, {
+          children: g.intl.format(g.t.KRe1Fh, {
             name: v
           })
         })

@@ -183,7 +183,7 @@ class K extends(r = Chunk647438.Component) {
       className: Chunk55343.videoButton,
       onClick: r,
       tabIndex: Chunk647438 ? false : 0,
-      "aria-label": Chunk388032.intl.string(Chunk388032.t.ZcgDJX),
+      "aria-label": Chunk388032.intl.string(Chunk388032.t.ZcgDJS),
       children: (0, Chunk951288.jsx)(Chunk481060.fpf, {
         size: "xs",
         color: "currentColor",
@@ -193,7 +193,7 @@ class K extends(r = Chunk647438.Component) {
       className: Chunk55343.videoButton,
       onClick: i,
       tabIndex: Chunk647438 ? false : 0,
-      "aria-label": Chunk388032.intl.string(Chunk388032.t.hsvh0i),
+      "aria-label": Chunk388032.intl.string(Chunk388032.t.hsvh0t),
       children: (0, Chunk951288.jsx)(Chunk181058.Z, {
         className: Chunk55343.controlIcon
       }, "replay")
@@ -201,7 +201,7 @@ class K extends(r = Chunk647438.Component) {
       className: Chunk55343.videoButton,
       onClick: i,
       tabIndex: Chunk647438 ? false : 0,
-      "aria-label": Chunk388032.intl.string(Chunk388032.t.RscU7I),
+      "aria-label": Chunk388032.intl.string(Chunk388032.t.RscU7O),
       children: (0, Chunk951288.jsx)(Chunk481060.o1U, {
         size: "xs",
         color: "currentColor",
@@ -763,7 +763,7 @@ class J extends(i = Chunk647438.PureComponent) {
       width: Chunk167080 ? window.screen.width : Chunk181058,
       disabled: !r,
       children: exports === F.VIDEO ? (0, Chunk951288.jsx)(Chunk268353.Z, {
-        "aria-label": Chunk388032.intl.string(Chunk388032.t["2nM3Pk"]),
+        "aria-label": Chunk388032.intl.string(Chunk388032.t["2nM3Pj"]),
         className: Chunk55343.videoButton,
         iconClassName: Chunk55343.controlIcon,
         guestWindow: window,

@@ -18,10 +18,10 @@ function p(e) {
   var t, n, a, p;
   let {
     defaultCategory: _,
-    onCategoryChange: f,
-    className: h
+    onCategoryChange: h,
+    className: f
   } = e, [m, x] = i.useState(_), [g, j] = i.useState(null), b = (0, s.Z)(), y = i.useMemo(() => [{
-    name: c.intl.string(c.t["6Zuivx"]),
+    name: c.intl.string(c.t["6Zuiv7"]),
     value: d.KN.Trick,
     key: "Trick",
     icon: (0, r.jsx)(o.yDF, {
@@ -31,7 +31,7 @@ function p(e) {
     onMouseEnter: () => j(d.KN.Trick),
     onMouseLeave: () => j(null)
   }, {
-    name: c.intl.string(c.t["2UeOlY"]),
+    name: c.intl.string(c.t["2UeOlZ"]),
     value: d.KN.Treat,
     key: "Treat",
     icon: (0, r.jsx)(o.sq, {
@@ -41,10 +41,10 @@ function p(e) {
     onMouseEnter: () => j(d.KN.Treat),
     onMouseLeave: () => j(null)
   }], []), L = i.useCallback(e => {
-    x(e.value), f(e.value)
-  }, [f]), S = null == b || null == (n = b.segmentedControlAnimations) || null == (t = n.trick) ? true : t.getAnimationData, v = null == b || null == (p = b.segmentedControlAnimations) || null == (a = p.treat) ? true : a.getAnimationData;
+    x(e.value), h(e.value)
+  }, [h]), S = null == b || null == (n = b.segmentedControlAnimations) || null == (t = n.trick) ? true : t.getAnimationData, v = null == b || null == (p = b.segmentedControlAnimations) || null == (a = p.treat) ? true : a.getAnimationData;
   return (0, r.jsxs)("div", {
-    className: l()(u.container, h),
+    className: l()(u.container, f),
     children: [(0, r.jsx)(C.w, {
       options: y,
       value: m,

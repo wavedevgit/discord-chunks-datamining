@@ -1,7 +1,7 @@
 /** Chunk was on 15076 **/
 /** chunk id: 907941, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => q
+  default: () => F
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -72,9 +72,9 @@ function U(e) {
   let {
     label: t,
     channelId: n
-  } = e, [s, l] = (0, c.Wu)([b.Z], () => {
-    let e = b.Z.getChannel(n);
-    return [e, (null == e ? true : e.parent_id) != null ? b.Z.getChannel(e.parent_id) : null]
+  } = e, [s, l] = (0, c.Wu)([S.Z], () => {
+    let e = S.Z.getChannel(n);
+    return [e, (null == e ? true : e.parent_id) != null ? S.Z.getChannel(e.parent_id) : null]
   });
   return null == s ? t : (0, i.jsx)(m.ZZ$, {
     icon: (0, f.KS)(s),
@@ -96,14 +96,14 @@ function z(e) {
     children: [(0, i.jsxs)(m.Kqy, {
       gap: 20,
       children: [(0, i.jsx)(m.rsf, {
-        label: I.intl.formatToPlainString(I.t["J+7D9E"], {
+        label: I.intl.formatToPlainString(I.t["J+7D9P"], {
           name: l.name
         }),
-        description: I.intl.string(I.t["8wbTQ6"]),
+        description: I.intl.string(I.t["8wbTQ0"]),
         checked: s,
         onChange: e => r("muted", e, M.UE.muted(e))
       }), s ? (0, i.jsx)(m.q4e, {
-        label: I.intl.string(I.t.Ztu2Yo),
+        label: I.intl.string(I.t.Ztu2Ym),
         options: (0, w.W9)(),
         value: a,
         onChange: e => {
@@ -123,7 +123,7 @@ function z(e) {
   })
 }
 
-function Y(e) {
+function H(e) {
   let {
     muted: t,
     messageNotifications: n,
@@ -135,19 +135,19 @@ function Y(e) {
     children: [(0, i.jsx)("div", {
       className: R.largeSpacing,
       children: (0, i.jsx)(h.E, {
-        label: I.intl.string(I.t.lprV7V),
+        label: I.intl.string(I.t.lprV7e),
         disabled: t,
         value: n,
         onChange: e => l("message_notifications", e, M.UE.notifications(e)),
         options: [{
-          name: I.intl.string(I.t["n/bTaY"]),
+          name: I.intl.string(I.t["n/bTaW"]),
           value: T.bL.ALL_MESSAGES,
-          desc: null != s && s >= T.qWG ? I.intl.string(I.t.Dh5p5j) : null
+          desc: null != s && s >= T.qWG ? I.intl.string(I.t.Dh5p5u) : null
         }, {
-          name: I.intl.format(I.t.L2hmYy, {}),
+          name: I.intl.format(I.t.L2hmY2, {}),
           value: T.bL.ONLY_MENTIONS
         }, {
-          name: I.intl.string(I.t.CtVGyQ),
+          name: I.intl.string(I.t.CtVGyc),
           value: T.bL.NO_MESSAGES
         }]
       })
@@ -170,17 +170,17 @@ function V(e) {
     className: R.largeSpacing,
     gap: 16,
     children: [(0, i.jsx)(m.rsf, {
-      label: I.intl.format(I.t.OWiWAp, {}),
+      label: I.intl.format(I.t.OWiWAg, {}),
       onChange: e => s("suppress_everyone", e, M.UE.suppressEveryone(e)),
       checked: t
     }), (0, i.jsx)(m.izJ, {}), (0, i.jsx)(m.rsf, {
-      label: I.intl.string(I.t["O/QdoD"]),
+      label: I.intl.string(I.t["O/QdoK"]),
       onChange: e => s("suppress_roles", e, M.UE.suppressRoles(e)),
       checked: n
     }), (0, i.jsx)(m.izJ, {}), (0, i.jsxs)(m.Kqy, {
       gap: 4,
       children: [(0, i.jsx)(m.rsf, {
-        label: I.intl.string(I.t.gPuteJ),
+        label: I.intl.string(I.t.gPuteH),
         onChange: e => {
           x.Z.updateGuildNotificationSettings(d, {
             notify_highlights: e ? T.gLR.DISABLED : T.gLR.ENABLED
@@ -188,21 +188,21 @@ function V(e) {
         },
         checked: o || l === T.gLR.DISABLED,
         disabled: o,
-        description: I.intl.string(I.t["Vw/Xn8"])
+        description: I.intl.string(I.t["Vw/Xn5"])
       }), (0, i.jsx)(m.Anchor, {
         href: y.Z.getArticleURL(T.BhN.HIGHLIGHTS),
         children: (0, i.jsx)(m.Text, {
           variant: "text-sm/normal",
           color: "text-link",
-          children: I.intl.string(I.t.PRBn9K)
+          children: I.intl.string(I.t.PRBn9P)
         })
       })]
     }), (0, i.jsx)(m.izJ, {}), (0, i.jsx)(m.rsf, {
-      label: I.intl.string(I.t.ONG3Yz),
+      label: I.intl.string(I.t.ONG3Y2),
       checked: r,
       onChange: e => s("mute_scheduled_events", e, M.UE.mutedEvents(e))
     }), (0, i.jsx)(m.izJ, {}), (0, i.jsx)(m.rsf, {
-      label: I.intl.string(I.t.h1DL66),
+      label: I.intl.string(I.t["h1DL6+"]),
       checked: !o && a,
       disabled: o,
       onChange: e => s("mobile_push", e, M.UE.mobilePush(e))
@@ -210,7 +210,7 @@ function V(e) {
   })
 }
 
-function H(e) {
+function Y(e) {
   let {
     setNewChannelOverrides: t,
     newChannelOverrides: n,
@@ -234,10 +234,10 @@ function H(e) {
   return (0, i.jsx)("div", {
     className: R.largeSpacing,
     children: (0, i.jsx)(m.VcW, {
-      label: I.intl.string(I.t["Z+oF8h"]),
-      description: I.intl.string(I.t["2Y9ZfA"]),
+      label: I.intl.string(I.t["Z+oF8v"]),
+      description: I.intl.string(I.t["2Y9ZfH"]),
       value: T.lds,
-      placeholder: I.intl.string(I.t["Z+oF8h"]),
+      placeholder: I.intl.string(I.t["Z+oF8v"]),
       renderOptionLabel: e => (0, i.jsx)(U, {
         label: e.label,
         channelId: e.value
@@ -271,7 +271,7 @@ function W(e) {
     } = e;
     if (!h.has(t.id) || null != r[t.id] && 0 === r[t.id].length) return null;
     let s = n[t.id];
-    return (0, i.jsx)(A.f, {
+    return (0, i.jsx)(P.f, {
       channel: t,
       guildMuted: a,
       muted: null != s && (0, p.m$)(s),
@@ -287,7 +287,7 @@ function W(e) {
     children: (0, i.jsx)(m.Text, {
       className: R.overrideHeader,
       variant: "text-sm/semibold",
-      children: I.intl.string(I.t["2Y9ZfA"])
+      children: I.intl.string(I.t["2Y9ZfH"])
     })
   }, "placeholder")), (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)("div", {
@@ -295,27 +295,27 @@ function W(e) {
       children: [(0, i.jsx)(m.Heading, {
         variant: "eyebrow",
         className: R.headerName,
-        children: I.intl.string(I.t.uShwWv)
+        children: I.intl.string(I.t.uShwWl)
       }), (0, i.jsx)(m.Heading, {
         variant: "eyebrow",
         className: R.headerOption,
-        children: I.intl.string(I.t.e29Z12)
+        children: I.intl.string(I.t.e29Z19)
       }), (0, i.jsx)(m.Heading, {
         variant: "eyebrow",
         className: R.headerOption,
-        children: I.intl.string(I.t.DD6gNd)
+        children: I.intl.string(I.t.DD6gNT)
       }), (0, i.jsx)(m.Heading, {
         variant: "eyebrow",
         className: R.headerOption,
-        children: I.intl.string(I.t.CtVGyQ)
+        children: I.intl.string(I.t.CtVGyc)
       }), (0, i.jsx)(m.Heading, {
         variant: "eyebrow",
         className: R.headerOption,
         children: (0, i.jsx)(g.u, {
-          text: I.intl.string(I.t["8wbTQ6"]),
+          text: I.intl.string(I.t["8wbTQ0"]),
           position: "bottom",
           children: (0, i.jsx)("span", {
-            children: I.intl.string(I.t.sWmtI6)
+            children: I.intl.string(I.t.sWmtIy)
           })
         })
       })]
@@ -323,12 +323,12 @@ function W(e) {
   })
 }
 
-function J(e) {
+function q(e) {
   let {
     guildId: t,
     onClose: n,
     transitionState: l
-  } = e, r = (0, c.e7)([S.Z], () => S.Z.getCategories(t)), a = (0, c.e7)([O.Z], () => O.Z.getGuild(t)), o = (0, c.e7)([E.Z], () => E.Z.getMemberCount(t)), {
+  } = e, r = (0, c.e7)([b.Z], () => b.Z.getCategories(t)), a = (0, c.e7)([O.Z], () => O.Z.getGuild(t)), o = (0, c.e7)([E.Z], () => E.Z.getMemberCount(t)), {
     suppressEveryone: u,
     suppressRoles: h,
     muteEvents: g,
@@ -336,7 +336,7 @@ function J(e) {
     muted: p,
     muteConfig: j,
     messageNotifications: f,
-    channelOverrides: b,
+    channelOverrides: S,
     notifyHighlights: Z
   } = (0, c.cj)([C.ZP], () => ({
     suppressEveryone: C.ZP.isSuppressEveryoneEnabled(t),
@@ -355,15 +355,15 @@ function J(e) {
       }
     } = e;
     return (0, N.r8)(t) || t === T.d4z.GUILD_CATEGORY
-  }), [r]), A = (e, n, i) => {
+  }), [r]), P = (e, n, i) => {
     x.Z.updateGuildNotificationSettings(t, {
       [e]: n
     }, i)
   };
   return (0, i.jsxs)(d.Modal, {
-    title: I.intl.string(I.t.h850Ss),
+    title: I.intl.string(I.t.h850Sk),
     actions: [{
-      text: I.intl.string(I.t.i4jeWR),
+      text: I.intl.string(I.t.i4jeWV),
       onClick: n
     }],
     onClose: n,
@@ -372,8 +372,8 @@ function J(e) {
       muteConfig: j,
       muted: p,
       guild: a,
-      handleCheckboxChange: A
-    }), (0, i.jsx)(Y, {
+      handleCheckboxChange: P
+    }), (0, i.jsx)(H, {
       muted: p,
       messageNotifications: f,
       memberCount: o,
@@ -385,13 +385,13 @@ function J(e) {
     }), (0, i.jsx)(V, {
       suppressEveryone: u,
       suppressRoles: h,
-      handleCheckboxChange: A,
+      handleCheckboxChange: P,
       notifyHighlights: Z,
       muteEvents: g,
       mobilePush: m,
       muted: p,
       guildId: t
-    }), (0, i.jsx)(H, {
+    }), (0, i.jsx)(Y, {
       setNewChannelOverrides: _,
       newChannelOverrides: L,
       setLatestOverrideId: M,
@@ -399,7 +399,7 @@ function J(e) {
       categories: r
     }), (0, i.jsx)(W, {
       newChannelOverrides: L,
-      channelOverrides: b,
+      channelOverrides: S,
       channels: w,
       categories: r,
       muted: p,
@@ -410,10 +410,10 @@ function J(e) {
   })
 }
 
-function q(e) {
+function F(e) {
   var t = D({}, function(e) {
     if (null == e) throw TypeError("Cannot destructure " + e);
     return e
   }(e));
-  return (0, w.Mn)("NotificationSettingsModal") ? (0, i.jsx)(P.Z, k({}, t)) : (0, i.jsx)(J, k({}, t))
+  return (0, w.Mn)("NotificationSettingsModal") ? (0, i.jsx)(A.Z, k({}, t)) : (0, i.jsx)(q, k({}, t))
 }

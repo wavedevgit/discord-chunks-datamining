@@ -98,7 +98,7 @@ function B(e) {
   }));
   return (0, r.jsxs)(c.VqE, {
     className: o()(N.addGamePopout, R.elevationBorderHigh),
-    "aria-label": C.intl.string(C.t.GTCx0p),
+    "aria-label": C.intl.string(C.t.GTCx0t),
     children: [(0, r.jsx)(c.VcW, {
       placeholder: C.intl.string(C.t.XqMe3N),
       value: a,
@@ -116,11 +116,11 @@ function B(e) {
       className: o()(N.actions, P.horizontal),
       children: [(0, r.jsx)(c.Avr, {
         variant: "secondary",
-        text: C.intl.string(C.t["ETE/oC"]),
+        text: C.intl.string(C.t["ETE/oK"]),
         onClick: t
       }), (0, r.jsx)(c.Button, {
         variant: "primary",
-        text: C.intl.string(C.t.GTCx0p),
+        text: C.intl.string(C.t.GTCx0t),
         disabled: null == a,
         onClick: f
       })]
@@ -142,7 +142,7 @@ function Z(e) {
   } = (0, s.cj)([p.ZP], () => ({
     canToggleDetection: null == I || p.ZP.isDetectionEnabled(I),
     isCurrentGameDetectionEnabled: p.ZP.isDetectionEnabled(T)
-  })), w = (0, _.P6)("UserSettingsGameActivity"), D = (0, s.e7)([p.ZP], () => p.ZP.getVisibleGame()), [x, j] = i.useState(false), G = i.useMemo(() => (0, E.le)(T) ? v ? T.gameName : C.intl.formatToPlainString(C.t.G6BGdx, {
+  })), w = (0, _.P6)("UserSettingsGameActivity"), D = (0, s.e7)([p.ZP], () => p.ZP.getVisibleGame()), [x, j] = i.useState(false), G = i.useMemo(() => (0, E.le)(T) ? v ? T.gameName : C.intl.formatToPlainString(C.t.G6BGd3, {
     subgameName: T.gameName
   }) : T.name, [T, v]), [B, F] = i.useState(null != G ? G : "???"), V = o()(P.flexCenter, {
     [N.game]: !a,
@@ -176,18 +176,18 @@ function Z(e) {
         Modal: e
       } = await Promise.resolve().then(n.bind(n, 793030));
       return t => (0, r.jsx)(e, M(L({}, t), {
-        title: C.intl.formatToPlainString(C.t.PZ4fKc, {
+        title: C.intl.formatToPlainString(C.t.PZ4fKS, {
           platform: G
         }),
-        subtitle: C.intl.formatToPlainString(C.t.ZIQbfb, {
+        subtitle: C.intl.formatToPlainString(C.t.ZIQbfX, {
           platform: G
         }),
         actions: [{
-          text: C.intl.string(C.t["ETE/oC"]),
+          text: C.intl.string(C.t["ETE/oK"]),
           onClick: () => t.onClose(),
           variant: "secondary"
         }, {
-          text: C.intl.string(C.t.Fmjztz),
+          text: C.intl.string(C.t.Fmjzt7),
           onClick: () => {
             u.Z.toggleDetection(T), t.onClose()
           },
@@ -218,7 +218,7 @@ function Z(e) {
           onSubmitted: () => {}
         }))
       }
-    })) : ((0, c.showToast)((0, c.createToast)(C.intl.formatToPlainString(C.t["6klMOk"], {
+    })) : ((0, c.showToast)((0, c.createToast)(C.intl.formatToPlainString(C.t["6klMOj"], {
       gameName: (0, E.le)(T) ? T.gameName : T.name
     }), c.ToastType.SUCCESS)), j(true))
   }
@@ -231,7 +231,7 @@ function Z(e) {
         children: G
       }), (0, r.jsx)(c.aML, {
         "data-migration-pending": true,
-        text: C.intl.string(C.t["4PJP5p"]),
+        text: C.intl.string(C.t["4PJP5u"]),
         children: e => (0, r.jsx)(m.Z, M(L({
           className: N.gameVerifiedIcon,
           size: U,
@@ -261,7 +261,7 @@ function Z(e) {
       played: t,
       exePath: n
     } = T;
-    return a || en ? e = C.intl.string(C.t.VbV5dv) : null != t && "" !== t && (e = C.intl.format(C.t["gGeOE+"], {
+    return a || en ? e = C.intl.string(C.t.VbV5dn) : null != t && "" !== t && (e = C.intl.format(C.t.gGeOEx, {
       when: t
     })), (0, r.jsx)("div", {
       className: N.lastPlayed,
@@ -289,7 +289,7 @@ function Z(e) {
       colorClass: N.fill
     }), i = t ? (0, r.jsx)(c.aML, {
       "data-migration-pending": true,
-      text: C.intl.string(C.t.Vfw2L5),
+      text: C.intl.string(C.t.Vfw2Ly),
       children: e => (0, r.jsx)("i", L({
         className: N.overlayWarningIcon
       }, e))
@@ -298,9 +298,9 @@ function Z(e) {
       className: o()(P.flexCenter, P.noWrap, P.justifyBetween, N.toggleContainer),
       children: [i, (0, r.jsx)(c.aML, {
         "data-migration-pending": true,
-        text: C.intl.string(C.t["1+O+Tu"]),
+        text: C.intl.string(C.t["1+O+Tk"]),
         children: t => (0, r.jsx)(c.P3F, M(L({}, t), {
-          "aria-label": C.intl.string(C.t["1+O+Tu"]),
+          "aria-label": C.intl.string(C.t["1+O+Tk"]),
           className: N.toggleIcon,
           onClick: () => K(!e),
           children: n
@@ -343,9 +343,9 @@ function Z(e) {
       className: o()(P.flexCenter, P.noWrap, P.justifyBetween, N.toggleContainer),
       children: (0, r.jsx)(c.aML, {
         "data-migration-pending": true,
-        text: C.intl.string(C.t["y0B+lo"]),
+        text: C.intl.string(C.t["y0B+lp"]),
         children: e => (0, r.jsx)(c.P3F, M(L({}, e), {
-          "aria-label": C.intl.string(C.t["y0B+lo"]),
+          "aria-label": C.intl.string(C.t["y0B+lp"]),
           className: N.toggleIcon,
           onClick: q,
           children: (0, r.jsx)(c.U65, {
@@ -397,10 +397,10 @@ function F() {
       className: o()(Chunk740508.gameNameLastPlayed, Chunk149715.vertical),
       children: [(0, Chunk951288.jsx)("div", {
         className: Chunk740508.gameName,
-        children: Chunk388032.intl.string(Chunk388032.t.H68X9x)
+        children: Chunk388032.intl.string(Chunk388032.t["H68X9/"])
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk740508.lastPlayed,
-        children: Chunk388032.intl.string(Chunk388032.t.T5Ilmw)
+        children: Chunk388032.intl.string(Chunk388032.t.T5Ilm5)
       })]
     })
   })
@@ -445,12 +445,12 @@ let H = (0, Chunk251625.oH)(function() {
     function m() {
       return 0 === d.length ? (0, r.jsx)(V, {
         children: (0, r.jsx)(c.OZU, {
-          children: C.intl.string(C.t["1yiJwn"])
+          children: C.intl.string(C.t["1yiJws"])
         })
       }) : (0, r.jsx)(c.C3N, {
         className: w.marginTop40,
-        label: C.intl.string(C.t.jCOdvx),
-        description: C.intl.format(C.t.KPA3m9, {
+        label: C.intl.string(C.t.jCOdv7),
+        description: C.intl.format(C.t.KPA3m5, {
           igdbLink: G
         }),
         children: d.map(e => (0, r.jsx)(Z, {
@@ -461,7 +461,7 @@ let H = (0, Chunk251625.oH)(function() {
       })
     }
     return i.useEffect(() => ((0, h.Ky)(), h.P7), []), (0, r.jsxs)(S.Z, {
-      title: n ? C.intl.string(C.t.AVDyEj) : null,
+      title: n ? C.intl.string(C.t.AVDyEh) : null,
       className: t,
       children: [null != l ? (0, r.jsx)(Z, {
         rawGame: l,
@@ -471,7 +471,7 @@ let H = (0, Chunk251625.oH)(function() {
       }, (0, p.rH)(l)) : (0, r.jsx)(F, {}), (0, r.jsxs)("div", {
         className: o()(N.nowPlayingAdd, w.marginReset, w.marginTop8, w.marginBottom20),
         children: [(0, r.jsx)("span", {
-          children: C.intl.string(C.t.xwhoqM)
+          children: C.intl.string(C.t.xwhoqK)
         }), (0, r.jsx)(c.yRy, {
           targetElementRef: _,
           renderPopout: e => {
@@ -488,7 +488,7 @@ let H = (0, Chunk251625.oH)(function() {
             buttonRef: _,
             variant: "primary",
             textVariant: "text-sm/medium",
-            text: C.intl.string(C.t.GjgdXe)
+            text: C.intl.string(C.t.GjgdXV)
           }))
         })]
       }), m()]

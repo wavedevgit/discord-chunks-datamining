@@ -80,9 +80,9 @@ let C = 40,
     });
     let S = (0, i.e7)([h.Z], () => null != t.roleId ? h.Z.getRole(n.id, t.roleId) : true),
       N = (0, f.Z)(S),
-      R = N ? O.intl.formatToPlainString(O.t.t0928V, {
+      R = N ? O.intl.formatToPlainString(O.t.t0928f, {
         name: I
-      }) : O.intl.formatToPlainString(O.t.UDDkGy, {
+      }) : O.intl.formatToPlainString(O.t.UDDkGx, {
         name: I
       }),
       P = A(T({}, t), {
@@ -130,7 +130,7 @@ let C = 40,
           }), (0, r.jsx)(a.Button, {
             size: "sm",
             variant: "secondary",
-            text: O.intl.string(O.t["H930+H"]),
+            text: O.intl.string(O.t["H930+P"]),
             onClick: L,
             icon: a.Ucv,
             fullWidth: true,

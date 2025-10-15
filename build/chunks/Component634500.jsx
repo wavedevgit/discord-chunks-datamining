@@ -49,11 +49,11 @@ function h() {
     Chunk923928.Z.clearVADWarning()
   }
   return Chunk647438.useEffect(() => (module ? exports.current = (0, Chunk481060.h7j)(e => (0, r.jsx)(c.default, p({
-    title: f.intl.string(f.t.NYklhr),
-    body: f.intl.string(f.t.EJ26Oh),
+    title: f.intl.string(f.t.NYklho),
+    body: f.intl.string(f.t.EJ26Oj),
     onCancel: _,
-    cancelText: f.intl.string(f.t.UYW0dz),
-    confirmText: f.intl.string(f.t.E3Y7NH),
+    cancelText: f.intl.string(f.t.UYW0d3),
+    confirmText: f.intl.string(f.t.E3Y7ND),
     onConfirm: () => {
       s.Z.setMode(d.pM4.PUSH_TO_TALK), _()
     }

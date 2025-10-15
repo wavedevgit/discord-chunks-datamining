@@ -16,7 +16,7 @@ function u(e, t) {
   let n = (0, r.e7)([c.Z], () => c.Z.can(o.yP, e), [e]);
   return null != t && n ? (0, i.jsx)(l.sNh, {
     id: "end-stage",
-    label: s.intl.string(s.t.saZaRb),
+    label: s.intl.string(s.t.saZaRU),
     color: "danger",
     action: function() {
       (0, l.h7j)(t => {
@@ -39,14 +39,14 @@ function u(e, t) {
           }
           return e
         }({}, t), r = r = {
-          header: s.intl.string(s.t.gW9je1),
-          confirmText: s.intl.string(s.t.saZaRb),
-          cancelText: s.intl.string(s.t["ETE/oC"]),
+          header: s.intl.string(s.t.gW9je3),
+          confirmText: s.intl.string(s.t.saZaRU),
+          cancelText: s.intl.string(s.t["ETE/oK"]),
           onConfirm: () => (0, a.NZ)(e),
           children: (0, i.jsx)(l.Text, {
             variant: "text-md/normal",
             color: "header-secondary",
-            children: s.intl.string(s.t.mT7jwN)
+            children: s.intl.string(s.t.mT7jwM)
           })
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
           var n = Object.keys(e);

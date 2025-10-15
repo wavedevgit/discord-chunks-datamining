@@ -23,7 +23,7 @@ function d(t) {
     onNext: x,
     onClose: C,
     transitionState: g
-  } = t, [p, S] = r.useState(false), [f, N] = r.useState(""), [m, h] = r.useState(false), T = (0, i.e7)([c.Z], () => c.Z.getErrors()), v = r.useRef(null);
+  } = t, [p, S] = r.useState(false), [N, f] = r.useState(""), [m, h] = r.useState(false), T = (0, i.e7)([c.Z], () => c.Z.getErrors()), v = r.useRef(null);
   r.useEffect(() => {
     var t;
     null == (t = v.current) || t.focus()
@@ -33,7 +33,7 @@ function d(t) {
     try {
       let {
         token: t
-      } = await (0, o.w)(f);
+      } = await (0, o.w)(N);
       d(t), x()
     } catch (t) {
       A(new s.Z(t).getAnyErrorMessage())
@@ -44,7 +44,7 @@ function d(t) {
     if (!m) {
       h(true);
       try {
-        await (0, o.i)(true), (0, l.showToast)((0, l.createToast)(u.intl.string(u.t["84yeoz"]), l.ToastType.SUCCESS))
+        await (0, o.i)(true), (0, l.showToast)((0, l.createToast)(u.intl.string(u.t["84yeo6"]), l.ToastType.SUCCESS))
       } catch (e) {
         let t = new s.Z(e).getAnyErrorMessage();
         null != t && (0, l.showToast)((0, l.createToast)(t, l.ToastType.FAILURE))
@@ -54,8 +54,8 @@ function d(t) {
     }
   };
   return (0, a.jsxs)(l.Ioy, {
-    title: u.intl.string(u.t.jMGc4J),
-    subtitle: u.intl.string(u.t.SZJowy),
+    title: u.intl.string(u.t.jMGc4O),
+    subtitle: u.intl.string(u.t.SZJow8),
     graphic: {
       type: "image",
       src: _
@@ -64,15 +64,15 @@ function d(t) {
     onClose: C,
     actions: [{
       variant: "primary",
-      text: u.intl.string(u.t.PDTjLN),
+      text: u.intl.string(u.t.PDTjLC),
       loading: p,
       onClick: y
     }],
     children: [(0, a.jsx)(l.oil, {
-      label: u.intl.string(u.t["8mZX6M"]),
+      label: u.intl.string(u.t["8mZX6O"]),
       error: null != n ? n : null == T || null == (e = T.email_token) ? true : e[0],
-      value: f,
-      onChange: N,
+      value: N,
+      onChange: f,
       inputRef: v
     }), (0, a.jsx)(l.Text, {
       className: E.help,

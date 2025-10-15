@@ -126,7 +126,7 @@ function E(e) {
         }), (0, r.jsx)(d.Text, {
           variant: "text-md/normal",
           color: "interactive-active",
-          children: _.intl.string(_.t.PiFnny)
+          children: _.intl.string(_.t.PiFnn5)
         })]
       })]
     }), (0, r.jsx)(c.W, {
@@ -160,8 +160,8 @@ function I(e) {
     maxTiers: a
   } = (0, p.s1)(t), s = l.map(e => e.id);
   return (0, r.jsx)(d.gNt, {
-    label: _.intl.string(_.t["72+Sos"]),
-    description: _.intl.format(_.t.nHRSvM, {
+    label: _.intl.string(_.t["72+Soq"]),
+    description: _.intl.format(_.t.nHRSvL, {
       maxTiers: a
     }),
     children: (0, r.jsx)(E, {

@@ -19,7 +19,7 @@ function E(e) {
   }, [e]);
   return u.isPlatformEmbedded && null != e && (null == e ? true : e.length) !== 0 ? [(0, i.jsx)(a.sNh, {
     id: "search-google",
-    label: d.intl.string(d.t["Rd/Mko"]),
+    label: d.intl.string(d.t["Rd/Mkp"]),
     action: t
   }, "search-google")] : null
 }

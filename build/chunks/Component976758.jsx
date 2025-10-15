@@ -30,7 +30,7 @@ function f() {
     children: [(0, Chunk951288.jsx)("div", {
       className: Chunk505433.column,
       children: (0, Chunk951288.jsx)(Chunk481060.iRW, {
-        label: Chunk388032.intl.string(Chunk388032.t.OX2Bnr),
+        label: Chunk388032.intl.string(Chunk388032.t.OX2Bnp),
         initialValue: (0, Chunk36703.P)(exports),
         asValueChanges: t => o.Z.setInputVolume((0, c.A)(t), {
           analyticsLocations: e
@@ -39,7 +39,7 @@ function f() {
     }), (0, Chunk951288.jsx)("div", {
       className: Chunk505433.column,
       children: (0, Chunk951288.jsx)(Chunk481060.iRW, {
-        label: Chunk388032.intl.string(Chunk388032.t.eATD2B),
+        label: Chunk388032.intl.string(Chunk388032.t.eATD2N),
         initialValue: (0, Chunk36703.P)(require),
         maxValue: 200,
         onValueRender: e => "".concat(e.toFixed(0), "%"),

@@ -4,10 +4,10 @@ require.d(exports, {
   MC: () => p,
   Y5: () => v,
   ZF: () => j,
-  ZP: () => O,
+  ZP: () => S,
   d6: () => k,
   m8: () => w,
-  nU: () => S,
+  nU: () => O,
   tO: () => x
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -138,13 +138,13 @@ function y(e) {
     renderedFrameCount: b,
     bufferFramecountRef: y,
     frameCheckerEffect: T
-  } = k(r, c), [R, C, S] = j(t), [O, E] = v(R, T), F = performance.now() - l.current < p, P = C(d, y.current);
-  (0, i.ZP)(() => (O(), () => {
+  } = k(r, c), [R, C, O] = j(t), [S, E] = v(R, T), F = performance.now() - l.current < p, P = C(d, y.current);
+  (0, i.ZP)(() => (S(), () => {
     E()
   }));
   let I = a.useCallback(() => {
-    h(), S(), O()
-  }, [h, S, O]);
+    h(), O(), S()
+  }, [h, O, S]);
   return (0, n.jsxs)("div", {
     className: f.panelGroup,
     children: [(0, n.jsxs)(o.Text, {
@@ -385,7 +385,7 @@ function C(e) {
   })
 }
 
-function S() {
+function O() {
   let [, e] = Chunk647438.useState({});
   Chunk647438.useEffect(() => {
     let t = setInterval(() => {
@@ -397,10 +397,10 @@ function S() {
   }, [])
 }
 
-function O() {
+function S() {
   let e = (0, Chunk442837.e7)([Chunk38618.Z], () => Chunk38618.Z.getSocket()),
     [t, r] = Chunk647438.useState(false);
-  return S(), (0, Chunk951288.jsx)("div", {
+  return O(), (0, Chunk951288.jsx)("div", {
     className: l()(Chunk451429.panel, Chunk499504.panel),
     children: (0, Chunk951288.jsxs)(Chunk481060.zJl, {
       className: Chunk499504.panel,

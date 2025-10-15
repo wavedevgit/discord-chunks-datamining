@@ -181,8 +181,8 @@ function S(e) {
         onClick: e,
         icon: o.iFz,
         iconSize: b,
-        "aria-label": v.intl.string(v.t.TdEu5X),
-        tooltip: i ? null : v.intl.string(v.t.TdEu5X),
+        "aria-label": v.intl.string(v.t.TdEu5e),
+        tooltip: i ? null : v.intl.string(v.t.TdEu5e),
         selected: i,
         showBadge: n
       }))

@@ -48,7 +48,7 @@ function g(e) {
       let n = "".concat(e.seconds()).padStart(2, "0");
       t = "".concat(e.minutes(), ":").concat(n)
     }
-  } else t = s ? h.intl.string(h.t["8+NidX"]) : h.intl.string(h.t.Icu3bf);
+  } else t = s ? h.intl.string(h.t["8+NidX"]) : h.intl.string(h.t.Icu3bW);
   let v = (0, i.jsxs)(c.Text, {
     className: m.cooldownText,
     variant: "text-xs/medium",

@@ -1,8 +1,8 @@
 /** Chunk was on 85831 **/
 /** chunk id: 312539, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  d: () => D,
-  p: () => M
+  d: () => M,
+  p: () => D
 }), require("./388685.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -55,14 +55,14 @@ async function _(e, n, t) {
   (0, j.Z)(E.Z5c.CHANNEL(e, n, t))
 }
 
-function M(e) {
+function D(e) {
   let {
     type: n,
     value: t
   } = e;
   switch (n) {
     case "channel":
-      return (0, r.jsx)(D, {
+      return (0, r.jsx)(M, {
         channelId: t
       });
     case "user":
@@ -93,7 +93,7 @@ function M(e) {
   }(0, C.vE)(n)
 }
 
-function D(e) {
+function M(e) {
   let {
     channelId: n,
     guildId: l,
@@ -117,14 +117,14 @@ function D(e) {
     y = p || s.isSubscriptionGated ? b || null == d ? (0, r.jsx)(f.Z, {
       iconType: j,
       children: null != d ? d : (0, r.jsx)("em", {
-        children: T.intl.string(T.t.J90oLW)
+        children: T.intl.string(T.t.J90oLS)
       })
     }) : (0, r.jsx)(H, {
       guildId: l,
       children: d
     }) : (0, r.jsx)(f.Z, {
       iconType: "locked",
-      children: T.intl.string(T.t["/YzI63"])
+      children: T.intl.string(T.t["/YzI6+"])
     }),
     O = null;
   return null != o && (O = (0, r.jsxs)(r.Fragment, {
@@ -214,7 +214,7 @@ function Y(e) {
     id: n
   } = e, t = (0, I.d)(), l = null == t ? true : t.guildId, a = (0, c.e7)([Z.Z], () => {
     var e, t;
-    return null != (t = null != l ? null == (e = Z.Z.getRole(l, n)) ? true : e.name : null) ? t : T.intl.string(T.t.sKdZ6U)
+    return null != (t = null != l ? null == (e = Z.Z.getRole(l, n)) ? true : e.name : null) ? t : T.intl.string(T.t.sKdZ6e)
   }, [l, n]);
   return (0, r.jsx)(b.Z, {
     roleId: n,

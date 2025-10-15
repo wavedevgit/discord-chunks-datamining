@@ -40,7 +40,7 @@ let w = e => {
       inspectedEmoji: t,
       guild: n
     } = e, r = P(t);
-    return null != n && r ? C.intl.format(C.t.KFW2aY, {
+    return null != n && r ? C.intl.format(C.t.KFW2aW, {
       guildName: n.name
     }) : null
   },
@@ -154,7 +154,7 @@ let w = e => {
       guild: F,
       shouldAnimate: !H && V
     }) : null;
-    L = G && "CREATE_EMOJI" === t.type ? C.intl.string(C.t.XCmLfG) : "EXPAND_OR_COLLAPSE_EMOJI" === t.type ? K.has(t.guildId) ? C.intl.string(C.t["/K2RDH"]) : C.intl.string(C.t.NZI2Zk) : (0, y.nY)(t);
+    L = G && "CREATE_EMOJI" === t.type ? C.intl.string(C.t.XCmLfH) : "EXPAND_OR_COLLAPSE_EMOJI" === t.type ? K.has(t.guildId) ? C.intl.string(C.t["/K2RDA"]) : C.intl.string(C.t.NZI2Zm) : (0, y.nY)(t);
     let $ = G && "CREATE_EMOJI" === t.type ? C.intl.string(C.t["Z/r7IS"]) : w({
       inspectedEmoji: t,
       channel: U,

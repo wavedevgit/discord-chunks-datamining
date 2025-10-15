@@ -36,7 +36,7 @@ let h = l => {
   return (0, r.jsxs)(e.Y0X, {
     transitionState: i,
     size: e.CgR.SMALL,
-    "aria-label": u.intl.string(u.t["6kHRYP"]),
+    "aria-label": u.intl.string(u.t["6kHRYG"]),
     parentComponent: "DispatchErrorModal",
     children: [(0, r.jsxs)(e.xBx, {
       justify: s.Z.Justify.BETWEEN,
@@ -45,7 +45,7 @@ let h = l => {
         grow: 1,
         children: (0, r.jsx)(e.Heading, {
           variant: "heading-lg/semibold",
-          children: u.intl.string(u.t["6kHRYP"])
+          children: u.intl.string(u.t["6kHRYG"])
         })
       }), (0, r.jsx)(s.Z.Child, {
         grow: 0,
@@ -57,15 +57,15 @@ let h = l => {
       children: (0, r.jsxs)("div", {
         className: p.body,
         children: [(0, r.jsx)("div", {
-          children: u.intl.format(u.t["NnE/6P"], {
+          children: u.intl.format(u.t["NnE/6O"], {
             link: "https://dis.gd/dispatch-error"
           })
         }), (0, r.jsx)("div", {
           className: p.supportCallToAction,
-          children: u.intl.string(u.t["o+efY9"])
+          children: u.intl.string(u.t["o+efY2"])
         }), (0, r.jsx)("div", {
           className: p.errorLabel,
-          children: u.intl.string(u.t.BiSnZ9)
+          children: u.intl.string(u.t.BiSnZ2)
         }), (0, r.jsx)("div", {
           className: p.errorDetails,
           children: (0, r.jsxs)("div", {
@@ -76,7 +76,7 @@ let h = l => {
     }), (0, r.jsxs)(e.mzw, {
       children: [(0, r.jsx)(e.Button, {
         variant: "primary",
-        text: u.intl.string(u.t.VdyWmB),
+        text: u.intl.string(u.t.VdyWmJ),
         onClick: () => {
           window.open(c.Z.getSubmitRequestURL())
         }
@@ -84,7 +84,7 @@ let h = l => {
         look: o.zx.Looks.LINK,
         onClick: n,
         color: p.closeLink,
-        children: u.intl.string(u.t.cpT0Cq)
+        children: u.intl.string(u.t.cpT0Cg)
       })]
     })]
   })

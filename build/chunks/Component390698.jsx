@@ -31,12 +31,12 @@ let u = e => {
         })
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/semibold",
-        children: s.intl.string(s.t.BEjTij)
+        children: s.intl.string(s.t.BEjTio)
       })]
     })
   }) : (0, r.jsx)(o.Text, {
     variant: "text-md/semibold",
     className: t,
-    children: s.intl.string(s.t["6cfuDj"])
+    children: s.intl.string(s.t["6cfuDg"])
   })
 }

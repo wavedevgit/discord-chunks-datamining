@@ -54,20 +54,20 @@ function m(e) {
     className: g.container,
     children: [(0, r.jsx)(s.Heading, {
       variant: "heading-xxl/bold",
-      children: h.intl.string(h.t.csrAMJ)
+      children: h.intl.string(h.t.csrAMD)
     }), (0, r.jsx)(s.Text, {
       variant: "text-xs/semibold",
-      children: h.intl.string(h.t["m1+IBn"])
+      children: h.intl.string(h.t["m1+IBg"])
     }), (0, r.jsx)(o.zxk, {
       variant: "primary",
-      text: h.intl.string(h.t.fIv16B),
+      text: h.intl.string(h.t.fIv16O),
       onClick: () => b(true)
     })]
   }) : (0, r.jsxs)("div", {
     className: g.container,
     children: [(0, r.jsx)(s.Heading, {
       variant: "heading-xxl/bold",
-      children: h.intl.string(h.t["Z+hCVU"])
+      children: h.intl.string(h.t["Z+hCVV"])
     }), (0, r.jsx)(s.$jN, {})]
   }) : (0, r.jsx)(d.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {

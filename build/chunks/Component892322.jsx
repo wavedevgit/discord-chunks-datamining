@@ -32,13 +32,13 @@ function m(e) {
         }), (0, i.jsx)(a.Heading, {
           className: u.title,
           variant: "heading-xl/semibold",
-          children: d.intl.string(d.t.CueiPY)
+          children: d.intl.string(d.t.CueiPT)
         }), (0, i.jsx)(a.Text, {
           color: "header-secondary",
           variant: "text-md/normal",
           children: l ? d.intl.formatToPlainString(d.t.R7Pqn5, {
             guildName: t
-          }) : d.intl.formatToPlainString(d.t.eIxPSv, {
+          }) : d.intl.formatToPlainString(d.t.eIxPSk, {
             guildName: t
           })
         })]
@@ -46,15 +46,15 @@ function m(e) {
     }), (0, i.jsx)(r.Go$, {
       actionsFullWidth: true,
       actions: l ? [{
-        text: d.intl.string(d.t["X0WK+6"]),
+        text: d.intl.string(d.t["X0WK+/"]),
         variant: "primary",
         onClick: m
       }] : [{
-        text: d.intl.string(d.t["X/VABv"]),
+        text: d.intl.string(d.t["X/VABg"]),
         variant: "secondary",
         onClick: m
       }, {
-        text: d.intl.string(d.t.DymAQt),
+        text: d.intl.string(d.t.DymAQk),
         variant: "primary",
         onClick: () => {
           (0, c.XU)(n.id), null == m || m()

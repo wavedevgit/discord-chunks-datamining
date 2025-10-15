@@ -82,7 +82,7 @@ function R(e) {
     try {
       e = await t
     } catch (e) {
-      g.Z.captureException(e), M(I.intl.string(I.t.xSCvBf)), w(O.x.INIT);
+      g.Z.captureException(e), M(I.intl.string(I.t.xSCvBQ)), w(O.x.INIT);
       return
     }
     L(e), w(O.x.NAME)
@@ -97,7 +97,7 @@ function R(e) {
       children: [(0, r.jsxs)(l.Heading, {
         id: S,
         variant: "heading-lg/semibold",
-        children: [P === O.x.INIT && I.intl.string(I.t.vrOCCk), P === O.x.REGISTER && I.intl.string(I.t.wePEBF), P === O.x.NAME && I.intl.string(I.t["cY/IOu"]), P === O.x.SUCCESS && d.Z.parse(I.intl.string(I.t.FXC7ZC))]
+        children: [P === O.x.INIT && I.intl.string(I.t.vrOCCg), P === O.x.REGISTER && I.intl.string(I.t.wePEBA), P === O.x.NAME && I.intl.string(I.t["cY/IOj"]), P === O.x.SUCCESS && d.Z.parse(I.intl.string(I.t.FXC7ZG))]
       }), (0, r.jsx)(l.olH, {
         onClick: o,
         className: T.modalCloseButton
@@ -124,13 +124,13 @@ function R(e) {
           }), (0, r.jsx)("div", {
             children: (0, r.jsx)(l.Text, {
               variant: "text-md/normal",
-              children: I.intl.string(I.t.Lh5vTW)
+              children: I.intl.string(I.t.Lh5vTU)
             })
           })]
         }), (0, r.jsx)(l.mzw, {
           children: (0, r.jsx)(l.Button, {
             variant: "primary",
-            text: I.intl.string(I.t.oibaQa),
+            text: I.intl.string(I.t.oibaQU),
             onClick: j
           })
         })]
@@ -147,7 +147,7 @@ function R(e) {
           }), (0, r.jsx)("div", {
             children: (0, r.jsx)(l.Text, {
               variant: "text-md/normal",
-              children: I.intl.string(I.t.aVMiX3)
+              children: I.intl.string(I.t.aVMiX1)
             })
           })]
         }), (0, r.jsx)(l.mzw, {
@@ -164,7 +164,7 @@ function R(e) {
             e.preventDefault(), b.Sr(A, s, D).then(async () => {
               h ? w(O.x.SUCCESS) : (await (0, _.Yn)(false), o())
             }).catch(() => {
-              M(I.intl.string(I.t.fEptJP)), w(O.x.INIT)
+              M(I.intl.string(I.t.fEptJC)), w(O.x.INIT)
             })
           },
           children: [(0, r.jsxs)(l.hzk, {
@@ -179,7 +179,7 @@ function R(e) {
               gap: 8,
               children: [(0, r.jsx)(l.Text, {
                 variant: "text-md/normal",
-                children: I.intl.string(I.t["Jzd+z/"])
+                children: I.intl.string(I.t["Jzd+z8"])
               }), (0, r.jsx)(l.oil, {
                 value: A,
                 onChange: e => {
@@ -195,12 +195,12 @@ function R(e) {
               direction: "horizontal-reverse",
               children: [(0, r.jsx)(l.Button, {
                 variant: "primary",
-                text: I.intl.string(I.t["5dyZ1S"]),
+                text: I.intl.string(I.t["5dyZ1d"]),
                 type: "submit",
                 disabled: N
               }), (0, r.jsx)(l.Button, {
                 variant: "secondary",
-                text: I.intl.string(I.t["13/7kX"]),
+                text: I.intl.string(I.t["13/7kZ"]),
                 onClick: () => {
                   w(O.x.INIT)
                 }
@@ -221,7 +221,7 @@ function R(e) {
           }), (0, r.jsx)("div", {
             children: (0, r.jsx)(l.Text, {
               variant: "text-md/normal",
-              children: I.intl.string(I.t.e1qv6i)
+              children: I.intl.string(I.t.e1qv6u)
             })
           })]
         }), (0, r.jsx)(l.mzw, {
@@ -230,7 +230,7 @@ function R(e) {
             direction: "horizontal-reverse",
             children: [(0, r.jsx)(l.Button, {
               variant: "primary",
-              text: I.intl.string(I.t.MubYG8),
+              text: I.intl.string(I.t.MubYGx),
               onClick: () => {
                 o(), (0, p.openUserSettings)(f.n.ACCOUNT_PANEL, {
                   section: v.oAB.ACCOUNT
@@ -238,7 +238,7 @@ function R(e) {
               }
             }), (0, r.jsx)(l.Button, {
               variant: "secondary",
-              text: I.intl.string(I.t.i4jeWR),
+              text: I.intl.string(I.t.i4jeWV),
               onClick: o
             })]
           })
@@ -256,11 +256,11 @@ function P(e) {
   return (0, r.jsxs)(l.v2r, {
     navId: "webauthn-credential-actions",
     onClose: c.Zy,
-    "aria-label": I.intl.string(I.t["+nrTbK"]),
+    "aria-label": I.intl.string(I.t["+nrTbG"]),
     onSelect: t,
     children: [(0, r.jsx)(l.sNh, {
       id: "webauthn-edit-credential-".concat(i.id),
-      label: I.intl.string(I.t.bt75uw),
+      label: I.intl.string(I.t.bt75u7),
       action: () => {
         (0, l.ZDy)(async () => {
           let {
@@ -273,7 +273,7 @@ function P(e) {
       }
     }), (0, r.jsx)(l.sNh, {
       id: "webauthn-delete-credential-".concat(i.id),
-      label: I.intl.string(I.t["+xgS+L"]),
+      label: I.intl.string(I.t["+xgS+P"]),
       color: "danger",
       action: () => {
         b.cT(i)
@@ -308,7 +308,7 @@ function w() {
         challenge: n
       })))
     }).catch(e => {
-      e.message !== I.intl.string(I.t.N2yb9a) && g.Z.captureException(e)
+      e.message !== I.intl.string(I.t.N2yb9f) && g.Z.captureException(e)
     }).finally(() => {
       Chunk313201(false)
     })
@@ -316,8 +316,8 @@ function w() {
   return Chunk647438.useEffect(() => {
     require && !Chunk849055 && (Chunk365007.vg(), Chunk454585())
   }, [require, Chunk849055, Chunk454585]), (0, Chunk951288.jsxs)(Chunk481060.gNt, {
-    label: Chunk388032.intl.string(Chunk388032.t.y7SXYX),
-    description: Chunk388032.intl.string(Chunk388032.t.TMukAN),
+    label: Chunk388032.intl.string(Chunk388032.t.y7SXYW),
+    description: Chunk388032.intl.string(Chunk388032.t.TMukAA),
     children: [module.length > 0 && (0, Chunk951288.jsx)("div", {
       className: Chunk421156.credentialList,
       children: module.map(e => (0, r.jsxs)("div", {
@@ -334,7 +334,7 @@ function w() {
               credential: e
             })))
           },
-          "aria-label": I.intl.string(I.t["+nrTbK"]),
+          "aria-label": I.intl.string(I.t["+nrTbG"]),
           innerClassName: T.credentialOptions,
           children: (0, r.jsx)(l.Huf, {
             size: "md",
@@ -348,7 +348,7 @@ function w() {
       children: (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "primary",
         size: "sm",
-        text: Chunk388032.intl.string(Chunk388032.t.vrOCCk),
+        text: Chunk388032.intl.string(Chunk388032.t.vrOCCg),
         onClick: Chunk454585,
         loading: Chunk849055,
         disabled: !Chunk287880.Ae

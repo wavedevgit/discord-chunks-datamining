@@ -107,12 +107,12 @@ function K(e) {
         onClick: () => (0, T.openUserSettings)(I.n.PREMIUM_GUILD_SUBSCRIPTIONS_PANEL, {
           section: F.oAB.GUILD_BOOSTING
         }),
-        text: H.intl.string(H.t["NQ5g/U"])
+        text: H.intl.string(H.t["NQ5g/f"])
       })]
     }), !s && (0, r.jsx)(p.Text, {
       className: Y.boostingDesktopAppBlurb,
       variant: "text-sm/normal",
-      children: H.intl.format(d.tq ? H.t.uxYBEa : H.t.k6haR9, {
+      children: H.intl.format(d.tq ? H.t.uxYBER : H.t.k6haR0, {
         openAppHook: () => (0, E.Z)(W)
       })
     })]
@@ -135,7 +135,7 @@ function z() {
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       className: Chunk903163.paymentBannerText,
       variant: "text-sm/normal",
-      children: Chunk388032.intl.string(Chunk388032.t.xFHEMa)
+      children: Chunk388032.intl.string(Chunk388032.t.xFHEMT)
     })]
   })
 }
@@ -156,7 +156,7 @@ function q() {
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       className: Chunk903163.paymentBannerText,
       variant: "text-sm/normal",
-      children: Chunk388032.intl.string(Chunk388032.t["j+nuQZ"])
+      children: Chunk388032.intl.string(Chunk388032.t["j+nuQU"])
     })]
   })
 }
@@ -184,7 +184,7 @@ function X(e) {
     }), (0, r.jsx)(p.Text, {
       className: Y.paymentBannerText,
       variant: "text-sm/normal",
-      children: H.intl.format(H.t["0nbf/G"], {
+      children: H.intl.format(H.t["0nbf/P"], {
         daysPastDue: t,
         paymentModalRedirect: () => {
           (0, v.Z)({
@@ -211,7 +211,7 @@ function Q(e) {
     children: [(0, r.jsx)(p.Heading, {
       variant: "heading-md/semibold",
       className: Y.detailBlockHeader,
-      children: H.intl.string(H.t.KXQjfc)
+      children: H.intl.string(H.t.KXQjfX)
     }), (0, r.jsx)("div", {
       children: R.ZP.getBillingInformationString(t, n, i, false, s)
     })]
@@ -226,7 +226,7 @@ function J() {
       children: Chunk388032.intl.string(Chunk388032.t["/gs+Pz"])
     }), (0, Chunk951288.jsx)("p", {
       className: Chunk903163.sectionDescription,
-      children: Chunk388032.intl.string(Chunk388032.t.D8UpUo)
+      children: Chunk388032.intl.string(Chunk388032.t.D8UpUl)
     }), (0, Chunk951288.jsx)(Chunk481060.Zbd, {
       className: Chunk903163.noItemsCard,
       type: Chunk481060.Zbd.Types.CUSTOM,
@@ -238,7 +238,7 @@ function J() {
           className: Chunk903163.noItemsIcon
         }), (0, Chunk951288.jsx)("span", {
           className: Chunk903163.cardText,
-          children: Chunk388032.intl.string(Chunk388032.t.xCRgr1)
+          children: Chunk388032.intl.string(Chunk388032.t.xCRgr6)
         })]
       })
     })]
@@ -311,7 +311,7 @@ function $(e) {
       })]
     }), (0, r.jsx)("div", {
       children: (0, r.jsx)(p.C3N, {
-        label: H.intl.string(H.t.Sb6wI1),
+        label: H.intl.string(H.t.Sb6wIy),
         children: (0, r.jsxs)("div", {
           className: Y.details,
           children: [(0, r.jsx)(Q, {
@@ -325,9 +325,9 @@ function $(e) {
               [Y.redBorder]: l
             }),
             children: (0, r.jsx)(p.gNt, {
-              label: t.isPurchasedExternally && null != t.paymentGateway ? H.intl.formatToPlainString(H.t["rTk9v/"], {
+              label: t.isPurchasedExternally && null != t.paymentGateway ? H.intl.formatToPlainString(H.t.rTk9v7, {
                 paymentGatewayName: F.Vzj[t.paymentGateway]
-              }) : H.intl.string(H.t.iRzXKd),
+              }) : H.intl.string(H.t.iRzXKS),
               children: (0, r.jsx)(G.Z, {
                 subscription: t,
                 onPaymentSourceAdded: P.i1,
@@ -360,7 +360,7 @@ function et() {
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       className: Chunk903163.duplicateSubscriptionsBannerText,
       variant: "text-sm/normal",
-      children: Chunk388032.intl.format(Chunk388032.t["6eXiiC"], {
+      children: Chunk388032.intl.format(Chunk388032.t["6eXiiI"], {
         helpCenterLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.NITRO)
       })
     })]
@@ -419,7 +419,7 @@ function en(e) {
     analyticsLocation: d
   })), (0, r.jsxs)(p.C3N, {
     label: H.intl.string(H.t["/gs+Pz"]),
-    description: H.intl.string(H.t.D8UpUo),
+    description: H.intl.string(H.t.D8UpUl),
     children: [M ? (0, r.jsx)(z, {}) : null, j ? (0, r.jsx)(q, {}) : null, U && null != V ? (0, r.jsx)(X, {
       daysPastDue: Z,
       subscription: a,

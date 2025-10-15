@@ -50,7 +50,7 @@ class C extends Chunk647438.Component {
     if (!(0, Chunk131704.hv)(require.type)) return null;
     let l = Chunk481060.Csw,
       c = false;
-    return Chunk647438 ? Chunk120356 ? (e = Chunk388032.intl.string(Chunk388032.t["4ry6yi"]), l = Chunk481060.gkL) : e = Chunk388032.intl.string(Chunk388032.t["0D/6Rz"]) : o ? (e = Chunk388032.intl.string(Chunk388032.t.PHzjvX), t = Chunk481060.aML.Colors.RED, c = true) : e = Chunk388032.intl.string(Chunk388032.t.focH1t), (0, Chunk951288.jsx)(Chunk984370.Z.Icon, {
+    return Chunk647438 ? Chunk120356 ? (e = Chunk388032.intl.string(Chunk388032.t["4ry6ys"]), l = Chunk481060.gkL) : e = Chunk388032.intl.string(Chunk388032.t["0D/6R0"]) : o ? (e = Chunk388032.intl.string(Chunk388032.t.PHzjvb), t = Chunk481060.aML.Colors.RED, c = true) : e = Chunk388032.intl.string(Chunk388032.t.focH1t), (0, Chunk951288.jsx)(Chunk984370.Z.Icon, {
       icon: Chunk442837,
       tooltip: module,
       onClick: this.handleClickCall,
@@ -78,7 +78,7 @@ class C extends Chunk647438.Component {
       children: [(0, Chunk951288.jsx)(Chunk707878.Z, {}), (0, Chunk951288.jsx)(Chunk984370.Z.Icon, {
         icon: Chunk481060.Dio,
         onClick: this.handleCloseOpacitySettings,
-        tooltip: Chunk388032.intl.string(Chunk388032.t.cpT0Cq)
+        tooltip: Chunk388032.intl.string(Chunk388032.t.cpT0Cg)
       })]
     }) : (0, Chunk951288.jsx)(Chunk518084.ZP.Background, {
       opacityOverride: require || Chunk933557 ? null : 1,
@@ -143,11 +143,11 @@ class C extends Chunk647438.Component {
         locked: e,
         handlePin: t,
         pinned: n
-      } = this.props, s = n ? E.intl.string(E.t.cSu80j) : E.intl.string(E.t.cM8Vnm);
+      } = this.props, s = n ? E.intl.string(E.t.cSu80t) : E.intl.string(E.t.cM8Vnp);
       return e ? null : (0, i.jsxs)(r.Fragment, {
         children: [this.renderCallButton(), n ? (0, i.jsx)(p.Z.Icon, {
           icon: a._S3,
-          tooltip: E.intl.string(E.t.OVovCb),
+          tooltip: E.intl.string(E.t.OVovCQ),
           onClick: this.handleOpenOpacitySettings
         }) : null, (0, i.jsx)(p.Z.Icon, {
           icon: n ? a.QVc : a.k5M,

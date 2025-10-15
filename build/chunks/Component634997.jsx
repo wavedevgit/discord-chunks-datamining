@@ -47,10 +47,10 @@ let I = function(e) {
   }, [O, n]), (0, r.jsxs)(o.Modal, {
     transitionState: t,
     onClose: I,
-    title: M.intl.string(M.t.JHNunj),
+    title: M.intl.string(M.t.JHNunp),
     subtitle: M.intl.string(M.t["+BLIGh"]),
     actions: [{
-      text: M.intl.string(M.t.SJMnkX),
+      text: M.intl.string(M.t.SJMnkZ),
       loading: G,
       icon: l.Gr1,
       iconPosition: "end",
@@ -63,7 +63,7 @@ let I = function(e) {
         R.Z.openUrl(A.Z.getArticleURL(T.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, d.x3)(O, d.d_.PRIMARY, d.sU.LEARN_MORE)
       },
       className: C.learnMoreButton,
-      children: [M.intl.string(M.t["aA6q/z"]), (0, r.jsx)(l.Gr1, {
+      children: [M.intl.string(M.t["aA6q//"]), (0, r.jsx)(l.Gr1, {
         size: "xs",
         color: "currentColor"
       })]
@@ -83,7 +83,7 @@ let I = function(e) {
       variant: "text-xs/medium",
       color: "text-muted",
       className: C.requestContainer,
-      children: M.intl.format(M.t.pJAxgQ, {
+      children: M.intl.format(M.t.pJAxgY, {
         handleOnRequestHook: () => {
           R.Z.openUrl(f.sQ.APPEALS_LINK), (0, d.x3)(O, d.d_.PRIMARY, d.sU.MANUAL_REVIEW_REQUEST)
         }

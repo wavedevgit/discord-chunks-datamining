@@ -60,15 +60,15 @@ function O(t) {
     }
     return t
   }({}, g), r = r = {
-    title: p.intl.string(p.t.DJ8ojF),
-    subtitle: p.intl.string(p.t["E+Ph7D"]),
+    title: p.intl.string(p.t.DJ8ojI),
+    subtitle: p.intl.string(p.t["E+Ph7O"]),
     actions: [{
       variant: "secondary",
       text: p.intl.string(p.t.FgK5QE),
       onClick: () => null == y ? true : y()
     }, {
       variant: "primary",
-      text: p.intl.string(p.t.ELRJQu),
+      text: p.intl.string(p.t.ELRJQk),
       onClick: () => {
         u.isPlatformEmbedded ? a.ZP.focus() : window.focus(), y()
       }

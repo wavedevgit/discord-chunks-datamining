@@ -82,11 +82,11 @@ function h() {
         setting: Chunk726985.s6.NOTIFICATIONS_EMAILS_UNSUBSCRIBE_FROM_ALL_MARKETING_EMAILS,
         children: [(0, Chunk951288.jsx)(Chunk481060.Avr, {
           disabled: !m,
-          text: Chunk388032.intl.string(Chunk388032.t.Ra9Pwk),
+          text: Chunk388032.intl.string(Chunk388032.t.Ra9Pws),
           onClick: Chunk960412.oc
         }), (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-sm/normal",
-          children: Chunk388032.intl.string(Chunk388032.t.iYjQ8X)
+          children: Chunk388032.intl.string(Chunk388032.t.iYjQ8f)
         })]
       })]
     })]

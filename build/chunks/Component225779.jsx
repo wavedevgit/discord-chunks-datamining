@@ -161,7 +161,7 @@ function T(e) {
     onClick: () => {
       t(), O(n)
     },
-    "aria-label": u.intl.string(u.t.WAI6xu),
+    "aria-label": u.intl.string(u.t.WAI6xs),
     children: (0, r.jsx)(s.Dio, {
       size: "sm",
       color: "currentColor",

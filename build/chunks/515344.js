@@ -90,13 +90,13 @@ function O(e) {
     isInstallable: n
   } = b(e), i = y(e);
   return r.useMemo(() => t && null != i ? {
-    label: E.intl.string(E.t.hvVgAZ),
+    label: E.intl.string(E.t.hvVgAQ),
     trackingArea: h.j_.VIEW,
     onClick() {
       i()
     }
   } : n && null != i ? {
-    label: E.intl.string(E.t.NgXl3C),
+    label: E.intl.string(E.t.NgXl3N),
     trackingArea: h.j_.ADD_APP,
     onClick() {
       i()

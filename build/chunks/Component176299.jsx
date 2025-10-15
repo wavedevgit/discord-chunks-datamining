@@ -288,8 +288,8 @@ let ew = (0, Chunk608787.Un)({
   }),
   eW = e => (0, r.jsx)(eF, eZ({}, e)),
   eY = () => (0, Chunk951288.jsx)(Chunk724383.Z, {}),
-  eK = e => (0, r.jsx)(eq, eZ({}, e)),
-  eq = e => {
+  eq = e => (0, r.jsx)(eK, eZ({}, e)),
+  eK = e => {
     let {
       channelId: t,
       messageId: n
@@ -667,7 +667,7 @@ function e9() {
                   path: Chunk981631.Z5c.CHANNEL(Chunk981631.STv, Chunk893607.Hw.channelId({
                     optional: true
                   }), ":messageId?"),
-                  render: eK,
+                  render: eq,
                   disableTrack: true
                 }), (0, Chunk951288.jsx)(Chunk765717.Z, {
                   path: [Chunk981631.Z5c.CHANNEL_THREAD_VIEW(Chunk893607.Hw.guildId(), Chunk893607.Hw.channelId(), ":threadId", ":messageId?"), Chunk981631.Z5c.CHANNELS_GAME_SHOP(Chunk893607.Hw.guildId(), ":gameShopPageIndex", ":gameShopSkuId?", ":gameShopSlug?"), Chunk981631.Z5c.CHANNEL(Chunk981631.ME, Chunk893607.Hw.channelId()), Chunk981631.Z5c.CHANNEL(Chunk893607.Hw.guildId(), Chunk893607.Hw.channelId({

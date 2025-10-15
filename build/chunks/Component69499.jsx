@@ -107,7 +107,7 @@ class y extends Chunk647438.PureComponent {
       return (0, r.jsx)(o.v2r, {
         onSelect: n,
         navId: "test-skus",
-        "aria-label": f.intl.string(f.t.ogxXGq),
+        "aria-label": f.intl.string(f.t.ogxXGh),
         onClose: s.Zy,
         children: e.map(e => (0, r.jsx)(o.sNh, {
           id: "".concat(e.id),

@@ -94,10 +94,10 @@ function R(e) {
           className: I.tags,
           children: [null != t && "" !== t ? (0, r.jsx)("span", {
             className: I.altTag,
-            children: v.intl.string(v.t.QEW81z)
+            children: v.intl.string(v.t.QEW819)
           }) : null, l && n ? (0, r.jsx)("span", {
             className: I.altTag,
-            children: v.intl.string(v.t["F+x38C"])
+            children: v.intl.string(v.t["F+x38P"])
           }) : null]
         })]
       })
@@ -162,11 +162,11 @@ function P(e) {
         shouldHideMediaOptions: true
       })
     }, [u]),
-    b = (null == t ? true : t.name) != null ? t.name : v.intl.string(v.t.lduvqL),
-    y = null != n && "" !== n ? v.intl.formatToPlainString(v.t["8TRAzR"], {
+    b = (null == t ? true : t.name) != null ? t.name : v.intl.string(v.t.lduvqK),
+    y = null != n && "" !== n ? v.intl.formatToPlainString(v.t["8TRAzc"], {
       filename: b,
       alt: n
-    }) : v.intl.formatToPlainString(v.t.lXoOEZ, {
+    }) : v.intl.formatToPlainString(v.t.lXoOER, {
       filename: b
     });
   return (0, r.jsx)("div", {
@@ -258,7 +258,7 @@ function D(e) {
       className: I.tags,
       children: n.spoiler ? (0, r.jsx)("span", {
         className: I.altTag,
-        children: v.intl.string(v.t["F+x38C"])
+        children: v.intl.string(v.t["F+x38P"])
       }) : null
     })
   })
@@ -303,7 +303,7 @@ function L(e) {
         className: o()({
           [I.action]: N
         }),
-        tooltip: A ? v.intl.string(v.t.MYgdY2) : v.intl.string(v.t.cuurzA),
+        tooltip: A ? v.intl.string(v.t.MYgdY2) : v.intl.string(v.t.cuurzM),
         onClick: () => c.Z.update(t, a.id, n, {
           spoiler: !a.spoiler
         }),
@@ -324,7 +324,7 @@ function L(e) {
         className: o()({
           [I.action]: N
         }),
-        tooltip: v.intl.string(v.t.Y8ujqr),
+        tooltip: v.intl.string(v.t.Y8ujqq),
         onClick: P,
         children: (0, r.jsx)(l.vdY, {
           size: "xs",
@@ -337,7 +337,7 @@ function L(e) {
         className: o()({
           [I.action]: N
         }),
-        tooltip: A ? v.intl.string(v.t.MskAXa) : v.intl.string(v.t.vN7REz),
+        tooltip: A ? v.intl.string(v.t.MskAXV) : v.intl.string(v.t.vN7REx),
         onClick: () => c.Z.remove(t, a.id, n),
         dangerous: true,
         children: (0, r.jsx)(l.XHJ, {
@@ -380,7 +380,7 @@ function L(e) {
       }), (0, r.jsx)(l.IGR, {
         color: _.Z.BG_BRAND,
         className: I.clipsBadge,
-        text: v.intl.string(v.t.oA4afG)
+        text: v.intl.string(v.t.oA4afH)
       })]
     })]
   })

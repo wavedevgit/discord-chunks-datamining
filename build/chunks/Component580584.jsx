@@ -20,9 +20,9 @@ function b(e) {
   } = e;
   return (0, _.jsx)(c.Z, {
     modalType: "summary",
-    header: i.intl.string(i.t.hghcMh),
-    body: i.intl.string(i.t.QFU785),
-    problemTitle: i.intl.string(i.t.CtiHPm),
+    header: i.intl.string(i.t.hghcMj),
+    body: i.intl.string(i.t["QFU78/"]),
+    problemTitle: i.intl.string(i.t.CtiHPj),
     onSubmit: s,
     onClose: b,
     ratingOptions: [n.aZ.GOOD, n.aZ.BAD],

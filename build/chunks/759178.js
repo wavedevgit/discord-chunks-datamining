@@ -11,13 +11,13 @@ let l = {
     switch (e) {
       case r.jw.CANCELED:
       case r.jw.DEFERRED:
-        return i.intl.string(i.t["0SrNPx"]);
+        return i.intl.string(i.t["0SrNPz"]);
       case r.jw.DEFERRED_INTERNAL:
-        return i.intl.string(i.t.OtZ5kz);
+        return i.intl.string(i.t.OtZ5k5);
       case r.jw.ERROR:
-        return i.intl.string(i.t.ninjcc);
+        return i.intl.string(i.t.ninjcX);
       case r.jw.REJECTED:
-        return i.intl.string(i.t.TSC803);
+        return i.intl.string(i.t.TSC809);
       case r.jw.RISK_REVIEW:
         return i.intl.string(i.t.rppxMj)
     }

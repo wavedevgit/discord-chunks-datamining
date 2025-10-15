@@ -95,7 +95,7 @@ function C(e, t) {
 function N(e, t) {
   let n = {
     type: "channel",
-    content: [D(e.roleSubscriptionGated ? e.name : y.intl.string(y.t["/YzI63"]))],
+    content: [D(e.roleSubscriptionGated ? e.name : y.intl.string(y.t["/YzI6+"]))],
     channelType: e.roleSubscriptionGated ? e.type : b.d4z.UNKNOWN,
     iconType: "locked"
   };
@@ -173,12 +173,12 @@ function D(e) {
 }
 
 function L(e) {
-  return null != e ? w(e) : D("#".concat(y.intl.string(y.t.J90oLW)))
+  return null != e ? w(e) : D("#".concat(y.intl.string(y.t.J90oLS)))
 }
 
 function x() {
   return C({
-    name: Chunk388032.intl.string(Chunk388032.t.zLZPmk).toLowerCase(),
+    name: Chunk388032.intl.string(Chunk388032.t.zLZPmp).toLowerCase(),
     type: Chunk981631.d4z.UNKNOWN,
     iconType: "text"
   }, "italics")

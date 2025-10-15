@@ -28,7 +28,7 @@ function u(e) {
   return (0, r.jsx)(o.w, {
     questId: t,
     fallbackReason: s.V_.UNKNOWN_QUEST,
-    bodyText: l.intl.string("mobile_only" === n ? l.t.Pag1gS : c ? l.t.c9275Z : l.t.CTn0yX),
+    bodyText: l.intl.string("mobile_only" === n ? l.t.Pag1gY : c ? l.t.c9275e : l.t.CTn0yc),
     questContent: i.jn.INVALID_QUEST_EMBED
   })
 }

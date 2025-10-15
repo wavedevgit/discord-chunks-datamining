@@ -46,20 +46,20 @@ let p = e => {
       separator: false,
       children: (0, r.jsxs)(s.Heading, {
         variant: "heading-lg/semibold",
-        children: [m.intl.string(m.t.zbyz7p), "—", null != t ? t.name : ""]
+        children: [m.intl.string(m.t.zbyz7u), "—", null != t ? t.name : ""]
       })
     }), (0, r.jsxs)("div", {
       className: b.content,
       children: [(0, r.jsx)(s.FXm, {
-        label: m.intl.string(m.t.YccTvK),
+        label: m.intl.string(m.t.YccTvL),
         value: String(p),
         options: [{
-          name: m.intl.formatToPlainString(m.t.FM1dHS, {
+          name: m.intl.formatToPlainString(m.t.FM1dHR, {
             days: 7
           }),
           value: "7"
         }, {
-          name: m.intl.formatToPlainString(m.t.FM1dHS, {
+          name: m.intl.formatToPlainString(m.t.FM1dHR, {
             days: 30
           }),
           value: "30"
@@ -70,7 +70,7 @@ let p = e => {
       }), (0, r.jsx)(s.zJl, {
         className: b.scroller,
         children: (0, r.jsx)(s.VcW, {
-          label: m.intl.string(m.t.buoe17),
+          label: m.intl.string(m.t.buoe19),
           maxVisibleItems: 10,
           multi: true,
           value: j,
@@ -80,10 +80,10 @@ let p = e => {
       }), (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
         className: b.spacing,
-        children: j.length > 0 ? m.intl.format(m.t["5WxHHp"], {
+        children: j.length > 0 ? m.intl.format(m.t["5WxHHh"], {
           members: h,
           days: p
-        }) : m.intl.format(m.t.f13az9, {
+        }) : m.intl.format(m.t.f13az8, {
           members: h,
           days: p
         })
@@ -93,13 +93,13 @@ let p = e => {
         direction: "horizontal-reverse",
         children: [(0, r.jsx)(s.Button, {
           variant: "primary",
-          text: m.intl.string(m.t["2mIlKQ"]),
+          text: m.intl.string(m.t["2mIlKS"]),
           onClick: () => {
             c.Z.prune(t.id, p, j), i()
           }
         }), (0, r.jsx)(s.Button, {
           variant: "secondary",
-          text: m.intl.string(m.t["ETE/oC"]),
+          text: m.intl.string(m.t["ETE/oK"]),
           onClick: i
         })]
       })

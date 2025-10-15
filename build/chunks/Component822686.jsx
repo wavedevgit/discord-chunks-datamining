@@ -27,9 +27,9 @@ let _ = e => {
     })
   }, [t]);
   return null != t && g ? (0, r.jsx)(o.JZ, {
-    title: u.intl.string(u.t.c9BHL9),
-    description: u.intl.string(u.t.dK8S0w),
-    buttonText: _ ? u.intl.string(u.t.f3pnLL) : u.intl.string(u.t.ch2xbt),
+    title: u.intl.string(u.t.c9BHLy),
+    description: u.intl.string(u.t.dK8S09),
+    buttonText: _ ? u.intl.string(u.t.f3pnLC) : u.intl.string(u.t.ch2xbm),
     buttonDisabled: _,
     buttonVariant: "critical-primary",
     onButtonPress: p

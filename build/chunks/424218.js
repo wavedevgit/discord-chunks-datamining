@@ -21,15 +21,15 @@ function l(e) {
     n = t.useKibibytes ? a : 1e3,
     i = t.useKibibytes ? o : 1e3,
     l = Math.ceil(e / n);
-  if (l < i) return t.useSpace ? r.intl.formatToPlainString(r.t.cS889N, {
+  if (l < i) return t.useSpace ? r.intl.formatToPlainString(r.t.cS889P, {
     size: l
-  }) : r.intl.formatToPlainString(r.t.pIn7Af, {
+  }) : r.intl.formatToPlainString(r.t.pIn7AQ, {
     size: l
   });
   let c = l / i;
-  return c = t.showDecimalForGB ? Math.round(10 * c) / 10 : Math.round(c), t.useSpace ? r.intl.formatToPlainString(r.t.yhEXX7, {
+  return c = t.showDecimalForGB ? Math.round(10 * c) / 10 : Math.round(c), t.useSpace ? r.intl.formatToPlainString(r.t.yhEXX1, {
     size: c
-  }) : r.intl.formatToPlainString(r.t.TbMX9D, {
+  }) : r.intl.formatToPlainString(r.t.TbMX9P, {
     size: c
   })
 }
@@ -39,9 +39,9 @@ function c(e) {
     n = t.useKibibytes ? i : 1e3,
     o = t.useKibibytes ? a : 1e3,
     c = e / n;
-  return c / o >= 1 ? l(c, t) : t.useSpace ? r.intl.formatToPlainString(r.t.bTzRR6, {
+  return c / o >= 1 ? l(c, t) : t.useSpace ? r.intl.formatToPlainString(r.t.bTzRR0, {
     size: Math.ceil(c)
-  }) : r.intl.formatToPlainString(r.t.kEk9pr, {
+  }) : r.intl.formatToPlainString(r.t.kEk9pq, {
     size: Math.ceil(c)
   })
 }

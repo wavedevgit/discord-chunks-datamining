@@ -29,8 +29,8 @@ function d(t) {
   }
   return (0, n.jsx)(a.ExpressiveModal, {
     transitionState: a.Dvm.ENTERED,
-    title: p.intl.string(p.t.L4Wg3B),
-    subtitle: p.intl.string(p.t.SXb73A),
+    title: p.intl.string(p.t.L4Wg3N),
+    subtitle: p.intl.string(p.t.SXb73N),
     graphic: {
       type: "dynamic",
       component: r.AX$.COLLECTIBLES_PREVIEW,
@@ -42,7 +42,7 @@ function d(t) {
     },
     onClose: e,
     actions: [{
-      text: p.intl.string(p.t.TxBQzD),
+      text: p.intl.string(p.t.TxBQzM),
       onClick: () => {
         null != d && (0, o.openUserProfileModal)({
           userId: d.id,
@@ -52,7 +52,7 @@ function d(t) {
       variant: "secondary"
     }, {
       variant: "primary",
-      text: p.intl.string(p.t.tM4PUv),
+      text: p.intl.string(p.t.tM4PUl),
       onClick: e
     }]
   })

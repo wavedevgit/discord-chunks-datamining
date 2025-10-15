@@ -92,7 +92,7 @@ let E = 57.75,
           textVariant: "text-xs/normal",
           size: "sm",
           variant: "secondary",
-          text: f.intl.string(f.t.YDiPq8),
+          text: f.intl.string(f.t.YDiPq6),
           onClick: C,
           disabled: m
         })

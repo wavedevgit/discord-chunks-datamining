@@ -19,14 +19,14 @@ let E = (0, Chunk108843.Z)(function(n) {
     channel: e,
     guild: t,
     onSelect: c
-  } = n, o = (0, s.Z)(e), E = (0, b.Z)(e, t), f = (0, u.Z)(e), p = (0, a.Z)({
+  } = n, o = (0, s.Z)(e), E = (0, d.Z)(e, t), f = (0, u.Z)(e), p = (0, a.Z)({
     id: e.id,
-    label: d.intl.string(d.t.gFHI3k)
+    label: b.intl.string(b.t.gFHI3t)
   });
   return (0, r.jsxs)(i.v2r, {
     navId: "channel-context",
     onClose: l.Zy,
-    "aria-label": d.intl.string(d.t.Xm41aV),
+    "aria-label": b.intl.string(b.t.Xm41aW),
     onSelect: c,
     children: [(0, r.jsx)(i.kSQ, {
       children: o

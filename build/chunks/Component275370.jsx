@@ -6,20 +6,20 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  a = require.n(Chunk512722),
+  o = require.n(Chunk512722),
   Chunk481060 = require("./481060.js"),
   Chunk51144 = require("./51144.js"),
   Chunk985002 = require("./985002.js"),
   Chunk957656 = require("./957656.jsx"),
   Chunk130310 = require("./130310.jsx"),
-  Chunk660886 = require("./660886.js"),
+  Chunk345909 = require("./345909.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk986360 = require("./986360.js");
 let h = e => {
   let {
     currentUser: t,
     otherUser: r,
-    transitionState: o,
+    transitionState: a,
     onClose: h
   } = e, j = i.useCallback(() => {
     h()
@@ -32,18 +32,18 @@ let h = e => {
     onError: g,
     onSuccess: j
   });
-  return a()(!m, "FamilyCenterAcceptLinkModal should only be rendered for teens."), (0, n.jsxs)(l.IX, {
-    transitionState: o,
+  return o()(!m, "FamilyCenterAcceptLinkModal should only be rendered for teens."), (0, n.jsxs)(l.IX, {
+    transitionState: a,
     onClose: h,
-    "aria-label": b.intl.string(f.default.rlNJwZ),
+    "aria-label": b.intl.string(f.default.rlNJwc),
     children: [x && (0, n.jsx)(l.M14, {
       type: "critical",
-      children: b.intl.string(f.default.pegSM5)
+      children: b.intl.string(f.default.pegSMz)
     }), (0, n.jsxs)(l.fef, {
       children: [(0, n.jsx)(d.Z.Header, {
         currentUser: t,
         otherUser: r,
-        header: b.intl.string(f.default.rlNJwZ),
+        header: b.intl.string(f.default.rlNJwc),
         icon: (0, n.jsx)(l.xPt, {
           size: "md",
           color: "currentColor",
@@ -56,7 +56,7 @@ let h = e => {
           className: p.disclaimer,
           variant: "text-xs/normal",
           color: "text-default",
-          children: b.intl.format(f.default.snlFqR, {
+          children: b.intl.format(f.default.snlFqa, {
             username: c.ZP.getName(r)
           })
         })]
@@ -65,12 +65,12 @@ let h = e => {
       actionsFullWidth: true,
       actions: [{
         variant: "secondary",
-        text: b.intl.string(b.t["ETE/oC"]),
+        text: b.intl.string(b.t["ETE/oK"]),
         onClick: h,
         disabled: v
       }, {
         variant: "primary",
-        text: b.intl.string(f.default["wI/jo3"]),
+        text: b.intl.string(f.default["wI/jo6"]),
         onClick: () => {
           y(false), O(r.id)
         },

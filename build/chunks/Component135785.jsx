@@ -49,10 +49,10 @@ let m = e => {
     }), (0, r.jsx)(o.Text, {
       variant: "text-sm/medium",
       color: n,
-      children: v ? p.intl.format(p.t["tYuv+T"], {
+      children: v ? p.intl.format(p.t["tYuv+f"], {
         helpdeskArticle: c.Z.getArticleURL(_.BhN.PREMIUM_DETAILS),
         onSubscriptionsClick: O
-      }) : p.intl.format(p.t.xHRgU2, {
+      }) : p.intl.format(p.t.xHRgU1, {
         subscriptionName: t,
         onSubscriptionsClick: O
       })

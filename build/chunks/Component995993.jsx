@@ -87,7 +87,7 @@ function C(e) {
       color: "currentColor",
       className: e
     }),
-    text: E ? j.intl.string(j.t.h9mGOP) : j.intl.string(j.t.et6wav),
+    text: E ? j.intl.string(j.t.h9mGOD) : j.intl.string(j.t.et6wam),
     selected: C,
     onClick: w,
     onContextMenu: T,

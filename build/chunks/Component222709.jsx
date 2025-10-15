@@ -35,14 +35,14 @@ let f = e => {
       }), (0, r.jsx)(o.Heading, {
         variant: "heading-sm/normal",
         className: d.tagline,
-        children: u.intl.string(u.t.hasZoU)
+        children: u.intl.string(u.t.hasZoa)
       }), (0, r.jsx)(o.Text, {
         color: "text-brand",
         className: d.publish,
         variant: "text-sm/normal",
         children: (0, r.jsx)(o.P3F, {
           onClick: _,
-          children: u.intl.string(u.t.MFGE51)
+          children: u.intl.string(u.t["MFGE5+"])
         })
       }), (0, r.jsx)(o.P3F, {
         onClick: p,
@@ -58,7 +58,7 @@ let f = e => {
       variant: "text-sm/normal",
       children: (0, r.jsx)(o.P3F, {
         onClick: h,
-        children: u.intl.string(u.t.efSkDm)
+        children: u.intl.string(u.t.efSkDg)
       })
     })]
   }) : null

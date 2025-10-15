@@ -100,31 +100,31 @@ function g(e) {
   let I = {
     transfer: {
       label: null != t.premiumGuildSubscription ? d.intl.string(d.t["PR0n//"]) : d.intl.string(d.t["+fmEYG"]),
-      subtext: t.isOnCooldown() ? d.intl.string(d.t.XnB8M0) : null,
+      subtext: t.isOnCooldown() ? d.intl.string(d.t.XnB8Mz) : null,
       disabled: t.isOnCooldown()
     },
     cancel: {
-      label: d.intl.string(d.t.twFU3R),
-      subtext: h ? null : d.intl.string(d.t.oQ9lOh),
+      label: d.intl.string(d.t.twFU3d),
+      subtext: h ? null : d.intl.string(d.t.oQ9lOj),
       disabled: !h
     },
     uncancel: {
-      label: d.intl.string(d.t["2glQNp"]),
+      label: d.intl.string(d.t["2glQNj"]),
       subtext: null,
       disabled: false
     }
   };
   switch (g.status) {
     case c.O0b.PAST_DUE:
-      I.cancel.disabled = true, I.cancel.subtext = d.intl.string(d.t.WnL6DV), I.uncancel.disabled = true;
+      I.cancel.disabled = true, I.cancel.subtext = d.intl.string(d.t.WnL6DQ), I.uncancel.disabled = true;
       break;
     case c.O0b.PAUSE_PENDING:
     case c.O0b.PAUSED:
-      b === u.a$.NONE && (I.transfer.disabled = true, I.transfer.subtext = d.intl.string(d.t.LiLRRT), I.cancel.subtext = d.intl.string(d.t["1ywaWL"]), I.cancel.disabled = true, I.uncancel.disabled = true)
+      b === u.a$.NONE && (I.transfer.disabled = true, I.transfer.subtext = d.intl.string(d.t.LiLRRU), I.cancel.subtext = d.intl.string(d.t["1ywaWF"]), I.cancel.disabled = true, I.uncancel.disabled = true)
   }
   let T = i.useMemo(() => g.isPausedOrPausePending && b === u.a$.NONE ? (0, r.jsx)(a.sNh, {
     id: "manage-subscription",
-    label: d.intl.string(d.t.obRG6Y),
+    label: d.intl.string(d.t.obRG6e),
     action: () => (0, s.openUserSettings)(o.n.SUBSCRIPTIONS_PANEL, {
       section: c.oAB.SUBSCRIPTIONS
     }),
@@ -135,7 +135,7 @@ function g(e) {
     onSelect: E,
     navId: "subscription-context",
     variant: "fixed",
-    "aria-label": d.intl.string(d.t.ogxXGq),
+    "aria-label": d.intl.string(d.t.ogxXGh),
     onClose: _,
     children: [(0, r.jsx)(a.sNh, {
       id: "apply",

@@ -30,11 +30,11 @@ function g(e) {
         size: "md",
         color: "currentColor"
       }),
-      title: m.intl.string(m.t.RGoJNN)
+      title: m.intl.string(m.t.RGoJND)
     }), (0, i.jsx)(a.Text, {
       color: "text-muted",
       variant: "text-sm/normal",
-      children: m.intl.string(m.t.sCkD3Z)
+      children: m.intl.string(m.t.sCkD3d)
     }), (0, i.jsx)(f, {
       guildId: d,
       applicationId: t.id

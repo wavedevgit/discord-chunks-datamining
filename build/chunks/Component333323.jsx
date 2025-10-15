@@ -79,7 +79,7 @@ let M = Chunk404488.q + 300 + 64,
       }), (0, l.jsxs)(h.Z.Title, {
         children: [(0, l.jsx)(c.nn4, {
           children: n.name
-        }), P.intl.string(P.t.VbpLyU)]
+        }), P.intl.string(P.t.VbpLyc)]
       })]
     })
   });

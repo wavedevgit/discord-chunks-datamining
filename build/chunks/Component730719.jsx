@@ -29,7 +29,7 @@ let o = e => {
       onClick: () => {
         n()
       },
-      "aria-label": l.intl.string(l.t.WAI6xu),
+      "aria-label": l.intl.string(l.t.WAI6xs),
       className: a.closeIcon
     })]
   })

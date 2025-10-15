@@ -37,11 +37,11 @@ function d() {
     className: Chunk624463.verifyConfirmText,
     variant: "text-sm/normal",
     color: "text-feedback-positive",
-    children: Chunk388032.intl.string(Chunk388032.t.H3Q7U8)
+    children: Chunk388032.intl.string(Chunk388032.t.H3Q7U1)
   }) : (0, Chunk951288.jsx)(Chunk481060.Button, {
     variant: "primary",
     size: "sm",
-    text: Chunk489813 ? Chunk388032.intl.string(Chunk388032.t.WnX4J2) : Chunk388032.intl.string(Chunk388032.t["13ofGu"]),
+    text: Chunk489813 ? Chunk388032.intl.string(Chunk388032.t.WnX4Jy) : Chunk388032.intl.string(Chunk388032.t["13ofGh"]),
     loading: module,
     onClick: m
   })
@@ -51,17 +51,17 @@ function m() {
   return (0, Chunk951288.jsx)(Chunk489813.PU, {
     className: Chunk624463.editableRequirementContainer,
     icon: Chunk481060._XJ,
-    text: Chunk388032.intl.string(Chunk388032.t.c6EUJI),
-    footnote: Chunk388032.intl.string(Chunk388032.t["jMh+TY"]),
+    text: Chunk388032.intl.string(Chunk388032.t.c6EUJC),
+    footnote: Chunk388032.intl.string(Chunk388032.t["jMh+TU"]),
     meetsRequirement: false,
     children: (0, Chunk951288.jsx)(Chunk28664.u, {
       asContainer: true,
-      text: Chunk388032.intl.string(Chunk388032.t.mGlP30),
+      text: Chunk388032.intl.string(Chunk388032.t.mGlP39),
       children: (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "primary",
         size: "sm",
         disabled: true,
-        text: Chunk388032.intl.string(Chunk388032.t["13ofGu"])
+        text: Chunk388032.intl.string(Chunk388032.t["13ofGh"])
       })
     })
   })
@@ -70,12 +70,12 @@ function m() {
 function f(e) {
   let {
     isUserVerified: t
-  } = e, n = t ? c.intl.string(c.t.qY1jHN) : c.intl.string(c.t.c6EUJI);
+  } = e, n = t ? c.intl.string(c.t.qY1jHB) : c.intl.string(c.t.c6EUJC);
   return (0, r.jsx)(o.PU, {
     className: u.editableRequirementContainer,
     icon: s._XJ,
     text: n,
-    footnote: c.intl.string(c.t["jMh+TY"]),
+    footnote: c.intl.string(c.t["jMh+TU"]),
     meetsRequirement: t,
     children: (0, r.jsx)(d, {})
   })

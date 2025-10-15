@@ -31,7 +31,7 @@ function d(e) {
         [c.closeButtonSolid]: "Solid" === n
       }),
       onClick: t,
-      "aria-label": l.intl.string(l.t.cpT0Cq),
+      "aria-label": l.intl.string(l.t.cpT0Cg),
       children: "Solid" === n ? (0, r.jsx)(s.k$p, {
         size: "md",
         color: "currentColor",

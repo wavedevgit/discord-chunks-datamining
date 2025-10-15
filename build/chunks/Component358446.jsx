@@ -55,7 +55,7 @@ function g(e) {
         })
       }), (0, i.jsx)(s.Text, {
         variant: "text-sm/normal",
-        children: p.intl.string(p.t.EFRNtK)
+        children: p.intl.string(p.t.EFRNtL)
       })]
     }),
     onDismissClick: (e, n) => {

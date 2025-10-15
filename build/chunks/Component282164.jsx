@@ -26,14 +26,14 @@ class f extends Chunk647438.PureComponent {
       paypalClient: t
     } = this.props;
     return (0, Chunk951288.jsx)(Chunk481060.oil, {
-      label: Chunk388032.intl.string(Chunk388032.t.QQBAos),
+      label: Chunk388032.intl.string(Chunk388032.t.QQBAoq),
       leading: {
         type: "image",
         src: (0, Chunk219929.hx)(Chunk219929.ZP.Types.PAYPAL)
       },
       value: module,
       readOnly: true,
-      placeholder: null == exports ? Chunk388032.intl.string(Chunk388032.t.dte2M9) : Chunk388032.intl.string(Chunk388032.t.hopw7X)
+      placeholder: null == exports ? Chunk388032.intl.string(Chunk388032.t.dte2Mz) : Chunk388032.intl.string(Chunk388032.t.hopw7e)
     })
   }
 }

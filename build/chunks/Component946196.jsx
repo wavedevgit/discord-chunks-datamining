@@ -37,11 +37,11 @@ let p = e => {
   }, "respect-motion-settings"), p = (() => {
     switch (t) {
       case s.r.ERROR_DOWNLOADING_DEPENDENCY:
-        return c.intl.string(c.t.D9neaH);
+        return c.intl.string(c.t.D9neaG);
       case s.r.ERROR_ACTIVATING_VOICE_FILTER:
-        return c.intl.string(c.t.mNMZZg);
+        return c.intl.string(c.t.mNMZZm);
       default:
-        return c.intl.string(c.t.F8FvUy)
+        return c.intl.string(c.t.F8FvU1)
     }
   })();
   return d(e => n ? null : (0, r.jsx)(o.animated.div, {

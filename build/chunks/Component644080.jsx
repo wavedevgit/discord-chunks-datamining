@@ -33,11 +33,11 @@ function _(e) {
   } = n.features.has(x.oNc.BANNER) ? {
     variant: "overlay-secondary",
     icon: c.FmF,
-    text: b.intl.string(b.t.b0y3DL)
+    text: b.intl.string(b.t.b0y3DA)
   } : {
     variant: "expressive",
     icon: c.Ucv,
-    text: b.intl.string(b.t["+7XY31"])
+    text: b.intl.string(b.t["+7XY39"])
   };
   return (0, l.jsx)("div", {
     className: j.editButtonContainer,
@@ -109,7 +109,7 @@ let I = Chunk647438.memo(function(e) {
               className: j.inviteButton,
               children: (0, l.jsx)(c.Button, {
                 variant: "secondary",
-                text: b.intl.string(b.t.VINpSK),
+                text: b.intl.string(b.t.VINpSE),
                 onClick: () => (0, c.ZDy)(async () => {
                   let {
                     default: e

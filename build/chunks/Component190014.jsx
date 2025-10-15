@@ -35,10 +35,10 @@ function E(e) {
   return n === h.T ? null : (0, r.jsx)(u.U, {
     setting: p.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_ACTIVITY_JOINING_V2,
     children: (0, r.jsx)(d.ZP, {
-      title: g.intl.string(g.t["T+nevN"]),
+      title: g.intl.string(g.t["T+nevL"]),
       value: !c,
       onChange: _,
-      note: g.intl.format(g.t.jXKQCu, {
+      note: g.intl.format(g.t.jXKQCg, {
         helpdeskArticle: o.Z.getArticleURL(m.BhN.ACTIVITY_STATUS_SETTINGS)
       })
     })

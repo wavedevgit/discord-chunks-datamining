@@ -31,10 +31,10 @@ function d(e) {
   return null == l ? null : u(s, l, [r])
 }
 let f = () => ({
-  minutes: Chunk388032.t.nFt9ck,
-  hours: Chunk388032.t.jzCewe,
-  days: Chunk388032.t.U4I0sw,
-  month: Chunk388032.intl.string(Chunk388032.t["nBNJ/L"])
+  minutes: Chunk388032.t.nFt9cn,
+  hours: Chunk388032.t.jzCewc,
+  days: Chunk388032.t.U4I0s7,
+  month: Chunk388032.intl.string(Chunk388032.t["nBNJ/P"])
 });
 
 function _(e, t) {

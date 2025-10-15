@@ -250,15 +250,15 @@ let F = e => {
           className: P.heading,
           children: [(0, r.jsx)(c.Heading, {
             variant: "heading-lg/bold",
-            children: R.intl.string(R.t["5/knv4"])
+            children: R.intl.string(R.t["5/knv7"])
           }), (0, r.jsx)(p.Z, {})]
         }), (0, r.jsx)(c.Text, {
           variant: "text-sm/normal",
-          children: R.intl.string(R.t.NFTQoc)
+          children: R.intl.string(R.t.NFTQoa)
         }), (0, r.jsx)(c.Text, {
           color: "text-link",
           variant: "text-sm/normal",
-          children: R.intl.format(R.t.jerM90, {
+          children: R.intl.format(R.t["jerM9/"], {
             helpCenterLink: g.Z.getArticleURL(C.BhN.CONFETTI_POTION)
           })
         })]
@@ -268,7 +268,7 @@ let F = e => {
         className: P.selectContainer,
         children: [(0, r.jsx)(c.Text, {
           variant: "eyebrow",
-          children: R.intl.string(R.t.o8XwoI)
+          children: R.intl.string(R.t.o8XwoK)
         }), (0, r.jsx)(H, {
           channel: t,
           selectedEmoji: n,
@@ -289,7 +289,7 @@ let F = e => {
       selectionText: _
     } = (0, i.useMemo)(() => null == n ? {
       emojiName: null,
-      selectionText: R.intl.string(R.t.KgK5qg)
+      selectionText: R.intl.string(R.t.KgK5qq)
     } : {
       emojiName: null == n.id ? n.optionallyDiverseSequence : n.name,
       selectionText: n.name.replace(/_/g, " ")
@@ -350,7 +350,7 @@ let F = e => {
       className: P.footer,
       children: [(0, r.jsx)(c.Button, {
         variant: "secondary",
-        text: R.intl.string(R.t.w2Qbd6),
+        text: R.intl.string(R.t.w2Qbd3),
         onClick: () => {
           (0, c.Mr3)(U)
         }
@@ -371,7 +371,7 @@ let F = e => {
       numPotions: t
     } = (0, Chunk576645.t6)(Chunk317951.D1);
     if (null == exports || 0 === exports) return null;
-    let n = (null == module ? true : module.type) === Chunk981631.qc2.DEVELOPER_GIFT ? Chunk388032.t["b+P6ra"] : Chunk388032.t.RiQ4ci;
+    let n = (null == module ? true : module.type) === Chunk981631.qc2.DEVELOPER_GIFT ? Chunk388032.t["b+P6ra"] : Chunk388032.t.RiQ4cn;
     return (0, Chunk951288.jsxs)("div", {
       className: Chunk393919.remaining,
       children: [(0, Chunk951288.jsx)(Chunk481060.l22, {
@@ -398,18 +398,18 @@ let F = e => {
       tooltipCopy: u
     } = (0, i.useMemo)(() => {
       let e = {
-          0: R.intl.formatToPlainString(R.t.POGRmi, {
+          0: R.intl.formatToPlainString(R.t.POGRmp, {
             amount: v.pe,
             price: (0, E.T4)(a.amount, a.currency)
           }),
-          1: R.intl.string(R.t.RrKeD5),
-          2: R.intl.string(R.t.WOXaWH),
-          3: R.intl.string(R.t["1Qm822"])
+          1: R.intl.string(R.t.RrKeDw),
+          2: R.intl.string(R.t.WOXaWF),
+          3: R.intl.string(R.t["1Qm829"])
         },
         r = {
-          1: R.intl.string(R.t["Cb8/70"]),
-          2: R.intl.string(R.t.fMkB9K),
-          3: R.intl.string(R.t["59ElNn"])
+          1: R.intl.string(R.t["Cb8/7+"]),
+          2: R.intl.string(R.t.fMkB9P),
+          3: R.intl.string(R.t["59ElNj"])
         },
         i = 0 !== n;
       return {
@@ -439,7 +439,7 @@ let F = e => {
         height: j
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
-        children: Chunk388032.intl.string(Chunk388032.t.oKJdSs)
+        children: Chunk388032.intl.string(Chunk388032.t.oKJdSk)
       })]
     })
   }),

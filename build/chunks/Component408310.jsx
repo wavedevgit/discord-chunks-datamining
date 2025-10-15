@@ -30,14 +30,14 @@ let u = e => {
     })
   });
   else if (0 === m.length) {
-    let e = null != g ? s.intl.format(s.t.qWFupn, {
+    let e = null != g ? s.intl.format(s.t.qWFupq, {
       addServerHook: function(e, t) {
         return (0, r.jsx)(i.Anchor, {
           onClick: g,
           children: e
         }, t)
       }
-    }) : s.intl.string(s.t.vYyEnv);
+    }) : s.intl.string(s.t.vYyEnp);
     t = (0, r.jsxs)("div", {
       className: c.emptySearchWrapper,
       children: [(0, r.jsx)("img", {
@@ -48,7 +48,7 @@ let u = e => {
         variant: "heading-xl/semibold",
         color: "header-primary",
         className: c.emptySearchTitle,
-        children: s.intl.string(s.t["6HXiuE"])
+        children: s.intl.string(s.t["6HXiuL"])
       }), (0, r.jsx)(i.Text, {
         variant: "text-md/normal",
         color: "header-secondary",
@@ -79,15 +79,15 @@ let u = e => {
           }), (0, r.jsx)(i.Heading, {
             variant: "heading-xl/semibold",
             className: c.searchPageTitle,
-            children: s.intl.format(s.t.UkOHRd, {
+            children: s.intl.format(s.t.UkOHRU, {
               numResults: m.length,
               query: h
             })
           })]
         }), (0, r.jsx)(i.E1j, {
           query: n,
-          "aria-label": s.intl.string(s.t.nL2wKD),
-          placeholder: s.intl.string(s.t.nL2wKD),
+          "aria-label": s.intl.string(s.t.nL2wKC),
+          placeholder: s.intl.string(s.t.nL2wKC),
           onChange: u,
           onClear: p,
           onKeyDown: f

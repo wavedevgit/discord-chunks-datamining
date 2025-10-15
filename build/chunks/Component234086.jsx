@@ -19,7 +19,7 @@ let s = e => {
       children: [(0, r.jsx)(i.Heading, {
         className: o.heading,
         variant: "heading-md/semibold",
-        children: a.intl.string(a.t.gWinpQ)
+        children: a.intl.string(a.t.gWinpa)
       }), (0, r.jsx)("div", {
         className: o.questChannelCallHeaderWrapper,
         children: (0, r.jsx)(l.Z, {

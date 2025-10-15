@@ -44,7 +44,7 @@ function g(e) {
       onClose: t,
       navId: "video-device-context",
       variant: "fixed",
-      "aria-label": m.intl.string(m.t.F122Gz),
+      "aria-label": m.intl.string(m.t.F122Gx),
       onSelect: n,
       onInteraction: E,
       children: [O, (0, r.jsxs)(s.kSQ, {

@@ -76,13 +76,13 @@ function M(e, t) {
 function j(e) {
   let t = (0, d.R)("formatActivityString"),
     n = (null == e ? true : e.name) === "" ? null : null == e ? true : e.name;
-  return null != n ? t ? n : P.intl.formatToPlainString(P.t["0wJXSh"], {
+  return null != n ? t ? n : P.intl.formatToPlainString(P.t["0wJXSk"], {
     name: n
-  }) : P.intl.string(P.t.eXan7B)
+  }) : P.intl.string(P.t.eXan7O)
 }
 
 function k(e, t) {
-  return (e.isDM() || e.isGroupDM() ? P.intl.string(P.t["9FaEzi"]) : e.isGuildStageVoice() ? P.intl.string(P.t.QygGCN) : P.intl.string(P.t.msxteM)) + (null != t ? " (".concat(t, ")") : "")
+  return (e.isDM() || e.isGroupDM() ? P.intl.string(P.t["9FaEzs"]) : e.isGuildStageVoice() ? P.intl.string(P.t.QygGCA) : P.intl.string(P.t.msxteH)) + (null != t ? " (".concat(t, ")") : "")
 }
 
 function U(e) {

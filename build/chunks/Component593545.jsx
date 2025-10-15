@@ -136,12 +136,12 @@ function A(e) {
     setExpanded: n,
     isWholeFile: i,
     numLines: a
-  } = e, o = m.intl.formatToPlainString(i ? m.t.Go5Vvs : m.t.yJcYan, {
+  } = e, o = m.intl.formatToPlainString(i ? m.t.Go5Vvr : m.t.yJcYam, {
     lines: a
   });
   return (0, r.jsx)(c.u, {
     asContainer: true,
-    text: "".concat(t ? m.intl.string(m.t.iTcuma) : m.intl.string(m.t.dcl9MQ), " (").concat(o, ")"),
+    text: "".concat(t ? m.intl.string(m.t.iTcumZ) : m.intl.string(m.t.dcl9MT), " (").concat(o, ")"),
     children: (0, r.jsxs)(u.P3F, {
       className: g.toggleExpandSection,
       onClick: () => {
@@ -149,7 +149,7 @@ function A(e) {
       },
       children: [(0, r.jsx)(p.Z, {
         direction: t ? p.Z.Directions.UP : p.Z.Directions.DOWN
-      }), t ? m.intl.string(m.t.iTcuma) : m.intl.string(m.t.dcl9MQ)]
+      }), t ? m.intl.string(m.t.iTcumZ) : m.intl.string(m.t.dcl9MT)]
     })
   })
 }
@@ -174,7 +174,7 @@ function C(e) {
         children: (0, h.IC)(i)
       })
     }), (0, r.jsx)(c.u, {
-      text: "".concat(m.intl.string(m.t["1WjMbC"]), " ").concat(a),
+      text: "".concat(m.intl.string(m.t["1WjMbG"]), " ").concat(a),
       children: (0, r.jsx)(u.Anchor, {
         className: g.downloadSection,
         href: t,
@@ -205,7 +205,7 @@ function N(e) {
         closePopout: i
       } = e;
       return (0, r.jsx)(u.VqE, {
-        "aria-label": m.intl.string(m.t.utm4qs),
+        "aria-label": m.intl.string(m.t.utm4qq),
         children: (0, r.jsx)("div", {
           className: g.languageSelector,
           children: (0, r.jsxs)(l.uz, {
@@ -220,14 +220,14 @@ function N(e) {
             })),
             value: t,
             children: [(0, r.jsx)(l.Ct, {
-              placeholder: m.intl.string(m.t.GofftW)
+              placeholder: m.intl.string(m.t.Gofftb)
             }), (0, r.jsx)(l.px, {})]
           })
         })
       })
     },
     children: e => (0, r.jsx)(c.u, {
-      text: m.intl.string(m.t.utm4qs),
+      text: m.intl.string(m.t.utm4qq),
       children: (0, r.jsx)(u.nF$, v(y({}, e), {
         size: "md",
         color: "currentColor",
@@ -241,7 +241,7 @@ function N(e) {
 function R(e) {
   return (0, r.jsx)(c.u, {
     asContainer: true,
-    text: m.intl.string(m.t["0PQYk3"]),
+    text: m.intl.string(m.t["0PQYk5"]),
     children: (0, r.jsx)(u.P3F, {
       className: g.openFullPreviewSection,
       onClick: () => {
@@ -269,9 +269,9 @@ function P(e) {
     bytesLeft: p,
     className: E
   } = e, b = null == s ? true : s.split("\n"), y = null != (t = null == b ? true : b.length) ? t : 0, O = l ? 100 : 6, v = 0 === p, I = "";
-  v && l && y > O ? I = "\n..." : v || (I = "..."), "" !== I && (v ? I += " " + m.intl.formatToPlainString(m.t.DQnFp2, {
+  v && l && y > O ? I = "\n..." : v || (I = "..."), "" !== I && (v ? I += " " + m.intl.formatToPlainString(m.t.DQnFp6, {
     lines: y - O
-  }) : I += " " + m.intl.formatToPlainString(m.t["1+gGcK"], {
+  }) : I += " " + m.intl.formatToPlainString(m.t["1+gGcH"], {
     formattedBytes: (0, h.IC)(p)
   }));
   let T = (null == b ? true : b.slice(0, O).join("\n")) + I,
@@ -333,11 +333,11 @@ function w(e) {
     bytesLeft: c,
     onClose: d
   } = e, [f, _] = i.useState(s), p = null != l ? l : "";
-  return 0 !== c && (p += "... ".concat(m.intl.formatToPlainString(m.t["1+gGcK"], {
+  return 0 !== c && (p += "... ".concat(m.intl.formatToPlainString(m.t["1+gGcH"], {
     formattedBytes: (0, h.IC)(c)
   }))), (0, r.jsx)(u.IX, {
     transitionState: o,
-    "aria-label": m.intl.string(m.t["qxQjc+"]),
+    "aria-label": m.intl.string(m.t.qxQjc3),
     size: "xl",
     onClose: d,
     children: (0, r.jsxs)("div", {

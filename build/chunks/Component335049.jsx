@@ -1,7 +1,7 @@
 /** Chunk was on 59077 **/
 /** chunk id: 335049, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => P
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -47,7 +47,7 @@ function I(e) {
   return e
 }
 
-function w(e, t) {
+function E(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -60,7 +60,7 @@ function w(e, t) {
   }), e
 }
 
-function E(e) {
+function P(e) {
   let {
     guild: t,
     id: l,
@@ -74,15 +74,15 @@ function E(e) {
       let {
         default: e
       } = await n.e("5396").then(n.bind(n, 731646));
-      return t => (0, i.jsx)(e, w(I({}, t), {
+      return t => (0, i.jsx)(e, E(I({}, t), {
         id: l,
-        label: N.intl.string(N.t.oJ1Muw)
+        label: N.intl.string(N.t.oJ1Mu7)
       }))
     })
   }, [l]);
   switch (a) {
     case m.Kw.CHANNEL:
-      return (0, i.jsx)(P, {
+      return (0, i.jsx)(w, {
         guild: t,
         id: l,
         isLocked: o,
@@ -108,7 +108,7 @@ function E(e) {
   }
 }
 
-function P(e) {
+function w(e) {
   let {
     guild: t,
     id: n,
@@ -174,7 +174,7 @@ function T(e) {
       let {
         default: e
       } = await n.e("14486").then(n.bind(n, 786746));
-      return t => (0, i.jsx)(e, w(I({}, t), {
+      return t => (0, i.jsx)(e, E(I({}, t), {
         guild: l,
         role: m
       }))
@@ -209,10 +209,10 @@ function Z(e) {
     isLocked: r,
     lockTooltipText: l,
     openEntryContextMenu: a
-  } = e, o = (0, c.e7)([y.default], () => y.default.getUser(n)), s = (0, c.e7)([j.ZP], () => {
+  } = e, o = (0, c.e7)([O.default], () => O.default.getUser(n)), s = (0, c.e7)([j.ZP], () => {
     var e;
     return null == (e = j.ZP.getMember(t.id, n)) ? true : e.nick
-  }, [t.id, n]), d = (0, c.e7)([O.Z], () => O.Z.hidePersonalInformation);
+  }, [t.id, n]), d = (0, c.e7)([y.Z], () => y.Z.hidePersonalInformation);
   return null == o ? null : (0, i.jsxs)("div", {
     onContextMenu: a,
     className: S.identifier,

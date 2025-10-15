@@ -17,7 +17,7 @@ function c(e, t) {
     guildId: n
   }) ? (0, r.jsx)(i.sNh, {
     id: "configure",
-    label: s.intl.string(s.t.NpHUi1),
+    label: s.intl.string(s.t.NpHUi4),
     icon: i.idN,
     action: () => (0, a.zW)(t)
   }) : null

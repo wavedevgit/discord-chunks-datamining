@@ -112,7 +112,7 @@ let D = (0, Chunk258536.animated)(Chunk481060.CJ0),
         [C.outerContainerEmbed]: q,
         [C.outerContainerXs]: "xs" === P
       }),
-      "aria-label": A.intl.string(A.t.dcl9MQ),
+      "aria-label": A.intl.string(A.t.dcl9MT),
       style: {
         height: z ? Z : true
       },
@@ -149,7 +149,7 @@ let D = (0, Chunk258536.animated)(Chunk481060.CJ0),
             },
             "aria-hidden": !x && M,
             children: (0, r.jsxs)(u.kL8, {
-              "aria-label": A.intl.string(A.t.dcl9MQ),
+              "aria-label": A.intl.string(A.t.dcl9MT),
               onClick: en,
               className: C.headerCollapsedClickableContainer,
               children: [(0, r.jsx)("div", {
@@ -207,18 +207,18 @@ let D = (0, Chunk258536.animated)(Chunk481060.CJ0),
                     variant: "lg" === P ? "heading-xxl/bold" : "sm" === P ? "heading-xl/bold" : "heading-lg/bold",
                     className: C.heading,
                     color: "always-white",
-                    children: A.intl.format(A.t.EAYZAr, {
+                    children: A.intl.format(A.t.EAYZAg, {
                       questName: a.config.messages.questName
                     })
                   })
                 }), (0, r.jsx)(u.Text, {
                   variant: "text-xs/normal",
                   color: "always-white",
-                  children: Q ? A.intl.formatToPlainString(A.t.APddvF, {
+                  children: Q ? A.intl.formatToPlainString(A.t.APddvL, {
                     expirationDate: ee
-                  }) : n ? A.intl.formatToPlainString(A.t.v7xMw7, {
+                  }) : n ? A.intl.formatToPlainString(A.t.v7xMw8, {
                     expirationDate: $
-                  }) : A.intl.formatToPlainString(A.t["pX+fmn"], {
+                  }) : A.intl.formatToPlainString(A.t["pX+fmp"], {
                     expirationDate: $
                   })
                 })]
@@ -249,7 +249,7 @@ let D = (0, Chunk258536.animated)(Chunk481060.CJ0),
               "aria-hidden": !x && !M,
               children: (0, r.jsx)(u.P3F, w(R({}, e), {
                 className: C.iconWrapper,
-                "aria-label": A.intl.string(A.t.DEoVWZ),
+                "aria-label": A.intl.string(A.t.DEoVWV),
                 children: (0, r.jsx)(u.xhG, {
                   size: "md",
                   color: l.Z.WHITE
@@ -259,7 +259,7 @@ let D = (0, Chunk258536.animated)(Chunk481060.CJ0),
           }), !(0, I.W_)(N) && (0, r.jsx)(u.P3F, {
             onClick: en,
             className: C.iconWrapper,
-            "aria-label": M ? A.intl.string(A.t.iTcuma) : A.intl.string(A.t.dcl9MQ),
+            "aria-label": M ? A.intl.string(A.t.iTcumZ) : A.intl.string(A.t.dcl9MT),
             children: (0, r.jsx)(D, {
               style: {
                 rotate: L.to({

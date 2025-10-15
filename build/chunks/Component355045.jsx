@@ -94,14 +94,14 @@ let T = function(e) {
         }), (0, r.jsx)(u.Text, {
           className: I.guildStatusCopy,
           variant: "text-md/bold",
-          children: v.intl.format(v.t["pob/cL"], {
+          children: v.intl.format(v.t["pob/cH"], {
             subscriptions: P
           })
         })]
       }), R > 0 ? (0, r.jsx)(u.Text, {
         className: I.guildBoostCountCurrentUser,
         variant: "text-sm/normal",
-        children: v.intl.format(v.t.Jeto2u, {
+        children: v.intl.format(v.t.Jeto2t, {
           numSubscriptions: R
         })
       }) : null]
@@ -143,7 +143,7 @@ let T = function(e) {
           size: "md",
           color: "currentColor",
           className: I.guildBoostCtaGiftIcon
-        }), v.intl.string(v.t["8MYSQw"])]
+        }), v.intl.string(v.t["8MYSQ0"])]
       }) : (0, r.jsx)(c.zx, {
         "data-migration-pending": true,
         className: o()(I.guildBoostCta, I.guildBoostCtaSecondary),
@@ -152,7 +152,7 @@ let T = function(e) {
         color: c.zx.Colors.WHITE,
         onClick: w,
         size: c.zx.Sizes.LARGE,
-        children: v.intl.string(v.t.Q43TvC)
+        children: v.intl.string(v.t.Q43TvL)
       })]
     })]
   })

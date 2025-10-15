@@ -28,7 +28,7 @@ function d(e) {
     children: [(0, r.jsx)(i.Heading, {
       variant: "heading-lg/semibold",
       color: "header-primary",
-      children: o.intl.string(o.t.swIgTL)
+      children: o.intl.string(o.t.swIgTE)
     }), (0, r.jsx)("div", {
       className: c.contentContainer,
       children: n.map(e => (0, r.jsxs)("div", {

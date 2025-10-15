@@ -47,14 +47,14 @@ function u(e) {
       children: (0, r.jsx)(i.Heading, {
         variant: "heading-lg/medium",
         color: "header-primary",
-        children: null != n ? n : l.intl.string(l.t.wZmueu)
+        children: null != n ? n : l.intl.string(l.t.wZmuen)
       })
     }), (0, r.jsx)("div", {
       className: c.body,
       children: (0, r.jsx)(i.Text, {
         variant: "text-sm/normal",
         color: "text-secondary",
-        children: l.intl.string(l.t["8mfCqY"])
+        children: l.intl.string(l.t["8mfCqa"])
       })
     })]
   })

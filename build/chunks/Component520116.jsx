@@ -132,7 +132,7 @@ function S(e) {
       color: s.zx.Colors.LINK,
       look: s.zx.Looks.LINK,
       onClick: e => a(e, n[n.length - 1].id),
-      children: [j.intl.string(j.t["9OB9hq"]), " ›"]
+      children: [j.intl.string(j.t["9OB9ho"]), " ›"]
     }, "view-all")), 0 === N.length && (N = [(0, r.jsx)(c.$jN, {}, "spinner")])
   }
   return S && C && u.Z.trackExposure({

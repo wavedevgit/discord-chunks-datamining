@@ -19,11 +19,11 @@ function o(e) {
 function s(e) {
   switch (e) {
     case i.rV.DAY:
-      return a.t["3rUmPQ"];
+      return a.t["3rUmPT"];
     case i.rV.MONTH:
-      return a.t.zuN545;
+      return a.t["zuN54+"];
     case i.rV.YEAR:
-      return a.t.cuSp8Q
+      return a.t.cuSp8f
   }
 }
 
@@ -44,18 +44,18 @@ function c(e) {
   } = e;
   switch (t) {
     case i.rV.DAY:
-      if (n > 0 && n % 7 == 0) return a.intl.formatToPlainString(a.t.iVZYyl, {
+      if (n > 0 && n % 7 == 0) return a.intl.formatToPlainString(a.t.iVZYys, {
         weeks: n / 7
       });
-      return a.intl.formatToPlainString(a.t.jzH70Z, {
+      return a.intl.formatToPlainString(a.t.jzH70d, {
         days: n
       });
     case i.rV.MONTH:
-      return a.intl.formatToPlainString(a.t.erUSmA, {
+      return a.intl.formatToPlainString(a.t.erUSmJ, {
         months: n
       });
     case i.rV.YEAR:
-      return a.intl.formatToPlainString(a.t.IfYQVC, {
+      return a.intl.formatToPlainString(a.t.IfYQVF, {
         years: n
       })
   }

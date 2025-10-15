@@ -34,11 +34,11 @@ function p(e) {
     }), (0, i.jsx)(o.Heading, {
       className: d.header,
       variant: "heading-md/bold",
-      children: u.intl.string(u.t["C+tj1c"])
+      children: u.intl.string(u.t["C+tj1d"])
     }), (0, i.jsx)(o.Text, {
       variant: "text-md/normal",
       color: "header-secondary",
-      children: u.intl.format(u.t["nNHd/y"], {
+      children: u.intl.format(u.t["nNHd//"], {
         onCancel: c.s6
       })
     })]

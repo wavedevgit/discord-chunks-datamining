@@ -31,7 +31,7 @@ function N() {
         height: 16
       }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-md/semibold",
-        children: Chunk388032.intl.string(Chunk388032.t.cf5lgh)
+        children: Chunk388032.intl.string(Chunk388032.t.cf5lgo)
       })]
     }), (0, Chunk951288.jsx)("div", {
       children: (0, Chunk951288.jsx)(Chunk481060.M2$, {

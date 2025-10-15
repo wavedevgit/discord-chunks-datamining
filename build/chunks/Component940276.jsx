@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk797670 = require("./797670.jsx"),
   Chunk304432 = require("./304432.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk951917 = require("./951917.js"),
+  Chunk933554 = require("./933554.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk378976 = require("./378976.js");
 
@@ -33,8 +33,8 @@ function h(e) {
       size: 48
     }), (0, r.jsx)(o.rsf, {
       label: t.name,
-      description: _.intl.format(_.t.zRl6XR, {
-        count: null != l ? l : 0
+      description: _.intl.format(_.t.zRl6XV, {
+        count: l
       }),
       checked: !n,
       onChange: e => i({
@@ -85,8 +85,8 @@ let m = function() {
           activity_restricted_guild_count: b,
           total_guild_count: y
         }),
-        placeholder: Chunk388032.intl.string(Chunk388032.t["H+nRYw"]),
-        "aria-label": Chunk388032.intl.string(Chunk388032.t["5h0QOP"]),
+        placeholder: Chunk388032.intl.string(Chunk388032.t["H+nRY2"]),
+        "aria-label": Chunk388032.intl.string(Chunk388032.t["5h0QOD"]),
         inputProps: {
           "aria-controls": v,
           "aria-expanded": true
@@ -97,16 +97,16 @@ let m = function() {
           className: Chunk378976.select,
           variant: "text-only",
           options: [{
-            label: Chunk388032.intl.string(Chunk388032.t.STMPJ2),
+            label: Chunk388032.intl.string(Chunk388032.t.STMPJy),
             value: Chunk304432.W.SERVER_ORDER
           }, {
-            label: Chunk388032.intl.string(Chunk388032.t.CbaapP),
+            label: Chunk388032.intl.string(Chunk388032.t.CbaapK),
             value: Chunk304432.W.RECENTLY_JOINED
           }, {
-            label: Chunk388032.intl.string(Chunk951917.default.ZI51JZ),
+            label: Chunk388032.intl.string(Chunk933554.default.ZI51JS),
             value: Chunk304432.W.ACTIVITY_SHARING_ON
           }, {
-            label: Chunk388032.intl.string(Chunk951917.default["+kxafn"]),
+            label: Chunk388032.intl.string(Chunk933554.default["+kxafn"]),
             value: Chunk304432.W.ACTIVITY_SHARING_OFF
           }],
           select: e => {
@@ -122,25 +122,25 @@ let m = function() {
         }), (0, Chunk951288.jsx)(Chunk481060.Avr, {
           variant: "primary",
           onClick: m,
-          text: Chunk797670 ? Chunk388032.intl.string(Chunk388032.t["7lxcLO"]) : Chunk388032.intl.string(Chunk388032.t.zh6UEs)
+          text: Chunk797670 ? Chunk388032.intl.string(Chunk388032.t["7lxcLC"]) : Chunk388032.intl.string(Chunk388032.t.zh6UEh)
         })]
       })]
     }), (0, Chunk951288.jsx)(Chunk481060.nn4, {
       "aria-live": "polite",
       role: "region",
-      children: Chunk388032.intl.format(Chunk951917.default.EvzDff, {
+      children: Chunk388032.intl.format(Chunk933554.default.EvzDfX, {
         count: module.length
       })
     }), (0, Chunk951288.jsxs)("ul", {
       className: Chunk378976.guildsList,
       id: v,
-      "aria-label": Chunk388032.intl.string(Chunk388032.t["7hB4kg"]),
+      "aria-label": Chunk388032.intl.string(Chunk388032.t["7hB4kp"]),
       children: [0 === module.length && (0, Chunk951288.jsx)("div", {
         className: Chunk378976.noResultsContainer,
         children: (0, Chunk951288.jsx)(Chunk481060.Text, {
           className: Chunk378976.noResultsText,
           variant: "text-lg/medium",
-          children: Chunk388032.intl.string(Chunk388032.t["Xe+fJM"])
+          children: Chunk388032.intl.string(Chunk388032.t["Xe+fJC"])
         })
       }), module.map(e => (0, r.jsx)(h, {
         guild: e,

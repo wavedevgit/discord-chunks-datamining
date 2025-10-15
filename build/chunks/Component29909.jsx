@@ -24,7 +24,7 @@ let h = Chunk647438.memo(function(e) {
     url: h,
     format: m,
     className: g
-  } = e, [E, b] = i.useState(false), y = (0, u.hb)((0, c.iy)(h)), O = y ? _.intl.string(_.t["5/NS74"]) : _.intl.string(_.t.nIH0v8), v = y ? l.r7p : l.vxU;
+  } = e, [E, b] = i.useState(false), y = (0, u.hb)((0, c.iy)(h)), O = y ? _.intl.string(_.t["5/NS7+"]) : _.intl.string(_.t.nIH0v7), v = y ? l.r7p : l.vxU;
   i.useEffect(() => {
     if (!E) return;
     let e = setTimeout(() => {

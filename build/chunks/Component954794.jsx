@@ -31,7 +31,7 @@ function h(e) {
       }), (0, r.jsx)(s.Text, {
         variant: "text-lg/normal",
         color: "text-default",
-        children: _.intl.string(_.t["13/7kX"])
+        children: _.intl.string(_.t["13/7kZ"])
       })]
     }), (0, r.jsxs)("div", {
       className: p.headerContainer,
@@ -40,11 +40,11 @@ function h(e) {
         children: [(0, r.jsx)(s.Heading, {
           variant: "heading-lg/extrabold",
           color: "header-primary",
-          children: _.intl.string(_.t["6jI0hd"])
+          children: _.intl.string(_.t["6jI0hY"])
         }), (0, r.jsx)(s.Text, {
           variant: "text-md/normal",
           color: "header-secondary",
-          children: _.intl.string(_.t.GuUItX)
+          children: _.intl.string(_.t.GuUItb)
         })]
       }), (0, r.jsx)("div", {
         className: p.headerIcon,
@@ -77,7 +77,7 @@ function h(e) {
         children: (0, r.jsx)(s.Text, {
           variant: "text-md/bold",
           color: "header-secondary",
-          children: _.intl.string(_.t.GFyMg1)
+          children: _.intl.string(_.t.GFyMg4)
         })
       }), (0, r.jsx)("div", {
         className: p.achievementGrid,

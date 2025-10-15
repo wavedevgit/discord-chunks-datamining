@@ -33,7 +33,7 @@ function p(e) {
     }), (0, r.jsx)(s.Text, {
       variant: "text-md/normal",
       color: "text-tertiary",
-      children: d.intl.format(d.t.BaxFf8, {
+      children: d.intl.format(d.t.BaxFf3, {
         emojiName: t.name,
         emojiNameHook: (e, t) => (0, r.jsx)(s.Text, {
           variant: "text-md/semibold",

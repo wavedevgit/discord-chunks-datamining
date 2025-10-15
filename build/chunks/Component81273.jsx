@@ -65,9 +65,9 @@ let D = "MMM DD, YYYY",
       } = (0, _.ZP)(),
       $ = (null == F ? true : F.paymentGateway) === P.gg$.APPLE_PARTNER,
       ee = !L && null != Z && H && !j && !K && !z && !$;
-    j || L && !x ? s = w.intl.string(w.t.pQK5ho) : W === U ? s = w.intl.formatToPlainString(w.t.UlBRTl, {
+    j || L && !x ? s = w.intl.string(w.t.pQK5ho) : W === U ? s = w.intl.formatToPlainString(w.t.UlBRTk, {
       changeDate: null != F ? l()(F.currentPeriodEnd).format(D) : ""
-    }) : K ? s = w.intl.string(w.t.ePFYOS) : z ? s = w.intl.string(w.t["0lPoT2"]) : $ && (s = w.intl.string(w.t.cEMaCt));
+    }) : K ? s = w.intl.string(w.t.ePFYOT) : z ? s = w.intl.string(w.t["0lPoT0"]) : $ && (s = w.intl.string(w.t.cEMaCg));
     let et = (0, f.Z)(R.iP);
     i.useEffect(() => {
       G && null != B && u.Z.wait(() => {
@@ -81,13 +81,13 @@ let D = "MMM DD, YYYY",
           if ((null == r ? true : r.is_eligible) === true) {
             var s;
             n = null == Q || null == (s = Q.active_trial) ? true : s.id
-          } else i = w.intl.string(w.t.vuvsK5)
+          } else i = w.intl.string(w.t.vuvsKy)
         }(0, b.Z)({
           activeSubscription: F,
           analyticsSubscriptionType: P.NYc.GUILD,
           trialId: n,
-          trialFooterMessageOverride: (null == Q ? true : Q.active_trial) != null ? w.intl.format(w.t.zyGyNk, {
-            buttonText: w.intl.string(w.t.BEeXib),
+          trialFooterMessageOverride: (null == Q ? true : Q.active_trial) != null ? w.intl.format(w.t.zyGyNj, {
+            buttonText: w.intl.string(w.t.BEeXiY),
             interval: (0, v.iG)(k),
             days: 1,
             contactLink: P.EYA.CONTACT,

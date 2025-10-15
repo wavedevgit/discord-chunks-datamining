@@ -23,19 +23,19 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk446136 = require("./446136.js");
-let S = e => {
+let P = e => {
     let {
       channel: t,
       guildName: r
     } = e, l = (0, a.e7)([g.Z], () => g.Z.getGuild(t.guild_id)), n = (0, o.ZP)(t);
     return (0, s.jsxs)("div", {
-      className: P.result,
+      className: S.result,
       children: [(0, s.jsx)(m.Z, {
         size: m.E.SMALL_32,
         guild: l,
         channel: t
       }), (0, s.jsxs)("div", {
-        className: P.resultText,
+        className: S.resultText,
         children: [(0, s.jsx)(i.Text, {
           variant: "text-md/medium",
           children: n
@@ -51,14 +51,14 @@ let S = e => {
       channel: t
     } = e, r = (0, o.ZP)(t), l = (0, x._)(t);
     return (0, s.jsxs)("div", {
-      className: P.result,
+      className: S.result,
       children: [(0, s.jsx)(h.Z, {
         "aria-hidden": true,
         size: i.EFr.SIZE_32,
         channel: t,
         experimentLocation: "forward-modal"
       }), (0, s.jsxs)("div", {
-        className: P.resultText,
+        className: S.resultText,
         children: [(0, s.jsx)(i.Text, {
           variant: "text-md/medium",
           children: r
@@ -75,14 +75,14 @@ let S = e => {
       status: r
     } = e, l = (0, a.e7)([p.Z], () => p.Z.getNickname(t.id)), n = j.ZP.useName(t), u = j.ZP.useUserTag(t);
     return (0, s.jsxs)("div", {
-      className: P.result,
+      className: S.result,
       children: [(0, s.jsx)(c.Z, {
         "aria-hidden": true,
         size: i.EFr.SIZE_32,
         user: t,
         status: r
       }), (0, s.jsxs)("div", {
-        className: P.resultText,
+        className: S.resultText,
         children: [(0, s.jsx)(i.Text, {
           variant: "text-md/medium",
           children: null != l ? l : n
@@ -110,7 +110,7 @@ class N extends Chunk647438.Component {
           categoryName: t,
           guildName: l
         } = require;
-        e = (0, Chunk951288.jsx)(S, {
+        e = (0, Chunk951288.jsx)(P, {
           channel: require.data.record,
           categoryName: exports,
           guildName: Chunk647438
@@ -134,12 +134,12 @@ class N extends Chunk647438.Component {
     }
     return t = require.sent ? (0, Chunk951288.jsx)(Chunk481060.Button, {
       variant: "secondary",
-      text: Chunk388032.intl.string(Chunk388032.t.i6A1Xw),
+      text: Chunk388032.intl.string(Chunk388032.t.i6A1X1),
       size: "sm",
       disabled: true
     }) : (0, Chunk951288.jsx)(Chunk481060.Button, {
       variant: "secondary",
-      text: Chunk388032.intl.string(Chunk388032.t["6F9ivu"]),
+      text: Chunk388032.intl.string(Chunk388032.t["6F9ivr"]),
       size: "sm",
       loading: Chunk647438
     }), (0, Chunk951288.jsxs)(Chunk481060.P3F, {
@@ -179,7 +179,7 @@ function E(e) {
     results: f.Z.getResults(),
     query: f.Z.getQuery(),
     activity: f.Z.getActivity()
-  }), []), [m, x] = l.useState(o), [g, p] = l.useState([]), [j, S] = l.useState(false), b = l.useRef(null), C = l.useCallback(() => {
+  }), []), [m, x] = l.useState(o), [g, p] = l.useState([]), [j, P] = l.useState(false), b = l.useRef(null), C = l.useCallback(() => {
     var e;
     null == (e = b.current) || e.scrollPageUp({
       animate: true
@@ -223,7 +223,7 @@ function E(e) {
     };
   return null == h ? null : (0, s.jsx)(n.Modal, {
     transitionState: t,
-    title: T.intl.formatToPlainString(T.t["2tN7ih"], {
+    title: T.intl.formatToPlainString(T.t["2tN7io"], {
       name: h.name
     }),
     onClose: r,
@@ -231,19 +231,19 @@ function E(e) {
     input: (0, s.jsx)(i.E1j, {
       query: m,
       onChange: Z,
-      placeholder: T.intl.string(T.t["5h0QOP"]),
+      placeholder: T.intl.string(T.t["5h0QOD"]),
       autoFocus: true,
       onClear: () => {
         Z("")
       }
     }),
     size: "md",
-    "aria-label": T.intl.formatToPlainString(T.t["2tN7ih"], {
+    "aria-label": T.intl.formatToPlainString(T.t["2tN7io"], {
       name: h.name
     }),
     children: (0, s.jsx)(i.YAO, {
       scrollerRef: b,
-      className: 0 === c.length ? P.noResults : P.results,
+      className: 0 === c.length ? S.noResults : S.results,
       paddingBottom: 12,
       sections: [c.length],
       sectionHeight: 0,
@@ -265,7 +265,7 @@ function E(e) {
       },
       onScroll: e => {
         let t = e.currentTarget.scrollTop > 0;
-        j !== t && S(t)
+        j !== t && P(t)
       }
     })
   })

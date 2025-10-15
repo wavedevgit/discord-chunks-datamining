@@ -10,7 +10,7 @@ var Chunk951288 = require("./951288.js"),
   o = require.n(Chunk120356),
   Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk47280 = require("./47280.js"),
+  Chunk283066 = require("./283066.js"),
   Chunk697426 = require("./697426.js"),
   Chunk603074 = require("./603074.jsx"),
   Chunk388032 = require("./388032.jsx"),
@@ -21,7 +21,7 @@ function h(e) {
   let {
     onSelect: t,
     sound: n
-  } = e, [a, h] = i.useState(false), m = i.useRef(null), g = (0, c.ZP)({
+  } = e, [a, h] = i.useState(false), m = i.useRef(null), g = (0, c.Z)({
     location: "GiftSoundboard"
   }), E = o()(_.text, g && _.refresh);
 
@@ -37,7 +37,7 @@ function h(e) {
         children: f.intl.string(f.t.aThJz8)
       }), (0, r.jsx)(l.Text, {
         variant: "text-sm/normal",
-        children: f.intl.string(f.t.stGFA3)
+        children: f.intl.string(f.t.stGFAw)
       })]
     }), (0, r.jsx)("div", {
       className: _.searchAndSound,

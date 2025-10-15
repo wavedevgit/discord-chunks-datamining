@@ -48,15 +48,15 @@ function O(e) {
       guildScheduledEventId: T
     }) : null,
     k = null == D || null == Z,
-    A = (0, s.Z)(null != D ? D : ""),
-    R = null != (n = null == Z ? true : Z.maxAge) ? n : b.value,
+    R = (0, s.Z)(null != D ? D : ""),
+    A = null != (n = null == Z ? true : Z.maxAge) ? n : b.value,
     _ = null != (O = null == Z ? true : Z.maxUses) ? O : y.value;
   return (0, r.jsxs)("div", {
     className: f.container,
     children: [(0, r.jsx)(i.P3F, {
       onClick: E,
       className: f.close,
-      "aria-label": j.intl.string(j.t.cpT0Cq),
+      "aria-label": j.intl.string(j.t.cpT0Cg),
       children: (0, r.jsx)(i.Dio, {
         size: "md",
         color: "currentColor"
@@ -80,11 +80,11 @@ function O(e) {
       variant: "text-md/normal",
       color: "header-secondary",
       className: f.body,
-      children: j.intl.string(j.t.UetJjH)
+      children: j.intl.string(j.t.UetJjI)
     }), (0, r.jsxs)("div", {
       className: f.invite,
       children: [(0, r.jsx)(o.S, {
-        value: A,
+        value: R,
         autoFocus: false,
         onCopy: e => {
           if (k) return;
@@ -103,7 +103,7 @@ function O(e) {
         variant: "text-xs/normal",
         color: "header-secondary",
         className: f.inviteDetail,
-        children: (0, h.Vg)(R, _)
+        children: (0, h.Vg)(A, _)
       })]
     })]
   })

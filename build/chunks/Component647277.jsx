@@ -150,13 +150,13 @@ let T = e => {
       className: t
     } = e, {
       referralSentUsers: n
-    } = (0, p.G)(), i = (0, o.e7)([_.Z], () => _.Z.getRecipientStatus()), l = (0, o.e7)([_.Z], () => _.Z.getHasEligibleFriends()), c = i.size === p.Q && [...i.values()].every(e => e === f.Fe.REDEEMED), d = i.size === p.Q, b = () => false === l ? g.intl.format(g.t["zWhX/Q"], {
+    } = (0, p.G)(), i = (0, o.e7)([_.Z], () => _.Z.getRecipientStatus()), l = (0, o.e7)([_.Z], () => _.Z.getHasEligibleFriends()), c = i.size === p.Q && [...i.values()].every(e => e === f.Fe.REDEEMED), d = i.size === p.Q, b = () => false === l ? g.intl.format(g.t["zWhX/f"], {
       helpdeskArticle: u.Z.getArticleURL(m.BhN.REFERRAL_PROGRAM)
-    }) : n.length === p.Q ? true === c ? g.intl.format(g.t["1aEjsH"], {
+    }) : n.length === p.Q ? true === c ? g.intl.format(g.t["1aEjsL"], {
       helpdeskArticle: u.Z.getArticleURL(m.BhN.REFERRAL_PROGRAM)
-    }) : g.intl.format(g.t["+u3AOO"], {
+    }) : g.intl.format(g.t["+u3AOD"], {
       helpdeskArticle: u.Z.getArticleURL(m.BhN.REFERRAL_PROGRAM)
-    }) : g.intl.format(g.t["omMr+V"], {
+    }) : g.intl.format(g.t["omMr+f"], {
       helpdeskArticle: u.Z.getArticleURL(m.BhN.REFERRAL_PROGRAM)
     });
     return (0, r.jsxs)("div", {
@@ -184,7 +184,7 @@ let T = e => {
         }), (0, r.jsx)(s.Button, {
           variant: "primary",
           disabled: false === l || true === d,
-          text: g.intl.string(g.t.Lm2nFc),
+          text: g.intl.string(g.t.Lm2nFR),
           onClick: () => T({
             startingScreen: h.SelectFriendsModalScreens.SELECT_FRIENDS,
             analyticsLocations: []

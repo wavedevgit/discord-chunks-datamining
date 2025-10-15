@@ -20,7 +20,7 @@ let c = e => {
       children: [(0, r.jsx)(i.Heading, {
         className: s.heading,
         variant: "heading-md/semibold",
-        children: o.intl.string(o.t["5wnpF3"])
+        children: o.intl.string(o.t["5wnpFx"])
       }), (0, r.jsx)(a.Z, {
         className: s.questTile,
         quest: t,

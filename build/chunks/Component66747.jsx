@@ -49,14 +49,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk50493 = require("./50493.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk266631 = require("./266631.js");
-let W = Chunk647438.memo(function(e) {
+let K = Chunk647438.memo(function(e) {
     let {
       member: t
     } = e, n = l.useMemo(() => (0, x.J)(t.communicationDisabledUntil), [t.communicationDisabledUntil]), i = l.useMemo(() => null == t.communicationDisabledUntil ? new Date : new Date(t.communicationDisabledUntil), [t.communicationDisabledUntil]);
     return (0, r.jsxs)("div", {
-      className: Q.flagContainer,
+      className: W.flagContainer,
       children: [t.hasUnusualDmActivity && (0, r.jsx)(C.u, {
-        text: Y.intl.string(Y.t.QrfVTp),
+        text: Y.intl.string(Y.t.QrfVTk),
         children: (0, r.jsx)(b.b6m, {
           size: "custom",
           width: 20,
@@ -64,11 +64,11 @@ let W = Chunk647438.memo(function(e) {
           color: d.Z.colors.TEXT_MUTED.css
         })
       }), n && (0, r.jsx)(C.u, {
-        "aria-label": Y.intl.string(Y.t["xfJP+u"]),
+        "aria-label": Y.intl.string(Y.t["xfJP+v"]),
         __unsupportedReactNodeAsText: (0, r.jsxs)("div", {
-          className: Q.communicationDisabledTooltip,
+          className: W.communicationDisabledTooltip,
           children: [(0, r.jsx)("div", {
-            children: Y.intl.string(Y.t["xfJP+u"])
+            children: Y.intl.string(Y.t["xfJP+v"])
           }), (0, r.jsx)(g.Z, {
             deadline: i,
             showUnits: true,
@@ -82,14 +82,14 @@ let W = Chunk647438.memo(function(e) {
           color: d.Z.colors.TEXT_DANGER.css
         })
       }), (0, H.He)(t.userId) && (0, r.jsx)(C.u, {
-        text: Y.intl.string(Y.t.PK9FQ2),
+        text: Y.intl.string(Y.t.PK9FQ0),
         children: (0, r.jsx)(D.Z, {
           width: 20,
           height: 20,
           color: d.Z.colors.TEXT_DANGER.css
         })
       }), (0, j.EY)(t) && (0, r.jsx)(C.u, {
-        text: Y.intl.string(Y.t.qOVbaX),
+        text: Y.intl.string(Y.t.qOVbaW),
         children: (0, r.jsx)(b.ics, {
           size: "custom",
           width: 20,
@@ -99,22 +99,22 @@ let W = Chunk647438.memo(function(e) {
       })]
     })
   }),
-  K = Chunk647438.memo(function(e) {
+  Q = Chunk647438.memo(function(e) {
     let {
       member: t,
       highestRole: n
     } = e, i = (0, u.e7)([S.Z], () => S.Z.getGuild(t.guildId), [t.guildId]), a = t.roles.length - 1, s = l.useMemo(() => new Intl.NumberFormat(Y.intl.currentLocale).format(a), [a]), c = (0, B.vN)(t), d = (0, B.vN)(t, true), m = (0, u.e7)([N.Z], () => N.Z.can(q.Plq.MANAGE_ROLES, i), [i]);
     return null == i ? null : (0, r.jsxs)("div", {
-      className: Q.roleContainer,
+      className: W.roleContainer,
       children: [null != n && (0, r.jsx)(F.Z, {
-        className: o()(Q.roleTooltipItem, Q.highestRole),
+        className: o()(W.roleTooltipItem, W.highestRole),
         role: n,
         guildId: t.guildId
       }), a > 0 && (0, r.jsx)(b.P3F, {
-        className: Q.otherRoles,
+        className: W.otherRoles,
         onClick: e => d(e),
         children: (0, r.jsx)(C.u, {
-          text: Y.intl.string(Y.t.DY6n4q),
+          text: Y.intl.string(Y.t.DY6n4u),
           children: (0, r.jsxs)(b.Text, {
             variant: "text-xs/medium",
             color: "header-primary",
@@ -122,14 +122,14 @@ let W = Chunk647438.memo(function(e) {
           })
         })
       }), m && (0, r.jsx)(C.u, {
-        text: Y.intl.string(Y.t.h3pSLR),
+        text: Y.intl.string(Y.t.h3pSLS),
         children: (0, r.jsx)(b.P3F, {
           onClick: c,
-          className: o()(Q.otherRoles, Q.addRoleContainer),
+          className: o()(W.otherRoles, W.addRoleContainer),
           children: (0, r.jsx)(b.qJs, {
             size: "custom",
             color: "currentColor",
-            className: Q.addRoleIcon,
+            className: W.addRoleIcon,
             width: 16,
             height: 16
           })
@@ -144,33 +144,33 @@ let W = Chunk647438.memo(function(e) {
       user: i
     } = e, o = (0, _.X7)(null == l ? true : l.guildId, null == l ? true : l.userId, null != (t = null == l ? true : l.colorStrings) ? t : null);
     return null == i || null == l ? null : (0, r.jsxs)("div", {
-      className: Q.memberNameContainer,
+      className: W.memberNameContainer,
       children: [(0, r.jsx)("div", {
-        className: Q.memberAvatar,
+        className: W.memberAvatar,
         children: (0, r.jsx)(p.Z, {
           user: i
         })
       }), (0, r.jsx)("div", {
-        className: Q.memberName,
+        className: W.memberName,
         children: (0, r.jsx)(b.Text, {
           variant: "text-sm/medium",
           children: (0, r.jsxs)("div", {
-            className: Q.nameContainer,
+            className: W.nameContainer,
             children: [(0, r.jsx)(b.PUh, {
               name: L.ZP.getName(l.guildId, null, i),
               colorString: null != (n = l.colorString) ? n : null,
               colorStrings: o,
-              className: Q.memberNameText
+              className: W.memberNameText
             }), (0, r.jsx)(O.ZP, {
               primaryGuild: null == i ? true : i.primaryGuild,
               userId: null == i ? true : i.id,
               contextGuildId: l.guildId,
-              containerClassName: Q.memberClanTag
+              containerClassName: W.memberClanTag
             })]
           })
         })
       }), (0, r.jsx)("div", {
-        className: Q.memberGlobalName,
+        className: W.memberGlobalName,
         children: (0, r.jsx)(b.Text, {
           variant: "text-xs/normal",
           color: "header-secondary",
@@ -201,14 +201,14 @@ function $(e) {
   }, 1e4);
   let s = i ? "text-brand" : "text-default";
   return (null == o ? true : o.short) == null ? null : n ? (0, r.jsx)("div", {
-    className: Q.__invalid_joinedAtContainer,
+    className: W.__invalid_joinedAtContainer,
     children: (0, r.jsx)(b.Text, {
       variant: "text-sm/medium",
       color: s,
       children: o.long
     })
   }) : (0, r.jsx)("div", {
-    className: Q.__invalid_joinedAtContainer,
+    className: W.__invalid_joinedAtContainer,
     children: (0, r.jsx)(C.u, {
       align: "left",
       __unsupportedReactNodeAsText: o.long,
@@ -275,7 +275,7 @@ let ee = Chunk647438.memo(function(e) {
         text: Y.intl.string(Y.t["Se4c7+"]),
         children: (0, r.jsx)("td", {
           children: (0, r.jsx)("div", {
-            className: o()(Q.__invalid_checkbox, Q.xsmallCol),
+            className: o()(W.__invalid_checkbox, W.xsmallCol),
             children: (0, r.jsx)(b.P3F, {
               onClick: H,
               children: (0, r.jsx)(m.$q, {
@@ -288,15 +288,15 @@ let ee = Chunk647438.memo(function(e) {
         })
       }), (0, r.jsx)("td", {
         className: o()({
-          [Q.compact]: p
+          [W.compact]: p
         }),
         children: (0, r.jsx)(J, {
           member: t,
           user: n
         })
       }), (0, r.jsx)("td", {
-        className: o()(Q.smallCol, {
-          [Q.compact]: p
+        className: o()(W.smallCol, {
+          [W.compact]: p
         }),
         children: (0, r.jsx)($, {
           showLongDate: a,
@@ -304,8 +304,8 @@ let ee = Chunk647438.memo(function(e) {
           isSortedBy: _
         })
       }), (0, r.jsx)("td", {
-        className: o()(Q.smallCol, {
-          [Q.compact]: p
+        className: o()(W.smallCol, {
+          [W.compact]: p
         }),
         children: (0, r.jsx)(ee, {
           showLongDate: a,
@@ -313,40 +313,40 @@ let ee = Chunk647438.memo(function(e) {
           isSortedBy: w
         })
       }), h && (0, r.jsx)("td", {
-        className: o()(Q.smallCol, {
-          [Q.compact]: p
+        className: o()(W.smallCol, {
+          [W.compact]: p
         }),
         children: (0, r.jsx)(A.ZP, {
           userId: t.userId,
           guildId: t.guildId
         })
       }), (0, r.jsx)("td", {
-        className: o()(Q.mediumCol, {
-          [Q.compact]: p
+        className: o()(W.mediumCol, {
+          [W.compact]: p
         }),
-        children: (0, r.jsx)(K, {
+        children: (0, r.jsx)(Q, {
           member: t,
           highestRole: i
         })
       }), (0, r.jsx)("td", {
-        className: o()(Q.smallCol, {
-          [Q.compact]: p
+        className: o()(W.smallCol, {
+          [W.compact]: p
         }),
-        children: (0, r.jsx)(W, {
+        children: (0, r.jsx)(K, {
           member: t
         })
       }), (0, r.jsx)("td", {
-        className: o()(Q.smallCol, {
-          [Q.compact]: p
+        className: o()(W.smallCol, {
+          [W.compact]: p
         }),
         children: (0, r.jsxs)("div", {
-          className: Q.actionCell,
+          className: W.actionCell,
           children: [(0, r.jsx)(C.u, {
             asContainer: true,
-            text: f ? Y.intl.string(Y.t.nHfkf4) : Y.intl.string(Y.t.uTre2y),
+            text: f ? Y.intl.string(Y.t.nHfkf3) : Y.intl.string(Y.t.uTre29),
             children: (0, r.jsx)(b.P3F, {
               onClick: d,
-              className: Q.button,
+              className: W.button,
               children: f ? (0, r.jsx)(R.Z, {
                 width: en,
                 height: en
@@ -359,10 +359,10 @@ let ee = Chunk647438.memo(function(e) {
             })
           }), (0, r.jsx)(C.u, {
             asContainer: true,
-            text: Y.intl.string(Y.t.x8Nn4M),
+            text: Y.intl.string(Y.t.x8Nn4O),
             children: (0, r.jsx)(b.P3F, {
               onClick: s,
-              className: Q.button,
+              className: W.button,
               children: (0, r.jsx)(b.Huf, {
                 size: "custom",
                 color: "currentColor",
@@ -401,7 +401,7 @@ let ee = Chunk647438.memo(function(e) {
       role: "row",
       value: g,
       style: i,
-      className: o()(Q.roundedRow, Q.memberRowContainer, s && Q.selected, f && Q.memberSelected, d && Q.loading),
+      className: o()(W.roundedRow, W.memberRowContainer, s && W.selected, f && W.memberSelected, d && W.loading),
       equalityFn: D,
       onClick: S,
       onContextMenu: _,

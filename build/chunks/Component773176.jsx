@@ -112,7 +112,7 @@ function eh(e) {
     onHeightUpdate: l,
     onClose: r,
     navId: "message-actions",
-    ariaLabel: es.intl.string(es.t.Lv7LxN)
+    ariaLabel: es.intl.string(es.t.Lv7LxM)
   })
 }
 let ef = Chunk647438.memo(function(e) {
@@ -129,11 +129,11 @@ let ef = Chunk647438.memo(function(e) {
     children: l.map(e => {
       var r;
       let l = a.find(t => (0, w.ir)(t.emoji, (0, w.g1)(e))),
-        o = null != l ? es.intl.string(es.t.wunKKA) : es.intl.string(es.t.XVx5BN),
+        o = null != l ? es.intl.string(es.t.wunKKC) : es.intl.string(es.t.XVx5BA),
         s = null == e.id ? e.uniqueName : e.name,
-        c = null != l ? es.intl.formatToPlainString(es.t.vjeruO, {
+        c = null != l ? es.intl.formatToPlainString(es.t.vjeruL, {
           emojiName: s
-        }) : es.intl.formatToPlainString(es.t.L1JQwE, {
+        }) : es.intl.formatToPlainString(es.t.L1JQwM, {
           emojiName: s
         });
       return (0, i.jsx)(et.sF, {
@@ -191,7 +191,7 @@ function em(e) {
     isExpanded: M,
     showMoreUtilities: H,
     showEmojiPicker: Y,
-    showMessageBookmarksActions: K,
+    showMessageBookmarksActions: q,
     isMessageBookmark: er,
     setPopout: eo,
     hasDeveloperMode: ec,
@@ -213,14 +213,14 @@ function em(e) {
     } = (0, u.e7)([_.Z], () => _.Z.getMessage(t.id), [t.id]), y = U.nc.useSetting(), x = U.Sb.useSetting(), O = (0, u.e7)([G.Z], () => null == t.guild_id || G.Z.canChatInGuild(t.guild_id), [t]), {
       canManageMessages: j,
       canAddNewReactions: S
-    } = (0, u.cj)([W.Z], () => ({
-      canAddNewReactions: O && W.Z.can(el.Plq.ADD_REACTIONS, t),
-      canManageMessages: W.Z.can(el.Plq.MANAGE_MESSAGES, t)
+    } = (0, u.cj)([z.Z], () => ({
+      canAddNewReactions: O && z.Z.can(el.Plq.ADD_REACTIONS, t),
+      canManageMessages: z.Z.can(el.Plq.MANAGE_MESSAGES, t)
     }), [t, O]), P = (0, R.U)(t, n), I = (0, k.NE)(t, n), Z = (0, k.Ek)(n), T = (0, u.e7)([E.Z], () => null != t.guild_id && E.Z.isLurking(t.guild_id), [t]), N = (0, u.e7)([V.ZP], () => null != t.guild_id && V.ZP.isCurrentUserGuest(t.guild_id), [t]), A = d.id === h, w = (j || n.canDeleteOwnMessage(h)) && g && !el.V$x.UNDELETABLE.has(n.type);
     n.type === el.uaV.AUTO_MODERATION_ACTION && (w = w && j), t.isModeratorReportChannel() && (w = w && n.id !== (null == C ? true : C.id) && !(0, $.Z)(n));
     let M = (0, X.a4)(n),
       H = (0, Q.Z)(n, t),
-      z = !t.isSystemDM() && (0, J.Z)(n, h) && g && !b,
+      W = !t.isSystemDM() && (0, J.Z)(n, h) && g && !b,
       {
         disableReactionCreates: Y
       } = (0, ee.Z)({
@@ -232,9 +232,9 @@ function em(e) {
         isGuest: N,
         isActiveChannelOrUnarchivableThread: g
       }),
-      K = t.type === el.d4z.GUILD_ANNOUNCEMENT && null != p && p.features.has(el.oNc.NEWS) && (A || j) && (0, m.Z)(n),
+      q = t.type === el.d4z.GUILD_ANNOUNCEMENT && null != p && p.features.has(el.oNc.NEWS) && (A || j) && (0, m.Z)(n),
       et = t.getGuildId(),
-      en = null != et && n.type === el.uaV.USER_JOIN && W.Z.canWithPartialContext(el.Plq.MANAGE_GUILD, {
+      en = null != et && n.type === el.uaV.USER_JOIN && z.Z.canWithPartialContext(el.Plq.MANAGE_GUILD, {
         guildId: et
       }),
       ei = (0, v.a)(n),
@@ -250,17 +250,17 @@ function em(e) {
       channel: t,
       message: n,
       canPin: H,
-      canEdit: z,
+      canEdit: W,
       canDelete: w,
       canReport: M,
       canReply: P,
       canStartThread: I,
       canViewThread: Z,
       canForward: ei,
-      canCopy: q.wS,
+      canCopy: K.wS,
       hasDeveloperMode: x,
       canReact: !Y && y,
-      canPublish: K,
+      canPublish: q,
       canConfigureJoin: en,
       isExpanded: eo && !es && !i && !r && !l,
       showEmojiPicker: i,
@@ -272,7 +272,7 @@ function em(e) {
       isFocused: s
     }
   }(e), ep = r.useRef(null), em = r.useCallback(() => {
-    H || z.default.track(el.rMx.MESSAGE_POPOUT_MENU_OPENED_DESKTOP, {
+    H || W.default.track(el.rMx.MESSAGE_POPOUT_MENU_OPENED_DESKTOP, {
       message_id: n.id,
       channel: n.channel_id
     }), eo({
@@ -292,37 +292,37 @@ function em(e) {
     try {
       (0, S.qc)(t.id, n.id, e)
     } catch (e) {
-      (0, p.showToast)((0, p.createToast)(es.intl.string(es.t.xsfC2S), p.ToastType.FAILURE))
+      (0, p.showToast)((0, p.createToast)(es.intl.string(es.t.xsfC2d), p.ToastType.FAILURE))
     }
   }, [t.id, n.id]);
   return (0, i.jsxs)(i.Fragment, {
     children: [M ? (0, i.jsxs)(i.Fragment, {
       children: [l && ec ? (0, i.jsx)(et.sF, {
-        label: es.intl.string(es.t.zBoHlf),
+        label: es.intl.string(es.t.zBoHlZ),
         icon: p.VuL,
         onClick: e => (0, en.F4)(t, n, e)
       }, "copy-id") : null, l ? (0, i.jsx)(et.sF, {
-        label: es.intl.string(es.t.WqhZss),
+        label: es.intl.string(es.t.WqhZsr),
         icon: p.xPt,
         onClick: () => (0, en.fB)(t, n)
       }, "copy-link") : null, y ? (0, i.jsx)(et.sF, {
-        label: es.intl.string(es.t.NpHUi1),
+        label: es.intl.string(es.t.NpHUi4),
         icon: p.idN,
         onClick: () => (0, en.zW)(t)
       }, "configure") : null, eb ? (0, i.jsx)(et.sF, {
-        label: es.intl.string(es.t.RpE9k7),
+        label: es.intl.string(es.t.RpE9k5),
         icon: p.z7b,
         onClick: () => (0, en.B8)(t, n)
-      }, "mark-unread") : null, K ? (0, i.jsx)(et.sF, {
-        label: er ? es.intl.string(es.t.LHUP9D) : es.intl.string(es.t["9p3D9p"]),
+      }, "mark-unread") : null, q ? (0, i.jsx)(et.sF, {
+        label: er ? es.intl.string(es.t.LHUP9P) : es.intl.string(es.t["9p3D9v"]),
         icon: er ? p.plf : p.gt9,
         onClick: () => er ? (0, en.eM)(t, n) : (0, en.dF)(t, n)
       }, "bookmark") : null, a ? (0, i.jsx)(et.sF, {
-        label: n.pinned ? es.intl.string(es.t["Bse+F/"]) : es.intl.string(es.t.CvQ18w),
+        label: n.pinned ? es.intl.string(es.t["Bse+Fx"]) : es.intl.string(es.t["CvQ18/"]),
         icon: p.qQX,
         onClick: e => (0, en.rY)(t, n, e)
       }, "pin") : null, j && w ? (0, i.jsx)(et.sF, {
-        label: es.intl.string(es.t.rBIGBL),
+        label: es.intl.string(es.t.rBIGBA),
         icon: p.or_,
         onClick: () => (0, en.gK)(t, n)
       }, "thread") : null, O && h ? (0, i.jsx)(et.sF, {
@@ -344,10 +344,10 @@ function em(e) {
         channel: t,
         message: n
       }), eT ? (0, i.jsx)(et.sF, {
-        label: es.intl.string(es.t.icaJW5),
+        label: es.intl.string(es.t.icaJW1),
         icon: p.l22,
         onClick: () => {
-          z.default.track(el.rMx.CONFETTI_POTION_ENTRYPOINT_CLICKED, {
+          W.default.track(el.rMx.CONFETTI_POTION_ENTRYPOINT_CLICKED, {
             location: I.MG.MessageExpandingButtons
           }), (0, Z.s)({
             channelId: t.id,
@@ -363,31 +363,31 @@ function em(e) {
       icon: p.n$P,
       onClick: e => (0, en.HH)(t, n, e)
     }, "reply-other") : null, h ? (0, i.jsx)(et.sF, {
-      label: es.intl.string(es.t.bt75uw),
+      label: es.intl.string(es.t.bt75u7),
       icon: p.vdY,
       onClick: () => (0, en.Hd)(t, n)
     }, "edit") : null, w ? (0, i.jsx)(et.sF, {
-      label: es.intl.string(es.t.I3ltXO),
+      label: es.intl.string(es.t.I3ltXF),
       icon: x.Z,
       onClick: () => eP(t, n),
       onTooltipShow: eE,
       onTooltipHide: eS,
       showNewBadge: !eO && ex
     }, "forward") : null, j && !w ? (0, i.jsx)(et.sF, {
-      label: es.intl.string(es.t.rBIGBL),
+      label: es.intl.string(es.t.rBIGBA),
       icon: p.or_,
       onClick: () => (0, en.gK)(t, n)
     }, "thread") : null, !j && A ? (0, i.jsx)(et.sF, {
-      label: es.intl.string(es.t["39d0Wj"]),
+      label: es.intl.string(es.t["39d0Wl"]),
       icon: p.or_,
       onClick: () => (0, en.qe)(t, n)
     }, "view-thread") : null, b ? (0, i.jsx)(et.sF, {
-      label: ey ? es.intl.string(es.t["1kWJAr"]) : es.intl.string(es.t.MFGE51),
+      label: ey ? es.intl.string(es.t["1kWJAg"]) : es.intl.string(es.t["MFGE5+"]),
       icon: p.MqZ,
       onClick: () => (0, en.Xl)(t, n),
       disabled: ey
     }, "publish") : null, o && M ? (0, i.jsx)(et.sF, {
-      label: es.intl.string(es.t.oyYWHE),
+      label: es.intl.string(es.t.oyYWHB),
       icon: p.XHJ,
       onClick: e => (0, en.$Z)(t, n, e),
       dangerous: true,
@@ -434,7 +434,7 @@ function em(e) {
         } = t;
         return (0, i.jsx)(et.sF, eu({
           ref: ep,
-          label: es.intl.string(es.t["UKOtz+"]),
+          label: es.intl.string(es.t.UKOtz8),
           icon: p.xhG,
           selected: l,
           onClick: em
@@ -451,11 +451,11 @@ function eg(e) {
   } = e, r = (0, u.e7)([O.Z], () => null != O.Z.getMessage(n.id), [n.id]), l = null == n.interaction || null != n.interactionData && (0, j.$s)(n.interactionData);
   return (0, i.jsxs)(i.Fragment, {
     children: [!r && l && (0, i.jsx)(et.sF, {
-      label: es.intl.string(es.t["5911Lb"]),
+      label: es.intl.string(es.t["5911LS"]),
       icon: p.Oe7,
       onClick: () => (0, en.mG)(t, n)
     }, "retry"), (0, i.jsx)(et.sF, {
-      label: es.intl.string(es.t.oyYWHE),
+      label: es.intl.string(es.t.oyYWHB),
       icon: p.XHJ,
       onClick: e => (0, en.$Z)(t, n, e)
     }, "delete-usent")]
@@ -548,7 +548,7 @@ let ey = Chunk647438.memo(function(e) {
     onClick: ep,
     onContextMenu: ep,
     role: "group",
-    "aria-label": es.intl.string(es.t.Lv7LxN),
+    "aria-label": es.intl.string(es.t.Lv7LxM),
     children: (0, i.jsxs)(et.ZP, {
       className: e.innerClassName,
       children: [s, c]

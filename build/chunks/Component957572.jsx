@@ -27,10 +27,10 @@ function d() {
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
         className: Chunk790632.previewNoticeText,
-        children: module === Chunk544978.y.GUILD_PRODUCTS_PREVIEW ? Chunk388032.intl.string(Chunk388032.t.F4Z0nV) : Chunk388032.intl.string(Chunk388032.t.pzTFpM)
+        children: module === Chunk544978.y.GUILD_PRODUCTS_PREVIEW ? Chunk388032.intl.string(Chunk388032.t.F4Z0nZ) : Chunk388032.intl.string(Chunk388032.t.pzTFpK)
       })]
     }), (0, Chunk951288.jsx)(Chunk159691.zxk, {
-      text: module === Chunk544978.y.GUILD_PRODUCTS_PREVIEW ? Chunk388032.intl.string(Chunk388032.t.YF35pV) : Chunk388032.intl.string(Chunk388032.t.r30bky),
+      text: module === Chunk544978.y.GUILD_PRODUCTS_PREVIEW ? Chunk388032.intl.string(Chunk388032.t.YF35pa) : Chunk388032.intl.string(Chunk388032.t.r30bk5),
       size: "sm",
       variant: "secondary",
       onClick: require

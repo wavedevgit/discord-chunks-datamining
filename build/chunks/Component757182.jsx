@@ -67,7 +67,7 @@ function f(e) {
   return (0, r.jsx)(i.Button, c({
     variant: l,
     size: d,
-    text: s.intl.string(s.t.I6JG46),
+    text: s.intl.string(s.t["I6JG4+"]),
     onClick: _,
     fullWidth: true
   }, f))

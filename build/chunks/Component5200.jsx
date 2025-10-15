@@ -68,7 +68,7 @@ function _(e) {
             children: (0, r.jsx)(c.Text, {
               variant: "text-sm/medium",
               color: "always-white",
-              children: m.intl.string(m.t.VJlc0S)
+              children: m.intl.string(m.t.VJlc0d)
             })
           })
         });
@@ -80,7 +80,7 @@ function _(e) {
             children: (0, r.jsx)(c.Text, {
               variant: "text-sm/medium",
               color: "always-white",
-              children: m.intl.string(m.t["wH/wDO"])
+              children: m.intl.string(m.t["wH/wDA"])
             })
           })
         });

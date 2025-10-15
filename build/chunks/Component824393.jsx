@@ -1,7 +1,7 @@
 /** Chunk was on 838 **/
 /** chunk id: 824393, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => y
+  default: () => E
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -46,7 +46,7 @@ function b(e) {
     state: "loading"
   });
   a.useEffect(() => {
-    k || (0, H.QB)(x.id, R.y$.CROSS_PLATFORM, g).then(e => {
+    k || (0, R.QB)(x.id, H.y$.CROSS_PLATFORM, g).then(e => {
       if ((null == e ? true : e.claimedAt) != null) return void S({
         state: "claimed",
         entitlements: e
@@ -86,10 +86,10 @@ function b(e) {
         }) : "error" === I.state ? (0, n.jsx)(w, {
           errorReason: I.errorReason,
           onClose: h
-        }) : M ? (0, n.jsx)(F, {
+        }) : M ? (0, n.jsx)(y, {
           duration: (0, T.kb)(null != (c = null == (r = I.entitlements) ? true : r.items) ? c : []),
           onClose: h
-        }) : (0, n.jsx)(Z, {
+        }) : (0, n.jsx)(F, {
           duration: (0, T.kb)(null != (m = null == (i = I.entitlements) ? true : i.items) ? m : []),
           onClose: h
         })
@@ -106,7 +106,7 @@ function b(e) {
 function w(e) {
   let {
     onClose: t
-  } = e, r = S.intl.string(S.t.PbaUtv);
+  } = e, r = S.intl.string(S.t.PbaUtr);
   return (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsxs)(d.xBx, {
       "data-migration-pending": true,
@@ -115,7 +115,7 @@ function w(e) {
       children: [(0, n.jsx)(d.Heading, {
         className: B.errorTitle,
         variant: "heading-xl/medium",
-        children: S.intl.string(S.t.UleS91)
+        children: S.intl.string(S.t["UleS9/"])
       }), (0, n.jsx)(d.olH, {
         "data-migration-pending": true,
         onClick: t,
@@ -133,14 +133,14 @@ function w(e) {
       className: B.errorModalFooter,
       children: (0, n.jsx)(d.Button, {
         variant: "primary",
-        text: S.intl.string(S.t.cpT0Cq),
+        text: S.intl.string(S.t.cpT0Cg),
         onClick: t
       })
     })]
   })
 }
 
-function F(e) {
+function y(e) {
   let {
     duration: t,
     onClose: r
@@ -188,7 +188,7 @@ function F(e) {
       }), (0, n.jsx)(d.Text, {
         variant: "text-md/normal",
         className: B.text,
-        children: S.intl.format(S.t.tgc1ol, {
+        children: S.intl.format(S.t.tgc1oq, {
           helpCenterLink: v.Z.getArticleURL(k.BhN.FRACTIONAL_PREMIUM_ABOUT),
           duration: t,
           expirationDate: s
@@ -198,7 +198,7 @@ function F(e) {
         className: B.cta,
         children: (0, n.jsx)(d.Button, {
           variant: "primary",
-          text: S.intl.string(S.t["eQX+gg"]),
+          text: S.intl.string(S.t["eQX+go"]),
           onClick: l
         })
       })]
@@ -206,7 +206,7 @@ function F(e) {
   })
 }
 
-function Z(e) {
+function F(e) {
   let {
     duration: t,
     onClose: r
@@ -223,7 +223,7 @@ function Z(e) {
       type: d.$jN.Type.SPINNING_CIRCLE
     })
   });
-  let c = i.isFractionalPremiumActive ? S.intl.string(S.t["1ku8i2"]) : S.intl.format(S.t.fI1nL2, {
+  let c = i.isFractionalPremiumActive ? S.intl.string(S.t["1ku8i4"]) : S.intl.format(S.t.fI1nLy, {
     helpCenterLink: v.Z.getArticleURL(k.BhN.FRACTIONAL_PREMIUM_ABOUT),
     duration: t
   });
@@ -236,7 +236,7 @@ function Z(e) {
         children: [(0, n.jsx)("img", {
           className: B.headerBackground,
           src: P,
-          alt: S.intl.string(S.t["8SsCa3"])
+          alt: S.intl.string(S.t["8SsCa2"])
         }), (0, n.jsx)(h.Z, {
           className: B.beta
         }), (0, n.jsxs)("div", {
@@ -245,7 +245,7 @@ function Z(e) {
             className: B.rewardAssetContainer,
             children: (0, n.jsx)("img", {
               src: M,
-              alt: S.intl.string(S.t.OhPMaq),
+              alt: S.intl.string(S.t.OhPMam),
               height: 120
             })
           }), (0, n.jsx)(d.olH, {
@@ -262,7 +262,7 @@ function Z(e) {
         children: [(0, n.jsx)(d.Heading, {
           variant: "heading-lg/bold",
           className: B.heading,
-          children: S.intl.string(S.t["+PHEo+"])
+          children: S.intl.string(S.t["+PHEo6"])
         }), (0, n.jsx)(d.Text, {
           variant: "text-sm/normal",
           className: B.text,
@@ -272,7 +272,7 @@ function Z(e) {
           className: B.cta2,
           children: (0, n.jsx)(d.Button, {
             variant: "primary",
-            text: S.intl.string(S.t.LnsQGZ),
+            text: S.intl.string(S.t.LnsQGR),
             onClick: l
           })
         })]
@@ -281,7 +281,7 @@ function Z(e) {
   })
 }
 
-function y(e) {
+function E(e) {
   let {
     quest: t,
     location: r,

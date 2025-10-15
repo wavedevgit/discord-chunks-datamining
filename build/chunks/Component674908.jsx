@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk710111 = require("./710111.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk612683 = require("./612683.js"),
-  O = require("./413135.js").Buffer;
+  P = require("./413135.js").Buffer;
 
 function S(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -118,7 +118,7 @@ function E(e) {
           voiceAudio: F
         })),
         n = await e.arrayBuffer();
-      await d.Z.fileManager.saveWithDialog(O.from(n), (0, w.EF)(t.id))
+      await d.Z.fileManager.saveWithDialog(P.from(n), (0, w.EF)(t.id))
     } catch (e) {} finally {
       B(null)
     }
@@ -143,45 +143,45 @@ function E(e) {
     })
   }
   return (0, a.jsxs)("div", {
-    className: P.clipForm,
+    className: O.clipForm,
     children: [(0, a.jsxs)("div", {
-      className: i()(P.clipFormSection, P.editSection),
+      className: i()(O.clipFormSection, O.editSection),
       children: [(0, a.jsx)(u.oil, {
-        label: k.intl.string(k.t.SJKc5n),
+        label: k.intl.string(k.t.SJKc5u),
         onChange: e => {
           "" === e ? R(true) : R(e)
         },
         value: E,
         minLength: w.XH,
         maxLength: w.MG,
-        placeholder: k.intl.string(k.t.Cyxddp)
+        placeholder: k.intl.string(k.t.Cyxddn)
       }), (0, a.jsxs)("div", {
-        className: P.clipFormSwitches,
+        className: O.clipFormSwitches,
         children: [(0, a.jsx)(u.rsf, {
-          label: k.intl.string(k.t.GnQui9),
+          label: k.intl.string(k.t.GnQui4),
           checked: I,
           onChange: Z
         }), (0, a.jsx)(u.rsf, {
-          label: k.intl.string(k.t["5mVOCb"]),
+          label: k.intl.string(k.t["5mVOCQ"]),
           checked: F,
           onChange: A
         })]
       })]
     }), (0, a.jsxs)("div", {
-      className: i()(P.clipFormSection, P.metadataSection),
+      className: i()(O.clipFormSection, O.metadataSection),
       children: [(0, a.jsx)(j.Z, {
         clip: t
       }), (0, a.jsx)(y.Z, {
-        className: P.userList,
+        className: O.userList,
         clip: t
       })]
     }), (0, a.jsxs)("div", {
-      className: P.clipFormFooter,
+      className: O.clipFormFooter,
       children: [(0, a.jsx)(s.zx, {
         submitting: "share" === M,
         disabled: null != M && "share" !== M,
         color: s.zx.Colors.BRAND,
-        wrapperClassName: P.clipFormFooterButton,
+        wrapperClassName: O.clipFormFooterButton,
         onClick: () => z({
           clip: N(S({}, t), {
             name: E
@@ -193,22 +193,22 @@ function E(e) {
             o.Mr(w.Ut), o.Mr(w.Qr)
           }
         }),
-        children: k.intl.string(k.t.I8lglT)
+        children: k.intl.string(k.t.I8lglZ)
       }), (0, a.jsx)(s.zx, {
         size: s.zx.Sizes.ICON,
-        className: P.clipFormFooterButton,
+        className: O.clipFormFooterButton,
         disabled: null != M,
-        wrapperClassName: i()(P.clipFormFooterButton, {
-          [P.submittingWrapperFix]: null != M
+        wrapperClassName: i()(O.clipFormFooterButton, {
+          [O.submittingWrapperFix]: null != M
         }),
         color: s.zx.Colors.PRIMARY,
         onClick: T,
-        children: k.intl.string(k.t.K344S7)
+        children: k.intl.string(k.t.K344S0)
       }), (0, a.jsx)(s.zx, {
-        "aria-label": k.intl.string(k.t.PdRCRg),
+        "aria-label": k.intl.string(k.t.PdRCRk),
         size: s.zx.Sizes.ICON,
-        wrapperClassName: i()(P.clipFormFooterButton, {
-          [P.submittingWrapperFix]: null != M
+        wrapperClassName: i()(O.clipFormFooterButton, {
+          [O.submittingWrapperFix]: null != M
         }),
         submitting: "export" === M,
         disabled: null != M && "export" !== M,

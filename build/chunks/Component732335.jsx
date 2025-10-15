@@ -51,6 +51,6 @@ function u(e) {
     onSearchChange: j,
     options: b,
     onBlur: v,
-    placeholder: c.intl.string(c.t.dBqQu4)
+    placeholder: c.intl.string(c.t.dBqQu7)
   })
 }

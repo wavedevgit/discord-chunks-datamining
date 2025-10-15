@@ -15,7 +15,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk631885 = require("./631885.js"),
   Chunk568671 = require("./568671.jsx"),
   Chunk292352 = require("./292352.js"),
-  Chunk660886 = require("./660886.js"),
+  Chunk345909 = require("./345909.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk26919 = require("./26919.js"),
   Chunk519279 = require("./519279.js"),
@@ -31,17 +31,17 @@ let b = () => {
       className: Chunk26919.button,
       children: exports ? (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "primary",
-        text: Chunk388032.intl.string(Chunk388032.t.LhlgY9),
+        text: Chunk388032.intl.string(Chunk388032.t.LhlgY2),
         onClick: () => require(Chunk292352.dG.REQUESTS)
       }) : (0, Chunk951288.jsx)(Chunk568671.Z, {})
     })
   },
   y = () => {
     let e = (0, Chunk880257.Z)(),
-      t = (0, Chunk785681.o)(Chunk388032.intl.string(Chunk660886.default["T7GyW+"]), Chunk388032.intl.string(Chunk660886.default.goKE2b)),
-      n = (0, Chunk785681.o)(Chunk388032.intl.format(Chunk660886.default.MXjDSv, {
+      t = (0, Chunk785681.o)(Chunk388032.intl.string(Chunk345909.default.T7GyW1), Chunk388032.intl.string(Chunk345909.default.goKE2d)),
+      n = (0, Chunk785681.o)(Chunk388032.intl.format(Chunk345909.default.MXjDSk, {
         articleLink: "https://support.discord.com/hc/articles/14155060633623"
-      }), Chunk388032.intl.format(Chunk660886.default.EMCf6j, {
+      }), Chunk388032.intl.format(Chunk345909.default.EMCf6u, {
         articleLink: "https://support.discord.com/hc/articles/14155043715735"
       }));
     return (0, Chunk951288.jsxs)("div", {
@@ -66,7 +66,7 @@ let b = () => {
         className: Chunk26919.headerImage,
         children: (0, Chunk951288.jsx)("img", {
           src: module ? Chunk633488 : Chunk361848,
-          alt: Chunk388032.intl.string(Chunk660886.default.ffg6xd)
+          alt: Chunk388032.intl.string(Chunk345909.default.ffg6xc)
         })
       })]
     })

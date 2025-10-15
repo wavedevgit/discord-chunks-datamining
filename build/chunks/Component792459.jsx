@@ -88,10 +88,10 @@ function f(e) {
         }), (0, s.jsx)(r.Text, {
           variant: "text-md/normal",
           className: E.bodyText,
-          children: j.intl.string(j.t.bWuKqh)
+          children: j.intl.string(j.t.bWuKqq)
         }), (0, s.jsx)(r.Button, {
           variant: "primary",
-          text: j.intl.string(j.t.UQvCf7),
+          text: j.intl.string(j.t.UQvCf3),
           fullWidth: true,
           onClick: b
         })]
@@ -100,7 +100,7 @@ function f(e) {
           variant: "heading-lg/semibold",
           color: "text-default",
           className: E.headingText,
-          children: j.intl.string(j.t.k4z4er)
+          children: j.intl.string(j.t.k4z4en)
         }), (0, s.jsx)(r.Text, {
           variant: "text-md/normal",
           className: E.bodyText,
@@ -119,14 +119,14 @@ function f(e) {
       children: (0, s.jsx)(d.ZP, {
         children: I ? (0, s.jsxs)(s.Fragment, {
           children: [(0, s.jsx)(d.Dx, {
-            children: j.intl.string(j.t["Z+hCVU"])
+            children: j.intl.string(j.t["Z+hCVV"])
           }), (0, s.jsx)(d.Hh, {})]
         }) : (0, s.jsxs)(s.Fragment, {
           children: [(0, s.jsx)(d.Dx, {
             className: E.appOpenedTitle,
-            children: j.intl.string(j.t.csrAMJ)
+            children: j.intl.string(j.t.csrAMD)
           }), (0, s.jsx)(d.DK, {
-            children: j.intl.string(j.t.ghBJz9)
+            children: j.intl.string(j.t.ghBJz8)
           })]
         })
       })

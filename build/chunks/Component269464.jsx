@@ -42,7 +42,7 @@ function h(e) {
     }, b) : null,
     disabled: !x,
     onChange: v,
-    hint: p.intl.string(p.t.uPvxqJ),
+    hint: p.intl.string(p.t.uPvxqK),
     onOpenImageSelectModal: () => (0, c.mw)({
       uploadType: g.pC.GUILD_BANNER,
       maxFileSizeBytes: m.B,

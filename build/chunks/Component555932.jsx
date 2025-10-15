@@ -108,7 +108,7 @@ function O(e) {
     "aria-valuenow": T,
     "aria-valuetext": t.premiumTier === f.Eu4.NONE ? _.intl.formatToPlainString(_.t.Ukqm9v, {
       numSubscriptionsApplied: T
-    }) : _.intl.formatToPlainString(_.t.qWunaU, {
+    }) : _.intl.formatToPlainString(_.t.qWunaW, {
       numSubscriptionsApplied: T,
       tierName: (0, c.nW)(t.premiumTier, {
         useLevels: false

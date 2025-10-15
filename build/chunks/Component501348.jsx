@@ -97,31 +97,31 @@ let J = "cozy",
     let t = 0;
     return [(0, S.e5)(Q(q({}, (0, A.ZP)({
       channelId: en,
-      content: Y.intl.string(Y.t.oZxkEq)
+      content: Y.intl.string(Y.t.oZxkEh)
     })), {
       state: F.yb.SENT,
       id: "".concat(t++)
     })), (0, S.e5)(Q(q({}, (0, A.ZP)({
       channelId: en,
-      content: (0, u.wj)(e) ? Y.intl.string(Y.t["WGb/v7"]) : Y.intl.string(Y.t["62m4mz"])
+      content: (0, u.wj)(e) ? Y.intl.string(Y.t["WGb/v7"]) : Y.intl.string(Y.t["62m4m5"])
     })), {
       state: F.yb.SENT,
       id: "".concat(t++)
     })), (0, S.e5)(Q(q({}, (0, A.ZP)({
       channelId: en,
-      content: Y.intl.string(Y.t.a0Byo5)
+      content: Y.intl.string(Y.t.a0Byo6)
     })), {
       state: F.yb.SENT,
       id: "".concat(t++)
     })), (0, S.e5)(Q(q({}, (0, A.ZP)({
       channelId: en,
-      content: Y.intl.string(Y.t.bmwEWJ)
+      content: Y.intl.string(Y.t.bmwEWF)
     })), {
       state: F.yb.SENT,
       id: "".concat(t++)
     })), (0, S.e5)(Q(q({}, (0, A.ZP)({
       channelId: en,
-      content: Y.intl.string(Y.t["hK9QW/"])
+      content: Y.intl.string(Y.t.hK9QW1)
     })), {
       state: F.yb.SENT,
       id: "".concat(t)
@@ -133,17 +133,17 @@ let J = "cozy",
       className: Chunk226518.themeTitleContainer,
       children: [(0, Chunk951288.jsx)("div", {
         className: Chunk226518.title,
-        children: Chunk388032.intl.string(Chunk388032.t["0EzVst"])
+        children: Chunk388032.intl.string(Chunk388032.t["0EzVsr"])
       }), (0, Chunk951288.jsx)(Chunk481060.R94, {
         type: Chunk481060.R94.Types.DESCRIPTION,
         className: Chunk226518.subtext,
-        children: Chunk388032.intl.string(Chunk388032.t.PV3dGX)
+        children: Chunk388032.intl.string(Chunk388032.t.PV3dGR)
       })]
     }), (0, Chunk951288.jsx)(Chunk329013.g, {})]
   }),
   ea = () => {
     let e = (0, Chunk947889.Z)();
-    return Chunk388032.intl.format(Chunk388032.t.Jae48E, {
+    return Chunk388032.intl.format(Chunk388032.t.Jae48P, {
       onClick: () => {
         module(Chunk313789.n.ACCESSIBILITY_PANEL, {
           section: Chunk981631.oAB.ACCESSIBILITY
@@ -154,9 +154,9 @@ let J = "cozy",
 class eo extends Chunk647438.Component {
   renderZoomSlider() {
     return !Chunk358085.isPlatformEmbedded, (0, Chunk951288.jsx)(Chunk481060.iRW, {
-      label: Chunk388032.intl.string(Chunk388032.t.i19n5L),
-      description: Chunk388032.intl.string(Chunk388032.t.ip0uSf),
-      helperText: Chunk388032.intl.format(Chunk388032.t.OMkSUo, {
+      label: Chunk388032.intl.string(Chunk388032.t.i19n5O),
+      description: Chunk388032.intl.string(Chunk388032.t.ip0uSU),
+      helperText: Chunk388032.intl.format(Chunk388032.t.OMkSUl, {
         modKey: Chunk714338.Z.modKey
       }),
       initialValue: this.props.zoom,
@@ -171,7 +171,7 @@ class eo extends Chunk647438.Component {
   renderFontScaleSlider() {
     return (0, Chunk951288.jsx)(Chunk481060.iRW, {
       label: Chunk388032.intl.string(Chunk388032.t.qPOqoK),
-      description: Chunk388032.intl.string(Chunk388032.t.XrtbPo),
+      description: Chunk388032.intl.string(Chunk388032.t.XrtbPj),
       initialValue: this.props.fontSize,
       defaultValue: Chunk981631.yqN.FONT_SIZE_DEFAULT,
       markers: Chunk981631.yqN.FONT_SIZES,
@@ -188,8 +188,8 @@ class eo extends Chunk647438.Component {
       messageGroupSpacing: t
     } = this.props;
     return (0, Chunk951288.jsx)(Chunk481060.iRW, {
-      label: Chunk388032.intl.string(Chunk388032.t.Q6lKkg),
-      description: Chunk388032.intl.string(Chunk388032.t.p7eUrb),
+      label: Chunk388032.intl.string(Chunk388032.t.Q6lKkp),
+      description: Chunk388032.intl.string(Chunk388032.t.p7eUra),
       initialValue: exports,
       defaultValue: module ? Chunk959517.c8 : Chunk959517.pq,
       markers: Chunk959517.fP,
@@ -229,13 +229,13 @@ class eo extends Chunk647438.Component {
       useForcedColors: e
     } = this.props;
     return module ? (0, Chunk951288.jsx)(Chunk481060.C3N, {
-      label: Chunk388032.intl.string(Chunk388032.t.Ksh3ik),
+      label: Chunk388032.intl.string(Chunk388032.t.Ksh3io),
       children: (0, Chunk951288.jsx)(Chunk481060.Wn, {
         messageType: Chunk481060.QYI.INFO,
-        children: (0, Chunk627845.b)() ? (0, Chunk951288.jsx)(ea, {}) : Chunk388032.intl.string(Chunk388032.t.AUMSZP)
+        children: (0, Chunk627845.b)() ? (0, Chunk951288.jsx)(ea, {}) : Chunk388032.intl.string(Chunk388032.t.AUMSZG)
       })
     }) : (0, Chunk951288.jsx)(Chunk481060.C3N, {
-      label: Chunk388032.intl.string(Chunk388032.t.Ksh3ik),
+      label: Chunk388032.intl.string(Chunk388032.t.Ksh3io),
       children: (0, Chunk951288.jsx)(Chunk481060.xJW, {
         title: (0, Chunk951288.jsx)(ei, {}),
         children: (0, Chunk951288.jsx)(Chunk329013.i, {})
@@ -247,15 +247,15 @@ class eo extends Chunk647438.Component {
       timestampHourCycle: e
     } = this.props;
     return (0, Chunk951288.jsx)(Chunk481060.FXm, {
-      label: Chunk388032.intl.string(Chunk388032.t.dyamEI),
+      label: Chunk388032.intl.string(Chunk388032.t.dyamEB),
       options: [{
         name: Chunk388032.intl.string(Chunk388032.t.FMWYvb),
         value: Chunk524437.hg.AUTO
       }, {
-        name: Chunk388032.intl.string(Chunk388032.t.p8NOwi),
+        name: Chunk388032.intl.string(Chunk388032.t.p8NOws),
         value: Chunk524437.hg.H12
       }, {
-        name: Chunk388032.intl.string(Chunk388032.t["+o/sOo"]),
+        name: Chunk388032.intl.string(Chunk388032.t["+o/sOj"]),
         value: Chunk524437.hg.H23
       }],
       onChange: e => M.hg.updateSetting(e),
@@ -269,7 +269,7 @@ class eo extends Chunk647438.Component {
     return "".concat(e.toFixed(0), "px")
   }
   handleSliderValueText(e) {
-    return Y.intl.formatToPlainString(Y.t["0hpvOV"], {
+    return Y.intl.formatToPlainString(Y.t["0hpvOT"], {
       value: e
     })
   }
@@ -299,10 +299,10 @@ class eo extends Chunk647438.Component {
       setting: Chunk726985.s6.APPEARANCE_ICON,
       children: (0, Chunk951288.jsx)(Chunk333859.c, {})
     }), i = [{
-      name: Chunk388032.intl.string(Chunk388032.t["7iegX4"]),
+      name: Chunk388032.intl.string(Chunk388032.t["7iegX1"]),
       value: Chunk524437.Pi.COMPACT
     }, {
-      name: Chunk388032.intl.string(Chunk388032.t.bBvAEH),
+      name: Chunk388032.intl.string(Chunk388032.t.bBvAEB),
       value: Chunk524437.Pi.DEFAULT
     }, {
       name: Chunk388032.intl.string(Chunk388032.t["4cuYHx"]),
@@ -310,8 +310,8 @@ class eo extends Chunk647438.Component {
     }], a = (0, Chunk951288.jsxs)(Chunk921801.F, {
       setting: Chunk726985.s6.APPEARANCE_LIST_SPACING,
       children: [(0, Chunk951288.jsx)(Chunk481060.FXm, {
-        label: Chunk388032.intl.string(Chunk388032.t["C/5V0A"]),
-        description: Chunk388032.intl.string(Chunk388032.t.QLZhYk),
+        label: Chunk388032.intl.string(Chunk388032.t["C/5V0N"]),
+        description: Chunk388032.intl.string(Chunk388032.t.QLZhYm),
         options: Chunk647438,
         onChange: e => this.handleUIDensityChange({
           value: e
@@ -323,16 +323,16 @@ class eo extends Chunk647438.Component {
     }), o = (0, Chunk951288.jsxs)(Chunk921801.F, {
       setting: Chunk726985.s6.APPEARANCE_MESSAGE_DISPLAY_COMPACT,
       children: [(0, Chunk951288.jsxs)(Chunk481060.C3N, {
-        label: Chunk388032.intl.string(Chunk388032.t["2ed/sA"]),
-        description: Chunk388032.intl.string(Chunk388032.t.u9N6Qh),
+        label: Chunk388032.intl.string(Chunk388032.t["2ed/sL"]),
+        description: Chunk388032.intl.string(Chunk388032.t.u9N6Qk),
         children: [(0, Chunk951288.jsx)(Chunk481060.FXm, {
-          label: Chunk388032.intl.string(Chunk388032.t.nKRoPv),
-          description: Chunk388032.intl.string(Chunk388032.t.QntEEG),
+          label: Chunk388032.intl.string(Chunk388032.t.nKRoPj),
+          description: Chunk388032.intl.string(Chunk388032.t.QntEEB),
           options: [{
-            name: Chunk388032.intl.string(Chunk388032.t.Jqj4cZ),
+            name: Chunk388032.intl.string(Chunk388032.t.Jqj4cX),
             value: J
           }, {
-            name: Chunk388032.intl.string(Chunk388032.t["1JNcPS"]),
+            name: Chunk388032.intl.string(Chunk388032.t["1JNcPT"]),
             value: $
           }],
           onChange: e => this.handleMessageDisplayModeChange({
@@ -340,7 +340,7 @@ class eo extends Chunk647438.Component {
           }),
           value: this.props.messageDisplayCompact ? $ : J
         }), this.props.messageDisplayCompact && (0, Chunk951288.jsx)(Chunk481060.rsf, {
-          label: Chunk388032.intl.string(Chunk388032.t["//vhWi"]),
+          label: Chunk388032.intl.string(Chunk388032.t["//vhWl"]),
           checked: !this.props.displayCompactAvatars,
           onChange: e => this.handleDisplayCompactAvatarsChanged(!e)
         }), this.renderMessageGroupSpacingSlider()]
@@ -350,7 +350,7 @@ class eo extends Chunk647438.Component {
     }), s = (0, Chunk951288.jsxs)(Chunk921801.F, {
       setting: Chunk726985.s6.APPEARANCE_SCALING_SPACING,
       children: [(0, Chunk951288.jsxs)(Chunk481060.C3N, {
-        label: Chunk388032.intl.string(Chunk388032.t["0Yh+ZX"]),
+        label: Chunk388032.intl.string(Chunk388032.t["0Yh+ZW"]),
         children: [this.renderFontScaleSlider(), this.renderZoomSlider()]
       }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
         className: Chunk226518.divider
@@ -364,7 +364,7 @@ class eo extends Chunk647438.Component {
       children: (0, Chunk951288.jsx)(ea, {})
     });
     return (0, Chunk951288.jsxs)(Chunk273313.Z, {
-      title: Chunk388032.intl.string(Chunk388032.t["iHH+ky"]),
+      title: Chunk388032.intl.string(Chunk388032.t["iHH+k5"]),
       children: [exports, require, Chunk120356, o, Chunk442837, Chunk704215, Chunk780384]
     })
   }

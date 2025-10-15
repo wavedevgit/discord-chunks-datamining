@@ -194,8 +194,8 @@ let N = Chunk647438.memo(function(e) {
       }
   }, [Y, n, Z, ea]), A(x, Y, B), C(n, Y, W);
   let eE = Y ? l.fpf : l.o1U,
-    eb = Y ? O.intl.string(O.t.ZcgDJX) : O.intl.string(O.t.RscU7I),
-    ey = O.intl.formatToPlainString(O.t.LgCPMt, {
+    eb = Y ? O.intl.string(O.t.ZcgDJS) : O.intl.string(O.t.RscU7O),
+    ey = O.intl.formatToPlainString(O.t.LgCPMj, {
       playbackRate: j
     }),
     eO = "".concat(j.toString().replace(/^0/, ""), "X");

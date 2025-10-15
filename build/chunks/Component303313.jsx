@@ -17,18 +17,18 @@ function c(t) {
     onClose: n,
     transitionState: c
   } = t, p = [];
-  for (let t of l.VY) r.e$(i, t) && p.push(t);
-  return (0, s.jsx)(a.Modal, {
-    "aria-label": o.intl.string(o.t.vusPtq),
+  for (let t of l.VY) s.e$(i, t) && p.push(t);
+  return (0, r.jsx)(a.Modal, {
+    "aria-label": o.intl.string(o.t.vusPtr),
     transitionState: c,
-    title: o.intl.string(o.t["4gMlpQ"]),
+    title: o.intl.string(o.t["4gMlpa"]),
     onClose: n,
     actions: [{
       variant: "primary",
-      text: o.intl.string(o.t.i4jeWR),
+      text: o.intl.string(o.t.i4jeWV),
       onClick: n
     }],
-    children: (0, s.jsx)(e.Z, {
+    children: (0, r.jsx)(e.Z, {
       grantedPermissions: p
     })
   })

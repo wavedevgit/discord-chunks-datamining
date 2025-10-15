@@ -57,7 +57,7 @@ function C(e) {
     if (t > 0 && 0 === n) return _.intl.formatToPlainString(_.t.pnzE1t, {
       mutualGuildCount: t
     });
-    let i = t > 0 ? _.t.YR8PSL : _.t.GQjq6c,
+    let i = t > 0 ? _.t.YR8PSE : _.t.GQjq6e,
       l = new Intl.NumberFormat(r, {
         notation: a ? "compact" : "standard",
         compactDisplay: "short"
@@ -101,7 +101,7 @@ function C(e) {
               children: l
             }, e.id)
           }), Z > 0 ? (0, a.jsx)(c.u, {
-            text: _.intl.formatToPlainString(_.t.m6oRrA, {
+            text: _.intl.formatToPlainString(_.t.m6oRrK, {
               appNames: E.format(R.map(e => e.name))
             }),
             position: "top",

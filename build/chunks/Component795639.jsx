@@ -152,7 +152,7 @@ let I = e => {
     "aria-hidden": true,
     filters: N,
     "aria-describedby": O,
-    "aria-label": I ? w.intl.string(w.t.MxJI3f) : w.intl.string(w.t.Cbiofa),
+    "aria-label": I ? w.intl.string(w.t.MxJI3d) : w.intl.string(w.t.CbiofX),
     children: I ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(P, {
         mediaAttachments: j,
@@ -165,7 +165,7 @@ let I = e => {
         children: [(0, r.jsx)(m.Text, {
           variant: "text-xs/medium",
           color: "header-secondary",
-          children: w.intl.string(w.t.MxJI3f)
+          children: w.intl.string(w.t.MxJI3d)
         }), null == C && (0, r.jsx)(m.vdY, {
           size: "xs",
           color: "currentColor",
@@ -182,7 +182,7 @@ let I = e => {
       }), (0, r.jsx)(m.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
-        children: w.intl.string(w.t.Cbiofa)
+        children: w.intl.string(w.t.CbiofX)
       })]
     })
   });
@@ -193,7 +193,7 @@ let I = e => {
       actions: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(x.Z, {
           className: S.action,
-          tooltip: w.intl.string(w.t.Y8ujqr),
+          tooltip: w.intl.string(w.t.Y8ujqq),
           onClick: M,
           children: (0, r.jsx)(m.vdY, {
             size: "xs",
@@ -201,7 +201,7 @@ let I = e => {
           })
         }), (0, r.jsx)(x.Z, {
           className: S.action,
-          tooltip: w.intl.string(w.t.vN7REz),
+          tooltip: w.intl.string(w.t.vN7REx),
           onClick: () => h.Z.remove(a.id, C.id, f.Ie.CREATE_FORUM_POST.drafts.type),
           dangerous: true,
           children: (0, r.jsx)(m.XHJ, {

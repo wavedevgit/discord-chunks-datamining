@@ -7,8 +7,8 @@ require.d(exports, {
   en: () => j,
   fi: () => O,
   n_: () => T,
-  rS: () => S,
-  tS: () => E
+  rS: () => E,
+  tS: () => S
 }), require("./415506.js"), require("./388685.js");
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
@@ -62,14 +62,14 @@ function p() {
 }
 
 function N(e, t, n) {
-  E(e, u.Z.editedOnboardingPrompts.map(e => e.id === t ? f({}, e, n) : e))
+  S(e, u.Z.editedOnboardingPrompts.map(e => e.id === t ? f({}, e, n) : e))
 }
 
 function O(e, t) {
-  E(e, u.Z.editedOnboardingPrompts.filter(e => e.id !== t))
+  S(e, u.Z.editedOnboardingPrompts.filter(e => e.id !== t))
 }
 
-function E(e, t) {
+function S(e, t) {
   let n = !(arguments.length > 2) || true === arguments[2] || arguments[2];
   if (r.Z.dispatch({
       type: "GUILD_SETTINGS_ONBOARDING_PROMPTS_EDIT",
@@ -82,7 +82,7 @@ function E(e, t) {
     })
   }
 }
-async function S(e, t) {
+async function E(e, t) {
   let n = u.Z.getChangedPrompts();
   if (0 === n.length) return;
   null != t && t.ignoreDefaultPrompt && 1 === n.length && (0, g.RF)(n[0]) && (n = []);
@@ -113,8 +113,8 @@ async function S(e, t) {
     errors: N
   }), Error("failed to locally validate prompts");
   if (m.length > g.b3) throw i.Z.show({
-    title: h.intl.string(h.t.iLdiqY),
-    body: h.intl.formatToPlainString(h.t["cTb/rg"], {
+    title: h.intl.string(h.t.iLdiqa),
+    body: h.intl.formatToPlainString(h.t["cTb/rq"], {
       numQuestions: g.b3
     })
   }), r.Z.dispatch({
@@ -136,13 +136,13 @@ async function S(e, t) {
       }
     })
   } catch (n) {
-    var E;
+    var S;
     let {
       fieldName: e,
       error: t
-    } = null != (E = new a.Hx(n).getAnyErrorMessageAndField()) ? E : {};
+    } = null != (S = new a.Hx(n).getAnyErrorMessageAndField()) ? S : {};
     throw i.Z.show({
-      title: h.intl.string(h.t.iLdiqY),
+      title: h.intl.string(h.t.iLdiqa),
       body: [e, t].filter(d.lm).join(": ")
     }), r.Z.dispatch({
       type: "GUILD_SETTINGS_ONBOARDING_PROMPTS_SAVE_FAILED"
@@ -168,7 +168,7 @@ async function x(e, t) {
       error: t
     } = null != (n = new a.Hx(l).getAnyErrorMessageAndField()) ? n : {};
     i.Z.show({
-      title: h.intl.string(h.t.iLdiqY),
+      title: h.intl.string(h.t.iLdiqa),
       body: [e, t].filter(d.lm).join(": ")
     })
   }
@@ -186,7 +186,7 @@ function _(e, t, n) {
       optionErrors: []
     },
     r = false;
-  return n.title.length <= 0 && (l.title = h.intl.string(h.t.h8Hg1T), r = true), n.options.length <= 0 && (l.options = h.intl.string(h.t["64tF+W"]), r = true), n.inOnboarding && t.filter(e => e.inOnboarding).length > g.b3 && (l.config = h.intl.formatToPlainString(h.t["cTb/rg"], {
+  return n.title.length <= 0 && (l.title = h.intl.string(h.t.h8Hg1d), r = true), n.options.length <= 0 && (l.options = h.intl.string(h.t["64tF+f"]), r = true), n.inOnboarding && t.filter(e => e.inOnboarding).length > g.b3 && (l.config = h.intl.formatToPlainString(h.t["cTb/rq"], {
     numQuestions: g.b3
   }), r = true), l.optionErrors = n.options.map(l => j(e, t, n, l)), (r = r || l.optionErrors.some(e => null != e)) ? l : null
 }
@@ -198,10 +198,10 @@ function j(e, t, n, l) {
     for (let l of t)
       if (l.id !== n.id) {
         for (let t of l.options)
-          if (null != t.roleIds && t.roleIds.some(t => e.has(t))) return h.intl.string(h.t.rKxyvd)
+          if (null != t.roleIds && t.roleIds.some(t => e.has(t))) return h.intl.string(h.t.rKxyvb)
       }
   }
   let s = (null != (i = l.roleIds) ? i : []).filter(t => null != c.Z.getRole(e.id, t)),
     d = (null != (a = l.channelIds) ? a : []).filter(e => null != o.Z.getChannel(e));
-  return 0 === s.length && 0 === d.length ? h.intl.string(h.t.F6SUWB) : null
+  return 0 === s.length && 0 === d.length ? h.intl.string(h.t.F6SUWF) : null
 }

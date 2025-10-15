@@ -54,7 +54,7 @@ function x(e) {
       d.S.unsubscribe(y.CkL.EMPHASIZE_NOTICE, t), null !== e && clearTimeout(e)
     }
   }, []), i.useEffect(() => {
-    S && c.uvj.announce(j.intl.string(j.t["0Y/qkL"]))
+    S && c.uvj.announce(j.intl.string(j.t["0Y/qkJ"]))
   }, [S]);
   let A = i.useCallback(async () => {
       try {
@@ -91,24 +91,24 @@ function x(e) {
       className: a()(b.content, {
         [b.emphasized]: l
       }),
-      "aria-label": j.intl.string(j.t["odDw+z"]),
+      "aria-label": j.intl.string(j.t["odDw+/"]),
       children: [(0, r.jsx)(c.Text, {
         variant: "text-md/medium",
         color: "text-primary",
         className: b.message,
-        children: j.intl.string(j.t["/lQiX/"])
+        children: j.intl.string(j.t["/lQiX1"])
       }), (0, r.jsxs)("div", {
         className: b.actions,
         children: [(0, r.jsx)(c.Button, {
           size: "sm",
           variant: "secondary",
-          text: j.intl.string(j.t.yBZMsQ),
+          text: j.intl.string(j.t.yBZMsb),
           onClick: N,
           disabled: !S || w
         }), (0, r.jsx)(c.Button, {
           size: "sm",
           variant: "primary",
-          text: j.intl.string(j.t["R3BPH+"]),
+          text: j.intl.string(j.t.R3BPHx),
           onClick: A,
           loading: w,
           disabled: !S || w

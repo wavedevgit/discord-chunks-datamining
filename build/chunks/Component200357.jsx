@@ -50,7 +50,7 @@ let _ = function(e) {
     children: (0, r.jsxs)("div", {
       className: o()(d.phoneField, t),
       children: [(0, r.jsx)(l.gNt, {
-        label: u.intl.string(u.t["k+bvrB"]),
+        label: u.intl.string(u.t["k+bvrK"]),
         children: (0, r.jsx)(l.VcW, {
           value: E,
           onChange: T,
@@ -61,7 +61,7 @@ let _ = function(e) {
           popoutLayerContext: p
         })
       }), (0, r.jsx)(l.oil, {
-        label: u.intl.string(u.t["64bX0M"]),
+        label: u.intl.string(u.t["64bX0N"]),
         error: a,
         leading: null == A ? true : A.code,
         type: "tel",

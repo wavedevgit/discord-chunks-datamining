@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk430864 = require("./430864.js");
 
 function g(e, t) {
-  return e.type === _.uaV.VOICE_HANGOUT_INVITE ? "" : e.hasFlag(_.iLy.SOURCE_MESSAGE_DELETED) ? p.intl.string(p.t.JOtgSw) : t
+  return e.type === _.uaV.VOICE_HANGOUT_INVITE ? "" : e.hasFlag(_.iLy.SOURCE_MESSAGE_DELETED) ? p.intl.string(p.t.JOtgS0) : t
 }
 
 function E(e) {

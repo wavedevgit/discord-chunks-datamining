@@ -30,7 +30,7 @@ function d(e) {
     children: [(0, r.jsx)(o.Heading, {
       variant: "heading-deprecated-12/semibold",
       className: c.sectionLabel,
-      children: l.intl.string(l.t["1DXFFd"])
+      children: l.intl.string(l.t["1DXFFR"])
     }), null != t && "" !== t ? (0, r.jsx)(a.x, {
       variant: "text-xs/normal",
       color: "text-danger",
@@ -38,7 +38,7 @@ function d(e) {
     }) : null, (0, r.jsx)(o.VcW, {
       wrapperClassName: c.select,
       maxVisibleItems: u,
-      placeholder: l.intl.string(l.t.oM4E1A),
+      placeholder: l.intl.string(l.t.oM4E1N),
       options: p,
       onChange: d,
       isDisabled: _,
@@ -47,7 +47,7 @@ function d(e) {
       variant: "text-xs/medium",
       color: "header-secondary",
       className: c.label,
-      children: l.intl.format(l.t.t9Jm9o, {})
+      children: l.intl.format(l.t.t9Jm9v, {})
     })]
   })
 }

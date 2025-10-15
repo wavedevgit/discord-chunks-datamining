@@ -177,10 +177,10 @@ function U(e) {
     onClick: d,
     disabled: o,
     variant: "secondary",
-    "aria-label": T.intl.formatToPlainString(T.t.UXw6W2, {
+    "aria-label": T.intl.formatToPlainString(T.t.UXw6W1, {
       commandName: n.untranslatedName
     }),
-    text: T.intl.string(T.t.TXNS7S),
+    text: T.intl.string(T.t.TXNS7e),
     icon: s.U,
     iconPosition: "end",
     size: "md"
@@ -268,13 +268,13 @@ function H(e) {
       context: n,
       section: f,
       commands: b,
-      headerName: T.intl.string(T.t.acSE0h),
+      headerName: T.intl.string(T.t.acSE0t),
       sectionName: a
     }), (0, i.jsx)(D, {
       context: n,
       section: f,
       commands: m ? w : x,
-      headerName: T.intl.string(T.t.DUU9L3),
+      headerName: T.intl.string(T.t.DUU9Ly),
       sectionName: a,
       children: g && (0, i.jsx)(O.Z, {
         sortOrder: v,

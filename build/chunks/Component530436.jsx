@@ -38,10 +38,10 @@ function g(e) {
       tag: "span",
       children: e
     })
-  }), []), v = n instanceof r.Z ? n.code !== u.evJ.TOO_MANY_INVITES ? n.getAnyErrorMessage() : o.Z.can(u.Plq.MANAGE_GUILD, t) ? c.intl.format(c.t["H/RUY1"], {
+  }), []), v = n instanceof r.Z ? n.code !== u.evJ.TOO_MANY_INVITES ? n.getAnyErrorMessage() : o.Z.can(u.Plq.MANAGE_GUILD, t) ? c.intl.format(c.t["H/RUY2"], {
     inviteListHook: p,
     inviteHelpHook: f
-  }) : c.intl.string(c.t["/FxH6G"]) : "message" in n ? n.message : c.intl.string(c.t.eAn6z2);
+  }) : c.intl.string(c.t["/FxH6O"]) : "message" in n ? n.message : c.intl.string(c.t.eAn6z8);
   return (0, l.jsx)(a.Text, {
     className: d.errorMessage,
     variant: "text-xs/normal",

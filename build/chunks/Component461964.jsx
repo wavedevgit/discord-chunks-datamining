@@ -20,56 +20,56 @@ function m(t) {
     transitionState: e,
     onClose: a
   } = t, m = (0, d.Dt)();
-  return r.useEffect(() => {
+  return i.useEffect(() => {
     o.r_()
-  }, []), (0, n.jsxs)(i.Y0X, {
+  }, []), (0, n.jsxs)(r.Y0X, {
     transitionState: e,
     role: "alertdialog",
     "aria-labelledby": m,
     parentComponent: "KeyboardNavigationModal",
-    children: [(0, n.jsxs)(i.hzk, {
+    children: [(0, n.jsxs)(r.hzk, {
       className: u.content,
-      children: [(0, n.jsx)(i.Heading, {
+      children: [(0, n.jsx)(r.Heading, {
         variant: "heading-xl/semibold",
         id: m,
         className: u.header,
-        children: x.intl.format(x.t.V4fxrp, {
-          tab: (t, e) => (0, n.jsx)(i.M2$, {
+        children: x.intl.format(x.t.V4fxrq, {
+          tab: (t, e) => (0, n.jsx)(r.M2$, {
             shortcut: "tab",
             className: u.headerShortcut
           }, e)
         })
-      }), (0, n.jsx)(i.Text, {
+      }), (0, n.jsx)(r.Text, {
         variant: "text-md/normal",
-        children: x.intl.string(x.t["oQA/OB"])
+        children: x.intl.string(x.t["oQA/OD"])
       }), (0, n.jsxs)("ul", {
         className: u.tips,
         children: [(0, n.jsxs)("li", {
-          children: [(0, n.jsx)(i.M2$, {
+          children: [(0, n.jsx)(r.M2$, {
             shortcut: l._.binds["0"]
-          }), (0, n.jsx)(i.Text, {
+          }), (0, n.jsx)(r.Text, {
             variant: "text-md/normal",
-            children: x.intl.string(x.t["43Qn2r"])
+            children: x.intl.string(x.t["43Qn2t"])
           })]
         }), (0, n.jsxs)("li", {
-          children: [(0, n.jsx)(i.M2$, {
+          children: [(0, n.jsx)(r.M2$, {
             shortcut: s.$.binds["0"]
-          }), (0, n.jsx)(i.Text, {
+          }), (0, n.jsx)(r.Text, {
             variant: "text-md/normal",
-            children: x.intl.string(x.t.zJg4FY)
+            children: x.intl.string(x.t.zJg4FR)
           })]
         })]
-      }), (0, n.jsx)(i.Text, {
+      }), (0, n.jsx)(r.Text, {
         variant: "text-md/normal",
-        children: x.intl.format(x.t.EWFVSW, {
+        children: x.intl.format(x.t.EWFVSU, {
           link: c.Z.getArticleURL(h.BhN.KEYBOARD_NAVIGATION)
         })
       })]
-    }), (0, n.jsx)(i.mzw, {
-      children: (0, n.jsx)(i.Button, {
+    }), (0, n.jsx)(r.mzw, {
+      children: (0, n.jsx)(r.Button, {
         variant: "primary",
         size: "sm",
-        text: x.intl.string(x.t.BddRzS),
+        text: x.intl.string(x.t.BddRzc),
         onClick: a,
         autoFocus: true
       })

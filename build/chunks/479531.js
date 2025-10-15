@@ -9,10 +9,10 @@ var Chunk544891 = require("./544891.js"),
   Chunk388032 = require("./388032.jsx");
 class o extends Chunk544891.sX {
   constructor(e, t) {
-    super(e, t, null != t ? a.intl.formatToPlainString(a.t.aKRa0Q, {
+    super(e, t, null != t ? a.intl.formatToPlainString(a.t.aKRa0d, {
       statusPageURL: i.yXt.STATUS,
       details: "".concat(t)
-    }) : a.intl.formatToPlainString(a.t.aTVNes, {
+    }) : a.intl.formatToPlainString(a.t.aTVNen, {
       statusPageURL: i.yXt.STATUS
     }))
   }

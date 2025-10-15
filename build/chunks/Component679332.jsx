@@ -48,7 +48,7 @@ function p(e) {
     [n],
     [(0, l.Z)({
       id: t.id,
-      label: d.intl.string(d.t["/AXYnE"]),
+      label: d.intl.string(d.t["/AXYnJ"]),
       onSuccess: () => p({
         action: "COPY_USER_ID",
         analyticsLocations: h
@@ -65,7 +65,7 @@ function p(e) {
         navId: "non-user-bot-profile-overflow-menu",
         onSelect: true,
         onClose: t,
-        "aria-label": d.intl.string(d.t.AXIHpV),
+        "aria-label": d.intl.string(d.t.AXIHpa),
         children: m.map((e, t) => (0, r.jsx)(a.kSQ, {
           children: e.map(e => e)
         }, t))
@@ -75,7 +75,7 @@ function p(e) {
       ref: f,
       action: "PRESS_OPTIONS",
       icon: a.xhG,
-      tooltipText: d.intl.string(d.t["UKOtz+"])
+      tooltipText: d.intl.string(d.t.UKOtz8)
     }, e))
   })
 }

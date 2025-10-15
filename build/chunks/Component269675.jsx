@@ -37,7 +37,7 @@ function j(e) {
     restrictionsLoading: L
   } = (0, f.uP)(t), R = null == n || !Z || A || L;
   (0, u.Tt)({
-    subsection: T.intl.string(T.t["KzCF/6"]),
+    subsection: T.intl.string(T.t["KzCF//"]),
     location: null == n ? true : n.name
   }), (0, c.Z)(l.tq ? "role-subscriptions-overview" : true);
   let D = j && (null == n || !(P || x) || w && !L);
@@ -60,7 +60,7 @@ function j(e) {
         icon: (0, o.GSL)(E.Z),
         "aria-hidden": true
       }), (0, r.jsx)(g.Z.Title, {
-        children: T.intl.string(T.t["KzCF/6"])
+        children: T.intl.string(T.t["KzCF//"])
       })]
     }), (0, r.jsx)("div", {
       id: C.v

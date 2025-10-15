@@ -57,24 +57,24 @@ let L = [Chunk981631.O0b.PAST_DUE, Chunk981631.O0b.PAUSED, Chunk981631.O0b.BILLI
     var e, n, l;
     let {
       analyticsLocation: U,
-      analyticsLocations: x,
-      onClose: k,
+      analyticsLocations: k,
+      onClose: x,
       transitionState: j,
       premiumSubscription: F
     } = t, {
       initialStep: W
-    } = t, B = r.useRef(new i.qA), [G, Y] = r.useState(null), H = null == (e = (0, f.Af)(F)) ? true : e.planId, V = null != H ? f.ZP.getPremiumType(H) : null;
-    s()(null != V, "Should not be cancelling Nitro without premiumType");
-    let X = V === h.PremiumTypes.TIER_0 || V === h.PremiumTypes.TIER_1 || V === h.PremiumTypes.TIER_2;
-    null == W && (W = X ? T.R.WHAT_YOU_LOSE : T.R.CONFIRM);
-    let [Z, q, z, K] = (0, A.q)(W, F, x), Q = (0, m.Q)(), J = (0, S.UV)(), {
+    } = t, B = r.useRef(new i.qA), [X, Y] = r.useState(null), G = null == (e = (0, f.Af)(F)) ? true : e.planId, H = null != G ? f.ZP.getPremiumType(G) : null;
+    s()(null != H, "Should not be cancelling Nitro without premiumType");
+    let V = H === h.PremiumTypes.TIER_0 || H === h.PremiumTypes.TIER_1 || H === h.PremiumTypes.TIER_2;
+    null == W && (W = V ? v.R.WHAT_YOU_LOSE : v.R.CONFIRM);
+    let [Z, q, z, Q] = (0, A.q)(W, F, k), K = (0, m.Q)(), J = (0, S.UV)(), {
       churnUserDiscountOffer: $,
       isFetchingChurnDiscountOffer: tt
-    } = (0, S.WR)(!J || F.status === N.O0b.CANCELED && Z !== T.R.CONFIRM_DISCOUNT), te = (0, y._n)(F, h.Xh.PREMIUM_MONTH_TIER_2, $), [tn] = (0, p.ED)({
+    } = (0, S.WR)(!J || F.status === N.O0b.CANCELED && Z !== v.R.CONFIRM_DISCOUNT), te = (0, y._n)(F, h.Xh.PREMIUM_MONTH_TIER_2, $), [tn] = (0, p.ED)({
       subscriptionId: F.id,
       items: (0, f.Ue)(null != (l = null == (n = F.renewalMutations) ? true : n.items) ? l : F.items),
       renewal: true,
-      analyticsLocations: x,
+      analyticsLocations: k,
       analyticsLocation: c.Z.CANCEL_INVOICE_PREVIEW
     }), ta = null !== tn ? f.ZP.getIntervalForInvoice(tn) : null, tr = (0, f.aS)(h.Xh.PREMIUM_MONTH_TIER_2, false, false, {
       currency: F.currency,
@@ -82,33 +82,33 @@ let L = [Chunk981631.O0b.PAST_DUE, Chunk981631.O0b.PAUSED, Chunk981631.O0b.BILLI
     }), ti = (0, E.T4)(tr.amount, tr.currency), tl = r.useMemo(() => (0, O.b)(), []);
     r.useEffect(() => {
       _.default.track(N.rMx.CANCELLATION_FLOW_STARTED, g({
-        location_stack: x,
+        location_stack: k,
         load_id: tl
       }, (0, D.v)(F)))
-    }, [x, F, tl]);
+    }, [k, F, tl]);
     let [ts, tu] = r.useState(null), to = r.useCallback(() => {
       switch (Z) {
-        case T.R.CONFIRM:
+        case v.R.CONFIRM:
           return (0, a.jsx)(C.G, {});
-        case T.R.CONFIRM_DISCOUNT:
+        case v.R.CONFIRM_DISCOUNT:
           return (0, a.jsx)(P.U, {});
-        case T.R.DISCOUNT_APPLIED:
+        case v.R.DISCOUNT_APPLIED:
           return (0, a.jsx)(R.i, {});
-        case T.R.PREVIEW:
-          return (0, a.jsx)(I.w, {});
-        case T.R.PAUSE_SELECT:
+        case v.R.PREVIEW:
+          return (0, a.jsx)(T.w, {});
+        case v.R.PAUSE_SELECT:
           return (0, a.jsx)(b.PremiumSubscriptionPauseModalSelect, {});
-        case T.R.PAUSE_CONFIRM:
+        case v.R.PAUSE_CONFIRM:
           return (0, a.jsx)(b.Sz, {});
-        case T.R.WHAT_YOU_LOSE:
+        case v.R.WHAT_YOU_LOSE:
         default:
           return (0, a.jsx)(w.n, {})
       }
     }, [Z]), tc = r.useCallback(async () => {
       if (_.default.track(N.rMx.CANCELLATION_FLOW_COMPLETED, g({
-          location_stack: x,
+          location_stack: k,
           load_id: tl
-        }, (0, D.v)(F))), L.includes(F.status)) await (0, o.EO)(F.id, x, U);
+        }, (0, D.v)(F))), L.includes(F.status)) await (0, o.EO)(F.id, k, U);
       else {
         var t, e;
         let n = null != (e = null == (t = F.renewalMutations) ? true : t.items) ? e : F.items,
@@ -118,9 +118,9 @@ let L = [Chunk981631.O0b.PAST_DUE, Chunk981631.O0b.PAUSED, Chunk981631.O0b.BILLI
         }, {
           amount: 0,
           currency: F.currency
-        }, (0, f.UX)(a, F.currency, F.paymentSourceId), x, U)
+        }, (0, f.UX)(a, F.currency, F.paymentSourceId), k, U)
       }
-    }, [F, x, U, tl]), td = async () => {
+    }, [F, k, U, tl]), td = async () => {
       if (null == $) throw Error("Churn user discount offer is null");
       F.status === N.O0b.CANCELED ? await (0, o.df)(F, $) : await u.tn.post({
         url: N.ANM.USER_OFFER_REDEEM,
@@ -131,32 +131,32 @@ let L = [Chunk981631.O0b.PAST_DUE, Chunk981631.O0b.PAUSED, Chunk981631.O0b.BILLI
       })
     };
     return (0, a.jsx)(d.Gt, {
-      value: x,
-      children: (0, a.jsxs)(v.CancellationContext.Provider, {
+      value: k,
+      children: (0, a.jsxs)(I.CancellationContext.Provider, {
         value: {
           setStep: q,
-          premiumType: V,
+          premiumType: H,
           onClose: () => {
-            k(), _.default.track(N.rMx.CANCELLATION_FLOW_STEP, g({
-              from_step: T.O[Z],
+            x(), _.default.track(N.rMx.CANCELLATION_FLOW_STEP, g({
+              from_step: v.O[Z],
               to_step: null,
               step_duration_ms: Date.now() - z,
-              flow_duration_ms: Date.now() - K,
-              location_stack: x,
+              flow_duration_ms: Date.now() - Q,
+              location_stack: k,
               load_id: tl
             }, (0, D.v)(F)))
           },
           transitionState: j,
           premiumSubscription: F,
-          analyticsLocations: x,
+          analyticsLocations: k,
           analyticsLocation: U,
-          confettiCanvas: G,
+          confettiCanvas: X,
           churnUserDiscountOffer: $,
           isFetchingChurnDiscountOffer: J && tt,
           fullPrice: ti,
           discountedPrice: te,
-          planId: H,
-          paymentsBlocked: Q,
+          planId: G,
+          paymentsBlocked: K,
           renewalInvoice: tn,
           renewalInvoiceDetails: ta,
           handleCancellation: tc,

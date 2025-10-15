@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk512722 = require("./512722.js"),
-  e = require.n(Chunk512722),
+  s = require.n(Chunk512722),
   Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
   Chunk584825 = require("./584825.js"),
@@ -17,19 +17,19 @@ function p(t) {
   let {
     onClose: i,
     guildId: n,
-    transitionState: s
+    transitionState: r
   } = t, p = (0, c.YB)(n);
-  return e()(null != p, "subscriptionsSettings cannot be null"), (0, r.jsx)(a.Modal, {
+  return s()(null != p, "subscriptionsSettings cannot be null"), (0, e.jsx)(a.Modal, {
     onClose: i,
-    title: l.intl.string(l.t.xPum5Q),
-    transitionState: s,
-    "aria-label": l.intl.string(l.t.D98gRz),
+    title: l.intl.string(l.t.xPum5e),
+    transitionState: r,
+    "aria-label": l.intl.string(l.t.D98gR0),
     actions: [{
       variant: "primary",
-      text: l.intl.string(l.t.wdo1oB),
+      text: l.intl.string(l.t.wdo1oK),
       onClick: i
     }],
-    children: (0, r.jsx)(o.Text, {
+    children: (0, e.jsx)(o.Text, {
       variant: "text-md/normal",
       color: "text-muted",
       className: d.description,

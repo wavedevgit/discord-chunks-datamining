@@ -63,7 +63,7 @@ let j = Chunk647438.memo(function(e) {
             color: "interactive-normal",
             tag: "span",
             className: v.learnMore,
-            children: _.intl.format(_.t["Nd3Gh+"], {
+            children: _.intl.format(_.t.Nd3Gh4, {
               helpUrl: f.Z.getArticleURL(y.BhN.GUILD_AUTOMOD_BLOCKED_MESSAGE)
             })
           })
@@ -100,11 +100,11 @@ let j = Chunk647438.memo(function(e) {
           isInline: false,
           children: (0, i.jsxs)("span", {
             className: x.edited,
-            children: ["(", _.intl.string(_.t.Z7eEx9), ")"]
+            children: ["(", _.intl.string(_.t.Z7eEx8), ")"]
           })
         })]
       }), (0, i.jsx)(j, {
-        notice: null != (n = null == P ? true : P.errorMessage) ? n : _.intl.string(_.t.zQ69pv),
+        notice: null != (n = null == P ? true : P.errorMessage) ? n : _.intl.string(_.t.zQ69pq),
         message: u,
         compact: o,
         onDismiss: I

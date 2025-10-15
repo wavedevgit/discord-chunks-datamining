@@ -20,7 +20,7 @@ let d = e => {
   return null == n ? null : (0, r.jsx)("div", {
     className: a()(u.content, t),
     children: (0, r.jsx)(o.gNt, {
-      label: c.intl.string(c.t.xFn72s),
+      label: c.intl.string(c.t.xFn72t),
       children: (0, r.jsxs)("div", {
         className: u.giftRecipientInfo,
         children: [(0, r.jsx)(s.Z, {

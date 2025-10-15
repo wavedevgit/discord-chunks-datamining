@@ -18,14 +18,14 @@ let l = e => {
       shouldShowReferralTrialCopy: l,
       subscriptionTrial: c
     } = e;
-    return t && l ? s.intl.string(s.t.bXTClc) : t && (n === o.Si.TIER_2 || a) ? (0, r.Rt)({
+    return t && l ? s.intl.string(s.t.bXTClZ) : t && (n === o.Si.TIER_2 || a) ? (0, r.Rt)({
       intervalType: null == c ? true : c.interval,
       intervalCount: null == c ? true : c.interval_count
-    }) : t ? s.intl.formatToPlainString(s.t.nTmm2v, {
+    }) : t ? s.intl.formatToPlainString(s.t.nTmm2t, {
       freeTrialText: i
     }) : true
   },
-  c = (e, t, n, r) => t || n ? s.intl.string(s.t.fkPGat) : e === o.Si.TIER_2 ? s.intl.formatToPlainString(s.t.bkQ4bH, {
+  c = (e, t, n, r) => t || n ? s.intl.string(s.t.fkPGam) : e === o.Si.TIER_2 ? s.intl.formatToPlainString(s.t.bkQ4bG, {
     percent: r
   }) : true,
   u = e => {
@@ -40,7 +40,7 @@ let l = e => {
       intervalCount: null == h ? true : h.interval_count
     }), b = null != (n = null != u ? u : null == p || null == (t = p.subscription_trial) ? true : t.sku_id) ? n : g, y = null != h && b === h.sku_id, O = (null == p ? true : p.trial_id) === o.a7;
     return {
-      buttonText: d ? s.intl.string(s.t.J61px0) : null != m ? c(b, f, _, m.discount.amount) : l({
+      buttonText: d ? s.intl.string(s.t.J61px8) : null != m ? c(b, f, _, m.discount.amount) : l({
         showTrialCTA: y,
         subscriptionTier: b,
         trialDurationCopy: E,

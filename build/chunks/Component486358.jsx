@@ -35,13 +35,13 @@ let _ = function() {
         children: [(0, Chunk951288.jsx)(Chunk793030.X6q, {
           variant: "heading-lg/semibold",
           color: "header-primary",
-          children: Chunk388032.intl.string(Chunk388032.t["6TAHbx"])
+          children: Chunk388032.intl.string(Chunk388032.t["6TAHb2"])
         }), (0, Chunk951288.jsx)(Chunk793030.xvT, {
           variant: "text-sm/medium",
           color: "header-secondary",
           tag: "p",
           className: Chunk566945.description,
-          children: Chunk388032.intl.string(Chunk388032.t.XCGZFk)
+          children: Chunk388032.intl.string(Chunk388032.t.XCGZFh)
         })]
       }), true === C && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
         children: [(0, Chunk951288.jsx)(Chunk354031.P, {

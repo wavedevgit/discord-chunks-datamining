@@ -61,9 +61,9 @@ function m(e) {
     })
   }, [t, m]), (0, o.jsx)(l.Z, s({
     modalType: "in_app_report",
-    header: p.intl.string(p.t.MP5lDj),
-    body: p.intl.string(p.t["7Ct0Dj"]),
-    problemTitle: p.intl.string(p.t.FJmoxF),
+    header: p.intl.string(p.t.MP5lDg),
+    body: p.intl.string(p.t["7Ct0Dg"]),
+    problemTitle: p.intl.string(p.t.FJmoxM),
     problems: (0, _.Z)(),
     freeformNeededProblems: f,
     onSubmit: function(e) {
@@ -89,7 +89,7 @@ function m(e) {
           default: e
         } = await n.e("14466").then(n.bind(n, 729328));
         return t => (0, o.jsx)(e, s({
-          body: p.intl.string(p.t["d9+vQ8"])
+          body: p.intl.string(p.t["d9+vQ0"])
         }, t))
       })
     },

@@ -104,7 +104,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       ownerTooltipText: i
     } = e;
     return null != t && t && null == n ? (0, r.jsx)(s.u, {
-      __unsupportedReactNodeAsText: null != i ? i : x.intl.string(x.t.pclUFJ),
+      __unsupportedReactNodeAsText: null != i ? i : x.intl.string(x.t.pclUFB),
       children: (0, r.jsx)(c.CEn, {
         size: "md",
         color: "currentColor",
@@ -118,7 +118,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       onClickPremiumGuildIcon: n
     } = e;
     return null == t ? null : (0, r.jsx)(s.u, {
-      text: x.intl.formatToPlainString(x.t.IWkAq7, {
+      text: x.intl.formatToPlainString(x.t.IWkAq6, {
         date: t
       }),
       asContainer: true,

@@ -24,11 +24,11 @@ function f(e) {
     r = null != e.invitesDisabledUntil;
   switch (true) {
     case n && r:
-      return b.intl.string(b.t.CEygF8);
+      return b.intl.string(b.t.CEygFx);
     case n:
-      return b.intl.string(b.t.Wmbjcz);
+      return b.intl.string(b.t.Wmbjc3);
     case r:
-      return b.intl.string(b.t.Q1QrAi);
+      return b.intl.string(b.t.Q1QrAg);
     default:
       return ""
   }
@@ -55,11 +55,11 @@ function h(e) {
           className: p.heading,
           variant: "heading-lg/semibold",
           color: "text-danger",
-          children: (0, u.kk)(o) ? b.intl.string(b.t.raRxxT) : b.intl.string(b.t["4nbAta"])
+          children: (0, u.kk)(o) ? b.intl.string(b.t.raRxxc) : b.intl.string(b.t["4nbAtb"])
         }), (0, r.jsx)(a.Text, {
           className: p.tagLine,
           variant: "text-sm/medium",
-          children: b.intl.format(b.t["4QIIZl"], {
+          children: b.intl.format(b.t["4QIIZm"], {
             dateTime: new Date(null != s ? s : "").toLocaleString(b.intl.currentLocale, u.pQ)
           })
         })]
@@ -69,7 +69,7 @@ function h(e) {
       children: [(0, r.jsx)(a.Button, {
         variant: "secondary",
         onClick: l,
-        text: b.intl.string(b.t.ISiXba),
+        text: b.intl.string(b.t.ISiXbW),
         size: "sm"
       }), (0, r.jsx)(a.Button, {
         variant: "critical-primary",
@@ -111,7 +111,7 @@ function g(e) {
     }), (0, r.jsx)(a.Button, {
       color: o.zx.Colors.BRAND,
       onClick: t,
-      text: b.intl.string(b.t.e1bMNf),
+      text: b.intl.string(b.t.e1bMNT),
       size: "sm"
     })]
   })
@@ -149,12 +149,12 @@ function j(e) {
       className: p.buttonContainer,
       children: [(0, r.jsx)(a.Button, {
         onClick: n,
-        text: b.intl.string(b.t.ISiXba),
+        text: b.intl.string(b.t.ISiXbW),
         variant: "secondary",
         size: "sm"
       }), (0, r.jsx)(a.Button, {
         onClick: t,
-        text: b.intl.string(b.t.e1bMNf),
+        text: b.intl.string(b.t.e1bMNT),
         size: "sm"
       })]
     })]

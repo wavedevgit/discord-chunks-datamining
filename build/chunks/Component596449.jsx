@@ -25,8 +25,8 @@ function c(e) {
       width: 20
     }),
     color: i.Z.unsafe_rawColors.BRAND_500.css,
-    title: o.intl.string(o.t["60lJ0C"]),
-    description: o.intl.string(o.t["EYn7/y"]),
+    title: o.intl.string(o.t["60lJ0N"]),
+    description: o.intl.string(o.t["EYn7//"]),
     onClick: function() {
       (0, l.ZDy)(async () => {
         let {

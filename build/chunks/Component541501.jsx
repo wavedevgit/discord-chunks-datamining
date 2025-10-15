@@ -48,7 +48,7 @@ function f(e) {
     onSelect: t,
     onClose: r
   } = e, f = function() {
-    let e = u.ZP.useState(e => e.timeToLiveMs, o.X);
+    let e = l.ZP.useState(e => e.timeToLiveMs, o.X);
     return (0, n.jsx)(c.II_, {
       id: "opacity",
       "aria-haspopup": true,
@@ -56,15 +56,15 @@ function f(e) {
       control: (t, r) => (0, n.jsx)(c._wy, s(p({}, t), {
         ref: r,
         value: e,
-        maxValue: u.VX,
-        minValue: u.ih,
+        maxValue: l.VX,
+        minValue: l.ih,
         renderValue: e => "".concat(e, "ms"),
-        onChange: e => (0, u.S_)(e),
+        onChange: e => (0, l.S_)(e),
         "aria-label": "Time To Live"
       }))
     })
   }(), b = function() {
-    let e = u.ZP.useState(e => e.reappearTimeMs, o.X);
+    let e = l.ZP.useState(e => e.reappearTimeMs, o.X);
     return (0, n.jsx)(c.II_, {
       id: "opacity",
       "aria-haspopup": true,
@@ -72,10 +72,10 @@ function f(e) {
       control: (t, r) => (0, n.jsx)(c._wy, s(p({}, t), {
         ref: r,
         value: e,
-        maxValue: u.V5,
-        minValue: u.xc,
+        maxValue: l.V5,
+        minValue: l.xc,
         renderValue: e => "".concat(e, "ms"),
-        onChange: e => (0, u.Df)(e),
+        onChange: e => (0, l.Df)(e),
         "aria-label": "Time To Reappear"
       }))
     })
@@ -88,7 +88,7 @@ function f(e) {
   }, []), (0, n.jsxs)(c.v2r, {
     navId: "overlay-click-zone-debug-context-menu",
     onClose: i.Zy,
-    "aria-label": l.intl.string(l.t.tPfVWi),
+    "aria-label": u.intl.string(u.t.tPfVWl),
     onSelect: t,
     children: [f, b]
   })

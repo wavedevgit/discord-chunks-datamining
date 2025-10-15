@@ -69,7 +69,7 @@ let P = (e, t) => {
                 variant: "display-md",
                 color: "header-primary",
                 className: R.header,
-                children: N.intl.string(N.t.YCZldK)
+                children: N.intl.string(N.t.YCZldH)
               })
             }), (0, r.jsxs)("div", {
               className: R.body,

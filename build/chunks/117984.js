@@ -1,14 +1,14 @@
 /** Chunk was on 98350 **/
 /** chunk id: 117984, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  CM: () => v,
+  CM: () => p,
   UT: () => O,
   _Z: () => _,
   kj: () => f,
   oC: () => g,
   s3: () => h,
   uA: () => E,
-  xh: () => p
+  xh: () => v
 }), require("./388685.js");
 var Chunk524437 = require("./524437.js"),
   Chunk675478 = require("./675478.js"),
@@ -67,7 +67,7 @@ function O(e, t) {
   }, a.fy.INFREQUENT_USER_ACTION)
 }
 
-function v(e) {
+function p(e) {
   let t = o.default.fromTimestamp(Date.now());
   a.hW.updateAsync("favorites", n => {
     n.favoriteChannels[t] = i.aV.create({
@@ -79,7 +79,7 @@ function v(e) {
   }, a.fy.FREQUENT_USER_ACTION)
 }
 
-function p(e) {
+function v(e) {
   g(e)
 }
 

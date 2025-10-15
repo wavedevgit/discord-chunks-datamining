@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk594174 = require("./594174.js"),
   Chunk388032 = require("./388032.jsx");
 
-function m(e) {
+function O(e) {
   for (var n = 1; n < arguments.length; n++) {
     var t = null != arguments[n] ? arguments[n] : {},
       l = Object.keys(t);
@@ -62,18 +62,18 @@ function h(e, n, h) {
     N = (0, c.yw)(null == P ? true : P.id);
   return (null == x ? true : x.id) === e.id ? [y] : null == v || null == P || null == x ? [] : [N ? (0, l.jsx)(a.sNh, {
     id: "remove",
-    label: P.isForumPost() ? O.intl.formatToPlainString(O.t.v2KNNx, {
+    label: P.isForumPost() ? m.intl.formatToPlainString(m.t.v2KNNz, {
       user: e.username
-    }) : O.intl.formatToPlainString(O.t["27xWaT"], {
+    }) : m.intl.formatToPlainString(m.t["27xWaW"], {
       user: e.username
     }),
     color: "danger",
     action: () => d.Z.removeMember(P.id, e.id, "Context Menu")
   }) : null, (0, s.BK)(e, v) ? (0, l.jsx)(a.sNh, {
     id: "kick",
-    label: N ? O.intl.formatToPlainString(O.t["1Ie87p"], {
+    label: N ? m.intl.formatToPlainString(m.t["1Ie87u"], {
       user: e.username
-    }) : O.intl.formatToPlainString(O.t["9l/iTS"], {
+    }) : m.intl.formatToPlainString(m.t["9l/iTU"], {
       user: e.username
     }),
     color: "danger",
@@ -81,16 +81,16 @@ function h(e, n, h) {
       let {
         default: n
       } = await t.e("36760").then(t.bind(t, 854360));
-      return t => (0, l.jsx)(n, p(m({}, t), {
+      return t => (0, l.jsx)(n, p(O({}, t), {
         guildId: v.id,
         user: e
       }))
     })
   }) : null, (0, s.mm)(e, v) ? (0, l.jsx)(a.sNh, {
     id: "ban",
-    label: N ? O.intl.formatToPlainString(O.t.i62APf, {
+    label: N ? m.intl.formatToPlainString(m.t.i62APT, {
       user: e.username
-    }) : O.intl.formatToPlainString(O.t.WnpUBi, {
+    }) : m.intl.formatToPlainString(m.t.WnpUBg, {
       user: e.username
     }),
     color: "danger",
@@ -98,7 +98,7 @@ function h(e, n, h) {
       let {
         default: n
       } = await t.e("4114").then(t.bind(t, 98746));
-      return t => (0, l.jsx)(n, p(m({}, t), {
+      return t => (0, l.jsx)(n, p(O({}, t), {
         guildId: v.id,
         user: e
       }))

@@ -31,8 +31,8 @@ function m(e) {
       let e = (0, o.dl)() && (0, o.zd)(t.id);
       return (t.isPrivate() || c.Z.can(_.Plq.CONNECT, t)) && !e
     })) return null;
-  let y = () => g === p.l.MODAL || g === p.l.MODAL_V2 ? h.intl.string(h.t["3xjX0U"]) : t.isDM() || t.isGroupDM() ? h.intl.string(h.t["7hwn2A"]) : t.isGuildStageVoice() ? h.intl.string(h.t.Acqcot) : h.intl.string(h.t.BXxdl7),
-    O = () => g === p.l.MODAL || g === p.l.MODAL_V2 ? h.intl.string(h.t.VJlc0S) : t.isDM() || t.isGroupDM() ? h.intl.string(h.t.ozoE2A) : t.isGuildStageVoice() ? h.intl.string(h.t["7vb2cc"]) : h.intl.string(h.t["96ANUN"]),
+  let y = () => g === p.l.MODAL || g === p.l.MODAL_V2 ? h.intl.string(h.t["3xjX0d"]) : t.isDM() || t.isGroupDM() ? h.intl.string(h.t["7hwn2N"]) : t.isGuildStageVoice() ? h.intl.string(h.t.Acqcoq) : h.intl.string(h.t.BXxdl5),
+    O = () => g === p.l.MODAL || g === p.l.MODAL_V2 ? h.intl.string(h.t.VJlc0d) : t.isDM() || t.isGroupDM() ? h.intl.string(h.t.ozoE2N) : t.isGuildStageVoice() ? h.intl.string(h.t["7vb2cX"]) : h.intl.string(h.t["96ANUF"]),
     v = e => {
       e.stopPropagation(), null == n || n({
         action: "PRESS_JOIN_CALL_BUTTON"

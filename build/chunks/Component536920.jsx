@@ -26,52 +26,52 @@ function j(e) {
     transitionState: n,
     clientSettingType: j,
     gameId: C
-  } = e, [y, b] = r.useState("unreported"), [k, f] = r.useState(""), [S, w] = r.useState(false), [N, z] = r.useState(false), [R, B] = r.useState(false), [H, M] = r.useState(false), P = (0, i.e7)([m.Z, u.ZP], () => {
+  } = e, [y, k] = r.useState("unreported"), [b, f] = r.useState(""), [S, w] = r.useState(false), [N, R] = r.useState(false), [Z, z] = r.useState(false), [B, H] = r.useState(false), P = (0, i.e7)([m.Z, u.ZP], () => {
     var e;
     let t = null != C ? C : null == (e = u.ZP.getCurrentGameForAnalytics()) ? true : e.id;
     return null == t ? null : m.Z.getDetectableGame(t)
-  }), Z = (0, i.e7)([x.default], () => {
+  }), A = (0, i.e7)([x.default], () => {
     var e;
     let t = null != (e = null === x.default || true === x.default ? true : x.default.getMostRecentOverlayRenderMethod()) ? e : true;
     return null != t ? h.gl[t] : true
-  }), A = r.useMemo(() => {
+  }), M = r.useMemo(() => {
     let e = {
-      not_working: g.t.CHXHFX,
-      not_useful: g.t.a95skc,
-      game_crashes_occurred: g.t.IFZ0Sa,
-      poor_performance: g.t.exRczv,
-      too_many_notifications: g.t.XuBFBM,
-      multiple_monitors: g.t.p8Ekyz,
-      in_the_way_of_game: g.t.YP7Pin,
-      other: g.t["YP/Ttl"]
+      not_working: v.t.CHXHFR,
+      not_useful: v.t.a95skZ,
+      game_crashes_occurred: v.t.IFZ0SU,
+      poor_performance: v.t.exRczs,
+      too_many_notifications: v.t.XuBFBA,
+      multiple_monitors: v.t.p8Eky8,
+      in_the_way_of_game: v.t.YP7Pio,
+      other: v.t["YP/Ttr"]
     };
     return Object.keys(e).map(t => ({
-      name: g.intl.string(e[t]),
+      name: v.intl.string(e[t]),
       value: t
     }))
-  }, []), D = async () => {
+  }, []), Y = async () => {
     var e, n, a;
-    if ("unreported" === y && 0 === k.length) {
-      B(true), await (0, s._v)(100), B(false), M(true);
+    if ("unreported" === y && 0 === b.length) {
+      z(true), await (0, s._v)(100), z(false), H(true);
       return
     }
-    w(true), await _.default.track(v.rMx.OVERLAY_DISABLED_SURVEY, {
+    w(true), await _.default.track(g.rMx.OVERLAY_DISABLED_SURVEY, {
       reason: y,
-      comment: k,
+      comment: b,
       client_setting_type: j,
       application_id: null == P ? true : P.id,
       application_name: null == P ? true : P.name,
-      most_recent_overlay_render_method: Z,
-      hardware_display_count: null != (a = await (null === c.Z || true === c.Z || null == (n = c.Z.hardware) || null == (e = n.getDisplayCount) ? true : e.call(n))) ? a : null
-    }), await (0, s._v)(1e3), w(false), z(true), await (0, s._v)(1500), t()
+      most_recent_overlay_render_method: A,
+      hardware_display_count: null != (a = await (null === d.Z || true === d.Z || null == (n = d.Z.hardware) || null == (e = n.getDisplayCount) ? true : e.call(n))) ? a : null
+    }), await (0, s._v)(1e3), w(false), R(true), await (0, s._v)(1500), t()
   };
-  return (0, d.ZP)(() => {
-    _.default.track(v.rMx.OPEN_MODAL, {
+  return (0, c.ZP)(() => {
+    _.default.track(g.rMx.OPEN_MODAL, {
       type: "overlay_disabled_questionnaire_modal"
     })
   }), (0, a.jsxs)(o.Y0X, {
     transitionState: n,
-    "aria-label": g.intl.string(g.t.bomhnX),
+    "aria-label": v.intl.string(v.t.bomhnZ),
     size: o.CgR.DYNAMIC,
     className: p.root,
     parentComponent: "OverlayDisabledSurveyModal",
@@ -81,12 +81,12 @@ function j(e) {
         children: [(0, a.jsx)(o.Heading, {
           variant: "heading-lg/semibold",
           color: "header-primary",
-          children: g.intl.string(g.t["9JKzxe"])
+          children: v.intl.string(v.t["9JKzxc"])
         }), (0, a.jsx)(o.Text, {
           variant: "text-sm/medium",
           color: "text-secondary",
           className: p.description,
-          children: g.intl.string(g.t["2yjnmb"])
+          children: v.intl.string(v.t["2yjnmZ"])
         })]
       }), (0, a.jsx)(o.olH, {
         onClick: t,
@@ -97,19 +97,19 @@ function j(e) {
       children: (0, a.jsxs)(o.Ttm, {
         children: [(0, a.jsxs)("div", {
           children: [(0, a.jsx)(o.UkV, {
-            isShaking: R,
+            isShaking: Z,
             intensity: 1,
             className: p.radioHeader,
             children: (0, a.jsx)(o.Text, {
               variant: "text-sm/semibold",
-              color: H ? "text-danger" : "text-muted",
-              children: g.intl.string(g.t.yhUvdd)
+              color: B ? "text-danger" : "text-muted",
+              children: v.intl.string(v.t.yhUvdX)
             })
           }), (0, a.jsx)(o.FXm, {
             value: y,
-            options: A,
+            options: M,
             onChange: e => {
-              b(e), M(false), B(false)
+              k(e), H(false), z(false)
             }
           })]
         }), (0, a.jsxs)("div", {
@@ -118,13 +118,13 @@ function j(e) {
             variant: "text-sm/semibold",
             color: "text-muted",
             className: p.commentHeader,
-            children: g.intl.string(g.t.LYnrhc)
+            children: v.intl.string(v.t.LYnrhY)
           }), (0, a.jsx)(o.Kx8, {
             autosize: true,
-            value: k,
+            value: b,
             maxLength: 1e3,
             showRemainingCharacterCount: false,
-            placeholder: g.intl.string(g.t["gU+bVJ"]),
+            placeholder: v.intl.string(v.t["gU+bVF"]),
             onChange: f
           })]
         })]
@@ -133,23 +133,23 @@ function j(e) {
       className: p.buttons,
       children: [(0, a.jsx)(o.Button, {
         variant: "secondary",
-        text: g.intl.string(g.t["5Wxrcd"]),
+        text: v.intl.string(v.t["5WxrcX"]),
         disabled: S,
         onClick: () => {
           t()
         }
       }), (0, a.jsx)(o.UkV, {
-        isShaking: R,
+        isShaking: Z,
         intensity: 1,
         children: (0, a.jsx)(l.zx, {
           disabled: S,
           submitting: S,
-          onClick: D,
+          onClick: Y,
           color: (() => {
             switch (true) {
               case N:
                 return l.zx.Colors.GREEN;
-              case R:
+              case Z:
                 return l.zx.Colors.PRIMARY;
               default:
                 return l.zx.Colors.BRAND
@@ -164,7 +164,7 @@ function j(e) {
                   type: o.RAz.PULSING_ELLIPSIS
                 });
               default:
-                return g.intl.string(g.t.geKm7t)
+                return v.intl.string(v.t.geKm7u)
             }
           })()
         })

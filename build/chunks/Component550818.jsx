@@ -50,16 +50,16 @@ function I(e) {
     channel: n,
     onHide: I
   } = e, S = (0, g.ZP)(t.id), E = (0, o.ZP)(), Z = (0, a.e7)([u.Z], () => u.Z.isBlocked(t.id)), {
-    analyticsLocations: P
-  } = (0, d.ZP)(Z ? c.Z.BLOCKED_PROFILE_PANEL : c.Z.IGNORED_PROFILE_PANEL), T = (0, p.ZB)({
+    analyticsLocations: T
+  } = (0, d.ZP)(Z ? c.Z.BLOCKED_PROFILE_PANEL : c.Z.IGNORED_PROFILE_PANEL), P = (0, p.ZB)({
     layout: "SIDEBAR",
     userId: t.id,
     channelId: n.id
   }), N = i.useRef(null);
   return (0, r.jsx)(d.Gt, {
-    value: P,
+    value: T,
     children: (0, r.jsx)(p.Mt, {
-      value: T,
+      value: P,
       fetchStartedAt: null == S ? true : S.fetchStartedAt,
       fetchEndedAt: null == S ? true : S.fetchEndedAt,
       isLoaded: null == S ? true : S.isLoaded,
@@ -85,10 +85,10 @@ function I(e) {
                   user: t
                 }), (0, r.jsx)(s.Heading, {
                   variant: "heading-lg/bold",
-                  children: O.intl.string(O.t.b33pLD)
+                  children: O.intl.string(O.t.b33pLC)
                 }), (0, r.jsx)(s.Text, {
                   variant: "text-sm/medium",
-                  children: O.intl.format(Z ? O.t["8F+WNz"] : O.t["/cZp5s"], {
+                  children: O.intl.format(Z ? O.t["8F+WNz"] : O.t["/cZp5u"], {
                     username: h.ZP.getName(n.guild_id, n.id, t)
                   })
                 })]
@@ -99,16 +99,16 @@ function I(e) {
                   onClick: () => {
                     I(), (0, f.pQ)(C({
                       action: Z ? "VIEW_BLOCKED_PROFILE" : "VIEW_IGNORED_PROFILE",
-                      analyticsLocations: P
-                    }, T))
+                      analyticsLocations: T
+                    }, P))
                   }
                 }), (0, r.jsx)(y.Z, {
                   userId: t.id,
                   onClick: () => {
                     I(), (0, f.pQ)(C({
                       action: "DONT_SHOW_AGAIN_IGNORED_PROFILE",
-                      analyticsLocations: P
-                    }, T))
+                      analyticsLocations: T
+                    }, P))
                   }
                 })]
               })]

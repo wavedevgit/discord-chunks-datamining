@@ -17,9 +17,9 @@ let l = e => {
       hasSentAtLeastOne: n,
       helpdeskArticle: r
     } = e;
-    return t ? s.intl.format(s.t["TYu+MH"], {
+    return t ? s.intl.format(s.t["TYu+MD"], {
       helpdeskArticle: r
-    }) : s.intl.format(s.t["omMr+V"], {
+    }) : s.intl.format(s.t["omMr+f"], {
       helpdeskArticle: r
     })
   },

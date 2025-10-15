@@ -52,21 +52,21 @@ function u(t) {
     }
     return t
   }({}, b), r = r = {
-    title: s.intl.string(s.t.S2eoq8),
+    title: s.intl.string(s.t.S2eoq6),
     actions: [{
       variant: "secondary",
-      text: s.intl.string(s.t["ETE/oC"]),
+      text: s.intl.string(s.t["ETE/oK"]),
       onClick: b.onClose
     }, {
       variant: "critical-primary",
-      text: s.intl.string(s.t.N86XcP),
+      text: s.intl.string(s.t.N86XcH),
       onClick: u
     }],
     children: (0, n.jsx)(c.Text, {
       variant: "text-sm/normal",
-      children: null != O ? s.intl.format(s.t["1KT3Fp"], {
+      children: null != O ? s.intl.format(s.t["1KT3Fh"], {
         channelName: f
-      }) : s.intl.string(s.t.VOPUVy)
+      }) : s.intl.string(s.t.VOPUV1)
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : (function(t, e) {
     var r = Object.keys(t);

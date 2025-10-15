@@ -30,7 +30,7 @@ let x = e => {
     children: [(0, r.jsx)(s.Heading, {
       className: b.heading,
       variant: "heading-xl/semibold",
-      children: h.intl.string(h.t["3x1PFE"])
+      children: h.intl.string(h.t["3x1PFB"])
     }), (0, r.jsx)(s.Text, {
       variant: "text-md/normal",
       children: function(e) {
@@ -50,7 +50,7 @@ let x = e => {
           }, t),
           freeSubscriptionCount: f.cb,
           discountPercent: (0, g.T3)(n, f.Rr / 100)
-        }) : m.ZP.isPremium(t, f.PremiumTypes.TIER_1) ? h.intl.format(h.t.nQLVBF, {
+        }) : m.ZP.isPremium(t, f.PremiumTypes.TIER_1) ? h.intl.format(h.t.nQLVBA, {
           price: c,
           originalPrice: d,
           originalPriceHook: (e, t) => (0, r.jsx)("span", {
@@ -58,7 +58,7 @@ let x = e => {
             children: e
           }, t),
           discountPercent: (0, g.T3)(n, f.Rr / 100)
-        }) : h.intl.format(h.t.Mmf63F, {
+        }) : h.intl.format(h.t.Mmf63N, {
           price: c
         })
       }({

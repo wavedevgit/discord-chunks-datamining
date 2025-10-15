@@ -19,7 +19,7 @@ function d(e) {
     product: n,
     isDarkText: i = false,
     isOrbExclusive: d = false
-  } = e, m = (t = n.type, d ? c.intl.string(c.t["0TmQRG"]) : (0, a.EQ)(t).with(o.Z.AVATAR_DECORATION, () => c.intl.string(c.t["7v0T9P"])).with(o.Z.PROFILE_EFFECT, () => c.intl.string(c.t.wR5wOo)).otherwise(() => null));
+  } = e, m = (t = n.type, d ? c.intl.string(c.t["0TmQRE"]) : (0, a.EQ)(t).with(o.Z.AVATAR_DECORATION, () => c.intl.string(c.t["7v0T9P"])).with(o.Z.PROFILE_EFFECT, () => c.intl.string(c.t.wR5wOj)).otherwise(() => null));
   return null === m ? null : (0, r.jsx)(s.Text, {
     variant: "text-xxs/normal",
     className: l()([u.container, i ? u.darkText : u.lightText]),

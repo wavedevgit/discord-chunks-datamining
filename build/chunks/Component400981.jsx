@@ -32,7 +32,7 @@ function m(e) {
       align: c.Z.Align.CENTER,
       "data-migration-pending": true,
       children: (0, r.jsxs)("div", {
-        className: h.promotionalFooter,
+        className: f.promotionalFooter,
         children: [(0, r.jsx)(l.Xo$, {
           "aria-label": null == x ? true : x.username,
           size: b,
@@ -46,7 +46,7 @@ function m(e) {
               product: n,
               shouldShowPromotionalExperience: true,
               analyticsLocations: j,
-              purchaseType: f.o8.PROMOTIONAL
+              purchaseType: h.o8.PROMOTIONAL
             })
           }
         })]

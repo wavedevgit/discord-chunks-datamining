@@ -94,7 +94,7 @@ let S = Chunk647438.memo(function(e) {
       application: null == e ? true : e.application,
       username: null == R ? true : R.nick
     }));
-    else if (e.type === x.uaV.GUILD_DEADCHAT_REVIVE_PROMPT) return "" !== e.content ? e.content : O.intl.string(O.t.wnn1Dc);
+    else if (e.type === x.uaV.GUILD_DEADCHAT_REVIVE_PROMPT) return "" !== e.content ? e.content : O.intl.string(O.t.wnn1DQ);
     if (null != e.content && "" !== e.content) {
       let t = {
           formatInline: true,
@@ -121,17 +121,17 @@ let S = Chunk647438.memo(function(e) {
   } = (0, l.cj)([m.Z], () => ({
     isReplyAuthorBlocked: null != M && m.Z.isBlockedForMessage(M),
     isReplyAuthorIgnored: null != M && m.Z.isIgnoredForMessage(M)
-  }), [M]), V = (0, v.wq)(null == M ? true : M.author.id, P.id), F = (0, v.$3)(n, M), G = (0, v.Wl)(M, P, Z, N), W = (0, v.rY)(T, N), z = r.useCallback(() => {
+  }), [M]), V = (0, v.wq)(null == M ? true : M.author.id, P.id), F = (0, v.$3)(n, M), G = (0, v.Wl)(M, P, Z, N), z = (0, v.rY)(T, N), W = r.useCallback(() => {
     N({
       referencedUsernameProfile: false,
       referencedAvatarProfile: false
     })
-  }, [N]), q = (0, C.Uj)(n);
+  }, [N]), K = (0, C.Uj)(n);
   return (0, i.jsx)(y.Z, {
     repliedAuthor: R,
     baseMessage: n,
     channel: P,
-    baseAuthor: q,
+    baseAuthor: K,
     referencedMessage: S,
     content: U,
     compact: I,
@@ -140,11 +140,11 @@ let S = Chunk647438.memo(function(e) {
     showAvatarPopout: T,
     showUsernamePopout: Z,
     renderPopout: _.Z,
-    onClickAvatar: W,
+    onClickAvatar: z,
     onClickUsername: G,
     onClickReply: F,
     onContextMenu: V,
-    onPopoutRequestClose: z,
+    onPopoutRequestClose: W,
     isReplySpineClickable: A,
     showReplySpine: w
   })

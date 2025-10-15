@@ -26,12 +26,12 @@ var Chunk951288 = require("./951288.js"),
 let y = [{
   value: Chunk46140.cd.DESKTOP,
   get label() {
-    return Chunk388032.intl.string(Chunk388032.t["QXc01+"])
+    return Chunk388032.intl.string(Chunk388032.t.QXc019)
   }
 }, {
   value: Chunk46140.cd.CONSOLE,
   get label() {
-    return Chunk388032.intl.string(Chunk388032.t["8lAfuB"])
+    return Chunk388032.intl.string(Chunk388032.t["8lAfuL"])
   }
 }];
 
@@ -41,10 +41,10 @@ function E(e) {
   } = e;
   switch (s) {
     case j.cd.DESKTOP:
-      n = (0, r.jsx)(l.pzj, {}), t = v.intl.string(v.t["QXc01+"]);
+      n = (0, r.jsx)(l.pzj, {}), t = v.intl.string(v.t.QXc019);
       break;
     case j.cd.CONSOLE:
-      n = (0, r.jsx)(l.iWm, {}), t = v.intl.string(v.t["8lAfuB"]);
+      n = (0, r.jsx)(l.iWm, {}), t = v.intl.string(v.t["8lAfuL"]);
       break;
     default:
       return null
@@ -61,12 +61,12 @@ function O(e) {
     case j.cd.DESKTOP:
       return (0, r.jsxs)("span", {
         className: C.platformSelectorPrimaryLabel,
-        children: [(0, r.jsx)(l.pzj, {}), v.intl.string(v.t.g6Dr44)]
+        children: [(0, r.jsx)(l.pzj, {}), v.intl.string(v.t["g6Dr4+"])]
       });
     case j.cd.CONSOLE:
       return (0, r.jsxs)("span", {
         className: C.platformSelectorPrimaryLabel,
-        children: [(0, r.jsx)(l.iWm, {}), v.intl.string(v.t.iyNbj5)]
+        children: [(0, r.jsx)(l.iWm, {}), v.intl.string(v.t.iyNbj4)]
       });
     default:
       return (0, d.vE)(e[0].value)
@@ -79,36 +79,36 @@ function S(e) {
     quest: w,
     questContent: P,
     onReceiveErrorHints: N,
-    contentPosition: A,
-    rowIndex: R,
+    contentPosition: R,
+    rowIndex: A,
     sourceQuestContent: B
   } = e, k = (0, a.e7)([c.Z], () => c.Z.useReducedMotion), I = (0, b.g2)({
     useReducedMotion: k
-  }), D = (0, u.O5)(), q = (0, m._s)({
+  }), q = (0, u.O5)(), D = (0, m._s)({
     quest: w
-  }), L = (0, m.z)(w), Q = (0, m.B6)(w.config.expiresAt, {
+  }), L = (0, m.z)(w), V = (0, m.B6)(w.config.expiresAt, {
     month: "numeric",
     day: "numeric"
   }), {
-    isClaiming: V,
+    isClaiming: Q,
     isEnrolling: M,
     isQuestEnrollmentBlocked: Z
   } = (0, a.cj)([g.Z], () => ({
     isClaiming: g.Z.isClaimingReward(w.id) || g.Z.isFetchingRewardCode(w.id),
     isEnrolling: g.Z.isEnrolling(w.id),
     isQuestEnrollmentBlocked: null != g.Z.questEnrollmentBlockedUntil
-  })), W = (null == (t = w.userStatus) ? true : t.enrolledAt) != null, H = (null == (n = w.userStatus) ? true : n.completedAt) != null, U = H && (null == (S = w.userStatus) ? true : S.claimedAt) == null, F = (0, p.iQ)(w), K = !(0, p.zi)(w), z = (0, m._Q)(w), G = (0, p.Xv)(w.config), X = (0, p.PB)(w), Y = (0, p.HJ)(w), J = (0, p.Vl)(w), $ = (0, m.Rf)(w), [ee, et, en] = (0, m.me)(w, $), er = K && z === m.OH.ACCEPTED, es = er && ee === f.LI.SELECT, ea = er && !es && et.length > 1, eo = s.useCallback(e => {
+  })), W = (null == (t = w.userStatus) ? true : t.enrolledAt) != null, H = (null == (n = w.userStatus) ? true : n.completedAt) != null, U = H && (null == (S = w.userStatus) ? true : S.claimedAt) == null, F = (0, p.iQ)(w), z = !(0, p.zi)(w), K = (0, m._Q)(w), G = (0, p.Xv)(w.config), X = (0, p.PB)(w), Y = (0, p.HJ)(w), J = (0, p.Vl)(w), $ = (0, m.Rf)(w), [ee, et, en] = (0, m.me)(w, $), er = z && K === m.OH.ACCEPTED, es = er && ee === f.LI.SELECT, ea = er && !es && et.length > 1, eo = s.useCallback(e => {
     en(e), e === j.cd.DESKTOP && N([])
   }, [en, N]), {
     text: ei,
     onClick: el
   } = (0, b.Ks)({
-    progressState: z,
+    progressState: K,
     quest: w,
     questContent: P,
     isCollectibleQuest: G,
-    questContentPosition: A,
-    questContentRowIndex: R,
+    questContentPosition: R,
+    questContentRowIndex: A,
     inGiftInventory: true,
     isVideoQuest: X,
     inGameQuest: J,
@@ -119,12 +119,12 @@ function S(e) {
   } = (0, m.GI)({
     questId: w.id,
     beforeRequest: () => {
-      I.startAnimation(), D({
+      I.startAnimation(), q({
         questId: w.id,
         questContent: P,
         questContentCTA: u.jZ.DEFIBRILLATOR,
-        questContentPosition: A,
-        questContentRowIndex: R,
+        questContentPosition: R,
+        questContentRowIndex: A,
         sourceQuestContent: B
       })
     },
@@ -144,7 +144,7 @@ function S(e) {
     className: C.button,
     children: (0, r.jsx)(o.zxk, {
       variant: "primary",
-      loading: V,
+      loading: Q,
       onClick: null != el ? el : true,
       text: ei,
       fullWidth: true
@@ -155,7 +155,7 @@ function S(e) {
     children: [(0, r.jsx)(o.zxk, {
       variant: "secondary",
       icon: l.Oe7,
-      text: v.intl.string(v.t.YsCuyF),
+      text: v.intl.string(v.t.YsCuyM),
       onClick: () => {
         (0, _.openVideoQuestModal)({
           quest: w,
@@ -193,11 +193,11 @@ function S(e) {
       text: ei,
       fullWidth: true
     })
-  }) : K ? K && U ? ef = (0, r.jsx)("div", {
+  }) : z ? z && U ? ef = (0, r.jsx)("div", {
     className: C.button,
     children: (0, r.jsx)(o.zxk, {
       variant: "primary",
-      loading: V,
+      loading: Q,
       onClick: null != el ? el : true,
       text: ei,
       fullWidth: true
@@ -216,29 +216,29 @@ function S(e) {
     children: (0, r.jsx)(o.zxk, {
       variant: "secondary",
       disabled: true,
-      text: v.intl.string(v.t.BkZhUI),
+      text: v.intl.string(v.t.BkZhUF),
       fullWidth: true
     })
-  }) : K && W && !ep ? ef = es ? (0, r.jsx)(l.PhF, {
+  }) : z && W && !ep ? ef = es ? (0, r.jsx)(l.PhF, {
     className: C.platformSelectorPrimary,
     isSelected: () => false,
     options: y,
-    placeholder: v.intl.string(v.t.drVw4T),
+    placeholder: v.intl.string(v.t.drVw4e),
     renderOptionLabel: E,
     renderOptionValue: O,
     select: eo,
     serialize: e => {
       switch (e) {
         case j.cd.DESKTOP:
-          return v.intl.string(v.t["QXc01+"]);
+          return v.intl.string(v.t.QXc019);
         case j.cd.CONSOLE:
-          return v.intl.string(v.t["8lAfuB"]);
+          return v.intl.string(v.t["8lAfuL"]);
         default:
           return (0, d.vE)(e)
       }
     },
     size: "sm"
-  }) : (0, p.$J)(w) && !L && ee !== f.LI.DESKTOP ? q ? (0, r.jsx)("div", {
+  }) : (0, p.$J)(w) && !L && ee !== f.LI.DESKTOP ? D ? (0, r.jsx)("div", {
     className: C.button,
     children: (0, r.jsx)(o.zxk, {
       variant: "secondary",
@@ -254,7 +254,7 @@ function S(e) {
     className: C.button,
     children: (0, r.jsxs)("div", {
       className: C.ctaInner,
-      children: [I.render(), v.intl.string(v.t.nPThNb)]
+      children: [I.render(), v.intl.string(v.t.nPThNT)]
     })
   }) : X ? (0, r.jsx)("div", {
     className: C.button,
@@ -278,20 +278,20 @@ function S(e) {
     children: (0, r.jsx)(o.zxk, {
       variant: "secondary",
       disabled: true,
-      text: v.intl.string(v.t["9KoPyB"]),
+      text: v.intl.string(v.t["9KoPyM"]),
       fullWidth: true
     })
-  }) : K && !W && (ef = Z ? (0, r.jsxs)(o.hE2, {
+  }) : z && !W && (ef = Z ? (0, r.jsxs)(o.hE2, {
     direction: "horizontal",
     fullWidth: true,
     children: [(0, r.jsx)(o.zxk, {
       variant: "secondary",
       disabled: true,
-      text: v.intl.string(v.t.V293qn)
+      text: v.intl.string(v.t.V293qq)
     }), (0, r.jsx)(o.zxk, {
       variant: "primary",
       onClick: () => (0, _.openQuestMinorEnrollmentBlockModal)(w, P, B),
-      text: v.intl.string(v.t.vY9GgG)
+      text: v.intl.string(v.t.vY9GgI)
     })]
   }) : (0, r.jsx)("div", {
     className: C.button,
@@ -308,8 +308,8 @@ function S(e) {
     children: (0, r.jsx)(o.zxk, {
       variant: "secondary",
       disabled: true,
-      text: v.intl.format(v.t["14o6QY"], {
-        expiryDate: Q
+      text: v.intl.format(v.t["14o6QU"], {
+        expiryDate: V
       }),
       fullWidth: true
     })
@@ -333,16 +333,16 @@ function S(e) {
           }
         },
         options: y,
-        placeholder: v.intl.string(v.t.drVw4T),
+        placeholder: v.intl.string(v.t.drVw4e),
         renderOptionLabel: E,
         renderOptionValue: O,
         select: eo,
         serialize: e => {
           switch (e) {
             case j.cd.DESKTOP:
-              return v.intl.string(v.t["QXc01+"]);
+              return v.intl.string(v.t.QXc019);
             case j.cd.CONSOLE:
-              return v.intl.string(v.t["8lAfuB"])
+              return v.intl.string(v.t["8lAfuL"])
           }
         },
         size: "sm"

@@ -32,16 +32,16 @@ function p() {
     })
   }, [module]), h = [{
     value: Chunk345655._.VOICE_ISOLATION,
-    name: Chunk388032.intl.string(Chunk388032.t.cjPbpT),
-    desc: Chunk388032.intl.string(Chunk388032.t.CzhvnE)
+    name: Chunk388032.intl.string(Chunk388032.t.cjPbpa),
+    desc: Chunk388032.intl.string(Chunk388032.t.CzhvnJ)
   }, {
     value: Chunk345655._.STUDIO,
-    name: Chunk388032.intl.string(Chunk388032.t.VZPR0R),
-    desc: Chunk388032.intl.string(Chunk388032.t.ZaJksS)
+    name: Chunk388032.intl.string(Chunk388032.t.VZPR0d),
+    desc: Chunk388032.intl.string(Chunk388032.t.ZaJksb)
   }, {
     value: Chunk345655._.CUSTOM,
-    name: Chunk388032.intl.string(Chunk388032.t["N/PQjv"]),
-    desc: Chunk388032.intl.string(Chunk388032.t.SnBmuY)
+    name: Chunk388032.intl.string(Chunk388032.t["N/PQjo"]),
+    desc: Chunk388032.intl.string(Chunk388032.t.SnBmub)
   }].filter(e => {
     let {
       value: t
@@ -51,7 +51,7 @@ function p() {
   return (0, Chunk951288.jsx)("div", {
     className: Chunk197571.marginBottom20,
     children: (0, Chunk951288.jsx)(Chunk538534.E, {
-      label: Chunk388032.intl.string(Chunk388032.t.LM3U3k),
+      label: Chunk388032.intl.string(Chunk388032.t.LM3U3t),
       onChange: e => p({
         value: e
       }),

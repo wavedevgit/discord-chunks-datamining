@@ -33,10 +33,10 @@ let v = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     location: s.Z.GROUP_DM_CONTEXT_MENU
   }), w = (0, g.Z)(t, a), _ = (0, u.Z)({
     id: t.id,
-    label: P.intl.string(P.t.gFHI3k)
-  }), E = (0, c.Z)(t), S = (0, d.l)(t), x = (0, d.P)(t), k = (0, f.Z)(t), C = j ? (0, r.jsx)(i.sNh, {
+    label: P.intl.string(P.t.gFHI3t)
+  }), x = (0, c.Z)(t), E = (0, d.l)(t), S = (0, d.P)(t), C = (0, f.Z)(t), N = j ? (0, r.jsx)(i.sNh, {
     id: "instant-invites",
-    label: P.intl.string(P.t.ngRFjZ),
+    label: P.intl.string(P.t.ngRFjY),
     action: () => (0, i.ZDy)(async () => {
       let {
         default: e
@@ -65,24 +65,24 @@ let v = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
   }) : null;
   return null == t || t.isManaged() ? null : (0, r.jsxs)(i.v2r, {
     navId: "gdm-context",
-    "aria-label": P.intl.string(P.t.Xm41aV),
+    "aria-label": P.intl.string(P.t.Xm41aW),
     onClose: l.Zy,
     onSelect: o,
     children: [(0, r.jsxs)(i.kSQ, {
-      children: [v, S, k]
+      children: [v, E, C]
     }), (0, r.jsxs)(i.kSQ, {
-      children: [!Z && C, (0, r.jsx)(i.sNh, {
+      children: [!Z && N, (0, r.jsx)(i.sNh, {
         id: "edit-gdm",
-        label: P.intl.string(P.t["5Q9+/L"]),
+        label: P.intl.string(P.t["5Q9+/P"]),
         action: () => (0, O.B)(t.id, s.Z.GROUP_DM_CONTEXT_MENU),
-        subtext: Z ? P.intl.string(P.t.pPwcQa) : true
-      }), Z && C]
+        subtext: Z ? P.intl.string(P.t.pPwcQU) : true
+      }), Z && N]
     }), (0, r.jsx)(i.kSQ, {
-      children: E
+      children: x
     }), (0, r.jsx)(i.kSQ, {
       children: !Z && m
     }), (0, r.jsxs)(i.kSQ, {
-      children: [Z && m, x, w]
+      children: [Z && m, S, w]
     }), (0, r.jsx)(i.kSQ, {
       children: _
     })]

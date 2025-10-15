@@ -180,13 +180,13 @@ class em extends Chunk647438.PureComponent {
       color: f.r6K.BRAND,
       position: "bottom",
       shouldShow: !e && !i,
-      text: es.intl.string(es.t.sFSrFH),
-      "aria-label": es.intl.string(es.t.sFSrFH),
+      text: es.intl.string(es.t.sFSrFB),
+      "aria-label": es.intl.string(es.t.sFSrFB),
       children: () => this.renderGuildHeaderDropdownButton(e)
     }) : i || e ? this.renderGuildHeaderDropdownButton(e) : l ? (0, r.jsxs)(r.Fragment, {
       children: [this.renderGuildHeaderDropdownButton(e), (0, r.jsx)(p.J2, {
         targetElementRef: this.guildHeaderDropdownButtonRef,
-        title: es.intl.string(es.t.Q3qa4x),
+        title: es.intl.string(es.t["Q3qa4+"]),
         body: es.intl.string(es.t.UyHD4O),
         onRequestClose: this.handleCloseSubscribeTooltip,
         position: "bottom",
@@ -321,7 +321,7 @@ class em extends Chunk647438.PureComponent {
     return (0, Chunk951288.jsxs)("nav", {
       className: Chunk971606.container,
       onContextMenu: this.handleContextMenu,
-      "aria-label": Chunk388032.intl.formatToPlainString(Chunk388032.t.nj5gAZ, {
+      "aria-label": Chunk388032.intl.formatToPlainString(Chunk388032.t.nj5gAQ, {
         guildName: null != (e = null == exports ? true : exports.name) ? module : ""
       }),
       children: [null != exports && this.renderGuildHeader(this.state.hasGuildSubheader), null != exports && (0, Chunk951288.jsx)(Chunk156978.Z, {
@@ -475,10 +475,10 @@ function eb(e) {
   (0, b.J_)(n);
   let d = (0, C.Z)(n),
     p = (0, c.e7)([B.Z], () => B.Z.getGuildDimensions(n).scrollTo),
-    h = (0, c.e7)([K.Z], () => K.Z.getChannelId()),
+    h = (0, c.e7)([q.Z], () => q.Z.getChannelId()),
     g = (0, c.e7)([W.Z], () => W.Z.can(ei.Plq.MANAGE_GUILD, o)),
     m = (0, c.e7)([H.Z], () => H.Z.isUnavailable(n)),
-    P = (0, c.e7)([q.default], () => q.default.getCurrentUser()),
+    P = (0, c.e7)([K.default], () => K.default.getCurrentUser()),
     {
       enableStudyGroup: Z
     } = (0, A.s)(o),
@@ -498,7 +498,7 @@ function eb(e) {
   let eE = (0, I.Nj)(u.z.PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP),
     ev = (0, L.Z)(n),
     ey = (0, N.Z)(n),
-    eI = (0, c.e7)([K.Z], () => K.Z.getChannelId()),
+    eI = (0, c.e7)([q.Z], () => q.Z.getChannelId()),
     eC = (0, c.e7)([Y.Z], () => Y.Z.desyncedVoiceStatesCount),
     eS = (0, D.Z)(n);
   return (0, r.jsx)(em, {

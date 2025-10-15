@@ -17,15 +17,15 @@ let u = () => (0, Chunk951288.jsx)(Chunk388905.ZP, {
     className: Chunk820796.contentContainer,
     children: [(0, Chunk951288.jsx)(Chunk388905.Dx, {
       className: Chunk820796.title,
-      children: Chunk388032.intl.string(Chunk388032.t.nCB6Ga)
+      children: Chunk388032.intl.string(Chunk388032.t.nCB6GR)
     }), (0, Chunk951288.jsx)(Chunk388905.DK, {
       className: Chunk820796.subtitle,
-      children: Chunk388032.intl.format(Chunk388032.t.KQgoxG, {
-        underageMessage: Chunk388032.intl.string(Chunk388032.t.WqEH4D)
+      children: Chunk388032.intl.format(Chunk388032.t.KQgoxM, {
+        underageMessage: Chunk388032.intl.string(Chunk388032.t.WqEH4O)
       })
     }), (0, Chunk951288.jsx)(Chunk481060.Button, {
       icon: Chunk481060.Gr1,
-      text: Chunk388032.intl.string(Chunk388032.t.hvVgAZ),
+      text: Chunk388032.intl.string(Chunk388032.t.hvVgAQ),
       onClick: () => window.open(Chunk63063.Z.getArticleURL(Chunk981631.BhN.AGE_GATE), "_blank"),
       iconPosition: "end"
     })]

@@ -26,7 +26,7 @@ let f = (0, Chunk804739.Q)() || false,
         icon: l.vqy,
         "aria-hidden": true
       }), (0, r.jsx)(a.Z.Title, {
-        children: d.intl.string(d.t.cw57ar)
+        children: d.intl.string(d.t.cw57am)
       }), (0, r.jsx)(a.Z.Divider, {}), (0, r.jsxs)(l.njP, {
         type: "top-pill",
         selectedItem: t,
@@ -69,10 +69,10 @@ let f = (0, Chunk804739.Q)() || false,
         },
         children: [(0, r.jsx)(l.njP.Item, {
           id: u.Z5c.APPLICATION_LIBRARY,
-          children: d.intl.string(d.t.p7ARTB)
+          children: d.intl.string(d.t.p7ARTE)
         }), h ? (0, r.jsx)(l.njP.Item, {
           id: u.Z5c.APPLICATION_LIBRARY_SETTINGS,
-          children: d.intl.string(d.t["3D5yo/"])
+          children: d.intl.string(d.t["3D5yo6"])
         }) : null]
       })]
     })

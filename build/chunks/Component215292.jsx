@@ -26,90 +26,90 @@ function L(t) {
     onClose: L,
     onChannelPromptCompleted: x,
     isSlideReady: T
-  } = t, [E, h] = l.useState(""), [G, I] = l.useState(null), [D, y] = l.useState(false), U = (0, C.Dt)(), z = (0, a.e7)([u.Z], () => u.Z.getGuild(n), [n]), N = l.useRef(null);
+  } = t, [E, h] = l.useState(""), [I, G] = l.useState(null), [D, y] = l.useState(false), U = (0, m.Dt)(), z = (0, a.e7)([u.Z], () => u.Z.getGuild(n), [n]), f = l.useRef(null);
   l.useEffect(() => {
     var t;
-    T && (null == (t = N.current) || t.focus())
+    T && (null == (t = f.current) || t.focus())
   }, [T]);
-  let f = l.useCallback(async t => {
+  let j = l.useCallback(async t => {
       if (t.preventDefault(), null == z) return;
-      y(true), I(null);
+      y(true), G(null);
       let n = p.ZP.getDefaultChannel(z.id);
       try {
-        let t = g.intl.formatToPlainString(g.t.V4lepJ, {
+        let t = _.intl.formatToPlainString(_.t.V4lepK, {
           topic: E
         });
         await d.Z.createTextChannel(z.id, E, null == n ? true : n.parent_id, t), x()
       } catch (t) {
-        I(new c.yZ(t))
+        G(new c.yZ(t))
       }
       y(false)
     }, [z, E, x]),
-    v = (0, i.jsxs)(i.Fragment, {
+    N = (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(r.Button, {
         variant: "primary",
-        text: g.intl.string(g.t.i4jeWR),
-        onClick: f,
+        text: _.intl.string(_.t.i4jeWV),
+        onClick: j,
         disabled: 0 === E.length,
         loading: D
       }), (0, i.jsx)(s.zx, {
-        className: _.skipButton,
+        className: g.skipButton,
         look: s.zx.Looks.BLANK,
         size: s.zx.Sizes.MIN,
         onClick: x,
-        children: g.intl.string(g.t["5Wxrcd"])
+        children: _.intl.string(_.t["5WxrcX"])
       })]
     });
   return {
     content: (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsxs)(r.xBx, {
-        className: _.header,
+        className: g.header,
         direction: o.Z.Direction.VERTICAL,
         separator: false,
-        children: [null != z && (0, i.jsx)(m.Z, {
+        children: [null != z && (0, i.jsx)(C.Z, {
           guild: z
         }), (0, i.jsx)(r.Text, {
-          className: _.guildName,
+          className: g.guildName,
           color: "header-primary",
           variant: "text-sm/semibold",
           children: null == z ? true : z.name
         }), (0, i.jsx)(r.Heading, {
-          className: _.title,
+          className: g.title,
           variant: "heading-sm/semibold",
-          children: g.intl.string(g.t["8VRa7d"])
+          children: _.intl.string(_.t["8VRa7e"])
         }), (0, i.jsx)(r.Text, {
-          className: _.subtitle,
+          className: g.subtitle,
           color: "header-secondary",
           variant: "text-md/normal",
-          children: g.intl.string(g.t["+855Pm"])
+          children: _.intl.string(_.t["+855Pj"])
         }), null != L && (0, i.jsx)(r.olH, {
-          className: _.closeButton,
+          className: g.closeButton,
           onClick: L
         })]
       }), (0, i.jsxs)(r.hzk, {
-        className: _.channelPrompt,
+        className: g.channelPrompt,
         children: [(0, i.jsx)("form", {
-          onSubmit: f,
+          onSubmit: j,
           children: (0, i.jsx)(r.oil, {
-            label: g.intl.string(g.t.bY20tU),
-            error: null == G ? true : G.getFieldMessage("name"),
+            label: _.intl.string(_.t.bY20tb),
+            error: null == I ? true : I.getFieldMessage("name"),
             type: "text",
             value: E,
             id: U,
             onChange: h,
-            placeholder: g.intl.string(g.t.xGOYA8),
-            inputRef: N
+            placeholder: _.intl.string(_.t.xGOYAw),
+            inputRef: f
           })
-        }), null != G && 0 === Object.keys(G.fields).length && (0, i.jsx)(r.Text, {
+        }), null != I && 0 === Object.keys(I.fields).length && (0, i.jsx)(r.Text, {
           variant: "text-xs/normal",
           color: "text-danger",
-          children: G.message
+          children: I.message
         })]
       }), e && (0, i.jsx)(r.mzw, {
-        children: v
+        children: N
       })]
     }),
-    footer: v
+    footer: N
   }
 }
 

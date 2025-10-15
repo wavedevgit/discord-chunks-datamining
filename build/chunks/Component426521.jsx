@@ -79,8 +79,8 @@ function L(e) {
 function M(e) {
   let {
     item: t
-  } = e, n = R, i = w.intl.string(w.t.SJTHJb);
-  return t.completed && (n = A, i = w.intl.string(w.t.f6RTAM)), (0, r.jsxs)("div", {
+  } = e, n = R, i = w.intl.string(w.t.SJTHJS);
+  return t.completed && (n = A, i = w.intl.string(w.t.f6RTAA)), (0, r.jsxs)("div", {
     className: T.lifecycleContainer,
     children: [(0, r.jsx)("img", {
       className: T.checkbox,

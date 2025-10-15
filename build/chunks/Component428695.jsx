@@ -86,7 +86,7 @@ let g = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
           }), null == y || y()
         },
         className: h.close,
-        "aria-label": f.intl.string(f.t.WAI6xu),
+        "aria-label": f.intl.string(f.t.WAI6xs),
         children: (0, r.jsx)(c.Dio, {
           size: "md",
           color: "currentColor",

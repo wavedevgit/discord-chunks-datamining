@@ -48,10 +48,10 @@ function N(e) {
 let E = function(e, t, n) {
     let r = arguments.length > 3 && true !== arguments[3] && arguments[3],
       i = null;
-    return null == t || Number.isNaN(t) ? (null == t || Number.isNaN(t)) && null != e && (i = O.intl.string(O.t.xO2msf)) : i = O.intl.formatToPlainString(O.t.nskeMw, {
+    return null == t || Number.isNaN(t) ? (null == t || Number.isNaN(t)) && null != e && (i = O.intl.string(O.t.xO2msb)) : i = O.intl.formatToPlainString(O.t.nskeMz, {
       percentage: (0, a.o)(Math.abs(t), n)
     }), {
-      localizedNumber: null != e ? "".concat((0, a.o)(e, n)).concat(r ? "%" : "") : O.intl.string(O.t.jHpxwo),
+      localizedNumber: null != e ? "".concat((0, a.o)(e, n)).concat(r ? "%" : "") : O.intl.string(O.t.jHpxws),
       subtext: i,
       isTrendingUp: t > 0,
       isTrendingDown: t < 0
@@ -63,11 +63,11 @@ let E = function(e, t, n) {
       className: y.notEnoughMembersError,
       children: (0, r.jsx)(c.M14, {
         type: "info",
-        children: O.intl.string(O.t["FsgE/B"])
+        children: O.intl.string(O.t["FsgE/P"])
       })
     }) : null == e ? null : (0, r.jsx)(c.M14, {
       type: "critical",
-      children: O.intl.string(O.t.Iju63e)
+      children: O.intl.string(O.t.Iju63d)
     })
   },
   S = () => {
@@ -77,7 +77,7 @@ let E = function(e, t, n) {
       className: Chunk503562.developerPortalCta,
       children: (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "primary",
-        text: Chunk388032.intl.string(Chunk388032.t.Uskgxx),
+        text: Chunk388032.intl.string(Chunk388032.t.Uskgx8),
         onClick: () => {
           exports(true), (function(e) {
             b.default.track(_.rMx.GUILD_INSIGHTS_SETTINGS_CTA_CLICKED, {
@@ -130,26 +130,26 @@ let E = function(e, t, n) {
       children: (0, Chunk951288.jsxs)("div", {
         className: Chunk503562.overviewData,
         children: [(0, Chunk951288.jsx)(Chunk841470.Z, N({
-          title: Chunk388032.intl.string(Chunk388032.t.i0NorT),
-          tooltipText: Chunk388032.intl.string(Chunk388032.t.KiRbLJ)
+          title: Chunk388032.intl.string(Chunk388032.t.i0Nora),
+          tooltipText: Chunk388032.intl.string(Chunk388032.t.KiRbLC)
         }, E(Chunk640358.visitors, Chunk640358.visitorsChange, Chunk772848))), (0, Chunk951288.jsx)(Chunk841470.Z, N({
-          title: Chunk388032.intl.string(Chunk388032.t.DDAHdQ),
-          tooltipText: Chunk388032.intl.string(Chunk388032.t.HxWUkU)
+          title: Chunk388032.intl.string(Chunk388032.t.DDAHdX),
+          tooltipText: Chunk388032.intl.string(Chunk388032.t.HxWUkZ)
         }, E(Chunk640358.communicators, Chunk640358.communicatorsChange, Chunk772848))), (0, Chunk951288.jsx)(Chunk841470.Z, N({
-          title: Chunk388032.intl.string(Chunk388032.t.hYeOqC)
+          title: Chunk388032.intl.string(Chunk388032.t.hYeOqK)
         }, E(Chunk640358.newMembers, Chunk640358.newMembersChange, Chunk772848))), (0, Chunk951288.jsx)(Chunk841470.Z, N({
-          title: Chunk388032.intl.string(Chunk388032.t.jj7OPw),
-          tooltipText: Chunk388032.intl.string(Chunk388032.t.MQCslz)
+          title: Chunk388032.intl.string(Chunk388032.t.jj7OPz),
+          tooltipText: Chunk388032.intl.string(Chunk388032.t.MQCsl5)
         }, E(Chunk640358.pctRetained, Chunk640358.pctRetainedChange, Chunk772848, true)))]
       })
     }) : null;
     return (0, Chunk951288.jsxs)("div", {
       children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/semibold",
-        children: Chunk388032.intl.string(Chunk388032.t["0wWfUG"])
+        children: Chunk388032.intl.string(Chunk388032.t["0wWfUF"])
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
-        children: Chunk388032.intl.format(Chunk388032.t.NIZ60a, {})
+        children: Chunk388032.intl.format(Chunk388032.t.NIZ60d, {})
       }), I(Chunk544891, T), (0, Chunk951288.jsxs)("div", {
         className: Chunk503562.developerPortalCtaWrapper,
         children: [(0, Chunk951288.jsx)("div", {
@@ -157,7 +157,7 @@ let E = function(e, t, n) {
         }), (0, Chunk951288.jsx)(Chunk481060.Text, {
           className: Chunk503562.developerPortalCtaText,
           variant: "text-sm/normal",
-          children: Chunk388032.intl.string(Chunk388032.t.A5vswv)
+          children: Chunk388032.intl.string(Chunk388032.t.A5vsws)
         }), (0, Chunk951288.jsx)(S, {})]
       }), Chunk626135 ? (0, Chunk951288.jsx)("div", {
         className: Chunk503562.streamerMode,

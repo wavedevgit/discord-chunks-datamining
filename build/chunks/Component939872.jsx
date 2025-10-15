@@ -28,7 +28,7 @@ let f = e => {
     children: [(0, r.jsx)(o.Heading, {
       className: d.confirmationHeader,
       variant: "heading-lg/extrabold",
-      children: u.intl.format(u.t.I5dYFs, {
+      children: u.intl.format(u.t.I5dYFh, {
         serverName: null == _ ? true : _.name,
         tierName: n.name
       })
@@ -36,19 +36,19 @@ let f = e => {
       className: d.confirmationSubtitle,
       variant: "text-sm/normal",
       color: "header-secondary",
-      children: u.intl.format(u.t.TnhFHv, {
+      children: u.intl.format(u.t.TnhFHh, {
         benefits: p.asString()
       })
     }), (0, r.jsxs)("div", {
       className: d.actions,
       children: [(0, r.jsx)(a.zxk, {
         variant: "primary",
-        text: u.intl.string(u.t.WWvswD),
+        text: u.intl.string(u.t.WWvswM),
         fullWidth: true,
         onClick: () => (0, s.Z)("role_sub_mweb_success_modal")
       }), (0, r.jsx)(a.zxk, {
         variant: "secondary",
-        text: u.intl.string(u.t.y84Dhr),
+        text: u.intl.string(u.t.y84Dho),
         fullWidth: true,
         onClick: () => t(true)
       })]

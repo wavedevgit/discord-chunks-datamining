@@ -20,7 +20,7 @@ function l(e) {
       className: s.finishTitle,
       color: "header-primary",
       variant: "heading-xl/bold",
-      children: o.intl.string(o.t["3C+rbC"])
+      children: o.intl.string(o.t["3C+rbG"])
     }), (0, r.jsx)(i.Text, {
       className: s.subtitleFinish,
       color: "header-secondary",
@@ -30,7 +30,7 @@ function l(e) {
       className: s.promptFinish,
       color: "header-secondary",
       variant: "text-md/medium",
-      children: o.intl.format(o.t.bWE0ZD, {
+      children: o.intl.format(o.t.bWE0ZG, {
         onClick: () => {
           t(), (0, a.openUserSettings)()
         }
@@ -41,7 +41,7 @@ function l(e) {
       children: (0, r.jsx)(i.Button, {
         variant: "primary",
         size: "sm",
-        text: o.intl.string(o.t["yD/zkn"]),
+        text: o.intl.string(o.t["yD/zkp"]),
         type: "button",
         onClick: t
       })

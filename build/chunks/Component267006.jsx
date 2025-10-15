@@ -61,7 +61,7 @@ function b() {
   return (0, Chunk951288.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_CODECS_VIDEO_EXPERIMENTAL_ENCODERS,
     children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
-      label: Chunk388032.intl.string(Chunk388032.t.AxnPm1),
+      label: Chunk388032.intl.string(Chunk388032.t.AxnPm5),
       checked: module,
       onChange: Chunk846027.Z.setExperimentalEncoders
     })
@@ -79,14 +79,14 @@ function y() {
   (0, Chunk996073.Z)(require, Chunk526761.KQ.VoiceAndVideoScrollPositions.HARDWARE_ACCELERATION);
   let h = Chunk647438.useCallback(e => {
     e ? s.Z.setHardwareEncoding(true) : (0, o.h7j)(e => (0, r.jsx)(o.ConfirmModal, E(m({
-      header: p.intl.string(p.t.mly1DB),
-      confirmText: p.intl.string(p.t.BddRzS),
-      cancelText: p.intl.string(p.t["ETE/oC"]),
+      header: p.intl.string(p.t.mly1DA),
+      confirmText: p.intl.string(p.t.BddRzc),
+      cancelText: p.intl.string(p.t["ETE/oK"]),
       onConfirm: () => s.Z.setHardwareEncoding(false)
     }, e), {
       children: (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
-        children: p.intl.format(p.t.aPStAW, {})
+        children: p.intl.format(p.t.aPStAQ, {})
       })
     })))
   }, []);
@@ -97,7 +97,7 @@ function y() {
       children: [(0, Chunk951288.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_CODECS_VIDEO_OPENH264,
         children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
-          label: Chunk388032.intl.string(Chunk388032.t["71Ve1y"]),
+          label: Chunk388032.intl.string(Chunk388032.t["71Ve19"]),
           checked: module,
           onChange: Chunk846027.Z.setOpenH264
         })
@@ -109,14 +109,14 @@ function y() {
             scrollMarginTop: "48px"
           },
           children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
-            label: Chunk388032.intl.string(Chunk388032.t.Sln58X),
+            label: Chunk388032.intl.string(Chunk388032.t.Sln58f),
             description: Chunk388032.intl.string(Chunk388032.t.P1UKqq),
             checked: exports,
             onChange: h
           })
         }), !exports && (0, Chunk951288.jsx)(Chunk494620.Z, {
           look: Chunk494620.z.WARNING,
-          children: Chunk388032.intl.string(Chunk388032.t.Uz6L6x)
+          children: Chunk388032.intl.string(Chunk388032.t["Uz6L6+"])
         })]
       }), (0, Chunk951288.jsx)(b, {})]
     })

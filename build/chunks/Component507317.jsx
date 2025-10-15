@@ -88,7 +88,7 @@ let j = function(e) {
     }) : null,
     disabled: !j,
     onChange: v,
-    hint: b.intl.string(b.t.NyXznh),
+    hint: b.intl.string(b.t.NyXznp),
     enabled: j,
     maxFileSizeBytes: h.B
   });
@@ -98,7 +98,7 @@ let j = function(e) {
       children: [(0, r.jsx)(l.Heading, {
         className: x.header,
         variant: "heading-lg/extrabold",
-        children: b.intl.string(b.t.BBj1nY)
+        children: b.intl.string(b.t.BBj1nZ)
       }), (0, r.jsx)(s.Z, {
         className: x.boostIndicator,
         guild: t,
@@ -112,13 +112,13 @@ let j = function(e) {
         children: [(0, r.jsx)(l.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
-          children: b.intl.string(b.t.Vwintv)
+          children: b.intl.string(b.t.Vwintr)
         }), (0, r.jsx)("div", {
           className: x.uploadButton,
           children: (0, r.jsx)(d.Z, {
             onChange: v,
             maxFileSizeBytes: h.B,
-            text: b.intl.string(b.t.yG2pUi),
+            text: b.intl.string(b.t.yG2pUl),
             size: "md",
             variant: "primary"
           })
@@ -133,7 +133,7 @@ let j = function(e) {
       children: [(0, r.jsx)(l.Heading, {
         className: x.header,
         variant: "heading-lg/extrabold",
-        children: b.intl.string(b.t.BBj1nY)
+        children: b.intl.string(b.t.BBj1nZ)
       }), (0, r.jsx)(s.Z, {
         className: x.boostIndicator,
         guild: t,
@@ -148,11 +148,11 @@ let j = function(e) {
           variant: "text-sm/normal",
           color: "header-secondary",
           className: x.bannerDescription,
-          children: b.intl.string(b.t.Vwintv)
+          children: b.intl.string(b.t.Vwintr)
         }), (0, r.jsx)(l.Button, {
           variant: "expressive",
           icon: l.Ucv,
-          text: b.intl.string(b.t["+7XY31"]),
+          text: b.intl.string(b.t["+7XY39"]),
           onClick: _
         })]
       }), (0, r.jsx)("div", {

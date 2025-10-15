@@ -71,9 +71,9 @@ async function R(e, t, n) {
   } catch (t) {
     let e = new g.Z(t);
     (0, d.h7j)(t => (0, r.jsx)(s.Modal, Z(w({}, t), {
-      title: S.intl.string(S.t.R0RpRX),
+      title: S.intl.string(S.t.R0RpRU),
       actions: [{
-        text: S.intl.string(S.t.BddRzS),
+        text: S.intl.string(S.t.BddRzc),
         variant: "primary",
         onClick: t.onClose
       }],
@@ -101,17 +101,17 @@ function D(e) {
       if (e.shiftKey) return void R(t, l, o);
       let n = _.Z.getRole(o);
       (0, d.h7j)(e => (0, r.jsx)(s.Modal, Z(w({}, e), {
-        title: S.intl.string(S.t["7sFNfW"]),
-        subtitle: S.intl.format(S.t.scORUv, {
+        title: S.intl.string(S.t["7sFNfX"]),
+        subtitle: S.intl.format(S.t.scORUl, {
           username: t.name,
           roleName: null == n ? true : n.name
         }),
         actions: [{
-          text: S.intl.string(S.t["ETE/oC"]),
+          text: S.intl.string(S.t["ETE/oK"]),
           variant: "secondary",
           onClick: e.onClose
         }, {
-          text: S.intl.string(S.t.N86XcP),
+          text: S.intl.string(S.t.N86XcH),
           variant: "critical-primary",
           onClick: () => {
             R(t, l, o), e.onClose()
@@ -121,7 +121,7 @@ function D(e) {
           className: T.removeTip,
           color: "text-muted",
           variant: "text-md/normal",
-          children: S.intl.string(S.t.jxIxJL)
+          children: S.intl.string(S.t.jxIxJC)
         })
       })))
     }
@@ -162,7 +162,7 @@ function D(e) {
         }), (0, r.jsx)("div", {
           className: T.removeButtonContainer,
           children: (0, r.jsx)(c.u, {
-            text: g ? S.intl.string(S.t.wkrQaK) : S.intl.string(S.t["7sFNfW"]),
+            text: g ? S.intl.string(S.t.wkrQaG) : S.intl.string(S.t["7sFNfX"]),
             position: "top",
             children: (0, r.jsx)(d.P3F, {
               className: a()(T.removeButton, {
@@ -197,7 +197,7 @@ function A(e) {
         className: T.emptyRowText,
         variant: "text-sm/semibold",
         color: "text-muted",
-        children: S.intl.format(S.t.P9pZOW, {
+        children: S.intl.format(S.t.P9pZOT, {
           addMembersHook: function(e, i) {
             return n ? null : (0, r.jsx)(d.Anchor, {
               onClick: t,
@@ -275,14 +275,14 @@ function k(e) {
       query: t,
       onChange: n,
       onClear: () => n(""),
-      placeholder: S.intl.string(S.t.pYHobK),
-      "aria-label": S.intl.string(S.t.pYHobK)
+      placeholder: S.intl.string(S.t.pYHobG),
+      "aria-label": S.intl.string(S.t.pYHobG)
     }), (0, r.jsx)(d.Button, {
       onClick: l,
       variant: "primary",
       size: "sm",
       disabled: i,
-      text: S.intl.string(S.t.cHszXg)
+      text: S.intl.string(S.t.cHszXl)
     })]
   })
 }
@@ -341,7 +341,7 @@ function M(e) {
           }), _ ? (0, r.jsx)(d.Wn, {
             className: T.searchWarning,
             messageType: d.QYI.INFO,
-            children: S.intl.string(S.t.RQxHZ8)
+            children: S.intl.string(S.t.RQxHZ2)
           }) : null]
         })
       })

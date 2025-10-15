@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function b(t) {
+function f(t) {
   for (var e = 1; e < arguments.length; e++) {
     var n = null != arguments[e] ? arguments[e] : {},
       r = Object.keys(n);
@@ -51,10 +51,10 @@ function y(t) {
   let {
     text: e = "",
     target: n
-  } = t, y = (0, i.e7)([a.Z], () => a.Z.isEnabled()), O = (0, i.e7)([a.Z], () => a.Z.hasLearnedWord(e), [e]), j = l.useRef(h(b({}, t), {
+  } = t, y = (0, i.e7)([a.Z], () => a.Z.isEnabled()), O = (0, i.e7)([a.Z], () => a.Z.hasLearnedWord(e), [e]), j = l.useRef(h(f({}, t), {
     spellcheckEnabled: y
   }));
-  j.current = h(b({}, t), {
+  j.current = h(f({}, t), {
     spellcheckEnabled: y
   });
   let E = l.useRef(false),
@@ -97,27 +97,27 @@ function y(t) {
   }, "correction-".concat(e))), (0, r.jsxs)(r.Fragment, {
     children: [m ? (0, r.jsx)(s.sNh, {
       id: "add-to-dictionary",
-      label: f.intl.string(f.t.HJmG1G),
+      label: d.intl.string(d.t.HJmG1N),
       action: () => {
         (0, o.D0)(e), C()
       }
     }) : null, O && (0, r.jsx)(s.sNh, {
       id: "remove-from-dictionary",
-      label: f.intl.string(f.t.xXqIX0),
+      label: d.intl.string(d.t.xXqIX1),
       action: () => {
         (0, o.lE)(e), C()
       }
     }), (0, r.jsx)(s.S89, {
       id: "spellcheck",
-      label: f.intl.string(f.t.TKkotf),
+      label: d.intl.string(d.t.TKkotb),
       checked: y,
       action: () => {
         (0, o.kY)(), C()
       }
     }), y ? (0, r.jsx)(s.sNh, {
       id: "languages",
-      label: f.intl.string(f.t.OlOHDH),
-      action: () => window.open(u.Z.getArticleURL(d.BhN.SPELLCHECK))
+      label: d.intl.string(d.t.OlOHDA),
+      action: () => window.open(u.Z.getArticleURL(b.BhN.SPELLCHECK))
     }) : null]
   })] : [null, null]
 }

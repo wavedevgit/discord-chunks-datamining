@@ -61,9 +61,9 @@ function j(e) {
       location: "Friends"
     })
   }, [n, l, t.id]), m = i.useCallback(() => {
-    let e = l ? S.intl.string(S.t.RLcE6x) : S.intl.string(S.t.cvSt1J);
+    let e = l ? S.intl.string(S.t["RLcE6+"]) : S.intl.string(S.t.cvSt1N);
     c.Z.show({
-      title: S.intl.formatToPlainString(S.t.fPLvZd, {
+      title: S.intl.formatToPlainString(S.t.fPLvZW, {
         name: b.ZP.getName(t)
       }),
       body: S.intl.formatToPlainString(S.t.l5FFq6, {
@@ -71,18 +71,18 @@ function j(e) {
       }),
       confirmText: e,
       confirmVariant: "critical-primary",
-      cancelText: S.intl.string(S.t["ETE/oC"]),
+      cancelText: S.intl.string(S.t["ETE/oK"]),
       onConfirm: h
     })
-  }, [h, l, t]), O = (0, o.e7)([g.Z], () => g.Z.supports(C.AN.VIDEO)), E = t.isProvisional, v = l ? S.intl.string(S.t.RLcE6x) : S.intl.string(S.t.cvSt1J);
+  }, [h, l, t]), O = (0, o.e7)([g.Z], () => g.Z.supports(C.AN.VIDEO)), E = t.isProvisional, v = l ? S.intl.string(S.t["RLcE6+"]) : S.intl.string(S.t.cvSt1N);
   return (0, r.jsxs)(s.v2r, {
     navId: "friend-row",
-    "aria-label": S.intl.string(S.t.liqwPJ),
+    "aria-label": S.intl.string(S.t.liqwPD),
     onClose: d.Zy,
     onSelect: a,
     children: [!E && O ? (0, r.jsx)(s.sNh, {
       id: "start-video-call",
-      label: S.intl.string(S.t.oCqlGG),
+      label: S.intl.string(S.t.oCqlGB),
       action: f
     }) : null, !E && (0, r.jsx)(s.sNh, {
       id: "start-voice-call",
@@ -153,7 +153,7 @@ class P extends Chunk647438.PureComponent {
             shouldHighlight: t
           }), (0, r.jsx)(O.Z, {
             icon: s.Huf,
-            tooltip: S.intl.string(S.t["UKOtz+"]),
+            tooltip: S.intl.string(S.t.UKOtz8),
             onClick: this.handleOpenActionsMenu,
             shouldHighlight: t
           })]

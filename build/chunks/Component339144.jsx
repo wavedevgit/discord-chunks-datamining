@@ -83,8 +83,8 @@ let D = Chunk647438.memo(function(e) {
         guildId: G,
         isStreaming: U,
         channel: B,
-        canStream: F,
-        runningGame: V,
+        canStream: V,
+        runningGame: F,
         embeddedActivity: H,
         frame: z,
         activity: W,
@@ -108,14 +108,14 @@ let D = Chunk647438.memo(function(e) {
         var e;
         o()(null != W, "Received null activity"), S.default.track(N.rMx.ACTIVITY_PANEL_BUTTON_CLICKED, {
           action_type: "invite_to_game",
-          game_id: null != (e = null == V ? true : V.id) ? e : null,
+          game_id: null != (e = null == F ? true : F.id) ? e : null,
           application_id: W.application_id
         }), (0, _.v)(J, _.d.INVITE), S.default.track(N.rMx.OPEN_MODAL, {
           type: "Send Join Invite",
           application_id: W.application_id,
           location: Y.location
         }), (0, u.h7)(W, false)
-      }, [W, Y, J, V]),
+      }, [W, Y, J, F]),
       en = i.useCallback((e, t) => () => {
         (0, _.v)(J, _.d.LEAVE_ACTIVITY), g.Z.leaveActivity({
           location: t,
@@ -139,13 +139,13 @@ let D = Chunk647438.memo(function(e) {
             default: e
           } = await Promise.all([n.e("4093"), n.e("47863"), n.e("33641")]).then(n.bind(n, 60594));
           return n => (0, r.jsx)(e, A(T({}, n), {
-            sourcePID: null == V ? true : V.pid,
+            sourcePID: null == F ? true : F.pid,
             selectSource: !!Q && null != E.Z.getVoiceChannelId(),
             guildId: t,
             analyticsLocation: N.Sbl.ACTIVITY_PANEL
           }))
         })
-      }, [B, G, V, Q]),
+      }, [B, G, F, Q]),
       eo = i.useCallback(e => {
         (0, d.jW)(e, async () => {
           let {
@@ -176,13 +176,13 @@ let D = Chunk647438.memo(function(e) {
     }, []), i.useEffect(() => {
       ec && (ef(false), null != ep.current && (clearTimeout(ep.current), ep.current = null))
     }, [ec]);
-    let eg = (null != V || null == H || (0, p.R)()) && (U || k) ? (U ? (l = false, a = () => {
+    let eg = (null != F || null == H || (0, p.R)()) && (U || k) ? (U ? (l = false, a = () => {
         ei(), (0, _.v)(J, _.d.STREAM, false)
-      }, h = c.g5r, D = Z.intl.string(Z.t.S5anIc)) : F ? (l = false, a = () => {
+      }, h = c.g5r, D = Z.intl.string(Z.t.S5anIS)) : V ? (l = false, a = () => {
         el(), (0, _.v)(J, _.d.STREAM, true)
-      }, h = c.hGI, D = null != V ? Z.intl.formatToPlainString(Z.t.AB5gTy, {
-        game: V.name
-      }) : Z.intl.string(Z.t.FeUKeA)) : (l = true, a = null, h = c.hGI, D = null != B && (0, C.vd)(B.type) ? Z.intl.string(Z.t.uQn9B8) : null != G ? Z.intl.string(Z.t.fBXEoJ) : Z.intl.string(Z.t.n3feNG)), (0, r.jsx)("div", {
+      }, h = c.hGI, D = null != F ? Z.intl.formatToPlainString(Z.t.AB5gT0, {
+        game: F.name
+      }) : Z.intl.string(Z.t.FeUKeH)) : (l = true, a = null, h = c.hGI, D = null != B && (0, C.vd)(B.type) ? Z.intl.string(Z.t.uQn9Bw) : null != G ? Z.intl.string(Z.t.fBXEoK) : Z.intl.string(Z.t.n3feND)), (0, r.jsx)("div", {
         className: w.panelButtonContainer,
         children: (0, r.jsx)(P.Z, {
           tooltipText: D,
@@ -193,23 +193,23 @@ let D = Chunk647438.memo(function(e) {
       })) : null,
       em = ee && null == H ? (0, r.jsx)(P.Z, {
         ref: q,
-        tooltipText: Z.intl.string(Z.t["hC/Zey"]),
+        tooltipText: Z.intl.string(Z.t["hC/Ze3"]),
         onClick: et,
         icon: c.ejJ
       }) : null,
       eb = null == H ? null : (0, r.jsx)(P.Z, {
-        tooltipText: Z.intl.string(Z.t["R/FK4A"]),
+        tooltipText: Z.intl.string(Z.t["R/FK4O"]),
         onClick: en(H.applicationId, H.location),
         icon: c.PBZ
       }),
       e_ = null == z ? null : (0, r.jsx)(P.Z, {
-        tooltipText: Z.intl.string(Z.t["R/FK4A"]),
+        tooltipText: Z.intl.string(Z.t["R/FK4O"]),
         onClick: er(z.applicationId),
         icon: c.PBZ
       }),
       eO = null == M ? null : (0, r.jsx)(O.Z, {}),
       ey = ed && ea && !ec ? (0, r.jsx)(L, {
-        runningGame: V,
+        runningGame: F,
         startAuthorization: () => {
           ef(true), null != ep.current && clearTimeout(ep.current), ep.current = setTimeout(() => {
             ef(false)
@@ -224,8 +224,8 @@ let D = Chunk647438.memo(function(e) {
         icon: c.xhG
       }) : null,
       ej = ed && ea && !ec ? (0, r.jsx)(s.J2, {
-        title: Z.intl.string(Z.t.ULvRFd),
-        body: Z.intl.string(Z.t["HJJDr+"]),
+        title: Z.intl.string(Z.t.ULvRFR),
+        body: Z.intl.string(Z.t.HJJDr6),
         targetElementRef: X,
         position: "top",
         align: "center",
@@ -259,6 +259,6 @@ let D = Chunk647438.memo(function(e) {
         }), i()
       },
       icon: a.u,
-      tooltipText: Z.intl.string(Z.t.sbdnpw)
+      tooltipText: Z.intl.string(Z.t.sbdnp6)
     })
   })

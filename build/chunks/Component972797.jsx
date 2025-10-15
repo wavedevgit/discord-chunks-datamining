@@ -35,7 +35,7 @@ function c(e) {
         children: [(0, n.jsx)(o.Heading, {
           variant: "text-sm/semibold",
           color: "header-primary",
-          children: a ? d.intl.string(d.t.Vaaagc) : d.intl.string(d.t.oI8aQf)
+          children: a ? d.intl.string(d.t.VaaagY) : d.intl.string(d.t.oI8aQU)
         }), (0, n.jsx)(o.Text, {
           id: f,
           variant: "text-sm/normal",
@@ -43,7 +43,7 @@ function c(e) {
           children: a ? d.intl.string(d.t["0r6pbG"]) : d.intl.string(d.t["8MMHYG"])
         })]
       }), (0, n.jsx)(l.zxk, {
-        text: a ? d.intl.string(d.t.DlJOvl) : d.intl.string(d.t.X7YGXE),
+        text: a ? d.intl.string(d.t.DlJOvr) : d.intl.string(d.t.X7YGXF),
         icon: a ? o.kZF : o.T$Z,
         iconPosition: "end",
         variant: a ? "critical-primary" : "expressive",

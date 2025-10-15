@@ -48,7 +48,7 @@ function s(e) {
     return e
   }({}, c), n = n = {
     iconComponent: r.Dio,
-    label: o.intl.string(o.t.WAI6xu),
+    label: o.intl.string(o.t.WAI6xs),
     onClick: () => l.Z.stopRinging(s.id)
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);

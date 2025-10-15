@@ -83,7 +83,7 @@ let b = a().debounce(Chunk367907.ZP.trackWithMetadata, 500),
           }), null == E || E()
         },
         className: g.close,
-        "aria-label": h.intl.string(h.t.WAI6xu),
+        "aria-label": h.intl.string(h.t.WAI6xs),
         children: (0, r.jsx)(s.Dio, {
           size: "md",
           color: "currentColor",

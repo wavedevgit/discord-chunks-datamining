@@ -117,17 +117,17 @@ function k(e) {
         idx: null == (r = o.userStatus) ? true : r.claimedTier
       }) : null,
       t = null != (i = null == e ? true : e.messages.nameWithArticle) ? i : null;
-    return null != t ? R.intl.formatToPlainString(R.t.RrxtPU, {
+    return null != t ? R.intl.formatToPlainString(R.t.RrxtPT, {
       reward: t,
       date: d
-    }) : R.intl.formatToPlainString(R.t.zNoqRe, {
+    }) : R.intl.formatToPlainString(R.t.zNoqRU, {
       reward: E,
       date: d
     })
   }
-  if (f) return g ? R.intl.formatToPlainString(R.t["l1jCM/"], {
+  if (f) return g ? R.intl.formatToPlainString(R.t.l1jCMz, {
     date: d
-  }) : R.intl.formatToPlainString(R.t.zNoqRe, {
+  }) : R.intl.formatToPlainString(R.t.zNoqRU, {
     reward: E,
     date: d
   });
@@ -135,9 +135,9 @@ function k(e) {
     quest: o,
     idx: 0
   }) : null;
-  return l ? R.intl.formatToPlainString(R.t.DT3auf, {
+  return l ? R.intl.formatToPlainString(R.t.DT3aub, {
     reward: null != (a = null == b ? true : b.messages.nameWithArticle) ? a : E
-  }) : null != b && null != b.approximateCount ? R.intl.format(R.t["4bMK1z"], {
+  }) : null != b && null != b.approximateCount ? R.intl.format(R.t["4bMK19"], {
     maxReward: b.messages.nameWithArticle,
     maxRewardCount: (0, p.Bs)(b.approximateCount, s),
     helpCenterLink: _.Z.getArticleURL(N.BhN.QUESTS_LEARN_MORE)
@@ -260,7 +260,7 @@ let B = e => {
       },
       "aria-hidden": !G,
       children: [(0, r.jsx)(l.u, {
-        text: z ? R.intl.string(R.t["04MTGf"]) : null,
+        text: z ? R.intl.string(R.t["04MTGR"]) : null,
         shouldShow: z,
         children: (0, r.jsxs)("div", {
           className: P.rewardTileWrapper,
@@ -289,7 +289,7 @@ let B = e => {
         children: [(0, r.jsx)(u.Text, {
           variant: M(a, c, D),
           className: P.taskInstructions,
-          children: _ ? R.intl.formatToPlainString(R.t["ge+AJp"], {
+          children: _ ? R.intl.formatToPlainString(R.t["ge+AJi"], {
             questName: n.config.messages.questName
           }) : B
         }), (0, r.jsx)(u.Text, {
@@ -311,11 +311,11 @@ let B = e => {
         children: [(0, r.jsx)(u.Button, {
           variant: "secondary",
           disabled: true,
-          text: R.intl.string(R.t.V293qn)
+          text: R.intl.string(R.t.V293qq)
         }), (0, r.jsx)(u.Button, {
           variant: "primary",
           onClick: () => (0, T.openQuestMinorEnrollmentBlockModal)(n, a, A),
-          text: R.intl.string(R.t.vY9GgG)
+          text: R.intl.string(R.t.vY9GgI)
         })]
       }) : (0, r.jsxs)(u.ButtonGroup, {
         direction: "horizontal",

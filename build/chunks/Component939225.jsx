@@ -21,8 +21,8 @@ function d(e) {
     children: [(0, r.jsx)(i.LZC, {
       size: 16
     }), (0, r.jsx)(o.Z, {
-      message: u.intl.string(u.t.eSuJE2),
-      ctaMessage: u.intl.string(u.t.RXsxqb),
+      message: u.intl.string(u.t.eSuJEx),
+      ctaMessage: u.intl.string(u.t.RXsxqa),
       onClick: () => {
         (0, a.openUserSettings)(l.n.SUBSCRIPTIONS_PANEL, {
           section: s.oAB.SUBSCRIPTIONS,

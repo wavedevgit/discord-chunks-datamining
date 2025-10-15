@@ -23,7 +23,7 @@ function d(e) {
     renderIcon: e => (0, r.jsx)(l.Z, {
       className: e
     }),
-    text: u.intl.string(u.t["KzCF/6"]),
+    text: u.intl.string(u.t["KzCF//"]),
     selected: d,
     onClick: () => {
       (0, o.uL)(s.Z5c.CHANNEL(t.id, c.oC.ROLE_SUBSCRIPTIONS))

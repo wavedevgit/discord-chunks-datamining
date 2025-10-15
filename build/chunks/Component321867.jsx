@@ -24,11 +24,11 @@ function h(e) {
   let {
     analyticsSection: t,
     type: n
-  } = e, h = (0, o.e7)([u.default], () => u.default.getCurrentUser()), A = _.ZP.canUseAnimatedAvatar(h), b = _.ZP.canUsePremiumProfileCustomization(h), P = n === p.pC.BANNER && b || n === p.pC.AVATAR && A, {
+  } = e, h = (0, o.e7)([u.default], () => u.default.getCurrentUser()), A = g.ZP.canUseAnimatedAvatar(h), b = g.ZP.canUsePremiumProfileCustomization(h), P = n === p.pC.BANNER && b || n === p.pC.AVATAR && A, {
     sourceAnalyticsLocations: v
   } = (0, c.ZP)(l.Z.PREMIUM_PREVIEW_UPSELL_HEADER);
   if (a.useEffect(() => {
-      P || f.default.track(g.rMx.PREMIUM_UPSELL_VIEWED, {
+      P || f.default.track(_.rMx.PREMIUM_UPSELL_VIEWED, {
         type: t,
         location_stack: v
       })
@@ -40,19 +40,19 @@ function h(e) {
     color: r.zx.Colors.LINK,
     subscriptionTier: m.Si.TIER_2,
     textOptions: {
-      textOverride: N.intl.format(N.t["944tDv"], {})
+      textOverride: N.intl.format(N.t["944tDg"], {})
     },
     showIcon: false,
     premiumModalAnalyticsLocation: {
       section: t,
-      object: g.qAy.BUTTON_CTA
+      object: _.qAy.BUTTON_CTA
     },
     disableShine: true
   });
   return (0, i.jsx)(d.Z, {
     reducedRightPadding: true,
     className: x.nitroPreviewUpsell,
-    text: N.intl.format(N.t.Og803x, {}),
+    text: N.intl.format(N.t.Og8039, {}),
     button: E
   })
 }

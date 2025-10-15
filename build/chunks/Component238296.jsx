@@ -3,7 +3,7 @@
 require.d(exports, {
   E: () => S,
   Y: () => x,
-  default: () => E
+  default: () => D
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -42,12 +42,12 @@ function x(e) {
     icon: (0, i.jsx)(r.tBG, {
       size: "sm"
     }),
-    label: h.intl.string(h.t.iXAna6)
-  }), d = (0, p.Z)(n, c, r.kBi), b = (0, Z.Z)(n), g = (0, v.Z)(n), j = (0, a.Z)(n), m = (0, u.Z)(n), y = (0, f.Z)();
+    label: h.intl.string(h.t.iXAna2)
+  }), d = (0, p.Z)(n, c, r.kBi), f = (0, Z.Z)(n), g = (0, v.Z)(n), j = (0, a.Z)(n), m = (0, u.Z)(n), y = (0, b.Z)();
   return [(0, i.jsxs)(r.kSQ, {
     children: [s, d]
   }), (0, i.jsxs)(r.kSQ, {
-    children: [b, g, j, m, t && y]
+    children: [f, g, j, m, t && y]
   })]
 }
 
@@ -58,9 +58,9 @@ function S(e, t, n) {
       guildId: n,
       minimal: true
     }),
-    o = (0, b.Z)({
+    o = (0, f.Z)({
       id: e.id,
-      label: h.intl.string(h.t["/AXYnE"])
+      label: h.intl.string(h.t["/AXYnJ"])
     }),
     c = (0, m.Z)({
       user: e,
@@ -81,34 +81,34 @@ function S(e, t, n) {
     children: [c, s]
   }), a]
 }
-let E = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
+let D = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
   let {
     user: t,
     channel: n,
     onSelect: o,
     onInteraction: c,
     context: s
-  } = e, a = n.id, u = t.isNonUserBot(), d = t.id === g.default.getId(), f = x({
+  } = e, a = n.id, u = t.isNonUserBot(), d = t.id === g.default.getId(), b = x({
     isOwnSettings: d,
     userId: t.id,
     channelId: a,
     context: s
-  }), j = S(t, a), m = (0, b.Z)({
+  }), j = S(t, a), m = (0, f.Z)({
     id: t.id,
-    label: h.intl.string(h.t["/AXYnE"])
+    label: h.intl.string(h.t["/AXYnJ"])
   });
   return (0, i.jsx)(r.v2r, {
     navId: "user-context",
     onClose: l.Zy,
-    "aria-label": h.intl.string(h.t.liqwPJ),
+    "aria-label": h.intl.string(h.t.liqwPD),
     onSelect: o,
     onInteraction: c,
     variant: "fixed",
     children: !u && (0, i.jsxs)(i.Fragment, {
-      children: [f, !d && (0, i.jsx)(r.kSQ, {
+      children: [b, !d && (0, i.jsx)(r.kSQ, {
         children: (0, i.jsx)(r.sNh, {
           id: "more-options",
-          label: h.intl.string(h.t.PdRCRg),
+          label: h.intl.string(h.t.PdRCRk),
           children: j
         })
       }), d && (0, i.jsx)(r.kSQ, {

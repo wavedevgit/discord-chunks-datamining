@@ -91,8 +91,8 @@ function S(e) {
   if (0 === M.length) {
     return (0, r.jsx)(y.Z, {
       Icon: d.xx7,
-      header: C.intl.string(C.t["6XMM+D"]),
-      tip: (null == (P = s().os) ? true : P.family) === "OS X" ? C.intl.string(C.t.w9uDOW) : C.intl.string(C.t.BiUJC6)
+      header: C.intl.string(C.t["6XMM+P"]),
+      tip: (null == (P = s().os) ? true : P.family) === "OS X" ? C.intl.string(C.t.w9uDOT) : C.intl.string(C.t.BiUJCw)
     })
   }
   return (0, r.jsx)(c.bG, {
@@ -178,18 +178,18 @@ function I(e) {
       children: [(0, r.jsx)(d.Heading, {
         className: E.__invalid_tutorialHeader,
         variant: "heading-md/semibold",
-        children: C.intl.string(C.t.vZPktJ)
+        children: C.intl.string(C.t.vZPktL)
       }), (0, r.jsx)(d.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
-        children: C.intl.string(C.t.vWkIII)
+        children: C.intl.string(C.t.vWkIIC)
       }), (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: E.tutorialButton,
         children: (0, r.jsx)(d.Button, {
           variant: "primary",
           size: "sm",
-          text: C.intl.string(C.t["+IrDzN"]),
+          text: C.intl.string(C.t["+IrDzM"]),
           onClick: t
         })
       })]
@@ -201,8 +201,8 @@ function P() {
   return (0, Chunk951288.jsx)(Chunk240126.Z, {
     Icon: Chunk481060.xx7,
     disableStars: true,
-    header: Chunk388032.intl.string(Chunk388032.t["KG/ynf"]),
-    tip: Chunk388032.intl.string(Chunk388032.t.cvcKzX)
+    header: Chunk388032.intl.string(Chunk388032.t["KG/ynZ"]),
+    tip: Chunk388032.intl.string(Chunk388032.t.cvcKzc)
   })
 }
 let N = () => (0, Chunk951288.jsx)(Chunk143316.Z, {

@@ -36,15 +36,15 @@ let {
   getButtonTitle(e) {
     switch (e) {
       case a.PUi.EMAIL:
-        return o.intl.string(o.t["1MPz27"]);
+        return o.intl.string(o.t["1MPz29"]);
       case a.PUi.PHONE:
-        return o.intl.string(o.t.mjJeco);
+        return o.intl.string(o.t.mjJecn);
       case a.PUi.REVERIFY_EMAIL:
-        return o.intl.string(o.t.nmdPFX);
+        return o.intl.string(o.t.nmdPFR);
       case a.PUi.REVERIFY_PHONE:
-        return o.intl.string(o.t.of2125);
+        return o.intl.string(o.t.of2129);
       default:
-        return o.intl.string(o.t["oF6+Ww"])
+        return o.intl.string(o.t["oF6+W1"])
     }
   },
   areVerificationTypesEqual: (e, t) => i().isEqual(e, t)

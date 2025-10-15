@@ -24,7 +24,7 @@ function u() {
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/medium",
       className: Chunk252073.upsellText,
-      children: Chunk388032.intl.format(Chunk388032.t.f5VHKm, {})
+      children: Chunk388032.intl.format(Chunk388032.t.f5VHKi, {})
     })]
   })
 }

@@ -21,25 +21,25 @@ function o(t) {
       type: "image",
       src: s
     },
-    title: i.intl.string(i.t["8O+nF7"]),
+    title: i.intl.string(i.t["8O+nFx"]),
     onClose: n,
     transitionState: o,
     actions: [{
       variant: "primary",
-      text: i.intl.string(i.t.BddRzS),
+      text: i.intl.string(i.t.BddRzc),
       onClick: n
     }],
     children: (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)(r.Text, {
         className: l.description,
         variant: "text-md/normal",
-        children: i.intl.format(i.t.Zvx0O3, {
+        children: i.intl.format(i.t.Zvx0Oz, {
           email: e
         })
       }), (0, a.jsx)(r.Text, {
         className: l.tooltip,
         variant: "text-sm/normal",
-        children: i.intl.string(i.t.yb7itQ)
+        children: i.intl.string(i.t.yb7itb)
       })]
     })
   })

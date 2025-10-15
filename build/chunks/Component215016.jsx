@@ -261,15 +261,15 @@ class G extends Chunk647438.PureComponent {
       fade: true,
       children: (0, Chunk951288.jsxs)("div", {
         className: Chunk898404.emptyHints,
-        children: [this.renderEmptyFavorite(Chunk388032.intl.string(Chunk388032.t["3gyw4Z"]), true), this.renderEmptyFavorite(Chunk388032.intl.string(Chunk388032.t.yThUi4)), this.renderEmptyFavorite(Chunk388032.intl.string(Chunk388032.t.MeP0SF)), Array.from({
+        children: [this.renderEmptyFavorite(Chunk388032.intl.string(Chunk388032.t["3gyw4e"]), true), this.renderEmptyFavorite(Chunk388032.intl.string(Chunk388032.t.yThUi4)), this.renderEmptyFavorite(Chunk388032.intl.string(Chunk388032.t.MeP0SE)), Array.from({
           length: 15
         }).map((e, t) => (0, r.jsx)(i.Fragment, {
           children: this.renderEmptyFavorite()
-        }, t)), this.renderEmptyFavorite(Chunk388032.intl.string(Chunk388032.t["5u99Xb"])), Array.from({
+        }, t)), this.renderEmptyFavorite(Chunk388032.intl.string(Chunk388032.t["5u99XV"])), Array.from({
           length: 16
         }).map((e, t) => (0, r.jsx)(i.Fragment, {
           children: this.renderEmptyFavorite()
-        }, t)), this.renderEmptyFavorite(Chunk388032.intl.string(Chunk388032.t.o6CLL4))]
+        }, t)), this.renderEmptyFavorite(Chunk388032.intl.string(Chunk388032.t.o6CLLy))]
       })
     })
   }
@@ -281,7 +281,7 @@ class G extends Chunk647438.PureComponent {
       resultType: i
     } = this.props;
     return 0 === module.length && exports === require && Chunk647438 !== Chunk981631.wI2.TRENDING_GIFS ? Chunk647438 === Chunk981631.wI2.FAVORITES ? this.renderEmptyFavorites() : (0, Chunk951288.jsx)(Chunk788911.Z, {
-      message: Chunk388032.intl.string(Chunk388032.t["5dX4UM"]),
+      message: Chunk388032.intl.string(Chunk388032.t["5dX4UF"]),
       className: Chunk898404.noResults
     }) : (0, Chunk951288.jsx)(Chunk527429.Z, {
       getItemGrid: this.getItemGrid,
@@ -369,7 +369,7 @@ class G extends Chunk647438.PureComponent {
         children: o.length > 0 ? (0, r.jsxs)(i.Fragment, {
           children: [(0, r.jsx)("div", {
             className: I.endText,
-            children: v.intl.string(v.t["3JGJo2"])
+            children: v.intl.string(v.t["3JGJo6"])
           }), (0, r.jsx)(f.ButtonGroup, {
             size: "sm",
             className: I.searchSuggestions,

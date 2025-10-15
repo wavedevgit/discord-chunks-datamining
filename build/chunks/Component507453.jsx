@@ -47,12 +47,12 @@ let o = {
         direction: "vertical",
         children: [i, u && (0, l.jsx)(r.Button, {
           variant: "secondary",
-          text: s.intl.string(s.t.Tot4EC),
+          text: s.intl.string(s.t.Tot4EB),
           onClick: () => n("select")
         }), a && (0, l.jsx)(r.Button, {
           type: "submit",
           variant: "primary",
-          text: s.intl.string(s.t["cY+Oob"]),
+          text: s.intl.string(s.t["cY+Ooa"]),
           disabled: o,
           loading: d
         })]
@@ -73,7 +73,7 @@ let o = {
       children: [(0, l.jsx)(r.Heading, {
         variant: "heading-xl/semibold",
         color: "header-primary",
-        children: s.intl.string(s.t.saHocI)
+        children: s.intl.string(s.t.saHocH)
       }), null != t && (0, l.jsx)(r.Text, {
         color: "header-secondary",
         variant: "text-md/normal",

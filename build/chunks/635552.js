@@ -20,7 +20,7 @@ let c = t => {
     firstAvatarDecoration: f,
     firstProfileEffect: A,
     firstNameplate: O
-  } = (0, d.Rj)(e), C = (0, u.x6)(e) ? o.intl.string(o.t.tf1ZZ4) : e.type === r.Z.AVATAR_DECORATION ? o.intl.string(o.t.zOA4ax) : e.type === r.Z.NAMEPLATE ? o.intl.string(o.t.gOzMvx) : o.intl.string(o.t.SWm2ai);
+  } = (0, o.Rj)(e), C = (0, u.x6)(e) ? d.intl.string(d.t.tf1ZZ2) : e.type === r.Z.AVATAR_DECORATION ? d.intl.string(d.t.zOA4a2) : e.type === r.Z.NAMEPLATE ? d.intl.string(d.t.gOzMv7) : d.intl.string(d.t.SWm2am);
   return {
     handleUseNow: i.useCallback(async () => {
       E(true);

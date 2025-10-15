@@ -18,7 +18,7 @@ function s(e, t) {
     }, s);
   return null != t && c ? (0, r.jsx)(i.sNh, {
     id: "report-image-false-positive",
-    label: o.intl.string(o.t.ZH7P2h),
+    label: o.intl.string(o.t.ZH7P2t),
     action: () => {
       (0, i.ZDy)(async () => {
         let {

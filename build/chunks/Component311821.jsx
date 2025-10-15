@@ -32,6 +32,6 @@ let c = e => {
     return (0, r.jsx)(c, {
       className: t,
       onClick: n,
-      children: s.intl.string(s.t["13/7kX"])
+      children: s.intl.string(s.t["13/7kZ"])
     })
   }

@@ -95,7 +95,7 @@ function p(e) {
     case a.QJ.TERMS:
       return (0, r.jsx)(c.Z, g({
         channelId: f.rulesChannelId,
-        title: N === a.it.COMPACT ? u.intl.string(u.t["55+gic"]) : u.intl.string(u.t["53vNcB"]),
+        title: N === a.it.COMPACT ? u.intl.string(u.t["55+giY"]) : u.intl.string(u.t["53vNcH"]),
         formField: p
       }, w));
     case a.QJ.PARAGRAPH:

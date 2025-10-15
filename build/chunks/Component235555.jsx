@@ -87,7 +87,7 @@ class O extends Chunk647438.PureComponent {
       } = this.props;
       return (0, r.jsx)(c.Z, {
         party: e,
-        header: b.intl.formatToPlainString(b.t.I9et1z, {
+        header: b.intl.formatToPlainString(b.t.I9et19, {
           count: e.length
         })
       })

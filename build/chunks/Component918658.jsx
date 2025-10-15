@@ -60,25 +60,25 @@ function L(e) {
   } = e;
   return (0, r.jsx)(D, {
     onClick: t,
-    children: P.intl.string(P.t.R9GHya)
+    children: P.intl.string(P.t.R9GHyc)
   })
 }
 
 function x(e) {
   switch (e) {
     case A.pNK.INTEGRATIONS:
-      return P.intl.string(P.t.k7LGdh);
+      return P.intl.string(P.t.k7LGdn);
     case A.pNK.ROLE_SUBSCRIPTIONS:
       return P.intl.string(P.t.bRqiqa);
     case A.pNK.ONBOARDING:
-      return P.intl.string(P.t.qZpU3S);
+      return P.intl.string(P.t.qZpU3d);
     default:
-      return P.intl.string(P.t.MTIXhi)
+      return P.intl.string(P.t.MTIXho)
   }
 }
 
 function M(e) {
-  return e === A.pNK.ROLE_SUBSCRIPTIONS ? P.intl.string(P.t.hZUCzd) : P.intl.string(P.t["/djIh7"])
+  return e === A.pNK.ROLE_SUBSCRIPTIONS ? P.intl.string(P.t.hZUCzc) : P.intl.string(P.t["/djIh4"])
 }
 
 function j() {
@@ -124,7 +124,7 @@ function j() {
       className: Chunk829675.noticeContents,
       children: (0, Chunk951288.jsx)("div", {
         className: Chunk829675.noticeText,
-        children: Chunk388032.intl.string(Chunk388032.t.PxbiAf)
+        children: Chunk388032.intl.string(Chunk388032.t.PxbiAQ)
       })
     }) : (0, Chunk951288.jsxs)("div", {
       className: Chunk829675.noticeContents,
@@ -132,7 +132,7 @@ function j() {
         className: Chunk829675.noticeText,
         children: Chunk755721 ? Chunk388032.intl.formatToPlainString(Chunk388032.t["0PHahI"], {
           numRoles: Object.keys(Chunk120356).length
-        }) : Chunk388032.intl.formatToPlainString(Chunk388032.t.vMlK8t, {
+        }) : Chunk388032.intl.formatToPlainString(Chunk388032.t.vMlK8v, {
           numRoles: Object.keys(Chunk120356).length
         })
       }), (0, Chunk951288.jsx)(Chunk481060.yRy, {
@@ -158,14 +158,14 @@ function j() {
         }
       }), Chunk755721 && (0, Chunk951288.jsx)(Chunk28664.u, {
         asContainer: true,
-        text: Chunk388032.intl.string(Chunk388032.t.mW4DUE),
+        text: Chunk388032.intl.string(Chunk388032.t.mW4DUF),
         children: (0, Chunk951288.jsx)(Chunk481060.Mgn, {
           size: "xs",
           color: Chunk692547.Z.unsafe_rawColors.YELLOW_300.css
         })
       }), Chunk358085 && (0, Chunk951288.jsx)(Chunk28664.u, {
         asContainer: true,
-        text: Chunk388032.intl.formatToPlainString(Chunk388032.t.eummvd, {
+        text: Chunk388032.intl.formatToPlainString(Chunk388032.t.eummvb, {
           maxTiers: Chunk293810.fF,
           maxProducts: Chunk302463.dD
         }),

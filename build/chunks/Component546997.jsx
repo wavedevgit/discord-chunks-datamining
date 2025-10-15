@@ -66,12 +66,12 @@ function E(e) {
         s.Z.setUseSystemScreensharePicker(e), l.Z.app.relaunch()
       },
       confirmButtonColor: a.zx.Colors.BRAND,
-      header: _.intl.string(_.t["9jf31O"]),
-      cancelText: _.intl.string(_.t["ETE/oC"]),
-      confirmText: _.intl.string(_.t.BddRzS),
+      header: _.intl.string(_.t["9jf31N"]),
+      cancelText: _.intl.string(_.t["ETE/oK"]),
+      confirmText: _.intl.string(_.t.BddRzc),
       children: (0, r.jsx)(o.Text, {
         variant: "text-md/normal",
-        children: _.intl.string(_.t.uBd6JW)
+        children: _.intl.string(_.t.uBd6JS)
       })
     }))
   }) : s.Z.setUseSystemScreensharePicker(e)
@@ -96,15 +96,15 @@ function b() {
     children: [(0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE_VIDEO_HOOK,
       children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
-        label: Chunk388032.intl.string(Chunk388032.t.GmWk2E),
-        description: Chunk388032.intl.string(Chunk388032.t["Fj/xn1"]),
+        label: Chunk388032.intl.string(Chunk388032.t.GmWk2N),
+        description: Chunk388032.intl.string(Chunk388032.t["Fj/xn5"]),
         checked: module,
         onChange: e => s.Z.setVideoHook(e)
       })
     }), require && Chunk755721 && (0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_SCREENSHARE_EXPERIMENTAL_SOUNDSHARE,
       children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
-        label: Chunk388032.intl.string(Chunk388032.t["4I0qzZ"]),
+        label: Chunk388032.intl.string(Chunk388032.t["4I0qzc"]),
         checked: exports,
         onChange: e => s.Z.setExperimentalSoundshare(e)
       })

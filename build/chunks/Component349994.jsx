@@ -1,5 +1,5 @@
 /** Chunk was on 52432 **/
-/** chunk id: 349994, original params: e,a,t (module,exports,require) **/
+/** chunk id: 349994, original params: e,t,a (module,exports,require) **/
 require.d(exports, {
   default: () => u
 }), require("./388685.js");
@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk345469 = require("./345469.js");
 
 function u(e) {
-  let [a, u] = i.useState(null), b = (0, r.Dt)();
+  let [t, u] = i.useState(null), b = (0, r.Dt)();
   return (0, n.jsxs)(o.Y0X, {
     transitionState: e.transitionState,
     "aria-labelledby": b,
@@ -27,45 +27,45 @@ function u(e) {
         id: b,
         variant: "heading-xl/extrabold",
         color: "none",
-        children: m.intl.string(m.t.BIbnR2)
+        children: m.intl.string(m.t.BIbnR0)
       }), (0, n.jsx)(o.Text, {
         variant: "text-md/normal",
         className: _.ratingBody,
-        children: m.intl.string(m.t.j2kf2m)
+        children: m.intl.string(m.t.j2kf2t)
       })]
     }), (0, n.jsx)(o.hzk, {
       className: _.modalBody,
       children: (0, n.jsx)(c.Z, {
         ratingOptions: [d.aZ.GOOD, d.aZ.BAD],
         emojiKind: "thumb",
-        selectedRating: a,
-        onChangeRating: function(a) {
-          u(a), null != a && ((0, l.Z)({
-            rating: a
+        selectedRating: t,
+        onChangeRating: function(t) {
+          u(t), null != t && ((0, l.Z)({
+            rating: t
           }), e.onClose(), (0, o.ZDy)(async () => {
             let {
               default: e
-            } = await t.e("14466").then(t.bind(t, 729328));
-            return a => (0, n.jsx)(e, function(e) {
-              for (var a = 1; a < arguments.length; a++) {
-                var t = null != arguments[a] ? arguments[a] : {},
-                  n = Object.keys(t);
-                "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
-                  return Object.getOwnPropertyDescriptor(t, e).enumerable
-                }))), n.forEach(function(a) {
+            } = await a.e("14466").then(a.bind(a, 729328));
+            return t => (0, n.jsx)(e, function(e) {
+              for (var t = 1; t < arguments.length; t++) {
+                var a = null != arguments[t] ? arguments[t] : {},
+                  n = Object.keys(a);
+                "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(a).filter(function(e) {
+                  return Object.getOwnPropertyDescriptor(a, e).enumerable
+                }))), n.forEach(function(t) {
                   var n;
-                  n = t[a], a in e ? Object.defineProperty(e, a, {
+                  n = a[t], t in e ? Object.defineProperty(e, t, {
                     value: n,
                     enumerable: true,
                     configurable: true,
                     writable: true
-                  }) : e[a] = n
+                  }) : e[t] = n
                 })
               }
               return e
             }({
-              body: m.intl.string(m.t.IuPjpE)
-            }, a))
+              body: m.intl.string(m.t.IuPjpK)
+            }, t))
           }))
         }
       })
@@ -73,7 +73,7 @@ function u(e) {
       className: _.ratingsFooter,
       children: (0, n.jsx)(o.Text, {
         variant: "text-md/normal",
-        children: m.intl.format(m.t.zru1K0, {
+        children: m.intl.format(m.t.zru1Ky, {
           safetyCenterUrl: s.EYA.SAFETY_CENTER
         })
       })

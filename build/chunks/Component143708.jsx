@@ -51,12 +51,12 @@ function m(e) {
       rawText: n
     }), null != b && a.Z.startTyping(b)
   }
-  return v ? (t = p.intl.string(p.t["F/OLvL"]), m = p.intl.string(p.t.C89OLE)) : (m = p.intl.string(p.t.YVub5y), E ? t = p.intl.string(p.t["57nBty"]) : null != O && I ? (t = p.intl.formatToPlainString(p.t["9Akp1s"], {
+  return v ? (t = p.intl.string(p.t["F/OLvL"]), m = p.intl.string(p.t.C89OLC)) : (m = p.intl.string(p.t["YVub5+"]), E ? t = p.intl.string(p.t["57nBt7"]) : null != O && I ? (t = p.intl.formatToPlainString(p.t["9Akp1t"], {
     username: O
   }), n = (0, r.jsx)(o.Z.Button, {
     onClick: T,
-    children: p.intl.string(p.t.P8tvKG)
-  })) : t = p.intl.string(p.t["SMJr+a"])), (0, r.jsxs)(o.Z, {
+    children: p.intl.string(p.t.P8tvKC)
+  })) : t = p.intl.string(p.t["SMJr+f"])), (0, r.jsxs)(o.Z, {
     children: [(0, r.jsx)(o.Z.Header, {
       text: m
     }), (0, r.jsxs)(o.Z.Body, {
@@ -66,7 +66,7 @@ function m(e) {
           expired: true
         }), (0, r.jsx)(o.Z.Info, {
           expired: true,
-          title: p.intl.string(p.t["Jhx/ud"]),
+          title: p.intl.string(p.t["Jhx/ub"]),
           children: t
         })]
       }), n]

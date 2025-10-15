@@ -1,7 +1,7 @@
 /** Chunk was on 98878 **/
 /** chunk id: 460838, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Q: () => E,
+  Q: () => S,
   Z: () => O
 }), require("./953529.js");
 var i, Chunk951288 = require("./951288.js"),
@@ -58,9 +58,9 @@ function N(e, n) {
     Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(n, t))
   }), e
 }
-var E = ((i = {})[i.BANNER = 0] = "BANNER", i[i.THUMBNAIL = 1] = "THUMBNAIL", i);
+var S = ((i = {})[i.BANNER = 0] = "BANNER", i[i.THUMBNAIL = 1] = "THUMBNAIL", i);
 
-function S(e) {
+function P(e) {
   let {
     channel: n,
     onClick: t
@@ -69,7 +69,7 @@ function S(e) {
   } = (0, _.XJ)(n), l = (0, c.e7)([p.Z], () => !n.isGuildVocal() || p.Z.can(j.Plq.CONNECT, n), [n]), g = r.useMemo(() => (0, d.Z)(n), [n]), m = (0, u.KS)(n);
   return (0, a.jsx)(s.aML, {
     "data-migration-pending": true,
-    text: k.intl.string(k.t.nHjY9C),
+    text: k.intl.string(k.t.nHjY9P),
     shouldShow: !l && null != t,
     children: e => (0, a.jsxs)(s.P3F, N(y({}, e), {
       className: o()(w.inline, w.channelContainer, {
@@ -98,7 +98,7 @@ function S(e) {
   })
 }
 
-function Z(e) {
+function E(e) {
   let {
     channel: n,
     onJoinClick: t,
@@ -106,7 +106,7 @@ function Z(e) {
     location: r,
     isExternal: l
   } = e;
-  return null != n ? (0, a.jsx)(S, {
+  return null != n ? (0, a.jsx)(P, {
     channel: n,
     onClick: t
   }) : (0, a.jsxs)(s.P3F, {
@@ -126,7 +126,7 @@ function Z(e) {
   })
 }
 
-function P(e) {
+function Z(e) {
   let {
     channel: n,
     entityType: t,
@@ -185,8 +185,8 @@ function O(e) {
     speakerCount: k,
     rsvped: y,
     canInvite: N,
-    location: E,
-    truncate: S,
+    location: S,
+    truncate: P,
     onContextMenu: O,
     onJoinClick: T,
     onJoinGuildClick: U,
@@ -194,8 +194,8 @@ function O(e) {
     onStartClick: D,
     onInviteClick: R,
     onEndClick: L,
-    onClick: A,
-    isNew: H,
+    onClick: H,
+    isNew: A,
     guildEvent: z,
     eventPreview: G,
     recurrenceRule: W,
@@ -208,7 +208,7 @@ function O(e) {
   let F = X.length > 0;
   return (0, a.jsxs)(s.kL8, {
     "aria-label": l,
-    onClick: () => null == A ? true : A(M),
+    onClick: () => null == H ? true : H(M),
     onContextMenu: O,
     className: o()(w.card, {
       [w.joined]: m,
@@ -225,9 +225,9 @@ function O(e) {
         name: l,
         description: d,
         imageSource: 1 === u ? _ : null,
-        truncate: S,
+        truncate: P,
         guildId: null == t ? true : t.id,
-        isNew: H,
+        isNew: A,
         guildEvent: z,
         eventPreview: G,
         recurrenceId: M
@@ -240,14 +240,14 @@ function O(e) {
         className: w.divider
       }), (0, a.jsxs)("div", {
         className: o()(w.inline, w.footer),
-        children: [(0, a.jsx)(Z, {
+        children: [(0, a.jsx)(E, {
           channel: i,
           onJoinClick: T,
           handleLocationClick: V,
-          location: E,
+          location: S,
           isExternal: J
         }), (0, a.jsx)("div", {
-          children: (0, a.jsx)(P, {
+          children: (0, a.jsx)(Z, {
             channel: i,
             entityType: c,
             isActive: p,
@@ -272,7 +272,7 @@ function O(e) {
       guildId: null == t ? true : t.id,
       recurrenceRule: W,
       guildEventId: z.id,
-      onRecurrenceClick: A
+      onRecurrenceClick: H
     })]
   })
 }

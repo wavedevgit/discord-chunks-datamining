@@ -27,15 +27,15 @@ let g = function() {
     b = (0, Chunk481060.dQu)(Chunk692547.Z.colors.BACKGROUND_BASE_LOW, Chunk981631.BRd.MIDNIGHT),
     _ = Chunk647438.useMemo(() => [{
       theme: Chunk981631.BRd.LIGHT,
-      label: Chunk388032.t.K2sFfo,
+      label: Chunk388032.t.K2sFfn,
       color: g.hex()
     }, {
       theme: Chunk981631.BRd.DARKER,
-      label: Chunk388032.t.b8Cei3,
+      label: Chunk388032.t.b8Cei4,
       color: m.hex()
     }, {
       theme: Chunk981631.BRd.MIDNIGHT,
-      label: Chunk388032.t.Do4ZJx,
+      label: Chunk388032.t.Do4ZJy,
       color: b.hex()
     }], [g, m, b]),
     O = Chunk647438.useCallback(t => {
@@ -70,7 +70,7 @@ let g = function() {
         })]
       }, e.theme)), (0, Chunk951288.jsx)(Chunk481060.hU, {
         onClick: E,
-        "aria-label": Chunk388032.intl.string(Chunk388032.t.yBZMsQ),
+        "aria-label": Chunk388032.intl.string(Chunk388032.t.yBZMsb),
         icon: Chunk481060.DuK,
         variant: "secondary"
       })]

@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk496675 = require("./496675.js"),
   Chunk63063 = require("./63063.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk833540 = require("./833540.js"),
+  Chunk764295 = require("./764295.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk814346 = require("./814346.js"),
   Chunk816922 = require("./816922.js"),
@@ -46,7 +46,7 @@ let y = {
           children: (0, r.jsx)(c.Text, {
             variant: "text-md/medium",
             color: "header-secondary",
-            children: b.intl.string(p.default.fP8DVx)
+            children: b.intl.string(p.default.fP8DV1)
           })
         }), (0, r.jsxs)(c.Kqy, {
           direction: "vertical",
@@ -54,39 +54,39 @@ let y = {
           children: [(0, r.jsx)(c.Text, {
             variant: "text-lg/semibold",
             color: "header-secondary",
-            children: b.intl.string(p.default["i7CH/I"])
+            children: b.intl.string(p.default["i7CH/P"])
           }), (0, r.jsxs)("ol", {
             className: l()(j.list, j.orderedList, j.topLevelList),
             children: [(0, r.jsx)("li", {
               children: (0, r.jsx)(c.Text, {
                 variant: "text-md/normal",
                 color: "header-secondary",
-                children: b.intl.string(p.default["+Izoz7"])
+                children: b.intl.string(p.default["+Izoz8"])
               })
             }), (0, r.jsxs)("li", {
               children: [(0, r.jsx)(c.Text, {
                 variant: "text-md/normal",
                 color: "header-secondary",
-                children: b.intl.string(p.default["iu/RkU"])
+                children: b.intl.string(p.default["iu/RkZ"])
               }), (0, r.jsxs)("ul", {
                 className: l()(j.list, j.innerList, j.unorderedList),
                 children: [(0, r.jsx)("li", {
                   children: (0, r.jsx)(c.Text, {
                     variant: "text-md/normal",
                     color: "header-secondary",
-                    children: b.intl.string(p.default.QogKbP)
+                    children: b.intl.string(p.default.QogKbG)
                   })
                 }), (0, r.jsx)("li", {
                   children: (0, r.jsx)(c.Text, {
                     variant: "text-md/normal",
                     color: "header-secondary",
-                    children: b.intl.string(p.default.V4orHT)
+                    children: b.intl.string(p.default.V4orHR)
                   })
                 }), (0, r.jsx)("li", {
                   children: (0, r.jsx)(c.Text, {
                     variant: "text-md/normal",
                     color: "header-secondary",
-                    children: b.intl.string(p.default.VrrQXe)
+                    children: b.intl.string(p.default.VrrQXV)
                   })
                 }), (0, r.jsx)("li", {
                   children: (0, r.jsx)(c.Text, {
@@ -98,7 +98,7 @@ let y = {
                   children: (0, r.jsx)(c.Text, {
                     variant: "text-md/normal",
                     color: "header-secondary",
-                    children: b.intl.string(p.default["/RLXlI"])
+                    children: b.intl.string(p.default["/RLXlJ"])
                   })
                 })]
               })]
@@ -106,13 +106,13 @@ let y = {
               children: (0, r.jsx)(c.Text, {
                 variant: "text-md/normal",
                 color: "header-secondary",
-                children: b.intl.string(p.default.j4AmYy)
+                children: b.intl.string(p.default.j4AmY2)
               })
             }), (0, r.jsx)("li", {
               children: (0, r.jsx)(c.Text, {
                 variant: "text-md/normal",
                 color: "header-secondary",
-                children: b.intl.format(p.default["/g+PvX"], {
+                children: b.intl.format(p.default["/g+Pvb"], {
                   termsOfService: x.EYA.TERMS,
                   communityGuidelines: x.EYA.GUIDELINES,
                   helpArticle: f.Z.getArticleURL(x.BhN.FLAG_TO_MOD)
@@ -126,14 +126,14 @@ let y = {
           children: [(0, r.jsx)(c.Text, {
             variant: "text-lg/semibold",
             color: "header-secondary",
-            children: b.intl.string(p.default.qJWXsz)
+            children: b.intl.string(p.default.qJWXs7)
           }), (0, r.jsxs)("ul", {
             className: l()(j.list, j.unorderedList, j.topLevelList),
             children: [(0, r.jsx)("li", {
               children: (0, r.jsx)(c.Text, {
                 variant: "text-md/normal",
                 color: "header-secondary",
-                children: b.intl.format(p.default.FUBV1P, {
+                children: b.intl.format(p.default.FUBV1N, {
                   survey: "https://discord.sjc1.qualtrics.com/jfe/form/SV_3WvT7SqlWpCJ4HQ"
                 })
               })
@@ -141,7 +141,7 @@ let y = {
               children: (0, r.jsx)(c.Text, {
                 variant: "text-md/normal",
                 color: "header-secondary",
-                children: b.intl.format(p.default.W4MIAG, {
+                children: b.intl.format(p.default.W4MIAA, {
                   feedback: "https://forms.gle/RbDhW46PMmR39XUP7"
                 })
               })
@@ -153,11 +153,11 @@ let y = {
           children: [(0, r.jsx)(c.Text, {
             variant: "text-md/normal",
             color: "header-secondary",
-            children: b.intl.string(p.default.J3HKmx)
+            children: b.intl.string(p.default.J3HKm5)
           }), n && (0, r.jsx)(c.Text, {
             variant: "text-md/normal",
             color: "header-secondary",
-            children: b.intl.format(p.default["9x2vbP"], {
+            children: b.intl.format(p.default["9x2vbG"], {
               optOutHook: e => (0, r.jsx)(h.Z, {
                 onClick: () => m.Z.open(t.id, x.pNK.MODERATION, null, x.KsC.SAFETY_OVERVIEW),
                 children: e
@@ -166,12 +166,12 @@ let y = {
           }), (0, r.jsx)(c.Text, {
             variant: "text-md/normal",
             color: "header-secondary",
-            children: b.intl.string(p.default.KcCY25)
+            children: b.intl.string(p.default.KcCY29)
           })]
         })]
       }), (0, r.jsx)("img", {
         src: C,
-        alt: b.intl.string(b.t.gAlJzV),
+        alt: b.intl.string(b.t.gAlJzc),
         width: u.TJ,
         height: u.TJ
       })]
@@ -240,7 +240,7 @@ function w(e) {
         }), (0, r.jsx)(c.Text, {
           variant: "text-sm/semibold",
           color: "header-primary",
-          children: b.intl.string(b.t.uvGmCx)
+          children: b.intl.string(b.t.uvGmCw)
         }), (0, r.jsx)(c.Text, {
           variant: "text-sm/semibold",
           color: "header-primary",
@@ -248,7 +248,7 @@ function w(e) {
         }), (0, r.jsx)(c.Heading, {
           variant: "text-md/semibold",
           color: "header-primary",
-          children: b.intl.string(p.default["95qQRB"])
+          children: b.intl.string(p.default["95qQRE"])
         })]
       }), (0, r.jsx)(c.P3F, {
         onClick: () => o(true),

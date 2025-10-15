@@ -66,21 +66,21 @@ let y = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
       gap: 24,
       children: [(0, r.jsx)(u.Heading, {
         variant: "heading-lg/semibold",
-        children: C.intl.string(C.t.N6Tg9A)
+        children: C.intl.string(C.t.N6Tg9P)
       }), (0, r.jsxs)(u.Kqy, {
         gap: 8,
         children: [(0, r.jsx)(u.rsf, {
-          label: C.intl.string(C.t.lwvl1g),
+          label: C.intl.string(C.t.lwvl1t),
           checked: I,
           disabled: B || H,
           description: C.intl.string(C.t["uU/69/"]),
           onChange: e => S(e)
         }), H ? (0, r.jsx)(u.Wn, {
           messageType: u.QYI.WARNING,
-          children: C.intl.string(C.t.mIgfEu)
+          children: C.intl.string(C.t.mIgfEh)
         }) : null]
       }), (0, r.jsx)(u.izJ, {}), (0, r.jsxs)(u.gNt, {
-        label: C.intl.string(C.t.N46WOv),
+        label: C.intl.string(C.t.N46WOj),
         disabled: B,
         children: [(0, r.jsx)(g.Z, {
           value: G,
@@ -92,14 +92,14 @@ let y = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
           className: O.openPageButton,
           children: (0, r.jsx)(u.Button, {
             variant: "primary",
-            text: C.intl.string(C.t.CaOYqc),
+            text: C.intl.string(C.t.CaOYqa),
             onClick: () => (0, p.Z)(G),
             disabled: B
           })
         })]
       }), (0, r.jsx)(u.izJ, {}), (0, r.jsx)(u.gNt, {
-        label: C.intl.string(C.t.W39uIL),
-        description: C.intl.string(C.t.B6XtE7),
+        label: C.intl.string(C.t.W39uIC),
+        description: C.intl.string(C.t.B6XtEx),
         children: (0, r.jsxs)("div", {
           className: O.accentColorContainer,
           children: [(0, r.jsx)(u.Text, {
@@ -108,7 +108,7 @@ let y = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
               backgroundColor: "#".concat(T.toString(16).padStart(6, "0"))
             },
             className: O.buttonPreview,
-            children: C.intl.string(C.t.l6iM36)
+            children: C.intl.string(C.t.l6iM39)
           }), (0, r.jsx)(u.zH8, {
             colors: y,
             customColor: null,
@@ -122,20 +122,20 @@ let y = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
           })]
         })
       }), (0, r.jsx)(u.izJ, {}), (0, r.jsx)(u.oil, {
-        label: C.intl.string(C.t.k2yRvd),
-        description: C.intl.string(C.t.amd996),
+        label: C.intl.string(C.t.k2yRvb),
+        description: C.intl.string(C.t["amd99/"]),
         value: null != w ? w : true,
         onChange: e => Z("" === e ? null : e),
-        error: R ? null : C.intl.string(C.t["1kL79Q"]),
-        placeholder: C.intl.string(C.t["+I4gdT"]),
+        error: R ? null : C.intl.string(C.t["1kL79f"]),
+        placeholder: C.intl.string(C.t["+I4gdX"]),
         trailing: R && U ? u.owK : true,
         disabled: B
       }), (0, r.jsx)(u.izJ, {}), (0, r.jsx)(u.C3N, {
-        label: C.intl.string(C.t.AU2HU0),
-        description: C.intl.string(C.t.iWBt3Q),
+        label: C.intl.string(C.t.AU2HU1),
+        description: C.intl.string(C.t.iWBt3d),
         children: (0, r.jsx)(u.rsf, {
-          label: C.intl.string(C.t.hJsAPo),
-          description: C.intl.string(C.t.hn65ET),
+          label: C.intl.string(C.t.hJsAPj),
+          description: C.intl.string(C.t.hn65ER),
           icon: u.tBG,
           checked: D,
           onChange: e => A(e),

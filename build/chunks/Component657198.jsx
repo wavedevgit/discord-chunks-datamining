@@ -78,9 +78,9 @@ function v(e, t, n) {
       let f = {};
       if (l > 0) {
         let e;
-        e = c > 0 ? m.intl.formatToPlainString(m.t.BP8N0K, {
+        e = c > 0 ? m.intl.formatToPlainString(m.t.BP8N0N, {
           count: l
-        }) : m.intl.formatToPlainString(m.t.lziVC9, {
+        }) : m.intl.formatToPlainString(m.t.lziVCw, {
           count: l
         }), f["data-trailing-placeholder"] = e
       }
@@ -137,7 +137,7 @@ let I = e => {
   }) : (0, r.jsxs)("span", {
     className: o()(g.optionPillValue, g.readonlyPillValue),
     contentEditable: false,
-    children: [m.intl.string(m.t.GRdFni), E]
+    children: [m.intl.string(m.t.GRdFnp), E]
   }) : (0, r.jsxs)("span", {
     className: g.optionPillValue,
     children: [E, N ? (0, r.jsx)("span", {

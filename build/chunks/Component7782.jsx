@@ -60,7 +60,7 @@ let T = e => {
     return null == l || 0 === l.length ? (0, i.jsx)(c.Text, {
       color: "header-secondary",
       variant: "text-sm/normal",
-      children: I.intl.string(I.t.zjVh8h)
+      children: I.intl.string(I.t.zjVh8v)
     }) : (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)("div", {
         className: Z.avatarContainer,
@@ -77,7 +77,7 @@ let T = e => {
         children: (0, i.jsx)(c.Text, {
           className: Z.mutualGuilds,
           variant: "text-sm/normal",
-          children: I.intl.format(I.t.eE3oep, {
+          children: I.intl.format(I.t.eE3oen, {
             count: l.length
           })
         })
@@ -105,7 +105,7 @@ let T = e => {
           location: S.ZY5.DM_CHANNEL
         })
       },
-      text: I.intl.string(I.t.l4Emac)
+      text: I.intl.string(I.t.l4EmaW)
     }), d = (0, h.n)({
       userId: r
     });
@@ -129,7 +129,7 @@ let T = e => {
                 location: S.ZY5.DM_CHANNEL
               })
             },
-            text: I.intl.string(I.t.cvSt1J)
+            text: I.intl.string(I.t.cvSt1N)
           }), s]
         });
       case S.OGo.BLOCKED:
@@ -141,7 +141,7 @@ let T = e => {
               location: S.ZY5.DM_CHANNEL
             })
           },
-          text: I.intl.string(I.t.XyHpKH)
+          text: I.intl.string(I.t.XyHpKC)
         });
       case S.OGo.PENDING_INCOMING:
         return (0, i.jsxs)(i.Fragment, {
@@ -158,7 +158,7 @@ let T = e => {
                 location: S.ZY5.DM_CHANNEL
               })
             },
-            text: I.intl.string(I.t.rQSndv)
+            text: I.intl.string(I.t.rQSndn)
           }), s]
         });
       case S.OGo.PENDING_OUTGOING:
@@ -167,7 +167,7 @@ let T = e => {
             size: "sm",
             variant: "primary",
             disabled: true,
-            text: I.intl.string(I.t.xMH6vD)
+            text: I.intl.string(I.t.xMH6vL)
           }), s]
         });
       default:
@@ -179,7 +179,7 @@ let T = e => {
       channelId: t,
       otherUserId: n
     } = e, l = r.useCallback(() => {
-      (0, c.showToast)((0, c.createToast)(I.intl.string(I.t.a2j0hv), c.ToastType.FAILURE))
+      (0, c.showToast)((0, c.createToast)(I.intl.string(I.t.a2j0ho), c.ToastType.FAILURE))
     }, []), a = r.useCallback(() => {
       C.Z.closeChannelSidebar(v.uZ)
     }, []), o = r.useCallback(() => {
@@ -204,14 +204,14 @@ let T = e => {
         disabled: g,
         onClick: () => s(t),
         loading: d,
-        text: I.intl.string(I.t.Kz8Pwr)
+        text: I.intl.string(I.t.Kz8Pws)
       }), (0, i.jsx)(c.Button, {
         variant: "secondary",
         size: "sm",
         disabled: g,
         onClick: () => u(t),
         loading: p,
-        text: I.intl.string(I.t.B2nygW)
+        text: I.intl.string(I.t.B2nygY)
       })]
     })
   },
@@ -244,7 +244,7 @@ let T = e => {
     }), y = d !== S.OGo.PENDING_INCOMING || u || p ? null : (0, i.jsx)(c.Text, {
       color: "header-secondary",
       variant: "text-sm/normal",
-      children: I.intl.string(I.t.c2v5nO)
+      children: I.intl.string(I.t.c2v5nJ)
     });
     return (0, i.jsxs)("div", {
       className: m ? Z.mobileContainer : Z.container,

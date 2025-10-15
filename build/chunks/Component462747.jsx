@@ -81,7 +81,7 @@ function Z() {
       color: "header-primary",
       variant: "heading-xl/semibold",
       className: Chunk200608.title,
-      children: Chunk388032.intl.string(Chunk388032.t.hW0mBR)
+      children: Chunk388032.intl.string(Chunk388032.t.hW0mBQ)
     })
   })
 }
@@ -92,7 +92,7 @@ function y() {
       color: "header-secondary",
       variant: "heading-md/semibold",
       className: Chunk200608.errorTitle,
-      children: Chunk388032.intl.string(Chunk388032.t.obChXk)
+      children: Chunk388032.intl.string(Chunk388032.t.obChXl)
     })
   })
 }
@@ -115,7 +115,7 @@ function C(e) {
     }), (0, l.jsx)(o.Text, {
       color: "text-default",
       variant: "text-md/normal",
-      children: j.intl.format(j.t.BdQTfR, {
+      children: j.intl.format(j.t.BdQTfX, {
         userRemainCount: n
       })
     })]
@@ -182,7 +182,7 @@ function P(e) {
   })
 }
 
-function k(e) {
+function E(e) {
   let {
     children: n,
     style: t
@@ -194,12 +194,12 @@ function k(e) {
   })
 }
 
-function E(e) {
+function k(e) {
   let {
     children: n,
     height: t
   } = e;
-  return (0, l.jsx)(k, {
+  return (0, l.jsx)(E, {
     style: {
       height: t
     },
@@ -216,22 +216,22 @@ function w(e) {
     error: c,
     containerHeight: d
   } = e, u = (0, g.Z)(n.guild_id, n.id, r);
-  if (s && 0 === i.length) return (0, l.jsx)(E, {
+  if (s && 0 === i.length) return (0, l.jsx)(k, {
     height: d,
     children: (0, l.jsx)(o.$jN, {
       type: o.$jN.Type.SPINNING_CIRCLE,
       className: p.spinner
     })
   });
-  if (null != c && 0 === i.length) return (0, l.jsx)(E, {
+  if (null != c && 0 === i.length) return (0, l.jsx)(k, {
     height: d,
     children: (0, l.jsx)(y, {})
   });
   let _ = 0;
-  return i.length >= v.rC && u > v.rC && (_ = Math.max(u - i.length, 0)), 0 === i.length ? (0, l.jsx)(E, {
+  return i.length >= v.rC && u > v.rC && (_ = Math.max(u - i.length, 0)), 0 === i.length ? (0, l.jsx)(k, {
     height: d,
     children: (0, l.jsx)(Z, {})
-  }) : (0, l.jsx)(k, {
+  }) : (0, l.jsx)(E, {
     children: (0, l.jsx)(P, {
       eventUsers: i,
       guildId: n.guild_id,

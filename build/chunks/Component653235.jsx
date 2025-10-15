@@ -73,7 +73,7 @@ function R(e) {
   let n = l().sample(l().values(e));
   return {
     type: O.wI2.FAVORITES,
-    name: v.intl.string(v.t.y3LQCG),
+    name: v.intl.string(v.t.y3LQCA),
     icon: f.r7p,
     src: null != n ? n.src : "https://media.giphy.com/media/1TOSaJsWtnhe0/giphy.gif",
     format: null != (t = null == n ? true : n.format) ? t : u.EO.IMAGE

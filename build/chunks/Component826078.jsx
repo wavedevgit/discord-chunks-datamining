@@ -54,21 +54,21 @@ function j(e, t) {
 let y = function(e) {
   var t, n, l, y, C, k;
   let {
-    sourceURL: P
+    sourceURL: O
   } = e, {
-    videoPlayerRef: O,
+    videoPlayerRef: P,
     cropData: S,
     setCropData: N
-  } = (0, v.S)(), [E, R] = r.useState(((k = !(null == (n = O.current) || null == (t = n.videoElement) ? true : t.paused), true), k)), T = r.useRef(null), [L, D] = r.useState(null), [F, A] = r.useState(), I = r.useRef(null), Z = r.useRef(null), [M, B] = r.useState(0), [z, H] = r.useState(false), [W, U] = r.useState(null);
+  } = (0, v.S)(), [E, R] = r.useState(((k = !(null == (n = P.current) || null == (t = n.videoElement) ? true : t.paused), true), k)), T = r.useRef(null), [L, D] = r.useState(null), [F, A] = r.useState(), I = r.useRef(null), Z = r.useRef(null), [M, B] = r.useState(0), [z, H] = r.useState(false), [W, U] = r.useState(null);
   (0, d.Z)(() => {
     var e;
-    let t = null == (e = O.current) ? true : e.videoElement;
+    let t = null == (e = P.current) ? true : e.videoElement;
     null != t && M !== t.currentTime && B(t.currentTime)
   });
   let V = r.useMemo(() => S.end - S.start, [S]);
   r.useEffect(() => {
     var e;
-    let t = null == (e = O.current) ? true : e.videoElement,
+    let t = null == (e = P.current) ? true : e.videoElement,
       n = I.current,
       a = Z.current;
     if (null == t || null == n || null == a) return;
@@ -82,17 +82,17 @@ let y = function(e) {
     return t.addEventListener("play", l), t.addEventListener("pause", i), () => {
       t.removeEventListener("play", l), t.removeEventListener("pause", i)
     }
-  }, [O]);
+  }, [P]);
   let {
     ref: Y,
-    width: K = 0,
+    width: X = 0,
     height: G = 0
-  } = (0, c.ZP)(), X = (0, s.e7)([p.Z], () => p.Z.windowSize());
+  } = (0, c.ZP)(), K = (0, s.e7)([p.Z], () => p.Z.windowSize());
   r.useMemo(() => {
-    X.width, X.height;
+    K.width, K.height;
     let e = Y.current;
     null != e && U(e.getBoundingClientRect())
-  }, [X.width, X.height, K, Y]);
+  }, [K.width, K.height, X, Y]);
   let Q = r.useRef(null),
     J = r.useRef({}),
     $ = r.useCallback(e => {
@@ -100,17 +100,17 @@ let y = function(e) {
       let n = (0, o.clamp)(e, 0, S.end - h.Hp);
       N(j(b({}, S), {
         start: n
-      })), null == (t = O.current) || t.seek(n)
-    }, [S, N, O]),
+      })), null == (t = P.current) || t.seek(n)
+    }, [S, N, P]),
     q = r.useCallback(e => {
       var t, n;
-      let a = null == (t = O.current) ? true : t.videoElement;
+      let a = null == (t = P.current) ? true : t.videoElement;
       if (null == a) return;
       let r = (0, o.clamp)(e, S.start + h.Hp, a.duration);
       N(j(b({}, S), {
         end: r
-      })), null == (n = O.current) || n.seek(r)
-    }, [S, N, O]),
+      })), null == (n = P.current) || n.seek(r)
+    }, [S, N, P]),
     ee = r.useCallback((e, t) => {
       var n, a;
       if (null == F) return;
@@ -118,16 +118,16 @@ let y = function(e) {
       let r = ((0, o.clamp)(e, W.left, W.right) - W.left) / W.width * F,
         l = (0, o.clamp)(r, 0, F),
         i = L;
-      if (null == i && t && (i = l <= S.start ? "start" : l >= S.end ? "end" : "playhead", null == (n = O.current) || n.pause(), D(i), H(E)), "start" === i) $(l);
+      if (null == i && t && (i = l <= S.start ? "start" : l >= S.end ? "end" : "playhead", null == (n = P.current) || n.pause(), D(i), H(E)), "start" === i) $(l);
       else if ("end" === i) q(l);
       else if ("playhead" === i) {
         let e = (0, o.clamp)(l, S.start, S.end);
-        null == (a = O.current) || a.seek(e)
+        null == (a = P.current) || a.seek(e)
       }
-    }, [F, W, L, S.start, S.end, O, E, $, q]),
+    }, [F, W, L, S.start, S.end, P, E, $, q]),
     et = r.useCallback(e => {
       var t;
-      let n = null == (t = O.current) ? true : t.videoElement;
+      let n = null == (t = P.current) ? true : t.videoElement;
       if (null == n) return;
       let a = (0, f.Z)(n.duration, e.shiftKey),
         r = false;
@@ -139,10 +139,10 @@ let y = function(e) {
           r = true, $(S.start + a)
       }
       r && (e.stopPropagation(), e.preventDefault())
-    }, [O, $, S.start]),
+    }, [P, $, S.start]),
     en = r.useCallback(e => {
       var t;
-      let n = null == (t = O.current) ? true : t.videoElement;
+      let n = null == (t = P.current) ? true : t.videoElement;
       if (null == n) return;
       let a = (0, f.Z)(n.duration, e.shiftKey),
         r = false;
@@ -154,7 +154,7 @@ let y = function(e) {
           r = true, q(S.end + a)
       }
       r && (e.stopPropagation(), e.preventDefault())
-    }, [O, q, S.end]),
+    }, [P, q, S.end]),
     ea = r.useCallback(e => {
       ee(e.clientX, true)
     }, [ee]),
@@ -164,10 +164,10 @@ let y = function(e) {
     el = r.useCallback(() => {
       if (z) {
         var e;
-        null == (e = O.current) || e.play()
+        null == (e = P.current) || e.play()
       }
       H(false), D(null)
-    }, [O, z]);
+    }, [P, z]);
   r.useEffect(() => (document.addEventListener("mousemove", er), document.addEventListener("mouseup", el), () => {
     document.removeEventListener("mousemove", er), document.removeEventListener("mouseup", el)
   }), [er, el]), r.useEffect(() => {
@@ -176,12 +176,12 @@ let y = function(e) {
       let t = Y.current,
         n = T.current;
       if (null == t || null == n || null == F) return;
-      t.height = G, t.width = K;
+      t.height = G, t.width = X;
       let a = t.getContext("2d");
       if (null == a) return;
-      a.fillStyle = "#000", a.fillRect(0, 0, K, G);
+      a.fillStyle = "#000", a.fillRect(0, 0, X, G);
       let r = Math.ceil(G * (n.videoWidth / n.videoHeight)),
-        l = Math.ceil(K / r),
+        l = Math.ceil(X / r),
         i = Q.current;
       if (null == i) return;
       i.width = r, i.height = G;
@@ -199,12 +199,12 @@ let y = function(e) {
           a.drawImage(n, r * e, 0, r, G), o.drawImage(n, 0, 0, r, G);
           let i = o.getImageData(0, 0, r, G);
           null == s[l] && (s[l] = []), s[l][e] = i, t()
-        }, n.currentTime = r / K * F * e
+        }, n.currentTime = r / X * F * e
       })
     }()
-  }, [K, G, Y, F, Q]);
+  }, [X, G, Y, F, Q]);
   let ei = M - S.start,
-    eo = null == (l = O.current) ? true : l.videoElement;
+    eo = null == (l = P.current) ? true : l.videoElement;
   return (0, a.jsx)("div", {
     className: x.centeringWrapper,
     children: (0, a.jsxs)("div", {
@@ -215,7 +215,7 @@ let y = function(e) {
           tabIndex: 0,
           onClick: () => {
             var e, t;
-            return E ? null == (e = O.current) ? true : e.pause() : null == (t = O.current) ? true : t.play()
+            return E ? null == (e = P.current) ? true : e.pause() : null == (t = P.current) ? true : t.play()
           },
           className: x.playPauseButton,
           children: E ? (0, a.jsx)(u.fpf, {
@@ -255,7 +255,7 @@ let y = function(e) {
             if (null != e) {
               if (A(e.duration), 0 === S.start && (0 === S.end || S.end === e.duration)) {
                 var t;
-                null == (t = O.current) || t.seek(e.duration / 2), B(e.duration / 2)
+                null == (t = P.current) || t.seek(e.duration / 2), B(e.duration / 2)
               }
               0 === S.end && N(t => j(b({}, t), {
                 end: e.duration
@@ -264,7 +264,7 @@ let y = function(e) {
           },
           className: x.timelineVideo,
           ref: T,
-          src: P,
+          src: O,
           muted: true
         }), (0, a.jsxs)("div", {
           className: x.dragBox,
@@ -317,8 +317,8 @@ let y = function(e) {
               "aria-valuemin": S.start + h.Hp,
               "aria-valuenow": S.end,
               "aria-valuetext": w(S.end),
-              "aria-valuemax": null == (C = O.current) || null == (y = C.videoElement) ? true : y.duration,
-              "aria-label": g.intl.string(g.t.bBgBYo),
+              "aria-valuemax": null == (C = P.current) || null == (y = C.videoElement) ? true : y.duration,
+              "aria-label": g.intl.string(g.t.bBgBYm),
               children: (0, a.jsx)("div", {
                 className: x.cropRightArrow
               })
@@ -340,10 +340,10 @@ function _(e) {
 
 function w(e) {
   let t = Math.floor(e / 60),
-    n = g.intl.formatToPlainString(g.t.iXLF9W, {
+    n = g.intl.formatToPlainString(g.t.iXLF9f, {
       minutes: t
     }),
-    a = g.intl.formatToPlainString(g.t.geSp4K, {
+    a = g.intl.formatToPlainString(g.t.geSp4O, {
       seconds: e % 60
     });
   return "".concat(n, " ").concat(a)

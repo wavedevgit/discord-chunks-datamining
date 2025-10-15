@@ -119,7 +119,7 @@ function I(e) {
             borderColor: w
           },
           className: m.swatch,
-          "aria-label": h.intl.string(h.t.Qp04hK),
+          "aria-label": h.intl.string(h.t.Qp04hI),
           focusProps: {
             ringTarget: A
           },

@@ -75,11 +75,11 @@ let m = e => {
             variant: "heading-xxl/semibold",
             color: "header-primary",
             className: d.qrcodeTextHeading,
-            children: c.intl.string(c.t.llDCid)
+            children: c.intl.string(c.t.llDCiY)
           }), (0, r.jsx)(i.Heading, {
             variant: "heading-xxl/normal",
             color: "header-secondary",
-            children: c.intl.string(c.t.JfHzXG)
+            children: c.intl.string(c.t.JfHzXF)
           })]
         })]
       }), (0, r.jsxs)("div", {
@@ -90,7 +90,7 @@ let m = e => {
           variant: "heading-lg/semibold",
           color: "header-primary",
           className: d.dividerText,
-          children: c.intl.string(c.t.arEHn4)
+          children: c.intl.string(c.t.arEHn5)
         }), (0, r.jsx)("div", {
           className: d.divider
         })]
@@ -102,11 +102,11 @@ let m = e => {
             variant: "heading-xxl/semibold",
             color: "header-primary",
             className: d.fallbackContentHeading,
-            children: c.intl.string(c.t["Eu8rJ/"])
+            children: c.intl.string(c.t.Eu8rJy)
           }), (0, r.jsx)(i.Heading, {
             variant: "heading-xxl/normal",
             color: "header-secondary",
-            children: c.intl.string(c.t.BkEMJ1)
+            children: c.intl.string(c.t.BkEMJy)
           })]
         }), (0, r.jsxs)("div", {
           className: d.fallbackContentAction,
@@ -120,7 +120,7 @@ let m = e => {
             children: [(0, r.jsx)(i.Heading, {
               variant: "heading-xxl/normal",
               color: "header-secondary",
-              children: c.intl.string(c.t.RyDxBX)
+              children: c.intl.string(c.t.RyDxBQ)
             }), (0, r.jsx)(i.Heading, {
               variant: "heading-xxl/bold",
               color: "header-primary",

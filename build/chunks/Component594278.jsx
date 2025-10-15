@@ -46,7 +46,7 @@ let m = function(e) {
         direction: c.Z.Directions.LEFT,
         height: 48,
         width: 48,
-        "aria-label": u.intl.string(u.t.FAmEgm)
+        "aria-label": u.intl.string(u.t.FAmEgo)
       })
     }), (0, r.jsx)(d.Z, {
       step: x,
@@ -64,7 +64,7 @@ let m = function(e) {
         direction: c.Z.Directions.RIGHT,
         height: 48,
         width: 48,
-        "aria-label": u.intl.string(u.t.Fa8W1W)
+        "aria-label": u.intl.string(u.t.Fa8W1d)
       })
     })]
   })

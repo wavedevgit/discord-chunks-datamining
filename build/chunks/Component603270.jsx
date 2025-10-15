@@ -94,14 +94,14 @@ function L(e) {
   }, [t, p]);
   let b = _.subscriptions.length,
     O = _.otps.length,
-    S = i.useMemo(() => b > 0 && O > 0 ? N.intl.formatToPlainString(N.t["jA648+"], {
+    S = i.useMemo(() => b > 0 && O > 0 ? N.intl.formatToPlainString(N.t["jA648/"], {
       subCount: b,
       itemCount: O
-    }) : b > 0 ? N.intl.formatToPlainString(N.t.GSfibA, {
+    }) : b > 0 ? N.intl.formatToPlainString(N.t.GSfibG, {
       count: b
-    }) : O > 0 ? N.intl.formatToPlainString(N.t.j7Go5A, {
+    }) : O > 0 ? N.intl.formatToPlainString(N.t.j7Go5O, {
       count: O
-    }) : N.intl.string(N.t.rMA98g), [O, b]);
+    }) : N.intl.string(N.t.rMA98v), [O, b]);
   if (!o || null == u) return null;
   let P = () => {
       (0, l.ZDy)(async () => {
@@ -133,7 +133,7 @@ function L(e) {
     };
   return (0, r.jsx)(M, {
     appName: u.name,
-    title: N.intl.formatToPlainString(N.t.XDRjs5, {
+    title: N.intl.formatToPlainString(N.t.XDRjs7, {
       appName: u.name
     }),
     description: S,
@@ -145,7 +145,7 @@ function L(e) {
       className: R.openStoreButton,
       children: (0, r.jsx)(l.Button, {
         onClick: D,
-        text: N.intl.string(N.t.kRvlKJ)
+        text: N.intl.string(N.t.kRvlKC)
       })
     })
   })
@@ -222,13 +222,13 @@ function x(e) {
         size: "custom",
         width: B,
         height: B
-      }), " ", N.intl.string(N.t.wnifjC)]
+      }), " ", N.intl.string(N.t.wnifjI)]
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.QTo, {
         size: "custom",
         width: B,
         height: B
-      }), " ", N.intl.string(N.t.NRC3ar)]
+      }), " ", N.intl.string(N.t.NRC3am)]
     }) : null == E || null == (t = E.description) ? true : t.trim();
   "" === Z && (Z = true);
   let F = () => {
@@ -268,7 +268,7 @@ function x(e) {
       children: [(0, r.jsx)(l.Button, {
         variant: "secondary",
         onClick: V,
-        text: N.intl.string(N.t.DXYfjO)
+        text: N.intl.string(N.t.DXYfjI)
       }), j ? null != g ? (0, r.jsx)(S.pV, {
         onClick: L,
         appId: b.id,
@@ -280,7 +280,7 @@ function x(e) {
         state: x
       }) : (0, r.jsx)(l.Button, {
         variant: "primary",
-        text: N.intl.string(N.t.uuzaAK),
+        text: N.intl.string(N.t.uuzaAA),
         onClick: G
       }) : (0, r.jsx)(S.YG, {
         appId: b.id,
@@ -317,14 +317,14 @@ function M(e) {
           children: t
         })]
       }), O.wS && (0, r.jsx)(l.hU, {
-        "aria-label": N.intl.string(N.t.WqhZss),
+        "aria-label": N.intl.string(N.t.WqhZsr),
         icon: () => (0, r.jsx)(l.xPt, {
           size: "xs"
         }),
         size: "sm",
         onClick: () => {
           (0, O.JG)(a, () => {
-            (0, l.showToast)((0, l.createToast)(N.intl.string(N.t["L/PwZf"]), l.ToastType.SUCCESS)), c()
+            (0, l.showToast)((0, l.createToast)(N.intl.string(N.t["L/PwZW"]), l.ToastType.SUCCESS)), c()
           })
         },
         variant: "icon-only"

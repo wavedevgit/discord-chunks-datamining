@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
 function c() {
   let e = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.isVideoAvailable());
   return (0, Chunk951288.jsx)(Chunk670863.j, {
-    label: Chunk388032.intl.string(Chunk388032.t.FsQ3OR),
+    label: Chunk388032.intl.string(Chunk388032.t.FsQ3OT),
     deviceType: Chunk65154.h7.VIDEO_INPUT,
     location: "UserSettingsCameraSelect",
     isDisabled: !module,

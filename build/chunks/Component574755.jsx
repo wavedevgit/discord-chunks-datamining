@@ -48,7 +48,7 @@ function O(e) {
         className: t,
         children: [n ? (0, r.jsxs)(s.Heading, {
           variant: "heading-lg/semibold",
-          children: [y.intl.string(y.t.z2jK6X), " ", (0, r.jsx)(g.Z, {})]
+          children: [y.intl.string(y.t.z2jK6e), " ", (0, r.jsx)(g.Z, {})]
         }) : null, T && (0, r.jsx)("form", {
           onSubmit: e => e.preventDefault(),
           children: (0, r.jsxs)(s.Kqy, {
@@ -59,15 +59,15 @@ function O(e) {
       }), T && (0, r.jsx)(s.izJ, {}), (0, r.jsxs)(s.Kqy, {
         gap: 16,
         children: [(0, r.jsx)(s.rsf, {
-          label: y.intl.string(y.t.AGDDkH),
-          description: y.intl.string(y.t["wW9/zQ"]),
+          label: y.intl.string(y.t.AGDDkJ),
+          description: y.intl.string(y.t["wW9/zc"]),
           checked: O,
           onChange: e => m.yg({
             allowVoiceRecording: e
           })
         }), v && A && (0, r.jsx)(s.rsf, {
-          label: y.intl.string(y.t.NWw7kY),
-          description: y.intl.string(y.t["0vjy8N"]),
+          label: y.intl.string(y.t.NWw7kZ),
+          description: y.intl.string(y.t["0vjy8P"]),
           checked: S,
           onChange: e => m.yl({
             enabled: e,

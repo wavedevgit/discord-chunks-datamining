@@ -25,7 +25,7 @@ function p(e) {
   });
   return (0, r.jsxs)(i.v2r, {
     navId: "guild-context",
-    "aria-label": d.intl.string(d.t.HpQykc),
+    "aria-label": d.intl.string(d.t.HpQykZ),
     onClose: l.Zy,
     onSelect: n,
     children: [(0, r.jsx)(i.kSQ, {

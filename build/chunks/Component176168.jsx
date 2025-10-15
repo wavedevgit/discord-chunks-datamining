@@ -23,7 +23,7 @@ let p = function(e) {
       children: [(0, r.jsx)(i.Heading, {
         className: u.barHeading,
         variant: "heading-md/semibold",
-        children: s.intl.string(s.t.rjVPdM)
+        children: s.intl.string(s.t.rjVPdH)
       }), (0, r.jsx)("div", {
         className: u.fixedBarContainer,
         children: (0, r.jsx)("div", {

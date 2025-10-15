@@ -52,13 +52,13 @@ function h(e) {
     children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/medium",
       color: "text-secondary",
-      children: d.intl.string(d.t.f09BQJ)
+      children: d.intl.string(d.t.f09BQE)
     }), (0, r.jsx)(a.ZP, {
       items: b,
       title: g,
       onSelect: m,
       selected: "".concat(n),
-      "aria-label": d.intl.string(d.t.Ng5cTK),
+      "aria-label": d.intl.string(d.t.Ng5cTE),
       variant: a.PA.FILLED
     })]
   })

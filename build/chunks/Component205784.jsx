@@ -27,13 +27,13 @@ function p(e) {
   } = e, h = (0, l.e7)([s.ZP], () => s.ZP.getGuildFolderById(p), [p]), y = (0, u.Z)(null != (t = null == h ? true : h.guildIds) ? t : []), k = (0, l.e7)([d.Z], () => d.Z.getExpandedFolders().size > 0);
   return (0, r.jsxs)(i.v2r, {
     navId: "guild-context",
-    "aria-label": f.intl.string(f.t.HpQykc),
+    "aria-label": f.intl.string(f.t.HpQykZ),
     onClose: o.Zy,
     onSelect: O,
     children: [(0, r.jsx)(i.kSQ, {
       children: (0, r.jsx)(i.sNh, {
         id: "mark-folder-read",
-        label: f.intl.string(f.t.thzRJA),
+        label: f.intl.string(f.t.thzRJC),
         action: function() {
           if (null == h) return;
           let {
@@ -90,7 +90,7 @@ function p(e) {
         })
       }), k && (0, r.jsx)(i.sNh, {
         id: "folder-collapse",
-        label: f.intl.string(f.t.rCPsbo),
+        label: f.intl.string(f.t.rCPsbm),
         action: () => a.Z.collapseAllFolders()
       })]
     })]

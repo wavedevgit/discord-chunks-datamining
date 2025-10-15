@@ -128,7 +128,7 @@ function L(e) {
     let e = t.paymentSourceId;
     return (0, r.jsx)(h.ZP, {
       prependOption: null == e ? {
-        label: A.intl.string(A.t.iA5vA1),
+        label: A.intl.string(A.t.iA5vAw),
         value: null
       } : null,
       className: s,
@@ -145,7 +145,7 @@ function L(e) {
     fullWidth: true,
     variant: a ? "primary" : "secondary",
     onClick: X,
-    text: A.intl.string(A.t.CpOiEO)
+    text: A.intl.string(A.t.CpOiEB)
   }), $ = e => {
     l()(null != e.paymentGateway, "Expected payment gateway when managed externally");
     let t = (0, O.JE)(e.paymentGateway, "PAYMENT_SOURCE_MANAGEMENT");
@@ -155,7 +155,7 @@ function L(e) {
       className: C.externalLink,
       children: (0, r.jsx)(u.Button, {
         variant: "secondary",
-        text: A.intl.string(A.t.SgX7Ra),
+        text: A.intl.string(A.t.SgX7RU),
         fullWidth: true
       })
     })
@@ -173,7 +173,7 @@ function L(e) {
         children: (0, r.jsxs)("div", {
           className: o()(C.currency, N.flex, N.alignCenter),
           children: [(0, r.jsx)("div", {
-            children: A.intl.string(A.t["0YjaXf"])
+            children: A.intl.string(A.t["0YjaXV"])
           }), (0, r.jsx)(p.Z, {
             className: C.currencyDropdown,
             selectedCurrency: V,

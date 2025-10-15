@@ -108,14 +108,14 @@ function y(e) {
   } = E[y];
   if (null == i) return (0, r.jsx)(l.f, {
     src: true,
-    alt: u.intl.string(u.t["2B/phM"]),
+    alt: u.intl.string(u.t["2B/phI"]),
     size: v,
     className: a()(d.contentImage, m[null != p ? p : "default"], O),
     constrain: "width"
   });
   let S = (0, r.jsx)(l.f, {
     src: i.src,
-    alt: null != (n = null != (t = i.alt) ? t : i.text) ? n : u.intl.string(u.t["2B/phM"]),
+    alt: null != (n = null != (t = i.alt) ? t : i.text) ? n : u.intl.string(u.t["2B/phI"]),
     size: v,
     className: a()(d.contentImage, m[null != p ? p : "default"]),
     constrain: "width"

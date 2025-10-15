@@ -33,11 +33,11 @@ function o(e) {
         className: s.label,
         color: "none",
         variant: "text-md/bold",
-        children: a.intl.string(a.t.yiaoNr)
+        children: a.intl.string(a.t.yiaoNj)
       }), (0, r.jsxs)(i.Text, {
         color: "none",
         variant: "text-xs/normal",
-        children: [t.name, " • ", a.intl.string(a.t.JwYI3O)]
+        children: [t.name, " • ", a.intl.string(a.t.JwYI3N)]
       })]
     }), (0, r.jsx)(l.Z, {
       className: s.arrow,

@@ -31,16 +31,16 @@ function _(t) {
       type: "image",
       src: E
     },
-    title: u.intl.string(u.t["41NIIh"]),
+    title: u.intl.string(u.t["41NIIi"]),
     onClose: n,
     transitionState: C,
     actions: [{
       variant: "secondary",
-      text: u.intl.string(u.t["ETE/oC"]),
+      text: u.intl.string(u.t["ETE/oK"]),
       onClick: n
     }, {
       variant: "primary",
-      text: u.intl.string(u.t["3PatSz"]),
+      text: u.intl.string(u.t["3PatS0"]),
       disabled: null == _,
       onClick: e
     }],
@@ -58,7 +58,7 @@ function _(t) {
       value: A,
       maxLength: c.mF,
       onChange: x,
-      placeholder: u.intl.string(u.t.Q8Rk7N)
+      placeholder: u.intl.string(u.t.Q8Rk7O)
     })]
   })
 }

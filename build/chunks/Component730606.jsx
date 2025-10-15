@@ -142,14 +142,14 @@ function w(e) {
             e.stopPropagation(), h.S.dispatch(T.CkL.MODAL_CAROUSEL_PREV)
           },
           icon: s.j9r,
-          tooltip: S.intl.string(S.t.vgfxaA),
+          tooltip: S.intl.string(S.t.vgfxaG),
           className: o()(A.navPrev, e)
         }), (0, r.jsx)(v.Z, {
           onClick: e => {
             e.stopPropagation(), h.S.dispatch(T.CkL.MODAL_CAROUSEL_NEXT)
           },
           icon: s.d4D,
-          tooltip: S.intl.string(S.t.XiOHRX),
+          tooltip: S.intl.string(S.t.XiOHRU),
           className: o()(A.navNext, e)
         })]
       }) : true

@@ -45,7 +45,7 @@ let s = Chunk442837.ZP.connectStores([Chunk226961.ZP], e => {
     mediaEngineConnectionId: s,
     userId: i,
     videoStreams: c,
-    title: o.intl.string(o.t.SJmZaq),
+    title: o.intl.string(o.t.SJmZam),
     showUserInfo: true
   })
 })

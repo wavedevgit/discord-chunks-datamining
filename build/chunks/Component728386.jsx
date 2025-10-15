@@ -76,7 +76,7 @@ function E(e, t) {
         O(), T()
       },
       isActive: b,
-      "aria-label": f.intl.string(f.t.rZpidU),
+      "aria-label": f.intl.string(f.t.rZpidX),
       "aria-expanded": b,
       "aria-haspopup": "dialog",
       "aria-controls": m,

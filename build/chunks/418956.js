@@ -1,19 +1,3 @@
-/** Chunk was on 57695 **/
-/** chunk id: 418956, original params: e,t,n (module,exports,require) **/
-module.exports = {
-  tutorial: "tutorial__73f2a",
-  shown: "shown__73f2a",
-  arrowGroup: "arrowGroup__73f2a",
-  right: "right__73f2a",
-  arrowContainer: "arrowContainer__73f2a",
-  horizontal: "horizontal__73f2a",
-  diag1: "diag1__73f2a",
-  diag2: "diag2__73f2a",
-  arrowIcon: "arrowIcon__73f2a",
-  "arrow-pulse": "arrow-pulse__73f2a",
-  tutorialMessages: "tutorialMessages__73f2a",
-  message: "message__73f2a",
-  searchMessage: "searchMessage__73f2a message__73f2a",
-  selectMessage: "selectMessage__73f2a message__73f2a",
-  hasQuery: "hasQuery__73f2a"
-}
+/** Chunk was on 82968 **/
+/** chunk id: 418956, original params: o (module,exports,require) **/
+module.exports = JSON.parse('{"5YsmGB":"Wstrzymano udostępnianie aktywności","+kxafn":"Udostępnianie aktywności wyłączone","ZI51JS":"Udostępnianie aktywności włączone","khuuzs":"Znajomi mogą dołączać do mojej gry","8EWsJy":"Znajomi mogą dołączać do mojej gry bez wysyłania prośby.","Uz5Ipq":"Pozw\xf3l uczestnikom kanału głosowego dołączać do mojej gry","CZI2GR":"Zezw\xf3l, aby dowolna osoba na udostępnianym kanale głosowym mogła dołączyć do mojej gry bez konieczności przesyłania prośby. Ta funkcja działa jedynie na serwerach, kt\xf3re nie są społecznościowe.","/LHVbm":"Automatycznie udostępniaj moją aktywność po dołączeniu do serwera","ZMYkIS":["Ustawienie „Niewidoczny” ukrywa przed znajomymi i członkami serwera informacje o rozgrywanych przez Ciebie grach. ",[8,"$link",["Dowiedz się więcej"],[[1,"learnMoreLink"]]],"."],"vtp/IS":["Tryb niewidoczny ukrywa informacje o mojej aktywności w grach i połączonych aplikacjach. ",[8,"$link",["Dowiedz się więcej"],[[1,"learnMoreLink"]]],"."],"Yl0mh4":"Tryb niewidoczny ukrywa informacje o mojej aktywności w grach i połączonych aplikacjach.","KXA7Hh":"Zwiększone bezpieczeństwo na serwerach społeczności","t2Ysra":"Kontroluj spos\xf3b udostępniania mojej aktywności w grach i aplikacjach. Decyduj, co jest widoczne i kto to widzi.","OO17Li":"Dostosuj serwery, kt\xf3re wsp\xf3łdzielę.","2O1Z0t":"Udostępniaj wykrywalne gry i aktywności, gdy jesteś dostępny(-a)","MkgMBw":"Aby udostępnić aktywność, ustaw status „Online”","7fSaqq":[[1,"guildName"]," i inne"],"Poezn5":"Ustaw status „Online”","U8MFdX":"Ustaw status „Online”, by udostępniać","qKDqen":"Ustaw status „Online”, aby udostępniać aktywność","jfDsyM":"Ograniczone udostępnianie","HCgxTU":"Brak udostępniania","bAzBIS":["+",[1,"numServers"]," ",[6,"numServers",{"one":["serwer"],"few":["serwery"],"other":["serwer\xf3w"]},0,"cardinal"]],"TG0Qsb":"Serwery, kt\xf3re wsp\xf3łdzielę","sa0cKy":"Serwery, na kt\xf3rych udostępniasz status","EvzDfX":[[6,"count",{"one":[[7]," serwer"],"few":[[7]," serwery"],"other":[[7]," serwer\xf3w"]},0,"cardinal"]],"xxI0/f":"Ustawienia serwera są ignorowane, gdy nie udostępniasz aktywności","Tx6dtL":"Wybierz, czy chcesz udostępniać znajomym i członkom serwera informacje o tym, w co grasz.","k4tCg4":"Udostępniaj aktywność","4BDZf3":["Udostępnij ",[1,"name"]],"+YPjzc":"Udostępniaj gry i aktywności","54ycKC":"Udostępnij w","nHDuwM":["Udostępniaj informacje o mojej aktywności z gier i połączonych aplikacji. ",[8,"$link",["Dowiedz się więcej"],[[1,"learnMoreLink"]]],"."],"UQ9RHB":"Udostępniaj informacje o mojej aktywności z gier i połączonych aplikacji. Obejmuje to informacje o tym, kiedy i jak z nich korzystam.","7cfFoa":"Udostępniaj informacje o mojej aktywności z gier i połączonych aplikacji.","m3oL7e":"Udostępnij na wszystkich serwerach","WhdCGB":"Udostępniaj moją aktywność","/sAeRU":"Udostępnij na serwerach poniżej 200 członk\xf3w","vxVbGB":"Pokaż, w co grasz","w3Okf3":"Udostępnianie aktywności na serwerach","3GrhnJ":"Udostępnianie na serwerach:","TvK8dH":["Pokaż ",[1,"numTruncated"]," więcej"],"Ahj2go":["Pozw\xf3l znajomym i członkom serwera widzieć, w co grasz, gdy masz status „Online”. ",[8,"$link",["Dowiedz się więcej"],[[1,"learnMoreLink"]]],"."],"a3AofX":"Ustawia status „Online”","6cA8HR":"Ustaw status „Online” i pokaż, w co grasz","5rYBAQ":"Kto może dołączyć do moich gier","i2D26e":"Wybierz, kto może dołączyć do Twoich połączonych aplikacji i gier bez wysyłania prośby."}')

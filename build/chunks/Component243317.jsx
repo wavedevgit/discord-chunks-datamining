@@ -13,7 +13,7 @@ var Chunk28664 = require("./28664.jsx"),
 
 function l() {
   return (0, Chunk951288.jsx)(Chunk28664.u, {
-    text: Chunk388032.intl.string(Chunk388032.t["RO/KYj"]),
+    text: Chunk388032.intl.string(Chunk388032.t["RO/KYm"]),
     children: (0, Chunk951288.jsx)("div", {
       className: Chunk136038.badge,
       children: (0, Chunk951288.jsx)(Chunk481060.LQn, {

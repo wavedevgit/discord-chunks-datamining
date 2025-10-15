@@ -141,7 +141,7 @@ function v(e) {
   });
   return Y ? J : (0, r.jsx)("div", {
     role: "img",
-    "aria-label": y.intl.string(y.t.ayozFl),
+    "aria-label": y.intl.string(y.t.ayozFh),
     children: (0, r.jsx)(o.Rny, {
       children: J
     })

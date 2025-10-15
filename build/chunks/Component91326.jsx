@@ -22,9 +22,9 @@ let u = function(e) {
     return t
   }), [n]), d = (0, l.KS)(n);
   return (0, r.jsx)(a.gt, {
-    heading: s.intl.string(s.t["X2K3/4"]),
+    heading: s.intl.string(s.t["X2K3//"]),
     topic: t,
-    location: s.intl.string(s.t.LZA6Na),
+    location: s.intl.string(s.t.LZA6NT),
     locationIcon: null != d ? (0, r.jsx)(d, {
       size: "xs",
       color: "currentColor",

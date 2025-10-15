@@ -33,14 +33,14 @@ function g(e) {
   return null == m ? null : (0, r.jsxs)("div", {
     children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
-      children: u.intl.format(u.t.fvOn6J, {
+      children: u.intl.format(u.t.fvOn6O, {
         guildName: m.name
       })
     }), (0, r.jsx)(l.LZC, {
       size: 16
     }), (0, r.jsx)(l.Button, {
       variant: "critical-primary",
-      text: u.intl.string(u.t.FrOFSo),
+      text: u.intl.string(u.t.FrOFSk),
       disabled: !h || x || j || v,
       onClick: () => {
         (0, l.ZDy)(async () => {

@@ -1,19 +1,19 @@
 /** Chunk was on 4117 **/
 /** chunk id: 217723, original params: t,n,i (module,exports,require) **/
 require.d(exports, {
-  default: () => o
+  default: () => l
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk793030 = require("./793030.js"),
   Chunk388032 = require("./388032.jsx");
 
-function o(t) {
+function l(t) {
   let {
     transitionState: n,
     onConfirm: i,
-    onClose: o,
-    onDismiss: l
+    onClose: l,
+    onDismiss: o
   } = t, [r, u] = s.useState(false), d = async () => {
     if (!r) {
       u(true);
@@ -22,20 +22,20 @@ function o(t) {
       } catch (t) {} finally {
         u(false)
       }
-      o()
+      l()
     }
-  }, k = () => (l(), o());
+  }, p = () => (o(), l());
   return (0, a.jsx)(c.Modal, {
     transitionState: n,
-    onClose: k,
-    title: e.intl.string(e.t["66tnno"]),
-    subtitle: e.intl.string(e.t["c/k4SW"]),
+    onClose: p,
+    title: e.intl.string(e.t["66tnnp"]),
+    subtitle: e.intl.string(e.t["c/k4SU"]),
     actions: [{
-      text: e.intl.string(e.t["ETE/oC"]),
-      onClick: k,
+      text: e.intl.string(e.t["ETE/oK"]),
+      onClick: p,
       variant: "secondary"
     }, {
-      text: e.intl.string(e.t["cY+Oob"]),
+      text: e.intl.string(e.t["cY+Ooa"]),
       onClick: d,
       loading: r
     }]

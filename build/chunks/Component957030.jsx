@@ -23,7 +23,7 @@ function f() {
     children: [(0, Chunk951288.jsx)(Chunk481060.RyX, {
       noticeType: Chunk981631.kVF.SYSTEM_SERVICE_WARNING,
       onClick: () => (0, Chunk256638.c)()
-    }), Chunk388032.intl.string(Chunk388032.t["5rPt+j"]), (0, Chunk951288.jsx)(Chunk481060.NoS, {
+    }), Chunk388032.intl.string(Chunk388032.t["5rPt+v"]), (0, Chunk951288.jsx)(Chunk481060.NoS, {
       onClick: d,
       noticeType: Chunk981631.kVF.SYSTEM_SERVICE_WARNING,
       children: Chunk388032.intl.string(Chunk388032.t["1iI46O"])

@@ -36,7 +36,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk834505 = require("./834505.js");
 
-function D(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -98,9 +98,9 @@ function I(e) {
   } = e, p = (0, o.JA)(t.id), m = l.useCallback(() => {
     c || null == f || f(t)
   }, [f, c, t]);
-  return (0, r.jsxs)(d.P3F, M(D({
-    className: i()(k.destinationRow, {
-      [k.disabled]: c
+  return (0, r.jsxs)(d.P3F, M(k({
+    className: i()(R.destinationRow, {
+      [R.disabled]: c
     }),
     onClick: m,
     "aria-selected": u,
@@ -108,27 +108,27 @@ function I(e) {
     "aria-posinset": h
   }, p), {
     children: [(0, r.jsxs)("div", {
-      className: k.identity,
+      className: R.identity,
       children: [(0, r.jsx)("div", {
-        className: k.iconWrapper,
+        className: R.iconWrapper,
         children: n
       }), (0, r.jsxs)("div", {
-        className: k.labels,
+        className: R.labels,
         children: [(0, r.jsx)(d.Text, {
           tag: "strong",
-          className: k.label,
+          className: R.label,
           variant: "text-md/semibold",
           lineClamp: 1,
           children: a
         }), (0, r.jsx)(d.Text, {
-          className: k.subLabel,
+          className: R.subLabel,
           variant: "text-xs/normal",
           color: "text-muted",
           children: s
         })]
       })]
     }), (0, r.jsx)("div", {
-      className: k.checkbox,
+      className: R.checkbox,
       children: (0, r.jsx)(d.FZ5, {
         checked: u
       })
@@ -146,8 +146,8 @@ function U(e) {
       decoration: "never"
     }),
     s = (0, c.e7)([_.Z], () => _.Z.getNickname(t.id)),
-    u = (0, c.e7)([P.Z], () => P.Z.getStatus(t.id));
-  return (0, r.jsx)(I, M(D({}, l), {
+    u = (0, c.e7)([Z.Z], () => Z.Z.getStatus(t.id));
+  return (0, r.jsx)(I, M(k({}, l), {
     icon: (0, r.jsx)(f.Z, {
       "aria-hidden": true,
       size: d.EFr.SIZE_32,
@@ -159,14 +159,14 @@ function U(e) {
   }))
 }
 
-function F(e) {
+function H(e) {
   var {
     channel: t,
     subLabel: n
   } = e, l = A(e, ["channel", "subLabel"]);
   let a = (0, p.ZP)(t),
     i = (0, y._)(t);
-  return (0, r.jsx)(I, M(D({}, l), {
+  return (0, r.jsx)(I, M(k({}, l), {
     icon: (0, r.jsx)(m.Z, {
       "aria-hidden": true,
       size: d.EFr.SIZE_32,
@@ -178,7 +178,7 @@ function F(e) {
   }))
 }
 
-function H(e) {
+function F(e) {
   var {
     channel: t,
     subLabel: n
@@ -189,15 +189,15 @@ function H(e) {
       let e = S.Z.getChannel(t.parent_id);
       return null == e ? null : (0, p.F6)(e, O.default, _.Z, false)
     }),
-    o = (0, c.e7)([Z.ZP], () => Z.ZP.lastMessageTimestamp(t.id, w.W.CHANNEL)),
+    o = (0, c.e7)([P.ZP], () => P.ZP.lastMessageTimestamp(t.id, w.W.CHANNEL)),
     f = null == a ? true : a.name;
   if (t.isThread() || t.isForumPost()) {
     let e = t.isForumPost() ? d.Mmi : d.VL1;
     f = (0, r.jsxs)("div", {
-      className: k.threadSubLabel,
+      className: R.threadSubLabel,
       children: [(0, r.jsx)(e, {
         color: d.TVs.colors.TEXT_SECONDARY,
-        className: k.subLabelIcon
+        className: R.subLabelIcon
       }), (0, r.jsx)(d.Text, {
         variant: "text-xs/medium",
         color: "text-secondary",
@@ -205,7 +205,7 @@ function H(e) {
         children: s
       }), null != o ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(d.Text, {
-          className: k.subLabelSeparator,
+          className: R.subLabelSeparator,
           variant: "text-xs/medium",
           color: "text-secondary",
           children: "•"
@@ -217,7 +217,7 @@ function H(e) {
       }) : null]
     })
   }
-  return (0, r.jsx)(I, M(D({}, l), {
+  return (0, r.jsx)(I, M(k({}, l), {
     icon: (0, r.jsx)(g.Z, {
       size: g.E.SMALL_32,
       guild: a,
@@ -262,7 +262,7 @@ function q(e) {
         c = (0, x.hC)(o),
         d = function(e) {
           if (e instanceof v.Sf && (0, v.Km)(e.type) && null != e.rateLimitPerUser && e.rateLimitPerUser > 0 && !(E.Z.can(N.Plq.MANAGE_CHANNELS, e) || E.Z.can(N.Plq.MANAGE_MESSAGES, e))) return {
-            label: R.intl.string(R.t.Icu3bf)
+            label: D.intl.string(D.t.Icu3bW)
           }
         }(u),
         b = f.includes(c),
@@ -276,11 +276,11 @@ function q(e) {
           "aria-posinset": l + 1,
           "aria-setsize": t.length
         };
-      return s === h.h8.USER ? (0, r.jsx)(U, D({
+      return s === h.h8.USER ? (0, r.jsx)(U, k({
         user: u
-      }, p)) : s === h.h8.GROUP_DM ? (0, r.jsx)(F, D({
+      }, p)) : s === h.h8.GROUP_DM ? (0, r.jsx)(H, k({
         channel: u
-      }, p)) : s === h.h8.TEXT_CHANNEL || s === h.h8.VOICE_CHANNEL ? (0, r.jsx)(H, D({
+      }, p)) : s === h.h8.TEXT_CHANNEL || s === h.h8.VOICE_CHANNEL ? (0, r.jsx)(F, k({
         channel: u
       }, p)) : void(0, L.vE)(s)
     }, [i, a, t, f]),
@@ -293,7 +293,7 @@ function q(e) {
         var {
           ref: t
         } = e, n = A(e, ["ref"]);
-        return (0, r.jsx)(d.Tvr, M(D({
+        return (0, r.jsx)(d.Tvr, M(k({
           ref: e => {
             var n;
             m.current = e, t.current = null != (n = null == e ? true : e.getScrollerNode()) ? n : null

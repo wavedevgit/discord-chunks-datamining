@@ -1,7 +1,7 @@
 /** Chunk was on 36073 **/
 /** chunk id: 623132, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => k
+  Z: () => N
 }), require("./781311.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -105,7 +105,7 @@ function E(e) {
   } = e;
   return (0, n.jsx)(c.nn4, {
     id: a,
-    children: h.intl.format(h.t.TM0XDY, {
+    children: h.intl.format(h.t.TM0XDQ, {
       name: f.ZP.getName(r, i, t)
     })
   })
@@ -149,7 +149,7 @@ function D(e) {
   })
 }
 
-function N(e) {
+function k(e) {
   let {
     text: t,
     user: r,
@@ -159,12 +159,12 @@ function N(e) {
     applicationId: g
   } = e, f = (0, s.Dt)(), m = (0, s.Dt)(), {
     trackUserProfileEditAction: O
-  } = (0, p.KZ)(), [y, j] = i.useState("idle"), [x, v] = i.useState(null != t ? t : ""), _ = i.useRef(null), P = i.useRef(null), I = h.intl.string(h.t.xKSfBT), S = null != t && "" !== t.trim(), D = i.useCallback(() => {
+  } = (0, p.KZ)(), [y, j] = i.useState("idle"), [x, v] = i.useState(null != t ? t : ""), _ = i.useRef(null), P = i.useRef(null), I = h.intl.string(h.t.xKSfBQ), S = null != t && "" !== t.trim(), D = i.useCallback(() => {
     O({
       action: "PRESS_ADD_COMMENTARY",
       widgetEdited: d
     }), j("editing")
-  }, [d, O]), N = i.useCallback(() => {
+  }, [d, O]), k = i.useCallback(() => {
     let e = x.trim(),
       r = e !== (null != t ? t : "").trim();
     (0, b.Bu)(d, g, "" !== e ? e : true), j("completed"), r && O({
@@ -172,7 +172,7 @@ function N(e) {
       widgetEdited: d,
       gameId: g
     })
-  }, [d, g, x, t, O]), k = i.useCallback(e => {
+  }, [d, g, x, t, O]), N = i.useCallback(e => {
     v(e)
   }, []);
   return i.useEffect(() => {
@@ -187,17 +187,17 @@ function N(e) {
     children: [(0, n.jsx)(c.nn4, {
       tag: "label",
       htmlFor: f,
-      children: h.intl.string(h.t.JxKXeT)
+      children: h.intl.string(h.t.JxKXeX)
     }), (0, n.jsx)(c.Kx8, {
       id: f,
       value: x,
       placeholder: I,
-      onChange: k,
-      onBlur: N,
+      onChange: N,
+      onBlur: k,
       rows: 3,
       autoFocus: "editing" === y,
       onKeyDown: e => {
-        "Enter" !== e.key || e.shiftKey || (e.preventDefault(), N())
+        "Enter" !== e.key || e.shiftKey || (e.preventDefault(), k())
       },
       maxLength: l.rN
     })]
@@ -221,7 +221,7 @@ function N(e) {
       className: o()(w.editableCommentText, !S && w.placeholder)
     }), (0, n.jsx)(c.P3F, {
       innerRef: _,
-      "aria-label": h.intl.string(h.t.ppb9MJ),
+      "aria-label": h.intl.string(h.t.ppb9MD),
       onClick: e => {
         e.stopPropagation(), D()
       },
@@ -232,7 +232,7 @@ function N(e) {
   })
 }
 
-function k(e) {
+function N(e) {
   let {
     user: t,
     guildId: r,
@@ -241,7 +241,7 @@ function k(e) {
     widgetType: o,
     disableInteraction: l = false
   } = e, {
-    gameName: s = h.intl.string(h.t.GIWFlF),
+    gameName: s = h.intl.string(h.t.GIWFlJ),
     imageSrc: u,
     applicationId: d,
     comment: f,
@@ -249,7 +249,7 @@ function k(e) {
   } = a, E = {
     variant: "heading-sm/medium",
     color: "text-default"
-  }, T = g.default.getCurrentUser(), k = (null == T ? true : T.id) === t.id, C = !l && k && (0, b.vI)(o);
+  }, T = g.default.getCurrentUser(), N = (null == T ? true : T.id) === t.id, C = !l && N && (0, b.vI)(o);
   return (0, m.kO)(d) ? (0, n.jsx)(y.i, {}) : (0, n.jsxs)("div", {
     className: w.card,
     children: [(0, n.jsx)(O.Z, {
@@ -268,7 +268,7 @@ function k(e) {
         applicationId: d,
         userId: t.id,
         gameName: s
-      }, E)), C ? (0, n.jsx)(N, {
+      }, E)), C ? (0, n.jsx)(k, {
         text: f,
         user: t,
         guildId: r,
@@ -282,7 +282,7 @@ function k(e) {
         channelId: i
       }), (0, n.jsx)(j.Z, {
         tags: p,
-        isCurrentUser: k,
+        isCurrentUser: N,
         widgetType: o,
         applicationId: d,
         disableInteraction: l,
@@ -293,7 +293,7 @@ function k(e) {
         guildId: r,
         channelId: i
       })]
-    }), !l && k && (0, n.jsx)(x.Z, {
+    }), !l && N && (0, n.jsx)(x.Z, {
       game: a,
       widgetType: o,
       className: w.removeGameButton

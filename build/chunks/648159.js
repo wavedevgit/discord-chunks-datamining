@@ -11,7 +11,7 @@ var Chunk647438 = require("./647438.js"),
 function s() {
   return Chunk647438.useEffect(() => {
     Chunk358085.isPlatformEmbedded || (0, Chunk252618.EM)({
-      messages: [Chunk388032.intl.string(Chunk388032.t.KIX3cl), Chunk388032.intl.string(Chunk388032.t["UbO+8i"]), Chunk388032.intl.string(Chunk388032.t.MbySu9)],
+      messages: [Chunk388032.intl.string(Chunk388032.t.KIX3cn), Chunk388032.intl.string(Chunk388032.t["UbO+8v"]), Chunk388032.intl.string(Chunk388032.t.MbySu7)],
       interval: 600,
       count: 20,
       onlyWhenBlurred: true

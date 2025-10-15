@@ -29,7 +29,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk303572 = require("./303572.js");
 
-function U(e) {
+function L(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,7 +48,7 @@ function U(e) {
   return e
 }
 
-function L(e, t) {
+function U(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -63,36 +63,36 @@ function L(e, t) {
 let M = Chunk647438.memo(function() {
     return (0, Chunk951288.jsx)(Chunk28664.u, {
       "data-pending-richtooltip-migration": true,
-      text: Chunk388032.intl.string(Chunk388032.t["vu/MiQ"]),
+      text: Chunk388032.intl.string(Chunk388032.t["vu/MiY"]),
       children: (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/medium",
         color: "text-muted",
         className: Chunk303572.unknownInvite,
-        children: Chunk388032.intl.string(Chunk388032.t.yobFdm)
+        children: Chunk388032.intl.string(Chunk388032.t.yobFdn)
       })
     })
   }),
-  b = Chunk647438.memo(function() {
+  x = Chunk647438.memo(function() {
     return (0, Chunk951288.jsx)(Chunk28664.u, {
-      text: Chunk388032.intl.string(Chunk388032.t.OrCp9h),
+      text: Chunk388032.intl.string(Chunk388032.t.OrCp9v),
       children: (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/medium",
         color: "text-muted",
         className: Chunk303572.unknownInvite,
-        children: Chunk388032.intl.string(Chunk388032.t["4upToT"])
+        children: Chunk388032.intl.string(Chunk388032.t["4upToa"])
       })
     })
   }),
-  x = {
+  b = {
     [Chunk327999.gq.UNSPECIFIED]: {
       type: Chunk327999.gq.UNSPECIFIED,
-      getJoinTypeLabel: () => Chunk388032.intl.string(Chunk388032.t.DvMBkS),
+      getJoinTypeLabel: () => Chunk388032.intl.string(Chunk388032.t.DvMBkZ),
       icon: null,
       hasTooltip: false
     },
     [Chunk327999.gq.BOT]: {
       type: Chunk327999.gq.BOT,
-      getJoinTypeLabel: () => Chunk388032.intl.string(Chunk388032.t.HumZAi),
+      getJoinTypeLabel: () => Chunk388032.intl.string(Chunk388032.t.HumZAg),
       icon: (0, Chunk951288.jsx)(Chunk481060.wGt, {
         size: "custom",
         color: "currentColor",
@@ -104,7 +104,7 @@ let M = Chunk647438.memo(function() {
     },
     [Chunk327999.gq.INTEGRATION]: {
       type: Chunk327999.gq.INTEGRATION,
-      getJoinTypeLabel: () => Chunk388032.intl.string(Chunk388032.t.gmCUFw),
+      getJoinTypeLabel: () => Chunk388032.intl.string(Chunk388032.t.gmCUFx),
       icon: (0, Chunk951288.jsx)(Chunk481060.tYf, {
         size: "custom",
         color: "currentColor",
@@ -115,7 +115,7 @@ let M = Chunk647438.memo(function() {
     },
     [Chunk327999.gq.DISCOVERY]: {
       type: Chunk327999.gq.DISCOVERY,
-      getJoinTypeLabel: () => Chunk388032.intl.string(Chunk388032.t["Ql/e9Y"]),
+      getJoinTypeLabel: () => Chunk388032.intl.string(Chunk388032.t["Ql/e9f"]),
       icon: (0, Chunk951288.jsx)(Chunk481060.Jmo, {
         size: "custom",
         color: "currentColor",
@@ -126,7 +126,7 @@ let M = Chunk647438.memo(function() {
     },
     [Chunk327999.gq.HUB]: {
       type: Chunk327999.gq.HUB,
-      getJoinTypeLabel: () => Chunk388032.intl.string(Chunk388032.t.Op8B3O),
+      getJoinTypeLabel: () => Chunk388032.intl.string(Chunk388032.t.Op8B3N),
       icon: (0, Chunk951288.jsx)(Chunk481060.aVH, {
         size: "custom",
         color: "currentColor",
@@ -159,9 +159,9 @@ let M = Chunk647438.memo(function() {
     },
     [Chunk327999.gq.MANUAL_MEMBER_VERIFICATION]: {
       type: Chunk327999.gq.MANUAL_MEMBER_VERIFICATION,
-      getJoinTypeLabel: e => null != e ? C.intl.formatToPlainString(C.t["VHLp+u"], {
+      getJoinTypeLabel: e => null != e ? C.intl.formatToPlainString(C.t["VHLp+v"], {
         code: e
-      }) : C.intl.string(C.t.vdu7oS),
+      }) : C.intl.string(C.t.vdu7oa),
       icon: (0, Chunk951288.jsx)(Chunk785195.Z, {
         height: 12,
         width: 12
@@ -196,7 +196,7 @@ function v(e) {
     className: s()(D.inviterTooltipContainer, d),
     children: [(0, r.jsx)(u.Text, {
       variant: "text-xs/medium",
-      children: c !== p.gq.BOT ? C.intl.string(C.t.azhY2u) : C.intl.string(C.t["2ByN2n"])
+      children: c !== p.gq.BOT ? C.intl.string(C.t.azhY2t) : C.intl.string(C.t["2ByN2t"])
     }), (0, r.jsxs)(u.P3F, {
       className: s()(D.inviterUserContainer, null != _ && D.clickable),
       onClick: m,
@@ -224,8 +224,8 @@ function P(e) {
     className: s()(D.inviterUserContainer, n),
     children: (0, r.jsx)(u.Text, {
       variant: "text-xs/medium",
-      children: C.intl.format(C.t["2VQq2p"], {
-        channelName: null != l ? l : C.intl.string(C.t.zLZPmk)
+      children: C.intl.format(C.t["2VQq2t"], {
+        channelName: null != l ? l : C.intl.string(C.t.zLZPmp)
       })
     })
   })
@@ -247,9 +247,9 @@ function j(e) {
     joinSourceType: u
   }), [u, i, s, E]);
   if (!A) return t;
-  let I = u === p.gq.SOCIAL_LAYER_INTEGRATION_LINKED_CHANNEL ? C.intl.formatToPlainString(C.t["2VQq2p"], {
-    channelName: null != d ? d : C.intl.string(C.t.zLZPmk)
-  }) : u === p.gq.BOT ? C.intl.string(C.t["2ByN2n"]) : C.intl.string(C.t.azhY2u);
+  let I = u === p.gq.SOCIAL_LAYER_INTEGRATION_LINKED_CHANNEL ? C.intl.formatToPlainString(C.t["2VQq2t"], {
+    channelName: null != d ? d : C.intl.string(C.t.zLZPmp)
+  }) : u === p.gq.BOT ? C.intl.string(C.t["2ByN2t"]) : C.intl.string(C.t.azhY2t);
   return (0, r.jsx)(o.u, {
     "aria-label": I,
     __unsupportedReactNodeAsText: T,
@@ -297,7 +297,7 @@ function G(e) {
     }
     return l
   }(e, ["sourceInviteCode", "joinSourceType", "joinSourceApplicationId", "integrationType", "joinSourceChannelId", "showJoinMethodContextAsFooter", "guildId", "inviterUser", "onClickInviter"]);
-  let N = null != n ? x[n] : null,
+  let N = null != n ? b[n] : null,
     h = n === p.gq.INTEGRATION && null != o,
     O = (0, d.q)(i),
     f = (0, a.e7)([m.Z], () => m.Z.getChannel(c)),
@@ -324,9 +324,9 @@ function G(e) {
     case null == N:
     case null == n:
     case n === p.gq.UNSPECIFIED:
-      return (0, r.jsx)(M, U({}, g));
+      return (0, r.jsx)(M, L({}, g));
     case null != o && h:
-      return (0, r.jsxs)(u.P3F, L(U({
+      return (0, r.jsxs)(u.P3F, U(L({
         className: D.inviteContainer
       }, g), {
         "aria-label": (0, p.MS)(o),
@@ -343,7 +343,7 @@ function G(e) {
     case n === p.gq.SOCIAL_LAYER_INTEGRATION_LINKED_CHANNEL && null != O:
       return (0, r.jsxs)("div", {
         className: s()(E && D.footerAlignment),
-        children: [(0, r.jsxs)(u.P3F, L(U({
+        children: [(0, r.jsxs)(u.P3F, U(L({
           className: D.linkedChannelContainer
         }, g), {
           "aria-label": null == N ? true : N.getJoinTypeLabel(null != t ? t : true),
@@ -365,7 +365,7 @@ function G(e) {
     case null != N:
       return (0, r.jsxs)("div", {
         className: s()(E && D.footerAlignment),
-        children: [(0, r.jsxs)(u.P3F, L(U({
+        children: [(0, r.jsxs)(u.P3F, U(L({
           className: D.inviteContainer
         }, g), {
           "aria-label": null == N ? true : N.getJoinTypeLabel(null != t ? t : true),
@@ -385,7 +385,7 @@ function G(e) {
         })]
       });
     default:
-      return (0, r.jsx)(M, U({}, g))
+      return (0, r.jsx)(M, L({}, g))
   }
 }
 let k = Chunk647438.memo(function(e) {
@@ -409,8 +409,8 @@ let k = Chunk647438.memo(function(e) {
     joinSourceChannelId: g,
     joinSourceApplicationId: O,
     integrationType: f
-  } = E, S = null != m ? x[m] : null, C = null != (n = null == S ? true : S.hasTooltip) && n;
-  return (m === p.gq.INVITE || m === p.gq.VANITY_URL || m === p.gq.MANUAL_MEMBER_VERIFICATION && null != T) && A ? (0, r.jsx)(b, {}) : (0, r.jsx)(j, {
+  } = E, S = null != m ? b[m] : null, C = null != (n = null == S ? true : S.hasTooltip) && n;
+  return (m === p.gq.INVITE || m === p.gq.VANITY_URL || m === p.gq.MANUAL_MEMBER_VERIFICATION && null != T) && A ? (0, r.jsx)(x, {}) : (0, r.jsx)(j, {
     hasTooltip: C && !o,
     inviterUser: null != _ ? _ : null,
     guildId: s,

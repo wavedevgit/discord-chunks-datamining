@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk631885 = require("./631885.js"),
   Chunk292352 = require("./292352.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk660886 = require("./660886.js"),
+  Chunk345909 = require("./345909.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk352258 = require("./352258.js"),
   Chunk197571 = require("./197571.js");
@@ -29,9 +29,9 @@ let O = e => {
   } = e, s = (0, m.Z)(), [a, O] = o.useState(false), {
     getLinkCode: _,
     isGetLinkCodeLoading: j
-  } = (0, C.G)({}), q = (0, p.rW)(), N = (0, p.gU)(), z = o.useRef(N);
+  } = (0, C.G)({}), q = (0, p.rW)(), N = (0, p.gU)(), S = o.useRef(N);
   i()(!s, "FamilyCenterQRCodeModal should only be rendered for teens.");
-  let S = () => {
+  let z = () => {
     O(e => (f.default.track(y.rMx.FAMILY_CENTER_ACTION, {
       action: a ? x.YC.HideQRCode : x.YC.RevealQRCode
     }), !e)), a || setTimeout(() => {
@@ -41,8 +41,8 @@ let O = e => {
   (0, d.ZP)(() => {
     _()
   }), o.useEffect(() => {
-    N > z.current && t()
-  }, [z, N, t]);
+    N > S.current && t()
+  }, [S, N, t]);
   let E = a && !j && null != q;
   return (0, n.jsxs)(c.IX, {
     transitionState: r,
@@ -53,18 +53,18 @@ let O = e => {
       children: [(0, n.jsx)(c.d3s, {
         size: "sm",
         color: "currentColor"
-      }), b.intl.string(v.default.iHYMAz)]
+      }), b.intl.string(v.default.iHYMAw)]
     }), (0, n.jsxs)(c.fef, {
       children: [(0, n.jsx)(c.Text, {
         className: g.marginBottom8,
         variant: "text-lg/bold",
         color: "header-primary",
-        children: b.intl.string(v.default.AVTZaN)
+        children: b.intl.string(v.default.AVTZaG)
       }), (0, n.jsx)(c.Text, {
         className: g.marginBottom20,
         variant: "text-sm/normal",
         color: "header-secondary",
-        children: b.intl.format(v.default.LyyCsE, {
+        children: b.intl.format(v.default.LyyCsL, {
           link: "https://support.discord.com/hc/articles/14155060633623"
         })
       }), (0, n.jsx)("div", {
@@ -73,7 +73,7 @@ let O = e => {
           className: l()(h.qrCodeObscure, {
             [h.visible]: E
           }),
-          onClick: S,
+          onClick: z,
           children: (0, n.jsx)(u.c2, {
             size: 272,
             text: E ? q : x.vH,
@@ -85,18 +85,18 @@ let O = e => {
         className: h.reminder,
         variant: "text-xs/semibold",
         color: "header-secondary",
-        children: b.intl.string(v.default.goDyoe)
+        children: b.intl.string(v.default.goDyoa)
       })]
     }), (0, n.jsx)(c.Go$, {
       actionsFullWidth: true,
       actions: [{
         variant: "secondary",
-        text: b.intl.string(b.t.cpT0Cq),
+        text: b.intl.string(b.t.cpT0Cg),
         onClick: t
       }, {
         variant: "primary",
-        text: a ? b.intl.string(v.default.wg2xwQ) : b.intl.string(v.default["10dX6U"]),
-        onClick: S,
+        text: a ? b.intl.string(v.default.wg2xwc) : b.intl.string(v.default["10dX6e"]),
+        onClick: z,
         loading: a && j
       }]
     })]

@@ -18,7 +18,7 @@ function c(e, n) {
     u = (0, i.e7)([l.Z], () => l.Z.getChannel(n), [n]);
   return null == u || u.isOwner(e) || null == c || !u.isOwner(c.id) || !(null == (r = u.recipients) ? true : r.includes(e)) ? null : (0, t.jsx)(s.sNh, {
     id: "remove",
-    label: d.intl.string(d.t["n5zMI+"]),
+    label: d.intl.string(d.t.n5zMIy),
     action: () => o.Z.removeRecipient(n, e),
     color: "danger"
   })

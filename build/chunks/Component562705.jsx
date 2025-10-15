@@ -62,10 +62,10 @@ function _(e) {
     }), m.S.dispatch(g.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, {})
   }, [i]), j = (0, r.useCallback)(() => {
     i(b.L.USER_DISMISS)
-  }, [i]), _ = f.vK[n], y = v.intl.formatToPlainString(v.t.ewkaVR, {
+  }, [i]), _ = f.vK[n], y = v.intl.formatToPlainString(v.t.ewkaVV, {
     timeMilestone: null == (t = (0, p.q)(_.id, _.tenureReqNumMonths)) ? true : t.toLocaleLowerCase()
   }), C = [{
-    text: v.intl.string(v.t.RzWDqY),
+    text: v.intl.string(v.t.RzWDqa),
     variant: "primary",
     onClick: h
   }];
@@ -82,7 +82,7 @@ function _(e) {
       aspectRatio: "6/4"
     } : true,
     size: "lg",
-    title: v.intl.string(v.t.VoDxsV),
+    title: v.intl.string(v.t.VoDxsb),
     body: y,
     actions: C
   })

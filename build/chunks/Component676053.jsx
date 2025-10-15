@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk966902 = require("./966902.jsx"),
   Chunk562618 = require("./562618.jsx"),
   Chunk803866 = require("./803866.jsx"),
-  Chunk751611 = require("./751611.js"),
+  Chunk490340 = require("./490340.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk37751 = require("./37751.js");
 
@@ -140,7 +140,7 @@ function I(e) {
         children: (0, r.jsx)(o.JM1, {
           playing: false,
           size: "sm",
-          "aria-label": h.intl.string(p.default.YpT3kk),
+          "aria-label": h.intl.string(p.default.YpT3kp),
           onClick: M
         })
       })]

@@ -23,7 +23,7 @@ function c(e) {
   return (0, r.jsx)(o.w, {
     questId: t,
     fallbackReason: s.V_.NOT_SHAREABLE_QUEST,
-    bodyText: l.intl.string(n ? l.t.Rw9rwW : l.t.yj6fIs),
+    bodyText: l.intl.string(n ? l.t.Rw9rwc : l.t.yj6fIi),
     questContent: i.jn.NOT_SHAREABLE_QUEST_EMBED
   })
 }

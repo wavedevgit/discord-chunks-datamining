@@ -50,10 +50,10 @@ let v = (0, Chunk258536.animated)(Chunk685613.ZP),
         impressionId: S,
         sourceQuestContent: p.jn.QUEST_BAR_V2
       })
-    }, [S, t]), A = E && O, R = (0, r.jsx)(l.P3F, {
+    }, [S, t]), R = E && O, A = (0, r.jsx)(l.P3F, {
       onClick: N,
       className: o()(j.clickable, {
-        [j.logo]: A
+        [j.logo]: R
       }),
       children: (0, r.jsx)(v, {
         quest: t,
@@ -71,7 +71,7 @@ let v = (0, Chunk258536.animated)(Chunk685613.ZP),
     });
     return (0, r.jsxs)(i.animated.div, {
       className: o()(j.wrapper, j.rewardHighlightWrapper, {
-        [j.interactable]: A
+        [j.interactable]: R
       }),
       style: {
         transform: (0, i.to)([n.to({
@@ -90,8 +90,8 @@ let v = (0, Chunk258536.animated)(Chunk685613.ZP),
       }), (0, r.jsx)(x.Z, {
         quest: t,
         expansionSpring: n,
-        isFullyExpanded: A,
-        partnerBranding: R,
+        isFullyExpanded: R,
+        partnerBranding: A,
         useReducedMotion: y
       }), (0, r.jsxs)(i.animated.div, {
         className: j.promotedBadgeWrapper,
@@ -107,7 +107,7 @@ let v = (0, Chunk258536.animated)(Chunk685613.ZP),
           children: [(0, r.jsx)(l.Text, {
             color: "always-white",
             variant: "text-xs/normal",
-            children: b.intl.string(b.t.o6FLcF)
+            children: b.intl.string(b.t.o6FLcH)
           }), (0, r.jsx)(l.idN, {
             color: l.TVs.colors.WHITE,
             className: j.promotedBadgeIcon
@@ -142,7 +142,7 @@ let v = (0, Chunk258536.animated)(Chunk685613.ZP),
               return e
             }({}, e), n = n = {
               className: j.submenuWrapper,
-              "aria-label": b.intl.string(b.t.DEoVWZ),
+              "aria-label": b.intl.string(b.t.DEoVWV),
               children: (0, r.jsx)(l.xhG, {
                 size: "md",
                 color: "currentColor",

@@ -35,12 +35,12 @@ let h = {
           type: "Not Friend",
           source: "Call"
         }), u.Z.show({
-          title: p.intl.string(p.t.My50nf),
-          body: p.intl.format(p.t.IdKo2z, {
+          title: p.intl.string(p.t.My50nZ),
+          body: p.intl.format(p.t.IdKo29, {
             username: null != t ? t.username : ""
           }),
-          confirmText: p.intl.string(p.t["PMsq/b"]),
-          cancelText: p.intl.string(p.t.BddRzS),
+          confirmText: p.intl.string(p.t["PMsq/f"]),
+          cancelText: p.intl.string(p.t.BddRzc),
           onConfirm() {
             d.Z.addRelationship({
               userId: i,

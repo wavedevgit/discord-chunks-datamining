@@ -20,7 +20,7 @@ function a(t) {
       height: "160",
       alt: ""
     }),
-    title: r.intl.string(r.t.e6SOl0),
+    title: r.intl.string(r.t.e6SOl5),
     body: r.intl.string(r.t.QjAZAQ),
     onClose: n
   })

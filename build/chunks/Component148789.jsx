@@ -47,7 +47,7 @@ function c(e) {
       submitting: c,
       disabled: d,
       onClick: f,
-      children: a.intl.string(a.t.Zcibdf)
+      children: a.intl.string(a.t.ZcibdX)
     }), (0, r.jsx)(l.zx, {
       className: s.ignoreButton,
       look: l.zx.Looks.FILLED,
@@ -56,7 +56,7 @@ function c(e) {
       submitting: d,
       disabled: c,
       onClick: h,
-      children: a.intl.string(a.t.xuio0C)
+      children: a.intl.string(a.t.xuio0N)
     })]
   })
 }

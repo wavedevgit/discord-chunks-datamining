@@ -33,7 +33,7 @@ function C(t) {
     })
   }, [i, v]), (0, s.jsx)(o.ExpressiveModal, {
     title: _.intl.string(_.t["2tv5YG"]),
-    subtitle: _.intl.string(_.t.pgwlD7),
+    subtitle: _.intl.string(_.t.pgwlDw),
     transitionState: C,
     size: "sm",
     graphic: {
@@ -54,7 +54,7 @@ function C(t) {
       }
     }, {
       variant: "primary",
-      text: _.intl.string(_.t["5e8Mrp"]),
+      text: _.intl.string(_.t["5e8Mrq"]),
       onClick: () => {
         h(), (0, c.Q3)(v, {
           forceTrack: true,
@@ -81,7 +81,7 @@ function C(t) {
         }), (0, s.jsx)(l.Text, {
           variant: "text-sm/medium",
           color: "text-default",
-          children: _.intl.string(_.t["0vKo5F"])
+          children: _.intl.string(_.t["0vKo5O"])
         })]
       }), (0, s.jsx)(b.Z, {
         className: p.divider
@@ -93,7 +93,7 @@ function C(t) {
         }), (0, s.jsx)(l.Text, {
           variant: "text-sm/medium",
           color: "text-default",
-          children: _.intl.string(_.t.CprEDO)
+          children: _.intl.string(_.t.CprEDA)
         })]
       }), (0, s.jsx)(b.Z, {
         className: p.divider
@@ -105,7 +105,7 @@ function C(t) {
         }), (0, s.jsx)(l.Text, {
           variant: "text-sm/medium",
           color: "text-default",
-          children: _.intl.string(_.t.wQJMPC)
+          children: _.intl.string(_.t.wQJMPD)
         })]
       })]
     })

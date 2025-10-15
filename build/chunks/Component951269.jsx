@@ -15,10 +15,10 @@ function l(t) {
     kind: l
   } = t;
   return (0, s.jsx)(r.Modal, {
-    title: e.intl.string(e.t.r0DLNm),
-    subtitle: "user" === l ? e.intl.string(e.t.Fqqbhg) : e.intl.string(e.t["6Y0JlN"]),
+    title: e.intl.string(e.t.r0DLNj),
+    subtitle: "user" === l ? e.intl.string(e.t.Fqqbho) : e.intl.string(e.t["6Y0JlJ"]),
     actions: [{
-      text: e.intl.string(e.t.BddRzS),
+      text: e.intl.string(e.t.BddRzc),
       onClick: i
     }],
     onClose: i,

@@ -43,7 +43,7 @@ function h(e) {
   return (0, i.jsxs)(l.v2r, {
     navId: "activity-shelf-item-context",
     onClose: r.Zy,
-    "aria-label": m.intl.string(m.t.WkcHT9),
+    "aria-label": m.intl.string(m.t.WkcHT0),
     onSelect: n,
     children: [null != u && (0, i.jsxs)(l.kSQ, {
       children: [...u]

@@ -38,7 +38,7 @@ function _(e) {
   return e
 }
 
-function x(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,7 +50,7 @@ function x(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let g = {
+let x = {
     screenSources: [],
     windowSources: [],
     deviceSources: [],
@@ -70,7 +70,7 @@ let g = {
     nativeSourceType: "",
     discordSourceId: ""
   },
-  v = Chunk647438.createContext(g),
+  v = Chunk647438.createContext(x),
   j = Chunk647438.createContext(() => {
     throw Error("Using uninitialized GoLiveModalContextDispatch")
   });
@@ -78,30 +78,30 @@ let g = {
 function S(e, t) {
   switch (t.type) {
     case "set_mute_audio":
-      return x(_({}, e), {
+      return g(_({}, e), {
         muteStreamAudio: t.value
       });
     case "set_notify_friends":
-      return x(_({}, e), {
+      return g(_({}, e), {
         notifyFriends: t.value
       });
     case "set_has_permission":
-      return x(_({}, e), {
+      return g(_({}, e), {
         hasPermission: t.value
       });
     case "set_source_candidates":
-      return x(_({}, e), {
+      return g(_({}, e), {
         screenSources: t.screenSources,
         windowSources: t.windowSources,
         deviceSources: t.deviceSources,
         fetchingSources: false
       });
     case "set_preset":
-      return x(_({}, e), {
+      return g(_({}, e), {
         preset: t.preset
       });
     case "set_step":
-      return x(_({}, e), {
+      return g(_({}, e), {
         modalStep: t.step
       });
     case "set_source_type":
@@ -111,36 +111,36 @@ function S(e, t) {
       };
       return t.sourceType === l.vA.CAMERA && ((e.preset === h.ApplicationStreamPresets.PRESET_DOCUMENTS || e.preset === h.ApplicationStreamPresets.PRESET_AUTO) && (n.preset = h.ApplicationStreamPresets.PRESET_VIDEO), e.resolution === h.ApplicationStreamResolutions.RESOLUTION_SOURCE && (n.resolution = h.ApplicationStreamResolutions.RESOLUTION_720)), _({}, e, n);
     case "set_native_source_type":
-      return x(_({}, e), {
+      return g(_({}, e), {
         nativeSourceType: t.sourceType
       });
     case "set_resolution":
-      return x(_({}, e), {
+      return g(_({}, e), {
         resolution: t.resolution
       });
     case "set_fps":
-      return x(_({}, e), {
+      return g(_({}, e), {
         fps: t.fps
       });
     case "set_hide_preview":
-      return x(_({}, e), {
+      return g(_({}, e), {
         hidePreview: t.hidePreview
       });
     case "set_selected_source":
-      return x(_({}, e), {
+      return g(_({}, e), {
         selectedSource: t.source
       });
     case "set_audio_source":
       var r;
-      return x(_({}, e), {
+      return g(_({}, e), {
         audioSourceId: null != (r = t.audioSourceId) ? r : u.Z.getInputDeviceId()
       });
     case "set_selected_channel":
-      return x(_({}, e), {
+      return g(_({}, e), {
         selectedChannel: t.channelId
       });
     case "set_discord_source_id":
-      return x(_({}, e), {
+      return g(_({}, e), {
         discordSourceId: t.sourceId
       });
     default:
@@ -183,7 +183,7 @@ function y(e, t, n) {
     Z = null != (r = c.I0.useSetting()) && r,
     I = null != (l = c.eo.useSetting()) && l;
   y in h.ApplicationStreamPresets && (y !== h.ApplicationStreamPresets.PRESET_AUTO || b) || (y = h.ApplicationStreamPresets.PRESET_VIDEO), (0, p.Z)(h.ApplicationStreamPresets.PRESET_CUSTOM, C, O, t, n) || (C = h.ApplicationStreamResolutions.RESOLUTION_720, O = h.ApplicationStreamFPS.FPS_30);
-  let [E, T] = i.useReducer(S, x(_({}, g), {
+  let [E, T] = i.useReducer(S, g(_({}, x), {
     muteStreamAudio: !w,
     preset: y,
     resolution: C,

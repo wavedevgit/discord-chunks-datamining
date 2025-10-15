@@ -72,7 +72,7 @@ let b = "MMMM Do, YYYY",
       submitting: I
     } = y(E), T = async () => {
       await O(a.id) && c()
-    }, S = i.role_benefits.benefits.filter(e => e.ref_type === p.Qs.CHANNEL), A = i.role_benefits.benefits.filter(e => e.ref_type === p.Qs.INTANGIBLE), C = o()(a.currentPeriodEnd).format(b), N = h.intl.formatToPlainString(h.t.KsMRP5, {
+    }, S = i.role_benefits.benefits.filter(e => e.ref_type === p.Qs.CHANNEL), A = i.role_benefits.benefits.filter(e => e.ref_type === p.Qs.INTANGIBLE), C = o()(a.currentPeriodEnd).format(b), N = h.intl.formatToPlainString(h.t.KsMRPz, {
       numChannels: S.length,
       numAdditionalBenefits: A.length,
       subscriptionEndDate: C
@@ -81,16 +81,16 @@ let b = "MMMM Do, YYYY",
       transitionState: t,
       "aria-labelledby": g,
       actions: [{
-        text: h.intl.string(h.t.EP6EPb),
+        text: h.intl.string(h.t.EP6EPT),
         variant: "secondary",
         onClick: c
       }, {
         variant: "critical-primary",
-        text: h.intl.string(h.t.F6lUDF),
+        text: h.intl.string(h.t.F6lUDA),
         onClick: T,
         loading: I
       }],
-      title: h.intl.string(h.t.O6l5tM),
+      title: h.intl.string(h.t.O6l5tL),
       subtitle: N,
       onClose: c,
       children: (0, r.jsxs)(l.Kqy, {

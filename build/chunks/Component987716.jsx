@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk321051 = require("./321051.jsx"),
   Chunk669079 = require("./669079.js"),
   Chunk479446 = require("./479446.js"),
-  Chunk47280 = require("./47280.js"),
+  Chunk283066 = require("./283066.js"),
   Chunk543995 = require("./543995.js"),
   Chunk981632 = require("./981632.jsx"),
   Chunk96848 = require("./96848.jsx"),
@@ -95,7 +95,7 @@ let A = e => {
     orientation: "horizontal"
   }), {
     ref: x
-  } = L, M = T(L, ["ref"]), j = (0, d.MY)(y, t), k = j === d.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, U = j !== d.xr.DEFAULT, G = (0, p.m)(), B = (0, _.ZP)({
+  } = L, M = T(L, ["ref"]), j = (0, d.MY)(y, t), k = j === d.xr.CUSTOM_MESSAGE_EMOJI_SOUNDBOARD, U = j !== d.xr.DEFAULT, G = (0, p.m)(), B = (0, _.Z)({
     location: "GiftAnimationOptions"
   }), Z = e => {
     null != R && R(null == e ? true : e)
@@ -128,7 +128,7 @@ let A = e => {
         e.target === e.currentTarget && (null == (t = D.current) || t.focus())
       },
       className: o()(b.giftBoxOptionContainer, a),
-      "aria-label": E.intl.string(E.t.v54NrN),
+      "aria-label": E.intl.string(E.t.v54NrK),
       ref: x
     }, M), {
       children: null != G && !B && G.map((e, t) => (0, r.jsx)(g.m, {

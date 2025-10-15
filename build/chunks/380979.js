@@ -15,19 +15,19 @@ var Chunk979554 = require("./979554.js"),
   Chunk212161 = require("./212161.js"),
   Chunk768581 = require("./768581.js"),
   Chunk474936 = require("./474936.js"),
-  Chunk660886 = require("./660886.js"),
+  Chunk345909 = require("./345909.js"),
   Chunk388032 = require("./388032.jsx");
 let f = 40,
   _ = e => {
     switch (e) {
       case r.Z.AVATAR_DECORATION:
-        return d.intl.string(u.default.obi47v);
+        return d.intl.string(u.default.obi47u);
       case r.Z.PROFILE_EFFECT:
-        return d.intl.string(u.default.RX8BMR);
+        return d.intl.string(u.default.RX8BMT);
       case r.Z.NAMEPLATE:
-        return d.intl.string(u.default.nNGEHk);
+        return d.intl.string(u.default.nNGEHh);
       case r.Z.BUNDLE:
-        return d.intl.string(u.default.VS1fKo);
+        return d.intl.string(u.default.VS1fKi);
       default:
         return ""
     }

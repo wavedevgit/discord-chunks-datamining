@@ -18,7 +18,7 @@ var r, l, Chunk647438 = require("./647438.js"),
   c = ((r = {}).NEW = "new", r.RECOMMENDED = "recommended", r.BETA = "beta", r.ALPHA = "alpha", r);
 let f = {
   [Chunk273504.fX.SPAM_LINK]: {
-    getDefaultRuleName: () => Chunk388032.intl.string(Chunk388032.t.ffR2cM),
+    getDefaultRuleName: () => Chunk388032.intl.string(Chunk388032.t.ffR2cH),
     type: Chunk273504.fX.SPAM_LINK,
     eventType: Chunk273504.q4.MESSAGE_SEND,
     perGuildMaxCount: 0,
@@ -27,7 +27,7 @@ let f = {
     defaultActionTypes: new Set
   },
   [Chunk273504.fX.KEYWORD]: {
-    getDefaultRuleName: () => Chunk388032.intl.string(Chunk388032.t.ffR2cM),
+    getDefaultRuleName: () => Chunk388032.intl.string(Chunk388032.t.ffR2cH),
     type: Chunk273504.fX.KEYWORD,
     eventType: Chunk273504.q4.MESSAGE_SEND,
     perGuildMaxCount: 6,
@@ -36,7 +36,7 @@ let f = {
     defaultActionTypes: new Set([Chunk273504.jj.BLOCK_MESSAGE])
   },
   [Chunk273504.fX.ML_SPAM]: {
-    getDefaultRuleName: () => Chunk388032.intl.string(Chunk388032.t["puF/Os"]),
+    getDefaultRuleName: () => Chunk388032.intl.string(Chunk388032.t["puF/Oj"]),
     type: Chunk273504.fX.ML_SPAM,
     eventType: Chunk273504.q4.MESSAGE_SEND,
     perGuildMaxCount: 1,
@@ -45,7 +45,7 @@ let f = {
     defaultActionTypes: new Set([Chunk273504.jj.BLOCK_MESSAGE])
   },
   [Chunk273504.fX.DEFAULT_KEYWORD_LIST]: {
-    getDefaultRuleName: () => Chunk388032.intl.string(Chunk388032.t.LnGhZv),
+    getDefaultRuleName: () => Chunk388032.intl.string(Chunk388032.t.LnGhZm),
     type: Chunk273504.fX.DEFAULT_KEYWORD_LIST,
     eventType: Chunk273504.q4.MESSAGE_SEND,
     perGuildMaxCount: 1,
@@ -54,7 +54,7 @@ let f = {
     defaultActionTypes: new Set([Chunk273504.jj.BLOCK_MESSAGE])
   },
   [Chunk273504.fX.MENTION_SPAM]: {
-    getDefaultRuleName: () => Chunk388032.intl.string(Chunk388032.t.pX7i6n),
+    getDefaultRuleName: () => Chunk388032.intl.string(Chunk388032.t.pX7i6u),
     type: Chunk273504.fX.MENTION_SPAM,
     eventType: Chunk273504.q4.MESSAGE_SEND,
     perGuildMaxCount: 1,
@@ -63,7 +63,7 @@ let f = {
     defaultActionTypes: new Set([Chunk273504.jj.BLOCK_MESSAGE])
   },
   [Chunk273504.fX.USER_PROFILE]: {
-    getDefaultRuleName: () => Chunk388032.intl.string(Chunk388032.t.q1L2v8),
+    getDefaultRuleName: () => Chunk388032.intl.string(Chunk388032.t.q1L2v7),
     type: Chunk273504.fX.USER_PROFILE,
     eventType: Chunk273504.q4.GUILD_MEMBER_JOIN_OR_UPDATE,
     perGuildMaxCount: 1,
@@ -72,7 +72,7 @@ let f = {
     defaultActionTypes: new Set([Chunk273504.jj.QUARANTINE_USER])
   },
   [Chunk273504.fX.SERVER_POLICY]: {
-    getDefaultRuleName: () => Chunk388032.intl.string(Chunk388032.t.ZQr92M),
+    getDefaultRuleName: () => Chunk388032.intl.string(Chunk388032.t.ZQr92N),
     type: Chunk273504.fX.SERVER_POLICY,
     eventType: Chunk273504.q4.MESSAGE_SEND,
     perGuildMaxCount: 1,

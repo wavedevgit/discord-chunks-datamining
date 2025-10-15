@@ -231,17 +231,17 @@ let A = {
       })]
     })
   },
-  k = [{
+  R = [{
     key: null,
     renderStep: e => (0, r.jsx)(L, _({}, e))
   }, {
     key: Chunk409813.h8.REVIEW,
     renderStep: e => (0, r.jsx)(T, _({}, e)),
     options: {
-      useBreadcrumbLabel: () => Chunk388032.intl.string(Chunk388032.t.QBnNHq)
+      useBreadcrumbLabel: () => Chunk388032.intl.string(Chunk388032.t.QBnNHh)
     }
   }],
-  R = (e, t, n) => (0, r.jsx)(f.Z, {
+  k = (e, t, n) => (0, r.jsx)(f.Z, {
     isOrbCheckout: true,
     step: n,
     onClose: () => t(false)
@@ -272,7 +272,7 @@ let A = {
       onClose: c,
       hideShadow: true,
       skuId: t,
-      renderHeader: R,
+      renderHeader: k,
       initialPlanId: null,
       analyticsLocations: n
     })
@@ -289,7 +289,7 @@ let A = {
       applicationId: (0, g.N)(t),
       activeSubscription: null,
       loadId: n,
-      stepConfigs: k,
+      stepConfigs: R,
       purchaseType: x.GZQ.ONE_TIME,
       skuIDs: [t],
       excludeSubscriptionPlansBySKU: true,

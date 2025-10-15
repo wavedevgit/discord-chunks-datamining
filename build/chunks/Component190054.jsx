@@ -46,7 +46,7 @@ function f(e) {
     className: i()(d.container, f),
     onClick: h,
     children: (0, n.jsx)(l.u, {
-      text: y ? u.intl.string(u.t.t5VZ88) : u.intl.string(u.t.OpuAlK),
+      text: y ? u.intl.string(u.t["t5VZ8/"]) : u.intl.string(u.t.OpuAlJ),
       children: (0, n.jsx)(m, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var r = null != arguments[t] ? arguments[t] : {},

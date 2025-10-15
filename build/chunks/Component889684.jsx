@@ -36,10 +36,10 @@ let h = e => {
       }), (0, a.jsx)(s.Heading, {
         variant: "heading-xl/semibold",
         className: E.header,
-        children: m.intl.string(m.t.Uq1zJY)
+        children: m.intl.string(m.t.Uq1zJS)
       }), (0, a.jsx)(s.Text, {
         variant: "text-md/normal",
-        children: m.intl.format(m.t.xPaO3o, {
+        children: m.intl.format(m.t.xPaO3t, {
           onLearnMore: () => {
             n(), (0, r.openUserSettings)(l.n.NITRO_PANEL, {
               section: d.oAB.PREMIUM
@@ -51,7 +51,7 @@ let h = e => {
       children: (0, a.jsx)(o.Z, {
         onClick: n,
         textOptions: {
-          textOverride: m.intl.string(m.t.pj0XBN)
+          textOverride: m.intl.string(m.t.pj0XBA)
         },
         subscriptionTier: p.Si.TIER_2,
         premiumModalAnalyticsLocation: {

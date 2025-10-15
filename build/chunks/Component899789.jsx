@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk343312 = require("./343312.jsx"),
   Chunk30910 = require("./30910.jsx"),
   Chunk619733 = require("./619733.js"),
-  Chunk470658 = require("./470658.js"),
+  Chunk948208 = require("./948208.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk755350 = require("./755350.js");
 
@@ -25,7 +25,7 @@ function j() {
     className: Chunk755350.maxInstancesWarning,
     children: (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/medium",
-      children: Chunk388032.intl.formatToPlainString(Chunk470658.default.xta2U9, {
+      children: Chunk388032.intl.formatToPlainString(Chunk948208.default.xta2U1, {
         maxInstances: Chunk619733.YX
       })
     })
@@ -55,7 +55,7 @@ function x() {
       className: Chunk755350.gameSection,
       children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-md/semibold",
-        children: Chunk388032.intl.string(Chunk470658.default.BOWmmT)
+        children: Chunk388032.intl.string(Chunk948208.default.BOWmmZ)
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk755350.gameInstanceContainer,
         children: require.map((n, t) => (0, l.jsx)(u.Z, {
@@ -70,7 +70,7 @@ function x() {
       }),
       children: [P && (0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-md/semibold",
-        children: Chunk388032.intl.string(Chunk470658.default.NIwDqW)
+        children: Chunk388032.intl.string(Chunk948208.default.NIwDqa)
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk755350.gameContainer,
         children: Object.values(exports).map((e, n) => (0, l.jsx)(c.Z, {
@@ -88,7 +88,7 @@ function x() {
           size: "sm"
         }), (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-sm/medium",
-          children: Chunk388032.intl.string(Chunk470658.default["5DjxXm"])
+          children: Chunk388032.intl.string(Chunk948208.default["5DjxXl"])
         })]
       }), (0, Chunk951288.jsx)(Chunk296643.Z, {})]
     })]

@@ -71,7 +71,7 @@ function k() {
       children: Chunk388032.intl.string(Chunk388032.t["4/W4Pz"])
     }), (0, Chunk951288.jsx)("span", {
       className: Chunk12205.experimentGetNitro,
-      children: Chunk388032.intl.string(Chunk388032.t.b6KOkI)
+      children: Chunk388032.intl.string(Chunk388032.t.b6KOkJ)
     })]
   })
 }
@@ -117,15 +117,15 @@ function U(e) {
           id: t,
           variant: "heading-xl/semibold",
           color: "header-primary",
-          children: z.intl.string(z.t.u9zxnX)
+          children: Z.intl.string(Z.t.u9zxnZ)
         }), (0, i.jsx)("div", {
           className: M.errorBody,
-          children: z.intl.string(z.t.FWkU6P)
+          children: Z.intl.string(Z.t.FWkU6O)
         }), (0, i.jsx)(p.zx, {
           size: p.zx.Sizes.LARGE,
           onClick: () => P.Z.close(),
           color: p.zx.Colors.BRAND,
-          children: z.intl.string(z.t.wcqOoF)
+          children: Z.intl.string(Z.t.wcqOoK)
         })]
       })
     })
@@ -145,7 +145,7 @@ function y(e) {
     {
       invite: j,
       error: S,
-      submitting: Z
+      submitting: z
     } = (0, o.cj)([b.Z], () => b.Z.getProps());
   l.useEffect(() => {
     if (null != j && null != j.guild) {
@@ -155,7 +155,7 @@ function y(e) {
   }, [j, null == j ? true : j.approximate_member_count, null == j ? true : j.code, null == j || null == (n = j.guild) ? true : n.id]);
   let O = (0, f.yr)();
   l.useEffect(() => {
-    !__OVERLAY__ && A.isPlatformEmbedded && ((0, A.isWindows)() ? L.ZP.minimize() : L.ZP.restore(), L.ZP.focus())
+    !__OVERLAY__ && T.isPlatformEmbedded && ((0, T.isWindows)() ? L.ZP.minimize() : L.ZP.restore(), L.ZP.focus())
   }, []);
   let y = (0, N.Dt)(),
     {
@@ -172,18 +172,18 @@ function y(e) {
   }
   let {
     guild: V,
-    channel: B,
-    inviter: W,
+    channel: W,
+    inviter: B,
     target_application: w
-  } = j, Y = null != V, H = null == j.guild && null == j.channel && null != j.inviter;
+  } = j, H = null != V, Y = null == j.guild && null == j.channel && null != j.inviter;
   if (null != w) t = null == V ? true : V.name, a = I.ZP.createFromServer(w).getCoverImageURL(1024);
-  else if (null != V) t = V.name, a = T.ZP.getGuildSplashURL({
+  else if (null != V) t = V.name, a = A.ZP.getGuildSplashURL({
     id: V.id,
     splash: V.splash
   });
-  else if ((null == (t = B.name) || "" === t) && null != W && (t = W.username), null == t) throw Error("no name for group DM invite");
+  else if ((null == (t = W.name) || "" === t) && null != B && (t = B.username), null == t) throw Error("no name for group DM invite");
   let K = (0, h.yU)();
-  return r = H ? z.intl.string(z.t["e/6Ogt"]) : z.intl.format(z.t["9sWQNT"], {
+  return r = Y ? Z.intl.string(Z.t["e/6Ogo"]) : Z.intl.format(Z.t["9sWQNT"], {
     usernameHook: () => (0, i.jsx)("span", {
       children: O
     })
@@ -212,14 +212,14 @@ function y(e) {
             id: y,
             children: (0, i.jsx)(u.Z, {
               invite: j,
-              disableUser: Y,
+              disableUser: H,
               error: S
             })
           }), (0, i.jsxs)("div", {
             className: M.ctas,
             children: [K ? (0, i.jsx)(k, {}) : null, null == w ? (0, i.jsx)(c.aML, {
               "data-migration-pending": true,
-              text: K ? z.intl.string(z.t.iLyuDO) : null,
+              text: K ? Z.intl.string(Z.t.iLyuDA) : null,
               position: "bottom",
               children: e => {
                 let {
@@ -229,12 +229,12 @@ function y(e) {
                 return (0, i.jsx)(p.zx, {
                   size: p.zx.Sizes.LARGE,
                   onClick: G,
-                  submitting: Z,
+                  submitting: z,
                   disabled: K,
                   color: p.zx.Colors.BRAND,
                   onMouseEnter: n,
                   onMouseLeave: t,
-                  children: K ? z.intl.string(z.t.ZNCziL) : (0, i.jsxs)("div", {
+                  children: K ? Z.intl.string(Z.t.ZNCziI) : (0, i.jsxs)("div", {
                     className: M.acceptAs,
                     children: [(0, i.jsx)(d.Z, {
                       "aria-hidden": true,
@@ -253,14 +253,14 @@ function y(e) {
               children: [(0, i.jsx)(p.zx, {
                 size: p.zx.Sizes.LARGE,
                 onClick: G,
-                submitting: Z,
-                children: z.intl.string(z.t.RscU7I)
+                submitting: z,
+                children: Z.intl.string(Z.t.RscU7O)
               }), (0, i.jsx)(p.zx, {
                 color: p.zx.Colors.PRIMARY,
                 size: p.zx.Sizes.LARGE,
                 onClick: G,
-                submitting: Z,
-                children: z.intl.string(z.t.eylRaY)
+                submitting: z,
+                children: Z.intl.string(Z.t.eylRaW)
               })]
             }), (0, i.jsx)(x.Z, {
               justify: x.Z.Justify.CENTER,
@@ -276,7 +276,7 @@ function y(e) {
                   }), P.Z.close()
                 },
                 color: p.zx.Colors.TRANSPARENT,
-                children: z.intl.string(z.t.ndsK4Z)
+                children: Z.intl.string(Z.t.ndsK4e)
               })
             })]
           })]

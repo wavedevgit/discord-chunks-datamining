@@ -96,9 +96,9 @@ let g = Chunk647438.forwardRef(function(e, t) {
     className: o()(f.gameIcon, y, E)
   }) : null;
   let v = null == i ? true : i.name,
-    I = null != v && "" !== v ? d.intl.formatToPlainString(d.t.tiKyYg, {
+    I = null != v && "" !== v ? d.intl.formatToPlainString(d.t.tiKyYm, {
       applicationName: v
-    }) : d.intl.string(d.t["2B/phM"]);
+    }) : d.intl.string(d.t["2B/phI"]);
   return (0, r.jsx)("img", {
     ref: t,
     alt: I,

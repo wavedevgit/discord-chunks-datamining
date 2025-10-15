@@ -146,25 +146,25 @@ function x(e) {
   } = e;
   switch (t) {
     case g.d4z.DM:
-      return b.intl.string(b.t.jN2DfZ);
+      return b.intl.string(b.t.jN2DfX);
     case g.d4z.GROUP_DM:
-      return b.intl.string(b.t["e5y+gm"]);
+      return b.intl.string(b.t["e5y+go"]);
     case g.d4z.GUILD_TEXT:
-      return b.intl.string(b.t.Pnajj0);
+      return b.intl.string(b.t.Pnajj4);
     case g.d4z.GUILD_FORUM:
-      return b.intl.string(b.t.GbryDd);
+      return b.intl.string(b.t.GbryDQ);
     case g.d4z.GUILD_MEDIA:
       return b.intl.string(b.t.seKITE);
     case g.d4z.GUILD_VOICE:
-      return b.intl.string(b.t.BVZqJl);
+      return b.intl.string(b.t.BVZqJi);
     case g.d4z.GUILD_STAGE_VOICE:
-      return b.intl.string(b.t.EErMzA);
+      return b.intl.string(b.t.EErMzM);
     case g.d4z.GUILD_ANNOUNCEMENT:
-      return b.intl.string(b.t.l1dkSD);
+      return b.intl.string(b.t.l1dkSE);
     case g.d4z.GUILD_STORE:
       return b.intl.string(b.t["P1/Erq"]);
     case g.d4z.GUILD_CATEGORY:
-      return b.intl.string(b.t.vHCZwr);
+      return b.intl.string(b.t.vHCZws);
     default:
       return null
   }

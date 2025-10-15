@@ -60,7 +60,7 @@ let V = new Chunk710845.Z("ProductAttachmentManager");
 class x {
   addAttachment(e, t) {
     let A = this.target.getMaxAttachmentsCount();
-    if (this.uploads.length >= A) throw i.uv.announce(b.intl.formatToPlainString(b.t["0QDZ4J"], {
+    if (this.uploads.length >= A) throw i.uv.announce(b.intl.formatToPlainString(b.t["0QDZ4O"], {
       maxAttachmentsCount: A
     })), Error("Too many attachments");
     e.target = u.e.GUILD_PRODUCT_ATTACHMENT;
@@ -74,7 +74,7 @@ class x {
       null != o ? i.uv.announce(b.intl.formatToPlainString(b.t["+YVkfX"], {
         filename: o,
         reason: l
-      })) : i.uv.announce(b.intl.formatToPlainString(b.t.mBkf6Z, {
+      })) : i.uv.announce(b.intl.formatToPlainString(b.t.mBkf6e, {
         reason: l
       })), t(e => j(U({}, e), {
         [n.id]: a

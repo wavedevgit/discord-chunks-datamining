@@ -30,8 +30,8 @@ function h(e) {
         type: "early_access",
         variant: "expressive"
       } : true,
-      title: p.intl.string(p.t.gxcsSq),
-      body: p.intl.string(p.t["8L7E5l"]),
+      title: p.intl.string(p.t.gxcsSk),
+      body: p.intl.string(p.t["8L7E5u"]),
       caretConfig: {
         align: "start"
       },
@@ -47,7 +47,7 @@ function h(e) {
         n(m.L.USER_DISMISS)
       },
       actions: [{
-        text: p.intl.string(p.t.RzWDqY),
+        text: p.intl.string(p.t.RzWDqa),
         variant: "primary",
         onClick: () => {
           n(m.L.TAKE_ACTION), (0, d.openUserProfileModal)({

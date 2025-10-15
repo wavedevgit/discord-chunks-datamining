@@ -65,7 +65,7 @@ function _(e, t, d) {
   return (0, r.jsx)(a.sNh, {
     id: "report-stream-problem",
     color: "danger",
-    label: u.intl.string(u.t.sdnCxV),
+    label: u.intl.string(u.t.sdnCxc),
     action: b,
     icon: a.Mgn
   })

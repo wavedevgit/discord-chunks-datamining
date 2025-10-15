@@ -11,13 +11,13 @@ let a = e => {
     switch (e) {
       case "home":
       case "guide":
-        return i.intl.string(i.t.VbpLyU);
+        return i.intl.string(i.t.VbpLyc);
       case "browse":
-        return i.intl.string(i.t.et6wav);
+        return i.intl.string(i.t.et6wam);
       case "customize":
-        return i.intl.string(i.t.h9mGOP);
+        return i.intl.string(i.t.h9mGOD);
       case "linked-roles":
-        return i.intl.string(i.t.ghtnss)
+        return i.intl.string(i.t.ghtnsr)
     }
     return null
   },

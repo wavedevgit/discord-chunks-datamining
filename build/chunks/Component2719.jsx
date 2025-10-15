@@ -109,7 +109,7 @@ function $(e) {
   }, [l.username]);
   let b = !l.isClaimed(),
     y = _ && !l.hasUniqueUsername() && !l.hasVerifiedEmailOrPhone() || b,
-    v = y ? Y.intl.string(Y.t["7Ngnyr"]) : true;
+    v = y ? Y.intl.string(Y.t["7Ngnys"]) : true;
   return (0, r.jsxs)("div", {
     className: o()(W.field, s),
     children: [(0, r.jsx)("div", {
@@ -119,7 +119,7 @@ function $(e) {
         children: [(0, r.jsx)(f.Text, {
           variant: "text-md/medium",
           className: W.fieldTitle,
-          children: Y.intl.string(Y.t.qqhR3L)
+          children: Y.intl.string(Y.t.qqhR3N)
         }), (0, r.jsxs)("div", {
           className: W.usernameInnerRow,
           ref: c,
@@ -139,7 +139,7 @@ function $(e) {
     }), p && (0, r.jsx)("div", {
       className: W.pomeloWarning,
       children: (0, r.jsx)(d.u, {
-        text: Y.intl.string(Y.t.HHC5Z4),
+        text: Y.intl.string(Y.t.HHC5Z2),
         children: (0, r.jsx)(f.Mgn, {
           size: "custom",
           width: 20,
@@ -167,9 +167,9 @@ function $(e) {
         children: (0, r.jsx)(f.Button, {
           variant: "secondary",
           size: "sm",
-          text: g ? Y.intl.string(Y.t["16kTw/"]) : Y.intl.string(Y.t.bt75uw),
+          text: g ? Y.intl.string(Y.t["16kTw8"]) : Y.intl.string(Y.t.bt75u7),
           disabled: y,
-          "aria-label": Y.intl.string(Y.t.JECa91),
+          "aria-label": Y.intl.string(Y.t["JECa9/"]),
           onClick: () => (0, f.ZDy)(async () => {
             if (p) {
               let {
@@ -210,7 +210,7 @@ function ee(e) {
         children: [(0, r.jsx)(f.Text, {
           variant: "text-md/medium",
           className: W.fieldTitle,
-          children: Y.intl.string(Y.t["9AjdkD"])
+          children: Y.intl.string(Y.t["9AjdkJ"])
         }), (0, r.jsx)("div", {
           className: W.usernameInnerRow,
           ref: p,
@@ -218,7 +218,7 @@ function ee(e) {
             tag: "span",
             color: "header-primary",
             variant: "text-md/normal",
-            children: null == _ ? Y.intl.string(Y.t.ep5kjK) : _
+            children: null == _ ? Y.intl.string(Y.t.ep5kjI) : _
           })
         })]
       })
@@ -240,8 +240,8 @@ function ee(e) {
       children: (0, r.jsx)(f.Button, {
         variant: "secondary",
         size: "sm",
-        text: h ? Y.intl.string(Y.t["16kTw/"]) : Y.intl.string(Y.t.bt75uw),
-        "aria-label": Y.intl.string(Y.t.YXeWYM),
+        text: h ? Y.intl.string(Y.t["16kTw8"]) : Y.intl.string(Y.t.bt75u7),
+        "aria-label": Y.intl.string(Y.t.YXeWYG),
         onClick: g
       })
     })]
@@ -262,7 +262,7 @@ function et(e) {
       textVariant: "text-sm/medium",
       "aria-label": s ? o : a,
       onClick: () => l(!s),
-      text: s ? Y.intl.string(Y.t.fgq1gs) : Y.intl.string(Y.t.dcztdU)
+      text: s ? Y.intl.string(Y.t.fgq1go) : Y.intl.string(Y.t.dcztdX)
     })]
   })
 }
@@ -274,9 +274,9 @@ function en(e) {
   } = e;
   if (a.isClaimed())
     if (null == a.email) t = {
-      buttonText: Y.intl.string(Y.t.OYkgVk),
-      buttonAriaLabel: Y.intl.string(Y.t["pvBD+W"]),
-      valueMessage: Y.intl.string(Y.t["8SfTN/"]),
+      buttonText: Y.intl.string(Y.t.OYkgVl),
+      buttonAriaLabel: Y.intl.string(Y.t["pvBD+f"]),
+      valueMessage: Y.intl.string(Y.t["8SfTNz"]),
       handleClick: () => (0, f.ZDy)(async () => {
         let {
           default: e
@@ -289,13 +289,13 @@ function en(e) {
         email: e
       } = a;
       t = {
-        buttonText: Y.intl.string(Y.t.bt75uw),
+        buttonText: Y.intl.string(Y.t.bt75u7),
         buttonAriaLabel: Y.intl.string(Y.t["8peUT0"]),
         valueMessage: (0, r.jsx)(et, {
           text: e,
           censor: G.E,
-          revealLabel: Y.intl.string(Y.t["Zvx+yV"]),
-          hideLabel: Y.intl.string(Y.t.nqTD4d)
+          revealLabel: Y.intl.string(Y.t["Zvx+yc"]),
+          hideLabel: Y.intl.string(Y.t.nqTD4e)
         }),
         handleClick: () => (0, f.ZDy)(async () => {
           let {
@@ -306,9 +306,9 @@ function en(e) {
       }
     }
   else t = {
-    buttonText: Y.intl.string(Y.t.BleMPB),
-    buttonAriaLabel: Y.intl.string(Y.t.BleMPB),
-    valueMessage: Y.intl.string(Y.t.qxk9zo),
+    buttonText: Y.intl.string(Y.t.BleMPD),
+    buttonAriaLabel: Y.intl.string(Y.t.BleMPD),
+    valueMessage: Y.intl.string(Y.t.qxk9zs),
     handleClick: () => E.Z.openClaimAccountModal()
   };
   return (0, r.jsxs)("div", {
@@ -319,7 +319,7 @@ function en(e) {
         children: [(0, r.jsx)(f.Text, {
           variant: "text-md/medium",
           className: W.fieldTitle,
-          children: Y.intl.string(Y.t.tlZllC)
+          children: Y.intl.string(Y.t.tlZllJ)
         }), (0, r.jsx)("div", {
           children: (0, r.jsx)(f.Text, {
             tag: "span",
@@ -370,17 +370,17 @@ function er(e) {
   function _() {
     (0, f.h7j)(e => (0, r.jsx)(p.Z, X(z({}, e), {
       title: Y.intl.string(Y.t["3CTiKi"]),
-      children: a.hasFlag(F.xW$.MFA_SMS) ? Y.intl.string(Y.t.jrhJyo) : true,
-      actionText: Y.intl.string(Y.t.N86XcP),
+      children: a.hasFlag(F.xW$.MFA_SMS) ? Y.intl.string(Y.t.jrhJys) : true,
+      actionText: Y.intl.string(Y.t.N86XcH),
       handleSubmit: e => v.Z.removePhone(e, v.L.USER_SETTINGS_UPDATE)
     })))
   }
   return t = c ? (0, r.jsx)(et, {
     text: s,
     censor: G.n,
-    revealLabel: Y.intl.string(Y.t.eY3xlT),
-    hideLabel: Y.intl.string(Y.t["jllbv+"])
-  }) : Y.intl.string(Y.t.I5kDqj), (0, r.jsxs)("div", {
+    revealLabel: Y.intl.string(Y.t.eY3xlZ),
+    hideLabel: Y.intl.string(Y.t.jllbv7)
+  }) : Y.intl.string(Y.t.I5kDqq), (0, r.jsxs)("div", {
     className: o()(W.field, i),
     children: [(0, r.jsx)("div", {
       className: W.constrainedRow,
@@ -388,7 +388,7 @@ function er(e) {
         children: [(0, r.jsx)(f.Text, {
           variant: "text-md/medium",
           className: W.fieldTitle,
-          children: Y.intl.string(Y.t.kerONq)
+          children: Y.intl.string(Y.t.kerONj)
         }), (0, r.jsx)("div", {
           children: (0, r.jsx)(f.Text, {
             tag: "span",
@@ -405,8 +405,8 @@ function er(e) {
         children: (0, r.jsx)(f.Avr, {
           textVariant: "text-sm/medium",
           variant: "secondary",
-          text: Y.intl.string(Y.t.N86XcP),
-          "aria-label": Y.intl.string(Y.t.Rpn4A3),
+          text: Y.intl.string(Y.t.N86XcH),
+          "aria-label": Y.intl.string(Y.t.Rpn4Aw),
           onClick: _
         })
       }) : null, (0, r.jsx)("div", {
@@ -415,8 +415,8 @@ function er(e) {
         children: (0, r.jsx)(f.Button, {
           variant: "secondary",
           size: "sm",
-          text: c ? Y.intl.string(Y.t.bt75uw) : Y.intl.string(Y.t.OYkgVk),
-          "aria-label": c ? Y.intl.string(Y.t.YDabSe) : Y.intl.string(Y.t["SfUuE+"]),
+          text: c ? Y.intl.string(Y.t.bt75u7) : Y.intl.string(Y.t.OYkgVl),
+          "aria-label": c ? Y.intl.string(Y.t.YDabSU) : Y.intl.string(Y.t.SfUuEx),
           onClick: d
         })
       })]
@@ -429,7 +429,7 @@ function ei(e) {
     user: t
   } = e, n = (0, b.Z)({
     id: t.id,
-    label: Y.intl.string(Y.t["/AXYnE"])
+    label: Y.intl.string(Y.t["/AXYnJ"])
   }), a = k.Sb.useSetting(), o = i.useRef(null);
   return a && x.wS ? (0, r.jsx)(f.yRy, {
     targetElementRef: o,
@@ -441,14 +441,14 @@ function ei(e) {
         onClose: t,
         onSelect: true,
         navId: "copy-id",
-        "aria-label": Y.intl.string(Y.t.RANhlE),
+        "aria-label": Y.intl.string(Y.t.RANhlJ),
         children: n
       })
     },
     children: e => (0, r.jsx)(f.P3F, X(z({}, e), {
       innerRef: o,
       className: W.overflowMenuButton,
-      "aria-label": Y.intl.string(Y.t.DEoVWZ),
+      "aria-label": Y.intl.string(Y.t.DEoVWV),
       children: (0, r.jsx)(f.xhG, {
         size: "md",
         color: "currentColor",
@@ -461,7 +461,7 @@ function ei(e) {
 function ea(e) {
   let {
     className: t
-  } = e, n = (0, g.l6)(), a = (0, g.Jm)(), s = !n || a, l = i.useMemo(() => n ? a ? Y.intl.string(Y.t.sK0dmH) : Y.intl.string(Y.t.XxRj7f) : Y.intl.string(Y.t.UX0Ode), [n, a]);
+  } = e, n = (0, g.l6)(), a = (0, g.Jm)(), s = !n || a, l = i.useMemo(() => n ? a ? Y.intl.string(Y.t.sK0dmJ) : Y.intl.string(Y.t.XxRj7e) : Y.intl.string(Y.t.UX0OdX), [n, a]);
   return (0, r.jsxs)("div", {
     className: o()(W.field, t),
     children: [(0, r.jsx)("div", {
@@ -470,7 +470,7 @@ function ea(e) {
         children: [(0, r.jsx)(f.Text, {
           variant: "text-md/medium",
           className: W.fieldTitle,
-          children: Y.intl.string(Y.t["/52UYy"])
+          children: Y.intl.string(Y.t["/52UY2"])
         }), (0, r.jsx)("div", {
           children: (0, r.jsx)(f.Text, {
             tag: "span",
@@ -486,8 +486,8 @@ function ea(e) {
       children: (0, r.jsx)(f.Button, {
         variant: "secondary",
         size: "sm",
-        text: a ? Y.intl.string(Y.t.KPGVWl) : Y.intl.string(Y.t.yNGjyK),
-        "aria-label": a ? Y.intl.string(Y.t.KPGVWl) : Y.intl.string(Y.t.yNGjyK),
+        text: a ? Y.intl.string(Y.t.KPGVWl) : Y.intl.string(Y.t.yNGjyM),
+        "aria-label": a ? Y.intl.string(Y.t.KPGVWl) : Y.intl.string(Y.t.yNGjyM),
         onClick: () => h.Z.showAgeVerificationGetStartedModal({
           entryPoint: m.cU.ACCOUNT_AGE_GROUP
         })
@@ -555,7 +555,7 @@ function eo() {
       }), (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "primary",
         size: "sm",
-        text: Chunk388032.intl.string(Chunk388032.t["2p2aYz"]),
+        text: Chunk388032.intl.string(Chunk388032.t["2p2aY2"]),
         onClick: Chunk279837
       })]
     }), (0, Chunk951288.jsxs)("div", {

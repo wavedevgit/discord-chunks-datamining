@@ -94,13 +94,13 @@ function f(e) {
     children: [(0, r.jsx)(o.Text, {
       variant: "text-sm/medium",
       color: "text-secondary",
-      children: m.intl.string(m.t.f09BQJ)
+      children: m.intl.string(m.t.f09BQE)
     }), (0, r.jsx)(c.ZP, {
       items: _,
       title: null != (t = null == b ? true : b.name) ? t : "",
       onSelect: f,
       selected: "".concat(l),
-      "aria-label": m.intl.string(m.t.WHdCwR),
+      "aria-label": m.intl.string(m.t.WHdCwc),
       variant: c.PA.FILLED
     })]
   })

@@ -24,7 +24,7 @@ function d(e, t, n) {
     var t;
     return null != (t = n.getNickname(e.id)) ? t : l.ZP.getName(e)
   });
-  return r.length > 0 ? r.join(", ") : u.intl.formatToPlainString(u.t["9Uk8PF"], {
+  return r.length > 0 ? r.join(", ") : u.intl.formatToPlainString(u.t["9Uk8PD"], {
     name: l.ZP.getName(t.getCurrentUser())
   })
 }

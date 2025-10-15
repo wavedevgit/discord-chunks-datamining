@@ -38,16 +38,16 @@ function p(e) {
       children: [(0, r.jsx)(s.Heading, {
         variant: "heading-xl/extrabold",
         className: f.text,
-        children: u.intl.string(u.t.KYPNUv)
+        children: u.intl.string(u.t.KYPNUl)
       }), (0, r.jsxs)(s.Kqy, {
         gap: 24,
         children: [(0, r.jsx)(s.Text, {
           variant: "text-md/medium",
           color: "header-secondary",
           className: f.text,
-          children: u.intl.string(u.t.xRHk7f)
+          children: u.intl.string(u.t.xRHk7e)
         }), (0, r.jsx)(s.oil, {
-          placeholder: u.intl.formatToPlainString(u.t["0tbz6x"], {
+          placeholder: u.intl.formatToPlainString(u.t["0tbz6+"], {
             number: d.A.USER_CODE_LENGTH
           }),
           maxLength: d.A.USER_CODE_LENGTH,
@@ -62,7 +62,7 @@ function p(e) {
     }), (0, r.jsx)(s.Button, {
       fullWidth: true,
       variant: "primary",
-      text: u.intl.string(u.t["3PatSz"]),
+      text: u.intl.string(u.t["3PatS0"]),
       onClick: g,
       loading: b,
       disabled: p.length !== d.A.USER_CODE_LENGTH

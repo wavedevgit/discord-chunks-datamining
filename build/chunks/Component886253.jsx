@@ -45,18 +45,18 @@ function b(e) {
   if ((null == T ? true : T.applicationId) !== t) return (0, r.jsx)(a.Modal, {
     actions: [{
       onClick: y,
-      text: m.intl.string(m.t.BddRzS),
+      text: m.intl.string(m.t.BddRzc),
       variant: "primary"
     }],
     onClose: y,
     size: "sm",
     transitionState: b,
-    title: m.intl.string(m.t["0Bf80I"]),
+    title: m.intl.string(m.t["0Bf80N"]),
     children: (0, r.jsx)(s.Text, {
       variant: "text-md/normal",
       color: "header-secondary",
       className: g.unavailableBody,
-      children: m.intl.string(m.t.omH3bq)
+      children: m.intl.string(m.t.omH3bm)
     })
   });
   let N = null != S ? (0, r.jsx)("img", {
@@ -89,18 +89,18 @@ function b(e) {
         }) : (0, r.jsx)(s.Text, {
           color: "header-primary",
           variant: "text-xs/normal",
-          children: m.intl.string(m.t["3ZY+0D"])
+          children: m.intl.string(m.t["3ZY+0N"])
         }), (0, r.jsxs)("div", {
           className: g.footerButtons,
           children: [d.wS && (0, r.jsx)(s.hU, {
-            "aria-label": m.intl.string(m.t.WqhZss),
+            "aria-label": m.intl.string(m.t.WqhZsr),
             icon: () => (0, r.jsx)(s.xPt, {
               size: "xs",
               color: "currentColor"
             }),
             onClick: () => {
               let e = "".concat(location.protocol, "//").concat(location.host).concat(h.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_STORE_SKU(t, n));
-              (0, d.JG)(e, () => (0, s.showToast)((0, s.createToast)(m.intl.string(m.t["L/PwZf"]), s.ToastType.SUCCESS))), (0, _.X)(t, _.B.DETAILS_MODAL, n)
+              (0, d.JG)(e, () => (0, s.showToast)((0, s.createToast)(m.intl.string(m.t["L/PwZW"]), s.ToastType.SUCCESS))), (0, _.X)(t, _.B.DETAILS_MODAL, n)
             },
             variant: "icon-only"
           }), v]

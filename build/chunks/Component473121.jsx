@@ -60,7 +60,7 @@ let d = e => {
       children: g.current(u)
     }) : null, p && !m && (0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
-      children: s.intl.format(s.t.Q0tSKT, {})
+      children: s.intl.format(s.t.Q0tSKS, {})
     })]
   })
 }

@@ -77,7 +77,7 @@ class b extends(a = Chunk647438.PureComponent) {
               children: Chunk388032.intl.string(Chunk388032.t.Iz0kDg)
             }), (0, Chunk951288.jsx)(Chunk481060.Text, {
               variant: "text-md/normal",
-              children: Chunk388032.intl.format(Chunk388032.t["0rqMV5"], {
+              children: Chunk388032.intl.format(Chunk388032.t["0rqMV1"], {
                 helpCenterURL: g
               })
             })]
@@ -97,7 +97,7 @@ class b extends(a = Chunk647438.PureComponent) {
         children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-sm/normal",
           className: Chunk222198.footer,
-          children: Chunk388032.intl.string(Chunk388032.t.qqYun3)
+          children: Chunk388032.intl.string(Chunk388032.t.qqYun5)
         }), (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
           gap: 8,
           align: "center",
@@ -106,7 +106,7 @@ class b extends(a = Chunk647438.PureComponent) {
           children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
             variant: "text-sm/semibold",
             className: Chunk222198.footer,
-            children: Chunk388032.intl.format(Chunk388032.t.WL51ZR, {
+            children: Chunk388032.intl.format(Chunk388032.t.WL51ZW, {
               supportURL: Chunk63063.Z.getSubmitRequestURL()
             })
           }), (0, Chunk951288.jsx)("div", {
@@ -115,7 +115,7 @@ class b extends(a = Chunk647438.PureComponent) {
           }), (0, Chunk951288.jsx)(Chunk481060.Text, {
             variant: "text-sm/semibold",
             className: Chunk222198.footer,
-            children: Chunk388032.intl.format(Chunk388032.t.Hv7ztc, {
+            children: Chunk388032.intl.format(Chunk388032.t.Hv7ztb, {
               logoutOnClick: this.props.onLogout
             })
           })]

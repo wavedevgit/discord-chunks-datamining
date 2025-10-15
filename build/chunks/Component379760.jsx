@@ -43,7 +43,7 @@ function h(e) {
       className: u.button,
       onClick: f,
       color: s.zx.Colors.PRIMARY,
-      children: c.intl.string(c.t["ETE/oC"])
+      children: c.intl.string(c.t["ETE/oK"])
     })]
   })
 }

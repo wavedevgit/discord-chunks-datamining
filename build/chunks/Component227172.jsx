@@ -112,9 +112,9 @@ let k = {
         headerIcons: null == ea ? null : (0, r.jsx)(L.Z, {
           onClick: es,
           Icon: ea,
-          "aria-label": j.intl.string(j.t.YR4cHH)
+          "aria-label": j.intl.string(j.t.YR4cHB)
         }),
-        userDescription: (0, S.kr)(y) ? j.t.vPg1JT : j.t.rPqqts,
+        userDescription: (0, S.kr)(y) ? j.t.vPg1JS : j.t.rPqqtr,
         title: W,
         subtitle: Y,
         badges: ef,
@@ -127,7 +127,7 @@ let k = {
         title: y.extra.game_name,
         subtitle: Y,
         badges: ef,
-        userDescription: j.t["6oWFUN"],
+        userDescription: j.t["6oWFUF"],
         entry: y,
         stream: $,
         onUserPopoutClosed: Z,

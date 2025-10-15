@@ -54,7 +54,7 @@ function Z(e) {
     }, _.fy.FREQUENT_USER_ACTION)
   }, [])], {
     showTutorial: B,
-    setSeenTutorial: F
+    setSeenTutorial: V
   } = function(e) {
     let t = (0, s.e7)([O.Z], () => {
         var e, t;
@@ -69,7 +69,7 @@ function Z(e) {
       showTutorial: !t && e === c.X.UNREADS,
       setSeenTutorial: n
     }
-  }(G), V = i.useCallback(() => {
+  }(G), F = i.useCallback(() => {
     k(false), M && (null == n || n())
   }, [n, M]), H = i.useCallback(() => {
     k(!M), M ? null == n || n() : null == t || t()
@@ -89,8 +89,8 @@ function Z(e) {
     G !== c.X.BOOKMARKS || z || W || U(c.X.MENTIONS)
   });
   let q = i.useCallback(e => {
-      e.shiftKey || V()
-    }, [V]),
+      e.shiftKey || F()
+    }, [F]),
     X = (0, b.Us)({
       location: "ForYou"
     });
@@ -103,10 +103,10 @@ function Z(e) {
       align: T,
       autoInvert: false,
       shouldShow: M,
-      onRequestClose: V,
+      onRequestClose: F,
       renderPopout: function() {
         return (0, r.jsx)(u.VqE, {
-          "aria-label": P.intl.string(P.t.GSmTKJ),
+          "aria-label": P.intl.string(P.t.GSmTKC),
           className: D,
           children: (0, r.jsx)("div", {
             className: o()(N.container, {
@@ -117,19 +117,19 @@ function Z(e) {
                 tab: G,
                 setTab: U,
                 badgeState: Z,
-                closePopout: V
+                closePopout: F
               }),
               children: G === c.X.FOR_YOU ? (0, r.jsx)(v.ZP, {}) : G === c.X.MENTIONS ? (0, r.jsx)(j.Z, {
                 onJump: q
               }) : Y && G === c.X.GAME_INVITES ? (0, r.jsx)(S.Z, {}) : z && W && G === c.X.BOOKMARKS ? (0, r.jsx)(m.K, {
-                closePopout: V
+                closePopout: F
               }) : G === c.X.SCHEDULED ? (0, r.jsx)(C._, {}) : (0, r.jsx)(a.SV, {
                 fallback: (0, r.jsx)(E.h6, {}),
                 children: (0, r.jsx)(E.ZP, {
                   onJump: q,
                   showTutorial: B,
-                  setSeenTutorial: F,
-                  closePopout: V
+                  setSeenTutorial: V,
+                  closePopout: F
                 })
               })
             })

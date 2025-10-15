@@ -35,11 +35,11 @@ function v(e) {
   });
   return (0, r.jsx)(o.u, {
     asContainer: true,
-    text: x.intl.string(x.t.W4Nd7Q),
+    text: x.intl.string(x.t.W4Nd7e),
     children: (0, r.jsx)(c.P3F, {
       "aria-disabled": !n,
       tabIndex: n ? 0 : false,
-      "aria-label": x.intl.string(x.t.W4Nd7Q),
+      "aria-label": x.intl.string(x.t.W4Nd7e),
       onClick: n ? i : true,
       style: {
         background: (0, d.dG)(u)
@@ -125,7 +125,7 @@ function C(e) {
     })
   }, [C]), y = i.useCallback(e => (!p || null == n.customBanner) && e === n.brandColorPrimary, [n, p]);
   return (0, r.jsx)(c.gNt, {
-    label: x.intl.string(x.t.BSVog8),
+    label: x.intl.string(x.t.BSVog4),
     children: (0, r.jsxs)("div", {
       className: j.grid,
       children: [(0, r.jsx)(v, {

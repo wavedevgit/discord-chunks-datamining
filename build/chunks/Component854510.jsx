@@ -21,11 +21,11 @@ function a(t) {
     onClose: c,
     transitionState: a,
     actions: [{
-      text: l.intl.string(l.t.CZGqeT),
+      text: l.intl.string(l.t.CZGqeX),
       variant: "secondary",
       onClick: c
     }, {
-      text: l.intl.string(l.t.mbD50D),
+      text: l.intl.string(l.t.mbD50N),
       variant: "primary",
       onClick: () => {
         n(e), c()
@@ -38,9 +38,9 @@ function a(t) {
       } = t;
       return e > 0 && n > 0 ? l.intl.formatToPlainString(l.t.Uzdyho, {
         number: e + n
-      }) : n > 0 ? l.intl.formatToPlainString(l.t.wvygk8, {
+      }) : n > 0 ? l.intl.formatToPlainString(l.t.wvygk5, {
         number: n
-      }) : l.intl.formatToPlainString(l.t.HviVA9, {
+      }) : l.intl.formatToPlainString(l.t.HviVAw, {
         number: e
       })
     }({
@@ -52,9 +52,9 @@ function a(t) {
         blockedUsersCount: e,
         ignoredUsersCount: n
       } = t;
-      return e > 0 && n > 0 ? l.intl.string(l.t["P/KFXz"]) : n > 0 ? l.intl.format(l.t.Ri3o33, {
+      return e > 0 && n > 0 ? l.intl.string(l.t["P/KFX1"]) : n > 0 ? l.intl.format(l.t.Ri3o39, {
         number: n
-      }) : l.intl.format(l.t["28qZMU"], {
+      }) : l.intl.format(l.t["28qZMT"], {
         number: e
       })
     }({

@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk140465 = require("./140465.js"),
-  Chunk47280 = require("./47280.js"),
+  Chunk283066 = require("./283066.js"),
   Chunk998030 = require("./998030.js"),
   Chunk639119 = require("./639119.js"),
   Chunk973007 = require("./973007.jsx"),
@@ -35,10 +35,10 @@ function y(e) {
     setSelectedPlanId: c,
     priceOptions: u,
     defaultPlanId: j
-  } = (0, f.JL)(), {
+  } = (0, h.JL)(), {
     isGift: b,
     claimableRewards: y
-  } = (0, _.wD)(), S = b && null != y && y.length > 0, v = (0, C.N)(i), I = (0, o.Nx)(), w = (0, s.ZP)({
+  } = (0, _.wD)(), S = b && null != y && y.length > 0, v = (0, C.N)(i), w = (0, o.Nx)(), I = (0, s.Z)({
     location: "PremiumPaymentSelect"
   });
   return (0, r.jsx)(L, {
@@ -55,9 +55,9 @@ function y(e) {
         defaultPlanId: d
       } = e;
       r(n);
-      let C = h.h8.PLAN_SELECT,
+      let C = f.h8.PLAN_SELECT,
         c = (0, p.k5)(t);
-      c !== g.Si.TIER_1 && c !== g.Si.TIER_2 || n !== g.Si.TIER_0 || a || (C = h.h8.WHAT_YOU_LOSE);
+      c !== g.Si.TIER_1 && c !== g.Si.TIER_2 || n !== g.Si.TIER_0 || a || (C = f.h8.WHAT_YOU_LOSE);
       let u = (0, x.T)({
           userTrialOffer: l,
           isGift: a,
@@ -69,7 +69,7 @@ function y(e) {
           selectedSkuId: n,
           startedPaymentFlowWithPaymentSources: s
         });
-      C !== h.h8.WHAT_YOU_LOSE && _ && (C = h.h8.REVIEW, o((0, m.nA)(n, t, d))), i(C, {
+      C !== f.h8.WHAT_YOU_LOSE && _ && (C = f.h8.REVIEW, o((0, m.nA)(n, t, d))), i(C, {
         analyticsDataOverride: {
           sku_id: n
         }
@@ -87,10 +87,10 @@ function y(e) {
     }),
     onClose: n,
     isGift: b,
-    inOfferExperience: I,
+    inOfferExperience: w,
     priceOptions: u,
     showPromotionalGiftBanner: S,
-    enablePremiumBrandRefresh: w
+    enablePremiumBrandRefresh: I
   })
 }
 
@@ -102,13 +102,13 @@ function L(e) {
     inOfferExperience: o,
     priceOptions: s,
     showPromotionalGiftBanner: C,
-    enablePremiumBrandRefresh: f
-  } = e, h = f ? (0, r.jsx)(l.Heading, {
+    enablePremiumBrandRefresh: h
+  } = e, f = h ? (0, r.jsx)(l.Heading, {
     variant: "heading-lg/bold",
-    children: j.intl.string(j.t["r+SebU"])
+    children: j.intl.string(j.t["r+SebW"])
   }) : (0, r.jsx)(l.Heading, {
     variant: "heading-md/semibold",
-    children: j.intl.string(j.t["r+SebU"])
+    children: j.intl.string(j.t["r+SebW"])
   }), {
     giftRecipient: m
   } = (0, _.wD)(), x = (0, d.y)({
@@ -118,13 +118,13 @@ function L(e) {
     children: [(0, r.jsx)(l.xBx, {
       "data-migration-pending": true,
       className: a()(b.skuSelectModalHeader, {
-        [b.premiumBrandRefreshHeader]: f
+        [b.premiumBrandRefreshHeader]: h
       }),
       separator: false,
       children: (0, r.jsxs)(l.Kqy, {
         direction: "horizontal",
         justify: "space-between",
-        children: [h, (0, r.jsx)(l.olH, {
+        children: [f, (0, r.jsx)(l.olH, {
           "data-migration-pending": true,
           className: b.close,
           innerClassName: b.closeInner,
@@ -134,9 +134,9 @@ function L(e) {
     }), (0, r.jsx)(l.hzk, {
       "data-migration-pending": true,
       className: a()(b.skuSelectModalContent, {
-        [b.modalSize]: !f,
-        [b.modalPadding]: o && !f,
-        [b.premiumBrandRefreshContent]: f,
+        [b.modalSize]: !h,
+        [b.modalPadding]: o && !h,
+        [b.premiumBrandRefreshContent]: h,
         [b.wishlistModalSize]: x
       }),
       children: x ? (0, r.jsx)(u.Z, {
@@ -150,7 +150,7 @@ function L(e) {
         isGift: i,
         priceOptions: s,
         showPromotionalGiftBanner: C,
-        enablePremiumBrandRefresh: f
+        enablePremiumBrandRefresh: h
       })
     })]
   })

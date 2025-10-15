@@ -55,27 +55,27 @@ function d(e) {
     },
     Analytics: {
       value: "Analytics",
-      label: o.intl.string(o.t["j+d6RN"]),
+      label: o.intl.string(o.t["j+d6RE"]),
       checked: false
     },
     Activities: {
       value: "Activities",
-      label: o.intl.string(o.t.KO88BS),
+      label: o.intl.string(o.t.KO88BQ),
       checked: false
     },
     Ads: {
       value: "Ads",
-      label: o.intl.string(o.t.wb7QJ3),
+      label: o.intl.string(o.t.wb7QJy),
       checked: false
     },
     Messages: {
       value: "Messages",
-      label: o.intl.string(o.t["0dO1t+"]),
+      label: o.intl.string(o.t["0dO1t7"]),
       checked: false
     },
     Servers: {
       value: "Servers",
-      label: o.intl.string(o.t.JN9c36),
+      label: o.intl.string(o.t.JN9c39),
       checked: false
     },
     Zendesk: {
@@ -83,24 +83,24 @@ function d(e) {
       label: o.intl.string(o.t.yaLeEB),
       checked: false
     }
-  }), [g, O] = c.useState(false), f = Object.values(d).some(e => e.checked);
+  }), [O, f] = c.useState(false), g = Object.values(d).some(e => e.checked);
   return (0, n.jsx)(i.Modal, {
-    title: o.intl.string(o.t.jxXMEz),
-    subtitle: o.intl.format(o.t.fSv59b, {
+    title: o.intl.string(o.t.jxXMEx),
+    subtitle: o.intl.format(o.t.fSv59f, {
       helpdeskArticle: s.Z.getArticleURL(a.BhN.GDPR_PACKAGE_CONTENTS)
     }),
     transitionState: t.transitionState,
     onClose: t.onClose,
     actions: [{
-      text: o.intl.string(o.t.jpVjsg),
+      text: o.intl.string(o.t.jpVjsr),
       onClick: () => {
         t.onClose()
       },
       variant: "secondary"
     }, {
-      text: o.intl.string(o.t.NYgNg9),
+      text: o.intl.string(o.t.NYgNg4),
       onClick: () => {
-        if (!f) return void O(true);
+        if (!g) return void f(true);
         let e = Object.keys(d).filter(e => d[e].checked).map(e => d[e].value);
         null == r || r(e), t.onClose()
       },
@@ -129,9 +129,9 @@ function d(e) {
               checked: true
             })
           }), r
-        }), e.length > 0 && g && O(false)
+        }), e.length > 0 && O && f(false)
       },
-      errorMessage: g ? o.intl.string(o.t.W1Rw3D) : true
+      errorMessage: O ? o.intl.string(o.t.W1Rw3N) : true
     })
   })
 }

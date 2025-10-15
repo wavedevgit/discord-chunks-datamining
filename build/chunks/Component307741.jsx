@@ -62,7 +62,7 @@ function v(e) {
       className: y.gameIcon,
       src: n,
       height: 80,
-      alt: b.intl.formatToPlainString(b.t["nh+jWk"], {
+      alt: b.intl.formatToPlainString(b.t["nh+jWl"], {
         game: t.name
       })
     }) : (0, r.jsx)(u.IMN, {
@@ -133,7 +133,7 @@ function T(e) {
 function S(e) {
   let {
     application: t
-  } = e, n = i.useMemo(() => (0, m.fP)(), []), a = (0, l.e7)([_.Z], () => _.Z.getMute(t.id)), o = i.useMemo(() => a ? b.intl.string(b.t.tpvw4T) : b.intl.string(b.t["6EwEwp"]), [a]);
+  } = e, n = i.useMemo(() => (0, m.fP)(), []), a = (0, l.e7)([_.Z], () => _.Z.getMute(t.id)), o = i.useMemo(() => a ? b.intl.string(b.t.tpvw4e) : b.intl.string(b.t["6EwEws"]), [a]);
   return (0, r.jsxs)("div", {
     className: y.actionButtonsContainer,
     children: [(0, r.jsx)(c.u, {

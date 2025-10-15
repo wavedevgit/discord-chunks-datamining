@@ -32,7 +32,7 @@ function f(e) {
         [d.disabled]: t
       }),
       onClick: i,
-      children: u.intl.string(u.t.Br1ls3)
+      children: u.intl.string(u.t.Br1ls7)
     })]
   })
 }

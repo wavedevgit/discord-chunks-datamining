@@ -36,7 +36,7 @@ function s(e) {
     return r
   }(e, ["hasPermission", "streamActive", "isSelfStream", "centerButton", "onMouseEnter", "onMouseLeave", "renderNUXHighlight", "buttonRef"]);
   let b = d ? a.d : a.Z;
-  t = c ? u ? o.intl.string(o.t.S5anIc) : o.intl.string(o.t.q3O3J8) : s ? o.intl.string(o.t.fjBNo1) : o.intl.string(o.t.uQn9B8);
+  t = c ? u ? o.intl.string(o.t.S5anIS) : o.intl.string(o.t.q3O3Jy) : s ? o.intl.string(o.t.fjBNo6) : o.intl.string(o.t.uQn9Bw);
   let {
     Component: C,
     events: y,

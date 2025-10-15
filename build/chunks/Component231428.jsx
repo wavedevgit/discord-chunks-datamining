@@ -153,12 +153,12 @@ class G extends(r = Chunk647438.PureComponent) {
       className: R.externalRow,
       children: [(0, i.jsx)("div", {
         className: R.externalRowHeader,
-        children: N.intl.format(N.t["6mIX6s"], {
+        children: N.intl.format(N.t["6mIX6u"], {
           paymentGatewayName: C.Vz[e.paymentGateway]
         })
       }), (0, i.jsx)("div", {
         className: R.externalRowBody,
-        children: N.intl.format(N.t.eG0uZB, {
+        children: N.intl.format(N.t.eG0uZG, {
           paymentGatewayName: C.Vz[e.paymentGateway],
           billingHistoryLink: (0, I.JE)(e.paymentGateway, "BILLING_HISTORY")
         })
@@ -182,7 +182,7 @@ class G extends(r = Chunk647438.PureComponent) {
             className: Chunk504333.paymentRowHeader,
             children: [(0, Chunk951288.jsx)("div", {
               className: Chunk982710.date,
-              children: Chunk388032.intl.string(Chunk388032.t["5t11BV"])
+              children: Chunk388032.intl.string(Chunk388032.t["5t11BQ"])
             }), (0, Chunk951288.jsx)("div", {
               className: Chunk504333.paymentRowHeaderDescription,
               children: Chunk388032.intl.string(Chunk388032.t.yAAPb2)

@@ -38,12 +38,12 @@ class c extends Chunk317770.Z {
         }
         return e
       }({}, e), n = n = {
-        header: s.intl.string(s.t.wDQgnX),
-        confirmText: s.intl.string(s.t["cY+Oob"]),
+        header: s.intl.string(s.t.wDQgnZ),
+        confirmText: s.intl.string(s.t["cY+Ooa"]),
         confirmButtonColor: i.zx.Colors.GREEN,
         children: (0, r.jsx)(l.Text, {
           variant: "text-md/normal",
-          children: s.intl.string(s.t.OJklbS)
+          children: s.intl.string(s.t.OJklbW)
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);

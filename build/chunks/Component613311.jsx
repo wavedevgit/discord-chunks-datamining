@@ -195,7 +195,7 @@ class ef extends Chunk647438.PureComponent {
       }) : null != t && t.premium ? (0, r.jsxs)(i.Fragment, {
         children: [(0, r.jsx)(P.Z.Icon, {
           icon: p.SrA,
-          "aria-label": es.intl.string(es.t.Ipxkog)
+          "aria-label": es.intl.string(es.t.Ipxkoq)
         }), (0, r.jsx)(et.Z, {
           sku: t
         })]
@@ -284,7 +284,7 @@ class ef extends Chunk647438.PureComponent {
     })
   }
   renderFeatures(e) {
-    return (0, r.jsx)(q.Z, {
+    return (0, r.jsx)(K.Z, {
       sku: e
     })
   }
@@ -303,10 +303,10 @@ class ef extends Chunk647438.PureComponent {
     return (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(I.Z, {
         tag: "h1",
-        children: es.intl.format(es.t.tluX4B, {
+        children: es.intl.format(es.t.tluX4O, {
           name: n.name
         })
-      }), (0, r.jsx)(_.Z, {}), (0, r.jsx)(K.Z, {
+      }), (0, r.jsx)(_.Z, {}), (0, r.jsx)(q.Z, {
         applicationId: e.id,
         blurb: t.summary,
         description: l,
@@ -481,7 +481,7 @@ class ef extends Chunk647438.PureComponent {
         guild: t
       } = this.props;
       return null != e && null != t && (w.Z.can(ea.Plq.CREATE_INSTANT_INVITE, t) || null != t.vanityURLCode) ? (0, r.jsx)(d.zx, {
-        "aria-label": es.intl.string(es.t.zJrgTG),
+        "aria-label": es.intl.string(es.t.zJrgTE),
         look: d.zx.Looks.BLANK,
         size: d.zx.Sizes.NONE,
         onClick: this.handleCreateInstantInvite,
@@ -497,11 +497,11 @@ class ef extends Chunk647438.PureComponent {
         showLinkCopied: e
       } = this.state;
       return this.isChannelType ? this.renderInviteLink() : (0, r.jsx)(c.u, {
-        text: e ? es.intl.string(es.t.uvTCOY) : null,
+        text: e ? es.intl.string(es.t.uvTCOT) : null,
         position: "left",
         forceOpen: e,
         children: (0, r.jsx)(d.zx, {
-          "aria-label": e ? es.intl.string(es.t.uvTCOY) : es.intl.string(es.t.WqhZss),
+          "aria-label": e ? es.intl.string(es.t.uvTCOT) : es.intl.string(es.t.WqhZsr),
           look: d.zx.Looks.BLANK,
           size: d.zx.Sizes.NONE,
           onClick: this.copyCurrentUrl,

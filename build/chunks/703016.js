@@ -39,26 +39,26 @@ let A = [],
 
 function D(e, t, n, r) {
   let l = _.Z.getGuild(n),
-    a = e.replace(R, x.intl.string(x.t["F+x38C"])).replace(/<@!?(\d+)>/g, (e, t) => {
+    a = e.replace(R, x.intl.string(x.t["F+x38P"])).replace(/<@!?(\d+)>/g, (e, t) => {
       var r;
       let i = C.default.getUser(t);
       return null == i ? e : null != (r = m.ZP.getNick(n, i.id)) ? r : S.ZP.getName(i)
     }).replace(/<@&?(\d+)>/g, (e, t) => {
       let n = null != l ? b.Z.getRole(l.id, t) : null;
-      return null != n && null != n.name ? n.name : x.intl.string(x.t.dRcLA2)
+      return null != n && null != n.name ? n.name : x.intl.string(x.t.dRcLAw)
     }).replace(/<#(\d+)>/g, (e, t) => {
       let n = g.Z.getChannel(t);
       return null == n ? e : (0, s.F6)(n, C.default, v.Z)
-    }).replace(/<a?:(\w+):(\d+)>/g, (e, t) => "".concat(x.intl.string(x.t.sMOuuS), " ").concat(t)).replace(/<\/([^\s]+?):(\d+)>/g, (e, t) => "/".concat(t)).replace(/<t:(\d+):([A-Z]|[a-z])>/g, (e, t, n) => {
+    }).replace(/<a?:(\w+):(\d+)>/g, (e, t) => "".concat(x.intl.string(x.t.sMOuub), " ").concat(t)).replace(/<\/([^\s]+?):(\d+)>/g, (e, t) => "/".concat(t)).replace(/<t:(\d+):([A-Z]|[a-z])>/g, (e, t, n) => {
       let r = c.Qh[n],
         l = 1e3 * parseInt(t, 10),
         a = i()(l);
       return null != r ? r(a) : a.format()
     });
-  return null == r ? x.intl.formatToPlainString(x.t["uIj77/"], {
+  return null == r ? x.intl.formatToPlainString(x.t["uIj77+"], {
     username: t,
     body: a
-  }) : x.intl.formatToPlainString(x.t["Ix4H+j"], {
+  }) : x.intl.formatToPlainString(x.t["Ix4H+v"], {
     username: t,
     body: a,
     replyUsername: r

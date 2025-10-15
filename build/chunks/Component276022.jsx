@@ -69,11 +69,11 @@ function E(e) {
   let M = [];
   return D && S && M.push((0, r.jsx)(o.sNh, {
     id: "manage-server-integration",
-    label: g.intl.string(g.t.IuSJT8),
+    label: g.intl.string(g.t.IuSJT0),
     action: L
   }, "manage-server-integration")), w && P && M.push((0, r.jsx)(o.sNh, {
     id: "manage-authorized-app",
-    label: g.intl.string(g.t.V8ruvz),
+    label: g.intl.string(g.t.V8ruv7),
     action: x
   }, "manage-authorized-app")), M
 }

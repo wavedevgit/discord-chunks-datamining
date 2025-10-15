@@ -83,7 +83,7 @@ function N(e) {
         giftMessage: D()
       })
     },
-    D = () => n === y.hX.FRIEND_ANNIVERSARY ? C.intl.formatToPlainString(C.t["L2s/N3"], {
+    D = () => n === y.hX.FRIEND_ANNIVERSARY ? C.intl.formatToPlainString(C.t["L2s/Nz"], {
       numberOfYears: O.Z.getFriendAnniversaryYears(t.id)
     }) : (0, b.Ou)(n),
     k = () => n === y.hX.FRIEND_ANNIVERSARY ? C.intl.string(C.t["4LohBA"]) : (0, b.Ou)(n),

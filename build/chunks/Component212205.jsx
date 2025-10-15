@@ -20,7 +20,7 @@ function c(e) {
     } = (0, s.z)("useChannelFavoriteSetNickname");
   return __OVERLAY__ || n !== o.I_8 ? null : (0, i.jsx)(l.sNh, {
     id: "set-channel-nickname",
-    label: u && c ? d.intl.string(d.t.xXYKiP) : d.intl.string(d.t.dilOF6),
+    label: u && c ? d.intl.string(d.t.xXYKiI) : d.intl.string(d.t.dilOFx),
     action: function() {
       (0, l.ZDy)(async () => {
         let {
@@ -47,8 +47,8 @@ function c(e) {
             return e
           }({}, t), l = l = {
             channelId: e.id,
-            heading: u && c ? d.intl.string(d.t.xXYKiP) : d.intl.string(d.t.dilOF6),
-            formTitle: u && c ? d.intl.string(d.t.OCAkGP) : d.intl.string(d.t["621LJD"]),
+            heading: u && c ? d.intl.string(d.t.xXYKiI) : d.intl.string(d.t.dilOFx),
+            formTitle: u && c ? d.intl.string(d.t.OCAkGB) : d.intl.string(d.t["621LJC"]),
             allowReset: !(u && c)
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, n) {
             var t = Object.keys(e);

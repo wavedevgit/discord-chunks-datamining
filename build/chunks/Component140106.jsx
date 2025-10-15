@@ -57,8 +57,8 @@ let p = (e, t) => (0, l.ZDy)(async () => {
     if ((null == e || null == (t = e.body) ? true : t.retry_after) != null) {
       let t = (0, r.Z)(new Date, e.body.retry_after);
       a.Z.show({
-        title: d.intl.string(d.t.Whhv4w),
-        body: d.intl.format(d.t.VIJkAy, {
+        title: d.intl.string(d.t["Whhv4+"]),
+        body: d.intl.format(d.t.VIJkAw, {
           duration: (0, i.jsx)(c.Z, {
             showUnits: true,
             deadline: t

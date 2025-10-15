@@ -23,14 +23,14 @@ let d = e => {
     }), (0, r.jsx)(a.Heading, {
       className: i()(c.centerText, c.header),
       variant: "heading-xl/semibold",
-      children: o.intl.string(o.t.OaloU5)
+      children: o.intl.string(o.t.OaloU1)
     }), (0, r.jsx)("div", {
       className: c.descriptionWidth,
       children: (0, r.jsx)(a.Text, {
         className: c.centerText,
         variant: "text-sm/normal",
         color: "header-secondary",
-        children: o.intl.format(o.t.Rs7MXJ, {
+        children: o.intl.format(o.t.Rs7MXF, {
           school: t
         })
       })

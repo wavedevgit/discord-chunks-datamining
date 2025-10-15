@@ -15,12 +15,12 @@ let c = (0, Chunk509613.x1)(Chunk313789.n.OVERLAY_PANE, {
     render: Chunk327885.Z
   }),
   E = (0, Chunk509613.wf)(Chunk313789.n.OVERLAY_PANEL, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t["9cb1Uz"]),
+    useTitle: () => Chunk388032.intl.string(Chunk388032.t["9cb1U1"]),
     buildLayout: () => [c]
   }),
   d = (0, Chunk509613.m7)(Chunk313789.n.OVERLAY_SIDEBAR_ITEM, {
     icon: Chunk657707.epB,
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t["9cb1Uz"]),
+    useTitle: () => Chunk388032.intl.string(Chunk388032.t["9cb1U1"]),
     legacySearchKey: Chunk726985.s6.OVERLAY,
     usePredicate: Chunk168308.bC,
     buildLayout: () => [E]

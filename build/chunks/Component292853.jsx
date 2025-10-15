@@ -64,7 +64,7 @@ function g(e) {
       className: h.chatHeaderBarText,
       variant: "text-sm/normal",
       color: "text-default",
-      children: p.intl.string(p.t.iOWmmB)
+      children: p.intl.string(p.t.iOWmmJ)
     }), (0, i.jsx)(o.Button, {
       size: "sm",
       variant: "primary",
@@ -76,7 +76,7 @@ function g(e) {
           section: d.jXE.CHANNEL
         })
       },
-      text: p.intl.string(p.t.ZtIlQo),
+      text: p.intl.string(p.t.ZtIlQk),
       icon: o.qJs
     })]
   })

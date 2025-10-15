@@ -72,25 +72,25 @@ function x(e) {
     let e = c ? g.Un.ONBOARDING_DEFAULT : g.Un.ONBOARDING_ADVANCED;
     c ? (0, s.h7j)(n => (0, r.jsx)(s.ConfirmModal, f(p({
       header: m.intl.string(m.t["49+ONj"]),
-      confirmText: m.intl.string(m.t.R9GHya),
-      cancelText: m.intl.string(m.t["ETE/oC"]),
+      confirmText: m.intl.string(m.t.R9GHyc),
+      cancelText: m.intl.string(m.t["ETE/oK"]),
       confirmButtonColor: a.zx.Colors.BRAND,
       onConfirm: () => (0, d.Ts)(t, e)
     }, n), {
       children: (0, r.jsx)(s.Text, {
         variant: "text-md/normal",
-        children: m.intl.string(m.t.TLkoOt)
+        children: m.intl.string(m.t.TLkoOj)
       })
     }))) : (0, s.h7j)(n => (0, r.jsx)(s.ConfirmModal, f(p({
       header: m.intl.string(m.t.YB9xUF),
-      confirmText: m.intl.string(m.t.ts6u6r),
-      cancelText: m.intl.string(m.t["ETE/oC"]),
+      confirmText: m.intl.string(m.t.ts6u6u),
+      cancelText: m.intl.string(m.t["ETE/oK"]),
       confirmButtonColor: a.zx.Colors.BRAND,
       onConfirm: () => (0, d.Ts)(t, e)
     }, n), {
       children: (0, r.jsx)(s.Text, {
         variant: "text-md/normal",
-        children: m.intl.string(m.t.BcGGVn)
+        children: m.intl.string(m.t.BcGGVl)
       })
     })))
   }, [t, c]);
@@ -101,7 +101,7 @@ function x(e) {
       children: (0, r.jsx)(s.Text, {
         variant: "text-sm/medium",
         color: "text-link",
-        children: c ? m.intl.string(m.t.OmpxWy) : m.intl.string(m.t.ozsQBC)
+        children: c ? m.intl.string(m.t.OmpxW1) : m.intl.string(m.t.ozsQBA)
       })
     })
   })

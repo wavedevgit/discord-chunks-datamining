@@ -47,16 +47,16 @@ function l(e) {
     }
     return e
   }({
-    header: i.intl.string(i.t.YrV3I9),
-    confirmText: i.intl.string(i.t.X7eUJq),
-    cancelText: i.intl.string(i.t["13/7kX"]),
+    header: i.intl.string(i.t.YrV3Iy),
+    confirmText: i.intl.string(i.t.X7eUJi),
+    cancelText: i.intl.string(i.t["13/7kZ"]),
     confirmButtonColor: o.zx.Colors.BRAND,
     onConfirm: l,
     onCancel: a
   }, u), r = r = {
     children: (0, n.jsx)(c.Text, {
       variant: "text-md/medium",
-      children: i.intl.string(i.t.MXSMtl)
+      children: i.intl.string(i.t.MXSMtr)
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
     var r = Object.keys(e);

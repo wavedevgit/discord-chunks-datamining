@@ -48,7 +48,7 @@ function x(e) {
       className: v.header,
       variant: "eyebrow",
       color: "text-secondary",
-      children: g.intl.string(g.t.yM9Krm)
+      children: g.intl.string(g.t.yM9Krq)
     }), (0, r.jsx)(o.zJl, {
       className: v.container,
       fade: true,

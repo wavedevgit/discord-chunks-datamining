@@ -111,8 +111,8 @@ class g extends Chunk647438.Component {
       return !i && !l || (e.stopPropagation(), e.preventDefault(), r.effectAllowed = "none", r.dropEffect = "none", n && (t.setState({
         isDragging: false
       }), (0, c.openUploadError)({
-        title: d.intl.string(d.t.azO1Pe),
-        help: d.intl.string(d.t["Koklr/"]),
+        title: d.intl.string(d.t.azO1PT),
+        help: d.intl.string(d.t.Koklr6),
         icons: t.props.icons
       })), false)
     }), _(this, "handleDragOver", e => {

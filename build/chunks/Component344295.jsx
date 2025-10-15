@@ -2,7 +2,7 @@
 /** chunk id: 344295, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => H
+  Z: () => W
 }), require("./997841.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -43,7 +43,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk197571 = require("./197571.js");
 
-function G(e, t, n) {
+function B(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -61,7 +61,7 @@ async function K(e) {
   } = await d.ZP.resolveInvite(e, F);
   null != t && (0, p.A)(t)
 }
-class W extends Chunk647438.PureComponent {
+class H extends Chunk647438.PureComponent {
   componentDidMount() {
     let {
       isUnderage: e,
@@ -147,7 +147,7 @@ class W extends Chunk647438.PureComponent {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-          G(e, t, n[t])
+          B(e, t, n[t])
         })
       }
       return e
@@ -170,13 +170,13 @@ class W extends Chunk647438.PureComponent {
         className: l()(Chunk197571.marginTop8, Chunk197571.marginBottom8),
         children: Chunk388032.intl.string(Chunk388032.t.kux01N)
       }), (0, Chunk951288.jsx)(Chunk388905.DK, {
-        children: module ? Chunk388032.intl.string(Chunk388032.t["5AkWAd"]) : Chunk388032.intl.string(Chunk388032.t["+qUJAj"])
-      }), this.renderButton(Chunk388032.intl.string(Chunk388032.t.fIv16B)), (0, Chunk951288.jsx)(Chunk388905.zx, {
+        children: module ? Chunk388032.intl.string(Chunk388032.t["5AkWAQ"]) : Chunk388032.intl.string(Chunk388032.t["+qUJAg"])
+      }), this.renderButton(Chunk388032.intl.string(Chunk388032.t.fIv16O)), (0, Chunk951288.jsx)(Chunk388905.zx, {
         onClick: () => window.open(Chunk63063.Z.getArticleURL(Chunk981631.BhN.INVALID_INVITES), "_blank"),
         look: Chunk388905.zx.Looks.LINK,
         color: Chunk388905.zx.Colors.LINK,
         className: Chunk197571.marginTop8,
-        children: Chunk388032.intl.string(Chunk388032.t.urIwn4)
+        children: Chunk388032.intl.string(Chunk388032.t.urIwn5)
       })]
     })
   }
@@ -186,7 +186,7 @@ class W extends Chunk647438.PureComponent {
       children: [(0, Chunk951288.jsx)(Chunk588705.Z, {
         invite: this.props.invite,
         error: null == (e = this.state.error) ? true : module.message
-      }), (null == (t = this.state.error) ? true : exports.code) === Chunk981631.evJ.INVALID_CANNOT_FRIEND_SELF ? this.renderButton(Chunk388032.intl.string(Chunk388032.t.fIv16B)) : this.renderButton(Chunk388032.intl.string(Chunk388032.t.ohMvm1), this.handleAccept)]
+      }), (null == (t = this.state.error) ? true : exports.code) === Chunk981631.evJ.INVALID_CANNOT_FRIEND_SELF ? this.renderButton(Chunk388032.intl.string(Chunk388032.t.fIv16O)) : this.renderButton(Chunk388032.intl.string(Chunk388032.t.ohMvm5), this.handleAccept)]
     })
   }
   renderExpiredInvite() {
@@ -199,11 +199,11 @@ class W extends Chunk647438.PureComponent {
     let t = null != e ? e : this.handleContinue;
     return (0, r.jsxs)(m.ZP, {
       children: [(0, r.jsx)(m.Dx, {
-        className: B.marginBottom8,
-        children: U.intl.string(U.t.csrAMJ)
+        className: G.marginBottom8,
+        children: U.intl.string(U.t.csrAMD)
       }), (0, r.jsx)(m.DK, {
-        children: U.intl.string(U.t["m1+IBn"])
-      }), this.renderButton(U.intl.string(U.t.fIv16B), () => t())]
+        children: U.intl.string(U.t["m1+IBg"])
+      }), this.renderButton(U.intl.string(U.t.fIv16O), () => t())]
     })
   }
   renderAuthenticatedHeader() {
@@ -232,15 +232,15 @@ class W extends Chunk647438.PureComponent {
   renderAuthenticatedOrDownload() {
     return (0, Chunk951288.jsxs)("div", {
       children: [(0, Chunk951288.jsxs)(Chunk388905.ZP, {
-        children: [this.renderAuthenticatedHeader(), this.renderButton(Chunk388032.intl.string(Chunk388032.t.ohMvm1), this.handleAccept)]
+        children: [this.renderAuthenticatedHeader(), this.renderButton(Chunk388032.intl.string(Chunk388032.t.ohMvm5), this.handleAccept)]
       }), this.renderAuthenicatedFooter()]
     })
   }
   renderContinue() {
     return (0, Chunk951288.jsxs)(Chunk388905.ZP, {
       children: [(0, Chunk951288.jsx)(Chunk388905.Dx, {
-        children: Chunk388032.intl.string(Chunk388032.t.fOc4gn)
-      }), this.renderButton(Chunk388032.intl.string(Chunk388032.t.fIv16B))]
+        children: Chunk388032.intl.string(Chunk388032.t.fOc4go)
+      }), this.renderButton(Chunk388032.intl.string(Chunk388032.t.fIv16O))]
     })
   }
   render() {
@@ -258,9 +258,9 @@ class W extends Chunk647438.PureComponent {
       case Chunk981631.r2o.APP_NOT_OPENED:
         return this.renderContinue();
       case Chunk981631.r2o.RESOLVING:
-        return Chunk188785.a ? this.renderSpinner(Chunk388032.intl.string(Chunk388032.t.MKDeyL)) : this.renderSpinner(Chunk388032.intl.string(Chunk388032.t["Z+hCVU"]));
+        return Chunk188785.a ? this.renderSpinner(Chunk388032.intl.string(Chunk388032.t.MKDeyM)) : this.renderSpinner(Chunk388032.intl.string(Chunk388032.t["Z+hCVV"]));
       case Chunk981631.r2o.APP_OPENING:
-        return this.renderSpinner(Chunk388032.intl.string(Chunk388032.t["Z+hCVU"]));
+        return this.renderSpinner(Chunk388032.intl.string(Chunk388032.t["Z+hCVV"]));
       case Chunk981631.r2o.RESOLVED:
         var l;
         if (require && (0, Chunk630388.yE)(null != (l = module.flags) ? l : 0, Chunk533800.$.IS_GUEST_INVITE)) return Chunk447543.ZP.openApp(module.code), Chunk298444.x.set(Chunk978684.J, module.code), this.renderAppOpened(() => Chunk647438(Chunk981631.Z5c.APP));
@@ -277,7 +277,7 @@ class W extends Chunk647438.PureComponent {
           transitionTo: Chunk647438
         });
       case Chunk981631.r2o.ACCEPTING:
-        return this.renderSpinner(Chunk388032.intl.string(Chunk388032.t["6wsY16"]));
+        return this.renderSpinner(Chunk388032.intl.string(Chunk388032.t["6wsY19"]));
       case Chunk981631.r2o.EXPIRED:
         return this.renderExpiredInvite();
       case Chunk981631.r2o.BANNED:
@@ -291,9 +291,9 @@ class W extends Chunk647438.PureComponent {
   }
   constructor(...e) {
     var t;
-    super(...e), t = this, G(this, "state", {
+    super(...e), t = this, B(this, "state", {
       error: null
-    }), G(this, "getAcceptInviteContext", e => d.ZP.getInviteContext(e, this.props.invite)), G(this, "handleContinue", e => {
+    }), B(this, "getAcceptInviteContext", e => d.ZP.getInviteContext(e, this.props.invite)), B(this, "handleContinue", e => {
       let {
         invite: t,
         transitionTo: n
@@ -302,7 +302,7 @@ class W extends Chunk647438.PureComponent {
         var r;
         (null == (r = t.guild) ? true : r.id) != null ? n(w.Z5c.APP_WITH_INVITE_AND_GUILD_ONBOARDING(t.code)) : d.ZP.transitionToInvite(null != e ? e : t, n)
       }
-    }), G(this, "handleAccept", () => {
+    }), B(this, "handleAccept", () => {
       this.setState({
         error: null
       });
@@ -326,43 +326,43 @@ class W extends Chunk647438.PureComponent {
         } else this.setState({
           error: {
             code: e.code,
-            message: U.intl.string(U.t.dDZRdy)
+            message: U.intl.string(U.t.dDZRd3)
           }
         })
       })
-    }), G(this, "handleDefaultTransition", () => {
+    }), B(this, "handleDefaultTransition", () => {
       let {
         defaultRoute: e,
         transitionTo: t
       } = this.props;
       t(e)
-    }), G(this, "renderButton", function(e) {
+    }), B(this, "renderButton", function(e) {
       let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : t.handleDefaultTransition,
         {
           invite: i
         } = t.props,
         s = null != i.guild_scheduled_event;
       return M.KO ? (0, r.jsx)(m.zx, {
-        className: s ? B.marginTop20 : B.marginTop40,
+        className: s ? G.marginTop20 : G.marginTop40,
         onClick: n,
         color: s ? m.zx.Colors.GREEN : m.zx.Colors.BRAND,
         children: e
       }) : (0, r.jsx)(m.v6, {
-        className: B.marginTop40
+        className: G.marginTop40
       })
     })
   }
 }
-let H = Chunk442837.ZP.connectStores([Chunk701190.Z, Chunk896797.Z, Chunk314897.default, Chunk362762.Z, Chunk899370.Z], e => {
+let W = Chunk442837.ZP.connectStores([Chunk701190.Z, Chunk896797.Z, Chunk314897.default, Chunk362762.Z, Chunk899370.Z], e => {
   var t;
   let {
     inviteKey: n
   } = e;
   return {
-    invite: null != (t = O.Z.getInvite(n)) ? t : {},
+    invite: null != (t = y.Z.getInvite(n)) ? t : {},
     nativeAppState: x.Z.getState(n),
     authenticated: N.default.isAuthenticated(),
-    defaultRoute: y.Z.defaultRoute,
+    defaultRoute: O.Z.defaultRoute,
     isUnderage: g.Z.isUnderageAnonymous()
   }
-})(W)
+})(H)

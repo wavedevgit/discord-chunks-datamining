@@ -6,5 +6,5 @@ require.d(exports, {
 var Chunk388032 = require("./388032.jsx");
 
 function l(e) {
-  return e > 0 ? "1-".concat(e) : i.intl.string(i.t.zMNEiF)
+  return e > 0 ? "1-".concat(e) : i.intl.string(i.t.zMNEiI)
 }

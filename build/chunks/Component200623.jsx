@@ -48,16 +48,16 @@ function g(e) {
     channel: t,
     transitionState: r,
     onClose: g
-  } = e, C = (0, o.e7)([u.default], () => null != u.default.getRemoteSessionId()), y = (0, f.Z)(t, {
+  } = e, y = (0, o.e7)([u.default], () => null != u.default.getRemoteSessionId()), C = (0, f.Z)(t, {
     forQRCode: true
   });
   return s.useEffect(() => {
-    C && g()
-  }, [C, g]), s.useEffect(() => {
+    y && g()
+  }, [y, g]), s.useEffect(() => {
     (0, p.Z)(t.id, m.YE.XBOX)
   }, [t.id]), (0, n.jsx)(i.Modal, {
-    title: b.intl.string(b.t["f+Aijq"]),
-    subtitle: b.intl.string(b.t.mYFmDY),
+    title: b.intl.string(b.t["f+Aijo"]),
+    subtitle: b.intl.string(b.t.mYFmDQ),
     actions: [],
     onClose: g,
     transitionState: r,
@@ -71,25 +71,25 @@ function g(e) {
           className: x.cardRow,
           children: [(0, n.jsx)(l.Z, {
             className: x.cardHeaderIcon
-          }), b.intl.string(b.t.ZNlYbK)]
+          }), b.intl.string(b.t.ZNlYbG)]
         }), (0, n.jsx)(_, {
           step: 1,
-          instructions: b.intl.string(b.t.dDtkl9)
+          instructions: b.intl.string(b.t.dDtkl5)
         }), (0, n.jsx)(_, {
           step: 2,
-          instructions: b.intl.string(b.t.IWuXjC)
+          instructions: b.intl.string(b.t.IWuXjI)
         }), (0, n.jsx)(a.Text, {
           variant: "text-sm/medium",
           children: (0, n.jsx)(a.Anchor, {
             className: x.learnMore,
             href: d.Z.getArticleURL(h.BhN.XBOX_CONNECTION),
-            children: b.intl.string(b.t.hvVgAZ)
+            children: b.intl.string(b.t.hvVgAQ)
           })
         })]
       }), (0, n.jsx)(c.ZP, {
         className: x.qrCode,
         size: 120,
-        text: y
+        text: C
       })]
     })
   })

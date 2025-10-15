@@ -38,40 +38,40 @@ function p(e) {
     [U, h] = (0, i.useState)(null != n ? T(n.type) : null),
     _ = (0, i.useRef)(false);
 
-  function D() {
+  function x() {
     _.current = true, d.Wz(n.displayName)
   }(0, o.zq)(() => {
-    _.current || D()
+    _.current || x()
   }), (0, i.useEffect)(() => {
     c.default.track(u.rMx.OPEN_MODAL, {
       type: null != p ? "New Audio Device Detected - Certified" : "New Audio Device Detected - Not Certified",
       device_name: null != p ? "".concat(p.vendor.name, " ").concat(p.model.name) : n.displayName
     })
   }, [n.displayName, p]);
-  let x = null != p ? m.intl.string(m.t.kiqvHd) : m.intl.string(m.t.AbnGI5);
+  let D = null != p ? m.intl.string(m.t.kiqvHR) : m.intl.string(m.t.AbnGIy);
   switch (n.type) {
     case s.Q.INPUT:
-      t = null != p ? m.intl.format(m.t.NqNqy2, {
+      t = null != p ? m.intl.format(m.t.NqNqy8, {
         vendorName: p.vendor.name,
         modelName: p.model.name
-      }) : m.intl.format(m.t.stSaRi, {
+      }) : m.intl.format(m.t.stSaRk, {
         name: n.displayName
       });
       break;
     case s.Q.OUTPUT:
-      t = null != p ? m.intl.format(m.t.uPgqIA, {
+      t = null != p ? m.intl.format(m.t.uPgqIC, {
         vendorName: p.vendor.name,
         modelName: p.model.name
-      }) : m.intl.format(m.t.jyhYp1, {
+      }) : m.intl.format(m.t.jyhYp6, {
         name: n.displayName
       });
       break;
     default:
       t = (0, a.jsxs)(i.Fragment, {
-        children: [null != p ? m.intl.format(m.t["4Xyzxy"], {
+        children: [null != p ? m.intl.format(m.t["4Xyzx8"], {
           vendorName: p.vendor.name,
           modelName: p.model.name
-        }) : m.intl.format(m.t.Z7XQcr, {
+        }) : m.intl.format(m.t.Z7XQcn, {
           name: n.displayName
         }), (0, a.jsx)(r.FXm, {
           value: function(e) {
@@ -89,13 +89,13 @@ function p(e) {
           }(U),
           onChange: e => h(T(e)),
           options: [{
-            name: m.intl.string(m.t.vhxqwT),
+            name: m.intl.string(m.t.vhxqwc),
             value: s.Q.INPUT_AND_OUTPUT
           }, {
-            name: m.intl.string(m.t["Kqs9+J"]),
+            name: m.intl.string(m.t["Kqs9+P"]),
             value: s.Q.INPUT
           }, {
-            name: m.intl.string(m.t.GGlM3e),
+            name: m.intl.string(m.t.GGlM3d),
             value: s.Q.OUTPUT
           }]
         })]
@@ -103,13 +103,13 @@ function p(e) {
   }
   return (0, a.jsxs)(r.Y0X, {
     transitionState: v,
-    "aria-label": x,
+    "aria-label": D,
     parentComponent: "ConnectedDeviceDetectionModal",
     children: [(0, a.jsx)(r.xBx, {
       separator: false,
       children: (0, a.jsx)(r.Heading, {
         variant: "heading-lg/semibold",
-        children: x
+        children: D
       })
     }), (0, a.jsx)(r.hzk, {
       children: (0, a.jsx)(r.Text, {
@@ -126,7 +126,7 @@ function p(e) {
                 dismiss_type: "permanent"
               }), f()
             },
-            children: m.intl.formatToPlainString(m.t.cwS3E6, {
+            children: m.intl.formatToPlainString(m.t.cwS3Ex, {
               device: n.displayName
             })
           })]
@@ -140,14 +140,14 @@ function p(e) {
           className: N.cancelButton,
           children: (0, a.jsx)(r.Button, {
             variant: "secondary",
-            text: m.intl.string(m.t.vPBgq7),
+            text: m.intl.string(m.t.vPBgq6),
             onClick: () => {
-              D(), f()
+              x(), f()
             }
           })
         }), (0, a.jsx)(r.Button, {
           variant: "primary",
-          text: m.intl.string(m.t.ydkoDT),
+          text: m.intl.string(m.t.ydkoDQ),
           onClick: () => {
             _.current = true, null != U && d.mo(n.displayName, U, "New Audio Device Detected Modal"), f()
           }

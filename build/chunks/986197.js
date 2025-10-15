@@ -67,7 +67,7 @@ let m = {
     let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : "modal",
       i = arguments.length > 2 && true !== arguments[2] && arguments[2],
       c = arguments.length > 3 && true !== arguments[3] && arguments[3],
-      m = false === /^[A-Za-z0-9_.]*$/.test(e) ? d.intl.string(d.t.z7c4bP) : e.includes("..") ? d.intl.string(d.t["C7G+gr"]) : e.length < 2 || e.length > 32 ? d.intl.formatToPlainString(d.t.IpijXA, {
+      m = false === /^[A-Za-z0-9_.]*$/.test(e) ? d.intl.string(d.t.z7c4bG) : e.includes("..") ? d.intl.string(d.t["C7G+go"]) : e.length < 2 || e.length > 32 ? d.intl.formatToPlainString(d.t.IpijXF, {
         maxNum: 32,
         minNum: 2
       }) : true;

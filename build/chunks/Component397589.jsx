@@ -51,9 +51,9 @@ let y = e => {
   return O && null != T && (null == I ? true : I.type) === h.B.CONFETTI ? (0, r.jsx)(o.P3F, {
     onFocus: S,
     onClick: A,
-    "aria-label": E.intl.string(E.t.Mp5k6E),
+    "aria-label": E.intl.string(E.t.Mp5k6O),
     children: (0, r.jsx)(a.u, {
-      text: E.intl.formatToPlainString(E.t["FE++aN"], {
+      text: E.intl.formatToPlainString(E.t["FE++aG"], {
         user: T
       }),
       children: (0, r.jsxs)("div", {
@@ -67,7 +67,7 @@ let y = e => {
         }), (0, r.jsx)(o.Text, {
           variant: "text-xs/bold",
           color: "currentColor",
-          children: E.intl.string(E.t["8Rrro+"])
+          children: E.intl.string(E.t["8Rrro6"])
         })]
       })
     })

@@ -144,7 +144,7 @@ class m extends(r = Chunk647438.Component) {
     let {
       autoFocus: e,
       query: t,
-      placeholder: n = Chunk388032.intl.string(Chunk388032.t.LzcpeZ),
+      placeholder: n = Chunk388032.intl.string(Chunk388032.t.LzcpeX),
       themeOverride: r,
       disabled: a,
       size: o,
@@ -165,7 +165,7 @@ class m extends(r = Chunk647438.Component) {
         size: "md",
         color: "currentColor",
         className: d.close,
-        "aria-label": u.intl.string(u.t.N86XcP)
+        "aria-label": u.intl.string(u.t.N86XcH)
       })]
     }, t))) : (E = true, f.forEach((e, t) => b.push((0, i.jsxs)(l.Anchor, {
       className: s()(d.tag, d.richTag),
@@ -186,7 +186,7 @@ class m extends(r = Chunk647438.Component) {
         size: "md",
         color: "currentColor",
         className: d.close,
-        "aria-label": u.intl.string(u.t.N86XcP)
+        "aria-label": u.intl.string(u.t.N86XcH)
       })]
     }, t))))), (0, Chunk951288.jsx)(Chunk481060.tEY, {
       focusTarget: this.ref,

@@ -90,8 +90,8 @@ let T = e => {
       width: 220,
       height: 132
     },
-    title: b.intl.string(b.t["0+11FF"]),
-    description: b.intl.string(b.t.dURIzS),
+    title: b.intl.string(b.t["0+11FB"]),
+    description: b.intl.string(b.t.dURIzc),
     enableSocialProof: false,
     analyticsLocationSection: m.jXE.EMOJI_UPSELL_POPOUT,
     onClose: n,

@@ -54,12 +54,12 @@ function j(e) {
       className: p.textContainer,
       children: [(0, r.jsx)(a.Heading, {
         variant: "heading-xl/semibold",
-        children: v.intl.string(v.t.yBsFE3)
+        children: v.intl.string(v.t.yBsFEx)
       }), (0, r.jsx)(a.Text, {
         color: "text-secondary",
         variant: "text-md/normal",
         className: p.subheader,
-        children: null != location ? v.intl.string(v.t.KDPFi9) : v.intl.format(v.t.f55NX0, {
+        children: null != location ? v.intl.string(v.t.KDPFi4) : v.intl.format(v.t.f55NX1, {
           channelName: null != (t = null == S ? true : S.name) ? t : "",
           channelHook: () => {
             var e;

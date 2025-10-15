@@ -41,7 +41,7 @@ function I(e) {
   if (null == t || !t.isDM()) return null;
   let Z = [(0, r.jsx)(s.ZP.Icon, {
     icon: a.Dio,
-    tooltip: E.intl.string(E.t.cpT0Cq),
+    tooltip: E.intl.string(E.t.cpT0Cg),
     onClick: () => m.Z.closeChannelSidebar(n)
   }, "close")];
   return (0, r.jsxs)(r.Fragment, {
@@ -57,13 +57,13 @@ function I(e) {
       className: y.hamBanner,
       children: [(0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
-        children: E.intl.string(E.t.XVOKgj)
+        children: E.intl.string(E.t.XVOKgo)
       }), (0, r.jsx)("div", {
         className: y.hamBannerButton,
         children: (0, r.jsx)(a.Button, {
           size: "sm",
           onClick: () => A(t, j),
-          text: E.intl.string(E.t.koqL3Z)
+          text: E.intl.string(E.t.koqL3d)
         })
       })]
     }), (0, r.jsx)("div", {

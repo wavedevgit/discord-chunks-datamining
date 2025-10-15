@@ -43,13 +43,13 @@ function O() {
       break;
     case Chunk740903.u.CAPTCHA_AND_RAID_PROTECTION:
       e = (0, Chunk951288.jsx)(Chunk733629.Z, {
-        title: Chunk388032.intl.string(Chunk388032.t["53eF5o"]),
+        title: Chunk388032.intl.string(Chunk388032.t["53eF5u"]),
         settings: y[Chunk740903.u.CAPTCHA_AND_RAID_PROTECTION]
       });
       break;
     case Chunk740903.u.DM_AND_SPAM_PROTECTION:
       e = (0, Chunk951288.jsx)(Chunk733629.Z, {
-        title: Chunk388032.intl.string(Chunk388032.t.O0SfFy),
+        title: Chunk388032.intl.string(Chunk388032.t.O0SfFx),
         settings: y[Chunk740903.u.DM_AND_SPAM_PROTECTION]
       });
       break;
@@ -60,7 +60,7 @@ function O() {
       break;
     case Chunk740903.u.PERMISSIONS:
       e = (0, Chunk951288.jsx)(Chunk733629.Z, {
-        title: Chunk388032.intl.string(Chunk388032.t.BXoNiT),
+        title: Chunk388032.intl.string(Chunk388032.t.BXoNiY),
         settings: y[Chunk740903.u.PERMISSIONS]
       })
   }
@@ -79,7 +79,7 @@ function O() {
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/semibold",
         color: "interactive-normal",
-        children: Chunk388032.intl.string(Chunk388032.t["13/7kX"])
+        children: Chunk388032.intl.string(Chunk388032.t["13/7kZ"])
       })]
     }), module]
   })

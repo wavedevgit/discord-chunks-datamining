@@ -23,13 +23,13 @@ function f(e) {
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(o.Heading, {
       variant: "heading-md/bold",
-      children: l.intl.string(l.t["48ywCu"])
+      children: l.intl.string(l.t["48ywCg"])
     }), (0, r.jsx)(o.LZC, {
       size: 4
     }), (0, r.jsx)(o.Text, {
       variant: "text-md/normal",
       className: c.sectionDescription,
-      children: l.intl.string(l.t.VWxmSo)
+      children: l.intl.string(l.t.VWxmSk)
     }), (0, r.jsx)(o.LZC, {
       size: 24
     }), (0, r.jsxs)("div", {
@@ -43,17 +43,17 @@ function f(e) {
         children: [(0, r.jsx)(o.Heading, {
           variant: "heading-xl/semibold",
           className: c.header,
-          children: l.intl.string(l.t["48ywCu"])
+          children: l.intl.string(l.t["48ywCg"])
         }), (0, r.jsx)(o.Text, {
           variant: "text-md/normal",
           className: c.description,
-          children: l.intl.format(l.t["/esXLj"], {
+          children: l.intl.format(l.t["/esXLi"], {
             numSubscriptions: n
           })
         })]
       }), (0, r.jsx)(s.Z, {
         onClick: t,
-        text: l.intl.string(l.t["z5YcJ+"])
+        text: l.intl.string(l.t.z5YcJy)
       })]
     })]
   })

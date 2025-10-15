@@ -22,24 +22,24 @@ let g = e => {
     enabled: true
   }, {
     renderComponent: () => (0, r.jsx)(o.Z, {
-      title: u.intl.string(u.t.QiONL5),
-      details: u.intl.string(u.t.dSRTMB)
+      title: u.intl.string(u.t.QiONLy),
+      details: u.intl.string(u.t.dSRTMD)
     }, "hide-suspicious-dms"),
     enabled: true
   }, {
     renderComponent: () => (0, r.jsx)(o.Z, {
-      title: u.intl.string(u.t["f+8F8F"]),
-      details: u.intl.string(u.t.qChrI2)
+      title: u.intl.string(u.t["f+8F8P"]),
+      details: u.intl.string(u.t.qChrIy)
     }, "filter-unknown-dms"),
     enabled: true
   }, {
     renderComponent: () => (0, r.jsx)(o.Z, {
-      title: u.intl.string(u.t.EkSAHZ)
+      title: u.intl.string(u.t.EkSAHR)
     }, "outbound-links-warn"),
     enabled: true
   }, {
     renderComponent: () => (0, r.jsx)(o.Z, {
-      title: u.intl.string(u.t["7cAQmj"])
+      title: u.intl.string(u.t["7cAQmp"])
     }, "delete-spam"),
     enabled: true
   }].filter(e => null != e);
@@ -51,12 +51,12 @@ let g = e => {
       enabled: !e.features.has(d.oNc.RAID_ALERTS_DISABLED)
     }, {
       renderComponent: () => (0, r.jsx)(o.Z, {
-        title: u.intl.string(u.t.gOkFfI)
+        title: u.intl.string(u.t.gOkFfH)
       }, "captcha-suspicious-joins"),
       enabled: true
     }, {
       renderComponent: () => (0, r.jsx)(o.Z, {
-        title: u.intl.string(u.t.r3esyC)
+        title: u.intl.string(u.t.r3esyM)
       }, "captcha-raid-joins"),
       enabled: true
     }],

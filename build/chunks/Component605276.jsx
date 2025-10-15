@@ -99,7 +99,7 @@ let v = Chunk647438.memo(function(e) {
           className: C.sidebarCardHeader,
           variant: "heading-md/bold",
           color: "header-primary",
-          children: j.intl.string(j.t.xwY4La)
+          children: j.intl.string(j.t.xwY4LS)
         }), (0, l.jsx)("div", {
           className: C.resourceChannelsList,
           children: t.map(e => (0, l.jsx)(_, {

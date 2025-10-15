@@ -57,11 +57,11 @@ function v() {
         className: Chunk807284.header,
         variant: "heading-xl/semibold",
         color: "text-default",
-        children: Chunk388032.intl.string(Chunk388032.t.erEf2g)
+        children: Chunk388032.intl.string(Chunk388032.t.erEf2t)
       }), (0, Chunk951288.jsx)(Chunk793030.xvT, {
         variant: "text-md/medium",
         color: "text-muted",
-        children: Chunk388032.intl.string(Chunk388032.t.NaRCXT)
+        children: Chunk388032.intl.string(Chunk388032.t.NaRCXV)
       })]
     })
   }) : (0, Chunk951288.jsxs)("div", {
@@ -76,11 +76,11 @@ function v() {
         className: Chunk807284.header,
         variant: "heading-xl/semibold",
         color: "text-default",
-        children: Chunk388032.intl.string(Chunk388032.t.w4DRbZ)
+        children: Chunk388032.intl.string(Chunk388032.t.w4DRbW)
       }), (0, Chunk951288.jsx)(Chunk793030.xvT, {
         variant: "text-md/medium",
         color: "text-muted",
-        children: Chunk388032.intl.string(Chunk388032.t.F6u3E3)
+        children: Chunk388032.intl.string(Chunk388032.t.F6u3Ex)
       })]
     }), (0, Chunk951288.jsx)(I, {})]
   })
@@ -96,7 +96,7 @@ function I() {
         source: c.Z.FOR_LATER_POPOUT
       }, t))
     }), []),
-    _ = Chunk388032.intl.format(Chunk388032.t.qXh3fo, {
+    _ = Chunk388032.intl.format(Chunk388032.t.qXh3fn, {
       nitroTierName: module,
       onClick: exports
     });

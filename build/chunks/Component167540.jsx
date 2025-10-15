@@ -36,13 +36,13 @@ function y() {
         children: [(0, Chunk951288.jsx)(Chunk359138.Z, {}), (0, Chunk951288.jsx)(Chunk417420.Z, {}), (0, Chunk951288.jsx)(Chunk973465.Z, {})]
       }), (0, Chunk951288.jsx)(Chunk154784.Z, {})]
     }), (0, Chunk951288.jsx)(Chunk603963.Z, {
-      title: Chunk388032.intl.string(Chunk388032.t.KDdjou),
+      title: Chunk388032.intl.string(Chunk388032.t.KDdjoq),
       webSetting: Chunk726985.s6.VOICE_AND_VIDEO_VIDEO_STREAMING,
       children: (0, Chunk951288.jsxs)(Chunk738486.Z, {
         children: [(0, Chunk951288.jsx)(Chunk520384.Z, {}), module && (0, Chunk951288.jsx)(Chunk186934.Z, {}), (0, Chunk951288.jsx)(Chunk546997.Z, {})]
       })
     }), (0, Chunk951288.jsx)(Chunk603963.Z, {
-      title: Chunk388032.intl.string(Chunk388032.t["8/udY0"]),
+      title: Chunk388032.intl.string(Chunk388032.t["8/udY2"]),
       webSetting: Chunk726985.s6.VOICE_AND_VIDEO_VIDEO_ADVANCED,
       children: (0, Chunk951288.jsx)(Chunk738486.Z, {
         children: (0, Chunk951288.jsx)(Chunk267006.Z, {})

@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk484459 = require("./484459.js"),
   Chunk78839 = require("./78839.js"),
   Chunk626135 = require("./626135.js"),
-  Chunk47280 = require("./47280.js"),
+  Chunk283066 = require("./283066.js"),
   Chunk331972 = require("./331972.js"),
   Chunk230916 = require("./230916.js"),
   Chunk373539 = require("./373539.jsx"),
@@ -64,7 +64,7 @@ let x = e => {
     q = (0, s.e7)([h.Z], () => null != t ? h.Z.getUserProfile(t) : null),
     X = "true" === new URLSearchParams(window.location.search).get("autoScroll");
   window.history.replaceState({}, "", window.location.pathname);
-  let Q = (0, b.ZP)({
+  let Q = (0, b.Z)({
     location: "SubscriberNitroHome"
   });
   return null == q ? (0, r.jsx)("div", {
@@ -133,7 +133,7 @@ let x = e => {
             className: D.bottomIllustration,
             width: 112,
             height: 85,
-            alt: w.intl.string(w.t.X4IxWL)
+            alt: w.intl.string(w.t.X4IxWF)
           })]
         })
       }), V && null != H && (0, r.jsx)(v.Z, {

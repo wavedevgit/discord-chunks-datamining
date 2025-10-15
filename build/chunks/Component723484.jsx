@@ -17,7 +17,7 @@ let o = e => {
     className: t,
     children: (0, r.jsx)(i.Heading, {
       variant: "heading-md/semibold",
-      children: a.intl.string(a.t.eALkIR)
+      children: a.intl.string(a.t.eALkIS)
     })
   })
 }

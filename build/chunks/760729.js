@@ -14,13 +14,13 @@ let o = [{
     if (null == i || !r.Z.shouldShowEveryoneGuard(i, t)) returnfalse;
     let o = r.Z.everyoneMemberCount(i, t),
       s = Math.pow(10, Math.floor(Math.log10(o))),
-      l = a.t["47E5Rz"];
-    return t.isForumPost() ? l = a.t.sYW2cy : t.isThread() && (l = a.t["2YaiQ1"]), {
+      l = a.t["47E5R0"];
+    return t.isForumPost() ? l = a.t.sYW2c3 : t.isThread() && (l = a.t["2YaiQ0"]), {
       body: a.intl.formatToPlainString(l, {
         role: i,
         count: (Math.trunc(o / s) * s).toLocaleString()
       }),
-      footer: a.intl.string(a.t.mVyrtu)
+      footer: a.intl.string(a.t.mVyrtr)
     }
   },
   analyticsType: "@Everyone Warning",
@@ -30,7 +30,7 @@ let o = [{
   }
 }, {
   check: e => !!i.Jn9.test(e) && {
-    body: a.intl.string(a.t.sTwS1a)
+    body: a.intl.string(a.t.sTwS1d)
   },
   analyticsType: "API Token Warning"
 }]

@@ -25,18 +25,18 @@ function p(e) {
     subscriptionIsPausedOrPausePending: i
   } = e, _ = (0, c.Z)();
   if (i) return {
-    flavor: f.intl.format(f.t.doslJu, {
+    flavor: f.intl.format(f.t.doslJi, {
       onClick: () => _(l.n.SUBSCRIPTIONS_PANEL, {
         section: u.oAB.SUBSCRIPTIONS
       })
     })
   };
   if (!r) return {
-    subtitle: f.intl.string(f.t.oiWYAc)
+    subtitle: f.intl.string(f.t.oiWYAQ)
   };
   if (t) return {
-    subtitle: f.intl.string(f.t.W5rDjW),
-    flavor: f.intl.format(f.t.cUHcaQ, {
+    subtitle: f.intl.string(f.t.W5rDjY),
+    flavor: f.intl.format(f.t.cUHcaW, {
       helpdeskArticle: a.Z.getArticleURL(u.BhN.GUILD_SUBSCRIPTIONS)
     })
   };
@@ -44,8 +44,8 @@ function p(e) {
     h = o.ZP.getDefaultPrice(p.id, n),
     m = (0, s.og)((0, s.T4)(h.amount, h.currency), p.interval, p.intervalCount);
   return {
-    subtitle: n ? f.intl.string(f.t.bhPzXR) : f.intl.string(f.t.Zs9h9Z),
-    flavor: f.intl.formatToPlainString(f.t.PGgTdA, {
+    subtitle: n ? f.intl.string(f.t.bhPzXV) : f.intl.string(f.t.Zs9h9f),
+    flavor: f.intl.formatToPlainString(f.t.PGgTdH, {
       monthlyGuildBoostPrice: m
     })
   }

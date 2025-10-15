@@ -86,14 +86,14 @@ function b(e) {
     },
     children: e => (0, r.jsx)(o.u, {
       asContainer: true,
-      text: _.intl.string(_.t.icyMgc),
+      text: _.intl.string(_.t.icyMgY),
       "aria-label": false,
       shouldShow: h > 0,
       children: (0, r.jsxs)(s.P3F, E(m({
         innerRef: y,
         className: p.button,
         role: "button",
-        "aria-label": _.intl.string(_.t.icyMgc)
+        "aria-label": _.intl.string(_.t.icyMgY)
       }, e), {
         children: [(0, r.jsx)(s.qJs, {
           size: "xs",
@@ -101,7 +101,7 @@ function b(e) {
         }), 0 === h && (0, r.jsx)(s.Text, {
           variant: "text-xs/normal",
           color: "none",
-          children: _.intl.string(_.t.icyMgc)
+          children: _.intl.string(_.t.icyMgY)
         })]
       }))
     })

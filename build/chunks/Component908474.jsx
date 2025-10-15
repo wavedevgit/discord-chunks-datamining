@@ -23,7 +23,7 @@ function _(e) {
     return (0, u.fv)(t, u.jq.JOINED_AT)
   }, []), m = l.useMemo(() => null == t ? null : I(T), [t, I, T]), g = l.useMemo(() => (0, o.J)(t.communicationDisabledUntil), [t.communicationDisabledUntil]), N = l.useMemo(() => null == t.communicationDisabledUntil ? new Date : new Date(t.communicationDisabledUntil), [t.communicationDisabledUntil]);
   return null != T || g ? (0, r.jsx)(s.gNt, {
-    label: d.intl.string(d.t["7V3759"]),
+    label: d.intl.string(d.t["7V375+"]),
     children: (0, r.jsxs)(E.WM, {
       children: [null != T && (0, r.jsx)(E._2, {
         icon: (0, r.jsx)(s.b6m, {
@@ -35,7 +35,7 @@ function _(e) {
         name: (0, r.jsx)(s.Text, {
           variant: "text-sm/semibold",
           color: "text-default",
-          children: d.intl.string(d.t.ZRnON3)
+          children: d.intl.string(d.t.ZRnONz)
         }),
         description: (0, r.jsx)(s.Text, {
           variant: "text-sm/semibold",
@@ -52,7 +52,7 @@ function _(e) {
         name: (0, r.jsx)(s.Text, {
           variant: "text-sm/semibold",
           color: "text-default",
-          children: d.intl.string(d.t["TJ8/tE"])
+          children: d.intl.string(d.t["TJ8/tL"])
         }),
         description: (0, r.jsx)(s.Text, {
           variant: "text-sm/semibold",

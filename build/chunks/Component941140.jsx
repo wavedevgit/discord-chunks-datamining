@@ -57,8 +57,8 @@ let d = {
         autocompletes: u,
         onHover: s,
         onClick: c,
-        titleWithQuery: l.t["iO/jnA"],
-        titleWithoutQuery: l.intl.string(l.t["7II2G3"]),
+        titleWithQuery: l.t["iO/jnJ"],
+        titleWithoutQuery: l.intl.string(l.t["7II2Gx"]),
         Component: a.ZP.Generic,
         getProps: (e, t) => ({
           key: t.toString(),
@@ -74,8 +74,8 @@ let d = {
         autocompletes: d,
         onHover: s,
         onClick: c,
-        titleWithQuery: l.t.pg0anB,
-        titleWithoutQuery: u.length > 0 ? l.intl.string(l.t.TpDXm4) : l.intl.string(l.t["+1H47t"]),
+        titleWithQuery: l.t.pg0anJ,
+        titleWithoutQuery: u.length > 0 ? l.intl.string(l.t.TpDXm5) : l.intl.string(l.t["+1H47u"]),
         Component: a.ZP.Generic,
         getProps: (e, t) => ({
           key: t.toString(),

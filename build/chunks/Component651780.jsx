@@ -39,10 +39,10 @@ function S(e) {
     days: i,
     hours: l
   } = (0, u.Z)(t);
-  return n <= 0 ? null : 0 === i && 0 === l ? E.intl.format(E.t.kF0HEa, {
+  return n <= 0 ? null : 0 === i && 0 === l ? E.intl.format(E.t.kF0HER, {
     tierName: r,
     numPremiumSubscriptions: n
-  }) : E.intl.format(E.t.neDJhq, {
+  }) : E.intl.format(E.t.neDJho, {
     days: i,
     hours: l,
     tierName: r,
@@ -61,7 +61,7 @@ function T(e) {
     messageType: a.QYI.WARNING,
     children: [(0, r.jsx)("div", {
       className: I.guildBoostingGracePeriodTitle,
-      children: E.intl.format(E.t.LG7vvg, {})
+      children: E.intl.format(E.t.LG7vvr, {})
     }), (0, r.jsx)(S, {
       endsAt: i,
       appliedGuildBoostsToMaintain: s,
@@ -102,14 +102,14 @@ function w() {
     children: [(0, Chunk951288.jsxs)(Chunk647438.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/semibold",
-        children: Chunk388032.intl.string(Chunk388032.t.nLovSZ)
+        children: Chunk388032.intl.string(Chunk388032.t.nLovSU)
       }), null != exports && null != module ? (0, Chunk951288.jsx)(T, {
         appliedGuildBoosts: exports,
         guildId: module.id
       }) : null, (0, Chunk951288.jsx)(Chunk481060.Text, {
         className: Chunk424359.titleBlurb,
         variant: "text-sm/normal",
-        children: Chunk388032.intl.format(Chunk388032.t.hLOkp9, {
+        children: Chunk388032.intl.format(Chunk388032.t.hLOkp6, {
           helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.GUILD_SUBSCRIPTIONS)
         })
       })]

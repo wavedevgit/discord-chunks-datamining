@@ -27,86 +27,86 @@ function v(e) {
     onWaitingForConnection: s,
     expectedCallbackState: m,
     onAuthToken: v,
-    onError: b,
-    onClose: f,
-    img: k,
+    onError: f,
+    onClose: k,
+    img: b,
     title: g,
     body: E,
     redirectDestination: T
-  } = e, O = r.useCallback(async () => {
+  } = e, O = n.useCallback(async () => {
     let e;
     try {
       if (e = await (0, u.H)(a, {
           twoWayLinkType: i.g.DESKTOP
         }), null == e) throw Error("missing authorizeURL")
     } catch (e) {
-      p.error("Error opening provider authorize page", e), b();
+      p.error("Error opening provider authorize page", e), f();
       return
     }
     let {
       state: t
     } = (0, x.xp)(e);
     l()(null != t, "Authorize URL state query parameter must be present"), null == s || s(t)
-  }, [a, b, s]), R = r.useCallback(e => {
+  }, [a, f, s]), y = n.useCallback(e => {
     let {
       callbackCode: t,
-      callbackState: n
+      callbackState: r
     } = e;
-    if (n !== m) return void p.warn("".concat(a, " link: received mismatching callback state!"));
+    if (r !== m) return void p.warn("".concat(a, " link: received mismatching callback state!"));
     v({
       callbackCode: t,
-      callbackState: n
+      callbackState: r
     })
   }, [a, m, v]);
-  return r.useEffect(() => (d.Z.subscribe("USER_CONNECTIONS_LINK_CALLBACK", R), () => {
-    d.Z.unsubscribe("USER_CONNECTIONS_LINK_CALLBACK", R)
-  }), [R]), (0, n.jsxs)(N.Z, {
-    children: [(0, n.jsxs)(c.xBx, {
+  return n.useEffect(() => (d.Z.subscribe("USER_CONNECTIONS_LINK_CALLBACK", y), () => {
+    d.Z.unsubscribe("USER_CONNECTIONS_LINK_CALLBACK", y)
+  }), [y]), (0, r.jsxs)(N.Z, {
+    children: [(0, r.jsxs)(c.xBx, {
       direction: h.Z.Direction.VERTICAL,
       className: j.header,
       separator: false,
-      children: [(0, n.jsx)(c.Text, {
+      children: [(0, r.jsx)(c.Text, {
         className: j.stepHeader,
         variant: "text-xs/bold",
         color: "header-secondary",
-        children: C.intl.format(C.t.fHz6eR, {
+        children: C.intl.format(C.t.fHz6eX, {
           number: 1,
           total: 2
         })
-      }), (0, n.jsxs)("div", {
+      }), (0, r.jsxs)("div", {
         className: j.illustration,
-        children: [k, " "]
-      }), (0, n.jsx)(c.Heading, {
+        children: [b, " "]
+      }), (0, r.jsx)(c.Heading, {
         className: j.title,
         variant: "heading-xl/extrabold",
         children: g
-      }), null != f && (0, n.jsx)(c.olH, {
+      }), null != k && (0, r.jsx)(c.olH, {
         className: j.closeButton,
-        onClick: f
+        onClick: k
       })]
-    }), (0, n.jsxs)(c.hzk, {
+    }), (0, r.jsxs)(c.hzk, {
       className: j.body,
       paddingFix: false,
-      children: [(0, n.jsx)(c.Text, {
+      children: [(0, r.jsx)(c.Text, {
         tag: "p",
         variant: "text-md/normal",
         color: "header-secondary",
         children: E
-      }), !t && null != T && (0, n.jsx)(c.Text, {
+      }), !t && null != T && (0, r.jsx)(c.Text, {
         tag: "p",
         variant: "text-sm/normal",
         color: "header-secondary",
-        children: C.intl.format(C.t.XhlYYn, {
+        children: C.intl.format(C.t.XhlYYm, {
           redirectUrl: T
         })
       })]
-    }), (0, n.jsx)(c.mzw, {
+    }), (0, r.jsx)(c.mzw, {
       className: j.footer,
-      children: (0, n.jsxs)(o.zx, {
+      children: (0, r.jsxs)(o.zx, {
         className: j.footerButton,
         color: t ? o.zx.Colors.PRIMARY : o.zx.Colors.BRAND,
         onClick: O,
-        children: [t ? C.intl.string(C.t["5911Lb"]) : C.intl.string(C.t["3PatSz"]), (0, n.jsx)(c.rgF, {
+        children: [t ? C.intl.string(C.t["5911LS"]) : C.intl.string(C.t["3PatS0"]), (0, r.jsx)(c.rgF, {
           color: "currentColor",
           className: j.launchIcon,
           size: "xs"

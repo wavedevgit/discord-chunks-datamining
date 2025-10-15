@@ -20,7 +20,7 @@ let s = function(e) {
       children: [(0, r.jsx)(i.Heading, {
         className: o.heading,
         variant: "heading-md/semibold",
-        children: a.intl.string(a.t.L2mlUb)
+        children: a.intl.string(a.t.L2mlUV)
       }), (0, r.jsx)(l.Z, {
         quest: t
       })]

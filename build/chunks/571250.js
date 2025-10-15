@@ -6,5 +6,5 @@ require.d(exports, {
 var Chunk388032 = require("./388032.jsx");
 
 function a(e, t, r) {
-  return r ? n.intl.string(n.t["2Ne/Y1"]) : t ? n.intl.string(n.t.QZ7WSS) : e ? n.intl.string(n.t["2US872"]) : n.intl.string(n.t.wjcRFX)
+  return r ? n.intl.string(n.t["2Ne/Y2"]) : t ? n.intl.string(n.t.QZ7WSU) : e ? n.intl.string(n.t["2US87+"]) : n.intl.string(n.t.wjcRFR)
 }

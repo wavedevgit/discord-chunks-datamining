@@ -96,7 +96,7 @@ function ei() {
     l = (0, Chunk26373.K)(),
     c = (0, Chunk183126.N)(),
     u = Chunk647438.useCallback(() => {
-      (0, Chunk481060.showToast)((0, Chunk481060.createToast)(Chunk388032.intl.string(Chunk388032.t["EDYbS+"]), Chunk481060.ToastType.FAILURE))
+      (0, Chunk481060.showToast)((0, Chunk481060.createToast)(Chunk388032.intl.string(Chunk388032.t.EDYbS0), Chunk481060.ToastType.FAILURE))
     }, []),
     {
       rejectAll: d
@@ -128,9 +128,9 @@ function ei() {
     }, [Chunk120356, require, Chunk112724]),
     O = Chunk647438.useCallback(() => (0, Chunk951288.jsxs)(Chunk82295.Z, {
       className: Chunk803882.sectionTitle,
-      children: [exports > 0 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.rA4iWY, {
+      children: [exports > 0 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.rA4iWV, {
         count: exports
-      }) : Chunk388032.intl.string(Chunk388032.t.flPU6g), Chunk442837 && exports > 0 ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+      }) : Chunk388032.intl.string(Chunk388032.t.flPU6u), Chunk442837 && exports > 0 ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
         children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
           className: Chunk803882.titleDivider,
           variant: "eyebrow",
@@ -140,8 +140,8 @@ function ei() {
         }), (0, Chunk951288.jsx)(Chunk481060.Avr, {
           onClick: Chunk493773,
           textVariant: "text-sm/normal",
-          text: Chunk388032.intl.string(Chunk388032.t.p6t7RC),
-          "aria-label": Chunk388032.intl.string(Chunk388032.t.p6t7RC)
+          text: Chunk388032.intl.string(Chunk388032.t.p6t7RE),
+          "aria-label": Chunk388032.intl.string(Chunk388032.t.p6t7RE)
         })]
       }) : null]
     }, "title"), [exports, Chunk493773, Chunk442837]);
@@ -174,15 +174,15 @@ function ei() {
         return (0, r.jsx)(p.aVo, en({
           className: ee.list,
           innerRole: l,
-          innerAriaLabel: $.intl.string($.t.e7GWjQ),
+          innerAriaLabel: $.intl.string($.t.e7GWjY),
           ref: t => {
             var n;
             e.current = t, i.current = null != (n = null == t ? true : t.getScrollerNode()) ? n : null
           },
           paddingTop: 24,
           paddingBottom: 24,
-          sectionHeight: q.oi,
-          rowHeight: q.WN,
+          sectionHeight: K.oi,
+          rowHeight: K.WN,
           renderSection: O,
           renderRow: _,
           sections: [n.length],
@@ -233,17 +233,17 @@ let ea = e => {
       };
       return i === u.z.MESSAGE_REQUEST_SETTINGS_COACH_MARK ? (0, r.jsxs)(r.Fragment, {
         children: [e.children, t ? (0, r.jsx)(d.J2, er(en({}, a), {
-          title: $.intl.string($.t.hRT8tc),
-          body: $.intl.string($.t.apPgJG),
+          title: $.intl.string($.t.hRT8tb),
+          body: $.intl.string($.t.apPgJC),
           actions: [{
-            text: $.intl.string($.t.LNoAQW),
+            text: $.intl.string($.t.LNoAQU),
             onClick: () => l(X.L.TAKE_ACTION)
           }]
         })) : (0, r.jsx)(d.J2, er(en({}, a), {
-          title: $.intl.string($.t.hRT8tc),
-          body: $.intl.string($.t["8JWods"]),
+          title: $.intl.string($.t.hRT8tb),
+          body: $.intl.string($.t["8JWodn"]),
           actions: [{
-            text: $.intl.string($.t.JN6EOJ),
+            text: $.intl.string($.t.JN6EOD),
             onClick: e => {
               e.stopPropagation(), (0, Z.openUserSettings)(A.n.CONTENT_AND_SOCIAL_PANEL, {
                 section: Q.oAB.CONTENT_AND_SOCIAL,
@@ -251,7 +251,7 @@ let ea = e => {
               }), l(X.L.TAKE_ACTION)
             }
           }, {
-            text: $.intl.string($.t.LNoAQW),
+            text: $.intl.string($.t.LNoAQU),
             onClick: () => l(X.L.USER_DISMISS),
             variant: "secondary"
           }]
@@ -265,7 +265,7 @@ function eo(e) {
   let {
     section: t
   } = e;
-  return t === q.pS.SPAM ? (0, r.jsx)(K.Z, {}) : (0, r.jsx)(ei, {})
+  return t === K.pS.SPAM ? (0, r.jsx)(q.Z, {}) : (0, r.jsx)(ei, {})
 }
 let es = (0, Chunk112724.Z)(function(e) {
   let {
@@ -293,11 +293,11 @@ let es = (0, Chunk112724.Z)(function(e) {
   i.useEffect(() => {
     null != g && !_ && O && b && ((0, T.Kh)(g), N.Z.closeChannelSidebar(w.uZ))
   }, [g, O, b, _]);
-  let [y, I] = i.useState(q.pS.REQUESTS), A = e => {
+  let [y, I] = i.useState(K.pS.REQUESTS), A = e => {
     I(e)
   };
   return (0, v.Tt)({
-    location: $.intl.string($.t.e7GWjQ)
+    location: $.intl.string($.t.e7GWjY)
   }), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: a()(et.chat, ee.container, {
@@ -316,21 +316,21 @@ let es = (0, Chunk112724.Z)(function(e) {
             targetElementRef: E,
             children: (0, r.jsx)(C.Z.Title, {
               ref: E,
-              children: $.intl.string($.t.e7GWjQ)
+              children: $.intl.string($.t.e7GWjY)
             })
           }), (0, r.jsx)(C.Z.Divider, {}), (0, r.jsxs)(p.njP, {
-            "aria-label": $.intl.string($.t.e7GWjQ),
+            "aria-label": $.intl.string($.t.e7GWjY),
             selectedItem: y,
             type: "top-pill",
             onItemSelect: A,
             children: [(0, r.jsx)(p.njP.Item, {
-              id: q.pS.REQUESTS,
+              id: K.pS.REQUESTS,
               className: ee.item,
-              children: $.intl.string($.t["7RFcXZ"])
+              children: $.intl.string($.t["7RFcXV"])
             }), (0, r.jsx)(p.njP.Item, {
-              id: q.pS.SPAM,
+              id: K.pS.SPAM,
               className: ee.item,
-              children: 0 === o ? $.intl.string($.t.ulKXHp) : $.intl.formatToPlainString($.t["5jtrlZ"], {
+              children: 0 === o ? $.intl.string($.t.ulKXHh) : $.intl.formatToPlainString($.t["5jtrlZ"], {
                 count: o
               })
             })]

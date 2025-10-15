@@ -106,7 +106,7 @@ function I(e) {
         children: [(0, r.jsxs)("div", {
           className: b.topLine,
           children: [(0, r.jsx)(s.nn4, {
-            children: E.intl.string(E.t["7Xm5QI"])
+            children: E.intl.string(E.t["7Xm5QE"])
           }), (0, r.jsx)("span", {
             className: b.name,
             children: t.name
@@ -133,9 +133,9 @@ function T(e) {
   let n = (0, o.e7)([_.Z], () => _.Z.getMostRecentMessage(e.id)),
     i = (0, o.e7)([_.Z], () => _.Z.getCount(e.id)),
     a = (0, p.Ok)(e);
-  return (null == (t = e.threadMetadata) ? true : t.archived) ? E.intl.string(E.t.ZTo4HS) : null == i || 0 === i ? E.intl.string(E.t.HYtNyE) : null == n ? (0, r.jsxs)(r.Fragment, {
+  return (null == (t = e.threadMetadata) ? true : t.archived) ? E.intl.string(E.t.ZTo4HR) : null == i || 0 === i ? E.intl.string(E.t.HYtNyM) : null == n ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("span", {
-      children: E.intl.string(E.t.ZTo4HS)
+      children: E.intl.string(E.t.ZTo4HR)
     }), (0, r.jsx)("span", {
       className: b.timestamp,
       children: (0, p.Ye)(a)

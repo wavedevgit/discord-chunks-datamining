@@ -42,9 +42,9 @@ function h(t) {
     children: [(0, e.jsx)(a.xBx, {
       graphic: true,
       gradientColor: "purple",
-      title: p.intl.string(p.t.xREzoQ),
+      title: p.intl.string(p.t.xREzoa),
       titleTextVariant: "heading-xl/semibold",
-      subtitle: p.intl.string(p.t.va4ap4),
+      subtitle: p.intl.string(p.t.va4ap6),
       alignCenter: true
     }), (0, e.jsx)(a.fef, {
       children: (0, e.jsxs)("div", {
@@ -65,11 +65,11 @@ function h(t) {
               children: [(0, e.jsx)(r.Text, {
                 color: "text-primary",
                 variant: "text-md/semibold",
-                children: p.intl.string(p.t["9g594S"])
+                children: p.intl.string(p.t["9g594e"])
               }), (0, e.jsx)(r.Text, {
                 color: "text-secondary",
                 variant: "text-md/normal",
-                children: p.intl.string(p.t.Vye3DX)
+                children: p.intl.string(p.t.Vye3DQ)
               })]
             })]
           }), (0, e.jsx)(r.Button, {
@@ -78,7 +78,7 @@ function h(t) {
             onClick: () => {
               d.default.track(m.rMx.FORTNITE_DOWNLOAD_CLICKED), (0, o.Z)("https://fn.gg/GetGame")
             },
-            text: p.intl.string(p.t.ZDtJ10),
+            text: p.intl.string(p.t.ZDtJ19),
             variant: "secondary"
           })]
         }), (0, e.jsxs)("div", {
@@ -97,11 +97,11 @@ function h(t) {
               children: [(0, e.jsx)(r.Text, {
                 color: "text-primary",
                 variant: "text-md/semibold",
-                children: p.intl.string(p.t.kOjtOC)
+                children: p.intl.string(p.t.kOjtOD)
               }), (0, e.jsx)(r.Text, {
                 color: "text-secondary",
                 variant: "text-md/normal",
-                children: p.intl.string(p.t.X3zPL1)
+                children: p.intl.string(p.t.X3zPLy)
               })]
             })]
           }), (0, e.jsx)(r.Button, {
@@ -110,7 +110,7 @@ function h(t) {
             onClick: () => {
               d.default.track(m.rMx.FORTNITE_GFNJOIN_CLICKED), (0, o.Z)("https://www.nvidia.com/en-us/geforce-now/discord?ncid=partn-874834")
             },
-            text: p.intl.string(p.t.ycbXPw),
+            text: p.intl.string(p.t.ycbXPz),
             variant: "secondary"
           })]
         })]

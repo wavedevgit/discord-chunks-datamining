@@ -36,10 +36,10 @@ function m(t) {
       }), (0, n.jsx)(a.LZC, {
         horizontal: true,
         size: 8
-      }), p.intl.string(p.t.bi7buI)]
+      }), p.intl.string(p.t.bi7buL)]
     }), (0, n.jsx)(a.Text, {
       variant: "text-md/normal",
-      children: p.intl.format(p.t["4kglOW"], {
+      children: p.intl.format(p.t["4kglOT"], {
         roleName: o.name
       })
     })]
@@ -100,8 +100,8 @@ function O(t) {
   }({}, u), r = r = {
     className: b.modalContainer,
     header: p.intl.string(p.t["/gaTp6"]),
-    confirmText: p.intl.string(p.t.E4nVWA),
-    cancelText: p.intl.string(p.t["ETE/oC"]),
+    confirmText: p.intl.string(p.t.E4nVWF),
+    cancelText: p.intl.string(p.t["ETE/oK"]),
     loading: O,
     onConfirm: j,
     children: [(0, n.jsx)(a.Text, {

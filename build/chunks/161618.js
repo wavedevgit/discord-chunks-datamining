@@ -10,8 +10,8 @@ var Chunk442837 = require("./442837.js"),
   Chunk313789 = require("./313789.js"),
   Chunk388032 = require("./388032.jsx");
 let o = (0, Chunk509613.qs)(Chunk313789.n.ENABLE_UNREAD_MESSAGE_BADGE, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.VH8AIJ),
-  useSubtitle: () => Chunk388032.intl.string(Chunk388032.t["9K4qwX"]),
+  useTitle: () => Chunk388032.intl.string(Chunk388032.t.VH8AIC),
+  useSubtitle: () => Chunk388032.intl.string(Chunk388032.t["9K4qwc"]),
   useValue: () => (0, Chunk442837.e7)([Chunk292959.Z], () => !Chunk292959.Z.getDisableUnreadBadge()),
   setValue: t => l.default.setDisableUnreadBadge(!t)
 })

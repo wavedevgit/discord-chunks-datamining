@@ -71,10 +71,10 @@ function A(e) {
     baseChannelId: A,
     channelViewSource: R = "Split View",
     isResourceChannelView: k
-  } = e, D = (0, i.e7)([y.Z], () => y.Z.getChannel(n)), L = (0, i.e7)([N.Z], () => N.Z.getGuild(null == D ? true : D.getGuildId())), M = (0, I.ZP)(D), H = (0, i.e7)([b.Z], () => (null == L ? true : L.id) != null && b.Z.isLurking(L.id), [L]), U = (0, g.Z)(n), W = (0, i.e7)([f.Z], () => {
+  } = e, D = (0, i.e7)([y.Z], () => y.Z.getChannel(n)), L = (0, i.e7)([N.Z], () => N.Z.getGuild(null == D ? true : D.getGuildId())), M = (0, I.ZP)(D), H = (0, i.e7)([b.Z], () => (null == L ? true : L.id) != null && b.Z.isLurking(L.id), [L]), U = (0, g.Z)(n), G = (0, i.e7)([f.Z], () => {
     var e;
     return null == (e = f.Z.getResourceForChannel(null == L ? true : L.id, n)) ? true : e.title
-  }), G = (0, d.$5)(D), F = r.useRef(false);
+  }), W = (0, d.$5)(D), F = r.useRef(false);
   if (r.useEffect(() => {
       null == D || F.current || (F.current = true, (0, u.yw)(P.rMx.CHANNEL_OPENED, B(T({}, (0, u.$H)(D.id)), {
         channel_view: R
@@ -87,9 +87,9 @@ function A(e) {
     channel: D
   }, "notifications")), q.push((0, l.jsx)(x.ZP.Icon, {
     icon: a.Dio,
-    tooltip: E.intl.string(E.t.cpT0Cq),
+    tooltip: E.intl.string(E.t.cpT0Cg),
     onClick: () => v.Z.closeChannelSidebar(A)
-  }, "close")), G) ? (0, l.jsx)(c.Z, {
+  }, "close")), W) ? (0, l.jsx)(c.Z, {
     guild: L,
     channelId: D.id
   }) : (0, l.jsxs)(l.Fragment, {
@@ -101,7 +101,7 @@ function A(e) {
       "aria-label": E.intl.string(E.t.BIYAqa),
       children: (0, C.ud)({
         channel: D,
-        channelName: U ? W : M,
+        channelName: U ? G : M,
         guild: L,
         inSidebar: true,
         handleContextMenu: e => {

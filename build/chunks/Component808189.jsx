@@ -23,12 +23,12 @@ let m = [{
     tier: Chunk981631.Eu4.TIER_1,
     perks: [{
       icon: Chunk481060.EO4,
-      getCopy: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.Tlz0x1, {
+      getCopy: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.Tlz0x8, {
         numEmojiSlots: Chunk474936.HO[Chunk981631.Eu4.TIER_1].limits.emoji
       })
     }, {
       icon: Chunk481060.KY1,
-      getCopy: () => Chunk388032.intl.formatToPlainString(Chunk388032.t["v+MIfo"], {
+      getCopy: () => Chunk388032.intl.formatToPlainString(Chunk388032.t["v+MIfn"], {
         numSoundboardSlots: Chunk474936.HO[Chunk981631.Eu4.TIER_1].limits.soundboardSounds
       }),
       isNew: true
@@ -37,44 +37,44 @@ let m = [{
       getCopy: () => Chunk388032.intl.string(Chunk388032.t.PbAyub)
     }, {
       icon: Chunk481060.gj8,
-      getCopy: () => Chunk388032.intl.string(Chunk388032.t["WH+OeI"])
+      getCopy: () => Chunk388032.intl.string(Chunk388032.t["WH+OeH"])
     }]
   }, {
     tier: Chunk981631.Eu4.TIER_2,
     perks: [{
       icon: Chunk481060.hGI,
-      getCopy: () => Chunk388032.intl.string(Chunk388032.t.y4ft4D)
+      getCopy: () => Chunk388032.intl.string(Chunk388032.t.y4ft4O)
     }, {
       icon: Chunk481060.rG2,
-      getCopy: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.aFRl53, {
-        uploadSizeLimit: Chunk388032.intl.string(Chunk388032.t.M6qV8j)
+      getCopy: () => Chunk388032.intl.formatToPlainString(Chunk388032.t["aFRl5+"], {
+        uploadSizeLimit: Chunk388032.intl.string(Chunk388032.t.M6qV8v)
       })
     }, {
       icon: Chunk481060.EO4,
-      getCopy: () => Chunk388032.intl.string(Chunk388032.t["6PV6Qc"])
+      getCopy: () => Chunk388032.intl.string(Chunk388032.t["6PV6QU"])
     }, {
       icon: Chunk481060.dRF,
-      getCopy: () => Chunk388032.intl.string(Chunk388032.t["1a5rjl"])
+      getCopy: () => Chunk388032.intl.string(Chunk388032.t["1a5rjo"])
     }]
   }, {
     tier: Chunk981631.Eu4.TIER_3,
     perks: [{
       icon: Chunk481060.xPt,
-      getCopy: () => Chunk388032.intl.string(Chunk388032.t.adNGjW)
+      getCopy: () => Chunk388032.intl.string(Chunk388032.t.adNGjY)
     }, {
       icon: Chunk481060.rG2,
-      getCopy: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.aFRl53, {
-        uploadSizeLimit: Chunk388032.intl.string(Chunk388032.t.yMOW8D)
+      getCopy: () => Chunk388032.intl.formatToPlainString(Chunk388032.t["aFRl5+"], {
+        uploadSizeLimit: Chunk388032.intl.string(Chunk388032.t.yMOW8P)
       })
     }, {
       icon: Chunk481060.gj8,
-      getCopy: () => Chunk388032.intl.string(Chunk388032.t.Tsljqo)
+      getCopy: () => Chunk388032.intl.string(Chunk388032.t.Tsljqq)
     }, {
       icon: Chunk481060.OUq,
-      getCopy: () => Chunk388032.intl.string(Chunk388032.t.nRKlmC)
+      getCopy: () => Chunk388032.intl.string(Chunk388032.t.nRKlmJ)
     }, {
       icon: Chunk481060.ewx,
-      getCopy: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.hsZ88d, {
+      getCopy: () => Chunk388032.intl.formatToPlainString(Chunk388032.t.hsZ88f, {
         numStageSeats: Chunk981631.RcX
       })
     }]
@@ -112,7 +112,7 @@ let m = [{
           tag: "div",
           variant: "text-xs/semibold",
           color: "always-white",
-          children: p.intl.string(p.t["9JbE3J"])
+          children: p.intl.string(p.t["9JbE3N"])
         }), (0, r.jsxs)("div", {
           className: h.tierCardHeader,
           children: [(0, r.jsx)(s.Heading, {
@@ -126,7 +126,7 @@ let m = [{
             className: h.tierCardBoostRequirement,
             variant: "text-md/normal",
             color: "always-white",
-            children: p.intl.format(p.t.vbAsA7, {
+            children: p.intl.format(p.t.vbAsAw, {
               numBoostsRequired: f.oCV[e.tier]
             })
           })]

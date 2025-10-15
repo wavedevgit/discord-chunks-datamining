@@ -21,16 +21,16 @@ let c = e => {
     tooltipWordmarkComponent: (0, r.jsx)(i.X6q, {
       variant: "heading-md/extrabold",
       className: l.tooltipWordmark,
-      children: s.intl.string(s.t.ElYQFS)
+      children: s.intl.string(s.t.ElYQFR)
     }),
     children: [(0, r.jsx)(i.X6q, {
       variant: "heading-xl/extrabold",
       className: t ? true : l.orbHeaderWithSpacing,
-      children: s.intl.string(s.t.lTHkqd)
+      children: s.intl.string(s.t.lTHkqa)
     }), t ? (0, r.jsx)(i.xvT, {
       variant: "text-xs/normal",
       className: l.orbSubtext,
-      children: s.intl.string(s.t.MEV0GI)
+      children: s.intl.string(s.t.MEV0GB)
     }) : true]
   })
 }

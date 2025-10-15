@@ -125,19 +125,19 @@ class U extends Chunk647438.PureComponent {
         let e = require ? Chunk647438.phone : this.maskPhoneNumber(Chunk647438.phone);
         t = (0, Chunk951288.jsxs)(Chunk481060.Text, {
           variant: "text-sm/normal",
-          children: [Chunk388032.intl.format(Chunk388032.t.PXVoEO, {
+          children: [Chunk388032.intl.format(Chunk388032.t.PXVoEB, {
             phoneNumber: module
           }), (0, Chunk951288.jsx)(Chunk481060.Anchor, {
             onClick: this.togglePhoneNumberVisibility,
             className: Chunk343396.phoneRevealer,
-            children: require ? Chunk388032.intl.string(Chunk388032.t.FfltIN) : Chunk388032.intl.string(Chunk388032.t.llArAg)
+            children: require ? Chunk388032.intl.string(Chunk388032.t.FfltIC) : Chunk388032.intl.string(Chunk388032.t.llArAg)
           })]
         })
       }
       if (Chunk755721) e = (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "critical-secondary",
         size: "sm",
-        text: Chunk388032.intl.string(Chunk388032.t.KLWnit),
+        text: Chunk388032.intl.string(Chunk388032.t.KLWnio),
         loading: Chunk512722,
         onClick: this.handleDisableSMS
       });
@@ -148,14 +148,14 @@ class U extends Chunk647438.PureComponent {
           children: [(0, Chunk951288.jsx)(Chunk481060.Button, {
             variant: "primary",
             size: "sm",
-            text: null != exports ? exports : Chunk388032.intl.string(Chunk388032.t.DZQe23),
+            text: null != exports ? exports : Chunk388032.intl.string(Chunk388032.t.DZQe29),
             onClick: this.handleEnableSMS,
             loading: Chunk512722,
             disabled: null != exports
           }), Chunk442837 ? (0, Chunk951288.jsx)(Chunk481060.Button, {
             variant: "secondary",
             size: "sm",
-            text: Chunk388032.intl.string(Chunk388032.t.Ulqq6K),
+            text: Chunk388032.intl.string(Chunk388032.t.Ulqq6O),
             onClick: this.handleChangePhoneNumber
           }) : null]
         })
@@ -163,8 +163,8 @@ class U extends Chunk647438.PureComponent {
       return (0, Chunk951288.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.ACCOUNT_SMS_BACKUP,
         children: (0, Chunk951288.jsxs)(Chunk481060.gNt, {
-          label: Chunk388032.intl.string(Chunk388032.t.uHAJ5v),
-          description: Chunk388032.intl.string(Chunk388032.t.fspJ4H),
+          label: Chunk388032.intl.string(Chunk388032.t.uHAJ5u),
+          description: Chunk388032.intl.string(Chunk388032.t.fspJ4O),
           children: [exports, module]
         })
       })
@@ -179,7 +179,7 @@ class U extends Chunk647438.PureComponent {
         children: (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           size: "sm",
-          text: Chunk388032.intl.string(Chunk388032.t.xZEzbu),
+          text: Chunk388032.intl.string(Chunk388032.t.xZEzbm),
           onClick: this.sendMFABackupCodesVerificationKeyEmail
         })
       });
@@ -191,7 +191,7 @@ class U extends Chunk647438.PureComponent {
         children: (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           size: "sm",
-          text: Chunk388032.intl.string(Chunk388032.t.qZZUy6)
+          text: Chunk388032.intl.string(Chunk388032.t.qZZUy8)
         })
       });
       let i = e => e.map(e => (0, r.jsx)(k, {
@@ -200,8 +200,8 @@ class U extends Chunk647438.PureComponent {
       e = (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
         gap: 16,
         children: [(0, Chunk951288.jsxs)(Chunk481060.gNt, {
-          label: Chunk388032.intl.string(Chunk388032.t.GfqHPn),
-          description: Chunk388032.intl.format(Chunk388032.t.OhmvYt, {}),
+          label: Chunk388032.intl.string(Chunk388032.t.GfqHPj),
+          description: Chunk388032.intl.format(Chunk388032.t.OhmvYm, {}),
           children: [(0, Chunk951288.jsxs)(Chunk600164.Z, {
             children: [(0, Chunk951288.jsx)(Chunk600164.Z.Child, {
               children: (0, Chunk951288.jsx)("ul", {
@@ -217,15 +217,15 @@ class U extends Chunk647438.PureComponent {
           }), (0, Chunk951288.jsx)(Chunk481060.Avr, {
             textVariant: "text-sm/medium",
             onClick: this.generateBackupCodes,
-            text: Chunk388032.intl.string(Chunk388032.t.RIThUu)
+            text: Chunk388032.intl.string(Chunk388032.t.RIThUl)
           })]
         }), (0, Chunk951288.jsx)(Chunk481060.izJ, {})]
       })
     }
     return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk481060.gNt, {
-        label: Chunk388032.intl.string(Chunk388032.t.EPVq00),
-        description: Chunk388032.intl.string(Chunk388032.t.bQwxib),
+        label: Chunk388032.intl.string(Chunk388032.t.EPVq09),
+        description: Chunk388032.intl.string(Chunk388032.t.bQwxiY),
         children: (0, Chunk951288.jsxs)(Chunk481060.ButtonGroup, {
           size: "sm",
           children: [require, (0, Chunk951288.jsx)(Chunk921801.F, {
@@ -233,7 +233,7 @@ class U extends Chunk647438.PureComponent {
             children: (0, Chunk951288.jsx)(Chunk481060.Button, {
               variant: "critical-secondary",
               size: "sm",
-              text: Chunk388032.intl.string(Chunk388032.t["D+aE7g"]),
+              text: Chunk388032.intl.string(Chunk388032.t["D+aE7u"]),
               onClick: this.handleDisableMFA
             })
           }), (0, Chunk951288.jsx)(Chunk921801.F, {
@@ -241,7 +241,7 @@ class U extends Chunk647438.PureComponent {
             children: (0, Chunk951288.jsx)(Chunk481060.Button, {
               variant: "primary",
               size: "sm",
-              text: Chunk388032.intl.string(Chunk388032.t.cDgKte),
+              text: Chunk388032.intl.string(Chunk388032.t.cDgKtb),
               onClick: Chunk202858.ZP.enableMFA
             })
           })]
@@ -255,12 +255,12 @@ class U extends Chunk647438.PureComponent {
   renderDisabled() {
     return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk481060.gNt, {
-        label: Chunk388032.intl.string(Chunk388032.t.EPVq00),
+        label: Chunk388032.intl.string(Chunk388032.t.EPVq09),
         description: Chunk388032.intl.string(Chunk388032.t["8aDa1t"]),
         children: (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           size: "sm",
-          text: Chunk388032.intl.string(Chunk388032.t.cDgKte),
+          text: Chunk388032.intl.string(Chunk388032.t.cDgKtb),
           onClick: Chunk202858.ZP.enableMFA
         })
       }), (0, Chunk951288.jsx)(Chunk778764.Z, {})]
@@ -271,16 +271,16 @@ class U extends Chunk647438.PureComponent {
       currentUser: e
     } = this.props;
     return Chunk287880.uZ ? module.verified ? module.mfaEnabled ? this.renderEnabled() : this.renderDisabled() : (0, Chunk951288.jsx)(Chunk481060.gNt, {
-      label: Chunk388032.intl.string(Chunk388032.t.EPVq00),
+      label: Chunk388032.intl.string(Chunk388032.t.EPVq09),
       children: (0, Chunk951288.jsx)(Chunk481060.Wn, {
         messageType: Chunk481060.QYI.WARNING,
-        children: Chunk388032.intl.string(Chunk388032.t.uggF7o)
+        children: Chunk388032.intl.string(Chunk388032.t.uggF7u)
       })
     }) : (0, Chunk951288.jsx)(Chunk481060.gNt, {
-      label: Chunk388032.intl.string(Chunk388032.t.EPVq00),
+      label: Chunk388032.intl.string(Chunk388032.t.EPVq09),
       children: (0, Chunk951288.jsx)(Chunk481060.Wn, {
         messageType: Chunk481060.QYI.INFO,
-        children: Chunk388032.intl.string(Chunk388032.t.PhHhsj)
+        children: Chunk388032.intl.string(Chunk388032.t.PhHhsr)
       })
     })
   }
@@ -302,9 +302,9 @@ class U extends Chunk647438.PureComponent {
       })
     }), L(this, "handleDisableMFA", () => {
       d.Z.show({
-        title: P.intl.string(P.t["D+aE7g"]),
-        body: P.intl.string(P.t.EA4ZEk),
-        cancelText: P.intl.string(P.t["ETE/oC"]),
+        title: P.intl.string(P.t["D+aE7u"]),
+        body: P.intl.string(P.t.EA4ZEh),
+        cancelText: P.intl.string(P.t["ETE/oK"]),
         onConfirm: () => u.Z.disable()
       })
     }), L(this, "generateBackupCodes", async () => {
@@ -315,21 +315,21 @@ class U extends Chunk647438.PureComponent {
         handleSubmit: e => u.Z.sendMFABackupCodesVerificationKeyEmail(e).then(() => {
           this.viewBackupCodes(e)
         }),
-        title: P.intl.string(P.t.PsQmzU),
-        actionText: P.intl.string(P.t.ajkYcF)
+        title: P.intl.string(P.t.PsQmzc),
+        actionText: P.intl.string(P.t.ajkYcH)
       })))
     }), L(this, "viewBackupCodes", e => {
       (0, c.h7j)(t => (0, r.jsx)(_.Z, j(x({}, t), {
         handleSubmit: e => u.Z.confirmViewBackupCodes(e, false).then(() => t.onClose()),
         maxLength: 8,
-        title: P.intl.string(P.t["mGppp/"]),
-        label: P.intl.string(P.t.TjGb4Q),
+        title: P.intl.string(P.t.mGppp6),
+        label: P.intl.string(P.t.TjGb4e),
         forceNoPlaceholder: true,
-        retryPrompt: P.intl.string(P.t.PZgmxv),
-        retrySuccessMessage: P.intl.string(P.t.j4qu8n),
+        retryPrompt: P.intl.string(P.t.PZgmxs),
+        retrySuccessMessage: P.intl.string(P.t.j4qu8v),
         onRetry: () => u.Z.sendMFABackupCodesVerificationKeyEmail(e),
-        actionText: P.intl.string(P.t.piW6YS),
-        helpMessage: P.intl.string(P.t["37S9yU"])
+        actionText: P.intl.string(P.t.piW6YW),
+        helpMessage: P.intl.string(P.t["37S9yc"])
       })))
     }), L(this, "getDownloadFileContents", () => {
       let e = this.props.backupCodes.map(e => {
@@ -339,7 +339,7 @@ class U extends Chunk647438.PureComponent {
           } = e;
           return "* ".concat(n.substr(0, 4), "-").concat(n.substr(4), " ").concat(t ? "(used)" : "")
         }).join("\r\n"),
-        t = P.intl.formatToPlainString(P.t["uYWwh/"], {
+        t = P.intl.formatToPlainString(P.t.uYWwh4, {
           email: this.props.currentUser.email
         });
       return "".concat(t, "\r\n\r\n").concat(e)
@@ -355,8 +355,8 @@ class U extends Chunk647438.PureComponent {
     }), L(this, "handleDisableSMS", () => {
       (0, c.h7j)(e => (0, r.jsx)(p.Z, j(x({}, e), {
         handleSubmit: u.Z.disableSMS,
-        title: P.intl.string(P.t.KLWnit),
-        children: P.intl.string(P.t["W0/Duf"])
+        title: P.intl.string(P.t.KLWnio),
+        children: P.intl.string(P.t["W0/Dub"])
       })))
     })
   }

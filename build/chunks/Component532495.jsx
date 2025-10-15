@@ -149,7 +149,7 @@ function G() {
       onGlobalNameChange: Chunk809206.W0,
       user: F
     }), (0, Chunk951288.jsx)(Chunk906364.Z, {
-      sectionTitle: Chunk388032.intl.string(Chunk388032.t["+T3RI/"]),
+      sectionTitle: Chunk388032.intl.string(Chunk388032.t["+T3RIy"]),
       errors: $.pronouns,
       onPronounsChange: Chunk350327.ID,
       pendingPronouns: z,
@@ -158,7 +158,7 @@ function G() {
       onAvatarChange: Chunk809206.I5,
       showRemoveAvatarButton: er,
       errors: $.avatar,
-      sectionTitle: Chunk388032.intl.string(Chunk388032.t.lqaIxI),
+      sectionTitle: Chunk388032.intl.string(Chunk388032.t.lqaIxM),
       forcedDivider: true
     }, "avatar"), (0, Chunk951288.jsx)(Chunk433411.Z, {
       user: F,
@@ -167,9 +167,9 @@ function G() {
       user: F
     }), (0, Chunk951288.jsx)(Chunk513901.Z, {
       user: F,
-      sectionTitle: Chunk388032.intl.string(Chunk388032.t.wR5wOo)
+      sectionTitle: Chunk388032.intl.string(Chunk388032.t.wR5wOj)
     }, "effect"), e_(), (0, Chunk951288.jsx)(Chunk126631.Z, {
-      sectionTitle: Chunk388032.intl.string(Chunk388032.t.NepzEw),
+      sectionTitle: Chunk388032.intl.string(Chunk388032.t.NepzEx),
       errors: el,
       onBioChange: e => (0, d.xQ)(e, null == V ? true : V.bio),
       pendingBio: K,

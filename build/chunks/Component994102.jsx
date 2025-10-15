@@ -36,11 +36,11 @@ function _(e) {
   }, {
     disableTrack: null == m
   }, [m]), null == m) ? null : (0, r.jsx)(a.u, {
-    text: f.intl.string(f.t.JVwWva),
+    text: f.intl.string(f.t.JVwWvb),
     position: "top",
     children: (0, r.jsx)(u.O1, {
       icon: o.v3n,
-      text: f.intl.string(f.t["jaYS/h"]),
+      text: f.intl.string(f.t["jaYS/v"]),
       size: "sm",
       onClick: e => {
         e.stopPropagation(), null == _ || _({

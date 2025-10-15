@@ -53,7 +53,7 @@ function u(e) {
     query: t,
     autoFocus: n,
     onClear: o,
-    placeholder: l = a.intl.string(a.t["5h0QOP"]),
+    placeholder: l = a.intl.string(a.t["5h0QOD"]),
     onKeyDown: u,
     size: d = "md",
     disabled: f = false,
@@ -62,7 +62,7 @@ function u(e) {
     onFocus: h,
     autoComplete: m,
     inputProps: g,
-    "aria-label": E = a.intl.string(a.t["5h0QOP"]),
+    "aria-label": E = a.intl.string(a.t["5h0QOD"]),
     ref: b
   } = e;
   return (0, r.jsx)(i.oil, c(s({}, g), {

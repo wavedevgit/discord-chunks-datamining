@@ -29,13 +29,13 @@ function a(e) {
     actions: [{
       onClick: E,
       variant: "secondary",
-      text: o.intl.string(o.t.P60OAX)
+      text: o.intl.string(o.t.P60OAQ)
     }, {
       onClick: () => {
         u.Z.endEvent(s.id, s.guild_id), E()
       },
       variant: "critical-primary",
-      text: o.intl.string(o.t.mjB9pd)
+      text: o.intl.string(o.t.mjB9pa)
     }]
   })
 }

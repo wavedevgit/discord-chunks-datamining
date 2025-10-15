@@ -61,7 +61,7 @@ function C(e) {
     }),
     onClick: L,
     style: M,
-    "aria-label": v.intl.string(v.t.dcl9MQ),
+    "aria-label": v.intl.string(v.t.dcl9MT),
     children: [(0, r.jsxs)("div", {
       className: I.cardHeightMeasure,
       ref: f,
@@ -85,7 +85,7 @@ function C(e) {
         variant: "secondary",
         size: "sm",
         onClick: x,
-        text: v.intl.string(v.t.xdCLeM)
+        text: v.intl.string(v.t.xdCLeH)
       })
     }) : null, (0, r.jsxs)("div", {
       className: o()(I.footer, {

@@ -19,16 +19,16 @@ let f = function(e) {
         case o.fX.MENTION_SPAM:
           return c.intl.string(c.t["8hdId3"]);
         case o.fX.ML_SPAM:
-          return c.intl.string(c.t.tLQYs5);
+          return c.intl.string(c.t.tLQYs7);
         default:
-          return c.intl.string(c.t.xAAoci)
+          return c.intl.string(c.t.xAAocn)
       }
     case o.jj.FLAG_TO_CHANNEL:
-      return c.intl.string(c.t.BHAXfa);
+      return c.intl.string(c.t.BHAXfX);
     case o.jj.USER_COMMUNICATION_DISABLED:
       return c.intl.string(c.t["bNK+gI"]);
     case o.jj.QUARANTINE_USER:
-      return c.intl.string(c.t["/7nL5R"])
+      return c.intl.string(c.t["/7nL5e"])
   }
 };
 
@@ -48,13 +48,13 @@ function E(e, t, n) {
     headerText: null != (E = (e => {
       switch (e) {
         case o.jj.BLOCK_MESSAGE:
-          return c.intl.string(c.t.d1ab8n);
+          return c.intl.string(c.t.d1ab8v);
         case o.jj.FLAG_TO_CHANNEL:
-          return c.intl.string(c.t["Y+VmvU"]);
+          return c.intl.string(c.t["Y+Vmvb"]);
         case o.jj.USER_COMMUNICATION_DISABLED:
-          return c.intl.string(c.t.Xz2njA);
+          return c.intl.string(c.t.Xz2njI);
         case o.jj.QUARANTINE_USER:
-          return c.intl.string(c.t.NPO8ee)
+          return c.intl.string(c.t.NPO8eX)
       }
     })(e)) ? E : "",
     descriptionText: null != (g = f(e, n)) ? g : "",
@@ -70,7 +70,7 @@ function E(e, t, n) {
           let r = i.Z.getChannel(e);
           if (null == r) return null;
           let o = (0, l.F6)(r, u.default, a.Z);
-          return c.intl.format(c.t.xQXnkK, {
+          return c.intl.format(c.t.xQXnkJ, {
             channelName: o
           })
         }
@@ -78,7 +78,7 @@ function E(e, t, n) {
           let e = null != (f = null == t || null == (r = t.metadata) ? true : r.durationSeconds) ? f : 0,
             n = (0, s.getFriendlyDurationString)(e);
           if (null == n) return null;
-          return c.intl.format(c.t.AFmbfS, {
+          return c.intl.format(c.t.AFmbfX, {
             duration: n
           })
         }

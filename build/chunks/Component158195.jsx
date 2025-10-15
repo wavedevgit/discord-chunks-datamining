@@ -24,7 +24,7 @@ let p = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
   return (0, n.jsxs)(c.v2r, {
     navId: "moderation-raid-context",
     onClose: o.Zy,
-    "aria-label": O.intl.string(O.t.liqwPJ),
+    "aria-label": O.intl.string(O.t.liqwPD),
     onSelect: i,
     children: [(0, n.jsx)(c.kSQ, {
       children: l

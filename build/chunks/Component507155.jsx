@@ -61,7 +61,7 @@ function x(e) {
             }), (0, n.jsx)(s.Text, {
               variant: "text-sm/medium",
               color: "text-secondary",
-              children: m.intl.formatToPlainString(m.t.t2Wbo1, {
+              children: m.intl.formatToPlainString(m.t.t2Wbo6, {
                 required: a.cost,
                 decorator: ""
               })

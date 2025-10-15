@@ -37,7 +37,7 @@ function d(e) {
       }),
       onClick: t,
       tabIndex: 0,
-      "aria-label": c.intl.string(c.t.RscU7I),
+      "aria-label": c.intl.string(c.t.RscU7O),
       focusProps: {
         ringTarget: d
       },

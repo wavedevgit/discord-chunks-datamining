@@ -26,8 +26,8 @@ function h(t) {
       type: "image",
       src: l.Z
     },
-    title: c.intl.string(c.t.Ul1RJQ),
-    subtitle: c.intl.format(c.t["Z+3bWy"], {
+    title: c.intl.string(c.t.Ul1RJS),
+    subtitle: c.intl.format(c.t["Z+3bW1"], {
       stageChannelHook: () => (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(a.ewx, {
           size: "custom",

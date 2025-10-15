@@ -105,7 +105,7 @@ function g(e) {
       children: [(0, r.jsx)(i.Heading, {
         variant: "text-md/semibold",
         color: "text-default",
-        children: s.intl.string(s.t.Iyka0U)
+        children: s.intl.string(s.t.Iyka0d)
       }), (0, r.jsx)(i.Mgn, {
         size: "xs",
         className: l.icon

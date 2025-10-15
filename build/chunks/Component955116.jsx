@@ -16,13 +16,13 @@ function c(t) {
   return (0, e.jsx)(a.v2r, {
     navId: "forum-tag",
     onClose: s.Zy,
-    "aria-label": r.intl.string(r.t.AzTwiu),
+    "aria-label": r.intl.string(r.t.AzTwio),
     onSelect: true,
     className: "context-menu",
     children: (0, e.jsx)(a.kSQ, {
       children: (0, l.Z)({
         id: i.id,
-        label: r.intl.string(r.t["8VG6IY"])
+        label: r.intl.string(r.t["8VG6IS"])
       })
     })
   })

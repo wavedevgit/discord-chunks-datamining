@@ -99,7 +99,7 @@ function V(e, t) {
 }
 let F = {
   [Chunk981631.vxO.INSTALLING]: {
-    [Chunk707409.J6.NONE]: (e, t, n, r) => k.intl.formatToPlainString(k.t.JfJt9d, {
+    [Chunk707409.J6.NONE]: (e, t, n, r) => k.intl.formatToPlainString(k.t.JfJt9f, {
       percent: e,
       progress: t,
       total: n
@@ -110,13 +110,13 @@ let F = {
       total: n,
       timeRemaining: r
     }),
-    [Chunk707409.J6.MINUTES]: (e, t, n, r) => k.intl.formatToPlainString(k.t.PCX506, {
+    [Chunk707409.J6.MINUTES]: (e, t, n, r) => k.intl.formatToPlainString(k.t.PCX509, {
       percent: e,
       progress: t,
       total: n,
       timeRemaining: r
     }),
-    [Chunk707409.J6.HOURS]: (e, t, n, r) => k.intl.formatToPlainString(k.t["3VG9s1"], {
+    [Chunk707409.J6.HOURS]: (e, t, n, r) => k.intl.formatToPlainString(k.t["3VG9s7"], {
       percent: e,
       progress: t,
       total: n,
@@ -124,24 +124,24 @@ let F = {
     })
   },
   [Chunk981631.vxO.UPDATING]: {
-    [Chunk707409.J6.NONE]: (e, t, n, r) => k.intl.formatToPlainString(k.t.JsqXXL, {
+    [Chunk707409.J6.NONE]: (e, t, n, r) => k.intl.formatToPlainString(k.t.JsqXXF, {
       percent: e,
       progress: t,
       total: n
     }),
-    [Chunk707409.J6.SECONDS]: (e, t, n, r) => k.intl.formatToPlainString(k.t["3BvVec"], {
+    [Chunk707409.J6.SECONDS]: (e, t, n, r) => k.intl.formatToPlainString(k.t["3BvVeX"], {
       percent: e,
       progress: t,
       total: n,
       timeRemaining: r
     }),
-    [Chunk707409.J6.MINUTES]: (e, t, n, r) => k.intl.formatToPlainString(k.t["rwULn+"], {
+    [Chunk707409.J6.MINUTES]: (e, t, n, r) => k.intl.formatToPlainString(k.t.rwULn5, {
       percent: e,
       progress: t,
       total: n,
       timeRemaining: r
     }),
-    [Chunk707409.J6.HOURS]: (e, t, n, r) => k.intl.formatToPlainString(k.t.adcitP, {
+    [Chunk707409.J6.HOURS]: (e, t, n, r) => k.intl.formatToPlainString(k.t.adcitL, {
       percent: e,
       progress: t,
       total: n,
@@ -149,7 +149,7 @@ let F = {
     })
   },
   [Chunk981631.vxO.REPAIRING]: {
-    [Chunk707409.J6.NONE]: (e, t, n, r) => k.intl.formatToPlainString(k.t.JfJt9d, {
+    [Chunk707409.J6.NONE]: (e, t, n, r) => k.intl.formatToPlainString(k.t.JfJt9f, {
       percent: e,
       progress: t,
       total: n
@@ -160,13 +160,13 @@ let F = {
       total: n,
       timeRemaining: r
     }),
-    [Chunk707409.J6.MINUTES]: (e, t, n, r) => k.intl.formatToPlainString(k.t.PCX506, {
+    [Chunk707409.J6.MINUTES]: (e, t, n, r) => k.intl.formatToPlainString(k.t.PCX509, {
       percent: e,
       progress: t,
       total: n,
       timeRemaining: r
     }),
-    [Chunk707409.J6.HOURS]: (e, t, n, r) => k.intl.formatToPlainString(k.t["3VG9s1"], {
+    [Chunk707409.J6.HOURS]: (e, t, n, r) => k.intl.formatToPlainString(k.t["3VG9s7"], {
       percent: e,
       progress: t,
       total: n,
@@ -200,47 +200,47 @@ function W(e) {
   } = e, o = V(l, n), s = V(i, n);
   switch (n) {
     case D.f07.QUEUED:
-      if (0 === i) return k.intl.string(k.t.RpfBqd);
-      return k.intl.formatToPlainString(k.t.uNjCXZ, {
+      if (0 === i) return k.intl.string(k.t.RpfBqa);
+      return k.intl.formatToPlainString(k.t.uNjCXV, {
         percent: r,
         progress: s,
         total: o
       });
     case D.f07.PLANNING:
-      return k.intl.formatToPlainString(k.t.sfuCUb, {
+      return k.intl.formatToPlainString(k.t.sfuCUV, {
         percent: r
       });
     case D.f07.ALLOCATING_DISK:
-      return k.intl.formatToPlainString(k.t.XigoJ9, {
+      return k.intl.formatToPlainString(k.t.XigoJy, {
         percent: r
       });
     case D.f07.PATCHING:
       return z(a, t, r, s, o);
     case D.f07.FINALIZING:
-      return k.intl.formatToPlainString(k.t["6PHDUN"], {
+      return k.intl.formatToPlainString(k.t["6PHDUF"], {
         percent: r
       });
     case D.f07.PAUSING:
-      return k.intl.formatToPlainString(k.t.vjxhWo, {
+      return k.intl.formatToPlainString(k.t.vjxhWl, {
         percent: r,
         progress: s,
         total: o
       });
     case D.f07.VERIFYING:
-      return k.intl.formatToPlainString(k.t.bbilvq, {
+      return k.intl.formatToPlainString(k.t.bbilvr, {
         percent: r,
         progress: s,
         total: o
       });
     case D.f07.POST_INSTALL_SCRIPTS:
-      return k.intl.formatToPlainString(k.t.c5vRUo, {
+      return k.intl.formatToPlainString(k.t.c5vRUl, {
         percent: r,
         progress: s,
         total: o
       });
     case D.f07.REPAIRING:
       if (t === D.vxO.REPAIRING) return z(a, t, r, s, o);
-      return k.intl.formatToPlainString(k.t.OCzETT, {
+      return k.intl.formatToPlainString(k.t.OCzETU, {
         percent: r,
         progress: s,
         total: o
@@ -299,7 +299,7 @@ class Y extends Chunk647438.PureComponent {
       item: e
     } = this.props;
     return this.renderBody({
-      message: Chunk388032.intl.format(Chunk388032.t.z1oxGO, {
+      message: Chunk388032.intl.format(Chunk388032.t.z1oxGB, {
         remove: () => Chunk51025.wi(module.applicationId, module.branchId)
       }),
       foregroundColor: (0, Chunk780384.ap)(module.theme) ? Chunk981631.Ilk.PRIMARY_300 : Chunk981631.Ilk.PRIMARY_500,
@@ -323,18 +323,18 @@ class Y extends Chunk647438.PureComponent {
         let n = V(Chunk647438, Chunk120356),
           a = V(Chunk951288, Chunk120356),
           o = Math.floor(t = Chunk780570.xI(Chunk951288, Chunk647438));
-        e = Chunk120356 === Chunk981631.f07.PAUSING ? Chunk388032.intl.formatToPlainString(Chunk388032.t.vjxhWo, {
+        e = Chunk120356 === Chunk981631.f07.PAUSING ? Chunk388032.intl.formatToPlainString(Chunk388032.t.vjxhWl, {
           percent: Chunk392711,
           progress: a,
           total: require
-        }) : Chunk388032.intl.formatToPlainString(Chunk388032.t.voT3Bi, {
+        }) : Chunk388032.intl.formatToPlainString(Chunk388032.t.voT3Bg, {
           percent: Chunk392711,
           progress: a,
           total: require
         })
       }
     }
-    return (null == exports || null == module) && (t = 0, e = Chunk388032.intl.string(Chunk388032.t["qS+iKY"])), this.renderBody({
+    return (null == exports || null == module) && (t = 0, e = Chunk388032.intl.string(Chunk388032.t["qS+iKS"])), this.renderBody({
       percent: exports,
       foregroundColor: (0, Chunk780384.ap)(Chunk951288) ? Chunk981631.Ilk.PRIMARY_300 : Chunk981631.Ilk.PRIMARY_500,
       message: module
@@ -355,7 +355,7 @@ class Y extends Chunk647438.PureComponent {
     if (null == require || null == Chunk951288) return null;
     let i = Chunk780570.xI(require, Chunk951288),
       l = Math.floor(Chunk647438),
-      a = 0 === require && 1 === Chunk951288 ? Chunk388032.intl.string(Chunk388032.t["+pfsFX"]) : Chunk388032.intl.formatToPlainString(Chunk388032.t["+feX8S"], {
+      a = 0 === require && 1 === Chunk951288 ? Chunk388032.intl.string(Chunk388032.t["+pfsFR"]) : Chunk388032.intl.formatToPlainString(Chunk388032.t["+feX8f"], {
         percent: Chunk120356,
         progress: (0, Chunk424218.BU)(require),
         total: (0, Chunk424218.BU)(Chunk951288)
@@ -458,14 +458,14 @@ class Y extends Chunk647438.PureComponent {
     })
   }
 }
-let K = () => (0, Chunk951288.jsx)(H, {
+let q = () => (0, Chunk951288.jsx)(H, {
     icon: Chunk481060.o1U,
-    tooltip: Chunk388032.intl.string(Chunk388032.t.YGm6SZ),
+    tooltip: Chunk388032.intl.string(Chunk388032.t.YGm6SU),
     onClick: () => Chunk51025.v4()
   }),
-  q = () => (0, Chunk951288.jsx)(H, {
+  K = () => (0, Chunk951288.jsx)(H, {
     icon: Chunk481060.fpf,
-    tooltip: Chunk388032.intl.string(Chunk388032.t.TVAd5J),
+    tooltip: Chunk388032.intl.string(Chunk388032.t.TVAd5O),
     onClick: () => Chunk51025.wO()
   }),
   Q = e => {
@@ -474,7 +474,7 @@ let K = () => (0, Chunk951288.jsx)(H, {
     } = e;
     return (0, r.jsx)(H, {
       icon: h.wj7,
-      tooltip: k.intl.string(k.t["Eqb+LN"]),
+      tooltip: k.intl.string(k.t["Eqb+LC"]),
       onClick: () => b.A1(t.applicationId, t.branchId)
     })
   },
@@ -484,7 +484,7 @@ let K = () => (0, Chunk951288.jsx)(H, {
     } = e;
     return (0, r.jsx)(H, {
       icon: h.Dio,
-      tooltip: k.intl.string(k.t["0lFmC9"]),
+      tooltip: k.intl.string(k.t["0lFmCw"]),
       onClick: () => b.al(t.applicationId, t.branchId)
     })
   },
@@ -523,7 +523,7 @@ let K = () => (0, Chunk951288.jsx)(H, {
         source: D.Sbl.APPLICATION_LIBRARY_UPDATES
       }) : null : null != e.state ? e.state.type !== D.vxO.UP_TO_DATE && (n = e.index > 0 ? (0, r.jsx)(Q, {
         item: e
-      }) : null != t && t.paused ? (0, r.jsx)(K, {}) : (0, r.jsx)(q, {
+      }) : null != t && t.paused ? (0, r.jsx)(q, {}) : (0, r.jsx)(K, {
         item: e
       }), i = (0, r.jsx)(X, {
         item: e
@@ -566,7 +566,7 @@ class $ extends Chunk647438.PureComponent {
         className: Chunk248241.headerRow,
         children: [(0, Chunk951288.jsx)(Chunk86826.Z, {
           className: a()(Chunk248241.headerCell, Chunk248241.networkProgress),
-          title: Chunk388032.intl.string(Chunk388032.t.ytoXKr),
+          title: Chunk388032.intl.string(Chunk388032.t.ytoXKi),
           getHistoricalTotalBytes: Chunk417363.Z.getHistoricalTotalBytesDownloaded,
           color: Chunk981631.Ilk.GREEN_360,
           animate: Chunk647438

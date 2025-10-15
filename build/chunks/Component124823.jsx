@@ -65,8 +65,8 @@ function w(e) {
     channelId: w.id
   }), G = i.useRef(null), {
     isHoveringOrFocusing: H,
-    isHovering: B
-  } = (0, u.Z)(G), F = e => {
+    isHovering: F
+  } = (0, u.Z)(G), B = e => {
     (0, b.openUserProfileModal)(R({
       sourceAnalyticsLocations: k,
       hideRestrictedProfile: true
@@ -92,7 +92,7 @@ function w(e) {
               user: n
             })
           }), (0, r.jsxs)("div", {
-            className: T.header,
+            className: P.header,
             children: [(0, r.jsx)(j.Z, {
               user: n,
               displayProfile: D,
@@ -103,7 +103,7 @@ function w(e) {
               displayProfile: D,
               channelId: w.id,
               themeType: Z.l.SIDEBAR,
-              onOpenProfile: A ? true : F
+              onOpenProfile: A ? true : B
             })]
           }), (0, r.jsxs)("div", {
             className: N.body,
@@ -112,7 +112,7 @@ function w(e) {
               guildId: w.guild_id,
               nickname: p.ZP.getName(null, w.id, n),
               pronouns: null == D ? true : D.pronouns,
-              onOpenProfile: A ? true : F,
+              onOpenProfile: A ? true : B,
               tags: (0, r.jsx)(_.Z, {
                 displayProfile: D,
                 themeType: Z.l.SIDEBAR
@@ -120,7 +120,7 @@ function w(e) {
             }), (0, r.jsxs)(C.Z.Overlay, {
               className: N.overlay,
               children: [(0, r.jsx)(v.Z, {
-                heading: P.intl.string(P.t["61W33d"]),
+                heading: T.intl.string(T.t["61W33d"]),
                 headingColor: "header-primary",
                 children: (0, r.jsx)(O.Z, {
                   userBio: null == D ? true : D.bio,
@@ -129,7 +129,7 @@ function w(e) {
                   isHoveringOrFocusing: H
                 })
               }), (0, r.jsx)(v.Z, {
-                heading: P.intl.string(P.t["A//N4k"]),
+                heading: T.intl.string(T.t["A//N4u"]),
                 headingColor: "header-primary",
                 children: (0, r.jsx)(x.Z, {
                   userId: n.id
@@ -138,20 +138,20 @@ function w(e) {
             })]
           })]
         }), !A && (0, r.jsx)("div", {
-          className: T.footer,
+          className: P.footer,
           children: (0, r.jsx)(a.P3F, {
             onClick: () => {
-              F(), (0, g.pQ)(R({
+              B(), (0, g.pQ)(R({
                 action: "PRESS_VIEW_PROFILE",
                 analyticsLocations: k
               }, U))
             },
-            className: T.footerButton,
-            children: P.intl.string(P.t["+Xp3hq"])
+            className: P.footerButton,
+            children: T.intl.string(T.t["+Xp3ho"])
           })
         }), (null == D ? true : D.profileEffect) != null && (0, r.jsx)(h.Z, {
           skuId: null == D || null == (t = D.profileEffect) ? true : t.skuId,
-          isHovering: B
+          isHovering: F
         })]
       })
     })

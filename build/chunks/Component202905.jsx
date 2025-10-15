@@ -72,13 +72,13 @@ function v(e) {
     children: [(0, r.jsx)(a.X6q, {
       variant: "heading-md/semibold",
       color: "header-primary",
-      children: b.intl.string(b.t.AHJddL)
+      children: b.intl.string(b.t.AHJddH)
     }), (0, r.jsx)(a.xvT, {
       tag: "p",
       variant: "text-sm/medium",
       color: "text-secondary",
       className: x.applicationBody,
-      children: b.intl.string(b.t.Z7TCtd)
+      children: b.intl.string(b.t.Z7TCtb)
     }), (0, r.jsx)(f.c, {
       guildId: n.id
     }), (0, r.jsx)("div", {
@@ -94,18 +94,18 @@ function v(e) {
       children: [(0, r.jsxs)("div", {
         className: x.column,
         children: [(0, r.jsx)(o.rsf, {
-          label: b.intl.string(b.t["N/0232"]),
+          label: b.intl.string(b.t["N/0239"]),
           checked: N,
           onChange: I,
           disabled: y
         }), (0, r.jsx)(a.xvT, {
           variant: "text-sm/normal",
           color: "text-secondary",
-          children: b.intl.string(b.t["3TSZYK"])
+          children: b.intl.string(b.t["3TSZYG"])
         }), y && (0, r.jsx)(a.xvT, {
           variant: "text-xs/normal",
           color: "text-muted",
-          children: b.intl.format(b.t.Bk0VOi, {
+          children: b.intl.format(b.t.Bk0VOj, {
             profileLink: (e, t) => (0, r.jsx)(o.Anchor, {
               onClick: S,
               children: e
@@ -124,7 +124,7 @@ function v(e) {
             CTAOverride: (0, r.jsx)(a.zxk, {
               variant: "active",
               size: "sm",
-              text: b.intl.string(b.t["7XdMW2"]),
+              text: b.intl.string(b.t["7XdMW1"]),
               fullWidth: true
             }),
             disableGuildNameClick: true

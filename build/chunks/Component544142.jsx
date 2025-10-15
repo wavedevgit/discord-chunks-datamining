@@ -69,7 +69,7 @@ function j(e) {
     (0, c.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("79695"), n.e("70675"), n.e("17773")]).then(n.bind(n, 654663));
+      } = await Promise.all([n.e("79695"), n.e("70675"), n.e("85994")]).then(n.bind(n, 654663));
       return t => (0, i.jsx)(e, O(x({}, t), {
         user: E,
         guildId: y.guild_id,
@@ -122,7 +122,7 @@ function E(e) {
       color: "header-secondary",
       children: (0, i.jsx)("div", {
         className: v.subtitle,
-        children: _.intl.format(_.t.imPXd5, {
+        children: _.intl.format(_.t.imPXd3, {
           usernameHook: (e, n) => (0, i.jsx)(j, {
             userId: t.ownerId,
             channel: t

@@ -43,18 +43,18 @@ function C(e) {
         variant: "heading-xl/semibold",
         color: "header-primary",
         className: x.heading,
-        children: f.intl.string(f.t["0/Yz+Y"])
+        children: f.intl.string(f.t["0/Yz+f"])
       }), (0, r.jsx)(i.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
-        children: f.intl.format(f.t["v1u/zq"], {
+        children: f.intl.format(f.t["v1u/zs"], {
           rewardName: n
         })
       })]
     }), (0, r.jsx)(i.Button, {
       variant: "secondary",
       size: "sm",
-      text: f.intl.string(f.t.OD6Tvf),
+      text: f.intl.string(f.t.OD6Tvb),
       disabled: true,
       fullWidth: true
     })]

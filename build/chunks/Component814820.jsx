@@ -44,7 +44,7 @@ let b = e => {
           asset: a,
           component: l.Z
         },
-        text: g.intl.string(g.t["7Tj6HT"]),
+        text: g.intl.string(g.t["7Tj6HR"]),
         onClick: c,
         variant: "secondary"
       })

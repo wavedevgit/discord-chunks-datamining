@@ -40,17 +40,17 @@ function p(e) {
       color: "header-primary",
       variant: "heading-xl/semibold",
       className: g.title,
-      children: d.intl.string(d.t["WgZ+3D"])
+      children: d.intl.string(d.t["WgZ+3N"])
     }), (0, r.jsx)(l.Text, {
       color: "header-secondary",
       variant: "text-sm/normal",
       className: g.subtitle,
-      children: d.intl.string(d.t["v/S/PG"])
+      children: d.intl.string(d.t["v/S/PD"])
     }), p && (0, r.jsx)(l.Text, {
       color: "header-secondary",
       variant: "text-sm/normal",
       className: g.roleTip,
-      children: d.intl.format(d.t["K+DH2o"], {
+      children: d.intl.format(d.t["K+DH2t"], {
         onClick: () => {
           a.Z.open(n, u.pNK.ROLES), t()
         }

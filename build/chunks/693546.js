@@ -115,7 +115,7 @@ let p = {
       rejectWithError: false
     }).catch(e => (e && e.body && e.body.code === f.evJ.REQUEST_TO_JOIN_USER_INELIGIBLE && a.Z.show({
       title: _.intl.string(_.t.DxJj4e),
-      body: _.intl.string(_.t.rSAOk9)
+      body: _.intl.string(_.t.rSAOk5)
     }), Promise.reject(e)));
     i.Z.dispatch({
       type: "GUILD_JOIN_REQUEST_UPDATE",

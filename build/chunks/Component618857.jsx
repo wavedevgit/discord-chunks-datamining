@@ -17,18 +17,18 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx");
 
 function d(e) {
-  let t = u.intl.formatToPlainString(u.t["CvHu/j"], {
+  let t = u.intl.formatToPlainString(u.t["CvHu/v"], {
     timestamp: new Date(e).valueOf()
   });
   (0, a.showToast)((0, a.createToast)(t, a.ToastType.SUCCESS))
 }
 
 function p() {
-  (0, Chunk481060.showToast)((0, Chunk481060.createToast)(Chunk388032.intl.string(Chunk388032.t["JF/LWn"]), Chunk481060.ToastType.SUCCESS))
+  (0, Chunk481060.showToast)((0, Chunk481060.createToast)(Chunk388032.intl.string(Chunk388032.t["JF/LWl"]), Chunk481060.ToastType.SUCCESS))
 }
 
 function h(e) {
-  (0, a.showToast)((0, a.createToast)(u.intl.formatToPlainString(u.t.sUvyW3, {
+  (0, a.showToast)((0, a.createToast)(u.intl.formatToPlainString(u.t.sUvyW1, {
     error: e
   }), a.ToastType.FAILURE))
 }
@@ -37,13 +37,13 @@ function f(e) {
   let {
     channel: t
   } = e, n = l()().add(1, "day").startOf("day").set("hours", 9), r = l()().add(1, "day").startOf("day").set("hours", 13), o = l()().startOf("isoWeek").add(1, "week").set("hours", 9), c = [{
-    display: u.intl.string(u.t.tjIn9i),
+    display: u.intl.string(u.t.tjIn9v),
     value: n
   }, {
-    display: u.intl.string(u.t.EMRZyS),
+    display: u.intl.string(u.t.EMRZyc),
     value: r
   }, {
-    display: u.intl.string(u.t["+P5MmK"]),
+    display: u.intl.string(u.t["+P5MmJ"]),
     value: o
   }].map(e => (0, i.jsx)(a.sNh, {
     id: e.display,
@@ -56,7 +56,7 @@ function f(e) {
   return c.push((0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(a.Clw, {}), (0, i.jsx)(a.sNh, {
       id: "custom-time",
-      label: u.intl.string(u.t.stHooC),
+      label: u.intl.string(u.t.stHooK),
       action: () => m({
         channel: t
       })

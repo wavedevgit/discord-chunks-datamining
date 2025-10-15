@@ -372,14 +372,14 @@ function en(e) {
     w = (0, b.ZP)(n),
     D = w.nick,
     L = s(w);
-  t = null == c || null == o ? u > 1 ? v.intl.format(v.t.yfC9ds, {
+  t = null == c || null == o ? u > 1 ? v.intl.format(v.t.yfC9dn, {
     username: D,
     usernameHook: L,
     numSubscriptions: u
-  }) : v.intl.format(v.t["57St/7"], {
+  }) : v.intl.format(v.t["57St//"], {
     username: D,
     usernameHook: L
-  }) : u > 1 ? v.intl.format(v.t.PO9uJD, {
+  }) : u > 1 ? v.intl.format(v.t.PO9uJC, {
     username: D,
     usernameHook: L,
     numSubscriptions: u,

@@ -28,13 +28,13 @@ function c(e, t, n) {
 }
 
 function u(e, t, n) {
-  if (t === o.rV.YEAR) return s.intl.formatToPlainString(s.t["rS8FA+"], {
+  if (t === o.rV.YEAR) return s.intl.formatToPlainString(s.t.rS8FAw, {
     price: e
   });
-  if (t === o.rV.MONTH && 1 === n) return s.intl.formatToPlainString(s.t.AbOLNu, {
+  if (t === o.rV.MONTH && 1 === n) return s.intl.formatToPlainString(s.t.AbOLNj, {
     price: e
   });
-  if (t === o.rV.MONTH && n > 1) return s.intl.formatToPlainString(s.t["Qc+9ww"], {
+  if (t === o.rV.MONTH && n > 1) return s.intl.formatToPlainString(s.t["Qc+9w8"], {
     price: e,
     intervalCount: n
   });

@@ -74,7 +74,7 @@ function p(e) {
     children: [(0, r.jsxs)("div", {
       className: c.doubleInput,
       children: [(0, r.jsx)(a.Wrb, {
-        label: d.intl.string(d.t.CTLgZJ),
+        label: d.intl.string(d.t.CTLgZG),
         required: j,
         value: x.endDate,
         onSelect: S,
@@ -91,7 +91,7 @@ function p(e) {
         onClick: () => {
           S(true)
         },
-        text: d.intl.string(d.t.petdfk),
+        text: d.intl.string(d.t.petdfn),
         size: "sm"
       }), (0, r.jsx)(a.LZC, {
         size: 24
@@ -112,7 +112,7 @@ function p(e) {
     children: [(0, r.jsxs)("div", {
       className: c.doubleInput,
       children: [(0, r.jsx)(a.Wrb, {
-        label: d.intl.string(d.t.kKOIwJ),
+        label: d.intl.string(d.t.kKOIwM),
         required: true,
         value: x.startDate,
         onSelect: e => {
@@ -124,7 +124,7 @@ function p(e) {
         maxDate: y,
         disabled: v
       }), (0, r.jsx)(a.MGJ, {
-        label: d.intl.string(d.t["6dGmCD"]),
+        label: d.intl.string(d.t["6dGmCA"]),
         required: true,
         value: x.startDate,
         onChange: e => {

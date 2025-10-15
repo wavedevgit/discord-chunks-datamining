@@ -40,7 +40,7 @@ let Z = [
 var P = ((a = {})[a.SMALL = 0] = "SMALL", a[a.MEDIUM = 1] = "MEDIUM", a[a.LARGE = 2] = "LARGE", a);
 
 function M(e) {
-  var t, n, a, i, d, s, P, M, w, T, G, R, D, H, F, U;
+  var t, n, a, i, d, s, P, M, w, T, G, R, D, H, U, F;
   let {
     applicationId: W,
     skuId: Y,
@@ -59,7 +59,7 @@ function M(e) {
     if ((null == $ || null == (t = $.tenantMetadata) || null == (e = t.socialLayer) ? true : e.expiresAt) == null) return null;
     let n = u()(),
       a = u()($.tenantMetadata.socialLayer.expiresAt).diff(n, "days");
-    return a <= 1 ? E.intl.string(E.t.Bc13HF) : E.intl.format(E.t.Io7ozn, {
+    return a <= 1 ? E.intl.string(E.t.Bc13HB) : E.intl.format(E.t.Io7ozs, {
       days: a
     })
   }, [null == $ || null == (n = $.tenantMetadata) || null == (t = n.socialLayer) ? true : t.expiresAt]), en = (null == $ || null == (i = $.tenantMetadata) || null == (a = i.socialLayer) ? true : a.cardBackgroundImageAssetId) != null && null != (G = C.Z.toURLSafe((0, y._W)(W, null == $ ? true : $.tenantMetadata.socialLayer.cardBackgroundImageAssetId, 1024, "png"))) ? G : true, [ea, el] = (0, v.Cf)(null == en ? true : en.toString(), "#000000"), er = r.useMemo(() => {
@@ -151,8 +151,8 @@ function M(e) {
                 isGift: false
               })
             },
-            text: E.intl.format(E.t.Xp5WTn, {
-              price: (0, j.T4)(null != (F = null == (w = $.price) ? true : w.amount) ? F : 0, null != (U = null == (T = $.price) ? true : T.currency) ? U : A.pK.USD)
+            text: E.intl.format(E.t.Xp5WTk, {
+              price: (0, j.T4)(null != (U = null == (w = $.price) ? true : w.amount) ? U : 0, null != (F = null == (T = $.price) ? true : T.currency) ? F : A.pK.USD)
             }),
             fullWidth: true
           }), (0, l.jsx)(b.Z, {

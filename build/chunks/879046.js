@@ -15,13 +15,13 @@ var Chunk499254 = require("./499254.js"),
 function u(e) {
   let {
     entry: t
-  } = e, n = (0, a.q)(t.extra.application_id), u = null == n ? true : n.getIconURL(l.Si.LARGE), d = t.extra.activity_name, f = (0, s.Jg)(t) ? c.t.vPg1JT : c.t.rPqqts, _ = {
+  } = e, n = (0, a.q)(t.extra.application_id), u = null == n ? true : n.getIconURL(l.Si.LARGE), d = t.extra.activity_name, f = (0, s.Jg)(t) ? c.t.vPg1JS : c.t.rPqqtr, _ = {
     onClick: () => {
       r.__(i._b.TEXT, o.Ie.NORMAL, {
         applicationId: t.extra.application_id
       })
     },
-    ariaDescription: c.intl.formatToPlainString(c.t.NTHttN, {
+    ariaDescription: c.intl.formatToPlainString(c.t.NTHttL, {
       title: d
     })
   };

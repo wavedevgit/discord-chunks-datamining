@@ -26,7 +26,7 @@ function h(n) {
   } = n, [C, j] = a.useState(h), {
     classification: _,
     isDsaEligible: E
-  } = (0, r.YG)(null != e ? e : p.lds), I = (null == _ ? true : _.is_spam) || false, v = (null == _ ? true : _.is_coppa) || false, T = null == _ ? true : _.appeal_ingestion_type;
+  } = (0, r.YG)(null != e ? e : p.lds), v = (null == _ ? true : _.is_spam) || false, I = (null == _ ? true : _.is_coppa) || false, T = null == _ ? true : _.appeal_ingestion_type;
   a.useEffect(() => {
     j(h)
   }, [j, h]);
@@ -62,8 +62,8 @@ function h(n) {
             classification: _,
             onClose: S,
             onNext: A,
-            isSpam: I,
-            isCoppa: v,
+            isSpam: v,
+            isCoppa: I,
             appealIngestionType: T,
             isDsaEligible: E
           })

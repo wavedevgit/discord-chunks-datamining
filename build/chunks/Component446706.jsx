@@ -1,7 +1,7 @@
 /** Chunk was on 42483 **/
 /** chunk id: 446706, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -31,14 +31,14 @@ function u(t) {
   })
 }
 
-function g(t) {
+function _(t) {
   let {
     className: n,
     isNewUser: e,
     onClose: l,
     onChooseTemplate: a,
     onJoin: c
-  } = t, o = (0, C.E)();
+  } = t, o = (0, m.E)();
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)(r.xBx, {
       direction: d.Z.Direction.VERTICAL,
@@ -47,12 +47,12 @@ function g(t) {
       children: [(0, i.jsx)(r.Heading, {
         className: p.title,
         variant: "heading-xl/semibold",
-        children: e ? m.intl.string(m.t["9U0b1k"]) : m.intl.string(m.t["5HZu07"])
+        children: e ? C.intl.string(C.t["9U0b1t"]) : C.intl.string(C.t["5HZu09"])
       }), (0, i.jsx)(r.Text, {
         className: p.subtitle,
         color: "header-secondary",
         variant: "text-md/normal",
-        children: m.intl.string(m.t["wti/H4"])
+        children: C.intl.string(C.t["wti/Hx"])
       }), null != l && (0, i.jsx)(r.olH, {
         className: p.closeButton,
         onClick: l
@@ -61,31 +61,31 @@ function g(t) {
       className: s()(p.templatesList, n),
       paddingFix: false,
       children: [(0, i.jsx)(u, {
-        guildTemplate: o[C.l.CREATE],
+        guildTemplate: o[m.l.CREATE],
         onClick: a,
         autoFocus: true
       }), (0, i.jsx)(r.Text, {
         className: p.optionHeader,
         color: "header-secondary",
         variant: "text-xs/bold",
-        children: m.intl.string(m.t.JGDkfg)
+        children: C.intl.string(C.t.JGDkfn)
       }), (0, i.jsx)(u, {
-        guildTemplate: o[C.l.GAMING],
+        guildTemplate: o[m.l.GAMING],
         onClick: a
       }), (0, i.jsx)(u, {
-        guildTemplate: o[C.l.FRIENDS],
+        guildTemplate: o[m.l.FRIENDS],
         onClick: a
       }), (0, i.jsx)(u, {
-        guildTemplate: o[C.l.STUDY],
+        guildTemplate: o[m.l.STUDY],
         onClick: a
       }), (0, i.jsx)(u, {
-        guildTemplate: o[C.l.SCHOOL_CLUB],
+        guildTemplate: o[m.l.SCHOOL_CLUB],
         onClick: a
       }), (0, i.jsx)(u, {
-        guildTemplate: o[C.l.LOCAL_COMMUNITY],
+        guildTemplate: o[m.l.LOCAL_COMMUNITY],
         onClick: a
       }), (0, i.jsx)(u, {
-        guildTemplate: o[C.l.CREATORS],
+        guildTemplate: o[m.l.CREATORS],
         onClick: a
       })]
     }), null != c && (0, i.jsxs)(r.mzw, {
@@ -93,14 +93,14 @@ function g(t) {
       children: [(0, i.jsx)(r.Heading, {
         variant: "heading-lg/semibold",
         className: p.footerTitle,
-        children: m.intl.string(m.t["N+Mi/U"])
+        children: C.intl.string(C.t["N+Mi/f"])
       }), (0, i.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: p.footerButton,
         children: (0, i.jsx)(r.Button, {
           variant: "secondary",
           fullWidth: true,
-          text: m.intl.string(m.t.riOUtB),
+          text: C.intl.string(C.t.riOUtL),
           onClick: c
         })
       })]

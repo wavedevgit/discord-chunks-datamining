@@ -12,11 +12,11 @@ function i(e) {
     username: n,
     usernameOnClick: i
   } = e;
-  return null != t ? r.intl.formatToParts(r.t.Tes5Ou, {
+  return null != t ? r.intl.formatToParts(r.t.Tes5Oj, {
     username: n,
     applicationName: t.name,
     usernameOnClick: i
-  }) : r.intl.formatToParts(r.t.PUJtgi, {
+  }) : r.intl.formatToParts(r.t.PUJtgo, {
     username: n,
     usernameOnClick: i
   })

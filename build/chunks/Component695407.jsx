@@ -14,7 +14,7 @@ let l = Chunk647438.forwardRef(function(e, t) {
     query: n,
     onChange: l,
     disabled: c = false,
-    placeholder: u = s.intl.string(s.t["5h0QOP"]),
+    placeholder: u = s.intl.string(s.t["5h0QOD"]),
     "aria-label": d,
     onInteraction: f
   } = e, _ = i.useRef(null);

@@ -49,12 +49,12 @@ function A(e) {
     color: l.zx.Colors.CUSTOM,
     onClick: n,
     textOptions: {
-      textOverride: T.intl.string(T.t.pj0XBN)
+      textOverride: T.intl.string(T.t.pj0XBA)
     }
   }) : a === y.y.JOIN_GUILD ? (0, r.jsx)(c.Button, {
     variant: "primary",
     size: "sm",
-    text: T.intl.string(T.t.riu2R5),
+    text: T.intl.string(T.t.riu2R0),
     fullWidth: true,
     onClick: o
   }) : null
@@ -101,7 +101,7 @@ function C(e) {
           variant: "eyebrow",
           color: "header-muted",
           className: S.infoExpandedGuildTitle,
-          children: v ? T.intl.string(T.t.tGDabk) : T.intl.string(T.t.rnOmOa)
+          children: v ? T.intl.string(T.t.tGDabm) : T.intl.string(T.t.rnOmOT)
         }), (0, r.jsx)("div", {
           className: S.infoExpandedGuildInfo,
           children: (0, r.jsx)(f.Oe, {

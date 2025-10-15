@@ -34,7 +34,7 @@ function g(e) {
     N = null != (g = null == T || null == (t = T.description) ? true : t.trim()) ? g : true,
     R = (null == T ? true : T.headerBackground) != null && null != (E = u.Z.toURLSafe((0, c._W)(v, T.headerBackground, 256))) ? E : true,
     P = S.type === h.epS.DURABLE && A,
-    w = S.type === h.epS.DURABLE ? P ? m.intl.string(m.t.bm82mm) : m.intl.string(m.t["6gprwf"]) : true,
+    w = S.type === h.epS.DURABLE ? P ? m.intl.string(m.t.bm82mp) : m.intl.string(m.t["6gprwc"]) : true,
     {
       price: D
     } = S;

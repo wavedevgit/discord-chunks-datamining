@@ -11,7 +11,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk906732 = require("./906732.jsx"),
-  Chunk47280 = require("./47280.js"),
+  Chunk283066 = require("./283066.js"),
   Chunk736519 = require("./736519.jsx"),
   Chunk117791 = require("./117791.jsx"),
   Chunk388032 = require("./388032.jsx"),
@@ -24,7 +24,7 @@ let g = e => {
     className: t,
     location: n,
     analyticsLocation: i
-  } = e, g = (0, c.ZP)({
+  } = e, g = (0, c.Z)({
     location: "GiftNitro"
   }), {
     analyticsLocations: E
@@ -39,14 +39,14 @@ let g = e => {
         children: [(0, r.jsx)(s.Heading, {
           variant: "heading-xxl/bold",
           className: p.heading,
-          children: f.intl.string(f.t.Ve9Ge6)
+          children: f.intl.string(f.t.Ve9Ge3)
         }), (0, r.jsx)(s.Text, {
           variant: "text-md/medium",
-          children: f.intl.string(f.t.yQ06u1)
+          children: f.intl.string(f.t.yQ06u7)
         }), (0, r.jsx)("div", {
           className: p.giftButtonContainer,
           children: (0, r.jsx)(d.Z, {
-            buttonTextOverride: f.intl.string(f.t.Ve9Ge6),
+            buttonTextOverride: f.intl.string(f.t.Ve9Ge3),
             premiumModalAnalyticsLocation: i,
             variant: "secondary"
           })
@@ -66,14 +66,14 @@ let g = e => {
         children: [(0, r.jsx)(s.Heading, {
           variant: "heading-lg/extrabold",
           className: _.heading,
-          children: f.intl.string(f.t.Ve9Ge6)
+          children: f.intl.string(f.t.Ve9Ge3)
         }), (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
-          children: f.intl.string(f.t.yQ06u1)
+          children: f.intl.string(f.t.yQ06u7)
         }), (0, r.jsx)(u.Z, {
           className: _.giftCardButton,
           textOptions: {
-            textOverride: f.intl.string(f.t.Ve9Ge6),
+            textOverride: f.intl.string(f.t.Ve9Ge3),
             textClassName: _.giftButtonCTA
           },
           color: o.zx.Colors.CUSTOM,

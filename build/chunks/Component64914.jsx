@@ -88,11 +88,11 @@ function w() {
     (0, u.BV)(e, c.Z.USER_SETTINGS)
   }, []), N = Chunk647438.useCallback(e => {
     (0, s.h7j)(t => {
-      let n = e ? I.intl.format(I.t.LYXRxL, {}) : I.intl.format(I.t.uDP3Kz, {});
+      let n = e ? I.intl.format(I.t.LYXRxM, {}) : I.intl.format(I.t.uDP3Ky, {});
       return (0, r.jsx)(s.ConfirmModal, C(S({
-        header: I.intl.string(I.t.aqpAvn),
-        confirmText: I.intl.string(I.t.vT7ckk),
-        cancelText: I.intl.string(I.t["ETE/oC"]),
+        header: I.intl.string(I.t.aqpAvr),
+        confirmText: I.intl.string(I.t.vT7ckp),
+        cancelText: I.intl.string(I.t["ETE/oK"]),
         onConfirm: () => P(e)
       }, t), {
         children: (0, r.jsx)(s.Text, {
@@ -113,14 +113,14 @@ function w() {
     e ? d.Z.connect() : d.Z.disconnect()
   }, []);
   return (0, Chunk951288.jsx)(Chunk273313.Z, {
-    title: Chunk388032.intl.string(Chunk388032.t["8/udY0"]),
+    title: Chunk388032.intl.string(Chunk388032.t["8/udY2"]),
     children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
       gap: 16,
       children: [(0, Chunk951288.jsxs)(Chunk921801.F, {
         setting: Chunk726985.s6.SETTINGS_ADVANCED_DEVELOPER_MODE,
         children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
-          label: Chunk388032.intl.string(Chunk388032.t.ObIb1Q),
-          description: Chunk388032.intl.format(Chunk388032.t["CY6q/Q"], {
+          label: Chunk388032.intl.string(Chunk388032.t.ObIb1d),
+          description: Chunk388032.intl.format(Chunk388032.t["CY6q/f"], {
             apiDocsUrl: Chunk981631.EYA.API_DOCS
           }),
           checked: require,
@@ -131,36 +131,36 @@ function w() {
         children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
           gap: 16,
           children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
-            label: Chunk388032.intl.string(Chunk388032.t["eOC/F2"]),
-            description: Chunk388032.intl.string(Chunk388032.t.Afc7l6),
+            label: Chunk388032.intl.string(Chunk388032.t["eOC/Fx"]),
+            description: Chunk388032.intl.string(Chunk388032.t.Afc7l5),
             checked: module,
             onChange: N
           }), !module && (0, Chunk951288.jsx)(Chunk494620.Z, {
             look: Chunk494620.z.WARNING,
-            children: Chunk388032.intl.string(Chunk388032.t.j7S6IX)
+            children: Chunk388032.intl.string(Chunk388032.t.j7S6IS)
           }), (0, Chunk951288.jsx)(Chunk481060.izJ, {})]
         })
       }), (0, Chunk951288.jsxs)(Chunk921801.F, {
         setting: Chunk726985.s6.SETTINGS_ADVANCED_SHOW_GAME_LIBRARY,
         children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
-          label: Chunk388032.intl.string(Chunk388032.t.fi3UQN),
-          description: Chunk388032.intl.string(Chunk388032.t["8mYp37"]),
+          label: Chunk388032.intl.string(Chunk388032.t.fi3UQE),
+          description: Chunk388032.intl.string(Chunk388032.t["8mYp39"]),
           checked: !exports,
           onChange: Chunk998502
         }), (0, Chunk951288.jsx)(Chunk481060.izJ, {})]
       }), (0, Chunk951288.jsxs)(Chunk921801.F, {
         setting: Chunk726985.s6.SETTINGS_ADVANCED_APPLICATION_TEST_MODE,
         children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
-          label: Chunk388032.intl.string(Chunk388032.t.erOqlh),
-          description: Chunk388032.intl.string(Chunk388032.t["52hMnD"]),
+          label: Chunk388032.intl.string(Chunk388032.t.erOqlp),
+          description: Chunk388032.intl.string(Chunk388032.t["52hMnJ"]),
           checked: null != Chunk433517,
           onChange: T
         }), (0, Chunk951288.jsx)(Chunk481060.izJ, {})]
       }), (0, Chunk951288.jsxs)(Chunk921801.F, {
         setting: Chunk726985.s6.SETTINGS_ADVANCED_SHOW_PLAY_AGAIN,
         children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
-          label: Chunk388032.intl.string(Chunk388032.t.qDZryG),
-          description: Chunk388032.intl.string(Chunk388032.t["B/qU4K"]),
+          label: Chunk388032.intl.string(Chunk388032.t.qDZryM),
+          description: Chunk388032.intl.string(Chunk388032.t["B/qU4O"]),
           checked: Chunk947851,
           onChange: A
         }), (0, Chunk951288.jsx)(Chunk481060.izJ, {})]

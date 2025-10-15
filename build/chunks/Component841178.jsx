@@ -1,7 +1,7 @@
 /** Chunk was on 46317 **/
 /** chunk id: 841178, original params: t,i,n (module,exports,require) **/
 require.d(exports, {
-  default: () => c
+  default: () => d
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -12,46 +12,46 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk551850 = require("./551850.js");
 
-function c(t) {
+function d(t) {
   let {
     transitionState: i,
     onClose: n
-  } = t, c = (0, s.Dt)();
-  return (0, e.jsxs)(r.Y0X, {
-    "aria-labelledby": c,
+  } = t, d = (0, s.Dt)();
+  return (0, e.jsxs)(a.Y0X, {
+    "aria-labelledby": d,
     transitionState: i,
-    size: r.CgR.SMALL,
+    size: a.CgR.SMALL,
     parentComponent: "SpotifyPremiumUpgradeModal",
-    children: [(0, e.jsx)(r.xBx, {
+    children: [(0, e.jsx)(a.xBx, {
       separator: false,
-      children: (0, e.jsx)(r.Heading, {
-        id: c,
+      children: (0, e.jsx)(a.Heading, {
+        id: d,
         variant: "heading-lg/semibold",
-        children: d.intl.formatToMarkdownString(d.t.DQsSGr, {})
+        children: l.intl.formatToMarkdownString(l.t.DQsSGh, {})
       })
-    }), (0, e.jsxs)(r.hzk, {
-      children: [(0, e.jsx)(a.Z, {
-        justify: a.Z.Justify.CENTER,
+    }), (0, e.jsxs)(a.hzk, {
+      children: [(0, e.jsx)(r.Z, {
+        justify: r.Z.Justify.CENTER,
         children: (0, e.jsx)("div", {
-          className: l.image
+          className: c.image
         })
-      }), (0, e.jsx)(r.Text, {
-        className: l.text,
+      }), (0, e.jsx)(a.Text, {
+        className: c.text,
         variant: "text-sm/normal",
-        children: d.intl.string(d.t.xGMwi9)
+        children: l.intl.string(l.t.xGMwi4)
       })]
-    }), (0, e.jsx)(r.mzw, {
-      children: (0, e.jsxs)(r.ButtonGroup, {
+    }), (0, e.jsx)(a.mzw, {
+      children: (0, e.jsxs)(a.ButtonGroup, {
         direction: "horizontal-reverse",
-        children: [(0, e.jsx)(r.Button, {
+        children: [(0, e.jsx)(a.Button, {
           variant: "primary",
-          text: d.intl.string(d.t.n8U5jd),
+          text: l.intl.string(l.t.n8U5jY),
           onClick: function() {
             (0, o.KK)(), n()
           }
-        }), (0, e.jsx)(r.Button, {
+        }), (0, e.jsx)(a.Button, {
           variant: "secondary",
-          text: d.intl.string(d.t["ETE/oC"]),
+          text: l.intl.string(l.t["ETE/oK"]),
           onClick: n
         })]
       })

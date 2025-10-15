@@ -1,7 +1,7 @@
 /** Chunk was on 78431 **/
 /** chunk id: 650788, original params: e,t,r (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => M
+  default: () => V
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -53,7 +53,7 @@ function E(e) {
   return null == s || !u && p ? (0, n.jsx)(a.$jN, {}) : (0, n.jsx)(x.Z, {
     defaultSortOption: null != (t = null == l ? true : l.store_page_guild_products_default_sort) ? t : Z.zJ.NAME,
     children: (0, n.jsxs)("div", {
-      className: N.contentContainer,
+      className: k.contentContainer,
       children: [(0, n.jsx)(S.C, {
         guild: s,
         subscriptionsSettings: l
@@ -62,7 +62,7 @@ function E(e) {
       }), C.length > 0 && (0, n.jsx)(w.z, {
         guild: s
       }), (0, n.jsxs)("div", {
-        className: N.tabContainer,
+        className: k.tabContainer,
         children: [(0, n.jsx)(a.LZC, {
           size: 32
         }), u && (0, n.jsx)(P.Z, {
@@ -78,7 +78,7 @@ function E(e) {
   })
 }
 
-function V(e) {
+function U(e) {
   let {
     guildId: t,
     productId: r
@@ -93,7 +93,7 @@ function V(e) {
   return i.useEffect(() => {
     P && (0, O.M)(t, D.oC.GUILD_SHOP)
   }, [t, P]), (0, d.Z)({
-    type: T.n.PAGE,
+    type: N.n.PAGE,
     name: s.ImpressionNames.GUILD_SHOP_PAGE,
     properties: {
       product_id: r,
@@ -103,30 +103,30 @@ function V(e) {
     disableTrack: P
   }), (0, n.jsxs)("div", {
     "data-has-border": true,
-    className: l()(R.chat, N.container),
+    className: l()(R.chat, k.container),
     children: [(0, n.jsxs)(j.Z, {
       children: [(0, n.jsx)(j.Z.Icon, {
         icon: (0, a.GSL)(I.Z),
         "aria-hidden": true,
         color: u.Z.INTERACTIVE_ACTIVE
       }), (0, n.jsx)(j.Z.Title, {
-        children: k.intl.string(k.t.al5EXL)
+        children: T.intl.string(T.t.al5EXF)
       }), (0, n.jsx)(L.Z, {})]
     }), (0, n.jsx)(a.u2D, {
-      className: N.content,
+      className: k.content,
       children: o ? (0, n.jsx)(E, {
         guildId: t,
         productId: r
       }) : (0, n.jsx)(a.$jN, {})
     }), (0, n.jsx)(b.Z, {
-      className: N.sparkleCloudTop
+      className: k.sparkleCloudTop
     }), (0, n.jsx)(f.Z, {
-      className: N.sparkleCloudBottom
+      className: k.sparkleCloudBottom
     })]
   })
 }
 
-function M(e) {
+function V(e) {
   let {
     guildId: t,
     productId: r,
@@ -135,7 +135,7 @@ function M(e) {
   return null == i && null != r && (i = v.y.GUILD_PRODUCTS), (0, n.jsx)(m.Z, {
     initialTab: i,
     guildId: t,
-    children: (0, n.jsx)(V, {
+    children: (0, n.jsx)(U, {
       initialTab: i,
       productId: r,
       guildId: t

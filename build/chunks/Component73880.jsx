@@ -57,7 +57,7 @@ function u(e) {
       value: t.response,
       onChange: l,
       autofocus: n,
-      placeholder: a.intl.string(a.t["Sqn+Wh"])
+      placeholder: a.intl.string(a.t["Sqn+Wl"])
     })
   })
 }

@@ -46,7 +46,7 @@ function M(e) {
   return 0 === r.length ? null : (0, i.jsx)(i.Fragment, {
     children: r.map((e, t) => (0, i.jsx)(u.u, {
       position: "bottom",
-      text: A.intl.formatToPlainString(A.t.JjdizN, {
+      text: A.intl.formatToPlainString(A.t.JjdizM, {
         username: e.user.username
       }),
       children: (0, i.jsx)(S.ZP, {

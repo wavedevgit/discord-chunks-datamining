@@ -35,8 +35,8 @@ let g = e => {
     title: p.intl.formatToPlainString(p.t["Q1o/f3"], {
       username: x
     }),
-    description: p.intl.string(p.t.G08MKu),
-    buttonText: h ? p.intl.string(p.t.ot2tSp) : p.intl.string(p.t["l+7PZY"]),
+    description: p.intl.string(p.t.G08MKi),
+    buttonText: h ? p.intl.string(p.t.ot2tSk) : p.intl.string(p.t["l+7PZW"]),
     buttonDisabled: h,
     onButtonPress: v,
     buttonVariant: "application" === f.name && h ? "secondary" : "critical-primary"

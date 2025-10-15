@@ -13,7 +13,7 @@ var Chunk481060 = require("./481060.js"),
 function s(e, t) {
   return (0, l.NE)(t, e) ? (0, r.jsx)(i.sNh, {
     id: "thread",
-    label: o.intl.string(o.t.rBIGBL),
+    label: o.intl.string(o.t.rBIGBA),
     icon: i.or_,
     action: () => {
       (0, a.gK)(t, e)

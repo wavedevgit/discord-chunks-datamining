@@ -21,11 +21,11 @@ function l(e) {
     f = (0, o.Z)(l).filter(e => e.roles.includes(d)).length;
   return r.useMemo(() => {
     let e = [];
-    returntrue === t && e.push(s.intl.string(s.t.EhdV2x)), 0 !== c && e.push(s.intl.formatToPlainString(s.t["p/l+BI"], {
+    returntrue === t && e.push(s.intl.string(s.t.EhdV29)), 0 !== c && e.push(s.intl.formatToPlainString(s.t["p/l+BA"], {
       channelCount: c
-    })), 0 !== u && e.push(s.intl.formatToPlainString(s.t.eXP5vt, {
+    })), 0 !== u && e.push(s.intl.formatToPlainString(s.t.eXP5vr, {
       benefitCount: u
-    })), 0 !== f && e.push(s.intl.formatToPlainString(s.t.YjmQwW, {
+    })), 0 !== f && e.push(s.intl.formatToPlainString(s.t.YjmQwc, {
       emojiCount: f
     })), new i.Z(e)
   }, [c, u, f, t])

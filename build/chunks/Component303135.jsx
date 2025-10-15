@@ -26,14 +26,14 @@ function u(e) {
     }),
     timestamp: t.timestamp,
     compact: u,
-    children: c.intl.format(c.t["4wLp25"], {
+    children: c.intl.format(c.t["4wLp29"], {
       username: d.nick,
       usernameHook: f,
       editGroupButton: (0, r.jsx)(i.Text, {
         tag: "span",
         variant: "text-md/medium",
         color: "text-link",
-        children: c.intl.string(c.t["5Q9+/L"])
+        children: c.intl.string(c.t["5Q9+/P"])
       }, "edit-group-button-".concat(t.id)),
       onEditGroup: () => (0, o.B)(t.channel_id, a.Z.GROUP_DM_SYSTEM_MESSAGE_ICON)
     })

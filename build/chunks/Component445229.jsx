@@ -50,7 +50,7 @@ function h(e) {
       className: f.__invalid_header,
       children: (0, a.jsxs)(s.vwX, {
         className: f.title,
-        children: [p.intl.string(p.t.WTozwe), (0, a.jsxs)("div", {
+        children: [p.intl.string(p.t.WTozwc), (0, a.jsxs)("div", {
           className: f.userCountPill,
           children: [(0, a.jsx)(s.Text, {
             color: "text-default",

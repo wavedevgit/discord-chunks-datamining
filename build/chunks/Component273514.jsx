@@ -22,7 +22,7 @@ let d = e => {
     children: [(0, r.jsx)(i.Heading, {
       className: c.header,
       variant: "heading-sm/semibold",
-      children: s.intl.string(s.t.nTe4HC)
+      children: s.intl.string(s.t.nTe4HB)
     }), (0, r.jsxs)("div", {
       className: c.guildContainer,
       children: [(0, r.jsxs)("div", {

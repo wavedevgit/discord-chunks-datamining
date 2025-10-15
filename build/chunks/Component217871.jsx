@@ -81,7 +81,7 @@ let O = Chunk647438.memo(function(e) {
             color: u
           },
           variant: "text-sm/bold",
-          children: v.intl.format(v.t["6bgVlq"], {
+          children: v.intl.format(v.t["6bgVlp"], {
             multiplier: n
           })
         }), o && (0, i.jsxs)(i.Fragment, {
@@ -113,7 +113,7 @@ let O = Chunk647438.memo(function(e) {
         }), 1 === n && (0, i.jsx)(c.Text, {
           className: x.tip,
           variant: "text-sm/bold",
-          children: v.intl.string(v.t.b5Cpof)
+          children: v.intl.string(v.t.b5Cpoa)
         })]
       })]
     })

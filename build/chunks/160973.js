@@ -37,9 +37,9 @@ function m(e) {
   if (f !== o.JS.LEAVE) {
     let e = m instanceof s.ZP ? m.embeddedActivityConfig : m.embedded_activity_config,
       n = (0, a.Z)((0, u.getOS)());
-    null == e || e.supported_platforms.includes(n) ? (null == h ? true : h.isThread()) && (x = true, t = p.intl.string(p.t.ddSR3v)) : (x = false, t = p.intl.string(p.t.z2YTgJ))
+    null == e || e.supported_platforms.includes(n) ? (null == h ? true : h.isThread()) && (x = true, t = p.intl.string(p.t.ddSR3t)) : (x = false, t = p.intl.string(p.t.z2YTgI))
   }
-  return x && null == t && (t = p.intl.string(p.t.f41E1g)), {
+  return x && null == t && (t = p.intl.string(p.t.f41E1t)), {
     disabled: x,
     reason: t
   }

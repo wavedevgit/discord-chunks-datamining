@@ -78,7 +78,7 @@ let _ = {
           },
           variant: "secondary"
         }), a.push({
-          text: null != d ? d : l.intl.string(l.t.BddRzS),
+          text: null != d ? d : l.intl.string(l.t.BddRzc),
           onClick: () => {
             null == h || h(), e.onClose()
           },
@@ -114,7 +114,7 @@ let _ = {
         onConfirm() {
           t(true)
         },
-        cancelText: l.intl.string(l.t["ETE/oC"]),
+        cancelText: l.intl.string(l.t["ETE/oK"]),
         onCancel() {
           t(false)
         }

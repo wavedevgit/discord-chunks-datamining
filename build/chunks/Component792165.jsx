@@ -24,7 +24,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk262381 = require("./262381.js");
 
 function y(e) {
-  return e === m.PremiumTypes.TIER_2 ? E.intl.string(E.t.jqO5Qn) : null == e ? E.intl.string(E.t.f2qjw5) : E.intl.string(E.t.SblICW)
+  return e === m.PremiumTypes.TIER_2 ? E.intl.string(E.t.jqO5Qk) : null == e ? E.intl.string(E.t.f2qjw8) : E.intl.string(E.t.SblICQ)
 }
 
 function O(e) {
@@ -47,7 +47,7 @@ function O(e) {
     children: [null != n ? (0, r.jsx)(s.P3F, {
       className: b.close,
       onClick: () => null == n ? true : n(h.L.DISMISS),
-      "aria-label": E.intl.string(E.t.cpT0Cq),
+      "aria-label": E.intl.string(E.t.cpT0Cg),
       children: (0, r.jsx)(s.Dio, {
         size: "xs",
         color: "currentColor",
@@ -61,18 +61,18 @@ function O(e) {
         className: b.nitroWheel
       }), (0, r.jsx)(s.Heading, {
         variant: "heading-sm/bold",
-        children: E.intl.string(E.t.dTbAxx)
+        children: E.intl.string(E.t.dTbAx8)
       })]
     }), (0, r.jsx)(a.x, {
       variant: "text-sm/normal",
       children: v
     }), I ? (0, r.jsx)(s.Button, {
       onClick: T,
-      text: E.intl.string(E.t.RzWDqY),
+      text: E.intl.string(E.t.RzWDqa),
       fullWidth: true
     }) : (0, r.jsx)(l.Z, {
       textOptions: {
-        textOverride: E.intl.string(E.t.pj0XBN)
+        textOverride: E.intl.string(E.t.pj0XBA)
       },
       subscriptionTier: m.Si.TIER_2,
       premiumModalAnalyticsLocation: {

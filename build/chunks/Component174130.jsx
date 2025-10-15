@@ -25,7 +25,7 @@ function p(e) {
   } = (0, c.up)(), g = (0, i.e7)([s.Z], () => s.Z.isFavorite(t.id));
   if (!n || p) return null;
   let m = g ? l.r7p : l.vxU,
-    b = g ? h.intl.string(h.t.Bou7lT) : h.intl.string(h.t["4wcdE/"]);
+    b = g ? h.intl.string(h.t.Bou7lZ) : h.intl.string(h.t["4wcdEx"]);
   return (0, r.jsx)(a.ZP.Icon, {
     icon: m,
     tooltip: b,

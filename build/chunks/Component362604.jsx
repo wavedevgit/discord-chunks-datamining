@@ -47,7 +47,7 @@ function b(e) {
           className: o()({
             [E.compact]: b
           }),
-          children: "" !== t.content ? t.content : g.intl.string(g.t.wnn1Dc)
+          children: "" !== t.content ? t.content : g.intl.string(g.t.wnn1DQ)
         })
       })
     }), (0, r.jsxs)(l.ButtonGroup, {
@@ -69,7 +69,7 @@ function b(e) {
         }
       }), (0, r.jsx)(l.Button, {
         variant: "secondary",
-        text: g.intl.string(g.t.gbrrAz),
+        text: g.intl.string(g.t.gbrrAw),
         icon: null != O ? {
           type: "sticker",
           asset: O,

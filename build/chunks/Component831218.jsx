@@ -1,7 +1,7 @@
 /** Chunk was on 57695 **/
 /** chunk id: 831218, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => V
+  Z: () => F
 }), require("./388685.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -199,7 +199,7 @@ let B = Chunk647438.memo(function() {
     })]
   })
 });
-class F extends(r = Chunk647438.Component) {
+class V extends(r = Chunk647438.Component) {
   static getDerivedStateFromProps(e) {
     let {
       children: t,
@@ -282,7 +282,7 @@ class F extends(r = Chunk647438.Component) {
           children: r => (0, i.jsx)(f.aVo, G({
             fade: true,
             innerRole: o,
-            innerAriaLabel: L.intl.string(L.t.YUU0RF),
+            innerAriaLabel: L.intl.string(L.t.YUU0RE),
             innerTag: "ul",
             ref: e => {
               var t;
@@ -388,7 +388,7 @@ class F extends(r = Chunk647438.Component) {
         }),
         children: [(0, i.jsx)("span", {
           className: M.headerText,
-          children: L.intl.string(L.t.YUU0RF)
+          children: L.intl.string(L.t.YUU0RE)
         }), null == r && (0, i.jsx)(S.Z, {
           location: "PrivateChannelsList-CreateDMButton",
           tooltip: L.intl.string(L.t["6Urw1t"]),
@@ -424,10 +424,10 @@ class F extends(r = Chunk647438.Component) {
     })
   }
 }
-k(F, "defaultProps", {
+k(V, "defaultProps", {
   padding: 8
 });
-let V = e => {
+let F = e => {
   let {
     density: t
   } = (0, f.TCT)(), {
@@ -478,7 +478,7 @@ let V = e => {
         requestAnimationFrame(() => setTimeout(e, 100))
       }
     })
-  }), [D]), B = (0, x.Dt)(), V = (0, d.ZP)({
+  }), [D]), B = (0, x.Dt)(), F = (0, d.ZP)({
     id: "private-channels-".concat(B),
     isEnabled: S,
     scrollToStart: M,
@@ -489,8 +489,8 @@ let V = e => {
   return (0, i.jsx)(O.Gt, {
     value: v,
     children: (0, i.jsx)(u.bG, {
-      navigator: V,
-      children: (0, i.jsx)(F, U(G({}, e), {
+      navigator: F,
+      children: (0, i.jsx)(V, U(G({}, e), {
         density: t,
         channels: _,
         privateChannelIds: y,

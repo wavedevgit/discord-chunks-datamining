@@ -48,7 +48,7 @@ function b(e) {
     setIsForceShowSharingPopout: p,
     ref: h,
     popoutTargetRef: b
-  } = e, _ = null != n ? n.name : null != i ? i.name : f.intl.string(f.t["UQMV/E"]);
+  } = e, _ = null != n ? n.name : null != i ? i.name : f.intl.string(f.t["UQMV/P"]);
   return (0, c.V)(), (0, r.jsxs)("div", {
     className: g.gameWrapper,
     children: [(0, r.jsxs)("div", {

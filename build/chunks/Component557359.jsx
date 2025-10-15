@@ -31,8 +31,8 @@ function h(e) {
   }, [h, t]);
   return null == l ? null : null == n ? (0, r.jsx)(c.$jN, {}) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.rsf, {
-      label: p.intl.string(p.t.d21uOr),
-      description: p.intl.string(p.t.SzpUBF),
+      label: p.intl.string(p.t.d21uOj),
+      description: p.intl.string(p.t.SzpUBA),
       onChange: b,
       checked: t
     }), t && (0, r.jsx)(m.c, {
@@ -47,7 +47,7 @@ function h(e) {
           variant: "text-xs/bold",
           color: "text-muted",
           className: f.rulesHeader,
-          children: p.intl.string(p.t.XcAzbo)
+          children: p.intl.string(p.t.XcAzbm)
         }), (0, r.jsx)(d.k, {
           guild: l,
           rules: n,

@@ -26,7 +26,7 @@ function h(e) {
     }
     return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
   }, [t, r, i]);
-  let C = (0, l.q_F)({
+  let b = (0, l.q_F)({
     width: "".concat(f, "px"),
     onStart: () => {
       y(true)
@@ -53,7 +53,7 @@ function h(e) {
         ref: h,
         children: (0, n.jsx)(o.animated.div, {
           className: d.container,
-          style: C,
+          style: b,
           children: (0, n.jsxs)("div", {
             className: d.innerContainer,
             ref: p,

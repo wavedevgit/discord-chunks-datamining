@@ -32,12 +32,12 @@ function p(e) {
           variant: "heading-xl/medium",
           color: "header-primary",
           className: d.mainTitle,
-          children: c.intl.format(c.t.Eg5ybE, {})
+          children: c.intl.format(c.t.Eg5ybG, {})
         }), (0, i.jsx)(o.Text, {
           variant: "text-md/normal",
           color: "text-muted",
           className: d.mainTitleBody,
-          children: c.intl.format(c.t.KkM0s8, {})
+          children: c.intl.format(c.t.KkM0s7, {})
         })]
       }), (0, i.jsxs)("div", {
         className: d.widgetCalloutContainer,
@@ -46,34 +46,34 @@ function p(e) {
           children: [(0, i.jsx)(o.qjv, {}), (0, i.jsx)(o.Text, {
             variant: "text-md/medium",
             color: "interactive-normal",
-            children: c.intl.string(c.t.S6VRyK)
+            children: c.intl.string(c.t.S6VRyM)
           })]
         }), (0, i.jsxs)("div", {
           className: d.widgetCallout,
           children: [(0, i.jsx)(o.Dkj, {}), (0, i.jsx)(o.Text, {
             variant: "text-md/medium",
             color: "interactive-normal",
-            children: c.intl.string(c.t.xq8CKY)
+            children: c.intl.string(c.t.xq8CKS)
           })]
         }), (0, i.jsxs)("div", {
           className: d.widgetCallout,
           children: [(0, i.jsx)(o.Odl, {}), (0, i.jsx)(o.Text, {
             variant: "text-md/medium",
             color: "interactive-normal",
-            children: c.intl.string(c.t.GwpRe0)
+            children: c.intl.string(c.t.GwpRe3)
           })]
         }), (0, i.jsxs)("div", {
           className: d.widgetCallout,
           children: [(0, i.jsx)(o.KY1, {}), (0, i.jsx)(o.Text, {
             variant: "text-md/medium",
             color: "interactive-normal",
-            children: c.intl.string(c.t.VUoC5F)
+            children: c.intl.string(c.t.VUoC5O)
           })]
         })]
       }), (0, i.jsx)("div", {
         children: (0, i.jsx)("img", {
           src: u.Z,
-          alt: c.intl.string(c.t.mdXZh1),
+          alt: c.intl.string(c.t.mdXZh4),
           className: d.nuxImage
         })
       })]

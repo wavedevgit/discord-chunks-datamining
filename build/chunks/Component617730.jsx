@@ -99,7 +99,7 @@ function f(e) {
       onClick: n,
       submitting: j,
       className: g.acceptButton,
-      children: h.intl.string(h.t.ohMvm1)
+      children: h.intl.string(h.t.ohMvm5)
     })]
   })
 }

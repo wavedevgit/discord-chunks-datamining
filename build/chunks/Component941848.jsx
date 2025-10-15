@@ -29,7 +29,7 @@ function c(t) {
   return t
 }
 
-function d(t, e) {
+function g(t, e) {
   return e = null != e ? e : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(e)) : (function(t, e) {
     var n = Object.keys(t);
     if (Object.getOwnPropertySymbols) {
@@ -42,15 +42,15 @@ function d(t, e) {
   }), t
 }
 
-function g(t) {
+function d(t) {
   let {
     user: e,
     tagId: n,
     title: r,
     messageCount: s,
     reactionCount: c,
-    activeAgo: d,
-    tags: g,
+    activeAgo: g,
+    tags: d,
     attachment: m
   } = t, {
     name: u,
@@ -67,7 +67,7 @@ function g(t) {
           className: l.inline,
           children: [(0, a.jsx)("img", {
             src: p,
-            alt: o.intl.string(o.t.lqaIxI),
+            alt: o.intl.string(o.t.lqaIxM),
             width: 16,
             height: 16
           }), u]
@@ -79,7 +79,7 @@ function g(t) {
             color: "header-primary",
             variant: "text-xxs/medium",
             className: l.inlineTag,
-            children: g[n]
+            children: d[n]
           })]
         })]
       }), (0, a.jsx)(i.Heading, {
@@ -108,7 +108,7 @@ function g(t) {
             className: l.alignCenter,
             children: [(0, a.jsx)("span", {
               role: "img",
-              "aria-label": o.intl.string(o.t.gHp0C4),
+              "aria-label": o.intl.string(o.t.gHp0Cw),
               className: l.icon,
               children: "❤️"
             }), c]
@@ -119,12 +119,12 @@ function g(t) {
         }), (0, a.jsx)(i.Text, {
           color: "header-secondary",
           variant: "text-xs/medium",
-          children: d
+          children: g
         })]
       })]
     }), null != m && (0, a.jsx)("img", {
       src: m,
-      alt: o.intl.formatToPlainString(o.t.MJHFt9, {
+      alt: o.intl.formatToPlainString(o.t.MJHFt7, {
         name: r
       }),
       className: l.attachment
@@ -145,7 +145,7 @@ function m(t) {
     className: l.message,
     children: [(0, a.jsx)("img", {
       src: c,
-      alt: o.intl.string(o.t.lqaIxI),
+      alt: o.intl.string(o.t.lqaIxM),
       width: 40,
       height: 40
     }), (0, a.jsxs)("div", {
@@ -157,7 +157,7 @@ function m(t) {
           children: r
         }), s && (0, a.jsx)("span", {
           className: l.opTag,
-          children: o.intl.string(o.t.fyE8sH)
+          children: o.intl.string(o.t.fyE8sL)
         })]
       }), (0, a.jsx)(i.Text, {
         color: "text-default",
@@ -205,7 +205,7 @@ function u(t) {
                 className: l.fakeReactions,
                 children: [(0, a.jsx)("span", {
                   role: "img",
-                  "aria-label": o.intl.string(o.t.gHp0C4),
+                  "aria-label": o.intl.string(o.t.gHp0Cw),
                   className: l.icon,
                   children: "❤️"
                 }), "17"]
@@ -216,7 +216,7 @@ function u(t) {
                 children: [(0, a.jsx)(i.Dkj, {
                   size: "xs",
                   color: "currentColor"
-                }), o.intl.string(o.t["3aOv+h"])]
+                }), o.intl.string(o.t["3aOv+v"])]
               })]
             }), (0, a.jsx)("hr", {
               className: l.bottomSeparator
@@ -228,7 +228,7 @@ function u(t) {
         children: (0, a.jsx)(i.Text, {
           color: "text-muted",
           variant: "text-sm/normal",
-          children: o.intl.string(o.t.YzpScd)
+          children: o.intl.string(o.t.YzpScX)
         })
       })]
     })
@@ -267,11 +267,11 @@ function p(t) {
         }, e))
       }), (0, a.jsx)("div", {
         className: l.posts,
-        children: x.map((t, e) => (0, a.jsx)(g, d(c({}, t), {
+        children: x.map((t, e) => (0, a.jsx)(d, g(c({}, t), {
           tags: p
         }), e))
       })]
-    }), (0, a.jsx)(u, d(c({}, h), {
+    }), (0, a.jsx)(u, g(c({}, h), {
       maxHeight: n
     }))]
   })

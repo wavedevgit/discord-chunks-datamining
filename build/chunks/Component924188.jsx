@@ -1,7 +1,7 @@
 /** Chunk was on 57539 **/
 /** chunk id: 924188, original params: t,i,n (module,exports,require) **/
 require.d(exports, {
-  default: () => l
+  default: () => o
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -10,28 +10,28 @@ var Chunk793030 = require("./793030.js"),
   Chunk468706 = require("./468706.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function l(t) {
+function o(t) {
   let {
     channelId: i,
     messageId: n,
-    onClose: l,
+    onClose: o,
     transitionState: d
   } = t;
-  return (0, e.jsx)(a.Modal, {
+  return (0, e.jsx)(s.Modal, {
     transitionState: d,
-    onClose: l,
-    title: o.intl.string(o.t.B3vFdU),
-    subtitle: o.intl.string(o.t.i4AbAS),
+    onClose: o,
+    title: l.intl.string(l.t.B3vFdX),
+    subtitle: l.intl.string(l.t.i4AbAQ),
     actions: [{
-      text: o.intl.string(o.t.WAI6xu),
-      onClick: l
+      text: l.intl.string(l.t.WAI6xs),
+      onClick: o
     }],
-    children: (0, e.jsx)(r.Text, {
+    children: (0, e.jsx)(a.Text, {
       variant: "text-md/normal",
       color: "header-secondary",
-      children: o.intl.format(o.t.Ge0HUi, {
+      children: l.intl.format(l.t.Ge0HUl, {
         handleFalsePositiveHook: () => {
-          l(), (0, s.e)(i, n)
+          o(), (0, r.e)(i, n)
         }
       })
     })

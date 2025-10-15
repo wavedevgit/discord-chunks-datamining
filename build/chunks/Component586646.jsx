@@ -42,18 +42,18 @@ function E(e) {
       }), (0, l.jsx)(a.Text, {
         variant: "text-xs/medium",
         color: "text-feedback-positive",
-        children: h.intl.string(h.t["3BogKe"])
+        children: h.intl.string(h.t["3BogKS"])
       })]
     }), (0, l.jsx)(a.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
-      children: h.intl.string(h.t.B9JNsl)
+      children: h.intl.string(h.t.B9JNsr)
     }), (0, l.jsxs)("div", {
       className: p.header,
       children: [(0, l.jsx)(a.Heading, {
         variant: "text-sm/bold",
         color: "header-primary",
-        children: h.intl.string(h.t.cTQI5t)
+        children: h.intl.string(h.t.cTQI5u)
       }), null != E && (0, l.jsx)(f.H, {
         chunks: E,
         color: a.TVs.colors.INTERACTIVE_NORMAL.css,
@@ -66,7 +66,7 @@ function E(e) {
     }), (0, l.jsx)(a.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
-      children: h.intl.format(h.t.wKxADe, {
+      children: h.intl.format(h.t.wKxADQ, {
         helpArticle: (0, u.uV)()
       })
     })]

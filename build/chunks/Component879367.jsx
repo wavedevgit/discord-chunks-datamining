@@ -49,7 +49,7 @@ let m = function(e) {
       scrollbarType: "none",
       children: [p && (0, a.jsx)(l.Heading, {
         variant: "heading-xl/bold",
-        children: f.intl.string(f.t.tYNaXO)
+        children: f.intl.string(f.t.tYNaXF)
       }), (0, a.jsx)("iframe", {
         id: "frame",
         src: g,
@@ -59,7 +59,7 @@ let m = function(e) {
     }), (0, a.jsx)(l.mzw, {
       "data-migration-pending": true,
       children: p ? (0, a.jsx)(l.Avr, {
-        text: f.intl.string(f.t["4gTnU0"]),
+        text: f.intl.string(f.t["4gTnU1"]),
         onClick: n
       }) : (0, a.jsx)("div", {
         className: u.footer,
@@ -68,11 +68,11 @@ let m = function(e) {
           fullWidthContainer: true,
           children: [(0, a.jsx)(l.Avr, {
             variant: "secondary",
-            text: f.intl.string(f.t.fjKFae),
+            text: f.intl.string(f.t.fjKFaW),
             onClick: n
           }), (0, a.jsx)(l.Avr, {
             variant: "secondary",
-            text: f.intl.string(f.t["4gTnU0"]),
+            text: f.intl.string(f.t["4gTnU1"]),
             onClick: r
           })]
         })

@@ -21,7 +21,7 @@ class m extends Chunk474639.Z {
   showClipsToast() {
     (0, Chunk481060.showToast)({
       id: h,
-      message: Chunk388032.intl.string(Chunk388032.t["d+41qJ"]),
+      message: Chunk388032.intl.string(Chunk388032.t["d+41qK"]),
       type: Chunk481060.ToastType.CLIP,
       options: {
         duration: Chunk356659.G$

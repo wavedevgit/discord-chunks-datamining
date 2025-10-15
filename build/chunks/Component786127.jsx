@@ -38,7 +38,7 @@ let s = function(e) {
     actionsLocation: m,
     fieldStyle: p,
     children: (0, r.jsx)(i.Gi, {
-      placeholder: null != h ? h : a.intl.string(a.t["Sqn+Wh"]),
+      placeholder: null != h ? h : a.intl.string(a.t["Sqn+Wl"]),
       disabled: true
     })
   })

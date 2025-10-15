@@ -248,7 +248,7 @@ function k(e) {
   let Y = (e, t, n) => {
       n.stopPropagation(), n.preventDefault(), 2 === t ? M(e) : (1 === t || M(e), k(e))
     },
-    Q = l.useCallback(e => {
+    W = l.useCallback(e => {
       let t = _({}, g);
       I(e) ? t[e.id] = V(e.record) : L(e) && (t[e.id] = P(e.record)), G(t), N(""), z(), setTimeout(() => {
         var e;
@@ -260,7 +260,7 @@ function k(e) {
         })
       }, 16)
     }, [G, g]),
-    W = l.useCallback(e => {
+    K = l.useCallback(e => {
       let {
         section: n,
         row: l
@@ -268,15 +268,15 @@ function k(e) {
       return (0, r.jsx)(u.P3F, {
         className: o()(H.selectableSearchRow, H.rowHeight),
         onClick: e => {
-          e.stopPropagation(), Q(i)
+          e.stopPropagation(), W(i)
         },
         children: (0, r.jsx)("div", {
           className: H.rowContainer,
           children: T(i, t, H.searchRowLabel)
         })
       }, i.id)
-    }, [t, Q, F]),
-    K = l.useMemo(() => v.map(e => {
+    }, [t, W, F]),
+    Q = l.useMemo(() => v.map(e => {
       var n;
       return n = g[e], w(_({}, n.tag), {
         label: T(n.row, t, H.noIndent)
@@ -287,7 +287,7 @@ function k(e) {
     children: [(0, r.jsxs)("div", {
       className: H.searchBox,
       children: [(0, r.jsx)(d.Z, {
-        tags: K,
+        tags: Q,
         maxHeight: 98,
         size: d.Z.Sizes.MEDIUM,
         query: y,
@@ -316,7 +316,7 @@ function k(e) {
         onQueryChange: e => {
           N(e.trim().toLocaleLowerCase())
         },
-        placeholder: null != b ? b : O.intl.string(O.t.uqHLzW),
+        placeholder: null != b ? b : O.intl.string(O.t.uqHLzc),
         sections: [v.length],
         inputProps: {
           "aria-labelledby": Z,
@@ -334,7 +334,7 @@ function k(e) {
           className: H.resultsListContainer,
           innerClassName: H.resultsList,
           sections: q,
-          renderRow: W,
+          renderRow: K,
           rowHeight: 34,
           renderSection: e => {
             let {
@@ -343,12 +343,12 @@ function k(e) {
             return 0 === t ? (0, r.jsx)(u.Heading, {
               variant: "heading-sm/semibold",
               className: o()(H.sectionTitle, H.sectionHeight),
-              children: O.intl.string(O.t.OGiMXJ)
-            }, O.intl.string(O.t.OGiMXJ)) : 1 === t ? (0, r.jsx)(u.Heading, {
+              children: O.intl.string(O.t.OGiMXF)
+            }, O.intl.string(O.t.OGiMXF)) : 1 === t ? (0, r.jsx)(u.Heading, {
               variant: "heading-sm/semibold",
               className: o()(H.sectionTitle, H.sectionHeight),
-              children: O.intl.string(O.t["LPJmL/"])
-            }, O.intl.string(O.t["LPJmL/"])) : null
+              children: O.intl.string(O.t.LPJmLy)
+            }, O.intl.string(O.t.LPJmLy)) : null
           },
           renderFooter: e => {
             let {

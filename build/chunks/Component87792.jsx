@@ -35,7 +35,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk448524 = require("./448524.jsx"),
   Chunk292352 = require("./292352.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk660886 = require("./660886.js"),
+  Chunk345909 = require("./345909.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk37742 = require("./37742.js"),
   Chunk519279 = require("./519279.js");
@@ -89,7 +89,7 @@ function Z(e) {
   let {
     displayType: t
   } = e, n = (0, h.PO)("family_center_activity_card"), a = i.useCallback(() => {
-    (0, u.showToast)((0, u.createToast)(x.intl.string(L.default.Wu8BK2), u.ToastType.FAILURE))
+    (0, u.showToast)((0, u.createToast)(x.intl.string(L.default.Wu8BKy), u.ToastType.FAILURE))
   }, []), s = (0, O.Z)(), c = (0, E.ws)(t), d = (0, E.C7)(t), m = (0, E.A)(t), {
     loadMore: b,
     isMoreLoading: y
@@ -163,7 +163,7 @@ function Z(e) {
       }) : (0, r.jsx)(u.Text, {
         className: M.loadMore,
         variant: "text-sm/bold",
-        children: x.intl.format(L.default["7dMmJY"], {
+        children: x.intl.format(L.default["7dMmJS"], {
           pageSize: Math.max(1, Math.min(d - j.length, w.iB))
         })
       })
@@ -173,9 +173,9 @@ function Z(e) {
 let F = () => {
     let e = (0, Chunk880257.Z)(),
       t = (0, Chunk631885.ZM)(),
-      n = (0, Chunk785681.o)(Chunk388032.intl.formatToPlainString(Chunk660886.default["7hqFl9"], {
+      n = (0, Chunk785681.o)(Chunk388032.intl.formatToPlainString(Chunk345909.default["7hqFl5"], {
         activeLinks: exports.length
-      }), Chunk388032.intl.string(Chunk660886.default["Q/D/0Q"])),
+      }), Chunk388032.intl.string(Chunk345909.default["Q/D/0d"])),
       i = (0, Chunk546791.Qr)(!!module),
       a = (0, Chunk631885.Rd)(Chunk647438);
     return module && exports.length > 1 ? (0, Chunk951288.jsx)(Chunk481060.Text, {

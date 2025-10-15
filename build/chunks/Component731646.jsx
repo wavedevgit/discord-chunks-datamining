@@ -22,7 +22,7 @@ function u(t) {
   }, [n]), (0, r.jsx)(l.v2r, {
     onSelect: t.onSelect,
     navId: "dev-context",
-    "aria-label": null != (e = t["aria-label"]) ? e : o.intl.string(o.t.ogxXGq),
+    "aria-label": null != (e = t["aria-label"]) ? e : o.intl.string(o.t.ogxXGh),
     onClose: a.Zy,
     children: n
   })

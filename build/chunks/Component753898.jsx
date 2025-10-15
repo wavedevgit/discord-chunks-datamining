@@ -78,13 +78,13 @@ function x(e) {
       className: v.buttonContainer,
       children: [(0, i.jsx)(b.l, {
         channel: n,
-        text: _.intl.string(_.t["6Qgrev"]),
+        text: _.intl.string(_.t["6Qgren"]),
         icon: o.ejJ
       }), (0, i.jsx)(a.zxk, {
         icon: o.vdY,
         variant: "secondary",
-        text: _.intl.string(_.t["5Q9+/L"]),
-        "aria-label": _.intl.string(_.t["5Q9+/L"]),
+        text: _.intl.string(_.t["5Q9+/P"]),
+        "aria-label": _.intl.string(_.t["5Q9+/P"]),
         onClick: () => (0, g.B)(n.id, c.Z.EMPTY_GROUP_DM)
       })]
     })]

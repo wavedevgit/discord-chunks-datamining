@@ -95,16 +95,16 @@ let P = e => {
       variant: "active",
       type: "submit",
       "data-testid": "submitButton",
-      text: h.intl.string(h.t.wmcDyu)
+      text: h.intl.string(h.t.wmcDys)
     }, s);
     return null === n ? (0, r.jsx)(a.aML, {
       "data-migration-pending": true,
-      text: h.intl.string(h.t["c/rcUu"]),
+      text: h.intl.string(h.t["c/rcUl"]),
       children: e => (0, r.jsx)(i.zxk, E(x({}, e, c), {
         disabled: true
       }))
     }) : null === t || n > t ? (0, r.jsx)(a.aML, {
-      text: h.intl.string(h.t.keFvXM),
+      text: h.intl.string(h.t.keFvXF),
       children: e => (0, r.jsx)(i.zxk, E(x({}, e, c), {
         disabled: true
       }))
@@ -143,13 +143,13 @@ let P = e => {
       orbBalance: t
     } = e;
     return (0, r.jsx)(a.gNt, {
-      label: h.intl.string(h.t["mmDvV+"]),
+      label: h.intl.string(h.t.mmDvV1),
       children: (0, r.jsxs)(l.U, {
         className: v.paymentSourceItem,
         children: [(0, r.jsx)(a.Text, {
           className: v.displayFlex,
           variant: "text-md/medium",
-          children: h.intl.string(h.t.y0WGqP)
+          children: h.intl.string(h.t.y0WGqK)
         }), (0, r.jsx)(a.Text, {
           className: v.displayFlex,
           variant: "text-md/medium",
@@ -166,7 +166,7 @@ let P = e => {
     } = e;
     if (null == t) return;
     let n = "";
-    return n = t.code === c.SM.VIRTUAL_CURRENCY_INSUFFICIENT_BALANCE ? h.intl.string(h.t.keFvXM) : t.code === c.SM.ALREADY_PURCHASED ? h.intl.string(h.t.m371Mx) : h.intl.string(h.t.fqJZ11), (0, r.jsx)(a.M14, {
+    return n = t.code === c.SM.VIRTUAL_CURRENCY_INSUFFICIENT_BALANCE ? h.intl.string(h.t.keFvXF) : t.code === c.SM.ALREADY_PURCHASED ? h.intl.string(h.t.m371Mz) : h.intl.string(h.t.fqJZ19), (0, r.jsx)(a.M14, {
       type: "critical",
       children: n
     })
@@ -179,7 +179,7 @@ let P = e => {
       skuId: t,
       isOrbsPurchase: true
     }) ? (0, r.jsx)(f.Z, {
-      message: h.intl.format(h.t.fsOXXO, {})
+      message: h.intl.format(h.t.fsOXXF, {})
     }) : null
   },
   I = e => {

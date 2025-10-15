@@ -30,7 +30,7 @@ function _(e) {
           onFocus: () => h(e.id),
           onBlur: () => h(null),
           className: f.closeButton,
-          "aria-label": d.intl.formatToPlainString(d.t.BGAQRd, {
+          "aria-label": d.intl.formatToPlainString(d.t.BGAQRU, {
             name: e.name
           }),
           onClick: () => (0, c.qB)(n, _.drafts.type),

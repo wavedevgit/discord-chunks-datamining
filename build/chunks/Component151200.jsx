@@ -151,7 +151,7 @@ function S(e) {
     theme: _.BR.DARK,
     disableAdaptiveTheme: true,
     children: e => (0, r.jsxs)("figure", {
-      "aria-roledescription": p.intl.string(p.t.zFfUhF),
+      "aria-roledescription": p.intl.string(p.t.zFfUhI),
       "aria-labelledby": A,
       className: a()(h.container, e),
       style: S,

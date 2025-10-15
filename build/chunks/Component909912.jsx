@@ -23,8 +23,8 @@ function u() {
     };
   return (0, Chunk951288.jsx)(Chunk838436.U, {
     children: (0, Chunk951288.jsx)(Chunk51331.ZP, {
-      title: u ? Chunk388032.intl.string(Chunk388032.t.PMsfcH) : Chunk388032.intl.string(Chunk388032.t.RAQUSN),
-      note: u ? Chunk388032.intl.string(Chunk388032.t.XXGmuB) : Chunk388032.intl.string(Chunk388032.t.wbYDfT),
+      title: u ? Chunk388032.intl.string(Chunk388032.t.PMsfcH) : Chunk388032.intl.string(Chunk388032.t.RAQUSE),
+      note: u ? Chunk388032.intl.string(Chunk388032.t.XXGmuL) : Chunk388032.intl.string(Chunk388032.t.wbYDfX),
       value: !exports,
       onChange: d
     })

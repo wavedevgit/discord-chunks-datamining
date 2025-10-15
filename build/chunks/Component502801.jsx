@@ -36,7 +36,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk138715 = require("./138715.js"),
   Chunk979770 = require("./979770.js");
 
-function T(e) {
+function A(e) {
   let {
     channel: t,
     ChannelIcon: n,
@@ -62,12 +62,12 @@ function T(e) {
   })
 }
 
-function A(e) {
+function B(e) {
   let {
     guildId: t,
     selectedChannelId: n,
     onSelectChannelId: a
-  } = e, d = (0, s.e7)([S.Z], () => S.Z.getChannelId()), {
+  } = e, d = (0, s.e7)([Z.Z], () => Z.Z.getChannelId()), {
     guildChannels: o
   } = (0, s.cj)([f.Z], () => f.Z.getGuildWithoutChangingGuildActionRows(t)), u = l.useMemo(() => {
     let e = [];
@@ -82,7 +82,7 @@ function A(e) {
       variant: "eyebrow",
       color: "interactive-normal",
       className: k.contentPadding,
-      children: R.intl.string(R.t.SOtDeZ)
+      children: R.intl.string(R.t.SOtDeX)
     }), (0, i.jsx)(c.aVo, {
       sections: [u.length],
       sectionHeight: 0,
@@ -94,7 +94,7 @@ function A(e) {
         if (t > 0) return null;
         let r = u[l],
           s = (0, _.KS)(r);
-        return null == s ? null : (0, i.jsx)(T, {
+        return null == s ? null : (0, i.jsx)(A, {
           channel: r,
           ChannelIcon: s,
           selected: n === r.id,
@@ -109,7 +109,7 @@ function A(e) {
   })
 }
 
-function B(e) {
+function H(e) {
   let {
     friends: t,
     searchQuery: n,
@@ -122,10 +122,10 @@ function B(e) {
     children: [(0, i.jsx)(c.oxh, {
       width: 415,
       height: 75,
-      lightSrc: H,
+      lightSrc: T,
       darkSrc: D
     }), (0, i.jsx)(c.OZU, {
-      note: R.intl.string(R.t["+Zg0lW"])
+      note: R.intl.string(R.t["+Zg0lZ"])
     })]
   }) : (0, i.jsx)(c.aVo, {
     sections: [u.length],
@@ -155,7 +155,7 @@ function B(e) {
           color: o.Tt.BRAND,
           children: (0, i.jsx)(c.Text, {
             variant: "text-sm/medium",
-            children: R.intl.string(R.t.RDE0Sc)
+            children: R.intl.string(R.t.RDE0SU)
           })
         })]
       }, l.id)
@@ -173,10 +173,10 @@ function E(e) {
     editMetadata: n,
     transitionState: a,
     onClose: o
-  } = e, [h, g] = l.useState(""), [_, f] = l.useState(false), [j, p] = l.useState(null), S = (0, s.Wu)([C.Z], () => C.Z.getFriendIDs()), y = (0, s.Wu)([b.Z, w.default], () => S.map(e => w.default.getUser(e)).filter(I.lm).sort((e, t) => {
+  } = e, [h, g] = l.useState(""), [_, f] = l.useState(false), [j, p] = l.useState(null), Z = (0, s.Wu)([C.Z], () => C.Z.getFriendIDs()), y = (0, s.Wu)([b.Z, w.default], () => Z.map(e => w.default.getUser(e)).filter(I.lm).sort((e, t) => {
     var n, i, l, a;
     return (null != (l = null == (n = b.Z.getUserAffinity(t.id)) ? true : n.communicationProbability) ? l : 0) - (null != (a = null == (i = b.Z.getUserAffinity(e.id)) ? true : i.communicationProbability) ? a : 0)
-  }), [S]), N = (0, s.e7)([Z.Z], () => Z.Z.getGuildId()), {
+  }), [Z]), N = (0, s.e7)([S.Z], () => S.Z.getGuildId()), {
     analyticsLocations: L
   } = (0, x.ZP)(m.Z.CLIPS_SHARE_MODAL);
   async function D(e) {
@@ -194,7 +194,7 @@ function E(e) {
       }
     }
   }
-  async function H(e) {
+  async function T(e) {
     let t = await u.Z.openPrivateChannel({
       recipientIds: e
     });
@@ -208,12 +208,12 @@ function E(e) {
       className: r()(k.title, k.contentPadding),
       variant: "heading-lg/semibold",
       color: "interactive-active",
-      children: R.intl.string(R.t["6EcIlH"])
+      children: R.intl.string(R.t["6EcIlJ"])
     }), (0, i.jsx)(c.Text, {
       variant: "text-md/normal",
       color: "text-default",
       className: r()(k.subtitle, k.contentPadding),
-      children: R.intl.string(R.t.Ey7mOU)
+      children: R.intl.string(R.t.Ey7mOT)
     }), (0, i.jsx)("div", {
       className: k.searchBar,
       children: (0, i.jsx)(c.E1j, {
@@ -222,16 +222,16 @@ function E(e) {
         onClear: function() {
           g("")
         },
-        placeholder: R.intl.string(R.t.CmSHYx)
+        placeholder: R.intl.string(R.t.CmSHY2)
       })
     }), (0, i.jsx)("div", {
       className: r()(k.divider, k.topDivider)
-    }), (0, i.jsx)(B, {
+    }), (0, i.jsx)(H, {
       searchQuery: h,
       friends: y,
-      onShareClip: H,
+      onShareClip: T,
       disabled: _
-    }), null != N && (0, i.jsx)(A, {
+    }), null != N && (0, i.jsx)(B, {
       guildId: N,
       selectedChannelId: j,
       onSelectChannelId: p
@@ -240,13 +240,13 @@ function E(e) {
         direction: "horizontal-reverse",
         children: [(0, i.jsx)(c.Button, {
           variant: "primary",
-          text: R.intl.string(R.t.I8lglT),
+          text: R.intl.string(R.t.I8lglZ),
           disabled: null == j,
           loading: _,
           onClick: () => D()
         }), (0, i.jsx)(c.Button, {
           variant: "secondary",
-          text: R.intl.string(R.t["13/7kX"]),
+          text: R.intl.string(R.t["13/7kZ"]),
           loading: _,
           onClick: o
         })]

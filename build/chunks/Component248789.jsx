@@ -132,15 +132,15 @@ function C(e) {
     warningId: C,
     senderId: y,
     warningType: d.pj.INAPPROPRIATE_CONVERSATION_TIER_2,
-    header: m.intl.string(m.t.ZzlB5p),
-    description: m.intl.string(m.t["D1aU+h"]),
+    header: m.intl.string(m.t.ZzlB5u),
+    description: m.intl.string(m.t["D1aU+v"]),
     onDismiss: _,
     buttons: [{
-      text: m.intl.string(m.t.Qyu4UK),
+      text: m.intl.string(m.t.Qyu4UF),
       variant: "primary",
       onClick: j
     }, ...v ? [] : [{
-      text: m.intl.string(m.t["7q0bNY"]),
+      text: m.intl.string(m.t["7q0bNT"]),
       variant: "secondary",
       onClick: P
     }]]

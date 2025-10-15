@@ -368,7 +368,7 @@ class Q extends H {
           })]
         })
       }), exports ? null : (0, Chunk951288.jsx)(Chunk965386.dY, {
-        children: Chunk388032.intl.string(Chunk388032.t["/91tbr"])
+        children: Chunk388032.intl.string(Chunk388032.t["/91tbm"])
       })]
     })
   }
@@ -494,7 +494,7 @@ class en extends H {
         children: [(0, Chunk951288.jsx)(Chunk965386.BR, {
           children: s.name
         }), null != r && (0, Chunk951288.jsx)(Chunk965386.wL, {
-          children: Chunk388032.intl.format(Chunk388032.t.PAutaQ, {
+          children: Chunk388032.intl.format(Chunk388032.t.PAutaW, {
             queryMatch: r
           })
         })]

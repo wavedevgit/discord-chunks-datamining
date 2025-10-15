@@ -63,7 +63,7 @@ class A extends Chunk647438.PureComponent {
     let u = Chunk907862.isManaged(),
       h = null,
       p = false;
-    return Chunk287734 ? (p = true, h = Chunk388032.intl.string(Chunk388032.t.izMR7o), e = Chunk481060.aML.Colors.RED) : Chunk131951.Z.supports(Chunk65154.AN.VIDEO) ? Chunk704215 ? (h = Chunk388032.intl.string(Chunk388032.t.PHzjvX), e = Chunk481060.aML.Colors.RED, p = true) : Chunk647438 && Chunk26151 === Chunk981631.WtW.VIDEO ? (t = this.handleJoinVideoCall, h = Chunk607070 ? Chunk388032.intl.string(Chunk388032.t.S0W8Z5) : Chunk388032.intl.string(Chunk388032.t.W68MhH)) : (t = this.handleStartVideoCall, h = Chunk607070 ? Chunk388032.intl.string(Chunk388032.t.S0W8Z5) : Chunk388032.intl.string(Chunk388032.t.oCqlGG)) : (p = true, t = this.handleBrowserNotSupported, h = Chunk388032.intl.string(Chunk388032.t.UVpg3U)), (0, Chunk951288.jsx)(Chunk665149.ZP.Icon, {
+    return Chunk287734 ? (p = true, h = Chunk388032.intl.string(Chunk388032.t.izMR7u), e = Chunk481060.aML.Colors.RED) : Chunk131951.Z.supports(Chunk65154.AN.VIDEO) ? Chunk704215 ? (h = Chunk388032.intl.string(Chunk388032.t.PHzjvb), e = Chunk481060.aML.Colors.RED, p = true) : Chunk647438 && Chunk26151 === Chunk981631.WtW.VIDEO ? (t = this.handleJoinVideoCall, h = Chunk607070 ? Chunk388032.intl.string(Chunk388032.t.S0W8Z2) : Chunk388032.intl.string(Chunk388032.t.W68MhI)) : (t = this.handleStartVideoCall, h = Chunk607070 ? Chunk388032.intl.string(Chunk388032.t.S0W8Z2) : Chunk388032.intl.string(Chunk388032.t.oCqlGB)) : (p = true, t = this.handleBrowserNotSupported, h = Chunk388032.intl.string(Chunk388032.t.UVpg3d)), (0, Chunk951288.jsx)(Chunk665149.ZP.Icon, {
       icon: Chunk481060.Odl,
       onClick: exports,
       disabled: Chunk358221 || Chunk442837,
@@ -84,7 +84,7 @@ class A extends Chunk647438.PureComponent {
     if (require) return null;
     let p = Chunk287734.isManaged(),
       f = false;
-    Chunk451576 ? (f = true, e = Chunk388032.intl.string(Chunk388032.t.izMR7o), t = Chunk481060.aML.Colors.RED) : Chunk442837 ? (e = Chunk358221 ? Chunk388032.intl.string(Chunk388032.t.LW2Ghr) : Chunk388032.intl.string(Chunk388032.t.rF7lN5), t = Chunk481060.aML.Colors.RED, f = true) : Chunk26151 ? (e = Chunk388032.intl.string(Chunk388032.t.PHzjvX), t = Chunk481060.aML.Colors.RED, f = true) : e = Chunk647438 ? Chunk358221 ? Chunk388032.intl.string(Chunk388032.t.S0W8Z5) : Chunk388032.intl.string(Chunk388032.t.fdEeb5) : Chunk358221 ? Chunk388032.intl.string(Chunk388032.t.S0W8Z5) : Chunk388032.intl.string(Chunk388032.t.focH1t);
+    Chunk451576 ? (f = true, e = Chunk388032.intl.string(Chunk388032.t.izMR7u), t = Chunk481060.aML.Colors.RED) : Chunk442837 ? (e = Chunk358221 ? Chunk388032.intl.string(Chunk388032.t.LW2Gho) : Chunk388032.intl.string(Chunk388032.t.rF7lNz), t = Chunk481060.aML.Colors.RED, f = true) : Chunk26151 ? (e = Chunk388032.intl.string(Chunk388032.t.PHzjvb), t = Chunk481060.aML.Colors.RED, f = true) : e = Chunk647438 ? Chunk358221 ? Chunk388032.intl.string(Chunk388032.t.S0W8Z2) : Chunk388032.intl.string(Chunk388032.t.fdEeb2) : Chunk358221 ? Chunk388032.intl.string(Chunk388032.t.S0W8Z2) : Chunk388032.intl.string(Chunk388032.t.focH1t);
     let m = (0, Chunk951288.jsx)(Chunk665149.ZP.Icon, {
       ref: this.iconRef,
       icon: Chunk481060.Csw,
@@ -103,16 +103,16 @@ class A extends Chunk647438.PureComponent {
           } = e;
           return t === a.z.ACTIVITY_GDM_CALL_TOOLTIP ? (0, r.jsx)(s.J2, {
             targetElementRef: this.iconRef,
-            title: R.intl.string(R.t.HOPqzR),
-            body: R.intl.format(R.t.xAW71b, {
-              helpdeskUrl: P.sI
+            title: R.intl.string(R.t.HOPqzc),
+            body: R.intl.format(R.t.xAW71d, {
+              helpdeskUrl: T.sI
             }),
             position: "bottom",
             align: "center",
             caretConfig: {
               align: "center"
             },
-            onRequestClose: () => n(T.L.USER_DISMISS)
+            onRequestClose: () => n(P.L.USER_DISMISS)
           }) : null
         }
       })]
@@ -140,7 +140,7 @@ class A extends Chunk647438.PureComponent {
         dismissibleContentTypes: r
       } = this.props;
       if (r.includes(a.z.ACTIVITY_GDM_CALL_TOOLTIP) && (0, f.Q3)(a.z.ACTIVITY_GDM_CALL_TOOLTIP, {
-          dismissAction: T.L.AUTO
+          dismissAction: P.L.AUTO
         }), t);
       else if (n) return this.handleJoinCall(false);
       else return this.handleStartCall(e, false)
@@ -173,8 +173,8 @@ function D(e) {
   } = (0, l.cj)([v.Z], () => ({
     notFriend: n.type === Z.d4z.DM && null != g && !v.Z.isFriend(g),
     isBlocked: n.type === Z.d4z.DM && null != g && v.Z.isBlocked(g)
-  })), x = (0, l.e7)([C.default], () => C.default.getUser(g)), S = (0, b.bp)(), E = [], P = (0, h.Z)(n.id), T = (0, l.e7)([O.Z], () => O.Z.hasLayers());
-  return (P && !T && E.push(a.z.ACTIVITY_GDM_CALL_TOOLTIP), i || (null == x ? true : x.bot)) ? null : (0, r.jsx)(A, {
+  })), x = (0, l.e7)([C.default], () => C.default.getUser(g)), S = (0, b.bp)(), E = [], T = (0, h.Z)(n.id), P = (0, l.e7)([O.Z], () => O.Z.hasLayers());
+  return (T && !P && E.push(a.z.ACTIVITY_GDM_CALL_TOOLTIP), i || (null == x ? true : x.bot)) ? null : (0, r.jsx)(A, {
     channel: n,
     mode: s,
     inCall: o,

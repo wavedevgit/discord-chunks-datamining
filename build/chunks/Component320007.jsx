@@ -84,7 +84,7 @@ function _(e) {
         className: _,
         icon: a.AlX,
         showBadge: y,
-        tooltip: b.intl.string(b.t.MXaLEM),
+        tooltip: b.intl.string(b.t.MXaLEB),
         onClick: Z
       })
     })]

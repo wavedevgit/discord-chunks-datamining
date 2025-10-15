@@ -38,7 +38,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk987889 = require("./987889.jsx"),
   Chunk586694 = require("./586694.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk943910 = require("./943910.js"),
+  Chunk677642 = require("./677642.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk361584 = require("./361584.js");
 
@@ -61,7 +61,7 @@ function B(e) {
   return e
 }
 
-function F(e, t) {
+function V(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -74,7 +74,7 @@ function F(e, t) {
   }), e
 }
 
-function V(e) {
+function F(e) {
   let {
     message: t,
     channel: n,
@@ -112,7 +112,7 @@ function V(e) {
   });
   return (0, i.useEffect)(() => {
     null != b && N.Z.requestMember(b.id, t.author.id)
-  }, [b, t.author.id]), (0, r.jsx)(u.tEY, F(B({}, l), {
+  }, [b, t.author.id]), (0, r.jsx)(u.tEY, V(B({}, l), {
     children: (0, r.jsxs)("div", {
       onMouseLeave: C.onMouseLeave,
       onMouseEnter: C.onMouseEnter,
@@ -248,7 +248,7 @@ function H(e) {
     }), (0, r.jsx)(u.Text, {
       variant: "text-sm/medium",
       className: U.overflowText,
-      children: G.intl.formatToPlainString(k.default.NzUuLD, {
+      children: G.intl.formatToPlainString(k.default.NzUuLC, {
         count: t.length
       })
     })]
@@ -311,15 +311,15 @@ function W(e) {
       let y = true,
         v = null;
       if (e)
-        if (c) v = G.intl.string(G.t["9ddYKt"]);
+        if (c) v = G.intl.string(G.t["9ddYKi"]);
         else if (p) {
         var j;
         y = false, v = null == (j = t.poll) ? true : j.question.text
-      } else v = h ? G.intl.string(G.t.sad2PH) : i ? G.intl.string(G.t.p0oZmy) : s > 1 ? G.intl.formatToPlainString(G.t.rtfTKp, {
+      } else v = h ? G.intl.string(G.t.sad2PD) : i ? G.intl.string(G.t.p0oZm5) : s > 1 ? G.intl.formatToPlainString(G.t.rtfTKi, {
         count: s
-      }) : 1 === s ? G.intl.string(G.t.tCcq5p) : d ? G.intl.format(G.t.zY4v1B, {
+      }) : 1 === s ? G.intl.string(G.t.tCcq5u) : d ? G.intl.format(G.t.zY4v1N, {
         stickerName: t.stickerItems[0].name
-      }) : f ? G.intl.string(G.t.slFYgi) : g ? G.intl.string(G.t.Yvvfw9) : G.intl.string(G.t.sDqZHL);
+      }) : f ? G.intl.string(G.t.slFYgo) : g ? G.intl.string(G.t.Yvvfw8) : G.intl.string(G.t.sDqZHB);
       else y = false, v = (0, r.jsx)(O.ZP, {
         content: a,
         message: t,
@@ -378,7 +378,7 @@ let K = (0, Chunk647438.memo)(function(e) {
       id: l.channelId,
       guild_id: l.guildId,
       type: M.d4z.UNKNOWN,
-      name: G.intl.string(G.t.J90oLW)
+      name: G.intl.string(G.t.J90oLS)
     })
   }), b = (0, R.z)(e => {
     var t;
@@ -412,14 +412,14 @@ let K = (0, Chunk647438.memo)(function(e) {
         let {
           default: e
         } = await n.e("74922").then(n.bind(n, 550265));
-        return t => (0, r.jsx)(e, F(B({}, t), {
+        return t => (0, r.jsx)(e, V(B({}, t), {
           channel: m
         }))
       }, {
         disableClickTrap: true
       })
     },
-    children: (0, r.jsx)(V, {
+    children: (0, r.jsx)(F, {
       message: h,
       channel: m,
       isSelected: h.id === g.messageId,

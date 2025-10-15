@@ -22,18 +22,18 @@ function c(e) {
     nameplatePreview: d
   } = e, f = () => null != d ? (0, r.jsxs)("div", {
     children: [(0, r.jsx)(o.Z, {
-      title: null != u ? u : s.intl.string(s.t.Zb06yP),
+      title: null != u ? u : s.intl.string(s.t.Zb06yM),
       hideDivider: true,
       className: l.preview,
       children: c
     }), null != d ? (0, r.jsx)(o.Z, {
-      title: s.intl.string(s.t["7KRt6R"]),
+      title: s.intl.string(s.t["7KRt6e"]),
       className: l.preview,
       hideDivider: true,
       children: d
     }) : null]
   }) : (0, r.jsx)(o.Z, {
-    title: null != u ? u : s.intl.string(s.t.Zb06yP),
+    title: null != u ? u : s.intl.string(s.t.Zb06yM),
     hideDivider: true,
     className: l.preview,
     children: c

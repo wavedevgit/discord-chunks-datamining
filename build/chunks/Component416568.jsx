@@ -208,7 +208,7 @@ function es(e) {
   } = e, [a] = (0, p.Wu)([R.ZP], () => {
     let e = R.ZP.getGuildsTree();
     return [e, e.version]
-  }), s = a.getRoots(), c = (0, p.Wu)([w.Z], () => w.Z.getGeoRestrictedGuilds()).map(e => (0, r.jsx)(V.Z, {
+  }), s = a.getRoots(), c = (0, p.Wu)([w.Z], () => w.Z.getGeoRestrictedGuilds()).map(e => (0, r.jsx)(F.Z, {
     id: e.id,
     name: e.name,
     icon: e.icon
@@ -216,10 +216,10 @@ function es(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(m.Kqy, {
       role: "group",
-      "aria-label": ee.intl.string(ee.t["7hB4kg"]),
+      "aria-label": ee.intl.string(ee.t["7hB4kp"]),
       gap: "xs",
       children: s.map((e, t) => l(e, t, s.length))
-    }), c, (0, r.jsx)(Y.Z, {}), i ? null : (0, r.jsx)(F.Z, {
+    }), c, (0, r.jsx)(Y.Z, {}), i ? null : (0, r.jsx)(V.Z, {
       disableTooltip: o.length > 0,
       lastTargetNode: s[s.length - 1]
     }), i ? null : t, n ? null : (0, r.jsx)(B.Z, {})]
@@ -240,8 +240,8 @@ function ec(e) {
     startSorting: C,
     stopSorting: E
   } = (0, L.Z)(), w = i.useRef(false), [T] = i.useState(() => new f.V7), A = i.useRef(null), U = i.useRef(null), B = (0, u.OP)(), {
-    ref: F
-  } = B, V = function(e, t) {
+    ref: V
+  } = B, F = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -369,8 +369,8 @@ function ec(e) {
             className: et.unreadMentionsIndicatorTop,
             barClassName: et.unreadMentionsBar
           }), (0, r.jsx)("ul", (i = er({
-            ref: F
-          }, V, z), a = a = {
+            ref: V
+          }, F, z), a = a = {
             role: "tree",
             className: et.tree,
             children: (0, r.jsxs)("div", {

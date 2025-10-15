@@ -32,17 +32,17 @@ let c = (e, t) => {
         className: d.username,
         children: l.ZP.getName(n, r, e)
       });
-    return t >= 4 ? o.intl.format(o.t.qfo6KR, {
+    return t >= 4 ? o.intl.format(o.t.qfo6KS, {
       usernameHook1: () => u(c[0]),
       usernameHook2: () => u(c[1]),
       numberOfOtherUsers: t - e.length
-    }) : 3 === t ? o.intl.format(o.t["67ZE+9"], {
+    }) : 3 === t ? o.intl.format(o.t["67ZE+/"], {
       usernameHook1: () => u(c[0]),
       usernameHook2: () => u(c[1])
-    }) : 2 === t ? o.intl.format(o.t.veV4IN, {
+    }) : 2 === t ? o.intl.format(o.t.veV4IC, {
       usernameHook1: () => u(c[0]),
       usernameHook2: () => u(c[1])
-    }) : o.intl.format(o.t["4WHCtq"], {
+    }) : o.intl.format(o.t["4WHCtr"], {
       usernameHook: () => u(c[0])
     })
   }

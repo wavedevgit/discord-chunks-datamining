@@ -133,7 +133,7 @@ class N extends Chunk647438.PureComponent {
     } = this.props, {
       isMicTesting: b,
       volume: y
-    } = this.state, O = module && !Chunk19780 ? Chunk388032.intl.string(Chunk388032.t["9viE2A"]) : null;
+    } = this.state, O = module && !Chunk19780 ? Chunk388032.intl.string(Chunk388032.t["9viE2N"]) : null;
     Chunk19780 && module && !Chunk46973 && this._micTestStop();
     let T = Chunk392711.length >= Chunk120356.length ? Chunk392711 : Chunk120356;
     return (0, Chunk951288.jsx)("div", {

@@ -15,10 +15,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk51144 = require("./51144.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk833540 = require("./833540.js"),
+  Chunk764295 = require("./764295.js"),
   Chunk541770 = require("./541770.js");
 
-function O(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -56,7 +56,7 @@ function m(e) {
     user: n,
     location: m,
     modReportId: y
-  } = e, v = function(e, t) {
+  } = e, j = function(e, t) {
     if (null == e) return {};
     var n, r, l = function(e, t) {
       if (null == e) return {};
@@ -71,76 +71,76 @@ function m(e) {
     }
     return l
   }(e, ["guildId", "user", "location", "modReportId"]);
-  let [h, j] = l.useState(""), [C, M] = l.useState(false), A = (0, u.sE)(t, {
+  let [v, h] = l.useState(""), [M, C] = l.useState(false), A = (0, u.sE)(t, {
     location: m,
     targetUserId: n.id
   }), {
-    isModReportClosed: T,
-    isModReport: S
+    isModReportClosed: S,
+    isModReport: P
   } = (0, o.cj)([d.Z], () => {
     let e = d.Z.getChannel(y);
     return {
       isModReportClosed: null == e ? true : e.isArchivedThread(),
       isModReport: null == e ? true : e.isModeratorReportChannel()
     }
-  }), I = l.useCallback(() => {
-    if (c.Z.kickUser(t, n.id, h, y).then(() => {
-        C && null != y && s.Z.resolveFlag(y)
+  }), T = l.useCallback(() => {
+    if (c.Z.kickUser(t, n.id, v, y).then(() => {
+        M && null != y && s.Z.resolveFlag(y)
       }), A(u.jQ.KICK), null != y) {
       var e;
-      null == (e = v.onClose) || e.call(v)
+      null == (e = j.onClose) || e.call(j)
     }
-  }, [t, n.id, h, A, y, C, v]), P = l.useCallback(e => {
-    j(e)
+  }, [t, n.id, v, A, y, M, j]), I = l.useCallback(e => {
+    h(e)
   }, []);
-  return null != y && S ? (0, r.jsx)(i.Modal, E(O({}, v), {
-    title: g.intl.formatToPlainString(g.t["1Ie87p"], {
+  return null != y && P ? (0, r.jsx)(i.Modal, E(p({}, j), {
+    title: g.intl.formatToPlainString(g.t["1Ie87u"], {
       user: n.username
     }),
-    subtitle: g.intl.format(g.t["/yH0UT"], {
+    subtitle: g.intl.format(g.t["/yH0UV"], {
       user: "@".concat(f.ZP.getName(n))
     }),
     actions: [{
-      text: g.intl.string(g.t["3glT6Z"]),
-      onClick: I,
+      text: g.intl.string(g.t["3glT6e"]),
+      onClick: T,
       size: "sm",
       variant: "critical-primary"
     }],
-    actionBarInput: T ? true : (0, r.jsx)(a.Checkbox, {
-      checked: C,
+    actionBarInput: S ? true : (0, r.jsx)(a.Checkbox, {
+      checked: M,
       onChange: e => {
-        M(e)
+        C(e)
       },
-      label: g.intl.string(b.default["8yIKem"])
+      label: g.intl.string(b.default["8yIKen"])
     }),
     children: (0, r.jsx)(a.Kx8, {
-      label: g.intl.string(null != y ? g.t.hmKy8E : g.t["+2QEPt"]),
+      label: g.intl.string(null != y ? g.t.hmKy8P : g.t["+2QEPj"]),
       maxLength: _.GNZ,
-      onChange: P,
-      value: h,
+      onChange: I,
+      value: v,
       rows: 2
     })
-  })) : (0, r.jsxs)(a.ConfirmModal, E(O({
-    header: g.intl.formatToPlainString(g.t["1Ie87p"], {
+  })) : (0, r.jsxs)(a.ConfirmModal, E(p({
+    header: g.intl.formatToPlainString(g.t["1Ie87u"], {
       user: n.username
     }),
-    confirmText: g.intl.string(g.t["3glT6Z"]),
-    cancelText: g.intl.string(g.t["ETE/oC"]),
-    onConfirm: I
-  }, v), {
+    confirmText: g.intl.string(g.t["3glT6e"]),
+    cancelText: g.intl.string(g.t["ETE/oK"]),
+    onConfirm: T
+  }, j), {
     children: [(0, r.jsx)(a.Text, {
       variant: "text-md/normal",
-      className: p.spacing,
-      children: g.intl.format(g.t["/yH0UT"], {
+      className: O.spacing,
+      children: g.intl.format(g.t["/yH0UV"], {
         user: "@".concat(f.ZP.getName(n))
       })
     }), (0, r.jsx)("div", {
-      className: p.spacing,
+      className: O.spacing,
       children: (0, r.jsx)(a.Kx8, {
-        label: g.intl.string(g.t["+2QEPt"]),
+        label: g.intl.string(g.t["+2QEPj"]),
         maxLength: _.GNZ,
-        onChange: P,
-        value: h,
+        onChange: I,
+        value: v,
         rows: 2
       })
     })]
