@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
 let [j, x] = (0, Chunk975104.Z)();
 
 function y(e) {
-  var t, n, u, x, y, O, h;
+  var t, n, c, x, y, O, h;
   let {
     guildId: P,
     initialGameServerInstance: S,
@@ -36,7 +36,7 @@ function y(e) {
     (0, g.ce)(P), (0, m.BN)(P, true), null == S && (0, g.mF)(P)
   }, [P, S]);
   let Z = (0, i.e7)([f.Z], () => f.Z.getStateForGuild(P)),
-    _ = (0, i.e7)([c.Z], () => c.Z.getGuild(P)),
+    _ = (0, i.e7)([u.Z], () => u.Z.getGuild(P)),
     {
       analyticsLocations: T
     } = (0, r.ZP)(N),
@@ -53,23 +53,23 @@ function y(e) {
   let [J, z] = a.useState(true), H = a.useMemo(() => {
     var e;
     if (null != G) return Object.values(null != (e = null == Z ? true : Z.catalog) ? e : {}).find(e => e.id === G)
-  }, [null == Z ? true : Z.catalog, G]), [A, K] = a.useState(S), [R, M] = a.useState(null != (u = null == k || null == (t = k.plans[0]) ? true : t.id) ? u : null == S ? true : S.planId), U = function(e, t, n, l) {
-    var a, r, s, o, c, u, d, m;
+  }, [null == Z ? true : Z.catalog, G]), [A, K] = a.useState(S), [R, M] = a.useState(null != (c = null == k || null == (t = k.plans[0]) ? true : t.id) ? c : null == S ? true : S.planId), U = function(e, t, n, l) {
+    var a, r, s, o, u, c, d, m;
     let v = (0, i.e7)([f.Z], () => {
         var t;
         return null == (t = f.Z.getStateForGuild(e)) ? true : t.entitlements
       }),
       g = null != (d = null == t || null == (a = t.plans.find(e => e.id === n)) ? true : a.cost) ? d : 0;
-    return null == l ? g : g - (null != (m = null == v || null == (u = v[l.entitlementId]) || null == (c = u.sku) || null == (o = c.tenant_metadata) || null == (s = o.guild_monetization) || null == (r = s.game_server) ? true : r.boost_price) ? m : 0)
-  }(P, H, R, A), X = a.useCallback((e, t) => {
-    var n;
-    F(null == e ? true : e.id), M(null != t ? t : null == e || null == (n = e.plans[0]) ? true : n.id)
-  }, []), Y = a.useCallback(e => {
-    var t, n, l;
+    return null == l ? g : g - (null != (m = null == v || null == (c = v[l.entitlementId]) || null == (u = c.sku) || null == (o = u.tenant_metadata) || null == (s = o.guild_monetization) || null == (r = s.game_server) ? true : r.boost_price) ? m : 0)
+  }(P, H, R, A), X = a.useCallback(e => {
+    var t, n, l, a, i, r;
     K(e);
-    let a = null == Z || null == (l = Z.entitlements) || null == (n = l[e.entitlementId]) || null == (t = n.sku) ? true : t.product_id;
-    null != a && F(a), M(e.planId), Q(e.name), ee(e.regionId)
-  }, [null == Z ? true : Z.entitlements]), [q, W] = a.useState(), [$, Q] = a.useState(null != (x = null == S ? true : S.name) ? x : ""), [V, ee] = a.useState(null != (y = null == S ? true : S.regionId) ? y : ""), [et, en] = a.useState(false), el = a.useCallback(() => {
+    let s = null == Z || null == (l = Z.entitlements) || null == (n = l[null != (a = null == e ? true : e.entitlementId) ? a : ""]) || null == (t = n.sku) ? true : t.product_id;
+    null != s && F(s), M(null == e ? true : e.planId), Q(null != (i = null == e ? true : e.name) ? i : ""), ee(null != (r = null == e ? true : e.regionId) ? r : "")
+  }, [null == Z ? true : Z.entitlements]), Y = a.useCallback((e, t) => {
+    var n;
+    X(true), F(null == e ? true : e.id), M(null != t ? t : null == e || null == (n = e.plans[0]) ? true : n.id)
+  }, [X]), [q, W] = a.useState(), [$, Q] = a.useState(null != (x = null == S ? true : S.name) ? x : ""), [V, ee] = a.useState(null != (y = null == S ? true : S.regionId) ? y : ""), [et, en] = a.useState(false), el = a.useCallback(() => {
     if (z(true), null == _ || null == H || "" === $ || "" === V || null == R) return;
     let e = () => {
       en(true);
@@ -126,9 +126,9 @@ function y(e) {
       gameServerGames: null != (O = null == Z ? true : Z.catalog) ? O : {},
       instances: Object.values(null != (h = null == Z ? true : Z.instances) ? h : {}),
       currentGame: H,
-      setCurrentGame: X,
+      setCurrentGame: Y,
       gameServerInstance: A,
-      setGameServerInstance: Y,
+      setGameServerInstance: X,
       name: $,
       setName: Q,
       regionId: V,
