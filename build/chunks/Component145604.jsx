@@ -95,7 +95,7 @@ async function et(e) {
     distributor: C,
     rawExePath: S
   } = (0, O.G8)(a), P = (0, j.NW)("ChatAutoAnalytics", false), Z = d.enabledLegacy || P && d.enabledOOP, L = T.v.legacyEnabled || P && T.v.oopEnabled, R = d.source;
-  K.default.track(J.rMx.LAUNCH_GAME, {
+  q.default.track(J.rMx.LAUNCH_GAME, {
     game: v,
     game_id: y,
     verified: null != o && (0, O.vp)(S, null == o ? true : o.executables),
@@ -145,7 +145,7 @@ class en extends Chunk647438.PureComponent {
         n = null != t ? t.name : "",
         r = Z.Z.getStageInstanceByChannel(e.voiceChannelId),
         i = I.ZP.getActiveEventByChannel(e.voiceChannelId);
-      K.default.track(J.rMx.LEAVE_VOICE_CHANNEL, ee({
+      q.default.track(J.rMx.LEAVE_VOICE_CHANNEL, ee({
         channel_id: e.voiceChannelId,
         channel_type: e.voiceChannelType,
         channel_bitrate: e.voiceChannelBitrate,
@@ -169,8 +169,8 @@ class en extends Chunk647438.PureComponent {
         channelId: o
       });
       let i = null,
-        l = q.default.getFocusedPID();
-      null != l && P.default.getOverlayMethod(l) !== N.gl.Disabled && (q.default.isInstanceLocked() ? i = J.ADE.OVERLAY_LOCKED_ACTIVATED : q.default.isInstanceLocked() || (i = q.default.isPinned(J.Odu.TEXT) ? J.ADE.OVERLAY_UNLOCKED_PINNED : J.ADE.OVERLAY_UNLOCKED)), K.default.track(J.rMx.JOIN_VOICE_CHANNEL, ee({
+        l = K.default.getFocusedPID();
+      null != l && P.default.getOverlayMethod(l) !== N.gl.Disabled && (K.default.isInstanceLocked() ? i = J.ADE.OVERLAY_LOCKED_ACTIVATED : K.default.isInstanceLocked() || (i = K.default.isPinned(J.Odu.TEXT) ? J.ADE.OVERLAY_UNLOCKED_PINNED : J.ADE.OVERLAY_UNLOCKED)), q.default.track(J.rMx.JOIN_VOICE_CHANNEL, ee({
         location: i,
         channel_id: o,
         channel_type: u,
@@ -223,7 +223,7 @@ class en extends Chunk647438.PureComponent {
       let e = "none",
         t = [g ? "screen" : null, f ? "camera" : null].filter(X.lm),
         n = null;
-      g ? (e = "screen", n = (0, m.t)()) : f && (e = "camera"), K.default.track(J.rMx.VIDEO_INPUT_TOGGLED, ee({
+      g ? (e = "screen", n = (0, m.t)()) : f && (e = "camera"), q.default.track(J.rMx.VIDEO_INPUT_TOGGLED, ee({
         video_input_type: e,
         video_toggle_source: __OVERLAY__ ? "overlay" : "app",
         enabled_inputs: t,
@@ -240,7 +240,7 @@ class en extends Chunk647438.PureComponent {
             var t;
             return (0, Q.yE)(e.flags, J.iLy.IS_CROSSPOST) && (null == (t = e.messageReference) ? true : t.guild_id) === "667560445975986187"
           });
-        K.default.track(J.rMx.ACK_COMMUNITY_MESSAGES, ee({
+        q.default.track(J.rMx.ACK_COMMUNITY_MESSAGES, ee({
           last_message_id: null == i ? true : i.id,
           last_message_reference_message_id: null == i || null == (a = i.messageReference) ? true : a.message_id,
           messages_loaded: e.hasFetched
@@ -299,7 +299,7 @@ function er() {
   let {
     connected: U,
     friendsTabSection: G,
-    homeLink: q,
+    homeLink: K,
     isMemberPending: Q,
     selectedChannelId: X,
     selectedGuildId: $

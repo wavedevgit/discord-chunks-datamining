@@ -458,12 +458,12 @@ class Y extends Chunk647438.PureComponent {
     })
   }
 }
-let q = () => (0, Chunk951288.jsx)(H, {
+let K = () => (0, Chunk951288.jsx)(H, {
     icon: Chunk481060.o1U,
     tooltip: Chunk388032.intl.string(Chunk388032.t.YGm6SZ),
     onClick: () => Chunk51025.v4()
   }),
-  K = () => (0, Chunk951288.jsx)(H, {
+  q = () => (0, Chunk951288.jsx)(H, {
     icon: Chunk481060.fpf,
     tooltip: Chunk388032.intl.string(Chunk388032.t.TVAd5J),
     onClick: () => Chunk51025.wO()
@@ -523,7 +523,7 @@ let q = () => (0, Chunk951288.jsx)(H, {
         source: D.Sbl.APPLICATION_LIBRARY_UPDATES
       }) : null : null != e.state ? e.state.type !== D.vxO.UP_TO_DATE && (n = e.index > 0 ? (0, r.jsx)(Q, {
         item: e
-      }) : null != t && t.paused ? (0, r.jsx)(q, {}) : (0, r.jsx)(K, {
+      }) : null != t && t.paused ? (0, r.jsx)(K, {}) : (0, r.jsx)(q, {
         item: e
       }), i = (0, r.jsx)(X, {
         item: e

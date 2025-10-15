@@ -181,8 +181,8 @@ function ei() {
           },
           paddingTop: 24,
           paddingBottom: 24,
-          sectionHeight: K.oi,
-          rowHeight: K.WN,
+          sectionHeight: q.oi,
+          rowHeight: q.WN,
           renderSection: O,
           renderRow: _,
           sections: [n.length],
@@ -265,7 +265,7 @@ function eo(e) {
   let {
     section: t
   } = e;
-  return t === K.pS.SPAM ? (0, r.jsx)(q.Z, {}) : (0, r.jsx)(ei, {})
+  return t === q.pS.SPAM ? (0, r.jsx)(K.Z, {}) : (0, r.jsx)(ei, {})
 }
 let es = (0, Chunk112724.Z)(function(e) {
   let {
@@ -293,7 +293,7 @@ let es = (0, Chunk112724.Z)(function(e) {
   i.useEffect(() => {
     null != g && !_ && O && b && ((0, T.Kh)(g), N.Z.closeChannelSidebar(w.uZ))
   }, [g, O, b, _]);
-  let [y, I] = i.useState(K.pS.REQUESTS), A = e => {
+  let [y, I] = i.useState(q.pS.REQUESTS), A = e => {
     I(e)
   };
   return (0, v.Tt)({
@@ -324,11 +324,11 @@ let es = (0, Chunk112724.Z)(function(e) {
             type: "top-pill",
             onItemSelect: A,
             children: [(0, r.jsx)(p.njP.Item, {
-              id: K.pS.REQUESTS,
+              id: q.pS.REQUESTS,
               className: ee.item,
               children: $.intl.string($.t["7RFcXZ"])
             }), (0, r.jsx)(p.njP.Item, {
-              id: K.pS.SPAM,
+              id: q.pS.SPAM,
               className: ee.item,
               children: 0 === o ? $.intl.string($.t.ulKXHp) : $.intl.formatToPlainString($.t["5jtrlZ"], {
                 count: o

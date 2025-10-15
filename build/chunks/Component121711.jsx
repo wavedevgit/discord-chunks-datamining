@@ -230,7 +230,7 @@ let eh = function(e) {
     scrollPosition: F
   } = (0, y.M)(), W = z.Z.getState().getUtmCurrentContext(), el = (0, M._)({
     location: $.dr.QUEST_HOME_DESKTOP
-  }) ? q.Z : q.j, ea = (0, K.z)(e => e.registerAssetLoad), eo = i.useRef(W);
+  }) ? K.Z : K.j, ea = (0, q.z)(e => e.registerAssetLoad), eo = i.useRef(W);
   i.useEffect(() => {
     eo.current = W
   }), i.useEffect(() => {

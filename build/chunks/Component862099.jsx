@@ -3,7 +3,7 @@
 require.d(exports, {
   Co: () => Q,
   ZP: () => X,
-  bZ: () => K,
+  bZ: () => q,
   gt: () => B
 }), require("./388685.js");
 var r, Chunk951288 = require("./951288.js"),
@@ -308,7 +308,7 @@ function Y(e) {
   })
 }
 
-function q(e) {
+function K(e) {
   let {
     stageInstance: t,
     channel: n
@@ -344,7 +344,7 @@ function q(e) {
     })
   })
 }
-var K = ((r = {})[r.VOICE = 1] = "VOICE", r[r.STAGE = 2] = "STAGE", r[r.STUDY_ROOM = 3] = "STUDY_ROOM", r);
+var q = ((r = {})[r.VOICE = 1] = "VOICE", r[r.STAGE = 2] = "STAGE", r[r.STUDY_ROOM = 3] = "STUDY_ROOM", r);
 
 function Q(e) {
   let {
@@ -404,10 +404,10 @@ let X = Chunk647438.memo(function(e) {
   if (n) return (0, i.jsx)(f.Z, {
     guild: t
   });
-  null == l || u ? h && (d = (0, i.jsx)(q, {
+  null == l || u ? h && (d = (0, i.jsx)(K, {
     stageInstance: o,
     channel: r
-  })) : l.entity_type === k.WX.STAGE_INSTANCE && h ? d = (0, i.jsx)(q, {
+  })) : l.entity_type === k.WX.STAGE_INSTANCE && h ? d = (0, i.jsx)(K, {
     stageInstance: o,
     channel: r
   }) : l.entity_type === k.WX.EXTERNAL ? d = (0, i.jsx)(z, {

@@ -172,8 +172,8 @@ let L = function(e) {
       }
     }, [V, A]),
     Y = i.useMemo(() => V.filter(e => e.type === S.OGo.PENDING_INCOMING).length, [V]),
-    q = A === S.pJs.PENDING && Y > 0 && Y >= C.yf,
-    K = i.useCallback(e => {
+    K = A === S.pJs.PENDING && Y > 0 && Y >= C.yf,
+    q = i.useCallback(e => {
       e.stopPropagation(), s.Z.confirmClearPendingRelationships(Y)
     }, [Y]),
     Q = i.useCallback(e => {
@@ -206,11 +206,11 @@ let L = function(e) {
         children: [(0, r.jsx)(y.Z, {
           id: t,
           title: n
-        }), q && (0, r.jsx)("div", {
+        }), K && (0, r.jsx)("div", {
           className: N.clearButton,
           children: (0, r.jsx)(a.Avr, {
             text: T.intl.string(T.t.O8k7O4),
-            onClick: K,
+            onClick: q,
             "aria-label": T.intl.string(T.t.O8k7O4),
             textVariant: "text-sm/medium"
           })
@@ -222,7 +222,7 @@ let L = function(e) {
           title: n
         })
       }, n)
-    }, [W, A, t, q, K]);
+    }, [W, A, t, K, q]);
   if (i.useEffect(() => {
       A === S.pJs.ALL && (0, f.d$)()
     }, [A]), 0 === V.length && "" === k[A]) return (0, r.jsx)(w, {

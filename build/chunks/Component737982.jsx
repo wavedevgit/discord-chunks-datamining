@@ -1,11 +1,12 @@
 /** Chunk was on 57695 **/
 /** chunk id: 737982, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => _
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk704215 = require("./704215.js"),
+  Chunk952265 = require("./952265.js"),
   Chunk481060 = require("./481060.js"),
   Chunk243778 = require("./243778.jsx"),
   Chunk434479 = require("./434479.jsx"),
@@ -17,26 +18,26 @@ var Chunk951288 = require("./951288.js"),
   Chunk470658 = require("./470658.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk990963 = require("./990963.js");
-let b = Chunk647438.memo(function(e) {
+let _ = Chunk647438.memo(function(e) {
   let {
     guildId: t,
     selected: n
-  } = e, [b, _] = (0, a.ZT)([l.z.GAME_SERVER_HOSTING_NEW_BADGE], t), O = i.useCallback(() => {
-    b === l.z.GAME_SERVER_HOSTING_NEW_BADGE && _(h.L.USER_DISMISS), (0, c.uL)(d.Z5c.CHANNEL(t, p.oC.GAME_SERVERS))
-  }, [t, b, _]), y = i.useRef(null), v = b === l.z.GAME_SERVER_HOSTING_NEW_BADGE;
-  return (0, r.jsx)(o.yRy, {
-    targetElementRef: y,
-    shouldShow: v,
+  } = e, _ = (0, o.f9)(), [O, y] = (0, s.ZT)([l.z.GAME_SERVER_HOSTING_NEW_BADGE], t), v = i.useCallback(() => {
+    O === l.z.GAME_SERVER_HOSTING_NEW_BADGE && y(f.L.USER_DISMISS), (0, u.uL)(p.Z5c.CHANNEL(t, h.oC.GAME_SERVERS))
+  }, [t, O, y]), j = i.useRef(null), x = O === l.z.GAME_SERVER_HOSTING_NEW_BADGE;
+  return (0, r.jsx)(a.yRy, {
+    targetElementRef: j,
+    shouldShow: x && !_,
     nudgeAlignIntoViewport: true,
     animationPosition: "bottom",
     position: "right",
-    renderPopout: () => (0, r.jsx)(u.En, {
+    renderPopout: () => (0, r.jsx)(d.En, {
       guildId: t,
-      markAsDismissed: _
+      markAsDismissed: y
     }),
     children: e => {
       var i, l;
-      return (0, r.jsx)(s.m, (i = function(e) {
+      return (0, r.jsx)(c.m, (i = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -54,20 +55,20 @@ let b = Chunk647438.memo(function(e) {
         }
         return e
       }({}, e), l = l = {
-        ref: y,
+        ref: j,
         id: "game-server-".concat(t),
-        renderIcon: e => (0, r.jsx)(o.iWm, {
+        renderIcon: e => (0, r.jsx)(a.iWm, {
           size: "md",
           className: e,
           color: "currentColor"
         }),
-        text: g.intl.string(f.default.vCzwM7),
+        text: m.intl.string(g.default.vCzwM7),
         selected: n,
-        onClick: O,
-        trailing: v ? (0, r.jsx)(o.IGR, {
+        onClick: v,
+        trailing: x ? (0, r.jsx)(a.IGR, {
           disableColor: true,
-          text: g.intl.string(g.t.y2b7CA),
-          className: m.badge
+          text: m.intl.string(m.t.y2b7CA),
+          className: b.badge
         }) : null
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var n = Object.keys(e);

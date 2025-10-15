@@ -475,10 +475,10 @@ function eb(e) {
   (0, b.J_)(n);
   let d = (0, C.Z)(n),
     p = (0, c.e7)([B.Z], () => B.Z.getGuildDimensions(n).scrollTo),
-    h = (0, c.e7)([q.Z], () => q.Z.getChannelId()),
+    h = (0, c.e7)([K.Z], () => K.Z.getChannelId()),
     g = (0, c.e7)([W.Z], () => W.Z.can(ei.Plq.MANAGE_GUILD, o)),
     m = (0, c.e7)([H.Z], () => H.Z.isUnavailable(n)),
-    P = (0, c.e7)([K.default], () => K.default.getCurrentUser()),
+    P = (0, c.e7)([q.default], () => q.default.getCurrentUser()),
     {
       enableStudyGroup: Z
     } = (0, A.s)(o),
@@ -498,7 +498,7 @@ function eb(e) {
   let eE = (0, I.Nj)(u.z.PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP),
     ev = (0, L.Z)(n),
     ey = (0, N.Z)(n),
-    eI = (0, c.e7)([q.Z], () => q.Z.getChannelId()),
+    eI = (0, c.e7)([K.Z], () => K.Z.getChannelId()),
     eC = (0, c.e7)([Y.Z], () => Y.Z.desyncedVoiceStatesCount),
     eS = (0, D.Z)(n);
   return (0, r.jsx)(em, {

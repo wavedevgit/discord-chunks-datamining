@@ -115,7 +115,7 @@ function P(e) {
           }, i)
       }
     }, [A, R, t]),
-    q = i.useCallback(e => {
+    K = i.useCallback(e => {
       switch (e) {
         case 0:
           let t = R ? 16 : 50;
@@ -126,7 +126,7 @@ function P(e) {
           throw Error("[getSectionHeight] Failed for section: ".concat(e))
       }
     }, [A, R]),
-    K = i.useCallback((e, t) => {
+    q = i.useCallback((e, t) => {
       switch (e) {
         case 0:
           return s[t];
@@ -214,8 +214,8 @@ function P(e) {
       padding: ee,
       renderItem: J,
       renderSection: Y,
-      getSectionHeight: q,
-      getItemKey: K,
+      getSectionHeight: K,
+      getItemKey: q,
       getItemHeight: Q,
       chunkSize: 24,
       onScroll: $,

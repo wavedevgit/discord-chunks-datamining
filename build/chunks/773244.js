@@ -1,4 +1,4 @@
-/** Chunk was on 1272 **/
+/** Chunk was on 27978 **/
 /** chunk id: 773244, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -18,19 +18,19 @@ function d(e) {
     deepLinkType: n,
     path: i,
     paramsBuilder: d,
-    search: p
-  } = e, f = (0, l.e7)([s.default], () => {
+    search: h
+  } = e, g = (0, l.e7)([o.default], () => {
     var e;
-    return null != (e = s.default.getFingerprint()) ? e : s.default.getId()
-  }), h = (0, l.e7)([o.Z], () => o.Z.getState(i), [i]), g = r.useMemo(() => null == d ? {
+    return null != (e = o.default.getFingerprint()) ? e : o.default.getId()
+  }), m = (0, l.e7)([a.Z], () => a.Z.getState(i), [i]), p = r.useMemo(() => null == d ? {
     path: i,
-    fingerprint: f,
-    search: p
-  } : d(i, f, p), [i, d, f, p]);
+    fingerprint: g,
+    search: h
+  } : d(i, g, h), [i, d, g, h]);
   return r.useEffect(() => {
-    u || null == h && a.Z.openNativeAppModal(i, c.Etm.DEEP_LINK, {
+    u || null == m && s.Z.openNativeAppModal(i, c.Etm.DEEP_LINK, {
       type: n,
-      params: g
+      params: p
     })
-  }, [h, i, g, n]), t
+  }, [m, i, p, n]), t
 }

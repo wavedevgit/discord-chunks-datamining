@@ -649,7 +649,7 @@ eO.Header = e_, eO.Body = e => {
     applicationStream: a,
     onPreviewClick: o,
     guildId: s
-  } = e, u = (0, c.e7)([K.Z], () => K.Z.getChannel(a.channelId)), [d, p] = (0, U.wq)(u), h = (0, i.jsxs)(f.P3F, {
+  } = e, u = (0, c.e7)([q.Z], () => q.Z.getChannel(a.channelId)), [d, p] = (0, U.wq)(u), h = (0, i.jsxs)(f.P3F, {
     onClick: d ? o : true,
     className: el.applicationStreamingPreviewWrapper,
     children: [(0, i.jsx)(G.Z, {
@@ -690,7 +690,7 @@ eO.Header = e_, eO.Body = e => {
       return s(t)
     })
   }, [u]);
-  let d = (0, c.Wu)([Q.default, q.default], () => Array.from(a).map(e => q.default.getId() === e ? null : Q.default.getUser(e)).filter(ee.lm)),
+  let d = (0, c.Wu)([Q.default, K.default], () => Array.from(a).map(e => K.default.getId() === e ? null : Q.default.getUser(e)).filter(ee.lm)),
     p = (0, m.O)(),
     {
       analyticsLocations: h

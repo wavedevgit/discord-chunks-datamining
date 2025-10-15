@@ -116,14 +116,14 @@ function A(e) {
     play: W,
     events: {
       onMouseEnter: Y,
-      onMouseLeave: q
+      onMouseLeave: K
     }
-  } = (0, c.j)(), K = i.useCallback(() => {
+  } = (0, c.j)(), q = i.useCallback(() => {
     R || k(!D)
   }, [R, D]);
   return (0, v.yp)({
     event: S.CkL.TOGGLE_SOUNDBOARD,
-    handler: K
+    handler: q
   }), (0, r.jsx)(g.Gt, {
     value: H,
     children: (0, r.jsx)(u.u, {
@@ -170,7 +170,7 @@ function A(e) {
             },
             onMouseLeave: e => {
               var t;
-              null == (t = l.onMouseLeave) || t.call(l, e), q()
+              null == (t = l.onMouseLeave) || t.call(l, e), K()
             },
             onContextMenu: F,
             fullWidth: true,

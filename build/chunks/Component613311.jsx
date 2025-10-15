@@ -284,7 +284,7 @@ class ef extends Chunk647438.PureComponent {
     })
   }
   renderFeatures(e) {
-    return (0, r.jsx)(K.Z, {
+    return (0, r.jsx)(q.Z, {
       sku: e
     })
   }
@@ -306,7 +306,7 @@ class ef extends Chunk647438.PureComponent {
         children: es.intl.format(es.t.tluX4B, {
           name: n.name
         })
-      }), (0, r.jsx)(_.Z, {}), (0, r.jsx)(q.Z, {
+      }), (0, r.jsx)(_.Z, {}), (0, r.jsx)(K.Z, {
         applicationId: e.id,
         blurb: t.summary,
         description: l,

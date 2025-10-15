@@ -38,12 +38,12 @@ let j = (0, Chunk647438.memo)(function(e) {
   } = (0, p.ZP)(), F = (0, f.ZP)(), z = (0, O.B6)(null == (t = A.userStatus) ? true : t.claimedAt, {
     month: "numeric",
     day: "numeric"
-  }), W = null != (P = null == (n = A.userStatus) ? true : n.claimedTier) ? P : 0, Y = A.config.rewards[W], q = (null == Y ? true : Y.type) === s.w.FRACTIONAL_PREMIUM, K = (null == Y ? true : Y.type) === s.w.COLLECTIBLE, Q = (null == Y ? true : Y.type) === s.w.VIRTUAL_CURRENCY, X = null == Y || null == (j = Y.collectibleProduct) || null == (l = j.items) ? true : l[0], J = (null == X ? true : X.type) === o.Z.AVATAR_DECORATION ? X : null;
+  }), W = null != (P = null == (n = A.userStatus) ? true : n.claimedTier) ? P : 0, Y = A.config.rewards[W], K = (null == Y ? true : Y.type) === s.w.FRACTIONAL_PREMIUM, q = (null == Y ? true : Y.type) === s.w.COLLECTIBLE, Q = (null == Y ? true : Y.type) === s.w.VIRTUAL_CURRENCY, X = null == Y || null == (j = Y.collectibleProduct) || null == (l = j.items) ? true : l[0], J = (null == X ? true : X.type) === o.Z.AVATAR_DECORATION ? X : null;
   (0, p.PM)(M, e => {
     let {
       height: t
     } = e;
-    if (!K || null == t || null == U.current || null == M.current || null == G.current) return;
+    if (!q || null == t || null == U.current || null == M.current || null == G.current) return;
     let n = M.current.getBoundingClientRect(),
       r = U.current.getBoundingClientRect(),
       i = G.current.getBoundingClientRect();
@@ -114,7 +114,7 @@ let j = (0, Chunk647438.memo)(function(e) {
       className: a()(N.container, {
         [N.hovered]: Z
       }),
-      children: [null != B && K && null != J && (0, r.jsx)("div", {
+      children: [null != B && q && null != J && (0, r.jsx)("div", {
         ref: G,
         className: N.decoWrapper,
         style: {
@@ -125,7 +125,7 @@ let j = (0, Chunk647438.memo)(function(e) {
           user: B,
           guildId: null
         })
-      }), q ? (0, r.jsx)(y.Z, {
+      }), K ? (0, r.jsx)(y.Z, {
         className: N.image
       }) : Q ? (0, r.jsx)(I.Z, {
         className: N.image
