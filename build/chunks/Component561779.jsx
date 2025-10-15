@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   i: () => I
-}), require("./642613.js"), require("./953529.js"), require("./415506.js"), require("./388685.js");
+}), require("./642613.js"), require("./415506.js"), require("./388685.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
@@ -162,17 +162,13 @@ class I extends(r = Chunk647438.PureComponent) {
       "aria-hidden": k,
       "aria-label": U,
       "aria-labelledby": G,
-      "aria-describedby": B,
-      label: Z,
-      hideLabel: F,
-      description: V,
-      helperText: H,
-      errorMessage: Y,
-      successMessage: W
-    } = this.props, K = 0;
-    y ? null != Chunk120356 && (null != c ? K = Chunk120356[c] : null != Chunk392711 && (K = Chunk120356[Chunk392711])) : K = this.scaleValue(exports);
-    let z = "".concat(K, "%"),
-      q = null != Chunk120356 && null != Chunk647438 ? Chunk120356.map((e, t) => {
+      "aria-describedby": B
+    } = this.props, {
+      fieldProps: Z
+    } = (0, Chunk793030.XF_)(this.props), F = 0;
+    y ? null != Chunk120356 && (null != c ? F = Chunk120356[c] : null != Chunk392711 && (F = Chunk120356[Chunk392711])) : F = this.scaleValue(exports);
+    let V = "".concat(F, "%"),
+      H = null != Chunk120356 && null != Chunk647438 ? Chunk120356.map((e, t) => {
         let n = a[t],
           r = null != N && N === n,
           o = this.renderMark(n);
@@ -195,15 +191,9 @@ class I extends(r = Chunk647438.PureComponent) {
           })
         }, t)
       }) : null,
-      X = null != P ? P(exports) : "".concat(K.toFixed(0), "%"),
-      Q = null != (e = null == D ? true : D(exports)) ? module : true;
-    return (0, Chunk951288.jsx)(Chunk793030.gNt, {
-      label: Z,
-      hideLabel: F,
-      description: V,
-      helperText: H,
-      errorMessage: Y,
-      successMessage: W,
+      Y = null != P ? P(exports) : "".concat(F.toFixed(0), "%"),
+      W = null != (e = null == D ? true : D(exports)) ? module : true;
+    return (0, Chunk951288.jsx)(Chunk793030.gNt, b(g({}, Z), {
       children: e => (0, i.jsx)(T, {
         active: n,
         keyboardFocused: r && p.Z.keyboardModeEnabled,
@@ -214,7 +204,7 @@ class I extends(r = Chunk647438.PureComponent) {
             ringTarget: this.grabberRef,
             children: (0, i.jsxs)(u.animated.div, {
               className: s()(h.slider, O, {
-                [h.hasMarks]: (null != (o = null == q ? true : q.length) ? o : 0) > 0,
+                [h.hasMarks]: (null != (o = null == H ? true : H.length) ? o : 0) > 0,
                 [h.disabled]: E,
                 [h.mini]: A
               }),
@@ -231,7 +221,7 @@ class I extends(r = Chunk647438.PureComponent) {
               "aria-describedby": null != B ? B : e.describedById,
               "aria-errormessage": e.errorMessageId,
               "aria-invalid": null != e.errorMessageId,
-              "aria-valuetext": Q,
+              "aria-valuetext": W,
               role: "slider",
               tabIndex: 0,
               onKeyDown: this.handleKeyDown,
@@ -247,14 +237,14 @@ class I extends(r = Chunk647438.PureComponent) {
               ref: this.containerRef,
               children: [(0, i.jsx)("div", {
                 className: h.track,
-                children: q
+                children: H
               }), (0, i.jsx)("div", {
                 className: s()(h.bar, L),
                 style: I,
                 children: (0, i.jsx)("div", {
                   className: h.barFill,
                   style: b(g({}, S), {
-                    width: z
+                    width: V
                   })
                 })
               }), v, (0, i.jsx)("div", {
@@ -263,12 +253,12 @@ class I extends(r = Chunk647438.PureComponent) {
                   "data-migration-pending": true,
                   color: _.aM.Colors.GREY,
                   hideOnClick: false,
-                  text: C || y ? null : X,
+                  text: C || y ? null : Y,
                   forceOpen: n || r && p.Z.keyboardModeEnabled,
                   children: e => (0, i.jsx)("div", b(g({}, e), {
                     className: s()(h.grabber, x),
                     style: b(g({}, M), {
-                      left: z
+                      left: V
                     }),
                     onMouseDown: this.handleMouseDown,
                     ref: this.grabberRef
@@ -279,7 +269,7 @@ class I extends(r = Chunk647438.PureComponent) {
           })
         }
       })
-    })
+    }))
   }
   reset() {
     var e, t, n, r;

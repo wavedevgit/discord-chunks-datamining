@@ -266,7 +266,7 @@ function w(e) {
           type: O.aib.DMS
         };
         y.Z.transitionQueryStateToSearchContext(n, e, t => {
-          y.Z.fetchCrossDMMessages({
+          y.Z.cleanUpPrivateChannelSearchState(), y.Z.fetchCrossDMMessages({
             searchContext: e,
             selectedPageIndex: 0,
             queryString: t

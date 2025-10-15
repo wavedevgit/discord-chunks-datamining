@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   K: () => T
-}), require("./953529.js");
+});
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
@@ -90,57 +90,47 @@ function T(e) {
       showCharacterCount: N,
       showRemainingCharacterCount: R = true,
       rows: P = 3,
-      disabled: w,
-      label: D,
-      hideLabel: L,
-      description: x,
-      helperText: M,
-      successMessage: j,
-      inputRef: k
+      inputRef: w
     } = e,
-    U = y(e, ["value", "placeholder", "autoFocus", "autosize", "minLength", "maxLength", "error", "defaultDirty", "showCharacterCount", "showRemainingCharacterCount", "rows", "disabled", "label", "hideLabel", "description", "helperText", "successMessage", "inputRef"]);
-  let G = (0, f.U)("UserSettingsDesignSystems"),
-    B = (0, d.m)({
-      validateOn: "change",
-      error: O,
-      value: n,
-      minLength: m,
-      maxLength: E,
-      defaultDirty: T
-    }),
-    Z = i.useMemo(() => {
-      if (G) return;
-      if (null == E) return v;
-      let e = "".concat(E).length;
-      return I * (e += "".concat(E, " / ").length) + v
-    }, [G, E]),
-    F = e => {
-      let {
-        onChange: t
-      } = U;
-      null == t || t(e.currentTarget.value), B.setShouldValidate(true)
-    },
-    V = G && N ? (0, r.jsx)(c.H, {
-      value: n,
-      maxLength: R && null != E ? E : true
-    }) : null;
-  return (0, r.jsx)(s.gNt, {
-    label: D,
-    hideLabel: L,
-    description: x,
-    helperText: M,
-    successMessage: j,
-    trailingContent: V,
-    errorMessage: B.hasError && null != (t = B.errorMessage) ? t : true,
+    D = y(e, ["value", "placeholder", "autoFocus", "autosize", "minLength", "maxLength", "error", "defaultDirty", "showCharacterCount", "showRemainingCharacterCount", "rows", "inputRef"]);
+  let {
+    fieldProps: L,
+    props: x
+  } = (0, s.XF_)(D), {
+    disabled: M
+  } = L, j = (0, f.U)("UserSettingsDesignSystems"), k = (0, d.m)({
+    validateOn: "change",
+    error: O,
+    value: n,
+    minLength: m,
+    maxLength: E,
+    defaultDirty: T
+  }), U = i.useMemo(() => {
+    if (j) return;
+    if (null == E) return v;
+    let e = "".concat(E).length;
+    return I * (e += "".concat(E, " / ").length) + v
+  }, [j, E]), G = e => {
+    let {
+      onChange: t
+    } = x;
+    null == t || t(e.currentTarget.value), k.setShouldValidate(true)
+  }, B = j && N ? (0, r.jsx)(c.H, {
+    value: n,
+    maxLength: R && null != E ? E : true
+  }) : null;
+  return (0, r.jsx)(s.gNt, b(g({}, L), {
+    trailingContent: B,
+    errorMessage: k.hasError && null != (t = k.errorMessage) ? t : true,
     children: (0, r.jsxs)(u.U, {
-      validation: B,
-      disabled: w,
+      validation: k,
+      disabled: M,
       children: [(0, r.jsx)(s.tEY, {
         children: (0, r.jsx)(S, b(g({
           autosize: _,
           className: o()(p.textArea, h.scrollbarDefault),
           style: {
-            paddingRight: Z
+            paddingRight: U
           },
           placeholder: a,
           value: n,
@@ -148,24 +138,24 @@ function T(e) {
           minLength: m,
           maxLength: E,
           rows: P,
-          disabled: w,
+          disabled: M,
           "data-mana-component": "text-area"
-        }, U), {
-          onChange: F,
-          ref: k
+        }, x), {
+          onChange: G,
+          ref: w
         }))
-      }), G ? null : (0, r.jsxs)(r.Fragment, {
+      }), j ? null : (0, r.jsxs)(r.Fragment, {
         children: [N ? (0, r.jsx)(A, {
           value: n,
           maxLength: E,
-          hasError: B.hasError
+          hasError: k.hasError
         }) : null, N || false === R ? null : (0, r.jsx)(C, {
           value: n,
           maxLength: E
         })]
       })]
     })
-  })
+  }))
 }
 
 function S(e) {

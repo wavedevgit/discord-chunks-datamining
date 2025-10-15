@@ -476,35 +476,31 @@ function j(e) {
     }),
     {
       id: c,
-      options: u,
-      autoFocus: d,
-      required: f,
-      isDisabled: p,
-      isProcessing: h,
-      clearable: m,
-      closeOnSelect: E = true,
-      maxVisibleItems: y,
-      label: v,
-      hideLabel: S,
-      placeholder: C,
-      description: N,
-      helperText: R,
-      errorMessage: P,
-      successMessage: w,
-      "aria-label": D,
-      variant: x,
-      renderOptionLabel: M
+      options: d,
+      autoFocus: f,
+      required: p,
+      isDisabled: h,
+      isProcessing: m,
+      clearable: E,
+      closeOnSelect: y = true,
+      maxVisibleItems: v,
+      "aria-label": S,
+      variant: C,
+      renderOptionLabel: N
     } = o,
-    j = "text-only" === x || null != M;
-  if (s && !j) {
-    let e = null == v && null != D;
-    return (0, r.jsx)(_.P, {
+    {
+      fieldProps: R
+    } = (0, u.XF_)(o),
+    P = "text-only" === C || null != N;
+  if (s && !P) {
+    let e = null == R.label && null != S;
+    return (0, r.jsx)(_.P, I(O({
       id: c,
       selectionMode: "single",
       onSelectionChange: e => {
         a(e)
       },
-      options: u,
+      options: d,
       formatOption: e => {
         let {
           key: r,
@@ -523,31 +519,27 @@ function j(e) {
       },
       value: i,
       fullWidth: true,
-      autoFocus: d,
-      required: f,
-      disabled: p,
-      loading: h,
-      clearable: m,
-      closeOnSelect: E,
-      maxOptionsVisible: y,
-      label: e ? D : v,
-      hideLabel: true === S || e,
-      placeholder: C,
-      description: N,
-      helperText: R,
-      errorMessage: P,
-      successMessage: w
-    })
+      autoFocus: f,
+      required: p,
+      disabled: h,
+      loading: m,
+      clearable: E,
+      closeOnSelect: y,
+      maxOptionsVisible: v
+    }, R), {
+      label: e ? S : R.label,
+      hideLabel: true === R.hideLabel || e
+    }))
   }
 
-  function k() {
+  function w() {
     if (null != t || null != n) return e => (0, r.jsxs)("div", {
       className: b.newOptionLabel,
       children: [null == t ? true : t(e), e.label, null == n ? true : n(e)]
     })
   }
   return (0, r.jsx)(L, I(O({}, o, l), {
-    renderOptionLabel: null != M ? M : k()
+    renderOptionLabel: null != N ? N : w()
   }))
 }
 
@@ -561,39 +553,34 @@ function k(e) {
     {
       id: l,
       serialize: c,
-      options: u,
-      select: d,
-      autoFocus: f,
-      required: p,
-      isDisabled: h,
-      isProcessing: m,
-      clearable: E,
-      closeOnSelect: y,
-      maxVisibleItems: v,
-      label: S,
-      layout: A,
-      hideLabel: C,
-      placeholder: N,
-      description: R,
-      helperText: P,
-      errorMessage: w,
-      successMessage: D,
-      "aria-label": x,
-      variant: M,
-      isSelected: j,
-      renderOptionLabel: k
+      options: d,
+      select: f,
+      autoFocus: p,
+      required: h,
+      isDisabled: m,
+      isProcessing: E,
+      clearable: y,
+      closeOnSelect: v,
+      maxVisibleItems: S,
+      "aria-label": A,
+      variant: C,
+      isSelected: N,
+      renderOptionLabel: R
     } = o,
-    U = "text-only" === M || null != k;
-  if (s && !U) {
-    let e = null == S && null != x;
-    return (0, r.jsx)(_.P, {
+    {
+      fieldProps: P
+    } = (0, u.XF_)(o),
+    w = "text-only" === C || null != R;
+  if (s && !w) {
+    let e = null == P.label && null != A;
+    return (0, r.jsx)(_.P, I(O({
       id: l,
       selectionMode: "single",
       onSelectionChange: e => {
-        d(e)
+        f(e)
       },
-      value: null != (n = null == u || null == (t = u.find(e => null == j ? true : j(e.value))) ? true : t.value) ? n : true,
-      options: u,
+      value: null != (n = null == d || null == (t = d.find(e => null == N ? true : N(e.value))) ? true : t.value) ? n : true,
+      options: d,
       formatOption: e => {
         let {
           key: t,
@@ -611,31 +598,26 @@ function k(e) {
         }
       },
       fullWidth: true,
-      autoFocus: f,
-      required: p,
-      disabled: h,
-      loading: m,
-      clearable: E,
-      closeOnSelect: y,
-      maxOptionsVisible: v,
-      label: e ? x : S,
-      layout: A,
-      hideLabel: true === C || e,
-      placeholder: N,
-      description: R,
-      helperText: P,
-      errorMessage: w,
-      successMessage: D
-    })
+      autoFocus: p,
+      required: h,
+      disabled: m,
+      loading: E,
+      clearable: y,
+      closeOnSelect: v,
+      maxOptionsVisible: S
+    }, P), {
+      label: e ? A : P.label,
+      hideLabel: true === P.hideLabel || e
+    }))
   }
 
-  function G() {
+  function D() {
     if (null != i || null != a) return e => (0, r.jsxs)("div", {
       className: b.newOptionLabel,
       children: [null == i ? true : i(e), e.label, null == a ? true : a(e)]
     })
   }
   return (0, r.jsx)(L, I(O({}, o), {
-    renderOptionLabel: null != k ? k : G()
+    renderOptionLabel: null != R ? R : D()
   }))
 }

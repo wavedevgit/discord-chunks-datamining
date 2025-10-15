@@ -130,10 +130,9 @@ let j = {
     },
     renderInput(e, t) {
       let {
-        onChange: n,
-        layout: r
-      } = e, a = b(e, ["onChange", "layout"]);
-      return (0, i.jsx)(c.VcW, E(m({}, a), {
+        onChange: n
+      } = e, r = b(e, ["onChange"]);
+      return (0, i.jsx)(c.VcW, E(m({}, r), {
         autoFocus: true,
         maxVisibleItems: 8,
         isDisabled: "edit" === t.mode,
@@ -263,29 +262,28 @@ let j = {
             return p.width25
         }
       },
-      renderInput(t) {
-        let n = j[e],
-          r = null == t.value || "" === t.value || null != n && null != n.find(e => {
+      renderInput(t, n, r) {
+        let a = j[e],
+          o = null == t.value || "" === t.value || null != a && null != a.find(e => {
             let {
               value: n
             } = e;
             return n === t.value
           }),
           {
-            layout: a,
-            onChange: o
+            onChange: s
           } = t,
-          s = b(t, ["layout", "onChange"]),
-          l = k[e];
-        return [O, v].includes(e) && r ? (0, i.jsx)(c.VcW, E(m({}, s), {
-          popoutPosition: ["modalUS", "modalInternational"].includes(a) ? "top" : true,
-          options: n,
+          l = b(t, ["onChange"]),
+          u = k[e];
+        return [O, v].includes(e) && o ? (0, i.jsx)(c.VcW, E(m({}, l), {
+          popoutPosition: ["modalUS", "modalInternational"].includes(r) ? "top" : true,
+          options: a,
           onSearchChange: e => {
             let n = e.toLowerCase();
-            n in l && null != o && o(l[n], t.name)
+            n in u && null != s && s(u[n], t.name)
           },
           onChange: e => {
-            null != o && o(e, t.name)
+            null != s && s(e, t.name)
           }
         })) : (0, i.jsx)(c.oil, m({}, t))
       }

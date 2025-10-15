@@ -4,7 +4,7 @@
 require.d(exports, {
   I: () => A,
   o: () => S
-}), require("./953529.js");
+});
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
@@ -182,15 +182,10 @@ function S(e) {
     size: L = "md",
     fullWidth: x = false,
     clearable: M = false,
-    helperText: j,
-    showCharacterCount: k = false,
-    successMessage: U,
-    label: G,
-    description: B,
-    hideLabel: Z,
-    required: F,
-    id: V
-  } = e, H = y(e, ["disabled", "editable", "inputRef", "focusProps", "name", "type", "placeholder", "maxLength", "value", "defaultValue", "minLength", "error", "defaultDirty", "leading", "trailing", "validateOn", "size", "fullWidth", "clearable", "helperText", "showCharacterCount", "successMessage", "label", "description", "hideLabel", "required", "id"]), Y = (0, _.m)({
+    showCharacterCount: j = false
+  } = e, k = y(e, ["disabled", "editable", "inputRef", "focusProps", "name", "type", "placeholder", "maxLength", "value", "defaultValue", "minLength", "error", "defaultDirty", "leading", "trailing", "validateOn", "size", "fullWidth", "clearable", "showCharacterCount"]), {
+    fieldProps: U
+  } = (0, s.XF_)(k), G = (0, _.m)({
     validateOn: D,
     error: N,
     value: O,
@@ -198,72 +193,65 @@ function S(e) {
     maxLength: E,
     defaultDirty: R
   }), {
-    setShouldValidate: W
-  } = Y, K = v(O, S), z = "object" == typeof P && "type" in P && "tags" === P.type, q = e => {
+    setShouldValidate: B
+  } = G, Z = v(O, S), F = "object" == typeof P && "type" in P && "tags" === P.type, V = e => {
     var t, n;
     let r = e.currentTarget.value;
-    null == (t = H.onChange) || t.call(H, r, u), W(true), null == (n = K.setHasValue) || n.call(K, "" !== r)
-  }, X = e => {
+    null == (t = k.onChange) || t.call(k, r, u), B(true), null == (n = Z.setHasValue) || n.call(Z, "" !== r)
+  }, H = e => {
     var t, n;
-    null == (t = H.onFocus) || t.call(H, e), null == (n = K.setIsFocused) || n.call(K, true)
-  }, Q = e => {
+    null == (t = k.onFocus) || t.call(k, e), null == (n = Z.setIsFocused) || n.call(Z, true)
+  }, Y = e => {
     var t, n;
-    null == (t = H.onBlur) || t.call(H, e), null == (n = K.setIsFocused) || n.call(K, false)
-  }, J = e => {
-    if (null != H.onClear) H.onClear(e);
+    null == (t = k.onBlur) || t.call(k, e), null == (n = Z.setIsFocused) || n.call(Z, false)
+  }, W = e => {
+    if (null != k.onClear) k.onClear(e);
     else {
       var t;
-      null == (t = H.onChange) || t.call(H, "", u)
+      null == (t = k.onChange) || t.call(k, "", u)
     }
-  }, $ = i.useRef(null), ee = H.readOnly;
-  null == ee && false === a && (ee = true);
-  let et = null;
-  ("boolean" == typeof M ? M && null != O && "" !== O && !ee : M.show) ? et = (0, r.jsx)(T, {
+  }, K = i.useRef(null), z = k.readOnly;
+  null == z && false === a && (z = true);
+  let q = null;
+  ("boolean" == typeof M ? M && null != O && "" !== O && !z : M.show) ? q = (0, r.jsx)(T, {
     inputSize: L,
-    onClick: J
-  }): null != w && (et = (0, r.jsx)(I, {
+    onClick: W
+  }): null != w && (q = (0, r.jsx)(I, {
     accessory: w,
     inputSize: L
   }));
-  let en = null;
-  null != P && (en = (0, r.jsx)(I, {
+  let X = null;
+  null != P && (X = (0, r.jsx)(I, {
     accessory: P,
     inputSize: L
   }));
-  let er = k ? (0, r.jsx)(d.H, {
+  let Q = j ? (0, r.jsx)(d.H, {
     value: O,
     maxLength: E
   }) : null;
-  return (0, r.jsx)(s.gNt, {
-    id: V,
-    label: G,
-    required: F,
-    description: B,
-    hideLabel: Z,
-    helperText: j,
-    errorMessage: Y.hasError && null != (t = Y.errorMessage) ? t : true,
-    successMessage: U,
-    trailingContent: er,
+  return (0, r.jsx)(s.gNt, b(g({}, U), {
+    errorMessage: G.hasError && null != (t = G.errorMessage) ? t : true,
+    trailingContent: Q,
     children: (0, r.jsxs)(f.U, {
-      ref: $,
+      ref: K,
       disabled: n,
-      validation: Y,
+      validation: G,
       fullWidth: x,
-      readOnly: ee,
+      readOnly: z,
       className: o()(h.container, h[L], {
-        [h.hasLeading]: null != en,
-        [h.hasTrailing]: null != et,
-        [h.hasTags]: z
+        [h.hasLeading]: null != X,
+        [h.hasTrailing]: null != q,
+        [h.hasTags]: F
       }),
-      children: [en, (0, r.jsx)(s.tEY, b(g({
-        ringTarget: $
+      children: [X, (0, r.jsx)(s.tEY, b(g({
+        ringTarget: K
       }, c), {
         children: (0, r.jsx)(A, b(g({
           name: u,
           className: h.input,
           disabled: n,
-          readOnly: ee,
-          "aria-required": F,
+          readOnly: z,
+          "aria-required": U.required,
           type: p,
           placeholder: m,
           maxLength: E,
@@ -271,15 +259,15 @@ function S(e) {
           value: O,
           defaultValue: S,
           "data-mana-component": "text-input"
-        }, H), {
-          onChange: q,
-          onBlur: Q,
-          onFocus: X,
+        }, k), {
+          onChange: V,
+          onBlur: Y,
+          onFocus: H,
           ref: l
         }))
-      })), et]
+      })), q]
     })
-  })
+  }))
 }
 
 function A(e) {

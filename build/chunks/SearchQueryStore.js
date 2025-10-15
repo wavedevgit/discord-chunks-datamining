@@ -124,6 +124,9 @@ class O extends(r = Chunk442837.ZP.Store) {
   getIsSearchTokensInitialized() {
     return u
   }
+  getSearchStateIds() {
+    return Array.from(c.keys())
+  }
 }
 s(O, "displayName", "SearchQueryStore");
 let v = new O(Chunk570140.Z, {

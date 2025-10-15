@@ -5,7 +5,7 @@ require.d(exports, {
   Ct: () => x,
   px: () => j,
   uz: () => L
-}), require("./388685.js"), require("./953529.js");
+}), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
@@ -171,32 +171,18 @@ function L(e) {
 
 function x(e) {
   var {
-    hideLabel: t,
-    description: n,
-    helperText: i,
-    errorMessage: a,
-    successMessage: o,
-    ref: s
-  } = e, l = P(e, ["hideLabel", "description", "helperText", "errorMessage", "successMessage", "ref"]);
+    ref: t
+  } = e, n = P(e, ["ref"]);
   let {
-    id: u,
-    required: d,
-    label: f
-  } = l;
-  return (0, r.jsx)(c.g, {
-    id: u,
-    required: d,
-    label: f,
-    hideLabel: t,
-    description: n,
-    helperText: i,
-    errorMessage: a,
-    successMessage: o,
+    fieldProps: i,
+    props: a
+  } = (0, c.X)(n);
+  return (0, r.jsx)(c.g, R(C({}, i), {
     "data-mana-component": "combobox",
-    children: (0, r.jsx)(M, R(C({}, l), {
-      ref: s
+    children: (0, r.jsx)(M, R(C({}, a), {
+      ref: t
     }))
-  })
+  }))
 }
 
 function M(e) {
