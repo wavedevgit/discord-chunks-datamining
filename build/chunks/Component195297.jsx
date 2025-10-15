@@ -1,16 +1,16 @@
 /** Chunk was on 72891 **/
 /** chunk id: 195297, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => b
+  default: () => P
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   r = require.n(Chunk120356),
+  Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
-  Chunk313201 = require("./313201.js"),
   Chunk455708 = require("./455708.jsx"),
   Chunk222062 = require("./222062.js"),
   Chunk530329 = require("./530329.jsx"),
@@ -22,25 +22,25 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk382775 = require("./382775.js");
 
-function b(e) {
+function P(e) {
   let {
     transitionState: t,
     onClose: o,
-    onComplete: b,
-    uploadType: P,
+    onComplete: P,
+    uploadType: b,
     showUpsellHeader: v,
     analyticsPage: E
-  } = e, [j, R] = a.useState(false), y = (0, l.vRw)(), C = (0, d.Dt)(), {
+  } = e, [j, R] = a.useState(false), y = (0, l.vRw)(), {
     analyticsLocations: I,
-    newestAnalyticsLocation: Z
-  } = (0, s.ZP)(c.Z.GIF_PICKER);
-  async function B(e) {
+    newestAnalyticsLocation: C
+  } = (0, d.ZP)(s.Z.GIF_PICKER);
+  async function Z(e) {
     let {
       gifSrc: t
     } = e;
     if (null == t || j) return;
     R(true);
-    let a = (0, m.Q)(t),
+    let a = (0, x.Q)(t),
       r = await fetch(a),
       c = await r.blob();
     o(), (0, l.ZDy)(async () => {
@@ -69,8 +69,8 @@ function b(e) {
         file: new File([c], "tenor.gif", {
           type: "image/gif"
         }),
-        onCrop: b,
-        uploadType: P,
+        onCrop: P,
+        uploadType: b,
         showUpsellHeader: v
       }, t))
     }, {
@@ -86,49 +86,40 @@ function b(e) {
       }
     })
   }, [I, E]);
-  let L = P === x.pC.AVATAR || P === x.pC.BANNER,
-    w = (0, f.M)(!L);
-  return (0, i.jsx)(s.Gt, {
+  let w = b === m.pC.AVATAR || b === m.pC.BANNER,
+    O = (0, f.M)(!w);
+  return (0, i.jsx)(d.Gt, {
     value: I,
-    children: (0, i.jsxs)(l.Y0X, {
-      "aria-labelledby": C,
+    children: (0, i.jsxs)(c.IX, {
+      onClose: o,
       transitionState: t,
-      size: l.CgR.SMALL,
-      parentComponent: "GIFPickerCroppingModal",
-      children: [v && !w && (0, i.jsx)(p.Z, {
-        type: P,
-        analyticsPage: E,
-        analyticsSection: N.jXE.GIF_PICKER_AVATAR_OR_BANNER_MODAL,
-        isGIF: true
-      }), (0, i.jsxs)(l.xBx, {
-        className: A.modalHeader,
-        separator: false,
-        children: [(0, i.jsx)(l.Heading, {
-          className: A.titleCase,
-          variant: "heading-lg/semibold",
-          children: h.intl.string(h.t["xsC+//"])
-        }), (0, i.jsx)(l.olH, {
-          onClick: o,
-          className: A.modalCloseButton
-        })]
+      children: [(0, i.jsx)(c.xBx, {
+        title: h.intl.string(h.t["xsC+//"])
+      }), v && !O && (0, i.jsx)("div", {
+        className: A.upsellHeaderContainer,
+        children: (0, i.jsx)(p.Z, {
+          type: b,
+          analyticsPage: E,
+          analyticsSection: N.jXE.GIF_PICKER_AVATAR_OR_BANNER_MODAL,
+          isGIF: true
+        })
       }), (0, i.jsxs)("div", {
+        className: A.gifPickerContainer,
         children: [(0, i.jsx)(u.Z, {
-          contentClassName: r()({
-            [A.gifPickerContent]: v && w
-          }),
           className: r()(A.gifPicker, {
             [A.loadingOverlay]: j
           }),
-          onSelectGIF: B,
+          onSelectGIF: Z,
+          headingColor: "text-secondary",
           hideFavorites: true
         }), j && (0, i.jsx)(l.$jN, {
           className: A.spinner
+        }), v && O && (0, i.jsx)(g.Z, {
+          uploadType: b,
+          analyticsSource: C,
+          showUpsell: true,
+          className: A.nitroUpsell
         })]
-      }), v && w && (0, i.jsx)(g.Z, {
-        uploadType: P,
-        analyticsSource: Z,
-        showUpsell: true,
-        className: A.nitroUpsell
       })]
     })
   })

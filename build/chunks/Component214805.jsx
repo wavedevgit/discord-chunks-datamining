@@ -25,7 +25,7 @@ function c(e) {
   } = e;
   return (0, r.jsx)(s.tE, {
     children: (0, r.jsxs)("div", {
-      className: l()(a.wrapper, u.hoverCard),
+      className: l()(u.wrapper, a.hoverCard),
       tabIndex: 0,
       onClick: () => {
         null != c ? c() : null != d && d()
@@ -34,7 +34,7 @@ function c(e) {
         "Enter" === e.key && (e.stopPropagation(), e.preventDefault(), null != c ? c() : null != d && d())
       },
       children: [(0, r.jsx)("div", {
-        className: a.cardHeaderImg,
+        className: u.cardHeaderImg,
         style: null != i ? {
           backgroundImage: null != i ? "url(".concat(i.toString(), ")") : true
         } : true,
@@ -45,25 +45,25 @@ function c(e) {
           width: 80
         })
       }), (0, r.jsxs)("div", {
-        className: a.details,
+        className: u.details,
         children: [(0, r.jsx)(o.xvT, {
           color: "header-primary",
           variant: "text-md/semibold",
           children: n
         }), null != t && (0, r.jsx)(o.xvT, {
-          className: a.description,
+          className: u.description,
           color: "text-muted",
           variant: "text-sm/normal",
           children: t
         })]
       }), (null != p || null != m) && (0, r.jsxs)("div", {
-        className: a.footer,
+        className: u.footer,
         children: [null != p && (0, r.jsx)(o.xvT, {
           color: "interactive-normal",
           variant: "text-sm/normal",
           children: b
         }), (0, r.jsxs)("div", {
-          className: a.buttonGroup,
+          className: u.buttonGroup,
           children: [null != p && (0, r.jsx)(p, {
             onClick: e => {
               e.stopPropagation(), null == d || d()

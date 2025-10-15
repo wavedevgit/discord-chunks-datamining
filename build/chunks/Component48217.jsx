@@ -49,15 +49,15 @@ function _(e) {
     guild: a,
     isGIF: o,
     banner: r
-  } = e, f = o ? (0, l._p)(d.oNc.ANIMATED_BANNER) : (0, l._p)(d.oNc.BANNER);
-  null != f && (0, c.Z)({
+  } = e, f = o ? (0, c._p)(d.oNc.ANIMATED_BANNER) : (0, c._p)(d.oNc.BANNER);
+  null != f && (0, l.Z)({
     analyticsLocations: t,
     analyticsSourceLocation: n,
     guild: a,
     headerProps: {
       title: u.intl.string(u.t["rv2H+/"]),
       subtitle: function(e, t) {
-        let n = (0, l.nW)(e);
+        let n = (0, c.nW)(e);
         return t ? u.intl.formatToPlainString(u.t["TR/Uys"], {
           targetLevelOrPlan: n
         }) : u.intl.formatToPlainString(u.t.B253V1, {

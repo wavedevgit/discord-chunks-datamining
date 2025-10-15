@@ -82,20 +82,23 @@ class C extends Chunk647438.PureComponent {
   }
   renderHeaderContent() {
     let {
-      query: e
+      query: e,
+      headingColor: t
     } = this.props, {
-      resultType: t
+      resultType: n
     } = this.state;
-    switch (exports) {
+    switch (require) {
       case Chunk981631.wI2.FAVORITES:
         return (0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: "heading-md/semibold",
+          color: exports,
           className: Chunk577021.searchHeader,
           children: Chunk388032.intl.string(Chunk388032.t.y3LQCA)
         });
       case Chunk981631.wI2.TRENDING_GIFS:
         return (0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: "heading-md/semibold",
+          color: exports,
           className: Chunk577021.searchHeader,
           children: Chunk388032.intl.string(Chunk388032.t.H6zNFx)
         });

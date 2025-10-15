@@ -24,21 +24,21 @@ function h(e) {
   let {
     analyticsSection: t,
     type: n
-  } = e, h = (0, o.e7)([u.default], () => u.default.getCurrentUser()), A = g.ZP.canUseAnimatedAvatar(h), b = g.ZP.canUsePremiumProfileCustomization(h), P = n === p.pC.BANNER && b || n === p.pC.AVATAR && A, {
+  } = e, h = (0, o.e7)([u.default], () => u.default.getCurrentUser()), A = g.ZP.canUseAnimatedAvatar(h), P = g.ZP.canUsePremiumProfileCustomization(h), b = n === p.pC.BANNER && P || n === p.pC.AVATAR && A, {
     sourceAnalyticsLocations: v
-  } = (0, c.ZP)(l.Z.PREMIUM_PREVIEW_UPSELL_HEADER);
+  } = (0, l.ZP)(c.Z.PREMIUM_PREVIEW_UPSELL_HEADER);
   if (a.useEffect(() => {
-      P || f.default.track(_.rMx.PREMIUM_UPSELL_VIEWED, {
+      b || f.default.track(_.rMx.PREMIUM_UPSELL_VIEWED, {
         type: t,
         location_stack: v
       })
-    }, [P, t, v]), P) return null;
+    }, [b, t, v]), b) return null;
   let E = (0, i.jsx)(s.Z, {
-    className: x.__invalid_getNitroLink,
+    className: m.__invalid_getNitroLink,
     size: r.zx.Sizes.SMALL,
     look: r.zx.Looks.LINK,
     color: r.zx.Colors.LINK,
-    subscriptionTier: m.Si.TIER_2,
+    subscriptionTier: x.Si.TIER_2,
     textOptions: {
       textOverride: N.intl.format(N.t["944tDg"], {})
     },
@@ -51,7 +51,7 @@ function h(e) {
   });
   return (0, i.jsx)(d.Z, {
     reducedRightPadding: true,
-    className: x.nitroPreviewUpsell,
+    className: m.nitroPreviewUpsell,
     text: N.intl.format(N.t.Og8039, {}),
     button: E
   })

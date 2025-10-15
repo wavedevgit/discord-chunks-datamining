@@ -22,11 +22,11 @@ function p(e) {
     analyticsSection: t,
     analyticsPage: n,
     isGIF: p,
-    banner: m
-  } = e, N = (0, a.e7)([d.Z], () => d.Z.getGuildId()), x = (0, a.e7)([s.Z], () => s.Z.getGuild(N)), {
+    banner: x
+  } = e, N = (0, a.e7)([d.Z], () => d.Z.getGuildId()), m = (0, a.e7)([s.Z], () => s.Z.getGuild(N)), {
     analyticsLocations: h
   } = (0, r.ZP)();
-  return null == x || x.features.has(u.oNc.ANIMATED_BANNER) || !p && x.features.has(u.oNc.BANNER) ? null : (0, i.jsxs)("div", {
+  return null == m || m.features.has(u.oNc.ANIMATED_BANNER) || !p && m.features.has(u.oNc.BANNER) ? null : (0, i.jsxs)("div", {
     className: _.container,
     children: [(0, i.jsx)(o.Ucv, {
       color: o.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
@@ -40,22 +40,22 @@ function p(e) {
       children: (0, i.jsx)(o.Avr, {
         text: g.intl.string(g.t.WUHdZW),
         onClick: () => {
-          if (null == x) return;
+          if (null == m) return;
           let e = {
             section: t,
             page: n,
             object: u.qAy.UPSELL_HEADER
           };
-          null != m ? (0, l.c)({
+          null != x ? (0, c.c)({
             analyticsLocations: h,
             analyticsLocation: e,
-            guild: x,
+            guild: m,
             isGIF: p,
-            banner: m
-          }) : (0, c.Z)({
+            banner: x
+          }) : (0, l.Z)({
             analyticsLocations: h,
             analyticsSourceLocation: e,
-            guild: x,
+            guild: m,
             perks: p ? (0, f.zC)() : (0, f.XO)()
           })
         },
