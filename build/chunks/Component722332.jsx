@@ -1,7 +1,7 @@
 /** Chunk was on 22981 **/
 /** chunk id: 722332, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => g
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -9,7 +9,6 @@ var Chunk951288 = require("./951288.js"),
   l = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk481060 = require("./481060.js"),
   Chunk678717 = require("./678717.jsx"),
   Chunk715495 = require("./715495.jsx"),
   Chunk928518 = require("./928518.js"),
@@ -17,68 +16,75 @@ var Chunk951288 = require("./951288.js"),
   Chunk383036 = require("./383036.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk440543 = require("./440543.js");
-let g = e => {
+let f = e => {
     let {
       setTab: t
-    } = e, n = (0, s.e7)([m.Z], () => m.Z.getWindowOpen(x.KJ3.DEVTOOLS_POPOUT));
+    } = e, n = (0, s.e7)([u.Z], () => u.Z.getWindowOpen(h.KJ3.DEVTOOLS_POPOUT));
     return (0, a.jsxs)("div", {
-      className: f.content,
-      children: [(0, a.jsx)(c.P3F, {
+      className: x.content,
+      children: [(0, a.jsx)(o.P3F, {
         onClick: () => {
           t(1)
         },
         children: (0, a.jsx)("div", {
-          className: l()(f.banner, f.pfxBanner),
+          className: l()(x.banner, x.pfxBanner),
           children: (0, a.jsx)(o.xvT, {
             variant: "text-md/bold",
             color: "always-white",
             children: "Profile Effects"
           })
         })
-      }), (0, a.jsx)(c.P3F, {
+      }), (0, a.jsx)(o.P3F, {
         onClick: () => {
           t(2)
         },
         children: (0, a.jsx)("div", {
-          className: l()(f.banner, f.nameplateBanner),
+          className: l()(x.banner, x.nameplateBanner),
           children: (0, a.jsx)(o.xvT, {
             variant: "text-md/bold",
             color: "always-white",
             children: "Nameplates"
           })
         })
-      }), (0, a.jsx)(c.P3F, {
+      }), (0, a.jsx)(o.P3F, {
         onClick: () => {
           t(3)
         },
         children: (0, a.jsx)("div", {
-          className: l()(f.banner, f.bundlesBanner),
+          className: l()(x.banner, x.bundlesBanner),
           children: (0, a.jsx)(o.xvT, {
             variant: "text-md/bold",
             color: "always-white",
             children: "Product Preview Tool"
           })
         })
-      }), !n && (0, a.jsx)(c.ToO, {
-        className: f.notice,
-        type: c.Dd5.WARNING,
-        title: "Not enough space?",
-        body: (0, a.jsxs)("div", {
-          className: f.noticeBody,
-          children: [(0, a.jsx)("span", {
-            children: " You can pop out the DevTools to see the full layout. "
-          }), (0, a.jsx)(c.Button, {
-            size: "sm",
-            icon: o.rgF,
-            variant: "secondary",
-            onClick: d.openDevToolsPopout,
-            text: "Popout DevTools"
-          })]
+      }), !n && (0, a.jsx)("div", {
+        style: {
+          marginTop: 16
+        },
+        children: (0, a.jsx)(o.M14, {
+          type: "warning",
+          children: (0, a.jsxs)(o.Kqy, {
+            gap: 8,
+            children: [(0, a.jsx)(o.xvT, {
+              variant: "text-md/semibold",
+              children: "Not enough space?"
+            }), (0, a.jsx)(o.xvT, {
+              variant: "text-sm/normal",
+              children: "You can pop out the DevTools to see the full layout."
+            }), (0, a.jsx)(o.zxk, {
+              size: "sm",
+              icon: o.rgF,
+              variant: "secondary",
+              onClick: c.openDevToolsPopout,
+              text: "Popout DevTools"
+            })]
+          })
         })
       })]
     })
   },
-  b = () => {
+  g = () => {
     let [e, t] = Chunk647438.useState(0);
     return (0, Chunk951288.jsxs)(Chunk793030.zJl, {
       className: Chunk440543.wrapper,
@@ -87,7 +93,7 @@ let g = e => {
         children: [(0, Chunk951288.jsx)(Chunk793030.X6q, {
           variant: "heading-xxl/medium",
           children: "ShopKeeper"
-        }), 0 !== module && (0, Chunk951288.jsx)(Chunk481060.Button, {
+        }), 0 !== module && (0, Chunk951288.jsx)(Chunk793030.zxk, {
           variant: "primary",
           onClick: () => exports(0),
           text: "Back"
@@ -101,7 +107,7 @@ let g = e => {
           case 3:
             return (0, Chunk951288.jsx)(Chunk383036.Z, {});
           default:
-            return (0, Chunk951288.jsx)(g, {
+            return (0, Chunk951288.jsx)(f, {
               setTab: exports
             })
         }

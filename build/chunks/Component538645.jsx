@@ -1,7 +1,7 @@
 /** Chunk was on 22981 **/
 /** chunk id: 538645, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => v
 }), require("./388685.js"), require("./953529.js"), require("./35282.js"), require("./853839.js"), require("./570086.js"), require("./479048.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -12,31 +12,32 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk53281 = require("./53281.jsx"),
   Chunk281598 = require("./281598.js"),
+  Chunk365943 = require("./365943.js"),
   Chunk25251 = require("./25251.js"),
   Chunk373071 = require("./373071.js"),
   Chunk782691 = require("./782691.jsx"),
   Chunk558270 = require("./558270.js");
-let f = "Make sure you're only uploading text files!",
-  g = e => {
+let g = "Make sure you're only uploading text files!",
+  b = e => {
     var t, n, r;
     let {
       effect: i,
       onClick: l
     } = e, {
       deleteConfig: o
-    } = (0, p.n6)();
+    } = (0, h.n6)();
     return (0, a.jsxs)(c.P3F, {
-      className: x.previewCard,
+      className: f.previewCard,
       onClick: () => {
         l(i)
       },
       children: [(0, a.jsx)("div", {
-        className: x.previewCardImage,
+        className: f.previewCardImage,
         style: {
           backgroundImage: "url(".concat(null == (r = i.config) || null == (n = r.effects) || null == (t = n[0]) ? true : t.base64, ")")
         }
       }), (0, a.jsxs)("div", {
-        className: x.previewCardFooter,
+        className: f.previewCardFooter,
         children: [(0, a.jsx)(c.Text, {
           variant: "text-md/bold",
           children: i.name
@@ -51,24 +52,33 @@ let f = "Make sure you're only uploading text files!",
     })
   };
 
-function b() {
+function v() {
   let {
     profileEffects: e,
     upsertConfig: t
-  } = (0, Chunk373071.n6)(), [n, i] = Chunk647438.useState(), b = Chunk647438.useRef(null), v = (0, Chunk442837.Wu)([Chunk25251.Z], () => Chunk25251.Z.getAllProfileEffects()), [j, _] = Chunk647438.useState(""), y = Chunk647438.useMemo(() => "" === j ? v : v.filter(e => {
-    let t = j.toLowerCase();
-    return e.config.title.toLowerCase().includes(t) || e.config.description.toLowerCase().includes(t)
-  }), [j, v]), C = Chunk647438.useCallback((e, n) => {
-    if (null == n || !e.type.startsWith("text/")) return (0, u.Eo)(f);
-    let [a, r] = n.split(",");
-    if (!a.includes("text/plain")) return (0, u.Eo)(f);
-    let i = JSON.parse(atob(r));
-    i.skuId = (0, o.Z)(), t(i), (0, u.XA)("Profile Effect (maybe??) imported!")
-  }, [exports]), S = Chunk647438.useCallback(e => {
-    var t;
-    if ((null == (t = e.currentTarget) ? true : t.files) == null) return void(0, u.Eo)("Error uploading file. Try again!");
-    (0, u.Kr)(e.currentTarget.files, C, u.Eo)
-  }, [C]);
+  } = (0, Chunk373071.n6)(), [n, i] = Chunk647438.useState(), v = Chunk647438.useRef(null), j = (0, Chunk442837.Wu)([Chunk25251.Z], () => Chunk25251.Z.getAllProfileEffects()), [_, y] = Chunk647438.useState("");
+  Chunk647438.useEffect(() => {
+    (0, Chunk365943.t)(true)
+  }, []);
+  let C = Chunk647438.useMemo(() => "" === _ ? j : j.filter(e => {
+      var t, n, a, r;
+      let i = _.toLowerCase(),
+        l = null != (a = null == (t = e.config.title) ? true : t.toLowerCase()) ? a : "",
+        o = null != (r = null == (n = e.config.description) ? true : n.toLowerCase()) ? r : "";
+      return l.includes(i) || o.includes(i)
+    }), [_, j]),
+    S = Chunk647438.useCallback((e, n) => {
+      if (null == n || !e.type.startsWith("text/")) return (0, u.Eo)(g);
+      let [a, r] = n.split(",");
+      if (!a.includes("text/plain")) return (0, u.Eo)(g);
+      let i = JSON.parse(atob(r));
+      i.skuId = (0, o.Z)(), t(i), (0, u.XA)("Profile Effect (maybe??) imported!")
+    }, [exports]),
+    E = Chunk647438.useCallback(e => {
+      var t;
+      if ((null == (t = e.currentTarget) ? true : t.files) == null) return void(0, u.Eo)("Error uploading file. Try again!");
+      (0, u.Kr)(e.currentTarget.files, S, u.Eo)
+    }, [S]);
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk558270.root,
     children: [null == require && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
@@ -82,7 +92,7 @@ function b() {
           })
         }), (0, Chunk951288.jsx)("div", {
           className: Chunk558270.customEffectsGrid,
-          children: Object.values(module).map(e => (0, a.jsx)(g, {
+          children: Object.values(module).map(e => (0, a.jsx)(b, {
             effect: e,
             onClick: e => {
               i(e)
@@ -98,8 +108,8 @@ function b() {
             color: "always-white",
             children: "Import Shared Config"
           }), (0, Chunk951288.jsx)(Chunk53281.Z, {
-            ref: b,
-            onChange: S,
+            ref: v,
+            onChange: E,
             multiple: false
           })]
         }), (0, Chunk951288.jsx)(Chunk481060.Button, {
@@ -121,14 +131,14 @@ function b() {
           variant: "heading-xl/bold",
           children: "All Effects"
         }), (0, Chunk951288.jsx)(Chunk481060.oil, {
-          value: j,
+          value: _,
           onChange: e => {
-            _(e)
+            y(e)
           }
         }), (0, Chunk951288.jsx)("div", {
           className: Chunk558270.pfxGrid,
-          children: y.map(e => (0, a.jsx)(c.P3F, {
-            className: x.pfxListItem,
+          children: C.map(e => (0, a.jsx)(c.P3F, {
+            className: f.pfxListItem,
             style: {
               backgroundImage: "url(".concat(e.config.thumbnailPreviewSrc, ")")
             },
@@ -143,7 +153,7 @@ function b() {
               })
             },
             children: (0, a.jsx)("div", {
-              className: x.pfxListItemFooter,
+              className: f.pfxListItemFooter,
               children: (0, a.jsx)(c.Text, {
                 variant: "text-md/normal",
                 color: "always-white",

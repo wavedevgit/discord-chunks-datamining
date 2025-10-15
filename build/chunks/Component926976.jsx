@@ -93,7 +93,7 @@ function I(e) {
   })
 }
 let w = new Set(["client_performance_cpu", "client_performance_memory"]),
-  R = [{
+  k = [{
     id: "details",
     name: "Details",
     group: Chunk621060.v0.NONE,
@@ -228,10 +228,10 @@ let w = new Set(["client_performance_cpu", "client_performance_memory"]),
       })
     }
   }],
-  k = {
+  R = {
     events: {
       label: "Events",
-      filter: e => Object.entries(k).filter(e => {
+      filter: e => Object.entries(R).filter(e => {
         let [t] = e;
         return "events" !== t
       }).map(t => {
@@ -270,7 +270,7 @@ function D() {
   let e = Chunk647438.useRef(null),
     [t, n] = Chunk647438.useState(""),
     i = (0, Chunk442837.e7)([Chunk120816.Z], () => Chunk120816.Z.loggedEventsVersion),
-    [o, s] = Chunk647438.useState(() => Object.keys(k)),
+    [o, s] = Chunk647438.useState(() => Object.keys(R)),
     [m, p] = Chunk647438.useState(Chunk120816.Z.loggedEvents),
     h = Chunk647438.useCallback(e => {
       p(e)
@@ -278,7 +278,7 @@ function D() {
   (0, Chunk301801.BO)(exports, Chunk120816.Z.loggedEvents, Chunk886118, A, [Chunk120356]);
   let f = Chunk129861.filter(e => {
       for (let t of o)
-        if (k[t].filter(e)) returntrue;
+        if (R[t].filter(e)) returntrue;
       returnfalse
     }),
     [g, b] = Chunk647438.useState(true),
@@ -287,7 +287,7 @@ function D() {
       TabBar: P,
       renderSelectedTab: I
     } = (0, Chunk621060.ZP)({
-      tabs: R
+      tabs: k
     }, []);
   return (0, Chunk951288.jsxs)("div", {
     ref: module,
@@ -311,7 +311,7 @@ function D() {
         className: Chunk599832.toolbarDivider
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk599832.filters,
-        children: Object.entries(k).map(e => {
+        children: Object.entries(R).map(e => {
           let [t, n] = e;
           return (0, a.jsx)(u.P3F, {
             className: l()(T.filter, o.includes(t) && T.activeFilter),

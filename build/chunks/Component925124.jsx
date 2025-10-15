@@ -1,7 +1,7 @@
 /** Chunk was on 22981 **/
 /** chunk id: 925124, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => R
+  Z: () => k
 }), require("./388685.js"), require("./642613.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -106,8 +106,8 @@ function I(e) {
   }, [O]);
   let {
     id: w,
-    expires_at: R,
-    redeemed_at: k,
+    expires_at: k,
+    redeemed_at: R,
     trial_id: A,
     subscription_trial: D,
     referrer: Z
@@ -118,8 +118,8 @@ function I(e) {
     return t === A
   })) ? true : t.label) ? n : "Unknown";
   null != Z && (M = "".concat(M, " from @").concat(Z.username));
-  let L = null != R,
-    U = null != R && new Date(R).getTime() < Date.now(),
+  let L = null != k,
+    U = null != k && new Date(k).getTime() < Date.now(),
     F = (null == D ? true : D.sku_id) === _.Si.TIER_0,
     B = async () => {
       N(true), L ? await G({
@@ -241,7 +241,7 @@ function I(e) {
         children: ["Expires (", (0, d.Z)(), "):"]
       }), (0, a.jsx)("input", {
         type: "datetime-local",
-        value: (0, x.mm)(R),
+        value: (0, x.mm)(k),
         onChange: e => {
           G({
             expiresAt: "" !== e.target.value ? new Date(e.target.value).toISOString() : null
@@ -274,7 +274,7 @@ function I(e) {
           color: "Acked" === z ? true : "always-white",
           children: z
         })
-      }), null != k && (0, a.jsx)("div", {
+      }), null != R && (0, a.jsx)("div", {
         className: l()(y.badge, y.redeemed),
         children: (0, a.jsx)(c.Text, {
           variant: "eyebrow",
@@ -327,8 +327,8 @@ function w(e) {
       value: t
     } = e;
     return t === P
-  })) ? true : t.label) ? n : "Unknown", R = null != O, k = null != O && new Date(O).getTime() < Date.now(), A = async () => {
-    _(true), R ? await D({
+  })) ? true : t.label) ? n : "Unknown", k = null != O, R = null != O && new Date(O).getTime() < Date.now(), A = async () => {
+    _(true), k ? await D({
       expiresAt: null
     }) : await (0, u.ab)(true, i), m(), _(false)
   }, D = async e => {
@@ -367,7 +367,7 @@ function w(e) {
     }
   }, [p, g]);
   let Z = "Active";
-  return k && (Z = "Expired"), R && (Z = "Acked"), (0, a.jsxs)("div", {
+  return R && (Z = "Expired"), k && (Z = "Acked"), (0, a.jsxs)("div", {
     className: l()(y.card, y.discount),
     children: [(0, a.jsxs)("div", {
       className: l()(y.row, y.nameRow),
@@ -445,8 +445,8 @@ function w(e) {
       children: [(0, a.jsx)(c.P3F, {
         onClick: A,
         className: l()(y.badge, y.clickable, {
-          [y.acked]: R,
-          [y.expired]: k
+          [y.acked]: k,
+          [y.expired]: R
         }),
         children: (0, a.jsx)(c.Text, {
           variant: "eyebrow",
@@ -470,8 +470,8 @@ function w(e) {
   })
 }
 
-function R() {
-  let [e, t] = Chunk647438.useState([]), [n, i] = Chunk647438.useState([]), [l, o] = Chunk647438.useState(), [d, h] = Chunk647438.useState(), [x, f] = Chunk647438.useState([]), [_, T] = Chunk647438.useState([]), [R, k] = Chunk647438.useState(true), [A, D] = Chunk647438.useState(10080), [Z, M] = Chunk647438.useState([]), {
+function k() {
+  let [e, t] = Chunk647438.useState([]), [n, i] = Chunk647438.useState([]), [l, o] = Chunk647438.useState(), [d, h] = Chunk647438.useState(), [x, f] = Chunk647438.useState([]), [_, T] = Chunk647438.useState([]), [k, R] = Chunk647438.useState(true), [A, D] = Chunk647438.useState(10080), [Z, M] = Chunk647438.useState([]), {
     entitlements: L,
     deleteFractionalPremium: U,
     refreshEntitlementList: F
@@ -481,7 +481,7 @@ function R() {
   }, [F]), Chunk647438.useEffect(() => {
     M(L.filter(e => e.sourceType === j.kNB.REVERSE_TRIAL && null != e.endsAt && e.endsAt > new Date))
   }, [L]), Chunk647438.useEffect(() => {
-    (0 === module.length || 0 === require.length || R) && S().then(e => {
+    (0 === module.length || 0 === require.length || k) && S().then(e => {
       let n = Object.keys(e.trial).map(t => ({
           label: t,
           value: e.trial[t]
@@ -492,17 +492,17 @@ function R() {
         }));
       t(n), i(a), null == l && o(n[0].value), null == d && h(a[0].value)
     })
-  }, [module, require, l, Chunk105713, R]), Chunk647438.useEffect(() => {
-    R && (k(false), Chunk431.Z.forceReset(), (0, Chunk937579.Tf)(), O().then(e => {
+  }, [module, require, l, Chunk105713, k]), Chunk647438.useEffect(() => {
+    k && (R(false), Chunk431.Z.forceReset(), (0, Chunk937579.Tf)(), O().then(e => {
       f(e.trial.sort((e, t) => e.id.localeCompare(t.id))), T(e.discount.sort((e, t) => e.id.localeCompare(t.id)))
     }))
-  }, [R]);
+  }, [k]);
   let B = async () => {
-    null != l && (await E(l, "trial"), k(true))
+    null != l && (await E(l, "trial"), R(true))
   }, G = async () => {
-    null != Chunk105713 && (await E(Chunk105713, "discount"), k(true))
+    null != Chunk105713 && (await E(Chunk105713, "discount"), R(true))
   }, z = async () => {
-    await N(), k(true)
+    await N(), R(true)
   }, V = async () => {
     let e = new Date(Date.now() + 60 * A * 1e3).toISOString();
     await P(module), F()
@@ -537,7 +537,7 @@ function R() {
             variant: "primary",
             size: "sm",
             text: "Refresh DevTools",
-            onClick: () => k(true)
+            onClick: () => R(true)
           })]
         })]
       }), (0, Chunk951288.jsxs)("section", {
@@ -590,7 +590,7 @@ function R() {
         }), Chunk55935.map(t => (0, a.jsx)(I, {
           offer: t,
           offerOptions: e,
-          forceRefetch: () => k(true)
+          forceRefetch: () => R(true)
         }, t.id))]
       }), Chunk474936.length > 0 && (0, Chunk951288.jsxs)("section", {
         className: Chunk711322.section,
@@ -600,7 +600,7 @@ function R() {
         }), Chunk474936.map(e => (0, a.jsx)(w, {
           offer: e,
           offerOptions: n,
-          forceRefetch: () => k(true)
+          forceRefetch: () => R(true)
         }, e.id))]
       }), (0, Chunk951288.jsxs)("section", {
         className: Chunk711322.section,

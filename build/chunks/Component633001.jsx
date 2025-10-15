@@ -131,7 +131,7 @@ function Q(e) {
     color: u.zx.Colors.LINK,
     size: u.zx.Sizes.MIN,
     onClick: function() {
-      (0, k.JG)(t, () => i(true))
+      (0, R.JG)(t, () => i(true))
     },
     className: W.copyId,
     children: ["Application Id: ", t, " ", n ? H.intl.string(H.t["t5VZ8/"]) : null]
@@ -241,7 +241,7 @@ let $ = Chunk647438.memo(function(e) {
   ee = Chunk647438.memo(function(e) {
     let {
       pid: t
-    } = e, n = (0, d.cj)([R.default], () => R.default.getOverlayPIDStatuses()), r = (0, d.cj)([C.default], () => C.default.getTrackedGames()), i = (0, d.e7)([R.default], () => R.default.isInputLocked(t), [t]), l = (0, d.e7)([R.default], () => R.default.DEV_isInputLockedV3(t), [t]), o = (0, d.e7)([R.default], () => R.default.DEV_isInputLocked(t), [t]), s = (0, d.e7)([R.default], () => R.default.isReady(t), [t]);
+    } = e, n = (0, d.cj)([k.default], () => k.default.getOverlayPIDStatuses()), r = (0, d.cj)([C.default], () => C.default.getTrackedGames()), i = (0, d.e7)([k.default], () => k.default.isInputLocked(t), [t]), l = (0, d.e7)([k.default], () => k.default.DEV_isInputLockedV3(t), [t]), o = (0, d.e7)([k.default], () => k.default.DEV_isInputLocked(t), [t]), s = (0, d.e7)([k.default], () => k.default.isReady(t), [t]);
     return (0, a.jsxs)("div", {
       className: W.panelGroup,
       children: [(0, a.jsx)(m.Text, {
@@ -870,7 +870,7 @@ let eg = ["__webpack_require__", "fn"],
             children: [d, " (", u, ")", (0, a.jsx)(m.P3F, {
               tag: "span",
               className: W.copyEventButton,
-              onClick: () => (0, k.JG)(d),
+              onClick: () => (0, R.JG)(d),
               children: (0, a.jsx)(m.TIy, {
                 color: "currentColor",
                 size: "sm"
@@ -880,7 +880,7 @@ let eg = ["__webpack_require__", "fn"],
             icon: m.TIy,
             tooltip: "Copy all properties",
             onClick: () => {
-              (0, k.JG)(ef(o))
+              (0, R.JG)(ef(o))
             }
           }), (0, a.jsx)(j.Z.Icon, {
             icon: m.k$p,
@@ -983,7 +983,7 @@ function e_() {
       if (n(e)) returntrue
     }
     returnfalse
-  }), [Chunk837268, Chunk765250, Chunk755721, s, Chunk371651]), [P, I] = Chunk647438.useState(Chunk886118), [w, R] = Chunk647438.useState(null), A = Chunk647438.useMemo(() => Chunk837268.find(e => e.key === w), [Chunk837268, Chunk449224]), D = Chunk647438.useCallback(e => {
+  }), [Chunk837268, Chunk765250, Chunk755721, s, Chunk371651]), [P, I] = Chunk647438.useState(Chunk886118), [w, k] = Chunk647438.useState(null), A = Chunk647438.useMemo(() => Chunk837268.find(e => e.key === w), [Chunk837268, Chunk449224]), D = Chunk647438.useCallback(e => {
     I(e)
   }, []), {
     renderSelectedTab: M
@@ -1097,7 +1097,7 @@ function e_() {
         columns: eh,
         data: Chunk352527,
         selectedRowKey: null != Chunk449224 ? Chunk449224 : true,
-        onClickRow: e => R(e.key)
+        onClickRow: e => k(e.key)
       })
     }), null != Chunk55935 && (0, Chunk951288.jsx)(Chunk484036.Z, {
       className: l()(Chunk454741.panelGroup, Chunk454741.subPanel),

@@ -28,7 +28,7 @@ function S(e) {
     try {
       await c.Z.removeSkuFromWishlist(i, t.skuId, f)
     } catch (e) {
-      (0, d.L$)(o.qb.SOMETHING_WENT_WRONG)
+      (0, o.L$)(d.qb.SOMETHING_WENT_WRONG)
     }
   };
   return (0, l.jsx)(n.u, {

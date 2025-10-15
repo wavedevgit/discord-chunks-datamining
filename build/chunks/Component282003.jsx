@@ -52,7 +52,7 @@ let b = () => {
     let [e, t] = Chunk647438.useState(Chunk474936.PremiumTypes.TIER_0), [n, b] = Chunk647438.useState(Chunk45474.R.WHAT_YOU_LOSE), [j, _] = Chunk647438.useState(null), [y, C] = Chunk647438.useState(Chunk474936.Xh.PREMIUM_MONTH_TIER_0), [S, E] = Chunk647438.useState([]), [T, O] = Chunk647438.useState(() => {
       let e = new Date;
       return module.setMonth(module.getMonth() + 1), module
-    }), [N, P] = Chunk647438.useState(null), [I, w] = Chunk647438.useState(false), [R, k] = Chunk647438.useState(false), [A, D] = Chunk647438.useState(false);
+    }), [N, P] = Chunk647438.useState(null), [I, w] = Chunk647438.useState(false), [k, R] = Chunk647438.useState(false), [A, D] = Chunk647438.useState(false);
     (0, Chunk647438.useEffect)(() => {
       (0, Chunk821849.Y2)()
     }, []), (0, Chunk647438.useEffect)(() => {
@@ -139,7 +139,7 @@ let b = () => {
           intervalCount: 1
         },
         errorOnCancel: I,
-        errorOnRedeem: R,
+        errorOnRedeem: k,
         setActiveStep: e => {
           b(e), t.onClose()
         },
@@ -167,7 +167,7 @@ let b = () => {
           pauseReason: p.Id.UNKNOWN
         }
       })))
-    }, [module, j, y, N, I, R, require, T]);
+    }, [module, j, y, N, I, k, require, T]);
     return (0, Chunk647438.useEffect)(() => {
       A && Z()
     }, [require, A, Z]), (0, Chunk951288.jsxs)(Chunk237012.$0, {
@@ -252,9 +252,9 @@ let b = () => {
           })
         }), (0, Chunk951288.jsx)(Chunk237012.BZ, {
           children: (0, Chunk951288.jsx)(Chunk481060.Checkbox, {
-            checked: R,
+            checked: k,
             onChange: () => {
-              k(!R)
+              R(!k)
             },
             label: "Error on Redeem Offer"
           })

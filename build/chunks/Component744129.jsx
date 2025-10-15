@@ -2,9 +2,9 @@
 /** chunk id: 744129, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  IL: () => B,
-  UQ: () => G,
-  rz: () => F
+  IL: () => Z,
+  UQ: () => B,
+  rz: () => V
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -24,6 +24,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk756896 = require("./756896.jsx"),
   Chunk589072 = require("./589072.jsx"),
   Chunk140465 = require("./140465.js"),
+  Chunk998030 = require("./998030.js"),
   Chunk474706 = require("./474706.jsx"),
   Chunk104494 = require("./104494.js"),
   Chunk639119 = require("./639119.js"),
@@ -40,7 +41,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk381126 = require("./381126.js"),
   Chunk234286 = require("./234286.js");
 
-function M(e, t, n) {
+function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -49,20 +50,20 @@ function M(e, t, n) {
   }) : e[t] = n, e
 }
 
-function j(e) {
+function k(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      M(e, t, n[t])
+      j(e, t, n[t])
     })
   }
   return e
 }
 
-function k(e, t) {
+function U(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -73,50 +74,10 @@ function k(e, t) {
   return n
 }
 
-function U(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : k(Object(t)).forEach(function(n) {
+function G(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : U(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
-}
-
-function G(e) {
-  var t;
-  let {
-    ctaButton: n,
-    showYearlyPrice: i,
-    className: o,
-    isGift: l = false,
-    priceOptions: u,
-    isApplicationHome: f = false
-  } = e, _ = (0, s.e7)([m.Z], () => m.Z.getPremiumTypeSubscription()), p = (0, s.e7)([h.default], () => h.default.getCurrentUser()), E = (0, v.N)(), b = null == E || null == (t = E.subscription_trial) ? true : t.sku_id, y = (null == _ ? true : _.hasActiveTrial) ? null == p ? true : p.premiumType : null, O = (0, A.y_)(y, b), I = null != O, T = (0, c.ap)((0, d.ZP)());
-  return (0, r.jsxs)("div", {
-    className: a()(w.card, w.tier0, o, {
-      [w.pillMargin]: !f && I
-    }),
-    children: [I && (0, r.jsx)(S.E, {
-      text: O,
-      className: w.pill
-    }), (0, r.jsx)(g.Z, {
-      className: w.wordmark,
-      color: T ? "black" : "white"
-    }), (0, r.jsx)(N.Z, {
-      isGift: l,
-      premiumTier: R.PremiumTypes.TIER_0,
-      offerType: R.C.PREMIUM_TRIAL,
-      offerTierMatchesCard: b === R.Si.TIER_0,
-      showYearlyPrice: i,
-      priceOptions: u,
-      enablePremiumBrandRefresh: true,
-      headingVariant: "text-md/medium",
-      headingColor: "text-primary",
-      headerClassName: w.priceHeader
-    }), (0, r.jsx)("hr", {
-      className: w.divider
-    }), (0, r.jsx)(C.ql, {
-      enablePremiumBrandRefresh: true,
-      isApplicationHome: f
-    }), n]
-  })
 }
 
 function B(e) {
@@ -124,80 +85,130 @@ function B(e) {
   let {
     ctaButton: n,
     showYearlyPrice: i,
-    featureSet: o = C.uZ.DEFAULT,
+    className: o,
+    isGift: l = false,
+    priceOptions: f,
+    isApplicationHome: _ = false
+  } = e, p = (0, s.e7)([m.Z], () => m.Z.getPremiumTypeSubscription()), E = (0, s.e7)([h.default], () => h.default.getCurrentUser()), b = (0, I.N)(), O = null == b || null == (t = b.subscription_trial) ? true : t.sku_id, v = (null == p ? true : p.hasActiveTrial) ? null == E ? true : E.premiumType : null, T = (0, C.y_)(v, O), S = null != T, w = (0, c.ap)((0, d.ZP)()), L = (0, y.y)({
+    location: "PremiumBrandRefreshTierCards"
+  }), x = (0, r.jsxs)(r.Fragment, {
+    children: [S && (0, r.jsx)(A.E, {
+      text: T,
+      className: D.pill
+    }), (0, r.jsx)(g.Z, {
+      className: D.wordmark,
+      color: w ? "black" : "white"
+    }), (0, r.jsx)(R.Z, {
+      isGift: l,
+      premiumTier: P.PremiumTypes.TIER_0,
+      offerType: P.C.PREMIUM_TRIAL,
+      offerTierMatchesCard: O === P.Si.TIER_0,
+      showYearlyPrice: i,
+      priceOptions: f,
+      enablePremiumBrandRefresh: true,
+      headingVariant: "text-md/medium",
+      headingColor: "text-primary",
+      headerClassName: D.priceHeader
+    }), (0, r.jsx)("hr", {
+      className: D.divider
+    }), (0, r.jsx)(N.ql, {
+      enablePremiumBrandRefresh: true,
+      isApplicationHome: _
+    }), n]
+  });
+  return L ? (0, r.jsx)(u.$1m, {
+    color: "nitro-green",
+    className: a()(D.card, D.tier0, o, {
+      [D.pillMargin]: !_ && S
+    }),
+    children: x
+  }) : (0, r.jsx)("div", {
+    className: a()(D.card, D.tier0, o, {
+      [D.pillMargin]: !_ && S
+    }),
+    children: x
+  })
+}
+
+function Z(e) {
+  var t;
+  let {
+    ctaButton: n,
+    showYearlyPrice: i,
+    featureSet: o = N.uZ.DEFAULT,
     className: l,
     isGift: f = false,
     isModal: _ = false,
     priceOptions: p,
     showPromotionalGiftBanner: g = false,
-    wumpusPosition: I = "inCard",
+    wumpusPosition: y = "inCard",
     isApplicationHome: T = false
-  } = e, M = (0, s.e7)([m.Z], () => m.Z.getPremiumTypeSubscription()), j = (0, s.e7)([h.default], () => h.default.getCurrentUser()), k = (0, v.N)(), U = null == k || null == (t = k.subscription_trial) ? true : t.sku_id, G = (null == M ? true : M.hasActiveTrial) ? null == j ? true : j.premiumType : null, B = (0, O.Ng)(), Z = (0, b.t7)(), F = null != U || null != G ? R.C.PREMIUM_TRIAL : null != B || Z ? R.C.PREMIUM_DISCOUNT : null, V = (0, c.ap)((0, d.ZP)()), H = (0, A.A1)(Z, G, B, k, U), Y = () => (0, r.jsxs)(r.Fragment, {
+  } = e, S = (0, s.e7)([m.Z], () => m.Z.getPremiumTypeSubscription()), j = (0, s.e7)([h.default], () => h.default.getCurrentUser()), k = (0, I.N)(), U = null == k || null == (t = k.subscription_trial) ? true : t.sku_id, G = (null == S ? true : S.hasActiveTrial) ? null == j ? true : j.premiumType : null, B = (0, v.Ng)(), Z = (0, b.t7)(), F = null != U || null != G ? P.C.PREMIUM_TRIAL : null != B || Z ? P.C.PREMIUM_DISCOUNT : null, V = (0, c.ap)((0, d.ZP)()), H = (0, C.A1)(Z, G, B, k, U), Y = () => (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("img", {
-      src: L,
-      alt: "",
-      className: a()(w.bigCloud, w[I])
-    }), (0, r.jsx)("img", {
-      src: D,
-      alt: "",
-      className: a()(w.smallCloud, w[I])
-    }), (0, r.jsx)("img", {
       src: x,
       alt: "",
-      className: a()(w.wumpus, w[I])
+      className: a()(D.bigCloud, D[y])
+    }), (0, r.jsx)("img", {
+      src: L,
+      alt: "",
+      className: a()(D.smallCloud, D[y])
+    }), (0, r.jsx)("img", {
+      src: M,
+      alt: "",
+      className: a()(D.wumpus, D[y])
     })]
   });
   return (0, r.jsxs)(u.$1m, {
     color: "nitro-pink",
-    className: a()(w.card, l, {
-      [w.withGiftBanner]: g
+    className: a()(D.card, l, {
+      [D.withGiftBanner]: g
     }),
-    children: [(0, r.jsx)(Y, {}), (0, r.jsx)(S.E, {
-      text: null != H ? H : P.intl.string(P.t["6bEcYm"]),
-      className: w.pill
+    children: [(0, r.jsx)(Y, {}), (0, r.jsx)(A.E, {
+      text: null != H ? H : w.intl.string(w.t["6bEcYm"]),
+      className: D.pill
     }), (0, r.jsx)(E.Z, {
-      className: w.wordmark,
+      className: D.wordmark,
       color: V ? "black" : "white"
-    }), (0, r.jsx)(N.Z, {
+    }), (0, r.jsx)(R.Z, {
       isGift: f,
-      premiumTier: R.PremiumTypes.TIER_2,
+      premiumTier: P.PremiumTypes.TIER_2,
       offerType: F,
-      offerTierMatchesCard: U === R.Si.TIER_2 || (0, O.Wp)(B, R.Si.TIER_2),
+      offerTierMatchesCard: U === P.Si.TIER_2 || (0, v.Wp)(B, P.Si.TIER_2),
       showYearlyPrice: i,
       priceOptions: p,
       enablePremiumBrandRefresh: true,
       headingVariant: "text-md/medium",
       headingColor: "text-primary",
-      headerClassName: w.priceHeader
+      headerClassName: D.priceHeader
     }), (0, r.jsx)("hr", {
-      className: w.divider
-    }), (0, r.jsx)(C.nT, {
+      className: D.divider
+    }), (0, r.jsx)(N.nT, {
       featureSet: o,
       isModal: _,
       isGift: f,
       enablePremiumBrandRefresh: true,
       isApplicationHome: T,
-      firstFeatureItemClassName: "inCard" === I ? w.firstFeatureItemContainer : true
-    }), n, g && (0, r.jsx)(y.f, {})]
+      firstFeatureItemClassName: "inCard" === y ? D.firstFeatureItemContainer : true
+    }), n, g && (0, r.jsx)(O.f, {})]
   })
 }
-let Z = e => {
+let F = e => {
   let {
     subscriptionTier: t,
     isReducedMotion: n,
     tierCardProps: i,
     className: o
-  } = e, s = t === R.Si.TIER_2, c = s ? B : G, {
+  } = e, s = t === P.Si.TIER_2, c = s ? Z : B, {
     subscribeButtonProps: d,
     subscriptionTier: f
-  } = (0, T.G)({
+  } = (0, S.G)({
     subscriptionTier: t,
     variantOverride: s ? "expressive" : "secondary"
   }), {
     disabled: _
   } = d, p = (0, r.jsx)("div", {
-    className: w.CTAButton,
-    children: (0, r.jsx)(l.zxk, U(j({
+    className: D.CTAButton,
+    children: (0, r.jsx)(l.zxk, G(k({
       size: "md",
       fullWidth: true
     }, d), {
@@ -205,10 +216,10 @@ let Z = e => {
     }))
   }), h = (0, r.jsx)("div", {
     className: a()({
-      [w.premiumCardHover]: !n
+      [D.premiumCardHover]: !n
     }),
-    children: (0, r.jsx)(c, j({
-      className: w.applicationHomeCard,
+    children: (0, r.jsx)(c, k({
+      className: D.applicationHomeCard,
       ctaButton: p,
       showYearlyPrice: true,
       isApplicationHome: true
@@ -216,7 +227,7 @@ let Z = e => {
   });
   return (0, r.jsx)("div", {
     className: o,
-    children: _ ? h : (0, r.jsx)(I.Z, {
+    children: _ ? h : (0, r.jsx)(T.Z, {
       subscriptionTier: f,
       children: e => {
         let {
@@ -234,33 +245,33 @@ let Z = e => {
   })
 };
 
-function F(e) {
+function V(e) {
   let {
     innerRef: t,
     className: n
   } = e, {
     analyticsLocations: i
-  } = (0, p.ZP)(_.Z.PREMIUM_MARKETING_TIER_CARD), l = (0, C.rS)(t), c = (0, s.e7)([f.Z], () => f.Z.useReducedMotion);
+  } = (0, p.ZP)(_.Z.PREMIUM_MARKETING_TIER_CARD), l = (0, N.rS)(t), c = (0, s.e7)([f.Z], () => f.Z.useReducedMotion);
   return (0, r.jsx)(p.Gt, {
     value: i,
     children: (0, r.jsxs)("div", {
-      className: a()(w.premiumCardsContainer, n),
+      className: a()(D.premiumCardsContainer, n),
       children: [(0, r.jsx)(o.X, {
         variant: "display-md",
         color: "header-primary",
-        className: w.premiumCardsHeader,
-        children: P.intl.string(P.t.vLz3Zm)
+        className: D.premiumCardsHeader,
+        children: w.intl.string(w.t.vLz3Zm)
       }), (0, r.jsxs)("div", {
         ref: l,
-        className: w.premiumCards,
-        children: [(0, r.jsx)(Z, {
-          subscriptionTier: R.Si.TIER_0,
+        className: D.premiumCards,
+        children: [(0, r.jsx)(F, {
+          subscriptionTier: P.Si.TIER_0,
           isReducedMotion: c,
-          className: w.tier0CardOrder
-        }), (0, r.jsx)(Z, {
-          subscriptionTier: R.Si.TIER_2,
+          className: D.tier0CardOrder
+        }), (0, r.jsx)(F, {
+          subscriptionTier: P.Si.TIER_2,
           isReducedMotion: c,
-          className: w.tier2CardOrder,
+          className: D.tier2CardOrder,
           tierCardProps: {
             wumpusPosition: "inCorner"
           }

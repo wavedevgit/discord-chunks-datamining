@@ -75,9 +75,9 @@ function F(e) {
     openInvoiceId: L,
     onSubscriptionConfirmation: v,
     renderPurchaseConfirmation: w,
-    postSuccessGuild: I,
-    followupSKUInfo: P,
-    renderHeader: O,
+    postSuccessGuild: O,
+    followupSKUInfo: I,
+    renderHeader: P,
     applicationId: E,
     guildId: k,
     referralTrialOfferId: T,
@@ -120,9 +120,9 @@ function F(e) {
       openInvoiceId: L,
       onSubscriptionConfirmation: v,
       renderPurchaseConfirmation: w,
-      postSuccessGuild: I,
-      followupSKUInfo: P,
-      renderHeader: O,
+      postSuccessGuild: O,
+      followupSKUInfo: I,
+      renderHeader: P,
       applicationId: E,
       guildId: k,
       referralTrialOfferId: T,
@@ -153,7 +153,7 @@ function H(e) {
     isGift: C,
     skuId: s,
     referralTrialOfferId: l
-  }), _ = (0, P.Fv)(p), h = (0, u.id)(d, C, c);
+  }), _ = (0, I.Fv)(p), h = (0, u.id)(d, C, c);
   return (0, r.jsx)(b.J, (t = N({}, e), n = n = {
     breadcrumbSteps: R,
     onReturn: () => {
@@ -197,10 +197,10 @@ let G = function() {
       }
     }, {
       key: Chunk409813.h8.PLAN_SELECT,
-      renderStep: e => (0, r.jsx)(O.x, N({}, e)),
+      renderStep: e => (0, r.jsx)(P.x, N({}, e)),
       options: {
         renderHeader: true,
-        useBreadcrumbLabel: e => (0, P.Fv)(e) ? null : B.intl.string(B.t["r+SebW"]),
+        useBreadcrumbLabel: e => (0, I.Fv)(e) ? null : B.intl.string(B.t["r+SebW"]),
         sectionHeaderText: () => Chunk388032.intl.string(Chunk388032.t.UKbp1N)
       }
     }, {
@@ -208,7 +208,7 @@ let G = function() {
       renderStep: e => (0, r.jsx)(H, N({}, e)),
       options: {
         renderHeader: true,
-        useBreadcrumbLabel: e => (0, P.Fv)(e) ? null : B.intl.string(B.t.Sb6wIy)
+        useBreadcrumbLabel: e => (0, I.Fv)(e) ? null : B.intl.string(B.t.Sb6wIy)
       }
     }, {
       key: Chunk409813.h8.AWAITING_PURCHASE_TOKEN_AUTH,
@@ -221,14 +221,14 @@ let G = function() {
       renderStep: e => (0, r.jsx)(v.l, N({}, e)),
       options: {
         renderHeader: true,
-        useBreadcrumbLabel: e => (0, P.Fv)(e) ? B.intl.string(B.t.UKbp1N) : B.intl.string(B.t.QBnNHh)
+        useBreadcrumbLabel: e => (0, I.Fv)(e) ? B.intl.string(B.t.UKbp1N) : B.intl.string(B.t.QBnNHh)
       }
     }, {
       key: Chunk409813.h8.CONFIRM,
       renderStep: e => (0, r.jsx)(w.b, N({}, e))
     }, {
       key: Chunk409813.h8.SELECT_FREE_SKU,
-      renderStep: e => (0, r.jsx)(I.S, N({}, e)),
+      renderStep: e => (0, r.jsx)(O.S, N({}, e)),
       options: {
         bodyClassName: Chunk867983.selectFreeSku,
         isDynamicModal: true

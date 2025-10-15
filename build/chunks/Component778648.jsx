@@ -34,7 +34,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk474936 = require("./474936.js"),
   Chunk443582 = require("./443582.js");
 
-function k(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       a = Object.keys(n);
@@ -195,7 +195,7 @@ let Z = function() {
               "data-migration-pending": true,
               text: "Need Promotion Code",
               shouldShow: F.length < 1,
-              children: e => (0, a.jsx)(d.Button, A(k({
+              children: e => (0, a.jsx)(d.Button, A(R({
                 variant: "primary",
                 text: "Open Link",
                 disabled: F.length < 1
@@ -221,7 +221,7 @@ let Z = function() {
               value: Chunk474936.Xh.PREMIUM_MONTH_TIER_0,
               label: "Nitro Basic"
             }],
-            onChange: e => z(t => A(k({}, t), {
+            onChange: e => z(t => A(R({}, t), {
               plan_id: e
             })),
             popoutLayerContext: Chunk246992.O$
@@ -235,7 +235,7 @@ let Z = function() {
               value: "false",
               label: "Not Gift"
             }],
-            onChange: e => z(t => A(k({}, t), {
+            onChange: e => z(t => A(R({}, t), {
               gift: e
             })),
             popoutLayerContext: Chunk246992.O$
@@ -244,13 +244,13 @@ let Z = function() {
           "data-migration-pending": true,
           text: "Already subscribed",
           shouldShow: V,
-          children: e => (0, a.jsx)(d.Button, A(k({
+          children: e => (0, a.jsx)(d.Button, A(R({
             variant: "primary",
             text: "Open Link"
           }, e), {
             disabled: V,
             onClick: () => {
-              window.open(I.Z5c.BILLING_PREMIUM_SUBSCRIBE + "?" + i.stringify(k({}, G)))
+              window.open(I.Z5c.BILLING_PREMIUM_SUBSCRIBE + "?" + i.stringify(R({}, G)))
             }
           }))
         }), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsxs)(Chunk481060.C3N, {

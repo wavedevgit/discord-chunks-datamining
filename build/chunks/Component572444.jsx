@@ -107,8 +107,8 @@ function y() {
     krispModelOverride: P,
     inputMode: I,
     echoCancellation: w,
-    autoThreshold: R,
-    vadUseKrisp: k,
+    autoThreshold: k,
+    vadUseKrisp: R,
     vadKrispActivationThreshold: A,
     noiseCancellation: D,
     noiseSuppression: Z,
@@ -212,18 +212,18 @@ function y() {
       }), I === Chunk65154.pM.VOICE_ACTIVITY && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
         children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
           label: "Auto Threshold",
-          checked: R,
+          checked: k,
           onChange: e => d.Z.setMode(g.pM.VOICE_ACTIVITY, {
             autoThreshold: e
           })
-        }), R && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+        }), k && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
           children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
             label: "Use Krisp VAD",
-            checked: k,
+            checked: R,
             onChange: e => d.Z.setMode(g.pM.VOICE_ACTIVITY, {
               vadUseKrisp: e
             })
-          }), k && (0, Chunk951288.jsx)(Chunk481060.iRW, {
+          }), R && (0, Chunk951288.jsx)(Chunk481060.iRW, {
             label: "Krisp VAD Activation Threshold",
             initialValue: A,
             onValueChange: e => d.Z.setMode(g.pM.VOICE_ACTIVITY, {

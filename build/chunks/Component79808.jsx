@@ -1,11 +1,12 @@
 /** Chunk was on 75685 **/
 /** chunk id: 79808, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => p
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk493773 = require("./493773.js"),
+  Chunk996733 = require("./996733.js"),
   Chunk636298 = require("./636298.jsx"),
   Chunk404975 = require("./404975.jsx"),
   Chunk924052 = require("./924052.jsx"),
@@ -13,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk996435 = require("./996435.js"),
   Chunk990757 = require("./990757.js");
 
-function f(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -32,7 +33,7 @@ function f(e) {
   return e
 }
 
-function b(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -45,92 +46,96 @@ function b(e, t) {
   }), e
 }
 
-function m(e) {
+function v(e) {
   var t;
   let {
     root: n,
-    directory: m,
-    target: v,
-    defaultTarget: p,
-    onClose: j,
-    sidebarHeader: x,
-    sidebarFooter: y,
-    onPanelChange: h,
-    emptyState: g
-  } = e, O = null != v ? v : p;
+    directory: v,
+    target: p,
+    defaultTarget: j,
+    onClose: x,
+    sidebarHeader: y,
+    sidebarFooter: h,
+    onPanelChange: g,
+    emptyState: O
+  } = e, C = null != p ? p : j;
   (0, o.ZP)(() => {
     var e;
-    let t = null == (e = m.entry(O)) ? true : e.targetPanel;
-    return u.Z.setState({
-      targetKey: O,
+    let t = null == (e = v.entry(C)) ? true : e.targetPanel;
+    return d.Z.setState({
+      targetKey: C,
       currentPanel: t,
-      showNavigationMobile: null == v
-    }), () => u.Z.resetState()
+      showNavigationMobile: null == p
+    }), () => d.Z.resetState()
   });
-  let C = u.Z.useField("currentPanel"),
-    S = u.Z.useField("targetKey"),
-    [P, _] = l.useState(() => m.typedGet(C)),
-    N = l.useCallback(() => T(true), []),
-    [E, T] = l.useState({
-      target: O,
-      targetAccordion: null == (t = m.entry(O)) ? true : t.parentAccordion,
+  let S = d.Z.useField("currentPanel"),
+    P = d.Z.useField("targetKey"),
+    [_, N] = l.useState(() => v.typedGet(S)),
+    E = l.useCallback(() => k(true), []),
+    [T, k] = l.useState({
+      target: C,
+      targetAccordion: null == (t = v.entry(C)) ? true : t.parentAccordion,
       animateScroll: false,
-      complete: N
+      complete: E
     }),
     {
-      navigateWithValidation: k
-    } = (0, s.Cu)();
+      navigateWithValidation: Z
+    } = (0, c.Cu)();
   l.useEffect(() => {
-    let e = null != S ? m.entry(S) : true;
-    if (null == S || (null == e ? true : e.targetPanel) == null) return void u.Z.setState({
+    if (null == P) return;
+    let e = v.entry(P);
+    if (null == e) return void i.Z.setState({
+      query: ""
+    });
+    if (null == e.targetPanel) return void d.Z.setState({
       targetKey: true
     });
     let t = {
-      target: S,
+      target: P,
       targetAccordion: e.parentAccordion,
-      complete: N
+      complete: E
     };
-    if (e.targetPanel.key !== (null == C ? true : C.key)) {
+    if (e.targetPanel.key !== (null == S ? true : S.key)) {
       let n = e.targetPanel;
-      k(() => {
-        u.Z.setState({
+      Z(() => {
+        d.Z.setState({
           targetKey: true,
           currentPanel: n,
           showNavigationMobile: false
-        }), T(b(f({}, t), {
+        }), k(m(b({}, t), {
           animateScroll: false
-        })), _(n), null == h || h(n.key)
+        })), N(n), null == g || g(n.key)
       })
-    } else T(b(f({}, t), {
+    } else k(m(b({}, t), {
       animateScroll: true
-    })), u.Z.setState({
+    })), d.Z.setState({
       targetKey: true
     })
-  }, [C, S, N, m, k, h]);
-  let Z = l.useMemo(() => ({
-      navTransition: E
-    }), [E]),
-    w = () => k(j);
-  return (0, r.jsx)(c.j.Provider, {
-    value: Z,
+  }, [S, P, E, v, Z, g]);
+  let w = l.useMemo(() => ({
+      navTransition: T
+    }), [T]),
+    I = () => Z(x);
+  return (0, r.jsx)(u.j.Provider, {
+    value: w,
     children: (0, r.jsxs)("div", {
-      className: d.container,
-      children: [(0, r.jsx)(a.P, {
+      className: f.container,
+      children: [(0, r.jsx)(s.P, {
         root: n,
-        header: x,
-        footer: y,
-        onClose: w,
-        emptyState: g
-      }), (0, r.jsx)(i.Z, {
-        onClose: w,
-        setting: null != C ? C : P
+        header: y,
+        footer: h,
+        onClose: I,
+        emptyState: O
+      }), (0, r.jsx)(a.Z, {
+        onClose: I,
+        setting: null != S ? S : _
       })]
     })
   })
 }
 
-function v(e) {
-  return (0, r.jsx)(s.Ri, {
-    children: (0, r.jsx)(m, f({}, e))
+function p(e) {
+  return (0, r.jsx)(c.Ri, {
+    children: (0, r.jsx)(v, b({}, e))
   })
 }

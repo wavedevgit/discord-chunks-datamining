@@ -38,7 +38,7 @@ function y(e) {
   } = (0, h.JL)(), {
     isGift: b,
     claimableRewards: y
-  } = (0, _.wD)(), v = b && null != y && y.length > 0, S = (0, C.N)(i), w = (0, o.Nx)(), I = (0, s.Z)({
+  } = (0, _.wD)(), v = b && null != y && y.length > 0, S = (0, C.N)(i), w = (0, o.Nx)(), O = (0, s.Z)({
     location: "PremiumPaymentSelect"
   });
   return (0, r.jsx)(L, {
@@ -90,7 +90,7 @@ function y(e) {
     inOfferExperience: w,
     priceOptions: u,
     showPromotionalGiftBanner: v,
-    enablePremiumBrandRefresh: I
+    enablePremiumBrandRefresh: O
   })
 }
 
@@ -103,17 +103,20 @@ function L(e) {
     priceOptions: s,
     showPromotionalGiftBanner: C,
     enablePremiumBrandRefresh: h
-  } = e, m = h ? (0, r.jsx)(l.Heading, {
+  } = e, {
+    giftRecipient: m
+  } = (0, _.wD)(), f = (0, d.y)({
+    location: "PremiumPaymentSelect"
+  }) && i && null != m, x = f ? (0, r.jsx)(l.Heading, {
+    variant: "heading-lg/bold",
+    children: j.intl.string(j.t["wg/30t"])
+  }) : h ? (0, r.jsx)(l.Heading, {
     variant: "heading-lg/bold",
     children: j.intl.string(j.t["r+SebW"])
   }) : (0, r.jsx)(l.Heading, {
     variant: "heading-md/semibold",
     children: j.intl.string(j.t["r+SebW"])
-  }), {
-    giftRecipient: f
-  } = (0, _.wD)(), x = (0, d.y)({
-    location: "PremiumPaymentSelect"
-  }) && i && null != f;
+  });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.xBx, {
       "data-migration-pending": true,
@@ -124,7 +127,7 @@ function L(e) {
       children: (0, r.jsxs)(l.Kqy, {
         direction: "horizontal",
         justify: "space-between",
-        children: [m, (0, r.jsx)(l.olH, {
+        children: [x, (0, r.jsx)(l.olH, {
           "data-migration-pending": true,
           className: b.close,
           innerClassName: b.closeInner,
@@ -137,14 +140,14 @@ function L(e) {
         [b.modalSize]: !h,
         [b.modalPadding]: o && !h,
         [b.premiumBrandRefreshContent]: h,
-        [b.wishlistModalSize]: x
+        [b.wishlistModalSize]: f
       }),
-      children: x ? (0, r.jsx)(u.Z, {
+      children: f ? (0, r.jsx)(u.Z, {
         onSelectSku: e => t((0, p.Wz)(e)),
         isGift: i,
         priceOptions: s,
         showPromotionalGiftBanner: C,
-        giftRecipient: f
+        giftRecipient: m
       }) : (0, r.jsx)(c.ZP, {
         onSelectSku: e => t((0, p.Wz)(e)),
         isGift: i,

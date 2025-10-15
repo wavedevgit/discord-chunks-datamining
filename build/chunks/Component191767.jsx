@@ -67,7 +67,7 @@ async function w(e) {
     rejectWithError: true
   })).body
 }
-async function R(e) {
+async function k(e) {
   try {
     let t = (await c.tn.get({
       url: S.ANM.ORDER_UPDATE(e),
@@ -99,7 +99,7 @@ async function R(e) {
   }
 }
 
-function k() {
+function R() {
   let [e, t] = Chunk647438.useState(false), [n, i] = Chunk647438.useState(false), [l, o] = Chunk647438.useState(false), [c, h] = Chunk647438.useState(null), [x, f] = Chunk647438.useState(null), [g, b] = Chunk647438.useState(null), [v, _] = Chunk647438.useState(false), y = (0, Chunk442837.e7)([Chunk853872.Z], () => Chunk853872.Z.paymentSources), S = (0, Chunk442837.e7)([Chunk853872.Z], () => Chunk853872.Z.hasFetchedPaymentSources), T = (0, Chunk442837.e7)([Chunk853872.Z], () => Chunk853872.Z.defaultPaymentSourceId);
   Chunk647438.useEffect(() => {
     Chunk981631 || (0, Chunk355467.tZ)()
@@ -119,7 +119,7 @@ function k() {
         label: t
       }
     }), [Chunk954824]),
-    k = (0, Chunk481060.nVN)({
+    R = (0, Chunk481060.nVN)({
       value: Chunk563132,
       onChange: Chunk586585
     }),
@@ -163,7 +163,7 @@ function k() {
       if (null == Chunk502109 || "" === Chunk502109) return void Chunk801937("No order ID available. Please create an order first.");
       o(true);
       try {
-        await R(Chunk502109), Chunk801937("3DS authentication completed successfully! Order ID: ".concat(Chunk502109)), console.log("3DS authentication completed successfully for order:", Chunk502109)
+        await k(Chunk502109), Chunk801937("3DS authentication completed successfully! Order ID: ".concat(Chunk502109)), console.log("3DS authentication completed successfully for order:", Chunk502109)
       } catch (t) {
         let e = exports instanceof Error ? exports.message : String(exports);
         Chunk801937("Failed to complete 3DS: ".concat(module)), console.error("Failed to complete 3DS:", exports)
@@ -190,7 +190,7 @@ function k() {
           variant: "text-sm/medium",
           className: Chunk306197.labelSpacing,
           children: "Payment Source:"
-        }), (0, Chunk951288.jsx)(Chunk481060.PhF, I(P({}, k), {
+        }), (0, Chunk951288.jsx)(Chunk481060.PhF, I(P({}, R), {
           options: Chunk818033,
           placeholder: "Select a payment source...",
           isDisabled: !Chunk981631,
@@ -249,7 +249,7 @@ function A() {
     skuIDs: [],
     activeSubscription: null,
     children: (0, Chunk951288.jsxs)("div", {
-      children: [(0, Chunk951288.jsx)(k, {}), (0, Chunk951288.jsx)(D, {}), (0, Chunk951288.jsx)(Chunk481060.Text, {
+      children: [(0, Chunk951288.jsx)(R, {}), (0, Chunk951288.jsx)(D, {}), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         color: "text-feedback-info",
         className: Chunk306197.labelSpacing,

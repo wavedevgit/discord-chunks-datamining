@@ -34,11 +34,11 @@ function L(e) {
     selectedSkuId: S,
     step: w
   } = (0, f.JL)(), {
-    setSelectedGiftingPromotionReward: I,
-    selectedGiftingPromotionReward: P,
-    claimableRewards: O,
+    setSelectedGiftingPromotionReward: O,
+    selectedGiftingPromotionReward: I,
+    claimableRewards: P,
     claimableVariants: E
-  } = (0, m.wD)(), k = (0, o.e7)([_.default], () => _.default.getCurrentUser()), T = (0, c.ZP)(O, E, P), [M, A] = i.useState(null != (n = null == T ? true : T.defaultCategory) ? n : c.KN.Trick), [B, Z] = i.useState(null == T || null == (t = T.defaultHighlightedReward) ? true : t.skuId), [N, R] = i.useState(false), F = i.useRef(M), H = i.useMemo(() => null == E ? null != O ? O : [] : E.flatMap(e => {
+  } = (0, m.wD)(), k = (0, o.e7)([_.default], () => _.default.getCurrentUser()), T = (0, c.ZP)(P, E, I), [M, A] = i.useState(null != (n = null == T ? true : T.defaultCategory) ? n : c.KN.Trick), [B, Z] = i.useState(null == T || null == (t = T.defaultHighlightedReward) ? true : t.skuId), [N, R] = i.useState(false), F = i.useRef(M), H = i.useMemo(() => null == E ? null != P ? P : [] : E.flatMap(e => {
     var t, n;
     return e.variants.length < c.mo ? [] : (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -69,27 +69,27 @@ function L(e) {
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t)
-  }), [E, O, M]);
+  }), [E, P, M]);
   i.useEffect(() => {
     let e = null == T ? true : T.defaultHighlightedReward;
-    !N && null == P && null != e && null != e && H.some(t => t.skuId === e.skuId) && (I(e), Z(e.skuId))
-  }, [T, N, P, H, I]), i.useEffect(() => {
+    !N && null == I && null != e && null != e && H.some(t => t.skuId === e.skuId) && (O(e), Z(e.skuId))
+  }, [T, N, I, H, O]), i.useEffect(() => {
     (null == T ? true : T.defaultCategory) == null || N || A(T.defaultCategory)
   }, [null == T ? true : T.defaultCategory, N]), l()(null != v, "Expected plan to selected"), l()(null != S, "Expected selectedSkuId"), l()(null != w, "Step should be set");
-  let G = i.useMemo(() => null != B && (null != O ? O : []).some(e => e.skuId === B), [B, O]),
-    U = i.useMemo(() => null != P && H.some(e => e.skuId === P.skuId), [H, P]),
+  let G = i.useMemo(() => null != B && (null != P ? P : []).some(e => e.skuId === B), [B, P]),
+    U = i.useMemo(() => null != I && H.some(e => e.skuId === I.skuId), [H, I]),
     D = i.useMemo(() => 0 === H.length || null == B || !U || !G, [H, B, G, U]);
   i.useEffect(() => {
     if (0 === H.length) {
-      Z(true), I(true);
+      Z(true), O(true);
       return
     }
-    G && H.some(e => e.skuId === B) || null == B || (Z(true), I(true))
-  }, [H, G, B, I]), i.useEffect(() => {
-    F.current === M || U || (I(true), Z(true)), F.current = M
-  }, [M, U, I]);
+    G && H.some(e => e.skuId === B) || null == B || (Z(true), O(true))
+  }, [H, G, B, O]), i.useEffect(() => {
+    F.current === M || U || (O(true), Z(true)), F.current = M
+  }, [M, U, O]);
   let z = e => {
-      I(H.find(t => t.skuId === e)), Z(e), R(true)
+      O(H.find(t => t.skuId === e)), Z(e), R(true)
     },
     W = H.map(e => {
       var t, n;
@@ -98,7 +98,7 @@ function L(e) {
         assetId: e.assetId,
         productName: null == (t = e.name) ? true : t.call(e),
         a11yLabel: null == (n = e.a11yLabel) ? true : n.call(e),
-        claimed: null != O && O.every(t => t.skuId !== e.skuId),
+        claimed: null != P && P.every(t => t.skuId !== e.skuId),
         user: k,
         onSelect: z,
         selectedSkuId: B,
@@ -111,9 +111,9 @@ function L(e) {
         className: y.modalFooter,
         children: (0, r.jsx)(p.y, {
           onStepChange: e => {
-            null != k && null != P && h.default.track(j.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
+            null != k && null != I && h.default.track(j.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
               user_id: k.id,
-              reward_sku_id: P.skuId
+              reward_sku_id: I.skuId
             }), a(e)
           },
           onBackClick: () => a(x.h8.PLAN_SELECT),
