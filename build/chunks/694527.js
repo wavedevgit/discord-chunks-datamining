@@ -1,5 +1,6 @@
 /** Chunk was on 27978 **/
 /** chunk id: 694527, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   guildInfoCard: "guildInfoCard__50dcd",
   presentedBy: "presentedBy__50dcd",

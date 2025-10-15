@@ -128,7 +128,7 @@ function L(e) {
   for (let e in v = E({}, t)) {
     let n = t[e].mostRecentMessage;
     null != n && (t[e].mostRecentMessage = new u.ZP(y(E({}, n), {
-      author: new d.default(n.author)
+      author: new d.Z(n.author)
     })))
   }
 }

@@ -1,12 +1,13 @@
 /** Chunk was on 27978 **/
 /** chunk id: 163671, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => o
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk388905 = require("./388905.jsx"),
   Chunk646956 = require("./646956.js");
 
@@ -20,18 +21,18 @@ function o(e) {
       var n, r, i = function(e, t) {
         if (null == e) return {};
         var n, r, i = {},
-          l = Object.keys(e);
-        for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+          s = Object.keys(e);
+        for (r = 0; r < s.length; r++) n = s[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
         return i
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var l = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+        var s = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < s.length; r++) n = s[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
     }(e, ["children", "className"]);
   let u = i();
-  return (0, r.jsx)(s.ZP, (t = function(e) {
+  return (0, r.jsx)(l.ZP, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -49,7 +50,7 @@ function o(e) {
     }
     return e
   }({}, c), n = n = {
-    className: l()(o, a.container),
+    className: s()(o, a.container),
     contentClassName: a.content,
     children: u.map((e, t) => (0, r.jsx)("div", {
       className: a.column,

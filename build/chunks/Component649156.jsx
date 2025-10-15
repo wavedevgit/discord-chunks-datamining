@@ -1,5 +1,6 @@
 /** Chunk was on 27978 **/
 /** chunk id: 649156, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => a
 }), require("./35282.js");
@@ -13,13 +14,13 @@ let a = function(e) {
     match: t,
     location: n
   } = e, a = async (e, t) => {
-    await (0, i.s)(s.jE.PICK_GUILD_SETTINGS, {
+    await (0, i.s)(l.jE.PICK_GUILD_SETTINGS, {
       section: e.params.section,
       subsection: e.params.subsection,
       search: t.search
     })
   };
-  return (0, r.jsx)(l.Z, {
+  return (0, r.jsx)(s.Z, {
     match: t,
     location: n,
     attemptDeepLink: a

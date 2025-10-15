@@ -62,7 +62,7 @@ function E(e, t) {
     errorMessage: P
   } = (0, d.w)(), {
     createNewEditingRule: _
-  } = (0, d.V)(), [T, Z] = i.useState(false), [w, I] = (0, s.I2)(t), {
+  } = (0, d.V)(), [Z, T] = i.useState(false), [w, I] = (0, s.I2)(t), {
     rulesByTriggerType: N,
     updateRule: A
   } = (0, s.pH)(t), D = i.useMemo(() => {
@@ -147,7 +147,7 @@ function E(e, t) {
       keywordCount: R
     }),
     onFocus: () => {
-      T || (Z(true), I())
+      Z || (T(true), I())
     },
     children: G
   })

@@ -39,7 +39,7 @@ function h() {
     type: "CURRENT_USER_UPDATE",
     user: e.body,
     analyticsToken: t ? e.body.analytics_token : true
-  }), new u.default(e.body)))
+  }), new u.Z(e.body)))
 }
 
 function m() {

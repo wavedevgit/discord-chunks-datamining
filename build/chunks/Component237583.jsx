@@ -75,7 +75,7 @@ class p extends(r = Chunk647438.PureComponent) {
         onClick: a,
         size: o,
         guildId: f
-      } = this.props, _ = e instanceof c.default ? e : null != e ? e.user : null;
+      } = this.props, _ = e instanceof c.Z ? e : null != e ? e.user : null;
       return null == _ ? (0, i.jsx)("div", {
         className: s()(u.emptyUser, t)
       }, n) : (0, i.jsx)(l.qEK, {

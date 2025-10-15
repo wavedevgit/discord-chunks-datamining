@@ -1,5 +1,6 @@
 /** Chunk was on 27978 **/
 /** chunk id: 360887, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => j
 }), require("./35282.js"), require("./388685.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js");
@@ -26,28 +27,28 @@ function b(e) {
   let {
     match: t,
     location: n
-  } = e, s = (0, l.parse)(n.search).token, [g, b] = i.useState(false), j = (0, o.e7)([h.Z], () => h.Z.getState(n.pathname)), I = i.useCallback((e, t, n) => ({
-    token: s,
+  } = e, l = (0, s.parse)(n.search).token, [g, b] = i.useState(false), j = (0, o.e7)([h.Z], () => h.Z.getState(n.pathname)), I = i.useCallback((e, t, n) => ({
+    token: l,
     path: e,
     search: n,
     fingerprint: t
-  }), [s]);
+  }), [l]);
   return (i.useEffect(() => {
-    if (null != s && (a.tq || a.Em)) {
+    if (null != l && (a.tq || a.Em)) {
       var e;
-      let t = null == (e = p.default.getSuperProperties()) ? true : e.os,
+      let t = null == (e = m.default.getSuperProperties()) ? true : e.os,
         r = new URL(n.pathname + n.search, window.location.origin),
         i = (0, f.Gn)("one_time_login", t, r);
       window.location.href = i;
       return
     }
-  }, [t, s, n]), a.tq || a.Em) ? null : (0, r.jsx)(c.Z, {
+  }, [t, l, n]), a.tq || a.Em) ? null : (0, r.jsx)(c.Z, {
     deepLinkType: E.jE.ONE_TIME_LOGIN,
     path: n.pathname,
     search: n.search,
     paramsBuilder: I,
     children: (() => {
-      if ((0, m.DB)()) return null;
+      if ((0, p.DB)()) return null;
       switch (j) {
         case x.kEZ.OPEN:
           return (0, r.jsxs)(d.ZP, {
@@ -65,19 +66,19 @@ function b(e) {
           });
         case x.kEZ.OPEN_FAIL:
         default:
-          if (j === x.kEZ.OPEN_FAIL && !g && null != s) return (0, r.jsxs)(d.ZP, {
+          if (j === x.kEZ.OPEN_FAIL && !g && null != l) return (0, r.jsxs)(d.ZP, {
             children: [(0, r.jsx)(d.Dx, {
               children: "Trying to open Discord..."
             }), (0, r.jsx)(d.DK, {
               children: "Attempting to launch Discord with your one-time login."
             }), (0, r.jsx)(d.zx, {
               onClick: () => {
-                let e = "discord://login/one-time?token=".concat(encodeURIComponent(s));
+                let e = "discord://login/one-time?token=".concat(encodeURIComponent(l));
                 _.Z.launch(e, () => b(true))
               },
               children: "Try Opening Discord"
             }), (0, r.jsx)(d.zx, {
-              onClick: () => (0, m.uL)((0, u.M)()),
+              onClick: () => (0, p.uL)((0, u.M)()),
               style: {
                 marginTop: "8px"
               },
@@ -90,7 +91,7 @@ function b(e) {
             }), (0, r.jsx)(d.DK, {
               children: g ? "Unable to open Discord automatically. Please open Discord manually and try again, or continue in browser." : "Continue your one-time login in the browser."
             }), (0, r.jsx)(d.zx, {
-              onClick: () => (0, m.uL)((0, u.M)()),
+              onClick: () => (0, p.uL)((0, u.M)()),
               children: "Login in Browser"
             })]
           })
@@ -119,7 +120,7 @@ let j = function(e) {
       })
     }
     return e
-  }({}, e)) : (0, r.jsx)(s.l_, {
+  }({}, e)) : (0, r.jsx)(l.l_, {
     to: x.Z5c.LOGIN
   })
 }

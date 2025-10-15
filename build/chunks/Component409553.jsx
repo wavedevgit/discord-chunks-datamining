@@ -1,5 +1,6 @@
-/** Chunk was on 61366 **/
+/** Chunk was on 18290 **/
 /** chunk id: 409553, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => u
 });
@@ -16,25 +17,25 @@ function u(e) {
   let {
     onContinue: t,
     onClose: n
-  } = e, u = s.Z.getArticleURL(l.BhN.XBOX_CONNECTION), p = c.intl.format(c.t.CIc3IN, {
+  } = e, u = s.Z.getArticleURL(c.BhN.XBOX_CONNECTION), p = l.intl.format(l.t.CIc3IN, {
     helpdeskArticleUrl: u
-  }), b = r.useMemo(() => [{
-    label: c.intl.string(c.t.ihQXsb),
+  }), f = r.useMemo(() => [{
+    label: l.intl.string(l.t.ihQXsb),
     icon: i.gj8
   }, {
-    label: c.intl.string(c.t.Xt1n4P),
+    label: l.intl.string(l.t.Xt1n4P),
     icon: i.m3e
   }, {
-    label: c.intl.string(c.t.xqVY3p),
+    label: l.intl.string(l.t.xqVY3p),
     icon: i.BFJ
   }, {
-    label: c.intl.string(c.t.iQsKVW),
+    label: l.intl.string(l.t.iQsKVW),
     icon: i.iWm
   }], []);
   return (0, o.jsx)(a.m, {
-    platformType: l.ABu.XBOX,
-    headerConnect: c.intl.string(c.t.m8aahn),
-    headerReconnect: c.intl.string(c.t.z3rAhq),
+    platformType: c.ABu.XBOX,
+    headerConnect: l.intl.string(l.t.m8aahn),
+    headerReconnect: l.intl.string(l.t.z3rAhq),
     body: p,
     onClose: n,
     onContinue: t,
@@ -44,6 +45,6 @@ function u(e) {
       height: 160,
       alt: ""
     }),
-    valueProps: b
+    valueProps: f
   })
 }

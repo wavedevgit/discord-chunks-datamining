@@ -70,7 +70,7 @@ let b = {
 
 function S(e, t) {
   if (e === T) return "user-icon-".concat(t);
-  let n = e instanceof d.default ? e : null != e ? e.user : null;
+  let n = e instanceof d.Z ? e : null != e ? e.user : null;
   return null != n ? n.id : "user-".concat(t)
 }
 
@@ -196,7 +196,7 @@ class P extends(r = Chunk647438.PureComponent) {
       className: s()(module, Chunk245141.container, N(exports)),
       children: [this.renderIcon(), this.renderUsers()]
     });
-    let c = require.find(e => e instanceof d.default && e.id === l),
+    let c = require.find(e => e instanceof d.Z && e.id === l),
       _ = Chunk120356 && null == Chunk594174.default.getUser(Chunk481060);
     return (0, Chunk951288.jsx)(Chunk670188.Z, {
       targetElementRef: this._ref,

@@ -1,5 +1,6 @@
 /** Chunk was on 27978 **/
 /** chunk id: 913583, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => d
 });
@@ -17,14 +18,14 @@ function d(e) {
   let {
     onDismiss: t
   } = e;
-  return (0, s.Z)({
+  return (0, l.Z)({
     type: i.ImpressionTypes.MODAL,
     name: i.ImpressionNames.MULTI_ACCOUNT_SWITCH_LANDING
   }), (0, r.jsxs)(a.ZP, {
     className: u.chooseAccountAuthBox,
     children: [(0, r.jsx)(a.Dx, {
       children: c.intl.string(c.t.bVbB63)
-    }), (0, r.jsx)(l.Text, {
+    }), (0, r.jsx)(s.Text, {
       className: u.chooseAccountHelpText,
       variant: "text-md/normal",
       color: "header-secondary",
@@ -36,7 +37,7 @@ function d(e) {
       }
     }), (0, r.jsx)("div", {
       className: u.actions,
-      children: (0, r.jsx)(l.Avr, {
+      children: (0, r.jsx)(s.Avr, {
         variant: "secondary",
         size: "md",
         textVariant: "text-sm/medium",

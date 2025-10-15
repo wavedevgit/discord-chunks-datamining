@@ -1,5 +1,6 @@
 /** Chunk was on 27978 **/
 /** chunk id: 9325, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => v
 }), require("./953529.js");
@@ -21,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk197571 = require("./197571.js");
 
 function E(e, t, n) {
-  e.preventDefault(), g.default.track(p.rMx.GUILD_TEMPLATE_APP_OPENED, {
+  e.preventDefault(), g.default.track(m.rMx.GUILD_TEMPLATE_APP_OPENED, {
     guild_template_code: t,
     guild_template_name: n.name,
     guild_template_description: n.description,
@@ -35,11 +36,11 @@ function E(e, t, n) {
 function v(e) {
   let {
     code: t
-  } = e, n = (0, l.e7)([o.Z], () => o.Z.getGuildTemplate(t));
+  } = e, n = (0, s.e7)([o.Z], () => o.Z.getGuildTemplate(t));
   return (i.useEffect(() => {
     (0, d.e)("guild_template_mobile")
   }, []), null == n || n.state === f.Rj.RESOLVING) ? (0, r.jsx)(a.ZP, {
-    children: (0, r.jsx)(s.$jN, {})
+    children: (0, r.jsx)(l.$jN, {})
   }) : n.state === f.Rj.RESOLVED ? (0, r.jsxs)(a.ZP, {
     children: [(0, r.jsx)(u.Z, {
       guildTemplate: n,
@@ -49,7 +50,7 @@ function v(e) {
       className: x.marginTop20,
       children: _.intl.string(_.t["a3Gl+e"])
     })]
-  }) : (0, r.jsx)(m.Z, {
+  }) : (0, r.jsx)(p.Z, {
     text: _.intl.string(_.t["e/rZ2n"]),
     buttonCta: _.intl.string(_.t.HAvYn0),
     onClick: e => E(e, t, n)

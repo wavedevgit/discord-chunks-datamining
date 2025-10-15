@@ -138,7 +138,7 @@ function O(e) {
             } = e;
           return null != a.bot && (null == s || null == (n = s.scopes) ? true : n.includes(o.x.BOT)) && l.push({
             id: "bot",
-            label: new b.default(a.bot).isVerifiedBot() ? j.intl.string(j.t.xxcTGy) : j.intl.string(j.t.AOdOYr),
+            label: new b.Z(a.bot).isVerifiedBot() ? j.intl.string(j.t.xxcTGy) : j.intl.string(j.t.AOdOYr),
             icon: d.wGt
           }), c.length > 0 && l.push({
             id: "webhooks",

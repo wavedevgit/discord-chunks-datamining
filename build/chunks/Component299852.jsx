@@ -1,5 +1,6 @@
 /** Chunk was on 27978 **/
 /** chunk id: 299852, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => b
 }), require("./35282.js"), require("./388685.js");
@@ -47,7 +48,7 @@ class v extends(r = Chunk647438.PureComponent) {
         body: {
           user: n
         }
-      } = e, r = new g.default(n);
+      } = e, r = new g.Z(n);
       this.setState({
         success: true,
         busy: false,
@@ -68,7 +69,7 @@ class v extends(r = Chunk647438.PureComponent) {
     let {
       defaultRoute: n,
       transitionTo: r
-    } = this.props, l = _.intl.formatToPlainString(_.t.YDAohB, {
+    } = this.props, s = _.intl.formatToPlainString(_.t.YDAohB, {
       category: t
     });
     return (0, i.jsxs)(d.ZP, {
@@ -76,7 +77,7 @@ class v extends(r = Chunk647438.PureComponent) {
         className: x.marginBottom8,
         children: _.intl.string(_.t.f6rdLg)
       }), (0, i.jsx)(d.DK, {
-        children: l
+        children: s
       }), (0, i.jsx)(d.zx, {
         className: x.marginTop20,
         onClick: () => r(n),
@@ -85,7 +86,7 @@ class v extends(r = Chunk647438.PureComponent) {
         className: x.marginTop8,
         color: d.zx.Colors.LINK,
         look: d.zx.Looks.LINK,
-        onClick: () => r(p.Z5c.SETTINGS("notifications", f.vG)),
+        onClick: () => r(m.Z5c.SETTINGS("notifications", f.vG)),
         children: _.intl.string(_.t.YYTirT)
       })]
     })

@@ -161,7 +161,7 @@ function q(e) {
 function X(e) {
   return i()(e).map(e => ({
     key: e.id,
-    user: new c.default(e),
+    user: new c.Z(e),
     status: _.Z.getStatus(e.id)
   })).sortBy(e => {
     let {

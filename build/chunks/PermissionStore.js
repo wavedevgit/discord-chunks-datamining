@@ -292,7 +292,7 @@ class J extends(r = Chunk442837.ZP.Store) {
     return "basicPermissions" in e ? e.basicPermissions : g.Z.asBasicFlag(Q(e))
   }
   canManageUser(e, t, n) {
-    let r = t instanceof m.default ? t.id : t;
+    let r = t instanceof m.Z ? t.id : t;
     if ((0, h.eM)(n, r)) returnfalse;
     let i = I.default.getCurrentUser();
     if (!this.can(e, n)) returnfalse;

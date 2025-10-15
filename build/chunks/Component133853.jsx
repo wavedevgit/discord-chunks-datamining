@@ -1,12 +1,13 @@
 /** Chunk was on 69773 **/
 /** chunk id: 133853, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => p
 }), require("./388685.js");
-var a, Chunk951288 = require("./951288.js"),
+var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk748780 = require("./748780.js"),
   Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
@@ -20,7 +21,7 @@ function f(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class h extends(a = Chunk647438.Component) {
+class p extends(r = Chunk647438.Component) {
   componentDidMount() {
     this.props.show && this.animate(1)
   }
@@ -50,13 +51,13 @@ class h extends(a = Chunk647438.Component) {
       href: Chunk981631.Z5c.INDEX,
       target: "_blank",
       rel: "noopener",
-      className: l()(Chunk788524.logo, this.props.className),
+      className: s()(Chunk788524.logo, this.props.className),
       style: this.getAnimatedStyle()
     })
   }
   constructor(...e) {
-    super(...e), f(this, "anim", new s.Z.Value(0)), f(this, "animate", e => {
-      s.Z.spring(this.anim, {
+    super(...e), f(this, "anim", new l.Z.Value(0)), f(this, "animate", e => {
+      l.Z.spring(this.anim, {
         toValue: e,
         friction: 10,
         tension: 100
@@ -64,4 +65,4 @@ class h extends(a = Chunk647438.Component) {
     })
   }
 }
-f(h, "contextType", Chunk481060.Sfi)
+f(p, "contextType", Chunk481060.Sfi)

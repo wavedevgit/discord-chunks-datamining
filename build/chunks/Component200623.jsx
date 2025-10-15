@@ -1,5 +1,6 @@
-/** Chunk was on 522 **/
+/** Chunk was on 45929 **/
 /** chunk id: 200623, original params: e,t,r (module,exports,require) **/
+"use strict";
 require.d(exports, {
   default: () => g
 });
@@ -19,24 +20,24 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk5511 = require("./5511.js");
 
-function C(e) {
+function _(e) {
   let {
     step: t,
     instructions: r
   } = e;
   return (0, n.jsxs)("div", {
-    className: h.cardRow,
+    className: x.cardRow,
     children: [(0, n.jsx)("div", {
-      className: h.stepNumberContainer,
-      children: (0, n.jsx)(c.Text, {
+      className: x.stepNumberContainer,
+      children: (0, n.jsx)(a.Text, {
         variant: "text-sm/semibold",
-        className: h.stepNumber,
+        className: x.stepNumber,
         children: t
       })
-    }), (0, n.jsx)(c.Text, {
+    }), (0, n.jsx)(a.Text, {
       variant: "text-sm/normal",
       color: "header-primary",
-      className: h.instructions,
+      className: x.instructions,
       children: r
     })]
   })
@@ -47,48 +48,48 @@ function g(e) {
     channel: t,
     transitionState: r,
     onClose: g
-  } = e, _ = (0, i.e7)([u.default], () => null != u.default.getRemoteSessionId()), j = (0, f.Z)(t, {
+  } = e, C = (0, o.e7)([u.default], () => null != u.default.getRemoteSessionId()), y = (0, f.Z)(t, {
     forQRCode: true
   });
   return s.useEffect(() => {
-    _ && g()
-  }, [_, g]), s.useEffect(() => {
-    (0, m.Z)(t.id, p.YE.XBOX)
-  }, [t.id]), (0, n.jsx)(a.Modal, {
+    C && g()
+  }, [C, g]), s.useEffect(() => {
+    (0, p.Z)(t.id, m.YE.XBOX)
+  }, [t.id]), (0, n.jsx)(i.Modal, {
     title: b.intl.string(b.t["f+Aijq"]),
     subtitle: b.intl.string(b.t.mYFmDY),
     actions: [],
     onClose: g,
     transitionState: r,
     children: (0, n.jsxs)("div", {
-      className: h.card,
+      className: x.card,
       children: [(0, n.jsxs)("div", {
-        className: h.cardText,
-        children: [(0, n.jsxs)(c.Text, {
+        className: x.cardText,
+        children: [(0, n.jsxs)(a.Text, {
           variant: "text-lg/semibold",
           color: "header-primary",
-          className: h.cardRow,
+          className: x.cardRow,
           children: [(0, n.jsx)(l.Z, {
-            className: h.cardHeaderIcon
+            className: x.cardHeaderIcon
           }), b.intl.string(b.t.ZNlYbK)]
-        }), (0, n.jsx)(C, {
+        }), (0, n.jsx)(_, {
           step: 1,
           instructions: b.intl.string(b.t.dDtkl9)
-        }), (0, n.jsx)(C, {
+        }), (0, n.jsx)(_, {
           step: 2,
           instructions: b.intl.string(b.t.IWuXjC)
-        }), (0, n.jsx)(c.Text, {
+        }), (0, n.jsx)(a.Text, {
           variant: "text-sm/medium",
-          children: (0, n.jsx)(c.Anchor, {
-            className: h.learnMore,
-            href: d.Z.getArticleURL(x.BhN.XBOX_CONNECTION),
+          children: (0, n.jsx)(a.Anchor, {
+            className: x.learnMore,
+            href: d.Z.getArticleURL(h.BhN.XBOX_CONNECTION),
             children: b.intl.string(b.t.hvVgAZ)
           })
         })]
-      }), (0, n.jsx)(o.ZP, {
-        className: h.qrCode,
+      }), (0, n.jsx)(c.ZP, {
+        className: x.qrCode,
         size: 120,
-        text: j
+        text: y
       })]
     })
   })

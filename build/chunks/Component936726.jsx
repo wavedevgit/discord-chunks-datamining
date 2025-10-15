@@ -118,7 +118,7 @@ function w(e) {
     text: _.intl.formatToPlainString(_.t["7EcUbr"], {
       user: (e => {
         if (null == e) return null;
-        let t = new g.default(e);
+        let t = new g.Z(e);
         return v.ZP.getUserTag(t)
       })(n.user),
       timestamp: j.default.extractTimestamp(n.id)

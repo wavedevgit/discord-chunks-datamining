@@ -1,5 +1,6 @@
 /** Chunk was on 27978 **/
 /** chunk id: 455502, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => _
 }), require("./388685.js");
@@ -25,7 +26,7 @@ function _(e) {
   let {
     location: t,
     transitionTo: n = f
-  } = e, [l, _] = i.useState("submitting"), x = i.useRef(true);
+  } = e, [s, _] = i.useState("submitting"), x = i.useRef(true);
   (0, o.ZP)(() => {
     (0, h.e)("verify_email");
     let e = (0, c.Z)(t);
@@ -40,30 +41,30 @@ function _(e) {
     })()
   });
   let E = i.useCallback(() => {
-      n(m.Z5c.LOGIN, {
+      n(p.Z5c.LOGIN, {
         source: "verify_email"
       })
     }, [n]),
     v = i.useCallback(() => {
-      g.default.track(m.rMx.VERIFY_ACCOUNT_APP_OPENED, {
+      g.default.track(p.rMx.VERIFY_ACCOUNT_APP_OPENED, {
         verifying_user_id: x.current
       }), (0, d.Z)("verify_email")
     }, []);
-  return "failed" === l ? (0, r.jsx)(u.Z, {
-    title: p.intl.string(p.t["PCgG3+"]),
-    subtitle: p.intl.string(p.t.tQpeA3),
-    buttonText: p.intl.string(p.t.dKhVQN),
+  return "failed" === s ? (0, r.jsx)(u.Z, {
+    title: m.intl.string(m.t["PCgG3+"]),
+    subtitle: m.intl.string(m.t.tQpeA3),
+    buttonText: m.intl.string(m.t.dKhVQN),
     onButtonClick: E
-  }) : "succeeded" === l ? (0, r.jsx)(u.Z, {
-    title: p.intl.string(p.t["dAfGb+"]),
-    buttonText: p.intl.string(p.t["uJWIj/"]),
+  }) : "succeeded" === s ? (0, r.jsx)(u.Z, {
+    title: m.intl.string(m.t["dAfGb+"]),
+    buttonText: m.intl.string(m.t["uJWIj/"]),
     onButtonClick: v,
-    image: (0, r.jsx)(s.Om, {
-      alt: p.intl.string(p.t["dAfGb+"])
+    image: (0, r.jsx)(l.Om, {
+      alt: m.intl.string(m.t["dAfGb+"])
     })
   }) : (0, r.jsx)(u.Z, {
-    title: p.intl.string(p.t["0c8+5n"]),
-    subtitle: p.intl.string(p.t.ULTCBE),
+    title: m.intl.string(m.t["0c8+5n"]),
+    subtitle: m.intl.string(m.t.ULTCBE),
     loading: true
   })
 }

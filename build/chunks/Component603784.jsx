@@ -201,7 +201,7 @@ let w = Chunk647438.forwardRef((e, t) => {
                     }
                     return E.intl.string(E.t["30mdIx"])
                   },
-                  targetHook: (e, t) => l.targetType === N.KFR.USER && l.target instanceof h.default ? (0, r.jsx)(P, {
+                  targetHook: (e, t) => l.targetType === N.KFR.USER && l.target instanceof h.Z ? (0, r.jsx)(P, {
                     user: l.target,
                     onContextMenu: A
                   }, t) : (0, r.jsx)("span", {

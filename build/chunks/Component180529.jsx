@@ -1,5 +1,6 @@
 /** Chunk was on 27978 **/
 /** chunk id: 180529, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => u
 }), require("./388685.js");
@@ -15,18 +16,18 @@ function u(e) {
     show: t,
     children: n,
     top: r = 0,
-    bottom: s = 0
+    bottom: l = 0
   } = e, {
     ref: u,
     height: d
   } = (() => {
-    let e = l.useRef(null),
-      [t, n] = l.useState(0),
-      r = l.useMemo(() => new c(e => {
+    let e = s.useRef(null),
+      [t, n] = s.useState(0),
+      r = s.useMemo(() => new c(e => {
         let [t] = e;
         return n(t.contentRect.height)
       }), []);
-    return l.useLayoutEffect(() => (null != e.current && r.observe(e.current), () => r.disconnect()), [r]), {
+    return s.useLayoutEffect(() => (null != e.current && r.observe(e.current), () => r.disconnect()), [r]), {
       ref: e,
       height: t
     }
@@ -38,7 +39,7 @@ function u(e) {
     },
     to: {
       height: t ? d : 0,
-      paddingBottom: t ? "".concat(s, "px") : "0px",
+      paddingBottom: t ? "".concat(l, "px") : "0px",
       marginTop: t ? "".concat(r, "px") : "0px"
     },
     config: {

@@ -1,12 +1,13 @@
 /** Chunk was on 27978 **/
 /** chunk id: 236446, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => D
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
   o = require.n(Chunk512722),
   Chunk442837 = require("./442837.js"),
@@ -49,7 +50,7 @@ class w extends Chunk647438.PureComponent {
     (0, Chunk108427.e)("guildTemplate"), Chunk436620.KO || Chunk954824.Z.launch("discord://" + Chunk981631.Z5c.GUILD_TEMPLATE(this.props.code), () => true)
   }
   componentDidUpdate(e) {
-    this.props.code !== e.code && m.Z.resolveGuildTemplate(this.props.code)
+    this.props.code !== e.code && p.Z.resolveGuildTemplate(this.props.code)
   }
   renderButton(e, t) {
     return T.KO ? (0, r.jsx)(u.zx, {
@@ -73,7 +74,7 @@ class w extends Chunk647438.PureComponent {
         src: require("./167969.js"),
         className: Chunk197571.marginBottom8
       }), (0, Chunk951288.jsx)(Chunk388905.Dx, {
-        className: s()(Chunk197571.marginTop8, Chunk197571.marginBottom8),
+        className: l()(Chunk197571.marginTop8, Chunk197571.marginBottom8),
         children: Chunk388032.intl.string(Chunk388032.t.C7ZRNw)
       }), (0, Chunk951288.jsx)(Chunk388905.DK, {
         children: Chunk388032.intl.string(Chunk388032.t.A6MwXE)
@@ -116,7 +117,7 @@ class w extends Chunk647438.PureComponent {
       nativeAppState: t,
       authenticated: n,
       transitionTo: i,
-      location: l
+      location: s
     } = this.props;
     if (null == module) return this.renderSpinner(Chunk388032.intl.string(Chunk388032.t.ZTNur7));
     if (exports === Chunk981631.kEZ.OPEN) return this.renderAppOpened();
@@ -185,7 +186,7 @@ function k(e) {
     handleSubmit: i
   } = (0, g.Z)(t, false);
   E.Z.flowStep(A.MK.ORGANIC_GUILD_TEMPLATES, A.X2.GUILD_CREATE);
-  let l = (0, r.jsxs)(r.Fragment, {
+  let s = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(u.Dx, {
       className: P.header,
       children: Z.intl.string(Z.t.UNFvtM)
@@ -197,11 +198,11 @@ function k(e) {
   });
   return (0, r.jsx)(N.Z, {
     className: P.authBox,
-    children: () => [(0, r.jsx)(p.Z, {
+    children: () => [(0, r.jsx)(m.Z, {
       guildTemplate: t
     }, "template"), (0, r.jsx)("div", {
       className: P.formContainer,
-      children: l
+      children: s
     }, "contents")]
   })
 }

@@ -326,7 +326,7 @@ function q(e) {
       interactionData: a.interactionData
     }))), [s, a.id, a.interactionData]),
     j = (0, O.t0)(a),
-    U = (null == j ? true : j.type) === _.B8.APPLICATION_COMMAND && null != j.target_user ? new T.default(j.target_user) : null,
+    U = (null == j ? true : j.type) === _.B8.APPLICATION_COMMAND && null != j.target_user ? new T.Z(j.target_user) : null,
     B = (null == j ? true : j.type) === _.B8.APPLICATION_COMMAND && null != a.messageReference && null != e.renderTargetMessage,
     Z = (0, R.Sw)(null == (t = a.interaction) ? true : t.user, s),
     F = (0, R.Sw)(U, s),

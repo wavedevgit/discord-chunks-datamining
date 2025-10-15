@@ -1,5 +1,6 @@
 /** Chunk was on 27978 **/
 /** chunk id: 822699, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.r(exports), require.d(exports, {
   default: () => eC
 }), require("./35282.js"), require("./388685.js");
@@ -80,7 +81,7 @@ function ei(e) {
   return e
 }
 
-function el(e, t) {
+function es(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -93,7 +94,7 @@ function el(e, t) {
   }), e
 }
 require("./179645.js"), Chunk442837.ZP.initialize();
-let es = (0, Chunk320830.Z)(Chunk781428.Z),
+let el = (0, Chunk320830.Z)(Chunk781428.Z),
   ea = (0, Chunk320830.Z)(Chunk209411.Z),
   eo = (0, Chunk320830.Z)(Chunk344295.Z),
   ec = (0, Chunk320830.Z)(Chunk236446.Z),
@@ -101,8 +102,8 @@ let es = (0, Chunk320830.Z)(Chunk781428.Z),
   ed = (0, Chunk320830.Z)(Chunk677760.Z),
   eh = (0, Chunk320830.Z)(Chunk423527.Z),
   eg = (0, Chunk320830.Z)(Chunk264873.Z),
-  em = (0, Chunk320830.Z)(Chunk223543.Z),
-  ep = (0, Chunk320830.Z)(Chunk455502.Z),
+  ep = (0, Chunk320830.Z)(Chunk223543.Z),
+  em = (0, Chunk320830.Z)(Chunk455502.Z),
   ef = (0, Chunk320830.Z)(Chunk698177.Z),
   e_ = (0, Chunk320830.Z)(Chunk479495.Z),
   ex = (0, Chunk320830.Z)(Chunk299852.Z),
@@ -112,17 +113,17 @@ let es = (0, Chunk320830.Z)(Chunk781428.Z),
   ej = (0, Chunk320830.Z)(Chunk649156.Z),
   eI = (0, Chunk320830.Z)(Chunk909223.Z),
   eN = (0, Chunk320830.Z)(Chunk424044.Z),
-  eS = (0, Chunk320830.Z)(Chunk521379.Z),
+  ey = (0, Chunk320830.Z)(Chunk521379.Z),
   eO = (0, Chunk320830.Z)(Chunk360887.Z);
-class ey extends Chunk647438.PureComponent {
+class eS extends Chunk647438.PureComponent {
   static getDerivedStateFromProps(e, t) {
     var n;
     let {
       invite: r,
       location: i
     } = e, {
-      backgroundId: s
-    } = t, a = null != (n = (0, l.parse)(i.search).redirect_to) ? n : null;
+      backgroundId: l
+    } = t, a = null != (n = (0, s.parse)(i.search).redirect_to) ? n : null;
     (null == a || "" === a || !(0, o.B)(a) || a.startsWith(ee.Z5c.ME)) && (a = null);
     let c = null;
     if (null == r) c = (0, R.gK)(a);
@@ -131,7 +132,7 @@ class ey extends Chunk647438.PureComponent {
         guild: e,
         target_application: t
       } = r;
-      null != t ? null != s && (c = (0, P.xF)(t.id, s, 1024)) : null != e && "string" == typeof e.splash && (c = L.ZP.getGuildSplashURL({
+      null != t ? null != l && (c = (0, P.xF)(t.id, l, 1024)) : null != e && "string" == typeof e.splash && (c = L.ZP.getGuildSplashURL({
         id: e.id,
         splash: e.splash
       }))
@@ -217,7 +218,7 @@ class ey extends Chunk647438.PureComponent {
       splash: module,
       children: [(0, Chunk951288.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.LOGIN_HANDOFF,
-        render: e => (0, r.jsx)(ea, el(ei({}, e), {
+        render: e => (0, r.jsx)(ea, es(ei({}, e), {
           redirectTo: t
         }))
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
@@ -226,16 +227,16 @@ class ey extends Chunk647438.PureComponent {
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
         impressionName: Chunk990547.ImpressionNames.USER_LOGIN,
         path: Chunk981631.Z5c.LOGIN,
-        render: e => (0, r.jsx)(es, el(ei({}, e), {
+        render: e => (0, r.jsx)(el, es(ei({}, e), {
           redirectTo: t
         }))
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
         impressionName: Chunk990547.ImpressionNames.USER_REGISTRATION,
         path: Chunk981631.Z5c.REGISTER,
-        render: e => et.a ? (0, r.jsx)(eo, el(ei({}, e), {
+        render: e => et.a ? (0, r.jsx)(eo, es(ei({}, e), {
           redirectTo: t,
           inviteKey: n
-        })) : (0, r.jsx)(eh, el(ei({}, e), {
+        })) : (0, r.jsx)(eh, es(ei({}, e), {
           redirectTo: t
         }))
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
@@ -257,15 +258,15 @@ class ey extends Chunk647438.PureComponent {
               path: n
             },
             location: i,
-            transitionTo: l
-          } = e, s = (0, N.mb)(t, i.search);
+            transitionTo: s
+          } = e, l = (0, N.mb)(t, i.search);
           return a.tq || a.Em ? (0, r.jsx)(ed, {
-            inviteKey: s,
-            transitionTo: l
-          }, s) : (0, r.jsx)(eo, {
-            inviteKey: s,
+            inviteKey: l,
+            transitionTo: s
+          }, l) : (0, r.jsx)(eo, {
+            inviteKey: l,
             location: i,
-            transitionTo: l,
+            transitionTo: s,
             login: n === ee.Z5c.INVITE_LOGIN(":inviteCode")
           })
         }
@@ -280,20 +281,20 @@ class ey extends Chunk647438.PureComponent {
               path: n
             },
             location: i,
-            transitionTo: l
+            transitionTo: s
           } = e;
           return a.tq || a.Em ? (0, r.jsx)(z.Z, {
             code: t
           }, t) : (0, r.jsx)(ec, {
             code: t,
             location: i,
-            transitionTo: l,
+            transitionTo: s,
             login: n === ee.Z5c.GUILD_TEMPLATE_LOGIN(":guildTemplateCode")
           })
         }
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.VERIFY,
-        render: e => (0, r.jsx)(ep, ei({}, e))
+        render: e => (0, r.jsx)(em, ei({}, e))
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.VERIFY_HUB_EMAIL,
         render: e => (0, r.jsx)(ev, ei({}, e))
@@ -321,7 +322,7 @@ class ey extends Chunk647438.PureComponent {
         }, e))
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.AUTHORIZE_PAYMENT,
-        render: e => (0, r.jsx)(em, ei({}, e))
+        render: e => (0, r.jsx)(ep, ei({}, e))
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.RESET,
         render: e => (0, r.jsx)(e_, ei({
@@ -343,7 +344,7 @@ class ey extends Chunk647438.PureComponent {
         render: e => (0, r.jsx)(eN, ei({}, e))
       }), (0, Chunk951288.jsx)(Chunk765717.Z, {
         path: Chunk981631.Z5c.ACCOUNT_REVERT(":token"),
-        render: e => (0, r.jsx)(eS, ei({}, e))
+        render: e => (0, r.jsx)(ey, ei({}, e))
       })]
     })
   }
@@ -359,8 +360,8 @@ let eC = Chunk442837.ZP.connectStores([Chunk314897.default, Chunk701190.Z, Chunk
   var t, n, r;
   let {
     match: i,
-    location: l
-  } = e, s = null == i || null == (t = i.params) ? true : t.inviteCode, a = et.a ? et.Y : true, o = null != s ? (0, N.mb)(s, l.search) : a, c = null == i || null == (n = i.params) ? true : n.giftCode, u = null == i || null == (r = i.params) ? true : r.guildTemplateCode;
+    location: s
+  } = e, l = null == i || null == (t = i.params) ? true : t.inviteCode, a = et.a ? et.Y : true, o = null != l ? (0, N.mb)(l, s.search) : a, c = null == i || null == (n = i.params) ? true : n.giftCode, u = null == i || null == (r = i.params) ? true : r.guildTemplateCode;
   return {
     inviteKey: o,
     isAuthenticated: C.default.isAuthenticated(),
@@ -371,4 +372,4 @@ let eC = Chunk442837.ZP.connectStores([Chunk314897.default, Chunk701190.Z, Chunk
     guildTemplate: null != u ? b.Z.getGuildTemplate(u) : null,
     hasLoadedExperiments: v.Z.hasLoadedExperiments
   }
-})(ey)
+})(eS)

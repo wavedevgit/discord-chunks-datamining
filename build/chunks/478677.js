@@ -1,6 +1,7 @@
 /** Chunk was on 69773 **/
 /** chunk id: 478677, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  g: () => r
+  g: () => a
 }), require("./388685.js");
-var a, r = ((a = {}).MOBILE = "mobile", a.DESKTOP = "desktop", a.WEB = "web", a.DEVICE_CODE = "device_code", a)
+var r, a = ((r = {}).MOBILE = "mobile", r.DESKTOP = "desktop", r.WEB = "web", r.DEVICE_CODE = "device_code", r)

@@ -1,5 +1,6 @@
 /** Chunk was on 69773 **/
 /** chunk id: 94628, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   B: () => c
 });
@@ -16,11 +17,11 @@ function c(e) {
     onDenied: n,
     onError: c,
     onSuccess: d
-  } = e, u = (0, s.t)(n, c, d), f = r.useCallback(e => u(t, e), [t, u]);
-  return (0, a.jsx)(l.G, {
+  } = e, u = (0, l.t)(n, c, d), f = a.useCallback(e => u(t, e), [t, u]);
+  return (0, r.jsx)(s.G, {
     removeChildWrapper: true,
-    children: (0, a.jsx)(i.OAuth2AuthorizeModal, {
-      transitionState: o.Dvm.ENTERED,
+    children: (0, r.jsx)(o.OAuth2AuthorizeModal, {
+      transitionState: i.Dvm.ENTERED,
       clientId: t.clientId,
       scopes: t.scopes,
       showLogout: true,

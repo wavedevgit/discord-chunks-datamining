@@ -1,5 +1,6 @@
 /** Chunk was on 27978 **/
 /** chunk id: 743142, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   F: () => a,
   L: () => o
@@ -12,5 +13,5 @@ var r, Chunk754688 = require("./754688.js"),
 function o(e) {
   let t = decodeURIComponent(e),
     n = (0, i.Qj)(t);
-  return null != n && n.channelId === s.oC.ROLE_SUBSCRIPTIONS ? "role_subscription" : t === l.Z5c.SETTINGS(l.oAB.SUBSCRIPTIONS, "role-subscriptions") ? "role_subscription_setting" : true
+  return null != n && n.channelId === l.oC.ROLE_SUBSCRIPTIONS ? "role_subscription" : t === s.Z5c.SETTINGS(s.oAB.SUBSCRIPTIONS, "role-subscriptions") ? "role_subscription_setting" : true
 }

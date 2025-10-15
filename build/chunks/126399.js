@@ -1,7 +1,8 @@
 /** Chunk was on 27978 **/
 /** chunk id: 126399, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => p
 }), require("./388685.js");
 var Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
@@ -44,16 +45,16 @@ class g extends Chunk317770.Z {
       let {
         body: t
       } = e;
-      (0, s.Vb)(t.user), l.Z.loginToken(t.token, false), h(true, o)
+      (0, l.Vb)(t.user), s.Z.loginToken(t.token, false), h(true, o)
     }, e => {
-      if (null != i && h(false, o), l.Z.setFingerprint(i), (0, s.lx)(), o === a.F.ROLE_SUBSCRIPTION) {
+      if (null != i && h(false, o), s.Z.setFingerprint(i), (0, l.lx)(), o === a.F.ROLE_SUBSCRIPTION) {
         var t;
         c.default.track(d.rMx.MOBILE_WEB_HANDOFF_FAILURE, {
           reason: null != (t = e.message) ? t : e.text,
           handoff_source: o
         })
       }
-    }) : null != i ? (l.Z.setFingerprint(i), h(false, o), (0, s.lx)()) : (l.Z.setFingerprint(i), (0, s.by)())
+    }) : null != i ? (s.Z.setFingerprint(i), h(false, o), (0, l.lx)()) : (s.Z.setFingerprint(i), (0, l.by)())
   }
   constructor(...e) {
     super(...e),
@@ -74,8 +75,8 @@ class g extends Chunk317770.Z {
           handoffToken: t,
           fingerprint: n,
           handoffSource: true
-        }) : (l.Z.setFingerprint(null), (0, s.by)())
+        }) : (s.Z.setFingerprint(null), (0, l.by)())
       })
   }
 }
-let m = new g
+let p = new g

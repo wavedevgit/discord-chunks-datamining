@@ -1,5 +1,6 @@
 /** Chunk was on 27978 **/
 /** chunk id: 773244, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => d
 }), require("./35282.js");
@@ -19,18 +20,18 @@ function d(e) {
     path: i,
     paramsBuilder: d,
     search: h
-  } = e, g = (0, l.e7)([o.default], () => {
+  } = e, g = (0, s.e7)([o.default], () => {
     var e;
     return null != (e = o.default.getFingerprint()) ? e : o.default.getId()
-  }), m = (0, l.e7)([a.Z], () => a.Z.getState(i), [i]), p = r.useMemo(() => null == d ? {
+  }), p = (0, s.e7)([a.Z], () => a.Z.getState(i), [i]), m = r.useMemo(() => null == d ? {
     path: i,
     fingerprint: g,
     search: h
   } : d(i, g, h), [i, d, g, h]);
   return r.useEffect(() => {
-    u || null == m && s.Z.openNativeAppModal(i, c.Etm.DEEP_LINK, {
+    u || null == p && l.Z.openNativeAppModal(i, c.Etm.DEEP_LINK, {
       type: n,
-      params: p
+      params: m
     })
-  }, [m, i, p, n]), t
+  }, [p, i, m, n]), t
 }

@@ -1,7 +1,8 @@
 /** Chunk was on 27978 **/
 /** chunk id: 86779, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  Z: () => y
+  Z: () => S
 }), require("./388685.js"), require("./35282.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./457542.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -25,18 +26,18 @@ let b = "mweb_handoff_nonce",
   j = "mweb_handoff_nonce_expiration",
   I = +Chunk70956.Z.Millis.MINUTE,
   N = new Set(["nonce_missing", "nonce_expired", "handoff_exchange"]),
-  S = new Set(["deep_link_failed"]),
+  y = new Set(["deep_link_failed"]),
   O = () => {
     Chunk433517.K.remove(b), Chunk433517.K.remove(j)
   },
-  y = () => {
+  S = () => {
     let e = (0, Chunk442837.e7)([Chunk314897.default], () => Chunk314897.default.getFingerprint()),
       {
         fingerprint: t,
         handoff_token: n
       } = (0, Chunk593473.parse)(window.location.search),
       f = Array.isArray(exports) ? exports.length > 1 ? exports[0] : null : exports,
-      y = null != Chunk70956 ? Chunk70956 : null !== module ? module : true;
+      S = null != Chunk70956 ? Chunk70956 : null !== module ? module : true;
     Chunk647438.useEffect(() => {
       null !== Chunk70956 && module !== Chunk70956 && Chunk570140.Z.dispatch({
         type: "FINGERPRINT",
@@ -44,13 +45,13 @@ let b = "mweb_handoff_nonce",
       })
     }, [Chunk70956, module]);
     let [C, A] = Chunk647438.useState(null), T = Chunk647438.useCallback(e => {
-      A(e), p.default.track(x.rMx.MOBILE_WEB_HANDOFF_FAILURE, {
+      A(e), m.default.track(x.rMx.MOBILE_WEB_HANDOFF_FAILURE, {
         reason: e,
-        fingerprint: (0, s.K)(y)
+        fingerprint: (0, l.K)(S)
       }, {
-        fingerprint: y
+        fingerprint: S
       })
-    }, [A, y]), Z = Chunk433517.K.get(b);
+    }, [A, S]), Z = Chunk433517.K.get(b);
     if ("null" === require && null === C && T("deep_link_failed"), null != require && "null" !== require && null == Z && null === C && T("nonce_missing"), Chunk647438.useEffect(() => {
         if (null != Z) {
           let e = Chunk433517.K.get(j);
@@ -68,7 +69,7 @@ let b = "mweb_handoff_nonce",
           Chunk626135.default.track(Chunk981631.rMx.LOGIN_SUCCESSFUL, {
             source: Chunk981631.uRl.MOBILE_WEB_HANDOFF,
             is_new_user: false,
-            fingerprint: (0, Chunk756647.K)(y)
+            fingerprint: (0, Chunk756647.K)(S)
           });
           let e = new URL(window.location.href),
             t = new URLSearchParams(module.search);
@@ -78,11 +79,11 @@ let b = "mweb_handoff_nonce",
         }).finally(() => {
           O()
         })
-      }, [require, Z, C, y, T]), null == y) return null;
+      }, [require, Z, C, S, T]), null == S) return null;
     let P = null == C ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [Chunk388032.intl.string(Chunk388032.t.uJ1JsY), (0, Chunk951288.jsx)("br", {}), Chunk388032.intl.string(Chunk388032.t.GHVWAs)]
-    }) : S.has(C) ? Chunk388032.intl.string(Chunk388032.t.EPt55r) : N.has(C) ? Chunk388032.intl.string(Chunk388032.t.g87kTp) : true;
-    return null != C && S.has(C) ? (0, Chunk951288.jsx)("div", {
+    }) : y.has(C) ? Chunk388032.intl.string(Chunk388032.t.EPt55r) : N.has(C) ? Chunk388032.intl.string(Chunk388032.t.g87kTp) : true;
+    return null != C && y.has(C) ? (0, Chunk951288.jsx)("div", {
       className: Chunk78224.errorContainer,
       children: (0, Chunk951288.jsx)(Chunk481060.Text, {
         color: "interactive-normal",
@@ -103,12 +104,12 @@ let b = "mweb_handoff_nonce",
             n = new URLSearchParams(window.location.search);
           require.delete("fingerprint"), require.delete("handoff_token");
           let r = new URLSearchParams;
-          Chunk951288.set("redirect", encodeURIComponent(window.location.pathname + require.toString())), Chunk951288.set("key", module), Chunk951288.set("fingerprint", y), exports.search = Chunk951288.toString(), Chunk626135.default.track(Chunk981631.rMx.DEEP_LINK_CLICKED, {
-            fingerprint: (0, Chunk756647.K)(y),
+          Chunk951288.set("redirect", encodeURIComponent(window.location.pathname + require.toString())), Chunk951288.set("key", module), Chunk951288.set("fingerprint", S), exports.search = Chunk951288.toString(), Chunk626135.default.track(Chunk981631.rMx.DEEP_LINK_CLICKED, {
+            fingerprint: (0, Chunk756647.K)(S),
             source: "mobile_web_handoff",
             destination: Chunk981631.x0X
           }, {
-            fingerprint: y,
+            fingerprint: S,
             flush: true
           }), window.location.href = exports.toString()
         },

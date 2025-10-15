@@ -1,9 +1,8 @@
 /** Chunk was on web.js **/
 /** chunk id: 598077, original params: e,t,n (module,exports,re quire) **/
 "use strict";
-require.r(exports), require.d(exports, {
-  PLACEHOLDER_USER_RECORD: () => O,
-  default: () => y
+require.d(exports, {
+  Z: () => y
 }), require("./415506.js"), require("./997841.js");
 var Chunk149765 = require("./149765.js"),
   Chunk81825 = require("./81825.js"),
@@ -226,6 +225,6 @@ class y extends Chunk81825.Z {
     }), (null == (t = this.globalName) ? true : t.length) === 0 && (this.globalName = null)
   }
 }
-let O = new y({
+new y({
   id: "0"
 })

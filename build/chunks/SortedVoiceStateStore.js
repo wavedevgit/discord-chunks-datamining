@@ -92,7 +92,7 @@ function R(e, t, n, r) {
   var i;
   let a = _.default.getUser(n),
     o = null == a;
-  null == a && (a = new c.default({
+  null == a && (a = new c.Z({
     id: n,
     username: "...",
     discriminator: n.slice(false, false)

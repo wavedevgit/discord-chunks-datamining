@@ -1,7 +1,7 @@
 /** Chunk was on 59716 **/
 /** chunk id: 275370, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => m
+  default: () => h
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -10,86 +10,73 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk51144 = require("./51144.js"),
   Chunk985002 = require("./985002.js"),
-  Chunk880257 = require("./880257.js"),
   Chunk957656 = require("./957656.jsx"),
   Chunk130310 = require("./130310.jsx"),
   Chunk660886 = require("./660886.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk986360 = require("./986360.js");
-let m = e => {
+let h = e => {
   let {
     currentUser: t,
     otherUser: r,
     transitionState: o,
-    onClose: m
+    onClose: h
   } = e, j = i.useCallback(() => {
-    m()
-  }, [m]), x = (0, d.Z)(), [g, y] = i.useState(false), O = i.useCallback(() => {
+    h()
+  }, [h]), m = t.nsfwAllowed, [x, y] = i.useState(false), g = i.useCallback(() => {
     y(true)
   }, []), {
-    acceptLinkRequest: v,
-    isAcceptLoading: w
-  } = (0, c.G)({
-    onError: O,
+    acceptLinkRequest: O,
+    isAcceptLoading: v
+  } = (0, s.G)({
+    onError: g,
     onSuccess: j
   });
-  return a()(!x, "FamilyCenterAcceptLinkModal should only be rendered for teens."), (0, n.jsxs)(u.Z, {
+  return a()(!m, "FamilyCenterAcceptLinkModal should only be rendered for teens."), (0, n.jsxs)(l.IX, {
     transitionState: o,
-    "aria-label": b.intl.string(p.default.rlNJwZ),
-    className: h.root,
-    children: [g && (0, n.jsx)(s.M14, {
+    onClose: h,
+    "aria-label": b.intl.string(f.default.rlNJwZ),
+    children: [x && (0, n.jsx)(l.M14, {
       type: "critical",
-      children: b.intl.string(p.default.pegSM5)
-    }), (0, n.jsxs)(s.hzk, {
-      "data-migration-pending": true,
-      children: [(0, n.jsx)(u.Z.Header, {
+      children: b.intl.string(f.default.pegSM5)
+    }), (0, n.jsxs)(l.fef, {
+      children: [(0, n.jsx)(d.Z.Header, {
         currentUser: t,
         otherUser: r,
-        header: b.intl.string(p.default.rlNJwZ),
-        icon: (0, n.jsx)(s.xPt, {
+        header: b.intl.string(f.default.rlNJwZ),
+        icon: (0, n.jsx)(l.xPt, {
           size: "md",
           color: "currentColor",
-          className: h.linkIcon
+          className: p.linkIcon
         })
-      }), (0, n.jsxs)(u.Z.Content, {
-        children: [(0, n.jsx)(f.Z, {
+      }), (0, n.jsxs)(d.Z.Content, {
+        children: [(0, n.jsx)(u.Z, {
           inModal: true
-        }), (0, n.jsx)(s.Text, {
-          className: h.disclaimer,
+        }), (0, n.jsx)(l.Text, {
+          className: p.disclaimer,
           variant: "text-xs/normal",
           color: "text-default",
-          children: b.intl.format(p.default.snlFqR, {
-            username: l.ZP.getName(r)
+          children: b.intl.format(f.default.snlFqR, {
+            username: c.ZP.getName(r)
           })
         })]
       })]
-    }), (0, n.jsx)(s.mzw, {
-      "data-migration-pending": true,
-      children: (0, n.jsx)("form", {
-        onSubmit: e => {
-          y(false), e.preventDefault(), v(r.id)
+    }), (0, n.jsx)(l.Go$, {
+      actionsFullWidth: true,
+      actions: [{
+        variant: "secondary",
+        text: b.intl.string(b.t["ETE/oC"]),
+        onClick: h,
+        disabled: v
+      }, {
+        variant: "primary",
+        text: b.intl.string(f.default["wI/jo3"]),
+        onClick: () => {
+          y(false), O(r.id)
         },
-        children: (0, n.jsx)(u.Z.ButtonFooter, {
-          children: (0, n.jsxs)(s.ButtonGroup, {
-            direction: "horizontal-reverse",
-            children: [(0, n.jsx)(s.Button, {
-              variant: "secondary",
-              size: "sm",
-              text: b.intl.string(b.t["ETE/oC"]),
-              type: "button",
-              disabled: w,
-              onClick: m
-            }), (0, n.jsx)(s.Button, {
-              variant: "primary",
-              size: "sm",
-              text: b.intl.string(p.default["wI/jo3"]),
-              type: "submit",
-              disabled: w,
-              loading: w
-            })]
-          })
-        })
-      })
+        disabled: v,
+        loading: v
+      }]
     })]
   })
 }

@@ -1,12 +1,13 @@
 /** Chunk was on 27978 **/
 /** chunk id: 481153, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => N
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk812206 = require("./812206.js"),
@@ -34,29 +35,29 @@ let N = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk812206.Z, Chunk509545.Z
     sku: n,
     subscriptionPlan: null != r ? (0, _.oE)(r) : null,
     application: c.Z.getApplication(n.applicationId),
-    gifter: m.default.getUser(t.userId)
+    gifter: p.default.getUser(t.userId)
   }
 })(e => {
   let {
     error: t,
     giftCode: n,
-    gifter: l,
+    gifter: s,
     sku: a,
     application: c,
-    subscriptionPlan: m
-  } = e, p = null == l ? v.intl.string(v.t.lTGZAl) : v.intl.formatToPlainString(v.t.TjWdPc, {
-    username: l.username
+    subscriptionPlan: p
+  } = e, m = null == s ? v.intl.string(v.t.lTGZAl) : v.intl.formatToPlainString(v.t.TjWdPc, {
+    username: s.username
   }), f = a.name;
-  return null != m && (f = v.intl.formatToPlainString(m.interval === E.rV.MONTH ? v.t.CTpcCZ : v.t["rgPWG/"], {
+  return null != p && (f = v.intl.formatToPlainString(p.interval === E.rV.MONTH ? v.t.CTpcCZ : v.t["rgPWG/"], {
     skuName: a.name,
-    intervalCount: m.intervalCount
+    intervalCount: p.intervalCount
   })), (0, r.jsxs)(i.Fragment, {
     children: [null != n.giftStyle ? (0, r.jsx)(g.Z, {
       defaultAnimationState: h.SR.LOOP,
       giftStyle: n.giftStyle,
       className: b.seasonalIcon
     }) : (0, r.jsx)(u.qE, {
-      src: null != l ? l.getAvatarURL(true, 100) : null,
+      src: null != s ? s.getAvatarURL(true, 100) : null,
       size: o.EFr.DEPRECATED_SIZE_100,
       className: I.marginBottom20
     }), null != t ? (0, r.jsxs)(i.Fragment, {
@@ -67,9 +68,9 @@ let N = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk812206.Z, Chunk509545.Z
       })]
     }) : (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(u.DK, {
-        children: p
+        children: m
       }), (0, r.jsxs)(u.Dx, {
-        className: s()(I.marginTop8, j.flexCenter),
+        className: l()(I.marginTop8, j.flexCenter),
         children: [a.productLine !== x.POd.COLLECTIBLES && (0, r.jsx)(d.Z, {
           size: d.A.MEDIUM,
           className: b.applicationIcon,

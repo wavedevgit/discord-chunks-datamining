@@ -1,5 +1,6 @@
 /** Chunk was on 27978 **/
 /** chunk id: 792766, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   y: () => u
 }), require("./953529.js");
@@ -30,13 +31,13 @@ let u = e => {
       children: o.intl.string(o.t.Eabu1z)
     }), (0, r.jsxs)("div", {
       className: c.guild,
-      children: [(0, r.jsx)(l.ZP, {
-        mask: l.ZP.Masks.SQUIRCLE,
+      children: [(0, r.jsx)(s.ZP, {
+        mask: s.ZP.Masks.SQUIRCLE,
         width: 40,
         height: 40,
-        children: (0, r.jsx)(s.Z, {
+        children: (0, r.jsx)(l.Z, {
           guild: u,
-          size: s.Z.Sizes.MEDIUM,
+          size: l.Z.Sizes.MEDIUM,
           active: true
         })
       }), (0, r.jsxs)("div", {

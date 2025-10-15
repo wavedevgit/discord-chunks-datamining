@@ -853,7 +853,7 @@ async function e_() {
     });
     Chunk570140.Z.dispatch({
       type: "BILLING_NITRO_AFFINITY_FETCH_SUCCEEDED",
-      res: module.body.map(e => new h.default(e))
+      res: module.body.map(e => new h.Z(e))
     })
   } finally {
     Chunk570140.Z.dispatch({

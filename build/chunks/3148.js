@@ -54,7 +54,7 @@ function d(e) {
     let e = a.Z.getMessageByReference(f);
     (null == e ? true : e.state) === a.Y.LOADED && v.push(u(e.message.author))
   }
-  return null == p && (p = s.default.getCurrentUser()), p instanceof o.default && (p = u(p)), i()(null != p, "createMessage: author cannot be undefined"), {
+  return null == p && (p = s.default.getCurrentUser()), p instanceof o.Z && (p = u(p)), i()(null != p, "createMessage: author cannot be undefined"), {
     id: null != m ? m : (0, l.r)(),
     type: d,
     content: n,

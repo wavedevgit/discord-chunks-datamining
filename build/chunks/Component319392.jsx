@@ -1,7 +1,8 @@
-/** Chunk was on 61366 **/
+/** Chunk was on 18290 **/
 /** chunk id: 319392, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -16,7 +17,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk99372 = require("./99372.js"),
   Chunk629582 = require("./629582.js");
 
-function f() {
+function b() {
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk99372.getXboxApp,
     children: [(0, Chunk951288.jsxs)("div", {
@@ -52,20 +53,20 @@ function f() {
   })
 }
 
-function x(e) {
+function g(e) {
   let {
     onClose: t
   } = e;
-  return (0, o.jsx)(l.L, {
+  return (0, o.jsx)(c.L, {
     img: (0, o.jsx)("img", {
-      src: b.Z,
+      src: f.Z,
       width: "124",
       height: "160",
       alt: ""
     }),
     title: u.intl.string(u.t["7QsHmh"]),
     body: u.intl.string(u.t.byYNPX),
-    content: (0, o.jsx)(f, {}),
+    content: (0, o.jsx)(b, {}),
     onClose: t
   })
 }

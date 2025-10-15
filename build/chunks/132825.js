@@ -1,5 +1,6 @@
 /** Chunk was on 27978 **/
 /** chunk id: 132825, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   header: "header__1d5fc",
   horizontalAuthBox: "horizontalAuthBox__1d5fc",

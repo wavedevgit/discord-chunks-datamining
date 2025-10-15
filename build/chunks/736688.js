@@ -1,5 +1,6 @@
 /** Chunk was on 27978 **/
 /** chunk id: 736688, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   elevated: "elevated__3f12a",
   button: "button__3f12a elevated__3f12a",

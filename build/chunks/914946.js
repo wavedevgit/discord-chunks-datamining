@@ -135,7 +135,7 @@ function V(e) {
       channelId: e.channel_id
     }).map(U),
     n = b.Z.getChannel(e.channel_id),
-    r = null != e.author ? new m.default(e.author) : true,
+    r = null != e.author ? new m.Z(e.author) : true,
     i = null != e.author ? (0, f.ij)(r, n) : true;
   return {
     id: e.id,

@@ -1,5 +1,6 @@
 /** Chunk was on 69773 **/
 /** chunk id: 197528, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.r(exports), require.d(exports, {
   default: () => E
 }), require("./388685.js"), require("./35282.js");
@@ -57,24 +58,24 @@ function w() {
         userCodeData: e
       })
     }, [Chunk77987]),
-    k = Chunk647438.useCallback(e => {
+    T = Chunk647438.useCallback(e => {
       d({
         type: "success",
         userCodeData: e
       })
     }, [Chunk77987]),
-    T = Chunk647438.useCallback(e => {
+    O = Chunk647438.useCallback(e => {
       d({
         type: "error",
         userCodeData: e
       })
     }, [Chunk77987]),
-    O = true;
+    k = true;
   switch (require.type) {
     case "handoff":
       e = (0, Chunk951288.jsx)(Chunk581690.c, {
         code: require.code
-      }), O = false;
+      }), k = false;
       break;
     case "user-code-input":
       e = (0, Chunk951288.jsx)(Chunk521937.v, {
@@ -86,9 +87,9 @@ function w() {
       e = (0, Chunk951288.jsx)(Chunk94628.B, {
         data: require.userCodeData,
         onDenied: N,
-        onError: T,
-        onSuccess: k
-      }), O = false;
+        onError: O,
+        onSuccess: T
+      }), k = false;
       break;
     case "success":
       e = (0, Chunk951288.jsx)(Chunk902928.u, {
@@ -113,7 +114,7 @@ function w() {
     }), (0, Chunk951288.jsx)(Chunk133853.Z, {
       show: true,
       className: Chunk298899.logo
-    }), O ? (0, Chunk951288.jsx)("div", {
+    }), k ? (0, Chunk951288.jsx)("div", {
       className: Chunk298899.content,
       children: module
     }) : module]

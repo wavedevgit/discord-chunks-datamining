@@ -13,21 +13,21 @@ var Chunk481060 = require("./481060.js"),
   Chunk167154 = require("./167154.js");
 let d = e => {
   var t, r, {
-      children: i,
-      className: c
+      children: c,
+      className: i
     } = e,
-    a = function(e, t) {
+    l = function(e, t) {
       if (null == e) return {};
       var r, n, o = function(e, t) {
         if (null == e) return {};
         var r, n, o = {},
-          i = Object.keys(e);
-        for (n = 0; n < i.length; n++) r = i[n], t.indexOf(r) >= 0 || (o[r] = e[r]);
+          c = Object.keys(e);
+        for (n = 0; n < c.length; n++) r = c[n], t.indexOf(r) >= 0 || (o[r] = e[r]);
         return o
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var i = Object.getOwnPropertySymbols(e);
-        for (n = 0; n < i.length; n++) r = i[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r])
+        var c = Object.getOwnPropertySymbols(e);
+        for (n = 0; n < c.length; n++) r = c[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r])
       }
       return o
     }(e, ["children", "className"]);
@@ -50,10 +50,10 @@ let d = e => {
     return e
   }({
     "data-migration-pending": true,
-    className: c
-  }, a), r = r = {
+    className: i
+  }, l), r = r = {
     parentComponent: "FamilyCenterCommonModal",
-    children: i
+    children: c
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
     var r = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -70,29 +70,29 @@ d.ButtonFooter = e => {
     children: t
   } = e;
   return (0, n.jsx)("div", {
-    className: l.footer,
+    className: s.footer,
     children: t
   })
 }, d.Header = e => {
   let {
     icon: t,
     currentUser: r,
-    otherUser: a,
-    header: s
+    otherUser: l,
+    header: a
   } = e;
   return (0, n.jsxs)("div", {
-    className: l.header,
-    children: [(0, n.jsx)(i.Z, {
+    className: s.header,
+    children: [(0, n.jsx)(c.Z, {
       currentUser: r,
-      otherUser: a,
+      otherUser: l,
       children: t
     }), (0, n.jsxs)("div", {
-      className: l.heading,
+      className: s.heading,
       children: [(0, n.jsx)(o.Heading, {
         variant: "text-lg/bold",
-        children: s
-      }), (0, n.jsx)(c.Z, {
-        user: a
+        children: a
+      }), (0, n.jsx)(i.Z, {
+        user: l
       })]
     })]
   })
@@ -101,7 +101,7 @@ d.ButtonFooter = e => {
     children: t
   } = e;
   return (0, n.jsx)("div", {
-    className: l.content,
+    className: s.content,
     children: t
   })
 }, d.Notice = e => {
@@ -109,11 +109,11 @@ d.ButtonFooter = e => {
     notice: t
   } = e;
   return (0, n.jsxs)("div", {
-    className: l.notice,
+    className: s.notice,
     children: [(0, n.jsx)(o.Text, {
       variant: "eyebrow",
       color: "header-primary",
-      children: s.intl.string(a.default.cXgKMD)
+      children: a.intl.string(l.default.cXgKMD)
     }), (0, n.jsx)(o.Text, {
       variant: "text-sm/normal",
       color: "header-secondary",

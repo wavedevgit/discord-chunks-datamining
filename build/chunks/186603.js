@@ -1,5 +1,6 @@
-/** Chunk was on 23746 **/
+/** Chunk was on 26717 **/
 /** chunk id: 186603, original params: e,t,r (module,exports,require) **/
+"use strict";
 module.exports = {
   spacing: "spacing_eb51ec",
   headerSpacing: "headerSpacing_eb51ec",

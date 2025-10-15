@@ -1,12 +1,13 @@
 /** Chunk was on 27978 **/
 /** chunk id: 320830, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => _
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk954955 = require("./954955.js"),
-  s = require.n(Chunk954955),
+  l = require.n(Chunk954955),
   Chunk748780 = require("./748780.js"),
   Chunk873546 = require("./873546.js"),
   Chunk477690 = require("./477690.js"),
@@ -23,7 +24,7 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 
-function m(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +36,7 @@ function m(e) {
   }
   return e
 }
-let p = (0, Chunk624138.Mg)(Chunk477690.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
+let m = (0, Chunk624138.Mg)(Chunk477690.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
   f = {
     friction: 10,
     tension: 130
@@ -58,7 +59,7 @@ let p = (0, Chunk624138.Mg)(Chunk477690.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
         this.state.shouldAnimate ? this.animateTo(0, e) : e()
       }
       animateTo(e, t) {
-        a.Z.spring(this.anim, m({
+        a.Z.spring(this.anim, p({
           toValue: e
         }, f)).start(t)
       }
@@ -91,7 +92,7 @@ let p = (0, Chunk624138.Mg)(Chunk477690.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
               return (0, r.jsx)(a.Z.div, {
                 className: h.animatedDiv,
                 style: this.getAnimatedStyle(n.enabled),
-                children: (0, r.jsx)(e, m({}, this.props))
+                children: (0, r.jsx)(e, p({}, this.props))
               })
             }
           })
@@ -101,11 +102,11 @@ let p = (0, Chunk624138.Mg)(Chunk477690.Z.WAVE_SPLASH_RESPONSIVE_WIDTH_MOBILE),
         super(...e), g(this, "timeout", true), g(this, "anim", new a.Z.Value(0)), g(this, "state", {
           shouldAnimate: !o.tq
         }), g(this, "handleResize", () => {
-          let e = window.innerWidth > p;
+          let e = window.innerWidth > m;
           !this.state.shouldAnimate && e && this.anim.setValue(1), this.setState({
             shouldAnimate: e
           })
-        }), g(this, "handleResizeDebounced", s()(this.handleResize, 60))
+        }), g(this, "handleResizeDebounced", l()(this.handleResize, 60))
       }
     }
   }

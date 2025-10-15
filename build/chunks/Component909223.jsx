@@ -1,7 +1,8 @@
 /** Chunk was on 27978 **/
 /** chunk id: 909223, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  Z: () => S
+  Z: () => y
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -63,10 +64,10 @@ let I = {
     let {
       title: t,
       menuType: i
-    } = e, s = e => {
+    } = e, l = e => {
       let t = async () => {
-        await (0, m.yL)(i, e)
-      }, s = async t => await (0, m.RV)(i, e, t), o = e => {
+        await (0, p.yL)(i, e)
+      }, l = async t => await (0, p.RV)(i, e, t), o = e => {
         let t = null == e ? true : e.token;
         i === h.BM.MESSAGE ? (0, g.eE)(t) : i === h.BM.USER ? (0, g.JM)(t) : i === h.BM.GUILD && (0, g.FO)(t)
       };
@@ -75,13 +76,13 @@ let I = {
           default: e
         } = await n.e("56499").then(n.bind(n, 433570));
         return n => (0, r.jsx)(e, j(b({}, n), {
-          onFormSubmit: s,
+          onFormSubmit: l,
           onResend: t,
           onSuccess: o,
           headerText: x.intl.string(x.t.H3Q7U8),
           confirmButtonText: x.intl.string(x.t["13ofGu"]),
           impression: {
-            impressionName: l.ImpressionNames.URF_CONFIRM_EMAIL_CODE
+            impressionName: s.ImpressionNames.URF_CONFIRM_EMAIL_CODE
           }
         }))
       })
@@ -93,7 +94,7 @@ let I = {
           default: e
         } = await n.e("20670").then(n.bind(n, 993018));
         return t => (0, r.jsx)(e, j(b({}, t), {
-          onSuccess: s,
+          onSuccess: l,
           headerText: x.intl.string(x.t.ZLRYGU),
           confirmButtonText: x.intl.string(x.t.PDTjLN)
         }))
@@ -107,15 +108,15 @@ let I = {
       })]
     })
   },
-  S = () => {
-    let [e, t] = Chunk647438.useState(true), [n, l] = Chunk647438.useState([]), h = (0, Chunk442837.e7)([Chunk314897.default], () => Chunk314897.default.isAuthenticated()), g = (0, Chunk442837.e7)([Chunk353926.Z], () => Chunk353926.Z.hasLoadedExperiments), b = () => {
+  y = () => {
+    let [e, t] = Chunk647438.useState(true), [n, s] = Chunk647438.useState([]), h = (0, Chunk442837.e7)([Chunk314897.default], () => Chunk314897.default.isAuthenticated()), g = (0, Chunk442837.e7)([Chunk353926.Z], () => Chunk353926.Z.hasLoadedExperiments), b = () => {
       (0, Chunk185625.Jj)().then(e => {
         let {
           body: {
             capabilities: n
           }
         } = e;
-        t(false), l(n)
+        t(false), s(n)
       }).catch(() => {
         exports(false), Chunk990547([])
       })

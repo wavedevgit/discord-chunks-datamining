@@ -1,91 +1,79 @@
 /** Chunk was on 50872 **/
 /** chunk id: 442673, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => b
+  default: () => u
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk481060 = require("./481060.js"),
   Chunk985002 = require("./985002.js"),
-  Chunk880257 = require("./880257.js"),
   Chunk957656 = require("./957656.jsx"),
   Chunk660886 = require("./660886.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk601582 = require("./601582.js");
-let b = e => {
+let u = e => {
   let {
     currentUser: t,
     otherUser: r,
-    transitionState: b,
+    transitionState: u,
     onClose: f
-  } = e, h = i.useCallback(() => {
+  } = e, b = i.useCallback(() => {
     f()
-  }, [f]), p = (0, a.Z)(), [j, g] = i.useState(false), [m, x] = i.useState(false), y = i.useCallback(() => {
-    x(true), g(false)
+  }, [f]), h = t.nsfwAllowed, [p, j] = i.useState(false), [g, y] = i.useState(false), x = i.useCallback(() => {
+    y(true), j(false)
   }, []), {
     disconnectLinkRequest: O,
-    isDisconnectLoading: v
+    isDisconnectLoading: m
   } = (0, c.G)({
-    onSuccess: h,
-    onError: y
+    onSuccess: b,
+    onError: x
   });
-  return (0, n.jsx)(s.Z, {
-    transitionState: b,
-    children: (0, n.jsxs)("form", {
-      onSubmit: e => {
-        x(false), e.preventDefault(), O(r.id)
-      },
-      children: [m && (0, n.jsx)(o.M14, {
-        type: "critical",
-        children: d.intl.string(l.default.krIDdy)
-      }), (0, n.jsxs)(o.hzk, {
-        "data-migration-pending": true,
-        children: [(0, n.jsx)(s.Z.Header, {
-          currentUser: t,
-          otherUser: r,
-          header: d.intl.formatToPlainString(l.default["NMSTb/"], {
-            isAdult: String(p)
-          }),
-          icon: (0, n.jsx)(o.Dio, {
-            size: "md",
-            color: "currentColor",
-            className: u.closeIcon
-          })
-        }), (0, n.jsx)(s.Z.Notice, {
-          notice: p ? d.intl.string(l.default.EvMGLT) : d.intl.string(l.default.f1SUeW)
-        }), (0, n.jsx)("div", {
-          className: u.acknowledgementCheckbox,
-          children: (0, n.jsx)(o.Checkbox, {
-            checked: j,
-            onChange: e => {
-              g(e), x(false)
-            },
-            label: p ? d.intl.string(l.default["/MYCee"]) : d.intl.string(l.default.VJaHUb)
-          })
-        })]
-      }), (0, n.jsx)(o.mzw, {
-        "data-migration-pending": true,
-        children: (0, n.jsx)(s.Z.ButtonFooter, {
-          children: (0, n.jsxs)(o.ButtonGroup, {
-            direction: "horizontal-reverse",
-            children: [(0, n.jsx)(o.Button, {
-              variant: "secondary",
-              size: "sm",
-              text: d.intl.string(d.t["ETE/oC"]),
-              type: "button",
-              onClick: f,
-              disabled: v
-            }), (0, n.jsx)(o.Button, {
-              variant: "critical-primary",
-              size: "sm",
-              text: d.intl.string(l.default["c5L+sl"]),
-              type: "submit",
-              disabled: !j || v,
-              loading: v
-            })]
-          })
+  return (0, n.jsxs)(o.IX, {
+    transitionState: u,
+    onClose: f,
+    children: [g && (0, n.jsx)(o.M14, {
+      type: "critical",
+      children: s.intl.string(l.default.krIDdy)
+    }), (0, n.jsxs)(o.fef, {
+      children: [(0, n.jsx)(a.Z.Header, {
+        currentUser: t,
+        otherUser: r,
+        header: s.intl.formatToPlainString(l.default["NMSTb/"], {
+          isAdult: String(h)
+        }),
+        icon: (0, n.jsx)(o.Dio, {
+          size: "md",
+          color: "currentColor",
+          className: d.closeIcon
         })
+      }), (0, n.jsxs)(o.Kqy, {
+        gap: 16,
+        children: [(0, n.jsx)(a.Z.Notice, {
+          notice: h ? s.intl.string(l.default.EvMGLT) : s.intl.string(l.default.f1SUeW)
+        }), (0, n.jsx)(o.Checkbox, {
+          checked: p,
+          onChange: e => {
+            j(e), y(false)
+          },
+          label: h ? s.intl.string(l.default["/MYCee"]) : s.intl.string(l.default.VJaHUb)
+        })]
       })]
-    })
+    }), (0, n.jsx)(o.Go$, {
+      actionsFullWidth: true,
+      actions: [{
+        variant: "secondary",
+        text: s.intl.string(s.t["ETE/oC"]),
+        onClick: f,
+        disabled: m
+      }, {
+        variant: "critical-primary",
+        text: s.intl.string(l.default["c5L+sl"]),
+        onClick: () => {
+          y(false), O(r.id)
+        },
+        disabled: !p || m,
+        loading: m
+      }]
+    })]
   })
 }

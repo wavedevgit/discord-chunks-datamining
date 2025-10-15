@@ -1,5 +1,6 @@
 /** Chunk was on 27978 **/
 /** chunk id: 160033, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   authBox: "authBox_fd23fc",
   createButton: "createButton_fd23fc",

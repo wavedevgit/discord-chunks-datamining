@@ -1,5 +1,6 @@
 /** Chunk was on 27978 **/
 /** chunk id: 781428, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => $,
   q: () => Q
@@ -127,10 +128,10 @@ class X extends(r = Chunk647438.PureComponent) {
       location: r,
       handoffAvailable: i
     } = this.props, {
-      checkingHandoff: l,
-      redirecting: s
+      checkingHandoff: s,
+      redirecting: l
     } = this.state;
-    if (!n || e.authenticated || l && (i || s) || (this.state.conditionalMediationAbortController.abort("Transitioning to authenticated state"), this.loginOrSSO(n, r)), t.errors !== this.state.errors) {
+    if (!n || e.authenticated || s && (i || l) || (this.state.conditionalMediationAbortController.abort("Transitioning to authenticated state"), this.loginOrSSO(n, r)), t.errors !== this.state.errors) {
       var a, o, c;
       this.hasError("password") ? null == (a = this.passwordRef) || a.focus() : this.hasError("email") || this.hasError("login") ? null == (o = this.loginRef) || o.focus() : this.hasError("code") && (null == (c = this.codeRef) || c.focus())
     }
@@ -330,8 +331,8 @@ class X extends(r = Chunk647438.PureComponent) {
     var t;
     let n, {
         invite: r,
-        giftCode: l,
-        loginStatus: s,
+        giftCode: s,
+        loginStatus: l,
         country: o,
         showMobileWebHandoff: c,
         disableAutofocusOnDefaultForm: u
@@ -339,12 +340,12 @@ class X extends(r = Chunk647438.PureComponent) {
       h = !this.hasError("email") && this.hasError("password");
     return n = null != r ? (0, i.jsx)(B.Z, {
       invite: r
-    }) : null != l ? (0, i.jsx)(U.Z, {
-      giftCode: l
+    }) : null != s ? (0, i.jsx)(U.Z, {
+      giftCode: s
     }) : (0, i.jsxs)("div", {
-      className: H.header,
+      className: W.header,
       children: [(0, i.jsx)(_.Dx, {
-        className: W.marginBottom8,
+        className: H.marginBottom8,
         children: K.intl.string(K.t["7fNJgA"])
       }, "title"), false === (0, M.isAndroidWeb)() ? (0, i.jsx)(_.DK, {
         children: K.intl.string(K.t.euS7r4)
@@ -353,7 +354,7 @@ class X extends(r = Chunk647438.PureComponent) {
       direction: E.Z.Direction.HORIZONTAL,
       align: E.Z.Align.CENTER,
       children: [(0, i.jsxs)("div", {
-        className: H.mainLoginContainer,
+        className: W.mainLoginContainer,
         children: [this.canShowChooseAccount && this.state.dismissedChooseAccount && (0, i.jsx)(_.zx, {
           onClick: () => {
             this.setState(e => J(Y({}, e), {
@@ -362,13 +363,13 @@ class X extends(r = Chunk647438.PureComponent) {
           },
           look: _.zx.Looks.LINK,
           color: _.zx.Colors.PRIMARY,
-          className: H.goBackButton,
+          className: W.goBackButton,
           children: (0, i.jsxs)("div", {
-            className: H.content,
+            className: W.content,
             children: [(0, i.jsx)(d.V7D, {
               size: "xs",
               color: "currentColor",
-              className: H.caret
+              className: W.caret
             }), (0, i.jsx)(d.Text, {
               variant: "text-md/normal",
               children: K.intl.string(K.t["1MrpWO"])
@@ -376,11 +377,11 @@ class X extends(r = Chunk647438.PureComponent) {
           })
         }), n, (0, i.jsx)(d.y5t, {
           children: (0, i.jsxs)(_.gO, {
-            className: W.marginTop20,
+            className: H.marginTop20,
             children: [(0, i.jsx)(C.Z, {
               alpha2: o.alpha2,
               countryCode: o.code.split(" ")[0],
-              className: W.marginBottom20,
+              className: H.marginBottom20,
               label: K.intl.string(K.t.tUjnxr),
               error: null != (t = this.renderError("login")) ? t : this.renderError("email"),
               onChange: (e, t) => this.setState({
@@ -413,24 +414,24 @@ class X extends(r = Chunk647438.PureComponent) {
               onClick: this.handleForgotPassword,
               look: _.zx.Looks.LINK,
               color: _.zx.Colors.LINK,
-              className: a()(W.marginBottom20, W.marginTop4),
+              className: a()(H.marginBottom20, H.marginTop4),
               children: K.intl.string(K.t.wWIufs)
             }), (0, i.jsx)(_.zx, {
               type: "submit",
-              submitting: s === z.u34.LOGGING_IN,
+              submitting: l === z.u34.LOGGING_IN,
               color: _.zx.Colors.BRAND,
-              className: W.marginBottom8,
+              className: H.marginBottom8,
               children: K.intl.string(K.t.dKhVQN)
             }), (0, i.jsxs)("div", {
-              className: W.marginTop4,
+              className: H.marginTop4,
               children: [(0, i.jsx)("span", {
-                className: H.needAccount,
+                className: W.needAccount,
                 children: K.intl.string(K.t.tmE73r)
               }), (0, i.jsx)(_.zx, {
                 onClick: this.handleGotoRegister,
                 look: _.zx.Looks.LINK,
                 color: _.zx.Colors.LINK,
-                className: H.smallRegisterLink,
+                className: W.smallRegisterLink,
                 children: K.intl.string(K.t.pV8xeR)
               })]
             })]
@@ -464,7 +465,7 @@ class X extends(r = Chunk647438.PureComponent) {
     return (0, i.jsx)(F.Z, {
       onSubmit: this.handleLogin,
       tag: "form",
-      className: a()(this.props.authBoxClassName, H.horizontalAuthBox),
+      className: a()(this.props.authBoxClassName, W.horizontalAuthBox),
       children: () => [(0, i.jsx)(b.Z, {
         guildTemplate: e
       }, "template"), this.renderDefaultForm(false)]
@@ -547,9 +548,9 @@ class X extends(r = Chunk647438.PureComponent) {
       invite: t,
       guildTemplate: n,
       loginStatus: r,
-      handoffAvailable: l
+      handoffAvailable: s
     } = this.props, {
-      checkingHandoff: s,
+      checkingHandoff: l,
       redirecting: a
     } = this.state;
     if (a || Chunk120356) return (0, Chunk951288.jsx)(Q, {});
@@ -703,7 +704,7 @@ class X extends(r = Chunk647438.PureComponent) {
           header: K.intl.string(K.t.f5Pi7A),
           confirmText: K.intl.string(K.t.BddRzS),
           confirmButtonColor: _.zx.Colors.BRAND,
-          className: c.tq ? H.mobile : ""
+          className: c.tq ? W.mobile : ""
         }, e), {
           children: (0, i.jsx)(d.Text, {
             variant: "text-md/normal",
@@ -744,12 +745,12 @@ class X extends(r = Chunk647438.PureComponent) {
           invite: n,
           giftCode: r,
           guildTemplate: i,
-          location: l,
-          transitionTo: s,
+          location: s,
+          transitionTo: l,
           redirectTo: a
         } = this.props,
-        c = null != l ? (0, o.parse)(l.search) : {};
-      "" !== t && (c.email = t), null != n ? (c.mode = "register", e = z.Z5c.INVITE(n.code)) : null != r ? (c.mode = "register", e = z.Z5c.GIFT_CODE(r.code)) : null != i ? e = z.Z5c.GUILD_TEMPLATE(i.code) : null != a ? (e = z.Z5c.REGISTER, c.redirect_to = a) : e = z.Z5c.REGISTER, this.loginReset(), s(e, {
+        c = null != s ? (0, o.parse)(s.search) : {};
+      "" !== t && (c.email = t), null != n ? (c.mode = "register", e = z.Z5c.INVITE(n.code)) : null != r ? (c.mode = "register", e = z.Z5c.GIFT_CODE(r.code)) : null != i ? e = z.Z5c.GUILD_TEMPLATE(i.code) : null != a ? (e = z.Z5c.REGISTER, c.redirect_to = a) : e = z.Z5c.REGISTER, this.loginReset(), l(e, {
         search: (0, o.stringify)(c)
       }), k.S.dispatch(z.CkL.WAVE_EMPHASIZE)
     });
@@ -775,7 +776,7 @@ q(X, "defaultProps", {
 });
 let $ = function(e) {
   (0, T.M)();
-  let t = (0, u.cj)([L.Z, w.Z, R.default, N.Z, y.Z], () => ({
+  let t = (0, u.cj)([L.Z, w.Z, R.default, N.Z, S.Z], () => ({
     authenticated: R.default.isAuthenticated(),
     handoffAvailable: L.Z.isHandoffAvailable(),
     user: L.Z.user,
@@ -783,7 +784,7 @@ let $ = function(e) {
     mfaTicket: R.default.getMFATicket(),
     mfaMethods: R.default.getMFAMethods(),
     defaultRoute: w.Z.defaultRoute,
-    country: y.Z.getCountryCode(),
+    country: S.Z.getCountryCode(),
     hasLoggedInAccounts: N.Z.getHasLoggedInAccounts()
   }));
   return (0, i.jsx)(X, Y({}, e, t))

@@ -1,7 +1,8 @@
-/** Chunk was on 23746 **/
+/** Chunk was on 26717 **/
 /** chunk id: 837651, original params: e,t,r (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  default: () => x
+  default: () => m
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk186603 = require("./186603.js");
 
-function g(e, t, r) {
+function p(e, t, r) {
   return t in e ? Object.defineProperty(e, t, {
     value: r,
     enumerable: true,
@@ -22,33 +23,33 @@ function g(e, t, r) {
     writable: true
   }) : e[t] = r, e
 }
-let p = e => {
+let g = e => {
   let {
     image: t,
     label: r,
-    text: i,
+    text: n,
     children: a
   } = e;
-  return (0, s.jsxs)(l.Z, {
-    className: u.spacing,
-    children: [(0, s.jsx)(l.Z, {
+  return (0, s.jsxs)(o.Z, {
+    className: h.spacing,
+    children: [(0, s.jsx)(o.Z, {
       grow: 0,
       shrink: 0,
       basis: "156px",
-      justify: l.Z.Justify.CENTER,
-      className: u.image,
+      justify: o.Z.Justify.CENTER,
+      className: h.image,
       children: t
-    }), (0, s.jsx)(l.Z, {
-      direction: l.Z.Direction.VERTICAL,
-      justify: l.Z.Justify.CENTER,
+    }), (0, s.jsx)(o.Z, {
+      direction: o.Z.Direction.VERTICAL,
+      justify: o.Z.Justify.CENTER,
       children: (0, s.jsxs)("div", {
-        children: [(0, s.jsx)(n.Heading, {
+        children: [(0, s.jsx)(i.Heading, {
           variant: "heading-sm/semibold",
-          className: u.headerSpacing,
+          className: h.headerSpacing,
           children: r
-        }), (0, s.jsx)(n.Text, {
+        }), (0, s.jsx)(i.Text, {
           variant: "text-md/normal",
-          children: i
+          children: n
         }), a]
       })
     })]
@@ -59,18 +60,18 @@ class f extends Chunk647438.PureComponent {
     var e;
     let {
       transitionState: t,
-      onClose: i
+      onClose: n
     } = this.props, {
       totpSecret: a,
-      code: g,
+      code: p,
       isVerifying: f
-    } = this.state, x = null == (e = Chunk594174.default.getCurrentUser()) ? true : module.email, m = (0, Chunk287880.U0)(null != x ? x : "", Chunk816814), b = (0, Chunk951288.jsx)("form", {
+    } = this.state, m = null == (e = Chunk594174.default.getCurrentUser()) ? true : module.email, x = (0, Chunk287880.U0)(null != m ? m : "", Chunk816814), b = (0, Chunk951288.jsx)("form", {
       onSubmit: this.handleActivate,
       children: (0, Chunk951288.jsxs)(Chunk600164.Z, {
         className: Chunk186603.inputContainer,
         align: Chunk600164.Z.Align.START,
         children: [(0, Chunk951288.jsx)(Chunk481060.oil, {
-          value: g,
+          value: p,
           placeholder: "000 000",
           maxLength: 7,
           autoComplete: "one-time-code",
@@ -115,7 +116,7 @@ class f extends Chunk647438.PureComponent {
           })
         })]
       }), (0, Chunk951288.jsxs)(Chunk481060.hzk, {
-        children: [(0, Chunk951288.jsx)(p, {
+        children: [(0, Chunk951288.jsx)(g, {
           image: (0, Chunk951288.jsx)("img", {
             alt: "",
             src: require("./340061.js"),
@@ -129,9 +130,9 @@ class f extends Chunk647438.PureComponent {
           })
         }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
           className: Chunk186603.divider
-        }), (0, Chunk951288.jsx)(p, {
+        }), (0, Chunk951288.jsx)(g, {
           image: (0, Chunk951288.jsx)(Chunk198993.ZP, {
-            text: m
+            text: x
           }),
           label: Chunk388032.intl.string(Chunk388032.t["91InF1"]),
           text: Chunk388032.intl.string(Chunk388032.t.hFeBkl),
@@ -150,7 +151,7 @@ class f extends Chunk647438.PureComponent {
           })
         }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
           className: Chunk186603.divider
-        }), (0, Chunk951288.jsx)(p, {
+        }), (0, Chunk951288.jsx)(g, {
           image: (0, Chunk951288.jsx)("img", {
             alt: "",
             src: require("./308777.js")
@@ -163,16 +164,16 @@ class f extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), g(this, "state", {
+    super(...e), p(this, "state", {
       code: "",
       totpSecret: (0, d.bV)(),
       error: null,
       isVerifying: false
-    }), g(this, "handleCodeChange", e => {
+    }), p(this, "handleCodeChange", e => {
       this.setState({
         code: e
       })
-    }), g(this, "handleActivate", e => {
+    }), p(this, "handleActivate", e => {
       e.preventDefault();
       let {
         totpSecret: t,
@@ -187,7 +188,7 @@ class f extends Chunk647438.PureComponent {
         error: e.body.message,
         isVerifying: false
       }))
-    }), g(this, "handleActivateSuccess", () => {
+    }), p(this, "handleActivateSuccess", () => {
       let {
         onClose: e,
         handleEnableMFASuccess: t
@@ -198,4 +199,4 @@ class f extends Chunk647438.PureComponent {
     })
   }
 }
-let x = f
+let m = f

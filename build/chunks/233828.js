@@ -1,5 +1,6 @@
 /** Chunk was on 69773 **/
 /** chunk id: 233828, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   panel: "panel__79a1f",
   panelHeader: "panelHeader__79a1f",

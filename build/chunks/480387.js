@@ -1,8 +1,9 @@
 /** Chunk was on 27978 **/
 /** chunk id: 480387, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   HJ: () => h,
-  Zd: () => m,
+  Zd: () => p,
   yD: () => g
 });
 var Chunk213919 = require("./213919.js"),
@@ -19,16 +20,16 @@ function h() {
   let e = Chunk314897.default.getId();
   Chunk726745.Z.getUsers().forEach(async t => {
     let n, {
-        id: s
+        id: l
       } = t,
-      a = r.getToken(s);
-    if (null == a || "" === a) return void l.Z.dispatch({
+      a = r.getToken(l);
+    if (null == a || "" === a) return void s.Z.dispatch({
       type: "MULTI_ACCOUNT_VALIDATE_TOKEN_FAILURE",
-      userId: s
+      userId: l
     });
-    l.Z.dispatch({
+    s.Z.dispatch({
       type: "MULTI_ACCOUNT_VALIDATE_TOKEN_REQUEST",
-      userId: s
+      userId: l
     });
     try {
       n = await i.tn.get({
@@ -41,18 +42,18 @@ function h() {
       })
     } catch (t) {
       let e = (null == t ? true : t.status) === 401 || (null == t ? true : t.status) === 403;
-      l.Z.dispatch({
+      s.Z.dispatch({
         type: e ? "MULTI_ACCOUNT_VALIDATE_TOKEN_FAILURE" : "MULTI_ACCOUNT_VALIDATE_TOKEN_SUCCESS",
-        userId: s
+        userId: l
       });
       return
     }
-    l.Z.dispatch({
-      type: e === s ? "CURRENT_USER_UPDATE" : "USER_UPDATE",
+    s.Z.dispatch({
+      type: e === l ? "CURRENT_USER_UPDATE" : "USER_UPDATE",
       user: n.body
-    }), l.Z.dispatch({
+    }), s.Z.dispatch({
       type: "MULTI_ACCOUNT_VALIDATE_TOKEN_SUCCESS",
-      userId: s
+      userId: l
     })
   })
 }
@@ -62,14 +63,14 @@ function g(e, t) {
     switchSynchronously: t
   });
   let n = r.getToken(e);
-  return null == n ? (d.log("Switching accounts failed because there was no token"), l.Z.dispatch({
+  return null == n ? (d.log("Switching accounts failed because there was no token"), s.Z.dispatch({
     type: "MULTI_ACCOUNT_VALIDATE_TOKEN_FAILURE",
     userId: e
-  }), Promise.resolve()) : s.Z.switchAccountToken(n, t)
+  }), Promise.resolve()) : l.Z.switchAccountToken(n, t)
 }
 
-function m(e) {
-  l.Z.dispatch({
+function p(e) {
+  s.Z.dispatch({
     type: "MULTI_ACCOUNT_REMOVE_ACCOUNT",
     userId: e
   })

@@ -170,7 +170,7 @@ let Z = Chunk647438.memo(function(e) {
       guildId: s,
       createdAt: x,
       applicationStatus: j
-    } = t, b = r.useMemo(() => new S.default(t.user), [t.user]), h = (0, p.L)({
+    } = t, b = r.useMemo(() => new S.Z(t.user), [t.user]), h = (0, p.L)({
       guildId: s
     }), g = (0, c.e7)([T.Z], () => T.Z.getGuild(s)), v = j === f.wB.SUBMITTED;
     return null == b ? null : (0, l.jsxs)("tr", {

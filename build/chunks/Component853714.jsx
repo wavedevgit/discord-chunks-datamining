@@ -394,7 +394,7 @@ class U extends Chunk647438.PureComponent {
       }, null != (n = e.key) ? n : t)
     }), D(this, "renderUserQuickSelectItem", (e, t) => {
       var n;
-      if (e.user instanceof b.default) {
+      if (e.user instanceof b.Z) {
         let t = e.user;
         return (0, r.jsxs)(d.lo1, {
           value: t.id,
@@ -455,7 +455,7 @@ class U extends Chunk647438.PureComponent {
           valueLabel: P.intl.string(P.t.an9Ry3),
           value: null
         },
-        g = [u, ...s].map(e => e instanceof b.default ? function(e) {
+        g = [u, ...s].map(e => e instanceof b.Z ? function(e) {
           return {
             label: e.username,
             value: e.id,

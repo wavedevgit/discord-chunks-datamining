@@ -1,5 +1,6 @@
 /** Chunk was on 27978 **/
 /** chunk id: 223543, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => d
 }), require("./388685.js");
@@ -18,11 +19,11 @@ function d(e) {
   } = e, [d, h] = i.useState("submitting");
   return (i.useEffect(() => {
     (0, o.e)("authorize_payment");
-    let e = (0, s.Z)(t);
+    let e = (0, l.Z)(t);
     if (null == e) return void h("failed");
     (async () => {
       try {
-        await l.Z.authorizePayment(e), h("succeeded")
+        await s.Z.authorizePayment(e), h("succeeded")
       } catch (e) {
         h("failed")
       }

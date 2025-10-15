@@ -250,7 +250,7 @@ function K(e) {
           children: e.name
         })
       }
-      if (e instanceof Z.default) return (0, i.jsx)(J, {
+      if (e instanceof Z.Z) return (0, i.jsx)(J, {
         guildId: t.id,
         channelId: n.id,
         user: e
@@ -261,7 +261,7 @@ function K(e) {
       M.Z.requestMembers(t.id, e, 20)
     },
     onSelect: e => {
-      null != e && (Q(e) ? a(e.id, x.BN.ROLE) : e instanceof Z.default && a(e.id, x.BN.MEMBER))
+      null != e && (Q(e) ? a(e.id, x.BN.ROLE) : e instanceof Z.Z && a(e.id, x.BN.MEMBER))
     },
     onClose: r,
     position: c

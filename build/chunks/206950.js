@@ -49,7 +49,7 @@ function u(e) {
       })(Object(n)).forEach(function(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
       }), t)),
-      u = new s.default({
+      u = new s.Z({
         id: "313337",
         username: c.intl.string(c.t.cqpybK),
         discriminator: "0000",

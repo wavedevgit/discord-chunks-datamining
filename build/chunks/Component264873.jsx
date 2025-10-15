@@ -1,12 +1,13 @@
 /** Chunk was on 27978 **/
 /** chunk id: 264873, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => _
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk525654 = require("./525654.js"),
-  s = require.n(Chunk525654),
+  l = require.n(Chunk525654),
   Chunk442837 = require("./442837.js"),
   Chunk893776 = require("./893776.js"),
   Chunk493773 = require("./493773.js"),
@@ -21,15 +22,15 @@ var Chunk951288 = require("./951288.js"),
 function _(e) {
   let {
     location: t,
-    transitionTo: l = h.uL
+    transitionTo: s = h.uL
   } = e, [a, _] = i.useState("submitting");
 
   function x() {
-    return "Android" === s().os.family || "iOS" === s().os.family ? null : (0, r.jsx)(d.zx, {
-      onClick: () => l(m.Z5c.LOGIN, {
+    return "Android" === l().os.family || "iOS" === l().os.family ? null : (0, r.jsx)(d.zx, {
+      onClick: () => s(p.Z5c.LOGIN, {
         source: "authorizeIPAdress"
       }),
-      children: p.intl.string(p.t.dKhVQN)
+      children: m.intl.string(m.t.dKhVQN)
     })
   }
   return ((0, c.ZP)(() => {
@@ -50,10 +51,10 @@ function _(e) {
       className: f.marginBottom20
     }), (0, r.jsx)(d.Dx, {
       className: f.marginBottom8,
-      children: p.intl.string(p.t["f/54az"])
+      children: m.intl.string(m.t["f/54az"])
     }), (0, r.jsx)(d.DK, {
       className: f.marginBottom40,
-      children: p.intl.string(p.t.i3ehMr)
+      children: m.intl.string(m.t.i3ehMr)
     }), x()]
   }) : "succeeded" === a ? (0, r.jsxs)(d.ZP, {
     children: [(0, r.jsx)("img", {
@@ -62,14 +63,14 @@ function _(e) {
       className: f.marginBottom20
     }), (0, r.jsx)(d.Dx, {
       className: f.marginBottom8,
-      children: p.intl.string(p.t.iG0SlK)
+      children: m.intl.string(m.t.iG0SlK)
     }), (0, r.jsx)(d.DK, {
       className: f.marginBottom40,
-      children: p.intl.string(p.t["Elv+qt"])
+      children: m.intl.string(m.t["Elv+qt"])
     }), x()]
   }) : (0, r.jsxs)(d.ZP, {
     children: [(0, r.jsx)(d.Hh, {}), (0, r.jsx)(d.Dx, {
-      children: p.intl.string(p.t["9exy+V"])
+      children: m.intl.string(m.t["9exy+V"])
     })]
   })
 }

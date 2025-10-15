@@ -164,12 +164,12 @@ function $(e) {
     eligibilityStatesGroups: n,
     onPlatformConnect: t,
     onPlatformConnected: a
-  } = e, [i, s] = o.useState({}), [u, x] = o.useState(0), [N, A] = o.useState(null), [v, j] = o.useState(null), _ = o.useMemo(() => d().flatten(n), [n]), y = o.useMemo(() => d().groupBy(_, e => "".concat(e.connection_type).concat(null != e.application_id ? ":".concat(e.application_id) : "")), [_]);
+  } = e, [i, s] = o.useState({}), [u, x] = o.useState(0), [N, A] = o.useState(null), [f, j] = o.useState(null), _ = o.useMemo(() => d().flatten(n), [n]), y = o.useMemo(() => d().groupBy(_, e => "".concat(e.connection_type).concat(null != e.application_id ? ":".concat(e.application_id) : "")), [_]);
   o.useEffect(() => x(Date.now()), [_]), o.useEffect(() => {
     if (null == N) return;
-    let e = y["".concat(N).concat(null != v ? ":".concat(v.id) : "")];
-    null != e && e.every(e => e.result) && a(N, v)
-  }, [y, N, v, a]);
+    let e = y["".concat(N).concat(null != f ? ":".concat(f.id) : "")];
+    null != e && e.every(e => e.result) && a(N, f)
+  }, [y, N, f, a]);
   let g = (0, p.dQu)(h.Z.unsafe_rawColors.GREEN_330).hex();
   return (0, c.jsx)(c.Fragment, {
     children: Object.keys(y).sort((e, n) => {
@@ -179,14 +179,14 @@ function $(e) {
     }).map(e => {
       var n, o, a;
       let d, h, x, N = y[e],
-        v = N.find(e => null == e.operator),
+        f = N.find(e => null == e.operator),
         _ = N.filter(e => null != e.operator),
-        I = (null == v || v.result) && _.every(e => e.result),
+        I = (null == f || f.result) && _.every(e => e.result),
         E = N.find(e => null != e.application),
         k = b.Z.get(e),
         O = null == k || k.enabled,
         S = null == E ? true : E.application,
-        G = (null == S ? true : S.bot) != null ? new P.default(S.bot) : null;
+        G = (null == S ? true : S.bot) != null ? new P.Z(S.bot) : null;
       D.SJ.includes(null != (n = null == S ? true : S.id) ? n : "") ? d = (0, c.jsx)(U.Z, {
         className: q.botTag,
         color: g,
@@ -244,7 +244,7 @@ function $(e) {
           })
         }) : null, null != k ? (0, c.jsx)(J, {
           platformType: k.type
-        }) : null, null != G ? (0, c.jsx)(f.Z, {
+        }) : null, null != G ? (0, c.jsx)(v.Z, {
           user: G
         }) : null, (0, c.jsxs)("div", {
           className: q.connectionsChecksGroupTextContainer,
@@ -296,10 +296,10 @@ function ee(e) {
     [u, h] = o.useState(l.showActivity),
     [m, x] = o.useState(1 === l.metadataVisibility),
     [C, A] = o.useState(1 === l.visibility);
-  (0, v.ZP)(() => {
+  (0, f.ZP)(() => {
     i(!C), r(m)
   });
-  let f = b.Z.get(l.type);
+  let v = b.Z.get(l.type);
   return W.BFP.has(l.type) && (n = (0, c.jsx)(p.rsf, {
     label: Y.intl.string(Y.t["+KCMSi"]),
     checked: s,
@@ -308,13 +308,13 @@ function ee(e) {
     }
   })), W.vbS.has(l.type) && (t = (0, c.jsx)(p.rsf, {
     label: Y.intl.format(Y.t["6u6J0q"], {
-      platform: f.name
+      platform: v.name
     }),
     checked: u,
     onChange: e => {
       h(e), N.Z.setShowActivity(l.type, l.id, e)
     }
-  })), true === f.hasMetadata && (a = (0, c.jsx)(p.rsf, {
+  })), true === v.hasMetadata && (a = (0, c.jsx)(p.rsf, {
     label: Y.intl.string(Y.t.FYKGsL),
     checked: m,
     disabled: !C,
@@ -339,7 +339,7 @@ function en(e) {
     onClose: t,
     guildId: a,
     role: l
-  } = e, [i, s] = o.useState(0), [d, h] = o.useState(null), [x, C] = o.useState(false), [N, f] = o.useState(true), [v, T] = o.useState(false), [g, P] = o.useState(true), [B, D] = o.useState(false), H = (0, u.e7)([w.Z], () => w.Z.getAccounts()), U = (0, u.e7)([S.default], () => S.default.getId()), [V, J] = o.useState(null), [X, en] = o.useState(null), [et, ec] = o.useState(null), eo = (0, j.ZP)(), ea = (0, u.e7)([E.default], () => E.default.locale), el = (0, u.e7)([R.ZP], () => R.ZP.getMember(a, U)), ei = Object.values((0, u.e7)([G.Z], () => G.Z.getMutableGuildChannelsForGuild(a))).filter(e => Z.Z.can(W.Plq.VIEW_CHANNEL, e) && Z.Z.can(W.Plq.SEND_MESSAGES, e) && (0, y.Z)(e).includes(l));
+  } = e, [i, s] = o.useState(0), [d, h] = o.useState(null), [x, C] = o.useState(false), [N, v] = o.useState(true), [f, T] = o.useState(false), [g, P] = o.useState(true), [B, D] = o.useState(false), H = (0, u.e7)([w.Z], () => w.Z.getAccounts()), U = (0, u.e7)([S.default], () => S.default.getId()), [V, J] = o.useState(null), [X, en] = o.useState(null), [et, ec] = o.useState(null), eo = (0, j.ZP)(), ea = (0, u.e7)([E.default], () => E.default.locale), el = (0, u.e7)([R.ZP], () => R.ZP.getMember(a, U)), ei = Object.values((0, u.e7)([G.Z], () => G.Z.getMutableGuildChannelsForGuild(a))).filter(e => Z.Z.can(W.Plq.VIEW_CHANNEL, e) && Z.Z.can(W.Plq.SEND_MESSAGES, e) && (0, y.Z)(e).includes(l));
 
   function er() {
     let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
@@ -375,17 +375,17 @@ function en(e) {
   }
   return o.useEffect(() => {
     A.Z.fetchGuildRoleConnectionsEligibility(a, l.id).then(e => {
-      h(e), C(e.some(e => e.every(e => e.result))), f(false)
+      h(e), C(e.some(e => e.every(e => e.result))), v(false)
     })
   }, [a, l.id, H]), o.useEffect(() => {
     L.default.track(W.rMx.PASSPORT_CHALLENGE_VIEWED, K({
       role_id: l.id
     }, (0, _.hH)(a)))
   }, [a, l.id]), o.useEffect(() => {
-    v && null != el && el.roles.includes(l.id) && (T(false), ei.length > 0 ? s(2) : null == t || t(), L.default.track(W.rMx.PASSPORT_CHALLENGE_FINISHED, K({
+    f && null != el && el.roles.includes(l.id) && (T(false), ei.length > 0 ? s(2) : null == t || t(), L.default.track(W.rMx.PASSPORT_CHALLENGE_FINISHED, K({
       role_id: l.id
     }, (0, _.hH)(a))))
-  }, [v, ei.length, el, a, l.id, t]), (0, c.jsxs)(p.Y0X, {
+  }, [f, ei.length, el, a, l.id, t]), (0, c.jsxs)(p.Y0X, {
     size: p.CgR.MEDIUM,
     transitionState: n,
     "aria-label": Y.intl.string(Y.t.zOZh3R),
@@ -595,7 +595,7 @@ function en(e) {
               variant: "primary",
               text: Y.intl.string(Y.t["8SuVoE"]),
               onClick: () => eu(),
-              disabled: N || !x || v
+              disabled: N || !x || f
             }), n ? (0, c.jsx)("div", {
               className: q.manageConnectionsFooterButton,
               children: (0, c.jsx)(p.Avr, {

@@ -1,5 +1,6 @@
 /** Chunk was on 27978 **/
 /** chunk id: 33724, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   errorMessage: "errorMessage_d332d2",
   createAccountTemplateHeader: "createAccountTemplateHeader_d332d2",

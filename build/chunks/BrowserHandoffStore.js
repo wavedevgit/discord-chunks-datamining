@@ -56,7 +56,7 @@ function S(e) {
 }
 
 function A(e) {
-  a = new _.default(e.user)
+  a = new _.Z(e.user)
 }
 
 function C() {

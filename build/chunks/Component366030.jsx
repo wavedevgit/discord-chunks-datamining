@@ -133,7 +133,7 @@ function F(e) {
         d = c.find(e => null != e.application),
         _ = E.Z.get(e),
         h = null == d ? true : d.application,
-        g = (null == h ? true : h.bot) != null ? new I.default(h.bot) : null;
+        g = (null == h ? true : h.bot) != null ? new I.Z(h.bot) : null;
       return A.SJ.includes(null != (t = null == h ? true : h.id) ? t : "") ? l = (0, r.jsx)(P.Z, {
         className: j.botTag,
         color: i,

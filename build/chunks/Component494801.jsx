@@ -1,7 +1,8 @@
-/** Chunk was on 61366 **/
+/** Chunk was on 18290 **/
 /** chunk id: 494801, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  Z: () => c
+  Z: () => l
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -11,16 +12,16 @@ var Chunk212598 = require("./212598.jsx"),
   Chunk250331 = require("./250331.js"),
   Chunk300778 = require("./300778.js");
 
-function c(e) {
+function l(e) {
   let {
     isWaitingForConnection: t,
     onWaitingForConnection: n,
-    expectedCallbackState: c,
+    expectedCallbackState: l,
     onAuthToken: d,
     onError: u,
     onClose: p
-  } = e, b = t ? (0, o.jsx)("img", {
-    src: l.Z,
+  } = e, f = t ? (0, o.jsx)("img", {
+    src: c.Z,
     width: "231",
     height: "172",
     alt: ""
@@ -29,17 +30,17 @@ function c(e) {
     width: "231",
     height: "160",
     alt: ""
-  }), f = t ? s.intl.string(s.t.EuwcxO) : s.intl.string(s.t["e/z3na"]), x = t ? s.intl.string(s.t["1GjS/W"]) : s.intl.string(s.t["7tXu0i"]);
+  }), b = t ? s.intl.string(s.t.EuwcxO) : s.intl.string(s.t["e/z3na"]), g = t ? s.intl.string(s.t["1GjS/W"]) : s.intl.string(s.t["7tXu0i"]);
   return (0, o.jsx)(r.t, {
     platformType: i.ABu.XBOX,
     isWaitingForConnection: t,
     onWaitingForConnection: n,
-    expectedCallbackState: c,
+    expectedCallbackState: l,
     onAuthToken: d,
     onError: u,
     onClose: p,
-    img: b,
-    title: f,
-    body: x
+    img: f,
+    title: b,
+    body: g
   })
 }

@@ -1,11 +1,11 @@
 /** Chunk was on 37220 **/
 /** chunk id: 996861, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  $Z: () => T,
+  $Z: () => Z,
   B8: () => w,
   F4: () => P,
   HH: () => D,
-  Hd: () => Z,
+  Hd: () => T,
   Xl: () => N,
   dF: () => C,
   eM: () => R,
@@ -55,11 +55,11 @@ function _(e, t) {
   }), (0, p.JG)((0, b.wR)(e.guild_id, e.id, t.id))
 }
 
-function T(e, t, n) {
+function Z(e, t, n) {
   t.state === E.yb.SEND_FAILED || n.shiftKey ? i.Z.deleteMessage(e.id, t.id, t.state === E.yb.SEND_FAILED) : j.Z.confirmDelete(e, t)
 }
 
-function Z(e, t) {
+function T(e, t) {
   i.Z.startEditMessageRecord(e.id, t)
 }
 

@@ -1,12 +1,13 @@
 /** Chunk was on 27978 **/
 /** chunk id: 685311, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => g
 }), require("./35282.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk536285 = require("./536285.js"),
   Chunk857458 = require("./857458.jsx"),
   Chunk388905 = require("./388905.jsx"),
@@ -17,11 +18,11 @@ let g = function(e) {
   let {
     match: t,
     location: n,
-    attemptDeepLink: l
-  } = e, [g, m] = i.useState(0);
+    attemptDeepLink: s
+  } = e, [g, p] = i.useState(0);
   i.useEffect(() => {
     a.default.once("connected", () => {
-      m(1)
+      p(1)
     }), a.default.once("disconnected", () => {
       (0, u.uL)((0, o.M)())
     }), a.default.connect()
@@ -30,13 +31,13 @@ let g = function(e) {
     let e = setTimeout(() => (0, u.uL)((0, o.M)()), 3e3);
     return () => clearTimeout(e)
   }, [g]);
-  let p = i.useCallback(async (e, t) => {
+  let m = i.useCallback(async (e, t) => {
     try {
-      m(2), await l(e, t), m(3)
+      p(2), await s(e, t), p(3)
     } catch (e) {
       console.error("Error opening deeplink", e)
     }
-  }, [l]);
+  }, [s]);
   if ((0, u.DB)()) return null;
   switch (g) {
     case 1:
@@ -48,10 +49,10 @@ let g = function(e) {
           children: d.intl.string(d.t.SXCxye)
         }), (0, r.jsx)(c.zx, {
           className: h.marginTop40,
-          onClick: () => p(t, n),
+          onClick: () => m(t, n),
           children: d.intl.string(d.t.UQvCf7)
         }), (0, r.jsx)(c.zx, {
-          className: s()(h.marginTop8, h.marginCenterHorz),
+          className: l()(h.marginTop8, h.marginCenterHorz),
           color: c.zx.Colors.LINK,
           look: c.zx.Looks.LINK,
           onClick: () => (0, u.uL)((0, o.M)()),

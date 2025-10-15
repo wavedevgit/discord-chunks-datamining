@@ -129,7 +129,7 @@ let I = async (e, t) => {
     type: "GUILD_STICKERS_FETCH_SUCCESS",
     guildId: e,
     stickers: t.map(e => null != e.user ? v(y({}, e), {
-      user: new d.default(e.user)
+      user: new d.Z(e.user)
     }) : e)
   })
 }, C = async e => {

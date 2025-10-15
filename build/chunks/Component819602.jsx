@@ -36,7 +36,7 @@ function E(e) {
   var n, t;
   let o, d, N, {
     connectedAccount: A,
-    theme: f,
+    theme: v,
     locale: b,
     userId: y,
     className: E,
@@ -88,9 +88,9 @@ function E(e) {
         trusted: (null == R ? true : R.type) !== _.ABu.DOMAIN
       }, e)
     },
-    children: (0, c.jsx)(v.Z, {
+    children: (0, c.jsx)(f.Z, {
       className: I.connectedAccountOpenIcon,
-      direction: v.Z.Directions.RIGHT
+      direction: f.Z.Directions.RIGHT
     })
   }));
   let B = (0, s.dQu)(l.Z.colors.INTERACTIVE_MUTED).hex(),
@@ -113,7 +113,7 @@ function E(e) {
             name: null == R ? true : R.name
           }),
           className: I.connectedAccountIcon,
-          src: (0, r.wj)(f) ? null == R ? true : R.icon.darkSVG : null == R ? true : R.icon.lightSVG
+          src: (0, r.wj)(v) ? null == R ? true : R.icon.darkSVG : null == R ? true : R.icon.lightSVG
         })
       }), (0, c.jsxs)("div", {
         className: I.connectedAccountNameContainer,
@@ -204,7 +204,7 @@ function k(e) {
             applicationHook: () => (0, c.jsxs)("div", {
               className: I.connectedAccountPoweredByText,
               children: [null != n.application.bot ? (0, c.jsx)(d.Z, {
-                user: new f.default(n.application.bot),
+                user: new v.Z(n.application.bot),
                 size: s.EFr.SIZE_16
               }) : null, (0, c.jsx)(s.Text, {
                 variant: "text-xs/normal",

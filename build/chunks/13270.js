@@ -38,25 +38,25 @@ var h = {
         for (var o in t) !(e.indexOf(o) >= 0) && Object.prototype.hasOwnProperty.call(t, o) && (r[o] = t[o]);
         return r
       }(t, ["bgColor", "fgColor", "level", "size", "value"]),
-      c = new n.default(false, i.default[u]);
-    c.addData(h), c.make();
-    var d = c.modules;
+      d = new n.default(false, i.default[u]);
+    d.addData(h), d.make();
+    var c = d.modules;
     return s.default.createElement(l.default, o({}, g, {
       bgColor: r,
-      bgD: d.map(function(t, e) {
+      bgD: c.map(function(t, e) {
         return t.map(function(t, r) {
           return t ? "" : "M " + r + " " + e + " l 1 0 0 1 -1 0 Z"
         }).join(" ")
       }).join(" "),
       fgColor: a,
-      fgD: d.map(function(t, e) {
+      fgD: c.map(function(t, e) {
         return t.map(function(t, r) {
           return t ? "M " + r + " " + e + " l 1 0 0 1 -1 0 Z" : ""
         }).join(" ")
       }).join(" "),
       ref: e,
       size: f,
-      viewBoxSize: d.length
+      viewBoxSize: c.length
     }))
   });
 g.displayName = "QRCode", g.propTypes = h, g.defaultProps = {

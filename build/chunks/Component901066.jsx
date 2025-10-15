@@ -290,7 +290,7 @@ function Z(e) {
   } = null != n ? n : {}, s = r.useMemo(() => {
     var e;
     return null != (e = null == n ? true : n.formResponses) ? e : []
-  }, [null == n ? true : n.formResponses]), o = r.useMemo(() => null != i ? new v.default(i) : null, [i]), u = (0, c.e7)([_.Z], () => _.Z.getGuild(t), [t]);
+  }, [null == n ? true : n.formResponses]), o = r.useMemo(() => null != i ? new v.Z(i) : null, [i]), u = (0, c.e7)([_.Z], () => _.Z.getGuild(t), [t]);
   return ((0, m.Tt)({
     subsection: T.intl.string(T.t.nqrK8X),
     location: null == u ? true : u.name

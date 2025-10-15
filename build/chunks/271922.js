@@ -1,5 +1,6 @@
 /** Chunk was on 27978 **/
 /** chunk id: 271922, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   splashBackground: "splashBackground__742a4",
   centerFlex: "centerFlex__742a4",

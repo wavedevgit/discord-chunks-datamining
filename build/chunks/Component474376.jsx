@@ -31,7 +31,7 @@ function _(e) {
       multiAccountUsers: y
     } = (0, f.L)(),
     C = y.map(r => {
-      let i = new c.default(r),
+      let i = new c.Z(r),
         s = i.id === (null == t ? true : t.id),
         d = r.tokenStatus === x.q.INVALID,
         u = n ? null : "#".concat(i.discriminator);

@@ -1,14 +1,14 @@
 /** Chunk was on 90688 **/
 /** chunk id: 978305, original params: e,r,t (module,exports,require) **/
 require.d(exports, {
-  default: () => _
+  default: () => O
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
-  l = require.n(Chunk512722),
+  i = require.n(Chunk512722),
   Chunk481060 = require("./481060.js"),
   Chunk493773 = require("./493773.js"),
   Chunk198993 = require("./198993.jsx"),
@@ -22,59 +22,55 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk352258 = require("./352258.js"),
   Chunk197571 = require("./197571.js");
-let _ = e => {
+let O = e => {
   let {
     transitionState: r,
     onClose: t
-  } = e, a = (0, m.Z)(), [i, _] = o.useState(false), {
-    getLinkCode: j,
-    isGetLinkCodeLoading: O
+  } = e, s = (0, m.Z)(), [a, O] = o.useState(false), {
+    getLinkCode: _,
+    isGetLinkCodeLoading: j
   } = (0, C.G)({}), q = (0, p.rW)(), N = (0, p.gU)(), z = o.useRef(N);
-  l()(!a, "FamilyCenterQRCodeModal should only be rendered for teens.");
+  i()(!s, "FamilyCenterQRCodeModal should only be rendered for teens.");
   let S = () => {
-    _(e => (f.default.track(b.rMx.FAMILY_CENTER_ACTION, {
-      action: i ? x.YC.HideQRCode : x.YC.RevealQRCode
-    }), !e)), i || setTimeout(() => {
+    O(e => (f.default.track(y.rMx.FAMILY_CENTER_ACTION, {
+      action: a ? x.YC.HideQRCode : x.YC.RevealQRCode
+    }), !e)), a || setTimeout(() => {
       t()
     }, x.f2)
   };
   (0, d.ZP)(() => {
-    j()
+    _()
   }), o.useEffect(() => {
     N > z.current && t()
   }, [z, N, t]);
-  let E = i && !O && null != q;
-  return (0, n.jsxs)(c.Y0X, {
-    "data-migration-pending": true,
-    className: h.modalRoot,
+  let E = a && !j && null != q;
+  return (0, n.jsxs)(c.IX, {
     transitionState: r,
-    parentComponent: "FamilyCenterQRCodeModal",
+    onClose: t,
     children: [(0, n.jsxs)(c.qXd, {
       className: h.notice,
       color: c.DM8.WARNING,
       children: [(0, n.jsx)(c.d3s, {
         size: "sm",
         color: "currentColor"
-      }), g.intl.string(y.default.iHYMAz)]
-    }), (0, n.jsxs)(c.hzk, {
-      "data-migration-pending": true,
-      className: h.content,
+      }), b.intl.string(v.default.iHYMAz)]
+    }), (0, n.jsxs)(c.fef, {
       children: [(0, n.jsx)(c.Text, {
-        className: v.marginBottom8,
+        className: g.marginBottom8,
         variant: "text-lg/bold",
         color: "header-primary",
-        children: g.intl.string(y.default.AVTZaN)
+        children: b.intl.string(v.default.AVTZaN)
       }), (0, n.jsx)(c.Text, {
-        className: v.marginBottom20,
+        className: g.marginBottom20,
         variant: "text-sm/normal",
         color: "header-secondary",
-        children: g.intl.format(y.default.LyyCsE, {
+        children: b.intl.format(v.default.LyyCsE, {
           link: "https://support.discord.com/hc/articles/14155060633623"
         })
       }), (0, n.jsx)("div", {
         className: h.qrCodeContainer,
         children: (0, n.jsx)(c.P3F, {
-          className: s()(h.qrCodeObscure, {
+          className: l()(h.qrCodeObscure, {
             [h.visible]: E
           }),
           onClick: S,
@@ -89,23 +85,20 @@ let _ = e => {
         className: h.reminder,
         variant: "text-xs/semibold",
         color: "header-secondary",
-        children: g.intl.string(y.default.goDyoe)
-      }), (0, n.jsx)("div", {
-        className: s()(h.buttonContainer, v.marginTop20),
-        children: (0, n.jsxs)(c.ButtonGroup, {
-          fullWidth: true,
-          children: [(0, n.jsx)(c.Button, {
-            variant: "secondary",
-            text: g.intl.string(g.t.cpT0Cq),
-            onClick: t
-          }), (0, n.jsx)(c.Button, {
-            variant: "primary",
-            text: i ? g.intl.string(y.default.wg2xwQ) : g.intl.string(y.default["10dX6U"]),
-            onClick: S,
-            loading: i && O
-          })]
-        })
+        children: b.intl.string(v.default.goDyoe)
       })]
+    }), (0, n.jsx)(c.Go$, {
+      actionsFullWidth: true,
+      actions: [{
+        variant: "secondary",
+        text: b.intl.string(b.t.cpT0Cq),
+        onClick: t
+      }, {
+        variant: "primary",
+        text: a ? b.intl.string(v.default.wg2xwQ) : b.intl.string(v.default["10dX6U"]),
+        onClick: S,
+        loading: a && j
+      }]
     })]
   })
 }

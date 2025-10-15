@@ -157,7 +157,7 @@ let R = e => {
       isInSettings: t = false
     } = e, n = (0, s.e7)([g.Z], () => g.Z.getRecipientStatus()), {
       referralSentUsers: a
-    } = (0, E.G)(), f = i.useMemo(() => a.map(e => new _.default(e)), [a]), p = {
+    } = (0, E.G)(), f = i.useMemo(() => a.map(e => new _.Z(e)), [a]), p = {
       redeemed: 0,
       converted: 0,
       sent: n.size

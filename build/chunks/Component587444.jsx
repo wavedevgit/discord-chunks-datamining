@@ -1,13 +1,14 @@
 /** Chunk was on 27978 **/
 /** chunk id: 587444, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => f,
-  u: () => p
+  u: () => m
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388905 = require("./388905.jsx"),
@@ -18,7 +19,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk149715 = require("./149715.js"),
   Chunk197571 = require("./197571.js");
 
-function p(e) {
+function m(e) {
   let {
     text: t,
     buttonCta: i,
@@ -28,10 +29,10 @@ function p(e) {
     children: [(0, r.jsx)(o.Ee, {
       src: n(689411)
     }), (0, r.jsx)(o.Dx, {
-      className: l()(m.marginTop20, m.marginBottom8, g.flexCenter),
+      className: s()(p.marginTop20, p.marginBottom8, g.flexCenter),
       children: d.intl.string(d.t.eL5z0i)
     }), (0, r.jsx)(o.DK, {
-      className: m.marginBottom40,
+      className: p.marginBottom40,
       children: d.intl.string(d.t.poAv63)
     }), (0, r.jsxs)(a.Zbd, {
       className: h.card,
@@ -54,7 +55,7 @@ function p(e) {
           className: h.buttonTitle,
           variant: "text-md/normal",
           style: {
-            color: s.Z.unsafe_rawColors.PRIMARY_300.css
+            color: l.Z.unsafe_rawColors.PRIMARY_300.css
           },
           children: t
         }), (0, r.jsx)(o.zx, {
@@ -72,14 +73,14 @@ function f(e) {
     text: t,
     buttonCta: n,
     theme: i = u.BRd.DARK,
-    onClick: l
+    onClick: s
   } = e;
   return (0, r.jsx)(o.ZP, {
     theme: i,
-    children: (0, r.jsx)(p, {
+    children: (0, r.jsx)(m, {
       text: t,
       buttonCta: n,
-      onClick: l
+      onClick: s
     })
   })
 }

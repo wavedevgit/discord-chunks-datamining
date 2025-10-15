@@ -174,7 +174,7 @@ function D(e) {
     text: W ? P.intl.formatToPlainString(P.t.gcdJ8J, {
       timestamp: I.default.extractTimestamp(l.id)
     }) : P.intl.formatToPlainString(P.t.Nu9sat, {
-      user: null != l.user ? new O.default(l.user).tag : null,
+      user: null != l.user ? new O.Z(l.user).tag : null,
       timestamp: I.default.extractTimestamp(l.id)
     })
   }];

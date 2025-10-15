@@ -1,44 +1,45 @@
 /** Chunk was on 69773 **/
 /** chunk id: 944844, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  t: () => h
+  t: () => p
 }), require("./415506.js");
 var Chunk647438 = require("./647438.js"),
   Chunk512722 = require("./512722.js"),
-  o = require.n(Chunk512722),
+  i = require.n(Chunk512722),
   Chunk478677 = require("./478677.js"),
   Chunk457330 = require("./457330.js"),
   Chunk275759 = require("./275759.js"),
   Chunk489863 = require("./489863.js"),
   Chunk497350 = require("./497350.js");
 async function u(e, t, n) {
-  var a, r, c, u;
-  let h = (0, d.B)(e);
-  if (null == h) throw await f(n, 1, "authorize"), Error("Unsupported client_id for two way link");
-  let p = null;
+  var r, a, c, u;
+  let p = (0, d.B)(e);
+  if (null == p) throw await f(n, 1, "authorize"), Error("Unsupported client_id for two way link");
+  let h = null;
   try {
     let {
       body: e
-    } = await l.Z.authorize(h, {
-      twoWayLinkType: i.g.DEVICE_CODE,
+    } = await s.Z.authorize(p, {
+      twoWayLinkType: o.g.DEVICE_CODE,
       userCode: n
     });
-    p = e.url
+    h = e.url
   } catch (e) {
-    throw await f(n, null != (r = null == e || null == (a = e.body) ? true : a.code) ? r : 0, "authorize"), Error("error during two way authorize")
+    throw await f(n, null != (a = null == e || null == (r = e.body) ? true : r.code) ? a : 0, "authorize"), Error("error during two way authorize")
   }
   let x = null;
   try {
-    o()(null != p, "No URL in authorize response");
+    i()(null != h, "No URL in authorize response");
     let {
       state: e
-    } = (0, s.xp)(p);
-    o()(null != e, "Authorize URL state query parameter must be present"), x = e
+    } = (0, l.xp)(h);
+    i()(null != e, "Authorize URL state query parameter must be present"), x = e
   } catch (e) {
     throw await f(n, 2, "authorize"), Error("error parsing callback params")
   }
   try {
-    await l.Z.callback(h, {
+    await s.Z.callback(p, {
       code: t,
       state: x
     })
@@ -52,23 +53,23 @@ async function f(e, t, n) {
   } catch (e) {}
 }
 
-function h(e, t, n) {
-  return a.useCallback(async (a, r) => {
-    if (!r) {
+function p(e, t, n) {
+  return r.useCallback(async (r, a) => {
+    if (!a) {
       try {
-        await (0, c.tR)(a.userCode, "denied")
+        await (0, c.tR)(r.userCode, "denied")
       } catch (e) {}
       e();
       return
     }
-    if (null == a.twoWayLinkCode) try {
-      await (0, c.tR)(a.userCode, "granted"), n(a)
+    if (null == r.twoWayLinkCode) try {
+      await (0, c.tR)(r.userCode, "granted"), n(r)
     } catch (e) {
-      t(a)
+      t(r)
     } else try {
-      await u(a.clientId, a.twoWayLinkCode, a.userCode), n(a)
+      await u(r.clientId, r.twoWayLinkCode, r.userCode), n(r)
     } catch (e) {
-      t(a)
+      t(r)
     }
   }, [e, t, n])
 }

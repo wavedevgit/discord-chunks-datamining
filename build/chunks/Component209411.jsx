@@ -1,5 +1,6 @@
 /** Chunk was on 27978 **/
 /** chunk id: 209411, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   Z: () => x
 }), require("./388685.js"), require("./35282.js"), require("./457542.js");
@@ -24,7 +25,7 @@ function x(e) {
   let x = i.useCallback(t => {
       if (function(e) {
           var t;
-          let n = (0, s.LX)(e, {
+          let n = (0, l.LX)(e, {
             path: f.Z5c.CHANNEL(h.Hw.guildId(), h.Hw.channelId())
           });
           return (null == n || null == (t = n.params) ? true : t.channelId) === _.oC.ROLE_SUBSCRIPTIONS
@@ -37,9 +38,9 @@ function x(e) {
     {
       isAuthenticated: E,
       loginStatus: v
-    } = (0, a.cj)([m.default], () => ({
-      isAuthenticated: m.default.isAuthenticated(),
-      loginStatus: m.default.getLoginStatus()
+    } = (0, a.cj)([p.default], () => ({
+      isAuthenticated: p.default.isAuthenticated(),
+      loginStatus: p.default.getLoginStatus()
     })),
     {
       location: b,
@@ -47,7 +48,7 @@ function x(e) {
     } = e,
     [I, N] = i.useState(E);
 
-  function S(e) {
+  function y(e) {
     let {
       handoffKey: t,
       handoffToken: n,
@@ -64,23 +65,23 @@ function x(e) {
       let {
         handoff_key: e,
         handoff_token: t
-      } = (0, l.parse)(b.search);
+      } = (0, s.parse)(b.search);
       if (null != e && null != t) {
         let n = null != j ? (0, d.L)(j) : true;
         I ? o.Z.logout("handoff", null).finally(() => {
-          S({
+          y({
             handoffKey: e,
             handoffToken: t,
             handoffSource: n
           })
-        }) : S({
+        }) : y({
           handoffKey: e,
           handoffToken: t,
           handoffSource: n
         })
       }
     }
-  }), I || v === f.u34.LOGGING_IN) ? (0, r.jsx)(p.q, {}) : (0, r.jsx)(p.Z, (t = function(e) {
+  }), I || v === f.u34.LOGGING_IN) ? (0, r.jsx)(m.q, {}) : (0, r.jsx)(m.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

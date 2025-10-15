@@ -1,5 +1,6 @@
 /** Chunk was on 27978 **/
 /** chunk id: 215613, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   guildBadge: "guildBadge_d69818",
   appIcon: "appIcon_d69818",

@@ -1,5 +1,6 @@
 /** Chunk was on 27978 **/
 /** chunk id: 3570, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
   T: () => o,
   s: () => c
@@ -16,7 +17,7 @@ let o = Chunk358085.isPlatformEmbedded ? Chunk981631.dG4 : (e, t) => {
     })
   },
   c = Chunk358085.isPlatformEmbedded ? Chunk981631.dG4 : (e, t) => {
-    if (!l.default.isAuthenticated()) {
+    if (!s.default.isAuthenticated()) {
       var n, r;
       return o(e, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -36,7 +37,7 @@ let o = Chunk358085.isPlatformEmbedded ? Chunk981631.dG4 : (e, t) => {
         }
         return e
       }({}, t || {}), r = r = {
-        fingerprint: l.default.getFingerprint()
+        fingerprint: s.default.getFingerprint()
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {

@@ -57,7 +57,7 @@ function m(e) {
     emoji: r,
     reactionType: i
   } = e, a = _.ensure(t, r, i);
-  n.forEach(e => a.users.set(e.id, new l.default(e)))
+  n.forEach(e => a.users.set(e.id, new l.Z(e)))
 }
 class g extends(r = Chunk442837.ZP.Store) {
   getReactions(e, t, n, r, i) {
