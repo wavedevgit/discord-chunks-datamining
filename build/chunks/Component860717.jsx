@@ -443,27 +443,26 @@ let J = Object.assign(function(e) {
   let {
     user: t,
     widget: n,
-    containerClassName: l,
-    cta: s
+    cta: l
   } = e, {
-    application: u,
-    game: f,
-    config: m
-  } = q(n), h = null == u ? true : u.getIconURL(16), v = (0, O.O)(t.id).data, y = null == v ? true : v.find(e => e.application_id === n.applicationId), j = (0, p.Z)({
+    application: s,
+    game: u,
+    config: f
+  } = q(n), m = null == s ? true : s.getIconURL(16), h = (0, O.O)(t.id).data, v = null == h ? true : h.find(e => e.application_id === n.applicationId), y = (0, p.Z)({
     location: "UserProfileApplicationWidget",
-    applicationId: null == f ? true : f.id,
+    applicationId: null == u ? true : u.id,
     source: g.m1.UserProfile,
     sourceUserId: t.id,
     trackEntryPointImpression: true
   }), {
-    fetched: x,
-    hasAlreadyLinked: I,
-    canStartAuthorization: S,
-    startAuthorization: E
-  } = (0, d.FG)(u), D = null == s && x && !I && S, Z = (0, r.jsxs)(r.Fragment, {
-    children: [null != h ? (0, r.jsx)("img", {
+    fetched: j,
+    hasAlreadyLinked: x,
+    canStartAuthorization: I,
+    startAuthorization: S
+  } = (0, d.FG)(s), E = null == l && j && !x && I, D = (0, r.jsxs)(r.Fragment, {
+    children: [null != m ? (0, r.jsx)("img", {
       className: A.appIcon,
-      src: h,
+      src: m,
       width: 16,
       height: 16,
       alt: ""
@@ -471,25 +470,25 @@ let J = Object.assign(function(e) {
       className: A.appIconPlaceholder
     }), (0, r.jsx)(c.Text, {
       variant: "text-sm/medium",
-      children: (null == u ? true : u.name) != null ? u.name : (0, r.jsx)("div", {
+      children: (null == s ? true : s.name) != null ? s.name : (0, r.jsx)("div", {
         className: A.textPlaceholder
       })
     })]
-  }), R = null == f ? (0, r.jsx)("div", {
+  }), Z = null == u ? (0, r.jsx)("div", {
     className: A.header,
-    children: Z
+    children: D
   }) : (0, r.jsx)(o.u, {
     asContainer: true,
     text: T.intl.string(T.t.ajHoOj),
     children: (0, r.jsx)(c.P3F, {
       className: a()(A.header, A.headerClickable),
-      onClick: j,
+      onClick: y,
       "aria-label": T.intl.string(T.t.ajHoOj),
-      children: Z
+      children: D
     })
-  }), L = i.useMemo(() => {
+  }), R = i.useMemo(() => {
     var e, t, n, r, i;
-    let l = (e = null != y ? y : null, t = null != m ? m : null, null == e ? {
+    let l = (e = null != v ? v : null, t = null != f ? f : null, null == e ? {
       mode: "skeleton",
       config: t
     } : {
@@ -543,29 +542,29 @@ let J = Object.assign(function(e) {
           return t
       }
     })
-  }, [m, y]);
+  }, [f, v]);
   return (0, r.jsxs)(w.Z, C(N({}, e), {
     userId: t.id,
     widget: n,
-    className: a()(l, A.widgetContainer),
-    headerTitle: R,
-    dragHandleAdditionalMenuItems: null != f ? (0, r.jsx)(c.sNh, {
+    className: A.widgetContainer,
+    headerTitle: Z,
+    dragHandleAdditionalMenuItems: null != u ? (0, r.jsx)(c.sNh, {
       id: "view-game-profile",
       label: "View Game Profile",
       icon: c.iWm,
-      action: j
+      action: y
     }) : null,
     children: [(0, r.jsx)(V.Provider, {
       value: e,
       children: (0, r.jsx)(K, {
         widget: n,
         children: (0, r.jsx)(_, {
-          component: L
+          component: R
         })
       })
     }), (0, r.jsxs)("div", {
       className: A.footer,
-      children: [null != y || D ? null : (0, r.jsxs)("div", {
+      children: [null != v || E ? null : (0, r.jsxs)("div", {
         className: A.stillSyncing,
         children: [(0, r.jsx)(c.wGF, {
           size: "xxs"
@@ -574,14 +573,14 @@ let J = Object.assign(function(e) {
           color: "text-secondary",
           children: T.intl.string(T.t.z5K4Ul)
         })]
-      }), D ? (0, r.jsx)(X, {
+      }), E ? (0, r.jsx)(X, {
         heading: T.intl.string(T.t.UDPRLC),
         content: T.intl.string(T.t["OW/2am"]),
         buttons: (0, r.jsx)(c.Button, {
           text: T.intl.string(T.t.S0W8Z2),
-          onClick: E
+          onClick: S
         })
-      }) : s]
+      }) : l]
     })]
   }))
 }, {

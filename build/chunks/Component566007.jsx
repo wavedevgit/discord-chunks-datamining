@@ -31,10 +31,9 @@ function l(e) {
 function c(e) {
   var t, r, {
       user: c,
-      widget: s,
-      containerClassName: u
+      widget: s
     } = e,
-    d = function(e, t) {
+    u = function(e, t) {
       if (null == e) return {};
       var r, n, i = function(e, t) {
         if (null == e) return {};
@@ -48,19 +47,18 @@ function c(e) {
         for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
       }
       return i
-    }(e, ["user", "widget", "containerClassName"]);
-  let g = s.games[0];
+    }(e, ["user", "widget"]);
+  let d = s.games[0];
   return (0, n.jsx)(a.Z, (t = l({
     userId: c.id,
-    widget: s,
-    className: u
-  }, d), r = r = {
-    children: null != g ? (0, n.jsx)(o.Z, l({
+    widget: s
+  }, u), r = r = {
+    children: null != d ? (0, n.jsx)(o.Z, l({
       user: c,
-      game: g,
+      game: d,
       widgetType: s.type,
-      disableInteraction: d.disableInteraction
-    }, d)) : (0, n.jsx)(i.Z, {
+      disableInteraction: u.disableInteraction
+    }, u)) : (0, n.jsx)(i.Z, {
       widget: s
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {

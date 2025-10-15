@@ -135,7 +135,7 @@ let ea = [14, 14, 12, 12, 10, 8, 6],
       activity: t,
       user: n,
       supportsAskToJoin: false
-    }), i = null != r;
+    }), i = null != r && r.isEnabled;
     return {
       isJoinActivityButtonShown: i,
       joinActivityButtonAction: r,
@@ -181,35 +181,34 @@ let ea = [14, 14, 12, 12, 10, 8, 6],
   eg = e => {
     let {
       activity: t,
-      analyticsLocations: n,
-      hidden: r
-    } = e, {
-      application_id: l,
-      name: a
-    } = t, {
-      data: o
-    } = (0, P.IX)(l), s = (0, S.Z)({
-      application: o,
       analyticsLocations: n
-    }), c = (0, k.Nj)(u.z.CLOUD_PLAY_NEW_BADGE), d = (0, H.F)(l);
-    return null == s || d || r ? null : (0, i.jsxs)(i.Fragment, {
+    } = e, {
+      application_id: r,
+      name: l
+    } = t, {
+      data: a
+    } = (0, P.IX)(r), o = (0, S.Z)({
+      application: a,
+      analyticsLocations: n
+    }), s = (0, k.Nj)(u.z.CLOUD_PLAY_NEW_BADGE), c = (0, H.F)(r);
+    return null == o || c ? null : (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(ed, {
         className: el.cloudPlaySectionSeparator
       }), (0, i.jsxs)("div", {
         className: el.cloudPlaySection,
         children: [(0, i.jsxs)("div", {
           className: el.cloudPlaySectionTextContainer,
-          children: [c ? null : (0, i.jsx)(f.IGR, {
+          children: [s ? null : (0, i.jsx)(f.IGR, {
             text: ei.intl.string(ei.t.y2b7CA),
             color: w.Z.BG_BRAND
           }), (0, i.jsx)(f.Text, {
             variant: "text-xs/medium",
             children: ei.intl.formatToPlainString(ei.t.RmiYFx, {
-              gameName: a
+              gameName: l
             })
           })]
         }), (0, i.jsx)(ep, {
-          onCloudPlayClick: s,
+          onCloudPlayClick: o,
           analyticsLocations: n
         })]
       })]
@@ -475,16 +474,15 @@ eO.Header = e_, eO.Body = e => {
     state: g,
     application_id: m
   } = s, {
-    hasButton: b,
-    isJoinActivityButtonShown: _
+    hasButton: b
   } = ef({
     activity: s,
     user: u
-  }), O = null != (r = null == (t = (0, L.T7)(p)) ? true : t.src) ? r : n(211827), I = (0, S.Z)({
+  }), _ = null != (r = null == (t = (0, L.T7)(p)) ? true : t.src) ? r : n(211827), O = (0, S.Z)({
     application: p,
     analyticsLocations: d
   });
-  return null != s.assets || (0, E.Z)(s) || null != I ? (0, i.jsxs)(eu, {
+  return null != s.assets || (0, E.Z)(s) || null != O ? (0, i.jsxs)(eu, {
     children: [(0, i.jsxs)("div", {
       className: o()(el.activitySection, {
         [el.activitySectionWithButtons]: b
@@ -506,7 +504,7 @@ eO.Header = e_, eO.Body = e => {
         className: el.activitySectionAssets,
         children: (0, i.jsx)("img", {
           alt: "",
-          src: O,
+          src: _,
           className: el.largeImage
         })
       }), (0, i.jsxs)("div", {
@@ -530,8 +528,7 @@ eO.Header = e_, eO.Body = e => {
       })]
     }), (0, i.jsx)(eg, {
       activity: s,
-      analyticsLocations: d,
-      hidden: _
+      analyticsLocations: d
     })]
   }) : null
 }, eO.XboxSection = e => {
