@@ -8,7 +8,7 @@ require.d(exports, {
 });
 var Chunk722733 = require("./722733.js"),
   i = function(e) {
-    return e.CONTROL = "control", e.NAGBAR_REFRESH = "nagbar-refresh", e.OFFER_BADGE = "offer-badge", e.OFFER_COUNTDOWN = "offer-countdown", e
+    return e.CONTROL = "control", e.NAGBAR_REFRESH = "nagbar-refresh", e.OFFER_BADGE = "offer-badge", e.OFFER_COUNTDOWN = "offer-countdown", e.HERO_COUNTDOWN = "hero-countdown", e
   }({});
 let a = (0, Chunk722733.Z)({
     kind: "user",
@@ -28,6 +28,10 @@ let a = (0, Chunk722733.Z)({
       },
       3: {
         variant: "offer-countdown",
+        showNagbar: false
+      },
+      4: {
+        variant: "hero-countdown",
         showNagbar: false
       }
     }

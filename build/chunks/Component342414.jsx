@@ -33,7 +33,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk784238 = require("./784238.jsx"),
   Chunk117791 = require("./117791.jsx"),
   Chunk638212 = require("./638212.jsx"),
-  Chunk508070 = require("./508070.jsx"),
+  Chunk403503 = require("./403503.jsx"),
   Chunk382791 = require("./382791.jsx"),
   Chunk45474 = require("./45474.js"),
   Chunk175418 = require("./175418.jsx"),
@@ -143,7 +143,8 @@ let X = (e, t, i) => {
           children: [(0, r.jsx)(k.Z, {
             containerVisibilityPercentage: J
           }), j && null != y.expires_at && (0, r.jsx)(w.Z, {
-            expiresAt: y.expires_at
+            expiresAt: y.expires_at,
+            className: F.heroOfferCountdown
           }), (0, r.jsx)(x.Z, {
             children: j ? Z.intl.format(Z.t["3yZP0G"], {
               percent: y.discount.amount
@@ -203,7 +204,8 @@ let X = (e, t, i) => {
       }), (0, r.jsxs)("div", {
         className: O ? F.churnDiscountContent : F.content,
         children: [f, O && null != p.expires_at && (0, r.jsx)(w.Z, {
-          expiresAt: p.expires_at
+          expiresAt: p.expires_at,
+          className: F.heroOfferCountdown
         }), (0, r.jsx)(l.Heading, {
           variant: "display-lg",
           color: "always-white",
