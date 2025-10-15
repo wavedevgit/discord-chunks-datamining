@@ -306,7 +306,7 @@ function eS() {
       render: () => (0, Chunk951288.jsx)(Chunk685560.Z, {})
     }), module.push({
       id: "game_server",
-      name: "GameServer",
+      name: "Game Server",
       group: Chunk621060.v0.BOOSTING,
       render: () => (0, Chunk951288.jsx)(Chunk895182.Z, {})
     }), module.push({

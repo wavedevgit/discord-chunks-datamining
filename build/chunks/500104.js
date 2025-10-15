@@ -13,7 +13,6 @@ require.r(module.exports = {
   copyButton: "copyButton__9ca53",
   statusContainer: "statusContainer__9ca53",
   statusLoading: "statusLoading__9ca53",
-  statusLoadingItem: "statusLoadingItem__9ca53",
   statusTooltipIcon: "statusTooltipIcon__9ca53",
   statusIndicator: "statusIndicator__9ca53",
   starting: "starting__9ca53",
