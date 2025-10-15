@@ -1,4 +1,4 @@
-/** Chunk was on 50118 **/
+/** Chunk was on 47840 **/
 /** chunk id: 252032, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -7,7 +7,6 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk904245 = require("./904245.js"),
-  Chunk257559 = require("./257559.jsx"),
   Chunk911969 = require("./911969.js"),
   Chunk541716 = require("./541716.js"),
   Chunk893718 = require("./893718.jsx"),
@@ -18,6 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk585483 = require("./585483.js"),
   Chunk630388 = require("./630388.js"),
   Chunk838440 = require("./838440.js"),
+  Chunk819514 = require("./819514.jsx"),
   Chunk930282 = require("./930282.jsx"),
   Chunk955384 = require("./955384.jsx"),
   Chunk981631 = require("./981631.js"),
@@ -29,8 +29,8 @@ function O(e) {
     value: t,
     channel: n
   } = e;
-  return (0, b.v)({
-    type: c.Ie.EDIT,
+  return (0, g.v)({
+    type: s.Ie.EDIT,
     content: t,
     channel: n,
     restrictMentions: false,
@@ -43,35 +43,35 @@ function j(e) {
     channel: t,
     message: n
   } = e, {
-    id: c
+    id: s
   } = t, {
-    id: u
-  } = n, m = t.getGuildId(), b = (0, l.e7)([h.Z], () => h.Z.getGuild(m), [m]), C = t.type === _.d4z.GUILD_ANNOUNCEMENT, j = null != b && b.features.has(_.oNc.NEWS), S = C && j, {
+    id: c
+  } = n, f = t.getGuildId(), g = (0, l.e7)([p.Z], () => p.Z.getGuild(f), [f]), C = t.type === _.d4z.GUILD_ANNOUNCEMENT, j = null != g && g.features.has(_.oNc.NEWS), S = C && j, {
     editingMessage: P,
     editingTextValue: I,
     editingRichValue: Z
-  } = (0, l.cj)([p.Z], () => ({
-    editingMessage: p.Z.getEditingMessage(c),
-    editingTextValue: p.Z.getEditingTextValue(c),
-    editingRichValue: p.Z.getEditingRichValue(c)
-  }), [c]), T = (0, l.e7)([d.default], () => d.default.getId()), N = r.useCallback((e, i, r) => {
+  } = (0, l.cj)([d.Z], () => ({
+    editingMessage: d.Z.getEditingMessage(s),
+    editingTextValue: d.Z.getEditingTextValue(s),
+    editingRichValue: d.Z.getEditingRichValue(s)
+  }), [s]), T = (0, l.e7)([u.default], () => u.default.getId()), N = r.useCallback((e, i, r) => {
     let {
       content: l
-    } = r, c = f.Z.can(_.Plq.MANAGE_MESSAGES, t), u = null != P && null != P.author ? P.author.id : null, d = S && (u === T || c), p = {
+    } = r, s = h.Z.can(_.Plq.MANAGE_MESSAGES, t), c = null != P && null != P.author ? P.author.id : null, u = S && (c === T || s), d = {
       content: l,
       components: true
     };
     if (n.hasFlag(_.iLy.IS_COMPONENTS_V2)) {
-      var h;
-      let e = (null == (h = n.components[0]) ? true : h.type) === s.re.MEDIA_GALLERY,
-        t = n.components.filter(e => e.type !== s.re.TEXT_DISPLAY);
+      var p;
+      let e = (null == (p = n.components[0]) ? true : p.type) === o.re.MEDIA_GALLERY,
+        t = n.components.filter(e => e.type !== o.re.TEXT_DISPLAY);
       t.splice(+!!e, 0, {
-        type: s.re.TEXT_DISPLAY,
+        type: o.re.TEXT_DISPLAY,
         content: l,
         id: "".concat(v.Kb)
-      }), p.content = "", p.components = t
+      }), d.content = "", d.components = t
     }
-    return d && null != P && (0, g.yE)(P.flags, _.iLy.CROSSPOSTED) ? o.Z.confirmEdit(e, i, p) : a.Z.editMessage(e, i, p), Promise.resolve()
+    return u && null != P && (0, m.yE)(P.flags, _.iLy.CROSSPOSTED) ? b.Z.confirmEdit(e, i, d) : a.Z.editMessage(e, i, d), Promise.resolve()
   }, [P, S, T, t, n]), A = r.useCallback(e => {
     var t, n;
     return (0, r.createElement)(E, (t = function(e) {
@@ -93,7 +93,7 @@ function j(e) {
       return e
     }({}, e), n = n = {
       className: x.channelTextArea,
-      key: u
+      key: c
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -104,7 +104,7 @@ function j(e) {
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t))
-  }, [u]);
+  }, [c]);
   return null != I && null != Z ? (0, i.jsx)(y.Z, {
     ref: true,
     channel: t,
@@ -113,7 +113,7 @@ function j(e) {
     richValue: Z,
     onCancel: a.Z.endEditMessage,
     onChange: a.Z.updateEditMessage,
-    onConfirmDelete: o.Z.confirmDelete,
+    onConfirmDelete: b.Z.confirmDelete,
     saveMessage: N,
     validateEdit: O,
     children: A
@@ -127,24 +127,24 @@ function E(e) {
     message: l,
     channel: a,
     onChange: o,
-    onSubmit: s,
+    onSubmit: u,
     onKeyDown: d,
     renderLeftAccessories: p
-  } = e, [h, f] = r.useState(true), g = r.useCallback(() => f(true), []), b = r.useCallback(() => f(false), []);
-  return r.useEffect(() => (m.S.subscribe(_.CkL.TEXTAREA_FOCUS, g), m.S.subscribe(_.CkL.TEXTAREA_BLUR, b), () => {
-    m.S.unsubscribe(_.CkL.TEXTAREA_FOCUS, g), m.S.unsubscribe(_.CkL.TEXTAREA_BLUR, b)
-  }), [g, b]), (0, i.jsx)(u.ZP, {
+  } = e, [h, m] = r.useState(true), g = r.useCallback(() => m(true), []), b = r.useCallback(() => m(false), []);
+  return r.useEffect(() => (f.S.subscribe(_.CkL.TEXTAREA_FOCUS, g), f.S.subscribe(_.CkL.TEXTAREA_BLUR, b), () => {
+    f.S.unsubscribe(_.CkL.TEXTAREA_FOCUS, g), f.S.unsubscribe(_.CkL.TEXTAREA_BLUR, b)
+  }), [g, b]), (0, i.jsx)(c.ZP, {
     className: x.channelTextArea,
     textValue: t,
     richValue: n,
     channel: a,
-    type: c.Ie.EDIT,
+    type: s.Ie.EDIT,
     onChange: o,
     onSubmit: e => {
       let {
         value: t
       } = e;
-      return s(t)
+      return u(t)
     },
     onKeyDown: d,
     focused: h,

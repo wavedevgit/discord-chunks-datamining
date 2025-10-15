@@ -1,4 +1,4 @@
-/** Chunk was on 31288 **/
+/** Chunk was on 17474 **/
 /** chunk id: 797671, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => y
@@ -11,8 +11,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk283693 = require("./283693.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk218613 = require("./218613.jsx"),
   Chunk911969 = require("./911969.js"),
+  Chunk241865 = require("./241865.jsx"),
   Chunk408987 = require("./408987.js"),
   Chunk312146 = require("./312146.js"),
   Chunk60222 = require("./60222.js"),
@@ -34,7 +34,7 @@ function y(e) {
     transitionState: T,
     onSubmit: N,
     onClose: B
-  } = e, [R, M] = r.useState(E.Sc2), [S, j] = r.useState(E.d4z.GUILD_TEXT), [D, k] = r.useState(""), [G, Z] = r.useState(false), A = (0, o.e7)([f.Z], () => f.Z.getGuild(y), [y]), H = (0, b.m)(y), O = (0, m.Ui)(A), U = r.useMemo(() => (function(e) {
+  } = e, [R, M] = r.useState(E.Sc2), [S, j] = r.useState(E.d4z.GUILD_TEXT), [D, k] = r.useState(""), [G, Z] = r.useState(false), A = (0, a.e7)([f.Z], () => f.Z.getGuild(y), [y]), H = (0, b.m)(y), O = (0, m.Ui)(A), U = r.useMemo(() => (function(e) {
     let {
       canCreateStageChannel: t,
       canCreateMediaChannel: n
@@ -70,8 +70,8 @@ function y(e) {
         icon: t,
         label: n,
         value: r,
-        description: a,
-        isBeta: l
+        description: l,
+        isBeta: o
       } = e;
       return {
         name: (0, i.jsxs)("div", {
@@ -82,13 +82,13 @@ function y(e) {
             children: [(0, i.jsxs)(d.Text, {
               variant: "text-md/normal",
               color: "header-primary",
-              children: [n, (0, i.jsx)(u.p, {
-                isBeta: l
+              children: [n, (0, i.jsx)(_.p, {
+                isBeta: o
               })]
             }), (0, i.jsx)(d.Text, {
               variant: "text-xs/normal",
               color: "header-secondary",
-              children: a
+              children: l
             })]
           })]
         }),
@@ -99,7 +99,7 @@ function y(e) {
   })({
     canCreateStageChannel: H,
     canCreateMediaChannel: O
-  }), [H, O]), V = (0, o.e7)([g.Z], () => g.Z.getCategories(y)._categories, [y]), W = r.useMemo(() => V.map(e => {
+  }), [H, O]), V = (0, a.e7)([g.Z], () => g.Z.getCategories(y)._categories, [y]), W = r.useMemo(() => V.map(e => {
     let {
       channel: t
     } = e;
@@ -118,7 +118,7 @@ function y(e) {
         parent_id: "null" !== R ? R : true,
         permission_overwrites: [{
           id: y,
-          type: p.BN.ROLE,
+          type: u.BN.ROLE,
           allow: v.Hn,
           deny: E.Plq.VIEW_CHANNEL
         }]
@@ -128,10 +128,10 @@ function y(e) {
         body: t,
         oldFormErrors: true,
         trackedActionData: {
-          event: a.NetworkActionNames.CHANNEL_CREATE,
+          event: l.NetworkActionNames.CHANNEL_CREATE,
           properties: e => {
             var t, n;
-            return (0, c.iG)({
+            return (0, s.iG)({
               is_private: true,
               channel_id: null == e || null == (t = e.body) ? true : t.id,
               channel_type: null == e || null == (n = e.body) ? true : n.type
@@ -140,12 +140,12 @@ function y(e) {
         },
         rejectWithError: true
       }).then(e => {
-        _.Z.checkGuildTemplateDirty(y), N(e.body.id), B()
+        p.Z.checkGuildTemplateDirty(y), N(e.body.id), B()
       }, e => {}).finally(() => {
         Z(false)
       })
     },
-    children: (0, i.jsx)(l.Modal, {
+    children: (0, i.jsx)(o.Modal, {
       transitionState: T,
       title: w.intl.string(w.t["fUYU+j"]),
       onClose: B,
@@ -168,7 +168,7 @@ function y(e) {
           value: R,
           options: W,
           onChange: e => M(e)
-        }), (0, i.jsx)(s.Gu, {
+        }), (0, i.jsx)(c.Gu, {
           label: w.intl.string(w.t["7ZcXG2"]),
           options: U,
           value: S,

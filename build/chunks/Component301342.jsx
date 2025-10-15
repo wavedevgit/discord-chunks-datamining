@@ -1,4 +1,4 @@
-/** Chunk was on 32118 **/
+/** Chunk was on 57695 **/
 /** chunk id: 301342, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   P: () => w,
@@ -104,7 +104,7 @@ let N = Chunk647438.memo(function(e) {
         null != t && (0, d.ZDy)(async () => {
           let {
             default: i
-          } = await Promise.all([n.e("45094"), n.e("67133")]).then(n.bind(n, 218613));
+          } = await Promise.all([n.e("29497"), n.e("53781")]).then(n.bind(n, 241865));
           return n => (0, r.jsx)(i, I(S({}, n), {
             channelType: e,
             guildId: t,

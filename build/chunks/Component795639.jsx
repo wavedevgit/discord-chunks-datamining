@@ -94,7 +94,7 @@ let I = e => {
       o()(null != e, "upload should not be null");
       let {
         default: t
-      } = await Promise.resolve().then(n.bind(n, 95152));
+      } = await Promise.resolve().then(n.bind(n, 403592));
       return n => {
         var i, l;
         return (0, r.jsx)(t, (i = function(e) {

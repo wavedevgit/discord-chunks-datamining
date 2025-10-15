@@ -1,7 +1,7 @@
 /** Chunk was on 6310 **/
 /** chunk id: 706923, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  default: () => S
+  default: () => f
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -14,38 +14,38 @@ var Chunk399606 = require("./399606.js"),
   Chunk812545 = require("./812545.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk477425 = require("./477425.js");
+  Chunk625221 = require("./625221.js");
 
-function S(e) {
+function f(e) {
   let {
     channelId: n,
     messageId: t,
-    transitionState: S,
-    onClose: h
-  } = e, C = (0, l.e7)([c.Z], () => c.Z.getChannel(n)), [F, f] = (0, u.Z)(n), m = null == C ? true : C.guild_id;
+    transitionState: f,
+    onClose: S
+  } = e, h = (0, l.e7)([c.Z], () => c.Z.getChannel(n)), [C, F] = (0, u.Z)(n), m = null == h ? true : h.guild_id;
   return (0, s.jsx)(i.ConfirmModal, {
     header: g.intl.string(g.t.aIz1oV),
     confirmText: g.intl.string(g.t["cY+Oob"]),
     cancelText: g.intl.string(g.t["ETE/oC"]),
     confirmButtonColor: o.zx.Colors.BRAND,
     onConfirm: () => a.Z.crosspostMessage(n, t),
-    transitionState: S,
-    onClose: h,
+    transitionState: f,
+    onClose: S,
     children: (0, s.jsx)(i.Text, {
       variant: "text-md/normal",
       className: _.spacing,
-      children: f ? (0, s.jsx)(i.$jN, {}) : null != F && null != F.guildsFollowing && F.guildsFollowing > 0 ? (0, s.jsxs)(s.Fragment, {
+      children: F ? (0, s.jsx)(i.$jN, {}) : null != C && null != C.guildsFollowing && C.guildsFollowing > 0 ? (0, s.jsxs)(s.Fragment, {
         children: [(0, s.jsx)(i.Text, {
           className: _.spacing,
           variant: "text-sm/normal",
           children: g.intl.format(g.t.GCGrNP, {
-            numGuildsFollowing: F.guildsFollowing
+            numGuildsFollowing: C.guildsFollowing
           })
         }), (0, s.jsx)(i.Text, {
           variant: "text-sm/normal",
           children: g.intl.format(g.t.IMhGZz, {
             onClick: () => {
-              null != m && null != h && (h(), r.Z.open(m, d.pNK.ANALYTICS))
+              null != m && null != S && (S(), r.Z.open(m, d.pNK.ANALYTICS))
             }
           })
         })]

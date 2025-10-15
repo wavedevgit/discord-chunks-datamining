@@ -227,7 +227,7 @@ function D(e) {
         p(O.WX.STAGE_INSTANCE), (0, o.ZDy)(async () => {
           let {
             default: e
-          } = await Promise.all([n.e("38697"), n.e("33285"), n.e("45094"), n.e("12334")]).then(n.bind(n, 218613));
+          } = await Promise.all([n.e("38697"), n.e("33285"), n.e("29497"), n.e("60565")]).then(n.bind(n, 241865));
           return n => {
             var l, i;
             return (0, r.jsx)(e, (l = P({}, n), i = i = {
