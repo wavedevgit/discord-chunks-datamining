@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 144145, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => j
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -58,12 +58,12 @@ function N(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let j = Chunk726542.Z.get(Chunk981631.ABu.XBOX).name;
+let P = Chunk726542.Z.get(Chunk981631.ABu.XBOX).name;
 
-function P(e) {
+function j(e) {
   let {
     currentActivities: t
-  } = e, n = t.length > 1, P = function(e) {
+  } = e, n = t.length > 1, j = function(e) {
     let {
       currentActivities: t
     } = e, n = (0, l.e7)([b.Z], () => b.Z.getAccounts().some(e => e.type === c.Z.get(C.ABu.XBOX).type)), i = t.some(e => {
@@ -78,25 +78,25 @@ function P(e) {
         section: C.oAB.CONNECTIONS
       }),
       label: S.intl.formatToPlainString(S.t.XWSHTU, {
-        platform: j
+        platform: P
       })
     })
-  }(e), x = function(e) {
+  }(e), A = function(e) {
     let {
       currentActivities: t
-    } = e, n = i.useContext(v.AnalyticsContext);
-    return (0, l.Wu)([f.ZP, O.Z, h.Z, E.Z, _.Z], () => t.filter(e => !(0, d.Z)(e.activity)).map(e => {
+    } = e, n = i.useContext(y.AnalyticsContext);
+    return (0, l.Wu)([f.ZP, E.Z, h.Z, O.Z, _.Z], () => t.filter(e => !(0, d.Z)(e.activity)).map(e => {
       let {
         activity: t,
         game: r
-      } = e, i = O.Z.getActiveLibraryApplication(r.id);
+      } = e, i = E.Z.getActiveLibraryApplication(r.id);
       return N(T({}, e), {
         libraryApplication: i,
         canJoin: null != t && (0, u.Z)(t, C.xjy.JOIN) && t.type === C.IIU.PLAYING,
-        canPlay: (0, y.t)({
-          LibraryApplicationStore: O.Z,
+        canPlay: (0, v.t)({
+          LibraryApplicationStore: E.Z,
           LaunchableGameStore: h.Z,
-          DispatchApplicationStore: E.Z,
+          DispatchApplicationStore: O.Z,
           ConnectedAppsStore: _.Z,
           applicationId: r.id,
           branchId: null != i ? i.branchId : null
@@ -106,12 +106,12 @@ function P(e) {
         location: n.location
       })
     }), [n.location, t])
-  }(e), A = [];
-  for (let e of x) {
+  }(e), x = [];
+  for (let e of A) {
     let {
       activity: t
     } = e;
-    null != t && null != t.type && A.push(function(e, t) {
+    null != t && null != t.type && x.push(function(e, t) {
       let {
         canJoin: n,
         activity: i,
@@ -169,5 +169,5 @@ function P(e) {
       })
     }(e, n))
   }
-  return [P, ...A]
+  return [j, ...x]
 }

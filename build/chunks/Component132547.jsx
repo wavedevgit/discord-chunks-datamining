@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => x
-}), require("./388685.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./35282.js");
+}), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
@@ -62,11 +62,9 @@ let x = e => {
     } = (0, f.ZP)(d.Z.PREMIUM_SUBSCRIBER_NITRO_HOME),
     [K, z] = i.useState(false),
     q = (0, s.e7)([h.Z], () => null != t ? h.Z.getUserProfile(t) : null),
-    X = "true" === new URLSearchParams(window.location.search).get("autoScroll");
-  window.history.replaceState({}, "", window.location.pathname);
-  let Q = (0, b.Z)({
-    location: "SubscriberNitroHome"
-  });
+    X = (0, b.Z)({
+      location: "SubscriberNitroHome"
+    });
   return null == q ? (0, r.jsx)("div", {
     className: o()(D.container, D.loading),
     children: (0, r.jsx)(c.$jN, {})
@@ -77,7 +75,7 @@ let x = e => {
       children: [(0, r.jsx)(c.$1m, {
         color: "nitro-pink",
         className: o()(D.container, D.responsiveContainer, {
-          [D.hiddenGradient]: !Q
+          [D.hiddenGradient]: !X
         }),
         children: (0, r.jsxs)(f.Gt, {
           value: W,
@@ -89,7 +87,7 @@ let x = e => {
             children: (0, r.jsx)(S.Z, {
               buttonVisibilityRef: U,
               className: D.heroHeading,
-              enablePremiumBrandRefresh: Q,
+              enablePremiumBrandRefresh: X,
               userDiscountOffer: k,
               discountedPrice: H
             })
@@ -97,8 +95,7 @@ let x = e => {
             variant: A.gM.WHATS_NEW,
             className: D.whatsNew,
             noBackground: true,
-            leftAlignHeaders: true,
-            shouldAutoScroll: X
+            leftAlignHeaders: true
           }), (0, r.jsx)(I.Z, {
             className: D.perksDiscoverability,
             variant: A.gM.PERKS_DISCOVERABILITY,
@@ -146,7 +143,7 @@ let x = e => {
       isAllPerksVisible: G,
       setIsAllPerksVisible: B,
       previousComponent: A.MQ.HOME,
-      enablePremiumBrandRefresh: Q
+      enablePremiumBrandRefresh: X
     })]
   })
 }

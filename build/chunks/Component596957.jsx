@@ -29,7 +29,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk983703 = require("./983703.js");
 
-function j(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,7 +48,7 @@ function j(e) {
   return e
 }
 
-function P(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -60,9 +60,9 @@ function P(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let x = [];
+let A = [];
 
-function A() {
+function x() {
   Chunk529103.Z.transitionToSection(Chunk981631.pJs.ADD_FRIEND, {
     explicit: true
   })
@@ -73,7 +73,7 @@ function Z() {
     let {
       default: e
     } = await require.e("36312").then(require.bind(require, 153932));
-    return t => (0, r.jsx)(e, j({}, t))
+    return t => (0, r.jsx)(e, P({}, t))
   })
 }
 
@@ -81,7 +81,7 @@ function w(e) {
   let {
     section: t,
     showSpamCta: n
-  } = e, l = i.useMemo(() => n ? Z : t !== S.pJs.PENDING ? A : true, [n, t]);
+  } = e, l = i.useMemo(() => n ? Z : t !== S.pJs.PENDING ? x : true, [n, t]);
   return (0, r.jsx)("div", {
     className: N.emptyStateContainer,
     children: (0, r.jsx)(_.Z, {
@@ -97,7 +97,7 @@ let L = function(e) {
     analyticsLocations: n
   } = (0, d.ZP)(u.Z.FRIENDS_LIST), {
     rows: o,
-    section: A
+    section: x
   } = (0, l.cj)([g.ZP], () => g.ZP.getState()), L = (0, l.e7)([m.Z], () => m.Z.isFocused()), {
     relationshipCount: R,
     hasBlockedOrIgnored: D
@@ -126,32 +126,32 @@ let L = function(e) {
       }
       return i
     }(e, ["key"]);
-    switch (A) {
+    switch (x) {
       case S.pJs.PENDING:
-        return (0, r.jsx)(O.Z, P(j({}, n), {
+        return (0, r.jsx)(E.Z, j(P({}, n), {
           isFocused: L
         }), t);
       case S.pJs.SUGGESTIONS:
-        return (0, r.jsx)(I.Z, P(j({}, n), {
+        return (0, r.jsx)(I.Z, j(P({}, n), {
           isFocused: L
         }), t);
       case S.pJs.ONLINE:
       case S.pJs.ALL:
       default:
-        return (0, r.jsx)(b.Z, P(j({}, n), {
+        return (0, r.jsx)(b.Z, j(P({}, n), {
           isFocused: L
         }), t)
     }
-  }, [L, A]), G = i.useCallback(e => {
-    M(P(j({}, k), {
-      [A]: e
+  }, [L, x]), G = i.useCallback(e => {
+    M(j(P({}, k), {
+      [x]: e
     }))
-  }, [k, A]), B = i.useCallback(() => {
-    M(P(j({}, k), {
-      [A]: ""
+  }, [k, x]), B = i.useCallback(() => {
+    M(j(P({}, k), {
+      [x]: ""
     }))
-  }, [k, A]), H = i.useMemo(() => A === S.pJs.PENDING && (o.filter(S.pJs.SPAM).length > 0 || o.filter(S.pJs.PENDING_IGNORED).length > 0), [o, A]), V = i.useMemo(() => o.filter(A, k[A]), [o, k, A]), F = A === S.pJs.PENDING, z = i.useMemo(() => {
-    if (!F) return x;
+  }, [k, x]), H = i.useMemo(() => x === S.pJs.PENDING && (o.filter(S.pJs.SPAM).length > 0 || o.filter(S.pJs.PENDING_IGNORED).length > 0), [o, x]), V = i.useMemo(() => o.filter(x, k[x]), [o, k, x]), F = x === S.pJs.PENDING, z = i.useMemo(() => {
+    if (!F) return A;
     let e = [];
     return V.forEach(t => {
       let {
@@ -162,7 +162,7 @@ let L = function(e) {
   }, [F, V]);
   (0, p.Z)(z, F);
   let W = i.useMemo(() => {
-      if (A !== S.pJs.PENDING) return [V];
+      if (x !== S.pJs.PENDING) return [V];
       {
         let e = [],
           t = [];
@@ -170,9 +170,9 @@ let L = function(e) {
           n.type === S.OGo.PENDING_INCOMING ? e.push(n) : n.type === S.OGo.PENDING_OUTGOING && t.push(n)
         }), [e, t]
       }
-    }, [V, A]),
+    }, [V, x]),
     Y = i.useMemo(() => V.filter(e => e.type === S.OGo.PENDING_INCOMING).length, [V]),
-    q = A === S.pJs.PENDING && Y > 0 && Y >= C.yf,
+    q = x === S.pJs.PENDING && Y > 0 && Y >= C.yf,
     K = i.useCallback(e => {
       e.stopPropagation(), s.Z.confirmClearPendingRelationships(Y)
     }, [Y]),
@@ -200,10 +200,10 @@ let L = function(e) {
               count: t.toString()
             })
         }
-      }(A, W[e].length, e);
-      return A === S.pJs.PENDING && 0 === e ? (0, r.jsxs)("div", {
+      }(x, W[e].length, e);
+      return x === S.pJs.PENDING && 0 === e ? (0, r.jsxs)("div", {
         className: N.sectionTitle,
-        children: [(0, r.jsx)(y.Z, {
+        children: [(0, r.jsx)(v.Z, {
           id: t,
           title: n
         }), q && (0, r.jsx)("div", {
@@ -217,36 +217,36 @@ let L = function(e) {
         })]
       }, n) : (0, r.jsx)("div", {
         className: N.sectionTitle,
-        children: (0, r.jsx)(y.Z, {
+        children: (0, r.jsx)(v.Z, {
           id: t,
           title: n
         })
       }, n)
-    }, [W, A, t, q, K]);
+    }, [W, x, t, q, K]);
   if (i.useEffect(() => {
-      A === S.pJs.ALL && (0, f.d$)()
-    }, [A]), 0 === V.length && "" === k[A]) return (0, r.jsx)(w, {
-    section: A,
+      x === S.pJs.ALL && (0, f.d$)()
+    }, [x]), 0 === V.length && "" === k[x]) return (0, r.jsx)(w, {
+    section: x,
     showSpamCta: H
   });
-  let X = "" !== k[A],
+  let X = "" !== k[x],
     J = 0 === V.length && X;
   return (0, r.jsx)(d.Gt, {
     value: n,
     children: (0, r.jsxs)(c.Z, {
       section: S.jXE.FRIENDS_LIST,
-      children: [D && (0, r.jsx)(v.R, {}), (0, r.jsx)("div", {
+      children: [D && (0, r.jsx)(y.R, {}), (0, r.jsx)("div", {
         className: N.searchBar,
         children: (0, r.jsx)(a.E1j, {
-          query: k[A],
+          query: k[x],
           onChange: G,
           onClear: B
         })
-      }), (0, r.jsx)(E.Z, {
+      }), (0, r.jsx)(O.Z, {
         rows: W,
         renderRow: U,
         renderSection: Q,
-        sectionFilter: A,
+        sectionFilter: x,
         isVirtualizedList: R >= C.nG,
         hasSearchQuery: X,
         footer: H && !J ? (0, r.jsx)("div", {
@@ -262,7 +262,7 @@ let L = function(e) {
         className: N.emptyStateContainer,
         children: (0, r.jsx)(_.Z, {
           type: _.j.SECTION_NO_RESULTS
-        }, A)
+        }, x)
       })]
     })
   })

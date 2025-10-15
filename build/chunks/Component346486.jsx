@@ -10,7 +10,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk55935 = require("./55935.js"),
   Chunk388032 = require("./388032.jsx");
 
-function c(e, t, n) {
+function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -36,7 +36,7 @@ class d extends(r = Chunk647438.PureComponent) {
       showDays: t,
       showUnits: n,
       className: r
-    } = this.props, l = [e.days, e.hours, e.minutes, e.seconds], a = [u.intl.string(u.t["6m/6nJ"]), u.intl.string(u.t.n7dksL), u.intl.string(u.t["1LyF1t"]), u.intl.string(u.t.QJyuxc)];
+    } = this.props, l = [e.days, e.hours, e.minutes, e.seconds], a = [c.intl.string(c.t["6m/6nJ"]), c.intl.string(c.t.n7dksL), c.intl.string(c.t["1LyF1t"]), c.intl.string(c.t.QJyuxc)];
     if (0 === e.days) l.shift();
     else if (!t) {
       let e = l.shift();
@@ -66,10 +66,10 @@ class d extends(r = Chunk647438.PureComponent) {
     return null != exports ? exports(Chunk647438, this.defaultRender.bind(this, Chunk647438)) : this.defaultRender(Chunk647438)
   }
   constructor(...e) {
-    super(...e), c(this, "_interval", true)
+    super(...e), u(this, "_interval", true)
   }
 }
-c(d, "defaultProps", {
+u(d, "defaultProps", {
   showDays: true,
   showUnits: false,
   stopAtOneSec: false,

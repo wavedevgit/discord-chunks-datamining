@@ -1,7 +1,7 @@
-/** Chunk was on 31553 **/
+/** Chunk was on 93979 **/
 /** chunk id: 389190, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,29 +16,29 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk878449 = require("./878449.js");
 
-function h(e) {
+function x(e) {
   let {
     user: n,
     guildId: t,
-    channelId: h,
-    onClose: x
+    channelId: x,
+    onClose: h
   } = e, {
-    mutualFriends: j
+    mutualFriends: v
   } = (0, c.Z)(n), {
-    analyticsLocations: v
+    analyticsLocations: j
   } = (0, s.ZP)(), {
     context: g,
     trackUserProfileAction: b
-  } = (0, a.KZ)(), I = (0, o.Z)();
+  } = (0, a.KZ)(), I = (0, r.Z)();
   return i.useEffect(() => {
     (0, d.Z)(n.id, I)
-  }, [n.id, I]), (0, l.jsx)(r.zJl, {
+  }, [n.id, I]), (0, l.jsx)(o.zJl, {
     className: f.listScroller,
     fade: true,
-    children: null == j ? (0, l.jsx)("div", {
+    children: null == v ? (0, l.jsx)("div", {
       className: f.empty,
-      children: (0, l.jsx)(r.$jN, {})
-    }) : 0 === j.length ? (0, l.jsxs)("div", {
+      children: (0, l.jsx)(o.$jN, {})
+    }) : 0 === v.length ? (0, l.jsxs)("div", {
       className: f.empty,
       children: [(0, l.jsx)("div", {
         className: f.emptyIconFriends
@@ -46,20 +46,20 @@ function h(e) {
         className: f.emptyText,
         children: p.intl.string(p.t["/5p4g4"])
       })]
-    }) : j.map(e => {
+    }) : v.map(e => {
       let {
         key: n,
         user: i,
-        status: r
+        status: o
       } = e;
       return (0, l.jsx)(m.Z, {
         user: i,
-        status: r,
+        status: o,
         guildId: t,
-        channelId: h,
+        channelId: x,
         onSelect: () => {
           var e, n, t;
-          null == x || x(), b({
+          null == h || h(), b({
             action: "PRESS_MUTUAL_FRIEND"
           }), e = i.id, (0, u.openUserProfileModal)((n = function(e) {
             for (var n = 1; n < arguments.length; n++) {
@@ -80,7 +80,7 @@ function h(e) {
             return e
           }({}, g), t = t = {
             userId: e,
-            sourceAnalyticsLocations: v
+            sourceAnalyticsLocations: j
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(t)) : (function(e, n) {
             var t = Object.keys(e);
             if (Object.getOwnPropertySymbols) {

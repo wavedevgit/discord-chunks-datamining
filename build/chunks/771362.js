@@ -1,4 +1,4 @@
-/** Chunk was on 31553 **/
+/** Chunk was on 93979 **/
 /** chunk id: 771362, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -11,14 +11,14 @@ var Chunk647438 = require("./647438.js"),
 let a = [];
 
 function c(e) {
-  let n = (0, o.Xj)({
+  let n = (0, r.Xj)({
       forUserProfile: true
     }),
     t = (0, i.e7)([s.Z], () => s.Z.getUserProfile(e));
   return (0, l.useMemo)(() => (null == t ? true : t.connectedAccounts) == null ? a : t.connectedAccounts.filter(e => {
     let {
       type: t
-    } = e, l = r.Z.get(t);
-    return null != l && r.Z.isSupported(t) && n(l)
+    } = e, l = o.Z.get(t);
+    return null != l && o.Z.isSupported(t) && n(l)
   }), [null == t ? true : t.connectedAccounts, n])
 }

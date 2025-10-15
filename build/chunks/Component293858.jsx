@@ -1,4 +1,4 @@
-/** Chunk was on 23404 **/
+/** Chunk was on 31029 **/
 /** chunk id: 293858, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   b: () => y
@@ -29,65 +29,65 @@ function y(e) {
       planGroup: a,
       onSubscriptionConfirmation: y,
       renderPurchaseConfirmation: L,
-      postSuccessGuild: S,
-      followupSKUInfo: v,
+      postSuccessGuild: v,
+      followupSKUInfo: S,
       continueSessionToInitialStep: w
     } = e,
     {
       activeSubscription: I,
-      paymentSources: O,
-      paymentSourceId: P,
+      paymentSources: P,
+      paymentSourceId: O,
       selectedPlan: E,
-      selectedSkuId: T,
-      step: k,
-      updatedSubscription: A,
-      startingPremiumSubscriptionPlanIdRef: M,
+      selectedSkuId: k,
+      step: T,
+      updatedSubscription: M,
+      startingPremiumSubscriptionPlanIdRef: A,
       startingFractionalPremiumEndsAtRef: B
     } = (0, h.JL)(),
     {
       isGift: Z,
       giftRecipient: N,
       giftCode: R,
-      hasSentMessage: G,
-      isSendingMessage: F,
-      sendGiftMessage: H,
+      hasSentMessage: F,
+      isSendingMessage: H,
+      sendGiftMessage: G,
       claimableRewards: U,
       selectedGiftingPromotionReward: D
     } = (0, _.wD)(),
     {
       confirmationFooter: z
-    } = (0, f.zb)(),
+    } = (0, m.zb)(),
     W = (0, C.id)(E, Z, U),
     K = (0, d.Z)(),
     Y = (0, C.a5)(E),
     V = (0, C.tK)(null == D ? true : D.skuId),
-    q = (0, g.$)(O, P),
+    q = (0, g.$)(P, O),
     J = Z && null != D && Y;
-  l()(null != E, "Expected plan to selected"), l()(null != T, "Expected selectedSkuId"), l()(null != k, "Step should be set");
+  l()(null != E, "Expected plan to selected"), l()(null != k, "Expected selectedSkuId"), l()(null != T, "Step should be set");
   let Q = i.useCallback(() => {
     n(), null == y || y()
   }, [n, y]);
   i.useEffect(() => {
-    !Z || null == N || null == R || G || F || (0, u.pO)(N) || H({
+    !Z || null == N || null == R || F || H || (0, u.pO)(N) || G({
       onSubscriptionConfirmation: y
     })
-  }, [H, Z, N, R, G, F, y]), i.useEffect(() => {
+  }, [G, Z, N, R, F, H, y]), i.useEffect(() => {
     null != K && null != K.reminderNotice && W && (0, s.wH)(o.z.GIFTING_PROMOTION_REMINDER, K.dismissibleContentVersion, {
       dismissAction: b.L.INDIRECT_ACTION
     })
   }, [K, W]);
   let X = null != w ? c.PI.DEEPLINK_TO_DESKTOP_APP : true;
-  if (null != L) t = L(E, Q, A);
+  if (null != L) t = L(E, Q, M);
   else if (Z) t = (0, r.jsx)(c.TB, {
     planId: E.id,
     onClose: Q
   });
   else {
-    let e = M.current === E.id ? {
-      postSuccessGuild: S
+    let e = A.current === E.id ? {
+      postSuccessGuild: v
     } : {
-      followupSKUInfo: v,
-      startingPremiumSubscriptionPlanId: M.current,
+      followupSKUInfo: S,
+      startingPremiumSubscriptionPlanId: A.current,
       isDowngrade: null != I && (0, p.GY)(I, E.id, a)
     };
     t = (0, r.jsx)(c.ZP, function(e) {
@@ -117,7 +117,7 @@ function y(e) {
     }, e))
   }
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(m.C3, {
+    children: [(0, r.jsxs)(f.C3, {
       children: [(0, r.jsx)(j.Z, {}), t]
     }), null != z && z, J && null != V && (0, r.jsx)(x.Z, {
       onClose: Q,

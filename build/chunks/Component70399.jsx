@@ -1,4 +1,4 @@
-/** Chunk was on 56848 **/
+/** Chunk was on 3091 **/
 /** chunk id: 70399, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   T: () => p,
@@ -6,7 +6,7 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk20471 = require("./20471.js"),
@@ -19,9 +19,9 @@ function g(e) {
   let {
     applicationId: t,
     size: n = "default"
-  } = e, i = (0, s.e7)([u.Z], () => u.Z.getApplicationWidgetApplicationConfig(t));
+  } = e, i = (0, o.e7)([u.Z], () => u.Z.getApplicationWidgetApplicationConfig(t));
   return (0, r.jsxs)("div", {
-    className: l()(f.container, {
+    className: a()(f.container, {
       [f.sizeSmall]: "small" === n
     }),
     children: [(0, r.jsxs)("div", {
@@ -63,22 +63,22 @@ function p(e) {
   let {
     applicationId: t,
     size: n = "default"
-  } = e, i = (0, c.q)(t), {
-    hasAlreadyLinked: l,
-    canStartAuthorization: s,
+  } = e, i = (0, s.q)(t), {
+    hasAlreadyLinked: a,
+    canStartAuthorization: o,
     startAuthorization: u,
     fetched: g
-  } = (0, o.FG)(i);
+  } = (0, c.FG)(i);
   return "default" !== n || null == i ? null : (0, r.jsxs)("div", {
     className: f.footer,
-    children: [(0, r.jsx)(a.uIJ, {
+    children: [(0, r.jsx)(l.uIJ, {
       size: "xs"
-    }), (0, r.jsx)(a.xvT, {
+    }), (0, r.jsx)(l.xvT, {
       variant: "text-sm/medium",
       color: "text-secondary",
-      children: g ? l ? d.intl.format(d.t.wiyuGx, {
+      children: g ? a ? d.intl.format(d.t.wiyuGx, {
         applicationName: i.name
-      }) : s ? d.intl.format(d.t.RNWFOT, {
+      }) : o ? d.intl.format(d.t.RNWFOT, {
         onConnect: u
       }) : d.intl.string(d.t["9TX4UV"]) : (0, r.jsx)("div", {
         className: f.footerPlaceholder

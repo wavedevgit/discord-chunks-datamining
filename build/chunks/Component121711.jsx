@@ -71,7 +71,7 @@ function ed(e) {
     onLoadComplete: t
   } = e, {
     enabled: n
-  } = (0, x.WX)({
+  } = (0, A.WX)({
     location: $.dr.QUEST_HOME_DESKTOP
   }), l = (0, u.e7)([f.Z], () => f.Z.useReducedMotion), o = (0, u.e7)([Z.Z], () => Z.Z.isFocused()), {
     ref: s,
@@ -81,7 +81,7 @@ function ed(e) {
       (null == d ? true : d.current) != null && (d.current.paused || o && c && !l ? d.current.paused && !l && c && o && d.current.play() : d.current.pause())
     }, [l, c, o]), n) {
     let e = (0, L.rO)();
-    return (0, r.jsx)(E.Z, {
+    return (0, r.jsx)(O.Z, {
       ref: e => {
         d.current = e, s.current = e
       },
@@ -164,7 +164,7 @@ function ef(e) {
   }, []);
   return (0, r.jsx)(X.t.Provider, {
     value: o,
-    children: (0, r.jsxs)(j.Z, {
+    children: (0, r.jsxs)(P.Z, {
       onScroll: n,
       ref: o,
       children: [(0, r.jsx)(N.a, {
@@ -213,22 +213,22 @@ let eh = function(e) {
     enabled: l
   } = B.m8.useConfig({
     location: $.dr.QUEST_HOME_DESKTOP
-  }), s = (0, o.TH)(), f = (null == (t = (0, o.LX)(s.pathname, ee.Z5c.QUEST_HOME)) ? true : t.isExact) === true, E = l && f, Z = (0, u.e7)([b.Z], () => b.Z.getState("quests")), {
+  }), s = (0, o.TH)(), f = (null == (t = (0, o.LX)(s.pathname, ee.Z5c.QUEST_HOME)) ? true : t.isExact) === true, O = l && f, Z = (0, u.e7)([b.Z], () => b.Z.getState("quests")), {
     selectedTab: w,
     onSelectTab: L,
     tabs: D
   } = (0, J.z)({
-    withClaimedQuestsTab: !E
+    withClaimedQuestsTab: !O
   });
   i.useLayoutEffect(() => {
-    E && w === k.e5.CLAIMED && G.Z.setState({
+    O && w === k.e5.CLAIMED && G.Z.setState({
       tab: k.e5.ALL
     })
-  }, [E, w]);
+  }, [O, w]);
   let {
     onScroll: U,
     scrollPosition: F
-  } = (0, y.M)(), W = z.Z.getState().getUtmCurrentContext(), el = (0, M._)({
+  } = (0, v.M)(), W = z.Z.getState().getUtmCurrentContext(), el = (0, M._)({
     location: $.dr.QUEST_HOME_DESKTOP
   }) ? q.Z : q.j, ea = (0, K.z)(e => e.registerAssetLoad), eo = i.useRef(W);
   i.useEffect(() => {
@@ -251,20 +251,20 @@ let eh = function(e) {
   }, [w]);
   let {
     enabled: es
-  } = (0, x.WX)({
+  } = (0, A.WX)({
     location: $.dr.QUEST_HOME_DESKTOP
   }), ec = i.useCallback(() => {
     if (es) return void window.open(ee.EYA.PAID_TERMS_ORBS);
     window.open(R.Z.getArticleURL(ee.BhN.QUESTS_LEARN_MORE))
   }, [es]);
-  (0, O.Tt)({
+  (0, E.Tt)({
     location: er.intl.string(er.t.JALI2N)
   });
   let eu = es ? er.intl.format(er.t.BCBIlp, {}) : er.intl.format(er.t.lmMBf3, {}),
     ep = es ? er.intl.format(er.t.U9FY0N, {}) : er.intl.string(er.t.oWCrBg),
     eh = i.useRef(null),
     eg = i.useCallback(() => {
-      (0, P.Y)({
+      (0, j.Y)({
         pageType: ee.ZY5.GLOBAL_DISCOVERY_QUESTS,
         sectionType: ee.jXE.ORBS_BALANCE_MENU,
         ctaObject: ee.qAy.CTA_TO_ORBS_SHOP
@@ -277,7 +277,7 @@ let eh = function(e) {
   i.useEffect(() => {
     l && (0, p.Y)(ee.Z5c.QUEST_HOME_V2)
   }, [l]), i.useEffect(() => {
-    v.C.trigger()
+    y.C.trigger()
   }, []);
   let em = (0, H.T)({
     location: $.dr.QUEST_PREVIEW_TOOL_2
@@ -302,7 +302,7 @@ let eh = function(e) {
       className: a()(ei.container, {
         [ei.withoutTopBorder]: !n
       }),
-      children: E ? (0, r.jsx)(ef, {
+      children: O ? (0, r.jsx)(ef, {
         onSelectTab: L,
         onScroll: U,
         onLoadComplete: ea,
@@ -316,13 +316,13 @@ let eh = function(e) {
           handleTransition: L,
           tabs: D,
           icon: d.qDn,
-          children: (0, r.jsx)(A.V9, {
+          children: (0, r.jsx)(x.V9, {
             analyticsPage: ee.ZY5.GLOBAL_DISCOVERY_QUESTS,
-            cardAlignment: A.ek.END,
+            cardAlignment: x.ek.END,
             ctaText: er.intl.string(er.t["J+vlIS"]),
             ctaOnClick: eg
           })
-        }), (0, r.jsxs)(j.Z, {
+        }), (0, r.jsxs)(P.Z, {
           onScroll: U,
           ref: eh,
           children: [w !== k.e5.PREVIEW_TOOL && (0, r.jsxs)(I.Z, {
@@ -377,7 +377,7 @@ let eh = function(e) {
           })]
         }), (0, r.jsx)(X.t.Provider, {
           value: eh,
-          children: (0, r.jsxs)(j.Z, {
+          children: (0, r.jsxs)(P.Z, {
             onScroll: U,
             ref: eh,
             children: [(0, r.jsxs)(I.Z, {

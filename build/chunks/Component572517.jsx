@@ -1,4 +1,4 @@
-/** Chunk was on 23404 **/
+/** Chunk was on 31029 **/
 /** chunk id: 572517, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   c: () => _
@@ -20,15 +20,15 @@ function _() {
   let n = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
     _ = (0, Chunk410030.ZP)(),
     h = (0, Chunk780384.wj)(_),
-    f = (0, Chunk347896.Z)(),
-    m = null == f ? true : f.planSelectionBanner,
+    m = (0, Chunk347896.Z)(),
+    f = null == m ? true : m.planSelectionBanner,
     {
       claimableRewards: x
     } = (0, Chunk987209.wD)();
-  if (null == m || null == x) return null;
-  let g = null == (e = m.getBackgroundImageUrl) ? true : module.call(m, h),
+  if (null == f || null == x) return null;
+  let g = null == (e = f.getBackgroundImageUrl) ? true : module.call(f, h),
     j = (0, Chunk717401.Yr)(g),
-    b = null == (t = m.gradientConfig) ? true : exports.call(m, {
+    b = null == (t = f.gradientConfig) ? true : exports.call(f, {
       isDarkMode: h,
       isAndroid: false
     }),
@@ -40,7 +40,7 @@ function _() {
       className: Chunk432483.avatar,
       children: (0, Chunk951288.jsx)(Chunk897942.Z, {
         claimableRewards: x,
-        maxRewardImageSrc: m.getImageUrl(h, require),
+        maxRewardImageSrc: f.getImageUrl(h, require),
         size: Chunk481060.EFr.SIZE_40,
         imageScaling: 2
       })
@@ -48,7 +48,7 @@ function _() {
       variant: "text-md/medium",
       className: Chunk432483.bannerText,
       color: "always-white",
-      children: m.desktopBannerText(x.length)
+      children: f.desktopBannerText(x.length)
     })]
   })
 }

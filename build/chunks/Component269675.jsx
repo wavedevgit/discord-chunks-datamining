@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 269675, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => j
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -29,25 +29,25 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk183261 = require("./183261.js");
 
-function j(e) {
+function P(e) {
   let {
     guildId: t
-  } = e, n = (0, a.e7)([m.Z], () => m.Z.getGuild(t), [t]), j = (0, a.e7)([h.Z], () => h.Z.isConnected()), P = (0, p.Z)(t), x = (0, O.Z)(t), A = (0, a.e7)([b.Z], () => b.Z.isSubscriptionFetching), Z = (0, _.f)(), {
+  } = e, n = (0, a.e7)([m.Z], () => m.Z.getGuild(t), [t]), P = (0, a.e7)([h.Z], () => h.Z.isConnected()), j = (0, p.Z)(t), A = (0, E.Z)(t), x = (0, a.e7)([b.Z], () => b.Z.isSubscriptionFetching), Z = (0, _.f)(), {
     shouldHideGuildPurchaseEntryPoints: w,
     restrictionsLoading: L
-  } = (0, f.uP)(t), R = null == n || !Z || A || L;
+  } = (0, f.uP)(t), R = null == n || !Z || x || L;
   (0, u.Tt)({
     subsection: T.intl.string(T.t["KzCF//"]),
     location: null == n ? true : n.name
   }), (0, c.Z)(l.tq ? "role-subscriptions-overview" : true);
-  let D = j && (null == n || !(P || x) || w && !L);
+  let D = P && (null == n || !(j || A) || w && !L);
   if (i.useEffect(() => {
       s.jg()
     }, []), i.useEffect(() => {
       D && !l.tq && (0, d.M)(t, S.oC.ROLE_SUBSCRIPTIONS)
     }, [t, D]), l.tq && D) {
-    let e = null == n ? y.J.NOT_GUILD_MEMBER : y.J.GUILD_NOT_ELIGIBLE;
-    return (0, r.jsx)(y.z, {
+    let e = null == n ? v.J.NOT_GUILD_MEMBER : v.J.GUILD_NOT_ELIGIBLE;
+    return (0, r.jsx)(v.z, {
       errorType: e
     })
   }
@@ -57,7 +57,7 @@ function j(e) {
       toolbar: (0, r.jsx)(i.Fragment, {}),
       className: N.headerBar,
       children: [(0, r.jsx)(g.Z.Icon, {
-        icon: (0, o.GSL)(E.Z),
+        icon: (0, o.GSL)(O.Z),
         "aria-hidden": true
       }), (0, r.jsx)(g.Z.Title, {
         children: T.intl.string(T.t["KzCF//"])
@@ -66,11 +66,11 @@ function j(e) {
       id: C.v
     }), (0, r.jsx)("div", {
       className: N.content,
-      children: P ? (0, r.jsx)(o.u2D, {
+      children: j ? (0, r.jsx)(o.u2D, {
         className: N.scroller,
         children: (0, r.jsx)("div", {
           className: N.scrollerContent,
-          children: R ? (0, r.jsx)(o.$jN, {}) : (0, r.jsx)(v.Z, {
+          children: R ? (0, r.jsx)(o.$jN, {}) : (0, r.jsx)(y.Z, {
             guild: n
           })
         })
@@ -79,14 +79,14 @@ function j(e) {
   })
 }
 
-function P(e) {
+function j(e) {
   let {
     guildId: t
   } = e;
   return (0, r.jsx)(_.l, {
     guildId: t,
     refetchOnMount: true,
-    children: (0, r.jsx)(j, {
+    children: (0, r.jsx)(P, {
       guildId: t
     })
   })

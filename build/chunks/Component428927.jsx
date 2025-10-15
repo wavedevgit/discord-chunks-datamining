@@ -1,4 +1,4 @@
-/** Chunk was on 31553 **/
+/** Chunk was on 93979 **/
 /** chunk id: 428927, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -43,7 +43,7 @@ function m(e) {
           var e;
           m({
             action: "PRESS_MUTUAL_GUILD"
-          }), e = i.id, (0, o.X)(e), t(), (0, r.xf)()
+          }), e = i.id, (0, r.X)(e), t(), (0, o.xf)()
         }
       }, i.id)
     }) : (0, l.jsxs)("div", {

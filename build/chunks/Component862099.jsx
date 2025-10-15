@@ -107,7 +107,7 @@ function H(e) {
   let {
     guildEvent: t,
     channel: n
-  } = e, r = (0, s.Wu)([y.ZP], () => y.ZP.getVoiceStatesForChannel(n).map(e => {
+  } = e, r = (0, s.Wu)([v.ZP], () => v.ZP.getVoiceStatesForChannel(n).map(e => {
     let {
       user: t
     } = e;
@@ -137,7 +137,7 @@ function V(e) {
   let {
     guildEvent: t,
     noticeType: n
-  } = e, r = (0, R.DK)(t), l = (0, s.e7)([T.ZP], () => T.ZP.isInterestedInEventRecurrence(t.id, r), [t.id, r]), a = (0, s.e7)([P.Z], () => P.Z.getUpcomingNoticeSeenTime(t.id), [t.id]);
+  } = e, r = (0, R.DK)(t), l = (0, s.e7)([T.ZP], () => T.ZP.isInterestedInEventRecurrence(t.id, r), [t.id, r]), a = (0, s.e7)([j.Z], () => j.Z.getUpcomingNoticeSeenTime(t.id), [t.id]);
   return l || null != a || (0, N._6)(t.id), (0, i.jsx)(c.Button, {
     onClick: function() {
       (0, D.Z)(t.id, null, t.guild_id, () => setTimeout(() => (0, N.L_)(t.id), 1e3)), I.default.track(M.rMx.CHANNEL_NOTICE_CTA_CLICKED, {
@@ -158,7 +158,7 @@ function F(e) {
   let {
     guildEvent: n,
     noticeType: r
-  } = e, a = (0, L.cS)(n), s = null != a ? (0, x.m)(a, true) : null, u = (0, L.nE)(n), p = (0, d.KS)(u), {
+  } = e, a = (0, L.cS)(n), s = null != a ? (0, A.m)(a, true) : null, u = (0, L.nE)(n), p = (0, d.KS)(u), {
     startTime: f,
     endTime: h
   } = (0, Z.ZP)(n), {
@@ -253,7 +253,7 @@ function z(e) {
     }),
     heading: U.intl.string(U.t["1+boPj"]),
     topic: t.name,
-    location: (0, x.m)(n, true),
+    location: (0, A.m)(n, true),
     locationIcon: (0, i.jsx)(c._tJ, {
       size: "custom",
       color: "currentColor",
@@ -351,7 +351,7 @@ function Q(e) {
     channel: t,
     speakers: n,
     voiceType: r
-  } = e, a = t.getGuildId(), d = l.useMemo(() => n.slice(0, 3), [n]), p = (0, s.e7)([v.Z], () => v.Z.can(M.Plq.CONNECT, t)), f = (0, E.Z)(t.id), h = U.intl.string(U.t.VJlc0d);
+  } = e, a = t.getGuildId(), d = l.useMemo(() => n.slice(0, 3), [n]), p = (0, s.e7)([y.Z], () => y.Z.can(M.Plq.CONNECT, t)), f = (0, O.Z)(t.id), h = U.intl.string(U.t.VJlc0d);
   switch (r) {
     case 1:
       h = U.intl.string(U.t.VJlc0d);
@@ -390,14 +390,14 @@ let X = Chunk647438.memo(function(e) {
     guild: t
   } = e, {
     showRedesignedLiveChannelNotice: n
-  } = (0, p.o)(true), r = (0, A.y)(t.id), l = (0, w.k5)(t.id), a = (0, w.Vm)(t.id), o = (0, s.e7)([O.Z], () => O.Z.getStageInstanceByChannel(null == r ? true : r.id), [r]), {
+  } = (0, p.o)(true), r = (0, x.y)(t.id), l = (0, w.k5)(t.id), a = (0, w.Vm)(t.id), o = (0, s.e7)([E.Z], () => E.Z.getStageInstanceByChannel(null == r ? true : r.id), [r]), {
     isStageNoticeHidden: c,
     isEventNoticeHidden: u
-  } = (0, s.cj)([j.Z], () => ({
-    isStageNoticeHidden: j.Z.isLiveChannelNoticeHidden({
+  } = (0, s.cj)([P.Z], () => ({
+    isStageNoticeHidden: P.Z.isLiveChannelNoticeHidden({
       stageId: null == o ? true : o.id
     }),
-    isEventNoticeHidden: j.Z.isLiveChannelNoticeHidden({
+    isEventNoticeHidden: P.Z.isLiveChannelNoticeHidden({
       eventId: null == l ? true : l.id
     })
   }), [o, l]), d = null, h = null != o && null != r && !c;

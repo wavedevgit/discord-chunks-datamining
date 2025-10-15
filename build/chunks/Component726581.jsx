@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 726581, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => y
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,20 +20,20 @@ var Chunk951288 = require("./951288.js"),
   Chunk4962 = require("./4962.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk796787 = require("./796787.js");
-class E extends Chunk647438.Component {
+class O extends Chunk647438.Component {
   renderReasons(e, t, n) {
     return 0 === e.length && 0 === t.length ? null : (0, r.jsx)("div", {
-      className: O.section,
+      className: E.section,
       children: (0, r.jsxs)("div", {
-        className: O.sectionContent,
+        className: E.sectionContent,
         children: [e.map(e => (0, r.jsx)("div", {
-          className: O.unit,
+          className: E.unit,
           children: (0, r.jsx)(m.Z, {
             reason: e,
             hidePersonalInformation: n
           })
         }, e.type)), t.map(e => (0, r.jsx)("div", {
-          className: O.unit,
+          className: E.unit,
           children: (0, r.jsx)(s.Z, {
             reason: e
           })
@@ -72,7 +72,7 @@ class E extends Chunk647438.Component {
     })
   }
 }
-let v = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk594174.default, Chunk551428.Z, Chunk649974.Z, Chunk525395.Z, Chunk246946.Z], e => {
+let y = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk594174.default, Chunk551428.Z, Chunk649974.Z, Chunk525395.Z, Chunk246946.Z], e => {
   let {
     sku: t
   } = e;
@@ -81,4 +81,4 @@ let v = Chunk442837.ZP.connectStores([Chunk55563.Z, Chunk594174.default, Chunk55
     nonSocialReasons: (0, g.Ww)(t.id, f.Z, h.Z),
     hidePersonalInformation: u.Z.hidePersonalInformation
   }
-})(E)
+})(O)

@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 226323, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => A
+  Z: () => x
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -58,10 +58,10 @@ function N(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let j = {
+let P = {
     offset: 2
   },
-  P = {
+  j = {
     serverDeaf: {
       icon: Chunk481060.Vm4,
       colorize: true,
@@ -89,29 +89,29 @@ let j = {
     }
   };
 
-function x(e) {
+function A(e) {
   var t, l;
   let p = i.useRef(null),
     {
       parentAnalyticsLocation: f
     } = (0, g.ZP)(),
     {
-      channel: E,
-      user: x,
-      nick: A,
+      channel: O,
+      user: A,
+      nick: x,
       mute: Z,
       deaf: w,
       serverMute: L,
       serverDeaf: R
     } = e,
-    D = (0, o.e7)([v.Z], () => v.Z.isLocalMute(x.id)),
+    D = (0, o.e7)([y.Z], () => y.Z.isLocalMute(A.id)),
     k = (0, d.Z)({
-      userId: x.id,
+      userId: A.id,
       checkSoundSharing: true
     }),
-    M = null != (t = E.getGuildId()) ? t : true,
-    U = x.getAvatarURL(E.guild_id, 24),
-    G = null != A ? A : y.ZP.getName(x),
+    M = null != (t = O.getGuildId()) ? t : true,
+    U = A.getAvatarURL(O.guild_id, 24),
+    G = null != x ? x : v.ZP.getName(A),
     {
       icon: B,
       colorize: H,
@@ -124,11 +124,11 @@ function x(e) {
         mute: i,
         localMute: l
       } = e;
-      if (t) return P.serverDeaf;
-      if (n) return P.deaf;
-      if (r) return P.serverMute;
-      if (l) return P.localMute;
-      if (i) return P.mute
+      if (t) return j.serverDeaf;
+      if (n) return j.deaf;
+      if (r) return j.serverMute;
+      if (l) return j.localMute;
+      if (i) return j.mute
     }({
       serverDeaf: R,
       deaf: w,
@@ -147,12 +147,12 @@ function x(e) {
         default: e
       } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("52021")]).then(n.bind(n, 757387));
       return t => (0, r.jsx)(e, N(T({}, t), {
-        user: x,
+        user: A,
         guildId: M,
-        channel: E,
+        channel: O,
         showMediaItems: true,
         onInteraction: (0, b.u)("GuildChannelUserContextMenu", h.Z.RTC_PANEL, {
-          targetUserId: x.id
+          targetUserId: A.id
         })
       }))
     }) : (0, u.jW)(e, async () => {
@@ -160,19 +160,19 @@ function x(e) {
         default: e
       } = await Promise.all([n.e("79695"), n.e("69220")]).then(n.bind(n, 881351));
       return t => (0, r.jsx)(e, N(T({}, t), {
-        user: x,
+        user: A,
         showMediaItems: true,
         onInteraction: (0, b.u)("UserGenericContextMenu", h.Z.RTC_PANEL, {
-          targetUserId: x.id
+          targetUserId: A.id
         })
       }))
     })
   }
-  return (0, r.jsx)(O.Z, {
+  return (0, r.jsx)(E.Z, {
     targetElementRef: p,
-    user: x,
+    user: A,
     guildId: M,
-    channelId: E.id,
+    channelId: O.id,
     position: "top",
     clickTrap: true,
     children: e => (0, r.jsx)(s.u, {
@@ -184,7 +184,7 @@ function x(e) {
         },
         className: S.avatarContainer,
         onContextMenu: z,
-        focusProps: j,
+        focusProps: P,
         children: (0, r.jsx)(_.Z, {
           shakeLocation: I.oZ.VOICE_USER,
           isShaking: k,
@@ -209,12 +209,12 @@ function x(e) {
   })
 }
 
-function A(e) {
+function x(e) {
   let {
     voiceStates: t,
     channel: n,
     className: l
-  } = e, [s, u] = i.useState(false), d = (0, o.e7)([E.default], () => E.default.getId()), {
+  } = e, [s, u] = i.useState(false), d = (0, o.e7)([O.default], () => O.default.getId()), {
     containerRef: h,
     maxVisibleAvatars: g
   } = function(e) {
@@ -238,7 +238,7 @@ function A(e) {
         if (r.length >= n) return [r, true];
         r.push(i)
       } return [r, false]
-  }(t, d, g), _ = s ? c.V_R : c.qJs, O = (0, r.jsx)(c.M0o, {
+  }(t, d, g), _ = s ? c.V_R : c.qJs, E = (0, r.jsx)(c.M0o, {
     onClick: () => u(!s),
     color: c.YX$.PRIMARY,
     size: c.tT7.SIZE_24,
@@ -247,9 +247,9 @@ function A(e) {
       size: "xs",
       color: "currentColor"
     }),
-    focusProps: j
-  }), v = b && s ? t : m;
-  return v.length <= 0 ? null : (0, r.jsx)(c.zJl, {
+    focusProps: P
+  }), y = b && s ? t : m;
+  return y.length <= 0 ? null : (0, r.jsx)(c.zJl, {
     className: a()(S.scroller, l),
     fade: true,
     children: (0, r.jsxs)("div", {
@@ -257,13 +257,13 @@ function A(e) {
       className: a()(S.voiceUsers, !s && S.collapsed),
       role: "group",
       "aria-label": C.intl.string(C.t["/ZgaVV"]),
-      children: [v.map(e => {
+      children: [y.map(e => {
         let {
           user: t,
           nick: i,
           voiceState: l
         } = e;
-        return t.id !== d ? (0, r.jsx)(x, {
+        return t.id !== d ? (0, r.jsx)(A, {
           channel: n,
           user: t,
           nick: i,
@@ -273,7 +273,7 @@ function A(e) {
           serverMute: l.mute,
           serverDeaf: l.deaf
         }, t.id) : null
-      }), b ? O : null]
+      }), b ? E : null]
     })
   })
 }

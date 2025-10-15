@@ -22,14 +22,14 @@ function g(e) {
     m = h.$X.some(t => (null == e ? true : e.id) !== f._ && c.oz(t, e)),
     b = (null == e ? true : e.defaultMessageNotifications) === d.bL.ALL_MESSAGES,
     _ = (0, u.FT)(l.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, null != (t = null == e ? true : e.id) ? t : d.lds),
-    O = g && (m || b) && !_,
-    E = i.useCallback(() => {
+    E = g && (m || b) && !_,
+    O = i.useCallback(() => {
       var t;
       (0, u.Qd)(l.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, null != (t = null == e ? true : e.id) ? t : d.lds, true, p.L.DISMISS)
     }, [e]),
-    v = i.useRef(false);
+    y = i.useRef(false);
   i.useEffect(() => {
-    if (O && !v.current) {
+    if (E && !y.current) {
       var t;
       (0, a.ZDy)(async () => {
         let {
@@ -58,11 +58,11 @@ function g(e) {
           isDefaultNotificationsAllMessages: b
         }, n))
       }, {
-        onCloseCallback: E
+        onCloseCallback: O
       }), s.default.track(d.rMx.DISMISSIBLE_CONTENT_SHOWN, {
         type: l.C[l.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE],
         guild_id: null != (t = null == e ? true : e.id) ? t : d.lds
-      }), v.current = true
+      }), y.current = true
     }
-  }, [m, e, E, b, O])
+  }, [m, e, O, b, E])
 }

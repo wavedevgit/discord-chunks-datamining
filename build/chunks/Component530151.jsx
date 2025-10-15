@@ -267,8 +267,8 @@ class Y extends Chunk647438.PureComponent {
       children: [(0, r.jsx)(h.Exd, {
         percent: t,
         size: h.Exd.Sizes.SMALL,
-        foregroundColor: (0, y.Lq)(n),
-        foregroundGradientColor: null != i ? [(0, y.Lq)(i[0]), (0, y.Lq)(i[1])] : true,
+        foregroundColor: (0, v.Lq)(n),
+        foregroundGradientColor: null != i ? [(0, v.Lq)(i[0]), (0, v.Lq)(i[1])] : true,
         animate: this.isFocused
       }), (0, r.jsx)("div", {
         className: M.progressCellText,
@@ -654,7 +654,7 @@ function ee(e, t, n, r) {
       branchId: o,
       state: c,
       application: s,
-      libraryApplication: j.Z.getLibraryApplication(a, o),
+      libraryApplication: P.Z.getLibraryApplication(a, o),
       finished: t,
       index: l
     }), e

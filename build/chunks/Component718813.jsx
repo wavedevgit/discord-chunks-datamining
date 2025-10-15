@@ -63,21 +63,21 @@ let N = (0, Chunk663993.Un)({
     webpackId: 989804,
     name: "UserSettings"
   }),
-  j = (0, Chunk663993.Un)({
+  P = (0, Chunk663993.Un)({
     createPromise: () => require.e("79835").then(require.bind(require, 72493)),
     webpackId: 72493
   }),
-  P = (0, Chunk663993.Un)({
+  j = (0, Chunk663993.Un)({
     createPromise: () => require.e("80448").then(require.bind(require, 765457)),
     webpackId: 765457,
     name: "CheckpointSlides"
   }),
-  x = (0, Chunk663993.Un)({
+  A = (0, Chunk663993.Un)({
     createPromise: () => Promise.all([require.e("74318"), require.e("36599"), require.e("7654"), require.e("59077"), require.e("86915")]).then(require.bind(require, 869779)),
     webpackId: 869779,
     name: "ChannelSettings"
   }),
-  A = (0, Chunk663993.Un)({
+  x = (0, Chunk663993.Un)({
     createPromise: () => require.e("45620").then(require.bind(require, 838819)),
     webpackId: 838819,
     name: "CollectiblesShop"
@@ -89,11 +89,11 @@ let N = (0, Chunk663993.Un)({
   }),
   w = {
     [Chunk981631.S9g.USER_SETTINGS]: () => (0, Chunk951288.jsx)(N, {}),
-    [Chunk981631.S9g.CHANNEL_SETTINGS]: () => (0, Chunk951288.jsx)(x, {}),
+    [Chunk981631.S9g.CHANNEL_SETTINGS]: () => (0, Chunk951288.jsx)(A, {}),
     [Chunk981631.S9g.GUILD_SETTINGS]: () => (0, Chunk951288.jsx)(Z, {}),
-    [Chunk981631.S9g.COLLECTIBLES_SHOP]: () => (0, Chunk951288.jsx)(A, {}),
-    [Chunk981631.S9g.MANA_PLAYGROUND]: () => (0, Chunk951288.jsx)(j, {}),
-    [Chunk981631.S9g.CHECKPOINT]: () => (0, Chunk951288.jsx)(P, {})
+    [Chunk981631.S9g.COLLECTIBLES_SHOP]: () => (0, Chunk951288.jsx)(x, {}),
+    [Chunk981631.S9g.MANA_PLAYGROUND]: () => (0, Chunk951288.jsx)(P, {}),
+    [Chunk981631.S9g.CHECKPOINT]: () => (0, Chunk951288.jsx)(j, {})
   },
   L = "SHOWN",
   R = "HIDDEN",
@@ -155,12 +155,12 @@ class M extends(r = Chunk647438.PureComponent) {
       opacity: t,
       scale: n
     } = this.state;
-    O.S.dispatch(E.CkL.LAYER_POP_START), s.Z.parallel([s.Z.spring(t, S({
+    E.S.dispatch(O.CkL.LAYER_POP_START), s.Z.parallel([s.Z.spring(t, S({
       toValue: 0
     }, D)), s.Z.spring(n, S({
       toValue: 1.1
     }, D))]).start(() => {
-      e(), O.S.dispatch(E.CkL.LAYER_POP_COMPLETE)
+      e(), E.S.dispatch(O.CkL.LAYER_POP_COMPLETE)
     })
   }
   animateUnder() {
@@ -209,16 +209,16 @@ class M extends(r = Chunk647438.PureComponent) {
       "aria-modal": Chunk134616,
       "aria-label": Chunk134616 ? function(e) {
         switch (e) {
-          case E.S9g.USER_SETTINGS:
-            return v.intl.string(v.t.cduTBA);
-          case E.S9g.CHANNEL_SETTINGS:
-            return v.intl.string(v.t.XPDhcX);
-          case E.S9g.COLLECTIBLES_SHOP:
-            return v.intl.string(v.t.pWG4zc);
-          case E.S9g.MANA_PLAYGROUND:
+          case O.S9g.USER_SETTINGS:
+            return y.intl.string(y.t.cduTBA);
+          case O.S9g.CHANNEL_SETTINGS:
+            return y.intl.string(y.t.XPDhcX);
+          case O.S9g.COLLECTIBLES_SHOP:
+            return y.intl.string(y.t.pWG4zc);
+          case O.S9g.MANA_PLAYGROUND:
             return "Component Playground";
-          case E.S9g.CHECKPOINT:
-            return v.intl.string(y.default["CdU/PD"]);
+          case O.S9g.CHECKPOINT:
+            return y.intl.string(v.default["CdU/PD"]);
           default:
             return ""
         }

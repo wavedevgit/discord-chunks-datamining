@@ -1,12 +1,12 @@
-/** Chunk was on 31553 **/
+/** Chunk was on 93979 **/
 /** chunk id: 76076, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => j
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk258536 = require("./258536.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk361623 = require("./361623.js"),
   Chunk583140 = require("./583140.js");
-let x = {
+let h = {
     [Chunk228168.qb.WIDGET_ADDED]: {
       message: Chunk388032.intl.string(Chunk388032.t.fFP1U1),
       icon: (0, Chunk951288.jsx)(Chunk481060.dz2, {
@@ -52,14 +52,14 @@ let x = {
       type: Chunk481060.ToastType.FAILURE
     }
   },
-  j = e => {
+  v = e => {
     let {
       message: n,
       icon: t,
       type: i
     } = e;
     return (0, l.jsxs)("div", {
-      className: o()(h.toast, f.toast),
+      className: r()(x.toast, f.toast),
       "data-type": i,
       children: [(0, l.jsx)("div", {
         className: f.toastIcon,
@@ -71,14 +71,14 @@ let x = {
       })]
     })
   },
-  v = e => {
+  j = e => {
     let {
       className: n,
       onAutoHide: t
-    } = e, r = (0, u.be)(), m = (0, a.e7)([d.Z], () => d.Z.useReducedMotion), [p, h] = i.useState(false), [v, g] = i.useState(null);
+    } = e, o = (0, u.be)(), m = (0, a.e7)([d.Z], () => d.Z.useReducedMotion), [p, x] = i.useState(false), [j, g] = i.useState(null);
     i.useEffect(() => {
-      null !== r ? (h(true), g(x[r]), c.uvj.announce(x[r].message)) : h(false)
-    }, [r]);
+      null !== o ? (x(true), g(h[o]), c.uvj.announce(h[o].message)) : x(false)
+    }, [o]);
     let b = (0, c.Yzy)(p, {
       from: {
         transform: m ? "translateY(0)" : "translateY(-12px)",
@@ -107,10 +107,10 @@ let x = {
         return () => clearTimeout(e)
       }
     }, [p, t]), (0, l.jsx)(l.Fragment, {
-      children: b((e, t) => t && null !== v && (0, l.jsx)(s.animated.div, {
-        className: o()(n, f.toastContainer),
+      children: b((e, t) => t && null !== j && (0, l.jsx)(s.animated.div, {
+        className: r()(n, f.toastContainer),
         style: e,
-        children: (0, l.jsx)(j, function(e) {
+        children: (0, l.jsx)(v, function(e) {
           for (var n = 1; n < arguments.length; n++) {
             var t = null != arguments[n] ? arguments[n] : {},
               l = Object.keys(t);
@@ -127,7 +127,7 @@ let x = {
             })
           }
           return e
-        }({}, v))
+        }({}, j))
       }))
     })
   }

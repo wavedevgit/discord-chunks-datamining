@@ -1,7 +1,7 @@
-/** Chunk was on 23404 **/
+/** Chunk was on 31029 **/
 /** chunk id: 14476, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  c: () => f
+  c: () => m
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,20 +16,20 @@ var Chunk951288 = require("./951288.js"),
   Chunk616066 = require("./616066.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk632939 = require("./632939.js");
-let f = e => {
+let m = e => {
   let {
     skuId: t,
     assetId: n,
     user: a,
-    claimed: f,
-    onSelect: m,
+    claimed: m,
+    onSelect: f,
     productName: x,
     a11yLabel: g,
     selectedSkuId: j,
     category: b
   } = e, y = i.useRef(null), {
     isHoveringOrFocusing: L
-  } = (0, c.Z)(y), S = !f && L, v = (0, C.ZP)(), w = (0, s.wj)(v), I = {
+  } = (0, c.Z)(y), v = !m && L, S = (0, C.ZP)(), w = (0, s.wj)(S), I = {
     type: o.Z.AVATAR_DECORATION,
     label: g,
     asset: n
@@ -39,27 +39,27 @@ let f = e => {
       ref: y,
       "aria-label": null != x ? x : "",
       onClick: () => {
-        null == t || null == m || f || m(t)
+        null == t || null == f || m || f(t)
       },
       className: l()(w ? h.shopCardDark : h.shopCard, {
-        [h.shopCardAnimation]: !f,
-        [w ? h.shopCardDarkHighlighted : h.shopCardHighlighted]: S,
+        [h.shopCardAnimation]: !m,
+        [w ? h.shopCardDarkHighlighted : h.shopCardHighlighted]: v,
         [h.shopCardSelected]: j === t
       }),
       children: [(0, r.jsx)("div", {
         className: l()(h.preview, {
           [h.previewTrick]: b === u.KN.Trick,
           [h.previewTreat]: b === u.KN.Treat,
-          [h.shopCardClaimed]: f
+          [h.shopCardClaimed]: m
         }),
         children: (0, r.jsx)(p.R, {
           item: I,
           user: a,
-          isHighlighted: S,
+          isHighlighted: v,
           avatarSize: d.EFr.SIZE_120,
-          isPurchased: f
+          isPurchased: m
         })
-      }), f && (0, r.jsx)(d.dz2, {
+      }), m && (0, r.jsx)(d.dz2, {
         size: "custom",
         width: 48,
         height: 48,
@@ -72,7 +72,7 @@ let f = e => {
           children: x
         }), (0, r.jsx)(d.Text, {
           variant: "text-md/normal",
-          children: f ? _.intl.string(_.t["6cfuDg"]) : _.intl.string(_.t.QQsaCQ)
+          children: m ? _.intl.string(_.t["6cfuDg"]) : _.intl.string(_.t.QQsaCQ)
         })]
       })]
     })

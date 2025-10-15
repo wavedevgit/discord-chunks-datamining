@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 262734, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => P
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -32,25 +32,25 @@ let N = {
   [Chunk918559.MI.RESIZABLE]: Chunk909357.resizable
 };
 
-function j(e) {
+function P(e) {
   let {
     frame: t
   } = e, n = (0, f.q)(t.applicationId), l = (0, d.Z)(), {
-    selectedChannelId: j,
-    selectedVoiceChannelId: P
+    selectedChannelId: P,
+    selectedVoiceChannelId: j
   } = (0, o.cj)([_.Z], () => ({
     selectedChannelId: _.Z.getChannelId(),
     selectedVoiceChannelId: _.Z.getVoiceChannelId()
-  })), x = (0, o.e7)([h.Z], () => null != P && j === P && h.Z.getChatOpen(P), [j, P]), A = (0, o.e7)([g.ZP], () => g.ZP.callChatSidebarWidth), Z = (0, u.dQu)(s.Z.modules.chat.RESIZE_HANDLE_WIDTH), w = i.useRef(null), L = i.useRef(null), [R, D] = i.useState({
+  })), A = (0, o.e7)([h.Z], () => null != j && P === j && h.Z.getChatOpen(j), [P, j]), x = (0, o.e7)([g.ZP], () => g.ZP.callChatSidebarWidth), Z = (0, u.dQu)(s.Z.modules.chat.RESIZE_HANDLE_WIDTH), w = i.useRef(null), L = i.useRef(null), [R, D] = i.useState({
     width: 0,
     height: 0
   }), k = i.useCallback(() => {
-    O.Z.updateFrameLayoutMode({
+    E.Z.updateFrameLayoutMode({
       applicationId: t.applicationId,
-      layoutMode: y.U.PIP
+      layoutMode: v.U.PIP
     })
   }, [t.applicationId]), M = i.useCallback(() => {
-    O.Z.stopFrame({
+    E.Z.stopFrame({
       applicationId: t.applicationId
     })
   }, [t.applicationId]);
@@ -66,9 +66,9 @@ function j(e) {
     return e.observe(L.current), () => e.disconnect()
   }, []), i.useEffect(() => {
     let e = e => {
-      null == w.current || w.current.contains(e.target) || l || O.Z.updateFrameLayoutMode({
+      null == w.current || w.current.contains(e.target) || l || E.Z.updateFrameLayoutMode({
         applicationId: t.applicationId,
-        layoutMode: y.U.PIP
+        layoutMode: v.U.PIP
       })
     };
     return document.addEventListener("mousedown", e), () => {
@@ -86,15 +86,15 @@ function j(e) {
   }
   let V = C.MI.NO_CHAT;
   if (null == n) return null;
-  let F = (null != A ? A : I.$Y6) + Z,
-    z = (0, v.ro)(t);
+  let F = (null != x ? x : I.$Y6) + Z,
+    z = (0, y.ro)(t);
   return (0, r.jsx)(u.f6W, {
     theme: I.BRd.DARK,
     children: e => (0, r.jsxs)("div", {
       className: a()(T.wrapper, N[V], e),
       ref: w,
       style: {
-        right: x && !Number.isNaN(F) ? F : 0
+        right: A && !Number.isNaN(F) ? F : 0
       },
       children: [(0, r.jsx)("div", {
         className: T.activityPanelContainer,
@@ -109,7 +109,7 @@ function j(e) {
             paddingBottom: B
           },
           ref: L,
-          children: (0, r.jsx)(E.Z, {
+          children: (0, r.jsx)(O.Z, {
             className: T.iframe,
             embedId: z
           })

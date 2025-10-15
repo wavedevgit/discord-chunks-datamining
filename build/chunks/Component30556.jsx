@@ -1,4 +1,4 @@
-/** Chunk was on 31553 **/
+/** Chunk was on 93979 **/
 /** chunk id: 30556, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   H: () => p,
@@ -36,13 +36,13 @@ function u(e, n) {
   var t, l, i = function(e, n) {
     if (null == e) return {};
     var t, l, i = {},
-      r = Object.keys(e);
-    for (l = 0; l < r.length; l++) t = r[l], n.indexOf(t) >= 0 || (i[t] = e[t]);
+      o = Object.keys(e);
+    for (l = 0; l < o.length; l++) t = o[l], n.indexOf(t) >= 0 || (i[t] = e[t]);
     return i
   }(e, n);
   if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    for (l = 0; l < r.length; l++) t = r[l], !(n.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (i[t] = e[t])
+    var o = Object.getOwnPropertySymbols(e);
+    for (l = 0; l < o.length; l++) t = o[l], !(n.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (i[t] = e[t])
   }
   return i
 }
@@ -52,13 +52,13 @@ function m(e) {
     userId: n,
     onClose: t
   } = e, l = i.useCallback(() => {
-    o.Z.openPrivateChannel({
+    r.Z.openPrivateChannel({
       recipientIds: n
-    }), null == t || t(), (0, r.pTH)()
+    }), null == t || t(), (0, o.pTH)()
   }, [n, t]);
   return {
     action: a.yM.SEND_MESSAGE,
-    icon: r.kBi,
+    icon: o.kBi,
     onClick: l,
     text: c.intl.string(c.t.zROXER)
   }
@@ -69,14 +69,14 @@ function p(e) {
     userId: n,
     onClose: t,
     variant: i = "primary"
-  } = e, r = u(e, ["userId", "onClose", "variant"]);
-  let o = m({
+  } = e, o = u(e, ["userId", "onClose", "variant"]);
+  let r = m({
     userId: n,
     onClose: t
   });
   return (0, l.jsx)(s.O1, d({
     variant: i
-  }, o, r))
+  }, r, o))
 }
 
 function f(e) {
@@ -84,18 +84,18 @@ function f(e) {
     userId: n,
     onClose: t,
     variant: i = "primary"
-  } = e, r = u(e, ["userId", "onClose", "variant"]);
-  let o = m({
+  } = e, o = u(e, ["userId", "onClose", "variant"]);
+  let r = m({
       userId: n,
       onClose: t
     }),
     {
       text: a
-    } = o,
-    c = u(o, ["text"]);
+    } = r,
+    c = u(r, ["text"]);
   return (0, l.jsx)(s.pt, d({
     tooltipText: a,
     "aria-label": a,
     variant: i
-  }, c, r))
+  }, c, o))
 }

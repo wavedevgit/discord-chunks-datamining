@@ -1,67 +1,67 @@
-/** Chunk was on 36073 **/
-/** chunk id: 30344, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 3091 **/
+/** chunk id: 30344, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => o
+  Z: () => l
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk890814 = require("./890814.jsx"),
   Chunk753436 = require("./753436.jsx");
 
-function o(e) {
+function l(e) {
   var {
     games: t,
-    widgetType: r
-  } = e, o = function(e, t) {
+    widgetType: n
+  } = e, l = function(e, t) {
     if (null == e) return {};
-    var r, n, i = function(e, t) {
+    var n, r, i = function(e, t) {
       if (null == e) return {};
-      var r, n, i = {},
+      var n, r, i = {},
         a = Object.keys(e);
-      for (n = 0; n < a.length; n++) r = a[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
+      for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
       return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
       var a = Object.getOwnPropertySymbols(e);
-      for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
+      for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
   }(e, ["games", "widgetType"]);
-  return (0, n.jsx)(i.Z, {
+  return (0, r.jsx)(i.Z, {
     games: t,
     renderGame: (e, t) => {
-      var i, l;
-      return (0, n.jsx)(a.S, (i = function(e) {
+      var i, o;
+      return (0, r.jsx)(a.S, (i = function(e) {
         for (var t = 1; t < arguments.length; t++) {
-          var r = null != arguments[t] ? arguments[t] : {},
-            n = Object.keys(r);
-          "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-            return Object.getOwnPropertyDescriptor(r, e).enumerable
-          }))), n.forEach(function(t) {
-            var n;
-            n = r[t], t in e ? Object.defineProperty(e, t, {
-              value: n,
+          var n = null != arguments[t] ? arguments[t] : {},
+            r = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(n, e).enumerable
+          }))), r.forEach(function(t) {
+            var r;
+            r = n[t], t in e ? Object.defineProperty(e, t, {
+              value: r,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = n
+            }) : e[t] = r
           })
         }
         return e
       }({
-        widgetType: r,
+        widgetType: n,
         game: e
-      }, o), l = l = {
+      }, l), o = o = {
         index: t
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
-        var r = Object.keys(e);
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
+        var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var n = Object.getOwnPropertySymbols(e);
-          r.push.apply(r, n)
+          var r = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, r)
         }
-        return r
-      })(Object(l)).forEach(function(e) {
-        Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
+        return n
+      })(Object(o)).forEach(function(e) {
+        Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(o, e))
       }), i), e.applicationId)
     }
   })

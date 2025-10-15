@@ -1,4 +1,4 @@
-/** Chunk was on 56848 **/
+/** Chunk was on 3091 **/
 /** chunk id: 408986, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -21,10 +21,10 @@ function g(e) {
     onClose: n
   } = e, {
     trackUserProfileAction: g
-  } = (0, s.KZ)(), {
+  } = (0, o.KZ)(), {
     mutualGuilds: p,
     isFetching: m
-  } = (0, o.Z)(t);
+  } = (0, c.Z)(t);
   return (0, r.jsx)(d.F, {
     className: f.scroller,
     fade: true,
@@ -32,28 +32,28 @@ function g(e) {
       length: 10
     }).map((e, t) => (0, r.jsxs)("div", {
       className: f.guildsLoadingItem,
-      children: [(0, r.jsx)(l.ZT, {
+      children: [(0, r.jsx)(a.ZT, {
         width: 40,
         opacity: .08
-      }), (0, r.jsx)(l.ZT, {
+      }), (0, r.jsx)(a.ZT, {
         width: 135,
         opacity: .08
       })]
     }, t)) : (null != p || m) && (null == p ? true : p.length) !== 0 ? null == p ? true : p.map(e => {
       let {
-        guild: l,
-        nick: s
+        guild: a,
+        nick: o
       } = e;
-      return (0, r.jsx)(c.Z, {
+      return (0, r.jsx)(s.Z, {
         user: t,
-        guild: l,
-        nick: s,
+        guild: a,
+        nick: o,
         onSelect: () => {
           g({
             action: "PRESS_MUTUAL_GUILD"
-          }), (0, a.X)(l.id), n(), (0, i.xf)()
+          }), (0, l.X)(a.id), n(), (0, i.xf)()
         }
-      }, l.id)
+      }, a.id)
     }) : (0, r.jsx)(u.b0, {})
   })
 }

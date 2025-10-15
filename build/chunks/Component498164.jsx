@@ -90,10 +90,10 @@ let M = {
       let {
         guildTemplate: i
       } = await _.Z.resolveGuildTemplate(t);
-      if (null == i) throw new A.Z({
+      if (null == i) throw new x.Z({
         errorCode: L.lTL.INVALID_GUILD_TEMPLATE
       }, "Invalid guild template id: ".concat(t));
-      return x.ZP.focus(), (0, a.ZDy)(async () => {
+      return A.ZP.focus(), (0, a.ZDy)(async () => {
         let {
           default: e
         } = await Promise.all([n.e("10778"), n.e("86015")]).then(n.bind(n, 766775));
@@ -132,7 +132,7 @@ let M = {
             let {
               giftCode: l
             } = i;
-            x.ZP.focus(), N.default.track(L.rMx.OPEN_MODAL, {
+            A.ZP.focus(), N.default.track(L.rMx.OPEN_MODAL, {
               type: "gift_accept",
               location: L.SaU
             }), (0, a.ZDy)(async () => {
@@ -145,7 +145,7 @@ let M = {
             }), e({
               giftCode: l
             })
-          }).catch(() => i(new A.Z({
+          }).catch(() => i(new x.Z({
             errorCode: L.lTL.INVALID_GIFT_CODE
           }, "Invalid gift code: ".concat(t))))
         })
@@ -163,7 +163,7 @@ let M = {
           params: n
         }
       } = e;
-      switch (x.ZP.focus(), t) {
+      switch (A.ZP.focus(), t) {
         case w.jE.USER_SETTINGS:
           null != n && ((0, C.dL)({
             pathname: L.Z5c.SETTINGS(n.section, n.subsection),
@@ -171,7 +171,7 @@ let M = {
           }), k(n.fingerprint, (0, w.O)(t)));
           break;
         case w.jE.CHANGELOG:
-          null != n && ((0, C.dL)(P.Z.formatPathWithQuery(L.Z5c.CHANGELOGS(n.date), n.query)), k(n.fingerprint, (0, w.O)(t)));
+          null != n && ((0, C.dL)(j.Z.formatPathWithQuery(L.Z5c.CHANGELOGS(n.date), n.query)), k(n.fingerprint, (0, w.O)(t)));
           break;
         case w.jE.LIBRARY:
           (0, C.dL)(L.Z5c.APPLICATION_LIBRARY), null != n && k(n.fingerprint, (0, w.O)(t));
@@ -197,7 +197,7 @@ let M = {
         case w.jE.QUEST_HOME: {
           let {
             enabled: e
-          } = y.m8.getConfig({
+          } = v.m8.getConfig({
             location: R.dr.QUEST_DEEP_LINK_UTIL
           });
           null != n ? ((0, C.dL)({
@@ -211,7 +211,7 @@ let M = {
               location: R.dr.QUEST_PREVIEW_TOOL_2
             }) && null != n) {
             let e = new URLSearchParams;
-            e.set(v.tR.TAB, v.e5.PREVIEW_TOOL), null != n.questId && e.set(v.tR.QUEST_ID, n.questId), (0, C.dL)({
+            e.set(y.tR.TAB, y.e5.PREVIEW_TOOL), null != n.questId && e.set(y.tR.QUEST_ID, n.questId), (0, C.dL)({
               pathname: L.Z5c.QUEST_HOME_V2,
               search: "?".concat(e.toString())
             }), k(n.fingerprint, (0, w.O)(t))
@@ -226,11 +226,11 @@ let M = {
         case w.jE.OAUTH2:
           let r = new URL(L.Z5c.OAUTH2_AUTHORIZE, window.location.origin);
           r.search = n.search;
-          let l = (0, O.getOAuth2AuthorizeProps)(r.toString());
-          if (null != l) return (0, O.openOAuth2ModalWithCreateGuildModal)(l), true;
+          let l = (0, E.getOAuth2AuthorizeProps)(r.toString());
+          if (null != l) return (0, E.openOAuth2ModalWithCreateGuildModal)(l), true;
           returnfalse;
         case w.jE.ONE_TIME_LOGIN:
-          if (null != n) return (0, E.Y)({
+          if (null != n) return (0, O.Y)({
             token: n.token
           }), k(n.fingerprint, (0, w.O)(t)), true;
           returnfalse;
@@ -309,7 +309,7 @@ let M = {
           fingerprint: n
         }
       } = e;
-      x.ZP.focus(null, true), (0, c.lx)(t, n)
+      A.ZP.focus(null, true), (0, c.lx)(t, n)
     }
   },
   [Chunk981631.Etm.CONNECTIONS_CALLBACK]: {
@@ -324,7 +324,7 @@ let M = {
           state: l
         }
       } = e;
-      if (!S.Z.hasPendingAuthorizedState(l)) throw new A.Z({
+      if (!S.Z.hasPendingAuthorizedState(l)) throw new x.Z({
         errorCode: L.lTL.INVALID_CONNECTION_CALLBACK_STATE
       }, "Provider authorization did not originate from this discord client");
       try {
@@ -335,10 +335,10 @@ let M = {
           state: l
         })
       } catch (e) {
-        if ((null == e ? true : e.status) === 400) throw new A.Z({
+        if ((null == e ? true : e.status) === 400) throw new x.Z({
           errorCode: L.lTL.BAD_REQUEST_FOR_PROVIDER
         }, "Bad request for provider");
-        throw j.S.dispatch(L.CkL.CONNECTIONS_CALLBACK_ERROR), e
+        throw P.S.dispatch(L.CkL.CONNECTIONS_CALLBACK_ERROR), e
       }
     }
   },

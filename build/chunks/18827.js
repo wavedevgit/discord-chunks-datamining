@@ -1,5 +1,5 @@
-/** Chunk was on 36073 **/
-/** chunk id: 18827, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 3091 **/
+/** chunk id: 18827, original params: e,t,n (module,exports,require) **/
 module.exports = {
   widgetContainer: "widgetContainer__0ea1a",
   header: "header__0ea1a",

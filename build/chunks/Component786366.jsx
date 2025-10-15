@@ -1,4 +1,4 @@
-/** Chunk was on 31553 **/
+/** Chunk was on 93979 **/
 /** chunk id: 786366, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -31,10 +31,10 @@ function u(e) {
       })
     }), (0, l.jsxs)("div", {
       className: d.rowText,
-      children: [(0, l.jsx)(o.Heading, {
+      children: [(0, l.jsx)(r.Heading, {
         variant: "text-xs/semibold",
         children: t
-      }), (0, l.jsx)(o.Text, {
+      }), (0, l.jsx)(r.Text, {
         variant: "text-sm/normal",
         children: i
       })]
@@ -45,7 +45,7 @@ function u(e) {
 function m(e) {
   let {
     user: n
-  } = e, t = (0, r.e7)([a.Z], () => {
+  } = e, t = (0, o.e7)([a.Z], () => {
     var e;
     return null == (e = a.Z.getUserProfile(n.id)) ? true : e.application
   }), {
@@ -59,18 +59,18 @@ function m(e) {
     fade: true,
     className: d.scroller,
     children: [m && (0, l.jsx)(u, {
-      icon: o.kBi,
+      icon: r.kBi,
       title: c.intl.string(c.t["7Tmhfn"]),
       description: c.intl.string(c.t["eu5x7+"])
     }), p && (0, l.jsx)(u, {
-      icon: o.iWm,
+      icon: r.iWm,
       title: c.intl.string(c.t.awYSsL),
       description: c.intl.string(c.t.TpsXoK)
     }), f && (0, l.jsx)(u, {
-      icon: o.BFJ,
+      icon: r.BFJ,
       title: c.intl.string(c.t.WuKeSE),
       description: c.intl.string(c.t.wOBmtb)
-    }), (0, l.jsx)(o.Text, {
+    }), (0, l.jsx)(r.Text, {
       variant: "text-xs/normal",
       children: c.intl.format(c.t.b6nqk5, {
         helpCenterUrl: "https://support.discord.com/hc/articles/7933951485975"

@@ -1,7 +1,7 @@
-/** Chunk was on 25244 **/
+/** Chunk was on 54844 **/
 /** chunk id: 680050, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => m
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -12,35 +12,35 @@ var Chunk951288 = require("./951288.js"),
   Chunk681678 = require("./681678.js"),
   Chunk138201 = require("./138201.jsx"),
   Chunk388032 = require("./388032.jsx");
-let _ = e => {
+let m = e => {
   var t, n;
   let {
-    parents: _
-  } = e, m = (0, s.PO)("share_with_parent_element"), [p, g] = i.useState(false), f = i.useCallback(() => {
-    (0, o.ty)().then(() => {
+    parents: m
+  } = e, p = (0, o.PO)("share_with_parent_element"), [g, _] = i.useState(false), h = i.useCallback(() => {
+    (0, s.ty)().then(() => {
       var e, t;
       (0, a.showToast)((0, l.Y)(u.intl.formatToPlainString(u.t.wr4IT0, {
-        count: _.length,
-        parent1: _[0].username,
-        parent2: null == (e = _[1]) ? true : e.username,
-        parent3: null == (t = _[2]) ? true : t.username
-      }), a.ToastType.SUCCESS)), g(true)
+        count: m.length,
+        parent1: m[0].username,
+        parent2: null == (e = m[1]) ? true : e.username,
+        parent3: null == (t = m[2]) ? true : t.username
+      }), a.ToastType.SUCCESS)), _(true)
     }).catch(() => {
       c.Z.showFailedToast()
     })
-  }, [_]);
-  if (0 === _.length || !m) return null;
-  let h = u.intl.formatToPlainString(u.t.HqyWeH, {
-    count: _.length,
-    parent1: _[0].username,
-    parent2: null == (t = _[1]) ? true : t.username,
-    parent3: null == (n = _[2]) ? true : n.username
+  }, [m]);
+  if (0 === m.length || !p) return null;
+  let b = u.intl.formatToPlainString(u.t.HqyWeH, {
+    count: m.length,
+    parent1: m[0].username,
+    parent2: null == (t = m[1]) ? true : t.username,
+    parent3: null == (n = m[2]) ? true : n.username
   });
   return (0, r.jsx)(d.JZ, {
-    title: h,
+    title: b,
     description: u.intl.string(u.t["5l/hlp"]),
-    buttonText: p ? u.intl.string(u.t.ntuuk5) : u.intl.string(u.t["sYdX/P"]),
-    buttonDisabled: p,
-    onButtonPress: f
+    buttonText: g ? u.intl.string(u.t.ntuuk5) : u.intl.string(u.t["sYdX/P"]),
+    buttonDisabled: g,
+    onButtonPress: h
   })
 }

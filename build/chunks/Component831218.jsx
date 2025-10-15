@@ -372,9 +372,10 @@ class V extends(r = Chunk647438.Component) {
         section: t,
         row: n
       } = e, {
-        privateChannelIds: r
+        privateChannelIds: r,
+        hideAllDMs: l
       } = this.props;
-      return 0 === t ? this.renderChild(n) : 0 === n && 0 === r.length ? (0, i.jsx)(B, {}, "no-private-channels") : this.renderDM(t, n)
+      return 0 === t ? this.renderChild(n) : 0 !== n || 0 !== r.length || l ? this.renderDM(t, n) : (0, i.jsx)(B, {}, "no-private-channels")
     }), k(this, "renderSection", e => {
       let {
         section: t
@@ -436,22 +437,24 @@ let F = e => {
     children: o,
     showDMHeader: a,
     listScrollerRef: s,
-    createDMCTAButtonVariant: c
-  } = e, h = l.Children.count(o), g = w.Z.getMutablePrivateChannels(), _ = (0, P.k1)(g), y = (0, p.Wu)([A.Z, I.Z, N.Z], () => {
-    let e = A.Z.getPrivateChannelIds();
-    return (0, P.tU)(e, [I.Z, N.Z])
-  }, []);
+    createDMCTAButtonVariant: c,
+    hideAllDMs: h
+  } = e, g = l.Children.count(o), _ = w.Z.getMutablePrivateChannels(), y = h ? {} : (0, P.k1)(_), v = (0, p.Wu)([A.Z, I.Z, N.Z], () => {
+    let e = A.Z.getPrivateChannelIds(),
+      t = (0, P.tU)(e, [I.Z, N.Z]);
+    return h ? [] : t
+  }, [h]);
   (0, E.z)(C.R);
   let {
-    analyticsLocations: v
-  } = (0, O.ZP)(b.Z.CONTACTS_LIST), j = (0, Z.Ll)(), {
-    keyboardModeEnabled: S,
-    version: T
+    analyticsLocations: j
+  } = (0, O.ZP)(b.Z.CONTACTS_LIST), S = (0, Z.Ll)(), {
+    keyboardModeEnabled: T,
+    version: R
   } = (0, p.cj)([m.Z, w.Z], () => ({
     keyboardModeEnabled: m.Z.keyboardModeEnabled,
     version: null != n ? "".concat(n, ":").concat(w.Z.getPrivateChannelsVersion()) : w.Z.getPrivateChannelsVersion()
-  })), R = l.useRef(null), D = null != s ? s : R, L = l.useCallback(e => {
-    let t = D.current,
+  })), D = l.useRef(null), L = null != s ? s : D, M = l.useCallback(e => {
+    let t = L.current,
       n = document.querySelector(e);
     null != t && null != n && t.scrollIntoViewNode({
       node: n,
@@ -464,39 +467,39 @@ let F = e => {
         })
       }
     })
-  }, [D]), M = l.useCallback(() => new Promise(e => {
-    let t = D.current;
+  }, [L]), k = l.useCallback(() => new Promise(e => {
+    let t = L.current;
     if (null == t) return e();
     t.scrollToTop({
       callback: () => requestAnimationFrame(() => e())
     })
-  }), [D]), k = l.useCallback(() => new Promise(e => {
-    let t = D.current;
+  }), [L]), B = l.useCallback(() => new Promise(e => {
+    let t = L.current;
     if (null == t) return e();
     t.scrollToBottom({
       callback() {
         requestAnimationFrame(() => setTimeout(e, 100))
       }
     })
-  }), [D]), B = (0, x.Dt)(), F = (0, d.ZP)({
-    id: "private-channels-".concat(B),
-    isEnabled: S,
-    scrollToStart: M,
-    scrollToEnd: k,
-    defaultFocused: (h + +!!a).toString(),
-    setFocus: L
+  }), [L]), F = (0, x.Dt)(), H = (0, d.ZP)({
+    id: "private-channels-".concat(F),
+    isEnabled: T,
+    scrollToStart: k,
+    scrollToEnd: B,
+    defaultFocused: (g + +!!a).toString(),
+    setFocus: M
   });
   return (0, i.jsx)(O.Gt, {
-    value: v,
+    value: j,
     children: (0, i.jsx)(u.bG, {
-      navigator: F,
+      navigator: H,
       children: (0, i.jsx)(V, U(G({}, e), {
         density: t,
-        channels: _,
-        privateChannelIds: y,
-        listRef: D,
-        theme: null != j ? j : r,
-        version: T,
+        channels: y,
+        privateChannelIds: v,
+        listRef: L,
+        theme: null != S ? S : r,
+        version: R,
         createDMCTAButtonVariant: c
       }))
     })

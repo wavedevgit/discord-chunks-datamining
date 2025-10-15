@@ -1,4 +1,4 @@
-/** Chunk was on 56848 **/
+/** Chunk was on 3091 **/
 /** chunk id: 683881, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -24,18 +24,18 @@ function d(e) {
     isDragging: e.isDragging(),
     item: e.getItem(),
     sourceClientOffset: e.getSourceClientOffset()
-  })), p = (0, l.e7)([s.default], () => s.default.getCurrentUser()), m = (0, a.zPA)();
+  })), p = (0, a.e7)([o.default], () => o.default.getCurrentUser()), m = (0, l.zPA)();
   if (true !== d || null == g || null == f) return null;
-  let h = null == n || null == (t = n.current) ? true : t.getBoundingClientRect();
-  if (null == h || null == p) return null;
-  let v = (null == f ? true : f.type) === "WIDGET" && null != f.widget ? (0, r.jsx)("div", {
+  let b = null == n || null == (t = n.current) ? true : t.getBoundingClientRect();
+  if (null == b || null == p) return null;
+  let h = (null == f ? true : f.type) === "WIDGET" && null != f.widget ? (0, r.jsx)("div", {
     className: u.widgetPreview,
-    children: (0, r.jsx)(c.Z, {
+    children: (0, r.jsx)(s.Z, {
       widget: f.widget,
       user: p,
       disableInteraction: true
     })
-  }) : (null == f ? true : f.itemType) === "GAME_COVER" && null != f.id ? (0, r.jsx)(o.Z, {
+  }) : (null == f ? true : f.itemType) === "GAME_COVER" && null != f.id ? (0, r.jsx)(c.Z, {
     className: u.gamePreview,
     imageSrc: f.imageSrc,
     gameName: f.gameName,
@@ -43,14 +43,14 @@ function d(e) {
     userId: null == p ? true : p.id,
     disableInteraction: true
   }) : null;
-  if (null == v) return null;
-  let y = g.x - h.left - 60 * !!m,
-    j = g.y - h.top;
+  if (null == h) return null;
+  let y = g.x - b.left - 60 * !!m,
+    v = g.y - b.top;
   return (0, r.jsx)("div", {
     className: u.container,
     style: {
-      transform: "translate(".concat(y, "px, ").concat(j, "px)")
+      transform: "translate(".concat(y, "px, ").concat(v, "px)")
     },
-    children: v
+    children: h
   })
 }

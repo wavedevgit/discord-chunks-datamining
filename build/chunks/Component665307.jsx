@@ -83,8 +83,8 @@ let R = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
     return (0, i.jsxs)(d.u, {
       text: l,
       children: ["(", (0, i.jsx)(n, {
-        className: o()(A.settingIcon, {
-          [A.hidden]: !a
+        className: o()(x.settingIcon, {
+          [x.hidden]: !a
         })
       }), ")"]
     })
@@ -95,23 +95,23 @@ let R = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
     sort: true,
     cellClassName: Chunk117554.nameCell,
     bodyCellClassName: Chunk117554.nameBodyCell,
-    render: e => (0, i.jsxs)(O.Z, {
-      align: O.Z.Align.CENTER,
-      children: [(0, i.jsx)(v.Z, {
+    render: e => (0, i.jsxs)(E.Z, {
+      align: E.Z.Align.CENTER,
+      children: [(0, i.jsx)(y.Z, {
         game: e.application,
-        size: v.A.SMALL,
-        className: A.gameIcon
+        size: y.A.SMALL,
+        className: x.gameIcon
       }), (0, i.jsxs)("div", {
-        className: A.nameCellInfo,
+        className: x.nameCellInfo,
         children: [(0, i.jsx)("div", {
-          className: A.nameCellText,
+          className: x.nameCellText,
           children: e.libraryApplication.getBranchedName(e.application)
-        }), e.libraryApplication.hasFlag(P.eHb.PREMIUM) ? (0, i.jsxs)(d.u, {
-          text: x.intl.string(x.t.tG2SzM),
+        }), e.libraryApplication.hasFlag(j.eHb.PREMIUM) ? (0, i.jsxs)(d.u, {
+          text: A.intl.string(A.t.tG2SzM),
           children: ["(", (0, i.jsx)(h.SrA, {
             size: "md",
             color: "currentColor",
-            className: A.nitroIcon
+            className: x.nitroIcon
           }), ")"]
         }) : null]
       })]
@@ -124,9 +124,9 @@ let R = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
     bodyCellClassName: Chunk117554.textCell,
     render(e) {
       let t = e.libraryApplication.getDistributor();
-      return (0, i.jsx)(O.Z, {
-        align: O.Z.Align.CENTER,
-        children: null != t ? P.EOG[t] : x.intl.string(x.t["F+l3Ji"])
+      return (0, i.jsx)(E.Z, {
+        align: E.Z.Align.CENTER,
+        children: null != t ? j.EOG[t] : A.intl.string(A.t["F+l3Ji"])
       })
     }
   }, {
@@ -137,13 +137,13 @@ let R = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
     bodyCellClassName: Chunk117554.textCell,
     render(e) {
       let t;
-      return t = e.isRunning ? x.intl.string(x.t.Md326u) : e.isNew ? x.intl.string(x.t["+F0Tho"]) : 0 !== e.lastPlayed ? (0, i.jsx)(y.ZP, {
+      return t = e.isRunning ? A.intl.string(A.t.Md326u) : e.isNew ? A.intl.string(A.t["+F0Tho"]) : 0 !== e.lastPlayed ? (0, i.jsx)(v.ZP, {
         end: e.lastPlayed,
-        location: y.ZP.Locations.GAME_LIBRARY_LAST_PLAYED
-      }) : x.intl.string(x.t.EoWLrq), (0, i.jsx)(O.Z, {
-        align: O.Z.Align.CENTER,
+        location: v.ZP.Locations.GAME_LIBRARY_LAST_PLAYED
+      }) : A.intl.string(A.t.EoWLrq), (0, i.jsx)(E.Z, {
+        align: E.Z.Align.CENTER,
         className: o()({
-          [A.lastPlayedCellNew]: e.isNew
+          [x.lastPlayedCellNew]: e.isNew
         }),
         children: t
       })
@@ -158,31 +158,31 @@ let R = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
       let s = e.key === t.activeRowKey;
       return (0, i.jsxs)(l.Fragment, {
         children: [(0, i.jsxs)("div", {
-          className: A.settingIcons,
+          className: x.settingIcons,
           children: [(0, i.jsx)(M, {
-            flag: P.eHb.PRIVATE,
+            flag: j.eHb.PRIVATE,
             item: e,
             icon: h.kZF,
-            tooltip: x.intl.string(x.t.NozAoq)
+            tooltip: A.intl.string(A.t.NozAoq)
           }), (0, i.jsx)(M, {
-            flag: P.eHb.OVERLAY_DISABLED,
+            flag: j.eHb.OVERLAY_DISABLED,
             item: e,
             icon: h.o8v,
-            tooltip: x.intl.string(x.t.Az9eqq)
-          }), (0, i.jsx)(j.Z, {
-            className: o()(A.settingIcon, {
-              [A.hidden]: !e.supportsCloudSync
+            tooltip: A.intl.string(A.t.Az9eqq)
+          }), (0, i.jsx)(P.Z, {
+            className: o()(x.settingIcon, {
+              [x.hidden]: !e.supportsCloudSync
             }),
             libraryApplication: e.libraryApplication
           })]
         }), (0, T.Je)(e.libraryApplication) ? (0, i.jsx)(_.Z, {
-          analyticsListSort: (r = t.sortKey, a = t.sortDirection, "".concat(k[r], " ").concat(a === P.sHY.ASCENDING ? "ASC" : "DESC")),
+          analyticsListSort: (r = t.sortKey, a = t.sortDirection, "".concat(k[r], " ").concat(a === j.sHY.ASCENDING ? "ASC" : "DESC")),
           analyticsListIndex: n,
-          source: P.Sbl.APPLICATION_LIBRARY,
+          source: j.Sbl.APPLICATION_LIBRARY,
           libraryApplication: e.libraryApplication,
           color: s ? f.zx.Colors.GREEN : f.zx.Colors.PRIMARY,
-          isPlayShiny: s && e.defaultAction === P.apO.PLAY,
-          size: A.actionButtonSize,
+          isPlayShiny: s && e.defaultAction === j.apO.PLAY,
+          size: x.actionButtonSize,
           hideProgress: null != e.defaultAction,
           onDropdownOpen: () => null != t && t.setActiveRowKey(e),
           onDropdownClose: () => null != t && t.clearActiveRowKey()
@@ -220,10 +220,10 @@ let R = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
       p = t.key === r;
     return (0, i.jsx)("div", {
       className: o()({
-        [A.rowWrapperActive]: d && !p,
-        [A.rowWrapperGlow]: p,
-        [A.rowWrapper]: !d && !p,
-        [A.rowWrapperDim]: !d && !t.isLaunchable
+        [x.rowWrapperActive]: d && !p,
+        [x.rowWrapperGlow]: p,
+        [x.rowWrapper]: !d && !p,
+        [x.rowWrapperDim]: !d && !t.isLaunchable
       }),
       ref: e => {
         c(e, t.key)

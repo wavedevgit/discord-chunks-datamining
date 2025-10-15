@@ -27,7 +27,7 @@ function _(e) {
   m[e] = Date.now()
 }
 
-function O(e, t, n, r) {
+function E(e, t, n, r) {
   h[e].add(t);
   let i = m[t];
   (null == i || i + 3e5 > Date.now()) && _(t), null == g[t] && (g[t] = []), g[t].push({
@@ -36,13 +36,13 @@ function O(e, t, n, r) {
   })
 }
 
-function E(e) {
+function O(e) {
   let {
     channel: t
   } = e;
   delete g[t.id], delete m[t.id]
 }
-class v extends(a = Chunk442837.ZP.Store) {
+class y extends(a = Chunk442837.ZP.Store) {
   getActiveChannelsFetchStatus(e) {
     return b[e]
   }
@@ -57,12 +57,12 @@ class v extends(a = Chunk442837.ZP.Store) {
     return null == h[e] && !(null == (t = b[e]) ? true : t.loading)
   }
 }
-l = "ActiveChannelsStore", (i = "displayName") in(r = v) ? Object.defineProperty(r, i, {
+l = "ActiveChannelsStore", (i = "displayName") in(r = y) ? Object.defineProperty(r, i, {
   value: l,
   enumerable: true,
   configurable: true,
   writable: true
-}) : r[i] = l, new v(Chunk570140.Z, {
+}) : r[i] = l, new y(Chunk570140.Z, {
   CHANNEL_SELECT: function(e) {
     let {
       channelId: t,
@@ -94,7 +94,7 @@ l = "ActiveChannelsStore", (i = "displayName") in(r = v) ? Object.defineProperty
     if (null == a) returnfalse;
     let o = a.guild_id;
     if (null == o || null == h[o]) returnfalse;
-    O(o, n, r.id, null == (t = r.author) ? true : t.id)
+    E(o, n, r.id, null == (t = r.author) ? true : t.id)
   },
   GUILD_DELETE: function(e) {
     let {
@@ -102,8 +102,8 @@ l = "ActiveChannelsStore", (i = "displayName") in(r = v) ? Object.defineProperty
     } = e;
     delete h[t.id]
   },
-  CHANNEL_DELETE: E,
-  THREAD_DELETE: E,
+  CHANNEL_DELETE: O,
+  THREAD_DELETE: O,
   ACTIVE_CHANNELS_FETCH_START: function(e) {
     let {
       guildId: t
@@ -129,7 +129,7 @@ l = "ActiveChannelsStore", (i = "displayName") in(r = v) ? Object.defineProperty
         messages: r
       } = e;
       r.forEach(e => {
-        O(t, n, e.message_id, e.user_id)
+        E(t, n, e.message_id, e.user_id)
       })
     })
   },

@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 122611, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => j
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -32,7 +32,7 @@ function N(e) {
   e.stopPropagation()
 }
 
-function j(e) {
+function P(e) {
   var t;
   let {
     guild: n
@@ -61,7 +61,7 @@ function j(e) {
               markAsDismissed: l
             });
           case a.z.CHANNEL_NOTICE_INVITE:
-            return (0, r.jsx)(E.Z, {
+            return (0, r.jsx)(O.Z, {
               guild: n,
               markAsDismissed: l
             });
@@ -71,7 +71,7 @@ function j(e) {
               markAsDismissed: l
             });
           case a.z.CHANNEL_NOTICE_QUICKSWITCHER:
-            return (0, r.jsx)(y.Z, {
+            return (0, r.jsx)(v.Z, {
               guild: n,
               markAsDismissed: l
             });
@@ -96,7 +96,7 @@ function j(e) {
     }
   })
 }
-let P = e => {
+let j = e => {
   let {
     guild: t
   } = e;
@@ -106,7 +106,7 @@ let P = e => {
         guild: t
       });
     case I.R.MAX_MEMBER_COUNT:
-      return (0, r.jsx)(v.Z, {
+      return (0, r.jsx)(y.Z, {
         guild: t
       });
     case I.R.GUILD_LIVE_CHANNEL:
@@ -114,7 +114,7 @@ let P = e => {
         guild: t
       });
     case I.R.GUILD_MFA_WARNING:
-      return (0, r.jsx)(O.Z, {
+      return (0, r.jsx)(E.Z, {
         guild: t
       });
     case I.R.COMMANDS_MIGRATION:
@@ -130,7 +130,7 @@ let P = e => {
         guild: t
       })
   }
-  return _.s.isDisallowPopupsSet() ? null : (0, r.jsx)(j, {
+  return _.s.isDisallowPopupsSet() ? null : (0, r.jsx)(P, {
     guild: e.guild
   })
 }

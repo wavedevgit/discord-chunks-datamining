@@ -30,29 +30,29 @@ let b = e => {
     relevantSubscriptionListingIds: null == _ ? true : _.subscription_listings_ids
   });
   let {
-    activeSubscription: O
-  } = (0, o.Z)(null == _ ? true : _.id), E = (0, l.YB)(b.id), v = null == E ? true : E.description, {
-    editStateIds: y
+    activeSubscription: E
+  } = (0, o.Z)(null == _ ? true : _.id), O = (0, l.YB)(b.id), y = null == O ? true : O.description, {
+    editStateIds: v
   } = a.B7(null != (t = null == _ ? true : _.id) ? t : null, b.id);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(f.Z, {
       title: g.intl.format(g.t["rm+ojI"], {
         serverName: b.name
       }),
-      description: null != v ? v : null,
-      coverImageAsset: null != (n = null == E ? true : E.cover_image_asset) ? n : null,
+      description: null != y ? y : null,
+      coverImageAsset: null != (n = null == O ? true : O.cover_image_asset) ? n : null,
       guild: b,
       children: [null != _ ? (0, r.jsx)(c.Z, {
         className: m.pendingPlanChangeNotice,
         groupListingId: _.id,
-        subscription: O
+        subscription: E
       }) : null, (0, r.jsx)(u.Z, {
-        subscription: O
+        subscription: E
       })]
     }), (0, r.jsx)(i.y5t, {
       children: (0, r.jsx)(d.Z, {
         guildId: b.id,
-        children: y.map(e => {
+        children: v.map(e => {
           var t;
           return (0, r.jsx)(p.Z, {
             guildId: b.id,

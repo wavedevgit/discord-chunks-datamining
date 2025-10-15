@@ -1,4 +1,4 @@
-/** Chunk was on 25244 **/
+/** Chunk was on 54844 **/
 /** chunk id: 273389, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -15,39 +15,39 @@ let c = e => {
       submitting: c,
       disableNext: d,
       onClick: u,
-      canNavigateBack: _,
-      onBackClicked: m,
-      isModeratorReport: p
+      canNavigateBack: m,
+      onBackClicked: p,
+      isModeratorReport: g
     } = e,
-    g = i.useRef(null),
-    f = null != n && "cancel" !== n.type,
-    h = _ && (null == n ? true : n.type) !== "done",
-    b = f || h;
+    _ = i.useRef(null),
+    h = null != n && "cancel" !== n.type,
+    b = m && (null == n ? true : n.type) !== "done",
+    x = h || b;
   if (i.useEffect(() => {
       if ((null == n ? true : n.type) === "submit" || (null == n ? true : n.type) === "done") {
         var e;
-        null == (e = g.current) || e.focus()
+        null == (e = _.current) || e.focus()
       }
-    }, [null == n ? true : n.type]), !b) return null;
-  let x = o.intl.string(o.t.i4jeWV);
-  return (null == n ? true : n.type) === "submit" ? (t = "critical-primary", x = p ? o.intl.string(s.default.ZUyreX) : o.intl.string(o.t["G+vU8/"])) : (null == n ? true : n.type) === "next" ? x = o.intl.string(o.t.PDTjLC) : (null == n ? true : n.type) === "cancel" && (x = o.intl.string(o.t["ETE/oK"]), t = "secondary"), (0, r.jsx)(l.mzw, {
+    }, [null == n ? true : n.type]), !x) return null;
+  let f = s.intl.string(s.t.i4jeWV);
+  return (null == n ? true : n.type) === "submit" ? (t = "critical-primary", f = g ? s.intl.string(o.default.ZUyreX) : s.intl.string(s.t["G+vU8/"])) : (null == n ? true : n.type) === "next" ? f = s.intl.string(s.t.PDTjLC) : (null == n ? true : n.type) === "cancel" && (f = s.intl.string(s.t["ETE/oK"]), t = "secondary"), (0, r.jsx)(l.mzw, {
     "data-migration-pending": true,
     direction: a.Z.Direction.HORIZONTAL,
     children: (0, r.jsxs)(l.ButtonGroup, {
-      fullWidth: h && f,
-      children: [h && (0, r.jsx)(l.Button, {
-        onClick: m,
+      fullWidth: b && h,
+      children: [b && (0, r.jsx)(l.Button, {
+        onClick: p,
         variant: "secondary",
         disabled: c,
-        text: o.intl.string(o.t["13/7kZ"])
-      }), f && (0, r.jsx)(l.Button, {
+        text: s.intl.string(s.t["13/7kZ"])
+      }), h && (0, r.jsx)(l.Button, {
         onClick: () => {
           null != n && u(n)
         },
         variant: t,
         disabled: c || d,
-        buttonRef: g,
-        text: x
+        buttonRef: _,
+        text: f
       })]
     })
   })

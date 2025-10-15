@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 606081, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => O
 }), require("./49124.js"), require("./415506.js");
 var r, i, l, a, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js");
@@ -71,7 +71,7 @@ function _(e) {
   return d("QuantitativeValue", e)
 }
 _.UnitCodes = b;
-class O extends(r = Chunk647438.Component) {
+class E extends(r = Chunk647438.Component) {
   render() {
     let {
       debug: e,
@@ -85,19 +85,19 @@ class O extends(r = Chunk647438.Component) {
     })
   }
 }
-c(O, "Thing", p), c(O, "Brand", p), c(O, "Person", function(e) {
+c(E, "Thing", p), c(E, "Brand", p), c(E, "Person", function(e) {
   return d("Person", e)
-}), c(O, "Organization", function(e) {
+}), c(E, "Organization", function(e) {
   return d("Organization", e)
-}), c(O, "ItemPage", function(e) {
+}), c(E, "ItemPage", function(e) {
   return d("ItemPage", e)
-}), c(O, "Product", f), c(O, "Offer", m), c(O, "Rating", function(e) {
+}), c(E, "Product", f), c(E, "Offer", m), c(E, "Rating", function(e) {
   return d("Rating", e)
-}), c(O, "AggregateRating", function(e) {
+}), c(E, "AggregateRating", function(e) {
   return d("AggregateRating", e)
-}), c(O, "AggregateOffer", function(e) {
+}), c(E, "AggregateOffer", function(e) {
   return d("AggregateOffer", e)
-}), c(O, "QuantitativeValue", _), c(O, "UnitPriceSpecification", function(e) {
+}), c(E, "QuantitativeValue", _), c(E, "UnitPriceSpecification", function(e) {
   return d("UnitPriceSpecification", e)
 });
-let E = O
+let O = E

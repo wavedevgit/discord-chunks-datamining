@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 606271, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => P
 }), require("./388685.js");
 var Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -36,7 +36,7 @@ function N(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class j {
+class P {
   loadServer() {
     for (let e of (Chunk358085.isPlatformEmbedded && this.registerTransportsForEmbeddedPlatform(), this.transports)) this.rpcServer.registerTransport(module);
     for (let [e, t] of Object.entries(this.rpcCommandHandlers)) this.rpcServer.setCommandHandler(module, exports);
@@ -92,7 +92,7 @@ class j {
         channel_id: n
       }, {
         channel_id: n,
-        message: (0, E.Xb)(r)
+        message: (0, O.Xb)(r)
       }, i)
     }), N(this, "handleSpeaking", e => {
       if (0 === this.rpcServer.subscriptions.length) return;
@@ -131,8 +131,8 @@ class j {
       } = e;
       0 !== this.rpcServer.subscriptions.length && this.rpcServer.dispatchToSubscriptions(I.zMe.NOTIFICATION_CREATE, {}, {
         channel_id: t,
-        message: (0, E.Xb)(n),
-        icon_url: null != r ? (0, E.RE)(r) : null,
+        message: (0, O.Xb)(n),
+        icon_url: null != r ? (0, O.RE)(r) : null,
         title: i,
         body: l
       })
@@ -191,7 +191,7 @@ class j {
       })
     }), N(this, "handleEmbeddedActivityUpdate", () => {
       if (0 === this.rpcServer.subscriptions.length) return;
-      let e = (0, v.dO)();
+      let e = (0, y.dO)();
       this.rpcServer.dispatchToSubscriptions(I.zMe.ACTIVITY_INSTANCE_PARTICIPANTS_UPDATE, {}, e)
     }), N(this, "handleActivityMessage", e => {
       var t;
@@ -215,7 +215,7 @@ class j {
       switch (l.type) {
         case I.mFx.JOIN:
           this.rpcServer.dispatchToSubscriptions(I.zMe.ACTIVITY_INVITE, e => e.socket.application.id === c, {
-            user: (0, y.Z)(a),
+            user: (0, v.Z)(a),
             activity: s,
             type: l.type,
             channel_id: n,
@@ -224,7 +224,7 @@ class j {
           break;
         case I.mFx.JOIN_REQUEST:
           this.rpcServer.dispatchToSubscriptions(I.zMe.ACTIVITY_JOIN_REQUEST, e => e.socket.application.id === c, {
-            user: (0, y.Z)(a),
+            user: (0, v.Z)(a),
             activity: s,
             type: l.type,
             channel_id: n,
@@ -273,8 +273,8 @@ class j {
       if (0 === this.rpcServer.subscriptions.length) return;
       let r = g.default.getUser(t);
       if (null == r) return;
-      let i = (0, E._J)(n, r);
-      this.rpcServer.dispatchToSubscriptions(I.zMe.RELATIONSHIP_UPDATE, {}, e => (0, E.kb)(i, e.socket.application.id))
+      let i = (0, O._J)(n, r);
+      this.rpcServer.dispatchToSubscriptions(I.zMe.RELATIONSHIP_UPDATE, {}, e => (0, O.kb)(i, e.socket.application.id))
     }), N(this, "handleRelationshipUpdate", e => {
       let {
         relationship: {
@@ -285,8 +285,8 @@ class j {
       if (0 === this.rpcServer.subscriptions.length) return;
       let r = g.default.getUser(t);
       if (null == r) return;
-      let i = (0, E._J)(n, r);
-      this.rpcServer.dispatchToSubscriptions(I.zMe.RELATIONSHIP_UPDATE, {}, e => (0, E.kb)(i, e.socket.application.id))
+      let i = (0, O._J)(n, r);
+      this.rpcServer.dispatchToSubscriptions(I.zMe.RELATIONSHIP_UPDATE, {}, e => (0, O.kb)(i, e.socket.application.id))
     }), N(this, "handleRelationshipRemove", e => {
       let {
         relationship: {
@@ -296,8 +296,8 @@ class j {
       if (0 === this.rpcServer.subscriptions.length) return;
       let n = g.default.getUser(t);
       if (null == n) return;
-      let r = (0, E._J)(I.OGo.NONE, n);
-      this.rpcServer.dispatchToSubscriptions(I.zMe.RELATIONSHIP_UPDATE, {}, e => (0, E.kb)(r, e.socket.application.id))
+      let r = (0, O._J)(I.OGo.NONE, n);
+      this.rpcServer.dispatchToSubscriptions(I.zMe.RELATIONSHIP_UPDATE, {}, e => (0, O.kb)(r, e.socket.application.id))
     }), N(this, "handlePresenceUpdates", e => {
       let {
         updates: t
@@ -313,8 +313,8 @@ class j {
           if (t === I.OGo.NONE) continue;
           let n = g.default.getUser(e);
           if (null == n) continue;
-          let r = (0, E._J)(t, n);
-          this.rpcServer.dispatchToSubscriptions(I.zMe.RELATIONSHIP_UPDATE, {}, e => (0, E.kb)(r, e.socket.application.id))
+          let r = (0, O._J)(t, n);
+          this.rpcServer.dispatchToSubscriptions(I.zMe.RELATIONSHIP_UPDATE, {}, e => (0, O.kb)(r, e.socket.application.id))
         }
     }), N(this, "handlePresencesReplace", () => {
       if (0 !== this.rpcServer.subscriptions.length)
@@ -322,8 +322,8 @@ class j {
           if (t === I.OGo.NONE) continue;
           let n = g.default.getUser(e);
           if (null == n) continue;
-          let r = (0, E._J)(t, n);
-          this.rpcServer.dispatchToSubscriptions(I.zMe.RELATIONSHIP_UPDATE, {}, e => (0, E.kb)(r, e.socket.application.id))
+          let r = (0, O._J)(t, n);
+          this.rpcServer.dispatchToSubscriptions(I.zMe.RELATIONSHIP_UPDATE, {}, e => (0, O.kb)(r, e.socket.application.id))
         }
     }), N(this, "handleUserUpdate", e => {
       let {
@@ -336,8 +336,8 @@ class j {
       if (n === I.OGo.NONE) return;
       let r = g.default.getUser(t);
       if (null == r) return;
-      let i = (0, E._J)(n, r);
-      this.rpcServer.dispatchToSubscriptions(I.zMe.RELATIONSHIP_UPDATE, {}, e => (0, E.kb)(i, e.socket.application.id))
+      let i = (0, O._J)(n, r);
+      this.rpcServer.dispatchToSubscriptions(I.zMe.RELATIONSHIP_UPDATE, {}, e => (0, O.kb)(i, e.socket.application.id))
     }), N(this, "handleEntitlementCreate", e => {
       let {
         entitlement: t

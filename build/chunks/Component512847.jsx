@@ -31,20 +31,20 @@ var Chunk951288 = require("./951288.js"),
   Chunk823379 = require("./823379.js"),
   Chunk981631 = require("./981631.js");
 
-function x(e, t, n, r) {
+function A(e, t, n, r) {
   i.useEffect(() => {
     let i = t(),
       l = new a.Fh(e, () => {
         let e = t(),
           l = n(i, e);
-        null == l || y.Z.isSoundDisabled(l) || (0, f.GN)(l, null != r ? r : .4), i = e
+        null == l || v.Z.isSoundDisabled(l) || (0, f.GN)(l, null != r ? r : .4), i = e
       });
     return l.attach("useSound"), () => l.detach()
   })
 }
 
-function A() {
-  return x([Chunk131951.Z, Chunk944486.Z], () => ({
+function x() {
+  return A([Chunk131951.Z, Chunk944486.Z], () => ({
     inVoiceChannel: null != Chunk944486.Z.getVoiceChannelId(),
     selfMute: Chunk131951.Z.isSelfMute(),
     selfDeaf: Chunk131951.Z.isSelfDeaf(),
@@ -59,12 +59,12 @@ function A() {
       shouldSkipMuteUnmuteSound: a
     } = t;
     if (e.selfDeaf !== i) return i ? "deafen" : "undeafen";
-    if (l && (n || e.audioPermissionReady) && e.selfMute !== r) return a ? void v.Z.notifyMuteUnmuteSoundWasSkipped() : r ? "mute" : "unmute"
+    if (l && (n || e.audioPermissionReady) && e.selfMute !== r) return a ? void y.Z.notifyMuteUnmuteSoundWasSkipped() : r ? "mute" : "unmute"
   }), null
 }
 
 function Z() {
-  return x([Chunk131951.Z, Chunk944486.Z], () => ({
+  return A([Chunk131951.Z, Chunk944486.Z], () => ({
     videoEnabled: Chunk131951.Z.isVideoEnabled(),
     inVoiceChannel: null != Chunk944486.Z.getVoiceChannelId()
   }), (e, t) => {
@@ -82,7 +82,7 @@ function Z() {
 }
 
 function w() {
-  return x([Chunk592125.Z, Chunk19780.Z, Chunk944486.Z, Chunk258609.default], () => {
+  return A([Chunk592125.Z, Chunk19780.Z, Chunk944486.Z, Chunk258609.default], () => {
     let e = Chunk592125.Z.getChannel(Chunk944486.Z.getVoiceChannelId()),
       t = null == module ? true : module.type,
       n = null == module ? true : module.getGuildId(),
@@ -116,16 +116,16 @@ function w() {
 }
 
 function L() {
-  return x([Chunk606304.Z], () => Chunk606304.Z.isCurrentUserSpeaking(), (e, t) => {
+  return A([Chunk606304.Z], () => Chunk606304.Z.isCurrentUserSpeaking(), (e, t) => {
     if (e !== t) {
-      let e = v.Z.isSelfMute();
-      if (v.Z.getMode() === P.pM4.PUSH_TO_TALK && !e) return t ? "ptt_start" : "ptt_stop"
+      let e = y.Z.isSelfMute();
+      if (y.Z.getMode() === j.pM4.PUSH_TO_TALK && !e) return t ? "ptt_start" : "ptt_stop"
     }
   }), null
 }
 
 function R() {
-  return x([Chunk131951.Z], () => Chunk131951.Z.getActiveVoiceFilter(), (e, t) => {
+  return A([Chunk131951.Z], () => Chunk131951.Z.getActiveVoiceFilter(), (e, t) => {
     if (e !== t)
       if (null != t) return null != e ? "voice_filter_swap" : "voice_filter_on";
       else return "voice_filter_off"
@@ -133,31 +133,31 @@ function R() {
 }
 
 function D() {
-  return x([Chunk131951.Z], () => Chunk131951.Z.isSelfMutedTemporarily(), (e, t) => {
+  return A([Chunk131951.Z], () => Chunk131951.Z.isSelfMutedTemporarily(), (e, t) => {
     if (e !== t) {
-      let e = v.Z.isSelfMute();
-      if (v.Z.getMode() === P.pM4.VOICE_ACTIVITY && !e) return t ? "ptt_stop" : "ptt_start"
+      let e = y.Z.isSelfMute();
+      if (y.Z.getMode() === j.pM4.VOICE_ACTIVITY && !e) return t ? "ptt_stop" : "ptt_start"
     }
   }), null
 }
 
 function k() {
-  return x([Chunk606304.Z], () => Chunk606304.Z.isCurrentUserPrioritySpeaker(), (e, t) => {
+  return A([Chunk606304.Z], () => Chunk606304.Z.isCurrentUserPrioritySpeaker(), (e, t) => {
     if (e !== t) {
-      let e = v.Z.isSelfMute();
-      if (v.Z.getMode() === P.pM4.VOICE_ACTIVITY && !e) return t ? "ptt_start" : "ptt_stop"
+      let e = y.Z.isSelfMute();
+      if (y.Z.getMode() === j.pM4.VOICE_ACTIVITY && !e) return t ? "ptt_start" : "ptt_stop"
     }
   }), null
 }
 
 function M() {
-  return x([Chunk979651.Z], () => Chunk979651.Z.userHasBeenMovedVersion, (e, t) => {
+  return A([Chunk979651.Z], () => Chunk979651.Z.userHasBeenMovedVersion, (e, t) => {
     if (e !== t) return "user_moved"
   }), null
 }
 
 function U() {
-  return x([Chunk944486.Z, Chunk979651.Z], () => {
+  return A([Chunk944486.Z, Chunk979651.Z], () => {
     let e = Chunk944486.Z.getVoiceChannelId();
     if (null == module) return Chunk590415.xO.NONE;
     let t = Chunk979651.Z.getVoiceStateForChannel(module);
@@ -168,7 +168,7 @@ function U() {
 }
 
 function G() {
-  return x([Chunk944486.Z, Chunk199902.Z, Chunk314897.default, Chunk979651.Z, Chunk592125.Z], () => {
+  return A([Chunk944486.Z, Chunk199902.Z, Chunk314897.default, Chunk979651.Z, Chunk592125.Z], () => {
     let e, t, n = Chunk944486.Z.getVoiceChannelId(),
       r = Chunk314897.default.getId(),
       i = [],
@@ -201,11 +201,11 @@ function G() {
       currentUserId: s
     } = t;
     if (e.voiceChannelId !== r || null == r || function(e) {
-        let t = O.Z.getChannel(e);
+        let t = E.Z.getChannel(e);
         if (null == t) returnfalse;
         let n = t.getGuildId();
         if (null == n) returnfalse;
-        let r = E.Z.getGuild(n);
+        let r = O.Z.getGuild(n);
         return null != r && r.afkChannelId === t.id
       }(r) || null != n && m.Lr.has(n)) return;
     let c = null != a && e.singleActiveStreamKey === a,
@@ -222,7 +222,7 @@ function G() {
 }
 
 function B() {
-  return x([Chunk944486.Z, Chunk317381.ZP, Chunk591472.Z, Chunk314897.default], () => {
+  return A([Chunk944486.Z, Chunk317381.ZP, Chunk591472.Z, Chunk314897.default], () => {
     let e = Chunk944486.Z.getVoiceChannelId(),
       t = Chunk944486.Z.getChannelId(),
       n = Chunk317381.ZP.getConnectedActivityLocation(),
@@ -254,22 +254,22 @@ function B() {
         connectedFrame: u
       } = t,
       d = c.some(e => e.applicationId === (null == s ? true : s.applicationId) && e.launchId === s.launchId);
-    if ((0, j.lm)(i)) {
+    if ((0, P.lm)(i)) {
       let t = e.voiceChannelActivities.find(e => e.userIds.has(l)),
         r = c.find(e => e.userIds.has(l));
-      e.voiceChannelActivities.length < c.length && (0, j.lm)(e.voiceChannelId) && (n = "activity_launch"), true === r && (0, j.lm)(t) && (n = "activity_end"), true === t && (0, j.lm)(r) && r.userIds.size > 1 && (n = "activity_user_join"), (0, j.lm)(r) && (0, j.lm)(t) && (r.userIds.size > t.userIds.size && (n = "activity_user_join"), r.userIds.size < t.userIds.size && (n = "activity_user_left"))
+      e.voiceChannelActivities.length < c.length && (0, P.lm)(e.voiceChannelId) && (n = "activity_launch"), true === r && (0, P.lm)(t) && (n = "activity_end"), true === t && (0, P.lm)(r) && r.userIds.size > 1 && (n = "activity_user_join"), (0, P.lm)(r) && (0, P.lm)(t) && (r.userIds.size > t.userIds.size && (n = "activity_user_join"), r.userIds.size < t.userIds.size && (n = "activity_user_left"))
     }
     if (!d) {
       e.connectedChannelActivities.length < o.length && e.channelActivities.length < a.length && (n = "activity_launch");
       let t = e.userConnectedActivity;
-      null == s && (0, j.lm)(t) && (n = "activity_end"), (0, j.lm)(s) && (0, j.lm)(t) && (s.userIds.size > t.userIds.size && (n = "activity_user_join"), s.userIds.size < t.userIds.size && (n = "activity_user_left"))
+      null == s && (0, P.lm)(t) && (n = "activity_end"), (0, P.lm)(s) && (0, P.lm)(t) && (s.userIds.size > t.userIds.size && (n = "activity_user_join"), s.userIds.size < t.userIds.size && (n = "activity_user_left"))
     }
     return null == n && (null != e.connectedActivityLocation || null != r) && (null == e.connectedActivityLocation && null != r ? n = "activity_launch" : null != e.connectedActivityLocation && null == r ? n = "activity_end" : null != s && null != e.userConnectedActivity && (e.userConnectedActivity.userIds.size < s.userIds.size ? n = "activity_user_join" : e.userConnectedActivity.userIds.size > s.userIds.size && (n = "activity_user_leave"))), null == n && (null != e.connectedFrame || null != u) && (null == e.connectedFrame && null != u ? n = "activity_launch" : null != e.connectedFrame && null == u && (n = "activity_end")), n
   }), null
 }
 
 function H() {
-  return x([Chunk106301.Z, Chunk944486.Z], () => ({
+  return A([Chunk106301.Z, Chunk944486.Z], () => ({
     hangStatus: Chunk106301.Z.getCurrentHangStatus(),
     customHangStatus: Chunk106301.Z.getCustomHangStatus(),
     gameActivityHangStatus: Chunk106301.Z.getGameActivityHangStatus(),
@@ -287,6 +287,6 @@ function H() {
 
 function V() {
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-    children: [(0, Chunk951288.jsx)(A, {}), (0, Chunk951288.jsx)(Z, {}), (0, Chunk951288.jsx)(w, {}), (0, Chunk951288.jsx)(L, {}), (0, Chunk951288.jsx)(D, {}), (0, Chunk951288.jsx)(M, {}), (0, Chunk951288.jsx)(G, {}), (0, Chunk951288.jsx)(U, {}), (0, Chunk951288.jsx)(B, {}), (0, Chunk951288.jsx)(R, {}), (0, Chunk951288.jsx)(k, {}), (0, Chunk951288.jsx)(H, {})]
+    children: [(0, Chunk951288.jsx)(x, {}), (0, Chunk951288.jsx)(Z, {}), (0, Chunk951288.jsx)(w, {}), (0, Chunk951288.jsx)(L, {}), (0, Chunk951288.jsx)(D, {}), (0, Chunk951288.jsx)(M, {}), (0, Chunk951288.jsx)(G, {}), (0, Chunk951288.jsx)(U, {}), (0, Chunk951288.jsx)(B, {}), (0, Chunk951288.jsx)(R, {}), (0, Chunk951288.jsx)(k, {}), (0, Chunk951288.jsx)(H, {})]
   })
 }

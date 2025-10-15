@@ -13,11 +13,11 @@ function o(e, t) {
     o = (0, i.e7)([a.Z], () => null != e ? a.Z.getFetchStateForApplication(e) : a.M.NOT_FETCHED),
     s = o === a.M.FETCHED,
     {
-      disableFetch: u = false
+      disableFetch: c = false
     } = null != t ? t : {};
   return r.useEffect(() => {
-    u || o !== a.M.NOT_FETCHED || null != e && l.Z.fetchByApplicationId(e)
-  }, [u, o, e]), {
+    c || o !== a.M.NOT_FETCHED || null != e && l.Z.fetchByApplicationId(e)
+  }, [c, o, e]), {
     token: n,
     fetched: s
   }

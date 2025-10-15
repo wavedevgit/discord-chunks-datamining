@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 701861, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => A
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -37,7 +37,7 @@ function N(e, t, n) {
   }) : e[t] = n, e
 }
 
-function j(e) {
+function P(e) {
   let {
     user: t,
     applicationId: n,
@@ -74,29 +74,29 @@ function j(e) {
       cancelText: S.intl.string(S.t["ETE/oK"]),
       onConfirm: h
     })
-  }, [h, l, t]), O = (0, o.e7)([g.Z], () => g.Z.supports(C.AN.VIDEO)), E = t.isProvisional, v = l ? S.intl.string(S.t["RLcE6+"]) : S.intl.string(S.t.cvSt1N);
+  }, [h, l, t]), E = (0, o.e7)([g.Z], () => g.Z.supports(C.AN.VIDEO)), O = t.isProvisional, y = l ? S.intl.string(S.t["RLcE6+"]) : S.intl.string(S.t.cvSt1N);
   return (0, r.jsxs)(s.v2r, {
     navId: "friend-row",
     "aria-label": S.intl.string(S.t.liqwPD),
     onClose: d.Zy,
     onSelect: a,
-    children: [!E && O ? (0, r.jsx)(s.sNh, {
+    children: [!O && E ? (0, r.jsx)(s.sNh, {
       id: "start-video-call",
       label: S.intl.string(S.t.oCqlGB),
       action: f
-    }) : null, !E && (0, r.jsx)(s.sNh, {
+    }) : null, !O && (0, r.jsx)(s.sNh, {
       id: "start-voice-call",
       label: S.intl.string(S.t.focH1t),
       action: p
     }), (0, r.jsx)(s.sNh, {
       id: "remove-friend",
-      label: v,
+      label: y,
       action: m,
       color: "danger"
     })]
   })
 }
-class P extends Chunk647438.PureComponent {
+class j extends Chunk647438.PureComponent {
   componentWillLeave(e) {
     null != this.peopleListItemRef.current && this.peopleListItemRef.current.componentWillLeave(e)
   }
@@ -125,11 +125,11 @@ class P extends Chunk647438.PureComponent {
       onClick: this.handleOpenPrivateChannel,
       children: t => (0, r.jsxs)("div", {
         className: T.listItemContents,
-        children: [(0, r.jsx)(y.Z, {
+        children: [(0, r.jsx)(v.Z, {
           user: e,
           status: l,
           isMobile: a,
-          subText: (0, r.jsx)(v.Z, {
+          subText: (0, r.jsx)(y.Z, {
             hovered: t,
             activities: n,
             applicationStream: i,
@@ -146,12 +146,12 @@ class P extends Chunk647438.PureComponent {
             giftIntentType: c,
             analyticsPage: I.ZY5.FRIENDS_LIST,
             shouldHighlight: t
-          }), (0, r.jsx)(O.Z, {
+          }), (0, r.jsx)(E.Z, {
             icon: s.kBi,
             tooltip: S.intl.string(S.t["g33r/P"]),
             onClick: this.handleOpenPrivateChannel,
             shouldHighlight: t
-          }), (0, r.jsx)(O.Z, {
+          }), (0, r.jsx)(E.Z, {
             icon: s.Huf,
             tooltip: S.intl.string(S.t.UKOtz8),
             onClick: this.handleOpenActionsMenu,
@@ -179,7 +179,7 @@ class P extends Chunk647438.PureComponent {
         isGameRelationship: n,
         applicationId: i
       } = this.props;
-      (0, d.vq)(e, e => (0, r.jsx)(j, function(e, t) {
+      (0, d.vq)(e, e => (0, r.jsx)(P, function(e, t) {
         return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -217,4 +217,4 @@ class P extends Chunk647438.PureComponent {
     })
   }
 }
-let x = P
+let A = j

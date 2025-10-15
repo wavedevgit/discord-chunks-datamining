@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 290347, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => j
 }), require("./388685.js"), require("./415506.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -67,7 +67,7 @@ let T = [],
       text: t
     })
   },
-  j = e => {
+  P = e => {
     let {
       header: t,
       subHeader: n,
@@ -103,15 +103,15 @@ let T = [],
     })
   };
 
-function P(e) {
+function j(e) {
   let {
     className: t,
     renderModalProps: n,
     heroArt: l,
     heroArtClassName: N,
-    modalDismissibleContent: P,
-    modalTopExtra: x,
-    header: A,
+    modalDismissibleContent: j,
+    modalTopExtra: A,
+    header: x,
     headerClassName: Z,
     subHeader: w,
     subHeaderExtra: L,
@@ -150,7 +150,7 @@ function P(e) {
         });
         ea(await Promise.all(t))
       } catch (e) {
-        O.Z.captureException(e), ea(T)
+        E.Z.captureException(e), ea(T)
       }
     };
     true !== eo.current && e(), eo.current = true
@@ -163,28 +163,28 @@ function P(e) {
   }, [F, W, q, Q, J]), i.useEffect(() => () => {
     if ("video" === l.type || "embed" === l.type) {
       let [e, t] = es();
-      _.default.track(E.rMx.CHANGE_LOG_VIDEO_PLAYED, {
+      _.default.track(O.rMx.CHANGE_LOG_VIDEO_PLAYED, {
         change_log_id: D,
         seconds_played: Math.round(e / 1e3)
-      }), _.default.track(E.rMx.CHANGE_LOG_VIDEO_UNMUTE, {
+      }), _.default.track(O.rMx.CHANGE_LOG_VIDEO_UNMUTE, {
         change_log_id: D,
         seconds_unmuted: Math.round(t / 1e3)
       })
     }
   }, [D, l.type]), i.useEffect(() => {
-    null != P && (0, m.kk)(P);
+    null != j && (0, m.kk)(j);
     let e = Date.now();
-    return _.default.track(E.rMx.CHANGE_LOG_OPENED, {
+    return _.default.track(O.rMx.CHANGE_LOG_OPENED, {
       change_log_id: D
     }), () => {
-      _.default.track(E.rMx.CHANGE_LOG_CLOSED, {
+      _.default.track(O.rMx.CHANGE_LOG_CLOSED, {
         change_log_id: D,
         seconds_open: Math.round((Date.now() - e) / 1e3)
-      }), null != P && (0, g.Q3)(P, {
-        dismissAction: v.L.DISMISS
+      }), null != j && (0, g.Q3)(j, {
+        dismissAction: y.L.DISMISS
       })
     }
-  }, [P, D]), (0, r.jsx)(c.Y0X, {
+  }, [j, D]), (0, r.jsx)(c.Y0X, {
     "data-migration-pending": true,
     className: a()(I.root, I.largeBorderRadius, t),
     transitionState: G,
@@ -198,13 +198,13 @@ function P(e) {
           "data-migration-pending": true,
           onClick: async () => await U()
         })
-      }), null == x ? true : x(), (0, r.jsxs)(c.hzk, {
+      }), null == A ? true : A(), (0, r.jsxs)(c.hzk, {
         "data-migration-pending": true,
         className: I.content,
         children: [(0, r.jsx)(c.Heading, {
           variant: "display-md",
           className: a()(I.headerText, Z),
-          children: A
+          children: x
         }), "video" === l.type ? (0, r.jsx)(h.Z, {
           className: a()(I.video, N),
           autoPlay: !V,
@@ -215,7 +215,7 @@ function P(e) {
           src: l.src,
           poster: l.poster,
           onPlay: e => {
-            _.default.track(E.rMx.CHANGE_LOG_VIDEO_INTERACTED, {
+            _.default.track(O.rMx.CHANGE_LOG_VIDEO_INTERACTED, {
               change_log_id: D
             }), z(Date.now()), X(true), $(e.currentTarget.muted)
           },
@@ -230,7 +230,7 @@ function P(e) {
           },
           disablePictureInPicture: true,
           children: null == el ? true : el.map(e => {
-            let t = (0, y.getLanguages)().find(t => t.code === e.locale);
+            let t = (0, v.getLanguages)().find(t => t.code === e.locale);
             return null == t ? null : (0, r.jsx)("track", {
               label: t.englishName,
               kind: "captions",
@@ -252,7 +252,7 @@ function P(e) {
           renderImageComponent: b.Yi,
           renderLinkComponent: b.iT,
           onPlay: () => {
-            _.default.track(E.rMx.CHANGE_LOG_VIDEO_INTERACTED, {
+            _.default.track(O.rMx.CHANGE_LOG_VIDEO_INTERACTED, {
               change_log_id: D
             })
           }
@@ -273,7 +273,7 @@ function P(e) {
           className: a()(I.featureCardGroup, {
             [I.wideStyle]: H
           }),
-          children: R.map((e, t) => (0, r.jsx)(j, S(C({}, e), {
+          children: R.map((e, t) => (0, r.jsx)(P, S(C({}, e), {
             wideStyle: H
           }), "".concat(e.header, "_").concat(t)))
         }), (0, r.jsx)("div", {

@@ -1,7 +1,7 @@
-/** Chunk was on 36073 **/
-/** chunk id: 533815, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 3091 **/
+/** chunk id: 533815, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => f
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -14,31 +14,31 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk51708 = require("./51708.js");
 
-function g(e) {
+function f(e) {
   let {
     game: t,
-    widgetType: r,
+    widgetType: n,
     iconSize: i = "refresh_sm",
-    className: g
+    className: f
   } = e, {
-    trackUserProfileEditAction: f
+    trackUserProfileEditAction: g
   } = (0, c.KZ)();
-  return (0, n.jsx)(o.u, {
+  return (0, r.jsx)(l.u, {
     text: u.intl.string(u.t.HUvyDQ),
-    children: (0, n.jsx)(l.P3F, {
+    children: (0, r.jsx)(o.P3F, {
       onClick: () => {
-        (0, s.$b)(r, t.applicationId), l.uvj.announce(u.intl.string(u.t["08HmMj"])), f({
+        (0, s.$b)(n, t.applicationId), o.uvj.announce(u.intl.string(u.t["08HmMj"])), g({
           action: "GAME_REMOVED",
           gameId: t.applicationId,
-          widgetEdited: r
+          widgetEdited: n
         })
       },
       "aria-label": u.intl.string(u.t.HUvyDQ),
-      className: a()(g, d.clickable),
-      children: (0, n.jsx)(l.XHJ, {
+      className: a()(f, d.clickable),
+      children: (0, r.jsx)(o.XHJ, {
         size: i,
         className: d.icon,
-        color: l.TVs.colors.STATUS_DANGER
+        color: o.TVs.colors.STATUS_DANGER
       })
     })
   })

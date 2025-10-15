@@ -1,7 +1,7 @@
-/** Chunk was on 91053 **/
-/** chunk id: 900927, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 93979 **/
+/** chunk id: 900927, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -17,52 +17,52 @@ var Chunk399606 = require("./399606.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk131806 = require("./131806.js");
 
-function g(e) {
+function x(e) {
   let {
-    userId: t,
-    guildId: n,
-    textClassName: g,
-    tooltipDelay: m
-  } = e, b = (0, i.e7)([c.default], () => c.default.locale), y = (0, i.e7)([u.Z], () => null != n ? u.Z.getGuild(n) : null), _ = (0, i.e7)([d.ZP], () => null != n ? d.ZP.getMember(n, t) : null), j = (0, s.FI)(h.default.extractTimestamp(t), b), O = (0, s.FI)(null == _ ? true : _.joinedAt, b);
-  return null == y || null == _ ? (0, r.jsx)(a.Text, {
+    userId: n,
+    guildId: t,
+    textClassName: x,
+    tooltipDelay: h
+  } = e, v = (0, i.e7)([c.default], () => c.default.locale), j = (0, i.e7)([u.Z], () => null != t ? u.Z.getGuild(t) : null), g = (0, i.e7)([d.ZP], () => null != t ? d.ZP.getMember(t, n) : null), b = (0, s.FI)(m.default.extractTimestamp(n), v), I = (0, s.FI)(null == g ? true : g.joinedAt, v);
+  return null == j || null == g ? (0, l.jsx)(r.Text, {
     variant: "text-sm/normal",
-    className: g,
-    children: j
-  }) : (0, r.jsxs)("div", {
+    className: x,
+    children: b
+  }) : (0, l.jsxs)("div", {
     className: f.memberSinceWrapper,
-    children: [(0, r.jsxs)("div", {
+    children: [(0, l.jsxs)("div", {
       className: f.memberSince,
-      children: [(0, r.jsx)(l.u, {
+      children: [(0, l.jsx)(o.u, {
         text: p.intl.string(p.t.uvGmCw),
-        delay: m,
-        children: (0, r.jsx)(a.gw7, {
+        delay: h,
+        children: (0, l.jsx)(r.gw7, {
           size: "custom",
           width: 28,
           height: 28,
           color: "currentColor",
           className: f.discordIcon
         })
-      }), (0, r.jsx)(a.Text, {
+      }), (0, l.jsx)(r.Text, {
         variant: "text-sm/normal",
-        className: g,
-        children: j
+        className: x,
+        children: b
       })]
-    }), (0, r.jsx)("div", {
+    }), (0, l.jsx)("div", {
       className: f.divider
-    }), (0, r.jsxs)("div", {
+    }), (0, l.jsxs)("div", {
       className: f.memberSince,
-      children: [(0, r.jsx)(l.u, {
-        text: y.name,
-        delay: m,
-        children: (0, r.jsx)(o.Z, {
-          guild: y,
-          size: o.Z.Sizes.SMOL,
+      children: [(0, l.jsx)(o.u, {
+        text: j.name,
+        delay: h,
+        children: (0, l.jsx)(a.Z, {
+          guild: j,
+          size: a.Z.Sizes.SMOL,
           className: f.guildIcon
         })
-      }), (0, r.jsx)(a.Text, {
+      }), (0, l.jsx)(r.Text, {
         variant: "text-sm/normal",
-        className: g,
-        children: O
+        className: x,
+        children: I
       })]
     })]
   })

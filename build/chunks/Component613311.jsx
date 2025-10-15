@@ -182,28 +182,28 @@ class ef extends Chunk647438.PureComponent {
       channel: n,
       isAuthenticated: l
     } = this.props;
-    return (0, r.jsx)(P.Z, {
+    return (0, r.jsx)(j.Z, {
       isAuthenticated: l,
       toolbar: this.renderHeaderToolbar(e, t),
       children: null != n ? (0, r.jsxs)(i.Fragment, {
-        children: [(0, r.jsx)(P.Z.Icon, {
+        children: [(0, r.jsx)(j.Z.Icon, {
           icon: p.lO_,
           "aria-label": es.intl.string(es.t["P1/Erq"])
-        }), (0, r.jsx)(P.Z.Title, {
+        }), (0, r.jsx)(j.Z.Title, {
           children: n.name
         })]
       }) : null != t && t.premium ? (0, r.jsxs)(i.Fragment, {
-        children: [(0, r.jsx)(P.Z.Icon, {
+        children: [(0, r.jsx)(j.Z.Icon, {
           icon: p.SrA,
           "aria-label": es.intl.string(es.t.Ipxkoq)
         }), (0, r.jsx)(et.Z, {
           sku: t
         })]
       }) : null != t ? (0, r.jsxs)(i.Fragment, {
-        children: [(0, r.jsx)(P.Z.Icon, {
+        children: [(0, r.jsx)(j.Z.Icon, {
           icon: p.lO_,
           "aria-label": es.intl.string(es.t["P1/Erq"])
-        }), (0, r.jsx)(P.Z.Title, {
+        }), (0, r.jsx)(j.Z.Title, {
           children: t.name
         })]
       }) : null
@@ -554,7 +554,7 @@ class ef extends Chunk647438.PureComponent {
             className: a()(ec.headerPurchase, {
               [ec.active]: s
             }),
-            children: [null != t ? (0, j.Z)(t) : null, null != e && null != t ? (0, r.jsx)("div", {
+            children: [null != t ? (0, P.Z)(t) : null, null != e && null != t ? (0, r.jsx)("div", {
               children: "deprecated!"
             }) : null, (0, r.jsx)($.Z, {
               messageStyle: $.G.SHORT,
@@ -604,15 +604,15 @@ let eh = (0, Chunk730749.Z)((0, Chunk666743.Z)(Chunk442837.ZP.connectStores([Chu
   } = e;
   if (null == l) {
     if (null == i) throw Error("Needs applicationId or skuId");
-    t = i, null != (l = null != (n = k.Z.get(i)) ? n.applicationId : null) && (r = y.Z.getApplication(l))
+    t = i, null != (l = null != (n = k.Z.get(i)) ? n.applicationId : null) && (r = v.Z.getApplication(l))
   } else if (null == i) {
     if (null == l) throw Error("Needs applicationId or skuId");
-    null != (r = y.Z.getApplication(l)) && (t = r.destinationSkuId), n = null != t ? k.Z.get(t) : null
+    null != (r = v.Z.getApplication(l)) && (t = r.destinationSkuId), n = null != t ? k.Z.get(t) : null
   }(null == n ? true : n.flags) != null && (0, V.yE)(n.flags, ea.l4R.STICKER) && (n = null);
-  let c = null != l && (U.Z.inTestModeForApplication(l) || v.Z.inDevModeForApplication(l));
+  let c = null != l && (U.Z.inTestModeForApplication(l) || y.Z.inDevModeForApplication(l));
   return {
     skuId: t,
-    application: null != l ? y.Z.getApplication(l) : null,
+    application: null != l ? v.Z.getApplication(l) : null,
     isFetchingEntitlements: null != l && D.Z.applicationIdsFetching.has(l),
     didFetchEntitlements: null != l && D.Z.applicationIdsFetched.has(l),
     shouldFetchStatistics: o && null != l && L.Z.shouldFetchStatisticsForApplication(l),
@@ -626,8 +626,8 @@ let eh = (0, Chunk730749.Z)((0, Chunk666743.Z)(Chunk442837.ZP.connectStores([Chu
     }),
     isInTestMode: null != l && c,
     matureAgree: R.Z.didMatureAgree,
-    theme: A.Z.theme,
-    locale: x.default.locale,
+    theme: x.Z.theme,
+    locale: A.default.locale,
     guild: null != s ? Z.Z.getGuild(s.getGuildId()) : null
   }
 })(ef)))

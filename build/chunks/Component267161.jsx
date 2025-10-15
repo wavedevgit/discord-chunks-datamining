@@ -47,7 +47,7 @@ function R(e) {
   } = e;
   return n ? (0, r.jsx)(b.R, {
     focusSectionProps: i
-  }) : (0, r.jsx)(x.d, {
+  }) : (0, r.jsx)(A.d, {
     withFastTravel: t,
     focusSectionProps: i
   })
@@ -72,7 +72,7 @@ let D = Chunk647438.memo(function() {
   } = (0, Chunk719961.T)({
     location: "AppTitleBar"
   }), {
-    hasBugReporterAccess: x
+    hasBugReporterAccess: A
   } = Chunk174556.Z.useExperiment({
     location: "HeaderBar"
   }, {
@@ -110,7 +110,7 @@ let D = Chunk647438.memo(function() {
       theme: M,
       children: t => {
         var i, a;
-        return (0, r.jsx)(A.TF, {
+        return (0, r.jsx)(x.TF, {
           className: t,
           leading: (0, r.jsxs)(r.Fragment, {
             children: [o && (0, r.jsx)(m.Z, {
@@ -160,13 +160,13 @@ let D = Chunk647438.memo(function() {
               return n
             })(Object(a)).forEach(function(e) {
               Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
-            }), i)), x ? (0, r.jsx)(E.Z, {
+            }), i)), A ? (0, r.jsx)(O.Z, {
               focusSectionProps: "HELP" === G ? e : true,
               className: B
-            }) : (0, r.jsx)(O.Z, {
+            }) : (0, r.jsx)(E.Z, {
               focusSectionProps: "HELP" === G ? e : true,
               className: B
-            }), (0, r.jsx)(v.Z, {
+            }), (0, r.jsx)(y.Z, {
               className: B
             })]
           })

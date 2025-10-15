@@ -1,11 +1,11 @@
-/** Chunk was on 36073 **/
-/** chunk id: 747101, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 3091 **/
+/** chunk id: 747101, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  FX: () => b,
-  ZP: () => f,
+  FX: () => m,
+  ZP: () => g,
   kN: () => p,
   kO: () => d,
-  qU: () => g
+  qU: () => f
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
@@ -16,18 +16,18 @@ var Chunk647438 = require("./647438.js"),
 
 function s(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var r = null != arguments[t] ? arguments[t] : {},
-      n = Object.keys(r);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(r, e).enumerable
-    }))), n.forEach(function(t) {
-      var n;
-      n = r[t], t in e ? Object.defineProperty(e, t, {
-        value: n,
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = n
+      }) : e[t] = r
     })
   }
   return e
@@ -35,32 +35,32 @@ function s(e) {
 
 function u(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var r = Object.keys(e);
+    var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var n = Object.getOwnPropertySymbols(e);
-      r.push.apply(r, n)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
-    return r
-  })(Object(t)).forEach(function(r) {
-    Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
+    return n
+  })(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
 function d(e) {
-  return (0, i.e7)([o.Z], () => o.Z.isFetching(e))
+  return (0, i.e7)([l.Z], () => l.Z.isFetching(e))
 }
 
-function g(e) {
-  n.useEffect(() => {
+function f(e) {
+  r.useEffect(() => {
     if (e.length > 0) {
-      let t = e.filter(e => o.Z.canFetch(e));
+      let t = e.filter(e => l.Z.canFetch(e));
       t.length > 0 && a.Z.getDetectableGamesSupplemental(t)
     }
   }, [e])
 }
 
-function f(e) {
-  g(n.useMemo(() => (function(e) {
+function g(e) {
+  f(r.useMemo(() => (function(e) {
     let t = new Set;
     return e.forEach(e => {
       e.games.forEach(e => {
@@ -71,27 +71,27 @@ function f(e) {
 }
 
 function p(e) {
-  let [t, r] = (0, i.Wu)([o.Z], () => [o.Z.numNoDataAvailable(), o.Z.numSupplementalGames()]);
-  return n.useMemo(() => {
+  let [t, n] = (0, i.Wu)([l.Z], () => [l.Z.numNoDataAvailable(), l.Z.numSupplementalGames()]);
+  return r.useMemo(() => {
     let t = {};
     return e.forEach(e => {
-      t[e] = o.Z.getGame(e)
+      t[e] = l.Z.getGame(e)
     }), t
-  }, [e, t, r])
+  }, [e, t, n])
 }
 
-function b(e) {
+function m(e) {
   let t = p(e.games.map(e => e.applicationId));
-  return n.useMemo(() => new c.zy(u(s({}, e), {
+  return r.useMemo(() => new c.zy(u(s({}, e), {
     games: e.games.map(e => {
-      let r = t[e.applicationId];
-      if (null != r) return u(s({}, e), {
-        gameName: r.name,
-        imageSrc: r.coverImageUrl
+      let n = t[e.applicationId];
+      if (null != n) return u(s({}, e), {
+        gameName: n.name,
+        imageSrc: n.coverImageUrl
       });
-      let n = l.Z.getDetectableGame(e.applicationId);
+      let r = o.Z.getDetectableGame(e.applicationId);
       return u(s({}, e), {
-        gameName: null == n ? true : n.name
+        gameName: null == r ? true : r.name
       })
     })
   })), [e, t])

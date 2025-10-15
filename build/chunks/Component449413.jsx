@@ -1,4 +1,4 @@
-/** Chunk was on 25244 **/
+/** Chunk was on 54844 **/
 /** chunk id: 449413, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -33,7 +33,7 @@ let c = e => {
     }
     return e
   }({}, a.Z.defaultRules), n = n = {
-    link: o.s
+    link: s.s
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -45,7 +45,7 @@ let c = e => {
     Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
   }), t)));
   return null == c ? null : (0, r.jsx)(l.Wn, {
-    className: s.infoBox,
+    className: o.infoBox,
     messageType: l.QYI.INFO,
     children: d.current(c)
   })

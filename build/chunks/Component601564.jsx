@@ -1,8 +1,8 @@
 /** Chunk was on 1272 **/
 /** chunk id: 601564, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => x,
-  getPageSize: () => j
+  default: () => A,
+  getPageSize: () => P
 }), require("./388685.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -41,11 +41,11 @@ let N = (0, Chunk663993.Un)({
   webpackId: 496691
 });
 
-function j(e) {
-  return e < y.x ? y.b.SMALL : y.b.LARGE
+function P(e) {
+  return e < v.x ? v.b.SMALL : v.b.LARGE
 }
 Chunk442837.ZP.initialize();
-class P extends Chunk647438.PureComponent {
+class j extends Chunk647438.PureComponent {
   componentDidMount() {
     (0, Chunk930118.Y)(this.props.location), this.stopListeningToHistory = (0, Chunk703656.s1)().listen(e => {
       e.pathname.startsWith(I.Z5c.APPLICATION_STORE) && (0, s.Y)(e)
@@ -97,13 +97,13 @@ class P extends Chunk647438.PureComponent {
       return (0, r.jsx)(u.Z, {
         page: I.ZY5.STORE_LISTING,
         root: true,
-        children: (0, r.jsx)(v.Z, {
+        children: (0, r.jsx)(y.Z, {
           skuId: t,
           applicationId: n,
           slug: i,
           location: a,
           storeListingId: s.store_listing_id,
-          pageSize: j(o)
+          pageSize: P(o)
         })
       })
     }), T(this, "renderContent", () => (0, r.jsxs)(a.rs, {
@@ -113,7 +113,7 @@ class P extends Chunk647438.PureComponent {
         render: () => (0, r.jsx)(u.Z, {
           page: I.ZY5.STORE_DIRECTORY_HOME,
           root: true,
-          children: (0, r.jsx)(E.Z, {})
+          children: (0, r.jsx)(O.Z, {})
         })
       }), (0, r.jsx)(a.AW, {
         path: I.Z5c.APPLICATION_STORE_LISTING_APPLICATION(":applicationId", ":slug"),
@@ -133,4 +133,4 @@ class P extends Chunk647438.PureComponent {
     }))
   }
 }
-let x = (0, Chunk843611.EN)((0, Chunk666743.Z)((0, Chunk112724.Z)(P)))
+let A = (0, Chunk843611.EN)((0, Chunk666743.Z)((0, Chunk112724.Z)(j)))

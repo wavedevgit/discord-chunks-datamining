@@ -21,20 +21,20 @@ let f = function(e) {
     hasSearchQuery: h,
     sectionFilter: g,
     footer: m
-  } = e, b = (0, o.e7)([u.Z], () => u.Z.keyboardModeEnabled), _ = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), O = (0, l.ZP)({
+  } = e, b = (0, o.e7)([u.Z], () => u.Z.keyboardModeEnabled), _ = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), E = (0, l.ZP)({
     id: "people",
     isEnabled: b,
     async scrollToStart() {},
     async scrollToEnd() {}
-  }), E = g !== d.pJs.ONLINE && g !== d.pJs.ALL, v = _ || h || E, y = i.useMemo(() => t.map((e, t) => 0 === e.length ? null : v ? (0, r.jsxs)("div", {
+  }), O = g !== d.pJs.ONLINE && g !== d.pJs.ALL, y = _ || h || O, v = i.useMemo(() => t.map((e, t) => 0 === e.length ? null : y ? (0, r.jsxs)("div", {
     children: [f(t), e.map(n)]
   }, t) : (0, r.jsxs)(s.W, {
     transitionAppear: false,
     component: "div",
     children: [f(t), e.map(n)]
-  }, t)), [n, f, t, v]);
+  }, t)), [n, f, t, y]);
   return (0, r.jsx)(a.bG, {
-    navigator: O,
+    navigator: E,
     children: (0, r.jsx)(a.SJ, {
       children: e => {
         var t, n, {
@@ -76,7 +76,7 @@ let f = function(e) {
           ref: i,
           className: p.peopleList
         }, l), n = n = {
-          children: [y, m]
+          children: [v, m]
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {

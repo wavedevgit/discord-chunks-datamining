@@ -23,24 +23,24 @@ function b(e) {
     active: t,
     user: n,
     channel: b
-  } = e, _ = (0, d.V)(), O = i.useCallback(() => {
+  } = e, _ = (0, d.V)(), E = i.useCallback(() => {
     (0, a.showToast)((0, a.createToast)(g.intl.string(g.t.pIQ3h4), a.ToastType.FAILURE)), o.Z.increment({
       name: l.V.SPAM_MESSAGE_REQUEST_ERROR_VIEW
     })
-  }, []), E = i.useCallback(() => {
+  }, []), O = i.useCallback(() => {
     c.Z.closeChannelSidebar(u.uZ)
-  }, []), v = i.useCallback(() => {
+  }, []), y = i.useCallback(() => {
     c.Z.closeChannelSidebar(u.uZ), _ && (0, s.Kh)(b.id)
   }, [b.id, _]), {
-    acceptMessageRequest: y,
+    acceptMessageRequest: v,
     isAcceptLoading: I,
     isUserProfileLoading: C,
     isOptimisticAccepted: S
   } = (0, p.m)({
     user: n,
-    onAcceptSuccess: v,
-    onRejectSuccess: E,
-    onError: O
+    onAcceptSuccess: y,
+    onRejectSuccess: O,
+    onError: E
   }), T = I || C, N = T || S;
   return (0, r.jsxs)("div", {
     className: m.container,
@@ -55,7 +55,7 @@ function b(e) {
         size: "sm",
         text: g.intl.string(g.t.vicfl5),
         onClick: e => {
-          y(b.id), e.stopPropagation()
+          v(b.id), e.stopPropagation()
         },
         disabled: N,
         loading: T

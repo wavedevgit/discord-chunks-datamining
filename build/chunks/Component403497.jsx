@@ -34,11 +34,11 @@ function N(e) {
       focusSectionProps: l
     } = e,
     N = (0, o.TH)(),
-    j = (0, s.e7)([E.Z], () => E.Z.getGuildId()),
-    P = (0, s.e7)([O.Z], () => O.Z.getChannelId()),
-    x = (0, s.e7)([b.Z], () => b.Z.getChannel(P), [P]),
-    A = null != j ? j : null == x ? true : x.guild_id,
-    Z = (0, s.e7)([_.Z], () => _.Z.getGuild(A), [A]),
+    P = (0, s.e7)([O.Z], () => O.Z.getGuildId()),
+    j = (0, s.e7)([E.Z], () => E.Z.getChannelId()),
+    A = (0, s.e7)([b.Z], () => b.Z.getChannel(j), [j]),
+    x = null != P ? P : null == A ? true : A.guild_id,
+    Z = (0, s.e7)([_.Z], () => _.Z.getGuild(x), [x]),
     w = (0, p.Z)(),
     L = (0, g.D)(),
     {
@@ -57,7 +57,7 @@ function N(e) {
         isFrameInFocusedMode: f.Z.getFrameLayoutMode() === I.U.FOCUSED
       }
     }),
-    U = null != k ? v.ZP.getApplicationIconURL({
+    U = null != k ? y.ZP.getApplicationIconURL({
       id: k.id,
       icon: k.icon,
       bot: k.bot
@@ -78,19 +78,19 @@ function N(e) {
     size: D,
     active: true,
     className: T.guildIcon
-  }), t = Z.name) : null != x && (x.isDM() || x.isGroupDM()) ? (t = C.intl.string(C.t.YUU0RE), G = (0, r.jsx)(c.gw7, {
+  }), t = Z.name) : null != A && (A.isDM() || A.isGroupDM()) ? (t = C.intl.string(C.t.YUU0RE), G = (0, r.jsx)(c.gw7, {
     size: R
-  })) : N.pathname.startsWith(y.Z5c.GLOBAL_DISCOVERY) ? (t = C.intl.string(C.t["4nEZLi"]), G = (0, r.jsx)(c.Jmo, {
+  })) : N.pathname.startsWith(v.Z5c.GLOBAL_DISCOVERY) ? (t = C.intl.string(C.t["4nEZLi"]), G = (0, r.jsx)(c.Jmo, {
     size: R
-  })) : N.pathname.startsWith(y.Z5c.NITRO_HOME) ? (t = C.intl.string(C.t.Ipxkoq), G = (0, r.jsx)(c.SrA, {
+  })) : N.pathname.startsWith(v.Z5c.NITRO_HOME) ? (t = C.intl.string(C.t.Ipxkoq), G = (0, r.jsx)(c.SrA, {
     size: R
-  })) : N.pathname.startsWith(y.Z5c.COLLECTIBLES_SHOP) ? (t = C.intl.string(C.t.pWG4zc), G = (0, r.jsx)(c.EOn, {
+  })) : N.pathname.startsWith(v.Z5c.COLLECTIBLES_SHOP) ? (t = C.intl.string(C.t.pWG4zc), G = (0, r.jsx)(c.EOn, {
     size: R
-  })) : N.pathname.startsWith(y.Z5c.FRIENDS) ? (t = C.intl.string(C.t.TdEu5e), G = (0, r.jsx)(c.iFz, {
+  })) : N.pathname.startsWith(v.Z5c.FRIENDS) ? (t = C.intl.string(C.t.TdEu5e), G = (0, r.jsx)(c.iFz, {
     size: R
-  })) : N.pathname.startsWith(y.Z5c.FAMILY_CENTER) ? (t = C.intl.string(S.default.RZqaJi), G = (0, r.jsx)(c.BFJ, {
+  })) : N.pathname.startsWith(v.Z5c.FAMILY_CENTER) ? (t = C.intl.string(S.default.RZqaJi), G = (0, r.jsx)(c.BFJ, {
     size: R
-  })) : N.pathname.startsWith(y.Z5c.QUEST_HOME_V2) && (t = C.intl.string(C.t.JALI2N), G = (0, r.jsx)(c.qDn, {
+  })) : N.pathname.startsWith(v.Z5c.QUEST_HOME_V2) && (t = C.intl.string(C.t.JALI2N), G = (0, r.jsx)(c.qDn, {
     size: R
   }));
   let B = i.useCallback(e => {

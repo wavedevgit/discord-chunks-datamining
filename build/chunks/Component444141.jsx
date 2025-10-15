@@ -1,4 +1,4 @@
-/** Chunk was on 31553 **/
+/** Chunk was on 93979 **/
 /** chunk id: 444141, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -50,43 +50,43 @@ function p(e) {
     guildId: t,
     channelId: p,
     displayProfile: f,
-    onClose: h
+    onClose: x
   } = e, {
-    analyticsLocations: x,
-    sourceAnalyticsLocations: j
-  } = (0, r.ZP)(), {
-    context: v,
+    analyticsLocations: h,
+    sourceAnalyticsLocations: v
+  } = (0, o.ZP)(), {
+    context: j,
     trackUserProfileAction: g
   } = (0, s.KZ)(), b = (0, c.ZP)(n.id, t);
-  return (null == b ? true : b.guildId) == null || null == v ? null : (null == f ? true : f.guildId) != null ? (0, l.jsx)(i.sNh, {
+  return (null == b ? true : b.guildId) == null || null == j ? null : (null == f ? true : f.guildId) != null ? (0, l.jsx)(i.sNh, {
     id: "view-main-profile",
     label: d.intl.string(d.t.GISTtb),
     subtext: d.intl.formatToPlainString(d.t["mn/nW1"], {
-      displayName: o.ZP.getName(true, true, n)
+      displayName: r.ZP.getName(true, true, n)
     }),
     action: () => {
-      null == h || h(), (0, a.openUserProfileModal)(m(u({}, v), {
+      null == x || x(), (0, a.openUserProfileModal)(m(u({}, j), {
         showGuildProfile: false,
-        sourceAnalyticsLocations: j
+        sourceAnalyticsLocations: v
       })), g(u({
         action: "PRESS_VIEW_MAIN_PROFILE",
-        analyticsLocations: x
-      }, v))
+        analyticsLocations: h
+      }, j))
     }
   }) : (0, l.jsx)(i.sNh, {
     id: "view-server-profile",
     label: d.intl.string(d.t.DisZzM),
     subtext: d.intl.formatToPlainString(d.t["mn/nW1"], {
-      displayName: o.ZP.getName(t, p, n)
+      displayName: r.ZP.getName(t, p, n)
     }),
     action: () => {
-      null == h || h(), (0, a.openUserProfileModal)(m(u({}, v), {
+      null == x || x(), (0, a.openUserProfileModal)(m(u({}, j), {
         showGuildProfile: true,
-        sourceAnalyticsLocations: j
+        sourceAnalyticsLocations: v
       })), g(u({
         action: "PRESS_VIEW_SERVER_PROFILE",
-        analyticsLocations: x
-      }, v))
+        analyticsLocations: h
+      }, j))
     }
   })
 }

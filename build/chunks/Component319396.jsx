@@ -1,4 +1,4 @@
-/** Chunk was on 56848 **/
+/** Chunk was on 3091 **/
 /** chunk id: 319396, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -17,13 +17,13 @@ function u(e) {
     item: t,
     profileOwner: n,
     wishlistId: i,
-    isOwner: a
+    isOwner: l
   } = e;
-  return (0, l.Q)(t) ? (0, r.jsx)(o.Z, {
+  return (0, a.Q)(t) ? (0, r.jsx)(c.Z, {
     item: t,
     profileOwner: n,
     wishlistId: i,
-    isOwner: a
+    isOwner: l
   }) : null
 }
 
@@ -31,20 +31,20 @@ function d(e) {
   let {
     items: t,
     profileOwner: n,
-    isOwner: l
-  } = e, o = a.default.getCurrentUser(), {
+    isOwner: a
+  } = e, c = l.default.getCurrentUser(), {
     defaultWishlistId: d
-  } = (0, i.cj)([s.Z], () => ({
-    defaultWishlistId: s.Z.getFirstWishlistId(n.id)
+  } = (0, i.cj)([o.Z], () => ({
+    defaultWishlistId: o.Z.getFirstWishlistId(n.id)
   }));
-  return null == o || null == d ? null : (0, r.jsx)("ul", {
-    className: c.grid,
+  return null == c || null == d ? null : (0, r.jsx)("ul", {
+    className: s.grid,
     children: t.map(e => (0, r.jsx)("li", {
       children: (0, r.jsx)(u, {
         item: e,
         profileOwner: n,
         wishlistId: d,
-        isOwner: l
+        isOwner: a
       })
     }, e.skuId))
   })

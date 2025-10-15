@@ -35,11 +35,11 @@ function N(e) {
     analyticsPage: l,
     shouldHighlight: N
   } = e, {
-    analyticsLocations: j
+    analyticsLocations: P
   } = (0, d.ZP)(), {
-    isHovered: P,
-    setIsHovered: x,
-    onMouseEnter: A,
+    isHovered: j,
+    setIsHovered: A,
+    onMouseEnter: x,
     onMouseLeave: Z
   } = (0, h.Z)(200, 300), {
     enableEmojiCTA: w
@@ -60,8 +60,8 @@ function N(e) {
     })
   }, [t, n]);
   let L = i.useCallback(e => {
-      "focus" !== e.type && A()
-    }, [A]),
+      "focus" !== e.type && x()
+    }, [x]),
     R = e => {
       e.stopPropagation();
       let r = g.Z.getUserAffinity(t.id);
@@ -72,8 +72,8 @@ function N(e) {
         isGift: true,
         initialPlanId: null,
         giftRecipient: t,
-        analyticsLocation: (0, E.F)(n).actionButton,
-        analyticsLocations: j,
+        analyticsLocation: (0, O.F)(n).actionButton,
+        analyticsLocations: P,
         analyticsObject: {
           page: l,
           section: I.jXE.FRIENDS_LIST_FRIEND_ROW,
@@ -83,33 +83,33 @@ function N(e) {
         giftMessage: D()
       })
     },
-    D = () => n === y.hX.FRIEND_ANNIVERSARY ? C.intl.formatToPlainString(C.t["L2s/Nz"], {
-      numberOfYears: O.Z.getFriendAnniversaryYears(t.id)
+    D = () => n === v.hX.FRIEND_ANNIVERSARY ? C.intl.formatToPlainString(C.t["L2s/Nz"], {
+      numberOfYears: E.Z.getFriendAnniversaryYears(t.id)
     }) : (0, b.Ou)(n),
-    k = () => n === y.hX.FRIEND_ANNIVERSARY ? C.intl.string(C.t["4LohBA"]) : (0, b.Ou)(n),
+    k = () => n === v.hX.FRIEND_ANNIVERSARY ? C.intl.string(C.t["4LohBA"]) : (0, b.Ou)(n),
     M = i.useRef(null);
   return (0, r.jsx)(u.yRy, {
     targetElementRef: M,
     animation: u.yRy.Animation.FADE,
     nudgeAlignIntoViewport: false,
     scrollBehavior: "close",
-    shouldShow: P,
+    shouldShow: j,
     position: "right",
     align: "top",
     spacing: 9,
     onRequestClose: () => {
-      x(false)
+      A(false)
     },
-    renderPopout: e => (0, r.jsx)(v.Z, {
+    renderPopout: e => (0, r.jsx)(y.Z, {
       giftIntentType: n,
-      premiumGiftIntentCardType: v.U.COACHMARK,
+      premiumGiftIntentCardType: y.U.COACHMARK,
       recipientUser: t,
-      onMouseEnter: A,
+      onMouseEnter: x,
       onMouseLeave: Z,
       popoutPosition: e.position,
       analyticsPage: l,
       analyticsSection: I.jXE.FRIENDS_LIST_FRIEND_ROW_GIFT_POPOUT,
-      giftIntentSecondaryAction: y.X2.SEND_MESSAGE,
+      giftIntentSecondaryAction: v.X2.SEND_MESSAGE,
       glow: true
     }),
     children: () => w ? (0, r.jsx)(u.P3F, {

@@ -21,14 +21,14 @@ var Chunk570140 = require("./570140.js"),
   Chunk981631 = require("./981631.js"),
   Chunk65154 = require("./65154.js");
 
-function E() {
+function O() {
   var e;
   let t = r;
   if (null == exports || !Chunk366050.Z.isOpen(exports)) returnfalse;
   Chunk570140.Z.wait(() => Chunk523238.xv(exports)), null == (e = Chunk19780.Z.getRTCConnection()) || module.setPipOpen(false), r = null
 }
 
-function v() {
+function y() {
   var e;
   let t = Chunk19780.Z.getChannelId(),
     n = r === exports;
@@ -45,19 +45,19 @@ function v() {
         }) || require)) returntrue;
       let r = Chunk819640.Z.hasLayers();
       return !(r && Chunk819640.Z.getLayers().includes(Chunk981631.S9g.RTC_DEBUG)) && (!!r || module === exports)
-    }()) return E();
-  if (require || E(), null == exports) returnfalse;
+    }()) return O();
+  if (require || O(), null == exports) returnfalse;
   let a = Chunk592125.Z.getChannel(exports);
   return !(null == Chunk317770 || Chunk366050.Z.isOpen(exports)) && (Chunk570140.Z.wait(() => Chunk523238.bA(Chunk317770.id, Chunk981631.NYg.VIDEO, {
     channel: Chunk317770
   })), null == (e = Chunk19780.Z.getRTCConnection()) || module.setPipOpen(true), void(r = exports))
 }
-class y extends Chunk317770.Z {
+class v extends Chunk317770.Z {
   _initialize() {
-    Chunk944486.Z.addChangeListener(v), Chunk914010.Z.addChangeListener(v), Chunk19780.Z.addChangeListener(v), Chunk979651.Z.addChangeListener(v), Chunk819640.Z.addChangeListener(v), Chunk199902.Z.addChangeListener(v), Chunk928518.Z.addChangeListener(v), Chunk131951.Z.addChangeListener(v), Chunk317381.ZP.addChangeListener(v)
+    Chunk944486.Z.addChangeListener(y), Chunk914010.Z.addChangeListener(y), Chunk19780.Z.addChangeListener(y), Chunk979651.Z.addChangeListener(y), Chunk819640.Z.addChangeListener(y), Chunk199902.Z.addChangeListener(y), Chunk928518.Z.addChangeListener(y), Chunk131951.Z.addChangeListener(y), Chunk317381.ZP.addChangeListener(y)
   }
   _terminate() {
-    Chunk944486.Z.removeChangeListener(v), Chunk914010.Z.removeChangeListener(v), Chunk19780.Z.removeChangeListener(v), Chunk979651.Z.removeChangeListener(v), Chunk819640.Z.removeChangeListener(v), Chunk199902.Z.removeChangeListener(v), Chunk928518.Z.removeChangeListener(v), Chunk131951.Z.removeChangeListener(v), Chunk317381.ZP.removeChangeListener(v)
+    Chunk944486.Z.removeChangeListener(y), Chunk914010.Z.removeChangeListener(y), Chunk19780.Z.removeChangeListener(y), Chunk979651.Z.removeChangeListener(y), Chunk819640.Z.removeChangeListener(y), Chunk199902.Z.removeChangeListener(y), Chunk928518.Z.removeChangeListener(y), Chunk131951.Z.removeChangeListener(y), Chunk317381.ZP.removeChangeListener(y)
   }
 }
-let I = new y
+let I = new v

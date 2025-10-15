@@ -126,7 +126,7 @@ function ei() {
         hasSingleMessageRequest: l
       }, u)
     }, [Chunk120356, require, Chunk112724]),
-    O = Chunk647438.useCallback(() => (0, Chunk951288.jsxs)(Chunk82295.Z, {
+    E = Chunk647438.useCallback(() => (0, Chunk951288.jsxs)(Chunk82295.Z, {
       className: Chunk803882.sectionTitle,
       children: [exports > 0 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.rA4iWV, {
         count: exports
@@ -183,7 +183,7 @@ function ei() {
           paddingBottom: 24,
           sectionHeight: K.oi,
           rowHeight: K.WN,
-          renderSection: O,
+          renderSection: E,
           renderRow: _,
           sections: [n.length],
           chunkSize: 30,
@@ -199,13 +199,13 @@ function el(e) {
     pageWidth: t,
     onSidebarResize: n
   } = e, i = (0, c.e7)([w.ZP], () => w.ZP.getSidebarState(w.uZ)), l = (0, c.e7)([L.Z], () => L.Z.getChannel(null == i ? true : i.channelId));
-  if (null == i || i.type !== j.tI.VIEW_MESSAGE_REQUEST || null == l || !l.isPrivate()) return null;
+  if (null == i || i.type !== P.tI.VIEW_MESSAGE_REQUEST || null == l || !l.isPrivate()) return null;
   let a = t - Q.R7I;
   return (0, r.jsx)(_.Z, {
     sidebarType: _.y.MessageRequestSidebar,
     maxWidth: a,
     onWidthChange: n,
-    children: (0, r.jsx)(O.Z, {
+    children: (0, r.jsx)(E.Z, {
       channel: l,
       baseChannelId: w.uZ
     })
@@ -214,7 +214,7 @@ function el(e) {
 let ea = e => {
   let t = (0, U.Z)();
   return (i.useEffect(() => {
-    (0, y.kk)(u.z.MESSAGE_REQUEST_SETTINGS_COACH_MARK)
+    (0, v.kk)(u.z.MESSAGE_REQUEST_SETTINGS_COACH_MARK)
   }, []), null == e.targetElementRef.current || R.Z.hasLayers() || (0, p.$sL)()) ? e.children : (0, r.jsx)(I.ZP, {
     contentTypes: [u.z.MESSAGE_REQUEST_SETTINGS_COACH_MARK],
     children: n => {
@@ -245,7 +245,7 @@ let ea = e => {
           actions: [{
             text: $.intl.string($.t.JN6EOD),
             onClick: e => {
-              e.stopPropagation(), (0, Z.openUserSettings)(A.n.CONTENT_AND_SOCIAL_PANEL, {
+              e.stopPropagation(), (0, Z.openUserSettings)(x.n.CONTENT_AND_SOCIAL_PANEL, {
                 section: Q.oAB.CONTENT_AND_SOCIAL,
                 scrollPosition: J.FY.MESSAGE_REQUESTS_V2
               }), l(X.L.TAKE_ACTION)
@@ -272,31 +272,31 @@ let es = (0, Chunk112724.Z)(function(e) {
     width: t
   } = e, n = (0, V.q)();
   (0, m.ZP)(() => {
-    f.Y(Q.Z5c.MESSAGE_REQUESTS), (0, P.e)("message-requests"), D.default.track(Q.rMx.MESSAGE_REQUESTS_VIEWED, {
+    f.Y(Q.Z5c.MESSAGE_REQUESTS), (0, j.e)("message-requests"), D.default.track(Q.rMx.MESSAGE_REQUESTS_VIEWED, {
       num_message_requests: n
     }), S.Z.increment({
       name: s.V.MESSAGE_REQUEST_VIEW
     })
   });
-  let l = (0, c.e7)([x.Z], () => x.Z.theme),
+  let l = (0, c.e7)([A.Z], () => A.Z.theme),
     o = (0, z.w)(),
     [u, d] = i.useState(false),
     h = (0, c.e7)([w.ZP], () => {
       let e = w.ZP.getSidebarState(w.uZ);
-      return null != e && e.type === j.tI.VIEW_MESSAGE_REQUEST ? e : null
+      return null != e && e.type === P.tI.VIEW_MESSAGE_REQUEST ? e : null
     }),
     g = null == h ? true : h.channelId,
     b = null != h,
     _ = (0, M.T)(g),
-    O = (0, k.J)(g),
-    E = i.useRef(null);
+    E = (0, k.J)(g),
+    O = i.useRef(null);
   i.useEffect(() => {
-    null != g && !_ && O && b && ((0, T.Kh)(g), N.Z.closeChannelSidebar(w.uZ))
-  }, [g, O, b, _]);
-  let [y, I] = i.useState(K.pS.REQUESTS), A = e => {
+    null != g && !_ && E && b && ((0, T.Kh)(g), N.Z.closeChannelSidebar(w.uZ))
+  }, [g, E, b, _]);
+  let [v, I] = i.useState(K.pS.REQUESTS), x = e => {
     I(e)
   };
-  return (0, v.Tt)({
+  return (0, y.Tt)({
     location: $.intl.string($.t.e7GWjY)
   }), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
@@ -313,16 +313,16 @@ let es = (0, Chunk112724.Z)(function(e) {
             icon: p._XJ,
             "aria-hidden": true
           }), (0, r.jsx)(ea, {
-            targetElementRef: E,
+            targetElementRef: O,
             children: (0, r.jsx)(C.Z.Title, {
-              ref: E,
+              ref: O,
               children: $.intl.string($.t.e7GWjY)
             })
           }), (0, r.jsx)(C.Z.Divider, {}), (0, r.jsxs)(p.njP, {
             "aria-label": $.intl.string($.t.e7GWjY),
-            selectedItem: y,
+            selectedItem: v,
             type: "top-pill",
-            onItemSelect: A,
+            onItemSelect: x,
             children: [(0, r.jsx)(p.njP.Item, {
               id: K.pS.REQUESTS,
               className: ee.item,
@@ -339,7 +339,7 @@ let es = (0, Chunk112724.Z)(function(e) {
       }), (0, r.jsx)("div", {
         className: et.content,
         children: (0, r.jsx)(eo, {
-          section: y
+          section: v
         })
       })]
     }), b && (0, r.jsx)(el, {

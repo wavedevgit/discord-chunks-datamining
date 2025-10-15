@@ -1,5 +1,5 @@
-/** Chunk was on 36073 **/
-/** chunk id: 232644, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 31029 **/
+/** chunk id: 232644, original params: e,t,n (module,exports,require) **/
 module.exports = {
   card: "card__39b32",
   container: "container__39b32",

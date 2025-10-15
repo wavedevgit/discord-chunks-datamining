@@ -31,13 +31,13 @@ function S(e, t) {
       location: "UserProfileModalV2"
     }),
     [r, l, a, s] = (0, o.Wu)([h.Z], () => null != e && n ? [h.Z.getWishlist(e), h.Z.isFetching(e), h.Z.getError(e), h.Z.getUpdatedAt(e)] : [null, false, true, true]),
-    u = (0, o.e7)([p.Z], () => {
+    c = (0, o.e7)([p.Z], () => {
       var n;
       if (null != e && null != t) return null == (n = p.Z.getWishlistSettings(t, e)) ? true : n.updated_at
     });
   return (0, i.useEffect)(() => {
-    null != e && !l && n && null == a && (null == r || null != u && s !== u) && _.Z.fetchWishlist(e, u)
-  }, [e, r, l, n, u, s, a]), {
+    null != e && !l && n && null == a && (null == r || null != c && s !== c) && _.Z.fetchWishlist(e, c)
+  }, [e, r, l, n, c, s, a]), {
     wishlist: r,
     isFetching: l,
     error: a
@@ -67,7 +67,7 @@ function I(e) {
     includeDynamicBlocks: true
   }), {
     isFetchingCategories: y
-  } = (0, c.ZP)();
+  } = (0, u.ZP)();
   return {
     defaultWishlistId: t,
     wishlist: n,
@@ -79,7 +79,7 @@ function I(e) {
       for (let e of null != (n = null == (t = r.sortedSkuIds) ? true : t[a.m.POPULAR]) ? n : r.rankedSkuIds) {
         if (i.length >= b) break;
         let t = s.Z.getProduct(e);
-        null == t || (0, u.x6)(t) || i.push(t)
+        null == t || (0, c.x6)(t) || i.push(t)
       }
       return i
     }(h), [_, h, g]),

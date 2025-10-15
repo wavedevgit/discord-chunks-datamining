@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 702456, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => j
 }), require("./388685.js"), require("./642613.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -59,7 +59,7 @@ function N(e, t) {
   }), e
 }
 
-function j(e) {
+function P(e) {
   var t, n;
   let {
     user: i,
@@ -71,9 +71,9 @@ function j(e) {
   } = (0, o.cj)([b.Z], () => ({
     status: b.Z.getStatus(i.id),
     isMobile: b.Z.isMobileOnline(i.id)
-  })), f = (0, o.e7)([O.Z, g.Z], () => {
+  })), f = (0, o.e7)([E.Z, g.Z], () => {
     let e = g.Z.getDMFromUserId(i.id);
-    return null != e && O.Z.isTyping(e, i.id)
+    return null != e && E.Z.isTyping(e, i.id)
   }, [i]), {
     avatarSrc: m,
     eventHandlers: _
@@ -81,7 +81,7 @@ function j(e) {
     userId: i.id,
     size: s.EFr.SIZE_32,
     animateOnHover: true
-  }), E = async () => {
+  }), O = async () => {
     await c.Z.openPrivateChannel({
       recipientIds: [i.id],
       location: "frequent_friends_row"
@@ -90,10 +90,10 @@ function j(e) {
     null != e && (0, p.yw)(I.rMx.CHANNEL_OPENED, N(T({}, (0, p.$H)(e)), {
       location: "frequent_friends_row_".concat(l + 1)
     }))
-  }, v = 0 === l, y = v ? s.YqE : a ? s.XcD : true, j = v ? C.intl.string(C.t.aI4VOD) : a ? C.intl.string(C.t.kABl29) : true;
+  }, y = 0 === l, v = y ? s.YqE : a ? s.XcD : true, P = y ? C.intl.string(C.t.aI4VOD) : a ? C.intl.string(C.t.kABl29) : true;
   return (0, r.jsx)(s.P3F, {
     className: S.frequentFriendAvatarButton,
-    onClick: E,
+    onClick: O,
     onMouseEnter: _.onMouseEnter,
     onMouseLeave: _.onMouseLeave,
     "aria-label": C.intl.formatToPlainString(C.t.M5FjCg, {
@@ -106,9 +106,9 @@ function j(e) {
       isTyping: f,
       isMobile: d && !f,
       size: s.EFr.SIZE_32,
-      CutoutIcon: y,
-      avatarTooltipAsset: v ? "\uD83D\uDD25" : a ? "❄️" : true,
-      avatarTooltipText: j,
+      CutoutIcon: v,
+      avatarTooltipAsset: y ? "\uD83D\uDD25" : a ? "❄️" : true,
+      avatarTooltipText: P,
       statusTooltip: true,
       statusTooltipDelay: 50,
       avatarTooltipTitle: null != (n = i.globalName) ? n : i.username
@@ -116,7 +116,7 @@ function j(e) {
   })
 }
 
-function P() {
+function j() {
   let {
     enabled: e
   } = (0, Chunk399521.Q)("frequent_friends_row"), t = function() {
@@ -168,9 +168,9 @@ function P() {
     }, [Chunk493683]);
   if (!module || null == exports || !require) return null;
   let {
-    frequentFriends: O,
-    showCompetitiveSpot: P
-  } = exports, x = Chunk120356.scrollWidth > Chunk120356.clientWidth, A = Chunk120356.scrollLeft > 0, Z = Chunk120356.scrollLeft < Chunk120356.scrollWidth - Chunk120356.clientWidth - 2;
+    frequentFriends: E,
+    showCompetitiveSpot: j
+  } = exports, A = Chunk120356.scrollWidth > Chunk120356.clientWidth, x = Chunk120356.scrollLeft > 0, Z = Chunk120356.scrollLeft < Chunk120356.scrollWidth - Chunk120356.clientWidth - 2;
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsxs)("div", {
       className: Chunk944658.frequentFriendsRow,
@@ -192,15 +192,15 @@ function P() {
           p.current = e, g.current = (null == e ? true : e.getScrollerNode()) != null ? e.getScrollerNode() : null
         },
         className: a()(Chunk944658.frequentFriendsAvatars, {
-          [Chunk944658.scrollMaskLeft]: x && A,
-          [Chunk944658.scrollMaskRight]: x && Z
+          [Chunk944658.scrollMaskLeft]: A && x,
+          [Chunk944658.scrollMaskRight]: A && Z
         }),
         orientation: "horizontal",
         onScroll: Chunk158776,
-        children: Chunk111583.map((e, t) => (0, r.jsx)(j, {
+        children: Chunk111583.map((e, t) => (0, r.jsx)(P, {
           user: e,
           index: t,
-          isCompetitive: t === O.length - 1 && P
+          isCompetitive: t === E.length - 1 && j
         }, e.id))
       })]
     }), (0, Chunk951288.jsx)(Chunk663701.d, {})]

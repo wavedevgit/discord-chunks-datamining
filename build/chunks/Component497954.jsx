@@ -1,7 +1,7 @@
-/** Chunk was on 25244 **/
+/** Chunk was on 54844 **/
 /** chunk id: 497954, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,30 +14,30 @@ var Chunk951288 = require("./951288.js"),
   Chunk5192 = require("./5192.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let p = e => {
+let g = e => {
   let {
     user: t,
     channelId: n,
-    reportId: p
+    reportId: g
   } = e, {
-    isIgnored: g,
-    isBlocked: f
+    isIgnored: _,
+    isBlocked: h
   } = (0, l.cj)([d.Z], () => ({
     isIgnored: d.Z.isIgnored(t.id),
     isBlocked: d.Z.isBlocked(t.id)
-  }), [t]), h = (0, l.e7)([c.Z], () => c.Z.getChannel(n), [n]), b = i.useMemo(() => u.ZP.getName(null == h ? true : h.guild_id, null == h ? true : h.id, t), [h, t]), x = i.useCallback(() => {
-    o.ZP.trackWithMetadata(_.rMx.IAR_IGNORE_USER_BUTTON_CLICKED, {
+  }), [t]), b = (0, l.e7)([c.Z], () => c.Z.getChannel(n), [n]), x = i.useMemo(() => u.ZP.getName(null == b ? true : b.guild_id, null == b ? true : b.id, t), [b, t]), f = i.useCallback(() => {
+    s.ZP.trackWithMetadata(m.rMx.IAR_IGNORE_USER_BUTTON_CLICKED, {
       other_user_id: t.id,
-      report_id: p
+      report_id: g
     }), a.Z.ignoreUser(t.id, "web_iar_ignore_user_element", n)
-  }, [t, p, n]), v = i.useMemo(() => g || f, [g, f]);
-  return (0, r.jsx)(s.JZ, {
-    title: m.intl.formatToPlainString(m.t.U3yyFh, {
-      username: b
+  }, [t, g, n]), v = i.useMemo(() => _ || h, [_, h]);
+  return (0, r.jsx)(o.JZ, {
+    title: p.intl.formatToPlainString(p.t.U3yyFh, {
+      username: x
     }),
-    description: m.intl.string(m.t.naWE6e),
-    buttonText: v ? m.intl.string(m.t.nDdxOD) : m.intl.string(m.t.ICYEfX),
+    description: p.intl.string(p.t.naWE6e),
+    buttonText: v ? p.intl.string(p.t.nDdxOD) : p.intl.string(p.t.ICYEfX),
     buttonDisabled: v,
-    onButtonPress: x
+    onButtonPress: f
   })
 }

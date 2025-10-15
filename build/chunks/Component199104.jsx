@@ -1,11 +1,13 @@
 /** Chunk was on 1272 **/
 /** chunk id: 199104, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => y
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk442837 = require("./442837.js"),
+var Chunk120356 = require("./120356.js"),
+  l = require.n(Chunk120356),
+  Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
   Chunk481060 = require("./481060.js"),
   Chunk410575 = require("./410575.jsx"),
@@ -13,6 +15,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk313201 = require("./313201.js"),
   Chunk243778 = require("./243778.jsx"),
+  Chunk365113 = require("./365113.js"),
   Chunk352455 = require("./352455.jsx"),
   Chunk480294 = require("./480294.js"),
   Chunk791359 = require("./791359.jsx"),
@@ -20,37 +23,53 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk708567 = require("./708567.js");
 
-function _() {
+function y(e) {
   let {
-    analyticsLocations: e
-  } = (0, Chunk906732.ZP)(Chunk100527.Z.ACTIVE_NOW_COLUMN), t = (0, Chunk442837.e7)([Chunk480294.Z], () => Chunk480294.Z.hasConsented(Chunk981631.pjP.PERSONALIZATION)) ? [] : [Chunk704215.z.NOW_PLAYING_CONSENT_CARD], n = (0, Chunk313201.Dt)();
-  return (0, Chunk951288.jsx)(Chunk906732.Gt, {
-    value: module,
-    children: (0, Chunk951288.jsx)(Chunk410575.Z, {
-      section: Chunk981631.jXE.ACTIVE_NOW_COLUMN,
-      children: (0, Chunk951288.jsx)("aside", {
-        className: Chunk708567.container,
-        "aria-labelledby": require,
-        children: (0, Chunk951288.jsxs)(Chunk481060.Ttm, {
-          className: Chunk708567.scroller,
-          children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
-            variant: "heading-lg/semibold",
-            className: Chunk708567.header,
-            id: require,
-            children: Chunk388032.intl.string(Chunk388032.t.F4Zgg4)
-          }), (0, Chunk951288.jsx)(Chunk243778.ZP, {
-            contentTypes: exports,
-            children: e => {
-              let {
-                visibleContent: t,
-                markAsDismissed: n
-              } = e;
-              if (t === l.z.NOW_PLAYING_CONSENT_CARD) return (0, r.jsx)(p.Z, {
-                className: b.__invalid_consentCard,
-                markAsDismissed: n
-              })
-            }
-          }), (0, Chunk951288.jsx)(Chunk791359.Z, {})]
+    isStandalone: t
+  } = e, {
+    analyticsLocations: n
+  } = (0, d.ZP)(u.Z.ACTIVE_NOW_COLUMN), i = (0, a.e7)([m.Z], () => m.Z.hasConsented(_.pjP.PERSONALIZATION)) ? [] : [o.z.NOW_PLAYING_CONSENT_CARD], y = h.o.useConfig({
+    location: "nowplaying"
+  }).demureActivityCards, v = h.o.useConfig({
+    location: "nowplaying"
+  }).friendsTab, I = (0, p.Dt)();
+  return (0, r.jsx)(d.Gt, {
+    value: n,
+    children: (0, r.jsx)(c.Z, {
+      section: _.jXE.ACTIVE_NOW_COLUMN,
+      children: (0, r.jsx)("aside", {
+        className: l()(O.container, {
+          [O.refreshActiveNow]: y,
+          "refresh-active-now": y
+        }),
+        "aria-labelledby": I,
+        children: (0, r.jsx)(s.Ttm, {
+          className: l()(O.scroller, {
+            [O.standalone]: t
+          }),
+          children: (0, r.jsxs)("div", {
+            className: l()({
+              [O.standaloneContainer]: t
+            }),
+            children: [v ? null : (0, r.jsx)(s.Heading, {
+              variant: "heading-lg/semibold",
+              className: O.header,
+              id: I,
+              children: E.intl.string(E.t.F4Zgg4)
+            }), (0, r.jsx)(f.ZP, {
+              contentTypes: i,
+              children: e => {
+                let {
+                  visibleContent: t,
+                  markAsDismissed: n
+                } = e;
+                if (t === o.z.NOW_PLAYING_CONSENT_CARD) return (0, r.jsx)(g.Z, {
+                  className: O.__invalid_consentCard,
+                  markAsDismissed: n
+                })
+              }
+            }), (0, r.jsx)(b.Z, {})]
+          })
         })
       })
     })

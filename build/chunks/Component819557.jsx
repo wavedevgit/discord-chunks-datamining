@@ -1,7 +1,7 @@
 /** Chunk was on 93886 **/
 /** chunk id: 819557, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  q: () => u,
+  q: () => c,
   z: () => s
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js");
@@ -24,21 +24,21 @@ function s(e) {
   })
 }
 
-function u(e) {
+function c(e) {
   let {
     icon: t,
     title: n,
     description: i,
     iconClassName: s,
-    color: u,
-    listType: c = "icon",
+    color: c,
+    listType: u = "icon",
     completed: d = false,
     index: p
   } = e;
   return (0, r.jsxs)("div", {
     className: o.cell,
     children: [(() => {
-      if ("numbered" === c && null != p)
+      if ("numbered" === u && null != p)
         if (d) return (0, r.jsx)("div", {
           className: o.number,
           children: (0, r.jsx)(a.sV5, {
@@ -55,7 +55,7 @@ function u(e) {
       if (null != t) return (0, r.jsx)("div", {
         className: o.iconContainer,
         children: (0, r.jsx)(t, {
-          color: null != u ? u : "currentColor",
+          color: null != c ? c : "currentColor",
           className: l()(o.icon, s)
         })
       })

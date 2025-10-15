@@ -1,4 +1,4 @@
-/** Chunk was on 64853 **/
+/** Chunk was on 36232 **/
 /** chunk id: 870569, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -27,8 +27,8 @@ let d = Chunk647438.forwardRef(function(e, t) {
     tooltipClassName: g,
     onMouseEnter: h,
     onMouseLeave: j,
-    "aria-label": N,
-    "aria-checked": S,
+    "aria-label": S,
+    "aria-checked": N,
     role: x,
     tooltipColor: E,
     tooltipForceOpen: P,
@@ -43,23 +43,23 @@ let d = Chunk647438.forwardRef(function(e, t) {
     colorClass: null != m ? m : "",
     color: "currentColor"
   }) : f;
-  return (0, r.jsx)(s.aML, {
+  return (0, r.jsx)(a.aML, {
     "data-migration-pending": true,
     tooltipClassName: g,
     text: n,
-    "aria-label": N,
+    "aria-label": S,
     color: E,
     tooltipContentClassName: C,
     forceOpen: P,
     shouldShow: T,
     positionKeyStemOverride: w,
     children: e => {
-      var n, s, {
+      var n, a, {
           onClick: f,
           onMouseEnter: m,
           onMouseLeave: g
         } = e,
-        N = function(e, t) {
+        S = function(e, t) {
           if (null == e) return {};
           var n, r, i = function(e, t) {
             if (null == e) return {};
@@ -74,7 +74,7 @@ let d = Chunk647438.forwardRef(function(e, t) {
           }
           return i
         }(e, ["onClick", "onMouseEnter", "onMouseLeave"]);
-      return (0, r.jsxs)(a.zx, (n = function(e) {
+      return (0, r.jsxs)(s.zx, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -91,10 +91,10 @@ let d = Chunk647438.forwardRef(function(e, t) {
           })
         }
         return e
-      }({}, N), s = s = {
+      }({}, S), a = a = {
         buttonRef: t,
-        look: a.zx.Looks.BLANK,
-        size: a.zx.Sizes.NONE,
+        look: s.zx.Looks.BLANK,
+        size: s.zx.Sizes.NONE,
         disabled: p,
         innerClassName: b,
         wrapperClassName: o()(u.button, y),
@@ -117,7 +117,7 @@ let d = Chunk647438.forwardRef(function(e, t) {
         },
         onContextMenu: l,
         role: x,
-        "aria-checked": S,
+        "aria-checked": N,
         focusProps: {
           offset: {
             left: false,
@@ -132,15 +132,15 @@ let d = Chunk647438.forwardRef(function(e, t) {
           mask: c.ZP.Masks.PANEL_BUTTON,
           children: I
         }) : I, i]
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
           var r = Object.getOwnPropertySymbols(e);
           n.push.apply(n, r)
         }
         return n
-      })(Object(s)).forEach(function(e) {
-        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(s, e))
+      })(Object(a)).forEach(function(e) {
+        Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(a, e))
       }), n))
     }
   })

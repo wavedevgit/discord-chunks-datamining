@@ -20,16 +20,16 @@ let m = e => {
   let {
     guildId: t,
     inviteCode: n
-  } = e, [m, b] = i.useState(h.hO.INITIAL), [_, O] = i.useState(null != n);
+  } = e, [m, b] = i.useState(h.hO.INITIAL), [_, E] = i.useState(null != n);
   i.useEffect(() => {
-    null != n && a.ZP.resolveInvite(n, "Hub").finally(() => O(false))
+    null != n && a.ZP.resolveInvite(n, "Hub").finally(() => E(false))
   }, [n]);
-  let E = (0, l.e7)([u.Z], () => null != n ? u.Z.getInvite(n) : null),
-    v = (0, l.e7)([c.Z], () => c.Z.getGuild(t));
+  let O = (0, l.e7)([u.Z], () => null != n ? u.Z.getInvite(n) : null),
+    y = (0, l.e7)([c.Z], () => c.Z.getGuild(t));
   i.useEffect(() => {
-    null != v && (0, s.uL)(f.Z5c.CHANNEL(t))
-  }, [v, t]);
-  let y = i.useCallback(e => {
+    null != y && (0, s.uL)(f.Z5c.CHANNEL(t))
+  }, [y, t]);
+  let v = i.useCallback(e => {
       b(t => Math.max(t, e))
     }, []),
     I = (0, d.gK)();
@@ -40,13 +40,13 @@ let m = e => {
       splash: I,
       waveState: m,
       showLogo: false,
-      updateWaveState: y,
+      updateWaveState: v,
       children: [(0, r.jsx)("div", {
         className: g.dragRegion
       }), (0, r.jsx)("div", {
         className: g.contentWrapper,
         children: !_ && (0, r.jsx)(p.H, {
-          invite: E
+          invite: O
         })
       })]
     })

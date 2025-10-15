@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 273596, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => j
 }), require("./388685.js"), require("./415506.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -42,12 +42,12 @@ let S = Object.freeze({
     object: Chunk981631.qAy.CARD,
     section: Chunk981631.jXE.DISCOVER_SEARCH
   },
-  j = s().throttle(Chunk900849.c6, 1e3, {
+  P = s().throttle(Chunk900849.c6, 1e3, {
     leading: false,
     trailing: true
   });
 
-function P(e) {
+function j(e) {
   let {
     loadId: t,
     onGuildCardSeen: n,
@@ -56,13 +56,13 @@ function P(e) {
     guildIds: s,
     loading: f,
     searchResultsQuery: I,
-    loadMore: P,
-    searchCategoryId: x
+    loadMore: j,
+    searchCategoryId: A
   } = (0, b.f)({
     loadId: t
-  }), A = 0 === s.length && !f, Z = i.useContext(d.AnalyticsContext), [w, L] = i.useState((0, m.PM)()), [R, D] = i.useState(true), k = i.useRef(R), [M, U] = i.useState(3), G = i.useRef(M), B = i.useRef(null), H = i.useCallback(e => {
-    if (null != e && !A && !f) 336 * (s.length / M) <= e.height && P()
-  }, [A, f, s.length, M, P]), V = i.useCallback(e => {
+  }), x = 0 === s.length && !f, Z = i.useContext(d.AnalyticsContext), [w, L] = i.useState((0, m.PM)()), [R, D] = i.useState(true), k = i.useRef(R), [M, U] = i.useState(3), G = i.useRef(M), B = i.useRef(null), H = i.useCallback(e => {
+    if (null != e && !x && !f) 336 * (s.length / M) <= e.height && j()
+  }, [x, f, s.length, M, j]), V = i.useCallback(e => {
     let t = e.contentRect;
     if (null == t) return;
     let n = t.width;
@@ -74,16 +74,16 @@ function P(e) {
   i.useEffect(() => {
     L((0, m.PM)())
   }, [I]), i.useEffect(() => {
-    j({
+    P({
       loadId: t,
       searchId: w,
       query: I,
       guildResults: s.map(h.Z.getGuild).filter(p.lm),
       analyticsContext: Z,
-      categoryId: x
+      categoryId: A
     })
-  }, [Z, s, t, x, w, I]);
-  let z = i.useCallback(e => n(e, x), [n, x]),
+  }, [Z, s, t, A, w, I]);
+  let z = i.useCallback(e => n(e, A), [n, A]),
     W = i.useMemo(() => f ? [s.length, 0] : [s.length], [s.length, f]),
     Y = i.useCallback((e, n, i) => {
       switch (e) {
@@ -98,12 +98,12 @@ function P(e) {
             }),
             children: [!R && (0, r.jsxs)("div", {
               className: C.headingFilters,
-              children: [(0, r.jsx)(O.Z, {
+              children: [(0, r.jsx)(E.Z, {
                 loadId: t
-              }), (0, r.jsx)(v.Z, {
+              }), (0, r.jsx)(y.Z, {
                 loadId: t
               })]
-            }), A && (0, r.jsx)(E.Z, {
+            }), x && (0, r.jsx)(O.Z, {
               loadId: t
             })]
           }, i);
@@ -114,18 +114,18 @@ function P(e) {
             })
           }, i)
       }
-    }, [A, R, t]),
+    }, [x, R, t]),
     q = i.useCallback(e => {
       switch (e) {
         case 0:
           let t = R ? 16 : 50;
-          return A ? t + 448 : t;
+          return x ? t + 448 : t;
         case 1:
           return 120;
         default:
           throw Error("[getSectionHeight] Failed for section: ".concat(e))
       }
-    }, [A, R]),
+    }, [x, R]),
     K = i.useCallback((e, t) => {
       switch (e) {
         case 0:
@@ -160,14 +160,14 @@ function P(e) {
         let e = s[t];
         return (0, r.jsx)("div", {
           style: n,
-          children: (0, r.jsx)(y.ZP, {
+          children: (0, r.jsx)(v.ZP, {
             guildId: e,
-            onClick: async e => await X(e, t, x, N),
+            onClick: async e => await X(e, t, A, N),
             onView: e => z(e)
           })
         }, i)
       }
-    }, [s, X, z, x]);
+    }, [s, X, z, A]);
   i.useEffect(() => {
     let e = B.current;
     return () => {
@@ -197,10 +197,10 @@ function P(e) {
       let t = null == (e = B.current) ? true : e.getScrollerState();
       if (null == t) return;
       let n = t.scrollTop + t.offsetHeight;
-      t.scrollHeight - n < 240 && P()
+      t.scrollHeight - n < 240 && j()
     }, 100, {
       leading: true
-    }), [P]),
+    }), [j]),
     ee = R ? S : T;
   return (0, r.jsx)("div", {
     className: C.container,
@@ -228,7 +228,7 @@ function P(e) {
           className: C.sidebarContent,
           children: [(0, r.jsx)("div", {
             className: C.sidebarLanguageSelect,
-            children: (0, r.jsx)(v.Z, {
+            children: (0, r.jsx)(y.Z, {
               loadId: t
             })
           }), (0, r.jsx)(_.Z, {

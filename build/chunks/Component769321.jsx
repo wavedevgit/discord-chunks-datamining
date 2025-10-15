@@ -1,4 +1,4 @@
-/** Chunk was on 31553 **/
+/** Chunk was on 93979 **/
 /** chunk id: 769321, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk99690 = require("./99690.jsx"),
@@ -26,11 +26,11 @@ function g(e) {
     applicationRoleConnection: n,
     locale: t,
     onApplicationClicked: i,
-    selectedGuildId: r
-  } = e, o = (0, c.rm)(n, t);
+    selectedGuildId: o
+  } = e, r = (0, c.rm)(n, t);
   return (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)("div", {
-      className: v.platformIconContainer,
+      className: j.platformIconContainer,
       children: null != n.application.bot ? (0, l.jsx)(a.Z, {
         user: new p.Z(n.application.bot),
         size: s.EFr.SIZE_16
@@ -39,18 +39,18 @@ function g(e) {
         size: "sm"
       })
     }), (0, l.jsxs)("div", {
-      className: v.connectionInfo,
+      className: j.connectionInfo,
       children: [(0, l.jsxs)(s.P3F, {
-        className: v.connectedAppRoleAccountClickable,
+        className: j.connectedAppRoleAccountClickable,
         onClick: () => {
           null == i || i(), (0, d.transitionToGlobalDiscovery)({
-            tab: x.GlobalDiscoveryTab.APPS,
+            tab: h.GlobalDiscoveryTab.APPS,
             applicationId: n.application.id,
             newSessionState: {
               entrypoint: {
                 name: u.xF.APPLICATION_DIRECTORY_URL
               },
-              guildId: r
+              guildId: o
             }
           })
         },
@@ -65,14 +65,14 @@ function g(e) {
         }) : null, (0, l.jsx)(s.Text, {
           variant: "text-xxs/normal",
           color: "text-default",
-          className: v.connectedAppRoleAccountPoweredBy,
-          children: j.intl.format(j.t.zIT9YG, {
+          className: j.connectedAppRoleAccountPoweredBy,
+          children: v.intl.format(v.t.zIT9YG, {
             applicationHook: () => n.application.name
           })
         })]
-      }), null != o && o.length > 0 ? (0, l.jsx)("div", {
-        className: v.metadata,
-        children: o
+      }), null != r && r.length > 0 ? (0, l.jsx)("div", {
+        className: j.metadata,
+        children: r
       }) : null]
     })]
   })
@@ -85,11 +85,11 @@ function b(e) {
     onClose: i
   } = e, {
     trackUserProfileAction: s
-  } = (0, h.KZ)(), a = (0, o.e7)([m.default], () => m.default.locale), c = (0, o.e7)([f.Z], () => f.Z.getGuildId());
+  } = (0, x.KZ)(), a = (0, r.e7)([m.default], () => m.default.locale), c = (0, r.e7)([f.Z], () => f.Z.getGuildId());
   return 0 === n.length ? null : (0, l.jsx)("ul", {
-    className: r()(v.container, t),
+    className: o()(j.container, t),
     children: n.map((e, n) => (0, l.jsx)("li", {
-      className: v.connection,
+      className: j.connection,
       children: (0, l.jsx)(g, {
         applicationRoleConnection: e,
         locale: a,

@@ -1,4 +1,4 @@
-/** Chunk was on 23404 **/
+/** Chunk was on 31029 **/
 /** chunk id: 846464, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   q: () => y
@@ -38,7 +38,7 @@ function y(e) {
   } = (0, h.JL)(), {
     isGift: b,
     claimableRewards: y
-  } = (0, _.wD)(), S = b && null != y && y.length > 0, v = (0, C.N)(i), w = (0, o.Nx)(), I = (0, s.Z)({
+  } = (0, _.wD)(), v = b && null != y && y.length > 0, S = (0, C.N)(i), w = (0, o.Nx)(), I = (0, s.Z)({
     location: "PremiumPaymentSelect"
   });
   return (0, r.jsx)(L, {
@@ -55,21 +55,21 @@ function y(e) {
         defaultPlanId: d
       } = e;
       r(n);
-      let C = f.h8.PLAN_SELECT,
+      let C = m.h8.PLAN_SELECT,
         c = (0, p.k5)(t);
-      c !== g.Si.TIER_1 && c !== g.Si.TIER_2 || n !== g.Si.TIER_0 || a || (C = f.h8.WHAT_YOU_LOSE);
+      c !== g.Si.TIER_1 && c !== g.Si.TIER_2 || n !== g.Si.TIER_0 || a || (C = m.h8.WHAT_YOU_LOSE);
       let u = (0, x.T)({
           userTrialOffer: l,
           isGift: a,
           skuId: n
         }),
-        _ = (0, m.Kp)({
+        _ = (0, f.Kp)({
           isTrial: u,
           isGift: a,
           selectedSkuId: n,
           startedPaymentFlowWithPaymentSources: s
         });
-      C !== f.h8.WHAT_YOU_LOSE && _ && (C = f.h8.REVIEW, o((0, m.nA)(n, t, d))), i(C, {
+      C !== m.h8.WHAT_YOU_LOSE && _ && (C = m.h8.REVIEW, o((0, f.nA)(n, t, d))), i(C, {
         analyticsDataOverride: {
           sku_id: n
         }
@@ -80,7 +80,7 @@ function y(e) {
       setSelectedSkuId: a,
       handleStepChange: t,
       isGift: b,
-      userTrialOffer: v,
+      userTrialOffer: S,
       startedPaymentFlowWithPaymentSources: d.current,
       setSelectedPlanId: c,
       defaultPlanId: j
@@ -89,7 +89,7 @@ function y(e) {
     isGift: b,
     inOfferExperience: w,
     priceOptions: u,
-    showPromotionalGiftBanner: S,
+    showPromotionalGiftBanner: v,
     enablePremiumBrandRefresh: I
   })
 }
@@ -103,17 +103,17 @@ function L(e) {
     priceOptions: s,
     showPromotionalGiftBanner: C,
     enablePremiumBrandRefresh: h
-  } = e, f = h ? (0, r.jsx)(l.Heading, {
+  } = e, m = h ? (0, r.jsx)(l.Heading, {
     variant: "heading-lg/bold",
     children: j.intl.string(j.t["r+SebW"])
   }) : (0, r.jsx)(l.Heading, {
     variant: "heading-md/semibold",
     children: j.intl.string(j.t["r+SebW"])
   }), {
-    giftRecipient: m
+    giftRecipient: f
   } = (0, _.wD)(), x = (0, d.y)({
     location: "PremiumPaymentSelect"
-  }) && i && null != m;
+  }) && i && null != f;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.xBx, {
       "data-migration-pending": true,
@@ -124,7 +124,7 @@ function L(e) {
       children: (0, r.jsxs)(l.Kqy, {
         direction: "horizontal",
         justify: "space-between",
-        children: [f, (0, r.jsx)(l.olH, {
+        children: [m, (0, r.jsx)(l.olH, {
           "data-migration-pending": true,
           className: b.close,
           innerClassName: b.closeInner,
@@ -144,7 +144,7 @@ function L(e) {
         isGift: i,
         priceOptions: s,
         showPromotionalGiftBanner: C,
-        giftRecipient: m
+        giftRecipient: f
       }) : (0, r.jsx)(c.ZP, {
         onSelectSku: e => t((0, p.Wz)(e)),
         isGift: i,

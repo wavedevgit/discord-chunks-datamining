@@ -1,4 +1,4 @@
-/** Chunk was on 56848 **/
+/** Chunk was on 3091 **/
 /** chunk id: 414655, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => P
@@ -31,95 +31,95 @@ function P(e) {
   } = e, {
     wishlistId: n,
     currentUser: P,
-    wishlistSettings: S
-  } = (0, a.cj)([v.Z, m.default], () => {
-    let e = v.Z.getFirstWishlistId(t.id);
+    wishlistSettings: I
+  } = (0, l.cj)([h.Z, m.default], () => {
+    let e = h.Z.getFirstWishlistId(t.id);
     return {
       wishlistId: e,
       currentUser: m.default.getCurrentUser(),
-      wishlistSettings: null != e ? v.Z.getWishlistSettings(t.id, e) : null
+      wishlistSettings: null != e ? h.Z.getWishlistSettings(t.id, e) : null
     }
   }), {
     analyticsLocations: w
-  } = (0, d.ZP)(), E = (null == P ? true : P.id) === t.id, T = false === t.nsfwAllowed, [A, N] = i.useState(true);
+  } = (0, d.ZP)(), S = (null == P ? true : P.id) === t.id, E = false === t.nsfwAllowed, [T, C] = i.useState(true);
   i.useEffect(() => {
-    (null == S ? true : S.visibility) != null && N(S.visibility === l.f.PUBLIC)
-  }, [null == S ? true : S.visibility]);
+    (null == I ? true : I.visibility) != null && C(I.visibility === a.f.PUBLIC)
+  }, [null == I ? true : I.visibility]);
   let {
-    wishlist: C,
-    error: D
-  } = (0, p.kZ)(n, t.id), k = i.useCallback(() => {
+    wishlist: D,
+    error: A
+  } = (0, p.kZ)(n, t.id), N = i.useCallback(() => {
     if (null == n) return;
-    let e = A ? l.f.PRIVATE : l.f.PUBLIC;
-    N(!A), g.Z.updateWishlistVisibility(n, e), (0, h.Er)({
+    let e = T ? a.f.PRIVATE : a.f.PUBLIC;
+    C(!T), g.Z.updateWishlistVisibility(n, e), (0, b.Er)({
       wishlistId: n,
-      action: A ? x.NW.WISHLIST_TOGGLE_PRIVATE : x.NW.WISHLIST_TOGGLE_PUBLIC,
+      action: T ? O.NW.WISHLIST_TOGGLE_PRIVATE : O.NW.WISHLIST_TOGGLE_PUBLIC,
       analyticsLocations: w
     })
-  }, [n, A, w]), Z = i.useCallback(() => {
-    (0, s.pT)(), (0, f.mK)({
+  }, [n, T, w]), k = i.useCallback(() => {
+    (0, o.pT)(), (0, f.mK)({
       analyticsLocations: w,
       analyticsSource: u.Z.USER_PROFILE_WISHLIST
     })
   }, [w]);
-  return null != D ? null : null == C || 0 === C.items.length ? (0, r.jsx)(y.F, {
+  return null != A ? null : null == D || 0 === D.items.length ? (0, r.jsx)(y.F, {
     fade: true,
     children: (0, r.jsxs)("div", {
-      className: I.emptyStateContainer,
+      className: _.emptyStateContainer,
       children: [(0, r.jsxs)("div", {
-        className: I.emptyStateText,
-        children: [(0, r.jsx)(c.Heading, {
+        className: _.emptyStateText,
+        children: [(0, r.jsx)(s.Heading, {
           variant: "heading-md/medium",
           color: "header-primary",
-          children: O.intl.string(O.t.HGnLLS)
-        }), (0, r.jsx)(c.Text, {
+          children: x.intl.string(x.t.HGnLLS)
+        }), (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
-          children: O.intl.string(O.t["/X1ny8"])
+          children: x.intl.string(x.t["/X1ny8"])
         })]
-      }), E && (0, r.jsx)(c.Button, {
+      }), S && (0, r.jsx)(s.Button, {
         variant: "primary",
         size: "sm",
-        icon: c.EOn,
-        text: O.intl.string(O.t.ZbS4QE),
-        onClick: Z
+        icon: s.EOn,
+        text: x.intl.string(x.t.ZbS4QE),
+        onClick: k
       })]
     })
   }) : (0, r.jsxs)(y.F, {
-    className: I.scroller,
+    className: _.scroller,
     fade: true,
     children: [(0, r.jsxs)("div", {
-      className: I.headerRow,
+      className: _.headerRow,
       children: [(0, r.jsxs)("div", {
-        className: I.teenDisclaimer,
-        children: [(0, r.jsx)(c.Text, {
+        className: _.teenDisclaimer,
+        children: [(0, r.jsx)(s.Text, {
           variant: "text-xs/semibold",
           color: "text-secondary",
-          children: O.intl.format(O.t.r6Y1Li, {
-            count: C.items.length
+          children: x.intl.format(x.t.r6Y1Li, {
+            count: D.items.length
           })
-        }), !A && (0, r.jsx)(o.u, {
-          text: O.intl.string(O.t.RX7D9v),
+        }), !T && (0, r.jsx)(c.u, {
+          text: x.intl.string(x.t.RX7D9v),
           asContainer: true,
-          children: (0, r.jsx)(c.tEY, {
+          children: (0, r.jsx)(s.tEY, {
             children: (0, r.jsx)("div", {
               role: "tooltip",
               tabIndex: 0,
-              children: (0, r.jsx)(c.kZF, {
+              children: (0, r.jsx)(s.kZF, {
                 size: "custom",
                 width: 16,
                 height: 16
               })
             })
           })
-        }), A && T && (0, r.jsx)(o.u, {
-          text: O.intl.string(O.t.d78ChY),
+        }), T && E && (0, r.jsx)(c.u, {
+          text: x.intl.string(x.t.d78ChY),
           asContainer: true,
-          children: (0, r.jsx)(c.tEY, {
+          children: (0, r.jsx)(s.tEY, {
             children: (0, r.jsx)("div", {
               role: "tooltip",
               tabIndex: 0,
-              children: (0, r.jsx)(c.d3s, {
+              children: (0, r.jsx)(s.d3s, {
                 size: "custom",
                 width: 16,
                 height: 16
@@ -127,30 +127,30 @@ function P(e) {
             })
           })
         })]
-      }), E ? (0, r.jsxs)("div", {
-        className: I.headerActions,
-        children: [(0, r.jsx)(c.Button, {
+      }), S ? (0, r.jsxs)("div", {
+        className: _.headerActions,
+        children: [(0, r.jsx)(s.Button, {
           variant: "secondary",
           size: "sm",
-          icon: c.qJs,
-          text: O.intl.string(O.t.SDUwMz),
-          onClick: Z
-        }), (0, r.jsx)(b.Z, {
-          isOwner: E,
-          isWishlistPublic: A,
-          onToggleVisibility: k
+          icon: s.qJs,
+          text: x.intl.string(x.t.SDUwMz),
+          onClick: k
+        }), (0, r.jsx)(j.Z, {
+          isOwner: S,
+          isWishlistPublic: T,
+          onToggleVisibility: N
         })]
-      }) : (0, r.jsx)(c.Button, {
+      }) : (0, r.jsx)(s.Button, {
         variant: "secondary",
         size: "sm",
-        icon: c.EOn,
-        text: O.intl.string(O.t["i/yzHh"]),
-        onClick: Z
+        icon: s.EOn,
+        text: x.intl.string(x.t["i/yzHh"]),
+        onClick: k
       })]
-    }), (0, r.jsx)(j.Z, {
-      items: C.items,
+    }), (0, r.jsx)(v.Z, {
+      items: D.items,
       profileOwner: t,
-      isOwner: E
+      isOwner: S
     })]
   })
 }

@@ -1,7 +1,7 @@
-/** Chunk was on 31553 **/
+/** Chunk was on 93979 **/
 /** chunk id: 116906, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => Z
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -26,85 +26,85 @@ var Chunk442837 = require("./442837.js"),
   Chunk7994 = require("./7994.js"),
   Chunk878449 = require("./878449.js");
 
-function O(e) {
+function Z(e) {
   let {
     user: n,
     currentUser: t,
-    guildId: O,
-    subsection: N,
-    onClose: P
+    guildId: Z,
+    subsection: O,
+    onClose: N
   } = e, {
-    voiceActivityStatusEnabled: T
-  } = (0, o.U)({
+    voiceActivityStatusEnabled: A
+  } = (0, r.U)({
     location: "UserProfileModalActivity"
-  }), A = (0, u.b)({
+  }), T = (0, u.b)({
     location: "UserProfileModalActivity"
   }), {
-    live: E,
-    recent: S,
+    live: P,
+    recent: E,
     stream: C
   } = (0, m.Z)(n.id), {
-    voiceChannel: _,
+    voiceChannel: S,
     voiceActivity: w
   } = (0, p.Z)({
     userId: n.id,
-    guildId: O
-  }), D = (0, i.e7)([s.Z], () => s.Z.isFetchingUserOutbox(n.id)), R = n.id === t.id, L = (0, i.e7)([c.Z, a.Z], () => {
-    let e = R ? c.Z.getStatus() : a.Z.getStatus(n.id);
-    return e === r.Skl.OFFLINE || e === r.Skl.INVISIBLE
-  }), M = E.length > 0 || null != C, U = T && null == C && null == w && null != _, k = !L && (M || U), B = S.length > 0;
-  return k || B || !D ? (0, l.jsxs)(r.zJl, {
+    guildId: Z
+  }), R = (0, i.e7)([s.Z], () => s.Z.isFetchingUserOutbox(n.id)), D = n.id === t.id, L = (0, i.e7)([c.Z, a.Z], () => {
+    let e = D ? c.Z.getStatus() : a.Z.getStatus(n.id);
+    return e === o.Skl.OFFLINE || e === o.Skl.INVISIBLE
+  }), M = P.length > 0 || null != C, B = A && null == C && null == w && null != S, U = !L && (M || B), k = E.length > 0;
+  return U || k || !R ? (0, l.jsxs)(o.zJl, {
     className: y.scroller,
     fade: true,
-    children: [k ? (0, l.jsx)(f.Z, {
+    children: [U ? (0, l.jsx)(f.Z, {
       "aria-label": I.intl.string(I.t.J6STd3),
       children: (0, l.jsxs)("ul", {
         className: y.activityList,
-        children: [!A && U && (0, l.jsx)("li", {
-          children: (0, l.jsx)(v.Z, {
-            user: n,
-            currentUser: t,
-            voiceChannel: _,
-            onClose: P
-          })
-        }), null != C && (0, l.jsx)("li", {
+        children: [!T && B && (0, l.jsx)("li", {
           children: (0, l.jsx)(j.Z, {
             user: n,
             currentUser: t,
-            stream: C,
-            onClose: P
+            voiceChannel: S,
+            onClose: N
           })
-        }), E.map((e, i) => (0, l.jsx)("li", {
-          children: (0, l.jsx)(h.Z, {
+        }), null != C && (0, l.jsx)("li", {
+          children: (0, l.jsx)(v.Z, {
+            user: n,
+            currentUser: t,
+            stream: C,
+            onClose: N
+          })
+        }), P.map((e, i) => (0, l.jsx)("li", {
+          children: (0, l.jsx)(x.Z, {
             user: n,
             currentUser: t,
             activity: e,
-            onClose: P
+            onClose: N
           })
         }, "live-".concat(i)))]
       })
-    }) : null, B ? (0, l.jsx)(f.Z, {
+    }) : null, k ? (0, l.jsx)(f.Z, {
       heading: I.intl.string(I.t.M0zgnZ),
-      introText: R ? I.intl.format(I.t["4bk9Ag"], {
-        learnMoreHook: (e, n) => (0, l.jsx)(r.Anchor, {
+      introText: D ? I.intl.format(I.t["4bk9Ag"], {
+        learnMoreHook: (e, n) => (0, l.jsx)(o.Anchor, {
           href: d.Z.getArticleURL(b.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
         }, n)
       }) : true,
-      scrollIntoView: N === g.Tb.RECENT_ACTIVITY,
+      scrollIntoView: O === g.Tb.RECENT_ACTIVITY,
       children: (0, l.jsx)("ul", {
         className: y.activityList,
-        children: S.map(e => (0, l.jsx)("li", {
-          children: (0, l.jsx)(x.Z, {
+        children: E.map(e => (0, l.jsx)("li", {
+          children: (0, l.jsx)(h.Z, {
             user: n,
             entry: e,
-            onClose: P
+            onClose: N
           })
         }, e.id))
       })
     }) : null]
   }) : (0, l.jsx)("div", {
-    className: Z.empty,
-    children: (0, l.jsx)(r.$jN, {})
+    className: _.empty,
+    children: (0, l.jsx)(o.$jN, {})
   })
 }

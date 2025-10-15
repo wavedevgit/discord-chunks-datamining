@@ -92,8 +92,8 @@ class T extends Chunk647438.PureComponent {
               height: 40,
               className: I.notificationIcon
             }),
-            title: j.intl.string(j.t.U38qZm),
-            confirmText: j.intl.string(j.t.TzAl1d),
+            title: Z.intl.string(Z.t.U38qZm),
+            confirmText: Z.intl.string(Z.t.TzAl1d),
             onNotificationClick: this.handleNotificationClick,
             onConfirmClick: this.handleReload,
             onDismissClick: this.hideNotification,
@@ -129,7 +129,7 @@ class T extends Chunk647438.PureComponent {
     }), P(this, "handleReload", e => {
       this.setState({
         busy: true
-      }), N(), h.Z.track(Z.rMx.NOTIFICATION_CLICKED, {
+      }), N(), h.Z.track(j.rMx.NOTIFICATION_CLICKED, {
         notif_type: C.n0.OverlayCrashed,
         action_type: "reload"
       }, true), e.stopPropagation(), setTimeout(() => location.reload(true), 200)
@@ -162,7 +162,7 @@ class k extends Chunk647438.PureComponent {
     let i = (0, b.getPID)(),
       r = (0, b.getRPCAuthToken)();
     (0, f.lW)({
-      type: Z.BmY.DISPATCH,
+      type: j.BmY.DISPATCH,
       pid: (0, b.getPID)(),
       token: r,
       payloads: [{
@@ -178,7 +178,7 @@ class k extends Chunk647438.PureComponent {
     let s = (0, v.V6)(e, E.gl.Hook, {
       extra: t
     });
-    h.Z.track(Z.rMx.APP_CRASHED, {
+    h.Z.track(j.rMx.APP_CRASHED, {
       path: n.pathname,
       extra: t,
       error_message: e.message,

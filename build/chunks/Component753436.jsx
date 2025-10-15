@@ -1,12 +1,12 @@
-/** Chunk was on 36073 **/
-/** chunk id: 753436, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 3091 **/
+/** chunk id: 753436, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  S: () => j
+  S: () => v
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk79116 = require("./79116.js"),
   Chunk594174 = require("./594174.js"),
   Chunk947790 = require("./947790.js"),
@@ -22,9 +22,9 @@ var Chunk951288 = require("./951288.js"),
 function y(e) {
   let {
     index: t,
-    widgetType: r,
+    widgetType: n,
     game: a,
-    children: l
+    children: o
   } = e, c = i.useRef(null), {
     isDragging: u,
     dragSourcePosition: d
@@ -32,67 +32,67 @@ function y(e) {
     dragRef: c,
     dropRef: c,
     index: t,
-    widgetType: r,
+    widgetType: n,
     game: a
-  }), g = null != d, f = g && t < d, p = g && t > d;
-  return (0, n.jsx)("div", {
+  }), f = null != d, g = f && t < d, p = f && t > d;
+  return (0, r.jsx)("div", {
     ref: c,
-    className: o()(O.container, {
-      [O.isDragging]: u,
-      [O.dropIndicatorBefore]: f,
-      [O.dropIndicatorAfter]: p
+    className: l()(h.container, {
+      [h.isDragging]: u,
+      [h.dropIndicatorBefore]: g,
+      [h.dropIndicatorAfter]: p
     }),
-    "aria-label": b.intl.formatToPlainString(b.t["0dR3g4"], {
+    "aria-label": m.intl.formatToPlainString(m.t["0dR3g4"], {
       positionNumber: t + 1
     }),
-    children: l
+    children: o
   })
 }
 
-function j(e) {
+function v(e) {
   let {
     game: t,
-    userId: r,
+    userId: n,
     widgetType: i,
     guildId: a,
     channelId: s,
-    disableInteraction: b = false,
-    index: j
-  } = e, x = (0, p.Z)(t.applicationId).length > 0, h = c.default.getCurrentUser(), v = (null == h ? true : h.id) === r, _ = !b && v, w = (0, u.kO)(t.applicationId), {
-    isDragging: P
-  } = (0, l.f)(e => ({
+    disableInteraction: m = false,
+    index: v
+  } = e, j = (0, p.Z)(t.applicationId).length > 0, O = c.default.getCurrentUser(), x = (null == O ? true : O.id) === n, _ = !m && x, P = (0, u.kO)(t.applicationId), {
+    isDragging: I
+  } = (0, o.f)(e => ({
     isDragging: e.isDragging()
-  })), I = () => (0, n.jsxs)(n.Fragment, {
-    children: [(0, n.jsx)(d.Z, {
+  })), w = () => (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(d.Z, {
       imageSrc: t.imageSrc,
       gameName: t.gameName,
       applicationId: t.applicationId,
-      userId: r,
-      disableInteraction: b,
-      className: o()(x ? O.socialProofBackdrop : true, (null == t ? true : t.imageSrc) == null || b ? true : m.hoverActiveEffect),
-      hideTooltip: P
-    }), _ && (0, n.jsx)(g.Z, {
+      userId: n,
+      disableInteraction: m,
+      className: l()(j ? h.socialProofBackdrop : true, (null == t ? true : t.imageSrc) == null || m ? true : b.hoverActiveEffect),
+      hideTooltip: I
+    }), _ && (0, r.jsx)(f.Z, {
       game: t,
       widgetType: i,
-      className: O.removeGameButton,
+      className: h.removeGameButton,
       iconSize: "xs"
-    }), !b && (0, n.jsx)(f.Z, {
-      className: O.socialProof,
+    }), !m && (0, r.jsx)(g.Z, {
+      className: h.socialProof,
       applicationId: t.applicationId,
       guildId: a,
       channelId: s,
       visuallyHideLabel: true
     })]
   });
-  return w ? (0, n.jsx)("div", {
-    className: m.loadingCover
-  }) : _ ? (0, n.jsx)(y, {
+  return P ? (0, r.jsx)("div", {
+    className: b.loadingCover
+  }) : _ ? (0, r.jsx)(y, {
     widgetType: i,
-    index: null != j ? j : 0,
+    index: null != v ? v : 0,
     game: t,
-    children: I()
-  }) : (0, n.jsx)("div", {
-    className: O.container,
-    children: I()
+    children: w()
+  }) : (0, r.jsx)("div", {
+    className: h.container,
+    children: w()
   })
 }

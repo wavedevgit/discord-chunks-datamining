@@ -1,23 +1,36 @@
-/** Chunk was on 1272 **/
-/** chunk id: 365113, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 365113, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   o: () => r
 });
 let r = (0, require("./722733.js").Z)({
-  name: "2025-09-desktop-crash-landing-on-you",
+  name: "2025-10-desktop-land-and-learn",
   kind: "user",
   defaultConfig: {
-    removeFriends: false,
-    landOnProfilePage: false
+    trackFirstPages: false,
+    friendsTab: false,
+    dmsTab: false,
+    demureActivityCards: false
   },
   variations: {
+    0: {
+      trackFirstPages: true,
+      friendsTab: false,
+      dmsTab: false,
+      demureActivityCards: false
+    },
     1: {
-      removeFriends: true,
-      landOnProfilePage: false
+      trackFirstPages: true,
+      friendsTab: true,
+      dmsTab: false,
+      demureActivityCards: true
     },
     2: {
-      removeFriends: true,
-      landOnProfilePage: true
+      trackFirstPages: true,
+      friendsTab: false,
+      dmsTab: true,
+      demureActivityCards: true
     }
   }
 })

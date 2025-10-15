@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 848543, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => A
+  Z: () => x
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk890332 = require("./890332.js");
 
-function P(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -49,7 +49,7 @@ function P(e) {
   return e
 }
 
-function x(e, t) {
+function A(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -62,7 +62,7 @@ function x(e, t) {
   }), e
 }
 
-function A(e) {
+function x(e) {
   var {
     channel: t
   } = e, l = function(e, t) {
@@ -80,16 +80,16 @@ function A(e) {
     }
     return i
   }(e, ["channel"]);
-  let A = i.useRef(null),
+  let x = i.useRef(null),
     {
       mute: Z,
       suppress: w
-    } = (0, O.Z)(t),
-    L = (0, o.e7)([E.Z], () => E.Z.isDeaf()),
+    } = (0, E.Z)(t),
+    L = (0, o.e7)([O.Z], () => O.Z.isDeaf()),
     R = Z || w || L,
     [D, k] = i.useState(false),
     M = t.getGuildId(),
-    U = (0, y.sR)({
+    U = (0, v.sR)({
       isSoundboardButtonDisabled: R
     }),
     [G, B] = (0, _.cv)(U),
@@ -103,7 +103,7 @@ function A(e) {
       let {
         default: e
       } = await n.e("56049").then(n.bind(n, 338991));
-      return t => (0, r.jsx)(e, x(P({
+      return t => (0, r.jsx)(e, A(j({
         guildId: M,
         sourceAnalyticsLocations: H
       }, t), {
@@ -121,17 +121,17 @@ function A(e) {
   } = (0, c.j)(), K = i.useCallback(() => {
     R || k(!D)
   }, [R, D]);
-  return (0, v.yp)({
+  return (0, y.yp)({
     event: S.CkL.TOGGLE_SOUNDBOARD,
     handler: K
   }), (0, r.jsx)(g.Gt, {
     value: H,
     children: (0, r.jsx)(u.u, {
-      targetElementRef: A,
+      targetElementRef: x,
       text: Z ? N.intl.string(N.t["Ox4/zc"]) : w ? N.intl.string(N.t["+YBKYG"]) : L ? N.intl.string(N.t.X1lQlp) : N.intl.string(N.t["6EJvHh"]),
       asContainer: true,
       children: (0, r.jsx)(p.yRy, {
-        targetElementRef: A,
+        targetElementRef: x,
         animation: p.yRy.Animation.FADE,
         shouldShow: D,
         position: "top",
@@ -152,14 +152,14 @@ function A(e) {
           })
         },
         children: e => (0, r.jsx)("div", {
-          ref: A,
-          children: (0, r.jsx)(d.zx, x(P(x(P({}, e), {
-            className: a()(j.button, j.buttonColor, {
-              [j.greyButtonActive]: D,
-              [j.disabled]: R
+          ref: x,
+          children: (0, r.jsx)(d.zx, A(j(A(j({}, e), {
+            className: a()(P.button, P.buttonColor, {
+              [P.greyButtonActive]: D,
+              [P.disabled]: R
             }),
-            wrapperClassName: j.button,
-            innerClassName: j.buttonContents,
+            wrapperClassName: P.button,
+            innerClassName: P.buttonContents,
             disabled: R,
             onClick: () => {
               null != G && G !== s.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && B(T.L.UNKNOWN), k(!D), W(), (0, m.v)(V, m.d.SOUNDBOARD)
@@ -177,7 +177,7 @@ function A(e) {
             size: d.zx.Sizes.MEDIUM
           }), l), {
             children: (0, r.jsx)(z, {
-              className: j.buttonIcon,
+              className: P.buttonIcon,
               size: "sm",
               color: "currentColor"
             })

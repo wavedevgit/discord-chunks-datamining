@@ -1,4 +1,4 @@
-/** Chunk was on 31553 **/
+/** Chunk was on 93979 **/
 /** chunk id: 522182, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -22,20 +22,20 @@ function m(e) {
     var t, l, i = function(e, n) {
       if (null == e) return {};
       var t, l, i = {},
-        r = Object.keys(e);
-      for (l = 0; l < r.length; l++) t = r[l], n.indexOf(t) >= 0 || (i[t] = e[t]);
+        o = Object.keys(e);
+      for (l = 0; l < o.length; l++) t = o[l], n.indexOf(t) >= 0 || (i[t] = e[t]);
       return i
     }(e, n);
     if (Object.getOwnPropertySymbols) {
-      var r = Object.getOwnPropertySymbols(e);
-      for (l = 0; l < r.length; l++) t = r[l], !(n.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (i[t] = e[t])
+      var o = Object.getOwnPropertySymbols(e);
+      for (l = 0; l < o.length; l++) t = o[l], !(n.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (i[t] = e[t])
     }
     return i
   }(e, ["onClose"]);
   let {
     analyticsLocations: m,
     newestAnalyticsLocation: p
-  } = (0, o.ZP)(), f = (0, i.e7)([c.Z], () => c.Z.hasSaveablePendingChanges());
+  } = (0, r.ZP)(), f = (0, i.e7)([c.Z], () => c.Z.hasSaveablePendingChanges());
   return (0, l.jsx)(d.pt, function(e) {
     for (var n = 1; n < arguments.length; n++) {
       var t = null != arguments[n] ? arguments[n] : {},
@@ -55,7 +55,7 @@ function m(e) {
     return e
   }({
     action: "VISIT_SHOP",
-    icon: r.EOn,
+    icon: o.EOn,
     tooltipText: u.intl.string(u.t.b2d0Nz),
     onClick: () => {
       if (f) return void a.Z.notifyPendingWidgets();

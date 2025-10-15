@@ -1,7 +1,7 @@
-/** Chunk was on 36073 **/
-/** chunk id: 978369, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 3091 **/
+/** chunk id: 978369, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => f
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,150 +14,150 @@ var Chunk951288 = require("./951288.js"),
 let d = Chunk647438.memo(function(e) {
   let {
     currentTags: t,
-    onTagSelect: r,
+    onTagSelect: n,
     onNoneSelect: i,
-    onClose: o
+    onClose: l
   } = e;
-  return (0, n.jsx)(a.v2r, {
+  return (0, r.jsx)(a.v2r, {
     navId: "widget-game-tags",
     "aria-label": s.intl.string(s.t.r6EJOj),
-    onClose: o,
+    onClose: l,
     onSelect: () => {},
     className: u.gameTagsMenu,
     children: Object.entries(c.aE).map(e => {
-      let [o, l] = e, u = ((e, o) => {
-        let l = [];
-        return o.type === c.kd.RADIO && l.push((0, n.jsx)(a.k5B, {
+      let [l, o] = e, u = ((e, l) => {
+        let o = [];
+        return l.type === c.kd.RADIO && o.push((0, r.jsx)(a.k5B, {
           id: "".concat(e, "-none"),
           group: e,
           label: s.intl.string(s.t.PoWNfX),
-          checked: !o.tags.some(e => t.includes(e)),
-          action: () => i(o.tags)
-        }, "none")), o.tags.forEach(i => {
+          checked: !l.tags.some(e => t.includes(e)),
+          action: () => i(l.tags)
+        }, "none")), l.tags.forEach(i => {
           let s = c.XV[i];
-          null != s && (o.type === c.kd.RADIO ? l.push((0, n.jsx)(a.k5B, {
+          null != s && (l.type === c.kd.RADIO ? o.push((0, r.jsx)(a.k5B, {
             id: i,
             group: e,
             label: s.getText(),
             checked: t.includes(i),
-            action: () => r(i, true)
-          }, i)) : l.push((0, n.jsx)(a.S89, {
+            action: () => n(i, true)
+          }, i)) : o.push((0, r.jsx)(a.S89, {
             id: i,
             label: s.getText(),
             checked: t.includes(i),
-            action: () => r(i, false)
+            action: () => n(i, false)
           }, i)))
-        }), l
-      })(o, l);
-      return (0, n.jsx)(a.kSQ, {
-        label: l.getLabel(),
+        }), o
+      })(l, o);
+      return (0, r.jsx)(a.kSQ, {
+        label: o.getLabel(),
         children: u
-      }, o)
+      }, l)
     })
   })
 });
 
-function g(e) {
+function f(e) {
   let {
     tags: t,
-    widgetType: r,
-    applicationId: g,
-    ref: f
+    widgetType: n,
+    applicationId: f,
+    ref: g
   } = e, p = (0, i.useRef)(null), {
-    trackUserProfileEditAction: b
-  } = (0, o.KZ)(), m = (0, i.useMemo)(() => null != t ? t : [], [t]), O = (0, i.useCallback)(function(e) {
+    trackUserProfileEditAction: m
+  } = (0, l.KZ)(), b = (0, i.useMemo)(() => null != t ? t : [], [t]), h = (0, i.useCallback)(function(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
-      n = new Set(m);
+      r = new Set(b);
     if (t) {
       let t = Object.values(c.aE).find(t => t.tags.includes(e));
       null != t && (t.tags.forEach(e => {
-        n.delete(e)
-      }), n.add(e), b({
+        r.delete(e)
+      }), r.add(e), m({
         action: "TAG_ADDED",
-        widgetEdited: r,
-        gameId: g
+        widgetEdited: n,
+        gameId: f
       }))
-    } else n.has(e) ? (n.delete(e), b({
+    } else r.has(e) ? (r.delete(e), m({
       action: "TAG_REMOVED",
-      widgetEdited: r,
-      gameId: g
-    })) : (n.add(e), b({
+      widgetEdited: n,
+      gameId: f
+    })) : (r.add(e), m({
       action: "TAG_ADDED",
-      widgetEdited: r,
-      gameId: g
+      widgetEdited: n,
+      gameId: f
     }));
-    (0, l.n$)(r, g, Array.from(n))
-  }, [m, b, r, g]), y = (0, i.useCallback)(e => {
-    let t = new Set(m);
+    (0, o.n$)(n, f, Array.from(r))
+  }, [b, m, n, f]), y = (0, i.useCallback)(e => {
+    let t = new Set(b);
     e.forEach(e => {
       t.delete(e)
-    }), b({
+    }), m({
       action: "TAG_REMOVED",
-      widgetEdited: r,
-      gameId: g
-    }), (0, l.n$)(r, g, Array.from(t))
-  }, [m, b, r, g]);
-  return (0, n.jsx)(a.yRy, {
+      widgetEdited: n,
+      gameId: f
+    }), (0, o.n$)(n, f, Array.from(t))
+  }, [b, m, n, f]);
+  return (0, r.jsx)(a.yRy, {
     targetElementRef: p,
     position: "right",
     align: "top",
     onRequestOpen: () => {
-      b({
+      m({
         action: "PRESS_ADD_TAG",
-        widgetEdited: r
+        widgetEdited: n
       })
     },
     renderPopout: e => {
       let {
         closePopout: t
       } = e;
-      return (0, n.jsx)(d, {
-        currentTags: m,
-        onTagSelect: O,
+      return (0, r.jsx)(d, {
+        currentTags: b,
+        onTagSelect: h,
         onNoneSelect: y,
         onClose: t
       })
     },
     children: e => {
-      var t, r;
-      return (0, n.jsx)("div", {
-        ref: e => (null != e && (p.current = e, f.current = e), () => {
-          p.current = null, f.current = null
+      var t, n;
+      return (0, r.jsx)("div", {
+        ref: e => (null != e && (p.current = e, g.current = e), () => {
+          p.current = null, g.current = null
         }),
-        children: (0, n.jsx)(a.P3F, (t = function(e) {
+        children: (0, r.jsx)(a.P3F, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
-            var r = null != arguments[t] ? arguments[t] : {},
-              n = Object.keys(r);
-            "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-              return Object.getOwnPropertyDescriptor(r, e).enumerable
-            }))), n.forEach(function(t) {
-              var n;
-              n = r[t], t in e ? Object.defineProperty(e, t, {
-                value: n,
+            var n = null != arguments[t] ? arguments[t] : {},
+              r = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              return Object.getOwnPropertyDescriptor(n, e).enumerable
+            }))), r.forEach(function(t) {
+              var r;
+              r = n[t], t in e ? Object.defineProperty(e, t, {
+                value: r,
                 enumerable: true,
                 configurable: true,
                 writable: true
-              }) : e[t] = n
+              }) : e[t] = r
             })
           }
           return e
-        }({}, e), r = r = {
+        }({}, e), n = n = {
           className: u.addButton,
           "aria-label": s.intl.string(s.t.r6EJOj),
-          children: (0, n.jsx)(a.Text, {
+          children: (0, r.jsx)(a.Text, {
             variant: "text-xxs/medium",
             color: "none",
             children: s.intl.string(s.t.fZSej4)
           })
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
-          var r = Object.keys(e);
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+          var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
-            var n = Object.getOwnPropertySymbols(e);
-            r.push.apply(r, n)
+            var r = Object.getOwnPropertySymbols(e);
+            n.push.apply(n, r)
           }
-          return r
-        })(Object(r)).forEach(function(e) {
-          Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
+          return n
+        })(Object(n)).forEach(function(e) {
+          Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
         }), t))
       })
     }

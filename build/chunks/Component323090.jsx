@@ -1,4 +1,4 @@
-/** Chunk was on 31553 **/
+/** Chunk was on 93979 **/
 /** chunk id: 323090, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -30,43 +30,43 @@ function g(e) {
     subsection: I,
     onClose: y
   } = e, {
-    trackUserProfileAction: Z
-  } = (0, c.KZ)(), O = (0, i.e7)([d.Z], () => {
+    trackUserProfileAction: _
+  } = (0, c.KZ)(), Z = (0, i.e7)([d.Z], () => {
     var e;
     return null == (e = d.Z.getUserProfile(n.id)) ? true : e.application
-  }), N = (0, i.e7)([s.Z, a.Z], () => s.Z.getChannel(a.Z.getChannelId()));
-  return (0, l.jsxs)(r.zJl, {
+  }), O = (0, i.e7)([s.Z, a.Z], () => s.Z.getChannel(a.Z.getChannelId()));
+  return (0, l.jsxs)(o.zJl, {
     fade: true,
-    className: v.scroller,
+    className: j.scroller,
     children: [(null == g ? true : g.bio) != null && (null == g ? true : g.bio) !== "" && (0, l.jsx)(m.Z, {
       userBio: g.bio,
       setLineClamp: false
-    }), (null == O ? true : O.popularApplicationCommandIds) != null && null != N && (0, l.jsx)(u.Z, {
-      applicationId: O.id,
-      commandIds: O.popularApplicationCommandIds,
-      channel: N,
+    }), (null == Z ? true : Z.popularApplicationCommandIds) != null && null != O && (0, l.jsx)(u.Z, {
+      applicationId: Z.id,
+      commandIds: Z.popularApplicationCommandIds,
+      channel: O,
       guildId: b,
       onClick: y
-    }), (null == g ? true : g.guildId) != null && (0, l.jsx)(h.Z, {
+    }), (null == g ? true : g.guildId) != null && (0, l.jsx)(x.Z, {
       user: n,
       currentUser: t,
       guildId: g.guildId,
-      scrollIntoView: I === x.Tb.ROLES
+      scrollIntoView: I === h.Tb.ROLES
     }), (0, l.jsx)(f.Z, {
-      heading: j.intl.string(j.t["A//N4u"]),
+      heading: v.intl.string(v.t["A//N4u"]),
       children: (0, l.jsx)(p.Z, {
         userId: n.id,
         guildId: b,
-        tooltipDelay: x.vB
+        tooltipDelay: h.vB
       })
     }), (0, l.jsx)(f.Z, {
-      heading: j.intl.string(j.t["mQKv+v"]),
-      scrollIntoView: I === x.Tb.NOTE,
-      children: (0, l.jsx)(o.Z, {
+      heading: v.intl.string(v.t["mQKv+v"]),
+      scrollIntoView: I === h.Tb.NOTE,
+      children: (0, l.jsx)(r.Z, {
         userId: n.id,
-        className: v.note,
-        autoFocus: I === x.Tb.NOTE,
-        onUpdate: () => Z({
+        className: j.note,
+        autoFocus: I === h.Tb.NOTE,
+        onUpdate: () => _({
           action: "SET_NOTE"
         })
       })

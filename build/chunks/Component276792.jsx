@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 276792, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  N: () => E
+  N: () => O
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -39,7 +39,7 @@ function _(e) {
   return e
 }
 
-function O(e, t) {
+function E(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -52,52 +52,52 @@ function O(e, t) {
   }), e
 }
 
-function E(e) {
-  var t, n, E, v;
-  let y, {
+function O(e) {
+  var t, n, O, y;
+  let v, {
       content: I,
       renderModalProps: C,
       analyticsLocations: S,
       analyticsLocation: T,
       isLightTheme: N
     } = e,
-    j = "AnnouncementModalVariant1_".concat(l.z[Number(I.dismissKey)]),
+    P = "AnnouncementModalVariant1_".concat(l.z[Number(I.dismissKey)]),
     {
-      onClose: P
+      onClose: j
     } = C,
-    x = null != (v = null == (t = I.button) ? true : t.copy) ? v : m.intl.string(m.t.YScQSE),
-    A = (null == (n = I.button) ? true : n.buttonAction) === a.Wc.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button";
-  switch (null == (E = I.button) ? true : E.buttonAction) {
+    A = null != (y = null == (t = I.button) ? true : t.copy) ? y : m.intl.string(m.t.YScQSE),
+    x = (null == (n = I.button) ? true : n.buttonAction) === a.Wc.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button";
+  switch (null == (O = I.button) ? true : O.buttonAction) {
     case a.Wc.OPEN_MARKETING_PAGE:
-      y = () => {
-        (0, u.uL)(g.Z5c.APPLICATION_STORE), P()
+      v = () => {
+        (0, u.uL)(g.Z5c.APPLICATION_STORE), j()
       };
       break;
     case a.Wc.OPEN_TIER_1_PAYMENT_MODAL:
-      y = () => (0, c.Z)({
+      v = () => (0, c.Z)({
         subscriptionTier: h.Si.TIER_1,
         analyticsLocations: S,
-        analyticsObject: O(_({}, T), {
+        analyticsObject: E(_({}, T), {
           object: g.qAy.BUTTON_CTA,
           objectType: g.Qqv.TIER_1
         }),
         onClose: e => {
-          e && P()
+          e && j()
         }
       });
       break;
     case a.Wc.OPEN_TIER_2_PAYMENT_MODAL:
     case a.Wc.OPEN_TIER_2_PAYMENT_MODAL_CUSTOM_CONFIRMATION_FOOTER:
     default:
-      y = () => (0, c.Z)({
+      v = () => (0, c.Z)({
         subscriptionTier: h.Si.TIER_2,
         analyticsLocations: S,
-        analyticsObject: O(_({}, T), {
+        analyticsObject: E(_({}, T), {
           object: g.qAy.BUTTON_CTA,
           objectType: g.Qqv.TIER_2
         }),
         onClose: e => {
-          e && P()
+          e && j()
         }
       })
   }
@@ -138,7 +138,7 @@ function E(e) {
       imageSrc: N ? e.imageLinkLightTheme : e.imageLink,
       tagText: "" !== e.pill ? e.pill : true
     })),
-    changeLogId: j,
+    changeLogId: P,
     button: () => {
       let e = Date.now();
       return (0, r.jsx)(o.zxk, {
@@ -146,13 +146,13 @@ function E(e) {
         size: "md",
         onClick: () => {
           d.default.track(g.rMx.CHANGE_LOG_CTA_CLICKED, {
-            change_log_id: j,
-            cta_type: A,
+            change_log_id: P,
+            cta_type: x,
             seconds_open: Math.round((Date.now() - e) / 1e3),
-            target: j
-          }), y()
+            target: P
+          }), v()
         },
-        text: x,
+        text: A,
         icon: i.SrA
       })
     },

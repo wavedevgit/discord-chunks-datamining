@@ -1,7 +1,7 @@
-/** Chunk was on 36073 **/
-/** chunk id: 881410, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 3091 **/
+/** chunk id: 881410, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  wl: () => j,
+  wl: () => v,
   yX: () => y
 }), require("./388685.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
@@ -18,120 +18,120 @@ var Chunk951288 = require("./951288.js"),
 
 function p(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var r = null != arguments[t] ? arguments[t] : {},
-      n = Object.keys(r);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(r, e).enumerable
-    }))), n.forEach(function(t) {
-      var n;
-      n = r[t], t in e ? Object.defineProperty(e, t, {
-        value: n,
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = n
+      }) : e[t] = r
     })
   }
   return e
 }
 
-function b(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var r = Object.keys(e);
+    var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var n = Object.getOwnPropertySymbols(e);
-      r.push.apply(r, n)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
-    return r
-  })(Object(t)).forEach(function(r) {
-    Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
+    return n
+  })(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function m(e, t) {
+function b(e, t) {
   if (null == e) return {};
-  var r, n, i = function(e, t) {
+  var n, r, i = function(e, t) {
     if (null == e) return {};
-    var r, n, i = {},
+    var n, r, i = {},
       a = Object.keys(e);
-    for (n = 0; n < a.length; n++) r = a[n], t.indexOf(r) >= 0 || (i[r] = e[r]);
+    for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
     return i
   }(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
-    for (n = 0; n < a.length; n++) r = a[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (i[r] = e[r])
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
   }
   return i
 }
 
-function O(e) {
+function h(e) {
   var {
     widgetType: t,
-    widget: r,
-    children: O
-  } = e, y = m(e, ["widgetType", "widget", "children"]);
-  let [j] = (0, l.ynZ)(), [x, h] = i.useState(""), v = i.useRef(""), _ = i.useMemo(() => new Set(r.games.map(e => e.applicationId)), [r.games]), {
-    trackUserProfileEditAction: w
-  } = (0, u.KZ)(), P = (0, o.e7)([s.default], () => ["en-US", "en-GB"].includes(s.default.locale)), I = i.useCallback(e => {
+    widget: n,
+    children: h
+  } = e, y = b(e, ["widgetType", "widget", "children"]);
+  let [v] = (0, o.ynZ)(), [j, O] = i.useState(""), x = i.useRef(""), _ = i.useMemo(() => new Set(n.games.map(e => e.applicationId)), [n.games]), {
+    trackUserProfileEditAction: P
+  } = (0, u.KZ)(), I = (0, l.e7)([s.default], () => ["en-US", "en-GB"].includes(s.default.locale)), w = i.useCallback(e => {
     (0, d.ES)(t, {
       applicationId: e
-    }), l.uvj.announce(g.intl.string(g.t.q0U3DA)), w({
+    }), o.uvj.announce(f.intl.string(f.t.q0U3DA)), P({
       action: "GAME_ADDED",
       gameId: e,
       widgetEdited: t
     })
-  }, [t, w]), {
+  }, [t, P]), {
     options: S,
     matchSorterOptions: E
-  } = (0, c.h)(), T = i.useCallback(e => "" === e.trim() ? S : (0, a.Lu)(S, e, b(p({}, E), {
+  } = (0, c.h)(), T = i.useCallback(e => "" === e.trim() ? S : (0, a.Lu)(S, e, m(p({}, E), {
     threshold: a.Lu.rankings.CONTAINS
-  })), [S, E]), D = i.useCallback(e => {
-    "" === x.trim() && "" !== e.trim() && w({
+  })), [S, E]), C = i.useCallback(e => {
+    "" === j.trim() && "" !== e.trim() && P({
       action: "GAME_SEARCH_SESSION_STARTED",
       widgetEdited: t,
       numCharacters: e.trim().length,
       numResults: T(e).length
-    }), h(e), v.current = e
-  }, [x, w, t, T]), k = i.useMemo(() => "" !== x.trim() && P ? g.intl.format(g.t.jhiTsL, {
-    searchTerm: x.trim()
-  }) : g.intl.string(g.t.QwSXv7), [x, P]);
-  return (0, n.jsx)(l.yRy, b(p({}, y), {
+    }), O(e), x.current = e
+  }, [j, P, t, T]), D = i.useMemo(() => "" !== j.trim() && I ? f.intl.format(f.t.jhiTsL, {
+    searchTerm: j.trim()
+  }) : f.intl.string(f.t.QwSXv7), [j, I]);
+  return (0, r.jsx)(o.yRy, m(p({}, y), {
     onRequestOpen: () => {
-      w({
+      P({
         action: "PRESS_ADD_GAME",
         widgetEdited: t
-      }), h(""), v.current = ""
+      }), O(""), x.current = ""
     },
     onRequestClose: () => {
-      w({
+      P({
         action: "GAME_SEARCH_SESSION_ENDED",
         widgetEdited: t,
-        numCharacters: v.current.trim().length,
-        numResults: T(v.current).length
+        numCharacters: x.current.trim().length,
+        numResults: T(x.current).length
       })
     },
     renderPopout: e => {
       let {
         closePopout: t
       } = e;
-      return (0, n.jsx)(l.DBG, {
-        className: f.gameSearchCombobox,
-        placeholder: g.intl.string(g.t["5h0QOD"]),
+      return (0, r.jsx)(o.DBG, {
+        className: g.gameSearchCombobox,
+        placeholder: f.intl.string(f.t["5h0QOD"]),
         autoFocus: true,
-        value: j,
+        value: v,
         onChange: e => {
-          I(e), t()
+          w(e), t()
         },
         multiSelect: false,
         maxVisibleItems: 7,
-        emptyStateText: k,
+        emptyStateText: D,
         emptyStateHeader: "",
-        onQueryChange: D,
-        children: e => T(e).map(e => (0, n.jsx)(l.lo1, {
+        onQueryChange: C,
+        children: e => T(e).map(e => (0, r.jsx)(o.lo1, {
           disabled: _.has(e.value),
           value: String(e.value),
-          children: (0, n.jsx)(l.lo1.Label, {
-            children: (0, n.jsx)(l.Text, {
+          children: (0, r.jsx)(o.lo1.Label, {
+            children: (0, r.jsx)(o.Text, {
               variant: "text-md/medium",
               color: "header-secondary",
               children: e.label
@@ -140,44 +140,44 @@ function O(e) {
         }, String(e.value)))
       })
     },
-    children: e => O(e)
+    children: e => h(e)
   }))
 }
 
 function y(e) {
   var {
     disabled: t
-  } = e, r = m(e, ["disabled"]);
+  } = e, n = b(e, ["disabled"]);
   let a = i.useRef(null);
-  return (0, n.jsx)(O, b(p({
+  return (0, r.jsx)(h, m(p({
     targetElementRef: a,
     position: "bottom",
     align: "center"
-  }, r), {
-    children: e => (0, n.jsx)(l.Button, p({
+  }, n), {
+    children: e => (0, r.jsx)(o.Button, p({
       buttonRef: a,
       variant: "secondary",
       size: "sm",
-      icon: l.qJs,
-      text: g.intl.string(g.t.SgTOtb),
+      icon: o.qJs,
+      text: f.intl.string(f.t.SgTOtb),
       disabled: t
     }, e))
   }))
 }
 
-function j(e) {
+function v(e) {
   let t = i.useRef(null);
-  return (0, n.jsx)(O, b(p({
+  return (0, r.jsx)(h, m(p({
     targetElementRef: t,
     position: "right",
     align: "top"
   }, e), {
-    children: e => (0, n.jsx)(l.P3F, b(p({
+    children: e => (0, r.jsx)(o.P3F, m(p({
       innerRef: t,
-      className: f.coverButton,
-      "aria-label": g.intl.string(g.t.SgTOtb)
+      className: g.coverButton,
+      "aria-label": f.intl.string(f.t.SgTOtb)
     }, e), {
-      children: (0, n.jsx)(l.svS, {
+      children: (0, r.jsx)(o.svS, {
         color: "currentColor"
       })
     }))

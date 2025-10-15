@@ -2,14 +2,15 @@
 /** chunk id: 896797, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var r, Chunk442837 = require("./442837.js"),
   Chunk433517 = require("./433517.js"),
   Chunk570140 = require("./570140.js"),
+  Chunk365113 = require("./365113.js"),
   Chunk981631 = require("./981631.js");
 
-function l(e, t, n) {
+function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,52 +18,60 @@ function l(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let c = {
+let u = {
     lastViewedPath: null,
     lastViewedNonVoicePath: null
   },
-  u = c,
-  d = "LAST_VIEWED_PATH";
-
-function f(e) {
-  let {
-    path: t
-  } = e;
-  return u.lastViewedPath = t, true
-}
+  d = u,
+  f = "LAST_VIEWED_PATH";
 
 function _(e) {
   let {
     path: t
   } = e;
-  return u.lastViewedNonVoicePath = t, true
+  return d.lastViewedPath = t, true
 }
-class p extends(r = Chunk442837.ZP.PersistedStore) {
+
+function p(e) {
+  let {
+    path: t
+  } = e;
+  return d.lastViewedNonVoicePath = t, true
+}
+class h extends(r = Chunk442837.ZP.PersistedStore) {
   initialize() {
-    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : c;
-    u = null != module ? module : c
+    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : u;
+    d = null != module ? module : u
+  }
+  get experimentalDefaultRoute() {
+    let {
+      friendsTab: e
+    } = Chunk365113.o.getConfig({
+      location: "default_route"
+    });
+    return module ? Chunk981631.Z5c.ME_ACTIVITY : Chunk981631.Z5c.ME
   }
   get defaultRoute() {
-    return Chunk981631.Z5c.ME
+    return this.experimentalDefaultRoute
   }
   get lastNonVoiceRoute() {
     var e;
-    return null != (e = u.lastViewedNonVoicePath) ? module : Chunk981631.Z5c.ME
+    return null != (e = d.lastViewedNonVoicePath) ? module : this.experimentalDefaultRoute
   }
   get fallbackRoute() {
-    return Chunk981631.Z5c.ME
+    return this.experimentalDefaultRoute
   }
   getState() {
-    return u
+    return d
   }
 }
-l(p, "displayName", "DefaultRouteStore"), l(p, "persistKey", "DefaultRouteStore"), l(p, "migrations", [() => {
-  let e = Chunk433517.K.get(d, null);
-  return Chunk433517.K.remove(d), {
+c(h, "displayName", "DefaultRouteStore"), c(h, "persistKey", "DefaultRouteStore"), c(h, "migrations", [() => {
+  let e = Chunk433517.K.get(f, null);
+  return Chunk433517.K.remove(f), {
     lastViewedPath: module
   }
 }]);
-let h = new p(Chunk570140.Z, {
-  SAVE_LAST_ROUTE: f,
-  SAVE_LAST_NON_VOICE_ROUTE: _
+let m = new h(Chunk570140.Z, {
+  SAVE_LAST_ROUTE: _,
+  SAVE_LAST_NON_VOICE_ROUTE: p
 })

@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 974042, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZP: () => V
+  ZP: () => H
 }), require("./539854.js"), require("./388685.js");
 var r, Chunk392711 = require("./392711.js"),
   l = require.n(Chunk392711),
@@ -13,7 +13,6 @@ var r, Chunk392711 = require("./392711.js"),
   Chunk633289 = require("./633289.js"),
   Chunk5254 = require("./5254.js"),
   Chunk91896 = require("./91896.js"),
-  Chunk365113 = require("./365113.js"),
   Chunk441623 = require("./441623.js"),
   Chunk199902 = require("./199902.js"),
   Chunk271383 = require("./271383.js"),
@@ -24,7 +23,7 @@ var r, Chunk392711 = require("./392711.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js");
 
-function C(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -33,20 +32,20 @@ function C(e, t, n) {
   }) : e[t] = n, e
 }
 
-function S(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      C(e, t, n[t])
+      I(e, t, n[t])
     })
   }
   return e
 }
 
-function T(e, t) {
+function S(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -59,40 +58,40 @@ function T(e, t) {
   }), e
 }
 
-function N(e) {
-  let t = v.default.getUser(e);
+function T(e) {
+  let t = O.default.getUser(e);
   return {
     user: t,
     usernameLower: null != t ? t.username.toLowerCase() : null
   }
 }
 
-function j(e) {
+function N(e) {
   return {
-    status: O.Z.getStatus(e),
-    isMobile: O.Z.isMobileOnline(e),
-    activities: O.Z.getActivities(e),
-    applicationStream: m.Z.getAnyStreamForUser(e)
+    status: _.Z.getStatus(e),
+    isMobile: _.Z.isMobileOnline(e),
+    activities: _.Z.getActivities(e),
+    applicationStream: g.Z.getAnyStreamForUser(e)
   }
 }
 
 function P(e) {
   let t = [];
-  return l()(b.ZP.memberOf(e)).map(_.Z.getGuild).sortBy(e => null != e ? e.name.toLowerCase() : null).forEach(e => {
+  return l()(m.ZP.memberOf(e)).map(b.Z.getGuild).sortBy(e => null != e ? e.name.toLowerCase() : null).forEach(e => {
     null != e && t.push(e)
   }), {
     mutualGuildsLength: t.length,
     mutualGuilds: t.slice(0, 5)
   }
 }
-class x extends Chunk81825.Z {
+class j extends Chunk81825.Z {
   get comparator() {
     var e, t, n, r, i;
     return [this.type, +(null == this.giftIntentType), null != (i = null != (r = null == (e = this.nickname) ? true : module.toLowerCase()) ? r : null == (n = this.user) || null == (t = require.globalName) ? true : exports.toLowerCase()) ? Chunk392711 : this.usernameLower]
   }
   constructor(e) {
     var t;
-    super(), C(this, "key", true), C(this, "userId", true), C(this, "type", true), C(this, "status", true), C(this, "isMobile", true), C(this, "activities", true), C(this, "applicationStream", true), C(this, "user", true), C(this, "usernameLower", true), C(this, "mutualGuildsLength", true), C(this, "mutualGuilds", true), C(this, "nickname", true), C(this, "spam", true), C(this, "giftIntentType", true), C(this, "ignoredUser", true), C(this, "applicationId", true), C(this, "isGameRelationship", true), this.key = e.key, this.userId = e.userId, this.type = e.type, this.status = e.status, this.activities = e.activities, this.applicationStream = e.applicationStream, this.user = e.user, this.isMobile = e.isMobile, this.usernameLower = e.usernameLower, this.mutualGuildsLength = e.mutualGuildsLength, this.mutualGuilds = e.mutualGuilds, this.nickname = e.nickname, this.spam = e.spam, this.giftIntentType = e.giftIntentType, this.ignoredUser = e.ignoredUser, this.applicationId = e.applicationId, this.isGameRelationship = null != (t = e.isGameRelationship) && t
+    super(), I(this, "key", true), I(this, "userId", true), I(this, "type", true), I(this, "status", true), I(this, "isMobile", true), I(this, "activities", true), I(this, "applicationStream", true), I(this, "user", true), I(this, "usernameLower", true), I(this, "mutualGuildsLength", true), I(this, "mutualGuilds", true), I(this, "nickname", true), I(this, "spam", true), I(this, "giftIntentType", true), I(this, "ignoredUser", true), I(this, "applicationId", true), I(this, "isGameRelationship", true), this.key = e.key, this.userId = e.userId, this.type = e.type, this.status = e.status, this.activities = e.activities, this.applicationStream = e.applicationStream, this.user = e.user, this.isMobile = e.isMobile, this.usernameLower = e.usernameLower, this.mutualGuildsLength = e.mutualGuildsLength, this.mutualGuilds = e.mutualGuilds, this.nickname = e.nickname, this.spam = e.spam, this.giftIntentType = e.giftIntentType, this.ignoredUser = e.ignoredUser, this.applicationId = e.applicationId, this.isGameRelationship = null != (t = e.isGameRelationship) && t
   }
 }
 class A {
@@ -100,17 +99,17 @@ class A {
     let e = new Set,
       t = Array.from(Chunk699516.Z.getMutableRelationships().entries()).map(t => {
         let [n, r] = t;
-        return r === y.OGo.FRIEND && e.add(n), new x(T(S({
+        return r === y.OGo.FRIEND && e.add(n), new j(S(C({
           key: n,
           type: r,
           userId: n,
           nickname: E.Z.getNickname(n)
-        }, N(n), j(n), P(n)), {
+        }, T(n), N(n), P(n)), {
           spam: E.Z.isSpam(n),
           ignoredUser: E.Z.isIgnored(n),
-          giftIntentType: r === y.OGo.FRIEND && g.Z.isTopAffinityFriendAnniversary({
+          giftIntentType: r === y.OGo.FRIEND && h.Z.isTopAffinityFriendAnniversary({
             userId: n
-          }) ? I.hX.FRIEND_ANNIVERSARY : true,
+          }) ? v.hX.FRIEND_ANNIVERSARY : true,
           applicationId: E.Z.getOriginApplicationId(n)
         }))
       }),
@@ -123,24 +122,24 @@ class A {
         applicationId: l,
         type: a
       } = t;
-      !(a === y.OGo.FRIEND && e.has(r)) && (a === y.OGo.FRIEND && i.has(r) || (a === y.OGo.FRIEND && i.add(r), n.push(new x(T(S({
+      !(a === y.OGo.FRIEND && e.has(r)) && (a === y.OGo.FRIEND && i.has(r) || (a === y.OGo.FRIEND && i.add(r), n.push(new j(S(C({
         key: "".concat(r, "-").concat(l),
         type: a,
         userId: r,
         applicationId: l,
         nickname: E.Z.getNickname(r)
-      }, N(r), j(r), P(r)), {
+      }, T(r), N(r), P(r)), {
         spam: E.Z.isSpam(r),
         ignoredUser: E.Z.isIgnored(r),
         isGameRelationship: true
       })))))
     });
-    let a = l().map(Chunk5254.Z.getSuggestions(), e => new x(S({
+    let a = l().map(Chunk5254.Z.getSuggestions(), e => new j(C({
       key: e.key,
       userId: e.key,
       type: 99,
       nickname: e.name
-    }, N(e.key), j(e.key), P(e.key))));
+    }, T(e.key), N(e.key), P(e.key))));
     return new A(l().concat(exports, require, Chunk442837))
   }
   clone() {
@@ -194,71 +193,69 @@ class A {
     }), module
   }
   constructor(e = []) {
-    C(this, "_rows", true), this._rows = e
+    I(this, "_rows", true), this._rows = e
   }
 }
-let Z = true,
-  w = false,
-  L = Chunk981631.pJs.ONLINE,
-  R = new A,
-  D = true,
-  k = false;
+let x = true,
+  Z = false,
+  w = Chunk981631.pJs.ONLINE,
+  L = new A,
+  R = true,
+  D = false;
+
+function k() {
+  let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
+  x && (module || w !== Chunk981631.pJs.ONLINE && w !== Chunk981631.pJs.ADD_FRIEND) && !Z && (x = false, Z = true, Chunk194359.Z.fetchRelationships())
+}
 
 function M() {
-  let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-  Z && (module || L !== Chunk981631.pJs.ONLINE && L !== Chunk981631.pJs.ADD_FRIEND) && !w && (Z = false, w = true, Chunk194359.Z.fetchRelationships())
+  if (x = true, R ? Z = false : k(), L = L.reset(), D) return;
+  let e = L.getRelationshipCounts();
+  w = 0 === module[Chunk981631.OGo.FRIEND] ? 0 !== module[Chunk981631.OGo.PENDING_INCOMING] ? Chunk981631.pJs.PENDING : Chunk981631.pJs.ADD_FRIEND : Chunk981631.pJs.ONLINE
 }
 
 function U() {
-  if (Z = true, D ? w = false : M(), R = R.reset(), k) return;
-  let e = R.getRelationshipCounts();
-  0 === module[Chunk981631.OGo.FRIEND] ? L = 0 !== module[Chunk981631.OGo.PENDING_INCOMING] ? Chunk981631.pJs.PENDING : Chunk981631.pJs.ADD_FRIEND : (L = Chunk981631.pJs.ONLINE, Chunk365113.o.getConfig({
-    location: "friendstore"
-  }).removeFriends && (L = Chunk981631.pJs.YOU))
+  L = R ? new A : L.reset()
 }
 
-function G() {
-  R = D ? new A : R.reset()
-}
-
-function B(e) {
+function G(e) {
   return function() {
-    return !D && !!R.update(e) && (R = R.clone(), true)
+    return !R && !!L.update(e) && (L = L.clone(), true)
   }
 }
-class H extends(r = Chunk442837.ZP.Store) {
+class B extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk699516.Z, Chunk158776.Z, Chunk594174.default, Chunk430824.Z, Chunk271383.ZP, Chunk199902.Z, Chunk5254.Z, Chunk353926.Z, Chunk633289.Z), this.syncWith([Chunk699516.Z], G), this.syncWith([Chunk91896.Z], G), this.syncWith([Chunk5254.Z], G), this.syncWith([Chunk441623.Z], G), this.syncWith([Chunk594174.default], B(N)), this.syncWith([Chunk158776.Z, Chunk199902.Z], B(j)), U()
+    this.waitFor(Chunk699516.Z, Chunk158776.Z, Chunk594174.default, Chunk430824.Z, Chunk271383.ZP, Chunk199902.Z, Chunk5254.Z, Chunk353926.Z, Chunk633289.Z), this.syncWith([Chunk699516.Z], U), this.syncWith([Chunk91896.Z], U), this.syncWith([Chunk5254.Z], U), this.syncWith([Chunk441623.Z], U), this.syncWith([Chunk594174.default], G(T)), this.syncWith([Chunk158776.Z, Chunk199902.Z], G(N)), M()
   }
   getState() {
     return {
-      fetching: w,
-      section: L,
-      rows: R
+      fetching: Z,
+      section: w,
+      rows: L
     }
   }
 }
-C(H, "displayName", "FriendsStore");
-let V = new H(Chunk570140.Z, {
+I(B, "displayName", "FriendsStore");
+let H = new B(Chunk570140.Z, {
   CONNECTION_OPEN: function() {
-    U()
+    M()
   },
   FRIENDS_SET_SECTION: function(e) {
-    L = e.section, M()
+    w = e.section, k()
   },
   CHANNEL_SELECT: function(e) {
     let {
       channelId: t
     } = e;
-    return D = null != t, G(), !D
+    return R = null != t, U(), !R
   },
   LOAD_RELATIONSHIPS_SUCCESS: function() {
-    w = false
+    Z = false
   },
   LOAD_RELATIONSHIPS_FAILURE: function() {
-    Z = true, w = true
+    x = true, Z = true
   },
   FRIENDS_SET_INITIAL_SECTION: function(e) {
-    L = e.section, k = true
+    w = e.section, D = true
   }
 })

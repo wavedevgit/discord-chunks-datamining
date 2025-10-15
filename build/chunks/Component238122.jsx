@@ -1,7 +1,7 @@
-/** Chunk was on 25244 **/
+/** Chunk was on 54844 **/
 /** chunk id: 238122, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => m
 }), require("./388685.js"), require("./413496.js"), require("./433524.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,15 +16,15 @@ let u = e => {
     let {
       data: {
         title: u,
-        subtitle: _,
-        placeholder: m,
-        rows: p,
-        character_limit: g,
-        pattern: f
+        subtitle: m,
+        placeholder: p,
+        rows: g,
+        character_limit: _,
+        pattern: h
       },
-      onChange: h,
-      initialText: b,
-      isRequired: x
+      onChange: b,
+      initialText: x,
+      isRequired: f
     } = e, v = i.useRef(a.Z.reactParserFor((t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -43,7 +43,7 @@ let u = e => {
       }
       return e
     }({}, a.Z.defaultRules), n = n = {
-      link: o.s
+      link: s.s
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -53,49 +53,49 @@ let u = e => {
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-    }), t))), [j, y] = i.useState(""), [O, C] = i.useState(null);
+    }), t))), [j, y] = i.useState(""), [O, Z] = i.useState(null);
     i.useEffect(() => {
       var e;
-      y(null != (e = null == b ? true : b.value) ? e : "")
-    }, [b]);
+      y(null != (e = null == x ? true : x.value) ? e : "")
+    }, [x]);
     let I = i.useCallback(e => {
-      let t = null != f ? new RegExp(f) : null;
-      null == t || t.test(e) ? null != e && (C(null), y(e), h({
+      let t = null != h ? new RegExp(h) : null;
+      null == t || t.test(e) ? null != e && (Z(null), y(e), b({
         value: e,
         isValid: true
-      })) : (C(s.intl.string(s.t["24xrGR"])), h({
+      })) : (Z(o.intl.string(o.t["24xrGR"])), b({
         value: e,
         isValid: false
       }))
-    }, [h, f]);
+    }, [b, h]);
     return (0, r.jsxs)("div", {
       className: d.marginBottom8,
       children: [null != u && (0, r.jsx)("div", {
         className: d.marginBottom8,
         children: (0, r.jsxs)(l.Text, {
           variant: "text-sm/bold",
-          children: [u, x && (0, r.jsx)("span", {
+          children: [u, f && (0, r.jsx)("span", {
             className: c.required,
             children: "*"
           })]
         })
       }), (0, r.jsx)(l.Kx8, {
-        maxLength: g,
+        maxLength: _,
         onChange: I,
         value: j,
         error: O,
-        rows: p,
-        placeholder: m,
+        rows: g,
+        placeholder: p,
         autoFocus: true
-      }), null != _ && (0, r.jsx)("div", {
+      }), null != m && (0, r.jsx)("div", {
         children: (0, r.jsx)(l.Text, {
           variant: "text-sm/normal",
-          children: v.current(_)
+          children: v.current(m)
         })
       })]
     })
   },
-  _ = e => {
+  m = e => {
     let {
       elements: t,
       onChange: n,

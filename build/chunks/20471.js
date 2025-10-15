@@ -32,12 +32,12 @@ function _(e) {
   } = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {}, n = i.useMemo(() => f(e), [e]), r = (0, o.t)(null == n ? true : n.id, "AUTHORIZE_REQUEST"), l = t.includes("rpc") && r, s = t.includes("web") && (null == n ? true : n.connectionEntrypointUrl) != null, d = l || s, {
     token: p,
     fetched: _
-  } = (0, c.o)(null == n ? true : n.id);
+  } = (0, u.o)(null == n ? true : n.id);
   return {
     fetched: _,
     hasAlreadyLinked: _ && null != p,
     canStartAuthorization: d,
-    startAuthorization: i.useCallback(() => null == n ? null : l ? (a.Z.dispatchToSubscriptions("AUTHORIZE_REQUEST", e => e.socket.application.id === n.id, {}), "rpc") : s ? ((0, u.q)({
+    startAuthorization: i.useCallback(() => null == n ? null : l ? (a.Z.dispatchToSubscriptions("AUTHORIZE_REQUEST", e => e.socket.application.id === n.id, {}), "rpc") : s ? ((0, c.q)({
       href: n.connectionEntrypointUrl
     }), "web") : null, [l, s, n]),
     connectionApp: n

@@ -1,4 +1,4 @@
-/** Chunk was on 31553 **/
+/** Chunk was on 93979 **/
 /** chunk id: 740628, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -25,40 +25,40 @@ function g(e) {
     section: n,
     subsection: t,
     user: i,
-    currentUser: r,
-    displayProfile: o,
+    currentUser: o,
+    displayProfile: r,
     guildId: s,
     channelId: a,
-    onClose: x
+    onClose: h
   } = e;
-  return n === h.oh.ACTIVITY ? (0, l.jsx)(u.Z, {
+  return n === x.oh.ACTIVITY ? (0, l.jsx)(u.Z, {
     user: i,
-    currentUser: r,
+    currentUser: o,
     guildId: s,
-    onClose: x
-  }) : n === h.oh.MUTUAL_FRIENDS ? (0, l.jsx)(p.Z, {
+    onClose: h
+  }) : n === x.oh.MUTUAL_FRIENDS ? (0, l.jsx)(p.Z, {
     user: i,
     guildId: s,
     channelId: a,
-    onClose: x
-  }) : n === h.oh.MUTUAL_GUILDS ? (0, l.jsx)(f.Z, {
+    onClose: h
+  }) : n === x.oh.MUTUAL_GUILDS ? (0, l.jsx)(f.Z, {
     user: i,
-    onClose: x
-  }) : n === h.oh.BOT_DATA_ACCESS ? (0, l.jsx)(c.Z, {
+    onClose: h
+  }) : n === x.oh.BOT_DATA_ACCESS ? (0, l.jsx)(c.Z, {
     user: i
-  }) : n === h.oh.BOT_INFO ? (0, l.jsx)(d.Z, {
+  }) : n === x.oh.BOT_INFO ? (0, l.jsx)(d.Z, {
     user: i,
-    currentUser: r,
-    displayProfile: o,
+    currentUser: o,
+    displayProfile: r,
     guildId: s,
     subsection: t,
-    onClose: x
+    onClose: h
   }) : (0, l.jsx)(m.Z, {
     user: i,
-    currentUser: r,
-    displayProfile: o,
+    currentUser: o,
+    displayProfile: r,
     subsection: t,
-    onClose: x
+    onClose: h
   })
 }
 
@@ -70,15 +70,15 @@ function b(e) {
     displayProfile: m,
     guildId: p,
     items: f,
-    initialSection: b = h.oh.USER_INFO,
+    initialSection: b = x.oh.USER_INFO,
     initialSubsection: I,
     onClose: y
   } = e, {
-    trackUserProfileAction: Z
-  } = (0, a.KZ)(), O = (0, r.e7)([s.Z], () => s.Z.hidePersonalInformation), [{
-    section: N,
-    subsection: P
-  }, T] = i.useState({
+    trackUserProfileAction: _
+  } = (0, a.KZ)(), Z = (0, o.e7)([s.Z], () => s.Z.hidePersonalInformation), [{
+    section: O,
+    subsection: N
+  }, A] = i.useState({
     section: null != (c = null == (n = f.find(e => {
       let {
         section: n
@@ -88,48 +88,48 @@ function b(e) {
     subsection: I
   });
   i.useEffect(() => {
-    null == f.find(e => e.section === N) && T({
+    null == f.find(e => e.section === O) && A({
       section: f[0].section,
       subsection: true
     })
-  }, [f, N]);
-  let A = i.useCallback(e => {
-    Z({
+  }, [f, O]);
+  let T = i.useCallback(e => {
+    _({
       action: "PRESS_SECTION",
       section: e
-    }), T({
+    }), A({
       section: e,
       subsection: true
     })
-  }, [Z, T]);
-  return O ? (0, l.jsx)("div", {
-    className: v.container,
+  }, [_, A]);
+  return Z ? (0, l.jsx)("div", {
+    className: j.container,
     children: (0, l.jsxs)("div", {
-      className: j.empty,
+      className: v.empty,
       children: [(0, l.jsx)("div", {
-        className: j.emptyIconStreamerMode
+        className: v.emptyIconStreamerMode
       }), (0, l.jsx)("div", {
-        className: j.emptyText,
-        children: x.intl.string(x.t.Br1ls7)
+        className: v.emptyText,
+        children: h.intl.string(h.t.Br1ls7)
       })]
     })
   }) : (0, l.jsxs)("div", {
-    className: v.container,
-    children: [(0, l.jsx)(o.njP, {
-      className: v.tabBar,
+    className: j.container,
+    children: [(0, l.jsx)(r.njP, {
+      className: j.tabBar,
       type: "top",
-      selectedItem: N,
-      onItemSelect: A,
+      selectedItem: O,
+      onItemSelect: T,
       children: f.map(e => {
         let {
           section: n,
           text: t
         } = e;
-        return (0, l.jsx)(o.njP.Item, {
-          className: v.tabBarItem,
+        return (0, l.jsx)(r.njP.Item, {
+          className: j.tabBarItem,
           id: n,
           "aria-label": t,
-          children: (0, l.jsx)(o.Text, {
+          children: (0, l.jsx)(r.Text, {
             variant: "text-sm/normal",
             children: t
           })
@@ -137,8 +137,8 @@ function b(e) {
       })
     }), (0, l.jsx)(g, {
       items: f,
-      section: N,
-      subsection: P,
+      section: O,
+      subsection: N,
       user: d,
       currentUser: u,
       displayProfile: m,

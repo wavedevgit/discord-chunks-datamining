@@ -1,7 +1,7 @@
-/** Chunk was on 23404 **/
+/** Chunk was on 31029 **/
 /** chunk id: 701464, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => f
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,13 +17,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk391763 = require("./391763.js");
 
-function f(e) {
+function m(e) {
   let {
     giftRecipient: t
   } = e, n = (0, l.ZP)(null == t ? true : t.id), {
     defaultWishlistId: c,
-    wishlist: f,
-    popularProducts: m,
+    wishlist: m,
+    popularProducts: f,
     isFetchingWishlist: x,
     isFetchingShopHome: g,
     isFetchingCategories: j,
@@ -31,14 +31,14 @@ function f(e) {
     fetchShopHomeError: y
   } = (0, d.ZL)(t), {
     displayItems: L,
-    wishlistLength: S
+    wishlistLength: v
   } = (0, d.UD)({
-    wishlist: f,
+    wishlist: m,
     defaultWishlistId: c,
-    popularProducts: m,
+    popularProducts: f,
     wishlistError: b,
     fetchShopHomeError: y
-  }), v = i.useCallback(() => {
+  }), S = i.useCallback(() => {
     (0, o.openUserProfileModal)({
       userId: t.id,
       section: p.oh.WISHLIST
@@ -80,7 +80,7 @@ function f(e) {
         text: _.intl.format(_.t["8uYD+P"], {
           username: w
         }),
-        onClick: v,
+        onClick: S,
         disabled: (null == t ? true : t.id) == null
       })]
     }), x || g || j || 0 === L.length ? (0, r.jsxs)(r.Fragment, {
@@ -118,14 +118,14 @@ function f(e) {
             size: "sm",
             giftingOrigin: i === d.lr.WISHLIST ? u.Wt.DM_CHANNEL_WISHLIST : u.Wt.DM_CHANNEL,
             collectibleSource: i,
-            showIcons: S < d.zL
+            showIcons: v < d.zL
           })
         }, n.skuId)
       })
     })]
   })
 }
-let m = function(e) {
+let f = function(e) {
   let {
     onSelectSku: t,
     isGift: n,
@@ -149,7 +149,7 @@ let m = function(e) {
         priceOptions: i,
         enablePremiumBrandRefresh: true
       })]
-    }), (0, r.jsx)(f, {
+    }), (0, r.jsx)(m, {
       giftRecipient: l
     })]
   })

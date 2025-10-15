@@ -18,9 +18,9 @@ var Chunk836560 = require("./836560.js"),
   Chunk852926 = require("./852926.js"),
   Chunk186901 = require("./186901.js"),
   Chunk981631 = require("./981631.js"),
-  O = require("./413135.js").Buffer;
+  E = require("./413135.js").Buffer;
 
-function E(e, t, n) {
+function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,8 +35,8 @@ try {
     r = Chunk998502.ZP.requireModule("erlpack")
   } catch (e) {}
 }
-let v = Chunk998502.ZP.requireModule("discord_rpc").RPCWebSocket,
-  y = window.GLOBAL_ENV.MARKETING_ENDPOINT,
+let y = Chunk998502.ZP.requireModule("discord_rpc").RPCWebSocket,
+  v = window.GLOBAL_ENV.MARKETING_ENDPOINT,
   I = new Chunk710845.Z("RPCServer:WSS"),
   C = [];
 
@@ -66,28 +66,28 @@ function N(e, t, n) {
       "Access-Control-Allow-Methods": "POST, GET, PUT, PATCH, DELETE",
       "Access-Control-Allow-Headers": "Content-Type, Authorization"
     } : {};
-  n = n ? JSON.stringify(n) : "", r = 200 === r && 0 === n.length ? 204 : r, t.setHeader("Content-Length", O.byteLength(n).toString()), t.setHeader("Content-Type", "application/json"), t.writeHead(r, function(e) {
+  n = n ? JSON.stringify(n) : "", r = 200 === r && 0 === n.length ? 204 : r, t.setHeader("Content-Length", E.byteLength(n).toString()), t.setHeader("Content-Type", "application/json"), t.writeHead(r, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
       "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
         return Object.getOwnPropertyDescriptor(n, e).enumerable
       }))), r.forEach(function(t) {
-        E(e, t, n[t])
+        O(e, t, n[t])
       })
     }
     return e
   }({}, i, l)), t.end(n)
 }
 
-function j(e, t, n, r) {
+function P(e, t, n, r) {
   let i = arguments.length > 4 && true !== arguments[4] ? arguments[4] : 0;
   N(e, t, {
     code: i,
     message: r
   }, n)
 }
-class P extends Chunk76238.Z {
+class j extends Chunk76238.Z {
   send(e) {
     (u.default.isLoggingOverlayEvents || e.cmd !== _.Etm.OVERLAY && e.evt !== _.zMe.OVERLAY) && I.info("Socket Emit: ".concat(this.id), (0, h.Z)(e)), null != r && "etf" === this.encoding ? this._socket.send(r.pack(e), {
       binary: true
@@ -97,7 +97,7 @@ class P extends Chunk76238.Z {
     this._socket.close(e, t)
   }
   constructor(e, t, n) {
-    if (super("ws", t, n), E(this, "_socket", true), false === ["etf", "json"].indexOf(n)) throw new f.Z({
+    if (super("ws", t, n), O(this, "_socket", true), false === ["etf", "json"].indexOf(n)) throw new f.Z({
       closeCode: _.$VG.INVALID_ENCODING
     }, "Invalid Encoding: ".concat(n));
     if ("etf" === n && null == r) throw new f.Z({
@@ -106,7 +106,7 @@ class P extends Chunk76238.Z {
     this._socket = e
   }
 }
-class x extends Chunk76238.Z {
+class A extends Chunk76238.Z {
   send(e) {
     (u.default.isLoggingOverlayEvents || e.cmd !== _.Etm.OVERLAY) && I.info("Socket Emit: ".concat(this.id), e), this._sendCallback(e)
   }
@@ -114,13 +114,13 @@ class x extends Chunk76238.Z {
     this._closeCallback(t, e)
   }
   constructor(e, t, n, r) {
-    if (super("http", n, r), E(this, "_sendCallback", true), E(this, "_closeCallback", true), "json" !== r) throw new f.Z({
+    if (super("http", n, r), O(this, "_sendCallback", true), O(this, "_closeCallback", true), "json" !== r) throw new f.Z({
       closeCode: _.$VG.INVALID_ENCODING
     }, "Invalid Encoding: ".concat(r));
     this._sendCallback = e, this._closeCallback = t
   }
 }
-class A extends Chunk836560.EventEmitter {
+class x extends Chunk836560.EventEmitter {
   handleRequest(e, t) {
     let [n, r] = S(e.url).split("?"), i = S(e.method);
     if ("/rpc" === n && "OPTIONS" === i) return void N(e, t, {
@@ -136,12 +136,12 @@ class A extends Chunk836560.EventEmitter {
             protocol: i,
             host: l
           } = null != (r = d.Z.toURLSafe(null != (e = n.get("callback")) ? e : "")) ? r : {};
-          i === location.protocol && l === location.host ? t.setHeader("Location", n.get("callback")) : t.setHeader("Location", y), t.writeHead(301), t.end()
+          i === location.protocol && l === location.host ? t.setHeader("Location", n.get("callback")) : t.setHeader("Location", v), t.writeHead(301), t.end()
         },
-        s = new x(!l ? o : N.bind(null, e, t), !l ? o : j.bind(null, e, t, 400), Number(n.get("v")), i);
+        s = new A(!l ? o : N.bind(null, e, t), !l ? o : P.bind(null, e, t, 400), Number(n.get("v")), i);
       if (l)(0, m.em)(s, S(e.headers).origin, n.get("client_id")).then(() => {
         let n = "";
-        e.on("data", e => n += e), e.on("error", () => j(e, t, 500, "Internal Server Error")), e.on("end", () => this.handleMessage(s, n))
+        e.on("data", e => n += e), e.on("error", () => P(e, t, 500, "Internal Server Error")), e.on("end", () => this.handleMessage(s, n))
       }).catch(e => {
         let {
           code: t,
@@ -155,14 +155,14 @@ class A extends Chunk836560.EventEmitter {
       }
       return
     }
-    j(e, t, 404, "Not Found")
+    P(e, t, 404, "Not Found")
   }
   handleConnection(e) {
     var t, n;
     let r, i = new URLSearchParams(S(e.upgradeReq).url.split("?")[1]),
       l = null != (t = S(e.upgradeReq).headers.origin) ? t : "";
     try {
-      r = new P(e, Number(i.get("v")), null != (n = i.get("encoding")) ? n : "json")
+      r = new j(e, Number(i.get("v")), null != (n = i.get("encoding")) ? n : "json")
     } catch (t) {
       e.close(t.code, t.message);
       return
@@ -194,14 +194,14 @@ class A extends Chunk836560.EventEmitter {
     var e;
     super();
     let t = 0;
-    (i = v.http.createServer()).on("error", e => {
+    (i = y.http.createServer()).on("error", e => {
       I.error("Error: ".concat(e.message)), ("EADDRINUSE" === e.code || e.message.includes("EADDRINUSE")) && setTimeout(() => T(++t), 1e3)
     }), i.on("request", this.handleRequest.bind(this)), T(exports);
     let n = {
       instanceId: null != (e = i.instanceId) ? module : 0,
       server: i
     };
-    new v.ws.Server(require).on("connection", e => this.handleConnection(e))
+    new y.ws.Server(require).on("connection", e => this.handleConnection(e))
   }
 }
-let Z = new A
+let Z = new x

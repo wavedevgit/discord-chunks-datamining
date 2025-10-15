@@ -1,19 +1,19 @@
-/** Chunk was on 56848 **/
+/** Chunk was on 3091 **/
 /** chunk id: 5136, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  r: () => a
+  r: () => l
 });
 var Chunk647438 = require("./647438.js"),
   Chunk79116 = require("./79116.js"),
   Chunk481060 = require("./481060.js");
 
-function a(e) {
+function l(e) {
   let {
     container: t,
     edgeDistance: n = 130,
-    maxSpeed: a = 1700,
-    power: s = 2.2
-  } = e, o = (0, r.useRef)(null), c = (0, r.useRef)(0), u = (0, r.useCallback)(e => ({
+    maxSpeed: l = 1700,
+    power: o = 2.2
+  } = e, c = (0, r.useRef)(null), s = (0, r.useRef)(0), u = (0, r.useCallback)(e => ({
     isDragging: e.isDragging(),
     clientOffset: e.getClientOffset(),
     itemType: e.getItemType()
@@ -21,23 +21,23 @@ function a(e) {
     isDragging: d,
     clientOffset: f,
     itemType: g
-  } = (0, i.f)(u), p = (0, l.zPA)();
-  (0, r.useEffect)(() => (o.current = requestAnimationFrame(function e(r) {
+  } = (0, i.f)(u), p = (0, a.zPA)();
+  (0, r.useEffect)(() => (c.current = requestAnimationFrame(function e(r) {
     if (p || null == t) return;
-    if (o.current = requestAnimationFrame(e), false === d || null == f || "WIDGET" !== g) {
-      t.style.overflowAnchor = "auto", t.style.overscrollBehavior = "auto", c.current = r;
+    if (c.current = requestAnimationFrame(e), false === d || null == f || "WIDGET" !== g) {
+      t.style.overflowAnchor = "auto", t.style.overscrollBehavior = "auto", s.current = r;
       return
     }
     t.style.overflowAnchor = "none", t.style.overscrollBehavior = "contain";
-    let i = Math.min(32, 0 !== c.current ? r - c.current : 16) / 1e3;
-    c.current = r;
-    let l = t.getBoundingClientRect(),
+    let i = Math.min(32, 0 !== s.current ? r - s.current : 16) / 1e3;
+    s.current = r;
+    let a = t.getBoundingClientRect(),
       u = f.y,
-      m = u - l.top,
-      h = l.bottom - u,
-      v = 0;
-    m >= 0 && m < n ? v = -a * Math.pow(1 - m / n, s) : h >= 0 && h < n && (v = a * Math.pow(1 - h / n, s)), 0 !== v && (t.scrollTop += v * i)
+      m = u - a.top,
+      b = a.bottom - u,
+      h = 0;
+    m >= 0 && m < n ? h = -l * Math.pow(1 - m / n, o) : b >= 0 && b < n && (h = l * Math.pow(1 - b / n, o)), 0 !== h && (t.scrollTop += h * i)
   }), () => {
-    null !== o.current && cancelAnimationFrame(o.current), o.current = null, c.current = 0
-  }), [t, d, f, g, n, a, s, p])
+    null !== c.current && cancelAnimationFrame(c.current), c.current = null, s.current = 0
+  }), [t, d, f, g, n, l, o, p])
 }

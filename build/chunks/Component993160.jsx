@@ -1,4 +1,4 @@
-/** Chunk was on 31553 **/
+/** Chunk was on 93979 **/
 /** chunk id: 993160, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -21,32 +21,32 @@ function f(e) {
     user: n,
     currentUser: t,
     guildId: f,
-    channelId: h,
-    displayProfile: x,
-    relationshipType: j,
-    onClose: v
+    channelId: x,
+    displayProfile: h,
+    relationshipType: v,
+    onClose: j
   } = e, {
     newestAnalyticsLocation: g
-  } = (0, r.ZP)(), b = (0, o.Z)({
+  } = (0, o.ZP)(), b = (0, r.Z)({
     user: n,
     guildId: f,
-    channelId: h,
-    displayProfile: x,
-    onClose: v
+    channelId: x,
+    displayProfile: h,
+    onClose: j
   }), {
     gameFriends: I,
     hasOutgoingPendingGameFriends: y,
-    hasIncomingPendingGameFriends: Z
+    hasIncomingPendingGameFriends: _
   } = (0, m.H)({
     userId: n.id
-  }), O = I.length > 0 || y || Z;
-  return j === p.OGo.BLOCKED ? null : n.id === t.id ? (0, l.jsxs)(l.Fragment, {
+  }), Z = I.length > 0 || y || _;
+  return v === p.OGo.BLOCKED ? null : n.id === t.id ? (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)(s.Z, {
       user: n,
       guildId: f,
-      onClose: v
+      onClose: j
     }), (0, l.jsx)(d.Z, {
-      onClose: v
+      onClose: j
     }), (0, l.jsx)(c.wV, {
       user: n,
       guildId: f,
@@ -62,7 +62,7 @@ function f(e) {
       guildId: f,
       viewProfileItem: b
     })]
-  }) : j === p.OGo.PENDING_INCOMING ? (0, l.jsxs)(l.Fragment, {
+  }) : v === p.OGo.PENDING_INCOMING ? (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)(a.H, {
       userId: n.id,
       onClose: i.Z.popAll,
@@ -71,7 +71,7 @@ function f(e) {
       user: n,
       guildId: f
     })]
-  }) : j === p.OGo.FRIEND || j === p.OGo.PENDING_OUTGOING ? (0, l.jsxs)(l.Fragment, {
+  }) : v === p.OGo.FRIEND || v === p.OGo.PENDING_OUTGOING ? (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)(a.H, {
       userId: n.id,
       onClose: i.Z.popAll,
@@ -79,7 +79,7 @@ function f(e) {
     }), (0, l.jsx)(u.g, {
       type: "icon",
       user: n,
-      relationshipType: j,
+      relationshipType: v,
       shouldShowTooltip: true,
       themeColor: "secondary",
       analyticsLocation: g
@@ -88,7 +88,7 @@ function f(e) {
       guildId: f,
       viewProfileItem: b
     })]
-  }) : j === p.OGo.NONE && O ? (0, l.jsxs)(l.Fragment, {
+  }) : v === p.OGo.NONE && Z ? (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)(a.H, {
       userId: n.id,
       onClose: i.Z.popAll,
@@ -102,7 +102,7 @@ function f(e) {
       tooltipPosition: "top",
       tooltipAlign: "center",
       shouldShowTooltip: true,
-      hasIncomingPendingGameFriends: Z,
+      hasIncomingPendingGameFriends: _,
       hasOutgoingPendingGameFriends: y
     }), (0, l.jsx)(c.wV, {
       user: n,

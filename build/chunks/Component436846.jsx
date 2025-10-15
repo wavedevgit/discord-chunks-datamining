@@ -1,7 +1,7 @@
-/** Chunk was on 36073 **/
-/** chunk id: 436846, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 3091 **/
+/** chunk id: 436846, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -15,21 +15,21 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk959183 = require("./959183.js");
 
-function f(e) {
+function g(e) {
   let {
     widget: t
-  } = e, r = (0, s.Gv)(t.type), i = 1 === r, f = (0, o.e7)([c.default], () => ["en-US", "en-GB"].includes(c.default.locale)) && i ? d.intl.string(d.t["3FdPBQ"]) : d.intl.format(d.t.W8K2GB, {
-    maxGames: r
+  } = e, n = (0, s.Gv)(t.type), i = 1 === n, g = (0, l.e7)([c.default], () => ["en-US", "en-GB"].includes(c.default.locale)) && i ? d.intl.string(d.t["3FdPBQ"]) : d.intl.format(d.t.W8K2GB, {
+    maxGames: n
   });
-  return (0, n.jsxs)("div", {
-    className: a()(g.container, i && g.singleGameWidget),
-    children: [i && (0, n.jsx)(u.wl, {
+  return (0, r.jsxs)("div", {
+    className: a()(f.container, i && f.singleGameWidget),
+    children: [i && (0, r.jsx)(u.wl, {
       widget: t,
       widgetType: t.type
-    }), (0, n.jsx)(l.Text, {
+    }), (0, r.jsx)(o.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
-      children: f
+      children: g
     })]
   })
 }

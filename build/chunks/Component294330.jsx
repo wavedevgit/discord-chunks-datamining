@@ -1,9 +1,9 @@
 /** Chunk was on 1272 **/
 /** chunk id: 294330, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Eo: () => P,
+  Eo: () => j,
   VD: () => N,
-  ZP: () => x
+  ZP: () => A
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -35,7 +35,7 @@ function N(e) {
     guild: t,
     onClick: l,
     onView: o
-  } = e, [h, g] = i.useState(false), [O, N] = i.useState(false), [j, P] = i.useState(false), x = i.useRef(null), A = i.useCallback(async () => {
+  } = e, [h, g] = i.useState(false), [E, N] = i.useState(false), [P, j] = i.useState(false), A = i.useRef(null), x = i.useCallback(async () => {
     N(true);
     try {
       await l(t.id)
@@ -82,7 +82,7 @@ function N(e) {
         }), i))
       }
     })
-  }, [t]), L = (0, d.ZP)(), R = t.features.has(v.oNc.HUB), D = i.useMemo(() => {
+  }, [t]), L = (0, d.ZP)(), R = t.features.has(y.oNc.HUB), D = i.useMemo(() => {
     let e = _.ZP.getGuildDiscoverySplashURL({
       id: t.id,
       splash: t.discoverySplash,
@@ -91,9 +91,9 @@ function N(e) {
     if (null != e) return e;
     if (R) return T;
     switch (L) {
-      case v.BRd.DARK:
+      case y.BRd.DARK:
         return C;
-      case v.BRd.LIGHT:
+      case y.BRd.LIGHT:
         return S
     }
   }, [t.discoverySplash, t.id, R, L]), k = i.useMemo(() => _.ZP.getGuildIconURL({
@@ -103,37 +103,37 @@ function N(e) {
   }), [t.icon, t.id]);
   return (0, r.jsxs)("div", {
     className: I.container,
-    children: [O && (0, r.jsx)("div", {
+    children: [E && (0, r.jsx)("div", {
       className: I.spinnerContainer,
       children: (0, r.jsx)(c.$jN, {
         type: c.$jN.Type.PULSING_ELLIPSIS,
         className: I.spinner
       })
     }), (0, r.jsx)(s.$, {
-      innerRef: x,
+      innerRef: A,
       onChange: Z,
       active: !h,
       threshold: .55,
       children: (0, r.jsxs)(f.Z, {
-        ref: x,
+        ref: A,
         className: I.card,
-        onClick: A,
-        disabled: O,
+        onClick: x,
+        disabled: E,
         onContextMenu: w,
-        "aria-label": y.intl.string(y.t["M9wQ+f"]),
+        "aria-label": v.intl.string(v.t["M9wQ+f"]),
         children: [(0, r.jsxs)("div", {
           className: I.header,
           children: [(0, r.jsx)("div", {
             className: a()(I.banner, {
-              [I.loaded]: j
+              [I.loaded]: P
             }),
             children: (0, r.jsx)("img", {
               src: D,
               alt: "",
               className: I.bannerImage,
-              onLoad: () => P(true)
+              onLoad: () => j(true)
             })
-          }), (0, r.jsx)(E.Z, {
+          }), (0, r.jsx)(O.Z, {
             className: I.maximizeIcon,
             guildId: t.id
           }), (0, r.jsx)("div", {
@@ -185,7 +185,7 @@ function N(e) {
                 className: I.memberDetailsText,
                 variant: "text-xs/normal",
                 color: "header-secondary",
-                children: y.intl.format(y.t["LC+S+v"], {
+                children: v.intl.format(v.t["LC+S+v"], {
                   membersOnline: t.presenceCount
                 })
               })]
@@ -197,7 +197,7 @@ function N(e) {
                 className: I.memberDetailsText,
                 variant: "text-xs/normal",
                 color: "header-secondary",
-                children: y.intl.format(y.t.zRl6XV, {
+                children: v.intl.format(v.t.zRl6XV, {
                   count: t.memberCount
                 })
               })]
@@ -209,12 +209,12 @@ function N(e) {
   })
 }
 
-function j(e) {
+function P(e) {
   let {
     guildId: t,
     onClick: n,
     onView: i
-  } = e, l = (0, o.e7)([O.Z], () => O.Z.getGuild(t));
+  } = e, l = (0, o.e7)([E.Z], () => E.Z.getGuild(t));
   return null == l ? null : (0, r.jsx)(N, {
     guild: l,
     onClick: n,
@@ -222,7 +222,7 @@ function j(e) {
   })
 }
 
-function P(e) {
+function j(e) {
   let {
     guildId: t,
     index: n,
@@ -238,7 +238,7 @@ function P(e) {
     state: n,
     cleanUp: i,
     animate: o.current,
-    children: (0, r.jsx)(j, {
+    children: (0, r.jsx)(P, {
       guildId: t.guildId,
       onClick: l,
       onView: a
@@ -259,4 +259,4 @@ function P(e) {
     })
   })
 }
-let x = Chunk647438.memo(j)
+let A = Chunk647438.memo(P)

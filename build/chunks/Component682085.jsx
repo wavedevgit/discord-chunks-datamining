@@ -1,7 +1,7 @@
-/** Chunk was on 56848 **/
+/** Chunk was on 3091 **/
 /** chunk id: 682085, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => j
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,19 +21,19 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk66582 = require("./66582.js");
 
-function b() {
+function j() {
   let {
     trackUserProfileEditAction: e
   } = (0, Chunk785717.KZ)(), t = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()), {
-    application: b,
-    config: x
+    application: j,
+    config: O
   } = (0, Chunk50130.G)(), {
-    token: O,
-    fetched: I
-  } = (0, Chunk491662.o)(null == x ? true : x.application_id), P = Chunk647438.useMemo(() => (null == x ? true : x.application_id) != null ? new Chunk931847.q({
+    token: x,
+    fetched: _
+  } = (0, Chunk491662.o)(null == O ? true : O.application_id), P = Chunk647438.useMemo(() => (null == O ? true : O.application_id) != null ? new Chunk931847.q({
     type: Chunk296009.l.APPLICATION,
-    applicationId: x.application_id
-  }) : null, [null == x ? true : x.application_id]), S = Chunk647438.useCallback(() => {
+    applicationId: O.application_id
+  }) : null, [null == O ? true : O.application_id]), I = Chunk647438.useCallback(() => {
     module({
       action: "PRESS_ADD_WIDGET"
     }), (0, Chunk481060.ZDy)(async () => {
@@ -41,7 +41,7 @@ function b() {
         default: t
       } = await require.e("38576").then(require.bind(require, 925170));
       return n => {
-        var i, l;
+        var i, a;
         return (0, r.jsx)(t, (i = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -59,28 +59,28 @@ function b() {
             })
           }
           return e
-        }({}, n), l = l = {
+        }({}, n), a = a = {
           trackUserProfileEditAction: e
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
             n.push.apply(n, r)
           }
           return n
-        })(Object(l)).forEach(function(e) {
-          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
+        })(Object(a)).forEach(function(e) {
+          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
         }), i))
       }
     }, {
       stackingBehavior: "stack"
     })
   }, [module]);
-  if (null == exports || null == b || null == P || !I) return (0, Chunk951288.jsx)("div", {
+  if (null == exports || null == j || null == P || !_) return (0, Chunk951288.jsx)("div", {
     className: Chunk66582.loading,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
   });
-  if (null == O) return (0, Chunk951288.jsx)(Chunk795990.Z, {});
+  if (null == x) return (0, Chunk951288.jsx)(Chunk795990.Z, {});
   let w = (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
     gap: 4,
     className: Chunk66582.header,
@@ -92,7 +92,7 @@ function b() {
       variant: "text-sm/normal",
       color: "text-secondary",
       children: Chunk388032.intl.format(Chunk388032.t.YnNFWV, {
-        applicationName: b.name
+        applicationName: j.name
       })
     })]
   });
@@ -105,30 +105,30 @@ function b() {
         markAsDismissed: i
       } = e;
       switch (n) {
-        case s.z.APPLICATION_WIDGET_EMPTY_STATE_CARD_ADD_WIDGET:
-          return (0, r.jsxs)(o.Kqy, {
+        case o.z.APPLICATION_WIDGET_EMPTY_STATE_CARD_ADD_WIDGET:
+          return (0, r.jsxs)(c.Kqy, {
             gap: 16,
             align: "center",
-            children: [(0, r.jsx)(o.LZC, {
+            children: [(0, r.jsx)(c.LZC, {
               size: 32
             }), w, (0, r.jsx)(m.Z, {
               user: t,
-              application: b,
+              application: j,
               onDismiss: i
-            }), (0, r.jsx)(h.Z, {})]
+            }), (0, r.jsx)(b.Z, {})]
           });
         case null:
-          return (0, r.jsxs)(o.Kqy, {
+          return (0, r.jsxs)(c.Kqy, {
             gap: 32,
             align: "center",
-            children: [(0, r.jsx)(o.LZC, {
+            children: [(0, r.jsx)(c.LZC, {
               size: 128
-            }), w, (0, r.jsx)(o.Button, {
-              icon: o.qJs,
+            }), w, (0, r.jsx)(c.Button, {
+              icon: c.qJs,
               text: y.intl.string(y.t.lBG2s7),
               size: "md",
               color: "secondary",
-              onClick: S
+              onClick: I
             })]
           })
       }

@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 177698, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => E
 }), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -50,29 +50,29 @@ function _(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let O = (0, Chunk703912.Z)(e => {
+let E = (0, Chunk703912.Z)(e => {
   var t;
   let {
     clientId: n,
     authorizations: u,
     scopes: d,
     parsedPermissions: f,
-    responseType: O,
-    redirectUri: E,
-    codeChallenge: v,
-    codeChallengeMethod: y,
+    responseType: E,
+    redirectUri: O,
+    codeChallenge: y,
+    codeChallengeMethod: v,
     state: I,
     guildId: C,
     channelId: S,
     prompt: T,
     disableGuildSelect: N,
-    disclosures: j,
-    integrationType: P,
-    pid: x,
-    signal: A
-  } = e, Z = "OAuth2Authorize_".concat(n, "_").concat(C, "_").concat(S), w = null != P ? null == u ? true : u.get(P) : true, L = null != (t = null == w ? true : w.application) ? t : a.Z.getApplication(n);
+    disclosures: P,
+    integrationType: j,
+    pid: A,
+    signal: x
+  } = e, Z = "OAuth2Authorize_".concat(n, "_").concat(C, "_").concat(S), w = null != j ? null == u ? true : u.get(j) : true, L = null != (t = null == w ? true : w.application) ? t : a.Z.getApplication(n);
   return new Promise((e, t) => {
-    let a = (0, h.jU)(x),
+    let a = (0, h.jU)(A),
       w = i.z1l;
     null != L && null != (0, l.ZP)({
       application: L,
@@ -91,7 +91,7 @@ let O = (0, Chunk703912.Z)(e => {
             }, "OAuth2 Error: No location provided")), a.lock();
             return
           }
-          if (e(s), null == E || null == L) return void a.lock();
+          if (e(s), null == O || null == L) return void a.lock();
           null == new URL(s).searchParams.get("error") ? (0, i.h7j)(e => (0, r.jsx)(c.$0, b({
             application: L
           }, e)), {
@@ -123,24 +123,24 @@ let O = (0, Chunk703912.Z)(e => {
             null == t || t.removeEventListener("abort", n)
           }
         }
-      }(Z, A);
+      }(Z, x);
     (0, i.h7j)(e => (0, r.jsx)(o.OAuth2AuthorizeModal, _(b({}, e), {
       authorizations: u,
       clientId: n,
       scopes: null != d ? d : [],
-      disclosures: null != j ? j : [],
+      disclosures: null != P ? P : [],
       callback: D,
-      responseType: O,
-      redirectUri: E,
-      codeChallenge: v,
-      codeChallengeMethod: y,
+      responseType: E,
+      redirectUri: O,
+      codeChallenge: y,
+      codeChallengeMethod: v,
       state: I,
       permissions: f,
       guildId: C,
       channelId: S,
       prompt: T,
       disableGuildSelect: "boolean" == typeof N ? N : "true" === N,
-      integrationType: P,
+      integrationType: j,
       cancelCompletesFlow: true
     })), {
       modalKey: Z,

@@ -1,4 +1,4 @@
-/** Chunk was on 31553 **/
+/** Chunk was on 93979 **/
 /** chunk id: 768111, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -27,38 +27,38 @@ function g(e) {
   } = e, {
     mutualFriendsCount: g,
     mutualGuilds: b
-  } = (0, p.Z)(n), I = null == b ? true : b.length, y = (0, m.Z)(n), Z = (0, d.Z)({
+  } = (0, p.Z)(n), I = null == b ? true : b.length, y = (0, m.Z)(n), _ = (0, d.Z)({
     location: "useUserProfileModalV2TabBarItems"
-  }), O = (0, u.Z)({
+  }), Z = (0, u.Z)({
     location: "useUserProfileModalV2TabBarItems"
-  }), N = (0, f.Z)(n.id), P = (0, s.Y)({
+  }), O = (0, f.Z)(n.id), N = (0, s.Y)({
     location: "useUserProfileModalV2TabBarItems"
-  }), T = (0, a.S)({
+  }), A = (0, a.S)({
     location: "useUserProfileModalV2TabBarItems"
-  }), A = (0, c.Z)(n.id), E = [], S = n.id === (null == t ? true : t.id), C = o.Z.getFirstWishlistId(n.id), _ = null != C, w = _ ? o.Z.getWishlistSettings(n.id, C) : null, D = (_ ? i.Z.getWishlistItems(C) : []).length > 0, R = N.length > 0;
-  (S && Z || R && O) && E.push({
-    text: v.intl.string(v.t.laViw8),
-    section: j.oh.WIDGETS,
+  }), T = (0, c.Z)(n.id), P = [], E = n.id === (null == t ? true : t.id), C = r.Z.getFirstWishlistId(n.id), S = null != C, w = S ? r.Z.getWishlistSettings(n.id, C) : null, R = (S ? i.Z.getWishlistItems(C) : []).length > 0, D = O.length > 0;
+  (E && _ || D && Z) && P.push({
+    text: j.intl.string(j.t.laViw8),
+    section: v.oh.WIDGETS,
     subsection: true
-  }), E.push({
-    text: v.intl.string(v.t.chq59f),
-    section: j.oh.ACTIVITY,
+  }), P.push({
+    text: j.intl.string(j.t.chq59f),
+    section: v.oh.ACTIVITY,
     subsection: true
   });
   let L = false === n.nsfwAllowed,
-    M = r.Z.isFriend(n.id),
-    U = (null == w ? true : w.visibility) === l.f.PUBLIC;
-  return (S && P || !S && T && D && U && A && (!L || L && M)) && E.push({
-    text: v.intl.string(v.t["7lZ31N"]),
-    section: j.oh.WISHLIST,
+    M = o.Z.isFriend(n.id),
+    B = (null == w ? true : w.visibility) === l.f.PUBLIC;
+  return (E && N || !E && A && R && B && T && (!L || L && M)) && P.push({
+    text: j.intl.string(j.t["7lZ31N"]),
+    section: v.oh.WISHLIST,
     subsection: true
-  }), n.id !== (null == t ? true : t.id) && y && (E.push({
-    text: (0, h.Z)(g),
-    section: j.oh.MUTUAL_FRIENDS,
+  }), n.id !== (null == t ? true : t.id) && y && (P.push({
+    text: (0, x.Z)(g),
+    section: v.oh.MUTUAL_FRIENDS,
     subsection: true
-  }), E.push({
-    text: (0, x.Z)(I),
-    section: j.oh.MUTUAL_GUILDS,
+  }), P.push({
+    text: (0, h.Z)(I),
+    section: v.oh.MUTUAL_GUILDS,
     subsection: true
-  })), E
+  })), P
 }
