@@ -57,7 +57,7 @@ function b(e) {
     gameServerInstance: a,
     availableBoostCount: i,
     planCost: r
-  } = (0, c.JL)(), s = r > 0 && i < r, o = r > 0 ? null != a ? m.intl.string(d.default.e3Q5Ky) : s ? m.intl.string(d.default.H4tu7u) : m.intl.string(d.default["cmSy/f"]) : m.intl.string(m.t.K344S0);
+  } = (0, c.JL)(), s = r > 0 && i < r, o = r > 0 ? null != a ? m.intl.string(d.default.e3Q5Ky) : m.intl.string(d.default["cmSy/f"]) : m.intl.string(m.t.K344S0);
   return (0, l.jsx)(u.Button, g({
     variant: s || r > 0 ? "expressive" : "primary",
     text: o,

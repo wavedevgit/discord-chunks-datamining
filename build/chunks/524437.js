@@ -1899,6 +1899,9 @@ class e_ extends Chunk495852.C {
         case 11:
           a.enableVoiceActivityNotifications = s.D5.internalBinaryRead(e, e.uint32(), n, a.enableVoiceActivityNotifications);
           break;
+        case 12:
+          a.enableFriendOnlineNotifications = s.D5.internalBinaryRead(e, e.uint32(), n, a.enableFriendOnlineNotifications);
+          break;
         default:
           let o = n.readUnknownField;
           if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
@@ -1909,7 +1912,7 @@ class e_ extends Chunk495852.C {
     return a
   }
   internalBinaryWrite(e, t, n) {
-    e.showInAppNotifications && s.D5.internalBinaryWrite(e.showInAppNotifications, t.tag(1, r.TD.LengthDelimited).fork(), n).join(), e.notifyFriendsOnGoLive && s.D5.internalBinaryWrite(e.notifyFriendsOnGoLive, t.tag(2, r.TD.LengthDelimited).fork(), n).join(), "0" !== e.notificationCenterAckedBeforeId && t.tag(3, r.TD.Bit64).fixed64(e.notificationCenterAckedBeforeId), e.enableBurstReactionNotifications && s.D5.internalBinaryWrite(e.enableBurstReactionNotifications, t.tag(4, r.TD.LengthDelimited).fork(), n).join(), e.quietMode && s.D5.internalBinaryWrite(e.quietMode, t.tag(5, r.TD.LengthDelimited).fork(), n).join(), "0" !== e.focusModeExpiresAtMs && t.tag(6, r.TD.Bit64).fixed64(e.focusModeExpiresAtMs), 0 !== e.reactionNotifications && t.tag(7, r.TD.Varint).int32(e.reactionNotifications), 0 !== e.gameActivityNotifications && t.tag(8, r.TD.Varint).int32(e.gameActivityNotifications), 0 !== e.customStatusPushNotifications && t.tag(9, r.TD.Varint).int32(e.customStatusPushNotifications), e.gameActivityExcludeSteamNotifications && s.D5.internalBinaryWrite(e.gameActivityExcludeSteamNotifications, t.tag(10, r.TD.LengthDelimited).fork(), n).join(), e.enableVoiceActivityNotifications && s.D5.internalBinaryWrite(e.enableVoiceActivityNotifications, t.tag(11, r.TD.LengthDelimited).fork(), n).join();
+    e.showInAppNotifications && s.D5.internalBinaryWrite(e.showInAppNotifications, t.tag(1, r.TD.LengthDelimited).fork(), n).join(), e.notifyFriendsOnGoLive && s.D5.internalBinaryWrite(e.notifyFriendsOnGoLive, t.tag(2, r.TD.LengthDelimited).fork(), n).join(), "0" !== e.notificationCenterAckedBeforeId && t.tag(3, r.TD.Bit64).fixed64(e.notificationCenterAckedBeforeId), e.enableBurstReactionNotifications && s.D5.internalBinaryWrite(e.enableBurstReactionNotifications, t.tag(4, r.TD.LengthDelimited).fork(), n).join(), e.quietMode && s.D5.internalBinaryWrite(e.quietMode, t.tag(5, r.TD.LengthDelimited).fork(), n).join(), "0" !== e.focusModeExpiresAtMs && t.tag(6, r.TD.Bit64).fixed64(e.focusModeExpiresAtMs), 0 !== e.reactionNotifications && t.tag(7, r.TD.Varint).int32(e.reactionNotifications), 0 !== e.gameActivityNotifications && t.tag(8, r.TD.Varint).int32(e.gameActivityNotifications), 0 !== e.customStatusPushNotifications && t.tag(9, r.TD.Varint).int32(e.customStatusPushNotifications), e.gameActivityExcludeSteamNotifications && s.D5.internalBinaryWrite(e.gameActivityExcludeSteamNotifications, t.tag(10, r.TD.LengthDelimited).fork(), n).join(), e.enableVoiceActivityNotifications && s.D5.internalBinaryWrite(e.enableVoiceActivityNotifications, t.tag(11, r.TD.LengthDelimited).fork(), n).join(), e.enableFriendOnlineNotifications && s.D5.internalBinaryWrite(e.enableFriendOnlineNotifications, t.tag(12, r.TD.LengthDelimited).fork(), n).join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -1967,6 +1970,11 @@ class e_ extends Chunk495852.C {
     }, {
       no: 11,
       name: "enable_voice_activity_notifications",
+      kind: "message",
+      T: () => Chunk381499.D5
+    }, {
+      no: 12,
+      name: "enable_friend_online_notifications",
       kind: "message",
       T: () => Chunk381499.D5
     }])

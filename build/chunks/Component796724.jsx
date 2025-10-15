@@ -122,18 +122,19 @@ function P() {
         label: e.name
       }))) ? module : []
     }, [L, B]),
-    z = Chunk647438.useMemo(() => {
+    z = Chunk647438.useMemo(() => B.some(e => "" !== e.pingUrl), [B]),
+    D = Chunk647438.useMemo(() => {
       var e;
       return null != (e = null == exports ? true : exports.plans.map(e => ({
         value: e,
         label: e.name
       }))) ? module : []
     }, [exports]),
-    D = (0, Chunk281014.Z)(),
+    U = (0, Chunk281014.Z)(),
     F = null != Chunk120356,
-    U = (0, Chunk531508.Z)(Chunk120356),
-    V = (0, Chunk669460.Z)(M),
-    A = null != M && null != Chunk619733.nd[M] ? Chunk619733.nd[M] : "";
+    V = (0, Chunk531508.Z)(Chunk120356),
+    A = (0, Chunk669460.Z)(M),
+    K = null != M && null != Chunk619733.nd[M] ? Chunk619733.nd[M] : "";
   return null == exports ? (0, Chunk951288.jsx)("div", {
     className: Chunk817121.spinnerContainer,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {
@@ -167,7 +168,7 @@ function P() {
             onChange: P,
             placeholder: Chunk388032.intl.string(Chunk948208.default.ElVYr6),
             maxLength: Chunk619733.Sg,
-            disabled: Z || !U
+            disabled: Z || !V
           })]
         }), (0, Chunk951288.jsxs)("div", {
           className: Chunk817121.sectionContainer,
@@ -185,7 +186,7 @@ function P() {
                 className: Chunk817121.sectionHeaderIcon,
                 size: "xs"
               })
-            }), !F && (0, Chunk951288.jsx)("div", {
+            }), !F && z && (0, Chunk951288.jsx)("div", {
               className: Chunk817121.refresh,
               children: (0, Chunk951288.jsx)(Chunk681715.u, {
                 asContainer: true,
@@ -207,7 +208,7 @@ function P() {
           }) : (0, Chunk951288.jsx)(Chunk481060.PhF, {
             serialize: e => e.id,
             isSelected: e => e.id === t,
-            isDisabled: Z || F || !U,
+            isDisabled: Z || F || !V,
             options: H,
             optionClassName: Chunk817121.option,
             select: e => a(e.id),
@@ -250,8 +251,8 @@ function P() {
           }), (0, Chunk951288.jsx)(Chunk481060.PhF, {
             serialize: e => e.id,
             isSelected: e => e.id === w,
-            isDisabled: Z || !U,
-            options: z,
+            isDisabled: Z || !V,
+            options: D,
             optionClassName: Chunk817121.option,
             select: e => R(e.id),
             placeholder: Chunk388032.intl.string(Chunk948208.default.JdMW0t),
@@ -283,7 +284,7 @@ function P() {
           boostCount: G
         })
       })
-    }), !U && (0, Chunk951288.jsx)(Chunk494620.Z, {
+    }), !V && (0, Chunk951288.jsx)(Chunk494620.Z, {
       className: Chunk817121.infoBox,
       look: Chunk494620.z.WARNING,
       children: (0, Chunk951288.jsx)(Chunk481060.Text, {
@@ -291,11 +292,12 @@ function P() {
         children: Chunk388032.intl.string(Chunk948208.default["/JNPWV"])
       })
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
-      variant: "text-sm/medium",
+      variant: "text-xs/medium",
+      color: "text-muted",
       children: null != M && Chunk388032.intl.format(F ? Chunk948208.default.num0a2 : Chunk948208.default.p5KZDg, {
-        provider: V,
+        provider: A,
         termsOfServiceUrl: () => (0, Chunk49012.q)({
-          href: A
+          href: K
         }),
         helpCenterUrl: Chunk63063.Z.getArticleURL(Chunk981631.BhN.GAME_SERVER_HOSTING)
       })
@@ -307,7 +309,7 @@ function P() {
       step: Chunk619733.EK.SERVER_SETTINGS,
       className: Chunk817121.footerContainer,
       children: [(0, Chunk951288.jsx)(Chunk30910.c_, {}), (0, Chunk951288.jsx)(Chunk30910.$b, {
-        disabled: !D
+        disabled: !U
       })]
     })]
   })

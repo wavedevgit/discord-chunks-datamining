@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk871404 = require("./871404.js");
 
-function f(e) {
+function x(e) {
   for (var n = 1; n < arguments.length; n++) {
     var t = null != arguments[n] ? arguments[n] : {},
       r = Object.keys(t);
@@ -34,7 +34,7 @@ function f(e) {
   return e
 }
 
-function x(e, n) {
+function f(e, n) {
   return n = null != n ? n : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, n) {
     var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -66,7 +66,7 @@ function p(e) {
         }
     }
   }(n);
-  return (0, r.jsxs)(i.IX, x(f({}, e), {
+  return (0, r.jsxs)(i.IX, f(x({}, e), {
     size: "lg",
     children: [(0, r.jsx)(i.xBx, {
       title: a,
@@ -104,8 +104,8 @@ function v(e) {
   } = (0, a.ZP)();
   return (0, r.jsx)(a.Gt, {
     value: n,
-    children: (0, r.jsx)(d.BT, x(f({}, e), {
-      children: (0, r.jsx)(p, f({}, e))
+    children: (0, r.jsx)(d.BT, f(x({}, e), {
+      children: (0, r.jsx)(p, x({}, e))
     }))
   })
 }
