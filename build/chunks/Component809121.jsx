@@ -91,14 +91,14 @@ function A(e) {
   let {
     guildId: n,
     instance: t
-  } = e, i = (0, O.Z)(t), [E, A] = (0, m.US)([c.z.GAME_SERVER_HOSTING_PORTKEY_TOS]), D = E !== c.z.GAME_SERVER_HOSTING_PORTKEY_TOS, V = (0, l.e7)([f.Z], () => f.Z.getDetectableGame(t.gameId)), B = a.useCallback(() => {
+  } = e, i = (0, O.Z)(t), [E, A] = (0, m.US)([c.z.GAME_SERVER_HOSTING_PORTKEY_TOS]), D = E !== c.z.GAME_SERVER_HOSTING_PORTKEY_TOS, V = (0, l.e7)([f.Z], () => f.Z.getDetectableGame(t.gameId)), L = a.useCallback(() => {
     D || null == t.providerType ? (0, I.Z)(n, t) : (0, N.Z)({
       provider: t.providerType,
       onAccept: () => {
         A(S.L.TAKE_ACTION), (0, I.Z)(n, t)
       }
     })
-  }, [t, D, A, n]), L = a.useCallback(() => {
+  }, [t, D, A, n]), B = a.useCallback(() => {
     (0, x.JG)(null != i ? i : ""), (0, u.showToast)((0, u.createToast)(T.intl.string(T.t["+5kSoa"]), u.ToastType.SUCCESS))
   }, [i]), M = (0, C.Z)(t.gameId, "cover"), W = (0, v.Z)(n), z = a.useCallback(() => {
     var e;
@@ -123,7 +123,7 @@ function A(e) {
       case o.V.STARTING:
         return (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(G, {
-            onClick: B
+            onClick: L
           }), W && (0, r.jsx)(Z, {
             onClick: z,
             disabled: null == t.gameServerPanelUrl
@@ -134,7 +134,7 @@ function A(e) {
         return W ? (0, r.jsx)(R, {
           onClick: z
         }) : (0, r.jsx)(G, {
-          onClick: B,
+          onClick: L,
           disabled: true
         });
       case o.V.DELETED:
@@ -142,17 +142,17 @@ function A(e) {
           onClick: z,
           disabled: null == t.gameServerPanelUrl
         }) : (0, r.jsx)(G, {
-          onClick: B,
+          onClick: L,
           disabled: true
         });
       default:
         return null
     }
-  }, [t, B, W, z, U]), K = a.useMemo(() => {
+  }, [t, L, W, z, U]), K = a.useMemo(() => {
     if (null == t.gameConfig) return null;
     let e = [t.gameConfig.type, t.gameConfig.version].filter(_.lm).join(" ");
     return "" === e ? null : e
-  }, [t.gameConfig]), q = a.useMemo(() => {
+  }, [t.gameConfig]), H = a.useMemo(() => {
     switch (t.status) {
       case o.V.STARTING:
         if (null == t.gameServerPanelUrl) return T.intl.string(P.default["1A3US0"]);
@@ -217,7 +217,7 @@ function A(e) {
                 }), (0, r.jsx)(u.P3F, {
                   className: w.copyButton,
                   "aria-label": T.intl.string(T.t.OpuAlJ),
-                  onClick: L,
+                  onClick: B,
                   children: (0, r.jsx)(u.TIy, {
                     size: "sm"
                   })
@@ -227,7 +227,7 @@ function A(e) {
                   (0, N.Z)({
                     provider: t.providerType,
                     onAccept: () => {
-                      A(S.L.TAKE_ACTION), L()
+                      A(S.L.TAKE_ACTION), B()
                     }
                   })
                 },
@@ -270,9 +270,9 @@ function A(e) {
                       return "—"
                   }
                 }(t.status)
-              }), null != q && (0, r.jsx)(d.u, {
+              }), null != H && (0, r.jsx)(d.u, {
                 position: "top",
-                text: q,
+                text: H,
                 children: (0, r.jsx)(u.idN, {
                   className: w.statusTooltipIcon,
                   size: "xs"

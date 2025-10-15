@@ -1,7 +1,7 @@
 /** Chunk was on 63639 **/
-/** chunk id: 343312, original params: e,t,n (module,exports,require) **/
+/** chunk id: 343312, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  BT: () => y,
+  BT: () => h,
   JL: () => x
 }), require("./388685.js"), require("./457542.js");
 var Chunk951288 = require("./951288.js"),
@@ -21,127 +21,127 @@ var Chunk951288 = require("./951288.js"),
   Chunk619733 = require("./619733.js");
 let [j, x] = (0, Chunk975104.Z)();
 
-function y(e) {
-  var t, n, c, x, y, O, h;
+function h(e) {
+  var n, t, c, x, h, y, O;
   let {
     guildId: P,
-    initialGameServerInstance: S,
-    initialGameServerGame: k,
-    stepConfig: I = p.IX,
-    children: w,
-    onClose: C,
+    initialGameServerInstance: k,
+    initialGameServerGame: I,
+    stepConfig: S = p.IX,
+    children: C,
+    onClose: Z,
     analyticsLocation: N
   } = e;
   a.useEffect(() => {
-    (0, g.ce)(P), (0, m.BN)(P, true), null == S && (0, g.mF)(P)
-  }, [P, S]);
-  let Z = (0, i.e7)([f.Z], () => f.Z.getStateForGuild(P)),
-    _ = (0, i.e7)([u.Z], () => u.Z.getGuild(P)),
+    (0, g.ce)(P), (0, m.BN)(P, true), null == k && (0, g.mF)(P)
+  }, [P, k]);
+  let w = (0, i.e7)([f.Z], () => f.Z.getStateForGuild(P)),
+    T = (0, i.e7)([u.Z], () => u.Z.getGuild(P)),
     {
-      analyticsLocations: T
+      analyticsLocations: _
     } = (0, r.ZP)(N),
-    [L, E] = a.useState(null != (n = I.initialStep) ? n : Object.keys(I.steps)[0]),
-    B = (0, v.Td)(P, true),
-    D = I.steps[L],
-    [G, F] = a.useState(null == k ? true : k.id);
+    [L, B] = a.useState(null != (t = S.initialStep) ? t : Object.keys(S.steps)[0]),
+    E = (0, v.Td)(P, true),
+    G = S.steps[L],
+    [D, z] = a.useState(null == I ? true : I.id);
   a.useEffect(() => {
-    var e, t, n;
-    if (null != G || (null == S ? true : S.entitlementId) == null) return;
-    let l = null == Z || null == (n = Z.entitlements) || null == (t = n[S.entitlementId]) || null == (e = t.sku) ? true : e.product_id;
-    null != l && F(l)
-  }, [null == Z ? true : Z.entitlements, null == S ? true : S.entitlementId, G]);
-  let [J, z] = a.useState(true), H = a.useMemo(() => {
+    var e, n, t;
+    if (null != D || (null == k ? true : k.entitlementId) == null) return;
+    let l = null == w || null == (t = w.entitlements) || null == (n = t[k.entitlementId]) || null == (e = n.sku) ? true : e.product_id;
+    null != l && z(l)
+  }, [null == w ? true : w.entitlements, null == k ? true : k.entitlementId, D]);
+  let [F, J] = a.useState(true), H = a.useMemo(() => {
     var e;
-    if (null != G) return Object.values(null != (e = null == Z ? true : Z.catalog) ? e : {}).find(e => e.id === G)
-  }, [null == Z ? true : Z.catalog, G]), [A, K] = a.useState(S), [R, M] = a.useState(null != (c = null == k || null == (t = k.plans[0]) ? true : t.id) ? c : null == S ? true : S.planId), U = function(e, t, n, l) {
+    if (null != D) return Object.values(null != (e = null == w ? true : w.catalog) ? e : {}).find(e => e.id === D)
+  }, [null == w ? true : w.catalog, D]), [A, K] = a.useState(k), [R, U] = a.useState(null != (c = null == I || null == (n = I.plans[0]) ? true : n.id) ? c : null == k ? true : k.planId), M = function(e, n, t, l) {
     var a, r, s, o, u, c, d, m;
     let v = (0, i.e7)([f.Z], () => {
-        var t;
-        return null == (t = f.Z.getStateForGuild(e)) ? true : t.entitlements
+        var n;
+        return null == (n = f.Z.getStateForGuild(e)) ? true : n.entitlements
       }),
-      g = null != (d = null == t || null == (a = t.plans.find(e => e.id === n)) ? true : a.cost) ? d : 0;
+      g = null != (d = null == n || null == (a = n.plans.find(e => e.id === t)) ? true : a.cost) ? d : 0;
     return null == l ? g : g - (null != (m = null == v || null == (c = v[l.entitlementId]) || null == (u = c.sku) || null == (o = u.tenant_metadata) || null == (s = o.guild_monetization) || null == (r = s.game_server) ? true : r.boost_price) ? m : 0)
   }(P, H, R, A), X = a.useCallback(e => {
-    var t, n, l, a, i, r;
+    var n, t, l, a, i, r;
     K(e);
-    let s = null == Z || null == (l = Z.entitlements) || null == (n = l[null != (a = null == e ? true : e.entitlementId) ? a : ""]) || null == (t = n.sku) ? true : t.product_id;
-    null != s && F(s), M(null == e ? true : e.planId), Q(null != (i = null == e ? true : e.name) ? i : ""), ee(null != (r = null == e ? true : e.regionId) ? r : "")
-  }, [null == Z ? true : Z.entitlements]), Y = a.useCallback((e, t) => {
-    var n;
-    X(true), F(null == e ? true : e.id), M(null != t ? t : null == e || null == (n = e.plans[0]) ? true : n.id)
-  }, [X]), [q, W] = a.useState(), [$, Q] = a.useState(null != (x = null == S ? true : S.name) ? x : ""), [V, ee] = a.useState(null != (y = null == S ? true : S.regionId) ? y : ""), [et, en] = a.useState(false), el = a.useCallback(() => {
-    if (z(true), null == _ || null == H || "" === $ || "" === V || null == R) return;
+    let s = null == w || null == (l = w.entitlements) || null == (t = l[null != (a = null == e ? true : e.entitlementId) ? a : ""]) || null == (n = t.sku) ? true : n.product_id;
+    null != s && z(s), U(null == e ? true : e.planId), $(null != (i = null == e ? true : e.name) ? i : ""), ee(null != (r = null == e ? true : e.regionId) ? r : "")
+  }, [null == w ? true : w.entitlements]), Y = a.useCallback((e, n) => {
+    var t;
+    X(true), z(null == e ? true : e.id), U(null != n ? n : null == e || null == (t = e.plans[0]) ? true : t.id)
+  }, [X]), [q, Q] = a.useState(), [W, $] = a.useState(null != (x = null == k ? true : k.name) ? x : ""), [V, ee] = a.useState(null != (h = null == k ? true : k.regionId) ? h : ""), [en, et] = a.useState(false), el = a.useCallback(() => {
+    if (J(true), null == T || null == H || "" === W || "" === V || null == R) return;
     let e = () => {
-      en(true);
+      et(true);
       let e = new Promise(e => {
         setTimeout(() => e(true), p.tq)
       });
-      Promise.all([null != A ? (0, g.EY)(_.id, A.entitlementId, R, $) : (0, g.NE)(_.id, R, $, V), e]).then(() => {
-        C(), (null == A ? true : A.planId) !== R && (0, b.Z)(_.id, H, null == A ? "created" : "updated")
+      Promise.all([null != A ? (0, g.EY)(T.id, A.entitlementId, R, W) : (0, g.NE)(T.id, R, W, V), e]).then(() => {
+        Z(), (null == A ? true : A.planId) !== R && (0, b.Z)(T.id, H, null == A ? "created" : "updated")
       }).catch(e => {
-        var t, n;
-        z(null != (n = null == (t = e.body) ? true : t.message) ? n : e.message)
+        var n, t;
+        J(null != (t = null == (n = e.body) ? true : n.message) ? t : e.message)
       }).finally(() => {
-        en(false)
+        et(false)
       })
     };
-    B < U ? (0, s.u)({
+    E < M ? (0, s.u)({
       analyticsLocation: N,
-      numberOfBoostsToAdd: U - B,
-      analyticsLocations: T,
-      guild: _,
+      numberOfBoostsToAdd: M - E,
+      analyticsLocations: _,
+      guild: T,
       intent: o.P.PERK,
       onLoading: e => {
-        en(e)
+        et(e)
       },
       onSubscribeComplete: e
     }) : e()
-  }, [T, _, B, R, N, H, $, V, C, U, A]), ea = a.useCallback(e => {
+  }, [_, T, E, R, N, H, W, V, Z, M, A]), ea = a.useCallback(e => {
     switch (e.type) {
       case "close":
-        C();
+        Z();
         break;
       case "go-to-step":
-        E(e.step);
+        B(e.step);
         break;
       case "save":
         el()
     }
-  }, [C, el]), ei = a.useCallback(() => {
-    null != D && ea(D.onBack)
-  }, [D, ea]), er = a.useCallback(() => {
-    null != D && ea(D.onNext)
-  }, [D, ea]), es = a.useMemo(() => {
+  }, [Z, el]), ei = a.useCallback(() => {
+    null != G && ea(G.onBack)
+  }, [G, ea]), er = a.useCallback(() => {
+    null != G && ea(G.onNext)
+  }, [G, ea]), es = a.useMemo(() => {
     var e;
-    return new Set(Object.values(null != (e = null == Z ? true : Z.catalog) ? e : {}).map(e => e.provider).filter(d.lm))
-  }, [null == Z ? true : Z.catalog]);
+    return new Set(Object.values(null != (e = null == w ? true : w.catalog) ? e : {}).map(e => e.provider).filter(d.lm))
+  }, [null == w ? true : w.catalog]);
   return (0, l.jsx)(j.Provider, {
     value: {
       guildId: P,
       step: L,
-      stepAction: D,
-      stepLoading: et,
+      stepAction: G,
+      stepLoading: en,
       onBack: ei,
       onNext: er,
-      gameServerGames: null != (O = null == Z ? true : Z.catalog) ? O : {},
-      instances: Object.values(null != (h = null == Z ? true : Z.instances) ? h : {}),
+      gameServerGames: null != (y = null == w ? true : w.catalog) ? y : {},
+      instances: Object.values(null != (O = null == w ? true : w.instances) ? O : {}),
       currentGame: H,
       setCurrentGame: Y,
       gameServerInstance: A,
       setGameServerInstance: X,
-      name: $,
-      setName: Q,
+      name: W,
+      setName: $,
       regionId: V,
       setRegionId: ee,
-      planCost: U,
+      planCost: M,
       planId: R,
-      setPlanId: M,
+      setPlanId: U,
       footerNode: q,
-      setFooterNode: W,
-      availableBoostCount: B,
-      error: J,
+      setFooterNode: Q,
+      availableBoostCount: E,
+      error: F,
       gameProvider: es.size > 0 ? Array.from(es)[0] : null
     },
-    children: w
+    children: C
   })
 }

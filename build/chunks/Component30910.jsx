@@ -1,5 +1,5 @@
 /** Chunk was on 63639 **/
-/** chunk id: 30910, original params: e,t,n (module,exports,require) **/
+/** chunk id: 30910, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   $b: () => p,
   c_: () => j,
@@ -19,19 +19,19 @@ var Chunk120356 = require("./120356.js"),
   Chunk467078 = require("./467078.js");
 
 function g(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      l = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), l.forEach(function(t) {
+  for (var n = 1; n < arguments.length; n++) {
+    var t = null != arguments[n] ? arguments[n] : {},
+      l = Object.keys(t);
+    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(t, e).enumerable
+    }))), l.forEach(function(n) {
       var l;
-      l = n[t], t in e ? Object.defineProperty(e, t, {
+      l = t[n], n in e ? Object.defineProperty(e, n, {
         value: l,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = l
+      }) : e[n] = l
     })
   }
   return e
@@ -39,12 +39,12 @@ function g(e) {
 
 function f(e) {
   let {
-    onNext: t
+    onNext: n
   } = (0, c.JL)();
   return (0, l.jsx)(u.Button, g({
     variant: "primary",
     text: m.intl.string(m.t["3PatS0"]),
-    onClick: t,
+    onClick: n,
     icon: u.ZSh,
     iconPosition: "end"
   }, e))
@@ -52,8 +52,8 @@ function f(e) {
 
 function b(e) {
   let {
-    onNext: t,
-    stepLoading: n,
+    onNext: n,
+    stepLoading: t,
     gameServerInstance: a,
     availableBoostCount: i,
     planCost: r
@@ -61,18 +61,18 @@ function b(e) {
   return (0, l.jsx)(u.Button, g({
     variant: s || r > 0 ? "expressive" : "primary",
     text: o,
-    onClick: t,
+    onClick: n,
     icon: s || r > 0 ? u.Ucv : true,
     iconPosition: "start",
-    loading: n
+    loading: t
   }, e))
 }
 
 function p(e) {
-  var t;
+  var n;
   let {
-    stepAction: n
-  } = (0, c.JL)(), a = null == n || null == (t = n.onNext) ? true : t.type;
+    stepAction: t
+  } = (0, c.JL)(), a = null == t || null == (n = t.onNext) ? true : n.type;
   switch (a) {
     case "go-to-step":
       return (0, l.jsx)(f, g({}, e));
@@ -84,12 +84,12 @@ function p(e) {
 }
 
 function j(e) {
-  var t, n, a;
+  var n, t, a;
   let i, {
       onBack: r,
       stepAction: o
     } = (0, c.JL)(),
-    d = null == o || null == (t = o.onBack) ? true : t.type;
+    d = null == o || null == (n = o.onBack) ? true : n.type;
   switch (d) {
     case "go-to-step":
       i = m.intl.string(m.t["13/7kZ"]);
@@ -97,35 +97,35 @@ function j(e) {
     case "close":
       i = m.intl.string(m.t.cpT0Cg)
   }
-  return s()(null != i, "Invalid stepType ".concat(d)), (0, l.jsx)(u.Button, (n = g({}, e), a = a = {
+  return s()(null != i, "Invalid stepType ".concat(d)), (0, l.jsx)(u.Button, (t = g({}, e), a = a = {
     variant: "secondary",
     text: i,
     onClick: r,
     icon: "go-to-step" === d ? u.whL : true,
     iconPosition: "start"
-  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
-    var n = Object.keys(e);
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(a)) : (function(e, n) {
+    var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
       var l = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, l)
+      t.push.apply(t, l)
     }
-    return n
+    return t
   })(Object(a)).forEach(function(e) {
-    Object.defineProperty(n, e, Object.getOwnPropertyDescriptor(a, e))
-  }), n))
+    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(a, e))
+  }), t))
 }
 
 function x(e) {
   let {
-    step: t,
-    className: n,
+    step: n,
+    className: t,
     children: a
   } = e, {
     footerNode: r,
     step: s
   } = (0, c.JL)();
-  return null == r || s !== t ? null : o.createPortal((0, l.jsx)("div", {
-    className: i()(v.footer, n),
+  return null == r || s !== n ? null : o.createPortal((0, l.jsx)("div", {
+    className: i()(v.footer, t),
     children: a
-  }), r, t)
+  }), r, n)
 }

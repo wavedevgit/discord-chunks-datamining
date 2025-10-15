@@ -1,5 +1,5 @@
 /** Chunk was on 63639 **/
-/** chunk id: 858594, original params: e,t,n (module,exports,require) **/
+/** chunk id: 858594, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => d
 });
@@ -15,19 +15,19 @@ var Chunk120356 = require("./120356.js"),
 
 function d(e) {
   let {
-    className: t,
-    game: n,
+    className: n,
+    game: t,
     onClick: a,
     imageClassName: d,
     titleClassName: m,
     disabled: v = false
-  } = e, g = (0, s.Z)(n.gameId, "cover");
+  } = e, g = (0, s.Z)(t.gameId, "cover");
   return (0, l.jsxs)(r.P3F, {
     "aria-disabled": v,
     className: i()(c.game, {
       [c.disabled]: v
-    }, t),
-    onClick: v ? true : () => a(n),
+    }, n),
+    onClick: v ? true : () => a(t),
     children: [(0, l.jsxs)("div", {
       className: i()(c.gameImageContainer, d),
       children: [(0, l.jsx)("img", {
@@ -44,8 +44,8 @@ function d(e) {
       children: [(0, l.jsx)(r.Heading, {
         variant: "heading-sm/semibold",
         lineClamp: 1,
-        title: n.name,
-        children: n.name
+        title: t.name,
+        children: t.name
       }), (0, l.jsxs)("div", {
         className: c.boostContainer,
         children: [(0, l.jsx)(r.Ucv, {
@@ -53,8 +53,8 @@ function d(e) {
           color: r.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK
         }), (0, l.jsx)(r.Text, {
           variant: "text-sm/medium",
-          children: u.intl.formatToPlainString(n.plans.length > 1 ? o.default["G/aTXl"] : o.default.r9pa9P, {
-            boostCount: n.baseCost
+          children: u.intl.formatToPlainString(t.plans.length > 1 ? o.default["G/aTXl"] : o.default.r9pa9P, {
+            boostCount: t.baseCost
           })
         })]
       })]
