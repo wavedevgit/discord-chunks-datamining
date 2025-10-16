@@ -35,14 +35,14 @@ function j(e) {
     fetchShopHomeError: y
   } = (0, p.ZL)(t), {
     displayItems: I,
-    wishlistLength: w
+    wishlistLength: P
   } = (0, p.UD)({
     wishlist: _,
     popularProducts: j,
     wishlistError: L,
     fetchShopHomeError: y
   }), {
-    theme: P,
+    theme: w,
     primaryColor: E,
     secondaryColor: O
   } = (0, d.Z)({
@@ -52,7 +52,7 @@ function j(e) {
     profileThemeStyle: T,
     profileThemeClassName: k
   } = (0, c.Z)({
-    theme: P,
+    theme: w,
     themeType: null,
     primaryColor: E,
     secondaryColor: O
@@ -73,9 +73,7 @@ function j(e) {
       })
     }
     return e
-  }({
-    width: 713
-  }, T), A = i.useCallback(() => {
+  }({}, T), A = i.useCallback(() => {
     (0, C.openUserProfileModal)({
       userId: t.id,
       section: f.oh.WISHLIST
@@ -106,16 +104,16 @@ function j(e) {
             children: [(0, r.jsx)(s.Heading, {
               variant: "display-md",
               className: g.wishlistBannerTitle,
-              children: w > 0 ? x.intl.string(x.t["7lZ31N"]) : x.intl.string(x.t.pWG4zc)
+              children: P > 0 ? x.intl.string(x.t["7lZ31N"]) : x.intl.string(x.t.pWG4zc)
             }), (0, r.jsx)(s.Text, {
               variant: "text-sm/medium",
-              children: w > 0 ? x.intl.format(x.t.BjEX39, {
+              children: P > 0 ? x.intl.format(x.t.BjEX39, {
                 username: Z
               }) : x.intl.format(x.t.dIDKgo, {
                 username: Z
               })
             })]
-          }), w >= p.zL && (0, r.jsx)(s.Button, {
+          }), P >= p.zL && (0, r.jsx)(s.Button, {
             variant: "overlay-secondary",
             text: x.intl.format(x.t["8uYD+P"], {
               username: Z
@@ -160,7 +158,7 @@ function j(e) {
                   size: "sm",
                   giftingOrigin: i === p.lr.WISHLIST ? m.Wt.DM_CHANNEL_WISHLIST : m.Wt.DM_CHANNEL,
                   collectibleSource: i,
-                  showIcons: w > 0 && w < p.zL,
+                  showIcons: P > 0 && P < p.zL,
                   disableHoverEffects: true
                 })
               }, n.skuId)
@@ -193,7 +191,8 @@ let b = function(e) {
         onClick: () => t(m.Si.TIER_0),
         isGift: n,
         priceOptions: i,
-        enablePremiumBrandRefresh: true
+        enablePremiumBrandRefresh: true,
+        removeTopMargin: true
       })]
     }), (0, r.jsx)(j, {
       giftRecipient: l

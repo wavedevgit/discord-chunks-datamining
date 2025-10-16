@@ -2,10 +2,29 @@
 /** chunk id: 583405, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => r
+  Z: () => c
 });
-var r = {};
-r = {
-  removeButtonLabel: `\u{423}\u{434}\u{430}\u{43B}\u{438}\u{442}\u{44C}`,
-  removeDescription: `\u{41D}\u{430}\u{436}\u{43C}\u{438}\u{442}\u{435} DELETE, \u{447}\u{442}\u{43E}\u{431}\u{44B} \u{443}\u{434}\u{430}\u{43B}\u{438}\u{442}\u{44C} \u{442}\u{435}\u{433}.`
+var Chunk647438 = require("./647438.js"),
+  Chunk979590 = require("./979590.js"),
+  a = require.n(Chunk979590),
+  Chunk866442 = require("./866442.js"),
+  Chunk442837 = require("./442837.js"),
+  Chunk607070 = require("./607070.js");
+let c = e => {
+  let t = (0, s.e7)([l.Z], () => l.Z.desaturateUserColors ? l.Z.saturation : 1);
+  return (0, r.useMemo)(() => {
+    let {
+      h: n,
+      s: r,
+      l: i
+    } = a()((0, o.Rf)(e)).toHsl(), s = a()({
+      h: n,
+      s: r * t,
+      l: i
+    });
+    return {
+      hex: s.toHexString(),
+      hsl: s.toHslString()
+    }
+  }, [e, t])
 }

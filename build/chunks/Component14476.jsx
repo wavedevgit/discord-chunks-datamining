@@ -29,7 +29,7 @@ let m = e => {
     category: b
   } = e, v = i.useRef(null), {
     isHoveringOrFocusing: S
-  } = (0, C.Z)(v), L = !m && S, y = (0, c.ZP)(), I = (0, o.wj)(y), w = {
+  } = (0, C.Z)(v), L = !m && S, y = (0, c.ZP)(), I = (0, o.wj)(y), P = {
     type: s.Z.AVATAR_DECORATION,
     label: g,
     asset: n
@@ -53,7 +53,7 @@ let m = e => {
           [_.shopCardClaimed]: m
         }),
         children: (0, r.jsx)(p.R, {
-          item: w,
+          item: P,
           user: a,
           isHighlighted: L,
           avatarSize: d.EFr.SIZE_120,

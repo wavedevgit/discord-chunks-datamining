@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => I
 });
 var Chunk570140 = require("./570140.js"),
-  Chunk523238 = require("./523238.js"),
+  Chunk519938 = require("./519938.js"),
   Chunk317770 = require("./317770.js"),
   Chunk317381 = require("./317381.js"),
   Chunk928518 = require("./928518.js"),
@@ -25,7 +25,7 @@ function O() {
   var e;
   let t = r;
   if (null == exports || !Chunk366050.Z.isOpen(exports)) returnfalse;
-  Chunk570140.Z.wait(() => Chunk523238.xv(exports)), null == (e = Chunk19780.Z.getRTCConnection()) || module.setPipOpen(false), r = null
+  Chunk570140.Z.wait(() => Chunk519938.xv(exports)), null == (e = Chunk19780.Z.getRTCConnection()) || module.setPipOpen(false), r = null
 }
 
 function v() {
@@ -48,7 +48,7 @@ function v() {
     }()) return O();
   if (require || O(), null == exports) returnfalse;
   let a = Chunk592125.Z.getChannel(exports);
-  return !(null == Chunk317770 || Chunk366050.Z.isOpen(exports)) && (Chunk570140.Z.wait(() => Chunk523238.bA(Chunk317770.id, Chunk981631.NYg.VIDEO, {
+  return !(null == Chunk317770 || Chunk366050.Z.isOpen(exports)) && (Chunk570140.Z.wait(() => Chunk519938.bA(Chunk317770.id, Chunk981631.NYg.VIDEO, {
     channel: Chunk317770
   })), null == (e = Chunk19780.Z.getRTCConnection()) || module.setPipOpen(true), void(r = exports))
 }
