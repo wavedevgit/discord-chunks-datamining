@@ -9,6 +9,7 @@ require.d(exports, {
   Sg: () => p,
   TG: () => a,
   YX: () => d,
+  Z4: () => v,
   nd: () => O,
   tq: () => f,
   uz: () => y,
@@ -52,4 +53,5 @@ let s = {
   },
   O = {
     [Chunk763600.Z.SHOCKBYTE]: "https://shockbyte.com/legal/acceptable-use-policy"
-  }
+  },
+  v = (e, t) => "https://discord.sjc1.qualtrics.com/jfe/form/SV_0TIqLrxbsfJYS4C?user_id=".concat(e, "&guild_id=").concat(t)

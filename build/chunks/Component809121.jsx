@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk660815 = require("./660815.js"),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
@@ -56,9 +56,9 @@ function R(e) {
   let {
     guildId: n,
     instance: t
-  } = e, [i, s] = a.useState(false), l = a.useCallback(() => {
-    s(true), (0, j.WX)(n, t.id).finally(() => {
-      s(false)
+  } = e, [i, l] = a.useState(false), s = a.useCallback(() => {
+    l(true), (0, j.WX)(n, t.id).finally(() => {
+      l(false)
     })
   }, [n, t.id]);
   return (0, r.jsx)(u.Button, {
@@ -66,7 +66,7 @@ function R(e) {
     text: E.intl.string(T.default.TMzy7e),
     variant: "secondary",
     loading: i,
-    onClick: l
+    onClick: s
   })
 }
 
@@ -101,7 +101,7 @@ function D(e) {
 function V(e) {
   let {
     guildId: n
-  } = e, [t, i] = a.useState(false), s = a.useCallback(() => {
+  } = e, [t, i] = a.useState(false), l = a.useCallback(() => {
     i(true), (0, j.mF)(n).finally(() => {
       i(false)
     })
@@ -111,7 +111,7 @@ function V(e) {
     text: E.intl.string(T.default.BLEx3t),
     variant: "secondary",
     loading: t,
-    onClick: s
+    onClick: l
   })
 }
 
@@ -151,7 +151,7 @@ function B(e) {
     })
   }, [t.gameServerPanelUrl]), F = a.useMemo(() => {
     switch (t.status) {
-      case l.V.SLEEPING:
+      case s.V.SLEEPING:
         return (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(R, {
             guildId: n,
@@ -161,9 +161,9 @@ function B(e) {
             disabled: null == t.gameServerPanelUrl
           })]
         });
-      case l.V.OFFLINE:
-      case l.V.ONLINE:
-      case l.V.STARTING:
+      case s.V.OFFLINE:
+      case s.V.ONLINE:
+      case s.V.STARTING:
         return (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(G, {
             onClick: L
@@ -172,15 +172,15 @@ function B(e) {
             disabled: null == t.gameServerPanelUrl
           })]
         });
-      case l.V.STARTUP_FAILED:
-      case l.V.MISSING_STOCK:
+      case s.V.STARTUP_FAILED:
+      case s.V.MISSING_STOCK:
         return z ? (0, r.jsx)(D, {
           onClick: U
         }) : (0, r.jsx)(G, {
           onClick: L,
           disabled: true
         });
-      case l.V.DELETED:
+      case s.V.DELETED:
         return z ? (0, r.jsx)(Z, {
           onClick: U,
           disabled: null == t.gameServerPanelUrl
@@ -188,7 +188,7 @@ function B(e) {
           onClick: L,
           disabled: true
         });
-      case l.V.PROVIDER_ERRORED:
+      case s.V.PROVIDER_ERRORED:
         return (0, r.jsxs)(r.Fragment, {
           children: [z ? (0, r.jsx)(A, {
             guildId: n,
@@ -210,14 +210,14 @@ function B(e) {
     return "" === e ? null : e
   }, [t.gameConfig]), q = a.useMemo(() => {
     switch (t.status) {
-      case l.V.STARTING:
+      case s.V.STARTING:
         if (null == t.gameServerPanelUrl) return E.intl.string(T.default["1A3US0"]);
         return null;
-      case l.V.STARTUP_FAILED:
+      case s.V.STARTUP_FAILED:
         return E.intl.string(z ? T.default["Mdoc9/"] : T.default.osZiRk);
-      case l.V.MISSING_STOCK:
+      case s.V.MISSING_STOCK:
         return E.intl.string(z ? T.default.YCakvL : T.default.osZiRk);
-      case l.V.PROVIDER_ERRORED:
+      case s.V.PROVIDER_ERRORED:
         return E.intl.string(z ? T.default.NRyCeX : T.default.osZiRk);
       default:
         return null
@@ -300,30 +300,30 @@ function B(e) {
               children: E.intl.string(T.default["n+ZX7+"])
             }), (0, r.jsxs)("div", {
               className: w.statusContainer,
-              children: [t.status === l.V.STARTING ? (0, r.jsx)(u.$jN, {
+              children: [t.status === s.V.STARTING ? (0, r.jsx)(u.$jN, {
                 type: u.RAz.SPINNING_CIRCLE_SIMPLE,
                 className: w.statusLoading
               }) : (0, r.jsx)("span", {
-                className: s()(w.statusIndicator, null != t.status && w[t.status])
+                className: l()(w.statusIndicator, null != t.status && w[t.status])
               }), (0, r.jsx)(u.Text, {
                 variant: "text-sm/medium",
                 children: function(e) {
                   switch (e) {
-                    case l.V.STARTING:
+                    case s.V.STARTING:
                       return E.intl.string(T.default.SgjaXF);
-                    case l.V.STARTUP_FAILED:
+                    case s.V.STARTUP_FAILED:
                       return E.intl.string(T.default["7C9Z3t"]);
-                    case l.V.OFFLINE:
+                    case s.V.OFFLINE:
                       return E.intl.string(T.default["Ys/RrK"]);
-                    case l.V.ONLINE:
+                    case s.V.ONLINE:
                       return E.intl.string(T.default["60kAzs"]);
-                    case l.V.DELETED:
+                    case s.V.DELETED:
                       return E.intl.string(T.default.Z1NZwc);
-                    case l.V.MISSING_STOCK:
+                    case s.V.MISSING_STOCK:
                       return E.intl.string(T.default["+a5G2t"]);
-                    case l.V.SLEEPING:
+                    case s.V.SLEEPING:
                       return E.intl.string(T.default.y0z8ZG);
-                    case l.V.PROVIDER_ERRORED:
+                    case s.V.PROVIDER_ERRORED:
                       return E.intl.string(T.default["6g/ojo"]);
                     default:
                       return "—"

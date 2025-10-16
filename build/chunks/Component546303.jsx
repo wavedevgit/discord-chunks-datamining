@@ -54,21 +54,21 @@ function C(e) {
   let {
     guildId: n
   } = e;
-  s.useEffect(() => {
+  l.useEffect(() => {
     (0, g.ce)(n)
   }, [n]);
   let t = (0, d.e7)([f.Z], () => f.Z.getStateForGuild(n)),
     {
       catalog: r,
       instances: a
-    } = s.useMemo(() => {
+    } = l.useMemo(() => {
       var e, n;
       return {
         catalog: Object.values(null != (e = null == t ? true : t.catalog) ? e : {}),
         instances: Object.values(null != (n = null == t ? true : t.instances) ? n : {})
       }
     }, [null == t ? true : t.catalog, null == t ? true : t.instances]),
-    l = a.length >= v.YX;
+    s = a.length >= v.YX;
   return 0 === r.length ? (0, i.jsx)("div", {
     className: h.container,
     children: (0, i.jsx)(u.$jN, {
@@ -81,12 +81,12 @@ function C(e) {
       className: h.heading,
       variant: "heading-md/semibold",
       children: p.intl.string(j.default["3vWDMz"])
-    }), l && (0, i.jsx)("div", {
+    }), s && (0, i.jsx)("div", {
       className: h.maxInstancesWarning,
       children: (0, i.jsx)(_.C, {})
     }), (0, i.jsx)(c.zJl, {
       className: o()(h.gameContainerWrapper, {
-        [h.disabled]: l
+        [h.disabled]: s
       }),
       children: (0, i.jsx)("div", {
         className: h.gameContainer,
@@ -100,7 +100,7 @@ function C(e) {
           }),
           imageClassName: h.image,
           titleClassName: h.title,
-          disabled: l
+          disabled: s
         }, "sidebar-game-".concat(t, "-").concat(e.id)))
       })
     })]

@@ -242,24 +242,24 @@ function em(e) {
     status: B,
     isMobile: V,
     nameplate: Y,
-    ref: q,
+    ref: Q,
     "aria-posinset": X,
     "aria-setsize": $
-  } = e, [ee, ef] = i.useState(false), [em, eb] = i.useState(false), [ey, eO] = i.useState(false), ev = i.useRef(null), eg = i.useRef(null), eh = null != q ? q : eg, {
+  } = e, [ee, ef] = i.useState(false), [em, eb] = i.useState(false), [ey, eO] = i.useState(false), ev = i.useRef(null), eg = i.useRef(null), eh = null != Q ? Q : eg, {
     avatarSrc: ej,
     avatarDecorationSrc: eS,
-    eventHandlers: eN
+    eventHandlers: ex
   } = (0, K.Z)({
     userId: null == p ? true : p.id,
     size: y.EFr.SIZE_32,
     animateOnHover: !(s || ee || em || ey)
-  }), ex = t.isMultiUserDM(), eE = t.isSystemDM(), eP = (0, H.Q)(), eC = !ex && !eE && t.type === et.d4z.DM, ew = eC && (null == p ? true : p.primaryGuild) != null, eT = (0, m.e7)([J.ZP], () => J.ZP.isChannelMuted(t.getGuildId(), t.id)), {
+  }), eN = t.isMultiUserDM(), eE = t.isSystemDM(), eP = (0, H.Q)(), eC = !eN && !eE && t.type === et.d4z.DM, ew = eC && (null == p ? true : p.primaryGuild) != null, eT = (0, m.e7)([J.ZP], () => J.ZP.isChannelMuted(t.getGuildId(), t.id)), {
     ignored: eZ,
     blocked: eI
-  } = (0, m.cj)([Q.Z], () => ({
-    ignored: Q.Z.isIgnored(t.getRecipientId()),
-    blocked: Q.Z.isBlocked(t.getRecipientId())
-  })), eM = eC && eZ, ek = eC && eI, eD = (eT || eM || ek) && !(s || ee), e_ = (0, m.e7)([W.ZP], () => W.ZP.getMentionCount(t.id) > 0), eR = (0, T.ZP)(t), eL = (0, m.e7)([_.Z], () => _.Z.isFavorite(t.id)), {
+  } = (0, m.cj)([q.Z], () => ({
+    ignored: q.Z.isIgnored(t.getRecipientId()),
+    blocked: q.Z.isBlocked(t.getRecipientId())
+  })), eM = eC && eZ, ek = eC && eI, e_ = (eT || eM || ek) && !(s || ee), eD = (0, m.e7)([W.ZP], () => W.ZP.getMentionCount(t.id) > 0), eR = (0, T.ZP)(t), eL = (0, m.e7)([D.Z], () => D.Z.isFavorite(t.id)), {
     dotsInsteadOfCloseButton: eA,
     rearrangeContextMenu: eG
   } = L.Z.useExperiment({
@@ -281,12 +281,12 @@ function em(e) {
     O.Z.preload(et.ME, t.id)
   }, eW = e => {
     e.stopPropagation()
-  }, eQ = e => {
+  }, eq = e => {
     if (e.target === e.currentTarget) {
       var t;
       null == (t = ev.current) || t.click()
     }
-  }, eq = e => {
+  }, eQ = e => {
     let i = "contextmenu" === e.type,
       l = eG && !i,
       o = i ? u.ImpressionNames.DM_LIST_RIGHT_CLICK_MENU_SHOWN : u.ImpressionNames.DM_LIST_KEBAB_MENU_SHOWN;
@@ -337,7 +337,7 @@ function em(e) {
         onSubmit: eV
       }, t))
     })
-  }, eX = (0, r.jsx)(D.Z, {
+  }, eX = (0, r.jsx)(_.Z, {
     userName: eR,
     displayNameStyles: null == p ? true : p.displayNameStyles,
     effectDisplayType: ee || s || ey ? k.F.ANIMATED : k.F.PLAIN,
@@ -350,7 +350,7 @@ function em(e) {
       inline: true,
       disableGuildProfile: true,
       className: o()(er.clanTag, {
-        [er.clanTagMuted]: eD
+        [er.clanTagMuted]: e_
       })
     })]
   }) : eX, e0 = i.useRef(null), e1 = (0, M.Y)({
@@ -375,12 +375,12 @@ function em(e) {
         onMouseDown: eY,
         onFocus: eH,
         onBlur: eK,
-        onContextMenu: eq,
+        onContextMenu: eQ,
         "aria-setsize": $,
         "aria-posinset": X,
-        children: [e_ ? (0, r.jsx)("div", {
+        children: [eD ? (0, r.jsx)("div", {
           className: o()(er.unreadPill, {
-            [er.muted]: eD
+            [er.muted]: e_
           })
         }) : null, (0, r.jsxs)(y.vjx, {
           className: o()(er.interactive, {
@@ -388,8 +388,8 @@ function em(e) {
             [er.interactiveSelected]: s || ey
           }),
           as: "div",
-          onClick: eQ,
-          muted: eD,
+          onClick: eq,
+          muted: e_,
           selected: s,
           children: [(0, r.jsx)(z.Z, {
             nameplate: eB ? Y : true,
@@ -403,7 +403,7 @@ function em(e) {
             className: er.link,
             "aria-label": (0, C.ZP)({
               channel: t,
-              unread: e_
+              unread: eD
             })
           }, i), {
             children: (0, r.jsx)(E.Z, {
@@ -418,7 +418,7 @@ function em(e) {
                     isTyping: U,
                     status: B
                   });
-                  else return (0, r.jsx)(es, el(ei({}, eN), {
+                  else return (0, r.jsx)(es, el(ei({}, ex), {
                     src: (0, w.x)(t),
                     "aria-hidden": true,
                     size: e,
@@ -427,7 +427,7 @@ function em(e) {
                   }));
                 a()(null != p, "PrivateChannel.renderAvatar: Invalid prop configuration - no user or channel");
                 let n = null;
-                return p.isSystemUser() || (n = (0, g.Z)(h) ? et.Skl.STREAMING : B), (0, r.jsx)(es, el(ei({}, eN), {
+                return p.isSystemUser() || (n = (0, g.Z)(h) ? et.Skl.STREAMING : B), (0, r.jsx)(es, el(ei({}, ex), {
                   size: y.EFr.SIZE_32,
                   src: ej,
                   avatarDecoration: eS,
@@ -438,8 +438,8 @@ function em(e) {
                   statusTooltip: true
                 }))
               })(),
-              highlighted: e_ && !eD,
-              muted: eD,
+              highlighted: eD && !e_,
+              muted: e_,
               subText: t.isSystemDM() ? (0, r.jsx)("div", {
                 className: er.subtext,
                 children: (0, P.Z)(t.id) ? en.intl.string(en.t.FL5T09) : en.intl.string(en.t.NnY5lZ)
@@ -453,7 +453,7 @@ function em(e) {
                 status: B,
                 applicationStream: S,
                 voiceChannel: R
-              }) ? (0, r.jsx)(N.Z, {
+              }) ? (0, r.jsx)(x.Z, {
                 location: "PrivateChannel",
                 user: p,
                 activities: h,
@@ -461,7 +461,7 @@ function em(e) {
                 applicationStream: S,
                 animateEmoji: ee || em || ey,
                 textClassName: er.activityStatusText,
-                iconClassName: eD ? er.mutedIcon : true
+                iconClassName: e_ ? er.mutedIcon : true
               }) : null,
               name: (0, r.jsx)(I.Z, {
                 className: o()(er.overflowTooltip, {
@@ -469,9 +469,9 @@ function em(e) {
                 }),
                 children: e$
               }),
-              decorators: t.isSystemDM() ? (0, r.jsx)(x.Z, {
+              decorators: t.isSystemDM() ? (0, r.jsx)(N.Z, {
                 className: er.decorator,
-                type: x.Z.Types.SYSTEM_DM,
+                type: N.Z.Types.SYSTEM_DM,
                 verified: true
               }) : null,
               withDisplayNameStyles: e1
@@ -482,14 +482,14 @@ function em(e) {
             }),
             children: [eL && !ey ? (0, r.jsx)(eu, {}) : null, eM ? (0, r.jsx)(ed, {}) : null, ek ? (0, r.jsx)(ep, {}) : null, eA && !e5 ? (0, r.jsx)(b.u, {
               asContainer: true,
-              text: en.intl.string(ex ? en.t.Et8qws : en.t["d+e27u"]),
+              text: en.intl.string(eN ? en.t.Et8qws : en.t["d+e27u"]),
               delay: 500,
               targetElementRef: eU,
               children: (0, r.jsx)(ec, {
                 icon: y.xhG,
                 "aria-label": en.intl.string(en.t.PdRCRk),
                 onClick: e => {
-                  eq(e)
+                  eQ(e)
                 },
                 onMouseDown: eW,
                 nameplate: Y,
@@ -498,8 +498,8 @@ function em(e) {
               })
             }) : (0, r.jsx)(ec, {
               icon: y.Dio,
-              "aria-label": ex ? en.intl.string(en.t["26C4oq"]) : en.intl.string(en.t.jsvgc3),
-              onClick: ex ? eJ : eV,
+              "aria-label": eN ? en.intl.string(en.t["26C4oq"]) : en.intl.string(en.t.jsvgc3),
+              onClick: eN ? eJ : eV,
               onMouseDown: eW,
               nameplate: Y,
               reducedClickTarget: true,
@@ -555,14 +555,14 @@ let eb = 12633 == require.j ? e => {
     f = (0, U.K)({
       user: l
     }),
-    b = (0, m.e7)([X.default, q.Z], () => {
+    b = (0, m.e7)([X.default, Q.Z], () => {
       if (t.isMultiUserDM())
-        if (s) return $.default.keys(q.Z.getTypingUsers(t.id)).some(e => {
+        if (s) return $.default.keys(Q.Z.getTypingUsers(t.id)).some(e => {
           var t;
           return e !== (null == (t = X.default.getCurrentUser()) ? true : t.id)
         });
         else returnfalse;
-      return null != l && q.Z.isTyping(t.id, t.getRecipientId())
+      return null != l && Q.Z.isTyping(t.id, t.getRecipientId())
     }, [t, l, s]);
   return t.isMultiUserDM() ? (0, r.jsx)(em, ei({
     channel: t,

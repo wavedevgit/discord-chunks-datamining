@@ -12,7 +12,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk377171 = require("./377171.js"),
   Chunk192371 = require("./192371.js"),
@@ -27,10 +27,10 @@ function f(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: g.inline,
-    children: [(0, r.jsx)(l.owK, {
+    children: [(0, r.jsx)(s.owK, {
       size: "xs",
-      color: l.TVs.colors.STATUS_POSITIVE
-    }), (0, r.jsx)(l.Text, {
+      color: s.TVs.colors.STATUS_POSITIVE
+    }), (0, r.jsx)(s.Text, {
       color: "text-feedback-positive",
       variant: "text-sm/bold",
       children: n
@@ -44,10 +44,10 @@ function x(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: g.inline,
-    children: [(0, r.jsx)(l.Mgn, {
+    children: [(0, r.jsx)(s.Mgn, {
       size: "xs",
-      color: l.TVs.colors.STATUS_WARNING
-    }), (0, r.jsx)(l.Text, {
+      color: s.TVs.colors.STATUS_WARNING
+    }), (0, r.jsx)(s.Text, {
       color: "status-warning",
       variant: "text-sm/bold",
       children: m.intl.formatToMarkdownString(u.default["ol/ao6"], {
@@ -63,10 +63,10 @@ function _(e) {
   } = e;
   return (0, r.jsxs)("div", {
     className: g.rollbackInline,
-    children: [(0, r.jsx)(l.Mgn, {
+    children: [(0, r.jsx)(s.Mgn, {
       size: "xs",
-      color: l.TVs.colors.STATUS_WARNING
-    }), (0, r.jsx)(l.Text, {
+      color: s.TVs.colors.STATUS_WARNING
+    }), (0, r.jsx)(s.Text, {
       color: "status-warning",
       variant: "text-sm/bold",
       children: m.intl.formatToPlainString(u.default["6e2ry8"], {
@@ -84,13 +84,13 @@ function b(e) {
     className: i
   } = e, o = true !== n ? g.labelContainer : g.labelContainerEnd;
   return (0, r.jsxs)("div", {
-    className: s()(o, i),
+    className: l()(o, i),
     children: [true !== n && (0, r.jsxs)("div", {
-      className: s()(g.inline, g.inlineBoost),
-      children: [(0, r.jsx)(l.Ucv, {
+      className: l()(g.inline, g.inlineBoost),
+      children: [(0, r.jsx)(s.Ucv, {
         size: "sm",
-        color: l.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK
-      }), (0, r.jsx)(l.Text, {
+        color: s.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK
+      }), (0, r.jsx)(s.Text, {
         className: g.price,
         tag: "div",
         variant: "heading-md/semibold",
@@ -132,7 +132,7 @@ function j(e) {
     children: [(0, r.jsxs)("div", {
       children: [(0, r.jsx)("div", {
         className: g.headerContainer,
-        children: (0, r.jsx)(l.Heading, {
+        children: (0, r.jsx)(s.Heading, {
           color: t,
           variant: "heading-md/bold",
           children: n
@@ -155,23 +155,23 @@ let p = Chunk647438.forwardRef(function(e, n) {
     children: b
   } = e;
   return (0, r.jsx)("div", {
-    className: s()(g.parentContainer, {
+    className: l()(g.parentContainer, {
       [g.rollbackInactive]: u && !i
     }),
     ref: n,
-    children: (0, r.jsxs)(l.kL8, {
+    children: (0, r.jsxs)(s.kL8, {
       "aria-label": a,
       onClick: f,
       onMouseOver: x,
       onMouseLeave: _,
-      className: s()(g.container, {
+      className: l()(g.container, {
         [g.active]: i,
         [g.warning]: c || u && i
       }, t),
-      children: [b, "new" === d && (0, r.jsx)(l.IGR, {
+      children: [b, "new" === d && (0, r.jsx)(s.IGR, {
         className: g.new,
         text: m.intl.string(m.t.y2b7CA)
-      }), "beta" === d && (0, r.jsx)(l.IGR, {
+      }), "beta" === d && (0, r.jsx)(s.IGR, {
         className: g.new,
         text: m.intl.string(m.t.oW0eUV),
         color: o.Z.BG_BRAND

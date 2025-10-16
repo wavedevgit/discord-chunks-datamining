@@ -46,7 +46,7 @@ function _(e) {
       return (0, r.jsx)(i.v2r, {
         navId: "game_server-popout-context-menu",
         onClose: () => {
-          (0, s.Zy)(), a()
+          (0, l.Zy)(), a()
         },
         "aria-label": g.intl.string(m.default["yb+orq"]),
         onSelect: true,
@@ -69,7 +69,7 @@ function _(e) {
                 guildId: n,
                 stepConfig: x,
                 initialGameServerInstance: t,
-                analyticsLocation: l.Z.GAME_SERVER_OVERVIEW
+                analyticsLocation: s.Z.GAME_SERVER_OVERVIEW
               })
             }
           })]

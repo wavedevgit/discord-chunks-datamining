@@ -28,8 +28,8 @@ let d = Chunk647438.forwardRef(function(e, t) {
     onMouseEnter: h,
     onMouseLeave: j,
     "aria-label": S,
-    "aria-checked": N,
-    role: x,
+    "aria-checked": x,
+    role: N,
     tooltipColor: E,
     tooltipForceOpen: P,
     tooltipContentClassName: C,
@@ -116,8 +116,8 @@ let d = Chunk647438.forwardRef(function(e, t) {
           null == g || g(), null == j || j()
         },
         onContextMenu: l,
-        role: x,
-        "aria-checked": N,
+        role: N,
+        "aria-checked": x,
         focusProps: {
           offset: {
             left: false,
