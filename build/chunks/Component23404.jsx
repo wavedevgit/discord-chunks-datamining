@@ -86,15 +86,17 @@ function x(e) {
   let {
     nodeRef: c,
     quest: b
-  } = e, _ = (0, u.O5)(), E = (0, o.e7)([h.Z], () => h.Z.isEnrolling(b.id), [b]), [T, x] = i.useState(false), Z = i.useCallback(() => x(true), []), w = i.useCallback(() => x(false), []), L = i.useCallback(e => {
+  } = e, _ = (0, u.O5)(), E = (0, o.e7)([h.Z], () => h.Z.isEnrolling(b.id), [b]), [T, x] = i.useState(false), Z = i.useCallback(() => x(true), []), w = i.useCallback(() => x(false), []), {
+    launchInGameActivity: L
+  } = (0, f.zB)(b), R = i.useCallback(e => {
     e.stopPropagation()
-  }, []), R = i.useCallback(() => {
+  }, []), D = i.useCallback(() => {
     (0, p.AH)(b.id, {
       questContent: g.jn.ACTIVITY_PANEL,
       questContentCTA: u.jZ.ACCEPT_QUEST,
       sourceQuestContent: g.jn.ACTIVITY_PANEL
-    })
-  }, [b]), D = i.useCallback(() => {
+    }), (0, d.Rt)(b) && L()
+  }, [b, L]), k = i.useCallback(() => {
     null != b && (_({
       questId: b.id,
       questContent: g.jn.ACTIVITY_PANEL,
@@ -104,7 +106,7 @@ function x(e) {
       fromContent: g.jn.ACTIVITY_PANEL,
       questId: b.id
     }))
-  }, [b, _]), k = i.useCallback(() => {
+  }, [b, _]), M = i.useCallback(() => {
     _({
       questId: b.id,
       questContent: g.jn.ACTIVITY_PANEL,
@@ -114,35 +116,35 @@ function x(e) {
       fromContent: g.jn.ACTIVITY_PANEL,
       questId: b.id
     })
-  }, [b.id, _]), M = (0, I.hf)({
+  }, [b.id, _]), U = (0, I.hf)({
     quest: b,
     questContent: g.jn.ACTIVITY_PANEL,
     sourceQuestContent: g.jn.ACTIVITY_PANEL
-  }), U = (null == (t = b.userStatus) ? true : t.enrolledAt) != null, G = (null == (n = b.userStatus) ? true : n.completedAt) != null, B = (0, f.Rf)(b), H = (0, m.DD)({
+  }), G = (null == (t = b.userStatus) ? true : t.enrolledAt) != null, B = (null == (n = b.userStatus) ? true : n.completedAt) != null, H = (0, f.Rf)(b), V = (0, m.DD)({
     quest: b,
-    taskDetails: B,
+    taskDetails: H,
     location: S.dr.ACTIVITY_PANEL,
     questContent: g.jn.ACTIVITY_PANEL,
     sourceQuestContent: g.jn.ACTIVITY_PANEL
-  }), V = (0, d.Rt)(b), F = (0, m.CR)({
+  }), F = (0, d.Rt)(b), z = (0, m.CR)({
     quest: b
-  }), z = V ? F : N.intl.string(N.t.l7E81t);
+  }), W = F ? z : N.intl.string(N.t.l7E81t);
   return (0, r.jsxs)("div", {
     ref: e => {
       c.current = e
     },
     className: a()(P.wrapper, {
-      [P.wrapperQuestAccepted]: U
+      [P.wrapperQuestAccepted]: G
     }),
-    onClick: L,
-    onKeyPress: L,
+    onClick: R,
+    onKeyPress: R,
     onFocus: Z,
     onMouseEnter: Z,
     onBlur: w,
     onMouseLeave: w,
     children: [(0, r.jsxs)("div", {
       className: P.utils,
-      children: [U ? (0, r.jsx)(A, {
+      children: [G ? (0, r.jsx)(A, {
         quest: b
       }) : (0, r.jsx)(O.Z, {}), (0, r.jsx)(v.r, {
         quest: b,
@@ -171,7 +173,7 @@ function x(e) {
           }), t))
         }
       })]
-    }), !U && (0, r.jsxs)(r.Fragment, {
+    }), !G && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(A, {
         quest: b
       }), (0, r.jsx)("div", {
@@ -179,46 +181,46 @@ function x(e) {
         children: (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "text-default",
-          children: H
+          children: V
         })
       })]
-    }), U && !G && (0, r.jsx)(C.Z, {
+    }), G && !B && (0, r.jsx)(C.Z, {
       autoplay: T,
       className: P.rewardTileWithInstructions,
       quest: b,
       questContent: g.jn.ACTIVITY_PANEL,
       location: S.dr.ACTIVITY_PANEL,
-      taskDetails: B,
+      taskDetails: H,
       sourceQuestContent: g.jn.ACTIVITY_PANEL
     }), (0, r.jsxs)("div", {
       className: P.ctas,
-      children: [!U && (0, r.jsxs)(s.ButtonGroup, {
+      children: [!G && (0, r.jsxs)(s.ButtonGroup, {
         size: "sm",
-        direction: V ? "vertical" : "horizontal",
+        direction: F ? "vertical" : "horizontal",
         fullWidth: true,
         children: [(0, r.jsx)(s.Button, {
           variant: "secondary",
           text: N.intl.string(N.t.LLLLPD),
-          onClick: k
+          onClick: M
         }), (0, r.jsx)(s.Button, {
           variant: "primary",
-          text: z,
-          onClick: R,
+          text: W,
+          onClick: D,
           loading: E,
           icon: (0, I.gF)(b)
         })]
-      }), U && !G && (0, r.jsx)(s.Button, {
+      }), G && !B && (0, r.jsx)(s.Button, {
         variant: "primary",
         size: "sm",
         fullWidth: true,
         text: N.intl.string(N.t.VN1Ajo),
-        onClick: D
-      }), G && (0, r.jsx)(s.Button, {
+        onClick: k
+      }), B && (0, r.jsx)(s.Button, {
         variant: "primary",
         size: "sm",
         fullWidth: true,
         text: N.intl.string(N.t.cfY4PD),
-        onClick: M
+        onClick: U
       })]
     })]
   })

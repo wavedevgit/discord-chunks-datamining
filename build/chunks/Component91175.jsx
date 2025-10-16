@@ -21,50 +21,50 @@ let b = function(e) {
     onComplete: n,
     transitionState: i,
     webviewUrl: b
-  } = e, h = (0, r.GE)(), [C, _] = l.useState(0), x = l.useCallback(() => {
+  } = e, C = (0, r.GE)(), [_, h] = a.useState(0), x = a.useCallback(() => {
     n(), t()
-  }, [n, t]), g = l.useCallback(() => {
+  }, [n, t]), g = a.useCallback(() => {
     (0, s.nfh)(d.zJ) && x()
   }, [x]);
   (0, c.F5)(g);
-  let k = l.useCallback(e => {
-      if (h && "" !== b) {
+  let k = a.useCallback(e => {
+      if (C && "" !== b) {
         var t;
         (null == e || null == (t = e.data) ? true : t.eventType) === "Verification.Result" && x()
       }
-    }, [b, x, h]),
-    v = l.useCallback(() => {
-      _(C + 1)
-    }, [C]);
-  return l.useEffect(() => (window.addEventListener("message", k), () => {
+    }, [b, x, C]),
+    v = a.useCallback(() => {
+      h(_ + 1)
+    }, [_]);
+  return a.useEffect(() => (window.addEventListener("message", k), () => {
     window.removeEventListener("message", k)
-  }), [k]), (0, a.jsxs)(s.Y0X, {
+  }), [k]), (0, l.jsxs)(s.Y0X, {
     "data-migration-pending": true,
     transitionState: i,
     className: o()(m.root, p.fullbleedContent),
     parentComponent: "AgeVerificationExpressiveModal",
     size: s.CgR.MEDIUM,
-    children: [(0, a.jsx)(s.hzk, {
+    children: [(0, l.jsx)(s.hzk, {
       "data-migration-pending": true,
       className: o()(m.content, m.fullbleed),
       scrollbarType: "none",
-      children: (0, a.jsx)("iframe", {
+      children: (0, l.jsx)("iframe", {
         id: "frame",
         src: b,
         className: m.iframe,
         allow: "camera; microphone"
-      }, C)
-    }), (0, a.jsx)(s.mzw, {
+      }, _)
+    }), (0, l.jsx)(s.mzw, {
       "data-migration-pending": true,
-      children: (0, a.jsxs)(s.ButtonGroup, {
+      children: (0, l.jsxs)(s.ButtonGroup, {
         fullWidth: true,
-        children: [(0, a.jsx)(s.Button, {
+        children: [(0, l.jsx)(s.Button, {
           fullWidth: true,
           variant: "secondary",
           icon: s.j9r,
           text: f.intl.string(u.default.b7Oqdn),
           onClick: t
-        }), (0, a.jsx)(s.Button, {
+        }), (0, l.jsx)(s.Button, {
           fullWidth: true,
           variant: "secondary",
           icon: s.DuK,

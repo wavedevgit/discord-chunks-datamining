@@ -98,13 +98,15 @@ function k(e) {
     if ((0, v.$H)(k) && e.includes(el)) returntrue;
     let t = null != X ? b.Z.findActivity(X.id, e => e.type !== R.IIU.CUSTOM_STATUS) : null;
     return !!(null != t && (0, v.$J)(k) && (0, v._D)(t, k))
-  }, [k, el, X]), ei = true === W || et || es, ea = (0, a.e7)([S.Z], () => null != k && S.Z.isEnrolling(k.id), [k]), eo = (0, a.e7)([c.Z], () => ((null == X ? true : X.id) == null ? null : c.Z.getParticipant(C, X.id)) != null, [C, X]), eu = (0, g.B6)(null == k ? true : k.config.expiresAt), ec = (0, g.B6)(null == er ? true : er.rewardsExpireAt), ed = l.useCallback(() => {
+  }, [k, el, X]), ei = true === W || et || es, ea = (0, a.e7)([S.Z], () => null != k && S.Z.isEnrolling(k.id), [k]), eo = (0, a.e7)([c.Z], () => ((null == X ? true : X.id) == null ? null : c.Z.getParticipant(C, X.id)) != null, [C, X]), {
+    launchInGameActivity: eu
+  } = (0, g.zB)(k), ec = (0, g.B6)(null == k ? true : k.config.expiresAt), ed = (0, g.B6)(null == er ? true : er.rewardsExpireAt), ep = l.useCallback(() => {
     (0, T.AH)(k.id, {
       questContent: h.jn.QUEST_LIVE_STREAM,
       questContentCTA: j.jZ.ACCEPT_QUEST,
       sourceQuestContent: h.jn.QUEST_LIVE_STREAM
-    })
-  }, [k]), ep = l.useCallback(() => {
+    }), (0, v.Rt)(k) && eu()
+  }, [k, eu]), ef = l.useCallback(() => {
     H({
       questId: k.id,
       questContent: h.jn.QUEST_LIVE_STREAM,
@@ -114,7 +116,7 @@ function k(e) {
       fromContent: h.jn.QUEST_LIVE_STREAM,
       questId: k.id
     })
-  }, [k, H]), ef = l.useCallback(() => {
+  }, [k, H]), em = l.useCallback(() => {
     H({
       questId: k.id,
       questContent: h.jn.QUEST_LIVE_STREAM,
@@ -124,26 +126,26 @@ function k(e) {
       fromContent: h.jn.QUEST_LIVE_STREAM,
       questId: k.id
     })
-  }, [k, H]), em = (0, Q.hf)({
+  }, [k, H]), eb = (0, Q.hf)({
     quest: k,
     questContent: h.jn.QUEST_LIVE_STREAM,
     sourceQuestContent: h.jn.QUEST_LIVE_STREAM
-  }), eb = l.useMemo(() => (0, y.T)({
+  }), eE = l.useMemo(() => (0, y.T)({
     quest: k,
     location: N.dr.QUEST_CHANNEL_CALL_HEADER
-  }), [k]), eE = (0, O.CR)({
+  }), [k]), ej = (0, O.CR)({
     quest: k
-  }), ej = (0, v.Rt)(k), ev = (0, g.tP)(k), eT = (null == (t = k.userStatus) ? true : t.enrolledAt) != null, eg = (null == (n = k.userStatus) ? true : n.completedAt) != null, eS = null != k.userStatus && (0, v.zE)(k.userStatus, h.jn.QUEST_LIVE_STREAM), eh = null != k.userStatus && (0, v.zE)(k.userStatus, h.jn.QUEST_BAR), ey = en && !eh;
-  eb.info({
-    isQuestCallHeaderDismissed: eS,
-    isQuestExpired: ev,
-    isQuestBarShowing: ey,
+  }), ev = (0, v.Rt)(k), eT = (0, g.tP)(k), eg = (null == (t = k.userStatus) ? true : t.enrolledAt) != null, eS = (null == (n = k.userStatus) ? true : n.completedAt) != null, eh = null != k.userStatus && (0, v.zE)(k.userStatus, h.jn.QUEST_LIVE_STREAM), ey = null != k.userStatus && (0, v.zE)(k.userStatus, h.jn.QUEST_BAR), eO = en && !ey;
+  eE.info({
+    isQuestCallHeaderDismissed: eh,
+    isQuestExpired: eT,
+    isQuestBarShowing: eO,
     isCurrentUserCallParticipant: eo
   });
-  let eO = null != B && (null == (s = k.userStatus) ? true : s.claimedAt) == null;
-  if (!eO && (eS || ev || ey) || !eO && !eo) return null;
-  let ex = (0, v.il)(k),
-    eA = (0, r.jsx)(Z.Z, {
+  let ex = null != B && (null == (s = k.userStatus) ? true : s.claimedAt) == null;
+  if (!ex && (eh || eT || eO) || !ex && !eo) return null;
+  let eA = (0, v.il)(k),
+    eC = (0, r.jsx)(Z.Z, {
       className: M.rewardTile,
       autoplay: z,
       quest: k,
@@ -153,15 +155,15 @@ function k(e) {
     });
   return (0, r.jsxs)("div", {
     className: i()(M.wrapper, {
-      [M.wrapperAccepted]: eT
+      [M.wrapperAccepted]: eg
     }),
     onFocus: F,
     onMouseEnter: F,
     onBlur: K,
     onMouseLeave: K,
-    children: [!eT && (0, r.jsxs)("div", {
+    children: [!eg && (0, r.jsxs)("div", {
       className: M.rewardTileWrapper,
-      children: [eA, (0, r.jsx)(w.Z, {
+      children: [eC, (0, r.jsx)(w.Z, {
         bgOpacity: .32,
         className: M.promotedTag
       })]
@@ -169,7 +171,7 @@ function k(e) {
       className: M.content,
       children: [(0, r.jsxs)("div", {
         className: M.heading,
-        children: [eT && ei ? eA : (0, r.jsx)("img", {
+        children: [eg && ei ? eC : (0, r.jsx)("img", {
           className: M.gameTile,
           alt: k.config.messages.gameTitle,
           src: (0, x.fh)(k, x.eC.GAME_TILE, $).url
@@ -182,7 +184,7 @@ function k(e) {
               color: "header-primary",
               children: ei ? (0, v.AV)({
                 quest: k,
-                taskDetails: ex
+                taskDetails: eA
               }) : q.intl.formatToPlainString(q.t.EQa7oq, {
                 questName: k.config.messages.questName
               })
@@ -205,53 +207,53 @@ function k(e) {
           }), (0, r.jsx)(u.Text, {
             color: "header-secondary",
             variant: "text-xs/medium",
-            children: eg ? q.intl.formatToPlainString(q.t.APddvL, {
-              expirationDate: ec
+            children: eS ? q.intl.formatToPlainString(q.t.APddvL, {
+              expirationDate: ed
             }) : q.intl.formatToPlainString(q.t["pX+fmp"], {
-              expirationDate: eu
+              expirationDate: ec
             })
           })]
         })]
-      }), eT && !eg && !ei && (0, r.jsx)(L.Z, {
+      }), eg && !eS && !ei && (0, r.jsx)(L.Z, {
         autoplay: z,
         quest: k,
         questContent: h.jn.QUEST_LIVE_STREAM,
-        taskDetails: ex,
+        taskDetails: eA,
         location: N.dr.QUEST_CHANNEL_CALL_HEADER,
         sourceQuestContent: h.jn.QUEST_LIVE_STREAM
       }), (0, r.jsxs)("div", {
         className: M.ctas,
-        children: [!eT && (0, r.jsxs)(u.Kqy, {
+        children: [!eg && (0, r.jsxs)(u.Kqy, {
           direction: "horizontal",
           children: [(0, r.jsx)(u.Button, {
             size: "sm",
             variant: "secondary",
             text: q.intl.string(q.t.LLLLPD),
-            onClick: ef,
-            fullWidth: !ej || k.config.features.includes(N.S7.CLOUD_GAMING_ACTIVITY)
+            onClick: em,
+            fullWidth: !ev || k.config.features.includes(N.S7.CLOUD_GAMING_ACTIVITY)
           }), (0, r.jsx)(u.Button, {
             size: "sm",
             variant: "primary",
             fullWidth: true,
-            text: eE,
-            onClick: ed,
+            text: ej,
+            onClick: ep,
             loading: ea
           })]
-        }), eT && !eg && ei && (0, r.jsx)(_.Z, {
+        }), eg && !eS && ei && (0, r.jsx)(_.Z, {
           color: u.TVs.colors.BG_BRAND,
           quest: k
-        }), eT && !eg && !ei && (0, r.jsx)(u.Button, {
+        }), eg && !eS && !ei && (0, r.jsx)(u.Button, {
           variant: "primary",
           size: "sm",
           fullWidth: true,
           text: q.intl.string(q.t.VN1Ajo),
-          onClick: ep
-        }), eg && (0, r.jsx)(u.Button, {
+          onClick: ef
+        }), eS && (0, r.jsx)(u.Button, {
           variant: "primary",
           size: "sm",
           fullWidth: true,
           text: q.intl.string(q.t.cfY4PD),
-          onClick: em
+          onClick: eb
         })]
       })]
     })]

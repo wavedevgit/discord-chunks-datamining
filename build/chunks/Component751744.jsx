@@ -41,7 +41,6 @@ let h = [{
       "" !== _ && o.Z.showAgeVerification({
         webviewUrl: _,
         onComplete: N,
-        useV1: true,
         entryPoint: a.cU.AUTOMATED_UNDERAGE_APPEALS
       })
     }, [_, N]), (0, i.jsx)(l.Modal, {
