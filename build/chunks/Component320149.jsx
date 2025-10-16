@@ -28,46 +28,46 @@ function I(e) {
   let {
     channel: t,
     baseChannelId: n
-  } = e, I = (0, _.ZP)(t), C = (0, p.K)(), S = (0, p.V)(), T = (0, l.e7)([u.Z], () => u.Z.isMessageRequest(t.id)), N = (0, l.e7)([d.Z], () => d.Z.isSpam(t.id)), P = (0, h.V)(t.id, t.getRecipientId()), j = i.useCallback(() => {
-    m.Z.closeChannelSidebar(b.uZ), T && C && (0, g.Kh)(t.id), N && S && (0, g.Kh)(t.id)
-  }, [t.id, N, S, T, C]), A = i.useCallback(() => {
+  } = e, I = (0, _.ZP)(t), C = (0, p.K)(), S = (0, p.V)(), N = (0, l.e7)([u.Z], () => u.Z.isMessageRequest(t.id)), T = (0, l.e7)([d.Z], () => d.Z.isSpam(t.id)), P = (0, h.V)(t.id, t.getRecipientId()), j = i.useCallback(() => {
+    m.Z.closeChannelSidebar(b.uZ), N && C && (0, g.Kh)(t.id), T && S && (0, g.Kh)(t.id)
+  }, [t.id, T, S, N, C]), x = i.useCallback(() => {
     (0, a.showToast)((0, a.createToast)(O.intl.string(O.t.pIQ3h4), a.ToastType.FAILURE))
   }, []), {
-    markAsNotSpam: x
+    markAsNotSpam: Z
   } = (0, f.m)({
     onAcceptSuccess: j,
-    onError: A
+    onError: x
   });
   if (null == t || !t.isDM()) return null;
-  let Z = [(0, r.jsx)(s.ZP.Icon, {
+  let A = [(0, r.jsx)(s.ZP.Icon, {
     icon: a.Dio,
     tooltip: O.intl.string(O.t.cpT0Cg),
     onClick: () => m.Z.closeChannelSidebar(n)
   }, "close")];
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(s.ZP, {
-      toolbar: Z,
+      toolbar: A,
       "aria-label": O.intl.string(O.t.BIYAqa),
       children: (0, c.ud)({
         channel: t,
         channelName: I,
         inSidebar: true
       })
-    }), N && (0, r.jsxs)("div", {
-      className: v.hamBanner,
+    }), T && (0, r.jsxs)("div", {
+      className: y.hamBanner,
       children: [(0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         children: O.intl.string(O.t.XVOKgo)
       }), (0, r.jsx)("div", {
-        className: v.hamBannerButton,
+        className: y.hamBannerButton,
         children: (0, r.jsx)(a.Button, {
           size: "sm",
-          onClick: () => x(t, P),
+          onClick: () => Z(t, P),
           text: O.intl.string(O.t.koqL3d)
         })
       })]
     }), (0, r.jsx)("div", {
-      className: y.chat,
+      className: v.chat,
       children: (0, r.jsx)(E.Z, {
         channel: t,
         guild: null,

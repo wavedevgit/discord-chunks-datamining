@@ -56,7 +56,7 @@ let g = (e, t, n, r) => {
       let e = c.ZP.getIntervalForInvoice(T);
       t = e.intervalType, n = e.intervalCount, s = (0, u.og)((0, u.T4)(T.total, T.currency), t, n), E = (0, u.og)((0, u.T4)(T.subtotal, T.currency), t, n)
     } else null != b && (t = b.interval, n = b.intervalCount);
-    let j = (0, a.K)({
+    let k = (0, a.K)({
         purchaseType: C || f.GZQ.SUBSCRIPTION,
         plan: b,
         premiumSubscription: null == w ? null : w,
@@ -65,12 +65,12 @@ let g = (e, t, n, r) => {
         planGroup: M,
         isPrepaidPaymentSource: false
       }),
-      k = h.intl.format(h.t.Y2Rkqa, {
-        primaryText: j,
+      j = h.intl.format(h.t.Y2Rkqa, {
+        primaryText: k,
         paidURL: f.EYA.PAID_TERMS
       }),
       U = h.intl.format(h.t.H2uH5e, {
-        primaryText: j,
+        primaryText: k,
         paidURL: f.EYA.PAID_TERMS
       }),
       G = "",
@@ -102,25 +102,25 @@ let g = (e, t, n, r) => {
           throw Error("Unexpected interval: ".concat(t))
       } else if (C === f.GZQ.ONE_TIME) switch (N) {
         case f.POd.COLLECTIBLES:
-          B = k, G = y ? h.intl.format(h.t.Amdf8f, {
+          B = j, G = y ? h.intl.format(h.t.Amdf8f, {
             paidURL: f.EYA.PAID_TERMS
           }) : h.intl.format(h.t["40vM4u"], {
             paidURL: f.EYA.PAID_TERMS
           });
           break;
         case f.POd.GUILD_PRODUCT:
-          B = k, G = h.intl.format(h.t["GEAQ+v"], {
+          B = j, G = h.intl.format(h.t["GEAQ+v"], {
             paidURL: f.EYA.PAID_TERMS
           });
           break;
         case f.POd.SOCIAL_LAYER_GAME_ITEM:
-          B = k, G = h.intl.format(h.t.CVITgo, {
+          B = j, G = h.intl.format(h.t.CVITgo, {
             applicationName: null != L ? L : "game's"
           });
           break;
         default:
           B = U, G = h.intl.string(h.t["9/siSU"])
-      } else if (null == b || y) switch (y && (B = k), t) {
+      } else if (null == b || y) switch (y && (B = j), t) {
         case p.rV.MONTH:
           G = y ? h.intl.string(h.t.IjNapq) : h.intl.string(h.t["/sGXPj"]), G = y ? h.intl.string(h.t.IjNapq) : 1 === n ? h.intl.string(h.t["/sGXPj"]) : h.intl.formatToPlainString(h.t.Fqjiho, {
             intervalCount: n

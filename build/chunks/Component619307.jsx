@@ -2,12 +2,12 @@
 /** chunk id: 619307, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ph: () => k,
+  Ph: () => j,
   UN: () => P,
   cY: () => C,
   gz: () => N,
   nV: () => A,
-  q4: () => j,
+  q4: () => k,
   s6: () => R
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
@@ -179,8 +179,8 @@ function L(e) {
     popoutPosition: P = "bottom",
     popoutLayerContext: L,
     optionClassName: M,
-    closeOnSelect: j,
-    select: k,
+    closeOnSelect: k,
+    select: j,
     isSelected: U,
     serialize: G,
     clear: B,
@@ -210,11 +210,11 @@ function L(e) {
     }, [en, Q]),
     ei = (0, c.O)(er),
     ea = i.useCallback(e => {
-      if (k(e), j) {
+      if (j(e), k) {
         var t;
         null == (t = $.current) || t.focus()
       }
-    }, [k, j, $]),
+    }, [j, k, $]),
     eo = i.useCallback(e => {
       e.stopPropagation(), null == B || B()
     }, [B]),
@@ -243,7 +243,7 @@ function L(e) {
       } = e;
       return (0, r.jsx)(x, {
         className: R,
-        closeOnSelect: j,
+        closeOnSelect: k,
         maxVisibleItems: l,
         width: "auto" === m ? true : null != m ? m : ee,
         isSelected: U,
@@ -462,7 +462,7 @@ function M(e) {
   }))
 }
 
-function j(e) {
+function k(e) {
   var {
     renderLeading: t,
     renderTrailing: n,
@@ -543,7 +543,7 @@ function j(e) {
   }))
 }
 
-function k(e) {
+function j(e) {
   var t, n, {
       renderLeading: i,
       renderTrailing: a

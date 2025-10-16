@@ -41,9 +41,9 @@ function D(e) {
   let {
     guild: t,
     isStudyRoomNotice: n = false
-  } = e, l = (0, _.y)(t.id), d = (0, E.k5)(t.id), P = (0, o.e7)([T.Z], () => T.Z.getStageInstanceByChannel(null == l ? true : l.id), [l]), {
+  } = e, l = (0, _.y)(t.id), d = (0, E.k5)(t.id), P = (0, o.e7)([N.Z], () => N.Z.getStageInstanceByChannel(null == l ? true : l.id), [l]), {
     isStageNoticeHidden: D,
-    isEventNoticeHidden: M
+    isEventNoticeHidden: k
   } = (0, o.cj)([m.Z], () => ({
     isStageNoticeHidden: m.Z.isLiveChannelNoticeHidden({
       stageId: null == P ? true : P.id
@@ -51,7 +51,7 @@ function D(e) {
     isEventNoticeHidden: m.Z.isLiveChannelNoticeHidden({
       eventId: null == d ? true : d.id
     })
-  }), [P, d]), U = null == l ? true : l.id, G = (0, o.Wu)([C.Z], () => [...new Set(C.Z.getMutableParticipants(U, S.pV.SPEAKER).map(e => e.user))], [U]), B = (0, o.e7)([C.Z], () => null != U ? C.Z.getParticipantCount(U, S.pV.AUDIENCE) : 0, [U]), H = (0, o.e7)([j.Z], () => j.Z.can(Z.Plq.CONNECT, l)), V = (0, N.Z)(null == l ? true : l.id), F = null == d ? true : d.creator_id, z = (0, o.e7)([A.default], () => A.default.getUser(F), [F]);
+  }), [P, d]), U = null == l ? true : l.id, G = (0, o.Wu)([C.Z], () => [...new Set(C.Z.getMutableParticipants(U, S.pV.SPEAKER).map(e => e.user))], [U]), B = (0, o.e7)([C.Z], () => null != U ? C.Z.getParticipantCount(U, S.pV.AUDIENCE) : 0, [U]), H = (0, o.e7)([j.Z], () => j.Z.can(A.Plq.CONNECT, l)), V = (0, T.Z)(null == l ? true : l.id), F = null == d ? true : d.creator_id, z = (0, o.e7)([x.default], () => x.default.getUser(F), [F]);
   i.useEffect(() => {
     null != F && (0, u.PR)(F)
   }, [F]);
@@ -78,7 +78,7 @@ function D(e) {
       isEventNoticeHidden: d,
       isStageNoticeHidden: f,
       isStudyRoomNotice: m
-    } = e, _ = null != n && null != i && !f, E = null != t ? (0, y.DK)(t) : null;
+    } = e, _ = null != n && null != i && !f, E = null != t ? (0, v.DK)(t) : null;
     if (m && null != i) {
       let e = (0, p.KS)(i);
       return {
@@ -254,10 +254,10 @@ function D(e) {
     eventCreator: z,
     speakers: G,
     listenerCount: B,
-    isEventNoticeHidden: M,
+    isEventNoticeHidden: k,
     isStageNoticeHidden: D,
     isStudyRoomNotice: n
-  }), [d, P, l, H, V, z, G, B, M, D, n]);
+  }), [d, P, l, H, V, z, G, B, k, D, n]);
   return null == W ? null : (0, r.jsxs)("div", {
     className: R.container,
     children: [null != ee ? (0, r.jsx)(c.P3F, {
@@ -271,7 +271,7 @@ function D(e) {
       })
     }) : null, (0, r.jsxs)("div", {
       className: R.header,
-      children: [(0, r.jsx)(x.Z, {
+      children: [(0, r.jsx)(Z.Z, {
         color: s.Z.unsafe_rawColors.GREEN_230.css,
         width: 16,
         height: 16
@@ -282,7 +282,7 @@ function D(e) {
       })]
     }), (J.length > 0 || null != $) && (0, r.jsxs)("div", {
       className: R.participants,
-      children: [J.map(e => (0, r.jsx)(k, {
+      children: [J.map(e => (0, r.jsx)(M, {
         user: e,
         guildId: t.id
       }, e.id)), $]
@@ -307,7 +307,7 @@ function D(e) {
         size: "sm",
         text: X,
         onClick: () => {
-          if (Q) null != l && null != l.getGuildId() && ((0, I.Cq)(l), (0, v.XU)(l.getGuildId(), l.id));
+          if (Q) null != l && null != l.getGuildId() && ((0, I.Cq)(l), (0, y.XU)(l.getGuildId(), l.id));
           else {
             if (null == d) return;
             (0, f.bO)({
@@ -321,7 +321,7 @@ function D(e) {
   })
 }
 
-function k(e) {
+function M(e) {
   let {
     user: t,
     guildId: n

@@ -438,7 +438,7 @@ function A(e) {
         items: [...t]
       }
     }
-  })[R.type])(), j = i.useMemo(() => {
+  })[R.type])(), k = i.useMemo(() => {
     let e = [];
     return M.forEach(t => {
       switch (t.type) {
@@ -452,6 +452,6 @@ function A(e) {
   }, [M]);
   return {
     items: M,
-    itemsData: j
+    itemsData: k
   }
 }

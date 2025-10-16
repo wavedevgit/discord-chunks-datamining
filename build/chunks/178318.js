@@ -2,7 +2,7 @@
 /** chunk id: 178318, original params: e,t,n (module,exports,require) **/
 let r, i;
 require.d(exports, {
-  Z: () => Z
+  Z: () => A
 }), require("./49124.js"), require("./388685.js"), require("./35282.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./539854.js"), require("./415506.js");
 var Chunk836560 = require("./836560.js"),
   Chunk392711 = require("./392711.js"),
@@ -35,8 +35,8 @@ try {
     r = Chunk998502.ZP.requireModule("erlpack")
   } catch (e) {}
 }
-let y = Chunk998502.ZP.requireModule("discord_rpc").RPCWebSocket,
-  v = window.GLOBAL_ENV.MARKETING_ENDPOINT,
+let v = Chunk998502.ZP.requireModule("discord_rpc").RPCWebSocket,
+  y = window.GLOBAL_ENV.MARKETING_ENDPOINT,
   I = new Chunk710845.Z("RPCServer:WSS"),
   C = [];
 
@@ -44,7 +44,7 @@ function S(e) {
   return "function" == typeof e ? e() : e
 }
 
-function T() {
+function N() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 0,
     t = module > 0 ? true : () => {
       if (!S(i.listening)) return;
@@ -57,7 +57,7 @@ function T() {
   i.listen(Chunk981631.V6Z + module % Chunk981631.frH, "127.0.0.1", exports)
 }
 
-function N(e, t, n) {
+function T(e, t, n) {
   let r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : 200,
     i = arguments.length > 4 && true !== arguments[4] ? arguments[4] : {},
     l = null != S(e.headers).origin ? {
@@ -82,7 +82,7 @@ function N(e, t, n) {
 
 function P(e, t, n, r) {
   let i = arguments.length > 4 && true !== arguments[4] ? arguments[4] : 0;
-  N(e, t, {
+  T(e, t, {
     code: i,
     message: r
   }, n)
@@ -106,7 +106,7 @@ class j extends Chunk76238.Z {
     this._socket = e
   }
 }
-class A extends Chunk76238.Z {
+class x extends Chunk76238.Z {
   send(e) {
     (u.default.isLoggingOverlayEvents || e.cmd !== _.Etm.OVERLAY) && I.info("Socket Emit: ".concat(this.id), e), this._sendCallback(e)
   }
@@ -120,10 +120,10 @@ class A extends Chunk76238.Z {
     this._sendCallback = e, this._closeCallback = t
   }
 }
-class x extends Chunk836560.EventEmitter {
+class Z extends Chunk836560.EventEmitter {
   handleRequest(e, t) {
     let [n, r] = S(e.url).split("?"), i = S(e.method);
-    if ("/rpc" === n && "OPTIONS" === i) return void N(e, t, {
+    if ("/rpc" === n && "OPTIONS" === i) return void T(e, t, {
       body: ""
     });
     let l = "POST" === i;
@@ -136,9 +136,9 @@ class x extends Chunk836560.EventEmitter {
             protocol: i,
             host: l
           } = null != (r = d.Z.toURLSafe(null != (e = n.get("callback")) ? e : "")) ? r : {};
-          i === location.protocol && l === location.host ? t.setHeader("Location", n.get("callback")) : t.setHeader("Location", v), t.writeHead(301), t.end()
+          i === location.protocol && l === location.host ? t.setHeader("Location", n.get("callback")) : t.setHeader("Location", y), t.writeHead(301), t.end()
         },
-        s = new A(!l ? o : N.bind(null, e, t), !l ? o : P.bind(null, e, t, 400), Number(n.get("v")), i);
+        s = new x(!l ? o : T.bind(null, e, t), !l ? o : P.bind(null, e, t, 400), Number(n.get("v")), i);
       if (l)(0, m.em)(s, S(e.headers).origin, n.get("client_id")).then(() => {
         let n = "";
         e.on("data", e => n += e), e.on("error", () => P(e, t, 500, "Internal Server Error")), e.on("end", () => this.handleMessage(s, n))
@@ -194,14 +194,14 @@ class x extends Chunk836560.EventEmitter {
     var e;
     super();
     let t = 0;
-    (i = y.http.createServer()).on("error", e => {
-      I.error("Error: ".concat(e.message)), ("EADDRINUSE" === e.code || e.message.includes("EADDRINUSE")) && setTimeout(() => T(++t), 1e3)
-    }), i.on("request", this.handleRequest.bind(this)), T(exports);
+    (i = v.http.createServer()).on("error", e => {
+      I.error("Error: ".concat(e.message)), ("EADDRINUSE" === e.code || e.message.includes("EADDRINUSE")) && setTimeout(() => N(++t), 1e3)
+    }), i.on("request", this.handleRequest.bind(this)), N(exports);
     let n = {
       instanceId: null != (e = i.instanceId) ? module : 0,
       server: i
     };
-    new y.ws.Server(require).on("connection", e => this.handleConnection(e))
+    new v.ws.Server(require).on("connection", e => this.handleConnection(e))
   }
 }
-let Z = new x
+let A = new Z

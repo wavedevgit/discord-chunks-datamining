@@ -106,11 +106,11 @@ let ec = (e, t) => eo({
   }, t ? {
     referralProgram: {
       thumbnail: M.Z,
-      assetUrl: e ? x.Z : j.Z
+      assetUrl: e ? x.Z : k.Z
     },
     showYourStyle: {
       thumbnail: U.Z,
-      assetUrl: e ? k.Z : G.Z
+      assetUrl: e ? j.Z : G.Z
     },
     yourSpace: {
       thumbnail: Z.Z,

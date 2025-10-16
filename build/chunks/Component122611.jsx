@@ -26,9 +26,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk785203 = require("./785203.js"),
   Chunk652785 = require("./652785.js"),
   Chunk921944 = require("./921944.js");
-let T = new Set([Chunk704215.z.CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION, Chunk704215.z.CHANNEL_NOTICE_GUILD_BANNER]);
+let N = new Set([Chunk704215.z.CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION, Chunk704215.z.CHANNEL_NOTICE_GUILD_BANNER]);
 
-function N(e) {
+function T(e) {
   e.stopPropagation()
 }
 
@@ -41,7 +41,7 @@ function P(e) {
       dismissibleContentType: t,
       store: r
     } = e;
-    returntrue === (null == r ? true : r.channelNoticePredicate(n, p)) && !T.has(t)
+    returntrue === (null == r ? true : r.channelNoticePredicate(n, p)) && !N.has(t)
   }).map(e => e.dismissibleContentType), [n, p]);
   return (0, r.jsx)(c.ZP, {
     contentTypes: g,
@@ -71,7 +71,7 @@ function P(e) {
               markAsDismissed: l
             });
           case a.z.CHANNEL_NOTICE_QUICKSWITCHER:
-            return (0, r.jsx)(v.Z, {
+            return (0, r.jsx)(y.Z, {
               guild: n,
               markAsDismissed: l
             });
@@ -90,7 +90,7 @@ function P(e) {
         }
       })();
       return null == c ? null : (0, r.jsx)("div", {
-        onContextMenu: N,
+        onContextMenu: T,
         children: c
       })
     }
@@ -106,7 +106,7 @@ let j = e => {
         guild: t
       });
     case I.R.MAX_MEMBER_COUNT:
-      return (0, r.jsx)(y.Z, {
+      return (0, r.jsx)(v.Z, {
         guild: t
       });
     case I.R.GUILD_LIVE_CHANNEL:

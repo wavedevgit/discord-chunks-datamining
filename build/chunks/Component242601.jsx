@@ -169,7 +169,7 @@ class em extends Chunk647438.PureComponent {
     } = this.state;
     return n ? (0, r.jsx)("div", {
       onClick: t => e ? null : t.stopPropagation(),
-      children: (0, r.jsx)(M.Z, {
+      children: (0, r.jsx)(k.Z, {
         tutorialId: eh,
         position: "bottom",
         inlineSpecs: eg,
@@ -480,24 +480,24 @@ function eb(e) {
     m = (0, c.e7)([H.Z], () => H.Z.isUnavailable(n)),
     j = (0, c.e7)([K.default], () => K.default.getCurrentUser()),
     {
-      enableStudyGroup: Z
-    } = (0, x.s)(o),
-    w = (0, v.ZP)(e => e.currentlyShown.has(u.z.NAGBAR_NOTICE_CONNECT_PLAYSTATION)),
-    [k, M] = i.useState(!w),
+      enableStudyGroup: A
+    } = (0, Z.s)(o),
+    w = (0, y.ZP)(e => e.currentlyShown.has(u.z.NAGBAR_NOTICE_CONNECT_PLAYSTATION)),
+    [M, k] = i.useState(!w),
     V = (0, _.Z)(n),
     {
       analyticsLocations: J
     } = (0, O.ZP)(E.Z.GUILD_HEADER);
   i.useEffect(() => {
-    n !== V && M(!w)
+    n !== V && k(!w)
   }, [n, V, w]);
-  let [$, ee] = (0, v.ZP)(e => [el.XN.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(ea.R.GUILD_HEADER_TOOLTIPS)], s.X), et = (0, y.Z)(o), en = (0, f.s9z)(f.JQI), er = (0, c.e7)([z.Z], () => z.Z.hasLayers()), eo = (0, c.e7)([U.Z], () => U.Z.shouldShow(eh)), es = (0, R.cT)(n, "GuildSidebar") && g && (null == o ? true : o.premiumProgressBarEnabled) === false && !X.s.isDisallowPopupsSet(), ec = (0, P.Z)(n), eu = (null == o ? true : o.features.has(ei.GuildFeatures.HUB)) === true, ed = g && (null == o ? true : o.features.has(ei.GuildFeatures.DISCOVERABLE)) === true, ep = (0, c.e7)([A.Z, z.Z], () => null != o && null != j && g && !z.Z.hasLayers() && A.Z.shouldShowGuildTemplateDirtyTooltip(n)), ef = (0, c.e7)([G.Z], () => G.Z.getChannel(a)), {
+  let [$, ee] = (0, y.ZP)(e => [el.XN.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(ea.R.GUILD_HEADER_TOOLTIPS)], s.X), et = (0, v.Z)(o), en = (0, f.s9z)(f.JQI), er = (0, c.e7)([z.Z], () => z.Z.hasLayers()), eo = (0, c.e7)([U.Z], () => U.Z.shouldShow(eh)), es = (0, R.cT)(n, "GuildSidebar") && g && (null == o ? true : o.premiumProgressBarEnabled) === false && !X.s.isDisallowPopupsSet(), ec = (0, P.Z)(n), eu = (null == o ? true : o.features.has(ei.GuildFeatures.HUB)) === true, ed = g && (null == o ? true : o.features.has(ei.GuildFeatures.DISCOVERABLE)) === true, ep = (0, c.e7)([x.Z, z.Z], () => null != o && null != j && g && !z.Z.hasLayers() && x.Z.shouldShowGuildTemplateDirtyTooltip(n)), ef = (0, c.e7)([G.Z], () => G.Z.getChannel(a)), {
     isPopoutOpen: eg
-  } = (0, S.y)(), eb = null != (t = null == o ? true : o.features.has(ei.GuildFeatures.COMMUNITY)) && t, e_ = Q.ZP.isNewUser(j), eE = k && !e_;
-  (0, T.Z)(o);
+  } = (0, S.y)(), eb = null != (t = null == o ? true : o.features.has(ei.GuildFeatures.COMMUNITY)) && t, e_ = Q.ZP.isNewUser(j), eE = M && !e_;
+  (0, N.Z)(o);
   let eO = (0, I.Nj)(u.z.PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP),
-    ey = (0, L.Z)(n),
-    ev = (0, N.Z)(n),
+    ev = (0, L.Z)(n),
+    ey = (0, T.Z)(n),
     eI = (0, c.e7)([q.Z], () => q.Z.getChannelId()),
     eC = (0, c.e7)([Y.Z], () => Y.Z.desyncedVoiceStatesCount),
     eS = (0, D.Z)(n);
@@ -523,12 +523,12 @@ function eb(e) {
     showRoleSubscriptionUpsell: ec,
     showHubPrivacySettingsTooltip: eu,
     showNewUnreadsBar: eb,
-    showMediaChannelUpsell: ey,
-    showTierTemplatesUpsell: ev,
+    showMediaChannelUpsell: ev,
+    showTierTemplatesUpsell: ey,
     isHeaderPopoutOpen: eg,
-    enableStudyGroup: Z,
+    enableStudyGroup: A,
     isGuildHeaderDismissibleTooltipShown: ee,
-    canShowCoachMarkAtBottom: k,
+    canShowCoachMarkAtBottom: M,
     headerAnalyticsLocations: J,
     isTutorialHighlightDismissed: eO,
     shouldRenderBurstCoachmark: eE,

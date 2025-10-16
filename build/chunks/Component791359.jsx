@@ -31,8 +31,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk46140 = require("./46140.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk559909 = require("./559909.js");
-let x = 15 * Chunk70956.Z.Millis.MINUTE,
-  Z = (0, Chunk525296.Z)(function(e) {
+let Z = 15 * Chunk70956.Z.Millis.MINUTE,
+  A = (0, Chunk525296.Z)(function(e) {
     let {
       party: t,
       onUserContextMenu: n,
@@ -41,7 +41,7 @@ let x = 15 * Chunk70956.Z.Millis.MINUTE,
     } = e, o = i.useRef(null), c = (0, r.jsx)(I.Z, {
       party: t,
       onUserContextMenu: n
-    }), d = (0, r.jsx)(v.Z, {
+    }), d = (0, r.jsx)(y.Z, {
       party: t,
       onChannelContextMenu: l,
       quest: a
@@ -50,21 +50,21 @@ let x = 15 * Chunk70956.Z.Millis.MINUTE,
       applicationStreams: h,
       currentActivities: g,
       voiceChannels: m
-    } = t, b = f.length, _ = h.length, O = g.length, y = m.length > 0, T = p.o.useConfig({
+    } = t, b = f.length, _ = h.length, O = g.length, v = m.length > 0, N = p.o.useConfig({
       location: "itemcard"
     }).demureActivityCards, P = i.useCallback(() => {
       let e = g.filter(e => {
         var t, n;
         return (null == (t = e.game) ? true : t.name) != null && (0, E.isGameApplicationType)(null == (n = e.game) ? true : n.type)
       }).map(e => e.game.name);
-      E.default.track(N.rMx.NOW_PLAYING_CARD_HOVERED, {
+      E.default.track(T.rMx.NOW_PLAYING_CARD_HOVERED, {
         num_users: b,
         num_streams: _,
         num_activities: O,
-        in_voice_channel: y,
+        in_voice_channel: v,
         games_detected: e
       })
-    }, [b, _, O, y, g]), j = s()(P, x);
+    }, [b, _, O, v, g]), j = s()(P, Z);
     return null != c || null != d ? (0, r.jsx)(u.yRy, {
       targetElementRef: o,
       position: "left",
@@ -104,9 +104,9 @@ let x = 15 * Chunk70956.Z.Millis.MINUTE,
           ref: o,
           onMouseEnter: j,
           "aria-haspopup": "menu",
-          className: A.itemCard,
+          className: x.itemCard,
           active: l,
-          flat: T,
+          flat: N,
           children: (0, r.jsxs)("div", {
             children: [c, d]
           })
@@ -161,7 +161,7 @@ function L() {
     let {
       party: t
     } = e;
-    return (0, r.jsx)(Z, {
+    return (0, r.jsx)(A, {
       party: t,
       quest: s.get(t.id)
     }, t.id)

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   g: () => U,
-  i: () => j
+  i: () => k
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -43,7 +43,7 @@ let M = () => {
       forceTrack: true
     }), (0, Chunk550385.XO)(Chunk550385.wh.CLIENT_THEMES), (0, Chunk342386.default)()
   },
-  j = () => {
+  k = () => {
     var e, t;
     let {
       analyticsLocations: n
@@ -131,14 +131,14 @@ let M = () => {
         type: Chunk705262.yH.SETTINGS,
         children: [(0, Chunk951288.jsx)(Chunk705262.ZP.Basic, {
           className: Chunk505575.basicThemeSelectors
-        }), (0, Chunk951288.jsx)(k, {}), Chunk550385 && (0, Chunk951288.jsx)(Chunk607270.Z, {}), Chunk210887]
+        }), (0, Chunk951288.jsx)(j, {}), Chunk550385 && (0, Chunk951288.jsx)(Chunk607270.Z, {}), Chunk210887]
       }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
         className: Chunk505575.divider
       })]
     })
   };
 
-function k() {
+function j() {
   let e = (0, Chunk984802.A6)(),
     {
       theme: t,

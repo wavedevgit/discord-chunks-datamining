@@ -72,13 +72,13 @@ let P = {},
     lastRequest: null,
     lastResponse: null
   },
-  j = [],
   k = [],
+  j = [],
   U = 75,
   G = 25;
 
 function B() {
-  j = Chunk823385.Z.getProps().results.filter(e => e.type === _.h8.TEXT_CHANNEL && 0 === e.record.type).map(e => e.record.id)
+  k = Chunk823385.Z.getProps().results.filter(e => e.type === _.h8.TEXT_CHANNEL && 0 === e.record.type).map(e => e.record.id)
 }
 class Z extends(s = Chunk442837.ZP.PersistedStore) {
   getState() {
@@ -98,7 +98,7 @@ class Z extends(s = Chunk442837.ZP.PersistedStore) {
   }
   summaries(e) {
     var t;
-    return null != (t = P[e]) ? t : k
+    return null != (t = P[e]) ? t : j
   }
   shouldShowTopicsBar() {
     return r
@@ -152,7 +152,7 @@ class Z extends(s = Chunk442837.ZP.PersistedStore) {
       withUnreads: r,
       numChannels: i = G
     } = e, a = [];
-    return t && (a = a.concat(j)), n && (a = a.concat(L.map(e => e.channel_id))), r && (a = a.filter(e => {
+    return t && (a = a.concat(k)), n && (a = a.concat(L.map(e => e.channel_id))), r && (a = a.filter(e => {
       let t = m.Z.getChannel(e);
       return null != t && !y.ZP.isChannelMuted(t.guild_id, e) && E.ZP.hasUnread(e)
     })), (a = a.filter(e => {

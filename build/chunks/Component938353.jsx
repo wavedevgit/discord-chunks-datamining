@@ -306,7 +306,7 @@ class tt extends(r = Chunk647438.Component) {
           customId: n,
           linkId: o
         }, r)
-      } else if (n === S.g.GUILD_PRODUCT) return (0, i.jsx)(k.Z, {
+      } else if (n === S.g.GUILD_PRODUCT) return (0, i.jsx)(j.Z, {
         code: r
       }, r);
       else if (n === S.g.SERVER_SHOP) return (0, i.jsx)(A.Z, {
@@ -438,12 +438,12 @@ class tt extends(r = Chunk647438.Component) {
           onContextMenu: null != o ? e => {
             e.stopPropagation(), e.preventDefault(), o(e, l)
           } : true,
-          renderAudioComponent: m ? ej.jY : ej.q7,
-          renderImageComponent: ej.dS,
-          renderVideoComponent: ej.vZ,
-          renderPlaintextFilePreview: ej.d4,
-          renderGenericFileComponent: ej.ZK,
-          renderMosaicItemFooter: ej.L9,
+          renderAudioComponent: m ? ek.jY : ek.q7,
+          renderImageComponent: ek.dS,
+          renderVideoComponent: ek.vZ,
+          renderPlaintextFilePreview: ek.d4,
+          renderGenericFileComponent: ek.ZK,
+          renderMosaicItemFooter: ek.L9,
           onPlay: s,
           gifFavoriteButton: e9(l),
           isSearchResult: this.props.isSearchResult
@@ -795,7 +795,7 @@ function tn(e) {
   } = (0, c.cj)([ep.Z], () => ({
     canAddNewReactions: p && ep.Z.can(ez.Plq.ADD_REACTIONS, n),
     canManageMessages: ep.Z.can(ez.Plq.MANAGE_MESSAGES, n)
-  }), [p, n]), y = (0, M.ux)(n.guild_id), [, O] = (0, j.AB)(n.guild_id), v = (0, es.$R)(n), I = (s === r.author.id || b) && r.author.id !== ez.LAt && false !== a && !(0, ey.yE)(r.flags, ez.iLy.EPHEMERAL) && v && 1 === (0, eN.Z)(r), T = s === r.author.id && v && !o, S = r.author.id === s, A = r.isFirstMessageInForumPost(n), N = (0, eP.Z)({
+  }), [p, n]), y = (0, M.ux)(n.guild_id), [, O] = (0, k.AB)(n.guild_id), v = (0, es.$R)(n), I = (s === r.author.id || b) && r.author.id !== ez.LAt && false !== a && !(0, ey.yE)(r.flags, ez.iLy.EPHEMERAL) && v && 1 === (0, eN.Z)(r), T = s === r.author.id && v && !o, S = r.author.id === s, A = r.isFirstMessageInForumPost(n), N = (0, eP.Z)({
     channel: n,
     canChat: p,
     renderReactions: f,
@@ -805,7 +805,7 @@ function tn(e) {
     communicationDisabled: O,
     isActiveChannelOrUnarchivableThread: v,
     isAutomodQuarantined: y
-  }), P = (0, H.A)((null != (t = r.editedTimestamp) ? t : r.timestamp).valueOf()), w = (0, z.Z)(null == n ? true : n.id), D = (0, Q.Z)(r), L = (0, R.v)(r), x = (0, eC._)(n), k = (0, eI.ro)(r.id, r.channel_id), U = (0, C.m8)();
+  }), P = (0, H.A)((null != (t = r.editedTimestamp) ? t : r.timestamp).valueOf()), w = (0, z.Z)(null == n ? true : n.id), D = (0, Q.Z)(r), L = (0, R.v)(r), x = (0, eC._)(n), j = (0, eI.ro)(r.id, r.channel_id), U = (0, C.m8)();
   return (0, i.jsx)(tt, e2(e0(e2(e0({
     canSuppressEmbeds: I,
     canDeleteAttachments: T
@@ -827,7 +827,7 @@ function tn(e) {
     showMaskedLinks: P,
     shouldHideMediaOptions: w,
     enabledContentHarmTypeFlags: L,
-    ctaButtonType: k,
+    ctaButtonType: j,
     shouldAgeVerify: U
   }))
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 6039, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => T
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk555562 = require("./555562.js");
 
-function T(e) {
+function N(e) {
   let {
     guild: t,
     width: n,
@@ -55,29 +55,29 @@ function T(e) {
     })]
   })
 }
-let N = e => {
+let T = e => {
   let {
     guildId: t
   } = e, {
     ref: n,
     width: c,
     height: u
-  } = (0, s.ZP)(), [f, h] = i.useState(I.hO.INITIAL), N = (0, l.e7)([_.Z], () => _.Z.getRequest(t)), P = (0, l.e7)([p.Z], () => p.Z.getGuild(t)), {
+  } = (0, s.ZP)(), [f, h] = i.useState(I.hO.INITIAL), T = (0, l.e7)([_.Z], () => _.Z.getRequest(t)), P = (0, l.e7)([p.Z], () => p.Z.getGuild(t)), {
     hasFetchedRequestToJoinGuilds: j,
-    guildPreviewDisabled: A
+    guildPreviewDisabled: x
   } = (0, l.cj)([_.Z], () => ({
     hasFetchedRequestToJoinGuilds: _.Z.hasFetchedRequestToJoinGuilds,
     guildPreviewDisabled: _.Z.getJoinRequestGuild(t)
   }));
   i.useEffect(() => {
-    null != P && (0, d.uL)(v.Z5c.CHANNEL(t))
+    null != P && (0, d.uL)(y.Z5c.CHANNEL(t))
   }, [P, t]), i.useEffect(() => {
     j || g.Z.fetchRequestToJoinGuilds()
   }, [j]);
-  let x = i.useCallback(() => {
-      h(Math.max(f, I.hO.FILLING)), g.Z.removeGuildJoinRequest(t), (0, d.uL)(v.Z5c.ME)
+  let Z = i.useCallback(() => {
+      h(Math.max(f, I.hO.FILLING)), g.Z.removeGuildJoinRequest(t), (0, d.uL)(y.Z5c.ME)
     }, [t, f]),
-    Z = (e, t) => () => {
+    A = (e, t) => () => {
       (0, o.h7j)(n => {
         var i, l;
         return (0, r.jsx)(o.ConfirmModal, (i = function(e) {
@@ -123,27 +123,27 @@ let N = e => {
     },
     w = async () => {
       await g.Z.resetGuildJoinRequest(t), (0, m.hk)(t)
-    }, L = Z(C.intl.format(C.t["9ZezpK"], {
-      name: null == A ? true : A.name
-    }), x), R = Z(C.intl.format(C.t.fJwWVl, {
-      name: null == A ? true : A.name
-    }), x);
+    }, L = A(C.intl.format(C.t["9ZezpK"], {
+      name: null == x ? true : x.name
+    }), Z), R = A(C.intl.format(C.t.fJwWVl, {
+      name: null == x ? true : x.name
+    }), Z);
   return (0, r.jsxs)("div", {
     className: S.page,
     ref: n,
-    children: [(0, r.jsx)(T, {
-      guild: A,
+    children: [(0, r.jsx)(N, {
+      guild: x,
       height: u,
       width: c
     }), (0, r.jsx)("div", {
       className: S.contentWrapper,
       children: (() => {
-        if (null == N) return null;
-        switch (N.applicationStatus) {
+        if (null == T) return null;
+        switch (T.applicationStatus) {
           case b.wB.SUBMITTED:
-            return (0, r.jsx)(y.Z, {
+            return (0, r.jsx)(v.Z, {
               onWithdrawApplication: L,
-              guild: A
+              guild: x
             });
           case b.wB.REJECTED:
             return (0, r.jsx)(O.Z, {
@@ -151,14 +151,14 @@ let N = e => {
               onReapply: w,
               confirmText: C.intl.string(C.t.g9tK0t),
               onWithdrawApplication: L,
-              rejectionReason: N.rejectionReason,
-              guild: A
+              rejectionReason: T.rejectionReason,
+              guild: x
             });
           default:
             return (0, r.jsx)(E.s, {
               onDiscardApplication: R,
               onContinueApplication: () => (0, m.hk)(t),
-              guild: A
+              guild: x
             })
         }
       })()

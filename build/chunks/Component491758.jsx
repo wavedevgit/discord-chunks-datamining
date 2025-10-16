@@ -83,14 +83,14 @@ function D() {
     x = Chunk435064.Z.isDecoupledGameClippingEnabled(),
     M = (0, Chunk779618.Z)(Chunk131951.Z),
     {
-      showClipsHeaderEntrypoint: j
+      showClipsHeaderEntrypoint: k
     } = Chunk924557.NV.useExperiment({
       location: "clips_recording_settings"
     }, {
       autoTrackExposure: false
     });
   o()(null != L, "Save clip keybind unset");
-  let k = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale),
+  let j = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale),
     U = Chunk647438.useMemo(() => [{
       value: Chunk356659.OT.SECONDS_30,
       label: Chunk388032.intl.formatToPlainString(Chunk388032.t["bTFv//"], {
@@ -106,7 +106,7 @@ function D() {
       label: Chunk388032.intl.formatToPlainString(Chunk388032.t.ICo9Nj, {
         count: 2
       })
-    }], [k]),
+    }], [j]),
     G = Chunk647438.useMemo(() => [{
       value: Chunk37113.ApplicationStreamResolutions.RESOLUTION_480,
       label: Chunk388032.intl.formatToPlainString(Chunk388032.t.TEOC0N, {
@@ -130,7 +130,7 @@ function D() {
     }, {
       value: Chunk37113.ApplicationStreamResolutions.RESOLUTION_SOURCE,
       label: Chunk388032.intl.string(Chunk388032.t.XjXqzs)
-    }], [k]),
+    }], [j]),
     B = Chunk647438.useMemo(() => [{
       value: Chunk37113.ApplicationStreamFPS.FPS_15,
       label: Chunk388032.intl.formatToPlainString(Chunk388032.t.Qb44XF, {
@@ -146,7 +146,7 @@ function D() {
       label: Chunk388032.intl.formatToPlainString(Chunk388032.t.Qb44XF, {
         fps: Chunk37113.ApplicationStreamFPS.FPS_60
       })
-    }], [k]),
+    }], [j]),
     Z = Chunk647438.useCallback(e => {
       c.Z.setKeybind(w(R({}, L), {
         shortcut: e
@@ -188,7 +188,7 @@ function D() {
           trackAnalytics: true
         })
       })]
-    }), j && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+    }), k && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk481060.rsf, {
         label: Chunk388032.intl.string(Chunk388032.t["3zwNf3"]),
         description: Chunk388032.intl.string(Chunk388032.t.m4Cjj4),

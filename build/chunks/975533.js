@@ -38,16 +38,16 @@ let w = new Map;
 function L(e, t, n) {
   var r;
   let i = performance.now(),
-    l = null != (r = n.context) ? r : Z.Yn.DEFAULT;
+    l = null != (r = n.context) ? r : A.Yn.DEFAULT;
   if (e) n.pressedTime = i;
   else if (null != n.pressedTime && (0, O.f)({
       location: "doPTT",
       autoTrackExposure: false
     }).enableLatching) {
-    let e = x._M,
+    let e = Z._M,
       {
         pttLatchingEnabled: t = false
-      } = v.Z.getModeOptions(l);
+      } = y.Z.getModeOptions(l);
     if (!n.latched && true === t && i < n.pressedTime + e) {
       n.latched = true;
       return
@@ -59,7 +59,7 @@ function L(e, t, n) {
   let o = a.get(t);
   null == o && (o = new Set, a.set(t, o)), e ? o.add(n.id) : o.delete(n.id);
   let s = o.size > 0;
-  v.Z.getMediaEngine().eachConnection(e => e.setForceAudioInput(s, t), l)
+  y.Z.getMediaEngine().eachConnection(e => e.setForceAudioInput(s, t), l)
 }
 let R = {
     [Chunk981631.kg4.TOGGLE_PRIORITY_SPEAKER]: {
@@ -72,7 +72,7 @@ let R = {
     },
     [Chunk981631.kg4.PUSH_TO_TALK]: {
       onTrigger(e, t) {
-        v.Z.getMode(t.context) === A.pM4.PUSH_TO_TALK && (R[A.kg4.PUSH_TO_TALK].isPressed = e, L(e, false, t))
+        y.Z.getMode(t.context) === x.pM4.PUSH_TO_TALK && (R[x.kg4.PUSH_TO_TALK].isPressed = e, L(e, false, t))
       },
       keyEvents: {
         keyup: true,
@@ -82,9 +82,9 @@ let R = {
     },
     [Chunk981631.kg4.PUSH_TO_TALK_PRIORITY]: {
       onTrigger(e, t) {
-        (v.Z.getMode() === A.pM4.PUSH_TO_TALK || j.Z.getCurrentConfig({
+        (y.Z.getMode() === x.pM4.PUSH_TO_TALK || j.Z.getCurrentConfig({
           location: "keybinds"
-        }).onPTTKeybind) && (R[A.kg4.PUSH_TO_TALK_PRIORITY].isPressed = e, L(e, true, t))
+        }).onPTTKeybind) && (R[x.kg4.PUSH_TO_TALK_PRIORITY].isPressed = e, L(e, true, t))
       },
       keyEvents: {
         keyup: true,
@@ -94,9 +94,9 @@ let R = {
     },
     [Chunk981631.kg4.VAD_PRIORITY]: {
       onTrigger(e, t) {
-        v.Z.getMode() === A.pM4.VOICE_ACTIVITY && j.Z.getCurrentConfig({
+        y.Z.getMode() === x.pM4.VOICE_ACTIVITY && j.Z.getCurrentConfig({
           location: "keybinds"
-        }).separateKeybind && (R[A.kg4.VAD_PRIORITY].isPressed = e, L(e, true, t))
+        }).separateKeybind && (R[x.kg4.VAD_PRIORITY].isPressed = e, L(e, true, t))
       },
       keyEvents: {
         keyup: true,
@@ -106,7 +106,7 @@ let R = {
     },
     [Chunk981631.kg4.PUSH_TO_MUTE]: {
       onTrigger(e) {
-        v.Z.getMode() === A.pM4.VOICE_ACTIVITY && (R[A.kg4.PUSH_TO_MUTE].isPressed = e, i.Z.setTemporarySelfMute(e))
+        y.Z.getMode() === x.pM4.VOICE_ACTIVITY && (R[x.kg4.PUSH_TO_MUTE].isPressed = e, i.Z.setTemporarySelfMute(e))
       },
       keyEvents: {
         keyup: true,
@@ -162,7 +162,7 @@ let R = {
       onTrigger(e, t) {
         if (!(0, C.I1)(t.shortcut)) return;
         let n = (0, P.Z)();
-        null != n && l.Z.setInputLocked(!T.default.isLocked(n), n)
+        null != n && l.Z.setInputLocked(!N.default.isLocked(n), n)
       },
       keyEvents: {
         keyup: true,
@@ -288,26 +288,26 @@ let R = {
   },
   D = null;
 
-function k() {
+function M() {
   w.clear(), Chunk131951.Z.getMediaEngine().eachConnection(e => {
     e.setForceAudioInput(false, false), e.setForceAudioInput(false, true)
   }, Chunk65154.Yn.DEFAULT)
 }
-class M extends Chunk317770.Z {
+class k extends Chunk317770.Z {
   _initialize() {
     Chunk570140.Z.wait(() => Chunk570140.Z.dispatch({
       type: "KEYBINDS_REGISTER_GLOBAL_KEYBIND_ACTIONS",
       keybinds: R
-    })), Chunk570140.Z.subscribe("AUDIO_SET_MODE", k), Chunk570140.Z.subscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect)
+    })), Chunk570140.Z.subscribe("AUDIO_SET_MODE", M), Chunk570140.Z.subscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect)
   }
   _terminate() {
-    Chunk570140.Z.unsubscribe("AUDIO_SET_MODE", k), Chunk570140.Z.unsubscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect)
+    Chunk570140.Z.unsubscribe("AUDIO_SET_MODE", M), Chunk570140.Z.unsubscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect)
   }
   handleVoiceChannelSelect(e) {
     let {
       currentVoiceChannelId: t
     } = e;
-    t !== D && k(), D = t
+    t !== D && M(), D = t
   }
 }
-let U = new M
+let U = new k

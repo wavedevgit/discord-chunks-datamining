@@ -98,7 +98,7 @@ function T(e) {
     props: x
   } = (0, s.XF_)(D), {
     disabled: M
-  } = L, j = (0, f.U)("UserSettingsDesignSystems"), k = (0, d.m)({
+  } = L, k = (0, f.U)("UserSettingsDesignSystems"), j = (0, d.m)({
     validateOn: "change",
     error: O,
     value: n,
@@ -106,24 +106,24 @@ function T(e) {
     maxLength: E,
     defaultDirty: T
   }), U = i.useMemo(() => {
-    if (j) return;
+    if (k) return;
     if (null == E) return v;
     let e = "".concat(E).length;
     return I * (e += "".concat(E, " / ").length) + v
-  }, [j, E]), G = e => {
+  }, [k, E]), G = e => {
     let {
       onChange: t
     } = x;
-    null == t || t(e.currentTarget.value), k.setShouldValidate(true)
-  }, B = j && N ? (0, r.jsx)(c.H, {
+    null == t || t(e.currentTarget.value), j.setShouldValidate(true)
+  }, B = k && N ? (0, r.jsx)(c.H, {
     value: n,
     maxLength: R && null != E ? E : true
   }) : null;
   return (0, r.jsx)(s.gNt, b(g({}, L), {
     trailingContent: B,
-    errorMessage: k.hasError && null != (t = k.errorMessage) ? t : true,
+    errorMessage: j.hasError && null != (t = j.errorMessage) ? t : true,
     children: (0, r.jsxs)(u.U, {
-      validation: k,
+      validation: j,
       disabled: M,
       children: [(0, r.jsx)(s.tEY, {
         children: (0, r.jsx)(S, b(g({
@@ -144,11 +144,11 @@ function T(e) {
           onChange: G,
           ref: w
         }))
-      }), j ? null : (0, r.jsxs)(r.Fragment, {
+      }), k ? null : (0, r.jsxs)(r.Fragment, {
         children: [N ? (0, r.jsx)(A, {
           value: n,
           maxLength: E,
-          hasError: k.hasError
+          hasError: j.hasError
         }) : null, N || false === R ? null : (0, r.jsx)(C, {
           value: n,
           maxLength: E

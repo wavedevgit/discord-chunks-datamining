@@ -27,13 +27,13 @@ let g = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
       imageMarginX: _,
       imageMarginTop: E,
       trackingSource: O,
-      undismissable: y,
-      onDismissed: v,
+      undismissable: v,
+      onDismissed: y,
       onClick: I,
       cta: C,
       ctaColor: S,
-      centerText: T,
-      className: N
+      centerText: N,
+      className: T
     } = e;
     i.useEffect(() => {
       g(p.rMx.CHANNEL_NOTICE_VIEWED, {
@@ -63,27 +63,27 @@ let g = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
       className: a()(h.title, {
         [h.noImageTitle]: null == o
       }, {
-        [h.center]: T
+        [h.center]: N
       }),
       children: n
     }));
-    let A = null;
-    "function" == typeof l ? A = l() : null != l && (A = (0, r.jsx)(c.Text, {
+    let x = null;
+    "function" == typeof l ? x = l() : null != l && (x = (0, r.jsx)(c.Text, {
       className: a()({
-        [h.center]: T
+        [h.center]: N
       }),
       variant: "text-sm/normal",
       color: "text-muted",
       children: l
     }));
-    let x = null != _ ? "".concat(_, "px") : "16px";
+    let Z = null != _ ? "".concat(_, "px") : "16px";
     return (0, r.jsxs)("div", {
-      className: a()(h.container, N),
-      children: [true === y ? null : (0, r.jsx)(c.P3F, {
+      className: a()(h.container, T),
+      children: [true === v ? null : (0, r.jsx)(c.P3F, {
         onClick: () => {
           u.ZP.trackWithMetadata(p.rMx.CHANNEL_NOTICE_CLOSED, {
             notice_type: m
-          }), null == v || v()
+          }), null == y || y()
         },
         className: h.close,
         "aria-label": f.intl.string(f.t.WAI6xs),
@@ -96,8 +96,8 @@ let g = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
         className: h.imageContainer,
         style: {
           marginTop: "".concat(E, "px"),
-          marginLeft: x,
-          marginRight: x
+          marginLeft: Z,
+          marginRight: Z
         },
         children: (0, r.jsx)("img", {
           className: h.image,
@@ -107,7 +107,7 @@ let g = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
         })
       }), (0, r.jsxs)("div", {
         className: h.message,
-        children: [j, A, P]
+        children: [j, x, P]
       })]
     })
   }

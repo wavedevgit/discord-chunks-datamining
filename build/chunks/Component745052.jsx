@@ -214,7 +214,7 @@ function el(e) {
 let ea = e => {
   let t = (0, U.Z)();
   return (i.useEffect(() => {
-    (0, v.kk)(u.z.MESSAGE_REQUEST_SETTINGS_COACH_MARK)
+    (0, y.kk)(u.z.MESSAGE_REQUEST_SETTINGS_COACH_MARK)
   }, []), null == e.targetElementRef.current || R.Z.hasLayers() || (0, p.$sL)()) ? e.children : (0, r.jsx)(I.ZP, {
     contentTypes: [u.z.MESSAGE_REQUEST_SETTINGS_COACH_MARK],
     children: n => {
@@ -245,7 +245,7 @@ let ea = e => {
           actions: [{
             text: $.intl.string($.t.JN6EOD),
             onClick: e => {
-              e.stopPropagation(), (0, Z.openUserSettings)(x.n.CONTENT_AND_SOCIAL_PANEL, {
+              e.stopPropagation(), (0, A.openUserSettings)(Z.n.CONTENT_AND_SOCIAL_PANEL, {
                 section: Q.oAB.CONTENT_AND_SOCIAL,
                 scrollPosition: J.FY.MESSAGE_REQUESTS_V2
               }), l(X.L.TAKE_ACTION)
@@ -278,7 +278,7 @@ let es = (0, Chunk112724.Z)(function(e) {
       name: s.V.MESSAGE_REQUEST_VIEW
     })
   });
-  let l = (0, c.e7)([A.Z], () => A.Z.theme),
+  let l = (0, c.e7)([x.Z], () => x.Z.theme),
     o = (0, z.w)(),
     [u, d] = i.useState(false),
     h = (0, c.e7)([w.ZP], () => {
@@ -287,16 +287,16 @@ let es = (0, Chunk112724.Z)(function(e) {
     }),
     g = null == h ? true : h.channelId,
     b = null != h,
-    _ = (0, M.T)(g),
-    E = (0, k.J)(g),
+    _ = (0, k.T)(g),
+    E = (0, M.J)(g),
     O = i.useRef(null);
   i.useEffect(() => {
-    null != g && !_ && E && b && ((0, T.Kh)(g), N.Z.closeChannelSidebar(w.uZ))
+    null != g && !_ && E && b && ((0, N.Kh)(g), T.Z.closeChannelSidebar(w.uZ))
   }, [g, E, b, _]);
-  let [v, I] = i.useState(K.pS.REQUESTS), x = e => {
+  let [y, I] = i.useState(K.pS.REQUESTS), Z = e => {
     I(e)
   };
-  return (0, y.Tt)({
+  return (0, v.Tt)({
     location: $.intl.string($.t.e7GWjY)
   }), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
@@ -320,9 +320,9 @@ let es = (0, Chunk112724.Z)(function(e) {
             })
           }), (0, r.jsx)(C.Z.Divider, {}), (0, r.jsxs)(p.njP, {
             "aria-label": $.intl.string($.t.e7GWjY),
-            selectedItem: v,
+            selectedItem: y,
             type: "top-pill",
-            onItemSelect: x,
+            onItemSelect: Z,
             children: [(0, r.jsx)(p.njP.Item, {
               id: K.pS.REQUESTS,
               className: ee.item,
@@ -339,7 +339,7 @@ let es = (0, Chunk112724.Z)(function(e) {
       }), (0, r.jsx)("div", {
         className: et.content,
         children: (0, r.jsx)(eo, {
-          section: v
+          section: y
         })
       })]
     }), b && (0, r.jsx)(el, {

@@ -198,7 +198,7 @@ let $ = Chunk647438.memo(function(e) {
     }, "connections")), e
   }, [t, a, c, s, P, A, w]);
   return null == I ? null : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(j.Z, {
+    children: [(0, r.jsx)(k.Z, {
       message: t,
       channel: a,
       author: I,
@@ -210,8 +210,8 @@ let $ = Chunk647438.memo(function(e) {
       onContextMenu: m,
       onPopoutRequestClose: b,
       decorations: {
-        [j.a.SYSTEM_TAG]: T,
-        [j.a.BADGES]: D
+        [k.a.SYSTEM_TAG]: T,
+        [k.a.BADGES]: D
       },
       renderRemixTag: true,
       previewGuildId: o,
@@ -240,7 +240,7 @@ function ee(e, t, n) {
     onPopoutRequestClose: f
   } = e;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(j.Z, {
+    children: [(0, r.jsx)(k.Z, {
       message: i,
       channel: a,
       author: o,
@@ -288,8 +288,8 @@ function et(e) {
     return null != (e = a.displayCompactAvatars) ? e : A.ZP.displayCompactAvatars
   }), L = (0, Z.Z)(p), x = m ? X : Q, {
     avatarSrc: M,
-    avatarDecorationSrc: j,
-    eventHandlers: k
+    avatarDecorationSrc: k,
+    eventHandlers: j
   } = (0, I.Z)({
     userId: p.author.id,
     guildId: o,
@@ -327,9 +327,9 @@ function et(e) {
       avatarUrl: G,
       onRequestClose: O,
       clickTrap: v,
-      children: e => J(q(K({}, k), {
+      children: e => J(q(K({}, j), {
         avatarSrc: G,
-        avatarDecorationSrc: j,
+        avatarDecorationSrc: k,
         compact: m,
         onClick: y,
         onContextMenu: b,
@@ -342,9 +342,9 @@ function et(e) {
     })
   }) : (0, r.jsx)(f.Gt, {
     value: R,
-    children: J(q(K({}, k), {
+    children: J(q(K({}, j), {
       avatarSrc: G,
-      avatarDecorationSrc: j,
+      avatarDecorationSrc: k,
       compact: m,
       onClick: y,
       onContextMenu: b,
@@ -378,7 +378,7 @@ function en(e) {
       "aria-describedby": p,
       "aria-labelledby": f,
       children: [c && l && (0, r.jsx)(U.Z, {
-        id: (0, k.Dv)(t),
+        id: (0, j.Dv)(t),
         compact: true,
         timestamp: t.timestamp,
         isVisibleOnlyOnHover: d,
@@ -390,7 +390,7 @@ function en(e) {
         className: s,
         children: i
       }), c && !l && (0, r.jsx)(U.Z, {
-        id: (0, k.Dv)(t),
+        id: (0, j.Dv)(t),
         timestamp: t.timestamp,
         className: m,
         application: b
@@ -473,7 +473,7 @@ let ea = Chunk647438.memo(function(e) {
       return (0, D.yE)(t.flags, F.iLy.SUPPRESS_NOTIFICATIONS) && e.push((0, r.jsx)(O.Z, {}, "suppress-notifications")), t.hasPotions() && e.push((0, r.jsx)(E.Z, {
         message: t
       })), e
-    }, [t]), j = (0, k.XX)(t, _), U = (0, k.Dv)(t), G = p ? "".concat(j) : "".concat(j, " ").concat(U), Z = (null == n ? true : n.state) === y.Y.LOADED ? (0, k.Gq)(t) : true, Y = true !== p;
+    }, [t]), k = (0, j.XX)(t, _), U = (0, j.Dv)(t), G = p ? "".concat(k) : "".concat(k, " ").concat(U), Z = (null == n ? true : n.state) === y.Y.LOADED ? (0, j.Gq)(t) : true, Y = true !== p;
     return (0, r.jsx)(en, {
       message: t,
       avatar: P,
@@ -500,7 +500,7 @@ let ea = Chunk647438.memo(function(e) {
           hideGuildTag: h
         }))]
       }),
-      usernameSpanId: (0, k.XX)(t, _),
+      usernameSpanId: (0, j.XX)(t, _),
       usernameClassName: o()(H.headerText, {
         [H.hasRoleIcon]: 0 !== x,
         [H.hasBadges]: null != L || M.length > 0

@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 358924, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => ey
+  Z: () => ev
 }), require("./388685.js"), require("./472816.js"), require("./794429.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -195,7 +195,7 @@ let eo = [14, 14, 12, 12, 10, 8, 6],
     } = (0, j.IX)(r), o = (0, S.Z)({
       application: a,
       analyticsLocations: n
-    }), s = (0, k.Nj)(u.z.CLOUD_PLAY_NEW_BADGE), c = (0, V.F)(r);
+    }), s = (0, M.Nj)(u.z.CLOUD_PLAY_NEW_BADGE), c = (0, V.F)(r);
     return null == o || c ? null : (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(ep, {
         className: ea.cloudPlaySectionSeparator
@@ -385,7 +385,7 @@ eO.Header = eE, eO.Body = e => {
     partySize: a,
     members: s,
     onChannelContextMenu: c
-  } = e, u = l.useRef(null), d = (0, x.ZP)(r, true), p = (0, q.EB)(n, 32), g = (0, q.gM)(n);
+  } = e, u = l.useRef(null), d = (0, Z.ZP)(r, true), p = (0, q.EB)(n, 32), g = (0, q.gM)(n);
   return (0, i.jsx)(ed, {
     children: (0, i.jsxs)("div", {
       className: ea.voiceSection,
@@ -446,7 +446,7 @@ eO.Header = eE, eO.Body = e => {
     activity: a
   } = e, {
     analyticsLocations: o
-  } = (0, N.ZP)(T.Z.NOW_PLAYING_ITEM_GAME_SECTION);
+  } = (0, T.ZP)(N.Z.NOW_PLAYING_ITEM_GAME_SECTION);
   return (0, i.jsxs)(ed, {
     children: [(0, i.jsxs)("div", {
       className: ea.gameSection,
@@ -475,7 +475,7 @@ eO.Header = eE, eO.Body = e => {
     user: u
   } = e, {
     analyticsLocations: d
-  } = (0, N.ZP)(T.Z.NOW_PLAYING_ITEM_RICH_PRESENCE_SECTION), {
+  } = (0, T.ZP)(N.Z.NOW_PLAYING_ITEM_RICH_PRESENCE_SECTION), {
     data: p
   } = (0, j.IX)(s.application_id), {
     assets: f,
@@ -522,7 +522,7 @@ eO.Header = eE, eO.Body = e => {
           let {
             timestamps: e
           } = s;
-          return null == e || !(0, y.Z)(s) || (0, v.Z)(s) ? null : ec((0, O.Z)(s) ? (0, i.jsx)(eu, {
+          return null == e || !(0, v.Z)(s) || (0, y.Z)(s) ? null : ec((0, O.Z)(s) ? (0, i.jsx)(eu, {
             timestamps: e
           }) : (0, i.jsx)(B.ZP, {
             start: e.start,
@@ -678,8 +678,8 @@ eO.Header = eE, eO.Body = e => {
         className: ea.applicationStreamingAvatar
       }), (0, i.jsxs)("div", {
         children: [es(en.ZP.getName(l)), ec(g)]
-      }), (0, i.jsx)(Z.ZP, {
-        size: Z.ZP.Sizes.SMALL
+      }), (0, i.jsx)(A.ZP, {
+        size: A.ZP.Sizes.SMALL
       })]
     }), h]
   })
@@ -700,9 +700,9 @@ eO.Header = eE, eO.Body = e => {
     p = (0, m.O)(),
     {
       analyticsLocations: h
-    } = (0, N.ZP)();
+    } = (0, T.ZP)();
   if (null == u) return null;
-  let g = A.Z.getApplication(u);
+  let g = x.Z.getApplication(u);
   if (null == g) return null;
   let b = null != t.created_at && t.created_at > 0 ? {
       start: t.created_at
@@ -711,9 +711,9 @@ eO.Header = eE, eO.Body = e => {
   return (0, i.jsxs)(ed, {
     children: [(0, i.jsxs)("div", {
       className: ea.embeddedActivityTopRow,
-      children: [(0, i.jsx)(M.Z, {
+      children: [(0, i.jsx)(k.Z, {
         game: g,
-        size: M.A.XSMALL,
+        size: k.A.XSMALL,
         className: ea.embeddedActivityIcon
       }), (0, i.jsx)("div", {
         className: ea.embeddedActivityName,
@@ -763,4 +763,4 @@ eO.Header = eE, eO.Body = e => {
     })]
   })
 };
-let ey = eO
+let ev = eO

@@ -97,7 +97,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk345909 = require("./345909.js"),
   Chunk202323 = require("./202323.js");
 
-function ek(e, t, n) {
+function ej(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -113,7 +113,7 @@ function eU(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      ek(e, t, n[t])
+      ej(e, t, n[t])
     })
   }
   return e
@@ -174,7 +174,7 @@ let eZ = () => {
       numOfPendingFamilyRequests: T,
       isOverlaySupported: S,
       isClipsBetaTagShowing: M = false,
-      shouldMergeGameSettings: ek,
+      shouldMergeGameSettings: ej,
       isKeywordFilteringEnabled: eG,
       isStaff: eW,
       isInappropriateConversationWarningEnabled: eK,
@@ -314,7 +314,7 @@ let eZ = () => {
         label: eL.intl.string(eL.t.URyqtL),
         ariaLabel: eL.intl.string(eL.t.URyqtL),
         element: eS.Z,
-        predicate: () => ek
+        predicate: () => ej
       },
       [eR.s6.GAMES_MY_GAMES]: {
         section: ew.oAB.GAMES,
@@ -651,7 +651,7 @@ let eZ = () => {
         ariaLabel: eL.intl.string(eL.t.z2jK6e),
         icon: M ? (0, r.jsx)(y.Z, {}) : true,
         element: O.Z,
-        predicate: () => !ek,
+        predicate: () => !ej,
         url: ew.Z5c.SETTINGS("clips")
       },
       [eR.s6.RESTRICTED_USERS]: {
@@ -683,7 +683,7 @@ let eZ = () => {
         searchableTitles: [eL.intl.string(eL.t.Ipxkoq)],
         label: eL.intl.string(eL.t.Ipxkoq),
         element: q.Z,
-        className: ej.premiumTab
+        className: ek.premiumTab
       },
       [eR.s6.GUILD_BOOSTING]: {
         section: ew.oAB.GUILD_BOOSTING,
@@ -1235,7 +1235,7 @@ let eZ = () => {
         icon: (0, r.jsx)("img", {
           alt: "",
           src: n(348621),
-          className: ej.poggermodeIcon
+          className: ek.poggermodeIcon
         })
       },
       [eR.s6.CHAT]: {
@@ -1486,7 +1486,7 @@ let eZ = () => {
         section: ew.oAB.NOTIFICATIONS,
         searchableTitles: [eL.intl.string(eL.t.wtk08f)],
         parent: eR.s6.NOTIFICATIONS,
-        predicate: () => (0, j.JN)("SettingsRendererConfig")
+        predicate: () => (0, k.JN)("SettingsRendererConfig")
       },
       [eR.s6.NOTIFICATIONS_FRIEND_ONLINE]: {
         section: ew.oAB.NOTIFICATIONS,
@@ -1631,23 +1631,23 @@ let eZ = () => {
         label: eL.intl.string(eL.t.Cq98yM),
         ariaLabel: eL.intl.string(eL.t.Cq98yM),
         element: $.Z,
-        predicate: () => !ek,
+        predicate: () => !ej,
         url: ew.Z5c.SETTINGS("activity-privacy")
       },
       [eR.s6.ACTIVITY_PRIVACY_STATUS]: {
-        section: ek ? ew.oAB.GAMES : ew.oAB.ACTIVITY_PRIVACY,
+        section: ej ? ew.oAB.GAMES : ew.oAB.ACTIVITY_PRIVACY,
         searchableTitles: [eL.intl.string(eL.t["8ka8lp"])],
-        parent: ek ? eR.s6.GAMES_ACTIVITY_PRIVACY : eR.s6.ACTIVITY_PRIVACY
+        parent: ej ? eR.s6.GAMES_ACTIVITY_PRIVACY : eR.s6.ACTIVITY_PRIVACY
       },
       [eR.s6.ACTIVITY_PRIVACY_RICH_PRESENCE]: {
-        section: ek ? ew.oAB.GAMES : ew.oAB.ACTIVITY_PRIVACY,
+        section: ej ? ew.oAB.GAMES : ew.oAB.ACTIVITY_PRIVACY,
         searchableTitles: [eL.intl.string(eL.t.VOszPD)],
-        parent: ek ? eR.s6.GAMES_ACTIVITY_PRIVACY : eR.s6.ACTIVITY_PRIVACY
+        parent: ej ? eR.s6.GAMES_ACTIVITY_PRIVACY : eR.s6.ACTIVITY_PRIVACY
       },
       [eR.s6.ACTIVITY_PRIVACY_TOS]: {
-        section: ek ? ew.oAB.GAMES : ew.oAB.ACTIVITY_PRIVACY,
+        section: ej ? ew.oAB.GAMES : ew.oAB.ACTIVITY_PRIVACY,
         searchableTitles: [eR.CF],
-        parent: ek ? eR.s6.GAMES_ACTIVITY_PRIVACY : eR.s6.ACTIVITY_PRIVACY
+        parent: ej ? eR.s6.GAMES_ACTIVITY_PRIVACY : eR.s6.ACTIVITY_PRIVACY
       },
       [eR.s6.ACTIVITY_PRIVACY_STATUS_DISPLAY]: {
         section: ew.oAB.ACTIVITY_PRIVACY,
@@ -1659,14 +1659,14 @@ let eZ = () => {
         searchableTitles: [eL.intl.string(eL.t.AVDyEh)],
         label: eL.intl.string(eL.t.AVDyEh),
         element: ec.Z,
-        predicate: () => !ek && (0, eT.Jw)()
+        predicate: () => !ej && (0, eT.Jw)()
       },
       [eR.s6.OVERLAY]: {
         section: ew.oAB.OVERLAY,
         searchableTitles: [eL.intl.string(eL.t["9cb1U1"]), eL.intl.string(eL.t.HcoRu7)],
         label: eL.intl.string(eL.t["9cb1U1"]),
         element: ep.Z,
-        predicate: () => !ek && S
+        predicate: () => !ej && S
       },
       [eR.s6.CHANGELOG]: {
         section: "changelog",
@@ -1695,7 +1695,7 @@ let eZ = () => {
         searchableTitles: ["Experiments"],
         label: "Experiments",
         element: eI.Z,
-        predicate: () => k.Z.isDeveloper,
+        predicate: () => j.Z.isDeveloper,
         url: ew.Z5c.SETTINGS("experiments")
       },
       [eR.s6.DEVELOPER_OPTIONS]: {
@@ -1704,97 +1704,97 @@ let eZ = () => {
         label: "Developer Options",
         ariaLabel: "Developer Options",
         element: es.Z,
-        predicate: () => k.Z.isDeveloper
+        predicate: () => j.Z.isDeveloper
       },
       [eR.s6.DEVELOPER_OPTIONS_OVERRIDES_TAB]: {
         section: ew.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Overrides"],
         parent: eR.s6.DEVELOPER_OPTIONS,
-        predicate: () => k.Z.isDeveloper
+        predicate: () => j.Z.isDeveloper
       },
       [eR.s6.DEVELOPER_OPTIONS_FLAGS_TAB]: {
         section: ew.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Developer Options Flags"],
         parent: eR.s6.DEVELOPER_OPTIONS,
-        predicate: () => k.Z.isDeveloper
+        predicate: () => j.Z.isDeveloper
       },
       [eR.s6.DEVELOPER_OPTIONS_LOGGING_TAB]: {
         section: ew.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Logging"],
         parent: eR.s6.DEVELOPER_OPTIONS,
-        predicate: () => k.Z.isDeveloper
+        predicate: () => j.Z.isDeveloper
       },
       [eR.s6.DEVELOPER_OPTIONS_MANUAL_TRIGGERS_TAB]: {
         section: ew.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Manual Triggers"],
         parent: eR.s6.DEVELOPER_OPTIONS,
-        predicate: () => k.Z.isDeveloper
+        predicate: () => j.Z.isDeveloper
       },
       [eR.s6.DEVELOPER_OPTIONS_DESIGN_TOOLS_TAB]: {
         section: ew.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Design Tools"],
         parent: eR.s6.DEVELOPER_OPTIONS,
-        predicate: () => k.Z.isDeveloper
+        predicate: () => j.Z.isDeveloper
       },
       [eR.s6.DEVELOPER_OPTIONS_TRACING_REQUESTS]: {
         section: ew.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Tracing Requests"],
         parent: eR.s6.DEVELOPER_OPTIONS_FLAGS_TAB,
-        predicate: () => k.Z.isDeveloper
+        predicate: () => j.Z.isDeveloper
       },
       [eR.s6.DEVELOPER_OPTIONS_FORCED_CANARY]: {
         section: ew.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Forced Canary"],
         parent: eR.s6.DEVELOPER_OPTIONS_FLAGS_TAB,
-        predicate: () => k.Z.isDeveloper
+        predicate: () => j.Z.isDeveloper
       },
       [eR.s6.DEVELOPER_OPTIONS_LOG_KEYBOARD_MISMATCHES]: {
         section: ew.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Log Keyboard Mismatches"],
         parent: eR.s6.DEVELOPER_OPTIONS_FLAGS_TAB,
-        predicate: () => k.Z.isDeveloper
+        predicate: () => j.Z.isDeveloper
       },
       [eR.s6.DEVELOPER_OPTIONS_GATEWAY_EVENTS_TO_CONSOLE]: {
         section: ew.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Gateway Events To Console"],
         parent: eR.s6.DEVELOPER_OPTIONS_LOGGING_TAB,
-        predicate: () => k.Z.isDeveloper
+        predicate: () => j.Z.isDeveloper
       },
       [eR.s6.DEVELOPER_OPTIONS_OVERLAY_RPC_EVENTS_COMMANDS]: {
         section: ew.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Rpc Events Commands"],
         parent: eR.s6.DEVELOPER_OPTIONS_LOGGING_TAB,
-        predicate: () => k.Z.isDeveloper
+        predicate: () => j.Z.isDeveloper
       },
       [eR.s6.DEVELOPER_OPTIONS_ANALYTICS_EVENTS_LOGGING]: {
         section: ew.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Analytics Events Logging"],
         parent: eR.s6.DEVELOPER_OPTIONS_LOGGING_TAB,
-        predicate: () => k.Z.isDeveloper
+        predicate: () => j.Z.isDeveloper
       },
       [eR.s6.DEVELOPER_OPTIONS_ALWAYS_DELIVER]: {
         section: ew.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Always deliver ads"],
         parent: eR.s6.DEVELOPER_OPTIONS_FLAGS_TAB,
-        predicate: () => eW && k.Z.isDeveloper
+        predicate: () => eW && j.Z.isDeveloper
       },
       [eR.s6.DEVELOPER_OPTIONS_SOURCE_MAPS]: {
         section: ew.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Source Maps"],
         parent: eR.s6.DEVELOPER_OPTIONS_FLAGS_TAB,
-        predicate: () => k.Z.isDeveloper
+        predicate: () => j.Z.isDeveloper
       },
       [eR.s6.DEVELOPER_OPTIONS_ANALYTICS_DEBUGGER_VIEW]: {
         section: ew.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Analytics Debugger View"],
         parent: eR.s6.DEVELOPER_OPTIONS_LOGGING_TAB,
-        predicate: () => k.Z.isDeveloper
+        predicate: () => j.Z.isDeveloper
       },
       [eR.s6.DEVELOPER_OPTIONS_IDLE_STATUS_INDICATOR]: {
         section: ew.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Idle Status Indicator"],
         parent: eR.s6.DEVELOPER_OPTIONS_FLAGS_TAB,
-        predicate: () => eW && k.Z.isDeveloper
+        predicate: () => eW && j.Z.isDeveloper
       },
       [eR.s6.DEVELOPER_OPTIONS_ACCESSIBILITY_AUDITING]: {
         section: ew.oAB.DEVELOPER_OPTIONS,
@@ -1806,128 +1806,128 @@ let eZ = () => {
         section: ew.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["CSS Debugging"],
         parent: eR.s6.DEVELOPER_OPTIONS_DESIGN_TOOLS_TAB,
-        predicate: () => eW && k.Z.isDeveloper
+        predicate: () => eW && j.Z.isDeveloper
       },
       [eR.s6.DEVELOPER_OPTIONS_HIGHLIGHT_MANA_COMPONENTS]: {
         section: ew.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Highlight Mana Components"],
         parent: eR.s6.DEVELOPER_OPTIONS_DESIGN_TOOLS_TAB,
-        predicate: () => eW && k.Z.isDeveloper
+        predicate: () => eW && j.Z.isDeveloper
       },
       [eR.s6.DEVELOPER_OPTIONS_HIGHLIGHT_VOID_TOGGLEABLES]: {
         section: ew.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Highlight Void Toggleable Components"],
         parent: eR.s6.DEVELOPER_OPTIONS_DESIGN_TOOLS_TAB,
-        predicate: () => eW && k.Z.isDeveloper
+        predicate: () => eW && j.Z.isDeveloper
       },
       [eR.s6.DEVELOPER_OPTIONS_LAYOUT_DEBUGGING]: {
         section: ew.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Layout Debugging"],
         parent: eR.s6.DEVELOPER_OPTIONS_DESIGN_TOOLS_TAB,
-        predicate: () => eW && k.Z.isDeveloper
+        predicate: () => eW && j.Z.isDeveloper
       },
       [eR.s6.DEVELOPER_OPTIONS_LAYOUT_DEBUGGING_OPTIONS]: {
         section: ew.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Layout Debugging"],
         parent: eR.s6.DEVELOPER_OPTIONS_DESIGN_TOOLS_TAB,
-        predicate: () => eW && k.Z.isDeveloper && U.default.layoutDebuggingEnabled
+        predicate: () => eW && j.Z.isDeveloper && U.default.layoutDebuggingEnabled
       },
       [eR.s6.DEVELOPER_OPTIONS_PREVIEW_UNPUBLISHED_COLLECTIONS]: {
         section: ew.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Preview Unpublished Collections"],
         parent: eR.s6.DEVELOPER_OPTIONS_FLAGS_TAB,
-        predicate: () => eW && k.Z.isDeveloper
+        predicate: () => eW && j.Z.isDeveloper
       },
       [eR.s6.DEVELOPER_OPTIONS_DISABLE_APP_COLLECTIONS_CACHE]: {
         section: ew.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Disable App Collections Cache"],
         parent: eR.s6.DEVELOPER_OPTIONS_FLAGS_TAB,
-        predicate: () => eW && k.Z.isDeveloper
+        predicate: () => eW && j.Z.isDeveloper
       },
       [eR.s6.DEVELOPER_OPTIONS_OVERRIDE_CLIENT_SIDE]: {
         section: ew.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Override Client Side"],
         parent: eR.s6.DEVELOPER_OPTIONS_OVERRIDES_TAB,
-        predicate: () => k.Z.isDeveloper
+        predicate: () => j.Z.isDeveloper
       },
       [eR.s6.DEVELOPER_OPTIONS_OVERRIDE_CLIENT_SIDE_PREMIUM_TYPE]: {
         section: ew.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Override Client Side Premium Type"],
         parent: eR.s6.DEVELOPER_OPTIONS_OVERRIDE_CLIENT_SIDE,
-        predicate: () => k.Z.isDeveloper
+        predicate: () => j.Z.isDeveloper
       },
       [eR.s6.DEVELOPER_OPTIONS_OVERRIDE_CLIENT_SIDE_ACCOUNT_CREATED_DATA]: {
         section: ew.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Override Client Side Account Created Data"],
         parent: eR.s6.DEVELOPER_OPTIONS_OVERRIDE_CLIENT_SIDE,
-        predicate: () => k.Z.isDeveloper
+        predicate: () => j.Z.isDeveloper
       },
       [eR.s6.DEVELOPER_OPTIONS_OVERRIDE_OPEN_OVERLAY]: {
         section: ew.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Open Overlay"],
         parent: eR.s6.DEVELOPER_OPTIONS_MANUAL_TRIGGERS_TAB,
-        predicate: () => k.Z.isDeveloper
+        predicate: () => j.Z.isDeveloper
       },
       [eR.s6.DEVELOPER_OPTIONS_RESET_SOCKET]: {
         section: ew.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Reset Socket"],
         parent: eR.s6.DEVELOPER_OPTIONS_MANUAL_TRIGGERS_TAB,
-        predicate: () => k.Z.isDeveloper
+        predicate: () => j.Z.isDeveloper
       },
       [eR.s6.DEVELOPER_OPTIONS_CLEAR_CACHES]: {
         section: ew.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Clear Caches"],
         parent: eR.s6.DEVELOPER_OPTIONS_FLAGS_TAB,
-        predicate: () => m.q && k.Z.isDeveloper
+        predicate: () => m.q && j.Z.isDeveloper
       },
       [eR.s6.DEVELOPER_OPTIONS_SHOW_TOTP_SUCCESS]: {
         section: ew.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Show TOTP Success"],
         parent: eR.s6.DEVELOPER_OPTIONS_MANUAL_TRIGGERS_TAB,
-        predicate: () => k.Z.isDeveloper
+        predicate: () => j.Z.isDeveloper
       },
       [eR.s6.DEVELOPER_OPTIONS_CRASHES]: {
         section: ew.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Crashes"],
         parent: eR.s6.DEVELOPER_OPTIONS_MANUAL_TRIGGERS_TAB,
-        predicate: () => k.Z.isDeveloper
+        predicate: () => j.Z.isDeveloper
       },
       [eR.s6.DEVELOPER_OPTIONS_SURVEY_OVERRIDE]: {
         section: ew.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Survey Override"],
         parent: eR.s6.DEVELOPER_OPTIONS_OVERRIDES_TAB,
-        predicate: () => k.Z.isDeveloper
+        predicate: () => j.Z.isDeveloper
       },
       [eR.s6.DEVELOPER_OPTIONS_CHANGELOG_OVERRIDE]: {
         section: ew.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Changelog Override"],
         parent: eR.s6.DEVELOPER_OPTIONS_OVERRIDES_TAB,
-        predicate: () => k.Z.isDeveloper
+        predicate: () => j.Z.isDeveloper
       },
       [eR.s6.DEVELOPER_OPTIONS_BUILD_OVERRIDE]: {
         section: ew.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Build Override"],
         parent: eR.s6.DEVELOPER_OPTIONS_OVERRIDES_TAB,
-        predicate: () => k.Z.isDeveloper
+        predicate: () => j.Z.isDeveloper
       },
       [eR.s6.DEVELOPER_OPTIONS_PREVENT_POPOUT_CLOSE]: {
         section: ew.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Prevent Popouts From Closing Automatically"],
         parent: eR.s6.DEVELOPER_OPTIONS_FLAGS_TAB,
-        predicate: () => k.Z.isDeveloper
+        predicate: () => j.Z.isDeveloper
       },
       [eR.s6.DEVELOPER_OPTIONS_DISABLE_ALIGN_CHAT_INPUT]: {
         section: ew.oAB.DEVELOPER_OPTIONS,
         searchableTitles: ["Disable Align Chat Input"],
         parent: eR.s6.DEVELOPER_OPTIONS_FLAGS_TAB,
-        predicate: () => k.Z.isDeveloper
+        predicate: () => j.Z.isDeveloper
       },
       [eR.s6.TEMP_DEVELOPER_EDUCATION_SIDEBAR_ITEM]: {
         section: f.ID.CUSTOM,
         searchableTitles: ev.Y,
         label: "Developer Education",
         element: ev.$,
-        predicate: () => k.Z.isDeveloper
+        predicate: () => j.Z.isDeveloper
       },
       [eR.s6.LOGOUT]: {
         section: "logout",

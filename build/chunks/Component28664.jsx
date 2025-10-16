@@ -104,7 +104,7 @@ function y(e) {
     {
       defaultLayerContext: M
     } = (0, o.ZFG)(),
-    j = i.useMemo(() => null != b ? b : null == p || "" === p ? null : null != m && "" !== m ? (0, r.jsxs)("div", {
+    k = i.useMemo(() => null != b ? b : null == p || "" === p ? null : null != m && "" !== m ? (0, r.jsxs)("div", {
       className: _.tooltipWithShortcut,
       children: [(0, r.jsx)(s.Text, {
         variant: "text-sm/medium",
@@ -113,8 +113,8 @@ function y(e) {
         shortcut: m
       })]
     }) : p, [p, m, b]);
-  if (null == j || "string" == typeof j && "" === j) return n;
-  let k = null != N ? N : (0, c.Sw)(p);
+  if (null == k || "string" == typeof k && "" === k) return n;
+  let j = null != N ? N : (0, c.Sw)(p);
   if (y) {
     let e = g(h({}, L), {
       onFocus: (0, c.tS)(L.onFocus, e => {
@@ -151,19 +151,19 @@ function y(e) {
     isRendered: true,
     targetElementRef: P.targetElementRef,
     id: w,
-    content: j,
+    content: k,
     position: v,
     align: I,
     spacing: T,
     caretConfig: C,
     layerContext: null != S ? S : M,
     animationStyle: e,
-    positionKey: k
+    positionKey: j
   }) : null);
   return (0, r.jsxs)(r.Fragment, {
-    children: [t, null != j && "" !== j ? (0, r.jsx)(a.n, {
+    children: [t, null != k && "" !== k ? (0, r.jsx)(a.n, {
       id: w,
-      children: j
+      children: k
     }) : null, U]
   })
 }

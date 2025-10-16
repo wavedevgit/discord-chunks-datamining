@@ -190,12 +190,12 @@ var m = {
       return t ? t + " " + r : r
     }, "")
   },
-  j = function(e, t) {
+  k = function(e, t) {
     return true === t && (t = {}), Object.keys(e).reduce(function(t, n) {
       return t[O[n] || n] = e[n], t
     }, t)
   },
-  k = function(e, t) {
+  j = function(e, t) {
     return t.map(function(t, n) {
       var i, a = ((i = {
         key: n
@@ -216,7 +216,7 @@ var m = {
             var e, n, i, a;
             return n = t.titleAttributes, (i = {
               key: e = t.title
-            })["data-rh"] = true, a = j(n, i), [r.createElement(m.TITLE, a, e)]
+            })["data-rh"] = true, a = k(n, i), [r.createElement(m.TITLE, a, e)]
           }, toString: function() {
             return function(e, t, n, r) {
               var i = M(n),
@@ -229,7 +229,7 @@ var m = {
       case "htmlAttributes":
         return {
           toComponent: function() {
-            return j(t)
+            return k(t)
           }, toString: function() {
             return M(t)
           }
@@ -237,7 +237,7 @@ var m = {
       default:
         return {
           toComponent: function() {
-            return k(e, t)
+            return j(e, t)
           }, toString: function() {
             return function(e, t, n) {
               return t.reduce(function(t, r) {
@@ -286,7 +286,7 @@ var m = {
         return {
           priorityMethods: {
             toComponent: function() {
-              return [].concat(k(m.META, i.priority), k(m.LINK, a.priority), k(m.SCRIPT, o.priority))
+              return [].concat(j(m.META, i.priority), j(m.LINK, a.priority), j(m.SCRIPT, o.priority))
             },
             toString: function() {
               return U(m.META, i.priority, r) + " " + U(m.LINK, a.priority, r) + " " + U(m.SCRIPT, o.priority, r)

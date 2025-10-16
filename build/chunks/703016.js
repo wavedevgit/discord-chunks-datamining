@@ -31,41 +31,41 @@ var Chunk913527 = require("./913527.js"),
   Chunk653477 = require("./653477.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let x = [],
-  Z = null,
+let Z = [],
+  A = null,
   w = null,
   L = null,
   R = /\|\|([\s\S]+?)\|\|/g;
 
 function D(e, t, n, r) {
   let l = _.Z.getGuild(n),
-    a = e.replace(R, A.intl.string(A.t["F+x38P"])).replace(/<@!?(\d+)>/g, (e, t) => {
+    a = e.replace(R, x.intl.string(x.t["F+x38P"])).replace(/<@!?(\d+)>/g, (e, t) => {
       var r;
       let i = C.default.getUser(t);
       return null == i ? e : null != (r = m.ZP.getNick(n, i.id)) ? r : S.ZP.getName(i)
     }).replace(/<@&?(\d+)>/g, (e, t) => {
       let n = null != l ? b.Z.getRole(l.id, t) : null;
-      return null != n && null != n.name ? n.name : A.intl.string(A.t.dRcLAw)
+      return null != n && null != n.name ? n.name : x.intl.string(x.t.dRcLAw)
     }).replace(/<#(\d+)>/g, (e, t) => {
       let n = g.Z.getChannel(t);
-      return null == n ? e : (0, s.F6)(n, C.default, y.Z)
-    }).replace(/<a?:(\w+):(\d+)>/g, (e, t) => "".concat(A.intl.string(A.t.sMOuub), " ").concat(t)).replace(/<\/([^\s]+?):(\d+)>/g, (e, t) => "/".concat(t)).replace(/<t:(\d+):([A-Z]|[a-z])>/g, (e, t, n) => {
+      return null == n ? e : (0, s.F6)(n, C.default, v.Z)
+    }).replace(/<a?:(\w+):(\d+)>/g, (e, t) => "".concat(x.intl.string(x.t.sMOuub), " ").concat(t)).replace(/<\/([^\s]+?):(\d+)>/g, (e, t) => "/".concat(t)).replace(/<t:(\d+):([A-Z]|[a-z])>/g, (e, t, n) => {
       let r = c.Qh[n],
         l = 1e3 * parseInt(t, 10),
         a = i()(l);
       return null != r ? r(a) : a.format()
     });
-  return null == r ? A.intl.formatToPlainString(A.t["uIj77+"], {
+  return null == r ? x.intl.formatToPlainString(x.t["uIj77+"], {
     username: t,
     body: a
-  }) : A.intl.formatToPlainString(A.t["Ix4H+v"], {
+  }) : x.intl.formatToPlainString(x.t["Ix4H+v"], {
     username: t,
     body: a,
     replyUsername: r
   })
 }
 
-function k() {
+function M() {
   if (!Chunk419363.Zh) returnfalse;
   let e = Chunk706454.default.locale;
   if (null == L) {
@@ -75,14 +75,14 @@ function k() {
   let n = L.filter(t => t.lang === e || t.lang.slice(0, e.length) === e);
   w = require.length > 0 ? require[0] : null
 }
-async function M(e, t, n, r, i) {
+async function k(e, t, n, r, i) {
   let l = o.e6(e, n);
-  null !== l && (null == w && k(), t ? await (0, T.NB)() : null == Z || Z.removeEventListener("end", T.NB), l.addEventListener("end", T.NB), null != r && l.addEventListener("start", r), null != i && l.addEventListener("end", i), Z = l, o.iq(l, w))
+  null !== l && (null == w && M(), t ? await (0, N.NB)() : null == A || A.removeEventListener("end", N.NB), l.addEventListener("end", N.NB), null != r && l.addEventListener("start", r), null != i && l.addEventListener("end", i), A = l, o.iq(l, w))
 }
 
 function U(e, t, n, r, i) {
-  M(e, t, i, () => {
-    (0, T.Bo)(n, r)
+  k(e, t, i, () => {
+    (0, N.Bo)(n, r)
   })
 }
 
@@ -94,11 +94,11 @@ function G(e) {
     onStart: i,
     onEnd: l
   } = e;
-  M(t, n, r, i, l)
+  k(t, n, r, i, l)
 }
 
 function B() {
-  return null !== Z && Z.removeEventListener("end", Chunk196051.NB), Chunk419363.M9(), Z = null, true
+  return null !== A && A.removeEventListener("end", Chunk196051.NB), Chunk419363.M9(), A = null, true
 }
 
 function H(e) {
@@ -120,15 +120,15 @@ function V(e) {
   if (c || E.Z.isSelfDeaf()) returnfalse;
   let u = g.Z.getChannel(o);
   if (null == u) returnfalse;
-  let d = v.Z.getChannelId(),
+  let d = y.Z.getChannelId(),
     b = h.ZP.getCurrentSidebarChannelId(d),
     _ = o === d || o === b,
     C = p.OW.getSetting() && s.tts && _,
-    T = O.Z.getTTSType(),
-    N = (null == (t = s.author) ? true : t.id) !== f.default.getId() && (T === j.PrB.ALL_CHANNELS || T === j.PrB.SELECTED_CHANNEL && _);
-  if ((C || N) && !y.Z.isBlockedOrIgnoredForMessage(s)) {
-    if (x.indexOf(s.id) >= 0) returnfalse;
-    x.unshift(s.id) > 10 && x.pop();
+    N = O.Z.getTTSType(),
+    T = (null == (t = s.author) ? true : t.id) !== f.default.getId() && (N === j.PrB.ALL_CHANNELS || N === j.PrB.SELECTED_CHANNEL && _);
+  if ((C || T) && !v.Z.isBlockedOrIgnoredForMessage(s)) {
+    if (Z.indexOf(s.id) >= 0) returnfalse;
+    Z.unshift(s.id) > 10 && Z.pop();
     let e = u.getGuildId();
     if (null != e && I.ZP.getMutedChannels(e).has(o)) returnfalse;
     let t = null != (l = null != (i = m.ZP.getNick(e, null == (n = s.author) ? true : n.id)) ? i : S.ZP.getName(s.author)) ? l : "",
@@ -143,8 +143,8 @@ function F(e) {
   let {
     id: t,
     channelId: n
-  } = e, r = N.Z.currentMessage;
-  return null != r && t === r.messageId && n === r.channelId && ((0, T.NB)(), true)
+  } = e, r = T.Z.currentMessage;
+  return null != r && t === r.messageId && n === r.channelId && ((0, N.NB)(), true)
 }
 
 function z() {
@@ -152,6 +152,6 @@ function z() {
 }
 let W = {
   init() {
-    Chunk570140.Z.subscribe("SPEAK_TEXT", G), Chunk570140.Z.subscribe("SPEAK_MESSAGE", H), Chunk570140.Z.subscribe("STOP_SPEAKING", B), Chunk570140.Z.subscribe("MESSAGE_CREATE", V), Chunk570140.Z.subscribe("MESSAGE_DELETE", F), Chunk570140.Z.subscribe("AUDIO_TOGGLE_SELF_DEAF", z), Chunk570140.Z.subscribe("USER_SETTINGS_PROTO_UPDATE", k), (0, Chunk241601.Ql)(k)
+    Chunk570140.Z.subscribe("SPEAK_TEXT", G), Chunk570140.Z.subscribe("SPEAK_MESSAGE", H), Chunk570140.Z.subscribe("STOP_SPEAKING", B), Chunk570140.Z.subscribe("MESSAGE_CREATE", V), Chunk570140.Z.subscribe("MESSAGE_DELETE", F), Chunk570140.Z.subscribe("AUDIO_TOGGLE_SELF_DEAF", z), Chunk570140.Z.subscribe("USER_SETTINGS_PROTO_UPDATE", M), (0, Chunk241601.Ql)(M)
   }
 }

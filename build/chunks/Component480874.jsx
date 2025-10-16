@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 480874, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => T
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -28,27 +28,27 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk393272 = require("./393272.js");
 
-function N() {
+function T() {
   let e = Chunk647438.useRef(null),
     t = (0, Chunk727813.Z)(),
     n = (0, Chunk355350.w)(),
     l = (0, Chunk26373.V)(),
-    N = (0, Chunk183126.N)(),
+    T = (0, Chunk183126.N)(),
     P = (0, Chunk209613.Z)("message-requests-spam-list"),
     {
       channelId: j
     } = (0, Chunk488634._)(),
-    A = Chunk647438.useCallback(() => {
+    x = Chunk647438.useCallback(() => {
       (0, Chunk481060.showToast)((0, Chunk481060.createToast)(Chunk388032.intl.string(Chunk388032.t.EDYbS0), Chunk481060.ToastType.FAILURE))
     }, []),
     {
-      rejectAll: x
+      rejectAll: Z
     } = (0, Chunk486622.m)({
-      onError: A
+      onError: x
     }),
-    Z = Chunk647438.useCallback(() => {
-      x(exports.map(e => e.channel.id))
-    }, [exports, x]);
+    A = Chunk647438.useCallback(() => {
+      Z(exports.map(e => e.channel.id))
+    }, [exports, Z]);
   (0, Chunk493773.ZP)(() => {
     Chunk626135.default.track(Chunk981631.rMx.SPAM_MESSAGE_REQUESTS_VIEWED, {
       num_spam_message_requests: require
@@ -61,11 +61,11 @@ function N() {
       let {
         row: o
       } = e, s = t[o], c = null == (i = t[o + 1]) || null == (n = i.channel) ? true : n.id, u = s.channel.id;
-      return (0, r.jsx)(v.Z, {
+      return (0, r.jsx)(y.Z, {
         index: o,
         className: a()({
-          [T.selected]: null != j && j === u,
-          [T.siblingSelected]: null != j && j === c
+          [N.selected]: null != j && j === u,
+          [N.siblingSelected]: null != j && j === c
         }),
         channel: s.channel,
         user: s.user,
@@ -76,7 +76,7 @@ function N() {
       className: Chunk393272.sectionTitle,
       children: [Chunk388032.intl.format(Chunk388032.t.C79Edn, {
         count: require
-      }), N && require > 0 ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+      }), T && require > 0 ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
         children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
           className: Chunk393272.titleDivider,
           variant: "eyebrow",
@@ -86,11 +86,11 @@ function N() {
         }), (0, Chunk951288.jsx)(Chunk481060.Avr, {
           textVariant: "text-sm/normal",
           text: Chunk388032.intl.string(Chunk388032.t.p6t7RE),
-          onClick: Z,
+          onClick: A,
           "aria-label": Chunk388032.intl.string(Chunk388032.t.p6t7RE)
         })]
       }) : null]
-    }, "message-requests-spam-title"), [require, Z, N]);
+    }, "message-requests-spam-title"), [require, A, T]);
   return 0 === exports.length ? (0, Chunk951288.jsx)(Chunk307947.Z, {
     section: Chunk687683.pS.SPAM
   }) : (0, Chunk951288.jsx)(Chunk91192.bG, {
@@ -133,7 +133,7 @@ function N() {
           }
           return e
         }({
-          className: T.list,
+          className: N.list,
           innerRole: l,
           innerAriaLabel: S.intl.string(S.t.e7GWjY),
           ref: t => {

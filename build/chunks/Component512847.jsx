@@ -31,20 +31,20 @@ var Chunk951288 = require("./951288.js"),
   Chunk823379 = require("./823379.js"),
   Chunk981631 = require("./981631.js");
 
-function A(e, t, n, r) {
+function x(e, t, n, r) {
   i.useEffect(() => {
     let i = t(),
       l = new a.Fh(e, () => {
         let e = t(),
           l = n(i, e);
-        null == l || v.Z.isSoundDisabled(l) || (0, f.GN)(l, null != r ? r : .4), i = e
+        null == l || y.Z.isSoundDisabled(l) || (0, f.GN)(l, null != r ? r : .4), i = e
       });
     return l.attach("useSound"), () => l.detach()
   })
 }
 
-function x() {
-  return A([Chunk131951.Z, Chunk944486.Z], () => ({
+function Z() {
+  return x([Chunk131951.Z, Chunk944486.Z], () => ({
     inVoiceChannel: null != Chunk944486.Z.getVoiceChannelId(),
     selfMute: Chunk131951.Z.isSelfMute(),
     selfDeaf: Chunk131951.Z.isSelfDeaf(),
@@ -59,12 +59,12 @@ function x() {
       shouldSkipMuteUnmuteSound: a
     } = t;
     if (e.selfDeaf !== i) return i ? "deafen" : "undeafen";
-    if (l && (n || e.audioPermissionReady) && e.selfMute !== r) return a ? void y.Z.notifyMuteUnmuteSoundWasSkipped() : r ? "mute" : "unmute"
+    if (l && (n || e.audioPermissionReady) && e.selfMute !== r) return a ? void v.Z.notifyMuteUnmuteSoundWasSkipped() : r ? "mute" : "unmute"
   }), null
 }
 
-function Z() {
-  return A([Chunk131951.Z, Chunk944486.Z], () => ({
+function A() {
+  return x([Chunk131951.Z, Chunk944486.Z], () => ({
     videoEnabled: Chunk131951.Z.isVideoEnabled(),
     inVoiceChannel: null != Chunk944486.Z.getVoiceChannelId()
   }), (e, t) => {
@@ -82,7 +82,7 @@ function Z() {
 }
 
 function w() {
-  return A([Chunk592125.Z, Chunk19780.Z, Chunk944486.Z, Chunk258609.default], () => {
+  return x([Chunk592125.Z, Chunk19780.Z, Chunk944486.Z, Chunk258609.default], () => {
     let e = Chunk592125.Z.getChannel(Chunk944486.Z.getVoiceChannelId()),
       t = null == module ? true : module.type,
       n = null == module ? true : module.getGuildId(),
@@ -116,16 +116,16 @@ function w() {
 }
 
 function L() {
-  return A([Chunk606304.Z], () => Chunk606304.Z.isCurrentUserSpeaking(), (e, t) => {
+  return x([Chunk606304.Z], () => Chunk606304.Z.isCurrentUserSpeaking(), (e, t) => {
     if (e !== t) {
-      let e = y.Z.isSelfMute();
-      if (y.Z.getMode() === j.pM4.PUSH_TO_TALK && !e) return t ? "ptt_start" : "ptt_stop"
+      let e = v.Z.isSelfMute();
+      if (v.Z.getMode() === j.pM4.PUSH_TO_TALK && !e) return t ? "ptt_start" : "ptt_stop"
     }
   }), null
 }
 
 function R() {
-  return A([Chunk131951.Z], () => Chunk131951.Z.getActiveVoiceFilter(), (e, t) => {
+  return x([Chunk131951.Z], () => Chunk131951.Z.getActiveVoiceFilter(), (e, t) => {
     if (e !== t)
       if (null != t) return null != e ? "voice_filter_swap" : "voice_filter_on";
       else return "voice_filter_off"
@@ -133,31 +133,31 @@ function R() {
 }
 
 function D() {
-  return A([Chunk131951.Z], () => Chunk131951.Z.isSelfMutedTemporarily(), (e, t) => {
+  return x([Chunk131951.Z], () => Chunk131951.Z.isSelfMutedTemporarily(), (e, t) => {
     if (e !== t) {
-      let e = y.Z.isSelfMute();
-      if (y.Z.getMode() === j.pM4.VOICE_ACTIVITY && !e) return t ? "ptt_stop" : "ptt_start"
-    }
-  }), null
-}
-
-function k() {
-  return A([Chunk606304.Z], () => Chunk606304.Z.isCurrentUserPrioritySpeaker(), (e, t) => {
-    if (e !== t) {
-      let e = y.Z.isSelfMute();
-      if (y.Z.getMode() === j.pM4.VOICE_ACTIVITY && !e) return t ? "ptt_start" : "ptt_stop"
+      let e = v.Z.isSelfMute();
+      if (v.Z.getMode() === j.pM4.VOICE_ACTIVITY && !e) return t ? "ptt_stop" : "ptt_start"
     }
   }), null
 }
 
 function M() {
-  return A([Chunk979651.Z], () => Chunk979651.Z.userHasBeenMovedVersion, (e, t) => {
+  return x([Chunk606304.Z], () => Chunk606304.Z.isCurrentUserPrioritySpeaker(), (e, t) => {
+    if (e !== t) {
+      let e = v.Z.isSelfMute();
+      if (v.Z.getMode() === j.pM4.VOICE_ACTIVITY && !e) return t ? "ptt_start" : "ptt_stop"
+    }
+  }), null
+}
+
+function k() {
+  return x([Chunk979651.Z], () => Chunk979651.Z.userHasBeenMovedVersion, (e, t) => {
     if (e !== t) return "user_moved"
   }), null
 }
 
 function U() {
-  return A([Chunk944486.Z, Chunk979651.Z], () => {
+  return x([Chunk944486.Z, Chunk979651.Z], () => {
     let e = Chunk944486.Z.getVoiceChannelId();
     if (null == module) return Chunk590415.xO.NONE;
     let t = Chunk979651.Z.getVoiceStateForChannel(module);
@@ -168,7 +168,7 @@ function U() {
 }
 
 function G() {
-  return A([Chunk944486.Z, Chunk199902.Z, Chunk314897.default, Chunk979651.Z, Chunk592125.Z], () => {
+  return x([Chunk944486.Z, Chunk199902.Z, Chunk314897.default, Chunk979651.Z, Chunk592125.Z], () => {
     let e, t, n = Chunk944486.Z.getVoiceChannelId(),
       r = Chunk314897.default.getId(),
       i = [],
@@ -222,7 +222,7 @@ function G() {
 }
 
 function B() {
-  return A([Chunk944486.Z, Chunk317381.ZP, Chunk591472.Z, Chunk314897.default], () => {
+  return x([Chunk944486.Z, Chunk317381.ZP, Chunk591472.Z, Chunk314897.default], () => {
     let e = Chunk944486.Z.getVoiceChannelId(),
       t = Chunk944486.Z.getChannelId(),
       n = Chunk317381.ZP.getConnectedActivityLocation(),
@@ -269,7 +269,7 @@ function B() {
 }
 
 function H() {
-  return A([Chunk106301.Z, Chunk944486.Z], () => ({
+  return x([Chunk106301.Z, Chunk944486.Z], () => ({
     hangStatus: Chunk106301.Z.getCurrentHangStatus(),
     customHangStatus: Chunk106301.Z.getCustomHangStatus(),
     gameActivityHangStatus: Chunk106301.Z.getGameActivityHangStatus(),
@@ -287,6 +287,6 @@ function H() {
 
 function V() {
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-    children: [(0, Chunk951288.jsx)(x, {}), (0, Chunk951288.jsx)(Z, {}), (0, Chunk951288.jsx)(w, {}), (0, Chunk951288.jsx)(L, {}), (0, Chunk951288.jsx)(D, {}), (0, Chunk951288.jsx)(M, {}), (0, Chunk951288.jsx)(G, {}), (0, Chunk951288.jsx)(U, {}), (0, Chunk951288.jsx)(B, {}), (0, Chunk951288.jsx)(R, {}), (0, Chunk951288.jsx)(k, {}), (0, Chunk951288.jsx)(H, {})]
+    children: [(0, Chunk951288.jsx)(Z, {}), (0, Chunk951288.jsx)(A, {}), (0, Chunk951288.jsx)(w, {}), (0, Chunk951288.jsx)(L, {}), (0, Chunk951288.jsx)(D, {}), (0, Chunk951288.jsx)(k, {}), (0, Chunk951288.jsx)(G, {}), (0, Chunk951288.jsx)(U, {}), (0, Chunk951288.jsx)(B, {}), (0, Chunk951288.jsx)(R, {}), (0, Chunk951288.jsx)(M, {}), (0, Chunk951288.jsx)(H, {})]
   })
 }

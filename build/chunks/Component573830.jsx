@@ -116,13 +116,13 @@ function w(e) {
   }), {
     inputProps: x,
     labelProps: M,
-    isPressed: j
+    isPressed: k
   } = (0, a.h)({
     id: m,
     isDisabled: n,
     "aria-describedby": v
   }, L, D), {
-    hoverProps: k,
+    hoverProps: j,
     isHovered: U
   } = (0, o.X)({
     isDisabled: n
@@ -134,7 +134,7 @@ function w(e) {
       duration: T.enabled ? 200 : 300
     },
     opacity: n ? .5 : 1,
-    state: j ? t ? R[R.length - 2] : N[1] : +!!t
+    state: k ? t ? R[R.length - 2] : N[1] : +!!t
   }, "animate-always"), et = function(e) {
     let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [...e].reverse();
     return t ? $.to({
@@ -152,7 +152,7 @@ function w(e) {
     offset: false,
     children: (0, r.jsxs)("label", b(g({}, M), {
       className: h.container,
-      children: [(0, r.jsx)(s.animated.div, b(g({}, k), {
+      children: [(0, r.jsx)(s.animated.div, b(g({}, j), {
         ref: S,
         className: h.switchIndicator,
         "data-size": "md",

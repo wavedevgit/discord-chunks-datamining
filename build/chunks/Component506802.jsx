@@ -2,7 +2,7 @@
 /** chunk id: 506802, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  aM: () => k,
+  aM: () => j,
   gq: () => D,
   jS: () => U,
   r6: () => S
@@ -177,7 +177,7 @@ let D = e => {
     scale: 1,
     opacity: 1
   },
-  j = e => {
+  k = e => {
     var {
       isVisible: t,
       onAnimationRest: n,
@@ -198,7 +198,7 @@ let D = e => {
       targetElementRef: r
     }, o)) : null)
   };
-class k extends(r = Chunk647438.Component) {
+class j extends(r = Chunk647438.Component) {
   static getDerivedStateFromProps(e, t) {
     return t.shouldShowTooltip && null == e.text ? {
       shouldShowTooltip: false
@@ -272,7 +272,7 @@ class k extends(r = Chunk647438.Component) {
       hideOnClick: p,
       tooltipPointerClassName: h
     } = this.props, m = (Chunk873546.tq || Chunk873546.Em) && true === Chunk846519 && Chunk377527, g = false !== Chunk258536 && !Chunk607070 || true === Chunk258536, E = this.shouldShowTooltip(this.props, this.state) && this.hasDomElement, b = null;
-    return b = module instanceof Function ? Chunk855711 ? module() : null : module, (0, Chunk951288.jsx)(j, {
+    return b = module instanceof Function ? Chunk855711 ? module() : null : module, (0, Chunk951288.jsx)(k, {
       disableTooltipPointerEvents: Chunk314910,
       targetElementRef: this.domElementRef,
       tooltipStyle: s,
@@ -336,7 +336,7 @@ class k extends(r = Chunk647438.Component) {
     })
   }
 }
-b(k, "Colors", S), b(k, "defaultProps", {
+b(j, "Colors", S), b(j, "defaultProps", {
   hideOnClick: true,
   position: "top",
   color: "primary",
@@ -352,7 +352,7 @@ let U = e => {
     className: n,
     element: r = "div"
   } = e, o = I(e, ["children", "className", "element"]);
-  return (0, i.jsx)(k, v(y({}, o), {
+  return (0, i.jsx)(j, v(y({}, o), {
     children: e => a.createElement(r, null != n ? v(y({}, e), {
       className: n
     }) : e, t)

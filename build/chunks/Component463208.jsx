@@ -182,10 +182,10 @@ function S(e) {
     size: L = "md",
     fullWidth: x = false,
     clearable: M = false,
-    showCharacterCount: j = false
-  } = e, k = y(e, ["disabled", "editable", "inputRef", "focusProps", "name", "type", "placeholder", "maxLength", "value", "defaultValue", "minLength", "error", "defaultDirty", "leading", "trailing", "validateOn", "size", "fullWidth", "clearable", "showCharacterCount"]), {
+    showCharacterCount: k = false
+  } = e, j = y(e, ["disabled", "editable", "inputRef", "focusProps", "name", "type", "placeholder", "maxLength", "value", "defaultValue", "minLength", "error", "defaultDirty", "leading", "trailing", "validateOn", "size", "fullWidth", "clearable", "showCharacterCount"]), {
     fieldProps: U
-  } = (0, s.XF_)(k), G = (0, _.m)({
+  } = (0, s.XF_)(j), G = (0, _.m)({
     validateOn: D,
     error: N,
     value: O,
@@ -197,20 +197,20 @@ function S(e) {
   } = G, Z = v(O, S), F = "object" == typeof P && "type" in P && "tags" === P.type, V = e => {
     var t, n;
     let r = e.currentTarget.value;
-    null == (t = k.onChange) || t.call(k, r, u), B(true), null == (n = Z.setHasValue) || n.call(Z, "" !== r)
+    null == (t = j.onChange) || t.call(j, r, u), B(true), null == (n = Z.setHasValue) || n.call(Z, "" !== r)
   }, H = e => {
     var t, n;
-    null == (t = k.onFocus) || t.call(k, e), null == (n = Z.setIsFocused) || n.call(Z, true)
+    null == (t = j.onFocus) || t.call(j, e), null == (n = Z.setIsFocused) || n.call(Z, true)
   }, Y = e => {
     var t, n;
-    null == (t = k.onBlur) || t.call(k, e), null == (n = Z.setIsFocused) || n.call(Z, false)
+    null == (t = j.onBlur) || t.call(j, e), null == (n = Z.setIsFocused) || n.call(Z, false)
   }, W = e => {
-    if (null != k.onClear) k.onClear(e);
+    if (null != j.onClear) j.onClear(e);
     else {
       var t;
-      null == (t = k.onChange) || t.call(k, "", u)
+      null == (t = j.onChange) || t.call(j, "", u)
     }
-  }, K = i.useRef(null), z = k.readOnly;
+  }, K = i.useRef(null), z = j.readOnly;
   null == z && false === a && (z = true);
   let q = null;
   ("boolean" == typeof M ? M && null != O && "" !== O && !z : M.show) ? q = (0, r.jsx)(T, {
@@ -225,7 +225,7 @@ function S(e) {
     accessory: P,
     inputSize: L
   }));
-  let Q = j ? (0, r.jsx)(d.H, {
+  let Q = k ? (0, r.jsx)(d.H, {
     value: O,
     maxLength: E
   }) : null;
@@ -259,7 +259,7 @@ function S(e) {
           value: O,
           defaultValue: S,
           "data-mana-component": "text-input"
-        }, k), {
+        }, j), {
           onChange: V,
           onBlur: Y,
           onFocus: H,

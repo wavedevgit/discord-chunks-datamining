@@ -53,31 +53,31 @@ function E(e, t) {
 }
 
 function O(e) {
-  var t, n, O, y;
-  let v, {
+  var t, n, O, v;
+  let y, {
       content: I,
       renderModalProps: C,
       analyticsLocations: S,
-      analyticsLocation: T,
-      isLightTheme: N
+      analyticsLocation: N,
+      isLightTheme: T
     } = e,
     P = "AnnouncementModalVariant1_".concat(l.z[Number(I.dismissKey)]),
     {
       onClose: j
     } = C,
-    A = null != (y = null == (t = I.button) ? true : t.copy) ? y : m.intl.string(m.t.YScQSE),
-    x = (null == (n = I.button) ? true : n.buttonAction) === a.Wc.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button";
+    x = null != (v = null == (t = I.button) ? true : t.copy) ? v : m.intl.string(m.t.YScQSE),
+    Z = (null == (n = I.button) ? true : n.buttonAction) === a.Wc.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button";
   switch (null == (O = I.button) ? true : O.buttonAction) {
     case a.Wc.OPEN_MARKETING_PAGE:
-      v = () => {
+      y = () => {
         (0, u.uL)(g.Z5c.APPLICATION_STORE), j()
       };
       break;
     case a.Wc.OPEN_TIER_1_PAYMENT_MODAL:
-      v = () => (0, c.Z)({
+      y = () => (0, c.Z)({
         subscriptionTier: h.Si.TIER_1,
         analyticsLocations: S,
-        analyticsObject: E(_({}, T), {
+        analyticsObject: E(_({}, N), {
           object: g.qAy.BUTTON_CTA,
           objectType: g.Qqv.TIER_1
         }),
@@ -89,10 +89,10 @@ function O(e) {
     case a.Wc.OPEN_TIER_2_PAYMENT_MODAL:
     case a.Wc.OPEN_TIER_2_PAYMENT_MODAL_CUSTOM_CONFIRMATION_FOOTER:
     default:
-      v = () => (0, c.Z)({
+      y = () => (0, c.Z)({
         subscriptionTier: h.Si.TIER_2,
         analyticsLocations: S,
-        analyticsObject: E(_({}, T), {
+        analyticsObject: E(_({}, N), {
           object: g.qAy.BUTTON_CTA,
           objectType: g.Qqv.TIER_2
         }),
@@ -101,7 +101,7 @@ function O(e) {
         }
       })
   }
-  let Z = "" !== I.helpArticleId ? () => (0, r.jsxs)(r.Fragment, {
+  let A = "" !== I.helpArticleId ? () => (0, r.jsxs)(r.Fragment, {
       children: ["\xa0", (0, r.jsx)(s.Anchor, {
         className: b.termsApplyAnchor,
         href: p.Z.getArticleURL(I.helpArticleId),
@@ -110,7 +110,7 @@ function O(e) {
     }) : true,
     w = {
       type: "video",
-      src: N ? I.heroArtVideoLinkLightTheme : I.videoLink
+      src: T ? I.heroArtVideoLinkLightTheme : I.videoLink
     };
   null != I.heroArtVideoSubtitles && (w.subtitles = I.heroArtVideoSubtitles.map(e => ({
     locale: e.locale,
@@ -118,7 +118,7 @@ function O(e) {
     isDefault: false
   }))), ("" !== I.heroArtImageLinkDarkTheme || "" !== I.heroArtImageLinkLightTheme) && (w = {
     type: "image",
-    src: N ? I.heroArtImageLinkLightTheme : I.heroArtImageLinkDarkTheme
+    src: T ? I.heroArtImageLinkLightTheme : I.heroArtImageLinkDarkTheme
   });
   let L = "" !== I.modalTopPill ? () => (0, r.jsx)(f.mn, {
     text: I.modalTopPill,
@@ -129,13 +129,13 @@ function O(e) {
     header: I.header,
     modalTopExtra: L,
     subHeader: I.subheader,
-    subHeaderExtra: Z,
+    subHeaderExtra: A,
     body: I.body,
     heroArt: w,
     featureCards: I.featureCards.map(e => ({
       header: e.header,
       subHeader: e.body,
-      imageSrc: N ? e.imageLinkLightTheme : e.imageLink,
+      imageSrc: T ? e.imageLinkLightTheme : e.imageLink,
       tagText: "" !== e.pill ? e.pill : true
     })),
     changeLogId: P,
@@ -147,12 +147,12 @@ function O(e) {
         onClick: () => {
           d.default.track(g.rMx.CHANGE_LOG_CTA_CLICKED, {
             change_log_id: P,
-            cta_type: x,
+            cta_type: Z,
             seconds_open: Math.round((Date.now() - e) / 1e3),
             target: P
-          }), v()
+          }), y()
         },
-        text: A,
+        text: x,
         icon: i.SrA
       })
     },

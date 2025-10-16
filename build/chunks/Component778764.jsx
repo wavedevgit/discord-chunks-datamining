@@ -75,7 +75,7 @@ function R(e) {
     challenge: c,
     showAccountSettingsButton: h = false,
     initialSlide: y = O.x.INIT
-  } = e, S = (0, u.Dt)(), [A, C] = i.useState(I.intl.string(I.t["I/sJtL"])), [N, R] = i.useState(false), [P, w] = i.useState(y), [D, L] = i.useState(""), [x, M] = i.useState(null), j = async () => {
+  } = e, S = (0, u.Dt)(), [A, C] = i.useState(I.intl.string(I.t["I/sJtL"])), [N, R] = i.useState(false), [P, w] = i.useState(y), [D, L] = i.useState(""), [x, M] = i.useState(null), k = async () => {
     let e;
     w(O.x.REGISTER);
     let t = m.isPlatformEmbedded && E.ZP.supportsFeature(v.eRX.WEBAUTHN) ? E.ZP.webAuthnRegister(c) : a.Ue(JSON.parse(c)).then(e => JSON.stringify(e));
@@ -131,7 +131,7 @@ function R(e) {
           children: (0, r.jsx)(l.Button, {
             variant: "primary",
             text: I.intl.string(I.t.oibaQU),
-            onClick: j
+            onClick: k
           })
         })]
       }), (0, r.jsxs)(l.Mi4, {

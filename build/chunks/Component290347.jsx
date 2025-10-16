@@ -56,8 +56,8 @@ function S(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let T = [],
-  N = e => {
+let N = [],
+  T = e => {
     let {
       tagText: t,
       className: n
@@ -79,7 +79,7 @@ let T = [],
       className: a()(I.featureCard, {
         [I.wideStyle]: o
       }),
-      children: [null != l ? (0, r.jsx)(N, {
+      children: [null != l ? (0, r.jsx)(T, {
         tagText: l,
         className: I.featureCardTag
       }) : null, (0, r.jsx)("img", {
@@ -108,21 +108,21 @@ function j(e) {
     className: t,
     renderModalProps: n,
     heroArt: l,
-    heroArtClassName: N,
+    heroArtClassName: T,
     modalDismissibleContent: j,
-    modalTopExtra: A,
-    header: x,
-    headerClassName: Z,
+    modalTopExtra: x,
+    header: Z,
+    headerClassName: A,
     subHeader: w,
     subHeaderExtra: L,
     featureCards: R,
     changeLogId: D,
-    button: k,
-    body: M
+    button: M,
+    body: k
   } = e, {
     onClose: U,
     transitionState: G
-  } = n, B = (0, f.Dt)(), H = R.length % 2 == 0, V = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), [F, z] = i.useState(Date.now()), [W, Y] = i.useState(0), [q, K] = i.useState(0), [Q, X] = i.useState(false), [J, $] = i.useState(true), ee = i.useRef(F), et = i.useRef(W), en = i.useRef(q), er = i.useRef(Q), ei = i.useRef(J), [el, ea] = i.useState(T), eo = i.useRef(false);
+  } = n, B = (0, f.Dt)(), H = R.length % 2 == 0, V = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), [F, z] = i.useState(Date.now()), [W, Y] = i.useState(0), [q, K] = i.useState(0), [Q, X] = i.useState(false), [J, $] = i.useState(true), ee = i.useRef(F), et = i.useRef(W), en = i.useRef(q), er = i.useRef(Q), ei = i.useRef(J), [el, ea] = i.useState(N), eo = i.useRef(false);
 
   function es() {
     let e = Date.now(),
@@ -150,7 +150,7 @@ function j(e) {
         });
         ea(await Promise.all(t))
       } catch (e) {
-        E.Z.captureException(e), ea(T)
+        E.Z.captureException(e), ea(N)
       }
     };
     true !== eo.current && e(), eo.current = true
@@ -181,7 +181,7 @@ function j(e) {
         change_log_id: D,
         seconds_open: Math.round((Date.now() - e) / 1e3)
       }), null != j && (0, g.Q3)(j, {
-        dismissAction: y.L.DISMISS
+        dismissAction: v.L.DISMISS
       })
     }
   }, [j, D]), (0, r.jsx)(c.Y0X, {
@@ -198,15 +198,15 @@ function j(e) {
           "data-migration-pending": true,
           onClick: async () => await U()
         })
-      }), null == A ? true : A(), (0, r.jsxs)(c.hzk, {
+      }), null == x ? true : x(), (0, r.jsxs)(c.hzk, {
         "data-migration-pending": true,
         className: I.content,
         children: [(0, r.jsx)(c.Heading, {
           variant: "display-md",
-          className: a()(I.headerText, Z),
-          children: x
+          className: a()(I.headerText, A),
+          children: Z
         }), "video" === l.type ? (0, r.jsx)(h.Z, {
-          className: a()(I.video, N),
+          className: a()(I.video, T),
           autoPlay: !V,
           loop: true,
           muted: true,
@@ -230,7 +230,7 @@ function j(e) {
           },
           disablePictureInPicture: true,
           children: null == el ? true : el.map(e => {
-            let t = (0, v.getLanguages)().find(t => t.code === e.locale);
+            let t = (0, y.getLanguages)().find(t => t.code === e.locale);
             return null == t ? null : (0, r.jsx)("track", {
               label: t.englishName,
               kind: "captions",
@@ -240,7 +240,7 @@ function j(e) {
             }, e.locale)
           })
         }) : "embed" === l.type ? (0, r.jsx)(d.BC, {
-          className: a()(I.video, N),
+          className: a()(I.video, T),
           allowFullScreen: false,
           href: l.href,
           thumbnail: l.thumbnail,
@@ -258,17 +258,17 @@ function j(e) {
           }
         }) : "image" === l.type ? (0, r.jsx)("img", {
           alt: "",
-          className: a()(I.video, N),
+          className: a()(I.video, T),
           src: l.src
         }) : null, (0, r.jsxs)(c.Text, {
           variant: "text-md/normal",
           color: "text-secondary",
           className: I.subHeader,
           children: [w, null == L ? true : L()]
-        }), null != M && "" !== M && (0, r.jsx)(c.Heading, {
+        }), null != k && "" !== k && (0, r.jsx)(c.Heading, {
           variant: "heading-lg/semibold",
           className: I.bodyText,
-          children: M
+          children: k
         }), R.length > 0 && (0, r.jsx)("div", {
           className: a()(I.featureCardGroup, {
             [I.wideStyle]: H
@@ -278,7 +278,7 @@ function j(e) {
           }), "".concat(e.header, "_").concat(t)))
         }), (0, r.jsx)("div", {
           className: I.buttonContainer,
-          children: k()
+          children: M()
         })]
       })]
     })

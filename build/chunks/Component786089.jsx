@@ -29,30 +29,30 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk199679 = require("./199679.js");
 let P = (0, Chunk647438.memo)(function(e) {
-  var t, n, l, P, j, A;
+  var t, n, l, P, j, x;
   let {
-    quest: x
-  } = e, [Z, w] = (0, i.useState)(false), [L, R] = (0, i.useState)(24), [D, k] = (0, i.useState)(false), M = (0, i.useRef)(null), U = (0, i.useRef)(null), G = (0, i.useRef)(null), B = (0, c.e7)([m.default], () => m.default.getCurrentUser()), {
+    quest: Z
+  } = e, [A, w] = (0, i.useState)(false), [L, R] = (0, i.useState)(24), [D, M] = (0, i.useState)(false), k = (0, i.useRef)(null), U = (0, i.useRef)(null), G = (0, i.useRef)(null), B = (0, c.e7)([m.default], () => m.default.getCurrentUser()), {
     ref: H,
     height: V = 0
-  } = (0, p.ZP)(), F = (0, f.ZP)(), z = (0, E.B6)(null == (t = x.userStatus) ? true : t.claimedAt, {
+  } = (0, p.ZP)(), F = (0, f.ZP)(), z = (0, E.B6)(null == (t = Z.userStatus) ? true : t.claimedAt, {
     month: "numeric",
     day: "numeric"
-  }), W = null != (j = null == (n = x.userStatus) ? true : n.claimedTier) ? j : 0, Y = x.config.rewards[W], q = (null == Y ? true : Y.type) === s.w.FRACTIONAL_PREMIUM, K = (null == Y ? true : Y.type) === s.w.COLLECTIBLE, Q = (null == Y ? true : Y.type) === s.w.VIRTUAL_CURRENCY, X = null == Y || null == (P = Y.collectibleProduct) || null == (l = P.items) ? true : l[0], J = (null == X ? true : X.type) === o.Z.AVATAR_DECORATION ? X : null;
-  (0, p.PM)(M, e => {
+  }), W = null != (j = null == (n = Z.userStatus) ? true : n.claimedTier) ? j : 0, Y = Z.config.rewards[W], q = (null == Y ? true : Y.type) === s.w.FRACTIONAL_PREMIUM, K = (null == Y ? true : Y.type) === s.w.COLLECTIBLE, Q = (null == Y ? true : Y.type) === s.w.VIRTUAL_CURRENCY, X = null == Y || null == (P = Y.collectibleProduct) || null == (l = P.items) ? true : l[0], J = (null == X ? true : X.type) === o.Z.AVATAR_DECORATION ? X : null;
+  (0, p.PM)(k, e => {
     let {
       height: t
     } = e;
-    if (!K || null == t || null == U.current || null == M.current || null == G.current) return;
-    let n = M.current.getBoundingClientRect(),
+    if (!K || null == t || null == U.current || null == k.current || null == G.current) return;
+    let n = k.current.getBoundingClientRect(),
       r = U.current.getBoundingClientRect(),
       i = G.current.getBoundingClientRect();
     R((r.top - n.top - i.height) / 2)
   });
   let $ = (0, u.wj)(F),
-    ee = (0, i.useMemo)(() => null != x.config.cosponsorMetadata, [x]),
-    et = (0, i.useMemo)(() => (0, y.fh)(x, y.eC.REWARD), [x]),
-    en = Z ? V + 8 : 0,
+    ee = (0, i.useMemo)(() => null != Z.config.cosponsorMetadata, [Z]),
+    et = (0, i.useMemo)(() => (0, v.fh)(Z, v.eC.REWARD), [Z]),
+    en = A ? V + 8 : 0,
     er = (0, _.mH)(O.jn.TROPHY_CASE_CARD),
     {
       content_position: ei,
@@ -92,31 +92,31 @@ let P = (0, Chunk647438.memo)(function(e) {
         }
         return e
       }({
-        quest_id: x.id
+        quest_id: Z.id
       }, ea))
     },
     es = () => w(false),
     ec = e => {
-      k(true), b.default.track(S.rMx.QUEST_ASSET_LOADING_FAILURE, {
+      M(true), b.default.track(S.rMx.QUEST_ASSET_LOADING_FAILURE, {
         source: e,
         asset_id: e,
-        quest_id: x.id
+        quest_id: Z.id
       })
     };
   return null == Y || D ? null : (0, r.jsx)(d.tEY, {
     children: (0, r.jsxs)("div", {
-      ref: M,
+      ref: k,
       tabIndex: 0,
       onFocus: eo,
       onBlur: es,
       onMouseEnter: eo,
       onMouseLeave: es,
-      className: a()(N.container, {
-        [N.hovered]: Z
+      className: a()(T.container, {
+        [T.hovered]: A
       }),
       children: [null != B && K && null != J && (0, r.jsx)("div", {
         ref: G,
-        className: N.decoWrapper,
+        className: T.decoWrapper,
         style: {
           top: L
         },
@@ -125,50 +125,50 @@ let P = (0, Chunk647438.memo)(function(e) {
           user: B,
           guildId: null
         })
-      }), q ? (0, r.jsx)(v.Z, {
-        className: N.image
+      }), q ? (0, r.jsx)(y.Z, {
+        className: T.image
       }) : Q ? (0, r.jsx)(I.Z, {
-        className: N.image
+        className: T.image
       }) : et.isAnimated ? (0, r.jsx)(g.Z, {
-        className: N.assetBlurred,
+        className: T.assetBlurred,
         autoPlay: false,
         children: (0, r.jsx)("source", {
           src: et.url,
-          type: null != (A = et.mimetype) ? A : true,
+          type: null != (x = et.mimetype) ? x : true,
           onError: () => ec(et.url)
         })
       }) : (0, r.jsx)("img", {
-        className: N.image,
+        className: T.image,
         src: et.url,
-        alt: x.config.messages.questName,
+        alt: Z.config.messages.questName,
         onError: () => ec(et.url)
       }), (0, r.jsx)("div", {
-        className: a()(N.overlay, {
-          [N.darkThemeGradient]: $,
-          [N.lightThemeGradient]: !$
+        className: a()(T.overlay, {
+          [T.darkThemeGradient]: $,
+          [T.lightThemeGradient]: !$
         })
       }), (0, r.jsx)("div", {
         ref: U,
-        className: N.logoContainer,
+        className: T.logoContainer,
         style: {
           transform: "translateY(-".concat(en, "px)")
         },
         children: (0, r.jsx)(C.ZP, {
-          logotypeClassName: a()(N.logo, {
-            [N.logoWithCosponsor]: ee
+          logotypeClassName: a()(T.logo, {
+            [T.logoWithCosponsor]: ee
           }),
-          quest: x,
+          quest: Z,
           withGameTile: false
         })
       }), (0, r.jsxs)("div", {
         ref: H,
-        className: N.details,
+        className: T.details,
         children: [(0, r.jsx)(d.Heading, {
-          className: N.title,
+          className: T.title,
           variant: "heading-md/semibold",
           color: "always-white",
-          children: T.intl.format(T.t.EAYZAg, {
-            questName: x.config.messages.questName
+          children: N.intl.format(N.t.EAYZAg, {
+            questName: Z.config.messages.questName
           })
         }), (0, r.jsx)(d.Text, {
           variant: "text-sm/medium",
@@ -176,7 +176,7 @@ let P = (0, Chunk647438.memo)(function(e) {
           style: {
             opacity: $ ? 1 : .75
           },
-          children: T.intl.format(T.t.kXVcV1, {
+          children: N.intl.format(N.t.kXVcV1, {
             reward: Y.name,
             claimedDate: z
           })

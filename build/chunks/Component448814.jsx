@@ -97,10 +97,10 @@ function A(e) {
       loading: L = false,
       onBlur: x,
       onFocus: M,
-      typeahead: j = false
+      typeahead: k = false
     } = e,
-    k = i.useId(),
-    U = null != n ? n : k,
+    j = i.useId(),
+    U = null != n ? n : j,
     [G, B] = i.useState(null != b ? b : []),
     Z = null != O,
     F = Z ? O : G,
@@ -115,14 +115,14 @@ function A(e) {
     {
       activeIndex: H,
       handleKeyDown: Y
-    } = N(j, f);
+    } = N(k, f);
   i.useEffect(() => {
-    if (null != H && j) {
+    if (null != H && k) {
       let e = (0, l.jb)(U, (0, g.cA)(U, H)),
         t = document.querySelector((0, l.P1)(e));
       null == t || t.focus()
     }
-  }, [H, f, j, U]);
+  }, [H, f, k, U]);
   let W = i.useCallback(e => {
       if (true === a && 1 === F.length && F.includes(e)) return;
       let t = (0, g.cq)(d, F, e);

@@ -34,13 +34,13 @@ let C = {
     default: 24,
     compact: 14
   },
-  T = {
+  N = {
     cozy: 95,
     default: 84,
     compact: 72
   };
 
-function N(e) {
+function T(e) {
   var t, n;
   let {
     onClick: l,
@@ -48,32 +48,32 @@ function N(e) {
     popoutProps: s,
     ref: g,
     focusSectionProps: b
-  } = e, [O, y] = i.useState(false), N = (0, _.D)(), P = o || N, j = o || P, {
-    backForwardButtons: A,
-    titlebarIconSize: x,
-    titlebarHoverHighlight: Z
+  } = e, [O, v] = i.useState(false), T = (0, _.D)(), P = o || T, j = o || P, {
+    backForwardButtons: x,
+    titlebarIconSize: Z,
+    titlebarHoverHighlight: A
   } = (0, f.T)({
     location: "NotificationsInboxTitleBarButton"
   }), w = (0, r.jsx)(d.Dkj, {
     className: I.icon,
     color: O || j ? d.TVs.colors.ICON_PRIMARY : d.TVs.colors.ICON_TERTIARY,
-    size: x
+    size: Z
   }), {
     badge: L,
     badgeType: R
   } = (0, E.h6)({
     isSelected: P
-  }), D = (0, m.isDesktop)() && A, k = (0, h.A)(), M = (0, m.isMac)() ? C[k] : D ? S[k] : T[k];
+  }), D = (0, m.isDesktop)() && x, M = (0, h.A)(), k = (0, m.isMac)() ? C[M] : D ? S[M] : N[M];
   return (0, r.jsxs)(d.Kqy, {
     gap: 0,
     direction: "horizontal",
     children: [(0, r.jsx)(d.LZC, {
-      size: M,
+      size: k,
       horizontal: true
     }), (0, r.jsx)(u.u, {
       asContainer: true,
       shouldShow: !j,
-      text: v.intl.string(v.t.HcoRu7),
+      text: y.intl.string(y.t.HcoRu7),
       children: (0, r.jsxs)(d.P3F, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -94,14 +94,14 @@ function N(e) {
       }({
         innerRef: g,
         className: a()(I.clickableContainer, {
-          [I.withHoverHighlight]: Z
+          [I.withHoverHighlight]: A
         })
       }, b, s), n = n = {
         onMouseEnter: () => {
-          y(true)
+          v(true)
         },
         onMouseLeave: () => {
-          y(false)
+          v(false)
         },
         onClick: () => {
           var e;
@@ -111,12 +111,12 @@ function N(e) {
           className: a()(I.iconWrapper, null),
           children: "unread" === R ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(p.ZP, {
-              width: c.Z[x],
-              height: c.Z[x],
+              width: c.Z[Z],
+              height: c.Z[Z],
               mask: p.ZP.Masks.HEADER_BAR_BADGE_BOTTOM,
               children: w
             }), (0, r.jsx)("div", {
-              className: a()(I.unreadDot, I[x])
+              className: a()(I.unreadDot, I[Z])
             })]
           }) : w
         }), L]
@@ -142,7 +142,7 @@ function P() {
   } = (0, Chunk821020.pN)({
     location: "NotificationsInboxButton"
   }), l = (0, Chunk442837.e7)([Chunk944486.Z], () => Chunk944486.Z.getChannelId()), a = Chunk647438.useMemo(() => Chunk981631.Z5c.CHANNEL(Chunk981631.STv, null != Chunk120356 ? Chunk120356 : true), [Chunk120356]), c = (0, Chunk128008.mv)();
-  return require === Chunk821020.jP.SIDEBAR ? (0, Chunk951288.jsx)(N, {
+  return require === Chunk821020.jP.SIDEBAR ? (0, Chunk951288.jsx)(T, {
     onClick: () => {
       Chunk212605(), (0, Chunk948789.uL)(a)
     },
@@ -152,7 +152,7 @@ function P() {
     popoutPosition: "bottom",
     popoutAlign: "left",
     spacing: 2,
-    children: (n, i, l) => (0, r.jsx)(N, {
+    children: (n, i, l) => (0, r.jsx)(T, {
       ref: t,
       selectedOverride: i,
       onClick: () => {

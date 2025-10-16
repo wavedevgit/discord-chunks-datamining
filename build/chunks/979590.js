@@ -40,15 +40,15 @@
 
   function d(e, t, n) {
     return {
-      r: 255 * j(e, 255),
-      g: 255 * j(t, 255),
-      b: 255 * j(n, 255)
+      r: 255 * k(e, 255),
+      g: 255 * k(t, 255),
+      b: 255 * k(n, 255)
     }
   }
 
   function f(e, t, n) {
-    e = j(e, 255);
-    var r, i, a = s(e, t = j(t, 255), n = j(n, 255)),
+    e = k(e, 255);
+    var r, i, a = s(e, t = k(t, 255), n = k(n, 255)),
       l = o(e, t, n),
       c = (a + l) / 2;
     if (a == l) r = i = 0;
@@ -79,7 +79,7 @@
     function o(e, t, n) {
       return (n < 0 && (n += 1), n > 1 && (n -= 1), n < 1 / 6) ? e + (t - e) * 6 * n : n < .5 ? t : n < 2 / 3 ? e + (t - e) * (2 / 3 - n) * 6 : e
     }
-    if (e = j(e, 360), t = j(t, 100), n = j(n, 100), 0 === t) r = i = a = n;
+    if (e = k(e, 360), t = k(t, 100), n = k(n, 100), 0 === t) r = i = a = n;
     else {
       var s = n < .5 ? n * (1 + t) : n + t - n * t,
         l = 2 * n - s;
@@ -93,8 +93,8 @@
   }
 
   function p(e, t, n) {
-    e = j(e, 255);
-    var r, i, a = s(e, t = j(t, 255), n = j(n, 255)),
+    e = k(e, 255);
+    var r, i, a = s(e, t = k(t, 255), n = k(n, 255)),
       l = o(e, t, n),
       c = a,
       u = a - l;
@@ -120,7 +120,7 @@
   }
 
   function h(e, n, r) {
-    e = 6 * j(e, 360), n = j(n, 100), r = j(r, 100);
+    e = 6 * k(e, 360), n = k(n, 100), r = k(r, 100);
     var i = t.floor(e),
       a = e - i,
       o = r * (1 - n),
@@ -151,13 +151,13 @@
   function b(e, t) {
     t = 0 === t ? 0 : t || 10;
     var n = c(e).toHsl();
-    return n.s -= t / 100, n.s = k(n.s), c(n)
+    return n.s -= t / 100, n.s = j(n.s), c(n)
   }
 
   function y(e, t) {
     t = 0 === t ? 0 : t || 10;
     var n = c(e).toHsl();
-    return n.s += t / 100, n.s = k(n.s), c(n)
+    return n.s += t / 100, n.s = j(n.s), c(n)
   }
 
   function O(e) {
@@ -167,7 +167,7 @@
   function v(e, t) {
     t = 0 === t ? 0 : t || 10;
     var n = c(e).toHsl();
-    return n.l += t / 100, n.l = k(n.l), c(n)
+    return n.l += t / 100, n.l = j(n.l), c(n)
   }
 
   function I(e, t) {
@@ -179,7 +179,7 @@
   function T(e, t) {
     t = 0 === t ? 0 : t || 10;
     var n = c(e).toHsl();
-    return n.l -= t / 100, n.l = k(n.l), c(n)
+    return n.l -= t / 100, n.l = j(n.l), c(n)
   }
 
   function S(e, t) {
@@ -344,14 +344,14 @@
     },
     toPercentageRgb: function() {
       return {
-        r: a(100 * j(this._r, 255)) + "%",
-        g: a(100 * j(this._g, 255)) + "%",
-        b: a(100 * j(this._b, 255)) + "%",
+        r: a(100 * k(this._r, 255)) + "%",
+        g: a(100 * k(this._g, 255)) + "%",
+        b: a(100 * k(this._b, 255)) + "%",
         a: this._a
       }
     },
     toPercentageRgbString: function() {
-      return 1 == this._a ? "rgb(" + a(100 * j(this._r, 255)) + "%, " + a(100 * j(this._g, 255)) + "%, " + a(100 * j(this._b, 255)) + "%)" : "rgba(" + a(100 * j(this._r, 255)) + "%, " + a(100 * j(this._g, 255)) + "%, " + a(100 * j(this._b, 255)) + "%, " + this._roundA + ")"
+      return 1 == this._a ? "rgb(" + a(100 * k(this._r, 255)) + "%, " + a(100 * k(this._g, 255)) + "%, " + a(100 * k(this._b, 255)) + "%)" : "rgba(" + a(100 * k(this._r, 255)) + "%, " + a(100 * k(this._g, 255)) + "%, " + a(100 * k(this._b, 255)) + "%, " + this._roundA + ")"
     },
     toName: function() {
       return 0 === this._a ? "transparent" : !(this._a < 1) && (L[m(this._r, this._g, this._b, true)] || false)
@@ -639,13 +639,13 @@
     return (isNaN(e = parseFloat(e)) || e < 0 || e > 1) && (e = 1), e
   }
 
-  function j(e, n) {
+  function k(e, n) {
     G(e) && (e = "100%");
     var r = B(e);
     return (e = o(n, s(0, parseFloat(e))), r && (e = parseInt(e * n, 10) / 100), 1e-6 > t.abs(e - n)) ? 1 : e % n / parseFloat(n)
   }
 
-  function k(e) {
+  function j(e) {
     return o(1, s(0, e))
   }
 

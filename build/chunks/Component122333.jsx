@@ -50,7 +50,7 @@ function j(e) {
   return e
 }
 
-function A(e, t) {
+function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -63,15 +63,15 @@ function A(e, t) {
   }), e
 }
 
-function x() {
+function Z() {
   null != r && (0, Chunk481060.Mr3)(r)
 }
-class Z extends Chunk317770.Z {
+class A extends Chunk317770.Z {
   _initialize() {
-    Chunk570140.Z.subscribe("CONNECTION_OPEN", this.handleConnectionOpen), Chunk570140.Z.subscribe("LOGOUT", x)
+    Chunk570140.Z.subscribe("CONNECTION_OPEN", this.handleConnectionOpen), Chunk570140.Z.subscribe("LOGOUT", Z)
   }
   _terminate() {
-    Chunk570140.Z.unsubscribe("CONNECTION_OPEN", this.handleConnectionOpen), Chunk570140.Z.unsubscribe("LOGOUT", x)
+    Chunk570140.Z.unsubscribe("CONNECTION_OPEN", this.handleConnectionOpen), Chunk570140.Z.unsubscribe("LOGOUT", Z)
   }
   handleConnectionOpen() {
     var e;
@@ -88,12 +88,12 @@ class Z extends Chunk317770.Z {
         Chunk390885.Z.flowStart(Chunk630724.MK.ORGANIC_MARKETING, Chunk630724.EW.NUF_STARTED)
     }
     let o = false,
-      x = Chunk914010.Z.getGuildId();
+      Z = Chunk914010.Z.getGuildId();
     if (Chunk570140 === Chunk701476.M5.INVITE_UNCLAIMED) {
-      let e = Chunk430824.Z.getGuild(x);
+      let e = Chunk430824.Z.getGuild(Z);
       null != module && (0, Chunk983736.Dc)(module) && (o = true, (0, Chunk524329.RM)(module.id))
     }
-    let Z = () => 0 === Chunk486472.Z.totalGuilds && !Chunk358085.isPlatformEmbedded,
+    let A = () => 0 === Chunk486472.Z.totalGuilds && !Chunk358085.isPlatformEmbedded,
       w = Chunk622822.bN();
     e = [{
       key: "Unified NUF Modal",
@@ -131,30 +131,30 @@ class Z extends Chunk317770.Z {
           let {
             default: e
           } = await Promise.all([n.e("42483"), n.e("91848")]).then(n.bind(n, 599219));
-          return n => (0, i.jsx)(e, A(j({}, n), {
+          return n => (0, i.jsx)(e, x(j({}, n), {
             onSlideChange: t
           }))
         }, {
-          onCloseRequest: T.dG4,
+          onCloseRequest: N.dG4,
           onCloseCallback: e,
           modalKey: r
         })
       },
-      predicate: () => Z() && !Chunk188785.a
+      predicate: () => A() && !Chunk188785.a
     }, {
       key: "New User Age Gate",
       open: Chunk391650.i,
-      predicate: () => w && !Z() && !Chunk188785.a
+      predicate: () => w && !A() && !Chunk188785.a
     }, {
       key: "Claim Account Modal",
-      open: e => c.j(y.isPlatformEmbedded, e),
+      open: e => c.j(v.isPlatformEmbedded, e),
       predicate: () => {
         var e;
         return !Chunk317770 && null != Chunk594174.default.getCurrentUser() && !(null == (e = Chunk594174.default.getCurrentUser()) ? true : module.isClaimed()) && !Chunk188785.a && !(0, Chunk341298.g)()
       }
     }, {
       key: "Verification Gate with Claim Account",
-      open: e => (0, u.hk)(x, null != e ? e : true),
+      open: e => (0, u.hk)(Z, null != e ? e : true),
       predicate: () => {
         var e;
         return Chunk317770 && !(null == (e = Chunk594174.default.getCurrentUser()) ? true : module.isClaimed()) && !Chunk188785.a
@@ -165,13 +165,13 @@ class Z extends Chunk317770.Z {
         let {
           default: e
         } = await n.e("90542").then(n.bind(n, 184782));
-        return t => (0, i.jsx)(e, A(j({}, t), {
-          guildId: x
+        return t => (0, i.jsx)(e, x(j({}, t), {
+          guildId: Z
         }))
       }, {
         onCloseCallback: e
       }),
-      predicate: () => null != x && null != Chunk995532.Z.get(x) && Chunk995532.Z.get(x) !== Chunk995532.a
+      predicate: () => null != Z && null != Chunk995532.Z.get(Z) && Chunk995532.Z.get(Z) !== Chunk995532.a
     }], t = () => {
       Chunk929809.H(), Chunk390885.Z.flowStep(Chunk630724.MK.ANY, Chunk630724.EW.NUF_COMPLETE, true)
     }, [...module].reverse().forEach(e => {
@@ -182,4 +182,4 @@ class Z extends Chunk317770.Z {
     }), exports()
   }
 }
-let w = new Z
+let w = new A

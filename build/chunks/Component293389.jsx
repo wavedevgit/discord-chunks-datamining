@@ -72,10 +72,10 @@ function M(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let j = Chunk442837.ZP.connectStores([Chunk210887.Z], () => ({
+let k = Chunk442837.ZP.connectStores([Chunk210887.Z], () => ({
     theme: Chunk210887.Z.theme
   }))(Chunk481060.ubH),
-  k = (0, Chunk358085.isWindows)(),
+  j = (0, Chunk358085.isWindows)(),
   U = 18,
   G = "https://www.igdb.com/about";
 
@@ -142,7 +142,7 @@ function Z(e) {
   } = (0, s.cj)([p.ZP], () => ({
     canToggleDetection: null == I || p.ZP.isDetectionEnabled(I),
     isCurrentGameDetectionEnabled: p.ZP.isDetectionEnabled(T)
-  })), w = (0, _.P6)("UserSettingsGameActivity"), D = (0, s.e7)([p.ZP], () => p.ZP.getVisibleGame()), [x, j] = i.useState(false), G = i.useMemo(() => (0, E.le)(T) ? v ? T.gameName : C.intl.formatToPlainString(C.t.G6BGd3, {
+  })), w = (0, _.P6)("UserSettingsGameActivity"), D = (0, s.e7)([p.ZP], () => p.ZP.getVisibleGame()), [x, k] = i.useState(false), G = i.useMemo(() => (0, E.le)(T) ? v ? T.gameName : C.intl.formatToPlainString(C.t.G6BGd3, {
     subgameName: T.gameName
   }) : T.name, [T, v]), [B, F] = i.useState(null != G ? G : "???"), V = o()(P.flexCenter, {
     [N.game]: !a,
@@ -203,7 +203,7 @@ function Z(e) {
     O.default.track(A.rMx.USER_SETTINGS_REPORT_INCORRECT_GAME_DETECTION, {
       application_id: null == e ? true : e.id,
       game_name: (0, E.le)(T) ? T.gameName : T.name
-    }), w ? (j(true), (0, c.ZDy)(async () => {
+    }), w ? (k(true), (0, c.ZDy)(async () => {
       let {
         default: t
       } = await n.e("82077").then(n.bind(n, 953848));
@@ -220,7 +220,7 @@ function Z(e) {
       }
     })) : ((0, c.showToast)((0, c.createToast)(C.intl.formatToPlainString(C.t["6klMOj"], {
       gameName: (0, E.le)(T) ? T.gameName : T.name
-    }), c.ToastType.SUCCESS)), j(true))
+    }), c.ToastType.SUCCESS)), k(true))
   }
 
   function X() {
@@ -273,7 +273,7 @@ function Z(e) {
   }
 
   function J() {
-    if (!k || null != I) return null;
+    if (!j || null != I) return null;
     let {
       overlay: e,
       overlayWarn: t
@@ -410,7 +410,7 @@ function V(e) {
   let {
     children: t
   } = e;
-  return (0, r.jsxs)(j, {
+  return (0, r.jsxs)(k, {
     className: w.marginTop40,
     children: [(0, r.jsx)(c.oxh, {
       darkSrc: n(879601),

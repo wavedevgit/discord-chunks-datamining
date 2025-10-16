@@ -4,8 +4,8 @@
 require.d(exports, {
   $b: () => U,
   Bu: () => M,
-  ES: () => j,
-  Eq: () => k,
+  ES: () => k,
+  Eq: () => j,
   Gv: () => I,
   Hy: () => y,
   M8: () => v,
@@ -190,7 +190,7 @@ function M(e, t, n) {
   c.Z.setPendingWidgets(l)
 }
 
-function j(e, t) {
+function k(e, t) {
   var n, r, i;
   let o, l = R(e),
     u = I(e);
@@ -209,7 +209,7 @@ function j(e, t) {
   c.Z.setPendingWidgets(f), a.Z.getDetectableGamesSupplemental([t.applicationId])
 }
 
-function k(e, t, n) {
+function j(e, t, n) {
   let r = R(e);
   if (null == r || null == r.games || t === n) return;
   let i = [...r.games];

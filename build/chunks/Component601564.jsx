@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 601564, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => A,
+  default: () => x,
   getPageSize: () => P
 }), require("./388685.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk430355 = require("./430355.js");
 
-function T(e, t, n) {
+function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -36,13 +36,13 @@ function T(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let N = (0, Chunk663993.Un)({
+let T = (0, Chunk663993.Un)({
   createPromise: () => Promise.all([require.e("68264"), require.e("87626")]).then(require.bind(require, 496691)),
   webpackId: 496691
 });
 
 function P(e) {
-  return e < v.x ? v.b.SMALL : v.b.LARGE
+  return e < y.x ? y.b.SMALL : y.b.LARGE
 }
 Chunk442837.ZP.initialize();
 class j extends Chunk647438.PureComponent {
@@ -70,7 +70,7 @@ class j extends Chunk647438.PureComponent {
     } = this.props, n = module ? (0, Chunk951288.jsx)("div", {
       className: Chunk430355.applicationStore,
       children: this.renderContent()
-    }) : (0, Chunk951288.jsx)(N, {
+    }) : (0, Chunk951288.jsx)(T, {
       className: Chunk430355.applicationStore,
       location: exports,
       render: this.renderContent
@@ -81,7 +81,7 @@ class j extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), T(this, "stopListeningToHistory", true), T(this, "renderStoreListing", e => {
+    super(...e), N(this, "stopListeningToHistory", true), N(this, "renderStoreListing", e => {
       let {
         match: {
           params: {
@@ -97,7 +97,7 @@ class j extends Chunk647438.PureComponent {
       return (0, r.jsx)(u.Z, {
         page: I.ZY5.STORE_LISTING,
         root: true,
-        children: (0, r.jsx)(y.Z, {
+        children: (0, r.jsx)(v.Z, {
           skuId: t,
           applicationId: n,
           slug: i,
@@ -106,7 +106,7 @@ class j extends Chunk647438.PureComponent {
           pageSize: P(o)
         })
       })
-    }), T(this, "renderContent", () => (0, r.jsxs)(a.rs, {
+    }), N(this, "renderContent", () => (0, r.jsxs)(a.rs, {
       children: [(0, r.jsx)(a.AW, {
         path: I.Z5c.APPLICATION_STORE,
         exact: true,
@@ -133,4 +133,4 @@ class j extends Chunk647438.PureComponent {
     }))
   }
 }
-let A = (0, Chunk843611.EN)((0, Chunk666743.Z)((0, Chunk112724.Z)(j)))
+let x = (0, Chunk843611.EN)((0, Chunk666743.Z)((0, Chunk112724.Z)(j)))

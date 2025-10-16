@@ -9,7 +9,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk979233 = require("./979233.js"),
   Chunk88693 = require("./88693.js"),
   Chunk611928 = require("./611928.jsx"),
-  c = (require("./763433.jsx"), require("./922122.jsx")),
+  c = (require("./763433.jsx"), require("./175118.jsx")),
   Chunk680180 = require("./680180.jsx"),
   Chunk164991 = require("./164991.js"),
   Chunk444324 = require("./444324.js"),
@@ -34,15 +34,15 @@ function C() {
     } = (0, Chunk979233.M)(),
     {
       tabs: S,
-      selectedTab: T,
-      setSelectedTab: N
+      selectedTab: N,
+      setSelectedTab: T
     } = (0, Chunk29086.Y)(),
-    P = (0, Chunk726115.lg)(T),
-    j = !Chunk128449.MU.has(T),
+    P = (0, Chunk726115.lg)(N),
+    j = !Chunk128449.MU.has(N),
     {
-      searchQuery: A,
-      onSearchTextChange: x,
-      onClearSearch: Z,
+      searchQuery: x,
+      onSearchTextChange: Z,
+      onClearSearch: A,
       onSearchSubmit: w,
       isSearchVisible: L
     } = (0, Chunk28494.H)({
@@ -51,12 +51,12 @@ function C() {
     R = Chunk859921.Z.useField("searchBarState"),
     {
       onTabsAvailableWidthChange: D,
-      onCollapsedSearchBarClick: k,
-      onSearchBarBlur: M,
+      onCollapsedSearchBarClick: M,
+      onSearchBarBlur: k,
       tabsClassName: U
     } = (0, Chunk88693.U)({
       isSearchBarVisible: j,
-      isSearchBarEmpty: "" === A.trim(),
+      isSearchBarEmpty: "" === x.trim(),
       searchBarState: R,
       setSearchBarState: e => h.Z.setState({
         searchBarState: e
@@ -64,8 +64,8 @@ function C() {
     }),
     G = Chunk164991.Z.useField("fetchedQuery"),
     B = Chunk647438.useCallback(e => {
-      N(e), L && Z()
-    }, [L, Z, N]),
+      T(e), L && A()
+    }, [L, A, T]),
     H = Chunk647438.useMemo(() => L ? S.filter(e => {
       let {
         id: t
@@ -84,7 +84,7 @@ function C() {
     V.current.flushSeenGuilds(module.current)
   }, [P]), Chunk647438.useEffect(() => {
     C()
-  }, [T, C]), Chunk647438.useEffect(() => {
+  }, [N, C]), Chunk647438.useEffect(() => {
     L || Chunk164991.Z.setState({
       scrollPosition: null
     })
@@ -96,13 +96,13 @@ function C() {
         scrollPosition: require
       }), L ? (0, Chunk951288.jsx)(Chunk611928.Cm, {
         icon: Chunk481060.j9r,
-        onClick: Z
+        onClick: A
       }) : (0, Chunk951288.jsx)(Chunk611928.aV, {
         icon: Chunk481060.QTo
       }), !L && (0, Chunk951288.jsx)(c.Z, {
         className: U,
         tabs: H,
-        selectedTab: L ? null : T,
+        selectedTab: L ? null : N,
         onTabSelect: B,
         onAvailableWidthChange: D
       }), L && (0, Chunk951288.jsx)(Chunk481060.Heading, {
@@ -113,21 +113,21 @@ function C() {
           query: G
         })
       }), j && (0, Chunk951288.jsx)(Chunk680180.Z, {
-        query: A,
+        query: x,
         placeholder: Chunk388032.intl.string(Chunk388032.t["5h0QOD"]),
-        onTextChange: x,
-        onClear: Z,
+        onTextChange: Z,
+        onClear: A,
         onSubmit: w,
-        onCollapsedClick: k,
+        onCollapsedClick: M,
         state: L ? Chunk49898.GlobalDiscoverySearchBarState.DEFAULT : R,
-        onBlur: M
+        onBlur: k
       })]
     }), L ? (0, Chunk951288.jsx)(Chunk273596.Z, {
       loadId: module.current,
       onGuildCardClick: z,
       onGuildCardSeen: F
     }) : (0, Chunk951288.jsx)(Chunk590771.Z, {
-      selectedTab: T,
+      selectedTab: N,
       onScroll: exports,
       onGuildCardClick: z,
       onGuildCardSeen: F

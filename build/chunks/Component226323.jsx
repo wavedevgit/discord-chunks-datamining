@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 226323, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => Z
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk720711 = require("./720711.js");
 
-function T(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ function T(e) {
   return e
 }
 
-function N(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -89,7 +89,7 @@ let P = {
     }
   };
 
-function A(e) {
+function x(e) {
   var t, l;
   let p = i.useRef(null),
     {
@@ -97,21 +97,21 @@ function A(e) {
     } = (0, g.ZP)(),
     {
       channel: O,
-      user: A,
-      nick: x,
-      mute: Z,
+      user: x,
+      nick: Z,
+      mute: A,
       deaf: w,
       serverMute: L,
       serverDeaf: R
     } = e,
-    D = (0, o.e7)([y.Z], () => y.Z.isLocalMute(A.id)),
-    k = (0, d.Z)({
-      userId: A.id,
+    D = (0, o.e7)([v.Z], () => v.Z.isLocalMute(x.id)),
+    M = (0, d.Z)({
+      userId: x.id,
       checkSoundSharing: true
     }),
-    M = null != (t = O.getGuildId()) ? t : true,
-    U = A.getAvatarURL(O.guild_id, 24),
-    G = null != x ? x : v.ZP.getName(A),
+    k = null != (t = O.getGuildId()) ? t : true,
+    U = x.getAvatarURL(O.guild_id, 24),
+    G = null != Z ? Z : y.ZP.getName(x),
     {
       icon: B,
       colorize: H,
@@ -133,7 +133,7 @@ function A(e) {
       serverDeaf: R,
       deaf: w,
       serverMute: L,
-      mute: Z,
+      mute: A,
       localMute: D
     })) ? l : {},
     F = null != V ? C.intl.formatToPlainString(C.t["1+MVBA"], {
@@ -142,36 +142,36 @@ function A(e) {
     }) : G;
 
   function z(e) {
-    null != M ? (0, u.jW)(e, async () => {
+    null != k ? (0, u.jW)(e, async () => {
       let {
         default: e
       } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("52021")]).then(n.bind(n, 757387));
-      return t => (0, r.jsx)(e, N(T({}, t), {
-        user: A,
-        guildId: M,
+      return t => (0, r.jsx)(e, T(N({}, t), {
+        user: x,
+        guildId: k,
         channel: O,
         showMediaItems: true,
         onInteraction: (0, b.u)("GuildChannelUserContextMenu", h.Z.RTC_PANEL, {
-          targetUserId: A.id
+          targetUserId: x.id
         })
       }))
     }) : (0, u.jW)(e, async () => {
       let {
         default: e
       } = await Promise.all([n.e("79695"), n.e("69220")]).then(n.bind(n, 881351));
-      return t => (0, r.jsx)(e, N(T({}, t), {
-        user: A,
+      return t => (0, r.jsx)(e, T(N({}, t), {
+        user: x,
         showMediaItems: true,
         onInteraction: (0, b.u)("UserGenericContextMenu", h.Z.RTC_PANEL, {
-          targetUserId: A.id
+          targetUserId: x.id
         })
       }))
     })
   }
   return (0, r.jsx)(E.Z, {
     targetElementRef: p,
-    user: A,
-    guildId: M,
+    user: x,
+    guildId: k,
     channelId: O.id,
     position: "top",
     clickTrap: true,
@@ -187,10 +187,10 @@ function A(e) {
         focusProps: P,
         children: (0, r.jsx)(_.Z, {
           shakeLocation: I.oZ.VOICE_USER,
-          isShaking: k,
+          isShaking: M,
           children: (0, r.jsx)("div", {
             className: a()(S.avatar, {
-              [S.speaking]: k
+              [S.speaking]: M
             }),
             style: {
               backgroundImage: "url(".concat(U, ")")
@@ -209,7 +209,7 @@ function A(e) {
   })
 }
 
-function x(e) {
+function Z(e) {
   let {
     voiceStates: t,
     channel: n,
@@ -248,8 +248,8 @@ function x(e) {
       color: "currentColor"
     }),
     focusProps: P
-  }), y = b && s ? t : m;
-  return y.length <= 0 ? null : (0, r.jsx)(c.zJl, {
+  }), v = b && s ? t : m;
+  return v.length <= 0 ? null : (0, r.jsx)(c.zJl, {
     className: a()(S.scroller, l),
     fade: true,
     children: (0, r.jsxs)("div", {
@@ -257,13 +257,13 @@ function x(e) {
       className: a()(S.voiceUsers, !s && S.collapsed),
       role: "group",
       "aria-label": C.intl.string(C.t["/ZgaVV"]),
-      children: [y.map(e => {
+      children: [v.map(e => {
         let {
           user: t,
           nick: i,
           voiceState: l
         } = e;
-        return t.id !== d ? (0, r.jsx)(A, {
+        return t.id !== d ? (0, r.jsx)(x, {
           channel: n,
           user: t,
           nick: i,

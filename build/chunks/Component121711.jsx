@@ -71,9 +71,9 @@ function ed(e) {
     onLoadComplete: t
   } = e, {
     enabled: n
-  } = (0, A.WX)({
+  } = (0, x.WX)({
     location: $.dr.QUEST_HOME_DESKTOP
-  }), l = (0, u.e7)([f.Z], () => f.Z.useReducedMotion), o = (0, u.e7)([Z.Z], () => Z.Z.isFocused()), {
+  }), l = (0, u.e7)([f.Z], () => f.Z.useReducedMotion), o = (0, u.e7)([A.Z], () => A.Z.isFocused()), {
     ref: s,
     inViewport: c
   } = (0, W.a)(), d = i.useRef(null);
@@ -167,7 +167,7 @@ function ef(e) {
     children: (0, r.jsxs)(P.Z, {
       onScroll: n,
       ref: o,
-      children: [(0, r.jsx)(N.a, {
+      children: [(0, r.jsx)(T.a, {
         selectedTabId: a,
         handleTransition: l,
         tabs: c,
@@ -213,7 +213,7 @@ let eh = function(e) {
     enabled: l
   } = B.m8.useConfig({
     location: $.dr.QUEST_HOME_DESKTOP
-  }), s = (0, o.TH)(), f = (null == (t = (0, o.LX)(s.pathname, ee.Z5c.QUEST_HOME)) ? true : t.isExact) === true, O = l && f, Z = (0, u.e7)([b.Z], () => b.Z.getState("quests")), {
+  }), s = (0, o.TH)(), f = (null == (t = (0, o.LX)(s.pathname, ee.Z5c.QUEST_HOME)) ? true : t.isExact) === true, O = l && f, A = (0, u.e7)([b.Z], () => b.Z.getState("quests")), {
     selectedTab: w,
     onSelectTab: L,
     tabs: D
@@ -221,14 +221,14 @@ let eh = function(e) {
     withClaimedQuestsTab: !O
   });
   i.useLayoutEffect(() => {
-    O && w === k.e5.CLAIMED && G.Z.setState({
-      tab: k.e5.ALL
+    O && w === M.e5.CLAIMED && G.Z.setState({
+      tab: M.e5.ALL
     })
   }, [O, w]);
   let {
     onScroll: U,
     scrollPosition: F
-  } = (0, v.M)(), W = z.Z.getState().getUtmCurrentContext(), el = (0, M._)({
+  } = (0, y.M)(), W = z.Z.getState().getUtmCurrentContext(), el = (0, k._)({
     location: $.dr.QUEST_HOME_DESKTOP
   }) ? q.Z : q.j, ea = (0, K.z)(e => e.registerAssetLoad), eo = i.useRef(W);
   i.useEffect(() => {
@@ -251,7 +251,7 @@ let eh = function(e) {
   }, [w]);
   let {
     enabled: es
-  } = (0, A.WX)({
+  } = (0, x.WX)({
     location: $.dr.QUEST_HOME_DESKTOP
   }), ec = i.useCallback(() => {
     if (es) return void window.open(ee.EYA.PAID_TERMS_ORBS);
@@ -277,24 +277,24 @@ let eh = function(e) {
   i.useEffect(() => {
     l && (0, p.Y)(ee.Z5c.QUEST_HOME_V2)
   }, [l]), i.useEffect(() => {
-    y.C.trigger()
+    v.C.trigger()
   }, []);
   let em = (0, H.T)({
     location: $.dr.QUEST_PREVIEW_TOOL_2
   });
   return i.useEffect(() => {
-    if (null != Z || !em) return;
+    if (null != A || !em) return;
     let e = new URLSearchParams(s.search),
-      t = e.get(k.tR.TAB),
-      n = e.get(k.tR.QUEST_ID);
-    t === k.e5.PREVIEW_TOOL && m.Z.openNativeAppModal("quests", ee.Etm.DEEP_LINK, {
+      t = e.get(M.tR.TAB),
+      n = e.get(M.tR.QUEST_ID);
+    t === M.e5.PREVIEW_TOOL && m.Z.openNativeAppModal("quests", ee.Etm.DEEP_LINK, {
       type: en.jE.QUEST_PREVIEW_TOOL,
       params: {
         questId: n,
         tab: t
       }
     })
-  }, [s.search, Z, em]), (0, r.jsx)(Q.k.Provider, {
+  }, [s.search, A, em]), (0, r.jsx)(Q.k.Provider, {
     value: {
       onAssetLoadComplete: ea
     },
@@ -311,21 +311,21 @@ let eh = function(e) {
         tabs: D
       }) : es ? (0, r.jsxs)(X.t.Provider, {
         value: eh,
-        children: [(0, r.jsx)(N.a, {
+        children: [(0, r.jsx)(T.a, {
           selectedTabId: w,
           handleTransition: L,
           tabs: D,
           icon: d.qDn,
-          children: (0, r.jsx)(x.V9, {
+          children: (0, r.jsx)(Z.V9, {
             analyticsPage: ee.ZY5.GLOBAL_DISCOVERY_QUESTS,
-            cardAlignment: x.ek.END,
+            cardAlignment: Z.ek.END,
             ctaText: er.intl.string(er.t["J+vlIS"]),
             ctaOnClick: eg
           })
         }), (0, r.jsxs)(P.Z, {
           onScroll: U,
           ref: eh,
-          children: [w !== k.e5.PREVIEW_TOOL && (0, r.jsxs)(I.Z, {
+          children: [w !== M.e5.PREVIEW_TOOL && (0, r.jsxs)(I.Z, {
             title: eu,
             description: ep,
             button: es ? (0, r.jsxs)(d.ButtonGroup, {
@@ -360,19 +360,19 @@ let eh = function(e) {
               onLoadComplete: ea
             })]
           }), (0, r.jsx)(C.Z, {
-            children: w === k.e5.CLAIMED ? (0, r.jsx)(el, {
+            children: w === M.e5.CLAIMED ? (0, r.jsx)(el, {
               onSelectTab: L
-            }) : w === k.e5.PREVIEW_TOOL ? (0, r.jsx)(V.Z, {}) : (0, r.jsx)(Y.Z, {})
+            }) : w === M.e5.PREVIEW_TOOL ? (0, r.jsx)(V.Z, {}) : (0, r.jsx)(Y.Z, {})
           })]
         })]
       }) : (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsxs)(T.ZP, {
-          variant: T._6.OVERLAY,
+        children: [(0, r.jsxs)(N.ZP, {
+          variant: N._6.OVERLAY,
           children: [(0, r.jsx)("div", {
             className: ei.dragRegion
-          }), (0, r.jsx)(T.z6, {
+          }), (0, r.jsx)(N.z6, {
             scrollPosition: F
-          }), (0, r.jsx)(T.aV, {
+          }), (0, r.jsx)(N.aV, {
             icon: d.qDn
           })]
         }), (0, r.jsx)(X.t.Provider, {
@@ -408,9 +408,9 @@ let eh = function(e) {
                   selectedTab: w,
                   onTabSelect: L
                 })
-              }), w === k.e5.CLAIMED ? (0, r.jsx)(el, {
+              }), w === M.e5.CLAIMED ? (0, r.jsx)(el, {
                 onSelectTab: L
-              }) : w === k.e5.PREVIEW_TOOL ? (0, r.jsx)(V.Z, {}) : (0, r.jsx)(Y.Z, {})]
+              }) : w === M.e5.PREVIEW_TOOL ? (0, r.jsx)(V.Z, {}) : (0, r.jsx)(Y.Z, {})]
             })]
           })
         })]

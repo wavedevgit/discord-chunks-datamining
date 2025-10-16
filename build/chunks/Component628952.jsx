@@ -94,7 +94,7 @@ let C = e => {
       }
     },
     M = null != N && N.id !== (null == P ? true : P.id) && C.type !== c.Z.BUNDLE && L.type !== c.Z.NAMEPLATE,
-    j = () => {
+    k = () => {
       null != t && null != s && s(t)
     };
   return (0, r.jsxs)("div", {
@@ -130,7 +130,7 @@ let C = e => {
       })
     }), (0, r.jsxs)(d.P3F, {
       tag: "div",
-      onClick: j,
+      onClick: k,
       className: o()(v.previewContainer, {
         [v.previewContainerSelected]: n && null == R,
         [v.previewContainerError]: n && null != R

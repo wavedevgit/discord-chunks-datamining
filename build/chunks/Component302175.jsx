@@ -68,20 +68,20 @@ function M(e, t) {
   return n
 }
 
-function j(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function k(e) {
+function j(e) {
   let {
     guildId: t,
     powerup: n,
     onClose: a
   } = e, {
     analyticsLocations: d
-  } = (0, p.ZP)(), E = (0, O.g1)(t, "GuildPowerupMarketingPowerupCard"), b = n.skuId === u.A$, y = (0, S.ZP)(t, n).type !== C.A3.INACTIVE, T = (0, I.Z)(t), [L, M] = i.useState(false), [k, U] = i.useState(false), G = k, B = i.useCallback(() => {
+  } = (0, p.ZP)(), E = (0, O.g1)(t, "GuildPowerupMarketingPowerupCard"), b = n.skuId === u.A$, y = (0, S.ZP)(t, n).type !== C.A3.INACTIVE, T = (0, I.Z)(t), [L, M] = i.useState(false), [j, U] = i.useState(false), G = j, B = i.useCallback(() => {
     let e = g.Z.getGuild(t);
     null != e && (0, h.u)({
       analyticsLocation: {
@@ -111,7 +111,7 @@ function k(e) {
     config: F
   }), W = i.useCallback(e => {
     e && M(true)
-  }, []), K = (0, c.O)(W), z = (0, v.Z)(n, k);
+  }, []), K = (0, c.O)(W), z = (0, v.Z)(n, j);
   return (0, r.jsxs)("div", {
     className: o()(D.topPerksCard, D.animatedTopPerksCard, w.powerupCard, {
       [D.animate]: L
@@ -130,7 +130,7 @@ function k(e) {
         style: V
       })
     }), (0, r.jsxs)(s.animated.div, {
-      style: j(x({}, H), {
+      style: k(x({}, H), {
         transform: H.y.to(e => "translateY(".concat(e, "px)"))
       }),
       className: o()(D.contentContainer, w.contentContainer),
@@ -198,7 +198,7 @@ let U = 3,
         })
       }), (0, r.jsx)("div", {
         className: w.powerupsContainer,
-        children: s.map(e => (0, r.jsx)(k, {
+        children: s.map(e => (0, r.jsx)(j, {
           guildId: n.id,
           powerup: e,
           onClose: a

@@ -68,13 +68,13 @@ function M(e, t) {
   return n
 }
 
-function j(e, t) {
+function k(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : M(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 new Chunk710845.Z("ChannelEditor.tsx");
-let k = function() {
+let j = function() {
     for (var e = arguments.length, t = Array(module), n = 0; require < module; require++) exports[require] = arguments[require]
   },
   U = 1e3;
@@ -231,7 +231,7 @@ class G extends Chunk647438.Component {
       maxCharacterCount: w,
       allowNewLines: L,
       isEditorIdle: M,
-      currentAutocompleteType: k,
+      currentAutocompleteType: j,
       "aria-describedby": U,
       "aria-labelledby": G,
       accessibilityLabel: B,
@@ -274,7 +274,7 @@ class G extends Chunk647438.Component {
       spellcheckEnabled: Chunk710845,
       useNewSlashCommands: Chunk117530,
       isEditorIdle: M,
-      currentAutocompleteType: k,
+      currentAutocompleteType: j,
       disableAutoFocus: Chunk873546.tq || null != (n = Chunk476326.disableAutoFocus) && require,
       disableEnterToSubmit: null != (i = null == (e = Chunk476326.submit) ? true : module.disableEnterToSubmit) && Chunk647438,
       "aria-controls": null != (a = V.id) ? Chunk120356 : true,
@@ -285,14 +285,14 @@ class G extends Chunk647438.Component {
       "aria-describedby": U,
       "aria-labelledby": G,
       "aria-autocomplete": "list"
-    }, Y = Chunk998698 ? (0, Chunk951288.jsx)(Chunk4484.Z, j(x({
+    }, Y = Chunk998698 ? (0, Chunk951288.jsx)(Chunk4484.Z, k(x({
       ref: this.ref
     }, H), {
       type: Chunk476326,
       value: u && !Z ? (0, Chunk752305.JM)("") : Chunk218887,
       canUseCommands: null == (t = Chunk476326.commands) ? true : exports.enabled,
       canOnlyUseTextCommands: Chunk403182
-    })) : (0, Chunk951288.jsx)(Chunk140963.Z, j(x({
+    })) : (0, Chunk951288.jsx)(Chunk140963.Z, k(x({
       ref: this.ref
     }, H), {
       value: u && !Z ? "" : l
@@ -421,7 +421,7 @@ class G extends Chunk647438.Component {
           files: I,
           errors: T
         } = B(e.clipboardData, u.uploadLongMessages ? v : null);
-      return (k("onPaste", [...e.clipboardData.items].map(e => {
+      return (j("onPaste", [...e.clipboardData.items].map(e => {
         if ("file" !== e.kind) return {
           kind: e.kind,
           type: e.type

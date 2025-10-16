@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function T(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ function T(e) {
   return e
 }
 
-function N(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -81,19 +81,19 @@ function j(e) {
         platform: P
       })
     })
-  }(e), A = function(e) {
+  }(e), x = function(e) {
     let {
       currentActivities: t
-    } = e, n = i.useContext(y.AnalyticsContext);
+    } = e, n = i.useContext(v.AnalyticsContext);
     return (0, l.Wu)([f.ZP, E.Z, h.Z, O.Z, _.Z], () => t.filter(e => !(0, d.Z)(e.activity)).map(e => {
       let {
         activity: t,
         game: r
       } = e, i = E.Z.getActiveLibraryApplication(r.id);
-      return N(T({}, e), {
+      return T(N({}, e), {
         libraryApplication: i,
         canJoin: null != t && (0, u.Z)(t, C.xjy.JOIN) && t.type === C.IIU.PLAYING,
-        canPlay: (0, v.t)({
+        canPlay: (0, y.t)({
           LibraryApplicationStore: E.Z,
           LaunchableGameStore: h.Z,
           DispatchApplicationStore: O.Z,
@@ -106,12 +106,12 @@ function j(e) {
         location: n.location
       })
     }), [n.location, t])
-  }(e), x = [];
-  for (let e of A) {
+  }(e), Z = [];
+  for (let e of x) {
     let {
       activity: t
     } = e;
-    null != t && null != t.type && x.push(function(e, t) {
+    null != t && null != t.type && Z.push(function(e, t) {
       let {
         canJoin: n,
         activity: i,
@@ -156,7 +156,7 @@ function j(e) {
         action: function() {
           (0, I.playApplication)(i.id, l, {
             analyticsParams: {
-              location: N(T({}, o), {
+              location: T(N({}, o), {
                 object: C.qAy.LIST_ITEM
               })
             }
@@ -169,5 +169,5 @@ function j(e) {
       })
     }(e, n))
   }
-  return [j, ...x]
+  return [j, ...Z]
 }

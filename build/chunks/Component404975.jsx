@@ -163,6 +163,7 @@ function g(e) {
   } = e, i = null == (t = n.useLabel) ? true : t.call(n);
   return (0, r.jsxs)("ul", {
     className: m.section,
+    "aria-label": i,
     children: [null != i && (0, r.jsx)("div", {
       className: m.sectionLabel,
       children: (0, r.jsx)(s.Heading, {
@@ -171,12 +172,10 @@ function g(e) {
         color: "text-tertiary",
         children: i
       })
-    }), n.layout.map(e => (0, r.jsx)("li", {
-      children: (0, r.jsx)(y.y, {
-        node: e,
-        visibleContent: l,
-        hoisted: o
-      })
+    }), n.layout.map(e => (0, r.jsx)(y.y, {
+      node: e,
+      visibleContent: l,
+      hoisted: o
     }, e.key))]
   })
 }

@@ -137,7 +137,7 @@ class eM {
   }
 }
 
-function ej(e) {
+function ek(e) {
   let {
     content: t,
     channelId: n,
@@ -152,7 +152,7 @@ function ej(e) {
       code: c,
       url: u
     } = e;
-    if (t === b.g.INVITE) ek({
+    if (t === b.g.INVITE) ej({
       inviteKey: c,
       channelId: n,
       messageId: r,
@@ -204,7 +204,7 @@ function ej(e) {
   })
 }
 
-function ek(e) {
+function ej(e) {
   var t, n;
   let {
     inviteKey: r,
@@ -724,7 +724,7 @@ let eZ = {
       });
       let s = () => eF._sendMessage(e, t, i),
         l = x.ZP.backgroundify(s, true);
-      return (j.Z.recordMessageSendAttempt(e, o, i), el.Z.isReady(e)) ? l() : r && e !== E.V ? (eL.info("Waiting for channel ".concat(e, " to be ready before sending.")), new Promise((t, n) => {
+      return (k.Z.recordMessageSendAttempt(e, o, i), el.Z.isReady(e)) ? l() : r && e !== E.V ? (eL.info("Waiting for channel ".concat(e, " to be ready before sending.")), new Promise((t, n) => {
         el.Z.whenReady(e, () => {
           eL.info("Channel ".concat(e, " is ready for sending now.")), l().then(t, n)
         })
@@ -836,7 +836,7 @@ let eZ = {
         context: {
           location: eS.dy.GREET
         }
-      }).then(n => (k.Z.donateSentMessage(n.body.content, e), eF.receiveMessage(e, n.body), s.Z.dispatch({
+      }).then(n => (j.Z.donateSentMessage(n.body.content, e), eF.receiveMessage(e, n.body), s.Z.dispatch({
         type: "STICKER_TRACK_USAGE",
         stickerIds: [t]
       }), n), t => {
@@ -988,7 +988,7 @@ let eZ = {
         eL.info("Queueing message to be sent LogId:".concat(o)), u.ZP.enqueue(eo, o => {
           let c = Date.now() - i;
           if (o.ok) {
-            k.Z.donateSentMessage(d, e), eF.receiveMessage(e, o.body, true, {
+            j.Z.donateSentMessage(d, e), eF.receiveMessage(e, o.body, true, {
               sendAnalytics: {
                 duration: c,
                 queueSize: a
@@ -1016,7 +1016,7 @@ let eZ = {
                 joinRequestUserId: n
               })
             }
-            j.Z.recordMessageSendApiResponse(en), s.Z.dispatch({
+            k.Z.recordMessageSendApiResponse(en), s.Z.dispatch({
               type: "SLOWMODE_RESET_COOLDOWN",
               slowmodeType: ef.S.SendMessage,
               channelId: e
@@ -1032,7 +1032,7 @@ let eZ = {
                 channel_id: e,
                 author: e_.default.getCurrentUser()
               }
-            }), ej({
+            }), ek({
               content: d,
               channelId: e,
               messageId: o.body.id,
@@ -1256,6 +1256,6 @@ let eZ = {
         confirmText: eA.intl.string(eA.t.BddRzc)
       })
     }),
-    trackInvite: ek
+    trackInvite: ej
   },
   eV = eF

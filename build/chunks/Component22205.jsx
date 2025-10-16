@@ -2,7 +2,7 @@
 /** chunk id: 22205, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => k
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -81,7 +81,7 @@ function x(e) {
       e.stopPropagation(), null == o || o(), null == c || c()
     }, [c, o]),
     M = (0, d.e7)([S.ZP], () => S.ZP.getFocusedRunningGame()),
-    j = g ? (0, r.jsxs)("div", {
+    k = g ? (0, r.jsxs)("div", {
       children: [(0, r.jsx)(f.Text, {
         variant: "text-md/semibold",
         color: "text-primary",
@@ -104,12 +104,12 @@ function x(e) {
         })]
       })]
     }) : null,
-    k = g ? null : R.intl.string(R.t.oEJEFh),
+    j = g ? null : R.intl.string(R.t.oEJEFh),
     U = null != (t = null == I ? true : I.isStaff()) && t || null != (n = null == I ? true : I.isStaffPersonal()) && n;
   return (0, r.jsx)(A.Y, {
     title: R.intl.string(R.t.U38qZm),
-    body: j,
-    hint: U ? k : true,
+    body: k,
+    hint: U ? j : true,
     confirmText: R.intl.string(R.t.a3HlgI),
     cancelText: null != M ? R.intl.string(R.t.qIYnPj) : true,
     icon: (0, r.jsx)(b.Z, {
@@ -205,4 +205,4 @@ class M extends Chunk647438.PureComponent {
     }), w(this, "pid", null)
   }
 }
-let j = M
+let k = M

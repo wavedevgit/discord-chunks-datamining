@@ -59,20 +59,20 @@ let E = (0, Chunk703912.Z)(e => {
     parsedPermissions: f,
     responseType: E,
     redirectUri: O,
-    codeChallenge: y,
-    codeChallengeMethod: v,
+    codeChallenge: v,
+    codeChallengeMethod: y,
     state: I,
     guildId: C,
     channelId: S,
-    prompt: T,
-    disableGuildSelect: N,
+    prompt: N,
+    disableGuildSelect: T,
     disclosures: P,
     integrationType: j,
-    pid: A,
-    signal: x
-  } = e, Z = "OAuth2Authorize_".concat(n, "_").concat(C, "_").concat(S), w = null != j ? null == u ? true : u.get(j) : true, L = null != (t = null == w ? true : w.application) ? t : a.Z.getApplication(n);
+    pid: x,
+    signal: Z
+  } = e, A = "OAuth2Authorize_".concat(n, "_").concat(C, "_").concat(S), w = null != j ? null == u ? true : u.get(j) : true, L = null != (t = null == w ? true : w.application) ? t : a.Z.getApplication(n);
   return new Promise((e, t) => {
-    let a = (0, h.jU)(A),
+    let a = (0, h.jU)(x),
       w = i.z1l;
     null != L && null != (0, l.ZP)({
       application: L,
@@ -106,7 +106,7 @@ let E = (0, Chunk703912.Z)(e => {
         }
       },
       {
-        cleanup: k
+        cleanup: M
       } = function(e, t) {
         function n() {
           (0, i.Mr3)(e) && (0, i.h7j)(e => (0, r.jsx)(s.j, _(b({}, e), {
@@ -123,7 +123,7 @@ let E = (0, Chunk703912.Z)(e => {
             null == t || t.removeEventListener("abort", n)
           }
         }
-      }(Z, x);
+      }(A, Z);
     (0, i.h7j)(e => (0, r.jsx)(o.OAuth2AuthorizeModal, _(b({}, e), {
       authorizations: u,
       clientId: n,
@@ -132,20 +132,20 @@ let E = (0, Chunk703912.Z)(e => {
       callback: D,
       responseType: E,
       redirectUri: O,
-      codeChallenge: y,
-      codeChallengeMethod: v,
+      codeChallenge: v,
+      codeChallengeMethod: y,
       state: I,
       permissions: f,
       guildId: C,
       channelId: S,
-      prompt: T,
-      disableGuildSelect: "boolean" == typeof N ? N : "true" === N,
+      prompt: N,
+      disableGuildSelect: "boolean" == typeof T ? T : "true" === T,
       integrationType: j,
       cancelCompletesFlow: true
     })), {
-      modalKey: Z,
+      modalKey: A,
       onCloseCallback: () => {
-        k(), R || (t(new p.Z({
+        M(), R || (t(new p.Z({
           errorCode: g.lTL.OAUTH2_ERROR
         }, "User cancelled authorization")), a.lock())
       }

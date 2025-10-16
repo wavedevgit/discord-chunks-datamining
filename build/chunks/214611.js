@@ -1,43 +1,44 @@
-/** Chunk was on 1272 **/
-/** chunk id: 214611, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 214611, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  C: () => s
+  C: () => l
 }), require("./980754.js"), require("./388685.js"), require("./415506.js");
 var Chunk230367 = require("./230367.js"),
   Chunk320215 = require("./320215.js"),
   Chunk240773 = require("./240773.js"),
   Chunk495852 = require("./495852.js");
-class o extends Chunk495852.C {
+class s extends Chunk495852.C {
   create(e) {
     let t = {
       badgeLabel: "",
       acknowledgedBadgeLabel: ""
     };
-    return globalThis.Object.defineProperty(t, l.C, {
+    return globalThis.Object.defineProperty(t, a.C, {
       enumerable: false,
       value: this
     }), true !== e && (0, i.l)(this, t, e), t
   }
   internalBinaryRead(e, t, n, i) {
-    let l = null != i ? i : this.create(),
-      a = e.pos + t;
-    for (; e.pos < a;) {
+    let a = null != i ? i : this.create(),
+      o = e.pos + t;
+    for (; e.pos < o;) {
       let [t, i] = e.tag();
       switch (t) {
         case 1:
-          l.badgeLabel = e.string();
+          a.badgeLabel = e.string();
           break;
         case 2:
-          l.acknowledgedBadgeLabel = e.string();
+          a.acknowledgedBadgeLabel = e.string();
           break;
         default:
-          let a = n.readUnknownField;
-          if ("throw" === a) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
-          let o = e.skip(i);
-          false !== a && (true === a ? r.z.onRead : a)(this.typeName, l, t, i, o)
+          let o = n.readUnknownField;
+          if ("throw" === o) throw new globalThis.Error("Unknown field ".concat(t, " (wire type ").concat(i, ") for ").concat(this.typeName));
+          let s = e.skip(i);
+          false !== o && (true === o ? r.z.onRead : o)(this.typeName, a, t, i, s)
       }
     }
-    return l
+    return a
   }
   internalBinaryWrite(e, t, n) {
     "" !== e.badgeLabel && t.tag(1, r.TD.LengthDelimited).string(e.badgeLabel), "" !== e.acknowledgedBadgeLabel && t.tag(2, r.TD.LengthDelimited).string(e.acknowledgedBadgeLabel);
@@ -58,4 +59,4 @@ class o extends Chunk495852.C {
     }])
   }
 }
-let s = new o
+let l = new s

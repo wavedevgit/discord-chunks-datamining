@@ -336,7 +336,7 @@ let M = {
   "\uD83D\uDD25": "M3 14a9 9 0 1 0 18 0c0-2.63-.61-5.22-1.79-7.58L18.2 4.38a.7.7 0 0 0-1.3.18l-.78 3.9a.66.66 0 0 1-1.27.11L12.22 1.6a.9.9 0 0 0-1.48-.33l-4.2 4.2A12.07 12.07 0 0 0 3 14Zm9.26-.84a.57.57 0 0 0-1-.23L9.6 15a3.08 3.08 0 1 0 5.12.48c-.14-.26-.5-.28-.71-.06L13 16.5l-.74-3.34Z"
 };
 
-function j(e, t, n, i, a) {
+function k(e, t, n, i, a) {
   let o = M[i];
   if (null != o) {
     let i = n / 20;
@@ -364,7 +364,7 @@ function j(e, t, n, i, a) {
   })
 }
 
-function k(e, t, n, i) {
+function j(e, t, n, i) {
   let {
     status: a,
     isMobile: o,
@@ -387,7 +387,7 @@ function k(e, t, n, i) {
       rx: u.avatarCutoutRadius,
       ry: u.avatarCutoutRadius,
       fill: "black"
-    }), null != i && j(l, c, t.status, i, t)]
+    }), null != i && k(l, c, t.status, i, t)]
   })
 }
 
@@ -596,11 +596,11 @@ function V(e) {
     avatarTooltipAsset: P,
     avatarTooltipText: L,
     avatarTooltipTitle: M
-  } = e, j = n !== h.Skl.UNKNOWN ? n : null, B = (0, g.UC)(a), V = null != j ? Math.ceil((B.status * g.D6 - B.status) / 2) : 0, H = B.size + V, Y = (0, u.vj)(j, s), W = i.useId();
+  } = e, k = n !== h.Skl.UNKNOWN ? n : null, B = (0, g.UC)(a), V = null != k ? Math.ceil((B.status * g.D6 - B.status) / 2) : 0, H = B.size + V, Y = (0, u.vj)(k, s), W = i.useId();
   return (0, r.jsx)(Z, I(O({}, e), {
     ariaLabel: A,
     ariaHidden: S,
-    status: j,
+    status: k,
     specs: B,
     typingOffset: V,
     children: (0, r.jsxs)("svg", {
@@ -610,8 +610,8 @@ function V(e) {
       viewBox: "0 0 ".concat(H, " ").concat(H),
       className: o()(b.mask, b.svg),
       "aria-hidden": true,
-      children: [null != P && k(W, B, {
-        status: j,
+      children: [null != P && j(W, B, {
+        status: k,
         isMobile: l,
         isTyping: f
       }, P), (0, r.jsx)("foreignObject", {
@@ -619,24 +619,24 @@ function V(e) {
         y: 0,
         width: B.size,
         height: B.size,
-        mask: null != P ? "url(#".concat(W, ")") : "url(#".concat(w(j, a, l, f), ")"),
+        mask: null != P ? "url(#".concat(W, ")") : "url(#".concat(w(k, a, l, f), ")"),
         children: (0, r.jsx)(F, {
           ref: m,
           src: t,
           isSpeaking: E,
           className: C
         })
-      }), null != j && null != T ? x(T, l, B, j) : null, null != j ? (0, r.jsx)(d.aM, {
+      }), null != k && null != T ? x(T, l, B, k) : null, null != k ? (0, r.jsx)(d.aM, {
         "data-migration-pending": true,
-        text: y ? (0, p.u5)(j) : null,
+        text: y ? (0, p.u5)(k) : null,
         "aria-label": false,
         position: "top",
         spacing: 5 + 1.5 * B.stroke,
         delay: v,
         children: e => (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)("rect", I(O({}, e, D(B, j, l, f)), {
+          children: [(0, r.jsx)("rect", I(O({}, e, D(B, k, l, f)), {
             fill: Y,
-            mask: "url(#".concat((0, u.rs)(j, l, f), ")"),
+            mask: "url(#".concat((0, u.rs)(k, l, f), ")"),
             className: b.pointerEvents
           })), f ? (0, r.jsx)(c.b, {
             ref: _,
@@ -688,7 +688,7 @@ function W(e) {
     "aria-hidden": D = false,
     "aria-label": L,
     imageClassName: M,
-    pulseStatusIcon: k,
+    pulseStatusIcon: j,
     CutoutIcon: V,
     avatarTooltipAsset: W,
     avatarTooltipText: K,
@@ -727,14 +727,14 @@ function W(e) {
     from: {
       scale: 1
     },
-    to: k ? [{
+    to: j ? [{
       scale: .8
     }, {
       scale: 1.1
     }, {
       scale: 1
     }] : []
-  }, C() ? "animate-always" : "animate-never", [k, v]);
+  }, C() ? "animate-always" : "animate-never", [j, v]);
   return (0, r.jsx)(Z, I(O({}, e), {
     ariaLabel: L,
     ariaHidden: D,
@@ -763,7 +763,7 @@ function W(e) {
           height: ei,
           rx: ea,
           ry: ea
-        }), null != W && j(ec.size - ec.status - ec.offset, ec.offset, ec.status, W, ec)]
+        }), null != W && k(ec.size - ec.status - ec.offset, ec.offset, ec.status, W, ec)]
       }), (0, r.jsx)("foreignObject", {
         className: b.__invalid_foreignObject,
         x: 0,

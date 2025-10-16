@@ -2,23 +2,23 @@
 /** chunk id: 626135, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.r(exports), require.d(exports, {
-  AnalyticEventConfigs: () => Z,
-  AnalyticsContext: () => C,
+  AnalyticEventConfigs: () => F,
+  AnalyticsContext: () => N,
   AnalyticsSchema: () => Chunk747161,
-  addExtraAnalyticsDecorator: () => B,
-  clearAnalyticsEventsRecording: () => et,
-  debugLogEvent: () => q,
-  default: () => el,
-  expandEventProperties: () => z,
-  expandLocation: () => F,
-  getAnalyticsEventsRecording: () => ee,
-  getNewAnalyticsLoadId: () => es,
-  isGameApplicationType: () => ea,
-  launchSignature: () => U,
-  setUTMContext: () => K,
-  startRecordingAnalyticsEvents: () => J,
-  stopRecordingAnalyticsEvents: () => $,
-  trackNetworkAction: () => eo
+  addExtraAnalyticsDecorator: () => Z,
+  clearAnalyticsEventsRecording: () => en,
+  debugLogEvent: () => X,
+  default: () => ec,
+  expandEventProperties: () => q,
+  expandLocation: () => V,
+  getAnalyticsEventsRecording: () => et,
+  getNewAnalyticsLoadId: () => el,
+  isGameApplicationType: () => eo,
+  launchSignature: () => G,
+  setUTMContext: () => z,
+  startRecordingAnalyticsEvents: () => $,
+  stopRecordingAnalyticsEvents: () => ee,
+  trackNetworkAction: () => es
 }), require("./539854.js"), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk772848 = require("./772848.js"),
@@ -26,6 +26,7 @@ var Chunk647438 = require("./647438.js"),
   Chunk548345 = require("./548345.js"),
   Chunk668757 = require("./668757.js"),
   Chunk570140 = require("./570140.js"),
+  Chunk100527 = require("./100527.js"),
   Chunk565384 = require("./565384.js"),
   Chunk569611 = require("./569611.js"),
   Chunk97145 = require("./97145.js"),
@@ -38,7 +39,7 @@ var Chunk647438 = require("./647438.js"),
   Chunk674563 = require("./674563.js"),
   Chunk388032 = require("./388032.jsx");
 
-function y(e, t, n) {
+function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -47,20 +48,20 @@ function y(e, t, n) {
   }) : e[t] = n, e
 }
 
-function O(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      O(e, t, n[t])
     })
   }
   return e
 }
 
-function v(e, t) {
+function I(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -71,15 +72,15 @@ function v(e, t) {
   return n
 }
 
-function I(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : v(Object(t)).forEach(function(n) {
+function T(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : I(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function T(e, t) {
+function S(e, t) {
   if (null == e) return {};
-  var n, r, i = S(e, t);
+  var n, r, i = A(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -87,234 +88,234 @@ function T(e, t) {
   return i
 }
 
-function S(e, t) {
+function A(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let A = {
+let C = {
     location: {}
   },
-  C = Chunk647438.createContext(A),
-  N = {},
-  R = 1e4,
-  P = 6e4,
-  w = 12e4,
-  D = 3e5,
-  L = 9e5,
-  x = 36e5,
-  M = 864e5,
+  N = Chunk647438.createContext(C),
+  R = {},
+  P = 1e4,
+  w = 6e4,
+  D = 12e4,
+  L = 3e5,
+  x = 9e5,
+  M = 36e5,
+  k = 864e5,
   j = .001,
-  k = performance.now(),
-  U = (0, Chunk668757.X6)() ? (0, Chunk668757.Ub)((0, Chunk548345.R)()) : null;
+  U = performance.now(),
+  G = (0, Chunk668757.X6)() ? (0, Chunk668757.Ub)((0, Chunk548345.R)()) : null;
 Chunk990547.extendSuperProperties({
-  launch_signature: U
+  launch_signature: G
 });
-let G = [];
+let B = [];
 
-function B(e) {
-  G.push(e)
+function Z(e) {
+  B.push(e)
 }
-let Z = {
+let F = {
   [Chunk981631.rMx.APP_OPENED]: {
-    throttlePeriod: D,
+    throttlePeriod: L,
     throttleKeys: () => []
   },
   [Chunk981631.rMx.APP_BACKGROUND]: {
-    throttlePeriod: w,
+    throttlePeriod: D,
     throttleKeys: () => []
   },
-  [Chunk981631.rMx.ACK_MESSAGES]: e => e.location_object_type === m.Qqv.ACK_MANUAL ? true : {
-    throttlePeriod: L,
+  [Chunk981631.rMx.ACK_MESSAGES]: e => e.location_object_type === g.Qqv.ACK_MANUAL ? true : {
+    throttlePeriod: x,
     throttleKeys: e => [e.guild_id, e.channel_id, e.location_section]
   },
   [Chunk981631.rMx.GUILD_VIEWED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.guild_id, e.is_pending]
   },
   [Chunk981631.rMx.FRIENDS_LIST_CLICKED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.tab_opened]
   },
   [Chunk981631.rMx.FRIENDS_LIST_VIEWED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.tab_opened]
   },
   [Chunk981631.rMx.NOW_PLAYING_CARD_HOVERED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.tab_opened]
   },
   [Chunk981631.rMx.START_SPEAKING]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.server]
   },
   [Chunk981631.rMx.START_LISTENING]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.server]
   },
   [Chunk981631.rMx.ACTIVITY_UPDATED]: {
-    throttlePeriod: P,
+    throttlePeriod: w,
     throttleKeys: e => [e.application_id],
     deduplicate: true
   },
   [Chunk981631.rMx.CHANNEL_OPENED]: {
-    throttlePeriod: L,
-    throttleKeys: e => null != e.channel_static_route ? [e.guild_id, e.channel_static_route, e.channel_view] : [e.channel_id, e.channel_view]
+    throttlePeriod: x,
+    throttleKeys: e => null != e.channel_static_route ? [e.guild_id, e.channel_static_route, e.channel_view] : null != e.location && e.location.startsWith(c.Z.FREQUENT_FRIENDS_ROW) ? [e.channel_id, e.channel_view, e.location] : [e.channel_id, e.channel_view]
   },
   [Chunk981631.rMx.TEXT_IN_VOICE_OPENED]: {
-    throttlePeriod: M,
+    throttlePeriod: k,
     throttleKeys: e => [e.channel_id]
   },
   [Chunk981631.rMx.NOTIFICATION_VIEWED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.notif_type]
   },
   [Chunk981631.rMx.MEMBER_LIST_VIEWED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.channel_id]
   },
   [Chunk981631.rMx.DM_LIST_VIEWED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.channel_id]
   },
   [Chunk981631.rMx.NAV_DRAWER_OPENED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: () => []
   },
   [Chunk981631.rMx.KEYBOARD_SHORTCUT_USED]: {
-    throttlePeriod: w,
+    throttlePeriod: D,
     throttleKeys: e => {
       var t;
       return [e.shortcut_name, e.location_object, ...null != (t = e.source_class_list) ? t : []]
     }
   },
   [Chunk981631.rMx.QUICKSWITCHER_OPENED]: {
-    throttlePeriod: R,
+    throttlePeriod: P,
     throttleKeys: () => []
   },
   [Chunk981631.rMx.CHAT_INPUT_COMPONENT_VIEWED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.type]
   },
   [Chunk981631.rMx.ROLE_PAGE_VIEWED]: {
-    throttlePeriod: w,
+    throttlePeriod: D,
     throttleKeys: e => [e.role_id, e.tab_opened]
   },
   [Chunk981631.rMx.VIDEO_INPUT_INITIALIZED]: {
-    throttlePeriod: D,
+    throttlePeriod: L,
     throttleKeys: () => []
   },
   [Chunk981631.rMx.AUDIO_INPUT_INITIALIZED]: {
-    throttlePeriod: D,
+    throttlePeriod: L,
     throttleKeys: () => []
   },
   [Chunk981631.rMx.HUB_ONBOARDING_CAROUSEL_SCROLLED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: () => []
   },
   [Chunk981631.rMx.HUB_STUDENT_PROMPT_CLICKED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: () => []
   },
   [Chunk981631.rMx.RPC_SERVER_ERROR_CAUGHT]: {
-    throttlePeriod: M,
+    throttlePeriod: k,
     throttleKeys: () => []
   },
   [Chunk981631.rMx.RPC_COMMAND_SENT]: {
-    throttlePeriod: M,
+    throttlePeriod: k,
     throttleKeys: e => [e.application_id, e.command],
     throttlePercent: j
   },
   [Chunk981631.rMx.RPC_SUBSCRIPTION_REQUESTED]: {
-    throttlePeriod: M,
+    throttlePeriod: k,
     throttleKeys: e => [e.application_id, e.event],
     throttlePercent: j
   },
   [Chunk981631.rMx.ACTIVITY_HANDSHAKE]: {
-    throttlePeriod: M,
+    throttlePeriod: k,
     throttleKeys: e => [e.application_id]
   },
   [Chunk981631.rMx.CHANNEL_BANNER_VIEWED]: {
-    throttlePeriod: M,
+    throttlePeriod: k,
     throttleKeys: e => [e.banner_type, e.channel_id]
   },
   [Chunk981631.rMx.PREMIUM_UPSELL_VIEWED]: {
-    throttlePeriod: P,
+    throttlePeriod: w,
     throttleKeys: e => [e.type]
   },
   [Chunk981631.rMx.FORUM_CHANNEL_SEARCHED]: {
-    throttlePeriod: P,
+    throttlePeriod: w,
     throttleKeys: e => [e.guild_id, e.channel_id]
   },
   [Chunk981631.rMx.FORUM_CHANNEL_SCROLLED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.guild_id, e.channel_id]
   },
   [Chunk981631.rMx.VOICE_CHANNEL_GAME_ACTIVITY_INDICATOR_VIEWED]: {
-    throttlePeriod: P,
+    throttlePeriod: w,
     throttleKeys: e => [e.user_id]
   },
   [Chunk981631.rMx.MEDIA_VIEWER_SESSION_COMPLETED]: {
-    throttlePeriod: P,
+    throttlePeriod: w,
     throttleKeys: () => []
   },
   [Chunk981631.rMx.SUMMARIES_UNREAD_BAR_VIEWED]: {
-    throttlePeriod: D,
+    throttlePeriod: L,
     throttleKeys: e => [e.channel_id]
   },
   [Chunk981631.rMx.ACTIVITY_CARDS_VIEWED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.context, e.guild_id]
   },
   [Chunk981631.rMx.GUILD_TOOLTIP_SHOWN]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.guild_id]
   },
   [Chunk981631.rMx.ACK_COMMUNITY_MESSAGES]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.channel_id]
   },
   [Chunk981631.rMx.REDESIGN_NAV_BAR_CLICKED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.tab]
   },
   [Chunk981631.rMx.CHANNEL_LIST_END_REACHED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.guild_id]
   },
   [Chunk981631.rMx.EXPLICIT_MEDIA_REDACTABLE_MESSAGES_LOADED]: {
-    throttlePeriod: P,
+    throttlePeriod: w,
     throttleKeys: e => [e.guild_id, e.channel_id]
   },
   [Chunk981631.rMx.LIVE_ACTIVITY_SETTINGS_UPDATED]: {
-    throttlePeriod: x,
+    throttlePeriod: M,
     throttleKeys: () => []
   },
   [Chunk981631.rMx.KEYWORD_FILTER_MATCH]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.message_id]
   },
   [Chunk981631.rMx.MEDIA_INPUT_VOLUME_CHANGED]: {
-    throttlePeriod: D,
+    throttlePeriod: L,
     throttleKeys: e => [e.location_stack]
   },
   [Chunk981631.rMx.MEDIA_OUTPUT_VOLUME_CHANGED]: {
-    throttlePeriod: D,
+    throttlePeriod: L,
     throttleKeys: e => [e.location_stack]
   },
   [Chunk981631.rMx.APP_DMS_QUICK_LAUNCHER_IMPRESSION]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.channel_id]
   },
   [Chunk981631.rMx.USER_VOICE_ACTIVITY_VIEWED]: {
-    throttlePeriod: D,
+    throttlePeriod: L,
     throttleKeys: e => [e.activity_user_id, e.surface],
     deduplicate: true
   },
   [Chunk981631.rMx.PARTY_VOICE_ACTIVITY_VIEWED]: {
-    throttlePeriod: D,
+    throttlePeriod: L,
     throttleKeys: e => [e.voice_channel_id],
     deduplicate: true
   },
@@ -323,44 +324,44 @@ let Z = {
     throttleKeys: e => [e.channel_id]
   },
   [Chunk981631.rMx.REDACTABLE_MESSAGE_LOADED]: {
-    throttlePeriod: L,
+    throttlePeriod: x,
     throttleKeys: e => [e.channel_id, e.message_id]
   },
-  [Chunk981631.rMx.OPEN_MODAL]: e => e.type === m.jXE.MEDIA_VIEWER ? {
-    throttlePeriod: P,
+  [Chunk981631.rMx.OPEN_MODAL]: e => e.type === g.jXE.MEDIA_VIEWER ? {
+    throttlePeriod: w,
     throttleKeys: e => [e.type]
   } : true,
   [Chunk981631.rMx.MODERATOR_QUEUE_ACTION]: {
-    throttlePeriod: R,
+    throttlePeriod: P,
     throttleKeys: e => [e.guild_id]
   },
   [Chunk981631.rMx.NOTIFICATION_PERMISSION_STATUS]: {
-    throttlePeriod: 12 * x,
+    throttlePeriod: 12 * M,
     throttleKeys: e => [e.os_enabled, e.notification_authorization_status, e.foreground_app_enabled, e.background_app_enabled]
   },
   [Chunk981631.rMx.SEARCH_BAR_VIEWED]: {
-    throttlePeriod: x,
+    throttlePeriod: M,
     throttleKeys: e => [e.search_type]
   },
   [Chunk981631.rMx.AD_IDENTIFIER_FETCHED]: {
-    throttlePeriod: M,
+    throttlePeriod: k,
     throttleKeys: () => []
   },
   [Chunk981631.rMx.ACTIVITY_PANEL_SDK_LINK_VIEWED]: {
-    throttlePeriod: M,
+    throttlePeriod: k,
     throttleKeys: e => [e.application_id]
   },
   [Chunk981631.rMx.LIBDISCORE_SLOW_TIMERS]: {
-    throttlePeriod: x,
+    throttlePeriod: M,
     throttleKeys: () => []
   },
   [Chunk981631.rMx.DEBUG_MISSING_STRING]: {
-    throttlePeriod: x,
+    throttlePeriod: M,
     throttleKeys: () => []
   }
 };
 
-function F(e) {
+function V(e) {
   return "string" == typeof e ? {
     location: e
   } : {
@@ -372,7 +373,7 @@ function F(e) {
   }
 }
 
-function V(e) {
+function H(e) {
   return "string" == typeof e ? {
     source: e
   } : {
@@ -383,115 +384,115 @@ function V(e) {
     source_promotion_id: e.promotionId
   }
 }
-let H = () => Chunk94752.E.NONE;
+let Y = () => Chunk94752.E.NONE;
 
-function Y(e) {
-  H = e
+function W(e) {
+  Y = e
 }
-let W = (0, Chunk990547.trackMaker)({
-  analyticEventConfigs: Z,
+let K = (0, Chunk990547.trackMaker)({
+  analyticEventConfigs: F,
   dispatcher: Chunk570140.Z,
   TRACK_ACTION_NAME: "TRACK"
 });
 
-function K(e) {
-  return N = e
+function z(e) {
+  return R = e
 }
 
-function z(e) {
+function q(e) {
   var t, n, r, i;
   let a = null != e ? e : {};
   if (null != a.location) {
     let {
       location: e
     } = a;
-    a = O({}, T(a, ["location"]), F(e))
+    a = v({}, S(a, ["location"]), V(e))
   }
   if (null != a.source) {
     let {
       source: e
     } = a;
-    a = O({}, T(a, ["source"]), V(e))
+    a = v({}, S(a, ["source"]), H(e))
   }
-  a.client_performance_cpu = p.Z.getCurrentCPUUsagePercent(), a.client_performance_memory = p.Z.getCurrentMemoryUsageKB(), a.cpu_core_count = p.Z.getCPUCoreCount(), a.accessibility_features = H(), a.rendered_locale = b.intl.currentLocale, a.uptime_app = Math.floor((performance.now() - k) / 1e3);
-  let o = p.Z.getProcessUptime();
+  a.client_performance_cpu = h.Z.getCurrentCPUUsagePercent(), a.client_performance_memory = h.Z.getCurrentMemoryUsageKB(), a.cpu_core_count = h.Z.getCPUCoreCount(), a.accessibility_features = Y(), a.rendered_locale = y.intl.currentLocale, a.uptime_app = Math.floor((performance.now() - U) / 1e3);
+  let o = h.Z.getProcessUptime();
   null != o && (a.uptime_process_renderer = Math.floor(o));
   let {
     utmSource: s,
     utmMedium: l,
     utmCampaign: c,
     utmContent: u
-  } = N;
-  return a.utm_source = null != (t = a.utm_source) ? t : s, a.utm_medium = null != (n = a.utm_medium) ? n : l, a.utm_campaign = null != (r = a.utm_campaign) ? r : c, a.utm_content = null != (i = a.utm_content) ? i : u, a.launch_signature = U, G.forEach(e => e(a)), a
+  } = R;
+  return a.utm_source = null != (t = a.utm_source) ? t : s, a.utm_medium = null != (n = a.utm_medium) ? n : l, a.utm_campaign = null != (r = a.utm_campaign) ? r : c, a.utm_content = null != (i = a.utm_content) ? i : u, a.launch_signature = G, B.forEach(e => e(a)), a
 }
 
-function q(e, t) {
+function X(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
-  f.default.isLoggingAnalyticsEvents && console.info("AnalyticsUtils.track(...):", e, t), n ? u.Hj("Analytics", e, t) : u.Hj("Analytics", e)
+  _.default.isLoggingAnalyticsEvents && console.info("AnalyticsUtils.track(...):", e, t), n ? d.Hj("Analytics", e, t) : d.Hj("Analytics", e)
 }
-let X = false,
-  Q = {};
-
-function J() {
-  X = true
-}
+let Q = false,
+  J = {};
 
 function $() {
-  X = false
+  Q = true
 }
 
 function ee() {
-  return Q
+  Q = false
 }
 
 function et() {
-  Object.keys(Q).forEach(e => {
-    delete Q[e]
+  return J
+}
+
+function en() {
+  Object.keys(J).forEach(e => {
+    delete J[e]
   })
 }
 
-function en(e, t) {
-  return !!X && (null != t && (Array.isArray(Q[e]) ? Q[e].push(t) : Q[e] = [t]), true)
+function er(e, t) {
+  return !!Q && (null != t && (Array.isArray(J[e]) ? J[e].push(t) : J[e] = [t]), true)
 }
 
-function er(e, t) {
+function ei(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {},
     r = String(e);
-  if (d.R.includes(r) || h.Z.addBreadcrumb({
+  if (f.R.includes(r) || m.Z.addBreadcrumb({
       category: "analytics",
       message: "".concat(r)
-    }), en(e, t), null != n.throttlePercent && Math.random() > n.throttlePercent) return Promise.resolve();
-  let i = z(t);
-  return q(r, i, n.logEventProperties), W(e, i, {
+    }), er(e, t), null != n.throttlePercent && Math.random() > n.throttlePercent) return Promise.resolve();
+  let i = q(t);
+  return X(r, i, n.logEventProperties), K(e, i, {
     flush: n.flush,
     fingerprint: n.fingerprint
   })
 }
-let ei = (0, Chunk990547.trackMaker)({
-  analyticEventConfigs: Z,
+let ea = (0, Chunk990547.trackMaker)({
+  analyticEventConfigs: F,
   dispatcher: Chunk570140.Z,
   TRACK_ACTION_NAME: "TRACK"
 });
 
-function ea(e) {
-  return e === E.wW.GAME || e === E.wW.DEPRECATED_GAME
+function eo(e) {
+  return e === b.wW.GAME || e === b.wW.DEPRECATED_GAME
 }
 
-function eo(e, t) {
-  let n = z(O({
-    location: (0, c.k$)()
+function es(e, t) {
+  let n = q(v({
+    location: (0, u.k$)()
   }, t));
-  (0, c.dT)(e, O({
+  (0, u.dT)(e, v({
     type: "action"
-  }, t)), q(e, n), ei(e, n)
+  }, t)), X(e, n), ea(e, n)
 }
 
-function es() {
+function el() {
   return (0, Chunk772848.Z)()
 }
-let el = I(O({}, Chunk990547), {
+let ec = T(v({}, Chunk990547), {
   getCampaignParams: Chunk990547.getCampaignParams,
-  setSystemAccessibilityFeatures: Y,
-  expandEventProperties: z,
-  track: er
+  setSystemAccessibilityFeatures: W,
+  expandEventProperties: q,
+  track: ei
 })

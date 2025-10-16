@@ -71,8 +71,8 @@ let T = 200,
   L = 0,
   x = [],
   M = [],
-  j = [],
-  k = false;
+  k = [],
+  j = false;
 
 function U() {
   P = false
@@ -227,10 +227,10 @@ function Y(e) {
 }
 
 function W(e) {
-  j = (j = [{
+  k = (k = [{
     bytes: e,
     timestamp: Date.now()
-  }, ...j]).slice(0, S)
+  }, ...k]).slice(0, S)
 }
 let K = a().throttle(H, T),
   z = a().throttle(Y, T),
@@ -272,7 +272,7 @@ function Q(e) {
           }
         }
       }
-      if (!k) {
+      if (!j) {
         let r = l.Z.fileManager.dirname(n[o].installPath);
         E.Z.getInstallationPath(e, t) !== r && s.Z.wait(() => {
           s.Z.dispatch({
@@ -291,7 +291,7 @@ function Q(e) {
         })
       }
     }
-  a || "dispatch_application_progress" !== c.Z.taskID || c.Z.clearProgress("dispatch_application_progress"), C = n, k = true
+  a || "dispatch_application_progress" !== c.Z.taskID || c.Z.clearProgress("dispatch_application_progress"), C = n, j = true
 }
 class J extends(r = Chunk442837.ZP.Store) {
   initialize() {
@@ -342,7 +342,7 @@ class J extends(r = Chunk442837.ZP.Store) {
     return M
   }
   getHistoricalTotalBytesWritten() {
-    return j
+    return k
   }
   whenInitialized(e) {
     this.addConditionalChangeListener(() => {

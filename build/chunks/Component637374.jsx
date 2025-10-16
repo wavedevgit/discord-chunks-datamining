@@ -212,7 +212,7 @@ class q extends Chunk647438.Component {
       sku: r
     } = this.props;
     return this.isCustomGiftMessage() && !n ? Z.intl.formatToPlainString(Z.t.t1SOIS, {
-      recipientDisplayName: k.ZP.getName(t)
+      recipientDisplayName: j.ZP.getName(t)
     }) : null == r ? null : e.isSubscription ? n ? Z.intl.string(Z.t["2PJ1ND"]) : Z.intl.string(Z.t.hrnGnp) : n ? Z.intl.string(Z.t.QLEMlZ) : Z.intl.string(Z.t.W4DBc3)
   }
   renderBody(e) {
@@ -246,11 +246,11 @@ class q extends Chunk647438.Component {
     });
     if (e.isExistingPremiumSubscriptionDisallowed) return Z.intl.string(Z.t["UCIU9/"]);
     if (e.hasMultipleCopies) return null != i ? e.isSubscription ? Z.intl.format(Z.t.l3VxgI, {
-      username: k.ZP.getUserTag(i),
+      username: j.ZP.getUserTag(i),
       maxUses: e.maxUses,
       skuName: s
     }) : Z.intl.format(Z.t["9cYrw8"], {
-      username: k.ZP.getUserTag(i),
+      username: j.ZP.getUserTag(i),
       totalCopies: e.maxUses,
       skuName: s
     }) : e.isSubscription ? Z.intl.formatToPlainString(Z.t.svrO3d, {
@@ -265,7 +265,7 @@ class q extends Chunk647438.Component {
       if (null != i) {
         let e = a.interval === B.rV.MONTH ? Z.t["/RDIEB"] : Z.t["3CX6Eh"];
         return Z.intl.format(e, {
-          username: k.ZP.getUserTag(i),
+          username: j.ZP.getUserTag(i),
           skuName: s,
           intervalCount: a.intervalCount
         })
@@ -277,7 +277,7 @@ class q extends Chunk647438.Component {
       })
     }
     return null != i ? Z.intl.format(Z.t["3HsdQ0"], {
-      username: k.ZP.getUserTag(i)
+      username: j.ZP.getUserTag(i)
     }) : Z.intl.string(Z.t.Jdnjjo)
   }
   renderPromotionActions() {
@@ -428,7 +428,7 @@ let X = (0, Chunk112724.Z)((0, Chunk730749.Z)(q)),
       giftCode: i,
       gifter: o,
       currentUser: r,
-      subscriptionPlan: null != i && null != i.subscriptionPlanId ? (0, j.oE)(i.subscriptionPlanId) : null,
+      subscriptionPlan: null != i && null != i.subscriptionPlanId ? (0, k.oE)(i.subscriptionPlanId) : null,
       isSelfGift: null != i ? A.default.getId() === i.userId : A.default.getId() === n.id,
       resolved: C.Z.getIsResolved(t),
       libraryApplication: null != a && (null == i ? true : i.entitlementBranches) != null ? x.z2(i.entitlementBranches, a, N.Z) : null

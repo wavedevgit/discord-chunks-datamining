@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk918559 = require("./918559.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk909357 = require("./909357.js");
-let N = {
+let T = {
   [Chunk918559.MI.NO_CHAT]: Chunk909357.noChat,
   [Chunk918559.MI.RESIZABLE]: Chunk909357.resizable
 };
@@ -41,15 +41,15 @@ function P(e) {
   } = (0, o.cj)([_.Z], () => ({
     selectedChannelId: _.Z.getChannelId(),
     selectedVoiceChannelId: _.Z.getVoiceChannelId()
-  })), A = (0, o.e7)([h.Z], () => null != j && P === j && h.Z.getChatOpen(j), [P, j]), x = (0, o.e7)([g.ZP], () => g.ZP.callChatSidebarWidth), Z = (0, u.dQu)(s.Z.modules.chat.RESIZE_HANDLE_WIDTH), w = i.useRef(null), L = i.useRef(null), [R, D] = i.useState({
+  })), x = (0, o.e7)([h.Z], () => null != j && P === j && h.Z.getChatOpen(j), [P, j]), Z = (0, o.e7)([g.ZP], () => g.ZP.callChatSidebarWidth), A = (0, u.dQu)(s.Z.modules.chat.RESIZE_HANDLE_WIDTH), w = i.useRef(null), L = i.useRef(null), [R, D] = i.useState({
     width: 0,
     height: 0
-  }), k = i.useCallback(() => {
+  }), M = i.useCallback(() => {
     E.Z.updateFrameLayoutMode({
       applicationId: t.applicationId,
-      layoutMode: v.U.PIP
+      layoutMode: y.U.PIP
     })
-  }, [t.applicationId]), M = i.useCallback(() => {
+  }, [t.applicationId]), k = i.useCallback(() => {
     E.Z.stopFrame({
       applicationId: t.applicationId
     })
@@ -68,7 +68,7 @@ function P(e) {
     let e = e => {
       null == w.current || w.current.contains(e.target) || l || E.Z.updateFrameLayoutMode({
         applicationId: t.applicationId,
-        layoutMode: v.U.PIP
+        layoutMode: y.U.PIP
       })
     };
     return document.addEventListener("mousedown", e), () => {
@@ -86,21 +86,21 @@ function P(e) {
   }
   let V = C.MI.NO_CHAT;
   if (null == n) return null;
-  let F = (null != x ? x : I.$Y6) + Z,
-    z = (0, y.ro)(t);
+  let F = (null != Z ? Z : I.$Y6) + A,
+    z = (0, v.ro)(t);
   return (0, r.jsx)(u.f6W, {
     theme: I.BRd.DARK,
     children: e => (0, r.jsxs)("div", {
-      className: a()(T.wrapper, N[V], e),
+      className: a()(N.wrapper, T[V], e),
       ref: w,
       style: {
-        right: A && !Number.isNaN(F) ? F : 0
+        right: x && !Number.isNaN(F) ? F : 0
       },
       children: [(0, r.jsx)("div", {
-        className: T.activityPanelContainer,
+        className: N.activityPanelContainer,
         children: (0, r.jsx)("div", {
-          className: a()(T.activityContainer, {
-            [T.activityContainerNoMargin]: H
+          className: a()(N.activityContainer, {
+            [N.activityContainerNoMargin]: H
           }),
           style: {
             paddingLeft: G,
@@ -110,37 +110,37 @@ function P(e) {
           },
           ref: L,
           children: (0, r.jsx)(O.Z, {
-            className: T.iframe,
+            className: N.iframe,
             embedId: z
           })
         })
       }), (0, r.jsxs)("div", {
-        className: T.footer,
+        className: N.footer,
         children: [(0, r.jsx)(b.Z, {
           appContext: I.IlC.APP,
           applicationId: n.id,
           shouldPrioritizeGroupPlusIcon: true,
           isRichPresenceInvite: true,
-          iconClassName: T.inviteButtonIcon,
+          iconClassName: N.inviteButtonIcon,
           size: c.zx.Sizes.MEDIUM,
           look: c.zx.Looks.FILLED,
           buttonText: S.intl.string(S.t["6F9ivr"]),
           color: c.zx.Colors.TRANSPARENT
         }), (0, r.jsxs)("div", {
-          className: T.footerButtons,
+          className: N.footerButtons,
           children: [(0, r.jsx)("div", {
-            className: T.buttonSection,
+            className: N.buttonSection,
             children: (0, r.jsx)(m.d, {
               isTrayButton: true,
               label: S.intl.string(S.t.brPQ5e),
-              onClick: k,
+              onClick: M,
               iconComponent: u.dOc,
               themeable: true
             })
           }), (0, r.jsx)(m.d, {
             isTrayButton: false,
             label: S.intl.string(S.t["R/FK4O"]),
-            onClick: M,
+            onClick: k,
             iconComponent: u.PBZ,
             color: "disconnect"
           })]

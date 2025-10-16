@@ -95,11 +95,13 @@ function p(e) {
     return null != (e = null == i ? true : i.layout.flatMap(e => e.layout)) ? e : []
   }, [i]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [o ? (0, r.jsx)(b, {
-      onClick: f,
-      active: u,
-      node: t,
-      visibleContent: n
+    children: [o ? (0, r.jsx)("li", {
+      children: (0, r.jsx)(b, {
+        onClick: f,
+        active: u,
+        node: t,
+        visibleContent: n
+      })
     }) : (0, r.jsx)(a.mh, {
       id: t.key,
       children: e => (0, r.jsx)(b, {

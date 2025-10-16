@@ -39,10 +39,10 @@ let w = (e, t) => {
       isEligibleForBogoPromotion: a
     } = e, {
       analyticsLocations: w
-    } = (0, d.ZP)(u.Z.PREMIUM_MARKETING_HERO_CTA), D = (0, p.Nx)(), L = (0, I.$)(), x = (0, E.Z)(), M = null != x, j = (0, s.e7)([c.Z], () => c.Z.useReducedMotion), {
-      visibilityPercentageRef: k,
+    } = (0, d.ZP)(u.Z.PREMIUM_MARKETING_HERO_CTA), D = (0, p.Nx)(), L = (0, I.$)(), x = (0, E.Z)(), M = null != x, k = (0, s.e7)([c.Z], () => c.Z.useReducedMotion), {
+      visibilityPercentageRef: j,
       visibilityPercentage: U
-    } = (0, S.E)(!j), G = (0, s.e7)([_.Z], () => _.Z.affinities), B = !M && G.length > 0, {
+    } = (0, S.E)(!k), G = (0, s.e7)([_.Z], () => _.Z.affinities), B = !M && G.length > 0, {
       variant: Z
     } = (0, h.ZP)("PremiumBrandRefreshMarketingHeroHeading"), F = (0, g.N)(), V = (0, m.Ng)(), H = f.Z.getAlmostExpiringTrialOffers([N.Si.TIER_2]).length > 0 && null != F && null != F.expires_at, Y = f.Z.getAlmostExpiringDiscountOffers([N.Si.TIER_2]).length > 0 && null != V && null != V.expires_at, W = Z === h.tE.HERO_COUNTDOWN && (H || Y), K = H ? F.expires_at : Y ? V.expires_at : null;
     return (0, r.jsx)(d.Gt, {
@@ -52,7 +52,7 @@ let w = (e, t) => {
         className: o()(P.container, W && P.containerWithOfferCountdown, n),
         "data-testid": "marketing-page-hero-header",
         children: (0, r.jsx)("div", {
-          ref: k,
+          ref: j,
           children: (0, r.jsxs)("div", {
             className: P.contentContainer,
             children: [(0, r.jsx)(C.Z, {

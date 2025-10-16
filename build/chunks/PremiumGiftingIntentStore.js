@@ -118,11 +118,11 @@ function M() {
   x()
 }
 
-function j() {
+function k() {
   T = I(), x()
 }
 
-function k() {
+function j() {
   T.lastShownFriendsListGiftIntents = Array.from(A)
 }
 
@@ -248,9 +248,9 @@ m(z, "displayName", "PremiumGiftingIntentStore"), m(z, "persistKey", "PremiumGif
 }]);
 let q = new z(Chunk570140.Z, {
   CONNECTION_OPEN: M,
-  LOGOUT: j,
+  LOGOUT: k,
   MESSAGE_GIFT_INTENT_SHOWN: U,
-  FRIENDS_LIST_GIFT_INTENTS_SHOWN: k,
+  FRIENDS_LIST_GIFT_INTENTS_SHOWN: j,
   FRIENDS_TAB_BADGE_DISMISS: G,
   GIFT_INTENT_FLOW_PURCHASED_GIFT: B,
   DEV_TOOLS_FRIENDS_LIST_GIFT_INTENTS_SHOWN_RESET: V,

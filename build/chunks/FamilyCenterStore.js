@@ -92,14 +92,14 @@ function M() {
   }
 }
 
-function j() {
+function k() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : [];
   return arguments.length > 1 && arguments[1], g = module.length > 0 ? module.reduce((e, t) => p(f({}, e), {
     [t.user_id]: t
   }), {}) : {}, E = true, g
 }
 
-function k(e) {
+function j(e) {
   true !== e && (y = e)
 }
 
@@ -160,21 +160,21 @@ function F(e) {
     totalSpendCurrency: f,
     invoices: _
   } = n;
-  h = o, m = l, U(r), k(a), G(i), j(t), null != _ && B(_), C = c, N = u, R = d, P = f, T = false, S = s.default.fromTimestamp(Date.now()), I = true
+  h = o, m = l, U(r), j(a), G(i), k(t), null != _ && B(_), C = c, N = u, R = d, P = f, T = false, S = s.default.fromTimestamp(Date.now()), I = true
 }
 
 function V(e) {
   let {
     linkedUsers: t
   } = e;
-  j(t)
+  k(t)
 }
 
 function H(e) {
   let {
     linkedUsers: t
   } = e;
-  j(t)
+  k(t)
 }
 
 function Y(e) {
@@ -194,7 +194,7 @@ function Y(e) {
     totalSpendCurrency: d,
     invoices: f
   } = t;
-  h = a, m = o, U(n), k(r), G(i), null != f && B(f), C = l, N = c, T = false, S = s.default.fromTimestamp(Date.now()), R = u, P = d
+  h = a, m = o, U(n), j(r), G(i), null != f && B(f), C = l, N = c, T = false, S = s.default.fromTimestamp(Date.now()), R = u, P = d
 }
 
 function W(e) {
@@ -211,14 +211,14 @@ function K(e) {
   let {
     linkedUsers: t
   } = e;
-  j(t)
+  k(t)
 }
 
 function z(e) {
   let {
     linkedUsers: t
   } = e;
-  j(t, true)
+  k(t, true)
 }
 
 function q(e) {
@@ -246,7 +246,7 @@ function Q(e) {
       user_id: t
     } = e;
     return true === n[t]
-  }) && t.linked_users.length > Object.keys(g).length ? l.ZP.fetchLinkedUsers() : j(t.linked_users)
+  }) && t.linked_users.length > Object.keys(g).length ? l.ZP.fetchLinkedUsers() : k(t.linked_users)
 }
 
 function J(e) {
@@ -254,7 +254,7 @@ function J(e) {
     linkedUsers: t
   } = e;
   if (null == t) returnfalse;
-  j(t)
+  k(t)
 }
 
 function $(e) {
@@ -297,7 +297,7 @@ class ei extends Chunk750041.Z {
   }
   loadCache() {
     let e = this.readSnapshot(ei.LATEST_SNAPSHOT_VERSION);
-    null != module && (j(module.linkedUsers), G(module.guilds), U(module.teenActivity), en(module.teenActivityTotals))
+    null != module && (k(module.linkedUsers), G(module.guilds), U(module.teenActivity), en(module.teenActivityTotals))
   }
   takeSnapshot() {
     return {

@@ -80,11 +80,11 @@ function M() {
   return null != r ? (0, Chunk783443.Z)(r) : null
 }
 
-function j() {
+function k() {
   return null != r ? (0, Chunk692417.Z)(r) : null
 }
 
-function k() {
+function j() {
   var e;
   let {
     soundshareEnabled: t
@@ -119,10 +119,10 @@ class U extends(i = Chunk442837.ZP.Store) {
     return M()
   }
   getLastPickedContentPID() {
-    return j()
+    return k()
   }
   getStreamStartOptions() {
-    return k()
+    return j()
   }
 }
 
@@ -135,7 +135,7 @@ function G(e) {
       lastPickerAction: 1
     }, r = n, 0 === S && !t) {
     let e = u.Z.getChannel(p.Z.getVoiceChannelId());
-    null != e && (0, m.Z)(f.Z) && (0, h.JL)(e, d.Z, _.Z, false) && (0, l.WH)(e.getGuildId(), e.id, k())
+    null != e && (0, m.Z)(f.Z) && (0, h.JL)(e, d.Z, _.Z, false) && (0, l.WH)(e.getGuildId(), e.id, j())
   }
 }
 

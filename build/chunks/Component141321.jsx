@@ -26,21 +26,21 @@ function O(e) {
     onOpen: t,
     onClose: n,
     "data-jump-section": l
-  } = e, O = (0, o.e7)([g.default], () => g.default.getCurrentUser()), y = i.useRef(null), v = (0, o.e7)([h.ZP], () => (null == O ? true : O.id) != null && h.ZP.getMentionCount(O.id, b.W.NOTIFICATION_CENTER) > 0), {
+  } = e, O = (0, o.e7)([g.default], () => g.default.getCurrentUser()), v = i.useRef(null), y = (0, o.e7)([h.ZP], () => (null == O ? true : O.id) != null && h.ZP.getMentionCount(O.id, b.W.NOTIFICATION_CENTER) > 0), {
     titlebarIconSize: I,
     titlebarHoverHighlight: C
   } = (0, p.T)({
     location: "RecentsButton"
-  }), S = "sm" === I ? "refresh_sm" : "md", T = i.useMemo(() => (0, r.jsx)(u.xx7, {
+  }), S = "sm" === I ? "refresh_sm" : "md", N = i.useMemo(() => (0, r.jsx)(u.xx7, {
     size: S,
     color: "currentColor"
   }), [S]);
   return (0, r.jsx)(m.k, {
-    targetElementRef: y,
+    targetElementRef: v,
     onOpen: t,
     onClose: n,
     badgeState: {
-      badgeForYou: v
+      badgeForYou: y
     },
     popoutPosition: "bottom",
     popoutAlign: "right",
@@ -48,7 +48,7 @@ function O(e) {
       var o, p;
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(c.u, {
-          targetElementRef: y,
+          targetElementRef: v,
           shouldShow: !t,
           text: _.intl.string(_.t.GSmTKC),
           children: (0, r.jsx)(u.P3F, (o = function(e) {
@@ -70,25 +70,25 @@ function O(e) {
             return e
           }({}, n), p = p = {
             tag: "div",
-            innerRef: y,
+            innerRef: v,
             onClick: e,
             "data-jump-section": l,
             "aria-label": _.intl.string(_.t.GSmTKC),
             className: a()(E.clickable, {
               [E.withHighlight]: C
             }),
-            children: v || i ? (0, r.jsxs)(r.Fragment, {
+            children: y || i ? (0, r.jsxs)(r.Fragment, {
               children: [(0, r.jsx)(d.ZP, {
                 mask: d.ZP.Masks.HEADER_BAR_BADGE_BOTTOM,
                 height: s.Z[S],
                 width: s.Z[S],
-                children: T
+                children: N
               }), (0, r.jsx)("span", {
                 className: a()(E.badge, {
                   [E.smol]: "refresh_sm" === S
                 })
               })]
-            }) : T
+            }) : N
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(p)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
@@ -101,7 +101,7 @@ function O(e) {
           }), o))
         }), (0, r.jsx)(f.U, {
           location: "inbox-button",
-          targetElementRef: y
+          targetElementRef: v
         })]
       })
     }

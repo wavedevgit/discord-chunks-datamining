@@ -94,7 +94,7 @@ function H(e) {
       applicationId: true,
       skuId: true
     }, c = null != (a = L.Z.getGuildId()) ? a : true;
-    return null == s ? (0, k.Z)(e) : (M.default.track(U.rMx.APP_DIRECTORY_PROFILE_EMBED_URL_CLICKED, {
+    return null == s ? (0, j.Z)(e) : (M.default.track(U.rMx.APP_DIRECTORY_PROFILE_EMBED_URL_CLICKED, {
       application_id: s,
       device_platform: r.tq ? "mobile_web" : "desktop_web",
       guild_id: c,
@@ -177,7 +177,7 @@ function H(e) {
     null == e || e.preventDefault();
     let {
       search: l
-    } = null != (t = j.Z.toURLSafe(w.url)) ? t : {};
+    } = null != (t = k.Z.toURLSafe(w.url)) ? t : {};
     if (null != l) {
       let e = new URLSearchParams(l);
       o = null != (r = e.get("sort")) ? r : true, s = null != (a = e.get("filter")) ? a : true
@@ -198,7 +198,7 @@ function H(e) {
     pathname: H,
     search: Y,
     hash: W
-  } = null != (t = j.Z.toURLSafe(e)) ? t : {}, K = j.Z.isDiscordHostname(null != Z ? Z : null) || j.Z.isDiscordLocalhost(null != x ? x : null, null != Z ? Z : null);
+  } = null != (t = k.Z.toURLSafe(e)) ? t : {}, K = k.Z.isDiscordHostname(null != Z ? Z : null) || k.Z.isDiscordLocalhost(null != x ? x : null, null != Z ? Z : null);
   if (K && ((null == H ? true : H.startsWith("/application-directory")) || (null == H ? true : H.startsWith("/discovery/applications")))) {
     let e = H.split("/"),
       t = null == H ? true : H.startsWith("/discovery/applications"),
@@ -227,7 +227,7 @@ function H(e) {
       }), true
     }
   }
-  if (null != H && K && j.Z.isAppRoute(H)) {
+  if (null != H && K && k.Z.isAppRoute(H)) {
     let e = {
       navigationReplace: false,
       openChannel: true

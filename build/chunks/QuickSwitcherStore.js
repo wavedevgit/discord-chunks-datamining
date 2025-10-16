@@ -44,8 +44,8 @@ let w = "seenQSTutorial",
   L = 100,
   x = [Chunk212819.h8.USER, Chunk212819.h8.GROUP_DM, Chunk212819.h8.TEXT_CHANNEL, Chunk212819.h8.GUILD, Chunk212819.h8.APPLICATION, Chunk212819.h8.LINK, Chunk212819.h8.IN_APP_NAVIGATION],
   M = 0,
-  j = false,
   k = false,
+  j = false,
   U = null,
   G = [],
   B = null,
@@ -55,7 +55,7 @@ let w = "seenQSTutorial",
   H = null;
 
 function Y() {
-  k = Chunk430824.Z.getGuildCount() >= 3 || o().size(Chunk592125.Z.getMutablePrivateChannels()) >= 20, F = []
+  j = Chunk430824.Z.getGuildCount() >= 3 || o().size(Chunk592125.Z.getMutablePrivateChannels()) >= 20, F = []
 }
 
 function W(e) {
@@ -259,13 +259,13 @@ function en(e) {
 }
 
 function er() {
-  if (j) returnfalse;
-  j = true, Chunk433517.K.set(w, true)
+  if (k) returnfalse;
+  k = true, Chunk433517.K.set(w, true)
 }
 class ei extends(i = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     var t;
-    this.waitFor(b.ZP, y.Z, m.Z), this.syncWith([p.Z], () => true), j = l.K.get(w) || false, V = null != (t = null == e ? true : e.channelHistory) ? t : []
+    this.waitFor(b.ZP, y.Z, m.Z), this.syncWith([p.Z], () => true), k = l.K.get(w) || false, V = null != (t = null == e ? true : e.channelHistory) ? t : []
   }
   getState() {
     return {
@@ -280,7 +280,7 @@ class ei extends(i = Chunk442837.ZP.PersistedStore) {
   }
   channelNoticePredicate(e, t) {
     let n = Date.now() - t >= N.Hqc;
-    return k && n
+    return j && n
   }
   getFrequentGuilds() {
     return null != r ? r.queryGuilds("", 100) : null
@@ -301,7 +301,7 @@ class ei extends(i = Chunk442837.ZP.PersistedStore) {
       queryMode: U,
       results: G,
       selectedIndex: M,
-      seenTutorial: j,
+      seenTutorial: k,
       maxQueryLength: Z
     }
   }

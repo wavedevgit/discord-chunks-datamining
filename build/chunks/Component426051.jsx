@@ -29,19 +29,19 @@ function b(e) {
     })
   }, []), O = i.useCallback(() => {
     c.Z.closeChannelSidebar(u.uZ)
-  }, []), y = i.useCallback(() => {
+  }, []), v = i.useCallback(() => {
     c.Z.closeChannelSidebar(u.uZ), _ && (0, s.Kh)(b.id)
   }, [b.id, _]), {
-    acceptMessageRequest: v,
+    acceptMessageRequest: y,
     isAcceptLoading: I,
     isUserProfileLoading: C,
     isOptimisticAccepted: S
   } = (0, p.m)({
     user: n,
-    onAcceptSuccess: y,
+    onAcceptSuccess: v,
     onRejectSuccess: O,
     onError: E
-  }), T = I || C, N = T || S;
+  }), N = I || C, T = N || S;
   return (0, r.jsxs)("div", {
     className: m.container,
     children: [(0, r.jsx)(f.Z, {
@@ -55,10 +55,10 @@ function b(e) {
         size: "sm",
         text: g.intl.string(g.t.vicfl5),
         onClick: e => {
-          v(b.id), e.stopPropagation()
+          y(b.id), e.stopPropagation()
         },
-        disabled: N,
-        loading: T
+        disabled: T,
+        loading: N
       }), (0, r.jsx)(h.Z, {
         channel: b
       })]

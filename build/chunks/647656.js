@@ -87,40 +87,40 @@ let _ = ["1402418171662569542"],
           pid: g,
           activity: E
         }), Promise.resolve(E);
-        let y = {};
+        let v = {};
         E.name || (E.name = a.application.name);
-        let v = a.application.id;
-        E.application_id = v;
+        let y = a.application.id;
+        E.application_id = y;
         let I = a.transport === m.He.POST_MESSAGE;
         E.platform = I ? b.M7m.EMBEDDED : b.M7m.DESKTOP;
-        let C = c.Z.getApplication(null != v ? v : true),
+        let C = c.Z.getApplication(null != y ? y : true),
           S = null != (r = E.instance) && r,
-          T = null == (t = E.party) ? true : t.privacy;
+          N = null == (t = E.party) ? true : t.privacy;
         delete E.instance, null == (n = E.party) || delete n.privacy;
-        let N = (0, s.S)(E, S, I, null != C && (0, u.g)(C) && I, T);
-        N > 0 && (E.flags = N);
+        let T = (0, s.S)(E, S, I, null != C && (0, u.g)(C) && I, N);
+        T > 0 && (E.flags = T);
         let {
           assets: P,
           party: j,
-          secrets: A,
-          timestamps: x,
-          buttons: Z,
+          secrets: x,
+          timestamps: Z,
+          buttons: A,
           type: w
         } = E;
-        if (null == w && (E.type = b.IIU.PLAYING), null != A) {
-          let e = i().values(A).filter(e => !!e);
+        if (null == w && (E.type = b.IIU.PLAYING), null != x) {
+          let e = i().values(x).filter(e => !!e);
           if (null != j && i().intersection(e, [j.id]).length > 0 && !_.includes(a.application.id)) throw new h.Z({
             errorCode: b.lTL.INVALID_ACTIVITY_SECRET
           }, "secrets cannot match the party id");
           if (i().uniq(e).length < e.length) throw new h.Z({
             errorCode: b.lTL.INVALID_ACTIVITY_SECRET
           }, "secrets must be unique");
-          if (null != Z) throw new h.Z({
+          if (null != A) throw new h.Z({
             errorCode: b.lTL.INVALID_ACTIVITY_SECRET
           }, "secrets cannot currently be sent with buttons")
         }
-        if (null != Z && (y.button_urls = Z.map(e => e.url), E.buttons = Z.map(e => e.label)), E.metadata = y, null != x)
-          for (let e of Object.keys(x)) Date.now().toString().length - x[e].toString().length > 2 && (x[e] = Math.floor(x[e] * f.Z.Millis.SECOND));
+        if (null != A && (v.button_urls = A.map(e => e.url), E.buttons = A.map(e => e.label)), E.metadata = v, null != Z)
+          for (let e of Object.keys(Z)) Date.now().toString().length - Z[e].toString().length > 2 && (Z[e] = Math.floor(Z[e] * f.Z.Millis.SECOND));
         if (null == P) l = Promise.resolve([]);
         else {
           if (null == a.application || null == a.application.id) throw Error();
@@ -135,7 +135,7 @@ let _ = ["1402418171662569542"],
             socketId: a.id,
             pid: g,
             activity: E,
-            partyPrivacy: T
+            partyPrivacy: N
           });
           let {
             secrets: u,

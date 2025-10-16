@@ -117,11 +117,11 @@ let eE = () => {
     })
   }, eM = () => {
     window.open(Chunk63063.Z.getArticleURL(Chunk981631.BhN.CLIPS), "_blank")
-  }, ej = () => {
+  }, ek = () => {
     eA || (0, Chunk266454.Q3)(Chunk704215.z.PERMADECOS_NITRO_HOME_CARD_NEW_BADGE, {
       dismissAction: Chunk921944.L.TAKE_ACTION
     }), eN()
-  }, ek = () => {
+  }, ej = () => {
     (0, Chunk892001.openUserProfileModal)({
       userId: ey.id,
       sourceAnalyticsLocations: module,
@@ -407,7 +407,7 @@ let eE = () => {
       }),
       descriptionCta: eO ? Chunk388032.intl.string(Chunk388032.t.jVcuVV) : Chunk388032.intl.string(Chunk388032.t.JST6jo),
       isPremiumGetCta: !eO,
-      onCtaClick: eO ? ej : true,
+      onCtaClick: eO ? ek : true,
       pillText: eA || !eO ? true : Chunk388032.intl.string(Chunk388032.t.y2b7CA).toLocaleUpperCase(),
       perkImage: Chunk317194.Z
     },
@@ -426,7 +426,7 @@ let eE = () => {
       title: Chunk388032.intl.string(Chunk388032.t.MyEstL),
       subtitle: Chunk388032.intl.string(Chunk388032.t["0/ClMD"]),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVV),
-      onCtaClick: ek,
+      onCtaClick: ej,
       perkImage: Chunk448360.Z,
       pillText: Chunk388032.intl.string(Chunk388032.t.y2b7CA).toLocaleUpperCase()
     },

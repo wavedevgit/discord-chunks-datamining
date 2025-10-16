@@ -2,8 +2,8 @@
 /** chunk id: 294330, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Eo: () => j,
-  VD: () => N,
-  ZP: () => A
+  VD: () => T,
+  ZP: () => x
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -30,19 +30,19 @@ var Chunk951288 = require("./951288.js"),
   Chunk330065 = require("./330065.js"),
   Chunk755386 = require("./755386.js");
 
-function N(e) {
+function T(e) {
   let {
     guild: t,
     onClick: l,
     onView: o
-  } = e, [h, g] = i.useState(false), [E, N] = i.useState(false), [P, j] = i.useState(false), A = i.useRef(null), x = i.useCallback(async () => {
-    N(true);
+  } = e, [h, g] = i.useState(false), [E, T] = i.useState(false), [P, j] = i.useState(false), x = i.useRef(null), Z = i.useCallback(async () => {
+    T(true);
     try {
       await l(t.id)
     } finally {
-      N(false)
+      T(false)
     }
-  }, [t.id, l]), Z = i.useCallback(e => {
+  }, [t.id, l]), A = i.useCallback(e => {
     e && !h && (g(true), null == o || o(t.id))
   }, [t.id, h, o]), w = i.useCallback(e => {
     (0, u.jW)(e, async () => {
@@ -82,21 +82,21 @@ function N(e) {
         }), i))
       }
     })
-  }, [t]), L = (0, d.ZP)(), R = t.features.has(y.GuildFeatures.HUB), D = i.useMemo(() => {
+  }, [t]), L = (0, d.ZP)(), R = t.features.has(v.GuildFeatures.HUB), D = i.useMemo(() => {
     let e = _.ZP.getGuildDiscoverySplashURL({
       id: t.id,
       splash: t.discoverySplash,
       size: 300 * (0, b.x_)()
     });
     if (null != e) return e;
-    if (R) return T;
+    if (R) return N;
     switch (L) {
-      case y.BRd.DARK:
+      case v.BRd.DARK:
         return C;
-      case y.BRd.LIGHT:
+      case v.BRd.LIGHT:
         return S
     }
-  }, [t.discoverySplash, t.id, R, L]), k = i.useMemo(() => _.ZP.getGuildIconURL({
+  }, [t.discoverySplash, t.id, R, L]), M = i.useMemo(() => _.ZP.getGuildIconURL({
     id: t.id,
     icon: t.icon,
     size: 48
@@ -110,17 +110,17 @@ function N(e) {
         className: I.spinner
       })
     }), (0, r.jsx)(s.$, {
-      innerRef: A,
-      onChange: Z,
+      innerRef: x,
+      onChange: A,
       active: !h,
       threshold: .55,
       children: (0, r.jsxs)(f.Z, {
-        ref: A,
+        ref: x,
         className: I.card,
-        onClick: x,
+        onClick: Z,
         disabled: E,
         onContextMenu: w,
-        "aria-label": v.intl.string(v.t["M9wQ+f"]),
+        "aria-label": y.intl.string(y.t["M9wQ+f"]),
         children: [(0, r.jsxs)("div", {
           className: I.header,
           children: [(0, r.jsx)("div", {
@@ -149,7 +149,7 @@ function N(e) {
                   width: 48,
                   height: 48,
                   children: (0, r.jsx)("img", {
-                    src: k,
+                    src: M,
                     alt: "",
                     className: I.avatar
                   })
@@ -185,7 +185,7 @@ function N(e) {
                 className: I.memberDetailsText,
                 variant: "text-xs/normal",
                 color: "header-secondary",
-                children: v.intl.format(v.t["LC+S+v"], {
+                children: y.intl.format(y.t["LC+S+v"], {
                   membersOnline: t.presenceCount
                 })
               })]
@@ -197,7 +197,7 @@ function N(e) {
                 className: I.memberDetailsText,
                 variant: "text-xs/normal",
                 color: "header-secondary",
-                children: v.intl.format(v.t.zRl6XV, {
+                children: y.intl.format(y.t.zRl6XV, {
                   count: t.memberCount
                 })
               })]
@@ -215,7 +215,7 @@ function P(e) {
     onClick: n,
     onView: i
   } = e, l = (0, o.e7)([E.Z], () => E.Z.getGuild(t));
-  return null == l ? null : (0, r.jsx)(N, {
+  return null == l ? null : (0, r.jsx)(T, {
     guild: l,
     onClick: n,
     onView: i
@@ -259,4 +259,4 @@ function j(e) {
     })
   })
 }
-let A = Chunk647438.memo(P)
+let x = Chunk647438.memo(P)

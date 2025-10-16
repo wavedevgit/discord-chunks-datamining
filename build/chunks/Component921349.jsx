@@ -94,7 +94,7 @@ function M(e) {
   return e.label
 }
 
-function j(e) {
+function k(e) {
   let {
     active: t,
     loadableOptions: n,
@@ -151,7 +151,7 @@ function j(e) {
   }
 }
 
-function k(e, t) {
+function j(e, t) {
   return null == t ? [] : (Array.isArray(t) ? t : [t]).map(t => "object" == typeof t && (null == t || "value" in t) ? t : e.find(e => e.value === t)).filter(Boolean)
 }
 let U = Chunk647438.forwardRef(function(e, t) {
@@ -209,11 +209,11 @@ let U = Chunk647438.forwardRef(function(e, t) {
     options: eD,
     loading: eL,
     onQueryChange: ex
-  } = j({
+  } = k({
     active: eT,
     loadableOptions: n,
     debounceTime: z
-  }), eM = i.useMemo(() => k(eD, a), [eD, a]), ej = i.useMemo(() => eM.map(e => e.value), [eM]), ek = eM[eM.length - 1], eU = (0, f.Z)(ek), eG = i.useId(), eB = i.useId(), eZ = i.useCallback(e => {
+  }), eM = i.useMemo(() => j(eD, a), [eD, a]), ek = i.useMemo(() => eM.map(e => e.value), [eM]), ej = eM[eM.length - 1], eU = (0, f.Z)(ej), eG = i.useId(), eB = i.useId(), eZ = i.useCallback(e => {
     eT === e || D || (eS(e), e ? null == y || y() : null == I || I())
   }, [D, I, y, eT]), eF = i.useCallback(e => {
     eT && !e && eZ(false)
@@ -246,7 +246,7 @@ let U = Chunk647438.forwardRef(function(e, t) {
     }), []),
     eK = (0, c.ZP)({
       id: eB,
-      defaultFocused: null != ek ? String(ek.value) : true,
+      defaultFocused: null != ej ? String(ej.value) : true,
       scrollToStart: eY,
       scrollToEnd: eW,
       isEnabled: eT,
@@ -287,8 +287,8 @@ let U = Chunk647438.forwardRef(function(e, t) {
       e.setFocus(n), eI(null)
     }
   }, [eT, eL, ez, eU]), i.useLayoutEffect(() => {
-    eT || (h ? eC("") : null != ek && eC(ek.label))
-  }, [h, ek, eT]), i.useLayoutEffect(() => {
+    eT || (h ? eC("") : null != ej && eC(ej.label))
+  }, [h, ej, eT]), i.useLayoutEffect(() => {
     h && eC("")
   }, [h, eM.length]);
   let eX = i.useCallback(function(e) {
@@ -359,7 +359,7 @@ let U = Chunk647438.forwardRef(function(e, t) {
           listId: eG,
           maxVisibleItems: U,
           width: null != H && "auto" !== H ? H : ey,
-          selectedValues: ej,
+          selectedValues: ek,
           closePopout: t,
           onSelect: eX,
           closeOnSelect: E,
@@ -401,7 +401,7 @@ let U = Chunk647438.forwardRef(function(e, t) {
               },
               onBlur: e => {
                 var t, n, r;
-                (null == (t = ew.current) ? true : t.contains(e.relatedTarget)) || (null == (r = eP.current) || null == (n = r.getScrollerNode()) ? true : n.contains(e.relatedTarget)) || (h || null == ek || eC(ek.label), eR(false), eZ(false), null == ei || ei(e))
+                (null == (t = ew.current) ? true : t.contains(e.relatedTarget)) || (null == (r = eP.current) || null == (n = r.getScrollerNode()) ? true : n.contains(e.relatedTarget)) || (h || null == ej || eC(ej.label), eR(false), eZ(false), null == ei || ei(e))
               },
               children: [(0, r.jsx)(p.tEY, {
                 ringTarget: eb,

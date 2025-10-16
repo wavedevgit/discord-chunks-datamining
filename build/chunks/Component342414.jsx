@@ -120,12 +120,12 @@ let X = (e, t, i) => {
       variant: T.C.SUBSCRIBER_HOME
     }) : f ? N = (0, r.jsx)(U.Z, {}) : p && (N = (0, r.jsx)(A._, {}));
     let D = (0, o.e7)([h.Z], () => h.Z.getPremiumTypeSubscription()),
-      j = null != D && D.status === B.O0b.CANCELED && null != y,
+      k = null != D && D.status === B.O0b.CANCELED && null != y,
       H = (0, I.N)(),
       Y = (0, v.Ng)(),
       W = (0, v.Wp)(Y, G.Si.TIER_2) ? G.Si.TIER_2 : true,
       K = null != D && D.status !== B.O0b.ACCOUNT_HOLD && D.hasAnyPremiumNitro,
-      z = (0, _.Z)().isFractionalPremiumActive && !K && null == N && !j,
+      z = (0, _.Z)().isFractionalPremiumActive && !K && null == N && !k,
       q = (0, o.e7)([c.Z], () => c.Z.useReducedMotion),
       {
         visibilityPercentageRef: Q,
@@ -140,16 +140,16 @@ let X = (e, t, i) => {
         ref: Q,
         children: [b && g, (0, r.jsxs)("div", {
           className: V.headerContainer,
-          children: [(0, r.jsx)(k.Z, {
+          children: [(0, r.jsx)(j.Z, {
             containerVisibilityPercentage: J
-          }), j && null != y.expires_at && (0, r.jsx)(w.Z, {
+          }), k && null != y.expires_at && (0, r.jsx)(w.Z, {
             expiresAt: y.expires_at,
             className: F.heroOfferCountdown
           }), (0, r.jsx)(x.Z, {
-            children: j ? Z.intl.format(Z.t["3yZP0N"], {
+            children: k ? Z.intl.format(Z.t["3yZP0N"], {
               percent: y.discount.amount
             }) : m
-          }), j && null != O && (0, r.jsx)(l.Text, {
+          }), k && null != O && (0, r.jsx)(l.Text, {
             className: F.churnEntrypointDescriptionBrandRefresh,
             variant: "text-sm/medium",
             color: "text-primary",
@@ -160,19 +160,19 @@ let X = (e, t, i) => {
             })
           })]
         }), (0, r.jsxs)("div", {
-          className: z || j ? V.twoButtonContainer : true,
+          className: z || k ? V.twoButtonContainer : true,
           children: [z && (0, r.jsx)(P.Z, {
             size: "md",
             hasActivePromotion: !!s,
             subscriptionTier: null != (n = null == H || null == (t = H.subscription_trial) ? true : t.sku_id) ? n : W
-          }), j && (0, r.jsx)(l.Button, {
+          }), k && (0, r.jsx)(l.Button, {
             variant: "expressive",
             icon: l.SrA,
             size: "md",
             text: Z.intl.string(Z.t.zrCzVF),
             onClick: () => X(C, D, L.R.CONFIRM_DISCOUNT)
           }), (0, r.jsx)(R.Z, {
-            variant: z || j ? "secondary" : "expressive",
+            variant: z || k ? "secondary" : "expressive",
             size: "md",
             buttonTextOverride: Z.intl.string(Z.t["3KomGR"])
           })]
@@ -354,7 +354,7 @@ let X = (e, t, i) => {
       isEligibleForBogoPromotion: m
     }) : I && (v = Z.intl.string(Z.t.qYKftb), T = (0, r.jsx)($, {}));
     let P = null;
-    if (C === G.a$.NONE || h) P = n ? (0, r.jsx)(j.Z, {
+    if (C === G.a$.NONE || h) P = n ? (0, r.jsx)(k.Z, {
       enablePremiumBrandRefresh: true,
       text: v
     }) : (0, r.jsx)(D.Cy, {
@@ -385,7 +385,7 @@ let X = (e, t, i) => {
           className: F.pillContainer,
           children: (0, r.jsx)("div", {
             className: F.flexCentered,
-            children: n ? (0, r.jsx)(j.Z, {
+            children: n ? (0, r.jsx)(k.Z, {
               enablePremiumBrandRefresh: true,
               text: R
             }) : (0, r.jsx)(D.mn, {

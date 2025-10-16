@@ -140,7 +140,7 @@ function e7(e) {
 require("./117240.js"), require("./801077.js"), require("./967368.js"), require("./272053.js"), require("./974180.js"), require("./574254.js"), require("./551428.js"), require("./55563.js"), require("./882029.js"), require("./959457.js"), require("./653255.js"), require("./663389.js"), require("./25990.js"), require("./778825.js"), require("./999382.js"), require("./388610.js"), require("./533947.js"), require("./277053.js"), require("./371398.js"), require("./141233.js"), require("./471073.js"), require("./606206.js");
 let e9 = false;
 (0, Chunk912471.DL)(), Chunk442837.ZP.initialize(), Chunk298969.Z.loadServer(), Chunk358085.isPlatformEmbedded && (Chunk998502.ZP.on("USER_SETTINGS_OPEN", (e, t) => {
-  eW.Z.getLayers().includes(e4.S9g.USER_SETTINGS) || (0, eM.openUserSettings)()
+  eW.Z.getLayers().includes(e4.S9g.USER_SETTINGS) || (0, ek.openUserSettings)()
 }), Chunk998502.ZP.on("LAUNCH_APPLICATION", (e, t) => {
   let n = eY.Z.getActiveLibraryApplication(t);
   e8.playApplication(t, n, {
@@ -155,9 +155,9 @@ let e9 = false;
 let te = (0, Chunk951752.l)(e => {
     let {
       location: t
-    } = e, n = (0, ek.default)(t.pathname);
+    } = e, n = (0, eM.default)(t.pathname);
     return null != n && (0, K.h)(() => {
-      (0, eM.openUserSettingsFromParsedUrl)({
+      (0, ek.openUserSettingsFromParsedUrl)({
         match: n,
         urlOrigin: "deeplink"
       })
@@ -260,7 +260,7 @@ let ta = [{
     } = e, {
       id: n
     } = t.params;
-    return (0, K.h)(() => (0, eZ.openUserProfileModal)({
+    return (0, K.h)(() => (0, eA.openUserProfileModal)({
       userId: n,
       sourceAnalyticsLocations: [S.Z.URI_SCHEME]
     })), (0, r.jsx)(a.l_, {
@@ -492,8 +492,8 @@ function ts(e) {
   if (!q.Z.isConnected()) return;
   let {
     location: i
-  } = (0, ey.s1)();
-  i.pathname === r && (null == eV.Z.getChannel(t) ? (0, ey.dL)(e4.Z5c.CHANNEL(n)) : (0, ey.dL)(r))
+  } = (0, ev.s1)();
+  i.pathname === r && (null == eV.Z.getChannel(t) ? (0, ev.dL)(e4.Z5c.CHANNEL(n)) : (0, ev.dL)(r))
 }
 class tc extends Chunk647438.PureComponent {
   componentDidMount() {
@@ -561,7 +561,7 @@ class tc extends Chunk647438.PureComponent {
           let e = eH.ZP.getCurrentSidebarChannelId(n) !== s,
             t = null != eH.ZP.getGuildSidebarState(r);
           if (null != i && null != s && e)
-            if (t)(0, ey.dL)(e4.Z5c.CHANNEL(r, s, o));
+            if (t)(0, ev.dL)(e4.Z5c.CHANNEL(r, s, o));
             else {
               let e = {
                 type: eS.Ff.THREAD
@@ -584,8 +584,8 @@ class tc extends Chunk647438.PureComponent {
       } else ti.some(t => {
         var n;
         return (null == (n = (0, a.LX)(e, t)) ? true : n.isExact) === true
-      }) || (0, ey.dL)(eF.Z.fallbackRoute)
-    }(n, r), (0, M.pN)(n, i, "REPLACE" === t)
+      }) || (0, ev.dL)(eF.Z.fallbackRoute)
+    }(n, r), (0, k.pN)(n, i, "REPLACE" === t)
   }
   ensureChannelMatchesGuild(e) {
     if (!q.Z.isConnected()) return null;
@@ -600,7 +600,7 @@ class tc extends Chunk647438.PureComponent {
     } = tl(n), a = (0, eO.Ss)(r) && r !== e4.ME && r !== e4.I_8;
     if (null != i && (0, eO.cq)(i) && !(0, e3.AB)(i) && a) {
       let n = eV.Z.getChannel(i);
-      if (null == n) eA.Z.loadThread(i).then(() => ts({
+      if (null == n) ex.Z.loadThread(i).then(() => ts({
         channelId: i,
         guildId: r,
         pathname: t
@@ -612,7 +612,7 @@ class tc extends Chunk647438.PureComponent {
       if (null != l) {
         if (!((0, eO.cq)(l) && !(0, e3.AB)(i))) return null;
         let n = eV.Z.getChannel(l);
-        if (null == n) eA.Z.loadThread(l).then(() => ts({
+        if (null == n) ex.Z.loadThread(l).then(() => ts({
           channelId: l,
           guildId: r,
           pathname: t

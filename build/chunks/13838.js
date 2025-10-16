@@ -33,25 +33,25 @@ let j = e => (0, I.Z)(e).required().keys({
   channel_id: e.string().required()
 });
 
-function A(e) {
+function x(e) {
   let {
     args: {
       channel_id: t
     },
     socket: n
   } = e, r = f.Z.getChannel(t);
-  if (null == r || !(0, y.zM)(r, n.application.id, n.authorization.scopes)) throw new O.Z({
+  if (null == r || !(0, v.zM)(r, n.application.id, n.authorization.scopes)) throw new O.Z({
     errorCode: P.lTL.INVALID_CHANNEL
   }, "Invalid channel id: ".concat(t));
   if ((0, s.ft)(r)) throw new O.Z({
     errorCode: P.lTL.INVALID_CHANNEL
   }, "Invalid nsfw channel id: ".concat(r.id))
 }
-let x = e => (0, I.Z)(e).keys({
+let Z = e => (0, I.Z)(e).keys({
   channel_id: e.string().allow(null)
 });
 
-function Z(e) {
+function A(e) {
   let {
     args: {
       channel_id: t
@@ -124,7 +124,7 @@ let w = {
             userId: t
           } = e;
           return t
-        }).forEach(e => r((0, y.aE)(a, l.id, e))), o
+        }).forEach(e => r((0, v.aE)(a, l.id, e))), o
       }
     }
   },
@@ -157,7 +157,7 @@ let w = {
             userId: t
           } = e;
           return t
-        }).forEach(e => r((0, y.aE)(a, l.id, e))), o
+        }).forEach(e => r((0, v.aE)(a, l.id, e))), o
       }
     }
   },
@@ -184,7 +184,7 @@ let w = {
         } = e, l = f.Z.getChannel(t);
         if (null == l) return;
         let a = l.getGuildId(),
-          o = Object.values(E.Z.getVoiceStatesForChannel(l.id)).map(e => (0, y.aE)(a, l.id, e));
+          o = Object.values(E.Z.getVoiceStatesForChannel(l.id)).map(e => (0, v.aE)(a, l.id, e));
         return i().differenceWith(o, n, i().isEqual).forEach(e => r(e)), o
       }
     }
@@ -198,7 +198,7 @@ let w = {
         prevState: t,
         dispatch: n
       } = e, r = {
-        state: (0, y.zy)(b.Z.getState()),
+        state: (0, v.zy)(b.Z.getState()),
         hostname: b.Z.getHostname(),
         pings: b.Z.getPings(),
         average_ping: b.Z.getAveragePing(),
@@ -210,31 +210,31 @@ let w = {
   [Chunk981631.zMe.MESSAGE_CREATE]: {
     scope: Chunk243814.x.RPC,
     validation: j,
-    handler: A
+    handler: x
   },
   [Chunk981631.zMe.MESSAGE_UPDATE]: {
     scope: Chunk243814.x.RPC,
     validation: j,
-    handler: A
+    handler: x
   },
   [Chunk981631.zMe.MESSAGE_DELETE]: {
     scope: Chunk243814.x.RPC,
     validation: j,
-    handler: A
+    handler: x
   },
   [Chunk981631.zMe.SPEAKING_START]: {
     scope: {
       [Chunk186901.Gp.ANY]: [Chunk243814.x.RPC, Chunk243814.x.RPC_VOICE_READ, Chunk186901.lH]
     },
-    validation: x,
-    handler: Z
+    validation: Z,
+    handler: A
   },
   [Chunk981631.zMe.SPEAKING_STOP]: {
     scope: {
       [Chunk186901.Gp.ANY]: [Chunk243814.x.RPC, Chunk243814.x.RPC_VOICE_READ, Chunk186901.lH]
     },
-    validation: x,
-    handler: Z
+    validation: Z,
+    handler: A
   },
   [Chunk981631.zMe.GUILD_CREATE]: {
     scope: Chunk243814.x.RPC,
@@ -334,7 +334,7 @@ let w = {
       } = e, r = {
         currentUser: _.default.getCurrentUser()
       };
-      return null == r.currentUser || null != t && (0, o.Z)(r, t) || n((0, T.Z)(r.currentUser)), r
+      return null == r.currentUser || null != t && (0, o.Z)(r, t) || n((0, N.Z)(r.currentUser)), r
     }
   },
   [Chunk981631.zMe.CURRENT_GUILD_MEMBER_UPDATE]: {

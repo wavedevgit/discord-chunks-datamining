@@ -73,7 +73,7 @@ function x(e, t) {
 }
 let M = (e, t, n) => (0, A.uq)(e) && !n && "lg" === t ? "text-lg/medium" : "lg" === t ? "text-md/medium" : "sm" === t ? "text-sm/medium" : "text-xs/medium";
 
-function j(e) {
+function k(e) {
   let {
     containerSize: t,
     onClick: n,
@@ -99,7 +99,7 @@ function j(e) {
   })
 }
 
-function k(e) {
+function j(e) {
   var t, n, r, i, a;
   let {
     quest: o,
@@ -295,7 +295,7 @@ let B = e => {
         }), (0, r.jsx)(u.Text, {
           variant: "lg" === c ? "text-sm/medium" : "text-xs/medium",
           color: "text-muted",
-          children: k({
+          children: j({
             quest: n,
             locale: K,
             isQuestExpired: _,
@@ -322,7 +322,7 @@ let B = e => {
         align: "center",
         justify: "end",
         fullWidth: "lg" !== c,
-        children: [(0, r.jsx)(j, {
+        children: [(0, r.jsx)(k, {
           containerSize: c,
           onClick: W,
           text: R.intl.string(R.t.LLLLPD)

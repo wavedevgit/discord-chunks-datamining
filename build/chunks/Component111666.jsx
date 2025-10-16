@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 111666, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => T
+  Z: () => N
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -76,8 +76,8 @@ function S(e) {
           if (!g.Z.isFriend(n)) returnfalse;
           let E = m.default.getUser(n);
           if (null == E) returnfalse;
-          let y = false,
-            v = null;
+          let v = false,
+            y = null;
           if (null != i) {
             let t = i.type;
             if (null != t && function(e) {
@@ -85,25 +85,25 @@ function S(e) {
                 return t === O.IIU.PLAYING && null != e.application_id || t === O.IIU.LISTENING || t === O.IIU.WATCHING
               }(i)) {
               let l = t === O.IIU.WATCHING || t === O.IIU.LISTENING ? "".concat(t, "-").concat(null != (u = i.name) ? u : "", "-").concat(null != (d = i.state) ? d : "", "-").concat(null != (p = i.details) ? p : "") : "".concat(t, "-").concat(null != (h = i.name) ? h : "");
-              (null == (c = r.current[n]) ? true : c.presence) !== l && (y = true, e(n, "presence", l), v = {
+              (null == (c = r.current[n]) ? true : c.presence) !== l && (v = true, e(n, "presence", l), y = {
                 user: E,
                 activity: i
               })
-            } else(null == (s = r.current[n]) ? true : s.presence) != null && (y = true, e(n, "presence", null))
+            } else(null == (s = r.current[n]) ? true : s.presence) != null && (v = true, e(n, "presence", null))
           }
           if (null != a) {
             let t = f.Z.getChannel(a);
             if (null != t) {
               let i = "voice-".concat(t.id);
-              (null == (b = r.current[n]) ? true : b.voice) !== i && (y = true, e(n, "voice", i), v = {
+              (null == (b = r.current[n]) ? true : b.voice) !== i && (v = true, e(n, "voice", i), y = {
                 user: E,
                 voiceChannel: t
               })
             }
-          } else(null == (o = r.current[n]) ? true : o.voice) != null && (y = true, e(n, "voice", null));
-          return y && null != v && (_ = v, null != l.current && (window.clearTimeout(l.current), l.current = null), t(_), l.current = window.setTimeout(() => {
+          } else(null == (o = r.current[n]) ? true : o.voice) != null && (v = true, e(n, "voice", null));
+          return v && null != y && (_ = y, null != l.current && (window.clearTimeout(l.current), l.current = null), t(_), l.current = window.setTimeout(() => {
             t(null), l.current = null
-          }, 1e4)), y
+          }, 1e4)), v
         },
         a = e => {
           for (let t of e.updates) {
@@ -120,7 +120,7 @@ function S(e) {
         s.Z.unsubscribe("PRESENCE_UPDATES", a), s.Z.unsubscribe("VOICE_STATE_UPDATES", o), null != l.current && (window.clearTimeout(l.current), l.current = null)
       }
     }, [n]), e
-  }(), T = i.useRef(null), N = (0, o.Yzy)(S, {
+  }(), N = i.useRef(null), T = (0, o.Yzy)(S, {
     keys: e => {
       var t, n, r;
       return null != e ? null != e.voiceChannel ? "".concat(e.user.id, "-voice-").concat(e.voiceChannel.id) : "".concat(e.user.id, "-").concat(null == (t = e.activity) ? true : t.state, ":").concat(null == (n = e.activity) ? true : n.details, ":").concat(null == (r = e.activity) ? true : r.name) : "none"
@@ -144,17 +144,17 @@ function S(e) {
   });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: v.container,
-      children: N((e, t) => null == t ? null : (0, r.jsx)(p.Z, {
-        targetElementRef: T,
+      className: y.container,
+      children: T((e, t) => null == t ? null : (0, r.jsx)(p.Z, {
+        targetElementRef: N,
         position: "bottom",
         align: "left",
         userId: t.user.id,
         children: n => {
           var i;
           return (0, r.jsxs)(l.animated.div, C(I({
-            ref: T,
-            className: v.activityWrapper,
+            ref: N,
+            className: y.activityWrapper,
             style: e
           }, n), {
             children: [(0, r.jsx)(o.Text, {
@@ -163,11 +163,11 @@ function S(e) {
             }), null != t.voiceChannel ? (0, r.jsx)(u.Z, {
               channel: t.voiceChannel,
               textVariant: "text-xs/medium",
-              textClassName: v.statusText
+              textClassName: y.statusText
             }) : (0, r.jsx)(c.Z, {
               activity: t.activity,
               textVariant: "text-xs/medium",
-              textClassName: v.statusText
+              textClassName: y.statusText
             })]
           }))
         }
@@ -181,8 +181,8 @@ function S(e) {
         onClick: e,
         icon: o.iFz,
         iconSize: b,
-        "aria-label": y.intl.string(y.t.TdEu5e),
-        tooltip: i ? null : y.intl.string(y.t.TdEu5e),
+        "aria-label": v.intl.string(v.t.TdEu5e),
+        tooltip: i ? null : v.intl.string(v.t.TdEu5e),
         selected: i,
         showBadge: n
       }))
@@ -190,7 +190,7 @@ function S(e) {
   })
 }
 
-function T(e) {
+function N(e) {
   let {
     className: t
   } = e, {

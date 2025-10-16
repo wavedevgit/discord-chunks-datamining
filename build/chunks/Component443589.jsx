@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 443589, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => T
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -28,19 +28,19 @@ var Chunk951288 = require("./951288.js"),
   Chunk427954 = require("./427954.js"),
   Chunk286389 = require("./286389.js");
 
-function N(e) {
+function T(e) {
   let {
     recipientUser: t,
     giftIntentType: n,
     analyticsPage: l,
-    shouldHighlight: N
+    shouldHighlight: T
   } = e, {
     analyticsLocations: P
   } = (0, d.ZP)(), {
     isHovered: j,
-    setIsHovered: A,
-    onMouseEnter: x,
-    onMouseLeave: Z
+    setIsHovered: x,
+    onMouseEnter: Z,
+    onMouseLeave: A
   } = (0, h.Z)(200, 300), {
     enableEmojiCTA: w
   } = _.w.useExperiment({
@@ -60,8 +60,8 @@ function N(e) {
     })
   }, [t, n]);
   let L = i.useCallback(e => {
-      "focus" !== e.type && x()
-    }, [x]),
+      "focus" !== e.type && Z()
+    }, [Z]),
     R = e => {
       e.stopPropagation();
       let r = g.Z.getUserAffinity(t.id);
@@ -83,13 +83,13 @@ function N(e) {
         giftMessage: D()
       })
     },
-    D = () => n === v.hX.FRIEND_ANNIVERSARY ? C.intl.formatToPlainString(C.t["L2s/Nz"], {
+    D = () => n === y.hX.FRIEND_ANNIVERSARY ? C.intl.formatToPlainString(C.t["L2s/Nz"], {
       numberOfYears: E.Z.getFriendAnniversaryYears(t.id)
     }) : (0, b.Ou)(n),
-    k = () => n === v.hX.FRIEND_ANNIVERSARY ? C.intl.string(C.t["4LohBA"]) : (0, b.Ou)(n),
-    M = i.useRef(null);
+    M = () => n === y.hX.FRIEND_ANNIVERSARY ? C.intl.string(C.t["4LohBA"]) : (0, b.Ou)(n),
+    k = i.useRef(null);
   return (0, r.jsx)(u.yRy, {
-    targetElementRef: M,
+    targetElementRef: k,
     animation: u.yRy.Animation.FADE,
     nudgeAlignIntoViewport: false,
     scrollBehavior: "close",
@@ -98,29 +98,29 @@ function N(e) {
     align: "top",
     spacing: 9,
     onRequestClose: () => {
-      A(false)
+      x(false)
     },
-    renderPopout: e => (0, r.jsx)(y.Z, {
+    renderPopout: e => (0, r.jsx)(v.Z, {
       giftIntentType: n,
-      premiumGiftIntentCardType: y.U.COACHMARK,
+      premiumGiftIntentCardType: v.U.COACHMARK,
       recipientUser: t,
-      onMouseEnter: x,
-      onMouseLeave: Z,
+      onMouseEnter: Z,
+      onMouseLeave: A,
       popoutPosition: e.position,
       analyticsPage: l,
       analyticsSection: I.jXE.FRIENDS_LIST_FRIEND_ROW_GIFT_POPOUT,
-      giftIntentSecondaryAction: v.X2.SEND_MESSAGE,
+      giftIntentSecondaryAction: y.X2.SEND_MESSAGE,
       glow: true
     }),
     children: () => w ? (0, r.jsx)(u.P3F, {
-      innerRef: M,
-      "aria-label": k(),
+      innerRef: k,
+      "aria-label": M(),
       onClick: R,
-      className: a()(T.actionButton, S.popoutButton, {
-        [T.highlight]: N
+      className: a()(N.actionButton, S.popoutButton, {
+        [N.highlight]: T
       }),
       onMouseEnter: L,
-      onMouseLeave: Z,
+      onMouseLeave: A,
       children: (0, r.jsx)(o.animated.div, {
         className: S.spriteContainer,
         children: (0, r.jsx)("div", {
@@ -129,10 +129,10 @@ function N(e) {
       })
     }) : (0, r.jsx)(c.zx, {
       "data-migration-pending": true,
-      buttonRef: M,
+      buttonRef: k,
       onClick: R,
       onMouseEnter: L,
-      onMouseLeave: Z,
+      onMouseLeave: A,
       children: (0, r.jsxs)("div", {
         className: S.pillContentContainer,
         children: [(0, r.jsx)(u.OgN, {
@@ -144,7 +144,7 @@ function N(e) {
           variant: "text-sm/medium",
           color: "always-white",
           className: S.pillButtonText,
-          children: k()
+          children: M()
         })]
       })
     })

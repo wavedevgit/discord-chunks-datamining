@@ -119,7 +119,7 @@ function g(e) {
     children: (0, r.jsx)(s.n, {
       children: t
     })
-  }) : null, M = null != t && "" !== t, j = null != l && "" !== l, k = M ? (0, r.jsxs)(u.x, {
+  }) : null, M = null != t && "" !== t, k = null != l && "" !== l, j = M ? (0, r.jsxs)(u.x, {
     "aria-hidden": w,
     "data-interactive": I,
     id: S,
@@ -154,11 +154,11 @@ function g(e) {
       "data-disabled": a,
       "aria-describedby": w ? N : true,
       disabled: w ? a : true,
-      children: [x, M || j ? (0, r.jsxs)("div", {
+      children: [x, M || k ? (0, r.jsxs)("div", {
         className: f.labelContainer,
         children: [n ? (0, r.jsx)(s.n, {
-          children: k
-        }) : k, j && (0, r.jsx)(u.x, {
+          children: j
+        }) : j, k && (0, r.jsx)(u.x, {
           variant: "text-sm/normal",
           color: "text-secondary",
           className: f.description,
