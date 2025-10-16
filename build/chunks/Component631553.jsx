@@ -173,7 +173,7 @@ let ex = e => {
       ctrlKey: s
     }
   };
-class eC extends Chunk647438.Component {
+class eZ extends Chunk647438.Component {
   handleLock() {
     (0, Chunk481060.$sL)() || Chunk574254.Z.isOpen() || Chunk13245.Z.setInputLocked(true, (0, Chunk145597.getPID)())
   }
@@ -257,7 +257,7 @@ class eC extends Chunk647438.Component {
         })
       }
       Chunk998502.ZP.on("REQUEST_OPEN_EXTERNAL_URL", (e, t) => {
-        Y.default.getDisableExternalLinkAlert() || t === W.Z.getLastURL() ? Q.ZP.send("OPEN_EXTERNAL_URL", t) : y.Z.show({
+        Y.default.getDisableExternalLinkAlert() || t === W.Z.getLastURL() ? J.ZP.send("OPEN_EXTERNAL_URL", t) : y.Z.show({
           title: ey.intl.string(ey.t.WLx4Fx),
           body: ey.intl.string(ey.t.H8O1TE),
           secondaryConfirmText: ey.intl.string(ey.t.IwqGhY),
@@ -266,7 +266,7 @@ class eC extends Chunk647438.Component {
           onConfirmSecondary: () => {
             O.Z.disableExternalLinkAlert()
           },
-          onConfirm: () => Q.ZP.send("OPEN_EXTERNAL_URL", t)
+          onConfirm: () => J.ZP.send("OPEN_EXTERNAL_URL", t)
         })
       })
     }
@@ -380,7 +380,7 @@ function ej() {
   } = (0, Chunk906732.ZP)(Chunk100527.Z.OVERLAY), {
     showKeybindIndicators: b,
     dismissKeybindNotification: E
-  } = (0, Chunk358446.K)(), x = (null == c ? true : c.fullscreenType) === Chunk593472.Jx.FULLSCREEN, S = null != (e = null == c ? true : c.oopEnabled) && module, Z = Chunk454991.v.oopEnabled, I = null != (t = null == c ? true : c.hasChangedRenderMode) && exports, {
+  } = (0, Chunk358446.K)(), x = (null == c ? true : c.fullscreenType) === Chunk593472.Jx.FULLSCREEN, S = null != (e = null == c ? true : c.oopEnabled) && module, C = Chunk454991.v.oopEnabled, I = null != (t = null == c ? true : c.hasChangedRenderMode) && exports, {
     useContextualNudge: T,
     disableNudge: D
   } = (0, Chunk32300.J0)("OverlaySetup");
@@ -388,7 +388,7 @@ function ej() {
     i && (0, Chunk32300.F3)()
   }, [i]), (0, Chunk951288.jsx)(Chunk906732.Gt, {
     value: Chunk13245,
-    children: (0, Chunk951288.jsx)(eC, {
+    children: (0, Chunk951288.jsx)(eZ, {
       locked: require,
       initialized: i,
       incompatibleApp: Chunk120356,

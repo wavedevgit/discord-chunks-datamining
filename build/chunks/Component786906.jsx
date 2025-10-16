@@ -34,7 +34,7 @@ function S(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class C extends Chunk647438.Component {
+class Z extends Chunk647438.Component {
   componentDidUpdate() {
     this.props.locked && this.state.showOpacitySlider && this.setState({
       showOpacitySlider: false
@@ -186,7 +186,7 @@ function j(e) {
     o = (0, l.e7)([g.Z], () => g.Z.isCallActive(t.id)),
     a = (0, u.ZP)(t),
     c = (0, l.e7)([_.Z], () => !!t.isDM() && null != t.getRecipientId() && _.Z.isBlocked(t.getRecipientId()));
-  return (0, i.jsx)(C, function(e) {
+  return (0, i.jsx)(Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         i = Object.keys(n);

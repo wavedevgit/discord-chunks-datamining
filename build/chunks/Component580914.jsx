@@ -113,7 +113,7 @@ let W = (0, Chunk884697.IC)(90),
         cardContainerRef: l.useCallback(t => {
           o.current = t, null != t && e && i()
         }, [i, o, e]),
-        totalCards: e ? t : 4
+        totalCards: e ? t : true
       }
     })(G !== H.AW.ORBS), e_ = (0, y.a)()(ef), em = (0, k.l)(e_).slice(0, eh), eb = (0, P.St)(em), ev = G === H.AW.ORBS ? M.intl.string(M.t["1CdL8f"]) : Q ? M.intl.string(M.t.guWAg4) : et ? M.intl.string(M.t["/QvRam"]) : M.intl.string(M.t.xYKa1d), eE = (0, O.FF)("CollectiblesContent"), eO = (0, v.$2)(en.categorySkuId), ex = E.Z.useConfig({
       location: "HeroBlock"
@@ -213,7 +213,7 @@ let W = (0, Chunk884697.IC)(90),
           }),
           ref: eC,
           children: n || ep ? (0, r.jsx)(r.Fragment, {
-            children: [...Array(eh)].map((e, t) => ex ? (0, r.jsx)(B.Z, {}, t) : (0, r.jsx)(j.K, {}, t))
+            children: [...Array(null != eh ? eh : 4)].map((e, t) => ex ? (0, r.jsx)(B.Z, {}, t) : (0, r.jsx)(j.K, {}, t))
           }) : (0, r.jsx)(r.Fragment, {
             children: eb.map((e, t) => {
               let n = b.Z.getCategoryForProduct(e.skuId);

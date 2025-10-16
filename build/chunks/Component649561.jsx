@@ -92,8 +92,8 @@ class T extends Chunk647438.PureComponent {
               height: 40,
               className: I.notificationIcon
             }),
-            title: Z.intl.string(Z.t.U38qZm),
-            confirmText: Z.intl.string(Z.t.TzAl1d),
+            title: C.intl.string(C.t.U38qZm),
+            confirmText: C.intl.string(C.t.TzAl1d),
             onNotificationClick: this.handleNotificationClick,
             onConfirmClick: this.handleReload,
             onDismissClick: this.hideNotification,
@@ -130,7 +130,7 @@ class T extends Chunk647438.PureComponent {
       this.setState({
         busy: true
       }), N(), h.Z.track(j.rMx.NOTIFICATION_CLICKED, {
-        notif_type: C.n0.OverlayCrashed,
+        notif_type: Z.n0.OverlayCrashed,
         action_type: "reload"
       }, true), e.stopPropagation(), setTimeout(() => location.reload(true), 200)
     }), P(this, "handleNotificationClick", e => {

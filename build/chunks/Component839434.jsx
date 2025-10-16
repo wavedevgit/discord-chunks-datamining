@@ -107,12 +107,12 @@ function eo(e) {
     context: f,
     guildId: g,
     voiceState: m
-  } = e, y = (0, q.Z)({
+  } = e, y = (0, Q.Z)({
     location: "overlay_voice_widget"
   }), O = (0, a.e7)([B.default], () => B.default.showKeybindIndicators), b = (0, a.e7)([A.default], () => A.default.getId()), v = (0, a.e7)([z.Z], () => z.Z.isLocalMute(i.id)), E = (0, a.e7)([R.Z], () => R.Z.getCurrentUserActiveStream()), x = (0, a.Wu)([R.Z], () => null != E ? R.Z.getViewerIds(E) : []), S = (0, _.Z)({
     userId: i.id,
     context: f
-  }), C = (0, a.e7)([W.Z], () => W.Z.isPrioritySpeaker(i.id, f)), j = (0, a.e7)([R.Z], () => null != R.Z.getStreamForUser(i.id, g)), Z = s.useMemo(() => null != E && E.ownerId !== i.id && x.includes(i.id), [E, i.id, x]);
+  }), Z = (0, a.e7)([W.Z], () => W.Z.isPrioritySpeaker(i.id, f)), j = (0, a.e7)([R.Z], () => null != R.Z.getStreamForUser(i.id, g)), C = s.useMemo(() => null != E && E.ownerId !== i.id && x.includes(i.id), [E, i.id, x]);
   if (d === $.OYC.ONLY_WHILE_SPEAKING && n && !S) return null;
   let I = i.id === b,
     {
@@ -141,10 +141,10 @@ function eo(e) {
       iconClassName: l()(en.voiceIcon, {
         [en.locked]: n
       }),
-      isWatching: Z,
+      isWatching: C,
       isOverlay: true,
       size: u,
-      priority: C,
+      priority: Z,
       mute: P || M || v,
       localMute: v,
       serverMute: P || N,
@@ -343,7 +343,7 @@ class el extends(i = Chunk647438.PureComponent) {
     (0, Chunk906037.m3)(this.props, this.shouldDisplay())
   }
   componentDidUpdate(e) {
-    (0, J.CR)(e, this.props, this.shouldDisplay)
+    (0, q.CR)(e, this.props, this.shouldDisplay)
   }
   shouldDisplay() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : this.props,
@@ -447,7 +447,7 @@ function ea(e) {
         return null == e ? [
           [], false
         ] : e.isGuildStageVoice() ? [w.Z.getMutableParticipants(e.id, N.pV.SPEAKER), w.Z.getParticipantsVersion(e.id)] : [G.ZP.getVoiceStatesForChannel(e), G.ZP.getVoiceStateVersion(e.getGuildId())]
-      }, [], H.Q), t = (0, a.e7)([A.default], () => A.default.getId()), n = (0, q.Z)({
+      }, [], H.Q), t = (0, a.e7)([A.default], () => A.default.getId()), n = (0, Q.Z)({
         location: "voice_widget"
       });
       return s.useMemo(() => n ? [...e].sort((e, n) => e.user.id === t ? false : +(n.user.id === t)) : e, [e, t, n])
@@ -455,12 +455,12 @@ function ea(e) {
     l = (0, a.e7)([R.Z], () => R.Z.getStreamerActiveStreamMetadata()),
     c = (0, a.e7)([E.ZP, U.Z, M.Z], () => {
       var e;
-      let t = (0, Z.Z)(E.ZP, U.Z);
+      let t = (0, C.Z)(E.ZP, U.Z);
       return null != t ? null == (e = M.Z.getGameByGameData(t)) ? true : e.id : null
     }),
     d = (0, O.q)(c),
     u = (0, a.cj)([E.ZP, U.Z, R.Z, B.default], () => {
-      let e = (0, Z.Z)(E.ZP, U.Z),
+      let e = (0, C.Z)(E.ZP, U.Z),
         t = R.Z.getCurrentUserActiveStream();
       return {
         displayUserMode: B.default.getDisplayUserMode(),

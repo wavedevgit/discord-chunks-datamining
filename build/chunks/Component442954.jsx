@@ -242,14 +242,6 @@ let j = {
     });
     return Chunk481060.displayName = "PremiumSubscriptionPauseModalWrapper", e => (0, a.jsx)(o, b({}, e))
   },
-  OverlaySettingsModal: async () => {
-    let {
-      default: e
-    } = await require.e("55288").then(require.bind(require, 669083));
-    return t => (0, a.jsx)(e, {
-      onClose: t.onClose
-    })
-  },
   NewMemberActionModal: async () => {
     let {
       default: e

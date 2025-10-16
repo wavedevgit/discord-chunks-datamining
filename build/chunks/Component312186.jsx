@@ -1,8 +1,8 @@
 /** Chunk was on 63141 **/
-/** chunk id: 669083, original params: e,t,n (module,exports,require) **/
+/** chunk id: 312186, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  default: () => j
+  Z: () => j
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk987650 = require("./987650.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk476828 = require("./476828.js"),
+  Chunk183322 = require("./183322.js"),
   Chunk197571 = require("./197571.js");
 
 function x(e, t, n) {
@@ -49,7 +49,7 @@ function S() {
     text_activation_hotkey: null != Chunk951288 ? (0, Chunk13140.BB)(Chunk951288.shortcut) : null
   })
 }
-class C extends Chunk647438.PureComponent {
+class Z extends Chunk647438.PureComponent {
   componentDidMount() {
     Chunk13245.Z.track(Chunk981631.rMx.SETTINGS_PANE_VIEWED, {
       settings_type: "overlay",
@@ -83,15 +83,21 @@ class C extends Chunk647438.PureComponent {
       direction: Chunk600164.Z.Direction.VERTICAL,
       grow: 0,
       shrink: 0,
-      className: Chunk476828.header,
+      className: Chunk183322.header,
       children: [(0, Chunk951288.jsxs)(Chunk600164.Z, {
         children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
-          variant: "heading-lg/semibold",
-          className: Chunk476828.headerTitle,
+          variant: "heading-md/semibold",
+          className: Chunk183322.headerTitle,
           children: Chunk388032.intl.string(Chunk388032.t["35G2Mj"])
-        }), (0, Chunk951288.jsx)(Chunk481060.olH, {
-          className: Chunk476828.headerClose,
-          onClick: this.props.onClose
+        }), (0, Chunk951288.jsx)("div", {
+          className: Chunk183322.headerClose,
+          children: (0, Chunk951288.jsx)(Chunk481060.hU, {
+            variant: "icon-only",
+            size: "md",
+            icon: Chunk481060.Dio,
+            onClick: this.props.onClose,
+            "aria-label": Chunk388032.intl.string(Chunk388032.t.cpT0Cg)
+          })
         })]
       }), this.renderTabBar()]
     })
@@ -101,21 +107,21 @@ class C extends Chunk647438.PureComponent {
       selectedSection: e
     } = this.state, t = Chunk906467.Z.isDeveloper ? (0, Chunk951288.jsx)(Chunk481060.njP.Item, {
       id: "DEVELOPER",
-      className: Chunk476828.tabBarItem,
+      className: Chunk183322.tabBarItem,
       children: "Developer"
     }) : null;
     return (0, Chunk951288.jsxs)(Chunk481060.njP, {
       selectedItem: module,
       type: "top",
-      className: Chunk476828.__invalid_tabBar,
+      className: Chunk183322.__invalid_tabBar,
       onItemSelect: this.handleSelectSection,
       children: [(0, Chunk951288.jsx)(Chunk481060.njP.Item, {
         id: "GENERAL",
-        className: Chunk476828.tabBarItem,
+        className: Chunk183322.tabBarItem,
         children: Chunk388032.intl.string(Chunk388032.t["0FYxx8"])
       }), (0, Chunk951288.jsx)(Chunk481060.njP.Item, {
         id: "VOICE",
-        className: Chunk476828.tabBarItem,
+        className: Chunk183322.tabBarItem,
         children: Chunk388032.intl.string(Chunk388032.t["3WeSiI"])
       }), exports]
     })
@@ -134,8 +140,8 @@ class C extends Chunk647438.PureComponent {
       default:
         e = this.renderGeneralSettings()
     }
-    return (0, Chunk951288.jsx)(Chunk481060.hzk, {
-      className: Chunk476828.content,
+    return (0, Chunk951288.jsx)(Chunk481060.h21, {
+      className: Chunk183322.content,
       children: module
     }, exports)
   }
@@ -253,10 +259,9 @@ class C extends Chunk647438.PureComponent {
     })
   }
   render() {
-    return (0, Chunk951288.jsxs)(Chunk481060.Y0X, {
+    return (0, Chunk951288.jsxs)(Chunk481060.VqE, {
       "aria-label": Chunk388032.intl.string(Chunk388032.t["35G2Mj"]),
-      transitionState: Chunk481060.Dvm.ENTERED,
-      parentComponent: "OverlaySettings",
+      className: Chunk183322.container,
       children: [this.renderHeader(), this.renderBody()]
     })
   }
@@ -298,7 +303,7 @@ function j(e) {
   })), u = (0, m.Z)({
     location: "Overlay Settings"
   });
-  return (0, i.jsx)(C, {
+  return (0, i.jsx)(Z, {
     onClose: t,
     avatarSizeMode: n,
     displayNameMode: r,

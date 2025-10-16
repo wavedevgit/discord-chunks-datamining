@@ -2,7 +2,7 @@
 /** chunk id: 389458, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => P
+  Z: () => w
 }), require("./388685.js"), require("./704826.js"), require("./35282.js"), require("./642613.js"), require("./368063.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -18,29 +18,30 @@ function c(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let u = 250,
-  d = .001,
-  f = .01,
-  _ = 10,
-  p = Chunk449908.t.createEstimate(d, f),
-  h = new Map,
-  m = 0;
+let u = 5,
+  d = 250,
+  f = .001,
+  _ = .01,
+  p = 10,
+  h = Chunk449908.t.createEstimate(f, _),
+  m = new Map,
+  g = 0;
 
-function g(e) {
+function E(e) {
   return e.replace(/[^\w\s]|\b\d+\b/g, "")
 }
 
-function E(e) {
-  return g(e).replace(/(https?:\/\/[^\s]+|ftp:\/\/[^\s]+|www\.[^\s]+|[^\s]*\.[a-z]{2,}\/[^\s]*|[^\s]*\.(?:com|org|net)[^\s]*|<a?:(\w+):(\d+)>|<@(?:!|&)?\d+>)/g, "").split(/\s+/)
+function b(e) {
+  return E(e).replace(/(https?:\/\/[^\s]+|ftp:\/\/[^\s]+|www\.[^\s]+|[^\s]*\.[a-z]{2,}\/[^\s]*|[^\s]*\.(?:com|org|net)[^\s]*|<a?:(\w+):(\d+)>|<@(?:!|&)?\d+>)/g, "").split(/\s+/)
 }
 
-function b(e) {
+function y(e) {
   return Array.from(e.entries()).sort((e, t) => t[1] - e[1])
 }
 
-function y(e, t) {
+function O(e, t) {
   if (e.size <= t) return;
-  let n = b(e);
+  let n = y(e);
   e.clear();
   for (let r = 0; r < t; r++) {
     let [t, i] = n[r];
@@ -48,27 +49,27 @@ function y(e, t) {
   }
 }
 
-function O() {
+function v() {
   let e = 1e3,
     t = 5e3,
     n = .05;
-  return m < 1e3 || Math.random() < (1 - require) * Math.max(0, 1 - (m - module) / (exports - module)) + require
+  return g < 1e3 || Math.random() < (1 - require) * Math.max(0, 1 - (g - module) / (exports - module)) + require
 }
 
-function v(e) {
+function I(e) {
   let t = false;
   for (let n of e)
-    if (O())
-      for (let e of E(n.content.toLowerCase())) {
-        if (0 === e.length || e.length > 5) continue;
-        p.update(e);
-        let n = p.query(e);
-        h.set(e, n), n > m && (m = n), t = true
+    if (v())
+      for (let e of b(n.content.toLowerCase())) {
+        if (0 === e.length || e.length > u) continue;
+        h.update(e);
+        let n = h.query(e);
+        m.set(e, n), n > g && (g = n), t = true
       }
-  y(h, u), t && R.emitChange()
+  O(m, d), t && P.emitChange()
 }
 
-function I() {
+function T() {
   let e = Chunk240458.V.getCurrentConfig({
       location: "WordFrequencyStore"
     }, {
@@ -80,64 +81,64 @@ function I() {
   return module || exports
 }
 
-function T(e) {
-  return !!I() && (requestIdleCallback(() => {
-    v(e)
+function S(e) {
+  return !!T() && (requestIdleCallback(() => {
+    I(e)
   }), false)
 }
-let S = e => {
+let A = e => {
     let {
       messages: t
     } = e;
-    return T(t)
+    return S(t)
   },
-  A = e => {
+  C = e => {
     let {
       message: t
     } = e;
-    return T([t])
+    return S([t])
   },
-  C = e => {
-    p = o.t.createEstimate(d, f), h.clear(), m = 0
+  N = e => {
+    h = o.t.createEstimate(f, _), m.clear(), g = 0
   };
-class N extends(r = Chunk442837.ZP.PersistedStore) {
+class R extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     if (null != e) {
       var t;
       if (e.wordSketchData) try {
-        e.wordSketchData && (p = o.t.fromJSON(e.wordSketchData))
+        e.wordSketchData && (h = o.t.fromJSON(e.wordSketchData))
       } catch (e) {
-        p = o.t.createEstimate(d, f)
+        h = o.t.createEstimate(f, _)
       }
-      h = new Map(null != (t = e.wordCounts) ? t : [])
+      m = new Map(null != (t = e.wordCounts) ? t : [])
     }
-    let n = b(h);
+    let n = y(m);
     if (n.length > 0) {
       let [, e] = n[0];
-      m = e
+      g = e
     }
   }
   getState() {
     return {
-      wordCounts: b(h),
-      wordSketchData: p.toJSON()
+      wordCounts: y(m),
+      wordSketchData: h.toJSON()
     }
   }
   getMaxWordCount() {
-    return m
+    return g
   }
   getAllWordsSorted() {
-    return b(h)
+    return y(m)
   }
   isFrequentlyUsedWord(e) {
-    let t = h.get(e.toLowerCase());
-    return null != t && t > _
+    let t = m.get(e.toLowerCase());
+    return null != t && t > p
   }
 }
-c(N, "displayName", "WordFrequencyStore"), c(N, "persistKey", "WordFrequencyStore");
-let R = new N(Chunk570140.Z, {
-    LOAD_MESSAGES_SUCCESS: S,
-    MESSAGE_CREATE: A,
-    DEV_TOOLS_WORD_FREQUENCY_RESET: C
+c(R, "displayName", "WordFrequencyStore"), c(R, "persistKey", "WordFrequencyStore");
+let P = new R(Chunk570140.Z, {
+    LOAD_MESSAGES_SUCCESS: A,
+    MESSAGE_CREATE: C,
+    DEV_TOOLS_WORD_FREQUENCY_RESET: N
   }),
-  P = R
+  w = P

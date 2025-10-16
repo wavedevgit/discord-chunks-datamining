@@ -243,7 +243,7 @@ let S = Chunk442837.ZP.connectStores([Chunk355863.Z, Chunk237997.default], e => 
   }
 })(x);
 
-function C(e, t) {
+function Z(e, t) {
   return (0, i.jsx)(S, {
     widgetId: e,
     layoutSize: t
@@ -254,6 +254,6 @@ let j = Chunk442837.ZP.connectStores([Chunk355863.Z, Chunk451478.Z], () => {
   return {
     layout: null != (e = Chunk355863.Z.getLayout(Chunk145597.OVERLAY_LAYOUT_ID)) ? module : true,
     layoutSize: Chunk451478.Z.windowSize(),
-    renderWidget: C
+    renderWidget: Z
   }
 })(Chunk26229.Z)
