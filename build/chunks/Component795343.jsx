@@ -2,7 +2,7 @@
 /** chunk id: 795343, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => k
+  Z: () => T
 }), require("./388685.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,23 +22,23 @@ var Chunk951288 = require("./951288.js"),
   Chunk38900 = require("./38900.jsx"),
   Chunk709999 = require("./709999.jsx"),
   Chunk653126 = require("./653126.jsx"),
-  Chunk786040 = require("./786040.jsx"),
+  Chunk786040 = require("./786040.js"),
   Chunk401975 = require("./401975.jsx"),
   Chunk81136 = require("./81136.js"),
   Chunk440617 = require("./440617.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk891131 = require("./891131.js");
 
-function k(e) {
+function T(e) {
   var t;
   let {
     isFetchingCategories: n,
     scrollerRef: i,
-    tab: k
-  } = e, T = (0, d.sp)(), L = null != (t = null == T ? true : T.sessionId) ? t : "", {
+    tab: T
+  } = e, j = (0, d.sp)(), L = null != (t = null == j ? true : j.sessionId) ? t : "", {
     noCache: I,
     includeUnpublished: B
-  } = (0, x.Z)(), A = (0, s.e7)([c.default], () => c.default.getCurrentUser()), {
+  } = (0, O.Z)(), A = (0, s.e7)([c.default], () => c.default.getCurrentUser()), {
     skus: N,
     currentPage: P,
     totalCount: R,
@@ -48,21 +48,21 @@ function k(e) {
     null == i || null == (e = i.current) || e.scrollToTop({
       animate: true
     })
-  }, [i]), D = null == N ? true : N.join("");
+  }, [i]), M = null == N ? true : N.join("");
   l.useEffect(() => {
     H()
-  }, [D, H]);
-  let M = (0, p.a)(),
-    F = l.useMemo(() => M(w), [M, w]);
+  }, [M, H]);
+  let D = (0, p.a)(),
+    F = l.useMemo(() => D(w), [D, w]);
   l.useEffect(() => {
     n || (0, _.n)({
       sessionId: L,
       checkpoint: _.a.SHOP_RENDERED,
-      tab: k,
+      tab: T,
       unpublishedCategoriesShown: B,
       cacheDisabled: I
     })
-  }, [L, B, I, n, k]);
+  }, [L, B, I, n, T]);
   let W = l.useRef(null),
     {
       setQueryPageSize: U,
@@ -84,29 +84,29 @@ function k(e) {
   }, [U]);
   let Q = l.useCallback(e => {
       u.default.track(y.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-        collectibles_shop_session_id: null == T ? true : T.sessionId,
-        page_section: null == T ? true : T.pageSection,
-        page_category: null == T ? true : T.pageCategory,
+        collectibles_shop_session_id: null == j ? true : j.sessionId,
+        page_section: null == j ? true : j.pageSection,
+        page_category: null == j ? true : j.pageCategory,
         page_index: e,
         page_size: z,
         cta_name: "filter results page ".concat(e),
         page_type: "catalog"
       }), V((e - 1) * z)
-    }, [T, z, V]),
+    }, [j, z, V]),
     J = f.Z.useConfig({
       location: "CollectiblesFilterableShop"
     }).showCardsV2;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: o()({
-        [j.productsEmpty]: q
+        [k.productsEmpty]: q
       }),
       children: [q && (0, r.jsx)(S.Z, {}), (0, r.jsxs)("div", {
-        className: o()(j.products, {
-          [j.loadIn]: G
+        className: o()(k.products, {
+          [k.loadIn]: G
         }),
         ref: W,
-        children: [Y && [...Array(z)].map((e, t) => J ? (0, r.jsx)(O.Z, {}, t) : (0, r.jsx)(m.K, {}, t)), !Y && F.map((e, t) => {
+        children: [Y && [...Array(z)].map((e, t) => J ? (0, r.jsx)(x.Z, {}, t) : (0, r.jsx)(m.K, {}, t)), !Y && F.map((e, t) => {
           let n = g.Z.getCategory(e.categorySkuId);
           return null == n ? null : (0, r.jsx)(d.k0, {
             newValue: {
@@ -114,18 +114,18 @@ function k(e) {
             },
             children: J ? (0, r.jsx)(E.Z, {
               skuId: e.skuId,
-              onClickAnalytics: (0, v.wO)(e, k, T)
+              onClickAnalytics: (0, v.wO)(e, T, j)
             }, e.skuId) : (0, r.jsx)(b.Z, {
               product: e,
               user: A,
               category: n,
-              tab: k
+              tab: T
             }, e.skuId)
           }, e.skuId)
         })]
       })]
     }), R > z && (0, r.jsx)("div", {
-      className: j.paginationContainer,
+      className: k.paginationContainer,
       children: (0, r.jsx)("div", {
         children: (0, r.jsx)(a.DsT, {
           currentPage: P,

@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 779715, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => O
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk236202 = require("./236202.js");
-let E = function() {
+let O = function() {
   Chunk647438.useEffect(() => {
     Chunk150063.Y(Chunk981631.Z5c.ME_ACTIVITY), (0, Chunk108427.e)("activity"), Chunk626135.default.track(Chunk981631.rMx.ACTIVITY_FEED_VIEWED, {})
   }, []);

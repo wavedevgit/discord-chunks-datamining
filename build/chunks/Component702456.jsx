@@ -71,9 +71,9 @@ function P(e) {
   } = (0, o.cj)([b.Z], () => ({
     status: b.Z.getStatus(i.id),
     isMobile: b.Z.isMobileOnline(i.id)
-  })), f = (0, o.e7)([E.Z, g.Z], () => {
+  })), f = (0, o.e7)([O.Z, g.Z], () => {
     let e = g.Z.getDMFromUserId(i.id);
-    return null != e && E.Z.isTyping(e, i.id)
+    return null != e && O.Z.isTyping(e, i.id)
   }, [i]), {
     avatarSrc: m,
     eventHandlers: _
@@ -81,7 +81,7 @@ function P(e) {
     userId: i.id,
     size: s.EFr.SIZE_32,
     animateOnHover: true
-  }), O = async () => {
+  }), E = async () => {
     await c.Z.openPrivateChannel({
       recipientIds: [i.id],
       location: "frequent_friends_row"
@@ -90,10 +90,10 @@ function P(e) {
     null != e && (0, p.yw)(I.rMx.CHANNEL_OPENED, N(T({}, (0, p.$H)(e)), {
       location: "frequent_friends_row_".concat(l + 1)
     }))
-  }, v = 0 === l, y = v ? s.YqE : a ? s.XcD : true, P = v ? C.intl.string(C.t.aI4VOD) : a ? C.intl.string(C.t.kABl29) : true;
+  }, y = 0 === l, v = y ? s.YqE : a ? s.XcD : true, P = y ? C.intl.string(C.t.aI4VOD) : a ? C.intl.string(C.t.kABl29) : true;
   return (0, r.jsx)(s.P3F, {
     className: S.frequentFriendAvatarButton,
-    onClick: O,
+    onClick: E,
     onMouseEnter: _.onMouseEnter,
     onMouseLeave: _.onMouseLeave,
     "aria-label": C.intl.formatToPlainString(C.t.M5FjCg, {
@@ -106,8 +106,8 @@ function P(e) {
       isTyping: f,
       isMobile: d && !f,
       size: s.EFr.SIZE_32,
-      CutoutIcon: y,
-      avatarTooltipAsset: v ? "\uD83D\uDD25" : a ? "❄️" : true,
+      CutoutIcon: v,
+      avatarTooltipAsset: y ? "\uD83D\uDD25" : a ? "❄️" : true,
       avatarTooltipText: P,
       statusTooltip: true,
       statusTooltipDelay: 50,
@@ -168,7 +168,7 @@ function j() {
     }, [Chunk493683]);
   if (!module || null == exports || !require) return null;
   let {
-    frequentFriends: E,
+    frequentFriends: O,
     showCompetitiveSpot: j
   } = exports, A = Chunk120356.scrollWidth > Chunk120356.clientWidth, x = Chunk120356.scrollLeft > 0, Z = Chunk120356.scrollLeft < Chunk120356.scrollWidth - Chunk120356.clientWidth - 2;
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
@@ -200,7 +200,7 @@ function j() {
         children: Chunk111583.map((e, t) => (0, r.jsx)(P, {
           user: e,
           index: t,
-          isCompetitive: t === E.length - 1 && j
+          isCompetitive: t === O.length - 1 && j
         }, e.id))
       })]
     }), (0, Chunk951288.jsx)(Chunk663701.d, {})]

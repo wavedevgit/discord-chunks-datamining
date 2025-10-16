@@ -41,7 +41,7 @@ let x = 15 * Chunk70956.Z.Millis.MINUTE,
     } = e, o = i.useRef(null), c = (0, r.jsx)(I.Z, {
       party: t,
       onUserContextMenu: n
-    }), d = (0, r.jsx)(y.Z, {
+    }), d = (0, r.jsx)(v.Z, {
       party: t,
       onChannelContextMenu: l,
       quest: a
@@ -50,21 +50,21 @@ let x = 15 * Chunk70956.Z.Millis.MINUTE,
       applicationStreams: h,
       currentActivities: g,
       voiceChannels: m
-    } = t, b = f.length, _ = h.length, O = g.length, v = m.length > 0, T = p.o.useConfig({
+    } = t, b = f.length, _ = h.length, E = g.length, y = m.length > 0, T = p.o.useConfig({
       location: "itemcard"
     }).demureActivityCards, P = i.useCallback(() => {
       let e = g.filter(e => {
         var t, n;
-        return (null == (t = e.game) ? true : t.name) != null && (0, E.isGameApplicationType)(null == (n = e.game) ? true : n.type)
+        return (null == (t = e.game) ? true : t.name) != null && (0, O.isGameApplicationType)(null == (n = e.game) ? true : n.type)
       }).map(e => e.game.name);
-      E.default.track(N.rMx.NOW_PLAYING_CARD_HOVERED, {
+      O.default.track(N.rMx.NOW_PLAYING_CARD_HOVERED, {
         num_users: b,
         num_streams: _,
-        num_activities: O,
-        in_voice_channel: v,
+        num_activities: E,
+        in_voice_channel: y,
         games_detected: e
       })
-    }, [b, _, O, v, g]), j = s()(P, x);
+    }, [b, _, E, y, g]), j = s()(P, x);
     return null != c || null != d ? (0, r.jsx)(u.yRy, {
       targetElementRef: o,
       position: "left",

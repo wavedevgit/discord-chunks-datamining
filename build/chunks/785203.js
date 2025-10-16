@@ -25,13 +25,13 @@ function b(e) {
     m = (0, l.e7)([h.Z], () => h.Z.isVisible(e)),
     b = (0, o.m)(n),
     _ = (0, l.e7)([f.Z], () => f.Z.isVisible(e)),
-    E = u.Z.useShouldShowChannelNotice(n),
-    O = (0, d.h6)(e),
+    O = u.Z.useShouldShowChannelNotice(n),
+    E = (0, d.h6)(e),
     {
-      enableStudyGroup: v
+      enableStudyGroup: y
     } = (0, c.s)(e),
-    y = O.length > 0,
-    I = v && !(null == e ? true : e.features.has(g.GuildFeatures.HUB)),
+    v = E.length > 0,
+    I = y && !(null == e ? true : e.features.has(g.GuildFeatures.HUB)),
     C = (0, s.Vm)(n);
   if (i.useEffect(() => {
       a.Z.getGuildEventsForCurrentUser(n)
@@ -39,8 +39,8 @@ function b(e) {
   if (m) return 1;
   if (b || null != C) return 2;
   if (_) return 3;
-  if (E) return 4;
-  else if (y) return 5;
+  if (O) return 4;
+  else if (v) return 5;
   else if (I) return 6;
   return null
 }

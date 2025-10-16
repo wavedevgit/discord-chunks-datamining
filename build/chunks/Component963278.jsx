@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk937510 = require("./937510.js"),
   Chunk709999 = require("./709999.jsx"),
   Chunk653126 = require("./653126.jsx"),
-  Chunk786040 = require("./786040.jsx"),
+  Chunk786040 = require("./786040.js"),
   Chunk215023 = require("./215023.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk310582 = require("./310582.js");
@@ -28,7 +28,7 @@ let E = e => {
     tab: i
   } = e, E = (0, s.e7)([c.default], () => c.default.getCurrentUser()), v = g.Z.useConfig({
     location: "ShelfBlock"
-  }).showCardsV2, O = (0, u.sp)(), x = l.useMemo(() => t.rankedSkuIds.map(e => d.Z.getProduct(e)).filter(e => null != e), [t.rankedSkuIds]), S = (0, f.l)(x).slice(0, 4);
+  }).showCardsV2, x = (0, u.sp)(), O = l.useMemo(() => t.rankedSkuIds.map(e => d.Z.getProduct(e)).filter(e => null != e), [t.rankedSkuIds]), S = (0, f.l)(O).slice(0, 4);
   return null == E ? null : (0, r.jsxs)("div", {
     className: o()(b.shelfBlockContainer, b.centeredSection),
     children: [(0, r.jsxs)("div", {
@@ -59,7 +59,7 @@ let E = e => {
             children: v ? (0, r.jsx)(C.Z, {
               skuId: o,
               prioritizedCurrency: i === _.AW.ORBS ? h.tA.ORBS : true,
-              onClickAnalytics: (0, h.wO)(e, i, O)
+              onClickAnalytics: (0, h.wO)(e, i, x)
             }, o) : (0, r.jsx)(p.Z, {
               product: e,
               category: l,

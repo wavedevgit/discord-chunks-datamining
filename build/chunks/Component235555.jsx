@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 235555, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => E
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -27,7 +27,7 @@ function _(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class E extends Chunk647438.PureComponent {
+class O extends Chunk647438.PureComponent {
   hasParty(e) {
     return e.length > 1
   }
@@ -94,7 +94,7 @@ class E extends Chunk647438.PureComponent {
     })
   }
 }
-let O = Chunk442837.ZP.connectStores([Chunk768419.Z, Chunk594174.default, Chunk699516.Z, Chunk831506.Z], () => {
+let E = Chunk442837.ZP.connectStores([Chunk768419.Z, Chunk594174.default, Chunk699516.Z, Chunk831506.Z], () => {
   let e, t, n = Chunk768419.Z.getSyncingWith(),
     r = Chunk768419.Z.getActivity(),
     i = Chunk594174.default.getCurrentUser(),
@@ -108,4 +108,4 @@ let O = Chunk442837.ZP.connectStores([Chunk768419.Z, Chunk594174.default, Chunk6
     host: module,
     party: Chunk392711
   }
-})(E)
+})(O)

@@ -50,7 +50,7 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
       scope: {
         [Chunk186901.Gp.ANY]: [Chunk186901.wE, Chunk186901.b_]
       },
-      validation: e => (0, E.Z)(e).required().keys({
+      validation: e => (0, O.Z)(e).required().keys({
         url: e.string().required()
       }),
       handler(e) {
@@ -67,13 +67,13 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
           let e = new URL(n),
             a = e.toString();
           if (m.isPlatformEmbedded) {
-            let e = (0, l.R)() ? v.KJ3.ACTIVITY_POPOUT : null;
+            let e = (0, l.R)() ? y.KJ3.ACTIVITY_POPOUT : null;
             f.Z.focus(e, true)
           }
           let h = u.Z.getApplication(null == (s = t.application) ? true : s.id),
             b = (0, c.p)(null == r ? true : r.location),
             _ = (null == h ? true : h.id) !== true ? N.get(h.id) : true;
-          if (true !== _ && _.trustedUntilEpochMs >= Date.now() && _.trustedHosts.has(e.host)) return (0, i.Z)(a), p.default.track(v.rMx.RPC_OPEN_EXTERNAL_LINK_CALLED, {
+          if (true !== _ && _.trustedUntilEpochMs >= Date.now() && _.trustedHosts.has(e.host)) return (0, i.Z)(a), p.default.track(y.rMx.RPC_OPEN_EXTERNAL_LINK_CALLED, {
             application_id: null == (d = t.application) ? true : d.id,
             url: a,
             opened: true
@@ -85,7 +85,7 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
             shouldConfirm: true,
             onConfirm: () => {
               var n;
-              (0, i.Z)(a), p.default.track(v.rMx.RPC_OPEN_EXTERNAL_LINK_CALLED, {
+              (0, i.Z)(a), p.default.track(y.rMx.RPC_OPEN_EXTERNAL_LINK_CALLED, {
                 application_id: null == (n = t.application) ? true : n.id,
                 url: a,
                 opened: true
@@ -95,7 +95,7 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
             },
             onCancel: () => {
               var n;
-              p.default.track(v.rMx.RPC_OPEN_EXTERNAL_LINK_CALLED, {
+              p.default.track(y.rMx.RPC_OPEN_EXTERNAL_LINK_CALLED, {
                 application_id: null == (n = t.application) ? true : n.id,
                 url: a,
                 opened: false
@@ -109,13 +109,13 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
           })))
         } catch (e) {
           throw new b.Z({
-            errorCode: v.lTL.INVALID_COMMAND
+            errorCode: y.lTL.INVALID_COMMAND
           }, "Invalid URL: ".concat(n))
         }
       }
     },
     [Chunk981631.Etm.NAVIGATE_TO_CONNECTIONS]: {
-      validation: e => (0, E.Z)(e),
+      validation: e => (0, O.Z)(e),
       scope: {
         [Chunk186901.Gp.ANY]: [Chunk186901.wE]
       },
@@ -126,14 +126,14 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
         (0, _.bu)(t.transport);
         let r = (0, _._f)(t.application);
         if (!C.has(r)) throw new b.Z({
-          errorCode: v.lTL.UNAUTHORIZED_FOR_APPLICATION
+          errorCode: y.lTL.UNAUTHORIZED_FOR_APPLICATION
         }, "Command not available for this application");
         {
           let {
             openUserSettings: e
           } = n(518596);
           e(d.n.CONNECTIONS_PANEL, {
-            section: v.oAB.CONNECTIONS
+            section: y.oAB.CONNECTIONS
           })
         }
       }
@@ -155,10 +155,10 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
         (0, _.bu)(n.transport);
         let a = (0, _._f)(n.application);
         if (null == a) throw new b.Z({
-          errorCode: v.lTL.INVALID_COMMAND
+          errorCode: y.lTL.INVALID_COMMAND
         }, "No application.");
-        if (!(0, h.yE)(null != (t = n.application.flags) ? t : 0, v.udG.EMBEDDED)) throw new b.Z({
-          errorCode: v.lTL.INVALID_COMMAND
+        if (!(0, h.yE)(null != (t = n.application.flags) ? t : 0, y.udG.EMBEDDED)) throw new b.Z({
+          errorCode: y.lTL.INVALID_COMMAND
         }, "This application cannot access this API");
         return new Promise(e => {
           (0, s._)({

@@ -124,7 +124,7 @@ class Z extends Chunk317770.Z {
             case null:
               break;
             default:
-              O.vE(e)
+              E.vE(e)
           }
         };
         r = await (0, l.ZDy)(async () => {
@@ -147,7 +147,7 @@ class Z extends Chunk317770.Z {
       predicate: () => w && !Z() && !Chunk188785.a
     }, {
       key: "Claim Account Modal",
-      open: e => c.j(v.isPlatformEmbedded, e),
+      open: e => c.j(y.isPlatformEmbedded, e),
       predicate: () => {
         var e;
         return !Chunk317770 && null != Chunk594174.default.getCurrentUser() && !(null == (e = Chunk594174.default.getCurrentUser()) ? true : module.isClaimed()) && !Chunk188785.a && !(0, Chunk341298.g)()

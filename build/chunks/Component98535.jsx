@@ -31,16 +31,16 @@ function v(e) {
     transitionState: a,
     updateAnalyticsState: c,
     refreshCategories: u
-  } = e, h = O();
-  x(h);
+  } = e, h = x();
+  O(h);
   let v = (0, i.e7)([o.Z], () => o.Z.useReducedMotion),
     [S, y] = l.useState(true),
-    [j, k] = l.useState(true),
-    T = l.useCallback(async (e, t, n, r) => {
+    [k, T] = l.useState(true),
+    j = l.useCallback(async (e, t, n, r) => {
       c(e, t);
       let l = n && !v,
         i = (0, d.$2)(t) ? b.AW.ORBS : b.AW.CATALOG;
-      y(t), k(!r), await s(i, l)
+      y(t), T(!r), await s(i, l)
     }, [v, s, c]),
     L = (0, g.FF)("CollectiblesContent"),
     {
@@ -51,21 +51,21 @@ function v(e) {
     errorMessage: h,
     errorOrigin: C.i.SHOP_PAGE
   }) : E.includes(t) ? (0, r.jsx)(_.Z, {
-    handleTransition: T,
+    handleTransition: j,
     tab: t,
     transitionState: a
   }) : (0, r.jsx)(p.Z, {
     tab: t,
     sortedCategories: n,
     initialCategoryId: S,
-    showFilterInitially: j,
+    showFilterInitially: k,
     onUnmount: () => {
-      y(true), k(true)
+      y(true), T(true)
     }
   })
 }
-let O = () => (0, Chunk442837.e7)([Chunk597688.Z, Chunk1870.Z], () => null != Chunk597688.Z.error ? "shop load fetch categories error: ".concat(Chunk597688.Z.error.message) : null != Chunk1870.Z.claimError ? "shop load claim error: ".concat(Chunk1870.Z.claimError.message) : null != Chunk1870.Z.fetchError ? "shop load fetch purchase error: ".concat(Chunk1870.Z.fetchError.message) : true),
-  x = e => {
+let x = () => (0, Chunk442837.e7)([Chunk597688.Z, Chunk1870.Z], () => null != Chunk597688.Z.error ? "shop load fetch categories error: ".concat(Chunk597688.Z.error.message) : null != Chunk1870.Z.claimError ? "shop load claim error: ".concat(Chunk1870.Z.claimError.message) : null != Chunk1870.Z.fetchError ? "shop load fetch purchase error: ".concat(Chunk1870.Z.fetchError.message) : true),
+  O = e => {
     let t = (0, i.e7)([s.default], () => s.default.getCurrentUser()),
       {
         noCache: n,

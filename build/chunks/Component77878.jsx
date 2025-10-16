@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 77878, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => E
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -20,7 +20,7 @@ let s = "1",
   m = "3",
   b = "4",
   _ = "5",
-  E = {
+  O = {
     [Chunk981631.aIt.ESRB]: {
       [s]: Chunk365778.esrbEveryone,
       [c]: Chunk365778.esrbEveryoneTenPlus,
@@ -37,12 +37,12 @@ let s = "1",
       [_]: Chunk365778.pegiEighteen
     }
   },
-  O = e => {
+  E = e => {
     let {
       agency: t,
       rating: n,
       className: i
-    } = e, a = E[t][n];
+    } = e, a = O[t][n];
     return null == a ? null : (0, r.jsx)("div", {
       className: l()(o.contentRating, a, i)
     })

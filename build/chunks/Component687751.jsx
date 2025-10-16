@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 687751, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => E
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -38,7 +38,7 @@ function _(e) {
   }
   return e
 }
-class E extends Chunk317770.Z {
+class O extends Chunk317770.Z {
   _initialize() {
     Chunk570140.Z.subscribe("CONNECTION_OPEN", this.handleConnectionOpen), Chunk570140.Z.subscribe("CHANNEL_SELECT", this.handleChannelSelect), Chunk570140.Z.subscribe("AGE_GATE_MODAL_OPEN", this.handleAgeGateModalOpen), Chunk570140.Z.subscribe("AGE_GATE_MODAL_CLOSE", this.handleAgeGateModalClose), Chunk570140.Z.subscribe("AGE_GATE_SUCCESS_MODAL_OPEN", this.handleAgeGateSuccess), Chunk570140.Z.subscribe("AGE_GATE_FAILURE_MODAL_OPEN", this.handleAgeGateFailure), Chunk570140.Z.subscribe("GUILD_UPDATE", this.handleGuildUpdate)
   }
@@ -95,4 +95,4 @@ class E extends Chunk317770.Z {
     if (null != n && t.id === n && (t.owner_configured_content_level === m.V_K.AGE_RESTRICTED || (0, f.X)("age_gate_manager") && c.Ov.has(t.nsfw_level))) return void(0, p.I8)(t.id, null)
   }
 }
-let O = new E
+let E = new O

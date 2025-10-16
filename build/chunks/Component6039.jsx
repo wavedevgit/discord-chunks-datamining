@@ -70,12 +70,12 @@ let N = e => {
     guildPreviewDisabled: _.Z.getJoinRequestGuild(t)
   }));
   i.useEffect(() => {
-    null != P && (0, d.uL)(y.Z5c.CHANNEL(t))
+    null != P && (0, d.uL)(v.Z5c.CHANNEL(t))
   }, [P, t]), i.useEffect(() => {
     j || g.Z.fetchRequestToJoinGuilds()
   }, [j]);
   let x = i.useCallback(() => {
-      h(Math.max(f, I.hO.FILLING)), g.Z.removeGuildJoinRequest(t), (0, d.uL)(y.Z5c.ME)
+      h(Math.max(f, I.hO.FILLING)), g.Z.removeGuildJoinRequest(t), (0, d.uL)(v.Z5c.ME)
     }, [t, f]),
     Z = (e, t) => () => {
       (0, o.h7j)(n => {
@@ -141,12 +141,12 @@ let N = e => {
         if (null == N) return null;
         switch (N.applicationStatus) {
           case b.wB.SUBMITTED:
-            return (0, r.jsx)(v.Z, {
+            return (0, r.jsx)(y.Z, {
               onWithdrawApplication: L,
               guild: A
             });
           case b.wB.REJECTED:
-            return (0, r.jsx)(O.Z, {
+            return (0, r.jsx)(E.Z, {
               reapplyText: C.intl.string(C.t.I1LYVl),
               onReapply: w,
               confirmText: C.intl.string(C.t.g9tK0t),
@@ -155,7 +155,7 @@ let N = e => {
               guild: A
             });
           default:
-            return (0, r.jsx)(E.s, {
+            return (0, r.jsx)(O.s, {
               onDiscardApplication: R,
               onContinueApplication: () => (0, m.hk)(t),
               guild: A

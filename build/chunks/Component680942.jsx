@@ -1,4 +1,4 @@
-/** Chunk was on 16859 **/
+/** Chunk was on 72740 **/
 /** chunk id: 680942, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -23,29 +23,29 @@ let g = e => {
     product: t,
     primary: n,
     selectedVariantIndex: g,
-    returnRef: j,
+    returnRef: m,
     onSuccess: h,
-    tooltipDelay: v
+    tooltipDelay: j
   } = e, {
     analyticsLocations: x
-  } = (0, c.ZP)(), E = l.useRef(null), P = (0, p.sp)(), _ = (0, f.Z)();
+  } = (0, c.ZP)(), P = l.useRef(null), E = (0, p.sp)(), _ = (0, f.Z)();
   return (0, r.jsx)(o.u, {
-    text: O.intl.string(O.t["JCFN//"]),
-    delay: v,
+    text: v.intl.string(v.t["JCFN//"]),
+    delay: j,
     children: (0, r.jsx)(s.hU, {
-      "aria-label": O.intl.string(O.t["JCFN//"]),
-      buttonRef: E,
+      "aria-label": v.intl.string(v.t["JCFN//"]),
+      buttonRef: P,
       variant: n ? "primary" : "secondary",
       icon: s.OgN,
       size: "md",
       onClick: e => {
         e.stopPropagation(), d.default.track(y.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-          collectibles_shop_session_id: null == P ? true : P.sessionId,
+          collectibles_shop_session_id: null == E ? true : E.sessionId,
           sku_id: t.skuId,
-          page_section: null == P ? true : P.pageSection,
-          page_category: null == P ? true : P.pageCategory,
-          tile_type: i.Z[t.type],
-          tile_position: String(null == P ? true : P.tilePosition),
+          page_section: null == E ? true : E.pageSection,
+          page_category: null == E ? true : E.pageCategory,
+          tile_type: a.Z[t.type],
+          tile_position: String(null == E ? true : E.tilePosition),
           cta_name: "gift button",
           page_type: _ || "home"
         }), (0, u.Z)({
@@ -54,10 +54,10 @@ let g = e => {
             selectedVariantIndex: g
           }),
           isGift: true,
-          giftingOrigin: m.Wt.SHOP_PAGE,
+          giftingOrigin: O.Wt.SHOP_PAGE,
           analyticsLocations: x,
-          returnRef: j,
-          variantsReturnStyle: a.v.VARIANTS_GROUP,
+          returnRef: m,
+          variantsReturnStyle: i.v.VARIANTS_GROUP,
           onClose: null != h ? e => {
             e && h()
           } : true

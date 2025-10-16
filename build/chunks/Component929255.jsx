@@ -46,14 +46,14 @@ function y(e) {
       handleScrollToCategory: b
     } = (0, C.xV)(p.current),
     [E, v] = l.useState(f && c),
-    [O, x] = l.useState(false);
+    [x, O] = l.useState(false);
   return l.useEffect(() => {
     null != i && b(i)
   }, [i, b]), l.useEffect(() => () => {
     null != u && u()
   }, []), l.useEffect(() => {
     let e = () => {
-      x(window.innerWidth < 1400)
+      O(window.innerWidth < 1400)
     };
     return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
   }, []), l.useEffect(() => {
@@ -70,8 +70,8 @@ function y(e) {
         className: S.shopScroll,
         ref: p,
         onScroll: h,
-        children: (0, r.jsx)(j, {
-          isSmallScreen: O,
+        children: (0, r.jsx)(k, {
+          isSmallScreen: x,
           filterBarOpen: E,
           setFilterBarOpen: v,
           tab: t,
@@ -79,16 +79,16 @@ function y(e) {
           sortedCategories: n,
           setCategoryRef: m
         })
-      }), E && !O && (0, r.jsx)("div", {
+      }), E && !x && (0, r.jsx)("div", {
         className: S.divider
-      }), E && !O && (0, r.jsx)(s.Ttm, {
+      }), E && !x && (0, r.jsx)(s.Ttm, {
         className: S.filterBar,
         children: (0, r.jsx)(_.Z, {})
       })]
     })
   })
 }
-let j = e => {
+let k = e => {
   let {
     isSmallScreen: t,
     filterBarOpen: n,
@@ -96,15 +96,15 @@ let j = e => {
     tab: a,
     scrollerRef: C,
     sortedCategories: y,
-    setCategoryRef: j
-  } = e, k = (0, d.FF)("CollectiblesBrowse"), T = l.useRef(null), L = (0, g.S)(e => e.hasDefaultFilters()), I = (0, u.sp)(), {
+    setCategoryRef: k
+  } = e, T = (0, d.FF)("CollectiblesBrowse"), j = l.useRef(null), L = (0, g.S)(e => e.hasDefaultFilters()), I = (0, u.sp)(), {
     handlePageChange: B,
     currentPage: A
   } = (0, m.h)({
     scrollerRef: C,
     sortedCategories: y
   }), N = l.useCallback(e => {
-    c.default.track(O.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+    c.default.track(x.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == I ? true : I.sessionId,
       page_section: null == I ? true : I.pageSection,
       page_category: null == I ? true : I.pageCategory,
@@ -118,7 +118,7 @@ let j = e => {
     if (!t || !n) return;
     let e = e => {
       let t = e.target;
-      null === T.current || null === P.current || T.current.contains(t) || P.current.contains(t) || (c.default.track(O.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+      null === j.current || null === P.current || j.current.contains(t) || P.current.contains(t) || (c.default.track(x.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
         collectibles_shop_session_id: null == I ? true : I.sessionId,
         page_section: null == I ? true : I.pageSection,
         page_category: null == I ? true : I.pageCategory,
@@ -133,9 +133,9 @@ let j = e => {
     className: S.inventoryWrapper,
     children: (0, r.jsxs)("div", {
       className: o()(S.inventory, {
-        [S.inventoryFilter]: k
+        [S.inventoryFilter]: T
       }),
-      children: [k && (0, r.jsxs)("div", {
+      children: [T && (0, r.jsxs)("div", {
         className: S.controls,
         children: [(0, r.jsx)("div", {
           className: S.controlsLeftSide,
@@ -148,14 +148,14 @@ let j = e => {
             className: S.sortBy,
             children: [(0, r.jsx)(s.Text, {
               variant: "text-md/semibold",
-              children: x.intl.string(x.t.uaX709)
+              children: O.intl.string(O.t.uaX709)
             }), (0, r.jsx)(h.Z, {})]
           }), (0, r.jsx)("div", {
             ref: P,
             children: (0, r.jsx)(s.Button, {
               onClick: () => {
                 let e = !n;
-                c.default.track(O.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+                c.default.track(x.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                   collectibles_shop_session_id: null == I ? true : I.sessionId,
                   page_section: null == I ? true : I.pageSection,
                   page_category: null == I ? true : I.pageCategory,
@@ -166,20 +166,20 @@ let j = e => {
                 }), i(e)
               },
               variant: "secondary",
-              text: x.intl.string(n ? x.t.fYtm6e : x.t.TeTYEx),
+              text: O.intl.string(n ? O.t.fYtm6e : O.t.TeTYEx),
               icon: s.gXV,
               iconPosition: "end"
             })
           })]
         }), n && t && (0, r.jsx)("div", {
           className: S.filterOverlay,
-          ref: T,
+          ref: j,
           children: (0, r.jsx)(s.Den, {
             className: S.filterOverlayContent,
             children: (0, r.jsx)(_.Z, {})
           })
         })]
-      }), k && !L ? (0, r.jsx)(b.Z, {
+      }), T && !L ? (0, r.jsx)(b.Z, {
         scrollerRef: C,
         tab: a
       }, a) : (0, v.RE)(a) ? (0, r.jsx)(E.Z, {
@@ -191,7 +191,7 @@ let j = e => {
         },
         children: (0, r.jsx)(p.Z, {
           sortedCategories: y,
-          setCategoryRef: j,
+          setCategoryRef: k,
           currentPage: A,
           handlePageChange: N
         })

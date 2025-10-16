@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 199104, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => y
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -23,14 +23,14 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk708567 = require("./708567.js");
 
-function v(e) {
+function y(e) {
   let {
     isStandalone: t
   } = e, {
     analyticsLocations: n
-  } = (0, d.ZP)(u.Z.ACTIVE_NOW_COLUMN), i = (0, a.e7)([m.Z], () => m.Z.hasConsented(_.pjP.PERSONALIZATION)) ? [] : [o.z.NOW_PLAYING_CONSENT_CARD], v = h.o.useConfig({
+  } = (0, d.ZP)(u.Z.ACTIVE_NOW_COLUMN), i = (0, a.e7)([m.Z], () => m.Z.hasConsented(_.pjP.PERSONALIZATION)) ? [] : [o.z.NOW_PLAYING_CONSENT_CARD], y = h.o.useConfig({
     location: "nowplaying"
-  }).demureActivityCards, y = h.o.useConfig({
+  }).demureActivityCards, v = h.o.useConfig({
     location: "nowplaying"
   }).friendsTab, I = (0, p.Dt)();
   return (0, r.jsx)(d.Gt, {
@@ -38,24 +38,24 @@ function v(e) {
     children: (0, r.jsx)(c.Z, {
       section: _.jXE.ACTIVE_NOW_COLUMN,
       children: (0, r.jsx)("aside", {
-        className: l()(O.container, {
-          [O.refreshActiveNow]: v,
-          "refresh-active-now": v
+        className: l()(E.container, {
+          [E.refreshActiveNow]: y,
+          "refresh-active-now": y
         }),
         "aria-labelledby": I,
         children: (0, r.jsx)(s.Ttm, {
-          className: l()(O.scroller, {
-            [O.standalone]: t
+          className: l()(E.scroller, {
+            [E.standalone]: t
           }),
           children: (0, r.jsxs)("div", {
             className: l()({
-              [O.standaloneContainer]: t
+              [E.standaloneContainer]: t
             }),
-            children: [y ? null : (0, r.jsx)(s.Heading, {
+            children: [v ? null : (0, r.jsx)(s.Heading, {
               variant: "heading-lg/semibold",
-              className: O.header,
+              className: E.header,
               id: I,
-              children: E.intl.string(E.t.F4Zgg4)
+              children: O.intl.string(O.t.F4Zgg4)
             }), (0, r.jsx)(f.ZP, {
               contentTypes: i,
               children: e => {
@@ -64,7 +64,7 @@ function v(e) {
                   markAsDismissed: n
                 } = e;
                 if (t === o.z.NOW_PLAYING_CONSENT_CARD) return (0, r.jsx)(g.Z, {
-                  className: O.__invalid_consentCard,
+                  className: E.__invalid_consentCard,
                   markAsDismissed: n
                 })
               }

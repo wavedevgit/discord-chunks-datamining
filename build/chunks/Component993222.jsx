@@ -14,7 +14,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk74538 = require("./74538.js"),
   Chunk884697 = require("./884697.js"),
   Chunk724994 = require("./724994.js"),
-  Chunk786040 = require("./786040.jsx"),
+  Chunk786040 = require("./786040.js"),
   Chunk445794 = require("./445794.js"),
   Chunk956472 = require("./956472.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -28,17 +28,17 @@ let _ = e => {
     } = e, {
       isPurchased: m,
       isPartiallyOwnedBundle: b
-    } = (0, d.L)(t), E = (0, o.e7)([a.default], () => a.default.getCurrentUser()), v = c.ZP.canUseCollectibles(E), O = (0, f.Iw)(t), {
-      isOrbExclusive: x
+    } = (0, d.L)(t), E = (0, o.e7)([a.default], () => a.default.getCurrentUser()), v = c.ZP.canUseCollectibles(E), x = (0, f.Iw)(t), {
+      isOrbExclusive: O
     } = (0, p.Ip)({
       product: t,
       isPremiumUser: v,
       prioritizedCurrency: _,
-      hasDiscountOffer: null != O
+      hasDiscountOffer: null != x
     });
     if (n === g.Zh.NONE) return null;
     let S = null;
-    return (n === g.Zh.NEW ? S = C.intl.string(C.t.y2b7CA) : n === g.Zh.ORBS_EXCLUSIVE ? S = C.intl.string(C.t["0TmQRE"]) : n === g.Zh.NEW_COLOR_VARIANT && (S = C.intl.string(C.t.S6kE9v)), null == S && (!b && !m && (0, u.Yq)(t.skuId) ? S = C.intl.string(C.t.y2b7CA) : x && (S = C.intl.string(C.t["0TmQRE"]))), null == S) ? null : (0, r.jsx)(s.IGR, {
+    return (n === g.Zh.NEW ? S = C.intl.string(C.t.y2b7CA) : n === g.Zh.ORBS_EXCLUSIVE ? S = C.intl.string(C.t["0TmQRE"]) : n === g.Zh.NEW_COLOR_VARIANT && (S = C.intl.string(C.t.S6kE9v)), null == S && (!b && !m && (0, u.Yq)(t.skuId) ? S = C.intl.string(C.t.y2b7CA) : O && (S = C.intl.string(C.t["0TmQRE"]))), null == S) ? null : (0, r.jsx)(s.IGR, {
       text: S,
       disableColor: true,
       className: i()(l, h.productCardBadge)

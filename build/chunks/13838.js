@@ -40,10 +40,10 @@ function A(e) {
     },
     socket: n
   } = e, r = f.Z.getChannel(t);
-  if (null == r || !(0, v.zM)(r, n.application.id, n.authorization.scopes)) throw new O.Z({
+  if (null == r || !(0, y.zM)(r, n.application.id, n.authorization.scopes)) throw new E.Z({
     errorCode: P.lTL.INVALID_CHANNEL
   }, "Invalid channel id: ".concat(t));
-  if ((0, s.ft)(r)) throw new O.Z({
+  if ((0, s.ft)(r)) throw new E.Z({
     errorCode: P.lTL.INVALID_CHANNEL
   }, "Invalid nsfw channel id: ".concat(r.id))
 }
@@ -57,7 +57,7 @@ function Z(e) {
       channel_id: t
     }
   } = e;
-  if (null != t && null == f.Z.getChannel(t)) throw new O.Z({
+  if (null != t && null == f.Z.getChannel(t)) throw new E.Z({
     errorCode: P.lTL.INVALID_CHANNEL
   }, "Invalid channel id: ".concat(t))
 }
@@ -73,7 +73,7 @@ let w = {
           guild_id: t
         }
       } = e;
-      if (null == g.Z.getGuild(t)) throw new O.Z({
+      if (null == g.Z.getGuild(t)) throw new E.Z({
         errorCode: P.lTL.INVALID_GUILD
       }, "Invalid guild id: ".concat(t));
       return e => {
@@ -108,7 +108,7 @@ let w = {
           channel_id: t
         }
       } = e;
-      if (null == f.Z.getChannel(t)) throw new O.Z({
+      if (null == f.Z.getChannel(t)) throw new E.Z({
         errorCode: P.lTL.INVALID_CHANNEL
       }, "Invalid channel id: ".concat(t));
       return e => {
@@ -118,13 +118,13 @@ let w = {
         } = e, l = f.Z.getChannel(t);
         if (null == l) return;
         let a = l.getGuildId(),
-          o = Object.values(E.Z.getVoiceStatesForChannel(l.id));
+          o = Object.values(O.Z.getVoiceStatesForChannel(l.id));
         return n && i().differenceBy(o, n, e => {
           let {
             userId: t
           } = e;
           return t
-        }).forEach(e => r((0, v.aE)(a, l.id, e))), o
+        }).forEach(e => r((0, y.aE)(a, l.id, e))), o
       }
     }
   },
@@ -141,7 +141,7 @@ let w = {
           channel_id: t
         }
       } = e;
-      if (null == f.Z.getChannel(t)) throw new O.Z({
+      if (null == f.Z.getChannel(t)) throw new E.Z({
         errorCode: P.lTL.INVALID_CHANNEL
       }, "Invalid channel id: ".concat(t));
       return e => {
@@ -151,13 +151,13 @@ let w = {
         } = e, l = f.Z.getChannel(t);
         if (null == l) return;
         let a = l.getGuildId(),
-          o = Object.values(E.Z.getVoiceStatesForChannel(l.id));
+          o = Object.values(O.Z.getVoiceStatesForChannel(l.id));
         return i().differenceBy(n, o, e => {
           let {
             userId: t
           } = e;
           return t
-        }).forEach(e => r((0, v.aE)(a, l.id, e))), o
+        }).forEach(e => r((0, y.aE)(a, l.id, e))), o
       }
     }
   },
@@ -174,7 +174,7 @@ let w = {
           channel_id: t
         }
       } = e;
-      if (null == f.Z.getChannel(t)) throw new O.Z({
+      if (null == f.Z.getChannel(t)) throw new E.Z({
         errorCode: P.lTL.INVALID_CHANNEL
       }, "Invalid channel id: ".concat(t));
       return e => {
@@ -184,7 +184,7 @@ let w = {
         } = e, l = f.Z.getChannel(t);
         if (null == l) return;
         let a = l.getGuildId(),
-          o = Object.values(E.Z.getVoiceStatesForChannel(l.id)).map(e => (0, v.aE)(a, l.id, e));
+          o = Object.values(O.Z.getVoiceStatesForChannel(l.id)).map(e => (0, y.aE)(a, l.id, e));
         return i().differenceWith(o, n, i().isEqual).forEach(e => r(e)), o
       }
     }
@@ -198,7 +198,7 @@ let w = {
         prevState: t,
         dispatch: n
       } = e, r = {
-        state: (0, v.zy)(b.Z.getState()),
+        state: (0, y.zy)(b.Z.getState()),
         hostname: b.Z.getHostname(),
         pings: b.Z.getPings(),
         average_ping: b.Z.getAveragePing(),
@@ -318,7 +318,7 @@ let w = {
       let {
         socket: n
       } = e;
-      if (a.e$(a.vB(null != (t = n.application.flags) ? t : 0), a.vB(P.udG.DISABLE_RELATIONSHIPS_ACCESS))) throw new O.Z({
+      if (a.e$(a.vB(null != (t = n.application.flags) ? t : 0), a.vB(P.udG.DISABLE_RELATIONSHIPS_ACCESS))) throw new E.Z({
         errorCode: P.lTL.INVALID_PERMISSIONS
       }, "Missing Permissions")
     }

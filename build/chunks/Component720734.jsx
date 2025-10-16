@@ -1,4 +1,4 @@
-/** Chunk was on 22981 **/
+/** Chunk was on 90360 **/
 /** chunk id: 720734, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => th,
@@ -412,11 +412,11 @@ class tu extends Chunk647438.PureComponent {
       })
     }) : (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)(es.Z, {
-        groupName: e7.R.ACCOUNT_NAME_ZONE,
+        groupName: e9.R.ACCOUNT_NAME_ZONE,
         targetElementRef: this.avatarWithPopoutRef
       }), (0, a.jsx)(H.ZP, {
         contentTypes: n.avatar,
-        groupName: e7.R.ACCOUNT_NAME_ZONE,
+        groupName: e9.R.ACCOUNT_NAME_ZONE,
         children: t => {
           let {
             visibleContent: n,
@@ -1330,7 +1330,7 @@ function tf(e) {
                   "aria-label": tt.intl.string(tt.t.Hapb4O),
                   disabled: s,
                   onClick: e => {
-                    i(e7.L.INDIRECT_ACTION), n(e), null != w && !Q && k ? (0, eI.$)(() => $(true)) : $(!Q)
+                    i(e9.L.INDIRECT_ACTION), n(e), null != w && !Q && k ? (0, eI.$)(() => $(true)) : $(!Q)
                   }
                 }, r));
                 return null != o ? (0, a.jsx)(f.yRy, {

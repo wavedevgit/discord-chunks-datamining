@@ -42,7 +42,7 @@ var Chunk243814 = require("./243814.js"),
   Chunk701488 = require("./701488.js");
 async function U(e, t, n, r) {
   let i = arguments.length > 4 && true !== arguments[4] ? arguments[4] : "",
-    l = y.Z.getApplicationActivity(t);
+    l = v.Z.getApplicationActivity(t);
   if (null == l || null == l.secrets || !(0, x.t9)(r, l.party, l.secrets)) throw new A.Z({
     errorCode: k.lTL.NO_ELIGIBLE_ACTIVITY
   }, "No eligible activity for application. Ensure an activity includes a party and appropriate secret.");
@@ -93,7 +93,7 @@ let G = {
         args: {
           user_id: t
         }
-      } = e, n = v.Z.getDMFromUserId(t);
+      } = e, n = y.Z.getDMFromUserId(t);
       null != n && (0, u.In)(n, {
         section: k.jXE.CLOSE_ACTIVITY_JOIN_REQUEST_RPC_COMMAND,
         object: k.qAy.ACK_DECLINE_REQUEST_TO_JOIN,
@@ -186,14 +186,14 @@ let G = {
       } = (0, L.T)(), u = (0, h.ZP)({
         application: t.application,
         channelId: null == l ? true : l.id
-      }), d = null != u ? E.Z.getWindow(u) : true;
+      }), d = null != u ? O.Z.getWindow(u) : true;
       (null == d ? true : d.closed) && (d = true);
       let p = null != d ? k.IlC.POPOUT : k.IlC.APP;
       if ((0, j.Pr)({}, null == d ? true : d.document), null != c) {
         if (c.applicationId !== i.id) throw new A.Z({
           errorCode: k.lTL.INVALID_COMMAND
         }, "Application is not currently mounted.");
-        let e = y.Z.getApplicationActivity(i.id);
+        let e = v.Z.getApplicationActivity(i.id);
         if (null != e)(0, s.h7)(e, false, p);
         else throw new A.Z({
           errorCode: k.lTL.NO_ELIGIBLE_ACTIVITY
@@ -259,7 +259,7 @@ let G = {
       return new Promise((e, t) => {
         ! function(e, t) {
           let n;
-          if ((0, p.R)()) n = E.Z.getWindow(k.KJ3.ACTIVITY_POPOUT);
+          if ((0, p.R)()) n = O.Z.getWindow(k.KJ3.ACTIVITY_POPOUT);
           else {
             var r;
             let e = C.Z.getLastFocusedWindowId();
@@ -367,7 +367,7 @@ let G = {
           url: l.url,
           height: l.height,
           width: l.width
-        }]), n = new O.ZP({
+        }]), n = new E.ZP({
           id: N.default.cast(N.default.fromTimestamp(Date.now())),
           applicationId: p,
           content: c,
@@ -379,7 +379,7 @@ let G = {
         let t = false,
           r = (0, R.jU)(d),
           l = a.z1l;
-        (E.Z.getWindowOpen(k.KJ3.ACTIVITY_POPOUT) || r.context === k.IlC.POPOUT) && (l = a.u1M), (0, b.M)({
+        (O.Z.getWindowOpen(k.KJ3.ACTIVITY_POPOUT) || r.context === k.IlC.POPOUT) && (l = a.u1M), (0, b.M)({
           applicationId: p,
           channel: f,
           command: {

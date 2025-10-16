@@ -53,14 +53,14 @@ let x = function(e) {
       l.replace(T.Z5c.ME)
     })
   }, [l, n]), i.useEffect(() => {
-    d.Y(T.Z5c.FRIENDS), (0, E.e)("friends")
+    d.Y(T.Z5c.FRIENDS), (0, O.e)("friends")
   }, []);
-  let b = (0, s.e7)([O.Z], () => O.Z.theme),
+  let b = (0, s.e7)([E.Z], () => E.Z.theme),
     x = (0, I.If)(),
     {
       section: Z,
       rows: w
-    } = (0, s.cj)([v.ZP], () => v.ZP.getState()),
+    } = (0, s.cj)([y.ZP], () => y.ZP.getState()),
     L = (0, s.e7)([g.Z], () => g.Z.getSuggestionCount()),
     R = i.useMemo(() => w.getRelationshipCounts(), [w]);
   i.useEffect(() => {
@@ -118,7 +118,7 @@ let x = function(e) {
       ariaLabel: P.intl.string(P.t.j0wbEx),
       className: a()(j.item, j.addFriend)
     }],
-    G = y.o.useConfig({
+    G = v.o.useConfig({
       location: "people page"
     }).friendsTab,
     B = null,

@@ -24,13 +24,13 @@ function g() {
   } = (0, Chunk113434.bA)(Chunk113434.e5.ALL, Chunk647438.useMemo(() => ({
     sortMethod: module,
     filters: require
-  }), [module, require])), E = Chunk647438.useCallback(() => {
+  }), [module, require])), O = Chunk647438.useCallback(() => {
     g(h)
-  }, []), O = Chunk647438.useRef(null), v = Chunk647438.useRef(null), y = (0, Chunk843611.TH)(), I = (0, Chunk843611.k6)();
+  }, []), E = Chunk647438.useRef(null), y = Chunk647438.useRef(null), v = (0, Chunk843611.TH)(), I = (0, Chunk843611.k6)();
   return Chunk647438.useEffect(() => {
-    if ("" !== y.hash && null != O.current && null != v.current) {
+    if ("" !== v.hash && null != E.current && null != y.current) {
       var t, r;
-      (module !== O.current || require !== v.current) && I.replace((t = function(e) {
+      (module !== E.current || require !== y.current) && I.replace((t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -47,7 +47,7 @@ function g() {
           })
         }
         return e
-      }({}, y), r = r = {
+      }({}, v), r = r = {
         hash: true
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(exports, Object.getOwnPropertyDescriptors(Chunk951288)) : (function(e, t) {
         var n = Object.keys(e);
@@ -60,10 +60,10 @@ function g() {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
       }), exports))
     }
-  }, [module, require, y, I]), Chunk647438.useEffect(() => {
-    O.current = module
+  }, [module, require, v, I]), Chunk647438.useEffect(() => {
+    E.current = module
   }, [module]), Chunk647438.useEffect(() => {
-    v.current = require
+    y.current = require
   }, [require]), (0, Chunk113434.SU)({
     selectedSortMethod: module,
     selectedFilters: require,
@@ -91,7 +91,7 @@ function g() {
       isFetching: b,
       hasFetched: _,
       hasFiltersApplied: require.length > 0,
-      onClearFilters: E
+      onClearFilters: O
     })]
   })
 }

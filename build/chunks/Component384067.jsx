@@ -24,9 +24,9 @@ let _ = e => {
     wideBannerBlock: _,
     handleTransition: m,
     tab: b
-  } = e, E = null == (t = u.Z.getCategoryByStoreListingId(_.categoryStoreListingId)) ? true : t.skuId, v = l.useRef(null), O = l.useRef(null), [x, S] = l.useState();
+  } = e, E = null == (t = u.Z.getCategoryByStoreListingId(_.categoryStoreListingId)) ? true : t.skuId, v = l.useRef(null), x = l.useRef(null), [O, S] = l.useState();
   l.useEffect(() => {
-    let e = O.current;
+    let e = x.current;
     if (null == e) return;
     let t = () => {
       e.naturalWidth > 0 && e.naturalHeight > 0 && S(1080 * (e.naturalHeight / e.naturalWidth))
@@ -37,41 +37,41 @@ let _ = e => {
   }, []);
   let y = null != E ? E : "",
     {
-      handleCardVisibilityChange: j
+      handleCardVisibilityChange: k
     } = (0, d.E)(y, "home", "marketing wide banner"),
     {
-      bannerURL: k
+      bannerURL: T
     } = (0, g.UI)(_);
-  if (null == k) return null;
-  let T = b === f.AW.ORBS;
+  if (null == T) return null;
+  let j = b === f.AW.ORBS;
   return (0, r.jsx)(s.$, {
     innerRef: v,
-    onChange: j,
+    onChange: k,
     threshold: 0,
     children: (0, r.jsxs)("div", {
       ref: v,
       className: o()(h.row, h.between, h.bannerBlockContainer, h.centeredSection, {
-        [h.extraRounded]: T
+        [h.extraRounded]: j
       }),
       children: [(0, r.jsx)("div", {
         className: o()(h.wideBannerBackgroundImg, {
-          [h.extraRounded]: T
+          [h.extraRounded]: j
         }),
         children: (0, r.jsx)("img", {
-          ref: O,
-          src: k,
+          ref: x,
+          src: T,
           alt: _.title,
           className: o()(h.wideBannerArt, {
-            [h.wideBannerArtOrbs]: T
+            [h.wideBannerArtOrbs]: j
           }),
           style: {
-            height: null != x ? "".concat(x, "px") : "auto"
+            height: null != O ? "".concat(O, "px") : "auto"
           }
         })
       }), (0, r.jsx)("div", {
         className: h.wideBannerContentContainer,
         style: {
-          maxHeight: null != x ? "".concat(x, "px") : "auto"
+          maxHeight: null != O ? "".concat(O, "px") : "auto"
         },
         children: (0, r.jsxs)("div", {
           className: h.wideBannerTextContainer,
@@ -79,16 +79,16 @@ let _ = e => {
             style: {
               color: null != (n = _.bannerTextColor) ? n : "var(--header-primary)"
             },
-            className: T ? h.wideBannerOrbsHeading : true,
-            variant: T ? "heading-xl/bold" : "heading-lg/semibold",
+            className: j ? h.wideBannerOrbsHeading : true,
+            variant: j ? "heading-xl/bold" : "heading-lg/semibold",
             children: _.title
           }), (0, r.jsx)(a.Text, {
             style: {
               color: null != (i = _.bannerTextColor) ? i : "var(--text-muted)"
             },
             lineClamp: 2,
-            variant: T ? "text-md/medium" : "text-sm/medium",
-            children: T ? C.intl.format(C.t.SFFP7O, {
+            variant: j ? "text-md/medium" : "text-sm/medium",
+            children: j ? C.intl.format(C.t.SFFP7O, {
               helpdeskArticle: c.Z.getArticleURL(p.BhN.VIRTUAL_CURRENCY_LEARN_MORE)
             }) : _.body
           })]

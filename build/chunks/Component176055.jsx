@@ -125,7 +125,7 @@ class N extends Chunk647438.PureComponent {
         skuId: t,
         isInGuild: n,
         isLurking: r
-      } = this.props, i = () => (0, E.X)(e.id);
+      } = this.props, i = () => (0, O.X)(e.id);
       if (r)(0, p.Oj)(t).then(i);
       else if (n) i();
       else try {
@@ -150,7 +150,7 @@ let P = (0, Chunk666743.Z)(Chunk442837.ZP.connectStores([Chunk430824.Z, Chunk417
     guild: t
   } = e, n = b.Z.isLurking(t.id);
   return {
-    isInGuild: null != O.Z.getGuild(t.id) && !n,
+    isInGuild: null != E.Z.getGuild(t.id) && !n,
     isLurking: n
   }
 })(N))

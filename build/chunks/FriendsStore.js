@@ -59,7 +59,7 @@ function S(e, t) {
 }
 
 function T(e) {
-  let t = O.default.getUser(e);
+  let t = E.default.getUser(e);
   return {
     user: t,
     usernameLower: null != t ? t.username.toLowerCase() : null
@@ -99,18 +99,18 @@ class A {
     let e = new Set,
       t = Array.from(Chunk699516.Z.getMutableRelationships().entries()).map(t => {
         let [n, r] = t;
-        return r === v.OGo.FRIEND && e.add(n), new j(S(C({
+        return r === y.OGo.FRIEND && e.add(n), new j(S(C({
           key: n,
           type: r,
           userId: n,
-          nickname: E.Z.getNickname(n)
+          nickname: O.Z.getNickname(n)
         }, T(n), N(n), P(n)), {
-          spam: E.Z.isSpam(n),
-          ignoredUser: E.Z.isIgnored(n),
-          giftIntentType: r === v.OGo.FRIEND && h.Z.isTopAffinityFriendAnniversary({
+          spam: O.Z.isSpam(n),
+          ignoredUser: O.Z.isIgnored(n),
+          giftIntentType: r === y.OGo.FRIEND && h.Z.isTopAffinityFriendAnniversary({
             userId: n
-          }) ? y.hX.FRIEND_ANNIVERSARY : true,
-          applicationId: E.Z.getOriginApplicationId(n)
+          }) ? v.hX.FRIEND_ANNIVERSARY : true,
+          applicationId: O.Z.getOriginApplicationId(n)
         }))
       }),
       n = [],
@@ -122,15 +122,15 @@ class A {
         applicationId: l,
         type: a
       } = t;
-      !(a === v.OGo.FRIEND && e.has(r)) && (a === v.OGo.FRIEND && i.has(r) || (a === v.OGo.FRIEND && i.add(r), n.push(new j(S(C({
+      !(a === y.OGo.FRIEND && e.has(r)) && (a === y.OGo.FRIEND && i.has(r) || (a === y.OGo.FRIEND && i.add(r), n.push(new j(S(C({
         key: "".concat(r, "-").concat(l),
         type: a,
         userId: r,
         applicationId: l,
-        nickname: E.Z.getNickname(r)
+        nickname: O.Z.getNickname(r)
       }, T(r), N(r), P(r)), {
-        spam: E.Z.isSpam(r),
-        ignoredUser: E.Z.isIgnored(r),
+        spam: O.Z.isSpam(r),
+        ignoredUser: O.Z.isIgnored(r),
         isGameRelationship: true
       })))))
     });
@@ -164,19 +164,19 @@ class A {
       returntrue
     }).filter(t => {
       switch (e) {
-        case v.pJs.ONLINE:
-          return t.type === v.OGo.FRIEND && t.status !== v.Skl.OFFLINE;
-        case v.pJs.PENDING:
-          return t.type === v.OGo.PENDING_INCOMING && !t.spam && !t.ignoredUser || t.type === v.OGo.PENDING_OUTGOING;
-        case v.pJs.SPAM:
-          return t.type === v.OGo.PENDING_INCOMING && t.spam;
-        case v.pJs.PENDING_IGNORED:
-          return t.type === v.OGo.PENDING_INCOMING && t.ignoredUser;
-        case v.pJs.SUGGESTIONS:
+        case y.pJs.ONLINE:
+          return t.type === y.OGo.FRIEND && t.status !== y.Skl.OFFLINE;
+        case y.pJs.PENDING:
+          return t.type === y.OGo.PENDING_INCOMING && !t.spam && !t.ignoredUser || t.type === y.OGo.PENDING_OUTGOING;
+        case y.pJs.SPAM:
+          return t.type === y.OGo.PENDING_INCOMING && t.spam;
+        case y.pJs.PENDING_IGNORED:
+          return t.type === y.OGo.PENDING_INCOMING && t.ignoredUser;
+        case y.pJs.SUGGESTIONS:
           return 99 === t.type;
-        case v.pJs.ALL:
+        case y.pJs.ALL:
         default:
-          return t.type === v.OGo.FRIEND
+          return t.type === y.OGo.FRIEND
       }
     }).sortBy(e => e.comparator).value()
   }

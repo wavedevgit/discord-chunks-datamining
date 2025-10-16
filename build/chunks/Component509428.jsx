@@ -1,5 +1,5 @@
 /** Chunk was on 77198 **/
-/** chunk id: 509428, original params: t,e,n (module,exports,require) **/
+/** chunk id: 509428, original params: t,e,s (module,exports,require) **/
 require.d(exports, {
   default: () => k
 }), require("./388685.js");
@@ -7,12 +7,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk238651 = require("./238651.js"),
   Chunk793030 = require("./793030.js"),
-  Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk350327 = require("./350327.js"),
-  Chunk1870 = require("./1870.js"),
   Chunk429368 = require("./429368.js"),
   Chunk635552 = require("./635552.js"),
   Chunk578976 = require("./578976.js"),
@@ -28,95 +26,95 @@ var Chunk951288 = require("./951288.js"),
 let k = t => {
   let {
     transitionState: e,
-    product: n,
+    product: s,
     onClose: k,
-    analyticsLocations: m,
-    overrideTitle: b,
-    overrideDescription: g,
+    analyticsLocations: O,
+    overrideTitle: m,
+    overrideDescription: y,
     itemConsumed: S = true,
-    purchaseType: P = L.o8.ORB
-  } = t, v = (0, s.e7)([p.Z], () => p.Z.purchases), N = (0, h.o)(n, v), B = (0, _.W)(n, N), {
-    analyticsLocations: M
-  } = (0, o.ZP)([...m, d.Z.COLLECTIBLES_COLLECTED_MODAL]);
-  r.useEffect(() => {
-    L.Vt.ORB_PROFILE_BADGE === B.skuId && (0, c.Ls)([(0, I.X)()], 600)
-  }, [B.skuId]);
+    purchaseType: N = I.o8.ORB
+  } = t, B = (0, l.o)(s), P = (0, _.W)(s, B), {
+    analyticsLocations: R
+  } = (0, u.ZP)([...O, c.Z.COLLECTIBLES_COLLECTED_MODAL]);
+  o.useEffect(() => {
+    I.Vt.ORB_PROFILE_BADGE === P.skuId && (0, d.Ls)([(0, v.X)()], 600)
+  }, [P.skuId]);
   let {
-    isLoading: x,
-    isFractionalPremiumActive: Z,
-    expiresAt: U
-  } = (0, f.Kd)(), {
-    environment: D,
-    modalRef: j,
-    confettiCanvas: F,
-    setConfettiCanvas: w,
-    customConfettiDisplayOptions: V
-  } = (0, y.$0)(B, P);
-  (0, y.f1)(B, M);
-  let G = (0, T.kd)(B),
+    isLoading: T,
+    isFractionalPremiumActive: b,
+    expiresAt: g
+  } = (0, C.Kd)(), {
+    environment: w,
+    modalRef: G,
+    confettiCanvas: $,
+    setConfettiCanvas: A,
+    customConfettiDisplayOptions: D
+  } = (0, x.$0)(P, N);
+  (0, x.f1)(P, R);
+  let V = (0, h.kd)(P),
     {
       handleUseNow: W,
       isApplying: X
-    } = (0, E.W)({
-      product: B,
+    } = (0, p.W)({
+      product: P,
       onSuccess: k,
       onError: k
     });
-  if (x) return (0, i.jsx)(u.$jN, {
-    type: u.$jN.Type.SPINNING_CIRCLE
+  if (T) return (0, n.jsx)(r.$jN, {
+    type: r.$jN.Type.SPINNING_CIRCLE
   });
-  let H = (0, y.Xw)({
-      product: B,
-      overrideTitle: b,
+  let Z = (0, x.Xw)({
+      product: P,
+      overrideTitle: m,
       isVariantsGroupEnabled: false,
       shouldShowPromotionalExperience: false,
-      productName: G,
+      productName: V,
       itemConsumed: S
     }),
-    $ = (0, y.ys)({
-      product: B,
-      overrideDescription: g,
-      productName: G,
+    K = (0, x.ys)({
+      product: P,
+      overrideDescription: y,
+      productName: V,
       itemConsumed: S,
-      isFractionalPremiumActive: Z,
-      expiresAt: U
+      isFractionalPremiumActive: b,
+      expiresAt: g
     }),
-    z = (0, y.cf)({
-      product: B,
+    M = (0, x.cf)({
+      product: P,
       onClose: k,
-      analyticsLocations: M,
+      analyticsLocations: R,
       handleUseNow: W,
       isApplying: X,
       itemConsumed: S
     });
-  return (0, i.jsx)(o.Gt, {
-    value: M,
-    children: (0, i.jsxs)("div", {
-      ref: j,
-      children: [(0, i.jsx)(l.O_, {
-        ref: w,
-        className: R.confettiCanvas,
-        environment: D
-      }), (0, i.jsx)(a.ExpressiveModal, {
+  return (0, n.jsx)(u.Gt, {
+    value: R,
+    children: (0, n.jsxs)("div", {
+      ref: G,
+      children: [(0, n.jsx)(i.O_, {
+        ref: A,
+        className: j.confettiCanvas,
+        environment: w
+      }), (0, n.jsx)(a.ExpressiveModal, {
         graphic: {
           type: "dynamic",
-          component: u.AX$.COLLECTIBLES_PREVIEW,
+          component: r.AX$.COLLECTIBLES_PREVIEW,
           props: {
-            product: B,
+            product: P,
             itemConsumed: S
           }
         },
-        title: H,
-        subtitle: null != $ ? $ : true,
+        title: Z,
+        subtitle: null != K ? K : true,
         onClose: k,
         transitionState: e,
-        actions: z
-      }), null != V ? (0, i.jsx)(C.i, {
-        options: V
-      }) : (0, i.jsx)(A.Z, {
-        confettiTarget: j.current,
-        confettiCanvas: F,
-        sprites: (0, O.vK)(B.categorySkuId)
+        actions: M
+      }), null != D ? (0, n.jsx)(L.i, {
+        options: D
+      }) : (0, n.jsx)(E.Z, {
+        confettiTarget: G.current,
+        confettiCanvas: $,
+        sprites: (0, f.vK)(P.categorySkuId)
       })]
     })
   })

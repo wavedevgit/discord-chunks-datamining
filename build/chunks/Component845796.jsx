@@ -25,7 +25,7 @@ let b = () => {
     sort: e,
     onSetSort: t,
     hasRelevanceFilters: n
-  } = (0, Chunk501431.S)(), i = (0, Chunk381585.sp)(), b = (0, Chunk642909.G)("CollectiblesSortSelect"), E = require(), v = Chunk647438.useMemo(() => Chunk215023.aP.filter(e => e.sortType !== a.E.RELEVANCE || E), [E]), O = Chunk647438.useCallback(e => {
+  } = (0, Chunk501431.S)(), i = (0, Chunk381585.sp)(), b = (0, Chunk642909.G)("CollectiblesSortSelect"), E = require(), v = Chunk647438.useMemo(() => Chunk215023.aP.filter(e => e.sortType !== a.E.RELEVANCE || E), [E]), x = Chunk647438.useCallback(e => {
     let {
       sortType: t,
       sortDirection: n
@@ -46,7 +46,7 @@ let b = () => {
       label: h.intl.string(h.t.Y68e5u),
       value: "popularity"
     }
-  }, []), x = Chunk647438.useCallback(e => ({
+  }, []), O = Chunk647438.useCallback(e => ({
     recent: {
       sortType: a.E.RECENCY,
       sortDirection: s.F.DESC
@@ -68,7 +68,7 @@ let b = () => {
       sortDirection: s.F.DESC
     }
   })[e], []), S = Chunk647438.useCallback(e => {
-    let n = O(x(e));
+    let n = x(O(e));
     u.default.track(C.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
       collectibles_shop_session_id: null == i ? true : i.sessionId,
       page_section: null == i ? true : i.pageSection,
@@ -77,14 +77,14 @@ let b = () => {
       page_size: null == i ? true : i.pageSize,
       cta_name: "sort by ".concat(n.label.toLowerCase()),
       page_type: "catalog"
-    }), t(x(e))
-  }, [Chunk120356, O, x, exports]), y = O(module);
+    }), t(O(e))
+  }, [Chunk120356, x, O, exports]), y = x(module);
   return (0, Chunk951288.jsx)("div", {
     className: o()(Chunk182668.container, {
       [Chunk345213.shopTakeOver]: b
     }),
     children: (0, Chunk951288.jsx)(Chunk481060.PhF, {
-      options: v.map(O),
+      options: v.map(x),
       select: S,
       isSelected: e => e === y.value,
       serialize: e => e,

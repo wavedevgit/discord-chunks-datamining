@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => i
 });
 var Chunk979554 = require("./979554.js"),
-  Chunk786040 = require("./786040.jsx");
+  Chunk786040 = require("./786040.js");
 let i = e => {
   let {
     skuId: t

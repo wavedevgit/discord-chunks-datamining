@@ -23,15 +23,15 @@ function _(e) {
   let {
     canShowReminder: t = false,
     className: _
-  } = e, E = (0, f.Z)(u.Z), {
-    showClipsHeaderEntrypoint: O
+  } = e, O = (0, f.Z)(u.Z), {
+    showClipsHeaderEntrypoint: E
   } = d.NV.useExperiment({
     location: "ClipsButton"
   }, {
     autoTrackExposure: false
   }), {
-    hasClips: v,
-    hasNewClips: y,
+    hasClips: y,
+    hasNewClips: v,
     lastClipsSession: I,
     remindersEnabled: C,
     hasAnyClipAnimations: S
@@ -73,7 +73,7 @@ function _(e) {
       modalKey: m.Qr
     })
   }
-  return (i.useEffect(() => (S ? A() : x(), () => x()), [S, A, x]), O && E && v) ? (0, r.jsxs)(r.Fragment, {
+  return (i.useEffect(() => (S ? A() : x(), () => x()), [S, A, x]), E && O && y) ? (0, r.jsxs)(r.Fragment, {
     children: [null != N && t && C && T && !(0, a.$sL)() && !j && (0, r.jsx)(g.Z, {
       clipIconRef: N,
       lastClipsSession: I,
@@ -83,7 +83,7 @@ function _(e) {
       children: (0, r.jsx)(o.JO, {
         className: _,
         icon: a.AlX,
-        showBadge: y,
+        showBadge: v,
         tooltip: b.intl.string(b.t.MXaLEB),
         onClick: Z
       })

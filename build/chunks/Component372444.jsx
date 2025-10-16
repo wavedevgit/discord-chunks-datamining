@@ -23,18 +23,20 @@ let m = e => {
     buttonProps: l = {
       color: a.Tt.BRAND_INVERTED,
       text: u.intl.string(u.t.oqweNz)
-    }
+    },
+    useExpressiveButton: s
   } = e, {
-    color: s,
-    text: o
-  } = l, c = t.premiumTier + 1;
+    color: o,
+    text: c
+  } = l, g = t.premiumTier + 1;
   return (0, r.jsx)(d.Z, {
-    color: s,
+    color: o,
     analyticsLocation: n,
     guild: t,
-    buttonText: o,
-    targetBoostedGuildTier: c,
-    className: i
+    buttonText: c,
+    targetBoostedGuildTier: g,
+    className: i,
+    useExpressiveButton: s
   })
 };
 
@@ -47,12 +49,13 @@ function p(e) {
     className: u,
     textColor: p,
     headerColor: f,
-    buttonProps: h
+    buttonProps: h,
+    useExpressiveButton: b
   } = e, {
-    analyticsLocations: b
+    analyticsLocations: x
   } = (0, c.ZP)(o.Z.GUILD_BOOSTING_UPSELL_BANNER);
   return (0, r.jsx)(c.Gt, {
-    value: b,
+    value: x,
     children: (0, r.jsxs)("div", {
       className: l()(g.banner, u),
       children: [(0, r.jsx)("img", {
@@ -77,7 +80,8 @@ function p(e) {
           guild: d,
           analyticsLocation: a,
           className: g.button,
-          buttonProps: h
+          buttonProps: h,
+          useExpressiveButton: b
         })
       })]
     })

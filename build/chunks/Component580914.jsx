@@ -31,7 +31,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk38900 = require("./38900.jsx"),
   Chunk709999 = require("./709999.jsx"),
   Chunk653126 = require("./653126.jsx"),
-  Chunk786040 = require("./786040.jsx"),
+  Chunk786040 = require("./786040.js"),
   Chunk401975 = require("./401975.jsx"),
   Chunk794324 = require("./794324.js"),
   Chunk934760 = require("./934760.js"),
@@ -66,7 +66,7 @@ let W = (0, Chunk884697.IC)(90),
       onVisibilityChange: K
     } = e, Y = (0, s.O)(e => {
       null == K || K(e)
-    }, .1, null != K), q = l.useRef(null), Q = (0, Z.G)("HeroBlock"), J = (0, u.e7)([h.default], () => h.default.getCurrentUser()), X = (0, N.Z)(), $ = (0, m.sp)(), ee = x.Z.useConfig({
+    }, .1, null != K), q = l.useRef(null), Q = (0, Z.G)("HeroBlock"), J = (0, u.e7)([h.default], () => h.default.getCurrentUser()), X = (0, N.Z)(), $ = (0, m.sp)(), ee = O.Z.useConfig({
       location: "HeroBlock"
     }).showButtonLeftAligned && G !== H.AW.ORBS, et = (0, S.x)("HeroBlock"), en = l.useMemo(() => {
       var e, t;
@@ -115,16 +115,16 @@ let W = (0, Chunk884697.IC)(90),
         }, [i, o, e]),
         totalCards: e ? t : true
       }
-    })(G !== H.AW.ORBS), e_ = (0, y.a)()(ef), em = (0, j.l)(e_).slice(0, eh), eb = (0, P.St)(em), eE = G === H.AW.ORBS ? M.intl.string(M.t["1CdL8f"]) : Q ? M.intl.string(M.t.guWAg4) : et ? M.intl.string(M.t["/QvRam"]) : M.intl.string(M.t.xYKa1d), ev = (0, O.FF)("CollectiblesContent"), eO = (0, E.$2)(en.categorySkuId), ex = v.Z.useConfig({
+    })(G !== H.AW.ORBS), e_ = (0, y.a)()(ef), em = (0, k.l)(e_).slice(0, eh), eb = (0, P.St)(em), eE = G === H.AW.ORBS ? D.intl.string(D.t["1CdL8f"]) : Q ? D.intl.string(D.t.guWAg4) : et ? D.intl.string(D.t["/QvRam"]) : D.intl.string(D.t.xYKa1d), ev = (0, x.FF)("CollectiblesContent"), ex = (0, E.$2)(en.categorySkuId), eO = v.Z.useConfig({
       location: "HeroBlock"
     }).showCardsV2, eS = () => {
       G === H.AW.ORBS ? ((0, C.Y)({
-        pageType: D.ZY5.SHOP_ORBS_TAB,
-        sectionType: D.jXE.ORBS_SHOP_HERO_BLOCK,
-        ctaObject: D.qAy.CTA_TO_QUEST_HOME
+        pageType: M.ZY5.SHOP_ORBS_TAB,
+        sectionType: M.jXE.ORBS_SHOP_HERO_BLOCK,
+        ctaObject: M.qAy.CTA_TO_QUEST_HOME
       }), (0, p.navigateToQuestHome)({
         fromContent: a.j.ORBS_SHOP_HERO_CTA
-      })) : (i("shop latest category hero", !ev || eO ? en.categorySkuId : true, true, true), _.default.track(D.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+      })) : (i("shop latest category hero", !ev || ex ? en.categorySkuId : true, true, true), _.default.track(M.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
         collectibles_shop_session_id: null == $ ? true : $.sessionId,
         sku_id: en.categorySkuId,
         page_type: G,
@@ -173,7 +173,7 @@ let W = (0, Chunk884697.IC)(90),
             className: F.heroHeaderBadgeLogoSummaryContainer,
             children: [null != en.unpublishedAt && (0, r.jsx)(d.IGR, {
               disableColor: true,
-              text: M.intl.string(M.t["h/uBCQ"]),
+              text: D.intl.string(D.t["h/uBCQ"]),
               className: F.limitedTimeBadge
             }), (0, r.jsxs)("div", {
               className: o()(F.heroLogoNameContainer, {
@@ -190,8 +190,8 @@ let W = (0, Chunk884697.IC)(90),
                 color: "header-primary",
                 children: en.title
               }), "" !== en.summary && (0, r.jsx)(d.Text, {
-                variant: eO ? "text-lg/medium" : "text-md/normal",
-                className: eO ? F.orbsSubHeaderText : F.subHeaderText,
+                variant: ex ? "text-lg/medium" : "text-md/normal",
+                className: ex ? F.orbsSubHeaderText : F.subHeaderText,
                 style: null != en.bannerTextColor ? {
                   color: en.bannerTextColor
                 } : true,
@@ -213,7 +213,7 @@ let W = (0, Chunk884697.IC)(90),
           }),
           ref: eC,
           children: n || ep ? (0, r.jsx)(r.Fragment, {
-            children: [...Array(null != eh ? eh : 4)].map((e, t) => ex ? (0, r.jsx)(B.Z, {}, t) : (0, r.jsx)(k.K, {}, t))
+            children: [...Array(null != eh ? eh : 4)].map((e, t) => eO ? (0, r.jsx)(B.Z, {}, t) : (0, r.jsx)(T.K, {}, t))
           }) : (0, r.jsx)(r.Fragment, {
             children: eb.map((e, t) => {
               let n = b.Z.getCategoryForProduct(e.skuId);
@@ -223,11 +223,11 @@ let W = (0, Chunk884697.IC)(90),
                   pageSection: "top 4",
                   categoryPosition: 0
                 },
-                children: ex && (null == e ? true : e.skuId) != null ? (0, r.jsx)(L.Z, {
+                children: eO && (null == e ? true : e.skuId) != null ? (0, r.jsx)(L.Z, {
                   skuId: null == e ? true : e.skuId,
                   prioritizedCurrency: G === H.AW.ORBS ? I.tA.ORBS : true,
                   onClickAnalytics: (0, I.wO)(e, G, $)
-                }, e.skuId) : (0, r.jsx)(T.Z, {
+                }, e.skuId) : (0, r.jsx)(j.Z, {
                   product: e,
                   category: n,
                   user: J,

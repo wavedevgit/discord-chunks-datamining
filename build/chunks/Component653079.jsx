@@ -1,7 +1,8 @@
-/** Chunk was on 49279 **/
+/** Chunk was on 5873 **/
 /** chunk id: 653079, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
@@ -17,54 +18,54 @@ var Chunk951288 = require("./951288.js"),
   Chunk74538 = require("./74538.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk763740 = require("./763740.js");
-let b = e => {
+let g = e => {
   let {
     user: t,
     guildId: n,
-    selectedNameplate: r
-  } = e, b = (0, l.e7)([m.Z], () => m.Z.getPendingGlobalName()), {
+    selectedNameplate: i
+  } = e, g = (0, l.e7)([_.Z], () => _.Z.getPendingGlobalName()), {
     product: v,
     purchase: x
-  } = (0, c.Z)(null == r ? true : r.skuId), C = (0, p.kd)(v), f = _.ZP.canUseCollectibles(t), I = (0, o.qS)(x), P = (0, o.G1)(v), y = !f && I, j = null == x || y;
-  return (0, i.jsxs)("div", {
-    className: a()(g.previewBorder, {
-      [g.upsell]: null != r && j
+  } = (0, c.Z)(null == i ? true : i.skuId), f = (0, p.kd)(v), C = m.ZP.canUseCollectibles(t), I = (0, o.qS)(x), y = (0, o.G1)(v), P = !C && I, j = null == x || P;
+  return (0, r.jsxs)("div", {
+    className: a()(b.previewBorder, {
+      [b.upsell]: null != i && j
     }),
-    children: [(0, i.jsx)("div", {
-      className: g.previewBox,
+    children: [(0, r.jsx)("div", {
+      className: b.previewBox,
       role: "img",
       "aria-label": h.intl.string(h.t.SZeUdX),
-      children: (0, i.jsxs)("div", {
-        className: g.previewContents,
+      children: (0, r.jsxs)("div", {
+        className: b.previewContents,
         "aria-hidden": true,
-        children: [(0, i.jsx)(d.d, {
+        children: [(0, r.jsx)(d.d, {
           width: 124,
           opacity: .9
-        }), (0, i.jsx)(d.d, {
+        }), (0, r.jsx)(d.d, {
           width: 124,
           opacity: .9
-        }), (0, i.jsx)(u.Z, {
+        }), (0, r.jsx)(u.Z, {
           user: t,
           guildId: n,
-          nameplate: r,
-          pendingGlobalName: b,
+          nameplate: i,
+          pendingGlobalName: g,
           isHighlighted: true
-        }), (0, i.jsx)(d.d, {
+        }), (0, r.jsx)(d.d, {
           width: 124,
           opacity: .9
-        }), (0, i.jsx)(d.d, {
+        }), (0, r.jsx)(d.d, {
           width: 124,
           opacity: .9
         })]
       })
-    }), null != r && (0, i.jsxs)("div", {
-      className: g.previewDescription,
-      children: [(0, i.jsx)(s.Text, {
+    }), null != i && (0, r.jsxs)("div", {
+      className: b.previewDescription,
+      children: [(0, r.jsx)(s.Text, {
         variant: "text-sm/semibold",
-        children: C
-      }), j && (0, i.jsx)(s.Text, {
+        children: f
+      }), j && (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
-        children: y ? h.intl.string(h.t.nD78oa) : P && f ? h.intl.string(h.t.hmyYKy) : P ? h.intl.string(h.t.JY1i0t) : h.intl.string(h.t.fEGjVV)
+        children: P ? h.intl.string(h.t.nD78oa) : y && C ? h.intl.string(h.t.hmyYKy) : y ? h.intl.string(h.t.JY1i0t) : h.intl.string(h.t.fEGjVV)
       })]
     })]
   })

@@ -2,9 +2,10 @@
 /** chunk id: 223143, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => h,
+  QN: () => h,
+  ZP: () => m,
   c7: () => p,
-  mw: () => m
+  mw: () => g
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk311570 = require("./311570.js"),
@@ -61,10 +62,14 @@ function p() {
     d.current = u
   }, [u]);
   let f = (0, Chunk647438.useRef)(Chunk1870.Z.fetchError);
-  return (0, Chunk647438.useEffect)(() => {
+  (0, Chunk647438.useEffect)(() => {
     f.current = Chunk311570
-  }, [Chunk311570]), (0, Chunk647438.useEffect)(() => {
-    true === module && d.current && null == f.current || (0, Chunk335131.qg)({
+  }, [Chunk311570]);
+  let p = (0, Chunk647438.useRef)(Chunk1870.Z.isFetching);
+  return (0, Chunk647438.useEffect)(() => {
+    p.current = exports
+  }, [exports]), (0, Chunk647438.useEffect)(() => {
+    p.current || true === module && d.current && null == f.current || (0, Chunk335131.qg)({
       variantsReturnStyle: _
     })
   }, [module]), {
@@ -76,8 +81,9 @@ function p() {
     hasPreviouslyFetched: u
   }
 }
+let h = () => p(true);
 
-function h(e, t) {
+function m(e, t) {
   let n = null == e ? true : e.paymentGateway,
     {
       isFetching: r,
@@ -112,6 +118,6 @@ function h(e, t) {
     hasPreviouslyFetched: _
   }
 }
-let m = e => h(f(u({}, null != e ? e : {}), {
+let g = e => m(f(u({}, null != e ? e : {}), {
   stalePurchasesOK: true
 }))

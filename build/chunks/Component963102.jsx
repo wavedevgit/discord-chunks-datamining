@@ -80,7 +80,7 @@ function B(e) {
         let {
           closePopout: t
         } = e;
-        return (0, r.jsx)(x.Z, {
+        return (0, r.jsx)(O.Z, {
           handleTransition: s,
           onClose: t
         })
@@ -148,34 +148,34 @@ function A(e) {
     enabled: g
   } = (0, m.WX)({
     location: "collectibles_shop_header_bar"
-  }), x = (0, C.Y)({
+  }), O = (0, C.Y)({
     location: "CollectiblesShopHeaderBar"
   }), A = [{
     tab: y.AW.HOME,
-    displayText: T.intl.string(T.t.ijDDw8)
+    displayText: j.intl.string(j.t.ijDDw8)
   }, {
     tab: y.AW.CATALOG,
-    displayText: T.intl.string(T.t.Ah5sJi)
+    displayText: j.intl.string(j.t.Ah5sJi)
   }];
   g && A.push({
     tab: y.AW.ORBS,
-    displayText: T.intl.string(T.t.EBYkzs)
+    displayText: j.intl.string(j.t.EBYkzs)
   });
-  let N = t === y.AW.ORBS ? j.ZY5.SHOP_ORBS_TAB : j.ZY5.COLLECTIBLES_SHOP,
+  let N = t === y.AW.ORBS ? k.ZY5.SHOP_ORBS_TAB : k.ZY5.COLLECTIBLES_SHOP,
     P = l.useCallback(() => {
       (0, _.Y)({
         pageType: N,
-        sectionType: j.jXE.ORBS_BALANCE_MENU,
-        ctaObject: j.qAy.CTA_TO_QUEST_HOME
+        sectionType: k.jXE.ORBS_BALANCE_MENU,
+        ctaObject: k.qAy.CTA_TO_QUEST_HOME
       }), (0, p.navigateToQuestHome)({
         fromContent: s.j.ORBS_BALANCE_MENU
       })
     }, [N]),
-    R = (0, O.eN)("collectibles_shop_header_bar"),
+    R = (0, x.eN)("collectibles_shop_header_bar"),
     Z = l.useCallback(() => {
       (null == d ? true : d.id) != null && (0, h.openUserProfileModal)({
         userId: d.id,
-        section: k.oh.WISHLIST,
+        section: T.oh.WISHLIST,
         showGuildProfile: false
       })
     }, [null == d ? true : d.id]);
@@ -188,11 +188,11 @@ function A(e) {
       children: [(0, r.jsxs)(c.P3F, {
         className: L.shopHomeLink,
         onClick: () => n(y.AW.HOME),
-        "aria-label": T.intl.string(T.t.pWG4zc) + " home",
+        "aria-label": j.intl.string(j.t.pWG4zc) + " home",
         children: [(0, r.jsx)(v.Z, {
           className: L.discordLogo
         }), (0, r.jsx)(f.Z.Title, {
-          children: T.intl.string(T.t.pWG4zc)
+          children: j.intl.string(j.t.pWG4zc)
         })]
       }), (0, r.jsx)("div", {
         className: L.tabs,
@@ -213,15 +213,15 @@ function A(e) {
             handleTransition: n
           }, l)
         })
-      }), (g || R || x) && (0, r.jsxs)("div", {
+      }), (g || R || O) && (0, r.jsxs)("div", {
         className: L.alignedRightContent,
         children: [R && (0, r.jsx)(S.Z, {
           handleTransition: n,
           selectedTab: t
-        }), x && (0, r.jsx)(c.P3F, {
+        }), O && (0, r.jsx)(c.P3F, {
           className: L.wishlistButton,
           onClick: Z,
-          "aria-label": T.intl.string(T.t["7lZ31N"]),
+          "aria-label": j.intl.string(j.t["7lZ31N"]),
           children: (0, r.jsx)(c.h_8, {
             size: "xs",
             color: "currentColor"
@@ -229,7 +229,7 @@ function A(e) {
         }), g && (0, r.jsx)(b.V9, {
           analyticsPage: N,
           cardAlignment: b.V9.CardAlignment.END,
-          ctaText: T.intl.string(T.t.VC4Mq6),
+          ctaText: j.intl.string(j.t.VC4Mq6),
           ctaOnClick: P,
           className: L.balanceWidgetMenu
         })]

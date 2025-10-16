@@ -173,7 +173,7 @@ let eD = (0, Chunk608787.Un)({
   eY = e => {
     let {
       match: t
-    } = e, n = (0, O.l)(), i = (0, p.e7)([ef.Z, eb.Z], () => {
+    } = e, n = (0, E.l)(), i = (0, p.e7)([ef.Z, eb.Z], () => {
       let e = eb.Z.getChannelId();
       return ef.Z.getChannel(e)
     }), {
@@ -258,14 +258,14 @@ let eD = (0, Chunk608787.Un)({
       case eA.oC.REPORT_TO_MOD:
         return (0, r.jsx)(S.Z, {});
       default:
-        (0, eO.vE)(u)
+        (0, eE.vE)(u)
     }
     if ((0, M.p3)(d, f)) return (0, r.jsx)(U.Z, {
       guildId: l,
       channelId: u
     });
     if ((null == i ? true : i.type) === ej.d4z.GUILD_STORE) {
-      let e = ev.default.cast(t.params.messageId);
+      let e = ey.default.cast(t.params.messageId);
       return (0, r.jsx)(eI.Z, {
         channel: i,
         inputSkuId: e
@@ -339,7 +339,7 @@ function e3() {
     withTopBorder: true
   })
 }
-let e5 = e => (0, r.jsx)(y.Z, eR({}, e)),
+let e5 = e => (0, r.jsx)(v.Z, eR({}, e)),
   e2 = () => (0, Chunk951288.jsx)(Chunk270759.Z, {}),
   e6 = () => (0, Chunk951288.jsx)(Chunk779715.Z, {}),
   e7 = () => (0, Chunk951288.jsx)(Chunk745052.Z, {}),
@@ -474,34 +474,34 @@ function tn(e) {
       Number.isNaN(t) && (t = eT.qO), tt(t)
     }
   }, [m]);
-  let O = i.useRef(null),
-    v = i.useCallback((e, t) => {
+  let E = i.useRef(null),
+    y = i.useCallback((e, t) => {
       var n;
       tt(e);
       let r = t < eT.li / 3;
       t <= eT.li ? document.body.classList.add(eL.draggingMin) : document.body.classList.remove(eL.draggingMin), t >= eT.zx ? document.body.classList.add(eL.draggingMax) : document.body.classList.remove(eL.draggingMax);
       let i = t - e;
-      null == (n = O.current) || n.style.setProperty("--custom-overdrag", "".concat(1 + Math.min(Math.abs(i / eT.p8), .25))), g && (P.useAppSidebarState.setState({
+      null == (n = E.current) || n.style.setProperty("--custom-overdrag", "".concat(1 + Math.min(Math.abs(i / eT.p8), .25))), g && (P.useAppSidebarState.setState({
         isOpen: !r
       }), r && tt(eT.p8))
     }, [g]),
-    y = i.useCallback(() => {
+    v = i.useCallback(() => {
       document.body.classList.add(eL.dragging)
     }, []),
     I = i.useCallback(e => {
       var t;
-      document.body.classList.remove(eL.dragging), document.body.classList.remove(eL.draggingMin), document.body.classList.remove(eL.draggingMax), document.body.classList.remove(eL.collapsing), null == (t = O.current) || t.style.setProperty("--custom-overdrag", "0px"), f.K.set(eT.nT, e), eE.default.track(ej.rMx.CHANNEL_SIDEBAR_RESIZED, {
+      document.body.classList.remove(eL.dragging), document.body.classList.remove(eL.draggingMin), document.body.classList.remove(eL.draggingMax), document.body.classList.remove(eL.collapsing), null == (t = E.current) || t.style.setProperty("--custom-overdrag", "0px"), f.K.set(eT.nT, e), eO.default.track(ej.rMx.CHANNEL_SIDEBAR_RESIZED, {
         width: e
       })
     }, []),
-    S = (0, E.Z)({
+    S = (0, O.Z)({
       minDimension: eT.li,
       maxDimension: eT.zx,
-      resizableDomNodeRef: O,
-      onElementResize: v,
-      onElementResizeStart: y,
+      resizableDomNodeRef: E,
+      onElementResize: y,
+      onElementResizeStart: v,
       onElementResizeEnd: I,
-      orientation: E.y.HORIZONTAL_RIGHT,
+      orientation: O.y.HORIZONTAL_RIGHT,
       throttleDuration: 0
     }),
     T = i.useCallback(() => {
@@ -522,7 +522,7 @@ function tn(e) {
     children: e => {
       var t, i;
       return (0, r.jsxs)("div", {
-        ref: O,
+        ref: E,
         "data-collapsed": m,
         className: a()(eL.sidebar, e, {
           [eL.fullWidth]: d.tq,
@@ -549,7 +549,7 @@ function tn(e) {
             "aria-label": "Resize Sidebar",
             className: eL.sidebarResizeHandle,
             onMouseDown: S
-          }), (0, r.jsx)(ey.b, {})]
+          }), (0, r.jsx)(ev.b, {})]
         })]
       })
     }
@@ -595,9 +595,9 @@ function tr() {
     }), ":messageId?")]),
     b = (null == Chunk773244 || null == (e = Chunk773244.params) ? true : module.channelId) === Chunk176505.oC.GUILD_ONBOARDING,
     _ = Chunk647438.useCallback(() => Chunk285865.Z.openSidebar(), []),
-    E = (0, Chunk540059.T)("AppView"),
-    O = (0, Chunk267161.useAppSidebarState)(e => !e.isOpen),
-    y = (0, Chunk442837.e7)([Chunk358221.Z], () => Chunk358221.Z.isFullscreenInContext()),
+    O = (0, Chunk540059.T)("AppView"),
+    E = (0, Chunk267161.useAppSidebarState)(e => !e.isOpen),
+    v = (0, Chunk442837.e7)([Chunk358221.Z], () => Chunk358221.Z.isFullscreenInContext()),
     S = (0, Chunk442837.e7)([Chunk591472.Z], () => Chunk591472.Z.isFrameActive());
   return (0, Chunk951288.jsx)("div", {
     className: Chunk981028.container,

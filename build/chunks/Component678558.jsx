@@ -2,13 +2,14 @@
 /** chunk id: 678558, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => R
+  Z: () => P
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
+  Chunk681715 = require("./681715.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk179360 = require("./179360.js"),
@@ -25,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk132810 = require("./132810.js");
 
-function I(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,20 +35,20 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function S(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      I(e, t, n[t])
+      T(e, t, n[t])
     })
   }
   return e
 }
 
-function S(e, t) {
+function A(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -58,15 +59,15 @@ function S(e, t) {
   return n
 }
 
-function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+function C(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : A(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function C(e, t) {
+function N(e, t) {
   if (null == e) return {};
-  var n, r, i = N(e, t);
+  var n, r, i = R(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -74,87 +75,103 @@ function C(e, t) {
   return i
 }
 
-function N(e, t) {
+function R(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let R = e => {
+let P = e => {
   let {
     analyticsLocation: t,
     analyticsSourceLocation: n,
     guild: a,
-    buttonText: I,
-    targetBoostedGuildTier: S,
-    onClose: N = () => {},
-    closeLayer: R = () => {},
-    pauseAnimation: P = false,
-    applicationId: w,
-    handleSubscribeModalClose: D,
-    withHighlight: L = false,
-    icon: x,
-    intent: M
-  } = e, j = C(e, ["analyticsLocation", "analyticsSourceLocation", "guild", "buttonText", "targetBoostedGuildTier", "onClose", "closeLayer", "pauseAnimation", "applicationId", "handleSubscribeModalClose", "withHighlight", "icon", "intent"]), {
-    analyticsLocations: k
-  } = (0, d.ZP)(), U = (0, p.bp)() === b.IlC.POPOUT, [G, B] = i.useState(false), {
-    fractionalState: Z
-  } = (0, f.Z)(), F = (0, s.e7)([h.Z], () => h.Z.hasFetched);
+    buttonText: T,
+    targetBoostedGuildTier: A,
+    onClose: R = () => {},
+    closeLayer: P = () => {},
+    pauseAnimation: w = false,
+    applicationId: D,
+    handleSubscribeModalClose: L,
+    withHighlight: x = false,
+    icon: M,
+    intent: j,
+    useExpressiveButton: k = false
+  } = e, U = N(e, ["analyticsLocation", "analyticsSourceLocation", "guild", "buttonText", "targetBoostedGuildTier", "onClose", "closeLayer", "pauseAnimation", "applicationId", "handleSubscribeModalClose", "withHighlight", "icon", "intent", "useExpressiveButton"]), {
+    analyticsLocations: G
+  } = (0, f.ZP)(), B = (0, h.bp)() === y.IlC.POPOUT, [Z, F] = i.useState(false), {
+    fractionalState: V
+  } = (0, _.Z)(), H = (0, s.e7)([m.Z], () => m.Z.hasFetched);
   i.useEffect(() => {
-    F || (0, u.X8)()
-  }, [F]);
-  let V = (0, g.vx)(h.Z.boostSlots),
-    H = null != S ? Math.max((0, g.KK)(a, S), 1) : 1,
-    Y = (0, g.aq)({
-      fractionalState: Z
+    H || (0, d.X8)()
+  }, [H]);
+  let Y = (0, E.vx)(m.Z.boostSlots),
+    W = null != A ? Math.max((0, E.KK)(a, A), 1) : 1,
+    K = (0, E.aq)({
+      fractionalState: V
     }),
-    W = async () => {
-      B(true), await (0, E.u)({
-        analyticsLocations: k,
+    z = async () => {
+      F(true), await (0, b.u)({
+        analyticsLocations: G,
         analyticsLocation: t,
         analyticsSourceLocation: n,
         guild: a,
-        numberOfBoostsToAdd: H,
-        onClose: N,
-        closeLayer: R,
-        inPopout: U,
-        applicationId: w,
-        handleSubscribeModalClose: D,
-        intent: M
-      }), B(false)
-    }, K = m.Z.getPremiumTypeSubscription(), z = (0, r.jsxs)("div", {
-      className: v.button,
-      children: [x, null != I ? I : O.intl.string(O.t.gKmQ1N)]
-    }), q = false;
-  return ((q = null !== K && !(V.length > 0) && (null == K ? true : K.isPausedOrPausePending) && Z === y.a$.NONE) && (z = (0, r.jsxs)("div", {
-    className: v.button,
-    children: [(0, r.jsx)(c.mBM, {
+        numberOfBoostsToAdd: W,
+        onClose: R,
+        closeLayer: P,
+        inPopout: B,
+        applicationId: D,
+        handleSubscribeModalClose: L,
+        intent: j
+      }), F(false)
+    }, q = g.Z.getPremiumTypeSubscription(), X = (0, r.jsxs)("div", {
+      className: I.button,
+      children: [M, null != T ? T : v.intl.string(v.t.gKmQ1N)]
+    }), Q = false;
+  return ((Q = null !== q && !(Y.length > 0) && (null == q ? true : q.isPausedOrPausePending) && V === O.a$.NONE) && (X = (0, r.jsxs)("div", {
+    className: I.button,
+    children: [(0, r.jsx)(u.mBM, {
       size: "xs",
-      className: v.buttonIcon
-    }), " ", z]
-  }), j.disabled = true), null != Y) ? (0, r.jsx)(_.Z, {
-    text: Y,
+      className: I.buttonIcon
+    }), " ", X]
+  }), U.disabled = true), null != K) ? k ? (0, r.jsx)(l.u, {
+    text: K,
+    children: (0, r.jsx)(u.Button, {
+      variant: "expressive",
+      icon: u.mBM,
+      iconPosition: "start",
+      disabled: true,
+      text: null != T ? T : v.intl.string(v.t.gKmQ1N)
+    })
+  }) : (0, r.jsx)(p.Z, {
+    text: K,
     "aria-label": false,
-    children: e => (0, r.jsx)(c.gtL, A(T(A(T({
+    children: e => (0, r.jsx)(u.gtL, C(S(C(S({
       "data-migration-pending": true
     }, e), {
       disabled: true,
-      size: l.zx.Sizes.SMALL,
-      pauseAnimation: P
-    }), j), {
-      children: z
+      size: c.zx.Sizes.SMALL,
+      pauseAnimation: w
+    }), U), {
+      children: X
     }))
-  }) : (0, r.jsx)(c.gtL, A(T({
+  }) : k ? (0, r.jsx)(u.Button, {
+    variant: "expressive",
+    disabled: Q,
+    loading: Z,
+    text: null != T ? T : v.intl.string(v.t.gKmQ1N),
+    onClick: z
+  }) : (0, r.jsx)(u.gtL, C(S({
     "data-migration-pending": true,
-    size: l.zx.Sizes.SMALL
-  }, j), {
-    className: o()(j.className, {
-      [v.buttonHighlighted]: L
+    size: c.zx.Sizes.SMALL
+  }, U), {
+    className: o()(U.className, {
+      [I.buttonHighlighted]: x
     }),
-    submitting: G,
-    onClick: W,
-    pauseAnimation: P,
-    children: z
+    submitting: Z,
+    onClick: z,
+    pauseAnimation: w,
+    children: X
   }))
 }

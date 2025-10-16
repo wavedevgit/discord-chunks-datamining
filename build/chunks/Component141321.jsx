@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 141321, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => E
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,12 +21,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk741047 = require("./741047.js");
 
-function O(e) {
+function E(e) {
   let {
     onOpen: t,
     onClose: n,
     "data-jump-section": l
-  } = e, O = (0, o.e7)([g.default], () => g.default.getCurrentUser()), v = i.useRef(null), y = (0, o.e7)([h.ZP], () => (null == O ? true : O.id) != null && h.ZP.getMentionCount(O.id, b.W.NOTIFICATION_CENTER) > 0), {
+  } = e, E = (0, o.e7)([g.default], () => g.default.getCurrentUser()), y = i.useRef(null), v = (0, o.e7)([h.ZP], () => (null == E ? true : E.id) != null && h.ZP.getMentionCount(E.id, b.W.NOTIFICATION_CENTER) > 0), {
     titlebarIconSize: I,
     titlebarHoverHighlight: C
   } = (0, p.T)({
@@ -36,11 +36,11 @@ function O(e) {
     color: "currentColor"
   }), [S]);
   return (0, r.jsx)(m.k, {
-    targetElementRef: v,
+    targetElementRef: y,
     onOpen: t,
     onClose: n,
     badgeState: {
-      badgeForYou: y
+      badgeForYou: v
     },
     popoutPosition: "bottom",
     popoutAlign: "right",
@@ -48,7 +48,7 @@ function O(e) {
       var o, p;
       return (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(c.u, {
-          targetElementRef: v,
+          targetElementRef: y,
           shouldShow: !t,
           text: _.intl.string(_.t.GSmTKC),
           children: (0, r.jsx)(u.P3F, (o = function(e) {
@@ -70,22 +70,22 @@ function O(e) {
             return e
           }({}, n), p = p = {
             tag: "div",
-            innerRef: v,
+            innerRef: y,
             onClick: e,
             "data-jump-section": l,
             "aria-label": _.intl.string(_.t.GSmTKC),
-            className: a()(E.clickable, {
-              [E.withHighlight]: C
+            className: a()(O.clickable, {
+              [O.withHighlight]: C
             }),
-            children: y || i ? (0, r.jsxs)(r.Fragment, {
+            children: v || i ? (0, r.jsxs)(r.Fragment, {
               children: [(0, r.jsx)(d.ZP, {
                 mask: d.ZP.Masks.HEADER_BAR_BADGE_BOTTOM,
                 height: s.Z[S],
                 width: s.Z[S],
                 children: T
               }), (0, r.jsx)("span", {
-                className: a()(E.badge, {
-                  [E.smol]: "refresh_sm" === S
+                className: a()(O.badge, {
+                  [O.smol]: "refresh_sm" === S
                 })
               })]
             }) : T
@@ -101,7 +101,7 @@ function O(e) {
           }), o))
         }), (0, r.jsx)(f.U, {
           location: "inbox-button",
-          targetElementRef: v
+          targetElementRef: y
         })]
       })
     }

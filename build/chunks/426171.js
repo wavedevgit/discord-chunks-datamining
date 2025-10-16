@@ -1,10 +1,10 @@
-/** Chunk was on 45620 **/
+/** Chunk was on 95215 **/
 /** chunk id: 426171, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Kp: () => v,
-  u9: () => E,
-  xV: () => O
+  Kp: () => P,
+  u9: () => x,
+  xV: () => j
 }), require("./413496.js"), require("./433524.js"), require("./35282.js"), require("./704826.js"), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk843611 = require("./843611.js"),
@@ -20,99 +20,99 @@ var Chunk647438 = require("./647438.js"),
   Chunk258939 = require("./258939.js"),
   Chunk956472 = require("./956472.js"),
   Chunk981631 = require("./981631.js");
-let _ = "".concat("#").concat("itemSkuId", "="),
-  m = new RegExp("^".concat(_, "(\\d+)$")),
-  b = [Chunk981631.Z5c.COLLECTIBLES_SHOP],
-  E = e => {
-    let t = (0, l.TH)();
+let b = "".concat("#").concat("itemSkuId", "="),
+  g = new RegExp("^".concat(b, "(\\d+)$")),
+  _ = [Chunk981631.Z5c.COLLECTIBLES_SHOP],
+  x = e => {
+    let t = (0, i.TH)();
     r.useEffect(() => {
-      if (null != e && b.includes(t.pathname)) return () => {
-        window.location.hash.startsWith(_) && window.location.replace("#")
+      if (null != e && _.includes(t.pathname)) return () => {
+        window.location.hash.startsWith(b) && window.location.replace("#")
       }
     }, [e, t.pathname])
   },
-  v = () => {
+  P = () => {
     let e = (0, Chunk258939.R)(),
       t = Chunk647438.useRef(null),
       n = (0, Chunk843611.TH)(),
-      o = require.pathname === Chunk981631.Z5c.COLLECTIBLES_SHOP ? Chunk100527.Z.HOME_PAGE_SHOP_TAB : Chunk100527.Z.COLLECTIBLES_SHOP,
+      l = require.pathname === Chunk981631.Z5c.COLLECTIBLES_SHOP ? Chunk100527.Z.HOME_PAGE_SHOP_TAB : Chunk100527.Z.COLLECTIBLES_SHOP,
       {
-        analyticsLocations: _
+        analyticsLocations: b
       } = (0, Chunk906732.ZP)(Chunk607070),
-      b = (0, Chunk410127.Z)();
+      _ = (0, Chunk410127.Z)();
     Chunk647438.useEffect(() => {
-      let e = m.exec(require.hash);
+      let e = g.exec(require.hash);
       null != module ? exports.current = module[1] : exports.current = null
-    }, [b, require.hash]);
-    let E = (0, Chunk442837.e7)([Chunk328347.Z], () => Chunk328347.Z.initialProductSkuId);
+    }, [_, require.hash]);
+    let x = (0, Chunk442837.e7)([Chunk328347.Z], () => Chunk328347.Z.initialProductSkuId);
     Chunk647438.useEffect(() => {
       if (module) return;
       let n = null;
-      if (null != E ? n = E : null != exports.current && (n = exports.current), null != require) {
+      if (null != x ? n = x : null != exports.current && (n = exports.current), null != require) {
         let e = setTimeout(() => {
           (e => {
             let {
               productSkuId: t,
               analyticsLocations: n,
               analyticsSource: r,
-              tab: l
-            } = e, i = c.Z.getProduct(t), o = c.Z.getCategoryForProduct(t);
-            if (null != i && null != o) {
-              let e = i,
-                a = (0, C.oQ)({
-                  product: i
+              tab: i
+            } = e, a = c.Z.getProduct(t), l = c.Z.getCategoryForProduct(t);
+            if (null != a && null != l) {
+              let e = a,
+                s = (0, f.oQ)({
+                  product: a
                 }),
                 u = document.getElementById("shop-item-".concat(e.skuId));
-              if (u !== document.activeElement && (null == u || u.focus()), null != i.variantGroupStoreListingId) {
-                let n = c.Z.getProductByStoreListingId(i.variantGroupStoreListingId);
+              if (u !== document.activeElement && (null == u || u.focus()), null != a.variantGroupStoreListingId) {
+                let n = c.Z.getProductByStoreListingId(a.variantGroupStoreListingId);
                 if (null != n) {
-                  var s;
+                  var o;
                   e = n;
-                  let r = null == (s = n.variants) ? true : s.findIndex(e => e.skuId === t);
+                  let r = null == (o = n.variants) ? true : o.findIndex(e => e.skuId === t);
                   null != r && r > false && (0, d.$)(n, r)
                 }
-              }(0, f.T)({
+              }(0, p.T)({
                 product: e,
-                category: o,
+                category: l,
                 analyticsSource: r,
                 analyticsLocations: n,
-                tab: l,
-                shouldCheckoutWithOrbs: a
+                tab: i,
+                shouldCheckoutWithOrbs: s
               })
             }
           })({
             productSkuId: require,
-            analyticsLocations: _,
+            analyticsLocations: b,
             analyticsSource: Chunk607070,
-            tab: b
+            tab: _
           })
         }, 250);
         return () => clearTimeout(module)
       }
-    }, [_, Chunk607070, module, E, b])
+    }, [b, Chunk607070, module, x, _])
   },
-  O = e => {
+  j = e => {
     let t = r.useRef({}),
-      n = (0, i.e7)([o.Z], () => o.Z.useReducedMotion),
-      l = (0, i.e7)([c.Z], () => c.Z.isFetchingCategories),
-      [s, a] = r.useState(null),
+      n = (0, a.e7)([l.Z], () => l.Z.useReducedMotion),
+      i = (0, a.e7)([c.Z], () => c.Z.isFetchingCategories),
+      [o, s] = r.useState(null),
       u = r.useCallback((e, n) => {
         t.current[e] = n
       }, []),
       d = r.useCallback(r => {
-        l ? a(r) : setTimeout(() => {
-          let l = t.current[r];
-          null != l && (null == e || e.scrollIntoViewNode({
-            node: l,
+        i ? s(r) : setTimeout(() => {
+          let i = t.current[r];
+          null != i && (null == e || e.scrollIntoViewNode({
+            node: i,
             padding: 48,
             animate: !n,
             shouldScrollToStart: true
           }))
         }, 100)
-      }, [e, n, l, a]);
+      }, [e, n, i, s]);
     return r.useEffect(() => {
-      l || null == s || (d(s), a(null))
-    }, [l, d, s, a]), {
+      i || null == o || (d(o), s(null))
+    }, [i, d, o, s]), {
       setCategoryRef: u,
       handleScrollToCategory: d
     }

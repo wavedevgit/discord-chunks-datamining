@@ -35,7 +35,7 @@ function N(e) {
     guild: t,
     onClick: l,
     onView: o
-  } = e, [h, g] = i.useState(false), [E, N] = i.useState(false), [P, j] = i.useState(false), A = i.useRef(null), x = i.useCallback(async () => {
+  } = e, [h, g] = i.useState(false), [O, N] = i.useState(false), [P, j] = i.useState(false), A = i.useRef(null), x = i.useCallback(async () => {
     N(true);
     try {
       await l(t.id)
@@ -82,7 +82,7 @@ function N(e) {
         }), i))
       }
     })
-  }, [t]), L = (0, d.ZP)(), R = t.features.has(v.GuildFeatures.HUB), D = i.useMemo(() => {
+  }, [t]), L = (0, d.ZP)(), R = t.features.has(y.GuildFeatures.HUB), D = i.useMemo(() => {
     let e = _.ZP.getGuildDiscoverySplashURL({
       id: t.id,
       splash: t.discoverySplash,
@@ -91,9 +91,9 @@ function N(e) {
     if (null != e) return e;
     if (R) return T;
     switch (L) {
-      case v.BRd.DARK:
+      case y.BRd.DARK:
         return C;
-      case v.BRd.LIGHT:
+      case y.BRd.LIGHT:
         return S
     }
   }, [t.discoverySplash, t.id, R, L]), k = i.useMemo(() => _.ZP.getGuildIconURL({
@@ -103,7 +103,7 @@ function N(e) {
   }), [t.icon, t.id]);
   return (0, r.jsxs)("div", {
     className: I.container,
-    children: [E && (0, r.jsx)("div", {
+    children: [O && (0, r.jsx)("div", {
       className: I.spinnerContainer,
       children: (0, r.jsx)(c.$jN, {
         type: c.$jN.Type.PULSING_ELLIPSIS,
@@ -118,9 +118,9 @@ function N(e) {
         ref: A,
         className: I.card,
         onClick: x,
-        disabled: E,
+        disabled: O,
         onContextMenu: w,
-        "aria-label": y.intl.string(y.t["M9wQ+f"]),
+        "aria-label": v.intl.string(v.t["M9wQ+f"]),
         children: [(0, r.jsxs)("div", {
           className: I.header,
           children: [(0, r.jsx)("div", {
@@ -133,7 +133,7 @@ function N(e) {
               className: I.bannerImage,
               onLoad: () => j(true)
             })
-          }), (0, r.jsx)(O.Z, {
+          }), (0, r.jsx)(E.Z, {
             className: I.maximizeIcon,
             guildId: t.id
           }), (0, r.jsx)("div", {
@@ -185,7 +185,7 @@ function N(e) {
                 className: I.memberDetailsText,
                 variant: "text-xs/normal",
                 color: "header-secondary",
-                children: y.intl.format(y.t["LC+S+v"], {
+                children: v.intl.format(v.t["LC+S+v"], {
                   membersOnline: t.presenceCount
                 })
               })]
@@ -197,7 +197,7 @@ function N(e) {
                 className: I.memberDetailsText,
                 variant: "text-xs/normal",
                 color: "header-secondary",
-                children: y.intl.format(y.t.zRl6XV, {
+                children: v.intl.format(v.t.zRl6XV, {
                   count: t.memberCount
                 })
               })]
@@ -214,7 +214,7 @@ function P(e) {
     guildId: t,
     onClick: n,
     onView: i
-  } = e, l = (0, o.e7)([E.Z], () => E.Z.getGuild(t));
+  } = e, l = (0, o.e7)([O.Z], () => O.Z.getGuild(t));
   return null == l ? null : (0, r.jsx)(N, {
     guild: l,
     onClick: n,

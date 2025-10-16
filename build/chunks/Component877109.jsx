@@ -58,7 +58,7 @@ let m = function(e) {
       o.Z.unsubscribe("QUEST_PREVIEW_UPDATE", e)
     }
   }, [n]);
-  let [E, O] = i.useState([]);
+  let [O, E] = i.useState([]);
   return (0, r.jsx)(p.Z, {
     controls: (0, r.jsx)(d.Z, {
       questId: n,
@@ -68,13 +68,13 @@ let m = function(e) {
         null != n && (0, s.MG)(n)
       }
     }),
-    selectedSections: E,
+    selectedSections: O,
     onSectionSelect: e => {
-      "all" === e ? O([]) : O([e])
+      "all" === e ? E([]) : E([e])
     },
     children: (null == _ ? true : _.id) != null ? (0, r.jsx)(f.UN, {
       questId: null == _ ? true : _.id,
-      selectedSections: E
+      selectedSections: O
     }) : null
   })
 }

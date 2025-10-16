@@ -1,4 +1,4 @@
-/** Chunk was on 16859 **/
+/** Chunk was on 72740 **/
 /** chunk id: 336079, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   C: () => b,
@@ -26,28 +26,28 @@ let p = (0, Chunk647438.createContext)({
     let {
       skuId: t,
       loadId: n,
-      analyticsLocations: i,
+      analyticsLocations: a,
       onCheckoutSuccess: f,
       children: b
-    } = e, y = (0, a.e7)([c.default], () => u.ZP.canUseCollectibles(c.default.getCurrentUser())), {
-      product: m
-    } = (0, o.T)(t), O = (0, l.useMemo)(() => {
-      if (null == m) return null;
+    } = e, y = (0, i.e7)([c.default], () => u.ZP.canUseCollectibles(c.default.getCurrentUser())), {
+      product: O
+    } = (0, o.T)(t), v = (0, l.useMemo)(() => {
+      if (null == O) return null;
       let e = (0, s.T4)({
-          product: m,
+          product: O,
           isPremiumUser: y
         }),
         t = null !== e ? e.amount : null;
       return {
         orbPrice: e,
         orbPriceAmount: t,
-        product: m
+        product: O
       }
-    }, [m, y]), {
+    }, [O, y]), {
       redeemVirtualCurrency: g,
-      isSubmitting: j,
+      isSubmitting: m,
       error: h
-    } = (0, d.f)(), v = (0, l.useCallback)(e => {
+    } = (0, d.f)(), j = (0, l.useCallback)(e => {
       g(t, n, n => {
         f({
           entitlements: n,
@@ -59,10 +59,10 @@ let p = (0, Chunk647438.createContext)({
       value: {
         skuId: t,
         loadId: n,
-        analyticsLocations: null != i ? i : [],
-        orbProductContext: O,
-        onRedeemVirtualCurrency: v,
-        isRedeeming: j,
+        analyticsLocations: null != a ? a : [],
+        orbProductContext: v,
+        onRedeemVirtualCurrency: j,
+        isRedeeming: m,
         orbRedemptionError: h
       },
       children: b

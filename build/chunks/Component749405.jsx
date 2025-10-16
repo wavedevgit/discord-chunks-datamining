@@ -27,10 +27,10 @@ function h(e) {
   }, []), _ = i.useCallback(() => {
     o.Z.closeChannelSidebar(s.uZ), g && (0, a.Kh)(h.id)
   }, [h.id, g]), {
-    acceptMessageRequest: E,
-    rejectMessageRequest: O,
-    isAcceptLoading: v,
-    isRejectLoading: y,
+    acceptMessageRequest: O,
+    rejectMessageRequest: E,
+    isAcceptLoading: y,
+    isRejectLoading: v,
     isUserProfileLoading: I,
     isOptimisticAccepted: C,
     isOptimisticRejected: S
@@ -39,7 +39,7 @@ function h(e) {
     onAcceptSuccess: _,
     onRejectSuccess: b,
     onError: m
-  }), T = v || y || I || C || S;
+  }), T = y || v || I || C || S;
   return (0, r.jsxs)("div", {
     className: f.container,
     children: [(0, r.jsx)(d.Z, {
@@ -56,10 +56,10 @@ function h(e) {
           size: "sm",
           text: p.intl.string(p.t.B2nygY),
           onClick: e => {
-            e.stopPropagation(), O(h.id)
+            e.stopPropagation(), E(h.id)
           },
           disabled: T,
-          loading: y || S
+          loading: v || S
         })
       }), (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
@@ -69,10 +69,10 @@ function h(e) {
           size: "sm",
           text: p.intl.string(p.t.Kz8Pws),
           onClick: e => {
-            e.stopPropagation(), E(h.id)
+            e.stopPropagation(), O(h.id)
           },
           disabled: T,
-          loading: v || I || C
+          loading: y || I || C
         })
       })]
     })]

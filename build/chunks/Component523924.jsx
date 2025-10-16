@@ -29,7 +29,7 @@ let p = e => {
     null == b && null != m && s.Z.fetchJoinRequestCooldown(m.id)
   }, [b, m]);
   let _ = (null != b ? b : 0) > 0,
-    E = _ && null != b ? Math.ceil((1e3 * b - Date.now()) / 864e5) : 0;
+    O = _ && null != b ? Math.ceil((1e3 * b - Date.now()) / 864e5) : 0;
   return (0, r.jsxs)("div", {
     className: d.confirmation,
     children: [(0, r.jsx)("div", {
@@ -62,10 +62,10 @@ let p = e => {
       children: [(0, r.jsx)(a.u, {
         asContainer: true,
         text: _ ? u.intl.formatToPlainString(u.t.A0f0Pz, {
-          days: E
+          days: O
         }) : null,
         "aria-label": _ ? u.intl.formatToPlainString(u.t.A0f0Pz, {
-          days: E
+          days: O
         }) : true,
         children: (0, r.jsx)(o.Button, {
           onClick: p,

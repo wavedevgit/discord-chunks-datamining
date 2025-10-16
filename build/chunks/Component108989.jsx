@@ -67,9 +67,9 @@ function u(e) {
     sprites: d = a,
     spriteColors: p = o,
     confettiConfig: f
-  } = e, [h, g] = i.useState(null), [m, b] = i.useState(null), _ = (0, l.uR)(m, h), E = i.useMemo(() => new l.qA({
+  } = e, [h, g] = i.useState(null), [m, b] = i.useState(null), _ = (0, l.uR)(m, h), O = i.useMemo(() => new l.qA({
     wind: u
-  }), [u]), O = i.useCallback(() => {
+  }), [u]), E = i.useCallback(() => {
     var e, t;
     let n = null == m ? true : m.getCanvas();
     if (null == n) return;
@@ -115,13 +115,13 @@ function u(e) {
     }), e))
   }, [_, m, f]);
   return i.useEffect(() => {
-    let e = n ? setInterval(O, s) : null;
+    let e = n ? setInterval(E, s) : null;
     return () => clearInterval(e)
-  }, [n, O]), (0, r.jsxs)(r.Fragment, {
+  }, [n, E]), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.O_, {
       ref: b,
       className: t,
-      environment: E
+      environment: O
     }), (0, r.jsx)(l.Ji, {
       ref: g,
       colors: p,

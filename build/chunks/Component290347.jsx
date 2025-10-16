@@ -150,7 +150,7 @@ function j(e) {
         });
         ea(await Promise.all(t))
       } catch (e) {
-        E.Z.captureException(e), ea(T)
+        O.Z.captureException(e), ea(T)
       }
     };
     true !== eo.current && e(), eo.current = true
@@ -163,10 +163,10 @@ function j(e) {
   }, [F, W, q, Q, J]), i.useEffect(() => () => {
     if ("video" === l.type || "embed" === l.type) {
       let [e, t] = es();
-      _.default.track(O.rMx.CHANGE_LOG_VIDEO_PLAYED, {
+      _.default.track(E.rMx.CHANGE_LOG_VIDEO_PLAYED, {
         change_log_id: D,
         seconds_played: Math.round(e / 1e3)
-      }), _.default.track(O.rMx.CHANGE_LOG_VIDEO_UNMUTE, {
+      }), _.default.track(E.rMx.CHANGE_LOG_VIDEO_UNMUTE, {
         change_log_id: D,
         seconds_unmuted: Math.round(t / 1e3)
       })
@@ -174,14 +174,14 @@ function j(e) {
   }, [D, l.type]), i.useEffect(() => {
     null != j && (0, m.kk)(j);
     let e = Date.now();
-    return _.default.track(O.rMx.CHANGE_LOG_OPENED, {
+    return _.default.track(E.rMx.CHANGE_LOG_OPENED, {
       change_log_id: D
     }), () => {
-      _.default.track(O.rMx.CHANGE_LOG_CLOSED, {
+      _.default.track(E.rMx.CHANGE_LOG_CLOSED, {
         change_log_id: D,
         seconds_open: Math.round((Date.now() - e) / 1e3)
       }), null != j && (0, g.Q3)(j, {
-        dismissAction: v.L.DISMISS
+        dismissAction: y.L.DISMISS
       })
     }
   }, [j, D]), (0, r.jsx)(c.Y0X, {
@@ -215,7 +215,7 @@ function j(e) {
           src: l.src,
           poster: l.poster,
           onPlay: e => {
-            _.default.track(O.rMx.CHANGE_LOG_VIDEO_INTERACTED, {
+            _.default.track(E.rMx.CHANGE_LOG_VIDEO_INTERACTED, {
               change_log_id: D
             }), z(Date.now()), X(true), $(e.currentTarget.muted)
           },
@@ -230,7 +230,7 @@ function j(e) {
           },
           disablePictureInPicture: true,
           children: null == el ? true : el.map(e => {
-            let t = (0, y.getLanguages)().find(t => t.code === e.locale);
+            let t = (0, v.getLanguages)().find(t => t.code === e.locale);
             return null == t ? null : (0, r.jsx)("track", {
               label: t.englishName,
               kind: "captions",
@@ -252,7 +252,7 @@ function j(e) {
           renderImageComponent: b.Yi,
           renderLinkComponent: b.iT,
           onPlay: () => {
-            _.default.track(O.rMx.CHANGE_LOG_VIDEO_INTERACTED, {
+            _.default.track(E.rMx.CHANGE_LOG_VIDEO_INTERACTED, {
               change_log_id: D
             })
           }

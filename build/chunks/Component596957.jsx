@@ -128,7 +128,7 @@ let L = function(e) {
     }(e, ["key"]);
     switch (x) {
       case S.pJs.PENDING:
-        return (0, r.jsx)(E.Z, j(P({}, n), {
+        return (0, r.jsx)(O.Z, j(P({}, n), {
           isFocused: L
         }), t);
       case S.pJs.SUGGESTIONS:
@@ -203,7 +203,7 @@ let L = function(e) {
       }(x, W[e].length, e);
       return x === S.pJs.PENDING && 0 === e ? (0, r.jsxs)("div", {
         className: N.sectionTitle,
-        children: [(0, r.jsx)(y.Z, {
+        children: [(0, r.jsx)(v.Z, {
           id: t,
           title: n
         }), q && (0, r.jsx)("div", {
@@ -217,7 +217,7 @@ let L = function(e) {
         })]
       }, n) : (0, r.jsx)("div", {
         className: N.sectionTitle,
-        children: (0, r.jsx)(y.Z, {
+        children: (0, r.jsx)(v.Z, {
           id: t,
           title: n
         })
@@ -235,14 +235,14 @@ let L = function(e) {
     value: n,
     children: (0, r.jsxs)(c.Z, {
       section: S.jXE.FRIENDS_LIST,
-      children: [D && (0, r.jsx)(v.R, {}), (0, r.jsx)("div", {
+      children: [D && (0, r.jsx)(y.R, {}), (0, r.jsx)("div", {
         className: N.searchBar,
         children: (0, r.jsx)(a.E1j, {
           query: k[x],
           onChange: G,
           onClear: B
         })
-      }), (0, r.jsx)(O.Z, {
+      }), (0, r.jsx)(E.Z, {
         rows: W,
         renderRow: U,
         renderSection: Q,

@@ -1,5 +1,6 @@
-/** Chunk was on 49279 **/
+/** Chunk was on 5873 **/
 /** chunk id: 24391, original params: e,t,n (module,exports,require) **/
+"use strict";
 module.exports = {
   inventory: "inventory__6980e",
   inventoryControls: "inventoryControls__6980e",

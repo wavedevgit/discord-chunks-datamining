@@ -1,7 +1,7 @@
 /** Chunk was on 30378 **/
 /** chunk id: 353857, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  g: () => v
+  g: () => N
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,6 +13,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk287004 = require("./287004.js"),
   Chunk510918 = require("./510918.jsx"),
+  Chunk892803 = require("./892803.js"),
+  Chunk465682 = require("./465682.jsx"),
   Chunk585961 = require("./585961.jsx"),
   Chunk131085 = require("./131085.js"),
   Chunk659854 = require("./659854.js"),
@@ -20,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk978098 = require("./978098.js"),
   Chunk764009 = require("./764009.js");
 
-function j(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -39,7 +41,7 @@ function j(e) {
   return e
 }
 
-function _(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -56,50 +58,50 @@ function O(e) {
   let {
     badge: t,
     isSelected: n,
-    onClick: s
-  } = e, i = (0, d.jm)({
+    onClick: i
+  } = e, s = (0, d.jm)({
     isSelected: n,
     label: (0, u.Z)(t.kind)
   });
-  return (0, r.jsx)(k, {
+  return (0, r.jsx)(S, {
     badge: t,
     selected: n,
-    onClick: s,
-    radioProps: i
+    onClick: i,
+    radioProps: s
   })
 }
 
-function k(e) {
+function S(e) {
   let {
     badge: t,
     locked: n = false,
-    preview: s = false,
-    selected: i = false,
+    preview: i = false,
+    selected: s = false,
     onClick: d,
     radioProps: u
-  } = e, g = l()(h.pickerItem, {
-    [h.pickerItemSelected]: i,
-    [b.lockedPickerItem]: n,
-    [b.previewBadge]: s
-  }), O = (0, r.jsxs)(r.Fragment, {
+  } = e, g = l()(k.pickerItem, {
+    [k.pickerItemSelected]: s,
+    [j.lockedPickerItem]: n,
+    [j.previewBadge]: i
+  }), f = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(x.v, {
       badge: t.kind,
-      width: f.Gg.SIZE_32,
-      height: f.Gg.SIZE_32,
-      className: b.guildBadge
-    }), n && !s && (0, r.jsx)("div", {
-      className: b.lockIconOverlay,
+      width: b.Gg.SIZE_32,
+      height: b.Gg.SIZE_32,
+      className: j.guildBadge
+    }), n && !i && (0, r.jsx)("div", {
+      className: j.lockIconOverlay,
       children: (0, r.jsx)(a.mBM, {
         size: "md"
       })
     })]
   });
-  if (s) return (0, r.jsx)("div", {
+  if (i) return (0, r.jsx)("div", {
     className: g,
-    children: O
+    children: f
   });
   if (n && null != t.packName && "" !== t.packName) {
-    let e = p.intl.formatToPlainString(m.default.ECl8SU, {
+    let e = h.intl.formatToPlainString(p.default.ECl8SU, {
       packName: t.packName
     });
     return (0, r.jsx)(c.u, {
@@ -111,89 +113,98 @@ function k(e) {
         onClick: () => {
           null == d || d()
         },
-        children: O
+        children: f
       })
     })
   }
-  return (0, r.jsx)(o.P3F, _(j({}, u), {
+  return (0, r.jsx)(o.P3F, v(_({}, u), {
     className: g,
     onClick: d,
-    children: O
+    children: f
   }))
 }
 
-function v(e) {
+function N(e) {
   let {
     badgeCollection: t,
     handleBoostUpsellClick: n,
-    selectedBadge: i,
+    selectedBadge: s,
     onBadgeClicked: c,
     headingId: u
-  } = e, [x, f] = s.useState(false), v = s.useId(), S = (0, d.Jb)({
+  } = e, [x, b] = i.useState(false), N = i.useId(), {
+    enabled: C
+  } = g.Z.useConfig({
+    location: "BadgeGrid"
+  }), y = (0, d.Jb)({
     orientation: "horizontal",
     isDisabled: false,
     labelledBy: u
-  }), N = !x && t.lockedBadges.length > 0;
+  }), P = !x && t.lockedBadges.length > 0;
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(o.nn4, {
-      id: v,
-      children: p.intl.string(p.t["5AQGub"])
-    }), (0, r.jsx)("div", _(j({}, S), {
-      "aria-describedby": v,
-      className: h.pickerGrid,
+      id: N,
+      children: h.intl.string(h.t["5AQGub"])
+    }), (0, r.jsx)("div", v(_({}, y), {
+      "aria-describedby": N,
+      className: k.pickerGrid,
       children: t.unlockedBadges.map(e => (0, r.jsx)(O, {
         badge: e,
-        isSelected: e.kind === i,
+        isSelected: e.kind === s,
         onClick: () => c(e.kind)
       }, e.kind))
     })), x && (0, r.jsx)("ul", {
-      className: l()(h.pickerGrid, b.lockedBadgesSection),
+      className: l()(k.pickerGrid, j.lockedBadgesSection),
       children: t.lockedBadges.map(e => (0, r.jsx)("li", {
-        children: (0, r.jsx)(k, {
+        children: (0, r.jsx)(S, {
           locked: true,
           badge: e,
           onClick: () => null == n ? true : n()
         })
       }, e.kind))
-    }), N && (0, r.jsxs)("div", {
-      className: b.lockedPreviewContainer,
+    }), P && (0, r.jsxs)("div", {
+      className: j.lockedPreviewContainer,
       children: [(0, r.jsx)("div", {
-        className: h.pickerGrid,
-        children: t.lockedBadges.slice(0, 5).map(e => (0, r.jsx)(k, {
+        className: k.pickerGrid,
+        children: t.lockedBadges.slice(0, 5).map(e => (0, r.jsx)(S, {
           locked: true,
           preview: true,
           badge: e
         }, e.kind))
       }), (0, r.jsxs)(o.P3F, {
-        className: l()(b.showAllBadges, b.showAllBadgesOverlay),
-        onClick: () => f(true),
+        className: l()(j.showAllBadges, j.showAllBadgesOverlay),
+        onClick: () => b(true),
         children: [(0, r.jsx)(o.Text, {
           variant: "text-sm/semibold",
           color: "text-secondary",
-          children: p.intl.string(m.default["2tkPDw"])
+          children: h.intl.string(p.default["2tkPDw"])
         }), (0, r.jsx)(a.CJ0, {
           size: "sm"
         })]
       })]
     }), x && (0, r.jsxs)(r.Fragment, {
       children: [null != n && (0, r.jsxs)("div", {
-        className: b.badgesUpsellContainer,
+        className: j.badgesUpsellContainer,
         children: [(0, r.jsx)(o.Text, {
           variant: "text-sm/normal",
           color: "text-default",
-          className: b.badgesUpsellText,
-          children: p.intl.string(m.default.G3qiHh)
-        }), (0, r.jsx)(g.P, {
-          className: b.badgesUpsellButton,
+          className: j.badgesUpsellText,
+          children: h.intl.string(p.default.G3qiHh)
+        }), C ? (0, r.jsx)("div", {
+          className: j.badgesUpsellButton,
+          children: (0, r.jsx)(f.v, {
+            onClick: n
+          })
+        }) : (0, r.jsx)(m.P, {
+          className: j.badgesUpsellButton,
           onClick: n
         })]
       }), (0, r.jsxs)(o.P3F, {
-        className: b.hideAllBadges,
-        onClick: () => f(false),
+        className: j.hideAllBadges,
+        onClick: () => b(false),
         children: [(0, r.jsx)(o.Text, {
           variant: "text-sm/semibold",
           color: "text-secondary",
-          children: p.intl.string(m.default.idxnf3)
+          children: h.intl.string(p.default.idxnf3)
         }), (0, r.jsx)(a.u04, {
           size: "sm"
         })]

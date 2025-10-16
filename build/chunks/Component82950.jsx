@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 82950, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => O
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -46,10 +46,10 @@ let b = a().debounce(Chunk367907.ZP.trackWithMetadata, 500),
       imageMarginX: p,
       imageMarginTop: m,
       trackingSource: _,
-      undismissable: E,
-      onDismissed: O,
-      onClick: v,
-      cta: y,
+      undismissable: O,
+      onDismissed: E,
+      onClick: y,
+      cta: v,
       ctaColor: I
     } = e;
     i.useEffect(() => {
@@ -59,7 +59,7 @@ let b = a().debounce(Chunk367907.ZP.trackWithMetadata, 500),
       })
     }, [t.id, d]);
     let C = null;
-    "function" == typeof y ? C = y() : null != y && (C = (0, r.jsx)(o.zx, {
+    "function" == typeof v ? C = v() : null != v && (C = (0, r.jsx)(o.zx, {
       className: g.btn,
       size: o.zx.Sizes.SMALL,
       onClick: () => {
@@ -67,20 +67,20 @@ let b = a().debounce(Chunk367907.ZP.trackWithMetadata, 500),
           source: _,
           guild_id: t.id,
           notice_type: d
-        }), null == v || v()
+        }), null == y || y()
       },
       fullWidth: true,
       color: I,
-      children: y
+      children: v
     }));
     let S = null != p ? "".concat(p, "px") : "16px";
     return (0, r.jsxs)("div", {
       className: g.channelNotice,
-      children: [true === E ? null : (0, r.jsx)(s.P3F, {
+      children: [true === O ? null : (0, r.jsx)(s.P3F, {
         onClick: () => {
           c.ZP.trackWithMetadata(f.rMx.CHANNEL_NOTICE_CLOSED, {
             notice_type: d
-          }), null == O || O()
+          }), null == E || E()
         },
         className: g.close,
         "aria-label": h.intl.string(h.t.WAI6xs),
@@ -114,7 +114,7 @@ let b = a().debounce(Chunk367907.ZP.trackWithMetadata, 500),
       })]
     })
   },
-  E = function(e) {
+  O = function(e) {
     let {
       showRedesignedChannelNotice: t
     } = (0, d.o)(true);

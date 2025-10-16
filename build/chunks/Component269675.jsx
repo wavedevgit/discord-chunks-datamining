@@ -32,7 +32,7 @@ var Chunk951288 = require("./951288.js"),
 function P(e) {
   let {
     guildId: t
-  } = e, n = (0, a.e7)([m.Z], () => m.Z.getGuild(t), [t]), P = (0, a.e7)([h.Z], () => h.Z.isConnected()), j = (0, p.Z)(t), A = (0, E.Z)(t), x = (0, a.e7)([b.Z], () => b.Z.isSubscriptionFetching), Z = (0, _.f)(), {
+  } = e, n = (0, a.e7)([m.Z], () => m.Z.getGuild(t), [t]), P = (0, a.e7)([h.Z], () => h.Z.isConnected()), j = (0, p.Z)(t), A = (0, O.Z)(t), x = (0, a.e7)([b.Z], () => b.Z.isSubscriptionFetching), Z = (0, _.f)(), {
     shouldHideGuildPurchaseEntryPoints: w,
     restrictionsLoading: L
   } = (0, f.uP)(t), R = null == n || !Z || x || L;
@@ -46,8 +46,8 @@ function P(e) {
     }, []), i.useEffect(() => {
       D && !l.tq && (0, d.M)(t, S.oC.ROLE_SUBSCRIPTIONS)
     }, [t, D]), l.tq && D) {
-    let e = null == n ? y.J.NOT_GUILD_MEMBER : y.J.GUILD_NOT_ELIGIBLE;
-    return (0, r.jsx)(y.z, {
+    let e = null == n ? v.J.NOT_GUILD_MEMBER : v.J.GUILD_NOT_ELIGIBLE;
+    return (0, r.jsx)(v.z, {
       errorType: e
     })
   }
@@ -57,7 +57,7 @@ function P(e) {
       toolbar: (0, r.jsx)(i.Fragment, {}),
       className: N.headerBar,
       children: [(0, r.jsx)(g.Z.Icon, {
-        icon: (0, o.GSL)(O.Z),
+        icon: (0, o.GSL)(E.Z),
         "aria-hidden": true
       }), (0, r.jsx)(g.Z.Title, {
         children: T.intl.string(T.t["KzCF//"])
@@ -70,7 +70,7 @@ function P(e) {
         className: N.scroller,
         children: (0, r.jsx)("div", {
           className: N.scrollerContent,
-          children: R ? (0, r.jsx)(o.$jN, {}) : (0, r.jsx)(v.Z, {
+          children: R ? (0, r.jsx)(o.$jN, {}) : (0, r.jsx)(y.Z, {
             guild: n
           })
         })

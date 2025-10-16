@@ -37,33 +37,33 @@ function S(e) {
     autoTrackExposure: true
   }), l = b.Z.useField("selectedTab"), I = i.useMemo(() => (function(e, t) {
     switch (e) {
-      case O.GlobalDiscoveryTab.SERVERS:
+      case E.GlobalDiscoveryTab.SERVERS:
         return (0, r.jsx)(s.QTo, {
           color: "currentColor"
         });
-      case O.GlobalDiscoveryTab.APPS:
+      case E.GlobalDiscoveryTab.APPS:
         return t ? (0, r.jsx)(s.iWm, {
           color: "currentColor"
         }) : (0, r.jsx)(s.jje, {
           color: "currentColor"
         });
-      case O.GlobalDiscoveryTab.QUESTS:
+      case E.GlobalDiscoveryTab.QUESTS:
         return (0, r.jsx)(s.qDn, {
           color: "currentColor"
         })
     }
   })(t, n), [t, n]), S = i.useMemo(() => (0, _.s)(t), [t]), T = l === t, N = i.useCallback(() => {
     switch (t) {
-      case O.GlobalDiscoveryTab.QUESTS:
-        return T && g.Z.resetState(), m.default.track(v.rMx.DISCOVERY_QUEST_TAB_CLICKED, {
+      case E.GlobalDiscoveryTab.QUESTS:
+        return T && g.Z.resetState(), m.default.track(y.rMx.DISCOVERY_QUEST_TAB_CLICKED, {
           client_ad_session_id: (0, u.Gy)().uuid
-        }), (0, E.transitionToGlobalDiscovery)({
-          tab: O.GlobalDiscoveryTab.QUESTS,
-          location: y.dr.DISCOVERY_SIDEBAR,
+        }), (0, O.transitionToGlobalDiscovery)({
+          tab: E.GlobalDiscoveryTab.QUESTS,
+          location: v.dr.DISCOVERY_SIDEBAR,
           questContent: o.j.DISCOVERY_SIDEBAR
         });
-      case O.GlobalDiscoveryTab.APPS:
-        if (!T) return (0, E.transitionToGlobalDiscovery)({
+      case E.GlobalDiscoveryTab.APPS:
+        if (!T) return (0, O.transitionToGlobalDiscovery)({
           tab: t,
           newSessionState: {
             entrypoint: {
@@ -72,18 +72,18 @@ function S(e) {
             restorePreviousView: true
           }
         });
-        d.Z.resetState(), (0, E.transitionToGlobalDiscovery)({
+        d.Z.resetState(), (0, O.transitionToGlobalDiscovery)({
           tab: t
         });
         return;
-      case O.GlobalDiscoveryTab.SERVERS:
-        if (!T) return (0, E.transitionToGlobalDiscovery)({
+      case E.GlobalDiscoveryTab.SERVERS:
+        if (!T) return (0, O.transitionToGlobalDiscovery)({
           tab: t
         });
         f.Z.resetState(), h.Z.resetState();
         return;
       default:
-        return (0, E.transitionToGlobalDiscovery)({
+        return (0, O.transitionToGlobalDiscovery)({
           tab: t
         })
     }

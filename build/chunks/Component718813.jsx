@@ -155,12 +155,12 @@ class M extends(r = Chunk647438.PureComponent) {
       opacity: t,
       scale: n
     } = this.state;
-    E.S.dispatch(O.CkL.LAYER_POP_START), s.Z.parallel([s.Z.spring(t, S({
+    O.S.dispatch(E.CkL.LAYER_POP_START), s.Z.parallel([s.Z.spring(t, S({
       toValue: 0
     }, D)), s.Z.spring(n, S({
       toValue: 1.1
     }, D))]).start(() => {
-      e(), E.S.dispatch(O.CkL.LAYER_POP_COMPLETE)
+      e(), O.S.dispatch(E.CkL.LAYER_POP_COMPLETE)
     })
   }
   animateUnder() {
@@ -209,16 +209,16 @@ class M extends(r = Chunk647438.PureComponent) {
       "aria-modal": Chunk134616,
       "aria-label": Chunk134616 ? function(e) {
         switch (e) {
-          case O.S9g.USER_SETTINGS:
-            return v.intl.string(v.t.cduTBA);
-          case O.S9g.CHANNEL_SETTINGS:
-            return v.intl.string(v.t.XPDhcX);
-          case O.S9g.COLLECTIBLES_SHOP:
-            return v.intl.string(v.t.pWG4zc);
-          case O.S9g.MANA_PLAYGROUND:
+          case E.S9g.USER_SETTINGS:
+            return y.intl.string(y.t.cduTBA);
+          case E.S9g.CHANNEL_SETTINGS:
+            return y.intl.string(y.t.XPDhcX);
+          case E.S9g.COLLECTIBLES_SHOP:
+            return y.intl.string(y.t.pWG4zc);
+          case E.S9g.MANA_PLAYGROUND:
             return "Component Playground";
-          case O.S9g.CHECKPOINT:
-            return v.intl.string(y.default["CdU/PD"]);
+          case E.S9g.CHECKPOINT:
+            return y.intl.string(v.default["CdU/PD"]);
           default:
             return ""
         }

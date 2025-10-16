@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk507694 = require("./507694.js");
 
-function y(e) {
+function v(e) {
   var t;
   let {
     user: n,
@@ -45,21 +45,21 @@ function y(e) {
   }, [p]);
   return (0, r.jsxs)(r.Fragment, {
     children: [u && (0, r.jsx)("div", {
-      className: v.staffIndicator,
+      className: y.staffIndicator,
       children: (0, r.jsx)(o.IGR, {
         color: a.Z.unsafe_rawColors.BRAND_500.css,
-        text: O.intl.string(O.t.oMx98P)
+        text: E.intl.string(E.t.oMx98P)
       })
     }), (0, r.jsx)(m.Z, {
       icon: o.dz2,
       actionType: m.Z.ActionTypes.ACCEPT,
-      tooltip: O.intl.string(O.t.ZcibdX),
+      tooltip: E.intl.string(E.t.ZcibdX),
       onClick: h,
       shouldHighlight: c
     }), (0, r.jsx)(m.Z, {
       icon: o.Dio,
       actionType: m.Z.ActionTypes.DENY,
-      tooltip: O.intl.string(O.t.xuio0N),
+      tooltip: E.intl.string(E.t.xuio0N),
       onClick: b,
       shouldHighlight: c
     })]
@@ -85,7 +85,7 @@ function I(e) {
   return (0, r.jsx)(m.Z, {
     icon: o.Dio,
     actionType: m.Z.ActionTypes.DENY,
-    tooltip: O.intl.string(O.t.eaq81d),
+    tooltip: E.intl.string(E.t.eaq81d),
     onClick: c,
     shouldHighlight: a
   })
@@ -97,9 +97,9 @@ function C(e) {
     applicationId: n,
     userTag: a,
     isProvisional: s
-  } = e, p = i.useMemo(() => t ? O.intl.string(O.t["Uv/eT0"]) : a, [t, a]), f = (0, l.e7)([c.Z], () => null != n ? c.Z.getApplication(n) : null);
+  } = e, p = i.useMemo(() => t ? E.intl.string(E.t["Uv/eT0"]) : a, [t, a]), f = (0, l.e7)([c.Z], () => null != n ? c.Z.getApplication(n) : null);
   return (0, r.jsxs)("div", {
-    className: v.applicationSublabel,
+    className: y.applicationSublabel,
     children: [!s && (0, r.jsx)(o.Text, {
       variant: "text-sm/medium",
       color: "text-secondary",
@@ -152,7 +152,7 @@ function T(e) {
     isGameRelationship: c
   } = e, {
     analyticsLocations: u
-  } = (0, s.ZP)(), d = l === E.Skl.OFFLINE ? E.Skl.UNKNOWN : l, f = i.useCallback(() => (0, p.openUserProfileModal)({
+  } = (0, s.ZP)(), d = l === O.Skl.OFFLINE ? O.Skl.UNKNOWN : l, f = i.useCallback(() => (0, p.openUserProfileModal)({
     userId: t.id,
     sourceAnalyticsLocations: u
   }), [u, t.id]);
@@ -161,7 +161,7 @@ function T(e) {
     user: t,
     onClick: f,
     children: e => (0, r.jsxs)("div", {
-      className: v.listItemContents,
+      className: y.listItemContents,
       children: [(0, r.jsx)(S, {
         user: t,
         hovered: e,
@@ -169,8 +169,8 @@ function T(e) {
         isGameRelationship: c,
         applicationId: o
       }), (0, r.jsx)("div", {
-        className: v.actions,
-        children: n === E.OGo.PENDING_INCOMING ? (0, r.jsx)(y, {
+        className: y.actions,
+        children: n === O.OGo.PENDING_INCOMING ? (0, r.jsx)(v, {
           user: t,
           applicationId: o,
           isGameRelationship: c,

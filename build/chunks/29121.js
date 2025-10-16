@@ -8,7 +8,7 @@ require.d(exports, {
   zQ: () => c
 });
 var Chunk979554 = require("./979554.js"),
-  Chunk786040 = require("./786040.jsx"),
+  Chunk786040 = require("./786040.js"),
   Chunk388032 = require("./388032.jsx");
 let o = e => {
     if (null == e) return "";

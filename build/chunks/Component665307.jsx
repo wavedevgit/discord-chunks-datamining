@@ -95,11 +95,11 @@ let R = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
     sort: true,
     cellClassName: Chunk117554.nameCell,
     bodyCellClassName: Chunk117554.nameBodyCell,
-    render: e => (0, i.jsxs)(E.Z, {
-      align: E.Z.Align.CENTER,
-      children: [(0, i.jsx)(v.Z, {
+    render: e => (0, i.jsxs)(O.Z, {
+      align: O.Z.Align.CENTER,
+      children: [(0, i.jsx)(y.Z, {
         game: e.application,
-        size: v.A.SMALL,
+        size: y.A.SMALL,
         className: x.gameIcon
       }), (0, i.jsxs)("div", {
         className: x.nameCellInfo,
@@ -124,8 +124,8 @@ let R = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
     bodyCellClassName: Chunk117554.textCell,
     render(e) {
       let t = e.libraryApplication.getDistributor();
-      return (0, i.jsx)(E.Z, {
-        align: E.Z.Align.CENTER,
+      return (0, i.jsx)(O.Z, {
+        align: O.Z.Align.CENTER,
         children: null != t ? j.EOG[t] : A.intl.string(A.t["F+l3Ji"])
       })
     }
@@ -137,11 +137,11 @@ let R = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
     bodyCellClassName: Chunk117554.textCell,
     render(e) {
       let t;
-      return t = e.isRunning ? A.intl.string(A.t.Md326u) : e.isNew ? A.intl.string(A.t["+F0Tho"]) : 0 !== e.lastPlayed ? (0, i.jsx)(y.ZP, {
+      return t = e.isRunning ? A.intl.string(A.t.Md326u) : e.isNew ? A.intl.string(A.t["+F0Tho"]) : 0 !== e.lastPlayed ? (0, i.jsx)(v.ZP, {
         end: e.lastPlayed,
-        location: y.ZP.Locations.GAME_LIBRARY_LAST_PLAYED
-      }) : A.intl.string(A.t.EoWLrq), (0, i.jsx)(E.Z, {
-        align: E.Z.Align.CENTER,
+        location: v.ZP.Locations.GAME_LIBRARY_LAST_PLAYED
+      }) : A.intl.string(A.t.EoWLrq), (0, i.jsx)(O.Z, {
+        align: O.Z.Align.CENTER,
         className: o()({
           [x.lastPlayedCellNew]: e.isNew
         }),

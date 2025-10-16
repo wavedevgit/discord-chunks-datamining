@@ -46,56 +46,56 @@ let I = Chunk647438.memo(function(e) {
     content: null
   }, [I, C]), A = null;
   if (l) A = (0, r.jsx)(s.Text, {
-    className: v.messageReplacement,
+    className: y.messageReplacement,
     variant: "text-sm/normal",
     color: "text-muted",
-    children: O.intl.string(O.t.BZHld3)
+    children: E.intl.string(E.t.BZHld3)
   });
   else if (n)
     if (null != I && S) A = (0, r.jsx)(s.Text, {
-      className: v.messageReplacement,
+      className: y.messageReplacement,
       variant: "text-sm/normal",
       color: "text-muted",
-      children: O.intl.string(O.t["WPe+xM"])
+      children: E.intl.string(E.t["WPe+xM"])
     });
     else if (null != I && T) A = (0, r.jsx)(s.Text, {
-    className: v.messageReplacement,
+    className: y.messageReplacement,
     variant: "text-sm/normal",
     color: "text-muted",
-    children: O.intl.string(O.t.uxrh1N)
+    children: E.intl.string(E.t.uxrh1N)
   });
   else if (null != I) {
     let {
       contentPlaceholder: e,
       renderedContent: t
-    } = (0, f.f)(I, j, S, T, a()(v.messageContent, y.inlineFormat), {
-      leadingIconClass: v.messageContentIcon,
-      trailingIconClass: v.messageContentIcon,
-      iconSize: E.WW
+    } = (0, f.f)(I, j, S, T, a()(y.messageContent, v.inlineFormat), {
+      leadingIconClass: y.messageContentIcon,
+      trailingIconClass: y.messageContentIcon,
+      iconSize: O.WW
     });
     A = null != t ? (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
       color: "text-muted",
-      className: v.messageContent,
+      className: y.messageContent,
       children: t
     }) : (0, r.jsx)(s.Text, {
       tag: "span",
       variant: "text-sm/normal",
       color: "text-muted",
-      className: v.messageReplacement,
+      className: y.messageReplacement,
       children: e
     })
   } else A = (0, r.jsx)(s.Text, {
-    className: v.messageReplacement,
+    className: y.messageReplacement,
     variant: "text-sm/normal",
     color: "text-muted",
-    children: O.intl.string(O.t["0KfDxM"])
+    children: E.intl.string(E.t["0KfDxM"])
   });
   else A = null;
   return (0, r.jsx)(c.aQ.Provider, {
     value: (0, d.Z)(P, N),
     children: (0, r.jsx)(s.Rny, {
-      className: v.messageFocusBlock,
+      className: y.messageFocusBlock,
       children: A
     })
   })

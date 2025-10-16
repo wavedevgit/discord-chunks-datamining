@@ -197,7 +197,7 @@ let M = {
         case w.jE.QUEST_HOME: {
           let {
             enabled: e
-          } = y.m8.getConfig({
+          } = v.m8.getConfig({
             location: R.dr.QUEST_DEEP_LINK_UTIL
           });
           null != n ? ((0, C.dL)({
@@ -211,7 +211,7 @@ let M = {
               location: R.dr.QUEST_PREVIEW_TOOL_2
             }) && null != n) {
             let e = new URLSearchParams;
-            e.set(v.tR.TAB, v.e5.PREVIEW_TOOL), null != n.questId && e.set(v.tR.QUEST_ID, n.questId), (0, C.dL)({
+            e.set(y.tR.TAB, y.e5.PREVIEW_TOOL), null != n.questId && e.set(y.tR.QUEST_ID, n.questId), (0, C.dL)({
               pathname: L.Z5c.QUEST_HOME_V2,
               search: "?".concat(e.toString())
             }), k(n.fingerprint, (0, w.O)(t))
@@ -226,11 +226,11 @@ let M = {
         case w.jE.OAUTH2:
           let r = new URL(L.Z5c.OAUTH2_AUTHORIZE, window.location.origin);
           r.search = n.search;
-          let l = (0, E.getOAuth2AuthorizeProps)(r.toString());
-          if (null != l) return (0, E.openOAuth2ModalWithCreateGuildModal)(l), true;
+          let l = (0, O.getOAuth2AuthorizeProps)(r.toString());
+          if (null != l) return (0, O.openOAuth2ModalWithCreateGuildModal)(l), true;
           returnfalse;
         case w.jE.ONE_TIME_LOGIN:
-          if (null != n) return (0, O.Y)({
+          if (null != n) return (0, E.Y)({
             token: n.token
           }), k(n.fingerprint, (0, w.O)(t)), true;
           returnfalse;

@@ -20,16 +20,16 @@ function c() {
         kind: e
       })),
       r = [];
-    return (null == module ? true : module.features) == null || Object.keys(Chunk131085.Ct).forEach(s => {
-      let i = a.Ct[s],
-        l = a.AC[s],
+    return (null == module ? true : module.features) == null || Object.keys(Chunk131085.Ct).forEach(i => {
+      let s = a.Ct[i],
+        l = a.AC[i],
         c = null == t ? true : t[l],
         d = null == c ? true : c.title,
-        o = i.map(e => ({
+        o = s.map(e => ({
           kind: e,
           packName: d
         }));
-      e.features.has(s) ? n.push(...o) : r.push(...o)
+      e.features.has(i) ? n.push(...o) : r.push(...o)
     }), {
       unlockedBadges: require,
       lockedBadges: Chunk647438

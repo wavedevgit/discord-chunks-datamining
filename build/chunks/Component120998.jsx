@@ -88,15 +88,15 @@ class d extends(r = Chunk647438.PureComponent) {
       let b = i.length >= o ? o : i.length;
       f.setTransform(1, 0, 0, false, 0, r.height), f.clearRect(0, 0, r.width, r.height), f.translate(0, .5 * f.lineWidth);
       let _ = Math.floor(r.width / (b - 3)),
-        E = .5 * _;
+        O = .5 * _;
       f.translate(_ - _ * p, 0), f.beginPath();
-      let O = -_;
+      let E = -_;
       i.forEach((e, r) => {
         t = {
-          x: O,
+          x: E,
           y: g * e / h
-        }, 0 === r ? f.moveTo(t.x, t.y) : f.bezierCurveTo(n.x + E, n.y, t.x - E, t.y, t.x, t.y), n = t, O += _
-      }), f.stroke(), f.lineTo(O - _, 0), f.lineTo(0, 0), f.fill(), u && p < 1 && (this.animationFrameRequestId = window.requestAnimationFrame(this.updateAnimation))
+        }, 0 === r ? f.moveTo(t.x, t.y) : f.bezierCurveTo(n.x + O, n.y, t.x - O, t.y, t.x, t.y), n = t, E += _
+      }), f.stroke(), f.lineTo(E - _, 0), f.lineTo(0, 0), f.fill(), u && p < 1 && (this.animationFrameRequestId = window.requestAnimationFrame(this.updateAnimation))
     })
   }
 }

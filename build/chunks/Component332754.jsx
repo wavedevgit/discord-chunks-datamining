@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 332754, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => E
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -21,7 +21,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk815660 = require("./815660.js"),
   Chunk308569 = require("./308569.js"),
   Chunk231338 = require("./231338.js");
-let O = {
+let E = {
   init() {
     Chunk570140.Z.subscribe("CONNECTION_OPEN", this.handleRequiredAction), Chunk570140.Z.subscribe("USER_REQUIRED_ACTION_UPDATE", this.handleRequiredAction), Chunk570140.Z.subscribe("CURRENT_USER_UPDATE", this.handleCurrentUserUpdate), Chunk314897.default.addChangeListener(this.handleAuthenticationStoreChanged)
   },
@@ -61,7 +61,7 @@ let O = {
       return e
     }({}, e)), {
       modalKey: _.f1,
-      onCloseRequest: E.Vq
+      onCloseRequest: O.Vq
     }) : t === m.c2C.REQUIRE_SAFETY_FLOWS ? (0, a.q4)(e => {
       let {
         closeLayer: t

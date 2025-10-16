@@ -45,12 +45,12 @@ function P(e) {
     width: 0,
     height: 0
   }), k = i.useCallback(() => {
-    E.Z.updateFrameLayoutMode({
+    O.Z.updateFrameLayoutMode({
       applicationId: t.applicationId,
-      layoutMode: y.U.PIP
+      layoutMode: v.U.PIP
     })
   }, [t.applicationId]), M = i.useCallback(() => {
-    E.Z.stopFrame({
+    O.Z.stopFrame({
       applicationId: t.applicationId
     })
   }, [t.applicationId]);
@@ -66,9 +66,9 @@ function P(e) {
     return e.observe(L.current), () => e.disconnect()
   }, []), i.useEffect(() => {
     let e = e => {
-      null == w.current || w.current.contains(e.target) || l || E.Z.updateFrameLayoutMode({
+      null == w.current || w.current.contains(e.target) || l || O.Z.updateFrameLayoutMode({
         applicationId: t.applicationId,
-        layoutMode: y.U.PIP
+        layoutMode: v.U.PIP
       })
     };
     return document.addEventListener("mousedown", e), () => {
@@ -87,7 +87,7 @@ function P(e) {
   let V = C.MI.NO_CHAT;
   if (null == n) return null;
   let F = (null != x ? x : I.$Y6) + Z,
-    z = (0, v.ro)(t);
+    z = (0, y.ro)(t);
   return (0, r.jsx)(u.f6W, {
     theme: I.BRd.DARK,
     children: e => (0, r.jsxs)("div", {
@@ -109,7 +109,7 @@ function P(e) {
             paddingBottom: B
           },
           ref: L,
-          children: (0, r.jsx)(O.Z, {
+          children: (0, r.jsx)(E.Z, {
             className: T.iframe,
             embedId: z
           })

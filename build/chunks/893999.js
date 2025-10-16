@@ -6,14 +6,14 @@ require.d(exports, {
 var Chunk647438 = require("./647438.js");
 let i = new Map,
   l = new Map,
-  a = new Map;
+  o = new Map;
 
-function o(e) {
+function a(e) {
   return i.has(e) || i.set(e, false), i.get(e)
 }
 
 function s(e) {
-  return l.has(e) || (l.set(e, new Set), a.set(e, function(e) {
+  return l.has(e) || (l.set(e, new Set), o.set(e, function(e) {
     let t = t => {
         c(t.shiftKey, e)
       },
@@ -33,19 +33,19 @@ function s(e) {
 }
 
 function c(e, t) {
-  e !== o(t) && (i.set(t, e), s(t).forEach(t => t(e)))
+  e !== a(t) && (i.set(t, e), s(t).forEach(t => t(e)))
 }
 
 function d() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : window,
-    [t, n] = Chunk647438.useState(o(module));
+    [t, n] = Chunk647438.useState(a(module));
   return Chunk647438.useEffect(() => {
     let t = e => {
       n(e)
     };
     return s(module).add(exports), () => {
       var n;
-      s(module).delete(exports), 0 === s(module).size && (null == (n = a.get(module)) || require(), a.delete(module), l.delete(module), i.delete(module))
+      s(module).delete(exports), 0 === s(module).size && (null == (n = o.get(module)) || require(), o.delete(module), l.delete(module), i.delete(module))
     }
   }, [module]), exports
 }

@@ -21,10 +21,10 @@ let b = function(e) {
   var t, n, b;
   let {
     questId: _,
-    setQuestId: E,
-    quest: O,
-    refreshQuest: v
-  } = e, [y, I] = i.useState(false), [C, S] = i.useState(false), T = i.useRef(null), N = (0, u.MP)(), P = (0, l.e7)([d.Z], () => null != _ ? d.Z.getFetchQuestPreviewError(_) : null, [_]), j = (0, l.e7)([d.Z], () => null != _ && d.Z.isFetchingQuestPreview(_), [_]), A = i.useMemo(() => {
+    setQuestId: O,
+    quest: E,
+    refreshQuest: y
+  } = e, [v, I] = i.useState(false), [C, S] = i.useState(false), T = i.useRef(null), N = (0, u.MP)(), P = (0, l.e7)([d.Z], () => null != _ ? d.Z.getFetchQuestPreviewError(_) : null, [_]), j = (0, l.e7)([d.Z], () => null != _ && d.Z.isFetchingQuestPreview(_), [_]), A = i.useMemo(() => {
     let e = N.map(e => {
       var t, n, r;
       return {
@@ -65,8 +65,8 @@ let b = function(e) {
       }
     }
   }, [_, I]), L = i.useCallback(e => {
-    (0, s.Ew)(e) || null == E || E(e)
-  }, [E]);
+    (0, s.Ew)(e) || null == O || O(e)
+  }, [O]);
   return (0, r.jsxs)("div", {
     className: m.controlBar,
     children: [(0, r.jsx)("div", {
@@ -91,8 +91,8 @@ let b = function(e) {
                   value: t.trim()
                 }] : n
               }
-            }, "".concat(_, "-").concat(null != (b = null == O || null == (n = O.config) || null == (t = n.messages) ? true : t.questName) ? b : "")), (0, r.jsx)(a.hU, {
-              onClick: v,
+            }, "".concat(_, "-").concat(null != (b = null == E || null == (n = E.config) || null == (t = n.messages) ? true : t.questName) ? b : "")), (0, r.jsx)(a.hU, {
+              onClick: y,
               "aria-label": g.intl.string(g.t.wzzjk5),
               icon: a.DuK,
               loading: j
@@ -100,26 +100,26 @@ let b = function(e) {
           })]
         })
       })
-    }), null != _ && null != O && (0, r.jsx)("div", {
+    }), null != _ && null != E && (0, r.jsx)("div", {
       className: m.controlsSection,
       children: (0, r.jsxs)(a.ButtonGroup, {
         className: m.controlButtons,
         children: [(0, r.jsx)(a.Button, {
           onClick: x,
-          disabled: y,
-          loading: y,
+          disabled: v,
+          loading: v,
           variant: "secondary",
           text: g.intl.string(g.t.jQEfRU)
         }), (0, r.jsx)(a.Button, {
           onClick: Z,
-          disabled: y,
-          loading: y,
+          disabled: v,
+          loading: v,
           variant: "secondary",
           text: g.intl.string(g.t.taqkwM)
         }), (0, r.jsx)(a.Button, {
           onClick: w,
-          disabled: y,
-          loading: y,
+          disabled: v,
+          loading: v,
           variant: "secondary",
           text: g.intl.string(g.t.cKSLr6)
         }), (0, r.jsx)(a.yRy, {

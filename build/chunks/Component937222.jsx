@@ -2,12 +2,14 @@
 /** chunk id: 937222, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  F: () => p
+  F: () => h
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk159691 = require("./159691.js"),
   Chunk906732 = require("./906732.jsx"),
+  Chunk892803 = require("./892803.js"),
+  Chunk465682 = require("./465682.jsx"),
   Chunk821458 = require("./821458.jsx"),
   Chunk585961 = require("./585961.jsx"),
   Chunk981631 = require("./981631.js"),
@@ -16,49 +18,58 @@ var Chunk951288 = require("./951288.js"),
   Chunk200299 = require("./200299.js"),
   Chunk388032 = require("./388032.jsx");
 
-function p(e) {
+function h(e) {
   let {
     guild: t,
     canManageGuild: n,
-    buttonClassName: p
+    buttonClassName: h
   } = e, {
-    analyticsLocations: f
-  } = (0, a.ZP)(), h = t.features.has(c.GuildFeatures.BANNER), b = i.useCallback(e => {
+    analyticsLocations: b
+  } = (0, a.ZP)(), x = t.features.has(u.GuildFeatures.BANNER), {
+    enabled: j
+  } = s.Z.useConfig({
+    location: "GuildSettingsBannerUploadButton"
+  }), v = i.useCallback(e => {
     let {
       imageUri: n,
       file: r
     } = e;
-    (0, s.f4)(t, f, n, r)
-  }, [f, t]), x = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), (0, s.E6)({
+    (0, c.f4)(t, b, n, r)
+  }, [b, t]), _ = i.useCallback(e => {
+    e.preventDefault(), e.stopPropagation(), (0, c.E6)({
       guild: t,
-      analyticsLocations: f,
-      analyticsSection: c.jXE.GUILD_BANNER,
-      analyticsObject: c.qAy.BUTTON_CTA,
-      perks: (0, d.XO)()
+      analyticsLocations: b,
+      analyticsSection: u.jXE.GUILD_BANNER,
+      analyticsObject: u.qAy.BUTTON_CTA,
+      perks: (0, g.XO)()
     })
-  }, [f, t]), j = i.useCallback(() => {
-    (0, s.mw)({
-      uploadType: u.pC.GUILD_BANNER,
-      maxFileSizeBytes: g.B,
-      onComplete: b,
+  }, [b, t]), C = i.useCallback(() => {
+    (0, c.mw)({
+      uploadType: m.pC.GUILD_BANNER,
+      maxFileSizeBytes: p.B,
+      onComplete: v,
       analyticsLocation: {
-        page: c.ZY5.GUILD_SETTINGS,
-        section: c.jXE.GUILD_BANNER
+        page: u.ZY5.GUILD_SETTINGS,
+        section: u.jXE.GUILD_BANNER
       },
-      analyticsLocations: f
+      analyticsLocations: b
     })
-  }, [f, b]);
-  return h ? (0, r.jsx)("div", {
-    className: p,
+  }, [b, v]);
+  return x ? (0, r.jsx)("div", {
+    className: h,
     children: (0, r.jsx)(l.zxk, {
-      disabled: !(h && n),
+      disabled: !(x && n),
       variant: "primary",
-      text: m.intl.string(m.t.yG2pUl),
-      onClick: j
+      text: f.intl.string(f.t.yG2pUl),
+      onClick: C
     })
-  }) : (0, r.jsx)(o.P, {
-    className: p,
-    onClick: x
+  }) : j ? (0, r.jsx)("div", {
+    className: h,
+    children: (0, r.jsx)(o.v, {
+      onClick: _
+    })
+  }) : (0, r.jsx)(d.P, {
+    className: h,
+    onClick: _
   })
 }

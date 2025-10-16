@@ -62,7 +62,7 @@ function S(e) {
   } = e, n = (0, a.e7)([g.Z], () => g.Z.getPendingCount() > 0), b = (0, o.dQu)(o.TVs.modules.chat.INPUT_ICON_SIZE), S = function() {
     let [e, t] = i.useState(null), {
       showActivityTicker: n
-    } = (0, E.Z)(), r = i.useRef({}), l = i.useRef(null);
+    } = (0, O.Z)(), r = i.useRef({}), l = i.useRef(null);
     return i.useEffect(() => {
       if (!n) {
         t(null), null != l.current && (window.clearTimeout(l.current), l.current = null);
@@ -74,36 +74,36 @@ function S(e) {
         i = (n, i, a) => {
           var o, s, c, u, d, p, h, b, _;
           if (!g.Z.isFriend(n)) returnfalse;
-          let E = m.default.getUser(n);
-          if (null == E) returnfalse;
-          let v = false,
-            y = null;
+          let O = m.default.getUser(n);
+          if (null == O) returnfalse;
+          let y = false,
+            v = null;
           if (null != i) {
             let t = i.type;
             if (null != t && function(e) {
                 let t = e.type;
-                return t === O.IIU.PLAYING && null != e.application_id || t === O.IIU.LISTENING || t === O.IIU.WATCHING
+                return t === E.IIU.PLAYING && null != e.application_id || t === E.IIU.LISTENING || t === E.IIU.WATCHING
               }(i)) {
-              let l = t === O.IIU.WATCHING || t === O.IIU.LISTENING ? "".concat(t, "-").concat(null != (u = i.name) ? u : "", "-").concat(null != (d = i.state) ? d : "", "-").concat(null != (p = i.details) ? p : "") : "".concat(t, "-").concat(null != (h = i.name) ? h : "");
-              (null == (c = r.current[n]) ? true : c.presence) !== l && (v = true, e(n, "presence", l), y = {
-                user: E,
+              let l = t === E.IIU.WATCHING || t === E.IIU.LISTENING ? "".concat(t, "-").concat(null != (u = i.name) ? u : "", "-").concat(null != (d = i.state) ? d : "", "-").concat(null != (p = i.details) ? p : "") : "".concat(t, "-").concat(null != (h = i.name) ? h : "");
+              (null == (c = r.current[n]) ? true : c.presence) !== l && (y = true, e(n, "presence", l), v = {
+                user: O,
                 activity: i
               })
-            } else(null == (s = r.current[n]) ? true : s.presence) != null && (v = true, e(n, "presence", null))
+            } else(null == (s = r.current[n]) ? true : s.presence) != null && (y = true, e(n, "presence", null))
           }
           if (null != a) {
             let t = f.Z.getChannel(a);
             if (null != t) {
               let i = "voice-".concat(t.id);
-              (null == (b = r.current[n]) ? true : b.voice) !== i && (v = true, e(n, "voice", i), y = {
-                user: E,
+              (null == (b = r.current[n]) ? true : b.voice) !== i && (y = true, e(n, "voice", i), v = {
+                user: O,
                 voiceChannel: t
               })
             }
-          } else(null == (o = r.current[n]) ? true : o.voice) != null && (v = true, e(n, "voice", null));
-          return v && null != y && (_ = y, null != l.current && (window.clearTimeout(l.current), l.current = null), t(_), l.current = window.setTimeout(() => {
+          } else(null == (o = r.current[n]) ? true : o.voice) != null && (y = true, e(n, "voice", null));
+          return y && null != v && (_ = v, null != l.current && (window.clearTimeout(l.current), l.current = null), t(_), l.current = window.setTimeout(() => {
             t(null), l.current = null
-          }, 1e4)), v
+          }, 1e4)), y
         },
         a = e => {
           for (let t of e.updates) {
@@ -144,7 +144,7 @@ function S(e) {
   });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: y.container,
+      className: v.container,
       children: N((e, t) => null == t ? null : (0, r.jsx)(p.Z, {
         targetElementRef: T,
         position: "bottom",
@@ -154,7 +154,7 @@ function S(e) {
           var i;
           return (0, r.jsxs)(l.animated.div, C(I({
             ref: T,
-            className: y.activityWrapper,
+            className: v.activityWrapper,
             style: e
           }, n), {
             children: [(0, r.jsx)(o.Text, {
@@ -163,11 +163,11 @@ function S(e) {
             }), null != t.voiceChannel ? (0, r.jsx)(u.Z, {
               channel: t.voiceChannel,
               textVariant: "text-xs/medium",
-              textClassName: y.statusText
+              textClassName: v.statusText
             }) : (0, r.jsx)(c.Z, {
               activity: t.activity,
               textVariant: "text-xs/medium",
-              textClassName: y.statusText
+              textClassName: v.statusText
             })]
           }))
         }
@@ -181,8 +181,8 @@ function S(e) {
         onClick: e,
         icon: o.iFz,
         iconSize: b,
-        "aria-label": v.intl.string(v.t.TdEu5e),
-        tooltip: i ? null : v.intl.string(v.t.TdEu5e),
+        "aria-label": y.intl.string(y.t.TdEu5e),
+        tooltip: i ? null : y.intl.string(y.t.TdEu5e),
         selected: i,
         showBadge: n
       }))

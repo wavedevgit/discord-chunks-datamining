@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 326145, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => y
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,14 +22,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk76531 = require("./76531.js"),
   Chunk718215 = require("./718215.js");
 
-function v(e) {
+function y(e) {
   let {
     guildId: t,
     channelId: n
   } = e, {
     ref: l,
-    width: v,
-    height: y
+    width: y,
+    height: v
   } = (0, c.ZP)(), I = i.useCallback(() => {
     null != t && null != n && ((0, m.I1)(t), (0, b.default)({
       guildId: t,
@@ -40,27 +40,27 @@ function v(e) {
     splash: C.splash
   }), [C]), T = (0, d.N)(S);
   return (0, r.jsxs)("div", {
-    className: a()(E.outerWrapping, O.main, {
-      [O.fullBorderWithGradient]: null == S
+    className: a()(O.outerWrapping, E.main, {
+      [E.fullBorderWithGradient]: null == S
     }),
     ref: l,
     children: [null != S ? (0, r.jsx)(u.Z, {
-      className: O.artwork,
+      className: E.artwork,
       src: S,
-      width: v,
-      height: y,
-      imageClassName: O.cover
+      width: y,
+      height: v,
+      imageClassName: E.cover
     }) : (0, r.jsx)(p.Z, {}), null != T && null != S && (0, r.jsx)("div", {
-      className: O.gradient,
+      className: E.gradient,
       style: {
         background: "linear-gradient(180deg, ".concat((0, g.aD)(T, .16), " 0%, ").concat((0, g.aD)(T, 1), " 100%)")
       }
     }), null != S && (0, r.jsx)("div", {
-      className: O.gradient
+      className: E.gradient
     }), (0, r.jsxs)("div", {
-      className: a()(E.explainerContainer, E.transparentBackground),
+      className: a()(O.explainerContainer, O.transparentBackground),
       children: [(0, r.jsxs)("div", {
-        className: E.header,
+        className: O.header,
         children: [(0, r.jsx)(s.Heading, {
           variant: "heading-xxl/normal",
           color: "always-white",

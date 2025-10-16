@@ -24,23 +24,23 @@ function b() {
   let n = Chunk131951.Z.isVideoEnabled(),
     b = Object.values(Chunk131951.Z.getVideoDevices())[0],
     _ = false === (null == (t = null == b ? true : b.disabled) || exports),
-    E = Chunk131951.Z.supportsInApp(Chunk65154.AN.VIDEO) && Chunk131951.Z.supportsInApp(Chunk65154.AN.DESKTOP_CAPTURE),
-    O = Chunk592125.Z.getChannel(Chunk19780.Z.getChannelId()),
-    v = null == (e = Chunk594174.default.getCurrentUser()) ? true : module.id;
-  if (null == O || null == v) return;
+    O = Chunk131951.Z.supportsInApp(Chunk65154.AN.VIDEO) && Chunk131951.Z.supportsInApp(Chunk65154.AN.DESKTOP_CAPTURE),
+    E = Chunk592125.Z.getChannel(Chunk19780.Z.getChannelId()),
+    y = null == (e = Chunk594174.default.getCurrentUser()) ? true : module.id;
+  if (null == E || null == y) return;
   let {
-    reachedLimit: y
-  } = (0, Chunk829750.t)(O);
-  if (!y) {
-    if (O.isGuildStageVoice()) {
-      let e = Chunk565799.Z.getMutableParticipants(O.id, Chunk501655.pV.SPEAKER),
+    reachedLimit: v
+  } = (0, Chunk829750.t)(E);
+  if (!v) {
+    if (E.isGuildStageVoice()) {
+      let e = Chunk565799.Z.getMutableParticipants(E.id, Chunk501655.pV.SPEAKER),
         t = null == module ? true : module.find(e => {
           let {
             user: t
           } = e;
-          return t.id === v
+          return t.id === y
         });
-      if (!(0, Chunk368442.tu)(O.guild_id) || !E || null == exports || exports.voiceState.suppress) return
+      if (!(0, Chunk368442.tu)(E.guild_id) || !O || null == exports || exports.voiceState.suppress) return
     }
     return require ? Chunk846027.Z.setVideoEnabled(false) : !require && _ ? (0, Chunk173507.Z)(() => {
       Chunk846027.Z.setVideoEnabled(true)

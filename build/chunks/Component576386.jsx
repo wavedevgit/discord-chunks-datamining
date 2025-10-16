@@ -1,7 +1,8 @@
-/** Chunk was on 49279 **/
+/** Chunk was on 5873 **/
 /** chunk id: 576386, original params: e,t,n (module,exports,require) **/
+"use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,90 +17,90 @@ var Chunk951288 = require("./951288.js"),
   Chunk539530 = require("./539530.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk24391 = require("./24391.js");
-let g = e => {
+let b = e => {
     var t;
     let {
       currentUser: n,
       nameplate: a,
       section: o,
       canUsePremiumCollectibles: p,
-      isSelected: g,
-      onClick: b
-    } = e, v = (0, r.useRef)(null), {
+      isSelected: b,
+      onClick: g
+    } = e, v = (0, i.useRef)(null), {
       isHoveringOrFocusing: x
     } = (0, u.Z)(v);
-    return (0, i.jsxs)(s.P3F, {
+    return (0, r.jsxs)(s.P3F, {
       innerRef: v,
-      "aria-label": null != (t = a.label) ? t : _.intl.string(_.t.x5CoXV),
+      "aria-label": null != (t = a.label) ? t : m.intl.string(m.t.x5CoXV),
       className: h.nameplateItem,
-      onClick: b,
-      children: [(0, i.jsx)(d.Z, {
+      onClick: g,
+      children: [(0, r.jsx)(d.Z, {
         nameplate: a,
         user: n,
         showPlaceholderUser: true,
         isHighlighted: x
-      }), (0, i.jsx)("div", {
+      }), (0, r.jsx)("div", {
         className: l()(h.nameplateItemOverlay, {
-          [h.selected]: g
+          [h.selected]: b
         })
-      }), (0, i.jsx)(c.Z, {
-        isPurchaseSection: o === m.$0.PURCHASE,
-        isPremiumSection: o === m.$0.PREMIUM_PURCHASE,
+      }), (0, r.jsx)(c.Z, {
+        isPurchaseSection: o === _.$0.PURCHASE,
+        isPremiumSection: o === _.$0.PREMIUM_PURCHASE,
         canUsePremiumCollectibles: p,
         skuId: a.skuId
       })]
     })
   },
-  b = e => {
+  g = e => {
     let {
       currentUser: t,
       selectedNameplate: n,
-      guildId: r,
+      guildId: i,
       onSelect: a,
       onOpenShop: c
-    } = e, d = p.ZP.canUseCollectibles(t), u = (0, m.ZP)();
-    return (0, i.jsx)(s.u2D, {
+    } = e, d = p.ZP.canUseCollectibles(t), u = (0, _.ZP)();
+    return (0, r.jsx)(s.u2D, {
       className: h.inventory,
-      children: u.map(e => (0, i.jsxs)(s.Kqy, {
+      children: u.map(e => (0, r.jsxs)(s.Kqy, {
         gap: 4,
-        children: [(0, i.jsx)(s.Text, {
+        children: [(0, r.jsx)(s.Text, {
           variant: "text-md/medium",
           children: e.header
-        }), e.section === m.$0.PURCHASE && (0, i.jsxs)("div", {
+        }), e.section === _.$0.PURCHASE && (0, r.jsxs)("div", {
           className: h.inventoryControls,
-          children: [(0, i.jsxs)(s.P3F, {
+          children: [(0, r.jsxs)(s.P3F, {
             className: l()(h.inventoryControlsButton, {
               [h.selected]: null == n
             }),
             onClick: () => a(null),
-            children: [(0, i.jsx)(s.t6m, {
+            children: [(0, r.jsx)(s.t6m, {
               size: "md",
               color: "currentColor"
-            }), (0, i.jsx)(s.Text, {
+            }), (0, r.jsx)(s.Text, {
               variant: "text-xs/normal",
-              children: null != r ? _.intl.string(_.t.CHf9iI) : _.intl.string(_.t.PoWNfX)
+              children: null != i ? m.intl.string(m.t.CHf9iI) : m.intl.string(m.t.PoWNfX)
             })]
-          }), (0, i.jsxs)(s.P3F, {
+          }), (0, r.jsxs)(s.P3F, {
             className: h.inventoryControlsButton,
             onClick: c,
-            children: [(0, i.jsx)(s.EOn, {
+            children: [(0, r.jsx)(s.EOn, {
               size: "md",
               color: "currentColor"
-            }), (0, i.jsx)(s.Text, {
+            }), (0, r.jsx)(s.Text, {
               variant: "text-xs/normal",
-              children: _.intl.string(_.t.pWG4zc)
+              children: m.intl.string(m.t.pWG4zc)
             })]
           })]
-        }), (0, i.jsx)("div", {
+        }), (0, r.jsx)("div", {
           className: h.list,
-          children: e.items.filter(o.k).map(r => (0, i.jsx)(g, {
+          children: e.items.filter(o.k).map(i => (0, r.jsx)(b, {
             currentUser: t,
-            nameplate: r,
+            nameplate: i,
             section: e.section,
             canUsePremiumCollectibles: d,
-            isSelected: (null == n ? true : n.skuId) === r.skuId,
-            onClick: () => a(r)
-          }, r.skuId))
+            isSelected: (null == n ? true : n.skuId) === i.skuId,
+            onClick: () => a(i)
+          }, i.skuId))
         })]
       }, e.section))
     })

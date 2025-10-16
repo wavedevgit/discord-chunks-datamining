@@ -81,7 +81,7 @@ function ed(e) {
       (null == d ? true : d.current) != null && (d.current.paused || o && c && !l ? d.current.paused && !l && c && o && d.current.play() : d.current.pause())
     }, [l, c, o]), n) {
     let e = (0, L.rO)();
-    return (0, r.jsx)(O.Z, {
+    return (0, r.jsx)(E.Z, {
       ref: e => {
         d.current = e, s.current = e
       },
@@ -213,22 +213,22 @@ let eh = function(e) {
     enabled: l
   } = B.m8.useConfig({
     location: $.dr.QUEST_HOME_DESKTOP
-  }), s = (0, o.TH)(), f = (null == (t = (0, o.LX)(s.pathname, ee.Z5c.QUEST_HOME)) ? true : t.isExact) === true, O = l && f, Z = (0, u.e7)([b.Z], () => b.Z.getState("quests")), {
+  }), s = (0, o.TH)(), f = (null == (t = (0, o.LX)(s.pathname, ee.Z5c.QUEST_HOME)) ? true : t.isExact) === true, E = l && f, Z = (0, u.e7)([b.Z], () => b.Z.getState("quests")), {
     selectedTab: w,
     onSelectTab: L,
     tabs: D
   } = (0, J.z)({
-    withClaimedQuestsTab: !O
+    withClaimedQuestsTab: !E
   });
   i.useLayoutEffect(() => {
-    O && w === k.e5.CLAIMED && G.Z.setState({
+    E && w === k.e5.CLAIMED && G.Z.setState({
       tab: k.e5.ALL
     })
-  }, [O, w]);
+  }, [E, w]);
   let {
     onScroll: U,
     scrollPosition: F
-  } = (0, y.M)(), W = z.Z.getState().getUtmCurrentContext(), el = (0, M._)({
+  } = (0, v.M)(), W = z.Z.getState().getUtmCurrentContext(), el = (0, M._)({
     location: $.dr.QUEST_HOME_DESKTOP
   }) ? q.Z : q.j, ea = (0, K.z)(e => e.registerAssetLoad), eo = i.useRef(W);
   i.useEffect(() => {
@@ -257,7 +257,7 @@ let eh = function(e) {
     if (es) return void window.open(ee.EYA.PAID_TERMS_ORBS);
     window.open(R.Z.getArticleURL(ee.BhN.QUESTS_LEARN_MORE))
   }, [es]);
-  (0, E.Tt)({
+  (0, O.Tt)({
     location: er.intl.string(er.t.JALI2N)
   });
   let eu = es ? er.intl.format(er.t.BCBIlp, {}) : er.intl.format(er.t.lmMBf3, {}),
@@ -277,7 +277,7 @@ let eh = function(e) {
   i.useEffect(() => {
     l && (0, p.Y)(ee.Z5c.QUEST_HOME_V2)
   }, [l]), i.useEffect(() => {
-    v.C.trigger()
+    y.C.trigger()
   }, []);
   let em = (0, H.T)({
     location: $.dr.QUEST_PREVIEW_TOOL_2
@@ -302,7 +302,7 @@ let eh = function(e) {
       className: a()(ei.container, {
         [ei.withoutTopBorder]: !n
       }),
-      children: O ? (0, r.jsx)(ef, {
+      children: E ? (0, r.jsx)(ef, {
         onSelectTab: L,
         onScroll: U,
         onLoadComplete: ea,

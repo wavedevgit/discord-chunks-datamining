@@ -41,7 +41,7 @@ function D(e) {
   let {
     guild: t,
     isStudyRoomNotice: n = false
-  } = e, l = (0, _.y)(t.id), d = (0, E.k5)(t.id), P = (0, o.e7)([T.Z], () => T.Z.getStageInstanceByChannel(null == l ? true : l.id), [l]), {
+  } = e, l = (0, _.y)(t.id), d = (0, O.k5)(t.id), P = (0, o.e7)([T.Z], () => T.Z.getStageInstanceByChannel(null == l ? true : l.id), [l]), {
     isStageNoticeHidden: D,
     isEventNoticeHidden: M
   } = (0, o.cj)([m.Z], () => ({
@@ -78,7 +78,7 @@ function D(e) {
       isEventNoticeHidden: d,
       isStageNoticeHidden: f,
       isStudyRoomNotice: m
-    } = e, _ = null != n && null != i && !f, E = null != t ? (0, v.DK)(t) : null;
+    } = e, _ = null != n && null != i && !f, O = null != t ? (0, y.DK)(t) : null;
     if (m && null != i) {
       let e = (0, p.KS)(i);
       return {
@@ -169,11 +169,11 @@ function D(e) {
         })
       }
     } else if (t.entity_type === w.WX.EXTERNAL) {
-      let e = (0, O.cS)(t);
+      let e = (0, E.cS)(t);
       if (null == e) return {
         noticeType: null
       };
-      let n = h.ZP.getUserCount(t.id, E);
+      let n = h.ZP.getUserCount(t.id, O);
       return {
         noticeType: 1,
         title: t.name,
@@ -209,7 +209,7 @@ function D(e) {
       }
     } else if (t.entity_type === w.WX.VOICE && null != i) {
       let e = (0, p.KS)(i),
-        n = h.ZP.getUserCount(t.id, E);
+        n = h.ZP.getUserCount(t.id, O);
       return {
         noticeType: 2,
         title: t.name,
@@ -307,7 +307,7 @@ function D(e) {
         size: "sm",
         text: X,
         onClick: () => {
-          if (Q) null != l && null != l.getGuildId() && ((0, I.Cq)(l), (0, y.XU)(l.getGuildId(), l.id));
+          if (Q) null != l && null != l.getGuildId() && ((0, I.Cq)(l), (0, v.XU)(l.getGuildId(), l.id));
           else {
             if (null == d) return;
             (0, f.bO)({
