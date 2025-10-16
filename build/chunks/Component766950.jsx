@@ -48,10 +48,10 @@ function w(e) {
     var e, t, n;
     return null != G ? null != (t = null != (e = h.Z.getPendingNickname()) ? e : _.ZP.getNick(G, null == H ? true : H.id)) ? t : F : null != (n = S.Z.getPendingGlobalName()) ? n : F
   }, [G, H, F]), U = (0, s.e7)([b.Z], () => b.Z.getGuild(G)), {
-    userDisplayNameStyles: K,
-    guildDisplayNameStyles: q,
+    userDisplayNameStyles: q,
+    guildDisplayNameStyles: K,
     pendingDisplayNameStyles: V
-  } = (0, x.mD)(H, G), X = true !== V ? V : null != q ? q : K, [W, $] = o.useState(null != (n = null == X ? true : X.fontId) ? n : a.C.DEFAULT), [J, Q] = o.useState(null != (w = null == X ? true : X.effectId) ? w : i.m.SOLID), ee = (0, D.R)(J), et = (0, D.R)(i.m.GRADIENT), en = null != (B = null == X ? true : X.colors) ? B : [], [el, eo] = o.useState(en.length > 0 && J !== i.m.GRADIENT ? en[0] : ee.defaultColors[0]), [er, ei] = o.useState(en.length > 0 && J === i.m.GRADIENT ? en : et.defaultColors);
+  } = (0, x.mD)(H, G), X = true !== V ? V : null != K ? K : q, [W, $] = o.useState(null != (n = null == X ? true : X.fontId) ? n : a.C.DEFAULT), [J, Q] = o.useState(null != (w = null == X ? true : X.effectId) ? w : i.m.SOLID), ee = (0, D.R)(J), et = (0, D.R)(i.m.GRADIENT), en = null != (B = null == X ? true : X.colors) ? B : [], [el, eo] = o.useState(en.length > 0 && J !== i.m.GRADIENT ? en[0] : ee.defaultColors[0]), [er, ei] = o.useState(en.length > 0 && J === i.m.GRADIENT ? en : et.defaultColors);
   (0, f.Z)({
     type: r.ImpressionTypes.POPOUT,
     name: r.ImpressionNames.DISPLAY_NAME_STYLES_MODAL

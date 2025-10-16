@@ -83,10 +83,10 @@ function A(e) {
     userId: t.id,
     image: z.pendingAvatar
   }), {
-    userNameplate: K,
-    guildNameplate: q,
+    userNameplate: q,
+    guildNameplate: K,
     pendingNameplate: V
-  } = (0, x.Zx)(t, null == n ? true : n.id), X = null != q ? (0, h.Pb)(q) : true, W = G ? N.BRd.DARK : N.BRd.LIGHT;
+  } = (0, x.Zx)(t, null == n ? true : n.id), X = null != K ? (0, h.Pb)(K) : true, W = G ? N.BRd.DARK : N.BRd.LIGHT;
   (M && G || !M && !G) && (W = Z);
   let $ = (0, o.useCallback)(() => {
       P.default.track(N.rMx.DISPLAY_NAME_STYLES_CLOSED), B()
@@ -164,7 +164,7 @@ function A(e) {
           user: t,
           guildId: null == n ? true : n.id,
           nameplate: V,
-          nameplateData: null == V ? null != X ? X : K : true,
+          nameplateData: null == V ? null != X ? X : q : true,
           pendingGlobalName: r,
           pendingDisplayNameStyles: Q.displayNameStyles,
           isHighlighted: true,

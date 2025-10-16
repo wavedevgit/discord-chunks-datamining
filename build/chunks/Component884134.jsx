@@ -284,10 +284,10 @@ function J(e) {
       onMouseLeave: () => u(false),
       icon: n ? {
         type: "icon",
-        asset: f.$2U
+        asset: f.kBK
       } : {
         type: "rive",
-        asset: f.xhK,
+        asset: f.q8_,
         riveProps: {
           dataBinding: {
             fill: f.TVs.colors.ICON_PRIMARY
@@ -302,7 +302,7 @@ function J(e) {
     title: B.intl.string(G.default.NJ9m8f),
     body: B.intl.string(G.default["6pabtb"]),
     position: "left",
-    asset: E ? (0, r.jsx)(f.$2U, {}) : true,
+    asset: E ? (0, r.jsx)(f.kBK, {}) : true,
     forceOpen: a,
     onTooltipShow: m,
     onTooltipHide: g,
