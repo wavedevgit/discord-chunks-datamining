@@ -15,24 +15,29 @@ let a = (0, Chunk722733.Z)({
     name: "2025-10-offer-reminders-ux-experiment",
     defaultConfig: {
       variant: "control",
-      showNagbar: true
+      showNagbar: true,
+      hasExperimentalTooltip: false
     },
     variations: {
       1: {
         variant: "nagbar-refresh",
-        showNagbar: true
+        showNagbar: true,
+        hasExperimentalTooltip: true
       },
       2: {
         variant: "offer-badge",
-        showNagbar: false
+        showNagbar: false,
+        hasExperimentalTooltip: true
       },
       3: {
         variant: "offer-countdown",
-        showNagbar: false
+        showNagbar: false,
+        hasExperimentalTooltip: true
       },
       4: {
         variant: "hero-countdown",
-        showNagbar: false
+        showNagbar: false,
+        hasExperimentalTooltip: true
       }
     }
   }),

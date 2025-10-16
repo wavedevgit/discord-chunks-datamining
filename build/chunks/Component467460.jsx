@@ -1,8 +1,8 @@
 /** Chunk was on 1272 **/
 /** chunk id: 467460, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  F: () => m,
-  a: () => b
+  F: () => g,
+  a: () => m
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk704215 = require("./704215.js"),
@@ -10,16 +10,15 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk774078 = require("./774078.js"),
   Chunk266454 = require("./266454.js"),
-  Chunk535278 = require("./535278.jsx"),
-  Chunk246965 = require("./246965.jsx"),
+  Chunk533246 = require("./533246.js"),
   Chunk197155 = require("./197155.js"),
   Chunk476398 = require("./476398.js");
-let f = e => {
+let p = e => {
     let {
       digit: t
     } = e;
     return (0, r.jsx)("div", {
-      className: d.digit,
+      className: u.digit,
       children: (0, r.jsx)(a.Text, {
         variant: "text-xxs/semibold",
         color: "text-primary",
@@ -27,47 +26,47 @@ let f = e => {
       })
     })
   },
-  h = e => {
+  f = e => {
     let {
       value: t
     } = e, n = t.toString().padStart(2, "0"), [i, l] = [n[0], n[1]];
     return (0, r.jsxs)("div", {
-      className: d.timeUnit,
-      children: [(0, r.jsx)(f, {
+      className: u.timeUnit,
+      children: [(0, r.jsx)(p, {
         digit: i
-      }), (0, r.jsx)(f, {
+      }), (0, r.jsx)(p, {
         digit: l
       })]
     })
   },
-  g = e => {
+  h = e => {
     let {
-      countdown: t,
+      expiresAt: t,
       tooltipText: n
     } = e, {
-      days: o,
-      hours: c,
-      minutes: u,
-      seconds: f
-    } = t, g = o > 0 ? [o, c, u] : c > 0 ? [c, u, f] : [u, f], m = (0, s.zu)(i.z.NITRO_TAB_BADGE_COUNTDOWN);
+      days: c,
+      hours: p,
+      minutes: h,
+      seconds: g
+    } = (0, o.Z)(Date.parse(t), 1e3), m = c > 0 ? [c, p, h] : p > 0 ? [p, h, g] : [h, g], b = (0, s.zu)(i.z.NITRO_TAB_BADGE_COUNTDOWN);
     return (0, r.jsx)(l.u, {
       text: n,
       position: "right",
       children: (0, r.jsxs)(a.P3F, {
         onClick: () => (0, s.Q3)(i.z.NITRO_TAB_BADGE_COUNTDOWN),
-        children: [!m && (0, r.jsx)("img", {
-          src: p,
+        children: [!b && (0, r.jsx)("img", {
+          src: d,
           alt: "",
-          className: d.gradientCircles
+          className: u.gradientCircles
         }), (0, r.jsx)(a.Kqy, {
           gap: 0,
           direction: "horizontal",
-          className: d.countdownContainer,
-          children: g.map((e, t) => (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(h, {
+          className: u.countdownContainer,
+          children: m.map((e, t) => (0, r.jsxs)(r.Fragment, {
+            children: [(0, r.jsx)(f, {
               value: e
-            }, t), t !== g.length - 1 && (0, r.jsx)("div", {
-              className: d.delinator,
+            }, t), t !== m.length - 1 && (0, r.jsx)("div", {
+              className: u.delinator,
               children: ":"
             })]
           }))
@@ -75,22 +74,21 @@ let f = e => {
       })
     })
   },
-  m = e => {
+  g = e => {
     let {
-      trialOffer: t,
-      subscriptionTier: n
-    } = e, i = new Date(t.expires_at), l = (0, o.Z)(i, 1e3);
-    return null == l ? null : (0, r.jsx)(g, {
-      countdown: l,
-      tooltipText: (0, u.A)(n, l)
+      trialOffer: t
+    } = e, n = (0, c.YF)(t);
+    return (0, r.jsx)(h, {
+      expiresAt: t.expires_at,
+      tooltipText: n
     })
   },
-  b = e => {
+  m = e => {
     let {
       discountOffer: t
-    } = e, n = new Date(t.expires_at), i = (0, o.Z)(n, 1e3);
-    return null == i ? null : (0, r.jsx)(g, {
-      countdown: i,
-      tooltipText: (0, c.A)(i, Number(t.discount.amount))
+    } = e, n = (0, c.h$)(t);
+    return (0, r.jsx)(h, {
+      expiresAt: t.expires_at,
+      tooltipText: n
     })
   }

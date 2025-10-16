@@ -173,8 +173,7 @@ let Y = e => {
       isSelected: Q,
       discountOffer: ec
     }), I = 8) : (n = er === T.tE.OFFER_COUNTDOWN && em ? (0, r.jsx)(k.F, {
-      trialOffer: eo,
-      subscriptionTier: V.Si.TIER_2
+      trialOffer: eo
     }) : (0, r.jsx)(D.$H, {
       trialOffer: eo,
       isTabSelected: Q

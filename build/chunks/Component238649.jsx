@@ -33,33 +33,32 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk350169 = require("./350169.js");
 let w = (e, t) => {
-    var n;
     let {
-      className: i,
-      subscriptionTier: a,
-      isEligibleForBogoPromotion: w
+      className: n,
+      subscriptionTier: i,
+      isEligibleForBogoPromotion: a
     } = e, {
-      analyticsLocations: D
-    } = (0, d.ZP)(u.Z.PREMIUM_MARKETING_HERO_CTA), L = (0, p.Nx)(), x = (0, I.$)(), M = (0, E.Z)(), j = null != M, k = (0, s.e7)([c.Z], () => c.Z.useReducedMotion), {
-      visibilityPercentageRef: U,
-      visibilityPercentage: G
-    } = (0, S.E)(!k), B = (0, s.e7)([_.Z], () => _.Z.affinities), Z = !j && B.length > 0, {
-      variant: F
-    } = (0, h.ZP)("PremiumBrandRefreshMarketingHeroHeading"), V = (0, g.N)(), H = (0, m.Ng)(), Y = null != (n = null == V ? true : V.expires_at) ? n : null == H ? true : H.expires_at, W = f.Z.getAlmostExpiringTrialOffers([N.Si.TIER_2]), K = f.Z.getAlmostExpiringDiscountOffers([N.Si.TIER_2]), z = F === h.tE.HERO_COUNTDOWN && null != Y && (W.length > 0 || K.length > 0);
+      analyticsLocations: w
+    } = (0, d.ZP)(u.Z.PREMIUM_MARKETING_HERO_CTA), D = (0, p.Nx)(), L = (0, I.$)(), x = (0, E.Z)(), M = null != x, j = (0, s.e7)([c.Z], () => c.Z.useReducedMotion), {
+      visibilityPercentageRef: k,
+      visibilityPercentage: U
+    } = (0, S.E)(!j), G = (0, s.e7)([_.Z], () => _.Z.affinities), B = !M && G.length > 0, {
+      variant: Z
+    } = (0, h.ZP)("PremiumBrandRefreshMarketingHeroHeading"), F = (0, g.N)(), V = (0, m.Ng)(), H = f.Z.getAlmostExpiringTrialOffers([N.Si.TIER_2]).length > 0 && null != F && null != F.expires_at, Y = f.Z.getAlmostExpiringDiscountOffers([N.Si.TIER_2]).length > 0 && null != V && null != V.expires_at, W = Z === h.tE.HERO_COUNTDOWN && (H || Y), K = H ? F.expires_at : Y ? V.expires_at : null;
     return (0, r.jsx)(d.Gt, {
-      value: D,
+      value: w,
       children: (0, r.jsx)("div", {
         ref: t,
-        className: o()(P.container, z && P.containerWithOfferCountdown, i),
+        className: o()(P.container, W && P.containerWithOfferCountdown, n),
         "data-testid": "marketing-page-hero-header",
         children: (0, r.jsx)("div", {
-          ref: U,
+          ref: k,
           children: (0, r.jsxs)("div", {
             className: P.contentContainer,
             children: [(0, r.jsx)(C.Z, {
-              containerVisibilityPercentage: G
-            }), L && (z ? (0, r.jsx)(O.Z, {
-              expiresAt: Y,
+              containerVisibilityPercentage: U
+            }), D && (W && null != K ? (0, r.jsx)(O.Z, {
+              expiresAt: K,
               className: P.heroOfferCountdown
             }) : (0, r.jsx)("div", {
               className: P.offerPillContainer,
@@ -76,13 +75,13 @@ let w = (e, t) => {
               })
             }), (0, r.jsxs)("div", {
               className: P.body,
-              children: [j && (0, r.jsx)("div", {
+              children: [M && (0, r.jsx)("div", {
                 className: P.referrerAttributionContainer,
                 children: (0, r.jsx)(T.Z, {
-                  referrer: M,
+                  referrer: x,
                   enablePremiumBrandRefresh: true
                 })
-              }), Z && (0, r.jsx)("div", {
+              }), B && (0, r.jsx)("div", {
                 className: P.affinitiesContainer,
                 children: (0, r.jsx)(v.Z, {
                   textColor: "text-primary",
@@ -91,13 +90,13 @@ let w = (e, t) => {
                   enablePremiumBrandRefresh: true
                 })
               }), (0, r.jsxs)("div", {
-                className: L ? P.singleButtonContainer : P.twoButtonContainer,
+                className: D ? P.singleButtonContainer : P.twoButtonContainer,
                 children: [(0, r.jsx)(y.Z, {
                   size: "md",
-                  fullWidth: L,
-                  hasActivePromotion: !!w,
-                  subscriptionTier: a
-                }), !L && (0, r.jsx)(b.Z, {
+                  fullWidth: D,
+                  hasActivePromotion: !!a,
+                  subscriptionTier: i
+                }), !D && (0, r.jsx)(b.Z, {
                   variant: "secondary",
                   size: "md"
                 })]
@@ -107,7 +106,7 @@ let w = (e, t) => {
                   color: "text-tertiary",
                   variant: "text-xs/medium",
                   children: R.intl.format(R.t.kt9wxs, {
-                    cheapestMonthlyPrice: x
+                    cheapestMonthlyPrice: L
                   })
                 })
               })]

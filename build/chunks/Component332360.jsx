@@ -2,10 +2,12 @@
 /** chunk id: 332360, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  k: () => m
+  k: () => E
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk120356 = require("./120356.js"),
+  o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk985002 = require("./985002.js"),
   Chunk841409 = require("./841409.js"),
@@ -16,41 +18,46 @@ var Chunk951288 = require("./951288.js"),
   Chunk345909 = require("./345909.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk84989 = require("./84989.js");
-let h = () => {
+let g = () => {
     let e = (0, Chunk631885.ZM)(),
       t = (0, Chunk780985.cz)(),
       {
         selectTeenUser: n
       } = (0, Chunk985002.G)({}),
-      s = e => {
+      a = e => {
         n(e)
       },
-      d = module.map(e => ({
+      c = module.map(e => ({
         label: e,
         value: e
       })),
-      f = Chunk647438.useCallback(e => (0, r.jsx)(u.I, {
+      _ = Chunk647438.useCallback(e => (0, r.jsx)(f.I, {
         userId: e.value,
-        avatarSize: a.EFr.SIZE_24,
+        avatarSize: s.EFr.SIZE_24,
         hideUserTag: true
       }), []);
-    return 0 === module.length ? null : 1 === module.length ? (0, Chunk951288.jsx)(Chunk87792.I, {
-      userId: module[0],
-      avatarSize: Chunk481060.EFr.SIZE_24,
-      hideUserTag: true
-    }) : (0, Chunk951288.jsx)(Chunk481060.PhF, {
-      renderOptionLabel: Chunk345909,
-      renderOptionValue: e => {
-        let [t] = e;
-        return f(t)
-      },
-      serialize: e => e,
-      select: Chunk841409,
-      isSelected: e => e === (null == t ? true : t.id),
-      options: Chunk292352
+    return 0 === module.length ? null : (0, Chunk951288.jsx)("div", {
+      className: o()(Chunk84989.teenSelector, {
+        [Chunk84989.grow]: module.length > 1
+      }),
+      children: module.length > 1 ? (0, Chunk951288.jsx)(Chunk481060.PhF, {
+        renderOptionLabel: Chunk292352,
+        renderOptionValue: e => {
+          let [t] = e;
+          return _(t)
+        },
+        serialize: e => e,
+        select: Chunk120356,
+        isSelected: e => e === (null == t ? true : t.id),
+        options: Chunk841409
+      }) : (0, Chunk951288.jsx)(Chunk87792.I, {
+        userId: module[0],
+        avatarSize: Chunk481060.EFr.SIZE_24,
+        hideUserTag: true
+      })
     })
   },
-  m = () => {
+  E = () => {
     let {
       selectedTab: e,
       handleTabChange: t
@@ -77,6 +84,7 @@ let h = () => {
         justify: "space-between",
         children: [(0, Chunk951288.jsxs)(Chunk481060.Kqy, {
           gap: 4,
+          className: Chunk84989.titleContainer,
           children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
             variant: "text-sm/medium",
             color: "text-secondary",
@@ -86,10 +94,7 @@ let h = () => {
             color: "header-primary",
             children: Chunk388032.intl.string(module === Chunk292352.dG.CONTENT_AND_SOCIAL ? Chunk388032.t["+o1pDQ"] : Chunk388032.t.OAuOHB)
           })]
-        }), (0, Chunk951288.jsx)("div", {
-          className: Chunk84989.teenSelector,
-          children: (0, Chunk951288.jsx)(h, {})
-        })]
+        }), (0, Chunk951288.jsx)(g, {})]
       })]
     })
   }

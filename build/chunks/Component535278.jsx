@@ -2,8 +2,7 @@
 /** chunk id: 535278, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => g,
-  Z: () => E
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -12,46 +11,28 @@ var Chunk481060 = require("./481060.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk963249 = require("./963249.jsx"),
-  Chunk706454 = require("./706454.js"),
   Chunk931118 = require("./931118.js"),
   Chunk104494 = require("./104494.js"),
   Chunk959052 = require("./959052.jsx"),
+  Chunk533246 = require("./533246.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk50953 = require("./50953.js");
-
-function g(e, t) {
-  let n = new Intl.NumberFormat(c.default.locale, {
-    style: "percent",
-    minimumFractionDigits: 0,
-    maximumFractionDigits: 0
-  }).format(t / 100);
-  return e.days > 0 ? h.intl.formatToPlainString(h.t["7mw8CQ"], {
-    days: e.days,
-    discountPercentage: n
-  }) : e.hours > 0 ? h.intl.formatToPlainString(h.t["0hYT6u"], {
-    hours: e.hours,
-    discountPercentage: n
-  }) : h.intl.formatToPlainString(h.t["2rh7r6"], {
-    minutes: Math.max(e.minutes, 1),
-    discountPercentage: n
-  })
-}
-let E = function(e) {
+let g = function(e) {
   var t;
   let {
     dismissCurrentNotice: n,
-    subscriptionTier: c
+    subscriptionTier: g
   } = e, {
     analyticsLocations: E
-  } = (0, s.ZP)(o.Z.PREMIUM_TIER_2_DISCOUNT_ENDING_NOTICE), b = (0, d.Ng)(), y = (0, a.Z)(null != b && null != b.expires_at ? Date.parse(b.expires_at) : 0), {
+  } = (0, s.ZP)(o.Z.PREMIUM_TIER_2_DISCOUNT_ENDING_NOTICE), b = (0, u.Ng)(), y = (0, a.Z)(null != b && null != b.expires_at ? Date.parse(b.expires_at) : 0), {
     variant: O
-  } = (0, u.ZP)("PremiumDiscountEndingNotice");
-  if (null == b || (null == (t = b.discount) ? true : t.plan_ids.some(e => _.GP[e].skuId !== c)) || null == b.expires_at || Object.values(y).every(e => 0 === e)) return null;
+  } = (0, c.ZP)("PremiumDiscountEndingNotice");
+  if (null == b || (null == (t = b.discount) ? true : t.plan_ids.some(e => _.GP[e].skuId !== g)) || null == b.expires_at || Object.values(y).every(e => 0 === e)) return null;
   let v = () => {
     (0, l.Z)({
-      subscriptionTier: c,
+      subscriptionTier: g,
       analyticsLocations: E,
       analyticsObject: {
         page: p.ZY5.IN_APP,
@@ -60,11 +41,11 @@ let E = function(e) {
       }
     })
   };
-  return O === u.tE.NAGBAR_REFRESH ? (0, r.jsxs)(f.eJ, {
+  return O === c.tE.NAGBAR_REFRESH ? (0, r.jsxs)(d.eJ, {
     onClick: n,
-    children: [(0, r.jsx)(f.Jy, {
-      children: g(y, Number(b.discount.amount))
-    }), (0, r.jsx)(f.OJ, {
+    children: [(0, r.jsx)(d.Jy, {
+      children: (0, f.TV)(y, Number(b.discount.amount))
+    }), (0, r.jsx)(d.OJ, {
       onClick: v,
       text: h.intl.string(h.t.zLXssL)
     })]
@@ -76,7 +57,7 @@ let E = function(e) {
       size: "md",
       color: "currentColor",
       className: m.premiumIcon
-    }), g(y, Number(b.discount.amount)), (0, r.jsx)(i.EyT, {
+    }), (0, f.TV)(y, Number(b.discount.amount)), (0, r.jsx)(i.EyT, {
       onClick: v,
       children: h.intl.string(h.t.zLXssL)
     })]

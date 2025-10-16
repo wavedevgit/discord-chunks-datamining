@@ -85,7 +85,10 @@ function F(e) {
   } = e;
   return t([m.Q2.MESSAGE, m.Q2.NAVIGATION, m.Q2.DND, m.Q2.CHAT, m.Q2.VOICE_AND_VIDEO, m.Q2.MISCELLANEOUS])
 }
-let V = l()((0, Chunk612226.Rv)()).filter(e => e.description !== x.intl.string(x.t.HnNtEB)).groupBy(e => e.group).value();
+
+function V() {
+  return l()((0, Chunk612226.Rv)()).filter(e => e.description !== x.intl.string(x.t.HnNtEB)).groupBy(e => e.group).value()
+}
 class H extends Chunk647438.PureComponent {
   renderMessage() {
     let {
@@ -320,7 +323,8 @@ class Y extends Chunk647438.PureComponent {
   }
   render() {
     let e = this.props.enableClips,
-      t = l()(this.props.keybinds).reject(e => e.managed && ![D.kg4.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET, D.kg4.SAVE_CLIP].includes(e.action)).reject(t => !e && t.action === D.kg4.SAVE_CLIP).reject(e => !this.props.allowSoundboard && (e.action === D.kg4.SOUNDBOARD || e.action === D.kg4.SOUNDBOARD_HOLD)).sortBy(e => e.id).sortBy(e => true === e.managed ? false : 0).value();
+      t = l()(this.props.keybinds).reject(e => e.managed && ![D.kg4.OVERLAY_ACTIVATE_REGION_TEXT_WIDGET, D.kg4.SAVE_CLIP].includes(e.action)).reject(t => !e && t.action === D.kg4.SAVE_CLIP).reject(e => !this.props.allowSoundboard && (e.action === D.kg4.SOUNDBOARD || e.action === D.kg4.SOUNDBOARD_HOLD)).sortBy(e => e.id).sortBy(e => true === e.managed ? false : 0).value(),
+      n = V();
     return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk273313.Z, {
         title: Chunk388032.intl.string(Chunk388032.t.T9DA2N),
@@ -371,15 +375,15 @@ class Y extends Chunk647438.PureComponent {
         }), (0, Chunk951288.jsx)(F, {
           children: e => (0, r.jsx)(r.Fragment, {
             children: e.map((e, t) => {
-              let n = (0, m.UD)(e),
-                a = (0, m.U6)(e),
-                o = V[e];
+              let a = (0, m.UD)(e),
+                o = (0, m.U6)(e),
+                s = n[e];
               return (0, r.jsx)(d.C3N, {
-                label: n,
-                description: a,
+                label: a,
+                description: o,
                 children: (0, r.jsx)("div", {
                   className: M.defaultKeybindGroup,
-                  children: o.map((e, t) => (0, r.jsxs)(i.Fragment, {
+                  children: s.map((e, t) => (0, r.jsxs)(i.Fragment, {
                     children: [0 !== t && (0, r.jsx)(d.izJ, {}), (0, r.jsxs)("div", {
                       className: M.defaultKeybind,
                       children: [(0, r.jsx)(d.Text, {

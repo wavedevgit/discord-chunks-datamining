@@ -330,7 +330,9 @@ class U extends Chunk647438.PureComponent {
         onRetry: () => u.Z.sendMFABackupCodesVerificationKeyEmail(e),
         actionText: P.intl.string(P.t.piW6YW),
         helpMessage: P.intl.string(P.t["37S9yc"])
-      })))
+      })), {
+        stackingBehavior: "stack"
+      })
     }), L(this, "getDownloadFileContents", () => {
       let e = this.props.backupCodes.map(e => {
           let {
