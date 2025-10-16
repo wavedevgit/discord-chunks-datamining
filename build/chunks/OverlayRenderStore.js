@@ -387,7 +387,7 @@ async function ed(e) {
     newFullscreenType: r
   });
   let i = ei(n, r);
-  if (n.overlayMethod === i.overlayMethod && n.oopEnabled === i.enabledOOP && n.legacyEnabled === i.enabledLegacy && i.overlayMethod !== b.gl.Disabled || (k === m.UNSET_PID || null === k) && n.state === b.mM.OVERLAY_RENDERING) return t;
+  if (n.overlayMethod === i.overlayMethod && n.oopEnabled === i.enabledOOP && n.legacyEnabled === i.enabledLegacy || (k === m.UNSET_PID || null === k) && n.state === b.mM.OVERLAY_RENDERING) return t;
   let a = D === b.R5.OUT_OF_PROCESS_V3 || D === b.R5.OUT_OF_PROCESS_V3_LIMITED_INTERACTION,
     o = D === b.R5.IN_PROCESS_V2,
     s = (0, v.PD)(r, K()),
