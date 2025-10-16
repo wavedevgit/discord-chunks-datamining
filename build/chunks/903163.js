@@ -33,5 +33,6 @@ module.exports = {
   noItemsIcon: "noItemsIcon_e335a7",
   boostingDesktopAppBlurb: "boostingDesktopAppBlurb_e335a7",
   duplicateSubscriptionsBanner: "duplicateSubscriptionsBanner_e335a7",
-  duplicateSubscriptionsBannerText: "duplicateSubscriptionsBannerText_e335a7"
+  duplicateSubscriptionsBannerText: "duplicateSubscriptionsBannerText_e335a7",
+  helpNoticeDismissIcon: "helpNoticeDismissIcon_e335a7"
 }
