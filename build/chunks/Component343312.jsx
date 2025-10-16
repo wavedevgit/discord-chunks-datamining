@@ -1,7 +1,7 @@
 /** Chunk was on 63639 **/
 /** chunk id: 343312, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  BT: () => h,
+  BT: () => y,
   JL: () => x
 }), require("./388685.js"), require("./457542.js");
 var Chunk951288 = require("./951288.js"),
@@ -22,7 +22,12 @@ var Chunk951288 = require("./951288.js"),
 let [j, x] = (0, Chunk975104.Z)();
 
 function h(e) {
-  var n, t, c, x, h, y, O;
+  var n;
+  return null == e || null == (n = e.plans[Math.floor(((null == e ? true : e.plans.length) - 1) / 2)]) ? true : n.id
+}
+
+function y(e) {
+  var n, t, c, x, y, O;
   let {
     guildId: P,
     initialGameServerInstance: k,
@@ -40,7 +45,7 @@ function h(e) {
     {
       analyticsLocations: _
     } = (0, r.ZP)(N),
-    [L, B] = a.useState(null != (t = S.initialStep) ? t : Object.keys(S.steps)[0]),
+    [L, B] = a.useState(null != (n = S.initialStep) ? n : Object.keys(S.steps)[0]),
     E = (0, v.Td)(P, true),
     G = S.steps[L],
     [D, z] = a.useState(null == I ? true : I.id);
@@ -53,7 +58,7 @@ function h(e) {
   let [F, J] = a.useState(true), H = a.useMemo(() => {
     var e;
     if (null != D) return Object.values(null != (e = null == w ? true : w.catalog) ? e : {}).find(e => e.id === D)
-  }, [null == w ? true : w.catalog, D]), [A, K] = a.useState(k), [R, U] = a.useState(null != (c = null == I || null == (n = I.plans[0]) ? true : n.id) ? c : null == k ? true : k.planId), M = function(e, n, t, l) {
+  }, [null == w ? true : w.catalog, D]), [A, K] = a.useState(k), [M, R] = a.useState(null != (t = h(I)) ? t : null == k ? true : k.planId), U = function(e, n, t, l) {
     var a, r, s, o, u, c, d, m;
     let v = (0, i.e7)([f.Z], () => {
         var n;
@@ -61,23 +66,22 @@ function h(e) {
       }),
       g = null != (d = null == n || null == (a = n.plans.find(e => e.id === t)) ? true : a.cost) ? d : 0;
     return null == l ? g : g - (null != (m = null == v || null == (c = v[l.entitlementId]) || null == (u = c.sku) || null == (o = u.tenant_metadata) || null == (s = o.guild_monetization) || null == (r = s.game_server) ? true : r.boost_price) ? m : 0)
-  }(P, H, R, A), X = a.useCallback(e => {
+  }(P, H, M, A), X = a.useCallback(e => {
     var n, t, l, a, i, r;
     K(e);
     let s = null == w || null == (l = w.entitlements) || null == (t = l[null != (a = null == e ? true : e.entitlementId) ? a : ""]) || null == (n = t.sku) ? true : n.product_id;
-    null != s && z(s), U(null == e ? true : e.planId), $(null != (i = null == e ? true : e.name) ? i : ""), ee(null != (r = null == e ? true : e.regionId) ? r : "")
+    null != s && z(s), R(null == e ? true : e.planId), $(null != (i = null == e ? true : e.name) ? i : ""), ee(null != (r = null == e ? true : e.regionId) ? r : "")
   }, [null == w ? true : w.entitlements]), Y = a.useCallback((e, n) => {
-    var t;
-    X(true), z(null == e ? true : e.id), U(null != n ? n : null == e || null == (t = e.plans[0]) ? true : t.id)
-  }, [X]), [q, Q] = a.useState(), [W, $] = a.useState(null != (x = null == k ? true : k.name) ? x : ""), [V, ee] = a.useState(null != (h = null == k ? true : k.regionId) ? h : ""), [en, et] = a.useState(false), el = a.useCallback(() => {
-    if (J(true), null == T || null == H || "" === W || "" === V || null == R) return;
+    X(true), z(null == e ? true : e.id), R(null != n ? n : h(e))
+  }, [X]), [q, Q] = a.useState(), [W, $] = a.useState(null != (c = null == k ? true : k.name) ? c : ""), [V, ee] = a.useState(null != (x = null == k ? true : k.regionId) ? x : ""), [en, et] = a.useState(false), el = a.useCallback(() => {
+    if (J(true), null == T || null == H || "" === W || "" === V || null == M) return;
     let e = () => {
       et(true);
       let e = new Promise(e => {
         setTimeout(() => e(true), p.tq)
       });
-      Promise.all([null != A ? (0, g.EY)(T.id, A.entitlementId, R, W) : (0, g.NE)(T.id, R, W, V), e]).then(() => {
-        Z(), (null == A ? true : A.planId) !== R && (0, b.Z)(T.id, H, null == A ? "created" : "updated")
+      Promise.all([null != A ? (0, g.EY)(T.id, A.entitlementId, M, W) : (0, g.NE)(T.id, M, W, V), e]).then(() => {
+        Z(), (null == A ? true : A.planId) !== M && (0, b.Z)(T.id, H, null == A ? "created" : "updated")
       }).catch(e => {
         var n, t;
         J(null != (t = null == (n = e.body) ? true : n.message) ? t : e.message)
@@ -85,9 +89,9 @@ function h(e) {
         et(false)
       })
     };
-    E < M ? (0, s.u)({
+    E < U ? (0, s.u)({
       analyticsLocation: N,
-      numberOfBoostsToAdd: M - E,
+      numberOfBoostsToAdd: U - E,
       analyticsLocations: _,
       guild: T,
       intent: o.P.PERK,
@@ -96,7 +100,7 @@ function h(e) {
       },
       onSubscribeComplete: e
     }) : e()
-  }, [_, T, E, R, N, H, W, V, Z, M, A]), ea = a.useCallback(e => {
+  }, [_, T, E, M, N, H, W, V, Z, U, A]), ea = a.useCallback(e => {
     switch (e.type) {
       case "close":
         Z();
@@ -133,9 +137,9 @@ function h(e) {
       setName: $,
       regionId: V,
       setRegionId: ee,
-      planCost: M,
-      planId: R,
-      setPlanId: U,
+      planCost: U,
+      planId: M,
+      setPlanId: R,
       footerNode: q,
       setFooterNode: Q,
       availableBoostCount: E,

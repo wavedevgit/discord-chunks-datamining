@@ -1,85 +1,116 @@
 /** Chunk was on 75685 **/
 /** chunk id: 854014, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  y: () => b
+  y: () => p
 }), require("./361932.js"), require("./187205.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
+  Chunk91192 = require("./91192.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk996435 = require("./996435.js"),
   Chunk950941 = require("./950941.jsx"),
   Chunk721611 = require("./721611.jsx"),
   Chunk873395 = require("./873395.js");
 
-function f(e) {
-  let {
-    onClick: t,
-    active: n,
-    children: l
-  } = e;
-  return (0, r.jsx)(a.P3F, {
-    className: i()(d.item, {
-      [d.active]: n
-    }),
-    onClick: t,
-    children: l
-  })
-}
-
 function b(e) {
+  var t, n;
   let {
-    node: t,
-    visibleContent: n
+    onClick: o,
+    active: l,
+    node: a,
+    visibleContent: s,
+    itemProps: d
   } = e, {
-    useTitle: o,
-    stronglyDiscouragedCustomComponent: i,
     icon: b,
-    trailing: m
-  } = t, v = l.useMemo(() => t.layout[0], [t]), p = s.Z.useField("currentPanel"), j = null != p && p.key === (null == v ? true : v.key), x = o(), y = null != v ? () => s.Z.setState({
-    targetKey: v.key,
-    showNavigationMobile: false
-  }) : t.onClick, h = l.useMemo(() => {
-    var e;
-    return null != (e = null == v ? true : v.layout.flatMap(e => e.layout)) ? e : []
-  }, [v]);
-  return null != i ? (0, r.jsxs)(f, {
-    onClick: y,
-    active: j,
-    children: [(0, r.jsx)(i, {}), null != m && (0, r.jsx)("div", {
-      className: d.itemContent,
-      children: (0, r.jsx)(c.W, {
-        trailing: m,
-        visibleContent: n,
-        isSelected: j
+    stronglyDiscouragedCustomComponent: p,
+    trailing: y,
+    useTitle: j
+  } = a, m = null == j ? true : j();
+  return (0, r.jsxs)(c.P3F, (t = function(e) {
+    for (var t = 1; t < arguments.length; t++) {
+      var n = null != arguments[t] ? arguments[t] : {},
+        r = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(n, e).enumerable
+      }))), r.forEach(function(t) {
+        var r;
+        r = n[t], t in e ? Object.defineProperty(e, t, {
+          value: r,
+          enumerable: true,
+          configurable: true,
+          writable: true
+        }) : e[t] = r
+      })
+    }
+    return e
+  }({
+    className: i()(f.item, {
+      [f.active]: l
+    }),
+    onClick: o
+  }, d), n = n = {
+    children: [null != p ? (0, r.jsx)(p, {}) : (0, r.jsxs)("div", {
+      className: f.itemContent,
+      children: [(0, r.jsx)(b, {
+        color: "currentColor",
+        size: "refresh_sm",
+        className: f.icon
+      }), (0, r.jsx)(c.Text, {
+        variant: "text-md/medium",
+        color: "currentColor",
+        children: m
+      })]
+    }), null != y && (0, r.jsx)("div", {
+      className: f.itemContent,
+      children: (0, r.jsx)(u.W, {
+        trailing: y,
+        visibleContent: s,
+        isSelected: l
       })
     })]
-  }) : (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsxs)(f, {
-      onClick: y,
-      active: j,
-      children: [(0, r.jsxs)("div", {
-        className: d.itemContent,
-        children: [(0, r.jsx)(b, {
-          color: "currentColor",
-          size: "refresh_sm",
-          className: d.icon
-        }), (0, r.jsx)(a.Text, {
-          variant: "text-md/medium",
-          color: "currentColor",
-          children: x
-        })]
-      }), null != m && (0, r.jsx)("div", {
-        className: d.itemContent,
-        children: (0, r.jsx)(c.W, {
-          trailing: m,
-          visibleContent: n,
-          isSelected: j
-        })
-      })]
-    }), j && h.length > 1 && (0, r.jsx)(u.Z, {
-      categories: h
+  }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
+    var n = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
+    }
+    return n
+  })(Object(n)).forEach(function(e) {
+    Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+  }), t))
+}
+
+function p(e) {
+  let {
+    node: t,
+    visibleContent: n,
+    hoisted: l = false
+  } = e, i = o.useMemo(() => t.layout[0], [t]), c = s.Z.useField("currentPanel"), u = null != c && c.key === (null == i ? true : i.key), f = null != i ? () => s.Z.setState({
+    targetKey: i.key,
+    showNavigationMobile: false
+  }) : t.onClick, p = o.useMemo(() => {
+    var e;
+    return null != (e = null == i ? true : i.layout.flatMap(e => e.layout)) ? e : []
+  }, [i]);
+  return (0, r.jsxs)(r.Fragment, {
+    children: [l ? (0, r.jsx)(b, {
+      onClick: f,
+      active: u,
+      node: t,
+      visibleContent: n
+    }) : (0, r.jsx)(a.mh, {
+      id: t.key,
+      children: e => (0, r.jsx)(b, {
+        onClick: f,
+        active: u,
+        node: t,
+        visibleContent: n,
+        itemProps: e
+      })
+    }), u && p.length > 1 && (0, r.jsx)(d.Z, {
+      categories: p
     })]
   })
 }

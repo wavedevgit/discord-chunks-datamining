@@ -1,35 +1,35 @@
 /** Chunk was on 75685 **/
 /** chunk id: 530171, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  I: () => c
+  I: () => s
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk657707 = require("./657707.js"),
   Chunk206403 = require("./206403.jsx"),
   Chunk481446 = require("./481446.js");
 
-function c(e) {
+function s(e) {
   let {
     title: t,
     subtitle: n,
-    isOpen: l,
-    setIsOpen: c,
+    isOpen: o,
+    setIsOpen: s,
     compact: u = false,
     children: d
   } = e;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.x, {
       title: t,
-      description: l ? true : n,
+      description: o ? true : n,
       secondaryTrailingElement: (0, r.jsx)(i.sXD, {
-        className: o()(s.icon, {
-          [s.iconClosed]: !l
+        className: l()(c.icon, {
+          [c.iconClosed]: !o
         })
       }),
-      onClick: () => c(!l),
+      onClick: () => s(!o),
       compact: u
-    }), l && d]
+    }), o && d]
   })
 }

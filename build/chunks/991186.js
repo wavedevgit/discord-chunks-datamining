@@ -100,7 +100,7 @@ class y extends Chunk147913.Z {
       }
     }), _(this, "maybeInitExperiment", async () => {
       this._hasInitialized || (this._hasInitialized = true, E.info("Experiments initializing..."), await this.processExperiment(), E.info("Experiments initialized"))
-    }), _(this, "isNewOverlayUser", () => (this._storage.hasIsNewOverlayUser() || this._storage.setIsNewOverlayUser(!(0, l.zu)(i.z.OVERLAY_OOP_WELCOME_SWITCH_FROM_IP_NUX)), this._storage.getIsNewOverlayUser())), _(this, "handlePostConnectionOpen", async () => {
+    }), _(this, "isNewOverlayUser", () => (this._storage.hasIsNewOverlayUser() || this._storage.setIsNewOverlayUser(!(0, l.zu)(i.z.OVERLAY_OOP_WELCOME_SWITCH_FROM_IP_NUX) && !(0, l.zu)(i.z.OVERLAY_OOP_WELCOME_NUX)), this._storage.getIsNewOverlayUser())), _(this, "handlePostConnectionOpen", async () => {
       __OVERLAY__ || this._isProcessing || this.isNewOverlayUser() && await this.maybeInitExperiment()
     }), _(this, "handleExperimentsInit", async () => {
       __OVERLAY__ || this._isProcessing || this.isNewOverlayUser() && await this.maybeInitExperiment()

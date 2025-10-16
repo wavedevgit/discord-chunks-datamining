@@ -14,17 +14,17 @@ function i(e) {
     useValue: n,
     setValue: i,
     useTitle: a,
-    useSubtitle: s,
-    useOptions: c,
+    useSubtitle: c,
+    useOptions: s,
     renderOptionLabel: u
-  } = t, d = a(), f = null == s ? true : s(), b = n(), m = c();
-  return (0, r.jsx)(o.X, {
-    children: (0, r.jsx)(l.q4e, {
+  } = t, d = a(), f = null == c ? true : c(), b = n(), p = s();
+  return (0, r.jsx)(l.X, {
+    children: (0, r.jsx)(o.q4e, {
       label: d,
       description: f,
       value: b,
       onChange: e => i(e),
-      options: m,
+      options: p,
       renderOptionLabel: null != u ? u : true,
       renderOptionValue: null != u ? e => {
         let [t] = e;

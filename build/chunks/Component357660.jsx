@@ -17,12 +17,12 @@ function d(e) {
     notice: t,
     children: n
   } = e, {
-    showNotice: c,
+    showNotice: s,
     handleStoreUpdate: d
-  } = (0, s.Cu)(), f = null == t ? true : t.stores;
-  l.useEffect(() => {
+  } = (0, c.Cu)(), f = null == t ? true : t.stores;
+  o.useEffect(() => {
     if (null != f) {
-      let e = new o.Fh(f, () => {
+      let e = new l.Fh(f, () => {
         d(f)
       });
       return e.attach("SettingPanelNotice"), d(f), () => {
@@ -30,8 +30,8 @@ function d(e) {
       }
     }
   }, [f, d]);
-  let b = l.useMemo(() => {
-    if (null == t || !c) return null;
+  let b = o.useMemo(() => {
+    if (null == t || !s) return null;
     let {
       element: e
     } = t;
@@ -39,7 +39,7 @@ function d(e) {
       className: u.notice,
       children: (0, r.jsx)(e, {})
     })
-  }, [t, c]);
+  }, [t, s]);
   return (0, r.jsxs)(r.Fragment, {
     children: [n, (0, r.jsx)(i.W, {
       component: "div",
@@ -51,7 +51,7 @@ function d(e) {
 function f(e) {
   let {
     node: t
-  } = e, n = l.useRef(null);
+  } = e, n = o.useRef(null);
   if (1 !== t.layout.length) throw Error("Panels do not currently support multiple panes");
   return (0, r.jsx)(d, {
     notice: t.notice,
@@ -62,7 +62,7 @@ function f(e) {
         ref: n,
         children: (0, r.jsx)(a.JcV, {
           containerRef: n,
-          children: (0, r.jsx)(c.Z, {
+          children: (0, r.jsx)(s.Z, {
             node: t.layout[0]
           })
         })

@@ -14,11 +14,11 @@ function i(e) {
     useValue: n,
     setValue: i,
     useTitle: a,
-    useSubtitle: s,
-    useOptions: c
-  } = t, u = a(), d = null == s ? true : s(), f = n(), b = c();
-  return (0, r.jsx)(o.X, {
-    children: (0, r.jsx)(l.Gu, {
+    useSubtitle: c,
+    useOptions: s
+  } = t, u = a(), d = null == c ? true : c(), f = n(), b = s();
+  return (0, r.jsx)(l.X, {
+    children: (0, r.jsx)(o.Gu, {
       label: u,
       description: d,
       options: b,

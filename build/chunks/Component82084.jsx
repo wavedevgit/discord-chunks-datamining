@@ -17,43 +17,43 @@ var Chunk951288 = require("./951288.js"),
 function b(e) {
   var t, n, {
       root: b,
-      directory: m,
-      target: v,
-      defaultTarget: p,
-      onPanelChange: j,
-      sidebarHeader: x,
-      sidebarFooter: y,
+      directory: p,
+      target: y,
+      defaultTarget: j,
+      onPanelChange: m,
+      sidebarHeader: v,
+      sidebarFooter: g,
       emptyState: h
     } = e,
-    g = function(e, t) {
+    O = function(e, t) {
       if (null == e) return {};
-      var n, r, l = function(e, t) {
+      var n, r, o = function(e, t) {
         if (null == e) return {};
-        var n, r, l = {},
-          o = Object.keys(e);
-        for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
-        return l
+        var n, r, o = {},
+          l = Object.keys(e);
+        for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
+        return o
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var o = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
+        var l = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
       }
-      return l
+      return o
     }(e, ["root", "directory", "target", "defaultTarget", "onPanelChange", "sidebarHeader", "sidebarFooter", "emptyState"]);
-  let [O, C] = l.useState(false), [S, P] = l.useState(1.4), _ = l.useRef(null), N = (0, o.e7)([s.Z], () => s.Z.useReducedMotion), E = (0, o.e7)([c.Z], () => c.Z.isFocused());
-  return l.useEffect(() => {
+  let [x, P] = o.useState(false), [S, C] = o.useState(1.4), _ = o.useRef(null), w = (0, l.e7)([c.Z], () => c.Z.useReducedMotion), E = (0, l.e7)([s.Z], () => s.Z.isFocused());
+  return o.useEffect(() => {
     let e = e => {
       let {
         intensity: t,
         duration: n
       } = e;
-      !N && E && (C(true), P(null != t ? t : 1.4), clearTimeout(_.current), _.current = setTimeout(() => C(false), null != n ? n : 1e3))
+      !w && E && (P(true), C(null != t ? t : 1.4), clearTimeout(_.current), _.current = setTimeout(() => P(false), null != n ? n : 1e3))
     };
     return u.S.subscribe(f.CkL.SHAKE_SETTINGS_MODAL, e), () => {
       u.S.unsubscribe(f.CkL.SHAKE_SETTINGS_MODAL, e), clearTimeout(_.current)
     }
-  }, [N, E]), (0, r.jsx)(a.UkV, {
-    isShaking: O,
+  }, [w, E]), (0, r.jsx)(a.UkV, {
+    isShaking: x,
     intensity: S,
     children: (0, r.jsx)(i.A, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -72,17 +72,17 @@ function b(e) {
         })
       }
       return e
-    }({}, g), n = n = {
+    }({}, O), n = n = {
       children: (0, r.jsx)(d.Z, {
-        onClose: g.onClose,
+        onClose: O.onClose,
         root: b,
-        directory: m,
-        target: v,
-        defaultTarget: p,
-        onPanelChange: j,
-        sidebarHeader: x,
+        directory: p,
+        target: y,
+        defaultTarget: j,
+        onPanelChange: m,
+        sidebarHeader: v,
         emptyState: h,
-        sidebarFooter: y
+        sidebarFooter: g
       })
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);

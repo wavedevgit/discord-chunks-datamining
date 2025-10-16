@@ -13,8 +13,8 @@ function i(e) {
     children: n
   } = e, {
     navTransition: i
-  } = (0, o.t)(), a = l.useRef(null);
-  return l.useEffect(() => {
+  } = (0, l.t)(), a = o.useRef(null);
+  return o.useEffect(() => {
     if ((null == i ? true : i.target) === t.key) {
       var e;
       null == (e = a.current) || e.scrollIntoView({
