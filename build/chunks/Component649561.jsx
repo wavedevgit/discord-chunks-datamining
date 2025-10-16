@@ -2,7 +2,7 @@
 /** chunk id: 649561, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => R
+  Z: () => L
 }), require("./388685.js"), require("./358797.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,6 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk818405 = require("./818405.js"),
   Chunk587158 = require("./587158.js"),
   Chunk286379 = require("./286379.js"),
+  Chunk579092 = require("./579092.js"),
   Chunk481060 = require("./481060.js"),
   Chunk13245 = require("./13245.js"),
   Chunk490029 = require("./490029.js"),
@@ -31,7 +32,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk975290 = require("./975290.js");
 
-function P(e, t, n) {
+function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -39,9 +40,10 @@ function P(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let w = 10 * Chunk70956.Z.Millis.SECOND;
+let N = 10 * Chunk70956.Z.Millis.SECOND,
+  T = new Chunk579092.Yd("LegacyOverlayErrorBoundary");
 
-function N() {
+function D() {
   let e = (0, Chunk145597.getPID)(),
     t = (0, Chunk145597.getRPCAuthToken)();
   (0, Chunk490029.lW)({
@@ -55,9 +57,9 @@ function N() {
     }]
   })
 }
-class T extends Chunk647438.PureComponent {
+class k extends Chunk647438.PureComponent {
   componentDidMount() {
-    this.notificationTimer = setTimeout(this.hideNotification, w), Chunk13245.Z.track(Chunk981631.rMx.NOTIFICATION_VIEWED, {
+    this.notificationTimer = setTimeout(this.hideNotification, N), Chunk13245.Z.track(Chunk981631.rMx.NOTIFICATION_VIEWED, {
       notif_type: Chunk987650.n0.OverlayCrashed
     })
   }
@@ -81,31 +83,31 @@ class T extends Chunk647438.PureComponent {
       observe: false,
       children: (0, Chunk951288.jsx)(Chunk481060.f6W, {
         theme: Chunk981631.BRd.DARK,
-        children: r => (0, i.jsxs)(p.P3F, {
+        children: r => (0, i.jsxs)(h.P3F, {
           innerRef: this.contentDomRef,
-          className: o()(r, I.container),
+          className: o()(r, P.container),
           onClick: e => e.stopPropagation(),
-          children: [(0, i.jsx)(m.ZP, {
+          children: [(0, i.jsx)(y.ZP, {
             expand: true,
-            icon: (0, i.jsx)(_.Z, {
+            icon: (0, i.jsx)(O.Z, {
               width: 40,
               height: 40,
-              className: I.notificationIcon
+              className: P.notificationIcon
             }),
-            title: C.intl.string(C.t.U38qZm),
-            confirmText: C.intl.string(C.t.TzAl1d),
+            title: I.intl.string(I.t.U38qZm),
+            confirmText: I.intl.string(I.t.TzAl1d),
             onNotificationClick: this.handleNotificationClick,
             onConfirmClick: this.handleReload,
             onDismissClick: this.hideNotification,
             locked: false
-          }), n && null != e ? (0, i.jsxs)(S.ZP, {
-            className: I.stackTrace,
-            children: [(0, i.jsx)(S.ZP.Bar, {
+          }), n && null != e ? (0, i.jsxs)(Z.ZP, {
+            className: P.stackTrace,
+            children: [(0, i.jsx)(Z.ZP.Bar, {
               children: "Error Details"
-            }), (0, i.jsx)(S.ZP.Content, {
-              className: I.stackTraceCode,
+            }), (0, i.jsx)(Z.ZP.Content, {
+              className: P.stackTraceCode,
               children: (0, i.jsx)("code", {
-                className: I.code,
+                className: P.code,
                 children: (0, i.jsx)("pre", {
                   children: t.stack
                 })
@@ -117,23 +119,23 @@ class T extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), P(this, "state", {
+    super(...e), w(this, "state", {
       showTrace: false,
       busy: false
-    }), P(this, "notificationTimer", true), P(this, "contentDomRef", r.createRef()), P(this, "hideNotification", () => {
-      N();
+    }), w(this, "notificationTimer", true), w(this, "contentDomRef", r.createRef()), w(this, "hideNotification", () => {
+      D();
       let {
         notificationTimer: e
       } = this;
       null != e && clearTimeout(e), this.notificationTimer = null
-    }), P(this, "handleReload", e => {
+    }), w(this, "handleReload", e => {
       this.setState({
         busy: true
-      }), N(), h.Z.track(j.rMx.NOTIFICATION_CLICKED, {
-        notif_type: Z.n0.OverlayCrashed,
+      }), D(), f.Z.track(C.rMx.NOTIFICATION_CLICKED, {
+        notif_type: j.n0.OverlayCrashed,
         action_type: "reload"
       }, true), e.stopPropagation(), setTimeout(() => location.reload(true), 200)
-    }), P(this, "handleNotificationClick", e => {
+    }), w(this, "handleNotificationClick", e => {
       e.stopPropagation();
       let {
         notificationTimer: t
@@ -144,7 +146,7 @@ class T extends Chunk647438.PureComponent {
     })
   }
 }
-let D = a().throttle(() => {
+let R = a().throttle(() => {
   Chunk797614.Z.increment({
     name: Chunk286379.V.APP_CRASHED,
     tags: ["reason:".concat(Chunk818405.v.UNHANDLED_JS_ERROR), "level:".concat(Chunk587158.c.FATAL)]
@@ -152,18 +154,21 @@ let D = a().throttle(() => {
 }, 100, {
   trailing: false
 });
-class k extends Chunk647438.PureComponent {
+class A extends Chunk647438.PureComponent {
   componentDidCatch(e, t) {
-    let n = (0, y.s1)().location;
+    let n = (0, _.s1)().location;
     this.setState({
       error: e,
       info: t
+    }), T.error("ErrorBoundary caught error: ".concat(e.message), {
+      error: e,
+      info: t
     });
-    let i = (0, b.getPID)(),
-      r = (0, b.getRPCAuthToken)();
-    (0, f.lW)({
-      type: j.BmY.DISPATCH,
-      pid: (0, b.getPID)(),
+    let i = (0, v.getPID)(),
+      r = (0, v.getRPCAuthToken)();
+    (0, g.lW)({
+      type: C.BmY.DISPATCH,
+      pid: (0, v.getPID)(),
       token: r,
       payloads: [{
         type: "OVERLAY_CRASHED",
@@ -174,18 +179,18 @@ class k extends Chunk647438.PureComponent {
         locked: true,
         pid: i
       }]
-    }), setImmediate(() => window.addEventListener("click", N));
-    let s = (0, v.V6)(e, E.gl.Hook, {
+    }), setImmediate(() => window.addEventListener("click", D));
+    let s = (0, E.V6)(e, x.gl.Hook, {
       extra: t
     });
-    h.Z.track(j.rMx.APP_CRASHED, {
+    f.Z.track(C.rMx.APP_CRASHED, {
       path: n.pathname,
       extra: t,
       error_message: e.message,
       error_stack: e.stack,
       sentry_issue_id: s,
       error_level: "fatal"
-    }), D()
+    }), R()
   }
   render() {
     let {
@@ -195,7 +200,7 @@ class k extends Chunk647438.PureComponent {
       error: n,
       info: r
     } = this.state;
-    return null != require ? (0, Chunk951288.jsx)(T, {
+    return null != require ? (0, Chunk951288.jsx)(k, {
       error: require,
       info: Chunk647438
     }) : (0, Chunk951288.jsx)("div", {
@@ -204,10 +209,10 @@ class k extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), P(this, "state", {
+    super(...e), w(this, "state", {
       error: null,
       info: null
     })
   }
 }
-let R = k
+let L = A

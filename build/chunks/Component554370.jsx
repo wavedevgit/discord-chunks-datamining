@@ -1,7 +1,7 @@
 /** Chunk was on 50751 **/
 /** chunk id: 554370, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => eo
+  Z: () => ea
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -31,6 +31,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk13140 = require("./13140.js"),
   Chunk145597 = require("./145597.js"),
   Chunk830917 = require("./830917.js"),
+  Chunk111628 = require("./111628.js"),
   Chunk837268 = require("./837268.js"),
   Chunk32300 = require("./32300.js"),
   Chunk681603 = require("./681603.js"),
@@ -48,21 +49,21 @@ var Chunk951288 = require("./951288.js"),
   Chunk757744 = require("./757744.js"),
   Chunk981631 = require("./981631.js"),
   Chunk977594 = require("./977594.js");
-let Q = !Chunk358085.isPlatformEmbedded && false,
-  K = Q ? (0, Chunk951288.jsx)(Chunk70097.Z, {
+let K = !Chunk358085.isPlatformEmbedded && false,
+  X = K ? (0, Chunk951288.jsx)(Chunk70097.Z, {
     src: "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzdpcnRrYXdrNzVuNjZ3NXpmeTJvNGl4Z2N4OXBsamx5aXphdHhxaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9dg/OPg2B0FPBL94H12uM0/giphy480p.mp4",
     className: Chunk977594.videoDev,
     autoPlay: true,
     loop: true,
     muted: true
   }) : null,
-  X = null;
+  q = null;
 
-function q(e) {
+function J(e) {
   e.preventDefault()
 }
 
-function J(e) {
+function $(e) {
   (0, c.jW)(e, async () => {
     let {
       default: e
@@ -87,8 +88,8 @@ function J(e) {
         }
         return e
       }({}, t), r = r = {
-        layoutId: H.$S,
-        version: H.HN
+        layoutId: B.$S,
+        version: B.HN
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -102,16 +103,16 @@ function J(e) {
     }
   })
 }
-let $ = Chunk647438.memo(function(e) {
+let ee = Chunk647438.memo(function(e) {
     let {
       keybind: t,
       onClick: n,
       locked: r
     } = e;
     return (0, i.jsx)(u.P3F, {
-      className: o()(Y.overlayBackground, {
-        [Y.overlayActive]: !r,
-        [Y.overlayLocked]: r
+      className: o()(Q.overlayBackground, {
+        [Q.overlayActive]: !r,
+        [Q.overlayLocked]: r
       }),
       onMouseDown: e => {
         let {
@@ -119,12 +120,12 @@ let $ = Chunk647438.memo(function(e) {
           target: i,
           button: r
         } = e;
-        r === B.AeJ.PRIMARY && t === i && n()
+        r === Y.AeJ.PRIMARY && t === i && n()
       },
-      onContextMenu: J,
-      children: r ? null : (0, i.jsx)(L.Z, {
-        className: Y.closeContainer,
-        children: (0, i.jsx)(A.Z, {
+      onContextMenu: $,
+      children: r ? null : (0, i.jsx)(M.Z, {
+        className: Q.closeContainer,
+        children: (0, i.jsx)(R.Z, {
           keybind: t,
           onClick: n,
           IconComponent: u.Uz9
@@ -132,72 +133,72 @@ let $ = Chunk647438.memo(function(e) {
       })
     })
   }),
-  ee = Chunk647438.memo(function(e) {
+  et = Chunk647438.memo(function(e) {
     let {
       locked: t,
       focused: n
     } = e;
-    return t && n ? (0, i.jsx)(L.Z, {
-      className: Y.closeContainer,
-      children: (0, i.jsx)(A.Z, {
+    return t && n ? (0, i.jsx)(M.Z, {
+      className: Q.closeContainer,
+      children: (0, i.jsx)(R.Z, {
         onClick: () => d.Z.setInputLocked(false, (0, w.getPID)()),
         IconComponent: u.d$P
       })
     }) : null
   });
 
-function et() {
+function en() {
   Chunk13245.Z.setInputLocked(true, (0, Chunk145597.getPID)())
 }
 
-function en() {
+function ei() {
   Chunk13245.Z.setFocusedPID(Chunk145597.DEV_PID, null)
 }
 
-function ei() {
+function er() {
   Chunk13245.Z.setFocusedPID(null, null)
 }
 
-function er(e) {
-  let t = z.ZP.isInputLocked((0, w.getPID)());
-  "alt" !== e.key.toLowerCase() || t || ("keyup" === e.type.toLowerCase() ? C.S.dispatch(B.CkL.OVERLAY_V3_SHOW_WIDGETS, {
+function el(e) {
+  let t = U.ZP.isInputLocked((0, w.getPID)());
+  "alt" !== e.key.toLowerCase() || t || ("keyup" === e.type.toLowerCase() ? C.S.dispatch(Y.CkL.OVERLAY_V3_SHOW_WIDGETS, {
     show: true
-  }) : "keydown" === e.type.toLowerCase() && C.S.dispatch(B.CkL.OVERLAY_V3_SHOW_WIDGETS, {
+  }) : "keydown" === e.type.toLowerCase() && C.S.dispatch(Y.CkL.OVERLAY_V3_SHOW_WIDGETS, {
     show: false
   }))
 }
 
-function el() {
-  return (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.hasRenderDebugMode(Chunk837268.GO.WindowContainer)) ? (0, Chunk951288.jsx)("div", {
+function eo() {
+  return (0, Chunk442837.e7)([Chunk111628.Z], () => Chunk111628.Z.hasRenderDebugMode(Chunk837268.GO.WindowContainer)) ? (0, Chunk951288.jsx)("div", {
     className: Chunk977594.windowContainerDebug
   }) : null
 }
 
-function eo(e) {
+function ea(e) {
   let {
     isEmbeddedActivity: t
-  } = e, n = (0, G.Z)(), {
+  } = e, n = (0, F.Z)(), {
     locked: l,
     focused: c,
     incompatibleApp: m,
     hasZeroSizeDimension: Z,
     keybind: _
-  } = (0, a.cj)([z.ZP, j.default, I.Z, b.ZP], () => {
+  } = (0, a.cj)([U.ZP, j.default, I.Z, b.ZP], () => {
     let e = I.Z.windowSize((0, T.ZY)(n)),
       t = b.ZP.getOverlayKeybind(),
       i = (0, w.getPID)();
     return {
-      locked: z.ZP.isInputLocked(i),
-      focused: z.ZP.isFocused(i),
+      locked: U.ZP.isInputLocked(i),
+      focused: U.ZP.isFocused(i),
       incompatibleApp: j.default.incompatibleApp,
       hasZeroSizeDimension: 0 === e.height || 0 === e.width,
       keybind: null != t ? (0, N.BB)(t.shortcut, true) : "???"
     }
   }, [n]), {
-    analyticsLocations: A
+    analyticsLocations: P
   } = (0, f.ZP)(p.Z.OVERLAY);
   (0, h.ZP)(() => {
-    (0, P.F3)()
+    (0, D.F3)()
   }),
   function(e, t) {
     let n = r.useRef({
@@ -213,14 +214,14 @@ function eo(e) {
       n.current.unmount()
     }), [])
   }(() => {
-    d.Z.overlayReady((0, w.getPID)()), n.addEventListener("keydown", er), n.addEventListener("keyup", er), Q && (n.document.hasFocus() && d.Z.setFocusedPID(w.DEV_PID, null), n.addEventListener("focus", en), n.addEventListener("blur", ei))
+    d.Z.overlayReady((0, w.getPID)()), n.addEventListener("keydown", el), n.addEventListener("keyup", el), K && (n.document.hasFocus() && d.Z.setFocusedPID(w.DEV_PID, null), n.addEventListener("focus", ei), n.addEventListener("blur", er))
   }, () => {
-    n.removeEventListener("keydown", er), n.removeEventListener("keyup", er), Q && (n.removeEventListener("focus", en), n.removeEventListener("blur", ei))
+    n.removeEventListener("keydown", el), n.removeEventListener("keyup", el), K && (n.removeEventListener("focus", ei), n.removeEventListener("blur", er))
   });
-  let L = r.useRef(null);
+  let R = r.useRef(null);
   return (0, h.ZP)(() => {
     var e;
-    let t = (0, U.pL)(),
+    let t = (0, W.pL)(),
       n = S.Z.getVoiceChannelId(),
       i = O.Z.getChannel(n),
       r = null != i ? v.Z.getGuild(i.guild_id) : null,
@@ -230,68 +231,68 @@ function eo(e) {
       s = o && null != r && null != n,
       {
         allowActivityWidget: u
-      } = (0, P.Rb)("overlay"),
+      } = (0, D.Rb)("overlay"),
       c = null != (e = x.default.getFocusedPID()) ? e : (0, w.getPID)();
-    if (M.default.hasChangedRenderMode(c)) return;
-    let h = V.Z.isNotificationDisabled(F.n0.WelcomeNudge),
-      p = V.Z.isNotificationDisabled(F.n0.GoLiveNudge),
-      f = V.Z.isNotificationDisabled(F.n0.ActivityInvite),
+    if (V.default.hasChangedRenderMode(c)) return;
+    let h = z.Z.isNotificationDisabled(H.n0.WelcomeNudge),
+      p = z.Z.isNotificationDisabled(H.n0.GoLiveNudge),
+      f = z.Z.isNotificationDisabled(H.n0.ActivityInvite),
       m = [];
     h || (m.push({
-      type: F.nc.WELCOME
+      type: H.nc.WELCOME
     }), !p && (a && s ? m.push({
-      type: F.nc.GO_LIVE_VOICE,
+      type: H.nc.GO_LIVE_VOICE,
       game: t,
       voiceChannelId: n,
       voiceGuild: r
     }) : a && m.push({
-      type: F.nc.GO_LIVE_NON_VOICE,
+      type: H.nc.GO_LIVE_NON_VOICE,
       game: t
     })), u && !f && m.push({
-      type: F.nc.CONTENT_INVENTORY,
+      type: H.nc.CONTENT_INVENTORY,
       entries: []
-    })), null != L.current && clearTimeout(L.current), L.current = setTimeout(() => {
+    })), null != R.current && clearTimeout(R.current), R.current = setTimeout(() => {
       d.Z.overlayMounted(...m)
     }, 1e3)
   }), (0, h.zq)(() => {
-    null != L.current && (clearTimeout(L.current), L.current = null)
+    null != R.current && (clearTimeout(R.current), R.current = null)
   }), r.useEffect(() => {
-    if (C.S.dispatch(B.CkL.OVERLAY_V3_SHOW_WIDGETS, {
+    if (C.S.dispatch(Y.CkL.OVERLAY_V3_SHOW_WIDGETS, {
         show: true
       }), l) {
-      if ((0, s.Ay)(u.u1M), n.addEventListener("contextmenu", q, false), null != X) {
-        let e = Date.now() - X;
-        d.Z.track(B.rMx.OVERLAY_LOCKED, {
+      if ((0, s.Ay)(u.u1M), n.addEventListener("contextmenu", J, false), null != q) {
+        let e = Date.now() - q;
+        d.Z.track(Y.rMx.OVERLAY_LOCKED, {
           unlocked_duration: e
-        }), X = null
+        }), q = null
       }
       return () => {
-        n.removeEventListener("contextmenu", q, false)
+        n.removeEventListener("contextmenu", J, false)
       }
     }
-    n.removeEventListener("contextmenu", q, false), null == X && (X = Date.now(), d.Z.track(B.rMx.OVERLAY_UNLOCKED))
+    n.removeEventListener("contextmenu", J, false), null == q && (q = Date.now(), d.Z.track(Y.rMx.OVERLAY_UNLOCKED))
   }, [l, n]), (0, i.jsx)(f.Gt, {
-    value: A,
+    value: P,
     children: Z || m ? null : (0, i.jsxs)("div", {
       id: "overlay-container",
-      className: Y.overlay,
-      children: [!t && K, (0, i.jsx)($, {
+      className: Q.overlay,
+      children: [!t && X, (0, i.jsx)(ee, {
         locked: l,
         keybind: _,
-        onClick: et
-      }), (0, i.jsx)(k.Z, {
+        onClick: en
+      }), (0, i.jsx)(L.Z, {
         className: o()({
-          [Y.layoutLocked]: l,
-          [Y.layoutUnlocked]: !l
+          [Q.layoutLocked]: l,
+          [Q.layoutUnlocked]: !l
         })
-      }), (0, i.jsx)(W.Z, {}), !t && Q && (0, i.jsx)(ee, {
+      }), (0, i.jsx)(G.Z, {}), !t && K && (0, i.jsx)(et, {
         locked: l,
         focused: c
-      }), (0, i.jsx)(D.Z, {}), (0, i.jsx)(R.Z, {
+      }), (0, i.jsx)(A.Z, {}), (0, i.jsx)(k.Z, {
         locked: l
       }), (0, i.jsx)(u.Ixi, {
-        appContext: B.IlC.OVERLAY
-      }), (0, i.jsx)(el, {})]
+        appContext: Y.IlC.OVERLAY
+      }), (0, i.jsx)(eo, {})]
     })
   })
 }

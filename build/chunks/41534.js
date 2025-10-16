@@ -53,7 +53,7 @@ function c() {
     n = arguments.length > 1 ? arguments[1] : true;
   return l(o({}, require), {
     tags: o({
-      source: "overlay",
+      source: __OVERLAY__ ? "overlay" : "legacy-overlay",
       overlayMethod: "".concat(null == exports ? null : Chunk837268.gl[null != exports ? exports : Chunk837268.gl.Disabled])
     }, null != (e = null == require ? true : require.tags) ? module : {})
   })
