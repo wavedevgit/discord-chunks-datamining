@@ -61,10 +61,6 @@ function v(e) {
         loop: true
       },
       size: "lg",
-      badge: {
-        type: "beta",
-        variant: "expressive"
-      },
       title: f.intl.string(x.default["1AE46+"]),
       body: [f.intl.string(x.default.cNc1g4), f.intl.string(f.t["4JNXHB"])],
       actions: [{
