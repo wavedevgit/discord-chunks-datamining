@@ -13,7 +13,7 @@ var Chunk442837 = require("./442837.js"),
 function c(e, t) {
   return (0, r.e7)([l.Z, a.Z, s.Z], () => {
     let n = a.Z.getGuild(t);
-    if (!((null == n ? true : n.features.has(o.oNc.WELCOME_SCREEN_ENABLED)) === true && n.features.has(o.oNc.COMMUNITY)) || n.features.has(o.oNc.GUILD_SERVER_GUIDE)) returnfalse;
+    if (!((null == n ? true : n.features.has(o.GuildFeatures.WELCOME_SCREEN_ENABLED)) === true && n.features.has(o.GuildFeatures.COMMUNITY)) || n.features.has(o.GuildFeatures.GUILD_SERVER_GUIDE)) returnfalse;
     let r = l.Z.getChannel(e);
     return e === s.Z.getChannelId(t) && null != r && r.getGuildId() === n.id && (0, i.zi)(r.type)
   })

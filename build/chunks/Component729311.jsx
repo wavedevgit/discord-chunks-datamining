@@ -206,7 +206,7 @@ function Z(e) {
       }), m ? null : (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(w, {
           guild: n
-        }), (0, r.jsx)(N.Z, {
+        }), (0, r.jsx)(E.Z, {
           className: T.channelBrowserOuter,
           guild: n,
           categories: c,
@@ -236,7 +236,7 @@ function Z(e) {
           })
         })]
       })]
-    }), (0, r.jsx)(E.Z, {
+    }), (0, r.jsx)(N.Z, {
       guild: n,
       scrollToQuestions: () => {
         null != g.current && g.current.scrollIntoView({

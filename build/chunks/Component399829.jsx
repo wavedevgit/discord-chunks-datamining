@@ -71,7 +71,7 @@ class w extends Chunk647438.Component {
       s = e.map(e => {
         var n;
         return {
-          numRequired: E.oCV[e.tier],
+          numRequired: N.oCV[e.tier],
           name: (0, y.nW)(e.tier),
           y: null != (n = t[e.tier]) ? n : 0,
           key: e.tier
@@ -145,7 +145,7 @@ class w extends Chunk647438.Component {
             tiers: l,
             tierIndex: i,
             onSetRef: this.setTierRef,
-            isAnimatedTo: E.oCV[this.state.animatedTier] >= E.oCV[r.tier],
+            isAnimatedTo: N.oCV[this.state.animatedTier] >= N.oCV[r.tier],
             subscriptionCount: n,
             guildId: e
           }))]
@@ -156,7 +156,7 @@ class w extends Chunk647438.Component {
   constructor(...e) {
     super(...e), T(this, "tierRefs", {}), T(this, "defaultTierRef", i.createRef()), T(this, "subscribersPopoutTargetRef", i.createRef()), T(this, "state", {
       tierPositions: null,
-      animatedTier: E.Eu4.NONE
+      animatedTier: N.Eu4.NONE
     }), T(this, "measure", () => {
       let {
         uniqueSubscriberCount: e

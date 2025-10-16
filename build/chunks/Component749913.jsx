@@ -215,7 +215,7 @@ function ed(e) {
         hasNameError: v,
         hasMessageError: _
       } = a(t, i, l);
-      if (s(v ? (0, G.V_)() : null), o(_ ? (0, G.T4)() : null), v || _) return {
+      if (s(v ? (0, V.V_)() : null), o(_ ? (0, V.T4)() : null), v || _) return {
         shouldClear: false,
         shouldRefocus: true
       };
@@ -241,7 +241,7 @@ function ed(e) {
         }
       } catch (t) {
         var C, y;
-        return (null == (C = t.body) ? true : C.code) === er.evJ.AUTOMOD_TITLE_BLOCKED ? s((0, G.Gx)(t.body, e)) : (null == (y = t.body) ? true : y.code) === er.evJ.AUTOMOD_MESSAGE_BLOCKED && o((0, G.Gx)(t.body, e)), {
+        return (null == (C = t.body) ? true : C.code) === er.evJ.AUTOMOD_TITLE_BLOCKED ? s((0, V.Gx)(t.body, e)) : (null == (y = t.body) ? true : y.code) === er.evJ.AUTOMOD_MESSAGE_BLOCKED && o((0, V.Gx)(t.body, e)), {
           shouldClear: false,
           shouldRefocus: true
         }
@@ -398,11 +398,11 @@ let eu = Chunk647438.memo(function(e) {
     });
     let T = i.useCallback(async e => {
         let n = e.clipboardData.files[0];
-        null != n && n.type.startsWith("image/") && (e.preventDefault(), await (0, V.d)([n], t, L.d.FirstThreadMessage, {
+        null != n && n.type.startsWith("image/") && (e.preventDefault(), await (0, G.d)([n], t, L.d.FirstThreadMessage, {
           origin: "clipboard"
         }), j.getState().setFormOpenFromUserAction())
       }, [t, j]),
-      w = (0, G.Op)(m, {
+      w = (0, V.Op)(m, {
         content: h
       });
     return (0, r.jsxs)("div", {
@@ -595,7 +595,7 @@ let eg = Chunk647438.memo(function(e) {
       event: er.CkL.TEXTAREA_BLUR,
       handler: _
     });
-    let w = (0, G.Op)(m, {
+    let w = (0, V.Op)(m, {
       content: f.textValue
     });
     return (0, r.jsx)("div", {
@@ -621,7 +621,7 @@ let eg = Chunk647438.memo(function(e) {
             }),
             onChange: y,
             onSubmit: T,
-            promptToUpload: V.d,
+            promptToUpload: G.d,
             disabled: a,
             onKeyDown: e => {
               ("ArrowUp" === e.key || "ArrowDown" === e.key) && e.stopPropagation(), b && "Escape" === e.key && !j.getState().submitting && (null == s || s.blur(), j.getState().setFormOpen(false), j.getState().setTitleFocused(false), j.getState().setBodyFocused(false), j.getState().setPreviewing(false))

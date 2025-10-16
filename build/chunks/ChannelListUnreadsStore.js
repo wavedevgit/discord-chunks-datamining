@@ -125,7 +125,7 @@ function A(e) {
   let {
     guildId: t
   } = e, n = g.Z.getGuild(t);
-  return null != n && !!n.features.has(j.oNc.COMMUNITY) && T(t)
+  return null != n && !!n.features.has(j.GuildFeatures.COMMUNITY) && T(t)
 }
 
 function R(e) {
@@ -134,7 +134,7 @@ function R(e) {
   } = e, n = h.Z.getChannel(t);
   if (null == n) returnfalse;
   let r = g.Z.getGuild(n.guild_id);
-  return null != r && !!r.features.has(j.oNc.COMMUNITY) && T(n.guild_id)
+  return null != r && !!r.features.has(j.GuildFeatures.COMMUNITY) && T(n.guild_id)
 }
 
 function D(e) {
@@ -143,7 +143,7 @@ function D(e) {
   } = e, n = h.Z.getChannel(t.id);
   if (null == n) returnfalse;
   let r = g.Z.getGuild(t.guild_id);
-  return null != r && !!r.features.has(j.oNc.COMMUNITY) && T(n.guild_id)
+  return null != r && !!r.features.has(j.GuildFeatures.COMMUNITY) && T(n.guild_id)
 }
 
 function L(e) {
@@ -152,7 +152,7 @@ function L(e) {
   } = e, n = h.Z.getChannel(t);
   if (null == n) returnfalse;
   let r = g.Z.getGuild(n.guild_id);
-  return null != r && !!r.features.has(j.oNc.COMMUNITY) && b.Z.getGuildId() === n.guild_id && T(n.guild_id)
+  return null != r && !!r.features.has(j.GuildFeatures.COMMUNITY) && b.Z.getGuildId() === n.guild_id && T(n.guild_id)
 }
 
 function M(e) {
@@ -181,7 +181,7 @@ let G = new k(Chunk570140.Z, {
       guildId: t,
       channelIds: n
     } = e, r = g.Z.getGuild(t);
-    return null != r && !!r.features.has(j.oNc.COMMUNITY) && null != n && !a().isEqual(I[t], n) && (I[t] = n, w(t))
+    return null != r && !!r.features.has(j.GuildFeatures.COMMUNITY) && null != n && !a().isEqual(I[t], n) && (I[t] = n, w(t))
   },
   BULK_ACK: function(e) {
     let {
@@ -195,7 +195,7 @@ let G = new k(Chunk570140.Z, {
       return null == (t = h.Z.getChannel(n)) ? true : t.guild_id
     }).filter(y.lm).uniq().forEach(e => {
       let t = g.Z.getGuild(e);
-      null != t && t.features.has(j.oNc.COMMUNITY) && T(e) && (n = true)
+      null != t && t.features.has(j.GuildFeatures.COMMUNITY) && T(e) && (n = true)
     }), n
   },
   CHANNEL_ACK: L,
@@ -207,7 +207,7 @@ let G = new k(Chunk570140.Z, {
   MESSAGE_DELETE: L,
   PASSIVE_UPDATE_V2: function(e) {
     let t = g.Z.getGuild(e.guildId);
-    return !!(e.channels.length > 0 && null != t && t.features.has(j.oNc.COMMUNITY)) && T(e.guildId)
+    return !!(e.channels.length > 0 && null != t && t.features.has(j.GuildFeatures.COMMUNITY)) && T(e.guildId)
   },
   RESORT_THREADS: L,
   THREAD_CREATE: D,

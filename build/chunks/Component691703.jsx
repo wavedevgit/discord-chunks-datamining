@@ -57,7 +57,7 @@ function g(e) {
       }, [e, r, t])
     }
   }(t);
-  return null != t.guild && t.guild.features.includes(p.oNc.DISCOVERABLE) ? (0, r.jsxs)("div", {
+  return null != t.guild && t.guild.features.includes(p.GuildFeatures.DISCOVERABLE) ? (0, r.jsxs)("div", {
     className: n,
     children: [(0, r.jsx)(l.Heading, {
       variant: "heading-sm/semibold",

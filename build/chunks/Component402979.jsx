@@ -14,7 +14,7 @@ function u(e) {
   var t, r, {
       guild: u
     } = e,
-    f = function(e, t) {
+    s = function(e, t) {
       if (null == e) return {};
       var r, n, o = function(e, t) {
         if (null == e) return {};
@@ -29,10 +29,10 @@ function u(e) {
       }
       return o
     }(e, ["guild"]);
-  let s = u.id,
+  let f = u.id,
     b = o.useCallback(() => {
-      c.Z.leaveGuild(s, true)
-    }, [s]);
+      a.Z.leaveGuild(f, true)
+    }, [f]);
   return (0, n.jsx)(i.ConfirmModal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
@@ -54,13 +54,13 @@ function u(e) {
     header: l.intl.formatToPlainString(l.t["1GX6Pz"], {
       name: u.name
     }),
-    confirmText: u.features.has(a.oNc.HUB) ? l.intl.string(l.t.Dv8gFR) : l.intl.string(l.t.J2TBi4),
+    confirmText: u.features.has(c.GuildFeatures.HUB) ? l.intl.string(l.t.Dv8gFR) : l.intl.string(l.t.J2TBi4),
     cancelText: l.intl.string(l.t["ETE/oK"]),
     onConfirm: b
-  }, f), r = r = {
+  }, s), r = r = {
     children: (0, n.jsx)(i.Text, {
       variant: "text-md/normal",
-      children: u.features.has(a.oNc.HUB) ? l.intl.format(l.t.ZHTXVF, {
+      children: u.features.has(c.GuildFeatures.HUB) ? l.intl.format(l.t.ZHTXVF, {
         name: u.name
       }) : l.intl.format(l.t.ZEXC0t, {
         name: u.name

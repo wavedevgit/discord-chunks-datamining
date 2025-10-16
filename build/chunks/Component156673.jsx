@@ -1,5 +1,5 @@
 /** Chunk was on 8926 **/
-/** chunk id: 156673, original params: e,n,t (module,exports,require) **/
+/** chunk id: 156673, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => c
 });
@@ -15,11 +15,11 @@ var Chunk481060 = require("./481060.js"),
 
 function c(e) {
   let {
-    guild: n,
-    onSelect: t
-  } = e, c = (0, u.Z)(n.id), h = (0, a.wC)(n.id);
+    guild: t,
+    onSelect: n
+  } = e, c = (0, u.Z)(t.id), h = (0, a.wC)(t.id);
   return (0, i.jsx)(l.v2r, {
-    onSelect: t,
+    onSelect: n,
     navId: "guild-browse-channels-context-menu",
     "aria-label": o.intl.string(o.t.ogxXGh),
     onClose: r.Zy,
@@ -28,7 +28,7 @@ function c(e) {
         id: "go-to-settings",
         label: o.intl.string(o.t.X70lV1),
         action: () => {
-          s.Z.open(n.id, d.pNK.ONBOARDING)
+          s.Z.open(t.id, d.pNK.ONBOARDING)
         }
       }), c]
     })

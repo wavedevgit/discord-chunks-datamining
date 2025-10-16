@@ -54,8 +54,8 @@ let P = function() {
   let A = Chunk580685.Y.VISIBLE.has(Z.visibility),
     L = (0, Chunk731722.up)(w),
     k = !L || (null == Z ? true : Z.tag) == null,
-    M = null != (e = Z.badge) ? module : Chunk131085.QV["0"],
-    G = null != (t = Z.badgeColorPrimary) ? exports : Chunk131085.Ek["0"].primary,
+    G = null != (e = Z.badge) ? module : Chunk131085.QV["0"],
+    M = null != (t = Z.badgeColorPrimary) ? exports : Chunk131085.Ek["0"].primary,
     U = null != (n = Z.badgeColorSecondary) ? require : Chunk131085.Ek["0"].secondary,
     B = (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk196902.Z, {
@@ -63,18 +63,18 @@ let P = function() {
         guildId: w.id,
         isDisabled: k,
         tag: null != (P = Z.tag) ? P : "",
-        badge: M,
-        primaryColor: G,
+        badge: G,
+        primaryColor: M,
         secondaryColor: U
       }), (0, Chunk951288.jsx)(Chunk910494.Z, {
         className: Chunk764009.section,
-        selectedBadge: M,
+        selectedBadge: G,
         guildId: w.id
       }), (0, Chunk951288.jsx)(Chunk423087.Z, {
         className: Chunk764009.section,
         guildId: w.id,
-        badge: M,
-        primaryColor: G,
+        badge: G,
+        primaryColor: M,
         secondaryColor: U
       })]
     });
@@ -126,8 +126,8 @@ let P = function() {
                 var e;
                 Chunk434404.Z.updateGuildProfile(w.id, {
                   tag: null != (e = Z.tag) ? module : "",
-                  badge: M,
-                  badgeColorPrimary: G,
+                  badge: G,
+                  badgeColorPrimary: M,
                   badgeColorSecondary: U
                 })
               } else Chunk434404.Z.updateGuildProfile(w.id, {
@@ -153,8 +153,8 @@ let P = function() {
         children: [(0, Chunk951288.jsx)(Chunk978088.Z, {
           guildId: w.id,
           tag: Z.tag,
-          badge: M,
-          primaryColor: G,
+          badge: G,
+          primaryColor: M,
           secondaryColor: U
         }), !k && (0, Chunk951288.jsx)(Chunk582066.Z, {
           guildId: w.id

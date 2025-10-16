@@ -19,7 +19,7 @@ function d(e) {
   let [t, n] = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [l.Z, s.Z], r = t.getGuild(e);
   if (null == r) returnfalse;
   let i = (0, a.l)(r),
-    o = r.features.has(u.oNc.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE);
+    o = r.features.has(u.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE);
   return !!(i && o || n.isViewingServerShop(e))
 }
 

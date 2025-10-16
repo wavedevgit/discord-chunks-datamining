@@ -24,7 +24,7 @@ let a = (0, Chunk818083.B)({
   o = e => {
     var t;
     return r.useEffect(() => {
-      null != e && e.features.has(l.oNc.HUB) && a.trackExposure({
+      null != e && e.features.has(l.GuildFeatures.HUB) && a.trackExposure({
         guildId: e.id,
         location: "467c32_1"
       })
@@ -33,6 +33,6 @@ let a = (0, Chunk818083.B)({
       location: "467c32_2"
     }, {
       autoTrackExposure: false,
-      disable: null == e || !e.features.has(l.oNc.HUB)
+      disable: null == e || !e.features.has(l.GuildFeatures.HUB)
     })
   }

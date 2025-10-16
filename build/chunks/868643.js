@@ -29,7 +29,7 @@ function p(e) {
     var t, n, i;
     if (null == e) returntrue;
     let r = null == (t = a.Z.getChannel(e.channel_id)) ? true : t.guild_id;
-    if (null != r && (null == (n = o.Z.getGuild(r)) ? true : n.features.has(c.oNc.FORWARDING_DISABLED))) returntrue;
+    if (null != r && (null == (n = o.Z.getGuild(r)) ? true : n.features.has(c.GuildFeatures.FORWARDING_DISABLED))) returntrue;
     let s = null != r && l.Z.isChannelOrThreadParentGated(r, e.channel_id),
       u = null != e && (null == (i = a.Z.getChannel(e.channel_id)) ? true : i.isModeratorReportChannel());
     return s || u

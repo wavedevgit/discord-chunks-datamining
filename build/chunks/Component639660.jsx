@@ -34,7 +34,7 @@ function b(e) {
     guildId: t
   } = e, n = (0, o.e7)([s.Z], () => {
     var e;
-    return (null == (e = s.Z.getGuild(t)) ? true : e.features.has(m.oNc.PREMIUM_TIER_3_OVERRIDE)) === true
+    return (null == (e = s.Z.getGuild(t)) ? true : e.features.has(m.GuildFeatures.PREMIUM_TIER_3_OVERRIDE)) === true
   }), b = (0, c.Z)(t), h = b.length > 0, {
     shouldShow: j,
     notificationConfig: C

@@ -14,5 +14,5 @@ let s = () => (0, Chunk997950.xu)().selectedGuildId,
     var e;
     let t = s(),
       n = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(exports));
-    return null != (e = null == require ? true : require.features.has(Chunk981631.oNc.HUB)) && module
+    return null != (e = null == require ? true : require.features.has(Chunk981631.GuildFeatures.HUB)) && module
   }

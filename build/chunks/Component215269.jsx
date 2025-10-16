@@ -46,10 +46,10 @@ function y(t) {
     channel: y,
     recurrenceId: n,
     isRecurrenceItem: P
-  }), w = (0, g.Z)(e, O, y), S = (0, E.Z)(e, O, y), D = (0, a.Z)(e, O.id, n), T = (0, f.Z)(e), x = (0, u.Z)({
+  }), w = (0, g.Z)(e, O, y), S = (0, E.Z)(e, O, y), D = (0, a.Z)(e, O.id, n), T = (0, f.Z)(e), x = (0, o.Z)({
     id: e,
     label: Z.intl.string(Z.t.WZwPOz)
-  }), I = (0, u.Z)({
+  }), I = (0, o.Z)({
     id: n,
     label: Z.intl.string(Z.t.NZRGQk)
   }), C = (0, c.Z)(e, O.id, y, n), G = (0, v.Z)({
@@ -57,7 +57,7 @@ function y(t) {
     guildId: O.id,
     recurrenceId: n
   });
-  return (0, l.jsx)(o.Z, {
+  return (0, l.jsx)(u.Z, {
     context: h,
     object: p.qAy.CONTEXT_MENU,
     children: (0, l.jsxs)(r.v2r, {

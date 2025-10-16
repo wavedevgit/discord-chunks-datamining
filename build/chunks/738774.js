@@ -23,7 +23,7 @@ function l(e) {
   let n = r.Z.getMonetizationRestrictionsFetchState(e),
     a = r.Z.getMonetizationRestrictions(e),
     l = i.Z.getGuild(e);
-  return n === r.M.FETCHED ? s(a) : null == (t = null == l ? true : l.features.has(o.oNc.CREATOR_MONETIZABLE_RESTRICTED)) || t
+  return n === r.M.FETCHED ? s(a) : null == (t = null == l ? true : l.features.has(o.GuildFeatures.CREATOR_MONETIZABLE_RESTRICTED)) || t
 }
 
 function c(e) {
@@ -36,7 +36,7 @@ function u(e) {
   let n = r.Z.getMonetizationRestrictionsFetchState(e),
     a = r.Z.getMonetizationRestrictions(e),
     s = i.Z.getGuild(e);
-  return n === r.M.FETCHED ? c(a) : null == (t = null == s ? true : s.features.has(o.oNc.CREATOR_MONETIZABLE_RESTRICTED)) || t
+  return n === r.M.FETCHED ? c(a) : null == (t = null == s ? true : s.features.has(o.GuildFeatures.CREATOR_MONETIZABLE_RESTRICTED)) || t
 }
 
 function d(e) {

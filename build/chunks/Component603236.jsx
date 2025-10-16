@@ -51,8 +51,8 @@ let f = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
       setInviteFlags: E,
       copyValue: y,
       changePage: C,
-      inviteChannel: N,
-      source: _,
+      inviteChannel: _,
+      source: N,
       code: T,
       guildScheduledEvent: b,
       disabled: j,
@@ -66,14 +66,14 @@ let f = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
     } = d, O = l.useCallback(() => {
       g.default.track(x.rMx.COPY_INSTANT_INVITE, {
         server: u.Z.getGuildId(),
-        channel: null == N ? true : N.id,
-        channel_type: null == N ? true : N.type,
-        location: _,
+        channel: null == _ ? true : _.id,
+        channel_type: null == _ ? true : _.type,
+        location: N,
         code: T,
         guild_scheduled_event_id: null == b ? true : b.id,
         application_id: null == A ? true : A.id
       })
-    }, [null == A ? true : A.id, N, _, T, b]);
+    }, [null == A ? true : A.id, _, N, T, b]);
     return (0, i.jsxs)(o.Kqy, {
       gap: 16,
       children: [(0, i.jsx)(f, {

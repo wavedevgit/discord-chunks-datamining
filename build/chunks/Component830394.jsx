@@ -21,7 +21,7 @@ function d(t) {
     channel: g
   } = t, f = null != n, {
     canManageGuildEvent: b
-  } = (0, o.XJ)(null != g ? g : d), [v, E] = (0, r.Wu)([u.ZP], () => [u.ZP.isActive(e), u.ZP.getGuildScheduledEvent(e)]), p = (0, a.Z)(n, null == E ? true : E.id), Z = null != E && b(E);
+  } = (0, u.XJ)(null != g ? g : d), [v, E] = (0, r.Wu)([o.ZP], () => [o.ZP.isActive(e), o.ZP.getGuildScheduledEvent(e)]), p = (0, a.Z)(n, null == E ? true : E.id), Z = null != E && b(E);
   return f && (null == p ? true : p.is_canceled) && Z && (!v || f) ? (0, l.jsx)(i.sNh, {
     id: s.intl.string(s.t.b8606O),
     label: s.intl.string(s.t.b8606O),

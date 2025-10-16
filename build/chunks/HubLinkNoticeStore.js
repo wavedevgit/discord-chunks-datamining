@@ -12,7 +12,7 @@ let u = false;
 
 function d(e) {
   let t = s.Z.getGuild(e);
-  return null != t && !!t.features.has(c.oNc.HUB) && (u = true, true)
+  return null != t && !!t.features.has(c.GuildFeatures.HUB) && (u = true, true)
 }
 
 function p() {
@@ -23,7 +23,7 @@ class f extends(r = Chunk442837.ZP.Store) {
     this.waitFor(Chunk430824.Z, Chunk810788.Z), this.syncWith([Chunk810788.Z], p)
   }
   channelNoticePredicate(e) {
-    return !!e.features.has(c.oNc.LINKED_TO_HUB) && !u
+    return !!e.features.has(c.GuildFeatures.LINKED_TO_HUB) && !u
   }
 }(i = "displayName") in f ? Object.defineProperty(f, i, {
   value: "HubLinkNoticeStore",

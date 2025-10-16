@@ -82,7 +82,7 @@ function T(e) {
     text: f ? y.intl.string(y.t["IQ/6Sk"]) : null,
     position: "top",
     children: (0, r.jsx)("div", {
-      className: N.clearButtonWrapper,
+      className: E.clearButtonWrapper,
       children: (0, r.jsx)(d.Avr, {
         variant: "primary",
         textVariant: "text-sm/semibold",
@@ -102,9 +102,9 @@ function P(e) {
     locked: l
   } = e;
   if (0 === i.length) return (0, r.jsxs)("div", {
-    className: N.noResultsContainer,
+    className: E.noResultsContainer,
     children: [(0, r.jsx)(x.Z, {
-      className: N.noResults
+      className: E.noResults
     }), (0, r.jsx)(d.Text, {
       variant: "text-sm/normal",
       children: y.intl.string(y.t.DEBGqK)
@@ -119,13 +119,13 @@ function P(e) {
     }) && y.intl.string(y.t["K+D+GB"]) : y.intl.string(y.t.nOtPMD)
   }
   return (0, r.jsxs)("div", {
-    className: N.permissionsWrapper,
+    className: E.permissionsWrapper,
     children: [(0, r.jsx)(T, {
       guild: t,
       role: n,
       locked: l
     }), i.map((e, t) => (0, r.jsx)(u.Z, {
-      className: N.permissionsForm,
+      className: E.permissionsForm,
       spec: e,
       permissions: n.permissions,
       locked: l,
@@ -162,16 +162,16 @@ function w(e) {
       search_type: "Permissions"
     }), T.current = true)
   }, [c]), (0, r.jsx)(d.yWw, {
-    className: N.scroller,
+    className: E.scroller,
     style: {
       scrollPaddingTop: m
     },
     onScroll: x,
     children: (0, r.jsxs)("div", {
-      className: E.contentWidth,
+      className: N.contentWidth,
       children: [(0, r.jsxs)("div", {
-        className: a()(E.header, E.stickyHeader, {
-          [E.stickyHeaderElevated]: !b
+        className: a()(N.header, N.stickyHeader, {
+          [N.stickyHeaderElevated]: !b
         }),
         ref: h,
         children: [(0, r.jsx)(v.Z, {
@@ -180,12 +180,12 @@ function w(e) {
           selectedSection: C.ZI.PERMISSIONS,
           setSelectedSection: s
         }), (0, r.jsx)("div", {
-          className: N.noticeContainer,
+          className: E.noticeContainer,
           children: (0, r.jsx)(_.Z, {
             role: n
           })
         }), (0, r.jsx)("div", {
-          className: N.searchContainer,
+          className: E.searchContainer,
           children: (0, r.jsx)(d.E1j, {
             query: c,
             onChange: u,

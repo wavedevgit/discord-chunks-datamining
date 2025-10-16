@@ -21,7 +21,7 @@ function _(e) {
   let n = e.id,
     r = (null != (t = l.Z.getNewMemberActions(n)) ? t : []).length > 0,
     i = l.Z.getEnabled(n);
-  return r && e.features.has(d.oNc.COMMUNITY) && !(e.features.has(d.oNc.GUILD_ONBOARDING) && !i)
+  return r && e.features.has(d.GuildFeatures.COMMUNITY) && !(e.features.has(d.GuildFeatures.GUILD_ONBOARDING) && !i)
 }
 
 function p(e, t) {
@@ -36,7 +36,7 @@ function h(e) {
   return (0, r.e7)([o.Z, s.Z, a.Z], () => {
     if (__OVERLAY__ || e === d.ME || e === d.I_8) returnfalse;
     let n = s.Z.getGuild(e);
-    return !!(null == n ? true : n.features.has(d.oNc.COMMUNITY)) && (a.Z.isFullServerPreview(e) ? _(n) : (0, i.wC)(e) ? t || p(e, o.Z) : !!(0, c.Z)(n) && (t || p(e, o.Z)))
+    return !!(null == n ? true : n.features.has(d.GuildFeatures.COMMUNITY)) && (a.Z.isFullServerPreview(e) ? _(n) : (0, i.wC)(e) ? t || p(e, o.Z) : !!(0, c.Z)(n) && (t || p(e, o.Z)))
   }, [e, t])
 }
 
@@ -45,6 +45,6 @@ function m(e) {
     n = a.Z.isFullServerPreview(e);
   if (null == t || __OVERLAY__ || e === d.ME || e === d.I_8) returnfalse;
   if (n) return _(t);
-  let r = (0, i.wC)(e) && t.features.has(d.oNc.GUILD_ONBOARDING) && t.features.has(d.oNc.GUILD_SERVER_GUIDE);
-  return (t.features.has(d.oNc.GUILD_ONBOARDING) && t.features.has(d.oNc.GUILD_SERVER_GUIDE) || r) && t.features.has(d.oNc.COMMUNITY)
+  let r = (0, i.wC)(e) && t.features.has(d.GuildFeatures.GUILD_ONBOARDING) && t.features.has(d.GuildFeatures.GUILD_SERVER_GUIDE);
+  return (t.features.has(d.GuildFeatures.GUILD_ONBOARDING) && t.features.has(d.GuildFeatures.GUILD_SERVER_GUIDE) || r) && t.features.has(d.GuildFeatures.COMMUNITY)
 }

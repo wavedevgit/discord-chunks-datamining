@@ -53,7 +53,7 @@ function u(e) {
       guild: n,
       experimentConfig: i
     } = e;
-    if (null == n ? true : n.features.has(r.oNc.HUB)) return a.ZP.INVITE_OPTIONS_FOREVER.value;
+    if (null == n ? true : n.features.has(r.GuildFeatures.HUB)) return a.ZP.INVITE_OPTIONS_FOREVER.value;
     let {
       defaultMaxAge: l
     } = null != i ? i : d.getCurrentConfig({

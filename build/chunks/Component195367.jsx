@@ -34,31 +34,31 @@ function y(e) {
   } = e, {
     entityType: S,
     channelId: I,
-    description: T,
-    name: Z,
+    description: Z,
+    name: T,
     image: w,
-    scheduledEndTime: D,
-    scheduledStartTime: k,
+    scheduledEndTime: k,
+    scheduledStartTime: D,
     recurrenceRule: R
   } = t, A = (0, u._d)(I), _ = (0, u.K3)(I), G = null != t && (0, g.xt)(t), U = l.useMemo(() => {
     let e = (0, x.v1)(t);
     return null != e ? e : {
-      startDate: a()(k)
+      startDate: a()(D)
     }
-  }, [t, k]), [L, M] = l.useState(() => (0, x.zi)(a()(k), R)), z = l.useRef(null);
+  }, [t, D]), [M, L] = l.useState(() => (0, x.zi)(a()(D), R)), z = l.useRef(null);
   l.useEffect(() => {
     if (P) {
       var e;
       null == (e = z.current) || e.focus()
     }
   }, [P]);
-  let V = e => {
+  let F = e => {
       C({
         image: e
       })
     },
-    F = (e, t) => {
-      if (null == e || true === t) return void V(null);
+    V = (e, t) => {
+      if (null == e || true === t) return void F(null);
       (0, s.ZDy)(async () => {
         let {
           default: l
@@ -87,15 +87,15 @@ function y(e) {
             let {
               imageUri: t
             } = e;
-            return V(t)
+            return F(t)
           },
           uploadType: j.pC.SCHEDULED_EVENT_IMAGE
         }, n))
       })
     },
-    W = null == E ? true : E.getFirstFieldErrorMessage("name"),
-    X = null == E ? true : E.getFirstFieldErrorMessage("description"),
-    B = null == W && null == X ? null == E ? true : E.getAnyErrorMessage() : null;
+    B = null == E ? true : E.getFirstFieldErrorMessage("name"),
+    W = null == E ? true : E.getFirstFieldErrorMessage("description"),
+    X = null == B && null == W ? null == E ? true : E.getAnyErrorMessage() : null;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: b.blockedUsersContainer,
@@ -109,7 +109,7 @@ function y(e) {
         children: [(0, r.jsx)(s.oil, {
           label: f.intl.string(f.t["0HbEQ0"]),
           required: true,
-          error: null != W ? W : B,
+          error: null != B ? B : X,
           onChange: e => {
             C({
               name: e
@@ -117,7 +117,7 @@ function y(e) {
           },
           placeholder: f.intl.string(f.t["6/yarq"]),
           maxLength: p.p,
-          value: Z,
+          value: T,
           autoComplete: "off",
           inputRef: z
         }), (0, r.jsx)(v.Z, {
@@ -130,13 +130,13 @@ function y(e) {
               scheduledStartTime: null == t ? true : t.toISOString(),
               scheduledEndTime: null == n ? true : n.toISOString()
             };
-            null != t && null != D && (null == n ? true : n.isBefore(t)) && (r.scheduledEndTime = t.add(1, "hour").toISOString()), null != t && null != L && (r.recurrenceRule = (0, x.mF)(L, t)), C(r)
+            null != t && null != k && (null == n ? true : n.isBefore(t)) && (r.scheduledEndTime = t.add(1, "hour").toISOString()), null != t && null != M && (r.recurrenceRule = (0, x.mF)(M, t)), C(r)
           },
           onRecurrenceChange: e => {
             let t = U.startDate;
             null != t && (C({
               recurrenceRule: (0, x.mF)(e, t)
-            }), M(e))
+            }), L(e))
           },
           schedule: U,
           recurrenceRule: R,
@@ -148,9 +148,9 @@ function y(e) {
           error: N
         }), (0, r.jsx)(s.Kx8, {
           label: f.intl.string(f.t["+gRCCw"]),
-          error: X,
+          error: W,
           placeholder: f.intl.string(f.t["kWO/Ex"]),
-          value: T,
+          value: Z,
           onChange: e => {
             C({
               description: e
@@ -173,7 +173,7 @@ function y(e) {
                   return null != (n = (0, h.Z)((0, m.Gb)(t, y, i))) ? n : null
                 }
               },
-              onChange: F,
+              onChange: V,
               hint: f.intl.string(f.t.G44Xmp),
               showRemoveButton: false,
               enabled: true
@@ -181,12 +181,12 @@ function y(e) {
               variant: "primary",
               size: "sm",
               text: f.intl.string(f.t.gmUvOz),
-              onClick: () => V(null)
+              onClick: () => F(null)
             })]
           }) : (0, r.jsx)(c.Z, {
             size: "sm",
             variant: "primary",
-            onChange: F,
+            onChange: V,
             text: f.intl.string(f.t.vKCGYW)
           })
         })]

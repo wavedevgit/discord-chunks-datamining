@@ -33,7 +33,7 @@ function _(e) {
   } = (0, g.u)(t), C = _ !== u.a.FETCHED, {
     fetchedEmbed: O,
     embedEnabled: y,
-    embedChannelId: N
+    embedChannelId: E
   } = (0, s.cj)([f.Z], () => {
     let {
       fetchedEmbed: e,
@@ -45,15 +45,15 @@ function _(e) {
       embedEnabled: t,
       embedChannelId: n
     }
-  }), E = i.useMemo(() => (0, b.S)(t), [t]), I = i.useMemo(() => (0, b.a)(t), [t]), [S, T] = i.useState(false), P = null != c && l.Y.VISIBLE.has(c.visibility), w = !C && !P && !y;
+  }), N = i.useMemo(() => (0, b.S)(t), [t]), I = i.useMemo(() => (0, b.a)(t), [t]), [S, T] = i.useState(false), P = null != c && l.Y.VISIBLE.has(c.visibility), w = !C && !P && !y;
   i.useEffect(() => {
     O || (0, p.R)(t)
   }, [O, t]), i.useEffect(() => {
     m()
   }, [t, m]);
   let Z = i.useCallback(async e => {
-    T(true), await (0, h.c)(t, e, N), T(false)
-  }, [N, t]);
+    T(true), await (0, h.c)(t, e, E), T(false)
+  }, [E, t]);
   return O ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(o.rsf, {
       label: j.intl.string(j.t.NR6hub),
@@ -71,7 +71,7 @@ function _(e) {
         description: j.intl.string(j.t.LxVR9P),
         guildId: t,
         widgetEnabled: y,
-        widgetChannelId: N,
+        widgetChannelId: E,
         enableLocalUpdate: true
       }), (0, r.jsxs)("div", {
         className: v.twoColumns,
@@ -88,7 +88,7 @@ function _(e) {
           children: (0, r.jsx)(a.gNt, {
             label: j.intl.string(j.t.VECJcH),
             children: (0, r.jsx)(d.Z, {
-              value: E
+              value: N
             })
           })
         })]

@@ -32,7 +32,7 @@ function x(e) {
     C = null == v ? true : v.mfaEnabled,
     O = x === f.BpS.ELEVATED,
     y = _ && C,
-    N = (0, i.throttle)(async e => {
+    E = (0, i.throttle)(async e => {
       y && await m.Z.updateMFALevel({
         guildId: n.id,
         level: e ? f.BpS.ELEVATED : f.BpS.NONE,
@@ -45,7 +45,7 @@ function x(e) {
       section: f.oAB.ACCOUNT
     })
   }) : h.intl.string(h.t["9Ghu4+"]));
-  let E = n.features.has(f.oNc.DISCOVERABLE);
+  let N = n.features.has(f.GuildFeatures.DISCOVERABLE);
   return (0, r.jsxs)("div", {
     className: b.simpleItemWrapper,
     children: [(0, r.jsxs)("div", {
@@ -59,17 +59,17 @@ function x(e) {
         color: "header-secondary",
         children: [h.intl.string(h.t["a/93Jy"]), " ", t]
       })]
-    }), !y || O && E ? (0, r.jsx)(a.u, {
-      text: E ? h.intl.string(h.t["KG1V/P"]) : _ ? h.intl.string(h.t.NmsheX) : h.intl.string(h.t.LieBtb),
+    }), !y || O && N ? (0, r.jsx)(a.u, {
+      text: N ? h.intl.string(h.t["KG1V/P"]) : _ ? h.intl.string(h.t.NmsheX) : h.intl.string(h.t.LieBtb),
       children: (0, r.jsx)(p.Z, {
         checked: O,
         disabled: true,
-        onChange: N,
+        onChange: E,
         className: b.bringToFront
       })
     }) : (0, r.jsx)(p.Z, {
       checked: O,
-      onChange: N,
+      onChange: E,
       className: b.bringToFront
     })]
   })

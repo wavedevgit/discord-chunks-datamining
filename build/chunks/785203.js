@@ -31,7 +31,7 @@ function b(e) {
       enableStudyGroup: v
     } = (0, c.s)(e),
     y = O.length > 0,
-    I = v && !(null == e ? true : e.features.has(g.oNc.HUB)),
+    I = v && !(null == e ? true : e.features.has(g.GuildFeatures.HUB)),
     C = (0, s.Vm)(n);
   if (i.useEffect(() => {
       a.Z.getGuildEventsForCurrentUser(n)

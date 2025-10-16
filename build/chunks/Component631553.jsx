@@ -336,7 +336,7 @@ class eZ extends Chunk647438.Component {
   }
   constructor(e) {
     super(e), eO(this, "didUpdate", false), eO(this, "handleWindowResize", () => {
-      H.default.isFocusedPidOutOfProcess() ? this.forceUpdate() : u()(() => {
+      F.default.isFocusedPidOutOfProcess() ? this.forceUpdate() : u()(() => {
         this.forceUpdate()
       }, 500)
     }), eO(this, "activeKeyEventShapes", []), eO(this, "lockEventShape", (0, $.d2)(this.props.keybindKeyCodes)), eO(this, "getActiveKeyEventIndex", e => this.activeKeyEventShapes.findIndex(t => h()(t, e))), eO(this, "onKeyDownGlobal", e => {

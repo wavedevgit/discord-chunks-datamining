@@ -31,7 +31,7 @@ class m extends Chunk317770.Z {
     if (null == t || !(e => {
         var t;
         let n = d.Z.getGuild(e),
-          r = !!(null == n ? true : n.features.has(h.oNc.COMMUNITY)),
+          r = !!(null == n ? true : n.features.has(h.GuildFeatures.COMMUNITY)),
           l = p.Z.can(h.Plq.MANAGE_CHANNELS, n),
           a = (0, s.zu)(i.z.FORUM_CHANNEL_UPSELL_MODAL),
           o = null != (t = u.Z.getMemberCount(e)) ? t : 0;

@@ -232,7 +232,7 @@ function em(e) {
         isGuest: N,
         isActiveChannelOrUnarchivableThread: g
       }),
-      q = t.type === el.d4z.GUILD_ANNOUNCEMENT && null != p && p.features.has(el.oNc.NEWS) && (A || j) && (0, m.Z)(n),
+      q = t.type === el.d4z.GUILD_ANNOUNCEMENT && null != p && p.features.has(el.GuildFeatures.NEWS) && (A || j) && (0, m.Z)(n),
       et = t.getGuildId(),
       en = null != et && n.type === el.uaV.USER_JOIN && z.Z.canWithPartialContext(el.Plq.MANAGE_GUILD, {
         guildId: et

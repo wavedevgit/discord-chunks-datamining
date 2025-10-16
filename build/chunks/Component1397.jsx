@@ -336,7 +336,7 @@ function K(e) {
   let {
     channel: r,
     children: l
-  } = e, a = r.getGuildId(), s = (0, o.e7)([N.Z], () => N.Z.getGuild(a)), c = (0, o.e7)([A.Z], () => A.Z.getCheck(a)), u = r.type === k.d4z.GUILD_ANNOUNCEMENT && null != s && s.features.has(k.oNc.NEWS), d = (0, o.e7)([Z.Z], () => u ? Z.Z.getFollowerStatsForChannel(r.id) : null), p = (0, o.e7)([O.Z], () => O.Z.isLurking(a)), f = (0, o.e7)([M.default], () => M.default.getCurrentUser()), m = null != (t = null == f ? true : f.isStaff()) && t, g = (0, o.e7)([T.ZP], () => {
+  } = e, a = r.getGuildId(), s = (0, o.e7)([N.Z], () => N.Z.getGuild(a)), c = (0, o.e7)([A.Z], () => A.Z.getCheck(a)), u = r.type === k.d4z.GUILD_ANNOUNCEMENT && null != s && s.features.has(k.GuildFeatures.NEWS), d = (0, o.e7)([Z.Z], () => u ? Z.Z.getFollowerStatsForChannel(r.id) : null), p = (0, o.e7)([O.Z], () => O.Z.isLurking(a)), f = (0, o.e7)([M.default], () => M.default.getCurrentUser()), m = null != (t = null == f ? true : f.isStaff()) && t, g = (0, o.e7)([T.ZP], () => {
     var e, t;
     return null != f && null != (t = null == (e = T.ZP.getMember(a, f.id)) ? true : e.isPending) && t
   }), b = !!(0, y.Dc)(s), v = (0, o.e7)([x.Z], () => x.Z.shouldShowPopout(a)), j = (0, o.e7)([w.Z], () => w.Z.can(k.Plq.SEND_MESSAGES, r)), E = (0, o.e7)([_.Z], () => _.Z.getRequest(a)), {

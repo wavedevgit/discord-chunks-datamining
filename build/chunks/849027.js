@@ -44,11 +44,11 @@ async function v(e) {
     case O.oC.GUILD_HOME:
       return (0, l.s)(t);
     case O.oC.CHANNEL_BROWSER:
-      return null != v && v.features.has(y.oNc.COMMUNITY);
+      return null != v && v.features.has(y.GuildFeatures.COMMUNITY);
     case O.oC.GUILD_ONBOARDING:
       return s.ZP.shouldShowOnboarding(t);
     case O.oC.CUSTOMIZE_COMMUNITY:
-      return null != v && v.features.has(y.oNc.COMMUNITY);
+      return null != v && v.features.has(y.GuildFeatures.COMMUNITY);
     case O.oC.MEMBER_SAFETY:
       return (0, o.lv)(t);
     case O.oC.GUILD_BOOSTS:
@@ -56,7 +56,7 @@ async function v(e) {
     case O.oC.REPORT_TO_MOD:
       return null != v && (0, f.Z)(v);
     case O.oC.GAME_SERVERS:
-      return (0, d.v$)(t, "isAccessibleChannelOrThreadPath") && null != v && v.features.has(y.oNc.GAME_SERVERS);
+      return (0, d.v$)(t, "isAccessibleChannelOrThreadPath") && null != v && v.features.has(y.GuildFeatures.GAME_SERVERS);
     default:
       (0, E.vE)(n)
   }

@@ -58,7 +58,7 @@ function y(e) {
     transitionState: n,
     onClose: y,
     analyticsData: O
-  } = e, _ = (0, a.e7)([s.Z], () => s.Z.getGuild(t), [t]), C = !!(null == _ ? true : _.features.has(f.oNc.INVITES_DISABLED)), [N] = r.useState(false), [S, E] = r.useState(g.Fl), I = (0, a.e7)([m.Z], () => m.Z.getGuildIncident(t)), P = (0, u.BT)(_), w = (0, p.SG)(I) || C, T = (0, p.sN)(I), [Z, k] = r.useState(w), [A, D] = r.useState(T), [R, L] = r.useState(false), M = Z !== w || A !== T || R, B = C && !P;
+  } = e, _ = (0, a.e7)([s.Z], () => s.Z.getGuild(t), [t]), C = !!(null == _ ? true : _.features.has(f.GuildFeatures.INVITES_DISABLED)), [N] = r.useState(false), [S, E] = r.useState(g.Fl), I = (0, a.e7)([m.Z], () => m.Z.getGuildIncident(t)), P = (0, u.BT)(_), w = (0, p.SG)(I) || C, T = (0, p.sN)(I), [Z, k] = r.useState(w), [A, D] = r.useState(T), [R, L] = r.useState(false), M = Z !== w || A !== T || R, B = C && !P;
   if (null == _) return y(), null;
 
   function U() {

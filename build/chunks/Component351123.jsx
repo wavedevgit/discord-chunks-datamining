@@ -44,7 +44,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk411851 = require("./411851.js");
 
-function U(e) {
+function G(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -63,7 +63,7 @@ function U(e) {
   return e
 }
 
-function G(e, t) {
+function U(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -95,8 +95,8 @@ function W(e) {
         S = false;
       switch (v) {
         case D.m$.ROLES:
-          var N;
-          j = (g = n[y]).rowType === D.aC.ROLE && (null == (N = g.tags) ? true : N.guild_connections) === null ? (0, i.jsx)(b.Z, {
+          var O;
+          j = (g = n[y]).rowType === D.aC.ROLE && (null == (O = g.tags) ? true : O.guild_connections) === null ? (0, i.jsx)(b.Z, {
             className: V.shield,
             color: g.colorString,
             size: 20
@@ -142,7 +142,7 @@ function W(e) {
           g = null
       }
       if (null == g) return null;
-      let O = !S && null == r && null != g.id;
+      let N = !S && null == r && null != g.id;
       return (0, i.jsxs)(x.Z, {
         justify: x.Z.Justify.BETWEEN,
         align: x.Z.Align.CENTER,
@@ -162,7 +162,7 @@ function W(e) {
           children: (0, i.jsx)(d.P3F, {
             onClick: () => {
               var e, n, i;
-              return O && null != g && (e = g.id, n = g.name, i = g.rowType, void u.Z.show({
+              return N && null != g && (e = g.id, n = g.name, i = g.rowType, void u.Z.show({
                 title: H.intl.string(H.t.GuPYQE),
                 body: H.intl.format(H.t.xERCnZ, {
                   name: n
@@ -176,7 +176,7 @@ function W(e) {
                 })(e, i)
               }))
             },
-            "aria-disabled": !O,
+            "aria-disabled": !N,
             "aria-label": H.intl.string(H.t.N86XcH),
             children: (0, i.jsx)(d.k$p, {
               size: "md",
@@ -249,7 +249,7 @@ function F(e) {
                 let {
                   default: e
                 } = await n.e("46786").then(n.bind(n, 388131));
-                return t => (0, i.jsx)(e, G(U({}, t), {
+                return t => (0, i.jsx)(e, U(G({}, t), {
                   channelId: l.id
                 }))
               })
@@ -262,7 +262,7 @@ function F(e) {
         roles: u,
         members: h,
         disabledReason: g ? null : H.intl.string(H.t.arRuER),
-        getRemoveTooltipHint: N.kk
+        getRemoveTooltipHint: O.kk
       })]
     })]
   })
@@ -283,7 +283,7 @@ function z(e) {
       let {
         ConfirmModal: e
       } = await Promise.resolve().then(n.bind(n, 878678));
-      return n => (0, i.jsx)(e, G(U({}, n), {
+      return n => (0, i.jsx)(e, U(G({}, n), {
         confirmButtonColor: c.Tt.BRAND,
         header: H.intl.string(H.t.ZzdgUl),
         confirmText: H.intl.string(H.t.BddRzc),
@@ -353,7 +353,7 @@ function z(e) {
                 let {
                   default: e
                 } = await Promise.resolve().then(n.bind(n, 185413));
-                return t => (0, i.jsx)(e, G(U({}, t), {
+                return t => (0, i.jsx)(e, U(G({}, t), {
                   channelId: l.id,
                   inSettings: true
                 }))
@@ -398,7 +398,7 @@ let J = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk496675.Z, Chunk271383.
     if (null != module) {
       let a = Chunk485386.Z.getSortedRoles(module.id);
       r = Chunk277053.Z.editedPermissionIds.reduce((e, t) => {
-        let n = O.Z.getPermissionOverwrite(t);
+        let n = N.Z.getPermissionOverwrite(t);
         return null != n && (e[t] = n), e
       }, {}), i = Chunk605436.kA(module, Chunk442837, exports, exports.accessPermissions, Chunk120356), l = Chunk605436.cR(require, exports, module, exports.accessPermissions, Chunk120356), s = Chunk605436.Yk(exports, Chunk120356)
     }
@@ -456,13 +456,13 @@ let J = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk496675.Z, Chunk271383.
           let {
             default: e
           } = await Promise.resolve().then(n.bind(n, 170509));
-          return t => (0, i.jsx)(e, G(U({}, t), {
+          return t => (0, i.jsx)(e, U(G({}, t), {
             channel: s,
             category: r,
             onConfirm: async () => {
               let {
                 guild_id: e
-              } = r, t = U({}, r.permissionOverwrites);
+              } = r, t = G({}, r.permissionOverwrites);
               null != e && null == t[e] && (t[e] = P.we(e)), await (0, j.u)(s, t[e].deny, t[e].allow) && (0, g.wk)(s.id, {
                 permissionOverwrites: Object.values(t)
               })

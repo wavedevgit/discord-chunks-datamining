@@ -12,7 +12,7 @@ function a(e, t) {
   let {
     isGIF: n
   } = t;
-  if (e === l.pC.GUILD_BANNER) return n ? r.oNc.ANIMATED_BANNER : r.oNc.BANNER
+  if (e === l.pC.GUILD_BANNER) return n ? r.GuildFeatures.ANIMATED_BANNER : r.GuildFeatures.BANNER
 }
 
 function i(e) {

@@ -25,6 +25,6 @@ function l(e) {
     });
   return ((0, r.e7)([i.Z], () => {
     var t;
-    return (null == (t = i.Z.getGuild(e)) ? true : t.features.has(o.oNc.PREMIUM_TIER_3_OVERRIDE)) === true
+    return (null == (t = i.Z.getGuild(e)) ? true : t.features.has(o.GuildFeatures.PREMIUM_TIER_3_OVERRIDE)) === true
   }) ? 0 : o.oCV[n]) + t.available
 }

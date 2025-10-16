@@ -294,7 +294,7 @@ let eu = Chunk647438.memo(function(e) {
   } = null == t ? {
     contentPlaceholder: null,
     renderedContent: null
-  } : (0, G.f)(t, i, false, false, l()(es.messageContent, el.messageContent, eo.inlineFormat, eo.__invalid_smallFontSize), {
+  } : (0, V.f)(t, i, false, false, l()(es.messageContent, el.messageContent, eo.inlineFormat, eo.__invalid_smallFontSize), {
     leadingIconClass: es.messageContentLeadingIcon,
     trailingIconClass: es.messageContentTrailingIcon,
     iconSize: ei.WW
@@ -437,7 +437,7 @@ function eg(e) {
     isLurking: s,
     isPendingMember: o
   } = (0, B.Z)(n);
-  return null == a || l ? null : (0, r.jsx)(V.le, {
+  return null == a || l ? null : (0, r.jsx)(G.le, {
     className: es.updateReactionButton,
     message: t,
     readOnly: n.isArchivedLockedThread(),

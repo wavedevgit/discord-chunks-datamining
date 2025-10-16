@@ -82,8 +82,8 @@ function h(e) {
     handlePasteEvent: C,
     handleInputChange: O,
     handleKeyDown: y,
-    handleContainerKeyUp: N,
-    handleRemoveTag: E,
+    handleContainerKeyUp: E,
+    handleRemoveTag: N,
     handleTagChangeEvent: I,
     handleSelectTag: S,
     handleUnselectTag: T,
@@ -100,9 +100,9 @@ function h(e) {
       selections: D,
       isSelecting: A
     }
-  } = _, L = (0, o.Z)(R), [k, M] = i.useState(false), G = i.useCallback(() => {
+  } = _, L = (0, o.Z)(R), [k, G] = i.useState(false), M = i.useCallback(() => {
     var e;
-    M(false), P(), null == (e = x.current) || e.focus({
+    G(false), P(), null == (e = x.current) || e.focus({
       preventScroll: true
     })
   }, [P]);
@@ -113,8 +113,8 @@ function h(e) {
   }, [c, Z, k]);
   let U = i.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-      e && G(), M(false)
-    }, [G]),
+      e && M(), G(false)
+    }, [M]),
     B = i.useCallback(e => t => {
       if (t) {
         var n;
@@ -126,22 +126,22 @@ function h(e) {
             return null == (e = j.current) ? true : e.focus()
           }, 16)
         }))
-      } else T(e, true), M(true)
+      } else T(e, true), G(true)
     }, [S, T, D, R]);
   return (0, r.jsxs)("div", {
     className: a()(m.mainContainer, h),
     ref: j,
     tabIndex: 0,
-    onKeyUp: N,
+    onKeyUp: E,
     children: [(0, r.jsxs)(f, {
       ref: v,
-      onClick: G,
+      onClick: M,
       children: [R.map((e, t) => (0, r.jsx)(d.Z, {
         value: e,
         onChange: I(t),
         onBlur: U,
         onFocus: B(t),
-        onRemove: () => E(t),
+        onRemove: () => N(t),
         isSelected: D.includes(e),
         isSelecting: A,
         error: u[e],

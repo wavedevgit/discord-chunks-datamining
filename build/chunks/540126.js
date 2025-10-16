@@ -376,7 +376,7 @@ class er {
       let t = s[e];
       if (t.type !== B.d4z.GUILD_CATEGORY) {
         if (t.type === B.d4z.GUILD_DIRECTORY) {
-          null == l || l.features.has(B.oNc.HUB) || E.push(t);
+          null == l || l.features.has(B.GuildFeatures.HUB) || E.push(t);
           continue
         }
         eS(this, t, O) ? _.push(t) : (t.type === B.d4z.GUILD_VOICE || t.type === B.d4z.GUILD_STAGE_VOICE) && (null != t.parent_id && null != c[t.parent_id] && m.push(c[t.parent_id]), m.push(t)), null != t.parent_id && t.parent_id in f ? f[t.parent_id].push(t) : u.push(t)

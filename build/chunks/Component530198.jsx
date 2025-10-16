@@ -173,20 +173,20 @@ function C(e) {
     let n = null != t ? t : f.iO.GREATER_THAN,
       r = Math.round(Number(null != e ? e : 0));
     return n === f.iO.GREATER_THAN ? r = Math.max(1, r + 1) : n === f.iO.LESS_THAN && (r = Math.max(0, r - 1)), [r.toString(), n]
-  }(null == c || null == (t = c.configuration) ? true : t.value, x), [O, y] = i.useState(_), N = null != s ? h.intl.format(s, {
+  }(null == c || null == (t = c.configuration) ? true : t.value, x), [O, y] = i.useState(_), E = null != s ? h.intl.format(s, {
     count: O,
     metadataHook: () => O
   }) : (0, r.jsx)("span", {
     className: b.fieldText,
     children: a
-  }), E = i.useId();
+  }), N = i.useId();
   return (0, r.jsxs)("tr", {
     className: b.ruleContainer,
     children: [(0, r.jsx)("th", {
       scope: "row",
       children: (0, r.jsx)(d.nn4, {
         children: (0, r.jsx)("label", {
-          htmlFor: E,
+          htmlFor: N,
           children: l
         })
       })
@@ -200,7 +200,7 @@ function C(e) {
         className: b.numericalRuleSubItemContainer,
         children: (0, r.jsx)(d.Text, {
           variant: "text-md/normal",
-          children: N
+          children: E
         })
       })]
     }), (0, r.jsx)("td", {
@@ -233,7 +233,7 @@ function C(e) {
       })
     }), (0, r.jsx)("td", {
       children: (0, r.jsx)(d.rsf, {
-        id: E,
+        id: N,
         checked: j,
         onChange: e => {
           var t, n;
@@ -320,7 +320,7 @@ function y(e) {
   })
 }
 
-function N(e) {
+function E(e) {
   let {
     configMetadataMap: t,
     onConfigurationChange: n,
@@ -367,7 +367,7 @@ function N(e) {
   })
 }
 
-function E(e) {
+function N(e) {
   let {
     configMetadataMap: t,
     onConfigurationChange: n,
@@ -671,10 +671,10 @@ function Z(e) {
     h = null;
   switch (null == d ? true : d.type) {
     case p.ABu.STEAM:
-      h = (0, r.jsx)(N, x({}, f));
+      h = (0, r.jsx)(E, x({}, f));
       break;
     case p.ABu.TWITTER:
-      h = (0, r.jsx)(E, x({}, f));
+      h = (0, r.jsx)(N, x({}, f));
       break;
     case p.ABu.REDDIT:
       h = (0, r.jsx)(I, x({}, f));

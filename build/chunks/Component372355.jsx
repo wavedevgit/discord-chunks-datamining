@@ -1,5 +1,5 @@
 /** Chunk was on 95055 **/
-/** chunk id: 372355, original params: e,r,n (module,exports,require) **/
+/** chunk id: 372355, original params: e,r,t (module,exports,require) **/
 require.d(exports, {
   default: () => T
 }), require("./388685.js");
@@ -22,38 +22,38 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk883287 = require("./883287.js");
 
-function E(e) {
+function g(e) {
   for (var r = 1; r < arguments.length; r++) {
-    var n = null != arguments[r] ? arguments[r] : {},
-      t = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (t = t.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), t.forEach(function(r) {
-      var t;
-      t = n[r], r in e ? Object.defineProperty(e, r, {
-        value: t,
+    var t = null != arguments[r] ? arguments[r] : {},
+      n = Object.keys(t);
+    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(t, e).enumerable
+    }))), n.forEach(function(r) {
+      var n;
+      n = t[r], r in e ? Object.defineProperty(e, r, {
+        value: n,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[r] = t
+      }) : e[r] = n
     })
   }
   return e
 }
 
-function g(e, r) {
+function O(e, r) {
   return r = null != r ? r : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : (function(e, r) {
-    var n = Object.keys(e);
+    var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var t = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, t)
+      var n = Object.getOwnPropertySymbols(e);
+      t.push.apply(t, n)
     }
-    return n
-  })(Object(r)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(r, n))
+    return t
+  })(Object(r)).forEach(function(t) {
+    Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(r, t))
   }), e
 }
-let O = function() {
+let N = function() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk706454.default.locale;
   return "https://".concat(Chunk981631.xr4, "/hc/").concat(module.toLowerCase(), "/requests/new?ticket_form_id=360000168511")
 };
@@ -65,9 +65,9 @@ function T(e) {
     fromUser: T,
     onClose: y,
     transitionState: I
-  } = e, [v, w] = i.useState(false), A = r.features.has(x.oNc.VERIFIED) || r.features.has(x.oNc.PARTNERED), R = A ? j.intl.format(j.t.A37vwM, {
-    ticketUrl: O()
-  }) : null, S = r.features.has(x.oNc.CREATOR_MONETIZABLE) || r.features.has(x.oNc.CREATOR_MONETIZABLE_PROVISIONAL);
+  } = e, [v, w] = i.useState(false), A = r.features.has(x.GuildFeatures.VERIFIED) || r.features.has(x.GuildFeatures.PARTNERED), R = A ? j.intl.format(j.t.A37vwM, {
+    ticketUrl: N()
+  }) : null, S = r.features.has(x.GuildFeatures.CREATOR_MONETIZABLE) || r.features.has(x.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL);
   async function k(e) {
     await m.Z.transferOwnership(r.id, f.id, b.X.EMAIL, e)
   }
@@ -80,8 +80,8 @@ function T(e) {
       T.mfaEnabled || null == T.email ? (await m.Z.transferOwnership(r.id, f.id, T.mfaEnabled ? b.X.MFA : null), (0, o.xf)()) : (await m.Z.sendTransferOwnershipPincode(r.id), (0, c.ZDy)(async () => {
         let {
           default: e
-        } = await n.e("56499").then(n.bind(n, 433570));
-        return r => (0, t.jsx)(e, g(E({}, r), {
+        } = await t.e("56499").then(t.bind(t, 433570));
+        return r => (0, n.jsx)(e, O(g({}, r), {
           onFormSubmit: k,
           onResend: P,
           onSuccess: o.xf,
@@ -94,11 +94,11 @@ function T(e) {
         }))
       }))
     } catch (e) {
-      e.body.code === x.evJ.NEW_OWNER_INELIGIBLE_FOR_SERVER_SUBSCRIPTION && (0, c.h7j)(e => (0, t.jsx)(c.ConfirmModal, g(E({}, e), {
+      e.body.code === x.evJ.NEW_OWNER_INELIGIBLE_FOR_SERVER_SUBSCRIPTION && (0, c.h7j)(e => (0, n.jsx)(c.ConfirmModal, O(g({}, e), {
         header: j.intl.string(j.t["m+nQlp"]),
         confirmText: j.intl.string(j.t["NX+WJC"]),
         confirmButtonColor: s.zx.Colors.BRAND,
-        children: (0, t.jsx)(c.Text, {
+        children: (0, n.jsx)(c.Text, {
           variant: "text-md/normal",
           children: j.intl.format(j.t.wG747e, {
             server_subscription_owner_transfer_article: x.T23
@@ -111,89 +111,89 @@ function T(e) {
     name: a.ImpressionNames.GUILD_TRANSFER_OWNERSHIP
   });
   let C = _.ZP.getNickname(r.id, true, f),
-    D = f.hasAvatarForGuild(r.id),
-    L = () => (0, t.jsxs)("span", {
-      className: N.guildTransfer,
-      children: [null != r.icon ? (0, t.jsx)(c.qEK, {
+    G = f.hasAvatarForGuild(r.id),
+    F = () => (0, n.jsxs)("span", {
+      className: E.guildTransfer,
+      children: [null != r.icon ? (0, n.jsx)(c.qEK, {
         src: p.ZP.getGuildIconURL({
           id: r.id,
           icon: r.icon,
           size: 16
         }),
         size: c.EFr.SIZE_16,
-        className: N.miniGuildIcon,
+        className: E.miniGuildIcon,
         "aria-hidden": true
-      }) : null, (0, t.jsx)(c.Text, {
-        className: N.guildName,
+      }) : null, (0, n.jsx)(c.Text, {
+        className: E.guildName,
         variant: "text-sm/bold",
         children: r.name
       })]
     });
-  return (0, t.jsx)(c.Y0X, {
+  return (0, n.jsx)(c.Y0X, {
     transitionState: I,
     parentComponent: "TransferOwnership",
-    children: (0, t.jsxs)("form", {
+    children: (0, n.jsxs)("form", {
       onSubmit: Z,
-      children: [(0, t.jsx)(c.xBx, {
+      children: [(0, n.jsx)(c.xBx, {
         separator: false,
-        children: (0, t.jsx)(c.Heading, {
+        children: (0, n.jsx)(c.Heading, {
           variant: "heading-lg/semibold",
-          className: N.header,
+          className: E.header,
           children: j.intl.string(j.t.Z5s7PD)
         })
-      }), (0, t.jsxs)(c.hzk, {
-        children: [(0, t.jsx)(c.Text, {
+      }), (0, n.jsxs)(c.hzk, {
+        children: [(0, n.jsx)(c.Text, {
           variant: "text-sm/normal",
-          className: N.subHeader,
-          children: null != C || D ? j.intl.format(j.t.E90vgo, {
-            GuildHook: L,
+          className: E.subHeader,
+          children: null != C || G ? j.intl.format(j.t.E90vgo, {
+            GuildHook: F,
             user: (0, h.W5)(f),
             AKAHook: function() {
-              return (0, t.jsxs)("span", {
-                className: N.akaTransfer,
-                children: [(0, t.jsx)(c.IGR, {
+              return (0, n.jsxs)("span", {
+                className: E.akaTransfer,
+                children: [(0, n.jsx)(c.IGR, {
                   text: j.intl.string(j.t.l1QVfn),
                   disableColor: true,
-                  className: N.akaBadge
-                }), D ? (0, t.jsx)(c.qEK, {
+                  className: E.akaBadge
+                }), G ? (0, n.jsx)(c.qEK, {
                   src: f.getAvatarURL(r.id, 16, true),
                   size: c.EFr.SIZE_16,
-                  className: N.miniAvatar,
+                  className: E.miniAvatar,
                   "aria-hidden": true
-                }) : null, (0, t.jsx)(c.Text, {
-                  className: N.nickname,
+                }) : null, (0, n.jsx)(c.Text, {
+                  className: E.nickname,
                   variant: "text-sm/normal",
                   children: null != C ? C : h.ZP.getName(f)
                 })]
               })
             }
           }) : j.intl.format(j.t["2XLnGx"], {
-            GuildHook: L,
+            GuildHook: F,
             user: (0, h.W5)(f)
           })
-        }), (0, t.jsxs)(u.Z, {
-          className: N.fromToWrapper,
+        }), (0, n.jsxs)(u.Z, {
+          className: E.fromToWrapper,
           justify: u.Z.Justify.CENTER,
-          children: [(0, t.jsx)("div", {
-            className: N.from,
-            children: (0, t.jsx)(l.Z, {
+          children: [(0, n.jsx)("div", {
+            className: E.from,
+            children: (0, n.jsx)(l.Z, {
               user: T,
               size: c.EFr.SIZE_80
             })
-          }), (0, t.jsx)("div", {
-            className: N.to,
-            children: (0, t.jsx)(l.Z, {
+          }), (0, n.jsx)("div", {
+            className: E.to,
+            children: (0, n.jsx)(l.Z, {
               user: f,
               size: c.EFr.SIZE_80
             })
           })]
-        }), S && (0, t.jsx)(c.Wn, {
+        }), S && (0, n.jsx)(c.Wn, {
           messageType: c.QYI.INFO,
-          className: N.roleSubscriptionText,
+          className: E.roleSubscriptionText,
           children: j.intl.format(j.t.LAlucX, {
             server_subscription_owner_transfer_article: x.T23
           })
-        }), (0, t.jsx)(c.Checkbox, {
+        }), (0, n.jsx)(c.Checkbox, {
           label: j.intl.format(j.t.xm6ACA, {
             username: (0, h.W5)(f)
           }),
@@ -202,19 +202,19 @@ function T(e) {
           onChange: function(e) {
             w(e)
           }
-        }), A && (0, t.jsx)(c.Wn, {
+        }), A && (0, n.jsx)(c.Wn, {
           messageType: c.QYI.WARNING,
           children: R
         })]
-      }), (0, t.jsx)(c.mzw, {
-        children: (0, t.jsxs)(c.ButtonGroup, {
+      }), (0, n.jsx)(c.mzw, {
+        children: (0, n.jsxs)(c.ButtonGroup, {
           direction: "horizontal-reverse",
-          children: [(0, t.jsx)(c.Button, {
+          children: [(0, n.jsx)(c.Button, {
             variant: "critical-primary",
             text: j.intl.string(j.t.Z5s7PD),
             type: "submit",
             disabled: !v
-          }), (0, t.jsx)(c.Button, {
+          }), (0, n.jsx)(c.Button, {
             variant: "secondary",
             text: j.intl.string(j.t["ETE/oK"]),
             onClick: y

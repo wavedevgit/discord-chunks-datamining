@@ -55,7 +55,7 @@ function p(e) {
 }
 async function m(e, t) {
   let n = new Set(e.features);
-  n.has(u.oNc.COMMUNITY) ? t ? n.delete(u.oNc.RAID_ALERTS_DISABLED) : n.add(u.oNc.RAID_ALERTS_DISABLED) : t ? n.add(u.oNc.NON_COMMUNITY_RAID_ALERTS) : n.delete(u.oNc.NON_COMMUNITY_RAID_ALERTS), await o.Z.saveGuild(e.id, {
+  n.has(u.GuildFeatures.COMMUNITY) ? t ? n.delete(u.GuildFeatures.RAID_ALERTS_DISABLED) : n.add(u.GuildFeatures.RAID_ALERTS_DISABLED) : t ? n.add(u.GuildFeatures.NON_COMMUNITY_RAID_ALERTS) : n.delete(u.GuildFeatures.NON_COMMUNITY_RAID_ALERTS), await o.Z.saveGuild(e.id, {
     features: n
   }, {
     throwErr: true

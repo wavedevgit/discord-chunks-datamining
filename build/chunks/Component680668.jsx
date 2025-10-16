@@ -69,7 +69,7 @@ function T(e) {
     F = null != G && G.isGuildVocal(),
     V = null != G && G.isGuildStageVoice(),
     H = (0, h.yE)(null != (t = w.flags) ? t : 0, a.$.IS_GUEST_INVITE),
-    Y = null != (v = null == P ? true : P.features.has(b.oNc.HUB)) && v,
+    Y = null != (v = null == P ? true : P.features.has(b.GuildFeatures.HUB)) && v,
     W = null == P ? true : P.id,
     {
       analyticsLocations: K
@@ -170,7 +170,7 @@ function T(e) {
         color: _.Z.Button.Colors.GREEN,
         children: F ? V ? y.intl.string(y.t["7vb2cX"]) : y.intl.string(y.t.gpqgam) : B ? y.intl.string(y.t.cEnaW1) : y.intl.string(y.t.XpeFYm)
       })]
-    }), P.features.has(b.oNc.HUB) && (0, r.jsxs)(r.Fragment, {
+    }), P.features.has(b.GuildFeatures.HUB) && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         className: O.separator
       }), (0, r.jsx)(s.Text, {

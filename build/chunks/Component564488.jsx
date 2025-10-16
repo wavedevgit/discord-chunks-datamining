@@ -33,7 +33,7 @@ let g = Chunk647438.memo(function(e) {
   i.useEffect(() => {
     g && h(t, true)
   }, [g, t, h]);
-  let N = i.useCallback(() => {
+  let E = i.useCallback(() => {
     j ? m || h(null) : m ? C(() => {
       h(t)
     }) : h(t)
@@ -50,7 +50,7 @@ let g = Chunk647438.memo(function(e) {
     }),
     isStuck: j && m,
     isExpanded: j,
-    onExpand: N,
+    onExpand: E,
     children: j && (0, r.jsx)(c.Z, {
       rule: _,
       isLoading: b,

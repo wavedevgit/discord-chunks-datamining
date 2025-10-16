@@ -16,7 +16,7 @@ var Chunk647438 = require("./647438.js"),
 function p(e) {
   let t = (0, i.e7)([o.Z, a.Z, c.default, s.ZP], () => {
     let t = o.Z.getGuild(e);
-    if ((null == t ? true : t.features.has(d.oNc.HUB)) !== true || true === a.Z.hasViewedPrompt(u.r.REAL_NAME_PROMPT, t.id)) return null;
+    if ((null == t ? true : t.features.has(d.GuildFeatures.HUB)) !== true || true === a.Z.hasViewedPrompt(u.r.REAL_NAME_PROMPT, t.id)) return null;
     let n = c.default.getCurrentUser();
     if (null == n) return null;
     let r = s.ZP.getMember(t.id, null == n ? true : n.id);

@@ -9,7 +9,7 @@ var Chunk430824 = require("./430824.js"),
   Chunk341653 = require("./341653.js"),
   Chunk981631 = require("./981631.js");
 let s = "13.2",
-  l = [Chunk981631.oNc.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE];
+  l = [Chunk981631.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE];
 
 function c(e, t) {
   let n = e.split(".").map(Number),

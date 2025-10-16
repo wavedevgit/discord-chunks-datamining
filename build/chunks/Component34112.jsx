@@ -79,7 +79,7 @@ function k(e) {
     renderHeader: o,
     headerHeight: d,
     query: u
-  } = e, g = (0, c.e7)([N.Z], () => N.Z.getRoleMemberCount(n.id), [n.id]), m = (0, c.e7)([C.Z], () => C.Z.getHighestRole(n), [n]), f = u.trim();
+  } = e, g = (0, c.e7)([E.Z], () => E.Z.getRoleMemberCount(n.id), [n.id]), m = (0, c.e7)([C.Z], () => C.Z.getHighestRole(n), [n]), f = u.trim();
   i.useEffect(() => {
     (0, y.E)(n.id)
   }, [n.id]);
@@ -89,7 +89,7 @@ function k(e) {
       search_type: "Roles"
     }), h.current = true)
   }, [u]);
-  let b = i.useMemo(() => a.filter(e => (0, E.uo)(e, f)), [a, f]),
+  let b = i.useMemo(() => a.filter(e => (0, N.uo)(e, f)), [a, f]),
     x = i.useMemo(() => [...a, l], [a, l]),
     {
       draggingId: j,
@@ -102,9 +102,9 @@ function k(e) {
       let {
         row: l
       } = e;
-      if (0 === b.length) return (0, r.jsx)(M, {}, "empty-role");
+      if (0 === b.length) return (0, r.jsx)(G, {}, "empty-role");
       let o = b[l];
-      return (0, r.jsx)(G, {
+      return (0, r.jsx)(M, {
         role: o,
         guild: n,
         highestRole: m,
@@ -128,7 +128,7 @@ function k(e) {
   })
 }
 
-function M() {
+function G() {
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk810688.emptyRoles,
     children: [(0, Chunk951288.jsx)("div", {
@@ -145,7 +145,7 @@ function M() {
   })
 }
 
-function G(e) {
+function M(e) {
   var t, l, c;
   let {
     role: d,
@@ -156,17 +156,17 @@ function G(e) {
     onDragStart: C,
     onDragReset: O,
     onDragComplete: y,
-    disableHover: N,
-    disableDrag: E,
+    disableHover: E,
+    disableDrag: N,
     setEditRoleId: S,
     setSelectedSection: P
-  } = e, k = (0, I.T)(p, h, d), M = null != k, [G, B] = i.useState(false), F = i.useMemo(() => ({
+  } = e, k = (0, I.T)(p, h, d), G = null != k, [M, B] = i.useState(false), F = i.useMemo(() => ({
     type: L,
     item: () => (C(d.id), {
       id: d.id,
       position: j
     }),
-    canDrag: () => G && !M,
+    canDrag: () => M && !G,
     collect: e => ({
       isDragging: e.isDragging()
     }),
@@ -175,11 +175,11 @@ function G(e) {
       if (null == n) return void O();
       y(n.roleId)
     }
-  }), [d, C, O, y, M, G, j]), [{
+  }), [d, C, O, y, G, M, j]), [{
     isDragging: H
   }, W] = (0, s.c)(F), V = i.useMemo(() => ({
     accept: L,
-    canDrop: () => !M,
+    canDrop: () => !G,
     collect: e => {
       let t = e.getItem();
       return null != t && e.isOver() && e.canDrop() ? {
@@ -191,7 +191,7 @@ function G(e) {
     drop: () => ({
       roleId: d.id
     })
-  }), [M, d]), [{
+  }), [G, d]), [{
     dragSourcePosition: z
   }, K] = (0, o.L)(V), Y = i.useCallback(e => {
     (0, m.jW)(e, async () => {
@@ -216,7 +216,7 @@ function G(e) {
   }
   return (0, r.jsxs)(g.P3F, {
     className: a()(Z.roleRow, {
-      [Z.roleRowDisableHover]: N,
+      [Z.roleRowDisableHover]: E,
       [Z.containerDragBefore]: null != z && j < z,
       [Z.containerDragAfter]: null != z && j > z
     }),
@@ -232,7 +232,7 @@ function G(e) {
     }),
     children: [(0, r.jsx)("div", {
       className: a()(Z.dragIcon, R.dragSpacing, {
-        [Z.dragIconHidden]: M || E
+        [Z.dragIconHidden]: G || N
       }),
       onMouseEnter: () => B(true),
       onMouseLeave: () => B(false),
@@ -290,11 +290,11 @@ function G(e) {
     }), (0, r.jsxs)("div", {
       className: a()(Z.buttonsContainer, R.buttonsSpacing),
       children: [(0, r.jsx)(u.u, {
-        text: M ? w.intl.string(w.t["HO/oXl"]) : w.intl.string(w.t.bt75u7),
+        text: G ? w.intl.string(w.t["HO/oXl"]) : w.intl.string(w.t.bt75u7),
         children: (0, r.jsx)(g.hU, {
           variant: "secondary",
-          "aria-label": M ? w.intl.string(w.t["HO/oXl"]) : w.intl.string(w.t.bt75u7),
-          icon: M ? g.tEF : g.vdY,
+          "aria-label": G ? w.intl.string(w.t["HO/oXl"]) : w.intl.string(w.t.bt75u7),
+          icon: G ? g.tEF : g.vdY,
           onClick: X
         })
       }), (0, r.jsx)(u.u, {

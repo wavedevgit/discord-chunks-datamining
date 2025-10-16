@@ -2,7 +2,7 @@
 /** chunk id: 944163, original params: e,i,t (module,exports,require) **/
 require.d(exports, {
   Z: () => f,
-  t: () => c
+  t: () => d
 }), require("./953529.js");
 var n, Chunk392711 = require("./392711.js"),
   r = require.n(Chunk392711),
@@ -18,19 +18,19 @@ function o(e, i, t) {
     writable: true
   }) : e[i] = t, e
 }
-let c = {
+let d = {
     version: "",
     description: "",
     formFields: []
   },
-  d = {};
+  c = {};
 class E extends(n = Chunk442837.ZP.Store) {
   get(e) {
-    if (null != e) return d[e]
+    if (null != e) return c[e]
   }
   getRulesPrompt(e) {
     var i;
-    return r().find(null == (i = d[e]) ? true : i.formFields, u.J)
+    return r().find(null == (i = c[e]) ? true : i.formFields, a.J)
   }
 }
 o(E, "displayName", "MemberVerificationFormStore");
@@ -45,7 +45,7 @@ let f = new E(Chunk570140.Z, {
     } = i;
     if (null != n && null != t) {
       var l;
-      return d[n.id] = {
+      return c[n.id] = {
         version: t.version,
         description: null != (l = t.description) ? l : "",
         formFields: t.form_fields,
@@ -59,11 +59,11 @@ let f = new E(Chunk570140.Z, {
       form: i,
       guildId: t
     } = e;
-    if (null == i) d[t] = c;
+    if (null == i) c[t] = d;
     else {
       var n;
-      let e = null != (n = d[t]) ? n : c;
-      d[t] = function(e) {
+      let e = null != (n = c[t]) ? n : d;
+      c[t] = function(e) {
         for (var i = 1; i < arguments.length; i++) {
           var t = null != arguments[i] ? arguments[i] : {},
             n = Object.keys(t);
@@ -82,12 +82,12 @@ let f = new E(Chunk570140.Z, {
     let {
       guildId: t
     } = e;
-    d[t] = null != (i = d[t]) ? i : c
+    c[t] = null != (i = c[t]) ? i : d
   },
   GUILD_DELETE: function(e) {
     let {
       guild: i
     } = e;
-    delete d[null == i ? true : i.id]
+    delete c[null == i ? true : i.id]
   }
 })

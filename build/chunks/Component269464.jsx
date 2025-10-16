@@ -22,7 +22,7 @@ function h(e) {
   let {
     guild: t,
     canManageGuild: n
-  } = e, h = t.features.has(d.oNc.BANNER), b = t.features.has(d.oNc.ANIMATED_BANNER), x = h && n, {
+  } = e, h = t.features.has(d.GuildFeatures.BANNER), b = t.features.has(d.GuildFeatures.ANIMATED_BANNER), x = h && n, {
     analyticsLocations: j
   } = (0, a.ZP)(), v = i.useCallback((e, n) => {
     (0, c.f4)(t, j, e, n)

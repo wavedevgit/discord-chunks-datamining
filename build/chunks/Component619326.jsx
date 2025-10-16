@@ -86,9 +86,9 @@ function v(e) {
       isDisabled: l
     }),
     {
-      ref: N
+      ref: E
     } = y,
-    E = function(e, t) {
+    N = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -118,8 +118,8 @@ function v(e) {
   return (0, r.jsxs)("div", b(h({
     className: f.buttonsContainer,
     "aria-label": p.intl.string(p.t.FJjrIy),
-    ref: N
-  }, E), {
+    ref: E
+  }, N), {
     children: [(0, r.jsx)("div", {
       className: a()(f.colorSwatch, {
         [f.disabled]: l

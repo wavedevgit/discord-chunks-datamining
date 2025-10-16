@@ -904,7 +904,7 @@ let tl = (0, Chunk112724.Z)(ti),
       isUnavailable: (0, p.e7)([eU.Z], () => (null == c ? true : c.guild_id) != null && eU.Z.isUnavailable(c.guild_id), [c]),
       showRealNameModal: $,
       showWelcomeModal: !q && ee,
-      showFollowButton: (null == c ? true : c.type) === e1.d4z.GUILD_ANNOUNCEMENT && (null == _ ? true : _.features.has(e1.oNc.NEWS)) || false
+      showFollowButton: (null == c ? true : c.type) === e1.d4z.GUILD_ANNOUNCEMENT && (null == _ ? true : _.features.has(e1.GuildFeatures.NEWS)) || false
     }, (0, p.cj)([eW.Z], () => ({
       hasVideo: null != c && eW.Z.hasVideo(c.id)
     }), [c])), {

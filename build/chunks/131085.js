@@ -109,10 +109,10 @@ let u = {
   f = [21, 22, 23, 24, 25],
   _ = [26, 27, 28, 29, 30],
   p = {
-    [Chunk981631.oNc.GUILD_TAGS_BADGE_PACK_PETS]: f,
-    [Chunk981631.oNc.GUILD_TAGS_BADGE_PACK_FLEX]: _
+    [Chunk981631.GuildFeatures.GUILD_TAGS_BADGE_PACK_PETS]: f,
+    [Chunk981631.GuildFeatures.GUILD_TAGS_BADGE_PACK_FLEX]: _
   },
   h = {
-    [Chunk981631.oNc.GUILD_TAGS_BADGE_PACK_PETS]: Chunk494497.MB,
-    [Chunk981631.oNc.GUILD_TAGS_BADGE_PACK_FLEX]: Chunk494497.Vk
+    [Chunk981631.GuildFeatures.GUILD_TAGS_BADGE_PACK_PETS]: Chunk494497.MB,
+    [Chunk981631.GuildFeatures.GUILD_TAGS_BADGE_PACK_FLEX]: Chunk494497.Vk
   }

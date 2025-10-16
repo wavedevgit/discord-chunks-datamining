@@ -12,11 +12,11 @@ var Chunk442837 = require("./442837.js"),
 function a(e) {
   return (0, r.e7)([i.Z], () => {
     let t = i.Z.getGuild(e);
-    return null != t && t.features.has(l.oNc.GUILD_ONBOARDING_EVER_ENABLED)
+    return null != t && t.features.has(l.GuildFeatures.GUILD_ONBOARDING_EVER_ENABLED)
   })
 }
 
 function s(e) {
   let t = i.Z.getGuild(e);
-  return null != t && t.features.has(l.oNc.GUILD_ONBOARDING_EVER_ENABLED)
+  return null != t && t.features.has(l.GuildFeatures.GUILD_ONBOARDING_EVER_ENABLED)
 }

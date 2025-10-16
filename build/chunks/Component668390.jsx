@@ -93,8 +93,8 @@ function f(e) {
     showContextMenu: y,
     theme: C,
     roleStyle: S,
-    onContextMenu: N,
-    "aria-label": O
+    onContextMenu: O,
+    "aria-label": N
   } = e, Z = (0, g._f)(s.id, r, null == r ? true : r.colorStrings);
   return u ? (0, i.jsx)("div", {
     className: p.dragged
@@ -104,8 +104,8 @@ function f(e) {
     selectedItem: f,
     onItemSelect: b,
     itemType: x,
-    "aria-label": null != v ? "".concat(O, ", ").concat(v) : O,
-    onContextMenu: N,
+    "aria-label": null != v ? "".concat(N, ", ").concat(v) : N,
+    onContextMenu: O,
     children: (0, i.jsxs)("div", {
       className: p.roleContent,
       children: ["dot" === S ? (0, i.jsx)(c.FhE, {

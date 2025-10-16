@@ -42,26 +42,26 @@ function g(e) {
     onMemberSelect: s
   } = e, g = t.id, p = (0, o.e7)([u.Z], () => u.Z.getEstimatedMemberSearchCountByGuildId(g), [g]), v = (0, d.$j)(g), _ = (0, d.M3)(g), C = r.useCallback(e => {
     null != e && (null == s || s(e))
-  }, [s]), E = (0, m.xb)(_, v, p), N = r.useRef(null), S = r.useRef(null), T = r.useCallback(() => {
+  }, [s]), E = (0, m.xb)(_, v, p), S = r.useRef(null), T = r.useRef(null), N = r.useCallback(() => {
     var e;
-    null == (e = N.current) || e.resetSearchText()
+    null == (e = S.current) || e.resetSearchText()
   }, []);
   return (0, l.jsx)("div", {
     className: a()(h.mainTableContainer, n),
     children: (0, l.jsxs)(c.Den, {
       className: h.horizatonalScroller,
-      ref: S,
+      ref: T,
       orientation: "horizontal",
       children: [(0, l.jsx)(b.Z, {
         guild: t,
-        ref: N
+        ref: S
       }), (0, l.jsx)(f, {
         guild: t
       }), (0, l.jsx)(x.Z, {
         guild: t,
         onSelectRow: C,
         searchState: E,
-        onResetForNewMembers: T
+        onResetForNewMembers: N
       }), E !== m.po.SUCCESS_STILL_INDEXING && (0, l.jsx)(j.Z, {
         guildId: t.id,
         onPageChange: i

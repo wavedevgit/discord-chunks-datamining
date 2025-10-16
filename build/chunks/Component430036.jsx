@@ -215,7 +215,7 @@ class el extends Chunk647438.Component {
       return 0 === t.length ? Promise.resolve({
         shouldClear: false,
         shouldRefocus: true
-      }) : (0, H.v)({
+      }) : (0, F.v)({
         openWarningPopout: e => this.setState({
           contentWarningProps: e
         }),
@@ -492,7 +492,7 @@ function ec(e) {
     s = (0, c.e7)([z.Z], () => z.Z.getChannelId(r)),
     o = (0, c.e7)([k.Z], () => k.Z.getChannel(s)),
     l = (0, c.e7)([U.ZP], () => U.ZP.getOverlayChatKeybind()),
-    a = null != l ? (0, F.BB)(l.shortcut, true) : "]",
+    a = null != l ? (0, H.BB)(l.shortcut, true) : "]",
     [d, u, p] = (0, c.Wu)([G.default], () => [G.default.getTextWidgetOpacity(), G.default.getActiveRegions(), !t && G.default.isPreviewingInGame()]),
     h = (0, c.e7)([L.Z], () => L.Z.getGuild(r)),
     f = (0, c.e7)([A.Z], () => null != r && A.Z.didAgree(r)),

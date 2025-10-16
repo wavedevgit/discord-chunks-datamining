@@ -23,7 +23,7 @@ function f(e) {
   } = e, h = (0, o.e7)([s.Z], () => {
     var e;
     let t = s.Z.getGuild(_.guild_id);
-    return null != (e = null == t ? true : t.features.has(u.oNc.COMMUNITY)) && e
+    return null != (e = null == t ? true : t.features.has(u.GuildFeatures.COMMUNITY)) && e
   }, [_.guild_id]), m = (null == (t = f.messageReference) ? true : t.guild_id) != null && null != f.webhookId && f.hasFlag(u.iLy.IS_CROSSPOST) && null != _.guild_id, g = _.type === a.d.GUILD_ANNOUNCEMENT && h, E = !f.hasFlag(u.iLy.EPHEMERAL) && (m || g), b = m && null != f.messageReference ? f.messageReference.message_id : f.id, y = m && null != f.messageReference ? f.messageReference.channel_id : _.id, O = m && (null == (n = f.messageReference) ? true : n.guild_id) != null ? f.messageReference.guild_id : _.guild_id, v = r.useCallback(e => {
     e ? c.Z.handleMessageBecameVisible({
       type: c.k.ANNOUNCEMENT,

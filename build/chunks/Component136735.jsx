@@ -46,15 +46,15 @@ let Z = e => {
     stickerPreview: t
   } = e;
   return (0, n.jsxs)("div", {
-    className: N.preview,
+    className: C.preview,
     children: [(0, n.jsx)("div", {
-      className: N.previewDark,
+      className: C.previewDark,
       children: null != t ? t : (0, n.jsx)("img", {
-        src: C,
+        src: N,
         alt: w.intl.string(w.t.qOsjZm)
       })
     }), (0, n.jsx)("div", {
-      className: N.previewLight,
+      className: C.previewLight,
       children: null != t ? t : (0, n.jsx)("img", {
         src: O,
         alt: w.intl.string(w.t.YC5NAA)
@@ -71,16 +71,16 @@ async function T(e) {
 }
 
 function R(e) {
-  var t, l, s, C, O, R, _, z;
+  var t, l, s, N, O, R, _, z;
   let {
     transitionState: A,
     onClose: B,
     guildId: U,
     sticker: L
-  } = e, K = (0, o.e7)([d.ZP], () => (null == L ? true : L.tags) != null ? d.ZP.getCustomEmojiById(L.tags) : null), M = null != (l = null == (t = f.default.getCurrentUser()) ? true : t.isStaff()) && l ? S.OC : S.Ht, [F, Y] = i.useState(null), [q, G] = i.useState(null != (s = null == L ? true : L.name) ? s : ""), [V, X] = i.useState({
+  } = e, K = (0, o.e7)([d.ZP], () => (null == L ? true : L.tags) != null ? d.ZP.getCustomEmojiById(L.tags) : null), F = null != (l = null == (t = f.default.getCurrentUser()) ? true : t.isStaff()) && l ? S.OC : S.Ht, [M, G] = i.useState(null), [Y, q] = i.useState(null != (s = null == L ? true : L.name) ? s : ""), [V, X] = i.useState({
     file: null,
-    filename: null != (C = (0, y._V)(L)) ? C : ""
-  }), [H, Q] = i.useState(null == K ? true : K.id), [W, J] = i.useState(null != (O = null == K ? true : K.name) ? O : null == L ? true : L.tags), [$, ee] = i.useState(null != (R = null == L ? true : L.description) ? R : ""), [et, el] = i.useState(false), [en, ei] = i.useState(null), er = (0, o.e7)([g.Z], () => g.Z.getGuild(U)), es = (null == er ? true : er.features.has(I.oNc.PARTNERED)) || (null == er ? true : er.features.has(I.oNc.VERIFIED)), ea = null != L, eo = ea || (null == V ? true : V.file) != null, eu = 0 === $.length || $.length >= 2 && $.length <= 100, ed = !et && (null == en ? true : en.isBlocking) !== true && q.length >= 2 && (null != H || null != W || (null == L ? true : L.tags) != null && (null == L ? true : L.tags) !== "") && eo && eu, ec = async e => {
+    filename: null != (N = (0, y._V)(L)) ? N : ""
+  }), [H, Q] = i.useState(null == K ? true : K.id), [W, J] = i.useState(null != (O = null == K ? true : K.name) ? O : null == L ? true : L.tags), [$, ee] = i.useState(null != (R = null == L ? true : L.description) ? R : ""), [et, el] = i.useState(false), [en, ei] = i.useState(null), er = (0, o.e7)([g.Z], () => g.Z.getGuild(U)), es = (null == er ? true : er.features.has(I.GuildFeatures.PARTNERED)) || (null == er ? true : er.features.has(I.GuildFeatures.VERIFIED)), ea = null != L, eo = ea || (null == V ? true : V.file) != null, eu = 0 === $.length || $.length >= 2 && $.length <= 100, ed = !et && (null == en ? true : en.isBlocking) !== true && Y.length >= 2 && (null != H || null != W || (null == L ? true : L.tags) != null && (null == L ? true : L.tags) !== "") && eo && eu, ec = async e => {
     var t;
     if (null == e) return;
     let l = null == (t = e.type) ? true : t.split(";")[0];
@@ -90,18 +90,18 @@ function R(e) {
     });
     let n = e;
     if ("image/jpeg" === l || "image/jpg" === l) n = await T(e);
-    else if ("image/png" === l && e.size > M && !await (0, x.c0)(e)) {
-      let t = (n = await T(e)).size > M;
+    else if ("image/png" === l && e.size > F && !await (0, x.c0)(e)) {
+      let t = (n = await T(e)).size > F;
       p.default.track(I.rMx.STICKER_FILE_RESIZED, {
         original_file_size_bytes: e.size,
         resized_file_size_bytes: n.size,
         resized_file_too_big: t
       })
     }
-    if (n.size > M) {
+    if (n.size > F) {
       ei({
         message: w.intl.formatToPlainString(w.t["3eK7Rk"], {
-          maxSize: (0, j.IC)(M, {
+          maxSize: (0, j.IC)(F, {
             useKibibytes: true
           })
         }),
@@ -122,7 +122,7 @@ function R(e) {
       });
       let e = new FileReader;
       e.addEventListener("load", () => {
-        Y({
+        G({
           id: (0, r.Z)(),
           formatType: i,
           content: e.result
@@ -130,7 +130,7 @@ function R(e) {
       }), e.readAsText(n)
     } else {
       let e = await (0, x.fD)(n);
-      Y({
+      G({
         id: (0, r.Z)(),
         formatType: i,
         content: e
@@ -146,13 +146,13 @@ function R(e) {
     let a = null != (l = null != (t = null != H ? H : W) ? t : null == L ? true : L.tags) ? l : "";
     try {
       if (el(true), ea) await (0, h.Jf)(U, null != (n = null == L ? true : L.id) ? n : "", {
-        name: q,
+        name: Y,
         tags: a,
         description: $
       });
       else {
         let e = new FormData;
-        e.append("name", q), e.append("tags", a), e.append("description", $), (null == V ? true : V.file) != null && e.append("file", V.file), s = null != (r = null == (i = V.file) ? true : i.type) ? r : "", p.default.track(I.rMx.STICKER_UPLOAD_STARTED, {
+        e.append("name", Y), e.append("tags", a), e.append("description", $), (null == V ? true : V.file) != null && e.append("file", V.file), s = null != (r = null == (i = V.file) ? true : i.type) ? r : "", p.default.track(I.rMx.STICKER_UPLOAD_STARTED, {
           filetype: s
         }), await (0, h.lY)({
           guildId: U,
@@ -200,7 +200,7 @@ function R(e) {
     }, r)
   })({
     sticker: L,
-    previewData: F,
+    previewData: M,
     onStickerError: i.useCallback(() => {
       ei({
         message: w.intl.string(w.t["/WIYNT"]),
@@ -210,7 +210,7 @@ function R(e) {
   }), ef = es ? w.t.alYXBA : w.t.kpcMfn;
   return (0, n.jsx)("form", {
     onSubmit: em,
-    className: N.form,
+    className: C.form,
     children: (0, n.jsxs)(a.IX, {
       transitionState: A,
       onClose: B,
@@ -246,7 +246,7 @@ function R(e) {
                 onFileSelect: ec
               })
             }), (0, n.jsx)(c.Z, {
-              className: N.formItemRowChild,
+              className: C.formItemRowChild,
               guildId: U,
               emojiId: H,
               emojiName: W,
@@ -257,8 +257,8 @@ function R(e) {
           }), (0, n.jsx)(u.oil, {
             label: w.intl.string(w.t["0VRh6u"]),
             required: true,
-            value: q,
-            onChange: G,
+            value: Y,
+            onChange: q,
             placeholder: w.intl.string(w.t["3fGttb"]),
             maxLength: 30
           }), (0, n.jsx)(u.Kx8, {
@@ -269,7 +269,7 @@ function R(e) {
             placeholder: w.intl.string(w.t.zwR0fX),
             maxLength: 100
           }), null != en && (0, n.jsx)(u.Text, {
-            className: N.formItem,
+            className: C.formItem,
             variant: "text-sm/normal",
             color: "text-danger",
             children: en.message

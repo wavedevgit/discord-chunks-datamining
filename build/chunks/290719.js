@@ -7,6 +7,6 @@ require.d(exports, {
 var Chunk981631 = require("./981631.js");
 
 function i(e) {
-  let t = e.features.has(r.oNc.COMMUNITY);
-  return !t && e.features.has(r.oNc.NON_COMMUNITY_RAID_ALERTS) || t && !e.features.has(r.oNc.RAID_ALERTS_DISABLED)
+  let t = e.features.has(r.GuildFeatures.COMMUNITY);
+  return !t && e.features.has(r.GuildFeatures.NON_COMMUNITY_RAID_ALERTS) || t && !e.features.has(r.GuildFeatures.RAID_ALERTS_DISABLED)
 }

@@ -40,7 +40,7 @@ function v() {
   let y = Chunk592125.Z.getChannel(Chunk570140);
   if (null == y || !Chunk700785.oz(Chunk981631.Plq.VIEW_CHANNEL, y)) return null;
   let v = Chunk430824.Z.getGuild(y.getGuildId());
-  if (null == v || !v.features.has(Chunk981631.oNc.DISCOVERABLE)) return null;
+  if (null == v || !v.features.has(Chunk981631.GuildFeatures.DISCOVERABLE)) return null;
   let I = (0, Chunk750154.Lw)(y, Chunk19780),
     T = (null == O || null == (e = O.party) ? true : module.id) === I ? O : null,
     S = Chunk565799.Z.getMutableParticipants(y.id, Chunk501655.pV.SPEAKER),

@@ -50,7 +50,7 @@ function l(e) {
         returntrue
     }
     let n = _.getGuild(e.getGuildId());
-    if (null == n || n.features.has(s.oNc.COMMUNITY)) returnfalse;
+    if (null == n || n.features.has(s.GuildFeatures.COMMUNITY)) returnfalse;
     let r = p.getMemberCount(n.id);
     return null != r && r < 100
   }

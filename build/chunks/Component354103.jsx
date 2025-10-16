@@ -31,17 +31,17 @@ function j(e) {
     vanityURLUses: C,
     originalVanityURLCode: O,
     errorDetails: y,
-    fetched: N
+    fetched: E
   } = (0, l.cj)([m.Z], () => ({
     vanityURLCode: m.Z.vanityURLCode,
     vanityURLUses: m.Z.vanityURLUses,
     originalVanityURLCode: m.Z.originalVanityURLCode,
     errorDetails: m.Z.errorDetails,
     fetched: m.Z.fetchedVanityURL
-  })), E = null == t ? true : t.id;
+  })), N = null == t ? true : t.id;
   return (i.useEffect(() => {
-    null == E || N || (0, g.U5)(E)
-  }, [N, E]), null == t) ? null : v ? (0, r.jsx)(s.Z, {}) : (0, r.jsxs)("div", {
+    null == N || E || (0, g.U5)(N)
+  }, [E, N]), null == t) ? null : v ? (0, r.jsx)(s.Z, {}) : (0, r.jsxs)("div", {
     ref: n,
     children: [(0, r.jsxs)(a.vwX, {
       className: x.title,

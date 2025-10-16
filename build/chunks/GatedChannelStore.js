@@ -51,7 +51,7 @@ function S(e) {
 }
 
 function A(e, t) {
-  if (!t.features.has(y.oNc.CREATOR_MONETIZABLE) && !t.features.has(y.oNc.CREATOR_MONETIZABLE_PROVISIONAL)) returnfalse;
+  if (!t.features.has(y.GuildFeatures.CREATOR_MONETIZABLE) && !t.features.has(y.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL)) returnfalse;
   let n = f.Z.isViewingServerShop(t.id);
   for (let r of Object.keys(e.permissionOverwrites)) {
     let i = g.Z.getRole(t.id, r);
@@ -81,7 +81,7 @@ function C(e) {
   let t = E.Z.getGuild(e);
   if (null == t) return;
   let n = v[e] = new Set;
-  if (!t.features.has(y.oNc.ROLE_SUBSCRIPTIONS_ENABLED) || !(0, c.kT)(e) && !(0, o.Rw)(t)) return;
+  if (!t.features.has(y.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED) || !(0, c.kT)(e) && !(0, o.Rw)(t)) return;
   let r = h.Z.getMutableGuildChannelsForGuild(e);
   for (let e in r) {
     let i = r[e];

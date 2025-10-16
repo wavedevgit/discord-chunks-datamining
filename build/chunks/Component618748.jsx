@@ -2,7 +2,7 @@
 /** chunk id: 618748, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => M
+  Z: () => G
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
@@ -42,7 +42,7 @@ function L(e) {
   let {
     application: t,
     guild: n
-  } = e, l = (0, v.YB)(n.id), a = (0, v.qi)(n.id), s = a.some(e => null != e.name && null != e.subscription_plans[0] && null != e.description && null != e.image_asset), o = (0, i.Wu)([h.Z], () => a.map(e => h.Z.getRole(n.id, e.role_id)), [n.id, a]).some(e => null != e && 0 !== e.color), c = a.some(e => e.role_benefits.benefits.length > 0), d = null != t && n.features.has(w.oNc.ROLE_SUBSCRIPTIONS_ENABLED), u = [{
+  } = e, l = (0, v.YB)(n.id), a = (0, v.qi)(n.id), s = a.some(e => null != e.name && null != e.subscription_plans[0] && null != e.description && null != e.image_asset), o = (0, i.Wu)([h.Z], () => a.map(e => h.Z.getRole(n.id, e.role_id)), [n.id, a]).some(e => null != e && 0 !== e.color), c = a.some(e => e.role_benefits.benefits.length > 0), d = null != t && n.features.has(w.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED), u = [{
     title: D.intl.string(D.t.p2Rsdn),
     items: [{
       description: D.intl.string(D.t.zbO7fX),
@@ -103,13 +103,13 @@ function k(e) {
   }) : null
 }
 
-function M(e) {
+function G(e) {
   let t, {
       guild: n,
       application: l
     } = e,
     a = (0, i.e7)([d.Z], () => d.Z.getProps().subsection),
-    s = null != l && n.features.has(w.oNc.ROLE_SUBSCRIPTIONS_ENABLED);
+    s = null != l && n.features.has(w.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED);
   return (0, o.P)(n), t = s ? a === w.KsC.ROLE_SUBSCRIPTION_EMOJI ? T.ue.EMOJIS : T.ue.TIERS : T.ue.PAYMENT, (0, r.jsx)(j.l, {
     guildId: n.id,
     refetchOnMount: true,
@@ -117,7 +117,7 @@ function M(e) {
       guildId: n.id,
       children: (0, r.jsx)(T.M7, {
         initialTab: t,
-        children: (0, r.jsx)(G, {
+        children: (0, r.jsx)(M, {
           guild: n,
           application: l
         })
@@ -126,12 +126,12 @@ function M(e) {
   })
 }
 
-function G(e) {
+function M(e) {
   let t, {
       guild: n,
       application: o
     } = e,
-    d = null != o && n.features.has(w.oNc.ROLE_SUBSCRIPTIONS_ENABLED),
+    d = null != o && n.features.has(w.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED),
     {
       currentTab: p,
       setCurrentTab: v
@@ -139,11 +139,11 @@ function G(e) {
     _ = (0, j.f)(),
     I = (0, i.e7)([b.default], () => b.default.getCurrentUser()),
     R = (0, O.Z)(n.id),
-    M = null != n && (0, f.eM)(n, I);
+    G = null != n && (0, f.eM)(n, I);
   if (!_) return (0, r.jsx)(a.$jN, {});
   switch (p) {
     case T.ue.BASIC_INFO:
-      t = (0, r.jsx)(E.Z, {
+      t = (0, r.jsx)(N.Z, {
         guild: n
       });
       break;
@@ -153,7 +153,7 @@ function G(e) {
       });
       break;
     case T.ue.PAYMENT:
-      t = (0, r.jsx)(N.Z, {
+      t = (0, r.jsx)(E.Z, {
         guild: n
       });
       break;
@@ -206,7 +206,7 @@ function G(e) {
             disabledTooltip: D.intl.string(D.t.NVDuUV),
             disabled: !d,
             children: D.intl.string(D.t.XBkDoK)
-          }), M ? (0, r.jsx)(a.njP.Item, {
+          }), G ? (0, r.jsx)(a.njP.Item, {
             className: A.__invalid_tabBarItem,
             id: T.ue.PAYMENT,
             children: D.intl.string(D.t.p2Rsdn)

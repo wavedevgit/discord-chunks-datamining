@@ -18,7 +18,7 @@ function c(e) {
     features: c
   } = e, d = i.useCallback(e => {
     let t = new Set(c);
-    e ? (t.add(s.oNc.ACTIVITY_FEED_ENABLED_BY_USER), t.delete(s.oNc.ACTIVITY_FEED_DISABLED_BY_USER)) : (t.add(s.oNc.ACTIVITY_FEED_DISABLED_BY_USER), t.delete(s.oNc.ACTIVITY_FEED_ENABLED_BY_USER)), a.Z.updateGuild({
+    e ? (t.add(s.GuildFeatures.ACTIVITY_FEED_ENABLED_BY_USER), t.delete(s.GuildFeatures.ACTIVITY_FEED_DISABLED_BY_USER)) : (t.add(s.GuildFeatures.ACTIVITY_FEED_DISABLED_BY_USER), t.delete(s.GuildFeatures.ACTIVITY_FEED_ENABLED_BY_USER)), a.Z.updateGuild({
       features: t
     })
   }, [c]);

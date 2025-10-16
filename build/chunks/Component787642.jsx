@@ -41,7 +41,7 @@ function g(e, t, n) {
 }
 
 function m() {
-  let e = Chunk430824.Z.getGuildsArray().filter(e => e.features.has(p.oNc.HUB));
+  let e = Chunk430824.Z.getGuildsArray().filter(e => e.features.has(p.GuildFeatures.HUB));
   return (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
     children: [(0, Chunk951288.jsxs)("header", {
       className: Chunk184904.header,

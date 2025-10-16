@@ -1,7 +1,7 @@
 /** Chunk was on 9924 **/
 /** chunk id: 987491, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => G
+  Z: () => k
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -118,7 +118,7 @@ let M = Chunk647438.memo(function(e) {
     } = t, {
       analyticsLocations: s
     } = (0, j.ZP)(), o = r.useCallback(e => {
-      e.stopPropagation(), e.preventDefault(), (0, N.openUserProfileModal)({
+      e.stopPropagation(), e.preventDefault(), (0, S.openUserProfileModal)({
         userId: n.id,
         joinRequestId: i,
         sourceAnalyticsLocations: s
@@ -170,9 +170,9 @@ let M = Chunk647438.memo(function(e) {
       guildId: s,
       createdAt: x,
       applicationStatus: j
-    } = t, b = r.useMemo(() => new S.Z(t.user), [t.user]), h = (0, p.L)({
+    } = t, b = r.useMemo(() => new T.Z(t.user), [t.user]), h = (0, p.L)({
       guildId: s
-    }), g = (0, c.e7)([T.Z], () => T.Z.getGuild(s)), v = j === f.wB.SUBMITTED;
+    }), g = (0, c.e7)([N.Z], () => N.Z.getGuild(s)), v = j === f.wB.SUBMITTED;
     return null == b ? null : (0, l.jsxs)("tr", {
       onClick: i,
       className: a()(w.roundedRow, w.memberRowContainer, {
@@ -250,7 +250,7 @@ let M = Chunk647438.memo(function(e) {
       })]
     })
   }),
-  k = () => {
+  G = () => {
     let e = "".concat(Math.floor(50 * Math.random()) + 100, "px"),
       t = "".concat(Math.floor(50 * Math.random()) + 100, "px"),
       n = "".concat(Math.floor(25 * Math.random()) + 50, "px");
@@ -293,11 +293,11 @@ let M = Chunk647438.memo(function(e) {
     })
   };
 
-function G(e) {
+function k(e) {
   let {
     guildId: t,
     currentTab: n
-  } = e, i = r.useRef(null), a = (0, c.e7)([T.Z], () => T.Z.getGuild(t)), s = (0, v.C)({
+  } = e, i = r.useRef(null), a = (0, c.e7)([N.Z], () => N.Z.getGuild(t)), s = (0, v.C)({
     guildId: t
   }), o = (0, c.e7)([h.Z], () => h.Z.isFetching()), {
     guildJoinRequests: d
@@ -326,7 +326,7 @@ function G(e) {
           sortOrder: s,
           onSortChange: x
         }), (0, l.jsx)("tbody", {
-          children: o ? [, , , , , ].fill(0).map((e, t) => (0, l.jsx)(k, {}, "placeholder-".concat(t))) : 0 === d.length ? (0, l.jsx)("td", {
+          children: o ? [, , , , , ].fill(0).map((e, t) => (0, l.jsx)(G, {}, "placeholder-".concat(t))) : 0 === d.length ? (0, l.jsx)("td", {
             colSpan: 3,
             children: (0, l.jsx)(A, {
               status: n

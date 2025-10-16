@@ -30,48 +30,48 @@ let v = e => {
     transitionState: C
   } = e, P = (0, o.ZP)(t, true), S = t.id, I = t.isForumPost(), T = (0, u.e7)([Z.Z], () => Z.Z.getGuild(t.getGuildId())), D = (0, N.u1)(S), {
     isSubscriptionGated: y
-  } = (0, E.Z)(t.id), b = (0, f.Z)(T, t), [w, G] = i.useState(), A = (0, u.e7)([m.default], () => t.isOwner(m.default.getId()), [t]), U = (0, u.e7)([O.Z], () => O.Z.can(t.isThread() ? p.Plq.MANAGE_THREADS : p.Plq.MANAGE_CHANNELS, t), [t]), j = (0, u.e7)([_.Z], () => {
+  } = (0, E.Z)(t.id), b = (0, f.Z)(T, t), [G, w] = i.useState(), A = (0, u.e7)([m.default], () => t.isOwner(m.default.getId()), [t]), U = (0, u.e7)([O.Z], () => O.Z.can(t.isThread() ? p.Plq.MANAGE_THREADS : p.Plq.MANAGE_CHANNELS, t), [t]), j = (0, u.e7)([_.Z], () => {
     var e;
     return null != (e = _.Z.getCount(t.id)) ? e : 0
   }, [t.id]), L = I && (U || A && j < 1), V = D.length > 0 && (t.type === p.d4z.GUILD_VOICE || t.type === p.d4z.GUILD_STAGE_VOICE);
   if (i.useEffect(() => {
       (async () => {
-        if (!await (0, s.C)(t.getGuildId(), S)) return G(c.j.DEFAULT);
-        let e = await (0, d.T)(t.getGuildId(), S);
-        if (null != e) return G(e)
+        if (!await (0, s.C)(t.getGuildId(), S)) return w(d.j.DEFAULT);
+        let e = await (0, c.T)(t.getGuildId(), S);
+        if (null != e) return w(e)
       })()
     }, [t, S]), i.useEffect(() => {
-      null != T && T.features.has(p.oNc.COMMUNITY) && (T.rulesChannelId === S ? G(c.j.RULES) : T.publicUpdatesChannelId === S && G(c.j.UPDATES))
+      null != T && T.features.has(p.GuildFeatures.COMMUNITY) && (T.rulesChannelId === S ? w(d.j.RULES) : T.publicUpdatesChannelId === S && w(d.j.UPDATES))
     }, [T, S]), null == T) return null;
-  if (null != w) {
+  if (null != G) {
     let e, t = async () => {
       await g.Z.open(T.id, p.pNK.ONBOARDING), await n()
     }, i = async () => {
       await g.Z.open(T.id, p.pNK.COMMUNITY), await n()
     };
-    switch (w) {
-      case c.j.DEFAULT:
+    switch (G) {
+      case d.j.DEFAULT:
         e = h.intl.format(h.t.iWlB6u, {
           onClick: t
         });
         break;
-      case c.j.TODO:
+      case d.j.TODO:
         e = h.intl.format(h.t["/rjozM"], {
           onClick: t
         });
         break;
-      case c.j.RESOURCE:
+      case d.j.RESOURCE:
         e = h.intl.format(h.t.Nf5pt7, {
           onClick: t
         });
         break;
-      case c.j.RULES:
+      case d.j.RULES:
         e = h.intl.format(h.t["kB1f+/"], {
           reason: h.intl.string(h.t.yjrZPj),
           onClick: i
         });
         break;
-      case c.j.UPDATES:
+      case d.j.UPDATES:
         e = h.intl.format(h.t["kB1f+/"], {
           reason: h.intl.string(h.t["1B1/ND"]),
           onClick: i

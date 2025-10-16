@@ -24,14 +24,14 @@ async function N(e, t, n) {
   var l;
   let i = u.Z.getGuild(e);
   if (null == i) returntrue;
-  let r = null != i && (null == (l = i.features) ? true : l.has(d.oNc.GUILD_ONBOARDING));
+  let r = null != i && (null == (l = i.features) ? true : l.has(c.GuildFeatures.GUILD_ONBOARDING));
   if (!r) returntrue;
   r && o.Z.shouldFetchPrompts(e) && await (0, a.eM)(e);
   let E = o.Z.getDefaultChannelIds(e),
     [f, N] = (0, s.d9)(e, E);
   if (!E.includes(t)) returntrue;
-  let g = n.removingView && N.length - 1 < c.md,
-    _ = (n.removingChat || n.removingView) && f.length - 1 < c.X;
+  let g = n.removingView && N.length - 1 < d.md,
+    _ = (n.removingChat || n.removingView) && f.length - 1 < d.X;
   return !g && !_
 }
 async function g(e, t, n) {
@@ -41,14 +41,14 @@ async function g(e, t, n) {
   let a = e.permissionOverwrites[u],
     o = null != a ? l.hX(a.deny, l.U_(a.allow)) : l.vB(0),
     s = {
-      removingView: l.e$(t, d.Plq.VIEW_CHANNEL) && !l.e$(o, d.Plq.VIEW_CHANNEL),
+      removingView: l.e$(t, c.Plq.VIEW_CHANNEL) && !l.e$(o, c.Plq.VIEW_CHANNEL),
       removingChat: false
     };
-  return e.isForumLikeChannel() ? s.removingChat = l.e$(t, d.Plq.SEND_MESSAGES_IN_THREADS) && !l.e$(o, d.Plq.SEND_MESSAGES_IN_THREADS) : s.removingChat = l.e$(t, d.Plq.SEND_MESSAGES) && !l.e$(o, d.Plq.SEND_MESSAGES), !s.removingChat && !s.removingView || !!await N(u, e.id, s) || (i.Z.show({
+  return e.isForumLikeChannel() ? s.removingChat = l.e$(t, c.Plq.SEND_MESSAGES_IN_THREADS) && !l.e$(o, c.Plq.SEND_MESSAGES_IN_THREADS) : s.removingChat = l.e$(t, c.Plq.SEND_MESSAGES) && !l.e$(o, c.Plq.SEND_MESSAGES), !s.removingChat && !s.removingView || !!await N(u, e.id, s) || (i.Z.show({
     title: E.intl.string(E.t.ut7sq6),
     body: E.intl.format(E.t["Zaz+ur"], {
       onClick: () => {
-        i.Z.close(), r.Z.open(u, d.pNK.ONBOARDING)
+        i.Z.close(), r.Z.open(u, c.pNK.ONBOARDING)
       }
     })
   }), false)

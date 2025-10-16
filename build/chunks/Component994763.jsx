@@ -110,8 +110,8 @@ class _ extends Chunk647438.PureComponent {
       onboardingStep: y,
       onboardingEnabled: S,
       welcomeScreenEmpty: I,
-      guildMetadata: j,
-      pinPermissionMigrationAvailable: G
+      guildMetadata: G,
+      pinPermissionMigrationAvailable: N
     } = this.props;
     if (null == Chunk100527) return null;
     let T = (0, Chunk896007.vE)({
@@ -169,23 +169,23 @@ function L() {
   Chunk647438.useEffect(() => {
     Chunk896007 || null == K || (0, Chunk456268.aC)(K)
   }, [Chunk896007, K]);
-  let U = null != (e = null == Chunk37234 ? true : Chunk37234.features.has(Chunk981631.oNc.COMMUNITY)) && module;
+  let U = null != (e = null == Chunk37234 ? true : Chunk37234.features.has(Chunk981631.GuildFeatures.COMMUNITY)) && module;
   Chunk647438.useEffect(() => {
     null != K && U && ((0, Chunk745752.eM)(K), (0, Chunk524329.RM)(K))
   }, [K, U]), Chunk647438.useEffect(() => {
     null != K && (0, Chunk526120.cP)(K)
   }, [K]);
-  let W = (0, Chunk442837.e7)([Chunk409059.Z], () => {
+  let F = (0, Chunk442837.e7)([Chunk409059.Z], () => {
       var e;
       return (null == Chunk37234 ? true : Chunk37234.id) != null && (null == (e = Chunk409059.Z.getForGuild(Chunk37234.id)) ? true : module.isDirty) === true
     }, [Chunk37234]),
-    B = (0, Chunk442837.e7)([Chunk650774.Z], () => Chunk650774.Z.getMemberCount(null == Chunk37234 ? true : Chunk37234.id), [Chunk37234]);
+    W = (0, Chunk442837.e7)([Chunk650774.Z], () => Chunk650774.Z.getMemberCount(null == Chunk37234 ? true : Chunk37234.id), [Chunk37234]);
   Chunk647438.useEffect(() => {
     null != K && R.canManageGuild && Chunk751189.Z.loadTemplatesForGuild(K)
   }, [K, R.canManageGuild]), Chunk647438.useEffect(() => {
     k || Chunk434404.Z.close()
   }, [k]);
-  let F = (0, Chunk442837.e7)([Chunk359191.Z], () => Chunk359191.Z.getCurrentPage()),
+  let B = (0, Chunk442837.e7)([Chunk359191.Z], () => Chunk359191.Z.getCurrentPage()),
     V = (0, Chunk442837.e7)([Chunk45966.Z], () => null != K && Chunk45966.Z.getEnabled(K)),
     Y = (0, Chunk442837.e7)([Chunk995532.Z], () => null != K && Chunk995532.Z.isEmpty(K)),
     q = (0, Chunk163400.F)(K).length > 0,
@@ -215,13 +215,13 @@ function L() {
       theme: Chunk388032,
       sidebarTheme: x,
       channels: L,
-      showDirtyGuildTemplateIndicator: W,
+      showDirtyGuildTemplateIndicator: F,
       analyticsLocation: Chunk367907,
-      memberCount: B
+      memberCount: W
     }, R), t = t = {
       canUnlinkChannels: q,
       canViewGuildAnalytics: R.canViewGuildAnalytics,
-      onboardingStep: F,
+      onboardingStep: B,
       onboardingEnabled: V,
       welcomeScreenEmpty: Y,
       guildMetadata: Chunk918658,

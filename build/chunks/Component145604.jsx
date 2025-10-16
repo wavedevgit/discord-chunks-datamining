@@ -287,7 +287,7 @@ function er() {
     gameName: null != Chunk371651 ? Chunk371651.name : null,
     gameId: null != Chunk371651 ? Chunk371651.application_id : null,
     gameExeName: null != Chunk829907 ? Chunk829907.exeName : null,
-    hasPreviewEnabled: null == Chunk579806 ? true : Chunk579806.features.has(Chunk981631.oNc.PREVIEW_ENABLED),
+    hasPreviewEnabled: null == Chunk579806 ? true : Chunk579806.features.has(Chunk981631.GuildFeatures.PREVIEW_ENABLED),
     isMemberPending: Chunk710845,
     postableChannelCount: Chunk509003,
     isTextInVoice: Chunk392711,

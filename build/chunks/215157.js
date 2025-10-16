@@ -29,23 +29,23 @@ function m(e, t, r, c) {
     h = (0, n.Wu)([a.ZP], () => null != e ? a.ZP.getMemberIds(e.id) : []),
     f = o.useMemo(() => {
       if (null == e || "@" === c[0]) return [];
-      if (m) return d.Wx(e, p, null != t ? t : null, r, e => b(c, e));
-      let o = d.ik(e, p, null != t ? t : null, r, e => b(c, e));
-      return 0 === o.length && "" === c.trim() && 1 === p.length && (o = d.aq()), o
+      if (m) return u.Wx(e, p, null != t ? t : null, r, e => b(c, e));
+      let o = u.ik(e, p, null != t ? t : null, r, e => b(c, e));
+      return 0 === o.length && "" === c.trim() && 1 === p.length && (o = u.aq()), o
     }, [p, c, e, t, r, m]),
-    g = o.useMemo(() => null == e ? [] : d.iI(h, null != t ? t : null, e, r, e => b(c, e)), [h, c, e, t, r]);
+    g = o.useMemo(() => null == e ? [] : u.iI(h, null != t ? t : null, e, r, e => b(c, e)), [h, c, e, t, r]);
   return o.useEffect(() => {
-    null != e && _.Z.requestMembers(e.id, s(c), u.EQ)
+    null != e && _.Z.requestMembers(e.id, s(c), d.EQ)
   }, [c, e]), {
     roles: f,
     members: g,
     getRichTag: o.useCallback(e => {
       let t = null;
-      return e.rowType === u.aC.ROLE || e.rowType === u.aC.ADMINISTRATOR ? t = {
+      return e.rowType === d.aC.ROLE || e.rowType === d.aC.ADMINISTRATOR ? t = {
         type: l.F.ROLE,
         label: e.name,
         color: e.colorString
-      } : (e.rowType === u.aC.MEMBER || e.rowType === u.aC.OWNER) && (t = {
+      } : (e.rowType === d.aC.MEMBER || e.rowType === d.aC.OWNER) && (t = {
         type: l.F.MEMBER,
         label: e.name,
         avatar: e.avatarURL

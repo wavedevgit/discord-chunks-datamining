@@ -83,7 +83,7 @@ let j = () => (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
       R = null != c.channel ? (0, _.jD)(c.channel) : null,
       z = null != c.target_application ? new m.ZP(c.target_application) : null,
       Z = j || null == c.inviter ? null : new p.Z(c.inviter),
-      M = !(null != c.approximate_member_count && c.approximate_member_count > 100 || null != b && b.features.has(f.oNc.COMMUNITY)) && null != Z,
+      M = !(null != c.approximate_member_count && c.approximate_member_count > 100 || null != b && b.features.has(f.GuildFeatures.COMMUNITY)) && null != Z,
       D = null,
       k = false;
     if (null != b) D = null == Z ? I.intl.string(I.t["3rE1Pz"]) : I.intl.formatToPlainString(I.t["5u47vb"], {

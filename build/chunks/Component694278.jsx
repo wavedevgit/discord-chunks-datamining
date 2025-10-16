@@ -5,7 +5,7 @@ require.d(exports, {
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk538534 = require("./538534.jsx"),
+  Chunk481060 = require("./481060.js"),
   Chunk881052 = require("./881052.js"),
   Chunk434404 = require("./434404.js"),
   Chunk78451 = require("./78451.js"),
@@ -19,7 +19,7 @@ function p(t) {
     guild: p,
     onClose: b,
     hideColors: g
-  } = t, [y, f] = a.useState(p.verificationLevel), [_, O] = a.useState(null), m = p.features.has(d.oNc.COMMUNITY), v = (0, l.IF)(m, g).filter(t => !t.disabled), j = a.useCallback(async () => {
+  } = t, [y, f] = a.useState(p.verificationLevel), [_, O] = a.useState(null), m = p.features.has(u.GuildFeatures.COMMUNITY), v = (0, l.IF)(m, g).filter(t => !t.disabled), j = a.useCallback(async () => {
     null != _ && O(null);
     try {
       await c.Z.saveGuild(p.id, {
@@ -49,12 +49,12 @@ function p(t) {
     }
     return t
   }({}, t), r = r = {
-    title: u.intl.string(u.t.DpRdYG),
-    description: u.intl.format(u.t.iuRk2t, {}),
+    title: d.intl.string(d.t.DpRdYG),
+    description: d.intl.format(d.t.iuRk2t, {}),
     errorText: _,
     onConfirm: j,
     onCancel: b,
-    children: (0, n.jsx)(i.E, {
+    children: (0, n.jsx)(i.FXm, {
       value: y,
       options: v,
       onChange: t => f(t)

@@ -296,7 +296,7 @@ class em extends Chunk647438.PureComponent {
       withBannerPadding: null != require && null != this.getGuildBannerHash()
     });
     {
-      if (require.features.has(Chunk981631.oNc.HUB) && !Chunk120356) return (0, Chunk951288.jsx)("div", {
+      if (require.features.has(Chunk981631.GuildFeatures.HUB) && !Chunk120356) return (0, Chunk951288.jsx)("div", {
         className: Chunk971606.hubContainer,
         children: (0, Chunk951288.jsx)(Chunk258871.Z, {
           guild: require,
@@ -382,7 +382,7 @@ class em extends Chunk647438.PureComponent {
     }), eu(this, "handleCloseStudentHubPrivacySettingsTooltip", () => {
       var e;
       let t = (0, I.zu)(u.z.STUDENT_HUB_PRIVACY_SETTINGS_TOOLTIP),
-        n = null == (e = this.props.guild) ? true : e.features.has(ei.oNc.HUB);
+        n = null == (e = this.props.guild) ? true : e.features.has(ei.GuildFeatures.HUB);
       !t && n && (0, I.Q3)(u.z.STUDENT_HUB_PRIVACY_SETTINGS_TOOLTIP, {
         dismissAction: ea.L.AUTO
       })
@@ -491,9 +491,9 @@ function eb(e) {
   i.useEffect(() => {
     n !== V && M(!w)
   }, [n, V, w]);
-  let [$, ee] = (0, y.ZP)(e => [el.XN.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(ea.R.GUILD_HEADER_TOOLTIPS)], s.X), et = (0, v.Z)(o), en = (0, f.s9z)(f.JQI), er = (0, c.e7)([z.Z], () => z.Z.hasLayers()), eo = (0, c.e7)([U.Z], () => U.Z.shouldShow(eh)), es = (0, R.cT)(n, "GuildSidebar") && g && (null == o ? true : o.premiumProgressBarEnabled) === false && !X.s.isDisallowPopupsSet(), ec = (0, P.Z)(n), eu = (null == o ? true : o.features.has(ei.oNc.HUB)) === true, ed = g && (null == o ? true : o.features.has(ei.oNc.DISCOVERABLE)) === true, ep = (0, c.e7)([A.Z, z.Z], () => null != o && null != j && g && !z.Z.hasLayers() && A.Z.shouldShowGuildTemplateDirtyTooltip(n)), ef = (0, c.e7)([G.Z], () => G.Z.getChannel(a)), {
+  let [$, ee] = (0, y.ZP)(e => [el.XN.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(ea.R.GUILD_HEADER_TOOLTIPS)], s.X), et = (0, v.Z)(o), en = (0, f.s9z)(f.JQI), er = (0, c.e7)([z.Z], () => z.Z.hasLayers()), eo = (0, c.e7)([U.Z], () => U.Z.shouldShow(eh)), es = (0, R.cT)(n, "GuildSidebar") && g && (null == o ? true : o.premiumProgressBarEnabled) === false && !X.s.isDisallowPopupsSet(), ec = (0, P.Z)(n), eu = (null == o ? true : o.features.has(ei.GuildFeatures.HUB)) === true, ed = g && (null == o ? true : o.features.has(ei.GuildFeatures.DISCOVERABLE)) === true, ep = (0, c.e7)([A.Z, z.Z], () => null != o && null != j && g && !z.Z.hasLayers() && A.Z.shouldShowGuildTemplateDirtyTooltip(n)), ef = (0, c.e7)([G.Z], () => G.Z.getChannel(a)), {
     isPopoutOpen: eg
-  } = (0, S.y)(), eb = null != (t = null == o ? true : o.features.has(ei.oNc.COMMUNITY)) && t, e_ = Q.ZP.isNewUser(j), eE = k && !e_;
+  } = (0, S.y)(), eb = null != (t = null == o ? true : o.features.has(ei.GuildFeatures.COMMUNITY)) && t, e_ = Q.ZP.isNewUser(j), eE = k && !e_;
   (0, T.Z)(o);
   let eO = (0, I.Nj)(u.z.PREMIUM_TUTORIAL_SERVER_MENU_TOOLTIP),
     ev = (0, L.Z)(n),

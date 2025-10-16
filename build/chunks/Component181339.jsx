@@ -53,25 +53,25 @@ function I(e) {
         (0, d.yw)(y.rMx.GUILD_RAID_ALERTS_SETUP, e)
       }
     } catch (e) {
-      (0, c.showToast)((0, c.createToast)(N.intl.string(N.t["46Rs3t"]), c.ToastType.FAILURE)), v(!x)
+      (0, c.showToast)((0, c.createToast)(E.intl.string(E.t["46Rs3t"]), c.ToastType.FAILURE)), v(!x)
     }
   };
   return (0, r.jsxs)("div", {
-    className: a()(E.itemWrapper, s),
+    className: a()(N.itemWrapper, s),
     children: [(0, r.jsxs)("div", {
-      className: E.itemContent,
+      className: N.itemContent,
       children: [(0, r.jsx)(c.Heading, {
         variant: "text-md/semibold",
         color: "header-primary",
-        children: N.intl.string(N.t.Qp98s7)
+        children: E.intl.string(E.t.Qp98s7)
       }), (0, r.jsx)(c.Text, {
         variant: "text-sm/medium",
         color: "header-secondary",
-        children: N.intl.string(N.t.Mg843t)
+        children: E.intl.string(E.t.Mg843t)
       }), n || null == l ? null : (0, r.jsxs)(c.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
-        className: E.valuePill,
+        className: N.valuePill,
         children: [(0, r.jsx)(c.VL1, {
           size: "xxs",
           color: "currentColor"
@@ -128,17 +128,17 @@ function S(e) {
         (0, d.yw)(y.rMx.GUILD_RAID_ALERTS_SETUP, t)
       }
     } catch (e) {
-      (0, c.showToast)((0, c.createToast)(N.intl.string(N.t["46Rs3t"]), c.ToastType.FAILURE)), l(m)
+      (0, c.showToast)((0, c.createToast)(E.intl.string(E.t["46Rs3t"]), c.ToastType.FAILURE)), l(m)
     }
   };
   return (0, r.jsx)("div", {
-    className: a()(E.itemBodyContainer, g),
+    className: a()(N.itemBodyContainer, g),
     children: (0, r.jsx)("div", {
-      className: E.itemBodyInner,
+      className: N.itemBodyInner,
       children: (0, r.jsx)(c.VcW, {
-        wrapperClassName: E.bringToFront,
-        label: N.intl.string(N.t.sMkYEx),
-        helperText: N.intl.string(N.t["1QxN9P"]),
+        wrapperClassName: N.bringToFront,
+        label: E.intl.string(E.t.sMkYEx),
+        helperText: E.intl.string(E.t["1QxN9P"]),
         options: h,
         onChange: b,
         value: i,
@@ -179,12 +179,12 @@ function P(e) {
       isExpanded: true,
       guild: l,
       selectedChannelId: s,
-      className: E.noPadding
+      className: N.noPadding
     }), (0, r.jsx)(S, {
       guild: l,
       selectedChannelId: s,
       setSelectedChannelId: o,
-      className: E.noPadding
+      className: N.noPadding
     })]
   })
 }

@@ -352,7 +352,7 @@ let eJ = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
           selectedGuildId: i,
           currentUser: a
         } = e;
-        return null != (r = null != i && null != a && !(null == (t = en.Z.getGuild(i)) ? true : t.features.has(eA.oNc.GUILD_ONBOARDING)) && (null == (n = et.ZP.getMember(i, a.id)) ? true : n.isPending)) && r
+        return null != (r = null != i && null != a && !(null == (t = en.Z.getGuild(i)) ? true : t.features.has(eA.GuildFeatures.GUILD_ONBOARDING)) && (null == (n = et.ZP.getMember(i, a.id)) ? true : n.isPending)) && r
       }
     },
     [Chunk981631.kVF.OUTBOUND_PROMOTION]: {
@@ -606,7 +606,7 @@ let eJ = [Chunk981631.kVF.QUARANTINED, Chunk981631.kVF.AUTOMOD_QUARANTINED_USER_
         let {
           selectedGuildId: t
         } = e, n = null != t ? en.Z.getGuild(t) : null;
-        return null != t && null != C.Z.getMentionRaidDetected(t) && (null == n ? true : n.features.has(eA.oNc.COMMUNITY)) && !eQ(eA.kVF.AUTO_MODERATION_MENTION_RAID_DETECTION) || false
+        return null != t && null != C.Z.getMentionRaidDetected(t) && (null == n ? true : n.features.has(eA.GuildFeatures.COMMUNITY)) && !eQ(eA.kVF.AUTO_MODERATION_MENTION_RAID_DETECTION) || false
       },
       metadata: e => {
         let {

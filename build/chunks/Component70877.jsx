@@ -8,7 +8,7 @@ require("./647438.js");
 var Chunk35149 = require("./35149.js"),
   i = require.n(Chunk35149),
   Chunk913527 = require("./913527.js"),
-  u = require.n(Chunk913527),
+  o = require.n(Chunk913527),
   Chunk593473 = require("./593473.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -28,7 +28,7 @@ let P = "YYYYMMDDTHHmmss",
   j = /RRULE:.*/;
 
 function N(t, e, n, r) {
-  var o, N, _;
+  var u, N, _;
   let w, S = (0, a.e7)([v.ZP], () => v.ZP.isActive(t)),
     D = (0, E.zI)(null != t ? t : "", r),
     T = (0, a.e7)([v.ZP], () => v.ZP.getGuildScheduledEvent(t), [t]),
@@ -38,17 +38,17 @@ function N(t, e, n, r) {
     channelName: n.name,
     guildName: x.name
   }) : h.intl.string(h.t.VSgOVl);
-  let I = u()(T.scheduled_start_time),
-    C = null != T.scheduled_end_time ? u()(T.scheduled_end_time) : I,
-    G = null != T.description && "" !== T.description ? g.ZP.unparse(T.description, null != (o = null == n ? true : n.id) ? o : O.lds, true) : "",
+  let I = o()(T.scheduled_start_time),
+    C = null != T.scheduled_end_time ? o()(T.scheduled_end_time) : I,
+    G = null != T.description && "" !== T.description ? g.ZP.unparse(T.description, null != (u = null == n ? true : n.id) ? u : O.lds, true) : "",
     L = (0, p.KV)(T.recurrence_rule),
     U = null != L ? (0, Z.Ho)(L) : null,
     {
       startTime: M,
       endTime: V
     } = D,
-    A = null != (N = u()(M)) ? N : I,
-    R = null != (_ = u()(null != V ? V : M)) ? _ : I,
+    A = null != (N = o()(M)) ? N : I,
+    R = null != (_ = o()(null != V ? V : M)) ? _ : I,
     k = () => {
       let t = i()();
       t.createEvent({

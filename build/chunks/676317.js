@@ -32,6 +32,6 @@ function d(e) {
 function u(e) {
   return (0, r.e7)([i.Z], () => {
     let t = i.Z.getGuild(e);
-    return (null == t ? true : t.features.has(a.oNc.COMMUNITY)) || false
+    return (null == t ? true : t.features.has(a.GuildFeatures.COMMUNITY)) || false
   }, [e])
 }

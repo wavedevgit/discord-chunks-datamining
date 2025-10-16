@@ -2,7 +2,7 @@
 /** chunk id: 729995, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => N
+  Z: () => E
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -58,7 +58,7 @@ function y(e, t) {
   }), e
 }
 
-function N(e) {
+function E(e) {
   let {
     guildId: t,
     completed: n
@@ -120,7 +120,7 @@ function N(e) {
     })]
   });
   return n ? (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(E, {
+    children: [(0, r.jsx)(N, {
       guildId: t,
       handlePreview: f
     }), (0, r.jsx)(I, {}), (0, r.jsxs)("div", {
@@ -144,7 +144,7 @@ function N(e) {
   })
 }
 
-function E(e) {
+function N(e) {
   let {
     guildId: t,
     handlePreview: n

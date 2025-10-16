@@ -24,7 +24,7 @@ function a(e, t, n, l) {
     }
     return u.X_.EVENT_STARTING_SOON
   }
-  let c = r.default.extractTimestamp(e.id),
-    d = Math.min((null != n ? n : c) + u.Fc, o);
-  if (a.isBetween(c, d) && null == t && !l) return u.X_.NEW_EVENT
+  let d = r.default.extractTimestamp(e.id),
+    c = Math.min((null != n ? n : d) + u.Fc, o);
+  if (a.isBetween(d, c) && null == t && !l) return u.X_.NEW_EVENT
 }

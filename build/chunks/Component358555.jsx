@@ -163,7 +163,7 @@ function A(e) {
     guild: t,
     disableColor: false,
     disableBoostClick: n
-  }) : t.features.has(g.oNc.VERIFIED) || t.features.has(g.oNc.PARTNERED) ? (0, r.jsx)(S, {
+  }) : t.features.has(g.GuildFeatures.VERIFIED) || t.features.has(g.GuildFeatures.PARTNERED) ? (0, r.jsx)(S, {
     guild: t,
     disableColor: !i
   }) : (0, r.jsx)(T, {

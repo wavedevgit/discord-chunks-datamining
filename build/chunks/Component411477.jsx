@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk436774 = require("./436774.jsx"),
   Chunk279798 = require("./279798.js");
@@ -19,15 +19,15 @@ function s(e) {
     reducedRightPadding: s = false
   } = e;
   return (0, i.jsxs)("div", {
-    className: o()(s ? l.noticeWithoutRightPadding : l.noticeWithRightPadding, n),
+    className: r()(s ? c.noticeWithoutRightPadding : c.noticeWithRightPadding, n),
     children: [(0, i.jsxs)("div", {
-      className: l.noticeLeft,
-      children: [(0, i.jsx)(r.SrA, {
+      className: c.noticeLeft,
+      children: [(0, i.jsx)(o.SrA, {
         size: "md",
-        className: l.icon,
-        color: c.JX.PREMIUM_TIER_2
-      }), (0, i.jsx)(r.Text, {
-        className: l.text,
+        className: c.icon,
+        color: l.JX.PREMIUM_TIER_2
+      }), (0, i.jsx)(o.Text, {
+        className: c.text,
         variant: "text-md/normal",
         color: "header-primary",
         children: t

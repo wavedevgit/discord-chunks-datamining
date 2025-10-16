@@ -82,7 +82,7 @@ function N(e) {
         }), i))
       }
     })
-  }, [t]), L = (0, d.ZP)(), R = t.features.has(v.oNc.HUB), D = i.useMemo(() => {
+  }, [t]), L = (0, d.ZP)(), R = t.features.has(v.GuildFeatures.HUB), D = i.useMemo(() => {
     let e = _.ZP.getGuildDiscoverySplashURL({
       id: t.id,
       splash: t.discoverySplash,

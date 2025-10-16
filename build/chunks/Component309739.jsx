@@ -2,12 +2,11 @@
 /** chunk id: 309739, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => g
+  Z: () => m
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk524437 = require("./524437.js"),
-  Chunk538534 = require("./538534.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk940276 = require("./940276.jsx"),
   Chunk921801 = require("./921801.js"),
@@ -20,30 +19,30 @@ var Chunk524437 = require("./524437.js"),
   Chunk933554 = require("./933554.js"),
   Chunk85240 = require("./85240.js");
 
-function g(e) {
+function m(e) {
   let {
     className: t
   } = e;
-  return (0, r.jsxs)(d.Z, {
+  return (0, r.jsxs)(u.Z, {
     className: t,
-    title: p.intl.string(p.t.Cq98yM),
-    children: [(0, r.jsx)(y, {}), (0, r.jsx)(o.izJ, {
+    title: _.intl.string(_.t.Cq98yM),
+    children: [(0, r.jsx)(b, {}), (0, r.jsx)(a.izJ, {
       gap: 32
-    }), (0, r.jsx)(E, {}), (0, r.jsx)(o.izJ, {
+    }), (0, r.jsx)(g, {}), (0, r.jsx)(a.izJ, {
       gap: 32
-    }), (0, r.jsx)(b, {}), (0, r.jsx)(o.izJ, {
+    }), (0, r.jsx)(E, {}), (0, r.jsx)(a.izJ, {
       gap: 32
-    }), (0, r.jsx)(O, {})]
+    }), (0, r.jsx)(y, {})]
   })
 }
 
-function E() {
+function g() {
   let e = Chunk695346.G6.useSetting(),
     t = Chunk695346.no.useSetting(),
     n = e => {
-      u.no.updateSetting(e)
+      c.no.updateSetting(e)
     },
-    l = [{
+    s = [{
       value: Chunk524437.GI.ACTIVITY_STATUS_ON,
       name: Chunk388032.intl.string(Chunk388032.t.UzGMHx)
     }, {
@@ -56,7 +55,7 @@ function E() {
   return (0, Chunk951288.jsxs)(Chunk481060.C3N, {
     label: Chunk388032.intl.string(Chunk933554.default.TG0Qsb),
     description: Chunk388032.intl.string(Chunk933554.default.OO17Li),
-    children: [(0, Chunk951288.jsx)(Chunk538534.E, {
+    children: [(0, Chunk951288.jsx)(Chunk481060.FXm, {
       label: Chunk388032.intl.string(Chunk933554.default["/LHVbm"]),
       options: Chunk921801,
       value: exports,
@@ -81,7 +80,7 @@ function E() {
   })
 }
 
-function b() {
+function E() {
   let e = Chunk695346.cP.useSetting(),
     t = Chunk695346.Ou.useSetting();
   return (0, Chunk951288.jsx)(Chunk921801.F, {
@@ -93,19 +92,19 @@ function b() {
         description: Chunk388032.intl.string(Chunk933554.default["8EWsJy"]),
         id: "allow-friends-to-join-my-game",
         checked: module,
-        onChange: e => u.cP.updateSetting(e)
+        onChange: e => c.cP.updateSetting(e)
       }), (0, Chunk951288.jsx)(Chunk481060.rsf, {
         label: Chunk388032.intl.string(Chunk933554.default.Uz5Ipq),
         description: Chunk388032.intl.string(Chunk933554.default.CZI2GR),
         id: "allow-vc-join-without-request",
         checked: exports,
-        onChange: e => u.Ou.updateSetting(e)
+        onChange: e => c.Ou.updateSetting(e)
       })]
     })
   })
 }
 
-function y() {
+function b() {
   let e = Chunk695346.G6.useSetting(),
     t = Chunk358085.isPlatformEmbedded ? Chunk388032.intl.string(Chunk933554.default.UQ9RHB) : Chunk388032.intl.string(Chunk388032.t.oKqC4u);
   return (0, Chunk951288.jsx)(Chunk921801.F, {
@@ -125,7 +124,7 @@ function y() {
   })
 }
 
-function O() {
+function y() {
   return (0, Chunk951288.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.ACTIVITY_PRIVACY_TOS,
     children: (0, Chunk951288.jsx)(Chunk481060.ToO, {

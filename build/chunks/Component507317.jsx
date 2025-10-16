@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
 let j = function(e) {
   let {
     guild: t
-  } = e, j = t.features.has(m.oNc.BANNER), v = i.useCallback((e, i) => {
+  } = e, j = t.features.has(m.GuildFeatures.BANNER), v = i.useCallback((e, i) => {
     if (null == e || true === i) return void g.Z.saveGuild(t.id, {
       homeHeader: null
     });
@@ -102,7 +102,7 @@ let j = function(e) {
       }), (0, r.jsx)(s.Z, {
         className: x.boostIndicator,
         guild: t,
-        guildFeature: m.oNc.BANNER,
+        guildFeature: m.GuildFeatures.BANNER,
         onClick: _
       })]
     }), (0, r.jsxs)("div", {
@@ -137,7 +137,7 @@ let j = function(e) {
       }), (0, r.jsx)(s.Z, {
         className: x.boostIndicator,
         guild: t,
-        guildFeature: m.oNc.BANNER,
+        guildFeature: m.GuildFeatures.BANNER,
         onClick: _
       })]
     }), (0, r.jsxs)("div", {

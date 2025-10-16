@@ -12,7 +12,7 @@ var Chunk442837 = require("./442837.js"),
 function s(e) {
   var n;
   let t = (0, l.e7)([r.Z], () => r.Z.can(o.Plq.ADMINISTRATOR, e)),
-    s = null == e ? true : e.features.has(o.oNc.PIN_PERMISSION_MIGRATION_COMPLETE),
+    s = null == e ? true : e.features.has(o.GuildFeatures.PIN_PERMISSION_MIGRATION_COMPLETE),
     c = (0, a.OA)(i.z.GUILD_PIN_PERMISSION_MIGRATION_NOTIFICATION, null != (n = null == e ? true : e.id) ? n : o.lds);
   return t && !s && !c
 }

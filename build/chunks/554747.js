@@ -66,8 +66,8 @@ function h(e) {
       let t = r.Z.getChannel(e.channel_id);
       return a.Z.can(g.Plq.VIEW_CHANNEL, t)
     }), [e]),
-    l = (0, i.cj)([d.Z], () => d.Z.getAllEventDismissals()),
-    o = (0, i.cj)([d.Z], () => d.Z.getAllUpcomingNoticeSeenTimes()),
+    l = (0, i.cj)([c.Z], () => c.Z.getAllEventDismissals()),
+    o = (0, i.cj)([c.Z], () => c.Z.getAllUpcomingNoticeSeenTimes()),
     E = (0, i.cj)([s.ZP], () => null == n ? {} : n.reduce((e, t) => {
       var n, l;
       let i = (0, f.DK)(t);
@@ -102,14 +102,14 @@ function h(e) {
       }), n
     }, {}), [n]),
     _ = (0, i.e7)([u.Z], () => u.Z.getGuild(e)),
-    m = null != _ && !_.features.has(g.oNc.COMMUNITY) && _.features.has(g.oNc.INTERNAL_EMPLOYEE_ONLY);
+    m = null != _ && !_.features.has(g.GuildFeatures.COMMUNITY) && _.features.has(g.GuildFeatures.INTERNAL_EMPLOYEE_ONLY);
   if (null != n && null != E && m)
     for (let e = 0; e < n.length; e++) {
       let i = n[e],
         r = l[i.id],
         u = o[i.id],
         a = null != (t = E[i.id]) && t,
-        s = (0, c.M)(i, r, u, a);
+        s = (0, d.M)(i, r, u, a);
       if (null != s) return {
         upcomingEvent: i,
         noticeType: s

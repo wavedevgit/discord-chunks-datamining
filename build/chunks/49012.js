@@ -80,14 +80,14 @@ function R(e, t) {
     let n = b.Z.getGuild(j),
       r = (null == e || null == (Z = e.messageReference) ? true : Z.guild_id) != null && (null == e ? true : e.webhookId) != null && (null == e ? true : e.hasFlag(A.iLy.IS_CROSSPOST)) && null != j;
     r && (null == e || null == (F = e.messageReference) ? true : F.guild_id) != null ? (U = e.messageReference.message_id, G = e.messageReference.channel_id, B = e.messageReference.guild_id) : B = j;
-    let i = (null == t ? true : t.type) === A.d4z.GUILD_ANNOUNCEMENT && (null == n ? true : n.features.has(A.oNc.COMMUNITY)) === true,
+    let i = (null == t ? true : t.type) === A.d4z.GUILD_ANNOUNCEMENT && (null == n ? true : n.features.has(A.GuildFeatures.COMMUNITY)) === true,
       a = (null == e ? true : e.hasFlag(A.iLy.EPHEMERAL)) === true;
     k = null != e && !a && (r || i)
   }
   if (null != L) {
     let e = E.Z.getChannel(L),
       t = b.Z.getGuild(null == e ? true : e.getGuildId());
-    null != e && null != t && t.features.has(A.oNc.DISCOVERABLE) && S.default.track(A.rMx.URL_CLICKED, {
+    null != e && null != t && t.features.has(A.GuildFeatures.DISCOVERABLE) && S.default.track(A.rMx.URL_CLICKED, {
       url_domain: (0, O.F)(M),
       guild_id: t.id,
       channel_id: e.id

@@ -26,8 +26,8 @@ let v = function(e) {
   let {
     guildId: O,
     action: y,
-    actionIndex: N,
-    onChange: E,
+    actionIndex: E,
+    onChange: N,
     onDelete: I,
     onDragStart: S,
     onDragComplete: T,
@@ -41,13 +41,13 @@ let v = function(e) {
   }), k = null;
   null != w && (0, m.kb)(w) ? A || (k = x.intl.string(x.t.wAkIZW)) : k = x.intl.string(x.t.CbTEKC);
   let {
-    drag: M,
-    dragSourcePosition: G,
+    drag: G,
+    dragSourcePosition: M,
     drop: U,
     setIsDraggable: B
   } = (0, u.Z)({
     type: "NEW_MEMBER_ACTION",
-    index: N,
+    index: E,
     optionId: y.channelId,
     onDragStart: S,
     onDragComplete: T,
@@ -79,8 +79,8 @@ let v = function(e) {
         }({}, t), i = i = {
           guildId: O,
           action: y,
-          onSave: (e, t, n) => E(N, e, t, n),
-          onDelete: () => I(N)
+          onSave: (e, t, n) => N(E, e, t, n),
+          onDelete: () => I(E)
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -93,19 +93,19 @@ let v = function(e) {
         }), n))
       }
     })
-  }, [O, y, N, E, I]);
+  }, [O, y, E, N, I]);
   if (null == w || null == Z) return null;
   let H = null != (C = (0, d.KS)(w)) ? C : c.VL1;
   return (0, r.jsxs)("div", {
     className: j.actionItemContainer,
     children: [(0, r.jsxs)("div", {
       className: a()(j.actionItem, {
-        [j.dropIndicatorBefore]: null != G && N < G,
-        [j.dropIndicatorAfter]: null != G && N > G,
+        [j.dropIndicatorBefore]: null != M && E < M,
+        [j.dropIndicatorAfter]: null != M && E > M,
         [j.actionItemError]: null != k
       }),
       ref: e => {
-        M(U(e))
+        G(U(e))
       },
       children: [(0, r.jsx)("div", {
         className: j.dragContainer,

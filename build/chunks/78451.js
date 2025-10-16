@@ -46,10 +46,9 @@ function u() {
     t = arguments.length > 1 && true !== arguments[1] && arguments[1];
   return [{
     name: Chunk388032.intl.string(Chunk388032.t.PEzffn),
-    desc: Chunk388032.intl.string(Chunk388032.t.nDQy0t),
+    desc: module ? Chunk388032.intl.string(Chunk388032.t.j9WtHx) : Chunk388032.intl.string(Chunk388032.t.nDQy0t),
     value: Chunk981631.sFg.NONE,
-    disabled: module,
-    tooltipText: module ? Chunk388032.intl.string(Chunk388032.t.j9WtHx) : null
+    disabled: module
   }, {
     name: Chunk388032.intl.string(Chunk388032.t.SsCK8P),
     desc: Chunk388032.intl.string(Chunk388032.t["8GCOX1"]),
@@ -86,17 +85,15 @@ function d() {
     color: (0, Chunk900089.Fw)("RED_400")
   }, {
     name: Chunk388032.intl.string(Chunk388032.t.ynfFaG),
-    desc: Chunk388032.intl.string(Chunk388032.t["3fRINz"]),
+    desc: module ? Chunk388032.intl.string(Chunk388032.t.j9WtHx) : Chunk388032.intl.string(Chunk388032.t["3fRINz"]),
     value: Chunk981631.lxg.MEMBERS_WITHOUT_ROLES,
     disabled: module,
-    tooltipText: module ? Chunk388032.intl.string(Chunk388032.t.j9WtHx) : null,
     color: (0, Chunk900089.Fw)("YELLOW_360")
   }, {
     name: Chunk388032.intl.string(Chunk388032.t.VbSyAw),
-    desc: Chunk388032.intl.string(Chunk388032.t.M6GNsL),
+    desc: module ? Chunk388032.intl.string(Chunk388032.t.j9WtHx) : Chunk388032.intl.string(Chunk388032.t.M6GNsL),
     value: Chunk981631.lxg.DISABLED,
     disabled: module,
-    tooltipText: module ? Chunk388032.intl.string(Chunk388032.t.j9WtHx) : null,
     color: (0, Chunk900089.Fw)("PRIMARY_400")
   }]
 }

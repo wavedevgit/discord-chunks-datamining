@@ -31,15 +31,15 @@ function j(e) {
     name: N,
     image: C,
     description: P
-  } = O, S = (0, i.e7)([c.Z], () => c.Z.getChannel(E), [E]), I = (0, i.e7)([u.Z], () => u.Z.getGuild(j), [j]), T = (0, m.cS)(O), Z = (0, i.e7)([d.default], () => null != f.creatorId ? d.default.getUser(f.creatorId) : d.default.getCurrentUser(), [f.creatorId]), w = (0, i.e7)([o.Z], () => o.Z.isLurking(j), [j]), D = (0, s.KS)(S, I);
+  } = O, S = (0, i.e7)([c.Z], () => c.Z.getChannel(E), [E]), I = (0, i.e7)([u.Z], () => u.Z.getGuild(j), [j]), Z = (0, m.cS)(O), T = (0, i.e7)([d.default], () => null != f.creatorId ? d.default.getUser(f.creatorId) : d.default.getCurrentUser(), [f.creatorId]), w = (0, i.e7)([o.Z], () => o.Z.isLurking(j), [j]), k = (0, s.KS)(S, I);
   return (0, r.jsxs)("div", {
     className: p.content,
     children: [(0, r.jsx)(h.Z, {
       className: p.previewCard,
       guild: I,
       channel: S,
-      location: null != T ? T : true,
-      creator: Z,
+      location: null != Z ? Z : true,
+      creator: T,
       name: N,
       description: P,
       imageSource: (n = (0, g.Gb)(f, j, b), null == C && null == n.image ? null : null != C && /^data:/.test(C) ? C : (0, x.Z)(n)),
@@ -65,7 +65,7 @@ function j(e) {
             var e;
             return (0, r.jsxs)("div", {
               className: p.channelName,
-              children: [null != D ? (0, r.jsx)(D, {
+              children: [null != k ? (0, r.jsx)(k, {
                 size: "custom",
                 color: "currentColor",
                 width: 20,
@@ -77,7 +77,7 @@ function j(e) {
                 height: 18,
                 width: 18,
                 className: p.locationIcon
-              }), null != (e = null == S ? true : S.name) ? e : T]
+              }), null != (e = null == S ? true : S.name) ? e : Z]
             })
           }
         })

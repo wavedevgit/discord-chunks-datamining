@@ -370,7 +370,7 @@ function V(e) {
       case T.Plq.MANAGE_GUILD_EXPRESSIONS.toString():
         return k.intl.string(k.t.cmp2W1);
       default:
-        return (0, j.wt)(e)
+        return (0, N.wt)(e)
     }
   }, {
     enabledPermissions: l,
@@ -498,7 +498,7 @@ let K = e => {
     }, []);
     let {
       guild: a
-    } = (0, o.cj)([v.Z], () => v.Z.getProps()), c = (0, o.e7)([b.Z], () => b.Z.theme), [d, u] = l.useState(false), [x, m] = l.useState(!P.$X.some(e => w.oz(e, a))), [j, E] = l.useState(P.b4), [L, y] = l.useState(P.b4), [G] = l.useState(null == a ? true : a.defaultMessageNotifications), [R] = l.useState(null == a ? true : a.verificationLevel), [Z] = l.useState(null == a ? true : a.explicitContentFilter), [D] = l.useState(x), F = (0, o.e7)([S.Z], () => null != a ? S.Z.getEveryoneRole(a) : true), U = (0, o.e7)([C.ZP], () => null != a ? C.ZP.getChannels(a.id) : null), z = (0, p.Dt)(), {
+    } = (0, o.cj)([v.Z], () => v.Z.getProps()), c = (0, o.e7)([b.Z], () => b.Z.theme), [d, u] = l.useState(false), [x, m] = l.useState(!P.$X.some(e => w.oz(e, a))), [N, E] = l.useState(P.b4), [L, y] = l.useState(P.b4), [G] = l.useState(null == a ? true : a.defaultMessageNotifications), [R] = l.useState(null == a ? true : a.verificationLevel), [Z] = l.useState(null == a ? true : a.explicitContentFilter), [D] = l.useState(x), F = (0, o.e7)([S.Z], () => null != a ? S.Z.getEveryoneRole(a) : true), U = (0, o.e7)([C.ZP], () => null != a ? C.ZP.getChannels(a.id) : null), z = (0, p.Dt)(), {
       enabled: W
     } = (0, h.D2)(null != (t = null == a ? true : a.id) ? t : T.lds);
     if (null == a) return null;
@@ -522,7 +522,7 @@ let K = e => {
         var e, t;
         if (null == F || !d) return;
         let i = new Set(a.features);
-        i.add(T.oNc.COMMUNITY);
+        i.add(T.GuildFeatures.COMMUNITY);
         let s = x ? r.Od(F.permissions, P.mu) : F.permissions,
           l = (e = function(e) {
             for (var t = 1; t < arguments.length; t++) {
@@ -553,13 +553,13 @@ let K = e => {
           })(Object(t)).forEach(function(i) {
             Object.defineProperty(e, i, Object.getOwnPropertyDescriptor(t, i))
           }), e);
-        s !== F.permissions && await (0, N.Gf)(a.id, [l]), f.Z.updateGuild({
+        s !== F.permissions && await (0, j.Gf)(a.id, [l]), f.Z.updateGuild({
           features: i,
-          rulesChannelId: j,
+          rulesChannelId: N,
           publicUpdatesChannelId: L
         }), await f.Z.saveGuild(a.id, {
           features: i,
-          rulesChannelId: j,
+          rulesChannelId: N,
           verificationLevel: a.verificationLevel,
           explicitContentFilter: a.explicitContentFilter,
           publicUpdatesChannelId: L,
@@ -597,7 +597,7 @@ let K = e => {
         onPublicUpdatesChannelChange: e => {
           y(e)
         },
-        ruleChannel: j,
+        ruleChannel: N,
         publicUpdatesChannel: L,
         headerId: z,
         theme: c,
@@ -652,7 +652,7 @@ let K = e => {
         overviewTitle: k.intl.string(k.t.PpYoSk)
       }, {
         modalContent: et,
-        disableNextStep: null == j || null == L,
+        disableNextStep: null == N || null == L,
         overviewTitle: k.intl.string(k.t["7MEtIS"])
       }, {
         modalContent: ei,

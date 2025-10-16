@@ -19,16 +19,16 @@ function b(e) {
   var t, n;
   let r = (0, u.r1)(e),
     i = null != (n = null == (t = l.ZP.getSelfMember(e)) ? true : t.flags) ? n : 0,
-    a = (0, c.yE)(i, s.q.COMPLETED_ONBOARDING),
+    c = (0, a.yE)(i, s.q.COMPLETED_ONBOARDING),
     b = o.ZP.getOptedInChannels(e).size > 0;
-  return !r && !a && !b
+  return !r && !c && !b
 }
 
 function p(e) {
   if (b(e)) return void d(e);
   {
     let t = (0, u.r1)(e);
-    (0, a.QG)(e, !t)
+    (0, c.QG)(e, !t)
   }
 }
 

@@ -105,9 +105,9 @@ function v(e) {
     avatars: i,
     loading: o,
     error: m
-  } = (0, p.S)(), v = l.useRef([]), E = l.useRef(null), O = l.useRef(i.length), N = l.useRef(null), [S, T] = l.useState(false), [w, R] = l.useState(false), [P, _] = l.useState(null), F = null != P ? P : null == m ? true : m.message, Z = i.length, I = Math.max(j.iZ - Z, 0), k = (0, c.vRw)(), D = l.useCallback(async e => {
+  } = (0, p.S)(), v = l.useRef([]), E = l.useRef(null), O = l.useRef(i.length), N = l.useRef(null), [S, T] = l.useState(false), [w, R] = l.useState(false), [P, F] = l.useState(null), _ = null != P ? P : null == m ? true : m.message, Z = i.length, I = Math.max(j.iZ - Z, 0), k = (0, c.vRw)(), D = l.useCallback(async e => {
     if (null == a || S) return;
-    T(true), _(null);
+    T(true), F(null);
     let {
       id: l,
       storageHash: i,
@@ -145,7 +145,7 @@ function v(e) {
         contextKey: k
       })
     } catch (e) {
-      _(A.intl.string(A.t.fZRH9P))
+      F(A.intl.string(A.t.fZRH9P))
     } finally {
       T(false)
     }
@@ -198,10 +198,10 @@ function v(e) {
     className: x.spinner
   }) : (0, r.jsxs)("div", {
     className: x.recentAvatarContainer,
-    children: [null != F && !o && (0, r.jsx)(c.Text, {
+    children: [null != _ && !o && (0, r.jsx)(c.Text, {
       variant: "text-sm/normal",
       color: "text-danger",
-      children: F
+      children: _
     }), (0, r.jsxs)("div", {
       className: x.recentAvatarSlots,
       children: [Z > 0 && (0, r.jsx)("ul", {

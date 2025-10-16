@@ -89,10 +89,10 @@ function w(e) {
       section: G.jXE.CHAT_USERNAME,
       object: G.qAy.CONTEXT_MENU_ITEM
     }
-  }), H = (0, j.Z)(t), V = (0, g.Z)(t.id), q = (0, d.Z)({
+  }), H = (0, j.Z)(t), V = (0, g.Z)(t.id), F = (0, d.Z)({
     id: t.id,
     label: M.intl.string(M.t["94lLDw"])
-  }), F = (0, N.Z)(t, {
+  }), q = (0, N.Z)(t, {
     section: G.jXE.GUILD_LIST
   }), W = (0, S.Z)(t.id), X = (0, v.Z)(t.id), K = (0, _.Z)(t), J = (0, p.Mn)("GuildContextMenu"), z = (0, Z.p)(t);
 
@@ -106,7 +106,7 @@ function w(e) {
       }))
     })
   }
-  return t.features.has(G.oNc.HUB) ? (0, i.jsxs)(o.v2r, {
+  return t.features.has(G.GuildFeatures.HUB) ? (0, i.jsxs)(o.v2r, {
     navId: "guild-context",
     onClose: c.Zy,
     "aria-label": M.intl.string(M.t.HpQykZ),
@@ -132,7 +132,7 @@ function w(e) {
         color: "danger"
       })
     }), (0, i.jsx)(o.kSQ, {
-      children: q
+      children: F
     })]
   }) : (0, i.jsxs)(o.v2r, {
     navId: "guild-context",
@@ -140,7 +140,7 @@ function w(e) {
     "aria-label": M.intl.string(M.t.HpQykZ),
     onSelect: r,
     children: [(0, i.jsx)(o.kSQ, {
-      children: F
+      children: q
     }), (0, i.jsx)(o.kSQ, {
       children: T
     }), (0, i.jsxs)(o.kSQ, {
@@ -170,7 +170,7 @@ function w(e) {
     }), (0, i.jsx)(o.kSQ, {
       children: z
     }), (0, i.jsx)(o.kSQ, {
-      children: q
+      children: F
     })]
   })
 }

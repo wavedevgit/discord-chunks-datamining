@@ -27,14 +27,14 @@ function g(e) {
     },
     children: (0, i.jsxs)("div", {
       className: f.guildHeader,
-      children: [(0, i.jsx)(r.Z, {
+      children: [(0, i.jsx)(o.Z, {
         guild: t,
         isBannerVisible: true
       }), (0, i.jsx)(a.Heading, {
         className: f.guildName,
         variant: "heading-md/semibold",
         children: t.name
-      }), (0, i.jsx)(o.Z, {
+      }), (0, i.jsx)(r.Z, {
         className: f.dropdown,
         open: false
       })]
@@ -47,29 +47,29 @@ function _(e) {
     analyticsLocations: t,
     analyticsLocation: n,
     guild: a,
-    isGIF: o,
-    banner: r
-  } = e, f = o ? (0, c._p)(d.oNc.ANIMATED_BANNER) : (0, c._p)(d.oNc.BANNER);
-  null != f && (0, l.Z)({
+    isGIF: r,
+    banner: o
+  } = e, f = r ? (0, l._p)(d.GuildFeatures.ANIMATED_BANNER) : (0, l._p)(d.GuildFeatures.BANNER);
+  null != f && (0, c.Z)({
     analyticsLocations: t,
     analyticsSourceLocation: n,
     guild: a,
     headerProps: {
       title: u.intl.string(u.t["rv2H+/"]),
       subtitle: function(e, t) {
-        let n = (0, c.nW)(e);
+        let n = (0, l.nW)(e);
         return t ? u.intl.formatToPlainString(u.t["TR/Uys"], {
           targetLevelOrPlan: n
         }) : u.intl.formatToPlainString(u.t.B253V1, {
           targetLevelOrPlan: n
         })
-      }(f, o),
+      }(f, r),
       image: (0, i.jsx)(g, {
         guild: a,
-        banner: r
+        banner: o
       })
     },
     perkIntro: u.intl.string(u.t.ZuItcH),
-    perks: o ? (0, s.zC)() : (0, s.XO)()
+    perks: r ? (0, s.zC)() : (0, s.XO)()
   })
 }

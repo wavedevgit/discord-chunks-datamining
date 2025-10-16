@@ -26,7 +26,7 @@ function x(e) {
     guild: t,
     className: n,
     onClick: a
-  } = e, x = (0, s.ZP)(), v = (0, m.Jh)({
+  } = e, x = (0, s.ZP)(), v = (0, m.dangerouslyConstructGuildRecordFromUntypedObject)({
     name: t.name,
     icon: t.icon
   }), C = p.ZP.getGuildDiscoverySplashURL({

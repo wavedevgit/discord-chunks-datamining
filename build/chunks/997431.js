@@ -19,7 +19,7 @@ function o(e, t) {
 }
 
 function s(e) {
-  if (null == e.guild || (0, i.Qs)(e.guild).features.has(a.oNc.HUB)) returnfalse;
+  if (null == e.guild || (0, i.Qs)(e.guild).features.has(a.GuildFeatures.HUB)) returnfalse;
   let t = (null == e ? true : e.channel) != null ? (0, r.jD)(e.channel) : null;
   return null == t || !t.isGuildVocal()
 }

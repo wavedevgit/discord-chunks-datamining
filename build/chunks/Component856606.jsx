@@ -149,11 +149,11 @@ function Y(e) {
       V.X(e)
     }
   }, j = e => {
-    let t = P.Z.can(G.Plq.ADMINISTRATOR, l) || P.Z.can(G.Plq.MANAGE_ROLES, n, true, true, true);
-    return n.isGuildStageVoice() && N.xS.has(e) ? W.intl.string(W.t.bTS5lZ) : !((!a.fS(e, G.Plq.MANAGE_ROLES) || t) && (null == e || P.Z.can(e, l) || t)) && W.intl.string(W.t.nOtPMD)
-  }, v = t.id === c, y = n.isForumLikeChannel() && a.e$(t.deny, G.Plq.SEND_MESSAGES), O = a.e$(t.deny, G.Plq.SEND_MESSAGES), Z = a.e$(t.deny, G.Plq.READ_MESSAGE_HISTORY), w = k.Z.generateChannelPermissionSpec(c, n, v, {
+    let t = P.Z.can(U.Plq.ADMINISTRATOR, l) || P.Z.can(U.Plq.MANAGE_ROLES, n, true, true, true);
+    return n.isGuildStageVoice() && O.xS.has(e) ? W.intl.string(W.t.bTS5lZ) : !((!a.fS(e, U.Plq.MANAGE_ROLES) || t) && (null == e || P.Z.can(e, l) || t)) && W.intl.string(W.t.nOtPMD)
+  }, v = t.id === c, y = n.isForumLikeChannel() && a.e$(t.deny, U.Plq.SEND_MESSAGES), N = a.e$(t.deny, U.Plq.SEND_MESSAGES), Z = a.e$(t.deny, U.Plq.READ_MESSAGE_HISTORY), w = k.Z.generateChannelPermissionSpec(c, n, v, {
     createPostsDisabled: y,
-    sendMessagesDisabled: O,
+    sendMessagesDisabled: N,
     readMessageHistoryDisabled: Z,
     inGameMentionsExperiment: s
   });
@@ -288,7 +288,7 @@ function $() {
       }
     }, [Chunk144991]),
     S = (0, Chunk188857.Z)(Chunk144991, Chunk392711),
-    N = (0, Chunk410030.ZP)(),
+    O = (0, Chunk410030.ZP)(),
     Z = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.roleStyle),
     w = Chunk647438.useCallback((e, l) => {
       if (null == t) return null;
@@ -297,7 +297,7 @@ function $() {
           id: e,
           role: r,
           name: s
-        } = l, a = null != b ? (0, O.lV)(b) : null, o = null != r && a === r.id, {
+        } = l, a = null != b ? (0, N.lV)(b) : null, o = null != r && a === r.id, {
           default: c
         } = await n.e("83884").then(n.bind(n, 905687));
         return n => (0, i.jsx)(c, q(z({}, n), {
@@ -344,7 +344,7 @@ function $() {
       var t;
       return (null == (t = r[e.id]) ? true : t.type) === x.BN.ROLE
     }).map(e => (0, i.jsx)(m.Z, {
-      theme: N,
+      theme: O,
       roleStyle: Z,
       id: e.id,
       role: e,
@@ -363,7 +363,7 @@ function $() {
       return (0, i.jsx)(m.Z, {
         id: e.id,
         guild: b,
-        theme: N,
+        theme: O,
         roleStyle: Z,
         "aria-label": H.ZP.getUserTag(e, {
           decoration: "never"

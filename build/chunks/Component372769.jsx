@@ -127,7 +127,7 @@ class b extends Chunk647438.PureComponent {
     let {
       guild: e
     } = this.props, t = new Set(module.features);
-    return exports.has(Chunk981631.oNc.INTERNAL_EMPLOYEE_ONLY) ? this.renderBadge(1, Chunk481060.Ymb, Chunk598840.staff) : exports.has(Chunk981631.oNc.VERIFIED) && exports.has(Chunk981631.oNc.HUB) ? this.renderBadge(4, Chunk481060.aVH, Chunk598840.verifiedHub) : exports.has(Chunk981631.oNc.HUB) ? this.renderBadge(5, Chunk481060.aVH, Chunk598840.hub) : exports.has(Chunk981631.oNc.VERIFIED) && exports.has(Chunk981631.oNc.PARTNERED) ? this.renderBadge(3, Chunk481060.kmB, Chunk598840.verified) : exports.has(Chunk981631.oNc.VERIFIED) ? this.renderBadge(2, Chunk481060.kmB, Chunk598840.verified) : exports.has(Chunk981631.oNc.PARTNERED) ? this.renderBadge(0, (0, Chunk481060.GSL)(Chunk665786.Z), Chunk598840.partnered) : null
+    return exports.has(Chunk981631.GuildFeatures.INTERNAL_EMPLOYEE_ONLY) ? this.renderBadge(1, Chunk481060.Ymb, Chunk598840.staff) : exports.has(Chunk981631.GuildFeatures.VERIFIED) && exports.has(Chunk981631.GuildFeatures.HUB) ? this.renderBadge(4, Chunk481060.aVH, Chunk598840.verifiedHub) : exports.has(Chunk981631.GuildFeatures.HUB) ? this.renderBadge(5, Chunk481060.aVH, Chunk598840.hub) : exports.has(Chunk981631.GuildFeatures.VERIFIED) && exports.has(Chunk981631.GuildFeatures.PARTNERED) ? this.renderBadge(3, Chunk481060.kmB, Chunk598840.verified) : exports.has(Chunk981631.GuildFeatures.VERIFIED) ? this.renderBadge(2, Chunk481060.kmB, Chunk598840.verified) : exports.has(Chunk981631.GuildFeatures.PARTNERED) ? this.renderBadge(0, (0, Chunk481060.GSL)(Chunk665786.Z), Chunk598840.partnered) : null
   }
 }
 let y = b

@@ -20,7 +20,7 @@ function f(t) {
     guildEventId: e,
     guildId: n,
     recurrenceId: f
-  } = t, b = (0, r.e7)([o.Z], () => o.Z.isLurking(n), [n]), v = (0, r.e7)([u.default], () => u.default.getId()), {
+  } = t, b = (0, r.e7)([u.Z], () => u.Z.isLurking(n), [n]), v = (0, r.e7)([o.default], () => o.default.getId()), {
     rsvped: E,
     baseRsvp: p,
     recurrenceRsvp: Z

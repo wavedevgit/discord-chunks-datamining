@@ -235,7 +235,7 @@ function D(e) {
         })]
       });
     case A.d4z.GUILD_DIRECTORY:
-      let E = (null == o ? true : o.features.has(A.oNc.HUB)) ? M.intl.formatToPlainString(M.t.Dy2aho, {
+      let E = (null == o ? true : o.features.has(A.GuildFeatures.HUB)) ? M.intl.formatToPlainString(M.t.Dy2aho, {
         guildName: n
       }) : n;
       return (0, i.jsxs)(r.Fragment, {

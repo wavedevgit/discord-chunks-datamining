@@ -14,7 +14,7 @@ var Chunk411198 = require("./411198.js"),
 function o(e) {
   let t = new Set(e.features),
     n = "INVITE_ONLY";
-  t.has(i.oNc.COMMUNITY) && t.has(i.oNc.DISCOVERABLE) ? n = "PUBLIC" : t.has(i.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) && t.has(i.oNc.MEMBER_VERIFICATION_GATE_ENABLED) && (n = "APPLY_TO_JOIN");
+  t.has(i.GuildFeatures.COMMUNITY) && t.has(i.GuildFeatures.DISCOVERABLE) ? n = "PUBLIC" : t.has(i.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL) && t.has(i.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED) && (n = "APPLY_TO_JOIN");
   let a = s(e),
     o = 0;
   if (a) {
@@ -23,10 +23,10 @@ function o(e) {
   }
   let c = (0, r.lM)(e) ? e.premiumTier : i.Eu4.NONE;
   return {
-    verified: t.has(i.oNc.VERIFIED),
-    partnered: t.has(i.oNc.PARTNERED),
-    community: t.has(i.oNc.COMMUNITY),
-    staff: t.has(i.oNc.INTERNAL_EMPLOYEE_ONLY),
+    verified: t.has(i.GuildFeatures.VERIFIED),
+    partnered: t.has(i.GuildFeatures.PARTNERED),
+    community: t.has(i.GuildFeatures.COMMUNITY),
+    staff: t.has(i.GuildFeatures.INTERNAL_EMPLOYEE_ONLY),
     visibility: n,
     premium: a,
     premiumSubscriberCount: o,

@@ -463,7 +463,7 @@ let eA = Object.freeze({
       }
     },
     [Chunk981631.Eu4.TIER_1]: {
-      features: [Chunk981631.oNc.INVITE_SPLASH, Chunk981631.oNc.ANIMATED_ICON],
+      features: [Chunk981631.GuildFeatures.INVITE_SPLASH, Chunk981631.GuildFeatures.ANIMATED_ICON],
       limits: {
         emoji: 100,
         bitrate: 128e3,
@@ -476,7 +476,7 @@ let eA = Object.freeze({
       }
     },
     [Chunk981631.Eu4.TIER_2]: {
-      features: [Chunk981631.oNc.INVITE_SPLASH, Chunk981631.oNc.ANIMATED_ICON, Chunk981631.oNc.BANNER, Chunk981631.oNc.ROLE_ICONS],
+      features: [Chunk981631.GuildFeatures.INVITE_SPLASH, Chunk981631.GuildFeatures.ANIMATED_ICON, Chunk981631.GuildFeatures.BANNER, Chunk981631.GuildFeatures.ROLE_ICONS],
       limits: {
         emoji: 150,
         bitrate: 256e3,
@@ -489,7 +489,7 @@ let eA = Object.freeze({
       }
     },
     [Chunk981631.Eu4.TIER_3]: {
-      features: [Chunk981631.oNc.INVITE_SPLASH, Chunk981631.oNc.ANIMATED_ICON, Chunk981631.oNc.BANNER, Chunk981631.oNc.ANIMATED_BANNER, Chunk981631.oNc.VANITY_URL, Chunk981631.oNc.ROLE_ICONS],
+      features: [Chunk981631.GuildFeatures.INVITE_SPLASH, Chunk981631.GuildFeatures.ANIMATED_ICON, Chunk981631.GuildFeatures.BANNER, Chunk981631.GuildFeatures.ANIMATED_BANNER, Chunk981631.GuildFeatures.VANITY_URL, Chunk981631.GuildFeatures.ROLE_ICONS],
       limits: {
         emoji: 250,
         bitrate: 384e3,

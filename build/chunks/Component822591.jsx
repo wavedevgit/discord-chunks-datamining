@@ -106,19 +106,19 @@ let Z = "dismissedCommunityFeaturesUpsell",
     }), [h, j] = i.useState(false);
     (0, m.ZP)(() => {
       s.tn.get({
-        url: E.ANM.GUILD_ADMIN_SERVER_ELIGIBILITY(l.id),
+        url: N.ANM.GUILD_ADMIN_SERVER_ELIGIBILITY(l.id),
         rejectWithError: true
       }).then(e => {
         j(e.body.eligible_for_admin_server)
       }).catch(() => j(false))
     });
     let v = (0, a.e7)([x.Z], () => x.Z.getGuild("942897714956472401")),
-      _ = l.features.has(E.oNc.COMMUNITY) && p >= 1e3 && h && null == v;
+      _ = l.features.has(N.GuildFeatures.COMMUNITY) && p >= 1e3 && h && null == v;
     if (t && n && !_) return null;
     let O = async () => {
       try {
         let e = await s.tn.post({
-          url: E.ANM.JOIN_ADMIN_SERVER(l.id),
+          url: N.ANM.JOIN_ADMIN_SERVER(l.id),
           oldFormErrors: true,
           rejectWithError: true
         });
@@ -175,7 +175,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
             size: "sm",
             text: I.intl.string(I.t["S/DfiY"]),
             onClick: () => {
-              C.Z.setSection(E.pNK.ONBOARDING)
+              C.Z.setSection(N.pNK.ONBOARDING)
             }
           })
         }), t ? null : (0, r.jsx)("div", {
@@ -186,7 +186,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
             size: "sm",
             text: I.intl.string(I.t["0kmJd3"]),
             onClick: () => {
-              C.Z.setSection(E.pNK.ACCESS, E.KsC.ACCESS_DISCOVERABLE)
+              C.Z.setSection(N.pNK.ACCESS, N.KsC.ACCESS_DISCOVERABLE)
             }
           })
         }), (0, r.jsx)("div", {
@@ -197,7 +197,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
             size: "sm",
             text: I.intl.string(I.t.BQIYTU),
             onClick: () => {
-              C.Z.setSection(E.pNK.ANALYTICS)
+              C.Z.setSection(N.pNK.ANALYTICS)
             }
           })
         })]
@@ -222,7 +222,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
       let {
         channel: t
       } = e;
-      t.type === E.d4z.GUILD_TEXT && m.push({
+      t.type === N.d4z.GUILD_TEXT && m.push({
         value: t.id,
         label: (0, p.F6)(t, _.default, v.Z, true)
       })
@@ -230,7 +230,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
     let f = () => {
         if (null == module) return;
         let t = new Set(module.features);
-        exports.delete(Chunk981631.oNc.COMMUNITY), exports.delete(Chunk981631.oNc.DISCOVERABLE), exports.delete(Chunk981631.oNc.PREVIEW_ENABLED), Chunk434404.Z.updateGuild({
+        exports.delete(Chunk981631.GuildFeatures.COMMUNITY), exports.delete(Chunk981631.GuildFeatures.DISCOVERABLE), exports.delete(Chunk981631.GuildFeatures.PREVIEW_ENABLED), Chunk434404.Z.updateGuild({
           features: exports,
           rulesChannelId: null,
           publicUpdatesChannelId: null
@@ -247,8 +247,8 @@ let Z = "dismissedCommunityFeaturesUpsell",
         variant: "heading-lg/semibold",
         children: Chunk388032.intl.string(Chunk388032.t.nRtNqq)
       }), Chunk852860 ? (0, Chunk951288.jsx)(D, {
-        discoveryEnabled: module.features.has(Chunk981631.oNc.DISCOVERABLE),
-        onboardingEnabled: module.features.has(Chunk981631.oNc.GUILD_ONBOARDING),
+        discoveryEnabled: module.features.has(Chunk981631.GuildFeatures.DISCOVERABLE),
+        onboardingEnabled: module.features.has(Chunk981631.GuildFeatures.GUILD_ONBOARDING),
         guild: module
       }) : null, (0, Chunk951288.jsx)(Chunk481060.VcW, {
         layout: "horizontal",
@@ -321,7 +321,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
             size: "sm",
             text: Chunk388032.intl.string(Chunk388032.t.c1BmbG),
             onClick: () => {
-              module.features.has(Chunk981631.oNc.DISCOVERABLE) && module.features.has(Chunk981631.oNc.PARTNERED) ? (0, Chunk481060.h7j)(e => (0, r.jsx)(u.ConfirmModal, w(P({}, e), {
+              module.features.has(Chunk981631.GuildFeatures.DISCOVERABLE) && module.features.has(Chunk981631.GuildFeatures.PARTNERED) ? (0, Chunk481060.h7j)(e => (0, r.jsx)(u.ConfirmModal, w(P({}, e), {
                 header: I.intl.string(I.t.iBnVHR),
                 confirmText: I.intl.string(I.t["cY+Ooa"]),
                 cancelText: I.intl.string(I.t.oEAioK),
@@ -330,7 +330,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
                   variant: "text-sm/normal",
                   children: I.intl.string(I.t["P+Sh8f"])
                 })
-              }))) : module.features.has(Chunk981631.oNc.DISCOVERABLE) ? (0, Chunk481060.h7j)(e => (0, r.jsx)(u.ConfirmModal, w(P({}, e), {
+              }))) : module.features.has(Chunk981631.GuildFeatures.DISCOVERABLE) ? (0, Chunk481060.h7j)(e => (0, r.jsx)(u.ConfirmModal, w(P({}, e), {
                 header: I.intl.string(I.t.iBnVHR),
                 confirmText: I.intl.string(I.t["cY+Ooa"]),
                 cancelText: I.intl.string(I.t.oEAioK),
@@ -339,7 +339,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
                   variant: "text-sm/normal",
                   children: I.intl.string(I.t["eMx/ub"])
                 })
-              }))) : module.features.has(Chunk981631.oNc.PARTNERED) ? (0, Chunk481060.h7j)(e => (0, r.jsx)(u.ConfirmModal, w(P({}, e), {
+              }))) : module.features.has(Chunk981631.GuildFeatures.PARTNERED) ? (0, Chunk481060.h7j)(e => (0, r.jsx)(u.ConfirmModal, w(P({}, e), {
                 header: I.intl.string(I.t.iBnVHR),
                 confirmText: I.intl.string(I.t["cY+Ooa"]),
                 cancelText: I.intl.string(I.t.oEAioK),
@@ -358,7 +358,7 @@ let Z = "dismissedCommunityFeaturesUpsell",
   },
   L = () => {
     let e = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild());
-    return null == module ? null : module.features.has(Chunk981631.oNc.COMMUNITY) ? (0, Chunk951288.jsx)(A, {}) : (0, Chunk951288.jsx)(Chunk906512.Z, {
+    return null == module ? null : module.features.has(Chunk981631.GuildFeatures.COMMUNITY) ? (0, Chunk951288.jsx)(A, {}) : (0, Chunk951288.jsx)(Chunk906512.Z, {
       guild: module
     })
   }

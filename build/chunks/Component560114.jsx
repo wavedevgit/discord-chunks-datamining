@@ -243,7 +243,7 @@ class ev extends(i = Chunk647438.PureComponent) {
         })]
       }))
     }
-    return h = exports.features.has(Chunk981631.oNc.HUB) ? (0, Chunk951288.jsxs)("div", {
+    return h = exports.features.has(Chunk981631.GuildFeatures.HUB) ? (0, Chunk951288.jsxs)("div", {
       className: Chunk451964.hubHeader,
       children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         className: Chunk451964.headerCloseButtonSpacing,
@@ -700,9 +700,9 @@ let ex = Chunk647438.forwardRef(function(e, t) {
     analyticsLocation: T
   } = e, {
     analyticsLocations: b
-  } = (0, C.ZP)(y.Z.INSTANT_INVITE_MODAL), j = (0, m.e7)([B.Z, O.Z, R.ZP], () => {
+  } = (0, C.ZP)(y.Z.INSTANT_INVITE_MODAL), j = (0, m.e7)([G.Z, O.Z, R.ZP], () => {
     if (null != a) return a;
-    let e = B.Z.getChannelId(),
+    let e = G.Z.getChannelId(),
       t = null == e || (0, ei.AB)(e) ? true : O.Z.getChannel(e);
     return (null == t ? true : t.isThread()) && (t = O.Z.getChannel(t.parent_id)), null != t ? t : R.ZP.getDefaultChannel(r.id, true, en.Plq.CREATE_INSTANT_INVITE)
   }, [a, r.id]), A = null;
@@ -716,7 +716,7 @@ let ex = Chunk647438.forwardRef(function(e, t) {
       guildId: P,
       location: "InstantInviteModalConnected"
     }),
-    G = (0, m.e7)([U.Z], () => {
+    F = (0, m.e7)([U.Z], () => {
       let e = null != j ? j.id : null;
       return null == e ? null : U.Z.getInvite(e, {
         targetType: A,
@@ -731,13 +731,13 @@ let ex = Chunk647438.forwardRef(function(e, t) {
       location: "instant_invite_modal",
       autoTrackExposure: true
     }),
-    [Y, Q, $, X] = (0, m.Wu)([L.Z, F.ZP], () => [L.Z.getInviteSuggestionRows(), L.Z.getTotalSuggestionsCount() >= 1, L.Z.getInitialCounts(), null != a && null != j ? F.ZP.getVoiceStatesForChannel(j) : null], [j, a]),
+    [Y, Q, $, X] = (0, m.Wu)([L.Z, B.ZP], () => [L.Z.getInviteSuggestionRows(), L.Z.getTotalSuggestionsCount() >= 1, L.Z.getInitialCounts(), null != a && null != j ? B.ZP.getVoiceStatesForChannel(j) : null], [j, a]),
     ee = (0, m.e7)([V.ZP], () => {
       let e = null != j ? j.id : null;
       return null != P ? V.ZP.getProps(P, e) : true
     }, [j, P], v.Z),
     el = (0, m.e7)([k.Z], () => null != j && k.Z.can(en.Plq.CREATE_INSTANT_INVITE, j), [j]),
-    es = null === G || !el,
+    es = null === F || !el,
     [ea] = s.useState(() => {
       let e = new Set;
       return null != u && null != X ? X.forEach(t => {
@@ -760,9 +760,9 @@ let ex = Chunk647438.forwardRef(function(e, t) {
       inviteTargetType: A
     }).catch(en.VqG)
   }, [ea, a, r, c, A]);
-  let [ed] = (0, N.Z)(null != c ? [c] : []), ec = null != G ? G.code : true, ep = null == G ? true : G.maxAge, ex = null == G ? true : G.maxUses, eI = null == G ? true : G.temporary, eS = r.vanityURLCode, ef = null != eS && eS.length > 0, eE = !el && !(null == j ? true : j.isGuildVocal()) && ef, ey = null != (n = null == G ? true : G.flags) ? n : 0, eC = (null == j ? true : j.type) === en.d4z.GUILD_VOICE, eN = (0, _.Z)(j);
+  let [ed] = (0, _.Z)(null != c ? [c] : []), ec = null != F ? F.code : true, ep = null == F ? true : F.maxAge, ex = null == F ? true : F.maxUses, eI = null == F ? true : F.temporary, eS = r.vanityURLCode, ef = null != eS && eS.length > 0, eE = !el && !(null == j ? true : j.isGuildVocal()) && ef, ey = null != (n = null == F ? true : F.flags) ? n : 0, eC = (null == j ? true : j.type) === en.d4z.GUILD_VOICE, e_ = (0, N.Z)(j);
   el || (null == eo ? true : eo.invite_code) == null || (ec = eo.invite_code);
-  let e_ = s.useMemo(() => z && eC ? (0, q.Qq)(Y, P) : null, [z, eC, Y, P]),
+  let eN = s.useMemo(() => z && eC ? (0, q.Qq)(Y, P) : null, [z, eC, Y, P]),
     [eT, eb] = s.useState({
       query: "",
       maxAgeOptions: D,
@@ -787,7 +787,7 @@ let ex = Chunk647438.forwardRef(function(e, t) {
         lastPage: eT.currentPage
       })
     }, [eT.currentPage, ej]),
-    eZ = eC && !eE && !es && !eN,
+    eZ = eC && !eE && !es && !e_,
     {
       enabled: eM
     } = Z.o.useExperiment({
@@ -835,13 +835,13 @@ let ex = Chunk647438.forwardRef(function(e, t) {
     }, [eE, el, j, o, null == ed ? true : ed.id, A, u, eP, ew, eV, ej, eO, eR]),
     ek = (0, E.Z)(j),
     eD = (0, E.Z)((0, H.yE)(eR, h.$.IS_APPLICATION_BYPASS)),
-    eB = null != ek && ek !== j,
-    eG = null != eD && eD !== (0, H.yE)(eR, h.$.IS_APPLICATION_BYPASS);
+    eG = null != ek && ek !== j,
+    eF = null != eD && eD !== (0, H.yE)(eR, h.$.IS_APPLICATION_BYPASS);
   s.useEffect(() => {
-    !eE && (eB || eG) && eL()
-  }, [eL, eB, eG, eE]);
+    !eE && (eG || eF) && eL()
+  }, [eL, eG, eF, eE]);
   let {
-    canCreateApplicationBypassInvites: eF,
+    canCreateApplicationBypassInvites: eB,
     isManualApprovalGuild: ez
   } = (0, J.R)(r);
   return (0, l.jsx)(C.Gt, {
@@ -859,7 +859,7 @@ let ex = Chunk647438.forwardRef(function(e, t) {
       targetUserId: u,
       application: ed,
       rows: Y,
-      sections: e_,
+      sections: eN,
       isFriendsInVCInvitesEnabled: z,
       showFriends: Q,
       initialCounts: $,
@@ -878,7 +878,7 @@ let ex = Chunk647438.forwardRef(function(e, t) {
       changePage: eA,
       onGenerateNewLink: eL,
       handleDone: eU,
-      isApplicationBypassToggleEnabled: eF && !es
+      isApplicationBypassToggleEnabled: eB && !es
     })
   })
 });

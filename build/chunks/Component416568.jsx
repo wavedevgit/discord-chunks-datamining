@@ -223,10 +223,10 @@ function eu(e) {
       "aria-label": en.intl.string(en.t["7hB4kp"]),
       gap: "xs",
       children: s.map((e, t) => l(e, t, s.length))
-    }), c, (0, r.jsx)(X.Z, {}), i ? null : (0, r.jsx)(F.Z, {
+    }), c, (0, r.jsx)(X.Z, {}), i ? null : (0, r.jsx)(V.Z, {
       disableTooltip: o.length > 0,
       lastTargetNode: s[s.length - 1]
-    }), i ? null : t, n ? null : (0, r.jsx)(V.Z, {})]
+    }), i ? null : t, n ? null : (0, r.jsx)(F.Z, {})]
   })
 }
 
@@ -244,8 +244,8 @@ function ed(e) {
     startSorting: C,
     stopSorting: E
   } = (0, M.Z)(), N = i.useRef(false), [T] = i.useState(() => new h.V7), A = i.useRef(null), R = i.useRef(null), B = (0, u.OP)(), {
-    ref: V
-  } = B, F = function(e, t) {
+    ref: F
+  } = B, V = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -373,8 +373,8 @@ function ed(e) {
             className: er.unreadMentionsIndicatorTop,
             barClassName: er.unreadMentionsBar
           }), (0, r.jsx)("ul", (i = el({
-            ref: V
-          }, F, H), a = a = {
+            ref: F
+          }, V, H), a = a = {
             role: "tree",
             className: er.tree,
             children: (0, r.jsxs)("div", {

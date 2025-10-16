@@ -24,9 +24,9 @@ function h(e) {
   let {
     analyticsSection: t,
     type: n
-  } = e, h = (0, o.e7)([u.default], () => u.default.getCurrentUser()), A = g.ZP.canUseAnimatedAvatar(h), P = g.ZP.canUsePremiumProfileCustomization(h), b = n === p.pC.BANNER && P || n === p.pC.AVATAR && A, {
+  } = e, h = (0, r.e7)([u.default], () => u.default.getCurrentUser()), A = g.ZP.canUseAnimatedAvatar(h), P = g.ZP.canUsePremiumProfileCustomization(h), b = n === p.pC.BANNER && P || n === p.pC.AVATAR && A, {
     sourceAnalyticsLocations: v
-  } = (0, l.ZP)(c.Z.PREMIUM_PREVIEW_UPSELL_HEADER);
+  } = (0, c.ZP)(l.Z.PREMIUM_PREVIEW_UPSELL_HEADER);
   if (a.useEffect(() => {
       b || f.default.track(_.rMx.PREMIUM_UPSELL_VIEWED, {
         type: t,
@@ -34,13 +34,13 @@ function h(e) {
       })
     }, [b, t, v]), b) return null;
   let E = (0, i.jsx)(s.Z, {
-    className: m.__invalid_getNitroLink,
-    size: r.zx.Sizes.SMALL,
-    look: r.zx.Looks.LINK,
-    color: r.zx.Colors.LINK,
+    className: N.__invalid_getNitroLink,
+    size: o.zx.Sizes.SMALL,
+    look: o.zx.Looks.LINK,
+    color: o.zx.Colors.LINK,
     subscriptionTier: x.Si.TIER_2,
     textOptions: {
-      textOverride: N.intl.format(N.t["944tDg"], {})
+      textOverride: m.intl.format(m.t["944tDg"], {})
     },
     showIcon: false,
     premiumModalAnalyticsLocation: {
@@ -51,8 +51,8 @@ function h(e) {
   });
   return (0, i.jsx)(d.Z, {
     reducedRightPadding: true,
-    className: m.nitroPreviewUpsell,
-    text: N.intl.format(N.t.Og8039, {}),
+    className: N.nitroPreviewUpsell,
+    text: m.intl.format(m.t.Og8039, {}),
     button: E
   })
 }

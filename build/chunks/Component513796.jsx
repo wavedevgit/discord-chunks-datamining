@@ -44,8 +44,8 @@ let x = e => {
       overviewFooter: p,
       onNextPressed: f,
       onPrevPressed: v,
-      onComplete: N,
-      sequencerClassName: j,
+      onComplete: j,
+      sequencerClassName: N,
       initialStep: b = 0,
       forceStep: C,
       submitting: S = false,
@@ -101,7 +101,7 @@ let x = e => {
             steps: I,
             sideMargin: 24,
             verticalMargin: 24,
-            className: a()(u.sequencer, j),
+            className: a()(u.sequencer, N),
             innerClassName: u.innerSequencer,
             children: _.modalContent
           })]
@@ -113,7 +113,7 @@ let x = e => {
             type: "submit",
             loading: S,
             onClick: () => {
-              T ? (N(), E && h()) : (null == f || f(), L(y + 1))
+              T ? (j(), E && h()) : (null == f || f(), L(y + 1))
             },
             disabled: _.disableNextStep
           }), P ? null : (0, s.jsx)(r.zx, {

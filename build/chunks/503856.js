@@ -16,7 +16,7 @@ let l = () => {
     let t = Chunk592125.Z.getChannel(module);
     if (null == exports) returnfalse;
     let n = Chunk430824.Z.getGuild(exports.getGuildId());
-    return null != require && require.features.has(Chunk981631.oNc.HUB)
+    return null != require && require.features.has(Chunk981631.GuildFeatures.HUB)
   },
   c = e => (0, r.e7)([o.Z, i.Z, a.Z], () => {
     let t = o.Z.getVoiceChannelId();

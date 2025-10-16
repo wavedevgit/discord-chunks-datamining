@@ -1,5 +1,5 @@
 /** Chunk was on 53900 **/
-/** chunk id: 784280, original params: t,e,n (module,exports,require) **/
+/** chunk id: 784280, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => p
 }), require("./388685.js");
@@ -17,31 +17,31 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function p(t) {
+function p(e) {
   let {
-    guildId: e
-  } = t, n = (0, a.e7)([h.Z], () => h.Z.getGuild(e)), [p, k] = l.useState(null), [v, C] = l.useState(""), {
+    guildId: t
+  } = e, n = (0, a.e7)([h.Z], () => h.Z.getGuild(t)), [p, k] = l.useState(null), [v, C] = l.useState(""), {
     createMultipleConfettiAt: x
-  } = l.useContext(c.h), m = (0, a.e7)([u.Z], () => u.Z.useReducedMotion, []), w = async e => {
+  } = l.useContext(d.h), m = (0, a.e7)([u.Z], () => u.Z.useReducedMotion, []), w = async t => {
     let {
       onClose: n,
       guildId: i
-    } = t;
-    e.preventDefault(), k(null);
+    } = e;
+    t.preventDefault(), k(null);
     try {
-      await (0, d.e)(i, {
+      await (0, c.e)(i, {
         nick: v
       }), null == n || n()
-    } catch (t) {
-      k(new s.Hx(t))
+    } catch (e) {
+      k(new s.Hx(e))
     }
   }, {
     transitionState: S,
     onClose: _
-  } = t, y = h.Z.getGuildsArray().filter(t => t.id !== e && t.features.has(g.oNc.HUB)).length > 0, E = !m && !y && (null == n ? true : n.features.has(g.oNc.HUB)) && (0, f.b)();
+  } = e, y = h.Z.getGuildsArray().filter(e => e.id !== t && e.features.has(g.GuildFeatures.HUB)).length > 0, E = !m && !y && (null == n ? true : n.features.has(g.GuildFeatures.HUB)) && (0, f.b)();
   return l.useEffect(() => {
     E && x(window.innerWidth / 2, window.innerHeight / 2)
-  }, [x, E]), (0, i.jsx)(o.u_l, {
+  }, [x, E]), (0, i.jsx)(r.u_l, {
     title: b.intl.formatToPlainString(b.t["d+6kzs"], {
       guildName: null == n ? true : n.name
     }),
@@ -58,12 +58,12 @@ function p(t) {
     onClose: _,
     children: (0, i.jsx)("form", {
       onSubmit: w,
-      children: (0, i.jsx)(r.oil, {
+      children: (0, i.jsx)(o.oil, {
         label: b.intl.string(b.t.pt6jh4),
         placeholder: b.intl.string(b.t.RfWvWF),
         description: b.intl.string(b.t.VAaqfH),
-        onChange: t => {
-          C(t)
+        onChange: e => {
+          C(e)
         },
         error: null == p ? true : p.getFirstFieldErrorMessage("name"),
         value: v

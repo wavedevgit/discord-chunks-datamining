@@ -25,7 +25,7 @@ function _(e) {
     selected: n
   } = e, _ = (0, l.e7)([h.Z], () => h.Z.can(m.Plq.KICK_MEMBERS, t)), O = (0, l.e7)([u.Z], () => u.Z.getSubmittedGuildJoinRequestTotal(t.id)), y = _ && null != O ? O : 0;
   i.useEffect(() => {
-    _ && t.features.has(m.oNc.MEMBER_VERIFICATION_GATE_ENABLED) && t.features.has(m.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL) && c.Z.fetchGuildJoinRequests({
+    _ && t.features.has(m.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED) && t.features.has(m.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL) && c.Z.fetchGuildJoinRequests({
       guildId: t.id,
       status: d.wB.SUBMITTED,
       limit: p.p

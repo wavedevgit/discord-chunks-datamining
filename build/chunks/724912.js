@@ -12,6 +12,6 @@ function o(e) {
     var t;
     if (null == e) returnfalse;
     let n = i.Z.getGuild(e);
-    return null != (t = null == n ? true : n.features.has(l.oNc.HUB)) && t
+    return null != (t = null == n ? true : n.features.has(l.GuildFeatures.HUB)) && t
   }, [e])
 }

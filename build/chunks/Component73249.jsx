@@ -173,7 +173,7 @@ function w(e) {
   })
 }
 
-function N(e) {
+function A(e) {
   var t, n;
   let {
     item: r,
@@ -191,9 +191,9 @@ function N(e) {
       sourceMetadata: r,
       width: l,
       height: a
-    } = e, o = A(C.intl.string(C.t.ILJuBg), "name", {
+    } = e, o = N(C.intl.string(C.t.ILJuBg), "name", {
       subtextLineClamp: 1
-    }), s = A(C.intl.string(C.t["3Nf9u7"]), "size"), u = A(C.intl.string(C.t.eOB2eX), "alt", {
+    }), s = N(C.intl.string(C.t["3Nf9u7"]), "size"), u = N(C.intl.string(C.t.eOB2eX), "alt", {
       subtextLineClamp: 2
     });
     if ((null == r || null == (t = r.identifier) ? true : t.type) !== "attachment") return null;
@@ -248,7 +248,7 @@ function N(e) {
   })
 }
 
-function A(e, t, n) {
+function N(e, t, n) {
   let l = r.useCallback(e => {
     (0, b.JG)(e, () => (0, c.showToast)({
       message: C.intl.string(C.t.mGZ66O),
@@ -277,7 +277,7 @@ function Z(e) {
     spacing: 18,
     onRequestClose: () => s(false),
     animation: c.yRy.Animation.NONE,
-    renderPopout: () => (0, i.jsx)(N, {
+    renderPopout: () => (0, i.jsx)(A, {
       item: l,
       canCopyImage: b,
       canCopyLink: E,

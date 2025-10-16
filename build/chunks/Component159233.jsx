@@ -55,7 +55,7 @@ function b(t) {
     isRecurrenceItem: p
   } = t, {
     canManageGuildEvent: Z
-  } = (0, o.XJ)(null != v ? v : b), y = (0, r.e7)([u.ZP], () => u.ZP.getGuildScheduledEvent(e)), O = Z(y), h = (0, s.Z)(), P = (0, c.Z)(E, null == y ? true : y.id), m = (0, a.zI)(e, E);
+  } = (0, u.XJ)(null != v ? v : b), y = (0, r.e7)([o.ZP], () => o.ZP.getGuildScheduledEvent(e)), O = Z(y), h = (0, s.Z)(), P = (0, c.Z)(E, null == y ? true : y.id), m = (0, a.zI)(e, E);
   if (!O || null == m || null == y) return null;
   let j = null != y.recurrence_rule && !p,
     N = t => {

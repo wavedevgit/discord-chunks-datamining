@@ -22,7 +22,7 @@ function g() {
       application: n,
       loading: g
     } = (0, Chunk725803.Z)(null == module ? true : module.id, Chunk674563.wW.GUILD_ROLE_SUBSCRIPTIONS),
-    m = null != require && (null == module ? true : module.features.has(Chunk981631.oNc.ROLE_SUBSCRIPTIONS_ENABLED)) === true;
+    m = null != require && (null == module ? true : module.features.has(Chunk981631.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED)) === true;
   return (0, Chunk951288.jsx)("main", {
     children: null == module || !exports || g ? (0, Chunk951288.jsx)(Chunk481060.$jN, {}) : (0, Chunk951288.jsx)(Chunk469351.t, {
       guildId: module.id,

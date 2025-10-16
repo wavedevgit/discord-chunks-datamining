@@ -30,9 +30,9 @@ let b = function(e) {
     title: _,
     channelId: C,
     description: O
-  } = l, y = u.Z.getChannel(C), N = null;
-  null != y && (0, d.k3)(y) || (N = f.intl.string(f.t.kTdL8f));
-  let E = null == O || 0 === O.length,
+  } = l, y = u.Z.getChannel(C), E = null;
+  null != y && (0, d.k3)(y) || (E = f.intl.string(f.t.kTdL8f));
+  let N = null == O || 0 === O.length,
     I = g.ZP.getResourceChannelIconURL({
       channelId: l.channelId,
       icon: l.icon
@@ -106,7 +106,7 @@ let b = function(e) {
       className: a()(h.resourceChannel, {
         [h.dropIndicatorBefore]: null != T && b < T,
         [h.dropIndicatorAfter]: null != T && b > T,
-        [h.resourceChannelError]: null != N
+        [h.resourceChannelError]: null != E
       }),
       ref: e => {
         S(P(e))
@@ -137,7 +137,7 @@ let b = function(e) {
           variant: "text-md/semibold",
           color: "header-primary",
           children: _
-        }), !E && (0, r.jsx)(o.Text, {
+        }), !N && (0, r.jsx)(o.Text, {
           className: h.resourceChannelDescription,
           variant: "text-xs/medium",
           color: "text-muted",
@@ -154,10 +154,10 @@ let b = function(e) {
           "aria-label": f.intl.string(f.t.bt75u7)
         })
       })]
-    }), null != N && (0, r.jsx)(o.Text, {
+    }), null != E && (0, r.jsx)(o.Text, {
       variant: "text-xs/medium",
       color: "text-danger",
-      children: N
+      children: E
     })]
   })
 }

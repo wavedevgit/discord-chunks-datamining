@@ -54,7 +54,7 @@ function U(e, t, n) {
   }) : e[t] = n, e
 }
 
-function V(e) {
+function G(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -67,7 +67,7 @@ function V(e) {
   return e
 }
 
-function G(e, t) {
+function V(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -95,7 +95,7 @@ let W = {
   };
 class K {
   addStep(e) {
-    ++this.currentIndex, this.steps.push(V({
+    ++this.currentIndex, this.steps.push(G({
       index: this.currentIndex
     }, e)), e.isDone && this.completedSteps++
   }
@@ -268,7 +268,7 @@ let Y = e => {
                     let {
                       default: t
                     } = await n.e("78704").then(n.bind(n, 560602));
-                    return a(true), n => (0, r.jsx)(t, G(V({}, n), {
+                    return a(true), n => (0, r.jsx)(t, V(G({}, n), {
                       channel: i,
                       guild: e,
                       permission: l,
@@ -301,7 +301,7 @@ let Y = e => {
                     let {
                       default: t
                     } = await n.e("21971").then(n.bind(n, 201049));
-                    return n => (0, r.jsx)(t, G(V({}, n), {
+                    return n => (0, r.jsx)(t, V(G({}, n), {
                       channelId: e.id,
                       guildId: e.guild_id
                     }))
@@ -319,7 +319,7 @@ let Y = e => {
                     let {
                       default: t
                     } = await n.e("80404").then(n.bind(n, 158586));
-                    return n => (0, r.jsx)(t, G(V({}, n), {
+                    return n => (0, r.jsx)(t, V(G({}, n), {
                       channel: e
                     }))
                   })
@@ -334,7 +334,7 @@ let Y = e => {
                     let {
                       default: e
                     } = await n.e("18417").then(n.bind(n, 740696));
-                    return t => (0, r.jsx)(e, G(V({}, t), {
+                    return t => (0, r.jsx)(e, V(G({}, t), {
                       guildId: i
                     }))
                   }))

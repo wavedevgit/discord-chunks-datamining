@@ -34,7 +34,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk133495 = require("./133495.js");
 
-function F(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -71,9 +71,9 @@ function I(e) {
     shouldAnimate: t = true
   } = e;
   return (0, r.jsx)("div", {
-    className: _.gifGrid,
+    className: F.gifGrid,
     children: Z.map(e => (0, r.jsx)("div", {
-      className: _.gif,
+      className: F.gif,
       style: {
         backgroundImage: "url(".concat(t ? e.gif : e.png, ")")
       }
@@ -104,7 +104,7 @@ function D(e) {
     guild: n
   } = e;
   return (0, r.jsx)("div", {
-    className: _.boostingPill,
+    className: F.boostingPill,
     children: (0, r.jsx)(f.Z, {
       guildFeature: t,
       guild: n,
@@ -122,16 +122,16 @@ function M(e) {
     shouldShowPremiumIcon: s
   } = e, u = null != a && null != l;
   return (0, r.jsxs)("div", {
-    className: i()(_.optionDescription, {
-      [_.hasBoostingPill]: u
+    className: i()(F.optionDescription, {
+      [F.hasBoostingPill]: u
     }),
     "aria-hidden": true,
     children: [(0, r.jsxs)("div", {
-      className: _.optionIconAndLabel,
+      className: F.optionIconAndLabel,
       children: [t, (0, r.jsxs)(c.Text, {
         variant: "text-sm/semibold",
-        className: i()(_.optionLabelText, {
-          [_.hasPremiumIcon]: s
+        className: i()(F.optionLabelText, {
+          [F.hasPremiumIcon]: s
         }),
         children: [s && (0, r.jsx)(o.u, {
           asContainer: true,
@@ -139,7 +139,7 @@ function M(e) {
           children: (0, r.jsx)(c.SrA, {
             size: "xs",
             color: "currentColor",
-            className: _.premiumWheel
+            className: F.premiumWheel
           })
         }), n]
       })]
@@ -169,7 +169,7 @@ function L(e) {
     children: [(0, r.jsx)(c.tEY, {
       within: true,
       children: (0, r.jsxs)("div", {
-        className: i()(_.option, _.imageUploadOption),
+        className: i()(F.option, F.imageUploadOption),
         children: [(0, r.jsx)(M, {
           icon: (0, r.jsx)(c.FmF, {
             size: "md",
@@ -212,7 +212,7 @@ function U(e) {
   });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(c.P3F, {
-      className: _.option,
+      className: F.option,
       onClick: l,
       "aria-label": P.intl.string(P.t["xsC+//"]),
       onMouseEnter: i,
@@ -279,7 +279,7 @@ function B(e) {
       let {
         default: l
       } = await Promise.all([n.e("59732"), n.e("11866")]).then(n.bind(n, 712451));
-      return n => (0, r.jsx)(l, F({
+      return n => (0, r.jsx)(l, _({
         imageUri: e,
         file: t,
         onCrop: J,
@@ -297,7 +297,7 @@ function B(e) {
       let {
         default: e
       } = await n.e("72891").then(n.bind(n, 195297));
-      return t => (0, r.jsx)(e, F({
+      return t => (0, r.jsx)(e, _({
         uploadType: o,
         onComplete: e => {
           let {
@@ -333,24 +333,24 @@ function B(e) {
   return (0, r.jsxs)(c.Y0X, {
     transitionState: t,
     size: c.CgR.DYNAMIC,
-    className: _.modal,
+    className: F.modal,
     parentComponent: "SelectImageModal",
     children: [(0, r.jsxs)(c.xBx, {
-      className: _.modalHeader,
+      className: F.modalHeader,
       separator: false,
       children: [(0, r.jsx)(c.Heading, {
         variant: "heading-lg/semibold",
         children: I
       }), (0, r.jsx)(c.olH, {
         onClick: a,
-        className: _.modalCloseButton
+        className: F.modalCloseButton
       })]
     }), (0, r.jsxs)(c.hzk, {
-      className: _.modalContent,
+      className: F.modalContent,
       children: [(0, r.jsxs)("div", {
-        className: _.imageSelectionSection,
+        className: F.imageSelectionSection,
         children: [(0, r.jsxs)("ul", {
-          className: _.optionsList,
+          className: F.optionsList,
           "aria-label": P.intl.string(P.t.iBnqtb),
           children: [(0, r.jsx)("li", {
             children: (0, r.jsx)(L, {
@@ -370,7 +370,7 @@ function B(e) {
             })
           })]
         }), null != Z ? (0, r.jsx)(c.Text, {
-          className: _.imageSpecifications,
+          className: F.imageSpecifications,
           variant: "text-sm/normal",
           color: "text-muted",
           children: Z
@@ -383,7 +383,7 @@ function B(e) {
         showUpsell: true,
         position: "inline",
         showShadow: false,
-        className: _.premiumUpsell
+        className: F.premiumUpsell
       })]
     })]
   })

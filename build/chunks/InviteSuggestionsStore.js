@@ -17,8 +17,8 @@ var d, u, Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk245335 = require("./245335.js");
 let C = new Set,
-  N = [],
-  _ = new Map,
+  _ = [],
+  N = new Map,
   T = {
     numFriends: 0,
     numDms: 0,
@@ -50,8 +50,8 @@ function b(e) {
 }
 
 function j(e) {
-  N = e, _ = new Map, e.forEach((e, t) => {
-    _.set(e, {
+  _ = e, N = new Map, e.forEach((e, t) => {
+    N.set(e, {
       index: t
     })
   })
@@ -61,7 +61,7 @@ class A extends(d = Chunk442837.ZP.Store) {
     this.waitFor(Chunk699516.Z, Chunk752048.Z)
   }
   getInviteSuggestionRows() {
-    return N
+    return _
   }
   getTotalSuggestionsCount() {
     return i
@@ -70,12 +70,12 @@ class A extends(d = Chunk442837.ZP.Store) {
     return T
   }
   getSelectedInviteMetadata(e) {
-    let t = _.get(e),
+    let t = N.get(e),
       n = v.Z.getUserAffinities().map(e => e.otherUserId);
     if (null != t) return {
       rowNum: t.index,
       isAffinitySuggestion: e.isSuggested,
-      numTotal: N.length,
+      numTotal: _.length,
       numAffinityConnections: n.length,
       isFiltered: l
     }
@@ -104,7 +104,7 @@ let Z = new A(Chunk570140.Z, {
       rows: g,
       counts: h
     } = b("");
-    j(g), T = h, i = N.length
+    j(g), T = h, i = _.length
   },
   INVITE_SUGGESTIONS_SEARCH: function(e) {
     let {

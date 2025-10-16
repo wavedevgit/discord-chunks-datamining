@@ -21,7 +21,7 @@ function l(e) {
 }
 
 function c(e) {
-  return null != e && e.features.has(s.oNc.SOCIAL_LAYER_STOREFRONT)
+  return null != e && e.features.has(s.GuildFeatures.SOCIAL_LAYER_STOREFRONT)
 }
 
 function u(e) {

@@ -57,7 +57,7 @@ let x = function(e) {
     role: j
   } = e, v = (0, c.oC)(t.id, j), {
     analyticsLocations: _
-  } = (0, a.ZP)(), C = t.features.has(g.oNc.ROLE_ICONS), O = e => {
+  } = (0, a.ZP)(), C = t.features.has(g.GuildFeatures.ROLE_ICONS), O = e => {
     C || ((0, l.yw)(g.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
       location: b(h({}, e), {
         section: g.jXE.CUSTOM_ROLE_ICONS_TOOLTIP
@@ -77,7 +77,7 @@ let x = function(e) {
   }, y = (0, r.jsx)(o.Z, {
     className: f.availabilityIndicator,
     guild: t,
-    guildFeature: g.oNc.ROLE_ICONS,
+    guildFeature: g.GuildFeatures.ROLE_ICONS,
     tooltipPosition: "top",
     hideTooltip: C,
     onClick: () => O({
@@ -110,7 +110,7 @@ let x = function(e) {
           className: f.preview
         })
       }), (0, r.jsx)(i.Button, {
-        onClick: () => t.features.has(g.oNc.ROLE_ICONS) ? void(0, i.ZDy)(async () => {
+        onClick: () => t.features.has(g.GuildFeatures.ROLE_ICONS) ? void(0, i.ZDy)(async () => {
           let {
             default: e
           } = await n.e("22942").then(n.bind(n, 660727));

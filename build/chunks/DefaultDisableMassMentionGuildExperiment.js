@@ -45,6 +45,6 @@ function c(e) {
       autoTrackExposure: true
     });
   if (null == e) returnfalse;
-  let o = e.features.has(a.oNc.COMMUNITY);
+  let o = e.features.has(a.GuildFeatures.COMMUNITY);
   return i && o && l
 }

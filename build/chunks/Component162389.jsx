@@ -79,8 +79,8 @@ function y(e) {
       }))
     })
   }, [r, t]), {
-    handleDragStart: N,
-    handleDragReset: O,
+    handleDragStart: O,
+    handleDragReset: N,
     handleDragComplete: Z
   } = (0, h.Z)(t.availableTags, e => {
     (0, d.pW)({
@@ -95,8 +95,8 @@ function y(e) {
       canManageChannels: r,
       onTagClick: S,
       onDragComplete: Z,
-      onDragReset: O,
-      onDragStart: N
+      onDragReset: N,
+      onDragStart: O
     }, e.id)) : null, p ? (0, i.jsx)(c.P3F, {
       onClick: y,
       className: s()(x.addTags, {

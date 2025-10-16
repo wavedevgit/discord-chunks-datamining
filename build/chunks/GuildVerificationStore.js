@@ -52,7 +52,7 @@ function b(e) {
     }
     let t = new Date("2022-12-02 00:00:00"),
       r = null == i.joinedAt || new Date(i.joinedAt) < t;
-    if (!(n.features.has(_.oNc.GUILD_ONBOARDING_EVER_ENABLED) && !r) && e.size > 0) return
+    if (!(n.features.has(_.GuildFeatures.GUILD_ONBOARDING_EVER_ENABLED) && !r) && e.size > 0) return
   }
   let h = +r.createdAt + 6e4 * _.YeM.ACCOUNT_AGE - Date.now(),
     m = +n.joinedAt + 6e4 * _.YeM.MEMBER_AGE - Date.now(),

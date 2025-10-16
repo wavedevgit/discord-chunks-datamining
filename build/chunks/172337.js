@@ -13,5 +13,5 @@ let u = {
   title: () => Chunk388032.intl.string(Chunk388032.t.aTFQKi),
   description: () => Chunk388032.intl.string(Chunk388032.t.oTbFQk),
   canCreateGuild: false,
-  useIsGuildSupported: () => (0, Chunk442837.e7)([Chunk353926.Z, Chunk496675.Z], () => e => e.features.has(o.oNc.ROLE_SUBSCRIPTIONS_ENABLED) && !e.features.has(o.oNc.CREATOR_MONETIZABLE_RESTRICTED) && r.Z.can(o.Plq.ADMINISTRATOR, e) && (0, a.$F)() && (0, a.hQ)(e.id), [])
+  useIsGuildSupported: () => (0, Chunk442837.e7)([Chunk353926.Z, Chunk496675.Z], () => e => e.features.has(o.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED) && !e.features.has(o.GuildFeatures.CREATOR_MONETIZABLE_RESTRICTED) && r.Z.can(o.Plq.ADMINISTRATOR, e) && (0, a.$F)() && (0, a.hQ)(e.id), [])
 }

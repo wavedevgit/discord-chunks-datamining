@@ -84,7 +84,7 @@ function O(e) {
 let y = e => {
     e.stopPropagation(), e.preventDefault()
   },
-  N = e => {
+  E = e => {
     var {
       className: t,
       children: n
@@ -113,7 +113,7 @@ let y = e => {
     }))
   };
 
-function E(e) {
+function N(e) {
   var t;
   let {
     rule: n,
@@ -129,7 +129,7 @@ function E(e) {
         rule: n,
         onChangeRule: i
       })
-    }), (0, r.jsxs)(N, {
+    }), (0, r.jsxs)(E, {
       className: v.actionContainer,
       children: [(0, r.jsx)(s.rsf, {
         onChange: o,
@@ -172,7 +172,7 @@ function S(e) {
     saveRule: m
   } = (0, p.w)(), {
     updateRule: h
-  } = (0, g.pH)(t.guildId), [b, x] = i.useState(t.enabled), E = (0, l.throttle)(async () => {
+  } = (0, g.pH)(t.guildId), [b, x] = i.useState(t.enabled), N = (0, l.throttle)(async () => {
     if (!d) {
       let e = C(_({}, t), {
         enabled: !b
@@ -219,10 +219,10 @@ function S(e) {
         rule: t,
         triggerType: t.triggerType
       })]
-    }), (0, r.jsxs)(N, {
+    }), (0, r.jsxs)(E, {
       className: v.actionContainer,
       children: [(0, r.jsx)(s.rsf, {
-        onChange: E,
+        onChange: N,
         checked: null != b && b
       }), !n && (0, r.jsx)(a.u, {
         text: j.intl.string(j.t.UKOtz8),
@@ -280,7 +280,7 @@ function T(e) {
       }), (0, r.jsx)(O, {
         triggerType: t
       })]
-    }), (0, r.jsx)(N, {
+    }), (0, r.jsx)(E, {
       className: v.actionContainer,
       children: (0, r.jsx)(s.Button, {
         variant: "primary",
@@ -314,7 +314,7 @@ function P(e) {
     triggerType: i,
     onSetupRule: d
   });
-  return null == t || c || (m = l ? (0, r.jsx)(E, {
+  return null == t || c || (m = l ? (0, r.jsx)(N, {
     rule: t,
     onChangeRule: u,
     onContextMenu: g

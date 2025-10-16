@@ -1,7 +1,7 @@
 /** Chunk was on 87154 **/
 /** chunk id: 894059, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => a
+  Z: () => c
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -10,13 +10,13 @@ var Chunk481060 = require("./481060.js"),
   Chunk576749 = require("./576749.js"),
   Chunk388032 = require("./388032.jsx");
 
-function a(e) {
+function c(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
-    a = (0, l.Z)(e),
+    c = (0, l.Z)(e),
     u = (0, o.Z)();
-  return a ? (0, r.jsx)(i.sNh, {
+  return c ? (0, r.jsx)(i.sNh, {
     id: "create-event",
-    label: c.intl.string(c.t["60lJ0N"]),
+    label: a.intl.string(a.t["60lJ0N"]),
     icon: t ? i.VZI : true,
     action: () => {
       (0, i.ZDy)(async () => {

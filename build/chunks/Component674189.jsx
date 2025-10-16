@@ -53,10 +53,10 @@ function f(e) {
     createGuildDescription: x,
     selectGuildCta: E,
     title: O,
-    description: I,
-    isGuildSupported: _
-  } = (0, S.K)(r), [F, M] = l.useState(), [j, N] = l.useState(false), w = async () => {
-    N(true);
+    description: F,
+    isGuildSupported: I
+  } = (0, S.K)(r), [_, M] = l.useState(), [j, w] = l.useState(false), y = async () => {
+    w(true);
     let e = await new Promise(e => {
       d.Z.openCreateGuildModal({
         onSuccess: e
@@ -89,23 +89,23 @@ function f(e) {
         gap: 8,
         children: [(0, n.jsx)(s.Text, {
           variant: "text-md/medium",
-          children: I
+          children: F
         }), (0, n.jsxs)("div", {
           className: m.guildSelection,
           children: [(0, n.jsx)("div", {
             className: m.guildSelectorContainer,
             children: (0, n.jsx)(h, {
-              guildId: F,
+              guildId: _,
               onChange: M,
-              isGuildIncluded: _
+              isGuildIncluded: I
             })
           }), (0, n.jsx)(s.Button, {
             variant: "primary",
             text: E,
             onClick: () => {
-              a()(null != F, "Guild ID must not be null on click"), p.Z.hasSeenCreatorOnboardingForGuild(F) || (0, c.k)(F), g.Z.open(F, b, true, C), null == i || i()
+              a()(null != _, "Guild ID must not be null on click"), p.Z.hasSeenCreatorOnboardingForGuild(_) || (0, c.k)(_), g.Z.open(_, b, true, C), null == i || i()
             },
-            disabled: null == F
+            disabled: null == _
           })]
         })]
       }), v && (0, n.jsxs)(s.Kqy, {
@@ -115,7 +115,7 @@ function f(e) {
           variant: "text-md/medium",
           children: x
         }), (0, n.jsx)(o.zx, {
-          onClick: w,
+          onClick: y,
           submitting: j,
           className: m.createGuildButton,
           children: Z

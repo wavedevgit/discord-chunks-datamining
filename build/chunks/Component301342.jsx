@@ -117,7 +117,7 @@ let N = Chunk647438.memo(function(e) {
         role: U,
         tabIndex: B
       } = G,
-      V = function(e, t) {
+      F = function(e, t) {
         if (null == e) return {};
         var n, r, i = function(e, t) {
           if (null == e) return {};
@@ -132,13 +132,13 @@ let N = Chunk647438.memo(function(e) {
         }
         return i
       }(G, ["role", "tabIndex"]),
-      F = i.useRef(null),
+      V = i.useRef(null),
       H = i.useRef(null),
       z = (0, r.jsxs)("li", {
         className: t,
         "data-dnd-name": l.name,
         children: [(0, r.jsx)(d.tEY, {
-          focusTarget: F,
+          focusTarget: V,
           ringTarget: H,
           offset: {
             left: 4,
@@ -153,10 +153,10 @@ let N = Chunk647438.memo(function(e) {
             }),
             onContextMenu: M,
             children: [(0, r.jsxs)(d.P3F, I(S({
-              innerRef: F,
+              innerRef: V,
               className: E.mainContent,
               tabIndex: B
-            }, V), {
+            }, F), {
               onClick: L,
               "aria-label": C.intl.formatToPlainString(C.t.y5l3Jy, {
                 categoryName: l.name

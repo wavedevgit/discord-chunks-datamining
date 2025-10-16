@@ -62,8 +62,8 @@ function j(e) {
     promptIndex: C,
     option: O,
     hasError: y,
-    onDragStart: N,
-    onDragComplete: E,
+    onDragStart: E,
+    onDragComplete: N,
     onDragReset: I
   } = e, S = null, T = s().findIndex(v.options, e => e.id === O.id), {
     drag: P,
@@ -74,8 +74,8 @@ function j(e) {
     type: "ONBOARDING_PROMPT_OPTION_CARD-".concat(v.id),
     index: T,
     optionId: O.id,
-    onDragStart: N,
-    onDragComplete: E,
+    onDragStart: E,
+    onDragComplete: N,
     onDragReset: I
   }), {
     customEmoji: D,

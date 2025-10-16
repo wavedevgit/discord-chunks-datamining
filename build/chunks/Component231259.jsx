@@ -22,7 +22,7 @@ function g(t) {
     channel: f
   } = t, b = null != n, {
     canManageGuildEvent: v
-  } = (0, o.XJ)(null != f ? f : g), [E, p] = (0, r.Wu)([u.ZP], () => [u.ZP.isActive(e), u.ZP.getGuildScheduledEvent(e)]), Z = (0, a.Z)(n, null == p ? true : p.id), y = null != p && v(p), O = (null == p ? true : p.recurrence_rule) != null && !b, h = (0, s.zI)(e, n);
+  } = (0, u.XJ)(null != f ? f : g), [E, p] = (0, r.Wu)([o.ZP], () => [o.ZP.isActive(e), o.ZP.getGuildScheduledEvent(e)]), Z = (0, a.Z)(n, null == p ? true : p.id), y = null != p && v(p), O = (null == p ? true : p.recurrence_rule) != null && !b, h = (0, s.zI)(e, n);
   if (!y || E && !O && !b || b && !b || null == p || null == h) return null;
   let {
     startTime: P
@@ -35,8 +35,8 @@ function g(t) {
   }
   let j = t => {
     (0, i.h7j)(r => {
-      var o, u;
-      return (0, l.jsxs)(i.ConfirmModal, (o = function(t) {
+      var u, o;
+      return (0, l.jsxs)(i.ConfirmModal, (u = function(t) {
         for (var e = 1; e < arguments.length; e++) {
           var n = null != arguments[e] ? arguments[e] : {},
             l = Object.keys(n);
@@ -53,7 +53,7 @@ function g(t) {
           })
         }
         return t
-      }({}, r), u = u = {
+      }({}, r), o = o = {
         header: d.intl.string(d.t.R5bpio),
         confirmText: O || t ? d.intl.string(d.t["8ZsNv7"]) : d.intl.string(d.t.B9sJLS),
         cancelText: d.intl.string(d.t.oEAioK),
@@ -65,16 +65,16 @@ function g(t) {
           variant: "text-md/normal",
           children: d.intl.format(d.t.ZcpcyM, {})
         })]
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(u)) : (function(t, e) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(u, Object.getOwnPropertyDescriptors(o)) : (function(t, e) {
         var n = Object.keys(t);
         if (Object.getOwnPropertySymbols) {
           var l = Object.getOwnPropertySymbols(t);
           n.push.apply(n, l)
         }
         return n
-      })(Object(u)).forEach(function(t) {
-        Object.defineProperty(o, t, Object.getOwnPropertyDescriptor(u, t))
-      }), o))
+      })(Object(o)).forEach(function(t) {
+        Object.defineProperty(u, t, Object.getOwnPropertyDescriptor(o, t))
+      }), u))
     })
   };
   return (0, l.jsx)(i.sNh, {

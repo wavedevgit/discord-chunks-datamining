@@ -76,7 +76,7 @@ function c(e) {
   }, {
     autoTrackExposure: false
   });
-  return null != e && e.features.has(i.oNc.CREATOR_MONETIZABLE_WHITEGLOVE) && t
+  return null != e && e.features.has(i.GuildFeatures.CREATOR_MONETIZABLE_WHITEGLOVE) && t
 }
 
 function u(e) {
@@ -85,7 +85,7 @@ function u(e) {
   } = r.AC.getCurrentConfig({
     location: "e3bb71_8"
   });
-  return null != e && e.features.has(i.oNc.CREATOR_MONETIZABLE_WHITEGLOVE) && t
+  return null != e && e.features.has(i.GuildFeatures.CREATOR_MONETIZABLE_WHITEGLOVE) && t
 }
 
 function d(e) {

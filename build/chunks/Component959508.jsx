@@ -35,7 +35,7 @@ function O(e) {
     disableAutofocus: u,
     promptIndex: x,
     dragIndex: O,
-    includeCount: E,
+    includeCount: N,
     singleColumn: I,
     onPromptDragComplete: S,
     onPromptDragStart: T,
@@ -55,7 +55,7 @@ function O(e) {
   }), L = (0, s.cj)([b.Z], () => {
     var e;
     return null != (e = b.Z.errors[x]) ? e : C
-  }), [k, M] = i.useState(false), [G, U] = i.useState(false), B = null != (t = L.options) ? t : L.optionErrors.filter(p.lm)[0], F = L.config, H = l.options.length >= j.fY, W = (0, g.kl)(n.id, Array.from(w), [l]).length - w.size, V = i.useRef(null), z = i.useRef(x);
+  }), [k, G] = i.useState(false), [M, U] = i.useState(false), B = null != (t = L.options) ? t : L.optionErrors.filter(p.lm)[0], F = L.config, H = l.options.length >= j.fY, W = (0, g.kl)(n.id, Array.from(w), [l]).length - w.size, V = i.useRef(null), z = i.useRef(x);
   return (i.useEffect(() => {
     z.current = x
   }), i.useLayoutEffect(() => {
@@ -74,7 +74,7 @@ function O(e) {
       className: a()(_.container, {
         [_.dropIndicatorBefore]: null != R && x < R,
         [_.dropIndicatorAfter]: null != R && x > R,
-        [_.containerFocused]: G
+        [_.containerFocused]: M
       }),
       ref: e => {
         Z(D(e))
@@ -100,7 +100,7 @@ function O(e) {
         children: l.title
       }), (0, r.jsx)(c.P3F, {
         className: _.collapseButton,
-        onClick: () => M(false),
+        onClick: () => G(false),
         children: (0, r.jsx)(m.Z, {
           direction: m.Z.Directions.DOWN,
           height: 16,
@@ -129,7 +129,7 @@ function O(e) {
       className: a()(_.container, {
         [_.dropIndicatorBefore]: null != R && x < R,
         [_.dropIndicatorAfter]: null != R && x > R,
-        [_.containerFocused]: G
+        [_.containerFocused]: M
       }),
       ref: e => {
         Z(D(e))
@@ -169,7 +169,7 @@ function O(e) {
             count: l.options.length,
             total: j.qm
           }),
-          children: (0, r.jsx)(N, {
+          children: (0, r.jsx)(E, {
             guild: n,
             prompt: l,
             promptIndex: x,
@@ -193,13 +193,13 @@ function O(e) {
               required: e
             }),
             disabled: !l.inOnboarding,
-            label: E ? v.intl.formatToPlainString(v.t["0re8T0"], {
+            label: N ? v.intl.formatToPlainString(v.t["0re8T0"], {
               count: W
             }) : v.intl.string(v.t.Ur8Vrq)
           }) : null]
         }), (0, r.jsx)(c.P3F, {
           className: _.collapseButton,
-          onClick: () => M(true),
+          onClick: () => G(true),
           children: (0, r.jsx)(m.Z, {
             direction: m.Z.Directions.UP,
             height: 16,
@@ -260,7 +260,7 @@ function y(e) {
   })
 }
 
-function N(e) {
+function E(e) {
   let {
     guild: t,
     prompt: n,

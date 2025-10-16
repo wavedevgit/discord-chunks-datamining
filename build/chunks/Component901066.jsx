@@ -41,7 +41,7 @@ function I(e) {
     className: a()(P.actionButton, {
       [P.disabled]: i
     }),
-    onClick: i ? N.dG4 : r,
+    onClick: i ? S.dG4 : r,
     "aria-label": n,
     children: [(0, l.jsx)(t, {
       size: "custom",
@@ -97,7 +97,7 @@ function y(e) {
             primaryGuild: null == t ? true : t.primaryGuild,
             userId: null == t ? true : t.id,
             contextGuildId: n,
-            badgeSize: S.Gg.SIZE_16,
+            badgeSize: T.Gg.SIZE_16,
             textVariant: "heading-md/semibold",
             className: O.memberClanTag,
             containerClassName: O.memberClanTagContainer
@@ -138,17 +138,17 @@ function R(e) {
     className: P.actionRow,
     children: [(0, l.jsx)(I, {
       icon: d.owK,
-      label: T.intl.string(T.t.BzjDQE),
+      label: N.intl.string(N.t.BzjDQE),
       onClick: i,
       disabled: o
     }), (0, l.jsx)(I, {
       icon: d.k$p,
-      label: T.intl.string(T.t.hDtbs7),
+      label: N.intl.string(N.t.hDtbs7),
       onClick: a,
       disabled: o
     }), (0, l.jsx)(I, {
       icon: d.kBi,
-      label: T.intl.string(T.t.KQeYoK),
+      label: N.intl.string(N.t.KQeYoK),
       onClick: s,
       disabled: o
     })]
@@ -174,13 +174,13 @@ function w(e) {
       children: [(0, l.jsx)(d.Text, {
         variant: "text-md/medium",
         color: "header-primary",
-        children: T.intl.string(T.t.bSZklZ)
+        children: N.intl.string(N.t.bSZklZ)
       }), null != i && null != r ? (0, l.jsxs)("div", {
         className: P.actionedInfo,
         children: [(0, l.jsx)(d.Text, {
           variant: "text-sm/normal",
           color: "text-muted",
-          children: T.intl.formatToPlainString(T.t.qnimbG, {
+          children: N.intl.formatToPlainString(N.t.qnimbG, {
             username: null != (t = i.global_name) ? t : i.username
           })
         }), (0, l.jsx)("div", {
@@ -193,7 +193,7 @@ function w(e) {
       }) : null, null != a && (0, l.jsx)(d.Text, {
         variant: "text-sm/normal",
         color: "text-muted",
-        children: T.intl.formatToPlainString(T.t.fU5PPD, {
+        children: N.intl.formatToPlainString(N.t.fU5PPD, {
           rejectionReason: a
         })
       })]
@@ -219,13 +219,13 @@ function A(e) {
       children: [(0, l.jsx)(d.Text, {
         variant: "text-md/medium",
         color: "header-primary",
-        children: T.intl.string(T.t.aURgY2)
+        children: N.intl.string(N.t.aURgY2)
       }), null != i && null != r ? (0, l.jsxs)("div", {
         className: P.actionedInfo,
         children: [(0, l.jsx)(d.Text, {
           variant: "text-sm/normal",
           color: "text-muted",
-          children: T.intl.formatToPlainString(T.t.qnimbG, {
+          children: N.intl.formatToPlainString(N.t.qnimbG, {
             username: null != (t = i.global_name) ? t : i.username
           })
         }), (0, l.jsx)("div", {
@@ -250,7 +250,7 @@ function Z(e) {
       className: P.accountLabel,
       variant: "text-sm/medium",
       color: "text-muted",
-      children: T.intl.string(T.t["ldCE/v"])
+      children: N.intl.string(N.t["ldCE/v"])
     }), (0, l.jsxs)("div", {
       className: P.userInfoContainer,
       children: [(0, l.jsxs)("div", {
@@ -258,7 +258,7 @@ function Z(e) {
         children: [(0, l.jsx)(d.Text, {
           variant: "text-sm/normal",
           color: "text-default",
-          children: T.intl.string(T.t.SaDIpK)
+          children: N.intl.string(N.t.SaDIpK)
         }), (0, l.jsx)(d.Text, {
           variant: "text-sm/normal",
           color: "text-default",
@@ -269,7 +269,7 @@ function Z(e) {
         children: [(0, l.jsx)(d.Text, {
           variant: "text-sm/normal",
           color: "text-default",
-          children: T.intl.string(T.t.Vt4cn5)
+          children: N.intl.string(N.t.Vt4cn5)
         }), (0, l.jsx)(d.Text, {
           variant: "text-sm/normal",
           color: "text-default",
@@ -292,7 +292,7 @@ function M(e) {
     return null != (e = null == n ? true : n.formResponses) ? e : []
   }, [null == n ? true : n.formResponses]), o = r.useMemo(() => null != i ? new v.Z(i) : null, [i]), u = (0, c.e7)([_.Z], () => _.Z.getGuild(t), [t]);
   return ((0, m.Tt)({
-    subsection: T.intl.string(T.t.nqrK8f),
+    subsection: N.intl.string(N.t.nqrK8f),
     location: null == u ? true : u.name
   }), null == n || null == u || null == o || null == i) ? null : (0, l.jsx)("section", {
     className: P.sidebar,

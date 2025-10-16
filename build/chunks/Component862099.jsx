@@ -416,7 +416,7 @@ let X = Chunk647438.memo(function(e) {
     guildEvent: l,
     channel: r
   }));
-  let g = t.features.has(M.oNc.COMMUNITY);
+  let g = t.features.has(M.GuildFeatures.COMMUNITY);
   if (null == d && null != a && !g) {
     let {
       upcomingEvent: e,

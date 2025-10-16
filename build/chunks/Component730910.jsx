@@ -79,12 +79,12 @@ function A(e) {
   } = e, f = t.id, D = (0, a.e7)([C.Z], () => C.Z.getCurrentPage()), A = (0, y.Z)(f), {
     hasChanges: L,
     hasConfiguredAnythingForCurrentStep: k,
-    hasErrors: M
+    hasErrors: G
   } = (0, a.cj)([C.Z], () => ({
     hasChanges: C.Z.hasChanges(),
     hasConfiguredAnythingForCurrentStep: C.Z.hasConfiguredAnythingForCurrentStep(),
     hasErrors: C.Z.hasErrors()
-  })), G = (0, a.e7)([C.Z], () => {
+  })), M = (0, a.e7)([C.Z], () => {
     let e = (0, O.lg)(D);
     return null != e && !C.Z.isEducationUpsellDismissed(e)
   }), U = (0, u.ZP)(), B = i.useRef(null), [{
@@ -115,7 +115,7 @@ function A(e) {
       output: [z, (0, d.dQu)(s.Z.colors.STATUS_DANGER).hex()]
     });
   if (A) {
-    if (D === O.PG.DEFAULT_CHANNELS) return (0, r.jsx)(E.j, {});
+    if (D === O.PG.DEFAULT_CHANNELS) return (0, r.jsx)(N.j, {});
     else if (D === O.PG.CUSTOMIZATION_QUESTIONS) return (0, r.jsx)(I.Zm, {});
     else if (D === O.PG.HOME_SETTINGS) return (0, r.jsx)(S.Z, {});
     else if ((D === O.PG.LANDING || D === O.PG.REVIEW) && j.Z.hasChanges()) return (0, r.jsx)(S.Z, {})
@@ -151,9 +151,9 @@ function A(e) {
         skip: false
       })), await q() && (0, b.Wy)(f, D)
     }, J = null;
-  G && (D === O.PG.SAFETY_CHECK ? J = (0, r.jsx)(N.j7, {}) : D === O.PG.DEFAULT_CHANNELS ? J = (0, r.jsx)(N.Io, {}) : D === O.PG.CUSTOMIZATION_QUESTIONS ? J = (0, r.jsx)(N.cZ, {}) : D === O.PG.HOME_SETTINGS && (J = (0, r.jsx)(N.g6, {})));
+  M && (D === O.PG.SAFETY_CHECK ? J = (0, r.jsx)(E.j7, {}) : D === O.PG.DEFAULT_CHANNELS ? J = (0, r.jsx)(E.Io, {}) : D === O.PG.CUSTOMIZATION_QUESTIONS ? J = (0, r.jsx)(E.cZ, {}) : D === O.PG.HOME_SETTINGS && (J = (0, r.jsx)(E.g6, {})));
   let $ = (0, r.jsx)("div", {
-      className: G ? w.hidden : true,
+      className: M ? w.hidden : true,
       children: (0, r.jsx)(d.Button, {
         size: "sm",
         variant: "secondary",
@@ -161,7 +161,7 @@ function A(e) {
         icon: d.whL,
         iconPosition: "start",
         onClick: Q,
-        disabled: G || M
+        disabled: M || G
       })
     }),
     ee = (0, r.jsx)(d.Button, {
@@ -171,7 +171,7 @@ function A(e) {
       icon: d.ZSh,
       iconPosition: "end",
       onClick: X,
-      disabled: G || M
+      disabled: M || G
     });
   return (0, r.jsx)(o.W, {
     component: "div",
@@ -185,7 +185,7 @@ function A(e) {
         children: (0, r.jsxs)("div", {
           className: w.flexContainer,
           ref: B,
-          children: [G ? (0, r.jsxs)("div", {
+          children: [M ? (0, r.jsxs)("div", {
             className: w.educationUpsellRoot,
             children: [(0, r.jsx)("img", {
               className: w.wumpus,
@@ -203,7 +203,7 @@ function A(e) {
               className: w.actions,
               children: [$, (0, r.jsxs)("div", {
                 className: w.next,
-                children: [M ? (0, r.jsx)(d.Text, {
+                children: [G ? (0, r.jsx)(d.Text, {
                   variant: "text-sm/normal",
                   color: "status-warning",
                   children: P.intl.string(P.t.DhYsPD)

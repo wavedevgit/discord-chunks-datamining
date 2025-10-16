@@ -24,7 +24,7 @@ var a, s, Chunk392711 = require("./392711.js"),
   Chunk981631 = require("./981631.js"),
   Chunk141006 = require("./141006.js");
 
-function N(e, t, n) {
+function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -33,14 +33,14 @@ function N(e, t, n) {
   }) : e[t] = n, e
 }
 
-function E(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      N(e, t, n[t])
+      E(e, t, n[t])
     })
   }
   return e
@@ -56,9 +56,9 @@ let S = new Set,
   A = new Set,
   L = new Map,
   k = new Map,
-  M = new Map;
+  G = new Map;
 
-function G() {
+function M() {
   return null == r || null == Z ? [] : Chunk990492.ZP.calculatePositionDeltas({
     oldOrdering: Chunk485386.Z.getSortedRoles(r.id),
     newOrdering: Z,
@@ -78,7 +78,7 @@ function U(e) {
 
 function B() {
   let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
-  r = Chunk999382.Z.getProps().guild, P = false, w = false, l = true, S.clear(), M.clear(), T = Chunk981631.QZA.OPEN, R = [...Z = null != r ? [...Chunk485386.Z.getSortedRoles(r.id)] : []], F(null == r ? true : r.id, R), D = false, module && (k.clear(), L.forEach((e, t) => {
+  r = Chunk999382.Z.getProps().guild, P = false, w = false, l = true, S.clear(), G.clear(), T = Chunk981631.QZA.OPEN, R = [...Z = null != r ? [...Chunk485386.Z.getSortedRoles(r.id)] : []], F(null == r ? true : r.id, R), D = false, module && (k.clear(), L.forEach((e, t) => {
     k.set(t, [...e])
   }))
 }
@@ -113,7 +113,7 @@ function F(e, t) {
         tertiary_color: null != (s = t.colors.tertiary_color) ? s : null
       }
     }
-    M.set(t.id, {
+    G.set(t.id, {
       currentStyle: n,
       styleColors: i
     })
@@ -121,7 +121,7 @@ function F(e, t) {
 }
 let H = c().debounce(() => {
   let e = false;
-  w && ((w = G().length > 0) || (e = true)), [...S].forEach(t => {
+  w && ((w = M().length > 0) || (e = true)), [...S].forEach(t => {
     var n;
     c().isEqual(V(t), (n = t, R.find(e => {
       let {
@@ -135,7 +135,7 @@ let H = c().debounce(() => {
 function W(e, t) {
   let n = Z.indexOf(e);
   if (n < 0) returnfalse;
-  let r = E({}, e, t),
+  let r = N({}, e, t),
     i = [...Z];
   i[n] = r, Z = i, P = true, S.add(r.id), H()
 }
@@ -167,10 +167,10 @@ function z(e) {
   }), 0 === S.size && (P = false);
   let i = new Map;
   S.forEach(e => {
-    let t = M.get(e);
+    let t = G.get(e);
     null != t && i.set(e, t)
-  }), M.clear(), F(t, n), i.forEach((e, t) => {
-    M.set(t, e)
+  }), G.clear(), F(t, n), i.forEach((e, t) => {
+    G.set(t, e)
   }), w = false, Z = [...n]
 }
 class K extends(a = Chunk442837.ZP.Store) {
@@ -181,7 +181,7 @@ class K extends(a = Chunk442837.ZP.Store) {
     return P || w || D
   }
   getRoleStyleData(e) {
-    return M.get(e)
+    return G.get(e)
   }
   get errorMessage() {
     return l
@@ -208,7 +208,7 @@ class K extends(a = Chunk442837.ZP.Store) {
     return T
   }
   getSortDeltas() {
-    return G()
+    return M()
   }
   showNotice() {
     return this.hasChanges()
@@ -223,7 +223,7 @@ class K extends(a = Chunk442837.ZP.Store) {
     return k
   }
 }
-N(K, "displayName", "GuildSettingsRolesStore");
+E(K, "displayName", "GuildSettingsRolesStore");
 let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
     GUILD_SETTINGS_ROLES_INIT: () => B(),
     GUILD_SETTINGS_INIT: U,
@@ -290,12 +290,12 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
         color: n
       } = e, r = 0 === n ? null : (0, u.Rf)(n), i = V(t);
       if (null == i) returnfalse;
-      let l = M.get(t);
+      let l = G.get(t);
       return null != l && (l.currentStyle = "solid", l.styleColors.solid = {
         primary_color: n,
         secondary_color: null,
         tertiary_color: null
-      }, M.set(t, E({}, l)), W(i, {
+      }, G.set(t, N({}, l)), W(i, {
         color: n,
         colorString: r,
         colors: {
@@ -318,8 +318,8 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
       } = e, i = V(t);
       if (null == i) returnfalse;
       let l = (0, h.DX)(n),
-        a = M.get(t);
-      return null != a && (a.styleColors[r] = n, a.currentStyle = r, M.set(t, E({}, a)), W(i, {
+        a = G.get(t);
+      return null != a && (a.styleColors[r] = n, a.currentStyle = r, G.set(t, N({}, a)), W(i, {
         color: n.primary_color,
         colors: n,
         colorString: l.primaryColor,
@@ -365,9 +365,9 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
         currentStyle: r
       } = e, i = V(n);
       if (null == i) returnfalse;
-      let l = M.get(n);
+      let l = G.get(n);
       if (null == l) returnfalse;
-      M.set(n, {
+      G.set(n, {
         currentStyle: r,
         styleColors: l.styleColors
       });
@@ -399,7 +399,7 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
       D = true, A.add(r.id), k.set(r.id, n), H()
     },
     GUILD_SETTINGS_CLOSE: function() {
-      r = null, R = Z = [], L.clear(), S.clear(), M.clear(), k.clear(), A = new Set, P = false, w = false, D = false, T = Chunk981631.QZA.CLOSED
+      r = null, R = Z = [], L.clear(), S.clear(), G.clear(), k.clear(), A = new Set, P = false, w = false, D = false, T = Chunk981631.QZA.CLOSED
     },
     GUILD_ROLE_CREATE: z,
     GUILD_ROLE_UPDATE: z,
@@ -422,7 +422,7 @@ let Y = new K(Chunk570140.Z, __OVERLAY__ ? {} : {
       let {
         guildId: t
       } = e;
-      null != r && t === r.id && (r = (0, p.t8)(r, "features", r.features.union(new Set([O.oNc.PIN_PERMISSION_MIGRATION_COMPLETE]))))
+      null != r && t === r.id && (r = (0, p.t8)(r, "features", r.features.union(new Set([O.GuildFeatures.PIN_PERMISSION_MIGRATION_COMPLETE]))))
     }
   }),
   q = Y

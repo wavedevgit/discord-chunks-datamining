@@ -138,7 +138,7 @@ let D = {
   generateGuildPermissionSpec: function(t) {
     var i;
     let E = new Set;
-    return t.features.has(O.oNc.COMMUNITY) || E.add(O.Plq.VIEW_GUILD_ANALYTICS.toString()), i = A.s4(p(t.id)), 0 === E.size ? i : i.map(t => {
+    return t.features.has(O.GuildFeatures.COMMUNITY) || E.add(O.Plq.VIEW_GUILD_ANALYTICS.toString()), i = A.s4(p(t.id)), 0 === E.size ? i : i.map(t => {
       var i, n;
       return i = function(t) {
         for (var i = 1; i < arguments.length; i++) {

@@ -279,9 +279,9 @@ let Q = e => {
     trackExternalAction: m
   } = e, {
     clientThemesClassName: x
-  } = (0, y.ZP)(), h = (0, u.e7)([w.default], () => w.default.locale), v = r.useMemo(() => (0, A.fP)(), []), j = (0, u.Wu)([G.Z], () => {
+  } = (0, y.ZP)(), h = (0, u.e7)([w.default], () => w.default.locale), v = r.useMemo(() => (0, A.fP)(), []), j = (0, u.Wu)([k.Z], () => {
     var e;
-    return (null != (e = G.Z.getSimilarGames(n)) ? e : []).slice(0, 25)
+    return (null != (e = k.Z.getSimilarGames(n)) ? e : []).slice(0, 25)
   }), [N, P] = r.useState(null), S = (0, Z.N)(n), [C, T] = r.useState(null), L = (0, O.q)(n), M = (0, u.e7)([E.Z], () => E.Z.getGame(n)), D = null != (t = null == M ? true : M.name) ? t : null == L ? true : L.name, R = (e, t) => {
     var i;
     (0, A.UE)({
@@ -311,7 +311,7 @@ let Q = e => {
       if (0 === j.length) {
         P(null);
         try {
-          await (0, k.i)(n)
+          await (0, G.i)(n)
         } catch (e) {
           P(e)
         }

@@ -36,7 +36,7 @@ let v = e => {
     analyticsLocations: S
   } = (0, d.ZP)(), A = (0, s.e7)([m.Z], () => m.Z.getGuild(n)), {
     canManageAllExpressions: C
-  } = (0, h.XJ)(A), N = null != A && 0 === (0, g.A3)(A.premiumTier) && !A.features.has(E.oNc.MORE_STICKERS);
+  } = (0, h.XJ)(A), N = null != A && 0 === (0, g.A3)(A.premiumTier) && !A.features.has(E.GuildFeatures.MORE_STICKERS);
   if (i.useEffect(() => {
       C && N && v && ((0, u.yw)(E.rMx.PREMIUM_GUILD_UPSELL_VIEWED, {
         location: T,

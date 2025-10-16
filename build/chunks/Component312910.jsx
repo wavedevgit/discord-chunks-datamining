@@ -2,7 +2,7 @@
 /** chunk id: 312910, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => E
+  Z: () => N
 });
 var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
@@ -87,7 +87,7 @@ let C = {
       })
     })]
   }),
-  N = e => {
+  E = e => {
     let t, n, i, {
         guild: l,
         guildStickers: a
@@ -116,7 +116,7 @@ let C = {
       }
     }))
   },
-  E = () => {
+  N = () => {
     let e = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuild()),
       t = (0, Chunk442837.e7)([Chunk926491.Z], () => {
         var t;
@@ -135,7 +135,7 @@ let C = {
           variant: "heading-lg/semibold",
           children: Chunk388032.intl.string(Chunk388032.t.R5nQkZ)
         }), Chunk623624 ? (0, Chunk951288.jsxs)("div", {
-          children: [(0, Chunk951288.jsx)(N, {
+          children: [(0, Chunk951288.jsx)(E, {
             guild: module,
             guildStickers: exports
           }), (0, Chunk951288.jsx)(y, {})]

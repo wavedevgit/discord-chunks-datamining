@@ -45,7 +45,7 @@ function y(e) {
   return e
 }
 
-function N(e, t) {
+function E(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -58,17 +58,17 @@ function N(e, t) {
   }), e
 }
 
-function E(e) {
+function N(e) {
   var t;
   let {
     pendingState: l,
     dirtyState: h,
     originalGuild: x,
-    settingsGuild: E,
+    settingsGuild: N,
     settingsMetadata: I,
     settingsProfile: S
-  } = e, T = E.id, [P, w] = i.useState(false), [Z, R] = i.useState(null), D = E.features.has(_.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), A = null != (t = (0, m.A)({
-    guildId: E.id
+  } = e, T = N.id, [P, w] = i.useState(false), [Z, R] = i.useState(null), D = N.features.has(_.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL), A = null != (t = (0, m.A)({
+    guildId: N.id
   })) ? t : 0, L = i.useCallback(() => {
     R(null), f.Z.init(T, _.pNK.ACCESS)
   }, [T]), k = i.useCallback(async e => {
@@ -77,7 +77,7 @@ function E(e) {
     } finally {
       w(false)
     }
-  }, []), M = i.useCallback(async e => {
+  }, []), G = i.useCallback(async e => {
     try {
       await f.Z.saveGuild(T, e, {
         throwErr: true
@@ -87,7 +87,7 @@ function E(e) {
         statusPageURL: _.yXt.STATUS
       })), e
     }
-  }, [T]), G = i.useCallback(async (e, t, n) => {
+  }, [T]), M = i.useCallback(async (e, t, n) => {
     try {
       await d.ZP.updateVerificationForm(T, e, t, n)
     } catch (e) {
@@ -100,11 +100,11 @@ function E(e) {
       values: t,
       required: true
     }] : [];
-    await G(r, e, n)
-  }, [G]), B = i.useCallback(e => {
-    if (l.isAgeRestricted !== (E.ownerConfiguredContentLevel === _.V_K.AGE_RESTRICTED) && k(async () => {
+    await M(r, e, n)
+  }, [M]), B = i.useCallback(e => {
+    if (l.isAgeRestricted !== (N.ownerConfiguredContentLevel === _.V_K.AGE_RESTRICTED) && k(async () => {
         let e = l.isAgeRestricted ? _.V_K.AGE_RESTRICTED : _.V_K.DEFAULT;
-        await M({
+        await G({
           ownerConfiguredContentLevel: e
         })
       }), l.joinType === j.A.INVITE) {
@@ -113,9 +113,9 @@ function E(e) {
         termRules: n = []
       } = l, r = n.map(e => e.value.trim()).filter(e => "" !== e);
       k(async () => {
-        if (E.features.has(_.oNc.DISCOVERABLE)) {
-          let e = new Set(E.features);
-          e.delete(_.oNc.DISCOVERABLE), await M({
+        if (N.features.has(_.GuildFeatures.DISCOVERABLE)) {
+          let e = new Set(N.features);
+          e.delete(_.GuildFeatures.DISCOVERABLE), await G({
             features: e
           })
         }
@@ -127,13 +127,13 @@ function E(e) {
       } = l;
       if (null == t) return;
       k(async () => {
-        if (E.features.has(_.oNc.DISCOVERABLE)) {
-          let e = new Set(E.features);
-          e.delete(_.oNc.DISCOVERABLE), await M({
+        if (N.features.has(_.GuildFeatures.DISCOVERABLE)) {
+          let e = new Set(N.features);
+          e.delete(_.GuildFeatures.DISCOVERABLE), await G({
             features: e
           })
         }
-        h.verificationDirty && await G([...t], true, e), h.profileDirty && null != S && await (0, p.pV)(E.id, {
+        h.verificationDirty && await M([...t], true, e), h.profileDirty && null != S && await (0, p.pV)(N.id, {
           visibility: S.visibility
         })
       })
@@ -144,17 +144,17 @@ function E(e) {
       } = l, r = n.map(e => e.value.trim()).filter(e => "" !== e);
       k(async () => {
         if (h.verificationDirty && await U(t, r, e), h.guildDirty) {
-          (0, b.UA)(E, x);
-          let e = new Set(E.features);
-          e.add(_.oNc.DISCOVERABLE), e.delete(_.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), await M({
+          (0, b.UA)(N, x);
+          let e = new Set(N.features);
+          e.add(_.GuildFeatures.DISCOVERABLE), e.delete(_.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL), await G({
             features: e,
-            discoverySplash: E.discoverySplash,
-            description: E.description,
-            preferredLocale: E.preferredLocale
+            discoverySplash: N.discoverySplash,
+            description: N.description,
+            preferredLocale: N.preferredLocale
           });
           try {
             await (0, c.Vv)(y({
-              guildId: E.id
+              guildId: N.id
             }, I))
           } catch (e) {
             throw R(new o.Hx(e).getAnyErrorMessage()), e
@@ -162,7 +162,7 @@ function E(e) {
         }
       })
     }
-  }, [l, k, E, h, M, U, S, G, x, I]), F = i.useCallback(() => {
+  }, [l, k, N, h, G, U, S, M, x, I]), F = i.useCallback(() => {
     var e;
     if (l.joinType === j.A.INVITE || l.joinType === j.A.DISCOVERABLE) {
       let {
@@ -177,7 +177,7 @@ function E(e) {
         let {
           default: t
         } = await n.e("55009").then(n.bind(n, 826390));
-        return n => (0, r.jsx)(t, N(y({}, n), {
+        return n => (0, r.jsx)(t, E(y({}, n), {
           guildId: T,
           submittedGuildJoinRequestsCount: A,
           onConfirm: e
@@ -189,14 +189,14 @@ function E(e) {
         let {
           default: t
         } = await n.e("67376").then(n.bind(n, 207252));
-        return n => (0, r.jsx)(t, N(y({}, n), {
+        return n => (0, r.jsx)(t, E(y({}, n), {
           guildId: T,
           onConfirm: e
         }))
       });
       e()
     })(() => B(e)))
-  }, [D, B, l, T, A]), H = l.joinType === j.A.DISCOVERABLE && l.settingsView === v.U.ELIGIBLE_DISABLED, W = null != E.description && I.primaryCategoryId !== C.o3 && I.keywords.length > 0;
+  }, [D, B, l, T, A]), H = l.joinType === j.A.DISCOVERABLE && l.settingsView === v.U.ELIGIBLE_DISABLED, W = null != N.description && I.primaryCategoryId !== C.o3 && I.keywords.length > 0;
   return (0, r.jsx)(s.Z, {
     message: H ? O.intl.string(O.t.V2G2Ym) : true,
     onSaveText: H ? O.intl.string(O.t["qjtt/v"]) : true,
@@ -237,7 +237,7 @@ function I() {
   return null == module || null == require ? null : module.joinType === Chunk384632.A.DISCOVERABLE && module.settingsView === Chunk386885.U.INELIGIBLE ? (0, Chunk951288.jsx)(Chunk852860.Z, {
     message: Chunk388032.intl.string(Chunk388032.t.TEXwRk),
     onReset: () => Chunk434404.Z.init(require.id, Chunk981631.pNK.ACCESS)
-  }) : (0, Chunk951288.jsx)(E, {
+  }) : (0, Chunk951288.jsx)(N, {
     pendingState: module,
     dirtyState: exports,
     originalGuild: Chunk481060,

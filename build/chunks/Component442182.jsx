@@ -2,7 +2,7 @@
 /** chunk id: 442182, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  ZP: () => M
+  ZP: () => G
 }), require("./781311.js"), require("./642613.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -152,7 +152,7 @@ function D(e) {
         innerRef: p,
         className: T.memberRow,
         onContextMenu: j,
-        children: [(0, r.jsx)(N.Z, {
+        children: [(0, r.jsx)(E.Z, {
           className: T.memberDetails,
           avatarURL: t.avatarURL,
           name: t.name,
@@ -287,7 +287,7 @@ function k(e) {
   })
 }
 
-function M(e) {
+function G(e) {
   let {
     guild: t,
     role: l,
@@ -302,7 +302,7 @@ function M(e) {
   } = (0, y.V)(), b = l.managed || s, v = (0, C.e)(t.id, l.id), _ = (0, o.e7)([j.Z], () => {
     var e, n;
     return null != (n = null == (e = j.Z.getRoleMemberCount(t.id)) ? true : e[l.id]) ? n : 0
-  }) > v.length, N = () => {
+  }) > v.length, E = () => {
     x.default.track(I.rMx.OPEN_MODAL, {
       type: "Add Role Members",
       location_page: "Role Settings",
@@ -331,13 +331,13 @@ function M(e) {
           children: [(0, r.jsx)(y.Z, {
             guild: t,
             role: l,
-            selectedSection: E.ZI.MEMBERS,
+            selectedSection: N.ZI.MEMBERS,
             setSelectedSection: c
           }), (0, r.jsx)(k, {
             query: u,
             setQuery: g,
             locked: b,
-            handleAddClick: N
+            handleAddClick: E
           }), _ ? (0, r.jsx)(d.Wn, {
             className: T.searchWarning,
             messageType: d.QYI.INFO,
@@ -353,7 +353,7 @@ function M(e) {
       locked: b,
       onScroll: h,
       roleMembers: v,
-      handleAddClick: N
+      handleAddClick: E
     })]
   })
 }

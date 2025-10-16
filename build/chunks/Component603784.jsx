@@ -97,15 +97,15 @@ let w = Chunk647438.forwardRef((e, t) => {
       onUserContextMenu: L,
       theme: k
     } = e,
-    M = i.useRef(null),
-    G = function() {
+    G = i.useRef(null),
+    M = function() {
       let {
         changes: e
       } = l;
-      return (l.actionType !== N.vB8.DELETE || l.action === N.rsA.MEMBER_BAN_ADD || l.action === N.rsA.MEMBER_KICK || l.action === N.rsA.MEMBER_PRUNE) && null != e && e.some(e => !(0, y.xO)(l, e))
+      return (l.actionType !== E.vB8.DELETE || l.action === E.rsA.MEMBER_BAN_ADD || l.action === E.rsA.MEMBER_KICK || l.action === E.rsA.MEMBER_PRUNE) && null != e && e.some(e => !(0, y.xO)(l, e))
     }(),
     U = I.headerDefault;
-  f ? U = I.headerExpanded : G && (U = I.headerClickable);
+  f ? U = I.headerExpanded : M && (U = I.headerClickable);
   let B = l.timestampStart.calendar(),
     F = l.timestampEnd.calendar();
   n = B === F ? (0, r.jsx)(d.Text, {
@@ -117,7 +117,7 @@ let w = Chunk647438.forwardRef((e, t) => {
     variant: "text-sm/normal",
     children: [B, "—", F]
   });
-  let H = G ? D : N.dG4;
+  let H = M ? D : E.dG4;
   return (0, r.jsx)(s.mh, {
     id: l.id,
     children: e => (0, r.jsxs)("div", {
@@ -141,19 +141,19 @@ let w = Chunk647438.forwardRef((e, t) => {
             }
           } = l;
           if (null != e && null != t) return (0, r.jsx)(p.Z, {
-            targetElementRef: M,
+            targetElementRef: G,
             user: e,
             guildId: _,
             newAnalyticsLocations: [g.Z.AVATAR],
             children: e => {
               var t;
               return (0, r.jsx)(d.qEK, T(S({}, e), {
-                ref: M,
+                ref: G,
                 onClick: t => {
                   t.stopPropagation(), e.onClick(t)
                 },
                 className: I.avatar,
-                src: l.action === N.rsA.AUTO_MODERATION_BLOCK_MESSAGE || l.action === N.rsA.AUTO_MODERATION_FLAG_TO_CHANNEL || l.action === N.rsA.AUTO_MODERATION_USER_COMMUNICATION_DISABLED || l.action === N.rsA.AUTO_MODERATION_QUARANTINE_USER ? (0, C.j)() : null == (t = l.user) ? true : t.getAvatarURL(_, 40),
+                src: l.action === E.rsA.AUTO_MODERATION_BLOCK_MESSAGE || l.action === E.rsA.AUTO_MODERATION_FLAG_TO_CHANNEL || l.action === E.rsA.AUTO_MODERATION_USER_COMMUNICATION_DISABLED || l.action === E.rsA.AUTO_MODERATION_QUARANTINE_USER ? (0, C.j)() : null == (t = l.user) ? true : t.getAvatarURL(_, 40),
                 "aria-hidden": true,
                 size: d.EFr.SIZE_40
               }))
@@ -186,7 +186,7 @@ let w = Chunk647438.forwardRef((e, t) => {
               let a = O.N5(l);
               return null != a ? (0, r.jsx)("div", {
                 className: I.overflowEllipsis,
-                children: E.intl.format(a, {
+                children: N.intl.format(a, {
                   user: t,
                   target: e,
                   userHook: (e, t) => {
@@ -197,11 +197,11 @@ let w = Chunk647438.forwardRef((e, t) => {
                     if (null != l.options.integration_type) {
                       var n;
                       let e = u.Z.get(l.options.integration_type);
-                      return null != (n = null == e ? true : e.name) ? n : E.intl.string(E.t["n+olu7"])
+                      return null != (n = null == e ? true : e.name) ? n : N.intl.string(N.t["n+olu7"])
                     }
-                    return E.intl.string(E.t["30mdIy"])
+                    return N.intl.string(N.t["30mdIy"])
                   },
-                  targetHook: (e, t) => l.targetType === N.KFR.USER && l.target instanceof h.Z ? (0, r.jsx)(P, {
+                  targetHook: (e, t) => l.targetType === E.KFR.USER && l.target instanceof h.Z ? (0, r.jsx)(P, {
                     user: l.target,
                     onContextMenu: A
                   }, t) : (0, r.jsx)("span", {
@@ -219,7 +219,7 @@ let w = Chunk647438.forwardRef((e, t) => {
               }) : null
             }()
           }), n]
-        }), G ? (0, r.jsx)(j.Z, {
+        }), M ? (0, r.jsx)(j.Z, {
           className: I.expand,
           foreground: I.expandForeground,
           expanded: f,

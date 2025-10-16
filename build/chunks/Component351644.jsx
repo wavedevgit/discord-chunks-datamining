@@ -112,7 +112,7 @@ function W(e) {
       showTwitchCard: false,
       showYoutubeCard: false
     };
-    let e = null == W ? true : W.features.has(Z.oNc.COMMUNITY),
+    let e = null == W ? true : W.features.has(Z.GuildFeatures.COMMUNITY),
       t = er.filter(e => e.type === Z.ABu.TWITCH).length > 0,
       n = er.filter(e => e.type === Z.ABu.YOUTUBE).length > 0;
     return {

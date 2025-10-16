@@ -50,7 +50,7 @@ let V = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     user: l,
     guildId: n,
     channel: s,
-    showMediaItems: o = false,
+    showMediaItems: a = false,
     showChatItems: u = true,
     showChannelCallItems: V = false,
     showModalItems: B = true,
@@ -64,7 +64,7 @@ let V = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     page: Q.ZY5.GUILD_CHANNEL,
     section: Q.jXE.CHAT_USERNAME,
     object: Q.qAy.CONTEXT_MENU_ITEM
-  }, ee = (0, G.Z)({
+  }, ee = (0, q.Z)({
     userId: l.id,
     guildId: n,
     channelId: $,
@@ -79,7 +79,7 @@ let V = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     context: X
   }), ed = (0, m.Z)({
     user: l
-  }), es = (0, L.Z)(l.id), eo = (0, q.Z)(l.id), ea = (0, f.B)({
+  }), es = (0, L.Z)(l.id), ea = (0, G.Z)(l.id), eo = (0, f.B)({
     userId: l.id,
     channelId: $,
     guildId: s.getGuildId()
@@ -107,7 +107,7 @@ let V = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     id: l.id,
     label: H.intl.string(H.t["/AXYnJ"])
   }), eE = (0, I.Z)(l.id, $), eP = (0, g.Z)(l.id), eN = (0, Z.Z)($), eC = (0, p.Z)(l), em = (0, E.Z)(l, n, $), eS = (0, r.e7)([P.Z], () => null != W ? P.Z.getChannel(W) : null), ex = (0, y.Z)({
-    commandType: a.yU.USER,
+    commandType: o.yU.USER,
     commandTargetId: l.id,
     channel: null != eS ? eS : s,
     guildId: n,
@@ -122,15 +122,15 @@ let V = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     onInteraction: J,
     children: [!e_ && (0, t.jsxs)(t.Fragment, {
       children: [(0, t.jsxs)(i.kSQ, {
-        children: [eC, o && !F && eI, F && em]
+        children: [eC, a && !F && eI, F && em]
       }), (0, t.jsxs)(i.kSQ, {
         children: [B && ee, u && el, en, er, ev, B && ei, B && ed, et]
-      }), o && (0, t.jsx)(i.kSQ, {
+      }), a && (0, t.jsx)(i.kSQ, {
         children: es
       }), (0, t.jsx)(i.kSQ, {
         children: B && eZ
       }), (0, t.jsxs)(i.kSQ, {
-        children: [o && eo, o && ea, o && eE, B && ec, ex, B && eu, eg, B && ef, B && eh, V && ey]
+        children: [a && ea, a && eo, a && eE, B && ec, ex, B && eu, eg, B && ef, B && eh, V && ey]
       }), (0, t.jsx)(i.kSQ, {
         children: eb
       }), (0, t.jsxs)(i.kSQ, {

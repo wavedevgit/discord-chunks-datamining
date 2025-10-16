@@ -1,26 +1,26 @@
 /** Chunk was on 44686 **/
 /** chunk id: 733895, original params: e,i,t (module,exports,require) **/
 require.d(exports, {
-  ZP: () => c
+  ZP: () => d
 });
 var n, l, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
-let a = {},
-  u = false;
+let u = {},
+  a = false;
 class o extends(l = Chunk442837.ZP.Store) {
   isLoading() {
-    return u
+    return a
   }
   passesChecklist(e) {
     var i;
-    return !u && (null == (i = a[e]) ? true : i.sufficient)
+    return !a && (null == (i = u[e]) ? true : i.sufficient)
   }
   isPendingSuccess(e) {
-    let i = a[e];
-    return null != i && !u && i.healthScorePending && i.safeEnvironment && 0 === Object.keys(i.nsfwProperties).length && i.size && i.protected
+    let i = u[e];
+    return null != i && !a && i.healthScorePending && i.safeEnvironment && 0 === Object.keys(i.nsfwProperties).length && i.size && i.protected
   }
   getDiscoveryChecklist(e) {
-    return a[e]
+    return u[e]
   }
 }(n = "displayName") in o ? Object.defineProperty(o, n, {
   value: "DiscoverGuildChecklistStore",
@@ -28,12 +28,12 @@ class o extends(l = Chunk442837.ZP.Store) {
   configurable: true,
   writable: true
 }) : o[n] = "DiscoverGuildChecklistStore";
-let c = new o(Chunk570140.Z, {
+let d = new o(Chunk570140.Z, {
   DISCOVER_CHECKLIST_FETCH_START: function(e) {
-    u = true
+    a = true
   },
   DISCOVER_CHECKLIST_FETCH_FAILURE: function(e) {
-    u = false
+    a = false
   },
   DISCOVER_CHECKLIST_FETCH_SUCCESS: function(e) {
     var i;
@@ -41,7 +41,7 @@ let c = new o(Chunk570140.Z, {
       checklist: t,
       guildId: n
     } = e;
-    u = false, a[n] = {
+    a = false, u[n] = {
       guildId: t.guild_id,
       safeEnvironment: t.safe_environment,
       healthy: t.healthy,

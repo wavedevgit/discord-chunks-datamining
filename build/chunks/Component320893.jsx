@@ -2,7 +2,7 @@
 /** chunk id: 320893, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => N
+  Z: () => E
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -210,7 +210,7 @@ function y() {
   })
 }
 
-function N() {
+function E() {
   return (0, Chunk951288.jsxs)("div", {
     children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
       variant: "heading-lg/semibold",

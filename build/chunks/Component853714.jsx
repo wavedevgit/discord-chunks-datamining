@@ -86,7 +86,7 @@ function k(e, t) {
   }
   return i
 }
-let M = Chunk647438.forwardRef((e, t) => {
+let G = Chunk647438.forwardRef((e, t) => {
   var {
     onHeaderClick: i,
     guildId: l,
@@ -175,7 +175,7 @@ let M = Chunk647438.forwardRef((e, t) => {
   }))
 });
 
-function G(e) {
+function M(e) {
   let {
     logs: t,
     guildId: n,
@@ -207,7 +207,7 @@ function G(e) {
             let t = a === e.id,
               i = o === e.id,
               s = t ? d : i ? u : null;
-            return (0, r.jsx)(M, {
+            return (0, r.jsx)(G, {
               guildId: n,
               guild: l,
               ref: e => {
@@ -225,7 +225,7 @@ function G(e) {
     })
   })
 }
-M.displayName = "AuditLogClickWrap";
+G.displayName = "AuditLogClickWrap";
 class U extends Chunk647438.PureComponent {
   componentDidMount() {
     (0, Chunk480137.bY)(this.props.guildId), document.addEventListener("click", this.handleOutsideClick)
@@ -329,7 +329,7 @@ class U extends Chunk647438.PureComponent {
         })]
       })
     }
-    return (0, Chunk951288.jsx)(G, {
+    return (0, Chunk951288.jsx)(M, {
       logs: Chunk647438,
       guildId: Chunk480137,
       guild: Chunk239091,
@@ -443,7 +443,7 @@ class U extends Chunk647438.PureComponent {
         moderators: s
       } = this.props;
       if (i) return null;
-      let o = N.Iv(),
+      let o = E.Iv(),
         c = null != (e = o.find(e => {
           let {
             value: t

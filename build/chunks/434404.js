@@ -94,7 +94,7 @@ let R = new Chunk710845.Z("GuildSettingsActionCreators"),
     },
     async open(e, t, r, i) {
       var a;
-      await Promise.all([n.e("57804"), n.e("13599"), n.e("36599"), n.e("49049"), n.e("76692"), n.e("8271"), n.e("15851"), n.e("51453"), n.e("7654"), n.e("845"), n.e("38697"), n.e("63575"), n.e("87641"), n.e("6850"), n.e("58227"), n.e("62856"), n.e("44686"), n.e("30378"), n.e("64982"), n.e("66201"), n.e("93375"), n.e("39206"), n.e("22516"), n.e("89442"), n.e("72615")]).then(n.bind(n, 994763)), (null == (a = g.Z.getGuild(e)) ? true : a.features.has(O.oNc.COMMUNITY)) && (t === O.pNK.GUILD_AUTOMOD && (t = O.pNK.SAFETY, i = O.KsC.SAFETY_AUTOMOD), t === O.pNK.MEMBER_VERIFICATION && (t = O.pNK.SAFETY, i = O.KsC.SAFETY_DM_AND_SPAM_PROTECTION)), P.init(e, t, r, i), p.Z.closeGuildSidebar(e), (0, o.jN)(O.S9g.GUILD_SETTINGS)
+      await Promise.all([n.e("57804"), n.e("13599"), n.e("36599"), n.e("49049"), n.e("76692"), n.e("8271"), n.e("15851"), n.e("51453"), n.e("7654"), n.e("845"), n.e("38697"), n.e("63575"), n.e("87641"), n.e("6850"), n.e("58227"), n.e("62856"), n.e("44686"), n.e("30378"), n.e("64982"), n.e("66201"), n.e("93375"), n.e("39206"), n.e("22516"), n.e("89442"), n.e("72615")]).then(n.bind(n, 994763)), (null == (a = g.Z.getGuild(e)) ? true : a.features.has(O.GuildFeatures.COMMUNITY)) && (t === O.pNK.GUILD_AUTOMOD && (t = O.pNK.SAFETY, i = O.KsC.SAFETY_AUTOMOD), t === O.pNK.MEMBER_VERIFICATION && (t = O.pNK.SAFETY, i = O.KsC.SAFETY_DM_AND_SPAM_PROTECTION)), P.init(e, t, r, i), p.Z.closeGuildSidebar(e), (0, o.jN)(O.S9g.GUILD_SETTINGS)
     },
     close() {
       Chunk570140.Z.dispatch({
@@ -110,7 +110,7 @@ let R = new Chunk710845.Z("GuildSettingsActionCreators"),
     setSection(e, t) {
       var n;
       let r = y.Z.getGuildId();
-      null != r && ((null == (n = g.Z.getGuild(r)) ? true : n.features.has(O.oNc.COMMUNITY)) && (e === O.pNK.GUILD_AUTOMOD && (e = O.pNK.SAFETY, t = O.KsC.SAFETY_AUTOMOD), e === O.pNK.MEMBER_VERIFICATION && (e = O.pNK.SAFETY, t = O.KsC.SAFETY_DM_AND_SPAM_PROTECTION)), a.Z.dispatch({
+      null != r && ((null == (n = g.Z.getGuild(r)) ? true : n.features.has(O.GuildFeatures.COMMUNITY)) && (e === O.pNK.GUILD_AUTOMOD && (e = O.pNK.SAFETY, t = O.KsC.SAFETY_AUTOMOD), e === O.pNK.MEMBER_VERIFICATION && (e = O.pNK.SAFETY, t = O.KsC.SAFETY_DM_AND_SPAM_PROTECTION)), a.Z.dispatch({
         type: "GUILD_SETTINGS_SET_SECTION",
         section: e,
         subsection: t

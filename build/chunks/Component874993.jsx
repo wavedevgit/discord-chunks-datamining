@@ -30,14 +30,14 @@ function y(e) {
   var t, n;
   let {
     guildId: y,
-    setPreventNavigation: N = () => {}
+    setPreventNavigation: E = () => {}
   } = e, {
-    editingRule: E,
+    editingRule: N,
     setEditingRule: I
   } = (0, h.V)(), {
     guild: S,
     subsection: T
-  } = (0, l.cj)([o.Z], () => o.Z.getProps()), P = null != (n = null != (t = null == S ? true : S.id) ? t : y) ? n : _.lds, w = null != E, [Z] = (0, m.RD)(P), {
+  } = (0, l.cj)([o.Z], () => o.Z.getProps()), P = null != (n = null != (t = null == S ? true : S.id) ? t : y) ? n : _.lds, w = null != N, [Z] = (0, m.RD)(P), {
     rulesByTriggerType: R
   } = (0, m.pH)(P), D = {
     [p.vh.MEMBERS]: C.intl.string(C.t.sx4E5u),
@@ -55,7 +55,7 @@ function y(e) {
     } = k.current;
     e && t(null)
   }, [P]);
-  let M = i.useCallback((e, t) => {
+  let G = i.useCallback((e, t) => {
       if (null != e) {
         var n, r;
         return null != (r = null == (n = A.find(t => {
@@ -67,13 +67,13 @@ function y(e) {
       }
       return null != t ? p.I6[t].getDefaultRuleName() : null
     }, [A]),
-    G = i.useMemo(() => {
+    M = i.useMemo(() => {
       var e, t;
-      return M(null != (e = null == E ? true : E.id) ? e : null, null != (t = null == E ? true : E.triggerType) ? t : null)
-    }, [M, E]);
+      return G(null != (e = null == N ? true : N.id) ? e : null, null != (t = null == N ? true : N.triggerType) ? t : null)
+    }, [G, N]);
   i.useEffect(() => {
-    N(w, (0, j.af)(G))
-  }, [N, w, G]);
+    E(w, (0, j.af)(M))
+  }, [E, w, M]);
   let U = (0, p.Z6)(P);
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(s.Heading, {

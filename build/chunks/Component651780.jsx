@@ -39,10 +39,10 @@ function S(e) {
     days: i,
     hours: l
   } = (0, u.Z)(t);
-  return n <= 0 ? null : 0 === i && 0 === l ? E.intl.format(E.t.kF0HER, {
+  return n <= 0 ? null : 0 === i && 0 === l ? N.intl.format(N.t.kF0HER, {
     tierName: r,
     numPremiumSubscriptions: n
-  }) : E.intl.format(E.t.neDJho, {
+  }) : N.intl.format(N.t.neDJho, {
     days: i,
     hours: l,
     tierName: r,
@@ -61,7 +61,7 @@ function T(e) {
     messageType: a.QYI.WARNING,
     children: [(0, r.jsx)("div", {
       className: I.guildBoostingGracePeriodTitle,
-      children: E.intl.format(E.t.LG7vvr, {})
+      children: N.intl.format(N.t.LG7vvr, {})
     }), (0, r.jsx)(S, {
       endsAt: i,
       appliedGuildBoostsToMaintain: s,
@@ -119,7 +119,7 @@ function w() {
         null != module && ((0, Chunk37234.xf)(), (0, Chunk441536.Z)(module.id, Chunk100527.Z.GUILD_POWERUPS_GUILD_SETTINGS_PREMIUM))
       }
     }), (0, Chunk951288.jsx)(Chunk399829.Z, {
-      tiers: (0, Chunk267642.cP)(null != module && module.features.has(Chunk981631.oNc.COMMUNITY) && module.maxStageVideoChannelUsers >= Chunk981631.B9o),
+      tiers: (0, Chunk267642.cP)(null != module && module.features.has(Chunk981631.GuildFeatures.COMMUNITY) && module.maxStageVideoChannelUsers >= Chunk981631.B9o),
       renderTier: P
     }), (0, Chunk951288.jsx)("div", {
       className: Chunk424359.divider

@@ -141,10 +141,10 @@ function E(e) {
     [c, x] = r.useState(0),
     _ = r.useRef(null),
     E = r.useRef(c),
-    N = (0, b.A)({
+    S = (0, b.A)({
       guildId: n
     }),
-    S = (t = null != N ? N : 0, [{
+    T = (t = null != S ? S : 0, [{
       id: g.e.ALL_MEMBERS,
       label: p.intl.string(p.t.NOOm1d)
     }, {
@@ -160,11 +160,11 @@ function E(e) {
       label: p.intl.string(p.t.aURgY2)
     }]),
     {
-      lastVisibleIndex: T,
+      lastVisibleIndex: N,
       onItemLayout: P,
       overflowItemsRef: O
     } = (0, o.zP)({
-      items: S,
+      items: T,
       itemGapPx: 16,
       maxLines: 1,
       containerWidth: c - 200
@@ -174,8 +174,8 @@ function E(e) {
       guildId: n
     }),
     R = r.useMemo(() => i === g.e.ALL_MEMBERS ? I : null != y && null != y.user, [i, I, y]),
-    w = r.useMemo(() => S.slice(0, T + 1), [T, S]),
-    A = r.useMemo(() => S.slice(T + 1), [T, S]),
+    w = r.useMemo(() => T.slice(0, N + 1), [N, T]),
+    A = r.useMemo(() => T.slice(N + 1), [N, T]),
     Z = (0, m.Z)(e => {
       let t = e.contentRect.width;
       null != t && E.current !== t && (x(t), E.current = t)
@@ -188,7 +188,7 @@ function E(e) {
       ref: _,
       children: [(0, l.jsxs)("div", {
         className: v.measurements,
-        children: [S.map((e, t) => (0, l.jsx)(o.AJ, {
+        children: [T.map((e, t) => (0, l.jsx)(o.AJ, {
           index: t,
           onItemLayout: P,
           children: (0, l.jsx)(d.njP.Item, {

@@ -60,7 +60,7 @@ function f(e) {
     x = null != t.channel ? (0, l.jD)(t.channel) : null,
     E = null != t.target_application ? new s.ZP(t.target_application) : null,
     v = f || null == t.inviter ? null : new a.Z(t.inviter),
-    b = !(null != t.approximate_member_count && t.approximate_member_count > c.mx || null != _ && _.features.has(d.oNc.COMMUNITY)) && null != v && (0, c.WT)(t),
+    b = !(null != t.approximate_member_count && t.approximate_member_count > c.mx || null != _ && _.features.has(d.GuildFeatures.COMMUNITY)) && null != v && (0, c.WT)(t),
     j = (e => {
       let {
         state: t

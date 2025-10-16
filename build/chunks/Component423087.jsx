@@ -136,13 +136,13 @@ let C = function(e) {
     badge: l,
     primaryColor: a,
     secondaryColor: s
-  } = e, [d, u] = i.useState(false), g = i.useRef(null), C = i.useId(), O = i.useId(), y = i.useMemo(() => p.Ek.every(e => e.primary !== a || e.secondary !== s), [a, s]), N = (0, o.Jb)({
+  } = e, [d, u] = i.useState(false), g = i.useRef(null), C = i.useId(), O = i.useId(), y = i.useMemo(() => p.Ek.every(e => e.primary !== a || e.secondary !== s), [a, s]), E = (0, o.Jb)({
     orientation: "horizontal",
     isDisabled: false,
     labelledBy: C
   });
 
-  function E(e) {
+  function N(e) {
     let t = {};
     true !== e.primary && (t.badgeColorPrimary = e.primary), true !== e.secondary && (t.badgeColorSecondary = e.secondary), m.Z.updateGuildProfile(n, t)
   }
@@ -151,7 +151,7 @@ let C = function(e) {
     children: [(0, r.jsx)(c.gNt, {
       label: h.intl.string(f.default.zSbMdX),
       id: C,
-      children: e => (0, r.jsxs)("div", j(x({}, N), {
+      children: e => (0, r.jsxs)("div", j(x({}, E), {
         id: e.controlId,
         "aria-describedby": O,
         className: b.pickerGrid,
@@ -159,7 +159,7 @@ let C = function(e) {
           palette: e,
           badge: l,
           isSelected: e.primary === a && e.secondary === s,
-          onClick: () => E(e)
+          onClick: () => N(e)
         }, "".concat(e.primary).concat(e.secondary))), (0, r.jsx)(_, {
           badge: l,
           primary: a,
@@ -168,7 +168,7 @@ let C = function(e) {
           showColorPopout: d,
           setShowColorPopout: u,
           palettePopoutTargetRef: g,
-          handleChange: E
+          handleChange: N
         })]
       }))
     }), (0, r.jsx)(c.nn4, {

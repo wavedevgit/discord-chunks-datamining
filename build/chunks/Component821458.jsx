@@ -93,8 +93,8 @@ function m(e, t, n, r) {
       object: "temp"
     };
   if (null != i && null != n)
-    if ("image/gif" !== i || e.features.has(d.oNc.ANIMATED_BANNER)) {
-      if (!e.features.has(d.oNc.BANNER)) {
+    if ("image/gif" !== i || e.features.has(d.GuildFeatures.ANIMATED_BANNER)) {
+      if (!e.features.has(d.GuildFeatures.BANNER)) {
         l.object = d.qAy.IMAGE_CROPPING_MODAL, (0, a.c)({
           guild: e,
           analyticsLocations: t,

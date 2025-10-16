@@ -29,8 +29,8 @@ let h = e => {
     maxAgeOptions: E,
     maxAge: y,
     maxUses: C,
-    temporary: N,
-    flags: _
+    temporary: _,
+    flags: N
   } = l;
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)(a.xBx, {
@@ -53,14 +53,14 @@ let h = e => {
       maxAgeOptions: E,
       maxAge: y,
       maxUses: C,
-      temporary: N,
+      temporary: _,
       onToggleTemporary: v,
       onSelectMaxAge: p,
       onSelectMaxUses: x,
       onGenerateNewLink: m,
       isGuestInviteCreationToggleEnabled: I,
       onSetInviteFlags: S,
-      inviteFlags: _
+      inviteFlags: N
     }), (0, i.jsx)(a.mzw, {
       className: c.settingsFooter,
       children: (0, i.jsx)(d.Z, {

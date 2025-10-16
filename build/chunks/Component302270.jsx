@@ -97,7 +97,7 @@ function k(e) {
     channel: n,
     toggleRequestToSpeakSidebar: l,
     showRequestToSpeakSidebar: u
-  } = e, p = (0, m.ZP)(n), h = (0, s.e7)([T.Z], () => T.Z.getStageInstanceByChannel(n.id)), f = (0, S.Io)(n.id), g = (0, S.Rk)(n.id, E.pV.AUDIENCE), b = (0, s.e7)([v.Z], () => v.Z.getGuild(n.guild_id), [n.guild_id]), O = null != (t = null == b ? true : b.maxStageVideoChannelUsers) ? t : 0, x = null != b && b.features.has(w.oNc.COMMUNITY) ? O < w.TU7 : (null == b ? true : b.premiumTier) !== w.Eu4.TIER_3 && O <= w.eez, Z = (0, R.Z)(n), N = (0, s.e7)([C.Z], () => C.Z.can(P.yP, n)), k = () => {
+  } = e, p = (0, m.ZP)(n), h = (0, s.e7)([T.Z], () => T.Z.getStageInstanceByChannel(n.id)), f = (0, S.Io)(n.id), g = (0, S.Rk)(n.id, E.pV.AUDIENCE), b = (0, s.e7)([v.Z], () => v.Z.getGuild(n.guild_id), [n.guild_id]), O = null != (t = null == b ? true : b.maxStageVideoChannelUsers) ? t : 0, x = null != b && b.features.has(w.GuildFeatures.COMMUNITY) ? O < w.TU7 : (null == b ? true : b.premiumTier) !== w.Eu4.TIER_3 && O <= w.eez, Z = (0, R.Z)(n), N = (0, s.e7)([C.Z], () => C.Z.can(P.yP, n)), k = () => {
     d.Z.updateStageVideoLimitBoostUpsellDismissed(n.id, true), I.default.track(w.rMx.BOOSTING_UPSELL_CLICKED, {
       guild_id: n.guild_id,
       type: A.cd.VIDEO_STAGE_LIMIT,

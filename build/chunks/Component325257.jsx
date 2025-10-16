@@ -90,8 +90,8 @@ let k = Chunk647438.memo(function(e) {
     guildNode: G,
     setRef: U,
     onDragStart: B,
-    onDragEnd: V,
-    route: F,
+    onDragEnd: F,
+    route: V,
     guild: H,
     animatable: z,
     selected: W = false,
@@ -129,7 +129,7 @@ let k = Chunk647438.memo(function(e) {
         nodeId: G.id
       }),
       end() {
-        null == V || V(), (0, g.V1)(j.ZP.getCompatibleGuildFolders())
+        null == F || F(), (0, g.V1)(j.ZP.getCompatibleGuildFolders())
       },
       collect: e => ({
         dragging: e.isDragging()
@@ -143,18 +143,18 @@ let k = Chunk647438.memo(function(e) {
     [ev] = i.useState(() => new d.sW(70, () => ey(true)));
   i.useEffect(() => () => ev.cancel(), [ev]);
   let ej = i.useCallback(() => {
-      if (null != F) return void(0, _.uL)(F, {
+      if (null != V) return void(0, _.uL)(V, {
         state: L
       });
       (0, O.X)(eo, {
         state: L
       })
-    }, [eo, F]),
+    }, [eo, V]),
     ex = i.useCallback(() => {
-      if (null != F || null == H || q || !et) return;
+      if (null != V || null == H || q || !et) return;
       let e = (0, b.V)(H.id);
       null != e && f.Z.preload(H.id, e)
-    }, [F, H, q, et]),
+    }, [V, H, q, et]),
     eC = (0, u.e7)([v.ZP], () => v.ZP.isCurrentUserGuest(eo)),
     eE = i.useCallback(e => {
       null == H || eC || J(e, H)

@@ -41,15 +41,15 @@ function Z(e) {
     analyticsLocations: l
   } = (0, d.ZP)(c.Z.GUILD_SETTINGS_MEMBERS_PAGE), Z = (0, u.m)(t), R = (0, s.e7)([h.ZP], () => h.ZP.getGuildSidebarState(t), [t]), D = i.useCallback(() => {
     p.Z.closeGuildSidebar(t)
-  }, [t]), A = false == !!(null == n ? true : n.features.has(S.oNc.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), L = (0, s.e7)([x.Z], () => x.Z.getEstimatedMemberSearchCountByGuildId(t), [t]), k = i.useCallback(e => {
+  }, [t]), A = false == !!(null == n ? true : n.features.has(S.GuildFeatures.ENABLED_MODERATION_EXPERIENCE_FOR_NON_COMMUNITY)), L = (0, s.e7)([x.Z], () => x.Z.getEstimatedMemberSearchCountByGuildId(t), [t]), k = i.useCallback(e => {
     null != e && (0, f.openUserProfileModal)({
       userId: e.userId,
       guildId: e.guildId,
       sourceAnalyticsLocations: l
     })
-  }, [l]), M = i.useRef(null), G = i.useCallback(() => {
+  }, [l]), G = i.useRef(null), M = i.useCallback(() => {
     var e;
-    null == (e = M.current) || e.resetSearchText()
+    null == (e = G.current) || e.resetSearchText()
   }, []);
   if (null == n) return null;
   let U = (0, O.xb)(false, false, L);
@@ -82,16 +82,16 @@ function Z(e) {
                     guild: n
                   }), A ? (0, r.jsxs)("div", {
                     className: P.mainTableContainer,
-                    children: [(0, r.jsx)(E.Z, {
+                    children: [(0, r.jsx)(N.Z, {
                       guild: n,
-                      ref: M
+                      ref: G
                     }), (0, r.jsx)(y.Z, {
                       guild: n,
                       searchState: U,
                       compact: true,
                       onSelectRow: k,
-                      onResetForNewMembers: G
-                    }), U !== O.po.SUCCESS_STILL_INDEXING && (0, r.jsx)(N.Z, {
+                      onResetForNewMembers: M
+                    }), U !== O.po.SUCCESS_STILL_INDEXING && (0, r.jsx)(E.Z, {
                       guildId: n.id
                     })]
                   }) : (0, r.jsx)("div", {

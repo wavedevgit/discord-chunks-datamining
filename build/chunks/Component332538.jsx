@@ -77,13 +77,13 @@ function Z(e) {
         available: c
       } = (0, x.Z)(e), u = (0, o.e7)([f.Z], () => {
         var t, n;
-        return null != (n = null == (t = f.Z.getGuild(e)) ? true : t.features.has(P.oNc.GAME_SERVERS)) && n
+        return null != (n = null == (t = f.Z.getGuild(e)) ? true : t.features.has(P.GuildFeatures.GAME_SERVERS)) && n
       }), b = function(e, t) {
         let n = (0, v.qI)(e, "GuildPowerupsChannelRow"),
           r = (0, m.BU)(e, "GuildPowerupsChannelRow"),
           a = (0, o.e7)([f.Z], () => {
             var t;
-            return null == (t = f.Z.getGuild(e)) ? true : t.features.has(P.oNc.GAME_SERVERS)
+            return null == (t = f.Z.getGuild(e)) ? true : t.features.has(P.GuildFeatures.GAME_SERVERS)
           });
         return i.useMemo(() => {
           if (r && !a) return I.Du.GAME_SERVER_HOSTING;

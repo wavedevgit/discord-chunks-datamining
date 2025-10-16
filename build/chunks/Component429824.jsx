@@ -21,8 +21,8 @@ function b(e) {
     } = (0, o.mI)(e.id),
     O = i.useCallback(() => {
       let t = {
-        source: c.Zu.CONTEXT_MENU,
-        alertType: (0, a.T1)(d)
+        source: a.Zu.CONTEXT_MENU,
+        alertType: (0, c.T1)(d)
       };
       (0, l.ZDy)(async () => {
         let {
@@ -63,7 +63,7 @@ function b(e) {
         }
       })
     }, [e.id, d]);
-  return e.features.has(u.oNc.COMMUNITY) && b ? (0, r.jsx)(l.sNh, {
+  return e.features.has(u.GuildFeatures.COMMUNITY) && b ? (0, r.jsx)(l.sNh, {
     id: "server-lockdown",
     label: p ? s.intl.string(s.t["+tSVi4"]) : s.intl.string(s.t.EPlEdn),
     icon: t ? p ? l.d$P : l.mBM : true,

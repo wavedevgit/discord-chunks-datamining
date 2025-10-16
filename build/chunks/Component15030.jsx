@@ -32,7 +32,7 @@ function j() {
   Chunk647438.useEffect(() => {
     null != exports && (0, Chunk303737.sO)(exports) && (0, Chunk266454.Q3)(Chunk704215.z.SERVER_SUBSCRIPTION_SETTINGS_NEW_BADGE_TIER_TEMPLATE)
   }, [exports]);
-  let C = (null == exports ? true : exports.features.has(Chunk981631.oNc.CREATOR_MONETIZABLE)) === false && (null == exports ? true : exports.features.has(Chunk981631.oNc.CREATOR_MONETIZABLE_PROVISIONAL)) === false;
+  let C = (null == exports ? true : exports.features.has(Chunk981631.GuildFeatures.CREATOR_MONETIZABLE)) === false && (null == exports ? true : exports.features.has(Chunk981631.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL)) === false;
   return e = null == exports || j ? (0, Chunk951288.jsx)(Chunk481060.$jN, {}) : null != _ ? (0, Chunk951288.jsx)(Chunk500395.Z, {
     guild: exports,
     config: _

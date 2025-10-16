@@ -50,7 +50,7 @@ function O(e) {
     vanityURLUses: l,
     originalVanityURLCode: s,
     errorDetails: o
-  } = e, c = (null == t ? true : t.features.has(x.oNc.VANITY_URL)) === true, d = i.useCallback(() => {
+  } = e, c = (null == t ? true : t.features.has(x.GuildFeatures.VANITY_URL)) === true, d = i.useCallback(() => {
     (0, m.Gy)("")
   }, []), u = i.useCallback(e => {
     (0, m.Gy)(e)

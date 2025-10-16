@@ -30,8 +30,8 @@ function h(e) {
   } = e, v = e => () => j(e), _ = (0, d.c)(n.type, n, h), C = null == (t = n.metadata) ? true : t.durationSeconds, O = null != C ? (0, m.getFriendlyDurationString)(C) : null, y = (0, i.e7)([c.Z, o.Z], () => c.Z.can(g.Plq.MODERATE_MEMBERS, o.Z.getGuild(b)), [b]);
   if (null == _) return null;
   let {
-    headerText: N,
-    descriptionText: E,
+    headerText: E,
+    descriptionText: N,
     icon: I
   } = _;
   return (0, r.jsxs)("div", {
@@ -47,11 +47,11 @@ function h(e) {
       className: f.actionTextContainer,
       children: [(0, r.jsx)(s.Heading, {
         variant: "heading-sm/semibold",
-        children: N
+        children: E
       }), (0, r.jsx)(s.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
-        children: E
+        children: N
       }), x && (0, r.jsxs)(s.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",

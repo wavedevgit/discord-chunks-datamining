@@ -20,8 +20,8 @@ var Chunk647438 = require("./647438.js"),
 
 function h(e) {
   let t, n = (0, c.Ob)(e),
-    h = null == e ? true : e.features.has(p.oNc.CREATOR_MONETIZABLE_PROVISIONAL),
-    b = null == e ? true : e.features.has(p.oNc.CREATOR_MONETIZABLE),
+    h = null == e ? true : e.features.has(p.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL),
+    b = null == e ? true : e.features.has(p.GuildFeatures.CREATOR_MONETIZABLE),
     x = (0, i.e7)([s.default], () => {
       let t = s.default.getCurrentUser();
       return null != e && (0, a.eM)(e, t)
@@ -35,19 +35,19 @@ function h(e) {
     {
       loading: O,
       error: y,
-      refresh: N,
-      eligibility: E
+      refresh: E,
+      eligibility: N
     } = (0, u.Z)(null == e ? true : e.id),
     {
       isApplicationRejected: I,
       requestCooldownDuration: S
-    } = (0, g.Z)(E),
-    T = (null == e ? true : e.features.has(p.oNc.CREATOR_MONETIZABLE_RESTRICTED)) === true || (null == e ? true : e.features.has(p.oNc.CREATOR_MONETIZABLE_DISABLED)) === true,
+    } = (0, g.Z)(N),
+    T = (null == e ? true : e.features.has(p.GuildFeatures.CREATOR_MONETIZABLE_RESTRICTED)) === true || (null == e ? true : e.features.has(p.GuildFeatures.CREATOR_MONETIZABLE_DISABLED)) === true,
     {
       isMonetizationReapplicationDisabled: P
     } = (0, l.eC)(null == e ? true : e.id),
-    w = C || (null == E ? true : E.isApplicationPending) === true,
-    Z = (null == E ? true : E.canApply) === true,
+    w = C || (null == N ? true : N.isApplicationPending) === true,
+    Z = (null == N ? true : N.canApply) === true,
     R = f.intl.format(f.t.aJUdOj, {
       faqUrl: o.Z.getArticleURL(p.BhN.CREATOR_FAQ)
     });
@@ -64,8 +64,8 @@ function h(e) {
     L = (0, m.f)(),
     k = I && Z && x ? f.intl.format(f.t.wbVIUF, {}) : true;
   return r.useEffect(() => {
-    D && N()
-  }, [N, D]), {
+    D && E()
+  }, [E, D]), {
     resubmittingEnableRequest: v,
     resubmissionError: j,
     isGuildOwner: x,
@@ -73,8 +73,8 @@ function h(e) {
     resubmittedRequest: C,
     eligibilityLoading: O,
     eligibilityError: y,
-    refreshEligibility: N,
-    eligibility: E,
+    refreshEligibility: E,
+    eligibility: N,
     eligibleForMonetization: Z,
     isApplicationPending: w,
     hasPreviousApplicationRejection: I,

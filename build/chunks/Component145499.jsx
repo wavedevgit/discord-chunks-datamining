@@ -123,11 +123,11 @@ let w = e => {
       return null != (e = C.Z.getStickersByGuildId(t.id)) ? e : []
     }, [t]), {
       analyticsLocations: v
-    } = (0, m.ZP)(), D = (0, x.Z)(t.id), A = t.features.has(I.oNc.MORE_STICKERS) ? I.Eu4.TIER_3 : t.premiumTier, L = t.features.has(I.oNc.MORE_STICKERS) ? I.oCV[I.Eu4.TIER_3] : D, k = (0, j.Z)(t.id);
+    } = (0, m.ZP)(), D = (0, x.Z)(t.id), A = t.features.has(I.GuildFeatures.MORE_STICKERS) ? I.Eu4.TIER_3 : t.premiumTier, L = t.features.has(I.GuildFeatures.MORE_STICKERS) ? I.oCV[I.Eu4.TIER_3] : D, k = (0, j.Z)(t.id);
     if (i.useEffect(() => {
         window.dispatchEvent(new Event("resize"))
       }, [g]), l) return (0, r.jsx)(d.$jN, {});
-    let M = [{
+    let G = [{
       tier: I.Eu4.NONE,
       title: (0, r.jsx)(w, {
         guildStickers: g,
@@ -160,8 +160,8 @@ let w = e => {
         children: T.intl.string(T.t.BfF6EB)
       })
     }];
-    return (0, r.jsx)(N.Z, {
-      tiers: M,
+    return (0, r.jsx)(E.Z, {
+      tiers: G,
       renderTier: e => {
         var i;
         let l, s, {
@@ -172,20 +172,20 @@ let w = e => {
             tierIndex: O
           } = e,
           {
-            canCreateExpressions: N,
+            canCreateExpressions: E,
             canManageGuildExpression: w
           } = (0, h.Gw)(t),
-          M = C[O - 1],
-          G = null != M ? (0, _.A3)(M.tier) : 0,
+          G = C[O - 1],
+          M = null != G ? (0, _.A3)(G.tier) : 0,
           U = (0, _.A3)(j.tier, t),
           B = (0, _.ig)(j.tier),
-          F = g.slice(G, U),
+          F = g.slice(M, U),
           H = F.length > 0,
           W = A < j.tier,
-          V = (i = g.length, i < (0, _.A3)(I.Eu4.NONE) ? I.Eu4.NONE : i < (0, _.A3)(I.Eu4.TIER_1) ? I.Eu4.TIER_1 : i < (0, _.A3)(I.Eu4.TIER_2) ? I.Eu4.TIER_2 : i < (0, _.A3)(I.Eu4.TIER_3) || null != t && t.features.has(I.oNc.MORE_STICKERS) && i < u.D.MAX_STICKER_SLOTS ? I.Eu4.TIER_3 : I.Eu4.NONE),
-          z = N && !W && V === j.tier && U !== F.length,
+          V = (i = g.length, i < (0, _.A3)(I.Eu4.NONE) ? I.Eu4.NONE : i < (0, _.A3)(I.Eu4.TIER_1) ? I.Eu4.TIER_1 : i < (0, _.A3)(I.Eu4.TIER_2) ? I.Eu4.TIER_2 : i < (0, _.A3)(I.Eu4.TIER_3) || null != t && t.features.has(I.GuildFeatures.MORE_STICKERS) && i < u.D.MAX_STICKER_SLOTS ? I.Eu4.TIER_3 : I.Eu4.NONE),
+          z = E && !W && V === j.tier && U !== F.length,
           K = z || F.length > 0,
-          Y = U - G,
+          Y = U - M,
           q = n(872732),
           X = B - F.length,
           Q = z ? Math.min(5 - (F.length + 0) % 5, X) : 0,
@@ -229,7 +229,7 @@ let w = e => {
           }
         }) : z && (s = (0, r.jsx)(R, {
           guild: t
-        })), (0, r.jsxs)(E.Z, {
+        })), (0, r.jsxs)(N.Z, {
           subscriptionCount: L,
           tier: j,
           onSetRef: x,

@@ -233,7 +233,7 @@ let X = e => {
         stickerSourceGuild: e
       } = ee.current;
       (async () => {
-        (null == e || e.features.has(w.oNc.DISCOVERABLE)) && C(await (0, g.Z)(n.id)), P(true)
+        (null == e || e.features.has(w.GuildFeatures.DISCOVERABLE)) && C(await (0, g.Z)(n.id)), P(true)
       })()
     }, [n.id, Z]);
     let et = n.guild_id === a.getGuildId(),

@@ -280,7 +280,7 @@ function c(e, t) {
         }, 16)
       }), e.preventDefault(), e.stopPropagation())
     }, [l, i, u, c.length, o]),
-    N = r.useCallback(e => {
+    E = r.useCallback(e => {
       e.relatedTarget !== e.currentTarget && _(e, false, false)
     }, [_]);
   return {
@@ -300,6 +300,6 @@ function c(e, t) {
     handleSelectTag: b,
     handleUnselectTag: x,
     handleResetTagSelections: j,
-    handleInputBlurEvent: N
+    handleInputBlurEvent: E
   }
 }

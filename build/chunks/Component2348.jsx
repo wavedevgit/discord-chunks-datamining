@@ -2,7 +2,7 @@
 /** chunk id: 2348, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => E
+  Z: () => N
 }), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -118,21 +118,21 @@ let O = Chunk647438.memo(function() {
       children: "\xb7"
     }, "separator-".concat(t))
   }),
-  N = Chunk647438.memo(function(e) {
+  E = Chunk647438.memo(function(e) {
     let {
       channel: t,
       category: i,
       guild: l,
       isFirstChannel: m,
       isLastChannel: C,
-      tooltipDirection: N = "right"
-    } = e, E = (0, f.Mf)(t.id, i.id), I = (0, f.t4)(t.id, i.id), S = (0, f.EH)(t.id, i.id), T = (0, f.lL)(l.id, i.id), P = null != (0, h.Z)(l).find(e => e.id === t.id);
+      tooltipDirection: E = "right"
+    } = e, N = (0, f.Mf)(t.id, i.id), I = (0, f.t4)(t.id, i.id), S = (0, f.EH)(t.id, i.id), T = (0, f.lL)(l.id, i.id), P = null != (0, h.Z)(l).find(e => e.id === t.id);
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(s.u, {
         asContainer: true,
         __unsupportedReactNodeAsText: null != S ? S : T,
         delay: 500,
-        position: N,
+        position: E,
         children: (0, r.jsxs)(o.P3F, {
           className: a()(j.channelRow, {
             [j.firstChannel]: m,
@@ -199,7 +199,7 @@ let O = Chunk647438.memo(function() {
           }), (0, r.jsx)("div", {
             className: j.channelActions,
             children: (0, u.s)(t.guild_id, t.id) ? (0, r.jsx)(o.FZ5, {
-              checked: E,
+              checked: N,
               disabled: I
             }) : (0, r.jsx)(o.Button, {
               size: "sm",
@@ -214,7 +214,7 @@ let O = Chunk647438.memo(function() {
     })
   });
 
-function E(e) {
+function N(e) {
   let {
     categories: t,
     guild: n,
@@ -229,7 +229,7 @@ function E(e) {
   }, [t, n]), o = i.useCallback((e, i) => {
     let l = t._categories[e],
       s = t[l.channel.id][i];
-    return null == s ? null : (0, r.jsx)(N, {
+    return null == s ? null : (0, r.jsx)(E, {
       category: l.channel,
       channel: s.channel,
       guild: n,

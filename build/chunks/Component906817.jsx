@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
 function m(e, t, n, r) {
   let i = "compact" === r ? 8 : p.$k;
   if (e === u.wZ) return i;
-  if (e === u.wd) return t.features.has(f.oNc.HUB) ? 0 : i;
+  if (e === u.wd) return t.features.has(f.GuildFeatures.HUB) ? 0 : i;
   if (e === n.voiceChannelsSectionNumber) {
     var l;
     let t = n.getCategoryFromSection(e);
@@ -80,7 +80,7 @@ let _ = Chunk647438.memo(function(e) {
         }
       });
     case u.wd:
-      if (n.features.has(f.oNc.HUB)) return null;
+      if (n.features.has(f.GuildFeatures.HUB)) return null;
       return (0, r.jsx)("div", {
         style: {
           height: x

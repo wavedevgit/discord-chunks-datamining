@@ -49,7 +49,7 @@ function g(e) {
   } = e;
   return (0, r.jsx)(u, {
     guild: t,
-    guildFeature: o.oNc.BANNER,
+    guildFeature: o.GuildFeatures.BANNER,
     analyticsSection: o.jXE.GUILD_BANNER,
     analyticsObject: o.qAy.BADGE,
     getPerks: c.XO
@@ -62,7 +62,7 @@ function m(e) {
   } = e;
   return (0, r.jsx)(u, {
     guild: t,
-    guildFeature: o.oNc.INVITE_SPLASH,
+    guildFeature: o.GuildFeatures.INVITE_SPLASH,
     analyticsSection: o.jXE.GUILD_INVITE_BACKGROUND,
     analyticsObject: o.qAy.BADGE,
     getPerks: c.o9
@@ -75,7 +75,7 @@ function p(e) {
   } = e;
   return (0, r.jsx)(u, {
     guild: t,
-    guildFeature: o.oNc.VANITY_URL,
+    guildFeature: o.GuildFeatures.VANITY_URL,
     analyticsSection: o.jXE.GUILD_SETTINGS_VANITY_URL,
     analyticsObject: o.qAy.BADGE,
     getPerks: c.WW,

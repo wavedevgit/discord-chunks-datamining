@@ -118,7 +118,7 @@ function C(e) {
     postjoinOnly: i,
     includeCount: l,
     singleColumn: a
-  } = e, d = (0, s.e7)([g.Z], () => g.Z.getGuild(t)), C = (0, s.e7)([p.Z], () => p.Z.editedOnboardingPrompts), O = C.filter(e => e.inOnboarding), y = C.filter(e => true !== e.inOnboarding), N = [...O.map(e => ({
+  } = e, d = (0, s.e7)([g.Z], () => g.Z.getGuild(t)), C = (0, s.e7)([p.Z], () => p.Z.editedOnboardingPrompts), O = C.filter(e => e.inOnboarding), y = C.filter(e => true !== e.inOnboarding), E = [...O.map(e => ({
     id: e.id,
     data: e
   })), {
@@ -128,10 +128,10 @@ function C(e) {
     id: e.id,
     data: e
   }))], {
-    handleDragStart: E,
+    handleDragStart: N,
     handleDragReset: I,
     handleDragComplete: S
-  } = (0, u.Z)(N, e => {
+  } = (0, u.Z)(E, e => {
     let t = e.findIndex(e => "separator" === e.id),
       n = e.slice(0, t).map(e => v(j({}, e.data), {
         inOnboarding: true
@@ -168,7 +168,7 @@ function C(e) {
         singleColumn: a,
         promptIndex: t,
         dragIndex: t,
-        onPromptDragStart: E,
+        onPromptDragStart: N,
         onPromptDragReset: I,
         onPromptDragComplete: S
       }, e.id))]
@@ -182,7 +182,7 @@ function C(e) {
         prompt: e,
         promptIndex: t + O.length,
         dragIndex: t + O.length + 1,
-        onPromptDragStart: E,
+        onPromptDragStart: N,
         onPromptDragReset: I,
         onPromptDragComplete: S
       }, e.id)), C.length < h.YW ? (0, r.jsxs)(o.P3F, {

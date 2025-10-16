@@ -56,14 +56,14 @@ function y(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let N = "guild-role-subscription-tier-template-selector";
+let E = "guild-role-subscription-tier-template-selector";
 
-function E(e) {
+function N(e) {
   let {
     guildId: t,
     priceTiers: l,
     groupListingId: h
-  } = e, E = (0, f._k)(h), {
+  } = e, N = (0, f._k)(h), {
     editStateIds: I,
     addNewEditStateId: S,
     addNewEditStateFromTemplate: T,
@@ -91,18 +91,18 @@ function E(e) {
         priceTiers: l
       }))
     }, {
-      modalKey: N
+      modalKey: E
     }) : S()
-  }, [t, T, S, l, A, D]), k = x.Lo(R), M = i.useCallback(() => R.forEach(x.GM), [R]), G = (0, b.mY)(), U = (0, o.e7)([g.Z], () => g.Z.getProps().subsection);
+  }, [t, T, S, l, A, D]), k = x.Lo(R), G = i.useCallback(() => R.forEach(x.GM), [R]), M = (0, b.mY)(), U = (0, o.e7)([g.Z], () => g.Z.getProps().subsection);
   return i.useEffect(() => (U === v.KsC.ROLE_SUBSCRIPTION_TIER_TEMPLATE && L(), () => {
-    (0, d.Mr3)(N)
+    (0, d.Mr3)(E)
   }), [U, L]), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       className: C.groupListings,
       children: [R.map(e => (0, r.jsx)(j.Z, {
         guildId: t,
         initialEditStateId: e,
-        allSubscriptionListings: E,
+        allSubscriptionListings: N,
         priceTiers: l,
         groupListingId: h,
         onDeleteEditState: () => P(e),
@@ -114,11 +114,11 @@ function E(e) {
         },
         onAfterDispatchNewListing: () => P(e)
       }, e)), (0, r.jsxs)(d.P3F, {
-        onClick: G ? true : L,
+        onClick: M ? true : L,
         className: a()(C.createTierButton, {
-          [C.disabled]: G
+          [C.disabled]: M
         }),
-        "aria-disabled": G,
+        "aria-disabled": M,
         children: [(0, r.jsx)(d.oFk, {
           size: "xs",
           color: "currentColor",
@@ -134,7 +134,7 @@ function E(e) {
       className: C.contentRegion,
       children: k && (0, r.jsx)(d.oXn, {
         children: (0, r.jsx)(u.Z, {
-          onReset: M
+          onReset: G
         })
       })
     })]
@@ -164,7 +164,7 @@ function I(e) {
     description: _.intl.format(_.t.nHRSvL, {
       maxTiers: a
     }),
-    children: (0, r.jsx)(E, {
+    children: (0, r.jsx)(N, {
       priceTiers: n,
       guildId: t,
       groupListingId: s[0]

@@ -40,7 +40,7 @@ function x(e) {
     O = i.useCallback(() => {
       m.Z.setSection(f.pNK.ACCESS, f.KsC.ACCESS_DISCOVERABLE)
     }, []),
-    y = null == (t = n.features) ? true : t.includes(f.oNc.DISCOVERABLE);
+    y = null == (t = n.features) ? true : t.includes(f.GuildFeatures.DISCOVERABLE);
   return (0, r.jsxs)("div", {
     className: b.twoColumnContainer,
     ref: _,

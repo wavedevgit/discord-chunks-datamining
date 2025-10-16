@@ -38,12 +38,12 @@ function x(e) {
     drag: C,
     dragPreview: O,
     drop: y,
-    isDragging: N
+    isDragging: E
   } = (0, f.Z)(v, d, u, x);
   return C(_), O(y(v)), (0, r.jsxs)("div", {
     ref: v,
     className: a()(b.card, {
-      [b.cardDragging]: N,
+      [b.cardDragging]: E,
       [b.disabled]: j
     }),
     children: [(0, r.jsxs)("div", {

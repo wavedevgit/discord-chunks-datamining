@@ -2,7 +2,7 @@
 /** chunk id: 850864, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => E
+  Z: () => N
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -27,22 +27,22 @@ var Chunk951288 = require("./951288.js"),
   Chunk710043 = require("./710043.js"),
   Chunk847950 = require("./847950.js");
 
-function N(e) {
+function E(e) {
   let {
     guild: t,
     saveOnClose: n
-  } = e, [c, d] = i.useState("new"), N = i.useMemo(() => [{
+  } = e, [c, d] = i.useState("new"), E = i.useMemo(() => [{
     value: "new",
     name: j.intl.string(j.t["4e5u3t"])
   }, {
     value: "existing",
     name: j.intl.string(j.t.cmkOsb)
-  }], []), E = (0, l.e7)([o.Z], () => o.Z.theme);
+  }], []), N = (0, l.e7)([o.Z], () => o.Z.theme);
   i.useEffect(() => () => {
     let e = g.Z.getSettings();
     (0, u.oo)(t.id, e)
   }, [n, t.id]);
-  let I = i.useMemo(() => (0, a.ap)(E) ? "existing" === c ? C : y : "existing" === c ? _ : O, [c, E]);
+  let I = i.useMemo(() => (0, a.ap)(N) ? "existing" === c ? C : y : "existing" === c ? _ : O, [c, N]);
   return (0, r.jsxs)("div", {
     className: v.page,
     children: [(0, r.jsxs)("div", {
@@ -144,7 +144,7 @@ function N(e) {
         src: I,
         alt: j.intl.string(j.t.ST4UOz)
       }), (0, r.jsx)(s.sY7, {
-        options: N,
+        options: E,
         value: c,
         onChange: e => d(e.value),
         look: "pill"
@@ -153,14 +153,14 @@ function N(e) {
   })
 }
 
-function E(e) {
+function N(e) {
   let {
     saveOnClose: t
   } = e, n = (0, l.e7)([d.Z, c.Z], () => {
     let e = d.Z.getGuildId();
     return c.Z.getGuild(e)
   });
-  return null == n ? null : (0, r.jsx)(N, {
+  return null == n ? null : (0, r.jsx)(E, {
     guild: n,
     saveOnClose: t
   })

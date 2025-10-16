@@ -37,7 +37,7 @@ function O(e) {
   let r = new Set,
     i = new Set,
     a = new Set;
-  if (b.set(e, (0, o.eM)(n, t)), n.features.has(_.oNc.ROLE_SUBSCRIPTIONS_ENABLED)) {
+  if (b.set(e, (0, o.eM)(n, t)), n.features.has(_.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED)) {
     var p;
     let o = l.ZP.getMember(e, t.id),
       u = new Set(null != (p = null == o ? true : o.roles) ? p : []);
@@ -49,7 +49,7 @@ function O(e) {
 function v() {
   let e = Chunk430824.Z.getGuildsArray(),
     t = new Set;
-  for (let n of module) require.features.has(Chunk981631.oNc.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE) && exports.add(require.id);
+  for (let n of module) require.features.has(Chunk981631.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE) && exports.add(require.id);
   return y = exports, exports
 }
 
@@ -77,7 +77,7 @@ function S(e) {
   if (null == y) returnfalse;
   let n = u.Z.getGuild(t);
   if (null == n) returnfalse;
-  let r = n.features.has(_.oNc.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE);
+  let r = n.features.has(_.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE);
   if (r && !y.has(t)) {
     let e = new Set(y);
     return e.add(t), y = e, true

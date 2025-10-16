@@ -81,7 +81,7 @@ function A(e) {
     appContext: P
   }), x = (0, p.Z)(t.id, _), D = (0, E.Z)(t.id), C = (0, j.Z)(t.id, a), w = (0, m.Z)({
     user: t
-  }), N = (0, u.Z)(null, t), T = (0, f.Z)({
+  }), T = (0, u.Z)(null, t), N = (0, f.Z)({
     user: t,
     appContext: P
   }), k = (0, O.Z)({
@@ -107,9 +107,9 @@ function A(e) {
       }), (0, l.jsx)(r.kSQ, {
         children: D
       }), (0, l.jsx)(r.kSQ, {
-        children: N
+        children: T
       }), (0, l.jsxs)(r.kSQ, {
-        children: [C, w, T, U, k]
+        children: [C, w, N, U, k]
       }), (0, l.jsx)(r.kSQ, {
         children: B
       })]
@@ -145,10 +145,10 @@ function I(e) {
   }), w = (0, O.Z)({
     user: t,
     appContext: g
-  }), N = (0, Z.Z)({
+  }), T = (0, Z.Z)({
     user: t,
     appContext: g
-  }), T = (0, s.Z)({
+  }), N = (0, s.Z)({
     id: t.id,
     label: h.intl.string(h.t["/AXYnJ"])
   }), k = (0, d.Z)(t), U = t.isNonUserBot();
@@ -167,10 +167,10 @@ function I(e) {
       }), (0, l.jsx)(r.kSQ, {
         children: D
       }), (0, l.jsxs)(r.kSQ, {
-        children: [M, x, C, N, w]
+        children: [M, x, C, T, w]
       })]
     }), (0, l.jsx)(r.kSQ, {
-      children: T
+      children: N
     })]
   })
 }

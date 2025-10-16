@@ -29,7 +29,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk86477 = require("./86477.js"),
   Chunk197571 = require("./197571.js");
 
-function E(e, t, n) {
+function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -49,25 +49,25 @@ class I extends(r = Chunk442837.ZP.Store) {
     return null != module && null != this.name && (this.name.trim() !== module.name || this.description.trim() !== module.description)
   }
   constructor(...e) {
-    super(...e), E(this, "name", ""), E(this, "description", ""), E(this, "error", null), E(this, "reset", () => {
+    super(...e), N(this, "name", ""), N(this, "description", ""), N(this, "error", null), N(this, "reset", () => {
       let e = this.getTemplate();
       if (null != e) {
         var t, n;
         this.name = null != (t = e.name) ? t : this.name, this.description = null != (n = e.description) ? n : this.description
       } else this.name = "", this.description = "";
       this.emitChange()
-    }), E(this, "setName", e => {
+    }), N(this, "setName", e => {
       this.name = e, this.emitChange()
-    }), E(this, "setDescription", e => {
+    }), N(this, "setDescription", e => {
       this.description = e, this.emitChange()
-    }), E(this, "setError", e => {
+    }), N(this, "setError", e => {
       this.error = e, this.emitChange()
-    }), E(this, "save", async () => {
+    }), N(this, "save", async () => {
       await x.Z.updateGuildTemplate(_.Z.getProps().guild.id, this.getTemplate().code, this.name, this.description), this.emitChange()
     })
   }
 }
-E(I, "displayName", "GuildSettingsTemplateMetadataStore_");
+N(I, "displayName", "GuildSettingsTemplateMetadataStore_");
 let S = new I(Chunk570140.Z);
 
 function T() {
@@ -304,17 +304,17 @@ function L(e) {
       })
     }), n.isDirty && (0, i.jsx)(m.Text, {
       color: "text-feedback-warning",
-      className: N.marginTop8,
+      className: E.marginTop8,
       variant: "text-sm/normal",
       children: O.intl.string(O.t.aWsjtL)
     }), (0, i.jsxs)("div", {
-      className: s()(N.marginTop20, y.buttonContainer),
-      children: [n.isDirty && (0, i.jsx)(M, {
+      className: s()(E.marginTop20, y.buttonContainer),
+      children: [n.isDirty && (0, i.jsx)(G, {
         guild: t,
         guildTemplate: n
       }), (0, i.jsxs)("div", {
         className: y.rightButtonContainer,
-        children: [(0, i.jsx)(G, {
+        children: [(0, i.jsx)(M, {
           guild: t,
           guildTemplate: n
         }), (0, i.jsx)(U, {
@@ -351,7 +351,7 @@ function k(e) {
   })
 }
 
-function M(e) {
+function G(e) {
   let {
     guild: t,
     guildTemplate: n
@@ -376,7 +376,7 @@ function M(e) {
   })
 }
 
-function G(e) {
+function M(e) {
   let {
     guild: t,
     guildTemplate: n
@@ -428,7 +428,7 @@ function U(e) {
               "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                 return Object.getOwnPropertyDescriptor(n, e).enumerable
               }))), r.forEach(function(t) {
-                E(e, t, n[t])
+                N(e, t, n[t])
               })
             }
             return e

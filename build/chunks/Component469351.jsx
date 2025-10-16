@@ -43,7 +43,7 @@ function w(e) {
     loading: A
   } = (0, c.H)(t), [L, k] = i.useState(n ? "manage_listings" : "payment");
   (0, g.P)(Z);
-  let M = i.useCallback(() => {
+  let G = i.useCallback(() => {
     if (null == Z) return;
     let e = j.Z.getEveryoneRole(Z);
     p.Z.close();
@@ -59,7 +59,7 @@ function w(e) {
   }, [Z]);
   if (!w || A) return (0, r.jsx)(o.$jN, {});
   if (null == Z) return null;
-  let G = (0, r.jsxs)(r.Fragment, {
+  let M = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(o.Heading, {
         variant: "heading-lg/semibold",
         children: T.intl.string(T.t.X6h2g4)
@@ -97,16 +97,16 @@ function w(e) {
         children: (0, r.jsx)(s.zxk, {
           text: T.intl.string(T.t.vM81yc),
           variant: "secondary",
-          onClick: M,
+          onClick: G,
           size: "sm"
         })
       }) : null]
     }),
     B = (0, l.EQ)(L).with("basic_info", () => (0, r.jsx)(y.Z, {
       guildId: t
-    })).with("manage_listings", () => (0, r.jsx)(N.Z, {
+    })).with("manage_listings", () => (0, r.jsx)(E.Z, {
       guildId: t
-    })).with("payment", () => (0, r.jsx)(E.Z, {
+    })).with("payment", () => (0, r.jsx)(N.Z, {
       guildId: t
     })).exhaustive(),
     F = w ? (0, r.jsx)(o.njP.Panel, {
@@ -115,7 +115,7 @@ function w(e) {
     }) : (0, r.jsx)(o.$jN, {});
   return (0, r.jsxs)(d.AL, {
     guildId: t,
-    children: [G, (0, r.jsx)(m.Z, {
+    children: [M, (0, r.jsx)(m.Z, {
       guild: Z
     }), (0, r.jsx)("div", {
       className: P.tabBarContainer,

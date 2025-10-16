@@ -15,12 +15,12 @@ function o(e) {
     let t = i.Z.isFullServerPreview(e.id),
       n = i.Z.isOnboardingEnabled(e.id);
     return t && n
-  }) || (null == e ? true : e.features.has(a.oNc.GUILD_ONBOARDING_HAS_PROMPTS))
+  }) || (null == e ? true : e.features.has(a.GuildFeatures.GUILD_ONBOARDING_HAS_PROMPTS))
 }
 
 function s(e) {
   if (null == e) returnfalse;
   let t = i.Z.isFullServerPreview(e.id),
     n = i.Z.isOnboardingEnabled(e.id);
-  return t && n || e.features.has(a.oNc.GUILD_ONBOARDING_HAS_PROMPTS)
+  return t && n || e.features.has(a.GuildFeatures.GUILD_ONBOARDING_HAS_PROMPTS)
 }

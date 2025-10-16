@@ -30,7 +30,7 @@ function v(e) {
   } = (0, m.N)(), v = (0, l.e7)([u.Z], () => {
     var e;
     return null == (e = u.Z.getSubscriptionListing(n)) ? true : e.image_asset
-  }), [_, C] = p._T(n), [O, y] = p.mR(n), [N, E] = p.PK(n), [I, S] = p.d9(n, 1024), {
+  }), [_, C] = p._T(n), [O, y] = p.mR(n), [E, N] = p.PK(n), [I, S] = p.d9(n, 1024), {
     imageCTA: T,
     imageAriaLabel: P,
     setFilename: w
@@ -82,9 +82,9 @@ function v(e) {
       }), (0, r.jsx)(a.Kx8, {
         label: x.intl.string(x.t["1w2WcX"]),
         placeholder: x.intl.string(x.t.p7Jr4O),
-        value: N,
+        value: E,
         autosize: true,
-        onChange: E,
+        onChange: N,
         "aria-labelledby": k,
         disabled: D
       }), (0, r.jsxs)("div", {

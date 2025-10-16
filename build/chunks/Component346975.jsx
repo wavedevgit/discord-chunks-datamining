@@ -272,11 +272,11 @@ function eO(e) {
       isSearchLoading: m,
       layoutType: r
     }
-  }(t), z = m.length > 0, U = z || f.length > 0, V = (0, S.Z)(t), {
-    tagFilter: G,
+  }(t), z = m.length > 0, U = z || f.length > 0, G = (0, S.Z)(t), {
+    tagFilter: V,
     tagSetting: X
   } = (0, K.H)(t.id);
-  (0, Y.ku)(t, G, X, u);
+  (0, Y.ku)(t, V, X, u);
   let et = (0, Y.jR)(t),
     en = (0, Y.eZ)(t),
     ea = i.useRef(null),
@@ -394,13 +394,13 @@ function eO(e) {
     }), n ? (0, R.ad)(e, {
       source: ef.on.BROWSER
     }) : (eT.current = e.id, (0, L.ok)(e))
-  }, [t.guild_id, t.id, eT]), [eV, eG] = i.useState(a + s - 24), eW = i.useCallback((e, n, i) => 0 === e ? (0, r.jsx)(eM, {
+  }, [t.guild_id, t.id, eT]), [eG, eV] = i.useState(a + s - 24), eW = i.useCallback((e, n, i) => 0 === e ? (0, r.jsx)(eM, {
     channel: t,
     isEmpty: !z,
     isSearchLoading: I,
     numResults: null == x ? true : x.length,
     coords: n,
-    onHeightChange: eG,
+    onHeightChange: eV,
     children: !T && (0, r.jsx)(ee.Z, {
       channel: t,
       hasAnyThread: U,
@@ -601,7 +601,7 @@ function eO(e) {
     canViewArchivedPosts: en,
     observePostVisibilityAnalytics: es,
     focusedThreadId: eT,
-    headerHeight: eV
+    headerHeight: eG
   });
   ! function(e) {
     let {
@@ -692,7 +692,7 @@ function eO(e) {
           children: (0, r.jsx)(p.H, {
             children: ex.intl.string(ex.t.B2panJ)
           })
-        }), V ? (0, r.jsx)("div", {
+        }), G ? (0, r.jsx)("div", {
           className: ep.optInNotice,
           children: (0, r.jsx)(N.Z, {
             channel: t
@@ -862,7 +862,7 @@ function eM(e) {
       null != eh.current && W.getState().setEditorHeight(eh.current.offsetHeight)
     })
   }, [eh, W]);
-  i.useLayoutEffect(e_, [e_, b, eu, L]), (0, G.yp)({
+  i.useLayoutEffect(e_, [e_, b, eu, L]), (0, V.yp)({
     event: eg.CkL.REMEASURE_TARGET,
     handler: e_
   });
@@ -873,7 +873,7 @@ function eM(e) {
     [eS, eN] = i.useState(0),
     {
       width: eO
-    } = (0, g.e7)([V.Z], () => V.Z.windowSize()),
+    } = (0, g.e7)([G.Z], () => G.Z.windowSize()),
     eP = null == (n = eT.current) || null == (t = n.getBoundingClientRect()) ? true : t.width,
     eI = i.useRef(null),
     eE = i.useRef(null);
@@ -934,7 +934,7 @@ function eM(e) {
         null == (t = ez.current) || t.focus()
       }
     }, [eD, eh, eB]),
-    eV = i.useMemo(() => ec ? (0, P.iq)(s.availableTags) : s.availableTags, [s.availableTags, ec]);
+    eG = i.useMemo(() => ec ? (0, P.iq)(s.availableTags) : s.availableTags, [s.availableTags, ec]);
   return (0, r.jsx)("div", ej(eb({
     className: l()(ep.card, ep.headerRow, ep.columnsSpan),
     ref: eh,
@@ -944,7 +944,7 @@ function eM(e) {
       position: B === h.X.GRID ? "absolute" : "static",
       height: "auto"
     }),
-    children: (0, r.jsxs)(G.I3, {
+    children: (0, r.jsxs)(V.I3, {
       children: [null != s.guild_id ? (0, r.jsx)(T.Z, {
         className: l()(ep.newMemberBanner, {
           [ep.gridViewBanner]: B === h.X.GRID
@@ -1030,7 +1030,7 @@ function eM(e) {
         ref: eT,
         children: [(0, r.jsx)(eZ, {
           channel: s
-        }), eV.length > 0 ? (0, r.jsxs)(r.Fragment, {
+        }), eG.length > 0 ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)("div", {
             className: ep.divider
           }), (0, r.jsx)("div", {
@@ -1047,7 +1047,7 @@ function eM(e) {
                     className: ep.tagListInner,
                     ref: t
                   }, n), {
-                    children: eV.map(e => (0, r.jsx)(eo.Z, {
+                    children: eG.map(e => (0, r.jsx)(eo.Z, {
                       tag: e,
                       onClick: () => {
                         var t;

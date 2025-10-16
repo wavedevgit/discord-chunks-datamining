@@ -10,7 +10,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js");
 
 function o(e) {
-  return !e.features.has(a.oNc.CREATOR_MONETIZABLE_DISABLED) && (e.features.has(a.oNc.CREATOR_MONETIZABLE) || e.features.has(a.oNc.CREATOR_MONETIZABLE_PROVISIONAL))
+  return !e.features.has(a.GuildFeatures.CREATOR_MONETIZABLE_DISABLED) && (e.features.has(a.GuildFeatures.CREATOR_MONETIZABLE) || e.features.has(a.GuildFeatures.CREATOR_MONETIZABLE_PROVISIONAL))
 }
 
 function s(e) {

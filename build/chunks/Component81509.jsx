@@ -52,7 +52,7 @@ function x(e) {
     guildIcon: n,
     guildAvatarUrl: i,
     subscriberCount: l
-  } = e, s = (0, u.Jh)({
+  } = e, s = (0, u.dangerouslyConstructGuildRecordFromUntypedObject)({
     name: t,
     icon: n
   });

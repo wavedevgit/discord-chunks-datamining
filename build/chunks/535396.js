@@ -61,59 +61,59 @@ let d = "1340102344645283891",
   ],
   b = new Set([Chunk494497.IN, Chunk494497.If, Chunk494497.A$, Chunk494497.MB, Chunk494497.Vk]),
   y = () => ({
-    [Chunk981631.oNc.VIDEO_BITRATE_ENHANCED]: {
+    [Chunk981631.GuildFeatures.VIDEO_BITRATE_ENHANCED]: {
       perkIcon: Chunk267642.Ro.STREAM,
       description: Chunk388032.intl.string(Chunk388032.t.y4ft4O)
     },
-    [Chunk981631.oNc.AUDIO_BITRATE_128_KBPS]: {
+    [Chunk981631.GuildFeatures.AUDIO_BITRATE_128_KBPS]: {
       perkIcon: Chunk267642.Ro.AUDIO,
       description: Chunk388032.intl.formatToPlainString(Chunk388032.t.zoT1ZG, {
         bitrate: Chunk474936.HO[Chunk981631.Eu4.TIER_1].limits.bitrate / 1e3
       })
     },
-    [Chunk981631.oNc.INVITE_SPLASH]: {
+    [Chunk981631.GuildFeatures.INVITE_SPLASH]: {
       perkIcon: Chunk267642.Ro.CUSTOMIZATION,
       description: Chunk388032.intl.string(Chunk388032.t.Qwlpoq)
     },
-    [Chunk981631.oNc.ANIMATED_ICON]: {
+    [Chunk981631.GuildFeatures.ANIMATED_ICON]: {
       perkIcon: Chunk267642.Ro.ANIMATED,
       description: Chunk388032.intl.string(Chunk388032.t.PbAyub)
     },
-    [Chunk981631.oNc.AUDIO_BITRATE_256_KBPS]: {
+    [Chunk981631.GuildFeatures.AUDIO_BITRATE_256_KBPS]: {
       perkIcon: Chunk267642.Ro.AUDIO,
       description: Chunk388032.intl.formatToPlainString(Chunk388032.t.zoT1ZG, {
         bitrate: Chunk474936.HO[Chunk981631.Eu4.TIER_2].limits.bitrate / 1e3
       })
     },
-    [Chunk981631.oNc.ROLE_ICONS]: {
+    [Chunk981631.GuildFeatures.ROLE_ICONS]: {
       perkIcon: Chunk267642.Ro.CUSTOM_ROLE_ICON,
       description: Chunk388032.intl.string(Chunk388032.t["6PV6QU"])
     },
-    [Chunk981631.oNc.MAX_FILE_SIZE_50_MB]: {
+    [Chunk981631.GuildFeatures.MAX_FILE_SIZE_50_MB]: {
       perkIcon: Chunk267642.Ro.UPLOAD,
       description: Chunk388032.intl.formatToPlainString(Chunk388032.t["aFRl5+"], {
         uploadSizeLimit: Chunk388032.intl.string(Chunk388032.t.M6qV8v)
       })
     },
-    [Chunk981631.oNc.BANNER]: {
+    [Chunk981631.GuildFeatures.BANNER]: {
       perkIcon: Chunk267642.Ro.CUSTOMIZATION,
       description: Chunk388032.intl.string(Chunk388032.t["1a5rjo"])
     },
-    [Chunk981631.oNc.ANIMATED_BANNER]: {
+    [Chunk981631.GuildFeatures.ANIMATED_BANNER]: {
       perkIcon: Chunk267642.Ro.ANIMATED,
       description: Chunk388032.intl.string(Chunk388032.t["1+Vmh4"])
     },
-    [Chunk981631.oNc.AUDIO_BITRATE_384_KBPS]: {
+    [Chunk981631.GuildFeatures.AUDIO_BITRATE_384_KBPS]: {
       perkIcon: Chunk267642.Ro.AUDIO,
       description: Chunk388032.intl.formatToPlainString(Chunk388032.t.zoT1ZG, {
         bitrate: Chunk474936.HO[Chunk981631.Eu4.TIER_3].limits.bitrate / 1e3
       })
     },
-    [Chunk981631.oNc.VANITY_URL]: {
+    [Chunk981631.GuildFeatures.VANITY_URL]: {
       perkIcon: Chunk267642.Ro.VANITY,
       description: Chunk388032.intl.string(Chunk388032.t["5XZKy8"])
     },
-    [Chunk981631.oNc.MAX_FILE_SIZE_100_MB]: {
+    [Chunk981631.GuildFeatures.MAX_FILE_SIZE_100_MB]: {
       perkIcon: Chunk267642.Ro.UPLOAD,
       description: Chunk388032.intl.formatToPlainString(Chunk388032.t["aFRl5+"], {
         uploadSizeLimit: Chunk388032.intl.string(Chunk388032.t.yMOW8P)
@@ -121,25 +121,25 @@ let d = "1340102344645283891",
     }
   }),
   O = {
-    [Chunk981631.oNc.VANITY_URL]: {
+    [Chunk981631.GuildFeatures.VANITY_URL]: {
       boostPrice: 5,
       includedInLevel: Chunk981631.Eu4.TIER_3
     },
-    [Chunk981631.oNc.GUILD_TAGS]: {
+    [Chunk981631.GuildFeatures.GUILD_TAGS]: {
       boostPrice: 3
     },
-    [Chunk981631.oNc.ENHANCED_ROLE_COLORS]: {
+    [Chunk981631.GuildFeatures.ENHANCED_ROLE_COLORS]: {
       boostPrice: 3
     },
-    [Chunk981631.oNc.GUILD_TAGS_BADGE_PACK_PETS]: {
+    [Chunk981631.GuildFeatures.GUILD_TAGS_BADGE_PACK_PETS]: {
       boostPrice: 3
     },
-    [Chunk981631.oNc.GUILD_TAGS_BADGE_PACK_FLEX]: {
+    [Chunk981631.GuildFeatures.GUILD_TAGS_BADGE_PACK_FLEX]: {
       boostPrice: 5
     }
   },
   v = {
-    [Chunk981631.oNc.GAME_SERVERS]: {
+    [Chunk981631.GuildFeatures.GAME_SERVERS]: {
       boostPrice: 3,
       isEnabled: e => (0, o.v$)(e, "GuildPowerupsConstants")
     }

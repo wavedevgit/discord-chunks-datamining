@@ -124,7 +124,7 @@ class D extends(r = Chunk442837.ZP.Store) {
     var n;
     if (null == e) returnfalse;
     let r = _.Z.getGuild(e);
-    return null != r && !!r.features.has(E.oNc.COMMUNITY) && (null != e && null == O[e] && P(e), (null == (n = O[e]) ? true : n.has(t)) && null == p.ZP.getTrackedAckMessageId(t))
+    return null != r && !!r.features.has(E.GuildFeatures.COMMUNITY) && (null != e && null == O[e] && P(e), (null == (n = O[e]) ? true : n.has(t)) && null == p.ZP.getTrackedAckMessageId(t))
   }
 }
 b(D, "displayName", "NewChannelsStore");

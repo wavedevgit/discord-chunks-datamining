@@ -190,7 +190,7 @@ let em = (0, Chunk313201.hQ)(),
     }
   })(Chunk852860.Z);
 
-function eN(e) {
+function eO(e) {
   let {
     onEmojiPicked: t,
     channel: n,
@@ -243,7 +243,7 @@ function eN(e) {
     }
   })
 }
-class eO extends Chunk647438.PureComponent {
+class eN extends Chunk647438.PureComponent {
   componentDidMount() {
     null == this.props.regions && null != this.props.guild && Chunk771340.Z.fetchRegions(this.props.guild.id)
   }
@@ -252,7 +252,7 @@ class eO extends Chunk647438.PureComponent {
     let r = null != (i = null == (t = this.props.channel) ? true : t.topic) ? i : "";
     (null != (l = null == (n = e.channel) ? true : n.topic) ? l : "") !== r && r !== this.state.textTopicValue && this.setState({
       textTopicValue: r,
-      richTopicValue: (0, N.JM)(r)
+      richTopicValue: (0, O.JM)(r)
     })
   }
   getError(e) {
@@ -280,7 +280,7 @@ class eO extends Chunk647438.PureComponent {
         canSendMessages: j,
         isThreadModerator: v,
         canManageThread: C,
-        guild: N,
+        guild: O,
         isForumPost: E,
         isOwner: w,
         showAdvancedSlowModeSetting: T
@@ -291,7 +291,7 @@ class eO extends Chunk647438.PureComponent {
       D = (null == (l = J.default.getCurrentUser()) ? true : l.isStaff()) === true,
       k = V.TK.has(e.type) ? (0, i.jsx)(p.gNt, {
         label: R ? ec.intl.string(ec.t.yR6Hwc) : ec.intl.string(ec.t.X8jMDg),
-        children: (0, i.jsx)(O.ZP, {
+        children: (0, i.jsx)(N.ZP, {
           className: s()(ed.topicContainer, {
             [ed.disabled]: !x
           }),
@@ -335,7 +335,7 @@ class eO extends Chunk647438.PureComponent {
         autosize: true,
         showCharacterCount: true
       }) : null,
-      G = e.isForumLikeChannel() ? (0, i.jsxs)(i.Fragment, {
+      U = e.isForumLikeChannel() ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(p.izJ, {}), (0, i.jsx)(p.gNt, {
           label: ec.intl.string(ec.t["P/y+sr"]),
           description: ec.intl.string(ec.t["/oQQ39"]),
@@ -498,7 +498,7 @@ class eO extends Chunk647438.PureComponent {
           disabled: !C
         })
       }) : null,
-      eu = null != N && (0, U.Y2)(N),
+      eu = null != O && (0, G.Y2)(O),
       eh = V.ov.has(e.type) ? (0, i.jsxs)("div", {
         children: [(0, i.jsx)(p.rsf, {
           label: ec.intl.string(ec.t.Es25YW),
@@ -511,7 +511,7 @@ class eO extends Chunk647438.PureComponent {
           children: ec.intl.string(ec.t.l6uSVV)
         }) : null]
       }) : null,
-      ej = V.Y0.has(e.type) && null != N && N.features.has(el.oNc.NEWS) && e.id !== (null == N ? true : N.rulesChannelId) && e.id !== (null == N ? true : N.publicUpdatesChannelId) ? (0, i.jsxs)(p.Kqy, {
+      ej = V.Y0.has(e.type) && null != O && O.features.has(el.GuildFeatures.NEWS) && e.id !== (null == O ? true : O.rulesChannelId) && e.id !== (null == O ? true : O.publicUpdatesChannelId) ? (0, i.jsxs)(p.Kqy, {
         gap: 4,
         children: [(0, i.jsx)(p.rsf, {
           label: ec.intl.string(ec.t.Au2b7u),
@@ -542,8 +542,8 @@ class eO extends Chunk647438.PureComponent {
         }),
         badge: "beta",
         onChange: this.handleChannelSummariesToggled,
-        checked: !e.hasFlag(er.zZ.SUMMARIES_DISABLED) && (null == N ? true : N.features.has(el.oNc.SUMMARIES_ENABLED_BY_USER)),
-        disabled: !x || !(null == N ? true : N.features.has(el.oNc.SUMMARIES_ENABLED_BY_USER))
+        checked: !e.hasFlag(er.zZ.SUMMARIES_DISABLED) && (null == O ? true : O.features.has(el.GuildFeatures.SUMMARIES_ENABLED_BY_USER)),
+        disabled: !x || !(null == O ? true : O.features.has(el.GuildFeatures.SUMMARIES_ENABLED_BY_USER))
       }) : null,
       eS = e.isMediaChannel() ? (0, i.jsx)(p.rsf, {
         label: ec.intl.string(ec.t.u8LZOj),
@@ -553,7 +553,7 @@ class eO extends Chunk647438.PureComponent {
         disabled: !x
       }) : null;
     e.type === el.d4z.GUILD_CATEGORY ? (f = ec.intl.string(ec.t.OCAkGB), m = "category-name") : e.isForumPost() ? (f = ec.intl.string(ec.t.uyVrTE), m = "post-title") : _ ? (f = ec.intl.string(ec.t.j3XWjI), m = "thread-name") : (f = ec.intl.string(ec.t.PVbHDg), m = "channel-name");
-    let eO = w ? j : x;
+    let eN = w ? j : x;
     return (0, i.jsxs)(p.Kqy, {
       gap: 24,
       children: [(0, i.jsx)(p.oil, {
@@ -566,17 +566,17 @@ class eO extends Chunk647438.PureComponent {
         error: this.getError("name"),
         name: m,
         autoFocus: true,
-        disabled: !eO,
+        disabled: !eN,
         maxLength: el.HN8,
-        trailing: eO ? {
+        trailing: eN ? {
           type: "emoji",
-          button: (0, i.jsx)(eN, {
+          button: (0, i.jsx)(eO, {
             onEmojiPicked: this.insertEmojiAtPosition,
             channel: e,
             guildId: null == e ? true : e.guild_id
           })
         } : true
-      }), k, H, G, W, K, ee, F, z, q, es, eh, ej, ey, ev, eS]
+      }), k, H, U, W, K, ee, F, z, q, es, eh, ej, ey, ev, eS]
     })
   }
   renderBitrate(e) {
@@ -917,7 +917,7 @@ class eO extends Chunk647438.PureComponent {
     let r = null != (n = null == (t = this.props.channel) ? true : t.topic) ? n : "";
     this.state = {
       textTopicValue: r,
-      richTopicValue: (0, N.JM)(r),
+      richTopicValue: (0, O.JM)(r),
       topicFocused: false,
       updateNameInputCursorPosition: false
     }
@@ -945,7 +945,7 @@ function eZ() {
   }).enabled, S = Chunk647438.useCallback(e => {
     null != b && f.getState().setLayoutType(b, e)
   }, [Chunk410575, Chunk771340]);
-  return (0, Chunk951288.jsx)(eO, {
+  return (0, Chunk951288.jsx)(eN, {
     errors: module,
     channel: exports,
     channelName: Chunk481060,

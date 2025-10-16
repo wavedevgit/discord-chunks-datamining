@@ -13,8 +13,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js");
 
 function d(e) {
-  let t = (null == e ? true : e.features.has(c.oNc.CREATOR_MONETIZABLE_PENDING_NEW_OWNER_ONBOARDING)) === true,
-    d = (null == e ? true : e.features.has(c.oNc.ROLE_SUBSCRIPTIONS_ENABLED)) === true,
+  let t = (null == e ? true : e.features.has(c.GuildFeatures.CREATOR_MONETIZABLE_PENDING_NEW_OWNER_ONBOARDING)) === true,
+    d = (null == e ? true : e.features.has(c.GuildFeatures.ROLE_SUBSCRIPTIONS_ENABLED)) === true,
     u = (0, l.e7)([o.default], () => o.default.getCurrentUser()),
     g = null != e && (0, s.eM)(e, u);
   i.useEffect(() => {

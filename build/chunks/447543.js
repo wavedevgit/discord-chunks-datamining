@@ -155,7 +155,7 @@ function eh(e) {
     channel: r,
     options: i,
     analyticsLocations: a = []
-  } = e, o = B.Z.getGuild(t), s = null == o ? true : o.features.has($.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL), {
+  } = e, o = B.Z.getGuild(t), s = null == o ? true : o.features.has($.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL), {
     targetUserId: l,
     targetType: c,
     targetApplicationId: u,
@@ -505,7 +505,7 @@ let ev = {
       channel: a,
       guild: s
     } = e;
-    if (null != s && (null == (r = s.features) ? true : r.includes($.oNc.HUB))) return void N.Z.onOpenHubInvite(e);
+    if (null != s && (null == (r = s.features) ? true : r.includes($.GuildFeatures.HUB))) return void N.Z.onOpenHubInvite(e);
     let l = (0, K.yE)(null != (i = e.flags) ? i : 0, o.$.IS_APPLICATION_BYPASS);
     if (null != s && !l && (0, C.u)(s)) return void(0, C._)(s.id);
     if (null == a) return;

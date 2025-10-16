@@ -20,7 +20,7 @@ function c(e, t) {
   var n, l;
   let c = (0, r.e7)([i.Z], () => i.Z.getGuild(e)),
     u = (0, r.e7)([a.Z], () => a.Z.getStateForGuild(e)),
-    d = null != (l = null == c || null == (n = c.features) ? true : n.has(s.oNc.PREMIUM_TIER_3_OVERRIDE)) && l;
+    d = null != (l = null == c || null == (n = c.features) ? true : n.has(s.GuildFeatures.PREMIUM_TIER_3_OVERRIDE)) && l;
 
   function f(e) {
     let {

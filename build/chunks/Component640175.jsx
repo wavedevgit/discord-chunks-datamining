@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk538534 = require("./538534.jsx"),
+  Chunk481060 = require("./481060.js"),
   Chunk650774 = require("./650774.js"),
   Chunk434404 = require("./434404.js"),
   Chunk981631 = require("./981631.js"),
@@ -33,7 +33,7 @@ function u(e) {
       defaultMessageNotifications: e
     })
   }, []);
-  return (0, r.jsx)(a.E, {
+  return (0, r.jsx)(a.FXm, {
     label: t,
     description: n,
     helperText: u,

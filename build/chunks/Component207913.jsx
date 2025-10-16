@@ -61,7 +61,7 @@ function B(e) {
   return e
 }
 
-function V(e, t) {
+function F(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -74,7 +74,7 @@ function V(e, t) {
   }), e
 }
 
-function F(e) {
+function V(e) {
   let {
     message: t,
     channel: n,
@@ -112,7 +112,7 @@ function F(e) {
   });
   return (0, i.useEffect)(() => {
     null != b && N.Z.requestMember(b.id, t.author.id)
-  }, [b, t.author.id]), (0, r.jsx)(u.tEY, V(B({}, l), {
+  }, [b, t.author.id]), (0, r.jsx)(u.tEY, F(B({}, l), {
     children: (0, r.jsxs)("div", {
       onMouseLeave: C.onMouseLeave,
       onMouseEnter: C.onMouseEnter,
@@ -412,14 +412,14 @@ let K = (0, Chunk647438.memo)(function(e) {
         let {
           default: e
         } = await n.e("74922").then(n.bind(n, 550265));
-        return t => (0, r.jsx)(e, V(B({}, t), {
+        return t => (0, r.jsx)(e, F(B({}, t), {
           channel: m
         }))
       }, {
         disableClickTrap: true
       })
     },
-    children: (0, r.jsx)(F, {
+    children: (0, r.jsx)(V, {
       message: f,
       channel: m,
       isSelected: f.id === g.messageId,

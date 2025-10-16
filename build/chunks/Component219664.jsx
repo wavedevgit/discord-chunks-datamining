@@ -86,7 +86,7 @@ let U = Chunk647438.memo(function(e) {
     gridSectionBoundaries: d,
     observePostVisibilityAnalytics: u
   } = e, m = (0, o.e7)([y.Z], () => y.Z.getChannel(n));
-  return null == m ? null : (0, r.jsx)(V, {
+  return null == m ? null : (0, r.jsx)(G, {
     id: t,
     channel: m,
     goToThread: i,
@@ -99,7 +99,7 @@ let U = Chunk647438.memo(function(e) {
   })
 });
 
-function V(e) {
+function G(e) {
   let {
     id: t,
     channel: n,
@@ -141,7 +141,7 @@ function V(e) {
     {
       onFocus: U
     } = B,
-    V = function(e, t) {
+    G = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -176,7 +176,7 @@ function V(e) {
         count: y
       }),
       className: H.focusTarget
-    }, V)), (0, r.jsxs)("div", {
+    }, G)), (0, r.jsxs)("div", {
       className: H.header,
       children: [(0, r.jsxs)("div", {
         className: H.authorRow,
@@ -210,7 +210,7 @@ function V(e) {
     }), (0, r.jsx)("div", {
       className: H.postBody,
       children: (0, r.jsx)(d.Rny, {
-        children: (0, r.jsx)(G, {
+        children: (0, r.jsx)(V, {
           channel: n,
           firstMessage: v,
           isFirstMessageLoaded: _,
@@ -231,7 +231,7 @@ function V(e) {
   })
 }
 
-function G(e) {
+function V(e) {
   let {
     channel: t,
     firstMessage: n,

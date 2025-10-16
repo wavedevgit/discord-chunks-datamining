@@ -115,8 +115,8 @@ function es(e) {
   } = e, [a, o] = i.useState(""), [c, d] = i.useState({}), h = i.useRef(null), u = (0, p.e7)([R.Z], () => R.Z.getGuild(n)), g = s === W.d4z.GUILD_STAGE_VOICE, {
     roles: C,
     members: b,
-    getRichTag: N
-  } = (0, v.Q)(u, null, g ? L.yP : (0, U.CG)(s), a, g), x = I.Z.useSections({
+    getRichTag: x
+  } = (0, v.Q)(u, null, g ? L.yP : (0, U.CG)(s), a, g), N = I.Z.useSections({
     roles: C,
     members: b
   });
@@ -130,7 +130,7 @@ function es(e) {
     setPendingAdditions: d,
     roles: C,
     members: b,
-    getRichTag: N,
+    getRichTag: x,
     children: (0, r.jsxs)(m.hzk, {
       className: ee.addMembersContainer,
       children: [null != l && "" !== l ? (0, r.jsx)(m.Text, {
@@ -151,7 +151,7 @@ function es(e) {
         renderSection: I.Z.renderSection,
         rowHeight: I.Z.ROW_HEIGHT,
         renderRow: I.Z.renderRow,
-        sections: x,
+        sections: N,
         innerAriaOrientation: "vertical",
         innerRole: "listbox"
       })]
@@ -877,14 +877,14 @@ class ea extends Chunk647438.PureComponent {
         channelType: g,
         skuId: m,
         branchId: b,
-        isPrivate: N
-      } = this.state, x = this.getGuildId();
-      if (null != x) {
+        isPrivate: x
+      } = this.state, N = this.getGuildId();
+      if (null != N) {
         if (null != i) t = d().values(i.permissionOverwrites), n = i.bitrate, r = i.userLimit;
-        else if (g === W.d4z.GUILD_ANNOUNCEMENT) t = (0, k.rt)(x);
+        else if (g === W.d4z.GUILD_ANNOUNCEMENT) t = (0, k.rt)(N);
         else {
-          if (N) {
-            t = (0, k.oQ)(x, g, [], true);
+          if (x) {
+            t = (0, k.oQ)(N, g, [], true);
             let e = (0, j.Tj)(p, g);
             e.length > 0 && (t = t.concat(e));
             let n = null != h && l.id === h.id;
@@ -903,7 +903,7 @@ class ea extends Chunk647438.PureComponent {
         });
         try {
           let e = await C.Z.createChannel({
-            guildId: x,
+            guildId: N,
             type: g,
             name: u,
             permissionOverwrites: t,
@@ -970,8 +970,8 @@ let eo = Chunk647438.forwardRef(function(e, t) {
       h = Z.Z.getChannel(s);
     return {
       guild: l,
-      canCreateStoreChannel: null != l && l.features.has(W.oNc.COMMERCE),
-      canCreateAnnouncementChannel: null != l && l.features.has(W.oNc.NEWS),
+      canCreateStoreChannel: null != l && l.features.has(W.GuildFeatures.COMMERCE),
+      canCreateAnnouncementChannel: null != l && l.features.has(W.GuildFeatures.NEWS),
       user: a,
       owner: c,
       memberRoles: null != (t = null == (e = M.ZP.getMember(i, a.id)) ? true : e.roles) ? t : [],

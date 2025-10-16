@@ -30,7 +30,7 @@ function b(e) {
   } = (0, g.N)(), v = (0, s.e7)([u.Z], () => u.Z.getSubscriptionListing(b)), _ = null == v ? true : v.id, C = (0, m.Z)(x), O = i.useMemo(() => {
     var e;
     return null != C && null != v && (null != (e = C[v.role_id]) ? e : 0)
-  }, [C, v]), y = 0 === O, N = null == _, E = null != (t = null == v ? true : v.archived) && t, {
+  }, [C, v]), y = 0 === O, E = null == _, N = null != (t = null == v ? true : v.archived) && t, {
     error: I,
     deleteSubscriptionListing: S,
     submitting: T
@@ -51,7 +51,7 @@ function b(e) {
       }), null !== P && (0, r.jsx)(o.Wn, {
         messageType: o.QYI.ERROR,
         children: f.intl.string(f.t.up8gUl)
-      }), E ? (0, r.jsx)(o.gNt, {
+      }), N ? (0, r.jsx)(o.gNt, {
         disabled: !R,
         label: f.intl.string(f.t["2D14T0"]),
         description: f.intl.string(f.t.Y4KjUF),
@@ -67,7 +67,7 @@ function b(e) {
             variant: "critical-primary",
             onClick: () => {
               let e = async () => {
-                (N || (a()(null != j, "group listing doesnt exist"), a()(null != _, "subscription listing doesnt exist"), await S(x, j, _))) && (null == l || l())
+                (E || (a()(null != j, "group listing doesnt exist"), a()(null != _, "subscription listing doesnt exist"), await S(x, j, _))) && (null == l || l())
               };
               (0, o.ZDy)(async () => {
                 let {

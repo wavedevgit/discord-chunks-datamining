@@ -62,7 +62,7 @@ function E(e, t, n) {
         i = (null == r ? true : r.identityGuildId) === m && (null == r ? true : r.identityEnabled) === true;
       return "INVITE" !== t && null != e.tag && !i && null != b && (0, o.up)(b) ? 1 : 0
     }
-    return S.includes(m) ? 2 : (null == g ? true : g.includes(h.oNc.MEMBER_VERIFICATION_GATE_ENABLED)) && (null == g ? true : g.includes(h.oNc.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && (null != v || e.visibility === p.k.PUBLIC_WITH_RECRUITMENT) && !I ? 3 : null != v ? 5 : (null == g ? true : g.includes(h.oNc.DISCOVERABLE)) ? 4 : null
+    return S.includes(m) ? 2 : (null == g ? true : g.includes(h.GuildFeatures.MEMBER_VERIFICATION_GATE_ENABLED)) && (null == g ? true : g.includes(h.GuildFeatures.MEMBER_VERIFICATION_MANUAL_APPROVAL)) && (null != v || e.visibility === p.k.PUBLIC_WITH_RECRUITMENT) && !I ? 3 : null != v ? 5 : (null == g ? true : g.includes(h.GuildFeatures.DISCOVERABLE)) ? 4 : null
   }, [O, S, m, g, v, e.visibility, e.tag, I, t, b, T, y]);
   return {
     guildId: m,

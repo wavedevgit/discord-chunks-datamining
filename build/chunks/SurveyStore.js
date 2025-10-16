@@ -107,7 +107,7 @@ function M(e) {
         continue
       }
     }
-    if (t.includes("is_community") && !s.features.has(m.oNc.COMMUNITY) || t.includes("is_hub") && !s.features.has(m.oNc.HUB)) continue;
+    if (t.includes("is_community") && !s.features.has(m.GuildFeatures.COMMUNITY) || t.includes("is_hub") && !s.features.has(m.GuildFeatures.HUB)) continue;
     if (t.includes("guild_permissions")) {
       if (0 === r.length) continue;
       let e = false;

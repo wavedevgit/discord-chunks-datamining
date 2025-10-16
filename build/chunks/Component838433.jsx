@@ -14,7 +14,7 @@ var Chunk481060 = require("./481060.js"),
 function a(e, t) {
   var a;
   let d = i.Z.getGuild(e);
-  o.Z.getGuildProductFetchState(t) === o.M.FETCHED && (null == (a = o.Z.getGuildProduct(t)) ? true : a.published) !== true && null != d ? (0, u.ZDy)(async () => {
+  l.Z.getGuildProductFetchState(t) === l.M.FETCHED && (null == (a = l.Z.getGuildProduct(t)) ? true : a.published) !== true && null != d ? (0, u.ZDy)(async () => {
     let {
       default: e
     } = await r.e("29396").then(r.bind(r, 513239));
@@ -36,5 +36,5 @@ function a(e, t) {
       }
       return e
     }({}, t))
-  }) : (null == d ? true : d.features.has(l.oNc.PRODUCTS_AVAILABLE_FOR_PURCHASE)) ? (0, c.Z)(l.Z5c.GUILD_PRODUCT(e, t)) : (0, c.Z)(l.Z5c.CHANNEL(e))
+  }) : (null == d ? true : d.features.has(o.GuildFeatures.PRODUCTS_AVAILABLE_FOR_PURCHASE)) ? (0, c.Z)(o.Z5c.GUILD_PRODUCT(e, t)) : (0, c.Z)(o.Z5c.CHANNEL(e))
 }

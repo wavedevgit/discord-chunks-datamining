@@ -1,7 +1,7 @@
 /** Chunk was on 57695 **/
 /** chunk id: 831218, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => F
+  Z: () => V
 }), require("./388685.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -199,7 +199,7 @@ let B = Chunk647438.memo(function() {
     })]
   })
 });
-class V extends(r = Chunk647438.Component) {
+class F extends(r = Chunk647438.Component) {
   static getDerivedStateFromProps(e) {
     let {
       children: t,
@@ -425,10 +425,10 @@ class V extends(r = Chunk647438.Component) {
     })
   }
 }
-k(V, "defaultProps", {
+k(F, "defaultProps", {
   padding: 8
 });
-let F = e => {
+let V = e => {
   let {
     density: t
   } = (0, h.TCT)(), {
@@ -481,8 +481,8 @@ let F = e => {
         requestAnimationFrame(() => setTimeout(e, 100))
       }
     })
-  }), [L]), F = (0, x.Dt)(), H = (0, d.ZP)({
-    id: "private-channels-".concat(F),
+  }), [L]), V = (0, x.Dt)(), H = (0, d.ZP)({
+    id: "private-channels-".concat(V),
     isEnabled: T,
     scrollToStart: k,
     scrollToEnd: B,
@@ -493,7 +493,7 @@ let F = e => {
     value: j,
     children: (0, i.jsx)(u.bG, {
       navigator: H,
-      children: (0, i.jsx)(V, U(G({}, e), {
+      children: (0, i.jsx)(F, U(G({}, e), {
         density: t,
         channels: y,
         privateChannelIds: v,

@@ -78,7 +78,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
       canManageGuild: Z
     } = (0, Chunk442837.cj)([Chunk496675.Z], () => ({
       canManageGuild: Chunk496675.Z.can(Chunk981631.Plq.MANAGE_GUILD, Chunk852860)
-    })), R = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.isGuildMetadataLoaded()), D = (0, Chunk442837.e7)([Chunk999382.Z], () => null != Chunk852860 ? Chunk999382.Z.getMetadata() : null), A = (0, Chunk442837.e7)([Chunk999382.Z], () => null != Chunk852860 && (null == D ? true : D.isPublished) ? Chunk999382.Z.getSlug() : null), [L, k] = Chunk647438.useState([true]), [M, G] = Chunk647438.useState(true), [U, B] = Chunk647438.useState([false]), [F, H] = Chunk647438.useState([""]);
+    })), R = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.isGuildMetadataLoaded()), D = (0, Chunk442837.e7)([Chunk999382.Z], () => null != Chunk852860 ? Chunk999382.Z.getMetadata() : null), A = (0, Chunk442837.e7)([Chunk999382.Z], () => null != Chunk852860 && (null == D ? true : D.isPublished) ? Chunk999382.Z.getSlug() : null), [L, k] = Chunk647438.useState([true]), [G, M] = Chunk647438.useState(true), [U, B] = Chunk647438.useState([false]), [F, H] = Chunk647438.useState([""]);
     Chunk647438.useEffect(() => {
       if (null !== D) {
         let e = [],
@@ -89,9 +89,9 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
               try {
                 var t, n, r, i;
                 let l = new URL(e).hostname.split(".");
-                if (3 === l.length && "bandcamp" === l[1].toLowerCase()) return N.z.bandcamp.presentation;
+                if (3 === l.length && "bandcamp" === l[1].toLowerCase()) return E.z.bandcamp.presentation;
                 let a = null != (n = null == (t = l.shift()) ? true : t.toLowerCase()) ? n : "";
-                if ("www" === a && (a = null != (i = null == (r = l.shift()) ? true : r.toLowerCase()) ? i : ""), a in N.z) return N.z[a].presentation;
+                if ("www" === a && (a = null != (i = null == (r = l.shift()) ? true : r.toLowerCase()) ? i : ""), a in E.z) return E.z[a].presentation;
                 return null
               } catch (e) {
                 return null
@@ -99,7 +99,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
             })(n);
             null !== i ? (t[r] = i, e[r] = true) : e[r] = false
           } else e[r] = true
-        }), H(exports), k(module), G(module.every(e => true === e))
+        }), H(exports), k(module), M(module.every(e => true === e))
       }
     }, [D]);
     let W = (0, Chunk442837.e7)([Chunk999382.Z], () => null != Chunk852860 ? Chunk999382.Z.getErrors() : null);
@@ -324,7 +324,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                       errorMessage: (null == W ? true : W.social_links) != null ? W.social_links : true,
                       children: [D.socialLinks.map((e, t) => {
                         let n = F[t],
-                          i = Object.values(N.z).find(e => e.presentation === n),
+                          i = Object.values(E.z).find(e => e.presentation === n),
                           l = null != i ? "".concat(i.baseUrl) : true;
                         return (0, r.jsxs)("div", {
                           className: S.socialLinksContainer,
@@ -335,7 +335,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                           children: [(0, r.jsx)(o.q4e, {
                             className: D.isPublished ? S.socialLinksDropdownMax : S.socialLinksDropdownMin,
                             options: (e => {
-                              let t = Object.entries(N.z).filter(e => !F.includes(e[1].presentation)).map(e => ({
+                              let t = Object.entries(E.z).filter(e => !F.includes(e[1].presentation)).map(e => ({
                                 label: e[1].presentation,
                                 value: e[0]
                               }));
@@ -350,7 +350,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                               let n = [...D.socialLinks],
                                 r = [...F],
                                 i = [...L];
-                              r[t] = e, n[t] = N.z[e].baseUrl, i[t] = true, k(i), H(r), G(i.every(e => true === e)), (0, m.t$)(d.id, n)
+                              r[t] = e, n[t] = E.z[e].baseUrl, i[t] = true, k(i), H(r), M(i.every(e => true === e)), (0, m.t$)(d.id, n)
                             })(e, t),
                             isDisabled: !Z
                           }), (0, r.jsx)(o.oil, {
@@ -423,7 +423,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                     children: Y,
                     buttonLabel: Chunk388032.intl.string(Chunk388032.t.tVK6S0),
                     buttonCallback: () => z(true),
-                    disabled: !Z || !M
+                    disabled: !Z || !G
                   })
                 })]
               })

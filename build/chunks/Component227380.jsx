@@ -56,7 +56,7 @@ function y(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let N = e => {
+let E = e => {
   let {
     name: t,
     failingName: n,
@@ -101,7 +101,7 @@ let N = e => {
   })
 };
 
-function E(e, t) {
+function N(e, t) {
   return o()(null == e ? true : e.map(e => {
     let [t, n] = e;
     return null == t ? true : t.id
@@ -119,7 +119,7 @@ let I = e => {
     failedItemsOnly: c = false
   } = e, [g, I] = (0, u.Wu)([j.ZP], () => [j.ZP.getDiscoveryChecklist(l), j.ZP.isLoading()], [l]), {
     nsfwProperties: S
-  } = null != g ? g : {}, T = null == t ? true : t.features.has(v.oNc.PARTNERED), P = null == S ? true : S.channels_banned_keywords, w = (0, u.e7)([f.ZP], () => {
+  } = null != g ? g : {}, T = null == t ? true : t.features.has(v.GuildFeatures.PARTNERED), P = null == S ? true : S.channels_banned_keywords, w = (0, u.e7)([f.ZP], () => {
     var e, n, r;
     if (null == P) return [];
     let i = null != (n = (null != (e = f.ZP.getChannels(t.id)) ? e : {})[f.sH]) ? n : [],
@@ -130,7 +130,7 @@ let I = e => {
       let [t, n] = e;
       return [l[t], n]
     })
-  }, [t.id, P], E);
+  }, [t.id, P], N);
   if (I || null == g) return (0, r.jsxs)("div", {
     className: a()(C.container, C.loaderContainer, s),
     children: [(0, r.jsx)(p.Heading, {
@@ -317,7 +317,7 @@ let I = e => {
         }), o]
       })
     })(), R.filter(e => !c || null == e.checked || !e.checked).map((e, t) => (0, r.jsxs)(i.Fragment, {
-      children: [(0, r.jsx)(N, O({}, e)), t < R.length - 1 ? (0, r.jsx)("hr", {
+      children: [(0, r.jsx)(E, O({}, e)), t < R.length - 1 ? (0, r.jsx)("hr", {
         className: C.separator
       }) : null]
     }, "".concat(e.name)))]

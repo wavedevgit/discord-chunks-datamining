@@ -31,7 +31,7 @@ let E = Chunk647438.memo(e => {
     customSubtext: i
   } = e, a = (0, s.e7)([u.Z], () => u.Z.getGuild(t));
   if (true === a) return null;
-  let m = a.features.has(f.oNc.VERIFIED) || a.features.has(f.oNc.PARTNERED),
+  let m = a.features.has(f.GuildFeatures.VERIFIED) || a.features.has(f.GuildFeatures.PARTNERED),
     {
       name: g
     } = a;

@@ -23,7 +23,7 @@ function b(e) {
   let {
     guild: t,
     canManageGuild: n
-  } = e, b = t.features.has(g.oNc.INVITE_SPLASH), x = n && b, {
+  } = e, b = t.features.has(g.GuildFeatures.INVITE_SPLASH), x = n && b, {
     analyticsLocations: j
   } = (0, a.ZP)(), v = i.useCallback(e => {
     d.Z.updateGuild({

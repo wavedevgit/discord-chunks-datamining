@@ -11,7 +11,7 @@ var Chunk442837 = require("./442837.js"),
 function r(t) {
   var i;
   let [E] = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [l.Z];
-  return !!(null == (i = E.getGuild(t)) ? true : i.features.has(S.oNc.COMMUNITY))
+  return !!(null == (i = E.getGuild(t)) ? true : i.features.has(S.GuildFeatures.COMMUNITY))
 }
 
 function e(t) {

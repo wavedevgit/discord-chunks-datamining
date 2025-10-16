@@ -106,7 +106,7 @@ let q = d().throttle(Chunk80932.OQ, 1e3),
         duration: 200,
         clamp: true
       }
-    }), d ? "respect-motion-settings" : "animate-never"), O = M.ZP.useUserTag(s.user);
+    }), d ? "respect-motion-settings" : "animate-never"), O = G.ZP.useUserTag(s.user);
     return (0, r.jsxs)("div", {
       className: a()(z.emojiRow, K.card),
       role: "row",
@@ -402,7 +402,7 @@ let q = d().throttle(Chunk80932.OQ, 1e3),
       {
         maxEmojiSlots: L,
         availableEmojiSlots: k,
-        staticEmoji: M,
+        staticEmoji: G,
         totalStaticEmoji: W,
         animatedEmoji: K,
         totalAnimatedEmoji: X

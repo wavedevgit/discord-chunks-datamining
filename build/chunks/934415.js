@@ -106,7 +106,7 @@ function P(e, t, n) {
 }
 
 function w(e, t) {
-  return t.isGuildStageVoice() ? g.epw : null == e ? g.eWB : Math.max(e.features.has(g.oNc.VIP_REGIONS) ? E.HO[g.Eu4.TIER_3].limits.bitrate : g.eWB, E.HO[e.premiumTier].limits.bitrate)
+  return t.isGuildStageVoice() ? g.epw : null == e ? g.eWB : Math.max(e.features.has(g.GuildFeatures.VIP_REGIONS) ? E.HO[g.Eu4.TIER_3].limits.bitrate : g.eWB, E.HO[e.premiumTier].limits.bitrate)
 }
 
 function D(e) {

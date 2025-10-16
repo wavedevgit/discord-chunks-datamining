@@ -979,6 +979,106 @@ let j = {
       onClose: () => (console.log("GuildRaidLockdownFeedbackModal: Modal closed"), t.onClose())
     }))
   },
+  GuildVerificationLevelModal: async () => {
+    let {
+      default: e
+    } = await require.e("72458").then(require.bind(require, 694278)), {
+      dangerouslyConstructGuildRecordFromUntypedObject: t
+    } = await Promise.resolve().then(require.bind(require, 411198)), r = exports({
+      id: "123456789",
+      name: "Test Server",
+      description: "A test server for development",
+      ownerId: "987654321",
+      icon: null,
+      splash: null,
+      banner: null,
+      homeHeader: null,
+      features: [],
+      preferredLocale: "en-US",
+      afkChannelId: null,
+      afkTimeout: 300,
+      systemChannelId: null,
+      verificationLevel: 2,
+      joinedAt: new Date,
+      defaultMessageNotifications: 0,
+      mfaLevel: 0,
+      application_id: null,
+      explicitContentFilter: 0,
+      vanityURLCode: null,
+      premiumTier: 0,
+      premiumSubscriberCount: 0,
+      premiumProgressBarEnabled: false,
+      systemChannelFlags: 0,
+      discoverySplash: null,
+      rulesChannelId: null,
+      safetyAlertsChannelId: null,
+      publicUpdatesChannelId: null,
+      maxStageVideoChannelUsers: 10,
+      maxVideoChannelUsers: 25,
+      maxMembers: 5e5,
+      nsfwLevel: 0,
+      ownerConfiguredContentLevel: null,
+      hubType: null,
+      latestOnboardingQuestionId: null,
+      profile: null,
+      premiumFeatures: null,
+      moderatorReporting: null
+    });
+    return t => (0, a.jsx)(e, v(b({}, t), {
+      guild: r
+    }))
+  },
+  GuildVerificationLevelModalCommunity: async () => {
+    let {
+      default: e
+    } = await require.e("72458").then(require.bind(require, 694278)), {
+      dangerouslyConstructGuildRecordFromUntypedObject: t
+    } = await Promise.resolve().then(require.bind(require, 411198)), {
+      GuildFeatures: r
+    } = await Promise.resolve().then(require.bind(require, 981631)), i = exports({
+      id: "123456789",
+      name: "Test Community Server",
+      description: "A test community server for development",
+      ownerId: "987654321",
+      icon: null,
+      splash: null,
+      banner: null,
+      homeHeader: null,
+      features: [Chunk647438.COMMUNITY],
+      preferredLocale: "en-US",
+      afkChannelId: null,
+      afkTimeout: 300,
+      systemChannelId: null,
+      verificationLevel: 3,
+      joinedAt: new Date,
+      defaultMessageNotifications: 0,
+      mfaLevel: 0,
+      application_id: null,
+      explicitContentFilter: 0,
+      vanityURLCode: null,
+      premiumTier: 0,
+      premiumSubscriberCount: 0,
+      premiumProgressBarEnabled: false,
+      systemChannelFlags: 0,
+      discoverySplash: null,
+      rulesChannelId: null,
+      safetyAlertsChannelId: null,
+      publicUpdatesChannelId: null,
+      maxStageVideoChannelUsers: 10,
+      maxVideoChannelUsers: 25,
+      maxMembers: 5e5,
+      nsfwLevel: 0,
+      ownerConfiguredContentLevel: null,
+      hubType: null,
+      latestOnboardingQuestionId: null,
+      profile: null,
+      premiumFeatures: null,
+      moderatorReporting: null
+    });
+    return t => (0, a.jsx)(e, v(b({}, t), {
+      guild: i
+    }))
+  },
   EmojiAddModal: async () => {
     let {
       EmojiAddModal: e

@@ -28,9 +28,9 @@ let g = Chunk647438.memo(function(e) {
     height: O = 0
   } = (0, c.ZP)(), {
     ref: y,
-    height: N = 0
-  } = (0, c.ZP)(), [E, I] = i.useState(m), S = (0, o.q_F)({
-    height: E ? N + O : O,
+    height: E = 0
+  } = (0, c.ZP)(), [N, I] = i.useState(m), S = (0, o.q_F)({
+    height: N ? E + O : O,
     config: (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},

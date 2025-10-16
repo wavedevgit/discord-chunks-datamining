@@ -44,7 +44,7 @@ function y(e) {
   }
   return e
 }
-let N = [{
+let E = [{
     iconSrc: require("./348986.js"),
     name: "Pokemon GO Paris",
     position: [false, false]
@@ -75,7 +75,7 @@ let N = [{
     faded: true,
     rightAlign: true
   }],
-  E = e => {
+  N = e => {
     let {
       icon: t,
       color: n,
@@ -148,7 +148,7 @@ let N = [{
       children: [(0, r.jsxs)("div", {
         className: x.banner,
         ref: e => O(e),
-        children: [N.map(e => {
+        children: [E.map(e => {
           var t, i;
           return (0, r.jsx)(I, (t = y({}, e), i = i = {
             imageCoordinates: [n, a]
@@ -246,7 +246,7 @@ let N = [{
           color: o.Z.unsafe_rawColors.RED_360.css,
           header: b.intl.string(b.t.W2kLJC),
           body: b.intl.string(b.t.hyNkHx)
-        }].map((e, t) => (0, r.jsx)(E, y({}, e), t))
+        }].map((e, t) => (0, r.jsx)(N, y({}, e), t))
       })]
     })
   }

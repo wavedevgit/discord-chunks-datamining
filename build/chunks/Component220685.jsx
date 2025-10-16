@@ -26,8 +26,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk737543 = require("./737543.js");
 let y = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 2196594, 4752414, 0xc75a38, 0xc74138, 12401e3, 0xc5579d, 5659039, 4092591, 5868359, 6586142, 8876063, 8484432, 9979976, 5269106, 3421236],
-  N = /^(https?:\/\/)?(?:m\.|www\.)?(youtu\.be|youtube\.com)\/(embed\/|v\/|watch\?v=|watch\?.+&v=)?((\w|-){11})(?:\S+)?$/,
-  E = y[4],
+  E = /^(https?:\/\/)?(?:m\.|www\.)?(youtu\.be|youtube\.com)\/(embed\/|v\/|watch\?v=|watch\?.+&v=)?((\w|-){11})(?:\S+)?$/,
+  N = y[4],
   I = e => {
     var t, n;
     let {
@@ -36,10 +36,10 @@ let y = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
     } = e, c = (0, v.YB)(l.id), {
       loading: b,
       updateSubscriptionsSettings: j
-    } = (0, v.QV)(), [I, S] = i.useState(l.features.has(_.oNc.CREATOR_STORE_PAGE)), [T, P] = i.useState(null != (t = null == c ? true : c.store_page_primary_color) ? t : E), [w, Z] = i.useState(null == c ? true : c.store_page_trailer_url), R = null == w || null != w.match(N), [D, A] = i.useState(null != (n = null == c ? true : c.store_page_show_subscriber_count) && n), L = i.useRef(null == c ? true : c.store_page_slug).current, k = I !== l.features.has(_.oNc.CREATOR_STORE_PAGE) || (null == c ? true : c.store_page_primary_color) == null && T !== E || (null == c ? true : c.store_page_primary_color) != null && T !== (null == c ? true : c.store_page_primary_color) || w !== (null == c ? true : c.store_page_trailer_url) || null != D && D !== (null == c ? true : c.store_page_show_subscriber_count), M = async () => {
+    } = (0, v.QV)(), [I, S] = i.useState(l.features.has(_.GuildFeatures.CREATOR_STORE_PAGE)), [T, P] = i.useState(null != (t = null == c ? true : c.store_page_primary_color) ? t : N), [w, Z] = i.useState(null == c ? true : c.store_page_trailer_url), R = null == w || null != w.match(E), [D, A] = i.useState(null != (n = null == c ? true : c.store_page_show_subscriber_count) && n), L = i.useRef(null == c ? true : c.store_page_slug).current, k = I !== l.features.has(_.GuildFeatures.CREATOR_STORE_PAGE) || (null == c ? true : c.store_page_primary_color) == null && T !== N || (null == c ? true : c.store_page_primary_color) != null && T !== (null == c ? true : c.store_page_primary_color) || w !== (null == c ? true : c.store_page_trailer_url) || null != D && D !== (null == c ? true : c.store_page_show_subscriber_count), G = async () => {
       o()(null != c, "Settings must be defined");
       let e = {};
-      I !== l.features.has(_.oNc.CREATOR_STORE_PAGE) && (e.store_page_enabled = I), ((null == c ? true : c.store_page_primary_color) == null && T !== E || (null == c ? true : c.store_page_primary_color) != null && T !== (null == c ? true : c.store_page_primary_color)) && (e.store_page_primary_color = T), w !== (null == c ? true : c.store_page_trailer_url) && (e.store_page_trailer_url = w), D !== (null == c ? true : c.store_page_show_subscriber_count) && (e.store_page_show_subscriber_count = D), Object.keys(e).length > 0 && (await j(l.id, e), "store_page_enabled" in e && x.default.track(_.rMx.GUILD_ROLE_SUBSCRIPTION_STORE_PAGE_TOGGLED, function(e) {
+      I !== l.features.has(_.GuildFeatures.CREATOR_STORE_PAGE) && (e.store_page_enabled = I), ((null == c ? true : c.store_page_primary_color) == null && T !== N || (null == c ? true : c.store_page_primary_color) != null && T !== (null == c ? true : c.store_page_primary_color)) && (e.store_page_primary_color = T), w !== (null == c ? true : c.store_page_trailer_url) && (e.store_page_trailer_url = w), D !== (null == c ? true : c.store_page_show_subscriber_count) && (e.store_page_show_subscriber_count = D), Object.keys(e).length > 0 && (await j(l.id, e), "store_page_enabled" in e && x.default.track(_.rMx.GUILD_ROLE_SUBSCRIPTION_STORE_PAGE_TOGGLED, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -59,7 +59,7 @@ let y = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
       }({
         enabled: I
       }, (0, f.hH)(l.id))))
-    }, G = _.EYA.ROLE_SUBSCRIPTION_STORE_PAGE(L), U = null != w && w === (null == c ? true : c.store_page_trailer_url), {
+    }, M = _.EYA.ROLE_SUBSCRIPTION_STORE_PAGE(L), U = null != w && w === (null == c ? true : c.store_page_trailer_url), {
       shouldRestrictUpdatingCreatorMonetizationSettings: B
     } = (0, h.gX)(l.id), F = B || !R, H = !I && !s;
     return (0, r.jsxs)(u.Kqy, {
@@ -83,7 +83,7 @@ let y = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
         label: C.intl.string(C.t.N46WOj),
         disabled: B,
         children: [(0, r.jsx)(g.Z, {
-          value: G,
+          value: M,
           className: a()({
             [O.disabled]: B
           })
@@ -93,7 +93,7 @@ let y = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
           children: (0, r.jsx)(u.Button, {
             variant: "primary",
             text: C.intl.string(C.t.CaOYqa),
-            onClick: () => (0, p.Z)(G),
+            onClick: () => (0, p.Z)(M),
             disabled: B
           })
         })]
@@ -112,7 +112,7 @@ let y = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
           }), (0, r.jsx)(u.zH8, {
             colors: y,
             customColor: null,
-            defaultColor: E,
+            defaultColor: N,
             value: T,
             onChange: e => P(e),
             renderDefaultButton: () => null,
@@ -149,9 +149,9 @@ let y = [0xdb2389, 0xba2be9, 8804082, 6576370, 5335282, 2652110, 2128781, 219659
             submitting: b,
             onReset: () => {
               var e, t;
-              S(l.features.has(_.oNc.CREATOR_STORE_PAGE)), P(null != (e = null == c ? true : c.store_page_primary_color) ? e : E), Z(null == c ? true : c.store_page_trailer_url), A(null != (t = null == c ? true : c.store_page_show_subscriber_count) && t)
+              S(l.features.has(_.GuildFeatures.CREATOR_STORE_PAGE)), P(null != (e = null == c ? true : c.store_page_primary_color) ? e : N), Z(null == c ? true : c.store_page_trailer_url), A(null != (t = null == c ? true : c.store_page_show_subscriber_count) && t)
             },
-            onSave: M,
+            onSave: G,
             disabled: F
           })
         })

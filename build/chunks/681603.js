@@ -100,7 +100,7 @@ let x = Chunk442837.ZP.connectStores([Chunk914010.Z, Chunk944486.Z, Chunk430824.
     selectedGuild: Chunk647438,
     selectedChannel: Chunk442837,
     locked: Chunk237997.default.isLocked((0, Chunk145597.getPID)()),
-    hasPreviewEnabled: null == Chunk367907 ? true : Chunk367907.features.has(Chunk981631.oNc.PREVIEW_ENABLED),
+    hasPreviewEnabled: null == Chunk367907 ? true : Chunk367907.features.has(Chunk981631.GuildFeatures.PREVIEW_ENABLED),
     isMemberPending: Chunk592125,
     postableChannelCount: Chunk318885
   }

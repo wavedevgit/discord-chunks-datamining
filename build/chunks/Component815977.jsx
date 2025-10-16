@@ -66,7 +66,7 @@ function D(e) {
       t = (0, r.jsx)(h.Z, {});
       break;
     case O.PG.DEFAULT_CHANNELS:
-      t = (0, r.jsx)(N.Z, {
+      t = (0, r.jsx)(E.Z, {
         saveOnClose: !_
       });
       break;
@@ -76,7 +76,7 @@ function D(e) {
       });
       break;
     case O.PG.HOME_SETTINGS:
-      t = (0, r.jsx)(E.Z, {
+      t = (0, r.jsx)(N.Z, {
         saveOnClose: !_
       });
       break;

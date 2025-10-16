@@ -18,5 +18,5 @@ function f(e, t) {
   var n, f;
   let _ = a.Z.getGuild(e),
     p = r.Z.getChannel(t);
-  return null != _ && null != p && (0, c.Z)(_) && _.features.has(u.oNc.GUILD_SERVER_GUIDE) && !o.yE(null != (f = null == (n = i.ZP.getSelfMember(_.id)) ? true : n.flags) ? f : 0, d.q.COMPLETED_HOME_ACTIONS) && s.Z.hasMemberAction(_.id, p.id) && !l.Z.hasCompletedActionForChannel(_.id, p.id)
+  return null != _ && null != p && (0, c.Z)(_) && _.features.has(u.GuildFeatures.GUILD_SERVER_GUIDE) && !o.yE(null != (f = null == (n = i.ZP.getSelfMember(_.id)) ? true : n.flags) ? f : 0, d.q.COMPLETED_HOME_ACTIONS) && s.Z.hasMemberAction(_.id, p.id) && !l.Z.hasCompletedActionForChannel(_.id, p.id)
 }

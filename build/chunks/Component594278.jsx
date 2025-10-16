@@ -26,20 +26,20 @@ let m = function(e) {
       let r = n + t;
       return r < 0 ? r = e.length - 1 : r > e.length - 1 && (r = 0), r
     })
-  }, [j]), N = i.useCallback(() => {
+  }, [j]), E = i.useCallback(() => {
     C || y(t, 1)
-  }, [y, t, C]), E = i.useCallback(() => {
+  }, [y, t, C]), N = i.useCallback(() => {
     C || y(t, false)
   }, [y, t, C]);
   return i.useEffect(() => {
-    null != m && (v ? v && f.stop() : f.start(m, N))
-  }, [v, f, m, N]), (0, r.jsxs)("div", {
+    null != m && (v ? v && f.stop() : f.start(m, E))
+  }, [v, f, m, E]), (0, r.jsxs)("div", {
     className: g.root,
     onMouseEnter: () => _(true),
     onMouseLeave: () => _(false),
     children: [(0, r.jsx)(o.P3F, {
       className: a()(g.carouselCaret, l),
-      onClick: E,
+      onClick: N,
       onMouseEnter: () => b(d.n.RIGHT),
       ignoreKeyPress: C,
       children: (0, r.jsx)(c.Z, {
@@ -57,7 +57,7 @@ let m = function(e) {
       children: p(t[x])
     }), (0, r.jsx)(o.P3F, {
       className: a()(g.carouselCaret, l),
-      onClick: N,
+      onClick: E,
       onMouseEnter: () => b(d.n.LEFT),
       ignoreKeyPress: C,
       children: (0, r.jsx)(c.Z, {

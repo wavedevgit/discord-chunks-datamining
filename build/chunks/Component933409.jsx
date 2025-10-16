@@ -142,7 +142,7 @@ function N(e, t, N, A, D) {
         (0, o.showToast)((0, o.createToast)(M.intl.string(M.t.epyCur), o.ToastType.FAILURE))
       }
     }, X = null, z = null != U && h.Z.canManageUser(y.Plq.MODERATE_MEMBERS, e, U) && h.Z.canManageUser(y.Plq.KICK_MEMBERS, e, U) && h.Z.canManageUser(y.Plq.BAN_MEMBERS, e, U), $ = null != U && (h.Z.canManageUser(y.Plq.MANAGE_GUILD, e, U) || h.Z.canManageUser(y.Plq.MANAGE_ROLES, e, U));
-  if (!L && null != U && null != Y && null != Y.joinedAt && (z || $) && U.features.has(y.oNc.GUILD_ONBOARDING_EVER_ENABLED)) {
+  if (!L && null != U && null != Y && null != Y.joinedAt && (z || $) && U.features.has(y.GuildFeatures.GUILD_ONBOARDING_EVER_ENABLED)) {
     var ee;
     X = (0, j.yE)(null != (ee = Y.flags) ? ee : 0, C.q.BYPASSES_VERIFICATION) ? (0, l.jsx)(o.sNh, {
       id: "verify",
