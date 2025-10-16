@@ -1095,6 +1095,12 @@ let j = {
       onClose: () => (console.log("EmojiAddModal: Modal closed"), t.onClose())
     }))
   },
+  StreamFullModal: async () => {
+    let {
+      default: e
+    } = await require.e("63757").then(require.bind(require, 309690));
+    return t => (0, a.jsx)(e, b({}, t))
+  },
   FamilyCenterAcceptLinkModal: async () => {
     let e = Chunk594174.default.getUser("12345"),
       t = Chunk594174.default.getUser("67890");
