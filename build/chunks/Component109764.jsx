@@ -1,7 +1,7 @@
-/** Chunk was on 46154 **/
+/** Chunk was on 89250 **/
 /** chunk id: 109764, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -14,9 +14,9 @@ var Chunk399606 = require("./399606.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function f(t, n, e) {
-  let f = (0, l.e7)([o.Z], () => null != t ? o.Z.getChannel(t.parent_id) : null);
-  return null == t ? null : (0, i.jsx)(a.sNh, {
+function h(t, n, e) {
+  let h = (0, a.e7)([s.Z], () => null != t ? s.Z.getChannel(t.parent_id) : null);
+  return null == t ? null : (0, i.jsx)(l.sNh, {
     id: "channel-copy-link",
     label: c.intl.string(c.t.WqhZsr),
     action: () => {
@@ -25,7 +25,7 @@ function f(t, n, e) {
         location: {
           section: u.jXE.CONTEXT_MENU
         }
-      }), (0, d.JG)((0, s.EO)(t, f, n, e))
+      }), (0, d.JG)((0, o.EO)(t, h, n, e))
     }
   })
 }
