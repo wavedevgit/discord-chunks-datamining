@@ -81,14 +81,14 @@ function E(e) {
 }
 
 function b(e) {
-  var t, n;
-  let r = o.Z.getGuild(e),
-    i = (null == r ? true : r.features.has(l.oNc.PREMIUM_TIER_3_OVERRIDE)) === true ? 0 : l.oCV[null != (t = null == r ? true : r.premiumTier) ? t : l.Eu4.NONE];
-  for (let [e, t] of Object.entries(s.Hk)) {
-    let a = e;
-    (null == r || null == (n = r.premiumFeatures) ? true : n.features.includes(a)) && (null == t.includedInLevel || r.premiumTier < t.includedInLevel) && (i += t.boostPrice)
+  var t, n, r, i;
+  let a = o.Z.getGuild(e),
+    c = (null == a ? true : a.features.has(l.oNc.PREMIUM_TIER_3_OVERRIDE)) === true ? 0 : l.oCV[null != (t = null == a ? true : a.premiumTier) ? t : l.Eu4.NONE];
+  for (let [t, o] of Object.entries(s.Hk)) {
+    let s = t;
+    (null == a || null == (n = a.premiumFeatures) ? true : n.features.includes(s)) && (null == (i = null == (r = o.isEnabled) ? true : r.call(o, e)) || i) && (null == o.includedInLevel || a.premiumTier < o.includedInLevel) && (c += o.boostPrice)
   }
-  return i
+  return c
 }
 
 function y(e) {
