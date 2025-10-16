@@ -29,8 +29,8 @@ let g = {
   m = g,
   b = false,
   _ = {},
-  O = {},
   E = {},
+  O = {},
   y = {
     id: null,
     justChanged: false
@@ -69,7 +69,7 @@ class T extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     return b
   }
   get lastDeviceConnected() {
-    return E
+    return O
   }
   get inputDevices() {
     return _
@@ -78,7 +78,7 @@ class T extends(r = Chunk442837.ZP.DeviceSettingsStore) {
     return y
   }
   get outputDevices() {
-    return O
+    return E
   }
   get lastOutputSystemDevice() {
     return v
@@ -134,20 +134,20 @@ let N = new T(Chunk570140.Z, {
           n !== v.id && (v.justChanged = true), v.id = n
         }
       }), !b) {
-      _ = r, O = i, b = true;
+      _ = r, E = i, b = true;
       return
     }
     let a = Object.keys(_),
       o = Object.keys(r),
-      s = Object.keys(O),
+      s = Object.keys(E),
       c = Object.keys(i),
       u = l().difference(a, o),
       d = l().difference(s, c);
-    return u.length > 0 || d.length > 0 ? E = {} : (l().difference(o, a).forEach(e => {
-      E[e] = S(E[e], e, p.Q.INPUT)
+    return u.length > 0 || d.length > 0 ? O = {} : (l().difference(o, a).forEach(e => {
+      O[e] = S(O[e], e, p.Q.INPUT)
     }), l().difference(c, s).forEach(e => {
-      E[e] = S(E[e], e, p.Q.OUTPUT)
-    })), !(l().isEqual(a, o) && l().isEqual(s, c)) && (_ = r, O = i, true)
+      O[e] = S(O[e], e, p.Q.OUTPUT)
+    })), !(l().isEqual(a, o) && l().isEqual(s, c)) && (_ = r, E = i, true)
   },
   CONNECTED_DEVICE_SWITCH: function(e) {
     let {
@@ -162,26 +162,26 @@ let N = new T(Chunk570140.Z, {
       }))
     }
     if (n === p.a.OUTPUT || n === p.a.INPUT_AND_OUTPUT) {
-      let e = O[t];
+      let e = E[t];
       o.Z.wait(() => s.Z.setOutputDevice(e, {
         location: r
       }))
     }
-    delete E[t]
+    delete O[t]
   },
   CONNECTED_DEVICE_DONT_SWITCH: function(e) {
     let {
       displayName: t
     } = e;
-    delete E[t]
+    delete O[t]
   },
   CONNECTED_DEVICE_IGNORE: function(e) {
     let {
       displayName: t
     } = e;
-    m.ignoredDevices[t] = true, delete E[t]
+    m.ignoredDevices[t] = true, delete O[t]
   },
   CONNECTED_DEVICE_NEVER_SHOW_MODAL: function() {
-    E = {}, m.neverShowModal = true
+    O = {}, m.neverShowModal = true
   }
 })

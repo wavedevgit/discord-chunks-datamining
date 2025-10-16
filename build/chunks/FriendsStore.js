@@ -59,7 +59,7 @@ function S(e, t) {
 }
 
 function T(e) {
-  let t = E.default.getUser(e);
+  let t = O.default.getUser(e);
   return {
     user: t,
     usernameLower: null != t ? t.username.toLowerCase() : null
@@ -103,14 +103,14 @@ class A {
           key: n,
           type: r,
           userId: n,
-          nickname: O.Z.getNickname(n)
+          nickname: E.Z.getNickname(n)
         }, T(n), N(n), P(n)), {
-          spam: O.Z.isSpam(n),
-          ignoredUser: O.Z.isIgnored(n),
+          spam: E.Z.isSpam(n),
+          ignoredUser: E.Z.isIgnored(n),
           giftIntentType: r === y.OGo.FRIEND && h.Z.isTopAffinityFriendAnniversary({
             userId: n
           }) ? v.hX.FRIEND_ANNIVERSARY : true,
-          applicationId: O.Z.getOriginApplicationId(n)
+          applicationId: E.Z.getOriginApplicationId(n)
         }))
       }),
       n = [],
@@ -127,10 +127,10 @@ class A {
         type: a,
         userId: r,
         applicationId: l,
-        nickname: O.Z.getNickname(r)
+        nickname: E.Z.getNickname(r)
       }, T(r), N(r), P(r)), {
-        spam: O.Z.isSpam(r),
-        ignoredUser: O.Z.isIgnored(r),
+        spam: E.Z.isSpam(r),
+        ignoredUser: E.Z.isIgnored(r),
         isGameRelationship: true
       })))))
     });

@@ -117,22 +117,22 @@ let k = e => {
     let b = (0, l.JA)("shop"),
       _ = h.Z.HOME_PAGE_SHOP_TAB,
       {
-        analyticsLocations: O
+        analyticsLocations: E
       } = (0, g.ZP)(_),
-      [E, y] = i.useState(false),
+      [O, y] = i.useState(false),
       I = i.useCallback(() => {
         true !== o && o(), true !== s && (0, v.mK)({
           tab: s,
-          analyticsLocations: O,
+          analyticsLocations: E,
           analyticsSource: _
         }), y(true), (0, v.Sm)({
           analyticsSource: _,
-          analyticsLocations: O
+          analyticsLocations: E
         })
-      }, [_, O, o, y, s]),
+      }, [_, E, o, y, s]),
       C = A.Z5c.COLLECTIBLES_SHOP;
     return (0, r.jsxs)(r.Fragment, {
-      children: [E && (0, r.jsx)(M, {}), (0, r.jsx)(d.Qj, R(L({
+      children: [O && (0, r.jsx)(M, {}), (0, r.jsx)(d.Qj, R(L({
         selected: t,
         route: C,
         icon: null != a ? a : c.EOn,
@@ -182,7 +182,7 @@ let k = e => {
   }),
   H = e => {
     let t, n;
-    var l, o, u, d, h, g, m, b, _, O, E, v, {
+    var l, o, u, d, h, g, m, b, _, E, O, v, {
         displayOptions: I
       } = e,
       C = D(e, ["displayOptions"]);
@@ -191,7 +191,7 @@ let k = e => {
       [P, j] = i.useState(false),
       A = (0, p.ZP)(),
       x = (0, s.wj)(A);
-    P ? x ? (t = null == (l = I.entryPointBackgroundAssets) ? true : l.srcDarkHovered, n = null == (u = I.entrypointBackgroundStyle) || null == (o = u.hovered) ? true : o.dark) : (t = null == (d = I.entryPointBackgroundAssets) ? true : d.srcLightHovered, n = null == (g = I.entrypointBackgroundStyle) || null == (h = g.hovered) ? true : h.light) : x ? (t = null == (m = I.entryPointBackgroundAssets) ? true : m.srcDark, n = null == (_ = I.entrypointBackgroundStyle) || null == (b = _.resting) ? true : b.dark) : (t = null == (O = I.entryPointBackgroundAssets) ? true : O.srcLight, n = null == (v = I.entrypointBackgroundStyle) || null == (E = v.resting) ? true : E.light);
+    P ? x ? (t = null == (l = I.entryPointBackgroundAssets) ? true : l.srcDarkHovered, n = null == (u = I.entrypointBackgroundStyle) || null == (o = u.hovered) ? true : o.dark) : (t = null == (d = I.entryPointBackgroundAssets) ? true : d.srcLightHovered, n = null == (g = I.entrypointBackgroundStyle) || null == (h = g.hovered) ? true : h.light) : x ? (t = null == (m = I.entryPointBackgroundAssets) ? true : m.srcDark, n = null == (_ = I.entrypointBackgroundStyle) || null == (b = _.resting) ? true : b.dark) : (t = null == (E = I.entryPointBackgroundAssets) ? true : E.srcLight, n = null == (v = I.entrypointBackgroundStyle) || null == (O = v.resting) ? true : O.light);
     let M = i.useCallback(e => {
         I.assetIds.length > 0 && N(e => (e + 1) % I.assetIds.length), j(true), null == e || e()
       }, [I.assetIds.length]),
@@ -242,7 +242,7 @@ let k = e => {
     } = e, n = D(e, ["displayOptions"]);
     let l = i.useMemo(() => {
       var e;
-      let n = null != t.emojiName ? null == (e = O.ZP.getByName(t.emojiName)) ? true : e.surrogates : null;
+      let n = null != t.emojiName ? null == (e = E.ZP.getByName(t.emojiName)) ? true : e.surrogates : null;
       return (0, r.jsxs)(c.Text, {
         variant: "text-sm/medium",
         className: w.marketingBadgeTooltipContent,
@@ -328,7 +328,7 @@ let k = e => {
     } = e, {
       shopButtonDisplayOptions: a,
       dismissShopButtonDC: s
-    } = (0, T.Z)(), u = (0, E.Y)({
+    } = (0, T.Z)(), u = (0, O.Y)({
       location: "CollectiblesShopButton"
     }), d = !(0, c.$sL)() && u, [p, f] = (0, _.US)(d ? [o.z.WISHLIST_SHOP_BUTTON_POPOVER] : []), h = {
       selected: t,

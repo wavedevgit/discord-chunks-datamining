@@ -48,7 +48,7 @@ class T extends Chunk317770.Z {
         content: e,
         isPreview: t
       });
-      if (null != i) return (false !== t || (null == i ? true : i.contentIdentifier) !== "summer_bogo_content" || !!await (0, E.k)()) && ((0, a.Mr3)(S), (0, a.ZDy)(async () => {
+      if (null != i) return (false !== t || (null == i ? true : i.contentIdentifier) !== "summer_bogo_content" || !!await (0, O.k)()) && ((0, a.Mr3)(S), (0, a.ZDy)(async () => {
         let {
           default: e
         } = await Promise.resolve().then(n.bind(n, 318199));
@@ -89,7 +89,7 @@ class T extends Chunk317770.Z {
       if (!t || n || (0, a.$sL)() || (0, p.I5)(r) || await (0, m.G)(e.userTrialOffer) && (0, y.Z)({
           upsellType: I.cd.REVERSE_TRIAL_FOLLOWUP_UPSELL
         }), (null == r || r.verified) && !(0, a.$sL)() && !i.tq) {
-        for (let t of (await (0, O.He)(e)))
+        for (let t of (await (0, E.He)(e)))
           if (await this.maybeOpenServerDriveAnnouncementModal(t, false)) break
       }
     })

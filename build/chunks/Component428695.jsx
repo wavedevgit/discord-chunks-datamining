@@ -25,8 +25,8 @@ let g = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
       type: m,
       imageStyles: b,
       imageMarginX: _,
-      imageMarginTop: O,
-      trackingSource: E,
+      imageMarginTop: E,
+      trackingSource: O,
       undismissable: y,
       onDismissed: v,
       onClick: I,
@@ -47,7 +47,7 @@ let g = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
       size: s.zx.Sizes.SMALL,
       onClick: () => {
         null != m && d.default.track(p.rMx.CHANNEL_NOTICE_CTA_CLICKED, {
-          source: E,
+          source: O,
           guild_id: t.id,
           notice_type: m
         }), null == I || I()
@@ -95,7 +95,7 @@ let g = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
       }), null != o && (0, r.jsx)("div", {
         className: h.imageContainer,
         style: {
-          marginTop: "".concat(O, "px"),
+          marginTop: "".concat(E, "px"),
           marginLeft: x,
           marginRight: x
         },

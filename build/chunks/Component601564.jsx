@@ -113,7 +113,7 @@ class j extends Chunk647438.PureComponent {
         render: () => (0, r.jsx)(u.Z, {
           page: I.ZY5.STORE_DIRECTORY_HOME,
           root: true,
-          children: (0, r.jsx)(E.Z, {})
+          children: (0, r.jsx)(O.Z, {})
         })
       }), (0, r.jsx)(a.AW, {
         path: I.Z5c.APPLICATION_STORE_LISTING_APPLICATION(":applicationId", ":slug"),

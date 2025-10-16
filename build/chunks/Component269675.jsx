@@ -32,7 +32,7 @@ var Chunk951288 = require("./951288.js"),
 function P(e) {
   let {
     guildId: t
-  } = e, n = (0, a.e7)([m.Z], () => m.Z.getGuild(t), [t]), P = (0, a.e7)([h.Z], () => h.Z.isConnected()), j = (0, p.Z)(t), A = (0, O.Z)(t), x = (0, a.e7)([b.Z], () => b.Z.isSubscriptionFetching), Z = (0, _.f)(), {
+  } = e, n = (0, a.e7)([m.Z], () => m.Z.getGuild(t), [t]), P = (0, a.e7)([h.Z], () => h.Z.isConnected()), j = (0, p.Z)(t), A = (0, E.Z)(t), x = (0, a.e7)([b.Z], () => b.Z.isSubscriptionFetching), Z = (0, _.f)(), {
     shouldHideGuildPurchaseEntryPoints: w,
     restrictionsLoading: L
   } = (0, f.uP)(t), R = null == n || !Z || x || L;
@@ -57,7 +57,7 @@ function P(e) {
       toolbar: (0, r.jsx)(i.Fragment, {}),
       className: N.headerBar,
       children: [(0, r.jsx)(g.Z.Icon, {
-        icon: (0, o.GSL)(E.Z),
+        icon: (0, o.GSL)(O.Z),
         "aria-hidden": true
       }), (0, r.jsx)(g.Z.Title, {
         children: T.intl.string(T.t["KzCF//"])

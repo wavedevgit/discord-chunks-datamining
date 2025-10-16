@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk79822 = require("./79822.js");
 
-function E(e, t, n) {
+function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -37,7 +37,7 @@ function y(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      E(e, t, n[t])
+      O(e, t, n[t])
     })
   }
   return e
@@ -112,7 +112,7 @@ class I extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), E(this, "partyMemberAvatarRef", i.createRef()), E(this, "partyMemberOverflowRef", i.createRef()), E(this, "renderPartyMember", (e, t) => {
+    super(...e), O(this, "partyMemberAvatarRef", i.createRef()), O(this, "partyMemberOverflowRef", i.createRef()), O(this, "renderPartyMember", (e, t) => {
       let n;
       if (null == e) return null;
       let {
@@ -132,14 +132,14 @@ class I extends Chunk647438.PureComponent {
             key: e.id,
             src: e.getAvatarURL(true, 24),
             size: s.EFr.SIZE_24,
-            className: a()(O.avatar, t),
+            className: a()(E.avatar, t),
             "aria-label": e.username,
             onContextMenu: t => void(null != e && (null == u || u(t, e))),
             avatarContentRef: this.partyMemberAvatarRef
           }))
         })
       }, e.id)
-    }), E(this, "renderPartyMemberOverflow", (e, t, n) => {
+    }), O(this, "renderPartyMemberOverflow", (e, t, n) => {
       let {
         renderOverflowPopout: i
       } = this.props;
@@ -150,7 +150,7 @@ class I extends Chunk647438.PureComponent {
           text: _.intl.string(_.t.Zf4NPT),
           children: (0, r.jsx)("div", v(y({}, n), {
             ref: this.partyMemberOverflowRef,
-            className: a()(O.overflow, t),
+            className: a()(E.overflow, t),
             children: e
           }))
         })

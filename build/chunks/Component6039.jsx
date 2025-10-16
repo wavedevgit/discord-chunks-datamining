@@ -146,7 +146,7 @@ let N = e => {
               guild: A
             });
           case b.wB.REJECTED:
-            return (0, r.jsx)(E.Z, {
+            return (0, r.jsx)(O.Z, {
               reapplyText: C.intl.string(C.t.I1LYVl),
               onReapply: w,
               confirmText: C.intl.string(C.t.g9tK0t),
@@ -155,7 +155,7 @@ let N = e => {
               guild: A
             });
           default:
-            return (0, r.jsx)(O.s, {
+            return (0, r.jsx)(E.s, {
               onDiscardApplication: R,
               onContinueApplication: () => (0, m.hk)(t),
               guild: A

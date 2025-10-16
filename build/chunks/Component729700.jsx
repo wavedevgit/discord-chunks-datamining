@@ -22,10 +22,10 @@ let h = e => {
     onClick: g
   } = e, {
     analyticsLocations: m
-  } = (0, c.ZP)(s.Z.HOME_PAGE_SHOP_TAB), b = (0, o.ZP)(), _ = (0, a.wj)(b) ? t.assetDark : t.assetLight, O = i.useRef(h);
-  return O.current = h, i.useEffect(() => () => {
+  } = (0, c.ZP)(s.Z.HOME_PAGE_SHOP_TAB), b = (0, o.ZP)(), _ = (0, a.wj)(b) ? t.assetDark : t.assetLight, E = i.useRef(h);
+  return E.current = h, i.useEffect(() => () => {
     var e;
-    null == (e = O.current) || e.call(O)
+    null == (e = E.current) || e.call(E)
   }, []), (0, r.jsx)(l.J2, {
     targetElementRef: n,
     position: "right",

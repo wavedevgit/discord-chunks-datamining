@@ -31,7 +31,7 @@ let v = e => {
       className: y.mutualGuilds,
       variant: "text-sm/normal",
       color: "text-muted",
-      children: E.intl.string(E.t.jpY0X1)
+      children: O.intl.string(O.t.jpY0X1)
     }) : (0, r.jsxs)("div", {
       className: y.mutualGuildsContainer,
       children: [(0, r.jsx)(f.Z, {
@@ -43,7 +43,7 @@ let v = e => {
         className: y.mutualGuilds,
         variant: "text-sm/normal",
         color: "text-muted",
-        children: E.intl.format(E.t.eE3oen, {
+        children: O.intl.format(O.t.eE3oen, {
           count: n.length
         })
       })]
@@ -70,7 +70,7 @@ function C(e) {
       src: (0, p.x)(n, 40, C),
       avatarDecoration: T,
       size: l.EFr.SIZE_40,
-      "aria-label": null != (t = null == c ? true : c.username) ? t : E.intl.string(E.t["30mdIy"])
+      "aria-label": null != (t = null == c ? true : c.username) ? t : O.intl.string(O.t["30mdIy"])
     }), (0, r.jsxs)("div", {
       className: y.userPreview,
       children: [(0, r.jsxs)("div", {
@@ -89,7 +89,7 @@ function C(e) {
           children: S
         })]
       }), (0, r.jsx)(s.Z, {
-        hoverText: (0, r.jsx)(O.Z, {
+        hoverText: (0, r.jsx)(E.Z, {
           channel: n
         }),
         forceHover: f,

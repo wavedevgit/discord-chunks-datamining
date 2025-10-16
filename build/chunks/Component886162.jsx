@@ -20,7 +20,7 @@ function g(e) {
   let {
     transitionState: t
   } = e, g = (0, a.e7)([d.Z], () => d.Z.getAction()), [m, b] = i.useState(false), _ = (0, u.Dt)();
-  async function O() {
+  async function E() {
     return b(true), g === p.c2C.AGREEMENTS && b(await (0, s.Lr)()), null
   }
   return (0, c.Z)({
@@ -83,7 +83,7 @@ function g(e) {
         variant: "active",
         text: f.intl.string(f.t["+TBKLy"]),
         loading: m,
-        onClick: O
+        onClick: E
       })
     })]
   })

@@ -1339,6 +1339,7 @@ let em = "@me",
     FRIENDS: "/channels/@me",
     ME_ACTIVITY: "/channels/@me/activity",
     ME: "/channels/@me",
+    ME_DMS: "/channels/@me/dms",
     MESSAGE_REQUESTS: "/message-requests",
     CHANNEL: (e, t, n) => {
       let r = null == t ? "/channels/".concat(e || em) : "/channels/".concat(e || em, "/").concat(t);

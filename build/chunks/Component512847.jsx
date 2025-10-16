@@ -201,11 +201,11 @@ function G() {
       currentUserId: s
     } = t;
     if (e.voiceChannelId !== r || null == r || function(e) {
-        let t = O.Z.getChannel(e);
+        let t = E.Z.getChannel(e);
         if (null == t) returnfalse;
         let n = t.getGuildId();
         if (null == n) returnfalse;
-        let r = E.Z.getGuild(n);
+        let r = O.Z.getGuild(n);
         return null != r && r.afkChannelId === t.id
       }(r) || null != n && m.Lr.has(n)) return;
     let c = null != a && e.singleActiveStreamKey === a,

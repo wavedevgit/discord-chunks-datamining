@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 647656, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => E
 }), require("./388685.js"), require("./997841.js"), require("./415506.js"), require("./35282.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -19,7 +19,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk186901 = require("./186901.js"),
   Chunk981631 = require("./981631.js");
 let _ = ["1402418171662569542"],
-  O = {
+  E = {
     [Chunk981631.Etm.SET_ACTIVITY]: {
       scope: {
         [Chunk186901.Gp.ANY]: [Chunk243814.x.RPC, Chunk243814.x.RPC_ACTIVITIES_WRITE, Chunk186901.lH]
@@ -71,9 +71,9 @@ let _ = ["1402418171662569542"],
           socket: a,
           args: {
             pid: g,
-            activity: O
+            activity: E
           },
-          isSocketConnected: E
+          isSocketConnected: O
         } = e;
         if (![m.He.IPC, m.He.WEBSOCKET, m.He.POST_MESSAGE].includes(a.transport)) throw new h.Z({
           errorCode: b.lTL.INVALID_COMMAND
@@ -81,24 +81,24 @@ let _ = ["1402418171662569542"],
         if (null == g && m.He.IPC === a.transport) throw new h.Z({
           errorCode: b.lTL.INVALID_COMMAND
         }, "nonzero pid required");
-        if (null == O) return o.Z.dispatch({
+        if (null == E) return o.Z.dispatch({
           type: "LOCAL_ACTIVITY_UPDATE",
           socketId: a.id,
           pid: g,
-          activity: O
-        }), Promise.resolve(O);
+          activity: E
+        }), Promise.resolve(E);
         let y = {};
-        O.name || (O.name = a.application.name);
+        E.name || (E.name = a.application.name);
         let v = a.application.id;
-        O.application_id = v;
+        E.application_id = v;
         let I = a.transport === m.He.POST_MESSAGE;
-        O.platform = I ? b.M7m.EMBEDDED : b.M7m.DESKTOP;
+        E.platform = I ? b.M7m.EMBEDDED : b.M7m.DESKTOP;
         let C = c.Z.getApplication(null != v ? v : true),
-          S = null != (r = O.instance) && r,
-          T = null == (t = O.party) ? true : t.privacy;
-        delete O.instance, null == (n = O.party) || delete n.privacy;
-        let N = (0, s.S)(O, S, I, null != C && (0, u.g)(C) && I, T);
-        N > 0 && (O.flags = N);
+          S = null != (r = E.instance) && r,
+          T = null == (t = E.party) ? true : t.privacy;
+        delete E.instance, null == (n = E.party) || delete n.privacy;
+        let N = (0, s.S)(E, S, I, null != C && (0, u.g)(C) && I, T);
+        N > 0 && (E.flags = N);
         let {
           assets: P,
           party: j,
@@ -106,8 +106,8 @@ let _ = ["1402418171662569542"],
           timestamps: x,
           buttons: Z,
           type: w
-        } = O;
-        if (null == w && (O.type = b.IIU.PLAYING), null != A) {
+        } = E;
+        if (null == w && (E.type = b.IIU.PLAYING), null != A) {
           let e = i().values(A).filter(e => !!e);
           if (null != j && i().intersection(e, [j.id]).length > 0 && !_.includes(a.application.id)) throw new h.Z({
             errorCode: b.lTL.INVALID_ACTIVITY_SECRET
@@ -119,7 +119,7 @@ let _ = ["1402418171662569542"],
             errorCode: b.lTL.INVALID_ACTIVITY_SECRET
           }, "secrets cannot currently be sent with buttons")
         }
-        if (null != Z && (y.button_urls = Z.map(e => e.url), O.buttons = Z.map(e => e.label)), O.metadata = y, null != x)
+        if (null != Z && (y.button_urls = Z.map(e => e.url), E.buttons = Z.map(e => e.label)), E.metadata = y, null != x)
           for (let e of Object.keys(x)) Date.now().toString().length - x[e].toString().length > 2 && (x[e] = Math.floor(x[e] * f.Z.Millis.SECOND));
         if (null == P) l = Promise.resolve([]);
         else {
@@ -129,27 +129,27 @@ let _ = ["1402418171662569542"],
         return l.then(e => {
           var t, n, r, i;
           let [l, s, c] = e;
-          if (null != P && (null != l ? P.large_image = l : delete P.large_image, null != s ? P.small_image = s : delete P.small_image, null != c ? P.invite_cover_image = c : delete P.invite_cover_image), !E()) return;
+          if (null != P && (null != l ? P.large_image = l : delete P.large_image, null != s ? P.small_image = s : delete P.small_image, null != c ? P.invite_cover_image = c : delete P.invite_cover_image), !O()) return;
           o.Z.dispatch({
             type: "LOCAL_ACTIVITY_UPDATE",
             socketId: a.id,
             pid: g,
-            activity: O,
+            activity: E,
             partyPrivacy: T
           });
           let {
             secrets: u,
             party: p
-          } = O, f = {
+          } = E, f = {
             application_id: a.application.id,
-            type: O.type,
-            name: O.name,
-            status_display_type: O.status_display_type,
-            details: null != (r = O.details) ? r : "",
-            state: null != (i = O.state) ? i : "",
-            has_urls: null != O.state_url || null != O.details_url || (null == (t = O.assets) ? true : t.large_url) != null || (null == (n = O.assets) ? true : n.small_url) != null
+            type: E.type,
+            name: E.name,
+            status_display_type: E.status_display_type,
+            details: null != (r = E.details) ? r : "",
+            state: null != (i = E.state) ? i : "",
+            has_urls: null != E.state_url || null != E.details_url || (null == (t = E.assets) ? true : t.large_url) != null || (null == (n = E.assets) ? true : n.small_url) != null
           };
-          return null != u && (f.has_match_secret = !!u.match, f.has_join_secret = !!u.join), null != P && (f.has_images = !!(P.large_image || P.small_image || P.invite_cover_image)), null != p && (f.party_max = null != p.size && p.size[1] > 0 ? p.size[1] : true, f.party_id = p.id), d.default.track(b.rMx.ACTIVITY_UPDATED, f), O
+          return null != u && (f.has_match_secret = !!u.match, f.has_join_secret = !!u.join), null != P && (f.has_images = !!(P.large_image || P.small_image || P.invite_cover_image)), null != p && (f.party_max = null != p.size && p.size[1] > 0 ? p.size[1] : true, f.party_id = p.id), d.default.track(b.rMx.ACTIVITY_UPDATED, f), E
         })
       }
     }

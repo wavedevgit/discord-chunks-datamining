@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 314451, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => E
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -76,18 +76,18 @@ function _(e) {
   })
 }
 
-function O(e) {
+function E(e) {
   let {
     className: t,
     focusSectionProps: n
-  } = e, o = (0, l.e7)([p.Z], () => p.Z.isDeveloper), [s, c] = i.useState(false), [u, d] = i.useState(0), f = i.useRef(null), O = e => {
+  } = e, o = (0, l.e7)([p.Z], () => p.Z.isDeveloper), [s, c] = i.useState(false), [u, d] = i.useState(0), f = i.useRef(null), E = e => {
     clearTimeout(u), d(setTimeout(() => {
       c(e)
     }, 100))
   };
   return (0, r.jsx)("div", {
-    onMouseEnter: () => O(true),
-    onMouseLeave: () => O(false),
+    onMouseEnter: () => E(true),
+    onMouseLeave: () => E(false),
     children: (0, r.jsx)(a.yRy, {
       targetElementRef: f,
       shouldShow: s,

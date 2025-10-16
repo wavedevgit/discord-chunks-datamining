@@ -34,9 +34,9 @@ function g(e) {
       type: true,
       fromFriendSuggestion: true
     })
-  }, O = e => {
+  }, E = e => {
     null == e || e.stopPropagation(), o.Z.ignore(t.id)
-  }, E = g === p.Skl.OFFLINE ? p.Skl.UNKNOWN : g;
+  }, O = g === p.Skl.OFFLINE ? p.Skl.UNKNOWN : g;
   return (0, r.jsx)(u.Z, {
     isFocused: m,
     user: t,
@@ -56,7 +56,7 @@ function g(e) {
           icon: i.Dio,
           actionType: c.Z.ActionTypes.DENY,
           tooltip: f.intl.string(f.t.xuio0N),
-          onClick: O,
+          onClick: E,
           shouldHighlight: e
         })]
       });
@@ -65,7 +65,7 @@ function g(e) {
         children: [(0, r.jsx)(d.Z, {
           user: t,
           hovered: e,
-          status: E,
+          status: O,
           subText: n,
           className: h.__invalid_userInfo
         }), (0, r.jsx)("div", {

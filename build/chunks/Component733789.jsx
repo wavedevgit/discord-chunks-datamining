@@ -39,7 +39,7 @@ function _(e) {
   }
   return e
 }
-let O = {
+let E = {
   [Chunk981631.AzA.NOW_PLAYING]: {
     single: (e, t) => g.intl.format(g.t.NEckzc, {
       user1: e.username,
@@ -86,9 +86,9 @@ let O = {
     })
   }
 };
-class E extends Chunk647438.PureComponent {
+class O extends Chunk647438.PureComponent {
   renderDescription(e, t) {
-    let n = O[e];
+    let n = E[e];
     return 1 === t.length ? n.single(t[0].user, e => this.renderActivityDiscordTag(e)) : 2 === t.length ? n.double(t[0].user, t[1].user, e => this.renderActivityDiscordTag(e)) : n.other(t.length)
   }
   renderActivityDiscordTag(e) {
@@ -185,4 +185,4 @@ class E extends Chunk647438.PureComponent {
     }, n))
   }
 }
-let y = E
+let y = O

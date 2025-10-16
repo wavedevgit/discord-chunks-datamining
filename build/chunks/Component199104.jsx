@@ -38,24 +38,24 @@ function y(e) {
     children: (0, r.jsx)(c.Z, {
       section: _.jXE.ACTIVE_NOW_COLUMN,
       children: (0, r.jsx)("aside", {
-        className: l()(E.container, {
-          [E.refreshActiveNow]: y,
+        className: l()(O.container, {
+          [O.refreshActiveNow]: y,
           "refresh-active-now": y
         }),
         "aria-labelledby": I,
         children: (0, r.jsx)(s.Ttm, {
-          className: l()(E.scroller, {
-            [E.standalone]: t
+          className: l()(O.scroller, {
+            [O.standalone]: t
           }),
           children: (0, r.jsxs)("div", {
             className: l()({
-              [E.standaloneContainer]: t
+              [O.standaloneContainer]: t
             }),
             children: [v ? null : (0, r.jsx)(s.Heading, {
               variant: "heading-lg/semibold",
-              className: E.header,
+              className: O.header,
               id: I,
-              children: O.intl.string(O.t.F4Zgg4)
+              children: E.intl.string(E.t.F4Zgg4)
             }), (0, r.jsx)(f.ZP, {
               contentTypes: i,
               children: e => {
@@ -64,7 +64,7 @@ function y(e) {
                   markAsDismissed: n
                 } = e;
                 if (t === o.z.NOW_PLAYING_CONSENT_CARD) return (0, r.jsx)(g.Z, {
-                  className: E.__invalid_consentCard,
+                  className: O.__invalid_consentCard,
                   markAsDismissed: n
                 })
               }

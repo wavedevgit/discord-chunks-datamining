@@ -27,7 +27,7 @@ function _(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class O extends Chunk647438.PureComponent {
+class E extends Chunk647438.PureComponent {
   renderDiskUsageCircle() {
     let {
       metadata: e
@@ -227,7 +227,7 @@ class O extends Chunk647438.PureComponent {
     })
   }
 }
-class E extends Chunk647438.PureComponent {
+class O extends Chunk647438.PureComponent {
   componentDidMount() {
     (0, Chunk325432.ec)(this.props.installationPaths.map(e => {
       let {
@@ -253,7 +253,7 @@ class E extends Chunk647438.PureComponent {
             path: l,
             label: a
           } = e;
-          return (0, r.jsx)(O, {
+          return (0, r.jsx)(E, {
             path: l,
             label: a,
             metadata: t[l],
@@ -293,4 +293,4 @@ let y = Chunk442837.ZP.connectStores([Chunk391690.Z], () => ({
   installationPaths: Chunk391690.Z.installationPaths,
   installationPathsMetadata: Chunk391690.Z.installationPathsMetadata,
   defaultInstallationPath: Chunk391690.Z.defaultInstallationPath
-}))(E)
+}))(O)

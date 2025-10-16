@@ -40,8 +40,8 @@ function h(e) {
       block: "center"
     }), m.current = true
   }, [t, _, b, n, l]);
-  let O = null != _,
-    [E, y] = i.useState(window.innerWidth);
+  let E = null != _,
+    [O, y] = i.useState(window.innerWidth);
   i.useEffect(() => {
     let e = (0, o.debounce)(() => {
       y(window.innerWidth)
@@ -50,7 +50,7 @@ function h(e) {
       window.removeEventListener("resize", e)
     }
   }, []);
-  let v = E >= 1610 ? 3 : E >= 1340 ? 2 : 1;
+  let v = O >= 1610 ? 3 : O >= 1340 ? 2 : 1;
   return n && 0 === t.length ? (0, r.jsx)(c.$jN, {
     className: f.spinner
   }) : 0 === t.length ? (0, r.jsxs)("div", {
@@ -75,8 +75,8 @@ function h(e) {
         contentPosition: t,
         rowIndex: n,
         className: a()(f.questTile, {
-          [f.selected]: O && e.id === _,
-          [f.unselected]: O && e.id !== _
+          [f.selected]: E && e.id === _,
+          [f.unselected]: E && e.id !== _
         }),
         sourceQuestContent: u.jn.QUEST_HOME_DESKTOP
       }, e.id)

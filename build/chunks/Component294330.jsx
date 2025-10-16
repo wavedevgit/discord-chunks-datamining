@@ -35,7 +35,7 @@ function N(e) {
     guild: t,
     onClick: l,
     onView: o
-  } = e, [h, g] = i.useState(false), [O, N] = i.useState(false), [P, j] = i.useState(false), A = i.useRef(null), x = i.useCallback(async () => {
+  } = e, [h, g] = i.useState(false), [E, N] = i.useState(false), [P, j] = i.useState(false), A = i.useRef(null), x = i.useCallback(async () => {
     N(true);
     try {
       await l(t.id)
@@ -103,7 +103,7 @@ function N(e) {
   }), [t.icon, t.id]);
   return (0, r.jsxs)("div", {
     className: I.container,
-    children: [O && (0, r.jsx)("div", {
+    children: [E && (0, r.jsx)("div", {
       className: I.spinnerContainer,
       children: (0, r.jsx)(c.$jN, {
         type: c.$jN.Type.PULSING_ELLIPSIS,
@@ -118,7 +118,7 @@ function N(e) {
         ref: A,
         className: I.card,
         onClick: x,
-        disabled: O,
+        disabled: E,
         onContextMenu: w,
         "aria-label": v.intl.string(v.t["M9wQ+f"]),
         children: [(0, r.jsxs)("div", {
@@ -133,7 +133,7 @@ function N(e) {
               className: I.bannerImage,
               onLoad: () => j(true)
             })
-          }), (0, r.jsx)(E.Z, {
+          }), (0, r.jsx)(O.Z, {
             className: I.maximizeIcon,
             guildId: t.id
           }), (0, r.jsx)("div", {
@@ -214,7 +214,7 @@ function P(e) {
     guildId: t,
     onClick: n,
     onView: i
-  } = e, l = (0, o.e7)([O.Z], () => O.Z.getGuild(t));
+  } = e, l = (0, o.e7)([E.Z], () => E.Z.getGuild(t));
   return null == l ? null : (0, r.jsx)(N, {
     guild: l,
     onClick: n,

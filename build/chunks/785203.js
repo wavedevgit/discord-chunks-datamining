@@ -25,12 +25,12 @@ function b(e) {
     m = (0, l.e7)([h.Z], () => h.Z.isVisible(e)),
     b = (0, o.m)(n),
     _ = (0, l.e7)([f.Z], () => f.Z.isVisible(e)),
-    O = u.Z.useShouldShowChannelNotice(n),
-    E = (0, d.h6)(e),
+    E = u.Z.useShouldShowChannelNotice(n),
+    O = (0, d.h6)(e),
     {
       enableStudyGroup: y
     } = (0, c.s)(e),
-    v = E.length > 0,
+    v = O.length > 0,
     I = y && !(null == e ? true : e.features.has(g.GuildFeatures.HUB)),
     C = (0, s.Vm)(n);
   if (i.useEffect(() => {
@@ -39,7 +39,7 @@ function b(e) {
   if (m) return 1;
   if (b || null != C) return 2;
   if (_) return 3;
-  if (O) return 4;
+  if (E) return 4;
   else if (v) return 5;
   else if (I) return 6;
   return null

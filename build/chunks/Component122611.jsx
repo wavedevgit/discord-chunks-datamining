@@ -61,7 +61,7 @@ function P(e) {
               markAsDismissed: l
             });
           case a.z.CHANNEL_NOTICE_INVITE:
-            return (0, r.jsx)(E.Z, {
+            return (0, r.jsx)(O.Z, {
               guild: n,
               markAsDismissed: l
             });
@@ -114,7 +114,7 @@ let j = e => {
         guild: t
       });
     case I.R.GUILD_MFA_WARNING:
-      return (0, r.jsx)(O.Z, {
+      return (0, r.jsx)(E.Z, {
         guild: t
       });
     case I.R.COMMANDS_MIGRATION:

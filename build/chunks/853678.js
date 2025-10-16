@@ -50,7 +50,7 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
       scope: {
         [Chunk186901.Gp.ANY]: [Chunk186901.wE, Chunk186901.b_]
       },
-      validation: e => (0, O.Z)(e).required().keys({
+      validation: e => (0, E.Z)(e).required().keys({
         url: e.string().required()
       }),
       handler(e) {
@@ -115,7 +115,7 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
       }
     },
     [Chunk981631.Etm.NAVIGATE_TO_CONNECTIONS]: {
-      validation: e => (0, O.Z)(e),
+      validation: e => (0, E.Z)(e),
       scope: {
         [Chunk186901.Gp.ANY]: [Chunk186901.wE]
       },

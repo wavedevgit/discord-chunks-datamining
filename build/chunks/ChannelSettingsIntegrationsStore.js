@@ -36,8 +36,8 @@ function _(e) {
   }
   return e
 }
-let O = [],
-  E = null,
+let E = [],
+  O = null,
   y = false,
   v = Chunk981631.QZA.CLOSED,
   I = {},
@@ -45,18 +45,18 @@ let O = [],
   S = null;
 
 function T() {
-  if (r = null != (i = Chunk388610.Z.getChannel()) ? Chunk430824.Z.getGuild(i.guild_id) : null, O = null != i && null != r && Chunk496675.Z.can(Chunk981631.Plq.MANAGE_WEBHOOKS, i) ? Chunk855674.Z.getWebhooksForChannel(r.id, i.id) : [], null != E) {
-    let e = P(E.id);
-    null != module && (E = module)
+  if (r = null != (i = Chunk388610.Z.getChannel()) ? Chunk430824.Z.getGuild(i.guild_id) : null, E = null != i && null != r && Chunk496675.Z.can(Chunk981631.Plq.MANAGE_WEBHOOKS, i) ? Chunk855674.Z.getWebhooksForChannel(r.id, i.id) : [], null != O) {
+    let e = P(O.id);
+    null != module && (O = module)
   }
   v = Chunk981631.QZA.OPEN, I = {}, C = false
 }
 let N = s().debounce(() => {
-  C && ((null == E || s().isEqual(E, P(E.id))) && (C = false), C || A.emitChange())
+  C && ((null == O || s().isEqual(O, P(O.id))) && (C = false), C || A.emitChange())
 }, 500);
 
 function P(e) {
-  return O.find(t => {
+  return E.find(t => {
     let {
       id: n
     } = t;
@@ -71,10 +71,10 @@ class j extends(a = Chunk442837.ZP.Store) {
     return C
   }
   get webhooks() {
-    return O
+    return E
   }
   get editedWebhook() {
-    return E
+    return O
   }
   get formState() {
     return v
@@ -88,8 +88,8 @@ class j extends(a = Chunk442837.ZP.Store) {
   getProps() {
     return {
       submitting: v === Chunk981631.QZA.SUBMITTING,
-      webhooks: O,
-      editedWebhook: E,
+      webhooks: E,
+      editedWebhook: O,
       section: l,
       sectionId: S,
       hasChanges: this.hasChanges(),
@@ -125,20 +125,20 @@ let A = new j(Chunk570140.Z, __OVERLAY__ ? {} : {
         webhookId: t
       } = e, n = P(t);
       if (null == n) returnfalse;
-      E = n, I = {}, C = false
+      O = n, I = {}, C = false
     },
     INTEGRATION_SETTINGS_STOP_EDITING_WEBHOOK: function() {
-      E = null, I = {}, C = false
+      O = null, I = {}, C = false
     },
     INTEGRATION_SETTINGS_UPDATE_WEBHOOK: function(e) {
       let {
         settings: t
       } = e;
-      if (null == E) returnfalse;
-      E = _({}, E), null != t.name && E.name !== t.name && (E.name = t.name, C = true), true !== t.avatar && E.avatar !== t.avatar && (E.avatar = t.avatar, C = true), null != t.channelId && E.channel_id !== t.channelId && (E.channel_id = t.channelId, C = true), C && N()
+      if (null == O) returnfalse;
+      O = _({}, O), null != t.name && O.name !== t.name && (O.name = t.name, C = true), true !== t.avatar && O.avatar !== t.avatar && (O.avatar = t.avatar, C = true), null != t.channelId && O.channel_id !== t.channelId && (O.channel_id = t.channelId, C = true), C && N()
     },
     CHANNEL_SETTINGS_CLOSE: function() {
-      i = null, r = null, O = [], E = null, v = Chunk981631.QZA.CLOSED
+      i = null, r = null, E = [], O = null, v = Chunk981631.QZA.CLOSED
     },
     WEBHOOKS_UPDATE: function(e) {
       let {
@@ -147,8 +147,8 @@ let A = new j(Chunk570140.Z, __OVERLAY__ ? {} : {
         webhooks: l
       } = e;
       if (y = false, null != r && t === r.id && null != i && n === i.id && null != l && v !== m.QZA.SUBMITTING) {
-        for (let e = O.length - 1; e >= 0; e--) {
-          let t = O[e];
+        for (let e = E.length - 1; e >= 0; e--) {
+          let t = E[e];
           if (null != n && (null == t ? true : t.channel_id) !== n) continue;
           let r = l.find(e => {
             let {
@@ -158,16 +158,16 @@ let A = new j(Chunk570140.Z, __OVERLAY__ ? {} : {
           });
           if (null != r) {
             let n = _({}, t, r);
-            O[e] = n, C || (null == E ? true : E.id) !== n.id || (E = n)
-          } else(null == E ? true : E.id) === t.id && (E = null), O.splice(e, 1)
+            E[e] = n, C || (null == O ? true : O.id) !== n.id || (O = n)
+          } else(null == O ? true : O.id) === t.id && (O = null), E.splice(e, 1)
         }
-        for (let e of l) null == O.find(t => {
+        for (let e of l) null == E.find(t => {
           let {
             id: n
           } = t;
           if (n === e.id) returntrue
-        }) && O.push(e);
-        O = [...O], N()
+        }) && E.push(e);
+        E = [...E], N()
       }
     },
     INTEGRATION_SETTINGS_SUBMITTING: function() {

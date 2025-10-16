@@ -18,9 +18,9 @@ var Chunk836560 = require("./836560.js"),
   Chunk852926 = require("./852926.js"),
   Chunk186901 = require("./186901.js"),
   Chunk981631 = require("./981631.js"),
-  O = require("./413135.js").Buffer;
+  E = require("./413135.js").Buffer;
 
-function E(e, t, n) {
+function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -66,14 +66,14 @@ function N(e, t, n) {
       "Access-Control-Allow-Methods": "POST, GET, PUT, PATCH, DELETE",
       "Access-Control-Allow-Headers": "Content-Type, Authorization"
     } : {};
-  n = n ? JSON.stringify(n) : "", r = 200 === r && 0 === n.length ? 204 : r, t.setHeader("Content-Length", O.byteLength(n).toString()), t.setHeader("Content-Type", "application/json"), t.writeHead(r, function(e) {
+  n = n ? JSON.stringify(n) : "", r = 200 === r && 0 === n.length ? 204 : r, t.setHeader("Content-Length", E.byteLength(n).toString()), t.setHeader("Content-Type", "application/json"), t.writeHead(r, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
       "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
         return Object.getOwnPropertyDescriptor(n, e).enumerable
       }))), r.forEach(function(t) {
-        E(e, t, n[t])
+        O(e, t, n[t])
       })
     }
     return e
@@ -97,7 +97,7 @@ class j extends Chunk76238.Z {
     this._socket.close(e, t)
   }
   constructor(e, t, n) {
-    if (super("ws", t, n), E(this, "_socket", true), false === ["etf", "json"].indexOf(n)) throw new f.Z({
+    if (super("ws", t, n), O(this, "_socket", true), false === ["etf", "json"].indexOf(n)) throw new f.Z({
       closeCode: _.$VG.INVALID_ENCODING
     }, "Invalid Encoding: ".concat(n));
     if ("etf" === n && null == r) throw new f.Z({
@@ -114,7 +114,7 @@ class A extends Chunk76238.Z {
     this._closeCallback(t, e)
   }
   constructor(e, t, n, r) {
-    if (super("http", n, r), E(this, "_sendCallback", true), E(this, "_closeCallback", true), "json" !== r) throw new f.Z({
+    if (super("http", n, r), O(this, "_sendCallback", true), O(this, "_closeCallback", true), "json" !== r) throw new f.Z({
       closeCode: _.$VG.INVALID_ENCODING
     }, "Invalid Encoding: ".concat(r));
     this._sendCallback = e, this._closeCallback = t

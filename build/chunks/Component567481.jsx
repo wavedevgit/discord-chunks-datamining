@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 567481, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => O
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -20,8 +20,8 @@ var Chunk481060 = require("./481060.js"),
   Chunk852926 = require("./852926.js"),
   Chunk186901 = require("./186901.js"),
   Chunk981631 = require("./981631.js");
-let O = new Chunk710845.Z("RPCCommandsOverlay"),
-  E = {
+let E = new Chunk710845.Z("RPCCommandsOverlay"),
+  O = {
     [Chunk981631.Etm.SET_OVERLAY_LOCKED]: {
       scope: Chunk186901.lH,
       validation: e => (0, g.Z)(e).required().keys({
@@ -38,7 +38,7 @@ let O = new Chunk710845.Z("RPCCommandsOverlay"),
             application: r
           }
         } = e;
-        if (O.verbose("RPCCommands.SET_OVERLAY_LOCKED", {
+        if (E.verbose("RPCCommands.SET_OVERLAY_LOCKED", {
             locked: t,
             pid: n
           }), null == r.id) throw new f.Z({

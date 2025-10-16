@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 177698, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => E
 }), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -50,15 +50,15 @@ function _(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let O = (0, Chunk703912.Z)(e => {
+let E = (0, Chunk703912.Z)(e => {
   var t;
   let {
     clientId: n,
     authorizations: u,
     scopes: d,
     parsedPermissions: f,
-    responseType: O,
-    redirectUri: E,
+    responseType: E,
+    redirectUri: O,
     codeChallenge: y,
     codeChallengeMethod: v,
     state: I,
@@ -91,7 +91,7 @@ let O = (0, Chunk703912.Z)(e => {
             }, "OAuth2 Error: No location provided")), a.lock();
             return
           }
-          if (e(s), null == E || null == L) return void a.lock();
+          if (e(s), null == O || null == L) return void a.lock();
           null == new URL(s).searchParams.get("error") ? (0, i.h7j)(e => (0, r.jsx)(c.$0, b({
             application: L
           }, e)), {
@@ -130,8 +130,8 @@ let O = (0, Chunk703912.Z)(e => {
       scopes: null != d ? d : [],
       disclosures: null != P ? P : [],
       callback: D,
-      responseType: O,
-      redirectUri: E,
+      responseType: E,
+      redirectUri: O,
       codeChallenge: y,
       codeChallengeMethod: v,
       state: I,

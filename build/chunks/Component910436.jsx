@@ -95,8 +95,8 @@ function y(e) {
       activityUser: L
     } = e;
     if (null == x || null == x.type) return null;
-    if (C.length > 1 && x.type === E.IIU.PLAYING && !(0, a.Z)(x) && null != Z) A((0, r.jsx)(b.Z.GameSection, {
-      icon: Z.getIconURL(O.Z),
+    if (C.length > 1 && x.type === O.IIU.PLAYING && !(0, a.Z)(x) && null != Z) A((0, r.jsx)(b.Z.GameSection, {
+      icon: Z.getIconURL(E.Z),
       name: Z.name,
       partySize: {
         knownSize: w.length,
@@ -115,7 +115,7 @@ function y(e) {
         channel: t,
         guildId: t.guild_id
       }, "embedded-activity-".concat(x.application_id)))
-    } else if (x.type === E.IIU.PLAYING) A((0, r.jsx)(b.Z.RichPresenceSection, {
+    } else if (x.type === O.IIU.PLAYING) A((0, r.jsx)(b.Z.RichPresenceSection, {
       activity: x,
       getAssetImage: g.xF,
       user: L
@@ -139,7 +139,7 @@ function y(e) {
       },
       getAssetImage: g.xF,
       members: w
-    }, "spotify-".concat(null != (_ = x.session_id) ? _ : t, "-").concat(L.id))) : (null != x.assets || (0, a.Z)(x)) && x.type === E.IIU.LISTENING ? A((0, r.jsx)(b.Z.RichPresenceSection, {
+    }, "spotify-".concat(null != (_ = x.session_id) ? _ : t, "-").concat(L.id))) : (null != x.assets || (0, a.Z)(x)) && x.type === O.IIU.LISTENING ? A((0, r.jsx)(b.Z.RichPresenceSection, {
       activity: x,
       getAssetImage: g.xF,
       user: L

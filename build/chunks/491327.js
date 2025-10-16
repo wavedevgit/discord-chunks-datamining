@@ -87,7 +87,7 @@ let v = {
       [Chunk186901.Gp.ANY]: [Chunk243814.x.GUILDS_MEMBERS_READ, Chunk243814.x.GUILDS_CHANNELS_READ]
     },
     handler(e) {
-      let t = (0, O.Z)();
+      let t = (0, E.Z)();
       if (null == t) throw new m.Z({
         errorCode: y.lTL.INVALID_CHANNEL
       }, "Invalid channel");

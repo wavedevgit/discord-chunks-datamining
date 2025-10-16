@@ -38,7 +38,7 @@ let g = function() {
       label: Chunk388032.t.Do4ZJy,
       color: b.hex()
     }], [g, m, b]),
-    O = Chunk647438.useCallback(t => {
+    E = Chunk647438.useCallback(t => {
       (0, u.Yk)({
         isPersisted: true,
         analyticsLocations: e,
@@ -47,9 +47,9 @@ let g = function() {
         theme: t
       })
     }, [module]),
-    E = Chunk647438.useCallback(() => {
-      null != require.current && O(require.current)
-    }, [O]);
+    O = Chunk647438.useCallback(() => {
+      null != require.current && E(require.current)
+    }, [E]);
   return (0, Chunk951288.jsx)("div", {
     className: Chunk932720.themeSection,
     children: (0, Chunk951288.jsxs)("div", {
@@ -57,7 +57,7 @@ let g = function() {
       children: [_.map(e => (0, r.jsxs)("button", {
         type: "button",
         className: h.themeOption,
-        onClick: () => O(e.theme),
+        onClick: () => E(e.theme),
         "aria-label": f.intl.string(e.label),
         children: [(0, r.jsx)("div", {
           className: "".concat(h.themeCircle, " ").concat(t === e.theme ? h.themeCircleSelected : ""),
@@ -69,7 +69,7 @@ let g = function() {
           children: f.intl.string(e.label)
         })]
       }, e.theme)), (0, Chunk951288.jsx)(Chunk481060.hU, {
-        onClick: E,
+        onClick: O,
         "aria-label": Chunk388032.intl.string(Chunk388032.t.yBZMsb),
         icon: Chunk481060.DuK,
         variant: "secondary"

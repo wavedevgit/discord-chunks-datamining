@@ -41,7 +41,7 @@ class v extends Chunk131468.Z {
   constructor(...e) {
     var t;
     super(...e), t = this, y(this, "playingSoundsWeb", new Map), y(this, "_stopAndClearSounds", () => {
-      c.Z.supports(E.AN.SAMPLE_PLAYBACK) && c.Z.getMediaEngine().eachConnection(e => {
+      c.Z.supports(O.AN.SAMPLE_PLAYBACK) && c.Z.getMediaEngine().eachConnection(e => {
         e.stopAllSamplesLocalPlayback()
       }), this.playingSoundsWeb.forEach(e => {
         e.pause(), e.src = ""
@@ -58,7 +58,7 @@ class v extends Chunk131468.Z {
           soundVolume: (0, b.Z)(n),
           reportSoundStartedPlaying: () => (0, f.xR)(e, r)
         };
-        c.Z.supports(E.AN.SAMPLE_PLAYBACK) ? await (0, _.$)(i) : await (0, _.h)(i, t.playingSoundsWeb)
+        c.Z.supports(O.AN.SAMPLE_PLAYBACK) ? await (0, _.$)(i) : await (0, _.h)(i, t.playingSoundsWeb)
       } finally {
         (0, f.R)(e, r)
       }
@@ -67,7 +67,7 @@ class v extends Chunk131468.Z {
     }), y(this, "_handleOpenEducationModal", (e, t) => {
       if (null == e) return;
       let l = s.Z.getChannel(t),
-        c = d.ZP.getKeybindForAction(O.kg4.SOUNDBOARD_HOLD);
+        c = d.ZP.getKeybindForAction(E.kg4.SOUNDBOARD_HOLD);
       null != l && (0, g.Z)(l) && null != c && o.Z.hasHotspot(a.v6.SOUNDBOARD_WHEEL_EDUCATION_MODAL) && (0, i.ZDy)(async () => {
         let {
           default: t

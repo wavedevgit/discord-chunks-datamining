@@ -96,7 +96,7 @@ function A(e) {
       parentAnalyticsLocation: f
     } = (0, g.ZP)(),
     {
-      channel: E,
+      channel: O,
       user: A,
       nick: x,
       mute: Z,
@@ -109,8 +109,8 @@ function A(e) {
       userId: A.id,
       checkSoundSharing: true
     }),
-    M = null != (t = E.getGuildId()) ? t : true,
-    U = A.getAvatarURL(E.guild_id, 24),
+    M = null != (t = O.getGuildId()) ? t : true,
+    U = A.getAvatarURL(O.guild_id, 24),
     G = null != x ? x : v.ZP.getName(A),
     {
       icon: B,
@@ -149,7 +149,7 @@ function A(e) {
       return t => (0, r.jsx)(e, N(T({}, t), {
         user: A,
         guildId: M,
-        channel: E,
+        channel: O,
         showMediaItems: true,
         onInteraction: (0, b.u)("GuildChannelUserContextMenu", h.Z.RTC_PANEL, {
           targetUserId: A.id
@@ -168,11 +168,11 @@ function A(e) {
       }))
     })
   }
-  return (0, r.jsx)(O.Z, {
+  return (0, r.jsx)(E.Z, {
     targetElementRef: p,
     user: A,
     guildId: M,
-    channelId: E.id,
+    channelId: O.id,
     position: "top",
     clickTrap: true,
     children: e => (0, r.jsx)(s.u, {
@@ -214,7 +214,7 @@ function x(e) {
     voiceStates: t,
     channel: n,
     className: l
-  } = e, [s, u] = i.useState(false), d = (0, o.e7)([E.default], () => E.default.getId()), {
+  } = e, [s, u] = i.useState(false), d = (0, o.e7)([O.default], () => O.default.getId()), {
     containerRef: h,
     maxVisibleAvatars: g
   } = function(e) {
@@ -238,7 +238,7 @@ function x(e) {
         if (r.length >= n) return [r, true];
         r.push(i)
       } return [r, false]
-  }(t, d, g), _ = s ? c.V_R : c.qJs, O = (0, r.jsx)(c.M0o, {
+  }(t, d, g), _ = s ? c.V_R : c.qJs, E = (0, r.jsx)(c.M0o, {
     onClick: () => u(!s),
     color: c.YX$.PRIMARY,
     size: c.tT7.SIZE_24,
@@ -273,7 +273,7 @@ function x(e) {
           serverMute: l.mute,
           serverDeaf: l.deaf
         }, t.id) : null
-      }), b ? O : null]
+      }), b ? E : null]
     })
   })
 }

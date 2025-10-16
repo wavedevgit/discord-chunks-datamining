@@ -264,7 +264,7 @@ let e_ = e => {
   }) : t
 };
 e_.Src = eb;
-let eO = e => {
+let eE = e => {
   let {
     priorityUser: t,
     title: n,
@@ -309,8 +309,8 @@ let eO = e => {
     }) : l]
   })
 };
-eO.Icon = e_;
-let eE = e => {
+eE.Icon = e_;
+let eO = e => {
   var t, n, {
       children: r,
       className: l,
@@ -367,7 +367,7 @@ let eE = e => {
     }), t))
   })
 };
-eE.Header = eO, eE.Body = e => {
+eO.Header = eE, eO.Body = e => {
   let {
     children: t
   } = e;
@@ -377,7 +377,7 @@ eE.Header = eO, eE.Body = e => {
     className: ea.body,
     children: t
   })
-}, eE.Separator = ep, eE.VoiceSection = e => {
+}, eO.Separator = ep, eO.VoiceSection = e => {
   var t;
   let {
     guild: n,
@@ -437,7 +437,7 @@ eE.Header = eO, eE.Body = e => {
       })]
     })
   })
-}, eE.GameSection = e => {
+}, eO.GameSection = e => {
   let {
     icon: t,
     name: n,
@@ -467,7 +467,7 @@ eE.Header = eO, eE.Body = e => {
       analyticsLocations: o
     })]
   })
-}, eE.RichPresenceSection = e => {
+}, eO.RichPresenceSection = e => {
   var t, r, l, a;
   let {
     activity: s,
@@ -487,11 +487,11 @@ eE.Header = eO, eE.Body = e => {
   } = eh({
     activity: s,
     user: u
-  }), _ = null != (r = null == (t = (0, L.T7)(p)) ? true : t.src) ? r : n(211827), O = (0, S.Z)({
+  }), _ = null != (r = null == (t = (0, L.T7)(p)) ? true : t.src) ? r : n(211827), E = (0, S.Z)({
     application: p,
     analyticsLocations: d
   });
-  return null != s.assets || (0, E.Z)(s) || null != O ? (0, i.jsxs)(ed, {
+  return null != s.assets || (0, O.Z)(s) || null != E ? (0, i.jsxs)(ed, {
     children: [(0, i.jsxs)("div", {
       className: o()(ea.activitySection, {
         [ea.activitySectionWithButtons]: b
@@ -522,7 +522,7 @@ eE.Header = eO, eE.Body = e => {
           let {
             timestamps: e
           } = s;
-          return null == e || !(0, y.Z)(s) || (0, v.Z)(s) ? null : ec((0, E.Z)(s) ? (0, i.jsx)(eu, {
+          return null == e || !(0, y.Z)(s) || (0, v.Z)(s) ? null : ec((0, O.Z)(s) ? (0, i.jsx)(eu, {
             timestamps: e
           }) : (0, i.jsx)(B.ZP, {
             start: e.start,
@@ -540,7 +540,7 @@ eE.Header = eO, eE.Body = e => {
       analyticsLocations: d
     })]
   }) : null
-}, eE.XboxSection = e => {
+}, eO.XboxSection = e => {
   let {
     title: t
   } = e;
@@ -555,7 +555,7 @@ eE.Header = eO, eE.Body = e => {
       })]
     })
   })
-}, eE.SpotifySection = e => {
+}, eO.SpotifySection = e => {
   var t;
   let {
     activity: {
@@ -593,7 +593,7 @@ eE.Header = eO, eE.Body = e => {
       })]
     })
   })
-}, eE.TwitchSection = e => {
+}, eO.TwitchSection = e => {
   let t, {
       activity: r,
       user: l,
@@ -612,7 +612,7 @@ eE.Header = eO, eE.Body = e => {
       className: ea.twitchSectionPreviewWrapper,
       aspectRatio: 16 / 9,
       children: (0, i.jsxs)(f.P3F, {
-        href: (0, O.Z)(r),
+        href: (0, E.Z)(r),
         tag: "a",
         target: "_blank",
         children: [(0, i.jsx)("img", {
@@ -647,7 +647,7 @@ eE.Header = eO, eE.Body = e => {
       }) : null]
     }), t]
   })
-}, eE.ApplicationStreamingSection = e => {
+}, eO.ApplicationStreamingSection = e => {
   var t, n;
   let {
     activity: r,
@@ -683,7 +683,7 @@ eE.Header = eO, eE.Body = e => {
       })]
     }), h]
   })
-}, eE.EmbeddedActivitySection = e => {
+}, eO.EmbeddedActivitySection = e => {
   let {
     activity: t,
     channel: n,
@@ -707,7 +707,7 @@ eE.Header = eO, eE.Body = e => {
   let b = null != t.created_at && t.created_at > 0 ? {
       start: t.created_at
     } : true,
-    O = (0, ee.xF)(g.id, o, 300);
+    E = (0, ee.xF)(g.id, o, 300);
   return (0, i.jsxs)(ed, {
     children: [(0, i.jsxs)("div", {
       className: ea.embeddedActivityTopRow,
@@ -733,8 +733,8 @@ eE.Header = eO, eE.Body = e => {
       }) : null]
     }), (0, i.jsxs)("div", {
       className: ea.embeddedActivityPlayerContainer,
-      children: [null != O ? (0, i.jsx)("img", {
-        src: O,
+      children: [null != E ? (0, i.jsx)("img", {
+        src: E,
         alt: g.name,
         className: ea.embeddedActivityImage
       }) : null, (0, i.jsxs)("div", {
@@ -763,4 +763,4 @@ eE.Header = eO, eE.Body = e => {
     })]
   })
 };
-let ey = eE
+let ey = eO

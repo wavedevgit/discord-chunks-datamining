@@ -20,10 +20,10 @@ var Chunk647438 = require("./647438.js"),
   Chunk252618 = require("./252618.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let E = new Set(["Blink", "Gecko", "WebKit"]),
+let O = new Set(["Blink", "Gecko", "WebKit"]),
   y = Chunk981631.dG4;
 if (Chunk358085.isPlatformEmbedded) y = e => m.ZP.setBadge(e);
-else if (E.has(o().layout)) {
+else if (O.has(o().layout)) {
   let e = new(l())({
     animation: "none"
   });

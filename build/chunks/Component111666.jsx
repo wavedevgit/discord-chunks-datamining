@@ -62,7 +62,7 @@ function S(e) {
   } = e, n = (0, a.e7)([g.Z], () => g.Z.getPendingCount() > 0), b = (0, o.dQu)(o.TVs.modules.chat.INPUT_ICON_SIZE), S = function() {
     let [e, t] = i.useState(null), {
       showActivityTicker: n
-    } = (0, O.Z)(), r = i.useRef({}), l = i.useRef(null);
+    } = (0, E.Z)(), r = i.useRef({}), l = i.useRef(null);
     return i.useEffect(() => {
       if (!n) {
         t(null), null != l.current && (window.clearTimeout(l.current), l.current = null);
@@ -74,19 +74,19 @@ function S(e) {
         i = (n, i, a) => {
           var o, s, c, u, d, p, h, b, _;
           if (!g.Z.isFriend(n)) returnfalse;
-          let O = m.default.getUser(n);
-          if (null == O) returnfalse;
+          let E = m.default.getUser(n);
+          if (null == E) returnfalse;
           let y = false,
             v = null;
           if (null != i) {
             let t = i.type;
             if (null != t && function(e) {
                 let t = e.type;
-                return t === E.IIU.PLAYING && null != e.application_id || t === E.IIU.LISTENING || t === E.IIU.WATCHING
+                return t === O.IIU.PLAYING && null != e.application_id || t === O.IIU.LISTENING || t === O.IIU.WATCHING
               }(i)) {
-              let l = t === E.IIU.WATCHING || t === E.IIU.LISTENING ? "".concat(t, "-").concat(null != (u = i.name) ? u : "", "-").concat(null != (d = i.state) ? d : "", "-").concat(null != (p = i.details) ? p : "") : "".concat(t, "-").concat(null != (h = i.name) ? h : "");
+              let l = t === O.IIU.WATCHING || t === O.IIU.LISTENING ? "".concat(t, "-").concat(null != (u = i.name) ? u : "", "-").concat(null != (d = i.state) ? d : "", "-").concat(null != (p = i.details) ? p : "") : "".concat(t, "-").concat(null != (h = i.name) ? h : "");
               (null == (c = r.current[n]) ? true : c.presence) !== l && (y = true, e(n, "presence", l), v = {
-                user: O,
+                user: E,
                 activity: i
               })
             } else(null == (s = r.current[n]) ? true : s.presence) != null && (y = true, e(n, "presence", null))
@@ -96,7 +96,7 @@ function S(e) {
             if (null != t) {
               let i = "voice-".concat(t.id);
               (null == (b = r.current[n]) ? true : b.voice) !== i && (y = true, e(n, "voice", i), v = {
-                user: O,
+                user: E,
                 voiceChannel: t
               })
             }

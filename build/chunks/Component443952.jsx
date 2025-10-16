@@ -186,7 +186,7 @@ let G = {
       } = (0, L.T)(), u = (0, h.ZP)({
         application: t.application,
         channelId: null == l ? true : l.id
-      }), d = null != u ? O.Z.getWindow(u) : true;
+      }), d = null != u ? E.Z.getWindow(u) : true;
       (null == d ? true : d.closed) && (d = true);
       let p = null != d ? k.IlC.POPOUT : k.IlC.APP;
       if ((0, j.Pr)({}, null == d ? true : d.document), null != c) {
@@ -259,7 +259,7 @@ let G = {
       return new Promise((e, t) => {
         ! function(e, t) {
           let n;
-          if ((0, p.R)()) n = O.Z.getWindow(k.KJ3.ACTIVITY_POPOUT);
+          if ((0, p.R)()) n = E.Z.getWindow(k.KJ3.ACTIVITY_POPOUT);
           else {
             var r;
             let e = C.Z.getLastFocusedWindowId();
@@ -367,7 +367,7 @@ let G = {
           url: l.url,
           height: l.height,
           width: l.width
-        }]), n = new E.ZP({
+        }]), n = new O.ZP({
           id: N.default.cast(N.default.fromTimestamp(Date.now())),
           applicationId: p,
           content: c,
@@ -379,7 +379,7 @@ let G = {
         let t = false,
           r = (0, R.jU)(d),
           l = a.z1l;
-        (O.Z.getWindowOpen(k.KJ3.ACTIVITY_POPOUT) || r.context === k.IlC.POPOUT) && (l = a.u1M), (0, b.M)({
+        (E.Z.getWindowOpen(k.KJ3.ACTIVITY_POPOUT) || r.context === k.IlC.POPOUT) && (l = a.u1M), (0, b.M)({
           applicationId: p,
           channel: f,
           command: {

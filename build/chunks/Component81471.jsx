@@ -49,20 +49,20 @@ let I = Chunk647438.memo(function(e) {
     className: y.messageReplacement,
     variant: "text-sm/normal",
     color: "text-muted",
-    children: E.intl.string(E.t.BZHld3)
+    children: O.intl.string(O.t.BZHld3)
   });
   else if (n)
     if (null != I && S) A = (0, r.jsx)(s.Text, {
       className: y.messageReplacement,
       variant: "text-sm/normal",
       color: "text-muted",
-      children: E.intl.string(E.t["WPe+xM"])
+      children: O.intl.string(O.t["WPe+xM"])
     });
     else if (null != I && T) A = (0, r.jsx)(s.Text, {
     className: y.messageReplacement,
     variant: "text-sm/normal",
     color: "text-muted",
-    children: E.intl.string(E.t.uxrh1N)
+    children: O.intl.string(O.t.uxrh1N)
   });
   else if (null != I) {
     let {
@@ -71,7 +71,7 @@ let I = Chunk647438.memo(function(e) {
     } = (0, f.f)(I, j, S, T, a()(y.messageContent, v.inlineFormat), {
       leadingIconClass: y.messageContentIcon,
       trailingIconClass: y.messageContentIcon,
-      iconSize: O.WW
+      iconSize: E.WW
     });
     A = null != t ? (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
@@ -89,7 +89,7 @@ let I = Chunk647438.memo(function(e) {
     className: y.messageReplacement,
     variant: "text-sm/normal",
     color: "text-muted",
-    children: E.intl.string(E.t["0KfDxM"])
+    children: O.intl.string(O.t["0KfDxM"])
   });
   else A = null;
   return (0, r.jsx)(c.aQ.Provider, {

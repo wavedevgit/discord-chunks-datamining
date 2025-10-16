@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 141321, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => O
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,12 +21,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk741047 = require("./741047.js");
 
-function E(e) {
+function O(e) {
   let {
     onOpen: t,
     onClose: n,
     "data-jump-section": l
-  } = e, E = (0, o.e7)([g.default], () => g.default.getCurrentUser()), y = i.useRef(null), v = (0, o.e7)([h.ZP], () => (null == E ? true : E.id) != null && h.ZP.getMentionCount(E.id, b.W.NOTIFICATION_CENTER) > 0), {
+  } = e, O = (0, o.e7)([g.default], () => g.default.getCurrentUser()), y = i.useRef(null), v = (0, o.e7)([h.ZP], () => (null == O ? true : O.id) != null && h.ZP.getMentionCount(O.id, b.W.NOTIFICATION_CENTER) > 0), {
     titlebarIconSize: I,
     titlebarHoverHighlight: C
   } = (0, p.T)({
@@ -74,8 +74,8 @@ function E(e) {
             onClick: e,
             "data-jump-section": l,
             "aria-label": _.intl.string(_.t.GSmTKC),
-            className: a()(O.clickable, {
-              [O.withHighlight]: C
+            className: a()(E.clickable, {
+              [E.withHighlight]: C
             }),
             children: v || i ? (0, r.jsxs)(r.Fragment, {
               children: [(0, r.jsx)(d.ZP, {
@@ -84,8 +84,8 @@ function E(e) {
                 width: s.Z[S],
                 children: T
               }), (0, r.jsx)("span", {
-                className: a()(O.badge, {
-                  [O.smol]: "refresh_sm" === S
+                className: a()(E.badge, {
+                  [E.smol]: "refresh_sm" === S
                 })
               })]
             }) : T

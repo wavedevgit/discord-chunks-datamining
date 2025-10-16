@@ -160,10 +160,10 @@ let D = Chunk647438.memo(function() {
               return n
             })(Object(a)).forEach(function(e) {
               Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(a, e))
-            }), i)), A ? (0, r.jsx)(E.Z, {
+            }), i)), A ? (0, r.jsx)(O.Z, {
               focusSectionProps: "HELP" === G ? e : true,
               className: B
-            }) : (0, r.jsx)(O.Z, {
+            }) : (0, r.jsx)(E.Z, {
               focusSectionProps: "HELP" === G ? e : true,
               className: B
             }), (0, r.jsx)(y.Z, {

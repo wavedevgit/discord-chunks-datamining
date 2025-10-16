@@ -65,7 +65,7 @@ async function j(e, t, n) {
   let r, l, o, s, c, {
     client_id: u,
     response_type: d = "code",
-    redirect_uri: O,
+    redirect_uri: E,
     code_challenge: I,
     code_challenge_method: S,
     state: T,
@@ -87,7 +87,7 @@ async function j(e, t, n) {
   if (null == u) throw new v.Z({
     errorCode: C.lTL.OAUTH2_ERROR
   }, "No Client ID provided");
-  if (!M && null != O) throw new v.Z({
+  if (!M && null != E) throw new v.Z({
     errorCode: C.lTL.OAUTH2_ERROR
   }, "Redirect URI cannot be used in the RPC OAuth2 Authorization flow");
   let U = [];
@@ -98,7 +98,7 @@ async function j(e, t, n) {
   else {
     let e = e => {
         var t;
-        return null != e && (0, E.yE)(e.flags, C.udG.EMBEDDED) && (null == (t = e.integrationTypesConfig) ? true : t[i.Y.USER_INSTALL]) != null
+        return null != e && (0, O.yE)(e.flags, C.udG.EMBEDDED) && (null == (t = e.integrationTypesConfig) ? true : t[i.Y.USER_INSTALL]) != null
       },
       t = p.Z.getApplication(u);
     l = e(t) || e(t = b.ZP.createFromServer(await (0, m.UM)(u, k))) ? i.Y.USER_INSTALL : i.Y.GUILD_INSTALL
@@ -111,7 +111,7 @@ async function j(e, t, n) {
       clientId: u,
       scopes: U,
       responseType: d,
-      redirectUri: O,
+      redirectUri: E,
       codeChallenge: I,
       codeChallengeMethod: S,
       state: T,
@@ -132,7 +132,7 @@ async function j(e, t, n) {
       clientId: u,
       scopes: U,
       responseType: d,
-      redirectUri: O,
+      redirectUri: E,
       codeChallenge: I,
       codeChallengeMethod: S,
       state: T,
@@ -161,7 +161,7 @@ async function j(e, t, n) {
     scopes: U,
     parsedPermissions: G,
     responseType: d,
-    redirectUri: O,
+    redirectUri: E,
     codeChallenge: I,
     codeChallengeMethod: S,
     state: T,

@@ -45,12 +45,12 @@ function P(e) {
     width: 0,
     height: 0
   }), k = i.useCallback(() => {
-    O.Z.updateFrameLayoutMode({
+    E.Z.updateFrameLayoutMode({
       applicationId: t.applicationId,
       layoutMode: v.U.PIP
     })
   }, [t.applicationId]), M = i.useCallback(() => {
-    O.Z.stopFrame({
+    E.Z.stopFrame({
       applicationId: t.applicationId
     })
   }, [t.applicationId]);
@@ -66,7 +66,7 @@ function P(e) {
     return e.observe(L.current), () => e.disconnect()
   }, []), i.useEffect(() => {
     let e = e => {
-      null == w.current || w.current.contains(e.target) || l || O.Z.updateFrameLayoutMode({
+      null == w.current || w.current.contains(e.target) || l || E.Z.updateFrameLayoutMode({
         applicationId: t.applicationId,
         layoutMode: v.U.PIP
       })
@@ -109,7 +109,7 @@ function P(e) {
             paddingBottom: B
           },
           ref: L,
-          children: (0, r.jsx)(E.Z, {
+          children: (0, r.jsx)(O.Z, {
             className: T.iframe,
             embedId: z
           })

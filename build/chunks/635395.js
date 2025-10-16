@@ -19,8 +19,8 @@ var Chunk647438 = require("./647438.js"),
   Chunk358085 = require("./358085.js"),
   Chunk998502 = require("./998502.js"),
   Chunk981631 = require("./981631.js");
-let O = (0, Chunk358085.isMac)() ? null : "DEFAULT";
-class E extends Chunk647438.PureComponent {
+let E = (0, Chunk358085.isMac)() ? null : "DEFAULT";
+class O extends Chunk647438.PureComponent {
   componentDidMount() {
     Chunk998502.ZP.setSystemTrayIcon(this.getIcon())
   }
@@ -28,7 +28,7 @@ class E extends Chunk647438.PureComponent {
     Chunk998502.ZP.setSystemTrayIcon(this.getIcon())
   }
   componentWillUnmount() {
-    Chunk998502.ZP.setSystemTrayIcon(O)
+    Chunk998502.ZP.setSystemTrayIcon(E)
   }
   render() {
     return null
@@ -49,7 +49,7 @@ class E extends Chunk647438.PureComponent {
           speaking: n,
           connected: r,
           unread: i
-        } = this.props, l = O;
+        } = this.props, l = E;
         return (0, m.isMac)() && !r ? l : (0, m.isLinux)() || !r ? (i && (l = "UNREAD"), l) : l = e ? "DEAFENED" : t ? "MUTED" : n ? "SPEAKING" : "CONNECTED"
       })
   }
@@ -73,5 +73,5 @@ Chunk358085.isPlatformEmbedded && (Chunk998502.ZP.on("SYSTEM_TRAY_TOGGLE_MUTE", 
     deafened: Chunk131951.Z.isSelfDeaf(),
     unread: Chunk647438
   }
-})(E));
+})(O));
 let v = y

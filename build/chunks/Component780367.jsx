@@ -67,7 +67,7 @@ function b() {
           "aria-selected": b || y
         }, j), t = t = {
           to: {
-            pathname: null != O ? Chunk981631.Z5c.CHANNEL(Chunk981631.ME, O) : Chunk981631.Z5c.ME,
+            pathname: null != O ? Chunk981631.Z5c.CHANNEL(Chunk981631.ME, O) : Chunk981631.Z5c.ME_DMS,
             state: {
               analyticsSource: {
                 page: Chunk981631.ZY5.GUILD_CHANNEL,

@@ -50,21 +50,21 @@ let x = 15 * Chunk70956.Z.Millis.MINUTE,
       applicationStreams: h,
       currentActivities: g,
       voiceChannels: m
-    } = t, b = f.length, _ = h.length, E = g.length, y = m.length > 0, T = p.o.useConfig({
+    } = t, b = f.length, _ = h.length, O = g.length, y = m.length > 0, T = p.o.useConfig({
       location: "itemcard"
     }).demureActivityCards, P = i.useCallback(() => {
       let e = g.filter(e => {
         var t, n;
-        return (null == (t = e.game) ? true : t.name) != null && (0, O.isGameApplicationType)(null == (n = e.game) ? true : n.type)
+        return (null == (t = e.game) ? true : t.name) != null && (0, E.isGameApplicationType)(null == (n = e.game) ? true : n.type)
       }).map(e => e.game.name);
-      O.default.track(N.rMx.NOW_PLAYING_CARD_HOVERED, {
+      E.default.track(N.rMx.NOW_PLAYING_CARD_HOVERED, {
         num_users: b,
         num_streams: _,
-        num_activities: E,
+        num_activities: O,
         in_voice_channel: y,
         games_detected: e
       })
-    }, [b, _, E, y, g]), j = s()(P, x);
+    }, [b, _, O, y, g]), j = s()(P, x);
     return null != c || null != d ? (0, r.jsx)(u.yRy, {
       targetElementRef: o,
       position: "left",

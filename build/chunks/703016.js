@@ -117,14 +117,14 @@ function V(e) {
     message: s,
     optimistic: c
   } = e;
-  if (c || O.Z.isSelfDeaf()) returnfalse;
+  if (c || E.Z.isSelfDeaf()) returnfalse;
   let u = g.Z.getChannel(o);
   if (null == u) returnfalse;
   let d = v.Z.getChannelId(),
     b = h.ZP.getCurrentSidebarChannelId(d),
     _ = o === d || o === b,
     C = p.OW.getSetting() && s.tts && _,
-    T = E.Z.getTTSType(),
+    T = O.Z.getTTSType(),
     N = (null == (t = s.author) ? true : t.id) !== f.default.getId() && (T === j.PrB.ALL_CHANNELS || T === j.PrB.SELECTED_CHANNEL && _);
   if ((C || N) && !y.Z.isBlockedOrIgnoredForMessage(s)) {
     if (x.indexOf(s.id) >= 0) returnfalse;

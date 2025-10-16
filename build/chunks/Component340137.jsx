@@ -48,7 +48,7 @@ function N(e) {
     popoutProps: s,
     ref: g,
     focusSectionProps: b
-  } = e, [E, y] = i.useState(false), N = (0, _.D)(), P = o || N, j = o || P, {
+  } = e, [O, y] = i.useState(false), N = (0, _.D)(), P = o || N, j = o || P, {
     backForwardButtons: A,
     titlebarIconSize: x,
     titlebarHoverHighlight: Z
@@ -56,12 +56,12 @@ function N(e) {
     location: "NotificationsInboxTitleBarButton"
   }), w = (0, r.jsx)(d.Dkj, {
     className: I.icon,
-    color: E || j ? d.TVs.colors.ICON_PRIMARY : d.TVs.colors.ICON_TERTIARY,
+    color: O || j ? d.TVs.colors.ICON_PRIMARY : d.TVs.colors.ICON_TERTIARY,
     size: x
   }), {
     badge: L,
     badgeType: R
-  } = (0, O.h6)({
+  } = (0, E.h6)({
     isSelected: P
   }), D = (0, m.isDesktop)() && A, k = (0, h.A)(), M = (0, m.isMac)() ? C[k] : D ? S[k] : T[k];
   return (0, r.jsxs)(d.Kqy, {

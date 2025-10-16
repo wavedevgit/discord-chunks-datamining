@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk77839 = require("./77839.js");
 
-function O(e, t, n) {
+function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -29,14 +29,14 @@ function O(e, t, n) {
   }) : e[t] = n, e
 }
 
-function E(e) {
+function O(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      O(e, t, n[t])
+      E(e, t, n[t])
     })
   }
   return e
@@ -90,7 +90,7 @@ class v extends Chunk647438.PureComponent {
     c.Pe.updateSetting(e)
   }
   trackRestoreApplication(e, t) {
-    d.default.track(m.rMx.APPLICATION_SETTINGS_UPDATED, E({
+    d.default.track(m.rMx.APPLICATION_SETTINGS_UPDATED, O({
       hidden_enabled: t
     }, e.getAnalyticsData()))
   }
@@ -132,7 +132,7 @@ class v extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), O(this, "handleRestoreHiddenLibraryApplication", e => {
+    super(...e), E(this, "handleRestoreHiddenLibraryApplication", e => {
       let t = p.x9(e.getFlags(), m.eHb.HIDDEN);
       o.h(e.id, e.branchId, t), this.trackRestoreApplication(e, p.yE(t, m.eHb.HIDDEN))
     })
@@ -145,5 +145,5 @@ function I() {
     installShortcutStartMenu: Chunk695346.Pe.useSetting(),
     hiddenLibraryApplicationViewItems: (0, Chunk442837.e7)([Chunk490983.Z], () => Chunk490983.Z.hiddenLibraryApplicationViewItems)
   };
-  return (0, Chunk951288.jsx)(v, E({}, module))
+  return (0, Chunk951288.jsx)(v, O({}, module))
 }

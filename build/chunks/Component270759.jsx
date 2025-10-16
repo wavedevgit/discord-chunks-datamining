@@ -53,9 +53,9 @@ let x = function(e) {
       l.replace(T.Z5c.ME)
     })
   }, [l, n]), i.useEffect(() => {
-    d.Y(T.Z5c.FRIENDS), (0, O.e)("friends")
+    d.Y(T.Z5c.FRIENDS), (0, E.e)("friends")
   }, []);
-  let b = (0, s.e7)([E.Z], () => E.Z.theme),
+  let b = (0, s.e7)([O.Z], () => O.Z.theme),
     x = (0, I.If)(),
     {
       section: Z,

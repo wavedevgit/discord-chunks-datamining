@@ -72,7 +72,7 @@ function N(e) {
         isGift: true,
         initialPlanId: null,
         giftRecipient: t,
-        analyticsLocation: (0, E.F)(n).actionButton,
+        analyticsLocation: (0, O.F)(n).actionButton,
         analyticsLocations: P,
         analyticsObject: {
           page: l,
@@ -84,7 +84,7 @@ function N(e) {
       })
     },
     D = () => n === v.hX.FRIEND_ANNIVERSARY ? C.intl.formatToPlainString(C.t["L2s/Nz"], {
-      numberOfYears: O.Z.getFriendAnniversaryYears(t.id)
+      numberOfYears: E.Z.getFriendAnniversaryYears(t.id)
     }) : (0, b.Ou)(n),
     k = () => n === v.hX.FRIEND_ANNIVERSARY ? C.intl.string(C.t["4LohBA"]) : (0, b.Ou)(n),
     M = i.useRef(null);

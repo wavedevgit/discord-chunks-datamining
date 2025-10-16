@@ -74,17 +74,17 @@ function P(e) {
       cancelText: S.intl.string(S.t["ETE/oK"]),
       onConfirm: h
     })
-  }, [h, l, t]), O = (0, o.e7)([g.Z], () => g.Z.supports(C.AN.VIDEO)), E = t.isProvisional, y = l ? S.intl.string(S.t["RLcE6+"]) : S.intl.string(S.t.cvSt1N);
+  }, [h, l, t]), E = (0, o.e7)([g.Z], () => g.Z.supports(C.AN.VIDEO)), O = t.isProvisional, y = l ? S.intl.string(S.t["RLcE6+"]) : S.intl.string(S.t.cvSt1N);
   return (0, r.jsxs)(s.v2r, {
     navId: "friend-row",
     "aria-label": S.intl.string(S.t.liqwPD),
     onClose: d.Zy,
     onSelect: a,
-    children: [!E && O ? (0, r.jsx)(s.sNh, {
+    children: [!O && E ? (0, r.jsx)(s.sNh, {
       id: "start-video-call",
       label: S.intl.string(S.t.oCqlGB),
       action: f
-    }) : null, !E && (0, r.jsx)(s.sNh, {
+    }) : null, !O && (0, r.jsx)(s.sNh, {
       id: "start-voice-call",
       label: S.intl.string(S.t.focH1t),
       action: p
@@ -146,12 +146,12 @@ class j extends Chunk647438.PureComponent {
             giftIntentType: c,
             analyticsPage: I.ZY5.FRIENDS_LIST,
             shouldHighlight: t
-          }), (0, r.jsx)(O.Z, {
+          }), (0, r.jsx)(E.Z, {
             icon: s.kBi,
             tooltip: S.intl.string(S.t["g33r/P"]),
             onClick: this.handleOpenPrivateChannel,
             shouldHighlight: t
-          }), (0, r.jsx)(O.Z, {
+          }), (0, r.jsx)(E.Z, {
             icon: s.Huf,
             tooltip: S.intl.string(S.t.UKOtz8),
             onClick: this.handleOpenActionsMenu,

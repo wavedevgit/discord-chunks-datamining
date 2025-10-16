@@ -226,11 +226,11 @@ let M = {
         case w.jE.OAUTH2:
           let r = new URL(L.Z5c.OAUTH2_AUTHORIZE, window.location.origin);
           r.search = n.search;
-          let l = (0, O.getOAuth2AuthorizeProps)(r.toString());
-          if (null != l) return (0, O.openOAuth2ModalWithCreateGuildModal)(l), true;
+          let l = (0, E.getOAuth2AuthorizeProps)(r.toString());
+          if (null != l) return (0, E.openOAuth2ModalWithCreateGuildModal)(l), true;
           returnfalse;
         case w.jE.ONE_TIME_LOGIN:
-          if (null != n) return (0, E.Y)({
+          if (null != n) return (0, O.Y)({
             token: n.token
           }), k(n.fingerprint, (0, w.O)(t)), true;
           returnfalse;

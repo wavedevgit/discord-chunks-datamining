@@ -86,7 +86,7 @@ function x(e) {
   let {
     nodeRef: c,
     quest: b
-  } = e, _ = (0, u.O5)(), O = (0, o.e7)([h.Z], () => h.Z.isEnrolling(b.id), [b]), [T, x] = i.useState(false), Z = i.useCallback(() => x(true), []), w = i.useCallback(() => x(false), []), {
+  } = e, _ = (0, u.O5)(), E = (0, o.e7)([h.Z], () => h.Z.isEnrolling(b.id), [b]), [T, x] = i.useState(false), Z = i.useCallback(() => x(true), []), w = i.useCallback(() => x(false), []), {
     launchInGameActivity: L
   } = (0, f.zB)(b), R = i.useCallback(e => {
     e.stopPropagation()
@@ -146,7 +146,7 @@ function x(e) {
       className: P.utils,
       children: [G ? (0, r.jsx)(A, {
         quest: b
-      }) : (0, r.jsx)(E.Z, {}), (0, r.jsx)(v.r, {
+      }) : (0, r.jsx)(O.Z, {}), (0, r.jsx)(v.r, {
         quest: b,
         questContent: g.jn.ACTIVITY_PANEL,
         shouldShowDisclosure: (null == (l = b.userStatus) ? true : l.enrolledAt) == null,
@@ -206,7 +206,7 @@ function x(e) {
           variant: "primary",
           text: W,
           onClick: D,
-          loading: O,
+          loading: E,
           icon: (0, I.gF)(b)
         })]
       }), G && !B && (0, r.jsx)(s.Button, {
@@ -226,7 +226,7 @@ function x(e) {
   })
 }
 let Z = function(e) {
-  return (0, r.jsx)(O.A, {
+  return (0, r.jsx)(E.A, {
     questOrQuests: e.quest,
     questContent: g.jn.ACTIVITY_PANEL,
     sourceQuestContent: g.jn.ACTIVITY_PANEL,

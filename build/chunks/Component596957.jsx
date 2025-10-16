@@ -128,7 +128,7 @@ let L = function(e) {
     }(e, ["key"]);
     switch (x) {
       case S.pJs.PENDING:
-        return (0, r.jsx)(O.Z, j(P({}, n), {
+        return (0, r.jsx)(E.Z, j(P({}, n), {
           isFocused: L
         }), t);
       case S.pJs.SUGGESTIONS:
@@ -242,7 +242,7 @@ let L = function(e) {
           onChange: G,
           onClear: B
         })
-      }), (0, r.jsx)(E.Z, {
+      }), (0, r.jsx)(O.Z, {
         rows: W,
         renderRow: U,
         renderSection: Q,

@@ -126,7 +126,7 @@ function ei() {
         hasSingleMessageRequest: l
       }, u)
     }, [Chunk120356, require, Chunk112724]),
-    O = Chunk647438.useCallback(() => (0, Chunk951288.jsxs)(Chunk82295.Z, {
+    E = Chunk647438.useCallback(() => (0, Chunk951288.jsxs)(Chunk82295.Z, {
       className: Chunk803882.sectionTitle,
       children: [exports > 0 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.rA4iWV, {
         count: exports
@@ -183,7 +183,7 @@ function ei() {
           paddingBottom: 24,
           sectionHeight: K.oi,
           rowHeight: K.WN,
-          renderSection: O,
+          renderSection: E,
           renderRow: _,
           sections: [n.length],
           chunkSize: 30,
@@ -205,7 +205,7 @@ function el(e) {
     sidebarType: _.y.MessageRequestSidebar,
     maxWidth: a,
     onWidthChange: n,
-    children: (0, r.jsx)(O.Z, {
+    children: (0, r.jsx)(E.Z, {
       channel: l,
       baseChannelId: w.uZ
     })
@@ -288,11 +288,11 @@ let es = (0, Chunk112724.Z)(function(e) {
     g = null == h ? true : h.channelId,
     b = null != h,
     _ = (0, M.T)(g),
-    O = (0, k.J)(g),
-    E = i.useRef(null);
+    E = (0, k.J)(g),
+    O = i.useRef(null);
   i.useEffect(() => {
-    null != g && !_ && O && b && ((0, T.Kh)(g), N.Z.closeChannelSidebar(w.uZ))
-  }, [g, O, b, _]);
+    null != g && !_ && E && b && ((0, T.Kh)(g), N.Z.closeChannelSidebar(w.uZ))
+  }, [g, E, b, _]);
   let [v, I] = i.useState(K.pS.REQUESTS), x = e => {
     I(e)
   };
@@ -313,9 +313,9 @@ let es = (0, Chunk112724.Z)(function(e) {
             icon: p._XJ,
             "aria-hidden": true
           }), (0, r.jsx)(ea, {
-            targetElementRef: E,
+            targetElementRef: O,
             children: (0, r.jsx)(C.Z.Title, {
-              ref: E,
+              ref: O,
               children: $.intl.string($.t.e7GWjY)
             })
           }), (0, r.jsx)(C.Z.Divider, {}), (0, r.jsxs)(p.njP, {

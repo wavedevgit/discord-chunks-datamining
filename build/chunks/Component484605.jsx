@@ -24,8 +24,8 @@ let g = e => {
     dismissCoachmark: b,
     children: _
   } = e, {
-    analyticsLocations: O
-  } = (0, o.ZP)(a.Z.CHURN_DISCOUNT_POPOVER), E = (0, c.W7)(d.Xh.PREMIUM_MONTH_TIER_2, g, m), y = (0, r.jsx)(i.Z, {
+    analyticsLocations: E
+  } = (0, o.ZP)(a.Z.CHURN_DISCOUNT_POPOVER), O = (0, c.W7)(d.Xh.PREMIUM_MONTH_TIER_2, g, m), y = (0, r.jsx)(i.Z, {
     targetElementRef: t,
     position: "right",
     align: "top",
@@ -37,7 +37,7 @@ let g = e => {
       percent: g.discount.amount
     }).toString(),
     body: f.intl.format(f.t["3Q4wCw"], {
-      discountedPrice: E,
+      discountedPrice: O,
       billingPeriod: (0, s.JP)(g.discount.user_usage_limit_interval),
       numMonths: g.discount.user_usage_limit
     }),
@@ -75,7 +75,7 @@ let g = e => {
               return e
             }({}, t), i = i = {
               premiumSubscription: m,
-              analyticsLocations: O,
+              analyticsLocations: E,
               initialStep: u.R.CONFIRM_DISCOUNT
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
               var n = Object.keys(e);

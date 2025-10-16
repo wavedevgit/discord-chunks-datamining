@@ -27,8 +27,8 @@ function h(e) {
   }, []), _ = i.useCallback(() => {
     o.Z.closeChannelSidebar(s.uZ), g && (0, a.Kh)(h.id)
   }, [h.id, g]), {
-    acceptMessageRequest: O,
-    rejectMessageRequest: E,
+    acceptMessageRequest: E,
+    rejectMessageRequest: O,
     isAcceptLoading: y,
     isRejectLoading: v,
     isUserProfileLoading: I,
@@ -56,7 +56,7 @@ function h(e) {
           size: "sm",
           text: p.intl.string(p.t.B2nygY),
           onClick: e => {
-            e.stopPropagation(), E(h.id)
+            e.stopPropagation(), O(h.id)
           },
           disabled: T,
           loading: v || S
@@ -69,7 +69,7 @@ function h(e) {
           size: "sm",
           text: p.intl.string(p.t.Kz8Pws),
           onClick: e => {
-            e.stopPropagation(), O(h.id)
+            e.stopPropagation(), E(h.id)
           },
           disabled: T,
           loading: y || I || C
