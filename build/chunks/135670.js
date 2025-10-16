@@ -59,6 +59,7 @@ class c extends Chunk47770.Z {
   getVideoInputDeviceId() {
     return Chunk65154.Av
   }
+  setAsyncVideoInputDeviceInit(e) {}
   getSupportedVideoCodecs(e) {
     e([])
   }

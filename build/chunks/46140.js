@@ -2,29 +2,31 @@
 /** chunk id: 46140, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
+  $z: () => S,
   Dp: () => O,
-  Ew: () => x,
+  Ew: () => j,
   HO: () => E,
-  Jp: () => N,
-  Lv: () => A,
+  Jk: () => T,
+  Jp: () => P,
+  Lv: () => N,
   NH: () => b,
   Ot: () => f,
   R4: () => p,
   S7: () => Chunk670081.S,
   Ts: () => y,
-  UP: () => w,
+  UP: () => L,
   V6: () => I,
   V_: () => v,
   XZ: () => _,
   a_: () => Chunk438954.a,
   cd: () => h,
   dr: () => d,
-  l$: () => S,
-  oH: () => P,
+  l$: () => C,
+  oH: () => D,
   tD: () => g,
-  tt: () => C,
-  v6: () => T,
-  yq: () => R
+  tt: () => R,
+  v6: () => A,
+  yq: () => w
 }), require("./388685.js"), require("./642613.js");
 var Chunk392711 = require("./392711.js"),
   Chunk754700 = require("./754700.js"),
@@ -63,23 +65,25 @@ var v = function(e) {
   return e.EXCLUDED_QUEST = "excluded_quest", e.UNKNOWN_QUEST = "unknown_quest", e.NOT_SHAREABLE_QUEST = "not_shareable_quest", e
 }({});
 let I = "1333839522189938740",
-  T = new Set([Chunk497505.Ok.DESKTOP_ACCOUNT_PANEL_AREA, Chunk497505.Ok.MOBILE_HOME_DOCK_AREA]),
-  S = new Set([Chunk754700.X.STREAM_ON_DESKTOP, Chunk754700.X.PLAY_ON_DESKTOP, Chunk754700.X.PLAY_ON_XBOX, Chunk754700.X.PLAY_ON_PLAYSTATION, Chunk754700.X.PLAY_ON_DESKTOP_V2]),
-  A = new Set([Chunk754700.X.STREAM_ON_DESKTOP, Chunk754700.X.PLAY_ON_DESKTOP, Chunk754700.X.PLAY_ON_XBOX, Chunk754700.X.PLAY_ON_PLAYSTATION, Chunk754700.X.PLAY_ON_DESKTOP_V2]),
-  C = new Set([Chunk754700.X.STREAM_ON_DESKTOP, Chunk754700.X.PLAY_ON_DESKTOP, Chunk754700.X.PLAY_ON_XBOX, Chunk754700.X.PLAY_ON_PLAYSTATION, Chunk754700.X.PLAY_ON_DESKTOP_V2]),
-  N = {
+  T = "1420556874629251124",
+  S = "1402418703554842694",
+  A = new Set([Chunk497505.Ok.DESKTOP_ACCOUNT_PANEL_AREA, Chunk497505.Ok.MOBILE_HOME_DOCK_AREA]),
+  C = new Set([Chunk754700.X.STREAM_ON_DESKTOP, Chunk754700.X.PLAY_ON_DESKTOP, Chunk754700.X.PLAY_ON_XBOX, Chunk754700.X.PLAY_ON_PLAYSTATION, Chunk754700.X.PLAY_ON_DESKTOP_V2, Chunk754700.X.PLAY_ACTIVITY]),
+  N = new Set([Chunk754700.X.STREAM_ON_DESKTOP, Chunk754700.X.PLAY_ON_DESKTOP, Chunk754700.X.PLAY_ON_XBOX, Chunk754700.X.PLAY_ON_PLAYSTATION, Chunk754700.X.PLAY_ON_DESKTOP_V2, Chunk754700.X.PLAY_ACTIVITY]),
+  R = new Set([Chunk754700.X.STREAM_ON_DESKTOP, Chunk754700.X.PLAY_ON_DESKTOP, Chunk754700.X.PLAY_ON_XBOX, Chunk754700.X.PLAY_ON_PLAYSTATION, Chunk754700.X.PLAY_ON_DESKTOP_V2, Chunk754700.X.PLAY_ACTIVITY]),
+  P = {
     is_targeted: false
   };
-var R = function(e) {
+var w = function(e) {
     return e.SUGGESTED = "suggested", e.MOST_RECENT = "most_recent", e.EXPIRING_SOON = "expiring_soon", e.RECENTLY_ENROLLED = "recently_enrolled", e
   }({}),
-  P = function(e) {
+  D = function(e) {
     return e.VIDEO = "task_video", e.PLAY = "task_play", e
   }({}),
-  w = function(e) {
+  L = function(e) {
     return e.VIRTUAL_CURRENCY = "reward_virtual_currency", e.COLLECTIBLE = "reward_collectible", e.IN_GAME = "reward_in_game", e
   }({});
-let D = [{
+let x = [{
     group: "task",
     filter: "task_play"
   }, {
@@ -95,9 +99,9 @@ let D = [{
     group: "reward",
     filter: "reward_in_game"
   }],
-  L = ["reward", "task"],
-  x = Object.entries((0, Chunk392711.groupBy)(D, "group")).sort((e, t) => {
-    let n = L.indexOf(e[0]),
-      r = L.indexOf(t[0]);
+  M = ["reward", "task"],
+  j = Object.entries((0, Chunk392711.groupBy)(x, "group")).sort((e, t) => {
+    let n = M.indexOf(e[0]),
+      r = M.indexOf(t[0]);
     return n < r ? false : +(r < n)
   })

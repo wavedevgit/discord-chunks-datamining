@@ -56,7 +56,7 @@ function _(e) {
             icon: i.kBi,
             label: g.intl.string(m.default.bBkeMj),
             action: () => {
-              (0, l.q)({
+              (0, o.q)({
                 href: u.uz[t.providerType]
               })
             }
@@ -69,7 +69,7 @@ function _(e) {
                 guildId: n,
                 stepConfig: x,
                 initialGameServerInstance: t,
-                analyticsLocation: o.Z.GAME_SERVER_OVERVIEW
+                analyticsLocation: l.Z.GAME_SERVER_OVERVIEW
               })
             }
           })]

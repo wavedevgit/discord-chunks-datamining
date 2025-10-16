@@ -183,7 +183,7 @@ function q(e, t) {
   if (null == e) returnfalse;
   let n = e.name.toLowerCase(),
     r = x.r.build(t.config).application.name.toLowerCase();
-  return K(e) || z(e) ? n === r : null != e.application_id && Q(e.application_id, t)
+  return K(e) || z(e) ? n === r : null != t && t.id === j.Jk && e.application_id === j.$z || null != e.application_id && Q(e.application_id, t)
 }
 
 function X(e, t) {
