@@ -1,4 +1,4 @@
-/** Chunk was on 3091 **/
+/** Chunk was on 22325 **/
 /** chunk id: 682085, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -106,10 +106,10 @@ function j() {
       } = e;
       switch (n) {
         case o.z.APPLICATION_WIDGET_EMPTY_STATE_CARD_ADD_WIDGET:
-          return (0, r.jsxs)(c.Kqy, {
+          return (0, r.jsxs)(s.Kqy, {
             gap: 16,
             align: "center",
-            children: [(0, r.jsx)(c.LZC, {
+            children: [(0, r.jsx)(s.LZC, {
               size: 32
             }), w, (0, r.jsx)(m.Z, {
               user: t,
@@ -118,14 +118,14 @@ function j() {
             }), (0, r.jsx)(b.Z, {})]
           });
         case null:
-          return (0, r.jsxs)(c.Kqy, {
+          return (0, r.jsxs)(s.Kqy, {
             gap: 32,
             align: "center",
-            children: [(0, r.jsx)(c.LZC, {
+            children: [(0, r.jsx)(s.LZC, {
               size: 128
-            }), w, (0, r.jsx)(c.Button, {
-              icon: c.qJs,
-              text: y.intl.string(y.t.lBG2s7),
+            }), w, (0, r.jsx)(s.Button, {
+              icon: s.qJs,
+              text: v.intl.string(v.t.lBG2s7),
               size: "md",
               color: "secondary",
               onClick: I

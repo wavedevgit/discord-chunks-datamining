@@ -492,8 +492,8 @@ function ts(e) {
   if (!q.Z.isConnected()) return;
   let {
     location: i
-  } = (0, ey.s1)();
-  i.pathname === r && (null == eV.Z.getChannel(t) ? (0, ey.dL)(e4.Z5c.CHANNEL(n)) : (0, ey.dL)(r))
+  } = (0, ev.s1)();
+  i.pathname === r && (null == eV.Z.getChannel(t) ? (0, ev.dL)(e4.Z5c.CHANNEL(n)) : (0, ev.dL)(r))
 }
 class tc extends Chunk647438.PureComponent {
   componentDidMount() {
@@ -561,7 +561,7 @@ class tc extends Chunk647438.PureComponent {
           let e = eH.ZP.getCurrentSidebarChannelId(n) !== s,
             t = null != eH.ZP.getGuildSidebarState(r);
           if (null != i && null != s && e)
-            if (t)(0, ey.dL)(e4.Z5c.CHANNEL(r, s, o));
+            if (t)(0, ev.dL)(e4.Z5c.CHANNEL(r, s, o));
             else {
               let e = {
                 type: eS.Ff.THREAD
@@ -584,7 +584,7 @@ class tc extends Chunk647438.PureComponent {
       } else ti.some(t => {
         var n;
         return (null == (n = (0, a.LX)(e, t)) ? true : n.isExact) === true
-      }) || (0, ey.dL)(eF.Z.fallbackRoute)
+      }) || (0, ev.dL)(eF.Z.fallbackRoute)
     }(n, r), (0, M.pN)(n, i, "REPLACE" === t)
   }
   ensureChannelMatchesGuild(e) {

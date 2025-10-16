@@ -1,15 +1,15 @@
-/** Chunk was on 31029 **/
+/** Chunk was on 84071 **/
 /** chunk id: 699758, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   KN: () => a,
-  ZP: () => o,
+  ZP: () => s,
   mo: () => l
 }), require("./388685.js"), require("./539854.js");
 var r, Chunk647438 = require("./647438.js"),
   a = ((r = {})[r.Trick = 0] = "Trick", r[r.Treat = 1] = "Treat", r);
 let l = 2;
 
-function o(e, t, n) {
+function s(e, t, n) {
   let r = i.useRef(Math.random());
   return i.useMemo(() => {
     if (null == e || 0 === e.length) return null;
@@ -22,13 +22,13 @@ function o(e, t, n) {
     }
     let i = [],
       a = new Map,
-      o = new Map;
+      s = new Map;
     for (let n of t)
       if (n.variants.length >= l)
         for (let t = 0; t < l; t++) {
           let r = t,
             l = n.variants[t];
-          e.some(e => e.skuId === l.skuId) && (o.set(l.skuId, r), a.has(r) || (i.push(r), a.set(r, function(e, t) {
+          e.some(e => e.skuId === l.skuId) && (s.set(l.skuId, r), a.has(r) || (i.push(r), a.set(r, function(e, t) {
             return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {
@@ -62,16 +62,16 @@ function o(e, t, n) {
         }
     if (0 === i.length) return null;
     if (null != n) {
-      let e = o.get(n.skuId);
+      let e = s.get(n.skuId);
       if (null != e) return {
         defaultCategory: e,
         defaultHighlightedReward: n
       }
     }
-    let s = i[Math.floor(r.current * i.length)];
+    let o = i[Math.floor(r.current * i.length)];
     return {
-      defaultCategory: s,
-      defaultHighlightedReward: a.get(s)
+      defaultCategory: o,
+      defaultHighlightedReward: a.get(o)
     }
   }, [e, t, n])
 }

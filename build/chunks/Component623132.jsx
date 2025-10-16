@@ -1,4 +1,4 @@
-/** Chunk was on 3091 **/
+/** Chunk was on 22325 **/
 /** chunk id: 623132, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => A
@@ -85,10 +85,10 @@ function S(e) {
     sourceUserId: n,
     trackEntryPointImpression: true
   });
-  return null == l ? (0, r.jsx)(c.Heading, w(I({}, a), {
+  return null == l ? (0, r.jsx)(s.Heading, w(I({}, a), {
     children: i
-  })) : (0, r.jsx)(c.Heading, w(I({}, a), {
-    children: (0, r.jsx)(c.P3F, {
+  })) : (0, r.jsx)(s.Heading, w(I({}, a), {
+    children: (0, r.jsx)(s.P3F, {
       onClick: l,
       className: P.clickableText,
       children: i
@@ -103,7 +103,7 @@ function E(e) {
     channelId: i,
     id: a
   } = e;
-  return (0, r.jsx)(c.nn4, {
+  return (0, r.jsx)(s.nn4, {
     id: a,
     children: x.intl.format(x.t.TM0XDQ, {
       name: g.ZP.getName(n, i, t)
@@ -116,7 +116,7 @@ function T(e) {
     text: t,
     className: n
   } = e;
-  return (0, r.jsx)(c.Text, {
+  return (0, r.jsx)(s.Text, {
     variant: "text-sm/normal",
     color: "text-tertiary",
     className: n,
@@ -130,13 +130,13 @@ function C(e) {
     user: n,
     guildId: i,
     channelId: a
-  } = e, l = (0, s.Dt)();
+  } = e, l = (0, c.Dt)();
   return null == t || "" === t.trim() ? null : (0, r.jsxs)("div", {
     role: "group",
     "aria-labelledby": l,
-    children: [(0, r.jsx)(c.PEf, {
+    children: [(0, r.jsx)(s.PEf, {
       size: "xxs",
-      color: c.TVs.colors.ICON_TERTIARY,
+      color: s.TVs.colors.ICON_TERTIARY,
       className: P.commentIcon
     }), (0, r.jsx)(E, {
       user: n,
@@ -149,7 +149,7 @@ function C(e) {
   })
 }
 
-function D(e) {
+function N(e) {
   let {
     text: t,
     user: n,
@@ -157,17 +157,17 @@ function D(e) {
     channelId: u,
     widgetType: d,
     applicationId: f
-  } = e, g = (0, s.Dt)(), b = (0, s.Dt)(), {
+  } = e, g = (0, c.Dt)(), b = (0, c.Dt)(), {
     trackUserProfileEditAction: h
-  } = (0, p.KZ)(), [y, v] = i.useState("idle"), [j, O] = i.useState(null != t ? t : ""), _ = i.useRef(null), I = i.useRef(null), w = x.intl.string(x.t.xKSfBQ), S = null != t && "" !== t.trim(), C = i.useCallback(() => {
+  } = (0, p.KZ)(), [v, y] = i.useState("idle"), [j, O] = i.useState(null != t ? t : ""), _ = i.useRef(null), I = i.useRef(null), w = x.intl.string(x.t.xKSfBQ), S = null != t && "" !== t.trim(), C = i.useCallback(() => {
     h({
       action: "PRESS_ADD_COMMENTARY",
       widgetEdited: d
-    }), v("editing")
-  }, [d, h]), D = i.useCallback(() => {
+    }), y("editing")
+  }, [d, h]), N = i.useCallback(() => {
     let e = j.trim(),
       n = e !== (null != t ? t : "").trim();
-    (0, m.Bu)(d, f, "" !== e ? e : true), v("completed"), n && h({
+    (0, m.Bu)(d, f, "" !== e ? e : true), y("completed"), n && h({
       action: "COMMENTARY_EDITED",
       widgetEdited: d,
       gameId: f
@@ -176,28 +176,28 @@ function D(e) {
     O(e)
   }, []);
   return i.useEffect(() => {
-    "editing" === y && O(null != t ? t : "")
-  }, [t, y]), i.useEffect(() => {
-    if ("completed" === y) {
+    "editing" === v && O(null != t ? t : "")
+  }, [t, v]), i.useEffect(() => {
+    if ("completed" === v) {
       var e;
       null == (e = _.current) || e.focus()
     }
-  }, [y]), "editing" === y ? (0, r.jsxs)("div", {
+  }, [v]), "editing" === v ? (0, r.jsxs)("div", {
     className: P.textAreaContainer,
-    children: [(0, r.jsx)(c.nn4, {
+    children: [(0, r.jsx)(s.nn4, {
       tag: "label",
       htmlFor: g,
       children: x.intl.string(x.t.JxKXeX)
-    }), (0, r.jsx)(c.Kx8, {
+    }), (0, r.jsx)(s.Kx8, {
       id: g,
       value: j,
       placeholder: w,
       onChange: A,
-      onBlur: D,
+      onBlur: N,
       rows: 3,
-      autoFocus: "editing" === y,
+      autoFocus: "editing" === v,
       onKeyDown: e => {
-        "Enter" !== e.key || e.shiftKey || (e.preventDefault(), D())
+        "Enter" !== e.key || e.shiftKey || (e.preventDefault(), N())
       },
       maxLength: o.rN
     })]
@@ -207,9 +207,9 @@ function D(e) {
     "aria-labelledby": b,
     onClick: C,
     className: P.editableCommentContainer,
-    children: [(0, r.jsx)(c.vdY, {
+    children: [(0, r.jsx)(s.vdY, {
       size: "xxs",
-      color: c.TVs.colors.ICON_TERTIARY,
+      color: s.TVs.colors.ICON_TERTIARY,
       className: P.commentIcon
     }), (0, r.jsx)(E, {
       user: n,
@@ -219,7 +219,7 @@ function D(e) {
     }), (0, r.jsx)(T, {
       text: null != t ? t : w,
       className: l()(P.editableCommentText, !S && P.placeholder)
-    }), (0, r.jsx)(c.P3F, {
+    }), (0, r.jsx)(s.P3F, {
       innerRef: _,
       "aria-label": x.intl.string(x.t.ppb9MD),
       onClick: e => {
@@ -241,7 +241,7 @@ function A(e) {
     widgetType: l,
     disableInteraction: o = false
   } = e, {
-    gameName: s = x.intl.string(x.t.GIWFlJ),
+    gameName: c = x.intl.string(x.t.GIWFlJ),
     imageSrc: u,
     applicationId: d,
     comment: g,
@@ -249,26 +249,26 @@ function A(e) {
   } = a, E = {
     variant: "heading-sm/medium",
     color: "text-default"
-  }, T = f.default.getCurrentUser(), A = (null == T ? true : T.id) === t.id, N = !o && A && (0, m.vI)(l);
-  return (0, b.kO)(d) ? (0, r.jsx)(y.i, {}) : (0, r.jsxs)("div", {
+  }, T = f.default.getCurrentUser(), A = (null == T ? true : T.id) === t.id, D = !o && A && (0, m.vI)(l);
+  return (0, b.kO)(d) ? (0, r.jsx)(v.i, {}) : (0, r.jsxs)("div", {
     className: P.card,
     children: [(0, r.jsx)(h.Z, {
       className: null == u || o ? true : _.hoverActiveEffect,
       imageSrc: u,
-      gameName: s,
+      gameName: c,
       applicationId: d,
       userId: t.id,
       disableInteraction: o,
       hideTooltip: true
     }), (0, r.jsxs)("div", {
       className: P.details,
-      children: [o ? (0, r.jsx)(c.Heading, w(I({}, E), {
-        children: s
+      children: [o ? (0, r.jsx)(s.Heading, w(I({}, E), {
+        children: c
       })) : (0, r.jsx)(S, I({
         applicationId: d,
         userId: t.id,
-        gameName: s
-      }, E)), N ? (0, r.jsx)(D, {
+        gameName: c
+      }, E)), D ? (0, r.jsx)(N, {
         text: g,
         user: t,
         guildId: n,
@@ -280,7 +280,7 @@ function A(e) {
         user: t,
         guildId: n,
         channelId: i
-      }), (0, r.jsx)(v.Z, {
+      }), (0, r.jsx)(y.Z, {
         tags: p,
         isCurrentUser: A,
         widgetType: l,

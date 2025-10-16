@@ -41,16 +41,16 @@ function h(e) {
     }), m.current = true
   }, [t, _, b, n, l]);
   let E = null != _,
-    [O, y] = i.useState(window.innerWidth);
+    [O, v] = i.useState(window.innerWidth);
   i.useEffect(() => {
     let e = (0, o.debounce)(() => {
-      y(window.innerWidth)
+      v(window.innerWidth)
     }, 250);
     return window.addEventListener("resize", e), () => {
       window.removeEventListener("resize", e)
     }
   }, []);
-  let v = O >= 1610 ? 3 : O >= 1340 ? 2 : 1;
+  let y = O >= 1610 ? 3 : O >= 1340 ? 2 : 1;
   return n && 0 === t.length ? (0, r.jsx)(c.$jN, {
     className: f.spinner
   }) : 0 === t.length ? (0, r.jsxs)("div", {
@@ -68,7 +68,7 @@ function h(e) {
   }) : (0, r.jsx)("div", {
     className: f.container,
     children: t.map((e, t) => {
-      let n = Math.floor(t / v);
+      let n = Math.floor(t / y);
       return (0, r.jsx)(d.Z, {
         quest: e,
         questContent: u.jn.QUEST_HOME_DESKTOP,

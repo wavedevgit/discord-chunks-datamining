@@ -262,20 +262,20 @@ function eQ(e) {
     limit: E
   } = (0, eo.Z)(t), O = i.useCallback(() => {
     (0, eu.Z)()
-  }, []), y = (0, Y.bp)(), v = i.useCallback(e => {
+  }, []), v = (0, Y.bp)(), y = i.useCallback(e => {
     if (eO.Z.isVideoEnabled() === e) return;
     let n = () => {
       var n;
       b.Z.setVideoEnabled(e), e && (0, q.uL)(eL.Z5c.CHANNEL(null != (n = t.getGuildId()) ? n : eL.ME, t.id))
     };
-    (0, L.v)(s, L.d.CAMERA, e), e ? (0, ef.Z)(n, y) : n()
-  }, [t, y, s]), C = p || n || h, {
+    (0, L.v)(s, L.d.CAMERA, e), e ? (0, ef.Z)(n, v) : n()
+  }, [t, v, s]), C = p || n || h, {
     Component: S,
     play: T,
     events: N
   } = (0, f.o)(c.enabled ? "disable" : "enable");
   return i.useEffect(() => () => T(), [c.enabled, T]), (0, r.jsx)(eh.Z, eF(eV({
-    onChange: v,
+    onChange: y,
     onCameraUnavailable: O,
     hasPermission: d,
     channelLimit: E,
@@ -375,7 +375,7 @@ function eX(e) {
   } = (0, u.cj)([I.ZP], () => ({
     userInActivity: null != I.ZP.getSelfEmbeddedActivityForChannel(t.id)
   })), h = (0, S.p)({
-    surface: v.eR.VOICE_LAUNCHER,
+    surface: y.eR.VOICE_LAUNCHER,
     skipFetchingShelf: true
   }), b = c !== T.jy.CAN_LAUNCH, {
     Component: _,
@@ -459,16 +459,16 @@ function eJ(e) {
     _ = (0, es.Z)(n),
     E = n.getGuildId(),
     O = (0, u.cj)([I.ZP], () => null != I.ZP.getSelfEmbeddedActivityForChannel(n.id)),
-    y = (0, Q.Z)(n),
-    v = i.useCallback(() => {
+    v = (0, Q.Z)(n),
+    y = i.useCallback(() => {
       (0, ep.Z)(E, n.id, f)
     }, [E, n.id, f]),
     C = b.find(e => e.ownerId === (null == h ? true : h.id)),
     S = (0, ec.E)(n, h, b);
-  t = null == C ? l ? v : ed.Z : () => (0, V.Z)(C);
+  t = null == C ? l ? y : ed.Z : () => (0, V.Z)(C);
   let T = null != C || S.length > 0,
     N = _ ? eU.intl.string(eU.t.fjBNo6) : eU.intl.string(eU.t.uQn9Bw),
-    P = O || o || y,
+    P = O || o || v,
     j = null != C,
     {
       Component: x,
@@ -494,7 +494,7 @@ function eJ(e) {
         currentUser: h,
         activeStreams: b,
         onClose: t,
-        handleGoLive: l ? v : ed.Z,
+        handleGoLive: l ? y : ed.Z,
         onInteraction: (0, R.u)("ManageStreamsMenu", d, {
           entrypoint: eR.A5.OTHER_BUTTON
         })
@@ -798,16 +798,16 @@ let e1 = (0, Chunk730749.Z)(function(e) {
   let t = (0, G.Z)(),
     n = (0, u.e7)([U.default], () => U.default.getAwaitingRemoteSessionInfo()),
     l = (0, u.e7)([eC.default], () => eC.default.getCurrentUser()),
-    a = (0, u.cj)([ev.Z], () => null != t ? {
+    a = (0, u.cj)([ey.Z], () => null != t ? {
       channelId: t.channelId,
       rtcConnectionQuality: eL.IE4.FINE,
       rtcConnectionState: eL.hes.RTC_CONNECTED,
       rtcConnectionLastPing: 0
     } : {
-      channelId: ev.Z.getChannelId(),
-      rtcConnectionQuality: ev.Z.getQuality(),
-      rtcConnectionState: ev.Z.getState(),
-      rtcConnectionLastPing: ev.Z.getLastPing()
+      channelId: ey.Z.getChannelId(),
+      rtcConnectionQuality: ey.Z.getQuality(),
+      rtcConnectionState: ey.Z.getState(),
+      rtcConnectionLastPing: ey.Z.getLastPing()
     }),
     {
       channelId: o
@@ -827,12 +827,12 @@ let e1 = (0, Chunk730749.Z)(function(e) {
     b = (0, u.e7)([eg.Z], () => eg.Z.getCurrentUserActiveStream()),
     _ = (0, u.e7)([eE.Z], () => eE.Z.hasLayers()),
     E = (0, u.e7)([W.Z], () => W.Z.isViewingRoles(d)),
-    O = (0, u.e7)([ey.Z], () => E && !ey.Z.can(eL.Plq.VIEW_CHANNEL, c), [E, c]),
-    y = el.Fg.useSetting(),
-    [v, I, S] = (0, u.Wu)([eT.ZP, J.Z], () => (null == c ? true : c.isGuildStageVoice()) ? [J.Z.getMutableParticipants(c.id, $.pV.SPEAKER), J.Z.getParticipantsVersion(c.id), null] : [null, null, null != c ? eT.ZP.getVoiceStatesForChannel(c) : null], [c]),
+    O = (0, u.e7)([ev.Z], () => E && !ev.Z.can(eL.Plq.VIEW_CHANNEL, c), [E, c]),
+    v = el.Fg.useSetting(),
+    [y, I, S] = (0, u.Wu)([eT.ZP, J.Z], () => (null == c ? true : c.isGuildStageVoice()) ? [J.Z.getMutableParticipants(c.id, $.pV.SPEAKER), J.Z.getParticipantsVersion(c.id), null] : [null, null, null != c ? eT.ZP.getVoiceStatesForChannel(c) : null], [c]),
     T = i.useMemo(() => {
       var e, t;
-      return null != (t = null != (e = null == v ? true : v.map(e => {
+      return null != (t = null != (e = null == y ? true : y.map(e => {
         let {
           user: t,
           userNick: n,
@@ -844,7 +844,7 @@ let e1 = (0, Chunk730749.Z)(function(e) {
           voiceState: r
         }
       })) ? e : S) ? t : []
-    }, [v, I, S]),
+    }, [y, I, S]),
     [P, x] = i.useState(false);
   i.useEffect(() => {
     (E || O) && x(false)
@@ -868,7 +868,7 @@ let e1 = (0, Chunk730749.Z)(function(e) {
         selfStream: b,
         hasLayers: _,
         voiceStates: T,
-        showVoiceStates: y,
+        showVoiceStates: v,
         shouldShowVoicePanelIntroduction: h,
         isPrivateChannelWithEnabledActivities: L,
         analyticsLocations: Z

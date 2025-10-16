@@ -197,7 +197,7 @@ let M = {
         case w.jE.QUEST_HOME: {
           let {
             enabled: e
-          } = v.m8.getConfig({
+          } = y.m8.getConfig({
             location: R.dr.QUEST_DEEP_LINK_UTIL
           });
           null != n ? ((0, C.dL)({
@@ -211,7 +211,7 @@ let M = {
               location: R.dr.QUEST_PREVIEW_TOOL_2
             }) && null != n) {
             let e = new URLSearchParams;
-            e.set(y.tR.TAB, y.e5.PREVIEW_TOOL), null != n.questId && e.set(y.tR.QUEST_ID, n.questId), (0, C.dL)({
+            e.set(v.tR.TAB, v.e5.PREVIEW_TOOL), null != n.questId && e.set(v.tR.QUEST_ID, n.questId), (0, C.dL)({
               pathname: L.Z5c.QUEST_HOME_V2,
               search: "?".concat(e.toString())
             }), k(n.fingerprint, (0, w.O)(t))

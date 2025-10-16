@@ -1,7 +1,7 @@
-/** Chunk was on 3091 **/
+/** Chunk was on 22325 **/
 /** chunk id: 661462, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  F: () => y,
+  F: () => v,
   Z: () => j
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -50,7 +50,7 @@ function h(e, t) {
   }), e
 }
 
-function y(e) {
+function v(e) {
   var {
     children: t,
     className: n,
@@ -79,7 +79,7 @@ function y(e) {
   }))
 }
 
-function v(e) {
+function y(e) {
   let {
     user: t,
     currentUser: n,
@@ -87,21 +87,21 @@ function v(e) {
     subsection: a,
     displayProfile: l,
     guildId: o,
-    channelId: c,
+    channelId: s,
     onClose: m
   } = e;
-  return i === p.oh.ACTIVITY ? (0, r.jsx)(s.Z, {
+  return i === p.oh.ACTIVITY ? (0, r.jsx)(c.Z, {
     user: t,
     currentUser: n,
     displayProfile: l,
     guildId: o,
-    channelId: c,
+    channelId: s,
     subsection: a,
     onClose: m
   }) : i === p.oh.MUTUAL_FRIENDS ? (0, r.jsx)(u.Z, {
     user: t,
     guildId: o,
-    channelId: c,
+    channelId: s,
     onClose: m
   }) : i === p.oh.MUTUAL_GUILDS ? (0, r.jsx)(d.Z, {
     user: t,
@@ -109,7 +109,7 @@ function v(e) {
   }) : i === p.oh.WIDGETS ? (0, r.jsx)(f.C, {
     user: t,
     guildId: o,
-    channelId: c
+    channelId: s
   }) : i === p.oh.WISHLIST ? (0, r.jsx)(g.Z, {
     profileOwner: t
   }) : null
@@ -121,15 +121,15 @@ function j(e) {
     user: n,
     currentUser: a,
     displayProfile: l,
-    guildId: s,
+    guildId: c,
     channelId: u,
     items: d,
     initialSection: f,
     initialSubsection: g,
     onClose: p
   } = e, {
-    trackUserProfileAction: y
-  } = (0, c.KZ)(), [{
+    trackUserProfileAction: v
+  } = (0, s.KZ)(), [{
     section: j,
     subsection: O,
     text: x
@@ -153,7 +153,7 @@ function j(e) {
         look: "custom",
         selectedItem: j,
         onItemSelect: e => {
-          y({
+          v({
             action: "PRESS_SECTION",
             section: e
           }), _(t => {
@@ -178,11 +178,11 @@ function j(e) {
             children: x
           })
         }),
-        children: (0, r.jsx)(v, {
+        children: (0, r.jsx)(y, {
           user: n,
           currentUser: a,
           displayProfile: l,
-          guildId: s,
+          guildId: c,
           channelId: u,
           section: j,
           subsection: O,

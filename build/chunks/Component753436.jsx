@@ -1,7 +1,7 @@
-/** Chunk was on 3091 **/
+/** Chunk was on 22325 **/
 /** chunk id: 753436, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  S: () => v
+  S: () => y
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,24 +19,24 @@ var Chunk951288 = require("./951288.js"),
   Chunk932366 = require("./932366.js"),
   Chunk133458 = require("./133458.js");
 
-function y(e) {
+function v(e) {
   let {
     index: t,
     widgetType: n,
     game: a,
     children: o
-  } = e, c = i.useRef(null), {
+  } = e, s = i.useRef(null), {
     isDragging: u,
     dragSourcePosition: d
-  } = (0, s.g)({
-    dragRef: c,
-    dropRef: c,
+  } = (0, c.g)({
+    dragRef: s,
+    dropRef: s,
     index: t,
     widgetType: n,
     game: a
   }), f = null != d, g = f && t < d, p = f && t > d;
   return (0, r.jsx)("div", {
-    ref: c,
+    ref: s,
     className: l()(h.container, {
       [h.isDragging]: u,
       [h.dropIndicatorBefore]: g,
@@ -49,16 +49,16 @@ function y(e) {
   })
 }
 
-function v(e) {
+function y(e) {
   let {
     game: t,
     userId: n,
     widgetType: i,
     guildId: a,
-    channelId: s,
+    channelId: c,
     disableInteraction: m = false,
-    index: v
-  } = e, j = (0, p.Z)(t.applicationId).length > 0, O = c.default.getCurrentUser(), x = (null == O ? true : O.id) === n, _ = !m && x, P = (0, u.kO)(t.applicationId), {
+    index: y
+  } = e, j = (0, p.Z)(t.applicationId).length > 0, O = s.default.getCurrentUser(), x = (null == O ? true : O.id) === n, _ = !m && x, P = (0, u.kO)(t.applicationId), {
     isDragging: I
   } = (0, o.f)(e => ({
     isDragging: e.isDragging()
@@ -80,15 +80,15 @@ function v(e) {
       className: h.socialProof,
       applicationId: t.applicationId,
       guildId: a,
-      channelId: s,
+      channelId: c,
       visuallyHideLabel: true
     })]
   });
   return P ? (0, r.jsx)("div", {
     className: b.loadingCover
-  }) : _ ? (0, r.jsx)(y, {
+  }) : _ ? (0, r.jsx)(v, {
     widgetType: i,
-    index: null != v ? v : 0,
+    index: null != y ? y : 0,
     game: t,
     children: w()
   }) : (0, r.jsx)("div", {

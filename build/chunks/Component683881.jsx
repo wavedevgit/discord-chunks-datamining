@@ -1,4 +1,4 @@
-/** Chunk was on 3091 **/
+/** Chunk was on 22325 **/
 /** chunk id: 683881, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -30,12 +30,12 @@ function d(e) {
   if (null == b || null == p) return null;
   let h = (null == f ? true : f.type) === "WIDGET" && null != f.widget ? (0, r.jsx)("div", {
     className: u.widgetPreview,
-    children: (0, r.jsx)(s.Z, {
+    children: (0, r.jsx)(c.Z, {
       widget: f.widget,
       user: p,
       disableInteraction: true
     })
-  }) : (null == f ? true : f.itemType) === "GAME_COVER" && null != f.id ? (0, r.jsx)(c.Z, {
+  }) : (null == f ? true : f.itemType) === "GAME_COVER" && null != f.id ? (0, r.jsx)(s.Z, {
     className: u.gamePreview,
     imageSrc: f.imageSrc,
     gameName: f.gameName,
@@ -44,12 +44,12 @@ function d(e) {
     disableInteraction: true
   }) : null;
   if (null == h) return null;
-  let y = g.x - b.left - 60 * !!m,
-    v = g.y - b.top;
+  let v = g.x - b.left - 60 * !!m,
+    y = g.y - b.top;
   return (0, r.jsx)("div", {
     className: u.container,
     style: {
-      transform: "translate(".concat(y, "px, ").concat(v, "px)")
+      transform: "translate(".concat(v, "px, ").concat(y, "px)")
     },
     children: h
   })

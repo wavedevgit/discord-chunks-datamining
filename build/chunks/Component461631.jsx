@@ -1,12 +1,12 @@
-/** Chunk was on 52974 **/
-/** chunk id: 461631, original params: e,t,i (module,exports,require) **/
+/** Chunk was on 84071 **/
+/** chunk id: 461631, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk906732 = require("./906732.jsx"),
@@ -16,31 +16,31 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk747615 = require("./747615.js");
 
-function S(e) {
+function h(e) {
   let {
     item: t,
-    wishlistId: i,
-    iconSize: s = "refresh_sm",
-    className: S
+    wishlistId: n,
+    iconSize: i = "refresh_sm",
+    className: h
   } = e, {
-    analyticsLocations: f
-  } = (0, u.ZP)(), m = async () => {
+    analyticsLocations: _
+  } = (0, o.ZP)(), m = async () => {
     try {
-      await c.Z.removeSkuFromWishlist(i, t.skuId, f)
+      await d.Z.removeSkuFromWishlist(n, t.skuId, _)
     } catch (e) {
-      (0, o.L$)(d.qb.SOMETHING_WENT_WRONG)
+      (0, c.L$)(C.qb.SOMETHING_WENT_WRONG)
     }
   };
-  return (0, l.jsx)(n.u, {
-    text: h.intl.string(h.t.jTW019),
-    children: (0, l.jsx)(a.P3F, {
+  return (0, r.jsx)(l.u, {
+    text: u.intl.string(u.t.jTW019),
+    children: (0, r.jsx)(s.P3F, {
       onClick: m,
-      "aria-label": h.intl.string(h.t.jTW019),
-      className: r()(S, I.clickable),
-      children: (0, l.jsx)(a.XHJ, {
-        size: s,
-        className: I.icon,
-        color: a.TVs.colors.ICON_FEEDBACK_CRITICAL
+      "aria-label": u.intl.string(u.t.jTW019),
+      className: a()(h, p.clickable),
+      children: (0, r.jsx)(s.XHJ, {
+        size: i,
+        className: p.icon,
+        color: s.TVs.colors.ICON_FEEDBACK_CRITICAL
       })
     })
   })

@@ -102,7 +102,7 @@ function x(e) {
       questContent: g.jn.ACTIVITY_PANEL,
       questContentCTA: u.jZ.TRACK_PROGRESS,
       sourceQuestContent: g.jn.ACTIVITY_PANEL
-    }), (0, y.navigateToQuestHome)({
+    }), (0, v.navigateToQuestHome)({
       fromContent: g.jn.ACTIVITY_PANEL,
       questId: b.id
     }))
@@ -112,7 +112,7 @@ function x(e) {
       questContent: g.jn.ACTIVITY_PANEL,
       questContentCTA: u.jZ.LEARN_MORE,
       sourceQuestContent: g.jn.ACTIVITY_PANEL
-    }), (0, y.navigateToQuestHome)({
+    }), (0, v.navigateToQuestHome)({
       fromContent: g.jn.ACTIVITY_PANEL,
       questId: b.id
     })
@@ -146,7 +146,7 @@ function x(e) {
       className: P.utils,
       children: [G ? (0, r.jsx)(A, {
         quest: b
-      }) : (0, r.jsx)(O.Z, {}), (0, r.jsx)(v.r, {
+      }) : (0, r.jsx)(O.Z, {}), (0, r.jsx)(y.r, {
         quest: b,
         questContent: g.jn.ACTIVITY_PANEL,
         shouldShowDisclosure: (null == (l = b.userStatus) ? true : l.enrolledAt) == null,

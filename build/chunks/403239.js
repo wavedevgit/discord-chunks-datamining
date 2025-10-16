@@ -1,4 +1,4 @@
-/** Chunk was on 3091 **/
+/** Chunk was on 22325 **/
 /** chunk id: 403239, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   q: () => u
@@ -19,7 +19,7 @@ function u(e) {
     widget: d,
     index: f,
     disableInteraction: g = false
-  } = e, p = (0, s.Z)(u), {
+  } = e, p = (0, c.Z)(u), {
     isDragging: m,
     currentItem: b
   } = (0, i.f)(e => ({
@@ -28,8 +28,8 @@ function u(e) {
   })), h = (0, r.useCallback)((e, t) => {
     let n = p.slice(),
       [r] = n.splice(e, 1);
-    n.splice(t, 0, r), c.Z.setPendingWidgets(n)
-  }, [p]), [, y, v] = (0, a.c)({
+    n.splice(t, 0, r), s.Z.setPendingWidgets(n)
+  }, [p]), [, v, y] = (0, a.c)({
     type: "WIDGET",
     item: {
       widgetType: d.type,
@@ -45,10 +45,10 @@ function u(e) {
     })
   });
   (0, r.useEffect)(() => {
-    v((0, o.r)(), {
+    y((0, o.r)(), {
       captureDraggingState: true
     })
-  }, [v]);
+  }, [y]);
   let [{
     dragSourcePosition: j
   }, O] = (0, l.L)({
@@ -70,7 +70,7 @@ function u(e) {
   return null == f || g ? {
     isDragging: false,
     dragSourcePosition: null
-  } : (y(n), O(t), {
+  } : (v(n), O(t), {
     isDragging: m && (null == b ? true : b.widgetType) === d.type,
     dragSourcePosition: j
   })

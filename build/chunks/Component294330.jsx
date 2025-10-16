@@ -82,7 +82,7 @@ function N(e) {
         }), i))
       }
     })
-  }, [t]), L = (0, d.ZP)(), R = t.features.has(y.oNc.HUB), D = i.useMemo(() => {
+  }, [t]), L = (0, d.ZP)(), R = t.features.has(v.oNc.HUB), D = i.useMemo(() => {
     let e = _.ZP.getGuildDiscoverySplashURL({
       id: t.id,
       splash: t.discoverySplash,
@@ -91,9 +91,9 @@ function N(e) {
     if (null != e) return e;
     if (R) return T;
     switch (L) {
-      case y.BRd.DARK:
+      case v.BRd.DARK:
         return C;
-      case y.BRd.LIGHT:
+      case v.BRd.LIGHT:
         return S
     }
   }, [t.discoverySplash, t.id, R, L]), k = i.useMemo(() => _.ZP.getGuildIconURL({
@@ -120,7 +120,7 @@ function N(e) {
         onClick: x,
         disabled: E,
         onContextMenu: w,
-        "aria-label": v.intl.string(v.t["M9wQ+f"]),
+        "aria-label": y.intl.string(y.t["M9wQ+f"]),
         children: [(0, r.jsxs)("div", {
           className: I.header,
           children: [(0, r.jsx)("div", {
@@ -185,7 +185,7 @@ function N(e) {
                 className: I.memberDetailsText,
                 variant: "text-xs/normal",
                 color: "header-secondary",
-                children: v.intl.format(v.t["LC+S+v"], {
+                children: y.intl.format(y.t["LC+S+v"], {
                   membersOnline: t.presenceCount
                 })
               })]
@@ -197,7 +197,7 @@ function N(e) {
                 className: I.memberDetailsText,
                 variant: "text-xs/normal",
                 color: "header-secondary",
-                children: v.intl.format(v.t.zRl6XV, {
+                children: y.intl.format(y.t.zRl6XV, {
                   count: t.memberCount
                 })
               })]

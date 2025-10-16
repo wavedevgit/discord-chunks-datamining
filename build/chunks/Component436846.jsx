@@ -1,4 +1,4 @@
-/** Chunk was on 3091 **/
+/** Chunk was on 22325 **/
 /** chunk id: 436846, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -18,7 +18,7 @@ var Chunk120356 = require("./120356.js"),
 function g(e) {
   let {
     widget: t
-  } = e, n = (0, s.Gv)(t.type), i = 1 === n, g = (0, l.e7)([c.default], () => ["en-US", "en-GB"].includes(c.default.locale)) && i ? d.intl.string(d.t["3FdPBQ"]) : d.intl.format(d.t.W8K2GB, {
+  } = e, n = (0, c.Gv)(t.type), i = 1 === n, g = (0, l.e7)([s.default], () => ["en-US", "en-GB"].includes(s.default.locale)) && i ? d.intl.string(d.t["3FdPBQ"]) : d.intl.format(d.t.W8K2GB, {
     maxGames: n
   });
   return (0, r.jsxs)("div", {

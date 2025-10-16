@@ -1,7 +1,7 @@
-/** Chunk was on 3091 **/
+/** Chunk was on 22325 **/
 /** chunk id: 947790, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  g: () => c
+  g: () => s
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk100568 = require("./100568.js"),
@@ -9,21 +9,21 @@ var Chunk647438 = require("./647438.js"),
   Chunk665379 = require("./665379.js"),
   Chunk86419 = require("./86419.js");
 
-function c(e) {
+function s(e) {
   let {
     dragRef: t,
     dropRef: n,
-    index: c,
-    widgetType: s,
+    index: s,
+    widgetType: c,
     game: u
-  } = e, d = "GAME_COVER_".concat(s), f = r.useCallback((e, t) => {
-    (0, o.Eq)(s, e, t)
-  }, [s]), [{
+  } = e, d = "GAME_COVER_".concat(c), f = r.useCallback((e, t) => {
+    (0, o.Eq)(c, e, t)
+  }, [c]), [{
     isDragging: g
   }, p, m] = (0, i.c)({
     type: d,
     item: {
-      index: c,
+      index: s,
       id: u.applicationId,
       itemType: "GAME_COVER",
       gameName: u.gameName,
@@ -45,7 +45,7 @@ function c(e) {
     accept: d,
     drop: e => {
       let t = e.index;
-      t !== c && (f(t, c), e.index = c)
+      t !== s && (f(t, s), e.index = s)
     },
     collect: e => {
       let t = e.getItem(),

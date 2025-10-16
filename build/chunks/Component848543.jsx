@@ -89,7 +89,7 @@ function x(e) {
     R = Z || w || L,
     [D, k] = i.useState(false),
     M = t.getGuildId(),
-    U = (0, v.sR)({
+    U = (0, y.sR)({
       isSoundboardButtonDisabled: R
     }),
     [G, B] = (0, _.cv)(U),
@@ -121,7 +121,7 @@ function x(e) {
   } = (0, c.j)(), K = i.useCallback(() => {
     R || k(!D)
   }, [R, D]);
-  return (0, y.yp)({
+  return (0, v.yp)({
     event: S.CkL.TOGGLE_SOUNDBOARD,
     handler: K
   }), (0, r.jsx)(g.Gt, {

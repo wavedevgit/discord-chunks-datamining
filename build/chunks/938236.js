@@ -1,4 +1,4 @@
-/** Chunk was on 3091 **/
+/** Chunk was on 22325 **/
 /** chunk id: 938236, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   b: () => u
@@ -27,7 +27,7 @@ function o(e) {
   return e
 }
 
-function c(e, t) {
+function s(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -39,7 +39,7 @@ function c(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let s = (0, Chunk392711.sampleSize)(Chunk570911.J6, Chunk570911.J6.length),
+let c = (0, Chunk392711.sampleSize)(Chunk570911.J6, Chunk570911.J6.length),
   u = (0, Chunk191336.U)((e, t) => ({
     stack: [],
     wishlistStack: [],
@@ -48,8 +48,8 @@ let s = (0, Chunk392711.sampleSize)(Chunk570911.J6, Chunk570911.J6.length),
     onLoad: (n, r, i) => {
       let l = new Set(i.map(e => e.applicationId));
       for (let i of (e({
-          stack: [...n.filter(e => !l.has(e)), ...s],
-          wishlistStack: [...r.filter(e => !l.has(e)), ...s]
+          stack: [...n.filter(e => !l.has(e)), ...c],
+          wishlistStack: [...r.filter(e => !l.has(e)), ...c]
         }), Object.values(a.l))) t().setNext(6, i)
     },
     setNext: (e, n) => {
@@ -73,8 +73,8 @@ let s = (0, Chunk392711.sampleSize)(Chunk570911.J6, Chunk570911.J6.length),
       let l = [...i];
       l.splice(a, 1);
       let o = t().getNext(1, n),
-        c = t().peekNext(7, n);
-      t()._setGameIds(n, [...l, ...o]), t()._setPeekedGameIds(n, [...c, ...o])
+        s = t().peekNext(7, n);
+      t()._setGameIds(n, [...l, ...o]), t()._setPeekedGameIds(n, [...s, ...o])
     },
     bumpMultiple: (e, n) => {
       var r;
@@ -89,7 +89,7 @@ let s = (0, Chunk392711.sampleSize)(Chunk570911.J6, Chunk570911.J6.length),
     },
     _setGameIds: (t, n) => {
       e(e => ({
-        gameIds: c(o({}, e.gameIds), {
+        gameIds: s(o({}, e.gameIds), {
           [t]: n
         })
       }))
@@ -103,7 +103,7 @@ let s = (0, Chunk392711.sampleSize)(Chunk570911.J6, Chunk570911.J6.length),
     },
     _setPeekedGameIds: (t, n) => {
       e(e => ({
-        peekedGameIds: c(o({}, e.peekedGameIds), {
+        peekedGameIds: s(o({}, e.peekedGameIds), {
           [t]: n
         })
       }))

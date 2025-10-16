@@ -89,7 +89,7 @@ function B(e) {
     isGift: l = false,
     priceOptions: f,
     isApplicationHome: _ = false
-  } = e, p = (0, s.e7)([m.Z], () => m.Z.getPremiumTypeSubscription()), E = (0, s.e7)([h.default], () => h.default.getCurrentUser()), b = (0, I.N)(), O = null == b || null == (t = b.subscription_trial) ? true : t.sku_id, v = (null == p ? true : p.hasActiveTrial) ? null == E ? true : E.premiumType : null, T = (0, C.y_)(v, O), S = null != T, w = (0, c.ap)((0, d.ZP)()), L = (0, y.y)({
+  } = e, p = (0, s.e7)([m.Z], () => m.Z.getPremiumTypeSubscription()), E = (0, s.e7)([h.default], () => h.default.getCurrentUser()), b = (0, I.N)(), O = null == b || null == (t = b.subscription_trial) ? true : t.sku_id, v = (null == p ? true : p.hasActiveTrial) ? null == E ? true : E.premiumType : null, T = (0, C.y_)(v, O), S = null != T, w = (0, c.ap)((0, d.ZP)()), L = (0, y.yc)({
     location: "PremiumBrandRefreshTierCards"
   }), x = (0, r.jsxs)(r.Fragment, {
     children: [S && (0, r.jsx)(A.E, {

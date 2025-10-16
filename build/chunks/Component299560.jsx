@@ -1,4 +1,4 @@
-/** Chunk was on 3091 **/
+/** Chunk was on 22325 **/
 /** chunk id: 299560, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -58,12 +58,12 @@ let x = {
     }),
     icon: e => {
       var t;
-      return null == (t = s.Z.getApplication(e.applicationId)) ? true : t.getIconURL(16)
+      return null == (t = c.Z.getApplication(e.applicationId)) ? true : t.getIconURL(16)
     },
     getAriaLabel: e => {
       var t, n;
       return j.intl.formatToPlainString(j.t.KfGahI, {
-        applicationName: null != (n = null == (t = s.Z.getApplication(e.applicationId)) ? true : t.name) ? n : ""
+        applicationName: null != (n = null == (t = c.Z.getApplication(e.applicationId)) ? true : t.name) ? n : ""
       })
     }
   }
@@ -73,7 +73,7 @@ function _(e) {
   let t, {
       widgetType: n,
       onAddWidget: a,
-      size: s = "default",
+      size: c = "default",
       loading: d = false,
       trackUserProfileEditAction: j
     } = e,
@@ -82,7 +82,7 @@ function _(e) {
       getAriaLabel: P,
       icon: I
     } = x[n],
-    w = "small" === s,
+    w = "small" === c,
     {
       config: S
     } = (0, m.G)(),
@@ -109,11 +109,11 @@ function _(e) {
       d || null == E || ((0, p.qH)(n, E), j({
         action: "WIDGET_ADDED",
         widgetEdited: n
-      }), (0, b.L$)(v.qb.WIDGET_ADDED), null == a || a())
+      }), (0, b.L$)(y.qb.WIDGET_ADDED), null == a || a())
     }, [d, n, E, j, a]);
   return (null != E && null != I && (t = I(E)), null == E) ? null : (0, r.jsxs)("div", {
     className: O.addButtonContainer,
-    children: [(0, r.jsxs)(c.P3F, {
+    children: [(0, r.jsxs)(s.P3F, {
       className: l()(O.addButtonContent, w && O.sizeSmall, d && O.loading),
       onClick: T,
       "aria-label": P(E),
@@ -126,31 +126,31 @@ function _(e) {
             return (0, r.jsx)(h.i, {
               className: O.placeholderPadding,
               applicationId: e.applicationId,
-              size: s
+              size: c
             });
           case "grid":
             return (0, r.jsx)(h.c, {
               className: O.placeholderPadding,
               applicationIds: e.applicationIds,
-              size: s
+              size: c
             });
           case "application-widget":
-            return (0, r.jsx)(y.Z, {
+            return (0, r.jsx)(v.Z, {
               applicationId: e.applicationId,
-              size: s
+              size: c
             });
           default:
             return (0, u.vE)(e)
         }
       })(), (0, r.jsxs)("div", {
         className: O.overlay,
-        children: [(0, r.jsx)(c.oFk, {
+        children: [(0, r.jsx)(s.oFk, {
           size: "md",
           color: "currentColor",
           className: O.addButton
         }), (0, r.jsxs)("div", {
           className: O.title,
-          children: [(0, r.jsx)(c.Text, {
+          children: [(0, r.jsx)(s.Text, {
             variant: "text-md/medium",
             color: "header-primary",
             children: (0, p.mR)(E)
@@ -166,9 +166,9 @@ function _(e) {
     }), (() => {
       if (null == E) return null;
       let e = _(E);
-      return "application-widget" === e.variant ? (0, r.jsx)(y.T, {
+      return "application-widget" === e.variant ? (0, r.jsx)(v.T, {
         applicationId: e.applicationId,
-        size: s
+        size: c
       }) : null
     })()]
   })

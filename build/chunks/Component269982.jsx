@@ -1,7 +1,7 @@
-/** Chunk was on 93210 **/
-/** chunk id: 269982, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 79589 **/
+/** chunk id: 269982, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => m
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -13,54 +13,54 @@ var Chunk979554 = require("./979554.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk178368 = require("./178368.js");
 
-function u(e) {
+function d(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      i = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), i.forEach(function(t) {
-      var i;
-      i = n[t], t in e ? Object.defineProperty(e, t, {
-        value: i,
+    var r = null != arguments[t] ? arguments[t] : {},
+      n = Object.keys(r);
+    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(r, e).enumerable
+    }))), n.forEach(function(t) {
+      var n;
+      n = r[t], t in e ? Object.defineProperty(e, t, {
+        value: n,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = i
+      }) : e[t] = n
     })
   }
   return e
 }
 
-function p(e) {
+function m(e) {
   let {
     product: t,
-    onClose: p
+    onClose: m
   } = e, {
-    newestAnalyticsLocation: _
-  } = (0, a.ZP)(), h = t.type === r.Z.AVATAR_DECORATION ? o.cd.AVATAR_DECORATION_MODAL_UPSELL : t.type === r.Z.PROFILE_EFFECT ? o.cd.PROFILE_EFFECT_MODAL_UPSELL : t.type === r.Z.NAMEPLATE ? o.cd.NAMEPLATE_MODAL_UPSELL : null;
-  return null == h ? null : (0, i.jsxs)("div", {
-    className: d.nitroUpsellContainer,
-    children: [(0, i.jsx)(l.SrA, {
-      className: d.nitroWheel,
+    newestAnalyticsLocation: p
+  } = (0, s.ZP)(), h = t.type === i.Z.AVATAR_DECORATION ? o.cd.AVATAR_DECORATION_MODAL_UPSELL : t.type === i.Z.PROFILE_EFFECT ? o.cd.PROFILE_EFFECT_MODAL_UPSELL : t.type === i.Z.NAMEPLATE ? o.cd.NAMEPLATE_MODAL_UPSELL : null;
+  return null == h ? null : (0, n.jsxs)("div", {
+    className: u.nitroUpsellContainer,
+    children: [(0, n.jsx)(l.SrA, {
+      className: u.nitroWheel,
       size: "md",
-      color: s.JX.PREMIUM_TIER_2
-    }), (0, i.jsx)(l.Text, {
-      className: d.nitroText,
+      color: a.JX.PREMIUM_TIER_2
+    }), (0, n.jsx)(l.Text, {
+      className: u.nitroText,
       variant: "text-md/medium",
       children: h === o.cd.AVATAR_DECORATION_MODAL_UPSELL ? c.intl.format(c.t["aFR/EB"], {
         onClick: () => {
           (0, l.ZDy)(async () => {
             let {
               default: e
-            } = await n.e("43360").then(n.bind(n, 73415));
-            return t => (0, i.jsx)(e, u({
+            } = await r.e("43360").then(r.bind(r, 73415));
+            return t => (0, n.jsx)(e, d({
               premiumUpsellType: h,
               title: c.intl.string(c.t.JI7uhY),
               body: c.intl.string(c.t["5XvsdX"]),
               glowUp: c.intl.string(c.t["5XvsdX"]),
-              analyticsSource: _,
-              onSecondaryClick: p
+              analyticsSource: p,
+              onSecondaryClick: m
             }, t))
           })
         }
@@ -69,14 +69,14 @@ function p(e) {
           (0, l.ZDy)(async () => {
             let {
               default: e
-            } = await n.e("43360").then(n.bind(n, 73415));
-            return t => (0, i.jsx)(e, u({
+            } = await r.e("43360").then(r.bind(r, 73415));
+            return t => (0, n.jsx)(e, d({
               premiumUpsellType: h,
               title: c.intl.string(c.t.sYm15e),
               body: c.intl.string(c.t["Hza+Bg"]),
               glowUp: c.intl.string(c.t["Hza+Bg"]),
-              analyticsSource: _,
-              onSecondaryClick: p
+              analyticsSource: p,
+              onSecondaryClick: m
             }, t))
           })
         }
@@ -85,14 +85,14 @@ function p(e) {
           (0, l.ZDy)(async () => {
             let {
               default: e
-            } = await n.e("43360").then(n.bind(n, 73415));
-            return t => (0, i.jsx)(e, u({
+            } = await r.e("43360").then(r.bind(r, 73415));
+            return t => (0, n.jsx)(e, d({
               premiumUpsellType: h,
               title: c.intl.string(c.t.k7UN4u),
               body: c.intl.string(c.t["0/QPxM"]),
               glowUp: c.intl.string(c.t["0/QPxM"]),
-              analyticsSource: _,
-              onSecondaryClick: p
+              analyticsSource: p,
+              onSecondaryClick: m
             }, t))
           })
         }

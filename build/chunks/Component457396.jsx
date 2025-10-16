@@ -51,7 +51,7 @@ var Chunk951288 = require("./951288.js"),
 let Y = e => {
     let {
       selected: t
-    } = e, n = (0, a.e7)([_.default], () => _.default.getCurrentUser()), r = (0, a.e7)([E.Z], () => E.Z.getPremiumTypeSubscription()), i = (0, x.N)(), l = (0, A.Ng)(), o = (0, C.Vi)(), s = (0, G.V)(), c = (0, v.Qo)(n, r), u = (0, a.e7)([I.Z], () => I.Z.getCreatedAtOverride()), d = t || null != i || null != l || o || null != s || c, p = null != u ? u : null == n ? true : n.createdAt;
+    } = e, n = (0, a.e7)([_.default], () => _.default.getCurrentUser()), r = (0, a.e7)([E.Z], () => E.Z.getPremiumTypeSubscription()), i = (0, x.N)(), l = (0, A.Ng)(), o = (0, C.Vi)(), s = (0, G.V)(), c = (0, y.Qo)(n, r), u = (0, a.e7)([I.Z], () => I.Z.getCreatedAtOverride()), d = t || null != i || null != l || o || null != s || c, p = null != u ? u : null == n ? true : n.createdAt;
     return d || null != n && null != p && Date.now() - p.getTime() > 12096e5
   },
   q = e => {
@@ -82,8 +82,8 @@ let Y = e => {
       {
         variant: er
       } = (0, T.ZP)("PremiumDiscountEndingNotice"),
-      ei = (0, v.Qo)(et, en),
-      el = (0, v.M5)(et, V.PremiumTypes.TIER_2),
+      ei = (0, y.Qo)(et, en),
+      el = (0, y.M5)(et, V.PremiumTypes.TIER_2),
       ea = (0, l.JA)("nitro"),
       eo = (0, x.N)(),
       es = (0, A.Ng)(),
@@ -102,11 +102,11 @@ let Y = e => {
       {
         fractionalState: eE,
         startsAt: eO,
-        endsAt: ey
+        endsAt: ev
       } = (0, d.Z)({
         forceFetch: true
       }),
-      [ev, eI] = (0, m.bf)(eE !== V.a$.NONE ? o.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL : null, {
+      [ey, eI] = (0, m.bf)(eE !== V.a$.NONE ? o.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL : null, {
         showAfterTimestamp: eO.valueOf(),
         cooldownDurationMs: 0
       }),
@@ -130,7 +130,7 @@ let Y = e => {
         selected: Q
       })) return null;
     let eL = () => {
-      ev === o.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL && eI(z.L.TAKE_ACTION), y.default.track(F.rMx.NITRO_TAB_VISITED, {
+      ey === o.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL && eI(z.L.TAKE_ACTION), v.default.track(F.rMx.NITRO_TAB_VISITED, {
         badge_decorator: I,
         has_premium: ei
       }), null != eA && ex(z.L.USER_DISMISS)
@@ -138,7 +138,7 @@ let Y = e => {
     if (eE === V.a$.NONE || eu || (I = 7, n = (0, r.jsx)(P.Z, {
         className: "",
         startsAt: eO,
-        endsAt: ey,
+        endsAt: ev,
         messageStyle: u.aj.SHORT_TIME,
         upperCase: true
       })), ed) n = (0, r.jsx)(Z.Z, {}), I = 0;
@@ -154,7 +154,7 @@ let Y = e => {
       badgeCopy: W.intl.string(W.t.y2b7CA),
       offerExpiresAt: null
     }), I = 2) : eu ? (n = (0, r.jsx)(U.S, {
-      expiresAt: ey
+      expiresAt: ev
     }), I = 4) : null != ef ? (n = (0, r.jsx)(H.Z, {
       copy: ef,
       showStars: false
@@ -184,7 +184,7 @@ let Y = e => {
       badgeCopy: W.intl.string(W.t.RDE0SU),
       offerExpiresAt: null
     }), I = 4, eL = () => {
-      y.default.track(F.rMx.NITRO_TAB_VISITED, {
+      v.default.track(F.rMx.NITRO_TAB_VISITED, {
         badge_decorator: I,
         has_premium: ei
       }), (0, w.ZL)()

@@ -31,15 +31,15 @@ function c(e) {
     description: i,
     iconClassName: s,
     color: c,
-    listType: u = "icon",
-    completed: d = false,
+    listType: d = "icon",
+    completed: u = false,
     index: p
   } = e;
   return (0, r.jsxs)("div", {
     className: o.cell,
     children: [(() => {
-      if ("numbered" === u && null != p)
-        if (d) return (0, r.jsx)("div", {
+      if ("numbered" === d && null != p)
+        if (u) return (0, r.jsx)("div", {
           className: o.number,
           children: (0, r.jsx)(a.sV5, {
             color: "green",
@@ -65,14 +65,14 @@ function c(e) {
         variant: "text-md/semibold",
         color: "header-primary",
         className: l()({
-          [o.completedText]: d
+          [o.completedText]: u
         }),
         children: n
       }), null != i && (0, r.jsx)(a.Text, {
         variant: "text-xs/medium",
         color: "text-secondary",
         className: l()({
-          [o.completedText]: d
+          [o.completedText]: u
         }),
         children: i
       })]

@@ -41,7 +41,7 @@ let x = 15 * Chunk70956.Z.Millis.MINUTE,
     } = e, o = i.useRef(null), c = (0, r.jsx)(I.Z, {
       party: t,
       onUserContextMenu: n
-    }), d = (0, r.jsx)(v.Z, {
+    }), d = (0, r.jsx)(y.Z, {
       party: t,
       onChannelContextMenu: l,
       quest: a
@@ -50,7 +50,7 @@ let x = 15 * Chunk70956.Z.Millis.MINUTE,
       applicationStreams: h,
       currentActivities: g,
       voiceChannels: m
-    } = t, b = f.length, _ = h.length, O = g.length, y = m.length > 0, T = p.o.useConfig({
+    } = t, b = f.length, _ = h.length, O = g.length, v = m.length > 0, T = p.o.useConfig({
       location: "itemcard"
     }).demureActivityCards, P = i.useCallback(() => {
       let e = g.filter(e => {
@@ -61,10 +61,10 @@ let x = 15 * Chunk70956.Z.Millis.MINUTE,
         num_users: b,
         num_streams: _,
         num_activities: O,
-        in_voice_channel: y,
+        in_voice_channel: v,
         games_detected: e
       })
-    }, [b, _, O, y, g]), j = s()(P, x);
+    }, [b, _, O, v, g]), j = s()(P, x);
     return null != c || null != d ? (0, r.jsx)(u.yRy, {
       targetElementRef: o,
       position: "left",

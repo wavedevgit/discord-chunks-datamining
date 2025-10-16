@@ -133,7 +133,7 @@ let em = e => {
       }),
       f = o && d;
     i.useEffect(() => {
-      f && (0, y.h)({
+      f && (0, v.h)({
         name: c.ImpressionNames.GIFT_INTENT_BADGE,
         type: c.ImpressionTypes.VIEW,
         properties: {
@@ -240,7 +240,7 @@ let em = e => {
       count: module
     }) : null
   },
-  ey = e => {
+  ev = e => {
     let {
       selected: t
     } = e, n = (0, u.JA)("messageRequests"), {
@@ -258,7 +258,7 @@ let em = e => {
       children: (0, r.jsx)(eO, {})
     }))
   },
-  ev = e => {
+  ey = e => {
     let {
       selected: t
     } = e, n = eu.intl.string(ed.default.Rkdixs), l = (0, u.JA)("family-center"), [a, o] = i.useState(true);
@@ -361,7 +361,7 @@ let eN = Chunk647438.memo(function(e) {
     path: b,
     onlyShowDMs: _,
     hideAllDMs: E
-  } = e, O = i.useRef(null), y = i.useRef(null), I = i.useRef(null), S = i.useRef(null), N = L.o.useConfig({
+  } = e, O = i.useRef(null), v = i.useRef(null), I = i.useRef(null), S = i.useRef(null), N = L.o.useConfig({
     location: "privatechannels"
   }).friendsTab;
   return (0, r.jsxs)("nav", {
@@ -402,7 +402,7 @@ let eN = Chunk647438.memo(function(e) {
       }, "friends"), n && t && !_ ? (0, r.jsx)(e_, {
         selected: null == b ? null != l && l.startsWith(ea.Z5c.APPLICATION_LIBRARY) : b.startsWith(ea.Z5c.APPLICATION_LIBRARY),
         hideGameUpdateProgressIndicator: l === ea.Z5c.APPLICATION_LIBRARY
-      }, "library") : null, u && !_ ? (0, r.jsx)(ey, {
+      }, "library") : null, u && !_ ? (0, r.jsx)(ev, {
         selected: null == b ? null != l && l.startsWith(ea.Z5c.MESSAGE_REQUESTS) : b === ea.Z5c.MESSAGE_REQUESTS
       }, "message-requests") : null, s && !_ ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(B.g, {
@@ -419,9 +419,9 @@ let eN = Chunk647438.memo(function(e) {
         }, "premium"), c && (0, r.jsx)(G.F, {
           targetElementRef: S
         })]
-      }) : null, _ ? null : (0, r.jsx)(v.i, {
+      }) : null, _ ? null : (0, r.jsx)(y.i, {
         selected: b === ea.Z5c.COLLECTIBLES_SHOP || (null == l ? true : l.startsWith(ea.Z5c.COLLECTIBLES_SHOP)),
-        listItemRef: y,
+        listItemRef: v,
         locationState: {
           analyticsSource: {
             page: eT(l),
@@ -429,7 +429,7 @@ let eN = Chunk647438.memo(function(e) {
             object: ea.qAy.NAVIGATION_LINK
           }
         }
-      }, "discord-shop"), p && !_ ? (0, r.jsx)(ev, {
+      }, "discord-shop"), p && !_ ? (0, r.jsx)(ey, {
         selected: null != l && l.startsWith(ea.Z5c.FAMILY_CENTER) || null != b && b.startsWith(ea.Z5c.FAMILY_CENTER)
       }, "family-center") : null, f && !_ ? (0, r.jsx)(F.Z, {
         selected: null == b ? null != l && l.startsWith(ea.Z5c.QUEST_HOME_V2) : b === ea.Z5c.QUEST_HOME_V2

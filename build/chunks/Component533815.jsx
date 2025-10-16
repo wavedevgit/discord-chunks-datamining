@@ -1,4 +1,4 @@
-/** Chunk was on 3091 **/
+/** Chunk was on 22325 **/
 /** chunk id: 533815, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -22,12 +22,12 @@ function f(e) {
     className: f
   } = e, {
     trackUserProfileEditAction: g
-  } = (0, c.KZ)();
+  } = (0, s.KZ)();
   return (0, r.jsx)(l.u, {
     text: u.intl.string(u.t.HUvyDQ),
     children: (0, r.jsx)(o.P3F, {
       onClick: () => {
-        (0, s.$b)(n, t.applicationId), o.uvj.announce(u.intl.string(u.t["08HmMj"])), g({
+        (0, c.$b)(n, t.applicationId), o.uvj.announce(u.intl.string(u.t["08HmMj"])), g({
           action: "GAME_REMOVED",
           gameId: t.applicationId,
           widgetEdited: n

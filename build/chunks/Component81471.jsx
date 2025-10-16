@@ -46,20 +46,20 @@ let I = Chunk647438.memo(function(e) {
     content: null
   }, [I, C]), A = null;
   if (l) A = (0, r.jsx)(s.Text, {
-    className: y.messageReplacement,
+    className: v.messageReplacement,
     variant: "text-sm/normal",
     color: "text-muted",
     children: O.intl.string(O.t.BZHld3)
   });
   else if (n)
     if (null != I && S) A = (0, r.jsx)(s.Text, {
-      className: y.messageReplacement,
+      className: v.messageReplacement,
       variant: "text-sm/normal",
       color: "text-muted",
       children: O.intl.string(O.t["WPe+xM"])
     });
     else if (null != I && T) A = (0, r.jsx)(s.Text, {
-    className: y.messageReplacement,
+    className: v.messageReplacement,
     variant: "text-sm/normal",
     color: "text-muted",
     children: O.intl.string(O.t.uxrh1N)
@@ -68,25 +68,25 @@ let I = Chunk647438.memo(function(e) {
     let {
       contentPlaceholder: e,
       renderedContent: t
-    } = (0, f.f)(I, j, S, T, a()(y.messageContent, v.inlineFormat), {
-      leadingIconClass: y.messageContentIcon,
-      trailingIconClass: y.messageContentIcon,
+    } = (0, f.f)(I, j, S, T, a()(v.messageContent, y.inlineFormat), {
+      leadingIconClass: v.messageContentIcon,
+      trailingIconClass: v.messageContentIcon,
       iconSize: E.WW
     });
     A = null != t ? (0, r.jsx)(s.Text, {
       variant: "text-sm/normal",
       color: "text-muted",
-      className: y.messageContent,
+      className: v.messageContent,
       children: t
     }) : (0, r.jsx)(s.Text, {
       tag: "span",
       variant: "text-sm/normal",
       color: "text-muted",
-      className: y.messageReplacement,
+      className: v.messageReplacement,
       children: e
     })
   } else A = (0, r.jsx)(s.Text, {
-    className: y.messageReplacement,
+    className: v.messageReplacement,
     variant: "text-sm/normal",
     color: "text-muted",
     children: O.intl.string(O.t["0KfDxM"])
@@ -95,7 +95,7 @@ let I = Chunk647438.memo(function(e) {
   return (0, r.jsx)(c.aQ.Provider, {
     value: (0, d.Z)(P, N),
     children: (0, r.jsx)(s.Rny, {
-      className: y.messageFocusBlock,
+      className: v.messageFocusBlock,
       children: A
     })
   })

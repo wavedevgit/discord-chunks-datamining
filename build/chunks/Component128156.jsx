@@ -1,4 +1,4 @@
-/** Chunk was on 3091 **/
+/** Chunk was on 22325 **/
 /** chunk id: 128156, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => T
@@ -37,30 +37,30 @@ function T(e) {
     currentUser: n,
     displayProfile: T,
     guildId: C,
-    channelId: D,
+    channelId: N,
     subsection: A,
-    onClose: N
+    onClose: D
   } = e, {
     voiceActivityStatusEnabled: k
   } = (0, o.U)({
     location: "UserProfileModalV2Activity"
   }), Z = (0, p.b)({
     location: "UserProfileModalV2Activity"
-  }), R = (0, s.P6)("UserProfileModalV2Activity"), {
+  }), R = (0, c.P6)("UserProfileModalV2Activity"), {
     live: L,
     recent: G,
     stream: B
   } = (0, m.Z)(t.id), {
     voiceChannel: M,
-    voiceActivity: U
+    voiceActivity: F
   } = (0, b.Z)({
     userId: t.id,
     guildId: C
-  }), F = (0, i.e7)([c.Z], () => c.Z.isFetchingUserOutbox(t.id)), W = t.id === n.id, H = (0, i.e7)([f.Z, d.Z], () => {
+  }), U = (0, i.e7)([s.Z], () => s.Z.isFetchingUserOutbox(t.id)), W = t.id === n.id, H = (0, i.e7)([f.Z, d.Z], () => {
     let e = W ? f.Z.getStatus() : d.Z.getStatus(t.id);
     return e === a.Skl.OFFLINE || e === a.Skl.INVISIBLE
-  }), z = L.length > 0 || null != B, K = k && null == B && null == U && null != M, V = !H && (z || K), Y = G.length > 0, X = L.some(e => (0, l.Z)(e));
-  if (!V && !Y && F) return (0, r.jsx)("div", {
+  }), z = L.length > 0 || null != B, V = k && null == B && null == F && null != M, K = !H && (z || V), Y = G.length > 0, X = L.some(e => (0, l.Z)(e));
+  if (!K && !Y && U) return (0, r.jsx)("div", {
     className: E.cards,
     children: Array.from({
       length: 8
@@ -75,15 +75,15 @@ function T(e) {
       })]
     }, t))
   });
-  if (!V && !Y && !F) {
+  if (!K && !Y && !U) {
     var q;
     return W ? (0, r.jsx)(x.Uf, {
-      onClose: N
+      onClose: D
     }) : (0, r.jsx)(x.P9, {
       user: t,
       guildId: null != (q = null == T ? true : T.guildId) ? q : C,
-      channelId: D,
-      onClose: N
+      channelId: N,
+      onClose: D
     })
   }
   return (0, r.jsxs)(P.F, {
@@ -91,7 +91,7 @@ function T(e) {
     fade: true,
     children: [(() => {
       let e = W && R && !X;
-      return V ? (0, r.jsx)(_.Z, {
+      return K ? (0, r.jsx)(_.Z, {
         heading: S.intl.string(S.t.J6STd3),
         children: (0, r.jsxs)("ul", {
           className: E.cards,
@@ -99,33 +99,33 @@ function T(e) {
             children: (0, r.jsx)(h.Z, {
               variant: "horizontal"
             })
-          }), !Z && K && (0, r.jsx)("li", {
+          }), !Z && V && (0, r.jsx)("li", {
             children: (0, r.jsx)(O.Z, {
               user: t,
               currentUser: n,
               voiceChannel: M,
-              onClose: N
+              onClose: D
             })
           }), null != B && (0, r.jsx)("li", {
             children: (0, r.jsx)(j.Z, {
               user: t,
               currentUser: n,
               stream: B,
-              onClose: N
+              onClose: D
             })
           }), L.map((e, i) => (0, r.jsx)("li", {
-            children: (0, r.jsx)(y.Z, {
+            children: (0, r.jsx)(v.Z, {
               user: t,
               currentUser: n,
               activity: e,
-              onClose: N
+              onClose: D
             })
-          }, "live-".concat(i))), Z && K && (0, r.jsx)("li", {
+          }, "live-".concat(i))), Z && V && (0, r.jsx)("li", {
             children: (0, r.jsx)(O.Z, {
               user: t,
               currentUser: n,
               voiceChannel: M,
-              onClose: N
+              onClose: D
             })
           })]
         })
@@ -147,10 +147,10 @@ function T(e) {
       children: (0, r.jsx)("ul", {
         className: E.cards,
         children: G.map(e => (0, r.jsx)("li", {
-          children: (0, r.jsx)(v.Z, {
+          children: (0, r.jsx)(y.Z, {
             user: t,
             entry: e,
-            onClose: N
+            onClose: D
           })
         }, e.id))
       })

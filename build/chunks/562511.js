@@ -1,7 +1,7 @@
 /** Chunk was on 93886 **/
 /** chunk id: 562511, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A2: () => h,
+  A2: () => v,
   S3: () => _
 });
 var Chunk647438 = require("./647438.js"),
@@ -19,12 +19,12 @@ var Chunk647438 = require("./647438.js"),
 function _(e) {
   let t = function(e) {
     let t = (0, o.FT)(l.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : f.lds);
-    return (0, i.e7)([c.Z, u.default, s.ZP], () => {
+    return (0, i.e7)([c.Z, d.default, s.ZP], () => {
       var t, n;
       if (null === e) returnfalse;
       let r = c.Z.getGuild(e);
-      if (true === r || !(0, d.up)(r) || null == r.profile || null === r.profile.tag) returnfalse;
-      let i = u.default.getCurrentUser();
+      if (true === r || !(0, u.up)(r) || null == r.profile || null === r.profile.tag) returnfalse;
+      let i = d.default.getCurrentUser();
       if (true === i || (null == (t = i.primaryGuild) ? true : t.identityGuildId) === r.id && (null == (n = i.primaryGuild) ? true : n.tag) === r.profile.tag) returnfalse;
       let l = s.ZP.getMember(e, i.id);
       return null != l && !l.isPending
@@ -33,29 +33,29 @@ function _(e) {
   return ! function(e) {
     let t = (0, o.FT)(l.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : f.lds),
       n = (0, i.e7)([p.Z], () => null === e ? null : p.Z.getGuildLastSeenInfo(e)),
-      s = (0, i.e7)([u.default], () => {
+      s = (0, i.e7)([d.default], () => {
         var e;
-        return null == (e = u.default.getCurrentUser()) ? true : e.primaryGuild
+        return null == (e = d.default.getCurrentUser()) ? true : e.primaryGuild
       }),
-      d = (0, i.e7)([c.Z], () => {
+      u = (0, i.e7)([c.Z], () => {
         var t, n;
         return null == (n = c.Z.getGuild(e)) || null == (t = n.profile) ? true : t.tag
       });
     if (r.useEffect(() => {
-        t && null === n && null != e && null != d && a.Z.dispatch({
+        t && null === n && null != e && null != u && a.Z.dispatch({
           type: "GUILD_TAG_CHANGED_COACHMARK_SEEN",
           guildId: e,
           lastSeenInfo: {
-            tag: d
+            tag: u
           }
         })
-      }, [e, d, t, n]), null == d || (null == s ? true : s.identityGuildId) === e && (null == s ? true : s.tag) === d) returnfalse;
+      }, [e, u, t, n]), null == u || (null == s ? true : s.identityGuildId) === e && (null == s ? true : s.tag) === u) returnfalse;
     let _ = (null == s ? true : s.identityGuildId) === e && (null == s ? true : s.tag) === null,
-      h = null === n || (null == n ? true : n.tag) === d;
-    return _ && !h && t
+      v = null === n || (null == n ? true : n.tag) === u;
+    return _ && !v && t
   }(e) ? t ? "available" : null : "changed"
 }
 
-function h(e) {
+function v(e) {
   return null !== _(e)
 }

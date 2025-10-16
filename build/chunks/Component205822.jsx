@@ -1,7 +1,7 @@
 /** Chunk was on 93886 **/
 /** chunk id: 205822, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => b
 }), require("./953529.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -23,9 +23,9 @@ function _(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let h = new Chunk710845.Z("UploadArea");
+let v = new Chunk710845.Z("UploadArea");
 
-function v() {
+function h() {
   return (0, Chunk951288.jsxs)("div", {
     children: [(0, Chunk951288.jsx)("div", {
       className: a()(Chunk162130.sparkleWhite, Chunk374450.sparkleOne)
@@ -70,7 +70,7 @@ class g extends Chunk647438.Component {
       style: Chunk647438,
       children: (0, Chunk951288.jsxs)("div", {
         className: Chunk374450.uploadDropModal,
-        children: [this.state.isDragging && (0, Chunk951288.jsx)(v, {}), (0, Chunk951288.jsx)("div", {
+        children: [this.state.isDragging && (0, Chunk951288.jsx)(h, {}), (0, Chunk951288.jsx)("div", {
           className: Chunk374450.bgScale
         }), (0, Chunk951288.jsxs)("div", {
           className: Chunk374450.inner,
@@ -98,7 +98,7 @@ class g extends Chunk647438.Component {
       for (let n = 0; n < e.length; n++) try {
         var t;
         let r = null != (t = e[n].webkitGetAsEntry()) ? t : e[n].getAsEntry();
-        if (null == r) return h.warn("Dropped item is null or undefined"), false;
+        if (null == r) return v.warn("Dropped item is null or undefined"), false;
         if (!r.isFile) returnfalse
       } catch (e) {}
       returntrue
@@ -110,9 +110,9 @@ class g extends Chunk647438.Component {
         l = null != r.items && !t.isAllDropFiles(r.items);
       return !i && !l || (e.stopPropagation(), e.preventDefault(), r.effectAllowed = "none", r.dropEffect = "none", n && (t.setState({
         isDragging: false
-      }), (0, u.openUploadError)({
-        title: d.intl.string(d.t.azO1PT),
-        help: d.intl.string(d.t.Koklr6),
+      }), (0, d.openUploadError)({
+        title: u.intl.string(u.t.azO1PT),
+        help: u.intl.string(u.t.Koklr6),
         icons: t.props.icons
       })), false)
     }), _(this, "handleDragOver", e => {
@@ -120,7 +120,7 @@ class g extends Chunk647438.Component {
       if (!this.preventUnwantedDrop(e)) returnfalse;
       let i = e.dataTransfer;
       if (null != i) {
-        if ("move" === i.effectAllowed ? i.dropEffect = "move" : i.dropEffect = "copy", (0, o.nfh)(u.A) && (0, o.Mr3)(u.A), e.stopPropagation(), e.preventDefault(), null == (t = (n = this.props).onDragOver) || t.call(n, e), !this.state.isDragging) {
+        if ("move" === i.effectAllowed ? i.dropEffect = "move" : i.dropEffect = "copy", (0, o.nfh)(d.A) && (0, o.Mr3)(d.A), e.stopPropagation(), e.preventDefault(), null == (t = (n = this.props).onDragOver) || t.call(n, e), !this.state.isDragging) {
           let e = null == (r = this.elementDOMRef.current) ? true : r.ownerDocument.defaultView;
           (null != e && i.types instanceof e.DOMStringList && i.types.contains("application/x-moz-file") || false !== i.types.indexOf("Files")) && this.setState(e => e.isDragging ? {} : {
             isDragging: true
@@ -157,4 +157,4 @@ class g extends Chunk647438.Component {
     })
   }
 }
-let m = g
+let b = g

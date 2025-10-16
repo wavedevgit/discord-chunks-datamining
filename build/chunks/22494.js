@@ -1,67 +1,81 @@
-/** Chunk was on 21145 **/
-/** chunk id: 22494, original params: e,t,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 22494, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => c
+  Z: () => _
 });
 var Chunk81825 = require("./81825.js"),
   Chunk523080 = require("./523080.js"),
   Chunk541699 = require("./541699.js"),
   Chunk981631 = require("./981631.js");
 
-function u(e, t, r) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
-    value: r,
+    value: n,
     enumerable: true,
     configurable: true,
     writable: true
-  }) : e[t] = r, e
+  }) : e[t] = n, e
 }
-class c extends Chunk81825.Z {
+
+function l(e) {
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      s(e, t, n[t])
+    })
+  }
+  return e
+}
+
+function c(e, t) {
+  var n = Object.keys(e);
+  if (Object.getOwnPropertySymbols) {
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
+  }
+  return n
+}
+
+function u(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : c(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function d(e, t) {
+  if (null == e) return {};
+  var n, r, i = f(e, t);
+  if (Object.getOwnPropertySymbols) {
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+  }
+  return i
+}
+
+function f(e, t) {
+  if (null == e) return {};
+  var n, r, i = {},
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+  return i
+}
+class _ extends Chunk81825.Z {
   static fromServer(e) {
-    var t, r, {
-        user_id: n,
-        wishlist_items: l
-      } = e,
-      a = function(e, t) {
-        if (null == e) return {};
-        var r, n, o = function(e, t) {
-          if (null == e) return {};
-          var r, n, o = {},
-            s = Object.keys(e);
-          for (n = 0; n < s.length; n++) r = s[n], t.indexOf(r) >= 0 || (o[r] = e[r]);
-          return o
-        }(e, t);
-        if (Object.getOwnPropertySymbols) {
-          var s = Object.getOwnPropertySymbols(e);
-          for (n = 0; n < s.length; n++) r = s[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r])
-        }
-        return o
-      }(e, ["user_id", "wishlist_items"]);
-    let p = l.map(e => e.sku_product_line === i.POd.COLLECTIBLES ? s.Z.fromServer(e) : o.Z.fromServer(e));
-    return new c((t = function(e) {
-      for (var t = 1; t < arguments.length; t++) {
-        var r = null != arguments[t] ? arguments[t] : {},
-          n = Object.keys(r);
-        "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-          return Object.getOwnPropertyDescriptor(r, e).enumerable
-        }))), n.forEach(function(t) {
-          u(e, t, r[t])
-        })
-      }
-      return e
-    }({}, a), r = r = {
-      userId: n,
-      items: p
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
-      var r = Object.keys(e);
-      if (Object.getOwnPropertySymbols) {
-        var n = Object.getOwnPropertySymbols(e);
-        r.push.apply(r, n)
-      }
-      return r
-    })(Object(r)).forEach(function(e) {
-      Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(r, e))
-    }), t))
+    var {
+      user_id: t,
+      wishlist_items: n
+    } = e, r = d(e, ["user_id", "wishlist_items"]);
+    let s = n.map(e => e.sku_product_line === o.POd.COLLECTIBLES ? a.Z.fromServer(e) : i.Z.fromServer(e));
+    return new _(u(l({}, r), {
+      userId: t,
+      items: s
+    }))
   }
   getSkuIds() {
     return this.items.map(e => e.skuId)
@@ -70,6 +84,6 @@ class c extends Chunk81825.Z {
     return this.items.some(t => t.skuId === e)
   }
   constructor(e) {
-    super(), u(this, "id", true), u(this, "userId", true), u(this, "items", true), this.id = e.id, this.userId = e.userId, this.items = e.items
+    super(), s(this, "id", true), s(this, "userId", true), s(this, "items", true), this.id = e.id, this.userId = e.userId, this.items = e.items
   }
 }

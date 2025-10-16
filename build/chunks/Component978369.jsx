@@ -1,4 +1,4 @@
-/** Chunk was on 3091 **/
+/** Chunk was on 22325 **/
 /** chunk id: 978369, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -20,30 +20,30 @@ let d = Chunk647438.memo(function(e) {
   } = e;
   return (0, r.jsx)(a.v2r, {
     navId: "widget-game-tags",
-    "aria-label": s.intl.string(s.t.r6EJOj),
+    "aria-label": c.intl.string(c.t.r6EJOj),
     onClose: l,
     onSelect: () => {},
     className: u.gameTagsMenu,
-    children: Object.entries(c.aE).map(e => {
+    children: Object.entries(s.aE).map(e => {
       let [l, o] = e, u = ((e, l) => {
         let o = [];
-        return l.type === c.kd.RADIO && o.push((0, r.jsx)(a.k5B, {
+        return l.type === s.kd.RADIO && o.push((0, r.jsx)(a.k5B, {
           id: "".concat(e, "-none"),
           group: e,
-          label: s.intl.string(s.t.PoWNfX),
+          label: c.intl.string(c.t.PoWNfX),
           checked: !l.tags.some(e => t.includes(e)),
           action: () => i(l.tags)
         }, "none")), l.tags.forEach(i => {
-          let s = c.XV[i];
-          null != s && (l.type === c.kd.RADIO ? o.push((0, r.jsx)(a.k5B, {
+          let c = s.XV[i];
+          null != c && (l.type === s.kd.RADIO ? o.push((0, r.jsx)(a.k5B, {
             id: i,
             group: e,
-            label: s.getText(),
+            label: c.getText(),
             checked: t.includes(i),
             action: () => n(i, true)
           }, i)) : o.push((0, r.jsx)(a.S89, {
             id: i,
-            label: s.getText(),
+            label: c.getText(),
             checked: t.includes(i),
             action: () => n(i, false)
           }, i)))
@@ -69,7 +69,7 @@ function f(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
       r = new Set(b);
     if (t) {
-      let t = Object.values(c.aE).find(t => t.tags.includes(e));
+      let t = Object.values(s.aE).find(t => t.tags.includes(e));
       null != t && (t.tags.forEach(e => {
         r.delete(e)
       }), r.add(e), m({
@@ -87,7 +87,7 @@ function f(e) {
       gameId: f
     }));
     (0, o.n$)(n, f, Array.from(r))
-  }, [b, m, n, f]), y = (0, i.useCallback)(e => {
+  }, [b, m, n, f]), v = (0, i.useCallback)(e => {
     let t = new Set(b);
     e.forEach(e => {
       t.delete(e)
@@ -114,7 +114,7 @@ function f(e) {
       return (0, r.jsx)(d, {
         currentTags: b,
         onTagSelect: h,
-        onNoneSelect: y,
+        onNoneSelect: v,
         onClose: t
       })
     },
@@ -143,11 +143,11 @@ function f(e) {
           return e
         }({}, e), n = n = {
           className: u.addButton,
-          "aria-label": s.intl.string(s.t.r6EJOj),
+          "aria-label": c.intl.string(c.t.r6EJOj),
           children: (0, r.jsx)(a.Text, {
             variant: "text-xxs/medium",
             color: "none",
-            children: s.intl.string(s.t.fZSej4)
+            children: c.intl.string(c.t.fZSej4)
           })
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);

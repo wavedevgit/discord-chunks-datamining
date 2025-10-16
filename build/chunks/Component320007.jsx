@@ -30,8 +30,8 @@ function _(e) {
   }, {
     autoTrackExposure: false
   }), {
-    hasClips: y,
-    hasNewClips: v,
+    hasClips: v,
+    hasNewClips: y,
     lastClipsSession: I,
     remindersEnabled: C,
     hasAnyClipAnimations: S
@@ -73,7 +73,7 @@ function _(e) {
       modalKey: m.Qr
     })
   }
-  return (i.useEffect(() => (S ? A() : x(), () => x()), [S, A, x]), O && E && y) ? (0, r.jsxs)(r.Fragment, {
+  return (i.useEffect(() => (S ? A() : x(), () => x()), [S, A, x]), O && E && v) ? (0, r.jsxs)(r.Fragment, {
     children: [null != N && t && C && T && !(0, a.$sL)() && !j && (0, r.jsx)(g.Z, {
       clipIconRef: N,
       lastClipsSession: I,
@@ -83,7 +83,7 @@ function _(e) {
       children: (0, r.jsx)(o.JO, {
         className: _,
         icon: a.AlX,
-        showBadge: v,
+        showBadge: y,
         tooltip: b.intl.string(b.t.MXaLEB),
         onClick: Z
       })

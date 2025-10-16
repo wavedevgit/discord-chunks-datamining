@@ -81,17 +81,17 @@ async function j(e, t, n) {
     signal: k,
     isSocketRpcPrivateScope: M
   } = e;
-  if (null == k ? true : k.aborted) throw new v.Z({
+  if (null == k ? true : k.aborted) throw new y.Z({
     errorCode: C.lTL.UNKNOWN_ERROR
   }, "Request aborted");
-  if (null == u) throw new v.Z({
+  if (null == u) throw new y.Z({
     errorCode: C.lTL.OAUTH2_ERROR
   }, "No Client ID provided");
-  if (!M && null != E) throw new v.Z({
+  if (!M && null != E) throw new y.Z({
     errorCode: C.lTL.OAUTH2_ERROR
   }, "Redirect URI cannot be used in the RPC OAuth2 Authorization flow");
   let U = [];
-  if ("string" == typeof j ? U = j.split(" ").filter(e => e.length > 0) : Array.isArray(j) && (U = j), null == _.default.getCurrentUser()) throw new v.Z({
+  if ("string" == typeof j ? U = j.split(" ").filter(e => e.length > 0) : Array.isArray(j) && (U = j), null == _.default.getCurrentUser()) throw new y.Z({
     errorCode: C.lTL.OAUTH2_ERROR
   }, "Client is not logged in");
   if (null != R) l = Number(R);
@@ -122,7 +122,7 @@ async function j(e, t, n) {
     let {
       body: e
     } = t;
-    throw new v.Z({
+    throw new y.Z({
       errorCode: C.lTL.OAUTH2_ERROR
     }, "OAuth2 Authorization Error: ".concat((null == e ? true : e.message) || "Unknown Error"))
   }
@@ -143,16 +143,16 @@ async function j(e, t, n) {
     let {
       body: e
     } = t;
-    throw new v.Z({
+    throw new y.Z({
       errorCode: C.lTL.OAUTH2_ERROR
     }, "OAuth2 Authorize Error: ".concat((null == e ? true : e.message) || "Unknown Error"))
   }
   null == n || n(o.application, Z, D);
-  let G = y.Hn;
+  let G = v.Hn;
   try {
     G = a.vB(null != A ? A : 0)
   } catch (e) {}
-  if (null != o.integration_type && Object.values(i.Y).includes(o.integration_type) && (r = new Map).set(o.integration_type, o), null != P[o.application.id] && (await P[o.application.id].process(), null == k ? true : k.aborted)) throw new v.Z({
+  if (null != o.integration_type && Object.values(i.Y).includes(o.integration_type) && (r = new Map).set(o.integration_type, o), null != P[o.application.id] && (await P[o.application.id].process(), null == k ? true : k.aborted)) throw new y.Z({
     errorCode: C.lTL.UNKNOWN_ERROR
   }, "Request aborted");
   return t({
@@ -177,10 +177,10 @@ async function j(e, t, n) {
 }
 
 function A(e, t) {
-  if (e.authorization.accessToken) throw new v.Z({
+  if (e.authorization.accessToken) throw new y.Z({
     errorCode: C.lTL.INVALID_COMMAND
   }, "Already authenticated");
-  if (e.authorization.authing) throw new v.Z({
+  if (e.authorization.authing) throw new y.Z({
     errorCode: C.lTL.INVALID_COMMAND
   }, "Already authenticating");
   return e.authorization.authing = true, o.tn.get({
@@ -198,11 +198,11 @@ function A(e, t) {
       scopes: l,
       expires: a
     } = n.body;
-    if (e.application.id !== r.id) throw new v.Z({
+    if (e.application.id !== r.id) throw new y.Z({
       errorCode: C.lTL.INVALID_CLIENTID
     }, "Application does not match the connection's");
     let o = _.default.getCurrentUser();
-    if (null == o || !i || o.id !== i.id) throw new v.Z({
+    if (null == o || !i || o.id !== i.id) throw new y.Z({
       errorCode: C.lTL.INVALID_TOKEN
     }, "Token does not match current user");
     return e.authorization.scopes = [...e.authorization.scopes, ...l, I.wE], e.authorization.accessToken = t, e.authorization.expires = new Date(a), d.Z.dispatch({
@@ -213,7 +213,7 @@ function A(e, t) {
       access_token: t
     })
   }, () => {
-    throw new v.Z({
+    throw new y.Z({
       errorCode: C.lTL.INVALID_TOKEN
     }, "Invalid access token: ".concat(t))
   }).catch(t => {
@@ -234,7 +234,7 @@ function x(e, t) {
         } = n;
         if (null == o && i.transport === I.He.IPC) {
           let n = i.application.id;
-          if (null == n) throw new v.Z({
+          if (null == n) throw new y.Z({
             errorCode: C.lTL.INVALID_COMMAND
           }, "No application.");
           let s = l.x.IDENTIFY,
@@ -245,14 +245,14 @@ function x(e, t) {
               signal: a,
               isSocketRpcPrivateScope: false
             }, e, t).then(e => {
-              if (null == e) throw new v.Z({
+              if (null == e) throw new y.Z({
                 errorCode: C.lTL.UNKNOWN_ERROR
               }, "Unknown error occurred");
               let t = e.split(/#|\?/),
                 l = r.parse(t[t.length - 1]);
               if (null != l.error) {
                 var a;
-                throw new v.Z({
+                throw new y.Z({
                   errorCode: C.lTL.OAUTH2_ERROR
                 }, "OAuth2 Error: ".concat(l.error, ": ").concat(null != (a = l.error_description) ? a : "unknown error"))
               }
@@ -279,7 +279,7 @@ function x(e, t) {
             return delete t[n], u.K.set(N, t), c()
           }) : c()
         }
-        if (null == o) throw new v.Z({
+        if (null == o) throw new y.Z({
           errorCode: C.lTL.INVALID_TOKEN
         }, "No access token provided");
         return A(i, o)
@@ -292,20 +292,20 @@ function x(e, t) {
           signal: i,
           args: l
         } = n, a = l.client_id;
-        if (!a) throw new v.Z({
+        if (!a) throw new y.Z({
           errorCode: C.lTL.INVALID_CLIENTID
         }, "No client id provided");
-        if (null != r.authorization.accessToken) throw new v.Z({
+        if (null != r.authorization.accessToken) throw new y.Z({
           errorCode: C.lTL.INVALID_COMMAND
         }, "Already authenticated");
-        if (r.authorization.authing) throw new v.Z({
+        if (r.authorization.authing) throw new y.Z({
           errorCode: C.lTL.INVALID_COMMAND
         }, "Already authing");
-        if (r.authorization.authing = true, "token" === l.response_type) throw r.authorization.authing = false, new v.Z({
+        if (r.authorization.authing = true, "token" === l.response_type) throw r.authorization.authing = false, new y.Z({
           errorCode: C.lTL.INVALID_COMMAND
         }, 'Authorization response_type "token" is not supported');
         let o = r.authorization.scopes.includes(I.cE);
-        if (!o && r.application.id !== a) throw r.authorization.authing = false, new v.Z({
+        if (!o && r.application.id !== a) throw r.authorization.authing = false, new y.Z({
           errorCode: C.lTL.INVALID_CLIENTID
         }, "Application does not match the connection's");
         let s = l.scopes || l.scope;
@@ -314,7 +314,7 @@ function x(e, t) {
           signal: i,
           isSocketRpcPrivateScope: o
         }), e, t).then(e => {
-          if (r.authorization.authing = false, null == e) throw new v.Z({
+          if (r.authorization.authing = false, null == e) throw new y.Z({
             errorCode: C.lTL.UNKNOWN_ERROR
           }, "Unknown error occurred");
           let t = new URL(e),
@@ -327,11 +327,11 @@ function x(e, t) {
           if (null != i && "" !== i) {
             var l;
             let e = null != (l = t.searchParams.get("error_description")) ? l : "unknown error";
-            throw new v.Z({
+            throw new y.Z({
               errorCode: C.lTL.OAUTH2_ERROR
             }, "OAuth2 Error: ".concat(i, ": ").concat(e))
           }
-          if (null == n) throw new v.Z({
+          if (null == n) throw new y.Z({
             errorCode: C.lTL.OAUTH2_ERROR
           }, "OAuth2 Error: Unable to find auth code");
           return {

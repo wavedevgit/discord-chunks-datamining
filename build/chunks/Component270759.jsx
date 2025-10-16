@@ -60,7 +60,7 @@ let x = function(e) {
     {
       section: Z,
       rows: w
-    } = (0, s.cj)([y.ZP], () => y.ZP.getState()),
+    } = (0, s.cj)([v.ZP], () => v.ZP.getState()),
     L = (0, s.e7)([g.Z], () => g.Z.getSuggestionCount()),
     R = i.useMemo(() => w.getRelationshipCounts(), [w]);
   i.useEffect(() => {
@@ -118,7 +118,7 @@ let x = function(e) {
       ariaLabel: P.intl.string(P.t.j0wbEx),
       className: a()(j.item, j.addFriend)
     }],
-    G = v.o.useConfig({
+    G = y.o.useConfig({
       location: "people page"
     }).friendsTab,
     B = null,

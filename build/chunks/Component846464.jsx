@@ -1,7 +1,7 @@
-/** Chunk was on 31029 **/
+/** Chunk was on 84071 **/
 /** chunk id: 846464, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  q: () => y
+  q: () => v
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
@@ -9,10 +9,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk140465 = require("./140465.js"),
   Chunk283066 = require("./283066.js"),
-  Chunk998030 = require("./998030.js"),
   Chunk639119 = require("./639119.js"),
   Chunk973007 = require("./973007.jsx"),
   Chunk701464 = require("./701464.jsx"),
+  Chunk602733 = require("./602733.js"),
   Chunk74538 = require("./74538.js"),
   Chunk987209 = require("./987209.jsx"),
   Chunk563132 = require("./563132.jsx"),
@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk360026 = require("./360026.js");
 
-function y(e) {
+function v(e) {
   let {
     handleStepChange: t,
     handleClose: n,
@@ -31,17 +31,17 @@ function y(e) {
   } = e, {
     setSelectedSkuId: a,
     activeSubscription: l,
-    startedPaymentFlowWithPaymentSourcesRef: d,
-    setSelectedPlanId: c,
+    startedPaymentFlowWithPaymentSourcesRef: c,
+    setSelectedPlanId: C,
     priceOptions: u,
     defaultPlanId: j
-  } = (0, h.JL)(), {
+  } = (0, _.JL)(), {
     isGift: b,
-    claimableRewards: y
-  } = (0, _.wD)(), v = b && null != y && y.length > 0, S = (0, C.N)(i), w = (0, o.Nx)(), O = (0, s.Z)({
+    claimableRewards: v
+  } = (0, h.wD)(), L = b && null != v && v.length > 0, y = (0, d.N)(i), I = (0, s.Nx)(), w = (0, o.Z)({
     location: "PremiumPaymentSelect"
   });
-  return (0, r.jsx)(L, {
+  return (0, r.jsx)(S, {
     selectSku: e => (function(e) {
       let {
         activeSubscription: t,
@@ -50,26 +50,26 @@ function y(e) {
         handleStepChange: i,
         isGift: a,
         userTrialOffer: l,
-        setSelectedPlanId: o,
-        startedPaymentFlowWithPaymentSources: s,
+        setSelectedPlanId: s,
+        startedPaymentFlowWithPaymentSources: o,
         defaultPlanId: d
       } = e;
       r(n);
-      let C = m.h8.PLAN_SELECT,
-        c = (0, p.k5)(t);
-      c !== g.Si.TIER_1 && c !== g.Si.TIER_2 || n !== g.Si.TIER_0 || a || (C = m.h8.WHAT_YOU_LOSE);
+      let c = m.h8.PLAN_SELECT,
+        C = (0, p.k5)(t);
+      C !== g.Si.TIER_1 && C !== g.Si.TIER_2 || n !== g.Si.TIER_0 || a || (c = m.h8.WHAT_YOU_LOSE);
       let u = (0, x.T)({
           userTrialOffer: l,
           isGift: a,
           skuId: n
         }),
-        _ = (0, f.Kp)({
+        h = (0, f.Kp)({
           isTrial: u,
           isGift: a,
           selectedSkuId: n,
-          startedPaymentFlowWithPaymentSources: s
+          startedPaymentFlowWithPaymentSources: o
         });
-      C !== m.h8.WHAT_YOU_LOSE && _ && (C = m.h8.REVIEW, o((0, f.nA)(n, t, d))), i(C, {
+      c !== m.h8.WHAT_YOU_LOSE && h && (c = m.h8.REVIEW, s((0, f.nA)(n, t, d))), i(c, {
         analyticsDataOverride: {
           sku_id: n
         }
@@ -80,37 +80,39 @@ function y(e) {
       setSelectedSkuId: a,
       handleStepChange: t,
       isGift: b,
-      userTrialOffer: S,
-      startedPaymentFlowWithPaymentSources: d.current,
-      setSelectedPlanId: c,
+      userTrialOffer: y,
+      startedPaymentFlowWithPaymentSources: c.current,
+      setSelectedPlanId: C,
       defaultPlanId: j
     }),
     onClose: n,
     isGift: b,
-    inOfferExperience: w,
+    inOfferExperience: I,
     priceOptions: u,
-    showPromotionalGiftBanner: v,
-    enablePremiumBrandRefresh: O
+    showPromotionalGiftBanner: L,
+    enablePremiumBrandRefresh: w
   })
 }
 
-function L(e) {
+function S(e) {
   let {
     selectSku: t,
     onClose: n,
     isGift: i,
-    inOfferExperience: o,
-    priceOptions: s,
-    showPromotionalGiftBanner: C,
-    enablePremiumBrandRefresh: h
+    inOfferExperience: s,
+    priceOptions: o,
+    showPromotionalGiftBanner: d,
+    enablePremiumBrandRefresh: _
   } = e, {
     giftRecipient: m
-  } = (0, _.wD)(), f = (0, d.y)({
-    location: "PremiumPaymentSelect"
-  }) && i && null != m, x = f ? (0, r.jsx)(l.Heading, {
+  } = (0, h.wD)(), f = (0, u.ao)({
+    location: "PremiumPaymentSelect",
+    giftRecipient: m,
+    isGift: i
+  }), x = f ? (0, r.jsx)(l.Heading, {
     variant: "heading-lg/bold",
     children: j.intl.string(j.t["wg/30t"])
-  }) : h ? (0, r.jsx)(l.Heading, {
+  }) : _ ? (0, r.jsx)(l.Heading, {
     variant: "heading-lg/bold",
     children: j.intl.string(j.t["r+SebW"])
   }) : (0, r.jsx)(l.Heading, {
@@ -121,7 +123,7 @@ function L(e) {
     children: [(0, r.jsx)(l.xBx, {
       "data-migration-pending": true,
       className: a()(b.skuSelectModalHeader, {
-        [b.premiumBrandRefreshHeader]: h
+        [b.premiumBrandRefreshHeader]: _
       }),
       separator: false,
       children: (0, r.jsxs)(l.Kqy, {
@@ -137,23 +139,23 @@ function L(e) {
     }), (0, r.jsx)(l.hzk, {
       "data-migration-pending": true,
       className: a()(b.skuSelectModalContent, {
-        [b.modalSize]: !h,
-        [b.modalPadding]: o && !h,
-        [b.premiumBrandRefreshContent]: h,
+        [b.modalSize]: !_,
+        [b.modalPadding]: s && !_,
+        [b.premiumBrandRefreshContent]: _,
         [b.wishlistModalSize]: f
       }),
-      children: f ? (0, r.jsx)(u.Z, {
+      children: null != m && f ? (0, r.jsx)(C.Z, {
         onSelectSku: e => t((0, p.Wz)(e)),
         isGift: i,
-        priceOptions: s,
-        showPromotionalGiftBanner: C,
+        priceOptions: o,
+        showPromotionalGiftBanner: d,
         giftRecipient: m
       }) : (0, r.jsx)(c.ZP, {
         onSelectSku: e => t((0, p.Wz)(e)),
         isGift: i,
-        priceOptions: s,
-        showPromotionalGiftBanner: C,
-        enablePremiumBrandRefresh: h
+        priceOptions: o,
+        showPromotionalGiftBanner: d,
+        enablePremiumBrandRefresh: _
       })
     })]
   })

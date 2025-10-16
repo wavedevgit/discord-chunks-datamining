@@ -1,4 +1,4 @@
-/** Chunk was on 3091 **/
+/** Chunk was on 22325 **/
 /** chunk id: 70399, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   T: () => p,
@@ -63,12 +63,12 @@ function p(e) {
   let {
     applicationId: t,
     size: n = "default"
-  } = e, i = (0, s.q)(t), {
+  } = e, i = (0, c.q)(t), {
     hasAlreadyLinked: a,
     canStartAuthorization: o,
     startAuthorization: u,
     fetched: g
-  } = (0, c.FG)(i);
+  } = (0, s.FG)(i);
   return "default" !== n || null == i ? null : (0, r.jsxs)("div", {
     className: f.footer,
     children: [(0, r.jsx)(l.uIJ, {

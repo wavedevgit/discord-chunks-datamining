@@ -1,4 +1,4 @@
-/** Chunk was on 3091 **/
+/** Chunk was on 22325 **/
 /** chunk id: 860717, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Q
@@ -50,7 +50,7 @@ function C(e) {
   return e
 }
 
-function D(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -63,7 +63,7 @@ function D(e, t) {
   }), e
 }
 let A = /{{(.*?)}}/g,
-  N = [{
+  D = [{
     type: "HERO",
     title: "{{username}}",
     image: "{{featured_played_character_image}}",
@@ -186,7 +186,7 @@ function Z(e) {
         }
         return i
       }(t, ["body"]);
-      return (0, r.jsx)(G, D(C({}, i), {
+      return (0, r.jsx)(G, N(C({}, i), {
         body: L(n)
       }));
     case "GRID":
@@ -199,9 +199,9 @@ function Z(e) {
         name: R(t.name)
       });
     case "TEXT":
-      return (0, r.jsx)(U, C({}, t));
-    case "TEXT_WITH_IMAGE":
       return (0, r.jsx)(F, C({}, t));
+    case "TEXT_WITH_IMAGE":
+      return (0, r.jsx)(U, C({}, t));
     case "SEPARATOR":
       return (0, r.jsx)(W, C({}, t));
     case "SOCIAL_PROOF":
@@ -230,7 +230,7 @@ function G(e) {
     className: T.heroSection,
     children: [(0, r.jsxs)("div", {
       className: T.heroBody,
-      children: [(0, r.jsx)(s.Text, {
+      children: [(0, r.jsx)(c.Text, {
         variant: "text-lg/medium",
         className: T.heroTitle,
         children: null != t ? t : (0, r.jsx)("div", {
@@ -283,11 +283,11 @@ function M(e) {
   })
 }
 
-function U(e) {
+function F(e) {
   let {
     content: t
   } = e, n = i.useId(), a = (0, h._)();
-  return null != t ? (0, r.jsx)(v.Z, {
+  return null != t ? (0, r.jsx)(y.Z, {
     type: u.re.TEXT_DISPLAY,
     id: n,
     content: t
@@ -296,7 +296,7 @@ function U(e) {
   })
 }
 
-function F(e) {
+function U(e) {
   let {
     content: t,
     image: n,
@@ -315,7 +315,7 @@ function F(e) {
   }) : null;
   return (0, r.jsxs)("div", {
     className: T.textWithImage,
-    children: ["left" === i ? o : null, (0, r.jsx)(U, {
+    children: ["left" === i ? o : null, (0, r.jsx)(F, {
       content: t
     }), "right" === i ? o : null]
   })
@@ -326,7 +326,7 @@ function W(e) {
     size: t = "small",
     divider: n = false
   } = e, a = i.useId();
-  return (0, r.jsx)(y.Z, {
+  return (0, r.jsx)(v.Z, {
     type: u.re.SEPARATOR,
     id: a,
     divider: n,
@@ -336,7 +336,7 @@ function W(e) {
 
 function H() {
   let e = function() {
-      let e = Chunk647438.useContext(V);
+      let e = Chunk647438.useContext(K);
       if (null == module) throw Error("ApplicationWidgetContext provider not found");
       return module
     }(),
@@ -369,7 +369,7 @@ function z(e, t) {
   return r
 }
 
-function K(e, t) {
+function V(e, t) {
   var n, r;
   if (null == e || "skeleton" === t.mode) return null;
   let i = null == (r = e.match(A)) || null == (n = r[0]) ? true : n.slice(2, false);
@@ -377,7 +377,7 @@ function K(e, t) {
   let a = t.variables[i];
   return null == a || "unfurled_media" !== a.type ? null : a.media
 }
-let V = Chunk647438.createContext(null);
+let K = Chunk647438.createContext(null);
 
 function Y(e) {
   return (0, o.cj)([f.Z, I.Z, _.Z], () => {
@@ -412,24 +412,24 @@ function X(e) {
 }
 
 function q(e) {
-  return (0, r.jsxs)(s.Kqy, {
+  return (0, r.jsxs)(c.Kqy, {
     direction: "horizontal",
     gap: 24,
     padding: 16,
     fullWidth: false,
     className: T.cta,
-    children: [(0, r.jsxs)(s.Kqy, {
+    children: [(0, r.jsxs)(c.Kqy, {
       gap: 4,
-      children: [(0, r.jsx)(s.Heading, {
+      children: [(0, r.jsx)(c.Heading, {
         variant: "heading-sm/medium",
         color: "text-default",
         children: e.heading
-      }), (0, r.jsx)(s.Text, {
+      }), (0, r.jsx)(c.Text, {
         variant: "text-xs/normal",
         color: "header-secondary",
         children: e.content
       })]
-    }), (0, r.jsx)(s.Kqy, {
+    }), (0, r.jsx)(c.Kqy, {
       direction: "horizontal",
       gap: 12,
       align: "center",
@@ -448,18 +448,18 @@ let Q = Object.assign(function(e) {
     application: o,
     game: u,
     config: f
-  } = Y(n), m = null == o ? true : o.getIconURL(16), b = (0, x.O)(t.id).data, h = null == b ? true : b.find(e => e.application_id === n.applicationId), y = (0, p.Z)({
+  } = Y(n), m = null == o ? true : o.getIconURL(16), b = (0, x.O)(t.id).data, h = null == b ? true : b.find(e => e.application_id === n.applicationId), v = (0, p.Z)({
     location: "UserProfileApplicationWidget",
     applicationId: null == u ? true : u.id,
     source: g.m1.UserProfile,
     sourceUserId: t.id,
     trackEntryPointImpression: true
   }), {
-    fetched: v,
+    fetched: y,
     hasAlreadyLinked: O,
     canStartAuthorization: _,
     startAuthorization: I
-  } = (0, d.FG)(o), S = null == a && v && !O && _, A = (0, r.jsxs)(r.Fragment, {
+  } = (0, d.FG)(o), S = null == a && y && !O && _, A = (0, r.jsxs)(r.Fragment, {
     children: [null != m ? (0, r.jsx)("img", {
       className: T.appIcon,
       src: m,
@@ -468,7 +468,7 @@ let Q = Object.assign(function(e) {
       alt: ""
     }) : (0, r.jsx)("span", {
       className: T.appIconPlaceholder
-    }), (0, r.jsx)(s.Text, {
+    }), (0, r.jsx)(c.Text, {
       variant: "text-sm/medium",
       children: (null == o ? true : o.name) != null ? o.name : (0, r.jsx)("div", {
         className: T.textPlaceholder
@@ -477,12 +477,12 @@ let Q = Object.assign(function(e) {
   }), k = null == u ? (0, r.jsx)("div", {
     className: T.header,
     children: A
-  }) : (0, r.jsx)(c.u, {
+  }) : (0, r.jsx)(s.u, {
     asContainer: true,
     text: E.intl.string(E.t.ajHoOj),
-    children: (0, r.jsx)(s.P3F, {
+    children: (0, r.jsx)(c.P3F, {
       className: l()(T.header, T.headerClickable),
-      onClick: y,
+      onClick: v,
       "aria-label": E.intl.string(E.t.ajHoOj),
       children: A
     })
@@ -514,12 +514,12 @@ let Q = Object.assign(function(e) {
       }).filter(P.lm)),
       config: t
     });
-    return N.map(function e(t) {
+    return D.map(function e(t) {
       switch (t.type) {
         case "HERO":
           var n;
           return {
-            type: "HERO", body: t.body.map(e), title: z(t.title, a), image: K(t.image, a), imagePlaceholder: null == (n = a.config) ? true : n.hero_placeholder_image
+            type: "HERO", body: t.body.map(e), title: z(t.title, a), image: V(t.image, a), imagePlaceholder: null == (n = a.config) ? true : n.hero_placeholder_image
           };
         case "GRID":
           return {
@@ -535,7 +535,7 @@ let Q = Object.assign(function(e) {
           };
         case "TEXT_WITH_IMAGE":
           return {
-            type: "TEXT_WITH_IMAGE", content: z(t.content, a), image: K(t.image, a), imagePosition: t.imagePosition
+            type: "TEXT_WITH_IMAGE", content: z(t.content, a), image: V(t.image, a), imagePosition: t.imagePosition
           };
         case "SEPARATOR":
         case "SOCIAL_PROOF":
@@ -543,18 +543,18 @@ let Q = Object.assign(function(e) {
       }
     })
   }, [f, h]);
-  return (0, r.jsxs)(w.Z, D(C({}, e), {
+  return (0, r.jsxs)(w.Z, N(C({}, e), {
     userId: t.id,
     widget: n,
     className: T.widgetContainer,
     headerTitle: k,
-    dragHandleAdditionalMenuItems: null != u ? (0, r.jsx)(s.sNh, {
+    dragHandleAdditionalMenuItems: null != u ? (0, r.jsx)(c.sNh, {
       id: "view-game-profile",
       label: "View Game Profile",
-      icon: s.iWm,
-      action: y
+      icon: c.iWm,
+      action: v
     }) : null,
-    children: [(0, r.jsx)(V.Provider, {
+    children: [(0, r.jsx)(K.Provider, {
       value: e,
       children: (0, r.jsx)(X, {
         widget: n,
@@ -566,9 +566,9 @@ let Q = Object.assign(function(e) {
       className: T.footer,
       children: [null != h || S ? null : (0, r.jsxs)("div", {
         className: T.stillSyncing,
-        children: [(0, r.jsx)(s.wGF, {
+        children: [(0, r.jsx)(c.wGF, {
           size: "xxs"
-        }), (0, r.jsx)(s.Text, {
+        }), (0, r.jsx)(c.Text, {
           variant: "text-sm/medium",
           color: "text-secondary",
           children: E.intl.string(E.t.z5K4Ul)
@@ -576,7 +576,7 @@ let Q = Object.assign(function(e) {
       }), S ? (0, r.jsx)(q, {
         heading: E.intl.string(E.t.UDPRLC),
         content: E.intl.string(E.t["OW/2am"]),
-        buttons: (0, r.jsx)(s.Button, {
+        buttons: (0, r.jsx)(c.Button, {
           text: E.intl.string(E.t.S0W8Z2),
           onClick: I
         })

@@ -181,7 +181,7 @@ function j(e) {
         change_log_id: D,
         seconds_open: Math.round((Date.now() - e) / 1e3)
       }), null != j && (0, g.Q3)(j, {
-        dismissAction: y.L.DISMISS
+        dismissAction: v.L.DISMISS
       })
     }
   }, [j, D]), (0, r.jsx)(c.Y0X, {
@@ -230,7 +230,7 @@ function j(e) {
           },
           disablePictureInPicture: true,
           children: null == el ? true : el.map(e => {
-            let t = (0, v.getLanguages)().find(t => t.code === e.locale);
+            let t = (0, y.getLanguages)().find(t => t.code === e.locale);
             return null == t ? null : (0, r.jsx)("track", {
               label: t.englishName,
               kind: "captions",

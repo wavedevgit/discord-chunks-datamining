@@ -1,4 +1,4 @@
-/** Chunk was on 31029 **/
+/** Chunk was on 84071 **/
 /** chunk id: 14476, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   c: () => m
@@ -27,35 +27,35 @@ let m = e => {
     a11yLabel: g,
     selectedSkuId: j,
     category: b
-  } = e, y = i.useRef(null), {
-    isHoveringOrFocusing: L
-  } = (0, c.Z)(y), v = !m && L, S = (0, C.ZP)(), w = (0, s.wj)(S), O = {
-    type: o.Z.AVATAR_DECORATION,
+  } = e, v = i.useRef(null), {
+    isHoveringOrFocusing: S
+  } = (0, C.Z)(v), L = !m && S, y = (0, c.ZP)(), I = (0, o.wj)(y), w = {
+    type: s.Z.AVATAR_DECORATION,
     label: g,
     asset: n
   };
   return (0, r.jsx)(d.tEY, {
     children: (0, r.jsxs)(d.kL8, {
-      ref: y,
+      ref: v,
       "aria-label": null != x ? x : "",
       onClick: () => {
         null == t || null == f || m || f(t)
       },
-      className: l()(w ? h.shopCardDark : h.shopCard, {
-        [h.shopCardAnimation]: !m,
-        [w ? h.shopCardDarkHighlighted : h.shopCardHighlighted]: v,
-        [h.shopCardSelected]: j === t
+      className: l()(I ? _.shopCardDark : _.shopCard, {
+        [_.shopCardAnimation]: !m,
+        [I ? _.shopCardDarkHighlighted : _.shopCardHighlighted]: L,
+        [_.shopCardSelected]: j === t
       }),
       children: [(0, r.jsx)("div", {
-        className: l()(h.preview, {
-          [h.previewTrick]: b === u.KN.Trick,
-          [h.previewTreat]: b === u.KN.Treat,
-          [h.shopCardClaimed]: m
+        className: l()(_.preview, {
+          [_.previewTrick]: b === u.KN.Trick,
+          [_.previewTreat]: b === u.KN.Treat,
+          [_.shopCardClaimed]: m
         }),
         children: (0, r.jsx)(p.R, {
-          item: O,
+          item: w,
           user: a,
-          isHighlighted: v,
+          isHighlighted: L,
           avatarSize: d.EFr.SIZE_120,
           isPurchased: m
         })
@@ -64,15 +64,15 @@ let m = e => {
         width: 48,
         height: 48,
         color: d.TVs.colors.WHITE,
-        className: h.claimedIcon
+        className: _.claimedIcon
       }), (0, r.jsxs)("div", {
-        className: h.productName,
+        className: _.productName,
         children: [(0, r.jsx)(d.Heading, {
           variant: "text-md/bold",
           children: x
         }), (0, r.jsx)(d.Text, {
           variant: "text-md/normal",
-          children: m ? _.intl.string(_.t["6cfuDg"]) : _.intl.string(_.t.QQsaCQ)
+          children: m ? h.intl.string(h.t["6cfuDg"]) : h.intl.string(h.t.QQsaCQ)
         })]
       })]
     })

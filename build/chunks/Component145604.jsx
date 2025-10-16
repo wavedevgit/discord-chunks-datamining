@@ -89,15 +89,15 @@ async function et(e) {
     voiceChannelBitrate: m,
     voiceChannelGuildId: b
   } = e, _ = await (0, A.hj)(a.pid), {
-    gameName: y,
-    gameId: v,
+    gameName: v,
+    gameId: y,
     exe: I,
     distributor: C,
     rawExePath: S
   } = (0, E.G8)(a), j = (0, P.NW)("ChatAutoAnalytics", false), Z = d.enabledLegacy || j && d.enabledOOP, L = T.v.legacyEnabled || j && T.v.oopEnabled, R = d.source;
   K.default.track(J.rMx.LAUNCH_GAME, {
-    game: y,
-    game_id: v,
+    game: v,
+    game_id: y,
     verified: null != o && (0, E.vp)(S, null == o ? true : o.executables),
     elevated: a.elevated,
     is_launcher: null != (r = null == a ? true : a.isLauncher) && r,
@@ -134,8 +134,8 @@ class en extends Chunk647438.PureComponent {
       voiceChannelBitrate: d,
       videoEnabled: f,
       isScreenSharing: g,
-      runningGame: y,
-      runningGamePid: v,
+      runningGame: v,
+      runningGamePid: y,
       selectedChannelId: C,
       selectedGuildId: S,
       connected: T
@@ -185,25 +185,25 @@ class en extends Chunk647438.PureComponent {
         join_voice_id: G.Z.getJoinVoiceId()
       }, (0, p.oG)(c, o), (0, p.kO)(c, o, f)))
     }
-    let P = null != y && null != y.distributor && null != y.sku && null != e.runningGame && e.runningGame.distributor === y.distributor && y.sku === e.runningGame.sku && y.name === e.runningGame.name,
-      A = null != e.runningGame && null != y && e.runningGame.isLauncher !== y.isLauncher;
-    if (e.runningGame !== y && null != y && !y.isLauncher && (!P || A)) {
+    let P = null != v && null != v.distributor && null != v.sku && null != e.runningGame && e.runningGame.distributor === v.distributor && v.sku === e.runningGame.sku && v.name === e.runningGame.name,
+      A = null != e.runningGame && null != v && e.runningGame.isLauncher !== v.isLauncher;
+    if (e.runningGame !== v && null != v && !v.isLauncher && (!P || A)) {
       let {
         gameId: e
-      } = (0, E.G8)(y), a = true !== e ? R.Z.getDetectableGame(e) : null, p = O.ZP.getOverrideForGame(y), f = k.Z.getGuildIds(), h = w.SE.getSetting(), g = f.filter(e => !h.includes(e)).slice(0, 200), m = null;
+      } = (0, E.G8)(v), a = true !== e ? R.Z.getDetectableGame(e) : null, p = O.ZP.getOverrideForGame(v), f = k.Z.getGuildIds(), h = w.SE.getSetting(), g = f.filter(e => !h.includes(e)).slice(0, 200), m = null;
       m = null != p ? "custom_override" : null != a ? "verified_game" : "launcher";
-      let b = j.default.getTrackedGameByPid(y.pid),
-        I = (0, O.b6)(y),
+      let b = j.default.getTrackedGameByPid(v.pid),
+        I = (0, O.b6)(v),
         C = {
           enabledOOP: null != (t = null == b ? true : b.oopEnabled) ? t : I.enabledOOP,
           enabledLegacy: null != (n = null == b ? true : b.legacyEnabled) ? n : I.enabledLegacy,
           overlayMethod: null != (r = null == b ? true : b.overlayMethod) ? r : I.overlayMethod,
           source: null != (i = null == b ? true : b.source) ? i : I.source
         },
-        S = null != (l = j.default.getOverlayMethod(y.pid)) ? l : C.overlayMethod;
+        S = null != (l = j.default.getOverlayMethod(v.pid)) ? l : C.overlayMethod;
       if (setTimeout(() => {
-          (y.distributor === J.GQo.ROBLOX ? this.debouncedRobloxAnalytics : et)({
-            runningGame: y,
+          (v.distributor === J.GQo.ROBLOX ? this.debouncedRobloxAnalytics : et)({
+            runningGame: v,
             game: a,
             detectionMethod: m,
             overlayStatus: C,
@@ -214,9 +214,9 @@ class en extends Chunk647438.PureComponent {
             voiceChannelBitrate: d,
             voiceChannelGuildId: c
           })
-        }, 1e4), null != y.name && null != v && R.Z.shouldReport(y.name)) {
-        let e = y.name;
-        s.Z.identifyGame(v, e).then(e => s.Z.reportUnverifiedGame(e)).catch(e => new _.Z("AutoAnalytics").error("Cannot identify game", e))
+        }, 1e4), null != v.name && null != y && R.Z.shouldReport(v.name)) {
+        let e = v.name;
+        s.Z.identifyGame(y, e).then(e => s.Z.reportUnverifiedGame(e)).catch(e => new _.Z("AutoAnalytics").error("Cannot identify game", e))
       }
     }
     if ((e.videoEnabled !== f || e.isScreenSharing !== g) && null != o) {

@@ -1,4 +1,4 @@
-/** Chunk was on 3091 **/
+/** Chunk was on 22325 **/
 /** chunk id: 879877, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -23,13 +23,13 @@ function h(e) {
   let {
     tags: n,
     isCurrentUser: a,
-    widgetType: c,
-    applicationId: s,
+    widgetType: s,
+    applicationId: c,
     className: u,
     disableInteraction: h = false
-  } = e, x = null != (t = null == n ? true : n.filter(e => null != (0, p.zK)(e))) ? t : [], _ = x.length > 0, P = o.qH, I = a && !h && (0, f.M8)(c) && x.length < P, {
+  } = e, x = null != (t = null == n ? true : n.filter(e => null != (0, p.zK)(e))) ? t : [], _ = x.length > 0, P = o.qH, I = a && !h && (0, f.M8)(s) && x.length < P, {
     trackUserProfileAction: w
-  } = (0, d.KZ)(), S = (0, i.useRef)(new Map), E = (0, i.useRef)(null), T = (0, i.useRef)(null), [C, D] = (0, i.useState)(0), [A, N] = (0, i.useState)(false), k = O(E, T, x, S, D);
+  } = (0, d.KZ)(), S = (0, i.useRef)(new Map), E = (0, i.useRef)(null), T = (0, i.useRef)(null), [C, N] = (0, i.useState)(0), [A, D] = (0, i.useState)(false), k = O(E, T, x, S, N);
   if ((0, i.useEffect)(() => (k(), window.addEventListener("resize", k), () => {
       window.removeEventListener("resize", k)
     }), [k, null == x ? true : x.join("")]), !_ && !I) return null;
@@ -40,11 +40,11 @@ function h(e) {
       children: [(0, r.jsx)("ul", {
         className: b.tagList,
         "aria-label": m.intl.string(m.t.EfjTi4),
-        children: Z.map(e => (0, r.jsx)(y, {
+        children: Z.map(e => (0, r.jsx)(v, {
           tag: e,
           isCurrentUser: a,
-          applicationId: s,
-          widgetType: c,
+          applicationId: c,
+          widgetType: s,
           ref: t => {
             null != t && S.current.set(e, t)
           },
@@ -52,14 +52,14 @@ function h(e) {
         }, e))
       }), C > 0 && (A ? (0, r.jsx)(j, {
         onClick: () => {
-          N(false), w({
+          D(false), w({
             action: "COLLAPSE_GAME_TAGS"
           })
         }
-      }) : (0, r.jsx)(v, {
+      }) : (0, r.jsx)(y, {
         numHidden: C,
         onClick: () => {
-          N(true), w({
+          D(true), w({
             action: "EXPAND_GAME_TAGS"
           })
         },
@@ -68,13 +68,13 @@ function h(e) {
       }))]
     }), I && (0, r.jsx)(g.Z, {
       tags: n,
-      widgetType: c,
-      applicationId: s,
+      widgetType: s,
+      applicationId: c,
       ref: T
     })]
   })
 }
-let y = e => {
+let v = e => {
     let {
       tag: t,
       isCurrentUser: n,
@@ -88,20 +88,20 @@ let y = e => {
     if (null == g) return null;
     let {
       getText: h,
-      icon: y
+      icon: v
     } = g;
     return (0, r.jsxs)("li", {
       className: b.tag,
       ref: o,
-      children: [(0, r.jsx)(y, {
+      children: [(0, r.jsx)(v, {
         size: "xxs"
-      }), (0, r.jsx)(s.Text, {
+      }), (0, r.jsx)(c.Text, {
         variant: "text-xxs/medium",
         color: "text-secondary",
         children: h()
-      }), n && !l && (0, r.jsx)(c.u, {
+      }), n && !l && (0, r.jsx)(s.u, {
         text: m.intl.string(m.t.Otv9fH),
-        children: (0, r.jsx)(s.P3F, {
+        children: (0, r.jsx)(c.P3F, {
           onClick: () => {
             (0, f.RZ)(a, i, t), u({
               action: "TAG_REMOVED",
@@ -113,7 +113,7 @@ let y = e => {
           "aria-label": m.intl.formatToPlainString(m.t.GCn1nZ, {
             tag: h()
           }),
-          children: (0, r.jsx)(s.Dio, {
+          children: (0, r.jsx)(c.Dio, {
             size: "xxs",
             color: "currentColor"
           })
@@ -121,7 +121,7 @@ let y = e => {
       })]
     })
   },
-  v = e => {
+  y = e => {
     let {
       numHidden: t,
       onClick: n,
@@ -130,20 +130,20 @@ let y = e => {
     } = e;
     return i ? (0, r.jsx)("div", {
       className: b.expandButton,
-      children: (0, r.jsx)(s.Text, {
+      children: (0, r.jsx)(c.Text, {
         variant: "text-xxs/medium",
         color: "none",
         children: "+".concat(t)
       })
-    }) : (0, r.jsx)(c.u, {
+    }) : (0, r.jsx)(s.u, {
       asContainer: true,
       text: m.intl.string(m.t.mriLXF),
-      children: (0, r.jsx)(s.P3F, {
+      children: (0, r.jsx)(c.P3F, {
         onClick: n,
         className: b.expandButton,
         innerRef: a,
         "aria-label": m.intl.string(m.t.mriLXF),
-        children: (0, r.jsx)(s.Text, {
+        children: (0, r.jsx)(c.Text, {
           variant: "text-xxs/medium",
           color: "none",
           children: "+".concat(t)
@@ -155,10 +155,10 @@ let y = e => {
     let {
       onClick: t
     } = e;
-    return (0, r.jsx)(c.u, {
+    return (0, r.jsx)(s.u, {
       asContainer: true,
       text: m.intl.string(m.t.z9VPra),
-      children: (0, r.jsx)(s.P3F, {
+      children: (0, r.jsx)(c.P3F, {
         onClick: t,
         className: b.collapseButton,
         "aria-label": m.intl.string(m.t.z9VPra),
@@ -172,10 +172,10 @@ let y = e => {
     })
   },
   O = (e, t, n, r, a) => (0, i.useCallback)(() => {
-    var i, l, o, c;
+    var i, l, o, s;
     if (null == n) return void a(0);
-    let s = null != (o = null == (i = e.current) ? true : i.getBoundingClientRect().width) ? o : 0,
-      u = null != (c = null == (l = t.current) ? true : l.getBoundingClientRect().width) ? c : 0,
+    let c = null != (o = null == (i = e.current) ? true : i.getBoundingClientRect().width) ? o : 0,
+      u = null != (s = null == (l = t.current) ? true : l.getBoundingClientRect().width) ? s : 0,
       d = u > 0 ? 8 : 4,
       f = 0,
       g = 0,
@@ -191,7 +191,7 @@ let y = e => {
     for (let e = f; e < n.length; e++) {
       let t = p.get(n[e]);
       if (null != t) {
-        if ((g += t.offsetWidth + 4) > 296 - s - u - d) break;
+        if ((g += t.offsetWidth + 4) > 296 - c - u - d) break;
         f++
       }
     }

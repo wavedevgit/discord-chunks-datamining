@@ -1,4 +1,4 @@
-/** Chunk was on 3091 **/
+/** Chunk was on 22325 **/
 /** chunk id: 817053, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b,
@@ -43,7 +43,7 @@ function p(e) {
     role: "img",
     "aria-label": o,
     className: f.fallback,
-    children: (0, r.jsx)(c.Text, {
+    children: (0, r.jsx)(s.Text, {
       variant: "text-xxs/medium",
       lineClamp: 3,
       "aria-hidden": true,
@@ -69,24 +69,24 @@ function m(e) {
   } = e, b = (0, u.Z)({
     location: "GameCover",
     applicationId: i,
-    source: s.m1.UserProfile,
+    source: c.m1.UserProfile,
     sourceUserId: a,
     trackEntryPointImpression: true
-  }), h = null != n ? n : d.intl.string(d.t.GIWFlJ), y = d.intl.formatToPlainString(d.t["8QLQBw"], {
+  }), h = null != n ? n : d.intl.string(d.t.GIWFlJ), v = d.intl.formatToPlainString(d.t["8QLQBw"], {
     gameName: h
-  }), v = e => m ? e : (0, r.jsx)(o.u, {
+  }), y = e => m ? e : (0, r.jsx)(o.u, {
     text: h,
     children: e
   });
-  return v(null == b ? (0, r.jsx)("div", {
+  return y(null == b ? (0, r.jsx)("div", {
     className: g,
     children: (0, r.jsx)(p, {
       imageSrc: t,
       gameName: n
     })
-  }) : (0, r.jsx)(c.P3F, {
+  }) : (0, r.jsx)(s.P3F, {
     onClick: b,
-    "aria-label": y,
+    "aria-label": v,
     className: l()(f.clickable, g),
     children: (0, r.jsx)(p, {
       imageSrc: t,
@@ -102,7 +102,7 @@ function b(e) {
     className: i,
     disableInteraction: a = false,
     hideTooltip: o
-  } = e, c = function(e, t) {
+  } = e, s = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -117,14 +117,14 @@ function b(e) {
     }
     return i
   }(e, ["applicationId", "userId", "className", "disableInteraction", "hideTooltip"]);
-  let s = l()(f.coverContainer, i);
+  let c = l()(f.coverContainer, i);
   return a ? (0, r.jsx)("div", {
-    className: s,
-    children: (0, r.jsx)(p, g({}, c))
+    className: c,
+    children: (0, r.jsx)(p, g({}, s))
   }) : (0, r.jsx)(m, g({
-    className: s,
+    className: c,
     applicationId: t,
     userId: n,
     hideTooltip: o
-  }, c))
+  }, s))
 }

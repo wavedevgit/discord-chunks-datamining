@@ -1,13 +1,13 @@
-/** Chunk was on 31099 **/
+/** Chunk was on 21885 **/
 /** chunk id: 794324, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Oi: () => m,
-  UI: () => v,
+  UI: () => h,
   YG: () => d,
-  _M: () => h,
+  _M: () => f,
   hr: () => u,
   kc: () => p,
-  mB: () => f
+  mB: () => v
 });
 var Chunk647438 = require("./647438.js"),
   Chunk264181 = require("./264181.js"),
@@ -20,12 +20,12 @@ let u = e => {
     let t = (0, o.zL)(s.jE.HERO_LOGO),
       n = (0, o.zL)(s.jE.HERO_BANNER_STATIC),
       i = (0, o.zL)(s.jE.HERO_BANNER_ANIMATED),
-      l = (0, a.Y)("HeroBlock");
+      a = (0, l.Y)("HeroBlock");
     return r.useMemo(() => {
-      var r, a;
+      var r, l;
       let o = null != n || null != i,
         s = null != n && null == i;
-      if (l) return {
+      if (a) return {
         bannerStyleOverrides: o ? true : e.bannerDisplayConfig,
         logoStyleOverrides: o ? true : e.logoDisplayConfig,
         heroLogo: null != t ? t : e.heroLogoUrl,
@@ -39,17 +39,17 @@ let u = e => {
         bannerStyleOverrides: o ? true : e.bannerDisplayConfig,
         logoStyleOverrides: o ? true : e.logoDisplayConfig,
         heroLogo: null != t ? t : e.logoUrl,
-        heroBannerStatic: null != n ? n : null == (a = e.bannerAsset) ? true : a.static,
+        heroBannerStatic: null != n ? n : null == (l = e.bannerAsset) ? true : l.static,
         heroBannerAnimated: s ? true : null != i ? i : c,
         heroBannerRive: s ? true : null != i ? i : u
       }
-    }, [t, n, i, e, l])
+    }, [t, n, i, e, a])
   },
   d = (e, t) => {
     var n, r;
     let i = (0, o.zL)(s.jE.FEATURED_BLOCK);
-    if ((0, a.Y)("FeaturedBlock")) return null != (n = null != i ? i : null == t ? true : t.assetUrl) ? n : null == e ? true : e.featuredBlockUrl;
-    let u = (0, l.uV)(null == e ? true : e.featuredBlock, {
+    if ((0, l.Y)("FeaturedBlock")) return null != (n = null != i ? i : null == t ? true : t.assetUrl) ? n : null == e ? true : e.featuredBlockUrl;
+    let u = (0, a.uV)(null == e ? true : e.featuredBlock, {
       size: c.J0,
       format: "png"
     });
@@ -59,7 +59,7 @@ let u = e => {
     var t, n;
     let r = (0, o.zL)(s.jE.CATALOG_BANNER_STATIC),
       i = (0, o.zL)(s.jE.CATALOG_BANNER_ANIMATED);
-    return (0, a.Y)("CatalogBanner") ? {
+    return (0, l.Y)("CatalogBanner") ? {
       catalogBannerStatic: null != r ? r : e.catalogBannerUrl,
       catalogBannerAnimated: null != i ? i : e.catalogBannerAnimatedUrl
     } : {
@@ -69,45 +69,45 @@ let u = e => {
   },
   p = e => {
     let t = (0, o.zL)(s.jE.PDP_BACKGROUND),
-      n = (0, a.Y)("PDPBackground");
+      n = (0, l.Y)("PDPBackground");
     if (null != t) return t;
     if (n) return e.pdpBgUrl;
     let r = e.pdpBg;
-    return (null == r ? true : r.startsWith("http")) ? r : (0, l.uV)(r, {
+    return (null == r ? true : r.startsWith("http")) ? r : (0, a.uV)(r, {
       size: 540,
       format: "jpg"
     })
   },
-  f = e => {
+  v = e => {
     let t = (0, o.zL)(s.jE.SHOP_BUTTON_BG_HOVER),
       n = (0, o.zL)(s.jE.SHOP_BUTTON_BG_HOVER_DARK),
-      l = (0, o.zL)(s.jE.SHOP_BUTTON_BG_HOVER_LIGHT),
-      a = (0, o.zL)(s.jE.SHOP_BUTTON_BG_RESTING),
+      a = (0, o.zL)(s.jE.SHOP_BUTTON_BG_HOVER_LIGHT),
+      l = (0, o.zL)(s.jE.SHOP_BUTTON_BG_RESTING),
       c = (0, o.zL)(s.jE.SHOP_BUTTON_BG_RESTING_DARK),
       u = (0, o.zL)(s.jE.SHOP_BUTTON_BG_RESTING_LIGHT),
       d = (0, o.zL)(s.jE.COACHTIP_AVATAR);
     return r.useMemo(() => {
       var r, o, s, m, p;
-      let f = [t, n, l, a, c, u, d].some(e => null != e);
+      let v = [t, n, a, l, c, u, d].some(e => null != e);
       if ((null == e ? true : e.type) === i.Z.COACHMARK) return {
         hasPreviewAssets: false
       };
-      let h = null == e || null == (r = e.refTargetBackground) ? true : r.asset,
-        v = null == h ? true : h.resting,
-        g = null == h ? true : h.hovered;
+      let f = null == e || null == (r = e.refTargetBackground) ? true : r.asset,
+        h = null == f ? true : f.resting,
+        g = null == f ? true : f.hovered;
       return {
-        hasPreviewAssets: f,
+        hasPreviewAssets: v,
         buttonBGHoverDark: null != (o = null != n ? n : t) ? o : null == g ? true : g.dark,
-        buttonBGHoverLight: null != (s = null != l ? l : t) ? s : null == g ? true : g.light,
-        buttonBGRestingDark: null != (m = null != c ? c : a) ? m : null == v ? true : v.dark,
-        buttonBGRestingLight: null != (p = null != u ? u : a) ? p : null == v ? true : v.light,
+        buttonBGHoverLight: null != (s = null != a ? a : t) ? s : null == g ? true : g.light,
+        buttonBGRestingDark: null != (m = null != c ? c : l) ? m : null == h ? true : h.dark,
+        buttonBGRestingLight: null != (p = null != u ? u : l) ? p : null == h ? true : h.light,
         coachtipAvatar: null != d ? d : null == e ? true : e.avatar
       }
-    }, [t, n, l, a, c, u, d, e])
+    }, [t, n, a, l, c, u, d, e])
   },
-  h = e => {
+  f = e => {
     var t, n;
-    return (0, a.Y)("ImmersiveBanner") ? {
+    return (0, l.Y)("ImmersiveBanner") ? {
       bannerUrl: e.bannerUrl,
       bannerAnimatedUrl: e.bannerAnimatedUrl
     } : {
@@ -115,7 +115,7 @@ let u = e => {
       bannerAnimatedUrl: null == (n = e.bannerAsset) ? true : n.animated
     }
   },
-  v = e => (0, a.Y)("WideBanner") ? {
+  h = e => (0, l.Y)("WideBanner") ? {
     bannerURL: e.bannerURL,
     bannerAnimatedURL: e.bannerAnimatedURL
   } : {

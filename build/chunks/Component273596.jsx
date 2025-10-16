@@ -100,7 +100,7 @@ function j(e) {
               className: C.headingFilters,
               children: [(0, r.jsx)(E.Z, {
                 loadId: t
-              }), (0, r.jsx)(y.Z, {
+              }), (0, r.jsx)(v.Z, {
                 loadId: t
               })]
             }), x && (0, r.jsx)(O.Z, {
@@ -160,7 +160,7 @@ function j(e) {
         let e = s[t];
         return (0, r.jsx)("div", {
           style: n,
-          children: (0, r.jsx)(v.ZP, {
+          children: (0, r.jsx)(y.ZP, {
             guildId: e,
             onClick: async e => await X(e, t, A, N),
             onView: e => z(e)
@@ -228,7 +228,7 @@ function j(e) {
           className: C.sidebarContent,
           children: [(0, r.jsx)("div", {
             className: C.sidebarLanguageSelect,
-            children: (0, r.jsx)(y.Z, {
+            children: (0, r.jsx)(v.Z, {
               loadId: t
             })
           }), (0, r.jsx)(_.Z, {

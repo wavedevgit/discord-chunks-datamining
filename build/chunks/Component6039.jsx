@@ -70,12 +70,12 @@ let N = e => {
     guildPreviewDisabled: _.Z.getJoinRequestGuild(t)
   }));
   i.useEffect(() => {
-    null != P && (0, d.uL)(v.Z5c.CHANNEL(t))
+    null != P && (0, d.uL)(y.Z5c.CHANNEL(t))
   }, [P, t]), i.useEffect(() => {
     j || g.Z.fetchRequestToJoinGuilds()
   }, [j]);
   let x = i.useCallback(() => {
-      h(Math.max(f, I.hO.FILLING)), g.Z.removeGuildJoinRequest(t), (0, d.uL)(v.Z5c.ME)
+      h(Math.max(f, I.hO.FILLING)), g.Z.removeGuildJoinRequest(t), (0, d.uL)(y.Z5c.ME)
     }, [t, f]),
     Z = (e, t) => () => {
       (0, o.h7j)(n => {
@@ -141,7 +141,7 @@ let N = e => {
         if (null == N) return null;
         switch (N.applicationStatus) {
           case b.wB.SUBMITTED:
-            return (0, r.jsx)(y.Z, {
+            return (0, r.jsx)(v.Z, {
               onWithdrawApplication: L,
               guild: A
             });

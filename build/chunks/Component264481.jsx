@@ -1,4 +1,4 @@
-/** Chunk was on 3091 **/
+/** Chunk was on 22325 **/
 /** chunk id: 264481, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   P9: () => I,
@@ -21,8 +21,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk839468 = require("./839468.js");
-let y = [() => Chunk388032.intl.string(Chunk388032.t.madJdH), () => Chunk388032.intl.string(Chunk388032.t.NYmfoK), () => Chunk388032.intl.string(Chunk388032.t.R2PaCg), () => Chunk388032.intl.string(Chunk388032.t.laSR8v), () => Chunk388032.intl.string(Chunk388032.t.DnsJEx)],
-  v = [() => Chunk388032.intl.string(Chunk388032.t.nFSbeH), () => Chunk388032.intl.string(Chunk388032.t.gTcxOz), () => Chunk388032.intl.string(Chunk388032.t["8T0wYm"]), () => Chunk388032.intl.string(Chunk388032.t.BIHl1t), () => Chunk388032.intl.string(Chunk388032.t.jhBm09)],
+let v = [() => Chunk388032.intl.string(Chunk388032.t.madJdH), () => Chunk388032.intl.string(Chunk388032.t.NYmfoK), () => Chunk388032.intl.string(Chunk388032.t.R2PaCg), () => Chunk388032.intl.string(Chunk388032.t.laSR8v), () => Chunk388032.intl.string(Chunk388032.t.DnsJEx)],
+  y = [() => Chunk388032.intl.string(Chunk388032.t.nFSbeH), () => Chunk388032.intl.string(Chunk388032.t.gTcxOz), () => Chunk388032.intl.string(Chunk388032.t["8T0wYm"]), () => Chunk388032.intl.string(Chunk388032.t.BIHl1t), () => Chunk388032.intl.string(Chunk388032.t.jhBm09)],
   j = [() => Chunk388032.intl.string(Chunk388032.t.AyMGXF), () => Chunk388032.intl.string(Chunk388032.t.aAFW7e), e => b.intl.formatToPlainString(b.t.h2g0cH, {
     name: e
   }), () => Chunk388032.intl.string(Chunk388032.t["rrYh5+"]), () => Chunk388032.intl.string(Chunk388032.t["HX3K+P"]), () => Chunk388032.intl.string(Chunk388032.t["/yW3aW"]), () => Chunk388032.intl.string(Chunk388032.t["PmL/v7"]), () => Chunk388032.intl.string(Chunk388032.t.IALa3t), () => Chunk388032.intl.string(Chunk388032.t.HRcTFB), () => Chunk388032.intl.string(Chunk388032.t.NuCqPj), () => Chunk388032.intl.string(Chunk388032.t["M1tw+/"]), () => Chunk388032.intl.string(Chunk388032.t.UBm1y8), () => Chunk388032.intl.string(Chunk388032.t.Cu95PT), () => Chunk388032.intl.string(Chunk388032.t["R/wFur"]), () => Chunk388032.intl.string(Chunk388032.t.HQPAVV), () => Chunk388032.intl.string(Chunk388032.t.YolGh4)],
@@ -55,7 +55,7 @@ function _() {
   let e = Chunk388032.intl.string(Chunk388032.t.RnD2yc),
     [t] = Chunk647438.useState(() => {
       var e;
-      return (null != (e = (0, Chunk392711.sample)(y)) ? module : y[0])()
+      return (null != (e = (0, Chunk392711.sample)(v)) ? module : v[0])()
     });
   return (0, Chunk951288.jsx)(x, {
     heading: module,
@@ -67,7 +67,7 @@ function P() {
   let e = Chunk388032.intl.string(Chunk388032.t.bFgqYG),
     [t] = Chunk647438.useState(() => {
       var e;
-      return (null != (e = (0, Chunk392711.sample)(v)) ? module : v[0])()
+      return (null != (e = (0, Chunk392711.sample)(y)) ? module : y[0])()
     });
   return (0, Chunk951288.jsx)(x, {
     heading: module,
@@ -79,9 +79,9 @@ function I(e) {
   let {
     user: t,
     guildId: n,
-    channelId: c,
-    onClose: s
-  } = e, u = g.ZP.getName(n, c, t), d = b.intl.formatToPlainString(b.t.sjSitL, {
+    channelId: s,
+    onClose: c
+  } = e, u = g.ZP.getName(n, s, t), d = b.intl.formatToPlainString(b.t.sjSitL, {
     name: u
   }), [f] = i.useState(() => {
     var e;
@@ -89,8 +89,8 @@ function I(e) {
   }), m = i.useCallback(() => {
     o.Z.openPrivateChannel({
       recipientIds: t.id
-    }), null == s || s()
-  }, [t.id, s]);
+    }), null == c || c()
+  }, [t.id, c]);
   return (0, r.jsx)(x, {
     heading: d,
     bodyText: f,
@@ -110,7 +110,7 @@ function w() {
   return (0, Chunk951288.jsx)("div", {
     className: Chunk839468.connectionPlatforms,
     children: O.map((t, n) => {
-      let i = s.Z.get(t);
+      let i = c.Z.get(t);
       if (null == i) return null;
       let a = (0, l.wjy)(e) ? i.icon.darkPNG : i.icon.lightPNG;
       return (0, r.jsx)("img", {
@@ -129,12 +129,12 @@ function S(e) {
     null == t || t(), (0, f.openUserSettings)(d.n.CONNECTIONS_PANEL, {
       section: m.oAB.CONNECTIONS
     })
-  }, [t]), c = i.useCallback(() => {
+  }, [t]), s = i.useCallback(() => {
     null == t || t(), (0, f.openUserSettings)(d.n.CONTENT_AND_SOCIAL_PANEL, {
       section: m.oAB.CONTENT_AND_SOCIAL,
       subsection: "CONNECTED_GAMES"
     })
-  }, [t]), s = i.useCallback(() => {
+  }, [t]), c = i.useCallback(() => {
     (0, l.ZDy)(async () => {
       let {
         default: e
@@ -169,13 +169,13 @@ function S(e) {
         onClick: o
       }), (0, r.jsx)(p.O1, {
         text: b.intl.string(b.t.GTCx0t),
-        onClick: c
+        onClick: s
       })]
     }), a && (0, r.jsx)("div", {
       className: h.reportMissingActivity,
       children: (0, r.jsx)(l.Avr, {
         text: b.intl.string(b.t["+huUnJ"]),
-        onClick: s,
+        onClick: c,
         size: "sm"
       })
     })]

@@ -1,4 +1,4 @@
-/** Chunk was on 3091 **/
+/** Chunk was on 22325 **/
 /** chunk id: 778414, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   C: () => W,
@@ -80,7 +80,7 @@ function B(e) {
   } = e, n = G(e, ["widget"]);
   return t instanceof h.q ? (0, r.jsx)(w.Z, L({
     widget: t
-  }, n)) : t instanceof y.zy ? (0, r.jsx)(C.Z, L({
+  }, n)) : t instanceof v.zy ? (0, r.jsx)(C.Z, L({
     widget: t
   }, n)) : null
 }
@@ -99,24 +99,24 @@ function M() {
   })
 }
 
-function U(e) {
+function F(e) {
   let {
     user: t
   } = e, {
     application: n
   } = (0, O.G)(), {
     token: i
-  } = (0, d.o)(null == n ? true : n.id), a = (0, I.Z)(t.id), l = (0, v.k)({
+  } = (0, d.o)(null == n ? true : n.id), a = (0, I.Z)(t.id), l = (0, y.k)({
     location: "ApplicationWidgetUpsell"
   }), o = a.some(e => e instanceof h.q && e.applicationId === (null == n ? true : n.id));
   return null == n || !l || null == i || o ? null : (0, r.jsx)(f.ZP, {
-    contentTypes: [c.z.APPLICATION_WIDGET_EMPTY_STATE_CARD_ADD_WIDGET],
+    contentTypes: [s.z.APPLICATION_WIDGET_EMPTY_STATE_CARD_ADD_WIDGET],
     children: e => {
       let {
         visibleContent: i,
         markAsDismissed: a
       } = e;
-      return i === c.z.APPLICATION_WIDGET_EMPTY_STATE_CARD_ADD_WIDGET ? (0, r.jsx)(S.Z, {
+      return i === s.z.APPLICATION_WIDGET_EMPTY_STATE_CARD_ADD_WIDGET ? (0, r.jsx)(S.Z, {
         user: t,
         application: n,
         onDismiss: a
@@ -125,20 +125,20 @@ function U(e) {
   })
 }
 
-function F(e) {
+function U(e) {
   let {
     user: t,
     guildId: n,
     channelId: a
-  } = e, l = (0, I.Z)(t.id), c = (0, o.e7)([m.default], () => m.default.getId() === t.id), s = (() => {
+  } = e, l = (0, I.Z)(t.id), s = (0, o.e7)([m.default], () => m.default.getId() === t.id), c = (() => {
     let [e, t] = (0, o.Wu)([b.Z], () => [b.Z.ipCountryCode, b.Z.ipCountryCodeRequest]), n = (0, g.U)();
     return i.useEffect(() => {
       null == e && null == t && n && (0, u.GE)()
     }, [e, t, n]), "GB" === e && n
-  })(), d = (0, v.k)({
+  })(), d = (0, y.k)({
     location: "UserProfileModalV2Widgets"
-  }), f = 0 === l.length && c, O = i.useMemo(() => l.filter(y.Wc), [l]), x = i.useMemo(() => l.filter(e => e instanceof h.q), [l]);
-  (0, P.ZP)(O), (0, j.J)(c, O);
+  }), f = 0 === l.length && s, O = i.useMemo(() => l.filter(v.Wc), [l]), x = i.useMemo(() => l.filter(e => e instanceof h.q), [l]);
+  (0, P.ZP)(O), (0, j.J)(s, O);
   var w = t.id;
   (0, _.s)(x);
   let {
@@ -148,10 +148,10 @@ function F(e) {
   if (C.current = S, i.useEffect(() => {
       null !== C.current && T()
     }, [T]), f)
-    if (d) return (0, r.jsx)(D.Z, {});
+    if (d) return (0, r.jsx)(N.Z, {});
     else return (0, r.jsx)(k.Z, {});
   return (0, r.jsxs)(r.Fragment, {
-    children: [c && s && (0, r.jsx)(M, {}), c && (0, r.jsx)(U, {
+    children: [s && c && (0, r.jsx)(M, {}), s && (0, r.jsx)(F, {
       user: t
     }), l.map((e, i) => (0, r.jsx)(B, {
       widget: e,
@@ -159,7 +159,7 @@ function F(e) {
       guildId: n,
       channelId: a,
       index: i
-    }, e.type)), c && (0, r.jsx)(E.Z, {})]
+    }, e.type)), s && (0, r.jsx)(E.Z, {})]
   })
 }
 
@@ -172,7 +172,7 @@ function W(e) {
     container: a.current
   });
   let o = (0, A.h)(t.id);
-  return (0, r.jsxs)(N.F, {
+  return (0, r.jsxs)(D.F, {
     "data-scroller": true,
     scrollerRef: a,
     className: l()(R.scroller, {
@@ -181,7 +181,7 @@ function W(e) {
     fade: true,
     children: [(0, r.jsx)(T.Z, {
       scrollerRef: a
-    }), (0, r.jsx)(F, L({
+    }), (0, r.jsx)(U, L({
       user: t
     }, n))]
   })

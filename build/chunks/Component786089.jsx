@@ -51,7 +51,7 @@ let P = (0, Chunk647438.memo)(function(e) {
   });
   let $ = (0, u.wj)(F),
     ee = (0, i.useMemo)(() => null != x.config.cosponsorMetadata, [x]),
-    et = (0, i.useMemo)(() => (0, y.fh)(x, y.eC.REWARD), [x]),
+    et = (0, i.useMemo)(() => (0, v.fh)(x, v.eC.REWARD), [x]),
     en = Z ? V + 8 : 0,
     er = (0, _.mH)(O.jn.TROPHY_CASE_CARD),
     {
@@ -125,7 +125,7 @@ let P = (0, Chunk647438.memo)(function(e) {
           user: B,
           guildId: null
         })
-      }), q ? (0, r.jsx)(v.Z, {
+      }), q ? (0, r.jsx)(y.Z, {
         className: N.image
       }) : Q ? (0, r.jsx)(I.Z, {
         className: N.image

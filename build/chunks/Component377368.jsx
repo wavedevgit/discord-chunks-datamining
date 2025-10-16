@@ -23,7 +23,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk65154 = require("./65154.js");
 
-function y(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -31,7 +31,7 @@ function y(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class v extends Chunk131468.Z {
+class y extends Chunk131468.Z {
   _initialize() {
     super._initialize(), __OVERLAY__ || Chunk570140.Z.subscribe("OVERLAY_SOUNDBOARD_SOUNDS_FETCH_REQUEST", this._handleOverlaySoundboardSoundsFetchRequest)
   }
@@ -40,13 +40,13 @@ class v extends Chunk131468.Z {
   }
   constructor(...e) {
     var t;
-    super(...e), t = this, y(this, "playingSoundsWeb", new Map), y(this, "_stopAndClearSounds", () => {
+    super(...e), t = this, v(this, "playingSoundsWeb", new Map), v(this, "_stopAndClearSounds", () => {
       c.Z.supports(O.AN.SAMPLE_PLAYBACK) && c.Z.getMediaEngine().eachConnection(e => {
         e.stopAllSamplesLocalPlayback()
       }), this.playingSoundsWeb.forEach(e => {
         e.pause(), e.src = ""
       }), this.playingSoundsWeb = new Map
-    }), y(this, "_playSound", async function(e) {
+    }), v(this, "_playSound", async function(e) {
       let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : 1,
         r = arguments.length > 2 ? arguments[2] : true,
         i = arguments.length > 3 ? arguments[3] : true,
@@ -62,9 +62,9 @@ class v extends Chunk131468.Z {
       } finally {
         (0, f.R)(e, r)
       }
-    }), y(this, "_handleOverlaySoundboardSoundsFetchRequest", () => {
+    }), v(this, "_handleOverlaySoundboardSoundsFetchRequest", () => {
       (0, f.w)()
-    }), y(this, "_handleOpenEducationModal", (e, t) => {
+    }), v(this, "_handleOpenEducationModal", (e, t) => {
       if (null == e) return;
       let l = s.Z.getChannel(t),
         c = d.ZP.getKeybindForAction(E.kg4.SOUNDBOARD_HOLD);
@@ -90,7 +90,7 @@ class v extends Chunk131468.Z {
             "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
               return Object.getOwnPropertyDescriptor(n, e).enumerable
             }))), r.forEach(function(t) {
-              y(e, t, n[t])
+              v(e, t, n[t])
             })
           }
           return e
@@ -103,4 +103,4 @@ class v extends Chunk131468.Z {
     })
   }
 }
-let I = new v
+let I = new y
