@@ -16,9 +16,9 @@ let c = Chunk647438.memo(function(e) {
     layout: c,
     init: s
   } = t, u = null == n ? true : n();
-  return o.useEffect(() => {
+  return l.useEffect(() => {
     null == s || s()
-  }, [s]), (0, r.jsxs)(l.Kqy, {
+  }, [s]), (0, r.jsxs)(o.Kqy, {
     gap: 16,
     children: [(0, r.jsx)(a.Y, {
       title: u

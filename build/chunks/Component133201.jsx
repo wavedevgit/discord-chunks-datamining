@@ -1,8 +1,7 @@
 /** Chunk was on 88742 **/
 /** chunk id: 133201, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  Z: () => p,
-  q: () => C
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -12,62 +11,63 @@ var Chunk120356 = require("./120356.js"),
   Chunk481060 = require("./481060.js"),
   Chunk20471 = require("./20471.js"),
   Chunk22928 = require("./22928.jsx"),
+  Chunk438926 = require("./438926.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk261540 = require("./261540.js");
 
-function p(t) {
+function x(t) {
   let {
     sku: n,
     application: e,
     transitionState: a,
     onClose: s,
     successStateButtonText: c,
-    onSuccessButtonClick: p,
-    isSuccessButtonLoading: f
+    onSuccessButtonClick: u,
+    isSuccessButtonLoading: x
   } = t, {
-    hasAlreadyLinked: C,
-    canStartAuthorization: m,
-    startAuthorization: h,
-    fetched: _
+    hasAlreadyLinked: m,
+    canStartAuthorization: h,
+    startAuthorization: C,
+    fetched: g
   } = (0, r.FG)(e);
-  if (!_) return (0, i.jsx)(o.IX, {
+  if (!g) return (0, i.jsx)(l.IX, {
     transitionState: a,
     onClose: s,
-    children: (0, i.jsx)(o.fef, {
+    children: (0, i.jsx)(l.fef, {
       children: (0, i.jsx)("div", {
-        className: d.loadingContainer,
-        children: (0, i.jsx)(l.$jN, {})
+        className: p.loadingContainer,
+        children: (0, i.jsx)(o.$jN, {})
       })
     })
   });
-  let I = C ? {
+  let S = m ? {
     variant: "primary",
     text: c,
-    onClick: p,
-    loading: f
+    onClick: u,
+    loading: x
   } : {
     variant: "primary",
-    text: u.intl.string(u.t.VDAhr6),
-    onClick: h,
-    icon: o.uIJ,
-    disabled: !m
+    text: d.intl.string(d.t.VDAhr6),
+    onClick: C,
+    icon: l.uIJ,
+    disabled: !h
   };
-  return (0, i.jsx)(x, {
+  return (0, i.jsx)(f, {
     sku: n,
     application: e,
     transitionState: a,
     onClose: s,
-    hasAlreadyLinked: C,
-    canStartAuthorization: m,
-    primaryCTAButtonProps: I,
-    bodyText: u.intl.formatToPlainString(u.t.PaYE39, {
+    hasAlreadyLinked: m,
+    canStartAuthorization: h,
+    primaryCTAButtonProps: S,
+    bodyText: d.intl.formatToPlainString(d.t.PaYE39, {
       applicationName: e.name
     }),
-    title: u.intl.string(u.t["Bn1J+f"])
+    title: d.intl.string(d.t["Bn1J+f"])
   })
 }
 
-function x(t) {
+function f(t) {
   let {
     sku: n,
     application: e,
@@ -75,109 +75,35 @@ function x(t) {
     transitionState: s,
     onClose: r,
     hasAlreadyLinked: c,
-    canStartAuthorization: p,
-    bodyText: x,
-    title: C
+    canStartAuthorization: x,
+    bodyText: f,
+    title: h
   } = t;
-  return (0, i.jsxs)(o.IX, {
+  return (0, i.jsxs)(l.IX, {
     transitionState: s,
     onClose: r,
-    children: [(0, i.jsx)(m, {
+    children: [(0, i.jsx)(u.y, {
       sku: n,
-      title: C
-    }), (0, i.jsxs)(o.fef, {
+      title: h
+    }), (0, i.jsxs)(l.fef, {
       children: [(0, i.jsxs)("div", {
-        className: d.modalBody,
-        children: [(0, i.jsx)(l.Text, {
+        className: p.modalBody,
+        children: [(0, i.jsx)(o.Text, {
           variant: "text-md/normal",
-          className: d.modalBodyText,
-          children: x
-        }), (0, i.jsx)(f, {
+          className: p.modalBodyText,
+          children: f
+        }), (0, i.jsx)(m, {
           isConnected: c,
           application: e
         })]
-      }), !p && !c && (0, i.jsx)(l.Text, {
+      }), !x && !c && (0, i.jsx)(o.Text, {
         variant: "text-md/normal",
-        className: d.cannotLinkAccountWarning,
+        className: p.cannotLinkAccountWarning,
         color: "text-feedback-warning",
-        children: u.intl.string(u.t.GDL8wc)
+        children: d.intl.string(d.t.GDL8wc)
       })]
-    }), (0, i.jsx)(o.Go$, {
+    }), (0, i.jsx)(l.Go$, {
       actions: [a],
-      actionsFullWidth: true
-    })]
-  })
-}
-
-function f(t) {
-  let {
-    isConnected: n,
-    application: e
-  } = t;
-  return (0, i.jsx)("div", {
-    className: d.statusContainer,
-    children: (0, i.jsxs)("div", {
-      className: d.statusRow,
-      children: [(0, i.jsxs)("div", {
-        className: d.statusLeft,
-        children: [(0, i.jsx)("div", {
-          className: s()(d.statusIcon, {
-            [d.statusIconConnected]: n,
-            [d.statusIconDisconnected]: !n
-          }),
-          children: n ? (0, i.jsx)(l.dz2, {
-            size: "sm",
-            color: "currentColor"
-          }) : (0, i.jsx)(l.Dio, {
-            size: "sm",
-            color: "currentColor"
-          })
-        }), (0, i.jsx)(l.Text, {
-          variant: "text-md/normal",
-          className: d.statusText,
-          color: "text-secondary",
-          children: n ? u.intl.string(u.t["LV+CXF"]) : u.intl.string(u.t.Plv1Xl)
-        })]
-      }), (0, i.jsx)("div", {
-        className: d.statusRight,
-        children: (0, i.jsx)(c.h, {
-          application: e,
-          iconSize: 20
-        })
-      })]
-    })
-  })
-}
-
-function C(t) {
-  let {
-    transitionState: n,
-    onClose: e,
-    sku: a,
-    application: s
-  } = t, r = [{
-    variant: "primary",
-    text: "Play ".concat(s.name),
-    onClick: () => {},
-    icon: o.rgF
-  }];
-  return (0, i.jsxs)(o.IX, {
-    transitionState: n,
-    onClose: e,
-    children: [(0, i.jsx)(m, {
-      sku: a,
-      title: u.intl.string(u.t["5glWtb"])
-    }), (0, i.jsx)(o.fef, {
-      children: (0, i.jsx)(l.Text, {
-        variant: "text-md/normal",
-        className: d.modalBodyText,
-        children: u.intl.formatToPlainString(u.t.W2znvb, {
-          skuName: a.name,
-          applicationName: s.name
-        })
-      })
-    }), (0, i.jsx)(o.Go$, {
-      actions: r,
       actionsFullWidth: true
     })]
   })
@@ -185,20 +111,40 @@ function C(t) {
 
 function m(t) {
   let {
-    sku: n,
-    title: e
+    isConnected: n,
+    application: e
   } = t;
-  return (0, i.jsx)(o.xBx, {
-    alignCenter: true,
-    title: e,
-    gradientColor: "purple",
-    graphic: {
-      type: "dynamic",
-      component: l.AX$.SOCIAL_LAYER_GIFT_SUCCESS,
-      aspectRatio: "16/9",
-      props: {
-        sku: n
-      }
-    }
+  return (0, i.jsx)("div", {
+    className: p.statusContainer,
+    children: (0, i.jsxs)("div", {
+      className: p.statusRow,
+      children: [(0, i.jsxs)("div", {
+        className: p.statusLeft,
+        children: [(0, i.jsx)("div", {
+          className: s()(p.statusIcon, {
+            [p.statusIconConnected]: n,
+            [p.statusIconDisconnected]: !n
+          }),
+          children: n ? (0, i.jsx)(o.dz2, {
+            size: "sm",
+            color: "currentColor"
+          }) : (0, i.jsx)(o.Dio, {
+            size: "sm",
+            color: "currentColor"
+          })
+        }), (0, i.jsx)(o.Text, {
+          variant: "text-md/normal",
+          className: p.statusText,
+          color: "text-secondary",
+          children: n ? d.intl.string(d.t["LV+CXF"]) : d.intl.string(d.t.Plv1Xl)
+        })]
+      }), (0, i.jsx)("div", {
+        className: p.statusRight,
+        children: (0, i.jsx)(c.h, {
+          application: e,
+          iconSize: 20
+        })
+      })]
+    })
   })
 }

@@ -18,8 +18,8 @@ function i(e) {
     useOptions: s,
     renderOptionLabel: u
   } = t, d = a(), f = null == c ? true : c(), b = n(), p = s();
-  return (0, r.jsx)(l.X, {
-    children: (0, r.jsx)(o.q4e, {
+  return (0, r.jsx)(o.X, {
+    children: (0, r.jsx)(l.q4e, {
       label: d,
       description: f,
       value: b,

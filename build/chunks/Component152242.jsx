@@ -1,7 +1,7 @@
 /** Chunk was on 45227 **/
 /** chunk id: 152242, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  jM: () => O
+  jM: () => E
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -31,7 +31,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk397263 = require("./397263.js");
-let O = {
+let E = {
   key: Chunk409813.h8.GIFT_CUSTOMIZATION,
   renderStep: e => (0, i.jsx)(k, function(e) {
     for (var t = 1; t < arguments.length; t++) {
@@ -61,19 +61,19 @@ function S(e) {
   let {
     onStepChange: t,
     onBackClick: n,
-    showBackButton: l = false,
+    showBackButton: r = false,
     disabled: a = false,
-    loading: s = false
+    loading: o = false
   } = e, {
-    hasPaymentSources: o
-  } = (0, c.JL)(), u = o ? d.h8.REVIEW : d.h8.ADD_PAYMENT_STEPS;
+    hasPaymentSources: s
+  } = (0, c.JL)(), u = s ? d.h8.REVIEW : d.h8.ADD_PAYMENT_STEPS;
   return (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(r.Button, {
+    children: [(0, i.jsx)(l.Button, {
       onClick: () => t(u),
       disabled: a,
-      loading: s,
-      text: T.intl.string(T.t.XiOHRU)
-    }), l ? (0, i.jsx)(m.Z, {
+      loading: o,
+      text: N.intl.string(N.t.XiOHRU)
+    }), r ? (0, i.jsx)(p.Z, {
       onClick: n
     }) : null]
   })
@@ -85,127 +85,127 @@ function k(e) {
     handleStepChange: n,
     handleClose: d
   } = e, {
-    customGiftMessage: m = "",
-    setCustomGiftMessage: p,
-    giftRecipient: j,
-    emojiConfetti: I,
-    soundEffect: O,
+    customGiftMessage: p = "",
+    setCustomGiftMessage: m,
+    giftRecipient: C,
+    emojiConfetti: w,
+    soundEffect: E,
     setEmojiConfetti: k,
-    setSoundEffect: Z
-  } = (0, o.wD)(), {
+    setSoundEffect: G
+  } = (0, s.wD)(), {
     selectedSkuId: M,
     application: A
-  } = (0, c.JL)(), B = (0, l.e7)([h.default], () => h.default.getCurrentUser()), L = (0, l.e7)([C.Z], () => null != M ? C.Z.get(M) : null, [M]), W = (0, b.Do)(L), D = (0, b.a7)(L), H = (0, P.K)(L, {
+  } = (0, c.JL)(), B = (0, r.e7)([b.default], () => b.default.getCurrentUser()), D = (0, r.e7)([x.Z], () => null != M ? x.Z.get(M) : null, [M]), L = (0, j.Do)(D), W = (0, j.a7)(D), H = (0, P.K)(D, {
     shouldFetchIfMissing: true
   }), R = async (e, t) => {};
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(u.C3, {
       children: (0, i.jsxs)("div", {
-        className: E.stepBody,
+        className: T.stepBody,
         children: [(0, i.jsxs)("div", {
-          className: E.bodyColumnLeft,
-          children: [null != W && (0, i.jsx)(w.p, {
-            className: E.skuCardImage,
-            cardImage: W,
-            cardBackgroundImage: D,
-            altText: null != (t = null == L ? true : L.name) ? t : ""
+          className: T.bodyColumnLeft,
+          children: [null != L && (0, i.jsx)(_.p, {
+            className: T.skuCardImage,
+            cardImage: L,
+            cardBackgroundImage: W,
+            altText: null != (t = null == D ? true : D.name) ? t : ""
           }), (0, i.jsxs)("div", {
-            className: E.giftEffectsContainer,
+            className: T.giftEffectsContainer,
             children: [(0, i.jsx)(v.Z, {
-              sound: O,
+              sound: E,
               onSelect: e => {
-                null != Z && Z(null == e ? true : e)
+                null != G && G(null == e ? true : e)
               }
             }), (0, i.jsx)(g.Z, {
               setEmojiConfetti: k,
-              emojiConfetti: null == I ? true : I
+              emojiConfetti: null == w ? true : w
             })]
           })]
         }), (0, i.jsxs)("div", {
-          className: E.bodyColumnRight,
+          className: T.bodyColumnRight,
           children: [(0, i.jsx)(a.Z, {
             selectedSkuId: M,
             validateSelectedGift: R,
-            searchableSelectWrapperClassName: E.recipientPickerSelectWrapper
+            searchableSelectWrapperClassName: T.recipientPickerSelectWrapper
           }), (0, i.jsx)(f.Z, {
-            sectionTitle: T.intl.string(T.t.B3miEx),
-            onTextChange: e => null == p ? true : p(e),
-            pendingText: m,
-            currentText: m,
+            sectionTitle: N.intl.string(N.t.B3miEx),
+            onTextChange: e => null == m ? true : m(e),
+            pendingText: p,
+            currentText: p,
             disableThemedBackground: true,
-            className: E.customGiftMessageWrapper,
-            innerClassName: E.customGiftMessage
+            className: T.customGiftMessageWrapper,
+            innerClassName: T.customGiftMessage
           }), (() => {
-            var e, t, n, l;
-            if (null == L) return null;
-            let a = (0, x.T4)(null != (n = null == (e = L.price) ? true : e.amount) ? n : 0, null != (l = null == (t = L.price) ? true : t.currency) ? l : N.pK.USD);
+            var e, t, n, r;
+            if (null == D) return null;
+            let a = (0, h.T4)(null != (n = null == (e = D.price) ? true : e.amount) ? n : 0, null != (r = null == (t = D.price) ? true : t.currency) ? r : I.pK.USD);
             return (0, i.jsxs)("div", {
-              className: E.giftPreviewContainer,
-              children: [(0, i.jsx)(r.vwX, {
-                className: E.giftPreviewTitle,
-                children: T.intl.string(T.t.PpoJzs)
+              className: T.giftPreviewContainer,
+              children: [(0, i.jsx)(l.vwX, {
+                className: T.giftPreviewTitle,
+                children: N.intl.string(N.t.PpoJzs)
               }), (0, i.jsxs)("div", {
-                className: E.giftPreviewContent,
+                className: T.giftPreviewContent,
                 children: [(0, i.jsx)("div", {
-                  className: E.giftPreviewImageContainer,
-                  children: null != L && null != W && (0, i.jsx)(w.p, {
-                    className: E.giftPreviewCardContainer,
-                    cardImage: W,
-                    cardBackgroundImage: D,
-                    altText: L.name
+                  className: T.giftPreviewImageContainer,
+                  children: null != D && null != L && (0, i.jsx)(_.p, {
+                    className: T.giftPreviewCardContainer,
+                    cardImage: L,
+                    cardBackgroundImage: W,
+                    altText: D.name
                   })
                 }), (0, i.jsxs)("div", {
-                  className: E.giftPreviewTextContainer,
-                  children: [null != A && (0, i.jsx)(_.e, {
+                  className: T.giftPreviewTextContainer,
+                  children: [null != A && (0, i.jsx)(y.e, {
                     application: A
-                  }), (0, i.jsx)(r.Text, {
+                  }), (0, i.jsx)(l.Text, {
                     variant: "text-md/semibold",
-                    children: L.name
+                    children: D.name
                   })]
-                }), (0, i.jsx)(r.Text, {
+                }), (0, i.jsx)(l.Text, {
                   variant: "text-md/semibold",
                   children: a
                 })]
               })]
             })
-          })(), null != H && null != L && (0, i.jsx)(G, {
+          })(), null != H && null != D && (0, i.jsx)(Z, {
             handleClose: d,
-            sku: L,
+            sku: D,
             guild: H
           })]
         })]
       })
     }), (0, i.jsx)(u.O3, {
-      children: (0, i.jsx)(r.mzw, {
+      children: (0, i.jsx)(l.mzw, {
         "data-migration-pending": true,
-        justify: s.Z.Justify.BETWEEN,
-        align: s.Z.Align.CENTER,
-        className: E.footer,
+        justify: o.Z.Justify.BETWEEN,
+        align: o.Z.Align.CENTER,
+        className: T.footer,
         children: (0, i.jsx)(S, {
           onStepChange: n,
           onBackClick: d,
-          disabled: null == j || j.id === (null == B ? true : B.id) || m.length > y.$n
+          disabled: null == C || C.id === (null == B ? true : B.id) || p.length > O.$n
         })
       })
     })]
   })
 }
 
-function G(e) {
+function Z(e) {
   let {
     handleClose: t,
     guild: n,
-    sku: l
+    sku: r
   } = e;
   return (0, i.jsx)("div", {
-    className: E.viewItemButton,
-    children: (0, i.jsx)(r.Avr, {
-      text: T.intl.string(T.t.ImioFB),
+    className: T.viewItemButton,
+    children: (0, i.jsx)(l.Avr, {
+      text: N.intl.string(N.t.ImioFB),
       onClick: function() {
         var e;
         t();
-        let i = null == (e = j.Z.getStorefrontState(n.id)) ? true : e.activePage;
-        window.location.pathname.includes(I.Z5c.CHANNELS_GAME_SHOP(n.id, null != i ? i : 0, l.id)) || ((0, r.pTH)(), (0, p.uL)(I.Z5c.CHANNELS_GAME_SHOP(n.id, null != i ? i : 0, l.id, l.slug)))
+        let i = null == (e = C.Z.getStorefrontState(n.id)) ? true : e.activePage;
+        window.location.pathname.includes(w.Z5c.CHANNELS_GAME_SHOP(n.id, null != i ? i : 0, r.id)) || ((0, l.pTH)(), (0, m.uL)(w.Z5c.CHANNELS_GAME_SHOP(n.id, null != i ? i : 0, r.id, r.slug)))
       },
       textVariant: "text-sm/medium",
       lineClamp: true

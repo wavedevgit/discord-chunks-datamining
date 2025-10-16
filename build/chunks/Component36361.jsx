@@ -23,47 +23,47 @@ function j(e) {
     node: t
   } = e;
   switch (t.type) {
-    case o.Jq.ROOT:
-    case o.Jq.SECTION:
-    case o.Jq.SIDEBAR_ITEM:
+    case l.Jq.ROOT:
+    case l.Jq.SECTION:
+    case l.Jq.SIDEBAR_ITEM:
       throw Error("".concat(t.type, " nodes should never be rendered directly"));
-    case o.Jq.PANEL:
+    case l.Jq.PANEL:
       return (0, r.jsx)(y.T, {
         node: t
       });
-    case o.Jq.PANE:
+    case l.Jq.PANE:
       return (0, r.jsx)(p.Z, {
         node: t
       });
-    case o.Jq.LIST:
+    case l.Jq.LIST:
       return (0, r.jsx)(b.Z, {
         node: t
       });
-    case o.Jq.CATEGORY:
+    case l.Jq.CATEGORY:
       return (0, r.jsx)(f.Z, {
         node: t
       });
-    case o.Jq.ACCORDION:
+    case l.Jq.ACCORDION:
       return (0, r.jsx)(d.Z, {
         node: t
       });
-    case o.Jq.TOGGLE:
+    case l.Jq.TOGGLE:
       return (0, r.jsx)(u.I, {
         node: t
       });
-    case o.Jq.BUTTON:
+    case l.Jq.BUTTON:
       return (0, r.jsx)(i.I, {
         node: t
       });
-    case o.Jq.SELECT:
+    case l.Jq.SELECT:
       return (0, r.jsx)(s.Z, {
         node: t
       });
-    case o.Jq.RADIO:
+    case l.Jq.RADIO:
       return (0, r.jsx)(c.Z, {
         node: t
       });
-    case o.Jq.CUSTOM:
+    case l.Jq.CUSTOM:
     default:
       return (0, r.jsx)(a.W, {
         node: t
@@ -75,9 +75,9 @@ function m(e) {
   let {
     node: t
   } = e;
-  return t.type === o.Jq.PANEL || t.type === o.Jq.PANE ? (0, r.jsx)(j, {
+  return t.type === l.Jq.PANEL || t.type === l.Jq.PANE ? (0, r.jsx)(j, {
     node: t
-  }) : (0, r.jsx)(l.Z, {
+  }) : (0, r.jsx)(o.Z, {
     node: t,
     children: (0, r.jsx)(j, {
       node: t

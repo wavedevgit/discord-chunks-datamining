@@ -59,7 +59,7 @@ function y(e) {
     onPanelChange: O,
     emptyState: x
   } = e, P = null != j ? j : m;
-  (0, l.ZP)(() => {
+  (0, o.ZP)(() => {
     var e;
     let t = null == (e = y.entry(P)) ? true : e.targetPanel;
     return d.Z.setState({
@@ -70,9 +70,9 @@ function y(e) {
   });
   let S = d.Z.useField("currentPanel"),
     C = d.Z.useField("targetKey"),
-    [_, w] = o.useState(() => y.typedGet(S)),
-    E = o.useCallback(() => k(true), []),
-    [N, k] = o.useState({
+    [_, w] = l.useState(() => y.typedGet(S)),
+    E = l.useCallback(() => k(true), []),
+    [N, k] = l.useState({
       target: P,
       targetAccordion: null == (t = y.entry(P)) ? true : t.parentAccordion,
       animateScroll: false,
@@ -81,7 +81,7 @@ function y(e) {
     {
       navigateWithValidation: T
     } = (0, s.Cu)();
-  o.useEffect(() => {
+  l.useEffect(() => {
     if (null == C) return;
     let e = y.entry(C);
     if (null == e) return void i.Z.setState({
@@ -112,7 +112,7 @@ function y(e) {
       targetKey: true
     })
   }, [S, C, E, y, T, O]);
-  let Z = o.useMemo(() => ({
+  let Z = l.useMemo(() => ({
       navTransition: N
     }), [N]),
     D = () => T(v);
