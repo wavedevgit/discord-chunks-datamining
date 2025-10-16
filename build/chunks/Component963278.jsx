@@ -2,69 +2,71 @@
 /** chunk id: 963278, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => m
+  Z: () => v
 });
-var Chunk951288 = require("./951288.js");
-require("./647438.js");
-var Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+var Chunk951288 = require("./951288.js"),
+  Chunk647438 = require("./647438.js"),
+  Chunk120356 = require("./120356.js"),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk594174 = require("./594174.js"),
   Chunk381585 = require("./381585.jsx"),
   Chunk597688 = require("./597688.js"),
   Chunk128922 = require("./128922.js"),
+  Chunk937510 = require("./937510.js"),
   Chunk709999 = require("./709999.jsx"),
   Chunk653126 = require("./653126.jsx"),
   Chunk786040 = require("./786040.jsx"),
   Chunk215023 = require("./215023.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk310582 = require("./310582.js");
-let m = e => {
+let v = e => {
   let {
     shelf: t,
     handleTransition: n,
-    tab: l
-  } = e, m = (0, o.e7)([a.default], () => a.default.getCurrentUser()), b = d.Z.useConfig({
+    tab: i
+  } = e, v = (0, s.e7)([c.default], () => c.default.getCurrentUser()), E = g.Z.useConfig({
     location: "ShelfBlock"
-  }).showCardsV2, v = (0, c.sp)();
-  return null == m ? null : (0, r.jsxs)("div", {
-    className: i()(_.shelfBlockContainer, _.centeredSection),
+  }).showCardsV2, O = (0, u.sp)(), x = l.useMemo(() => t.rankedSkuIds.map(e => d.Z.getProduct(e)).filter(e => null != e), [t.rankedSkuIds]), S = (0, f.l)(x).slice(0, 4);
+  return null == v ? null : (0, r.jsxs)("div", {
+    className: o()(b.shelfBlockContainer, b.centeredSection),
     children: [(0, r.jsxs)("div", {
-      className: _.blockHeader,
-      children: [(0, r.jsx)(s.Heading, {
+      className: b.blockHeader,
+      children: [(0, r.jsx)(a.Heading, {
         variant: "heading-lg/semibold",
         children: t.name
-      }), (0, r.jsx)(s.Button, {
+      }), (0, r.jsx)(a.Button, {
         variant: "secondary",
-        text: h.intl.formatToPlainString(h.t.bc9RBA, {
+        text: m.intl.formatToPlainString(m.t.bc9RBA, {
           category_name: t.name
         }),
         onClick: () => n("shelf block see all", t.categorySkuId, true, true)
       })]
     }), (0, r.jsx)("div", {
-      className: _.feed,
+      className: b.feed,
       children: (0, r.jsx)(r.Fragment, {
-        children: t.rankedSkuIds.map((e, n) => {
-          let i = u.Z.getCategoryForProduct(e),
-            o = u.Z.getProduct(e);
-          return null == i || null == o ? null : (0, r.jsx)(c.k0, {
+        children: S.map((e, n) => {
+          let l = d.Z.getCategoryForProduct(e.skuId);
+          if (null == l || null == e) return null;
+          let o = e.skuId;
+          return (0, r.jsx)(u.k0, {
             newValue: {
               tilePosition: n,
               pageSection: t.name,
               categoryPosition: 2
             },
-            children: b ? (0, r.jsx)(f.Z, {
-              skuId: e,
-              prioritizedCurrency: l === C.AW.ORBS ? p.tA.ORBS : true,
-              onClickAnalytics: (0, p.wO)(o, l, v)
-            }, e) : (0, r.jsx)(g.Z, {
-              product: o,
-              category: i,
-              user: m,
-              tab: l
-            }, e)
-          }, e)
+            children: E ? (0, r.jsx)(C.Z, {
+              skuId: o,
+              prioritizedCurrency: i === _.AW.ORBS ? h.tA.ORBS : true,
+              onClickAnalytics: (0, h.wO)(e, i, O)
+            }, o) : (0, r.jsx)(p.Z, {
+              product: e,
+              category: l,
+              user: v,
+              tab: i
+            }, o)
+          }, o)
         })
       })
     })]
