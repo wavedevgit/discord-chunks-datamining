@@ -2,7 +2,7 @@
 /** chunk id: 400251, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => N,
-  m: () => T
+  m: () => P
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -60,7 +60,7 @@ function Z(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let T = e => {
+let P = e => {
   let {
     onClick: t
   } = e;
@@ -79,7 +79,7 @@ let T = e => {
   })
 };
 
-function P(e) {
+function T(e) {
   let {
     entry: t
   } = e, [l, s] = i.useState(false), d = i.useRef(null), {
@@ -89,10 +89,10 @@ function P(e) {
     className: a()(I.actionButtonsContainer, {
       [I.forceButtonsShow]: l
     }),
-    children: (0, r.jsxs)(p.ZP, {
+    children: (0, r.jsxs)(h.ZP, {
       children: [u ? (0, r.jsx)(o.u, {
         text: C.intl.string(C.t.XnuOvL),
-        children: (0, r.jsx)(p.zx, {
+        children: (0, r.jsx)(h.zx, {
           onClick: () => {
             (0, c.ZDy)(async () => {
               let {
@@ -136,7 +136,7 @@ function P(e) {
           }(e, ["onClick"]);
           return (0, r.jsx)(o.u, {
             text: C.intl.string(C.t.UKOtz8),
-            children: (0, r.jsx)(p.zx, Z(E({}, n), {
+            children: (0, r.jsx)(h.zx, Z(E({}, n), {
               onClick: e => {
                 t(e)
               },
@@ -158,10 +158,10 @@ let N = e => {
   var t;
   let {
     entry: l
-  } = e, [a, o] = i.useState(false), p = null != (0, s.e7)([y.Z], () => y.Z.getGuild(l.guildId)), O = async () => {
+  } = e, [a, o] = i.useState(false), h = null != (0, s.e7)([y.Z], () => y.Z.getGuild(l.guildId)), O = async () => {
     o(true);
     try {
-      p ? (0, b.X)(l.guildId) : await u.Z.joinGuild(l.guildId, {
+      h ? (0, b.X)(l.guildId) : await u.Z.joinGuild(l.guildId, {
         source: v.vtS.DIRECTORY_ENTRY
       })
     } finally {
@@ -175,8 +175,8 @@ let N = e => {
     id: l.guildId,
     icon: l.icon,
     size: 40
-  })) ? t : true, T = C.intl.string(C.t.VJlc0d);
-  return p && (T = C.intl.string(C.t.cqWE2d)), (0, r.jsxs)("div", {
+  })) ? t : true, P = C.intl.string(C.t.VJlc0d);
+  return h && (P = C.intl.string(C.t.cqWE2d)), (0, r.jsxs)("div", {
     className: I.card,
     onContextMenu: e => {
       (0, d.jW)(e, async () => {
@@ -199,8 +199,8 @@ let N = e => {
         })
       }), (0, r.jsx)("div", {
         className: I.guildIcon,
-        children: (0, r.jsx)(h.ZP, {
-          mask: h.ZP.Masks.SQUIRCLE,
+        children: (0, r.jsx)(p.ZP, {
+          mask: p.ZP.Masks.SQUIRCLE,
           width: 48,
           height: 48,
           children: (0, r.jsx)("div", {
@@ -262,13 +262,13 @@ let N = e => {
         className: I.joinButton,
         children: (0, r.jsx)(c.Button, {
           loading: a,
-          variant: p ? "secondary" : "active",
+          variant: h ? "secondary" : "active",
           onClick: O,
-          text: T,
+          text: P,
           fullWidth: true
         })
       })]
-    }), (0, r.jsx)(P, {
+    }), (0, r.jsx)(T, {
       entry: l
     })]
   })

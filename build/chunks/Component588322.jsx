@@ -39,7 +39,7 @@ function O(e) {
     }), (0, r.jsx)(u.ZP, {
       toolbar: S,
       "aria-label": _.intl.string(_.t.Pwe8tL),
-      children: (0, h.ud)({
+      children: (0, p.ud)({
         channel: O,
         parentChannel: x,
         channelName: C,
@@ -85,7 +85,7 @@ function O(e) {
           })
         },
         handleClick: function() {
-          null != O && (0, p.XU)(O.guild_id, O.id)
+          null != O && (0, h.XU)(O.guild_id, O.id)
         }
       })
     }), (0, r.jsx)("div", {

@@ -28,17 +28,17 @@ function f(e, t) {
     g = (0, d.U)(f);
   return null == n ? null : i ? (0, r.jsx)(s.sNh, {
     id: "unmute-guild",
-    label: p.intl.string(p.t.De0BTE),
+    label: h.intl.string(h.t.De0BTE),
     subtext: g,
     action: () => o.Z.updateGuildNotificationSettings(n, {
       muted: false
-    }, h.ZB.Unmuted)
+    }, p.ZB.Unmuted)
   }) : (0, r.jsx)(s.sNh, {
     id: "mute-guild",
-    label: p.intl.string(p.t.vRzp7O),
+    label: h.intl.string(h.t.vRzp7O),
     action: () => o.Z.updateGuildNotificationSettings(n, {
       muted: true
-    }, h.ZB.Muted),
+    }, p.ZB.Muted),
     children: (0, c.k)().map(e => {
       let {
         value: i,
@@ -56,7 +56,7 @@ function f(e, t) {
               selected_time_window: e,
               end_time: r
             }
-          }, h.ZB.Muted, t)
+          }, p.ZB.Muted, t)
         })(i)
       }, i)
     })

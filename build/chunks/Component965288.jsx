@@ -2,7 +2,7 @@
 /** chunk id: 965288, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => N,
-  y: () => P
+  y: () => T
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -70,25 +70,25 @@ let Z = Chunk647438.memo(function(e) {
     } = e;
     return (0, r.jsxs)("div", {
       className: I.textContainer,
-      children: [a ? (0, r.jsx)(h.t6m, {
+      children: [a ? (0, r.jsx)(p.t6m, {
         size: "lg",
         className: I.blockedIcon,
         color: u.Z.unsafe_rawColors.RED_400.css
-      }) : null, s ? (0, r.jsx)(h.kZF, {
+      }) : null, s ? (0, r.jsx)(p.kZF, {
         size: "lg",
         className: I.blockedIcon
-      }) : null, (0, r.jsx)(h.Text, {
+      }) : null, (0, r.jsx)(p.Text, {
         className: I.text,
         variant: "text-sm/normal",
         color: "header-primary",
         children: x.ZP.getName(t, n, i)
-      }), l ? (0, r.jsx)(h.Ucv, {
+      }), l ? (0, r.jsx)(p.Ucv, {
         className: I.boost,
         color: u.Z.unsafe_rawColors.GUILD_BOOSTING_PINK
       }) : null]
     })
   }),
-  T = Chunk647438.memo(function(e) {
+  P = Chunk647438.memo(function(e) {
     var t;
     let {
       participant: n,
@@ -100,15 +100,15 @@ let Z = Chunk647438.memo(function(e) {
       blocked: c,
       ignored: d,
       rtsState: u
-    } = n, p = u === v.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK, f = u === v.xO.REQUESTED_TO_SPEAK || p;
+    } = n, h = u === v.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK, f = u === v.xO.REQUESTED_TO_SPEAK || h;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)("div", {
         className: I.avatarContainer,
-        children: [f && (0, r.jsx)(h.V9, {
+        children: [f && (0, r.jsx)(p.V9, {
           size: "md",
           color: "currentColor",
           className: a()(I.icon, {
-            [I.invited]: p
+            [I.invited]: h
           })
         }), (0, r.jsx)("img", {
           src: null != (t = o.getAvatarURL(l.guild_id, 56, false)) ? t : true,
@@ -128,7 +128,7 @@ let Z = Chunk647438.memo(function(e) {
       })]
     })
   }),
-  P = () => (0, Chunk951288.jsx)("div", {
+  T = () => (0, Chunk951288.jsx)("div", {
     className: Chunk383519.tileBaseContainer
   }),
   N = Chunk647438.memo(function(e) {
@@ -140,7 +140,7 @@ let Z = Chunk647438.memo(function(e) {
       blocked: u
     } = t, x = l.getGuildId(), v = j.default.getId(), {
       newestAnalyticsLocation: Z
-    } = (0, g.ZP)(f.Z.AUDIENCE_TILE), P = (0, y.bp)(), N = (0, d.e7)([O.ZP], () => {
+    } = (0, g.ZP)(f.Z.AUDIENCE_TILE), T = (0, y.bp)(), N = (0, d.e7)([O.ZP], () => {
       var e;
       return null != x && (null == (e = O.ZP.getMember(x, s.id)) ? true : e.premiumSince) != null
     }, [x, s.id]), R = i.useRef(null);
@@ -154,7 +154,7 @@ let Z = Chunk647438.memo(function(e) {
           is_tile_owner: s.id === v,
           tile_type: C.TH.USER
         }
-      }), (0, p.jW)(e, async () => {
+      }), (0, h.jW)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("52021")]).then(n.bind(n, 757387));
@@ -171,16 +171,16 @@ let Z = Chunk647438.memo(function(e) {
           })
         }))
       }, {
-        context: P
+        context: T
       })
-    }, [s, v, P, x, l, Z]);
+    }, [s, v, T, x, l, Z]);
     return (0, r.jsx)(_.Z, {
       targetElementRef: R,
       user: s,
       guildId: l.guild_id,
       channelId: l.id,
       clickTrap: true,
-      children: e => (0, r.jsx)(h.P3F, E(S({
+      children: e => (0, r.jsx)(p.P3F, E(S({
         innerRef: R,
         className: a()(I.tileContainer, {
           [I.singleIcon]: N || u,
@@ -188,7 +188,7 @@ let Z = Chunk647438.memo(function(e) {
         }),
         onContextMenu: w
       }, e), {
-        children: (0, r.jsx)(T, {
+        children: (0, r.jsx)(P, {
           participant: t,
           guildId: x,
           channel: l,

@@ -52,7 +52,7 @@ function _(e) {
           onSelect: () => (0, s.X)(n.id)
         }, n.id)
       })
-    }), S && I && (0, r.jsx)(h.Z, {
+    }), S && I && (0, r.jsx)(p.Z, {
       className: y.divider
     }), I && (0, r.jsx)(m.Z, {
       section: "MUTUAL_FRIENDS",
@@ -76,7 +76,7 @@ function _(e) {
           user: i,
           status: l
         } = e;
-        return (0, r.jsx)(p.Z, {
+        return (0, r.jsx)(h.Z, {
           user: i,
           status: l,
           channelId: n,

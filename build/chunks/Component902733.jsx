@@ -1,7 +1,7 @@
 /** Chunk was on 91053 **/
 /** chunk id: 902733, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => p
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -29,7 +29,7 @@ function u(e) {
     })
   })
 }
-let h = function(e) {
+let p = function(e) {
   let {
     searchContext: t,
     dismissFeedbackEntrypoint: l
@@ -39,7 +39,7 @@ let h = function(e) {
       searchContext: t
     })
   }, [t]);
-  let h = i.useCallback(e => {
+  let p = i.useCallback(e => {
     l(), (0, a.ZDy)(async () => {
       let {
         default: i
@@ -89,10 +89,10 @@ let h = function(e) {
       className: d.icons,
       children: [(0, r.jsx)(u, {
         rating: o.aZ.GOOD,
-        onClick: h
+        onClick: p
       }), (0, r.jsx)(u, {
         rating: o.aZ.BAD,
-        onClick: h
+        onClick: p
       })]
     })]
   })

@@ -22,28 +22,28 @@ var Chunk951288 = require("./951288.js"),
 let _ = Chunk647438.memo(function(e) {
   let {
     channel: t
-  } = e, _ = (0, d.h)(t.id), j = (0, u.o)(t.id), O = (0, h.M)(t.id), x = (0, a.f9)(), v = (0, l.e7)([f.Z], () => f.Z.hasLayers()), C = i.useCallback(() => j ? b.intl.string(b.t["16QyDg"]) : null != O ? b.intl.string(b.t.kCN9i4) : null, [j, O]), I = i.useMemo(() => (j || null != O) && !x && !v, [j, O, x, v]), [S, E] = i.useState(C());
+  } = e, _ = (0, d.h)(t.id), j = (0, u.o)(t.id), O = (0, p.M)(t.id), x = (0, a.f9)(), v = (0, l.e7)([f.Z], () => f.Z.hasLayers()), C = i.useCallback(() => j ? b.intl.string(b.t["16QyDg"]) : null != O ? b.intl.string(b.t.kCN9i4) : null, [j, O]), I = i.useMemo(() => (j || null != O) && !x && !v, [j, O, x, v]), [S, E] = i.useState(C());
   i.useEffect(() => {
     null != O && null != _ && (s.uvj.announce(b.intl.string(b.t.acsXuL)), setTimeout(() => {
       (0, c.T)(t.id, [O.id])
-    }, 5e3), (0, p.KQ)({
+    }, 5e3), (0, h.KQ)({
       channelId: t.id,
       senderId: t.getRecipientId(),
       warningId: O.id,
       warningType: O.type,
       isNudgeWarning: null != O,
-      viewName: p.pb.SAFETY_TOOLS_NUDGE_TOOLTIP
+      viewName: h.pb.SAFETY_TOOLS_NUDGE_TOOLTIP
     })), j && (s.uvj.announce(b.intl.string(b.t["1dxCqK"])), setTimeout(() => {
       (0, c.Ot)(t.id)
     }, 5e3))
   }, [t, O, _, j]), (0, o.ZP)(() => {
-    null != _ && (0, p.KQ)({
+    null != _ && (0, h.KQ)({
       channelId: t.id,
       senderId: t.getRecipientId(),
       warningId: _.id,
       warningType: _.type,
       isNudgeWarning: null != O,
-      viewName: p.pb.SAFETY_TOOLS_BUTTON
+      viewName: h.pb.SAFETY_TOOLS_BUTTON
     })
   }), i.useEffect(() => {
     let e = C();
@@ -70,12 +70,12 @@ let _ = Chunk647438.memo(function(e) {
       }
     }, {
       modalKey: m.X_
-    }), (0, p.qc)({
+    }), (0, h.qc)({
       channelId: t.id,
       senderId: t.getRecipientId(),
       warningId: _.id,
       warningType: _.type,
-      cta: p.NM.USER_SAFETY_TOOLS_BUTTON_CLICK,
+      cta: h.NM.USER_SAFETY_TOOLS_BUTTON_CLICK,
       isNudgeWarning: null != O
     }))
   }, [O, _, t]);

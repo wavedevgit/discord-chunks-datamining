@@ -22,9 +22,9 @@ var Chunk951288 = require("./951288.js"),
 let _ = Chunk647438.memo(function(e) {
   let {
     channel: t
-  } = e, n = (0, d.Z)(), l = (0, s.e7)([f.Z], () => f.Z.isInChannel(t.id)), _ = (0, s.e7)([f.Z], () => !a().isEmpty(f.Z.getVoiceStatesForChannel(t.id))), j = (0, s.e7)([p.Z], () => p.Z.can(b.Plq.CONNECT, t)), {
+  } = e, n = (0, d.Z)(), l = (0, s.e7)([f.Z], () => f.Z.isInChannel(t.id)), _ = (0, s.e7)([f.Z], () => !a().isEmpty(f.Z.getVoiceStatesForChannel(t.id))), j = (0, s.e7)([h.Z], () => h.Z.can(b.Plq.CONNECT, t)), {
     needSubscriptionToAccess: O
-  } = (0, u.Z)(t.id), x = (0, h.$R)(t), v = i.useCallback(() => {
+  } = (0, u.Z)(t.id), x = (0, p.$R)(t), v = i.useCallback(() => {
     c.Z.handleVoiceConnect({
       channel: t,
       connected: l,
@@ -34,7 +34,7 @@ let _ = Chunk647438.memo(function(e) {
   }, [t, l, O]);
   return (i.useEffect(() => (g.S.subscribe(b.CkL.CALL_START, v), () => {
     g.S.unsubscribe(b.CkL.CALL_START, v)
-  }), [v]), h.tM.useExperiment({
+  }), [v]), p.tM.useExperiment({
     guildId: t.guild_id,
     location: "63250c_1"
   }, {

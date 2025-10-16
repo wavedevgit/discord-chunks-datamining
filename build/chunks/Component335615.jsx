@@ -122,8 +122,8 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
       isOwner: o,
       nick: c,
       user: d,
-      currentUser: h,
-      activities: p,
+      currentUser: p,
+      activities: h,
       applicationStream: g,
       status: y,
       channel: _,
@@ -132,7 +132,7 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
       isMobileOnline: x,
       premiumSince: v,
       nameplate: C
-    } = e, I = J(e, ["colorString", "colorStrings", "colorRoleName", "colorRoleId", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate"]), S = i.useRef(null), [E, Z] = i.useState(false), T = null != v ? new Date(v) : null, N = i.useCallback(e => {
+    } = e, I = J(e, ["colorString", "colorStrings", "colorRoleName", "colorRoleId", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate"]), S = i.useRef(null), [E, Z] = i.useState(false), P = null != v ? new Date(v) : null, N = i.useCallback(e => {
       (0, f.jW)(e, async () => {
         let {
           default: e
@@ -156,7 +156,7 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
         rawText: t
       }), m.Z.startTyping(_.id)
     }, [d, _.id]), w = i.useCallback(e => {
-      null != j && (e.stopPropagation(), (0, P.f)({
+      null != j && (e.stopPropagation(), (0, T.f)({
         guildId: j,
         location: {
           section: W.jXE.MEMBER_LIST,
@@ -188,13 +188,13 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
           onContextMenu: N,
           shouldAnimateStatus: $,
           user: d,
-          currentUser: h,
+          currentUser: p,
           nick: c,
           status: y,
-          activities: p,
+          activities: h,
           applicationStream: g,
           isOwner: o,
-          premiumSince: T,
+          premiumSince: P,
           colorString: t,
           colorStrings: l,
           colorRoleName: a,
@@ -223,10 +223,10 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
       channel: i,
       user: l,
       index: a
-    } = e, s = (0, c.JA)("".concat(a)), o = (0, h.e7)([U.Z], () => U.Z.isTyping(i.id, l.id)), d = (0, h.e7)([G.default], () => G.default.getCurrentUser()), u = (0, h.e7)([M.Z], () => {
+    } = e, s = (0, c.JA)("".concat(a)), o = (0, p.e7)([U.Z], () => U.Z.isTyping(i.id, l.id)), d = (0, p.e7)([G.default], () => G.default.getCurrentUser()), u = (0, p.e7)([M.Z], () => {
       var e;
       return null != t ? null == (e = M.Z.getRole(i.guild_id, t)) ? true : e.name : true
-    }, [i, t]), p = (0, R.K)({
+    }, [i, t]), h = (0, R.K)({
       user: l,
       guildId: i.guild_id,
       location: "ChannelMembers"
@@ -235,7 +235,7 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
       isTyping: o,
       currentUser: d,
       colorRoleName: u,
-      nameplate: p
+      nameplate: h
     }))
   }),
   er = Chunk647438.memo(function(e) {
@@ -248,7 +248,7 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
       roleId: t,
       guildId: l,
       size: 16
-    }), s = (0, h.e7)([D.default], () => new Intl.NumberFormat(D.default.locale).format(i), [i]);
+    }), s = (0, p.e7)([D.default], () => new Intl.NumberFormat(D.default.locale).format(i), [i]);
     return t === W.Skl.UNKNOWN ? (0, r.jsx)("div", {
       className: q.membersGroup,
       children: (0, r.jsx)("div", {
@@ -256,7 +256,7 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
       })
     }) : (0, r.jsxs)(E.Z, {
       className: q.membersGroup,
-      children: [(0, r.jsx)(p.nn4, {
+      children: [(0, r.jsx)(h.nn4, {
         children: Y.intl.format(Y.t.UaqbkZ, {
           title: n,
           count: i
@@ -329,13 +329,13 @@ class el extends Chunk647438.Component {
       sectionHeight: i
     } = this.props;
     return (0, Chunk951288.jsx)(Chunk481060.Wdt, {
-      children: l => (0, r.jsx)(T.FG, {
+      children: l => (0, r.jsx)(P.FG, {
         children: s => (0, r.jsx)("aside", {
           className: a()(q.membersWrap, q.hiddenMembers),
           "aria-labelledby": s,
-          children: (0, r.jsx)(p.y5t, {
-            component: (0, r.jsx)(p.nn4, {
-              children: (0, r.jsx)(p.H, {
+          children: (0, r.jsx)(h.y5t, {
+            component: (0, r.jsx)(h.nn4, {
+              children: (0, r.jsx)(h.H, {
                 id: s,
                 children: Y.intl.format(Y.t.JBQxV1, {
                   channel: n.name
@@ -348,7 +348,7 @@ class el extends Chunk647438.Component {
                   ref: s,
                   role: o
                 } = n, c = J(n, ["ref", "role"]);
-                return (0, r.jsx)(p.aVo, Q({
+                return (0, r.jsx)(h.aVo, Q({
                   innerRole: o,
                   innerAriaLabel: Y.intl.string(Y.t["9Oq93t"]),
                   ref: e => {
@@ -452,8 +452,8 @@ class el extends Chunk647438.Component {
             isOwner: c,
             isMobileOnline: d,
             nick: u,
-            activities: h,
-            applicationStream: p,
+            activities: p,
+            applicationStream: h,
             premiumSince: f
           } = a;
           return (0, r.jsx)(en, {
@@ -464,8 +464,8 @@ class el extends Chunk647438.Component {
             status: o,
             isOwner: c,
             nick: u,
-            activities: this._areActivitiesExperimentallyHidden ? [] : h,
-            applicationStream: p,
+            activities: this._areActivitiesExperimentallyHidden ? [] : p,
+            applicationStream: h,
             channel: l,
             guildId: l.guild_id,
             premiumSince: f,
@@ -571,7 +571,7 @@ function ea(e) {
     className: n
   } = e, {
     analyticsLocations: l
-  } = (0, O.ZP)(_.Z.MEMBER_LIST), s = (0, h.e7)([y.Z], () => y.Z.keyboardModeEnabled), o = (0, h.cj)([L.ZP], () => L.ZP.getProps(t.guild_id, t.id)), {
+  } = (0, O.ZP)(_.Z.MEMBER_LIST), s = (0, p.e7)([y.Z], () => y.Z.keyboardModeEnabled), o = (0, p.cj)([L.ZP], () => L.ZP.getProps(t.guild_id, t.id)), {
     rows: u,
     groups: f,
     version: g,
@@ -580,7 +580,7 @@ function ea(e) {
     memberStoreProps: o,
     channelId: t.id,
     guildId: t.guild_id
-  }), b = i.useRef(null), j = (0, p.UBm)("lg") + (0, p.UBm)("xxs"), x = i.useCallback((e, t) => {
+  }), b = i.useRef(null), j = (0, h.UBm)("lg") + (0, h.UBm)("xxs"), x = i.useCallback((e, t) => {
     let n = b.current;
     if (null == n) return;
     let r = parseInt(t, 10),

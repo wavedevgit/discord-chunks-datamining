@@ -33,16 +33,16 @@ let v = e => {
     categoryCounts: S,
     allEntriesCount: E,
     isLoading: Z
-  } = (0, l.cj)([p.Z], () => {
-    let e = p.Z.getCurrentCategoryId(t.id),
-      n = p.Z.getDirectoryEntries(t.id, e === _.AR.ALL ? null : e),
-      r = p.Z.getDirectoryCategoryCounts(t.id);
+  } = (0, l.cj)([h.Z], () => {
+    let e = h.Z.getCurrentCategoryId(t.id),
+      n = h.Z.getDirectoryEntries(t.id, e === _.AR.ALL ? null : e),
+      r = h.Z.getDirectoryCategoryCounts(t.id);
     return {
       currentCategoryId: e,
       directoryEntries: n,
       categoryCounts: r,
-      allEntriesCount: p.Z.getDirectoryAllEntriesCount(t.id),
-      isLoading: p.Z.isFetching()
+      allEntriesCount: h.Z.getDirectoryAllEntriesCount(t.id),
+      isLoading: h.Z.isFetching()
     }
   });
   i.useEffect(() => () => {
@@ -54,26 +54,26 @@ let v = e => {
       }, true, true, e)
     })
   }, [t.id]);
-  let T = i.useMemo(() => null != I ? (0, b.v)(Object.values(I), C) : null, [I, C]),
+  let P = i.useMemo(() => null != I ? (0, b.v)(Object.values(I), C) : null, [I, C]),
     {
-      mostRecentQuery: P,
+      mostRecentQuery: T,
       searchFetching: N,
       searchResults: R
-    } = (0, l.cj)([h.Z], () => {
+    } = (0, l.cj)([p.Z], () => {
       let {
         mostRecentQuery: e,
         fetching: n
-      } = h.Z.getSearchState(t.id);
+      } = p.Z.getSearchState(t.id);
       return {
         mostRecentQuery: e,
         searchFetching: n,
-        searchResults: h.Z.getSearchResults(t.id, e)
+        searchResults: p.Z.getSearchResults(t.id, e)
       }
     }),
-    [w, A] = i.useState(P),
-    D = "" !== P,
+    [w, A] = i.useState(T),
+    D = "" !== T,
     L = {
-      mostRecentQuery: P
+      mostRecentQuery: T
     },
     M = i.useRef(L);
   i.useEffect(() => {
@@ -144,18 +144,18 @@ let v = e => {
   return D ? (0, r.jsx)(y.Z, {
     searchQuery: w,
     setSearchQuery: A,
-    mostRecentQuery: P,
+    mostRecentQuery: T,
     handleSearchKeyPress: U,
     handleClearSearch: G,
     handleCreateOrAddGuild: k,
     searchResults: R,
     searchFetching: N
-  }) : null == T && null == C ? (0, r.jsx)("div", {
+  }) : null == P && null == C ? (0, r.jsx)("div", {
     className: x.pageContainer,
     children: (0, r.jsx)(a.$jN, {
       className: x.spinner
     })
-  }) : (null == T ? true : T.length) === 0 && null == C ? (0, r.jsx)("div", {
+  }) : (null == P ? true : P.length) === 0 && null == C ? (0, r.jsx)("div", {
     className: x.pageContainer,
     children: (0, r.jsx)(g.Z, {
       guild: v,
@@ -172,7 +172,7 @@ let v = e => {
     handleSelectCategory: e => {
       u.Su(t.id, e)
     },
-    directoryEntries: T,
+    directoryEntries: P,
     categoryCounts: S,
     allEntriesCount: E,
     isLoading: Z

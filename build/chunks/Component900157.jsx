@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk952899 = require("./952899.js");
 
-function T(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -49,7 +49,7 @@ function T(e) {
   return e
 }
 
-function P(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -82,10 +82,10 @@ function N(e) {
   if (i.useEffect(() => {
       if (null == R || M.current) return;
       M.current = true;
-      let e = (0, h.K)(j.Z.getChannel(R.id), true);
-      (0, u.yw)(S.rMx.CHANNEL_OPENED, P(T({}, e, (0, u.$H)(R.id)), {
+      let e = (0, p.K)(j.Z.getChannel(R.id), true);
+      (0, u.yw)(S.rMx.CHANNEL_OPENED, T(P({}, e, (0, u.$H)(R.id)), {
         channel_view: N
-      })), (0, p.a)(S.rMx.CHANNEL_OPENED_CLICKSTREAM, {
+      })), (0, h.a)(S.rMx.CHANNEL_OPENED_CLICKSTREAM, {
         channelId: R.id
       })
     }, [R, N]), null == R || null == w) return null;
@@ -110,7 +110,7 @@ function N(e) {
             let {
               default: e
             } = await n.e("40157").then(n.bind(n, 422200));
-            return t => (0, r.jsx)(e, P(T({}, t), {
+            return t => (0, r.jsx)(e, T(P({}, t), {
               channel: R
             }))
           })

@@ -104,14 +104,14 @@ function Z(e) {
   } = e, l = (0, c.Z)(t), j = (0, f.Z)(t), I = (0, b.Z)(t.id), S = (0, m.Z)(t), E = (0, _.Z)({
     id: t.id,
     label: C.intl.string(C.t.DQ797u)
-  }), Z = (0, d.Z)(t), T = (0, u.Z)(t), P = (0, h.Z)(t, "Toolbar Overflow"), N = (0, g.Z)(t), R = (0, p.Z)(t), w = (0, y.Z)(t), A = O.vF.useSetting(), D = (0, s.e7)([x.Z], () => !a().isEmpty(x.Z.getVoiceStatesForChannel(t.id)));
+  }), Z = (0, d.Z)(t), P = (0, u.Z)(t), T = (0, p.Z)(t, "Toolbar Overflow"), N = (0, g.Z)(t), R = (0, h.Z)(t), w = (0, y.Z)(t), A = O.vF.useSetting(), D = (0, s.e7)([x.Z], () => !a().isEmpty(x.Z.getVoiceStatesForChannel(t.id)));
   return (0, r.jsxs)(o.v2r, {
     navId: "thread-context",
     onClose: n,
     "aria-label": C.intl.string(C.t["1NBjqa"]),
     onSelect: i,
     children: [(0, r.jsxs)(o.kSQ, {
-      children: [P, R]
+      children: [T, R]
     }), (0, r.jsxs)(o.kSQ, {
       children: [S, N, I, A && !D ? (0, r.jsx)(o.sNh, {
         id: "open",
@@ -121,7 +121,7 @@ function Z(e) {
         }
       }) : null]
     }), (0, r.jsxs)(o.kSQ, {
-      children: [w, l, j, T]
+      children: [w, l, j, P]
     }), (0, r.jsxs)(o.kSQ, {
       children: [Z, E]
     })]

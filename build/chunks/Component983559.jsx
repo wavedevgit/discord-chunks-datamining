@@ -63,7 +63,7 @@ function L(e) {
     channel: w
   } = e, L = __OVERLAY__, k = (0, g.ZP)(n.id), U = (0, o.ZP)(), G = i.useRef(Date.now()), {
     analyticsLocations: H
-  } = (0, d.ZP)(c.Z.USER_PROFILE_SIDEBAR), F = (0, p.ZB)({
+  } = (0, d.ZP)(c.Z.USER_PROFILE_SIDEBAR), F = (0, h.ZB)({
     layout: "SIDEBAR",
     userId: n.id,
     channelId: w.id
@@ -85,7 +85,7 @@ function L(e) {
   }), Q = (null == k ? true : k.widgets) != null && k.widgets.length > 0;
   return (0, r.jsx)(d.Gt, {
     value: H,
-    children: (0, r.jsx)(p.Mt, {
+    children: (0, r.jsx)(h.Mt, {
       value: F,
       openedAt: G.current,
       fetchStartedAt: null == k ? true : k.fetchStartedAt,
@@ -135,7 +135,7 @@ function L(e) {
                 themeType: R.l.SIDEBAR,
                 disableToolbar: n.bot
               })]
-            }), (0, r.jsx)(T.Z, {
+            }), (0, r.jsx)(P.Z, {
               user: n,
               currentUser: f,
               displayProfile: k,
@@ -152,7 +152,7 @@ function L(e) {
                   })
                 }
               })
-            }), (0, r.jsx)(P.Z, {
+            }), (0, r.jsx)(T.Z, {
               user: n,
               channelId: w.id
             })]
@@ -160,7 +160,7 @@ function L(e) {
             handleOpenProfile: q,
             analyticsLocations: H,
             context: F
-          }), (null == k ? true : k.profileEffect) != null && (0, r.jsx)(h.Z, {
+          }), (null == k ? true : k.profileEffect) != null && (0, r.jsx)(p.Z, {
             skuId: null == k || null == (t = k.profileEffect) ? true : t.skuId,
             isHovering: z,
             urlQueryString: "dmView"

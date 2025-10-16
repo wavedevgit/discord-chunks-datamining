@@ -27,10 +27,10 @@ let _ = (e, t) => f.ZP.getName(e.getGuildId(), e.id, t.user),
       hasConnectPermission: f
     } = e, j = (0, d.J)(n.guild_id), O = i.useCallback(() => {
       j ? (0, c.hk)(n.guild_id, () => s.default.selectVoiceChannel(n.id)) : s.default.selectVoiceChannel(n.id)
-    }, [n.id, n.guild_id, j]), x = t.filter(e => e.type === g.Ui.VOICE), v = 4 === x.length ? 2 : 3, C = (0, l.Wu)([o.Z], () => x.map(e => o.Z.getParticipant(n.id, e.id)).filter(p.lm), [n.id, x]);
+    }, [n.id, n.guild_id, j]), x = t.filter(e => e.type === g.Ui.VOICE), v = 4 === x.length ? 2 : 3, C = (0, l.Wu)([o.Z], () => x.map(e => o.Z.getParticipant(n.id, e.id)).filter(h.lm), [n.id, x]);
     return (0, r.jsxs)("div", {
       className: y.container,
-      children: [(0, r.jsx)(h.Z, {}), (0, r.jsx)("div", {
+      children: [(0, r.jsx)(p.Z, {}), (0, r.jsx)("div", {
         className: y.tiles,
         style: {
           maxWidth: 168 * v

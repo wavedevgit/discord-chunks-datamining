@@ -43,8 +43,8 @@ function c(e, t) {
 }
 let d = [],
   u = {},
-  h = {};
-class p extends(r = Chunk442837.ZP.Store) {
+  p = {};
+class h extends(r = Chunk442837.ZP.Store) {
   getSearchState(e) {
     var t;
     return null != (t = u[e]) ? t : {
@@ -54,16 +54,16 @@ class p extends(r = Chunk442837.ZP.Store) {
   }
   getSearchResults(e, t) {
     var n, r, i;
-    return null != (i = null == (r = h[e]) || null == (n = r[t]) ? true : n.results) ? i : d
+    return null != (i = null == (r = p[e]) || null == (n = r[t]) ? true : n.results) ? i : d
   }
   shouldFetch(e, t) {
     var n, r;
-    let i = null == (r = h[e]) || null == (n = r[t]) ? true : n.lastSearchedAt;
+    let i = null == (r = p[e]) || null == (n = r[t]) ? true : n.lastSearchedAt;
     return null == i || Date.now() - i > 12e4
   }
 }
-s(p, "displayName", "GuildDirectorySearchStore");
-let f = new p(Chunk570140.Z, {
+s(h, "displayName", "GuildDirectorySearchStore");
+let f = new h(Chunk570140.Z, {
   GUILD_DIRECTORY_SEARCH_START: function(e) {
     let {
       channelId: t,
@@ -87,7 +87,7 @@ let f = new p(Chunk570140.Z, {
     r.forEach(e => {
       let t = (0, a.MQ)(e);
       i.push(t)
-    }), h[t] = c(o({}, h[t]), {
+    }), p[t] = c(o({}, p[t]), {
       [n]: {
         results: (0, a.Th)(i),
         lastSearchedAt: Date.now()
@@ -128,10 +128,10 @@ let f = new p(Chunk570140.Z, {
       guildId: r
     } = e, i = null == (t = u[n]) ? true : t.mostRecentQuery;
     if (null == i) return;
-    let l = h[n][i];
+    let l = p[n][i];
     if (null == l) return;
     let a = l.results.filter(e => e.guildId !== r);
-    h[n] = c(o({}, h[n]), {
+    p[n] = c(o({}, p[n]), {
       [u[n].mostRecentQuery]: c(o({}, l), {
         results: a
       })

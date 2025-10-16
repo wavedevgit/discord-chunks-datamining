@@ -111,12 +111,12 @@ function I(e) {
           variant: "heading-lg/normal",
           children: O.intl.string(O.t.djfK39)
         })]
-      }), u ? null : (0, r.jsx)(p.Z, {
+      }), u ? null : (0, r.jsx)(h.Z, {
         channelId: t.id
       }), l ? (0, r.jsx)(f.Z, {
         className: x.eventPrompt,
         channel: t
-      }) : null, d ? (0, r.jsx)(h.Z, {
+      }) : null, d ? (0, r.jsx)(p.Z, {
         className: x.eventPrompt,
         guildId: o
       }) : null, l ? (0, r.jsx)(v, {

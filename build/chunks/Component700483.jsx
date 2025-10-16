@@ -1,7 +1,7 @@
 /** Chunk was on 91053 **/
 /** chunk id: 700483, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => eh
+  Z: () => ep
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -120,9 +120,9 @@ function es(e) {
     onSelect: n
   } = e, d = (0, O.bp)(), {
     canManageGuildEvent: u
-  } = (0, x.XJ)(t), h = (0, l.e7)([z.Z], () => z.Z.getStageInstanceByChannel(t.id), [t.id]), p = (0, l.e7)([y.ZP], () => y.ZP.getGuildScheduledEvent(null == h ? true : h.guild_scheduled_event_id)), {
+  } = (0, x.XJ)(t), p = (0, l.e7)([z.Z], () => z.Z.getStageInstanceByChannel(t.id), [t.id]), h = (0, l.e7)([y.ZP], () => y.ZP.getGuildScheduledEvent(null == p ? true : p.guild_scheduled_event_id)), {
     suppress: m
-  } = (0, S.Z)(t), b = D.default.getId(), [_] = (0, $.Z)(t), j = V.ZP.isModerator(b, t.id), v = (0, F.B)(t.id), C = u(p), {
+  } = (0, S.Z)(t), b = D.default.getId(), [_] = (0, $.Z)(t), j = V.ZP.isModerator(b, t.id), v = (0, F.B)(t.id), C = u(h), {
     parentAnalyticsLocation: I
   } = (0, c.ZP)(), E = i.useRef(null), Z = () => (function(e) {
     let {
@@ -135,13 +135,13 @@ function es(e) {
     channel: t,
     appContext: d
   });
-  return (j || C) && null != h ? (0, r.jsx)(a.yRy, {
+  return (j || C) && null != p ? (0, r.jsx)(a.yRy, {
     targetElementRef: E,
     renderPopout: e => {
       let {
         closePopout: i
       } = e;
-      return (0, r.jsx)(P.Z, {
+      return (0, r.jsx)(T.Z, {
         children: (0, r.jsx)(a.v2r, {
           navId: "exit-options",
           "aria-label": en.intl.string(en.t["3Uj+2t"]),
@@ -254,8 +254,8 @@ let ed = Chunk647438.memo(function(e) {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(P.Z, {
-        children: (0, r.jsx)(h.Z, {
+      return (0, r.jsx)(T.Z, {
+        children: (0, r.jsx)(p.Z, {
           onClose: t,
           minimal: true,
           onInteraction: (0, g.u)("VideoDeviceMenu", n, {
@@ -281,7 +281,7 @@ let ed = Chunk647438.memo(function(e) {
         enabled: O,
         cameraUnavailable: j,
         onChange: E.r,
-        onCameraUnavailable: T.Z,
+        onCameraUnavailable: P.Z,
         channelLimitReached: R,
         channelLimit: N,
         popoutOpen: i,
@@ -299,7 +299,7 @@ let ed = Chunk647438.memo(function(e) {
           let {
             closePopout: t
           } = e;
-          return (0, r.jsx)(P.Z, {
+          return (0, r.jsx)(T.Z, {
             children: (0, r.jsx)(u.default, {
               onClose: t,
               renderInputDevices: true,
@@ -331,7 +331,7 @@ let ed = Chunk647438.memo(function(e) {
             serverMute: f,
             suppress: s,
             popoutOpen: i,
-            onClick: () => (0, p.Z)(f, s, "Stage Channel Controls"),
+            onClick: () => (0, h.Z)(f, s, "Stage Channel Controls"),
             awaitingRemote: _
           })
         }
@@ -378,7 +378,7 @@ function eu(e) {
     })]
   })
 }
-let eh = Chunk647438.memo(function(e) {
+let ep = Chunk647438.memo(function(e) {
   let {
     channel: t,
     isOnStartStageScreen: n

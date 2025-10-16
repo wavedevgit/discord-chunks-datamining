@@ -60,7 +60,7 @@ function Z(e, t) {
   }), e
 }
 
-function T(e) {
+function P(e) {
   let {
     channel: t
   } = e, [n, a] = i.useState(false), s = i.useRef(null);
@@ -78,7 +78,7 @@ function T(e) {
     autoInvert: false,
     onRequestClose: () => a(false),
     renderPopout: function(e) {
-      return (0, r.jsx)(P, Z(E({}, e), {
+      return (0, r.jsx)(T, Z(E({}, e), {
         channel: t
       }))
     },
@@ -98,12 +98,12 @@ function T(e) {
   })
 }
 
-function P(e) {
+function T(e) {
   let {
     channel: t,
     closePopout: n,
     onSelect: i
-  } = e, y = (0, c.Z)(t, "Sidebar Overflow"), _ = (0, u.Z)(t), x = (0, f.Z)(t), v = (0, g.Z)(t), C = (0, a.Z)(t), E = (0, d.Z)(t), Z = (0, p.Z)(t.id), T = (0, h.Z)(t), P = (0, o.Z)(t), N = (0, s.Z)(t), R = (0, b.Z)({
+  } = e, y = (0, c.Z)(t, "Sidebar Overflow"), _ = (0, u.Z)(t), x = (0, f.Z)(t), v = (0, g.Z)(t), C = (0, a.Z)(t), E = (0, d.Z)(t), Z = (0, h.Z)(t.id), P = (0, p.Z)(t), T = (0, o.Z)(t), N = (0, s.Z)(t), R = (0, b.Z)({
     id: t.id,
     label: S.intl.string(S.t.DQ797u)
   }), w = (0, m.Z)(t);
@@ -125,7 +125,7 @@ function P(e) {
     }), (0, r.jsxs)(l.kSQ, {
       children: [x, v]
     }), (0, r.jsxs)(l.kSQ, {
-      children: [T, _, Z]
+      children: [P, _, Z]
     }), (0, r.jsxs)(l.kSQ, {
       children: [(0, r.jsx)(l.sNh, {
         id: "search",
@@ -147,7 +147,7 @@ function P(e) {
         }
       })]
     }), (0, r.jsxs)(l.kSQ, {
-      children: [w, C, E, P]
+      children: [w, C, E, T]
     }), (0, r.jsxs)(l.kSQ, {
       children: [N, R]
     })]
@@ -164,7 +164,7 @@ function N(e) {
       channel: t
     }), t.isModeratorReportChannel() ? (0, r.jsx)(x.Z, {
       channel: t
-    }) : null, (0, r.jsx)(T, {
+    }) : null, (0, r.jsx)(P, {
       channel: t
     }), (0, r.jsx)(_.ZP.Icon, {
       icon: l.Dio,
