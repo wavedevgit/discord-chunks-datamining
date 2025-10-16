@@ -56,10 +56,12 @@ function u(e) {
     u = r.useRef(false);
   u.current = !l;
   let d = r.useMemo(() => {
-    var t, r, i;
-    return null != (i = null != (r = n.attachTo) ? r : null == (t = e.current) ? true : t.ownerDocument) ? i : document
-  }, [n.attachTo, e]);
-  return (0, i.ZP)(e, c(s({}, n), {
+      var t, r, i;
+      return null != (i = null != (r = n.attachTo) ? r : null == (t = e.current) ? true : t.ownerDocument) ? i : document
+    }, [n.attachTo, e]),
+    f = r.useRef(null),
+    _ = n.disable ? f : e;
+  return (0, i.ZP)(_, c(s({}, n), {
     disableReturnRef: u,
     attachTo: d
   }))

@@ -239,8 +239,8 @@ function M(e) {
     }, [K, J, $]),
     eu = i.useCallback(() => {
       var e;
-      "multiple" === U ? Q([]) : Q(null), null == (e = L.current) || e.focus()
-    }, [Q, U]),
+      "multiple" === U ? Q([]) : Q(null), ei(""), null == (e = L.current) || e.focus()
+    }, [Q, U, ei]),
     ed = i.useCallback(e => {
       var t, n, r;
       eo(true), null == y || y(e), null == (t = L.current) || t.setSelectionRange(null != (n = null == er ? true : er.length) ? n : 0, null != (r = null == er ? true : er.length) ? r : 0)

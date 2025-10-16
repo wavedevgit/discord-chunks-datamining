@@ -110,16 +110,16 @@ function S(e) {
       var {
         setPopoutRef: t,
         position: i
-      } = e, c = y(e, ["setPopoutRef", "position"]);
+      } = e, a = y(e, ["setPopoutRef", "position"]);
       return null != i && i !== L.current && (L.current = i, D(i), null == C || C(i)), U((e, i) => {
         if (!i) return null;
-        let u = (0, r.jsx)(l.VqE, b(g({}, c), {
+        let c = (0, r.jsx)(l.VqE, b(g({}, a), {
           setDialogRef: t,
           modal: false,
           className: o()(null != A ? h.popoverContentWithGradient : h.popover, {
             [h["popover--video"]]: S
           }),
-          returnRef: a,
+          returnRef: true,
           children: n
         }));
         return (0, r.jsx)(s.animated.div, {
@@ -129,8 +129,8 @@ function S(e) {
             offsetBottom: .4,
             color: A,
             className: h.popoverGradientWrapper,
-            children: u
-          }) : u
+            children: c
+          }) : c
         })
       })
     };
@@ -148,6 +148,7 @@ function S(e) {
     autoInvert: true,
     nudgeAlignIntoViewport: "top" === w || "bottom" === w,
     closeOnClickOutside: false,
+    ignoreModalClicks: true,
     scrollBehavior: N,
     renderPopout: G,
     children: T
