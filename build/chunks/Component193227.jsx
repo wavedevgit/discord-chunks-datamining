@@ -29,7 +29,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk215023 = require("./215023.js"),
   Chunk887353 = require("./887353.js");
 
-function j(e) {
+function k(e) {
   let {
     products: t,
     header: n,
@@ -39,21 +39,21 @@ function j(e) {
   }).showCardsV2, f = (0, d.sp)();
   return null == i || 0 === t.length ? null : (0, r.jsxs)("div", {
     children: [null != n ? (0, r.jsx)(c.Text, {
-      className: k.itemTypeTitle,
+      className: j.itemTypeTitle,
       color: "header-secondary",
       variant: "text-sm/bold",
       children: n
     }) : (0, r.jsx)(c.LZC, {
       size: 24
     }), (0, r.jsx)("div", {
-      className: k.cardsContainer,
+      className: j.cardsContainer,
       children: o.map((e, t) => (0, r.jsx)(d.k0, {
         newValue: {
           tilePosition: t
         },
-        children: s ? (0, r.jsx)(v.Z, {
+        children: s ? (0, r.jsx)(E.Z, {
           skuId: e.skuId,
-          onClickAnalytics: (0, E.wO)(e, y.AW.CATALOG, f)
+          onClickAnalytics: (0, v.wO)(e, y.AW.CATALOG, f)
         }, e.skuId) : (0, r.jsx)(b.Z, {
           category: l,
           product: e,
@@ -69,7 +69,7 @@ function T(e) {
   let {
     category: t
   } = e, n = (0, C.l)(t.products), l = (0, p.a)()(n);
-  return (0, r.jsx)(j, {
+  return (0, r.jsx)(k, {
     products: l,
     category: t
   })
@@ -82,7 +82,7 @@ function L(e) {
     i(e)
   }, .15);
   return (0, r.jsxs)("div", {
-    className: k.categoryWrapper,
+    className: j.categoryWrapper,
     ref: o,
     children: [(0, r.jsx)(_.Z, {
       category: t
@@ -107,7 +107,7 @@ function I(e) {
       products: t
     } = e;
     return t.length > 0
-  }), [n]), v = l.useMemo(() => {
+  }), [n]), E = l.useMemo(() => {
     let e = (s - 1) * y.kN;
     return b.slice(e, e + y.kN)
   }, [b, s]);
@@ -120,20 +120,20 @@ function I(e) {
       cacheDisabled: C
     })
   }, []), l.useEffect(() => {
-    g || 0 === v.length || (0, h.n)({
+    g || 0 === E.length || (0, h.n)({
       sessionId: p,
       checkpoint: h.a.SHOP_RENDERED,
       tab: y.AW.CATALOG,
       unpublishedCategoriesShown: _,
       cacheDisabled: C
     })
-  }, [p, _, C, g, v.length]);
-  let E = (0, f.FF)("CollectiblesBrowse");
+  }, [p, _, C, g, E.length]);
+  let v = (0, f.FF)("CollectiblesBrowse");
   return g ? (0, r.jsx)(m.Z, {}) : (0, r.jsxs)("div", {
-    className: o()(k.categories, {
-      [k.categoriesNoFilter]: !E
+    className: o()(j.categories, {
+      [j.categoriesNoFilter]: !v
     }),
-    children: [v.map((e, t) => (0, r.jsx)("div", {
+    children: [E.map((e, t) => (0, r.jsx)("div", {
       ref: t => i(e.skuId, t),
       children: (0, r.jsx)(d.k0, {
         newValue: {
@@ -144,7 +144,7 @@ function I(e) {
         })
       })
     }, e.skuId)), (0, r.jsx)("div", {
-      className: k.paginationContainer,
+      className: j.paginationContainer,
       children: (0, r.jsx)(c.DsT, {
         currentPage: s,
         totalCount: b.length,

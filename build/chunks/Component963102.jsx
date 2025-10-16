@@ -144,7 +144,7 @@ function A(e) {
   let {
     selectedTab: t,
     handleTransition: n
-  } = e, i = (0, u.ZP)(), d = (0, a.e7)([v.default], () => v.default.getCurrentUser()), {
+  } = e, i = (0, u.ZP)(), d = (0, a.e7)([E.default], () => E.default.getCurrentUser()), {
     enabled: g
   } = (0, m.WX)({
     location: "collectibles_shop_header_bar"
@@ -161,12 +161,12 @@ function A(e) {
     tab: y.AW.ORBS,
     displayText: T.intl.string(T.t.EBYkzs)
   });
-  let N = t === y.AW.ORBS ? k.ZY5.SHOP_ORBS_TAB : k.ZY5.COLLECTIBLES_SHOP,
+  let N = t === y.AW.ORBS ? j.ZY5.SHOP_ORBS_TAB : j.ZY5.COLLECTIBLES_SHOP,
     P = l.useCallback(() => {
       (0, _.Y)({
         pageType: N,
-        sectionType: k.jXE.ORBS_BALANCE_MENU,
-        ctaObject: k.qAy.CTA_TO_QUEST_HOME
+        sectionType: j.jXE.ORBS_BALANCE_MENU,
+        ctaObject: j.qAy.CTA_TO_QUEST_HOME
       }), (0, p.navigateToQuestHome)({
         fromContent: s.j.ORBS_BALANCE_MENU
       })
@@ -175,7 +175,7 @@ function A(e) {
     Z = l.useCallback(() => {
       (null == d ? true : d.id) != null && (0, h.openUserProfileModal)({
         userId: d.id,
-        section: j.oh.WISHLIST,
+        section: k.oh.WISHLIST,
         showGuildProfile: false
       })
     }, [null == d ? true : d.id]);
@@ -189,7 +189,7 @@ function A(e) {
         className: L.shopHomeLink,
         onClick: () => n(y.AW.HOME),
         "aria-label": T.intl.string(T.t.pWG4zc) + " home",
-        children: [(0, r.jsx)(E.Z, {
+        children: [(0, r.jsx)(v.Z, {
           className: L.discordLogo
         }), (0, r.jsx)(f.Z.Title, {
           children: T.intl.string(T.t.pWG4zc)

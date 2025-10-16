@@ -3,9 +3,10 @@
 "use strict";
 require.d(exports, {
   T4: () => a,
+  cf: () => s,
   vH: () => i,
   yB: () => o
-});
+}), require("./388685.js");
 var Chunk981631 = require("./981631.js");
 let i = e => {
     var t, n, i, a;
@@ -31,5 +32,16 @@ let i = e => {
       product: e,
       isPremiumUser: false
     });
-    return 1 === t.length && t[0].currency === r.pKx.DISCORD_ORB
-  }
+    return t.length > 0 && true === t.find(e => e.currency !== r.pKx.DISCORD_ORB)
+  },
+  s = e => e.filter(e => {
+    let t = i({
+        product: e,
+        isPremiumUser: false
+      }),
+      n = false,
+      a = false;
+    for (let e of t)
+      if (e.currency === r.pKx.DISCORD_ORB ? n = true : a = true, n && a) break;
+    return n && a
+  })

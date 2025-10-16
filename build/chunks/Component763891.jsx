@@ -55,7 +55,7 @@ function R(e) {
       case x.AW.NAMEPLATES:
         return [y.intl.string(y.t.V68Fq6), G ? A.Z : B.Z, i.Z.NAMEPLATE];
       case x.AW.BUNDLES:
-        return [y.intl.string(y.t.FYFppq), G ? T.Z : j.Z, i.Z.BUNDLE]
+        return [y.intl.string(y.t.FYFppq), G ? T.Z : k.Z, i.Z.BUNDLE]
     }
   }, [Z, G]), Q = (0, C.a)(), J = l.useMemo(() => Q(W.filter(e => {
     var t;
@@ -86,22 +86,22 @@ function R(e) {
       style: {
         backgroundImage: "url(".concat(Y, ")")
       },
-      className: k.bannerContainer,
+      className: j.bannerContainer,
       children: (0, r.jsx)(a.Heading, {
         variant: "heading-xxl/extrabold",
         children: K
       })
     }), (0, r.jsx)("div", {
-      className: k.products,
+      className: j.products,
       children: X.slice(40 * (U - 1), 40 * U).map((e, t) => {
         let n = f.Z.getCategory(e.categorySkuId);
         return null == n ? null : (0, r.jsx)(g.k0, {
           newValue: {
             tilePosition: t
           },
-          children: $ ? (0, r.jsx)(v.Z, {
+          children: $ ? (0, r.jsx)(E.Z, {
             skuId: e.skuId,
-            onClickAnalytics: (0, E.wO)(e, Z, w)
+            onClickAnalytics: (0, v.wO)(e, Z, w)
           }, e.skuId) : (0, r.jsx)(b.Z, {
             product: e,
             user: F,
@@ -111,7 +111,7 @@ function R(e) {
         }, e.skuId)
       })
     }), X.length > 40 && (0, r.jsx)("div", {
-      className: k.paginationContainer,
+      className: j.paginationContainer,
       children: (0, r.jsx)("div", {
         children: (0, r.jsx)(a.DsT, {
           currentPage: U,

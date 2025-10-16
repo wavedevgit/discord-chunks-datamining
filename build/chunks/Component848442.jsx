@@ -138,7 +138,7 @@ function w(e) {
       null != t && (0, u.jW)(e, async () => {
         let {
           default: e
-        } = await n.e("66050").then(n.bind(n, 376573));
+        } = await n.e("66050").then(n.bind(n, 64220));
         return n => (0, r.jsx)(e, N(P({}, n), {
           guild: t
         }))

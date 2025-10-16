@@ -2,7 +2,7 @@
 /** chunk id: 98535, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => E
+  Z: () => v
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,9 +21,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk566564 = require("./566564.jsx"),
   Chunk795477 = require("./795477.jsx"),
   Chunk215023 = require("./215023.js");
-let v = [Chunk215023.AW.HOME, Chunk215023.AW.ORBS];
+let E = [Chunk215023.AW.HOME, Chunk215023.AW.ORBS];
 
-function E(e) {
+function v(e) {
   let {
     tab: t,
     sortedCategories: n,
@@ -33,15 +33,15 @@ function E(e) {
     refreshCategories: u
   } = e, h = O();
   x(h);
-  let E = (0, i.e7)([o.Z], () => o.Z.useReducedMotion),
+  let v = (0, i.e7)([o.Z], () => o.Z.useReducedMotion),
     [S, y] = l.useState(true),
-    [k, j] = l.useState(true),
+    [j, k] = l.useState(true),
     T = l.useCallback(async (e, t, n, r) => {
       c(e, t);
-      let l = n && !E,
+      let l = n && !v,
         i = (0, d.$2)(t) ? b.AW.ORBS : b.AW.CATALOG;
-      y(t), j(!r), await s(i, l)
-    }, [E, s, c]),
+      y(t), k(!r), await s(i, l)
+    }, [v, s, c]),
     L = (0, g.FF)("CollectiblesContent"),
     {
       searchError: I
@@ -50,7 +50,7 @@ function E(e) {
     onRetry: u,
     errorMessage: h,
     errorOrigin: C.i.SHOP_PAGE
-  }) : v.includes(t) ? (0, r.jsx)(_.Z, {
+  }) : E.includes(t) ? (0, r.jsx)(_.Z, {
     handleTransition: T,
     tab: t,
     transitionState: a
@@ -58,9 +58,9 @@ function E(e) {
     tab: t,
     sortedCategories: n,
     initialCategoryId: S,
-    showFilterInitially: k,
+    showFilterInitially: j,
     onUnmount: () => {
-      y(true), j(true)
+      y(true), k(true)
     }
   })
 }

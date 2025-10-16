@@ -45,7 +45,7 @@ function y(e) {
       setCategoryRef: m,
       handleScrollToCategory: b
     } = (0, C.xV)(p.current),
-    [v, E] = l.useState(f && c),
+    [E, v] = l.useState(f && c),
     [O, x] = l.useState(false);
   return l.useEffect(() => {
     null != i && b(i)
@@ -57,8 +57,8 @@ function y(e) {
     };
     return e(), window.addEventListener("resize", e), () => window.removeEventListener("resize", e)
   }, []), l.useEffect(() => {
-    f || E(false)
-  }, [f, E]), (0, r.jsx)("div", {
+    f || v(false)
+  }, [f, v]), (0, r.jsx)("div", {
     className: o()(S.pageWrapper, {
       [S.pageWrapperFilter]: f
     }),
@@ -70,25 +70,25 @@ function y(e) {
         className: S.shopScroll,
         ref: p,
         onScroll: h,
-        children: (0, r.jsx)(k, {
+        children: (0, r.jsx)(j, {
           isSmallScreen: O,
-          filterBarOpen: v,
-          setFilterBarOpen: E,
+          filterBarOpen: E,
+          setFilterBarOpen: v,
           tab: t,
           scrollerRef: p,
           sortedCategories: n,
           setCategoryRef: m
         })
-      }), v && !O && (0, r.jsx)("div", {
+      }), E && !O && (0, r.jsx)("div", {
         className: S.divider
-      }), v && !O && (0, r.jsx)(s.Ttm, {
+      }), E && !O && (0, r.jsx)(s.Ttm, {
         className: S.filterBar,
         children: (0, r.jsx)(_.Z, {})
       })]
     })
   })
 }
-let k = e => {
+let j = e => {
   let {
     isSmallScreen: t,
     filterBarOpen: n,
@@ -96,8 +96,8 @@ let k = e => {
     tab: a,
     scrollerRef: C,
     sortedCategories: y,
-    setCategoryRef: k
-  } = e, j = (0, d.FF)("CollectiblesBrowse"), T = l.useRef(null), L = (0, g.S)(e => e.hasDefaultFilters()), I = (0, u.sp)(), {
+    setCategoryRef: j
+  } = e, k = (0, d.FF)("CollectiblesBrowse"), T = l.useRef(null), L = (0, g.S)(e => e.hasDefaultFilters()), I = (0, u.sp)(), {
     handlePageChange: B,
     currentPage: A
   } = (0, m.h)({
@@ -133,9 +133,9 @@ let k = e => {
     className: S.inventoryWrapper,
     children: (0, r.jsxs)("div", {
       className: o()(S.inventory, {
-        [S.inventoryFilter]: j
+        [S.inventoryFilter]: k
       }),
-      children: [j && (0, r.jsxs)("div", {
+      children: [k && (0, r.jsxs)("div", {
         className: S.controls,
         children: [(0, r.jsx)("div", {
           className: S.controlsLeftSide,
@@ -179,10 +179,10 @@ let k = e => {
             children: (0, r.jsx)(_.Z, {})
           })
         })]
-      }), j && !L ? (0, r.jsx)(b.Z, {
+      }), k && !L ? (0, r.jsx)(b.Z, {
         scrollerRef: C,
         tab: a
-      }, a) : (0, E.RE)(a) ? (0, r.jsx)(v.Z, {
+      }, a) : (0, v.RE)(a) ? (0, r.jsx)(E.Z, {
         scrollerRef: C,
         tab: a
       }, a) : (0, r.jsx)(u.k0, {
@@ -191,7 +191,7 @@ let k = e => {
         },
         children: (0, r.jsx)(p.Z, {
           sortedCategories: y,
-          setCategoryRef: k,
+          setCategoryRef: j,
           currentPage: A,
           handlePageChange: N
         })

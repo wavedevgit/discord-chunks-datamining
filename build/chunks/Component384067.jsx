@@ -24,7 +24,7 @@ let _ = e => {
     wideBannerBlock: _,
     handleTransition: m,
     tab: b
-  } = e, v = null == (t = u.Z.getCategoryByStoreListingId(_.categoryStoreListingId)) ? true : t.skuId, E = l.useRef(null), O = l.useRef(null), [x, S] = l.useState();
+  } = e, E = null == (t = u.Z.getCategoryByStoreListingId(_.categoryStoreListingId)) ? true : t.skuId, v = l.useRef(null), O = l.useRef(null), [x, S] = l.useState();
   l.useEffect(() => {
     let e = O.current;
     if (null == e) return;
@@ -35,21 +35,21 @@ let _ = e => {
       e.onload = null
     }
   }, []);
-  let y = null != v ? v : "",
+  let y = null != E ? E : "",
     {
-      handleCardVisibilityChange: k
+      handleCardVisibilityChange: j
     } = (0, d.E)(y, "home", "marketing wide banner"),
     {
-      bannerURL: j
+      bannerURL: k
     } = (0, g.UI)(_);
-  if (null == j) return null;
+  if (null == k) return null;
   let T = b === f.AW.ORBS;
   return (0, r.jsx)(s.$, {
-    innerRef: E,
-    onChange: k,
+    innerRef: v,
+    onChange: j,
     threshold: 0,
     children: (0, r.jsxs)("div", {
-      ref: E,
+      ref: v,
       className: o()(h.row, h.between, h.bannerBlockContainer, h.centeredSection, {
         [h.extraRounded]: T
       }),
@@ -59,7 +59,7 @@ let _ = e => {
         }),
         children: (0, r.jsx)("img", {
           ref: O,
-          src: j,
+          src: k,
           alt: _.title,
           className: o()(h.wideBannerArt, {
             [h.wideBannerArtOrbs]: T

@@ -45,7 +45,7 @@ let N = e => {
     tab: Z,
     buttonContainerClassName: w,
     orbsSupportedOnly: H
-  } = e, D = (0, s.e7)([d.default], () => d.default.getCurrentUser()), M = C.ZP.canUseCollectibles(D), F = (0, j.G)("FeedBlock"), {
+  } = e, D = (0, s.e7)([d.default], () => d.default.getCurrentUser()), M = C.ZP.canUseCollectibles(D), F = (0, k.G)("FeedBlock"), {
     sortType: W,
     setSortType: U,
     sortedItems: V,
@@ -57,7 +57,7 @@ let N = e => {
     isPremiumUser: M,
     prioritizeUserDiscounts: R,
     orbsSupportedOnly: H
-  }), Y = (0, k.St)(V), q = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), Q = (0, s.e7)([g.Z], () => g.Z.isFocused()), J = !q && Q, {
+  }), Y = (0, j.St)(V), q = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), Q = (0, s.e7)([g.Z], () => g.Z.isFocused()), J = !q && Q, {
     animationPhase: X,
     startAnimation: $
   } = (0, S.y)(), ee = (0, h.sp)(), et = null != (t = null == ee ? true : ee.sessionId) ? t : "", en = l.useRef(null), er = l.useCallback(e => {
@@ -188,12 +188,12 @@ let N = e => {
           },
           children: el && (null == e ? true : e.skuId) != null ? (0, r.jsx)("div", {
             className: n,
-            children: (0, r.jsx)(E.Z, {
+            children: (0, r.jsx)(v.Z, {
               skuId: null == e ? true : e.skuId,
               prioritizedCurrency: Z === T.AW.ORBS ? O.tA.ORBS : true,
               onClickAnalytics: (0, O.wO)(e, Z, ee)
             })
-          }) : (0, r.jsx)(v.Z, {
+          }) : (0, r.jsx)(E.Z, {
             product: e,
             category: l,
             user: D,

@@ -41,7 +41,7 @@ let I = e => {
     } = e, {
       noCache: u,
       includeUnpublished: h
-    } = (0, _.Z)(), [S, j] = l.useState(false), I = (0, d.sp)(), B = null != (t = null == I ? true : I.sessionId) ? t : "";
+    } = (0, _.Z)(), [S, k] = l.useState(false), I = (0, d.sp)(), B = null != (t = null == I ? true : I.sessionId) ? t : "";
     l.useEffect(() => {
       (0, p.n)({
         sessionId: B,
@@ -81,7 +81,7 @@ let I = e => {
       errorMessage: N.message
     }) : A || 0 === P.length ? (0, r.jsxs)("div", {
       className: o()(L.loadingContainer, L.feedContent),
-      children: [(0, r.jsx)(E.Z, {
+      children: [(0, r.jsx)(v.Z, {
         isLoading: A,
         handleTransition: n,
         tab: c
@@ -89,9 +89,9 @@ let I = e => {
         isLoading: A,
         handleTransition: n,
         categories: []
-      }), (0, r.jsx)(v.Z, {
+      }), (0, r.jsx)(E.Z, {
         isLoading: A,
-        title: c === k.AW.ORBS ? T.intl.string(T.t.dFgeub) : T.intl.string(T.t.NSv5KS),
+        title: c === j.AW.ORBS ? T.intl.string(T.t.dFgeub) : T.intl.string(T.t.NSv5KS),
         numVisibleItems: i,
         tab: c
       })]
@@ -102,7 +102,7 @@ let I = e => {
           d = false;
         switch (e.type) {
           case s.z.HERO:
-            u = (0, r.jsx)(E.Z, {
+            u = (0, r.jsx)(v.Z, {
               isLoading: A,
               handleTransition: n,
               heroBlock: e,
@@ -118,15 +118,15 @@ let I = e => {
             break;
           case s.z.FEED:
             let f = e.sortedSkuIds;
-            u = (0, r.jsx)(v.Z, {
-              title: c === k.AW.ORBS ? T.intl.string(T.t.dFgeub) : T.intl.string(T.t.NSv5KS),
+            u = (0, r.jsx)(E.Z, {
+              title: c === j.AW.ORBS ? T.intl.string(T.t.dFgeub) : T.intl.string(T.t.NSv5KS),
               isLoading: A || a,
               numVisibleItems: i,
               sortedSkuIds: f,
               buttonContainerClassName: (null == t ? true : t.type) === s.z.IMMERSIVE_BANNER ? L.feedblockInteractiveBackground : true,
-              prioritizeUserDiscounts: c === k.AW.HOME,
+              prioritizeUserDiscounts: c === j.AW.HOME,
               tab: c,
-              orbsSupportedOnly: c === k.AW.ORBS
+              orbsSupportedOnly: c === j.AW.ORBS
             }, l);
             break;
           case s.z.WIDE_BANNER:
@@ -152,7 +152,7 @@ let I = e => {
           case s.z.IMMERSIVE_BANNER:
             u = (0, r.jsx)(O.Z, {
               immersiveBannerBlock: e,
-              onVisibilityChange: e => j(!e)
+              onVisibilityChange: e => k(!e)
             }, l);
             break;
           default:
@@ -177,13 +177,13 @@ let I = e => {
       transitionState: i
     } = e, o = l.useRef(null), {
       handleScroll: s
-    } = (0, c.z)(o, n), g = (0, h.R)(), f = (0, d.sp)(), [p, C] = l.useState(k.IV), [_, m] = l.useState(false);
+    } = (0, c.z)(o, n), g = (0, h.R)(), f = (0, d.sp)(), [p, C] = l.useState(j.IV), [_, m] = l.useState(false);
     return l.useEffect(() => {
       if (null != o.current) {
         let e = () => {
             if (null == o.current) return;
             let e = o.current.getDistanceFromBottom();
-            p >= 36 ? m(e < 20) : e <= 200 && C(e => e + k.IV)
+            p >= 36 ? m(e < 20) : e <= 200 && C(e => e + j.IV)
           },
           t = o.current.getScrollerNode();
         return null == t || t.addEventListener("scroll", e), () => {
@@ -203,7 +203,7 @@ let I = e => {
             numVisibleItems: p,
             isFetchingCategories: g,
             tab: n
-          }), n !== k.AW.CATALOG && p >= 36 && (0, r.jsxs)("div", {
+          }), n !== j.AW.CATALOG && p >= 36 && (0, r.jsxs)("div", {
             className: L.endOfFeed,
             children: [(0, r.jsx)(a.Heading, {
               variant: "heading-md/semibold",
@@ -212,10 +212,10 @@ let I = e => {
               variant: "primary",
               text: T.intl.string(T.t.AfrvRE),
               onClick: () => {
-                t("shop all button", true, true, false), u.default.track(j.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+                t("shop all button", true, true, false), u.default.track(k.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                   collectibles_shop_session_id: null == f ? true : f.sessionId,
                   page_type: n,
-                  page_category: n === k.AW.HOME || null == f ? true : f.pageCategory,
+                  page_category: n === j.AW.HOME || null == f ? true : f.pageCategory,
                   cta_name: "browse the shop button"
                 })
               },
@@ -224,13 +224,13 @@ let I = e => {
           })]
         }), (0, r.jsx)(S.Z, {
           peaking: _,
-          transitioning: i === k.f7.OUT
+          transitioning: i === j.f7.OUT
         }), (0, r.jsx)(S.Z, {
           style: {
             left: 1850
           },
           peaking: _,
-          transitioning: i === k.f7.OUT
+          transitioning: i === j.f7.OUT
         })]
       })
     })

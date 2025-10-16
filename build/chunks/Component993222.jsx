@@ -28,11 +28,11 @@ let _ = e => {
     } = e, {
       isPurchased: m,
       isPartiallyOwnedBundle: b
-    } = (0, d.L)(t), v = (0, o.e7)([a.default], () => a.default.getCurrentUser()), E = c.ZP.canUseCollectibles(v), O = (0, f.Iw)(t), {
+    } = (0, d.L)(t), E = (0, o.e7)([a.default], () => a.default.getCurrentUser()), v = c.ZP.canUseCollectibles(E), O = (0, f.Iw)(t), {
       isOrbExclusive: x
     } = (0, p.Ip)({
       product: t,
-      isPremiumUser: E,
+      isPremiumUser: v,
       prioritizedCurrency: _,
       hasDiscountOffer: null != O
     });

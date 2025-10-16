@@ -2,7 +2,7 @@
 /** chunk id: 719075, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => v
+  Z: () => E
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -25,27 +25,27 @@ let b = e => {
       product: t,
       prioritizedCurrency: n
     } = e, f = (0, i.e7)([s.default], () => s.default.getCurrentUser()), b = a.ZP.canUseCollectibles(f), {
-      isDisabled: v
+      isDisabled: E
     } = (0, u.G)(t.skuId), {
-      isPurchased: E,
+      isPurchased: v,
       isPartiallyOwnedBundle: O
-    } = (0, d.L)(t), x = (0, c.G1)(t), S = (0, c.rN)(t), y = l.useMemo(() => (0, c.BH)(t, b), [t, b]), k = (0, p.Iw)(t), {
-      displayPrices: j,
+    } = (0, d.L)(t), x = (0, c.G1)(t), S = (0, c.rN)(t), y = l.useMemo(() => (0, c.BH)(t, b), [t, b]), j = (0, p.Iw)(t), {
+      displayPrices: k,
       hasSufficientOrbs: T
     } = (0, C.Ip)({
       product: t,
       isPremiumUser: b,
       prioritizedCurrency: n,
-      hasDiscountOffer: null != k
+      hasDiscountOffer: null != j
     }), L = x && !b;
-    return v ? (0, r.jsx)(o.Text, {
+    return E ? (0, r.jsx)(o.Text, {
       variant: "text-md/semibold",
       color: "header-muted",
       children: _.intl.string(_.t.wu4gyc)
     }) : O ? (0, r.jsx)(o.Text, {
       variant: "text-md/semibold",
       children: _.intl.string(_.t.BEjTio)
-    }) : E && !L ? (0, r.jsx)(o.Text, {
+    }) : v && !L ? (0, r.jsx)(o.Text, {
       variant: "text-md/semibold",
       children: _.intl.string(_.t["6cfuDg"])
     }) : S ? (0, r.jsx)(o.Text, {
@@ -54,16 +54,16 @@ let b = e => {
     }) : x ? (0, r.jsx)(o.Text, {
       variant: "text-md/semibold",
       children: _.intl.string(_.t.rt69oq)
-    }) : 0 === j.length ? null : (0, r.jsx)(g.F, {
-      price: j[0],
+    }) : 0 === k.length ? null : (0, r.jsx)(g.F, {
+      price: k[0],
       discount: y,
       nitroIconType: b ? "default" : true,
       nitroIconSize: "sm",
-      discountOfferAmount: k,
-      className: j[0].currency !== h.pK.DISCORD_ORB || T ? true : m.insufficientOrbs
+      discountOfferAmount: j,
+      className: k[0].currency !== h.pK.DISCORD_ORB || T ? true : m.insufficientOrbs
     })
   },
-  v = e => {
+  E = e => {
     let {
       skuId: t,
       prioritizedCurrency: n

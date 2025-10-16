@@ -25,7 +25,7 @@ let b = () => {
     sort: e,
     onSetSort: t,
     hasRelevanceFilters: n
-  } = (0, Chunk501431.S)(), i = (0, Chunk381585.sp)(), b = (0, Chunk642909.G)("CollectiblesSortSelect"), v = require(), E = Chunk647438.useMemo(() => Chunk215023.aP.filter(e => e.sortType !== a.E.RELEVANCE || v), [v]), O = Chunk647438.useCallback(e => {
+  } = (0, Chunk501431.S)(), i = (0, Chunk381585.sp)(), b = (0, Chunk642909.G)("CollectiblesSortSelect"), E = require(), v = Chunk647438.useMemo(() => Chunk215023.aP.filter(e => e.sortType !== a.E.RELEVANCE || E), [E]), O = Chunk647438.useCallback(e => {
     let {
       sortType: t,
       sortDirection: n
@@ -84,7 +84,7 @@ let b = () => {
       [Chunk345213.shopTakeOver]: b
     }),
     children: (0, Chunk951288.jsx)(Chunk481060.PhF, {
-      options: E.map(O),
+      options: v.map(O),
       select: S,
       isSelected: e => e === y.value,
       serialize: e => e,

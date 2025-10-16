@@ -59,7 +59,7 @@ let M = e => {
     let {
       tab: t = R.AW.HOME
     } = e;
-    (0, C.z)(p.f), (0, k.f)();
+    (0, C.z)(p.f), (0, j.f)();
     let n = (0, g.Z)((0, s.Z)()),
       i = (0, a.e7)([b.default], () => b.default.getCurrentUser()),
       {
@@ -92,9 +92,9 @@ let M = e => {
       }),
       Y = (0, y.O)(G),
       [q, Q] = l.useState(),
-      J = (0, a.e7)([E.Z], () => {
+      J = (0, a.e7)([v.Z], () => {
         var e;
-        return null == (e = E.Z.getCategory(q)) ? true : e.name
+        return null == (e = v.Z.getCategory(q)) ? true : e.name
       }),
       [X, $] = l.useState();
     (0, I.Kp)();
@@ -105,7 +105,7 @@ let M = e => {
         selectedTab: et,
         transitionState: en,
         transitionToTab: er
-      } = (0, j.B)(z);
+      } = (0, k.B)(z);
     (0, x.q3)(n, et, J, en, X), (0, x.EB)(et, i);
     let {
       dismissShopButtonDC: el
@@ -126,7 +126,7 @@ let M = e => {
     } = (0, x.MV)(et);
     return (0, r.jsx)(f.Gt, {
       value: es,
-      children: (0, r.jsx)(v.k0, {
+      children: (0, r.jsx)(E.k0, {
         newValue: {
           sessionId: n,
           pageCategory: J,

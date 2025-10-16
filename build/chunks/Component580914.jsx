@@ -74,7 +74,7 @@ let W = (0, Chunk884697.IC)(90),
         rankedSkuIds: null != (e = V.heroRanking) ? e : [],
         name: V.name,
         unpublishedAt: V.unpublishedAt,
-        logoUrl: (0, v.uV)(null != (t = V.heroLogo) ? t : V.logo, {
+        logoUrl: (0, E.uV)(null != (t = V.heroLogo) ? t : V.logo, {
           size: W
         }),
         categorySkuId: V.skuId,
@@ -115,7 +115,7 @@ let W = (0, Chunk884697.IC)(90),
         }, [i, o, e]),
         totalCards: e ? t : true
       }
-    })(G !== H.AW.ORBS), e_ = (0, y.a)()(ef), em = (0, k.l)(e_).slice(0, eh), eb = (0, P.St)(em), ev = G === H.AW.ORBS ? M.intl.string(M.t["1CdL8f"]) : Q ? M.intl.string(M.t.guWAg4) : et ? M.intl.string(M.t["/QvRam"]) : M.intl.string(M.t.xYKa1d), eE = (0, O.FF)("CollectiblesContent"), eO = (0, v.$2)(en.categorySkuId), ex = E.Z.useConfig({
+    })(G !== H.AW.ORBS), e_ = (0, y.a)()(ef), em = (0, j.l)(e_).slice(0, eh), eb = (0, P.St)(em), eE = G === H.AW.ORBS ? M.intl.string(M.t["1CdL8f"]) : Q ? M.intl.string(M.t.guWAg4) : et ? M.intl.string(M.t["/QvRam"]) : M.intl.string(M.t.xYKa1d), ev = (0, O.FF)("CollectiblesContent"), eO = (0, E.$2)(en.categorySkuId), ex = v.Z.useConfig({
       location: "HeroBlock"
     }).showCardsV2, eS = () => {
       G === H.AW.ORBS ? ((0, C.Y)({
@@ -124,7 +124,7 @@ let W = (0, Chunk884697.IC)(90),
         ctaObject: D.qAy.CTA_TO_QUEST_HOME
       }), (0, p.navigateToQuestHome)({
         fromContent: a.j.ORBS_SHOP_HERO_CTA
-      })) : (i("shop latest category hero", !eE || eO ? en.categorySkuId : true, true, true), _.default.track(D.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+      })) : (i("shop latest category hero", !ev || eO ? en.categorySkuId : true, true, true), _.default.track(D.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
         collectibles_shop_session_id: null == $ ? true : $.sessionId,
         sku_id: en.categorySkuId,
         page_type: G,
@@ -161,7 +161,7 @@ let W = (0, Chunk884697.IC)(90),
           children: !n && (0, r.jsx)(d.Button, {
             variant: "overlay-primary",
             onClick: eS,
-            text: ev
+            text: eE
           })
         }) : (0, r.jsxs)("div", {
           className: o()(ee ? F.heroHeaderContainerStacked : F.heroHeaderContainer, {
@@ -203,7 +203,7 @@ let W = (0, Chunk884697.IC)(90),
             children: (0, r.jsx)(d.Button, {
               variant: "overlay-primary",
               onClick: eS,
-              text: ev
+              text: eE
             })
           })]
         }), (0, r.jsx)("div", {
@@ -213,7 +213,7 @@ let W = (0, Chunk884697.IC)(90),
           }),
           ref: eC,
           children: n || ep ? (0, r.jsx)(r.Fragment, {
-            children: [...Array(null != eh ? eh : 4)].map((e, t) => ex ? (0, r.jsx)(B.Z, {}, t) : (0, r.jsx)(j.K, {}, t))
+            children: [...Array(null != eh ? eh : 4)].map((e, t) => ex ? (0, r.jsx)(B.Z, {}, t) : (0, r.jsx)(k.K, {}, t))
           }) : (0, r.jsx)(r.Fragment, {
             children: eb.map((e, t) => {
               let n = b.Z.getCategoryForProduct(e.skuId);
