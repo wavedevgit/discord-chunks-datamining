@@ -1,12 +1,10 @@
 /** Chunk was on 62934 **/
 /** chunk id: 546303, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => h
 });
 var r, a, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -20,7 +18,7 @@ var r, a, Chunk951288 = require("./951288.js"),
   Chunk948208 = require("./948208.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk62525 = require("./62525.js");
-let y = (r = function(e) {
+let p = (r = function(e) {
   for (var n = 1; n < arguments.length; n++) {
     var t = null != arguments[n] ? arguments[n] : {},
       r = Object.keys(t);
@@ -50,14 +48,14 @@ let y = (r = function(e) {
   Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(a, e))
 }), r);
 
-function C(e) {
+function h(e) {
   let {
     guildId: n
   } = e;
   l.useEffect(() => {
-    (0, g.ce)(n)
+    (0, u.ce)(n)
   }, [n]);
-  let t = (0, d.e7)([f.Z], () => f.Z.getStateForGuild(n)),
+  let t = (0, o.e7)([m.Z], () => m.Z.getStateForGuild(n)),
     {
       catalog: r,
       instances: a
@@ -68,39 +66,37 @@ function C(e) {
         instances: Object.values(null != (n = null == t ? true : t.instances) ? n : {})
       }
     }, [null == t ? true : t.catalog, null == t ? true : t.instances]),
-    s = a.length >= v.YX;
+    h = a.length >= _.YX;
   return 0 === r.length ? (0, i.jsx)("div", {
-    className: h.container,
-    children: (0, i.jsx)(u.$jN, {
-      type: u.RAz.SPINNING_CIRCLE,
-      className: h.spinner
+    className: j.container,
+    children: (0, i.jsx)(c.$jN, {
+      type: c.RAz.SPINNING_CIRCLE,
+      className: j.spinner
     })
   }) : (0, i.jsxs)("div", {
-    className: h.container,
-    children: [(0, i.jsx)(c.X6q, {
-      className: h.heading,
+    className: j.container,
+    children: [(0, i.jsx)(s.X6q, {
+      className: j.heading,
       variant: "heading-md/semibold",
-      children: p.intl.string(j.default["3vWDMz"])
-    }), s && (0, i.jsx)("div", {
-      className: h.maxInstancesWarning,
-      children: (0, i.jsx)(_.C, {})
-    }), (0, i.jsx)(c.zJl, {
-      className: o()(h.gameContainerWrapper, {
-        [h.disabled]: s
-      }),
+      children: v.intl.string(b.default["3vWDMz"])
+    }), h && (0, i.jsx)("div", {
+      className: j.maxInstancesWarning,
+      children: (0, i.jsx)(f.C, {})
+    }), (0, i.jsx)(s.zJl, {
+      className: j.gameContainerWrapper,
       children: (0, i.jsx)("div", {
-        className: h.gameContainer,
-        children: r.map((e, t) => (0, i.jsx)(x.Z, {
+        className: j.gameContainer,
+        children: r.map((e, t) => (0, i.jsx)(g.Z, {
           game: e,
-          onClick: () => (0, b.Z)({
+          onClick: () => (0, x.Z)({
             guildId: n,
-            stepConfig: y,
+            stepConfig: p,
             initialGameServerGame: e,
-            analyticsLocation: m.Z.GAME_SERVER_OVERVIEW
+            analyticsLocation: d.Z.GAME_SERVER_OVERVIEW
           }),
-          imageClassName: h.image,
-          titleClassName: h.title,
-          disabled: s
+          imageClassName: j.image,
+          titleClassName: j.title,
+          disabled: h
         }, "sidebar-game-".concat(t, "-").concat(e.id)))
       })
     })]
