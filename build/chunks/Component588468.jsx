@@ -299,6 +299,9 @@ class X extends H {
         })
       }), (0, Chunk951288.jsxs)("div", {
         className: Chunk512746.autocompleteContentWrapper,
+        "aria-label": Chunk388032.intl.formatToPlainString(Chunk388032.t["9v/R+v"], {
+          name: Chunk607070
+        }),
         children: [(0, Chunk951288.jsx)(Chunk965386.z5, {
           children: (0, Chunk951288.jsx)(Chunk481060.Text, {
             className: Chunk512746.autocompleteRowHeading,
