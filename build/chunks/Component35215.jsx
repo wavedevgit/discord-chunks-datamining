@@ -2,7 +2,7 @@
 /** chunk id: 35215, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => H
+  Z: () => W
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -12,6 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
   Chunk224706 = require("./224706.js"),
+  Chunk607070 = require("./607070.js"),
   Chunk812206 = require("./812206.js"),
   Chunk835473 = require("./835473.js"),
   Chunk669764 = require("./669764.js"),
@@ -30,7 +31,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk879048 = require("./879048.js");
 
-function N(e, t, n) {
+function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -39,20 +40,20 @@ function N(e, t, n) {
   }) : e[t] = n, e
 }
 
-function R(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      N(e, t, n[t])
+      R(e, t, n[t])
     })
   }
   return e
 }
 
-function P(e, t) {
+function w(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -63,61 +64,62 @@ function P(e, t) {
   return n
 }
 
-function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
+function D(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let D = 10,
-  L = 20,
-  x = 4,
-  M = 5,
-  j = 8,
-  k = 10;
+let L = 10,
+  x = 20,
+  M = 15,
+  j = 4,
+  k = 5,
+  U = 8,
+  G = 10;
 
-function U(e) {
+function B(e) {
   var t;
   let n = {
-      [T.S7.PACKAGE_ACTION_ADVENTURE]: A.t.PYFVdX,
-      [T.S7.PACKAGE_RPG_MMO]: A.t.rFQo2N,
-      [T.S7.PACKAGE_RACING_SPORTS]: A.t.zDRa6u,
-      [T.S7.PACKAGE_SANDBOX_CREATIVE]: A.t.vz9U2d,
-      [T.S7.PACKAGE_FAMILY_FRIENDLY]: A.t.IOiAEx,
-      [T.S7.PACKAGE_HOLIDAY_SEASON]: A.t.cJPqvL,
-      [T.S7.PACKAGE_NEW_YEARS]: A.t.S0w2mp
+      [S.S7.PACKAGE_ACTION_ADVENTURE]: C.t.PYFVdX,
+      [S.S7.PACKAGE_RPG_MMO]: C.t.rFQo2N,
+      [S.S7.PACKAGE_RACING_SPORTS]: C.t.zDRa6u,
+      [S.S7.PACKAGE_SANDBOX_CREATIVE]: C.t.vz9U2d,
+      [S.S7.PACKAGE_FAMILY_FRIENDLY]: C.t.IOiAEx,
+      [S.S7.PACKAGE_HOLIDAY_SEASON]: C.t.cJPqvL,
+      [S.S7.PACKAGE_NEW_YEARS]: C.t.S0w2mp
     },
     r = e.config.features.find(e => e in n),
-    i = null != (t = null != r ? n[r] : null) ? t : A.t["D+DkEB"];
-  return A.intl.string(i)
+    i = null != (t = null != r ? n[r] : null) ? t : C.t["D+DkEB"];
+  return C.intl.string(i)
 }
-let G = e => {
+let Z = e => {
     let {
       quest: t,
       onClose: n
-    } = e, i = (0, a.e7)([g.Z], () => g.Z.getState().theme), o = (0, l.wj)(i) ? S.BRd.DARK : S.BRd.LIGHT;
+    } = e, i = (0, a.e7)([E.Z], () => E.Z.getState().theme), o = (0, l.wj)(i) ? A.BRd.DARK : A.BRd.LIGHT;
     return (0, r.jsxs)("div", {
-      className: C.headerContainer,
+      className: N.headerContainer,
       children: [(0, r.jsxs)("div", {
-        className: C.headerContent,
+        className: N.headerContent,
         children: [(0, r.jsx)("img", {
-          className: C.gameTile,
+          className: N.gameTile,
           alt: t.config.messages.gameTitle,
-          src: (0, O.fh)(t, O.eC.GAME_TILE, o).url
+          src: (0, v.fh)(t, v.eC.GAME_TILE, o).url
         }), (0, r.jsxs)("div", {
-          className: C.headerTextContainer,
+          className: N.headerTextContainer,
           children: [(0, r.jsx)(c.Text, {
             variant: "text-sm/semibold",
             color: "text-primary",
-            children: U(t)
+            children: B(t)
           }), (0, r.jsx)(c.Text, {
             variant: "text-sm/normal",
             color: "text-tertiary",
-            children: A.intl.string(A.t.VgN1Bg)
+            children: C.intl.string(C.t.VgN1Bg)
           })]
         })]
       }), (0, r.jsx)(c.P3F, {
-        className: C.closeButton,
-        "aria-label": A.intl.string(A.t.cpT0Cg),
+        className: N.closeButton,
+        "aria-label": C.intl.string(C.t.cpT0Cg),
         onClick: n,
         children: (0, r.jsx)(c.Dio, {
           size: "md",
@@ -126,57 +128,72 @@ let G = e => {
       })]
     })
   },
-  B = e => {
+  F = e => {
     let {
       quest: t,
-      game: i,
-      sourceQuestContent: o,
-      onGameProfileModalOpen: l,
-      onGameProfileModalClose: u
-    } = e, f = (0, b.O5)(), _ = (0, a.e7)([d.Z], () => d.Z.getApplication(i.applicationId)), h = () => {
-      f({
+      game: o,
+      sourceQuestContent: l,
+      onGameProfileModalOpen: u,
+      onGameProfileModalClose: _
+    } = e, p = (0, y.O5)(), m = (0, a.e7)([f.Z], () => f.Z.getApplication(o.applicationId)), E = (0, a.e7)([d.Z], () => d.Z.useReducedMotion), b = i.useRef(null), v = () => {
+      p({
         questId: t.id,
-        questContent: y.jn.SPONSORED_QUEST_SHEET,
-        questContentCTA: b.jZ.GAME_STORE_OPEN_GAME_LINK,
-        sourceQuestContent: o
+        questContent: O.jn.SPONSORED_QUEST_SHEET,
+        questContentCTA: y.jZ.GAME_STORE_OPEN_GAME_LINK,
+        sourceQuestContent: l
       })
-    }, g = async () => {
-      f({
+    }, I = async () => {
+      p({
         questId: t.id,
-        questContent: y.jn.SPONSORED_QUEST_SHEET,
-        questContentCTA: b.jZ.GAME_PROFILE_OPEN,
-        sourceQuestContent: o
+        questContent: O.jn.SPONSORED_QUEST_SHEET,
+        questContentCTA: y.jZ.GAME_PROFILE_OPEN,
+        sourceQuestContent: l
       }), await (0, c.ZDy)(async () => {
         let {
           default: e
         } = await Promise.all([n.e("89311"), n.e("83123")]).then(n.bind(n, 644941));
-        return t => (0, r.jsx)(e, R({
-          applicationId: i.applicationId,
-          source: p.m1.GameSheet,
-          trackExternalAction: h
+        return t => (0, r.jsx)(e, P({
+          applicationId: o.applicationId,
+          source: h.m1.GameSheet,
+          trackExternalAction: v
         }, t))
       }, {
-        onCloseCallback: u
-      }), l()
-    };
+        onCloseCallback: _
+      }), u()
+    }, T = i.useCallback(e => {
+      if (null == b.current || E) return;
+      let t = b.current.getBoundingClientRect(),
+        n = e.clientX - t.left,
+        r = e.clientY - t.top,
+        i = t.width / 2,
+        a = t.height / 2,
+        o = -((r - a) / a * M),
+        s = (n - i) / i * M;
+      b.current.style.transform = "rotateX(".concat(o, "deg) rotateY(").concat(s, "deg)")
+    }, [E]), S = i.useCallback(() => {
+      null == b.current || E || (b.current.style.transform = "rotateX(0deg) rotateY(0deg)")
+    }, [E]);
     return (0, r.jsx)(s.u, {
-      text: i.name,
+      text: o.name,
       children: (0, r.jsx)(c.P3F, {
-        className: C.gameClickable,
-        onClick: g,
+        className: N.gameClickable,
+        onClick: I,
+        onMouseMove: T,
+        onMouseLeave: S,
         children: (0, r.jsx)("div", {
-          className: C.coverArtContainer,
-          children: (0, r.jsx)(m.C, {
-            game: i,
-            application: _,
-            className: C.coverArt,
-            size: m.Z.SMALL
+          ref: b,
+          className: N.coverArtContainer,
+          children: (0, r.jsx)(g.C, {
+            game: o,
+            application: m,
+            className: N.coverArt,
+            size: g.Z.SMALL
           })
         })
       })
     })
   },
-  Z = () => (0, Chunk951288.jsxs)("svg", {
+  V = () => (0, Chunk951288.jsxs)("svg", {
     xmlns: "http://www.w3.org/2000/svg",
     width: "75",
     height: "96",
@@ -204,75 +221,75 @@ let G = e => {
     })]
   });
 
-function F(e) {
+function H(e) {
   let {
     quest: t,
     applications: o,
     onClose: s,
     sourceQuestContent: l,
     impressionRef: d,
-    onGameProfileModalOpen: p,
-    onGameProfileModalClose: m
+    onGameProfileModalOpen: f,
+    onGameProfileModalClose: h
   } = e;
-  (0, f.Z)(o), i.useEffect(() => {
+  (0, _.Z)(o), i.useEffect(() => {
     o.length > 1 && u.Z.getDetectableGamesSupplemental(o)
   }, [o]);
-  let g = (0, a.e7)([_.Z], () => o.some(e => _.Z.isFetching(e))),
-    b = (0, a.e7)([_.Z], () => o.some(e => _.Z.didFetchingFail(e))),
-    y = (0, a.Wu)([_.Z], () => o.map(e => _.Z.getGame(e)).filter(e => null != e).filter(e => (0, h.z6)(e.applicationId)).slice(0, D)),
+  let g = (0, a.e7)([p.Z], () => o.some(e => p.Z.isFetching(e))),
+    E = (0, a.e7)([p.Z], () => o.some(e => p.Z.didFetchingFail(e))),
+    y = (0, a.Wu)([p.Z], () => o.map(e => p.Z.getGame(e)).filter(e => null != e).filter(e => (0, m.z6)(e.applicationId)).slice(0, L)),
     O = i.useMemo(() => {
       let e = y.length;
-      return e <= x ? x - e : e === M ? 0 : e <= j ? j - e : k - e
+      return e <= j ? j - e : e === k ? 0 : e <= U ? U - e : G - e
     }, [y.length]);
   if (i.useEffect(() => {
-      b && (E.default.track(S.rMx.QUEST_GAME_SHEET_ERROR, {
+      E && (b.default.track(A.rMx.QUEST_GAME_SHEET_ERROR, {
         quest_id: t.id,
-        error_type: I.n.FETCH_FAILED
+        error_type: T.n.FETCH_FAILED
       }), s(), (0, c.ZDy)(async () => {
         let {
           default: e
         } = await n.e("12198").then(n.bind(n, 521760));
-        return t => (0, r.jsx)(e, R({}, t))
+        return t => (0, r.jsx)(e, P({}, t))
       }))
-    }, [b, t.id, s]), g && !b) {
-    let e = Math.min(o.length, D);
+    }, [E, t.id, s]), g && !E) {
+    let e = Math.min(o.length, L);
     return (0, r.jsxs)("div", {
-      className: C.container,
-      children: [(0, r.jsx)(G, {
+      className: N.container,
+      children: [(0, r.jsx)(Z, {
         quest: t,
         onClose: s
       }), (0, r.jsx)("div", {
-        className: C.gameGrid,
+        className: N.gameGrid,
         children: o.slice(0, e).map(e => (0, r.jsx)("div", {
-          className: C.placeholderArt
+          className: N.placeholderArt
         }, e))
       })]
     })
   }
-  return b ? null : (0, r.jsxs)("div", {
+  return E ? null : (0, r.jsxs)("div", {
     ref: e => {
       d.current = e
     },
-    className: C.container,
-    children: [(0, r.jsx)(G, {
+    className: N.container,
+    children: [(0, r.jsx)(Z, {
       quest: t,
       onClose: s
     }), (0, r.jsxs)("div", {
-      className: C.gameGrid,
-      children: [y.map(e => (0, r.jsx)(B, {
+      className: N.gameGrid,
+      children: [y.map(e => (0, r.jsx)(F, {
         quest: t,
         game: e,
         sourceQuestContent: l,
-        onGameProfileModalOpen: p,
-        onGameProfileModalClose: m
+        onGameProfileModalOpen: f,
+        onGameProfileModalClose: h
       }, e.applicationId)), Array.from({
         length: O
-      }, (e, t) => (0, r.jsx)(Z, {}, "placeholder-".concat(t)))]
+      }, (e, t) => (0, r.jsx)(V, {}, "placeholder-".concat(t)))]
     })]
   })
 }
 
-function V(e) {
+function Y(e) {
   let {
     targetElementRef: t,
     applications: n,
@@ -282,11 +299,11 @@ function V(e) {
     quest: u,
     sourceQuestContent: d,
     impressionRef: f
-  } = e, [_, p] = i.useState(false), h = (0, b.O5)(), m = i.useRef(null), g = (null == t ? true : t.current) != null, E = g ? t : m, y = g ? "right" : "top", O = g ? "bottom" : true, v = () => {
+  } = e, [_, p] = i.useState(false), h = (0, y.O5)(), m = i.useRef(null), g = (null == t ? true : t.current) != null, E = g ? t : m, b = g ? "right" : "top", O = g ? "bottom" : true, v = () => {
     null == s || s(), h({
       questId: u.id,
       questContent: d,
-      questContentCTA: b.jZ.SPONSORED_QUEST_SHEET,
+      questContentCTA: y.jZ.SPONSORED_QUEST_SHEET,
       sourceQuestContent: d
     })
   }, I = () => {
@@ -304,7 +321,7 @@ function V(e) {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(F, {
+      return (0, r.jsx)(H, {
         quest: u,
         applications: n,
         onClose: t,
@@ -316,20 +333,20 @@ function V(e) {
     },
     onRequestOpen: v,
     onRequestClose: I,
-    position: y,
+    position: b,
     align: O,
-    spacing: L,
+    spacing: x,
     scrollBehavior: "close",
     ignoreModalClicks: true,
     children: e => a(e, m)
   })
 }
-let H = function(e) {
-  return null == e.quest || e.applications.length <= 1 ? null : (0, r.jsx)(v.A, {
+let W = function(e) {
+  return null == e.quest || e.applications.length <= 1 ? null : (0, r.jsx)(I.A, {
     questOrQuests: e.quest,
-    questContent: y.jn.SPONSORED_QUEST_SHEET,
+    questContent: O.jn.SPONSORED_QUEST_SHEET,
     sourceQuestContent: e.sourceQuestContent,
-    children: t => (0, r.jsx)(V, w(R({}, e), {
+    children: t => (0, r.jsx)(Y, D(P({}, e), {
       impressionRef: t
     }))
   })
