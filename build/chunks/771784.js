@@ -3,7 +3,8 @@
 "use strict";
 require.d(exports, {
   cI: () => o,
-  q3: () => a
+  q3: () => a,
+  sI: () => s
 });
 let r = (0, require("./722733.js").Z)({
   name: "2025-10-soundboard-xp-3",
@@ -44,4 +45,8 @@ function a(e) {
 
 function o(e) {
   return "top_sounds" === i(e).sortingStrategy
+}
+
+function s(e) {
+  return "metrics_capture" === i(e).sortingStrategy
 }
