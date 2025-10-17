@@ -517,6 +517,7 @@ async function Q(e, t) {
         },
         metadataRaw: y.metadata_raw,
         adContext: y.ad_context,
+        responseTtlSeconds: y.response_ttl_seconds,
         placement: e
       }), m.Z.recordQuestRequestApiResponse("/quests/decision", {
         wasSuccessful: true,
