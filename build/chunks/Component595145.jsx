@@ -83,8 +83,8 @@ function ea(e) {
     sourceAnalyticsLocations: eI = [],
     disableActionsForPreview: ey = false
   } = e, {
-    analyticsLocations: e_
-  } = (0, u.ZP)([...eI, d.Z.USER_PROFILE_MODAL_V2]), eZ = (0, N.ZB)({
+    analyticsLocations: eZ
+  } = (0, u.ZP)([...eI, d.Z.USER_PROFILE_MODAL_V2]), e_ = (0, N.ZB)({
     layout: "MODAL_V2",
     userId: t.id,
     sourceSessionId: ep,
@@ -111,7 +111,7 @@ function ea(e) {
     } : {}, [ec, t.id]);
   (0, c.$)(eS, "UserProfileModalV2");
   let ew = (0, P.ZP)(t.id, eb ? ec : true),
-    eR = Z.ZP.useName(null == ew ? true : ew.guildId, ed, t),
+    eR = _.ZP.useName(null == ew ? true : ew.guildId, ed, t),
     {
       relationshipType: eD,
       originApplicationId: eL
@@ -148,13 +148,13 @@ function ea(e) {
         eT(false)
       }, 1e3)
     };
-    return _.S.subscribe(ei.CkL.SHAKE_PROFILE_MODAL, e), () => {
-      _.S.unsubscribe(ei.CkL.SHAKE_PROFILE_MODAL, e), (0, en.L$)(null)
+    return Z.S.subscribe(ei.CkL.SHAKE_PROFILE_MODAL, e), () => {
+      Z.S.unsubscribe(ei.CkL.SHAKE_PROFILE_MODAL, e), (0, en.L$)(null)
     }
   }, []), (0, l.jsx)(u.Gt, {
-    value: e_,
+    value: eZ,
     children: (0, l.jsx)(N.Mt, {
-      value: eZ,
+      value: e_,
       openedAt: ej,
       fetchStartedAt: null == ew ? true : ew.fetchStartedAt,
       fetchEndedAt: null == ew ? true : ew.fetchEndedAt,
@@ -247,7 +247,7 @@ function ea(e) {
                       user: t,
                       guildId: ec,
                       onClose: eg,
-                      nickname: Z.ZP.useName(null == ew ? true : ew.guildId, ed, t),
+                      nickname: _.ZP.useName(null == ew ? true : ew.guildId, ed, t),
                       nicknameIcons: (0, l.jsx)(B.Z, {
                         size: "sm",
                         userId: t.id
@@ -381,7 +381,7 @@ function ea(e) {
                           return e
                         }({
                           action: "SET_NOTE"
-                        }, eZ))
+                        }, e_))
                       })
                     })]
                   }), (null == ew ? true : ew.profileEffect) != null && (0, l.jsx)(j.Z, {

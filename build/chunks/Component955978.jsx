@@ -21,21 +21,21 @@ var Chunk951288 = require("./951288.js"),
 
 function O(e, t, n) {
   var O;
-  if (p.Z.isNotificationDisabled(m.n0.NowPlayingNotification)) return null;
-  let v = d.default.getUser(e);
-  if (null == v) return null;
-  let E = c.Z.getCurrentlySelectedChannelId(),
-    S = u.Z.getChannel(E),
+  if (h.Z.isNotificationDisabled(m.n0.NowPlayingNotification)) return null;
+  let E = d.default.getUser(e);
+  if (null == E) return null;
+  let v = c.Z.getCurrentlySelectedChannelId(),
+    S = u.Z.getChannel(v),
     b = o.Z.getApplication(t),
     x = a.ZP.getRunningGames().find(e => e.id === t),
     j = null != (O = null == x ? true : x.name) ? O : null == b ? true : b.name,
-    I = (0, h.oY)(null == S ? true : S.guild_id, null == S ? true : S.id, v),
+    I = (0, p.oY)(null == S ? true : S.guild_id, null == S ? true : S.id, E),
     C = (0, i.jsxs)("div", {
       className: y.nowPlayingNotification,
       children: [(0, i.jsx)("div", {
         className: y.nowPlayingNotificationIcon,
         children: (0, i.jsx)(l.Z, {
-          user: v,
+          user: E,
           "aria-hidden": true,
           size: r.EFr.SIZE_24
         })
@@ -46,7 +46,7 @@ function O(e, t, n) {
           color: "interactive-normal",
           className: y.bodyText,
           children: g.intl.format(g.t["q7/rgo"], {
-            username: null != I ? I : v.username,
+            username: null != I ? I : E.username,
             gameName: j,
             gameIcon: () => null != b || null != x ? (0, i.jsx)(s.Z, {
               game: b,
@@ -63,7 +63,7 @@ function O(e, t, n) {
       trackClick: N
     } = (0, f.R)(m.n0.NowPlayingNotification, {
       notif_type: m.n0.NowPlayingNotification,
-      notif_user_id: v.id,
+      notif_user_id: E.id,
       activity_type: n.type,
       activity_name: null != j ? j : n.name
     });

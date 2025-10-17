@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk339882 = require("./339882.js");
 
-function v(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -39,7 +39,7 @@ function v(e) {
   return e
 }
 
-function E(e, t) {
+function v(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -77,17 +77,17 @@ let S = {
       locked: x,
       widgetId: t,
       pinned: Z
-    })), T = (0, u.Z)(n), _ = (0, u.Z)(x), P = b === g.C5.VERTICAL, D = x || _ !== x || T !== n, A = r.useMemo(() => {
+    })), T = (0, u.Z)(n), _ = (0, u.Z)(x), P = b === g.C5.VERTICAL, A = x || _ !== x || T !== n, D = r.useMemo(() => {
       let e = 0,
         t = 0;
-      return P ? w.map((t, n) => E(v({}, t), {
+      return P ? w.map((t, n) => v(E({}, t), {
         y: (e += t.height + (n > 0 ? N : 0)) - t.height,
         x: 0
-      })) : w.map((e, n) => E(v({}, e), {
+      })) : w.map((e, n) => v(E({}, e), {
         x: (t += e.width + (n > 0 ? N : 0)) - e.width,
         y: 0
       }))
-    }, [w, N, P]), R = r.useMemo(() => 0 === A.length ? (0, m.MH)(f.bt) : A.reduce((e, t) => e + t.height, 0) + (P ? N * (A.length - 1) : 0), [A, P, N]), k = r.useMemo(() => 0 === A.length ? f.bt : A.reduce((e, t) => e + t.width, 0) + (P ? 0 : N * (A.length - 1)), [A, P, N]), L = (0, s.Yzy)(A, {
+    }, [w, N, P]), R = r.useMemo(() => 0 === D.length ? (0, m.MH)(f.bt) : D.reduce((e, t) => e + t.height, 0) + (P ? N * (D.length - 1) : 0), [D, P, N]), k = r.useMemo(() => 0 === D.length ? f.bt : D.reduce((e, t) => e + t.width, 0) + (P ? 0 : N * (D.length - 1)), [D, P, N]), L = (0, s.Yzy)(D, {
       key: e => e.key,
       from: {
         height: 0,
@@ -127,10 +127,10 @@ let S = {
         }
       },
       config: S,
-      trail: 100 * !D
-    }, D ? "animate-never" : "respect-motion-settings"), M = (0, h.ee)(() => new Set(I.map(e => e.user.id)), [I, C]), V = (0, h.ee)(() => new Set(I.filter(e => j.has((0, c.V9)(e.stream))).map(e => e.user.id)), [I, j, C]);
+      trail: 100 * !A
+    }, A ? "animate-never" : "respect-motion-settings"), M = (0, p.ee)(() => new Set(I.map(e => e.user.id)), [I, C]), V = (0, p.ee)(() => new Set(I.filter(e => j.has((0, c.V9)(e.stream))).map(e => e.user.id)), [I, j, C]);
     return r.useEffect(() => {
-      0 !== M.size && (0, h.zi)(y.Odu.GO_LIVE, {
+      0 !== M.size && (0, p.zi)(y.Odu.GO_LIVE, {
         locked: d.default.isInstanceLocked(),
         shownUserIds: Array.from(M),
         liveUserIds: Array.from(V),
@@ -164,7 +164,7 @@ let S = {
           } = e;
           return (0, i.jsx)("div", {
             className: O.tileContainer,
-            children: (0, i.jsx)(p.Z, {
+            children: (0, i.jsx)(h.Z, {
               participant: t,
               width: n,
               locked: r,

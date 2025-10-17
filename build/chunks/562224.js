@@ -100,7 +100,7 @@ async function C(e, t) {
     soundshareEnabled: U
   } = l.Z.getState(), G = null != (E = null == t ? true : t.preset) ? E : M, {
     allowAutoQuality: B
-  } = (0, h.I)({
+  } = (0, h.IK)({
     location: "startStreamWithSource"
   });
   G !== b.ApplicationStreamPresets.PRESET_AUTO || B || (G = b.ApplicationStreamPresets.PRESET_VIDEO);

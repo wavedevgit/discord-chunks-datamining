@@ -113,7 +113,7 @@ function eo(e) {
   let {
     selectGuild: k = false,
     selectSource: L = true,
-    guildId: K,
+    guildId: X,
     analyticsLocation: eo,
     onClose: ea,
     transitionState: ec
@@ -125,7 +125,7 @@ function eo(e) {
   } = (0, f.cj)([Z.Z], () => Z.Z.getState()), eh = i.useRef(null), em = i.useRef(Date.now()), e_ = (0, f.e7)([N.Z, I.Z], () => I.Z.getChannel(N.Z.getVoiceChannelId())), eg = (0, f.e7)([C.ZP, R.Z], () => (0, D.isWindows)() ? (0, W.Z)(C.ZP, R.Z) : null), ex = (0, f.e7)([A.default], () => {
     let e = A.default.getCurrentUser();
     return a()(null != e, "GoLiveModal: user cannot be undefined"), e
-  }), ev = null != (t = null == e_ ? true : e_.getGuildId()) ? t : K, ej = (0, f.e7)([E.Z], () => {
+  }), ev = null != (t = null == e_ ? true : e_.getGuildId()) ? t : X, ej = (0, f.e7)([E.Z], () => {
     var e;
     return null != ev ? null == (e = E.Z.getGuild(ev)) ? true : e.premiumTier : null
   }), [eS, eb] = null != (l = (0, U.Z)(ed, ex, ej)) ? l : [q.ApplicationStreamResolutions.RESOLUTION_720, q.ApplicationStreamFPS.FPS_30], {
@@ -151,8 +151,8 @@ function eo(e) {
     [eF, eH] = i.useState(eu),
     [eW, ez] = i.useState(ef),
     [eV, eJ] = i.useState(ep),
-    [eX, eK] = i.useState(null != (o = P.I0.getSetting()) && o),
-    [eY, eq] = i.useState(null != K ? K : null),
+    [eK, eX] = i.useState(null != (o = P.I0.getSetting()) && o),
+    [eY, eq] = i.useState(null != X ? X : null),
     eQ = null != (d = null == e_ ? true : e_.id) ? d : eR,
     [e$, e1] = i.useState(eO ? "" : true);
   async function e0() {
@@ -161,7 +161,7 @@ function eo(e) {
     let n = null != (e = null == e_ ? true : e_.id) ? e : eR;
     a()(null != n, "Received null target channel ID");
     let r = I.Z.getChannel(n),
-      i = null != (t = null == r ? true : r.getGuildId()) ? t : K;
+      i = null != (t = null == r ? true : r.getGuildId()) ? t : X;
     if (null == e_ && !await (0, v.Z)({
         channelId: n
       })) return;
@@ -177,13 +177,13 @@ function eo(e) {
     let c = {};
     if (null == ek ? true : ek.id.startsWith("prepicked:")) c = H.ZP.getStreamStartOptions();
     else {
-      let e = (0, X.Z)(eg, ek, C.ZP.getRunningGames()),
+      let e = (0, K.Z)(eg, ek, C.ZP.getRunningGames()),
         t = !(0, D.isWindows)() || null == e || (null == ek ? true : ek.id.startsWith("camera:"));
       c.pid = t || null == e ? true : e.pid, null == c.pid && null != ek && (c.sourceId = ek.id, c.sourceName = ek.name)
     }(0, _.WH)(i, n, el(ei({}, c), {
       audioSourceId: eB,
       sound: eV,
-      previewDisabled: eX,
+      previewDisabled: eK,
       nativePickerStyleUsed: e$,
       goLiveModalDurationMs: Date.now() - em.current
     })), null != eP && eZ($.L.AUTO_DISMISS), eC || (async () => {
@@ -232,7 +232,7 @@ function eo(e) {
     if (e.preventDefault(), 1 === eE) return e3();
     if (2 === eE) return eT(3);
     if (null != e$) return eT(1);
-    let t = (0, X.Z)(eg, ek, C.ZP.getRunningGames());
+    let t = (0, K.Z)(eg, ek, C.ZP.getRunningGames());
     if (B.ZP.supportsFeature(Q.eRX.ELEVATED_HOOK) && (null == t ? true : t.elevated)) {
       var i;
       let e = null != (i = null == eg ? true : eg.pid) ? i : null;
@@ -418,7 +418,7 @@ function eo(e) {
                     selectedSource: ek,
                     selectedFPS: eW,
                     sound: eV,
-                    previewDisabled: eX,
+                    previewDisabled: eK,
                     sourceChanged: eN,
                     selectSource: L,
                     onChangeSelectedFPS: e => e5(eG, eF, e),
@@ -430,7 +430,7 @@ function eo(e) {
                     onChangeAudioDevice: e => eL(e),
                     onChangeGuild: () => eT(0),
                     onChangeSound: e => eJ(e),
-                    onChangePreviewDisabled: e => eK(e),
+                    onChangePreviewDisabled: e => eX(e),
                     onClose: ea,
                     selectedGuildId: eY,
                     targetGuildPremiumTier: ej,
@@ -462,7 +462,7 @@ function ea(e) {
   } = (0, L.a)({
     location: e.analyticsLocation
   }), n = (0, f.e7)([C.ZP], () => null != e.sourcePID ? C.ZP.getGameForPID(e.sourcePID) : true);
-  return t ? (0, r.jsx)(K.Z, el(ei({}, e), {
+  return t ? (0, r.jsx)(X.Z, el(ei({}, e), {
     selectSource: e.selectSource,
     sourceApplication: null != n ? n : true
   })) : (0, r.jsx)(eo, ei({}, e))

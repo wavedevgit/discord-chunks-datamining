@@ -13,7 +13,7 @@ var Chunk647438 = require("./647438.js"),
   Chunk709054 = require("./709054.js"),
   Chunk26033 = require("./26033.js"),
   Chunk561308 = require("./561308.js");
-let p = Chunk70956.Z.Millis.WEEK;
+let h = Chunk70956.Z.Millis.WEEK;
 
 function f(e, t) {
   let n = (0, o.N)(e),
@@ -23,7 +23,7 @@ function f(e, t) {
     } = (0, a.ZB)(t);
   return i.useMemo(() => {
     if (null == u || null == n) return [];
-    let t = n.filter(t => (0, d.dX)(t) && (0, d.m9)(t) && t.extra.application_id === e && c.default.age(t.id) < p);
+    let t = n.filter(t => (0, d.dX)(t) && (0, d.m9)(t) && t.extra.application_id === e && c.default.age(t.id) < h);
     return "recency" === u ? t.sort((e, t) => c.default.compare(t.id, e.id)) : "art" === u ? t.sort((e, t) => g(r, t) - g(r, e)) : t
   }, [n, e, u, r])
 }
@@ -39,6 +39,6 @@ function g(e, t) {
     })),
     l = Math.exp(-(c.default.age(t.id) / 1e3 / m * .01)),
     o = t.traits.some(e => e.type !== r.N.DURATION_SECONDS),
-    a = (0, h.n2)(t);
+    a = (0, p.n2)(t);
   return i * l * (1 + .6 * (o && !a ? 1 : 0))
 }

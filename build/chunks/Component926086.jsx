@@ -25,7 +25,7 @@ function m(e) {
   let {
     locked: t,
     pinned: n
-  } = e, [l, a] = r.useState(0), [m, g] = r.useState(0), [y, O] = r.useState(0), v = r.useRef(0), [E, S] = r.useState(0), {
+  } = e, [l, a] = r.useState(0), [m, g] = r.useState(0), [y, O] = r.useState(0), E = r.useRef(0), [v, S] = r.useState(0), {
     timeToLiveMs: b,
     reappearTimeMs: x
   } = d.ZP.useState(e => ({
@@ -37,7 +37,7 @@ function m(e) {
   }, I = r.useRef(j);
   r.useEffect(() => {
     I.current = j
-  }), r.useEffect(() => (v.current = setInterval(() => {
+  }), r.useEffect(() => (E.current = setInterval(() => {
     let e = Date.now();
     g(e), O(t => {
       if (0 === t) return e;
@@ -47,7 +47,7 @@ function m(e) {
       return n > i ? t + r : t
     })
   }, 100), () => {
-    clearInterval(v.current)
+    clearInterval(E.current)
   }), []);
   let C = () => {
       a(Date.now()), S(e => e + 1)
@@ -67,21 +67,21 @@ function m(e) {
     }),
     [w, T] = r.useState(false);
   if (r.useEffect(() => {
-      E > 10 && T(true)
-    }, [E]), w) throw Error("ClickZoneDebugWidget crashed, too many clicks");
+      v > 10 && T(true)
+    }, [v]), w) throw Error("ClickZoneDebugWidget crashed, too many clicks");
   return t && !n ? null : (0, i.jsx)(i.Fragment, {
     children: N((e, t) => t && (0, i.jsx)(u.animated.div, {
       style: e,
-      className: p.clickZoneDebugContainer,
-      children: (0, i.jsx)(h.Z, {
-        className: o()(p.clickZone, Z && p.clickBackground),
+      className: h.clickZoneDebugContainer,
+      children: (0, i.jsx)(p.Z, {
+        className: o()(h.clickZone, Z && h.clickBackground),
         children: (0, i.jsx)(c.P3F, {
           onClick: C,
-          className: p.clickable,
+          className: h.clickable,
           children: (0, i.jsxs)(c.Text, {
             variant: "text-md/semibold",
             color: "always-white",
-            children: ["Click Me (", E, ")"]
+            children: ["Click Me (", v, ")"]
           })
         })
       })

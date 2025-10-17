@@ -196,9 +196,9 @@ function ea(e) {
     }
   }, [n]), {
     analyticsLocations: P
-  } = (0, f.ZP)(p.Z.OVERLAY);
-  (0, h.ZP)(() => {
-    (0, D.F3)()
+  } = (0, f.ZP)(h.Z.OVERLAY);
+  (0, p.ZP)(() => {
+    (0, A.F3)()
   }),
   function(e, t) {
     let n = r.useRef({
@@ -219,28 +219,28 @@ function ea(e) {
     n.removeEventListener("keydown", el), n.removeEventListener("keyup", el), K && (n.removeEventListener("focus", ei), n.removeEventListener("blur", er))
   });
   let R = r.useRef(null);
-  return (0, h.ZP)(() => {
+  return (0, p.ZP)(() => {
     var e;
     let t = (0, W.pL)(),
       n = S.Z.getVoiceChannelId(),
       i = O.Z.getChannel(n),
-      r = null != i ? v.Z.getGuild(i.guild_id) : null,
+      r = null != i ? E.Z.getGuild(i.guild_id) : null,
       l = null != y.Z.getCurrentUserActiveStream(),
       o = null != n,
-      a = (0, g.Z)(E.Z) && !l && null != t,
+      a = (0, g.Z)(v.Z) && !l && null != t,
       s = o && null != r && null != n,
       {
         allowActivityWidget: u
-      } = (0, D.Rb)("overlay"),
+      } = (0, A.Rb)("overlay"),
       c = null != (e = x.default.getFocusedPID()) ? e : (0, w.getPID)();
     if (V.default.hasChangedRenderMode(c)) return;
-    let h = z.Z.isNotificationDisabled(H.n0.WelcomeNudge),
-      p = z.Z.isNotificationDisabled(H.n0.GoLiveNudge),
+    let p = z.Z.isNotificationDisabled(H.n0.WelcomeNudge),
+      h = z.Z.isNotificationDisabled(H.n0.GoLiveNudge),
       f = z.Z.isNotificationDisabled(H.n0.ActivityInvite),
       m = [];
-    h || (m.push({
+    p || (m.push({
       type: H.nc.WELCOME
-    }), !p && (a && s ? m.push({
+    }), !h && (a && s ? m.push({
       type: H.nc.GO_LIVE_VOICE,
       game: t,
       voiceChannelId: n,
@@ -254,7 +254,7 @@ function ea(e) {
     })), null != R.current && clearTimeout(R.current), R.current = setTimeout(() => {
       d.Z.overlayMounted(...m)
     }, 1e3)
-  }), (0, h.zq)(() => {
+  }), (0, p.zq)(() => {
     null != R.current && (clearTimeout(R.current), R.current = null)
   }), r.useEffect(() => {
     if (C.S.dispatch(Y.CkL.OVERLAY_V3_SHOW_WIDGETS, {
@@ -288,7 +288,7 @@ function ea(e) {
       }), (0, i.jsx)(G.Z, {}), !t && K && (0, i.jsx)(et, {
         locked: l,
         focused: c
-      }), (0, i.jsx)(A.Z, {}), (0, i.jsx)(k.Z, {
+      }), (0, i.jsx)(D.Z, {}), (0, i.jsx)(k.Z, {
         locked: l
       }), (0, i.jsx)(u.Ixi, {
         appContext: Y.IlC.OVERLAY

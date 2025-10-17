@@ -104,10 +104,10 @@ let ei = 5 * Chunk70956.Z.Millis.SECOND,
   ec = [],
   ed = {};
 
-function eh(e, t, n) {
+function ep(e, t, n) {
   null == ed[e] && (ed[e] = {}), ed[e][t] = n
 }
-let ep = 30 * Chunk70956.Z.Millis.MINUTE,
+let eh = 30 * Chunk70956.Z.Millis.MINUTE,
   ef = 2 * Chunk70956.Z.Millis.MINUTE;
 
 function em() {
@@ -145,7 +145,7 @@ function eO(e) {
   return null != t ? t.id : null
 }
 
-function ev(e, t) {
+function eE(e, t) {
   let n = et(en(et({}, ea), {
       timestamp: Date.now()
     }), t),
@@ -185,7 +185,7 @@ function ev(e, t) {
   return eu || (es = a, l.timer.start()), i
 }
 
-function eE(e) {
+function ev(e) {
   var t;
   let n = b.Z.getUserGame(e);
   if (null == n) return null;
@@ -208,7 +208,7 @@ function eS() {
     if (!I.Z.isFriend(e)) returnfalse;
     let i = t.gameId;
     if (null == i) returnfalse;
-    let r = eE(e);
+    let r = ev(e);
     if (null == r || ! function(e) {
         var t;
         let n = (null == (t = e.timestamps) ? true : t.start) != null ? e.timestamps.start : e.created_at;
@@ -222,18 +222,18 @@ function eS() {
     if (! function(e, t) {
         var n, i;
         let r = null === (n = null == (i = ed[e]) ? true : i[t]) || true === n ? true : n.lastSentTimestamp;
-        return null == r || Date.now() - r > ep
-      }(i, e)) return eh(i, e, {
+        return null == r || Date.now() - r > eh
+      }(i, e)) return ep(i, e, {
       userId: e,
       gameId: i,
       lastSentTimestamp: Date.now()
     }), false;
     let s = (0, B.Z)(e, i, r);
-    return null != s && (eh(i, e, {
+    return null != s && (ep(i, e, {
       userId: e,
       gameId: i,
       lastSentTimestamp: Date.now()
-    }), ev(s, {
+    }), eE(s, {
       type: V.kL.GENERIC,
       priority: V.Tu.NORMAL
     })), true
@@ -263,13 +263,13 @@ function eb(e) {
   } = e, i = eO(t);
   if (!n.includes(O.default.getId())) return ey(i);
   if (null != i) returnfalse;
-  let r = v.Z.getChannel(t);
+  let r = E.Z.getChannel(t);
   if (null == r || !r.isRingable() || "GUILD_RING_START" === e.type && !g.Z.getCurrentConfig({
       guildId: e.guildId,
       location: "OverlayV3StartRinging"
     }).enabled || Z.Z.getStatus() === J.Skl.DND || m.QZ.getSetting()) returnfalse;
   let l = es.find(e => e.type === V.kL.TEXT && e.channelId === t && e.messageType === J.uaV.CALL);
-  null != l && ey(l.id), ev((0, H.Z)(r), {
+  null != l && ey(l.id), eE((0, H.Z)(r), {
     priority: V.Tu.HIGH,
     expirationExternallyManaged: true,
     type: V.kL.INCOMING_CALL,
@@ -311,10 +311,10 @@ let eC = new eI(Chunk570140.Z, {
       nudges: n
     } = e;
     eg(0);
-    let i = null != (t = M.ZP.getFocusedPID()) ? t : A.UNSET_PID;
+    let i = null != (t = M.ZP.getFocusedPID()) ? t : D.UNSET_PID;
     if (k.default.hasChangedRenderMode(i)) return;
     let r = (0, X.Z)((0, z.pL)(), n);
-    null != r && ev(r, {
+    null != r && eE(r, {
       priority: V.Tu.URGENT,
       type: V.kL.NUDGE,
       duration: er
@@ -339,10 +339,10 @@ let eC = new eI(Chunk570140.Z, {
     let {
       channelId: r,
       message: o
-    } = e, a = v.Z.getChannel(r), s = w.default.getUser(null == (t = o.author) ? true : t.id);
+    } = e, a = E.Z.getChannel(r), s = w.default.getUser(null == (t = o.author) ? true : t.id);
     if (null == a || null == s) returnfalse;
     if ([J.mFx.JOIN, J.mFx.JOIN_REQUEST, J.mFx.STREAM_REQUEST].includes(null == (n = o.activity) ? true : n.type)) {
-      if (!(0, p.eF)(o, r, true, true)) returnfalse;
+      if (!(0, h.eF)(o, r, true, true)) returnfalse;
       let e = function(e, t, n) {
         var i;
         let r, o;
@@ -372,7 +372,7 @@ let eC = new eI(Chunk570140.Z, {
             o = (0, Q.Z)(e, n, a, r)
         }
         if (null == o) returnfalse;
-        ev(o, {
+        eE(o, {
           priority: V.Tu.URGENT,
           expirationExternallyManaged: true,
           channelId: e.id,
@@ -386,12 +386,12 @@ let eC = new eI(Chunk570140.Z, {
       }(a, o, s);
       if (false !== e) return e
     }
-    if (L.Z.isNotificationDisabled(q.n0.TextChat) || N.Z.disableNotifications || !(0, p.eF)(o, r)) returnfalse;
+    if (L.Z.isNotificationDisabled(q.n0.TextChat) || N.Z.disableNotifications || !(0, h.eF)(o, r)) returnfalse;
     let u = !S.Z.isSoundDisabled(_.Ay),
-      c = null != (i = E.Z.getMessage(r, o.id)) ? i : (0, h.e5)(o),
+      c = null != (i = v.Z.getMessage(r, o.id)) ? i : (0, p.e5)(o),
       d = (0, K.Z)(a, c, s, u);
     if (null == d) returnfalse;
-    ev(d, {
+    eE(d, {
       type: V.kL.TEXT,
       channelId: a.id,
       expirationExternallyManaged: true,
@@ -437,25 +437,25 @@ let eC = new eI(Chunk570140.Z, {
         applicationId: r
       } = e,
       l = (0, z.pL)();
-    return null != l && (null == l ? true : l.id) != null && (l.id === r || l.altId === r) && (n === J.mFx.JOIN && (t = (0, W.Z)(i, l)), null != t && void ev(t, {
+    return null != l && (null == l ? true : l.id) != null && (l.id === r || l.altId === r) && (n === J.mFx.JOIN && (t = (0, W.Z)(i, l)), null != t && void eE(t, {
       priority: V.Tu.URGENT,
       type: V.kL.GENERIC
     }))
   },
   CLIPS_SAVE_CLIP_START: function() {
-    ev((0, Chunk421824.f)(Chunk388032.intl.string(Chunk388032.t.NBMK9v)))
+    eE((0, Chunk421824.f)(Chunk388032.intl.string(Chunk388032.t.NBMK9v)))
   },
   CLIPS_SAVE_CLIP: function() {
-    ev((0, Chunk421824.f)(Chunk388032.intl.format(Chunk388032.t.KLhk6u, {
+    eE((0, Chunk421824.f)(Chunk388032.intl.format(Chunk388032.t.KLhk6u, {
       duration: (0, Chunk129724.A)(Chunk435064.Z.getSettings().clipsLength / 1e3, true)
     })))
   },
   CLIPS_SAVE_CLIP_ERROR: function() {
-    ev((0, Chunk421824.f)(Chunk388032.intl.string(Chunk388032.t["1ZbZur"])))
+    eE((0, Chunk421824.f)(Chunk388032.intl.string(Chunk388032.t["1ZbZur"])))
   },
   STREAM_START: function(e) {
     let t = (0, G.y)();
-    null != t && ev(t)
+    null != t && eE(t)
   },
   VOICE_STATE_UPDATES: function(e) {
     let {
@@ -482,9 +482,9 @@ let eC = new eI(Chunk570140.Z, {
           let n = ej(t, r);
           if (null != ex[n]) continue;
           ex[n] = Date.now();
-          let i = (0, F.Z)(t, o, null != (l = eE(t)) ? l : true);
+          let i = (0, F.Z)(t, o, null != (l = ev(t)) ? l : true);
           if (null == i) continue;
-          ev(i, {
+          eE(i, {
             priority: V.Tu.NORMAL,
             type: V.kL.NUDGE,
             duration: er

@@ -13,9 +13,9 @@ var Chunk224706 = require("./224706.js"),
 
 function c(e, t, n, c, d) {
   if (o.Z.isNotificationDisabled(s.n0.ActivityInvite) || null == t.activity || null == c.id) return null;
-  let h = t.activity.type,
-    p = d.session_id;
-  if (null == p) return null;
+  let p = t.activity.type,
+    h = d.session_id;
+  if (null == h) return null;
   let {
     icon: f,
     title: m,
@@ -31,7 +31,7 @@ function c(e, t, n, c, d) {
     guild_id: e.guild_id,
     channel_id: e.id,
     channel_type: e.type,
-    activity_type: h,
+    activity_type: p,
     activity_name: d.name
   });
   return {
@@ -46,7 +46,7 @@ function c(e, t, n, c, d) {
       var a;
       i.Z.join({
         userId: n.id,
-        sessionId: p,
+        sessionId: h,
         applicationId: null != (a = c.altId) ? a : c.id,
         channelId: e.id,
         messageId: t.id

@@ -65,7 +65,7 @@ let j = {
         borderWidth: o,
         showEmpty: a
       } = e;
-      return (0, h.js)(t) ? (0, i.jsx)(m.Z, {
+      return (0, p.js)(t) ? (0, i.jsx)(m.Z, {
         id: t.id,
         locked: n,
         widget: t,
@@ -82,7 +82,7 @@ let j = {
     renderButtons: e => (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(y.ls, {
         onClick: t => {
-          (0, h.js)(e) && (0, r.jW)(t, async () => {
+          (0, p.js)(e) && (0, r.jW)(t, async () => {
             let {
               default: t
             } = await n.e("26775").then(n.bind(n, 740579));
@@ -107,13 +107,13 @@ let j = {
         locked: l,
         showEmpty: o
       } = e;
-      return (0, h.Aw)(n) ? (0, i.jsx)(g.ZP, {
+      return (0, p.Aw)(n) ? (0, i.jsx)(g.ZP, {
         anchorLeft: r,
         id: n.id,
         locked: l,
         pinned: n.pinned,
-        widget: E.Odu.VOICE_V3,
-        maxDisplayedVoiceStates: null != (t = n.meta.voiceStatesMaxShown) ? t : v.At,
+        widget: v.Odu.VOICE_V3,
+        maxDisplayedVoiceStates: null != (t = n.meta.voiceStatesMaxShown) ? t : E.At,
         isPreviewingInGame: false,
         showEmpty: o
       }) : null
@@ -175,7 +175,7 @@ let j = {
         locked: n,
         anchorLeft: r
       } = e;
-      return (0, i.jsx)(p.Z, {
+      return (0, i.jsx)(h.Z, {
         id: t.id,
         anchorLeft: r,
         locked: n,
@@ -202,9 +202,9 @@ let j = {
         anchorLeft: s,
         showEmpty: u,
         padding: d,
-        borderWidth: p
+        borderWidth: h
       } = e;
-      return (0, h.ZL)(n) ? (0, i.jsx)(c.Z, {
+      return (0, p.ZL)(n) ? (0, i.jsx)(c.Z, {
         id: n.id,
         locked: r,
         pinned: n.pinned,
@@ -217,7 +217,7 @@ let j = {
         dragStart: o,
         horizontal: null != (t = n.meta.horizontal) && t,
         padding: d,
-        borderWidth: p,
+        borderWidth: h,
         showEmpty: u
       }) : null
     },
@@ -227,10 +227,10 @@ let j = {
     }),
     renderButtons(e) {
       var t;
-      return (0, h.ZL)(e) ? (0, i.jsxs)(i.Fragment, {
+      return (0, p.ZL)(e) ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(y.ls, {
           onClick: t => {
-            (0, h.ZL)(e) && (0, r.jW)(t, async () => {
+            (0, p.ZL)(e) && (0, r.jW)(t, async () => {
               let {
                 default: t
               } = await n.e("34684").then(n.bind(n, 68738));

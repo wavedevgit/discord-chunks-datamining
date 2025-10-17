@@ -163,7 +163,7 @@ function y(e, t, n) {
   let {
     defaultAutoQuality: v,
     allowAutoQuality: j
-  } = (0, f._)({
+  } = (0, f._I)({
     location: "useCreateGoLiveModalState"
   }), {
     preset: b,

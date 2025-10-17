@@ -19,8 +19,8 @@ var Chunk951288 = require("./951288.js"),
 function m(e) {
   let {
     locked: t
-  } = e, n = (0, h.II)(), m = null == n ? true : n.id, g = null == n ? true : n.altId, y = (0, l.e7)([u.default], () => u.default.getCurrentUser()), O = null != g ? g : m, [v, E] = r.useState(new Set), [S, b] = r.useState(new Set), x = r.useCallback((e, t, n) => {
-    E(n => {
+  } = e, n = (0, p.II)(), m = null == n ? true : n.id, g = null == n ? true : n.altId, y = (0, l.e7)([u.default], () => u.default.getCurrentUser()), O = null != g ? g : m, [E, v] = r.useState(new Set), [S, b] = r.useState(new Set), x = r.useCallback((e, t, n) => {
+    v(n => {
       if (t) {
         if (n.has(e)) return n;
         n.add(e)
@@ -39,9 +39,9 @@ function m(e) {
       }
       return new Set(i)
     })
-  }, []), j = (0, c.ee)(() => v, [v]), I = (0, c.ee)(() => S, [S]), C = (0, o.h)(c.zi, 3e3, []);
+  }, []), j = (0, c.ee)(() => E, [E]), I = (0, c.ee)(() => S, [S]), C = (0, o.h)(c.zi, 3e3, []);
   r.useEffect(() => {
-    0 === j.size || t || C(p.Odu.FRIENDS, {
+    0 === j.size || t || C(h.Odu.FRIENDS, {
       locked: t,
       shownUserIds: Array.from(j),
       liveUserIds: Array.from(I),
@@ -102,7 +102,7 @@ function m(e) {
       }(e);
       if (null != n) {
         var i, r;
-        (0, c.Ws)(p.Odu.FRIENDS, (i = function(e) {
+        (0, c.Ws)(h.Odu.FRIENDS, (i = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               i = Object.keys(n);
@@ -144,7 +144,7 @@ function m(e) {
     listClassName: f.list,
     closePopout: w,
     renderHeader: T,
-    appContext: p.IlC.OVERLAY,
+    appContext: h.IlC.OVERLAY,
     onAction: N,
     onFriendVisible: x
   })

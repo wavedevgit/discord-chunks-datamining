@@ -26,7 +26,7 @@ var Chunk268146 = require("./268146.js"),
   Chunk355669 = require("./355669.js");
 let y = [{
     value: Chunk37113.ApplicationStreamPresets.PRESET_AUTO,
-    canUse: e => e !== i.vA.CAMERA && (0, c.I)({
+    canUse: e => e !== i.vA.CAMERA && (0, c.IK)({
       location: "StreamOptionsMenu"
     }).allowAutoQuality
   }, {

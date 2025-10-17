@@ -2,15 +2,20 @@
 /** chunk id: 580991, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  I: () => _,
-  _: () => p
+  IK: () => b,
+  Ym: () => O,
+  _I: () => y
 });
 var Chunk442837 = require("./442837.js"),
+  Chunk433517 = require("./433517.js"),
+  Chunk872810 = require("./872810.js"),
   Chunk722733 = require("./722733.js"),
   Chunk633289 = require("./633289.js"),
-  Chunk751823 = require("./751823.js");
+  Chunk751823 = require("./751823.js"),
+  Chunk361291 = require("./361291.js"),
+  Chunk37113 = require("./37113.js");
 
-function s(e, t, n) {
+function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -19,20 +24,20 @@ function s(e, t, n) {
   }) : e[t] = n, e
 }
 
-function l(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      s(e, t, n[t])
+      d(e, t, n[t])
     })
   }
   return e
 }
 
-function c(e, t) {
+function _(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -43,50 +48,74 @@ function c(e, t) {
   return n
 }
 
-function u(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : c(Object(t)).forEach(function(n) {
+function p(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : _(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let d = {
+let h = {
     allowAutoQuality: false,
-    defaultAutoQuality: false
+    defaultAutoQuality: false,
+    migrateAutoQuality: false
   },
-  f = (0, Chunk722733.Z)({
+  m = "GoLiveAutoQualityMigrationVersion",
+  g = 1,
+  E = (0, Chunk722733.Z)({
     name: "2025-10-go-live-auto-quality",
     kind: "user",
-    defaultConfig: d,
+    defaultConfig: h,
     variations: {
-      1: u(l({}, d), {
-        allowAutoQuality: true
+      1: p(f({}, h), {
+        allowAutoQuality: true,
+        migrateAutoQuality: true
       }),
-      2: u(l({}, d), {
+      2: p(f({}, h), {
         allowAutoQuality: true,
         defaultAutoQuality: true
       })
     }
   });
 
-function _(e) {
+function b(e) {
   let {
     location: t
   } = e, {
     isInHoldout: n
-  } = o.L.getCurrentConfig({
+  } = l.L.getCurrentConfig({
     location: t
   }, {
     autoTrackExposure: true
   });
-  return n ? f.definition.defaultConfig : f.getConfig({
+  return n ? E.definition.defaultConfig : E.getConfig({
     location: t
   })
 }
 
-function p(e) {
+function y(e) {
   let {
     location: t
   } = e;
-  return (0, r.e7)([a.Z], () => _({
+  return (0, r.e7)([s.Z], () => b({
     location: t
   }))
+}
+
+function O() {
+  var e;
+  let t = E.getConfig({
+      location: "maybeMigrateToAutoQuality"
+    }).migrateAutoQuality,
+    n = Number(null != (e = Chunk433517.K.get(m)) ? module : 0);
+  if (!exports || require >= g) return;
+  let r = Chunk361291.Z.getState();
+  if (Chunk442837.preset !== Chunk37113.ApplicationStreamPresets.PRESET_CUSTOM) {
+    (0, Chunk872810.Rc)({
+      preset: Chunk37113.ApplicationStreamPresets.PRESET_AUTO,
+      resolution: Chunk442837.resolution,
+      frameRate: Chunk442837.fps,
+      soundshareEnabled: Chunk442837.soundshareEnabled,
+      noTrack: true
+    }), Chunk433517.K.set(m, g);
+    return
+  }
 }

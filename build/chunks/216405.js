@@ -2,7 +2,7 @@
 /** chunk id: 216405, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => A
 }), require("./388685.js");
 var Chunk579092 = require("./579092.js"),
   Chunk46973 = require("./46973.js"),
@@ -15,11 +15,13 @@ var Chunk579092 = require("./579092.js"),
   Chunk131951 = require("./131951.js"),
   Chunk959457 = require("./959457.js"),
   Chunk594174 = require("./594174.js"),
+  Chunk70956 = require("./70956.js"),
+  Chunk580991 = require("./580991.js"),
   Chunk569545 = require("./569545.js"),
   Chunk537413 = require("./537413.js"),
   Chunk37113 = require("./37113.js");
 
-function g(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,63 +29,68 @@ function g(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let E = 10,
-  b = 20,
-  y = 10,
-  O = new Chunk579092.Yd("AutoQualityStreamingManager"),
-  v = 0;
-class I extends Chunk147913.Z {
+let y = 10,
+  O = 20,
+  v = 10,
+  I = new Chunk579092.Yd("AutoQualityStreamingManager"),
+  T = 0;
+class S extends Chunk147913.Z {
   handleStats() {
-    var e, t, n;
-    if ((v += 1) % y != 0) return;
-    let r = Chunk199902.Z.getCurrentUserActiveStream();
-    if (null == Chunk579092) return;
-    let o = Chunk959457.Z.getRTCConnection((0, Chunk569545.V9)(Chunk579092)),
-      g = Chunk131951.Z.getGoLiveSource();
-    if (null == Chunk147913 || null == g) return;
-    let I = Chunk361291.Z.getState();
-    if (I.preset !== Chunk37113.ApplicationStreamPresets.PRESET_AUTO) return;
-    if ((null == (e = Chunk199902.Z.getStreamerActiveStreamMetadata()) ? true : module.id) != null) return void O.info("Skipping auto quality checker for game stream.");
-    let T = Chunk450109.Z.getAccumulatedPerformanceStats(Chunk147913.getMediaEngineConnectionId(), Chunk579092.ownerId, "long");
-    if (null == T || T.numDatapoints < 30) return;
-    let S = Chunk594174.default.getCurrentUser(),
-      A = Chunk430824.Z.getGuild(Chunk579092.guildId),
-      [C, N] = null != (t = (0, Chunk537413.Z)(Chunk37113.ApplicationStreamPresets.PRESET_DOCUMENTS, S, null == A ? true : A.premiumTier)) ? exports : [Chunk37113.ApplicationStreamResolutions.RESOLUTION_SOURCE, Chunk37113.ApplicationStreamFPS.FPS_5],
-      [R, P] = null != (n = (0, Chunk537413.Z)(Chunk37113.ApplicationStreamPresets.PRESET_VIDEO, S, null == A ? true : A.premiumTier)) ? require : [Chunk37113.ApplicationStreamResolutions.RESOLUTION_720, Chunk37113.ApplicationStreamFPS.FPS_30],
-      w = null;
-    if (T.entropy < E && (I.resolution !== C || I.fps !== N) ? (O.info("Low entropy average, switching to screenshare preset."), w = {
+    var e, t, n, r;
+    if ((T += 1) % v != 0) return;
+    let o = Chunk199902.Z.getCurrentUserActiveStream();
+    if (null == Chunk147913) return;
+    let h = Chunk959457.Z.getRTCConnection((0, Chunk569545.V9)(Chunk147913)),
+      b = Chunk131951.Z.getGoLiveSource();
+    if (null == Chunk580991 || null == b) return;
+    let S = Chunk361291.Z.getState();
+    if (S.preset !== Chunk37113.ApplicationStreamPresets.PRESET_AUTO) return;
+    if ((null == (e = Chunk199902.Z.getStreamerActiveStreamMetadata()) ? true : module.id) != null) return void I.info("Skipping auto quality checker for game stream.");
+    let A = Chunk450109.Z.getAccumulatedPerformanceStats(Chunk580991.getMediaEngineConnectionId(), Chunk147913.ownerId, "long"),
+      C = (null != (t = Chunk580991.analyticsContext.getDuration()) ? exports : 30) >= 30 * Chunk70956.Z.Millis.SECOND ? 30 : 15;
+    if (null == A || A.numDatapoints < C) return;
+    let N = Chunk594174.default.getCurrentUser(),
+      R = Chunk430824.Z.getGuild(Chunk147913.guildId),
+      [P, w] = null != (n = (0, Chunk537413.Z)(Chunk37113.ApplicationStreamPresets.PRESET_DOCUMENTS, N, null == R ? true : R.premiumTier)) ? require : [Chunk37113.ApplicationStreamResolutions.RESOLUTION_SOURCE, Chunk37113.ApplicationStreamFPS.FPS_5],
+      [D, L] = null != (r = (0, Chunk537413.Z)(Chunk37113.ApplicationStreamPresets.PRESET_VIDEO, N, null == R ? true : R.premiumTier)) ? Chunk579092 : [Chunk37113.ApplicationStreamResolutions.RESOLUTION_720, Chunk37113.ApplicationStreamFPS.FPS_30],
+      x = null;
+    if (A.entropy < y && (S.resolution !== P || S.fps !== w) ? (I.info("Low entropy average, switching to screenshare preset."), x = {
         qualityOptions: {
           preset: Chunk37113.ApplicationStreamPresets.PRESET_AUTO,
-          resolution: C,
-          frameRate: N
+          resolution: P,
+          frameRate: w
         },
         context: Chunk46973.Yn.STREAM
-      }) : T.entropy > b && (I.resolution !== R || I.fps !== P) && (O.info("High entropy average, switching to video preset."), w = {
+      }) : A.entropy > O && (S.resolution !== D || S.fps !== L) && (I.info("High entropy average, switching to video preset."), x = {
         qualityOptions: {
           preset: Chunk37113.ApplicationStreamPresets.PRESET_AUTO,
-          resolution: R,
-          frameRate: P
+          resolution: D,
+          frameRate: L
         },
         context: Chunk46973.Yn.STREAM
-      }), null != w) {
-      if (null != g.desktopSource) w.desktopSettings = {
-        sourceId: g.desktopSource.id,
-        sound: I.soundshareEnabled
+      }), null != x) {
+      if (null != b.desktopSource) x.desktopSettings = {
+        sourceId: b.desktopSource.id,
+        sound: S.soundshareEnabled
       };
       else {
-        if (null == g.cameraSource) return;
-        w.cameraSettings = {
-          videoDeviceGuid: g.cameraSource.videoDeviceGuid,
-          audioDeviceGuid: g.cameraSource.audioDeviceGuid
+        if (null == b.cameraSource) return;
+        x.cameraSettings = {
+          videoDeviceGuid: b.cameraSource.videoDeviceGuid,
+          audioDeviceGuid: b.cameraSource.audioDeviceGuid
         }
       }
-      Chunk846027.Z.setGoLiveSource(w)
+      Chunk846027.Z.setGoLiveSource(x)
     }
   }
+  handlePostConnectionOpen() {
+    (0, Chunk580991.Ym)()
+  }
   constructor(...e) {
-    super(...e), g(this, "actions", {
-      MEDIA_ENGINE_CONNECTION_STATS: this.handleStats
+    super(...e), b(this, "actions", {
+      MEDIA_ENGINE_CONNECTION_STATS: this.handleStats,
+      POST_CONNECTION_OPEN: this.handlePostConnectionOpen
     })
   }
 }
-let T = new I
+let A = new S

@@ -506,7 +506,7 @@ let i = {
     inlineRequire: () => require("./473288.js").Z
   },
   AutoQualityStreamingManager: {
-    actions: ["MEDIA_ENGINE_CONNECTION_STATS"],
+    actions: ["MEDIA_ENGINE_CONNECTION_STATS", "POST_CONNECTION_OPEN"],
     inlineRequire: () => require("./216405.js").Z
   },
   WebAuthnCredentialManager: {

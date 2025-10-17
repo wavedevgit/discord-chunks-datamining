@@ -1,7 +1,7 @@
 /** Chunk was on 93979 **/
 /** chunk id: 858970, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => Z
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
@@ -42,12 +42,12 @@ function y(e) {
   return e
 }
 
-function _(e) {
+function Z(e) {
   let {
     user: n,
     guildId: t,
-    channelId: _,
-    messageId: Z,
+    channelId: Z,
+    messageId: _,
     roleId: O,
     transitionState: N,
     openedAt: A,
@@ -60,8 +60,8 @@ function _(e) {
     userId: n.id,
     showGuildProfile: true,
     guildId: E,
-    channelId: _,
-    messageId: Z,
+    channelId: Z,
+    messageId: _,
     roleId: O
   }), R = [{
     icon: o.owK,
@@ -69,7 +69,7 @@ function _(e) {
   }, {
     icon: o.owK,
     description: b.intl.string(C ? b.t.QxrDY2 : b.t.W6fjkZ)
-  }], D = (0, p.ZP)(n.id, E), L = d.ZP.getName(null == D ? true : D.guildId, _, n), M = b.intl.formatToPlainString(b.t.KRe1Fh, {
+  }], D = (0, p.ZP)(n.id, E), L = d.ZP.getName(null == D ? true : D.guildId, Z, n), M = b.intl.formatToPlainString(b.t.KRe1Fh, {
     name: L
   });
   return (0, l.jsx)(s.Gt, {

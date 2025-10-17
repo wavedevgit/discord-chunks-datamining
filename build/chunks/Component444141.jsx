@@ -58,14 +58,17 @@ function p(e) {
     context: j,
     trackUserProfileAction: g
   } = (0, s.KZ)(), b = (0, c.ZP)(n.id, t);
-  return (null == b ? true : b.guildId) == null || null == j ? null : (null == f ? true : f.guildId) != null ? (0, l.jsx)(i.sNh, {
+  return (null == b ? true : b.guildId) == null ? null : (null == f ? true : f.guildId) != null ? (0, l.jsx)(i.sNh, {
     id: "view-main-profile",
     label: d.intl.string(d.t.GISTtb),
     subtext: d.intl.formatToPlainString(d.t["mn/nW1"], {
       displayName: r.ZP.getName(true, true, n)
     }),
     action: () => {
-      null == x || x(), (0, a.openUserProfileModal)(m(u({}, j), {
+      null == x || x(), (0, a.openUserProfileModal)(m(u({
+        userId: n.id,
+        guildId: t
+      }, j), {
         showGuildProfile: false,
         sourceAnalyticsLocations: v
       })), g(u({
@@ -80,7 +83,10 @@ function p(e) {
       displayName: r.ZP.getName(t, p, n)
     }),
     action: () => {
-      null == x || x(), (0, a.openUserProfileModal)(m(u({}, j), {
+      null == x || x(), (0, a.openUserProfileModal)(m(u({
+        userId: n.id,
+        guildId: t
+      }, j), {
         showGuildProfile: true,
         sourceAnalyticsLocations: v
       })), g(u({

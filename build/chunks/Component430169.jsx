@@ -1,7 +1,7 @@
 /** Chunk was on 50751 **/
 /** chunk id: 430169, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => A
+  Z: () => D
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
@@ -111,7 +111,7 @@ function P(e) {
   })
 }
 
-function D(e) {
+function A(e) {
   let {
     user: t,
     application: n,
@@ -155,21 +155,21 @@ function D(e) {
   })
 }
 
-function A(e, t, n) {
+function D(e, t, n) {
   var r, l;
   if (j.Z.isNotificationDisabled(Z.n0.StreamWatchNudge)) return null;
-  let o = v.default.getUser(e);
+  let o = E.default.getUser(e);
   if (null == o) return null;
   let {
     designVariant: c
-  } = (0, b.lj)("OverlayV3StreamWatchNudge"), f = null == n ? true : n.application_id, I = g.Z.getChannel(t), w = null != f ? d.Z.getApplication(f) : null, T = null != f ? y.Z.getDetectableGame(f) : null, _ = null != f ? p.ZP.getRunningGames().find(e => e.id === f) : null, A = null != (l = null != (r = null == _ ? true : _.name) ? r : null == T ? true : T.name) ? l : null == w ? true : w.name, R = (0, E.oY)(null == I ? true : I.guild_id, null == I ? true : I.id, o), {
+  } = (0, b.lj)("OverlayV3StreamWatchNudge"), f = null == n ? true : n.application_id, I = g.Z.getChannel(t), w = null != f ? d.Z.getApplication(f) : null, T = null != f ? y.Z.getDetectableGame(f) : null, _ = null != f ? h.ZP.getRunningGames().find(e => e.id === f) : null, D = null != (l = null != (r = null == _ ? true : _.name) ? r : null == T ? true : T.name) ? l : null == w ? true : w.name, R = (0, v.oY)(null == I ? true : I.guild_id, null == I ? true : I.id, o), {
     trackView: k,
     trackClick: L
   } = (0, C.R)(Z.n0.StreamWatchNudge, {
     notif_type: Z.n0.StreamWatchNudge,
     notif_user_id: o.id,
     activity_type: null == n ? true : n.type,
-    activity_name: null != A ? A : null == n ? true : n.name
+    activity_name: null != D ? D : null == n ? true : n.name
   });
   return {
     body: (() => {
@@ -191,7 +191,7 @@ function A(e, t, n) {
             buttonColor: "gray"
           });
         case b.RD.SINGLE_ICON_BUTTON:
-          return (0, i.jsx)(D, {
+          return (0, i.jsx)(A, {
             user: o,
             application: w,
             runningGame: _,
@@ -203,7 +203,7 @@ function A(e, t, n) {
     maxBodyLines: 1,
     onNotificationClick: (n, i) => {
       L("overlay-watch-stream");
-      let [r] = O.Z.getWidgetsByType(N.Odu.GO_LIVE), l = h.Z.getStreamParticipants(t).find(t => t.user.id === e);
+      let [r] = O.Z.getWidgetsByType(N.Odu.GO_LIVE), l = p.Z.getStreamParticipants(t).find(t => t.user.id === e);
       null != r && null != l && ((0, x.gI)(l.stream, m.L.COVER), (0, u.rn)(l.stream, {
         forceMultiple: true,
         noFocus: true

@@ -52,8 +52,8 @@ function g(e) {
   let {
     trackView: t,
     trackClick: n
-  } = (0, d.R)(h.n0.ClipsNotification, {
-    notif_type: h.n0.ClipsNotification
+  } = (0, d.R)(p.n0.ClipsNotification, {
+    notif_type: p.n0.ClipsNotification
   });
   return {
     title: e,

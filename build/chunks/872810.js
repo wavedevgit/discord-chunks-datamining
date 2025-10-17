@@ -202,7 +202,7 @@ async function G(e) {
 }
 
 function B(e) {
-  (0, v.Ye)(e.preset, e.resolution, e.frameRate), s.Z.dispatch(N({
+  true !== e.noTrack && (0, v.Ye)(e.preset, e.resolution, e.frameRate), s.Z.dispatch(N({
     type: "STREAM_UPDATE_SETTINGS"
   }, e))
 }

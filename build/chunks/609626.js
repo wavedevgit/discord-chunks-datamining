@@ -19,8 +19,8 @@ function u(e, t) {
     c = (0, i.ov)(e),
     d = s.intl.string(s.t.WRj1Wl),
     {
-      trackView: h,
-      trackClick: p
+      trackView: p,
+      trackClick: h
     } = (0, l.R)(o.n0.ActivityUserJoin, {
       notif_type: o.n0.ActivityUserJoin,
       notif_user_id: e.id,
@@ -33,10 +33,10 @@ function u(e, t) {
     body: u,
     hint: d,
     onNotificationShow: () => {
-      h()
+      p()
     },
     onDismissClick: () => {
-      p("dismiss")
+      h("dismiss")
     }
   }
 }

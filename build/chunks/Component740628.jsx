@@ -74,8 +74,8 @@ function b(e) {
     initialSubsection: I,
     onClose: y
   } = e, {
-    trackUserProfileAction: _
-  } = (0, a.KZ)(), Z = (0, o.e7)([s.Z], () => s.Z.hidePersonalInformation), [{
+    trackUserProfileAction: Z
+  } = (0, a.KZ)(), _ = (0, o.e7)([s.Z], () => s.Z.hidePersonalInformation), [{
     section: O,
     subsection: N
   }, A] = i.useState({
@@ -94,15 +94,15 @@ function b(e) {
     })
   }, [f, O]);
   let T = i.useCallback(e => {
-    _({
+    Z({
       action: "PRESS_SECTION",
       section: e
     }), A({
       section: e,
       subsection: true
     })
-  }, [_, A]);
-  return Z ? (0, l.jsx)("div", {
+  }, [Z, A]);
+  return _ ? (0, l.jsx)("div", {
     className: j.container,
     children: (0, l.jsxs)("div", {
       className: v.empty,

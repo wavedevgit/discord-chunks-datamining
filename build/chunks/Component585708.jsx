@@ -26,7 +26,7 @@ var Chunk13245 = require("./13245.js"),
 
 function b(e, t, n, b) {
   var x;
-  if (f.Z.isNotificationDisabled(v.n0.TextChat)) return (0, u.GN)(c.Ay, c.yk), null;
+  if (f.Z.isNotificationDisabled(E.n0.TextChat)) return (0, u.GN)(c.Ay, c.yk), null;
   let {
     icon: j,
     title: I,
@@ -34,8 +34,8 @@ function b(e, t, n, b) {
   } = (0, a.Xi)(e, t, n), {
     trackView: Z,
     trackClick: N
-  } = (0, O.R)(v.n0.TextChat, {
-    notif_type: v.n0.TextChat,
+  } = (0, O.R)(E.n0.TextChat, {
+    notif_type: E.n0.TextChat,
     notif_user_id: null == (x = t.author) ? true : x.id,
     message_id: t.id,
     message_type: t.type,
@@ -63,12 +63,12 @@ function b(e, t, n, b) {
       b && (0, u.GN)(c.Ay, c.yk), Z()
     },
     onNotificationClick: () => {
-      let n = (0, p.getPID)();
+      let n = (0, h.getPID)();
       (0, l.In)(e.id, {
-        section: E.jXE.OVERLAY,
-        object: E.qAy.ACK_TEXT_CHAT_NOTIFICATION,
-        objectType: E.Qqv.ACK_SEMI_AUTOMATIC
-      }, true, true, t.id), m.ZP.isInputLocked(n) ? (N("unlock"), r.Z.setInputLocked(false, n)) : (N("jump"), (0, s.uL)(E.Z5c.CHANNEL(e.guild_id, e.id, t.id)), d.isPlatformEmbedded && h.ZP.focus())
+        section: v.jXE.OVERLAY,
+        object: v.qAy.ACK_TEXT_CHAT_NOTIFICATION,
+        objectType: v.Qqv.ACK_SEMI_AUTOMATIC
+      }, true, true, t.id), m.ZP.isInputLocked(n) ? (N("unlock"), r.Z.setInputLocked(false, n)) : (N("jump"), (0, s.uL)(v.Z5c.CHANNEL(e.guild_id, e.id, t.id)), d.isPlatformEmbedded && p.ZP.focus())
     },
     onDismissClick: () => {
       N("dismiss")

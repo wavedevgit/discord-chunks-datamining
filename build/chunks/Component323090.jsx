@@ -30,8 +30,8 @@ function g(e) {
     subsection: I,
     onClose: y
   } = e, {
-    trackUserProfileAction: _
-  } = (0, c.KZ)(), Z = (0, i.e7)([d.Z], () => {
+    trackUserProfileAction: Z
+  } = (0, c.KZ)(), _ = (0, i.e7)([d.Z], () => {
     var e;
     return null == (e = d.Z.getUserProfile(n.id)) ? true : e.application
   }), O = (0, i.e7)([s.Z, a.Z], () => s.Z.getChannel(a.Z.getChannelId()));
@@ -41,9 +41,9 @@ function g(e) {
     children: [(null == g ? true : g.bio) != null && (null == g ? true : g.bio) !== "" && (0, l.jsx)(m.Z, {
       userBio: g.bio,
       setLineClamp: false
-    }), (null == Z ? true : Z.popularApplicationCommandIds) != null && null != O && (0, l.jsx)(u.Z, {
-      applicationId: Z.id,
-      commandIds: Z.popularApplicationCommandIds,
+    }), (null == _ ? true : _.popularApplicationCommandIds) != null && null != O && (0, l.jsx)(u.Z, {
+      applicationId: _.id,
+      commandIds: _.popularApplicationCommandIds,
       channel: O,
       guildId: b,
       onClick: y
@@ -66,7 +66,7 @@ function g(e) {
         userId: n.id,
         className: j.note,
         autoFocus: I === h.Tb.NOTE,
-        onUpdate: () => _({
+        onUpdate: () => Z({
           action: "SET_NOTE"
         })
       })

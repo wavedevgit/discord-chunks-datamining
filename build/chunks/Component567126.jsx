@@ -1,7 +1,7 @@
 /** Chunk was on 47863 **/
 /** chunk id: 567126, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Hu: () => X,
+  Hu: () => K,
   jx: () => H,
   oA: () => W,
   ov: () => F,
@@ -142,7 +142,7 @@ function W(e) {
       showAuthorizationError: false
     }).then(J)
   }, []);
-  let X = function(e) {
+  let K = function(e) {
     switch (e) {
       case c.vA.WINDOW:
         return W;
@@ -152,7 +152,7 @@ function W(e) {
         return y
     }
   }(P);
-  if (null == X) returnfalse === V ? (0, r.jsxs)(f.Text, {
+  if (null == K) returnfalse === V ? (0, r.jsxs)(f.Text, {
     className: G.errorMessage,
     variant: "text-md/normal",
     color: "text-danger",
@@ -163,7 +163,7 @@ function W(e) {
     align: h.Z.Align.CENTER,
     children: (0, r.jsx)(f.$jN, {})
   });
-  let K = X.map(e => {
+  let X = K.map(e => {
     let {
       id: i
     } = e, l = (null == t ? true : t.id) === i;
@@ -220,7 +220,7 @@ function W(e) {
         layout: m.Z.Layout.WRAP,
         columns: 2,
         className: G.sourceContainer,
-        children: K
+        children: X
       })]
     })]
   })
@@ -400,7 +400,7 @@ function J(e) {
   })
 }
 
-function X(e) {
+function K(e) {
   let {
     onSourceSelect: t,
     onCancel: n,

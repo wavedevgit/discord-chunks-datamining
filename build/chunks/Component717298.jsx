@@ -1,7 +1,7 @@
 /** Chunk was on 47863 **/
 /** chunk id: 717298, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => X
+  Z: () => K
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -49,25 +49,25 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk468918 = require("./468918.js");
 
-function X(e) {
+function K(e) {
   var t;
   let {
     onClose: n,
     transitionState: l,
     sourceApplication: o,
-    analyticsLocations: X = [],
-    selectSource: K = true
+    analyticsLocations: K = [],
+    selectSource: X = true
   } = e, Y = i.useRef(performance.now()), q = (0, f.e7)([b.Z], () => b.Z.getUseSystemScreensharePicker() && ((0, w.isLinux)() || (0, w.isMac)() && a().satisfies(null === _.Z || true === _.Z ? true : _.Z.os.release, W.jR))), {
     analyticsLocations: Q
-  } = (0, v.ZP)(X, x.Z.GO_LIVE_MODAL_V2), $ = (0, f.e7)([C.default], () => C.default.getCurrentUser()), ee = (0, N.Z)(), {
+  } = (0, v.ZP)(K, x.Z.GO_LIVE_MODAL_V2), $ = (0, f.e7)([C.default], () => C.default.getCurrentUser()), ee = (0, N.Z)(), {
     state: et,
     dispatch: en
-  } = (0, k.Ti)(o, $, ee), er = (0, m.Z)((0, w.isWindows)() && null != o && K ? "confirm" : "source_select");
+  } = (0, k.Ti)(o, $, ee), er = (0, m.Z)((0, w.isWindows)() && null != o && X ? "confirm" : "source_select");
   (0, H.Z)(q, en, "confirm" === er);
   let ei = !P.ZP.canStreamQuality(P.ZP.StreamQuality.HIGH, $),
     el = !(0, w.isLinux)(),
     es = "confirm" === er,
-    eo = !K && null != o && !es,
+    eo = !X && null != o && !es,
     ea = q && et.sourceType !== u.vA.CAMERA,
     ec = i.useMemo(() => {
       let e = [{
