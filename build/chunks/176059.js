@@ -9,5 +9,6 @@ module.exports = {
   formPriorityImage: "formPriorityImage__2cf82",
   attachments: "attachments__2cf82",
   attachment: "attachment__2cf82",
-  removeAttachment: "removeAttachment__2cf82"
+  removeAttachment: "removeAttachment__2cf82",
+  fileInput: "fileInput__2cf82"
 }
