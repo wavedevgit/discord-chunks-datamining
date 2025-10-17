@@ -13,7 +13,7 @@ var i, Chunk951288 = require("./951288.js"),
   Chunk607070 = require("./607070.js"),
   Chunk251625 = require("./251625.js"),
   Chunk226951 = require("./226951.js"),
-  Chunk981631 = require("./981631.js"),
+  Chunk295907 = require("./295907.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk508547 = require("./508547.js");
 
@@ -126,25 +126,25 @@ class b extends(i = Chunk647438.Component) {
       } = this.props, {
         selectedRow: n
       } = this.state, i = this.getRows(), l = this.getSelectedSection(i);
-      switch (e.keyCode) {
-        case g.yXg.TAB:
+      switch (e.key) {
+        case g.vn.TAB:
           if (t) break;
-        case g.yXg.ARROW_DOWN:
+        case g.vn.ARROW_DOWN:
           e.preventDefault(), this.props.sections.length > l && ++n >= i[l].length && (++l >= this.props.sections.length && (l = 0), n = 0), this.setState({
             selectedSection: l,
             selectedRow: n
           });
           break;
-        case g.yXg.ARROW_UP:
+        case g.vn.ARROW_UP:
           e.preventDefault(), --n < 0 && (--l < 0 && (l = this.props.sections.length - 1), n = i[l].length - 1), this.setState({
             selectedSection: l,
             selectedRow: n
           });
           break;
-        case g.yXg.ENTER:
+        case g.vn.ENTER:
           e.preventDefault(), this.props.sections.length > l && i[l].length > n && (this.props.onSelect(i[l][n], l), this.props.onClose());
           break;
-        case g.yXg.ESCAPE:
+        case g.vn.ESCAPE:
           e.preventDefault(), this.props.onSelect(null, null), this.props.onClose()
       }
     }), f(this, "isEmpty", () => 0 === this.getRows().reduce((e, t) => e + t.length, 0)), f(this, "getSectionHeight", e => {

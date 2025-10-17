@@ -2,7 +2,7 @@
 /** chunk id: 966302, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => es
+  Z: () => el
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -46,13 +46,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk795318 = require("./795318.js"),
   Chunk354459 = require("./354459.js"),
   Chunk981631 = require("./981631.js"),
+  Chunk295907 = require("./295907.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk993103 = require("./993103.js"),
   Chunk450943 = require("./450943.js"),
   Chunk315091 = require("./315091.js");
 
-function X(e, t, n) {
+function Q(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -61,20 +62,20 @@ function X(e, t, n) {
   }) : e[t] = n, e
 }
 
-function Q(e) {
+function J(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      X(e, t, n[t])
+      Q(e, t, n[t])
     })
   }
   return e
 }
 
-function J(e, t) {
+function $(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -85,24 +86,24 @@ function J(e, t) {
   return n
 }
 
-function $(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : J(Object(t)).forEach(function(n) {
+function ee(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : $(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let ee = {
+let et = {
     width: 232,
     height: 315
   },
-  et = {
+  en = {
     width: 232,
     height: 267
   },
-  en = 475,
-  er = 267,
-  ei = 128;
+  er = 475,
+  ei = 267,
+  ea = 128;
 
-function ea(e) {
+function eo(e) {
   let {
     header: t
   } = e, n = L.Z.getCameraComponent(), a = (0, l.e7)([L.Z], () => L.Z.getVideoDeviceId()), o = (0, I.Z)();
@@ -115,23 +116,23 @@ function ea(e) {
       }).catch(H.dG4)
     }
   }, [o, a]), (0, r.jsxs)("div", {
-    className: z.previewRoot,
+    className: q.previewRoot,
     children: [(0, r.jsx)(c.$jN, {}), (0, r.jsx)("div", {
-      className: z.preview,
+      className: q.preview,
       children: (0, r.jsx)(n, {
         disabled: false,
         deviceId: a,
-        width: en,
-        height: er
+        width: er,
+        height: ei
       })
     }), (0, r.jsx)("div", {
-      className: z.previewChannelHeader,
+      className: q.previewChannelHeader,
       children: t
     })]
   })
 }
 
-function eo(e) {
+function es(e) {
   let {
     canVideo: t,
     channel: n,
@@ -143,13 +144,13 @@ function eo(e) {
     enabled: d
   } = (0, T.Z)(), _ = (0, S.Z)(n), p = i.useRef(null), g = a > 1;
   return (0, r.jsxs)("div", {
-    className: o()(z.wrapper, z.actions),
+    className: o()(q.wrapper, q.actions),
     children: [(0, r.jsx)(C.Z, {
       iconComponent: c.Dio,
-      label: W.intl.string(W.t.WAI6xs),
-      className: z.actionButton,
+      label: K.intl.string(K.t.WAI6xs),
+      className: q.actionButton,
       onClick: () => {
-        (0, Z.v)(s, Z.d.DISCONNECT), k.default.track(H.rMx.RING_CALL_DECLINED, Q({
+        (0, Z.v)(s, Z.d.DISCONNECT), k.default.track(H.rMx.RING_CALL_DECLINED, J({
           location: s,
           guild_id: n.guild_id
         }, (0, h.v_)(n))), u.Z.stopRinging(n.id)
@@ -180,8 +181,8 @@ function eo(e) {
           buttonRef: p,
           join: true,
           enabled: d,
-          className: o()(z.actionButton, {
-            [z.fullRegionDropdownButtonOverride]: g
+          className: o()(q.actionButton, {
+            [q.fullRegionDropdownButtonOverride]: g
           }),
           color: "green",
           centerButton: true,
@@ -193,7 +194,7 @@ function eo(e) {
           onCameraUnavailable: A.Z,
           onChange: () => {
             var e;
-            (0, Z.v)(s, Z.d.JOIN_VIDEO_CALL), k.default.track(H.rMx.RING_CALL_ACCEPTED, Q({
+            (0, Z.v)(s, Z.d.JOIN_VIDEO_CALL), k.default.track(H.rMx.RING_CALL_ACCEPTED, J({
               location: s,
               guild_id: n.guild_id
             }, (0, h.v_)(n))), f.default.selectVoiceChannel(n.id, true), (0, y.XU)(null != (e = n.guild_id) ? e : H.ME, n.id)
@@ -204,16 +205,16 @@ function eo(e) {
       channel: n,
       color: "join",
       centerButton: true,
-      onCallJoined: () => k.default.track(H.rMx.RING_CALL_ACCEPTED, Q({
+      onCallJoined: () => k.default.track(H.rMx.RING_CALL_ACCEPTED, J({
         location: s,
         guild_id: n.guild_id
       }, (0, h.v_)(n))),
-      className: z.actionButton
+      className: q.actionButton
     })]
   })
 }
 
-function es(e) {
+function el(e) {
   var t;
   let {
     animatedStyle: n,
@@ -225,18 +226,18 @@ function es(e) {
   } = (0, m.ZP)(p.Z.INCOMING_CALL_MODAL), [O, v] = i.useState(false), I = (0, l.e7)([D.Z], () => D.Z.getGuild(h.guild_id)), T = null != I ? j.ZP.getGuildIconURL({
     id: I.id,
     icon: I.icon,
-    size: ei
-  }) : null, S = null != (t = (0, g.x)(h, ei, true)) ? t : T, A = (0, E.ZP)(h), [C, N] = (0, l.Wu)([L.Z], () => [L.Z.supports(Y.AN.VIDEO), Object.keys(L.Z.getVideoDevices()).length]), R = null != I ? "".concat(A, ", ").concat(I.name) : A, x = (0, l.e7)([M.Z], () => M.Z.isFocused()), k = (0, l.e7)([U.Z], () => U.Z.getMode(h.id)), B = i.useCallback(e => {
+    size: ea
+  }) : null, S = null != (t = (0, g.x)(h, ea, true)) ? t : T, A = (0, E.ZP)(h), [C, N] = (0, l.Wu)([L.Z], () => [L.Z.supports(W.AN.VIDEO), Object.keys(L.Z.getVideoDevices()).length]), R = null != I ? "".concat(A, ", ").concat(I.name) : A, x = (0, l.e7)([M.Z], () => M.Z.isFocused()), k = (0, l.e7)([U.Z], () => U.Z.getMode(h.id)), B = i.useCallback(e => {
     null != e.top && null != e.left && d.Z.move(e.left, e.top)
   }, []), Z = (0, c.q_F)({
     value: +!!O,
-    config: $(Q({}, s.config.stiff), {
+    config: ee(J({}, s.config.stiff), {
       clamp: true
     })
   }, "animate-always");
   i.useEffect(() => {
     let e = e => {
-      e.keyCode === H.yXg.ESCAPE && u.Z.stopRinging(h.id)
+      e.key === Y.vn.ESCAPE && u.Z.stopRinging(h.id)
     };
     return window.addEventListener("keydown", e), () => window.removeEventListener("keydown", e)
   }, [h]);
@@ -247,86 +248,86 @@ function es(e) {
       guildId: null == h ? true : h.guild_id,
       location: "IncomingCallModal"
     }),
-    X = k === H.WtW.VOICE || V && h.type === H.d4z.GUILD_VOICE ? W.intl.string(W.t.Js8cKy) : W.intl.string(W.t.KcnWCA),
-    J = (0, r.jsxs)(r.Fragment, {
+    Q = k === H.WtW.VOICE || V && h.type === H.d4z.GUILD_VOICE ? K.intl.string(K.t.Js8cKy) : K.intl.string(K.t.KcnWCA),
+    $ = (0, r.jsxs)(r.Fragment, {
       children: [null != I && null == T ? (0, r.jsx)("div", {
-        className: o()(z.icon, K.wrapper, K.ringingIncoming),
+        className: o()(q.icon, z.wrapper, z.ringingIncoming),
         children: (0, r.jsx)(b.ZP, {
-          className: z.mask,
+          className: q.mask,
           mask: b.QS.AVATAR_DEFAULT,
           width: O ? 40 : 80,
           height: O ? 40 : 80,
           children: (0, r.jsx)("div", {
-            className: o()(z.guildIcon, z.guildIconWithoutImage),
+            className: o()(q.guildIcon, q.guildIconWithoutImage),
             children: (0, r.jsx)("div", {
-              className: z.guildAcronym,
+              className: q.guildAcronym,
               children: (0, w.gM)(I)
             })
           })
         })
       }) : (0, r.jsx)(G.Z, {
-        className: z.icon,
+        className: q.icon,
         ringing: x,
         src: null != S ? S : "",
         ringingType: G.Z.RingingType.INCOMING,
         size: O ? c.EFr.SIZE_40 : c.EFr.SIZE_80
       }), (0, r.jsxs)("div", {
-        className: z.titleGroup,
+        className: q.titleGroup,
         children: [(0, r.jsx)(c.Text, {
-          className: z.title,
+          className: q.title,
           color: "header-primary",
           variant: O ? "text-md/semibold" : "text-lg/semibold",
           children: R
         }), (0, r.jsx)(c.Text, {
           color: "header-secondary",
-          className: z.subtitle,
+          className: q.subtitle,
           variant: O ? "text-sm/normal" : "text-md/normal",
-          children: X
+          children: Q
         })]
       })]
     }),
-    es = F ? ee : et,
-    el = (0, l.e7)([M.Z], () => M.Z.windowSize());
+    el = F ? et : en,
+    ec = (0, l.e7)([M.Z], () => M.Z.windowSize());
   return (0, r.jsx)(m.Gt, {
     value: y,
     children: (0, r.jsx)(_.Z, {
-      className: z.wrapper,
-      selector: ".".concat(z.root),
+      className: q.wrapper,
+      selector: ".".concat(q.root),
       initialPosition: {
         left: f,
         top: a
       },
-      maxX: el.width,
-      maxY: el.height,
+      maxX: ec.width,
+      maxY: ec.height,
       onDragEnd: B,
       dragAnywhere: true,
       children: (0, r.jsx)(c.f6W, {
         theme: O ? H.BRd.DARK : true,
         children: e => (0, r.jsxs)(s.animated.div, {
-          className: o()(z.root, q.elevationHigh, {
-            [z.previewCamera]: O
+          className: o()(q.root, X.elevationHigh, {
+            [q.previewCamera]: O
           }, e),
-          style: $(Q({}, n), {
-            width: Z.value.interpolate([0, 1], [es.width, en]),
-            minHeight: Z.value.interpolate([0, 1], [es.height, er]),
-            translateX: Z.value.interpolate([0, 1], [0, false * Math.abs(en - es.width) / 2])
+          style: ee(J({}, n), {
+            width: Z.value.interpolate([0, 1], [el.width, er]),
+            minHeight: Z.value.interpolate([0, 1], [el.height, ei]),
+            translateX: Z.value.interpolate([0, 1], [0, false * Math.abs(er - el.width) / 2])
           }),
-          children: [O ? (0, r.jsx)(ea, {
-            header: J
+          children: [O ? (0, r.jsx)(eo, {
+            header: $
           }) : (0, r.jsx)("div", {
-            className: z.mainChannelInfo,
-            children: J
-          }), (0, r.jsx)(eo, {
+            className: q.mainChannelInfo,
+            children: $
+          }), (0, r.jsx)(es, {
             canVideo: F,
             channel: h,
             numVideoDevices: N
           }), F && !O ? (0, r.jsx)("div", {
             "data-button-hoisted-classname-wrapper": true,
-            className: z.previewButton,
+            className: q.previewButton,
             children: (0, r.jsx)(c.Button, {
               variant: "secondary",
               size: "sm",
-              text: W.intl.string(W.t["8B0UDg"]),
+              text: K.intl.string(K.t["8B0UDg"]),
               fullWidth: true,
               onClick: () => v(true)
             })

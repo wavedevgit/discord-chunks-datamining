@@ -1,7 +1,7 @@
 /** Chunk was on 47840 **/
 /** chunk id: 955384, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -9,10 +9,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk925975 = require("./925975.js"),
   Chunk957730 = require("./957730.js"),
   Chunk981631 = require("./981631.js"),
+  Chunk295907 = require("./295907.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk26896 = require("./26896.js");
 
-function d(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -21,10 +22,10 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 
-function p(e) {
+function h(e) {
   e.stopPropagation()
 }
-class h extends Chunk647438.PureComponent {
+class f extends Chunk647438.PureComponent {
   render() {
     let {
       className: e,
@@ -44,7 +45,7 @@ class h extends Chunk647438.PureComponent {
     return (0, Chunk951288.jsxs)("div", {
       className: module,
       ref: this.node,
-      onContextMenu: p,
+      onContextMenu: h,
       children: [Chunk957730({
         textValue: exports,
         richValue: require,
@@ -58,12 +59,12 @@ class h extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), d(this, "node", r.createRef()), d(this, "onClickSave", () => {
+    super(...e), p(this, "node", r.createRef()), p(this, "onClickSave", () => {
       let {
         textValue: e
       } = this.props;
       this.onSubmit(e)
-    }), d(this, "onSubmit", e => {
+    }), p(this, "onSubmit", e => {
       let {
         message: t,
         channel: n,
@@ -106,14 +107,14 @@ class h extends Chunk647438.PureComponent {
           shouldRefocus: true
         })
       })
-    }), d(this, "onChange", (e, t, n) => {
+    }), p(this, "onChange", (e, t, n) => {
       let {
         channel: i,
         onChange: r
       } = this.props;
       r(i.id, t, n)
-    }), d(this, "onKeyDown", e => {
-      if (e.keyCode === s.yXg.ESCAPE && !e.shiftKey) {
+    }), p(this, "onKeyDown", e => {
+      if (e.key === c.vn.ESCAPE && !e.shiftKey) {
         let {
           channel: t,
           onCancel: n

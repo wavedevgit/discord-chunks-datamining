@@ -186,7 +186,7 @@ function Y(e) {
   })
 }
 
-function X(e) {
+function Q(e) {
   let {
     guildId: t,
     channelId: n,
@@ -222,7 +222,7 @@ function X(e) {
   })
 }
 
-function Q(e) {
+function X(e) {
   return "object" == typeof e && null != e && "colorString" in e && "name" in e
 }
 
@@ -241,7 +241,7 @@ function K(e) {
     "aria-label": W.intl.string(W.t["Uvt+p6"]),
     sections: [W.intl.string(W.t.LPJmLy), W.intl.string(W.t["9Oq93t"])],
     onRenderResult: e => {
-      if (Q(e)) {
+      if (X(e)) {
         let t;
         return null != e.colorString && (t = {
           color: e.colorString
@@ -250,7 +250,7 @@ function K(e) {
           children: e.name
         })
       }
-      if (e instanceof Z.Z) return (0, i.jsx)(X, {
+      if (e instanceof Z.Z) return (0, i.jsx)(Q, {
         guildId: t.id,
         channelId: n.id,
         user: e
@@ -261,7 +261,7 @@ function K(e) {
       M.Z.requestMembers(t.id, e, 20)
     },
     onSelect: e => {
-      null != e && (Q(e) ? a(e.id, b.BN.ROLE) : e instanceof Z.Z && a(e.id, b.BN.MEMBER))
+      null != e && (X(e) ? a(e.id, b.BN.ROLE) : e instanceof Z.Z && a(e.id, b.BN.MEMBER))
     },
     onClose: r,
     position: c

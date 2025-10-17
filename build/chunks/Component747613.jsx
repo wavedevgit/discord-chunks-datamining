@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk633302 = require("./633302.js"),
   Chunk176354 = require("./176354.js"),
   Chunk624138 = require("./624138.js"),
-  Chunk981631 = require("./981631.js"),
+  Chunk295907 = require("./295907.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk330580 = require("./330580.js");
 
@@ -184,7 +184,7 @@ let j = e => {
     } = e, s = b.ZP.getURL(L + n), [l, c] = i.useState(false), u = (0, h.Z)(null, () => c(false)), d = i.useRef(null), f = () => {
       c(true)
     }, m = e => {
-      e.keyCode === O.yXg.ESCAPE && (e.stopPropagation(), c(false), null != d.current && d.current.focus())
+      e.key === O.vn.ESCAPE && (e.stopPropagation(), c(false), null != d.current && d.current.focus())
     }, g = e => {
       var n;
       (0, p.t0)(e), c(false), null == (n = t.current) || n.focus()

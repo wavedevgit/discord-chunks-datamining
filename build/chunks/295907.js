@@ -420,7 +420,7 @@ var _ = function(e) {
     return e[e.WINDOWS = 1] = "WINDOWS", e[e.MACOS = 2] = "MACOS", e[e.LINUX = 3] = "LINUX", e[e.BROWSER = 4] = "BROWSER", e
   }({}),
   p = function(e) {
-    return e.ENTER = "Enter", e.TAB = "Tab", e.SPACE = " ", e.ESCAPE = "Escape", e.SHIFT = "Shift", e.ARROW_UP = "ArrowUp", e.ARROW_DOWN = "ArrowDown", e.ARROW_LEFT = "ArrowLeft", e.ARROW_RIGHT = "ArrowRight", e.HOME = "Home", e.END = "End", e
+    return e.ENTER = "Enter", e.TAB = "Tab", e.SPACE = " ", e.ESCAPE = "Escape", e.SHIFT = "Shift", e.ARROW_UP = "ArrowUp", e.ARROW_DOWN = "ArrowDown", e.ARROW_LEFT = "ArrowLeft", e.ARROW_RIGHT = "ArrowRight", e.HOME = "Home", e.END = "End", e.BACKSPACE = "Backspace", e.COMMA = ",", e
   }({}),
   h = function(e) {
     return e[e.Left = 0] = "Left", e[e.Right = 1] = "Right", e[e.Center = 2] = "Center", e[e.Back = 3] = "Back", e[e.Forward = 4] = "Forward", e

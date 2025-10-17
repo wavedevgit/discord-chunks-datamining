@@ -15,8 +15,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk339085 = require("./339085.js"),
   Chunk984933 = require("./984933.js"),
   Chunk883429 = require("./883429.js"),
-  Chunk981631 = require("./981631.js"),
   Chunk185923 = require("./185923.js"),
+  Chunk295907 = require("./295907.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk851458 = require("./851458.js");
 
@@ -113,7 +113,7 @@ function f(e) {
                       name: t.optionallyDiverseSequence
                     }), i && n()
                   },
-                  pickerIntention: g.Hz.COMMUNITY_CONTENT,
+                  pickerIntention: v.Hz.COMMUNITY_CONTENT,
                   onNavigateAway: f,
                   channel: t
                 })
@@ -173,7 +173,7 @@ function f(e) {
           })
         },
         onKeyDown: e => {
-          e.keyCode === v.yXg.ENTER && P.length > 0 && (P.length > 0 && _(), e.preventDefault())
+          e.key === g.vn.ENTER && P.length > 0 && (P.length > 0 && _(), e.preventDefault())
         },
         trailing: P.length > 0 || null != w ? {
           icon: r.k$p,

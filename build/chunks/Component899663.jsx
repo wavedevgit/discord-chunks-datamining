@@ -2,7 +2,7 @@
 /** chunk id: 899663, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,11 +14,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk607070 = require("./607070.js"),
   Chunk446108 = require("./446108.js"),
   Chunk981631 = require("./981631.js"),
+  Chunk295907 = require("./295907.js"),
   Chunk388032 = require("./388032.jsx");
 
-function p(e) {
+function h(e) {
   var t;
-  if (e.ctrlKey || e.altKey || e.metaKey || e.keyCode !== f.yXg.TAB || null == e.target) return;
+  if (e.ctrlKey || e.altKey || e.metaKey || e.key !== _.vn.TAB || null == e.target) return;
   let {
     target: n
   } = e, r = null == (t = (0, o.uB)(e)) ? true : t.activeElement;
@@ -29,7 +30,7 @@ function p(e) {
   })
 }
 
-function h(e) {
+function m(e) {
   let {
     children: t
   } = e, n = (0, s.cj)([u.Z], () => ({
@@ -38,16 +39,16 @@ function h(e) {
   })), o = (0, s.cj)([u.Z], () => ({
     enabled: u.Z.useForcedColors,
     rawValue: u.Z.systemForcedColors
-  })), c = (0, s.e7)([u.Z], () => u.Z.isHighContrastModeEnabled), f = (0, s.e7)([u.Z], () => u.Z.alwaysShowLinkDecorations), h = (0, s.e7)([u.Z], () => u.Z.keyboardModeEnabled), m = (0, s.e7)([u.Z], () => u.Z.isSwitchIconsEnabled), g = i.useMemo(() => ({
+  })), c = (0, s.e7)([u.Z], () => u.Z.isHighContrastModeEnabled), f = (0, s.e7)([u.Z], () => u.Z.alwaysShowLinkDecorations), _ = (0, s.e7)([u.Z], () => u.Z.keyboardModeEnabled), m = (0, s.e7)([u.Z], () => u.Z.isSwitchIconsEnabled), g = i.useMemo(() => ({
     reducedMotion: n,
     prefersCrossfades: false,
     forcedColors: o,
     alwaysShowLinkDecorations: f,
     highContrastModeEnabled: c,
-    keyboardModeEnabled: h,
+    keyboardModeEnabled: _,
     switchIconsEnabled: m
-  }), [n, o, f, c, h, m]);
-  return i.useEffect(() => ((0, a.waitForAllDefaultIntlMessagesLoaded)().then(() => (0, d.d1)()), _.intl.onLocaleChange(() => (0, d.d1)()), window.addEventListener("keydown", p), () => window.removeEventListener("keydown", p)), []), (0, r.jsx)(l.Sfi.Provider, {
+  }), [n, o, f, c, _, m]);
+  return i.useEffect(() => ((0, a.waitForAllDefaultIntlMessagesLoaded)().then(() => (0, d.d1)()), p.intl.onLocaleChange(() => (0, d.d1)()), window.addEventListener("keydown", h), () => window.removeEventListener("keydown", h)), []), (0, r.jsx)(l.Sfi.Provider, {
     value: g,
     children: t
   })

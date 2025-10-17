@@ -271,7 +271,7 @@ class eN extends Chunk647438.PureComponent {
     return (0, ee.A)(e, true)
   }
   getAutoArchiveDurationSliderMarker(e) {
-    return (0, ee.A)(e * Q.Z.Seconds.MINUTE, true)
+    return (0, ee.A)(e * X.Z.Seconds.MINUTE, true)
   }
   renderChannelInfo(e, t) {
     var n, l, r, a, o, h, g;
@@ -440,18 +440,18 @@ class eN extends Chunk647438.PureComponent {
         onChange: this.handleChangeDefaultTagSetting
       }) : null,
       Y = _ ? v : x,
-      X = null == (r = Z.Z.getCurrentConfig({
+      Q = null == (r = Z.Z.getCurrentConfig({
         guildId: e.guild_id,
         location: "ChannelSettingsOverview"
       })) ? true : r.enabled,
-      Q = true === T ? (0, i.jsx)(et.Z, {
+      X = true === T ? (0, i.jsx)(et.Z, {
         label: ec.intl.string(ec.t["tTHx9/"]),
-        helperText: this.getSlowmodeHelpText(X),
+        helperText: this.getSlowmodeHelpText(Q),
         channel: e,
         onChange: this.handleChangeSlowmode
       }) : (0, i.jsx)(p.iRW, {
         label: ec.intl.string(ec.t["tTHx9/"]),
-        helperText: this.getSlowmodeHelpText(X),
+        helperText: this.getSlowmodeHelpText(Q),
         initialValue: e.rateLimitPerUser,
         markers: el.BiE,
         stickToMarkers: true,
@@ -465,9 +465,9 @@ class eN extends Chunk647438.PureComponent {
       K = V.X_.has(e.type) ? R ? (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(p.izJ, {}), (0, i.jsxs)(p.C3N, {
           label: ec.intl.string(ec.t.O1c02t),
-          children: [Q, (0, i.jsx)(p.iRW, {
+          children: [X, (0, i.jsx)(p.iRW, {
             label: ec.intl.string(ec.t["fkY5+v"]),
-            helperText: X ? ec.intl.format(ec.t.nZSuEh, eC) : ec.intl.string(ec.t.kdZU6O),
+            helperText: Q ? ec.intl.format(ec.t.nZSuEh, eC) : ec.intl.string(ec.t.kdZU6O),
             initialValue: null != (h = e.defaultThreadRateLimitPerUser) ? h : 0,
             markers: el.BiE,
             stickToMarkers: true,
@@ -479,7 +479,7 @@ class eN extends Chunk647438.PureComponent {
             "aria-describedby": eb
           })]
         }), (0, i.jsx)(p.izJ, {})]
-      }) : Q : null,
+      }) : X : null,
       ee = _ && null != e.threadMetadata ? (0, i.jsx)(b.Z, {
         page: el.ZY5.CHANNEL_SETTINGS,
         children: (0, i.jsx)(B.Z, {

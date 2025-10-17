@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk981631 = require("./981631.js"),
+  Chunk295907 = require("./295907.js"),
   Chunk388032 = require("./388032.jsx");
 let o = e => {
   var t, n, {
@@ -47,13 +47,13 @@ let o = e => {
       g(e), v("")
     }
   }, [j, f, g, m, o.length]), C = i.useCallback(e => {
-    switch (e.keyCode) {
-      case a.yXg.BACKSPACE:
+    switch (e.key) {
+      case a.vn.BACKSPACE:
         0 === j.length && o.length > 0 && (e.preventDefault(), e.stopPropagation(), null == u || u(new Set([o[o.length - 1].id])));
         break;
-      case a.yXg.ENTER:
-      case a.yXg.TAB:
-      case a.yXg.COMMA:
+      case a.vn.ENTER:
+      case a.vn.TAB:
+      case a.vn.COMMA:
         e.preventDefault(), e.stopPropagation(), _()
     }
   }, [_, j.length, u, o]);

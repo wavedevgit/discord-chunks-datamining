@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk806966 = require("./806966.js"),
   Chunk28546 = require("./28546.js"),
   Chunk149203 = require("./149203.js"),
-  Chunk981631 = require("./981631.js"),
+  Chunk295907 = require("./295907.js"),
   Chunk388032 = require("./388032.jsx");
 let _ = Chunk647438.forwardRef(function(e, t) {
     let {
@@ -28,11 +28,11 @@ let _ = Chunk647438.forwardRef(function(e, t) {
     }, [n]), I = i.useCallback(() => {
       (0, c.ql)("")
     }, []), T = e => {
-      switch (e.keyCode) {
-        case d.yXg.ARROW_LEFT:
-        case d.yXg.ARROW_RIGHT:
-        case d.yXg.ARROW_UP:
-        case d.yXg.ARROW_DOWN:
+      switch (e.key) {
+        case d.vn.ARROW_LEFT:
+        case d.vn.ARROW_RIGHT:
+        case d.vn.ARROW_UP:
+        case d.vn.ARROW_DOWN:
           document.activeElement !== e.target && e.preventDefault()
       }
       p(e)
