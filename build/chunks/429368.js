@@ -15,11 +15,14 @@ let c = (0, Chunk51835.F)(() => ({
     selectionStates: new Map
   }), Chunk574583.X),
   u = e => {
-    var t, n, r, i;
+    var t, n;
     (0, s.QN)();
-    let u = (0, l.e7)([o.Z], () => o.Z.purchases),
-      d = c();
-    return (null == e ? true : e.type) !== a.Z.VARIANTS_GROUP ? 0 : Math.max(0, null != (i = null != (r = null == (t = d.selectionStates.get(e.storeListingId)) ? true : t.selectedVariantIndex) ? r : null == (n = e.variants) ? true : n.findIndex(e => !u.has(e.skuId))) ? i : 0)
+    let r = (0, l.e7)([o.Z], () => o.Z.purchases),
+      i = c(t => {
+        var n;
+        return (null == e ? true : e.type) !== a.Z.VARIANTS_GROUP ? 0 : null == (n = t.selectionStates.get(e.storeListingId)) ? true : n.selectedVariantIndex
+      });
+    return null != i ? Math.max(0, i) : Math.max(0, null != (n = null == e || null == (t = e.variants) ? true : t.findIndex(e => !r.has(e.skuId))) ? n : 0)
   },
   d = (e, t) => {
     c.setState(n => {

@@ -15,8 +15,8 @@ function c(e) {
   var t, n, {
       children: i,
       className: c,
-      innerClassName: d,
-      onChange: u,
+      innerClassName: u,
+      onChange: d,
       "aria-label": p,
       "aria-describedby": f,
       filters: _,
@@ -39,10 +39,10 @@ function c(e) {
       }
       return i
     }(e, ["children", "className", "innerClassName", "onChange", "aria-label", "aria-describedby", "filters", "multiple", "disabled", "submitting"]);
-  return (0, r.jsx)(a.tEY, {
+  return (0, r.jsx)(o.tEY, {
     within: true,
     children: (0, r.jsxs)("div", {
-      className: l()(c, (0, o.nY)((t = function(e) {
+      className: l()(c, (0, a.nY)((t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -75,11 +75,11 @@ function c(e) {
       "aria-disabled": g,
       children: [(0, r.jsx)("span", {
         "aria-hidden": true,
-        className: d,
+        className: u,
         children: i
       }), (0, r.jsx)(s.Z, {
         tabIndex: 0,
-        onChange: u,
+        onChange: d,
         filters: _,
         multiple: v,
         "aria-label": p,

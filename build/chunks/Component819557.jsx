@@ -16,9 +16,9 @@ function s(e) {
     children: t
   } = e;
   return (0, r.jsx)("div", {
-    className: a.cellGroup,
+    className: o.cellGroup,
     children: (0, r.jsx)("div", {
-      className: a.content,
+      className: o.content,
       children: t
     })
   })
@@ -31,48 +31,48 @@ function c(e) {
     description: i,
     iconClassName: s,
     color: c,
-    listType: d = "icon",
-    completed: u = false,
+    listType: u = "icon",
+    completed: d = false,
     index: p
   } = e;
   return (0, r.jsxs)("div", {
-    className: a.cell,
+    className: o.cell,
     children: [(() => {
-      if ("numbered" === d && null != p)
-        if (u) return (0, r.jsx)("div", {
-          className: a.number,
-          children: (0, r.jsx)(o.sV5, {
+      if ("numbered" === u && null != p)
+        if (d) return (0, r.jsx)("div", {
+          className: o.number,
+          children: (0, r.jsx)(a.sV5, {
             color: "green",
-            className: l()(a.icon, s)
+            className: l()(o.icon, s)
           })
         });
-        else return (0, r.jsx)(o.Heading, {
+        else return (0, r.jsx)(a.Heading, {
           variant: "heading-md/semibold",
           color: "text-brand",
-          className: a.number,
+          className: o.number,
           children: p + 1
         });
       if (null != t) return (0, r.jsx)("div", {
-        className: a.iconContainer,
+        className: o.iconContainer,
         children: (0, r.jsx)(t, {
           color: null != c ? c : "currentColor",
-          className: l()(a.icon, s)
+          className: l()(o.icon, s)
         })
       })
     })(), (0, r.jsxs)("div", {
-      className: a.textContainer,
-      children: [(0, r.jsx)(o.Text, {
+      className: o.textContainer,
+      children: [(0, r.jsx)(a.Text, {
         variant: "text-md/semibold",
         color: "header-primary",
         className: l()({
-          [a.completedText]: u
+          [o.completedText]: d
         }),
         children: n
-      }), null != i && (0, r.jsx)(o.Text, {
+      }), null != i && (0, r.jsx)(a.Text, {
         variant: "text-xs/medium",
         color: "text-secondary",
         className: l()({
-          [a.completedText]: u
+          [o.completedText]: d
         }),
         children: i
       })]

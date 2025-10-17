@@ -6,11 +6,11 @@ require.d(exports, {
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
-  a = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk55935 = require("./55935.js"),
   Chunk388032 = require("./388032.jsx");
 
-function d(e, t, n) {
+function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -18,7 +18,7 @@ function d(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class u extends(r = Chunk647438.PureComponent) {
+class d extends(r = Chunk647438.PureComponent) {
   componentDidMount() {
     let {
       intervalDuration: e,
@@ -36,14 +36,14 @@ class u extends(r = Chunk647438.PureComponent) {
       showDays: t,
       showUnits: n,
       className: r
-    } = this.props, l = [e.days, e.hours, e.minutes, e.seconds], o = [c.intl.string(c.t["6m/6nJ"]), c.intl.string(c.t.n7dksL), c.intl.string(c.t["1LyF1t"]), c.intl.string(c.t.QJyuxc)];
+    } = this.props, l = [e.days, e.hours, e.minutes, e.seconds], a = [c.intl.string(c.t["6m/6nJ"]), c.intl.string(c.t.n7dksL), c.intl.string(c.t["1LyF1t"]), c.intl.string(c.t.QJyuxc)];
     if (0 === e.days) l.shift();
     else if (!t) {
       let e = l.shift();
       l[0] += 24 * e
     }
-    let s = a()(l).map(e => e < 10 ? "0".concat(e) : e).map((e, t) => [t > 0 && !n ? ":" : " ", (0, i.jsxs)("span", {
-      children: [e, n ? o[l.length - t - 1] : null]
+    let s = o()(l).map(e => e < 10 ? "0".concat(e) : e).map((e, t) => [t > 0 && !n ? ":" : " ", (0, i.jsxs)("span", {
+      children: [e, n ? a[l.length - t - 1] : null]
     }, t)]).flatten().value();
     return (0, i.jsx)("span", {
       className: r,
@@ -66,13 +66,13 @@ class u extends(r = Chunk647438.PureComponent) {
     return null != exports ? exports(Chunk647438, this.defaultRender.bind(this, Chunk647438)) : this.defaultRender(Chunk647438)
   }
   constructor(...e) {
-    super(...e), d(this, "_interval", true)
+    super(...e), u(this, "_interval", true)
   }
 }
-d(u, "defaultProps", {
+u(d, "defaultProps", {
   showDays: true,
   showUnits: false,
   stopAtOneSec: false,
   intervalDuration: 1e3
 });
-let p = u
+let p = d

@@ -45,8 +45,8 @@ let k = t => null != t ? _.intl.format(_.t["4kp0AA"], {
       itemConsumed: a
     } = t;
     if (null != n) return n;
-    if (S.Vt.ORB_PROFILE_BADGE === e.skuId) return _.intl.string(m.default.nvaTQk);
-    if (S.Vt.FRACTIONAL_PREMIUM === e.skuId)
+    if (R.Vt.ORB_PROFILE_BADGE === e.skuId) return _.intl.string(T.default.nvaTQk);
+    if (R.Vt.FRACTIONAL_PREMIUM === e.skuId)
       if (a) return _.intl.string(_.t.t0xkSE);
       else return _.intl.string(_.t.g5W1g4);
     if (i && !r) return _.intl.string(_.t.IMffmp);
@@ -66,12 +66,12 @@ let k = t => null != t ? _.intl.format(_.t["4kp0AA"], {
       expiresAt: d
     } = t;
     if (null != n) return n;
-    if (S.Vt.ORB_PROFILE_BADGE === e.skuId) return _.intl.string(m.default.UnPGio);
-    if (S.Vt.FRACTIONAL_PREMIUM !== e.skuId) return (0, s.EQ)(null == e ? true : e.type).with(u.Z.BUNDLE, () => {
+    if (R.Vt.ORB_PROFILE_BADGE === e.skuId) return _.intl.string(T.default.UnPGio);
+    if (R.Vt.FRACTIONAL_PREMIUM !== e.skuId) return (0, s.EQ)(null == e ? true : e.type).with(u.Z.BUNDLE, () => {
       let {
         itemOneName: t,
         itemTwoName: n
-      } = (0, P.Ws)(e);
+      } = (0, m.Ws)(e);
       return _.intl.format(_.t.fXw44e, {
         itemOneName: t,
         itemTwoName: n
@@ -82,11 +82,11 @@ let k = t => null != t ? _.intl.format(_.t["4kp0AA"], {
         days: 3
       });
       return a ? _.intl.format(_.t.bhLChI, {
-        helpCenterLink: g.Z.getArticleURL(T.BhN.FRACTIONAL_PREMIUM_ABOUT),
+        helpCenterLink: g.Z.getArticleURL(S.BhN.FRACTIONAL_PREMIUM_ABOUT),
         duration: t,
         expirationDate: d
       }) : o ? _.intl.string(_.t.fBmhEx) : _.intl.format(_.t["1ZBX4O"], {
-        helpCenterLink: g.Z.getArticleURL(T.BhN.FRACTIONAL_PREMIUM_ABOUT),
+        helpCenterLink: g.Z.getArticleURL(S.BhN.FRACTIONAL_PREMIUM_ABOUT),
         duration: t
       })
     }
@@ -102,24 +102,24 @@ let k = t => null != t ? _.intl.format(_.t["4kp0AA"], {
       openProfileSettings: y,
       itemConsumed: g
     } = t, I = [];
-    if (S.Vt.ORB_PROFILE_BADGE === e.skuId) I.push({
-      text: _.intl.string(m.default.yfwZu7),
+    if (R.Vt.ORB_PROFILE_BADGE === e.skuId) I.push({
+      text: _.intl.string(T.default.yfwZu7),
       variant: "primary",
       onClick: () => {
-        n(), E.S.dispatch(T.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, {})
+        n(), E.S.dispatch(S.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, {})
       }
     }, {
       text: _.intl.string(_.t["H57f4+"]),
       variant: "secondary",
       onClick: () => {
         n(), (0, A.Y)({
-          pageType: T.ZY5.SHOP_ORBS_TAB,
-          sectionType: T.jXE.ORBS_BADGE_REDEMPTION_MODAL,
-          ctaObject: T.qAy.CTA_TO_QUEST_HOME
-        }), (0, h.navigateToQuestHome)()
+          pageType: S.ZY5.SHOP_ORBS_TAB,
+          sectionType: S.jXE.ORBS_BADGE_REDEMPTION_MODAL,
+          ctaObject: S.qAy.CTA_TO_QUEST_HOME
+        }), (0, O.navigateToQuestHome)()
       }
     });
-    else if (S.Vt.FRACTIONAL_PREMIUM === e.skuId) g ? I.push({
+    else if (R.Vt.FRACTIONAL_PREMIUM === e.skuId) g ? I.push({
       text: _.intl.string(_.t.cpT0Cg),
       variant: "secondary",
       onClick: n
@@ -138,7 +138,7 @@ let k = t => null != t ? _.intl.format(_.t["4kp0AA"], {
       variant: "primary",
       onClick: () => {
         (0, b.openUserSettings)(f.n.SUBSCRIPTIONS_PANEL, {
-          section: T.oAB.SUBSCRIPTIONS
+          section: S.oAB.SUBSCRIPTIONS
         }), n()
       }
     });
@@ -156,7 +156,7 @@ let k = t => null != t ? _.intl.format(_.t["4kp0AA"], {
             return
           }
           if (e.type === u.Z.PROFILE_EFFECT) {
-            a()(t.type === u.Z.PROFILE_EFFECT, "product type and item type are the same"), (0, O.H)({
+            a()(t.type === u.Z.PROFILE_EFFECT, "product type and item type are the same"), (0, h.H)({
               initialSelectedEffect: t,
               analyticsLocations: i
             });
@@ -182,8 +182,8 @@ let k = t => null != t ? _.intl.format(_.t["4kp0AA"], {
   N = (t, e) => {
     let n = i.useMemo(() => (0, I.jm)(t.type, t.skuId), [t.type, t.skuId]);
     return i.useEffect(() => {
-      y.default.track(T.rMx.OPEN_MODAL, {
-        type: T.jXE.COLLECTIBLES_SHOP_COLLECTED_MODAL,
+      y.default.track(S.rMx.OPEN_MODAL, {
+        type: S.jXE.COLLECTIBLES_SHOP_COLLECTED_MODAL,
         location_stack: e,
         sku_id: t.skuId,
         product_type: n
@@ -196,7 +196,7 @@ let k = t => null != t ? _.intl.format(_.t["4kp0AA"], {
     let n = i.useRef(new r.qA),
       l = (0, i.useRef)(null),
       [a, s] = i.useState(null),
-      u = (0, R.UY)({
+      u = (0, P.UY)({
         purchaseType: e,
         skuId: t.skuId
       });
