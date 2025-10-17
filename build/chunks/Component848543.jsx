@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 848543, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => Z
+  Z: () => A
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -62,7 +62,7 @@ function x(e, t) {
   }), e
 }
 
-function Z(e) {
+function A(e) {
   var {
     channel: t
   } = e, l = function(e, t) {
@@ -80,13 +80,13 @@ function Z(e) {
     }
     return i
   }(e, ["channel"]);
-  let Z = i.useRef(null),
+  let A = i.useRef(null),
     {
-      mute: A,
+      mute: Z,
       suppress: w
     } = (0, E.Z)(t),
     L = (0, o.e7)([O.Z], () => O.Z.isDeaf()),
-    R = A || w || L,
+    R = Z || w || L,
     [D, M] = i.useState(false),
     k = t.getGuildId(),
     U = (0, y.sR)({
@@ -127,11 +127,11 @@ function Z(e) {
   }), (0, r.jsx)(g.Gt, {
     value: H,
     children: (0, r.jsx)(u.u, {
-      targetElementRef: Z,
-      text: A ? T.intl.string(T.t["Ox4/zc"]) : w ? T.intl.string(T.t["+YBKYG"]) : L ? T.intl.string(T.t.X1lQlp) : T.intl.string(T.t["6EJvHh"]),
+      targetElementRef: A,
+      text: Z ? T.intl.string(T.t["Ox4/zc"]) : w ? T.intl.string(T.t["+YBKYG"]) : L ? T.intl.string(T.t.X1lQlp) : T.intl.string(T.t["6EJvHh"]),
       asContainer: true,
       children: (0, r.jsx)(p.yRy, {
-        targetElementRef: Z,
+        targetElementRef: A,
         animation: p.yRy.Animation.FADE,
         shouldShow: D,
         position: "top",
@@ -152,7 +152,7 @@ function Z(e) {
           })
         },
         children: e => (0, r.jsx)("div", {
-          ref: Z,
+          ref: A,
           children: (0, r.jsx)(d.zx, x(j(x(j({}, e), {
             className: a()(P.button, P.buttonColor, {
               [P.greyButtonActive]: D,

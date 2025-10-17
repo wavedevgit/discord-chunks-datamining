@@ -31,8 +31,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk46140 = require("./46140.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk559909 = require("./559909.js");
-let Z = 15 * Chunk70956.Z.Millis.MINUTE,
-  A = (0, Chunk525296.Z)(function(e) {
+let A = 15 * Chunk70956.Z.Millis.MINUTE,
+  Z = (0, Chunk525296.Z)(function(e) {
     let {
       party: t,
       onUserContextMenu: n,
@@ -64,7 +64,7 @@ let Z = 15 * Chunk70956.Z.Millis.MINUTE,
         in_voice_channel: v,
         games_detected: e
       })
-    }, [b, _, O, v, g]), j = s()(P, Z);
+    }, [b, _, O, v, g]), j = s()(P, A);
     return null != c || null != d ? (0, r.jsx)(u.yRy, {
       targetElementRef: o,
       position: "left",
@@ -161,7 +161,7 @@ function L() {
     let {
       party: t
     } = e;
-    return (0, r.jsx)(A, {
+    return (0, r.jsx)(Z, {
       party: t,
       quest: s.get(t.id)
     }, t.id)

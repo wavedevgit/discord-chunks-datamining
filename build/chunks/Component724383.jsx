@@ -29,7 +29,7 @@ let _ = function() {
           return (0, r.jsx)(c.default, {});
         case m.GlobalDiscoveryTab.QUESTS:
           return (0, r.jsx)(d.Z, {
-            withTopBorder: false
+            topLevelRoute: false
           });
         default:
           (0, p.vE)(e)

@@ -4,7 +4,9 @@
 require.d(exports, {
   CD: () => o,
   DL: () => i,
-  m8: () => s
+  GE: () => c,
+  m8: () => s,
+  yE: () => l
 });
 var Chunk427164 = require("./427164.js");
 let i = (0, Chunk427164.le)({
@@ -69,6 +71,35 @@ let i = (0, Chunk427164.le)({
   variations: {
     1: {
       enabled: true
+    }
+  }
+});
+var l = function(e) {
+  return e[e.DISCOVER = 0] = "DISCOVER", e[e.ACTION = 1] = "ACTION", e[e.REWARD = 2] = "REWARD", e[e.EARN = 3] = "EARN", e
+}({});
+let c = (0, Chunk427164.le)({
+  name: "2025-10-quest-home-entrypoint-onboarding",
+  kind: "user",
+  defaultConfig: {
+    enabled: false,
+    variant: null
+  },
+  variations: {
+    1: {
+      enabled: true,
+      variant: 0
+    },
+    2: {
+      enabled: true,
+      variant: 1
+    },
+    3: {
+      enabled: true,
+      variant: 2
+    },
+    4: {
+      enabled: true,
+      variant: 3
     }
   }
 })

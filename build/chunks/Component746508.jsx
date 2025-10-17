@@ -381,7 +381,7 @@ function eX(e) {
     Component: _,
     events: E,
     play: O
-  } = (0, A.Z)("RTCConnection");
+  } = (0, Z.Z)("RTCConnection");
   return n ? (0, r.jsx)(m.aML, {
     "data-migration-pending": true,
     text: p,
@@ -401,7 +401,7 @@ function eX(e) {
         }), E), {
           onClick: () => {
             var n;
-            O(), (0, Z.Z)({
+            O(), (0, A.Z)({
               context: null != t ? {
                 type: "channel",
                 channel: t
@@ -471,12 +471,12 @@ function eJ(e) {
     P = O || o || v,
     j = null != C,
     {
-      Component: Z,
-      events: A,
+      Component: A,
+      events: Z,
       play: w
     } = (0, p.P)(j ? "disable" : "enable");
   i.useEffect(() => () => w(), [w, j]);
-  let D = (0, r.jsx)(Z, {
+  let D = (0, r.jsx)(A, {
     size: "md",
     color: "currentColor",
     className: a()(eG.buttonIcon, {
@@ -528,11 +528,11 @@ function eJ(e) {
         }), N ? l : null), {
           onMouseEnter: () => {
             var t;
-            null == i || i(), null == (t = e.onMouseEnter) || t.call(e), A.onMouseEnter()
+            null == i || i(), null == (t = e.onMouseEnter) || t.call(e), Z.onMouseEnter()
           },
           onMouseLeave: () => {
             var t;
-            null == (t = e.onMouseLeave) || t.call(e), A.onMouseLeave()
+            null == (t = e.onMouseLeave) || t.call(e), Z.onMouseLeave()
           },
           innerClassName: eG.buttonContents,
           wrapperClassName: eG.button,
@@ -845,15 +845,15 @@ let e1 = (0, Chunk730749.Z)(function(e) {
         }
       })) ? e : S) ? t : []
     }, [y, I, S]),
-    [P, Z] = i.useState(false);
+    [P, A] = i.useState(false);
   i.useEffect(() => {
-    (E || O) && Z(false)
-  }, [E, O, Z]);
+    (E || O) && A(false)
+  }, [E, O, A]);
   let {
-    analyticsLocations: A
+    analyticsLocations: Z
   } = (0, x.ZP)(j.Z.RTC_PANEL), w = (0, C.Z)(null != d ? d : eL.lds, null == c ? true : c.id), L = (0, T.Z)(null == c ? true : c.id);
   return (0, r.jsx)(x.Gt, {
-    value: A,
+    value: Z,
     children: (0, r.jsxs)("div", {
       className: eG.wrapper,
       children: [null != t || null != n ? (0, r.jsx)(B.Z, {
@@ -871,7 +871,7 @@ let e1 = (0, Chunk730749.Z)(function(e) {
         showVoiceStates: v,
         shouldShowVoicePanelIntroduction: h,
         isPrivateChannelWithEnabledActivities: L,
-        analyticsLocations: A
+        analyticsLocations: Z
       })), !P && E && null != d ? (0, r.jsxs)("div", {
         className: eG.viewAsRolesWarning,
         children: [(0, r.jsx)(m.Text, {
@@ -882,7 +882,7 @@ let e1 = (0, Chunk730749.Z)(function(e) {
           size: "sm",
           fullWidth: true,
           onClick: () => {
-            Z(true)
+            A(true)
           },
           text: eU.intl.string(eU.t.WAI6xs),
           focusProps: eW

@@ -196,8 +196,8 @@ class x {
     I(this, "_rows", true), this._rows = e
   }
 }
-let Z = true,
-  A = false,
+let A = true,
+  Z = false,
   w = Chunk981631.pJs.ONLINE,
   L = new x,
   R = true,
@@ -205,11 +205,11 @@ let Z = true,
 
 function M() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-  Z && (module || w !== Chunk981631.pJs.ONLINE && w !== Chunk981631.pJs.ADD_FRIEND) && !A && (Z = false, A = true, Chunk194359.Z.fetchRelationships())
+  A && (module || w !== Chunk981631.pJs.ONLINE && w !== Chunk981631.pJs.ADD_FRIEND) && !Z && (A = false, Z = true, Chunk194359.Z.fetchRelationships())
 }
 
 function k() {
-  if (Z = true, R ? A = false : M(), L = L.reset(), D) return;
+  if (A = true, R ? Z = false : M(), L = L.reset(), D) return;
   let e = L.getRelationshipCounts();
   w = 0 === module[Chunk981631.OGo.FRIEND] ? 0 !== module[Chunk981631.OGo.PENDING_INCOMING] ? Chunk981631.pJs.PENDING : Chunk981631.pJs.ADD_FRIEND : Chunk981631.pJs.ONLINE
 }
@@ -229,7 +229,7 @@ class B extends(r = Chunk442837.ZP.Store) {
   }
   getState() {
     return {
-      fetching: A,
+      fetching: Z,
       section: w,
       rows: L
     }
@@ -250,10 +250,10 @@ let H = new B(Chunk570140.Z, {
     return R = null != t, U(), !R
   },
   LOAD_RELATIONSHIPS_SUCCESS: function() {
-    A = false
+    Z = false
   },
   LOAD_RELATIONSHIPS_FAILURE: function() {
-    Z = true, A = true
+    A = true, Z = true
   },
   FRIENDS_SET_INITIAL_SECTION: function(e) {
     w = e.section, D = true

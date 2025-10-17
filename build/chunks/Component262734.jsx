@@ -41,7 +41,7 @@ function P(e) {
   } = (0, o.cj)([_.Z], () => ({
     selectedChannelId: _.Z.getChannelId(),
     selectedVoiceChannelId: _.Z.getVoiceChannelId()
-  })), x = (0, o.e7)([h.Z], () => null != j && P === j && h.Z.getChatOpen(j), [P, j]), Z = (0, o.e7)([g.ZP], () => g.ZP.callChatSidebarWidth), A = (0, u.dQu)(s.Z.modules.chat.RESIZE_HANDLE_WIDTH), w = i.useRef(null), L = i.useRef(null), [R, D] = i.useState({
+  })), x = (0, o.e7)([h.Z], () => null != j && P === j && h.Z.getChatOpen(j), [P, j]), A = (0, o.e7)([g.ZP], () => g.ZP.callChatSidebarWidth), Z = (0, u.dQu)(s.Z.modules.chat.RESIZE_HANDLE_WIDTH), w = i.useRef(null), L = i.useRef(null), [R, D] = i.useState({
     width: 0,
     height: 0
   }), M = i.useCallback(() => {
@@ -86,7 +86,7 @@ function P(e) {
   }
   let V = C.MI.NO_CHAT;
   if (null == n) return null;
-  let F = (null != Z ? Z : I.$Y6) + A,
+  let F = (null != A ? A : I.$Y6) + Z,
     z = (0, v.ro)(t);
   return (0, r.jsx)(u.f6W, {
     theme: I.BRd.DARK,

@@ -36,7 +36,7 @@ let b = function(e) {
       label: _,
       value: _
     }), e
-  }, [T, _]), Z = i.useCallback(async () => {
+  }, [T, _]), A = i.useCallback(async () => {
     if (null != _) {
       I(true);
       try {
@@ -45,7 +45,7 @@ let b = function(e) {
         I(false)
       }
     }
-  }, [_, I]), A = i.useCallback(async () => {
+  }, [_, I]), Z = i.useCallback(async () => {
     if (null != _) {
       I(true);
       try {
@@ -105,13 +105,13 @@ let b = function(e) {
       children: (0, r.jsxs)(a.ButtonGroup, {
         className: m.controlButtons,
         children: [(0, r.jsx)(a.Button, {
-          onClick: Z,
+          onClick: A,
           disabled: y,
           loading: y,
           variant: "secondary",
           text: g.intl.string(g.t.jQEfRU)
         }), (0, r.jsx)(a.Button, {
-          onClick: A,
+          onClick: Z,
           disabled: y,
           loading: y,
           variant: "secondary",

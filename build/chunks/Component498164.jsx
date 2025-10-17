@@ -75,7 +75,7 @@ let k = {
           code: t
         }
       } = e;
-      return await (0, A.T)(t, "Desktop Modal")
+      return await (0, Z.T)(t, "Desktop Modal")
     }
   },
   [Chunk981631.Etm.GUILD_TEMPLATE_BROWSER]: {
@@ -90,7 +90,7 @@ let k = {
       let {
         guildTemplate: i
       } = await _.Z.resolveGuildTemplate(t);
-      if (null == i) throw new Z.Z({
+      if (null == i) throw new A.Z({
         errorCode: L.lTL.INVALID_GUILD_TEMPLATE
       }, "Invalid guild template id: ".concat(t));
       return x.ZP.focus(), (0, a.ZDy)(async () => {
@@ -145,7 +145,7 @@ let k = {
             }), e({
               giftCode: l
             })
-          }).catch(() => i(new Z.Z({
+          }).catch(() => i(new A.Z({
             errorCode: L.lTL.INVALID_GIFT_CODE
           }, "Invalid gift code: ".concat(t))))
         })
@@ -324,7 +324,7 @@ let k = {
           state: l
         }
       } = e;
-      if (!S.Z.hasPendingAuthorizedState(l)) throw new Z.Z({
+      if (!S.Z.hasPendingAuthorizedState(l)) throw new A.Z({
         errorCode: L.lTL.INVALID_CONNECTION_CALLBACK_STATE
       }, "Provider authorization did not originate from this discord client");
       try {
@@ -335,7 +335,7 @@ let k = {
           state: l
         })
       } catch (e) {
-        if ((null == e ? true : e.status) === 400) throw new Z.Z({
+        if ((null == e ? true : e.status) === 400) throw new A.Z({
           errorCode: L.lTL.BAD_REQUEST_FOR_PROVIDER
         }, "Bad request for provider");
         throw P.S.dispatch(L.CkL.CONNECTIONS_CALLBACK_ERROR), e
