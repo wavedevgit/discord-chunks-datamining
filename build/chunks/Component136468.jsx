@@ -51,12 +51,14 @@ function f(e, t) {
 }
 
 function _(e) {
-  let t = (0, o.A)("Switch"),
+  var t, n;
+  let c = i.useContext(o.KJ),
+    d = null == c || null == (n = c.experiments) || null == (t = n.enabledExperiments) ? true : t.includes("mana-toggle-inputs"),
     {
-      switchIconsEnabled: n
+      switchIconsEnabled: _
     } = i.useContext(a.S);
-  if (t) {
-    let t = true !== e.hasIcon ? e.hasIcon : n;
+  if (d) {
+    let t = true !== e.hasIcon ? e.hasIcon : _;
     return (0, r.jsx)(s.k, f(u({}, e), {
       hasIcon: t
     }))

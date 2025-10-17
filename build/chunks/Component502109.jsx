@@ -2,8 +2,8 @@
 /** chunk id: 502109, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Ch: () => S,
-  Tr: () => T
+  Ch: () => C,
+  Tr: () => A
 }), require("./642613.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,14 +13,16 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk710845 = require("./710845.js"),
   Chunk219929 = require("./219929.jsx"),
+  Chunk857192 = require("./857192.js"),
   Chunk626135 = require("./626135.js"),
   Chunk358085 = require("./358085.js"),
   Chunk622999 = require("./622999.js"),
+  Chunk51144 = require("./51144.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk360751 = require("./360751.js");
 
-function g(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -29,22 +31,22 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 
-function E(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      g(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
 }
 
-function b(e, t) {
+function O(e, t) {
   if (null == e) return {};
-  var n, r, i = y(e, t);
+  var n, r, i = v(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -52,25 +54,29 @@ function b(e, t) {
   return i
 }
 
-function y(e, t) {
+function v(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let O = new Chunk710845.Z("PaymentRequest"),
-  v = Object.values({
+let I = new Chunk710845.Z("PaymentRequest"),
+  T = Object.values({
     applePay: "applePay",
     googlePay: "googlePay",
     link: "link",
     browserCard: "browserCard"
   });
-class I extends Chunk647438.Component {
+class S extends Chunk647438.Component {
   componentDidMount() {
-    (0, Chunk358085.isDesktop)() || (this.disableWallets = v.filter(e => e !== this.paymentRequestWallet).sort(), (0, Chunk622999.d2)().then(e => {
+    (0, Chunk358085.isDesktop)() || (this.disableWallets = T.filter(e => e !== this.paymentRequestWallet).sort(), (0, Chunk622999.d2)().then(e => {
       this.initPaymentRequest(e)
     }))
+  }
+  logInfo(e) {
+    for (var t = arguments.length, n = Array(t > 1 ? t - 1 : 0), r = 1; r < t; r++) n[r - 1] = arguments[r];
+    (this.isUserStaff || d.default.isLoggingAnalyticsEvents) && I.info("[".concat(this.paymentRequestWalletName, "] ").concat(e), ...n)
   }
   validatePaymentRequest() {
     let {
@@ -79,14 +85,14 @@ class I extends Chunk647438.Component {
     } = this.state;
     if (null == module) {
       let e = "Payment request is not ready";
-      return O.error(module), {
+      return this.logInfo(module), {
         available: false,
         errorMessage: module
       }
     }
     if (null == exports) {
       let e = "Payment request is unavailable or has not been set up in this browser. ";
-      return O.error(module, "Stripe CanMakePaymentResult: ", exports), {
+      return this.logInfo(module, "Stripe canMakePaymentResult: ", exports), {
         available: false,
         errorMessage: module
       }
@@ -118,7 +124,7 @@ class I extends Chunk647438.Component {
       payment_request_wallet: this.paymentRequestWallet,
       activity_session_id: r
     };
-    d.default.track(e, i)
+    f.default.track(e, i)
   }
   onValidPaymentRequest() {
     this.trackAnalyticsEvent(Chunk981631.rMx.PAYMENT_REQUEST_LOADED), true !== this.props.onValidPaymentRequest && this.props.onValidPaymentRequest()
@@ -127,8 +133,8 @@ class I extends Chunk647438.Component {
     var {
       iconType: t,
       buttonText: n
-    } = e, i = b(e, ["iconType", "buttonText"]);
-    return (0, r.jsx)(s.zxk, E({
+    } = e, i = O(e, ["iconType", "buttonText"]);
+    return (0, r.jsx)(s.zxk, y({
       fullWidth: true,
       onClick: this.attemptPaymentRequest,
       text: n,
@@ -136,11 +142,11 @@ class I extends Chunk647438.Component {
       icon: () => {
         var e;
         return (0, r.jsx)(u.ZP, {
-          className: null != (e = this.props.iconClassName) ? e : m.buttonIcon,
+          className: null != (e = this.props.iconClassName) ? e : E.buttonIcon,
           type: t
         })
       }
-    }, i), p.HeQ.PAYMENT_REQUEST)
+    }, i), m.HeQ.PAYMENT_REQUEST)
   }
   renderConnectorView() {
     return (0, Chunk951288.jsxs)("div", {
@@ -172,11 +178,11 @@ class I extends Chunk647438.Component {
     return module ? this.renderMain() : null
   }
   constructor(...e) {
-    super(...e), g(this, "initialState", {
+    super(...e), b(this, "initialState", {
       submitting: true,
       paymentRequest: null,
       canMakePaymentResult: null
-    }), g(this, "state", E({}, this.initialState)), g(this, "disableWallets", []), g(this, "initPaymentRequest", async e => {
+    }), b(this, "state", y({}, this.initialState)), b(this, "disableWallets", []), b(this, "isUserStaff", (0, h.vP)()), b(this, "initPaymentRequest", async e => {
       if (null == e) return;
       this.setState({
         submitting: true,
@@ -204,20 +210,20 @@ class I extends Chunk647438.Component {
           paymentMethod: r,
           payerName: i
         } = e;
-        n(r, i), this.trackAnalyticsEvent(p.rMx.PAYMENT_REQUEST_COMPLETED), t("success")
+        n(r, i), this.trackAnalyticsEvent(m.rMx.PAYMENT_REQUEST_COMPLETED), t("success")
       }), t.on("cancel", () => {
         n(null)
       });
       let r = await t.canMakePayment();
-      return O.info("PaymentRequest availablity check", r), this.setState({
+      return this.logInfo("PaymentRequest availability check canMakePayment result: ", r), this.setState({
         submitting: false,
         paymentRequest: t,
         canMakePaymentResult: r
       }, () => {
         this.initPaymentRequestCallback(r)
       }), r
-    }), g(this, "attemptPaymentRequest", () => {
-      if ((0, f.isDesktop)()) return void this.props.onChooseType(p.HeQ.PAYMENT_REQUEST, this.paymentRequestWallet);
+    }), b(this, "attemptPaymentRequest", () => {
+      if ((0, _.isDesktop)()) return void this.props.onChooseType(m.HeQ.PAYMENT_REQUEST, this.paymentRequestWallet);
       let {
         available: e
       } = this.validatePaymentRequest();
@@ -225,11 +231,11 @@ class I extends Chunk647438.Component {
       let {
         paymentRequest: t
       } = this.state;
-      e && null != t && (t.show(), this.props.onChooseType(p.HeQ.PAYMENT_REQUEST, this.paymentRequestWallet))
+      e && null != t && (t.show(), this.props.onChooseType(m.HeQ.PAYMENT_REQUEST, this.paymentRequestWallet))
     })
   }
 }
-class T extends I {
+class A extends S {
   validatePaymentRequest() {
     let {
       paymentRequest: e,
@@ -237,14 +243,14 @@ class T extends I {
     } = this.state;
     if (null == module) {
       let e = "Payment request is not ready";
-      return O.error(module), {
+      return this.logInfo(module), {
         available: false,
         errorMessage: module
       }
     }
     if (null == exports || !exports.googlePay) {
       let e = "Google Pay is unavailable or has not been set up in this browser. ";
-      return O.error(module, "Stripe CanMakePaymentResult: ", exports), {
+      return this.logInfo(module, "Stripe canMakePaymentResult: ", exports), {
         available: false,
         errorMessage: module
       }
@@ -276,10 +282,10 @@ class T extends I {
     })
   }
   constructor(...e) {
-    super(...e), g(this, "state", E({}, this.initialState)), g(this, "paymentRequestWallet", "googlePay")
+    super(...e), b(this, "state", y({}, this.initialState)), b(this, "paymentRequestWallet", "googlePay"), b(this, "paymentRequestWalletName", "Google Pay")
   }
 }
-class S extends I {
+class C extends S {
   validatePaymentRequest() {
     let {
       paymentRequest: e,
@@ -287,14 +293,14 @@ class S extends I {
     } = this.state;
     if (null == module) {
       let e = "Payment request is not ready";
-      return O.error(module), {
+      return this.logInfo(module), {
         available: false,
         errorMessage: module
       }
     }
     if (null == exports || !exports.applePay) {
       let e = "Apple Pay is unavailable or has not been set up in this browser. ";
-      return O.error(module, "Apple Pay Stripe CanMakePaymentResult: ", exports), {
+      return this.logInfo(module, "Stripe canMakePaymentResult: ", exports), {
         available: false,
         errorMessage: module
       }
@@ -326,6 +332,6 @@ class S extends I {
     })
   }
   constructor(...e) {
-    super(...e), g(this, "state", E({}, this.initialState)), g(this, "paymentRequestWallet", "applePay")
+    super(...e), b(this, "state", y({}, this.initialState)), b(this, "paymentRequestWallet", "applePay"), b(this, "paymentRequestWalletName", "Apple Pay")
   }
 }
