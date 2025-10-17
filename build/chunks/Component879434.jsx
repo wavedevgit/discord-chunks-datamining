@@ -1,5 +1,5 @@
-/** Chunk was on 90360 **/
-/** chunk id: 722332, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 79041 **/
+/** chunk id: 879434, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
 }), require("./388685.js");
@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk538645 = require("./538645.jsx"),
   Chunk383036 = require("./383036.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk440543 = require("./440543.js");
+  Chunk511130 = require("./511130.js");
 let f = e => {
     let {
       setTab: t
@@ -55,7 +55,7 @@ let f = e => {
           children: (0, a.jsx)(o.xvT, {
             variant: "text-md/bold",
             color: "always-white",
-            children: "Product Preview Tool"
+            children: "Products"
           })
         })
       }), !n && (0, a.jsx)("div", {
@@ -87,12 +87,12 @@ let f = e => {
   g = () => {
     let [e, t] = Chunk647438.useState(0);
     return (0, Chunk951288.jsxs)(Chunk793030.zJl, {
-      className: Chunk440543.wrapper,
+      className: Chunk511130.wrapper,
       children: [(0, Chunk951288.jsxs)("div", {
-        className: Chunk440543.nav,
+        className: Chunk511130.nav,
         children: [(0, Chunk951288.jsx)(Chunk793030.X6q, {
           variant: "heading-xxl/medium",
-          children: "ShopKeeper"
+          children: "Collectibles DevTools"
         }), 0 !== module && (0, Chunk951288.jsx)(Chunk793030.zxk, {
           variant: "primary",
           onClick: () => exports(0),

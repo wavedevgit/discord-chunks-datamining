@@ -1,4 +1,4 @@
-/** Chunk was on 90360 **/
+/** Chunk was on 79041 **/
 /** chunk id: 678717, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
   default: () => eI,
@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk347469 = require("./347469.js"),
   Chunk213609 = require("./213609.js"),
-  Chunk722332 = require("./722332.jsx"),
+  Chunk879434 = require("./879434.jsx"),
   Chunk213713 = require("./213713.jsx"),
   Chunk665149 = require("./665149.jsx"),
   Chunk611565 = require("./611565.jsx"),
@@ -116,10 +116,10 @@ function eS() {
       group: Chunk621060.v0.BILLING,
       render: () => (0, Chunk951288.jsx)(Chunk778648.Z, {})
     }), module.push({
-      id: "shop_keeper",
-      name: "Shop Keeper",
+      id: "shop_collectibles",
+      name: "Shop Collectibles",
       group: Chunk621060.v0.BILLING,
-      render: () => (0, Chunk951288.jsx)(Chunk722332.Z, {})
+      render: () => (0, Chunk951288.jsx)(Chunk879434.Z, {})
     }), module.push({
       id: "quick_actions",
       name: "Quick Actions",

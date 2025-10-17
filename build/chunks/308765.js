@@ -77,6 +77,11 @@ let i = {
     actions: ["POST_CONNECTION_OPEN"],
     inlineRequire: () => require("./277229.js").Z
   },
+  FriendOnlineTimerManager: {
+    actions: ["POST_CONNECTION_OPEN", "CONNECTION_RESUMED", "CONNECTION_CLOSED", "CONNECTION_INTERRUPTED", "SELF_PRESENCE_STORE_UPDATE"],
+    inlineRequire: () => require("./265008.js").Z,
+    loadRightBeforeConnectionOpen: true
+  },
   HangStatusManager: {
     actions: ["POST_CONNECTION_OPEN", "VOICE_CHANNEL_SELECT", "LOGOUT", "GUILD_MEMBER_UPDATE"],
     inlineRequire: () => require("./669750.js").Z,
