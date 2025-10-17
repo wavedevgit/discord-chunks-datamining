@@ -179,7 +179,7 @@ function G(e) {
         await t()
       }
     };
-  if (!es && !W) return null;
+  if (!es && !W || !ef && null == G) return null;
   let em = es ? U.intl.string(U.t.VJlc0d) : U.intl.string(U.t.OKsSCQ);
   return el && (em = U.intl.string(U.t.DPfdsr)), {
     buttonCTA: em,

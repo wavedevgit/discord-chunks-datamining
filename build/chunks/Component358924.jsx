@@ -140,7 +140,7 @@ let eo = [14, 14, 12, 12, 10, 8, 6],
       activity: t,
       user: n,
       supportsAskToJoin: false
-    }), i = null != r && r.isEnabled;
+    }), i = null != r;
     return {
       isJoinActivityButtonShown: i,
       joinActivityButtonAction: r,
@@ -168,6 +168,7 @@ let eo = [14, 14, 12, 12, 10, 8, 6],
       } = r;
       return (0, i.jsx)(p.u, {
         text: l,
+        asContainer: !a,
         children: (0, i.jsx)(f.Button, {
           size: "sm",
           variant: "secondary",

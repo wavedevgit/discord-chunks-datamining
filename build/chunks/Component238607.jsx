@@ -65,6 +65,7 @@ function m(e) {
   } = y;
   return (0, r.jsx)(i.u, {
     text: C,
+    asContainer: !N,
     children: (0, r.jsx)(f.O1, {
       icon: R ? a.YVR : a.iWm,
       text: A,
