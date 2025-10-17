@@ -637,12 +637,8 @@ function e8(e) {
       c.add(e.name.toLowerCase())
     })
   }), [...require.filter(e => {
-    var t, n;
-    let r = null != (t = e.executables) ? t : [],
-      i = null != (n = e.thirdPartySkus) ? n : [],
-      a = r.some(e => eg.has(e.name.toLowerCase())),
-      o = i.length > 0;
-    return a || o
+    var t;
+    return !(null != (t = e.executables) ? t : []).some(e => eg.has(e.name.toLowerCase()))
   }), ...z].forEach(n => {
     let r = null != n.executables ? n.executables : [],
       i = {};
