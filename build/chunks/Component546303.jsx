@@ -78,7 +78,7 @@ function h(e) {
     children: [(0, i.jsx)(s.X6q, {
       className: j.heading,
       variant: "heading-md/semibold",
-      children: v.intl.string(b.default["3vWDMz"])
+      children: b.intl.string(v.default["3vWDMz"])
     }), h && (0, i.jsx)("div", {
       className: j.maxInstancesWarning,
       children: (0, i.jsx)(f.C, {})

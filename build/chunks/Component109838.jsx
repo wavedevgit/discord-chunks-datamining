@@ -42,7 +42,7 @@ function h(e) {
         icon: i.iWm,
         "aria-label": ""
       }), (0, r.jsx)(c.ZP.Title, {
-        children: j.intl.string(v.default.vCzwMz)
+        children: j.intl.string(b.default.vCzwMz)
       }), (0, r.jsx)(s.IGR, {
         disableColor: true,
         text: j.intl.string(j.t.oW0eUV),
@@ -52,8 +52,8 @@ function h(e) {
       }), (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
         color: "text-muted",
-        children: j.intl.format(v.default.LiR4eH, {
-          helpCenterUrl: d.Z.getArticleURL(b.BhN.GAME_SERVER_HOSTING)
+        children: j.intl.format(b.default.LiR4eH, {
+          helpCenterUrl: d.Z.getArticleURL(v.BhN.GAME_SERVER_HOSTING)
         })
       })]
     }), (0, r.jsxs)("div", {

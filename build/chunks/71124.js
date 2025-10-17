@@ -1,5 +1,5 @@
 /** Chunk was on 32076 **/
-/** chunk id: 71124, original params: e,t,n (module,exports,require) **/
+/** chunk id: 71124, original params: t,e,n (module,exports,require) **/
 module.exports = {
   content: "content__2ff9f",
   infoBox: "infoBox__2ff9f",
@@ -7,5 +7,6 @@ module.exports = {
   step: "step__2ff9f",
   stepNumber: "stepNumber__2ff9f",
   serverIpContainer: "serverIpContainer__2ff9f",
-  serverIpInput: "serverIpInput__2ff9f"
+  serverIpInput: "serverIpInput__2ff9f",
+  animate: "animate__2ff9f"
 }

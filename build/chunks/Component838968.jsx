@@ -1,13 +1,13 @@
 /** Chunk was on 62934 **/
 /** chunk id: 838968, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  N4: () => v,
+  N4: () => b,
   P2: () => f,
   Q9: () => j,
   aB: () => p,
   c: () => _,
   rL: () => x,
-  uf: () => b
+  uf: () => v
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -76,7 +76,7 @@ function _(e) {
   })
 }
 
-function b(e) {
+function v(e) {
   let {
     cost: n,
     costDecorator: t,
@@ -110,7 +110,7 @@ function b(e) {
   })
 }
 
-function v(e) {
+function b(e) {
   let {
     children: n
   } = e;
@@ -152,7 +152,7 @@ let p = Chunk647438.forwardRef(function(e, n) {
     onClick: f,
     onMouseOver: x,
     onMouseLeave: _,
-    children: b
+    children: v
   } = e;
   return (0, r.jsx)("div", {
     className: l()(g.parentContainer, {
@@ -168,7 +168,7 @@ let p = Chunk647438.forwardRef(function(e, n) {
         [g.active]: i,
         [g.warning]: c || u && i
       }, t),
-      children: [b, "new" === d && (0, r.jsx)(s.IGR, {
+      children: [v, "new" === d && (0, r.jsx)(s.IGR, {
         className: g.new,
         text: m.intl.string(m.t.y2b7CA)
       }), "beta" === d && (0, r.jsx)(s.IGR, {
