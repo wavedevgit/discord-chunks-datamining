@@ -2,7 +2,7 @@
 /** chunk id: 333859, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  c: () => v
+  c: () => y
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -13,20 +13,18 @@ var Chunk442837 = require("./442837.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk737604 = require("./737604.js"),
   Chunk539873 = require("./539873.jsx"),
-  Chunk803038 = require("./803038.js"),
   Chunk550385 = require("./550385.js"),
   Chunk638212 = require("./638212.jsx"),
-  Chunk767714 = require("./767714.jsx"),
   Chunk626135 = require("./626135.js"),
   Chunk342386 = require("./342386.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk980676 = require("./980676.js");
-let O = () => {
+let b = () => {
     (0, Chunk550385.XO)(Chunk550385.wh.APP_ICON), (0, Chunk342386.default)()
   },
-  v = () => {
+  y = () => {
     let {
       analyticsLocations: e
     } = (0, Chunk906732.ZP)(Chunk100527.Z.USER_SETTINGS), t = (0, Chunk442837.e7)([Chunk737604.Z], () => Chunk737604.Z.isUpsellPreview);
@@ -36,41 +34,27 @@ let O = () => {
         location_stack: module
       })
     });
-    let {
-      v2EditorEnabled: n
-    } = Chunk803038.Mc.useExperiment({
-      location: "UserSettingsAppearanceInAppIcon"
-    }), f = () => {
-      let e = require ? Chunk980676.tryItOutButtonsV2 : Chunk980676.tryItOutButtons;
-      return (0, Chunk951288.jsxs)("div", {
-        className: module,
-        children: [(0, Chunk951288.jsx)(Chunk481060.Button, {
-          variant: exports ? "secondary" : "primary",
-          text: Chunk388032.intl.string(Chunk388032.t["hb/wEx"]),
-          onClick: () => O()
-        }), exports ? require ? (0, Chunk951288.jsx)(Chunk638212.Z, {
-          subscriptionTier: Chunk474936.Si.TIER_2,
-          defaultTextOverride: Chunk388032.intl.string(Chunk388032.t.mr4K7O),
-          premiumModalAnalyticsLocation: {
-            object: Chunk981631.qAy.BUTTON_CTA,
-            objectType: Chunk981631.Qqv.BUY
-          },
-          fullWidth: true
-        }) : (0, Chunk951288.jsx)(Chunk767714.Z, {
-          className: Chunk980676.tryItOutButton,
-          showGradient: false,
-          subscriptionTier: Chunk474936.Si.TIER_2,
-          textOptions: {
-            textOverride: Chunk388032.intl.string(Chunk388032.t.mr4K7O)
-          }
-        }) : null]
-      })
-    };
+    let n = () => (0, Chunk951288.jsxs)("div", {
+      className: Chunk980676.tryItOutButtons,
+      children: [(0, Chunk951288.jsx)(Chunk481060.Button, {
+        variant: exports ? "secondary" : "primary",
+        text: Chunk388032.intl.string(Chunk388032.t["hb/wEx"]),
+        onClick: () => b()
+      }), exports ? (0, Chunk951288.jsx)(Chunk638212.Z, {
+        subscriptionTier: Chunk474936.Si.TIER_2,
+        defaultTextOverride: Chunk388032.intl.string(Chunk388032.t.mr4K7O),
+        premiumModalAnalyticsLocation: {
+          object: Chunk981631.qAy.BUTTON_CTA,
+          objectType: Chunk981631.Qqv.BUY
+        },
+        fullWidth: true
+      }) : null]
+    });
     return (0, Chunk951288.jsxs)("div", {
       className: Chunk980676.selectionGroup,
       children: [(0, Chunk951288.jsx)(Chunk539873.Z, {
         disabled: exports,
-        renderCTAButtons: Chunk550385
+        renderCTAButtons: require
       }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
         className: Chunk980676.divider
       })]
