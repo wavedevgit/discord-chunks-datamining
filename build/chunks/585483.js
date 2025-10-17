@@ -2,78 +2,36 @@
 /** chunk id: 585483, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  S: () => s,
-  b: () => o
-}), require("./388685.js"), require("./539854.js");
-var Chunk836560 = require("./836560.js");
-require("./17089.js");
-var Chunk710845 = require("./710845.js");
+  S: () => c,
+  b: () => Chunk330477.b
+}), require("./388685.js");
+var Chunk17089 = require("./17089.js"),
+  Chunk330477 = require("./330477.js"),
+  Chunk710845 = require("./710845.js"),
+  Chunk981631 = require("./981631.js");
 
-function a(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
+function s(e, t, n) {
+  var i;
+  let a = null != (i = Object.values(o.LPv).find(t => e.startsWith(t))) ? i : e;
+  r.LN({
+    type: "ComponentDispatch",
+    description: a,
+    data: {
+      actionData: t,
+      fullActionName: e
+    },
+    durationMs: n
+  })
 }
-require("./981631.js");
-class o {
-  safeDispatch(e) {
-    for (var t, n = arguments.length, r = Array(n > 1 ? n - 1 : 0), i = 1; i < n; i++) r[i - 1] = arguments[i];
-    if (!this.hasSubscribers(e)) {
-      let [n] = r;
-      return (this._savedDispatches[e] = null != (t = this._savedDispatches[e]) ? t : []).push(n), this
-    }
-    return this.dispatch(e, ...r)
-  }
-  dispatch(e, t) {
-    return Date.now(), this.emitter.emit(e, t), this
-  }
-  dispatchToLastSubscribed(e, t) {
-    Date.now();
-    {
-      let n = this.emitter.listeners(e);
-      return n.length > 0 && n[n.length - 1](t), this
-    }
-  }
-  hasSubscribers(e) {
-    return this.emitter.listenerCount(e) > 0
-  }
-  _checkSavedDispatches(e) {
-    let t = this._savedDispatches[e];
-    null != t && (t.forEach(t => {
-      this.dispatch(e, t)
-    }), this._savedDispatches[e] = true)
-  }
-  subscribe(e, t) {
-    return this.emitter.listeners(e).indexOf(t) >= 0 ? new i.Z("ComponentDispatchUtils").warn("ComponentDispatch.subscribe: Attempting to add a duplicate listener", e) : (this.emitter.on(e, t), this._checkSavedDispatches(e)), this
-  }
-  subscribeOnce(e, t) {
-    return this.emitter.once(e, t), this._checkSavedDispatches(e), this
-  }
-  resubscribe(e, t) {
-    if (!this.emitter.listeners(e).includes(t)) return new i.Z("ComponentDispatchUtils").warn("ComponentDispatch.resubscribe: Resubscribe without existing subscription", e), this;
-    this.emitter.off(e, t), this.emitter.on(e, t)
-  }
-  unsubscribe(e, t) {
-    return this.emitter.removeListener(e, t), this
-  }
-  reset() {
-    return this.emitter.removeAllListeners(), this
-  }
-  dispatchKeyed(e, t) {
-    for (var n = arguments.length, r = Array(n > 2 ? n - 2 : 0), i = 2; i < n; i++) r[i - 2] = arguments[i];
-    return this.dispatch("".concat(e, "_").concat(t), ...r)
-  }
-  subscribeKeyed(e, t, n) {
-    return this.subscribe("".concat(e, "_").concat(t), n)
-  }
-  unsubscribeKeyed(e, t, n) {
-    return this.unsubscribe("".concat(e, "_").concat(t), n)
-  }
-  constructor() {
-    a(this, "emitter", new Chunk836560.EventEmitter), a(this, "_savedDispatches", {}), this.emitter.setMaxListeners(100)
-  }
-}
-let s = new o
+let l = new Chunk710845.Z("ComponentDispatchUtils"),
+  c = new Chunk330477.b({
+    maxListeners: 100,
+    enableDevtools: false,
+    logger: {
+      warn: function(e) {
+        for (var t = arguments.length, n = Array(t > 1 ? t - 1 : 0), r = 1; r < t; r++) n[r - 1] = arguments[r];
+        return l.warn(e, ...n)
+      }
+    },
+    devtoolsReporter: s
+  })

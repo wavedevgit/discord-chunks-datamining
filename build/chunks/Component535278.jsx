@@ -27,10 +27,11 @@ let g = function(e) {
   } = e, {
     analyticsLocations: E
   } = (0, s.ZP)(o.Z.PREMIUM_TIER_2_DISCOUNT_ENDING_NOTICE), b = (0, u.Ng)(), y = (0, a.Z)(null != b && null != b.expires_at ? Date.parse(b.expires_at) : 0), {
-    variant: O
+    variant: O,
+    showNagbar: v
   } = (0, c.ZP)("PremiumDiscountEndingNotice");
-  if (null == b || (null == (t = b.discount) ? true : t.plan_ids.some(e => _.GP[e].skuId !== g)) || null == b.expires_at || Object.values(y).every(e => 0 === e)) return null;
-  let v = () => {
+  if (null == b || (null == (t = b.discount) ? true : t.plan_ids.some(e => _.GP[e].skuId !== g)) || null == b.expires_at || Object.values(y).every(e => 0 === e) || !v) return null;
+  let I = () => {
     (0, l.Z)({
       subscriptionTier: g,
       analyticsLocations: E,
@@ -46,7 +47,7 @@ let g = function(e) {
     children: [(0, r.jsx)(d.Jy, {
       children: (0, f.TV)(y, Number(b.discount.amount))
     }), (0, r.jsx)(d.OJ, {
-      onClick: v,
+      onClick: I,
       text: h.intl.string(h.t.zLXssL)
     })]
   }) : (0, r.jsxs)(i.qXd, {
@@ -58,7 +59,7 @@ let g = function(e) {
       color: "currentColor",
       className: m.premiumIcon
     }), (0, f.TV)(y, Number(b.discount.amount)), (0, r.jsx)(i.EyT, {
-      onClick: v,
+      onClick: I,
       children: h.intl.string(h.t.zLXssL)
     })]
   })

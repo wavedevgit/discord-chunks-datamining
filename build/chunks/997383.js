@@ -59,6 +59,9 @@ class S {
     } = this;
     this._limit = e, null != t && t.setLimit(e), this._userResults.length > this._limit && (this._userResults.length = this._limit), this._groupDMResults.length > this._limit && (this._groupDMResults.length = this._limit), this._textChannelResults.length > this._limit && (this._textChannelResults.length = this._limit), this._voiceChannelResults.length > this._limit && (this._voiceChannelResults.length = this._limit), this._guildResults.length > this._limit && (this._guildResults.length = this._limit), this._applicationResults.length > this._limit && (this._applicationResults.length = this._limit), this._linkResults.length > this._limit && (this._linkResults.length = this._limit), this._inAppNavigations.length > this._limit && (this._inAppNavigations.length = this._limit)
   }
+  setRefetchForSingleCategoryLimit(e) {
+    this._refetchForSingleCategoryLimit = e
+  }
   setResultTypes(e) {
     this.resultTypes = null != e ? new Set(e) : null, this._userResults = this._include(E.h8.USER) ? this._userResults : [], this._groupDMResults = this._include(E.h8.GROUP_DM) ? this._groupDMResults : [], this._textChannelResults = this._include(E.h8.TEXT_CHANNEL) ? this._textChannelResults : [], this._voiceChannelResults = this._include(E.h8.VOICE_CHANNEL) ? this._voiceChannelResults : [], this._guildResults = this._include(E.h8.GUILD) ? this._guildResults : [], this._applicationResults = this._include(E.h8.APPLICATION) ? this._applicationResults : [], this._linkResults = this._include(E.h8.LINK) ? this._linkResults : [], this._inAppNavigations = this._include(E.h8.IN_APP_NAVIGATION) ? this._inAppNavigations : []
   }
@@ -73,12 +76,21 @@ class S {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
     t ? this.options = y({}, this.options, e) : this.options = e, null != this.options.blacklist ? this._userBlacklist = Array.from(this.options.blacklist).map(e => e.startsWith("user:") ? e.replace("user:", "") : "").filter(e => "" !== e) : this._userBlacklist = null
   }
+  _willRefetchIfSingleCategoryResults() {
+    return !this._refetched && !(this._refetchForSingleCategoryLimit <= 5) && null == this.options.voiceChannelGuildFilter && null == this.options.userFilters && 1 === [this._userResults, this._groupDMResults, this._textChannelResults, this._voiceChannelResults, this._guildResults, this._applicationResults, this._linkResults, this._inAppNavigations].filter(e => e.length > 0).length
+  }
+  refetchIfSingleCategoryResults() {
+    if (!this._willRefetchIfSingleCategoryResults()) return;
+    this._refetched = true;
+    let e = this.query;
+    this._userResults.length > 0 ? this.queryUsers(module, null, this._refetchForSingleCategoryLimit) : this._groupDMResults.length > 0 ? this._groupDMResults = this.queryGroupDMs(module, this._refetchForSingleCategoryLimit) : this._textChannelResults.length > 0 ? this._textChannelResults = this.queryTextChannels(module, this._refetchForSingleCategoryLimit) : this._voiceChannelResults.length > 0 ? this._voiceChannelResults = this.queryVoiceChannels(module, this._refetchForSingleCategoryLimit) : this._guildResults.length > 0 ? this._guildResults = this.queryGuilds(module, this._refetchForSingleCategoryLimit) : this._applicationResults.length > 0 ? this._applicationResults = this.queryApplications(module, this._refetchForSingleCategoryLimit) : this._linkResults.length > 0 ? this._linkResults = this.queryLink(module, this._refetchForSingleCategoryLimit) : this._inAppNavigations.length > 0 && (this._inAppNavigations = this.queryInAppNavigations(module, this._refetchForSingleCategoryLimit))
+  }
   search(e, t) {
-    if (this.query = e, "" === e.trim()) {
+    if (this.query = e, this._refetched = false, "" === e.trim()) {
       this.clear(), this.updateAllResults();
       return
     }(this.options.frecencyBoosters ? l.DZ.loadIfNecessary() : Promise.resolve()).finally(() => {
-      this.queryUsers(e, t, this._limit), this._groupDMResults = this.queryGroupDMs(e, this._limit), this._textChannelResults = this.queryTextChannels(e, this._limit), this._voiceChannelResults = this.queryVoiceChannels(e, this._limit), this._guildResults = this.queryGuilds(e, this._limit), this._applicationResults = this.queryApplications(e, this._limit), this._linkResults = this.queryLink(e, this._limit), this._inAppNavigations = this.queryInAppNavigations(e, this._limit), this._isAsyncSearch() ? (clearTimeout(this._asyncTimeout), this._asyncTimeout = setTimeout(this.updateAllResults, I)) : this.updateAllResults()
+      this.queryUsers(e, t, this._limit), this._groupDMResults = this.queryGroupDMs(e, this._limit), this._textChannelResults = this.queryTextChannels(e, this._limit), this._voiceChannelResults = this.queryVoiceChannels(e, this._limit), this._guildResults = this.queryGuilds(e, this._limit), this._applicationResults = this.queryApplications(e, this._limit), this._linkResults = this.queryLink(e, this._limit), this._inAppNavigations = this.queryInAppNavigations(e, this._limit), this._isAsyncSearch() ? (clearTimeout(this._asyncTimeout), this._asyncTimeout = setTimeout(this.updateAllResults, I)) : this._include(E.h8.USER) || this.updateAllResults()
     })
   }
   clear() {
@@ -240,30 +252,30 @@ class S {
       fuzzy: true
     }) : []
   }
-  constructor(e, t, n = O, r = v) {
-    b(this, "query", ""), b(this, "options", v), b(this, "results", []), b(this, "_userResults", []), b(this, "_groupDMResults", []), b(this, "_textChannelResults", []), b(this, "_voiceChannelResults", []), b(this, "_guildResults", []), b(this, "_applicationResults", []), b(this, "_linkResults", []), b(this, "_inAppNavigations", []), b(this, "_asyncTimeout", true), b(this, "userSearchContext", true), b(this, "onResultsChange", true), b(this, "resultTypes", true), b(this, "_userBlacklist", null), b(this, "_limit", true), b(this, "parseUserResults", e => {
+  constructor(e, t, n = O, r = v, a = 0) {
+    b(this, "query", ""), b(this, "options", v), b(this, "results", []), b(this, "_userResults", []), b(this, "_groupDMResults", []), b(this, "_textChannelResults", []), b(this, "_voiceChannelResults", []), b(this, "_guildResults", []), b(this, "_applicationResults", []), b(this, "_linkResults", []), b(this, "_inAppNavigations", []), b(this, "_asyncTimeout", true), b(this, "userSearchContext", true), b(this, "onResultsChange", true), b(this, "resultTypes", true), b(this, "_userBlacklist", null), b(this, "_limit", true), b(this, "_refetchForSingleCategoryLimit", true), b(this, "_refetched", false), b(this, "parseUserResults", e => {
       let {
         results: t
       } = e;
-      if (this._include(E.h8.USER)) {
-        for (let {
-            id: e,
-            score: n,
-            comparator: r
-          }
-          of(this._userResults = [], t)) {
-          let t = f.default.getUser(e);
-          null != t && this._userResults.push({
-            type: E.h8.USER,
-            record: t,
-            score: (0, _.mB)(n),
-            comparator: null != r ? r : true
-          })
+      if (!this._include(E.h8.USER)) return;
+      for (let {
+          id: e,
+          score: n,
+          comparator: r
         }
-        this._userResults.length > this._limit && (this._userResults.length = this._limit), this.updateAllResults()
+        of(this._userResults = [], t)) {
+        let t = f.default.getUser(e);
+        null != t && this._userResults.push({
+          type: E.h8.USER,
+          record: t,
+          score: (0, _.mB)(n),
+          comparator: null != r ? r : true
+        })
       }
+      let n = this._willRefetchIfSingleCategoryResults();
+      !n && this._userResults.length > this._limit && (this._userResults.length = this._limit), n && this.refetchIfSingleCategoryResults(), this.updateAllResults()
     }), b(this, "updateAllResults", () => {
       clearTimeout(this._asyncTimeout), this.results = i()([...this._userResults, ...this._groupDMResults, ...this._textChannelResults, ...this._voiceChannelResults, ...this._guildResults, ...this._linkResults, ...this._inAppNavigations]).uniqBy(e => "".concat(e.type, "-").concat(e.record.id)).sort(g.Z).value(), this.onResultsChange(this.results, this.query)
-    }), this.onResultsChange = e, this.setOptions(r, true), this._limit = n, this.createSearchContext(), this.setResultTypes(t)
+    }), this.onResultsChange = e, this.setOptions(r, true), this._limit = n, this._refetchForSingleCategoryLimit = a, this.createSearchContext(), this.setResultTypes(t)
   }
 }

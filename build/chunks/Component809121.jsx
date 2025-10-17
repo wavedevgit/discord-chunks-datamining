@@ -135,16 +135,16 @@ function B(e) {
   let {
     guildId: n,
     instance: t
-  } = e, i = (0, O.Z)(t), [j, S] = (0, m.US)([c.z.GAME_SERVER_HOSTING_PORTKEY_TOS]), k = j !== c.z.GAME_SERVER_HOSTING_PORTKEY_TOS, B = (0, o.e7)([f.Z], () => f.Z.getDetectableGame(t.gameId)), L = a.useCallback(() => {
+  } = e, i = (0, O.Z)(t), [j, S] = (0, m.US)([c.z.GAME_SERVER_HOSTING_PORTKEY_TOS]), k = j !== c.z.GAME_SERVER_HOSTING_PORTKEY_TOS, B = (0, o.e7)([f.Z], () => f.Z.getDetectableGame(t.gameId)), W = a.useCallback(() => {
     k || null == t.providerType ? (0, I.Z)(n, t) : (0, N.Z)({
       provider: t.providerType,
       onAccept: () => {
         S(P.L.TAKE_ACTION), (0, I.Z)(n, t)
       }
     })
-  }, [t, k, S, n]), M = a.useCallback(() => {
+  }, [t, k, S, n]), L = a.useCallback(() => {
     (0, x.JG)(null != i ? i : ""), (0, u.showToast)((0, u.createToast)(E.intl.string(E.t["+5kSoa"]), u.ToastType.SUCCESS))
-  }, [i]), W = (0, C.Z)(t.gameId, "cover"), z = (0, v.Z)(n), U = a.useCallback(() => {
+  }, [i]), M = (0, C.Z)(t.gameId, "cover"), z = (0, v.Z)(n), U = a.useCallback(() => {
     var e;
     (0, b.q)({
       href: null != (e = t.gameServerPanelUrl) ? e : ""
@@ -166,7 +166,7 @@ function B(e) {
       case s.V.STARTING:
         return (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(G, {
-            onClick: L
+            onClick: W
           }), z && (0, r.jsx)(Z, {
             onClick: U,
             disabled: null == t.gameServerPanelUrl
@@ -177,7 +177,7 @@ function B(e) {
         return z ? (0, r.jsx)(D, {
           onClick: U
         }) : (0, r.jsx)(G, {
-          onClick: L,
+          onClick: W,
           disabled: true
         });
       case s.V.DELETED:
@@ -185,7 +185,7 @@ function B(e) {
           onClick: U,
           disabled: null == t.gameServerPanelUrl
         }) : (0, r.jsx)(G, {
-          onClick: L,
+          onClick: W,
           disabled: true
         });
       case s.V.PROVIDER_ERRORED:
@@ -194,7 +194,7 @@ function B(e) {
             guildId: n,
             instance: t
           }) : (0, r.jsx)(G, {
-            onClick: L,
+            onClick: W,
             disabled: true
           }), (0, r.jsx)(V, {
             guildId: n,
@@ -204,7 +204,7 @@ function B(e) {
       default:
         return null
     }
-  }, [t, L, z, U, n]), K = a.useMemo(() => {
+  }, [t, W, z, U, n]), K = a.useMemo(() => {
     if (null == t.gameConfig) return null;
     let e = [t.gameConfig.type, t.gameConfig.version].filter(_.lm).join(" ");
     return "" === e ? null : e
@@ -230,7 +230,7 @@ function B(e) {
       children: [(0, r.jsxs)("div", {
         className: w.serverHeader,
         children: [(0, r.jsx)("img", {
-          src: null != W ? W : "",
+          src: null != M ? M : "",
           alt: "",
           className: w.gameImage
         }), (0, r.jsxs)("div", {
@@ -275,7 +275,7 @@ function B(e) {
                 }), (0, r.jsx)(u.P3F, {
                   className: w.copyButton,
                   "aria-label": E.intl.string(E.t.OpuAlJ),
-                  onClick: M,
+                  onClick: L,
                   children: (0, r.jsx)(u.TIy, {
                     size: "sm"
                   })
@@ -285,7 +285,7 @@ function B(e) {
                   (0, N.Z)({
                     provider: t.providerType,
                     onAccept: () => {
-                      S(P.L.TAKE_ACTION), M()
+                      S(P.L.TAKE_ACTION), L()
                     }
                   })
                 },
@@ -360,7 +360,7 @@ function B(e) {
     }), (0, r.jsx)("div", {
       className: w.imageBackground,
       children: (0, r.jsx)(p.b, {
-        imageUrl: null != W ? W : ""
+        imageUrl: null != M ? M : ""
       })
     })]
   })

@@ -60,24 +60,25 @@ let v = function(e) {
     dismissCurrentNotice: n,
     subscriptionTier: s
   } = e, {
-    analyticsLocations: h
-  } = (0, l.ZP)(b(s)), g = (0, f.N)(), v = (0, o.Z)(null != g && null != g.expires_at ? Date.parse(g.expires_at) : 0), {
-    variant: I
-  } = (0, d.ZP)("PremiumTrialEndingNotice"), T = null == g || (null == (t = g.subscription_trial) ? true : t.sku_id) !== s || null == g.expires_at || Object.values(v).every(e => 0 === e);
+    analyticsLocations: g
+  } = (0, l.ZP)(b(s)), v = (0, f.N)(), I = (0, o.Z)(null != v && null != v.expires_at ? Date.parse(v.expires_at) : 0), {
+    variant: T,
+    showNagbar: S
+  } = (0, d.ZP)("PremiumTrialEndingNotice"), A = null == v || (null == (t = v.subscription_trial) ? true : t.sku_id) !== s || null == v.expires_at || Object.values(I).every(e => 0 === e) || v.trial_id !== h.a7 && !S;
   if ((0, c.Z)({
       type: i.ImpressionTypes.VIEW,
       name: i.ImpressionNames.TRIAL_NOTICE,
       properties: {
-        trial_id: null == g ? true : g.trial_id
+        trial_id: null == v ? true : v.trial_id
       }
     }, {
-      disableTrack: T
-    }), T) return null;
-  let S = () => {
+      disableTrack: A
+    }), A) return null;
+  let C = () => {
     (0, u.Z)({
-      trialId: g.trial_id,
+      trialId: v.trial_id,
       subscriptionTier: s,
-      analyticsLocations: h,
+      analyticsLocations: g,
       analyticsObject: {
         page: m.ZY5.IN_APP,
         section: m.jXE.NOTIFICATION_BAR,
@@ -85,12 +86,12 @@ let v = function(e) {
       }
     })
   };
-  return I === d.tE.NAGBAR_REFRESH ? (0, r.jsxs)(_.eJ, {
+  return T === d.tE.NAGBAR_REFRESH && (null == v ? true : v.trial_id) !== h.a7 ? (0, r.jsxs)(_.eJ, {
     onClick: n,
     children: [(0, r.jsx)(_.Jy, {
-      children: (0, p.kj)(s, v)
+      children: (0, p.kj)(s, I)
     }), (0, r.jsx)(_.OJ, {
-      onClick: S,
+      onClick: C,
       text: O(s)
     })]
   }) : (0, r.jsxs)(a.qXd, {
@@ -101,8 +102,8 @@ let v = function(e) {
       size: "md",
       color: "currentColor",
       className: E.premiumIcon
-    }), (0, p.kj)(s, v), (0, r.jsx)(a.EyT, {
-      onClick: S,
+    }), (0, p.kj)(s, I), (0, r.jsx)(a.EyT, {
+      onClick: C,
       children: O(s)
     })]
   })

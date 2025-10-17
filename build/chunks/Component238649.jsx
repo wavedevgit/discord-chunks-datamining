@@ -44,7 +44,7 @@ let w = (e, t) => {
       visibilityPercentage: U
     } = (0, S.E)(!k), G = (0, s.e7)([_.Z], () => _.Z.affinities), B = !M && G.length > 0, {
       variant: Z
-    } = (0, h.ZP)("PremiumBrandRefreshMarketingHeroHeading"), F = (0, g.N)(), V = (0, m.Ng)(), H = f.Z.getAlmostExpiringTrialOffers([N.Si.TIER_2]).length > 0 && null != F && null != F.expires_at, Y = f.Z.getAlmostExpiringDiscountOffers([N.Si.TIER_2]).length > 0 && null != V && null != V.expires_at, W = Z === h.tE.HERO_COUNTDOWN && (H || Y), K = H ? F.expires_at : Y ? V.expires_at : null;
+    } = (0, h.ZP)("PremiumBrandRefreshMarketingHeroHeading"), F = (0, g.N)(), V = (0, m.Ng)(), H = f.Z.getAlmostExpiringTrialOffers([N.Si.TIER_2]).length > 0 && null != F && null != F.expires_at && F.trial_id !== N.a7, Y = f.Z.getAlmostExpiringDiscountOffers([N.Si.TIER_2]).length > 0 && null != V && null != V.expires_at, W = Z === h.tE.HERO_COUNTDOWN && (H || Y), K = H ? F.expires_at : Y ? V.expires_at : null;
     return (0, r.jsx)(d.Gt, {
       value: w,
       children: (0, r.jsx)("div", {

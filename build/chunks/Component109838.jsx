@@ -39,7 +39,7 @@ function h(e) {
       className: p.toolbar,
       toolbar: (0, r.jsx)("div", {}),
       children: [(0, r.jsx)(c.ZP.Icon, {
-        icon: i.Ucv,
+        icon: i.iWm,
         "aria-label": ""
       }), (0, r.jsx)(c.ZP.Title, {
         children: j.intl.string(v.default.vCzwMz)
