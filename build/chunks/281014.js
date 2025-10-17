@@ -1,16 +1,33 @@
 /** Chunk was on 26473 **/
 /** chunk id: 281014, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => i
+  Z: () => d,
+  a: () => s
 });
-var Chunk343312 = require("./343312.jsx");
+var Chunk647438 = require("./647438.js"),
+  Chunk343312 = require("./343312.jsx"),
+  Chunk948208 = require("./948208.js"),
+  Chunk388032 = require("./388032.jsx");
+let o = ["/", "\\\\"];
 
-function i() {
+function s(e) {
+  let n = r.useMemo(() => o.some(n => (null != e ? e : "").includes(n)), [e]);
+  return {
+    isValid: !n,
+    errors: {
+      name: n ? a.intl.formatToPlainString(l.default["jYZD4+"], {
+        forbiddenCharacters: o.join(", ")
+      }) : true
+    }
+  }
+}
+
+function d() {
   let {
     regionId: e,
     gameServerInstance: n,
     name: t,
-    planId: i
-  } = (0, Chunk343312.JL)(), l = "" !== require && "" !== module && true !== i;
-  return null != exports ? l && (exports.name !== require || exports.regionId !== module || exports.planId !== i) : l
+    planId: r
+  } = (0, Chunk343312.JL)(), l = "" !== require && "" !== module && true !== Chunk647438;
+  return null != exports ? Chunk948208 && (exports.name !== require || exports.regionId !== module || exports.planId !== Chunk647438) : Chunk948208
 }

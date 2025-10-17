@@ -309,9 +309,21 @@ let A = (0, Chunk818083.B)({
   },
   treatments: [{
     id: 1,
-    label: "alt + a Keybind",
+    label: "Ctrl + Tab Keybind",
     config: {
-      keybindOverride: "alt+a"
+      keybindOverride: "ctrl+tab"
+    }
+  }, {
+    id: 2,
+    label: "Alt + X Keybind",
+    config: {
+      keybindOverride: "alt+x"
+    }
+  }, {
+    id: 3,
+    label: "Ctrl + L Keybind",
+    config: {
+      keybindOverride: "ctrl+l"
     }
   }]
 });
