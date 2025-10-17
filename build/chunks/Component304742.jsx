@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk642909 = require("./642909.js"),
   Chunk215023 = require("./215023.js"),
@@ -18,7 +18,7 @@ function g(e) {
   let {
     handleTransition: t,
     onClose: n
-  } = e, i = (0, a.G)("CollectiblesIndexPageContextMenu"), g = l.useMemo(() => [{
+  } = e, i = (0, s.G)("CollectiblesIndexPageContextMenu"), g = l.useMemo(() => [{
     label: u.intl.string(u.t.dRZYND),
     value: c.AW.AVATAR_DECORATIONS
   }, {
@@ -35,18 +35,18 @@ function g(e) {
     value: c.AW.CATALOG
   }], []);
   return (0, r.jsx)("div", {
-    className: o()({
+    className: a()({
       [d.shopTakeOver]: i
     }),
-    children: (0, r.jsx)(s.v2r, {
+    children: (0, r.jsx)(o.v2r, {
       navId: "collectibles-index-page-menu",
-      className: o()({
+      className: a()({
         [d.shopTakeOver]: i
       }),
       onClose: n,
       "aria-label": u.intl.string(u.t.xFcotb),
       onSelect: () => {},
-      children: g.map(e => (0, r.jsx)(s.sNh, {
+      children: g.map(e => (0, r.jsx)(o.sNh, {
         id: e.value,
         label: e.label,
         action: () => {

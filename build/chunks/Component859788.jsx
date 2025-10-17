@@ -20,12 +20,12 @@ let g = e => {
     bannerAnimated: n,
     bannerRive: l,
     isResponsive: g = false,
-    eventTargetRef: f
-  } = e, p = (0, o.e7)([a.Z], () => a.Z.useReducedMotion), C = (0, o.e7)([u.Z], () => u.Z.isFocused()), h = null != n && !p && C;
-  return null != l ? (0, r.jsx)(s.B, {
+    eventTargetRef: p
+  } = e, f = (0, a.e7)([s.Z], () => s.Z.useReducedMotion), C = (0, a.e7)([u.Z], () => u.Z.isFocused()), h = null != n && !f && C;
+  return null != l ? (0, r.jsx)(o.B, {
     src: l,
     fit: "fit-width",
-    eventTargetRef: f
+    eventTargetRef: p
   }) : h ? (0, r.jsx)(c.Z, {
     className: i()({
       [d.responsive]: g

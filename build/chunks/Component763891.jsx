@@ -44,9 +44,9 @@ function R(e) {
     scrollerRef: R,
     tab: Z
   } = e, w = (0, g.sp)(), H = null != (t = null == w ? true : w.sessionId) ? t : "", {
-    noCache: M,
-    includeUnpublished: D
-  } = (0, x.Z)(), F = (0, o.e7)([u.default], () => u.default.getCurrentUser()), W = (0, o.e7)([f.Z], () => f.Z.productsWithVariantsAsGroup), [U, V] = l.useState(1), z = (0, c.Fg)(), G = (0, s.ap)(z), [K, Y, q] = l.useMemo(() => {
+    noCache: D,
+    includeUnpublished: M
+  } = (0, x.Z)(), F = (0, a.e7)([u.default], () => u.default.getCurrentUser()), W = (0, a.e7)([p.Z], () => p.Z.productsWithVariantsAsGroup), [V, U] = l.useState(1), z = (0, c.Fg)(), G = (0, o.ap)(z), [K, Y, q] = l.useMemo(() => {
     switch (Z) {
       case O.AW.AVATAR_DECORATIONS:
         return [y.intl.string(y.t.dRZYND), G ? I.Z : L.Z, i.Z.AVATAR_DECORATION];
@@ -55,7 +55,7 @@ function R(e) {
       case O.AW.NAMEPLATES:
         return [y.intl.string(y.t.V68Fq6), G ? A.Z : B.Z, i.Z.NAMEPLATE];
       case O.AW.BUNDLES:
-        return [y.intl.string(y.t.FYFppq), G ? j.Z : T.Z, i.Z.BUNDLE]
+        return [y.intl.string(y.t.FYFppq), G ? T.Z : k.Z, i.Z.BUNDLE]
     }
   }, [Z, G]), Q = (0, C.a)(), J = l.useMemo(() => Q(W.filter(e => {
     var t;
@@ -66,19 +66,19 @@ function R(e) {
       sessionId: H,
       checkpoint: _.a.SHOP_MOUNTED,
       tab: Z,
-      unpublishedCategoriesShown: D,
-      cacheDisabled: M
+      unpublishedCategoriesShown: M,
+      cacheDisabled: D
     })
   }, []), l.useEffect(() => {
     n || (0, _.n)({
       sessionId: H,
       checkpoint: _.a.SHOP_RENDERED,
       tab: Z,
-      unpublishedCategoriesShown: D,
-      cacheDisabled: M
+      unpublishedCategoriesShown: M,
+      cacheDisabled: D
     })
-  }, [H, D, M, n, Z]);
-  let $ = p.Z.useConfig({
+  }, [H, M, D, n, Z]);
+  let $ = f.Z.useConfig({
     location: "CollectiblesFilterableShop"
   }).showCardsV2;
   return n || null == F ? (0, r.jsx)(m.Z, {}) : (0, r.jsxs)(r.Fragment, {
@@ -86,22 +86,22 @@ function R(e) {
       style: {
         backgroundImage: "url(".concat(Y, ")")
       },
-      className: k.bannerContainer,
-      children: (0, r.jsx)(a.Heading, {
+      className: j.bannerContainer,
+      children: (0, r.jsx)(s.Heading, {
         variant: "heading-xxl/extrabold",
         children: K
       })
     }), (0, r.jsx)("div", {
-      className: k.products,
-      children: X.slice(40 * (U - 1), 40 * U).map((e, t) => {
-        let n = f.Z.getCategory(e.categorySkuId);
+      className: j.products,
+      children: X.slice(40 * (V - 1), 40 * V).map((e, t) => {
+        let n = p.Z.getCategory(e.categorySkuId);
         return null == n ? null : (0, r.jsx)(g.k0, {
           newValue: {
             tilePosition: t
           },
-          children: $ ? (0, r.jsx)(E.Z, {
+          children: $ ? (0, r.jsx)(v.Z, {
             skuId: e.skuId,
-            onClickAnalytics: (0, v.wO)(e, Z, w)
+            onClickAnalytics: (0, E.wO)(e, Z, w)
           }, e.skuId) : (0, r.jsx)(b.Z, {
             product: e,
             user: F,
@@ -111,10 +111,10 @@ function R(e) {
         }, e.skuId)
       })
     }), X.length > 40 && (0, r.jsx)("div", {
-      className: k.paginationContainer,
+      className: j.paginationContainer,
       children: (0, r.jsx)("div", {
-        children: (0, r.jsx)(a.DsT, {
-          currentPage: U,
+        children: (0, r.jsx)(s.DsT, {
+          currentPage: V,
           totalCount: X.length,
           pageSize: 40,
           onPageChange: e => {
@@ -127,7 +127,7 @@ function R(e) {
               page_size: 40,
               cta_name: "".concat(Z, " page ").concat(e),
               page_type: Z
-            }), V(e), null == R || null == (t = R.current) || t.scrollToTop({
+            }), U(e), null == R || null == (t = R.current) || t.scrollToTop({
               animate: true
             })
           },

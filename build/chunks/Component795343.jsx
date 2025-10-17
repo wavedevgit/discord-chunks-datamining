@@ -2,12 +2,12 @@
 /** chunk id: 795343, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => k
 }), require("./388685.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
   Chunk594174 = require("./594174.js"),
@@ -29,44 +29,44 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk891131 = require("./891131.js");
 
-function T(e) {
+function k(e) {
   var t;
   let {
     isFetchingCategories: n,
     scrollerRef: i,
-    tab: T
-  } = e, j = (0, d.sp)(), L = null != (t = null == j ? true : j.sessionId) ? t : "", {
+    tab: k
+  } = e, T = (0, d.sp)(), L = null != (t = null == T ? true : T.sessionId) ? t : "", {
     noCache: I,
     includeUnpublished: B
-  } = (0, O.Z)(), A = (0, s.e7)([c.default], () => c.default.getCurrentUser()), {
+  } = (0, O.Z)(), A = (0, o.e7)([c.default], () => c.default.getCurrentUser()), {
     skus: N,
     currentPage: P,
     totalCount: R,
     isFetchingResults: Z
-  } = (0, h.a)(), w = (0, s.Wu)([g.Z], () => g.Z.getProductsBySkus(N)), H = l.useCallback(() => {
+  } = (0, h.a)(), w = (0, o.Wu)([g.Z], () => g.Z.getProductsBySkus(N)), H = l.useCallback(() => {
     var e;
     null == i || null == (e = i.current) || e.scrollToTop({
       animate: true
     })
-  }, [i]), M = null == N ? true : N.join("");
+  }, [i]), D = null == N ? true : N.join("");
   l.useEffect(() => {
     H()
-  }, [M, H]);
-  let D = (0, p.a)(),
-    F = l.useMemo(() => D(w), [D, w]);
+  }, [D, H]);
+  let M = (0, f.a)(),
+    F = l.useMemo(() => M(w), [M, w]);
   l.useEffect(() => {
     n || (0, _.n)({
       sessionId: L,
       checkpoint: _.a.SHOP_RENDERED,
-      tab: T,
+      tab: k,
       unpublishedCategoriesShown: B,
       cacheDisabled: I
     })
-  }, [L, B, I, n, T]);
+  }, [L, B, I, n, k]);
   let W = l.useRef(null),
     {
-      setQueryPageSize: U,
-      setQueryPageOffset: V,
+      setQueryPageSize: V,
+      setQueryPageOffset: U,
       queryPageSize: z
     } = (0, C.S)(),
     [G, K] = l.useState(false),
@@ -78,32 +78,32 @@ function T(e) {
   let q = z > 0 && !Y && 0 === F.length;
   l.useEffect(() => {
     let e = new ResizeObserver(() => {
-      null != W.current && U(Math.floor(5 * getComputedStyle(W.current).gridTemplateColumns.split(/\s+/).length))
+      null != W.current && V(Math.floor(5 * getComputedStyle(W.current).gridTemplateColumns.split(/\s+/).length))
     });
     if (null != W.current) return e.observe(W.current), () => e.disconnect()
-  }, [U]);
+  }, [V]);
   let Q = l.useCallback(e => {
       u.default.track(y.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-        collectibles_shop_session_id: null == j ? true : j.sessionId,
-        page_section: null == j ? true : j.pageSection,
-        page_category: null == j ? true : j.pageCategory,
+        collectibles_shop_session_id: null == T ? true : T.sessionId,
+        page_section: null == T ? true : T.pageSection,
+        page_category: null == T ? true : T.pageCategory,
         page_index: e,
         page_size: z,
         cta_name: "filter results page ".concat(e),
         page_type: "catalog"
-      }), V((e - 1) * z)
-    }, [j, z, V]),
-    J = f.Z.useConfig({
+      }), U((e - 1) * z)
+    }, [T, z, U]),
+    J = p.Z.useConfig({
       location: "CollectiblesFilterableShop"
     }).showCardsV2;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
-      className: o()({
-        [k.productsEmpty]: q
+      className: a()({
+        [j.productsEmpty]: q
       }),
       children: [q && (0, r.jsx)(S.Z, {}), (0, r.jsxs)("div", {
-        className: o()(k.products, {
-          [k.loadIn]: G
+        className: a()(j.products, {
+          [j.loadIn]: G
         }),
         ref: W,
         children: [Y && [...Array(z)].map((e, t) => J ? (0, r.jsx)(x.Z, {}, t) : (0, r.jsx)(m.K, {}, t)), !Y && F.map((e, t) => {
@@ -112,22 +112,22 @@ function T(e) {
             newValue: {
               tilePosition: t
             },
-            children: J ? (0, r.jsx)(E.Z, {
+            children: J ? (0, r.jsx)(v.Z, {
               skuId: e.skuId,
-              onClickAnalytics: (0, v.wO)(e, T, j)
+              onClickAnalytics: (0, E.wO)(e, k, T)
             }, e.skuId) : (0, r.jsx)(b.Z, {
               product: e,
               user: A,
               category: n,
-              tab: T
+              tab: k
             }, e.skuId)
           }, e.skuId)
         })]
       })]
     }), R > z && (0, r.jsx)("div", {
-      className: k.paginationContainer,
+      className: j.paginationContainer,
       children: (0, r.jsx)("div", {
-        children: (0, r.jsx)(a.DsT, {
+        children: (0, r.jsx)(s.DsT, {
           currentPage: P,
           totalCount: R,
           pageSize: z,

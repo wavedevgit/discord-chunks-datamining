@@ -22,23 +22,23 @@ let C = e => {
     category: _,
     subblock: m,
     badgeText: b,
-    handleTransition: E
+    handleTransition: v
   } = e;
   null != m && (h = null == (t = c.Z.getCategoryByStoreListingId(null == m ? true : m.categoryStoreListingId)) ? true : t.skuId);
-  let v = null != (n = null != h ? h : null == _ ? true : _.skuId) ? n : "",
+  let E = null != (n = null != h ? h : null == _ ? true : _.skuId) ? n : "",
     {
       handleCardVisibilityChange: x
-    } = (0, u.E)(v, "home", "marketing featured block"),
+    } = (0, u.E)(E, "home", "marketing featured block"),
     O = (0, d.YG)(_, m),
     S = l.useRef(null),
     y = null == m ? true : m.bodyText,
-    k = (0, a.sp)();
+    j = (0, s.sp)();
   return (0, r.jsx)(i.$, {
     innerRef: S,
     onChange: x,
     threshold: 0,
-    children: (0, r.jsxs)(o.P3F, {
-      className: p.featuredBlock,
+    children: (0, r.jsxs)(a.P3F, {
+      className: f.featuredBlock,
       innerRef: S,
       style: function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -61,26 +61,26 @@ let C = e => {
         backgroundImage: "url(".concat(O, ")")
       }),
       onClick: () => {
-        E("shop marketing tile", v, true, true), s.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-          collectibles_shop_session_id: null == k ? true : k.sessionId,
-          sku_id: v,
+        v("shop marketing tile", E, true, true), o.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+          collectibles_shop_session_id: null == j ? true : j.sessionId,
+          sku_id: E,
           page_type: "home",
-          page_section: null == k ? true : k.pageSection,
-          page_category: null == k ? true : k.pageCategory,
+          page_section: null == j ? true : j.pageSection,
+          page_category: null == j ? true : j.pageCategory,
           tile_type: "FEATURED_BLOCK",
-          tile_position: String(null == k ? true : k.tilePosition),
+          tile_position: String(null == j ? true : j.tilePosition),
           cta_name: null
         })
       },
-      children: [null != b && (0, r.jsx)(o.IGR, {
+      children: [null != b && (0, r.jsx)(a.IGR, {
         disableColor: true,
         text: b,
-        className: p.featuredBlockBadge
+        className: f.featuredBlockBadge
       }), (0, r.jsx)("div", {
-        className: p.featuredBlockTextContainer,
-        children: null != y && (0, r.jsx)(o.Heading, {
+        className: f.featuredBlockTextContainer,
+        children: null != y && (0, r.jsx)(a.Heading, {
           lineClamp: 4,
-          className: p.featuredBlockBodyText,
+          className: f.featuredBlockBodyText,
           style: {
             color: null != (C = null == m ? true : m.bannerTextColor) ? C : "white"
           },
@@ -88,19 +88,19 @@ let C = e => {
           children: y
         })
       }), (0, r.jsx)("div", {
-        className: p.featuredBlockButtonContainer,
-        children: (0, r.jsx)(o.Button, {
+        className: f.featuredBlockButtonContainer,
+        children: (0, r.jsx)(a.Button, {
           variant: "overlay-primary",
-          text: f.intl.string(f.t.jVcuVV),
+          text: p.intl.string(p.t.jVcuVV),
           onClick: e => {
-            E("shop marketing take me there button", v, true, true), e.stopPropagation(), s.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
-              collectibles_shop_session_id: null == k ? true : k.sessionId,
-              sku_id: v,
+            v("shop marketing take me there button", E, true, true), e.stopPropagation(), o.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+              collectibles_shop_session_id: null == j ? true : j.sessionId,
+              sku_id: E,
               page_type: "home",
-              page_section: null == k ? true : k.pageSection,
-              page_category: null == k ? true : k.pageCategory,
+              page_section: null == j ? true : j.pageSection,
+              page_category: null == j ? true : j.pageCategory,
               tile_type: "FEATURED_BLOCK",
-              tile_position: String(null == k ? true : k.tilePosition),
+              tile_position: String(null == j ? true : j.tilePosition),
               cta_name: "Take me there button"
             })
           }

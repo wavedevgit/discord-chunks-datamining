@@ -15,7 +15,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk788822 = require("./788822.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk310582 = require("./310582.js");
-let f = e => {
+let p = e => {
     let {
       handleTransition: t,
       featuredBlockRecord: n
@@ -23,7 +23,7 @@ let f = e => {
     return (0, r.jsx)("div", {
       className: i()(g.col2, g.centeredSection),
       children: null == n ? true : n.subblocks.map((e, n) => {
-        if (e.type === o.O.CATEGORY) {
+        if (e.type === a.O.CATEGORY) {
           let i = null != e.unpublishedAt ? d.intl.string(d.t["h/uBCQ"]) : (e => {
             switch (l) {
               case c.pj.NO_BADGE:
@@ -38,7 +38,7 @@ let f = e => {
                 returnfalse
             }
           })(n) ? d.intl.string(d.t["soka7+"]) : true;
-          return (0, r.jsx)(a.k0, {
+          return (0, r.jsx)(s.k0, {
             newValue: {
               categoryPosition: 1,
               pageCategory: e.name,
@@ -56,13 +56,13 @@ let f = e => {
       })
     })
   },
-  p = e => {
+  f = e => {
     let {
       handleTransition: t,
       categories: n
     } = e, l = (0, c.QH)("collectibles_featured_block");
-    if (null == n || n.length < 2) return s.Z.captureMessage("Collectible Featured Block requires at least 2 categories"), null;
-    let [o, f] = n, p = (null == o ? true : o.unpublishedAt) != null ? d.intl.string(d.t["h/uBCQ"]) : (() => {
+    if (null == n || n.length < 2) return o.Z.captureMessage("Collectible Featured Block requires at least 2 categories"), null;
+    let [a, p] = n, f = (null == a ? true : a.unpublishedAt) != null ? d.intl.string(d.t["h/uBCQ"]) : (() => {
       switch (l) {
         case c.pj.FIRST_BLOCK_ONLY:
         case c.pj.BOTH_BLOCKS:
@@ -70,7 +70,7 @@ let f = e => {
         default:
           returnfalse
       }
-    })() && (null == o ? true : o.storeListingId) != null && "" !== o.storeListingId ? d.intl.string(d.t["soka7+"]) : true, C = (null == f ? true : f.unpublishedAt) != null ? d.intl.string(d.t["h/uBCQ"]) : (() => {
+    })() && (null == a ? true : a.storeListingId) != null && "" !== a.storeListingId ? d.intl.string(d.t["soka7+"]) : true, C = (null == p ? true : p.unpublishedAt) != null ? d.intl.string(d.t["h/uBCQ"]) : (() => {
       switch (l) {
         case c.pj.RIGHT_BLOCK_ONLY:
         case c.pj.BOTH_BLOCKS:
@@ -78,22 +78,22 @@ let f = e => {
         default:
           returnfalse
       }
-    })() && (null == f ? true : f.storeListingId) != null && "" !== f.storeListingId ? d.intl.string(d.t["soka7+"]) : d.intl.string(d.t["o/oRJC"]);
+    })() && (null == p ? true : p.storeListingId) != null && "" !== p.storeListingId ? d.intl.string(d.t["soka7+"]) : d.intl.string(d.t["o/oRJC"]);
     return (0, r.jsx)("div", {
       className: i()(g.col2, g.centeredSection),
-      children: (0, r.jsxs)(a.k0, {
+      children: (0, r.jsxs)(s.k0, {
         newValue: {
           categoryPosition: 1,
-          pageCategory: null != o ? o.name : null == f ? true : f.name,
+          pageCategory: null != a ? a.name : null == p ? true : p.name,
           pageSection: "featured_block",
-          tilePosition: +(null == o)
+          tilePosition: +(null == a)
         },
-        children: [null != o && (0, r.jsx)(u.q, {
-          category: o,
-          badgeText: p,
+        children: [null != a && (0, r.jsx)(u.q, {
+          category: a,
+          badgeText: f,
           handleTransition: t
-        }), null != f && (0, r.jsx)(u.q, {
-          category: f,
+        }), null != p && (0, r.jsx)(u.q, {
+          category: p,
           badgeText: C,
           handleTransition: t
         })]
@@ -105,7 +105,7 @@ let f = e => {
       isLoading: t,
       handleTransition: n,
       categories: l,
-      featuredBlockRecord: o
+      featuredBlockRecord: a
     } = e;
     return t ? (0, r.jsxs)("div", {
       className: i()(g.col2, g.centeredSection),
@@ -120,11 +120,11 @@ let f = e => {
           className: g.skeletonBody
         })
       })]
-    }) : null != o ? (0, r.jsx)(f, {
-      featuredBlockRecord: o,
+    }) : null != a ? (0, r.jsx)(p, {
+      featuredBlockRecord: a,
       handleTransition: n,
       isLoading: false
-    }) : (0, r.jsx)(p, {
+    }) : (0, r.jsx)(f, {
       categories: l,
       handleTransition: n,
       isLoading: false

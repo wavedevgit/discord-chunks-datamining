@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
@@ -45,35 +45,35 @@ let P = e => {
     prioritizeUserDiscounts: Z,
     tab: w,
     buttonContainerClassName: H,
-    orbsSupportedOnly: M
-  } = e, D = (0, s.e7)([g.default], () => g.default.getCurrentUser()), F = h.ZP.canUseCollectibles(D), W = (0, j.G)("FeedBlock"), {
-    sortType: U,
-    setSortType: V,
+    orbsSupportedOnly: D
+  } = e, M = (0, o.e7)([g.default], () => g.default.getCurrentUser()), F = h.ZP.canUseCollectibles(M), W = (0, T.G)("FeedBlock"), {
+    sortType: V,
+    setSortType: U,
     sortedItems: z,
     sortOptions: G,
     shuffleProducts: K,
     showRecommendationOption: Y
-  } = (0, k.Z)({
+  } = (0, j.Z)({
     sortedSkuIds: P,
     isPremiumUser: F,
     prioritizeUserDiscounts: Z,
-    orbsSupportedOnly: M
-  }), q = (0, T.St)(z), Q = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), J = (0, s.e7)([f.Z], () => f.Z.isFocused()), X = !Q && J, {
+    orbsSupportedOnly: D
+  }), q = (0, k.St)(z), Q = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), J = (0, o.e7)([p.Z], () => p.Z.isFocused()), X = !Q && J, {
     animationPhase: $,
     startAnimation: ee
   } = (0, y.y)(), et = (0, _.sp)(), en = null != (t = null == et ? true : et.sessionId) ? t : "", er = l.useRef(null), el = l.useCallback(e => {
     ee({
       isShuffling: false,
-      onOutroComplete: () => V(e)
-    }), p.default.track(I.rMx.COLLECTIBLES_SHOP_FEED_SORT_CHANGED, {
+      onOutroComplete: () => U(e)
+    }), f.default.track(I.rMx.COLLECTIBLES_SHOP_FEED_SORT_CHANGED, {
       page_session_id: en,
       sort_type: e
     })
-  }, [ee, V, en]), ei = b.Z.useConfig({
+  }, [ee, U, en]), ei = b.Z.useConfig({
     location: "FeedBlock"
   }).showCardsV2;
-  return null == D ? null : (0, r.jsxs)("div", {
-    className: o()(N.popularPicksSection, N.centeredSection),
+  return null == M ? null : (0, r.jsxs)("div", {
+    className: a()(N.popularPicksSection, N.centeredSection),
     children: [(0, r.jsxs)("div", {
       className: N.blockHeader,
       children: [(0, r.jsxs)("div", {
@@ -81,7 +81,7 @@ let P = e => {
         children: [(0, r.jsx)(c.Heading, {
           variant: "heading-lg/semibold",
           children: i
-        }), Y && (0, r.jsx)(a.u, {
+        }), Y && (0, r.jsx)(s.u, {
           text: B.intl.string(B.t["3taPdn"]),
           position: "top",
           "aria-label": B.intl.string(B.t["3taPdn"]),
@@ -94,7 +94,7 @@ let P = e => {
           })
         })]
       }), (0, r.jsxs)("div", {
-        className: o()(N.headerRight, {
+        className: a()(N.headerRight, {
           [A.shopTakeOver]: W
         }),
         children: [(0, r.jsx)(c.Text, {
@@ -106,10 +106,10 @@ let P = e => {
             options: G,
             select: el,
             className: N.sortSelect,
-            popoutClassName: o()({
+            popoutClassName: a()({
               [A.shopTakeOver]: W
             }),
-            isSelected: e => e === U,
+            isSelected: e => e === V,
             serialize: e => e
           })
         }), (0, r.jsx)("div", {
@@ -123,7 +123,7 @@ let P = e => {
                 isShuffling: true,
                 onOutroComplete: K,
                 returnRef: er
-              }), p.default.track(I.rMx.COLLECTIBLES_SHOP_FEED_SHUFFLE_CLICKED, {
+              }), f.default.track(I.rMx.COLLECTIBLES_SHOP_FEED_SHUFFLE_CLICKED, {
                 page_session_id: en
               })
             },
@@ -134,7 +134,7 @@ let P = e => {
     }), (0, r.jsx)("div", {
       className: N.feed,
       children: n ? (0, r.jsx)(r.Fragment, {
-        children: [...Array(12)].map((e, t) => ei ? (0, r.jsx)(S.Z, {}, t + 1) : (0, r.jsx)(E.K, {}, t + 1))
+        children: [...Array(12)].map((e, t) => ei ? (0, r.jsx)(S.Z, {}, t + 1) : (0, r.jsx)(v.K, {}, t + 1))
       }) : q.slice(0, R).map((e, t) => {
         let n, l = m.Z.getCategoryForProduct(e.skuId);
         if (null == e || null == l) return null;
@@ -164,10 +164,10 @@ let P = e => {
               prioritizedCurrency: w === L.AW.ORBS ? O.tA.ORBS : true,
               onClickAnalytics: (0, O.wO)(e, w, et)
             })
-          }) : (0, r.jsx)(v.Z, {
+          }) : (0, r.jsx)(E.Z, {
             product: e,
             category: l,
-            user: D,
+            user: M,
             tab: w,
             className: n
           })

@@ -2,19 +2,19 @@
 /** chunk id: 302933, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  J: () => f
+  J: () => p
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk258536 = require("./258536.js"),
   Chunk873546 = require("./873546.js"),
   Chunk435935 = require("./435935.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk168020 = require("./168020.jsx"),
   Chunk779485 = require("./779485.js");
-let f = Chunk647438.memo(function(e) {
+let p = Chunk647438.memo(function(e) {
   let {
     countdownTimerBlock: t,
     isVisible: n
@@ -26,8 +26,8 @@ let f = Chunk647438.memo(function(e) {
       friction: 12
     }
   });
-  return (0, r.jsxs)(s.animated.div, {
-    className: o()([g.countDownWrapper, a.tq && g.mobileWrapper]),
+  return (0, r.jsxs)(o.animated.div, {
+    className: a()([g.countDownWrapper, s.tq && g.mobileWrapper]),
     role: "status",
     style: function(e) {
       for (var t = 1; t < arguments.length; t++) {

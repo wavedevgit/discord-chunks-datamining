@@ -2,12 +2,12 @@
 /** chunk id: 580914, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => V
+  Z: () => U
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk907331 = require("./907331.js"),
   Chunk636977 = require("./636977.js"),
   Chunk685816 = require("./685816.js"),
@@ -44,7 +44,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk310582 = require("./310582.js");
 let W = (0, Chunk884697.IC)(90),
-  U = {
+  V = {
     rankedSkuIds: [],
     name: "",
     unpublishedAt: true,
@@ -55,76 +55,76 @@ let W = (0, Chunk884697.IC)(90),
     type: Chunk685816.z.HERO,
     categoryStoreListingId: ""
   },
-  V = e => {
+  U = e => {
     var t;
     let {
       isLoading: n,
       handleTransition: i,
-      category: V,
+      category: U,
       heroBlock: z,
       tab: G,
       onVisibilityChange: K
-    } = e, Y = (0, s.O)(e => {
+    } = e, Y = (0, o.O)(e => {
       null == K || K(e)
     }, .1, null != K), q = l.useRef(null), Q = (0, Z.G)("HeroBlock"), J = (0, u.e7)([h.default], () => h.default.getCurrentUser()), X = (0, N.Z)(), $ = (0, m.sp)(), ee = O.Z.useConfig({
       location: "HeroBlock"
     }).showButtonLeftAligned && G !== H.AW.ORBS, et = (0, S.x)("HeroBlock"), en = l.useMemo(() => {
       var e, t;
-      return null != z ? z : null == V ? U : {
-        rankedSkuIds: null != (e = V.heroRanking) ? e : [],
-        name: V.name,
-        unpublishedAt: V.unpublishedAt,
-        logoUrl: (0, E.uV)(null != (t = V.heroLogo) ? t : V.logo, {
+      return null != z ? z : null == U ? V : {
+        rankedSkuIds: null != (e = U.heroRanking) ? e : [],
+        name: U.name,
+        unpublishedAt: U.unpublishedAt,
+        logoUrl: (0, v.uV)(null != (t = U.heroLogo) ? t : U.logo, {
           size: W
         }),
-        categorySkuId: V.skuId,
-        bannerAsset: V.heroBannerAsset,
-        summary: V.summary,
+        categorySkuId: U.skuId,
+        bannerAsset: U.heroBannerAsset,
+        summary: U.summary,
         type: c.z.HERO,
-        categoryStoreListingId: V.storeListingId,
-        bannerDisplayConfig: V.heroBannerDisplayConfig,
-        logoDisplayConfig: V.heroLogoDisplayConfig,
-        heroLogoUrl: V.heroLogoUrl,
-        heroBannerUrl: V.heroBannerUrl,
-        heroBannerAnimatedUrl: V.heroBannerAnimatedUrl
+        categoryStoreListingId: U.storeListingId,
+        bannerDisplayConfig: U.heroBannerDisplayConfig,
+        logoDisplayConfig: U.heroLogoDisplayConfig,
+        heroLogoUrl: U.heroLogoUrl,
+        heroBannerUrl: U.heroBannerUrl,
+        heroBannerAnimatedUrl: U.heroBannerAnimatedUrl
       }
-    }, [z, V]), {
+    }, [z, U]), {
       bannerStyleOverrides: er,
       logoStyleOverrides: el,
       heroLogo: ei,
-      heroBannerStatic: eo,
-      heroBannerAnimated: es,
-      heroBannerRive: ea
-    } = (0, A.hr)(en), ec = null != (t = null == er ? true : er.responsive) && t, eu = null == er ? true : er.backgroundStyle, ed = null != ea, eg = (0, u.e7)([b.Z], () => b.Z.products), ef = l.useMemo(() => n ? [] : eg.size > 0 ? X(en.rankedSkuIds) : [], [n, X, en.rankedSkuIds, eg]), ep = l.useMemo(() => !n && 0 !== en.rankedSkuIds.length && !(ef.length > 0) && en.rankedSkuIds.every(e => {
+      heroBannerStatic: ea,
+      heroBannerAnimated: eo,
+      heroBannerRive: es
+    } = (0, A.hr)(en), ec = null != (t = null == er ? true : er.responsive) && t, eu = null == er ? true : er.backgroundStyle, ed = null != es, eg = (0, u.e7)([b.Z], () => b.Z.products), ep = l.useMemo(() => n ? [] : eg.size > 0 ? X(en.rankedSkuIds) : [], [n, X, en.rankedSkuIds, eg]), ef = l.useMemo(() => !n && 0 !== en.rankedSkuIds.length && !(ep.length > 0) && en.rankedSkuIds.every(e => {
       var t;
       return (null == (t = b.Z.getProduct(e)) ? true : t.variantGroupStoreListingId) != null
-    }), [n, en.rankedSkuIds, ef.length]), {
+    }), [n, en.rankedSkuIds, ep.length]), {
       cardContainerRef: eC,
       totalCards: eh
     } = (e => {
-      let [t, n] = l.useState(1), r = (0, d.dQu)(d.TVs.space.SPACE_XL), i = (0, f.Z)(() => {
-        (null == o ? true : o.current) != null && n(Math.max(1, Math.floor((o.current.offsetWidth + r) / (246 + r))))
-      }), o = (0, g.y)(i, [r, e], {
+      let [t, n] = l.useState(1), r = (0, d.dQu)(d.TVs.space.SPACE_XL), i = (0, p.Z)(() => {
+        (null == a ? true : a.current) != null && n(Math.max(1, Math.floor((a.current.offsetWidth + r) / (246 + r))))
+      }), a = (0, g.y)(i, [r, e], {
         fireOnMount: true,
         fireOnDepsChange: true,
         enabled: e
       });
       return {
         cardContainerRef: l.useCallback(t => {
-          o.current = t, null != t && e && i()
-        }, [i, o, e]),
+          a.current = t, null != t && e && i()
+        }, [i, a, e]),
         totalCards: e ? t : true
       }
-    })(G !== H.AW.ORBS), e_ = (0, y.a)()(ef), em = (0, k.l)(e_).slice(0, eh), eb = (0, P.St)(em), eE = G === H.AW.ORBS ? D.intl.string(D.t["1CdL8f"]) : Q ? D.intl.string(D.t.guWAg4) : et ? D.intl.string(D.t["/QvRam"]) : D.intl.string(D.t.xYKa1d), ev = (0, x.FF)("CollectiblesContent"), ex = (0, E.$2)(en.categorySkuId), eO = v.Z.useConfig({
+    })(G !== H.AW.ORBS), e_ = (0, y.a)()(ep), em = (0, j.l)(e_).slice(0, eh), eb = (0, P.St)(em), ev = G === H.AW.ORBS ? M.intl.string(M.t["1CdL8f"]) : Q ? M.intl.string(M.t.guWAg4) : et ? M.intl.string(M.t["/QvRam"]) : M.intl.string(M.t.xYKa1d), eE = (0, x.FF)("CollectiblesContent"), ex = (0, v.$2)(en.categorySkuId), eO = E.Z.useConfig({
       location: "HeroBlock"
     }).showCardsV2, eS = () => {
       G === H.AW.ORBS ? ((0, C.Y)({
-        pageType: M.ZY5.SHOP_ORBS_TAB,
-        sectionType: M.jXE.ORBS_SHOP_HERO_BLOCK,
-        ctaObject: M.qAy.CTA_TO_QUEST_HOME
-      }), (0, p.navigateToQuestHome)({
-        fromContent: a.j.ORBS_SHOP_HERO_CTA
-      })) : (i("shop latest category hero", !ev || ex ? en.categorySkuId : true, true, true), _.default.track(M.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+        pageType: D.ZY5.SHOP_ORBS_TAB,
+        sectionType: D.jXE.ORBS_SHOP_HERO_BLOCK,
+        ctaObject: D.qAy.CTA_TO_QUEST_HOME
+      }), (0, f.navigateToQuestHome)({
+        fromContent: s.j.ORBS_SHOP_HERO_CTA
+      })) : (i("shop latest category hero", !eE || ex ? en.categorySkuId : true, true, true), _.default.track(D.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
         collectibles_shop_session_id: null == $ ? true : $.sessionId,
         sku_id: en.categorySkuId,
         page_type: G,
@@ -133,7 +133,7 @@ let W = (0, Chunk884697.IC)(90),
         cta_name: "shop latest category hero button"
       }))
     };
-    return null != J && (n || en !== U) ? (0, r.jsxs)("div", {
+    return null != J && (n || en !== V) ? (0, r.jsxs)("div", {
       ref: Y,
       className: F.heroBlock,
       children: [ed ? (0, R.gT)({
@@ -141,16 +141,16 @@ let W = (0, Chunk884697.IC)(90),
         className: F.riveEventOverlay,
         riveEventTargetRef: q
       }) : null, (0, r.jsx)("div", {
-        className: o()(F.banner, {
+        className: a()(F.banner, {
           [F.rivBanner]: ed
         }),
         style: null != eu ? {
           background: eu
         } : true,
-        children: null != eo && (0, r.jsx)(w.Z, {
-          bannerStatic: eo,
-          bannerAnimated: es,
-          bannerRive: ea,
+        children: null != ea && (0, r.jsx)(w.Z, {
+          bannerStatic: ea,
+          bannerAnimated: eo,
+          bannerRive: es,
           isResponsive: ec,
           eventTargetRef: q
         })
@@ -161,10 +161,10 @@ let W = (0, Chunk884697.IC)(90),
           children: !n && (0, r.jsx)(d.Button, {
             variant: "overlay-primary",
             onClick: eS,
-            text: eE
+            text: ev
           })
         }) : (0, r.jsxs)("div", {
-          className: o()(ee ? F.heroHeaderContainerStacked : F.heroHeaderContainer, {
+          className: a()(ee ? F.heroHeaderContainerStacked : F.heroHeaderContainer, {
             [F.responsive]: ec
           }),
           children: [n ? (0, r.jsx)("div", {
@@ -173,10 +173,10 @@ let W = (0, Chunk884697.IC)(90),
             className: F.heroHeaderBadgeLogoSummaryContainer,
             children: [null != en.unpublishedAt && (0, r.jsx)(d.IGR, {
               disableColor: true,
-              text: D.intl.string(D.t["h/uBCQ"]),
+              text: M.intl.string(M.t["h/uBCQ"]),
               className: F.limitedTimeBadge
             }), (0, r.jsxs)("div", {
-              className: o()(F.heroLogoNameContainer, {
+              className: a()(F.heroLogoNameContainer, {
                 [F.heroLogoNameContainerStacked]: ee
               }),
               children: [null != ei && (0, r.jsx)("img", {
@@ -203,17 +203,17 @@ let W = (0, Chunk884697.IC)(90),
             children: (0, r.jsx)(d.Button, {
               variant: "overlay-primary",
               onClick: eS,
-              text: eE
+              text: ev
             })
           })]
         }), (0, r.jsx)("div", {
-          className: o()({
+          className: a()({
             [F.row]: G === H.AW.HOME,
             [F.feed]: G === H.AW.ORBS
           }),
           ref: eC,
-          children: n || ep ? (0, r.jsx)(r.Fragment, {
-            children: [...Array(null != eh ? eh : 4)].map((e, t) => eO ? (0, r.jsx)(B.Z, {}, t) : (0, r.jsx)(T.K, {}, t))
+          children: n || ef ? (0, r.jsx)(r.Fragment, {
+            children: [...Array(null != eh ? eh : 4)].map((e, t) => eO ? (0, r.jsx)(B.Z, {}, t) : (0, r.jsx)(k.K, {}, t))
           }) : (0, r.jsx)(r.Fragment, {
             children: eb.map((e, t) => {
               let n = b.Z.getCategoryForProduct(e.skuId);
@@ -227,7 +227,7 @@ let W = (0, Chunk884697.IC)(90),
                   skuId: null == e ? true : e.skuId,
                   prioritizedCurrency: G === H.AW.ORBS ? I.tA.ORBS : true,
                   onClickAnalytics: (0, I.wO)(e, G, $)
-                }, e.skuId) : (0, r.jsx)(j.Z, {
+                }, e.skuId) : (0, r.jsx)(T.Z, {
                   product: e,
                   category: n,
                   user: J,

@@ -2,12 +2,12 @@
 /** chunk id: 653126, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => T
+  Z: () => k
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk979554 = require("./979554.js"),
   Chunk622535 = require("./622535.js"),
   Chunk481060 = require("./481060.js"),
@@ -22,19 +22,19 @@ var Chunk951288 = require("./951288.js"),
   Chunk819882 = require("./819882.jsx"),
   Chunk786040 = require("./786040.js"),
   Chunk659755 = require("./659755.js"),
-  Chunk942103 = require("./942103.jsx"),
+  Chunk406667 = require("./406667.jsx"),
   Chunk268865 = require("./268865.jsx"),
   Chunk29121 = require("./29121.js"),
   Chunk215023 = require("./215023.js"),
   Chunk213301 = require("./213301.js");
-let k = Chunk647438.memo(function(e) {
+let j = Chunk647438.memo(function(e) {
     let {
       product: t,
       hideWishlistButton: n,
       hideProductName: i,
-      hideVariantSwitcher: k,
-      hidePrice: T,
-      hidePrimaryCTA: j,
+      hideVariantSwitcher: j,
+      hidePrice: k,
+      hidePrimaryCTA: T,
       hideSecondaryCTA: L,
       badgeOverride: I,
       onClickCard: B,
@@ -45,18 +45,18 @@ let k = Chunk647438.memo(function(e) {
       onFocus: Z,
       onBlur: w,
       primaryCTAText: H,
-      secondaryCTAIcon: M,
-      productNameClassName: D,
+      secondaryCTAIcon: D,
+      productNameClassName: M,
       badgeClassName: F,
       cardClassName: W,
-      prioritizedCurrency: U,
-      onClickAnalytics: V
+      prioritizedCurrency: V,
+      onClickAnalytics: U
     } = e, z = (0, g.Nd)(), G = null == z ? true : z.tab, K = (0, O.zQ)(t), Y = l.useRef(null), {
       isHoveringOrFocusing: q
     } = (0, d.Z)(Y), {
       handleCardVisibilityChange: Q
-    } = (0, f.E)(t.skuId, G === S.AW.CATALOG ? "full" : G), J = (0, b.J7)(t, u.Z.COLLECTIBLES_SHOP_CARD, V), X = t.type === s.Z.VARIANTS_GROUP && !k, $ = !j || !L, ee = !T || X, et = $ || X;
-    return (0, r.jsx)(a.$, {
+    } = (0, p.E)(t.skuId, G === S.AW.CATALOG ? "full" : G), J = (0, b.J7)(t, u.Z.COLLECTIBLES_SHOP_CARD, U), X = t.type === o.Z.VARIANTS_GROUP && !j, $ = !T || !L, ee = !k || X, et = $ || X;
+    return (0, r.jsx)(s.$, {
       innerRef: Y,
       onChange: Q,
       threshold: 0,
@@ -66,7 +66,7 @@ let k = Chunk647438.memo(function(e) {
           ref: Y,
           onClick: null != B ? B : J,
           "aria-label": K,
-          className: o()(W, y.productCardContainer),
+          className: a()(W, y.productCardContainer),
           onFocus: () => null == Z ? true : Z(t.skuId),
           onBlur: () => null == w ? true : w(t.skuId),
           onMouseEnter: () => null == P ? true : P(t.skuId),
@@ -75,11 +75,11 @@ let k = Chunk647438.memo(function(e) {
             className: y.productCardContentContainer,
             children: [(0, r.jsxs)("div", {
               className: y.headerContainer,
-              children: [(0, r.jsx)(p.Z, {
+              children: [(0, r.jsx)(f.Z, {
                 skuId: t.skuId,
                 badgeOverride: I,
                 className: F,
-                prioritizedCurrency: U
+                prioritizedCurrency: V
               }), !n && (0, r.jsx)(x.Z, {
                 skuId: t.skuId,
                 isCardHovered: q
@@ -88,42 +88,43 @@ let k = Chunk647438.memo(function(e) {
               className: y.footerContainer,
               children: [!i && (0, r.jsx)(C.Z, {
                 skuId: t.skuId,
-                className: D
+                className: M
               }), ee && (0, r.jsxs)("div", {
-                className: o()(y.footerInfoContainer, {
+                className: a()(y.footerInfoContainer, {
                   [y.footerHideOnHover]: et
                 }),
-                children: [!T && (0, r.jsx)(h.Z, {
+                children: [!k && (0, r.jsx)(h.Z, {
                   skuId: t.skuId,
-                  prioritizedCurrency: U
-                }), X && (0, r.jsx)(v.Z, {
-                  skuId: t.skuId
+                  prioritizedCurrency: V
+                }), X && (0, r.jsx)(E.Z, {
+                  skuId: t.skuId,
+                  previewOnly: true
                 })]
               }), et && (0, r.jsxs)("div", {
-                className: o()(y.footerInteractibleContainer, y.footerShowOnHover),
-                children: [X && (0, r.jsx)(v.Z, {
+                className: a()(y.footerInteractibleContainer, y.footerShowOnHover),
+                children: [X && (0, r.jsx)(E.Z, {
                   skuId: t.skuId
                 }), $ && (0, r.jsxs)(c.ButtonGroup, {
                   wrap: false,
                   fullWidth: true,
-                  children: [!j && (0, r.jsx)(_.Z, {
+                  children: [!T && (0, r.jsx)(_.Z, {
                     skuId: t.skuId,
                     cardRef: Y,
                     onClick: A,
                     text: H,
-                    prioritizedCurrency: U,
-                    onClickAnalytics: V
+                    prioritizedCurrency: V,
+                    onClickAnalytics: U
                   }), !L && (0, r.jsx)(m.Z, {
                     skuId: t.skuId,
                     cardRef: Y,
                     onClick: N,
-                    icon: M,
-                    prioritizedCurrency: U,
-                    onClickAnalytics: V
+                    icon: D,
+                    prioritizedCurrency: V,
+                    onClickAnalytics: U
                   })]
                 })]
               })]
-            }), (0, r.jsx)(E.Z, {
+            }), (0, r.jsx)(v.Z, {
               skuId: t.skuId
             })]
           })
@@ -131,7 +132,7 @@ let k = Chunk647438.memo(function(e) {
       })
     })
   }),
-  T = e => {
+  k = e => {
     let {
       skuId: t
     } = e, n = function(e, t) {
@@ -149,7 +150,7 @@ let k = Chunk647438.memo(function(e) {
       }
       return l
     }(e, ["skuId"]), l = (0, b.LJ)(t);
-    return null == l ? null : (0, r.jsx)(k, function(e) {
+    return null == l ? null : (0, r.jsx)(j, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);

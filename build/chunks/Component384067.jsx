@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk622535 = require("./622535.js"),
   Chunk481060 = require("./481060.js"),
   Chunk63063 = require("./63063.js"),
@@ -24,7 +24,7 @@ let _ = e => {
     wideBannerBlock: _,
     handleTransition: m,
     tab: b
-  } = e, E = null == (t = u.Z.getCategoryByStoreListingId(_.categoryStoreListingId)) ? true : t.skuId, v = l.useRef(null), x = l.useRef(null), [O, S] = l.useState();
+  } = e, v = null == (t = u.Z.getCategoryByStoreListingId(_.categoryStoreListingId)) ? true : t.skuId, E = l.useRef(null), x = l.useRef(null), [O, S] = l.useState();
   l.useEffect(() => {
     let e = x.current;
     if (null == e) return;
@@ -35,34 +35,34 @@ let _ = e => {
       e.onload = null
     }
   }, []);
-  let y = null != E ? E : "",
+  let y = null != v ? v : "",
     {
-      handleCardVisibilityChange: k
+      handleCardVisibilityChange: j
     } = (0, d.E)(y, "home", "marketing wide banner"),
     {
-      bannerURL: T
+      bannerURL: k
     } = (0, g.UI)(_);
-  if (null == T) return null;
-  let j = b === f.AW.ORBS;
-  return (0, r.jsx)(s.$, {
-    innerRef: v,
-    onChange: k,
+  if (null == k) return null;
+  let T = b === p.AW.ORBS;
+  return (0, r.jsx)(o.$, {
+    innerRef: E,
+    onChange: j,
     threshold: 0,
     children: (0, r.jsxs)("div", {
-      ref: v,
-      className: o()(h.row, h.between, h.bannerBlockContainer, h.centeredSection, {
-        [h.extraRounded]: j
+      ref: E,
+      className: a()(h.row, h.between, h.bannerBlockContainer, h.centeredSection, {
+        [h.extraRounded]: T
       }),
       children: [(0, r.jsx)("div", {
-        className: o()(h.wideBannerBackgroundImg, {
-          [h.extraRounded]: j
+        className: a()(h.wideBannerBackgroundImg, {
+          [h.extraRounded]: T
         }),
         children: (0, r.jsx)("img", {
           ref: x,
-          src: T,
+          src: k,
           alt: _.title,
-          className: o()(h.wideBannerArt, {
-            [h.wideBannerArtOrbs]: j
+          className: a()(h.wideBannerArt, {
+            [h.wideBannerArtOrbs]: T
           }),
           style: {
             height: null != O ? "".concat(O, "px") : "auto"
@@ -75,27 +75,27 @@ let _ = e => {
         },
         children: (0, r.jsxs)("div", {
           className: h.wideBannerTextContainer,
-          children: [(0, r.jsx)(a.Heading, {
+          children: [(0, r.jsx)(s.Heading, {
             style: {
               color: null != (n = _.bannerTextColor) ? n : "var(--header-primary)"
             },
-            className: j ? h.wideBannerOrbsHeading : true,
-            variant: j ? "heading-xl/bold" : "heading-lg/semibold",
+            className: T ? h.wideBannerOrbsHeading : true,
+            variant: T ? "heading-xl/bold" : "heading-lg/semibold",
             children: _.title
-          }), (0, r.jsx)(a.Text, {
+          }), (0, r.jsx)(s.Text, {
             style: {
               color: null != (i = _.bannerTextColor) ? i : "var(--text-muted)"
             },
             lineClamp: 2,
-            variant: j ? "text-md/medium" : "text-sm/medium",
-            children: j ? C.intl.format(C.t.SFFP7O, {
-              helpdeskArticle: c.Z.getArticleURL(p.BhN.VIRTUAL_CURRENCY_LEARN_MORE)
+            variant: T ? "text-md/medium" : "text-sm/medium",
+            children: T ? C.intl.format(C.t.SFFP7O, {
+              helpdeskArticle: c.Z.getArticleURL(f.BhN.VIRTUAL_CURRENCY_LEARN_MORE)
             }) : _.body
           })]
         })
       }), true !== _.disableCta && (0, r.jsx)("div", {
         className: h.wideBannerBlockButton,
-        children: (0, r.jsx)(a.Button, {
+        children: (0, r.jsx)(s.Button, {
           variant: "overlay-primary",
           onClick: () => m("shop wide banner", y, true, true),
           text: C.intl.string(C.t.jVcuVV)

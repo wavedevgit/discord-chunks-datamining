@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   K: () => g,
-  Z: () => f
+  Z: () => p
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -30,7 +30,7 @@ let g = () => (0, Chunk951288.jsx)("div", {
       })]
     })
   }),
-  f = () => {
+  p = () => {
     let e = Chunk128922.Z.useConfig({
       location: "ShopSkeleton"
     }).showCardsV2;
@@ -41,15 +41,15 @@ let g = () => (0, Chunk951288.jsx)("div", {
       }).map((t, n) => (0, r.jsxs)("div", {
         className: c.cardsContainer,
         children: [e ? (0, r.jsx)("div", {
-          className: i()(a.catalogBanner, u.bannerSkeletonV2)
+          className: i()(s.catalogBanner, u.bannerSkeletonV2)
         }) : (0, r.jsx)("div", {
-          className: i()(u.skeleton, u.bannerSkeleton, a.catalogBanner),
+          className: i()(u.skeleton, u.bannerSkeleton, s.catalogBanner),
           children: (0, r.jsx)("div", {
             className: u.bannerBody
           })
         }), Array.from({
           length: 12
-        }, (t, n) => e ? (0, r.jsx)(s.Z, {}, n) : (0, r.jsx)(g, {}, n))]
+        }, (t, n) => e ? (0, r.jsx)(o.Z, {}, n) : (0, r.jsx)(g, {}, n))]
       }, n))
     })
   }
