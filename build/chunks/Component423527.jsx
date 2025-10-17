@@ -734,9 +734,9 @@ class eu extends(r = Chunk647438.PureComponent) {
 }
 
 function ed(e) {
-  let t = (0, d.cj)([z.Z, B.default, _.Z, L.Z, P.Z], () => ({
+  let t = (0, d.cj)([z.Z, F.default, _.Z, L.Z, P.Z], () => ({
       consentRequired: z.Z.getAuthenticationConsentRequired(),
-      authenticated: B.default.isAuthenticated(),
+      authenticated: F.default.isAuthenticated(),
       isUnderage: _.Z.isUnderageAnonymous(),
       country: L.Z.getCountryCode(),
       hasLoggedInAccounts: P.Z.getHasLoggedInAccounts()

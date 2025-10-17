@@ -527,7 +527,7 @@ let w = {
       type: "FORGOT_PASSWORD_REQUEST"
     });
     try {
-      return await g.Z.post({
+      let t = await g.Z.post({
         url: b.ANM.FORGOT_PASSWORD,
         body: {
           login: e
@@ -537,9 +537,10 @@ let w = {
           event: i.NetworkActionNames.FORGOT_PASSWORD
         },
         rejectWithError: false
-      }), l.Z.dispatch({
+      });
+      return l.Z.dispatch({
         type: "FORGOT_PASSWORD_SENT"
-      }), true
+      }), t.body.method
     } catch (n) {
       let t = new c.yZ(n);
       if (t.code === b.evJ.PHONE_VERIFICATION_REQUIRED) return l.Z.dispatch({

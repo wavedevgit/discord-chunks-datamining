@@ -43,7 +43,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk197571 = require("./197571.js");
 
-function F(e, t, n) {
+function B(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -52,13 +52,13 @@ function F(e, t, n) {
   }) : e[t] = n, e
 }
 Chunk442837.ZP.initialize();
-let B = "Accept Invite Page",
+let F = "Accept Invite Page",
   z = "register",
   V = "login";
 async function K(e) {
   let {
     invite: t
-  } = await d.ZP.resolveInvite(e, B);
+  } = await d.ZP.resolveInvite(e, F);
   null != t && (0, p.A)(t)
 }
 class H extends Chunk647438.PureComponent {
@@ -103,7 +103,7 @@ class H extends Chunk647438.PureComponent {
       }
       d.ZP.acceptInvite({
         inviteKey: s,
-        context: this.getAcceptInviteContext(B),
+        context: this.getAcceptInviteContext(F),
         skipOnboarding: true,
         callback: this.handleContinue
       })
@@ -147,7 +147,7 @@ class H extends Chunk647438.PureComponent {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-          F(e, t, n[t])
+          B(e, t, n[t])
         })
       }
       return e
@@ -291,9 +291,9 @@ class H extends Chunk647438.PureComponent {
   }
   constructor(...e) {
     var t;
-    super(...e), t = this, F(this, "state", {
+    super(...e), t = this, B(this, "state", {
       error: null
-    }), F(this, "getAcceptInviteContext", e => d.ZP.getInviteContext(e, this.props.invite)), F(this, "handleContinue", e => {
+    }), B(this, "getAcceptInviteContext", e => d.ZP.getInviteContext(e, this.props.invite)), B(this, "handleContinue", e => {
       let {
         invite: t,
         transitionTo: n
@@ -302,14 +302,14 @@ class H extends Chunk647438.PureComponent {
         var r;
         (null == (r = t.guild) ? true : r.id) != null ? n(w.Z5c.APP_WITH_INVITE_AND_GUILD_ONBOARDING(t.code)) : d.ZP.transitionToInvite(null != e ? e : t, n)
       }
-    }), F(this, "handleAccept", () => {
+    }), B(this, "handleAccept", () => {
       this.setState({
         error: null
       });
       let e = this.getInviteKey();
       d.ZP.acceptInvite({
         inviteKey: e,
-        context: this.getAcceptInviteContext(B),
+        context: this.getAcceptInviteContext(F),
         skipOnboarding: true,
         callback: t => {
           (0, p.A)(t), null != t.channel && d.ZP.openApp(e, t.channel.id)
@@ -330,13 +330,13 @@ class H extends Chunk647438.PureComponent {
           }
         })
       })
-    }), F(this, "handleDefaultTransition", () => {
+    }), B(this, "handleDefaultTransition", () => {
       let {
         defaultRoute: e,
         transitionTo: t
       } = this.props;
       t(e)
-    }), F(this, "renderButton", function(e) {
+    }), B(this, "renderButton", function(e) {
       let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : t.handleDefaultTransition,
         {
           invite: i

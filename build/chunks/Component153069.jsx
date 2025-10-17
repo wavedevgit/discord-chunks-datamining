@@ -9,6 +9,7 @@ var n, Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk990547 = require("./990547.js"),
+  Chunk265489 = require("./265489.js"),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk755721 = require("./755721.js"),
@@ -36,7 +37,7 @@ var n, Chunk951288 = require("./951288.js"),
   Chunk407791 = require("./407791.js"),
   Chunk197571 = require("./197571.js");
 
-function N(t, e, r) {
+function D(t, e, r) {
   return e in t ? Object.defineProperty(t, e, {
     value: r,
     enumerable: true,
@@ -45,20 +46,20 @@ function N(t, e, r) {
   }) : t[e] = r, t
 }
 
-function D(t) {
+function M(t) {
   for (var e = 1; e < arguments.length; e++) {
     var r = null != arguments[e] ? arguments[e] : {},
       n = Object.keys(r);
     "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(t) {
       return Object.getOwnPropertyDescriptor(r, t).enumerable
     }))), n.forEach(function(e) {
-      N(t, e, r[e])
+      D(t, e, r[e])
     })
   }
   return t
 }
 
-function M(t, e) {
+function Z(t, e) {
   return e = null != e ? e : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(e)) : (function(t, e) {
     var r = Object.keys(t);
     if (Object.getOwnPropertySymbols) {
@@ -70,7 +71,7 @@ function M(t, e) {
     Object.defineProperty(t, r, Object.getOwnPropertyDescriptor(e, r))
   }), t
 }
-class Z extends(n = Chunk647438.PureComponent) {
+class B extends(n = Chunk647438.PureComponent) {
   componentDidMount() {
     window.addEventListener("keydown", this.handleTabOrEnter), (0, Chunk901375.j)({
       abortController: this.state.conditionalMediationAbortController,
@@ -82,7 +83,7 @@ class Z extends(n = Chunk647438.PureComponent) {
       authenticated: r,
       transitionTo: n
     } = this.props;
-    if (r && !t.authenticated && (n(I.Z5c.APP), this.state.conditionalMediationAbortController.abort()), e.errors !== this.state.errors) {
+    if (r && !t.authenticated && (n(T.Z5c.APP), this.state.conditionalMediationAbortController.abort()), e.errors !== this.state.errors) {
       var o, s, i;
       this.hasError("password") ? null == (o = this.passwordRef) || o.focus() : this.hasError("email") || this.hasError("login") ? null == (s = this.loginRef) || s.focus() : this.hasError("code") && (null == (i = this.codeRef) || i.focus())
     }
@@ -143,11 +144,11 @@ class Z extends(n = Chunk647438.PureComponent) {
             children: Chunk388032.intl.string(Chunk388032.t.wWIufn)
           }), (0, Chunk951288.jsx)(Chunk388905.zx, {
             onClick: () => (function(t) {
-              let e = E.isPlatformEmbedded && v.ZP.supportsFeature(I.eRX.WEBAUTHN) ? v.ZP.webAuthnAuthenticate : t => {
+              let e = v.isPlatformEmbedded && I.ZP.supportsFeature(T.eRX.WEBAUTHN) ? I.ZP.webAuthnAuthenticate : t => {
                 let e = (0, i.wz)(JSON.parse(t));
                 return (0, i.U2)(e).then(t => JSON.stringify(t))
               };
-              f.Z.authenticatePasswordless({
+              g.Z.authenticatePasswordless({
                 authenticateFunc: e,
                 conditionalMediationAbortController: t
               }).catch(() => {})
@@ -232,12 +233,12 @@ class Z extends(n = Chunk647438.PureComponent) {
     let {
       resetPasswordPhoneToken: t
     } = this.state;
-    return (0, Chunk951288.jsx)(Chunk479495.Z, D({
+    return (0, Chunk951288.jsx)(Chunk479495.Z, M({
       resetToken: module,
       onLoginSuccess: t => {
         this.setState({
           errors: {}
-        }), f.Z.switchAccountToken(t)
+        }), g.Z.switchAccountToken(t)
       },
       width: "100%"
     }, this.props))
@@ -281,29 +282,29 @@ class Z extends(n = Chunk647438.PureComponent) {
     }
   }
   constructor(t) {
-    super(t), N(this, "loginRef", true), N(this, "passwordRef", true), N(this, "codeRef", true), N(this, "handleAuthToken", async t => {
+    super(t), D(this, "loginRef", true), D(this, "passwordRef", true), D(this, "codeRef", true), D(this, "handleAuthToken", async t => {
       this.setState({
         errors: {}
-      }), await f.Z.loginToken(t, false)
-    }), N(this, "handleTabOrEnter", t => {
+      }), await g.Z.loginToken(t, false)
+    }), D(this, "handleTabOrEnter", t => {
       if ("Tab" === t.key && !t.shiftKey && t.target === this.loginRef) {
         var e;
         null == (e = this.passwordRef) || e.focus(), t.stopPropagation(), t.preventDefault()
       }
       "Enter" === t.key && (t.target === this.loginRef || t.target === this.passwordRef) && (this.handleLogin(), t.stopPropagation(), t.preventDefault())
-    }), N(this, "setLoginRef", t => {
+    }), D(this, "setLoginRef", t => {
       this.loginRef = t
-    }), N(this, "setPasswordRef", t => {
+    }), D(this, "setPasswordRef", t => {
       this.passwordRef = t
-    }), N(this, "setCodeRef", t => {
+    }), D(this, "setCodeRef", t => {
       this.codeRef = t
-    }), N(this, "getFullLogin", () => {
+    }), D(this, "getFullLogin", () => {
       let {
         loginPrefix: t,
         login: e
       } = this.state;
       return t + e
-    }), N(this, "renderError", t => {
+    }), D(this, "renderError", t => {
       let {
         errors: e
       } = this.state;
@@ -312,7 +313,7 @@ class Z extends(n = Chunk647438.PureComponent) {
         return Array.isArray(r) ? r[0] : r
       }
       return null
-    }), N(this, "handleForgotPassword", async t => {
+    }), D(this, "handleForgotPassword", async t => {
       var e;
       null == t || t.preventDefault(), null == (e = this.loginRef) || e.focus();
       let r = this.getFullLogin();
@@ -320,15 +321,33 @@ class Z extends(n = Chunk647438.PureComponent) {
         errors: {}
       });
       try {
-        if (R.S.dispatch(I.CkL.WAVE_EMPHASIZE), !await f.Z.forgotPassword(r)) return;
-        (0, p.h7j)(t => (0, o.jsx)(p.ConfirmModal, M(D({
-          header: T.intl.string(T.t.f5Pi7O),
-          confirmText: T.intl.string(T.t.BddRzc),
-          confirmButtonColor: h.zx.Colors.BRAND
+        R.S.dispatch(T.CkL.WAVE_EMPHASIZE);
+        let t = await g.Z.forgotPassword(r);
+        if (false === t) return;
+        t === u.B.ONE_TIME_LOGIN ? (0, f.h7j)(t => {
+          let e = [{
+            variant: "primary",
+            text: L.intl.string(L.t.BddRzc),
+            onClick: t.onClose,
+            fullWidth: true
+          }];
+          return (0, o.jsx)(c.Modal, Z(M({
+            title: L.intl.string(L.t["6Ecytr"]),
+            actions: e
+          }, t), {
+            children: (0, o.jsx)(f.Text, {
+              variant: "text-md/normal",
+              children: L.intl.string(L.t.iAcrqa)
+            })
+          }))
+        }) : (0, f.h7j)(t => (0, o.jsx)(f.ConfirmModal, Z(M({
+          header: L.intl.string(L.t.f5Pi7O),
+          confirmText: L.intl.string(L.t.BddRzc),
+          confirmButtonColor: p.zx.Colors.BRAND
         }, t), {
-          children: (0, o.jsx)(p.Text, {
+          children: (0, o.jsx)(f.Text, {
             variant: "text-md/normal",
-            children: T.intl.format(T.t["6u5hQ0"], {
+            children: L.intl.format(L.t["6u5hQ0"], {
               email: r
             })
           })
@@ -339,7 +358,7 @@ class Z extends(n = Chunk647438.PureComponent) {
           errors: t
         })
       }
-    }), N(this, "handleLogin", async t => {
+    }), D(this, "handleLogin", async t => {
       let {
         password: e,
         undelete: r
@@ -348,7 +367,7 @@ class Z extends(n = Chunk647438.PureComponent) {
         errors: {}
       });
       try {
-        await f.Z.login({
+        await g.Z.login({
           login: this.getFullLogin(),
           password: e,
           undelete: r,
@@ -360,7 +379,7 @@ class Z extends(n = Chunk647438.PureComponent) {
           errors: t
         })
       }
-    }), N(this, "handlePasswordReset", async t => {
+    }), D(this, "handlePasswordReset", async t => {
       this.setState({
         phoneVerifyError: null,
         errors: {}
@@ -368,7 +387,7 @@ class Z extends(n = Chunk647438.PureComponent) {
       try {
         let {
           token: e
-        } = await w.Z.verifyPhone(this.getFullLogin(), t, false, true);
+        } = await x.Z.verifyPhone(this.getFullLogin(), t, false, true);
         this.setState({
           resetPasswordPhoneToken: e
         })
@@ -377,22 +396,22 @@ class Z extends(n = Chunk647438.PureComponent) {
           phoneVerifyError: t.body.message
         })
       }
-    }), N(this, "handleTokenSubmitMFA", t => {
+    }), D(this, "handleTokenSubmitMFA", t => {
       let {
         mfaType: e,
         data: r,
         ticket: n
       } = t;
-      return f.Z.loginMFAv2({
+      return g.Z.loginMFAv2({
         code: r,
         ticket: n,
         mfaType: e,
         isMultiAccount: true
       })
-    }), N(this, "handleResendCode", () => {
-      w.Z.resendCode(this.getFullLogin())
-    }), N(this, "handleReset", t => {
-      null == t || t.preventDefault(), f.Z.loginReset(true), this.setState({
+    }), D(this, "handleResendCode", () => {
+      x.Z.resendCode(this.getFullLogin())
+    }), D(this, "handleReset", t => {
+      null == t || t.preventDefault(), g.Z.loginReset(true), this.setState({
         password: "",
         loginPrefix: "",
         login: "",
@@ -402,7 +421,7 @@ class Z extends(n = Chunk647438.PureComponent) {
         resetPasswordPhoneToken: null,
         errors: {}
       })
-    }), N(this, "handleCancelAccountDeletion", () => {
+    }), D(this, "handleCancelAccountDeletion", () => {
       this.setState({
         undelete: true
       }, this.handleLogin)
@@ -420,7 +439,7 @@ class Z extends(n = Chunk647438.PureComponent) {
     }
   }
 }
-N(Z, "defaultProps", {
+D(B, "defaultProps", {
   transitionTo: t => r.g.location.assign(t),
   replaceWith: t => r.g.location.replace(t)
 });
@@ -444,32 +463,32 @@ let G = function(t) {
     }
     return o
   }(t, ["onClose", "transitionState", "onBackPressed"]);
-  let a = (0, c.cj)([k.Z, j.default, P.Z, A.Z], () => ({
-    authenticated: j.default.isAuthenticated(),
-    isPasswordlessActive: j.default.getIsPasswordlessActive(),
-    loginStatus: j.default.getLoginStatus(),
-    mfaTicket: j.default.getMFATicket(),
-    mfaMethods: j.default.getMFAMethods(),
+  let a = (0, h.cj)([k.Z, E.default, P.Z, A.Z], () => ({
+    authenticated: E.default.isAuthenticated(),
+    isPasswordlessActive: E.default.getIsPasswordlessActive(),
+    loginStatus: E.default.getLoginStatus(),
+    mfaTicket: E.default.getMFATicket(),
+    mfaMethods: E.default.getMFAMethods(),
     defaultRoute: k.Z.defaultRoute,
     country: P.Z.getCountryCode(),
     theme: A.Z.theme
   }));
-  (0, m.Z)({
-    type: u.ImpressionTypes.MODAL,
-    name: u.ImpressionNames.USER_LOGIN
+  (0, _.Z)({
+    type: d.ImpressionTypes.MODAL,
+    name: d.ImpressionNames.USER_LOGIN
   });
   let l = s.useCallback(() => {
     e(), n()
   }, [e, n]);
-  return (0, o.jsx)(d.IX, {
+  return (0, o.jsx)(c.IX, {
     size: "md",
     onClose: e,
     transitionState: r,
-    children: (0, o.jsx)(Z, M(D({}, i, a), {
-      transitionTo: O.uL,
-      replaceWith: O.dL,
+    children: (0, o.jsx)(B, Z(M({}, i, a), {
+      transitionTo: j.uL,
+      replaceWith: j.dL,
       onBackPressed: l,
-      authBoxClassName: L.card
+      authBoxClassName: F.card
     }))
   })
 }
