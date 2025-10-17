@@ -26,7 +26,7 @@ var Chunk45792 = require("./45792.js"),
   Chunk674563 = require("./674563.js");
 let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
   S = new Set(["www.nytimes.com", "apps.apple.com", "play.google.com"]),
-  N = new Set(["p-ty8do4dje6.exmggames.com", "fortnitetrial.fortnite.com", "fn.gg", "www.fortnite.com", "www.nvidia.com"]),
+  N = new Set(["p-ty8do4dje6.exmggames.com", "fortnitetrial.fortnite.com", "fn.gg", "geforcenow.com", "www.fortnite.com", "www.nvidia.com", "www.geforcenow.com"]),
   T = new Map([
     [Chunk674563.Vt, {
       trustedHosts: S,
