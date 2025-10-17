@@ -4,8 +4,8 @@
 require.d(exports, {
   T4: () => a,
   cf: () => s,
-  vH: () => i,
-  yB: () => o
+  r1: () => o,
+  vH: () => i
 }), require("./388685.js");
 var Chunk981631 = require("./981631.js");
 let i = e => {
@@ -28,6 +28,7 @@ let i = e => {
     }).find(e => e.currency === r.pKx.DISCORD_ORB)) ? t : null
   },
   o = e => {
+    if (null == e) returnfalse;
     let t = i({
       product: e,
       isPremiumUser: false

@@ -86,7 +86,8 @@ function f(e) {
       disabled: n,
       onChange: l,
       hasIcon: f,
-      describedBy: e.describedById
+      describedBy: e.describedById,
+      labelledBy: e.labelId
     })
   }))
 }

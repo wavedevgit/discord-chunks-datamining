@@ -2,7 +2,6 @@
 /** chunk id: 213301, original params: e,t,n (module,exports,require) **/
 "use strict";
 module.exports = {
-  productCardHoverContainer: "productCardHoverContainer_fcbddd",
   productCardContainer: "productCardContainer_fcbddd",
   productCardContentContainer: "productCardContentContainer_fcbddd",
   headerContainer: "headerContainer_fcbddd",

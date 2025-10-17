@@ -106,68 +106,70 @@ function w(e) {
     focusProps: y,
     hasIcon: O = false,
     describedBy: v,
-    innerRef: I
+    labelledBy: I,
+    innerRef: T
   } = e, {
-    reducedMotion: T
-  } = i.useContext(f.S), S = i.useRef(null), w = i.useRef(null), D = null != I ? I : w, L = (0, l.l)({
+    reducedMotion: S
+  } = i.useContext(f.S), w = i.useRef(null), D = i.useRef(null), L = null != T ? T : D, x = (0, l.l)({
     isSelected: t,
     onChange: E,
     isDisabled: n
   }), {
-    inputProps: x,
-    labelProps: M,
-    isPressed: k
+    inputProps: M,
+    labelProps: k,
+    isPressed: j
   } = (0, a.h)({
     id: m,
     isDisabled: n,
-    "aria-describedby": v
-  }, L, D), {
-    hoverProps: j,
-    isHovered: U
+    "aria-describedby": v,
+    "aria-labelledby": I
+  }, x, L), {
+    hoverProps: U,
+    isHovered: G
   } = (0, o.X)({
     isDisabled: n
-  }), G = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_DEFAULT).spring(), B = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_DEFAULT).spring(), Z = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_DEFAULT_SELECTED).spring(), F = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_ACTIVE).spring(), V = (0, d.d)(c.Z.colors.SWITCH_BORDER_DEFAULT).spring(), H = (0, d.d)(c.Z.colors.SWITCH_BORDER_DEFAULT_SELECTED).spring(), Y = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_HOVER).spring(), W = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_HOVER_SELECTED).spring(), K = (0, d.d)(c.Z.colors.SWITCH_BORDER_HOVER).spring(), z = (0, d.d)(c.Z.colors.SWITCH_BORDER_HOVER_SELECTED).spring(), q = (0, d.d)(c.Z.colors.SWITCH_THUMB_FOREGROUND_DEFAULT).spring(), X = (0, d.d)(c.Z.colors.SWITCH_THUMB_FOREGROUND_ACTIVE).spring(), Q = (0, d.d)(c.Z.colors.SWITCH_THUMB_BACKGROUND_DEFAULT).spring(), J = (0, d.d)(c.Z.colors.SWITCH_THUMB_BACKGROUND_DEFAULT_SELECTED).spring(), {
-    state: $,
-    opacity: ee
+  }), B = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_DEFAULT).spring(), Z = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_DEFAULT).spring(), F = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_DEFAULT_SELECTED).spring(), V = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_ACTIVE).spring(), H = (0, d.d)(c.Z.colors.SWITCH_BORDER_DEFAULT).spring(), Y = (0, d.d)(c.Z.colors.SWITCH_BORDER_DEFAULT_SELECTED).spring(), W = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_HOVER).spring(), K = (0, d.d)(c.Z.colors.SWITCH_BACKGROUND_HOVER_SELECTED).spring(), z = (0, d.d)(c.Z.colors.SWITCH_BORDER_HOVER).spring(), q = (0, d.d)(c.Z.colors.SWITCH_BORDER_HOVER_SELECTED).spring(), X = (0, d.d)(c.Z.colors.SWITCH_THUMB_FOREGROUND_DEFAULT).spring(), Q = (0, d.d)(c.Z.colors.SWITCH_THUMB_FOREGROUND_ACTIVE).spring(), J = (0, d.d)(c.Z.colors.SWITCH_THUMB_BACKGROUND_DEFAULT).spring(), $ = (0, d.d)(c.Z.colors.SWITCH_THUMB_BACKGROUND_DEFAULT_SELECTED).spring(), {
+    state: ee,
+    opacity: et
   } = (0, u.q)({
     config: {
-      duration: T.enabled ? 200 : 300
+      duration: S.enabled ? 200 : 300
     },
     opacity: n ? .5 : 1,
-    state: k ? t ? R[R.length - 2] : N[1] : +!!t
-  }, "animate-always"), et = function(e) {
+    state: j ? t ? R[R.length - 2] : N[1] : +!!t
+  }, "animate-always"), en = function(e) {
     let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [...e].reverse();
-    return t ? $.to({
+    return t ? ee.to({
       range: R,
       output: n
-    }) : $.to({
+    }) : ee.to({
       range: N,
       output: e
     })
   };
   return (0, r.jsx)(_.tE, b(g({}, y), {
-    ringTarget: S,
-    focusTarget: D,
+    ringTarget: w,
+    focusTarget: L,
     within: true,
     offset: false,
-    children: (0, r.jsxs)("label", b(g({}, M), {
+    children: (0, r.jsxs)("label", b(g({}, k), {
       className: h.container,
-      children: [(0, r.jsx)(s.animated.div, b(g({}, j), {
-        ref: S,
+      children: [(0, r.jsx)(s.animated.div, b(g({}, U), {
+        ref: w,
         className: h.switchIndicator,
         "data-size": "md",
         "data-mana-component": "switch",
         style: {
-          opacity: ee,
-          backgroundColor: $.to({
+          opacity: et,
+          backgroundColor: ee.to({
             range: C,
-            output: [U ? Y : G, B, F, U ? W : Z],
+            output: [G ? W : B, Z, V, G ? K : F],
             extrapolate: "clamp"
           }),
           border: "1px solid",
-          borderColor: $.to({
+          borderColor: ee.to({
             range: C,
-            output: [U ? K : V, U ? K : V, U ? z : H, U ? z : H],
+            output: [G ? z : H, G ? z : H, G ? q : Y, G ? q : Y],
             extrapolate: "clamp"
           })
         },
@@ -176,7 +178,7 @@ function w(e) {
           viewBox: "0 0 24 24",
           preserveAspectRatio: "xMidYMin meet",
           style: {
-            left: $.to(T.enabled ? {
+            left: ee.to(S.enabled ? {
               range: C,
               output: [1, 1, 24, 24]
             } : {
@@ -186,20 +188,20 @@ function w(e) {
           },
           "aria-hidden": true,
           children: [(0, r.jsx)(s.animated.rect, {
-            fill: $.to({
+            fill: ee.to({
               range: C,
-              output: [Q, Q, J, J]
+              output: [J, J, $, $]
             }),
-            x: T.enabled ? 4 : et([4, 4, 2.5, 1, 2.5, 4]),
-            y: T.enabled ? 4 : et([4, 7, 2.5, 7, 2.5, 4]),
-            width: T.enabled ? 16 : et([16, 16, 19, 22, 19, 16]),
-            height: T.enabled ? 16 : et([16, 10, 19, 10, 19, 16]),
-            rx: T.enabled ? 8 : et([8, 5, 9.5, 5, 9.5, 8])
-          }), O && P($, q, X)]
+            x: S.enabled ? 4 : en([4, 4, 2.5, 1, 2.5, 4]),
+            y: S.enabled ? 4 : en([4, 7, 2.5, 7, 2.5, 4]),
+            width: S.enabled ? 16 : en([16, 16, 19, 22, 19, 16]),
+            height: S.enabled ? 16 : en([16, 10, 19, 10, 19, 16]),
+            rx: S.enabled ? 8 : en([8, 5, 9.5, 5, 9.5, 8])
+          }), O && P(ee, X, Q)]
         })
       })), (0, r.jsx)(p.n, {
-        children: (0, r.jsx)("input", b(g({}, x), {
-          ref: D
+        children: (0, r.jsx)("input", b(g({}, M), {
+          ref: L
         }))
       })]
     }))

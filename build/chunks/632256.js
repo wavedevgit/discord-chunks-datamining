@@ -1,4 +1,4 @@
-/** Chunk was on 87641 **/
+/** Chunk was on 86736 **/
 /** chunk id: 632256, original params: e,t,n (module,exports,require) **/
 module.exports = {
   card: "card_eafb9c",
