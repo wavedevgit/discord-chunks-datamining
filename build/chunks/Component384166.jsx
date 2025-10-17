@@ -30,7 +30,7 @@ function O(e) {
   } = (0, f.KZ)(), [a, O] = i.useState(false), x = (0, s.Wu)([m.Z], () => {
     var e;
     return null != (e = m.Z.getSaveablePendingWidgets()) ? e : []
-  }), _ = (0, s.Wu)([m.Z], () => m.Z.getChangedWidgets()), P = (0, s.Wu)([m.Z], () => m.Z.getRemovedWidgets()), I = (0, s.e7)([m.Z], () => m.Z.hasSaveablePendingChanges()), w = (0, s.e7)([m.Z], () => m.Z.isSubmitting), S = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), E = (0, c.Yzy)(I, {
+  }), _ = (0, s.Wu)([m.Z], () => m.Z.getChangedWidgets()), I = (0, s.Wu)([m.Z], () => m.Z.getRemovedWidgets()), P = (0, s.e7)([m.Z], () => m.Z.hasSaveablePendingChanges()), w = (0, s.e7)([m.Z], () => m.Z.isSubmitting), S = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), E = (0, c.Yzy)(P, {
     from: {
       opacity: 0,
       y: 80 * !S
@@ -54,8 +54,8 @@ function O(e) {
       d.S.unsubscribe(v.CkL.EMPHASIZE_NOTICE, t), null !== e && clearTimeout(e)
     }
   }, []), i.useEffect(() => {
-    I && c.uvj.announce(y.intl.string(y.t["0Y/qkJ"]))
-  }, [I]);
+    P && c.uvj.announce(y.intl.string(y.t["0Y/qkJ"]))
+  }, [P]);
   let T = i.useCallback(async () => {
       try {
         await p.Z.savePendingWidgets(x)
@@ -76,11 +76,11 @@ function O(e) {
           return e + (null != (r = null == (n = t.comment) ? true : n.length) ? r : 0)
         }, 0)), n(t)
       }
-      for (let e of P) n({
+      for (let e of I) n({
         widgetEdited: e.type,
         isWidgetRemoved: true
       })
-    }, [x, _, P, n]),
+    }, [x, _, I, n]),
     C = i.useCallback(() => {
       p.Z.clearPendingWidgets()
     }, []);
@@ -104,14 +104,14 @@ function O(e) {
           variant: "secondary",
           text: y.intl.string(y.t.yBZMsb),
           onClick: C,
-          disabled: !I || w
+          disabled: !P || w
         }), (0, r.jsx)(c.Button, {
           size: "sm",
           variant: "primary",
           text: y.intl.string(y.t.R3BPHx),
           onClick: T,
           loading: w,
-          disabled: !I || w
+          disabled: !P || w
         })]
       })]
     })

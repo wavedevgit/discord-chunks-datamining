@@ -58,8 +58,8 @@ function y(e) {
     channelId: c,
     disableInteraction: m = false,
     index: y
-  } = e, j = (0, p.Z)(t.applicationId).length > 0, O = s.default.getCurrentUser(), x = (null == O ? true : O.id) === n, _ = !m && x, P = (0, u.kO)(t.applicationId), {
-    isDragging: I
+  } = e, j = (0, p.Z)(t.applicationId).length > 0, O = s.default.getCurrentUser(), x = (null == O ? true : O.id) === n, _ = !m && x, I = (0, u.kO)(t.applicationId), {
+    isDragging: P
   } = (0, o.f)(e => ({
     isDragging: e.isDragging()
   })), w = () => (0, r.jsxs)(r.Fragment, {
@@ -70,7 +70,7 @@ function y(e) {
       userId: n,
       disableInteraction: m,
       className: l()(j ? h.socialProofBackdrop : true, (null == t ? true : t.imageSrc) == null || m ? true : b.hoverActiveEffect),
-      hideTooltip: I
+      hideTooltip: P
     }), _ && (0, r.jsx)(f.Z, {
       game: t,
       widgetType: i,
@@ -84,7 +84,7 @@ function y(e) {
       visuallyHideLabel: true
     })]
   });
-  return P ? (0, r.jsx)("div", {
+  return I ? (0, r.jsx)("div", {
     className: b.loadingCover
   }) : _ ? (0, r.jsx)(v, {
     widgetType: i,

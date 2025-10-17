@@ -64,9 +64,8 @@ function J(e) {
   let {
     detectedGame: n,
     application: l,
-    entries: s,
-    viewId: c
-  } = e, u = r.useMemo(() => null == n ? true : n.genres.map(C.P3).join(", "), [n]), m = r.useMemo(() => {
+    entries: s
+  } = e, c = r.useMemo(() => null == n ? true : n.genres.map(C.P3).join(", "), [n]), u = r.useMemo(() => {
     if (null == n) return "";
     let {
       artwork: e,
@@ -81,12 +80,12 @@ function J(e) {
       return t[e]
     }
     return ""
-  }, [n]), p = null == l ? true : l.getIconURL(160, S.$k ? "webp" : "png"), g = T.default.extractTimestamp(l.id), x = o()().diff(o()(g), "days") <= Y.G, h = s.some(e => (0, b.ig)(e) === d.o.GLOBAL), v = null != (t = n.name) ? t : null == l ? true : l.name;
+  }, [n]), m = null == l ? true : l.getIconURL(160, S.$k ? "webp" : "png"), p = T.default.extractTimestamp(l.id), g = o()().diff(o()(p), "days") <= Y.G, x = s.some(e => (0, b.ig)(e) === d.o.GLOBAL), h = null != (t = n.name) ? t : null == l ? true : l.name;
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)("div", {
       className: K.gameArtHero,
       style: {
-        backgroundImage: 'url("'.concat(m, '")')
+        backgroundImage: 'url("'.concat(u, '")')
       }
     }), (0, i.jsxs)("div", {
       className: a()(K.content, K.column, K.gapLg, K.headerInfo),
@@ -102,7 +101,6 @@ function J(e) {
           })
         }), (0, i.jsx)(M.Z, {
           applicationId: l.id,
-          viewId: c,
           className: K.overflowMenu
         })]
       }), (0, i.jsx)("div", {
@@ -110,25 +108,25 @@ function J(e) {
         children: (0, i.jsxs)("div", {
           children: [(0, i.jsx)(f.Heading, {
             variant: "heading-xl/bold",
-            children: v
+            children: h
           }), (0, i.jsxs)("div", {
             className: a()(K.row, K.gapSm),
-            children: [null != p && (0, i.jsx)("img", {
+            children: [null != m && (0, i.jsx)("img", {
               className: K.gameIcon,
-              src: p,
+              src: m,
               height: 16,
               alt: B.intl.formatToPlainString(B.t["nh+jWl"], {
-                game: v
+                game: h
               })
             }), (0, i.jsx)(f.Text, {
               variant: "text-sm/semibold",
               color: "text-muted",
-              children: u
-            }), x && (0, i.jsx)(f.Text, {
+              children: c
+            }), g && (0, i.jsx)(f.Text, {
               variant: "eyebrow",
               className: K.newBadge,
               children: B.intl.string(B.t.y2b7CA)
-            }), h && (0, i.jsxs)(i.Fragment, {
+            }), x && (0, i.jsxs)(i.Fragment, {
               children: [(0, i.jsx)(f.Text, {
                 variant: "text-sm/medium",
                 children: " \xb7 "
@@ -180,7 +178,7 @@ function q(e) {
     onCloudPlayClick: n,
     analyticsLocations: r
   } = e;
-  return (0, j.Z)({
+  return (0, v.Z)({
     name: c.ImpressionNames.CLOUD_PLAY_CTA,
     type: c.ImpressionTypes.VIEW,
     properties: {
@@ -212,7 +210,7 @@ function $(e) {
     n(e)
   }, [n]), {
     analyticsLocations: d
-  } = (0, v.ZP)(h.Z.GAME_PROFILE), {
+  } = (0, j.ZP)(h.Z.GAME_PROFILE), {
     isCloudPlayButtonShown: u,
     onCloudPlayClick: m
   } = function(e) {
@@ -279,7 +277,7 @@ let Q = e => {
     trackExternalAction: m
   } = e, {
     clientThemesClassName: x
-  } = (0, y.ZP)(), h = (0, u.e7)([w.default], () => w.default.locale), v = r.useMemo(() => (0, A.fP)(), []), j = (0, u.Wu)([k.Z], () => {
+  } = (0, y.ZP)(), h = (0, u.e7)([w.default], () => w.default.locale), j = r.useMemo(() => (0, A.fP)(), []), v = (0, u.Wu)([k.Z], () => {
     var e;
     return (null != (e = k.Z.getSimilarGames(n)) ? e : []).slice(0, 25)
   }), [N, P] = r.useState(null), S = (0, Z.N)(n), [C, T] = r.useState(null), L = (0, O.q)(n), M = (0, u.e7)([E.Z], () => E.Z.getGame(n)), D = null != (t = null == M ? true : M.name) ? t : null == L ? true : L.name, R = (e, t) => {
@@ -289,26 +287,26 @@ let Q = e => {
       applicationId: n,
       action: e,
       similarGameId: t,
-      viewId: v,
+      viewId: j,
       officialGuildId: null == C || null == (i = C.guild) ? true : i.id
     })
   };
   return ((0, g.ZP)(() => {
     (0, A.IS)({
       source: l,
-      viewId: v,
+      viewId: j,
       applicationId: n,
       gameName: null != D ? D : "",
       authorId: s,
       profileType: A.j7.FullProfile
     }), (0, I.Jn)()
-  }), (0, O.Z)(j), r.useEffect(() => {
+  }), (0, O.Z)(v), r.useEffect(() => {
     h.startsWith("en") || (null == M ? true : M.summaryLocalized) != null || p.Z.getDetectableGamesSupplemental([n], {
       forceFetch: true
     })
   }, [n, null == M ? true : M.summaryLocalized, h]), r.useEffect(() => {
     (async () => {
-      if (0 === j.length) {
+      if (0 === v.length) {
         P(null);
         try {
           await (0, G.i)(n)
@@ -317,7 +315,7 @@ let Q = e => {
         }
       }
     })()
-  }, [n, j]), (0, g.ZP)(() => () => {
+  }, [n, v]), (0, g.ZP)(() => () => {
     var e;
     let t = Date.now(),
       i = S.map(e => {
@@ -329,12 +327,12 @@ let Q = e => {
         })
       });
     (0, A.wz)({
-      viewId: v,
+      viewId: j,
       applicationId: n,
       gameName: null != D ? D : "",
       playedFriendIds: S.map(e => e.author_id),
       playedFriendsData: i,
-      similarGames: j.filter(_.z6).slice(0, 5),
+      similarGames: v.filter(_.z6).slice(0, 5),
       officialGuildId: null == C || null == (e = C.guild) ? true : e.id
     })
   }), null == M || null == L) ? null : (0, i.jsx)(f.Y0X, {
@@ -348,7 +346,6 @@ let Q = e => {
         detectedGame: M,
         application: L,
         entries: S,
-        viewId: v,
         trackAction: R
       }), (0, i.jsx)(f.y5t, {
         children: (0, i.jsxs)("div", {
@@ -358,10 +355,10 @@ let Q = e => {
             application: L,
             entries: S,
             officialGuildInvite: C,
-            similarGames: j,
+            similarGames: v,
             similarGamesError: N,
             onClose: c,
-            viewId: v,
+            viewId: j,
             trackAction: R
           }), (0, i.jsx)($, {
             detectedGame: M,

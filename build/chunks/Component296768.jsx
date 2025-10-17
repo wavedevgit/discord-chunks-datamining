@@ -35,7 +35,7 @@ let b = e => {
     children: (0, i.jsx)(u.P3F, {
       className: I.similarGameImageClickable,
       onClick: async () => {
-        r(g.as.ClickSimilarGame, t.applicationId), (0, u.ZDy)(() => Promise.resolve(e => (0, i.jsx)(j.default, function(e) {
+        r(g.as.ClickSimilarGame, t.applicationId), (0, u.ZDy)(() => Promise.resolve(e => (0, i.jsx)(v.default, function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               i = Object.keys(n);
@@ -57,11 +57,11 @@ let b = e => {
           source: g.m1.SimilarGames
         }, e)))), await new Promise(e => setTimeout(e, 10)), n()
       },
-      children: (0, i.jsx)(v.C, {
+      children: (0, i.jsx)(j.C, {
         game: t,
         application: l,
         className: I.similarGameImage,
-        size: v.Z.SMALL
+        size: j.Z.SMALL
       })
     })
   })

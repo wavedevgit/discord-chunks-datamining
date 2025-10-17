@@ -30,8 +30,8 @@ function v(e) {
     trailingContent: O,
     headerTitle: x,
     headerSubtitle: _,
-    headerActionButtons: P,
-    dragHandleAdditionalMenuItems: I
+    headerActionButtons: I,
+    dragHandleAdditionalMenuItems: P
   } = e, w = (0, c.Dt)(), S = (0, s.e7)([u.default], () => u.default.getId() === t), E = i.useRef(null), T = i.useRef(null), {
     trackUserProfileAction: C
   } = (0, d.KZ)(), N = (0, g.Z)({
@@ -67,13 +67,13 @@ function v(e) {
         className: l()(h.dragHandleButton, {
           [h.opacity]: Z || D
         }),
-        additionalMenuItems: I
+        additionalMenuItems: P
       }), (0, r.jsx)(m.Z, {
         userId: t,
         headingId: w,
         title: x,
         subtitle: _,
-        actionButtons: P,
+        actionButtons: I,
         widget: n,
         disableInteraction: b
       }), (0, r.jsxs)(o.y5t, {

@@ -1,7 +1,7 @@
 /** Chunk was on 89311 **/
 /** chunk id: 484527, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => v
 }), require("./388685.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,12 +20,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk226788 = require("./226788.js"),
   Chunk943987 = require("./943987.js");
 
-function j(e) {
+function v(e) {
   let {
     detectedGame: t,
     trackClick: n,
     onInviteResolved: l,
-    closeModal: j
+    closeModal: v
   } = e, [O, y] = r.useState(), I = (0, o.e7)([m.Z], () => {
     var e, t;
     return (null == O || null == (e = O.guild) ? true : e.id) != null && m.Z.isMember(null == O || null == (t = O.guild) ? true : t.id)
@@ -64,13 +64,13 @@ function j(e) {
     }), (0, i.jsxs)("div", {
       className: a()(h.row, h.gapMd),
       children: [(0, i.jsx)("img", {
-        className: v.guildIcon,
+        className: j.guildIcon,
         src: E,
         alt: x.intl.formatToPlainString(x.t.xm6W9P, {
           guildName: O.guild.name
         })
       }), (0, i.jsxs)("div", {
-        className: v.inviteInfo,
+        className: j.inviteInfo,
         children: [(0, i.jsx)(c.Text, {
           variant: "text-sm/normal",
           children: O.guild.name
@@ -85,7 +85,7 @@ function j(e) {
       variant: "secondary",
       text: I ? x.intl.string(x.t.cEnaW1) : x.intl.string(x.t.XpeFYm),
       onClick: () => {
-        j(), n(p.as.JoinOfficialServer), d.Z.dispatch({
+        v(), n(p.as.JoinOfficialServer), d.Z.dispatch({
           type: "INVITE_MODAL_OPEN",
           invite: O,
           code: O.code,

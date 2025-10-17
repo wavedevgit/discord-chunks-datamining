@@ -336,7 +336,7 @@ function W(e) {
 
 function H() {
   let e = function() {
-      let e = Chunk647438.useContext(K);
+      let e = Chunk647438.useContext(V);
       if (null == module) throw Error("ApplicationWidgetContext provider not found");
       return module
     }(),
@@ -369,7 +369,7 @@ function z(e, t) {
   return r
 }
 
-function V(e, t) {
+function K(e, t) {
   var n, r;
   if (null == e || "skeleton" === t.mode) return null;
   let i = null == (r = e.match(A)) || null == (n = r[0]) ? true : n.slice(2, false);
@@ -377,15 +377,15 @@ function V(e, t) {
   let a = t.variables[i];
   return null == a || "unfurled_media" !== a.type ? null : a.media
 }
-let K = Chunk647438.createContext(null);
+let V = Chunk647438.createContext(null);
 
 function Y(e) {
-  return (0, o.cj)([f.Z, I.Z, _.Z], () => {
+  return (0, o.cj)([f.Z, P.Z, _.Z], () => {
     let t = f.Z.getApplication(e.applicationId);
     return {
       application: t,
       game: null != t ? _.Z.getGameByApplication(t) : null,
-      config: I.Z.getApplicationWidgetApplicationConfig(e.applicationId)
+      config: P.Z.getApplicationWidgetApplicationConfig(e.applicationId)
     }
   })
 }
@@ -458,7 +458,7 @@ let Q = Object.assign(function(e) {
     fetched: y,
     hasAlreadyLinked: O,
     canStartAuthorization: _,
-    startAuthorization: I
+    startAuthorization: P
   } = (0, d.FG)(o), S = null == a && y && !O && _, A = (0, r.jsxs)(r.Fragment, {
     children: [null != m ? (0, r.jsx)("img", {
       className: T.appIcon,
@@ -495,7 +495,7 @@ let Q = Object.assign(function(e) {
       mode: "from_data",
       variables: Object.fromEntries(Object.entries(C({
         username: null == (n = e.profile) ? true : n.username
-      }, null == (i = e.profile) || null == (r = i.data) ? true : r.primary)).filter(P.V5).map(e => {
+      }, null == (i = e.profile) || null == (r = i.data) ? true : r.primary)).filter(I.V5).map(e => {
         let [t, n] = e;
         if ("object" == typeof n) {
           if ("url" in n && "proxy_url" in n && "loading_state" in n) return [t, {
@@ -511,7 +511,7 @@ let Q = Object.assign(function(e) {
           value: n
         }];
         return null
-      }).filter(P.lm)),
+      }).filter(I.lm)),
       config: t
     });
     return D.map(function e(t) {
@@ -519,7 +519,7 @@ let Q = Object.assign(function(e) {
         case "HERO":
           var n;
           return {
-            type: "HERO", body: t.body.map(e), title: z(t.title, a), image: V(t.image, a), imagePlaceholder: null == (n = a.config) ? true : n.hero_placeholder_image
+            type: "HERO", body: t.body.map(e), title: z(t.title, a), image: K(t.image, a), imagePlaceholder: null == (n = a.config) ? true : n.hero_placeholder_image
           };
         case "GRID":
           return {
@@ -535,7 +535,7 @@ let Q = Object.assign(function(e) {
           };
         case "TEXT_WITH_IMAGE":
           return {
-            type: "TEXT_WITH_IMAGE", content: z(t.content, a), image: V(t.image, a), imagePosition: t.imagePosition
+            type: "TEXT_WITH_IMAGE", content: z(t.content, a), image: K(t.image, a), imagePosition: t.imagePosition
           };
         case "SEPARATOR":
         case "SOCIAL_PROOF":
@@ -554,7 +554,7 @@ let Q = Object.assign(function(e) {
       icon: c.iWm,
       action: v
     }) : null,
-    children: [(0, r.jsx)(K.Provider, {
+    children: [(0, r.jsx)(V.Provider, {
       value: e,
       children: (0, r.jsx)(X, {
         widget: n,
@@ -578,7 +578,7 @@ let Q = Object.assign(function(e) {
         content: E.intl.string(E.t["OW/2am"]),
         buttons: (0, r.jsx)(c.Button, {
           text: E.intl.string(E.t.S0W8Z2),
-          onClick: I
+          onClick: P
         })
       }) : a]
     })]

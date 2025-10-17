@@ -71,39 +71,39 @@ function h(e) {
     children: h
   } = e, v = b(e, ["widgetType", "widget", "children"]);
   let [y] = (0, o.ynZ)(), [j, O] = i.useState(""), x = i.useRef(""), _ = i.useMemo(() => new Set(n.games.map(e => e.applicationId)), [n.games]), {
-    trackUserProfileEditAction: P
-  } = (0, u.KZ)(), I = (0, l.e7)([c.default], () => ["en-US", "en-GB"].includes(c.default.locale)), w = i.useCallback(e => {
+    trackUserProfileEditAction: I
+  } = (0, u.KZ)(), P = (0, l.e7)([c.default], () => ["en-US", "en-GB"].includes(c.default.locale)), w = i.useCallback(e => {
     (0, d.ES)(t, {
       applicationId: e
-    }), o.uvj.announce(f.intl.string(f.t.q0U3DA)), P({
+    }), o.uvj.announce(f.intl.string(f.t.q0U3DA)), I({
       action: "GAME_ADDED",
       gameId: e,
       widgetEdited: t
     })
-  }, [t, P]), {
+  }, [t, I]), {
     options: S,
     matchSorterOptions: E
   } = (0, s.h)(), T = i.useCallback(e => "" === e.trim() ? S : (0, a.Lu)(S, e, m(p({}, E), {
     threshold: a.Lu.rankings.CONTAINS
   })), [S, E]), C = i.useCallback(e => {
-    "" === j.trim() && "" !== e.trim() && P({
+    "" === j.trim() && "" !== e.trim() && I({
       action: "GAME_SEARCH_SESSION_STARTED",
       widgetEdited: t,
       numCharacters: e.trim().length,
       numResults: T(e).length
     }), O(e), x.current = e
-  }, [j, P, t, T]), N = i.useMemo(() => "" !== j.trim() && I ? f.intl.format(f.t.jhiTsL, {
+  }, [j, I, t, T]), N = i.useMemo(() => "" !== j.trim() && P ? f.intl.format(f.t.jhiTsL, {
     searchTerm: j.trim()
-  }) : f.intl.string(f.t.QwSXv7), [j, I]);
+  }) : f.intl.string(f.t.QwSXv7), [j, P]);
   return (0, r.jsx)(o.yRy, m(p({}, v), {
     onRequestOpen: () => {
-      P({
+      I({
         action: "PRESS_ADD_GAME",
         widgetEdited: t
       }), O(""), x.current = ""
     },
     onRequestClose: () => {
-      P({
+      I({
         action: "GAME_SEARCH_SESSION_ENDED",
         widgetEdited: t,
         numCharacters: x.current.trim().length,

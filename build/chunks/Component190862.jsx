@@ -94,16 +94,16 @@ let y = e => {
       _ = (0, o.Hy)(f, {
         isCurrentUser: j
       }),
-      P = (0, o.kQ)(f),
-      I = 1 === (0, o.Gv)(f.type);
+      I = (0, o.kQ)(f),
+      P = 1 === (0, o.Gv)(f.type);
     return (0, r.jsx)(y, h({
       widget: f,
       user: n,
       disableInteraction: i,
       headerTitle: x,
       headerSubtitle: _,
-      headerActionButtons: j && !I ? [(0, r.jsx)(u.yX, {
-        disabled: P,
+      headerActionButtons: j && !P ? [(0, r.jsx)(u.yX, {
+        disabled: I,
         widgetType: f.type,
         widget: f
       }, "".concat(f.type, "-browse-games-popout"))] : true,

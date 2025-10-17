@@ -340,14 +340,15 @@ let j = {
     };
     return Chunk481060.displayName = "PlayStationModalWrapper", Chunk481060
   },
-  GameProfileFeedbackModal: async () => {
+  GameDetectionReportModal: async () => {
     let {
       default: e
-    } = await require.e("46923").then(require.bind(require, 55396));
+    } = await require.e("82077").then(require.bind(require, 953848));
     return t => (0, a.jsx)(e, v(b({}, t), {
-      applicationId: "123456789",
-      viewId: "dev-tools-test",
-      showOutdatedInfoOption: true
+      detectedActivity: {
+        application_id: "123456789",
+        name: "Test Game"
+      }
     }))
   },
   AppealIngestionModal: async () => {
