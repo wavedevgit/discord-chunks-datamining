@@ -2,7 +2,7 @@
 /** chunk id: 266173, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => x
+  Z: () => M
 }), require("./388685.js");
 var Chunk579092 = require("./579092.js"),
   Chunk433517 = require("./433517.js"),
@@ -178,11 +178,14 @@ class P {
 function w() {
   return Object.values(Chunk486016.i)
 }
-let D = new Set([Chunk486016.i.WELCOME_GENERAL, Chunk486016.i.GO_LIVE_NUDGE, Chunk486016.i.GAME_ACTIVITY]);
-class L extends Chunk147913.Z {
-  constructor(...e) {
-    var t;
-    super(...e), t = this, h(this, "_settings", new P), h(this, "_hasInitialized", false), h(this, "_hasInitializedLegacyOverlay", false), h(this, "_isProcessing", false), h(this, "getWidgetExperimentSettings", e => {
+let D = new Set([Chunk486016.i.WELCOME_GENERAL, Chunk486016.i.GO_LIVE_NUDGE, Chunk486016.i.GAME_ACTIVITY]),
+  L = "overlay-negative-widget-experiment-bucket";
+class x extends Chunk147913.Z {
+  constructor() {
+    var e, t;
+    super(), e = this, h(this, "_settings", new P), h(this, "_hasInitialized", false), h(this, "_isProcessing", false), h(this, "_appliedExperimentBucket", "control"), h(this, "setAppliedExperimentBucket", e => {
+      this._appliedExperimentBucket = e, i.K.set(L, e)
+    }), h(this, "getRawAppliedExperimentBucket", () => (0, Chunk32300.hb)("applied-experiment-bucket")), h(this, "getWidgetExperimentSettings", e => {
       let {
         voiceWidgetDefaultUnpinned: t,
         videoWidgetDefaultUnpinned: n,
@@ -193,17 +196,17 @@ class L extends Chunk147913.Z {
         widgetsToRestore: a
       }
     }), h(this, "processWidgetExperiment", async function() {
-      let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
+      let t = arguments.length > 0 && true !== arguments[0] && arguments[0],
         {
           widgetsToOverride: n,
           widgetsToRestore: r
-        } = t.getWidgetExperimentSettings(e);
-      for (let e of Object.values(p.Odu)) t._settings.initializeWidget(e);
-      for (let e of r) await t._settings.restoreWidget(e);
-      for (let e of n) await t._settings.unpinWidget(e);
-      n.size > 0 && T.info("Experiment Override: Widgets", {
-        widgetsToRestore: r,
-        widgetsToOverride: n
+        } = module.getWidgetExperimentSettings(exports);
+      for (let t of Object.values(Chunk981631.Odu)) module._settings.initializeWidget(exports);
+      for (let t of Chunk579092) await module._settings.restoreWidget(exports);
+      for (let t of require) await module._settings.unpinWidget(exports);
+      require.size > 0 && T.info("Experiment Override: Widgets", {
+        widgetsToRestore: Chunk579092,
+        widgetsToOverride: require
       })
     }), h(this, "getNotificationExperimentSettings", e => {
       let {
@@ -230,7 +233,9 @@ class L extends Chunk147913.Z {
         notificationsToOverride: t
       })
     }), h(this, "processAllExperiments", async e => {
-      if (!this._isProcessing) {
+      if (this._isProcessing) return;
+      let t = this.getRawAppliedExperimentBucket();
+      if (this._appliedExperimentBucket !== t) {
         this._isProcessing = true;
         try {
           await this.processWidgetExperiment(e), await this.processNotificationExperiment(e)
@@ -239,7 +244,7 @@ class L extends Chunk147913.Z {
             error: e
           })
         } finally {
-          this._isProcessing = false
+          this._isProcessing = false, this.setAppliedExperimentBucket(t)
         }
       }
     }), h(this, "handlePostConnectionOpen", async () => {
@@ -267,7 +272,7 @@ class L extends Chunk147913.Z {
       EXPERIMENT_OVERRIDE_BUCKET: this.handleExperimentOverrideBucket,
       OVERLAY_SET_NOTIFICATION_DISABLED_SETTING: this.handleSetNotificationDisabledSetting,
       LAYOUT_SET_PINNED: this.handleSetPinned
-    })
+    }), this._appliedExperimentBucket = null != (t = Chunk433517.K.get(L)) ? exports : "control"
   }
 }
-let x = new L
+let M = new x
