@@ -79,8 +79,8 @@ function _(e) {
     } = e,
     {
       placeholder: _,
-      getAriaLabel: I,
-      icon: P
+      getAriaLabel: P,
+      icon: I
     } = x[n],
     w = "small" === c,
     {
@@ -111,12 +111,12 @@ function _(e) {
         widgetEdited: n
       }), (0, b.L$)(y.qb.WIDGET_ADDED), null == a || a())
     }, [d, n, E, j, a]);
-  return (null != E && null != P && (t = P(E)), null == E) ? null : (0, r.jsxs)("div", {
+  return (null != E && null != I && (t = I(E)), null == E) ? null : (0, r.jsxs)("div", {
     className: O.addButtonContainer,
     children: [(0, r.jsxs)(s.P3F, {
       className: l()(O.addButtonContent, w && O.sizeSmall, d && O.loading),
       onClick: T,
-      "aria-label": I(E),
+      "aria-label": P(E),
       "aria-busy": d,
       children: [(() => {
         if (null == E) return null;

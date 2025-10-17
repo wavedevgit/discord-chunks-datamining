@@ -1,7 +1,7 @@
 /** Chunk was on 22325 **/
 /** chunk id: 414655, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => P
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -25,13 +25,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk10094 = require("./10094.js");
 
-function I(e) {
+function P(e) {
   let {
     profileOwner: t
   } = e, {
     wishlistId: n,
-    currentUser: I,
-    wishlistSettings: P
+    currentUser: P,
+    wishlistSettings: I
   } = (0, l.cj)([h.Z, m.default], () => {
     let e = h.Z.getFirstWishlistId(t.id);
     return {
@@ -41,10 +41,10 @@ function I(e) {
     }
   }), {
     analyticsLocations: w
-  } = (0, d.ZP)(), S = (null == I ? true : I.id) === t.id, E = false === t.nsfwAllowed, [T, C] = i.useState(true);
+  } = (0, d.ZP)(), S = (null == P ? true : P.id) === t.id, E = false === t.nsfwAllowed, [T, C] = i.useState(true);
   i.useEffect(() => {
-    (null == P ? true : P.visibility) != null && C(P.visibility === a.f.PUBLIC)
-  }, [null == P ? true : P.visibility]);
+    (null == I ? true : I.visibility) != null && C(I.visibility === a.f.PUBLIC)
+  }, [null == I ? true : I.visibility]);
   let {
     wishlist: N,
     error: A

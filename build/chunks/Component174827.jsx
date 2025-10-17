@@ -64,7 +64,7 @@ function G(e) {
     priceOptions: er,
     isPremium: ei,
     premiumBrandRefreshBackgroundClassName: ea
-  } = (0, P.JL)(), {
+  } = (0, w.JL)(), {
     isGift: el,
     giftRecipient: es,
     giftMessage: eo,
@@ -83,11 +83,11 @@ function G(e) {
     multiMonthPlans: ef ? e_ : [],
     currentSubscription: q,
     defaultPlanId: en
-  }), [$, ei, e_, q, ef, en]), ey = ev && eL.includes(B.Xh.PREMIUM_MONTH_TIER_2) ? B.Xh.PREMIUM_MONTH_TIER_2 : eL[0], eI = (0, s.e7)([v.Z], () => v.Z.get(ey)), eP = [{
+  }), [$, ei, e_, q, ef, en]), ey = ev && eL.includes(B.Xh.PREMIUM_MONTH_TIER_2) ? B.Xh.PREMIUM_MONTH_TIER_2 : eL[0], eI = (0, s.e7)([v.Z], () => v.Z.get(ey)), ew = [{
     planId: null == eI ? true : eI.id,
     quantity: 1
-  }], [ew, eE] = i.useState(eS), [eO, eT] = (0, u.ED)({
-    items: eP,
+  }], [eP, eE] = i.useState(eS), [eO, eT] = (0, u.ED)({
+    items: ew,
     renewal: false,
     preventFetch: !eS,
     applyEntitlements: true,
@@ -97,7 +97,7 @@ function G(e) {
   });
   i.useEffect(() => {
     eS && eE((null == eO ? true : eO.subscriptionPeriodEnd) == null)
-  }, [eO, eS]), (0, d.Z)("Payment Modal Plan Select Step", ew, 5, {
+  }, [eO, eS]), (0, d.Z)("Payment Modal Plan Select Step", eP, 5, {
     proratedInvoicePreview: eO,
     proratedInvoiceError: eT,
     isEligibleForOffer: eS
@@ -151,7 +151,7 @@ function G(e) {
         className: ea,
         children: (0, r.jsx)(j.y, {
           onStepChange: U,
-          onBackClick: () => U(w.h8.SKU_SELECT),
+          onBackClick: () => U(P.h8.SKU_SELECT),
           showBackButton: null == D && null == W,
           planOptions: eL,
           shouldRenderUpdatedPaymentModal: eN,

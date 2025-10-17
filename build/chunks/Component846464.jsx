@@ -38,7 +38,7 @@ function v(e) {
   } = (0, _.JL)(), {
     isGift: b,
     claimableRewards: v
-  } = (0, h.wD)(), L = b && null != v && v.length > 0, y = (0, d.N)(i), I = (0, s.Nx)(), P = (0, o.Z)({
+  } = (0, h.wD)(), L = b && null != v && v.length > 0, y = (0, d.N)(i), I = (0, s.Nx)(), w = (0, o.Z)({
     location: "PremiumPaymentSelect"
   });
   return (0, r.jsx)(S, {
@@ -90,7 +90,7 @@ function v(e) {
     inOfferExperience: I,
     priceOptions: u,
     showPromotionalGiftBanner: L,
-    enablePremiumBrandRefresh: P
+    enablePremiumBrandRefresh: w
   })
 }
 

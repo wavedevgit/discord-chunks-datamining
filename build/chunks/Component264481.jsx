@@ -1,7 +1,7 @@
 /** Chunk was on 22325 **/
 /** chunk id: 264481, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  P9: () => I,
+  P9: () => P,
   Uf: () => w,
   b0: () => _,
   s_: () => x
@@ -74,7 +74,7 @@ function _() {
   })
 }
 
-function I(e) {
+function P(e) {
   let {
     user: t,
     guildId: n,
@@ -104,7 +104,7 @@ function I(e) {
   })
 }
 
-function P() {
+function I() {
   let e = (0, Chunk410030.ZP)();
   return (0, Chunk951288.jsx)("div", {
     className: Chunk839468.connectionPlatforms,
@@ -137,7 +137,7 @@ function w(e) {
   return (0, r.jsxs)(O, {
     heading: m.intl.string(m.t.VB6LWV),
     bodyText: m.intl.string(m.t.KpjsU1),
-    children: [(0, r.jsx)(P, {}), (0, r.jsxs)("div", {
+    children: [(0, r.jsx)(I, {}), (0, r.jsxs)("div", {
       className: b.buttonRow,
       children: [(0, r.jsx)(g.O1, {
         text: m.intl.string(m.t["/Hl24e"]),

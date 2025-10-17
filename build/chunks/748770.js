@@ -2,11 +2,12 @@
 /** chunk id: 748770, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  L9: () => m,
-  ZP: () => g,
-  vM: () => h
+  L9: () => g,
+  ZP: () => E,
+  vM: () => m
 });
-var Chunk544891 = require("./544891.js"),
+var Chunk32662 = require("./32662.js"),
+  Chunk544891 = require("./544891.js"),
   Chunk381499 = require("./381499.js"),
   Chunk570140 = require("./570140.js"),
   Chunk496929 = require("./496929.js"),
@@ -18,7 +19,7 @@ var Chunk544891 = require("./544891.js"),
   Chunk1844 = require("./1844.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js");
-async function h() {
+async function m() {
   if (!Chunk1844.Z.isFetchingActiveOutboundPromotions) try {
     let t;
     Chunk570140.Z.dispatch({
@@ -32,24 +33,26 @@ async function h() {
     }, {
       autoTrackExposure: false
     }).previewEnabled ? Chunk981631.ANM.OUTBOUND_PROMOTIONS_PREVIEW : Chunk981631.ANM.OUTBOUND_PROMOTIONS;
-    let n = await Chunk544891.tn.get({
+    let n = Chunk32662.H.DESKTOP,
+      a = await Chunk544891.tn.get({
         url: exports,
         query: {
-          locale: Chunk706454.default.locale
+          locale: Chunk706454.default.locale,
+          platform: require
         },
         oldFormErrors: true,
         rejectWithError: true
       }),
-      i = Chunk1844.Z.consumedInboundPromotionId;
+      c = Chunk1844.Z.consumedInboundPromotionId;
     if (!Chunk1844.Z.hasFetchedConsumedInboundPromotionId) {
       var e;
       let t = (await (0, Chunk496929.yD)(Chunk474936.CL, false)).find(e => null != e.promotion_id && true === e.consumed);
-      i = null != (e = null == exports ? true : exports.promotion_id) ? module : null
+      c = null != (e = null == exports ? true : exports.promotion_id) ? module : null
     }
     Chunk570140.Z.dispatch({
       type: "ACTIVE_OUTBOUND_PROMOTIONS_FETCH_SUCCESS",
-      promotions: require.body,
-      consumedInboundPromotionId: Chunk381499
+      promotions: Chunk381499.body,
+      consumedInboundPromotionId: Chunk675478
     })
   } catch (e) {
     Chunk570140.Z.dispatch({
@@ -57,7 +60,7 @@ async function h() {
     })
   }
 }
-async function m() {
+async function g() {
   if (!Chunk1844.Z.isFetchingActiveBogoPromotion) try {
     Chunk570140.Z.dispatch({
       type: "ACTIVE_BOGO_PROMOTION_FETCH"
@@ -79,15 +82,15 @@ async function m() {
     })
   }
 }
-let g = {
-  fetchActiveOutboundPromotions: h,
+let E = {
+  fetchActiveOutboundPromotions: m,
   dismissOutboundPromotionNotice: function() {
     Chunk570140.Z.dispatch({
       type: "OUTBOUND_PROMOTION_NOTICE_DISMISS"
     });
     let e = Chunk1844.Z.lastDismissedOutboundPromotionStartDate;
     null != module && Chunk675478.hW.updateAsync("userContent", t => {
-      t.lastDismissedOutboundPromotionStartDate = i.Gm.create({
+      t.lastDismissedOutboundPromotionStartDate = a.Gm.create({
         value: e
       })
     }, Chunk675478.fy.INFREQUENT_USER_ACTION)
@@ -97,5 +100,5 @@ let g = {
       type: "OUTBOUND_PROMOTIONS_SEEN"
     })
   },
-  fetchActiveBogoPromotion: m
+  fetchActiveBogoPromotion: g
 }

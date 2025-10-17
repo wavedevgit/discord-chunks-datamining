@@ -137,7 +137,7 @@ function H(e) {
       fullWidth: true
     })
   }), er = () => {
-    if (null != a && (0, w.Er)({
+    if (null != a && (0, P.Er)({
         wishlistId: a,
         action: T.NW.WISHLIST_ITEM_CLICKED,
         skuId: t.skuId,
@@ -251,7 +251,7 @@ function H(e) {
       className: M.itemIcon,
       children: (0, r.jsx)(C.u, {
         text: Z.intl.formatToPlainString(Z.t.p3RmJC, {
-          username: P.ZP.getName(n)
+          username: w.ZP.getName(n)
         }),
         position: "top",
         children: (0, r.jsx)(u.h_8, {

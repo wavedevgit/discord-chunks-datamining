@@ -106,7 +106,7 @@ function F(e) {
     application: n
   } = (0, O.G)(), {
     token: i
-  } = (0, d.o)(null == n ? true : n.id), a = (0, P.Z)(t.id), l = (0, y.k)({
+  } = (0, d.o)(null == n ? true : n.id), a = (0, I.Z)(t.id), l = (0, y.k)({
     location: "ApplicationWidgetUpsell"
   }), o = a.some(e => e instanceof h.q && e.applicationId === (null == n ? true : n.id));
   return null == n || !l || null == i || o ? null : (0, r.jsx)(f.ZP, {
@@ -130,7 +130,7 @@ function U(e) {
     user: t,
     guildId: n,
     channelId: a
-  } = e, l = (0, P.Z)(t.id), s = (0, o.e7)([m.default], () => m.default.getId() === t.id), c = (() => {
+  } = e, l = (0, I.Z)(t.id), s = (0, o.e7)([m.default], () => m.default.getId() === t.id), c = (() => {
     let [e, t] = (0, o.Wu)([b.Z], () => [b.Z.ipCountryCode, b.Z.ipCountryCodeRequest]), n = (0, g.U)();
     return i.useEffect(() => {
       null == e && null == t && n && (0, u.GE)()
@@ -138,7 +138,7 @@ function U(e) {
   })(), d = (0, y.k)({
     location: "UserProfileModalV2Widgets"
   }), f = 0 === l.length && s, O = i.useMemo(() => l.filter(v.Wc), [l]), x = i.useMemo(() => l.filter(e => e instanceof h.q), [l]);
-  (0, I.ZP)(O), (0, j.J)(s, O);
+  (0, P.ZP)(O), (0, j.J)(s, O);
   var w = t.id;
   (0, _.s)(x);
   let {

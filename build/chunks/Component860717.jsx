@@ -380,12 +380,12 @@ function K(e, t) {
 let V = Chunk647438.createContext(null);
 
 function Y(e) {
-  return (0, o.cj)([f.Z, P.Z, _.Z], () => {
+  return (0, o.cj)([f.Z, I.Z, _.Z], () => {
     let t = f.Z.getApplication(e.applicationId);
     return {
       application: t,
       game: null != t ? _.Z.getGameByApplication(t) : null,
-      config: P.Z.getApplicationWidgetApplicationConfig(e.applicationId)
+      config: I.Z.getApplicationWidgetApplicationConfig(e.applicationId)
     }
   })
 }
@@ -458,7 +458,7 @@ let Q = Object.assign(function(e) {
     fetched: y,
     hasAlreadyLinked: O,
     canStartAuthorization: _,
-    startAuthorization: P
+    startAuthorization: I
   } = (0, d.FG)(o), S = null == a && y && !O && _, A = (0, r.jsxs)(r.Fragment, {
     children: [null != m ? (0, r.jsx)("img", {
       className: T.appIcon,
@@ -495,7 +495,7 @@ let Q = Object.assign(function(e) {
       mode: "from_data",
       variables: Object.fromEntries(Object.entries(C({
         username: null == (n = e.profile) ? true : n.username
-      }, null == (i = e.profile) || null == (r = i.data) ? true : r.primary)).filter(I.V5).map(e => {
+      }, null == (i = e.profile) || null == (r = i.data) ? true : r.primary)).filter(P.V5).map(e => {
         let [t, n] = e;
         if ("object" == typeof n) {
           if ("url" in n && "proxy_url" in n && "loading_state" in n) return [t, {
@@ -511,7 +511,7 @@ let Q = Object.assign(function(e) {
           value: n
         }];
         return null
-      }).filter(I.lm)),
+      }).filter(P.lm)),
       config: t
     });
     return D.map(function e(t) {
@@ -578,7 +578,7 @@ let Q = Object.assign(function(e) {
         content: E.intl.string(E.t["OW/2am"]),
         buttons: (0, r.jsx)(c.Button, {
           text: E.intl.string(E.t.S0W8Z2),
-          onClick: P
+          onClick: I
         })
       }) : a]
     })]

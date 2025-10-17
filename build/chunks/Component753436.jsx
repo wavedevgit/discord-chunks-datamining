@@ -1,13 +1,14 @@
 /** Chunk was on 22325 **/
 /** chunk id: 753436, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  S: () => y
+  S: () => j
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk79116 = require("./79116.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk594174 = require("./594174.js"),
   Chunk947790 = require("./947790.js"),
   Chunk747101 = require("./747101.js"),
@@ -19,80 +20,94 @@ var Chunk951288 = require("./951288.js"),
   Chunk932366 = require("./932366.js"),
   Chunk133458 = require("./133458.js");
 
-function v(e) {
+function y(e) {
   let {
     index: t,
     widgetType: n,
     game: a,
     children: o
-  } = e, s = i.useRef(null), {
-    isDragging: u,
-    dragSourcePosition: d
-  } = (0, c.g)({
-    dragRef: s,
-    dropRef: s,
+  } = e, c = i.useRef(null), d = i.useRef(null), {
+    isDragging: f,
+    dragSourcePosition: g
+  } = (0, u.g)({
+    dragRef: c,
+    dropRef: d,
     index: t,
     widgetType: n,
     game: a
-  }), f = null != d, g = f && t < d, p = f && t > d;
+  }), p = null != g, m = p && t < g, h = p && t > g;
   return (0, r.jsx)("div", {
-    ref: s,
-    className: l()(h.container, {
-      [h.isDragging]: u,
-      [h.dropIndicatorBefore]: g,
-      [h.dropIndicatorAfter]: p
+    ref: d,
+    className: l()(v.container, {
+      [v.isDragging]: f,
+      [v.dropIndicatorBefore]: m,
+      [v.dropIndicatorAfter]: h
     }),
-    "aria-label": m.intl.formatToPlainString(m.t["0dR3g4"], {
+    "aria-label": b.intl.formatToPlainString(b.t["0dR3g4"], {
       positionNumber: t + 1
     }),
-    children: o
+    children: (0, r.jsxs)("div", {
+      ref: c,
+      className: v.dragTarget,
+      children: [o, (0, r.jsx)(s.P3F, {
+        "aria-label": b.intl.string(b.t.Zc1neH),
+        className: v.dragHandle,
+        focusProps: {
+          ringTarget: c
+        },
+        children: (0, r.jsx)(s.Vni, {
+          size: "sm",
+          color: "currentColor"
+        })
+      })]
+    })
   })
 }
 
-function y(e) {
+function j(e) {
   let {
     game: t,
     userId: n,
     widgetType: i,
     guildId: a,
-    channelId: c,
-    disableInteraction: m = false,
-    index: y
-  } = e, j = (0, p.Z)(t.applicationId).length > 0, O = s.default.getCurrentUser(), x = (null == O ? true : O.id) === n, _ = !m && x, I = (0, u.kO)(t.applicationId), {
-    isDragging: P
+    channelId: s,
+    disableInteraction: u = false,
+    index: b
+  } = e, j = (0, m.Z)(t.applicationId).length > 0, O = c.default.getCurrentUser(), x = (null == O ? true : O.id) === n, _ = !u && x, P = (0, d.kO)(t.applicationId), {
+    isDragging: I
   } = (0, o.f)(e => ({
     isDragging: e.isDragging()
   })), w = () => (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(d.Z, {
+    children: [(0, r.jsx)(f.Z, {
       imageSrc: t.imageSrc,
       gameName: t.gameName,
       applicationId: t.applicationId,
       userId: n,
-      disableInteraction: m,
-      className: l()(j ? h.socialProofBackdrop : true, (null == t ? true : t.imageSrc) == null || m ? true : b.hoverActiveEffect),
-      hideTooltip: P
-    }), _ && (0, r.jsx)(f.Z, {
+      disableInteraction: u,
+      className: l()(j ? v.socialProofBackdrop : true, (null == t ? true : t.imageSrc) == null || u ? true : h.hoverActiveEffect),
+      hideTooltip: I
+    }), _ && (0, r.jsx)(g.Z, {
       game: t,
       widgetType: i,
-      className: h.removeGameButton,
+      className: v.removeGameButton,
       iconSize: "xs"
-    }), !m && (0, r.jsx)(g.Z, {
-      className: h.socialProof,
+    }), !u && (0, r.jsx)(p.Z, {
+      className: v.socialProof,
       applicationId: t.applicationId,
       guildId: a,
-      channelId: c,
+      channelId: s,
       visuallyHideLabel: true
     })]
   });
-  return I ? (0, r.jsx)("div", {
-    className: b.loadingCover
-  }) : _ ? (0, r.jsx)(v, {
+  return P ? (0, r.jsx)("div", {
+    className: h.loadingCover
+  }) : _ ? (0, r.jsx)(y, {
     widgetType: i,
-    index: null != y ? y : 0,
+    index: null != b ? b : 0,
     game: t,
     children: w()
   }) : (0, r.jsx)("div", {
-    className: h.container,
+    className: v.container,
     children: w()
   })
 }
