@@ -35,7 +35,8 @@ let a = {
       },
       2: {
         noiseCancellationDuringProcessing: true,
-        noiseCancellationConfig: a
+        noiseCancellationConfig: a,
+        vadKrispActivationThreshold: .5
       },
       3: {
         noiseCancellationDuringProcessing: true,
