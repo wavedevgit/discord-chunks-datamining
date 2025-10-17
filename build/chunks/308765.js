@@ -370,14 +370,6 @@ let i = {
     actions: ["RTC_CONNECTION_STATE", "SOUNDBOARD_MUTE_JOIN_SOUND", "VOICE_STATE_UPDATES"],
     inlineRequire: () => require("./783295.js").Z
   },
-  NotificationMigrationManager: {
-    actions: ["POST_CONNECTION_OPEN"],
-    inlineRequire: () => require("./392888.jsx").Z
-  },
-  UnreadSettingsManager: {
-    actions: ["GUILD_CREATE", "POST_CONNECTION_OPEN"],
-    inlineRequire: () => require("./109610.js").Z
-  },
   MessageViewTrackingManager: {
     actions: ["CHANNEL_SELECT"],
     inlineRequire: () => require("./765383.js").Z,

@@ -1,5 +1,5 @@
 /** Chunk was on 98350 **/
-/** chunk id: 323597, original params: e,t,n (module,exports,require) **/
+/** chunk id: 323597, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
 });
@@ -19,34 +19,34 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function h(e) {
-  let t = e.isForumPost(),
-    n = (0, a.e7)([f.default], () => e.isOwner(f.default.getId()), [e]),
-    h = (0, c.HL)(e),
+function h(t) {
+  let e = t.isForumPost(),
+    n = (0, l.e7)([f.default], () => t.isOwner(f.default.getId()), [t]),
+    h = (0, c.HL)(t),
     {
       canManageChannel: E,
       canAccessChannel: _
-    } = (0, a.cj)([g.Z], () => ({
-      canAccessChannel: g.Z.can(e.accessPermissions, e),
-      canManageChannel: g.Z.can(e.isThread() ? p.Plq.MANAGE_THREADS : p.Plq.MANAGE_CHANNELS, e)
-    }), [e]),
-    b = (0, a.e7)([d.Z], () => {
-      var t;
-      return null != (t = d.Z.getCount(e.id)) ? t : 0
-    }, [e.id]),
+    } = (0, l.cj)([g.Z], () => ({
+      canAccessChannel: g.Z.can(t.accessPermissions, t),
+      canManageChannel: g.Z.can(t.isThread() ? v.Plq.MANAGE_THREADS : v.Plq.MANAGE_CHANNELS, t)
+    }), [t]),
+    b = (0, l.e7)([d.Z], () => {
+      var e;
+      return null != (e = d.Z.getCount(t.id)) ? e : 0
+    }, [t.id]),
     {
       firstMessage: C
-    } = (0, a.e7)([u.Z], () => u.Z.getMessage(e.id), [e.id]),
+    } = (0, l.e7)([u.Z], () => u.Z.getMessage(t.id), [t.id]),
     y = h && E && null == C,
-    N = t && (E || n && b < 1 || y),
-    A = t && n && !E && b > 0 && null != C;
-  return _ && (!h || y) && (E || N || A) ? (0, i.jsx)(l.sNh, {
+    N = e && (E || n && b < 1 || y),
+    A = e && n && !E && b > 0 && null != C;
+  return _ && (!h || y) && (E || N || A) ? (0, i.jsx)(a.sNh, {
     id: "delete-channel",
-    label: e.type === p.d4z.GUILD_CATEGORY ? v.intl.string(v.t.ifbXnJ) : e.isForumPost() ? N ? v.intl.string(v.t.nEOg1N) : v.intl.string(v.t.xwMqDw) : e.isThread() ? v.intl.string(v.t.H7vTe3) : v.intl.string(v.t["8D8Rsb"]),
+    label: t.type === v.d4z.GUILD_CATEGORY ? p.intl.string(p.t.ifbXnJ) : t.isForumPost() ? N ? p.intl.string(p.t.nEOg1N) : p.intl.string(p.t.xwMqDw) : t.isThread() ? p.intl.string(p.t.H7vTe3) : p.intl.string(p.t["8D8Rsb"]),
     color: "danger",
     action: () => {
-      (0, s.w)(e, function() {
-        A ? o.Z.deleteMessage(e.id, O.default.castChannelIdAsMessageId(e.id)) : r.ZP.deleteChannel(e.id)
+      (0, s.w)(t, function() {
+        A ? o.Z.deleteMessage(t.id, O.default.castChannelIdAsMessageId(t.id)) : r.ZP.deleteChannel(t.id)
       })
     }
   }) : null

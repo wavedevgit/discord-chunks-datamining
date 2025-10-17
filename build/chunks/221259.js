@@ -1,10 +1,10 @@
 /** Chunk was on 24358 **/
 /** chunk id: 221259, original params: t,i,e (module,exports,require) **/
 require.d(exports, {
-  IG: () => N,
-  JK: () => E,
+  IG: () => h,
+  JK: () => N,
   ZA: () => S,
-  _m: () => h,
+  _m: () => E,
   ft: () => f,
   yN: () => L
 }), require("./388685.js");
@@ -47,31 +47,31 @@ function L(t) {
   }
 }
 
-function h(t, i, e) {
+function E(t, i, e) {
   let n = a.ZP.getChannelIdFlags(t, i);
   e === c.s8.ALL_MESSAGES ? l.Z.updateChannelOverrideSettings(t, i, {
-    message_notifications: g.bL.ALL_MESSAGES,
+    message_notifications: u.bL.ALL_MESSAGES,
     flags: (0, o.pq)(n, _.ic.UNREADS_ALL_MESSAGES)
   }, r.ZB.PresetAll) : e === c.s8.MENTIONS ? l.Z.updateChannelOverrideSettings(t, i, {
-    message_notifications: g.bL.ONLY_MENTIONS,
+    message_notifications: u.bL.ONLY_MENTIONS,
     flags: (0, o.pq)(n, _.ic.UNREADS_ONLY_MENTIONS)
   }, r.ZB.PresetMentions) : e === c.s8.NOTHING && l.Z.updateChannelOverrideSettings(t, i, {
-    message_notifications: g.bL.NO_MESSAGES,
+    message_notifications: u.bL.NO_MESSAGES,
     flags: (0, o.pq)(n, _.ic.UNREADS_ONLY_MENTIONS)
   }, r.ZB.PresetNothing)
 }
 
-function E(t, i) {
+function N(t, i) {
   l.Z.updateChannelOverrideSettings(t, i, {
-    message_notifications: g.bL.NULL,
+    message_notifications: u.bL.NULL,
     flags: (0, o.YF)(a.ZP.getChannelIdFlags(t, i))
   }, r.ZB.PresetDefault)
 }
 
-function N(t, i, e) {
+function h(t, i, e) {
   let n = a.ZP.getChannelIdFlags(t, i);
   l.Z.updateChannelOverrideSettings(t, i, {
-    flags: (0, o.pq)(n, e === u.i.ALL_MESSAGES ? _.ic.UNREADS_ALL_MESSAGES : _.ic.UNREADS_ONLY_MENTIONS)
+    flags: (0, o.pq)(n, e === g.i.ALL_MESSAGES ? _.ic.UNREADS_ALL_MESSAGES : _.ic.UNREADS_ONLY_MENTIONS)
   }, r.UE.unreads(e))
 }
 
