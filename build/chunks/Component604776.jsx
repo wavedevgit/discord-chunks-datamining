@@ -24,7 +24,9 @@ let b = {
     [Chunk981631.kNB.DEVELOPER_GIFT]: "Developer Gift",
     [Chunk981631.kNB.INVOICE]: "Invoice",
     [Chunk981631.kNB.REVERSE_TRIAL]: "Reverse Trial",
-    [Chunk981631.kNB.FRACTIONAL_PREMIUM_GIVEBACK]: "Giveback"
+    [Chunk981631.kNB.FRACTIONAL_PREMIUM_GIVEBACK]: "Giveback",
+    [Chunk981631.kNB.SUBSCRIPTION]: "Subscription",
+    [Chunk981631.kNB.SUBSCRIPTION_MEMBER]: "Subscription Member"
   },
   v = e => {
     var t;

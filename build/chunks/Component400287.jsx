@@ -224,20 +224,17 @@ function b() {
         setting: Chunk726985.s6.MESSAGE_SEARCH,
         children: [(0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.MESSAGE_SEARCH_ALL_DMS,
-          children: (0, Chunk951288.jsx)(Chunk481060.C3N, {
-            label: Chunk388032.intl.string(Chunk388032.t.VYODPD),
-            children: (0, Chunk951288.jsx)(Chunk481060.FXm, {
-              label: Chunk388032.intl.string(Chunk388032.t["NxjN+v"]),
-              options: [{
-                name: Chunk388032.intl.string(Chunk388032.t["t+fGsr"]),
-                value: 0
-              }, {
-                name: Chunk388032.intl.string(Chunk388032.t.MwlEGB),
-                value: 1
-              }],
-              onChange: D,
-              value: +!!P
-            })
+          children: (0, Chunk951288.jsx)(Chunk481060.FXm, {
+            label: Chunk388032.intl.string(Chunk388032.t["NxjN+v"]),
+            options: [{
+              name: Chunk388032.intl.string(Chunk388032.t["t+fGsr"]),
+              value: 0
+            }, {
+              name: Chunk388032.intl.string(Chunk388032.t.MwlEGB),
+              value: 1
+            }],
+            onChange: D,
+            value: +!!P
           })
         })]
       }), (0, Chunk951288.jsxs)(Chunk921801.F, {
