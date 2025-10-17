@@ -16,12 +16,9 @@ let a = e => e.sort((e, t) => {
     if (null == e) return e;
     let t = (0, i.cloneDeep)(e),
       n = o(0, t.effects.reduce((e, t) => {
-        var n;
-        let r = null == (n = t.randomizedSources) ? true : n.length;
-        return r > 0 && (e = 0 === e ? r : Math.min(e, r)), e
+        var n, r;
+        let i = null != (r = null == (n = t.randomizedSources) ? true : n.length) ? r : 0;
+        return i > 0 && (e = 0 === e ? i : Math.min(e, i)), e
       }, 0) - 1);
-    return t.effects = t.effects.map(e => {
-      var t;
-      return (null == (t = e.randomizedSources) ? true : t.length) > 0 && (e.src = e.randomizedSources[n].src), e
-    }), t
+    return t.effects = t.effects.map(e => (null != e.randomizedSources && e.randomizedSources.length > 0 && (e.src = e.randomizedSources[n].src), e)), t
   }, [e])
