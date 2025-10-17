@@ -65,7 +65,6 @@ let x = {
     fetchingSources: true,
     selectedSource: true,
     audioSourceId: true,
-    modalStep: "source_select",
     selectedChannel: true,
     nativeSourceType: "",
     discordSourceId: ""
@@ -99,10 +98,6 @@ function S(e, t) {
     case "set_preset":
       return g(_({}, e), {
         preset: t.preset
-      });
-    case "set_step":
-      return g(_({}, e), {
-        modalStep: t.step
       });
     case "set_source_type":
       let n = {
@@ -165,51 +160,48 @@ function b(e) {
 
 function y(e, t, n) {
   var r, l;
-  let v = arguments.length > 3 && true !== arguments[3] ? arguments[3] : "source_select",
-    {
-      defaultAutoQuality: j,
-      allowAutoQuality: b
-    } = (0, f._)({
-      location: "useCreateGoLiveModalState"
-    }),
-    {
-      preset: y,
-      resolution: C,
-      fps: O,
-      soundshareEnabled: w
-    } = (0, s.cj)([d.Z], () => d.Z.getState());
-  j && (y = h.ApplicationStreamPresets.PRESET_AUTO);
-  let P = (0, s.e7)([u.Z], () => u.Z.getInputDeviceId()),
-    Z = null != (r = c.I0.useSetting()) && r,
-    I = null != (l = c.eo.useSetting()) && l;
-  y in h.ApplicationStreamPresets && (y !== h.ApplicationStreamPresets.PRESET_AUTO || b) || (y = h.ApplicationStreamPresets.PRESET_VIDEO), (0, p.Z)(h.ApplicationStreamPresets.PRESET_CUSTOM, C, O, t, n) || (C = h.ApplicationStreamResolutions.RESOLUTION_720, O = h.ApplicationStreamFPS.FPS_30);
-  let [E, T] = i.useReducer(S, g(_({}, x), {
-    muteStreamAudio: !w,
-    preset: y,
-    resolution: C,
-    fps: O,
-    hidePreview: Z,
-    notifyFriends: I,
+  let {
+    defaultAutoQuality: v,
+    allowAutoQuality: j
+  } = (0, f._)({
+    location: "useCreateGoLiveModalState"
+  }), {
+    preset: b,
+    resolution: y,
+    fps: C,
+    soundshareEnabled: O
+  } = (0, s.cj)([d.Z], () => d.Z.getState());
+  v && (b = h.ApplicationStreamPresets.PRESET_AUTO);
+  let w = (0, s.e7)([u.Z], () => u.Z.getInputDeviceId()),
+    P = null != (r = c.I0.useSetting()) && r,
+    Z = null != (l = c.eo.useSetting()) && l;
+  b in h.ApplicationStreamPresets && (b !== h.ApplicationStreamPresets.PRESET_AUTO || j) || (b = h.ApplicationStreamPresets.PRESET_VIDEO), (0, p.Z)(h.ApplicationStreamPresets.PRESET_CUSTOM, y, C, t, n) || (y = h.ApplicationStreamResolutions.RESOLUTION_720, C = h.ApplicationStreamFPS.FPS_30);
+  let [I, E] = i.useReducer(S, g(_({}, x), {
+    muteStreamAudio: !O,
+    preset: b,
+    resolution: y,
+    fps: C,
+    hidePreview: P,
+    notifyFriends: Z,
     selectedSource: e,
-    audioSourceId: P,
-    modalStep: v
+    audioSourceId: w
   }));
   return i.useEffect(() => {
     var e, t;
     a.Z.hasPermission(m.Eu.SCREEN_RECORDING, {
       showAuthorizationError: false
-    }).then(e => T({
+    }).then(e => E({
       type: "set_has_permission",
       value: e
     })), null == (e = (t = o.Z.window).getMediaSourceId) || e.call(t).then(e => {
-      T({
+      E({
         type: "set_discord_source_id",
         sourceId: null != e ? e : ""
       })
     })
   }, []), {
-    state: E,
-    dispatch: T
+    state: I,
+    dispatch: E
   }
 }
 

@@ -1,7 +1,7 @@
 /** Chunk was on 47863 **/
 /** chunk id: 717298, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => J
+  Z: () => X
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,6 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk668781 = require("./668781.js"),
+  Chunk211266 = require("./211266.js"),
   Chunk579806 = require("./579806.js"),
   Chunk89425 = require("./89425.js"),
   Chunk100527 = require("./100527.js"),
@@ -48,164 +49,162 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk468918 = require("./468918.js");
 
-function J(e) {
+function X(e) {
   var t;
   let {
     onClose: n,
     transitionState: l,
     sourceApplication: o,
-    analyticsLocations: J = [],
-    selectSource: X = true
-  } = e, K = i.useRef(performance.now()), Y = (0, f.e7)([S.Z], () => S.Z.getUseSystemScreensharePicker() && ((0, O.isLinux)() || (0, O.isMac)() && a().satisfies(null === m.Z || true === m.Z ? true : m.Z.os.release, H.jR))), {
-    analyticsLocations: q
-  } = (0, x.ZP)(J, g.Z.GO_LIVE_MODAL_V2), Q = (0, f.e7)([y.default], () => y.default.getCurrentUser()), $ = (0, T.Z)(), {
-    state: ee,
-    dispatch: et
-  } = (0, M.Ti)(o, Q, $, (0, O.isWindows)() && null != o && X ? "confirm" : "source_select");
-  (0, F.Z)(Y, et, "confirm" === ee.modalStep);
-  let en = !w.ZP.canStreamQuality(w.ZP.StreamQuality.HIGH, Q),
-    er = !(0, O.isLinux)(),
-    ei = "confirm" === ee.modalStep,
-    el = !X && null != o && !ei,
-    es = Y && ee.sourceType !== u.vA.CAMERA,
-    eo = i.useMemo(() => {
+    analyticsLocations: X = [],
+    selectSource: K = true
+  } = e, Y = i.useRef(performance.now()), q = (0, f.e7)([b.Z], () => b.Z.getUseSystemScreensharePicker() && ((0, w.isLinux)() || (0, w.isMac)() && a().satisfies(null === _.Z || true === _.Z ? true : _.Z.os.release, W.jR))), {
+    analyticsLocations: Q
+  } = (0, v.ZP)(X, x.Z.GO_LIVE_MODAL_V2), $ = (0, f.e7)([C.default], () => C.default.getCurrentUser()), ee = (0, N.Z)(), {
+    state: et,
+    dispatch: en
+  } = (0, k.Ti)(o, $, ee), er = (0, m.Z)((0, w.isWindows)() && null != o && K ? "confirm" : "source_select");
+  (0, H.Z)(q, en, "confirm" === er);
+  let ei = !P.ZP.canStreamQuality(P.ZP.StreamQuality.HIGH, $),
+    el = !(0, w.isLinux)(),
+    es = "confirm" === er,
+    eo = !K && null != o && !es,
+    ea = q && et.sourceType !== u.vA.CAMERA,
+    ec = i.useMemo(() => {
       let e = [{
-        name: z.intl.string(z.t.tHoi7u),
+        name: V.intl.string(V.t.tHoi7u),
         value: u.vA.WINDOW,
         icon: p.GON
       }, {
-        name: z.intl.string(z.t.MhJ43N),
+        name: V.intl.string(V.t.MhJ43N),
         value: u.vA.CAMERA,
         icon: p.Odl
       }];
-      return Y || e.splice(1, 0, {
-        name: z.intl.string(z.t.slM8rK),
+      return q || e.splice(1, 0, {
+        name: V.intl.string(V.t.slM8rK),
         value: u.vA.SCREEN,
         icon: p.pzj
       }), e
-    }, [Y]),
+    }, [q]),
     {
-      sourceType: ea
-    } = ee,
-    ec = i.useCallback(async e => {
-      j.eo.updateSetting(ee.notifyFriends), j.I0.updateSetting(ee.hidePreview);
-      let [t, r] = await (0, E.Z)(e.hasOwnProperty("pid") ? e.pid : e, {
-        preset: ee.preset,
-        fps: ee.fps,
-        resolution: ee.resolution,
-        soundshareEnabled: !ee.muteStreamAudio,
-        previewDisabled: ee.hidePreview,
-        goLiveModalDurationMs: performance.now() - K.current,
-        audioSourceId: ee.audioSourceId,
-        analyticsLocations: q
+      sourceType: ed
+    } = et,
+    eu = i.useCallback(async e => {
+      S.eo.updateSetting(et.notifyFriends), S.I0.updateSetting(et.hidePreview);
+      let [t, r] = await (0, T.Z)(e.hasOwnProperty("pid") ? e.pid : e, {
+        preset: et.preset,
+        fps: et.fps,
+        resolution: et.resolution,
+        soundshareEnabled: !et.muteStreamAudio,
+        previewDisabled: et.hidePreview,
+        goLiveModalDurationMs: performance.now() - Y.current,
+        audioSourceId: et.audioSourceId,
+        analyticsLocations: Q
       });
       if (t) return n();
       "no permission" === r && h.Z.show({
-        title: z.intl.string(z.t["X+mXen"]),
-        body: z.intl.string(z.t.MIJCzs)
+        title: V.intl.string(V.t["X+mXen"]),
+        body: V.intl.string(V.t.MIJCzs)
       }), n()
-    }, [n, ee, q]);
-  async function ed(e) {
-    await (0, _.Z)({
+    }, [n, et, Q]);
+  async function ef(e) {
+    await (0, g.Z)({
       channelId: e
-    }) && null != o && ec(o)
+    }) && null != o && eu(o)
   }
-  let eu = i.useCallback(() => {
+  let ep = i.useCallback(() => {
     var e;
-    ec({
-      id: "prepicked:" + ee.nativeSourceType,
-      name: null != (e = Z.ZP.getLastPickedContentTitle()) ? e : z.intl.string(z.t["KKcy9/"]),
+    eu({
+      id: "prepicked:" + et.nativeSourceType,
+      name: null != (e = I.ZP.getLastPickedContentTitle()) ? e : V.intl.string(V.t["KKcy9/"]),
       url: ""
     })
-  }, [ec, ee.nativeSourceType]);
-  return (0, r.jsx)(M.Yw, {
-    state: ee,
-    dispatch: et,
+  }, [eu, et.nativeSourceType]);
+  return (0, r.jsx)(k.Yw, {
+    state: et,
+    dispatch: en,
     children: (0, r.jsxs)(p.Y0X, {
       impression: {
         impressionName: c.ImpressionNames.GO_LIVE_MODAL,
         impressionProperties: {
-          location_stack: q,
-          application_id: (0, O.isWindows)() ? null == (t = (0, I.Z)(v.ZP, C.Z)) ? true : t.id : true,
-          parent_media_session_id: b.Z.getMediaSessionId()
+          location_stack: Q,
+          application_id: (0, w.isWindows)() ? null == (t = (0, E.Z)(j.ZP, O.Z)) ? true : t.id : true,
+          parent_media_session_id: y.Z.getMediaSessionId()
         }
       },
-      className: s()(V.root, {
-        [V.nativePicker]: Y && null == o,
-        [V.channelSelector]: el,
-        [V.confirmStep]: ei
+      className: s()(J.root, {
+        [J.nativePicker]: q && null == o,
+        [J.channelSelector]: eo,
+        [J.confirmStep]: es
       }),
       size: p.CgR.DYNAMIC,
       transitionState: l,
       parentComponent: "GoLiveModalV2",
-      children: [el ? (0, r.jsx)(A.Z, {
-        className: s()(V.channelSelectorComponent, V.withFooter),
-        onSelectChannel: ed
-      }) : ei ? (0, r.jsx)(R.Z, {
-        hideBackButton: null != o
-      }) : (0, r.jsxs)(r.Fragment, {
+      children: [eo ? (0, r.jsx)(R.Z, {
+        className: s()(J.channelSelectorComponent, J.withFooter),
+        onSelectChannel: ef
+      }) : es ? (0, r.jsx)(M.Z, {}) : (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(p.xBx, {
           separator: false,
-          className: V.header,
+          className: J.header,
           children: (0, r.jsx)(p.sY7, {
-            className: V.segmentedControl,
-            value: ea,
+            className: J.segmentedControl,
+            value: ed,
             look: "pill",
-            optionClassName: V.segmentedControlOption,
+            optionClassName: J.segmentedControlOption,
             onChange: e => {
               let {
                 value: t
               } = e;
-              return et({
+              return en({
                 type: "set_source_type",
                 sourceType: t
               })
             },
-            options: eo
+            options: ec
           })
         }), (0, r.jsx)(p.hzk, {
-          className: V.content,
-          children: Y && ea !== u.vA.CAMERA ? (0, r.jsx)(k.Z, {
-            onSourceSelect: eu
-          }) : (0, r.jsx)(D.Z, {
+          className: J.content,
+          children: q && ed !== u.vA.CAMERA ? (0, r.jsx)(D.Z, {
+            onSourceSelect: ep
+          }) : (0, r.jsx)(B.Z, {
             onClick: function(e) {
-              return ec(e)
+              return eu(e)
             }
           })
         })]
       }), (0, r.jsxs)(p.mzw, {
-        className: s()(V.footer, {
-          [V.footerShadow]: !en && ei
+        className: s()(J.footer, {
+          [J.footerShadow]: !ei && es
         }),
         separator: false,
         direction: d.k.Direction.VERTICAL,
         children: [(0, r.jsxs)("div", {
-          className: V.footerContent,
-          children: [(0, r.jsx)(U.Z, {}), (0, r.jsxs)("div", {
-            className: V.rightButtonGroup,
-            children: [en && (0, r.jsx)(L.Z, {
+          className: J.footerContent,
+          children: [(0, r.jsx)(F.Z, {}), (0, r.jsxs)("div", {
+            className: J.rightButtonGroup,
+            children: [ei && (0, r.jsx)(G.Z, {
               onClose: n
-            }), es && !ei && (0, r.jsx)(N.Z, {
-              mainCTADisabled: !er && "" === ee.nativeSourceType,
+            }), ea && !es && (0, r.jsx)(A.Z, {
+              mainCTADisabled: !el && "" === et.nativeSourceType,
               mainCTAOnClick: () => {
-                (0, P.t)(), (0, P.T)(ee.nativeSourceType)
+                (0, Z.t)(), (0, Z.T)(et.nativeSourceType)
               },
               align: "right",
-              ctaText: z.intl.string(z.t.FiBjwc),
-              hideOptionsButton: !en
-            }), ei && !es && (0, r.jsx)(N.Z, {
-              mainCTADisabled: null == ee.selectedSource,
+              ctaText: V.intl.string(V.t.FiBjwc),
+              hideOptionsButton: !ei
+            }), es && !ea && (0, r.jsx)(A.Z, {
+              mainCTADisabled: null == et.selectedSource,
               mainCTAOnClick: () => {
-                null != ee.selectedChannel ? ed(ee.selectedChannel) : null != ee.selectedSource && ec(ee.selectedSource)
+                null != et.selectedChannel ? ef(et.selectedChannel) : null != et.selectedSource && eu(et.selectedSource)
               },
               align: "right",
-              hideOptionsButton: !en,
-              ctaText: z.intl.string(W.default["5AyH/v"])
-            }), (!en || !(ei || es)) && (0, r.jsx)(B.Z, {
+              hideOptionsButton: !ei,
+              ctaText: V.intl.string(z.default["5AyH/v"])
+            }), (!ei || !(es || ea)) && (0, r.jsx)(L.Z, {
               align: "right"
             })]
           })]
-        }), en && (0, r.jsx)(G.Z, {
+        }), ei && (0, r.jsx)(U.Z, {
           onClose: n
         })]
       })]

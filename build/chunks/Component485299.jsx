@@ -1,67 +1,46 @@
 /** Chunk was on 47863 **/
 /** chunk id: 485299, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => u
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk268146 = require("./268146.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk855403 = require("./855403.js"),
   Chunk59468 = require("./59468.js"),
   Chunk615161 = require("./615161.jsx"),
   Chunk157707 = require("./157707.js");
 
-function f(e) {
-  let {
-    hideBackButton: t = false
-  } = e, [{
-    selectedSource: n
-  }, f] = (0, d.E_)(), [p, h] = i.useState(null);
-  return i.useEffect(() => {
-    var e;
-    if (null != n) {
-      if (null == (e = n.id) ? true : e.startsWith(l.vA.CAMERA)) {
-        "url" in n && h(n.url);
+function u() {
+  let [{
+    selectedSource: e
+  }] = (0, Chunk615161.E_)(), [t, n] = Chunk647438.useState(null);
+  return Chunk647438.useEffect(() => {
+    var t;
+    if (null != module) {
+      if (null == (t = module.id) ? true : exports.startsWith(Chunk268146.vA.CAMERA)) {
+        "url" in module && require(module.url);
         return
-      }(0, c.t)({
+      }(0, Chunk59468.t)({
         width: 800,
         height: 451,
-        types: [l.vA.SCREEN, l.vA.WINDOW]
-      }).then(e => {
-        var t;
+        types: [Chunk268146.vA.SCREEN, Chunk268146.vA.WINDOW]
+      }).then(t => {
+        var r;
         let {
-          screenSources: r,
-          windowSources: i
-        } = e, l = null != (t = i.find(e => "windowHandle" in n ? (0, a.Z)(e.id, n.windowHandle) : e.id === n.id)) ? t : r.find(e => n.id === e.id);
-        null != l && h(l.url)
+          screenSources: i,
+          windowSources: l
+        } = t, s = null != (r = l.find(t => "windowHandle" in e ? (0, o.Z)(t.id, e.windowHandle) : t.id === e.id)) ? r : i.find(t => e.id === t.id);
+        null != s && n(s.url)
       })
     }
-  }, [n]), (0, r.jsxs)("div", {
-    className: u.root,
-    children: [null == p ? (0, r.jsx)(o.$jN, {}) : (0, r.jsx)("img", {
-      src: p,
+  }, [module]), (0, Chunk951288.jsx)("div", {
+    className: Chunk157707.root,
+    children: null == exports ? (0, Chunk951288.jsx)(Chunk481060.$jN, {}) : (0, Chunk951288.jsx)("img", {
+      src: exports,
       alt: "",
-      className: u.largePreview
-    }), !t && (0, r.jsx)(s.zx, {
-      look: s.zx.Looks.FILLED,
-      color: s.zx.Colors.CUSTOM,
-      size: s.zx.Sizes.ICON,
-      onClick: () => {
-        f({
-          type: "set_selected_source",
-          source: null
-        }), f({
-          type: "set_step",
-          step: "source_select"
-        })
-      },
-      className: u.backButton,
-      children: (0, r.jsx)(o.j9r, {
-        color: o.TVs.colors.WHITE,
-        size: "xs"
-      })
-    })]
+      className: Chunk157707.largePreview
+    })
   })
 }
