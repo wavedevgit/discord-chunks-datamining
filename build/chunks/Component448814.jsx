@@ -101,10 +101,13 @@ function A(e) {
     } = e,
     j = i.useId(),
     U = null != n ? n : j,
-    [G, B] = i.useState(null != b ? b : []),
-    Z = null != O,
-    F = Z ? O : G,
-    V = (0, s.ZP)({
+    G = i.useMemo(() => f.map((e, t) => v(y({}, e), {
+      index: t
+    })), [f]),
+    [B, Z] = i.useState(null != b ? b : []),
+    F = null != O,
+    V = F ? O : B,
+    H = (0, s.ZP)({
       id: U,
       async scrollToEnd() {},
       async scrollToStart() {},
@@ -113,22 +116,22 @@ function A(e) {
       preserveFocusPosition: true
     }),
     {
-      activeIndex: H,
-      handleKeyDown: Y
-    } = N(k, f);
+      activeIndex: Y,
+      handleKeyDown: W
+    } = N(k, G);
   i.useEffect(() => {
-    if (null != H && k) {
-      let e = (0, l.jb)(U, (0, g.cA)(U, H)),
+    if (null != Y && k) {
+      let e = (0, l.jb)(U, (0, g.cA)(U, Y)),
         t = document.querySelector((0, l.P1)(e));
       null == t || t.focus()
     }
-  }, [H, f, k, U]);
-  let W = i.useCallback(e => {
-      if (true === a && 1 === F.length && F.includes(e)) return;
-      let t = (0, g.cq)(d, F, e);
-      Z || B(t), null == T || T(t)
-    }, [a, F, T, Z, d]),
-    K = i.useCallback(e => (0, r.jsx)("div", {
+  }, [Y, G, k, U]);
+  let K = i.useCallback(e => {
+      if (true === a && 1 === V.length && V.includes(e)) return;
+      let t = (0, g.cq)(d, V, e);
+      F || Z(t), null == T || T(t)
+    }, [a, V, T, F, d]),
+    z = i.useCallback(e => (0, r.jsx)("div", {
       className: E.listBoxItemContent,
       children: (0, r.jsx)(h.x, {
         variant: "text-md/medium",
@@ -146,20 +149,20 @@ function A(e) {
       itemClassName: E.loadingSpinnerInner
     })
   });
-  else if (f.length > 0) t = (0, r.jsx)(_._2, {
+  else if (G.length > 0) t = (0, r.jsx)(_._2, {
     style: {
-      height: null != D ? "".concat(Math.min(f.length, D) * S, "px") : "100%"
+      height: null != D ? "".concat(Math.min(G.length, D) * S, "px") : "100%"
     },
     role: true,
     rowHeight: S,
-    sections: [f.length],
+    sections: [G.length],
     sectionHeight: 0,
     renderSection: () => null,
     renderRow: e => {
       var t;
       let {
         row: n
-      } = e, i = f[n], a = (0, g.cA)(U, n), o = 0 !== F.length && null != F.find(e => e.id === i.id);
+      } = e, i = G[n], a = (0, g.cA)(U, n), o = 0 !== V.length && null != V.find(e => e.id === i.id);
       return (0, r.jsx)(C, v(y({}, i), {
         id: a,
         selectionMode: d,
@@ -167,18 +170,18 @@ function A(e) {
         disabled: u || i.disabled,
         focused: n === A,
         onClick: () => {
-          u || i.disabled || W(i)
+          u || i.disabled || K(i)
         },
-        children: null != (t = null == P ? true : P(i)) ? t : K(i)
-      }), i.id)
+        children: null != (t = null == P ? true : P(i)) ? t : z(i)
+      }), i.index)
     }
   });
   else {
-    var z;
-    t = null != (z = null == w ? true : w()) ? z : (0, r.jsx)(m.z, {})
+    var q;
+    t = null != (q = null == w ? true : w()) ? q : (0, r.jsx)(m.z, {})
   }
   return (0, r.jsx)(c.bG, {
-    navigator: V,
+    navigator: H,
     children: (0, r.jsx)(c.SJ, {
       children: e => {
         var {
@@ -191,13 +194,13 @@ function A(e) {
           "aria-busy": L,
           ref: n,
           onKeyDown: e => {
-            null == i || i(e), Y(e)
+            null == i || i(e), W(e)
           }
         }, a), {
           role: "listbox",
           "aria-multiselectable": "multiple" === d,
           className: o()(E.listBox, {
-            [E.scrollable]: f.length > D
+            [E.scrollable]: G.length > D
           }),
           "data-mana-component": "listbox",
           children: t
