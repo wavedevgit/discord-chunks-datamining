@@ -1,7 +1,7 @@
 /** Chunk was on 22325 **/
 /** chunk id: 985748, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => o
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -10,30 +10,14 @@ var Chunk436846 = require("./436846.jsx"),
   Chunk232083 = require("./232083.jsx");
 
 function o(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      var r;
-      r = n[t], t in e ? Object.defineProperty(e, t, {
-        value: r,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      }) : e[t] = r
-    })
-  }
-  return e
-}
-
-function s(e) {
   var t, n, {
-      user: s,
-      widget: c
+      user: o,
+      widget: c,
+      guildId: s,
+      channelId: u,
+      disableInteraction: d
     } = e,
-    u = function(e, t) {
+    f = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -47,17 +31,37 @@ function s(e) {
         for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
-    }(e, ["user", "widget"]);
-  return (0, r.jsx)(a.Z, (t = o({
-    userId: s.id,
-    widget: c
-  }, u), n = n = {
-    children: c.games.length > 0 ? (0, r.jsx)(l.Z, o({
-      user: s,
-      games: c.games,
+    }(e, ["user", "widget", "guildId", "channelId", "disableInteraction"]);
+  return (0, r.jsx)(a.Z, (t = function(e) {
+    for (var t = 1; t < arguments.length; t++) {
+      var n = null != arguments[t] ? arguments[t] : {},
+        r = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        return Object.getOwnPropertyDescriptor(n, e).enumerable
+      }))), r.forEach(function(t) {
+        var r;
+        r = n[t], t in e ? Object.defineProperty(e, t, {
+          value: r,
+          enumerable: true,
+          configurable: true,
+          writable: true
+        }) : e[t] = r
+      })
+    }
+    return e
+  }({
+    userId: o.id,
+    widget: c,
+    disableInteraction: d
+  }, f), n = n = {
+    children: c.games.length > 0 ? (0, r.jsx)(l.Z, {
+      user: o,
       widgetType: c.type,
-      disableInteraction: u.disableInteraction
-    }, u)) : (0, r.jsx)(i.Z, {
+      games: c.games,
+      guildId: s,
+      channelId: u,
+      disableInteraction: d
+    }) : (0, r.jsx)(i.Z, {
       widget: c
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

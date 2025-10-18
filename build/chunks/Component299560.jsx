@@ -58,12 +58,12 @@ let x = {
     }),
     icon: e => {
       var t;
-      return null == (t = c.Z.getApplication(e.applicationId)) ? true : t.getIconURL(16)
+      return null == (t = s.Z.getApplication(e.applicationId)) ? true : t.getIconURL(16)
     },
     getAriaLabel: e => {
       var t, n;
       return j.intl.formatToPlainString(j.t.KfGahI, {
-        applicationName: null != (n = null == (t = c.Z.getApplication(e.applicationId)) ? true : t.name) ? n : ""
+        applicationName: null != (n = null == (t = s.Z.getApplication(e.applicationId)) ? true : t.name) ? n : ""
       })
     }
   }
@@ -73,16 +73,16 @@ function _(e) {
   let t, {
       widgetType: n,
       onAddWidget: a,
-      size: c = "default",
+      size: s = "default",
       loading: d = false,
       trackUserProfileEditAction: j
     } = e,
     {
       placeholder: _,
-      getAriaLabel: P,
-      icon: I
+      getAriaLabel: I,
+      icon: P
     } = x[n],
-    w = "small" === c,
+    w = "small" === s,
     {
       config: S
     } = (0, m.G)(),
@@ -111,12 +111,12 @@ function _(e) {
         widgetEdited: n
       }), (0, b.L$)(y.qb.WIDGET_ADDED), null == a || a())
     }, [d, n, E, j, a]);
-  return (null != E && null != I && (t = I(E)), null == E) ? null : (0, r.jsxs)("div", {
+  return (null != E && null != P && (t = P(E)), null == E) ? null : (0, r.jsxs)("div", {
     className: O.addButtonContainer,
-    children: [(0, r.jsxs)(s.P3F, {
+    children: [(0, r.jsxs)(c.P3F, {
       className: l()(O.addButtonContent, w && O.sizeSmall, d && O.loading),
       onClick: T,
-      "aria-label": P(E),
+      "aria-label": I(E),
       "aria-busy": d,
       children: [(() => {
         if (null == E) return null;
@@ -126,31 +126,31 @@ function _(e) {
             return (0, r.jsx)(h.i, {
               className: O.placeholderPadding,
               applicationId: e.applicationId,
-              size: c
+              size: s
             });
           case "grid":
             return (0, r.jsx)(h.c, {
               className: O.placeholderPadding,
               applicationIds: e.applicationIds,
-              size: c
+              size: s
             });
           case "application-widget":
             return (0, r.jsx)(v.Z, {
               applicationId: e.applicationId,
-              size: c
+              size: s
             });
           default:
             return (0, u.vE)(e)
         }
       })(), (0, r.jsxs)("div", {
         className: O.overlay,
-        children: [(0, r.jsx)(s.oFk, {
+        children: [(0, r.jsx)(c.oFk, {
           size: "md",
           color: "currentColor",
           className: O.addButton
         }), (0, r.jsxs)("div", {
           className: O.title,
-          children: [(0, r.jsx)(s.Text, {
+          children: [(0, r.jsx)(c.Text, {
             variant: "text-md/medium",
             color: "header-primary",
             children: (0, p.mR)(E)
@@ -168,7 +168,7 @@ function _(e) {
       let e = _(E);
       return "application-widget" === e.variant ? (0, r.jsx)(v.T, {
         applicationId: e.applicationId,
-        size: c
+        size: s
       }) : null
     })()]
   })

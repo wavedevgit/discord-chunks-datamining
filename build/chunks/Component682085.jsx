@@ -30,10 +30,10 @@ function j() {
   } = (0, Chunk50130.G)(), {
     token: x,
     fetched: _
-  } = (0, Chunk491662.o)(null == O ? true : O.application_id), P = Chunk647438.useMemo(() => (null == O ? true : O.application_id) != null ? new Chunk931847.q({
+  } = (0, Chunk491662.o)(null == O ? true : O.application_id), I = Chunk647438.useMemo(() => (null == O ? true : O.application_id) != null ? new Chunk931847.q({
     type: Chunk296009.l.APPLICATION,
     applicationId: O.application_id
-  }) : null, [null == O ? true : O.application_id]), I = Chunk647438.useCallback(() => {
+  }) : null, [null == O ? true : O.application_id]), P = Chunk647438.useCallback(() => {
     module({
       action: "PRESS_ADD_WIDGET"
     }), (0, Chunk481060.ZDy)(async () => {
@@ -76,7 +76,7 @@ function j() {
       stackingBehavior: "stack"
     })
   }, [module]);
-  if (null == exports || null == j || null == P || !_) return (0, Chunk951288.jsx)("div", {
+  if (null == exports || null == j || null == I || !_) return (0, Chunk951288.jsx)("div", {
     className: Chunk66582.loading,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
   });
@@ -106,10 +106,10 @@ function j() {
       } = e;
       switch (n) {
         case o.z.APPLICATION_WIDGET_EMPTY_STATE_CARD_ADD_WIDGET:
-          return (0, r.jsxs)(s.Kqy, {
+          return (0, r.jsxs)(c.Kqy, {
             gap: 16,
             align: "center",
-            children: [(0, r.jsx)(s.LZC, {
+            children: [(0, r.jsx)(c.LZC, {
               size: 32
             }), w, (0, r.jsx)(m.Z, {
               user: t,
@@ -118,17 +118,17 @@ function j() {
             }), (0, r.jsx)(b.Z, {})]
           });
         case null:
-          return (0, r.jsxs)(s.Kqy, {
+          return (0, r.jsxs)(c.Kqy, {
             gap: 32,
             align: "center",
-            children: [(0, r.jsx)(s.LZC, {
+            children: [(0, r.jsx)(c.LZC, {
               size: 128
-            }), w, (0, r.jsx)(s.Button, {
-              icon: s.qJs,
+            }), w, (0, r.jsx)(c.Button, {
+              icon: c.qJs,
               text: v.intl.string(v.t.lBG2s7),
               size: "md",
               color: "secondary",
-              onClick: I
+              onClick: P
             })]
           })
       }

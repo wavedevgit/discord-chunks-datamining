@@ -30,12 +30,12 @@ function d(e) {
   if (null == b || null == p) return null;
   let h = (null == f ? true : f.type) === "WIDGET" && null != f.widget ? (0, r.jsx)("div", {
     className: u.widgetPreview,
-    children: (0, r.jsx)(c.Z, {
+    children: (0, r.jsx)(s.Z, {
       widget: f.widget,
       user: p,
       disableInteraction: true
     })
-  }) : (null == f ? true : f.itemType) === "GAME_COVER" && null != f.id ? (0, r.jsx)(s.Z, {
+  }) : (null == f ? true : f.itemType) === "GAME_COVER" && null != f.id ? (0, r.jsx)(c.Z, {
     className: u.gamePreview,
     imageSrc: f.imageSrc,
     gameName: f.gameName,

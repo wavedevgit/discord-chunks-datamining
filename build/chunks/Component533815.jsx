@@ -19,19 +19,22 @@ function f(e) {
     game: t,
     widgetType: n,
     iconSize: i = "refresh_sm",
-    className: f
+    className: f,
+    buttonRef: g,
+    onRemove: p
   } = e, {
-    trackUserProfileEditAction: g
-  } = (0, s.KZ)();
+    trackUserProfileEditAction: m
+  } = (0, c.KZ)();
   return (0, r.jsx)(l.u, {
     text: u.intl.string(u.t.HUvyDQ),
     children: (0, r.jsx)(o.P3F, {
+      innerRef: g,
       onClick: () => {
-        (0, c.$b)(n, t.applicationId), o.uvj.announce(u.intl.string(u.t["08HmMj"])), g({
+        (0, s.$b)(n, t.applicationId), o.uvj.announce(u.intl.string(u.t["08HmMj"])), m({
           action: "GAME_REMOVED",
           gameId: t.applicationId,
           widgetEdited: n
-        })
+        }), null == p || p()
       },
       "aria-label": u.intl.string(u.t.HUvyDQ),
       className: a()(f, d.clickable),

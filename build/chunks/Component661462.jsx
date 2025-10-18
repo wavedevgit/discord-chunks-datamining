@@ -87,21 +87,21 @@ function y(e) {
     subsection: a,
     displayProfile: l,
     guildId: o,
-    channelId: s,
+    channelId: c,
     onClose: m
   } = e;
-  return i === p.oh.ACTIVITY ? (0, r.jsx)(c.Z, {
+  return i === p.oh.ACTIVITY ? (0, r.jsx)(s.Z, {
     user: t,
     currentUser: n,
     displayProfile: l,
     guildId: o,
-    channelId: s,
+    channelId: c,
     subsection: a,
     onClose: m
   }) : i === p.oh.MUTUAL_FRIENDS ? (0, r.jsx)(u.Z, {
     user: t,
     guildId: o,
-    channelId: s,
+    channelId: c,
     onClose: m
   }) : i === p.oh.MUTUAL_GUILDS ? (0, r.jsx)(d.Z, {
     user: t,
@@ -109,7 +109,7 @@ function y(e) {
   }) : i === p.oh.WIDGETS ? (0, r.jsx)(f.C, {
     user: t,
     guildId: o,
-    channelId: s
+    channelId: c
   }) : i === p.oh.WISHLIST ? (0, r.jsx)(g.Z, {
     profileOwner: t
   }) : null
@@ -121,7 +121,7 @@ function j(e) {
     user: n,
     currentUser: a,
     displayProfile: l,
-    guildId: c,
+    guildId: s,
     channelId: u,
     items: d,
     initialSection: f,
@@ -129,7 +129,7 @@ function j(e) {
     onClose: p
   } = e, {
     trackUserProfileAction: v
-  } = (0, s.KZ)(), [{
+  } = (0, c.KZ)(), [{
     section: j,
     subsection: O,
     text: x
@@ -182,7 +182,7 @@ function j(e) {
           user: n,
           currentUser: a,
           displayProfile: l,
-          guildId: c,
+          guildId: s,
           channelId: u,
           section: j,
           subsection: O,

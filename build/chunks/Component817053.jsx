@@ -43,7 +43,7 @@ function p(e) {
     role: "img",
     "aria-label": o,
     className: f.fallback,
-    children: (0, r.jsx)(s.Text, {
+    children: (0, r.jsx)(c.Text, {
       variant: "text-xxs/medium",
       lineClamp: 3,
       "aria-hidden": true,
@@ -65,28 +65,34 @@ function m(e) {
     applicationId: i,
     userId: a,
     className: g,
-    hideTooltip: m = false
-  } = e, b = (0, u.Z)({
+    hideTooltip: m = false,
+    coverRef: b
+  } = e, h = (0, u.Z)({
     location: "GameCover",
     applicationId: i,
-    source: c.m1.UserProfile,
+    source: s.m1.UserProfile,
     sourceUserId: a,
     trackEntryPointImpression: true
-  }), h = null != n ? n : d.intl.string(d.t.GIWFlJ), v = d.intl.formatToPlainString(d.t["8QLQBw"], {
-    gameName: h
-  }), y = e => m ? e : (0, r.jsx)(o.u, {
-    text: h,
+  }), v = null != n ? n : d.intl.string(d.t.GIWFlJ), y = d.intl.formatToPlainString(d.t["8QLQBw"], {
+    gameName: v
+  }), j = e => m ? e : (0, r.jsx)(o.u, {
+    text: v,
     children: e
   });
-  return y(null == b ? (0, r.jsx)("div", {
-    className: g,
-    children: (0, r.jsx)(p, {
-      imageSrc: t,
-      gameName: n
+  return j(null == h ? (0, r.jsx)(c.tEY, {
+    children: (0, r.jsx)("div", {
+      ref: b,
+      className: g,
+      tabIndex: false,
+      children: (0, r.jsx)(p, {
+        imageSrc: t,
+        gameName: n
+      })
     })
-  }) : (0, r.jsx)(s.P3F, {
-    onClick: b,
-    "aria-label": v,
+  }) : (0, r.jsx)(c.P3F, {
+    innerRef: b,
+    onClick: h,
+    "aria-label": y,
     className: l()(f.clickable, g),
     children: (0, r.jsx)(p, {
       imageSrc: t,
@@ -101,8 +107,9 @@ function b(e) {
     userId: n,
     className: i,
     disableInteraction: a = false,
-    hideTooltip: o
-  } = e, s = function(e, t) {
+    hideTooltip: o,
+    coverRef: s
+  } = e, u = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -116,15 +123,20 @@ function b(e) {
       for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(e, ["applicationId", "userId", "className", "disableInteraction", "hideTooltip"]);
-  let c = l()(f.coverContainer, i);
-  return a ? (0, r.jsx)("div", {
-    className: c,
-    children: (0, r.jsx)(p, g({}, s))
+  }(e, ["applicationId", "userId", "className", "disableInteraction", "hideTooltip", "coverRef"]);
+  let d = l()(f.coverContainer, i);
+  return a ? (0, r.jsx)(c.tEY, {
+    children: (0, r.jsx)("div", {
+      ref: s,
+      className: d,
+      tabIndex: false,
+      children: (0, r.jsx)(p, g({}, u))
+    })
   }) : (0, r.jsx)(m, g({
-    className: c,
+    className: d,
     applicationId: t,
     userId: n,
-    hideTooltip: o
-  }, s))
+    hideTooltip: o,
+    coverRef: s
+  }, u))
 }

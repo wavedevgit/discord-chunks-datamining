@@ -18,18 +18,19 @@ function u(e) {
     userId: u,
     widget: d,
     index: f,
-    disableInteraction: g = false
-  } = e, p = (0, c.Z)(u), {
-    isDragging: m,
-    currentItem: b
+    disableInteraction: g = false,
+    onReorder: p
+  } = e, m = (0, s.Z)(u), {
+    isDragging: b,
+    currentItem: h
   } = (0, i.f)(e => ({
     isDragging: e.isDragging(),
     currentItem: e.getItem()
-  })), h = (0, r.useCallback)((e, t) => {
-    let n = p.slice(),
+  })), v = (0, r.useCallback)((e, t) => {
+    let n = m.slice(),
       [r] = n.splice(e, 1);
-    n.splice(t, 0, r), s.Z.setPendingWidgets(n)
-  }, [p]), [, v, y] = (0, a.c)({
+    n.splice(t, 0, r), c.Z.setPendingWidgets(n)
+  }, [m]), [, y, j] = (0, a.c)({
     type: "WIDGET",
     item: {
       widgetType: d.type,
@@ -42,16 +43,17 @@ function u(e) {
     collect: e => ({
       handlerId: e.getHandlerId(),
       isDragging: e.isDragging()
-    })
+    }),
+    end: p
   });
   (0, r.useEffect)(() => {
-    y((0, o.r)(), {
+    j((0, o.r)(), {
       captureDraggingState: true
     })
-  }, [y]);
+  }, [j]);
   let [{
-    dragSourcePosition: j
-  }, O] = (0, l.L)({
+    dragSourcePosition: O
+  }, x] = (0, l.L)({
     accept: "WIDGET",
     canDrop: () => !g,
     collect: e => {
@@ -64,14 +66,14 @@ function u(e) {
     },
     drop: e => {
       let t = null != f ? f : 0;
-      h(e.index, t), e.index = t
+      v(e.index, t), e.index = t
     }
   });
   return null == f || g ? {
     isDragging: false,
     dragSourcePosition: null
-  } : (v(n), O(t), {
-    isDragging: m && (null == b ? true : b.widgetType) === d.type,
-    dragSourcePosition: j
+  } : (y(n), x(t), {
+    isDragging: b && (null == h ? true : h.widgetType) === d.type,
+    dragSourcePosition: O
   })
 }

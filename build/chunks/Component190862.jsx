@@ -83,27 +83,27 @@ let y = e => {
       user: n,
       disableInteraction: i
     } = e, d = v(e, ["widget", "user", "disableInteraction"]);
-    let f = (0, s.FX)(t),
+    let f = (0, c.FX)(t),
       {
         shouldShowSuggestions: g,
         handleDismissSuggestions: p
-      } = (0, c.h)(f),
+      } = (0, s.h)(f),
       j = (0, a.e7)([l.default], () => l.default.getId() === n.id),
       O = j && !i && g,
       x = (0, o.mR)(f),
       _ = (0, o.Hy)(f, {
         isCurrentUser: j
       }),
-      P = (0, o.kQ)(f),
-      I = 1 === (0, o.Gv)(f.type);
+      I = (0, o.kQ)(f),
+      P = 1 === (0, o.Gv)(f.type);
     return (0, r.jsx)(y, h({
       widget: f,
       user: n,
       disableInteraction: i,
       headerTitle: x,
       headerSubtitle: _,
-      headerActionButtons: j && !I ? [(0, r.jsx)(u.yX, {
-        disabled: P,
+      headerActionButtons: j && !P ? [(0, r.jsx)(u.yX, {
+        disabled: I,
         widgetType: f.type,
         widget: f
       }, "".concat(f.type, "-browse-games-popout"))] : true,

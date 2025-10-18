@@ -16,6 +16,6 @@ function a(e) {
     className: i.coverList,
     children: t.map((e, t) => (0, r.jsx)("li", {
       children: n(e, t)
-    }, "".concat(e.applicationId, "-").concat(t)))
+    }, e.applicationId))
   })
 }

@@ -28,10 +28,10 @@ function b(e) {
   } = (0, l.ZP)(), {
     context: y,
     trackUserProfileAction: j
-  } = (0, s.KZ)(), {
+  } = (0, c.KZ)(), {
     mutualFriends: O,
     mutualFriendsCount: x
-  } = (0, c.Z)(t), _ = (0, a.Z)();
+  } = (0, s.Z)(t), _ = (0, a.Z)();
   return i.useEffect(() => {
     (0, u.Z)(t.id, _)
   }, [t.id, _]), (0, r.jsx)(p.F, {

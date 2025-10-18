@@ -1,7 +1,7 @@
 /** Chunk was on 22325 **/
 /** chunk id: 264481, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  P9: () => P,
+  P9: () => I,
   Uf: () => w,
   b0: () => _,
   s_: () => x
@@ -74,13 +74,13 @@ function _() {
   })
 }
 
-function P(e) {
+function I(e) {
   let {
     user: t,
     guildId: n,
-    channelId: s,
-    onClose: c
-  } = e, u = f.ZP.getName(n, s, t), d = m.intl.formatToPlainString(m.t.sjSitL, {
+    channelId: c,
+    onClose: s
+  } = e, u = f.ZP.getName(n, c, t), d = m.intl.formatToPlainString(m.t.sjSitL, {
     name: u
   }), [p] = i.useState(() => {
     var e;
@@ -88,8 +88,8 @@ function P(e) {
   }), h = i.useCallback(() => {
     o.Z.openPrivateChannel({
       recipientIds: t.id
-    }), null == c || c()
-  }, [t.id, c]);
+    }), null == s || s()
+  }, [t.id, s]);
   return (0, r.jsx)(O, {
     heading: d,
     bodyText: p,
@@ -104,12 +104,12 @@ function P(e) {
   })
 }
 
-function I() {
+function P() {
   let e = (0, Chunk410030.ZP)();
   return (0, Chunk951288.jsx)("div", {
     className: Chunk839468.connectionPlatforms,
     children: j.map((t, n) => {
-      let i = c.Z.get(t);
+      let i = s.Z.get(t);
       if (null == i) return null;
       let a = (0, l.wjy)(e) ? i.icon.darkPNG : i.icon.lightPNG;
       return (0, r.jsx)("img", {
@@ -137,7 +137,7 @@ function w(e) {
   return (0, r.jsxs)(O, {
     heading: m.intl.string(m.t.VB6LWV),
     bodyText: m.intl.string(m.t.KpjsU1),
-    children: [(0, r.jsx)(I, {}), (0, r.jsxs)("div", {
+    children: [(0, r.jsx)(P, {}), (0, r.jsxs)("div", {
       className: b.buttonRow,
       children: [(0, r.jsx)(g.O1, {
         text: m.intl.string(m.t["/Hl24e"]),

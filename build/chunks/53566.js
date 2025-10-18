@@ -81,9 +81,11 @@ class o {
     i(this, "targetNodes", true), i(this, "manager", true), i(this, "previewer", true), i(this, "announcer", true), i(this, "currentHoveredNode", true), i(this, "focusManager", true), i(this, "actions", true), i(this, "monitor", true), i(this, "handleDraggedElementKeyDown", true), this.targetNodes = t, this.manager = n, this.previewer = a, this.announcer = o, this.handleDraggedElementKeyDown = async e => {
       switch (e.key) {
         case "ArrowUp":
+        case "ArrowLeft":
           e.preventDefault(), e.stopPropagation(), this.hoverNode(await this.getPreviousDropTarget());
           return;
         case "ArrowDown":
+        case "ArrowRight":
           e.preventDefault(), e.stopPropagation(), this.hoverNode(await this.getNextDropTarget())
       }
     }, this.currentHoveredNode = e, this.focusManager = (0, r.E)({

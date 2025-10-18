@@ -1,7 +1,7 @@
 /** Chunk was on 22325 **/
 /** chunk id: 414655, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => I
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -25,13 +25,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk10094 = require("./10094.js");
 
-function P(e) {
+function I(e) {
   let {
     profileOwner: t
   } = e, {
     wishlistId: n,
-    currentUser: P,
-    wishlistSettings: I
+    currentUser: I,
+    wishlistSettings: P
   } = (0, l.cj)([h.Z, m.default], () => {
     let e = h.Z.getFirstWishlistId(t.id);
     return {
@@ -41,14 +41,14 @@ function P(e) {
     }
   }), {
     analyticsLocations: w
-  } = (0, d.ZP)(), S = (null == P ? true : P.id) === t.id, E = false === t.nsfwAllowed, [T, C] = i.useState(true);
+  } = (0, d.ZP)(), S = (null == I ? true : I.id) === t.id, E = false === t.nsfwAllowed, [T, C] = i.useState(true);
   i.useEffect(() => {
-    (null == I ? true : I.visibility) != null && C(I.visibility === a.f.PUBLIC)
-  }, [null == I ? true : I.visibility]);
+    (null == P ? true : P.visibility) != null && C(P.visibility === a.f.PUBLIC)
+  }, [null == P ? true : P.visibility]);
   let {
     wishlist: N,
-    error: A
-  } = (0, p.kZ)(n, t.id), D = i.useCallback(() => {
+    error: D
+  } = (0, p.kZ)(n, t.id), A = i.useCallback(() => {
     if (null == n) return;
     let e = T ? a.f.PRIVATE : a.f.PUBLIC;
     C(!T), g.Z.updateWishlistVisibility(n, e), (0, b.Er)({
@@ -62,25 +62,25 @@ function P(e) {
       analyticsSource: u.Z.USER_PROFILE_WISHLIST
     })
   }, [w]);
-  return null != A ? null : null == N || 0 === N.items.length ? (0, r.jsx)(v.F, {
+  return null != D ? null : null == N || 0 === N.items.length ? (0, r.jsx)(v.F, {
     fade: true,
     children: (0, r.jsxs)("div", {
       className: _.emptyStateContainer,
       children: [(0, r.jsxs)("div", {
         className: _.emptyStateText,
-        children: [(0, r.jsx)(c.Heading, {
+        children: [(0, r.jsx)(s.Heading, {
           variant: "heading-md/medium",
           color: "header-primary",
           children: x.intl.string(x.t.HGnLLS)
-        }), (0, r.jsx)(c.Text, {
+        }), (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
           children: x.intl.string(x.t["/X1ny8"])
         })]
-      }), S && (0, r.jsx)(c.Button, {
+      }), S && (0, r.jsx)(s.Button, {
         variant: "primary",
         size: "sm",
-        icon: c.EOn,
+        icon: s.EOn,
         text: x.intl.string(x.t.ZbS4QE),
         onClick: k
       })]
@@ -92,34 +92,34 @@ function P(e) {
       className: _.headerRow,
       children: [(0, r.jsxs)("div", {
         className: _.teenDisclaimer,
-        children: [(0, r.jsx)(c.Text, {
+        children: [(0, r.jsx)(s.Text, {
           variant: "text-xs/semibold",
           color: "text-secondary",
           children: x.intl.format(x.t.r6Y1Li, {
             count: N.items.length
           })
-        }), !T && (0, r.jsx)(s.u, {
+        }), !T && (0, r.jsx)(c.u, {
           text: x.intl.string(x.t.RX7D9v),
           asContainer: true,
-          children: (0, r.jsx)(c.tEY, {
+          children: (0, r.jsx)(s.tEY, {
             children: (0, r.jsx)("div", {
               role: "tooltip",
               tabIndex: 0,
-              children: (0, r.jsx)(c.kZF, {
+              children: (0, r.jsx)(s.kZF, {
                 size: "custom",
                 width: 16,
                 height: 16
               })
             })
           })
-        }), T && E && (0, r.jsx)(s.u, {
+        }), T && E && (0, r.jsx)(c.u, {
           text: x.intl.string(x.t.d78ChY),
           asContainer: true,
-          children: (0, r.jsx)(c.tEY, {
+          children: (0, r.jsx)(s.tEY, {
             children: (0, r.jsx)("div", {
               role: "tooltip",
               tabIndex: 0,
-              children: (0, r.jsx)(c.d3s, {
+              children: (0, r.jsx)(s.d3s, {
                 size: "custom",
                 width: 16,
                 height: 16
@@ -129,21 +129,21 @@ function P(e) {
         })]
       }), S ? (0, r.jsxs)("div", {
         className: _.headerActions,
-        children: [(0, r.jsx)(c.Button, {
+        children: [(0, r.jsx)(s.Button, {
           variant: "secondary",
           size: "sm",
-          icon: c.qJs,
+          icon: s.qJs,
           text: x.intl.string(x.t.SDUwMz),
           onClick: k
         }), (0, r.jsx)(j.Z, {
           isOwner: S,
           isWishlistPublic: T,
-          onToggleVisibility: D
+          onToggleVisibility: A
         })]
-      }) : (0, r.jsx)(c.Button, {
+      }) : (0, r.jsx)(s.Button, {
         variant: "secondary",
         size: "sm",
-        icon: c.EOn,
+        icon: s.EOn,
         text: x.intl.string(x.t["i/yzHh"]),
         onClick: k
       })]

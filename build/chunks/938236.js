@@ -27,7 +27,7 @@ function o(e) {
   return e
 }
 
-function s(e, t) {
+function c(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -39,7 +39,7 @@ function s(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let c = (0, Chunk392711.sampleSize)(Chunk570911.J6, Chunk570911.J6.length),
+let s = (0, Chunk392711.sampleSize)(Chunk570911.J6, Chunk570911.J6.length),
   u = (0, Chunk191336.U)((e, t) => ({
     stack: [],
     wishlistStack: [],
@@ -48,8 +48,8 @@ let c = (0, Chunk392711.sampleSize)(Chunk570911.J6, Chunk570911.J6.length),
     onLoad: (n, r, i) => {
       let l = new Set(i.map(e => e.applicationId));
       for (let i of (e({
-          stack: [...n.filter(e => !l.has(e)), ...c],
-          wishlistStack: [...r.filter(e => !l.has(e)), ...c]
+          stack: [...n.filter(e => !l.has(e)), ...s],
+          wishlistStack: [...r.filter(e => !l.has(e)), ...s]
         }), Object.values(a.l))) t().setNext(6, i)
     },
     setNext: (e, n) => {
@@ -73,8 +73,8 @@ let c = (0, Chunk392711.sampleSize)(Chunk570911.J6, Chunk570911.J6.length),
       let l = [...i];
       l.splice(a, 1);
       let o = t().getNext(1, n),
-        s = t().peekNext(7, n);
-      t()._setGameIds(n, [...l, ...o]), t()._setPeekedGameIds(n, [...s, ...o])
+        c = t().peekNext(7, n);
+      t()._setGameIds(n, [...l, ...o]), t()._setPeekedGameIds(n, [...c, ...o])
     },
     bumpMultiple: (e, n) => {
       var r;
@@ -89,7 +89,7 @@ let c = (0, Chunk392711.sampleSize)(Chunk570911.J6, Chunk570911.J6.length),
     },
     _setGameIds: (t, n) => {
       e(e => ({
-        gameIds: s(o({}, e.gameIds), {
+        gameIds: c(o({}, e.gameIds), {
           [t]: n
         })
       }))
@@ -103,7 +103,7 @@ let c = (0, Chunk392711.sampleSize)(Chunk570911.J6, Chunk570911.J6.length),
     },
     _setPeekedGameIds: (t, n) => {
       e(e => ({
-        peekedGameIds: s(o({}, e.peekedGameIds), {
+        peekedGameIds: c(o({}, e.peekedGameIds), {
           [t]: n
         })
       }))

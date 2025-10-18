@@ -1,8 +1,8 @@
 /** Chunk was on 22325 **/
 /** chunk id: 778414, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  C: () => W,
-  Z: () => B
+  C: () => H,
+  Z: () => M
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -30,6 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk860717 = require("./860717.jsx"),
   Chunk28671 = require("./28671.jsx"),
   Chunk430790 = require("./430790.jsx"),
+  Chunk34335 = require("./34335.jsx"),
   Chunk683881 = require("./683881.jsx"),
   Chunk190862 = require("./190862.jsx"),
   Chunk682085 = require("./682085.jsx"),
@@ -39,7 +40,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk830202 = require("./830202.js");
 
-function L(e) {
+function G(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -58,7 +59,7 @@ function L(e) {
   return e
 }
 
-function G(e, t) {
+function B(e, t) {
   if (null == e) return {};
   var n, r, i = function(e, t) {
     if (null == e) return {};
@@ -74,18 +75,18 @@ function G(e, t) {
   return i
 }
 
-function B(e) {
+function M(e) {
   var {
     widget: t
-  } = e, n = G(e, ["widget"]);
-  return t instanceof h.q ? (0, r.jsx)(w.Z, L({
+  } = e, n = B(e, ["widget"]);
+  return t instanceof h.q ? (0, r.jsx)(w.Z, G({
     widget: t
-  }, n)) : t instanceof v.zy ? (0, r.jsx)(C.Z, L({
+  }, n)) : t instanceof v.zy ? (0, r.jsx)(N.Z, G({
     widget: t
   }, n)) : null
 }
 
-function M() {
+function F() {
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk830202.ukTeenDisclaimer,
     children: [(0, Chunk951288.jsx)(Chunk481060.d3s, {
@@ -99,24 +100,24 @@ function M() {
   })
 }
 
-function F(e) {
+function U(e) {
   let {
     user: t
   } = e, {
     application: n
   } = (0, O.G)(), {
     token: i
-  } = (0, d.o)(null == n ? true : n.id), a = (0, I.Z)(t.id), l = (0, y.k)({
+  } = (0, d.o)(null == n ? true : n.id), a = (0, P.Z)(t.id), l = (0, y.k)({
     location: "ApplicationWidgetUpsell"
   }), o = a.some(e => e instanceof h.q && e.applicationId === (null == n ? true : n.id));
   return null == n || !l || null == i || o ? null : (0, r.jsx)(f.ZP, {
-    contentTypes: [s.z.APPLICATION_WIDGET_EMPTY_STATE_CARD_ADD_WIDGET],
+    contentTypes: [c.z.APPLICATION_WIDGET_EMPTY_STATE_CARD_ADD_WIDGET],
     children: e => {
       let {
         visibleContent: i,
         markAsDismissed: a
       } = e;
-      return i === s.z.APPLICATION_WIDGET_EMPTY_STATE_CARD_ADD_WIDGET ? (0, r.jsx)(S.Z, {
+      return i === c.z.APPLICATION_WIDGET_EMPTY_STATE_CARD_ADD_WIDGET ? (0, r.jsx)(S.Z, {
         user: t,
         application: n,
         onDismiss: a
@@ -125,63 +126,67 @@ function F(e) {
   })
 }
 
-function U(e) {
+function W(e) {
   let {
     user: t,
     guildId: n,
     channelId: a
-  } = e, l = (0, I.Z)(t.id), s = (0, o.e7)([m.default], () => m.default.getId() === t.id), c = (() => {
+  } = e, l = (0, P.Z)(t.id), c = (0, o.e7)([m.default], () => m.default.getId() === t.id), s = (() => {
     let [e, t] = (0, o.Wu)([b.Z], () => [b.Z.ipCountryCode, b.Z.ipCountryCodeRequest]), n = (0, g.U)();
     return i.useEffect(() => {
       null == e && null == t && n && (0, u.GE)()
     }, [e, t, n]), "GB" === e && n
   })(), d = (0, y.k)({
     location: "UserProfileModalV2Widgets"
-  }), f = 0 === l.length && s, O = i.useMemo(() => l.filter(v.Wc), [l]), x = i.useMemo(() => l.filter(e => e instanceof h.q), [l]);
-  (0, P.ZP)(O), (0, j.J)(s, O);
+  }), f = 0 === l.length && c, O = i.useMemo(() => l.filter(v.Wc), [l]), x = i.useMemo(() => l.filter(e => e instanceof h.q), [l]);
+  (0, I.ZP)(O), (0, j.J)(c, O);
   var w = t.id;
   (0, _.s)(x);
   let {
     data: S,
-    refetch: T
-  } = (0, p.O)(w), C = i.useRef(S);
-  if (C.current = S, i.useEffect(() => {
-      null !== C.current && T()
-    }, [T]), f)
-    if (d) return (0, r.jsx)(N.Z, {});
-    else return (0, r.jsx)(k.Z, {});
-  return (0, r.jsxs)(r.Fragment, {
-    children: [s && c && (0, r.jsx)(M, {}), s && (0, r.jsx)(F, {
+    refetch: C
+  } = (0, p.O)(w), N = i.useRef(S);
+  N.current = S, i.useEffect(() => {
+    null !== N.current && C()
+  }, [C]);
+  let A = () => (0, r.jsxs)(r.Fragment, {
+    children: [c && s && (0, r.jsx)(F, {}), c && (0, r.jsx)(U, {
       user: t
-    }), l.map((e, i) => (0, r.jsx)(B, {
+    }), l.map((e, i) => (0, r.jsx)(M, {
       widget: e,
       user: t,
       guildId: n,
       channelId: a,
       index: i
-    }, e.type)), s && (0, r.jsx)(E.Z, {})]
-  })
+    }, e.type)), c && (0, r.jsx)(E.Z, {})]
+  });
+  if (f)
+    if (d) return (0, r.jsx)(D.Z, {});
+    else return (0, r.jsx)(Z.Z, {});
+  return c ? (0, r.jsx)(T.K, {
+    children: A()
+  }) : A()
 }
 
-function W(e) {
+function H(e) {
   var {
     user: t
-  } = e, n = G(e, ["user"]);
+  } = e, n = B(e, ["user"]);
   let a = i.useRef(null);
   (0, x.r)({
     container: a.current
   });
   let o = (0, A.h)(t.id);
-  return (0, r.jsxs)(D.F, {
+  return (0, r.jsxs)(k.F, {
     "data-scroller": true,
     scrollerRef: a,
-    className: l()(R.scroller, {
-      [R.hasToolbar]: o
+    className: l()(L.scroller, {
+      [L.hasToolbar]: o
     }),
     fade: true,
-    children: [(0, r.jsx)(T.Z, {
+    children: [(0, r.jsx)(C.Z, {
       scrollerRef: a
-    }), (0, r.jsx)(U, L({
+    }), (0, r.jsx)(W, G({
       user: t
     }, n))]
   })

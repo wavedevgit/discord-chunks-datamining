@@ -41,10 +41,10 @@ function w(e) {
     voiceActivityStatusEnabled: N
   } = (0, l.U)({
     location: "UserProfileModalV2Activity"
-  }), A = (0, f.b)({
+  }), D = (0, f.b)({
     location: "UserProfileModalV2Activity"
   }), {
-    live: D,
+    live: A,
     recent: k,
     stream: Z
   } = (0, g.Z)(t.id), {
@@ -53,20 +53,20 @@ function w(e) {
   } = (0, p.Z)({
     userId: t.id,
     guildId: S
-  }), G = (0, i.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t.id)), B = t.id === n.id, M = (0, i.e7)([u.Z, c.Z], () => {
-    let e = B ? u.Z.getStatus() : c.Z.getStatus(t.id);
+  }), G = (0, i.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t.id)), B = t.id === n.id, M = (0, i.e7)([u.Z, s.Z], () => {
+    let e = B ? u.Z.getStatus() : s.Z.getStatus(t.id);
     return e === a.Skl.OFFLINE || e === a.Skl.INVISIBLE
-  }), F = D.length > 0 || null != Z, U = N && null == Z && null == L && null != R, W = !M && (F || U), H = k.length > 0;
+  }), F = A.length > 0 || null != Z, U = N && null == Z && null == L && null != R, W = !M && (F || U), H = k.length > 0;
   if (!W && !H && G) return (0, r.jsx)("div", {
-    className: I.cards,
+    className: P.cards,
     children: Array.from({
       length: 8
     }).map((e, t) => (0, r.jsxs)("div", {
-      className: I.loadingItem,
-      children: [(0, r.jsx)(s.ZT, {
+      className: P.loadingItem,
+      children: [(0, r.jsx)(c.ZT, {
         width: 60,
         opacity: .08
-      }), (0, r.jsx)(s.ZT, {
+      }), (0, r.jsx)(c.ZT, {
         width: 135,
         opacity: .08
       })]
@@ -84,13 +84,13 @@ function w(e) {
     })
   }
   return (0, r.jsxs)(O.F, {
-    className: I.scroller,
+    className: P.scroller,
     fade: true,
     children: [W ? (0, r.jsx)(j.Z, {
-      heading: P.intl.string(P.t.J6STd3),
+      heading: I.intl.string(I.t.J6STd3),
       children: (0, r.jsxs)("ul", {
-        className: I.cards,
-        children: [!A && U && (0, r.jsx)("li", {
+        className: P.cards,
+        children: [!D && U && (0, r.jsx)("li", {
           children: (0, r.jsx)(v.Z, {
             user: t,
             currentUser: n,
@@ -104,14 +104,14 @@ function w(e) {
             stream: Z,
             onClose: C
           })
-        }), D.map((e, i) => (0, r.jsx)("li", {
+        }), A.map((e, i) => (0, r.jsx)("li", {
           children: (0, r.jsx)(m.Z, {
             user: t,
             currentUser: n,
             activity: e,
             onClose: C
           })
-        }, "live-".concat(i))), A && U && (0, r.jsx)("li", {
+        }, "live-".concat(i))), D && U && (0, r.jsx)("li", {
           children: (0, r.jsx)(v.Z, {
             user: t,
             currentUser: n,
@@ -121,8 +121,8 @@ function w(e) {
         })]
       })
     }) : null, H ? (0, r.jsx)(j.Z, {
-      heading: P.intl.string(P.t.jzgEoK),
-      introText: B ? P.intl.format(P.t["4bk9Ag"], {
+      heading: I.intl.string(I.t.jzgEoK),
+      introText: B ? I.intl.format(I.t["4bk9Ag"], {
         learnMoreHook: (e, t) => (0, r.jsx)(a.Anchor, {
           href: d.Z.getArticleURL(_.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
@@ -130,7 +130,7 @@ function w(e) {
       }) : true,
       scrollIntoView: T === x.Tb.RECENT_ACTIVITY,
       children: (0, r.jsx)("ul", {
-        className: I.cards,
+        className: P.cards,
         children: k.map(e => (0, r.jsx)("li", {
           children: (0, r.jsx)(b.Z, {
             user: t,

@@ -27,10 +27,10 @@ function O(e) {
     className: t
   } = e, {
     trackUserProfileEditSaved: n
-  } = (0, f.KZ)(), [a, O] = i.useState(false), x = (0, s.Wu)([m.Z], () => {
+  } = (0, f.KZ)(), [a, O] = i.useState(false), x = (0, c.Wu)([m.Z], () => {
     var e;
     return null != (e = m.Z.getSaveablePendingWidgets()) ? e : []
-  }), _ = (0, s.Wu)([m.Z], () => m.Z.getChangedWidgets()), P = (0, s.Wu)([m.Z], () => m.Z.getRemovedWidgets()), I = (0, s.e7)([m.Z], () => m.Z.hasSaveablePendingChanges()), w = (0, s.e7)([m.Z], () => m.Z.isSubmitting), S = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), E = (0, c.Yzy)(I, {
+  }), _ = (0, c.Wu)([m.Z], () => m.Z.getChangedWidgets()), I = (0, c.Wu)([m.Z], () => m.Z.getRemovedWidgets()), P = (0, c.e7)([m.Z], () => m.Z.hasSaveablePendingChanges()), w = (0, c.e7)([m.Z], () => m.Z.isSubmitting), S = (0, c.e7)([u.Z], () => u.Z.useReducedMotion), E = (0, s.Yzy)(P, {
     from: {
       opacity: 0,
       y: 80 * !S
@@ -54,8 +54,8 @@ function O(e) {
       d.S.unsubscribe(v.CkL.EMPHASIZE_NOTICE, t), null !== e && clearTimeout(e)
     }
   }, []), i.useEffect(() => {
-    I && c.uvj.announce(y.intl.string(y.t["0Y/qkJ"]))
-  }, [I]);
+    P && s.uvj.announce(y.intl.string(y.t["0Y/qkJ"]))
+  }, [P]);
   let T = i.useCallback(async () => {
       try {
         await p.Z.savePendingWidgets(x)
@@ -76,11 +76,11 @@ function O(e) {
           return e + (null != (r = null == (n = t.comment) ? true : n.length) ? r : 0)
         }, 0)), n(t)
       }
-      for (let e of P) n({
+      for (let e of I) n({
         widgetEdited: e.type,
         isWidgetRemoved: true
       })
-    }, [x, _, P, n]),
+    }, [x, _, I, n]),
     C = i.useCallback(() => {
       p.Z.clearPendingWidgets()
     }, []);
@@ -92,26 +92,26 @@ function O(e) {
         [j.emphasized]: a
       }),
       "aria-label": y.intl.string(y.t["odDw+/"]),
-      children: [(0, r.jsx)(c.Text, {
+      children: [(0, r.jsx)(s.Text, {
         variant: "text-md/medium",
         color: "text-primary",
         className: j.message,
         children: y.intl.string(y.t["/lQiX1"])
       }), (0, r.jsxs)("div", {
         className: j.actions,
-        children: [(0, r.jsx)(c.Button, {
+        children: [(0, r.jsx)(s.Button, {
           size: "sm",
           variant: "secondary",
           text: y.intl.string(y.t.yBZMsb),
           onClick: C,
-          disabled: !I || w
-        }), (0, r.jsx)(c.Button, {
+          disabled: !P || w
+        }), (0, r.jsx)(s.Button, {
           size: "sm",
           variant: "primary",
           text: y.intl.string(y.t.R3BPHx),
           onClick: T,
           loading: w,
-          disabled: !I || w
+          disabled: !P || w
         })]
       })]
     })

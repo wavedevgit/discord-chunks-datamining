@@ -19,7 +19,7 @@ function u(e) {
     wishlistId: i,
     isOwner: l
   } = e;
-  return (0, a.Q)(t) ? (0, r.jsx)(s.Z, {
+  return (0, a.Q)(t) ? (0, r.jsx)(c.Z, {
     item: t,
     profileOwner: n,
     wishlistId: i,
@@ -32,13 +32,13 @@ function d(e) {
     items: t,
     profileOwner: n,
     isOwner: a
-  } = e, s = l.default.getCurrentUser(), {
+  } = e, c = l.default.getCurrentUser(), {
     defaultWishlistId: d
   } = (0, i.cj)([o.Z], () => ({
     defaultWishlistId: o.Z.getFirstWishlistId(n.id)
   }));
-  return null == s || null == d ? null : (0, r.jsx)("ul", {
-    className: c.grid,
+  return null == c || null == d ? null : (0, r.jsx)("ul", {
+    className: s.grid,
     children: t.map(e => (0, r.jsx)("li", {
       children: (0, r.jsx)(u, {
         item: e,
