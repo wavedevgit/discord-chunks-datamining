@@ -2,13 +2,14 @@
 /** chunk id: 357, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => s
+  Z: () => l
 });
 var Chunk581282 = require("./581282.js"),
+  Chunk647943 = require("./647943.js"),
   Chunk8853 = require("./8853.js"),
   Chunk81825 = require("./81825.js");
 
-function o(e, t, n) {
+function s(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -16,15 +17,21 @@ function o(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class s extends Chunk81825.Z {
+class l extends Chunk81825.Z {
   static createFromServer(e) {
-    return new s({
+    let t = new TextDecoder("utf-8", {
+      ignoreBOM: true
+    });
+    return new l({
       id: e.id,
       componentType: e.component_type,
-      properties: i.t.fromBinary((0, r.c)(e.properties))
+      properties: a.t.fromBinary((0, r.c)(e.properties), {
+        readUnknownField: true,
+        readerFactory: e => new i.o(e, t)
+      })
     })
   }
   constructor(e) {
-    super(), o(this, "id", true), o(this, "componentType", true), o(this, "properties", true), this.id = e.id, this.componentType = e.componentType, this.properties = e.properties
+    super(), s(this, "id", true), s(this, "componentType", true), s(this, "properties", true), this.id = e.id, this.componentType = e.componentType, this.properties = e.properties
   }
 }
