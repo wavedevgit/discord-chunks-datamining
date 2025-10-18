@@ -39,7 +39,6 @@ let f = Object.freeze({
     [Chunk526761.KQ.AccessibilityScrollPositions.REDUCED_MOTION]: Chunk981631.oAB.ACCESSIBILITY,
     [Chunk526761.KQ.AccessibilityScrollPositions.SYNC_PROFILE_THEME_WITH_USER_THEME]: Chunk981631.oAB.ACCESSIBILITY,
     [Chunk526761.KQ.AccessibilityScrollPositions.LEGACY_CHAT_INPUT]: Chunk981631.oAB.ACCESSIBILITY,
-    [Chunk526761.KQ.VoiceAndVideoScrollPositions.HARDWARE_ACCELERATION]: Chunk981631.oAB.VOICE,
     [Chunk526761.KQ.AppearanceScrollPositions.CUSTOM_APP_ICONS]: Chunk981631.oAB.APPEARANCE,
     [Chunk526761.KQ.ContentAndSocialScrollPositions.DM_SAFETY_ALERTS_V2]: Chunk981631.oAB.CONTENT_AND_SOCIAL,
     [Chunk526761.KQ.ContentAndSocialScrollPositions.MESSAGE_REQUESTS_V2]: Chunk981631.oAB.CONTENT_AND_SOCIAL,

@@ -2,8 +2,7 @@
 /** chunk id: 947851, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Y: () => a,
-  m: () => i
+  Y: () => i
 });
 let r = (0, require("./722733.js").Z)({
   kind: "user",
@@ -29,12 +28,6 @@ let r = (0, require("./722733.js").Z)({
 });
 
 function i(e) {
-  return r.getConfig({
-    location: e
-  }).forceEnableVideoHardwareAcceleration
-}
-
-function a(e) {
   return r.getConfig({
     location: e
   }).forceEnableAppHardwareAcceleration

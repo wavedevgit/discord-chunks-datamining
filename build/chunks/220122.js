@@ -63,19 +63,6 @@ class m extends Chunk474639.Z {
       quality: exports.clipsQuality
     })
   }
-  handleMediaEngineSetHardwareEncoding(e) {
-    let {
-      enabled: t
-    } = e;
-    if (!t) {
-      let {
-        clipsEnabled: e
-      } = u.Z.getSettings();
-      e && f.em({
-        clipsEnabled: false
-      })
-    }
-  }
   disableClips() {
     Chunk39604.em({
       clipsEnabled: false,

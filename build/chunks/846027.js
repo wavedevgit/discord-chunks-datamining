@@ -400,12 +400,6 @@ let S = {
         enabled: e
       }))
     },
-    setHardwareEncoding(e) {
-      C() || ((0, s.Z)("hardware_acceleration_enabled", e, d.Z.getHardwareEncoding()), r.Z.dispatch({
-        type: "MEDIA_ENGINE_SET_HARDWARE_ENCODING",
-        enabled: e
-      }))
-    },
     setAttenuation(e, t, n) {
       C() || ((() => {
         let r = d.Z.getAttenuation(),
