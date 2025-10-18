@@ -78,9 +78,9 @@ function I(e) {
   let {
     user: t,
     guildId: n,
-    channelId: c,
-    onClose: s
-  } = e, u = f.ZP.getName(n, c, t), d = m.intl.formatToPlainString(m.t.sjSitL, {
+    channelId: s,
+    onClose: c
+  } = e, u = f.ZP.getName(n, s, t), d = m.intl.formatToPlainString(m.t.sjSitL, {
     name: u
   }), [p] = i.useState(() => {
     var e;
@@ -88,8 +88,8 @@ function I(e) {
   }), h = i.useCallback(() => {
     o.Z.openPrivateChannel({
       recipientIds: t.id
-    }), null == s || s()
-  }, [t.id, s]);
+    }), null == c || c()
+  }, [t.id, c]);
   return (0, r.jsx)(O, {
     heading: d,
     bodyText: p,
@@ -109,7 +109,7 @@ function P() {
   return (0, Chunk951288.jsx)("div", {
     className: Chunk839468.connectionPlatforms,
     children: j.map((t, n) => {
-      let i = s.Z.get(t);
+      let i = c.Z.get(t);
       if (null == i) return null;
       let a = (0, l.wjy)(e) ? i.icon.darkPNG : i.icon.lightPNG;
       return (0, r.jsx)("img", {

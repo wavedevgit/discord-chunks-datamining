@@ -72,7 +72,7 @@ function h(e) {
   } = e, v = b(e, ["widgetType", "widget", "children"]);
   let [y] = (0, o.ynZ)(), [j, O] = i.useState(""), x = i.useRef(""), _ = i.useMemo(() => new Set(n.games.map(e => e.applicationId)), [n.games]), {
     trackUserProfileEditAction: I
-  } = (0, u.KZ)(), P = (0, l.e7)([s.default], () => ["en-US", "en-GB"].includes(s.default.locale)), w = i.useCallback(e => {
+  } = (0, u.KZ)(), P = (0, l.e7)([c.default], () => ["en-US", "en-GB"].includes(c.default.locale)), w = i.useCallback(e => {
     (0, d.ES)(t, {
       applicationId: e
     }), o.uvj.announce(f.intl.string(f.t.q0U3DA)), I({
@@ -83,7 +83,7 @@ function h(e) {
   }, [t, I]), {
     options: S,
     matchSorterOptions: E
-  } = (0, c.h)(), T = i.useCallback(e => "" === e.trim() ? S : (0, a.Lu)(S, e, m(p({}, E), {
+  } = (0, s.h)(), T = i.useCallback(e => "" === e.trim() ? S : (0, a.Lu)(S, e, m(p({}, E), {
     threshold: a.Lu.rankings.CONTAINS
   })), [S, E]), C = i.useCallback(e => {
     "" === j.trim() && "" !== e.trim() && I({

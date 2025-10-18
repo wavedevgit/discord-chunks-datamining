@@ -12,8 +12,8 @@ var Chunk436846 = require("./436846.jsx"),
 function o(e) {
   var t, n, {
       user: o,
-      widget: c,
-      guildId: s,
+      widget: s,
+      guildId: c,
       channelId: u,
       disableInteraction: d
     } = e,
@@ -32,7 +32,7 @@ function o(e) {
       }
       return i
     }(e, ["user", "widget", "guildId", "channelId", "disableInteraction"]);
-  let g = c.games[0];
+  let g = s.games[0];
   return (0, r.jsx)(a.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -52,18 +52,18 @@ function o(e) {
     return e
   }({
     userId: o.id,
-    widget: c,
+    widget: s,
     disableInteraction: d
   }, f), n = n = {
     children: null != g ? (0, r.jsx)(l.Z, {
       user: o,
-      widgetType: c.type,
+      widgetType: s.type,
       game: g,
-      guildId: s,
+      guildId: c,
       channelId: u,
       disableInteraction: d
     }) : (0, r.jsx)(i.Z, {
-      widget: c
+      widget: s
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);

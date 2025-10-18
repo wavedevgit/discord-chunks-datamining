@@ -24,13 +24,13 @@ function f(e) {
     onRemove: p
   } = e, {
     trackUserProfileEditAction: m
-  } = (0, c.KZ)();
+  } = (0, s.KZ)();
   return (0, r.jsx)(l.u, {
     text: u.intl.string(u.t.HUvyDQ),
     children: (0, r.jsx)(o.P3F, {
       innerRef: g,
       onClick: () => {
-        (0, s.$b)(n, t.applicationId), o.uvj.announce(u.intl.string(u.t["08HmMj"])), m({
+        (0, c.$b)(n, t.applicationId), o.uvj.announce(u.intl.string(u.t["08HmMj"])), m({
           action: "GAME_REMOVED",
           gameId: t.applicationId,
           widgetEdited: n

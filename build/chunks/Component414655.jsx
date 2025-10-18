@@ -68,19 +68,19 @@ function I(e) {
       className: _.emptyStateContainer,
       children: [(0, r.jsxs)("div", {
         className: _.emptyStateText,
-        children: [(0, r.jsx)(s.Heading, {
+        children: [(0, r.jsx)(c.Heading, {
           variant: "heading-md/medium",
           color: "header-primary",
           children: x.intl.string(x.t.HGnLLS)
-        }), (0, r.jsx)(s.Text, {
+        }), (0, r.jsx)(c.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
           children: x.intl.string(x.t["/X1ny8"])
         })]
-      }), S && (0, r.jsx)(s.Button, {
+      }), S && (0, r.jsx)(c.Button, {
         variant: "primary",
         size: "sm",
-        icon: s.EOn,
+        icon: c.EOn,
         text: x.intl.string(x.t.ZbS4QE),
         onClick: k
       })]
@@ -92,34 +92,34 @@ function I(e) {
       className: _.headerRow,
       children: [(0, r.jsxs)("div", {
         className: _.teenDisclaimer,
-        children: [(0, r.jsx)(s.Text, {
+        children: [(0, r.jsx)(c.Text, {
           variant: "text-xs/semibold",
           color: "text-secondary",
           children: x.intl.format(x.t.r6Y1Li, {
             count: N.items.length
           })
-        }), !T && (0, r.jsx)(c.u, {
+        }), !T && (0, r.jsx)(s.u, {
           text: x.intl.string(x.t.RX7D9v),
           asContainer: true,
-          children: (0, r.jsx)(s.tEY, {
+          children: (0, r.jsx)(c.tEY, {
             children: (0, r.jsx)("div", {
               role: "tooltip",
               tabIndex: 0,
-              children: (0, r.jsx)(s.kZF, {
+              children: (0, r.jsx)(c.kZF, {
                 size: "custom",
                 width: 16,
                 height: 16
               })
             })
           })
-        }), T && E && (0, r.jsx)(c.u, {
+        }), T && E && (0, r.jsx)(s.u, {
           text: x.intl.string(x.t.d78ChY),
           asContainer: true,
-          children: (0, r.jsx)(s.tEY, {
+          children: (0, r.jsx)(c.tEY, {
             children: (0, r.jsx)("div", {
               role: "tooltip",
               tabIndex: 0,
-              children: (0, r.jsx)(s.d3s, {
+              children: (0, r.jsx)(c.d3s, {
                 size: "custom",
                 width: 16,
                 height: 16
@@ -129,10 +129,10 @@ function I(e) {
         })]
       }), S ? (0, r.jsxs)("div", {
         className: _.headerActions,
-        children: [(0, r.jsx)(s.Button, {
+        children: [(0, r.jsx)(c.Button, {
           variant: "secondary",
           size: "sm",
-          icon: s.qJs,
+          icon: c.qJs,
           text: x.intl.string(x.t.SDUwMz),
           onClick: k
         }), (0, r.jsx)(j.Z, {
@@ -140,10 +140,10 @@ function I(e) {
           isWishlistPublic: T,
           onToggleVisibility: A
         })]
-      }) : (0, r.jsx)(s.Button, {
+      }) : (0, r.jsx)(c.Button, {
         variant: "secondary",
         size: "sm",
-        icon: s.EOn,
+        icon: c.EOn,
         text: x.intl.string(x.t["i/yzHh"]),
         onClick: k
       })]

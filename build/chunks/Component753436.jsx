@@ -8,10 +8,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk79116 = require("./79116.js"),
-  Chunk793030 = require("./793030.js"),
   Chunk594174 = require("./594174.js"),
-  Chunk947790 = require("./947790.js"),
+  Chunk86419 = require("./86419.js"),
   Chunk747101 = require("./747101.js"),
+  Chunk780899 = require("./780899.jsx"),
   Chunk733231 = require("./733231.jsx"),
   Chunk817053 = require("./817053.jsx"),
   Chunk533815 = require("./533815.jsx"),
@@ -26,45 +26,38 @@ function j(e) {
     index: t,
     widgetType: n,
     game: a,
-    children: o
-  } = e, s = i.useRef(null), d = i.useRef(null), {
-    registerDragHandleRef: g,
-    manageFocusOnReorder: p
-  } = (0, f.C)(), {
-    isDragging: m,
-    dragSourcePosition: b
-  } = (0, u.g)({
-    dragRef: s,
-    dropRef: d,
+    children: l
+  } = e, {
+    registerDragHandleRef: o,
+    manageFocusOnReorder: s
+  } = (0, f.C)(), u = i.useRef(null), g = {
+    imageSrc: a.imageSrc,
+    gameName: a.gameName
+  };
+  return (0, r.jsx)(d.yW, {
     index: t,
-    widgetType: n,
-    game: a,
-    onReorder: () => p(a.applicationId)
-  }), v = null != b, j = v && t < b, O = v && t > b;
-  return (0, r.jsx)("div", {
-    ref: d,
-    className: l()(y.container, {
-      [y.isDragging]: m,
-      [y.dropIndicatorBefore]: j,
-      [y.dropIndicatorAfter]: O
-    }),
+    itemId: a.applicationId,
+    listType: n,
+    itemType: "GAME_COVER",
+    itemPreviewProps: g,
     "aria-label": h.intl.formatToPlainString(h.t["0dR3g4"], {
       positionNumber: t + 1
     }),
+    onReorder: (e, t) => (0, c.Eq)(n, e, t),
+    onEnd: () => s(a.applicationId),
+    className: y.container,
+    dropBeforeClassName: y.dropIndicatorBefore,
+    dropAfterClassName: y.dropIndicatorAfter,
+    draggingClassName: y.isDragging,
     children: (0, r.jsxs)("div", {
-      ref: s,
-      className: y.dragTarget,
-      children: [o, (0, r.jsx)(c.P3F, {
-        innerRef: g(a.applicationId),
-        "aria-label": h.intl.string(h.t.Zc1neH),
+      ref: u,
+      className: y.dragHandleContainer,
+      children: [l, (0, r.jsx)(d.e_, {
+        buttonRef: o(a.applicationId),
         className: y.dragHandle,
         focusProps: {
-          ringTarget: s
-        },
-        children: (0, r.jsx)(c.Vni, {
-          size: "sm",
-          color: "currentColor"
-        })
+          ringTarget: u
+        }
       })]
     })
   })
@@ -77,11 +70,11 @@ function O(e) {
     widgetType: i,
     guildId: a,
     channelId: c,
-    disableInteraction: u = false,
+    disableInteraction: d = false,
     index: f,
     onRemoveGame: h,
     coverRef: O
-  } = e, x = (0, b.Z)(t.applicationId).length > 0, _ = s.default.getCurrentUser(), I = (null == _ ? true : _.id) === n, P = !u && I, w = (0, d.kO)(t.applicationId), {
+  } = e, x = (0, b.Z)(t.applicationId).length > 0, _ = s.default.getCurrentUser(), I = (null == _ ? true : _.id) === n, P = !d && I, w = (0, u.kO)(t.applicationId), {
     isDragging: S
   } = (0, o.f)(e => ({
     isDragging: e.isDragging()
@@ -91,8 +84,8 @@ function O(e) {
       gameName: t.gameName,
       applicationId: t.applicationId,
       userId: n,
-      disableInteraction: u,
-      className: l()(x ? y.socialProofBackdrop : true, (null == t ? true : t.imageSrc) == null || u ? true : v.hoverActiveEffect),
+      disableInteraction: d,
+      className: l()(x ? y.socialProofBackdrop : true, (null == t ? true : t.imageSrc) == null || d ? true : v.hoverActiveEffect),
       hideTooltip: S,
       coverRef: O
     }), P && (0, r.jsx)(p.Z, {
@@ -101,7 +94,7 @@ function O(e) {
       className: y.removeGameButton,
       iconSize: "xs",
       onRemove: () => null == h ? true : h(t.applicationId)
-    }), !u && (0, r.jsx)(m.Z, {
+    }), !d && (0, r.jsx)(m.Z, {
       className: y.socialProof,
       applicationId: t.applicationId,
       guildId: a,

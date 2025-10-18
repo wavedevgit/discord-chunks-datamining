@@ -1,7 +1,7 @@
 /** Chunk was on 22325 **/
 /** chunk id: 683881, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => d
+  Z: () => f
 });
 var Chunk951288 = require("./951288.js"),
   Chunk79116 = require("./79116.js"),
@@ -9,48 +9,77 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk594174 = require("./594174.js"),
   Chunk817053 = require("./817053.jsx"),
+  Chunk623132 = require("./623132.jsx"),
   Chunk778414 = require("./778414.jsx"),
   Chunk707804 = require("./707804.js");
 
-function d(e) {
+function f(e) {
   var t;
   let {
     scrollerRef: n
   } = e, {
-    isDragging: d,
-    item: f,
-    sourceClientOffset: g
+    isDragging: f,
+    item: g,
+    sourceClientOffset: p
   } = (0, i.f)(e => ({
     isDragging: e.isDragging(),
     item: e.getItem(),
     sourceClientOffset: e.getSourceClientOffset()
-  })), p = (0, a.e7)([o.default], () => o.default.getCurrentUser()), m = (0, l.zPA)();
-  if (true !== d || null == g || null == f) return null;
-  let b = null == n || null == (t = n.current) ? true : t.getBoundingClientRect();
-  if (null == b || null == p) return null;
-  let h = (null == f ? true : f.type) === "WIDGET" && null != f.widget ? (0, r.jsx)("div", {
-    className: u.widgetPreview,
-    children: (0, r.jsx)(s.Z, {
-      widget: f.widget,
-      user: p,
-      disableInteraction: true
-    })
-  }) : (null == f ? true : f.itemType) === "GAME_COVER" && null != f.id ? (0, r.jsx)(c.Z, {
-    className: u.gamePreview,
-    imageSrc: f.imageSrc,
-    gameName: f.gameName,
-    applicationId: f.id,
-    userId: null == p ? true : p.id,
-    disableInteraction: true
-  }) : null;
-  if (null == h) return null;
-  let v = g.x - b.left - 60 * !!m,
-    y = g.y - b.top;
+  })), m = (0, a.e7)([o.default], () => o.default.getCurrentUser()), b = (0, l.zPA)();
+  if (true !== f || null == p || null == g) return null;
+  let h = null == n || null == (t = n.current) ? true : t.getBoundingClientRect();
+  if (null == h || null == m) return null;
+  let v = function(e, t) {
+    let {
+      id: n,
+      itemType: i,
+      itemPreviewProps: a
+    } = e;
+    if ("WIDGET" === i && (null == a ? true : a.widget) != null) return (0, r.jsx)("div", {
+      className: d.widgetPreview,
+      children: (0, r.jsx)(u.Z, {
+        widget: a.widget,
+        user: t,
+        disableInteraction: true
+      })
+    });
+    if ("GAME_COVER" === i && (null == a ? true : a.imageSrc) != null && (null == a ? true : a.gameName) != null) {
+      let {
+        imageSrc: e,
+        gameName: i
+      } = a;
+      return (0, r.jsx)(s.Z, {
+        className: d.gamePreview,
+        imageSrc: e,
+        gameName: i,
+        applicationId: n,
+        userId: null == t ? true : t.id,
+        disableInteraction: true
+      })
+    }
+    if ("GAME_DETAILS_CARD" === i && (null == a ? true : a.game) != null && (null == a ? true : a.widgetType) != null) {
+      let {
+        game: e,
+        widgetType: n
+      } = a;
+      return (0, r.jsx)(c.Z, {
+        className: d.gameDetailsCardPreview,
+        user: t,
+        widgetType: n,
+        game: e,
+        disableInteraction: true
+      })
+    }
+    return null
+  }(g, m);
+  if (null == v) return null;
+  let y = p.x - h.left - 60 * !!b,
+    j = p.y - h.top;
   return (0, r.jsx)("div", {
-    className: u.container,
+    className: d.container,
     style: {
-      transform: "translate(".concat(v, "px, ").concat(y, "px)")
+      transform: "translate(".concat(y, "px, ").concat(j, "px)")
     },
-    children: h
+    children: v
   })
 }

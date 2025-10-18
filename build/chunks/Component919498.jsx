@@ -13,17 +13,17 @@ function o(e) {
     applicationId: t,
     guildId: n,
     channelId: o,
-    className: c,
-    visuallyHideLabel: s
+    className: s,
+    visuallyHideLabel: c
   } = e, u = (0, a.Z)(t);
   return u.length > 0 ? (0, r.jsx)(i.Z, {
     label: l.intl.formatToPlainString(l.t.ujhJdH, {
       numFriends: u.length
     }),
-    className: c,
+    className: s,
     users: u,
     guildId: n,
     channelId: o,
-    visuallyHideLabel: s
+    visuallyHideLabel: c
   }) : null
 }

@@ -24,7 +24,7 @@ function g(e) {
   } = (0, o.KZ)(), {
     mutualGuilds: p,
     isFetching: m
-  } = (0, c.Z)(t);
+  } = (0, s.Z)(t);
   return (0, r.jsx)(d.F, {
     className: f.scroller,
     fade: true,
@@ -44,7 +44,7 @@ function g(e) {
         guild: a,
         nick: o
       } = e;
-      return (0, r.jsx)(s.Z, {
+      return (0, r.jsx)(c.Z, {
         user: t,
         guild: a,
         nick: o,

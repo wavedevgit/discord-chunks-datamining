@@ -4,6 +4,8 @@ module.exports = {
   "text-sm/normal": "text-sm/normal_e1364f",
   card: "card_e1364f",
   removeGameButton: "removeGameButton_e1364f",
+  dragHandle: "dragHandle_e1364f",
+  isDragging: "isDragging_e1364f",
   clickableText: "clickableText_e1364f",
   details: "details_e1364f",
   commentIcon: "commentIcon_e1364f",
@@ -12,5 +14,9 @@ module.exports = {
   textAreaContainer: "textAreaContainer_e1364f text-sm/normal_e1364f",
   editableCommentContainer: "editableCommentContainer_e1364f",
   editableCommentText: "editableCommentText_e1364f",
-  placeholder: "placeholder_e1364f"
+  placeholder: "placeholder_e1364f",
+  dropTarget: "dropTarget_e1364f",
+  dropIndicatorAfter: "dropIndicatorAfter_e1364f",
+  dropIndicatorBefore: "dropIndicatorBefore_e1364f",
+  dragHandleContainer: "dragHandleContainer_e1364f"
 }

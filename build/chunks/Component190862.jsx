@@ -83,11 +83,11 @@ let y = e => {
       user: n,
       disableInteraction: i
     } = e, d = v(e, ["widget", "user", "disableInteraction"]);
-    let f = (0, c.FX)(t),
+    let f = (0, s.FX)(t),
       {
         shouldShowSuggestions: g,
         handleDismissSuggestions: p
-      } = (0, s.h)(f),
+      } = (0, c.h)(f),
       j = (0, a.e7)([l.default], () => l.default.getId() === n.id),
       O = j && !i && g,
       x = (0, o.mR)(f),

@@ -53,26 +53,26 @@ function w(e) {
   } = (0, p.Z)({
     userId: t.id,
     guildId: S
-  }), G = (0, i.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t.id)), B = t.id === n.id, M = (0, i.e7)([u.Z, s.Z], () => {
-    let e = B ? u.Z.getStatus() : s.Z.getStatus(t.id);
+  }), G = (0, i.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t.id)), B = t.id === n.id, M = (0, i.e7)([u.Z, c.Z], () => {
+    let e = B ? u.Z.getStatus() : c.Z.getStatus(t.id);
     return e === a.Skl.OFFLINE || e === a.Skl.INVISIBLE
-  }), F = A.length > 0 || null != Z, U = N && null == Z && null == L && null != R, W = !M && (F || U), H = k.length > 0;
-  if (!W && !H && G) return (0, r.jsx)("div", {
+  }), F = A.length > 0 || null != Z, W = N && null == Z && null == L && null != R, U = !M && (F || W), H = k.length > 0;
+  if (!U && !H && G) return (0, r.jsx)("div", {
     className: P.cards,
     children: Array.from({
       length: 8
     }).map((e, t) => (0, r.jsxs)("div", {
       className: P.loadingItem,
-      children: [(0, r.jsx)(c.ZT, {
+      children: [(0, r.jsx)(s.ZT, {
         width: 60,
         opacity: .08
-      }), (0, r.jsx)(c.ZT, {
+      }), (0, r.jsx)(s.ZT, {
         width: 135,
         opacity: .08
       })]
     }, t))
   });
-  if (!W && !H && !G) {
+  if (!U && !H && !G) {
     var z;
     return B ? (0, r.jsx)(y.Uf, {
       onClose: C
@@ -86,11 +86,11 @@ function w(e) {
   return (0, r.jsxs)(O.F, {
     className: P.scroller,
     fade: true,
-    children: [W ? (0, r.jsx)(j.Z, {
+    children: [U ? (0, r.jsx)(j.Z, {
       heading: I.intl.string(I.t.J6STd3),
       children: (0, r.jsxs)("ul", {
         className: P.cards,
-        children: [!D && U && (0, r.jsx)("li", {
+        children: [!D && W && (0, r.jsx)("li", {
           children: (0, r.jsx)(v.Z, {
             user: t,
             currentUser: n,
@@ -111,7 +111,7 @@ function w(e) {
             activity: e,
             onClose: C
           })
-        }, "live-".concat(i))), D && U && (0, r.jsx)("li", {
+        }, "live-".concat(i))), D && W && (0, r.jsx)("li", {
           children: (0, r.jsx)(v.Z, {
             user: t,
             currentUser: n,

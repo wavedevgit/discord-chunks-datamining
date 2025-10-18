@@ -43,7 +43,7 @@ function p(e) {
     role: "img",
     "aria-label": o,
     className: f.fallback,
-    children: (0, r.jsx)(c.Text, {
+    children: (0, r.jsx)(s.Text, {
       variant: "text-xxs/medium",
       lineClamp: 3,
       "aria-hidden": true,
@@ -70,7 +70,7 @@ function m(e) {
   } = e, h = (0, u.Z)({
     location: "GameCover",
     applicationId: i,
-    source: s.m1.UserProfile,
+    source: c.m1.UserProfile,
     sourceUserId: a,
     trackEntryPointImpression: true
   }), v = null != n ? n : d.intl.string(d.t.GIWFlJ), y = d.intl.formatToPlainString(d.t["8QLQBw"], {
@@ -79,7 +79,7 @@ function m(e) {
     text: v,
     children: e
   });
-  return j(null == h ? (0, r.jsx)(c.tEY, {
+  return j(null == h ? (0, r.jsx)(s.tEY, {
     children: (0, r.jsx)("div", {
       ref: b,
       className: g,
@@ -89,7 +89,7 @@ function m(e) {
         gameName: n
       })
     })
-  }) : (0, r.jsx)(c.P3F, {
+  }) : (0, r.jsx)(s.P3F, {
     innerRef: b,
     onClick: h,
     "aria-label": y,
@@ -108,7 +108,7 @@ function b(e) {
     className: i,
     disableInteraction: a = false,
     hideTooltip: o,
-    coverRef: s
+    coverRef: c
   } = e, u = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
@@ -125,9 +125,9 @@ function b(e) {
     return i
   }(e, ["applicationId", "userId", "className", "disableInteraction", "hideTooltip", "coverRef"]);
   let d = l()(f.coverContainer, i);
-  return a ? (0, r.jsx)(c.tEY, {
+  return a ? (0, r.jsx)(s.tEY, {
     children: (0, r.jsx)("div", {
-      ref: s,
+      ref: c,
       className: d,
       tabIndex: false,
       children: (0, r.jsx)(p, g({}, u))
@@ -137,6 +137,6 @@ function b(e) {
     applicationId: t,
     userId: n,
     hideTooltip: o,
-    coverRef: s
+    coverRef: c
   }, u))
 }

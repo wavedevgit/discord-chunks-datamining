@@ -3,8 +3,8 @@
 require.d(exports, {
   XV: () => o,
   aE: () => u,
-  kd: () => s,
-  zK: () => c
+  kd: () => c,
+  zK: () => s
 });
 var r, Chunk379405 = require("./379405.js"),
   Chunk481060 = require("./481060.js"),
@@ -67,11 +67,11 @@ let o = {
       icon: Chunk481060.iFz
     }
   },
-  c = e => {
+  s = e => {
     let t = o[e];
     return null != t ? t : null
   };
-var s = ((r = {}).RADIO = "radio", r.CHECKBOX = "checkbox", r);
+var c = ((r = {}).RADIO = "radio", r.CHECKBOX = "checkbox", r);
 let u = {
   skill_level: {
     getLabel: () => Chunk388032.intl.string(Chunk388032.t.MKqADA),

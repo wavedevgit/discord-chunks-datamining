@@ -20,7 +20,7 @@ function u(e) {
     index: f,
     disableInteraction: g = false,
     onReorder: p
-  } = e, m = (0, s.Z)(u), {
+  } = e, m = (0, c.Z)(u), {
     isDragging: b,
     currentItem: h
   } = (0, i.f)(e => ({
@@ -29,15 +29,16 @@ function u(e) {
   })), v = (0, r.useCallback)((e, t) => {
     let n = m.slice(),
       [r] = n.splice(e, 1);
-    n.splice(t, 0, r), c.Z.setPendingWidgets(n)
+    n.splice(t, 0, r), s.Z.setPendingWidgets(n)
   }, [m]), [, y, j] = (0, a.c)({
     type: "WIDGET",
     item: {
       widgetType: d.type,
       index: f,
-      widget: d,
-      originalIndex: null != f ? f : 0,
-      type: "WIDGET"
+      itemType: "WIDGET",
+      itemPreviewProps: {
+        widget: d
+      }
     },
     canDrag: () => !g,
     collect: e => ({
@@ -59,7 +60,7 @@ function u(e) {
     collect: e => {
       let t = null,
         n = e.getItem();
-      return null != n && e.isOver() && e.canDrop() && n.widgetType !== d.type && (t = n.originalIndex), {
+      return null != n && e.isOver() && e.canDrop() && n.widgetType !== d.type && (t = n.index), {
         handlerId: e.getHandlerId(),
         dragSourcePosition: t
       }

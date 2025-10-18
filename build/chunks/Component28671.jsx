@@ -24,7 +24,7 @@ function b(e) {
     onDismiss: b
   } = e, {
     trackUserProfileEditAction: h
-  } = (0, c.KZ)(), v = i.useMemo(() => new s.q({
+  } = (0, s.KZ)(), v = i.useMemo(() => new c.q({
     type: a.l.APPLICATION,
     applicationId: n.id
   }), [n.id]), y = i.useCallback(() => {

@@ -100,7 +100,7 @@ function F() {
   })
 }
 
-function U(e) {
+function W(e) {
   let {
     user: t
   } = e, {
@@ -111,13 +111,13 @@ function U(e) {
     location: "ApplicationWidgetUpsell"
   }), o = a.some(e => e instanceof h.q && e.applicationId === (null == n ? true : n.id));
   return null == n || !l || null == i || o ? null : (0, r.jsx)(f.ZP, {
-    contentTypes: [c.z.APPLICATION_WIDGET_EMPTY_STATE_CARD_ADD_WIDGET],
+    contentTypes: [s.z.APPLICATION_WIDGET_EMPTY_STATE_CARD_ADD_WIDGET],
     children: e => {
       let {
         visibleContent: i,
         markAsDismissed: a
       } = e;
-      return i === c.z.APPLICATION_WIDGET_EMPTY_STATE_CARD_ADD_WIDGET ? (0, r.jsx)(S.Z, {
+      return i === s.z.APPLICATION_WIDGET_EMPTY_STATE_CARD_ADD_WIDGET ? (0, r.jsx)(S.Z, {
         user: t,
         application: n,
         onDismiss: a
@@ -126,20 +126,20 @@ function U(e) {
   })
 }
 
-function W(e) {
+function U(e) {
   let {
     user: t,
     guildId: n,
     channelId: a
-  } = e, l = (0, P.Z)(t.id), c = (0, o.e7)([m.default], () => m.default.getId() === t.id), s = (() => {
+  } = e, l = (0, P.Z)(t.id), s = (0, o.e7)([m.default], () => m.default.getId() === t.id), c = (() => {
     let [e, t] = (0, o.Wu)([b.Z], () => [b.Z.ipCountryCode, b.Z.ipCountryCodeRequest]), n = (0, g.U)();
     return i.useEffect(() => {
       null == e && null == t && n && (0, u.GE)()
     }, [e, t, n]), "GB" === e && n
   })(), d = (0, y.k)({
     location: "UserProfileModalV2Widgets"
-  }), f = 0 === l.length && c, O = i.useMemo(() => l.filter(v.Wc), [l]), x = i.useMemo(() => l.filter(e => e instanceof h.q), [l]);
-  (0, I.ZP)(O), (0, j.J)(c, O);
+  }), f = 0 === l.length && s, O = i.useMemo(() => l.filter(v.Wc), [l]), x = i.useMemo(() => l.filter(e => e instanceof h.q), [l]);
+  (0, I.ZP)(O), (0, j.J)(s, O);
   var w = t.id;
   (0, _.s)(x);
   let {
@@ -150,7 +150,7 @@ function W(e) {
     null !== N.current && C()
   }, [C]);
   let A = () => (0, r.jsxs)(r.Fragment, {
-    children: [c && s && (0, r.jsx)(F, {}), c && (0, r.jsx)(U, {
+    children: [s && c && (0, r.jsx)(F, {}), s && (0, r.jsx)(W, {
       user: t
     }), l.map((e, i) => (0, r.jsx)(M, {
       widget: e,
@@ -158,12 +158,12 @@ function W(e) {
       guildId: n,
       channelId: a,
       index: i
-    }, e.type)), c && (0, r.jsx)(E.Z, {})]
+    }, e.type)), s && (0, r.jsx)(E.Z, {})]
   });
   if (f)
     if (d) return (0, r.jsx)(D.Z, {});
     else return (0, r.jsx)(Z.Z, {});
-  return c ? (0, r.jsx)(T.K, {
+  return s ? (0, r.jsx)(T.K, {
     children: A()
   }) : A()
 }
@@ -186,7 +186,7 @@ function H(e) {
     fade: true,
     children: [(0, r.jsx)(C.Z, {
       scrollerRef: a
-    }), (0, r.jsx)(W, G({
+    }), (0, r.jsx)(U, G({
       user: t
     }, n))]
   })

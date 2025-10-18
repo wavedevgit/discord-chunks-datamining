@@ -201,9 +201,9 @@ function Z(e) {
     case "TEXT":
       return (0, r.jsx)(F, C({}, t));
     case "TEXT_WITH_IMAGE":
-      return (0, r.jsx)(U, C({}, t));
-    case "SEPARATOR":
       return (0, r.jsx)(W, C({}, t));
+    case "SEPARATOR":
+      return (0, r.jsx)(U, C({}, t));
     case "SOCIAL_PROOF":
       return (0, r.jsx)(H, {})
   }
@@ -230,7 +230,7 @@ function G(e) {
     className: T.heroSection,
     children: [(0, r.jsxs)("div", {
       className: T.heroBody,
-      children: [(0, r.jsx)(s.Text, {
+      children: [(0, r.jsx)(c.Text, {
         variant: "text-lg/medium",
         className: T.heroTitle,
         children: null != t ? t : (0, r.jsx)("div", {
@@ -296,7 +296,7 @@ function F(e) {
   })
 }
 
-function U(e) {
+function W(e) {
   let {
     content: t,
     image: n,
@@ -321,7 +321,7 @@ function U(e) {
   })
 }
 
-function W(e) {
+function U(e) {
   let {
     size: t = "small",
     divider: n = false
@@ -342,7 +342,7 @@ function H() {
     }(),
     {
       game: t
-    } = Y(module.widget);
+    } = q(module.widget);
   return null == exports ? null : (0, Chunk951288.jsx)(Chunk919498.Z, {
     className: Chunk18827.socialProof,
     applicationId: exports.id,
@@ -379,7 +379,7 @@ function K(e, t) {
 }
 let V = Chunk647438.createContext(null);
 
-function Y(e) {
+function q(e) {
   return (0, o.cj)([f.Z, P.Z, _.Z], () => {
     let t = f.Z.getApplication(e.applicationId);
     return {
@@ -390,7 +390,7 @@ function Y(e) {
   })
 }
 
-function q(e) {
+function Y(e) {
   let {
     children: t,
     widget: n
@@ -412,24 +412,24 @@ function q(e) {
 }
 
 function X(e) {
-  return (0, r.jsxs)(s.Kqy, {
+  return (0, r.jsxs)(c.Kqy, {
     direction: "horizontal",
     gap: 24,
     padding: 16,
     fullWidth: false,
     className: T.cta,
-    children: [(0, r.jsxs)(s.Kqy, {
+    children: [(0, r.jsxs)(c.Kqy, {
       gap: 4,
-      children: [(0, r.jsx)(s.Heading, {
+      children: [(0, r.jsx)(c.Heading, {
         variant: "heading-sm/medium",
         color: "text-default",
         children: e.heading
-      }), (0, r.jsx)(s.Text, {
+      }), (0, r.jsx)(c.Text, {
         variant: "text-xs/normal",
         color: "header-secondary",
         children: e.content
       })]
-    }), (0, r.jsx)(s.Kqy, {
+    }), (0, r.jsx)(c.Kqy, {
       direction: "horizontal",
       gap: 12,
       align: "center",
@@ -448,7 +448,7 @@ let Q = Object.assign(function(e) {
     application: o,
     game: u,
     config: f
-  } = Y(n), m = null == o ? true : o.getIconURL(16), b = (0, x.O)(t.id).data, h = null == b ? true : b.find(e => e.application_id === n.applicationId), v = (0, p.Z)({
+  } = q(n), m = null == o ? true : o.getIconURL(16), b = (0, x.O)(t.id).data, h = null == b ? true : b.find(e => e.application_id === n.applicationId), v = (0, p.Z)({
     location: "UserProfileApplicationWidget",
     applicationId: null == u ? true : u.id,
     source: g.m1.UserProfile,
@@ -468,7 +468,7 @@ let Q = Object.assign(function(e) {
       alt: ""
     }) : (0, r.jsx)("span", {
       className: T.appIconPlaceholder
-    }), (0, r.jsx)(s.Text, {
+    }), (0, r.jsx)(c.Text, {
       variant: "text-sm/medium",
       children: (null == o ? true : o.name) != null ? o.name : (0, r.jsx)("div", {
         className: T.textPlaceholder
@@ -477,10 +477,10 @@ let Q = Object.assign(function(e) {
   }), k = null == u ? (0, r.jsx)("div", {
     className: T.header,
     children: D
-  }) : (0, r.jsx)(c.u, {
+  }) : (0, r.jsx)(s.u, {
     asContainer: true,
     text: E.intl.string(E.t.ajHoOj),
-    children: (0, r.jsx)(s.P3F, {
+    children: (0, r.jsx)(c.P3F, {
       className: l()(T.header, T.headerClickable),
       onClick: v,
       "aria-label": E.intl.string(E.t.ajHoOj),
@@ -548,15 +548,15 @@ let Q = Object.assign(function(e) {
     widget: n,
     className: T.widgetContainer,
     headerTitle: k,
-    dragHandleAdditionalMenuItems: null != u ? (0, r.jsx)(s.sNh, {
+    dragHandleAdditionalMenuItems: null != u ? (0, r.jsx)(c.sNh, {
       id: "view-game-profile",
       label: "View Game Profile",
-      icon: s.iWm,
+      icon: c.iWm,
       action: v
     }) : null,
     children: [(0, r.jsx)(V.Provider, {
       value: e,
-      children: (0, r.jsx)(q, {
+      children: (0, r.jsx)(Y, {
         widget: n,
         children: (0, r.jsx)(Z, {
           component: R
@@ -566,9 +566,9 @@ let Q = Object.assign(function(e) {
       className: T.footer,
       children: [null != h || S ? null : (0, r.jsxs)("div", {
         className: T.stillSyncing,
-        children: [(0, r.jsx)(s.wGF, {
+        children: [(0, r.jsx)(c.wGF, {
           size: "xxs"
-        }), (0, r.jsx)(s.Text, {
+        }), (0, r.jsx)(c.Text, {
           variant: "text-sm/medium",
           color: "text-secondary",
           children: E.intl.string(E.t.z5K4Ul)
@@ -576,7 +576,7 @@ let Q = Object.assign(function(e) {
       }), S ? (0, r.jsx)(X, {
         heading: E.intl.string(E.t.UDPRLC),
         content: E.intl.string(E.t["OW/2am"]),
-        buttons: (0, r.jsx)(s.Button, {
+        buttons: (0, r.jsx)(c.Button, {
           text: E.intl.string(E.t.S0W8Z2),
           onClick: P
         })

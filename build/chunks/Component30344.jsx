@@ -55,25 +55,12 @@ function d(e) {
   } = (0, l.C)();
   return (0, r.jsx)(o.Z, {
     games: t,
-    renderGame: (e, t) => {
-      var l, o;
-      return (0, r.jsx)(c.S, (l = u({
-        game: e,
-        coverRef: i(e.applicationId),
-        onRemoveGame: a
-      }, n), o = o = {
-        index: t
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
-        var n = Object.keys(e);
-        if (Object.getOwnPropertySymbols) {
-          var r = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, r)
-        }
-        return n
-      })(Object(o)).forEach(function(e) {
-        Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(o, e))
-      }), l), e.applicationId)
-    }
+    renderGame: (e, t) => (0, r.jsx)(s.S, u({
+      index: t,
+      game: e,
+      coverRef: i(e.applicationId),
+      onRemoveGame: a
+    }, n))
   })
 }
 
@@ -82,10 +69,10 @@ function f(e) {
     userId: t,
     widgetType: n,
     disableInteraction: o
-  } = e, c = (0, i.e7)([a.default], () => a.default.getId() === t), {
+  } = e, s = (0, i.e7)([a.default], () => a.default.getId() === t), {
     getManageButtonForWidget: f
-  } = (0, s.j)(), g = f(n);
-  return c && !o ? (0, r.jsx)(l.d, {
+  } = (0, c.j)(), g = f(n);
+  return s && !o ? (0, r.jsx)(l.d, {
     emptyListFallbackRef: g,
     children: (0, r.jsx)(d, u({}, e))
   }) : (0, r.jsx)(d, u({}, e))

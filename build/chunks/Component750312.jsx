@@ -33,7 +33,7 @@ function y(e) {
     headerSubtitle: I,
     headerActionButtons: P,
     dragHandleAdditionalMenuItems: w
-  } = e, S = (0, s.Dt)(), E = (0, c.e7)([u.default], () => u.default.getId() === t), T = i.useRef(null), {
+  } = e, S = (0, c.Dt)(), E = (0, s.e7)([u.default], () => u.default.getId() === t), T = i.useRef(null), {
     registerManageWidgetButtonRef: C,
     manageFocusOnReorder: N
   } = (0, b.j)(), D = i.useRef(null);
@@ -99,9 +99,9 @@ let j = e => {
     disableInteraction: i,
     onMouseEnter: a,
     onMouseLeave: o,
-    dragSourcePosition: c,
-    index: s
-  } = e, u = null != c, d = u && s < c, f = u && s > c;
+    dragSourcePosition: s,
+    index: c
+  } = e, u = null != s, d = u && c < s, f = u && c > s;
   return i ? n : (0, r.jsx)("div", {
     ref: t,
     className: l()(v.dragAndDropHitbox, {
@@ -111,7 +111,7 @@ let j = e => {
     onMouseEnter: a,
     onMouseLeave: o,
     "aria-label": h.intl.formatToPlainString(h.t.YLczh4, {
-      positionNumber: s + 1
+      positionNumber: c + 1
     }),
     children: n
   })
