@@ -81,13 +81,13 @@ function q(e) {
     focused: k,
     wrapperClassName: B,
     paused: q = false
-  } = e, Y = Z.Z.getVideoComponent(), z = (0, o.e7)([w.default], () => w.default.getId()), K = (0, E.Z)(), {
+  } = e, Y = Z.Z.getVideoComponent(), z = (0, o.e7)([w.default], () => w.default.getId()), K = (0, b.Z)(), {
     stream: G,
     user: Q,
     streamId: X
   } = t, J = (0, o.e7)([j.Z], () => j.Z.getChannel(G.channelId)), $ = (0, o.e7)([C.Z], () => C.Z.getActiveStreamForUser(Q.id, G.guildId), [Q.id, G.guildId]), {
     defaultWatchMultipleStreams: ee
-  } = (0, b.P)({
+  } = (0, E.P)({
     location: "StreamTile"
   }), et = (0, o.e7)([C.Z], () => C.Z.getAllActiveStreams().length > 0), en = (0, o.e7)([P.Z], () => P.Z.isFocused()), er = (null == $ ? true : $.ownerId) === z, ei = er && !en && !m, el = null != $ ? (0, v.Z)($, Q, Q.id === z, ei) : null, ea = M < 195;
   (0, f.ZP)(() => {

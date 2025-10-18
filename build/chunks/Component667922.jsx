@@ -1,7 +1,7 @@
 /** Chunk was on 37220 **/
 /** chunk id: 667922, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => S
+  Z: () => E
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk576311 = require("./576311.js");
 
-function S(e, t) {
+function E(e, t) {
   let {
     reducedMotion: n
   } = i.useContext(s.Sfi), l = (0, f.$R)(t), a = (0, o.e7)([b.Z], () => (t.isPrivate() || b.Z.can(m.Plq.ADD_REACTIONS, t)) && l, [t, l]), p = (0, c.MZ)(t.getGuildId());
@@ -40,7 +40,7 @@ function S(e, t) {
       label: ":".concat(i.name, ":"),
       icon: e => {
         var t, l;
-        return (0, r.jsx)(E, (t = function(e) {
+        return (0, r.jsx)(S, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -102,7 +102,7 @@ function S(e, t) {
   })
 }
 
-function E(e) {
+function S(e) {
   var t;
   let {
     emoji: n,

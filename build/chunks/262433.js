@@ -2,7 +2,7 @@
 /** chunk id: 262433, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   U: () => m,
-  Z: () => E
+  Z: () => b
 }), require("./539854.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -37,12 +37,12 @@ function g(e, t) {
   i()(null != (n = m.getState().particles[e.id]) ? n : {}).forEach(t)
 }
 
-function E(e) {
+function b(e) {
   var t, n, r;
   let {
     emojiHose: a,
-    context: E,
-    canvasWidth: b,
+    context: b,
+    canvasWidth: E,
     canvasHeight: v,
     fallbackColor: h,
     outlineColorDark: S,
@@ -50,9 +50,9 @@ function E(e) {
     streamerId: O,
     deadDrawables: I
   } = e;
-  E.save();
+  b.save();
   let C = s.Z.getEmojiImage(null != (n = null != (t = a.emojiId) ? t : a.emojiName) ? n : ""),
-    w = (0, d.np)(a.x, b),
+    w = (0, d.np)(a.x, E),
     j = (0, d.np)(a.y, v),
     {
       outlineColor: Z
@@ -87,11 +87,11 @@ function E(e) {
           return r.particles[e.id] = o, r.lastSpawned[e.id] = Date.now(), r
         })
       })
-    }(a, w, j), (0, f.I)(E, w, j, Z, p.q2), (0, f.T)(E, w, j, a.userId), g(a, e => (function(e, t, n) {
+    }(a, w, j), (0, f.I)(b, w, j, Z, p.q2), (0, f.T)(b, w, j, a.userId), g(a, e => (function(e, t, n) {
       if (null == t) return;
       let r = n.size * window.devicePixelRatio,
         i = n.x - r / 2 * window.devicePixelRatio,
         l = n.y - 1.2 * r * window.devicePixelRatio;
       e.globalAlpha = n.opacity, e.drawImage(t, r / 2 + i, r / 2 + l, r, r)
-    })(E, C, e)), a.lastUpdatedAt + p.FO < Date.now() && (0, c.ZZ)(O, a), a.state !== u.f.STOP || Object.keys(null != (r = m.getState().particles[a.id]) ? r : {}).length > 0 || I.push(a), E.restore()
+    })(b, C, e)), a.lastUpdatedAt + p.FO < Date.now() && (0, c.ZZ)(O, a), a.state !== u.f.STOP || Object.keys(null != (r = m.getState().particles[a.id]) ? r : {}).length > 0 || I.push(a), b.restore()
 }

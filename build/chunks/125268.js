@@ -5,7 +5,7 @@ require.d(exports, {
   BR: () => d,
   Bo: () => g,
   Df: () => f,
-  LT: () => E,
+  LT: () => b,
   ZZ: () => p,
   cV: () => u,
   fW: () => m,
@@ -101,7 +101,7 @@ function g(e) {
   })
 }
 
-function E() {
+function b() {
   Chunk570140.Z.dispatch({
     type: "TOGGLE_OVERLAY_CANVAS"
   })

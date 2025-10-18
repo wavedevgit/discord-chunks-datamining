@@ -13,17 +13,17 @@ function c(e) {
   let {
     currentUserId: t,
     participant: n
-  } = e, c = (0, l.Z)(n.type), [s, u] = i.useState(), [d, f] = i.useState(), [p, _] = i.useState(), m = n.id.split(":").at(false), g = t === m, E = i.useCallback((e, t, n) => {
+  } = e, c = (0, l.Z)(n.type), [s, u] = i.useState(), [d, f] = i.useState(), [p, _] = i.useState(), m = n.id.split(":").at(false), g = t === m, b = i.useCallback((e, t, n) => {
     var r, i, l;
     let o = n ? a.ZP.getOutboundStats(t) : a.ZP.getInboundStats(e, t);
     u(null != (r = null == o ? true : o.codec) ? r : "unknown"), f(true === (i = null == o ? true : o.resolution) || 0 === i.width && 0 === i.height ? "unknown" : i.width + " x " + i.height), _((null == o ? true : o.bitrateEstimate) !== true ? (l = o.bitrateEstimate, "".concat((l / 1e3).toFixed(2), " Kbps")) : "unknown")
   }, []);
   return i.useEffect(() => {
-    let e = () => E(m, c, g);
+    let e = () => b(m, c, g);
     e();
     let t = setInterval(e, 1e3);
     return () => clearInterval(t)
-  }, [g, m, c, E]), (0, r.jsxs)("div", {
+  }, [g, m, c, b]), (0, r.jsxs)("div", {
     className: o.streamInfoContainer,
     children: [(0, r.jsx)("div", {
       children: (0, r.jsx)("strong", {

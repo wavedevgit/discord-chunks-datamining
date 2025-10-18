@@ -81,26 +81,26 @@ class T extends Chunk647438.PureComponent {
       disableReactionUpdates: n,
       isLurking: i,
       isGuest: a,
-      isPendingMember: g,
-      isForumToolbar: E,
-      channel: b,
-      className: y,
-      forceAddReactions: O,
-      reactionClassName: v,
-      useChatFontScaling: I,
-      forceHideReactionCreates: T,
-      remainingReactions: S,
-      combinedReactions: A,
-      visibleReactionsCount: C
+      isPendingMember: c,
+      isForumToolbar: g,
+      channel: E,
+      className: b,
+      forceAddReactions: y,
+      reactionClassName: O,
+      useChatFontScaling: v,
+      forceHideReactionCreates: I,
+      remainingReactions: T,
+      combinedReactions: S,
+      visibleReactionsCount: A
     } = this.props, {
-      disableTransitionAppear: N
-    } = this.state, R = I ? Chunk893973 : Chunk127947, P = C > 0;
-    if (!P && !O) return null;
-    let w = O || P;
+      disableTransitionAppear: C
+    } = this.state, N = v ? Chunk893973 : Chunk127947, R = A > 0;
+    if (!R && !y) return null;
+    let P = y || R;
     return (0, Chunk951288.jsxs)(Chunk215569.W, {
       component: "div",
-      className: o()(R.reactions, y),
-      transitionAppear: !N,
+      className: o()(N.reactions, b),
+      transitionAppear: !C,
       role: "group",
       transitionLeave: false,
       id: (0, Chunk453687.bY)(module),
@@ -111,35 +111,34 @@ class T extends Chunk647438.PureComponent {
         isHovered: false
       }),
       children: [(0, Chunk951288.jsx)(Chunk434624.l, {
-        reactions: A,
+        reactions: S,
         message: module,
         readOnly: require,
         isLurking: Chunk647438,
         isGuest: Chunk120356,
-        isPendingMember: g,
-        isForumToolbar: E,
-        useChatFontScaling: I,
-        className: v
-      }), S > 0 && (0, Chunk951288.jsx)(Chunk481060.P3F, {
+        isPendingMember: Chunk566006,
+        isForumToolbar: g,
+        useChatFontScaling: v,
+        className: O
+      }), T > 0 && (0, Chunk951288.jsx)(Chunk481060.P3F, {
         onClick: t => {
-          t.stopPropagation(), (0, _.op)(b, e)
+          t.stopPropagation(), (0, _.op)(E, e)
         },
-        className: o()(R.reaction, v, R.remainingReactions),
+        className: o()(N.reaction, O, N.remainingReactions),
         "aria-label": Chunk388032.intl.string(Chunk388032.t.lfIHs7),
         children: (0, Chunk951288.jsxs)(Chunk481060.Text, {
-          className: R.reactionInner,
+          className: N.reactionInner,
           variant: "text-sm/normal",
-          children: ["+", S]
+          children: ["+", T]
         })
-      }), !exports && !T && (0, Chunk951288.jsx)(Chunk60174.X, {
-        tabIndex: w || this.state.isHovered ? 0 : false,
-        type: Chunk566006.O.NORMAL,
+      }), !exports && !I && (0, Chunk951288.jsx)(Chunk60174.X, {
+        tabIndex: P || this.state.isHovered ? 0 : false,
         message: module,
-        channel: b,
-        useChatFontScaling: I,
+        channel: E,
+        useChatFontScaling: v,
         isHovered: this.state.isHovered,
         className: o()({
-          [R.forceShow]: w
+          [N.forceShow]: P
         })
       })]
     })

@@ -176,7 +176,6 @@ function F(e) {
           isForumToolbar: true,
           forceHideReactionCreates: true
         }), !J && (0, i.jsx)(y.X, {
-          type: b.O.NORMAL,
           message: Y,
           channel: K,
           useChatFontScaling: false,
