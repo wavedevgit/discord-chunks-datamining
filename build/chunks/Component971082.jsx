@@ -7,9 +7,9 @@ var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
+  Chunk36563 = require("./36563.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk313201 = require("./313201.js"),
-  Chunk318374 = require("./318374.jsx"),
   Chunk245583 = require("./245583.js");
 
 function u(e) {
@@ -17,7 +17,7 @@ function u(e) {
     label: t,
     visuallyHideLabel: n = false,
     className: i,
-    size: u = l.EFr.SIZE_16,
+    size: u = o.EFr.SIZE_16,
     maxUsers: d = 4
   } = e, f = function(e, t) {
     if (null == e) return {};
@@ -34,10 +34,10 @@ function u(e) {
     }
     return i
   }(e, ["label", "visuallyHideLabel", "className", "size", "maxUsers"]);
-  let g = (0, o.Dt)();
+  let g = (0, s.Dt)();
   return (0, r.jsxs)("div", {
     className: a()(i, c.container),
-    children: [(0, r.jsx)(s.Z, function(e) {
+    children: [(0, r.jsx)(l.Z, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -59,10 +59,10 @@ function u(e) {
       overflowCountClassName: c.overflowButton,
       size: u,
       maxUsers: d
-    }, f)), n ? (0, r.jsx)(l.nn4, {
+    }, f)), n ? (0, r.jsx)(o.nn4, {
       id: g,
       children: t
-    }) : (0, r.jsx)(l.Text, {
+    }) : (0, r.jsx)(o.Text, {
       variant: "text-xs/normal",
       color: "text-secondary",
       id: g,

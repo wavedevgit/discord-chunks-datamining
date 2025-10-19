@@ -8,11 +8,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
+  Chunk36563 = require("./36563.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk933557 = require("./933557.js"),
   Chunk471445 = require("./471445.js"),
   Chunk686546 = require("./686546.jsx"),
-  Chunk318374 = require("./318374.jsx"),
   Chunk305347 = require("./305347.jsx"),
   Chunk473403 = require("./473403.jsx"),
   Chunk99214 = require("./99214.js"),
@@ -62,9 +62,9 @@ let P = e => [e.userId, ... function(e) {
     let {
       channel: t,
       query: n
-    } = e, [l] = (0, a.e7)([C.Z], () => [C.Z.getVoiceStatesForChannel(t.id), C.Z.getVoiceStateVersion()], [t.id], N.Q), [o, u] = r.useState([]);
-    (0, O.BO)(n, Object.values(l), u, D);
-    let c = (0, a.Wu)([C.Z, I.default, E.Z, j.Z], () => Object.values(C.Z.getVoiceStatesForChannel(t.id)).map(e => I.default.getUser(e.userId)).filter(Z.lm).sort((e, t) => {
+    } = e, [l] = (0, a.e7)([C.Z], () => [C.Z.getVoiceStatesForChannel(t.id), C.Z.getVoiceStateVersion()], [t.id], N.Q), [o, c] = r.useState([]);
+    (0, O.BO)(n, Object.values(l), c, D);
+    let d = (0, a.Wu)([C.Z, I.default, E.Z, j.Z], () => Object.values(C.Z.getVoiceStatesForChannel(t.id)).map(e => I.default.getUser(e.userId)).filter(Z.lm).sort((e, t) => {
         var i, r, l, a;
         if (o.length > 0 && "" !== n.trim()) {
           if (o.some(t => t.userId === e.id)) return false;
@@ -72,13 +72,13 @@ let P = e => [e.userId, ... function(e) {
         }
         return j.Z.isFriend(e.id) && !j.Z.isFriend(t.id) ? false : !j.Z.isFriend(e.id) && j.Z.isFriend(t.id) ? 1 : (null != (l = null == (i = E.Z.getUserAffinity(t.id)) ? true : i.vcProbability) ? l : 0) - (null != (a = null == (r = E.Z.getUserAffinity(e.id)) ? true : r.vcProbability) ? a : 0)
       }), [t.id, o, n]),
-      d = t.getGuildId(),
+      p = t.getGuildId(),
       h = Math.max(o.length, 2);
-    return null == d ? null : (0, i.jsx)(p.Z, {
-      users: c,
-      guildId: d,
+    return null == p ? null : (0, i.jsx)(s.Z, {
+      users: d,
+      guildId: p,
       maxUsers: Math.min(h, 4),
-      size: s.EFr.SIZE_24,
+      size: u.EFr.SIZE_24,
       overflowCountClassName: _.overflowCount,
       overflowCountVariant: "text-xs/semibold",
       disableUserPopout: true,
@@ -94,18 +94,18 @@ let P = e => [e.userId, ... function(e) {
       case w.d4z.DM:
         return (0, i.jsx)(f.je, {
           channel: n,
-          size: s.EFr.SIZE_32
+          size: u.EFr.SIZE_32
         });
       case w.d4z.GROUP_DM:
         return (0, i.jsx)(f.ge, {
           channel: n,
-          size: s.EFr.SIZE_32
+          size: u.EFr.SIZE_32
         });
       default:
         return null
     }
-    return (0, i.jsx)(d.ZP, {
-      mask: d.QS.CLAN_ICON,
+    return (0, i.jsx)(p.ZP, {
+      mask: p.QS.CLAN_ICON,
       width: 32,
       height: 32,
       children: (0, i.jsx)("div", {
@@ -125,15 +125,15 @@ let P = e => [e.userId, ... function(e) {
       channelId: n,
       isHighlighted: r,
       currentVoiceChannel: l,
-      onClick: d,
+      onClick: s,
       onMouseOver: p,
       onMouseLeave: h,
       query: f
-    } = e, m = (0, a.e7)([v.Z], () => v.Z.getChannel(n), [n]), g = null == m ? true : m.getGuildId(), y = (0, a.e7)([b.Z], () => b.Z.getGuild(g), [g]), O = (0, c.KS)(m, y), E = (null == l ? true : l.id) === n, S = E ? "text-feedback-positive" : r ? "interactive-active" : "text-muted", x = E ? s.TVs.colors.TEXT_FEEDBACK_POSITIVE : r ? s.TVs.colors.INTERACTIVE_ACTIVE : s.TVs.colors.ICON_MUTED;
-    return null == m ? null : (0, i.jsxs)(s.kL8, {
+    } = e, m = (0, a.e7)([v.Z], () => v.Z.getChannel(n), [n]), g = null == m ? true : m.getGuildId(), y = (0, a.e7)([b.Z], () => b.Z.getGuild(g), [g]), O = (0, d.KS)(m, y), E = (null == l ? true : l.id) === n, S = E ? "text-feedback-positive" : r ? "interactive-active" : "text-muted", x = E ? u.TVs.colors.TEXT_FEEDBACK_POSITIVE : r ? u.TVs.colors.INTERACTIVE_ACTIVE : u.TVs.colors.ICON_MUTED;
+    return null == m ? null : (0, i.jsxs)(u.kL8, {
       className: o()(_.channelItemContainer, r && _.channelItemHighlighted),
       "aria-label": m.name,
-      onClick: () => d(n),
+      onClick: () => s(n),
       onMouseOver: () => p(n),
       onMouseLeave: () => h(n),
       children: [(0, i.jsx)("div", {
@@ -149,13 +149,13 @@ let P = e => [e.userId, ... function(e) {
             color: x,
             size: "xs",
             className: _.channelIcon
-          }) : true, (0, i.jsx)(s.Text, {
+          }) : true, (0, i.jsx)(u.Text, {
             variant: E ? "text-sm/semibold" : "text-sm/medium",
             color: S,
             className: _.channelItemNameText,
-            children: (0, u.F6)(m, I.default, j.Z)
+            children: (0, c.F6)(m, I.default, j.Z)
           })]
-        }), (0, i.jsx)(s.Text, {
+        }), (0, i.jsx)(u.Text, {
           variant: E ? "text-xs/semibold" : "text-xs/medium",
           color: S,
           children: null != (t = null == y ? true : y.name) ? t : m.name
@@ -176,7 +176,7 @@ let P = e => [e.userId, ... function(e) {
     } = e;
     return (0, i.jsx)("div", {
       className: _.emptyChannelItem,
-      children: (0, i.jsx)(s.Text, {
+      children: (0, i.jsx)(u.Text, {
         variant: "text-md/normal",
         color: "text-primary",
         children: t
@@ -190,17 +190,17 @@ let P = e => [e.userId, ... function(e) {
       currentVoiceChannel: l,
       onSelect: o,
       hasQuery: a,
-      query: u,
+      query: s,
       scrollable: c = true
     } = e, [d, p] = r.useState(null), h = e => {
       p(e)
     }, f = () => {
       p(null)
-    }, m = c ? s.zJl : "div";
+    }, m = c ? u.zJl : "div";
     return (0, i.jsxs)("div", {
       children: [(0, i.jsx)("div", {
         className: _.recentChannelsMenuHeader,
-        children: (0, i.jsx)(s.Text, {
+        children: (0, i.jsx)(u.Text, {
           variant: "text-sm/semibold",
           color: "text-muted",
           children: t
@@ -218,7 +218,7 @@ let P = e => [e.userId, ... function(e) {
           },
           onMouseOver: h,
           onMouseLeave: f,
-          query: u
+          query: s
         }, e))]
       })]
     })
@@ -231,7 +231,7 @@ function z(e) {
     onSelect: r
   } = e, {
     recentVoiceChannelIds: l,
-    friendVoiceChannelIds: u
+    friendVoiceChannelIds: s
   } = function() {
     let e = function() {
         let e = (0, a.Wu)([I.default, j.Z, E.Z], () => j.Z.getFriendIDs().sort((e, t) => {
@@ -261,7 +261,7 @@ function z(e) {
       recentVoiceChannelIds: t
     }
   }();
-  return l.length > 0 || u.length > 0 ? (0, i.jsxs)(s.zJl, {
+  return l.length > 0 || s.length > 0 ? (0, i.jsxs)(u.zJl, {
     className: o()(_.channelList, _.channelListWrapper),
     children: [l.length > 0 && (0, i.jsx)(V, {
       sectionHeader: T.intl.string(T.t.lnk2NT),
@@ -271,9 +271,9 @@ function z(e) {
       currentVoiceChannel: n,
       onSelect: e => r(e, "recent channel"),
       scrollable: false
-    }), u.length > 0 && (0, i.jsx)(V, {
+    }), s.length > 0 && (0, i.jsx)(V, {
       sectionHeader: T.intl.string(T.t["0lvb9P"]),
-      channelIds: u.slice(0, 8),
+      channelIds: s.slice(0, 8),
       hasQuery: false,
       query: t,
       currentVoiceChannel: n,
@@ -294,7 +294,7 @@ function W(e) {
   let {
     currentVoiceChannel: l,
     onClose: o,
-    onSelect: u
+    onSelect: s
   } = e, c = (0, a.Wu)([b.Z, S.ZP, C.Z, j.Z, x.Z], () => b.Z.getGuildsArray().reduce((e, t) => [...e, ...S.ZP.getChannels(t.id)[S.Zb].filter(e => x.Z.can(w.Plq.VIEW_CHANNEL, e.channel) && x.Z.can(w.Plq.CONNECT, e.channel)).map(e => {
     let {
       channel: t
@@ -309,8 +309,8 @@ function W(e) {
       "Escape" === e.key && o()
     }, [o]),
     g = r.useCallback((e, t) => {
-      u(e, t), o()
-    }, [u, o]);
+      s(e, t), o()
+    }, [s, o]);
   r.useEffect(() => (document.addEventListener("keydown", m, true), () => {
     document.removeEventListener("keydown", m, true)
   }), [o, m]);
@@ -348,7 +348,7 @@ function W(e) {
   }, I), n = n = {
     children: [(0, i.jsx)("div", {
       className: _.searchBarContainer,
-      children: (0, i.jsx)(s.E1j, {
+      children: (0, i.jsx)(u.E1j, {
         autoFocus: true,
         query: d,
         placeholder: T.intl.string(T.t.UyA6SU),

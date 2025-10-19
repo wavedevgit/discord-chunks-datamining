@@ -11,9 +11,9 @@ var Chunk120356 = require("./120356.js"),
   Chunk913527 = require("./913527.js"),
   s = require.n(Chunk913527),
   Chunk442837 = require("./442837.js"),
+  Chunk36563 = require("./36563.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk835473 = require("./835473.js"),
-  Chunk318374 = require("./318374.jsx"),
   Chunk925329 = require("./925329.jsx"),
   Chunk594174 = require("./594174.js"),
   Chunk823379 = require("./823379.js"),
@@ -27,7 +27,7 @@ let g = function(e) {
     title: o,
     guildId: g,
     className: E
-  } = e, b = (0, u.q)(i), y = (0, l.Wu)([_.default], () => {
+  } = e, b = (0, d.q)(i), y = (0, l.Wu)([_.default], () => {
     var e;
     return null != (e = n.map(e => _.default.getUser(e)).filter(p.lm)) ? e : []
   }), O = null == b ? true : b.name, v = s()(t).fromNow();
@@ -37,20 +37,20 @@ let g = function(e) {
       game: b
     }), (0, r.jsxs)("div", {
       className: m.textSection,
-      children: [null != o && "" !== o ? (0, r.jsx)(c.Text, {
+      children: [null != o && "" !== o ? (0, r.jsx)(u.Text, {
         variant: "text-md/semibold",
         color: "interactive-active",
         children: o
-      }) : (0, r.jsx)(c.Text, {
+      }) : (0, r.jsx)(u.Text, {
         variant: "text-md/semibold",
         color: "text-muted",
         children: h.intl.string(h.t.Cyxddn)
-      }), (0, r.jsxs)(c.Text, {
+      }), (0, r.jsxs)(u.Text, {
         variant: "text-xs/medium",
         color: "text-muted",
         children: [null != O ? "".concat(O, " • ") : null, v]
       })]
-    }), null != y && y.length > 0 && (0, r.jsx)(d.Z, {
+    }), null != y && y.length > 0 && (0, r.jsx)(c.Z, {
       maxUsers: 4,
       users: y,
       guildId: g,

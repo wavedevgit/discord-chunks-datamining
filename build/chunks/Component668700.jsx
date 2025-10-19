@@ -8,12 +8,12 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk442837 = require("./442837.js"),
+  Chunk36563 = require("./36563.jsx"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk287734 = require("./287734.js"),
   Chunk933557 = require("./933557.js"),
   Chunk111028 = require("./111028.jsx"),
-  Chunk318374 = require("./318374.jsx"),
   Chunk565138 = require("./565138.jsx"),
   Chunk359110 = require("./359110.js"),
   Chunk769654 = require("./769654.js"),
@@ -37,7 +37,7 @@ function T(e) {
     onClose: A
   } = e, {
     themeType: C
-  } = (0, g.z)(), N = (0, h.Z)(T), R = (0, l.ZP)(T), {
+  } = (0, g.z)(), N = (0, h.Z)(T), R = (0, c.ZP)(T), {
     canViewChannel: P,
     canConnect: w
   } = (0, i.cj)([p.Z], () => ({
@@ -51,7 +51,7 @@ function T(e) {
           action: "OPEN_VOICE_GUILD"
         }), null == A || A()
       };
-      return (0, r.jsx)(a.u, {
+      return (0, r.jsx)(o.u, {
         asContainer: true,
         text: n.name,
         "aria-label": false,
@@ -64,27 +64,27 @@ function T(e) {
       })
     },
     L = () => {
-      if (!w) return (0, r.jsx)(o.Text, {
+      if (!w) return (0, r.jsx)(s.Text, {
         variant: "text-xs/normal",
         color: "text-secondary",
         lineClamp: 1,
-        children: (0, r.jsx)(c.Z, {
+        children: (0, r.jsx)(u.Z, {
           children: R
         })
       });
       let e = e => {
-        e.stopPropagation(), s.default.selectVoiceChannel(T.id), (0, f.Kh)(T.id), null == S || S({
+        e.stopPropagation(), l.default.selectVoiceChannel(T.id), (0, f.Kh)(T.id), null == S || S({
           action: "OPEN_VOICE_CHANNEL"
         }), null == A || A()
       };
-      return (0, r.jsx)(o.P3F, {
+      return (0, r.jsx)(s.P3F, {
         onClick: e,
         className: v.clickableText,
-        children: (0, r.jsx)(o.Text, {
+        children: (0, r.jsx)(s.Text, {
           variant: "text-xs/normal",
           color: "text-secondary",
           lineClamp: 1,
-          children: (0, r.jsx)(c.Z, {
+          children: (0, r.jsx)(u.Z, {
             children: R
           })
         })
@@ -96,23 +96,23 @@ function T(e) {
       className: v.voiceChannelDivider
     }), (0, r.jsxs)("div", {
       className: v.voiceChannel,
-      children: [D(), (0, r.jsx)(o.Fbu, {
+      children: [D(), (0, r.jsx)(s.Fbu, {
         size: "xxs",
-        color: o.TVs.colors.TEXT_SECONDARY
+        color: s.TVs.colors.TEXT_SECONDARY
       }), (0, r.jsxs)("div", {
         className: v.voiceChannelText,
         children: [(0, r.jsx)(E.Z, {
           channel: T,
           size: "xxs",
-          color: o.TVs.colors.TEXT_SECONDARY,
+          color: s.TVs.colors.TEXT_SECONDARY,
           className: v.voiceIcon
         }), L()]
-      }), (0, r.jsx)(u.Z, {
+      }), (0, r.jsx)(a.Z, {
         users: N,
         guildId: n.id,
         channelId: T.id,
         maxUsers: I,
-        size: o.EFr.SIZE_16,
+        size: s.EFr.SIZE_16,
         overflowCountColor: "text-secondary",
         overflowCountClassName: v.voiceChannelOverflowCount,
         onClickOverflow: e => {

@@ -8,8 +8,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
+  Chunk36563 = require("./36563.jsx"),
   Chunk481060 = require("./481060.js"),
-  Chunk318374 = require("./318374.jsx"),
   Chunk5192 = require("./5192.js"),
   Chunk192918 = require("./192918.js"),
   Chunk256139 = require("./256139.jsx"),
@@ -76,23 +76,23 @@ function y(e) {
         targetElementRef: m,
         participants: T,
         channel: n,
-        children: e => (0, r.jsx)(s.P3F, b(g({
+        children: e => (0, r.jsx)(l.P3F, b(g({
           innerRef: m,
           className: h.clickable
         }, e), {
-          children: (0, r.jsx)(l.Z, {
+          children: (0, r.jsx)(s.Z, {
             maxUsers: 3,
             users: y,
-            size: s.EFr.SIZE_20,
+            size: l.EFr.SIZE_20,
             hideOverflowCount: true,
             disableUsernameTooltip: true
           })
         }))
-      }), (0, r.jsx)(s.LZC, {
+      }), (0, r.jsx)(l.LZC, {
         size: 6,
         horizontal: true
       })]
-    }) : null, (0, r.jsx)(s.Heading, {
+    }) : null, (0, r.jsx)(l.Heading, {
       variant: "text-sm/semibold",
       color: "text-secondary",
       className: o()(h.truncatedText, h.usersHeader),
@@ -117,7 +117,7 @@ function y(e) {
           channel: n,
           children: t => (0, r.jsx)(d.Z, b(g({}, t), {
             tag: "span",
-            children: (0, r.jsx)(s.Text, {
+            children: (0, r.jsx)(l.Text, {
               ref: E,
               variant: "text-sm/semibold",
               color: "text-primary",

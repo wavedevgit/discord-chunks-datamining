@@ -8,10 +8,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
+  Chunk36563 = require("./36563.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk212819 = require("./212819.js"),
   Chunk938078 = require("./938078.js"),
-  Chunk318374 = require("./318374.jsx"),
   Chunk823385 = require("./823385.js"),
   Chunk601565 = require("./601565.js"),
   Chunk131704 = require("./131704.js"),
@@ -36,7 +36,7 @@ function E(e) {
     result: t,
     onSelectChannel: n
   } = e, i = (0, o.e7)([v.Z], () => v.Z.getGuild(t.record.guild_id)), l = (0, o.Wu)([y.ZP, b.default], () => y.ZP.getVoiceStatesForChannel(t.record).map(e => b.default.getUser(e.user.id)).filter(C.lm));
-  return (0, r.jsxs)(a.P3F, {
+  return (0, r.jsxs)(c.P3F, {
     className: I.channelResult,
     onClick: () => n(t.record.id),
     children: [(0, r.jsxs)("div", {
@@ -46,21 +46,21 @@ function E(e) {
         src: null != i ? (0, m.EB)(i, 32) : true,
         className: I.guildIcon
       }), (0, r.jsxs)("div", {
-        children: [(0, r.jsxs)(a.Text, {
+        children: [(0, r.jsxs)(c.Text, {
           className: I.channelName,
           variant: "text-md/medium",
           color: "interactive-normal",
-          children: [(0, r.jsx)(a.gj8, {
+          children: [(0, r.jsx)(c.gj8, {
             size: "xs",
             color: "currentColor"
           }), " ", t.record.name]
-        }), (0, r.jsx)(a.Text, {
+        }), (0, r.jsx)(c.Text, {
           variant: "text-xs/medium",
           color: "text-muted",
           children: null == i ? true : i.name
         })]
       })]
-    }), (0, r.jsx)(u.Z, {
+    }), (0, r.jsx)(a.Z, {
       users: l,
       maxUsers: 3,
       hideOverflowCount: true
@@ -74,7 +74,7 @@ function T(e) {
     className: n
   } = e, {
     search: l,
-    query: u,
+    query: a,
     results: m
   } = (0, p.Z)({
     searchOptions: {
@@ -101,28 +101,28 @@ function T(e) {
   }), T = i.useMemo(() => {
     let e = new Set(y.map(e => e.id)),
       t = new Set(b.map(e => e.id));
-    return [...b.toSorted((t, n) => e.has(t.id) && !e.has(n.id) ? false : e.has(n.id) && !e.has(t.id) ? 1 : 0).map(e => (0, d.Z)(e.id)).filter(C.lm), ...y.filter(e => !t.has(e.id)).map(e => (0, d.Z)(e.id)).filter(C.lm)]
-  }, [y, b]), A = "" !== u ? m : T;
+    return [...b.toSorted((t, n) => e.has(t.id) && !e.has(n.id) ? false : e.has(n.id) && !e.has(t.id) ? 1 : 0).map(e => (0, u.Z)(e.id)).filter(C.lm), ...y.filter(e => !t.has(e.id)).map(e => (0, u.Z)(e.id)).filter(C.lm)]
+  }, [y, b]), A = "" !== a ? m : T;
   return (0, r.jsxs)("div", {
     className: s()(I.root, n),
     children: [(0, r.jsx)("div", {
       className: I.searchBar,
-      children: (0, r.jsx)(a.E1j, {
+      children: (0, r.jsx)(c.E1j, {
         placeholder: Z.intl.string(Z.t["3jvv+/"]),
-        query: u,
+        query: a,
         onChange: e => l({
           query: e,
-          resultTypes: [c.h8.VOICE_CHANNEL]
+          resultTypes: [d.h8.VOICE_CHANNEL]
         }),
         onClear: () => l({
           query: "",
-          resultTypes: [c.h8.VOICE_CHANNEL]
+          resultTypes: [d.h8.VOICE_CHANNEL]
         }),
         autoFocus: true
       })
-    }), A.length > 0 ? (0, r.jsx)(a.aVo, {
+    }), A.length > 0 ? (0, r.jsx)(c.aVo, {
       renderListHeader: function() {
-        return (0, r.jsx)(a.Text, {
+        return (0, r.jsx)(c.Text, {
           variant: "text-xs/semibold",
           color: "text-muted",
           children: Z.intl.string(P.default.FZ9Fl5)

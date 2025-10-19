@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-/** chunk id: 522289, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 139117, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
   Z: () => h
@@ -14,18 +14,18 @@ var Chunk120356 = require("./120356.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk565138 = require("./565138.jsx"),
-  Chunk581143 = require("./581143.js");
+  Chunk120230 = require("./120230.js");
 
 function _() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk565138.Z.Sizes.SMALLER;
   switch (module) {
     case Chunk565138.Z.Sizes.SMOL:
-      return Chunk581143.size16;
+      return Chunk120230.size16;
     case Chunk565138.Z.Sizes.MINI:
-      return Chunk581143.size20;
+      return Chunk120230.size20;
     case Chunk565138.Z.Sizes.SMALLER:
     default:
-      return Chunk581143.size24
+      return Chunk120230.size24
   }
 }
 

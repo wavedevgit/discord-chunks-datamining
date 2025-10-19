@@ -6,6 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk442837 = require("./442837.js"),
+  Chunk139117 = require("./139117.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk129861 = require("./129861.jsx"),
   Chunk607070 = require("./607070.js"),
@@ -14,7 +15,6 @@ var Chunk442837 = require("./442837.js"),
   Chunk1585 = require("./1585.jsx"),
   Chunk125988 = require("./125988.js"),
   Chunk43267 = require("./43267.js"),
-  Chunk522289 = require("./522289.jsx"),
   Chunk699516 = require("./699516.js"),
   Chunk51144 = require("./51144.js"),
   Chunk998502 = require("./998502.js"),
@@ -27,19 +27,19 @@ let y = e => {
     let {
       userId: t
     } = e, n = (0, _.O)(t);
-    return null == n || 0 === n.length ? (0, r.jsx)(l.Text, {
+    return null == n || 0 === n.length ? (0, r.jsx)(a.Text, {
       className: v.mutualGuilds,
       variant: "text-sm/normal",
       color: "text-muted",
       children: O.intl.string(O.t.jpY0X1)
     }) : (0, r.jsxs)("div", {
       className: v.mutualGuildsContainer,
-      children: [(0, r.jsx)(f.Z, {
+      children: [(0, r.jsx)(l.Z, {
         guilds: n,
         maxGuilds: 3,
-        size: c.Vj.Sizes.SMOL,
+        size: u.Vj.Sizes.SMOL,
         hideOverflowCount: true
-      }), (0, r.jsx)(l.Text, {
+      }), (0, r.jsx)(a.Text, {
         className: v.mutualGuilds,
         variant: "text-sm/normal",
         color: "text-muted",
@@ -55,46 +55,46 @@ function C(e) {
   var t;
   let {
     channel: n,
-    otherUser: c,
-    active: f
-  } = e, m = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), _ = (0, i.e7)([h.Z], () => null == c ? null : h.Z.getNickname(c.id)), C = !m && f, S = (0, b.c)(n), {
+    otherUser: l,
+    active: u
+  } = e, m = (0, i.e7)([s.Z], () => s.Z.useReducedMotion), _ = (0, i.e7)([h.Z], () => null == l ? null : h.Z.getNickname(l.id)), C = !m && u, S = (0, b.c)(n), {
     avatarDecorationSrc: N
-  } = (0, d.Z)({
-    user: c,
-    size: (0, u.y9)(l.EFr.SIZE_40),
+  } = (0, p.Z)({
+    user: l,
+    size: (0, d.y9)(a.EFr.SIZE_40),
     onlyAnimateOnHoverOrFocus: true
   });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(I, {
       className: v.avatar,
-      src: (0, p.x)(n, 40, C),
+      src: (0, f.x)(n, 40, C),
       avatarDecoration: N,
-      size: l.EFr.SIZE_40,
-      "aria-label": null != (t = null == c ? true : c.username) ? t : O.intl.string(O.t["30mdIy"])
+      size: a.EFr.SIZE_40,
+      "aria-label": null != (t = null == l ? true : l.username) ? t : O.intl.string(O.t["30mdIy"])
     }), (0, r.jsxs)("div", {
       className: v.userPreview,
       children: [(0, r.jsxs)("div", {
         className: v.userContainerWithPreview,
-        children: [(0, r.jsx)(a.Z, {
+        children: [(0, r.jsx)(o.Z, {
           nick: _,
-          user: c,
+          user: l,
           showAccountIdentifier: true,
           className: v.tagContainer,
           usernameClass: v.username,
-          discriminatorClass: null != g.ZP.getGlobalName(c) ? v.globalName : v.discriminator
-        }), (0, r.jsx)(l.Text, {
+          discriminatorClass: null != g.ZP.getGlobalName(l) ? v.globalName : v.discriminator
+        }), (0, r.jsx)(a.Text, {
           className: v.timestampWithPreview,
           color: "text-muted",
           variant: "text-xs/normal",
           children: S
         })]
-      }), (0, r.jsx)(s.Z, {
+      }), (0, r.jsx)(c.Z, {
         hoverText: (0, r.jsx)(E.Z, {
           channel: n
         }),
-        forceHover: f,
+        forceHover: u,
         children: (0, r.jsx)(y, {
-          userId: c.id
+          userId: l.id
         })
       })]
     })]

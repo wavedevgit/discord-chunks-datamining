@@ -9,6 +9,7 @@ require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
+  Chunk36563 = require("./36563.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk287734 = require("./287734.js"),
   Chunk872810 = require("./872810.js"),
@@ -19,7 +20,6 @@ var Chunk120356 = require("./120356.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk194082 = require("./194082.jsx"),
-  Chunk318374 = require("./318374.jsx"),
   Chunk449605 = require("./449605.js"),
   Chunk102172 = require("./102172.js"),
   Chunk592125 = require("./592125.js"),
@@ -59,9 +59,9 @@ function Z(e) {
       user: t
     } = e;
     return t
-  }) : []), z = (0, o.e7)([I.Z], () => I.Z.findActivity(t.id, e => (0, d.Z)(e) && !(0, f.Z)(e))), {
+  }) : []), z = (0, o.e7)([I.Z], () => I.Z.findActivity(t.id, e => (0, f.Z)(e) && !(0, _.Z)(e))), {
     analyticsLocations: q
-  } = (0, h.ZP)(p.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), X = (0, S.Z)({
+  } = (0, m.ZP)(h.Z.USER_PROFILE_LIVE_ACTIVITY_CARD), X = (0, S.Z)({
     display: "live",
     voiceChannelId: null == W ? true : W.id,
     user: t,
@@ -73,18 +73,18 @@ function Z(e) {
   }), {
     previewUrl: J,
     isLoading: $
-  } = (0, E.Z)(null == i ? true : i.guildId, null == i ? true : i.channelId, null == i ? true : i.ownerId), [ee, et] = (0, b.wq)(W), en = (0, _.Kt)() && (0, _.zd)(null == W ? true : W.id), er = (0, o.e7)([v.Z], () => null != W && !en && v.Z.canBasicChannel(x.S7T.CONNECT, W)), ei = (0, u.Z)($ ? null : J), ea = $ || null == J ? ei : J;
+  } = (0, E.Z)(null == i ? true : i.guildId, null == i ? true : i.channelId, null == i ? true : i.ownerId), [ee, et] = (0, b.wq)(W), en = (0, p.Kt)() && (0, p.zd)(null == W ? true : W.id), er = (0, o.e7)([v.Z], () => null != W && !en && v.Z.canBasicChannel(x.S7T.CONNECT, W)), ei = (0, d.Z)($ ? null : J), ea = $ || null == J ? ei : J;
   if (null == Y || null == W || false === i.discoverable) return null;
   let eo = () => {
       let e = e => {
         e.stopPropagation(), ee && (X({
           action: "PRESS_IMAGE"
-        }), l.default.selectVoiceChannel(i.channelId), (0, c.iV)(i), null == F || F())
+        }), c.default.selectVoiceChannel(i.channelId), (0, u.iV)(i), null == F || F())
       };
       return null == ea && $ ? (0, r.jsx)("div", {
         className: U.preview,
-        children: (0, r.jsx)(s.$jN, {})
-      }) : null == ea || en ? (0, r.jsxs)(s.P3F, {
+        children: (0, r.jsx)(l.$jN, {})
+      }) : null == ea || en ? (0, r.jsxs)(l.P3F, {
         className: a()(U.preview, U.overlay, ee ? U.clickable : U.disabled),
         onClick: e,
         "aria-label": (0, b.gR)(et),
@@ -93,17 +93,17 @@ function Z(e) {
           alt: "",
           src: H === x.BRd.LIGHT ? B : G
         }), V !== M.l.MODAL && V !== M.l.MODAL_V2 && (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(s.Text, {
+          children: [(0, r.jsx)(l.Text, {
             className: U.overlayText,
             variant: "text-sm/medium",
             color: "always-white",
             children: (0, b.P9)(et)
-          }), (0, r.jsx)(s.Text, {
+          }), (0, r.jsx)(l.Text, {
             variant: "text-sm/medium",
             children: er ? k.intl.string(k.t.uQZTBQ) : k.intl.string(k.t.pgUTZG)
           })]
         })]
-      }) : (0, r.jsxs)(s.P3F, {
+      }) : (0, r.jsxs)(l.P3F, {
         className: a()(U.preview, U.overlay, ee ? U.clickable : U.disabled),
         onClick: e,
         "aria-label": (0, b.gR)(et),
@@ -113,12 +113,12 @@ function Z(e) {
           src: ea,
           className: U.image
         }), V !== M.l.MODAL && V !== M.l.MODAL_V2 && (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(s.Text, {
+          children: [(0, r.jsx)(l.Text, {
             className: U.overlayText,
             variant: "text-sm/medium",
             color: "always-white",
             children: (0, b.P9)(et)
-          }), (0, r.jsx)(s.gw7, {
+          }), (0, r.jsx)(l.gw7, {
             size: "xs",
             color: "currentColor",
             className: U.clyde
@@ -133,12 +133,12 @@ function Z(e) {
         guild: Y,
         onAction: X,
         onClose: F
-      }), (0, r.jsx)(g.Z, {
+      }), (0, r.jsx)(s.Z, {
         users: K,
         guildId: Y.id,
         channelId: W.id,
         maxUsers: w.W,
-        size: s.EFr.SIZE_16,
+        size: l.EFr.SIZE_16,
         onClickOverflow: e => {
           null == e || e.stopPropagation(), null == X || X({
             action: "PRESS_VOICE_CHANNEL_AVATARS"
@@ -168,7 +168,7 @@ function Z(e) {
     eu = null != z ? k.intl.formatToPlainString(k.t["4CQq9f"], {
       name: z.name
     }) : k.intl.string(k.t["Jpkr/v"]);
-  return (0, r.jsx)(h.Gt, {
+  return (0, r.jsx)(m.Gt, {
     value: q,
     children: (0, r.jsxs)(N.Z, {
       ref: Q,
@@ -178,8 +178,8 @@ function Z(e) {
       "aria-label": eu,
       children: [(0, r.jsx)(R.Z, {
         text: eu,
-        tags: (0, r.jsx)(m.ZP, {
-          size: m.OH.SMALL
+        tags: (0, r.jsx)(g.ZP, {
+          size: g.OH.SMALL
         }),
         contextMenu: (0, r.jsx)(L.Z, {
           display: "live",
