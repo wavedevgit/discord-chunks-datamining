@@ -62,27 +62,28 @@ let g = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk
       isHighlighted: i = false,
       isPurchased: u = false,
       avatarSize: _ = s.EFr.SIZE_152,
-      avatarPlaceholderSrc: h
-    } = e, E = (0, l.y9)(_), {
-      avatarDecorationSrc: b,
-      eventHandlers: y,
-      avatarPlaceholderSrc: O
+      avatarPlaceholderSrc: h,
+      className: E
+    } = e, b = (0, l.y9)(_), {
+      avatarDecorationSrc: y,
+      eventHandlers: O,
+      avatarPlaceholderSrc: v
     } = (0, c.Z)({
       user: n,
       avatarDecorationOverride: (null == t ? true : t.type) === o.Z.AVATAR_DECORATION ? t : true,
-      size: E,
+      size: b,
       onlyAnimateOnHoverOrFocus: !i
-    }), v = d.intl.formatToPlainString(d.t.Do2lxM, {
+    }), I = d.intl.formatToPlainString(d.t.Do2lxM, {
       a11y_text: t.label
     });
-    return (0, r.jsx)(g, m(p({}, y), {
-      avatarDecoration: b,
-      src: i ? null == n ? true : n.getAvatarURL(true, 152, true) : null != h ? h : O,
+    return (0, r.jsx)(g, m(p({}, O), {
+      avatarDecoration: y,
+      src: i ? null == n ? true : n.getAvatarURL(true, 152, true) : null != h ? h : v,
       imageClassName: i ? f.fadeInAvatarImg : true,
-      className: a()(f.avatar, {
+      className: a()(E, f.avatar, {
         [f.avatarPurchased]: u && !i
       }),
       size: _,
-      "aria-label": v
+      "aria-label": I
     }))
   }

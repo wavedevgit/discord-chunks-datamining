@@ -52,7 +52,8 @@ let b = Chunk647438.memo(function(e) {
         avatarSize: R,
         isPurchased: n,
         isHighlighted: a,
-        avatarPlaceholderSrc: P
+        avatarPlaceholderSrc: P,
+        className: m.avatar
       })
     }), N && (0, r.jsx)("div", {
       className: o()(m.nameplatePreview, y ? m.nameplatePreviewCollectedModal : null),
