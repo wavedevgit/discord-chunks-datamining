@@ -88,7 +88,7 @@ let N = e => {
     } = e, s = (0, d.aM)(), l = (() => {
       var e;
       let n = null == (e = t.config.ctaConfig) ? true : e.buttonLabel;
-      return null != n ? n : (0, p.pO)(t) || t.config.features.includes(b.S7.NON_GAMING_PLAY_QUEST) ? y.intl.string(y.t.hvVgAQ) : y.intl.string(y.t.lwQdjI)
+      return null != n ? n : (0, p.pO)(t) || t.config.features.includes(b.S7.NON_GAMING_PLAY_QUEST) ? v.intl.string(v.t.hvVgAQ) : v.intl.string(v.t.lwQdjI)
     })();
     return (0, r.jsx)(o.zxk, {
       size: "sm",
@@ -119,10 +119,10 @@ let N = e => {
         sourceQuestContent: s
       }),
       size: "sm",
-      text: y.intl.string(y.t.csptqa)
+      text: v.intl.string(v.t.csptqa)
     })
   },
-  _ = e => {
+  P = e => {
     let {
       quest: t
     } = e, n = (0, j.CR)({
@@ -133,13 +133,13 @@ let N = e => {
     return (0, p.Rt)(t) ? (0, r.jsx)(o.zxk, {
       fullWidth: true,
       variant: "primary",
-      icon: (0, h.gF)(t),
+      icon: (0, m.getPrimaryCtaIcon)(t),
       onClick: s,
       size: "sm",
       text: n
     }) : null
   },
-  P = e => {
+  _ = e => {
     let {
       quest: t,
       sourceQuestContent: n,
@@ -161,7 +161,7 @@ let N = e => {
         variant: "secondary",
         fullWidth: true,
         size: "sm",
-        text: y.intl.string(y.t["93PTEh"])
+        text: v.intl.string(v.t["93PTEh"])
       }, e))
     })
   },
@@ -191,8 +191,8 @@ let N = e => {
         }
         return s
       }(e, ["quest", "useReducedMotion", "isExpanded", "className", "ctaLabel", "onClick", "questContent", "sourceQuestContent"]);
-    let _ = (null == (t = d.userStatus) ? true : t.completedAt) != null,
-      P = (0, h.hf)({
+    let P = (null == (t = d.userStatus) ? true : t.completedAt) != null,
+      _ = (0, h.hf)({
         quest: d,
         questContent: E,
         sourceQuestContent: N
@@ -200,11 +200,11 @@ let N = e => {
       z = s.useCallback(e => {
         var t;
         null == b || b(e), (0, p.xN)(d.config) && (null == (t = d.userStatus) ? true : t.claimedAt) != null ? (0, c.mK)({
-          tab: v.AW.ORBS,
+          tab: y.AW.ORBS,
           analyticsLocations: [],
           analyticsSource: a.Z.QUEST_HOME_PAGE
-        }) : P()
-      }, [b, d.config, null == (n = d.userStatus) ? true : n.claimedAt, P]),
+        }) : _()
+      }, [b, d.config, null == (n = d.userStatus) ? true : n.claimedAt, _]),
       {
         shouldUseShinyButton: A
       } = g.Z.useConfig({
@@ -214,16 +214,16 @@ let N = e => {
       fullWidth: true,
       size: l.zx.Sizes.SMALL,
       onClick: z,
-      pauseAnimation: f || !j && !_,
+      pauseAnimation: f || !j && !P,
       className: m,
       buttonShineClassName: O.shine,
       "data-migration-pending": true
     }, w), {
-      children: null != C ? C : y.intl.string(y.t.cfY4PD)
+      children: null != C ? C : v.intl.string(v.t.cfY4PD)
     })) : (0, r.jsx)(o.zxk, S(k({
       fullWidth: true,
       onClick: z,
-      text: null != C ? C : y.intl.string(y.t.cfY4PD)
+      text: null != C ? C : v.intl.string(v.t.cfY4PD)
     }, w), {
       size: w.size === l.zx.Sizes.MEDIUM ? "md" : "sm"
     }))
@@ -253,12 +253,12 @@ let N = e => {
       quest: n,
       sourceQuestContent: s,
       taskDetails: d
-    }) : (0, p.Rt)(n) ? b = (0, r.jsx)(_, {
+    }) : (0, p.Rt)(n) ? b = (0, r.jsx)(P, {
       quest: n
     }) : u === x.LI.CONSOLE && i ? b = (0, r.jsx)(w, {
       quest: n,
       sourceQuestContent: s
-    }) : C && (0, p.Pb)(n) ? b = (0, r.jsx)(P, {
+    }) : C && (0, p.Pb)(n) ? b = (0, r.jsx)(_, {
       quest: n,
       sourceQuestContent: s,
       taskDetails: d,
@@ -281,7 +281,7 @@ function B(e) {
     ref: t,
     children: [e.showBackButton && (0, r.jsx)(o.hU, {
       size: "sm",
-      "aria-label": y.intl.string(y.t["13/7kZ"]),
+      "aria-label": v.intl.string(v.t["13/7kZ"]),
       onClick: e.onBack,
       icon: i.V7D,
       variant: "secondary"

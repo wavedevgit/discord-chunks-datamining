@@ -264,7 +264,7 @@ function O(e) {
     className: v.button,
     children: (0, r.jsx)(o.zxk, {
       variant: "primary",
-      icon: (0, _.gF)(T),
+      icon: (0, x.getPrimaryCtaIcon)(T),
       onClick: null != ei ? ei : true,
       text: eo,
       fullWidth: true
@@ -296,7 +296,7 @@ function O(e) {
       variant: "primary",
       onClick: null != ei ? ei : true,
       text: eo,
-      icon: (0, _.gF)(T),
+      icon: (0, x.getPrimaryCtaIcon)(T),
       fullWidth: true
     })
   })) : eg = (0, r.jsx)("div", {
