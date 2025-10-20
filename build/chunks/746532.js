@@ -49,10 +49,10 @@ var Chunk392711 = require("./392711.js"),
   Chunk237997 = require("./237997.js"),
   Chunk411198 = require("./411198.js"),
   Chunk145597 = require("./145597.js"),
-  Chunk111628 = require("./111628.js"),
   Chunk454991 = require("./454991.js"),
   Chunk371651 = require("./371651.js"),
-  Chunk624864 = require("./624864.js");
+  Chunk624864 = require("./624864.js"),
+  Chunk338949 = require("./338949.js");
 async function $(e, t) {
   let a = arguments.length > 2 && true !== arguments[2] ? arguments[2] : new r.Z;
   await new Promise(e => setImmediate(e));
@@ -125,10 +125,10 @@ async function $(e, t) {
     eF = (0, v.xU)(i.o8, p.Z.settings),
     eH = Z.Z.getOverlaySerializedState(),
     eW = O.Z.consents,
-    eY = Object.values(K.default.getTrackedGames()),
-    eq = B.v.serialize(),
-    ex = Array.from(Q.Z.getRenderDebugModes()),
-    eJ = X.Z.getInitialOverlayState();
+    eY = Object.values(B.default.getTrackedGames()),
+    eq = Q.v.serialize(),
+    ex = Array.from(X.Z.getRenderDebugModes()),
+    eJ = K.Z.getInitialOverlayState();
   return {
     type: "OVERLAY_INITIALIZE",
     version: J.OVERLAY_VERSION,

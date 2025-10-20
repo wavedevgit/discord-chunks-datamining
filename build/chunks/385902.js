@@ -62,14 +62,14 @@ function O(e, t) {
       var t;
       return null == (t = o.Z.getGuild(e)) ? true : t.features
     }),
-    w = null != (y = null == Z ? true : Z.has(g.GuildFeatures.PARTNERED)) && y,
+    T = null != (y = null == Z ? true : Z.has(g.GuildFeatures.PARTNERED)) && y,
     {
-      onActivate: T
+      onActivate: w
     } = (0, f._C)(e, N),
-    A = !j && x && C && null != S && !w && I.type === h.A3.POWERUP_ACTIVATED && null != P && null != N && null != v,
+    A = !j && x && C && null != S && !T && I.type === h.A3.POWERUP_ACTIVATED && null != P && null != N && null != v,
     R = r.useCallback(e => {
-      T(e)
-    }, [T]),
+      w(e)
+    }, [w]),
     D = r.useMemo(() => {
       if (!A) return null;
       let e = (0, p.Z)(P),

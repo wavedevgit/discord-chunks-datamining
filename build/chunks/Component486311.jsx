@@ -88,12 +88,12 @@ let j = {
     i.useEffect(() => {
       (null == x ? true : x.popout) == null && N(null)
     }, [null == x ? true : x.popout]);
-    let w = i.useCallback(e => {
+    let T = i.useCallback(e => {
         N(e)
       }, []),
-      T = i.useRef(null);
+      w = i.useRef(null);
     return (0, r.jsx)(s.yRy, {
-      targetElementRef: T,
+      targetElementRef: w,
       shouldShow: (null == x ? true : x.popout) != null && !(S || I),
       nudgeAlignIntoViewport: true,
       animationPosition: "bottom",
@@ -102,7 +102,7 @@ let j = {
       children: e => {
         var i, a;
         return (0, r.jsx)(u.m, (i = v({}, e), a = a = {
-          ref: T,
+          ref: w,
           className: y.container,
           id: "skill-trees-".concat(t),
           renderIcon: e => (0, r.jsx)(s.Ucv, {
@@ -117,7 +117,7 @@ let j = {
               className: y.lottie,
               sceneSegments: j,
               importData: () => n.e("50821").then(n.t.bind(n, 548421, 19)),
-              onScenePlay: w,
+              onScenePlay: T,
               rendererSettings: {
                 preserveAspectRatio: "xMidYMid slice"
               }

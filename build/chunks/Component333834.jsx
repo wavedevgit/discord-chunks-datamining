@@ -32,11 +32,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk809946 = require("./809946.js");
 
-function w(e) {
+function T(e) {
   e.stopPropagation()
 }
 
-function T(e) {
+function w(e) {
   let {
     group: t,
     isOpen: n,
@@ -205,7 +205,7 @@ function D(e) {
     Q = i.useMemo(() => {
       let e = [];
       return X ? e.push(a()) : q ? e.push((0, r.jsx)(R, {}, "empty-state")) : N ? (e.push(...n.map(e => d([e], true))), e.push(...t.map(e => d([e], false)))) : s().each(A, t => {
-        0 !== Y[t].length && (e.push((0, r.jsx)(T, {
+        0 !== Y[t].length && (e.push((0, r.jsx)(w, {
           group: t,
           isOpen: H[t],
           toggleOpenedState: () => {
@@ -220,7 +220,7 @@ function D(e) {
       }), e
     }, [t, n, a, H, z, Y, N, d, q, X, D]),
     J = Q[Q.length - 1],
-    $ = i.isValidElement(J) && J.type === T,
+    $ = i.isValidElement(J) && J.type === w,
     ee = (0, C.d)(e => e.setInboxReadState);
   i.useEffect(() => {
     X || ee(0 === Y.UNREAD.length)
@@ -265,8 +265,8 @@ function D(e) {
     viewId: D
   }), (0, r.jsx)("div", {
     className: o()(g, Z.messagesPopoutWrap),
-    onClick: w,
-    onDoubleClick: w,
+    onClick: T,
+    onDoubleClick: T,
     "aria-label": e["aria-label"],
     children: (0, r.jsx)(c.bG, {
       navigator: M,

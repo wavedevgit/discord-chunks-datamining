@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk38618 = require("./38618.js"),
   Chunk522474 = require("./522474.js"),
   Chunk333031 = require("./333031.jsx"),
-  Chunk610394 = require("./610394.js"),
+  Chunk76623 = require("./76623.js"),
   Chunk501787 = require("./501787.js"),
   Chunk533449 = require("./533449.js");
 
@@ -24,7 +24,7 @@ function O(e) {
     locked: t,
     pinned: n,
     anchorLeft: l
-  } = e, O = (0, a.e7)([p.Z], () => p.Z.getSocket()), E = (0, a.e7)([m.ZP], () => m.ZP.isGPUBoosted());
+  } = e, O = (0, a.e7)([p.Z], () => p.Z.getSocket()), E = (0, a.e7)([m.Z], () => m.Z.isGPUBoosted());
   (0, d.nU)();
   let v = (0, a.e7)([h.Z], () => h.Z.getWindow(g.$J)),
     [S, b] = (0, d.m8)(O),

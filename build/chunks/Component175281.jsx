@@ -110,7 +110,7 @@ function Z() {
     })
   })
 }
-class w extends Chunk647438.PureComponent {
+class T extends Chunk647438.PureComponent {
   componentDidMount() {
     this.lastInputedKeys = [], Chunk585483.S.subscribe(Chunk981631.CkL.SCROLL_PAGE_UP, this.scrollPageUp), Chunk585483.S.subscribe(Chunk981631.CkL.SCROLL_PAGE_DOWN, this.scrollPageDown), window.addEventListener("keydown", this.handleKeyDown, {
       capture: true
@@ -148,22 +148,22 @@ class w extends Chunk647438.PureComponent {
         children: Chunk388032.intl.string(Chunk388032.t["2t19lZ"])
       }), (0, Chunk951288.jsxs)("div", {
         className: Chunk870525.ddrArrows,
-        children: [(0, Chunk951288.jsx)(T, {
+        children: [(0, Chunk951288.jsx)(w, {
           arrow: "LEFT",
           isActive: require,
           className: Chunk870525.left,
           children: "left"
-        }), (0, Chunk951288.jsx)(T, {
+        }), (0, Chunk951288.jsx)(w, {
           arrow: "DOWN",
           isActive: exports,
           className: Chunk870525.down,
           children: "down"
-        }), (0, Chunk951288.jsx)(T, {
+        }), (0, Chunk951288.jsx)(w, {
           arrow: "UP",
           isActive: module,
           className: Chunk870525.up,
           children: "up"
-        }), (0, Chunk951288.jsx)(T, {
+        }), (0, Chunk951288.jsx)(w, {
           arrow: "RIGHT",
           isActive: Chunk647438,
           className: Chunk870525.right,
@@ -258,7 +258,7 @@ class w extends Chunk647438.PureComponent {
   }
 }
 
-function T(e) {
+function w(e) {
   let {
     isActive: t,
     arrow: n,
@@ -309,7 +309,7 @@ function A(e) {
           handleDemonClose: function() {
             c(false), setTimeout(n, 500)
           }
-        }, "raging-demo") : (0, r.jsx)(w, {
+        }, "raging-demo") : (0, r.jsx)(T, {
           content: u,
           keyboardModeEnabled: d,
           activateRagingDemon: function() {

@@ -43,8 +43,8 @@ function E(e) {
     location: "NotificationsInboxButtonInner"
   }), {
     badge: Z,
-    badgeDimensions: w,
-    unreadChannelsCount: T
+    badgeDimensions: T,
+    unreadChannelsCount: w
   } = function(e) {
     let {
       notificationCenterVariant: t
@@ -85,14 +85,14 @@ function E(e) {
     children: [(0, r.jsx)(c.Z, {
       selected: P && N === g.jP.SIDEBAR,
       hovered: E && N === g.jP.SIDEBAR,
-      unread: T > 0,
+      unread: w > 0,
       className: x.pill,
       disabled: N === g.jP.LEGACY
     }), (0, r.jsx)(O.Z, {
       children: (0, r.jsx)(a.aRk, {
         selected: P || E,
         lowerBadge: Z,
-        lowerBadgeSize: w,
+        lowerBadgeSize: T,
         children: (0, r.jsx)(a.LYs, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},

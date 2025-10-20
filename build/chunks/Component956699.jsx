@@ -944,7 +944,7 @@ function eh() {
         children: l ? (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           text: "Open Overlay",
-          onClick: () => (0, Chunk398269.f)(exports)
+          onClick: () => (0, Chunk398269.f)()
         }) : (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           text: "Open Overlay",

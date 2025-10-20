@@ -163,9 +163,9 @@ let B = Chunk647438.memo(function e(t) {
       enabledContentHarmTypeFlags: eu,
       ctaButtonType: ed
     }),
-    childrenExecutedCommand: (0, T.Z)(s, l, R),
+    childrenExecutedCommand: (0, w.Z)(s, l, R),
     childrenMessageContent: (0, N.Z)(t, er),
-    childrenSystemMessage: (0, w.Z)(t),
+    childrenSystemMessage: (0, T.Z)(t),
     onContextMenu: B,
     onClick: V,
     hasThread: false !== z && null != eo && s.hasFlag(D.iLy.HAS_THREAD),

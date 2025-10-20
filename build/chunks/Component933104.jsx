@@ -5,7 +5,7 @@ require.d(exports, {
   En: () => M,
   cO: () => D,
   dJ: () => L,
-  jG: () => T,
+  jG: () => w,
   yI: () => R
 });
 var Chunk951288 = require("./951288.js");
@@ -39,7 +39,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk283902 = require("./283902.js"),
   Chunk225375 = require("./225375.js");
 
-function T(e) {
+function w(e) {
   let {
     guildId: t,
     powerup: n,
@@ -136,7 +136,7 @@ function D(e) {
     content: S.intl.string(E.default.mmNkUF),
     asset: (0, r.jsx)("img", {
       alt: "",
-      src: w.Z,
+      src: T.Z,
       className: I.image
     }),
     onClick: () => (0, b.Z)(t, u.Z.GUILD_POWERUPS_COACHMARK_NEW_PERK_AVAILABLE, l.skuId),

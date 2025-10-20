@@ -1,8 +1,8 @@
 /** Chunk was on 57695 **/
 /** chunk id: 301342, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  P: () => w,
-  Qo: () => T,
+  P: () => T,
+  Qo: () => w,
   ZP: () => Z,
   kw: () => R,
   rj: () => A
@@ -74,8 +74,8 @@ let N = Chunk647438.memo(function(e) {
         disableManageChannels: j,
         position: N,
         sortingPosition: Z,
-        hideIcon: w,
-        children: T
+        hideIcon: T,
+        children: w
       } = e,
       A = (0, s.e7)([y.ZP], () => y.ZP.isChannelMuted(l.getGuildId(), l.id)),
       R = (0, s.e7)([b.Z], () => b.Z.isCollapsed(l.id)),
@@ -170,7 +170,7 @@ let N = Chunk647438.memo(function(e) {
                 children: (0, r.jsx)(m.Z, {
                   children: l.name
                 })
-              }), w ? null : (0, r.jsx)(d.CJ0, {
+              }), T ? null : (0, r.jsx)(d.CJ0, {
                 size: "md",
                 color: "currentColor",
                 className: E.icon
@@ -204,12 +204,12 @@ let N = Chunk647438.memo(function(e) {
               }) : null
             })]
           })
-        }), T]
+        }), w]
       });
     return null != v && null != h ? v(h(z)) : z
   }),
   Z = (0, Chunk146773.B)(N),
-  w = Chunk647438.memo(function(e) {
+  T = Chunk647438.memo(function(e) {
     let {
       name: t,
       onDismiss: n,
@@ -243,7 +243,7 @@ let N = Chunk647438.memo(function(e) {
       })
     })
   }),
-  T = Chunk647438.memo(function(e) {
+  w = Chunk647438.memo(function(e) {
     let {
       category: t
     } = e, n = (0, s.e7)([v.Z], () => v.Z.isVoiceCategoryCollapsed(t.guild.id)), l = i.useCallback(() => {

@@ -80,7 +80,7 @@ function x(e) {
     x = i.useCallback(e => {
       e.stopPropagation(), null == o || o(), null == c || c()
     }, [c, o]),
-    M = (0, d.e7)([S.ZP], () => S.ZP.getFocusedRunningGame()),
+    M = (0, d.e7)([S.Z], () => S.Z.getFocusedRunningGame()),
     k = g ? (0, r.jsxs)("div", {
       children: [(0, r.jsx)(f.Text, {
         variant: "text-md/semibold",
@@ -176,7 +176,7 @@ class M extends Chunk647438.PureComponent {
           })
         },
         onDisable: () => {
-          let e = Chunk610394.ZP.getFocusedRunningGame();
+          let e = Chunk610394.Z.getFocusedRunningGame();
           null != module && Chunk224706.Z.toggleOverlay(module, false, false)
         },
         onCrashDisabled: () => {

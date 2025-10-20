@@ -37,8 +37,8 @@ function Z(e) {
     onClose: n,
     children: l,
     badgeState: Z,
-    popoutPosition: w,
-    popoutAlign: T,
+    popoutPosition: T,
+    popoutAlign: w,
     targetElementRef: A,
     spacing: R,
     dialogClassName: D
@@ -99,8 +99,8 @@ function Z(e) {
     children: (0, r.jsx)(u.yRy, {
       targetElementRef: A,
       animation: u.yRy.Animation.NONE,
-      position: w,
-      align: T,
+      position: T,
+      align: w,
       autoInvert: false,
       shouldShow: M,
       onRequestClose: V,

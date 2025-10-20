@@ -35,8 +35,8 @@ let b = Chunk647438.forwardRef(function(e, t) {
     showGIFTag: P = false,
     dismissibleContent: N,
     position: Z = "top",
-    align: w = "center",
-    art: T,
+    align: T = "center",
+    art: w,
     isPremiumEarlyAccess: A = false,
     maxWidth: R = 280,
     hideDismissButton: D = false,
@@ -80,7 +80,7 @@ let b = Chunk647438.forwardRef(function(e, t) {
         className: o()(b, E ? m.artInline : m.artAbsolute),
         children: [P && (0, r.jsx)(f.Z, {
           className: m.gifTag
-        }), T]
+        }), w]
       }), (0, r.jsxs)("div", {
         className: m.body,
         children: [(0, r.jsxs)(s.Heading, {
@@ -143,9 +143,9 @@ let b = Chunk647438.forwardRef(function(e, t) {
       }), (0, r.jsx)("div", {
         className: o()(m.pointer, L, {
           [m.bottomPointer]: "top" === Z,
-          [m.centerLeftPointer]: "right" === Z && "center" === w,
-          [m.topLeftPointer]: "right" === Z && "top" === w,
-          [m.bottomLeftPointer]: "right" === Z && "bottom" === w
+          [m.centerLeftPointer]: "right" === Z && "center" === T,
+          [m.topLeftPointer]: "right" === Z && "top" === T,
+          [m.bottomLeftPointer]: "right" === Z && "bottom" === T
         })
       })]
     })

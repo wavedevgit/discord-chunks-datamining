@@ -110,9 +110,9 @@ function b(e) {
     return i
   }(e.treeItemProps, ["onFocus"]), [P, N] = i.useState(false), Z = i.useCallback(() => {
     a || N(true), null == j || j(true)
-  }, [a, j]), w = i.useCallback(() => {
+  }, [a, j]), T = i.useCallback(() => {
     a || N(false), null == j || j(false)
-  }, [a, j]), T = o || null == u ? null : (0, p.Or)(u), A = !o && d > 0 ? (0, p.Ne)(d, g ? c.Z.BACKGROUND_ACCENT : c.Z.STATUS_DANGER) : null;
+  }, [a, j]), w = o || null == u ? null : (0, p.Or)(u), A = !o && d > 0 ? (0, p.Ne)(d, g ? c.Z.BACKGROUND_ACCENT : c.Z.STATUS_DANGER) : null;
   return (0, r.jsx)(s.tEY, {
     children: (0, r.jsxs)(s.P3F, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -136,7 +136,7 @@ function b(e) {
       onClick: y,
       onContextMenu: v,
       onMouseEnter: Z,
-      onMouseLeave: w,
+      onMouseLeave: T,
       onKeyDown: x,
       onFocus: C,
       focusProps: {
@@ -156,7 +156,7 @@ function b(e) {
       }), (0, r.jsx)(s.aRk, {
         "aria-hidden": true,
         isFolder: true,
-        upperBadge: T,
+        upperBadge: w,
         lowerBadge: A,
         lowerBadgeSize: {
           width: (0, s.OVM)(d)

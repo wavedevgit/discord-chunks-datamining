@@ -1,7 +1,7 @@
 /** Chunk was on 57695 **/
 /** chunk id: 332538, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Wj: () => w,
+  Wj: () => T,
   ZP: () => Z
 }), require("./388685.js"), require("./361932.js"), require("./187205.js");
 var Chunk951288 = require("./951288.js"),
@@ -229,7 +229,7 @@ function Z(e) {
   }
 }
 
-function w(e) {
+function T(e) {
   let t = (0, o.e7)([O.Z], () => O.Z.getStateForGuild(e)),
     n = Z(e);
   i.useEffect(() => {

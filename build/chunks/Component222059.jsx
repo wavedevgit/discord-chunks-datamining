@@ -56,8 +56,8 @@ function L(e) {
     badge: f,
     link: g,
     showProgressBadge: _
-  } = e, [O, y] = i.useState(false), [v, j] = i.useState(false), [x, C] = i.useState(null), [E, w] = i.useState(0), L = (0, l.Ie)("home"), M = (0, p.oq)().activePanel === p.wh.APP_ICON, k = () => {
-    C(null), w(0), clearTimeout(x)
+  } = e, [O, y] = i.useState(false), [v, j] = i.useState(false), [x, C] = i.useState(null), [E, T] = i.useState(0), L = (0, l.Ie)("home"), M = (0, p.oq)().activePanel === p.wh.APP_ICON, k = () => {
+    C(null), T(0), clearTimeout(x)
   }, G = h.o.useConfig({
     location: "home button"
   }).dmsTab;
@@ -98,10 +98,10 @@ function L(e) {
         onMouseEnter: () => y(true),
         onMouseLeave: () => y(false),
         onClick: () => {
-          if (!__OVERLAY__ && (null != x && clearTimeout(x), C(setTimeout(k, 500)), w(E + 1), 15 === E)) {
+          if (!__OVERLAY__ && (null != x && clearTimeout(x), C(setTimeout(k, 500)), T(E + 1), 15 === E)) {
             k();
             let e = !a.K.get(Z.wli);
-            a.K.set(Z.wli, e), e && a.K.set(T.O, true), e ? (0, m.GN)("discodo") : (0, m.GN)("user_leave"), j(true), setTimeout(() => {
+            a.K.set(Z.wli, e), e && a.K.set(w.O, true), e ? (0, m.GN)("discodo") : (0, m.GN)("user_leave"), j(true), setTimeout(() => {
               j(false)
             }, 1e3)
           }

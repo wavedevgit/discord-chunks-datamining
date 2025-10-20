@@ -1,4 +1,4 @@
-/** Chunk was on 38319 **/
+/** Chunk was on 87943 **/
 /** chunk id: 563218, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -28,10 +28,10 @@ function b(e) {
       className: a,
       style: o
     } = e,
-    b = (0, l.e7)([c.Z], () => c.Z.getWindow(m.KJ3.CHANNEL_CALL_POPOUT)),
-    E = (0, p.Z)(),
-    v = (0, l.e7)([u.ZP], () => u.ZP.getActivityPanelMode());
-  if (null == E || (0, f.Z)((0, d.p)(E.location)) || v !== _.Ez.PANEL) {
+    b = (0, l.e7)([c.Z], () => c.Z.getWindow(_.KJ3.CHANNEL_CALL_POPOUT)),
+    v = (0, p.Z)(),
+    E = (0, l.e7)([u.ZP], () => u.ZP.getActivityPanelMode());
+  if (null == v || (0, f.Z)((0, d.p)(v.location)) || E !== m.Ez.PANEL) {
     var h;
     t = null != (h = null == b ? true : b.window) ? h : window
   } else t = window;
@@ -45,8 +45,8 @@ function b(e) {
         }))
       }
     }, [n, t]);
-  return i.useEffect(() => (t.addEventListener("resize", y), s.S.subscribe(m.CkL.REMEASURE_TARGET, y), () => {
-    t.removeEventListener("resize", y), s.S.unsubscribe(m.CkL.REMEASURE_TARGET, y)
+  return i.useEffect(() => (t.addEventListener("resize", y), s.S.subscribe(_.CkL.REMEASURE_TARGET, y), () => {
+    t.removeEventListener("resize", y), s.S.unsubscribe(_.CkL.REMEASURE_TARGET, y)
   }), [y, t]), i.useLayoutEffect(() => {
     let e = S.current;
     if (null == e) return;

@@ -1,8 +1,8 @@
-/** Chunk was on 38319 **/
+/** Chunk was on 87943 **/
 /** chunk id: 352978, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   L: () => p,
-  Z: () => _
+  Z: () => m
 }), require("./388685.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,25 +14,25 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk153066 = require("./153066.js"),
   Chunk412418 = require("./412418.js"),
   p = ((r = {}).CONTAIN = "contain", r.COVER = "cover", r);
-let _ = Chunk647438.memo(function(e) {
+let m = Chunk647438.memo(function(e) {
   let {
     streamId: t,
     onResize: n,
     wrapperClassName: r,
     videoComponent: a,
     className: p,
-    fit: _ = "contain",
-    mirror: m = false,
+    fit: m = "contain",
+    mirror: _ = false,
     paused: g = false,
     streamPreviewURL: b,
-    videoSpinnerContext: E,
-    userId: v,
+    videoSpinnerContext: v,
+    userId: E,
     streamKey: h
   } = e, [S, y] = l.useState(true);
   (0, u.Z)({
     location: "VideoStream",
-    videoSpinnerContext: E,
-    userId: v,
+    videoSpinnerContext: v,
+    userId: E,
     streamId: t,
     loading: S,
     paused: g
@@ -41,9 +41,9 @@ let _ = Chunk647438.memo(function(e) {
     onReady: O
   } = (0, s.Z)({
     streamId: t,
-    userId: v,
+    userId: E,
     loading: S,
-    videoSpinnerContext: E,
+    videoSpinnerContext: v,
     streamKey: h,
     paused: g
   }), I = l.useCallback(() => {
@@ -52,8 +52,8 @@ let _ = Chunk647438.memo(function(e) {
   return (0, i.jsxs)("div", {
     className: o()(f.wrapper, r),
     children: [null != t && (0, i.jsx)(a, {
-      className: o()(f.video, (0, d.l)(f, "video", _), {
-        [f.mirror]: m
+      className: o()(f.video, (0, d.l)(f, "video", m), {
+        [f.mirror]: _
       }, p),
       streamId: t,
       onResize: n,

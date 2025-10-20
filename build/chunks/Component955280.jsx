@@ -38,8 +38,8 @@ function f(e) {
     var e;
     return null == (e = S.current) ? true : e.call(S)
   }, []);
-  let h = (0, r.e7)([v.ZP, u.Z], () => {
-      let e = v.ZP.getWidgetByType(m.Odu.VOICE_V3);
+  let h = (0, r.e7)([v.Z, u.Z], () => {
+      let e = v.Z.getWidgetByType(m.Odu.VOICE_V3);
       if (null == e) return null;
       let t = u.Z.getWidget(e.id);
       return null != t && (0, p.Aw)(t) ? t : null

@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk74299 = require("./74299.js"),
   Chunk577153 = require("./577153.js"),
   Chunk365023 = require("./365023.js"),
-  Chunk610394 = require("./610394.js"),
+  Chunk509140 = require("./509140.js"),
   Chunk825655 = require("./825655.jsx"),
   Chunk131951 = require("./131951.js"),
   Chunk556296 = require("./556296.js"),
@@ -415,7 +415,7 @@ class Y extends Chunk647438.PureComponent {
 function W() {
   let e = (0, Chunk442837.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getState()),
     t = (0, Chunk442837.e7)([Chunk131951.Z], () => (0, Chunk74299.Z)(Chunk131951.Z)),
-    n = (0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.isSupported()),
+    n = (0, Chunk442837.e7)([Chunk509140.Z], () => Chunk509140.Z.isSupported),
     i = (0, Chunk924557.Go)(),
     a = (0, Chunk526665.wy)("UserSettingsKeybindsConnected");
   return (0, Chunk951288.jsx)(Y, {

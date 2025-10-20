@@ -1,4 +1,4 @@
-/** Chunk was on 38319 **/
+/** Chunk was on 87943 **/
 /** chunk id: 90753, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -19,8 +19,8 @@ var Chunk647438 = require("./647438.js"),
 let g = 1e3 / 60;
 
 function b(e, t, n, b) {
-  let E = (0, a.dQu)(l.Z.unsafe_rawColors.BRAND_500).hex(),
-    v = (0, a.dQu)(l.Z.unsafe_rawColors.BLACK_500).hex(),
+  let v = (0, a.dQu)(l.Z.unsafe_rawColors.BRAND_500).hex(),
+    E = (0, a.dQu)(l.Z.unsafe_rawColors.BLACK_500).hex(),
     h = (0, a.dQu)(l.Z.unsafe_rawColors.WHITE_500).hex(),
     S = r.useRef({}),
     y = r.useRef(new i.Xp),
@@ -41,14 +41,14 @@ function b(e, t, n, b) {
         if (0 === n.length) return;
         let f = t.current;
         if (null == f) return;
-        let m = f.getContext("2d");
-        if (null == m) return;
+        let _ = f.getContext("2d");
+        if (null == _) return;
         let {
           width: g,
           height: b
-        } = f.getBoundingClientRect(), E = [];
+        } = f.getBoundingClientRect(), v = [];
         n.forEach(e => {
-          if (null == c.Z.getVoiceStateForChannel(a, e.userId)) return void E.push(e);
+          if (null == c.Z.getVoiceStateForChannel(a, e.userId)) return void v.push(e);
           ! function(e) {
             let {
               drawable: t,
@@ -64,7 +64,7 @@ function b(e, t, n, b) {
             } = e;
             switch (t.type) {
               case d.W.LINE:
-                return (0, _.Z)({
+                return (0, m.Z)({
                   line: t,
                   context: n,
                   canvasWidth: r,
@@ -90,28 +90,28 @@ function b(e, t, n, b) {
             }
           }({
             drawable: e,
-            context: m,
+            context: _,
             canvasWidth: g,
             canvasHeight: b,
             fallbackColor: r,
             outlineColorDark: o,
             outlineColorLight: u,
             linesDrawnAt: i,
-            deadDrawables: E,
+            deadDrawables: v,
             streamerId: l
           })
-        }), E.length > 0 && (0, s.fW)(E, l)
+        }), v.length > 0 && (0, s.fW)(v, l)
       }({
         canvasRef: e,
         drawables: n,
-        fallbackColor: E,
+        fallbackColor: v,
         linesDrawnAt: S,
         streamerId: t,
-        outlineColorDark: v,
+        outlineColorDark: E,
         outlineColorLight: h,
         channelId: b
       })
-    }, [e, b, E, v, h]);
+    }, [e, b, v, E, h]);
   r.useEffect(() => {
     let t = new ResizeObserver(() => {
       let t = e.current;
@@ -132,7 +132,7 @@ function b(e, t, n, b) {
   }, [e, O, n]);
   r.useEffect(() => {
     let e = y.current;
-    return u.Z.addChangeListener(I), I(), (0, o.vM)(t.getAvatarURL(null, m.Ks)), () => {
+    return u.Z.addChangeListener(I), I(), (0, o.vM)(t.getAvatarURL(null, _.Ks)), () => {
       u.Z.removeChangeListener(I), e.stop()
     }
   })

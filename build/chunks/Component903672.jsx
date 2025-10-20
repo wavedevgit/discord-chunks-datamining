@@ -99,21 +99,21 @@ function Z(e) {
     canCloseAllMessages: true,
     renderHeader: Z,
     renderEmptyState: A,
-    renderMessage: w,
+    renderMessage: T,
     "aria-label": S.intl.string(S.t.jbV6MD),
     listName: "recents"
   })
 }
 
-function w(e, t) {
-  return [(0, r.jsx)(T, {
+function T(e, t) {
+  return [(0, r.jsx)(w, {
     message: e,
     gotoMessage: t,
     dismissible: true
   }, e.id)]
 }
 
-function T(e) {
+function w(e) {
   let {
     message: t,
     gotoMessage: n,

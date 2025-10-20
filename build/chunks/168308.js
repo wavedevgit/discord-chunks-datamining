@@ -6,7 +6,7 @@ require.d(exports, {
   bC: () => l
 });
 var Chunk442837 = require("./442837.js"),
-  Chunk610394 = require("./610394.js"),
+  Chunk509140 = require("./509140.js"),
   Chunk358085 = require("./358085.js");
 
 function o() {
@@ -18,5 +18,5 @@ function s(e) {
 }
 
 function l() {
-  return s((0, Chunk442837.e7)([Chunk610394.ZP], () => Chunk610394.ZP.isSupported()))
+  return s((0, Chunk442837.e7)([Chunk509140.Z], () => Chunk509140.Z.isSupported))
 }

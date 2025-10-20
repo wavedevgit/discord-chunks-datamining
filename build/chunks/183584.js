@@ -27,7 +27,7 @@ let o = {
 };
 
 function s(e, t) {
-  let n = i.ZP.isOverlayV3EnabledForPID(t),
+  let n = i.Z.isOverlayV3EnabledForPID(t),
     a = r.default.disableClickableRegions;
   n || a || l.Z.dispatch({
     type: "OVERLAY_SET_INPUT_LOCKED",
@@ -47,7 +47,7 @@ function u(e) {
     pid: e,
     enabled: false
   });
-  let t = i.ZP.isOverlayV3EnabledForPID(e),
+  let t = i.Z.isOverlayV3EnabledForPID(e),
     n = r.default.disableClickableRegions;
   r.default.isLocked(e) || t || n || l.Z.dispatch({
     type: "OVERLAY_SET_INPUT_LOCKED",

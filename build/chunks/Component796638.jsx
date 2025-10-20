@@ -1,8 +1,8 @@
-/** Chunk was on 38319 **/
+/** Chunk was on 87943 **/
 /** chunk id: 796638, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZB: () => b,
-  ZP: () => E,
+  ZP: () => v,
   cF: () => p
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
@@ -16,8 +16,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk354459 = require("./354459.js"),
   Chunk699966 = require("./699966.js");
 let p = 112,
-  _ = 16 / 9 * 112 + 8,
-  m = 10 * Chunk70956.Z.Millis.SECOND;
+  m = 16 / 9 * 112 + 8,
+  _ = 10 * Chunk70956.Z.Millis.SECOND;
 
 function g(e) {
   var t;
@@ -27,7 +27,7 @@ function g(e) {
 
 function b(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {
-      tileWidth: _,
+      tileWidth: m,
       tileMinWidth: 124,
       tileMargin: 8,
       limit: 12,
@@ -41,16 +41,16 @@ function b(e, t) {
       cropSelfVideo: f,
       version: p
     } = n,
-    [b, E] = i.useState(Date.now());
+    [b, v] = i.useState(Date.now());
   i.useEffect(() => {
     let e = setTimeout(() => {
-      E(Date.now())
-    }, m);
+      v(Date.now())
+    }, _);
     return () => {
       clearTimeout(e)
     }
   }, [t]);
-  let v = i.useRef({}),
+  let E = i.useRef({}),
     {
       visibleParticipants: h,
       participantTileWidth: S
@@ -67,27 +67,27 @@ function b(e, t) {
             case d.fO.USER:
               var n;
               let r = "\x06";
-              return e.speaking ? r = "\x03" : t - e.lastSpoke < m ? r = "\x04" : (null == (n = e.voiceState) ? true : n.selfVideo) && (r = "\x05"), "".concat(r).concat(function(e) {
+              return e.speaking ? r = "\x03" : t - e.lastSpoke < _ ? r = "\x04" : (null == (n = e.voiceState) ? true : n.selfVideo) && (r = "\x05"), "".concat(r).concat(function(e) {
                 let t = String(864e13).length;
                 return String(864e13 - e).padStart(t, "0")
               }(e.lastSpoke)).concat((0, a.Z)(e.userNick, e.user))
           }
         })(e, n)),
-        [p, _] = (0, l.partition)(i, d.Io),
+        [p, m] = (0, l.partition)(i, d.Io),
         b = p.findIndex(g),
-        E = null;
-      false !== b && (E = p[b], p.splice(b, 1));
-      let h = null == E || f ? e : e - r - c,
+        v = null;
+      false !== b && (v = p[b], p.splice(b, 1));
+      let h = null == v || f ? e : e - r - c,
         S = Math.max(0, Math.min(Math.floor((h - c) / (o + c)), u, t.length)),
         y = Math.min((h - c) / S - c, r),
-        O = Math.max(0, S - _.length),
-        I = _.slice(0, S),
+        O = Math.max(0, S - m.length),
+        I = m.slice(0, S),
         C = p.slice(0, O),
         w = Array(O);
       if (O > 0) {
         let e = [];
         for (let t of C) {
-          let n = v.current[t.id];
+          let n = E.current[t.id];
           null != n && n < O ? w[n] = t : e.push(t)
         }
         for (let t = 0; t < w.length; t++) {
@@ -98,10 +98,10 @@ function b(e, t) {
         }
       }
       let j = w.filter(s.lm);
-      v.current = (0, l.keyBy)((0, l.range)(j.length), e => j[e].id);
-      let Z = [...I, ...j];
-      return null != E && (f && Z.length >= S ? Z[Math.max(0, Z.length - 1)] = E : Z.push(E)), {
-        visibleParticipants: Z,
+      E.current = (0, l.keyBy)((0, l.range)(j.length), e => j[e].id);
+      let P = [...I, ...j];
+      return null != v && (f && P.length >= S ? P[Math.max(0, P.length - 1)] = v : P.push(v)), {
+        visibleParticipants: P,
         participantTileWidth: y
       }
     }, [e, t, b, p, f, u, c, o, r]);
@@ -111,7 +111,7 @@ function b(e, t) {
   }
 }
 
-function E(e) {
+function v(e) {
   let {
     participants: t,
     participantTileWidth: n,
@@ -123,7 +123,7 @@ function E(e) {
     inCall: s,
     popoutWindow: d,
     paused: p = false
-  } = e, m = null != d;
+  } = e, _ = null != d;
   return (0, r.jsx)("div", {
     className: f.root,
     children: t.map(e => {
@@ -143,10 +143,10 @@ function E(e) {
           onClick: o,
           onDoubleClick: l,
           onContextMenu: a,
-          width: t ? _ : n,
+          width: t ? m : n,
           inCall: s,
           paused: p,
-          inPopout: m
+          inPopout: _
         })
       }, e.id)
     })

@@ -1,4 +1,4 @@
-/** Chunk was on 38319 **/
+/** Chunk was on 87943 **/
 /** chunk id: 456631, original params: e,t,n (module,exports,require) **/
 let r;
 require.d(exports, {
@@ -13,8 +13,8 @@ var i, l, Chunk392711 = require("./392711.js"),
   Chunk963838 = require("./963838.js"),
   Chunk354459 = require("./354459.js");
 let p = [],
-  _ = {},
-  m = [],
+  m = {},
+  _ = [],
   g = e => {
     null != e && s.Z.dispatch({
       type: "VOICE_CHANNEL_EFFECT_CLEAR",
@@ -22,10 +22,10 @@ let p = [],
     })
   },
   b = [],
-  E = 10 * Chunk70956.Z.Millis.SECOND,
-  v = (0, Chunk392711.debounce)(() => {
-    let e = (0, Chunk963838.cX)(m);
-    Chunk780384.uv.announce(module, "polite"), m = []
+  v = 10 * Chunk70956.Z.Millis.SECOND,
+  E = (0, Chunk392711.debounce)(() => {
+    let e = (0, Chunk963838.cX)(_);
+    Chunk780384.uv.announce(module, "polite"), _ = []
   }, 500);
 class h extends(i = Chunk442837.ZP.Store) {
   get recentlyUsedEmojis() {
@@ -38,7 +38,7 @@ class h extends(i = Chunk442837.ZP.Store) {
     return r
   }
   getEffectForUserId(e) {
-    return _[e]
+    return m[e]
   }
 }(l = "displayName") in h ? Object.defineProperty(h, l, {
   value: "VoiceChannelEffectsStore",
@@ -51,7 +51,7 @@ let S = new h(Chunk570140.Z, {
     let {
       userId: t
     } = e;
-    null != _[t] && delete _[t]
+    null != m[t] && delete m[t]
   },
   VOICE_CHANNEL_EFFECT_RECENT_EMOJI: e => {
     let {
@@ -65,21 +65,21 @@ let S = new h(Chunk570140.Z, {
       userId: n,
       animationType: r
     } = e;
-    null != t && null != r && (_[n] = {
+    null != t && null != r && (m[n] = {
       emoji: t,
       sentAt: Date.now(),
       animationType: r
-    }, m = [...m, {
+    }, _ = [..._, {
       emojiName: t.name,
       userId: n
-    }], v())
+    }], E())
   },
   VOICE_CHANNEL_EFFECT_SENT_LOCAL: () => {
     let e = new Date;
     if ((b = [module, ...b].slice(0, 20)).length >= 20) {
       let t = b[b.length - 1],
         n = module.getTime() - exports.getTime();
-      require < E && (r = new Date(module.getTime() + E - require))
+      require < v && (r = new Date(module.getTime() + v - require))
     }
   },
   VOICE_CHANNEL_EFFECT_UPDATE_TIME_STAMP: e => {

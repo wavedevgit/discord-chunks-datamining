@@ -1,4 +1,4 @@
-/** Chunk was on 38319 **/
+/** Chunk was on 87943 **/
 /** chunk id: 98369, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C
@@ -16,8 +16,8 @@ var r, i, Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js");
 let g = new Map,
   b = new Map,
-  E = false,
-  v = null;
+  v = false,
+  E = null;
 
 function h() {
   return Chunk959457.Z.getAllActiveStreamKeys().reduce((e, t) => {
@@ -37,8 +37,8 @@ function S() {
     if (require !== module && true !== g.get(module)) {
       r = false;
       break
-    } let i = r !== E;
-  return E = r, i
+    } let i = r !== v;
+  return v = r, i
 }
 
 function y(e) {
@@ -50,7 +50,7 @@ function y(e) {
       let t = u.Z.getSecureFramesRosterMapEntry(e);
       if (null == t) returnfalse;
       let n = new Uint8Array(t),
-        r = _.Z.isKeyVerified(e, n) || p.Z.isKeyVerified(e, n),
+        r = m.Z.isKeyVerified(e, n) || p.Z.isKeyVerified(e, n),
         i = (0, f.UB)(e, [u.Z, d.Z]),
         l = r && !i,
         a = l !== g.get(e);
@@ -62,14 +62,14 @@ function y(e) {
 }
 
 function O() {
-  g.clear(), b.clear(), E = false
+  g.clear(), b.clear(), v = false
 }
 class I extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk729303.Z, Chunk651941.Z, Chunk19780.Z, Chunk959457.Z)
   }
   isCallVerified() {
-    return E
+    return v
   }
   isStreamVerified(e) {
     return b.get(e)
@@ -89,8 +89,8 @@ let C = new I(Chunk570140.Z, {
     let {
       channelId: t
     } = e;
-    if (t === v) returnfalse;
-    v = t, O()
+    if (t === E) returnfalse;
+    E = t, O()
   },
   RTC_CONNECTION_STATE: function(e) {
     let {
@@ -98,7 +98,7 @@ let C = new I(Chunk570140.Z, {
       state: n,
       context: r
     } = e;
-    if (n !== m.hes.DISCONNECTED) returnfalse;
+    if (n !== _.hes.DISCONNECTED) returnfalse;
     switch (r) {
       case a.Yn.STREAM:
         if (null == t) returnfalse;

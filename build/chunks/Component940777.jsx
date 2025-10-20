@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk499951 = require("./499951.js");
 
-function T(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -129,7 +129,7 @@ function R() {
           selected: true,
           upperBadge: z,
           lowerBadge: W,
-          children: (0, Chunk951288.jsx)(Chunk481060.LYs, (e = T({}, Chunk120356), t = t = {
+          children: (0, Chunk951288.jsx)(Chunk481060.LYs, (e = w({}, Chunk120356), t = t = {
             ariaLabel: Chunk388032.intl.formatToPlainString(Chunk388032.t["/uzRsr"], {
               guildName: Chunk388032.intl.string(Chunk388032.t.wMWycn),
               mentions: V
@@ -150,7 +150,7 @@ function R() {
                 let {
                   default: e
                 } = await n.e("3190").then(n.bind(n, 631981));
-                return t => (0, r.jsx)(e, T({}, t))
+                return t => (0, r.jsx)(e, w({}, t))
               })
             },
             children: (0, Chunk951288.jsx)("div", {

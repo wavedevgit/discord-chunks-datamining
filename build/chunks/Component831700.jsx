@@ -191,7 +191,7 @@ class en extends Chunk98597.ZP {
     } = this.props, {
       shouldShowActivities: P,
       shouldShowGuildVerificationPopout: N
-    } = this.state, Z = this.getVoiceStatesCount(), w = (0, Chunk951288.jsxs)("li", {
+    } = this.state, Z = this.getVoiceStatesCount(), T = (0, Chunk951288.jsxs)("li", {
       ref: this.ref,
       className: o()(this.getModeClass(), {
         [Chunk55940.disabled]: this.isDisabled()
@@ -255,7 +255,7 @@ class en extends Chunk98597.ZP {
         })
       }), this.renderVoiceUsers()]
     });
-    return Chunk168611 && (w = Chunk619915(Chunk763624)), Chunk973285 && (w = Chunk146773(Chunk888651(Chunk763624))), Chunk933557 && (w = (0, Chunk951288.jsx)(Chunk155409.Z, {
+    return Chunk168611 && (T = Chunk619915(Chunk763624)), Chunk973285 && (T = Chunk146773(Chunk888651(Chunk763624))), Chunk933557 && (T = (0, Chunk951288.jsx)(Chunk155409.Z, {
       childRef: this.ref,
       tutorialId: "voice-conversations",
       position: "right",
@@ -374,7 +374,7 @@ class en extends Chunk98597.ZP {
         children: (0, r.jsx)(u.P3F, {
           className: o()(J.iconItem, n ? J.alwaysShown : null),
           onClick: () => {
-            d.Z.updateChatOpen(e.id, true), (0, T.Kh)(e.id)
+            d.Z.updateChatOpen(e.id, true), (0, w.Kh)(e.id)
           },
           "aria-label": Q.intl.string(Q.t.ZXxLQk),
           children: (0, r.jsx)(u.kBi, {
@@ -425,7 +425,7 @@ function ei(e) {
   }), j = (0, a.e7)([_.Z], () => !!y && null != _.Z.getStartTime(n), [n, y]), {
     isSubscriptionGated: x,
     needSubscriptionToAccess: E
-  } = (0, I.Z)(n.id), S = (0, C.Z)(), N = (0, a.e7)([U.ZP], () => U.ZP.isFavorite(t.id, n.id)), T = e.connected || (null == S ? true : S.channelId) === n.id, {
+  } = (0, I.Z)(n.id), S = (0, C.Z)(), N = (0, a.e7)([U.ZP], () => U.ZP.isFavorite(t.id, n.id)), w = e.connected || (null == S ? true : S.channelId) === n.id, {
     enableHangStatus: A,
     showEmptyChannelTopic: R
   } = (0, Z.bN)({
@@ -433,7 +433,7 @@ function ei(e) {
     location: "VoiceChannel"
   }), {
     enableOpenTIVForPing: L
-  } = w.A.useExperiment({
+  } = T.A.useExperiment({
     guildId: n.guild_id,
     location: "VoiceChannel"
   }, {
@@ -447,7 +447,7 @@ function ei(e) {
     needSubscriptionToAccess: E,
     enableConnectedUserLimit: true,
     enableActivities: true
-  }), V = T && null == F;
+  }), V = w && null == F;
   return (0, r.jsx)(er, et(ee({
     channelName: m,
     embeddedApps: h,
@@ -457,7 +457,7 @@ function ei(e) {
     isSubscriptionGated: x,
     needSubscriptionToAccess: E
   }, u, p, e), {
-    connected: T,
+    connected: w,
     isFavoriteSuggestion: l && !N,
     forceShowButtons: V,
     channelInfo: F,

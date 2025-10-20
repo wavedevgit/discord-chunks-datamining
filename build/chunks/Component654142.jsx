@@ -89,9 +89,9 @@ let _ = Chunk647438.memo(function(e) {
     mentionCount: x.map(e => u.default.getMentionCount(e)).reduce((e, t) => e + t, 0),
     isMentionLowImportance: x.every(e => u.default.getIsMentionLowImportance(e)),
     unread: x.some(e => u.default.hasUnread(e))
-  })), w = i.useCallback(() => {
+  })), T = i.useCallback(() => {
     a.Z.toggleGuildFolderExpand(O)
-  }, [O]), T = i.useCallback(e => {
+  }, [O]), w = i.useCallback(e => {
     (0, o.jW)(e, async () => {
       let {
         default: e
@@ -113,7 +113,7 @@ let _ = Chunk647438.memo(function(e) {
     unread: Z,
     mediaState: I,
     defaultFolderName: S,
-    onExpandCollapse: w,
-    onContextMenu: T
+    onExpandCollapse: T,
+    onContextMenu: w
   }))
 })

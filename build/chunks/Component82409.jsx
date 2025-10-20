@@ -219,7 +219,7 @@ function U(e) {
           style: {
             marginRight: false
           },
-          children: Q === j.v8.DROPDOWN && !J.isGuildEntrypointEnabled && (0, r.jsx)(w.p, {})
+          children: Q === j.v8.DROPDOWN && !J.isGuildEntrypointEnabled && (0, r.jsx)(T.p, {})
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
@@ -235,7 +235,7 @@ function U(e) {
         hideBanner: !B || f !== A.V5.ALL
       }), $ && (0, r.jsx)(c.LZC, {
         size: 8
-      }), (0, r.jsx)(T.Z, {
+      }), (0, r.jsx)(w.Z, {
         className: L.messageList,
         renderMessageGroup: H,
         messages: f === A.V5.BOOKMARKS ? Y : q,

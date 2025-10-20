@@ -212,7 +212,7 @@ function eu(e) {
   } = e, [a] = (0, p.Wu)([D.ZP], () => {
     let e = D.ZP.getGuildsTree();
     return [e, e.version]
-  }), s = a.getRoots(), c = (0, p.Wu)([T.Z], () => T.Z.getGeoRestrictedGuilds()).map(e => (0, r.jsx)(z.Z, {
+  }), s = a.getRoots(), c = (0, p.Wu)([w.Z], () => w.Z.getGeoRestrictedGuilds()).map(e => (0, r.jsx)(z.Z, {
     id: e.id,
     name: e.name,
     icon: e.icon
@@ -243,7 +243,7 @@ function ed(e) {
     isSorting: O,
     startSorting: C,
     stopSorting: E
-  } = (0, M.Z)(), N = i.useRef(false), [T] = i.useState(() => new h.V7), A = i.useRef(null), R = i.useRef(null), B = (0, u.OP)(), {
+  } = (0, M.Z)(), N = i.useRef(false), [w] = i.useState(() => new h.V7), A = i.useRef(null), R = i.useRef(null), B = (0, u.OP)(), {
     ref: F
   } = B, V = function(e, t) {
     if (null == e) return {};
@@ -294,13 +294,13 @@ function ed(e) {
       if (!eg) {
         let {
           scrollTop: e
-        } = w.Z.getGuildListDimensions();
+        } = T.Z.getGuildListDimensions();
         ef.scrollTo({
           to: e,
           animate: false
         })
       }
-      return N.current = true, () => T.stop()
+      return N.current = true, () => w.stop()
     }
   }), i.useEffect(() => {
     if (ef.setGuildsTree(s), N.current || 0 === s.size) return;

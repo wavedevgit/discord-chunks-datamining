@@ -57,7 +57,9 @@ let g = "overlayKeybindExperimentPreviousKeybindSettings",
   E = new Chunk579092.Yd("OverlayKeybindExperimentManager");
 class b {
   constructor() {
-    _(this, "_settings", true), _(this, "setPreviousKeybind", e => {
+    _(this, "_settings", true), _(this, "setKeybindTreatment", e => {
+      this._settings.keybindTreatment = e, a.K.set(g, this._settings)
+    }), _(this, "getKeybindTreatment", () => this._settings.keybindTreatment), _(this, "setPreviousKeybind", e => {
       this._settings.previousKeybind = e, a.K.set(g, this._settings)
     }), _(this, "getPreviousKeybind", () => this._settings.previousKeybind), _(this, "hasPreviousKeybind", () => null != this._settings.previousKeybind), _(this, "setIsNewOverlayUser", e => {
       this._settings.isNewOverlayUser = e, a.K.set(g, this._settings)
@@ -84,7 +86,7 @@ class y extends Chunk147913.Z {
       let {
         keybindOverride: e
       } = (0, d.eV)("OverlayKeybindExperimentManager", false);
-      null == e ? await this.restoreKeybind() : await this.dispatchSetKeybind(e)
+      this._storage.getKeybindTreatment() !== e && (null == e ? await this.restoreKeybind() : await this.dispatchSetKeybind(e), this._storage.setKeybindTreatment(e))
     }), _(this, "processExperiment", async () => {
       if (!__OVERLAY__ && !this._isProcessing) {
         this._isProcessing = true;

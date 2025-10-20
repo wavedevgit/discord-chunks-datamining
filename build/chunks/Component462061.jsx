@@ -1,4 +1,4 @@
-/** Chunk was on 38319 **/
+/** Chunk was on 87943 **/
 /** chunk id: 462061, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   T: () => D,
@@ -34,7 +34,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk7504 = require("./7504.js");
-let R = Chunk481060.EFr.SIZE_80,
+let T = Chunk481060.EFr.SIZE_80,
   N = Chunk481060.EFr.SIZE_40;
 
 function D(e) {
@@ -46,12 +46,12 @@ function D(e) {
     text: A.intl.string(A.t.HFwRpq),
     position: "bottom",
     children: (0, r.jsx)("div", {
-      className: T.interactive,
+      className: R.interactive,
       children: (0, r.jsx)(s.Mgn, {
         color: s.TVs.colors.STATUS_WARNING_BACKGROUND
       })
     })
-  }) : (0, r.jsx)(Z.Z, {
+  }) : (0, r.jsx)(P.Z, {
     userId: n.user.id
   })
 }
@@ -64,26 +64,26 @@ function M(e) {
     width: c,
     selected: s,
     fit: h,
-    onVideoResize: Z,
+    onVideoResize: P,
     blocked: D,
     ignored: M,
     noVideoRender: k = false,
     pulseSpeakingIndicator: F = false,
     inOverlayPopout: L = false,
-    paused: V = false
-  } = e, U = O.Z.getVideoComponent(), W = (0, o.e7)([S.default], () => S.default.getId()), {
+    paused: U = false
+  } = e, V = O.Z.getVideoComponent(), W = (0, o.e7)([S.default], () => S.default.getId()), {
     user: H,
     streamId: B,
     speaking: q
-  } = t, Y = H.id === W, z = (0, w.ZP)(t), K = (0, o.e7)([I.Z], () => I.Z.isFocused()), G = (0, o.e7)([E.Z], () => E.Z.getWindowFocused(P.KJ3.CHANNEL_CALL_POPOUT)), Q = (0, o.e7)([O.Z], () => null != H.id && O.Z.isLocalVideoDisabled(H.id, (0, p.Z)(t.type)), [H.id, t.type]), X = (0, o.e7)([y.ZP], () => y.ZP.isGuestOrLurker(n.guild_id, H.id)), J = C.ZP.getName(n.getGuildId(), n.id, H) + (X ? " ".concat(A.intl.string(A.t["pFO/Pj"])) : ""), $ = q && (G || K), ee = c < 124 ? N : R, {
+  } = t, z = H.id === W, Y = (0, w.ZP)(t), K = (0, o.e7)([I.Z], () => I.Z.isFocused()), G = (0, o.e7)([v.Z], () => v.Z.getWindowFocused(Z.KJ3.CHANNEL_CALL_POPOUT)), Q = (0, o.e7)([O.Z], () => null != H.id && O.Z.isLocalVideoDisabled(H.id, (0, p.Z)(t.type)), [H.id, t.type]), X = (0, o.e7)([y.ZP], () => y.ZP.isGuestOrLurker(n.guild_id, H.id)), J = C.ZP.getName(n.getGuildId(), n.id, H) + (X ? " ".concat(A.intl.string(A.t["pFO/Pj"])) : ""), $ = q && (G || K), ee = c < 124 ? N : T, {
     avatarSrc: et,
     avatarDecorationSrc: en
-  } = (0, v.Z)({
+  } = (0, E.Z)({
     userId: H.id,
     guildId: n.guild_id,
     size: ee,
     animateOnHover: !$
-  }), er = (0, o.e7)([f.Z], () => f.Z.getSelectedParticipant(n.id)), ei = (0, m.Z)(x.Yn.DEFAULT, t.user.id), el = (0, _.Z)(t.user.id), ea = {
+  }), er = (0, o.e7)([f.Z], () => f.Z.getSelectedParticipant(n.id)), ei = (0, _.Z)(x.Yn.DEFAULT, t.user.id), el = (0, m.Z)(t.user.id), ea = {
     channel: n,
     selectedParticipant: er,
     user: H
@@ -96,26 +96,26 @@ function M(e) {
       selectedParticipant: t,
       user: n
     } = eo.current;
-    e.isGuildStageVoice() && !z && (null == t ? true : t.id) === n.id && u.Z.selectParticipant(e.id, null)
-  }, [z]), l && !Q && !k && z && !s && null != U && O.Z.supports(x.AN.VIDEO)) ? null != ei && null == el ? (0, r.jsx)(j.Z, {
+    e.isGuildStageVoice() && !Y && (null == t ? true : t.id) === n.id && u.Z.selectParticipant(e.id, null)
+  }, [Y]), l && !Q && !k && Y && !s && null != V && O.Z.supports(x.AN.VIDEO)) ? null != ei && null == el ? (0, r.jsx)(j.Z, {
     avError: ei,
     userId: t.id,
     width: c,
     selected: s
   }) : (0, r.jsx)(b.Z, {
-    onResize: Z,
-    wrapperClassName: T.videoWrapper,
-    className: T.content,
-    mirror: Y,
+    onResize: P,
+    wrapperClassName: R.videoWrapper,
+    className: R.content,
+    mirror: z,
     streamId: B,
-    videoComponent: U,
+    videoComponent: V,
     fit: h,
     videoSpinnerContext: H.id === W ? d.m.SELF_VIDEO : d.m.REMOTE_VIDEO,
-    paused: V,
+    paused: U,
     userId: H.id
   }, B) : (0, r.jsx)("div", {
-    className: a()(T.content, {
-      [T.blockedAvatar]: D || M
+    className: a()(R.content, {
+      [R.blockedAvatar]: D || M
     }),
     children: (0, r.jsx)(g.Z, {
       "aria-label": J,

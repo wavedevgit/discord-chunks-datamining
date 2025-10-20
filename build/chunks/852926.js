@@ -19,7 +19,7 @@ var Chunk13245 = require("./13245.js"),
 let p = ["207646673902501888"];
 
 function f(e) {
-  return null != e && !!i.default.isOverlayOOPEnabledForPid(e) && l.ZP.isReady(e)
+  return null != e && !!i.default.isOverlayOOPEnabledForPid(e) && l.Z.isReady(e)
 }
 
 function h(e) {

@@ -45,12 +45,12 @@ function D(e) {
   let d = null != (a = b.default.getUser(null == (i = c.message) || null == (n = i.author) ? true : n.id)) ? a : new m.Z(null == (l = c.message) ? true : l.author),
     f = p.Z.parse(u);
   return (0, r.jsxs)("div", {
-    className: T.messagePreviewContainer,
+    className: w.messagePreviewContainer,
     children: [(0, r.jsx)(s.Z, {
       user: d,
       size: o.EFr.SIZE_24
     }), (0, r.jsx)(o.Text, {
-      className: T.messagePreviewText,
+      className: w.messagePreviewText,
       variant: "text-sm/normal",
       lineClamp: 2,
       children: f
@@ -67,7 +67,7 @@ function L(e) {
   if (null == t) return null;
   let n = p.Z.parse(t);
   return (0, r.jsx)("div", {
-    className: T.calloutContainer,
+    className: w.calloutContainer,
     children: (0, r.jsx)(o.Text, {
       variant: "text-sm/normal",
       lineClamp: 2,
@@ -79,15 +79,15 @@ function L(e) {
 function M(e) {
   let {
     item: t
-  } = e, n = R, i = w.intl.string(w.t.SJTHJS);
-  return t.completed && (n = A, i = w.intl.string(w.t.f6RTAA)), (0, r.jsxs)("div", {
-    className: T.lifecycleContainer,
+  } = e, n = R, i = T.intl.string(T.t.SJTHJS);
+  return t.completed && (n = A, i = T.intl.string(T.t.f6RTAA)), (0, r.jsxs)("div", {
+    className: w.lifecycleContainer,
     children: [(0, r.jsx)("img", {
-      className: T.checkbox,
+      className: w.checkbox,
       alt: "",
       src: n
     }), (0, r.jsx)(o.Text, {
-      className: T.lifecycleText,
+      className: w.lifecycleText,
       variant: "text-xs/bold",
       color: "header-secondary",
       children: i
@@ -175,29 +175,29 @@ let G = Chunk647438.memo(function(e) {
         })
       }),
       {
-        emoji_id: w,
+        emoji_id: T,
         emoji_name: A
       } = l,
-      R = null != w || null != A ? (0, r.jsx)(a.Z, {
-        className: T.emoji,
-        emojiId: w,
+      R = null != T || null != A ? (0, r.jsx)(a.Z, {
+        className: w.emoji,
+        emojiId: T,
         emojiName: A
       }) : null;
     return (0, r.jsxs)("div", {
-      className: T.row,
+      className: w.row,
       children: [(0, r.jsxs)(o.kL8, {
-        className: T.rowContent,
+        className: w.rowContent,
         focusProps: {
           offset: 4
         },
         "aria-label": E,
         onClick: g,
         children: [f ? null : (0, r.jsx)("div", {
-          className: T.unread
+          className: w.unread
         }), (0, r.jsx)(I.U, {
           item: l
         }), (0, r.jsxs)("div", {
-          className: T.body,
+          className: w.body,
           children: ["lifecycle_item" === l.type && null != l.item_enum && (0, r.jsx)(M, {
             item: l
           }), (0, r.jsxs)(o.Text, {

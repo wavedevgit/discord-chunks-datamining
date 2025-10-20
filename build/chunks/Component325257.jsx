@@ -135,7 +135,7 @@ let k = Chunk647438.memo(function(e) {
         dragging: e.isDragging()
       })
     }),
-    ef = (0, c.Ie)(null != eo ? eo : w.lds, null != ea ? 2 : 1),
+    ef = (0, c.Ie)(null != eo ? eo : T.lds, null != ea ? 2 : 1),
     [eh, eg] = i.useState(false),
     em = !ee && eh,
     [eb, e_] = i.useState(false),
@@ -185,7 +185,7 @@ let k = Chunk647438.memo(function(e) {
         eO || e_(false)
       }
     }) : (0, r.jsx)(p.LYs, D(R({
-      ariaLabel: T.intl.formatToPlainString(T.t["/uzRsr"], {
+      ariaLabel: w.intl.formatToPlainString(w.t["/uzRsr"], {
         guildName: H.name,
         mentions: X
       }),
@@ -207,7 +207,7 @@ let k = Chunk647438.memo(function(e) {
       "aria-posinset": el,
       "aria-selected": W
     })),
-    ew = ed ? (0, r.jsx)(S.OG, {
+    eT = ed ? (0, r.jsx)(S.OG, {
       children: (0, r.jsx)(P.Z, {})
     }) : (0, r.jsx)(s.animated.div, {
       ref: $ ? e => {
@@ -242,7 +242,7 @@ let k = Chunk647438.memo(function(e) {
       guild: H,
       disabled: ee,
       isDragging: ed,
-      children: ew
+      children: eT
     }), $ ? (0, r.jsx)(S.ZP, {
       name: H.name,
       targetNode: G,

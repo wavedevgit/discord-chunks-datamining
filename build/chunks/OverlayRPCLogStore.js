@@ -9,8 +9,8 @@ var r, Chunk442837 = require("./442837.js"),
   Chunk579092 = require("./579092.js"),
   Chunk570140 = require("./570140.js"),
   Chunk188274 = require("./188274.js"),
-  Chunk111628 = require("./111628.js"),
-  Chunk837268 = require("./837268.js");
+  Chunk837268 = require("./837268.js"),
+  Chunk338949 = require("./338949.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -36,7 +36,7 @@ function b(e) {
     timestamp: r,
     context: i
   } = e;
-  if (!l.Z.hasRenderDebugMode(c.GO.LegacyOverlayLogging) || __OVERLAY__) returnfalse;
+  if (!c.Z.hasRenderDebugMode(l.GO.LegacyOverlayLogging) || __OVERLAY__) returnfalse;
   if (m.push({
       level: t,
       message: n,
@@ -77,7 +77,7 @@ function v(e) {
     enabled: t,
     mode: n
   } = e;
-  return n === c.GO.LegacyOverlayLogging && (t ? y() : O()), false
+  return n === l.GO.LegacyOverlayLogging && (t ? y() : O()), false
 }
 
 function I(e) {
@@ -88,7 +88,7 @@ function I(e) {
 }
 class T extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    Chunk111628.Z.hasRenderDebugMode(Chunk837268.GO.LegacyOverlayLogging) && y()
+    Chunk338949.Z.hasRenderDebugMode(Chunk837268.GO.LegacyOverlayLogging) && y()
   }
   getAllLogs() {
     return m

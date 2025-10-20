@@ -1,4 +1,4 @@
-/** Chunk was on 38319 **/
+/** Chunk was on 87943 **/
 /** chunk id: 849171, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   OV: () => M,
@@ -52,7 +52,7 @@ function M(e) {
     max: 4,
     renderUser: e => {
       if (null == e || e === h.ag) return null;
-      let t = T.ZP.getName(n, i, e);
+      let t = R.ZP.getName(n, i, e);
       return (0, r.jsx)(c.u, {
         text: t,
         children: (0, r.jsx)("img", {
@@ -70,44 +70,44 @@ function k(e) {
   let {
     participants: l,
     application: c,
-    channel: _,
+    channel: m,
     width: g
-  } = e, b = g > 400 ? 2 : +(g > 300), [E] = g > 400 ? [s.EFr.SIZE_56, 56] : g > 300 ? [s.EFr.SIZE_32, 32] : [s.EFr.SIZE_24, 24], v = (0, o.Wu)([x.default, Z.default], () => Array.from(l).map(e => (0, p.J)(e, Z.default) ? null : x.default.getUser(e.userId)).filter(A.lm)), h = (0, o.e7)([d.ZP], () => {
+  } = e, b = g > 400 ? 2 : +(g > 300), [v] = g > 400 ? [s.EFr.SIZE_56, 56] : g > 300 ? [s.EFr.SIZE_32, 32] : [s.EFr.SIZE_24, 24], E = (0, o.Wu)([x.default, P.default], () => Array.from(l).map(e => (0, p.J)(e, P.default) ? null : x.default.getUser(e.userId)).filter(A.lm)), h = (0, o.e7)([d.ZP], () => {
     var e;
-    return null != (e = d.ZP.getEmbeddedActivitiesForChannel(_.id).find(e => e.applicationId === c.id)) ? e : d.ZP.getEmbeddedActivitiesForStartingChannel(_.id).find(e => e.applicationId === c.id)
+    return null != (e = d.ZP.getEmbeddedActivitiesForChannel(m.id).find(e => e.applicationId === c.id)) ? e : d.ZP.getEmbeddedActivitiesForStartingChannel(m.id).find(e => e.applicationId === c.id)
   }), {
     analyticsLocations: S
-  } = (0, I.ZP)(), y = (0, u.O)(), O = T.ZP.getName(_.getGuildId(), _.id, null == v ? true : v[0]), w = (0, m.s5)({
+  } = (0, I.ZP)(), y = (0, u.O)(), O = R.ZP.getName(m.getGuildId(), m.id, null == E ? true : E[0]), w = (0, _.s5)({
     userId: null == (t = x.default.getCurrentUser()) ? true : t.id,
-    channelId: _.id,
+    channelId: m.id,
     application: c
-  }) === m.Fw.CAN_JOIN, j = null != (n = _.getGuildId()) ? n : true, P = i.useId(), D = c.id, k = i.useMemo(() => ({
-    channel: _,
+  }) === _.Fw.CAN_JOIN, j = null != (n = m.getGuildId()) ? n : true, Z = i.useId(), D = c.id, k = i.useMemo(() => ({
+    channel: m,
     type: "channel"
-  }), [_]), {
+  }), [m]), {
     submitting: F
   } = (0, C.Z)({
     applicationId: D,
     context: k,
-    launchingComponentId: P
+    launchingComponentId: Z
   });
   return (0, r.jsxs)("div", {
     className: N.splash,
     children: [(0, r.jsx)(M, {
-      avatarSize: E,
+      avatarSize: v,
       guildId: j,
-      channelId: _.id,
-      users: v
+      channelId: m.id,
+      users: E
     }), (0, r.jsx)(s.Text, {
       className: a()(N.subheader, {
         [N.small]: 0 === b,
         [N.medium]: 1 === b
       }),
       variant: "text-sm/normal",
-      children: v.length > 1 ? R.intl.formatToPlainString(R.t.cpe6CA, {
+      children: E.length > 1 ? T.intl.formatToPlainString(T.t.cpe6CA, {
         username: O,
-        count: v.length - 1
-      }) : R.intl.formatToPlainString(R.t["7Uuia2"], {
+        count: E.length - 1
+      }) : T.intl.formatToPlainString(T.t["7Uuia2"], {
         username: O
       })
     }), (0, r.jsx)(s.Text, {
@@ -120,14 +120,14 @@ function k(e) {
     }), (0, r.jsx)("div", {
       className: N.buttons,
       children: w ? (0, r.jsx)(s.Button, {
-        text: R.intl.string(R.t["4i2vj4"]),
+        text: T.intl.string(T.t["4i2vj4"]),
         onClick: function(e) {
           e.stopPropagation(), null != h && (0, f.Z)({
             applicationId: h.applicationId,
-            activityChannelId: _.id,
+            activityChannelId: m.id,
             locationObject: y.location,
             analyticsLocations: S,
-            componentId: P
+            componentId: Z
           })
         },
         loading: F,
@@ -149,33 +149,33 @@ function F(e) {
     analyticsLocations: s
   } = (0, I.ZP)(O.Z.ACTIVITY_TILE), {
     applicationId: u
-  } = t, d = (0, g.Z)(), f = null != d && (0, _.p)(d.location) === c.id && d.applicationId === u, [p] = (0, w.Z)([u]), {
-    url: m
+  } = t, d = (0, g.Z)(), f = null != d && (0, m.p)(d.location) === c.id && d.applicationId === u, [p] = (0, w.Z)([u]), {
+    url: _
   } = (0, b.Z)({
     applicationId: u,
     names: D,
     size: 1024
-  }), h = !l && f, C = !f, Z = !f && !l, x = (0, o.e7)([P.Z, j.Z], () => (0, y.Z)({
-    LayerStore: P.Z,
+  }), h = !l && f, C = !f, P = !f && !l, x = (0, o.e7)([Z.Z, j.Z], () => (0, y.Z)({
+    LayerStore: Z.Z,
     PopoutWindowStore: j.Z
   }));
   return i.useEffect(() => {
     if (h && null != d && !x) {
       let e = (0, S.Z)(d.location.id, d.applicationId);
-      (0, v.jy)(e)
+      (0, E.jy)(e)
     }
   }, [h, d, x]), (0, r.jsx)(I.Gt, {
     value: s,
     children: (0, r.jsxs)("div", {
       className: N.container,
-      children: [h && null != d && (0, r.jsx)(E.Z, {
+      children: [h && null != d && (0, r.jsx)(v.Z, {
         className: N.iframe,
         embedId: (0, S.Z)(d.location.id, u)
-      }), C && null != p && null != m && "" !== m ? (0, r.jsx)("img", {
+      }), C && null != p && null != _ && "" !== _ ? (0, r.jsx)("img", {
         className: N.splashImage,
         alt: p.name,
-        src: m
-      }) : null, Z && null != p && (0, r.jsx)(k, {
+        src: _
+      }) : null, P && null != p && (0, r.jsx)(k, {
         width: n,
         channel: c,
         participants: t.participants,

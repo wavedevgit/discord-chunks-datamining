@@ -1,4 +1,4 @@
-/** Chunk was on 38319 **/
+/** Chunk was on 87943 **/
 /** chunk id: 517525, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => F
@@ -47,7 +47,7 @@ function j(e) {
   return e
 }
 
-function Z(e, t) {
+function P(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -59,7 +59,7 @@ function Z(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
+let Z = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
   x = {
     opacity: 0,
     transform: "translate3d(100%, 0, 0)"
@@ -68,17 +68,17 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
     opacity: 1,
     transform: "translate3d(0%, 0, 0)"
   },
-  T = {
+  R = {
     opacity: 0
   },
-  R = {
+  T = {
     opacity: 1
   },
   N = {
-    borderRadius: "".concat(P, "px ").concat(P, "px ").concat(P, "px ").concat(P, "px")
+    borderRadius: "".concat(Z, "px ").concat(Z, "px ").concat(Z, "px ").concat(Z, "px")
   },
   D = {
-    borderRadius: "0px ".concat(P, "px ").concat(P, "px 0px")
+    borderRadius: "0px ".concat(Z, "px ").concat(Z, "px 0px")
   },
   M = {
     mass: 1,
@@ -92,55 +92,55 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
         isUpsellEnabled: c,
         shape: f,
         size: b,
-        didTrackUpsellViewed: P,
+        didTrackUpsellViewed: Z,
         setDidTrackUpsellViewed: x,
         className: A,
-        premiumIndicator: T,
-        quality: R
+        premiumIndicator: R,
+        quality: T
       } = e,
       {
         analyticsLocations: N
-      } = (0, m.ZP)(),
+      } = (0, _.ZP)(),
       D = null != (0, y.Z)(o);
     try {
-      t = (0, S.nG)(R)
+      t = (0, S.nG)(T)
     } catch (e) {
       t = false
     }
     try {
-      l = (0, S.tR)(R)
+      l = (0, S.tR)(T)
     } catch (e) {
       l = false
     }
     let M = t || l,
       {
         location: k
-      } = (0, _.O)(),
-      F = (0, s.e7)([E.default], () => E.default.getCurrentUser()),
+      } = (0, m.O)(),
+      F = (0, s.e7)([v.default], () => v.default.getCurrentUser()),
       L = c && !h.ZP.isPremium(F, I.PremiumTypes.TIER_1) && !h.ZP.canStreamQuality(h.ZP.StreamQuality.MID, F),
-      V = i.useCallback(() => {
+      U = i.useCallback(() => {
         L && M && (0, p.ZDy)(async () => {
           let {
             default: e
           } = await n.e("28479").then(n.bind(n, 78865));
-          return t => (0, r.jsx)(e, Z(j({}, t), {
+          return t => (0, r.jsx)(e, P(j({}, t), {
             analyticsSource: k
           }))
         })
       }, [L, M, k]);
     if (i.useEffect(() => {
-        !P && M && (v.default.track(O.rMx.PREMIUM_UPSELL_VIEWED, {
+        !Z && M && (E.default.track(O.rMx.PREMIUM_UPSELL_VIEWED, {
           type: I.cd.STREAM_QUALITY_INDICATOR,
           has_premium_stream_fps: t,
           has_premium_stream_resolution: l,
           location_stack: N
         }), x(true))
-      }, [t, l, M, P, x, N]), null == R) return null;
-    let U = (0, r.jsx)(d.u, {
+      }, [t, l, M, Z, x, N]), null == T) return null;
+    let V = (0, r.jsx)(d.u, {
       text: D ? C.intl.string(C.t.q8TiVl) : M ? C.intl.string(C.t.IHgpEh) : C.intl.string(C.t.vLb0VV),
       position: "bottom",
       children: (0, r.jsxs)(p.P3F, {
-        onClick: V,
+        onClick: U,
         className: a()(w.qualityIndicator, b, g.eE[f], D ? w.qualityIndicatorLowQuality : w.qualityIndicatorFullQuality, {
           [w.clickable]: L && M
         }),
@@ -150,16 +150,16 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
           className: w.premiumStreamIcon
         }) : null, (0, r.jsx)("span", {
           className: w.qualityResolution,
-          children: (0, S.ml)(R.maxResolution)
+          children: (0, S.ml)(T.maxResolution)
         }), (0, r.jsx)("span", {
-          children: (0, S.bp)(R.maxFrameRate)
+          children: (0, S.bp)(T.maxFrameRate)
         })]
       })
     });
     return (0, r.jsx)(p.IGR, {
-      text: U,
+      text: V,
       className: a()(A, w.qualityIndicatorBadge, {
-        [w.qualityIndicatorBadgePremium]: M && T
+        [w.qualityIndicatorBadgePremium]: M && R
       }),
       color: u.Z.unsafe_rawColors.PRIMARY_500.css,
       shape: g.eE[f]
@@ -173,24 +173,24 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
       size: c,
       className: s,
       premiumIndicator: u
-    } = e, [d, f] = i.useState(false), _ = (0, S.W3)(t), {
-      reducedMotion: m
-    } = i.useContext(p.Sfi), E = n && null != _;
+    } = e, [d, f] = i.useState(false), m = (0, S.W3)(t), {
+      reducedMotion: _
+    } = i.useContext(p.Sfi), v = n && null != m;
     i.useEffect(() => {
       (0, b.Z)(t.stream.ownerId, t.user.getAvatarURL(t.stream.guildId, 80), {
         dispatchWait: true
       })
     }, [t]);
-    let v = (0, p.Yzy)(E, {
+    let E = (0, p.Yzy)(v, {
         enter: {
-          from: m.enabled ? T : x,
-          to: m.enabled ? R : A
+          from: _.enabled ? R : x,
+          to: _.enabled ? T : A
         },
-        leave: m.enabled ? T : x,
+        leave: _.enabled ? R : x,
         config: M
       }, "animate-always"),
       h = (0, p.q_F)({
-        to: E ? D : N,
+        to: v ? D : N,
         config: M
       }, "animate-always");
     return (e => {
@@ -198,10 +198,10 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
         className: n,
         popoutProps: i
       } = e;
-      return (0, r.jsxs)("div", Z(j({
+      return (0, r.jsxs)("div", P(j({
         className: a()(w.streamQualityIndicator, n)
       }, i), {
-        children: [v((e, n) => n ? (0, r.jsx)(o.animated.div, {
+        children: [E((e, n) => n ? (0, r.jsx)(o.animated.div, {
           style: e,
           children: (0, r.jsx)(k, {
             className: w.liveQualityIndicator,
@@ -212,7 +212,7 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
             didTrackUpsellViewed: d,
             setDidTrackUpsellViewed: f,
             premiumIndicator: u,
-            quality: _
+            quality: m
           })
         }) : null), (0, r.jsx)(o.animated.div, {
           style: h,
@@ -220,7 +220,7 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
           children: (0, r.jsx)(g.ZP, {
             look: g.jZ.RED,
             size: c,
-            shape: E ? p.Dv2.ROUND_RIGHT : p.Dv2.ROUND
+            shape: v ? p.Dv2.ROUND_RIGHT : p.Dv2.ROUND
           })
         })]
       }))

@@ -189,7 +189,7 @@ class eN extends Chunk647438.PureComponent {
                 action_type: "invite_to_game",
                 game_id: null != (e = null == c ? true : c.id) ? e : null,
                 application_id: l.application_id
-              }), (0, w.v)(u, w.d.INVITE), eu.default.track(e_.rMx.OPEN_MODAL, {
+              }), (0, T.v)(u, T.d.INVITE), eu.default.track(e_.rMx.OPEN_MODAL, {
                 type: "Send Join Invite",
                 application_id: l.application_id,
                 location: a.location
@@ -488,10 +488,10 @@ let eZ = (0, Chunk730749.Z)(function(e) {
     x = (0, u.e7)([R.Z], () => R.Z.getFakeGameData()),
     S = (0, u.e7)([C.ZP], () => C.ZP.getCurrentEmbeddedActivity()),
     Z = (0, E.Z)() && null != S && (0, j.R)(),
-    w = (0, u.e7)([er.Z], () => (0, F.Z)(er.Z) && (0, ep.isWindows)()),
+    T = (0, u.e7)([er.Z], () => (0, F.Z)(er.Z) && (0, ep.isWindows)()),
     A = (0, u.e7)([el.Z], () => null != o ? el.Z.findActivity(o, e => e.type === e_.IIU.PLAYING) : null),
     D = null != h && h.ownerId === o && h.state !== e_.jm8.ENDED,
-    L = (0, u.e7)([es.default, eo.Z], () => null != p ? (0, T.F6)(p, es.default, eo.Z) : true),
+    L = (0, u.e7)([es.default, eo.Z], () => null != p ? (0, w.F6)(p, es.default, eo.Z) : true),
     M = (0, Y.Z)(),
     [U, V] = i.useState(false),
     H = (0, u.e7)([K.Z], () => K.Z.getWindowOpen(e_.KJ3.ACTIVITY_POPOUT)),
@@ -526,7 +526,7 @@ let eZ = (0, Chunk730749.Z)(function(e) {
     });
   return (0, r.jsx)(eN, eI(eS({}, l), {
     guildId: n,
-    canGoLive: w || Z || true !== x,
+    canGoLive: T || Z || true !== x,
     activity: A,
     embeddedActivity: b,
     frame: _,

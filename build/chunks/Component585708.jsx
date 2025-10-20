@@ -16,7 +16,7 @@ var Chunk13245 = require("./13245.js"),
   Chunk998502 = require("./998502.js"),
   Chunk145597 = require("./145597.js"),
   Chunk624864 = require("./624864.js"),
-  Chunk610394 = require("./610394.js"),
+  Chunk322155 = require("./322155.js"),
   Chunk516542 = require("./516542.jsx"),
   Chunk618373 = require("./618373.jsx"),
   Chunk620954 = require("./620954.js"),
@@ -68,7 +68,7 @@ function b(e, t, n, b) {
         section: v.jXE.OVERLAY,
         object: v.qAy.ACK_TEXT_CHAT_NOTIFICATION,
         objectType: v.Qqv.ACK_SEMI_AUTOMATIC
-      }, true, true, t.id), m.ZP.isInputLocked(n) ? (N("unlock"), r.Z.setInputLocked(false, n)) : (N("jump"), (0, s.uL)(v.Z5c.CHANNEL(e.guild_id, e.id, t.id)), d.isPlatformEmbedded && p.ZP.focus())
+      }, true, true, t.id), m.Z.isInputLocked(n) ? (N("unlock"), r.Z.setInputLocked(false, n)) : (N("jump"), (0, s.uL)(v.Z5c.CHANNEL(e.guild_id, e.id, t.id)), d.isPlatformEmbedded && p.ZP.focus())
     },
     onDismissClick: () => {
       N("dismiss")

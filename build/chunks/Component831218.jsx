@@ -326,7 +326,7 @@ class F extends(r = Chunk647438.Component) {
         c = n.some(e => (0, v.Z)(e)),
         u = {
           num_users_visible: a.length,
-          num_users_visible_with_mobile_indicator: s.filter(e => null != e && T.Z.isMobileOnline(e)).length
+          num_users_visible_with_mobile_indicator: s.filter(e => null != e && w.Z.isMobileOnline(e)).length
         };
       this.hasReportedAnalytics = true, _.ZP.trackWithMetadata(D.rMx.DM_LIST_VIEWED, U(G({}, u, (0, y.X)()), {
         visible_user_ids: s.filter(e => null != e),
@@ -439,7 +439,7 @@ let V = e => {
     listScrollerRef: s,
     createDMCTAButtonVariant: c,
     hideAllDMs: f
-  } = e, g = l.Children.count(o), _ = w.Z.getMutablePrivateChannels(), y = f ? {} : (0, P.k1)(_), v = (0, p.Wu)([A.Z, I.Z, N.Z], () => {
+  } = e, g = l.Children.count(o), _ = T.Z.getMutablePrivateChannels(), y = f ? {} : (0, P.k1)(_), v = (0, p.Wu)([A.Z, I.Z, N.Z], () => {
     let e = A.Z.getPrivateChannelIds(),
       t = (0, P.tU)(e, [I.Z, N.Z]);
     return f ? [] : t
@@ -448,11 +448,11 @@ let V = e => {
   let {
     analyticsLocations: j
   } = (0, O.ZP)(b.Z.CONTACTS_LIST), S = (0, Z.Ll)(), {
-    keyboardModeEnabled: T,
+    keyboardModeEnabled: w,
     version: R
-  } = (0, p.cj)([m.Z, w.Z], () => ({
+  } = (0, p.cj)([m.Z, T.Z], () => ({
     keyboardModeEnabled: m.Z.keyboardModeEnabled,
-    version: null != n ? "".concat(n, ":").concat(w.Z.getPrivateChannelsVersion()) : w.Z.getPrivateChannelsVersion()
+    version: null != n ? "".concat(n, ":").concat(T.Z.getPrivateChannelsVersion()) : T.Z.getPrivateChannelsVersion()
   })), D = l.useRef(null), L = null != s ? s : D, M = l.useCallback(e => {
     let t = L.current,
       n = document.querySelector(e);
@@ -483,7 +483,7 @@ let V = e => {
     })
   }), [L]), V = (0, x.Dt)(), H = (0, d.ZP)({
     id: "private-channels-".concat(V),
-    isEnabled: T,
+    isEnabled: w,
     scrollToStart: k,
     scrollToEnd: B,
     defaultFocused: (g + +!!a).toString(),

@@ -99,7 +99,7 @@ function V(e) {
     user: t.author,
     compact: true,
     isRepliedMessage: true
-  }), w = (0, r.jsx)("div", {
+  }), T = (0, r.jsx)("div", {
     className: U.usernameTagContainer,
     inert: true,
     children: (0, r.jsx)(j.Z, {
@@ -161,7 +161,7 @@ function V(e) {
                 color: null != y ? y : true
               },
               children: (0, r.jsx)(g.Z, {
-                children: w
+                children: T
               })
             }), P]
           }) : (0, r.jsx)(g.Z, {
@@ -385,7 +385,7 @@ let K = (0, Chunk647438.memo)(function(e) {
     return e.isMenuOpenForMessage(null != (t = null == f ? true : f.id) ? t : null)
   }), {
     notificationCenterVariant: _
-  } = (0, w.pN)({
+  } = (0, T.pN)({
     location: "NotificationsInboxMessageUnit"
   }), O = i.useMemo(() => "".concat(null == f ? true : f.author.username, ": ").concat(null == m ? true : m.name), [null == f ? true : f.author.username, null == m ? true : m.name]), y = null != (t = null == a ? true : a.map(e => e.message).filter(e => null != e)) ? t : [];
   return null == f || null == m ? null : (0, r.jsx)(u.kL8, {
@@ -395,11 +395,11 @@ let K = (0, Chunk647438.memo)(function(e) {
       [U.actionMenuOpen]: b
     }),
     onClick: () => {
-      T.Z.inboxItemClick({
+      w.Z.inboxItemClick({
         message: f,
         channel: m,
         isUnread: p,
-        isSidebar: _ === w.jP.SIDEBAR,
+        isSidebar: _ === T.jP.SIDEBAR,
         viewId: h
       })
     },

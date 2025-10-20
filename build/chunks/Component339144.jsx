@@ -43,7 +43,7 @@ function N(e, t, n) {
 let Z = Chunk647438.memo(function(e) {
     var t;
     let l, a, p, Z, {
-        stream: T,
+        stream: w,
         canGoLive: A,
         guildId: R,
         isStreaming: D,
@@ -93,8 +93,8 @@ let Z = Chunk647438.memo(function(e) {
         })
       }, [K]),
       J = i.useCallback(() => {
-        (0, y.Z)(T)
-      }, [T]),
+        (0, y.Z)(w)
+      }, [w]),
       $ = i.useCallback(() => {
         let e = null != L && (0, v.vd)(L.type) ? L : null,
           t = null != e ? e.getGuildId() : R;
@@ -188,8 +188,8 @@ let Z = Chunk647438.memo(function(e) {
         onClick: Q(U.applicationId),
         icon: c.PBZ
       }),
-      ep = null == T ? null : (0, r.jsx)(b.Z, {}),
-      ef = ei && ee && !en ? (0, r.jsx)(w, {
+      ep = null == w ? null : (0, r.jsx)(b.Z, {}),
+      ef = ei && ee && !en ? (0, r.jsx)(T, {
         runningGame: k,
         startAuthorization: () => {
           ea(true), null != el.current && clearTimeout(el.current), el.current = setTimeout(() => {
@@ -218,7 +218,7 @@ let Z = Chunk647438.memo(function(e) {
       children: [null != ef ? ef : ec, es, null != (t = null != eu ? eu : ed) ? t : ep, eh]
     })
   }),
-  w = Chunk647438.forwardRef(function(e, t) {
+  T = Chunk647438.forwardRef(function(e, t) {
     let {
       runningGame: n,
       startAuthorization: i,
