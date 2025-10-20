@@ -28,13 +28,13 @@ let d = Chunk647438.forwardRef(function(e, t) {
     onMouseEnter: h,
     onMouseLeave: j,
     "aria-label": S,
-    "aria-checked": x,
-    role: N,
+    "aria-checked": N,
+    role: x,
     tooltipColor: E,
     tooltipForceOpen: P,
     tooltipContentClassName: C,
-    tooltipPositionKeyStemOverride: w,
-    tooltipShouldShow: T,
+    tooltipPositionKeyStemOverride: T,
+    tooltipShouldShow: w,
     plated: Z
   } = e, I = "function" == typeof f ? (0, r.jsx)(f, {
     width: 20,
@@ -51,8 +51,8 @@ let d = Chunk647438.forwardRef(function(e, t) {
     color: E,
     tooltipContentClassName: C,
     forceOpen: P,
-    shouldShow: T,
-    positionKeyStemOverride: w,
+    shouldShow: w,
+    positionKeyStemOverride: T,
     children: e => {
       var n, a, {
           onClick: f,
@@ -116,8 +116,8 @@ let d = Chunk647438.forwardRef(function(e, t) {
           null == g || g(), null == j || j()
         },
         onContextMenu: l,
-        role: N,
-        "aria-checked": x,
+        role: x,
+        "aria-checked": N,
         focusProps: {
           offset: {
             left: false,

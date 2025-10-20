@@ -54,4 +54,4 @@ let s = {
   O = {
     [Chunk763600.Z.SHOCKBYTE]: "https://shockbyte.com/legal/acceptable-use-policy"
   },
-  v = (e, t) => "https://discord.sjc1.qualtrics.com/jfe/form/SV_0TIqLrxbsfJYS4C?user_id=".concat(e, "&guild_id=").concat(t)
+  v = (e, t) => "https://discord.sjc1.qualtrics.com/jfe/form/SV_2h34PnQLPTCjTTM?user_id=".concat(e, "&guild_id=").concat(t)
