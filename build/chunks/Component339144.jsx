@@ -1,4 +1,4 @@
-/** Chunk was on 57695 **/
+/** Chunk was on 30437 **/
 /** chunk id: 339144, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   J: () => Z,
@@ -43,7 +43,7 @@ function N(e, t, n) {
 let Z = Chunk647438.memo(function(e) {
     var t;
     let l, a, p, Z, {
-        stream: T,
+        stream: w,
         canGoLive: A,
         guildId: R,
         isStreaming: D,
@@ -66,7 +66,7 @@ let Z = Chunk647438.memo(function(e) {
       }),
       {
         parentAnalyticsLocation: K
-      } = (0, h.ZP)(),
+      } = (0, f.ZP)(),
       Y = N(F, B, G),
       q = i.useCallback(() => {
         var e;
@@ -81,7 +81,7 @@ let Z = Chunk647438.memo(function(e) {
         }), (0, u.h7)(B, false)
       }, [B, V, K, k]),
       X = i.useCallback((e, t) => () => {
-        (0, m.v)(K, m.d.LEAVE_ACTIVITY), f.Z.leaveActivity({
+        (0, m.v)(K, m.d.LEAVE_ACTIVITY), h.Z.leaveActivity({
           location: t,
           applicationId: e,
           showFeedback: true
@@ -93,8 +93,8 @@ let Z = Chunk647438.memo(function(e) {
         })
       }, [K]),
       J = i.useCallback(() => {
-        (0, y.Z)(T)
-      }, [T]),
+        (0, y.Z)(w)
+      }, [w]),
       $ = i.useCallback(() => {
         let e = null != L && (0, v.vd)(L.type) ? L : null,
           t = null != e ? e.getGuildId() : R;
@@ -188,8 +188,8 @@ let Z = Chunk647438.memo(function(e) {
         onClick: Q(U.applicationId),
         icon: c.PBZ
       }),
-      ep = null == T ? null : (0, r.jsx)(b.Z, {}),
-      ef = ei && ee && !en ? (0, r.jsx)(w, {
+      ep = null == w ? null : (0, r.jsx)(b.Z, {}),
+      eh = ei && ee && !en ? (0, r.jsx)(T, {
         runningGame: k,
         startAuthorization: () => {
           ea(true), null != el.current && clearTimeout(el.current), el.current = setTimeout(() => {
@@ -199,7 +199,7 @@ let Z = Chunk647438.memo(function(e) {
         connectionApp: er,
         ref: z
       }) : null,
-      eh = ei && ee && !en ? (0, r.jsx)(s.J2, {
+      ef = ei && ee && !en ? (0, r.jsx)(s.J2, {
         title: I.intl.string(I.t.ULvRFd),
         body: I.intl.string(I.t["HJJDr+"]),
         targetElementRef: z,
@@ -213,12 +213,12 @@ let Z = Chunk647438.memo(function(e) {
           ea(false), null != el.current && (clearTimeout(el.current), el.current = null)
         }
       }) : null;
-    return null == es && null == ec && null == eu && null == ed && null == ef ? null : (0, r.jsxs)("div", {
+    return null == es && null == ec && null == eu && null == ed && null == eh ? null : (0, r.jsxs)("div", {
       className: P.actions,
-      children: [null != ef ? ef : ec, es, null != (t = null != eu ? eu : ed) ? t : ep, eh]
+      children: [null != eh ? eh : ec, es, null != (t = null != eu ? eu : ed) ? t : ep, ef]
     })
   }),
-  w = Chunk647438.forwardRef(function(e, t) {
+  T = Chunk647438.forwardRef(function(e, t) {
     let {
       runningGame: n,
       startAuthorization: i,

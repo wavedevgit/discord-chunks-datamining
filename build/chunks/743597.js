@@ -1,7 +1,7 @@
-/** Chunk was on 87943 **/
+/** Chunk was on 99407 **/
 /** chunk id: 743597, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => _
 });
 var Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
@@ -47,15 +47,15 @@ let p = l().debounce(Chunk125268.BR, Chunk813900.Fq, {
   maxWait: Chunk813900.Fq
 });
 
-function m(e, t, n) {
+function _(e, t, n) {
   let i = r.useRef((0, a.Z)()),
     l = r.useRef(new o.Xp),
-    m = r.useCallback(r => {
+    _ = r.useCallback(r => {
       r.lastUpdatedAt = Date.now(), (0, c.gr)(r, e, n), (0, c.BR)(t, n, r)
     }, [t, n, e]),
-    _ = r.useCallback((r, o, p) => {
+    m = r.useCallback((r, o, p) => {
       i.current = (0, a.Z)();
-      let _ = f(d({}, r), {
+      let m = f(d({}, r), {
         id: i.current,
         x: o,
         y: p,
@@ -63,10 +63,10 @@ function m(e, t, n) {
         state: s.f.START,
         lastUpdatedAt: Date.now()
       });
-      (0, c.BR)(t, n, _), (0, c.gr)(_, e, n), l.current.start(u.FO, () => m(_))
-    }, [e, t, n, m]),
+      (0, c.BR)(t, n, m), (0, c.gr)(m, e, n), l.current.start(u.FO, () => _(m))
+    }, [e, t, n, _]),
     g = r.useCallback((r, a, o) => {
-      let _ = f(d({}, r), {
+      let m = f(d({}, r), {
         id: i.current,
         x: a,
         y: o,
@@ -74,9 +74,9 @@ function m(e, t, n) {
         state: s.f.START,
         lastUpdatedAt: Date.now()
       });
-      p(t, n, _), (0, c.gr)(_, e, n), l.current.start(u.FO, () => m(_))
-    }, [e, t, n, m]),
-    b = r.useCallback((r, a, o) => {
+      p(t, n, m), (0, c.gr)(m, e, n), l.current.start(u.FO, () => _(m))
+    }, [e, t, n, _]),
+    v = r.useCallback((r, a, o) => {
       p.cancel(), (0, c.Df)(t, n, i.current), (0, c.gr)(f(d({}, r), {
         id: i.current,
         x: a,
@@ -86,11 +86,11 @@ function m(e, t, n) {
         lastUpdatedAt: Date.now()
       }), e, n), l.current.stop()
     }, [t, n, e]),
-    v = r.useCallback((e, t, n) => g(e, t, n), [g]);
+    b = r.useCallback((e, t, n) => g(e, t, n), [g]);
   return r.useMemo(() => ({
-    handleMouseDown: _,
+    handleMouseDown: m,
     handleMouseMove: g,
-    handleMouseUp: b,
-    handleMouseEnter: v
-  }), [_, v, g, b])
+    handleMouseUp: v,
+    handleMouseEnter: b
+  }), [m, b, g, v])
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 57695 **/
+/** Chunk was on 30437 **/
 /** chunk id: 61634, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -44,8 +44,8 @@ function S(e) {
     N = (0, l.NX)(P),
     {
       guildHasVoice: Z,
-      guildHasVideo: w,
-      selectedVoiceChannelHasVideo: T
+      guildHasVideo: T,
+      selectedVoiceChannelHasVideo: w
     } = (0, i.cj)([O.Z, v.Z, m.Z, b.Z, g.Z], () => {
       var t;
       let n = O.Z.getVoiceChannelId(),
@@ -70,13 +70,13 @@ function S(e) {
         selectedVoiceChannelHasVideo: null != n && v.Z.hasVideo(n)
       }
     }, [e, C]),
-    A = h.default.getId();
-  return (0, i.cj)([O.Z, g.Z, o.ZP, d.Z, f.Z, b.Z], () => {
+    A = f.default.getId();
+  return (0, i.cj)([O.Z, g.Z, o.ZP, d.Z, h.Z, b.Z], () => {
     var t, n, r;
     let i = O.Z.getVoiceChannelId(),
       l = (null == (t = g.Z.getChannel(i)) ? true : t.guild_id) === e,
       c = false,
-      h = false,
+      f = false,
       m = false,
       _ = false,
       y = false,
@@ -86,7 +86,7 @@ function S(e) {
       video: _,
       screenshare: y,
       liveStage: m,
-      activeEvent: h,
+      activeEvent: f,
       activity: v,
       isCurrentUserConnected: false
     };
@@ -95,9 +95,9 @@ function S(e) {
         return null != t && b.Z.can(u.gl, t)
       }),
       E = l && null != (r = null == (n = g.Z.getChannel(i)) ? true : n.isGuildStageVoice()) && r,
-      P = !!l && null != f.Z.getActiveStreamForUser(A, e),
-      R = (0, s.aK)(f.Z.getAllApplicationStreams()).some(t => t.guildId === e),
-      D = l && T,
+      P = !!l && null != h.Z.getActiveStreamForUser(A, e),
+      R = (0, s.aK)(h.Z.getAllApplicationStreams()).some(t => t.guildId === e),
+      D = l && w,
       L = (() => {
         if (N) return I.length > 0;
         for (let e of I) {
@@ -107,14 +107,14 @@ function S(e) {
         returnfalse
       })(),
       M = o.ZP.getEmbeddedActivitiesForGuild(e).length > 0;
-    return l ? (c = true, h = (null == S ? true : S.channel_id) === i, m = E, _ = D, y = P, v = M) : (c = Z, h = null != S, m = x, _ = w, y = R, v = L), {
+    return l ? (c = true, f = (null == S ? true : S.channel_id) === i, m = E, _ = D, y = P, v = M) : (c = Z, f = null != S, m = x, _ = T, y = R, v = L), {
       audio: c,
       video: _,
       screenshare: y,
       liveStage: m,
-      activeEvent: h,
+      activeEvent: f,
       activity: v,
       isCurrentUserConnected: l || E
     }
-  }, [e, C, T, A, N, I, S, Z, w])
+  }, [e, C, w, A, N, I, S, Z, T])
 }

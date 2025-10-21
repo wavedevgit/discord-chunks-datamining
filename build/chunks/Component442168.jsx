@@ -1,4 +1,4 @@
-/** Chunk was on 87943 **/
+/** Chunk was on 99407 **/
 /** chunk id: 442168, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk314910 = require("./314910.jsx"),
   Chunk565063 = require("./565063.js");
 
-function _(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,11 +37,11 @@ function _(e) {
 let g = {
     visibility: "hidden"
   },
-  b = {
+  v = {
     precision: 1e-4,
     duration: 300
   },
-  v = {
+  b = {
     tension: 150,
     friction: 20,
     precision: 1e-4,
@@ -75,23 +75,23 @@ function h(e) {
         width: 268
       }
     },
-    P = (0, i.useRef)(null),
-    Z = (0, c.Yzy)(C, {
+    Z = (0, i.useRef)(null),
+    P = (0, c.Yzy)(C, {
       keys: e => e.timestamp,
-      ref: P,
+      ref: Z,
       from: {
         opacity: .2
       },
       enter: {
         opacity: 0
       },
-      config: b
+      config: v
     }, "animate-always"),
     x = (0, i.useRef)(null),
-    A = (0, c.Yzy)(C, {
+    R = (0, c.Yzy)(C, {
       ref: x,
       keys: e => e.timestamp,
-      from: e => _({
+      from: e => m({
         position: "fixed",
         visibility: "hidden",
         opacity: 1
@@ -105,13 +105,13 @@ function h(e) {
           left: t.left
         }
       })()),
-      enter: e => [_({
+      enter: e => [m({
         opacity: 1,
         visibility: "visible"
       }, j(e))],
-      leave: _({
+      leave: m({
         opacity: 0
-      }, !h.enabled && _({
+      }, !h.enabled && m({
         height: 0,
         width: 0
       }, (() => {
@@ -120,24 +120,24 @@ function h(e) {
           left: w.current.left + 12
         }
       })())),
-      config: h.enabled ? E : v,
+      config: h.enabled ? E : b,
       onRest: (e, t) => {
         null != t.item && null != C.find(e => e.timestamp === t.item.timestamp) && (0, u.Gh)(O, t.item.timestamp)
       }
     }, "animate-always");
-  return (0, l.useChain)([P, x], [0, .1], 3e3), (0, r.jsxs)(r.Fragment, {
+  return (0, l.useChain)([Z, x], [0, .1], 3e3), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      className: m.hidden,
+      className: _.hidden,
       ref: S
-    }), Z((e, t) => null != t && (0, r.jsx)(l.animated.div, {
-      className: m.whiteFlash,
+    }), P((e, t) => null != t && (0, r.jsx)(l.animated.div, {
+      className: _.whiteFlash,
       style: e
     })), (0, r.jsx)(p.ZP, {
       children: (0, r.jsx)("div", {
-        className: m.hidden,
-        children: A((e, t, n, i) => (null == t ? true : t.thumbnail) != null && (0, r.jsx)(l.animated.img, {
+        className: _.hidden,
+        children: R((e, t, n, i) => (null == t ? true : t.thumbnail) != null && (0, r.jsx)(l.animated.img, {
           src: t.thumbnail,
-          className: m.movingImage,
+          className: _.movingImage,
           style: e
         }))
       })

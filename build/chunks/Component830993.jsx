@@ -1,4 +1,4 @@
-/** Chunk was on 57695 **/
+/** Chunk was on 30437 **/
 /** chunk id: 830993, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => P
@@ -33,8 +33,8 @@ function P(e) {
   var t, l;
   let {
     channel: o,
-    guild: f,
-    onAction: h,
+    guild: h,
+    onAction: f,
     voiceStates: g,
     isChannelSelected: b,
     shouldShowSettingNudge: O
@@ -82,7 +82,7 @@ function P(e) {
         embeddedApp: e,
         presenceActivity: null != (n = e.presenceActivity) ? n : true,
         channel: o,
-        onAction: h
+        onAction: f
       }, t)
     }), P.map((e, t) => {
       let {
@@ -93,7 +93,7 @@ function P(e) {
         presenceActivity: i,
         channel: o,
         members: n,
-        onAction: h
+        onAction: f
       }, t)
     }), O && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
@@ -129,7 +129,7 @@ function P(e) {
                     }
                     return e
                   }({}, t), i = i = {
-                    guild: f
+                    guild: h
                   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
                     var n = Object.keys(e);
                     if (Object.getOwnPropertySymbols) {
@@ -160,8 +160,8 @@ function N(e) {
     locked: l,
     video: s,
     selected: n
-  }), u = (0, a.e7)([h.Z], () => h.Z.getGuild(t.guild_id));
-  return null == (0, f.KS)(t, u) ? null : (0, r.jsxs)("div", {
+  }), u = (0, a.e7)([f.Z], () => f.Z.getGuild(t.guild_id));
+  return null == (0, h.KS)(t, u) ? null : (0, r.jsxs)("div", {
     className: o()(S.popoutHeaderContainer, I.popoutHeaderContainer),
     children: [(0, r.jsx)(v.Z, {
       channel: t

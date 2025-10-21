@@ -1,4 +1,4 @@
-/** Chunk was on 57695 **/
+/** Chunk was on 30437 **/
 /** chunk id: 770858, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -35,7 +35,7 @@ function E(e) {
   let {
     onClick: d,
     selectedOverride: p = false,
-    popoutProps: h,
+    popoutProps: f,
     ref: _
   } = e, j = (0, l.Ie)("notifications-inbox"), [E, S] = i.useState(false), I = (0, m.D)(), P = p || I, {
     notificationCenterVariant: N
@@ -43,8 +43,8 @@ function E(e) {
     location: "NotificationsInboxButtonInner"
   }), {
     badge: Z,
-    badgeDimensions: w,
-    unreadChannelsCount: T
+    badgeDimensions: T,
+    unreadChannelsCount: w
   } = function(e) {
     let {
       notificationCenterVariant: t
@@ -77,7 +77,7 @@ function E(e) {
       unreadChannelsCount: n.length,
       badgeDimensions: o
     }
-  }(P), A = N === g.jP.LEGACY ? a.xx7 : a.Dkj, R = (0, o.e7)([f.Z], () => f.Z.getChannelId()), D = i.useMemo(() => {
+  }(P), A = N === g.jP.LEGACY ? a.xx7 : a.Dkj, R = (0, o.e7)([h.Z], () => h.Z.getChannelId()), D = i.useMemo(() => {
     if (N === g.jP.SIDEBAR) return v.Z5c.CHANNEL(v.STv, R)
   }, [N, R]);
   return (0, r.jsxs)(u.H, {
@@ -85,14 +85,14 @@ function E(e) {
     children: [(0, r.jsx)(c.Z, {
       selected: P && N === g.jP.SIDEBAR,
       hovered: E && N === g.jP.SIDEBAR,
-      unread: T > 0,
+      unread: w > 0,
       className: x.pill,
       disabled: N === g.jP.LEGACY
     }), (0, r.jsx)(O.Z, {
       children: (0, r.jsx)(a.aRk, {
         selected: P || E,
         lowerBadge: Z,
-        lowerBadgeSize: w,
+        lowerBadgeSize: T,
         children: (0, r.jsx)(a.LYs, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -110,7 +110,7 @@ function E(e) {
             })
           }
           return e
-        }({}, j, h), n = n = {
+        }({}, j, f), n = n = {
           onClick: d,
           to: D,
           selected: P || E,

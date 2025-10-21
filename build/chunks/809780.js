@@ -1,4 +1,4 @@
-/** Chunk was on 57695 **/
+/** Chunk was on 30437 **/
 /** chunk id: 809780, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   As: () => F,
@@ -183,7 +183,7 @@ class z extends Chunk836560.EventEmitter {
         channelId: t,
         newestUnreadMessageId: n
       } = e;
-      d.Z.wait(() => f.In(t, {
+      d.Z.wait(() => h.In(t, {
         section: M.jXE.INBOX,
         object: M.qAy.ACK_INBOX_NEWEST_UNREAD_MESSAGE,
         objectType: M.Qqv.ACK_AUTOMATIC
@@ -194,12 +194,12 @@ class z extends Chunk836560.EventEmitter {
         channels: this.updateChannel(t, e => B(U({}, e), {
           deleted: true
         }))
-      }), h.Z.useReducedMotion && this.deleteChannel(t), this.maybeLoadMore()
+      }), f.Z.useReducedMotion && this.deleteChannel(t), this.maybeLoadMore()
     }, this.undoMarkChannelRead = () => {
       if (0 === this.undoStack.length) return;
       let e = this.undoStack.pop();
       if (null == e) return;
-      f.In(e.channelId, {
+      h.In(e.channelId, {
         section: M.jXE.INBOX,
         object: M.qAy.UNDO_MARK_AS_READ,
         objectType: M.Qqv.ACK_MANUAL
@@ -220,7 +220,7 @@ class z extends Chunk836560.EventEmitter {
         channels: this.state.channels.filter(t => t.channelId !== e)
       }), this.maybeLoadMore()
     }, this.markAllRead = () => {
-      f.y5(this.state.channels.map(e => ({
+      h.y5(this.state.channels.map(e => ({
         channelId: e.channelId,
         messageId: e.newestUnreadMessageId
       }))), this.setState({
@@ -306,7 +306,7 @@ function K() {
     }(),
     t = function(e) {
       let t = [];
-      return S.Z.getSortedPrivateChannels().forEach(n => Y(e, t, null, n.id)), T.ZP.getFlattenedGuildIds().forEach(n => {
+      return S.Z.getSortedPrivateChannels().forEach(n => Y(e, t, null, n.id)), w.ZP.getFlattenedGuildIds().forEach(n => {
         if (null == n) return;
         let r = I.ZP.getSelectableChannelIds(n),
           i = O.Z.getActiveJoinedUnreadThreadsForGuild(n);
@@ -335,18 +335,18 @@ function Y(e, t, n, r) {
   let i = S.Z.getChannel(r);
   if (null == i || !E.Ec.has(i.type) && A.ZP.isGuildOrCategoryOrChannelMuted(n, i.id)) return;
   if (i.isPrivate()) {
-    if (0 === w.ZP.getMentionCount(r)) return
-  } else if (!(0, _.d)(i) && 0 === w.ZP.getMentionCount(r)) return;
+    if (0 === T.ZP.getMentionCount(r)) return
+  } else if (!(0, _.d)(i) && 0 === T.ZP.getMentionCount(r)) return;
   if (!i.isPrivate() && !Z.Z.can(M.Plq.READ_MESSAGE_HISTORY, i) || (0, g.Y3)(i)) return;
-  let l = w.ZP.ackMessageId(r);
+  let l = T.ZP.ackMessageId(r);
   if (null == l) {
     let e = P.Z.getGuild(i.guild_id);
     if (null == e || null == e.joinedAt) return;
     l = L.default.fromTimestamp(e.joinedAt.getTime())
   }
-  let o = w.ZP.getOldestUnreadMessageId(r),
-    a = w.ZP.lastMessageId(r),
-    s = w.ZP.getMentionCount(r),
+  let o = T.ZP.getOldestUnreadMessageId(r),
+    a = T.ZP.lastMessageId(r),
+    s = T.ZP.getMentionCount(r),
     c = s > 0 || i.isPrivate();
   if (null == a || L.default.compare(l, a) >= 0) return;
   let u = {
@@ -366,7 +366,7 @@ function Y(e, t, n, r) {
       let r = S.Z.getChannel(t);
       if (m.Z.isFavorite(t)) return 0;
       if (r.isPrivate()) return 1;
-      if (w.ZP.getMentionCount(t) > 0) return w.ZP.getIsMentionLowImportance(t) ? 3 : 2;
+      if (T.ZP.getMentionCount(t) > 0) return T.ZP.getIsMentionLowImportance(t) ? 3 : 2;
       if (null != n) {
         let e = L.default.extractTimestamp(n);
         if (Date.now() - e > X) return 8;

@@ -1,4 +1,4 @@
-/** Chunk was on 57695 **/
+/** Chunk was on 30437 **/
 /** chunk id: 940777, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => R
@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk499951 = require("./499951.js");
 
-function T(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -95,18 +95,18 @@ function R() {
         a = (0, s.e7)([p.ZP], () => Array.from(p.ZP.getSelfEmbeddedActivities().values()).some(t => {
           let {
             location: n
-          } = t, r = (0, f.p)(n);
+          } = t, r = (0, h.p)(n);
           return null != r && null != e[r]
         })),
         c = o.length > 0,
         u = false,
         d = false,
-        h = false,
+        f = false,
         g = false;
-      return n ? (u = !l, d = l, h = r, g = a) : (h = i, g = c), (0, m.Or)({
+      return n ? (u = !l, d = l, f = r, g = a) : (f = i, g = c), (0, m.Or)({
         audio: u,
         video: d,
-        screenshare: h,
+        screenshare: f,
         liveStage: false,
         isCurrentUserConnected: n,
         activity: g
@@ -129,7 +129,7 @@ function R() {
           selected: true,
           upperBadge: z,
           lowerBadge: W,
-          children: (0, Chunk951288.jsx)(Chunk481060.LYs, (e = T({}, Chunk120356), t = t = {
+          children: (0, Chunk951288.jsx)(Chunk481060.LYs, (e = w({}, Chunk120356), t = t = {
             ariaLabel: Chunk388032.intl.formatToPlainString(Chunk388032.t["/uzRss"], {
               guildName: Chunk388032.intl.string(Chunk388032.t.wMWyci),
               mentions: V
@@ -150,7 +150,7 @@ function R() {
                 let {
                   default: e
                 } = await n.e("3190").then(n.bind(n, 631981));
-                return t => (0, r.jsx)(e, T({}, t))
+                return t => (0, r.jsx)(e, w({}, t))
               })
             },
             children: (0, Chunk951288.jsx)("div", {

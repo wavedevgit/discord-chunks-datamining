@@ -1,7 +1,7 @@
-/** Chunk was on 87943 **/
+/** Chunk was on 99407 **/
 /** chunk id: 563218, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => v
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,18 +22,18 @@ let g = (e, t) => {
   })
 };
 
-function b(e) {
+function v(e) {
   let t, {
       embedId: n,
       className: a,
       style: o
     } = e,
-    b = (0, l.e7)([c.Z], () => c.Z.getWindow(_.KJ3.CHANNEL_CALL_POPOUT)),
-    v = (0, p.Z)(),
+    v = (0, l.e7)([c.Z], () => c.Z.getWindow(m.KJ3.CHANNEL_CALL_POPOUT)),
+    b = (0, p.Z)(),
     E = (0, l.e7)([u.ZP], () => u.ZP.getActivityPanelMode());
-  if (null == v || (0, f.Z)((0, d.p)(v.location)) || E !== m.Ez.PANEL) {
+  if (null == b || (0, f.Z)((0, d.p)(b.location)) || E !== _.Ez.PANEL) {
     var h;
-    t = null != (h = null == b ? true : b.window) ? h : window
+    t = null != (h = null == v ? true : v.window) ? h : window
   } else t = window;
   let S = i.useRef(null),
     y = i.useMemo(() => {
@@ -45,8 +45,8 @@ function b(e) {
         }))
       }
     }, [n, t]);
-  return i.useEffect(() => (t.addEventListener("resize", y), s.S.subscribe(_.CkL.REMEASURE_TARGET, y), () => {
-    t.removeEventListener("resize", y), s.S.unsubscribe(_.CkL.REMEASURE_TARGET, y)
+  return i.useEffect(() => (t.addEventListener("resize", y), s.S.subscribe(m.CkL.REMEASURE_TARGET, y), () => {
+    t.removeEventListener("resize", y), s.S.unsubscribe(m.CkL.REMEASURE_TARGET, y)
   }), [y, t]), i.useLayoutEffect(() => {
     let e = S.current;
     if (null == e) return;

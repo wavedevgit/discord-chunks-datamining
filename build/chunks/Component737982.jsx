@@ -1,4 +1,4 @@
-/** Chunk was on 57695 **/
+/** Chunk was on 30437 **/
 /** chunk id: 737982, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -25,7 +25,7 @@ let y = Chunk647438.memo(function(e) {
     guildId: t,
     selected: n
   } = e, [y, v] = (0, c.ZT)([o.z.GAME_SERVER_HOSTING_NEW_BADGE], t), j = i.useCallback(() => {
-    y === o.z.GAME_SERVER_HOSTING_NEW_BADGE && v(m.L.USER_DISMISS), (0, d.uL)(h.Z5c.CHANNEL(t, g.oC.GAME_SERVERS))
+    y === o.z.GAME_SERVER_HOSTING_NEW_BADGE && v(m.L.USER_DISMISS), (0, d.uL)(f.Z5c.CHANNEL(t, g.oC.GAME_SERVERS))
   }, [t, y, v]), x = i.useRef(null), C = y === o.z.GAME_SERVER_HOSTING_NEW_BADGE, E = (0, a.f9)(), S = (0, l.e7)([p.Z], () => p.Z.hasLayers());
   return (0, r.jsx)(s.yRy, {
     targetElementRef: x,
@@ -33,7 +33,7 @@ let y = Chunk647438.memo(function(e) {
     nudgeAlignIntoViewport: true,
     animationPosition: "bottom",
     position: "right",
-    renderPopout: () => (0, r.jsx)(f.En, {
+    renderPopout: () => (0, r.jsx)(h.En, {
       guildId: t,
       markAsDismissed: v
     }),

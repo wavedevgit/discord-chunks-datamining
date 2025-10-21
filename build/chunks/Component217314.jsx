@@ -1,4 +1,4 @@
-/** Chunk was on 57695 **/
+/** Chunk was on 90995 **/
 /** chunk id: 217314, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -21,47 +21,47 @@ var Chunk399606 = require("./399606.js"),
 function m(e) {
   let t = e.channel.getRecipientId(),
     n = e.channel.isSystemDM(),
-    m = (0, i.e7)([d.default], () => d.default.getUser(t)),
-    b = (0, i.e7)([c.Z], () => c.Z.getStatus(t)),
-    _ = (0, i.e7)([c.Z], () => c.Z.isMobileOnline(t)),
-    O = (0, i.e7)([u.Z], () => u.Z.getNickname(t)),
-    y = p.ZP.useUserTag(m),
-    v = (0, a.j)({
+    m = (0, i.e7)([u.default], () => u.default.getUser(t)),
+    g = (0, i.e7)([c.Z], () => c.Z.getStatus(t)),
+    j = (0, i.e7)([c.Z], () => c.Z.isMobileOnline(t)),
+    _ = (0, i.e7)([d.Z], () => d.Z.getNickname(t)),
+    v = b.ZP.useUserTag(m),
+    y = (0, l.j)({
       displayNameStyles: null == m ? true : m.displayNameStyles
     }),
-    j = (0, s.m$)({
+    x = (0, s.m$)({
       channelId: e.channel.id
     });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(o.nn4, {
-      children: h.intl.string(h.t.EJRzg7)
+      children: f.intl.string(f.t.EJRzg7)
     }), null != m && !n && (0, r.jsx)("div", {
       children: (0, r.jsx)(o.qEK, {
-        status: b,
-        isMobile: _,
-        className: g.avatar,
+        status: g,
+        isMobile: j,
+        className: h.avatar,
         size: o.EFr.SIZE_20,
-        "aria-label": p.ZP.getName(m),
+        "aria-label": b.ZP.getName(m),
         src: m.getAvatarURL(true, 20)
       })
-    }), (0, r.jsx)(f.Z.Title, {
+    }), (0, r.jsx)(p.Z.Title, {
       level: e.level,
       onClick: e.handleClick,
       onContextMenu: e.handleContextMenu,
-      className: null != e.handleClick ? g.cursorPointer : null,
+      className: null != e.handleClick ? h.cursorPointer : null,
       children: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(o.jSM, {
-          text: y,
+          text: v,
           position: "bottom",
-          className: v,
-          children: null != O ? O : p.ZP.getName(m)
-        }), j && (0, r.jsx)(l.u, {
-          text: h.intl.string(h.t.QyZ4Td),
+          className: y,
+          children: null != _ ? _ : b.ZP.getName(m)
+        }), x && (0, r.jsx)(a.u, {
+          text: f.intl.string(f.t.QyZ4Td),
           children: (0, r.jsx)(o.tQf, {
             size: "xs",
-            "aria-label": h.intl.string(h.t.VHXh8a),
+            "aria-label": f.intl.string(f.t.VHXh8a),
             color: o.TVs.colors.INTERACTIVE_NORMAL,
-            className: g.secureFramesIcon
+            className: h.secureFramesIcon
           })
         })]
       })

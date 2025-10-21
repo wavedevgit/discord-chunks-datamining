@@ -1,4 +1,4 @@
-/** Chunk was on 57695 **/
+/** Chunk was on 30437 **/
 /** chunk id: 946443, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   QP: () => N,
@@ -34,14 +34,14 @@ function S(e) {
   let {
     onJump: N,
     showTutorial: Z,
-    setSeenTutorial: w,
-    closePopout: T
+    setSeenTutorial: T,
+    closePopout: w
   } = e, A = i.useRef(null), [R, D] = (0, j.ZP)(A), {
     loadState: L,
     channels: M
   } = R, {
     maybeLoadMore: k
-  } = D, G = (0, u.e7)([h.Z], () => h.Z.messageGroupSpacing);
+  } = D, G = (0, u.e7)([f.Z], () => f.Z.messageGroupSpacing);
   t = A, n = R, l = D, i.useLayoutEffect(() => {
     var e;
     let {
@@ -82,9 +82,9 @@ function S(e) {
     m.default.track(x.rMx.OPEN_POPOUT, {
       type: "Inbox"
     })
-  }, []), i.useEffect(() => (p.Z.subscribe("CONNECTION_OPEN", T), () => {
-    p.Z.unsubscribe("CONNECTION_OPEN", T)
-  }), [T]), (0, f.ZP)(() => (b.S.subscribe(x.CkL.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead), () => {
+  }, []), i.useEffect(() => (p.Z.subscribe("CONNECTION_OPEN", w), () => {
+    p.Z.unsubscribe("CONNECTION_OPEN", w)
+  }), [w]), (0, h.ZP)(() => (b.S.subscribe(x.CkL.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead), () => {
     b.S.unsubscribe(x.CkL.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead)
   }));
   let U = (0, g.Z)("unreads", A);
@@ -143,7 +143,7 @@ function S(e) {
           onScroll: L === j.jd.Done ? true : k,
           className: o()(E.scroller, "group-spacing-".concat(G)),
           children: [Z ? (0, r.jsx)(I, {
-            setSeenTutorial: w
+            setSeenTutorial: T
           }) : null, (0, v.Z)(M, D, N), L === j.jd.Done ? null : (0, r.jsx)(d.$jN, {
             className: E.spinner
           })]

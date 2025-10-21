@@ -1,4 +1,4 @@
-/** Chunk was on 57695 **/
+/** Chunk was on 30437 **/
 /** chunk id: 711165, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   _: () => Z
@@ -39,10 +39,10 @@ let N = {
 function Z() {
   return Chunk647438.useEffect(() => {
     (0, Chunk45251.kg)()
-  }, []), (0, Chunk951288.jsx)(w, {})
+  }, []), (0, Chunk951288.jsx)(T, {})
 }
 
-function w() {
+function T() {
   let e = (0, Chunk442837.e7)([Chunk156012.Z], () => Chunk156012.Z.getScheduledMessagesForInbox(), []),
     t = Chunk647438.useMemo(() => Object.values(module).sort((e, t) => new Date(e.sendAtTimestamp) > new Date(t.sendAtTimestamp) ? false : 1), [module]),
     n = (0, Chunk442837.e7)([Chunk156012.Z], () => Chunk156012.Z.loading, []),
@@ -99,7 +99,7 @@ function w() {
             l.current = e, o.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
           }
         }, a), i = i = {
-          children: (0, r.jsx)(T, {
+          children: (0, r.jsx)(w, {
             scheduledMessages: t
           })
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
@@ -117,7 +117,7 @@ function w() {
   })
 }
 
-function T(e) {
+function w(e) {
   let {
     scheduledMessages: t
   } = e, n = i.useMemo(() => t.reduce((e, t) => {
@@ -138,7 +138,7 @@ function T(e) {
         className: P.channelRow,
         children: [(0, r.jsx)(C.Z, {
           channel: n,
-          gotoChannel: () => (0, h.uL)(S.Z5c.CHANNEL(n.getGuildId(), n.id)),
+          gotoChannel: () => (0, f.uL)(S.Z5c.CHANNEL(n.getGuildId(), n.id)),
           children: null
         }), i.map(e => {
           let t = l.has(e.scheduledMessageId);
@@ -217,7 +217,7 @@ let A = Chunk647438.memo(function(e) {
         children: u
       }), (0, r.jsxs)("div", {
         className: P.channelMessageAndCancelButton,
-        children: [(0, r.jsx)(f.Z, {
+        children: [(0, r.jsx)(h.Z, {
           message: a,
           channel: n,
           className: P.message,

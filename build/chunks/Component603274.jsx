@@ -1,4 +1,4 @@
-/** Chunk was on 57695 **/
+/** Chunk was on 30437 **/
 /** chunk id: 603274, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => N
@@ -34,7 +34,7 @@ function S(e, t) {
     children: [(0, r.jsx)(e, {
       className: E.activityIcon,
       color: "currentColor"
-    }), (0, r.jsx)(f.ZP, {
+    }), (0, r.jsx)(h.ZP, {
       guildId: true,
       users: t,
       max: 6
@@ -53,7 +53,7 @@ function I() {
       } = e;
       return t
     })), [require]),
-    o = (0, Chunk442837.Wu)([Chunk565799.Z], () => a().flatMap(Chunk120356, e => h.Z.getMutableParticipants(e, g.pV.SPEAKER).filter(e => e.type === g.Ui.VOICE).map(e => {
+    o = (0, Chunk442837.Wu)([Chunk565799.Z], () => a().flatMap(Chunk120356, e => f.Z.getMutableParticipants(e, g.pV.SPEAKER).filter(e => e.type === g.Ui.VOICE).map(e => {
       let {
         user: t
       } = e;
@@ -77,7 +77,7 @@ function I() {
     P = (0, Chunk442837.Wu)([Chunk594174.default], () => I.map(e => _.default.getUser(e)), [I]),
     N = (0, Chunk442837.Wu)([Chunk594174.default], () => Chunk388032.map(e => _.default.getUser(e)), [Chunk388032]),
     Z = S(Chunk481060.gj8, l.filter(e => !C.includes(e.id) && !I.includes(e.id))),
-    w = 0 === Chunk392711.length ? null : (0, Chunk951288.jsxs)("div", {
+    T = 0 === Chunk392711.length ? null : (0, Chunk951288.jsxs)("div", {
       className: Chunk132789.row,
       children: [(0, Chunk951288.jsx)(Chunk481060.ewx, {
         size: "lg",
@@ -100,7 +100,7 @@ function I() {
         })]
       })]
     }),
-    T = S(Chunk481060.hGI, N.filter(e => null != e && !I.includes(e.id))),
+    w = S(Chunk481060.hGI, N.filter(e => null != e && !I.includes(e.id))),
     {
       enabled: A
     } = Chunk456100.c.useExperiment({
@@ -110,7 +110,7 @@ function I() {
     }),
     R = S(A ? Chunk481060.iWm : Chunk481060.nG3, P);
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-    children: [w, Z, T, R]
+    children: [T, Z, w, R]
   })
 }
 

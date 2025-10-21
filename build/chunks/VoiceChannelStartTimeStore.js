@@ -1,4 +1,4 @@
-/** Chunk was on 57695 **/
+/** Chunk was on 30437 **/
 /** chunk id: 168611, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -12,11 +12,11 @@ var r, i, Chunk106351 = require("./106351.js"),
 let d = new Set,
   p = {};
 
-function f(e) {
+function h(e) {
   return new Date(e * c.Z.Millis.SECOND).getTime()
 }
 
-function h() {
+function f() {
   d.clear()
 }
 
@@ -40,8 +40,8 @@ class m extends(r = Chunk442837.ZP.Store) {
 let b = new m(Chunk570140.Z, {
   GUILD_CREATE: g,
   GUILD_DELETE: g,
-  CONNECTION_RESUMED: h,
-  CONNECTION_OPEN: h,
+  CONNECTION_RESUMED: f,
+  CONNECTION_OPEN: f,
   VOICE_CHANNEL_START_TIME_UPDATE: function(e) {
     let {
       guildId: t,
@@ -52,7 +52,7 @@ let b = new m(Chunk570140.Z, {
         guildId: t,
         location: "VoiceChannelStartTimeStore"
       }).enabled) returnfalse;
-    null == p[t] && (p[t] = {}), p[t][n] = null != r ? f(r) : true
+    null == p[t] && (p[t] = {}), p[t][n] = null != r ? h(r) : true
   },
   CHANNEL_INFO: function(e) {
     let {
@@ -63,7 +63,7 @@ let b = new m(Chunk570140.Z, {
         id: e,
         voiceStartTime: r
       }
-      of(p[t] = {}, n)) p[t][e] = null != r ? f(r) : true
+      of(p[t] = {}, n)) p[t][e] = null != r ? h(r) : true
   },
   FETCH_CHANNEL_INFO: function(e) {
     let {

@@ -12,7 +12,8 @@ var Chunk951288 = require("./951288.js"),
 
 function c(e) {
   let {
-    channelId: t
+    channelId: t,
+    allPoppedOut: n = false
   } = e;
   return (0, i.jsxs)("div", {
     className: s.container,
@@ -20,8 +21,8 @@ function c(e) {
       className: s.content,
       children: [(0, i.jsx)(r.Heading, {
         variant: "heading-lg/normal",
-        children: o.intl.format(o.t.ilLVLr, {})
-      }), (0, i.jsx)(r.Button, {
+        children: n ? o.intl.string(o.t.KIConm) : o.intl.format(o.t.ilLVLr, {})
+      }), !n && (0, i.jsx)(r.Button, {
         variant: "secondary",
         size: "md",
         onClick: e => {

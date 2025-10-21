@@ -1,4 +1,4 @@
-/** Chunk was on 57695 **/
+/** Chunk was on 30437 **/
 /** chunk id: 695301, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -22,7 +22,7 @@ let b = Chunk647438.memo(function(e) {
   let {
     guildNode: b,
     lowerBadge: _
-  } = e, O = b.id, y = (0, l.e7)([p.Z], () => p.Z.getGuild(O)), v = (0, a.E)(y), j = (0, l.e7)([f.Z], () => f.Z.isFocused()), x = (0, l.e7)([u.Z], () => u.Z.isUnavailable(O)), C = (0, c.Z)(e => e.guildId), E = (0, h.Z)(O), {
+  } = e, O = b.id, y = (0, l.e7)([p.Z], () => p.Z.getGuild(O)), v = (0, a.E)(y), j = (0, l.e7)([h.Z], () => h.Z.isFocused()), x = (0, l.e7)([u.Z], () => u.Z.isUnavailable(O)), C = (0, c.Z)(e => e.guildId), E = (0, f.Z)(O), {
     badge: S,
     unread: I,
     isMentionLowImportance: P

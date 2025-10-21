@@ -1,7 +1,7 @@
 /** Chunk was on 80960 **/
 /** chunk id: 223455, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => C
+  default: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
@@ -24,9 +24,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk703558 = require("./703558.js"),
   Chunk677601 = require("./677601.jsx"),
   Chunk702511 = require("./702511.js");
-let x = [Chunk679080.S, Chunk777019.O, Chunk400332.U, Chunk721383._];
+let C = [Chunk679080.S, Chunk777019.O, Chunk400332.U, Chunk721383._];
 
-function C(e) {
+function x(e) {
   let {
     windowKey: t,
     channelId: n
@@ -35,7 +35,7 @@ function C(e) {
   let l = (0, s.e7)([y.ZP], () => y.ZP.getSelfEmbeddedActivityForChannel(a.id), [a]);
   return (0, r.jsx)(E.Z, {
     withTitleBar: true,
-    keybinds: x,
+    keybinds: C,
     windowKey: t,
     title: a.name,
     channelId: a.id,

@@ -2,11 +2,12 @@
 /** chunk id: 788983, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  YS: () => d,
+  YS: () => f,
   bA: () => s,
+  fT: () => c,
   hP: () => l,
-  hY: () => u,
-  xv: () => c
+  hY: () => d,
+  xv: () => u
 });
 var Chunk570140 = require("./570140.js");
 
@@ -54,14 +55,22 @@ function l(e) {
   })
 }
 
-function c(e) {
+function c(e, t) {
+  return r.Z.dispatch({
+    type: "CALL_TILE_POPOUT_WINDOW_OPEN",
+    channelId: e,
+    participantId: t
+  })
+}
+
+function u(e) {
   return r.Z.dispatch({
     type: "POPOUT_WINDOW_CLOSE",
     key: e
   })
 }
 
-function u(e, t) {
+function d(e, t) {
   return r.Z.dispatch({
     type: "POPOUT_WINDOW_SET_ALWAYS_ON_TOP",
     alwaysOnTop: t,
@@ -69,7 +78,7 @@ function u(e, t) {
   })
 }
 
-function d(e, t) {
+function f(e, t) {
   return r.Z.dispatch({
     type: "POPOUT_WINDOW_ADD_STYLESHEET",
     url: e,

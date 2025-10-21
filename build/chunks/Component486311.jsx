@@ -1,4 +1,4 @@
-/** Chunk was on 57695 **/
+/** Chunk was on 30437 **/
 /** chunk id: 486311, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -56,28 +56,28 @@ let j = {
       selected: l
     } = e, x = (0, m.ZP)(t), C = i.useCallback(() => {
       var e;
-      (0, p.jd)(t), (0, h.Z)(t, c.Z.GUILD_POWERUPS_CHANNEL_LIST_ROW), null == x || null == (e = x.popout) || e.markAsDismissed(b.L.INDIRECT_ACTION)
+      (0, p.jd)(t), (0, f.Z)(t, c.Z.GUILD_POWERUPS_CHANNEL_LIST_ROW), null == x || null == (e = x.popout) || e.markAsDismissed(b.L.INDIRECT_ACTION)
     }, [t, x]), E = i.useCallback(() => {
       var e;
       switch (null == x || null == (e = x.popout) ? true : e.type) {
-        case f.J.LEVEL_REACHED:
+        case h.J.LEVEL_REACHED:
           return (0, r.jsx)(g.jG, v({
             guildId: t
           }, x.popout));
-        case f.J.PERKS_AVAILABLE:
+        case h.J.PERKS_AVAILABLE:
           return (0, r.jsx)(g.$h, v({
             guildId: t
           }, x.popout));
-        case f.J.PERKS_PURCHASABLE:
+        case h.J.PERKS_PURCHASABLE:
           return (0, r.jsx)(g.yI, v({
             guildId: t
           }, x.popout));
-        case f.J.NEW_PERK_AVAILABLE:
+        case h.J.NEW_PERK_AVAILABLE:
           return (0, r.jsx)(g.cO, v({
             guildId: t
           }, x.popout));
-        case f.J.GAME_SERVER_HOSTING_AVAILABLE:
-        case f.J.GAME_SERVER_HOSTING_GUILD_ELIGIBLE:
+        case h.J.GAME_SERVER_HOSTING_AVAILABLE:
+        case h.J.GAME_SERVER_HOSTING_GUILD_ELIGIBLE:
           return (0, r.jsx)(g.dJ, v({
             guildId: t
           }, x.popout));
@@ -88,12 +88,12 @@ let j = {
     i.useEffect(() => {
       (null == x ? true : x.popout) == null && N(null)
     }, [null == x ? true : x.popout]);
-    let w = i.useCallback(e => {
+    let T = i.useCallback(e => {
         N(e)
       }, []),
-      T = i.useRef(null);
+      w = i.useRef(null);
     return (0, r.jsx)(s.yRy, {
-      targetElementRef: T,
+      targetElementRef: w,
       shouldShow: (null == x ? true : x.popout) != null && !(S || I),
       nudgeAlignIntoViewport: true,
       animationPosition: "bottom",
@@ -102,7 +102,7 @@ let j = {
       children: e => {
         var i, a;
         return (0, r.jsx)(u.m, (i = v({}, e), a = a = {
-          ref: T,
+          ref: w,
           className: y.container,
           id: "skill-trees-".concat(t),
           renderIcon: e => (0, r.jsx)(s.Ucv, {
@@ -117,7 +117,7 @@ let j = {
               className: y.lottie,
               sceneSegments: j,
               importData: () => n.e("50821").then(n.t.bind(n, 548421, 19)),
-              onScenePlay: w,
+              onScenePlay: T,
               rendererSettings: {
                 preserveAspectRatio: "xMidYMid slice"
               }

@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk966117 = require("./966117.js"),
   Chunk197571 = require("./197571.js");
-class C extends Chunk647438.PureComponent {
+class x extends Chunk647438.PureComponent {
   render() {
     var e, t;
     let {
@@ -131,4 +131,4 @@ let Z = Chunk442837.ZP.connectStores([Chunk226961.ZP, Chunk19780.Z, Chunk246946.
     mediaSessionId: d.Z.getMediaSessionId(),
     hostname: g.Z.getShortHostname(l)
   }
-})(C)
+})(x)

@@ -1,4 +1,4 @@
-/** Chunk was on 57695 **/
+/** Chunk was on 30437 **/
 /** chunk id: 175281, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => A
@@ -79,10 +79,10 @@ function Z() {
       return (0, r.jsxs)("div", {
         className: C.keyboardShortcutSection,
         children: [(0, r.jsxs)("div", {
-          children: [(0, r.jsx)(h.Heading, {
+          children: [(0, r.jsx)(f.Heading, {
             variant: "heading-lg/semibold",
             children: i
-          }), null != l && (0, r.jsx)(h.Text, {
+          }), null != l && (0, r.jsx)(f.Text, {
             className: C.keybindGroupDescription,
             variant: "text-sm/normal",
             children: l
@@ -93,12 +93,12 @@ function Z() {
             var n;
             return (null == (n = e.predicate) ? true : n.call(e)) === false ? null : (0, r.jsxs)("div", {
               className: C.keybindGroup,
-              children: [(0, r.jsx)(h.Text, {
+              children: [(0, r.jsx)(f.Text, {
                 variant: "text-sm/normal",
                 children: e.description
               }), (0, r.jsx)("div", {
                 className: "keybind-shortcuts",
-                children: e.binds.map(e => (0, r.jsx)(h.M2$, {
+                children: e.binds.map(e => (0, r.jsx)(f.M2$, {
                   className: C.keybindKey,
                   shortcut: e
                 }, e))
@@ -110,7 +110,7 @@ function Z() {
     })
   })
 }
-class w extends Chunk647438.PureComponent {
+class T extends Chunk647438.PureComponent {
   componentDidMount() {
     this.lastInputedKeys = [], Chunk585483.S.subscribe(Chunk981631.CkL.SCROLL_PAGE_UP, this.scrollPageUp), Chunk585483.S.subscribe(Chunk981631.CkL.SCROLL_PAGE_DOWN, this.scrollPageDown), window.addEventListener("keydown", this.handleKeyDown, {
       capture: true
@@ -148,22 +148,22 @@ class w extends Chunk647438.PureComponent {
         children: Chunk388032.intl.string(Chunk388032.t["2t19lU"])
       }), (0, Chunk951288.jsxs)("div", {
         className: Chunk870525.ddrArrows,
-        children: [(0, Chunk951288.jsx)(T, {
+        children: [(0, Chunk951288.jsx)(w, {
           arrow: "LEFT",
           isActive: require,
           className: Chunk870525.left,
           children: "left"
-        }), (0, Chunk951288.jsx)(T, {
+        }), (0, Chunk951288.jsx)(w, {
           arrow: "DOWN",
           isActive: exports,
           className: Chunk870525.down,
           children: "down"
-        }), (0, Chunk951288.jsx)(T, {
+        }), (0, Chunk951288.jsx)(w, {
           arrow: "UP",
           isActive: module,
           className: Chunk870525.up,
           children: "up"
-        }), (0, Chunk951288.jsx)(T, {
+        }), (0, Chunk951288.jsx)(w, {
           arrow: "RIGHT",
           isActive: Chunk647438,
           className: Chunk870525.right,
@@ -258,7 +258,7 @@ class w extends Chunk647438.PureComponent {
   }
 }
 
-function T(e) {
+function w(e) {
   let {
     isActive: t,
     arrow: n,
@@ -272,7 +272,7 @@ function T(e) {
       let e = setTimeout(() => c(false), 500);
       return () => clearTimeout(e)
     }
-  }, [s]), (0, r.jsx)(h.P3F, {
+  }, [s]), (0, r.jsx)(f.P3F, {
     onClick: u,
     className: o()(C.arrow, l, {
       [C.active]: t || s
@@ -295,21 +295,21 @@ function A(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(N, {
       showBackdrop: s
-    }), (0, r.jsx)(h.Y0X, {
+    }), (0, r.jsx)(f.Y0X, {
       className: o()(C.noBackground, {
         [C.noShadow]: l
       }),
-      size: h.CgR.DYNAMIC,
+      size: f.CgR.DYNAMIC,
       "aria-label": x.intl.string(x.t.T9DA2K),
       transitionState: t,
       parentComponent: "KeyboardShortcutsModal",
-      children: (0, r.jsx)(f.W, {
+      children: (0, r.jsx)(h.W, {
         component: "div",
         children: l ? (0, r.jsx)(v.Z, {
           handleDemonClose: function() {
             c(false), setTimeout(n, 500)
           }
-        }, "raging-demo") : (0, r.jsx)(w, {
+        }, "raging-demo") : (0, r.jsx)(T, {
           content: u,
           keyboardModeEnabled: d,
           activateRagingDemon: function() {

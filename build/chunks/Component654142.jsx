@@ -1,4 +1,4 @@
-/** Chunk was on 57695 **/
+/** Chunk was on 30437 **/
 /** chunk id: 654142, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -81,7 +81,7 @@ let _ = Chunk647438.memo(function(e) {
       r = [];
     for (let e of t)(e.length < n || 0 === r.length) && (r.push(e), n -= e.length);
     return "".concat(r.join(", ")).concat(r.length < t.length ? ", ..." : "")
-  }(t), I = (0, h.Z)(t), {
+  }(t), I = (0, f.Z)(t), {
     mentionCount: P,
     isMentionLowImportance: N,
     unread: Z
@@ -89,9 +89,9 @@ let _ = Chunk647438.memo(function(e) {
     mentionCount: x.map(e => u.default.getMentionCount(e)).reduce((e, t) => e + t, 0),
     isMentionLowImportance: x.every(e => u.default.getIsMentionLowImportance(e)),
     unread: x.some(e => u.default.hasUnread(e))
-  })), w = i.useCallback(() => {
+  })), T = i.useCallback(() => {
     a.Z.toggleGuildFolderExpand(O)
-  }, [O]), T = i.useCallback(e => {
+  }, [O]), w = i.useCallback(e => {
     (0, o.jW)(e, async () => {
       let {
         default: e
@@ -104,7 +104,7 @@ let _ = Chunk647438.memo(function(e) {
       }))
     })
   }, [O, y, v, Z, P]);
-  return (0, r.jsx)(f.Z, b(m({}, _), {
+  return (0, r.jsx)(h.Z, b(m({}, _), {
     folderNode: t,
     expanded: E,
     selected: null != C && x.includes(C),
@@ -113,7 +113,7 @@ let _ = Chunk647438.memo(function(e) {
     unread: Z,
     mediaState: I,
     defaultFolderName: S,
-    onExpandCollapse: w,
-    onContextMenu: T
+    onExpandCollapse: T,
+    onContextMenu: w
   }))
 })

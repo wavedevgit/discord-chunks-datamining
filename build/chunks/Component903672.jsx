@@ -1,4 +1,4 @@
-/** Chunk was on 57695 **/
+/** Chunk was on 30437 **/
 /** chunk id: 903672, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Z
@@ -55,7 +55,7 @@ function Z(e) {
   } = e, n = (0, a.e7)([_.Z, y.Z], () => _.Z.getChannel(y.Z.getChannelId())), {
     messages: l,
     hasMore: s,
-    loading: f,
+    loading: h,
     guildFilter: g,
     roleFilter: b,
     everyoneFilter: O
@@ -73,7 +73,7 @@ function Z(e) {
     if (!v.ZP.hasLoadedEver) return void N(n, true);
     (null != x && g !== x || null != C && b !== C || null != P && O !== P) && N(n, true)
   }, [x, g, C, b, P, O, n, true]), (0, d.ZP)(() => {
-    (null == l ? true : l.some(h.k5)) && (c.Z.clearMentions(), N(n, true))
+    (null == l ? true : l.some(f.k5)) && (c.Z.clearMentions(), N(n, true))
   }), i.useEffect(() => () => {
     c.Z.truncateMentions(E.DJj)
   }, []);
@@ -90,7 +90,7 @@ function Z(e) {
     },
     channel: n,
     messages: l,
-    loading: f,
+    loading: h,
     hasMore: s,
     analyticsName: "Recent Mentions",
     loadMore: function() {
@@ -99,21 +99,21 @@ function Z(e) {
     canCloseAllMessages: true,
     renderHeader: Z,
     renderEmptyState: A,
-    renderMessage: w,
+    renderMessage: T,
     "aria-label": S.intl.string(S.t.jbV6MM),
     listName: "recents"
   })
 }
 
-function w(e, t) {
-  return [(0, r.jsx)(T, {
+function T(e, t) {
+  return [(0, r.jsx)(w, {
     message: e,
     gotoMessage: t,
     dismissible: true
   }, e.id)]
 }
 
-function T(e) {
+function w(e) {
   let {
     message: t,
     gotoMessage: n,
@@ -121,9 +121,9 @@ function T(e) {
   } = e;
   if (null == t) return null;
   let l = _.Z.getChannel(t.channel_id);
-  if (null == l || (0, f._t)(l) || (0, f.ft)(l)) return null;
+  if (null == l || (0, h._t)(l) || (0, h.ft)(l)) return null;
   let o = O.Z.didAgree(l.getGuildId()),
-    a = !!(0, f.qF)(l) && !o;
+    a = !!(0, h.qF)(l) && !o;
   return (0, r.jsxs)("div", {
     className: I.container,
     children: [(0, r.jsx)(x.Z, {

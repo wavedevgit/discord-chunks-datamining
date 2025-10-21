@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 269089, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => E
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk570140 = require("./570140.js"),
@@ -12,42 +12,56 @@ var Chunk951288 = require("./951288.js"),
   Chunk788983 = require("./788983.js"),
   Chunk981631 = require("./981631.js"),
   Chunk757744 = require("./757744.js");
+
+function p(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
 require("./966117.js");
-let p = (0, Chunk663993.Un)({
+let f = (0, Chunk663993.Un)({
     createPromise: () => require.e("80960").then(require.bind(require, 223455)),
     webpackId: 223455,
     name: "PopoutWindowChannelCall"
   }),
-  f = (0, Chunk663993.Un)({
+  h = (0, Chunk663993.Un)({
+    createPromise: () => require.e("31688").then(require.bind(require, 205557)),
+    webpackId: 205557,
+    name: "PopoutWindowCallTile"
+  }),
+  g = (0, Chunk663993.Un)({
     createPromise: () => require.e("20176").then(require.bind(require, 432472)),
     webpackId: 432472,
     name: "PopoutWindowStageChannelCall"
   }),
-  h = (0, Chunk663993.Un)({
+  m = (0, Chunk663993.Un)({
     createPromise: () => require.e("80960").then(require.bind(require, 945778)),
     webpackId: 945778,
     name: "PopoutWindowRTCDebug"
   }),
-  g = (0, Chunk663993.Un)({
+  b = (0, Chunk663993.Un)({
     createPromise: () => Promise.all([require.e("50751"), require.e("27278")]).then(require.bind(require, 748623)),
     webpackId: 748623,
     name: "PopoutWindowActivity"
   });
-class m extends Chunk317770.Z {
+class _ extends Chunk317770.Z {
   _initialize() {
-    Chunk570140.Z.subscribe("CHANNEL_CALL_POPOUT_WINDOW_OPEN", this.handleOpenChannelCallPopout), Chunk570140.Z.subscribe("RTC_DEBUG_POPOUT_WINDOW_OPEN", this.handleOpenRTCDebugPopout), Chunk570140.Z.subscribe("ACTIVITY_POPOUT_WINDOW_OPEN", this.handleOpenActivityPopout), this.initializeStyleSheetObserver()
+    Chunk570140.Z.subscribe("CHANNEL_CALL_POPOUT_WINDOW_OPEN", this.handleOpenChannelCallPopout), Chunk570140.Z.subscribe("CALL_TILE_POPOUT_WINDOW_OPEN", this.handleOpenCallTilePopout), Chunk570140.Z.subscribe("RTC_DEBUG_POPOUT_WINDOW_OPEN", this.handleOpenRTCDebugPopout), Chunk570140.Z.subscribe("ACTIVITY_POPOUT_WINDOW_OPEN", this.handleOpenActivityPopout), this.initializeStyleSheetObserver()
   }
   _terminate() {
-    Chunk570140.Z.unsubscribe("CHANNEL_CALL_POPOUT_WINDOW_OPEN", this.handleOpenChannelCallPopout), Chunk570140.Z.unsubscribe("RTC_DEBUG_POPOUT_WINDOW_OPEN", this.handleOpenRTCDebugPopout), Chunk570140.Z.unsubscribe("ACTIVITY_POPOUT_WINDOW_OPEN", this.handleOpenActivityPopout), this.terminateStyleSheetObserver()
+    Chunk570140.Z.unsubscribe("CHANNEL_CALL_POPOUT_WINDOW_OPEN", this.handleOpenChannelCallPopout), Chunk570140.Z.unsubscribe("CALL_TILE_POPOUT_WINDOW_OPEN", this.handleOpenCallTilePopout), Chunk570140.Z.unsubscribe("RTC_DEBUG_POPOUT_WINDOW_OPEN", this.handleOpenRTCDebugPopout), Chunk570140.Z.unsubscribe("ACTIVITY_POPOUT_WINDOW_OPEN", this.handleOpenActivityPopout), this.terminateStyleSheetObserver()
   }
   handleOpenChannelCallPopout(e) {
     let {
       channel: t
     } = e;
-    c.bA(u.KJ3.CHANNEL_CALL_POPOUT, e => t.isGuildStageVoice() ? (0, r.jsx)(f, {
+    c.bA(u.KJ3.CHANNEL_CALL_POPOUT, e => t.isGuildStageVoice() ? (0, r.jsx)(g, {
       windowKey: e,
       channelId: t.id
-    }) : (0, r.jsx)(p, {
+    }) : (0, r.jsx)(f, {
       windowKey: e,
       channelId: t.id
     }), {
@@ -74,7 +88,7 @@ class m extends Chunk317770.Z {
     null != this._observer && (this._observer.disconnect(), this._observer = null)
   }
   handleOpenRTCDebugPopout() {
-    Chunk788983.bA(Chunk981631.KJ3.RTC_DEBUG_POPOUT, e => (0, r.jsx)(h, {
+    Chunk788983.bA(Chunk981631.KJ3.RTC_DEBUG_POPOUT, e => (0, r.jsx)(m, {
       windowKey: e
     }), {
       defaultWidth: 854,
@@ -82,7 +96,7 @@ class m extends Chunk317770.Z {
     })
   }
   handleOpenActivityPopout() {
-    (0, Chunk765250.te)(Chunk757744.$S, Chunk355863.Z.getDefaultLayout(Chunk757744.$S, Chunk757744.HN), Chunk757744.HN), Chunk788983.bA(Chunk981631.KJ3.ACTIVITY_POPOUT, e => (0, r.jsx)(g, {
+    (0, Chunk765250.te)(Chunk757744.$S, Chunk355863.Z.getDefaultLayout(Chunk757744.$S, Chunk757744.HN), Chunk757744.HN), Chunk788983.bA(Chunk981631.KJ3.ACTIVITY_POPOUT, e => (0, r.jsx)(b, {
       windowKey: e
     }), {
       defaultWidth: 854,
@@ -90,15 +104,20 @@ class m extends Chunk317770.Z {
     })
   }
   constructor(...e) {
-    super(...e),
-      function(e, t, n) {
-        t in e ? Object.defineProperty(e, t, {
-          value: null,
-          enumerable: true,
-          configurable: true,
-          writable: true
-        }) : e[t] = null
-      }(this, "_observer", null)
+    super(...e), p(this, "_observer", null), p(this, "handleOpenCallTilePopout", e => {
+      let {
+        channelId: t,
+        participantId: n
+      } = e, i = "".concat(u.KJ3.CALL_TILE_POPOUT, "_").concat(t, "_").concat(n);
+      c.bA(i, e => (0, r.jsx)(h, {
+        windowKey: e,
+        channelId: t,
+        participantId: n
+      }), {
+        defaultWidth: 854,
+        defaultHeight: 480
+      })
+    })
   }
 }
-let b = new m
+let E = new _

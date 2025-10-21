@@ -1,4 +1,4 @@
-/** Chunk was on 87943 **/
+/** Chunk was on 99407 **/
 /** chunk id: 517525, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => F
@@ -47,7 +47,7 @@ function j(e) {
   return e
 }
 
-function P(e, t) {
+function Z(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -59,26 +59,26 @@ function P(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let Z = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
+let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
   x = {
     opacity: 0,
     transform: "translate3d(100%, 0, 0)"
   },
-  A = {
+  R = {
     opacity: 1,
     transform: "translate3d(0%, 0, 0)"
   },
-  R = {
+  A = {
     opacity: 0
   },
   T = {
     opacity: 1
   },
   N = {
-    borderRadius: "".concat(Z, "px ").concat(Z, "px ").concat(Z, "px ").concat(Z, "px")
+    borderRadius: "".concat(P, "px ").concat(P, "px ").concat(P, "px ").concat(P, "px")
   },
   D = {
-    borderRadius: "0px ".concat(Z, "px ").concat(Z, "px 0px")
+    borderRadius: "0px ".concat(P, "px ").concat(P, "px 0px")
   },
   M = {
     mass: 1,
@@ -91,16 +91,16 @@ let Z = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
         participant: o,
         isUpsellEnabled: c,
         shape: f,
-        size: b,
-        didTrackUpsellViewed: Z,
+        size: v,
+        didTrackUpsellViewed: P,
         setDidTrackUpsellViewed: x,
-        className: A,
-        premiumIndicator: R,
+        className: R,
+        premiumIndicator: A,
         quality: T
       } = e,
       {
         analyticsLocations: N
-      } = (0, _.ZP)(),
+      } = (0, m.ZP)(),
       D = null != (0, y.Z)(o);
     try {
       t = (0, S.nG)(T)
@@ -115,33 +115,33 @@ let Z = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
     let M = t || l,
       {
         location: k
-      } = (0, m.O)(),
-      F = (0, s.e7)([v.default], () => v.default.getCurrentUser()),
+      } = (0, _.O)(),
+      F = (0, s.e7)([b.default], () => b.default.getCurrentUser()),
       L = c && !h.ZP.isPremium(F, I.PremiumTypes.TIER_1) && !h.ZP.canStreamQuality(h.ZP.StreamQuality.MID, F),
       V = i.useCallback(() => {
         L && M && (0, p.ZDy)(async () => {
           let {
             default: e
           } = await n.e("28479").then(n.bind(n, 78865));
-          return t => (0, r.jsx)(e, P(j({}, t), {
+          return t => (0, r.jsx)(e, Z(j({}, t), {
             analyticsSource: k
           }))
         })
       }, [L, M, k]);
     if (i.useEffect(() => {
-        !Z && M && (E.default.track(O.rMx.PREMIUM_UPSELL_VIEWED, {
+        !P && M && (E.default.track(O.rMx.PREMIUM_UPSELL_VIEWED, {
           type: I.cd.STREAM_QUALITY_INDICATOR,
           has_premium_stream_fps: t,
           has_premium_stream_resolution: l,
           location_stack: N
         }), x(true))
-      }, [t, l, M, Z, x, N]), null == T) return null;
+      }, [t, l, M, P, x, N]), null == T) return null;
     let U = (0, r.jsx)(d.u, {
       text: D ? C.intl.string(C.t.q8TiVt) : M ? C.intl.string(C.t.IHgpEn) : C.intl.string(C.t.vLb0VW),
       position: "bottom",
       children: (0, r.jsxs)(p.P3F, {
         onClick: V,
-        className: a()(w.qualityIndicator, b, g.eE[f], D ? w.qualityIndicatorLowQuality : w.qualityIndicatorFullQuality, {
+        className: a()(w.qualityIndicator, v, g.eE[f], D ? w.qualityIndicatorLowQuality : w.qualityIndicatorFullQuality, {
           [w.clickable]: L && M
         }),
         children: [M ? (0, r.jsx)(p.SrA, {
@@ -158,8 +158,8 @@ let Z = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
     });
     return (0, r.jsx)(p.IGR, {
       text: U,
-      className: a()(A, w.qualityIndicatorBadge, {
-        [w.qualityIndicatorBadgePremium]: M && R
+      className: a()(R, w.qualityIndicatorBadge, {
+        [w.qualityIndicatorBadgePremium]: M && A
       }),
       color: u.Z.unsafe_rawColors.PRIMARY_500.css,
       shape: g.eE[f]
@@ -173,24 +173,24 @@ let Z = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
       size: c,
       className: s,
       premiumIndicator: u
-    } = e, [d, f] = i.useState(false), m = (0, S.W3)(t), {
-      reducedMotion: _
-    } = i.useContext(p.Sfi), v = n && null != m;
+    } = e, [d, f] = i.useState(false), _ = (0, S.W3)(t), {
+      reducedMotion: m
+    } = i.useContext(p.Sfi), b = n && null != _;
     i.useEffect(() => {
-      (0, b.Z)(t.stream.ownerId, t.user.getAvatarURL(t.stream.guildId, 80), {
+      (0, v.Z)(t.stream.ownerId, t.user.getAvatarURL(t.stream.guildId, 80), {
         dispatchWait: true
       })
     }, [t]);
-    let E = (0, p.Yzy)(v, {
+    let E = (0, p.Yzy)(b, {
         enter: {
-          from: _.enabled ? R : x,
-          to: _.enabled ? T : A
+          from: m.enabled ? A : x,
+          to: m.enabled ? T : R
         },
-        leave: _.enabled ? R : x,
+        leave: m.enabled ? A : x,
         config: M
       }, "animate-always"),
       h = (0, p.q_F)({
-        to: v ? D : N,
+        to: b ? D : N,
         config: M
       }, "animate-always");
     return (e => {
@@ -198,7 +198,7 @@ let Z = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
         className: n,
         popoutProps: i
       } = e;
-      return (0, r.jsxs)("div", P(j({
+      return (0, r.jsxs)("div", Z(j({
         className: a()(w.streamQualityIndicator, n)
       }, i), {
         children: [E((e, n) => n ? (0, r.jsx)(o.animated.div, {
@@ -212,7 +212,7 @@ let Z = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
             didTrackUpsellViewed: d,
             setDidTrackUpsellViewed: f,
             premiumIndicator: u,
-            quality: m
+            quality: _
           })
         }) : null), (0, r.jsx)(o.animated.div, {
           style: h,
@@ -220,7 +220,7 @@ let Z = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
           children: (0, r.jsx)(g.ZP, {
             look: g.jZ.RED,
             size: c,
-            shape: v ? p.Dv2.ROUND_RIGHT : p.Dv2.ROUND
+            shape: b ? p.Dv2.ROUND_RIGHT : p.Dv2.ROUND
           })
         })]
       }))

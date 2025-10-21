@@ -59,7 +59,7 @@ function I(e, t, n, a, i) {
     }), null == h || l().isEmpty(h) || o.push({
       section: (0, v.J$)(e, R._s_.OUTBOUND, n),
       label: F.intl.string(F.t["3u0gII"]),
-      element: x.Z,
+      element: C.Z,
       elementProps: {
         context: e,
         index: n
@@ -151,7 +151,7 @@ function k() {
     return null != i && (p.push(f), p.push({
       section: R._s_.SCREENSHARE,
       label: F.intl.string(F.t["gWbr/U"]),
-      element: C.Z,
+      element: x.Z,
       elementProps: {
         screenshare: i
       }

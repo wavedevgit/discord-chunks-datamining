@@ -1,4 +1,4 @@
-/** Chunk was on 57695 **/
+/** Chunk was on 30437 **/
 /** chunk id: 734190, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => k
@@ -136,8 +136,8 @@ function M(e) {
     thread: t
   } = e, n = i.useMemo(() => {
     var e;
-    return null != (e = (0, h.KS)(t)) ? e : u.or_
-  }, [t]), l = (0, h.bT)(t);
+    return null != (e = (0, f.KS)(t)) ? e : u.or_
+  }, [t]), l = (0, f.bT)(t);
   return (0, r.jsx)(c.u, {
     text: l,
     delay: 500,
@@ -145,9 +145,9 @@ function M(e) {
     children: (0, r.jsx)("div", {
       role: "img",
       "aria-label": "".concat(l, " icon"),
-      className: T.iconContainer,
+      className: w.iconContainer,
       children: (0, r.jsx)(n, {
-        className: T.icon,
+        className: w.icon,
         color: "currentColor"
       })
     })
@@ -158,7 +158,7 @@ let k = Chunk647438.memo(function(e) {
     thread: t,
     isSelectedChannel: l,
     isSelectedVoice: c,
-    isLast: h,
+    isLast: f,
     withGuildIcon: A
   } = e, k = (0, s.e7)([j.ZP], () => j.ZP.getVoiceStatesForChannel(t), [t]), G = (0, s.e7)([v.Z], () => v.Z.hasVideo(t.id)), {
     unread: U,
@@ -210,12 +210,12 @@ let k = Chunk647438.memo(function(e) {
   });
   return (0, r.jsxs)("li", {
     role: Q,
-    className: o()(w.containerDefault, {
-      [w.selected]: l
+    className: o()(T.containerDefault, {
+      [T.selected]: l
     }),
     children: [(0, r.jsx)(L, {
       withGuildIcon: A
-    }), h ? null : (0, r.jsx)(L, {
+    }), f ? null : (0, r.jsx)(L, {
       withGuildIcon: A,
       inverted: true,
       style: {
@@ -230,45 +230,45 @@ let k = Chunk647438.memo(function(e) {
         right: 4
       },
       children: (0, r.jsxs)("div", {
-        className: o()(w.iconVisibility, T.wrapper, T.typeThread, {
-          [T.modeSelected]: l,
-          [T.modeMuted]: !l && V,
-          [T.modeUnreadImportant]: !V && !l && U,
-          [T.withGuildIcon]: A,
-          [T.threadsInChannelListQoLExperiment]: H.enabled,
-          [T.withThreadAvatar]: "icon-with-avatar" === H.variant,
-          [T.withThreadIconInBubble]: "icon-in-bubble" === H.variant
+        className: o()(T.iconVisibility, w.wrapper, w.typeThread, {
+          [w.modeSelected]: l,
+          [w.modeMuted]: !l && V,
+          [w.modeUnreadImportant]: !V && !l && U,
+          [w.withGuildIcon]: A,
+          [w.threadsInChannelListQoLExperiment]: H.enabled,
+          [w.withThreadAvatar]: "icon-with-avatar" === H.variant,
+          [w.withThreadIconInBubble]: "icon-in-bubble" === H.variant
         }),
         onMouseDown: K,
         onContextMenu: Y,
         children: [!U || V || l ? null : (0, r.jsx)("div", {
-          className: o()(T.unread, T.unreadImportant)
+          className: o()(w.unread, w.unreadImportant)
         }), (0, r.jsx)(u.P3F, D(R({}, J), {
           innerRef: $,
-          className: T.link,
+          className: w.link,
           onClick: W,
           "aria-label": ee,
           focusProps: {
             enabled: false
           },
           children: (0, r.jsxs)("div", {
-            className: o()(T.linkTop, T.__invalid_threadMainContent),
+            className: o()(w.linkTop, w.__invalid_threadMainContent),
             children: ["icon-with-avatar" === H.variant ? (0, r.jsxs)("div", {
-              className: T.threadIconWithAvatar,
+              className: w.threadIconWithAvatar,
               children: [(0, r.jsx)(M, {
                 thread: t
-              }), null == z ? null : (0, r.jsx)(f.Z, {
+              }), null == z ? null : (0, r.jsx)(h.Z, {
                 user: z,
                 size: u.EFr.SIZE_16
               })]
             }) : null, "icon-in-bubble" === H.variant ? (0, r.jsx)(M, {
               thread: t
             }) : null, (0, r.jsx)(g.Z, {
-              className: T.name,
+              className: w.name,
               "aria-hidden": true,
               children: t.name
             }), (0, r.jsxs)("div", {
-              className: T.children,
+              className: w.children,
               children: [q > 0 && t.userLimit > 0 ? (0, r.jsx)(E.Z, {
                 userCount: q,
                 video: G,

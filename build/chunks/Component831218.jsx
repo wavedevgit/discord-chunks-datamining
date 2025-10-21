@@ -1,4 +1,4 @@
-/** Chunk was on 57695 **/
+/** Chunk was on 30437 **/
 /** chunk id: 831218, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => V
@@ -228,7 +228,7 @@ class F extends(r = Chunk647438.Component) {
     null != module && null != exports && exports.indexOf(module) >= 0 && this.scrollToChannel(module), this.reportAnalytics()
   }
   shouldComponentUpdate(e) {
-    return !(0, f.Z)(this.props, e, ["children"])
+    return !(0, h.Z)(this.props, e, ["children"])
   }
   componentDidUpdate(e) {
     let {
@@ -278,8 +278,8 @@ class F extends(r = Chunk647438.Component) {
           }
           return i
         }(r, ["ref", "role"]);
-        return (0, i.jsx)(h.Wdt, {
-          children: r => (0, i.jsx)(h.aVo, G({
+        return (0, i.jsx)(f.Wdt, {
+          children: r => (0, i.jsx)(f.aVo, G({
             fade: true,
             innerRole: o,
             innerAriaLabel: L.intl.string(L.t.YUU0RF),
@@ -326,7 +326,7 @@ class F extends(r = Chunk647438.Component) {
         c = n.some(e => (0, v.Z)(e)),
         u = {
           num_users_visible: a.length,
-          num_users_visible_with_mobile_indicator: s.filter(e => null != e && T.Z.isMobileOnline(e)).length
+          num_users_visible_with_mobile_indicator: s.filter(e => null != e && w.Z.isMobileOnline(e)).length
         };
       this.hasReportedAnalytics = true, _.ZP.trackWithMetadata(D.rMx.DM_LIST_VIEWED, U(G({}, u, (0, y.X)()), {
         visible_user_ids: s.filter(e => null != e),
@@ -397,11 +397,11 @@ class F extends(r = Chunk647438.Component) {
           popoutAlign: "left",
           className: M.privateChannelRecipientsInviteButtonIconContainer,
           iconClassName: M.privateChannelRecipientsInviteButtonIcon,
-          icon: h.BRu,
+          icon: f.BRu,
           subscribeToGlobalHotkey: true
         }), "side" === r && (0, i.jsx)(S.l, {
           popoutAlign: "left",
-          icon: h.kL_,
+          icon: f.kL_,
           text: L.intl.string(L.t["6Urw1t"]),
           size: "sm",
           subscribeToGlobalHotkey: true
@@ -431,28 +431,28 @@ k(F, "defaultProps", {
 let V = e => {
   let {
     density: t
-  } = (0, h.TCT)(), {
+  } = (0, f.TCT)(), {
     version: n,
     theme: r,
     children: o,
     showDMHeader: a,
     listScrollerRef: s,
     createDMCTAButtonVariant: c,
-    hideAllDMs: f
-  } = e, g = l.Children.count(o), _ = w.Z.getMutablePrivateChannels(), y = f ? {} : (0, P.k1)(_), v = (0, p.Wu)([A.Z, I.Z, N.Z], () => {
+    hideAllDMs: h
+  } = e, g = l.Children.count(o), _ = T.Z.getMutablePrivateChannels(), y = h ? {} : (0, P.k1)(_), v = (0, p.Wu)([A.Z, I.Z, N.Z], () => {
     let e = A.Z.getPrivateChannelIds(),
       t = (0, P.tU)(e, [I.Z, N.Z]);
-    return f ? [] : t
-  }, [f]);
+    return h ? [] : t
+  }, [h]);
   (0, E.z)(C.R);
   let {
     analyticsLocations: j
   } = (0, O.ZP)(b.Z.CONTACTS_LIST), S = (0, Z.Ll)(), {
-    keyboardModeEnabled: T,
+    keyboardModeEnabled: w,
     version: R
-  } = (0, p.cj)([m.Z, w.Z], () => ({
+  } = (0, p.cj)([m.Z, T.Z], () => ({
     keyboardModeEnabled: m.Z.keyboardModeEnabled,
-    version: null != n ? "".concat(n, ":").concat(w.Z.getPrivateChannelsVersion()) : w.Z.getPrivateChannelsVersion()
+    version: null != n ? "".concat(n, ":").concat(T.Z.getPrivateChannelsVersion()) : T.Z.getPrivateChannelsVersion()
   })), D = l.useRef(null), L = null != s ? s : D, M = l.useCallback(e => {
     let t = L.current,
       n = document.querySelector(e);
@@ -483,7 +483,7 @@ let V = e => {
     })
   }), [L]), V = (0, x.Dt)(), H = (0, d.ZP)({
     id: "private-channels-".concat(V),
-    isEnabled: T,
+    isEnabled: w,
     scrollToStart: k,
     scrollToEnd: B,
     defaultFocused: (g + +!!a).toString(),

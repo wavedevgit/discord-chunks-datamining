@@ -1,8 +1,8 @@
-/** Chunk was on 87943 **/
+/** Chunk was on 99407 **/
 /** chunk id: 352978, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   L: () => p,
-  Z: () => m
+  Z: () => _
 }), require("./388685.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,24 +14,24 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk153066 = require("./153066.js"),
   Chunk412418 = require("./412418.js"),
   p = ((r = {}).CONTAIN = "contain", r.COVER = "cover", r);
-let m = Chunk647438.memo(function(e) {
+let _ = Chunk647438.memo(function(e) {
   let {
     streamId: t,
     onResize: n,
     wrapperClassName: r,
     videoComponent: a,
     className: p,
-    fit: m = "contain",
-    mirror: _ = false,
+    fit: _ = "contain",
+    mirror: m = false,
     paused: g = false,
-    streamPreviewURL: b,
-    videoSpinnerContext: v,
+    streamPreviewURL: v,
+    videoSpinnerContext: b,
     userId: E,
     streamKey: h
   } = e, [S, y] = l.useState(true);
   (0, u.Z)({
     location: "VideoStream",
-    videoSpinnerContext: v,
+    videoSpinnerContext: b,
     userId: E,
     streamId: t,
     loading: S,
@@ -43,7 +43,7 @@ let m = Chunk647438.memo(function(e) {
     streamId: t,
     userId: E,
     loading: S,
-    videoSpinnerContext: v,
+    videoSpinnerContext: b,
     streamKey: h,
     paused: g
   }), I = l.useCallback(() => {
@@ -52,8 +52,8 @@ let m = Chunk647438.memo(function(e) {
   return (0, i.jsxs)("div", {
     className: o()(f.wrapper, r),
     children: [null != t && (0, i.jsx)(a, {
-      className: o()(f.video, (0, d.l)(f, "video", m), {
-        [f.mirror]: _
+      className: o()(f.video, (0, d.l)(f, "video", _), {
+        [f.mirror]: m
       }, p),
       streamId: t,
       onResize: n,
@@ -64,8 +64,8 @@ let m = Chunk647438.memo(function(e) {
         [f.loading]: S
       }),
       children: S && (0, i.jsxs)(l.Fragment, {
-        children: [null != b ? (0, i.jsx)("img", {
-          src: b,
+        children: [null != v ? (0, i.jsx)("img", {
+          src: v,
           alt: "",
           className: f.previewImage
         }) : (0, i.jsx)("div", {

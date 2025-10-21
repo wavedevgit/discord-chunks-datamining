@@ -1,10 +1,10 @@
-/** Chunk was on 57695 **/
+/** Chunk was on 30437 **/
 /** chunk id: 98597, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   CN: () => N,
   ZP: () => D,
-  eP: () => T,
-  hR: () => w,
+  eP: () => w,
+  hR: () => T,
   jo: () => Z
 });
 var r, Chunk951288 = require("./951288.js"),
@@ -61,7 +61,7 @@ function Z(e, t) {
   return null == t ? S.containerDefault : e > t ? S.containerDragAfter : S.containerDragBefore
 }
 
-function w(e) {
+function T(e) {
   let {
     channel: t,
     disableManageChannels: n,
@@ -88,7 +88,7 @@ function w(e) {
   })
 }
 
-function T(e) {
+function w(e) {
   let {
     channel: t,
     isDefaultChannel: r = false,
@@ -96,9 +96,9 @@ function T(e) {
     tabIndex: d,
     forceShowButtons: g,
     hasChannelInfo: _ = false
-  } = e, j = (0, f._k)({
+  } = e, j = (0, h._k)({
     location: "channel_base"
-  }), x = (0, s.e7)([y.Z], () => y.Z.getGuild(t.getGuildId())), I = (0, s.e7)([m.Z], () => m.Z.getStageInstanceByChannel(t.id), [t.id]), N = (0, s.e7)([p.ZP], () => p.ZP.getActiveEventByChannel(t.id), [t.id]), Z = (0, s.e7)([v.Z], () => (0, h.b)(v.Z, x, t, I)), w = (0, s.e7)([v.Z], () => (null == t ? true : t.type) === C.d4z.GUILD_VOICE && j.isVoiceChannelEntrypointEnabled ? E.intl.string(E.t["EE+P0H"]) : j.isTextChannelEntrypointEnabled ? E.intl.string(E.t["0jeAXt"]) : v.Z.can(C.Plq.CREATE_INSTANT_INVITE, t) ? E.intl.string(E.t.zJrgTG) : E.intl.string(E.t.Sd8Ixw)), T = l.useRef(null);
+  }), x = (0, s.e7)([y.Z], () => y.Z.getGuild(t.getGuildId())), I = (0, s.e7)([m.Z], () => m.Z.getStageInstanceByChannel(t.id), [t.id]), N = (0, s.e7)([p.ZP], () => p.ZP.getActiveEventByChannel(t.id), [t.id]), Z = (0, s.e7)([v.Z], () => (0, f.b)(v.Z, x, t, I)), T = (0, s.e7)([v.Z], () => (null == t ? true : t.type) === C.d4z.GUILD_VOICE && j.isVoiceChannelEntrypointEnabled ? E.intl.string(E.t["EE+P0H"]) : j.isTextChannelEntrypointEnabled ? E.intl.string(E.t["0jeAXt"]) : v.Z.can(C.Plq.CREATE_INSTANT_INVITE, t) ? E.intl.string(E.t.zJrgTG) : E.intl.string(E.t.Sd8Ixw)), w = l.useRef(null);
   if (o || !Z || t.isModeratorReportChannel()) return null;
   let A = [j.isVoiceChannelEntrypointEnabled, j.isTextChannelEntrypointEnabled].some(Boolean) ? u.oLu : u.ejJ,
     R = (0, i.jsx)(A, {
@@ -108,16 +108,16 @@ function T(e) {
       color: "currentColor"
     });
   return r && (R = (0, i.jsx)(b.Z, {
-    childRef: T,
+    childRef: w,
     tutorialId: "instant-invite",
     position: "left",
     children: (0, i.jsx)("div", {
-      ref: T,
+      ref: w,
       children: R
     })
   })), (0, i.jsx)(c.u, {
     asContainer: true,
-    text: w,
+    text: T,
     children: (0, i.jsx)(u.P3F, {
       className: a()(S.iconItem, g ? S.alwaysShown : true, _ ? S.iconWithChannelInfo : S.iconNoChannelInfo),
       onClick: function() {
@@ -150,7 +150,7 @@ function T(e) {
         }
       },
       tabIndex: d,
-      "aria-label": w,
+      "aria-label": T,
       children: R
     })
   })
@@ -203,10 +203,10 @@ function R(e) {
 }
 class D extends(r = Chunk647438.PureComponent) {
   renderEditButton() {
-    return (0, Chunk951288.jsx)(w, P({}, this.props))
+    return (0, Chunk951288.jsx)(T, P({}, this.props))
   }
   renderInviteButton() {
-    return (0, Chunk951288.jsx)(T, P({}, this.props))
+    return (0, Chunk951288.jsx)(w, P({}, this.props))
   }
   renderRemoveSuggestionButton() {
     return (0, Chunk951288.jsx)(A, P({}, this.props))

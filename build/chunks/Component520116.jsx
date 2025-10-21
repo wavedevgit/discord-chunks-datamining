@@ -1,4 +1,4 @@
-/** Chunk was on 57695 **/
+/** Chunk was on 30437 **/
 /** chunk id: 520116, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -37,7 +37,7 @@ function E(e) {
     compact: u,
     isGroupStart: d,
     treatSpam: p,
-    gotoChannel: f
+    gotoChannel: h
   } = e, g = (0, a.JA)(null != (t = s.id) ? t : ""), m = i.useCallback(e => {
     if ("ArrowLeft" === e.key) {
       var t;
@@ -69,8 +69,8 @@ function E(e) {
     }, g), l = l = {
       children: [(0, r.jsx)(O.Z, {
         className: x.jumpButton,
-        onJump: e => f(e, s.id)
-      }), (0, r.jsx)(h.Z, {
+        onJump: e => h(e, s.id)
+      }), (0, r.jsx)(f.Z, {
         id: s.id,
         message: s,
         channel: o,
@@ -101,7 +101,7 @@ function S(e) {
     channelRecord: l,
     gotoChannel: a
   } = e, {
-    enabled: h
+    enabled: f
   } = u.Z.useExperiment({
     location: "20e3b0_1"
   }, {
@@ -114,7 +114,7 @@ function S(e) {
     n.forEach(n => {
       if (!I && (null == e || !e.isSame(n.timestamp, "day"))) {
         let t = (0, _.vc)(n.timestamp, "LL");
-        N.push((0, r.jsx)(f.Z, {
+        N.push((0, r.jsx)(h.Z, {
           className: x.divider,
           children: t
         }, t)), e = o()(n.timestamp)
@@ -125,7 +125,7 @@ function S(e) {
         message: n,
         compact: O,
         isGroupStart: i,
-        treatSpam: !P && h && (0, p.DQ)(n) && C,
+        treatSpam: !P && f && (0, p.DQ)(n) && C,
         gotoChannel: a
       }, n.id))
     }), i.messages.length >= y.hC && N.push((0, r.jsxs)(s.zx, {

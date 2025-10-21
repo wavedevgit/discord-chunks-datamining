@@ -1,4 +1,4 @@
-/** Chunk was on 87943 **/
+/** Chunk was on 99407 **/
 /** chunk id: 673125, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -33,36 +33,36 @@ function p(e) {
   }
   return e
 }
-let m = {},
-  _ = {},
+let _ = {},
+  m = {},
   g = {},
-  b = true,
-  v = null;
+  v = true,
+  b = null;
 
 function E(e) {
-  if (null == _[e]) {
+  if (null == m[e]) {
     let t = o.default.getUser(e);
     if (null == t) return;
     let n = t.getAvatarURL(null, d.Ks),
       r = new Image;
-    r.src = n, _[e] = r
+    r.src = n, m[e] = r
   }
 }
 class h extends(r = Chunk442837.ZP.Store) {
   get visibleOverlayCanvas() {
-    return b
+    return v
   }
   getDrawables(e) {
-    return null != m[e] ? m[e] : []
+    return null != _[e] ? _[e] : []
   }
   getAvatarImage(e) {
-    return _[e]
+    return m[e]
   }
   getEmojiImage(e) {
     return g[e]
   }
   getDrawMode() {
-    return v
+    return b
   }
 }
 f(h, "displayName", "SharedCanvasStore");
@@ -73,8 +73,8 @@ let S = new h(Chunk570140.Z, {
       newPoints: n,
       userId: r,
       streamerId: i
-    } = e, l = m[i];
-    if (null == l) m[i] = [{
+    } = e, l = _[i];
+    if (null == l) _[i] = [{
       type: s.W.LINE,
       id: t,
       userId: r,
@@ -97,7 +97,7 @@ let S = new h(Chunk570140.Z, {
       emojiHose: o,
       streamerId: u,
       userId: f
-    } = e, _ = (i = p({}, o), l = l = {
+    } = e, m = (i = p({}, o), l = l = {
       type: s.W.EMOJI_HOSE
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
       var n = Object.keys(e);
@@ -109,15 +109,15 @@ let S = new h(Chunk570140.Z, {
     })(Object(l)).forEach(function(e) {
       Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
     }), i);
-    if (null == m[u]) m[u] = [_];
+    if (null == _[u]) _[u] = [m];
     else {
-      let e = m[u].findIndex(e => e.id === o.id);
-      e >= 0 ? m[u][e] = p({}, m[u][e], _) : m[u].push(_)
+      let e = _[u].findIndex(e => e.id === o.id);
+      e >= 0 ? _[u][e] = p({}, _[u][e], m) : _[u].push(m)
     }
-    let b = null != (n = null != (t = o.emojiId) ? t : o.emojiName) ? n : "";
-    if (null == g[b]) {
+    let v = null != (n = null != (t = o.emojiId) ? t : o.emojiName) ? n : "";
+    if (null == g[v]) {
       let e = null != o.emojiName ? a.ZP.convertNameToSurrogate(o.emojiName) : null;
-      g[b] = new Image, g[b].src = (0, c.qc)({
+      g[v] = new Image, g[v].src = (0, c.qc)({
         id: o.emojiId,
         name: null != (r = null != e ? e : o.emojiName) ? r : "",
         animated: false
@@ -130,19 +130,19 @@ let S = new h(Chunk570140.Z, {
       drawables: t,
       streamerId: n
     } = e;
-    if (null != m[n]) {
+    if (null != _[n]) {
       let e = new Set;
-      t.forEach(t => e.add(t.id)), m[n] = m[n].filter(t => !e.has(t.id))
+      t.forEach(t => e.add(t.id)), _[n] = _[n].filter(t => !e.has(t.id))
     }
   },
   SHARED_CANVAS_SET_DRAW_MODE: function(e) {
     let {
       drawMode: t
     } = e;
-    v = t
+    b = t
   },
   TOGGLE_OVERLAY_CANVAS: function(e) {
     let {} = e;
-    b = !b
+    v = !v
   }
 })

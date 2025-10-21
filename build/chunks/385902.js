@@ -1,4 +1,4 @@
-/** Chunk was on 57695 **/
+/** Chunk was on 30437 **/
 /** chunk id: 385902, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   K: () => O,
@@ -28,11 +28,11 @@ function _(e, t) {
     }),
     a = (0, l.e7)([s.Z], () => s.Z.getStateForGuild(e)),
     u = null == a ? true : a.allPowerups[i.A$],
-    f = (0, d.ZP)(e, u),
+    h = (0, d.ZP)(e, u),
     _ = (0, c.q8)(e, t),
     O = null == u ? true : u.storeRemovalDate,
     y = null != (n = null == r ? true : r.has(g.GuildFeatures.PARTNERED)) && n,
-    v = _ && null != O && !y && f.type === h.A3.POWERUP_ACTIVATED,
+    v = _ && null != O && !y && h.type === f.A3.POWERUP_ACTIVATED,
     j = v ? {
       title: b.intl.formatToPlainString(m.default.mgoPkU, {
         perkName: null == u ? true : u.title
@@ -62,14 +62,14 @@ function O(e, t) {
       var t;
       return null == (t = o.Z.getGuild(e)) ? true : t.features
     }),
-    w = null != (y = null == Z ? true : Z.has(g.GuildFeatures.PARTNERED)) && y,
+    T = null != (y = null == Z ? true : Z.has(g.GuildFeatures.PARTNERED)) && y,
     {
-      onActivate: T
-    } = (0, f._C)(e, N),
-    A = !j && x && C && null != S && !w && I.type === h.A3.POWERUP_ACTIVATED && null != P && null != N && null != v,
+      onActivate: w
+    } = (0, h._C)(e, N),
+    A = !j && x && C && null != S && !T && I.type === f.A3.POWERUP_ACTIVATED && null != P && null != N && null != v,
     R = r.useCallback(e => {
-      T(e)
-    }, [T]),
+      w(e)
+    }, [w]),
     D = r.useMemo(() => {
       if (!A) return null;
       let e = (0, p.Z)(P),

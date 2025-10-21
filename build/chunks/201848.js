@@ -1,4 +1,4 @@
-/** Chunk was on 57695 **/
+/** Chunk was on 30437 **/
 /** chunk id: 201848, original params: e,t,n (module,exports,require) **/
 module.exports = {
   invitesContainer: "invitesContainer__03885",

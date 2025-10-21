@@ -1,4 +1,4 @@
-/** Chunk was on 57695 **/
+/** Chunk was on 30437 **/
 /** chunk id: 285573, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -73,15 +73,15 @@ let _ = (0, Chunk146773.B)(function(e) {
     })
   }, [E]);
   if (null == E) return null;
-  let Z = (0, f.jo)(c, v),
-    w = (0, f.CN)(E, O, y),
-    T = (0, r.jsx)("div", {
+  let Z = (0, h.jo)(c, v),
+    T = (0, h.CN)(E, O, y),
+    w = (0, r.jsx)("div", {
       className: o()(Z, {
-        [b.disabled]: w,
+        [b.disabled]: T,
         [b.selected]: I
       }),
       "data-dnd-name": E.name,
-      children: (0, r.jsxs)(h.ZP, {
+      children: (0, r.jsxs)(f.ZP, {
         className: b.iconVisibility,
         channel: E,
         guild: t,
@@ -89,15 +89,15 @@ let _ = (0, Chunk146773.B)(function(e) {
         onContextMenu: N,
         forceInteractable: true,
         resolvedUnreadSetting: m.i.ONLY_MENTIONS,
-        children: [(0, r.jsx)(f.eP, {
+        children: [(0, r.jsx)(h.eP, {
           channel: E,
           tabIndex: C
-        }), (0, r.jsx)(f.hR, {
+        }), (0, r.jsx)(h.hR, {
           channel: E,
           disableManageChannels: _,
           tabIndex: C
         })]
       })
     });
-  return P && (T = x(j(T))), T
+  return P && (w = x(j(w))), w
 })

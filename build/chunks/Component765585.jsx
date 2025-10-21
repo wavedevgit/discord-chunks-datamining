@@ -1,4 +1,4 @@
-/** Chunk was on 57695 **/
+/** Chunk was on 30437 **/
 /** chunk id: 765585, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -35,8 +35,8 @@ let b = Chunk647438.forwardRef(function(e, t) {
     showGIFTag: P = false,
     dismissibleContent: N,
     position: Z = "top",
-    align: w = "center",
-    art: T,
+    align: T = "center",
+    art: w,
     isPremiumEarlyAccess: A = false,
     maxWidth: R = 280,
     hideDismissButton: D = false,
@@ -78,9 +78,9 @@ let b = Chunk647438.forwardRef(function(e, t) {
         children: k
       }), (0, r.jsxs)("div", {
         className: o()(b, E ? m.artInline : m.artAbsolute),
-        children: [P && (0, r.jsx)(f.Z, {
+        children: [P && (0, r.jsx)(h.Z, {
           className: m.gifTag
-        }), T]
+        }), w]
       }), (0, r.jsxs)("div", {
         className: m.body,
         children: [(0, r.jsxs)(s.Heading, {
@@ -117,7 +117,7 @@ let b = Chunk647438.forwardRef(function(e, t) {
             className: m.button,
             size: B,
             onClick: e => {
-              null == x || x(e), j(e), W(h.L.PRIMARY)
+              null == x || x(e), j(e), W(f.L.PRIMARY)
             },
             color: null != U ? U : S || A ? a.zx.Colors.BRAND_INVERTED : a.zx.Colors.WHITE,
             children: null != y ? y : g.intl.string(g.t.IHf1RN)
@@ -125,7 +125,7 @@ let b = Chunk647438.forwardRef(function(e, t) {
             className: m.button,
             size: B,
             onClick: e => {
-              null == x || x(e), W(h.L.DISMISS)
+              null == x || x(e), W(f.L.DISMISS)
             },
             color: S || A ? a.zx.Colors.WHITE : a.zx.Colors.BRAND,
             look: S || A ? a.zx.Looks.LINK : a.zx.Looks.FILLED,
@@ -135,7 +135,7 @@ let b = Chunk647438.forwardRef(function(e, t) {
           className: m.button,
           size: a.zx.Sizes.MAX,
           onClick: e => {
-            null == x || x(e), W(h.L.PRIMARY)
+            null == x || x(e), W(f.L.PRIMARY)
           },
           color: a.zx.Colors.WHITE,
           children: g.intl.string(g.t.HU2IR5)
@@ -143,9 +143,9 @@ let b = Chunk647438.forwardRef(function(e, t) {
       }), (0, r.jsx)("div", {
         className: o()(m.pointer, L, {
           [m.bottomPointer]: "top" === Z,
-          [m.centerLeftPointer]: "right" === Z && "center" === w,
-          [m.topLeftPointer]: "right" === Z && "top" === w,
-          [m.bottomLeftPointer]: "right" === Z && "bottom" === w
+          [m.centerLeftPointer]: "right" === Z && "center" === T,
+          [m.topLeftPointer]: "right" === Z && "top" === T,
+          [m.bottomLeftPointer]: "right" === Z && "bottom" === T
         })
       })]
     })

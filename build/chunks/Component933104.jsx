@@ -1,11 +1,11 @@
-/** Chunk was on 57695 **/
+/** Chunk was on 30437 **/
 /** chunk id: 933104, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   $h: () => A,
   En: () => M,
   cO: () => D,
   dJ: () => L,
-  jG: () => T,
+  jG: () => w,
   yI: () => R
 });
 var Chunk951288 = require("./951288.js");
@@ -39,7 +39,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk283902 = require("./283902.js"),
   Chunk225375 = require("./225375.js");
 
-function T(e) {
+function w(e) {
   let {
     guildId: t,
     powerup: n,
@@ -82,7 +82,7 @@ function A(e) {
       }
     }),
     markAsDismissed: n,
-    caretPosition: i ? f.DF.LEFT_TOP : f.DF.TOP_CENTER
+    caretPosition: i ? h.DF.LEFT_TOP : h.DF.TOP_CENTER
   })
 }
 
@@ -91,9 +91,9 @@ function R(e) {
     guildId: t,
     powerups: n,
     markAsDismissed: i
-  } = e, l = (0, s.e7)([h.Z], () => {
+  } = e, l = (0, s.e7)([f.Z], () => {
     var e;
-    return null == (e = h.Z.getGuild(t)) ? true : e.name
+    return null == (e = f.Z.getGuild(t)) ? true : e.name
   }), {
     onActivate: o
   } = (0, O.ZP)(t, n[0]);
@@ -136,7 +136,7 @@ function D(e) {
     content: S.intl.string(E.default.mmNkUA),
     asset: (0, r.jsx)("img", {
       alt: "",
-      src: w.Z,
+      src: T.Z,
       className: I.image
     }),
     onClick: () => (0, b.Z)(t, u.Z.GUILD_POWERUPS_COACHMARK_NEW_PERK_AVAILABLE, l.skuId),
@@ -221,9 +221,9 @@ function k(e) {
     }
     return i
   }(e, ["asset", "header", "content", "caretPosition", "markAsDismissed"]);
-  let d = null != o ? o : f.DF.LEFT_TOP,
-    p = d === f.DF.TOP_CENTER || d === f.DF.LEFT_TOP ? I[d] : "";
-  return (0, r.jsx)(f.ZP, function(e) {
+  let d = null != o ? o : h.DF.LEFT_TOP,
+    p = d === h.DF.TOP_CENTER || d === h.DF.LEFT_TOP ? I[d] : "";
+  return (0, r.jsx)(h.ZP, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

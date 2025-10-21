@@ -1,4 +1,4 @@
-/** Chunk was on 57695 **/
+/** Chunk was on 30437 **/
 /** chunk id: 333834, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => D
@@ -32,11 +32,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk809946 = require("./809946.js");
 
-function w(e) {
+function T(e) {
   e.stopPropagation()
 }
 
-function T(e) {
+function w(e) {
   let {
     group: t,
     isOpen: n,
@@ -110,11 +110,11 @@ function D(e) {
     loadMore: l,
     renderLoadingState: a,
     renderMessageGroup: d,
-    scrollerClassName: h,
+    scrollerClassName: f,
     className: g,
     listName: P,
     ignoreGrouping: N = false
-  } = e, D = (0, y.fJ)(), L = i.useRef(null), M = (0, f.Z)(P, L), {
+  } = e, D = (0, y.fJ)(), L = i.useRef(null), M = (0, h.Z)(P, L), {
     entrypoint: k,
     notificationCenterVariant: G
   } = (0, O.pN)({
@@ -205,7 +205,7 @@ function D(e) {
     Q = i.useMemo(() => {
       let e = [];
       return X ? e.push(a()) : q ? e.push((0, r.jsx)(R, {}, "empty-state")) : N ? (e.push(...n.map(e => d([e], true))), e.push(...t.map(e => d([e], false)))) : s().each(A, t => {
-        0 !== Y[t].length && (e.push((0, r.jsx)(T, {
+        0 !== Y[t].length && (e.push((0, r.jsx)(w, {
           group: t,
           isOpen: H[t],
           toggleOpenedState: () => {
@@ -220,7 +220,7 @@ function D(e) {
       }), e
     }, [t, n, a, H, z, Y, N, d, q, X, D]),
     J = Q[Q.length - 1],
-    $ = i.isValidElement(J) && J.type === T,
+    $ = i.isValidElement(J) && J.type === w,
     ee = (0, C.d)(e => e.setInboxReadState);
   i.useEffect(() => {
     X || ee(0 === Y.UNREAD.length)
@@ -265,8 +265,8 @@ function D(e) {
     viewId: D
   }), (0, r.jsx)("div", {
     className: o()(g, Z.messagesPopoutWrap),
-    onClick: w,
-    onDoubleClick: w,
+    onClick: T,
+    onDoubleClick: T,
     "aria-label": e["aria-label"],
     children: (0, r.jsx)(c.bG, {
       navigator: M,
@@ -312,7 +312,7 @@ function D(e) {
               var t;
               L.current = e, i.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
             },
-            className: o()(Z.messagesPopout, h),
+            className: o()(Z.messagesPopout, f),
             onScroll: K,
             fade: true
           }, l), n = n = {

@@ -1,4 +1,4 @@
-/** Chunk was on 57695 **/
+/** Chunk was on 30437 **/
 /** chunk id: 178088, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   k: () => Z
@@ -37,8 +37,8 @@ function Z(e) {
     onClose: n,
     children: l,
     badgeState: Z,
-    popoutPosition: w,
-    popoutAlign: T,
+    popoutPosition: T,
+    popoutAlign: w,
     targetElementRef: A,
     spacing: R,
     dialogClassName: D
@@ -78,11 +78,11 @@ function Z(e) {
   let {
     enabled: z,
     inInbox: W
-  } = h.Z.useExperiment({
+  } = f.Z.useExperiment({
     location: "RecentsPopout"
   }), K = (0, s.e7)([g.Z], () => g.Z.hasOverdueReminder(), []) && z && W, {
     enabled: Y
-  } = f.Z.useExperiment({
+  } = h.Z.useExperiment({
     location: "RecentsPopout"
   });
   i.useEffect(() => {
@@ -99,8 +99,8 @@ function Z(e) {
     children: (0, r.jsx)(u.yRy, {
       targetElementRef: A,
       animation: u.yRy.Animation.NONE,
-      position: w,
-      align: T,
+      position: T,
+      align: w,
       autoInvert: false,
       shouldShow: M,
       onRequestClose: V,

@@ -1,4 +1,4 @@
-/** Chunk was on 57695 **/
+/** Chunk was on 99407 **/
 /** chunk id: 38755, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => l
@@ -11,11 +11,11 @@ function l(e) {
     location: t,
     videoSpinnerContext: n,
     userId: l,
-    streamId: o,
-    loading: a,
-    paused: s = false
-  } = e, [c] = r.useState(() => new i.o(t));
+    streamId: a,
+    loading: o,
+    paused: c = false
+  } = e, [s] = r.useState(() => new i.o(t));
   r.useEffect(() => {
-    s || (a ? c.onSpinnerStarted() : null != o && c.trackSpinnerDuration(n, l, o))
-  }, [a, s, o, c, n, l])
+    c || (o ? s.onSpinnerStarted() : null != a && s.trackSpinnerDuration(n, l, a))
+  }, [o, c, a, s, n, l])
 }
