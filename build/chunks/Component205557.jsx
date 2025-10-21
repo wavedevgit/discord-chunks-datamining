@@ -1,14 +1,14 @@
 /** Chunk was on 31688 **/
 /** chunk id: 205557, original params: t,e,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => j
+  default: () => w
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
-  d = require.n(Chunk512722),
+  u = require.n(Chunk512722),
   Chunk399606 = require("./399606.js"),
   Chunk475179 = require("./475179.js"),
   Chunk721383 = require("./721383.js"),
@@ -22,61 +22,48 @@ var Chunk951288 = require("./951288.js"),
   Chunk354459 = require("./354459.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk702511 = require("./702511.js");
-let b = [Chunk721383._];
+let v = [Chunk721383._];
 
-function j(t) {
+function w(t) {
   let {
     windowKey: e,
     channelId: n,
     participantId: o
-  } = t, a = (0, s.e7)([w.Z], () => w.Z.getChannel(n));
-  d()(null != a, "channel cannot be null for tile popout");
-  let c = (0, s.e7)([Z.Z], () => Z.Z.getParticipant(n, o), [n, o]);
+  } = t, r = (0, s.e7)([m.Z], () => m.Z.getChannel(n));
+  u()(null != r, "channel cannot be null for tile popout");
+  let c = (0, s.e7)([x.Z], () => x.Z.getParticipant(n, o), [n, o]);
   l.useEffect(() => {
     null == c && P.xv(e)
   }, [c, e]);
-  let j = t => {
-    let {
-      unmountWindow: e
-    } = t;
-    u.Z.returnParticipant(n, o), e()
-  };
-  if (null == c) return (0, i.jsx)(h.Z, {
-    withTitleBar: true,
-    keybinds: b,
-    windowKey: e,
-    title: m.intl.string(m.t.lfzt24),
-    channelId: n,
-    onBeforeUnload: j,
-    hideModals: true,
-    children: (0, i.jsx)("div", {
-      className: r()("root", y.rootPopout, y.tilePopout),
-      children: (0, i.jsx)("div", {
-        className: y.tileContainer,
-        children: m.intl.string(m.t.PmKUHq)
-      })
-    })
-  });
-  let v = c.type === g.fO.USER ? c.user.username : c.type === g.fO.STREAM ? m.intl.formatToPlainString(m.t["/DC1y9"], {
-    username: c.user.username
-  }) : m.intl.string(m.t["8vlBo7"]);
+  let w = l.useCallback(t => {
+      let {
+        unmountWindow: e
+      } = t;
+      d.Z.returnParticipant(n, o), e()
+    }, [n, o]),
+    y = l.useMemo(() => null == c ? Z.intl.string(Z.t.lfzt24) : c.type === C.fO.USER ? c.user.username : c.type === C.fO.STREAM ? Z.intl.formatToPlainString(Z.t["/DC1y9"], {
+      username: c.user.username
+    }) : Z.intl.string(Z.t["8vlBo7"]), [c]);
   return (0, i.jsx)(h.Z, {
     withTitleBar: true,
-    keybinds: b,
+    keybinds: v,
     windowKey: e,
-    title: v,
-    channelId: a.id,
-    onBeforeUnload: j,
+    title: y,
+    channelId: n,
+    onBeforeUnload: w,
     hideModals: true,
     children: (0, i.jsx)("div", {
-      className: r()("root", y.rootPopout, y.tilePopout),
-      children: (0, i.jsx)(p.Z.Provider, {
-        value: a.guild_id,
-        children: (0, i.jsx)(x.ZP, {
+      className: a()("root", b.rootPopout, b.tilePopout),
+      children: null == c ? (0, i.jsx)("div", {
+        className: b.tileContainer,
+        children: Z.intl.string(Z.t.PmKUHq)
+      }) : (0, i.jsx)(p.Z.Provider, {
+        value: r.guild_id,
+        children: (0, i.jsx)(g.ZP, {
           timeout: 2e3,
           children: () => (0, i.jsx)(f.ZP, {
             participant: c,
-            channel: a,
+            channel: r,
             inCall: true,
             width: 854,
             inPopout: true,

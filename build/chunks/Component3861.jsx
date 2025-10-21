@@ -46,7 +46,8 @@ let _ = (0, Chunk112724.Z)(e => {
   r.useEffect(() => {
     d.S.dispatch(b.CkL.REMEASURE_TARGET)
   }, [T, N, L.width, L.height]);
-  let D = r.useMemo(() => n.filter(e => e.type !== C.fO.ACTIVITY || !e.participants.some(e => (0, o.J)(e))), [n, _]);
+  let D = r.useMemo(() => n.filter(e => e.type !== C.fO.ACTIVITY || !e.participants.some(e => (0, o.J)(e))), [n, _]),
+    k = (0, l.e7)([s.Z], () => s.Z.getVoiceParticipantsHidden(E.id), [E.id]);
   if ((null == R ? true : R.channelId) === E.id) return (0, i.jsx)(h.Z, {
     height: N
   });
@@ -62,9 +63,7 @@ let _ = (0, Chunk112724.Z)(e => {
     participants: t,
     onContextMenu: O
   });
-  n = I ? n : t;
-  let k = (0, l.e7)([s.Z], () => s.Z.getVoiceParticipantsHidden(E.id), [E.id]);
-  if (null == a) {
+  if (n = I ? n : t, null == a) {
     if (0 === n.length) {
       let e = t.length > 0 && !k;
       return (0, i.jsx)(g.Z, {
