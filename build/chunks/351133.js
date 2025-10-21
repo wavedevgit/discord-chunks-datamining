@@ -56,10 +56,10 @@ let _ = {
           success: false
         };
         let e = m(o, t, {
-          exactRangeErrorMessage: f.t["e+9/SU"],
-          rangeErrorMessage: f.t.IE1sTk,
-          minErrorMessage: f.t.rXAFQE,
-          maxErrorMessage: f.t.ycEPx8
+          exactRangeErrorMessage: f.t["e+9/SY"],
+          rangeErrorMessage: f.t.IE1sTh,
+          minErrorMessage: f.t.rXAFQD,
+          maxErrorMessage: f.t["ycEPx/"]
         });
         if (!e.success) return e
       }
@@ -82,7 +82,7 @@ let _ = {
       let o = Number(u.AS(s.default.locale, r));
       return null == o || isNaN(o) || !Number.isInteger(o) || !Number.isSafeInteger(o) ? {
         success: false
-      } : h(o, t, f.t["8Y5zsr"], f.t.CyRLmJ, f.t["VD3Q+f"])
+      } : h(o, t, f.t["8Y5zsp"], f.t.CyRLmH, f.t["VD3Q+S"])
     },
     [Chunk911969.jw.NUMBER]: (e, t, n) => {
       i()(t.type === a.jw.NUMBER, "option type must match validator type");
@@ -99,7 +99,7 @@ let _ = {
       let o = Number(u.AS(s.default.locale, r));
       return isNaN(o) || o > Number.MAX_SAFE_INTEGER || o < Number.MIN_SAFE_INTEGER ? {
         success: false
-      } : h(o, t, f.t["8Y5zsr"], f.t.CyRLmJ, f.t["VD3Q+f"])
+      } : h(o, t, f.t["8Y5zsp"], f.t.CyRLmH, f.t["VD3Q+S"])
     },
     [Chunk911969.jw.USER]: (e, t, n, r) => {
       if ("text" !== e.type) return {

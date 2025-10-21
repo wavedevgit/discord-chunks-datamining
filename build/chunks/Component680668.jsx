@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk358595 = require("./358595.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk739236 = require("./739236.js");
+  Chunk105341 = require("./105341.js");
 
 function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -123,7 +123,7 @@ function T(e) {
     })]
   }), H && (C = (0, r.jsx)(o.u, {
     asContainer: true,
-    text: y.intl.string(y.t["/FeTKy"]),
+    text: y.intl.string(y.t["/FeTK6"]),
     children: (0, r.jsx)(s.d3s, {
       size: "md",
       color: "currentColor",
@@ -133,7 +133,7 @@ function T(e) {
     channel: G
   }), S = (0, r.jsxs)("span", {
     className: O.infoTitle,
-    children: [y.intl.format(y.t["2wimj4"], {
+    children: [y.intl.format(y.t["2wimj5"], {
       guildName: P.name
     }), (0, r.jsx)("span", {
       className: O.infoBadge,
@@ -168,7 +168,7 @@ function T(e) {
         onClick: $,
         submitting: U,
         color: _.Z.Button.Colors.GREEN,
-        children: F ? V ? y.intl.string(y.t["7vb2cX"]) : y.intl.string(y.t.gpqgam) : B ? y.intl.string(y.t.cEnaW1) : y.intl.string(y.t.XpeFYm)
+        children: F ? V ? y.intl.string(y.t["7vb2cc"]) : y.intl.string(y.t.gpqgah) : B ? y.intl.string(y.t.cEnaWx) : y.intl.string(y.t.XpeFYr)
       })]
     }), P.features.has(b.GuildFeatures.HUB) && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
@@ -176,11 +176,11 @@ function T(e) {
       }), (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
-        children: y.intl.format(y.t["/o1IfH"], {
+        children: y.intl.format(y.t["/o1IfA"], {
           onClick: () => (0, s.ZDy)(async () => {
             let {
               default: e
-            } = await Promise.all([n.e("95468"), n.e("18995")]).then(n.bind(n, 650233));
+            } = await Promise.all([n.e("95468"), n.e("70799")]).then(n.bind(n, 650233));
             return t => (0, r.jsx)(e, I({}, t))
           })
         })

@@ -10,7 +10,7 @@ var Chunk755721 = require("./755721.js"),
   Chunk39604 = require("./39604.js"),
   Chunk176127 = require("./176127.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk854181 = require("./854181.js");
+  Chunk703849 = require("./703849.js");
 
 function u(e) {
   let {
@@ -28,7 +28,7 @@ function u(e) {
     color: l.r6K.PRIMARY,
     children: [(0, r.jsx)(o.Z, {}), (0, r.jsx)(l.Heading, {
       variant: "heading-md/extrabold",
-      children: s.intl.format(s.t["+qxkzM"], {
+      children: s.intl.format(s.t["+qxkzC"], {
         count: u.newClipIds.length
       })
     }), (0, r.jsxs)("div", {
@@ -36,10 +36,10 @@ function u(e) {
       children: [(0, r.jsx)(i.zx, {
         color: i.zx.Colors.TRANSPARENT,
         onClick: a.eL,
-        children: s.intl.string(s.t.WAI6xs)
+        children: s.intl.string(s.t.WAI6xu)
       }), (0, r.jsx)(l.Button, {
         variant: "primary",
-        text: s.intl.string(s.t.tQPBmp),
+        text: s.intl.string(s.t.tQPBml),
         onClick: t
       })]
     })]

@@ -27,7 +27,7 @@ function i(e) {
       }
       return o
     }(e, ["ruleName"]);
-  let a = null != i ? i : c.intl.string(c.t.ffR2cH);
+  let a = null != i ? i : c.intl.string(c.t.ffR2cM);
   return (0, n.jsx)(o.ConfirmModal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var r = null != arguments[t] ? arguments[t] : {},
@@ -46,12 +46,12 @@ function i(e) {
     }
     return e
   }({}, l), r = r = {
-    header: c.intl.string(c.t.Hy8XgI),
-    cancelText: c.intl.string(c.t["ETE/oK"]),
-    confirmText: c.intl.string(c.t["cY+Ooa"]),
+    header: c.intl.string(c.t.Hy8XgL),
+    cancelText: c.intl.string(c.t["ETE/oC"]),
+    confirmText: c.intl.string(c.t["cY+Oob"]),
     children: (0, n.jsx)(o.Text, {
       variant: "text-md/normal",
-      children: c.intl.format(c.t.hO7PgY, {
+      children: c.intl.format(c.t.hO7PgW, {
         ruleName: a
       })
     })

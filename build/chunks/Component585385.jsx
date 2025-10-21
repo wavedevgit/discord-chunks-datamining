@@ -11,8 +11,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk948851 = require("./948851.jsx"),
   Chunk868728 = require("./868728.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk869306 = require("./869306.js"),
-  Chunk10198 = require("./10198.js");
+  Chunk451964 = require("./451964.js"),
+  Chunk197571 = require("./197571.js");
 let h = e => {
   let {
     handleDone: t,
@@ -25,34 +25,34 @@ let h = e => {
     onSelectMaxUses: x,
     isGuestInviteCreationToggleEnabled: I,
     onSetInviteFlags: S
-  } = e, f = (0, r.ZP)(), {
+  } = e, f = (0, a.ZP)(), {
     maxAgeOptions: E,
-    maxAge: y,
-    maxUses: C,
+    maxAge: C,
+    maxUses: y,
     temporary: _,
     flags: N
   } = l;
   return (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsxs)(a.xBx, {
+    children: [(0, i.jsxs)(r.xBx, {
       children: [(0, i.jsx)("div", {
         className: c.closeButton,
-        children: (0, i.jsx)(a.olH, {
+        children: (0, i.jsx)(r.olH, {
           onClick: t
         })
       }), (0, i.jsx)("div", {
         className: c.headerContainer,
-        children: (0, i.jsx)(a.Heading, {
+        children: (0, i.jsx)(r.Heading, {
           id: n,
           variant: "heading-md/semibold",
           className: s()(g.marginReset, c.headerCloseButtonSpacing, c.headerText),
-          children: u.intl.string(u.t.Atdlys)
+          children: u.intl.string(u.t.Atdlyu)
         })
       })]
     }), (0, i.jsx)(o.Z, {
       shouldHideTemporaryInviteToggle: h,
       maxAgeOptions: E,
-      maxAge: y,
-      maxUses: C,
+      maxAge: C,
+      maxUses: y,
       temporary: _,
       onToggleTemporary: v,
       onSelectMaxAge: p,
@@ -61,7 +61,7 @@ let h = e => {
       isGuestInviteCreationToggleEnabled: I,
       onSetInviteFlags: S,
       inviteFlags: N
-    }), (0, i.jsx)(a.mzw, {
+    }), (0, i.jsx)(r.mzw, {
       className: c.settingsFooter,
       children: (0, i.jsx)(d.Z, {
         theme: f,

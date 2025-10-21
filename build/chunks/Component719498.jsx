@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk925329 = require("./925329.jsx"),
   Chunk296023 = require("./296023.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk865706 = require("./865706.js");
+  Chunk463488 = require("./463488.js");
 let u = e => {
   let {
     channel: t,
@@ -58,15 +58,15 @@ let u = e => {
   })), [u, t.id, m]), O = (0, o.ZP)(t, true);
   return (0, n.jsx)(i.Modal, {
     transitionState: b,
-    "aria-label": d.intl.string(d.t.OJknho),
+    "aria-label": d.intl.string(d.t.OJknhi),
     onClose: m,
-    title: d.intl.string(d.t.OJknho),
+    title: d.intl.string(d.t.OJknhi),
     actions: [{
-      text: d.intl.string(d.t["ETE/oK"]),
+      text: d.intl.string(d.t["ETE/oC"]),
       onClick: m,
       variant: "secondary"
     }, {
-      text: d.intl.string(d.t.LLWaxc),
+      text: d.intl.string(d.t.LLWaxQ),
       onClick: x,
       variant: "critical-primary"
     }],
@@ -86,7 +86,7 @@ let u = e => {
           }), (0, n.jsx)(c.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
-            children: d.intl.format(d.t["0NJZAQ"], {
+            children: d.intl.format(d.t["0NJZAU"], {
               channelName: O
             })
           })]

@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 373274, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   E: () => eb,
@@ -53,7 +53,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk53425 = require("./53425.jsx"),
   Chunk424785 = require("./424785.jsx"),
   Chunk770202 = require("./770202.jsx"),
-  Chunk79556 = require("./79556.jsx"),
+  Chunk437621 = require("./437621.jsx"),
   Chunk428127 = require("./428127.jsx"),
   Chunk950969 = require("./950969.jsx"),
   Chunk233657 = require("./233657.jsx"),
@@ -63,7 +63,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk344110 = require("./344110.js");
+  Chunk776677 = require("./776677.js");
 
 function eu(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -125,7 +125,7 @@ class eh extends(r = Chunk647438.PureComponent) {
       initialized: l
     } = this.state, {
       scrollTop: o
-    } = w.Z.getGuildDimensions(r);
+    } = T.Z.getGuildDimensions(r);
     null != n ? (this.scrollToChannel(n), p.Z.clearChannelListScrollTo(r)) : r !== e.guildId ? null != o && this.scrollTo(o) : i !== e.selectedChannelId ? this.scrollToChannel(i) : !t.initialized && l && (null == o && null != i ? this.scrollToChannel(i, false, el.yE, this.handleListScroll) : this.scrollTo(null != o ? o : 0, this.handleListScroll)), this.testShouldSkipTutorial()
   }
   getSectionRowsFromChannel(e) {
@@ -198,14 +198,14 @@ class eh extends(r = Chunk647438.PureComponent) {
       guildChannelsVersion: a
     } = this.props;
     return (0, Chunk951288.jsx)("div", {
-      className: Chunk344110.positionedContainer,
+      className: Chunk776677.positionedContainer,
       children: (0, Chunk951288.jsx)(Chunk950969.Z, {
         ref: this.unreadTopRef,
-        textUnread: Chunk388032.intl.string(Chunk388032.t.FCRiT0),
-        textMention: Chunk388032.intl.string(Chunk388032.t["8zH0LC"]),
+        textUnread: Chunk388032.intl.string(Chunk388032.t.FCRiT3),
+        textMention: Chunk388032.intl.string(Chunk388032.t["8zH0LJ"]),
         hide: null == module && (r || null != exports || null != require),
-        className: Chunk344110.unreadTop,
-        barClassName: Chunk344110.unreadBar,
+        className: Chunk776677.unreadTop,
+        barClassName: Chunk776677.unreadBar,
         guildId: Chunk647438,
         guildChannels: Chunk392711,
         guildChannelsVersion: a,
@@ -227,11 +227,11 @@ class eh extends(r = Chunk647438.PureComponent) {
     return (0, Chunk951288.jsx)(Chunk950969.Z, {
       reverse: true,
       ref: this.unreadBottomRef,
-      textUnread: Chunk388032.intl.string(Chunk388032.t.FCRiT0),
-      textMention: Chunk388032.intl.string(Chunk388032.t["8zH0LC"]),
+      textUnread: Chunk388032.intl.string(Chunk388032.t.FCRiT3),
+      textMention: Chunk388032.intl.string(Chunk388032.t["8zH0LJ"]),
       hide: null == r && Chunk647438,
-      className: Chunk344110.unreadBottom,
-      barClassName: Chunk344110.unreadBar,
+      className: Chunk776677.unreadBottom,
+      barClassName: Chunk776677.unreadBar,
       guildId: module,
       guildChannels: exports,
       guildChannelsVersion: require,
@@ -287,7 +287,7 @@ class eh extends(r = Chunk647438.PureComponent) {
         onResize: this.handleResize,
         onContentResize: this.handleResize,
         sections: e.getSections(true),
-        innerAriaLabel: es.intl.string(es.t.OGiMXF),
+        innerAriaLabel: es.intl.string(es.t.OGiMXJ),
         innerTag: "ul",
         getAnchorId: this.getAnchorId
       }, s, t, l), "guild-channels")
@@ -304,7 +304,7 @@ class eh extends(r = Chunk647438.PureComponent) {
         component: (0, i.jsx)(d.nn4, {
           children: (0, i.jsx)(d.H, {
             id: r,
-            children: es.intl.string(es.t.OGiMXF)
+            children: es.intl.string(es.t.OGiMXJ)
           })
         }),
         children: n ? (0, i.jsxs)(l.Fragment, {
@@ -780,7 +780,7 @@ let eg = e => {
     selectedVoiceChannelId: r
   } = e, o = (0, u.e7)([g.Z], () => g.Z.keyboardModeEnabled), {
     analyticsLocations: a
-  } = (0, b.ZP)(m.Z.GUILD_CHANNEL_LIST), d = (0, u.e7)([T.Z], () => T.Z.getChannel(n)), p = (0, u.e7)([T.Z], () => T.Z.getChannel(r)), f = (0, u.e7)([R.Z], () => R.Z.getGuildId()), _ = (0, x.DM)(t), O = l.useRef(null), y = l.useCallback((e, t) => {
+  } = (0, b.ZP)(m.Z.GUILD_CHANNEL_LIST), d = (0, u.e7)([w.Z], () => w.Z.getChannel(n)), p = (0, u.e7)([w.Z], () => w.Z.getChannel(r)), f = (0, u.e7)([R.Z], () => R.Z.getGuildId()), _ = (0, x.DM)(t), O = l.useRef(null), y = l.useCallback((e, t) => {
     let n = O.current;
     if (null != n)
       if (eo.Xyh.test(t) || (0, ea.AB)(t)) n.scrollToChannel(t, false, 2 * el.yE, () => {

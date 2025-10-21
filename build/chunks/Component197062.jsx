@@ -29,7 +29,7 @@ let o = (e, t) => {
   },
   s = {
     getForumChannelPermissionText: function() {
-      return Chunk388032.intl.format(Chunk388032.t.zlXUVV, {
+      return Chunk388032.intl.format(Chunk388032.t.zlXUVY, {
         warningHook: o
       })
     }

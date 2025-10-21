@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 424785, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => X
@@ -43,8 +43,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk647086 = require("./647086.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk33082 = require("./33082.js"),
-  Chunk783499 = require("./783499.js");
+  Chunk55940 = require("./55940.js"),
+  Chunk556295 = require("./556295.js");
 
 function z(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -100,11 +100,11 @@ class Y extends Chunk98597.ZP {
       sortingPosition: t,
       isUserOver: n
     } = this.props;
-    if (require) return Chunk33082.containerUserOver;
+    if (require) return Chunk55940.containerUserOver;
     if (null != exports)
-      if (module > exports) return Chunk33082.containerDragAfter;
-      else return Chunk33082.containerDragBefore;
-    return Chunk33082.containerDefault
+      if (module > exports) return Chunk55940.containerDragAfter;
+      else return Chunk55940.containerDragBefore;
+    return Chunk55940.containerDefault
   }
   renderVoiceUsers() {
     let {
@@ -149,7 +149,7 @@ class Y extends Chunk98597.ZP {
       shouldShowGuildVerificationPopout: j
     } = this.state, x = this.getVoiceStatesCount(), C = (0, Chunk951288.jsxs)("li", {
       className: o()(this.getModeClass(), {
-        [Chunk33082.disabled]: this.isDisabled()
+        [Chunk55940.disabled]: this.isDisabled()
       }),
       "data-dnd-name": module.name,
       children: [(0, Chunk951288.jsx)(Chunk481060.yRy, {
@@ -163,9 +163,9 @@ class Y extends Chunk98597.ZP {
           text: this.getTooltipText(),
           children: (0, Chunk951288.jsxs)(Chunk473403.ZP, {
             ref: this.channelItemRef,
-            className: Chunk33082.iconVisibility,
+            className: Chunk55940.iconVisibility,
             iconClassName: o()({
-              [Chunk783499.iconLive]: null != Chunk111028
+              [Chunk556295.iconLive]: null != Chunk111028
             }),
             channel: module,
             selected: !Chunk922482 && exports,
@@ -254,13 +254,13 @@ class Y extends Chunk98597.ZP {
       } = this.props;
       if (!t) return (0, r.jsx)(s.u, {
         asContainer: true,
-        text: F.intl.string(F.t.ZXxLQk),
+        text: F.intl.string(F.t.ZXxLQg),
         children: (0, r.jsx)(c.P3F, {
           className: o()(V.iconItem, n ? V.alwaysShown : null),
           onClick: () => {
             u.Z.updateChatOpen(e.id, true), this.handleClickChat()
           },
-          "aria-label": F.intl.string(F.t.ZXxLQk),
+          "aria-label": F.intl.string(F.t.ZXxLQg),
           children: (0, r.jsx)(c.kBi, {
             size: "xs",
             color: "currentColor",
@@ -272,7 +272,7 @@ class Y extends Chunk98597.ZP {
       let {
         connected: e
       } = this.props;
-      return this.isFull() && !e ? F.intl.string(F.t.rZfiNj) : null
+      return this.isFull() && !e ? F.intl.string(F.t.rZfiNq) : null
     }), z(this, "renderSubtitle", () => {
       var e;
       let t = null == (e = this.props.stageInstance) ? true : e.topic;
@@ -292,18 +292,18 @@ function X(e) {
     isFavoriteCategory: l,
     collapsed: o,
     voiceStates: s
-  } = e, c = (0, a.cj)([w.ZP], () => ({
-    unread: w.ZP.hasUnread(n.id),
-    mentionCount: w.ZP.getMentionCount(n.id)
-  })), u = (0, a.e7)([A.ZP], () => A.ZP.resolveUnreadSetting(n)), d = (0, a.cj)([P.Z, Z.Z, T.Z], () => {
+  } = e, c = (0, a.cj)([T.ZP], () => ({
+    unread: T.ZP.hasUnread(n.id),
+    mentionCount: T.ZP.getMentionCount(n.id)
+  })), u = (0, a.e7)([A.ZP], () => A.ZP.resolveUnreadSetting(n)), d = (0, a.cj)([P.Z, Z.Z, w.Z], () => {
     let e = P.Z.getChannel(n.parent_id),
       r = Z.Z.getCheck(n.guild_id);
     return {
-      canManageChannel: null != t && T.Z.can(U.Plq.MANAGE_CHANNELS, n),
-      canReorderChannel: true !== i && (t.id === B._ || (null != e ? T.Z.can(U.Plq.MANAGE_CHANNELS, e) : T.Z.can(U.Plq.MANAGE_CHANNELS, t))),
-      canMoveMembers: T.Z.can(U.Plq.MOVE_MEMBERS, n),
-      locked: !T.Z.can(U.Plq.CONNECT, n),
-      bypassLimit: T.Z.can(U.Plq.MOVE_MEMBERS, n),
+      canManageChannel: null != t && w.Z.can(U.Plq.MANAGE_CHANNELS, n),
+      canReorderChannel: true !== i && (t.id === B._ || (null != e ? w.Z.can(U.Plq.MANAGE_CHANNELS, e) : w.Z.can(U.Plq.MANAGE_CHANNELS, t))),
+      canMoveMembers: w.Z.can(U.Plq.MOVE_MEMBERS, n),
+      locked: !w.Z.can(U.Plq.CONNECT, n),
+      bypassLimit: w.Z.can(U.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
   }), p = (0, a.e7)([I.Z], () => I.Z.isCollapsed(n.parent_id)), f = (0, S.ZP)(n.id), h = (0, a.e7)([C.Z], () => C.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, j.Rk)(n.id, x.pV.AUDIENCE), {

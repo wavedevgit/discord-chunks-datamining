@@ -9,7 +9,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk373775 = require("./373775.js");
+  Chunk270782 = require("./270782.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -80,7 +80,7 @@ function h(e) {
       className: l.seeMore,
       variant: "text-sm/medium",
       color: "text-brand",
-      children: [d ? s.intl.string(s.t["JQX/PT"]) : s.intl.string(s.t.Fbrd8P), d ? (0, r.jsx)(o.u04, {
+      children: [d ? s.intl.string(s.t["JQX/Pb"]) : s.intl.string(s.t.Fbrd8J), d ? (0, r.jsx)(o.u04, {
         color: a.Z.colors.TEXT_BRAND,
         size: "xs"
       }) : (0, r.jsx)(o.CJ0, {

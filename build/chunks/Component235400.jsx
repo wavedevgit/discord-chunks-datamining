@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk398726 = require("./398726.js");
+  Chunk88785 = require("./88785.js");
 
 function I(e) {
   let {
@@ -70,7 +70,7 @@ function I(e) {
       className: E.modalHeader,
       children: [(0, n.jsx)(s.Heading, {
         variant: "heading-lg/semibold",
-        children: b.intl.string(b.t.HykynZ)
+        children: b.intl.string(b.t.HykynS)
       }), (0, n.jsx)(s.olH, {
         "data-migration-pending": true,
         className: E.modalCloseButton,
@@ -100,7 +100,7 @@ function I(e) {
       className: E.modalFooter,
       children: [null != Z && (!(0, u.qS)(Z) || D) || null === w ? (0, n.jsx)(s.Button, {
         variant: "primary",
-        text: b.intl.string(b.t.Jh8fJy),
+        text: b.intl.string(b.t.Jh8fJz),
         onClick: () => {
           C(w), m()
         },
@@ -108,19 +108,19 @@ function I(e) {
       }) : null == Z && (D || !(0, u.G1)(N)) ? (0, n.jsx)(s.Button, {
         variant: "primary",
         onClick: () => L(null == N ? true : N.skuId),
-        text: b.intl.string(b.t.fYfGgI)
+        text: b.intl.string(b.t.fYfGgK)
       }) : (0, n.jsx)(x.Z, {
         subscriptionTier: P.Si.TIER_2,
         showGradient: !D,
         textOptions: {
-          textOverride: y.ZP.isPremium(t) ? b.intl.string(b.t.KXLX7u) : D ? b.intl.string(b.t.mr4K7O) : b.intl.string(b.t.pj0XBA)
+          textOverride: y.ZP.isPremium(t) ? b.intl.string(b.t.KXLX7l) : D ? b.intl.string(b.t.mr4K7D) : b.intl.string(b.t.pj0XBN)
         }
       }), !D && (0, u.G1)(N) ? (0, n.jsx)(h.Z, {
         product: N,
         onClose: m
       }) : (0, n.jsx)(s.Button, {
         variant: "secondary",
-        text: b.intl.string(b.t["ETE/oK"]),
+        text: b.intl.string(b.t["ETE/oC"]),
         onClick: m
       })]
     })]

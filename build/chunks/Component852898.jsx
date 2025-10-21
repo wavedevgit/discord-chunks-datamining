@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 852898, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -44,7 +44,7 @@ function p(e, t) {
       let n = () => {
         d.Z.setSection(g.pNK.INTEGRATIONS), s.Z.setSection(g.b4C.APPLICATION, e)
       };
-      return m.intl.format(m.t.FuXsWl, {
+      return m.intl.format(m.t.FuXsWm, {
         name: t,
         integrationNameHook: (e, t) => (0, r.jsx)(c.Z, {
           onClick: n,
@@ -52,6 +52,6 @@ function p(e, t) {
         }, t)
       })
     }
-    return x ? m.intl.string(m.t.oF6FYW) : j ? m.intl.string(m.t.ZQ37tL) : m.intl.string(m.t.k5d7DA)
+    return x ? m.intl.string(m.t.oF6FYT) : j ? m.intl.string(m.t.ZQ37tH) : m.intl.string(m.t.k5d7DJ)
   })(0, t, n), [e, t, n])
 }

@@ -65,7 +65,7 @@ function f(e, t, n) {
     channelId: t.id,
     location: "Summary divider",
     rating: o
-  }), (0, i.showToast)((0, i.createToast)(s.intl.string(s.t["d9+vQ0"]), i.ToastType.SUCCESS))
+  }), (0, i.showToast)((0, i.createToast)(s.intl.string(s.t["d9+vQ8"]), i.ToastType.SUCCESS))
 }
 
 function _(e) {
@@ -77,7 +77,7 @@ function _(e) {
   null != t && (s === o.aZ.BAD ? (0, i.ZDy)(async () => {
     let {
       default: e
-    } = await Promise.all([n.e("26860"), n.e("47672"), n.e("67703")]).then(n.bind(n, 580584));
+    } = await Promise.all([n.e("26860"), n.e("47672"), n.e("64387")]).then(n.bind(n, 580584));
     return n => (0, r.jsx)(e, d(c({}, n), {
       onSubmit: e => f(t, a, e),
       startRating: s

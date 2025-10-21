@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 841470, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -10,11 +10,11 @@ var Chunk692547 = require("./692547.js"),
   Chunk481060 = require("./481060.js"),
   Chunk355011 = require("./355011.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk448871 = require("./448871.js");
+  Chunk969478 = require("./969478.js");
 let c = e => {
   let {
     title: t,
-    subtext: n = s.intl.string(s.t.jHpxws),
+    subtext: n = s.intl.string(s.t.jHpxwo),
     localizedNumber: c,
     isTrendingUp: d,
     isTrendingDown: u,
@@ -71,20 +71,20 @@ let c = e => {
       children: (0, r.jsx)(l.Text, {
         className: null != c ? o.analyticsCardNumber : o.analyticsCardNumberNotAvailable,
         variant: "text-lg/semibold",
-        children: null != c ? c : s.intl.string(s.t.jHpxws)
+        children: null != c ? c : s.intl.string(s.t.jHpxwo)
       })
     }), (0, r.jsxs)("div", {
       className: o.analyticsCardArrowSubText,
       children: [d ? (0, r.jsx)(a.Z, {
         className: o.trendingArrow,
         color: i.Z.unsafe_rawColors.GREEN_360.css,
-        "aria-label": s.intl.string(s.t["8mcccX"]),
+        "aria-label": s.intl.string(s.t["8mcccd"]),
         width: 14,
         height: 12
       }) : null, u ? (0, r.jsx)(a.Z, {
         className: o.trendingArrowIconDown,
         color: i.Z.unsafe_rawColors.RED_400.css,
-        "aria-label": s.intl.string(s.t.NLl6Q0),
+        "aria-label": s.intl.string(s.t.NLl6Q3),
         width: 14,
         height: 12
       }) : null, (0, r.jsx)(l.Text, {

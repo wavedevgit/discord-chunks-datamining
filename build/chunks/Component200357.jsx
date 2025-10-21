@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk277139 = require("./277139.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk577216 = require("./577216.js");
+  Chunk984392 = require("./984392.js");
 
 function f(e) {
   return String.fromCodePoint(...e.toUpperCase().split("").map(e => 127397 + e.charCodeAt(0)))
@@ -50,7 +50,7 @@ let _ = function(e) {
     children: (0, r.jsxs)("div", {
       className: o()(d.phoneField, t),
       children: [(0, r.jsx)(l.gNt, {
-        label: u.intl.string(u.t["k+bvrK"]),
+        label: u.intl.string(u.t["k+bvrB"]),
         children: (0, r.jsx)(l.VcW, {
           value: E,
           onChange: T,
@@ -61,7 +61,7 @@ let _ = function(e) {
           popoutLayerContext: p
         })
       }), (0, r.jsx)(l.oil, {
-        label: u.intl.string(u.t["64bX0N"]),
+        label: u.intl.string(u.t["64bX0M"]),
         error: a,
         leading: null == A ? true : A.code,
         type: "tel",

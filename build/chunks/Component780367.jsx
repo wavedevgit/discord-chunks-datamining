@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 780367, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk662146 = require("./662146.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk688825 = require("./688825.js");
+  Chunk815141 = require("./815141.js");
 
 function b() {
   var e, t;
@@ -30,11 +30,11 @@ function b() {
     children: [(0, Chunk951288.jsx)(Chunk276952.Z, {
       selected: b,
       hovered: y,
-      className: Chunk688825.pill
+      className: Chunk815141.pill
     }), (0, Chunk951288.jsx)(Chunk662146.Z, {
       color: Chunk481060.aML.Colors.PRIMARY,
       hideOnClick: true,
-      text: Chunk388032.intl.string(Chunk388032.t.YUU0RE),
+      text: Chunk388032.intl.string(Chunk388032.t.YUU0RF),
       selected: b,
       children: (0, Chunk951288.jsx)(Chunk481060.aRk, {
         selected: true,
@@ -62,7 +62,7 @@ function b() {
           onMouseLeave: () => v(false),
           onClick: Chunk981631.dG4,
           selected: b || y,
-          ariaLabel: Chunk388032.intl.string(Chunk388032.t.YUU0RE),
+          ariaLabel: Chunk388032.intl.string(Chunk388032.t.YUU0RF),
           "aria-owns": "guild-list-dms",
           "aria-selected": b || y
         }, j), t = t = {

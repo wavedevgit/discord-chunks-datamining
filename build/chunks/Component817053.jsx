@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk810568 = require("./810568.js"),
   Chunk168524 = require("./168524.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk279280 = require("./279280.js");
+  Chunk932366 = require("./932366.js");
 
 function g(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -38,7 +38,7 @@ function p(e) {
   let {
     imageSrc: t,
     gameName: n
-  } = e, [a, l] = i.useState(false), o = null != n ? n : d.intl.string(d.t.GIWFlJ);
+  } = e, [a, l] = i.useState(false), o = null != n ? n : d.intl.string(d.t.GIWFlF);
   return a || null == t ? (0, r.jsx)("div", {
     role: "img",
     "aria-label": o,
@@ -73,7 +73,7 @@ function m(e) {
     source: c.m1.UserProfile,
     sourceUserId: a,
     trackEntryPointImpression: true
-  }), v = null != n ? n : d.intl.string(d.t.GIWFlJ), y = d.intl.formatToPlainString(d.t["8QLQBw"], {
+  }), v = null != n ? n : d.intl.string(d.t.GIWFlF), y = d.intl.formatToPlainString(d.t["8QLQB+"], {
     gameName: v
   }), j = e => m ? e : (0, r.jsx)(o.u, {
     text: v,

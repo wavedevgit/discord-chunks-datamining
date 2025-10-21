@@ -12,7 +12,7 @@ var Chunk755721 = require("./755721.js"),
   Chunk391110 = require("./391110.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk184388 = require("./184388.js");
+  Chunk677599 = require("./677599.js");
 let d = e => {
   let {
     setIsAllPerksVisible: t,
@@ -33,7 +33,7 @@ let d = e => {
     },
     children: (0, r.jsxs)("div", {
       className: u.seeAllPerksButtonContent,
-      children: [c.intl.string(c.t["37C26e"]), (0, r.jsx)(a.Fbu, {
+      children: [c.intl.string(c.t["37C26f"]), (0, r.jsx)(a.Fbu, {
         color: "currentColor"
       })]
     })

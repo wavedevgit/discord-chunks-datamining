@@ -1,7 +1,7 @@
-/** Chunk was on 33840 **/
+/** Chunk was on 47863 **/
 /** chunk id: 717298, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => K
+  Z: () => J
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -41,33 +41,33 @@ var Chunk951288 = require("./951288.js"),
   Chunk328242 = require("./328242.jsx"),
   Chunk565574 = require("./565574.jsx"),
   Chunk286420 = require("./286420.jsx"),
-  Chunk51708 = require("./51708.jsx"),
+  Chunk173044 = require("./173044.jsx"),
   Chunk801604 = require("./801604.jsx"),
   Chunk577257 = require("./577257.js"),
   Chunk70722 = require("./70722.js"),
-  Chunk137349 = require("./137349.js"),
+  Chunk489999 = require("./489999.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk374079 = require("./374079.js");
+  Chunk468918 = require("./468918.js");
 
-function K(e) {
+function J(e) {
   var t;
   let {
     onClose: n,
     transitionState: l,
     sourceApplication: o,
-    analyticsLocations: K = [],
-    selectSource: X = true
+    analyticsLocations: J = [],
+    selectSource: K = true
   } = e, Y = i.useRef(performance.now()), q = (0, f.e7)([b.Z], () => b.Z.getUseSystemScreensharePicker() && ((0, w.isLinux)() || (0, w.isMac)() && a().satisfies(null === _.Z || true === _.Z ? true : _.Z.os.release, W.jR))), {
     analyticsLocations: Q
-  } = (0, v.ZP)(K, x.Z.GO_LIVE_MODAL_V2), $ = (0, f.e7)([C.default], () => C.default.getCurrentUser()), ee = (0, N.Z)(), {
+  } = (0, v.ZP)(J, x.Z.GO_LIVE_MODAL_V2), $ = (0, f.e7)([C.default], () => C.default.getCurrentUser()), ee = (0, N.Z)(), {
     state: et,
     dispatch: en
-  } = (0, k.Ti)(o, $, ee), er = (0, m.Z)((0, w.isWindows)() && null != o && X ? "confirm" : "source_select");
+  } = (0, k.Ti)(o, $, ee), er = (0, m.Z)((0, w.isWindows)() && null != o && K ? "confirm" : "source_select");
   (0, H.Z)(q, en, "confirm" === er);
   let ei = !P.ZP.canStreamQuality(P.ZP.StreamQuality.HIGH, $),
     el = !(0, w.isLinux)(),
     es = "confirm" === er,
-    eo = !X && null != o && !es,
+    eo = !K && null != o && !es,
     ea = q && et.sourceType !== u.vA.CAMERA,
     ec = i.useMemo(() => {
       let e = [{
@@ -75,12 +75,12 @@ function K(e) {
         value: u.vA.WINDOW,
         icon: p.GON
       }, {
-        name: V.intl.string(V.t.MhJ43N),
+        name: V.intl.string(V.t.MhJ43A),
         value: u.vA.CAMERA,
         icon: p.Odl
       }];
       return q || e.splice(1, 0, {
-        name: V.intl.string(V.t.slM8rK),
+        name: V.intl.string(V.t.slM8rG),
         value: u.vA.SCREEN,
         icon: p.pzj
       }), e
@@ -102,8 +102,8 @@ function K(e) {
       });
       if (t) return n();
       "no permission" === r && h.Z.show({
-        title: V.intl.string(V.t["X+mXen"]),
-        body: V.intl.string(V.t.MIJCzs)
+        title: V.intl.string(V.t["X+mXeq"]),
+        body: V.intl.string(V.t.MIJCzr)
       }), n()
     }, [n, et, Q]);
   async function ef(e) {
@@ -115,7 +115,7 @@ function K(e) {
     var e;
     eu({
       id: "prepicked:" + et.nativeSourceType,
-      name: null != (e = I.ZP.getLastPickedContentTitle()) ? e : V.intl.string(V.t["KKcy9/"]),
+      name: null != (e = I.ZP.getLastPickedContentTitle()) ? e : V.intl.string(V.t.KKcy95),
       url: ""
     })
   }, [eu, et.nativeSourceType]);
@@ -131,26 +131,26 @@ function K(e) {
           parent_media_session_id: y.Z.getMediaSessionId()
         }
       },
-      className: s()(J.root, {
-        [J.nativePicker]: q && null == o,
-        [J.channelSelector]: eo,
-        [J.confirmStep]: es
+      className: s()(X.root, {
+        [X.nativePicker]: q && null == o,
+        [X.channelSelector]: eo,
+        [X.confirmStep]: es
       }),
       size: p.CgR.DYNAMIC,
       transitionState: l,
       parentComponent: "GoLiveModalV2",
       children: [eo ? (0, r.jsx)(R.Z, {
-        className: s()(J.channelSelectorComponent, J.withFooter),
+        className: s()(X.channelSelectorComponent, X.withFooter),
         onSelectChannel: ef
       }) : es ? (0, r.jsx)(M.Z, {}) : (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(p.xBx, {
           separator: false,
-          className: J.header,
+          className: X.header,
           children: (0, r.jsx)(p.sY7, {
-            className: J.segmentedControl,
+            className: X.segmentedControl,
             value: ed,
             look: "pill",
-            optionClassName: J.segmentedControlOption,
+            optionClassName: X.segmentedControlOption,
             onChange: e => {
               let {
                 value: t
@@ -163,25 +163,25 @@ function K(e) {
             options: ec
           })
         }), (0, r.jsx)(p.hzk, {
-          className: J.content,
+          className: X.content,
           children: q && ed !== u.vA.CAMERA ? (0, r.jsx)(D.Z, {
             onSourceSelect: ep
-          }) : (0, r.jsx)(B.Z, {
+          }) : (0, r.jsx)(L.Z, {
             onClick: function(e) {
               return eu(e)
             }
           })
         })]
       }), (0, r.jsxs)(p.mzw, {
-        className: s()(J.footer, {
-          [J.footerShadow]: !ei && es
+        className: s()(X.footer, {
+          [X.footerShadow]: !ei && es
         }),
         separator: false,
         direction: d.k.Direction.VERTICAL,
         children: [(0, r.jsxs)("div", {
-          className: J.footerContent,
+          className: X.footerContent,
           children: [(0, r.jsx)(F.Z, {}), (0, r.jsxs)("div", {
-            className: J.rightButtonGroup,
+            className: X.rightButtonGroup,
             children: [ei && (0, r.jsx)(G.Z, {
               onClose: n
             }), ea && !es && (0, r.jsx)(A.Z, {
@@ -190,7 +190,7 @@ function K(e) {
                 (0, Z.t)(), (0, Z.T)(et.nativeSourceType)
               },
               align: "right",
-              ctaText: V.intl.string(V.t.FiBjwc),
+              ctaText: V.intl.string(V.t.FiBjwU),
               hideOptionsButton: !ei
             }), es && !ea && (0, r.jsx)(A.Z, {
               mainCTADisabled: null == et.selectedSource,
@@ -199,8 +199,8 @@ function K(e) {
               },
               align: "right",
               hideOptionsButton: !ei,
-              ctaText: V.intl.string(z.default["5AyH/v"])
-            }), (!ei || !(es || ea)) && (0, r.jsx)(L.Z, {
+              ctaText: V.intl.string(z.default["5AyH/p"])
+            }), (!ei || !(es || ea)) && (0, r.jsx)(B.Z, {
               align: "right"
             })]
           })]

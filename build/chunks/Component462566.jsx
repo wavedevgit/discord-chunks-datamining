@@ -13,10 +13,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk219929 = require("./219929.jsx"),
   Chunk594174 = require("./594174.js"),
   Chunk754103 = require("./754103.jsx"),
-  Chunk12464 = require("./12464.jsx"),
+  Chunk795487 = require("./795487.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk763956 = require("./763956.js"),
-  Chunk156588 = require("./156588.js");
+  Chunk954873 = require("./954873.js"),
+  Chunk189068 = require("./189068.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -82,7 +82,7 @@ let y = function(e) {
   let w = i.useCallback(function() {
     let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
       t = {};
-    return (e || T.name) && "" === v.name && (t.name = _.intl.string(_.t.lIkVsr)), t
+    return (e || T.name) && "" === v.name && (t.name = _.intl.string(_.t.lIkVsi)), t
   }, [T, v]);
 
   function D() {
@@ -98,7 +98,7 @@ let y = function(e) {
     fields: [{
       id: "card-number",
       name: "cardNumber",
-      title: () => _.intl.string(_.t.cVyJ3t),
+      title: () => _.intl.string(_.t.cVyJ3o),
       getClassNameForLayout: () => h.width100,
       renderInput: () => (0, r.jsx)(f.Z, {
         stripeType: "cardNumber",
@@ -111,7 +111,7 @@ let y = function(e) {
     fields: [{
       id: "card-expiration-date",
       name: "cardExpiry",
-      title: () => _.intl.string(_.t["CeBa//"]),
+      title: () => _.intl.string(_.t["CeBa/4"]),
       getClassNameForLayout: () => h.width50,
       renderInput: () => (0, r.jsx)(f.Z, {
         stripeType: "cardExpiry",
@@ -138,9 +138,9 @@ let y = function(e) {
     fields: [{
       id: "card-name",
       name: "name",
-      title: () => _.intl.string(_.t.VUlFdX),
+      title: () => _.intl.string(_.t.VUlFdU),
       autoComplete: "cc-name",
-      placeholder: () => _.intl.string(_.t.yf7ms7),
+      placeholder: () => _.intl.string(_.t["yf7ms+"]),
       getClassNameForLayout: () => h.width100,
       renderInput: e => (0, r.jsx)(l.oil, g({}, e))
     }]
@@ -153,7 +153,7 @@ let y = function(e) {
       i = {
         name: A.name
       };
-    T[t] || "" === e || (r[t] = true), n[t] = e, r[t] && "" === e ? "name" === t && (i.name = _.intl.string(_.t.lIkVsr)) : delete i[t], I(n), S(r), C(i)
+    T[t] || "" === e || (r[t] = true), n[t] = e, r[t] && "" === e ? "name" === t && (i.name = _.intl.string(_.t.lIkVsi)) : delete i[t], I(n), S(r), C(i)
   }
 
   function M() {

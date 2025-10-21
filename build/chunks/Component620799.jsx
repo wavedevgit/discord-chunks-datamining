@@ -1,4 +1,4 @@
-/** Chunk was on 41348 **/
+/** Chunk was on 79041 **/
 /** chunk id: 620799, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -30,8 +30,8 @@ function h(e) {
         type: "early_access",
         variant: "expressive"
       } : true,
-      title: p.intl.string(p.t.gxcsSk),
-      body: p.intl.string(p.t["8L7E5u"]),
+      title: p.intl.string(p.t.gxcsSq),
+      body: p.intl.string(p.t["8L7E5l"]),
       caretConfig: {
         align: "start"
       },
@@ -47,7 +47,7 @@ function h(e) {
         n(m.L.USER_DISMISS)
       },
       actions: [{
-        text: p.intl.string(p.t.RzWDqa),
+        text: p.intl.string(p.t.RzWDqY),
         variant: "primary",
         onClick: () => {
           n(m.L.TAKE_ACTION), (0, d.openUserProfileModal)({

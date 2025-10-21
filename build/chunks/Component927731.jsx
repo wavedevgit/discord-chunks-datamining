@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 927731, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk450215 = require("./450215.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk331245 = require("./331245.js");
+  Chunk255311 = require("./255311.js");
 
 function O(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -126,7 +126,7 @@ function N(e) {
         }), (0, r.jsx)(d.Text, {
           variant: "text-md/normal",
           color: "interactive-active",
-          children: _.intl.string(_.t.PiFnn5)
+          children: _.intl.string(_.t.PiFnny)
         })]
       })]
     }), (0, r.jsx)(c.W, {
@@ -160,8 +160,8 @@ function I(e) {
     maxTiers: a
   } = (0, p.s1)(t), s = l.map(e => e.id);
   return (0, r.jsx)(d.gNt, {
-    label: _.intl.string(_.t["72+Soq"]),
-    description: _.intl.format(_.t.nHRSvL, {
+    label: _.intl.string(_.t["72+Sos"]),
+    description: _.intl.format(_.t.nHRSvM, {
       maxTiers: a
     }),
     children: (0, r.jsx)(N, {

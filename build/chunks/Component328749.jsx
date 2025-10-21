@@ -9,7 +9,7 @@ require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk834129 = require("./834129.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk73107 = require("./73107.js");
+  Chunk786167 = require("./786167.js");
 
 function l(e) {
   let {
@@ -24,6 +24,6 @@ function l(e) {
     }),
     timestamp: t.timestamp,
     compact: n,
-    children: o.intl.string(o.t.OCs36O)
+    children: o.intl.string(o.t.OCs36J)
   })
 }

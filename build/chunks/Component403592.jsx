@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk998502 = require("./998502.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk854835 = require("./854835.js");
+  Chunk374450 = require("./374450.js");
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -117,8 +117,8 @@ class N extends Chunk647438.Component {
     return this.props.upload.item.platform !== Chunk476326.ow.WEB ? null : this.props.upload.isImage ? (0, Chunk951288.jsx)(C, {
       file: this.props.upload.item.file
     }) : (0, Chunk951288.jsx)("div", {
-      className: o()(Chunk854835.icon, {
-        [Chunk854835[null != (e = this.props.upload.classification) ? module : ""]]: true
+      className: o()(Chunk374450.icon, {
+        [Chunk374450[null != (e = this.props.upload.classification) ? module : ""]]: true
       })
     })
   }
@@ -150,39 +150,39 @@ class R extends Chunk647438.Component {
       hasSpoiler: a
     } = this.state;
     return (0, Chunk951288.jsxs)(Chunk481060.Y0X, {
-      "aria-label": Chunk388032.intl.string(Chunk388032.t["3AS4UF"]),
+      "aria-label": Chunk388032.intl.string(Chunk388032.t["3AS4UM"]),
       size: Chunk481060.CgR.DYNAMIC,
       transitionState: exports,
-      className: Chunk854835.uploadModal,
+      className: Chunk374450.uploadModal,
       parentComponent: "UploadAttachment",
       children: [(0, Chunk951288.jsxs)("div", {
-        className: Chunk854835.inner,
+        className: Chunk374450.inner,
         children: [(0, Chunk951288.jsxs)("div", {
-          className: o()(Chunk854835.file, {
-            [Chunk854835.expandable]: module.isImage
+          className: o()(Chunk374450.file, {
+            [Chunk374450.expandable]: module.isImage
           }),
           children: [(0, Chunk951288.jsx)(N, {
             upload: module
           }), (0, Chunk951288.jsxs)("div", {
-            className: Chunk854835.description,
+            className: Chunk374450.description,
             children: [(0, Chunk951288.jsx)("div", {
-              className: Chunk854835.filename,
-              children: module.showLargeMessageDialog ? Chunk388032.intl.formatToPlainString(Chunk388032.t.QWQxtL, {
+              className: Chunk374450.filename,
+              children: module.showLargeMessageDialog ? Chunk388032.intl.formatToPlainString(Chunk388032.t.QWQxtC, {
                 maxLength: require
               }) : module.filename
             }), module.showLargeMessageDialog ? (0, Chunk951288.jsx)("div", {
-              className: Chunk854835.subtitle,
-              children: Chunk388032.intl.string(Chunk388032.t.Plcu09)
+              className: Chunk374450.subtitle,
+              children: Chunk388032.intl.string(Chunk388032.t.Plcu02)
             }) : null]
           })]
         }), (0, Chunk951288.jsx)("div", {
-          className: Chunk854835.form,
+          className: Chunk374450.form,
           children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
             gap: 24,
             children: [(0, Chunk951288.jsxs)(Chunk481060.Kqy, {
               gap: 16,
               children: [(0, Chunk951288.jsx)(Chunk481060.oil, {
-                label: Chunk388032.intl.string(Chunk388032.t.ILJuBg),
+                label: Chunk388032.intl.string(Chunk388032.t.ILJuBq),
                 value: this.state.filename,
                 onChange: e => this.setState({
                   filename: e
@@ -191,8 +191,8 @@ class R extends Chunk647438.Component {
                   if (e.which === E.yXg.ENTER) return this.handleSubmit()
                 }
               }), module.isImage ? (0, Chunk951288.jsx)(Chunk481060.oil, {
-                label: Chunk388032.intl.string(Chunk388032.t.eOB2eX),
-                placeholder: Chunk388032.intl.string(Chunk388032.t.RNH1jo),
+                label: Chunk388032.intl.string(Chunk388032.t.eOB2eR),
+                placeholder: Chunk388032.intl.string(Chunk388032.t.RNH1jn),
                 value: this.state.description,
                 onChange: e => this.setState({
                   description: e
@@ -206,27 +206,27 @@ class R extends Chunk647438.Component {
               onChange: e => this.setState({
                 hasSpoiler: e
               }),
-              label: Chunk388032.intl.string(Chunk388032.t["gsI+xM"])
+              label: Chunk388032.intl.string(Chunk388032.t["gsI+xC"])
             })]
           })
         })]
       }), (0, Chunk951288.jsx)("div", {
-        className: Chunk854835.footer,
+        className: Chunk374450.footer,
         children: (0, Chunk951288.jsxs)("div", {
-          className: o()(Chunk854835.hasSpoilers, Chunk854835.footerRightAlign),
+          className: o()(Chunk374450.hasSpoilers, Chunk374450.footerRightAlign),
           children: [(0, Chunk951288.jsx)(Chunk755721.zx, {
             type: "button",
             look: Chunk755721.zx.Looks.LINK,
             color: Chunk755721.zx.Colors.PRIMARY,
             onClick: this.cancel,
             children: (0, Chunk951288.jsx)("span", {
-              children: Chunk388032.intl.string(Chunk388032.t["ETE/oK"])
+              children: Chunk388032.intl.string(Chunk388032.t["ETE/oC"])
             })
           }), (0, Chunk951288.jsx)(Chunk755721.zx, {
             type: "submit",
             onClick: this.handleSubmit,
             children: (0, Chunk951288.jsx)("span", {
-              children: Chunk388032.intl.string(Chunk388032.t["TY+auL"])
+              children: Chunk388032.intl.string(Chunk388032.t["TY+auE"])
             })
           })]
         })

@@ -13,12 +13,12 @@ var Chunk120356 = require("./120356.js"),
   Chunk86419 = require("./86419.js"),
   Chunk881410 = require("./881410.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk773307 = require("./773307.js");
+  Chunk959183 = require("./959183.js");
 
 function g(e) {
   let {
     widget: t
-  } = e, n = (0, c.Gv)(t.type), i = 1 === n, g = (0, l.e7)([s.default], () => ["en-US", "en-GB"].includes(s.default.locale)) && i ? d.intl.string(d.t["3FdPBQ"]) : d.intl.format(d.t.W8K2GB, {
+  } = e, n = (0, c.Gv)(t.type), i = 1 === n, g = (0, l.e7)([s.default], () => ["en-US", "en-GB"].includes(s.default.locale)) && i ? d.intl.string(d.t["3FdPBT"]) : d.intl.format(d.t.W8K2GH, {
     maxGames: n
   });
   return (0, r.jsxs)("div", {

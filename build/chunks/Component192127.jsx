@@ -19,7 +19,7 @@ function u(t) {
     e = (0, a.e7)([o.Z], () => o.Z.isInProgress());
   return (null == n ? true : n.enableAIFeatures) && t.isThread() ? (0, i.jsx)(l.sNh, {
     id: "summarize-thread",
-    label: e ? d.intl.string(d.t.oKECxM) : d.intl.string(d.t.EXfguL),
+    label: e ? d.intl.string(d.t.oKECxB) : d.intl.string(d.t.EXfguE),
     disabled: e,
     icon: e ? (0, i.jsx)(l.$jN, {
       type: l.RAz.PULSING_ELLIPSIS
@@ -28,14 +28,14 @@ function u(t) {
     children: e ? null : (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(l.sNh, {
         id: "summarize_thread_for_everyone",
-        label: d.intl.string(d.t.eCzSdX),
+        label: d.intl.string(d.t.eCzSdd),
         action: () => s.Z.summarizeThread(t, false),
         icon: (0, i.jsx)(l.BFJ, {
           size: "sm"
         })
       }), (0, i.jsx)(l.sNh, {
         id: "summarize_thread_for_me",
-        label: d.intl.string(d.t["HOe+Hh"]),
+        label: d.intl.string(d.t["HOe+Hq"]),
         action: () => s.Z.summarizeThread(t),
         icon: (0, i.jsx)(l.tBG, {
           size: "sm"

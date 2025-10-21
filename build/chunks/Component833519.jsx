@@ -1,4 +1,4 @@
-/** Chunk was on 65825 **/
+/** Chunk was on 87943 **/
 /** chunk id: 833519, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => q,
@@ -43,7 +43,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk354459 = require("./354459.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk400872 = require("./400872.js");
+  Chunk7504 = require("./7504.js");
 let H = new Chunk710845.Z("StreamTile");
 
 function B(e) {
@@ -93,9 +93,9 @@ function q(e) {
   (0, f.ZP)(() => {
     !et && (null == J ? true : J.isGuildStageVoice()) && !er && ((0, d.rn)(G), u.Z.updateStageStreamSize(G.channelId, false))
   });
-  let eo = (0, g.c)(U.Yn.STREAM, t.user.id);
+  let eo = (0, g.c)(V.Yn.STREAM, t.user.id);
   if (i.useEffect(() => {
-      H.info("Stream Tile State - activeStream: ".concat(null != $, " | selected: ").concat(n, " | Video: ").concat(null != z, " | MediaEngine: ").concat(P.Z.supports(U.AN.VIDEO)))
+      H.info("Stream Tile State - activeStream: ".concat(null != $, " | selected: ").concat(n, " | Video: ").concat(null != z, " | MediaEngine: ").concat(P.Z.supports(V.AN.VIDEO)))
     }, [z, $, n]), K) return (0, r.jsx)(D.Z, {
     stream: t.stream,
     isSmall: ea,
@@ -119,7 +119,7 @@ function q(e) {
     participant: t,
     width: M
   });
-  if (!(null != $ && !n && null != z && P.Z.supports(U.AN.VIDEO))) return (0, r.jsxs)("div", {
+  if (!(null != $ && !n && null != z && P.Z.supports(V.AN.VIDEO))) return (0, r.jsxs)("div", {
     className: a()(W.content, W.streamPreview, {
       [W.small]: ea
     }),
@@ -136,17 +136,17 @@ function q(e) {
         children: (0, r.jsx)(s.Button, {
           variant: "secondary",
           size: ea ? "sm" : "md",
-          text: M < 175 ? V.intl.string(V.t["I6JG4+"]) : V.intl.string(V.t["7Xq/nZ"])
+          text: M < 175 ? U.intl.string(U.t.I6JG46) : U.intl.string(U.t["7Xq/nV"])
         })
       }), et && !ee ? (0, r.jsx)("div", {
         className: a()(W.cta, W.addCta),
         children: (0, r.jsx)(c.u, {
-          text: V.intl.string(V.t.wCrzur),
+          text: U.intl.string(U.t.wCrzut),
           children: (0, r.jsx)(s.hU, {
             variant: "secondary",
             size: ea ? "sm" : "md",
             icon: s.OgY,
-            "aria-label": V.intl.string(V.t.wCrzur),
+            "aria-label": U.intl.string(U.t.wCrzut),
             onClick: e => {
               e.stopPropagation(), (0, d.rn)(t.stream, {
                 forceMultiple: true

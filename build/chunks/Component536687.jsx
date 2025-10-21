@@ -36,7 +36,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk46140 = require("./46140.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk946232 = require("./946232.js");
+  Chunk430799 = require("./430799.js");
 
 function M(e) {
   var t, n, o, a, C, T, N;
@@ -49,10 +49,10 @@ function M(e) {
     impressionRef: U,
     parentModalOpenStartClockTime: q,
     sourceQuestContent: H
-  } = e, Y = (0, O.il)(Z), Q = (0, h.tP)(Z), G = (0, u.e7)([g.Z], () => g.Z.getState().theme), W = (0, m.wj)(G) ? w.BRd.DARK : w.BRd.LIGHT, z = (0, u.e7)([v.Z], () => v.Z.useReducedMotion), K = (0, b.aM)(), [X, $] = l.useState(Y.progressSeconds), [J, ee] = l.useState(false), {
+  } = e, Y = (0, O.il)(Z), Q = (0, h.tP)(Z), G = (0, u.e7)([g.Z], () => g.Z.getState().theme), W = (0, m.wj)(G) ? w.BRd.DARK : w.BRd.LIGHT, z = (0, u.e7)([v.Z], () => v.Z.useReducedMotion), K = (0, b.aM)(), [X, J] = l.useState(Y.progressSeconds), [$, ee] = l.useState(false), {
     completedRatio: et,
     completedRatioDisplay: en
-  } = (0, h.I)(Z), [er, el] = (0, R.G6)(A.intl.string(A.t.RDE0SU), A.intl.string(A.t["+5kSoa"]), 1700), eo = null != (0, O.LM)(Z.config), [ei, ea] = l.useState(false), es = l.useRef(null), ec = (0, O.vB)(Z.config), eu = (null == (t = Z.userStatus) ? true : t.claimedAt) != null ? eo ? A.intl.string(A.t.WYchdX) : A.intl.string(A.t.vTgCW1) : A.intl.string(A.t.cfY4PD), ed = l.useCallback(() => {
+  } = (0, h.I)(Z), [er, el] = (0, P.G6)(A.intl.string(A.t.RDE0Sc), A.intl.string(A.t["+5kSoW"]), 1700), eo = null != (0, O.LM)(Z.config), [ei, ea] = l.useState(false), es = l.useRef(null), ec = (0, O.vB)(Z.config), eu = (null == (t = Z.userStatus) ? true : t.claimedAt) != null ? eo ? A.intl.string(A.t.WYchde) : A.intl.string(A.t.vTgCWx) : A.intl.string(A.t.cfY4PE), ed = l.useCallback(() => {
     ec && ((0, O.f2)(Z.id, {
       content: S.jn.VIDEO_MODAL,
       ctaContent: E.jZ.COPY_QUEST_URL,
@@ -65,7 +65,7 @@ function M(e) {
       ctaContent: E.jZ.COPY_QUEST_URL,
       impressionId: K,
       sourceQuestContent: H
-    }), (0, p.showToast)((0, p.createToast)(A.intl.string(A.t["+5kSoa"]), p.ToastType.SUCCESS)), ea(true), null != es.current && clearTimeout(es.current), es.current = setTimeout(() => {
+    }), (0, p.showToast)((0, p.createToast)(A.intl.string(A.t["+5kSoW"]), p.ToastType.SUCCESS)), ea(true), null != es.current && clearTimeout(es.current), es.current = setTimeout(() => {
       ea(false)
     }, 1700))
   }, [K, ec, Z.id, H]);
@@ -75,7 +75,7 @@ function M(e) {
   let ef = async () => {
     if (null != V) {
       let e = y.r.build(Z.config).ctaLink;
-      await (0, R.PW)(e) && V()
+      await (0, P.PW)(e) && V()
     }(0, O.nc)(Z, {
       content: S.jn.VIDEO_MODAL,
       ctaContent: E.jZ.OPEN_GAME_LINK,
@@ -84,7 +84,7 @@ function M(e) {
     })
   }, ep = () => {
     ((0, O.xN)(Z.config) || (0, O.Bg)(Z.config)) && V()
-  }, ev = l.useMemo(() => y.r.build(Z.config).defaultRewardName, [Z]), eg = A.intl.formatToPlainString(A.t["12IWPz"], {
+  }, ev = l.useMemo(() => y.r.build(Z.config).defaultRewardName, [Z]), eg = A.intl.formatToPlainString(A.t["12IWP2"], {
     rewardName: ev
   }), eE = null == (o = Z.config.taskConfigV2) || null == (n = o.tasks) ? true : n[c.X.WATCH_VIDEO];
   s()(null != eE, "VideoQuestModal: videoTask must not be null");
@@ -117,12 +117,12 @@ function M(e) {
                 alt: Z.config.messages.gameTitle,
                 className: i()(L.contentHeaderLogotype, L.accentOnHover),
                 src: (0, _.fh)(Z, _.eC.LOGO_TYPE, W).url
-              }), (0, r.jsx)(P.Z, {}), (0, r.jsxs)("div", {
+              }), (0, r.jsx)(R.Z, {}), (0, r.jsxs)("div", {
                 className: L.questHeading,
                 children: [(0, r.jsx)(p.Heading, {
                   variant: "heading-md/semibold",
                   color: "header-primary",
-                  children: A.intl.format(A.t.EQa7oq, {
+                  children: A.intl.format(A.t.EQa7os, {
                     questName: Z.config.messages.questName
                   })
                 }), (0, r.jsx)(p.Text, {
@@ -146,7 +146,7 @@ function M(e) {
                   quest: Z,
                   size: 48,
                   percentComplete: et,
-                  percentCompleteText: J ? en : true,
+                  percentCompleteText: $ ? en : true,
                   percentCompleteTextVariant: "text-sm/medium",
                   children: (0, r.jsx)(D.Z, {
                     className: L.questProgressRewardTile,
@@ -164,7 +164,7 @@ function M(e) {
             videoTask: eE,
             videoSessionId: F,
             parentTransitionState: M,
-            onOptimisticProgressUpdate: $,
+            onOptimisticProgressUpdate: J,
             autoplay: B,
             performanceClockStartTime: q,
             onClose: V,
@@ -176,7 +176,7 @@ function M(e) {
               className: L.portraitCtaBtnWrapper,
               children: (0, r.jsx)(p.Button, {
                 variant: "secondary",
-                text: A.intl.string(A.t.nL0WvL),
+                text: A.intl.string(A.t.nL0WvC),
                 onClick: ef,
                 fullWidth: true
               })
@@ -198,13 +198,13 @@ function M(e) {
               variant: "active",
               icon: p.owK,
               onClick: em,
-              "aria-label": A.intl.string(A.t.RDE0SU)
+              "aria-label": A.intl.string(A.t.RDE0Sc)
             }) : (0, r.jsx)(d.u, {
-              text: A.intl.string(A.t.WqhZsr),
+              text: A.intl.string(A.t.WqhZss),
               children: (0, r.jsx)(p.hU, {
                 variant: "secondary",
                 icon: p.TIy,
-                "aria-label": A.intl.string(A.t.RDE0SU),
+                "aria-label": A.intl.string(A.t.RDE0Sc),
                 onClick: em
               })
             }))]
@@ -212,7 +212,7 @@ function M(e) {
             className: L.contentFooter,
             children: [(0, r.jsx)(p.Button, {
               variant: "secondary",
-              text: A.intl.string(A.t.cpT0Cg),
+              text: A.intl.string(A.t.cpT0Cq),
               onClick: V
             }), (0, r.jsxs)("div", {
               className: L.contentFooterButtonCont,

@@ -20,10 +20,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk55406 = require("./55406.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk453116 = require("./453116.js"),
-  Chunk694899 = require("./694899.js");
+  Chunk491068 = require("./491068.js"),
+  Chunk400167 = require("./400167.js");
 
-function y(e, t, n) {
+function k(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -31,18 +31,18 @@ function y(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let k = Chunk454585.Z.reactParserFor(Chunk55406.default.getDefaultRules(Chunk453116)),
-  S = {};
-class E extends Chunk647438.PureComponent {
+let y = Chunk454585.Z.reactParserFor(Chunk55406.default.getDefaultRules(Chunk491068)),
+  E = {};
+class S extends Chunk647438.PureComponent {
   track(e, t, n) {
     this.props.track(e, t, n)
   }
   renderFooter() {
     return (0, Chunk951288.jsxs)("div", {
-      className: Chunk453116.footer,
+      className: Chunk491068.footer,
       children: [(0, Chunk951288.jsx)(Chunk481060.Anchor, {
-        "aria-label": Chunk388032.intl.string(Chunk388032.t["/84uiI"]),
-        className: Chunk453116.socialLink,
+        "aria-label": Chunk388032.intl.string(Chunk388032.t["/84uiD"]),
+        className: Chunk491068.socialLink,
         href: (0, Chunk299379.Z)(Chunk981631.RK.TWITTER),
         target: "blank",
         children: (0, Chunk951288.jsx)(Chunk481060.TAi, {
@@ -50,8 +50,8 @@ class E extends Chunk647438.PureComponent {
           color: "currentColor"
         })
       }), (0, Chunk951288.jsx)(Chunk481060.Anchor, {
-        "aria-label": Chunk388032.intl.string(Chunk388032.t["h0or/v"]),
-        className: Chunk453116.socialLink,
+        "aria-label": Chunk388032.intl.string(Chunk388032.t["h0or/l"]),
+        className: Chunk491068.socialLink,
         href: Chunk981631.fK7.FACEBOOK_URL,
         target: "blank",
         children: (0, Chunk951288.jsx)(Chunk481060.tdR, {
@@ -59,8 +59,8 @@ class E extends Chunk647438.PureComponent {
           color: "currentColor"
         })
       }), (0, Chunk951288.jsx)(Chunk481060.Anchor, {
-        "aria-label": Chunk388032.intl.string(Chunk388032.t["5uVPyc"]),
-        className: Chunk453116.socialLink,
+        "aria-label": Chunk388032.intl.string(Chunk388032.t["5uVPyf"]),
+        className: Chunk491068.socialLink,
         href: Chunk981631.fK7.INSTAGRAM_URL,
         target: "blank",
         children: (0, Chunk951288.jsx)(Chunk481060.gST, {
@@ -69,7 +69,7 @@ class E extends Chunk647438.PureComponent {
         })
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-xs/normal",
-        children: Chunk388032.intl.string(Chunk388032.t.EjVVIy)
+        children: Chunk388032.intl.string(Chunk388032.t.EjVVI7)
       })]
     })
   }
@@ -78,7 +78,7 @@ class E extends Chunk647438.PureComponent {
       changeLog: e
     } = this.props, t = module.youtube_video_id, l = module.video, o = module.image;
     if (null != exports && "" !== exports) return (0, Chunk951288.jsx)(Chunk446411.BC, {
-      className: Chunk453116.video,
+      className: Chunk491068.video,
       allowFullScreen: false,
       href: "https://youtu.be/".concat(exports),
       thumbnail: {
@@ -111,7 +111,7 @@ class E extends Chunk647438.PureComponent {
         loop: true,
         muted: true,
         autoPlay: true,
-        className: Chunk453116.video,
+        className: Chunk491068.video,
         onPlay: () => {
           this.track(Chunk981631.rMx.CHANGE_LOG_VIDEO_INTERACTED, {}, true)
         }
@@ -121,7 +121,7 @@ class E extends Chunk647438.PureComponent {
     {
       let e = Chunk120356.startsWith("https://") ? Chunk120356 : require("./595173.js")("./".concat(Chunk120356));
       return (0, Chunk951288.jsx)("img", {
-        className: Chunk453116.image,
+        className: Chunk491068.image,
         alt: "",
         src: module,
         width: 451,
@@ -135,7 +135,7 @@ class E extends Chunk647438.PureComponent {
     } = this.props;
     return (0, Chunk951288.jsxs)(Chunk481060.Y0X, {
       transitionState: Chunk481060.Dvm.ENTERED,
-      className: Chunk694899.modal,
+      className: Chunk400167.modal,
       parentComponent: "ChangelogStandardTemplate",
       children: [(0, Chunk951288.jsxs)(Chunk481060.xBx, {
         align: Chunk600164.Z.Justify.BETWEEN,
@@ -147,16 +147,16 @@ class E extends Chunk647438.PureComponent {
           })
         })]
       }), (0, Chunk951288.jsx)(Chunk481060.hzk, {
-        className: a()(Chunk694899.content, Chunk453116.container, {}),
+        className: a()(Chunk400167.content, Chunk491068.container, {}),
         scrollerRef: this.scrollerRef,
         onScroll: this.handleScroll,
         children: (0, Chunk951288.jsxs)("div", {
           tabIndex: 0,
           role: "region",
-          "aria-label": Chunk388032.intl.string(Chunk388032.t.HzBchI),
-          children: [this.renderVideo(), k(module.body, false, {
+          "aria-label": Chunk388032.intl.string(Chunk388032.t.HzBchE),
+          children: [this.renderVideo(), y(module.body, false, {
             changeLog: this,
-            interpolations: S,
+            interpolations: E,
             onLinkClick: this.trackLinkClick
           })]
         })
@@ -167,7 +167,7 @@ class E extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), y(this, "scrollerRef", l.createRef()), y(this, "handleScroll", () => {
+    super(...e), k(this, "scrollerRef", l.createRef()), k(this, "handleScroll", () => {
       let {
         current: e
       } = this.scrollerRef;
@@ -175,12 +175,12 @@ class E extends Chunk647438.PureComponent {
         var t, n;
         null == (t = (n = this.props).onScroll) || t.call(n, e)
       }
-    }), y(this, "trackLinkClick", e => {
+    }), k(this, "trackLinkClick", e => {
       this.props.track(j.rMx.CHANGE_LOG_CTA_CLICKED, {
         cta_type: "inline_link",
         target: e
       }, false)
-    }), y(this, "renderHeader", () => {
+    }), k(this, "renderHeader", () => {
       let {
         changeLog: e
       } = this.props;
@@ -189,11 +189,11 @@ class E extends Chunk647438.PureComponent {
         shrink: 1,
         children: [(0, r.jsx)(c.Heading, {
           variant: "heading-lg/semibold",
-          children: C.intl.string(C.t.LRmNAg)
+          children: C.intl.string(C.t.LRmNAl)
         }), (0, r.jsx)(c.Text, {
           variant: "text-xs/normal",
           className: b.date,
-          children: C.intl.format(C.t.Fb8xx8, {
+          children: C.intl.format(C.t.Fb8xx2, {
             date: null != e.date && "" !== e.date ? s()(e.date).toDate() : new Date
           })
         })]
@@ -201,4 +201,4 @@ class E extends Chunk647438.PureComponent {
     })
   }
 }
-let _ = E
+let _ = S

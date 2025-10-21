@@ -39,7 +39,7 @@ function p(t) {
     }).enabled;
   return {
     PRIORITY_SPEAKER_DESCRIPTION: a.intl.format(a.t.j66HgY, {
-      keybind: a.intl.string(a.t.DkSwJy),
+      keybind: a.intl.string(a.t.DkSwJ2),
       onClick: () => {
         {
           let {
@@ -77,45 +77,45 @@ let D = {
       C = i.isMediaChannel(),
       {
         inSoundmojiExperiment: u,
-        inBypassSlowmodePermissionExperiment: d
+        inBypassSlowmodePermissionExperiment: f
       } = M;
     switch (i.type) {
       case O.d4z.GUILD_CATEGORY:
-        return [A.zO(g, a.intl.string(a.t.AkPxc3)), A.Ny(g, a.intl.string(a.t.Ny49TE)), A.vq(g, a.intl.string(a.t.cKobOz), {
+        return [A.zO(g, a.intl.string(a.t["AkPxc+"])), A.Ny(g, a.intl.string(a.t.Ny49TN)), A.vq(g, a.intl.string(a.t.cKobO5), {
           showPrivateThreads: true,
           showCreateThreads: true,
           inSoundmojiExperiment: u,
-          inBypassSlowmodePermissionExperiment: d
-        }), A.WV(g, a.intl.string(a.t["46Ra1d"])), A.xU(g, a.intl.string(a.t["rrh/W1"])), ...(l = M.showStageChannelPermissions, r = () => A.kv(g, a.intl.string(a.t.yniaur)), l ? [r()] : []), A.uu(g, a.intl.string(a.t.b8lplZ))];
+          inBypassSlowmodePermissionExperiment: f
+        }), A.WV(g, a.intl.string(a.t["46Ra1b"])), A.xU(g, a.intl.string(a.t["rrh/W6"])), ...(l = M.showStageChannelPermissions, r = () => A.kv(g, a.intl.string(a.t.yniauk)), l ? [r()] : []), A.uu(g, a.intl.string(a.t.b8lplT))];
       case O.d4z.GUILD_VOICE:
         return [A.zO(g, a.intl.string(a.t.ouHggI), {
           showManageWebhooks: true
-        }), A.Ny(g, a.intl.string(a.t.Ny49TE)), A.WV(g, a.intl.string(a.t["46Ra1d"])), A.aW(g, a.intl.string(a.t.iqlsnJ), {
-          sectionDescription: c ? a.intl.format(a.t["4Z9FbW"], {
+        }), A.Ny(g, a.intl.string(a.t.Ny49TN)), A.WV(g, a.intl.string(a.t["46Ra1b"])), A.aW(g, a.intl.string(a.t.iqlsnD), {
+          sectionDescription: c ? a.intl.format(a.t["4Z9Fbb"], {
             setUpAutomod: () => {
               s.Z.open(t, O.pNK.GUILD_AUTOMOD)
             }
           }) : true,
           inSoundmojiExperiment: u
-        }), A.uu(g, a.intl.string(a.t.b8lplZ)), A.xU(g, a.intl.string(a.t["rrh/W1"]))];
+        }), A.uu(g, a.intl.string(a.t.b8lplT)), A.xU(g, a.intl.string(a.t["rrh/W6"]))];
       case O.d4z.GUILD_STAGE_VOICE:
         return [A.zO(g, a.intl.string(a.t.ouHggI), {
           showManageWebhooks: false
-        }), A.Ny(g, a.intl.string(a.t.Ny49TE)), A.FX(g, a.intl.string(a.t["46Ra1d"]), D), A.kv(g, a.intl.string(a.t.yniaur)), A.uu(g, a.intl.string(a.t.b8lplZ)), A.aW(g, a.intl.string(a.t.iqlsnJ), {
-          sectionDescription: c ? a.intl.format(a.t["4Z9FbW"], {
+        }), A.Ny(g, a.intl.string(a.t.Ny49TN)), A.FX(g, a.intl.string(a.t["46Ra1b"]), D), A.kv(g, a.intl.string(a.t.yniauk)), A.uu(g, a.intl.string(a.t.b8lplT)), A.aW(g, a.intl.string(a.t.iqlsnD), {
+          sectionDescription: c ? a.intl.format(a.t["4Z9Fbb"], {
             setUpAutomod: () => {
               s.Z.open(t, O.pNK.GUILD_AUTOMOD)
             }
           }) : true,
           inSoundmojiExperiment: u
-        }), A.xU(g, a.intl.string(a.t["rrh/W1"]), {
+        }), A.xU(g, a.intl.string(a.t["rrh/W6"]), {
           showActivities: false
         })];
       case O.d4z.GUILD_FORUM:
       case O.d4z.GUILD_MEDIA:
-        let f = C ? a.intl.string(a.t.aSjPg4) : a.intl.string(a.t.TS7CnZ),
-          U = C ? a.t.YjJTtL : a.t["1MTnqa"];
-        return [A.zO(g, a.intl.string(a.t.ouHggI)), A.Ny(g, a.intl.string(a.t.Ny49TE)), A.vq(g, f, {
+        let d = C ? a.intl.string(a.t.aSjPgw) : a.intl.string(a.t.TS7Cnb),
+          U = C ? a.t.YjJTtH : a.t["1MTnqY"];
+        return [A.zO(g, a.intl.string(a.t.ouHggI)), A.Ny(g, a.intl.string(a.t.Ny49TN)), A.vq(g, d, {
           showPrivateThreads: false,
           showCreateThreads: false,
           sectionDescription: c ? a.intl.format(U, {
@@ -124,15 +124,15 @@ let D = {
             }
           }) : true,
           inSoundmojiExperiment: u,
-          inBypassSlowmodePermissionExperiment: d
-        }), A.xU(g, a.intl.string(a.t["rrh/W1"])), ...(P = () => A.WV(g, a.intl.string(a.t["46Ra1d"])), I ? [P()] : [])];
+          inBypassSlowmodePermissionExperiment: f
+        }), A.xU(g, a.intl.string(a.t["rrh/W6"])), ...(P = () => A.WV(g, a.intl.string(a.t["46Ra1b"])), I ? [P()] : [])];
       default:
-        return [A.zO(g, a.intl.string(a.t.ouHggI)), A.Ny(g, a.intl.string(a.t.Ny49TE)), A.vq(g, a.intl.string(a.t.cKobOz), {
+        return [A.zO(g, a.intl.string(a.t.ouHggI)), A.Ny(g, a.intl.string(a.t.Ny49TN)), A.vq(g, a.intl.string(a.t.cKobO5), {
           showPrivateThreads: i.type !== O.d4z.GUILD_ANNOUNCEMENT,
           showCreateThreads: true,
           inSoundmojiExperiment: u,
-          inBypassSlowmodePermissionExperiment: d
-        }), A.xU(g, a.intl.string(a.t["rrh/W1"])), ...(_ = () => A.WV(g, a.intl.string(a.t["46Ra1d"])), I ? [_()] : [])]
+          inBypassSlowmodePermissionExperiment: f
+        }), A.xU(g, a.intl.string(a.t["rrh/W6"])), ...(_ = () => A.WV(g, a.intl.string(a.t["46Ra1b"])), I ? [_()] : [])]
     }
   },
   generateGuildPermissionSpec: function(t) {

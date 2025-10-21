@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk496675 = require("./496675.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk869306 = require("./869306.js");
+  Chunk451964 = require("./451964.js");
 
 function g(e) {
   let {
@@ -19,7 +19,7 @@ function g(e) {
     error: n,
     onClose: g
   } = e, h = t.id, m = l.useCallback(() => {
-    g(), r.Z.open(h, d.pNK.INVITES)
+    g(), a.Z.open(h, d.pNK.INVITES)
   }, [h, g]), v = l.useCallback(e => (0, i.jsx)(s.P3F, {
     className: c.errorLink,
     onClick: m,
@@ -38,10 +38,10 @@ function g(e) {
       tag: "span",
       children: e
     })
-  }), []), x = n instanceof a.Z ? n.code !== d.evJ.TOO_MANY_INVITES ? n.getAnyErrorMessage() : o.Z.can(d.Plq.MANAGE_GUILD, t) ? u.intl.format(u.t["H/RUY2"], {
+  }), []), x = n instanceof r.Z ? n.code !== d.evJ.TOO_MANY_INVITES ? n.getAnyErrorMessage() : o.Z.can(d.Plq.MANAGE_GUILD, t) ? u.intl.format(u.t["H/RUY1"], {
     inviteListHook: v,
     inviteHelpHook: p
-  }) : u.intl.string(u.t["/FxH6O"]) : "message" in n ? n.message : u.intl.string(u.t.eAn6z8);
+  }) : u.intl.string(u.t["/FxH6G"]) : "message" in n ? n.message : u.intl.string(u.t.eAn6z2);
   return (0, i.jsx)(s.Text, {
     className: c.errorMessage,
     variant: "text-xs/normal",

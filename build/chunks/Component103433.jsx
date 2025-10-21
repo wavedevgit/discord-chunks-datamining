@@ -10,7 +10,7 @@ var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk623995 = require("./623995.js"),
+  Chunk38249 = require("./38249.js"),
   Chunk505944 = require("./505944.js");
 let u = e => {
   let {
@@ -33,7 +33,7 @@ let u = e => {
           className: l.backButton,
           children: [(0, r.jsx)(o.V7D, {
             color: "currentColor"
-          }), s.intl.string(s.t["13/7kZ"])]
+          }), s.intl.string(s.t["13/7kX"])]
         })
       }), (0, r.jsx)("div", {
         className: l.__invalid_contentContainer,
@@ -42,7 +42,7 @@ let u = e => {
           children: (0, r.jsx)(o.Heading, {
             variant: "display-lg",
             color: "always-white",
-            children: s.intl.string(s.t.hqjDX1)
+            children: s.intl.string(s.t["hqjDX/"])
           })
         })
       })]

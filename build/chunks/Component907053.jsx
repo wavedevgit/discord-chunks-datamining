@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk472305 = require("./472305.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk46601 = require("./46601.js");
+  Chunk932616 = require("./932616.js");
 
 function h(t) {
   let {
@@ -63,7 +63,7 @@ function m(t) {
       separator: false,
       children: [(0, i.jsx)(l.Heading, {
         variant: "heading-xl/semibold",
-        children: x.intl.string(x.t["7lo8+f"])
+        children: x.intl.string(x.t["7lo8+e"])
       }), (0, i.jsx)(l.olH, {
         className: u.closeButton,
         onClick: n
@@ -83,9 +83,9 @@ function m(t) {
               variant: "text-md/normal",
               color: "header-secondary",
               className: u.description,
-              children: x.intl.string(x.t.NxPUqa)
+              children: x.intl.string(x.t.NxPUqY)
             }), (0, i.jsx)(l.oil, {
-              label: x.intl.string(x.t["4jIAa2"]),
+              label: x.intl.string(x.t["4jIAa+"]),
               error: v,
               onChange: m,
               placeholder: c.pL,
@@ -100,13 +100,13 @@ function m(t) {
               direction: "horizontal-reverse",
               children: [(0, i.jsx)(l.Button, {
                 variant: "primary",
-                text: x.intl.string(x.t.PDTjLC),
+                text: x.intl.string(x.t.PDTjLN),
                 type: "submit",
                 loading: _,
                 disabled: "" === o
               }), (0, i.jsx)(l.Button, {
                 variant: "secondary",
-                text: x.intl.string(x.t["ETE/oK"]),
+                text: x.intl.string(x.t["ETE/oC"]),
                 onClick: n
               })]
             })
@@ -122,23 +122,23 @@ function m(t) {
               children: (0, i.jsx)(l.Text, {
                 tag: "span",
                 variant: "text-md/normal",
-                children: x.intl.string(x.t.yOxxAw)
+                children: x.intl.string(x.t["yOxxA+"])
               })
             }), (0, i.jsxs)("li", {
               children: [(0, i.jsx)(l.Text, {
                 tag: "span",
                 variant: "text-md/normal",
-                children: x.intl.string(x.t.cSURbm)
+                children: x.intl.string(x.t.cSURbq)
               }), (0, i.jsxs)("div", {
                 className: u.dnsRecordContainer,
                 children: [(0, i.jsx)(h, {
-                  name: x.intl.string(x.t.GL3q7u),
+                  name: x.intl.string(x.t.GL3q7k),
                   value: (0, c.Qv)(o)
                 }), (0, i.jsx)(h, {
-                  name: x.intl.string(x.t.Ccmixs),
+                  name: x.intl.string(x.t.Ccmixu),
                   value: "TXT"
                 }), (0, i.jsx)(h, {
-                  name: x.intl.string(x.t.PVLriY),
+                  name: x.intl.string(x.t.PVLriT),
                   value: j
                 })]
               })]
@@ -146,7 +146,7 @@ function m(t) {
           }), (0, i.jsx)(l.Wn, {
             messageType: l.QYI.INFO,
             className: u.text,
-            children: x.intl.string(x.t.CUBxDA)
+            children: x.intl.string(x.t.CUBxDB)
           }), null != v && (0, i.jsx)(l.Text, {
             variant: "text-sm/normal",
             color: "text-danger",
@@ -158,7 +158,7 @@ function m(t) {
           direction: r.Z.Direction.HORIZONTAL,
           children: [(0, i.jsx)(l.Button, {
             variant: "secondary",
-            text: x.intl.string(x.t["13/7kZ"]),
+            text: x.intl.string(x.t["13/7kX"]),
             onClick: () => {
               b("DOMAIN"), N(null)
             }
@@ -169,14 +169,14 @@ function m(t) {
               className: u.__invalid_switchButton,
               children: (0, i.jsx)(l.Button, {
                 variant: "secondary",
-                text: x.intl.string(x.t.CkfdNz),
+                text: x.intl.string(x.t.CkfdNx),
                 onClick: () => {
                   b("PROOF_HTTP"), N(null)
                 }
               })
             }), (0, i.jsx)(l.Button, {
               variant: "primary",
-              text: x.intl.string(x.t["13ofGh"]),
+              text: x.intl.string(x.t["13ofGu"]),
               loading: _,
               onClick: f
             })]
@@ -189,14 +189,14 @@ function m(t) {
           children: [(0, i.jsx)(l.Text, {
             tag: "span",
             variant: "text-md/normal",
-            children: x.intl.string(x.t["p4ql7+"])
+            children: x.intl.string(x.t.p4ql7y)
           }), (0, i.jsxs)("div", {
             className: u.httpFileContainer,
             children: [(0, i.jsx)(h, {
-              name: x.intl.string(x.t.GL3q7u),
+              name: x.intl.string(x.t.GL3q7k),
               value: (0, c.F9)(o)
             }), (0, i.jsx)(h, {
-              name: x.intl.string(x.t.PVLriY),
+              name: x.intl.string(x.t.PVLriT),
               value: j
             })]
           }), null != v && (0, i.jsx)(l.Text, {
@@ -210,7 +210,7 @@ function m(t) {
           direction: r.Z.Direction.HORIZONTAL,
           children: [(0, i.jsx)(l.Button, {
             variant: "secondary",
-            text: x.intl.string(x.t["13/7kZ"]),
+            text: x.intl.string(x.t["13/7kX"]),
             onClick: () => {
               b("DOMAIN"), N(null)
             }
@@ -221,14 +221,14 @@ function m(t) {
               className: u.__invalid_switchButton,
               children: (0, i.jsx)(l.Button, {
                 variant: "secondary",
-                text: x.intl.string(x.t.RhJMVV),
+                text: x.intl.string(x.t.RhJMVQ),
                 onClick: () => {
                   b("PROOF_DNS"), N(null)
                 }
               })
             }), (0, i.jsx)(l.Button, {
               variant: "primary",
-              text: x.intl.string(x.t["13ofGh"]),
+              text: x.intl.string(x.t["13ofGu"]),
               loading: _,
               onClick: f
             })]

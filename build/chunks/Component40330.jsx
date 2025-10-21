@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk966390 = require("./966390.js"),
   Chunk403182 = require("./403182.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk782401 = require("./782401.js");
+  Chunk449582 = require("./449582.js");
 let p = e => {
   let {
     filename: t
@@ -23,7 +23,7 @@ let p = e => {
   return (0, r.jsx)("img", {
     className: _.icon,
     src: a,
-    alt: f.intl.formatToPlainString(f.t.g6KdFh, {
+    alt: f.intl.formatToPlainString(f.t.g6KdFv, {
       fileType: i
     }),
     title: i
@@ -36,7 +36,7 @@ function h(e) {
     file: n
   } = e, a = i.useMemo(() => {
     let e = n.items;
-    return null == e ? f.intl.string(f.t.jfKTen) : 1 === e.length && null != e[0].filename ? e[0].filename : f.intl.formatToPlainString(f.t.D0noUl, {
+    return null == e ? f.intl.string(f.t.jfKTes) : 1 === e.length && null != e[0].filename ? e[0].filename : f.intl.formatToPlainString(f.t.D0noUt, {
       count: e.length
     })
   }, [n.items]), o = i.useCallback(() => {
@@ -61,7 +61,7 @@ function h(e) {
           }) : null]
         }), (0, r.jsx)("div", {
           className: _.progressContainer,
-          children: s ? f.intl.string(f.t.jfKTen) : (0, r.jsx)(c.Exd, {
+          children: s ? f.intl.string(f.t.jfKTes) : (0, r.jsx)(c.Exd, {
             className: _.progress,
             percent: n.progress
           })

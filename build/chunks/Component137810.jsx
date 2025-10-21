@@ -21,7 +21,7 @@ function f(e) {
   } = (0, a.ZP)();
   return (0, r.jsx)(i.sNh, {
     id: "video-settings",
-    label: d.intl.string(d.t.LKzQSE),
+    label: d.intl.string(d.t.LKzQSF),
     action: () => {
       (0, l.openUserSettings)(s.n.VOICE_AND_VIDEO_PANEL, {
         section: c.oAB.VOICE,

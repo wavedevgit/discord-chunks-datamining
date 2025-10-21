@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 269464, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk486324 = require("./486324.js"),
   Chunk200299 = require("./200299.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk903102 = require("./903102.js");
+  Chunk747530 = require("./747530.js");
 
 function h(e) {
   let {
@@ -42,7 +42,7 @@ function h(e) {
     }, b) : null,
     disabled: !x,
     onChange: v,
-    hint: p.intl.string(p.t.uPvxqK),
+    hint: p.intl.string(p.t.uPvxqJ),
     onOpenImageSelectModal: () => (0, c.mw)({
       uploadType: g.pC.GUILD_BANNER,
       maxFileSizeBytes: m.B,

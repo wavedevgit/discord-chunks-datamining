@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk732380 = require("./732380.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk918139 = require("./918139.js");
+  Chunk367155 = require("./367155.js");
 let g = Chunk63063.Z.getArticleURL(Chunk981631.BhN.CUSTOM_PROFILES_WISHLIST);
 
 function p(e) {
@@ -29,12 +29,12 @@ function p(e) {
         children: [(0, r.jsx)(a.Text, {
           variant: "text-sm/medium",
           color: "text-primary",
-          children: d.intl.string(d.t.b2nFyM)
+          children: d.intl.string(d.t.b2nFyA)
         }), (0, r.jsx)(a.Text, {
           className: f.menuItemDescription,
           variant: "text-xs/medium",
           color: "text-tertiary",
-          children: d.intl.string(d.t.dw58pK)
+          children: d.intl.string(d.t.dw58pE)
         })]
       }),
       checked: n,
@@ -44,7 +44,7 @@ function p(e) {
       label: (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
         color: "text-primary",
-        children: d.intl.string(d.t.hvVgAQ)
+        children: d.intl.string(d.t.hvVgAZ)
       }),
       icon: a.Gr1,
       action: () => window.open(g)
@@ -62,7 +62,7 @@ function p(e) {
           navId: "wishlist-overflow-menu",
           onSelect: true,
           onClose: t,
-          "aria-label": d.intl.string(d.t.GdNkvL),
+          "aria-label": d.intl.string(d.t.GdNkvG),
           children: m
         })
       },
@@ -86,7 +86,7 @@ function p(e) {
       }({
         buttonRef: u,
         icon: a.xhG,
-        tooltipText: d.intl.string(d.t.UKOtz8),
+        tooltipText: d.intl.string(d.t["UKOtz+"]),
         action: "PRESS_OPTIONS"
       }, e))
     })

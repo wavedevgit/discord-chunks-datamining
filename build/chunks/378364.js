@@ -20,11 +20,11 @@ let u = {
   endTimeMs: 17621892e5,
   isDesktopOnly: true,
   soundpack: Chunk871465.Y.HALLOWEEN,
-  soundpackLabel: Chunk388032.t["+LasFR"],
+  soundpackLabel: Chunk388032.t["+LasFV"],
   appSpinnerSources: {
     webmDark: Chunk668146,
     webmLight: Chunk90696
   },
-  getLoadingTips: () => [Chunk388032.intl.string(Chunk388032.t.ydMZ2t), Chunk388032.intl.string(Chunk388032.t["AL/Soa"]), Chunk388032.intl.string(Chunk388032.t.w2pMur), Chunk388032.intl.string(Chunk388032.t.WB9eZm), Chunk388032.intl.string(Chunk388032.t["rE+3z8"]), Chunk388032.intl.string(Chunk388032.t.qvtjMz), Chunk388032.intl.string(Chunk388032.t.irDT8f), Chunk388032.intl.string(Chunk388032.t.TlJKIS), Chunk388032.intl.string(Chunk388032.t["m+xpaG"]), Chunk388032.intl.string(Chunk388032.t.MElQER), Chunk388032.intl.string(Chunk388032.t.aRr1ur)],
+  getLoadingTips: () => [Chunk388032.intl.string(Chunk388032.t.ydMZ2o), Chunk388032.intl.string(Chunk388032.t["AL/SoZ"]), Chunk388032.intl.string(Chunk388032.t.w2pMut), Chunk388032.intl.string(Chunk388032.t.WB9eZl), Chunk388032.intl.string(Chunk388032.t["rE+3z3"]), Chunk388032.intl.string(Chunk388032.t.qvtjM4), Chunk388032.intl.string(Chunk388032.t.irDT8W), Chunk388032.intl.string(Chunk388032.t.TlJKIQ), Chunk388032.intl.string(Chunk388032.t["m+xpaC"]), Chunk388032.intl.string(Chunk388032.t.MElQEQ), Chunk388032.intl.string(Chunk388032.t.aRr1um)],
   coachmarkDismissibleContent: Chunk704215.z.HOLIDAY_COACHMARK_HALLOWEEN_2025
 }

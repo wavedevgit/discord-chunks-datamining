@@ -14,7 +14,7 @@ var Chunk481060 = require("./481060.js"),
 function c(e, t) {
   return e.state !== o.yb.SEND_FAILED ? null : (0, r.jsx)(i.sNh, {
     id: "resend",
-    label: s.intl.string(s.t.lXHojo),
+    label: s.intl.string(s.t.lXHojr),
     action: () => (0, a.Z)(t, e, true, l.Z.getOptions(e.id))
   })
 }

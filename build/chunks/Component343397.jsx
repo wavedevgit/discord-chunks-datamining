@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 343397, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -24,7 +24,7 @@ function d(e) {
     })
   }, [d]);
   return (0, r.jsx)(a.oil, {
-    label: c.intl.string(c.t.X56QcH),
+    label: c.intl.string(c.t.X56QcF),
     type: "text",
     disabled: !n,
     value: t.name,

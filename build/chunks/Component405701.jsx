@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk923664 = require("./923664.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk917105 = require("./917105.js");
+  Chunk799567 = require("./799567.js");
 
 function g(e) {
   let t, {
@@ -48,7 +48,7 @@ function g(e) {
       let n = "".concat(e.seconds()).padStart(2, "0");
       t = "".concat(e.minutes(), ":").concat(n)
     }
-  } else t = s ? h.intl.string(h.t["8+NidX"]) : h.intl.string(h.t.Icu3bW);
+  } else t = s ? h.intl.string(h.t["8+NidX"]) : h.intl.string(h.t.Icu3bf);
   let v = (0, i.jsxs)(c.Text, {
     className: m.cooldownText,
     variant: "text-xs/medium",

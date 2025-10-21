@@ -15,7 +15,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk290348 = require("./290348.js"),
   Chunk367719 = require("./367719.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk718258 = require("./718258.js");
+  Chunk480872 = require("./480872.js");
 let f = e => {
   let {
     listingName: t
@@ -60,7 +60,7 @@ let p = e => {
       variant: "text-xs/normal",
       color: "interactive-normal",
       className: d.tierPeriod,
-      children: u.intl.format(u.t.isLGyc, {
+      children: u.intl.format(u.t.isLGyX, {
         period: (0, s.JE)({
           interval: g.interval,
           interval_count: g.interval_count

@@ -51,7 +51,7 @@ function b(e, t, n, b) {
       formatInline: true,
       hideSimpleEmbedContent: false
     }).content : C,
-    hint: (e, t) => e && !t ? null : (0, y.Q)((0, O.P)(), S.t.ykjOAA, S.intl.string(S.t.jZkzVF)),
+    hint: (e, t) => e && !t ? null : (0, y.Q)((0, O.P)(), S.t.ykjOAJ, S.intl.string(S.t.jZkzVJ)),
     maxBodyLines: 2,
     renderFooter: (n, r, l) => n && !l ? (0, i.jsx)(g.Z, {
       id: r,

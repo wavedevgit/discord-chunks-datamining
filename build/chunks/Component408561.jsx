@@ -23,22 +23,22 @@ function _(e) {
     transitionState: t,
     onClose: _,
     channel: h
-  } = e, g = (0, u.Z)(O.TL), S = (0, i.e7)([b.default], () => b.default.getUser(h.getRecipientId()));
+  } = e, g = (0, o.Z)(O.TL), S = (0, i.e7)([b.default], () => b.default.getUser(h.getRecipientId()));
   return a.useEffect(() => {
     c.default.track(f.rMx.OPEN_MODAL, {
       type: "DM Mute Feedback Modal"
     })
   }, []), (0, l.jsx)(s.Z, {
     hasCloseButton: true,
-    header: v.intl.string(v.t.SxsBFB),
-    body: v.intl.formatToPlainString(v.t["7kb7z8"], {
+    header: v.intl.string(v.t.SxsBFD),
+    body: v.intl.formatToPlainString(v.t["7kb7z4"], {
       username: null == S ? true : S.username
     }),
     problems: g,
     feedbackProblems: {
       [O.YA.OTHER]: {
-        subheader: v.intl.string(v.t.VQkdtL),
-        hint: v.intl.string(v.t.EG3N9f)
+        subheader: v.intl.string(v.t.VQkdtK),
+        hint: v.intl.string(v.t.EG3N9c)
       }
     },
     onSubmit: function(e) {
@@ -46,11 +46,11 @@ function _(e) {
         problem: t,
         dontShowAgain: a,
         feedback: i,
-        closeClicked: u
+        closeClicked: o
       } = e;
-      a && (0, d.Q3)(r.z.USER_DM_MUTE_FEEDBACK);
-      let s = null == t || u;
-      (0, E.Z)(t, i, s, a), s || (0, o.ZDy)(async () => {
+      a && (0, u.Q3)(r.z.USER_DM_MUTE_FEEDBACK);
+      let s = null == t || o;
+      (0, E.Z)(t, i, s, a), s || (0, d.ZDy)(async () => {
         let {
           default: e
         } = await n.e("14466").then(n.bind(n, 729328));
@@ -72,7 +72,7 @@ function _(e) {
           }
           return e
         }({
-          body: v.intl.string(v.t.sYrCub)
+          body: v.intl.string(v.t.sYrCuZ)
         }, t))
       })
     },

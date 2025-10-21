@@ -13,8 +13,8 @@ var Chunk442837 = require("./442837.js"),
   Chunk409059 = require("./409059.js"),
   Chunk260539 = require("./260539.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk305794 = require("./305794.js"),
-  Chunk739236 = require("./739236.js");
+  Chunk427600 = require("./427600.js"),
+  Chunk105341 = require("./105341.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -62,20 +62,20 @@ function g(e) {
   } = e, h = (0, i.e7)([l.Z], () => l.Z.getGuildTemplate(_));
   if (null == h || h.state === c.Rj.RESOLVING) return (0, r.jsxs)(o.Z, {
     children: [(0, r.jsx)(o.Z.Header, {
-      text: u.intl.string(u.t.Xj87YW)
+      text: u.intl.string(u.t.Xj87Yf)
     }), (0, r.jsx)(o.Z.Body, {
       resolving: true
     })]
   });
   if (h.state === c.Rj.EXPIRED) return (0, r.jsxs)(o.Z, {
     children: [(0, r.jsx)(o.Z.Header, {
-      text: u.intl.string(u.t.C7ZRNz)
+      text: u.intl.string(u.t.C7ZRNw)
     }), (0, r.jsxs)(o.Z.Body, {
       children: [(0, r.jsx)(o.Z.Icon, {
         expired: true
       }), (0, r.jsx)(o.Z.Info, {
         expired: true,
-        title: u.intl.string(u.t.A6MwXF)
+        title: u.intl.string(u.t.A6MwXE)
       })]
     })]
   });
@@ -83,7 +83,7 @@ function g(e) {
       (0, a.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("10778"), n.e("10570")]).then(n.bind(n, 766775));
+        } = await Promise.all([n.e("10778"), n.e("86015")]).then(n.bind(n, 766775));
         return t => (0, r.jsx)(e, m(p({}, t), {
           guildTemplate: h
         }))
@@ -92,16 +92,16 @@ function g(e) {
     E = __OVERLAY__ ? (0, r.jsx)(o.Z.Button, {
       isDisabled: true,
       color: o.Z.Button.Colors.PRIMARY,
-      children: u.intl.string(u.t.W7NTWl)
+      children: u.intl.string(u.t.W7NTWm)
     }) : (0, r.jsx)(o.Z.Button, {
       onClick: g,
       submitting: h.state === c.Rj.ACCEPTING,
       color: o.Z.Button.Colors.GREEN,
-      children: u.intl.string(u.t["a3Gl+f"])
+      children: u.intl.string(u.t["a3Gl+e"])
     });
   return (0, r.jsxs)(o.Z, {
     children: [(0, r.jsx)(o.Z.Header, {
-      text: u.intl.string(u.t.kAvFkJ)
+      text: u.intl.string(u.t.kAvFkO)
     }), (0, r.jsxs)(o.Z.Body, {
       children: [(0, r.jsxs)("div", {
         className: f.headerLine,
@@ -109,7 +109,7 @@ function g(e) {
           className: d.icon
         }), (0, r.jsx)(o.Z.Info, {
           title: h.name,
-          children: u.intl.format(u.t.cGXXHB, {
+          children: u.intl.format(u.t.cGXXHL, {
             usageCount: String(null != (t = h.usageCount) ? t : 0)
           })
         })]

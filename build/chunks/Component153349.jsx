@@ -1,4 +1,4 @@
-/** Chunk was on 63962 **/
+/** Chunk was on 91053 **/
 /** chunk id: 153349, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => M
@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk618896 = require("./618896.jsx"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk285421 = require("./285421.js");
+  Chunk112848 = require("./112848.js");
 
 function N(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -69,7 +69,7 @@ let w = Chunk647438.memo(function(e) {
       chatOpen: n
     } = e, i = (0, r.jsx)(m.ZP.Icon, {
       icon: u.Dio,
-      tooltip: P.intl.string(P.t.cpT0Cg),
+      tooltip: P.intl.string(P.t.cpT0Cq),
       onClick: t
     });
     return (0, r.jsxs)(m.ZP, {
@@ -80,9 +80,9 @@ let w = Chunk647438.memo(function(e) {
       children: [(0, r.jsx)(m.ZP.Icon, {
         icon: u.V9,
         disabled: true,
-        "aria-label": P.intl.string(P.t.TYZgzc)
+        "aria-label": P.intl.string(P.t.TYZgzW)
       }), (0, r.jsx)(m.ZP.Title, {
-        children: P.intl.string(P.t.TYZgzc)
+        children: P.intl.string(P.t.TYZgzW)
       })]
     })
   }),
@@ -92,9 +92,9 @@ let w = Chunk647438.memo(function(e) {
       channel: l,
       participant: a,
       tempDisableOnInit: s = false
-    } = e, m = i.useRef(null), [j, v] = i.useState(s);
+    } = e, m = i.useRef(null), [O, v] = i.useState(s);
     (0, f.ZP)(() => {
-      if (!j) return;
+      if (!O) return;
       let e = setTimeout(() => v(false), 1e3);
       return () => clearTimeout(e)
     });
@@ -103,9 +103,9 @@ let w = Chunk647438.memo(function(e) {
     let {
       isMobile: E,
       status: Z
-    } = (0, c.cj)([O.Z], () => ({
-      isMobile: O.Z.isMobileOnline(a.user.id),
-      status: O.Z.getStatus(a.user.id, S)
+    } = (0, c.cj)([j.Z], () => ({
+      isMobile: j.Z.isMobileOnline(a.user.id),
+      status: j.Z.getStatus(a.user.id, S)
     })), w = (0, c.e7)([_.ZP], () => _.ZP.getMember(S, a.user.id)), A = (0, b.X7)(l.guild_id, null == w ? true : w.userId, null != (t = null == w ? true : w.colorStrings) ? t : null), D = i.useMemo(() => ({
       [S]: [a.user.id]
     }), [S, a.user.id]);
@@ -115,7 +115,7 @@ let w = Chunk647438.memo(function(e) {
         (0, p.jW)(e, async () => {
           let {
             default: e
-          } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("19848")]).then(n.bind(n, 757387));
+          } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("52021")]).then(n.bind(n, 757387));
           return t => (0, r.jsx)(e, R(N({}, t), {
             user: a.user,
             guildId: S,
@@ -165,22 +165,22 @@ let w = Chunk647438.memo(function(e) {
       }), (0, r.jsxs)("div", {
         className: T.buttonContainer,
         children: [(0, r.jsx)(d.u, {
-          text: L ? P.intl.string(P.t.h9rsTU) : P.intl.string(P.t.f0T7hI),
+          text: L ? P.intl.string(P.t.h9rsTd) : P.intl.string(P.t.f0T7hI),
           asContainer: true,
           children: (0, r.jsx)(u.hU, {
             onClick: function() {
               (0, x.DT)(l, a.user.id, false)
             },
-            disabled: L || j,
+            disabled: L || O,
             icon: u.Lrb,
             variant: "secondary",
-            "aria-label": L ? P.intl.string(P.t.h9rsTU) : P.intl.string(P.t.f0T7hI)
+            "aria-label": L ? P.intl.string(P.t.h9rsTd) : P.intl.string(P.t.f0T7hI)
           })
         }), (0, r.jsx)(d.u, {
-          text: P.intl.string(P.t.moABMz),
+          text: P.intl.string(P.t.moABMy),
           asContainer: true,
           children: (0, r.jsx)(u.hU, {
-            "aria-label": P.intl.string(P.t.moABMz),
+            "aria-label": P.intl.string(P.t.moABMy),
             onClick: function() {
               (0, x.DT)(l, a.user.id, true)
             },
@@ -196,24 +196,24 @@ let w = Chunk647438.memo(function(e) {
       channel: t
     } = e, [n, i] = (0, S.h)(t.id);
     return (0, r.jsx)(u.rsf, {
-      label: P.intl.string(P.t.GYCh0d),
+      label: P.intl.string(P.t.GYCh0W),
       checked: n,
       onChange: i
     })
   }),
   L = Chunk647438.memo(function() {
     return (0, Chunk951288.jsxs)("div", {
-      className: Chunk285421.emptyStateContainer,
+      className: Chunk112848.emptyStateContainer,
       children: [(0, Chunk951288.jsx)(Chunk618896.Z, {}), (0, Chunk951288.jsx)(Chunk481060.Text, {
-        className: Chunk285421.emptyStateTitle,
+        className: Chunk112848.emptyStateTitle,
         variant: "text-lg/semibold",
         color: "header-primary",
-        children: Chunk388032.intl.string(Chunk388032.t["7R24mZ"])
+        children: Chunk388032.intl.string(Chunk388032.t["7R24mX"])
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
-        className: Chunk285421.emptyStateBody,
+        className: Chunk112848.emptyStateBody,
         variant: "text-sm/normal",
         color: "header-secondary",
-        children: Chunk388032.intl.string(Chunk388032.t.Rpr2s7)
+        children: Chunk388032.intl.string(Chunk388032.t.Rpr2s0)
       })]
     })
   });
@@ -223,7 +223,7 @@ function M(e) {
     channel: t,
     toggleRequestToSpeakSidebar: n,
     chatOpen: i
-  } = e, l = (0, v.Fd)(t.id), s = [+!!(0, c.e7)([j.Z], () => j.Z.can(Z.Pl.MANAGE_CHANNELS, t) || j.Z.can(Z.Pl.MANAGE_ROLES, t)), Math.max(1, l.length)];
+  } = e, l = (0, v.Fd)(t.id), s = [+!!(0, c.e7)([O.Z], () => O.Z.can(Z.Pl.MANAGE_CHANNELS, t) || O.Z.can(Z.Pl.MANAGE_ROLES, t)), Math.max(1, l.length)];
   return (0, r.jsxs)("div", {
     className: a()(T.container, {
       [T.chatOpen]: i
@@ -277,9 +277,9 @@ function M(e) {
           className: T.listTitle,
           variant: "text-xs/bold",
           color: "header-secondary",
-          children: l.length > 0 ? P.intl.formatToPlainString(P.t["5z7q5e"], {
+          children: l.length > 0 ? P.intl.formatToPlainString(P.t["5z7q5a"], {
             numHands: l.length
-          }) : P.intl.string(P.t.TYZgzc)
+          }) : P.intl.string(P.t.TYZgzW)
         }, "participants-section") : null
       }
     })]

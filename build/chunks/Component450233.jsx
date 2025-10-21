@@ -16,15 +16,15 @@ class g extends(a = Chunk647438.PureComponent) {
   getText(e, t) {
     if (429 === e.status) switch (t) {
       case "SHORT":
-        return f.intl.string(f.t.T15lqq);
+        return f.intl.string(f.t.T15lqn);
       case "LONG":
-        return f.intl.string(f.t.XFShdH)
+        return f.intl.string(f.t.XFShdK)
     }
     switch (t) {
       case "SHORT":
-        return f.intl.string(f.t["+XstBw"]);
+        return f.intl.string(f.t["+XstB0"]);
       case "LONG":
-        return f.intl.string(f.t.epyCur)
+        return f.intl.string(f.t.epyCuh)
     }
   }
   componentWillUnmount() {

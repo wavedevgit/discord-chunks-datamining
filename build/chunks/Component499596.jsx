@@ -13,7 +13,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk471445 = require("./471445.js"),
   Chunk5192 = require("./5192.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk661197 = require("./661197.js");
+  Chunk339762 = require("./339762.js");
 
 function x(e) {
   let {
@@ -44,14 +44,14 @@ function x(e) {
       let r = function(e, n) {
         let t = n.id,
           l = n.guild_id;
-        return e.length <= 1 ? null : 2 === e.length ? d.intl.formatToPlainString(d.t.MlgLFx, {
+        return e.length <= 1 ? null : 2 === e.length ? d.intl.formatToPlainString(d.t.MlgLF2, {
           nickname0: u.ZP.getName(l, t, e[0]),
           nickname1: u.ZP.getName(l, t, e[1])
-        }) : 3 === e.length ? d.intl.formatToPlainString(d.t.sihix8, {
+        }) : 3 === e.length ? d.intl.formatToPlainString(d.t.sihixx, {
           nickname0: u.ZP.getName(l, t, e[0]),
           nickname1: u.ZP.getName(l, t, e[1]),
           nickname2: u.ZP.getName(l, t, e[2])
-        }) : d.intl.formatToPlainString(d.t["824IXV"], {
+        }) : d.intl.formatToPlainString(d.t["824IXR"], {
           nickname0: u.ZP.getName(l, t, e[0]),
           nickname1: u.ZP.getName(l, t, e[1]),
           remainingCount: e.length - 2

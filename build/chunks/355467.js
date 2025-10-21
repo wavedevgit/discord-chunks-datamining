@@ -302,7 +302,7 @@ function V(e) {
 
 function H(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
-    n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : C.intl.string(C.t.khEaRE);
+    n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : C.intl.string(C.t.khEaRI);
   return Y(e, t, n, {
     tags: {
       source: "payment_elements"
@@ -312,7 +312,7 @@ function H(e) {
 
 function Y(e) {
   let t, n, r = !(arguments.length > 1) || true === arguments[1] || arguments[1],
-    i = arguments.length > 2 && true !== arguments[2] ? arguments[2] : C.intl.string(C.t.khEaRE),
+    i = arguments.length > 2 && true !== arguments[2] ? arguments[2] : C.intl.string(C.t.khEaRI),
     a = arguments.length > 3 && true !== arguments[3] ? arguments[3] : {};
   if (V(e)) {
     var o;

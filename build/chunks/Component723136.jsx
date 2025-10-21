@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 723136, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -13,8 +13,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk434404 = require("./434404.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk304726 = require("./304726.js"),
-  Chunk984734 = require("./984734.js");
+  Chunk833540 = require("./833540.js"),
+  Chunk776853 = require("./776853.js");
 async function p(e, t) {
   return await c.Z.saveGuild(e.id, {
     moderatorReportingEnabled: t
@@ -31,8 +31,8 @@ function f(e) {
     children: [(0, r.jsx)("div", {
       className: m.setupContainer,
       children: (0, r.jsx)(a.rsf, {
-        label: u.intl.string(g.default["/xIz7O"]),
-        description: u.intl.string(g.default.uUMXys),
+        label: u.intl.string(g.default["/xIz7G"]),
+        description: u.intl.string(g.default.uUMXyu),
         badge: "beta",
         checked: f,
         onChange: b,

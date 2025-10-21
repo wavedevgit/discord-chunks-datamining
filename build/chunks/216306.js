@@ -1,11 +1,11 @@
 /** Chunk was on 89442 **/
 /** chunk id: 216306, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Fo: () => S,
+  Fo: () => L,
   KY: () => N,
   Uo: () => _,
   fU: () => C,
-  qw: () => T,
+  qw: () => M,
   tn: () => P
 }), require("./290780.js");
 var Chunk647438 = require("./647438.js"),
@@ -32,11 +32,11 @@ var Chunk647438 = require("./647438.js"),
   Chunk490897 = require("./490897.js"),
   Chunk388032 = require("./388032.jsx");
 
-function L(e, t) {
+function S(e, t) {
   e.index = t
 }
 
-function S(e, t, n, l) {
+function L(e, t, n, l) {
   l = l.toLowerCase();
   let a = (0, g.g)(e),
     s = r.useCallback((e, t) => !(a && e.channel.hasFlag(j.zZ.IS_GUILD_RESOURCE_CHANNEL)) && e.channel.type !== y.d4z.GUILD_DIRECTORY && (0 === t.length || i()(t, e.channel.name.toLowerCase()) || e.channel.topic.toLowerCase().includes(t)), [a]);
@@ -50,7 +50,7 @@ function S(e, t, n, l) {
         channel: r
       } = n;
       "null" === r.id && (e.null = t.null.filter(e => s(e, l))), e[r.id] = t[r.id].filter(e => s(e, l))
-    }), e._categories = t._categories.filter(t => "null" === t.channel.id || 0 === l.length || e[t.channel.id].length > 0), (0, d.Z)(e._categories, e).forEach(L), e
+    }), e._categories = t._categories.filter(t => "null" === t.channel.id || 0 === l.length || e[t.channel.id].length > 0), (0, d.Z)(e._categories, e).forEach(S), e
   }, [t, n, s, l])
 }
 
@@ -120,7 +120,7 @@ function C(e) {
   return null == a ? 0 : 0 === a.length ? i.index + 2 - l : a[a.length - 1].index + 2 - l
 }
 
-function T(e) {
+function M(e) {
   var t;
   return E.intl.formatToPlainString(E.t["8N0BHR"], {
     timeAgo: s()(b.default.extractTimestamp(null != (t = O.ZP.lastMessageId(e)) ? t : e)).fromNow()

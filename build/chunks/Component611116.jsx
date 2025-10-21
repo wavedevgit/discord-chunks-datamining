@@ -13,8 +13,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk572995 = require("./572995.js"),
   Chunk42373 = require("./42373.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk885257 = require("./885257.js"),
-  Chunk411200 = require("./411200.js");
+  Chunk642650 = require("./642650.js"),
+  Chunk595475 = require("./595475.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -109,7 +109,7 @@ let E = Chunk647438.memo(function(e) {
     } = (0, l.ZP)();
     return (0, r.jsx)(g, p({
       boxLayout: t,
-      title: u.intl.string(u.t.LRmNAg),
+      title: u.intl.string(u.t.LRmNAl),
       startLeftAligned: e.enablePremiumBrandRefreshDesign
     }, e))
   }),
@@ -119,7 +119,7 @@ let E = Chunk647438.memo(function(e) {
     } = (0, l.ZP)();
     return (0, r.jsx)(g, p({
       boxLayout: t,
-      title: u.intl.string(u.t.EnzW2N),
+      title: u.intl.string(u.t.EnzW2H),
       includeSideGradient: !e.enablePremiumBrandRefreshDesign,
       startLeftAligned: true
     }, e))

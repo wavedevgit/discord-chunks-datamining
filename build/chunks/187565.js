@@ -1,4 +1,4 @@
-/** Chunk was on 11324 **/
+/** Chunk was on 74240 **/
 /** chunk id: 187565, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   KJ: () => g,
@@ -36,7 +36,7 @@ function v(e, t, n) {
       let e = u.termRules.map(e => e.value.trim()).filter(e => "" !== e);
       r = [{
         field_type: f.QJ.TERMS,
-        label: p.intl.string(p.t["9suSIC"]),
+        label: p.intl.string(p.t["9suSIA"]),
         values: e,
         required: true
       }]

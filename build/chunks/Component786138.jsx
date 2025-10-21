@@ -47,7 +47,7 @@ function y(e) {
     (null == C ? true : C.startsWith("prepicked:")) ? f.Z.getMediaEngine().eachConnection(e => {
       e.context === E.Yn.STREAM && e.presentDesktopSourcePicker("window")
     }): v()
-  }, [C, v]), U = null != (t = null == C ? true : C.startsWith("prepicked:")) && t, G = (0, _.isMac)() && _.isPlatformEmbedded && U && (null != (n = null == N ? true : N.windows.length) ? n : 0) > 0, B = (0, _.isMac)() && _.isPlatformEmbedded && U && (null != (y = null == N ? true : N.applications.length) ? y : 0) > 0, Z = G ? b.intl.string(b.t.qDK8gY) : B ? b.intl.string(b.t["3m8w+f"]) : S ? b.intl.string(b.t.eAktHh) : b.intl.string(b.t.qntSam), F = i.useCallback(() => {
+  }, [C, v]), U = null != (t = null == C ? true : C.startsWith("prepicked:")) && t, G = (0, _.isMac)() && _.isPlatformEmbedded && U && (null != (n = null == N ? true : N.windows.length) ? n : 0) > 0, B = (0, _.isMac)() && _.isPlatformEmbedded && U && (null != (y = null == N ? true : N.applications.length) ? y : 0) > 0, Z = G ? b.intl.string(b.t.qDK8gQ) : B ? b.intl.string(b.t["3m8w+Q"]) : S ? b.intl.string(b.t.eAktHv) : b.intl.string(b.t.qntSal), F = i.useCallback(() => {
     let {
       preset: e,
       resolution: t,
@@ -72,18 +72,18 @@ function y(e) {
   }, [C, R]);
   if (null == O) return (0, r.jsx)(o.sNh, {
     id: "share-your-screen",
-    label: b.intl.string(b.t.fjBNo6),
+    label: b.intl.string(b.t.fjBNo1),
     icon: o.hGI,
     action: v
   });
   let V = _.isPlatformEmbedded ? (0, r.jsx)(o.sNh, {
       id: "stream-settings",
-      label: b.intl.string(b.t.ytAD9f),
+      label: b.intl.string(b.t.ytAD9d),
       children: L
     }) : null,
     H = M ? (0, r.jsx)(o.S89, {
       id: "stream-settings-audio-enable",
-      label: S ? b.intl.string(b.t.af2Tw8) : b.intl.string(b.t.ZJEHt7),
+      label: S ? b.intl.string(b.t.af2Tw1) : b.intl.string(b.t.ZJEHt7),
       checked: R,
       action: F
     }) : null,
@@ -96,7 +96,7 @@ function y(e) {
     W = (0, r.jsx)(o.sNh, {
       id: "stop-streaming",
       color: "danger",
-      label: b.intl.string(b.t.S5anIS),
+      label: b.intl.string(b.t.S5anIc),
       icon: o.g5r,
       action: () => (0, u.Z)(O)
     });

@@ -12,13 +12,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk422034 = require("./422034.jsx"),
   Chunk268685 = require("./268685.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk94723 = require("./94723.js");
+  Chunk612574 = require("./612574.js");
 
 function f(e) {
   let {
     affinities: t,
     className: n
-  } = e, a = e => null != e.globalName ? e.globalName : e.username, f = i.useMemo(() => t.length > 1 ? u.intl.formatToPlainString(u.t.HaVk0d, {
+  } = e, a = e => null != e.globalName ? e.globalName : e.username, f = i.useMemo(() => t.length > 1 ? u.intl.formatToPlainString(u.t.HaVk0X, {
     username: a(t[0]),
     numFriends: t.length - 1
   }) : "", [t]);

@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk239091 = require("./239091.js"),
   Chunk726521 = require("./726521.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk923915 = require("./923915.js");
+  Chunk595342 = require("./595342.js");
 
 function f(e) {
   let {
@@ -41,7 +41,7 @@ function f(e) {
         children: (0, r.jsxs)(o.kSQ, {
           children: [(0, r.jsx)(o.sNh, {
             id: "flag-widget",
-            label: u.intl.string(u.t.D4GvHB),
+            label: u.intl.string(u.t.D4GvHE),
             action: p,
             color: "danger",
             icon: o.U65

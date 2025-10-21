@@ -1,4 +1,4 @@
-/** Chunk was on 63962 **/
+/** Chunk was on 91053 **/
 /** chunk id: 605953, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -30,7 +30,7 @@ function h(e) {
         channel_type: t.type
       }), (0, a.e7)()
     },
-    tooltip: n ? p.intl.string(p.t.nGs3kJ) : p.intl.string(p.t.bIm2sL),
+    tooltip: n ? p.intl.string(p.t.nGs3kO) : p.intl.string(p.t.bIm2sF),
     selected: n,
     "aria-expanded": n
   })

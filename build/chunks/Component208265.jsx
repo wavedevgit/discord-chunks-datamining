@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk670199 = require("./670199.jsx"),
   Chunk800530 = require("./800530.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk218314 = require("./218314.js");
+  Chunk149390 = require("./149390.js");
 
 function h(n) {
   let {
@@ -26,7 +26,7 @@ function h(n) {
   } = n, [C, j] = a.useState(h), {
     classification: _,
     isDsaEligible: E
-  } = (0, r.YG)(null != e ? e : p.lds), v = (null == _ ? true : _.is_spam) || false, I = (null == _ ? true : _.is_coppa) || false, T = null == _ ? true : _.appeal_ingestion_type;
+  } = (0, r.YG)(null != e ? e : p.lds), I = (null == _ ? true : _.is_spam) || false, v = (null == _ ? true : _.is_coppa) || false, T = null == _ ? true : _.appeal_ingestion_type;
   a.useEffect(() => {
     j(h)
   }, [j, h]);
@@ -62,8 +62,8 @@ function h(n) {
             classification: _,
             onClose: S,
             onNext: A,
-            isSpam: v,
-            isCoppa: I,
+            isSpam: I,
+            isCoppa: v,
             appealIngestionType: T,
             isDsaEligible: E
           })

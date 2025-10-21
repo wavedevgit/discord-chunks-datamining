@@ -17,9 +17,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk60482 = require("./60482.js"),
   Chunk587065 = require("./587065.js"),
   Chunk986841 = require("./986841.js"),
-  Chunk45765 = require("./45765.js"),
+  Chunk470658 = require("./470658.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk581385 = require("./581385.js");
+  Chunk71124 = require("./71124.js");
 
 function N(t) {
   let {
@@ -42,9 +42,9 @@ function N(t) {
     g = i.useMemo(() => {
       switch (n.status) {
         case l.V.STARTING:
-          return v.intl.string(h.default.ud4hxc);
+          return v.intl.string(h.default.ud4hxY);
         case l.V.OFFLINE:
-          return v.intl.string(h.default["ABAm7+"]);
+          return v.intl.string(h.default.ABAm7x);
         default:
           return
       }
@@ -58,7 +58,7 @@ function N(t) {
       }
     },
     title: n.name,
-    subtitle: v.intl.string(h.default["4HqfaW"]),
+    subtitle: v.intl.string(h.default["4HqfaU"]),
     size: "md",
     transitionState: N,
     onClose: r,
@@ -76,7 +76,7 @@ function N(t) {
             children: (0, s.jsx)(p.Text, {
               variant: "text-xs/semibold",
               color: "text-secondary",
-              children: v.intl.formatToPlainString(h.default.oSU1fH, {
+              children: v.intl.formatToPlainString(h.default.oSU1fF, {
                 step: e + 1
               })
             })
@@ -97,7 +97,7 @@ function N(t) {
           })
         }), (0, s.jsx)(p.Button, {
           variant: T ? "active" : "primary",
-          text: T ? v.intl.string(v.t["t5VZ8/"]) : v.intl.string(v.t.OpuAlJ),
+          text: T ? v.intl.string(v.t.t5VZ88) : v.intl.string(v.t.OpuAlK),
           onClick: S,
           icon: p.TIy
         })]

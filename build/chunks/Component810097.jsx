@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk510659 = require("./510659.jsx"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk877912 = require("./877912.js");
+  Chunk734623 = require("./734623.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -62,14 +62,14 @@ function y(e, t) {
 let O = 2700,
   v = "> -# *",
   I = {
-    [Chunk228168.n_.AVATAR]: () => Chunk388032.intl.string(Chunk388032.t["fEUP/v"]),
-    [Chunk228168.n_.STATUS]: () => Chunk388032.intl.string(Chunk388032.t.TKdBCw),
-    [Chunk228168.n_.ACTIVITY]: () => Chunk388032.intl.string(Chunk388032.t.bSe71N)
+    [Chunk228168.n_.AVATAR]: () => Chunk388032.intl.string(Chunk388032.t["fEUP/i"]),
+    [Chunk228168.n_.STATUS]: () => Chunk388032.intl.string(Chunk388032.t.TKdBC8),
+    [Chunk228168.n_.ACTIVITY]: () => Chunk388032.intl.string(Chunk388032.t.bSe71F)
   },
   T = {
-    [Chunk228168.n_.AVATAR]: () => Chunk388032.intl.string(Chunk388032.t.xvN0fX),
-    [Chunk228168.n_.STATUS]: () => Chunk388032.intl.string(Chunk388032.t["C/vzS0"]),
-    [Chunk228168.n_.ACTIVITY]: () => Chunk388032.intl.string(Chunk388032.t.ObfsSk)
+    [Chunk228168.n_.AVATAR]: () => Chunk388032.intl.string(Chunk388032.t.xvN0fV),
+    [Chunk228168.n_.STATUS]: () => Chunk388032.intl.string(Chunk388032.t["C/vzS7"]),
+    [Chunk228168.n_.ACTIVITY]: () => Chunk388032.intl.string(Chunk388032.t.ObfsSj)
   };
 
 function S(e) {
@@ -123,7 +123,7 @@ function S(e) {
     }),
     children: [(0, r.jsx)(l.u, {
       asContainer: true,
-      text: h.intl.string(h.t.nhaI4e),
+      text: h.intl.string(h.t.nhaI4b),
       shouldShow: a,
       delay: 0,
       "aria-label": false,
@@ -139,7 +139,7 @@ function S(e) {
       })
     }), (0, r.jsx)(l.u, {
       asContainer: true,
-      text: h.intl.string(h.t.RmDYKC),
+      text: h.intl.string(h.t.RmDYKK),
       shouldShow: a,
       delay: 0,
       "aria-label": false,
@@ -160,7 +160,7 @@ function S(e) {
       };
       return (0, r.jsx)(l.u, {
         asContainer: true,
-        text: h.intl.string(h.t.UKOtz8),
+        text: h.intl.string(h.t["UKOtz+"]),
         shouldShow: a,
         delay: 0,
         "aria-label": false,
@@ -169,7 +169,7 @@ function S(e) {
         }, e), {
           onClick: t,
           className: m.button,
-          "aria-label": h.intl.string(h.t.UKOtz8),
+          "aria-label": h.intl.string(h.t["UKOtz+"]),
           children: (0, r.jsx)(c.xhG, {
             size: "xs",
             className: m.icon

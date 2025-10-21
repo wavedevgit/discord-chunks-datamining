@@ -20,25 +20,25 @@ var Chunk951288 = require("./951288.js"),
   Chunk786040 = require("./786040.js"),
   Chunk215023 = require("./215023.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk687983 = require("./687983.js");
+  Chunk310582 = require("./310582.js");
 let v = e => {
   let {
     shelf: t,
     handleTransition: n,
     tab: i
-  } = e, v = (0, o.e7)([c.default], () => c.default.getCurrentUser()), E = g.Z.useConfig({
+  } = e, v = (0, s.e7)([c.default], () => c.default.getCurrentUser()), E = g.Z.useConfig({
     location: "ShelfBlock"
   }).showCardsV2, x = (0, u.sp)(), O = l.useMemo(() => t.rankedSkuIds.map(e => d.Z.getProduct(e)).filter(e => null != e), [t.rankedSkuIds]), S = (0, p.l)(O).slice(0, 4);
   return null == v ? null : (0, r.jsxs)("div", {
     className: a()(b.shelfBlockContainer, b.centeredSection),
     children: [(0, r.jsxs)("div", {
       className: b.blockHeader,
-      children: [(0, r.jsx)(s.Heading, {
+      children: [(0, r.jsx)(o.Heading, {
         variant: "heading-lg/semibold",
         children: t.name
-      }), (0, r.jsx)(s.Button, {
+      }), (0, r.jsx)(o.Button, {
         variant: "secondary",
-        text: m.intl.formatToPlainString(m.t.bc9RBA, {
+        text: m.intl.formatToPlainString(m.t.bc9RBE, {
           category_name: t.name
         }),
         onClick: () => n("shelf block see all", t.categorySkuId, true, true)

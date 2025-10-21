@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk697426 = require("./697426.js"),
   Chunk603074 = require("./603074.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk135867 = require("./135867.js");
+  Chunk596806 = require("./596806.js");
 let p = [54, 8, 8, 8];
 
 function h(e) {
@@ -37,7 +37,7 @@ function h(e) {
         children: f.intl.string(f.t.aThJz8)
       }), (0, r.jsx)(l.Text, {
         variant: "text-sm/normal",
-        children: f.intl.string(f.t.stGFAw)
+        children: f.intl.string(f.t.stGFA3)
       })]
     }), (0, r.jsx)("div", {
       className: _.searchAndSound,

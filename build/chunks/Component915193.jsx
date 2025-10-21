@@ -1,4 +1,4 @@
-/** Chunk was on 92775 **/
+/** Chunk was on 49062 **/
 /** chunk id: 915193, original params: e,n,r (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -13,7 +13,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk700582 = require("./700582.jsx"),
   Chunk594174 = require("./594174.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk284532 = require("./284532.js");
+  Chunk452438 = require("./452438.js");
 
 function h(e) {
   let {
@@ -57,7 +57,7 @@ function b(e, n) {
   return null == r || n.ownerId !== r.id || e.id === r.id ? null : (0, t.jsx)(o.sNh, {
     id: "make-dm-owner",
     color: "danger",
-    label: u.intl.string(u.t["6t3CyM"]),
+    label: u.intl.string(u.t["6t3CyN"]),
     action: () => {
       (0, o.h7j)(i => {
         var c, b;
@@ -80,9 +80,9 @@ function b(e, n) {
           return e
         }({
           bodyClassName: m.confirmModal,
-          header: u.intl.string(u.t.WZoUsr),
-          confirmText: u.intl.string(u.t["cY+Ooa"]),
-          cancelText: u.intl.string(u.t["ETE/oK"]),
+          header: u.intl.string(u.t.WZoUsm),
+          confirmText: u.intl.string(u.t["cY+Oob"]),
+          cancelText: u.intl.string(u.t["ETE/oC"]),
           onConfirm: () => l.Z.setDMOwner(n.id, e.id)
         }, i), b = b = {
           children: [(0, t.jsx)(h, {
@@ -104,7 +104,7 @@ function b(e, n) {
             })]
           }), (0, t.jsx)(o.Text, {
             variant: "text-md/normal",
-            children: u.intl.format(u.t.gsBb3N, {
+            children: u.intl.format(u.t.gsBb3F, {
               usernameHook: (n, r) => (0, t.jsx)(a.Z, {
                 usernameIcon: (0, t.jsx)(o.qEK, {
                   className: m.avatarIcon,

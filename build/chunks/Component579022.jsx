@@ -7,7 +7,7 @@ var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk28664 = require("./28664.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk252475 = require("./252475.js");
+  Chunk41440 = require("./41440.js");
 let o = Math.ceil(2 * Math.PI * 20),
   s = e => {
     let {
@@ -15,13 +15,13 @@ let o = Math.ceil(2 * Math.PI * 20),
       used: n
     } = e, s = Math.max(0, Math.min(1, n / t)), c = "".concat(Math.floor(100 * s), "%");
     return (0, r.jsx)(i.u, {
-      text: l.intl.formatToPlainString(l.t["2eoRMj"], {
+      text: l.intl.formatToPlainString(l.t["2eoRMh"], {
         used: c
       }),
       children: (0, r.jsxs)("div", {
         className: a.wrapper,
         role: "progressbar",
-        "aria-label": l.intl.formatToPlainString(l.t["2eoRMj"], {
+        "aria-label": l.intl.formatToPlainString(l.t["2eoRMh"], {
           used: c
         }),
         children: [(0, r.jsxs)("svg", {

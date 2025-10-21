@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk924540 = require("./924540.jsx"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk318402 = require("./318402.js");
+  Chunk716651 = require("./716651.js");
 let h = e => {
   let {
     isSelected: t,
@@ -22,7 +22,7 @@ let h = e => {
   return (i.useEffect(() => {
     t && l === o.z.CHURN_DISCOUNT_PREMIUM_TAB_BADGE && h(d.L.TAKE_ACTION)
   }, [t, h, l]), l === o.z.CHURN_DISCOUNT_PREMIUM_TAB_BADGE) ? (0, r.jsx)(u._y, {
-    badgeCopy: p.intl.format(p.t.AYcXGR, {
+    badgeCopy: p.intl.format(p.t.AYcXGW, {
       discountOfferAmount: n.discount.amount
     }).toString(),
     isTabSelected: t,
@@ -38,7 +38,7 @@ let h = e => {
     }), (0, r.jsx)(s.Text, {
       variant: "eyebrow",
       color: "text-secondary",
-      children: p.intl.format(p.t.AYcXGR, {
+      children: p.intl.format(p.t.AYcXGW, {
         discountOfferAmount: n.discount.amount
       })
     })]

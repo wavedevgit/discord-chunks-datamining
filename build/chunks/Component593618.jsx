@@ -39,8 +39,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk938475 = require("./938475.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk102647 = require("./102647.js"),
-  Chunk395530 = require("./395530.js");
+  Chunk132789 = require("./132789.js"),
+  Chunk78480 = require("./78480.js");
 
 function G(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -204,7 +204,7 @@ function W(e) {
     variant: "text-xs/normal",
     color: "text-muted",
     className: n,
-    children: k.intl.string(k.t.fpKdS0)
+    children: k.intl.string(k.t.fpKdS1)
   }) : (0, r.jsx)(v.Z, {
     muteConfig: t,
     className: n
@@ -246,13 +246,13 @@ function K(e) {
 function z(e) {
   switch (e) {
     case E.wB.SUBMITTED:
-      return k.intl.string(k.t["9KFC9/"]);
+      return k.intl.string(k.t["9KFC98"]);
     case E.wB.REJECTED:
-      return k.intl.string(k.t["TQY/RU"]);
+      return k.intl.string(k.t["TQY/Rd"]);
     case E.wB.APPROVED:
-      return k.intl.string(k.t.WXHcq6);
+      return k.intl.string(k.t.WXHcq5);
     default:
-      return k.intl.string(k.t.fjHFCw)
+      return k.intl.string(k.t.fjHFC8)
   }
 }
 
@@ -297,12 +297,12 @@ function X(e) {
       className: j.invitesDisabledTooltip,
       color: "header-secondary",
       variant: "text-sm/medium",
-      children: k.intl.string(k.t["2n0/Fh"])
+      children: k.intl.string(k.t["2n0/Fk"])
     }) : null, d ? (0, r.jsx)(u.Text, {
       className: j.viewAsRolesWarning,
       color: "text-default",
       variant: "text-xs/normal",
-      children: k.intl.string(k.t["5LwN8/"])
+      children: k.intl.string(k.t["5LwN89"])
     }) : f]
   })
 }

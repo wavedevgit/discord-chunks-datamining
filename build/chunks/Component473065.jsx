@@ -1,4 +1,4 @@
-/** Chunk was on 63962 **/
+/** Chunk was on 91053 **/
 /** chunk id: 473065, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -23,7 +23,7 @@ function f(e) {
   } = e, f = (0, i.e7)([d.ZP], () => d.ZP.getSection(t.id, null == t ? true : t.isDM())), g = (0, o.ZP)(t.getRecipientId()), m = (0, c.Z)(), b = f === p.ULH.PROFILE && m;
   return (0, r.jsx)(u.JO, {
     disabled: !m || n,
-    tooltip: !m || n ? h.intl.string(h.t.YneDgI) : b ? h.intl.string(h.t.niD64e) : h.intl.string(h.t["+FAsHh"]),
+    tooltip: !m || n ? h.intl.string(h.t.YneDgF) : b ? h.intl.string(h.t.niD64e) : h.intl.string(h.t["+FAsHq"]),
     icon: l.z65,
     onClick: () => {
       (0, s.TY)({

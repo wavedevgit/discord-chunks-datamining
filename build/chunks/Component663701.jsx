@@ -66,8 +66,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk474936 = require("./474936.js"),
   Chunk46140 = require("./46140.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk412297 = require("./412297.js"),
-  Chunk734306 = require("./734306.js");
+  Chunk660886 = require("./660886.js"),
+  Chunk686918 = require("./686918.js");
 
 function ef(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -157,7 +157,7 @@ let em = e => {
         selected: t,
         route: ea.Z5c.FRIENDS,
         icon: m.iFz,
-        text: eu.intl.string(eu.t.TdEu5e),
+        text: eu.intl.string(eu.t.TdEu5X),
         onMouseEnter: () => {
           g(true)
         },
@@ -201,7 +201,7 @@ let em = e => {
         selected: t,
         route: ea.Z5c.ME_ACTIVITY,
         icon: m.g8d,
-        text: eu.intl.string(eu.t.IC5Anp)
+        text: eu.intl.string(eu.t.IC5Ann)
       }, n, i))
     })
   },
@@ -215,7 +215,7 @@ let em = e => {
       selected: t,
       route: ea.Z5c.APPLICATION_LIBRARY,
       icon: m.vqy,
-      text: eu.intl.string(eu.t.cw57am)
+      text: eu.intl.string(eu.t.cw57ar)
     }, i, l), {
       children: (0, r.jsx)(el.Z, {
         className: a()(ep.downloadProgressCircle, {
@@ -225,7 +225,7 @@ let em = e => {
     }))
   },
   eE = () => (0, Chunk951288.jsx)("li", {
-    className: Chunk734306.createDMButtonContainer,
+    className: Chunk686918.createDMButtonContainer,
     children: (0, Chunk951288.jsx)(Chunk518311.l, {
       fullWidth: true,
       text: Chunk388032.intl.string(Chunk388032.t["6Urw1t"]),
@@ -252,7 +252,7 @@ let em = e => {
       selected: t,
       route: ea.Z5c.MESSAGE_REQUESTS,
       icon: m._XJ,
-      text: eu.intl.string(eu.t.e7GWjY),
+      text: eu.intl.string(eu.t.e7GWjQ),
       onClick: l
     }, n), {
       children: (0, r.jsx)(eO, {})
@@ -295,7 +295,7 @@ let em = e => {
             return t => (0, r.jsx)(e, ef({}, t))
           })
         },
-        "aria-label": eu.intl.string(eu.t.cpT0Cg),
+        "aria-label": eu.intl.string(eu.t.cpT0Cq),
         icon: m.Dio
       })
     }) : i > 0 ? (0, r.jsx)("div", {
@@ -320,12 +320,12 @@ let em = e => {
     })
   },
   eC = () => (0, Chunk951288.jsxs)("div", {
-    className: Chunk734306.directMessagesHeader,
+    className: Chunk686918.directMessagesHeader,
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/semibold",
-      children: Chunk388032.intl.string(Chunk388032.t.YUU0RE)
+      children: Chunk388032.intl.string(Chunk388032.t.YUU0RF)
     }), (0, Chunk951288.jsx)("div", {
-      className: Chunk734306.directMessagesButton,
+      className: Chunk686918.directMessagesButton,
       children: (0, Chunk951288.jsx)(Chunk518311.Z, {
         tooltip: Chunk388032.intl.string(Chunk388032.t["6Urw1t"]),
         location: "DirectMessagesHeader-CreateDMButton"
@@ -366,7 +366,7 @@ let eT = Chunk647438.memo(function(e) {
   }).friendsTab;
   return (0, r.jsxs)("nav", {
     className: ep.privateChannels,
-    "aria-label": eu.intl.string(eu.t.ZH9aPz),
+    "aria-label": eu.intl.string(eu.t.ZH9aP4),
     children: [_ ? (0, r.jsx)(eC, {}) : (0, r.jsx)(Y.Z, {
       childRef: O,
       tutorialId: "direct-messages",
@@ -384,7 +384,7 @@ let eT = Chunk647438.memo(function(e) {
           fullWidth: true,
           onClick: eS,
           children: (0, r.jsx)(C.Z, {
-            children: eu.intl.string(eu.t.LzcpeX)
+            children: eu.intl.string(eu.t.LzcpeZ)
           })
         })
       })
@@ -440,7 +440,7 @@ let eT = Chunk647438.memo(function(e) {
 
 function eP() {
   return (0, Chunk951288.jsx)("div", {
-    className: Chunk734306.sectionDivider
+    className: Chunk686918.sectionDivider
   })
 }
 

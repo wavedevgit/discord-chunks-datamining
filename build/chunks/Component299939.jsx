@@ -13,9 +13,9 @@ var Chunk28664 = require("./28664.jsx"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
-  Chunk62222 = require("./62222.js"),
+  Chunk592186 = require("./592186.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk365875 = require("./365875.js");
+  Chunk679101 = require("./679101.js");
 
 function g(e) {
   let {
@@ -23,7 +23,7 @@ function g(e) {
     onSurpriseMe: n,
     onClose: g,
     canApply: h
-  } = e, x = (0, s.m)(u.PremiumTypes.TIER_2), _ = (0, l.jsx)(r.Button, {
+  } = e, x = (0, s.m)(u.PremiumTypes.TIER_2), b = (0, l.jsx)(r.Button, {
     variant: "secondary",
     size: "md",
     onClick: n,
@@ -36,16 +36,16 @@ function g(e) {
         }
       }
     },
-    text: m.intl.string(p.default.NOGFdn)
-  }), b = (0, l.jsxs)("div", {
+    text: m.intl.string(p.default.NOGFds)
+  }), _ = (0, l.jsxs)("div", {
     className: f.subscriberButtonContainer,
-    children: [_, (0, l.jsx)(o.u, {
-      text: m.intl.string(p.default.cVTpnp),
+    children: [b, (0, l.jsx)(o.u, {
+      text: m.intl.string(p.default.cVTpnj),
       shouldShow: !h,
       children: (0, l.jsx)(r.Button, {
         onClick: t,
         disabled: !h,
-        text: m.intl.string(m.t["1Qm829"]),
+        text: m.intl.string(m.t["1Qm822"]),
         variant: "primary",
         size: "md",
         fullWidth: true
@@ -56,7 +56,7 @@ function g(e) {
     children: [(0, l.jsxs)("div", {
       className: f.descriptionContainer,
       children: [(0, l.jsx)(o.u, {
-        text: m.intl.string(m.t["5AFxuL"]),
+        text: m.intl.string(m.t["5AFxuK"]),
         children: (0, l.jsx)(r.SrA, {
           size: "md",
           color: r.TVs.colors.ICON_PRIMARY
@@ -65,7 +65,7 @@ function g(e) {
         variant: "text-md/medium",
         color: "text-default",
         className: f.description,
-        children: m.intl.format(p.default.PWf0xc, {
+        children: m.intl.format(p.default.PWf0xS, {
           onClickNitro: () => {
             c.default.track(d.rMx.DISPLAY_NAME_STYLES_NITRO_CLICKED), (0, i.$)(g)
           }
@@ -73,7 +73,7 @@ function g(e) {
       })]
     }), (0, l.jsxs)("div", {
       className: f.buttonContainer,
-      children: [_, (0, l.jsx)(a.Z, {
+      children: [b, (0, l.jsx)(a.Z, {
         premiumModalAnalyticsLocation: {
           section: d.jXE.DISPLAY_NAME_STYLES_MODAL_FOOTER,
           object: d.qAy.PREMIUM_UPSELL_BUTTON
@@ -85,6 +85,6 @@ function g(e) {
   return (0, l.jsx)(r.mzw, {
     "data-migration-pending": true,
     className: f.footer,
-    children: x ? b : S
+    children: x ? _ : S
   })
 }

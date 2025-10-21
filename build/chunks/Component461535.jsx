@@ -45,7 +45,7 @@ function O(n) {
   }(n);
   return (0, r.jsx)(l.sNh, {
     id: "mark-channel-read",
-    label: h.intl.string(h.t.e6RscX),
+    label: h.intl.string(h.t.e6RscS),
     action: function() {
       (0, c.U6)(n, {
         section: b.jXE.CHANNEL_CONTEXT_MENU,

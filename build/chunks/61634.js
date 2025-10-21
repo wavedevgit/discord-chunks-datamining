@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 61634, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -44,8 +44,8 @@ function S(e) {
     N = (0, l.NX)(P),
     {
       guildHasVoice: Z,
-      guildHasVideo: T,
-      selectedVoiceChannelHasVideo: w
+      guildHasVideo: w,
+      selectedVoiceChannelHasVideo: T
     } = (0, i.cj)([O.Z, v.Z, m.Z, b.Z, g.Z], () => {
       var t;
       let n = O.Z.getVoiceChannelId(),
@@ -97,7 +97,7 @@ function S(e) {
       E = l && null != (r = null == (n = g.Z.getChannel(i)) ? true : n.isGuildStageVoice()) && r,
       P = !!l && null != f.Z.getActiveStreamForUser(A, e),
       R = (0, s.aK)(f.Z.getAllApplicationStreams()).some(t => t.guildId === e),
-      D = l && w,
+      D = l && T,
       L = (() => {
         if (N) return I.length > 0;
         for (let e of I) {
@@ -107,7 +107,7 @@ function S(e) {
         returnfalse
       })(),
       M = o.ZP.getEmbeddedActivitiesForGuild(e).length > 0;
-    return l ? (c = true, h = (null == S ? true : S.channel_id) === i, m = E, _ = D, y = P, v = M) : (c = Z, h = null != S, m = x, _ = T, y = R, v = L), {
+    return l ? (c = true, h = (null == S ? true : S.channel_id) === i, m = E, _ = D, y = P, v = M) : (c = Z, h = null != S, m = x, _ = w, y = R, v = L), {
       audio: c,
       video: _,
       screenshare: y,
@@ -116,5 +116,5 @@ function S(e) {
       activity: v,
       isCurrentUserConnected: l || E
     }
-  }, [e, C, w, A, N, I, S, Z, T])
+  }, [e, C, T, A, N, I, S, Z, w])
 }

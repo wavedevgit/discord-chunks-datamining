@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 354103, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk383793 = require("./383793.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk501668 = require("./501668.js");
+  Chunk977422 = require("./977422.js");
 
 function j(e) {
   let {
@@ -45,16 +45,16 @@ function j(e) {
     ref: n,
     children: [(0, r.jsxs)(a.vwX, {
       className: x.title,
-      children: [b.intl.string(b.t["5XZKy8"]), (0, r.jsx)(p.xl, {
+      children: [b.intl.string(b.t["5XZKy/"]), (0, r.jsx)(p.xl, {
         guild: t
       })]
     }), (0, r.jsx)(a.Text, {
       variant: "text-sm/medium",
       color: "text-secondary",
       className: x.description,
-      children: j ? b.intl.format(b.t["J/v84O"], {
+      children: j ? b.intl.format(b.t["J/v84B"], {
         helpCenterArticle: d.Z.getArticleURL(h.BhN.GUILD_VANITY_URL)
-      }) : b.intl.format(b.t.koklFB, {
+      }) : b.intl.format(b.t.koklFG, {
         helpCenterArticle: d.Z.getArticleURL(h.BhN.GUILD_VANITY_URL)
       })
     }), (0, r.jsx)(f.z, {

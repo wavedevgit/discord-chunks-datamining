@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 919436, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => D
@@ -27,7 +27,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk674552 = require("./674552.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk117000 = require("./117000.js");
+  Chunk514483 = require("./514483.js");
 
 function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -51,7 +51,7 @@ function Z(e) {
   return e
 }
 
-function T(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -63,7 +63,7 @@ function T(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let w = {
+let T = {
   friction: 28,
   tension: 600
 };
@@ -74,9 +74,9 @@ function A(e) {
     case "opacity":
       return Z({
         duration: 150
-      }, w);
+      }, T);
     case "scale":
-      return Z({}, w);
+      return Z({}, T);
     default:
       throw Error("DirectMessage: getSpringConfigs() - Invalid spring ".concat(String(e)))
   }
@@ -194,7 +194,7 @@ class R extends(r = Chunk647438.PureComponent) {
           hovered: !Chunk199902 && Chunk93687,
           selected: !Chunk199902 && require,
           unread: !Chunk199902 && Chunk358221,
-          className: Chunk117000.pill
+          className: Chunk514483.pill
         }), (0, Chunk951288.jsx)(Chunk662146.Z, {
           text: null != exports ? exports : "",
           selected: require,
@@ -234,8 +234,8 @@ class R extends(r = Chunk647438.PureComponent) {
       null != r ? (0, u.jW)(e, async () => {
         let {
           default: e
-        } = await Promise.all([n.e("79695"), n.e("98783"), n.e("56826"), n.e("55599")]).then(n.bind(n, 131404));
-        return n => (0, i.jsx)(e, T(Z({}, n), {
+        } = await Promise.all([n.e("79695"), n.e("98783"), n.e("56826"), n.e("31899")]).then(n.bind(n, 131404));
+        return n => (0, i.jsx)(e, w(Z({}, n), {
           channel: t,
           user: r
         }))
@@ -243,7 +243,7 @@ class R extends(r = Chunk647438.PureComponent) {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("25421")]).then(n.bind(n, 354741));
-        return n => (0, i.jsx)(e, T(Z({}, n), {
+        return n => (0, i.jsx)(e, w(Z({}, n), {
           channel: t,
           selected: false
         }))
@@ -278,7 +278,7 @@ let D = Chunk647438.forwardRef(function(e, t) {
     C = false;
   j && (x = u === S.WtW.VOICE, C = u === S.WtW.VIDEO);
   let E = (0, c.dQu)(c.TVs.modules.guildbar.AVATAR_SIZE);
-  return (0, i.jsx)(R, T(Z({}, e), {
+  return (0, i.jsx)(R, w(Z({}, e), {
     ref: t,
     channelName: r,
     unread: y > 0,

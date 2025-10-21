@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk145022 = require("./145022.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk511473 = require("./511473.js");
+  Chunk322108 = require("./322108.js");
 
 function y(e, t) {
   return null != t && null != t.discord_web && e.id === t.discord_web.id && e.type === t.discord_web.type
@@ -41,21 +41,21 @@ function O(e) {
       size: "md",
       color: "currentColor",
       className: b.copyLinkIcon
-    }), n ? E.intl.string(E.t.GmrIJS) : E.intl.string(E.t.iVzBOj)]
+    }), n ? E.intl.string(E.t.GmrIJY) : E.intl.string(E.t.iVzBOh)]
   }) : null
 }
 
 function v() {
   return (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
     children: [(0, Chunk951288.jsxs)("div", {
-      className: Chunk511473.buildInfo,
+      className: Chunk322108.buildInfo,
       children: [(0, Chunk951288.jsx)("div", {
-        className: o()(Chunk511473.barLoader, Chunk511473.barTitle)
+        className: o()(Chunk322108.barLoader, Chunk322108.barTitle)
       }), (0, Chunk951288.jsx)("div", {
-        className: Chunk511473.barLoader
+        className: Chunk322108.barLoader
       })]
     }), (0, Chunk951288.jsx)("div", {
-      className: Chunk511473.buttonLoader
+      className: Chunk322108.buttonLoader
     })]
   })
 }
@@ -109,19 +109,19 @@ function T(e) {
     discord_web: p,
     discord_developers: g
   } = a.targetBuildOverride, b = null != p ? p : g;
-  l()(null != b, "BuildOverrideEmbed.renderResolved: linkMeta.targetBuildOverride.discord_web or linkMeta.targetBuildOverride.discord_developers should never be null if resolved"), y(b, i) ? (n = E.intl.string(E.t.tX4xrq), t = s, r = "critical-primary") : (n = E.intl.string(E.t.nOunHB), t = o, r = "primary");
+  l()(null != b, "BuildOverrideEmbed.renderResolved: linkMeta.targetBuildOverride.discord_web or linkMeta.targetBuildOverride.discord_developers should never be null if resolved"), y(b, i) ? (n = E.intl.string(E.t.tX4xrt), t = s, r = "critical-primary") : (n = E.intl.string(E.t.nOunHC), t = o, r = "primary");
   let O = () => {
     d.Z.isConnected() ? u.Z.show({
-      title: E.intl.string(E.t.tiu1l5),
-      body: E.intl.string(E.t["zK+lqa"]),
+      title: E.intl.string(E.t.tiu1ly),
+      body: E.intl.string(E.t["zK+lqW"]),
       onConfirm: t,
-      cancelText: E.intl.string(E.t["ETE/oK"]),
-      confirmText: E.intl.string(E.t["QDX/qq"]),
+      cancelText: E.intl.string(E.t["ETE/oC"]),
+      confirmText: E.intl.string(E.t["QDX/qu"]),
       confirmVariant: "critical-primary"
     }) : t()
   };
   return I({
-    subHead: E.intl.string(E.t.RCYGoq),
+    subHead: E.intl.string(E.t.RCYGot),
     buildDetails: b.id,
     buttonClick: O,
     buttonText: n,
@@ -132,7 +132,7 @@ function T(e) {
 
 function S(e) {
   return I({
-    subHead: E.intl.string(E.t.ODXApK),
+    subHead: E.intl.string(E.t.ODXApH),
     variant: "secondary",
     buttonText: "Invalid",
     buildDetails: e,
@@ -146,9 +146,9 @@ function A(e, t, n) {
     className: b.titleRegion,
     children: [(0, r.jsx)("strong", {
       className: b.title,
-      children: null != e && null != e.releaseChannel ? E.intl.formatToPlainString(E.t.bFj63d, {
+      children: null != e && null != e.releaseChannel ? E.intl.formatToPlainString(E.t.bFj63b, {
         releaseChannel: e.releaseChannel
-      }) : E.intl.string(E.t.Wj3LW1)
+      }) : E.intl.string(E.t.Wj3LW4)
     }), (0, r.jsx)(c.Anchor, {
       className: b.infoLink,
       href: p.Z.getArticleURL(g.BhN.BUILD_OVERRIDE_EMBED),

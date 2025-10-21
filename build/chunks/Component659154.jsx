@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk763093 = require("./763093.js"),
+  Chunk359059 = require("./359059.js"),
   Chunk387852 = require("./387852.js");
 let l = e => {
   let {
@@ -29,14 +29,14 @@ let l = e => {
       }), (0, r.jsx)(a.Text, {
         variant: "text-md/normal",
         color: "header-secondary",
-        children: i.intl.string(i.t["/GAO1N"])
+        children: i.intl.string(i.t["/GAO1P"])
       })]
     }), (0, r.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
       className: o.footerButton,
       children: (0, r.jsx)(a.Button, {
         variant: "primary",
-        text: i.intl.string(i.t["7NqTJi"]),
+        text: i.intl.string(i.t["7NqTJn"]),
         onClick: t
       })
     })]

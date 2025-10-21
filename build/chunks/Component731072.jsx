@@ -1,4 +1,4 @@
-/** Chunk was on 99063 **/
+/** Chunk was on 86736 **/
 /** chunk id: 731072, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk434404 = require("./434404.js"),
   Chunk486199 = require("./486199.jsx"),
   Chunk13051 = require("./13051.jsx"),
-  Chunk721257 = require("./721257.js");
+  Chunk66544 = require("./66544.js");
 
 function p(e) {
   let {
@@ -26,9 +26,9 @@ function p(e) {
     canNavigate: x
   } = e, j = o.Z.get(m), v = r.useCallback(async e => {
     x() && (await s.Z.enableIntegration(p.id, e.type, e.id), a.Z.startEditingIntegration(e.id))
-  }, [x, p.id]), y = r.useCallback(e => {
+  }, [x, p.id]), O = r.useCallback(e => {
     x() && (e.id === (null == n ? true : n.id) && a.Z.stopEditingIntegration(), s.Z.disableIntegration(p.id, e.id))
-  }, [x, n, p.id]), O = r.useCallback(e => {
+  }, [x, n, p.id]), y = r.useCallback(e => {
     x() && (e === (null == n ? true : n.id) ? a.Z.stopEditingIntegration() : a.Z.startEditingIntegration(e))
   }, [x, n]);
   return (0, i.jsxs)(i.Fragment, {
@@ -52,8 +52,8 @@ function p(e) {
       guild: p,
       isExpanded: (null == n ? true : n.id) === e.id,
       onEnable: v,
-      onDisable: y,
-      onToggleExpand: () => O(e.id)
+      onDisable: O,
+      onToggleExpand: () => y(e.id)
     }, e.id)), (0, i.jsx)(l.Text, {
       className: u.helpText,
       color: "text-muted",

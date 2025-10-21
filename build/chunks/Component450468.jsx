@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk78839 = require("./78839.js"),
   Chunk74538 = require("./74538.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk451670 = require("./451670.js");
+  Chunk409150 = require("./409150.js");
 async function O(e, t, n, r) {
   let i = (0, E.MY)(e, t);
   await (0, d.bG)(n), await (0, u.Mg)(e, {
@@ -45,18 +45,18 @@ function v(e) {
         children: t
       })
     }), (0, r.jsx)("div", {
-      children: b.intl.string(b.t.DY2CXl)
+      children: b.intl.string(b.t.DY2CXs)
     })]
   })
 }
 
 function I() {
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk451670.body,
+    className: Chunk409150.body,
     children: [(0, Chunk951288.jsx)("div", {
-      className: Chunk451670.uncancelImage
+      className: Chunk409150.uncancelImage
     }), (0, Chunk951288.jsx)("div", {
-      children: Chunk388032.intl.string(Chunk388032.t.G27uHR)
+      children: Chunk388032.intl.string(Chunk388032.t.G27uHe)
     })]
   })
 }
@@ -83,15 +83,15 @@ function T(e) {
         o()((0, E.uV)(e) <= (0, E.uV)(y.additionalPlans), "Uncanceling should not increase the number of guild subscriptions"), await O(y, e, t, d), S(2)
       } catch (t) {
         let e = t instanceof f.HF ? t : new f.HF(t, t.code);
-        R(b.intl.string(e.code === _.SM.BILLING_PAUSE_INVALID_UPDATE ? b.t.dq4vq6 : b.t["5mlOCQ"])), C(false)
+        R(b.intl.string(e.code === _.SM.BILLING_PAUSE_INVALID_UPDATE ? b.t.dq4vq7 : b.t["5mlOCW"])), C(false)
       }
     }, [y, t, d]),
     w = () => {
       switch (T) {
         case 1:
-          return b.intl.string(b.t.l52ih4);
+          return b.intl.string(b.t.l52ih2);
         case 2:
-          return b.intl.string(b.t.H9QUAA);
+          return b.intl.string(b.t.H9QUAB);
         default:
           return ""
       }
@@ -101,19 +101,19 @@ function T(e) {
         case 1:
           return [{
             variant: "secondary",
-            text: b.intl.string(b.t.oEAioK),
+            text: b.intl.string(b.t.oEAioF),
             disabled: A,
             onClick: a
           }, {
             variant: "primary",
-            text: b.intl.string(b.t.etZP4O),
+            text: b.intl.string(b.t.etZP4B),
             loading: A,
             onClick: P
           }];
         case 2:
           return [{
             variant: "primary",
-            text: b.intl.string(b.t.BddRzc),
+            text: b.intl.string(b.t.BddRzS),
             onClick: a
           }];
         default:

@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 99843, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   j: () => _
@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk782562 = require("./782562.js");
+  Chunk782196 = require("./782196.js");
 let b = e => {
     let {
       channel: t
@@ -24,10 +24,10 @@ let b = e => {
     return (0, p.m$)({
       channelId: t.id
     }) ? (0, r.jsx)(l.u, {
-      text: g.intl.string(g.t.QyZ4TU),
+      text: g.intl.string(g.t.QyZ4Td),
       children: (0, r.jsx)(o.tQf, {
         size: "xs",
-        "aria-label": g.intl.string(g.t.VHXh8f),
+        "aria-label": g.intl.string(g.t.VHXh8a),
         color: o.TVs.colors.INTERACTIVE_NORMAL
       })
     }) : null
@@ -39,7 +39,7 @@ let b = e => {
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.u, {
         asContainer: true,
-        text: g.intl.string(g.t["5Q9+/P"]),
+        text: g.intl.string(g.t["5Q9+/L"]),
         position: "bottom",
         children: (0, r.jsxs)(o.P3F, {
           className: m.hoverableContainer,
@@ -94,7 +94,7 @@ let b = e => {
               location: s.Z.HEADER_BAR
             })
           },
-          "aria-label": g.intl.string(g.t["5Q9+/P"]),
+          "aria-label": g.intl.string(g.t["5Q9+/L"]),
           children: [(0, r.jsx)(u.Z, {
             className: m.gdmIcon,
             "aria-hidden": true,

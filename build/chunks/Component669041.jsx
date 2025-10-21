@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk594174 = require("./594174.js"),
   Chunk509212 = require("./509212.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk301210 = require("./301210.js"),
+  Chunk803035 = require("./803035.js"),
   Chunk800010 = require("./800010.js");
 
 function p(e, t, n) {
@@ -64,7 +64,7 @@ function m(e) {
       })
     })
   }, []);
-  let g = "error" === h.status ? d.intl.string(d.t.vjyinp) : "success" === h.status ? d.intl.format(d.t.qP5xYW, {
+  let g = "error" === h.status ? d.intl.string(d.t.vjying) : "success" === h.status ? d.intl.format(d.t.qP5xYc, {
     emailAddress: p,
     emailAddressLink: "mailto:".concat(p)
   }) : true;
@@ -75,11 +75,11 @@ function m(e) {
       type: "image",
       src: _
     },
-    title: "loading" === h.status ? true : d.intl.string(d.t.c8eASE),
+    title: "loading" === h.status ? true : d.intl.string(d.t.c8eASM),
     subtitle: g,
     actions: "loading" === h.status ? true : [{
       variant: "secondary",
-      text: d.intl.string(d.t.cpT0Cg),
+      text: d.intl.string(d.t.cpT0Cq),
       onClick: n
     }],
     children: ["loading" === h.status && (0, r.jsx)(s.$jN, {}), "success" === h.status && (0, r.jsxs)("div", {
@@ -91,7 +91,7 @@ function m(e) {
       }), (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
-        children: d.intl.string(d.t.yb7itb)
+        children: d.intl.string(d.t.yb7itQ)
       })]
     })]
   })

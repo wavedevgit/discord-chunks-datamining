@@ -1,4 +1,4 @@
-/** Chunk was on 63962 **/
+/** Chunk was on 91053 **/
 /** chunk id: 400251, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => N,
@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk16853 = require("./16853.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk708392 = require("./708392.js"),
+  Chunk706800 = require("./706800.js"),
   Chunk883760 = require("./883760.js");
 
 function E(e) {
@@ -74,7 +74,7 @@ let P = e => {
       variant: "text-sm/semibold",
       color: "header-primary",
       className: I.addServerText,
-      children: C.intl.string(C.t.H9jxS0)
+      children: C.intl.string(C.t.H9jxS1)
     })]
   })
 };
@@ -84,14 +84,14 @@ function T(e) {
     entry: t
   } = e, [l, s] = i.useState(false), d = i.useRef(null), {
     canEdit: u
-  } = (0, O.Z)(t);
+  } = (0, j.Z)(t);
   return (0, r.jsx)("div", {
     className: a()(I.actionButtonsContainer, {
       [I.forceButtonsShow]: l
     }),
     children: (0, r.jsxs)(h.ZP, {
       children: [u ? (0, r.jsx)(o.u, {
-        text: C.intl.string(C.t.XnuOvL),
+        text: C.intl.string(C.t.XnuOvN),
         children: (0, r.jsx)(h.zx, {
           onClick: () => {
             (0, c.ZDy)(async () => {
@@ -103,7 +103,7 @@ function T(e) {
               }))
             })
           },
-          "aria-label": C.intl.string(C.t.XnuOvL),
+          "aria-label": C.intl.string(C.t.XnuOvN),
           children: (0, r.jsx)(c.vdY, {
             size: "xs",
             color: "currentColor",
@@ -135,13 +135,13 @@ function T(e) {
             return i
           }(e, ["onClick"]);
           return (0, r.jsx)(o.u, {
-            text: C.intl.string(C.t.UKOtz8),
+            text: C.intl.string(C.t["UKOtz+"]),
             children: (0, r.jsx)(h.zx, Z(E({}, n), {
               onClick: e => {
                 t(e)
               },
               ref: d,
-              "aria-label": C.intl.string(C.t.UKOtz8),
+              "aria-label": C.intl.string(C.t["UKOtz+"]),
               children: (0, r.jsx)(c.xhG, {
                 size: "md",
                 color: "currentColor",
@@ -158,7 +158,7 @@ let N = e => {
   var t;
   let {
     entry: l
-  } = e, [a, o] = i.useState(false), h = null != (0, s.e7)([y.Z], () => y.Z.getGuild(l.guildId)), O = async () => {
+  } = e, [a, o] = i.useState(false), h = null != (0, s.e7)([y.Z], () => y.Z.getGuild(l.guildId)), j = async () => {
     o(true);
     try {
       h ? (0, b.X)(l.guildId) : await u.Z.joinGuild(l.guildId, {
@@ -175,8 +175,8 @@ let N = e => {
     id: l.guildId,
     icon: l.icon,
     size: 40
-  })) ? t : true, P = C.intl.string(C.t.VJlc0d);
-  return h && (P = C.intl.string(C.t.cqWE2d)), (0, r.jsxs)("div", {
+  })) ? t : true, P = C.intl.string(C.t.VJlc0S);
+  return h && (P = C.intl.string(C.t.cqWE2Z)), (0, r.jsxs)("div", {
     className: I.card,
     onContextMenu: e => {
       (0, d.jW)(e, async () => {
@@ -208,7 +208,7 @@ let N = e => {
             children: (0, r.jsx)(f.Z, {
               className: I.icon,
               iconSrc: S,
-              guild: (0, j.e)(l),
+              guild: (0, O.e)(l),
               size: f.Z.Sizes.MEDIUM,
               active: true
             })
@@ -242,7 +242,7 @@ let N = e => {
           }), (0, r.jsx)(c.Text, {
             variant: "text-xs/normal",
             color: "header-secondary",
-            children: C.intl.format(C.t["LC+S+v"], {
+            children: C.intl.format(C.t["LC+S+m"], {
               membersOnline: l.approximatePresenceCount
             })
           })]
@@ -253,7 +253,7 @@ let N = e => {
           }), (0, r.jsx)(c.Text, {
             variant: "text-xs/normal",
             color: "header-secondary",
-            children: C.intl.format(C.t.zRl6XV, {
+            children: C.intl.format(C.t.zRl6XR, {
               count: l.approximateMemberCount
             })
           })]
@@ -263,7 +263,7 @@ let N = e => {
         children: (0, r.jsx)(c.Button, {
           loading: a,
           variant: h ? "secondary" : "active",
-          onClick: O,
+          onClick: j,
           text: P,
           fullWidth: true
         })

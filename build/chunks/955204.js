@@ -19,22 +19,22 @@ var Chunk641033 = require("./641033.js"),
 let s = {
   0: {
     id: 0,
-    name: () => Chunk388032.intl.string(Chunk388032.t.CRLcOz),
-    description: () => Chunk388032.intl.string(Chunk388032.t["9+4/CA"]),
+    name: () => Chunk388032.intl.string(Chunk388032.t["CRLcO+"]),
+    description: () => Chunk388032.intl.string(Chunk388032.t["9+4/CD"]),
     rarity: 0,
     hideDescriptionUntilUnlock: false
   },
   1: {
     id: 1,
     name: () => Chunk388032.intl.string(Chunk388032.t.PlhJTk),
-    description: () => Chunk388032.intl.string(Chunk388032.t["+QxFMj"]),
+    description: () => Chunk388032.intl.string(Chunk388032.t["+QxFMr"]),
     rarity: 1,
     hideDescriptionUntilUnlock: false
   },
   13: {
     id: 13,
-    name: () => Chunk388032.intl.string(Chunk388032.t["+91bDw"]),
-    description: () => Chunk388032.intl.string(Chunk388032.t["6ZakdX"]),
+    name: () => Chunk388032.intl.string(Chunk388032.t["+91bDx"]),
+    description: () => Chunk388032.intl.string(Chunk388032.t["6Zakdf"]),
     rarity: 4,
     hideDescriptionUntilUnlock: true,
     onAction: () => {
@@ -44,90 +44,90 @@ let s = {
   14: {
     id: 14,
     name: () => Chunk388032.intl.string(Chunk388032.t.OdenKS),
-    description: () => Chunk388032.intl.string(Chunk388032.t["06/08P"]),
+    description: () => Chunk388032.intl.string(Chunk388032.t["06/08A"]),
     rarity: 0,
     hideDescriptionUntilUnlock: false
   },
   15: {
     id: 15,
-    name: () => Chunk388032.intl.string(Chunk388032.t["C88+vr"]),
-    description: () => Chunk388032.intl.string(Chunk388032.t.w4SYND),
+    name: () => Chunk388032.intl.string(Chunk388032.t["C88+vm"]),
+    description: () => Chunk388032.intl.string(Chunk388032.t.w4SYNC),
     rarity: 1,
     hideDescriptionUntilUnlock: false
   },
   2: {
     id: 2,
-    name: () => Chunk388032.intl.string(Chunk388032.t["7q1avL"]),
-    description: () => Chunk388032.intl.string(Chunk388032.t.XwAgCA),
+    name: () => Chunk388032.intl.string(Chunk388032.t["7q1avI"]),
+    description: () => Chunk388032.intl.string(Chunk388032.t.XwAgCF),
     rarity: 0,
     hideDescriptionUntilUnlock: false
   },
   3: {
     id: 3,
-    name: () => Chunk388032.intl.formatToMarkdownString(Chunk388032.t.NgKcOj, {}),
-    description: () => Chunk388032.intl.string(Chunk388032.t.jmzQrK),
+    name: () => Chunk388032.intl.formatToMarkdownString(Chunk388032.t.NgKcOi, {}),
+    description: () => Chunk388032.intl.string(Chunk388032.t.jmzQrA),
     rarity: 1,
     hideDescriptionUntilUnlock: false
   },
   4: {
     id: 4,
-    name: () => Chunk388032.intl.string(Chunk388032.t.q3ekQ0),
-    description: () => Chunk388032.intl.string(Chunk388032.t.KDk6IC),
+    name: () => Chunk388032.intl.string(Chunk388032.t.q3ekQx),
+    description: () => Chunk388032.intl.string(Chunk388032.t.KDk6IG),
     rarity: 0,
     hideDescriptionUntilUnlock: false,
     checkUnlock: e => e.multiplier >= 2
   },
   5: {
     id: 5,
-    name: () => Chunk388032.intl.string(Chunk388032.t.k6Nlxc),
-    description: () => Chunk388032.intl.string(Chunk388032.t["A4Bi5+"]),
+    name: () => Chunk388032.intl.string(Chunk388032.t.k6NlxZ),
+    description: () => Chunk388032.intl.string(Chunk388032.t.A4Bi5z),
     rarity: 1,
     hideDescriptionUntilUnlock: false,
     checkUnlock: e => e.multiplier >= 4
   },
   6: {
     id: 6,
-    name: () => Chunk388032.intl.string(Chunk388032.t["EPQN5+"]),
-    description: () => Chunk388032.intl.string(Chunk388032.t["NS/Qvb"]),
+    name: () => Chunk388032.intl.string(Chunk388032.t.EPQN54),
+    description: () => Chunk388032.intl.string(Chunk388032.t["NS/QvW"]),
     rarity: 2,
     hideDescriptionUntilUnlock: false,
     checkUnlock: e => e.multiplier >= 5
   },
   7: {
     id: 7,
-    name: () => Chunk388032.intl.string(Chunk388032.t["H/xC9v"]),
-    description: () => Chunk388032.intl.string(Chunk388032.t.NECb4u),
+    name: () => Chunk388032.intl.string(Chunk388032.t["H/xC9h"]),
+    description: () => Chunk388032.intl.string(Chunk388032.t.NECb4t),
     rarity: 2,
     hideDescriptionUntilUnlock: false,
     checkUnlock: e => e.multiplier >= 7
   },
   8: {
     id: 8,
-    name: () => Chunk388032.intl.string(Chunk388032.t["24aD8v"]),
-    description: () => Chunk388032.intl.string(Chunk388032.t.YtKoSU),
+    name: () => Chunk388032.intl.string(Chunk388032.t["24aD8g"]),
+    description: () => Chunk388032.intl.string(Chunk388032.t.YtKoSd),
     rarity: 3,
     hideDescriptionUntilUnlock: true,
     checkUnlock: e => 430 === (0, r.Eo)(e)
   },
   9: {
     id: 9,
-    name: () => Chunk388032.intl.string(Chunk388032.t["vZm48/"]),
-    description: () => Chunk388032.intl.string(Chunk388032.t.QKxjeX),
+    name: () => Chunk388032.intl.string(Chunk388032.t.vZm483),
+    description: () => Chunk388032.intl.string(Chunk388032.t.QKxjeQ),
     rarity: 3,
     hideDescriptionUntilUnlock: true,
     checkUnlock: e => 555 === (0, r.Eo)(e)
   },
   10: {
     id: 10,
-    name: () => Chunk388032.intl.string(Chunk388032.t.SxLn19),
-    description: () => Chunk388032.intl.string(Chunk388032.t["7tuql5"]),
+    name: () => Chunk388032.intl.string(Chunk388032.t.SxLn1y),
+    description: () => Chunk388032.intl.string(Chunk388032.t["7tuql7"]),
     rarity: 3,
     hideDescriptionUntilUnlock: true,
     checkUnlock: e => 898 === (0, r.Eo)(e)
   },
   11: {
     id: 11,
-    name: () => Chunk388032.intl.string(Chunk388032.t.hK1RPj),
+    name: () => Chunk388032.intl.string(Chunk388032.t.hK1RPg),
     description: () => Chunk388032.intl.string(Chunk388032.t.okzLOT),
     rarity: 4,
     hideDescriptionUntilUnlock: true,
@@ -136,39 +136,39 @@ let s = {
   12: {
     id: 12,
     name: () => Chunk388032.intl.string(Chunk388032.t.Pa8olZ),
-    description: () => Chunk388032.intl.string(Chunk388032.t.KSzHjo),
+    description: () => Chunk388032.intl.string(Chunk388032.t.KSzHjj),
     rarity: 4,
     hideDescriptionUntilUnlock: true,
     checkUnlock: e => 2048 === (0, r.Eo)(e)
   },
   16: {
     id: 16,
-    name: () => Chunk388032.intl.string(Chunk388032.t.lXhhWV),
-    description: () => Chunk388032.intl.string(Chunk388032.t.OxvobG),
+    name: () => Chunk388032.intl.string(Chunk388032.t.lXhhWS),
+    description: () => Chunk388032.intl.string(Chunk388032.t.OxvobM),
     rarity: 2,
     hideDescriptionUntilUnlock: true,
     checkUnlock: e => 64 === e.value
   },
   17: {
     id: 17,
-    name: () => Chunk388032.intl.string(Chunk388032.t.M4ErfH),
-    description: () => Chunk388032.intl.string(Chunk388032.t["sjzx+/"]),
+    name: () => Chunk388032.intl.string(Chunk388032.t.M4ErfE),
+    description: () => Chunk388032.intl.string(Chunk388032.t["sjzx+z"]),
     rarity: 3,
     hideDescriptionUntilUnlock: true,
     checkUnlock: e => 88 === e.value
   },
   18: {
     id: 18,
-    name: () => Chunk388032.intl.string(Chunk388032.t.RawXaG),
-    description: () => Chunk388032.intl.string(Chunk388032.t.iOsWLy),
+    name: () => Chunk388032.intl.string(Chunk388032.t.RawXaF),
+    description: () => Chunk388032.intl.string(Chunk388032.t.iOsWL1),
     rarity: 3,
     hideDescriptionUntilUnlock: true,
     checkUnlock: e => 99 === e.value
   },
   19: {
     id: 19,
-    name: () => Chunk388032.intl.string(Chunk388032.t.irv64O),
-    description: () => Chunk388032.intl.string(Chunk388032.t.shGZw8),
+    name: () => Chunk388032.intl.string(Chunk388032.t.irv64I),
+    description: () => Chunk388032.intl.string(Chunk388032.t.shGZwx),
     rarity: 4,
     hideDescriptionUntilUnlock: true,
     checkUnlock: e => 113 === e.value

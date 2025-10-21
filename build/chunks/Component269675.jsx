@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk807152 = require("./807152.js"),
   Chunk176505 = require("./176505.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk214689 = require("./214689.js");
+  Chunk183261 = require("./183261.js");
 
 function P(e) {
   let {
@@ -37,7 +37,7 @@ function P(e) {
     restrictionsLoading: L
   } = (0, f.uP)(t), R = null == n || !Z || A || L;
   (0, u.Tt)({
-    subsection: N.intl.string(N.t["KzCF//"]),
+    subsection: N.intl.string(N.t["KzCF/6"]),
     location: null == n ? true : n.name
   }), (0, c.Z)(l.tq ? "role-subscriptions-overview" : true);
   let D = P && (null == n || !(j || x) || w && !L);
@@ -60,7 +60,7 @@ function P(e) {
         icon: (0, o.GSL)(O.Z),
         "aria-hidden": true
       }), (0, r.jsx)(g.Z.Title, {
-        children: N.intl.string(N.t["KzCF//"])
+        children: N.intl.string(N.t["KzCF/6"])
       })]
     }), (0, r.jsx)("div", {
       id: C.v

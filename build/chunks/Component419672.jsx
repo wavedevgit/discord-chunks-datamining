@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk526761 = require("./526761.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk227134 = require("./227134.js");
+  Chunk328355 = require("./328355.js");
 let E = function(t) {
   let {
     onClose: e,
@@ -28,11 +28,11 @@ let E = function(t) {
   }, [e]), O = s.useCallback(() => {
     E || (g(true), (0, c.Uj)(n).then(() => {
       e(), (0, d.t)({
-        text: x.intl.string(x.t.FhgVWl),
+        text: x.intl.string(x.t.FhgVWi),
         id: "safety-tools-report-false-positive"
       })
     }).catch(() => {
-      g(false), (0, r.showToast)((0, r.createToast)(x.intl.string(x.t.R0RpRU), r.ToastType.FAILURE))
+      g(false), (0, r.showToast)((0, r.createToast)(x.intl.string(x.t.R0RpRX), r.ToastType.FAILURE))
     }))
   }, [n, e, E]);
   return (0, i.jsxs)(T.Z, {
@@ -47,12 +47,12 @@ let E = function(t) {
       children: [(0, i.jsx)(r.Button, {
         onClick: A,
         fullWidth: true,
-        text: x.intl.string(x.t.qpWnyM)
+        text: x.intl.string(x.t.qpWnyC)
       }), (0, i.jsx)(r.Text, {
         variant: "text-sm/normal",
         color: "text-muted",
         className: _.reportFalsePositiveText,
-        children: x.intl.format(x.t["2uYViI"], {
+        children: x.intl.format(x.t["2uYViD"], {
           reportFalsePositiveHook: (t, e) => (0, i.jsx)(r.P3F, {
             className: _.reportFalsePositiveButton,
             tag: "span",

@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk378233 = require("./378233.js"),
   Chunk419922 = require("./419922.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk515528 = require("./515528.js");
+  Chunk695004 = require("./695004.js");
 let E = (0, Chunk624138.Mg)(Chunk477690.Z.EXPRESSION_PICKER_CONSTANTS_EXPRESSION_PICKER_INSPECTOR_BAR_GRAPHIC_PRIMARY_DIMENSIONS),
   b = (0, Chunk624138.Mg)(Chunk477690.Z.EXPRESSION_PICKER_CONSTANTS_EXPRESSION_PICKER_INSPECTOR_BAR_GRAPHIC_SECONDARY_DIMENSIONS),
   y = e => {
@@ -26,14 +26,14 @@ let E = (0, Chunk624138.Mg)(Chunk477690.Z.EXPRESSION_PICKER_CONSTANTS_EXPRESSION
       n = null;
     if (!(0, p.jl)(e) && !(0, p.J8)(e) || (0, p.J8)(e)) {
       let i = u.Z.getGuild(e.guild_id);
-      null != i && (t = m.intl.format(m.t.cZOkbm, {
+      null != i && (t = m.intl.format(m.t.cZOkbs, {
         source: i.name
       }), n = (0, r.jsx)(s.Z, {
         guild: i
       }))
     } else if ((0, p.jl)(e)) {
       let i = f.Z.getStickerPack(e.pack_id);
-      null != i && (t = m.intl.format(m.t.cZOkbm, {
+      null != i && (t = m.intl.format(m.t.cZOkbs, {
         source: i.name
       }), n = (0, r.jsx)(h.Z, {
         size: b,

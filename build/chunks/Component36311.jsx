@@ -1,4 +1,4 @@
-/** Chunk was on 63962 **/
+/** Chunk was on 91053 **/
 /** chunk id: 36311, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk622822 = require("./622822.js"),
   Chunk986035 = require("./986035.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk288395 = require("./288395.js");
+  Chunk118177 = require("./118177.js");
 
 function g(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -64,7 +64,7 @@ function m(e) {
     c.Z.showAgeVerificationGetStartedModal({
       entryPoint: d.cU.NSFW_GUILD
     })
-  }, []), j = (t = g({}, m), n = n = {
+  }, []), O = (t = g({}, m), n = n = {
     guildId: null == l ? true : l.id,
     channelId: a,
     disagreement: h.intl.string(h.t["/g10LC"])
@@ -85,13 +85,13 @@ function m(e) {
         onAgree: _,
         onDisagree: b,
         modalType: f
-      }, j));
+      }, O));
     default:
       return (0, r.jsx)(p.Z, g({
         onAgree: y,
         onDisagree: b,
         modalType: f
-      }, j))
+      }, O))
   }
 }
 let b = function(e) {

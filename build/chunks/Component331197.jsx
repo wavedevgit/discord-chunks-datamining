@@ -1,4 +1,4 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 331197, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -100,9 +100,9 @@ function j(e) {
   function W() {
     (0, d.v)(P, d.d.SOUNDBOARD), E === x.D.SOUNDBOARD ? (null == S || S(true), G()) : (null != E ? (Z(), F()) : Z(), null == S || S(x.D.SOUNDBOARD))
   }
-  let K = r.useRef(null);
+  let q = r.useRef(null);
   return (0, i.jsx)(s.y, {
-    targetElementRef: K,
+    targetElementRef: q,
     shouldShow: H && (E === x.D.SOUNDBOARD || null == E) || E === x.D.SOUNDBOARD,
     animation: s.y.Animation.FADE,
     animationPosition: "top",
@@ -134,10 +134,10 @@ function j(e) {
       })
     },
     children: () => (0, i.jsx)(v.d, {
-      ref: K,
+      ref: q,
       isTrayButton: true,
       themeable: j,
-      label: w ? O.intl.string(O.t["Ox4/zc"]) : M ? O.intl.string(O.t["+YBKYG"]) : R ? O.intl.string(O.t.X1lQlp) : true,
+      label: w ? O.intl.string(O.t["Ox4/zU"]) : M ? O.intl.string(O.t["+YBKYI"]) : R ? O.intl.string(O.t.X1lQli) : true,
       iconComponent: I,
       disabled: L,
       onContextMenu: z,

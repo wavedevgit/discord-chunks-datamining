@@ -1,4 +1,4 @@
-/** Chunk was on 63962 **/
+/** Chunk was on 91053 **/
 /** chunk id: 700483, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => ep
@@ -57,7 +57,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk354459 = require("./354459.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk160103 = require("./160103.js");
+  Chunk769265 = require("./769265.js");
 
 function ei(e) {
   let {
@@ -68,7 +68,7 @@ function ei(e) {
   return i ? null : (0, r.jsx)(N.d, {
     isTrayButton: true,
     isActive: s,
-    label: s ? en.intl.string(en.t.GCimTk) : d ? en.intl.string(en.t.hLbG5O) : en.intl.string(en.t.e4WMv7),
+    label: s ? en.intl.string(en.t.GCimTk) : d ? en.intl.string(en.t.hLbG5N) : en.intl.string(en.t.e4WMvx),
     iconComponent: a.V9,
     onClick: () => {
       (0, f.v)(n, f.d.REQUEST_TO_SPEAK, !s), o()
@@ -110,7 +110,7 @@ function ea(e) {
       (0, H.RK)(t, false), (0, f.v)(n, f.d.SPEAK_ON_STAGE)
     },
     iconComponent: a.Lrb,
-    label: en.intl.string(en.t["8Joh+v"])
+    label: en.intl.string(en.t["8Joh+p"])
   })
 }
 
@@ -118,11 +118,11 @@ function es(e) {
   let {
     channel: t,
     onSelect: n
-  } = e, d = (0, O.bp)(), {
+  } = e, d = (0, j.bp)(), {
     canManageGuildEvent: u
   } = (0, x.XJ)(t), p = (0, l.e7)([z.Z], () => z.Z.getStageInstanceByChannel(t.id), [t.id]), h = (0, l.e7)([y.ZP], () => y.ZP.getGuildScheduledEvent(null == p ? true : p.guild_scheduled_event_id)), {
     suppress: m
-  } = (0, S.Z)(t), b = D.default.getId(), [_] = (0, $.Z)(t), j = V.ZP.isModerator(b, t.id), v = (0, F.B)(t.id), C = u(h), {
+  } = (0, S.Z)(t), b = D.default.getId(), [_] = (0, $.Z)(t), O = V.ZP.isModerator(b, t.id), v = (0, F.B)(t.id), C = u(h), {
     parentAnalyticsLocation: I
   } = (0, c.ZP)(), E = i.useRef(null), Z = () => (function(e) {
     let {
@@ -135,7 +135,7 @@ function es(e) {
     channel: t,
     appContext: d
   });
-  return (j || C) && null != p ? (0, r.jsx)(a.yRy, {
+  return (O || C) && null != p ? (0, r.jsx)(a.yRy, {
     targetElementRef: E,
     renderPopout: e => {
       let {
@@ -144,7 +144,7 @@ function es(e) {
       return (0, r.jsx)(T.Z, {
         children: (0, r.jsx)(a.v2r, {
           navId: "exit-options",
-          "aria-label": en.intl.string(en.t["3Uj+2t"]),
+          "aria-label": en.intl.string(en.t["3Uj+2p"]),
           onClose: i,
           onSelect: n,
           onInteraction: (0, g.u)("End Stage", I, {
@@ -154,7 +154,7 @@ function es(e) {
             id: "end-stage",
             color: "danger",
             action: () => (0, G.Ev)(t, d),
-            label: en.intl.string(en.t.Fmx5y8),
+            label: en.intl.string(en.t["Fmx5y/"]),
             icon: a.k$p
           })
         })
@@ -172,17 +172,17 @@ function es(e) {
       } = t;
       return (0, r.jsx)(R.Z, {
         ref: E,
-        label: en.intl.string(en.t.c6qKws),
+        label: en.intl.string(en.t.c6qKwr),
         onClick: Z,
         onPopoutClick: n,
         popoutOpen: i
       })
     }
   }) : m && !v || _ ? (0, r.jsx)(R.Z, {
-    label: en.intl.string(en.t.SMKyio),
+    label: en.intl.string(en.t.SMKyih),
     onClick: Z
   }) : (0, r.jsx)(R.Z, {
-    label: en.intl.string(en.t.c6qKws),
+    label: en.intl.string(en.t.c6qKwr),
     onClick: Z
   })
 }
@@ -196,7 +196,7 @@ function eo(e) {
   return (0, r.jsx)(N.d, {
     isTrayButton: true,
     iconComponent: a.zRq,
-    label: en.intl.string(en.t.ezLpY2),
+    label: en.intl.string(en.t.ezLpY6),
     onClick: () => {
       (0, f.v)(n, f.d.MOVE_TO_AUDIENCE), (0, H.yi)(t)
     }
@@ -212,7 +212,7 @@ function ec(e) {
   return s ? (0, r.jsx)(N.d, {
     isTrayButton: true,
     isActive: !i,
-    label: i ? en.intl.string(en.t.ScHlfn) : en.intl.string(en.t.zqxfra),
+    label: i ? en.intl.string(en.t.ScHlfl) : en.intl.string(en.t.zqxfrf),
     iconComponent: i ? a.xjP : a.RZG,
     color: i ? true : "green",
     onClick: () => {
@@ -221,7 +221,7 @@ function ec(e) {
   }) : (0, r.jsx)(N.d, {
     isTrayButton: true,
     isActive: o,
-    label: o ? en.intl.string(en.t.zqxfra) : en.intl.string(en.t.ScHlfn),
+    label: o ? en.intl.string(en.t.zqxfrf) : en.intl.string(en.t.ScHlfl),
     iconComponent: o ? a.RZG : a.xjP,
     color: o ? "green" : true,
     onClick: () => {
@@ -239,8 +239,8 @@ let ed = Chunk647438.memo(function(e) {
     selfMute: o,
     mute: f
   } = (0, S.Z)(t), y = (0, F.B)(t.id), _ = (0, l.e7)([m.default], () => null != m.default.getAwaitingRemoteSessionInfo()), {
-    cameraUnavailable: j,
-    enabled: O
+    cameraUnavailable: O,
+    enabled: j
   } = (0, v.Z)(), x = (0, I.Z)(t), {
     limit: N,
     reachedLimit: R
@@ -278,8 +278,8 @@ let ed = Chunk647438.memo(function(e) {
         ref: q,
         centerButton: true,
         hasPermission: x,
-        enabled: O,
-        cameraUnavailable: j,
+        enabled: j,
+        cameraUnavailable: O,
         onChange: E.r,
         onCameraUnavailable: P.Z,
         channelLimitReached: R,
@@ -393,7 +393,7 @@ let ep = Chunk647438.memo(function(e) {
         channelId: null == t ? true : t.id
       }) : null, (0, r.jsx)("div", {
         className: er.separator
-      }), u && s ? (0, r.jsx)(j.Z, {
+      }), u && s ? (0, r.jsx)(O.Z, {
         highlight: true,
         channel: t
       }) : null, (0, r.jsx)("div", {

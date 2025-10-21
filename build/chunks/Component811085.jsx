@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk959562 = require("./959562.jsx"),
   Chunk800530 = require("./800530.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk987086 = require("./987086.js");
+  Chunk498714 = require("./498714.js");
 let m = 36;
 
 function g() {
@@ -43,39 +43,39 @@ function g() {
   }, [b]);
   let y = {
       [Chunk531441.Sn.ALL_GOOD]: {
-        title: Chunk388032.t.uaKrRk,
-        description: Chunk388032.intl.format(Chunk388032.t.pEdBDw, {
+        title: Chunk388032.t.uaKrRi,
+        description: Chunk388032.intl.format(Chunk388032.t.pEdBD4, {
           termsOfService: Chunk800530.sQ.TOS_LINK,
           communityGuidelines: Chunk800530.sQ.COMMUNITY_GUIDELINES
         }),
-        status: Chunk388032.t["/Idfam"],
+        status: Chunk388032.t["/Idfao"],
         Icon: Chunk481060.owK,
         color: Chunk692547.Z.colors.STATUS_POSITIVE
       },
       [Chunk531441.Sn.LIMITED]: {
-        title: Chunk388032.t.epkcmZ,
-        description: Chunk388032.intl.string(Chunk388032.t["774jub"]),
-        status: Chunk388032.t.umleq6,
+        title: Chunk388032.t.epkcmS,
+        description: Chunk388032.intl.string(Chunk388032.t["774juc"]),
+        status: Chunk388032.t.umleq4,
         Icon: Chunk481060.Mgn,
         color: Chunk692547.Z.colors.STATUS_WARNING
       },
       [Chunk531441.Sn.VERY_LIMITED]: {
-        title: Chunk388032.t.crzE2d,
-        description: Chunk388032.intl.string(Chunk388032.t["T/Ufh4"]),
-        status: Chunk388032.t.WBtMHR,
+        title: Chunk388032.t.crzE2X,
+        description: Chunk388032.intl.string(Chunk388032.t["T/Ufh9"]),
+        status: Chunk388032.t.WBtMHf,
         Icon: Chunk481060.Mgn,
         color: Chunk692547.Z.unsafe_rawColors.ORANGE_345
       },
       [Chunk531441.Sn.AT_RISK]: {
-        title: Chunk388032.t.XRNVzM,
-        description: Chunk388032.intl.string(Chunk388032.t["hbH+9f"]),
-        status: Chunk388032.t["7f+4Li"],
+        title: Chunk388032.t.XRNVzO,
+        description: Chunk388032.intl.string(Chunk388032.t["hbH+9S"]),
+        status: Chunk388032.t["7f+4Lg"],
         Icon: Chunk481060.Mgn,
         color: Chunk692547.Z.colors.STATUS_DANGER
       },
       [Chunk531441.Sn.SUSPENDED]: {
-        title: Chunk388032.t.MExFk5,
-        description: Chunk388032.intl.string(Chunk388032.t["2liUvr"]),
+        title: Chunk388032.t.MExFkz,
+        description: Chunk388032.intl.string(Chunk388032.t["2liUvt"]),
         status: Chunk388032.t["0OONGB"],
         Icon: Chunk481060.k$p,
         color: Chunk692547.Z.colors.ICON_MUTED
@@ -89,18 +89,18 @@ function g() {
     } = y[module.state],
     S = Object.keys(y).length;
   return (0, Chunk951288.jsxs)(Chunk481060.Zbd, {
-    className: Chunk987086.container,
+    className: Chunk498714.container,
     outline: false,
     children: [(0, Chunk951288.jsx)("div", {
-      className: Chunk987086.profile,
+      className: Chunk498714.profile,
       children: (0, Chunk951288.jsx)(Chunk959562.Z, {
         user: exports,
         size: Chunk481060.EFr.SIZE_80
       })
     }), (0, Chunk951288.jsxs)("div", {
-      className: Chunk987086.status,
+      className: Chunk498714.status,
       children: [(0, Chunk951288.jsxs)("div", {
-        className: Chunk987086.title,
+        className: Chunk498714.title,
         children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
           color: "header-primary",
           variant: "heading-lg/normal",
@@ -120,12 +120,12 @@ function g() {
           children: v
         })]
       }), (0, Chunk951288.jsxs)("div", {
-        className: Chunk987086.health,
+        className: Chunk498714.health,
         style: {
           height: require
         },
         children: [(0, Chunk951288.jsx)("div", {
-          className: Chunk987086.line
+          className: Chunk498714.line
         }), Object.entries(y).map((t, n) => {
           let [i, a] = t, o = parseInt(i) === e.state;
           return (0, r.jsxs)("div", {

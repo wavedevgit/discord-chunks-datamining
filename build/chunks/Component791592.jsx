@@ -1,4 +1,4 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 791592, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => s
@@ -48,7 +48,7 @@ function s(e) {
     return e
   }({}, c), n = n = {
     iconComponent: r.Dio,
-    label: o.intl.string(o.t.WAI6xs),
+    label: o.intl.string(o.t.WAI6xu),
     onClick: () => l.Z.stopRinging(s.id)
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);

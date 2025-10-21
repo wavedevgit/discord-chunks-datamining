@@ -44,14 +44,14 @@ function E() {
   let [e, t] = (0, Chunk442837.Wu)([Chunk594190.ZP], () => [Chunk594190.ZP.canShowAdminWarning, Chunk594190.ZP.getVisibleGame()], []), n = (0, Chunk442837.e7)([Chunk19780.Z], () => Chunk19780.Z.isConnected(), []), m = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getMode() === Chunk981631.pM4.PUSH_TO_TALK, []), E = null != exports && exports.elevated && require && m && module, b = Chunk647438.useRef(null);
   return Chunk647438.useEffect(() => {
     if (!(0, Chunk865066.s2)(Chunk594190.ZP)) return E ? b.current = (0, Chunk481060.h7j)(e => (0, r.jsx)(l.default, g({
-      title: h.intl.string(h.t.eotlXF),
+      title: h.intl.string(h.t.eotlXE),
       body: h.intl.formatToPlainString(h.t.Lw6KXV, {
         game: null == t ? true : t.name
       }),
-      secondaryConfirmText: h.intl.string(h.t["5E9SBw"]),
+      secondaryConfirmText: h.intl.string(h.t["5E9SB9"]),
       onConfirmSecondary: () => s.Z.clearPTTAdminWarning(),
       onConfirm: () => window.open(_.Z.getArticleURL(p.BhN.PUSH_TO_TALK_ADMINISTRATOR_MODE), "_blank"),
-      confirmText: h.intl.string(h.t.psXQHB)
+      confirmText: h.intl.string(h.t.psXQHP)
     }, e))) : module(), () => {
       module()
     };

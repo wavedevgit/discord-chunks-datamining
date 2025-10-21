@@ -30,13 +30,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk215023 = require("./215023.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk687983 = require("./687983.js");
+  Chunk310582 = require("./310582.js");
 let I = e => {
     var t;
     let {
       handleTransition: n,
       numVisibleItems: i,
-      isFetchingCategories: s,
+      isFetchingCategories: o,
       tab: c
     } = e, {
       noCache: u,
@@ -91,7 +91,7 @@ let I = e => {
         categories: []
       }), (0, r.jsx)(v.Z, {
         isLoading: A,
-        title: c === j.AW.ORBS ? T.intl.string(T.t.dFgeub) : T.intl.string(T.t.NSv5KS),
+        title: c === j.AW.ORBS ? T.intl.string(T.t.dFgeuZ) : T.intl.string(T.t.NSv5KV),
         numVisibleItems: i,
         tab: c
       })]
@@ -101,7 +101,7 @@ let I = e => {
         let u = null,
           d = false;
         switch (e.type) {
-          case o.z.HERO:
+          case s.z.HERO:
             u = (0, r.jsx)(E.Z, {
               isLoading: A,
               handleTransition: n,
@@ -109,47 +109,47 @@ let I = e => {
               tab: c
             }, l);
             break;
-          case o.z.FEATURED:
+          case s.z.FEATURED:
             u = (0, r.jsx)(b.Z, {
               isLoading: A,
               handleTransition: n,
               featuredBlockRecord: e
             }, l);
             break;
-          case o.z.FEED:
+          case s.z.FEED:
             let p = e.sortedSkuIds;
             u = (0, r.jsx)(v.Z, {
-              title: c === j.AW.ORBS ? T.intl.string(T.t.dFgeub) : T.intl.string(T.t.NSv5KS),
-              isLoading: A || s,
+              title: c === j.AW.ORBS ? T.intl.string(T.t.dFgeuZ) : T.intl.string(T.t.NSv5KV),
+              isLoading: A || o,
               numVisibleItems: i,
               sortedSkuIds: p,
-              buttonContainerClassName: (null == t ? true : t.type) === o.z.IMMERSIVE_BANNER ? L.feedblockInteractiveBackground : true,
+              buttonContainerClassName: (null == t ? true : t.type) === s.z.IMMERSIVE_BANNER ? L.feedblockInteractiveBackground : true,
               prioritizeUserDiscounts: c === j.AW.HOME,
               tab: c,
               orbsSupportedOnly: c === j.AW.ORBS
             }, l);
             break;
-          case o.z.WIDE_BANNER:
+          case s.z.WIDE_BANNER:
             u = (0, r.jsx)(y.Z, {
               handleTransition: n,
               wideBannerBlock: e,
               tab: c
             }, l);
             break;
-          case o.z.SHELF:
+          case s.z.SHELF:
             u = (0, r.jsx)(O.Z, {
               handleTransition: n,
               shelf: e,
               tab: c
             }, l);
             break;
-          case o.z.COUNTDOWN_TIMER:
+          case s.z.COUNTDOWN_TIMER:
             u = (0, r.jsx)(m.J, {
               countdownTimerBlock: e,
               isVisible: S
             }, l), d = true;
             break;
-          case o.z.IMMERSIVE_BANNER:
+          case s.z.IMMERSIVE_BANNER:
             u = (0, r.jsx)(x.Z, {
               immersiveBannerBlock: e,
               onVisibilityChange: e => k(!e)
@@ -176,7 +176,7 @@ let I = e => {
       tab: n,
       transitionState: i
     } = e, a = l.useRef(null), {
-      handleScroll: o
+      handleScroll: s
     } = (0, c.z)(a, n), g = (0, h.R)(), p = (0, d.sp)(), [f, C] = l.useState(j.IV), [_, m] = l.useState(false);
     return l.useEffect(() => {
       if (null != a.current) {
@@ -190,10 +190,10 @@ let I = e => {
           null == t || t.removeEventListener("scroll", e)
         }
       }
-    }, [a, f, C, m]), (0, r.jsx)(s.Den, {
+    }, [a, f, C, m]), (0, r.jsx)(o.Den, {
       className: L.shopScroll,
       ref: a,
-      onScroll: o,
+      onScroll: s,
       children: (0, r.jsxs)("div", {
         className: L.shop,
         children: [(0, r.jsxs)("div", {
@@ -205,12 +205,12 @@ let I = e => {
             tab: n
           }), n !== j.AW.CATALOG && f >= 36 && (0, r.jsxs)("div", {
             className: L.endOfFeed,
-            children: [(0, r.jsx)(s.Heading, {
+            children: [(0, r.jsx)(o.Heading, {
               variant: "heading-md/semibold",
-              children: T.intl.string(T.t.Yr70c3)
-            }), (0, r.jsx)(s.Button, {
+              children: T.intl.string(T.t.Yr70c4)
+            }), (0, r.jsx)(o.Button, {
               variant: "primary",
-              text: T.intl.string(T.t.AfrvRE),
+              text: T.intl.string(T.t.AfrvRD),
               onClick: () => {
                 t("shop all button", true, true, false), u.default.track(k.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
                   collectibles_shop_session_id: null == p ? true : p.sessionId,

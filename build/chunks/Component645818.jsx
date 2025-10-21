@@ -63,19 +63,19 @@ class _ extends Chunk647438.PureComponent {
   getTooltip(e, t) {
     switch (e.type) {
       case p.TzF.DONE:
-        if (t) return f.intl.string(f.t.atpo0d);
-        return f.intl.string(f.t.ZCw6zs);
+        if (t) return f.intl.string(f.t.atpo0W);
+        return f.intl.string(f.t.ZCw6zh);
       case p.TzF.CONFLICT:
       case p.TzF.ERROR:
-        return f.intl.string(f.t.ZCw6zs);
+        return f.intl.string(f.t.ZCw6zh);
       case p.TzF.PLANNING:
-        return f.intl.string(f.t.ERQ0VF);
+        return f.intl.string(f.t.ERQ0VA);
       case p.TzF.PREPARING:
-        return f.intl.string(f.t.n5feu7);
+        return f.intl.string(f.t.n5feu3);
       case p.TzF.PUSHING:
-        return f.intl.string(f.t.oCBh0N);
+        return f.intl.string(f.t.oCBh0J);
       case p.TzF.PULLING:
-        return f.intl.string(f.t.RTLNqK);
+        return f.intl.string(f.t.RTLNqC);
       default:
         return null
     }

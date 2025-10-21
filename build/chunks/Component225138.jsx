@@ -1,8 +1,8 @@
 /** Chunk was on 37220 **/
 /** chunk id: 225138, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  S: () => B,
-  default: () => K
+  S: () => K,
+  default: () => B
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -47,7 +47,7 @@ var Chunk374470 = require("./374470.js"),
   Chunk975368 = require("./975368.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function K(e) {
+function B(e) {
   var t, n;
   let l, o, u, d, {
       channel: f,
@@ -72,7 +72,7 @@ function K(e) {
   let _ = null != (n = null == (t = document.getSelection()) ? true : t.toString()) ? n : "";
   return (0, r.jsx)(c.Gt, {
     value: h,
-    children: B({
+    children: K({
       message: g,
       channel: f,
       mediaItem: p,
@@ -89,13 +89,13 @@ function K(e) {
       onSelect: y,
       onClose: a.Zy,
       navId: "message",
-      ariaLabel: z.intl.string(z.t.ChPNkJ),
+      ariaLabel: z.intl.string(z.t.ChPNkN),
       shouldHideMediaOptions: O
     })
   })
 }
 
-function B(e) {
+function K(e) {
   let {
     message: t,
     channel: n,
@@ -103,8 +103,8 @@ function B(e) {
     textSelection: a,
     favoriteableType: s,
     favoriteableId: c,
-    favoriteableName: K,
-    itemHref: B,
+    favoriteableName: B,
+    itemHref: K,
     itemSrc: X,
     itemSafeSrc: W,
     itemTextContent: q,
@@ -118,8 +118,8 @@ function B(e) {
   } = e, en = (0, d.Z)(a), er = (0, b.Z)(a), ei = (0, A.Z)(t, n), el = (0, v.Z)(t, n), ea = (0, P.Z)(t, n), eo = (0, w.Z)(t, n), es = (0, Z.Z)({
     type: s,
     id: c,
-    name: K
-  }), ec = (0, R.Z)(t, n), eu = (0, I.Z)(t, n), ed = (0, N.Z)(t), ef = (0, j.Z)(t, n), eg = (0, E.Z)(t, n), eb = (0, x.Z)(t, n), ep = (0, D.Z)(t, n), eO = (0, _.Z)(t, n), ey = (0, C.ZP)(t), em = (0, C.wY)(t), eh = (0, C.eH)(t), ev = (0, L.Z)(t, n), ej = (0, g.Z)(null != B ? B : X, q, t, {
+    name: B
+  }), ec = (0, R.Z)(t, n), eu = (0, I.Z)(t, n), ed = (0, N.Z)(t), ef = (0, j.Z)(t, n), eg = (0, E.Z)(t, n), eb = (0, x.Z)(t, n), ep = (0, D.Z)(t, n), eO = (0, _.Z)(t, n), ey = (0, C.ZP)(t), em = (0, C.wY)(t), eh = (0, C.eH)(t), ev = (0, L.Z)(t, n), ej = (0, g.Z)(null != K ? K : X, q, t, {
     shouldHideMediaOptions: et
   }), eE = (0, f.Z)(W, t, {
     shouldHideMediaOptions: et,
@@ -127,7 +127,7 @@ function B(e) {
     originalContentType: null == i ? true : i.originalContentType
   }), eS = (0, F.Z)(t, i), e_ = (0, u.Z)({
     id: t.id,
-    label: z.intl.string(z.t.zBoHlZ),
+    label: z.intl.string(z.t.zBoHlf),
     shiftId: "".concat(t.channel_id, "-").concat(t.id)
   }), eP = (0, M.Z)(t, n), eZ = (0, T.Z)(t, n), eT = (0, k.Z)(t, n), eI = (0, y.Z)(a, n.getGuildId()), ew = (0, m.Z)(t), eA = (0, S.Z)(t), eN = (0, G.Z)(t, n), ex = (0, H.Z)(t), eD = (0, h.Z)(t, n), eM = (0, O.Z)({
     commandType: o.yU.MESSAGE,

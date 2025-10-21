@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 263155, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -36,7 +36,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk231338 = require("./231338.js"),
   Chunk295907 = require("./295907.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk815096 = require("./815096.js");
+  Chunk859267 = require("./859267.js");
 
 function L(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -169,13 +169,13 @@ let G = "WELCOME_CHANNEL",
             size: "xxs",
             color: "currentColor"
           }), (0, r.jsx)("span", {
-            children: I ? P : D.intl.string(D.t.zFuCsL)
+            children: I ? P : D.intl.string(D.t.zFuCsF)
           })]
         })]
       }), (0, r.jsx)(g.hU, {
         variant: "icon-only",
         icon: g.XHJ,
-        "aria-label": D.intl.string(D.t.JYBc3N),
+        "aria-label": D.intl.string(D.t.JYBc3K),
         onClick: R
       })]
     })
@@ -231,14 +231,14 @@ let G = "WELCOME_CHANNEL",
     return null == t ? null : (0, r.jsxs)("div", {
       children: [(0, r.jsx)(g.Heading, {
         variant: "heading-lg/semibold",
-        children: D.intl.string(D.t["2rkmDg"])
+        children: D.intl.string(D.t["2rkmDr"])
       }), (0, r.jsx)("div", {
         className: A.notice,
         children: (0, r.jsxs)(g.Text, {
           variant: "text-md/normal",
           children: [(0, r.jsx)(N.Z, {
             className: A.noticeIcon
-          }), D.intl.format(D.t.oj2vi4, {
+          }), D.intl.format(D.t["oj2vi+"], {
             onboardingLink: e => (0, r.jsx)(C.Z, {
               onClick: F,
               children: e
@@ -247,7 +247,7 @@ let G = "WELCOME_CHANNEL",
         })
       }), (0, r.jsx)(g.Text, {
         variant: "text-sm/normal",
-        children: D.intl.string(D.t["w2d74+"])
+        children: D.intl.string(D.t.w2d74x)
       }), (0, r.jsx)(P.Z, {
         enabled: S,
         onPreview: (null == E ? true : E.length) === 0 ? true : () => {
@@ -265,8 +265,8 @@ let G = "WELCOME_CHANNEL",
           G(!S)
         } : true,
         animateStatus: b,
-        firstLine: S ? D.intl.string(D.t.JbB7Qk) : D.intl.string(D.t["/bd0Qk"]),
-        secondLine: S ? D.intl.string(D.t["TA1g7+"]) : D.intl.string(D.t.nc6r1N)
+        firstLine: S ? D.intl.string(D.t.JbB7Ql) : D.intl.string(D.t["/bd0Qv"]),
+        secondLine: S ? D.intl.string(D.t.TA1g7z) : D.intl.string(D.t.nc6r1B)
       }), (0, r.jsxs)("div", {
         className: A.previewContainer,
         children: [(0, r.jsxs)("div", {
@@ -280,7 +280,7 @@ let G = "WELCOME_CHANNEL",
           }), (0, r.jsx)(g.Heading, {
             className: A.welcomeTitle,
             variant: "heading-xl/semibold",
-            children: D.intl.format(D.t["0aydCA"], {
+            children: D.intl.format(D.t["0aydCN"], {
               guildName: t.name,
               guildNameHook: (e, n) => (0, r.jsxs)("span", {
                 children: [(0, r.jsx)(_.Z, {
@@ -295,7 +295,7 @@ let G = "WELCOME_CHANNEL",
           }), (0, r.jsx)("div", {
             className: A.descriptionWrapper,
             children: (0, r.jsx)(g.Kx8, {
-              placeholder: D.intl.string(D.t.qzZHaW),
+              placeholder: D.intl.string(D.t.qzZHaX),
               onChange: e => {
                 (0, O.VP)({
                   description: e
@@ -319,8 +319,8 @@ let G = "WELCOME_CHANNEL",
         }), (0, r.jsx)("div", {
           className: A.welcomeChannels,
           children: (0, r.jsx)(g.gNt, {
-            label: D.intl.string(D.t.euJXzc),
-            description: D.intl.string(D.t.VOnnn5),
+            label: D.intl.string(D.t.euJXzT),
+            description: D.intl.string(D.t.VOnnnz),
             children: null == E ? true : E.map((e, n) => (0, r.jsx)(M, {
               guildId: t.id,
               welcomeChannel: e,

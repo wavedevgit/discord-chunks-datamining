@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk358595 = require("./358595.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk69643 = require("./69643.js");
+  Chunk492681 = require("./492681.js");
 let T = 292,
   S = 36,
   A = 48;
@@ -61,7 +61,7 @@ function C(e) {
     }),
     onClick: L,
     style: M,
-    "aria-label": v.intl.string(v.t.dcl9MT),
+    "aria-label": v.intl.string(v.t.dcl9MQ),
     children: [(0, r.jsxs)("div", {
       className: I.cardHeightMeasure,
       ref: f,
@@ -85,7 +85,7 @@ function C(e) {
         variant: "secondary",
         size: "sm",
         onClick: x,
-        text: v.intl.string(v.t.xdCLeH)
+        text: v.intl.string(v.t.xdCLeM)
       })
     }) : null, (0, r.jsxs)("div", {
       className: o()(I.footer, {

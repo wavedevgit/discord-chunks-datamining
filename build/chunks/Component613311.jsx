@@ -48,7 +48,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk73346 = require("./73346.js"),
   Chunk3570 = require("./3570.js"),
   Chunk689796 = require("./689796.jsx"),
-  Chunk978436 = require("./978436.jsx"),
+  Chunk15470 = require("./15470.jsx"),
   Chunk506648 = require("./506648.jsx"),
   Chunk449275 = require("./449275.jsx"),
   Chunk445986 = require("./445986.jsx"),
@@ -63,7 +63,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk186901 = require("./186901.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk868113 = require("./868113.js");
+  Chunk561537 = require("./561537.js");
 
 function eu(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -195,7 +195,7 @@ class ef extends Chunk647438.PureComponent {
       }) : null != t && t.premium ? (0, r.jsxs)(i.Fragment, {
         children: [(0, r.jsx)(j.Z.Icon, {
           icon: p.SrA,
-          "aria-label": es.intl.string(es.t.Ipxkoq)
+          "aria-label": es.intl.string(es.t.Ipxkog)
         }), (0, r.jsx)(et.Z, {
           sku: t
         })]
@@ -303,7 +303,7 @@ class ef extends Chunk647438.PureComponent {
     return (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(I.Z, {
         tag: "h1",
-        children: es.intl.format(es.t.tluX4O, {
+        children: es.intl.format(es.t.tluX4B, {
           name: n.name
         })
       }), (0, r.jsx)(_.Z, {}), (0, r.jsx)(q.Z, {
@@ -400,13 +400,13 @@ class ef extends Chunk647438.PureComponent {
         align: Chunk600164.Z.Align.CENTER,
         justify: Chunk600164.Z.Justify.CENTER,
         children: (0, Chunk951288.jsx)(Chunk481060.$jN, {
-          className: Chunk868113.spinner
+          className: Chunk561537.spinner
         })
       })]
     });
     if (!Chunk120356 && exports.showAgeGate) {
       let n = a ? null : (0, Chunk951288.jsx)("div", {
-        className: Chunk868113.gatedListing,
+        className: Chunk561537.gatedListing,
         children: this.renderListing()
       });
       return (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
@@ -418,7 +418,7 @@ class ef extends Chunk647438.PureComponent {
       })
     }
     return a ? (0, Chunk951288.jsxs)("div", {
-      className: Chunk868113.listingWrapper,
+      className: Chunk561537.listingWrapper,
       children: [(0, Chunk951288.jsx)(Chunk252618.yY, {
         location: module.name
       }), this.renderJsonLD(), (0, Chunk951288.jsx)(Chunk410575.Z, {
@@ -468,7 +468,7 @@ class ef extends Chunk647438.PureComponent {
       null != e && null != t && (0, p.ZDy)(async () => {
         let {
           default: i
-        } = await Promise.all([n.e("7654"), n.e("28297")]).then(n.bind(n, 560114));
+        } = await Promise.all([n.e("7654"), n.e("89772")]).then(n.bind(n, 560114));
         return n => (0, r.jsx)(i, ep(ed({}, n), {
           guild: t,
           channel: e,
@@ -481,7 +481,7 @@ class ef extends Chunk647438.PureComponent {
         guild: t
       } = this.props;
       return null != e && null != t && (w.Z.can(ea.Plq.CREATE_INSTANT_INVITE, t) || null != t.vanityURLCode) ? (0, r.jsx)(d.zx, {
-        "aria-label": es.intl.string(es.t.zJrgTE),
+        "aria-label": es.intl.string(es.t.zJrgTG),
         look: d.zx.Looks.BLANK,
         size: d.zx.Sizes.NONE,
         onClick: this.handleCreateInstantInvite,
@@ -497,11 +497,11 @@ class ef extends Chunk647438.PureComponent {
         showLinkCopied: e
       } = this.state;
       return this.isChannelType ? this.renderInviteLink() : (0, r.jsx)(c.u, {
-        text: e ? es.intl.string(es.t.uvTCOT) : null,
+        text: e ? es.intl.string(es.t.uvTCOY) : null,
         position: "left",
         forceOpen: e,
         children: (0, r.jsx)(d.zx, {
-          "aria-label": e ? es.intl.string(es.t.uvTCOT) : es.intl.string(es.t.WqhZsr),
+          "aria-label": e ? es.intl.string(es.t.uvTCOY) : es.intl.string(es.t.WqhZss),
           look: d.zx.Looks.BLANK,
           size: d.zx.Sizes.NONE,
           onClick: this.copyCurrentUrl,

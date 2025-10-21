@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => ee,
-  n: () => J
+  n: () => Y
 }), require("./539854.js"), require("./415506.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -47,7 +47,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk188857 = require("./188857.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk603124 = require("./603124.js");
+  Chunk198750 = require("./198750.js");
 
 function z(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -80,7 +80,7 @@ function q(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let J = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk388610.Z], () => {
+let Y = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk388610.Z], () => {
   let e = Chunk388610.Z.getChannel();
   return {
     submitting: Chunk277053.Z.formState === Chunk981631.QZA.SUBMITTING,
@@ -98,7 +98,7 @@ let J = Chunk442837.ZP.connectStores([Chunk277053.Z, Chunk388610.Z], () => {
   }
 })(Chunk852860.Z);
 
-function Y(e) {
+function J(e) {
   let {
     overwrite: t
   } = e, n = (0, o.e7)([E.Z], () => E.Z.channel), l = (0, o.e7)([R.Z], () => null != n ? R.Z.getGuild(n.getGuildId()) : null), r = (0, o.e7)([_.Z], () => null != l && null != t && t.type === b.BN.ROLE ? _.Z.getRole(l.id, t.id) : true), s = C.N.useExperiment({
@@ -146,14 +146,14 @@ function Y(e) {
           null != n && (e = n.name)
         }
       }
-      V.X(e)
+      U.X(e)
     }
   }, x = e => {
-    let t = P.Z.can(U.Plq.ADMINISTRATOR, l) || P.Z.can(U.Plq.MANAGE_ROLES, n, true, true, true);
-    return n.isGuildStageVoice() && O.xS.has(e) ? W.intl.string(W.t.bTS5lZ) : !((!a.fS(e, U.Plq.MANAGE_ROLES) || t) && (null == e || P.Z.can(e, l) || t)) && W.intl.string(W.t.nOtPMD)
-  }, j = t.id === c, v = n.isForumLikeChannel() && a.e$(t.deny, U.Plq.SEND_MESSAGES), N = a.e$(t.deny, U.Plq.SEND_MESSAGES), Z = a.e$(t.deny, U.Plq.READ_MESSAGE_HISTORY), w = k.Z.generateChannelPermissionSpec(c, n, j, {
+    let t = P.Z.can(V.Plq.ADMINISTRATOR, l) || P.Z.can(V.Plq.MANAGE_ROLES, n, true, true, true);
+    return n.isGuildStageVoice() && N.xS.has(e) ? W.intl.string(W.t.bTS5lf) : !((!a.fS(e, V.Plq.MANAGE_ROLES) || t) && (null == e || P.Z.can(e, l) || t)) && W.intl.string(W.t.nOtPMM)
+  }, j = t.id === c, v = n.isForumLikeChannel() && a.e$(t.deny, V.Plq.SEND_MESSAGES), O = a.e$(t.deny, V.Plq.SEND_MESSAGES), Z = a.e$(t.deny, V.Plq.READ_MESSAGE_HISTORY), w = k.Z.generateChannelPermissionSpec(c, n, j, {
     createPostsDisabled: v,
-    sendMessagesDisabled: N,
+    sendMessagesDisabled: O,
     readMessageHistoryDisabled: Z,
     inGameMentionsExperiment: s
   });
@@ -168,17 +168,17 @@ function Y(e) {
       className: F.permissionsForm
     }, n)), c === t.id ? null : (0, i.jsx)(d.Button, {
       variant: "critical-secondary",
-      text: W.intl.format(W.t.txPV7u, {
+      text: W.intl.format(W.t.txPV7k, {
         name: m()
       }),
       onClick: () => {
         let e = m();
         u.Z.show({
-          title: W.intl.string(W.t.GuPYQE),
+          title: W.intl.string(W.t.GuPYQB),
           body: W.intl.format(W.t.xERCnZ, {
             name: e
           }),
-          cancelText: W.intl.string(W.t["ETE/oK"]),
+          cancelText: W.intl.string(W.t["ETE/oC"]),
           onConfirm: () => h.Z.clearPermissionOverwrite(p, t.id)
         })
       }
@@ -186,7 +186,7 @@ function Y(e) {
   })
 }
 
-function Q(e) {
+function X(e) {
   let {
     guildId: t,
     channelId: n,
@@ -222,7 +222,7 @@ function Q(e) {
   })
 }
 
-function X(e) {
+function Q(e) {
   return "object" == typeof e && null != e && "colorString" in e && "name" in e
 }
 
@@ -236,12 +236,12 @@ function K(e) {
     position: c
   } = e, d = (0, o.e7)([_.Z], () => _.Z.getSortedRoles(t.id)), u = (0, o.Wu)([T.ZP], () => T.ZP.getMemberIds(t.id));
   return (0, i.jsx)(v.Z, {
-    label: W.intl.string(W.t.lT5Ztr),
-    placeholder: W.intl.string(W.t.V2pZRk),
-    "aria-label": W.intl.string(W.t["Uvt+p6"]),
-    sections: [W.intl.string(W.t.LPJmLy), W.intl.string(W.t["9Oq93t"])],
+    label: W.intl.string(W.t.lT5Zth),
+    placeholder: W.intl.string(W.t.V2pZRh),
+    "aria-label": W.intl.string(W.t["Uvt+p/"]),
+    sections: [W.intl.string(W.t["LPJmL/"]), W.intl.string(W.t["9Oq93m"])],
     onRenderResult: e => {
-      if (X(e)) {
+      if (Q(e)) {
         let t;
         return null != e.colorString && (t = {
           color: e.colorString
@@ -250,7 +250,7 @@ function K(e) {
           children: e.name
         })
       }
-      if (e instanceof Z.Z) return (0, i.jsx)(Q, {
+      if (e instanceof Z.Z) return (0, i.jsx)(X, {
         guildId: t.id,
         channelId: n.id,
         user: e
@@ -261,7 +261,7 @@ function K(e) {
       M.Z.requestMembers(t.id, e, 20)
     },
     onSelect: e => {
-      null != e && (X(e) ? a(e.id, b.BN.ROLE) : e instanceof Z.Z && a(e.id, b.BN.MEMBER))
+      null != e && (Q(e) ? a(e.id, b.BN.ROLE) : e instanceof Z.Z && a(e.id, b.BN.MEMBER))
     },
     onClose: r,
     position: c
@@ -288,7 +288,7 @@ function $() {
       }
     }, [Chunk852860]),
     S = (0, Chunk188857.Z)(Chunk852860, Chunk392711),
-    O = (0, Chunk410030.ZP)(),
+    N = (0, Chunk410030.ZP)(),
     Z = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.roleStyle),
     w = Chunk647438.useCallback((e, l) => {
       if (null == t) return null;
@@ -297,7 +297,7 @@ function $() {
           id: e,
           role: r,
           name: s
-        } = l, a = null != v ? (0, N.lV)(v) : null, o = null != r && a === r.id, {
+        } = l, a = null != v ? (0, O.lV)(v) : null, o = null != r && a === r.id, {
           default: c
         } = await n.e("83884").then(n.bind(n, 905687));
         return n => (0, i.jsx)(c, q(z({}, n), {
@@ -305,11 +305,11 @@ function $() {
           role: r,
           handleDeletePermission: o ? true : () => {
             u.Z.show({
-              title: W.intl.string(W.t.GuPYQE),
+              title: W.intl.string(W.t.GuPYQB),
               body: W.intl.format(W.t.xERCnZ, {
                 name: s
               }),
-              cancelText: W.intl.string(W.t["ETE/oK"]),
+              cancelText: W.intl.string(W.t["ETE/oC"]),
               onConfirm: () => h.Z.clearPermissionOverwrite(t.id, e)
             })
           }
@@ -344,7 +344,7 @@ function $() {
       var t;
       return (null == (t = r[e.id]) ? true : t.type) === b.BN.ROLE
     }).map(e => (0, i.jsx)(m.Z, {
-      theme: O,
+      theme: N,
       roleStyle: Z,
       id: e.id,
       role: e,
@@ -363,7 +363,7 @@ function $() {
       return (0, i.jsx)(m.Z, {
         id: e.id,
         guild: v,
-        theme: O,
+        theme: N,
         roleStyle: Z,
         "aria-label": H.ZP.getUserTag(e, {
           decoration: "never"
@@ -387,7 +387,7 @@ function $() {
       }, "".concat(a, "-").concat(e.id))
     }).value();
   return (0, Chunk951288.jsx)(Chunk325476.ZP.Sidebar, {
-    className: Chunk603124.layoutStyle,
+    className: Chunk198750.layoutStyle,
     scrollable: true,
     children: (0, Chunk951288.jsxs)(Chunk481060.njP, {
       onItemSelect: Chunk741361.Aj,
@@ -407,7 +407,7 @@ function $() {
             children: (0, i.jsxs)("div", {
               className: F.sidebarHeaderDefault,
               children: [(0, i.jsxs)("span", {
-                children: [W.intl.string(W.t.LPJmLy), "/", W.intl.string(W.t["9Oq93t"])]
+                children: [W.intl.string(W.t["LPJmL/"]), "/", W.intl.string(W.t["9Oq93m"])]
               }), (0, i.jsx)("img", {
                 alt: "",
                 className: F.sidebarHeader,
@@ -428,7 +428,7 @@ function $() {
           children: (0, Chunk951288.jsx)(Chunk481060.Text, {
             variant: "text-sm/normal",
             color: "text-link",
-            children: Chunk388032.intl.string(Chunk388032.t["pfoA8/"])
+            children: Chunk388032.intl.string(Chunk388032.t.pfoA83)
           })
         })]
       })]
@@ -445,8 +445,8 @@ function ee() {
   if (null == (0, Chunk442837.e7)([Chunk430824.Z], () => null != module ? Chunk430824.Z.getGuild(module.getGuildId()) : null) || null == module || null == exports || null == require) return null;
   let l = exports[require];
   return (0, Chunk951288.jsxs)(Chunk325476.ZP, {
-    className: Chunk603124.container,
-    children: [(0, Chunk951288.jsx)($, {}), (0, Chunk951288.jsx)(Y, {
+    className: Chunk198750.container,
+    children: [(0, Chunk951288.jsx)($, {}), (0, Chunk951288.jsx)(J, {
       overwrite: Chunk647438
     })]
   })

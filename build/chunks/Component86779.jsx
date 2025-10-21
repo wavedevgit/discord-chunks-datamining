@@ -21,13 +21,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk970648 = require("./970648.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk976914 = require("./976914.js");
+  Chunk78224 = require("./78224.js");
 let b = "mweb_handoff_nonce",
   j = "mweb_handoff_nonce_expiration",
   I = +Chunk70956.Z.Millis.MINUTE,
   N = new Set(["nonce_missing", "nonce_expired", "handoff_exchange"]),
-  O = new Set(["deep_link_failed"]),
-  y = () => {
+  y = new Set(["deep_link_failed"]),
+  O = () => {
     Chunk433517.K.remove(b), Chunk433517.K.remove(j)
   },
   S = () => {
@@ -55,7 +55,7 @@ let b = "mweb_handoff_nonce",
     if ("null" === require && null === C && T("deep_link_failed"), null != require && "null" !== require && null == Z && null === C && T("nonce_missing"), Chunk647438.useEffect(() => {
         if (null != Z) {
           let e = Chunk433517.K.get(j);
-          (null == module || Date.now() >= module) && (T("nonce_expired"), y())
+          (null == module || Date.now() >= module) && (T("nonce_expired"), O())
         }
       }, [Z, T]), Chunk647438.useEffect(() => {
         null != require && "null" !== require && null != Z && null == C && Chunk544891.tn.post({
@@ -77,21 +77,21 @@ let b = "mweb_handoff_nonce",
         }).catch(() => {
           T("handoff_exchange")
         }).finally(() => {
-          y()
+          O()
         })
       }, [require, Z, C, S, T]), null == S) return null;
     let P = null == C ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-      children: [Chunk388032.intl.string(Chunk388032.t.uJ1Jsb), (0, Chunk951288.jsx)("br", {}), Chunk388032.intl.string(Chunk388032.t.GHVWAg)]
-    }) : O.has(C) ? Chunk388032.intl.string(Chunk388032.t.EPt55u) : N.has(C) ? Chunk388032.intl.string(Chunk388032.t.g87kTk) : true;
-    return null != C && O.has(C) ? (0, Chunk951288.jsx)("div", {
-      className: Chunk976914.errorContainer,
+      children: [Chunk388032.intl.string(Chunk388032.t.uJ1JsY), (0, Chunk951288.jsx)("br", {}), Chunk388032.intl.string(Chunk388032.t.GHVWAs)]
+    }) : y.has(C) ? Chunk388032.intl.string(Chunk388032.t.EPt55r) : N.has(C) ? Chunk388032.intl.string(Chunk388032.t.g87kTp) : true;
+    return null != C && y.has(C) ? (0, Chunk951288.jsx)("div", {
+      className: Chunk78224.errorContainer,
       children: (0, Chunk951288.jsx)(Chunk481060.Text, {
         color: "interactive-normal",
         variant: "text-sm/semibold",
         children: P
       })
     }) : (0, Chunk951288.jsxs)("div", {
-      className: Chunk976914.container,
+      className: Chunk78224.container,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/semibold",
         children: P
@@ -114,9 +114,9 @@ let b = "mweb_handoff_nonce",
           }), window.location.href = exports.toString()
         },
         children: (0, Chunk951288.jsx)(Chunk481060.Text, {
-          className: Chunk976914.buttonText,
+          className: Chunk78224.buttonText,
           variant: "text-sm/semibold",
-          children: Chunk388032.intl.string(Chunk388032.t["NcC75+"])
+          children: Chunk388032.intl.string(Chunk388032.t.NcC759)
         })
       })]
     })

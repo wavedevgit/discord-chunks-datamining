@@ -27,7 +27,7 @@ let s = Chunk442837.ZP.connectStores([Chunk226961.ZP], e => {
     streams: t,
     context: n,
     index: a,
-    title: o.intl.string(o.t["3u0gIC"]),
+    title: o.intl.string(o.t["3u0gII"]),
     showUserInfo: false,
     showSimulcastOverride: false
   })

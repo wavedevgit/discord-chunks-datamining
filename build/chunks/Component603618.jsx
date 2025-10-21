@@ -50,7 +50,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk959517 = require("./959517.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk988486 = require("./988486.js");
+  Chunk847121 = require("./847121.js");
 
 function K(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -113,7 +113,7 @@ function q(e) {
               n = null != (i = A.Z.getChannel(e)) ? i : null;
             o()(null != n, "Send channel must be defined"), (0, N.uL)(H.Z5c.CHANNEL(n.guild_id, n.id)), (0, C.i)(H.IlC.OVERLAY, true), true === t.extra.fake_inventory_item ? await (0, j.k)({
               channel: n,
-              content: Y.intl.formatToPlainString(Y.t.UVBA9v, {
+              content: Y.intl.formatToPlainString(Y.t.UVBA9g, {
                 gameName: t.extra.game_name
               }),
               whenReady: true,
@@ -151,7 +151,7 @@ function q(e) {
         value: G.bk.CHAT,
         userId: a.id
       })
-    }, x = E ? Y.intl.string(Y.t["3fRyS0"]) : Y.intl.string(Y.t.XHxDIS), I = E ? (0, i.jsx)(h.ejJ, {
+    }, x = E ? Y.intl.string(Y.t["3fRySx"]) : Y.intl.string(Y.t.XHxDIV), I = E ? (0, i.jsx)(h.ejJ, {
       color: "currentColor",
       size: "sm"
     }) : (0, i.jsx)(h.Uuj, {
@@ -207,7 +207,7 @@ function J(e) {
         m("unsent")
       }
     }
-  }, y = Y.intl.string(Y.t.OKsSCQ);
+  }, y = Y.intl.string(Y.t.OKsSCR);
   return (0, i.jsx)(d.u, {
     text: y,
     "aria-label": y,
@@ -324,7 +324,7 @@ function et(e) {
         variant: "text-xs/medium",
         color: "header-secondary",
         tag: "div",
-        children: Y.intl.string(Y.t.y9eo7e)
+        children: Y.intl.string(Y.t.y9eo7a)
       })
     }), t.map((e, t) => (0, i.jsx)($, {
       idx: t,
@@ -442,7 +442,7 @@ function er(e) {
       },
       size: p.Ph.SMALL,
       color: p.Tt.PRIMARY,
-      children: Y.intl.string(Y.t["6Qgren"])
+      children: Y.intl.string(Y.t["6Qgrev"])
     }) : null]
   })
 }

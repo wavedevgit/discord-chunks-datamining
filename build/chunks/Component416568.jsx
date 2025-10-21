@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 416568, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => ep
@@ -57,7 +57,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk921230 = require("./921230.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk878109 = require("./878109.js");
+  Chunk933774 = require("./933774.js");
 
 function ei(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -212,7 +212,7 @@ function eu(e) {
   } = e, [a] = (0, p.Wu)([D.ZP], () => {
     let e = D.ZP.getGuildsTree();
     return [e, e.version]
-  }), s = a.getRoots(), c = (0, p.Wu)([w.Z], () => w.Z.getGeoRestrictedGuilds()).map(e => (0, r.jsx)(z.Z, {
+  }), s = a.getRoots(), c = (0, p.Wu)([T.Z], () => T.Z.getGeoRestrictedGuilds()).map(e => (0, r.jsx)(z.Z, {
     id: e.id,
     name: e.name,
     icon: e.icon
@@ -220,7 +220,7 @@ function eu(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(m.Kqy, {
       role: "group",
-      "aria-label": en.intl.string(en.t["7hB4kp"]),
+      "aria-label": en.intl.string(en.t["7hB4kg"]),
       gap: "xs",
       children: s.map((e, t) => l(e, t, s.length))
     }), c, (0, r.jsx)(X.Z, {}), i ? null : (0, r.jsx)(V.Z, {
@@ -243,7 +243,7 @@ function ed(e) {
     isSorting: O,
     startSorting: C,
     stopSorting: E
-  } = (0, M.Z)(), N = i.useRef(false), [w] = i.useState(() => new h.V7), A = i.useRef(null), R = i.useRef(null), B = (0, u.OP)(), {
+  } = (0, M.Z)(), N = i.useRef(false), [T] = i.useState(() => new h.V7), A = i.useRef(null), R = i.useRef(null), B = (0, u.OP)(), {
     ref: F
   } = B, V = function(e, t) {
     if (null == e) return {};
@@ -294,13 +294,13 @@ function ed(e) {
       if (!eg) {
         let {
           scrollTop: e
-        } = T.Z.getGuildListDimensions();
+        } = w.Z.getGuildListDimensions();
         ef.scrollTo({
           to: e,
           animate: false
         })
       }
-      return N.current = true, () => w.stop()
+      return N.current = true, () => T.stop()
     }
   }), i.useEffect(() => {
     if (ef.setGuildsTree(s), N.current || 0 === s.size) return;

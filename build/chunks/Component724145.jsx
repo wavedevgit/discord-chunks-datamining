@@ -37,17 +37,17 @@ var Chunk951288 = require("./951288.js"),
   Chunk921944 = require("./921944.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk826425 = require("./826425.js");
+  Chunk204089 = require("./204089.js");
 let j = () => (0, Chunk951288.jsx)("div", {
-    className: Chunk826425.editorHeader,
+    className: Chunk204089.editorHeader,
     children: (0, Chunk951288.jsxs)("div", {
-      className: Chunk826425.bannerUpsell,
+      className: Chunk204089.bannerUpsell,
       children: [(0, Chunk951288.jsx)(Chunk587446.Z, {
-        className: Chunk826425.premiumIcon
+        className: Chunk204089.premiumIcon
       }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-md/bold",
         color: "always-white",
-        children: Chunk388032.intl.string(Chunk388032.t.POSLGR)
+        children: Chunk388032.intl.string(Chunk388032.t.POSLGY)
       })]
     })
   }),
@@ -69,7 +69,7 @@ let j = () => (0, Chunk951288.jsx)("div", {
         })
       }), (0, r.jsx)(d.Heading, {
         variant: "heading-lg/extrabold",
-        children: M.intl.string(M.t["xSR+a2"])
+        children: M.intl.string(M.t["xSR+a/"])
       })]
     })
   },
@@ -83,7 +83,7 @@ let j = () => (0, Chunk951288.jsx)("div", {
     } = (0, m.ZP)(h.Z.CLIENT_THEMES_EDITOR), [u, d] = (0, l.Wu)([T.default, C.Z], () => [C.Z.gradientPreset, A.ZP.isPremium(T.default.getCurrentUser())]), _ = (0, b.N)(), p = (0, A.Rt)({
       intervalType: null == _ || null == (t = _.subscription_trial) ? true : t.interval,
       intervalCount: null == _ || null == (n = _.subscription_trial) ? true : n.interval_count
-    }), g = d ? M.intl.string(M.t.IJI7ys) : (null == _ || null == (i = _.subscription_trial) ? true : i.sku_id) === x.Si.TIER_2 ? p : M.intl.string(M.t.mr4K7O), E = e => {
+    }), g = d ? M.intl.string(M.t.IJI7yk) : (null == _ || null == (i = _.subscription_trial) ? true : i.sku_id) === x.Si.TIER_2 ? p : M.intl.string(M.t.mr4K7D), E = e => {
       e && (null == a || a(), null != o && o(L.L.PRIMARY), null != u && ((0, w.Yk)({
         isPersisted: true,
         themeName: c.Us[u.id],
@@ -117,11 +117,11 @@ let j = () => (0, Chunk951288.jsx)("div", {
         section: D.oAB.APPEARANCE
       })
     }, _ = (0, E.B)({
-      no: M.t["3D5yo6"],
-      "sv-SE": M.t["3D5yo6"],
-      uk: M.t["3D5yo6"],
-      de: M.t["3D5yo6"]
-    }, M.t["dqH+qq"]), p = (0, s.EQ)({
+      no: M.t["3D5yo/"],
+      "sv-SE": M.t["3D5yo/"],
+      uk: M.t["3D5yo/"],
+      de: M.t["3D5yo/"]
+    }, M.t["dqH+qr"]), p = (0, s.EQ)({
       isPreview: a,
       isCoachmark: n,
       forceShowCloseButton: o
@@ -129,9 +129,9 @@ let j = () => (0, Chunk951288.jsx)("div", {
       isCoachmark: true
     }, {
       forceShowCloseButton: true
-    }, () => M.intl.string(M.t.cpT0Cg)).with({
+    }, () => M.intl.string(M.t.cpT0Cq)).with({
       isPreview: true
-    }, () => _).otherwise(() => M.intl.string(M.t.Olc2Ky));
+    }, () => _).otherwise(() => M.intl.string(M.t.Olc2K3));
     return (0, r.jsxs)("div", {
       className: k.editorFooter,
       children: [a && (0, r.jsx)(G, {

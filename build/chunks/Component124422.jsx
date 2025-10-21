@@ -19,13 +19,13 @@ function d(t, e, d) {
     canManageGuildEvent: f
   } = (0, u.XJ)(null != d ? d : e), b = (0, r.e7)([o.ZP], () => o.ZP.getGuildScheduledEvent(t), [t]), v = f(b), E = null != (0, c.qY)(null != (g = null == d ? true : d.id) ? g : a.lds), p = null != b && (0, o.xt)(b);
   return !v || p || E ? null : (0, l.jsx)(i.sNh, {
-    id: s.intl.string(s.t.cK1GGR),
-    label: s.intl.string(s.t.cK1GGR),
+    id: s.intl.string(s.t.cK1GGY),
+    label: s.intl.string(s.t.cK1GGY),
     action: function() {
       null != b && (0, i.ZDy)(async () => {
         let {
           default: t
-        } = await Promise.all([n.e("84722"), n.e("48221")]).then(n.bind(n, 296864));
+        } = await Promise.all([n.e("84722"), n.e("14531")]).then(n.bind(n, 296864));
         return e => {
           var n, r;
           return (0, l.jsx)(t, (n = function(t) {

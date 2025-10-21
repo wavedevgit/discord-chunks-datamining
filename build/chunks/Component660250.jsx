@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk190054 = require("./190054.jsx"),
   Chunk760373 = require("./760373.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk115093 = require("./115093.js");
+  Chunk547990 = require("./547990.js");
 let j = function(e) {
   var t, r;
   let {
@@ -37,8 +37,8 @@ let j = function(e) {
     })
   }, [m]), _ = {
     transitionState: j,
-    title: O.intl.string(O.t.QogHlZ),
-    subtitle: O.intl.string(O.t.qODBkZ)
+    title: O.intl.string(O.t.QogHld),
+    subtitle: O.intl.string(O.t.qODBkW)
   }, w = (0, n.jsxs)(n.Fragment, {
     children: [(0, n.jsxs)("div", {
       className: y.verification,
@@ -47,7 +47,7 @@ let j = function(e) {
         children: [(0, n.jsx)(l.Heading, {
           variant: "text-sm/bold",
           color: "header-primary",
-          children: O.intl.string(O.t.cgBTyM)
+          children: O.intl.string(O.t.cgBTyO)
         }), null != x && (0, n.jsx)(p.H, {
           className: y.copyIcon,
           chunks: x,
@@ -63,7 +63,7 @@ let j = function(e) {
       className: y.footer,
       variant: "text-sm/normal",
       color: "text-muted",
-      children: O.intl.format(O.t["H3+ktr"], {
+      children: O.intl.format(O.t["H3+ktv"], {
         helpArticle: (0, u.uV)()
       })
     })]

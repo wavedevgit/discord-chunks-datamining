@@ -29,7 +29,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk296848 = require("./296848.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk786636 = require("./786636.js");
+  Chunk669255 = require("./669255.js");
 
 function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -48,11 +48,11 @@ class D extends Chunk647438.PureComponent {
   get copyButtonText() {
     switch (this.state.copyMode) {
       case Chunk481060.uA3.SUCCESS:
-        return Chunk388032.intl.string(Chunk388032.t.XVvPjY);
+        return Chunk388032.intl.string(Chunk388032.t.XVvPjU);
       case Chunk481060.uA3.ERROR:
-        return Chunk388032.intl.string(Chunk388032.t.i4GM3N);
+        return Chunk388032.intl.string(Chunk388032.t.i4GM3L);
       default:
-        return Chunk388032.intl.string(Chunk388032.t.OpuAlJ)
+        return Chunk388032.intl.string(Chunk388032.t.OpuAlK)
     }
   }
   handleRevoke(e) {
@@ -67,27 +67,27 @@ class D extends Chunk647438.PureComponent {
     } = this.state;
     return (0, Chunk951288.jsxs)(Chunk600164.Z, {
       direction: Chunk600164.Z.Direction.VERTICAL,
-      className: Chunk786636.giftCodeRow,
+      className: Chunk669255.giftCodeRow,
       children: [(0, Chunk951288.jsx)(Chunk481060.kO8, {
-        className: Chunk786636.codeText,
+        className: Chunk669255.codeText,
         value: (0, Chunk669079.Nz)(exports.code),
         text: this.copyButtonText,
         mode: require,
         supportsCopy: Chunk572004.wS,
-        hideMessage: module ? Chunk388032.intl.string(Chunk388032.t["0RLn4+"]) : null,
+        hideMessage: module ? Chunk388032.intl.string(Chunk388032.t["0RLn47"]) : null,
         onCopy: this.handleCopy,
         buttonColor: Chunk755721.Tt.BRAND,
         buttonLook: Chunk755721.iL.FILLED
       }), (0, Chunk951288.jsxs)("div", {
-        className: Chunk786636.subTextRow,
+        className: Chunk669255.subTextRow,
         children: [null != exports.expiresAt ? (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
-          children: [Chunk388032.intl.format(Chunk388032.t.ltVZcH, {
+          children: [Chunk388032.intl.format(Chunk388032.t.ltVZcJ, {
             hours: exports.expiresAt.diff(o()(), "h")
           }), " —\xa0"]
         }) : null, (0, Chunk951288.jsx)(Chunk481060.P3F, {
           tag: "a",
           onClick: () => this.handleRevoke(exports.code),
-          children: Chunk388032.intl.string(Chunk388032.t.v6Yaz8)
+          children: Chunk388032.intl.string(Chunk388032.t.v6Yazx)
         })]
       })]
     })
@@ -122,14 +122,14 @@ class L extends Chunk647438.PureComponent {
       subscriptionPlan: n,
       giftCodeBatchId: i
     } = this.props;
-    return e = Chunk647438 === Chunk474936.m8 ? Chunk388032.intl.string(Chunk388032.t.odsU6e) : Chunk647438 === Chunk474936.rX && null != require ? Chunk388032.intl.formatToPlainString(require.interval === Chunk474936.rV.MONTH ? Chunk388032.t.uZjpiI : Chunk388032.t.bJW1EB, {
+    return e = Chunk647438 === Chunk474936.m8 ? Chunk388032.intl.string(Chunk388032.t.odsU6W) : Chunk647438 === Chunk474936.rX && null != require ? Chunk388032.intl.formatToPlainString(require.interval === Chunk474936.rV.MONTH ? Chunk388032.t.uZjpiJ : Chunk388032.t.bJW1EA, {
       skuName: exports.name,
       intervalCount: require.intervalCount
-    }) : null == require ? exports.name : Chunk388032.intl.formatToPlainString(require.interval === Chunk474936.rV.MONTH ? Chunk388032.t.rCJvqq : Chunk388032.t.Vd3Iu7, {
+    }) : null == require ? exports.name : Chunk388032.intl.formatToPlainString(require.interval === Chunk474936.rV.MONTH ? Chunk388032.t.rCJvqo : Chunk388032.t.Vd3Iu8, {
       skuName: exports.name,
       intervalCount: require.intervalCount
     }), (0, Chunk951288.jsx)("div", {
-      className: Chunk786636.gameName,
+      className: Chunk669255.gameName,
       children: module
     })
   }
@@ -137,14 +137,14 @@ class L extends Chunk647438.PureComponent {
     return (0, Chunk951288.jsxs)(Chunk600164.Z, {
       justify: Chunk600164.Z.Justify.BETWEEN,
       align: Chunk600164.Z.Align.CENTER,
-      className: Chunk786636.generateCodeRow,
+      className: Chunk669255.generateCodeRow,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         children: Chunk388032.intl.string(Chunk388032.t.lELyPj)
       }), (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "primary",
         size: "sm",
-        text: Chunk388032.intl.string(Chunk388032.t.Q3Qgur),
+        text: Chunk388032.intl.string(Chunk388032.t.Q3Qguo),
         loading: this.state.isCreating,
         onClick: this.handleGenerateGiftCode
       })]
@@ -172,41 +172,41 @@ class L extends Chunk647438.PureComponent {
       className: Chunk913527,
       children: [(0, Chunk951288.jsx)(Chunk481060.P3F, {
         onClick: this.handleToggleOpen,
-        className: Chunk786636.card,
+        className: Chunk669255.card,
         onMouseEnter: () => this.setIsHovered(true),
         onMouseLeave: () => this.setIsHovered(false),
         children: (0, Chunk951288.jsx)(Chunk189907.Z.Header, {
           splashArtURL: exports.getSplashURL(P),
           children: (0, Chunk951288.jsxs)("div", {
-            className: Chunk786636.cardHeader,
+            className: Chunk669255.cardHeader,
             children: [(0, Chunk951288.jsxs)(Chunk600164.Z, {
               align: Chunk600164.Z.Align.CENTER,
               children: [null != Chunk755721 ? (0, Chunk951288.jsx)(Chunk981632.Z, {
                 giftStyle: Chunk755721,
-                className: Chunk786636.seasonalGiftBox,
+                className: Chunk669255.seasonalGiftBox,
                 shouldAnimate: this.state.isHovered
               }) : (0, Chunk951288.jsx)(Chunk925329.Z, {
                 game: exports,
                 size: Chunk925329.A.MEDIUM,
                 skuId: o.id
               }), (0, Chunk951288.jsxs)("div", {
-                className: Chunk786636.headerText,
+                className: Chunk669255.headerText,
                 children: [this.renderTitle(), (0, Chunk951288.jsx)("div", {
-                  className: Chunk786636.subTextHeader,
-                  children: Chunk388032.intl.format(Chunk388032.t.zMcvcH, {
+                  className: Chunk669255.subTextHeader,
+                  children: Chunk388032.intl.format(Chunk388032.t.zMcvcA, {
                     copies: module.length
                   })
                 })]
               })]
             }), (0, Chunk951288.jsx)(Chunk259580.Z, {
               direction: Chunk533307 ? Chunk259580.Z.Directions.UP : Chunk259580.Z.Directions.DOWN,
-              className: Chunk786636.expandIcon
+              className: Chunk669255.expandIcon
             })]
           })
         })
       }), Chunk533307 ? (0, Chunk951288.jsx)(Chunk189907.Z.Body, {
         children: Chunk442837 ? (0, Chunk951288.jsx)(Chunk481060.$jN, {
-          className: Chunk786636.spinner
+          className: Chunk669255.spinner
         }) : (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
           children: [require.length < module.length ? this.renderGenerateGiftCodeRow() : null, require.map(e => (0, r.jsx)(D, {
             giftCode: e,

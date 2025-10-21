@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 873696, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   D: () => i
@@ -15,7 +15,7 @@ function i(e) {
       };
     case "go-live":
       return {
-        subtitle: r.intl.string(r.t.Pa817u)
+        subtitle: r.intl.string(r.t.Pa817q)
       }
   }
   return null

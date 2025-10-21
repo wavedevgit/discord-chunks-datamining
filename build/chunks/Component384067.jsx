@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk215023 = require("./215023.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk687983 = require("./687983.js");
+  Chunk310582 = require("./310582.js");
 let _ = e => {
   var t, n, i;
   let {
@@ -44,7 +44,7 @@ let _ = e => {
     } = (0, g.UI)(_);
   if (null == k) return null;
   let T = b === p.AW.ORBS;
-  return (0, r.jsx)(o.$, {
+  return (0, r.jsx)(s.$, {
     innerRef: E,
     onChange: j,
     threshold: 0,
@@ -75,30 +75,30 @@ let _ = e => {
         },
         children: (0, r.jsxs)("div", {
           className: h.wideBannerTextContainer,
-          children: [(0, r.jsx)(s.Heading, {
+          children: [(0, r.jsx)(o.Heading, {
             style: {
               color: null != (n = _.bannerTextColor) ? n : "var(--header-primary)"
             },
             className: T ? h.wideBannerOrbsHeading : true,
             variant: T ? "heading-xl/bold" : "heading-lg/semibold",
             children: _.title
-          }), (0, r.jsx)(s.Text, {
+          }), (0, r.jsx)(o.Text, {
             style: {
               color: null != (i = _.bannerTextColor) ? i : "var(--text-muted)"
             },
             lineClamp: 2,
             variant: T ? "text-md/medium" : "text-sm/medium",
-            children: T ? C.intl.format(C.t.SFFP7O, {
+            children: T ? C.intl.format(C.t.SFFP7K, {
               helpdeskArticle: c.Z.getArticleURL(f.BhN.VIRTUAL_CURRENCY_LEARN_MORE)
             }) : _.body
           })]
         })
       }), true !== _.disableCta && (0, r.jsx)("div", {
         className: h.wideBannerBlockButton,
-        children: (0, r.jsx)(s.Button, {
+        children: (0, r.jsx)(o.Button, {
           variant: "overlay-primary",
           onClick: () => m("shop wide banner", y, true, true),
-          text: C.intl.string(C.t.jVcuVV)
+          text: C.intl.string(C.t.jVcuVY)
         })
       })]
     })

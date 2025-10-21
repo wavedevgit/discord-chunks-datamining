@@ -9,7 +9,7 @@ var Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
   Chunk313201 = require("./313201.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk361837 = require("./361837.js"),
+  Chunk758590 = require("./758590.js"),
   Chunk365627 = require("./365627.js");
 
 function d(t) {
@@ -23,7 +23,7 @@ function d(t) {
     actions: [{
       variant: "secondary",
       onClick: i,
-      text: l.intl.string(l.t["JtWl+f"])
+      text: l.intl.string(l.t["JtWl+a"])
     }],
     "aria-labelledby": p,
     graphic: {
@@ -32,14 +32,14 @@ function d(t) {
     },
     onClose: i,
     transitionState: e,
-    title: l.intl.formatToPlainString(l.t["wLFT6+"], {
+    title: l.intl.formatToPlainString(l.t.wLFT6z, {
       tier: d.summary
     }),
     children: (0, a.jsx)(n.Text, {
       className: o.subtitle,
       variant: "text-md/medium",
       color: "header-secondary",
-      children: l.intl.format(l.t.OsAK9v, {
+      children: l.intl.format(l.t.OsAK9h, {
         timestamp: null == u ? true : u.currentPeriodEnd
       })
     })

@@ -48,10 +48,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk375790 = require("./375790.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk304726 = require("./304726.js"),
-  Chunk880637 = require("./880637.js");
+  Chunk833540 = require("./833540.js"),
+  Chunk520310 = require("./520310.js");
 
-function Y(e) {
+function q(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -69,7 +69,7 @@ function Y(e) {
   }
   return e
 }
-let q = ["user_urf", "message_urf", "guild_urf"];
+let K = ["user_urf", "message_urf", "guild_urf"];
 
 function X(e, t) {
   let {
@@ -116,7 +116,7 @@ let ee = e => {
     } : true
   }), [t, eu, em, eo, ej, eO]), eC = i.useMemo(() => (0, m.VP)(eu, em, eo, eO, ej), [eu, em, eo, eO, ej]), eN = function(e, t) {
     let n = !(arguments.length > 2) || true === arguments[2] || arguments[2],
-      r = Y({}, eO);
+      r = q({}, eO);
     r[e] = {
       value: t,
       isValid: n
@@ -141,7 +141,7 @@ let ee = e => {
           })(Object(t)).forEach(function(n) {
             Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
           }), e
-        })(Y({}, e), {
+        })(q({}, e), {
           [t]: n
         }))
     }
@@ -152,15 +152,15 @@ let ee = e => {
     eE = null != X(t, "ignore_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name),
     ek = (0, d.U)(),
     ew = (0, o.PO)("share_with_parent_element"),
-    eD = (0, c.zu)(),
-    eM = ek && eD.length > 0 && ew && null != X(t, "share_with_parents");
+    eM = (0, c.zu)(),
+    eR = ek && eM.length > 0 && ew && null != X(t, "share_with_parents");
   return (0, r.jsxs)("div", {
-    className: K.container,
+    className: J.container,
     children: [(0, r.jsxs)(a.xBx, {
       "data-migration-pending": true,
       separator: false,
       direction: s.Z.Direction.VERTICAL,
-      className: K.header,
+      className: J.header,
       children: [(0, r.jsx)(L.Z, {
         element: X(t, "success")
       }), (0, r.jsx)(N.Z, {
@@ -171,7 +171,7 @@ let ee = e => {
       })]
     }), (0, r.jsxs)(a.hzk, {
       "data-migration-pending": true,
-      className: K.body,
+      className: J.body,
       children: [null != ec && (0, r.jsx)(H.Z, {
         element: ec
       }), null != ep && (0, r.jsx)(G.Z, {
@@ -198,19 +198,19 @@ let ee = e => {
           } = e;
           return z.O.includes(t)
         })
-      }(t) && (0, r.jsxs)(M.Z, {
+      }(t) && (0, r.jsxs)(R.Z, {
         children: [eE && (0, r.jsx)(T.Z, {
           user: "user" === n.name ? n.record : n.record.author,
           channelId: eI,
           reportId: ea
-        }), eM && (0, r.jsx)(B.Z, {
-          parents: eD
+        }), eR && (0, r.jsx)(B.Z, {
+          parents: eM
         }), null != X(t, "block_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name || "report_to_mod_message" === n.name || "application" === n.name && null != n.record.bot) && (0, r.jsx)(_.Z, {
           user: "application" === n.name ? n.record.bot : "user" === n.name ? n.record : n.record.author,
           channelId: eI,
           reportId: ea,
           reportType: n
-        }), !eE && null != X(t, "mute_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name || "report_to_mod_message" === n.name) && (0, r.jsx)(D.Z, {
+        }), !eE && null != X(t, "mute_users") && ("message" === n.name || "first_dm" === n.name || "user" === n.name || "report_to_mod_message" === n.name) && (0, r.jsx)(M.Z, {
           user: "user" === n.name ? n.record : n.record.author,
           channelId: eI,
           reportId: ea
@@ -223,7 +223,7 @@ let ee = e => {
         }), null != X(t, "deauthorize_app") && "application" === n.name && (0, r.jsx)(x.Z, {
           application: n.record,
           reportId: ea
-        }), null != X(t, "deauthorize_app") && "application" === n.name && (0, r.jsx)(R.Z, {
+        }), null != X(t, "deauthorize_app") && "application" === n.name && (0, r.jsx)(D.Z, {
           application: n.record,
           reportId: ea
         })]
@@ -247,20 +247,20 @@ let ee = e => {
       }), null != eo && (0, r.jsx)(w.Z, {
         element: eo,
         onChange: (e, t) => {
-          let n = Y({}, ej);
+          let n = q({}, ej);
           e in ej ? delete n[e] : n[e] = t, ey(n)
         },
         state: ej
-      }), q.includes(n.name) && null != em && em.length > 0 && (0, r.jsx)(v.Z, {
+      }), K.includes(n.name) && null != em && em.length > 0 && (0, r.jsx)(v.Z, {
         elements: em,
         onChange: eN,
         state: eO
-      }), q.includes(n.name) && null != eu && eu.length > 0 && (0, r.jsx)(O.Z, {
+      }), K.includes(n.name) && null != eu && eu.length > 0 && (0, r.jsx)(O.Z, {
         elements: eu,
         onChange: eN,
         state: eO
       }), (0, r.jsxs)("div", {
-        className: K.listContainer,
+        className: J.listContainer,
         children: [(0, r.jsx)(b.Z, {
           node: t,
           onSelectChild: eT,
@@ -295,7 +295,7 @@ let ee = e => {
               ev(""), eT(n)
             }).catch(e => {
               var t;
-              (null == (t = e.body) ? true : t.code) === V.evJ.INVALID_FORM_BODY ? ev(Q.intl.string(Q.t.VjAAuL)) : eg ? ev(Q.intl.string(J.default.psKFdH)) : ev(Q.intl.string(Q.t.h6D8V1))
+              (null == (t = e.body) ? true : t.code) === V.evJ.INVALID_FORM_BODY ? ev(Q.intl.string(Q.t.VjAAuP)) : eg ? ev(Q.intl.string(Y.default.psKFdJ)) : ev(Q.intl.string(Q.t.h6D8Vy))
             }).finally(() => {
               eh(false)
             })
@@ -305,7 +305,7 @@ let ee = e => {
       canNavigateBack: et.length > 0
     }), (0, r.jsx)(a.olH, {
       "data-migration-pending": true,
-      className: K.closeButton,
+      className: J.closeButton,
       onClick: er
     })]
   })

@@ -76,18 +76,18 @@ class b extends Chunk647438.Component {
       isPromoCode: a
     } = this.state;
     return (0, Chunk951288.jsx)(Chunk481060.C3N, {
-      label: Chunk388032.intl.string(Chunk388032.t["il+VCg"]),
+      label: Chunk388032.intl.string(Chunk388032.t["il+VCo"]),
       children: (0, Chunk951288.jsx)("form", {
         onSubmit: this.handleSubmit,
         children: (0, Chunk951288.jsxs)(Chunk481060.NIo, {
           children: [(0, Chunk951288.jsx)(Chunk481060.oil, {
-            label: Chunk388032.intl.string(Chunk388032.t.SeKIoa),
+            label: Chunk388032.intl.string(Chunk388032.t.SeKIoS),
             type: module ? "password" : "text",
             value: exports,
             onChange: this.handleChange,
             placeholder: E,
-            error: !Chunk442837 && Chunk647438 ? Chunk388032.intl.string(Chunk388032.t.Y11a2t) : null,
-            helperText: Chunk442837 ? Chunk388032.intl.format(Chunk388032.t.gPt3PD, {
+            error: !Chunk442837 && Chunk647438 ? Chunk388032.intl.string(Chunk388032.t.Y11a2u) : null,
+            helperText: Chunk442837 ? Chunk388032.intl.format(Chunk388032.t.gPt3PE, {
               promoLink: () => {
                 window.open("https://discord.com/billing/promotions/".concat(exports))
               }
@@ -95,7 +95,7 @@ class b extends Chunk647438.Component {
             fullWidth: true
           }), (0, Chunk951288.jsx)(Chunk481060.Button, {
             variant: "primary",
-            text: Chunk388032.intl.string(Chunk388032.t.KIpp7O),
+            text: Chunk388032.intl.string(Chunk388032.t.KIpp7M),
             type: "submit",
             loading: require
           })]

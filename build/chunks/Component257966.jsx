@@ -9,7 +9,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk51596 = require("./51596.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk189956 = require("./189956.js");
+  Chunk886190 = require("./886190.js");
 
 function u(e) {
   var t, n;
@@ -19,10 +19,10 @@ function u(e) {
     (0, o.ZN)("fast-travel")
   }, []);
   return (0, r.jsx)(l.u, {
-    "aria-label": s.intl.string(s.t["7P/+q6"]),
+    "aria-label": s.intl.string(s.t["7P/+qz"]),
     asContainer: true,
     __unsupportedReactNodeAsText: (0, r.jsxs)(r.Fragment, {
-      children: [s.intl.string(s.t["7P/+q6"]), (0, r.jsx)(a.M2$, {
+      children: [s.intl.string(s.t["7P/+qz"]), (0, r.jsx)(a.M2$, {
         shortcut: ["mod", "k"]
       })]
     }),
@@ -51,7 +51,7 @@ function u(e) {
       }), (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
         lineClamp: 1,
-        children: s.intl.string(s.t.ZvKwYW)
+        children: s.intl.string(s.t.ZvKwYa)
       })]
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);

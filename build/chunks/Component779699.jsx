@@ -11,7 +11,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk481060 = require("./481060.js"),
   Chunk457926 = require("./457926.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk138553 = require("./138553.js");
+  Chunk861537 = require("./861537.js");
 let u = function(e) {
   let {
     iconType: t,
@@ -23,7 +23,7 @@ let u = function(e) {
         size: "md",
         color: "currentColor",
         className: c.icon,
-        "aria-label": l.intl.string(l.t.BVZqJi)
+        "aria-label": l.intl.string(l.t.BVZqJl)
       });
       break;
     case "voice-locked":
@@ -31,7 +31,7 @@ let u = function(e) {
         size: "md",
         color: "currentColor",
         className: c.icon,
-        "aria-label": l.intl.string(l.t.aa0FYm)
+        "aria-label": l.intl.string(l.t.aa0FYn)
       });
       break;
     case "stage":
@@ -39,7 +39,7 @@ let u = function(e) {
         size: "lg",
         color: "currentColor",
         className: c.icon,
-        "aria-label": l.intl.string(l.t.EErMzM)
+        "aria-label": l.intl.string(l.t.EErMzA)
       });
       break;
     case "stage-locked":
@@ -47,7 +47,7 @@ let u = function(e) {
         size: "md",
         color: "currentColor",
         className: c.icon,
-        "aria-label": l.intl.string(l.t.pKZ4Iy)
+        "aria-label": l.intl.string(l.t.pKZ4I8)
       });
       break;
     case "thread":
@@ -55,7 +55,7 @@ let u = function(e) {
         size: "md",
         color: "currentColor",
         className: c.icon,
-        "aria-label": l.intl.string(l.t["7Xm5QE"])
+        "aria-label": l.intl.string(l.t["7Xm5QI"])
       });
       break;
     case "text":
@@ -63,7 +63,7 @@ let u = function(e) {
         size: "md",
         color: "currentColor",
         className: c.icon,
-        "aria-label": l.intl.string(l.t.GK18KC)
+        "aria-label": l.intl.string(l.t.GK18KJ)
       });
       break;
     case "forum":
@@ -71,7 +71,7 @@ let u = function(e) {
         size: "md",
         color: "currentColor",
         className: c.icon,
-        "aria-label": l.intl.string(l.t.GbryDQ)
+        "aria-label": l.intl.string(l.t.GbryDd)
       });
       break;
     case "post":
@@ -79,7 +79,7 @@ let u = function(e) {
         size: "md",
         color: "currentColor",
         className: c.icon,
-        "aria-label": l.intl.string(l.t.Y4REmJ)
+        "aria-label": l.intl.string(l.t.Y4REmB)
       });
       break;
     case "home":
@@ -88,7 +88,7 @@ let u = function(e) {
         size: "md",
         color: "currentColor",
         className: c.icon,
-        "aria-label": l.intl.string(l.t.VbpLyc)
+        "aria-label": l.intl.string(l.t.VbpLyU)
       });
       break;
     case "browse":
@@ -97,7 +97,7 @@ let u = function(e) {
         size: "md",
         color: "currentColor",
         className: c.icon,
-        "aria-label": l.intl.string(l.t.et6wam)
+        "aria-label": l.intl.string(l.t.et6wav)
       });
       break;
     case "message":
@@ -105,7 +105,7 @@ let u = function(e) {
         size: "md",
         color: "currentColor",
         className: c.icon,
-        "aria-label": l.intl.string(l.t.BAB0yM)
+        "aria-label": l.intl.string(l.t.BAB0yK)
       });
       break;
     case "locked":
@@ -113,7 +113,7 @@ let u = function(e) {
         size: "md",
         color: "currentColor",
         className: c.icon,
-        "aria-label": l.intl.string(l.t["/YzI6+"])
+        "aria-label": l.intl.string(l.t["/YzI63"])
       });
       break;
     case "media":
@@ -129,7 +129,7 @@ let u = function(e) {
         size: "md",
         color: "currentColor",
         className: c.icon,
-        "aria-label": l.intl.string(l.t.ghtnsr)
+        "aria-label": l.intl.string(l.t.ghtnss)
       })
   }
   return (0, r.jsxs)("span", {

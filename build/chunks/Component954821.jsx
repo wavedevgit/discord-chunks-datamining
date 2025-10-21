@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk305342 = require("./305342.jsx"),
   Chunk293810 = require("./293810.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk665508 = require("./665508.js");
+  Chunk640749 = require("./640749.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -72,7 +72,7 @@ let b = "MMMM Do, YYYY",
       submitting: I
     } = y(E), T = async () => {
       await O(a.id) && c()
-    }, S = i.role_benefits.benefits.filter(e => e.ref_type === p.Qs.CHANNEL), A = i.role_benefits.benefits.filter(e => e.ref_type === p.Qs.INTANGIBLE), C = o()(a.currentPeriodEnd).format(b), N = h.intl.formatToPlainString(h.t.KsMRPz, {
+    }, S = i.role_benefits.benefits.filter(e => e.ref_type === p.Qs.CHANNEL), A = i.role_benefits.benefits.filter(e => e.ref_type === p.Qs.INTANGIBLE), C = o()(a.currentPeriodEnd).format(b), N = h.intl.formatToPlainString(h.t.KsMRP5, {
       numChannels: S.length,
       numAdditionalBenefits: A.length,
       subscriptionEndDate: C
@@ -81,16 +81,16 @@ let b = "MMMM Do, YYYY",
       transitionState: t,
       "aria-labelledby": g,
       actions: [{
-        text: h.intl.string(h.t.EP6EPT),
+        text: h.intl.string(h.t.EP6EPb),
         variant: "secondary",
         onClick: c
       }, {
         variant: "critical-primary",
-        text: h.intl.string(h.t.F6lUDA),
+        text: h.intl.string(h.t.F6lUDF),
         onClick: T,
         loading: I
       }],
-      title: h.intl.string(h.t.O6l5tL),
+      title: h.intl.string(h.t.O6l5tM),
       subtitle: N,
       onClose: c,
       children: (0, r.jsxs)(l.Kqy, {

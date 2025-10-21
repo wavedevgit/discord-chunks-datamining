@@ -31,7 +31,7 @@ var a, Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk402920 = require("./402920.js");
+  Chunk450433 = require("./450433.js");
 let Z = [
   [0, 30],
   [0, 30],
@@ -59,7 +59,7 @@ function M(e) {
     if ((null == J || null == (t = J.tenantMetadata) || null == (e = t.socialLayer) ? true : e.expiresAt) == null) return null;
     let n = u()(),
       a = u()(J.tenantMetadata.socialLayer.expiresAt).diff(n, "days");
-    return a <= 1 ? N.intl.string(N.t.Bc13HB) : N.intl.format(N.t.Io7ozs, {
+    return a <= 1 ? N.intl.string(N.t.Bc13HF) : N.intl.format(N.t.Io7ozn, {
       days: a
     })
   }, [null == J || null == (n = J.tenantMetadata) || null == (t = n.socialLayer) ? true : t.expiresAt]), en = (null == J || null == (i = J.tenantMetadata) || null == (a = i.socialLayer) ? true : a.cardBackgroundImageAssetId) != null && null != (G = y.Z.toURLSafe((0, j._W)(W, null == J ? true : J.tenantMetadata.socialLayer.cardBackgroundImageAssetId, 1024, "png"))) ? G : true, [ea, el] = (0, b.Cf)(null == en ? true : en.toString(), "#000000"), er = r.useMemo(() => {
@@ -151,7 +151,7 @@ function M(e) {
                 isGift: false
               })
             },
-            text: N.intl.format(N.t.Xp5WTk, {
+            text: N.intl.format(N.t.Xp5WTn, {
               price: (0, _.T4)(null != (F = null == (w = J.price) ? true : w.amount) ? F : 0, null != (U = null == (T = J.price) ? true : T.currency) ? U : A.pK.USD)
             }),
             fullWidth: true

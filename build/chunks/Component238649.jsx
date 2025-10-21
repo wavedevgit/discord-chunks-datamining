@@ -31,7 +31,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk254139 = require("./254139.jsx"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk200605 = require("./200605.js");
+  Chunk350169 = require("./350169.js");
 let w = (e, t) => {
     let {
       className: n,
@@ -71,7 +71,7 @@ let w = (e, t) => {
                 variant: "display-md",
                 color: "header-primary",
                 className: P.header,
-                children: R.intl.string(R.t.YCZldH)
+                children: R.intl.string(R.t.YCZldK)
               })
             }), (0, r.jsxs)("div", {
               className: P.body,

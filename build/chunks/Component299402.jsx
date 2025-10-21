@@ -1,4 +1,4 @@
-/** Chunk was on 27662 **/
+/** Chunk was on 24209 **/
 /** chunk id: 299402, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk867581 = require("./867581.jsx"),
   Chunk675999 = require("./675999.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk559409 = require("./559409.js");
+  Chunk719889 = require("./719889.js");
 
 function O(e) {
   let {
@@ -28,12 +28,12 @@ function O(e) {
     onClose: O,
     onSlideChange: S,
     hasJoinButton: E
-  } = e, [b, C] = o.useState(n), g = (0, c.Z)(b), [h, x] = o.useState(null), [w, L] = o.useState(null), [v, y] = o.useState(null), [D, j] = o.useState(false);
+  } = e, [b, C] = o.useState(n), h = (0, c.Z)(b), [g, x] = o.useState(null), [w, L] = o.useState(null), [v, y] = o.useState(null), [D, j] = o.useState(false);
   o.useEffect(() => {
     C(n)
   }, [C, n]), o.useEffect(() => {
-    b !== g && S(b)
-  }, [S, b, g]);
+    b !== h && S(b)
+  }, [S, b, h]);
   let A = o.useCallback(e => {
       C(I._m.CREATION_INTENT), L(e), u.default.track(N.rMx.GUILD_TEMPLATE_SELECTED, {
         template_name: e.id,
@@ -97,7 +97,7 @@ function O(e) {
               onGuildCreated: M,
               onClose: O,
               onBack: P,
-              isSlideReady: h === I._m.CUSTOMIZE_GUILD,
+              isSlideReady: g === I._m.CUSTOMIZE_GUILD,
               isCommunity: D
             })
           }), (0, r.jsx)(s.Mi4, {
@@ -108,7 +108,7 @@ function O(e) {
               createdGuildId: v,
               onClose: O,
               onChannelPromptCompleted: k,
-              isSlideReady: h === I._m.CHANNEL_PROMPT
+              isSlideReady: g === I._m.CHANNEL_PROMPT
             })
           }), (0, r.jsx)(s.Mi4, {
             id: I._m.JOIN_GUILD,
@@ -117,7 +117,7 @@ function O(e) {
             children: (0, r.jsx)(f.Z, {
               onBack: P,
               onClose: O,
-              isSlideReady: h === I._m.JOIN_GUILD
+              isSlideReady: g === I._m.JOIN_GUILD
             })
           })]
         })

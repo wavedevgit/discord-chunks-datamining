@@ -30,7 +30,7 @@ function d(t) {
   return (0, i.jsx)(r.u_l, {
     title: u.intl.string(u.t["dOWb+f"]),
     actions: [{
-      text: u.intl.string(u.t.cpT0Cg),
+      text: u.intl.string(u.t.cpT0Cq),
       onClick: e,
       variant: "primary"
     }],

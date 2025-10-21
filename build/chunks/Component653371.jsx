@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk436620 = require("./436620.js"),
   Chunk431138 = require("./431138.js"),
   Chunk330711 = require("./330711.js"),
-  Chunk234517 = require("./234517.js");
+  Chunk89004 = require("./89004.js");
 
 function k(e, t, a) {
   return t in e ? Object.defineProperty(e, t, {
@@ -44,11 +44,11 @@ class A extends Chunk647438.PureComponent {
       avoidRouter: i
     } = this.props;
     return (0, Chunk951288.jsxs)("header", {
-      className: l()(Chunk234517.header, module),
+      className: l()(Chunk89004.header, module),
       children: [(0, Chunk951288.jsxs)("nav", {
-        className: Chunk234517.headerInner,
+        className: Chunk89004.headerInner,
         children: [(0, Chunk951288.jsxs)("div", {
-          className: Chunk234517.headerLogo,
+          className: Chunk89004.headerLogo,
           children: [(0, Chunk951288.jsx)(Chunk120356, {
             tag: "div",
             eventName: g,
@@ -62,19 +62,19 @@ class A extends Chunk647438.PureComponent {
               children: (0, Chunk951288.jsx)(Chunk787907.O, {})
             })
           }), null != exports ? (0, Chunk951288.jsx)("a", {
-            className: Chunk234517.skipToContent,
+            className: Chunk89004.skipToContent,
             href: "#".concat(exports),
             children: require
           }) : null]
         }), (0, Chunk951288.jsx)("ul", {
-          className: Chunk234517.headerNav,
+          className: Chunk89004.headerNav,
           children: (0, Chunk951288.jsx)(Chunk34211.o, {
             avoidRouter: Chunk771950,
             TrackClick: Chunk120356,
-            styles: Chunk234517
+            styles: Chunk89004
           })
         }), (0, Chunk951288.jsxs)("ul", {
-          className: Chunk234517.headerNavRight,
+          className: Chunk89004.headerNavRight,
           children: [this.renderSocialMediaNav(), (0, Chunk951288.jsx)(Chunk643103.p, {
             onChange: Chunk647438
           })]

@@ -1,4 +1,4 @@
-/** Chunk was on 3408 **/
+/** Chunk was on 17013 **/
 /** chunk id: 303385, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -14,7 +14,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk644646 = require("./644646.jsx"),
   Chunk46140 = require("./46140.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk96656 = require("./96656.js");
+  Chunk895758 = require("./895758.js");
 let g = e => {
   let {
     quest: t,
@@ -101,7 +101,7 @@ let g = e => {
           color: "always-white",
           lineClamp: 1,
           variant: "text-xs/medium",
-          children: p.intl.string((null == h ? true : h.label2) ? p.t["3mgEQU"] : p.t["1Wvve3"])
+          children: p.intl.string((null == h ? true : h.label2) ? p.t["3mgEQf"] : p.t["1Wvve2"])
         })
       })]
     })]

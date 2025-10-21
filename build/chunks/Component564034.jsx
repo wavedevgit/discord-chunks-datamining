@@ -4,7 +4,7 @@ require.d(exports, {
   i: () => l
 });
 var Chunk951288 = require("./951288.js"),
-  Chunk377900 = require("./377900.js");
+  Chunk471806 = require("./471806.js");
 let l = () => (0, Chunk951288.jsx)("div", {
-  className: Chunk377900.divider
+  className: Chunk471806.divider
 })

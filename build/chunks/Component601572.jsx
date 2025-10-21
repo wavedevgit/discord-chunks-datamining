@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk747545 = require("./747545.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk146371 = require("./146371.js");
+  Chunk142768 = require("./142768.js");
 
 function O(e) {
   let {
@@ -30,7 +30,7 @@ function O(e) {
     videoEnabled: a,
     onEnable: O,
     onClose: P
-  } = e, _ = m.Z.getCameraComponent(), y = p.qF.useSetting(), [j, x] = n.useState((0, g.P)(w.default.getCurrentUser())), S = (0, s.O)(), {
+  } = e, _ = m.Z.getCameraComponent(), y = p.qF.useSetting(), [j, x] = n.useState((0, h.P)(w.default.getCurrentUser())), S = (0, s.O)(), {
     analyticsLocations: A
   } = (0, u.ZP)(d.Z.CAMERA_PREVIEW);
   n.useEffect(() => {
@@ -63,25 +63,25 @@ function O(e) {
           }, S.location)
         })
       } catch (e) {}
-      await P(), (0, h.Up)(j)
+      await P(), (0, g.Up)(j)
     }, [j, S.location, P]),
-    I = n.useCallback(async () => {
+    D = n.useCallback(async () => {
       await M(), l.Z.setVideoEnabled(true), null == O || O()
     }, [M, O]),
-    L = n.useMemo(() => [{
+    I = n.useMemo(() => [{
       variant: "primary",
-      text: a ? k.intl.string(k.t.KQENho) : k.intl.string(k.t.kgIe9f),
-      onClick: a ? M : I
-    }], [M, I, a]);
+      text: a ? k.intl.string(k.t.KQENhq) : k.intl.string(k.t.kgIe9a),
+      onClick: a ? M : D
+    }], [M, D, a]);
   return (0, r.jsx)(u.Gt, {
     value: A,
     children: (0, r.jsx)(o.Z, {
       page: C.ZY5.PREVIEW_CAMERA_MODAL,
       children: (0, r.jsx)(i.Modal, {
         size: "md",
-        title: a ? k.intl.string(k.t.LAwwbW) : k.intl.string(k.t["/HITVF"]),
+        title: a ? k.intl.string(k.t.LAwwbQ) : k.intl.string(k.t["/HITVD"]),
         actionBarInput: (0, r.jsx)(c.Checkbox, {
-          label: k.intl.string(k.t["3Ppr1t"]),
+          label: k.intl.string(k.t["3Ppr1h"]),
           labelType: "secondary",
           checked: y,
           onChange: () => {
@@ -90,7 +90,7 @@ function O(e) {
             })
           }
         }),
-        actions: L,
+        actions: I,
         onClose: P,
         transitionState: t,
         children: (0, r.jsx)(v.Z, {

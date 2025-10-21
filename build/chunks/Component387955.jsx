@@ -13,7 +13,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk572264 = require("./572264.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk38579 = require("./38579.js"),
+  Chunk631936 = require("./631936.js"),
   Chunk849399 = require("./849399.js");
 
 function f(e) {
@@ -30,19 +30,19 @@ function f(e) {
       className: m.title,
       color: "header-primary",
       variant: "heading-xl/bold",
-      children: d.intl.format(d.t["au+lPj"], {
+      children: d.intl.format(d.t["au+lPv"], {
         n: t.tag
       })
     }), (0, r.jsx)(o.Text, {
       className: m.subtitleInfo,
       color: "header-secondary",
       variant: "text-md/medium",
-      children: d.intl.format(d.t["5fwX5+"], {})
+      children: d.intl.format(d.t["5fwX56"], {})
     }), (0, r.jsx)(o.Text, {
       className: m.prompt,
       color: "header-secondary",
       variant: "text-sm/medium",
-      children: d.intl.format(d.t["i2vB8/"], {
+      children: d.intl.format(d.t.i2vB8z, {
         helpdeskArticle: s.Z.getArticleURL(u.BhN.POMELO_FAQ)
       })
     }), (0, r.jsxs)("div", {
@@ -58,7 +58,7 @@ function f(e) {
       }), (0, r.jsx)(o.Text, {
         color: "header-secondary",
         variant: "text-sm/medium",
-        children: d.intl.format(d.t.SzUaZ2, {})
+        children: d.intl.format(d.t.SzUaZ1, {})
       })]
     }), (0, r.jsxs)("div", {
       className: a()([m.infoItem, m.infoItemSpacing]),
@@ -71,7 +71,7 @@ function f(e) {
       }), (0, r.jsx)(o.Text, {
         color: "header-secondary",
         variant: "text-sm/medium",
-        children: d.intl.format(d.t["UwPc+P"], {})
+        children: d.intl.format(d.t["UwPc+G"], {})
       })]
     }), (0, r.jsxs)("div", {
       className: m.infoItem,
@@ -84,7 +84,7 @@ function f(e) {
       }), (0, r.jsx)(o.Text, {
         color: "header-secondary",
         variant: "text-sm/medium",
-        children: d.intl.format(d.t.okLjjo, {
+        children: d.intl.format(d.t.okLjju, {
           username: t.tag
         })
       })]

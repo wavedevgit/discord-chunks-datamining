@@ -23,7 +23,7 @@ var Chunk35149 = require("./35149.js"),
   Chunk765305 = require("./765305.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let P = "YYYYMMDDTHHmmss",
+let O = "YYYYMMDDTHHmmss",
   m = "YYYY-MM-DDTHH:mm:ss",
   j = /RRULE:.*/;
 
@@ -34,22 +34,22 @@ function N(t, e, n, r) {
     T = (0, a.e7)([v.ZP], () => v.ZP.getGuildScheduledEvent(t), [t]),
     x = (0, a.e7)([f.Z], () => f.Z.getGuild(e), [e]);
   if (S || null == D || null == T) return null;
-  w = T.entity_type === y.WX.EXTERNAL ? T.entity_metadata.location : null != n && null != x ? h.intl.formatToPlainString(h.t["2t8L09"], {
+  w = T.entity_type === y.WX.EXTERNAL ? T.entity_metadata.location : null != n && null != x ? P.intl.formatToPlainString(P.t["2t8L04"], {
     channelName: n.name,
     guildName: x.name
-  }) : h.intl.string(h.t.VSgOVl);
+  }) : P.intl.string(P.t.VSgOVg);
   let I = o()(T.scheduled_start_time),
     C = null != T.scheduled_end_time ? o()(T.scheduled_end_time) : I,
-    G = null != T.description && "" !== T.description ? g.ZP.unparse(T.description, null != (u = null == n ? true : n.id) ? u : O.lds, true) : "",
+    G = null != T.description && "" !== T.description ? g.ZP.unparse(T.description, null != (u = null == n ? true : n.id) ? u : h.lds, true) : "",
     L = (0, p.KV)(T.recurrence_rule),
     U = null != L ? (0, Z.Ho)(L) : null,
     {
-      startTime: M,
+      startTime: A,
       endTime: V
     } = D,
-    A = null != (N = o()(M)) ? N : I,
-    R = null != (_ = o()(null != V ? V : M)) ? _ : I,
-    k = () => {
+    M = null != (N = o()(A)) ? N : I,
+    k = null != (_ = o()(null != V ? V : A)) ? _ : I,
+    R = () => {
       let t = i()();
       t.createEvent({
         start: I,
@@ -61,18 +61,18 @@ function N(t, e, n, r) {
       }), b.isPlatformEmbedded ? d.Z.fileManager.saveWithDialog(t.toString(), "discord-event.ics") : window.open(t.toURL(), "_blank")
     };
   return (0, l.jsxs)(s.sNh, {
-    id: h.intl.string(h.t.k5pvjo),
-    label: h.intl.string(h.t.k5pvjo),
-    action: k,
+    id: P.intl.string(P.t.k5pvjo),
+    label: P.intl.string(P.t.k5pvjo),
+    action: R,
     children: [(0, l.jsx)(s.sNh, {
-      id: h.intl.string(h.t.JKSLRE),
-      label: h.intl.string(h.t.JKSLRE),
+      id: P.intl.string(P.t.JKSLRH),
+      label: P.intl.string(P.t.JKSLRH),
       action: () => {
         var t;
         let e = null == U ? true : U.toString(),
           n = {
             text: T.name,
-            dates: "".concat(I.format(P), "/").concat(C.format(P)),
+            dates: "".concat(I.format(O), "/").concat(C.format(O)),
             details: G,
             action: "TEMPLATE",
             location: w,
@@ -82,18 +82,18 @@ function N(t, e, n, r) {
         window.open(l, "_blank")
       }
     }), (0, l.jsx)(s.sNh, {
-      id: h.intl.string(h.t.nrBYSU),
-      label: h.intl.string(h.t.nrBYSU),
-      action: k
+      id: P.intl.string(P.t.nrBYSe),
+      label: P.intl.string(P.t.nrBYSe),
+      action: R
     }), (0, l.jsx)(s.sNh, {
-      id: h.intl.string(h.t.odzaCQ),
-      label: h.intl.string(h.t.odzaCQ),
+      id: P.intl.string(P.t.odzaCd),
+      label: P.intl.string(P.t.odzaCd),
       action: () => {
         let t = {
             v: 60,
             title: T.name,
-            st: A.format(P),
-            et: R.format(P),
+            st: M.format(O),
+            et: k.format(O),
             desc: G,
             in_loc: w
           },
@@ -101,14 +101,14 @@ function N(t, e, n, r) {
         window.open(e, "_blank")
       }
     }), (0, l.jsx)(s.sNh, {
-      id: h.intl.string(h.t.rQe8EB),
-      label: h.intl.string(h.t.rQe8EB),
+      id: P.intl.string(P.t.rQe8EE),
+      label: P.intl.string(P.t.rQe8EE),
       action: () => {
         let t = {
             path: "/calendar/action/compose",
             rru: "addevent",
-            startdt: A.format(m),
-            enddt: R.format(m),
+            startdt: M.format(m),
+            enddt: k.format(m),
             subject: T.name,
             body: G,
             location: w,

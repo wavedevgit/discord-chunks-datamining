@@ -2,7 +2,7 @@
 /** chunk id: 650233, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   H: () => p,
-  default: () => f
+  default: () => g
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,20 +14,20 @@ var Chunk951288 = require("./951288.js"),
   Chunk161836 = require("./161836.jsx"),
   Chunk630724 = require("./630724.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk480963 = require("./480963.js");
+  Chunk759137 = require("./759137.js");
 
-function f(e) {
+function g(e) {
   let {
     transitionState: t,
     onClose: n,
-    isNUXFlow: f
+    isNUXFlow: g
   } = e;
   return l.useEffect(() => {
-    o.Z.hideHubUpsell(), f && s.Z.flowStep(u.MK.ORGANIC, u.EW.HUB_CONNECTION)
-  }, [f]), (0, r.jsx)(a.Y0X, {
-    className: g.modalRoot,
+    o.Z.hideHubUpsell(), g && s.Z.flowStep(u.MK.ORGANIC, u.EW.HUB_CONNECTION)
+  }, [g]), (0, r.jsx)(a.Y0X, {
+    className: f.modalRoot,
     transitionState: t,
-    "aria-label": m.intl.string(m.t["3khS8P"]),
+    "aria-label": m.intl.string(m.t["3khS8H"]),
     impression: {
       impressionName: i.ImpressionNames.HUB_EMAIL_SIGNUP
     },
@@ -38,19 +38,19 @@ function f(e) {
         paddingRight: "0px"
       },
       paddingFix: false,
-      className: g.modalContent,
+      className: f.modalContent,
       children: (0, r.jsxs)("div", {
-        className: g.container,
+        className: f.container,
         children: [(0, r.jsx)("div", {
-          className: g.sidebarContainer,
+          className: f.sidebarContainer,
           children: (0, r.jsx)(d.Z, {})
         }), (0, r.jsxs)("div", {
-          className: g.contentContainer,
+          className: f.contentContainer,
           children: [(0, r.jsx)(a.olH, {
             onClick: n,
-            className: g.closeButton
+            className: f.closeButton
           }), (0, r.jsx)(c.Z, {
-            isNUXFlow: f,
+            isNUXFlow: g,
             onClose: n
           })]
         })]
@@ -63,12 +63,12 @@ let p = e => {
     invite: t
   } = e;
   return (0, r.jsxs)("div", {
-    className: g.container,
+    className: f.container,
     children: [(0, r.jsx)("div", {
-      className: g.sidebarContainer,
+      className: f.sidebarContainer,
       children: (0, r.jsx)(d.Z, {})
     }), (0, r.jsx)("div", {
-      className: g.contentContainer,
+      className: f.contentContainer,
       children: (0, r.jsx)(c.Z, {
         invite: t
       })

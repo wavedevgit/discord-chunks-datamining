@@ -21,9 +21,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk626698 = require("./626698.jsx"),
   Chunk612776 = require("./612776.js"),
   Chunk231338 = require("./231338.js"),
-  Chunk509950 = require("./509950.js"),
+  Chunk124798 = require("./124798.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk356379 = require("./356379.js");
+  Chunk691446 = require("./691446.js");
 
 function S(i) {
   let {} = i, [t, r] = n.useState(0), a = f.K5[t], S = n.useCallback(() => {
@@ -34,7 +34,7 @@ function S(i) {
     theme: g.BR.DARKER,
     children: i => (0, e.jsxs)("div", {
       className: l()(E.container, i),
-      "aria-label": Z.intl.string(T.default["CdU/PD"]),
+      "aria-label": Z.intl.string(T.default["CdU/PF"]),
       children: [(0, e.jsxs)(s.MyZ, {
         activeSlide: a,
         children: [(0, e.jsx)(s.Mi4, {
@@ -45,7 +45,7 @@ function S(i) {
           children: (0, e.jsx)(v.Z, {})
         }), (0, e.jsx)(s.Mi4, {
           id: f.Ww.EMOJIS,
-          children: (0, e.jsx)(o.Z, {})
+          children: (0, e.jsx)(c.Z, {})
         }), (0, e.jsx)(s.Mi4, {
           id: f.Ww.VOICE,
           children: (0, e.jsx)(j.Z, {})
@@ -82,9 +82,9 @@ function S(i) {
             variant: "display-sm",
             color: "text-primary",
             className: E.logoText,
-            children: Z.intl.string(T.default["CdU/PD"])
+            children: Z.intl.string(T.default["CdU/PF"])
           })]
-        }), (0, e.jsx)(c.Z, {
+        }), (0, e.jsx)(o.Z, {
           currentStep: t,
           totalSteps: f.t$.length,
           className: E.stepIndicator
@@ -99,7 +99,7 @@ function S(i) {
         children: (0, e.jsx)(s.Text, {
           variant: "display-sm",
           color: "text-primary",
-          children: Z.intl.string(Z.t.PDTjLC)
+          children: Z.intl.string(Z.t.PDTjLN)
         })
       })]
     })

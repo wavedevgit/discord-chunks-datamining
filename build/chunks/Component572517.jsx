@@ -1,7 +1,7 @@
-/** Chunk was on 37786 **/
+/** Chunk was on 84071 **/
 /** chunk id: 572517, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  c: () => h
+  c: () => _
 });
 var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
@@ -13,40 +13,40 @@ var Chunk951288 = require("./951288.js"),
   Chunk347896 = require("./347896.js"),
   Chunk717401 = require("./717401.js"),
   Chunk897942 = require("./897942.jsx"),
-  Chunk947007 = require("./947007.js");
+  Chunk432483 = require("./432483.js");
 
-function h() {
+function _() {
   var e, t;
   let n = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
-    h = (0, Chunk410030.ZP)(),
-    _ = (0, Chunk780384.wj)(h),
+    _ = (0, Chunk410030.ZP)(),
+    h = (0, Chunk780384.wj)(_),
     m = (0, Chunk347896.Z)(),
     f = null == m ? true : m.planSelectionBanner,
     {
       claimableRewards: x
     } = (0, Chunk987209.wD)();
   if (null == f || null == x) return null;
-  let g = null == (e = f.getBackgroundImageUrl) ? true : module.call(f, _),
+  let g = null == (e = f.getBackgroundImageUrl) ? true : module.call(f, h),
     j = (0, Chunk717401.Yr)(g),
     b = null == (t = f.gradientConfig) ? true : exports.call(f, {
-      isDarkMode: _,
+      isDarkMode: h,
       isAndroid: false
     }),
     v = (0, Chunk717401.Tl)(b);
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk947007.promotionalFooterBanner,
+    className: Chunk432483.promotionalFooterBanner,
     style: null != j ? j : v,
     children: [(0, Chunk951288.jsx)("div", {
-      className: Chunk947007.avatar,
+      className: Chunk432483.avatar,
       children: (0, Chunk951288.jsx)(Chunk897942.Z, {
         claimableRewards: x,
-        maxRewardImageSrc: f.getImageUrl(_, require),
+        maxRewardImageSrc: f.getImageUrl(h, require),
         size: Chunk481060.EFr.SIZE_40,
         imageScaling: 2
       })
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/medium",
-      className: Chunk947007.bannerText,
+      className: Chunk432483.bannerText,
       color: "always-white",
       children: f.desktopBannerText(x.length)
     })]

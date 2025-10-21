@@ -30,7 +30,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk856651 = require("./856651.js"),
   Chunk49898 = require("./49898.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk536356 = require("./536356.js");
+  Chunk455392 = require("./455392.js");
 
 function T(e) {
   var n, t;
@@ -45,47 +45,47 @@ function T(e) {
   } = e;
   null == P && (P = true);
   let C = null != (t = j.metadata) ? t : {},
-    S = P ? (0, f.FI)(C[_.PC.CREATED_AT], y) : null,
+    S = P ? (0, f.FI)(C[Z.PC.CREATED_AT], y) : null,
     w = (0, c.dQu)(r.Z.unsafe_rawColors.TWITTER).hex(),
-    R = N.intl.string(N.t["6H6h1t"]);
+    D = N.intl.string(N.t["6H6h1r"]);
   if (P) switch (j.type) {
-    case Z.ABu.REDDIT:
+    case _.ABu.REDDIT:
       i = (0, x.oP)(C);
       break;
-    case Z.ABu.STEAM:
+    case _.ABu.STEAM:
       i = (0, x.Dq)(C);
       break;
-    case Z.ABu.BLUESKY:
-    case Z.ABu.MASTODON:
-    case Z.ABu.TWITTER:
-      i = (0, x.rJ)(C), "1" === C[_.PC.TWITTER_VERIFIED] && (d = w, R = N.intl.string(N.t.Jebrw8));
+    case _.ABu.BLUESKY:
+    case _.ABu.MASTODON:
+    case _.ABu.TWITTER:
+      i = (0, x.rJ)(C), "1" === C[Z.PC.TWITTER_VERIFIED] && (d = w, D = N.intl.string(N.t.Jebrww));
       break;
-    case Z.ABu.PAYPAL:
+    case _.ABu.PAYPAL:
       i = (0, x.li)(C);
       break;
-    case Z.ABu.EBAY:
+    case _.ABu.EBAY:
       i = (0, x.ul)(C);
       break;
-    case Z.ABu.TIKTOK:
+    case _.ABu.TIKTOK:
       i = (0, x.hf)(C)
   }
-  let D = u.Z.get((0, p.rR)(j.type)),
-    L = null == D || null == (n = D.getPlatformUserUrl) ? true : n.call(D, j);
+  let R = u.Z.get((0, p.rR)(j.type)),
+    L = null == R || null == (n = R.getPlatformUserUrl) ? true : n.call(R, j);
   null != E && E ? v = (0, l.jsx)(c.kZF, {
     size: "md",
     color: "currentColor",
     className: o()(A.__invalid_connectedAccountOpenIconContainer, A.connectedAccountHideIcon)
   }) : null != L && (v = (0, l.jsx)(c.Anchor, {
     href: L,
-    "aria-label": (null == D ? true : D.name) != null ? "".concat(D.name, ", ").concat(j.name, ", ").concat(N.intl.string(N.t.q5jLJC)) : "".concat(j.name, ", ").concat(N.intl.string(N.t.q5jLJC)),
+    "aria-label": (null == R ? true : R.name) != null ? "".concat(R.name, ", ").concat(j.name, ", ").concat(N.intl.string(N.t.q5jLJB)) : "".concat(j.name, ", ").concat(N.intl.string(N.t.q5jLJB)),
     onClick: e => {
       var n;
-      n = j.type, (0, m.yw)(Z.rMx.CONNECTED_ACCOUNT_VIEWED, {
+      n = j.type, (0, m.yw)(_.rMx.CONNECTED_ACCOUNT_VIEWED, {
         platform_type: n,
         other_user_id: O
       }), (0, I.q)({
         href: L,
-        trusted: (null == D ? true : D.type) !== Z.ABu.DOMAIN
+        trusted: (null == R ? true : R.type) !== _.ABu.DOMAIN
       }, e)
     },
     children: (0, l.jsx)(b.Z, {
@@ -100,20 +100,20 @@ function T(e) {
       color: null != d ? d : M,
       forcedIconColor: B,
       size: 16,
-      tooltipText: R
+      tooltipText: D
     }) : null;
   return (0, l.jsxs)("li", {
     className: o()(A.connectedAccountContainer, null != i && i.length > 0 || null != S ? A.connectedAccountContainerWithMetadata : null, T),
     children: [(0, l.jsxs)("div", {
       className: A.connectedAccount,
       children: [(0, l.jsx)(s.u, {
-        __unsupportedReactNodeAsText: null == D ? true : D.name,
+        __unsupportedReactNodeAsText: null == R ? true : R.name,
         children: (0, l.jsx)("img", {
-          alt: N.intl.formatToPlainString(N.t.rtm15O, {
-            name: null == D ? true : D.name
+          alt: N.intl.formatToPlainString(N.t.rtm15P, {
+            name: null == R ? true : R.name
           }),
           className: A.connectedAccountIcon,
-          src: (0, a.wj)(g) ? null == D ? true : D.icon.darkSVG : null == D ? true : D.icon.lightSVG
+          src: (0, a.wj)(g) ? null == R ? true : R.icon.darkSVG : null == R ? true : R.icon.lightSVG
         })
       }), (0, l.jsxs)("div", {
         className: A.connectedAccountNameContainer,
@@ -135,7 +135,7 @@ function T(e) {
         }), null != S ? (0, l.jsx)(c.Text, {
           variant: "text-xs/normal",
           color: "header-secondary",
-          children: N.intl.format(N.t["9rfonp"], {
+          children: N.intl.format(N.t["9rfonh"], {
             date: S
           })
         }) : null]
@@ -200,7 +200,7 @@ function P(e) {
         children: (0, l.jsx)(c.Text, {
           variant: "text-xs/normal",
           color: "text-muted",
-          children: N.intl.format(N.t.zIT9YG, {
+          children: N.intl.format(N.t.zIT9YA, {
             applicationHook: () => (0, l.jsxs)("div", {
               className: A.connectedAccountPoweredByText,
               children: [null != n.application.bot ? (0, l.jsx)(d.Z, {

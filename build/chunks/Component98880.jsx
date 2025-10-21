@@ -44,7 +44,7 @@ var i, Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk217702 = require("./217702.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk159498 = require("./159498.js"),
+  Chunk992878 = require("./992878.js"),
   Chunk413097 = require("./413097.js"),
   Chunk969728 = require("./969728.js");
 
@@ -174,7 +174,7 @@ function Q(e) {
     className: b,
     onClick: n,
     onContextMenu: v,
-    "aria-label": B.intl.formatToPlainString(B.t["zLhr9/"], {
+    "aria-label": B.intl.formatToPlainString(B.t["zLhr9+"], {
       applicationName: y,
       applicationDescription: x
     }),
@@ -254,7 +254,7 @@ function J(e) {
           children: (0, l.jsx)(u.Heading, {
             variant: "text-xxs/medium",
             color: "header-primary",
-            children: B.intl.string(B.t["/eVltr"])
+            children: B.intl.string(B.t["/eVltv"])
           })
         }), S && (0, l.jsx)(K, {}), T !== p.ww.NONE && (0, l.jsx)(j.Z, {
           labelType: T
@@ -288,7 +288,7 @@ function J(e) {
             children: (0, l.jsx)(u.Text, {
               variant: "text-xxs/semibold",
               color: "text-muted",
-              children: B.intl.string(B.t["/eVltr"])
+              children: B.intl.string(B.t["/eVltv"])
             })
           }) : null, (0, l.jsx)($, {
             application: t
@@ -308,11 +308,11 @@ function J(e) {
 
 function K() {
   return (0, Chunk951288.jsx)(Chunk28664.u, {
-    text: Chunk388032.intl.string(Chunk388032.t.CfTySU),
+    text: Chunk388032.intl.string(Chunk388032.t.CfTySQ),
     children: (0, Chunk951288.jsx)("div", {
-      className: Chunk159498.devShelfBadge,
+      className: Chunk992878.devShelfBadge,
       children: (0, Chunk951288.jsx)(Chunk880448.Z, {
-        className: Chunk159498.devShelfIcon
+        className: Chunk992878.devShelfIcon
       })
     })
   })
@@ -566,7 +566,7 @@ function ea(e) {
         variant: N,
         disabled: m || h,
         onClick: x,
-        "aria-label": B.intl.formatToPlainString(B.t["XjP/R0"], {
+        "aria-label": B.intl.formatToPlainString(B.t["XjP/R+"], {
           buttonText: j,
           applicationName: n.name
         }),

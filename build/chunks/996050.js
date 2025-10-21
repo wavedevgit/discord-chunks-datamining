@@ -41,7 +41,7 @@ function c(e, t, n, c, d) {
     onNotificationShow: () => {
       y()
     },
-    confirmText: u.intl.string(u.t.VJlc0d),
+    confirmText: u.intl.string(u.t.VJlc0S),
     onConfirmClick: (l, o) => {
       var a;
       i.Z.join({

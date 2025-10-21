@@ -30,14 +30,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk474936 = require("./474936.js"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk640637 = require("./640637.js");
+  Chunk131151 = require("./131151.js");
 
 function P(e) {
   let {
     onClose: t
   } = e;
   return (0, r.jsx)(u.P3F, {
-    "aria-label": N.intl.string(N.t.WAI6xs),
+    "aria-label": N.intl.string(N.t.WAI6xu),
     onClick: t,
     className: R.upsellCloseIconWrapper,
     children: (0, r.jsx)(u.Dio, {
@@ -69,7 +69,7 @@ function w(e) {
         size: "sm",
         variant: "secondary",
         icon: u.SrA,
-        text: N.intl.string(N.t["0Q61kJ"]),
+        text: N.intl.string(N.t["0Q61kF"]),
         onClick: () => {
           (0, E.uL)(T.Z5c.APPLICATION_STORE), null == i || i()
         }
@@ -80,7 +80,7 @@ function w(e) {
           }), null == i || i()
         },
         textOptions: {
-          textOverride: N.intl.string(N.t.x6rkDg)
+          textOverride: N.intl.string(N.t.x6rkDp)
         },
         subscriptionTier: A.Si.TIER_2,
         premiumModalAnalyticsLocation: {
@@ -99,7 +99,7 @@ function w(e) {
         action: I.yM.VISIT_SHOP,
         fullWidth: true,
         icon: u.EOn,
-        text: N.intl.string(N.t.b2d0Nz),
+        text: N.intl.string(N.t.b2d0N0),
         size: "sm",
         variant: "secondary",
         onClick: () => {
@@ -131,7 +131,7 @@ function D(e) {
   let y = (0, r.jsx)(u.Heading, {
       variant: "text-sm/normal",
       id: c,
-      children: N.intl.string(N.t.EIYbj4)
+      children: N.intl.string(N.t.EIYbj6)
     }),
     v = (0, r.jsx)(P, {
       onClose: () => {

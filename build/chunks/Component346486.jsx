@@ -36,7 +36,7 @@ class d extends(r = Chunk647438.PureComponent) {
       showDays: t,
       showUnits: n,
       className: r
-    } = this.props, l = [e.days, e.hours, e.minutes, e.seconds], a = [c.intl.string(c.t["6m/6nJ"]), c.intl.string(c.t.n7dksL), c.intl.string(c.t["1LyF1t"]), c.intl.string(c.t.QJyuxc)];
+    } = this.props, l = [e.days, e.hours, e.minutes, e.seconds], a = [c.intl.string(c.t["6m/6nM"]), c.intl.string(c.t.n7dksO), c.intl.string(c.t["1LyF1h"]), c.intl.string(c.t.QJyuxY)];
     if (0 === e.days) l.shift();
     else if (!t) {
       let e = l.shift();
@@ -59,7 +59,7 @@ class d extends(r = Chunk647438.PureComponent) {
     } = this.props;
     if (module === 1 / 0) return (0, Chunk951288.jsx)("span", {
       className: require,
-      "aria-label": Chunk388032.intl.string(Chunk388032.t.PqEzn5),
+      "aria-label": Chunk388032.intl.string(Chunk388032.t.PqEzn8),
       children: "∞"
     });
     let l = (0, Chunk55935.TD)(Date.now(), module, r);

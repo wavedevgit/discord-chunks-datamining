@@ -1,4 +1,4 @@
-/** Chunk was on 63962 **/
+/** Chunk was on 91053 **/
 /** chunk id: 842332, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   U: () => h
@@ -68,26 +68,26 @@ function h(e) {
   }, [n, l, t.id, d.parentChannelId, d.parentMessageId]), i.useEffect(() => {
     (null == d.name || "" === d.name.trim()) && !m && y && null != n && (b(true), _())
   }, [t.id, n, l, d.name, m, y, _]);
-  let j = i.useCallback(function() {
+  let O = i.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
       if (y) return {
         icon: s.$2U,
         onClick: _,
-        "aria-label": u.intl.string(u.t.ZF2oBg),
+        "aria-label": u.intl.string(u.t.ZF2oBs),
         disabled: e || f || null == n && h.textValue.trim().length < 10,
-        tooltip: u.intl.string(u.t.ZF2oBg),
+        tooltip: u.intl.string(u.t.ZF2oBs),
         loading: f
       }
     }, [y, _, f, n, h.textValue]),
-    O = i.useCallback(function() {
+    j = i.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
       return y ? (0, r.jsx)(a.u, {
-        text: u.intl.string(u.t.ZF2oBg),
+        text: u.intl.string(u.t.ZF2oBs),
         children: (0, r.jsx)(s.hU, {
           icon: s.$2U,
           variant: "secondary",
           size: "sm",
-          "aria-label": u.intl.string(u.t.ZF2oBg),
+          "aria-label": u.intl.string(u.t.ZF2oBs),
           onClick: _,
           disabled: e || f || null == n && h.textValue.trim().length < 10,
           loading: f,
@@ -99,7 +99,7 @@ function h(e) {
     isGeneratingAI: f,
     generateAIName: _,
     enableAIFeatures: y,
-    renderAiGenerateButton: O,
-    getThreadNameInputAccessory: j
+    renderAiGenerateButton: j,
+    getThreadNameInputAccessory: O
   }
 }

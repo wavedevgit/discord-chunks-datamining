@@ -21,7 +21,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk267642 = require("./267642.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk785290 = require("./785290.js");
+  Chunk566588 = require("./566588.js");
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -84,13 +84,13 @@ function T(e) {
         }
       })
     },
-    _ = l === g.Eu4.NONE ? E.intl.string(E.t.c2wsn5) : m.nW(l),
+    _ = l === g.Eu4.NONE ? E.intl.string(E.t.c2wsn6) : m.nW(l),
     y = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         className: b.tierTooltipTitle,
         children: _
       }), (0, r.jsx)("div", {
-        children: E.intl.format(E.t.If4iTU, {
+        children: E.intl.format(E.t.If4iTS, {
           subscriberCount: c
         })
       })]

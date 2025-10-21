@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk826946 = require("./826946.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk8548 = require("./8548.js"),
+  Chunk972725 = require("./972725.js"),
   Chunk129512 = require("./129512.js"),
   Chunk330065 = require("./330065.js"),
   Chunk755386 = require("./755386.js");
@@ -185,7 +185,7 @@ function T(e) {
                 className: I.memberDetailsText,
                 variant: "text-xs/normal",
                 color: "header-secondary",
-                children: y.intl.format(y.t["LC+S+v"], {
+                children: y.intl.format(y.t["LC+S+m"], {
                   membersOnline: t.presenceCount
                 })
               })]
@@ -197,7 +197,7 @@ function T(e) {
                 className: I.memberDetailsText,
                 variant: "text-xs/normal",
                 color: "header-secondary",
-                children: y.intl.format(y.t.zRl6XV, {
+                children: y.intl.format(y.t.zRl6XR, {
                   count: t.memberCount
                 })
               })]

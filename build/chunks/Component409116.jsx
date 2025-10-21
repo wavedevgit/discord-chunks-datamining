@@ -13,7 +13,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk884697 = require("./884697.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk601160 = require("./601160.js");
+  Chunk239051 = require("./239051.js");
 let f = e => {
     let {
       price: t,
@@ -51,7 +51,7 @@ let f = e => {
       variant: O = "heading-md/semibold"
     } = e, v = null != b, g = (0, s.qr)(t, n), m = y !== c.f_ && y.discountPercentage >= 5 && !v ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(o.nn4, {
-        children: d.intl.format(d.t.niC6DA, {
+        children: d.intl.format(d.t.niC6DK, {
           price: g,
           discountPercentage: y.discountPercentage
         })
@@ -67,7 +67,7 @@ let f = e => {
       })]
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(o.nn4, {
-        children: d.intl.format(d.t["6C36MD"], {
+        children: d.intl.format(d.t["6C36MF"], {
           price: g
         })
       }), (0, r.jsx)("span", {
@@ -84,8 +84,8 @@ let f = e => {
         [p.discountBackgroundColor]: v
       }, p.container, f),
       children: ["tooltip" === l ? (0, r.jsx)(i.u, {
-        text: d.intl.string(d.t.MPFyJy),
-        "aria-label": d.intl.string(d.t.X3Ekj4),
+        text: d.intl.string(d.t.MPFyJ5),
+        "aria-label": d.intl.string(d.t.X3Ekj8),
         children: (0, r.jsx)(o.SrA, {
           size: u,
           color: "currentColor",
@@ -99,12 +99,12 @@ let f = e => {
         variant: "heading-md/semibold",
         className: p.discountPill,
         children: [(0, r.jsx)(o.nn4, {
-          children: d.intl.format(d.t.rItDb2, {
+          children: d.intl.format(d.t.rItDbx, {
             discountOfferAmount: b
           })
         }), (0, r.jsx)("span", {
           "aria-hidden": true,
-          children: d.intl.formatToPlainString(d.t.AYcXGR, {
+          children: d.intl.formatToPlainString(d.t.AYcXGW, {
             discountOfferAmount: b
           })
         })]
@@ -120,7 +120,7 @@ let f = e => {
       variant: "text-md/semibold",
       className: a()(p.container, n),
       children: [(0, r.jsx)(o.nn4, {
-        children: d.intl.format(d.t["a/Y8PD"], {
+        children: d.intl.format(d.t["a/Y8PK"], {
           orbAmount: t
         })
       }), (0, r.jsx)(o.aQr, {

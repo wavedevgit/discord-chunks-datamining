@@ -14,9 +14,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk933970 = require("./933970.jsx"),
   Chunk340453 = require("./340453.jsx"),
   Chunk292352 = require("./292352.js"),
-  Chunk412297 = require("./412297.js"),
+  Chunk660886 = require("./660886.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk944651 = require("./944651.js");
+  Chunk823074 = require("./823074.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -83,7 +83,7 @@ function y(e) {
       className: h.actions,
       children: (0, r.jsx)(u.Z, {
         icon: l.Dio,
-        tooltip: p.intl.string(_.default.l20ZZm),
+        tooltip: p.intl.string(_.default.l20ZZp),
         onClick: m
       })
     })]

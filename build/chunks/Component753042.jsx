@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk776767 = require("./776767.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk152540 = require("./152540.js");
+  Chunk87819 = require("./87819.js");
 
 function g(e) {
   let {
@@ -26,7 +26,7 @@ function g(e) {
   return (l.useEffect(() => {
     (0, o.zO)(t.guildId)
   }, [t.guildId]), null == n) ? null : (0, r.jsx)(s.gNt, {
-    label: I.intl.string(I.t["ldCE/v"]),
+    label: I.intl.string(I.t["ldCE/p"]),
     children: (0, r.jsxs)(A.WM, {
       children: [(0, r.jsx)(A._2, {
         icon: (0, r.jsx)(s.lZ8, {
@@ -59,7 +59,7 @@ function g(e) {
         name: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "text-default",
-          children: I.intl.string(I.t["93hqlp"])
+          children: I.intl.string(I.t["93hqln"])
         }),
         description: N === u.qc.AGREED ? (0, r.jsx)(s.sV5, {
           size: "custom",
@@ -82,7 +82,7 @@ function g(e) {
         name: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "text-default",
-          children: I.intl.string(I.t.SaDIpK)
+          children: I.intl.string(I.t.SaDIpL)
         }),
         description: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
@@ -99,7 +99,7 @@ function g(e) {
         name: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "text-default",
-          children: I.intl.string(I.t["NQJ+WF"])
+          children: I.intl.string(I.t["NQJ+WG"])
         }),
         description: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
@@ -115,7 +115,7 @@ function g(e) {
         name: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "text-default",
-          children: I.intl.string(I.t["eJOq+f"])
+          children: I.intl.string(I.t["eJOq+Z"])
         }),
         description: (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",

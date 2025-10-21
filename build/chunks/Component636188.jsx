@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk486324 = require("./486324.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk605690 = require("./605690.js");
+  Chunk199306 = require("./199306.js");
 
 function P(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -75,7 +75,7 @@ let x = 25,
 
 function k() {
   return [{
-    name: Chunk388032.intl.string(Chunk388032.t.Sp2NFx),
+    name: Chunk388032.intl.string(Chunk388032.t["Sp2NF+"]),
     extensions: ["jpg", "jpeg", "png", "gif", "mp4"]
   }]
 }
@@ -219,14 +219,14 @@ function G(e) {
 
 function B() {
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk605690.customBackgroundTooltip,
+    className: Chunk199306.customBackgroundTooltip,
     children: [(0, Chunk951288.jsx)(Chunk481060.SrA, {
       size: "md",
       color: "currentColor",
-      className: Chunk605690.customBackgroundTooltipIcon
+      className: Chunk199306.customBackgroundTooltipIcon
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
-      children: Chunk388032.intl.string(Chunk388032.t["T+yRY2"])
+      children: Chunk388032.intl.string(Chunk388032.t["T+yRY3"])
     })]
   })
 }
@@ -241,7 +241,7 @@ function Z(e) {
   function o() {
     m.Kw(S.v.ANIMATED_VIDEO_BG_CUSTOM_TOOLTIP_NEW)
   }
-  let l = a ? N.intl.string(N.t["5TUJOj"]) : n;
+  let l = a ? N.intl.string(N.t["5TUJOv"]) : n;
   return (0, r.jsxs)(c.jSM, {
     text: l,
     className: R.newBackgroundTooltipContainer,
@@ -260,7 +260,7 @@ function Z(e) {
           className: R.backgroundCustomInlineUpsellIcon
         }), (0, r.jsx)("div", {
           className: R.overflowEllipsis,
-          children: N.intl.string(N.t["1t7U8f"])
+          children: N.intl.string(N.t["1t7U8W"])
         })]
       }),
       children: [(0, r.jsx)("div", {
@@ -289,7 +289,7 @@ function F(e) {
     })
   }), (0, r.jsx)(Z, {
     onClick: t,
-    tooltipText: N.intl.string(N.t.IqE0T0)
+    tooltipText: N.intl.string(N.t["IqE0T/"])
   })
 }
 
@@ -297,15 +297,15 @@ function V(e) {
   let {
     onAddBackgroundImage: t,
     disabled: i
-  } = e, a = (0, c.vRw)(), o = i ? N.intl.formatToPlainString(N.t.ykGFeH, {
+  } = e, a = (0, c.vRw)(), o = i ? N.intl.formatToPlainString(N.t.ykGFeD, {
     maxCustomBackgrounds: x
-  }) : N.intl.string(N.t.Qx0tFR), s = k();
+  }) : N.intl.string(N.t.Qx0tFc), s = k();
 
   function l() {
     (0, c.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("91689"), n.e("89289"), n.e("50893")]).then(n.bind(n, 28130));
+      } = await Promise.all([n.e("91689"), n.e("89289"), n.e("53488")]).then(n.bind(n, 28130));
       return n => (0, r.jsx)(e, w({
         maxFileSizeBytes: I.SJ,
         onComplete: e => {
@@ -318,9 +318,9 @@ function V(e) {
         },
         uploadType: A.pC.VIDEO_BACKGROUND,
         filters: s,
-        modalTitle: N.intl.string(N.t.yG2pUl),
-        imageSpecifications: N.intl.string(N.t["72OaxM"]),
-        uploadOptionTitle: N.intl.string(N.t.xsW8u7),
+        modalTitle: N.intl.string(N.t.yG2pUi),
+        imageSpecifications: N.intl.string(N.t["72OaxN"]),
+        uploadOptionTitle: N.intl.string(N.t.xsW8u6),
         showUpsellHeader: true
       }, n))
     }, {
@@ -354,12 +354,12 @@ function H(e) {
         selected: null == a,
         icon: c.t6m,
         onClick: () => o(null),
-        text: N.intl.string(N.t.fUdMeH)
+        text: N.intl.string(N.t.fUdMeO)
       }), (0, r.jsx)(j, {
         selected: a === I.f7,
         icon: c.yMH,
         onClick: () => o(I.f7),
-        text: N.intl.string(N.t.LhSyLy),
+        text: N.intl.string(N.t.LhSyL8),
         children: (0, r.jsx)("div", {
           className: R.backgroundOptionBlurBackground
         })
@@ -377,7 +377,7 @@ function H(e) {
         });
         return null == t ? null : (0, r.jsx)(l.u, {
           __unsupportedReactNodeAsText: (0, r.jsx)(B, {}),
-          "aria-label": N.intl.string(N.t["T+yRY2"]),
+          "aria-label": N.intl.string(N.t["T+yRY3"]),
           children: (0, r.jsx)(G, {
             option: e,
             source: t,

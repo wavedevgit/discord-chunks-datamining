@@ -9,7 +9,7 @@ require("./647438.js");
 var Chunk866442 = require("./866442.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk207516 = require("./207516.js");
+  Chunk229928 = require("./229928.js");
 
 function l(e) {
   let {
@@ -33,7 +33,7 @@ function l(e) {
         variant: l,
         color: "text-default",
         children: [(0, r.jsx)(a.nn4, {
-          children: o.intl.string(o.t.RnyseH)
+          children: o.intl.string(o.t.RnyseL)
         }), n.name]
       }), true === t && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(a.LZC, {

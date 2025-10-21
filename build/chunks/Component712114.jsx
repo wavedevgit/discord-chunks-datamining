@@ -1,4 +1,4 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 712114, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk39604 = require("./39604.js"),
   Chunk176127 = require("./176127.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk811485 = require("./811485.js");
+  Chunk945202 = require("./945202.js");
 
 function h(e) {
   let {
@@ -37,14 +37,14 @@ function h(e) {
       className: p.header,
       color: "header-primary",
       variant: "heading-md/extrabold",
-      children: d.intl.format(d.t["+qxkzM"], {
+      children: d.intl.format(d.t["+qxkzC"], {
         count: n.newClipIds.length
       })
     }), (0, i.jsx)(a.Text, {
       color: "text-default",
       className: p.__invalid_content,
       variant: "text-sm/medium",
-      children: d.intl.format(d.t["7XX0/f"], {
+      children: d.intl.format(d.t["7XX0/X"], {
         applicationName: n.applicationName
       })
     }), (0, i.jsx)("div", {
@@ -58,7 +58,7 @@ function h(e) {
           }
         }), (0, i.jsx)(a.Button, {
           variant: "primary",
-          text: d.intl.string(d.t.md4qKy),
+          text: d.intl.string(d.t.md4qKz),
           onClick: t
         })]
       })

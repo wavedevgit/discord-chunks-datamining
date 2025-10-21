@@ -18,7 +18,7 @@ let f = () => (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
   gap: 32,
   children: [(0, Chunk951288.jsx)(Chunk332360.k, {}), (0, Chunk951288.jsx)("div", {
     children: (0, Chunk951288.jsxs)(Chunk603963.N, {
-      title: Chunk388032.intl.string(Chunk388032.t.SRZyHh),
+      title: Chunk388032.intl.string(Chunk388032.t.SRZyHg),
       children: [(0, Chunk951288.jsx)(Chunk677786.Z, {}), (0, Chunk951288.jsx)(Chunk888602.Z, {}), (0, Chunk951288.jsx)(Chunk463181.Z, {}), (0, Chunk951288.jsx)(Chunk28676.Z, {})]
     })
   })]

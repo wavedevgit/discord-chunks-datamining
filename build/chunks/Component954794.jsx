@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk955204 = require("./955204.js"),
   Chunk248998 = require("./248998.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk996270 = require("./996270.js");
+  Chunk599710 = require("./599710.js");
 
 function h(e) {
   let {
@@ -31,7 +31,7 @@ function h(e) {
       }), (0, r.jsx)(s.Text, {
         variant: "text-lg/normal",
         color: "text-default",
-        children: _.intl.string(_.t["13/7kZ"])
+        children: _.intl.string(_.t["13/7kX"])
       })]
     }), (0, r.jsxs)("div", {
       className: p.headerContainer,
@@ -40,11 +40,11 @@ function h(e) {
         children: [(0, r.jsx)(s.Heading, {
           variant: "heading-lg/extrabold",
           color: "header-primary",
-          children: _.intl.string(_.t["6jI0hY"])
+          children: _.intl.string(_.t["6jI0hd"])
         }), (0, r.jsx)(s.Text, {
           variant: "text-md/normal",
           color: "header-secondary",
-          children: _.intl.string(_.t.GuUItb)
+          children: _.intl.string(_.t.GuUItX)
         })]
       }), (0, r.jsx)("div", {
         className: p.headerIcon,
@@ -77,7 +77,7 @@ function h(e) {
         children: (0, r.jsx)(s.Text, {
           variant: "text-md/bold",
           color: "header-secondary",
-          children: _.intl.string(_.t.GFyMg4)
+          children: _.intl.string(_.t.GFyMg1)
         })
       }), (0, r.jsx)("div", {
         className: p.achievementGrid,

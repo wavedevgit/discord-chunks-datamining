@@ -18,7 +18,7 @@ function a(n) {
   } = n, a = (0, c.Z)(i), u = (0, e.Z)(i.id);
   return (0, r.jsx)(s.v2r, {
     navId: "role-subscription-context",
-    "aria-label": l.intl.string(l.t.g3KvYG),
+    "aria-label": l.intl.string(l.t.g3KvYF),
     onClose: o.Zy,
     onSelect: t,
     children: (0, r.jsxs)(s.kSQ, {

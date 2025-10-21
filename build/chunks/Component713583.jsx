@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk555573 = require("./555573.js"),
   Chunk761652 = require("./761652.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk873105 = require("./873105.js");
+  Chunk585238 = require("./585238.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -73,7 +73,7 @@ function g(e) {
         } = await n.e("5396").then(n.bind(n, 731646));
         return t => (0, r.jsx)(e, m(p({}, t), {
           id: i,
-          label: d.intl.string(d.t.oJ1Mu7)
+          label: d.intl.string(d.t.oJ1Muw)
         }))
       })
     }, [null == E || null == (t = E.rootCommand) ? true : t.id]),

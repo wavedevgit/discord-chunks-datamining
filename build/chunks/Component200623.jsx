@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk927923 = require("./927923.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk751394 = require("./751394.js");
+  Chunk5511 = require("./5511.js");
 
 function _(e) {
   let {
@@ -48,16 +48,16 @@ function g(e) {
     channel: t,
     transitionState: r,
     onClose: g
-  } = e, y = (0, o.e7)([u.default], () => null != u.default.getRemoteSessionId()), C = (0, f.Z)(t, {
+  } = e, C = (0, o.e7)([u.default], () => null != u.default.getRemoteSessionId()), y = (0, f.Z)(t, {
     forQRCode: true
   });
   return s.useEffect(() => {
-    y && g()
-  }, [y, g]), s.useEffect(() => {
+    C && g()
+  }, [C, g]), s.useEffect(() => {
     (0, p.Z)(t.id, m.YE.XBOX)
   }, [t.id]), (0, n.jsx)(i.Modal, {
-    title: b.intl.string(b.t["f+Aijo"]),
-    subtitle: b.intl.string(b.t.mYFmDQ),
+    title: b.intl.string(b.t["f+Aijq"]),
+    subtitle: b.intl.string(b.t.mYFmDY),
     actions: [],
     onClose: g,
     transitionState: r,
@@ -71,25 +71,25 @@ function g(e) {
           className: x.cardRow,
           children: [(0, n.jsx)(l.Z, {
             className: x.cardHeaderIcon
-          }), b.intl.string(b.t.ZNlYbG)]
+          }), b.intl.string(b.t.ZNlYbK)]
         }), (0, n.jsx)(_, {
           step: 1,
-          instructions: b.intl.string(b.t.dDtkl5)
+          instructions: b.intl.string(b.t.dDtkl9)
         }), (0, n.jsx)(_, {
           step: 2,
-          instructions: b.intl.string(b.t.IWuXjI)
+          instructions: b.intl.string(b.t.IWuXjC)
         }), (0, n.jsx)(a.Text, {
           variant: "text-sm/medium",
           children: (0, n.jsx)(a.Anchor, {
             className: x.learnMore,
             href: d.Z.getArticleURL(h.BhN.XBOX_CONNECTION),
-            children: b.intl.string(b.t.hvVgAQ)
+            children: b.intl.string(b.t.hvVgAZ)
           })
         })]
       }), (0, n.jsx)(c.ZP, {
         className: x.qrCode,
         size: 120,
-        text: C
+        text: y
       })]
     })
   })

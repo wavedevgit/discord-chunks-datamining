@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 315174, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => D,
@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk647086 = require("./647086.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk228451 = require("./228451.js");
+  Chunk869786 = require("./869786.js");
 
 function E(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -108,7 +108,7 @@ function P(e) {
   } = n.springs, c = t.features.has(v.GuildFeatures.DISCOVERABLE), p = (0, r.jsx)("div", {
     className: C.communityInfo,
     children: c && (0, r.jsx)(u.u, {
-      text: x.intl.string(x.t.O8lDIy),
+      text: x.intl.string(x.t.O8lDI2),
       position: "right",
       children: (0, r.jsxs)("div", {
         className: C.communityInfoPill,
@@ -121,7 +121,7 @@ function P(e) {
         }), (0, r.jsx)(d.Text, {
           variant: "text-xs/normal",
           color: "none",
-          children: x.intl.string(x.t["B/vjCg"])
+          children: x.intl.string(x.t["B/vjCu"])
         })]
       })
     })
@@ -144,7 +144,7 @@ function N() {
   return (0, Chunk951288.jsx)(Chunk481060.r7p, {
     size: "custom",
     color: "currentColor",
-    className: Chunk228451.favoritesIcon,
+    className: Chunk869786.favoritesIcon,
     height: 20,
     width: 20
   })
@@ -159,7 +159,7 @@ let Z = e => {
   })
 };
 
-function T(e) {
+function w(e) {
   let {
     guild: t
   } = e;
@@ -171,7 +171,7 @@ function T(e) {
   })
 }
 
-function w(e) {
+function T(e) {
   var t;
   let {
     bannerVisible: n,
@@ -187,7 +187,7 @@ function w(e) {
     children: [(0, r.jsx)(y.Z, {
       guild: i,
       isBannerVisible: n
-    }), i.id === j._ && (0, r.jsx)(N, {}), (0, r.jsx)(T, {
+    }), i.id === j._ && (0, r.jsx)(N, {}), (0, r.jsx)(w, {
       guild: i
     }), null != l && (0, r.jsx)(d.P3F, {
       className: C.headerButton,
@@ -199,7 +199,7 @@ function w(e) {
         ringTarget: c,
         offset: 4
       },
-      "aria-label": x.intl.formatToPlainString(x.t.xMXpl5, {
+      "aria-label": x.intl.formatToPlainString(x.t.xMXpl3, {
         guildName: null != (t = null == i ? true : i.name) ? t : ""
       })
     }), (0, r.jsx)("div", {
@@ -224,7 +224,7 @@ function R(e) {
     _ ? (0, d.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("7654"), n.e("28297")]).then(n.bind(n, 560114));
+      } = await Promise.all([n.e("7654"), n.e("89772")]).then(n.bind(n, 560114));
       return t => (0, r.jsx)(e, S(E({}, t), {
         guild: o,
         source: v.t4x.GUILD_HEADER_INVITE_BUTTON
@@ -239,7 +239,7 @@ function R(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(d.P3F, {
       className: C.guildDropdown,
-      "aria-label": x.intl.formatToPlainString(x.t.xMXpl5, {
+      "aria-label": x.intl.formatToPlainString(x.t.xMXpl3, {
         guildName: null != (t = null == o ? true : o.name) ? t : ""
       }),
       "aria-controls": p,
@@ -251,7 +251,7 @@ function R(e) {
         children: [(0, r.jsx)(y.Z, {
           guild: o,
           isBannerVisible: l
-        }), o.id === j._ && (0, r.jsx)(N, {}), (0, r.jsx)(T, {
+        }), o.id === j._ && (0, r.jsx)(N, {}), (0, r.jsx)(w, {
           guild: o
         })]
       }), (0, r.jsx)("div", {
@@ -259,7 +259,7 @@ function R(e) {
         children: m
       })]
     }), !A.includes(o.id) && (0, r.jsx)(u.u, {
-      text: x.intl.string(x.t.Sd8Ix8),
+      text: x.intl.string(x.t.Sd8Ixw),
       position: "bottom",
       asContainer: true,
       children: (0, r.jsx)(d.P3F, {
@@ -291,7 +291,7 @@ let D = Chunk647438.memo(function(e) {
     guildBanner: x,
     animationOverlayHeight: N,
     children: Z,
-    headerClassName: T,
+    headerClassName: w,
     communityInfoVisible: A,
     hasSubheader: D
   } = e, M = j.features.has(v.GuildFeatures.ANIMATED_BANNER), k = (0, p.Z)(j), G = !k && (0, O.Z)(j), U = !k && A, B = (0, _.xR)(x) && M && !g, [F, V] = i.useState(false), H = i.useRef(false), z = i.useRef(null), W = null != t ? t : z, K = i.useRef(true), Y = m.QK.getSetting();
@@ -344,14 +344,14 @@ let D = Chunk647438.memo(function(e) {
         onClick: X.isGuildEntrypointEnabled ? true : c,
         onContextMenu: u,
         children: [(0, r.jsxs)("header", {
-          className: o()(C.header, T, {
+          className: o()(C.header, w, {
             [C.themedHeaderMobile]: s.tq
           }),
           children: [(0, r.jsx)("div", {
             className: o()(C.headerContent, C.primaryInfo),
             children: X.isGuildEntrypointEnabled ? (0, r.jsx)(R, S(E({}, Q), {
               children: Z
-            })) : (0, r.jsx)(w, S(E({}, Q), {
+            })) : (0, r.jsx)(T, S(E({}, Q), {
               children: Z
             }))
           }), G && (0, r.jsx)(P, {

@@ -8,7 +8,7 @@ require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk308569 = require("./308569.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk810512 = require("./810512.js"),
+  Chunk780187 = require("./780187.js"),
   Chunk75277 = require("./75277.js");
 
 function c(t) {
@@ -22,28 +22,28 @@ function c(t) {
       type: "image",
       src: o
     },
-    title: l.intl.string(l.t.hhR7gY),
+    title: l.intl.string(l.t.hhR7gX),
     onClose: n,
     transitionState: c,
     actions: [{
       variant: "secondary",
-      text: l.intl.string(l.t.rwTBFh),
+      text: l.intl.string(l.t.rwTBFs),
       onClick: e
     }, {
       variant: "primary",
-      text: l.intl.string(l.t["ETE/oK"]),
+      text: l.intl.string(l.t["ETE/oC"]),
       onClick: n
     }],
     children: [(0, a.jsx)(r.Text, {
       className: s.description,
       variant: "text-md/normal",
-      children: l.intl.format(l.t.rqWXUV, {
+      children: l.intl.format(l.t.rqWXUf, {
         hcArticle: i.j1
       })
     }), (0, a.jsx)(r.Text, {
       className: s.description,
       variant: "text-md/normal",
-      children: l.intl.string(l.t["3LW10N"])
+      children: l.intl.string(l.t["3LW10C"])
     })]
   })
 }

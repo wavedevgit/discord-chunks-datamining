@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk249458 = require("./249458.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk171935 = require("./171935.js");
+  Chunk700977 = require("./700977.js");
 
 function d(e) {
   let {
@@ -37,7 +37,7 @@ function d(e) {
       }),
       onClick: t,
       tabIndex: 0,
-      "aria-label": c.intl.string(c.t.RscU7O),
+      "aria-label": c.intl.string(c.t.RscU7I),
       focusProps: {
         ringTarget: d
       },

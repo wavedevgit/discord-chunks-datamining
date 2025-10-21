@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 770858, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk871301 = require("./871301.js"),
   Chunk981631 = require("./981631.js"),
   Chunk490897 = require("./490897.js"),
-  Chunk86517 = require("./86517.js");
+  Chunk888158 = require("./888158.js");
 
 function C() {
   let e = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser());
@@ -43,8 +43,8 @@ function E(e) {
     location: "NotificationsInboxButtonInner"
   }), {
     badge: Z,
-    badgeDimensions: T,
-    unreadChannelsCount: w
+    badgeDimensions: w,
+    unreadChannelsCount: T
   } = function(e) {
     let {
       notificationCenterVariant: t
@@ -85,14 +85,14 @@ function E(e) {
     children: [(0, r.jsx)(c.Z, {
       selected: P && N === g.jP.SIDEBAR,
       hovered: E && N === g.jP.SIDEBAR,
-      unread: w > 0,
+      unread: T > 0,
       className: x.pill,
       disabled: N === g.jP.LEGACY
     }), (0, r.jsx)(O.Z, {
       children: (0, r.jsx)(a.aRk, {
         selected: P || E,
         lowerBadge: Z,
-        lowerBadgeSize: T,
+        lowerBadgeSize: w,
         children: (0, r.jsx)(a.LYs, (t = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -169,7 +169,7 @@ function S() {
     targetElementRef: module,
     popoutPosition: "right",
     popoutAlign: "top",
-    dialogClassName: Chunk86517.positionLayer,
+    dialogClassName: Chunk888158.positionLayer,
     children: (t, n, i) => (0, r.jsx)(E, {
       ref: e,
       selectedOverride: n,

@@ -1,4 +1,4 @@
-/** Chunk was on 41348 **/
+/** Chunk was on 79041 **/
 /** chunk id: 431282, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   V4: () => p,
@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk732380 = require("./732380.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk138005 = require("./138005.js");
+  Chunk54482 = require("./54482.js");
 
 function d(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -116,7 +116,7 @@ function p(e) {
         children: P()
       }), (0, a.jsx)(l.P3F, u(d({
         className: c.submenuIconWrapper,
-        "aria-label": s.intl.string(s.t.PdRCRk)
+        "aria-label": s.intl.string(s.t.PdRCRg)
       }, e), {
         onClick: O,
         focusProps: T,

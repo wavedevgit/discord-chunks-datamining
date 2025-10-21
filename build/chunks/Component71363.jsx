@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk75077 = require("./75077.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk184388 = require("./184388.js"),
+  Chunk677599 = require("./677599.js"),
   Chunk865215 = require("./865215.js");
 let A = e => {
   let t, n, {
@@ -50,7 +50,7 @@ let A = e => {
       fractionalState: j
     } = (0, _.Z)(),
     U = (0, h.W)();
-  k ? (t = I.intl.string(I.t["+vt7w8"]), n = I.intl.string(I.t.LgHbnJ)) : (t = I.intl.string(I.t.LgHbnJ), n = I.intl.string(I.t["+vt7w8"]));
+  k ? (t = I.intl.string(I.t["+vt7w9"]), n = I.intl.string(I.t.LgHbnL)) : (t = I.intl.string(I.t.LgHbnL), n = I.intl.string(I.t["+vt7w9"]));
   let G = () => {
     A(false), p.default.track(v.rMx.NITRO_HOME_NAVIGATION, {
       current_component: y.MQ.SEE_ALL,
@@ -116,7 +116,7 @@ let A = e => {
             variant: "heading-xxl/extrabold",
             color: "header-primary",
             className: T.heading,
-            children: I.intl.string(I.t.LTaxu7)
+            children: I.intl.string(I.t.LTaxu9)
           }), (0, r.jsx)(E.Z, {
             className: T.cardCarousel,
             cards: (0, O.ZM)({
@@ -147,7 +147,7 @@ let A = e => {
           className: T.bottomIllustration,
           width: 112,
           height: 85,
-          alt: I.intl.string(I.t.X4IxWF)
+          alt: I.intl.string(I.t.X4IxWL)
         })]
       })
     })

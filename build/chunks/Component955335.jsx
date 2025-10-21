@@ -9,7 +9,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk630388 = require("./630388.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk49735 = require("./49735.js");
+  Chunk703824 = require("./703824.js");
 
 function a(e) {
   for (var n = 1; n < arguments.length; n++) {
@@ -59,11 +59,11 @@ function p(e) {
     children: p ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(i.QTo, c(a({}, d), {
         color: "currentColor"
-      })), o.intl.string(o.t.XIhSoq)]
+      })), o.intl.string(o.t.XIhSoj)]
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(i.tBG, c(a({}, d), {
         color: "currentColor"
-      })), o.intl.string(o.t.dxfZpq)]
+      })), o.intl.string(o.t.dxfZph)]
     })
   })
 }

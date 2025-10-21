@@ -146,7 +146,7 @@ let Y = e => {
       let e = (0, w.$q)();
       n = (0, r.jsx)(D._y, {
         isTabSelected: Q,
-        badgeCopy: W.intl.string(W.t.OS9KPj),
+        badgeCopy: W.intl.string(W.t.OS9KPu),
         offerExpiresAt: true === e ? null == eo ? true : eo.expires_at : null
       }), I = 4
     } else ex === o.z.VOICE_FILTER_EARLY_ACCESS_PREMIUM_TAB_BADGE || ex === o.z.CUSTOM_THEMES_PREMIUM_TAB_BADGE || ex === o.z.GAME_WIDGETS_PREMIUM_TAB_BADGE ? (n = (0, r.jsx)(D._y, {
@@ -180,7 +180,7 @@ let Y = e => {
     }), I = 4);
     eh && (n = (0, r.jsx)(D._y, {
       isTabSelected: Q,
-      badgeCopy: W.intl.string(W.t.RDE0SU),
+      badgeCopy: W.intl.string(W.t.RDE0Sc),
       offerExpiresAt: null
     }), I = 4, eL = () => {
       v.default.track(F.rMx.NITRO_TAB_VISITED, {
@@ -211,7 +211,7 @@ let Y = e => {
       route: J,
       icon: s.SrA,
       text: (0, r.jsx)(f.Z, {
-        children: el ? W.intl.string(W.t["4gwVVl"]) : W.intl.string(W.t.Ipxkoq)
+        children: el ? W.intl.string(W.t["4gwVVn"]) : W.intl.string(W.t.Ipxkog)
       }),
       locationState: $,
       onClick: eL

@@ -10,7 +10,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk65205 = require("./65205.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk479868 = require("./479868.js");
+  Chunk504964 = require("./504964.js");
 
 function d(e) {
   let {
@@ -105,10 +105,10 @@ let p = Chunk647438.memo(function(e) {
     interactive: _ = true,
     onClose: T,
     children: m
-  } = e, I = i.useRef(null), S = i.useRef([]), b = i.useRef(false), v = i.useRef(null), [x, P] = i.useState(0), [Z, A] = i.useState({
+  } = e, I = i.useRef(null), S = i.useRef([]), b = i.useRef(false), v = i.useRef(null), [x, P] = i.useState(0), [A, Z] = i.useState({
     x: 0,
     y: 0
-  }), j = Math.abs(Z.x) + Math.abs(Z.y) > 0, R = i.useMemo(() => a().chunk(m, g), [m]), D = i.useCallback((e, t) => {
+  }), j = Math.abs(A.x) + Math.abs(A.y) > 0, R = i.useMemo(() => a().chunk(m, g), [m]), D = i.useCallback((e, t) => {
     null == S.current[x] ? S.current[x] = [] : S.current[x][t] = e
   }, [x]), w = i.useCallback((e, t) => {
     v.current = t, y(g * e + t)
@@ -117,7 +117,7 @@ let p = Chunk647438.memo(function(e) {
   }, [y]), U = i.useCallback(e => {
     k(), b.current = e
   }, [k]), M = i.useCallback((e, t, n) => {
-    if (b.current) return void A({
+    if (b.current) return void Z({
       x: 0,
       y: 0
     });
@@ -136,7 +136,7 @@ let p = Chunk647438.memo(function(e) {
           y: Math.max(i * Math.sin(2 * Math.PI * l / 360), 0)
         }
       })(n, l);
-    A({
+    Z({
       x: (i ? Math.max(l.x, -a.x) : Math.min(l.x, a.x)) / 2,
       y: (r ? Math.max(l.y, -a.y) : Math.min(l.y, a.y)) / 2
     })
@@ -248,8 +248,8 @@ let p = Chunk647438.memo(function(e) {
             r: 28.8
           }), j && (0, l.jsx)("circle", {
             className: c.chatWheelCenter,
-            cx: 144 + Z.x,
-            cy: 144 + Z.y,
+            cx: 144 + A.x,
+            cy: 144 + A.y,
             r: 28.8
           })]
         }), N && (0, l.jsx)("circle", {
@@ -271,7 +271,7 @@ let p = Chunk647438.memo(function(e) {
           })
         }), _ && R.length > 1 ? (0, l.jsx)("div", {
           className: c.paginationHint,
-          children: u.intl.string(u.t["Xy+S09"])
+          children: u.intl.string(u.t["Xy+S02"])
         }) : null]
       }), F]
     })

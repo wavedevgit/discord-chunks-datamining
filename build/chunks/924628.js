@@ -41,7 +41,7 @@ function c(e) {
 
 function u(e) {
   let t;
-  throw Error(t = e.status >= 500 && e.status <= 599 ? o.intl.string(o.t.cvJdtr) : null != e && null != e.body && null != e.body.message ? e.body.message : o.intl.string(o.t.cvJdtr))
+  throw Error(t = e.status >= 500 && e.status <= 599 ? o.intl.string(o.t.cvJdtg) : null != e && null != e.body && null != e.body.message ? e.body.message : o.intl.string(o.t.cvJdtg))
 }
 
 function d() {

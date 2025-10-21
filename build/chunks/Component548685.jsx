@@ -33,8 +33,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk215023 = require("./215023.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk391447 = require("./391447.js"),
-  Chunk687983 = require("./687983.js");
+  Chunk345213 = require("./345213.js"),
+  Chunk310582 = require("./310582.js");
 let P = e => {
   var t;
   let {
@@ -45,8 +45,8 @@ let P = e => {
     prioritizeUserDiscounts: Z,
     tab: w,
     buttonContainerClassName: H,
-    orbsSupportedOnly: D
-  } = e, M = (0, o.e7)([g.default], () => g.default.getCurrentUser()), F = h.ZP.canUseCollectibles(M), W = (0, T.G)("FeedBlock"), {
+    orbsSupportedOnly: M
+  } = e, D = (0, s.e7)([g.default], () => g.default.getCurrentUser()), F = h.ZP.canUseCollectibles(D), W = (0, T.G)("FeedBlock"), {
     sortType: V,
     setSortType: U,
     sortedItems: z,
@@ -57,8 +57,8 @@ let P = e => {
     sortedSkuIds: P,
     isPremiumUser: F,
     prioritizeUserDiscounts: Z,
-    orbsSupportedOnly: D
-  }), q = (0, k.St)(z), Q = (0, o.e7)([d.Z], () => d.Z.useReducedMotion), J = (0, o.e7)([p.Z], () => p.Z.isFocused()), X = !Q && J, {
+    orbsSupportedOnly: M
+  }), q = (0, k.St)(z), J = (0, s.e7)([d.Z], () => d.Z.useReducedMotion), Q = (0, s.e7)([p.Z], () => p.Z.isFocused()), X = !J && Q, {
     animationPhase: $,
     startAnimation: ee
   } = (0, y.y)(), et = (0, _.sp)(), en = null != (t = null == et ? true : et.sessionId) ? t : "", er = l.useRef(null), el = l.useCallback(e => {
@@ -72,7 +72,7 @@ let P = e => {
   }, [ee, U, en]), ei = b.Z.useConfig({
     location: "FeedBlock"
   }).showCardsV2;
-  return null == M ? null : (0, r.jsxs)("div", {
+  return null == D ? null : (0, r.jsxs)("div", {
     className: a()(N.popularPicksSection, N.centeredSection),
     children: [(0, r.jsxs)("div", {
       className: N.blockHeader,
@@ -81,10 +81,10 @@ let P = e => {
         children: [(0, r.jsx)(c.Heading, {
           variant: "heading-lg/semibold",
           children: i
-        }), Y && (0, r.jsx)(s.u, {
-          text: B.intl.string(B.t["3taPdn"]),
+        }), Y && (0, r.jsx)(o.u, {
+          text: B.intl.string(B.t["3taPdj"]),
           position: "top",
-          "aria-label": B.intl.string(B.t["3taPdn"]),
+          "aria-label": B.intl.string(B.t["3taPdj"]),
           children: (0, r.jsx)(c.P3F, {
             onClick: () => (0, u.Z)(C.Z.getArticleURL(I.BhN.DATA_USED_FOR_RECOMMENDED)),
             className: N.informationIcon,
@@ -99,7 +99,7 @@ let P = e => {
         }),
         children: [(0, r.jsx)(c.Text, {
           variant: "text-md/medium",
-          children: B.intl.string(B.t.uaX709)
+          children: B.intl.string(B.t.uaX705)
         }), (0, r.jsx)("div", {
           className: H,
           children: (0, r.jsx)(c.PhF, {
@@ -116,7 +116,7 @@ let P = e => {
           className: H,
           children: (0, r.jsx)(c.Button, {
             variant: "secondary",
-            text: B.intl.string(B.t.X3tnc3),
+            text: B.intl.string(B.t.X3tnc4),
             buttonRef: er,
             onClick: () => {
               ee({
@@ -167,7 +167,7 @@ let P = e => {
           }) : (0, r.jsx)(E.Z, {
             product: e,
             category: l,
-            user: M,
+            user: D,
             tab: w,
             className: n
           })

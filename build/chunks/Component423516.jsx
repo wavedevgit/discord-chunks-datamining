@@ -10,7 +10,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk481060 = require("./481060.js"),
   Chunk570928 = require("./570928.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk465737 = require("./465737.js");
+  Chunk980941 = require("./980941.js");
 let c = function(e) {
   let {
     className: t,
@@ -18,7 +18,7 @@ let c = function(e) {
     text: i,
     hasConnectedChannel: c,
     textVariant: d = "text-md/medium"
-  } = e, f = n ? s.intl.string(s.t.IlHdW1) : s.intl.string(s.t.WsOisr);
+  } = e, f = n ? s.intl.string(s.t.IlHdW8) : s.intl.string(s.t.WsOisp);
   return (0, l.jsx)(o.Z, {
     className: r()(t, u.hoverableStatus),
     hoverText: c ? (0, l.jsx)(a.Text, {

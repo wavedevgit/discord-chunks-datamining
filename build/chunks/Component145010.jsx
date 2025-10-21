@@ -1,4 +1,4 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 145010, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -34,7 +34,7 @@ function m(e) {
       } = e;
       return (0, i.jsx)(u.Z, {
         children: (0, i.jsx)(p.Z, {
-          title: f.intl.string(f.t.XYLOyM),
+          title: f.intl.string(f.t.XYLOyF),
           channel: t,
           closePopout: n,
           onFocus: r,

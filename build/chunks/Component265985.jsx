@@ -24,7 +24,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk575460 = require("./575460.jsx"),
   Chunk293810 = require("./293810.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk822849 = require("./822849.js");
+  Chunk673854 = require("./673854.js");
 let v = 440,
   I = 80,
   T = 4,
@@ -64,7 +64,7 @@ let v = 440,
       children: [p, f(), (0, r.jsx)(l.P3F, {
         className: O.closeContainer,
         onClick: () => t(false),
-        "aria-label": y.intl.string(y.t.cpT0Cg),
+        "aria-label": y.intl.string(y.t.cpT0Cq),
         children: (0, r.jsx)(l.Dio, {
           size: "md",
           color: "currentColor",
@@ -100,11 +100,11 @@ let v = 440,
               variant: "text-md/medium",
               color: "header-primary",
               className: O.emojiName,
-              children: y.intl.string(y.t.PrKk4u)
+              children: y.intl.string(y.t.PrKk4n)
             }), (0, r.jsx)(l.Text, {
               color: "interactive-normal",
               variant: "text-sm/normal",
-              children: y.intl.format(y.t["2ICUkJ"], {
+              children: y.intl.format(y.t["2ICUkG"], {
                 count: u.length
               })
             })]
@@ -125,7 +125,7 @@ let v = 440,
         className: O.confirmationSubtitle,
         variant: "text-md/normal",
         color: "header-secondary",
-        children: y.intl.format(y.t.oi3gio, {
+        children: y.intl.format(y.t.oi3gip, {
           tier: n.name
         })
       }), _.length > 0 && (0, r.jsxs)(r.Fragment, {
@@ -133,7 +133,7 @@ let v = 440,
           variant: "text-xs/normal",
           color: "header-secondary",
           className: O.confirmationSectionLabel,
-          children: y.intl.string(y.t.w0CQ09)
+          children: y.intl.string(y.t.w0CQ01)
         }), (0, r.jsx)("div", {
           className: O.confirmationBenefits,
           children: _.map(e => (0, r.jsx)(E.Z, {
@@ -147,7 +147,7 @@ let v = 440,
         className: O.confirmationButton,
         children: (0, r.jsx)(s.zxk, {
           variant: "primary",
-          text: y.intl.string(y.t["Ph+ecH"]),
+          text: y.intl.string(y.t["Ph+ecI"]),
           onClick: () => t(true)
         })
       })]

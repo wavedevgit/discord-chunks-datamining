@@ -49,9 +49,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk295907 = require("./295907.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk327667 = require("./327667.js"),
-  Chunk70623 = require("./70623.js"),
-  Chunk285236 = require("./285236.js");
+  Chunk993103 = require("./993103.js"),
+  Chunk450943 = require("./450943.js"),
+  Chunk315091 = require("./315091.js");
 
 function Q(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -147,7 +147,7 @@ function es(e) {
     className: o()(q.wrapper, q.actions),
     children: [(0, r.jsx)(C.Z, {
       iconComponent: c.Dio,
-      label: K.intl.string(K.t.WAI6xs),
+      label: K.intl.string(K.t.WAI6xu),
       className: q.actionButton,
       onClick: () => {
         (0, Z.v)(s, Z.d.DISCONNECT), k.default.track(H.rMx.RING_CALL_DECLINED, J({
@@ -248,7 +248,7 @@ function el(e) {
       guildId: null == h ? true : h.guild_id,
       location: "IncomingCallModal"
     }),
-    Q = k === H.WtW.VOICE || V && h.type === H.d4z.GUILD_VOICE ? K.intl.string(K.t.Js8cKy) : K.intl.string(K.t.KcnWCA),
+    Q = k === H.WtW.VOICE || V && h.type === H.d4z.GUILD_VOICE ? K.intl.string(K.t.Js8cK3) : K.intl.string(K.t.KcnWCO),
     $ = (0, r.jsxs)(r.Fragment, {
       children: [null != I && null == T ? (0, r.jsx)("div", {
         className: o()(q.icon, z.wrapper, z.ringingIncoming),
@@ -327,7 +327,7 @@ function el(e) {
             children: (0, r.jsx)(c.Button, {
               variant: "secondary",
               size: "sm",
-              text: K.intl.string(K.t["8B0UDg"]),
+              text: K.intl.string(K.t["8B0UDr"]),
               fullWidth: true,
               onClick: () => v(true)
             })

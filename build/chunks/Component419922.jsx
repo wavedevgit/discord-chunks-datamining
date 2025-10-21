@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk373228 = require("./373228.js"),
   Chunk378233 = require("./378233.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk365278 = require("./365278.js");
+  Chunk353681 = require("./353681.js");
 let v = e => e.preventDefault(),
   I = .7,
   T = 33,
@@ -46,7 +46,7 @@ function N(e, t) {
 
 function R(e) {
   let t = "description" in e && null != e.description ? "".concat(e.name, ", ").concat(e.description) : e.name;
-  return y.intl.formatToPlainString(y.t.rk6pOz, {
+  return y.intl.formatToPlainString(y.t.rk6pOw, {
     stickerName: t
   })
 }
@@ -79,7 +79,7 @@ let P = e => {
           className: O.errorText,
           color: "header-secondary",
           variant: "text-sm/normal",
-          children: y.intl.string(y.t.tWYWJy)
+          children: y.intl.string(y.t["tWYWJ+"])
         })]
       }) : t, l && i && (0, r.jsx)("div", {
         className: O.loadingIndicator
@@ -134,7 +134,7 @@ let P = e => {
     }, [o, t, u]), null == C) ? null : (0, r.jsx)("div", {
       role: "img",
       className: d,
-      "aria-label": T ? y.intl.string(y.t.yEvsKy) : R(o),
+      "aria-label": T ? y.intl.string(y.t.yEvsK9) : R(o),
       ref: _,
       children: (0, r.jsx)(P, {
         hasError: T,

@@ -1,4 +1,4 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 262746, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk496675 = require("./496675.js"),
   Chunk993706 = require("./993706.js"),
   Chunk796263 = require("./796263.jsx"),
-  Chunk304726 = require("./304726.js"),
+  Chunk833540 = require("./833540.js"),
   Chunk388032 = require("./388032.jsx");
 
 function g(e) {
@@ -26,7 +26,7 @@ function g(e) {
   if ((0, c.ZP)(() => {
       y && s.Z.searchGuildBans(t.guild_id, true, [null == g ? true : g.id]).finally(() => v(false))
     }), !x) return null;
-  let O = true === C ? m.intl.string(f.default.dpfwQ0) : m.intl.string(f.default.ASv23d),
+  let O = true === C ? m.intl.string(f.default.dpfwQ1) : m.intl.string(f.default.ASv23S),
     j = "ban-user-".concat(null == g ? true : g.id);
   return (0, i.jsx)(h.Z, {
     text: O,

@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 463939, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -21,7 +21,7 @@ var r, i, Chunk951288 = require("./951288.js"),
   Chunk334820 = require("./334820.jsx"),
   Chunk198139 = require("./198139.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk406887 = require("./406887.js");
+  Chunk744277 = require("./744277.js");
 
 function O(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -64,15 +64,15 @@ function E(e) {
   switch (n) {
     case v.x_.OPEN:
       return (0, l.jsxs)(l.Fragment, {
-        children: [null != o ? _.intl.formatToPlainString(_.t.I6YOjY, {
+        children: [null != o ? _.intl.formatToPlainString(_.t.I6YOjS, {
           payoutDate: o
-        }) : _.intl.string(_.t.G5ATX1), (0, l.jsx)(f.Z, {
+        }) : _.intl.string(_.t.G5ATX6), (0, l.jsx)(f.Z, {
           className: C.statusScheduledIcon
         })]
       });
     case v.x_.CANCELED:
       return (0, l.jsxs)(l.Fragment, {
-        children: [_.intl.string(_.t["0SrNPz"]), (0, l.jsx)(g.k$p, {
+        children: [_.intl.string(_.t["0SrNPx"]), (0, l.jsx)(g.k$p, {
           size: "md",
           color: "currentColor",
           className: C.statusErrorIcon
@@ -80,14 +80,14 @@ function E(e) {
       });
     case v.x_.PAYOUT_DEFERRED:
       if ((null == i ? true : i.includes(v.XL.PAYOUT_SEIZED)) === true) return (0, l.jsxs)(l.Fragment, {
-        children: [_.intl.string(_.t["0SrNPz"]), (0, l.jsx)(g.k$p, {
+        children: [_.intl.string(_.t["0SrNPx"]), (0, l.jsx)(g.k$p, {
           size: "md",
           color: "currentColor",
           className: C.statusErrorIcon
         })]
       });
       return (0, l.jsxs)(l.Fragment, {
-        children: [_.intl.string(_.t.OtZ5k5), (0, l.jsx)(h.Z, {
+        children: [_.intl.string(_.t.OtZ5kz), (0, l.jsx)(h.Z, {
           className: C.statusDeferredIcon
         })]
       })
@@ -102,9 +102,9 @@ function E(e) {
     case v.jw.CANCELED:
     case v.jw.ERROR:
       return (0, l.jsxs)(l.Fragment, {
-        children: [null != o ? _.intl.formatToPlainString(_.t.I6YOjY, {
+        children: [null != o ? _.intl.formatToPlainString(_.t.I6YOjS, {
           payoutDate: o
-        }) : _.intl.string(_.t.ubdQTk), (0, l.jsx)(f.Z, {
+        }) : _.intl.string(_.t.ubdQTt), (0, l.jsx)(f.Z, {
           className: C.statusScheduledIcon
         })]
       });
@@ -132,27 +132,27 @@ function E(e) {
 }
 let N = (0, Chunk755930.i$)({
     key: "AMOUNT ",
-    cellClassName: Chunk406887.amountColumn,
+    cellClassName: Chunk744277.amountColumn,
     renderHeader() {
       let e = (0, Chunk951288.jsx)(Chunk28664.u, {
-        text: Chunk388032.intl.string(Chunk388032.t.q3PkLy),
+        text: Chunk388032.intl.string(Chunk388032.t.q3PkL5),
         children: (0, Chunk951288.jsx)(Chunk481060.d3s, {
           size: "xs",
           color: "currentColor",
-          className: Chunk406887.amountDisclaimer
+          className: Chunk744277.amountDisclaimer
         })
       });
       return (0, Chunk951288.jsxs)(Chunk755930.qN, {
-        children: [Chunk388032.intl.string(Chunk388032.t.VodAGR), module]
+        children: [Chunk388032.intl.string(Chunk388032.t.VodAGZ), module]
       })
     },
     getAmount: e => e.amount
   }),
   I = (0, Chunk334820.rM)([(0, Chunk334820.Fd)({
     key: "PERIOD",
-    cellClassName: Chunk406887.periodColumn,
+    cellClassName: Chunk744277.periodColumn,
     renderHeader: () => (0, Chunk951288.jsx)(Chunk755930.qN, {
-      children: Chunk388032.intl.string(Chunk388032.t.fThnXV)
+      children: Chunk388032.intl.string(Chunk388032.t.fThnXa)
     }),
     renderContent: e => (0, l.jsx)(y, {
       dateUtc: e.periodStartingAt
@@ -180,18 +180,18 @@ let N = (0, Chunk755930.i$)({
     Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
   }), r)), (0, Chunk755930.wy)({
     key: "STATUS ",
-    cellClassName: Chunk406887.statusColumn,
+    cellClassName: Chunk744277.statusColumn,
     renderHeader() {
       let e = (0, Chunk951288.jsx)(Chunk28664.u, {
-        text: Chunk388032.intl.string(Chunk388032.t.cIGvZG),
+        text: Chunk388032.intl.string(Chunk388032.t.cIGvZI),
         children: (0, Chunk951288.jsx)(Chunk481060.d3s, {
           size: "xs",
           color: "currentColor",
-          className: Chunk406887.statusDisclaimer
+          className: Chunk744277.statusDisclaimer
         })
       });
       return (0, Chunk951288.jsxs)(Chunk755930.qN, {
-        children: [Chunk388032.intl.string(Chunk388032.t.oypxx8), module]
+        children: [Chunk388032.intl.string(Chunk388032.t.oypxxw), module]
       })
     },
     renderContent: e => (0, l.jsx)(x.bL, {

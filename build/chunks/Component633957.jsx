@@ -40,7 +40,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk701488 = require("./701488.js"),
   Chunk967249 = require("./967249.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk833788 = require("./833788.js");
+  Chunk853392 = require("./853392.js");
 
 function B(e) {
   var t, n, a;
@@ -116,7 +116,7 @@ function B(e) {
         analyticsLocations: B,
         componentId: er
       })
-    }, eo = en.disabled ? U.intl.string(U.t.JBnc7O) : U.intl.string(U.t.cX9uLS), es = (0, v.G)($, () => {
+    }, eo = en.disabled ? U.intl.string(U.t.JBnc7N) : U.intl.string(U.t.cX9uLZ), es = (0, v.G)($, () => {
       R.default.track(M.rMx.ACTIVITY_INSTANCE_EMBED_CLICKED, {
         application_id: d.id,
         channel_id: I,
@@ -144,7 +144,7 @@ function B(e) {
       submitting: ei
     }];
   return (0, r.jsx)(b.W, {
-    header: U.intl.string(U.t.pkq6Vl),
+    header: U.intl.string(U.t.pkq6Vq),
     title: d.name,
     iconSrc: el,
     info: (0, r.jsx)("div", {

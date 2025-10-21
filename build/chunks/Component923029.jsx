@@ -1,4 +1,4 @@
-/** Chunk was on 63962 **/
+/** Chunk was on 91053 **/
 /** chunk id: 923029, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk914010 = require("./914010.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk790197 = require("./790197.js");
+  Chunk529834 = require("./529834.js");
 
 function g(e) {
   let t, {
@@ -26,13 +26,13 @@ function g(e) {
   let m = (0, a.e7)([u.Z], () => u.Z.getGuildId()) === p.I_8,
     b = (0, a.e7)([d.Z], () => d.Z.theme);
   return t = m ? (0, r.jsx)(s.OZU, {
-    note: h.intl.string(h.t["D5SN5+"]),
-    children: h.intl.string(h.t.xVTAdX)
+    note: h.intl.string(h.t["D5SN5/"]),
+    children: h.intl.string(h.t.xVTAdb)
   }) : null != g ? (0, r.jsx)(s.$jN, {
     type: s.$jN.Type.SPINNING_CIRCLE
   }) : (0, r.jsx)(s.OZU, {
-    note: h.intl.string(h.t["LTr+x8"]),
-    children: h.intl.string(h.t.ai6Lbm)
+    note: h.intl.string(h.t["LTr+x9"]),
+    children: h.intl.string(h.t.ai6Lbr)
   }), (0, r.jsxs)("div", {
     className: f.noChannel,
     children: [l.tq && (0, r.jsx)(o.ZP, {

@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk612853 = require("./612853.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk590557 = require("./590557.js"),
+  Chunk62868 = require("./62868.js"),
   Chunk133529 = require("./133529.js");
 
 function x(e) {
@@ -206,7 +206,7 @@ function x(e) {
       variant: "text-xs/semibold",
       className: D.discountFooterText,
       lineClamp: 2,
-      children: w.intl.formatToPlainString(w.t.IhKBNT, {
+      children: w.intl.formatToPlainString(w.t.IhKBNX, {
         discountOfferAmount: eU
       })
     })]

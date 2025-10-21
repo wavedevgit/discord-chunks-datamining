@@ -25,8 +25,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk533815 = require("./533815.jsx"),
   Chunk919498 = require("./919498.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk279280 = require("./279280.js"),
-  Chunk609369 = require("./609369.js");
+  Chunk932366 = require("./932366.js"),
+  Chunk776385 = require("./776385.js");
 
 function S(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -78,7 +78,7 @@ function T(e) {
       game: i,
       widgetType: n
     },
-    "aria-label": I.intl.formatToPlainString(I.t["0dR3g4"], {
+    "aria-label": I.intl.formatToPlainString(I.t["0dR3gw"], {
       positionNumber: t + 1
     }),
     onReorder: (e, t) => (0, m.Eq)(n, e, t),
@@ -138,13 +138,13 @@ function N(e) {
   } = e;
   return (0, r.jsx)(s.nn4, {
     id: a,
-    children: I.intl.format(I.t.TM0XDQ, {
+    children: I.intl.format(I.t.TM0XDY, {
       name: g.ZP.getName(n, i, t)
     })
   })
 }
 
-function D(e) {
+function A(e) {
   let {
     text: t,
     className: n
@@ -157,7 +157,7 @@ function D(e) {
   })
 }
 
-function A(e) {
+function D(e) {
   let {
     text: t,
     user: n,
@@ -176,7 +176,7 @@ function A(e) {
       guildId: i,
       channelId: a,
       id: l
-    }), (0, r.jsx)(D, {
+    }), (0, r.jsx)(A, {
       text: t
     })]
   })
@@ -192,7 +192,7 @@ function k(e) {
     applicationId: f
   } = e, g = (0, c.Dt)(), b = (0, c.Dt)(), {
     trackUserProfileEditAction: h
-  } = (0, p.KZ)(), [v, y] = i.useState("idle"), [j, O] = i.useState(null != t ? t : ""), x = i.useRef(null), _ = i.useRef(null), P = I.intl.string(I.t.xKSfBQ), S = null != t && "" !== t.trim(), E = i.useCallback(() => {
+  } = (0, p.KZ)(), [v, y] = i.useState("idle"), [j, O] = i.useState(null != t ? t : ""), x = i.useRef(null), _ = i.useRef(null), P = I.intl.string(I.t.xKSfBT), S = null != t && "" !== t.trim(), E = i.useCallback(() => {
     h({
       action: "PRESS_ADD_COMMENTARY",
       widgetEdited: d
@@ -220,7 +220,7 @@ function k(e) {
     children: [(0, r.jsx)(s.nn4, {
       tag: "label",
       htmlFor: g,
-      children: I.intl.string(I.t.JxKXeX)
+      children: I.intl.string(I.t.JxKXeT)
     }), (0, r.jsx)(s.Kx8, {
       id: g,
       value: j,
@@ -249,12 +249,12 @@ function k(e) {
       guildId: a,
       channelId: u,
       id: b
-    }), (0, r.jsx)(D, {
+    }), (0, r.jsx)(A, {
       text: null != t ? t : P,
       className: l()(w.editableCommentText, !S && w.placeholder)
     }), (0, r.jsx)(s.P3F, {
       innerRef: x,
-      "aria-label": I.intl.string(I.t.ppb9MD),
+      "aria-label": I.intl.string(I.t.ppb9MJ),
       onClick: e => {
         e.stopPropagation(), E()
       },
@@ -278,7 +278,7 @@ function Z(e) {
     coverRef: p,
     className: N
   } = e, {
-    gameName: D = I.intl.string(I.t.GIWFlJ),
+    gameName: A = I.intl.string(I.t.GIWFlF),
     imageSrc: Z,
     applicationId: R,
     comment: L,
@@ -286,15 +286,15 @@ function Z(e) {
   } = o, B = {
     variant: "heading-sm/medium",
     color: "text-default"
-  }, M = f.default.getCurrentUser(), F = (null == M ? true : M.id) === t.id, W = 1 === (0, m.Gv)(c), U = !u && F, H = U && (0, m.vI)(c), z = U && !W, K = (0, b.kO)(R), {
+  }, M = f.default.getCurrentUser(), F = (null == M ? true : M.id) === t.id, U = 1 === (0, m.Gv)(c), W = !u && F, H = W && (0, m.vI)(c), z = W && !U, K = (0, b.kO)(R), {
     registerDragHandleRef: V
-  } = (0, v.C)(), q = i.useRef(null);
+  } = (0, v.C)(), Y = i.useRef(null);
   if (K) return (0, r.jsx)(j.i, {});
-  let Y = () => (0, r.jsx)(y.Z, {
+  let q = () => (0, r.jsx)(y.Z, {
       coverRef: p,
       className: null == Z || u ? true : P.hoverActiveEffect,
       imageSrc: Z,
-      gameName: D,
+      gameName: A,
       applicationId: R,
       userId: t.id,
       disableInteraction: u,
@@ -303,23 +303,23 @@ function Z(e) {
     X = () => (0, r.jsxs)("div", {
       className: l()(w.card, N),
       children: [z ? (0, r.jsxs)("div", {
-        ref: q,
+        ref: Y,
         className: w.dragHandleContainer,
-        children: [Y(), (0, r.jsx)(h.e_, {
+        children: [q(), (0, r.jsx)(h.e_, {
           buttonRef: V(o.applicationId),
           className: w.dragHandle,
           focusProps: {
-            ringTarget: q
+            ringTarget: Y
           }
         })]
-      }) : Y(), (0, r.jsxs)("div", {
+      }) : q(), (0, r.jsxs)("div", {
         className: w.details,
         children: [u ? (0, r.jsx)(s.Heading, E(S({}, B), {
-          children: D
+          children: A
         })) : (0, r.jsx)(C, S({
           applicationId: R,
           userId: t.id,
-          gameName: D
+          gameName: A
         }, B)), H ? (0, r.jsx)(k, {
           text: L,
           user: t,
@@ -327,7 +327,7 @@ function Z(e) {
           channelId: a,
           widgetType: c,
           applicationId: R
-        }) : (0, r.jsx)(A, {
+        }) : (0, r.jsx)(D, {
           text: L,
           user: t,
           guildId: n,

@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 229190, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk335591 = require("./335591.js");
+  Chunk28767 = require("./28767.js");
 
 function o(e) {
   let {
@@ -23,7 +23,7 @@ function o(e) {
       variant: "text-xs/semibold",
       color: "header-secondary",
       className: s.customColorsHeader,
-      children: a.intl.string(a.t.JhNpg4)
+      children: a.intl.string(a.t.JhNpgy)
     }), (0, r.jsxs)("div", {
       ref: d,
       className: s.colorPickersContainer,
@@ -56,7 +56,7 @@ function o(e) {
         }), (0, r.jsx)(l.Text, {
           variant: "text-xs/medium",
           color: "text-default",
-          children: a.intl.string(a.t["8elvy8"])
+          children: a.intl.string(a.t["8elvy6"])
         }), (0, r.jsx)(l.Z$W, {
           className: s.colorPicker,
           value: n.secondary,

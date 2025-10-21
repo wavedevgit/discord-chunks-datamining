@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk246911 = require("./246911.js");
+  Chunk675853 = require("./675853.js");
 
 function s(e) {
   let {
@@ -15,7 +15,7 @@ function s(e) {
   return (0, r.jsx)(a.Text, {
     variant: "text-xs/medium",
     className: o.rewardPill,
-    children: i.intl.format(i.t.loyTio, {
+    children: i.intl.format(i.t.loyTil, {
       rewardName: (e, n) => (0, r.jsx)(a.Text, {
         variant: "text-xs/medium",
         className: o.rewardName,

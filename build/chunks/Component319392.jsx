@@ -14,39 +14,39 @@ var Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk927923 = require("./927923.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk196365 = require("./196365.js"),
+  Chunk99372 = require("./99372.js"),
   Chunk629582 = require("./629582.js");
 
 function b() {
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk196365.getXboxApp,
+    className: Chunk99372.getXboxApp,
     children: [(0, Chunk951288.jsxs)("div", {
-      className: Chunk196365.getXboxAppBody,
+      className: Chunk99372.getXboxAppBody,
       children: [(0, Chunk951288.jsxs)(Chunk481060.Heading, {
-        className: Chunk196365.getXboxAppHeading,
+        className: Chunk99372.getXboxAppHeading,
         variant: "text-lg/semibold",
         children: [(0, Chunk951288.jsx)("div", {
-          className: Chunk196365.xboxLogoBox,
+          className: Chunk99372.xboxLogoBox,
           children: (0, Chunk951288.jsx)("img", {
             src: Chunk726542.Z.get(Chunk981631.ABu.XBOX).icon.whiteSVG,
             alt: ""
           })
-        }), Chunk388032.intl.string(Chunk388032.t["12Kx2t"])]
+        }), Chunk388032.intl.string(Chunk388032.t["12Kx2v"])]
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         tag: "p",
         variant: "text-md/normal",
         color: "header-secondary",
-        children: Chunk388032.intl.string(Chunk388032.t.M5yEcX)
+        children: Chunk388032.intl.string(Chunk388032.t.M5yEcb)
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/medium",
         color: "header-secondary",
         children: (0, Chunk951288.jsx)(Chunk481060.Anchor, {
           href: Chunk63063.Z.getArticleURL(Chunk981631.BhN.XBOX_CONNECTION),
-          children: Chunk388032.intl.string(Chunk388032.t.hvVgAQ)
+          children: Chunk388032.intl.string(Chunk388032.t.hvVgAZ)
         })
       })]
     }), (0, Chunk951288.jsx)(Chunk198993.ZP, {
-      className: Chunk196365.getXboxAppQR,
+      className: Chunk99372.getXboxAppQR,
       text: Chunk927923.X3,
       size: 90
     })]
@@ -64,8 +64,8 @@ function g(e) {
       height: "160",
       alt: ""
     }),
-    title: u.intl.string(u.t["7QsHmp"]),
-    body: u.intl.string(u.t.byYNPT),
+    title: u.intl.string(u.t["7QsHmh"]),
+    body: u.intl.string(u.t.byYNPX),
     content: (0, o.jsx)(b, {}),
     onClose: t
   })

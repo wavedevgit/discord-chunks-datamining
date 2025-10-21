@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk993413 = require("./993413.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk765725 = require("./765725.js");
+  Chunk100077 = require("./100077.js");
 let g = (0, Chunk313201.hQ)(),
   E = (0, Chunk131704.createChannelRecord)({
     id: "1",
@@ -58,7 +58,7 @@ function y(e) {
   return (0, r.jsxs)(_.Z, {
     title: t,
     titleId: g,
-    description: h.intl.string(h.t.Bbw6AQ),
+    description: h.intl.string(h.t.Bbw6Ac),
     errors: n,
     disabled: v,
     children: [(0, r.jsx)(l.ZP, {
@@ -85,7 +85,7 @@ function y(e) {
       onSubmit: R
     }), (0, r.jsx)(a.nn4, {
       id: b,
-      children: h.intl.format(h.t["+DFxLS"], {
+      children: h.intl.format(h.t["+DFxLc"], {
         maxLength: p.tPV
       })
     })]

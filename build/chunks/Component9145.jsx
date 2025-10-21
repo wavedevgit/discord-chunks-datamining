@@ -1,4 +1,4 @@
-/** Chunk was on 63962 **/
+/** Chunk was on 91053 **/
 /** chunk id: 9145, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Y
@@ -43,7 +43,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk918559 = require("./918559.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk322678 = require("./322678.js");
+  Chunk33985 = require("./33985.js");
 
 function V(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -65,8 +65,8 @@ function V(e) {
 }
 let z = Chunk884338.u8.SIZE_32,
   W = {
-    [Chunk918559.MI.NO_CHAT]: Chunk322678.noChat,
-    [Chunk918559.MI.RESIZABLE]: Chunk322678.resizable
+    [Chunk918559.MI.NO_CHAT]: Chunk33985.noChat,
+    [Chunk918559.MI.RESIZABLE]: Chunk33985.resizable
   };
 
 function Y(e) {
@@ -75,7 +75,7 @@ function Y(e) {
     maxHeight: q,
     connectedLocation: K,
     renderExternalHeader: Q
-  } = e, X = (0, w.Z)(), J = (0, s.Wu)([E.ZP], () => E.ZP.getEmbeddedActivitiesForLocation(K), [K]), $ = (0, N.p)(K), ee = (0, s.e7)([j.Z], () => j.Z.getChannel($)), et = (0, P.gb)(J), en = (0, P.uF)(et), er = i.useCallback(() => {
+  } = e, X = (0, w.Z)(), J = (0, s.Wu)([E.ZP], () => E.ZP.getEmbeddedActivitiesForLocation(K), [K]), $ = (0, N.p)(K), ee = (0, s.e7)([O.Z], () => O.Z.getChannel($)), et = (0, P.gb)(J), en = (0, P.uF)(et), er = i.useCallback(() => {
     (0, S.tg)(G.Ez.PIP)
   }, []), ei = i.useRef(null), el = (0, s.e7)([E.ZP], () => E.ZP.getFocusedLayout()), ea = el !== G.MI.NO_CHAT, [es, eo] = i.useState(null != (l = null != (t = m.ZP.activityPanelHeight) ? t : q) ? l : null), ec = i.useCallback(e => {
     u.ZP.updatedUnsyncedSettings({
@@ -107,17 +107,17 @@ function Y(e) {
   }
   let eb = en.get(null != (Y = null == X ? true : X.id) ? Y : ""),
     ey = (0, s.e7)([x.Z], () => x.Z.getChannelId()),
-    e_ = (0, s.Wu)([O.ZP], () => {
+    e_ = (0, s.Wu)([j.ZP], () => {
       var e;
-      return null == ee ? [] : Array.from(null != (e = null == eb ? true : eb.embeddedActivity.userIds) ? e : []).map(e => O.ZP.getMember(ee.guild_id, e))
+      return null == ee ? [] : Array.from(null != (e = null == eb ? true : eb.embeddedActivity.userIds) ? e : []).map(e => j.ZP.getMember(ee.guild_id, e))
     }, [eb, ee]),
-    ej = i.useMemo(() => {
+    eO = i.useMemo(() => {
       let e = new Map;
       return e_.forEach(t => {
         null != t && true !== t && e.set(t.userId, t)
       }), e
     }, [e_]),
-    eO = function(e, t, n) {
+    ej = function(e, t, n) {
       let r = (0, p.Z)(e),
         l = e !== r,
         [a, s] = i.useState(false);
@@ -161,7 +161,7 @@ function Y(e) {
   let eS = e => {
     var t;
     if (null == e || true === e || e === D.ag) return null;
-    let n = ej.get(e.id),
+    let n = eO.get(e.id),
       i = null != (t = null == n ? true : n.nick) ? t : I.ZP.getName(e);
     return (0, r.jsx)(c.u, {
       asContainer: true,
@@ -179,7 +179,7 @@ function Y(e) {
     children: e => (0, r.jsxs)("div", {
       className: a()(B.wrapper, W[el], e),
       ref: ei,
-      style: eO,
+      style: ej,
       children: [null == Q ? true : Q(), (0, r.jsxs)("div", {
         className: B.activityPanelContainer,
         children: [ea ? null : (0, r.jsx)("div", {
@@ -221,7 +221,7 @@ function Y(e) {
                 channelId: ey
               }), (0, r.jsx)(b.d, {
                 isTrayButton: true,
-                label: F.intl.string(F.t.brPQ5e),
+                label: F.intl.string(F.t.brPQ5U),
                 onClick: er,
                 iconComponent: d.dOc,
                 themeable: true

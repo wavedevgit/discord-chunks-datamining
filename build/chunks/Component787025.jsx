@@ -14,7 +14,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk252618 = require("./252618.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk101389 = require("./101389.js");
+  Chunk697257 = require("./697257.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -80,7 +80,7 @@ function E(e) {
     wrapperClassName: i
   } = e;
   return (0, l.Tt)({
-    location: u.intl.string(u.t["3S249/"])
+    location: u.intl.string(u.t["3S2494"])
   }), (0, r.jsx)(s.f6W, {
     theme: c.BRd.DARK,
     children: e => (0, r.jsx)("div", {

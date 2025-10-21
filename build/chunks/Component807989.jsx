@@ -19,7 +19,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk713938 = require("./713938.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk239522 = require("./239522.js");
+  Chunk852303 = require("./852303.js");
 let E = e => {
   switch (e) {
     case u.ZC.IP_LOCATION:
@@ -59,7 +59,7 @@ function b(e) {
     }),
     children: [null != n ? (0, r.jsx)(y, {
       icon: l.xPt,
-      text: m.intl.format(m.t["5k5OKC"], {
+      text: m.intl.format(m.t["5k5OKD"], {
         origin: n
       })
     }) : null, (0, r.jsx)(y, {
@@ -67,12 +67,12 @@ function b(e) {
       text: (0, _.i)(i)
     }), (0, r.jsx)(y, {
       icon: l.T39,
-      text: m.intl.formatToPlainString(m.t["+1bjc3"], {
+      text: m.intl.formatToPlainString(m.t["+1bjc8"], {
         date: T
       })
     }), s.includes(o.x.BOT) && null != O ? (0, r.jsx)(y, {
       icon: l.wGt,
-      text: m.intl.formatToPlainString(m.t.UHGHSE, {
+      text: m.intl.formatToPlainString(m.t.UHGHSP, {
         guildCount: O
       })
     }) : null, (0, r.jsx)(y, {

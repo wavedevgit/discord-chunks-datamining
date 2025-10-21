@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk695346 = require("./695346.js"),
   Chunk785717 = require("./785717.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk650054 = require("./650054.js");
+  Chunk81064 = require("./81064.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -93,13 +93,13 @@ function I(e) {
     children: [(0, r.jsx)(l.u, {
       asContainer: true,
       targetElementRef: b,
-      text: h.intl.string(h.t.bt75u7),
+      text: h.intl.string(h.t.bt75uw),
       delay: S,
       "aria-label": false,
       children: (0, r.jsx)(f.zx, {
         ref: b,
         className: o()(m.button, m.left),
-        "aria-label": h.intl.string(h.t.QdHxoq),
+        "aria-label": h.intl.string(h.t.QdHxos),
         "aria-haspopup": "dialog",
         onClick: A,
         children: (0, r.jsx)(c.vdY, {
@@ -109,13 +109,13 @@ function I(e) {
       })
     }), (0, r.jsx)(l.u, {
       asContainer: true,
-      text: h.intl.string(h.t.VkKicX),
+      text: h.intl.string(h.t.VkKicb),
       delay: S,
       "aria-label": false,
       children: (0, r.jsx)(f.zx, {
         ref: y,
         className: o()(m.button, m.right),
-        "aria-label": h.intl.string(h.t.wfYTHR),
+        "aria-label": h.intl.string(h.t.wfYTHe),
         onClick: C,
         children: (0, r.jsx)(c.XHJ, {
           size: "xs",

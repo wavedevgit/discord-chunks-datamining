@@ -1,7 +1,7 @@
 /** Chunk was on 9573 **/
 /** chunk id: 546649, original params: n,t,l (module,exports,require) **/
 require.d(exports, {
-  default: () => o
+  default: () => r
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -11,22 +11,22 @@ var Chunk481060 = require("./481060.js"),
   Chunk461757 = require("./461757.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function o(n) {
+function r(n) {
   let {
     channel: t,
     channelId: l,
-    originalLink: o,
+    originalLink: r,
     messageId: u,
     onSelect: d
-  } = n, h = (0, c.Z)(t, o, u), p = (0, r.Z)({
+  } = n, h = (0, c.Z)(t, r, u), p = (0, a.Z)({
     id: l,
-    label: s.intl.string(s.t.gFHI3t)
+    label: o.intl.string(o.t.gFHI3k)
   });
   return (0, i.jsxs)(e.v2r, {
     navId: "channel-mention-context",
-    onClose: a.Zy,
+    onClose: s.Zy,
     onSelect: d,
-    "aria-label": s.intl.string(s.t.feGACA),
+    "aria-label": o.intl.string(o.t.feGACE),
     children: [(0, i.jsx)(e.kSQ, {
       children: h
     }, "channel-mention-actions"), (0, i.jsx)(e.kSQ, {

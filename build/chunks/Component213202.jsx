@@ -1,7 +1,7 @@
 /** Chunk was on 83331 **/
 /** chunk id: 213202, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => Y
+  default: () => H
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -44,7 +44,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function R(e) {
+function U(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       i = Object.keys(n);
@@ -68,31 +68,31 @@ function X(e) {
     channel: t,
     guild: n,
     onSelect: o
-  } = e, c = t.isGuildStageVoice(), u = (0, r.e7)([y.Z], () => c ? y.Z.getStageInstanceByChannel(t.id) : true, [c, t.id]), Z = (0, S.Z)(t), j = (0, v.qY)(t.id), x = (0, p.Z)(null == j ? true : j.id, n, t), P = (0, V.Z)(t, u), C = (0, f.l)(t), N = (0, f.P)(t), _ = (0, g.Z)(t), k = (0, h.Z)(t), L = (0, b.Z)(t), G = (0, E.Z)(t), M = (0, T.Z)(t), A = (0, m.Z)(t), R = (0, I.Z)(t, n), X = (0, d.Z)({
+  } = e, c = t.isGuildStageVoice(), u = (0, r.e7)([y.Z], () => c ? y.Z.getStageInstanceByChannel(t.id) : true, [c, t.id]), Z = (0, S.Z)(t), j = (0, v.qY)(t.id), x = (0, p.Z)(null == j ? true : j.id, n, t), P = (0, V.Z)(t, u), C = (0, f.l)(t), N = (0, f.P)(t), k = (0, g.Z)(t), _ = (0, h.Z)(t), L = (0, b.Z)(t), G = (0, m.Z)(t), I = (0, w.Z)(t), D = (0, E.Z)(t), U = (0, M.Z)(t, n), X = (0, d.Z)({
     id: t.id,
-    label: U.intl.string(U.t.gFHI3t)
-  }), q = (0, Q.Z)(t), Y = (0, s.Z)(t), H = (0, O.Mn)("ChannelListVoiceContextMenuFavorite"), F = (0, w.ZP)(t), W = (0, D.Z)();
+    label: R.intl.string(R.t.gFHI3k)
+  }), q = (0, Q.Z)(t), H = (0, s.Z)(t), Y = (0, O.Mn)("ChannelListVoiceContextMenuFavorite"), F = (0, T.ZP)(t), z = (0, A.Z)();
   return (0, i.jsxs)(l.v2r, {
     navId: "channel-context",
     onClose: a.Zy,
-    "aria-label": U.intl.string(U.t.Xm41aW),
+    "aria-label": R.intl.string(R.t.Xm41aV),
     onSelect: o,
     children: [(0, i.jsx)(l.kSQ, {
       children: null != j ? x : P
     }), (0, i.jsxs)(l.kSQ, {
-      children: [k, L, _, C]
+      children: [_, L, k, C]
     }), (0, i.jsxs)(l.kSQ, {
-      children: [G, H ? F : M, A]
+      children: [G, Y ? F : I, D]
     }), (0, i.jsx)(l.kSQ, {
-      children: Y
+      children: H
     }), (0, i.jsx)(l.kSQ, {
       children: N
     }), (0, i.jsxs)(l.kSQ, {
-      children: [R, Z]
+      children: [U, Z]
     }), (0, i.jsx)(l.kSQ, {
       children: q
     }), (0, i.jsxs)(l.kSQ, {
-      children: [X, W]
+      children: [X, z]
     })]
   })
 }
@@ -102,36 +102,36 @@ function q(e) {
     channel: t,
     guild: n,
     onSelect: o
-  } = e, c = t.isGuildStageVoice(), u = (0, r.e7)([y.Z], () => c ? y.Z.getStageInstanceByChannel(t.id) : true, [c, t.id]), Z = (0, _.Z)(t), g = (0, S.Z)(t), h = (0, v.qY)(t.id), b = (0, p.Z)(null == h ? true : h.id, n, t), A = (0, V.Z)(t, u), R = (0, f.l)(t), X = (0, f.P)(t), q = (0, E.Z)(t), Y = (0, T.Z)(t), H = (0, m.Z)(t), F = (0, N.Z)(t, n, u), W = (0, I.Z)(t, n), z = (0, G.Z)(t, n), B = (0, M.Z)(t, n.id), K = (0, x.Z)(t, n), J = (0, P.Z)(t, n), $ = (0, C.Z)(t), ee = (0, d.Z)({
+  } = e, c = t.isGuildStageVoice(), u = (0, r.e7)([y.Z], () => c ? y.Z.getStageInstanceByChannel(t.id) : true, [c, t.id]), Z = (0, k.Z)(t), g = (0, S.Z)(t), h = (0, v.qY)(t.id), b = (0, p.Z)(null == h ? true : h.id, n, t), D = (0, V.Z)(t, u), U = (0, f.l)(t), X = (0, f.P)(t), q = (0, m.Z)(t), H = (0, w.Z)(t), Y = (0, E.Z)(t), F = (0, N.Z)(t, n, u), z = (0, M.Z)(t, n), W = (0, G.Z)(t, n), B = (0, I.Z)(t, n.id), J = (0, x.Z)(t, n), K = (0, P.Z)(t, n), $ = (0, C.Z)(t), ee = (0, d.Z)({
     id: t.id,
-    label: U.intl.string(U.t.gFHI3t)
-  }), et = (0, Q.Z)(t), en = (0, s.Z)(t), ei = (0, L.Z)(t), er = (0, j.Z)(t), el = (0, k.ZP)(t), ea = (0, O.Mn)("ChannelListVoiceContextMenuNormal"), eo = (0, w.ZP)(t), ec = (0, D.Z)();
+    label: R.intl.string(R.t.gFHI3k)
+  }), et = (0, Q.Z)(t), en = (0, s.Z)(t), ei = (0, L.Z)(t), er = (0, j.Z)(t), el = (0, _.ZP)(t), ea = (0, O.Mn)("ChannelListVoiceContextMenuNormal"), eo = (0, T.ZP)(t), ec = (0, A.Z)();
   return (0, i.jsxs)(l.v2r, {
     navId: "channel-context",
     onClose: a.Zy,
-    "aria-label": U.intl.string(U.t.Xm41aW),
+    "aria-label": R.intl.string(R.t.Xm41aV),
     onSelect: o,
     children: [(0, i.jsx)(l.kSQ, {
-      children: null != h ? b : A
+      children: null != h ? b : D
     }), (0, i.jsxs)(l.kSQ, {
-      children: [Z, R]
+      children: [Z, U]
     }, "mark-as-read-or-favorite"), (0, i.jsxs)(l.kSQ, {
       children: [F, en, ei, g]
     }, "channel-actions"), (0, i.jsxs)(l.kSQ, {
-      children: [B, W, z, q, er, et]
+      children: [B, z, W, q, er, et]
     }, "voice-actions"), (0, i.jsxs)(l.kSQ, {
-      children: [el, ea ? eo : Y]
+      children: [el, ea ? eo : H]
     }, "notifications"), (0, i.jsx)(l.kSQ, {
       children: X
     }), (0, i.jsxs)(l.kSQ, {
-      children: [H, K, J, $]
+      children: [Y, J, K, $]
     }, "admin-actions"), (0, i.jsxs)(l.kSQ, {
       children: [ee, ec]
     }, "developer-actions")]
   })
 }
-let Y = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
-  return (0, Z.Z)() ? (0, i.jsx)(X, R({}, e)) : (0, i.jsx)(q, R({}, e))
+let H = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
+  return (0, Z.Z)() ? (0, i.jsx)(X, U({}, e)) : (0, i.jsx)(q, U({}, e))
 }, {
   object: Chunk981631.qAy.CONTEXT_MENU
 }), [Chunk100527.Z.CONTEXT_MENU, Chunk100527.Z.CHANNEL_LIST_VOICE_CHANNEL_MENU])

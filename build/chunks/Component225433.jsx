@@ -10,7 +10,7 @@ var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk800266 = require("./800266.js");
+  Chunk903443 = require("./903443.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -75,7 +75,7 @@ function h(e) {
     "aria-label": n
   } = e, i = _(e, ["className", "aria-label"]);
   return (0, r.jsx)(o.P3F, f(u({}, i), {
-    "aria-label": null != n ? n : s.intl.string(s.t.N86XcH),
+    "aria-label": null != n ? n : s.intl.string(s.t.N86XcP),
     className: a()(l.button, t),
     children: (0, r.jsx)(o.k$p, {
       size: "xs",

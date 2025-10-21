@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk916001 = require("./916001.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk825782 = require("./825782.js");
+  Chunk929148 = require("./929148.js");
 let h = "expanded-area";
 
 function p(e) {
@@ -34,7 +34,7 @@ function p(e) {
       children: [(0, r.jsx)(s.Text, {
         variant: "text-sm/medium",
         color: "text-default",
-        children: l ? x.intl.string(x.t.DKNxgI) : x.intl.string(x.t.ESEKub)
+        children: l ? x.intl.string(x.t.DKNxgB) : x.intl.string(x.t.ESEKua)
       }), (0, r.jsx)(o.Z, {
         className: f.caretIcon,
         direction: l ? o.Z.Directions.UP : o.Z.Directions.DOWN
@@ -45,7 +45,7 @@ function p(e) {
       className: f.contentsContainer,
       id: h,
       children: [(0, r.jsx)(d.Z, {
-        label: x.intl.string(x.t.DWYJub),
+        label: x.intl.string(x.t.DWYJua),
         children: (0, r.jsx)("ul", {
           className: f.attachmentGrid,
           children: t.map(e => (0, r.jsx)(c.Z, {
@@ -56,7 +56,7 @@ function p(e) {
         children: [(0, r.jsx)("div", {
           className: f.separator
         }), (0, r.jsx)(d.Z, {
-          label: x.intl.string(x.t.o9xphY),
+          label: x.intl.string(x.t.o9xphc),
           children: (0, r.jsx)(u.Z, {
             role: n,
             textVariant: "text-md/medium",

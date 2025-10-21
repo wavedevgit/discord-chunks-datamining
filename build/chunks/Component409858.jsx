@@ -46,7 +46,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk215023 = require("./215023.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk114644 = require("./114644.js"),
+  Chunk269142 = require("./269142.js"),
   Chunk167969 = require("./167969.js"),
   Chunk557256 = require("./557256.js");
 
@@ -75,7 +75,7 @@ let q = t => {
     } = t;
     return r.useEffect(() => {
       var t;
-      if (e !== B.wZ8.CONFIRM) return;
+      if (e !== z.wZ8.CONFIRM) return;
       let i = C.Z.getSoundById(n);
       (0, Z.playGiftSound)(n, null != (t = null == i ? true : i.volume) ? t : 1)
     }, [e, n]), null
@@ -134,7 +134,7 @@ class Q extends Chunk647438.Component {
       subscriptionPlan: r,
       collectiblesItemType: s
     } = this.props;
-    if (module && this.step === Chunk981631.wZ8.ERROR) return Chunk388032.intl.formatToMarkdownString(Chunk388032.t.JUvC0t, {});
+    if (module && this.step === Chunk981631.wZ8.ERROR) return Chunk388032.intl.formatToMarkdownString(Chunk388032.t.JUvC0s, {});
     if (module && !require)
       if (!exports) return Chunk388032.intl.formatToPlainString(Chunk388032.t.xHzRub, {
         recipientDisplayName: Chunk51144.ZP.getName(Chunk594174.default.getCurrentUser())
@@ -144,32 +144,32 @@ class Q extends Chunk647438.Component {
           e = Chunk51144.ZP.getName(module);
         if (null != Chunk120356) switch (Chunk120356) {
           case Chunk979554.Z.AVATAR_DECORATION:
-            return Chunk388032.intl.formatToPlainString(Chunk388032.t.SKduys, {
+            return Chunk388032.intl.formatToPlainString(Chunk388032.t.SKduyh, {
               sender: exports
             });
           case Chunk979554.Z.PROFILE_EFFECT:
-            return Chunk388032.intl.formatToPlainString(Chunk388032.t["1w42T0"], {
+            return Chunk388032.intl.formatToPlainString(Chunk388032.t["1w42T2"], {
               sender: exports
             });
           case Chunk979554.Z.NAMEPLATE:
-            return Chunk388032.intl.formatToPlainString(Chunk388032.t.vFiQlZ, {
+            return Chunk388032.intl.formatToPlainString(Chunk388032.t.vFiQlU, {
               sender: exports
             });
           default:
-            return Chunk388032.intl.formatToPlainString(Chunk388032.t.U4Ko29, {
+            return Chunk388032.intl.formatToPlainString(Chunk388032.t.U4Ko2y, {
               sender: exports
             })
         }
-        return Chunk388032.intl.formatToPlainString(Chunk388032.t["0UR0u7"], {
+        return Chunk388032.intl.formatToPlainString(Chunk388032.t["0UR0u4"], {
           sender: exports,
-          timeInterval: (null == Chunk647438 ? true : Chunk647438.interval) === Chunk474936.rV.MONTH ? Chunk388032.intl.string(Chunk388032.t.FPybU1) : Chunk388032.intl.string(Chunk388032.t.tfqrho)
+          timeInterval: (null == Chunk647438 ? true : Chunk647438.interval) === Chunk474936.rV.MONTH ? Chunk388032.intl.string(Chunk388032.t.FPybU7) : Chunk388032.intl.string(Chunk388032.t.tfqrhj)
         })
       } return null == this.props.sku ? null : (0, Chunk669079.dQ)(this.step, this.props.giftCode, this.props.sku)
   }
   get secondHeaderText() {
     if (!this.state.isCustomGift || this.state.opened || this.state.accepted) return null;
     let t = Chunk594174.default.getUser(this.props.giftCode.userId);
-    return Chunk388032.intl.formatToPlainString(Chunk388032.t.DDO4W1, {
+    return Chunk388032.intl.formatToPlainString(Chunk388032.t.DDO4Wz, {
       sender: Chunk51144.ZP.getName(module)
     })
   }
@@ -241,7 +241,7 @@ class Q extends Chunk647438.Component {
       to_step: this.step,
       location_stack: Chunk120356,
       has_custom_message: l,
-      is_custom_message_edited: l && exports !== Chunk388032.intl.string(Chunk388032.t.ZkOo1d),
+      is_custom_message_edited: l && exports !== Chunk388032.intl.string(Chunk388032.t.ZkOo1U),
       gift_style: module.giftStyle,
       gift_code: module.code,
       emoji_name: require,
@@ -283,25 +283,25 @@ class Q extends Chunk647438.Component {
         "data-migration-pending": true,
         transitionState: Chunk979554,
         size: Chunk481060.CgR.SMALL,
-        className: Chunk114644.modal,
+        className: Chunk269142.modal,
         "aria-labelledby": Chunk120356,
         parentComponent: "GiftCodeModal",
         children: [null != Chunk647438.giftStyle && !Chunk728345 && !Chunk812206 && (0, Chunk951288.jsx)(Chunk981632.Z, {
           defaultAnimationState: this.getDefaultAnimationStatus(),
           idleAnimationState: this.getIdleAnimationStatus(),
           giftStyle: Chunk647438.giftStyle,
-          className: Chunk114644.seasonalGiftIcon
+          className: Chunk269142.seasonalGiftIcon
         }), !Chunk728345 && (0, Chunk951288.jsx)("div", {
-          className: Chunk114644.backSplash
+          className: Chunk269142.backSplash
         }), !Chunk812206 && (0, Chunk951288.jsx)(Chunk481060.olH, {
           "data-migration-pending": true,
           onClick: require,
-          className: Chunk114644.closeButton
+          className: Chunk269142.closeButton
         }), (0, Chunk951288.jsxs)(Chunk481060.hzk, {
           "data-migration-pending": true,
           className: l()({
-            [Chunk114644.content]: !Chunk728345,
-            [Chunk114644.contentCustomGift]: Chunk728345
+            [Chunk269142.content]: !Chunk728345,
+            [Chunk269142.contentCustomGift]: Chunk728345
           }),
           children: [!Chunk812206 && (null == Chunk647438.giftStyle || Chunk728345 && Chunk597688) ? (0, Chunk951288.jsx)(Chunk925329.Z, {
             size: Chunk925329.A.LARGE,
@@ -313,42 +313,42 @@ class Q extends Chunk647438.Component {
           }), (0, Chunk951288.jsxs)(Chunk481060.Heading, {
             id: Chunk120356,
             className: l()({
-              [Chunk114644.customGiftHeader]: Chunk728345 && !Chunk597688,
-              [Chunk114644.header]: !Chunk728345 || Chunk597688
+              [Chunk269142.customGiftHeader]: Chunk728345 && !Chunk597688,
+              [Chunk269142.header]: !Chunk728345 || Chunk597688
             }),
             variant: "heading-sm/semibold",
             children: [(0, Chunk951288.jsx)("div", {
               className: l()({
-                [Chunk114644.customGiftHeaderText]: Chunk728345
+                [Chunk269142.customGiftHeaderText]: Chunk728345
               }),
               children: this.firstHeaderText
             }), (0, Chunk951288.jsx)("div", {
               children: this.secondHeaderText
             })]
           }), !(Chunk728345 && !Chunk597688) && (0, Chunk951288.jsx)(Chunk481060.Text, {
-            className: Chunk114644.body,
+            className: Chunk269142.body,
             variant: "text-sm/normal",
             children: this.bodyText
           }), Chunk728345 && !Chunk812206 && null != Chunk647438.giftStyle && !Chunk597688 && !Chunk745510 && (0, Chunk951288.jsx)(Chunk981632.Z, {
             defaultAnimationState: this.getDefaultAnimationStatus(),
             idleAnimationState: this.getIdleAnimationStatus(),
-            className: Chunk114644.giftAnimation,
+            className: Chunk269142.giftAnimation,
             giftStyle: Chunk647438.giftStyle
           }), this.state.opened && !Chunk745510 && Chunk812206 && (0, Chunk951288.jsx)(Chunk551425.Z, {
             giftCode: Chunk647438
           }), Chunk745510 && (0, Chunk951288.jsx)(Chunk481060.Text, {
-            className: Chunk114644.body,
+            className: Chunk269142.body,
             variant: "text-md/normal",
             children: this.errorMessage
           }), Chunk728345 && this.state.opened && !this.state.accepted && !Chunk745510 && null != Chunk533307 && "" !== Chunk533307 && !Chunk313201 && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
             children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
               id: Chunk120356,
               variant: "heading-md/semibold",
-              children: Chunk388032.intl.format(Chunk388032.t.DDO4W1, {
+              children: Chunk388032.intl.format(Chunk388032.t.DDO4Wz, {
                 sender: Chunk51144.ZP.getName(Chunk906732)
               })
             }), (0, Chunk951288.jsx)(Chunk481060.Text, {
-              className: Chunk114644.customMessage,
+              className: Chunk269142.customMessage,
               variant: "text-md/semibold",
               children: Chunk533307
             })]
@@ -411,13 +411,13 @@ class Q extends Chunk647438.Component {
         onClose: t,
         libraryApplication: e
       } = this.props;
-      (0, _.uL)(B.Z5c.APPLICATION_LIBRARY, {
+      (0, _.uL)(z.Z5c.APPLICATION_LIBRARY, {
         state: {
           applicationId: null != e ? e.id : true
         }
       }), t()
-    }), $(this, "getDefaultAnimationStatus", () => this.step === B.wZ8.OPEN ? M.SR.IDLE : M.SR.ACTION), $(this, "getIdleAnimationStatus", () => {
-      if (this.step !== B.wZ8.OPEN) return M.SR.LOOP
+    }), $(this, "getDefaultAnimationStatus", () => this.step === z.wZ8.OPEN ? M.SR.IDLE : M.SR.ACTION), $(this, "getIdleAnimationStatus", () => {
+      if (this.step !== z.wZ8.OPEN) return M.SR.LOOP
     })
   }
 }
@@ -493,7 +493,7 @@ let X = Chunk442837.ZP.connectStores([Chunk283595.Z, Chunk55563.Z, Chunk812206.Z
         d(), (0, P.Z)({
           product: x,
           analyticsLocations: v,
-          purchaseType: z.o8.GIFT
+          purchaseType: B.o8.GIFT
         })
       } : true
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(t, e) {

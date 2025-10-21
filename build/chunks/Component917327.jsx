@@ -24,13 +24,13 @@ function g(e, t) {
     v = null != j && j.length > 0;
   return e.isGuildVoice() && (g || h) ? !b && g && v ? (0, i.jsx)(l.sNh, {
     id: "clear-status",
-    label: f.intl.string(f.t["22CYiY"]),
+    label: f.intl.string(f.t["22CYiZ"]),
     action: () => {
       a.ZP.updateVoiceChannelStatus(e.id, "")
     }
   }) : b && h ? (0, i.jsx)(l.sNh, {
     id: "set-status",
-    label: f.intl.string(f.t.Mgpxi4),
+    label: f.intl.string(f.t.Mgpxiw),
     action: () => {
       (0, l.ZDy)(async () => {
         let {

@@ -17,9 +17,9 @@ var Chunk793030 = require("./793030.js"),
   Chunk639660 = require("./639660.jsx"),
   Chunk767218 = require("./767218.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk258640 = require("./258640.js"),
+  Chunk149829 = require("./149829.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk403373 = require("./403373.js");
+  Chunk741872 = require("./741872.js");
 
 function b(e) {
   let {
@@ -36,7 +36,7 @@ function b(e) {
       children: [(0, r.jsx)(i.xvT, {
         variant: "eyebrow",
         color: "text-secondary",
-        children: x.intl.string(v.default.hjvcLC)
+        children: x.intl.string(v.default.hjvcLO)
       }), (0, r.jsx)(i.xvT, {
         className: _.learnMore,
         variant: "text-xs/semibold",

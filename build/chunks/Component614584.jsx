@@ -1,4 +1,4 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 614584, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => P
@@ -94,7 +94,7 @@ let S = Chunk647438.memo(function(e) {
       application: null == e ? true : e.application,
       username: null == R ? true : R.nick
     }));
-    else if (e.type === x.uaV.GUILD_DEADCHAT_REVIVE_PROMPT) return "" !== e.content ? e.content : O.intl.string(O.t.wnn1DQ);
+    else if (e.type === x.uaV.GUILD_DEADCHAT_REVIVE_PROMPT) return "" !== e.content ? e.content : O.intl.string(O.t.wnn1Dc);
     if (null != e.content && "" !== e.content) {
       let t = {
           formatInline: true,
@@ -126,12 +126,12 @@ let S = Chunk647438.memo(function(e) {
       referencedUsernameProfile: false,
       referencedAvatarProfile: false
     })
-  }, [N]), K = (0, C.Uj)(n);
+  }, [N]), q = (0, C.Uj)(n);
   return (0, i.jsx)(y.Z, {
     repliedAuthor: R,
     baseMessage: n,
     channel: P,
-    baseAuthor: K,
+    baseAuthor: q,
     referencedMessage: S,
     content: U,
     compact: I,

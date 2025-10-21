@@ -28,8 +28,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk967557 = require("./967557.js"),
-  Chunk10198 = require("./10198.js");
+  Chunk819286 = require("./819286.js"),
+  Chunk197571 = require("./197571.js");
 let Chunk515695 = require("./515695.js"),
   T = new Chunk710845.Z("LoginQRSocket");
 
@@ -41,7 +41,7 @@ function Z(e) {
     let e = new Image;
     e.src = A, e.onload = () => s(true), e.onerror = () => s(true)
   }, [A]), i.useEffect(() => {
-    n && u.uvj.announce(y.intl.string(y.t.j2p129))
+    n && u.uvj.announce(O.intl.string(O.t.j2p125))
   }, [n]), (0, r.jsx)("div", {
     className: S.qrCodeContainer,
     children: "" !== t && n ? (0, r.jsxs)(r.Fragment, {
@@ -58,7 +58,7 @@ function Z(e) {
       })]
     }) : (0, r.jsx)("div", {
       className: S.qrCodeOverlay,
-      "aria-label": y.intl.string(y.t.BUGkVF),
+      "aria-label": O.intl.string(O.t.BUGkVF),
       "aria-busy": true,
       children: (0, r.jsx)(u.$jN, {
         className: S.qrCode,
@@ -97,11 +97,11 @@ function R(e) {
           text: 1 === t.step ? "https://discord.com/ra/".concat(t.fingerprint) : ""
         }), (0, r.jsx)(m.Dx, {
           className: C.marginBottom8,
-          children: y.intl.string(y.t.UPiHaG)
+          children: O.intl.string(O.t.UPiHaL)
         }), null != i ? (0, r.jsx)(P, {
           children: i
         }) : (0, r.jsx)(m.DK, {
-          children: y.intl.format(y.t["Qq+A6u"], {})
+          children: O.intl.format(O.t["Qq+A6i"], {})
         }), (0, r.jsx)(c.zx, {
           size: c.Ph.LARGE,
           look: c.iL.LINK,
@@ -117,7 +117,7 @@ function R(e) {
               conditionalMediationAbortController: e
             }).catch(() => {})
           })(l),
-          children: y.intl.string(y.t["/kpMDg"])
+          children: O.intl.string(O.t["/kpMDt"])
         })]
       });
     case 3:
@@ -131,12 +131,12 @@ function R(e) {
           user: e,
           size: u.EFr.SIZE_120,
           isMobile: true,
-          status: O.Sk.ONLINE
+          status: y.Sk.ONLINE
         }), (0, r.jsx)(m.Dx, {
           className: C.marginBottom8,
-          children: y.intl.string(y.t.apGCUV)
+          children: O.intl.string(O.t.apGCUT)
         }), (0, r.jsx)(m.DK, {
-          children: y.intl.format(y.t.Cbl5JC, {
+          children: O.intl.format(O.t.Cbl5JK, {
             username: "".concat(j.ZP.getUserTag(e))
           })
         }), (0, r.jsx)(c.zx, {
@@ -145,7 +145,7 @@ function R(e) {
           size: c.zx.Sizes.MIN,
           onClick: n,
           className: S.startOverButton,
-          children: y.intl.string(y.t.nOOhws)
+          children: O.intl.string(O.t.nOOhwo)
         })]
       })
     }

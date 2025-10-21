@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk143740 = require("./143740.jsx"),
   Chunk212342 = require("./212342.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk617384 = require("./617384.js");
+  Chunk785188 = require("./785188.js");
 let f = e => {
   let {
     channelId: t,
@@ -35,14 +35,14 @@ let f = e => {
       }), (0, r.jsx)(o.Heading, {
         variant: "heading-sm/normal",
         className: d.tagline,
-        children: u.intl.string(u.t.hasZoa)
+        children: u.intl.string(u.t.hasZoU)
       }), (0, r.jsx)(o.Text, {
         color: "text-brand",
         className: d.publish,
         variant: "text-sm/normal",
         children: (0, r.jsx)(o.P3F, {
           onClick: _,
-          children: u.intl.string(u.t["MFGE5+"])
+          children: u.intl.string(u.t.MFGE51)
         })
       }), (0, r.jsx)(o.P3F, {
         onClick: p,
@@ -58,7 +58,7 @@ let f = e => {
       variant: "text-sm/normal",
       children: (0, r.jsx)(o.P3F, {
         onClick: h,
-        children: u.intl.string(u.t.efSkDg)
+        children: u.intl.string(u.t.efSkDm)
       })
     })]
   }) : null

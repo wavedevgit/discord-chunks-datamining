@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk185923 = require("./185923.js"),
   Chunk295907 = require("./295907.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk984915 = require("./984915.js");
+  Chunk851458 = require("./851458.js");
 
 function f(e) {
   var n;
@@ -50,30 +50,30 @@ function f(e) {
         moderated: B
       }, h), f()
     }
-  }, R = l.useCallback(e => N(e), []), T = l.useRef(null);
+  }, D = l.useCallback(e => N(e), []), T = l.useRef(null);
   return (0, c.ZP)(() => {
     null != T.current && T.current.focus()
   }), (0, i.jsxs)(o.Modal, {
-    title: x ? b.intl.string(b.t.zeVg5e) : b.intl.string(b.t["/jubeH"]),
-    subtitle: b.intl.string(b.t["3v8kZG"]),
+    title: x ? b.intl.string(b.t.zeVg5d) : b.intl.string(b.t["/jubeD"]),
+    subtitle: b.intl.string(b.t["3v8kZH"]),
     transitionState: t,
     onClose: f,
     actions: [{
       variant: "secondary",
-      text: b.intl.string(b.t["ETE/oK"]),
+      text: b.intl.string(b.t["ETE/oC"]),
       onClick: () => {
         f()
       }
     }, {
       variant: "primary",
-      text: b.intl.string(b.t.R3BPHx),
+      text: b.intl.string(b.t["R3BPH+"]),
       onClick: _,
       disabled: 0 === P.length || !S,
       autoFocus: true
     }],
     actionBarInput: x ? (0, i.jsx)(r.Button, {
       variant: "critical-secondary",
-      text: b.intl.string(b.t.huYSMj),
+      text: b.intl.string(b.t.huYSMr),
       onClick: () => {
         x && (p.Z.deleteForumTag(h, O.id), f())
       }
@@ -84,8 +84,8 @@ function f(e) {
         inputRef: T,
         maxLength: 20,
         value: P,
-        placeholder: b.intl.string(b.t["5vpeb2"]),
-        onChange: R,
+        placeholder: b.intl.string(b.t["5vpeb4"]),
+        onChange: D,
         autoFocus: true,
         leading: {
           type: "emoji",
@@ -180,7 +180,7 @@ function f(e) {
           onClick: () => {
             N(""), Z(null)
           },
-          "aria-label": b.intl.string(b.t.o8lsHR)
+          "aria-label": b.intl.string(b.t.o8lsHe)
         } : true
       })
     }), (0, i.jsx)(r.LZC, {
@@ -188,7 +188,7 @@ function f(e) {
     }), (0, i.jsx)(r.Checkbox, {
       checked: null != B && B,
       onChange: e => E(e || (null == O ? true : O.moderated) == null && true),
-      label: b.intl.string(b.t["rMH+rq"]),
+      label: b.intl.string(b.t["rMH+rt"]),
       labelType: "secondary"
     })]
   })

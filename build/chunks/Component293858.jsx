@@ -1,4 +1,4 @@
-/** Chunk was on 37786 **/
+/** Chunk was on 84071 **/
 /** chunk id: 293858, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   b: () => v
@@ -40,10 +40,10 @@ function v(e) {
       selectedPlan: O,
       selectedSkuId: T,
       step: k,
-      updatedSubscription: N,
-      startingPremiumSubscriptionPlanIdRef: A,
+      updatedSubscription: A,
+      startingPremiumSubscriptionPlanIdRef: N,
       startingFractionalPremiumEndsAtRef: Z
-    } = (0, _.JL)(),
+    } = (0, h.JL)(),
     {
       isGift: M,
       giftRecipient: R,
@@ -53,7 +53,7 @@ function v(e) {
       sendGiftMessage: G,
       claimableRewards: U,
       selectedGiftingPromotionReward: D
-    } = (0, h.wD)(),
+    } = (0, _.wD)(),
     {
       confirmationFooter: z
     } = (0, m.zb)(),
@@ -77,17 +77,17 @@ function v(e) {
     })
   }, [K, W]);
   let X = null != I ? C.PI.DEEPLINK_TO_DESKTOP_APP : true;
-  if (null != S) t = S(O, Q, N);
+  if (null != S) t = S(O, Q, A);
   else if (M) t = (0, r.jsx)(C.TB, {
     planId: O.id,
     onClose: Q
   });
   else {
-    let e = A.current === O.id ? {
+    let e = N.current === O.id ? {
       postSuccessGuild: L
     } : {
       followupSKUInfo: y,
-      startingPremiumSubscriptionPlanId: A.current,
+      startingPremiumSubscriptionPlanId: N.current,
       isDowngrade: null != w && (0, p.GY)(w, O.id, a)
     };
     t = (0, r.jsx)(C.ZP, function(e) {

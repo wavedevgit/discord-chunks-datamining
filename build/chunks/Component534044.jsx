@@ -13,8 +13,8 @@ var Chunk120356 = require("./120356.js"),
   Chunk696375 = require("./696375.jsx"),
   Chunk800530 = require("./800530.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk234139 = require("./234139.js"),
-  Chunk428687 = require("./428687.js"),
+  Chunk691196 = require("./691196.js"),
+  Chunk186425 = require("./186425.js"),
   Chunk160557 = require("./160557.js");
 
 function u(n) {
@@ -39,12 +39,12 @@ function u(n) {
       }), (0, t.jsx)(l.Heading, {
         className: g.title,
         variant: "heading-xl/semibold",
-        children: x.intl.string(x.t.QMbTSk)
+        children: x.intl.string(x.t.QMbTSu)
       }), (0, t.jsx)(l.Heading, {
         className: g.subtitle,
         color: "header-secondary",
         variant: "text-md/normal",
-        children: x.intl.string(x.t.Qdx8AA)
+        children: x.intl.string(x.t.Qdx8AP)
       }), null != a && (0, t.jsx)(l.olH, {
         "data-migration-pending": true,
         className: g.closeButton,
@@ -60,11 +60,11 @@ function u(n) {
         className: m.actionsHeader,
         children: x.intl.string(x.t["9BRc1N"])
       }), (0, t.jsx)(c.Z, {
-        text: x.intl.string(x.t.PxL38P),
+        text: x.intl.string(x.t.PxL38B),
         url: d.sQ.COMMUNITY_GUIDELINES,
         onClick: () => u(d.n0.ClickCommunityGuidelinesLink)
       }), (0, t.jsx)(c.Z, {
-        text: x.intl.string(x.t.qC3XKS),
+        text: x.intl.string(x.t.qC3XKa),
         url: d.sQ.WARNING_SYSTEM_HELPCENTER_LINK,
         onClick: () => u(d.n0.ClickWarningSystemHelpcenterLink)
       })]
@@ -72,7 +72,7 @@ function u(n) {
       "data-migration-pending": true,
       children: (0, t.jsx)(l.Button, {
         variant: "primary",
-        text: x.intl.string(x.t.i4jeWV),
+        text: x.intl.string(x.t.i4jeWR),
         onClick: i
       })
     })]

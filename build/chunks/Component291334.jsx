@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk430355 = require("./430355.js"),
+  Chunk467842 = require("./467842.js"),
   Chunk699623 = require("./699623.js"),
   Chunk820350 = require("./820350.js");
 
@@ -55,24 +55,24 @@ function y(e) {
       className: m.upsellOverlay,
       children: [(0, r.jsx)("img", {
         className: m.upsellImage,
-        alt: h.intl.string(h.t.LHFZQ0),
+        alt: h.intl.string(h.t.LHFZQy),
         src: b(E)
       }), (0, r.jsxs)("div", {
         className: m.upsellTextContainer,
         children: [(0, r.jsx)(o.Text, {
           variant: "text-lg/semibold",
           color: "always-white",
-          children: h.intl.string(h.t.dMaDFR)
+          children: h.intl.string(h.t.dMaDFX)
         }), (0, r.jsx)(o.Text, {
           variant: "text-sm/normal",
           color: "always-white",
-          children: h.intl.string(h.t.F7sgFB)
+          children: h.intl.string(h.t.F7sgFH)
         })]
       }), (0, r.jsx)(u.Z, {
         size: a.zx.Sizes.LARGE,
         color: a.zx.Colors.GREEN,
         textOptions: {
-          textOverride: f.ZP.isPremium(t) ? h.intl.string(h.t.AfRWIy) : h.intl.string(h.t.nkdUys)
+          textOverride: f.ZP.isPremium(t) ? h.intl.string(h.t.AfRWI8) : h.intl.string(h.t.nkdUym)
         },
         subscriptionTier: p.Si.TIER_2
       })]

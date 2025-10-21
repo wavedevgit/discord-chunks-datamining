@@ -52,7 +52,7 @@ let _ = Chunk647438.forwardRef(function(e, t) {
       onFocus: h,
       onChange: v,
       inputProps: {
-        "aria-label": f.intl.string(f.t.tCauZW),
+        "aria-label": f.intl.string(f.t.tCauZX),
         "aria-haspopup": "grid",
         "aria-controls": _,
         "aria-expanded": true,

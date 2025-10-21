@@ -88,8 +88,8 @@ function _(e) {
     message: t
   } = e;
   f({
-    header: a.intl.string(a.t.OjbtDg),
-    confirmText: a.intl.string(a.t.BddRzc),
+    header: a.intl.string(a.t.OjbtDm),
+    confirmText: a.intl.string(a.t.BddRzS),
     body: t
   })
 }

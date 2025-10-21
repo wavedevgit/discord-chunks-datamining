@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 430677, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk430824 = require("./430824.js"),
   Chunk768581 = require("./768581.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk359449 = require("./359449.js");
+  Chunk197530 = require("./197530.js");
 let v = function(e) {
   var t, l, v, _, C;
   let {
@@ -39,7 +39,7 @@ let v = function(e) {
     channelId: y.channelId,
     icon: y.icon
   }), k = null;
-  null != w && (0, m.kb)(w) ? A || (k = x.intl.string(x.t.wAkIZW)) : k = x.intl.string(x.t.CbTEKC);
+  null != w && (0, m.kb)(w) ? A || (k = x.intl.string(x.t.wAkIZW)) : k = x.intl.string(x.t.CbTEKP);
   let {
     drag: G,
     dragSourcePosition: M,
@@ -56,7 +56,7 @@ let v = function(e) {
     if (null != O) return (0, c.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("7590"), n.e("61351")]).then(n.bind(n, 380716));
+      } = await Promise.all([n.e("7590"), n.e("83975")]).then(n.bind(n, 380716));
       return t => {
         var n, i;
         return (0, r.jsx)(e, (n = function(e) {
@@ -143,18 +143,18 @@ let v = function(e) {
         }), (0, r.jsx)(c.Text, {
           variant: "text-xs/medium",
           color: "header-secondary",
-          children: x.intl.format(x.t.Ngk8Nj, {
+          children: x.intl.format(x.t.Ngk8Nr, {
             channelName: w.name
           })
         })]
       }), (0, r.jsx)(o.u, {
-        text: x.intl.string(x.t.bt75u7),
+        text: x.intl.string(x.t.bt75uw),
         children: (0, r.jsx)(c.hU, {
           icon: c.vdY,
           size: "sm",
           variant: "primary",
           onClick: F,
-          "aria-label": x.intl.string(x.t.bt75u7)
+          "aria-label": x.intl.string(x.t.bt75uw)
         })
       })]
     }), null != k && (0, r.jsx)(c.Text, {

@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 34112, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -33,8 +33,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk203377 = require("./203377.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk960585 = require("./960585.js"),
-  Chunk804306 = require("./804306.js");
+  Chunk810688 = require("./810688.js"),
+  Chunk297827 = require("./297827.js");
 
 function D(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -130,17 +130,17 @@ function k(e) {
 
 function G() {
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk960585.emptyRoles,
+    className: Chunk810688.emptyRoles,
     children: [(0, Chunk951288.jsx)("div", {
-      className: Chunk804306.dragSpacing
+      className: Chunk297827.dragSpacing
     }), (0, Chunk951288.jsx)(Chunk481060.BFJ, {
       size: "md",
       color: "currentColor"
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
-      className: Chunk960585.emptyRolesText,
+      className: Chunk810688.emptyRolesText,
       variant: "text-md/semibold",
       color: "text-muted",
-      children: Chunk388032.intl.string(Chunk388032.t["vR7M+/"])
+      children: Chunk388032.intl.string(Chunk388032.t["vR7M+y"])
     })]
   })
 }
@@ -177,7 +177,7 @@ function M(e) {
     }
   }), [d, C, O, y, G, M, j]), [{
     isDragging: H
-  }, W] = (0, s.c)(F), V = i.useMemo(() => ({
+  }, W] = (0, s.c)(F), z = i.useMemo(() => ({
     accept: L,
     canDrop: () => !G,
     collect: e => {
@@ -192,8 +192,8 @@ function M(e) {
       roleId: d.id
     })
   }), [G, d]), [{
-    dragSourcePosition: z
-  }, K] = (0, o.L)(V), Y = i.useCallback(e => {
+    dragSourcePosition: V
+  }, K] = (0, o.L)(z), Y = i.useCallback(e => {
     (0, m.jW)(e, async () => {
       let {
         default: e
@@ -217,8 +217,8 @@ function M(e) {
   return (0, r.jsxs)(g.P3F, {
     className: a()(Z.roleRow, {
       [Z.roleRowDisableHover]: E,
-      [Z.containerDragBefore]: null != z && j < z,
-      [Z.containerDragAfter]: null != z && j > z
+      [Z.containerDragBefore]: null != V && j < V,
+      [Z.containerDragAfter]: null != V && j > V
     }),
     onClick: X,
     onContextMenu: Y,
@@ -226,7 +226,7 @@ function M(e) {
       W(K(e))
     },
     "data-dnd-name": d.name,
-    "aria-label": w.intl.formatToPlainString(w.t.Vu0AcX, {
+    "aria-label": w.intl.formatToPlainString(w.t.Vu0Acc, {
       name: d.name,
       count: "".concat(_)
     }),
@@ -262,11 +262,11 @@ function M(e) {
         children: d.name
       }), (null == (l = d.tags) ? true : l.subscription_listing_id) != null && (0, r.jsx)(v.Z, {
         className: Z.subscriptionRoleIcon,
-        "aria-label": w.intl.string(w.t.a2Ak8f)
+        "aria-label": w.intl.string(w.t.a2Ak8b)
       }), (null == (c = d.tags) ? true : c.is_guild_product_role) === true && (0, r.jsx)(b.Z, {})]
     }), (0, r.jsx)(u.u, {
-      text: w.intl.string(w.t.CW75t7),
-      "aria-label": w.intl.formatToPlainString(w.t.Fgs8fH, {
+      text: w.intl.string(w.t.CW75t0),
+      "aria-label": w.intl.formatToPlainString(w.t.Fgs8fD, {
         count: "".concat(_)
       }),
       position: "right",
@@ -290,19 +290,19 @@ function M(e) {
     }), (0, r.jsxs)("div", {
       className: a()(Z.buttonsContainer, R.buttonsSpacing),
       children: [(0, r.jsx)(u.u, {
-        text: G ? w.intl.string(w.t["HO/oXl"]) : w.intl.string(w.t.bt75u7),
+        text: G ? w.intl.string(w.t["HO/oXl"]) : w.intl.string(w.t.bt75uw),
         children: (0, r.jsx)(g.hU, {
           variant: "secondary",
-          "aria-label": G ? w.intl.string(w.t["HO/oXl"]) : w.intl.string(w.t.bt75u7),
+          "aria-label": G ? w.intl.string(w.t["HO/oXl"]) : w.intl.string(w.t.bt75uw),
           icon: G ? g.tEF : g.vdY,
           onClick: X
         })
       }), (0, r.jsx)(u.u, {
-        text: w.intl.string(w.t.UKOtz8),
+        text: w.intl.string(w.t["UKOtz+"]),
         shouldShow: q,
         children: (0, r.jsx)(g.hU, {
           variant: "secondary",
-          "aria-label": w.intl.string(w.t.UKOtz8),
+          "aria-label": w.intl.string(w.t["UKOtz+"]),
           icon: g.xhG,
           onClick: Y,
           disabled: !q

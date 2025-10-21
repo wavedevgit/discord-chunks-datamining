@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 44867, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk976288 = require("./976288.jsx"),
   Chunk386885 = require("./386885.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk878305 = require("./878305.js");
+  Chunk366869 = require("./366869.js");
 
 function m(e) {
   let {
@@ -35,7 +35,7 @@ function m(e) {
             variant: "text-md/semibold",
             color: "header-primary",
             className: g.header,
-            children: u.intl.format(u.t.n1LDQE, {
+            children: u.intl.format(u.t.n1LDQM, {
               removedHook: (e, t) => (0, r.jsx)("strong", {
                 className: g.danger,
                 children: e
@@ -61,7 +61,7 @@ function m(e) {
         guildId: f.id,
         headerContent: (0, r.jsx)(a.Heading, {
           variant: "heading-md/semibold",
-          children: u.intl.format(u.t["+6Hylp"], {
+          children: u.intl.format(u.t["+6Hylv"], {
             doesNotHook: (e, t) => (0, r.jsx)("strong", {
               className: g.danger,
               children: e

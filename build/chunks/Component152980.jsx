@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk731994 = require("./731994.js"),
   Chunk629481 = require("./629481.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk45856 = require("./45856.js");
+  Chunk530521 = require("./530521.js");
 let b = (0, Chunk313201.hQ)();
 
 function C(e) {
@@ -53,7 +53,7 @@ function C(e) {
         type: o.$jN.Type.SPINNING_CIRCLE
       }), f && null != s && (0, n.jsx)(o.P3F, {
         onClick: d,
-        "aria-label": v.intl.formatToPlainString(v.t["1o5hyc"], {
+        "aria-label": v.intl.formatToPlainString(v.t["1o5hyW"], {
           attachment: m
         }),
         "aria-hidden": false,
@@ -96,15 +96,15 @@ function U(e) {
     className: q.container,
     children: [(0, n.jsx)(s.Z, {
       className: q.uploadArea,
-      title: v.intl.string(v.t["5eTk2t"]),
-      description: v.intl.string(v.t.Ecxoxs),
+      title: v.intl.string(v.t["5eTk2g"]),
+      description: v.intl.string(v.t.Ecxoxl),
       icons: m.J6,
       onDrop: U
     }), (0, n.jsxs)(g.Z, {
       className: q.addFileButtonLook,
       innerClassName: q.addFileButton,
       disabled: !a,
-      "aria-label": v.intl.string(v.t["23LeCA"]),
+      "aria-label": v.intl.string(v.t["23LeCD"]),
       "aria-describedby": b,
       multiple: true,
       onChange: function(e) {
@@ -118,7 +118,7 @@ function U(e) {
       }), (0, n.jsx)(o.Text, {
         variant: "text-sm/medium",
         color: "always-white",
-        children: v.intl.string(v.t["23LeCA"])
+        children: v.intl.string(v.t["23LeCD"])
       })]
     }), (0, n.jsx)(o.LZC, {
       size: 12
@@ -128,7 +128,7 @@ function U(e) {
       variant: "text-xs/normal",
       children: i ? v.intl.formatToPlainString(v.t.lvU6sr, {
         fileUploadLimit: h.TR
-      }) : v.intl.formatToPlainString(v.t.DOXzIS, {
+      }) : v.intl.formatToPlainString(v.t.DOXzIU, {
         fileUploadLimit: h.TR
       })
     }), A.length > 0 && (0, n.jsxs)(n.Fragment, {
@@ -136,7 +136,7 @@ function U(e) {
         className: q.separator
       }), (0, n.jsx)("ul", {
         className: q.attachedFilesContainer,
-        "aria-label": v.intl.string(v.t.YZ6cTU),
+        "aria-label": v.intl.string(v.t.YZ6cTW),
         children: A.map(e => (0, n.jsx)("li", {
           children: (0, n.jsx)(C, {
             upload: e,

@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk370210 = require("./370210.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk974766 = require("./974766.js");
+  Chunk923289 = require("./923289.js");
 
 function E(e) {
   let {
@@ -52,7 +52,7 @@ function E(e) {
   }, [v, O, b, n.author.id, n.channel_id]), b) ? (0, r.jsxs)(c.Z, {
     containerRef: S,
     children: [(0, r.jsx)(c.Z.Header, {
-      text: m.intl.string(m.t.j4KtLS)
+      text: m.intl.string(m.t.j4KtLa)
     }), (0, r.jsx)(c.Z.Body, {
       children: (0, r.jsxs)("div", {
         className: g.invalidBody,
@@ -61,7 +61,7 @@ function E(e) {
         }), (0, r.jsx)(c.Z.Info, {
           expired: true,
           title: m.intl.string(m.t.NaQLEx),
-          children: m.intl.string(m.t["0H5OT0"])
+          children: m.intl.string(m.t["0H5OT2"])
         })]
       })
     })]

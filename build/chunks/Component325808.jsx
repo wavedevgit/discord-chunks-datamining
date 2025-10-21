@@ -63,14 +63,14 @@ function v(e) {
     });
   return t = d.isPlatformEmbedded || n !== m.pM4.PUSH_TO_TALK ? (0, r.jsx)(o.Wn, {
     messageType: o.QYI.INFO,
-    children: g.intl.format(g.t.HVvn5e, {
+    children: g.intl.format(g.t.HVvn5T, {
       onClick: () => (0, p.openUserSettings)(_.n.KEYBINDS_PANEL, {
         section: m.oAB.KEYBINDS
       })
     })
   }) : (0, r.jsx)(o.Wn, {
     messageType: o.QYI.WARNING,
-    children: g.intl.format(g.t.zvMPOT, {
+    children: g.intl.format(g.t.zvMPOc, {
       onDownloadClick: () => (0, h.y)("Help Text PTT")
     })
   }), (0, r.jsxs)(o.Kqy, {
@@ -79,7 +79,7 @@ function v(e) {
       gap: 16,
       direction: "horizontal",
       children: [(0, r.jsx)(o.gNt, {
-        label: g.intl.string(g.t.YkDjVF),
+        label: g.intl.string(g.t.YkDjVM),
         children: (0, r.jsx)(l.Z, {
           defaultValue: i,
           onChange: e => s.Z.setMode(n, {
@@ -87,7 +87,7 @@ function v(e) {
           })
         })
       }), (0, r.jsx)(o.iRW, {
-        label: g.intl.string(g.t.y0ShVl),
+        label: g.intl.string(g.t.y0ShVt),
         initialValue: c,
         onValueChange: e => s.Z.setMode(n, {
           delay: e
@@ -96,8 +96,8 @@ function v(e) {
         maxValue: m.qhL
       })]
     }), b && (0, r.jsx)(o.rsf, {
-      label: g.intl.string(g.t.EGn1eH),
-      description: g.intl.string(g.t.iT257u),
+      label: g.intl.string(g.t.EGn1eN),
+      description: g.intl.string(g.t.iT257i),
       checked: null != E && E,
       onChange: e => s.Z.setMode(n, {
         pttLatchingEnabled: e
@@ -111,10 +111,10 @@ function I() {
     analyticsLocations: e
   } = (0, Chunk906732.ZP)(), t = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.getMode()), l = [{
     value: Chunk981631.pM4.VOICE_ACTIVITY,
-    name: Chunk388032.intl.string(Chunk388032.t.cHCEOD)
+    name: Chunk388032.intl.string(Chunk388032.t.cHCEOJ)
   }, {
     value: Chunk981631.pM4.PUSH_TO_TALK,
-    name: y ? Chunk388032.intl.string(Chunk388032.t["1AINrK"]) : Chunk388032.intl.string(Chunk388032.t.Q8gkVF)
+    name: y ? Chunk388032.intl.string(Chunk388032.t["1AINrB"]) : Chunk388032.intl.string(Chunk388032.t.Q8gkVL)
   }], d = Chunk647438.useCallback(t => {
     let {
       value: i
@@ -124,11 +124,11 @@ function I() {
         default: e
       } = await Promise.resolve().then(n.bind(n, 468026));
       return t => (0, r.jsx)(e, b({
-        title: g.intl.string(g.t.Kdt0GR),
-        confirmText: g.intl.string(g.t["1WjMbG"]),
-        cancelText: g.intl.string(g.t.BddRzc),
+        title: g.intl.string(g.t.Kdt0Gb),
+        confirmText: g.intl.string(g.t["1WjMbC"]),
+        cancelText: g.intl.string(g.t.BddRzS),
         onConfirm: () => (0, h.y)("PTT Limited Modal"),
-        body: g.intl.string(g.t.NIozvr)
+        body: g.intl.string(g.t.NIozvt)
       }, t))
     }), s.Z.setMode(i, true, true, {
       analyticsLocations: e
@@ -137,7 +137,7 @@ function I() {
   return (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
     gap: 20,
     children: [(0, Chunk951288.jsx)(Chunk481060.FXm, {
-      label: Chunk388032.intl.string(Chunk388032.t["pS+K2N"]),
+      label: Chunk388032.intl.string(Chunk388032.t["pS+K2L"]),
       onChange: e => d({
         value: e
       }),

@@ -16,7 +16,7 @@ let s = 1e3;
 function l(e, t) {
   switch (e) {
     case a.Si.TIER_0:
-      return t.days > 0 ? o.intl.formatToPlainString(o.t.sP5OqK, {
+      return t.days > 0 ? o.intl.formatToPlainString(o.t.sP5OqC, {
         days: t.days
       }) : t.hours > 0 ? o.intl.formatToPlainString(o.t["7Lhfu7"], {
         hours: t.hours
@@ -24,11 +24,11 @@ function l(e, t) {
         minutes: Math.max(t.minutes, 1)
       });
     case a.Si.TIER_2:
-      return t.days > 0 ? o.intl.formatToPlainString(o.t["4prs5e"], {
+      return t.days > 0 ? o.intl.formatToPlainString(o.t["4prs5b"], {
         days: t.days
-      }) : t.hours > 0 ? o.intl.formatToPlainString(o.t.OD5nIS, {
+      }) : t.hours > 0 ? o.intl.formatToPlainString(o.t.OD5nIR, {
         hours: t.hours
-      }) : o.intl.formatToPlainString(o.t.rvyXjI, {
+      }) : o.intl.formatToPlainString(o.t.rvyXjD, {
         minutes: Math.max(t.minutes, 1)
       });
     default:
@@ -49,13 +49,13 @@ function u(e, t) {
     minimumFractionDigits: 0,
     maximumFractionDigits: 0
   }).format(t / 100);
-  return e.days > 0 ? o.intl.formatToPlainString(o.t["7mw8CQ"], {
+  return e.days > 0 ? o.intl.formatToPlainString(o.t["7mw8CZ"], {
     days: e.days,
     discountPercentage: n
-  }) : e.hours > 0 ? o.intl.formatToPlainString(o.t["0hYT6u"], {
+  }) : e.hours > 0 ? o.intl.formatToPlainString(o.t["0hYT6o"], {
     hours: e.hours,
     discountPercentage: n
-  }) : o.intl.formatToPlainString(o.t["2rh7r6"], {
+  }) : o.intl.formatToPlainString(o.t["2rh7rw"], {
     minutes: Math.max(e.minutes, 1),
     discountPercentage: n
   })

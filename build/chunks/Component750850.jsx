@@ -17,7 +17,7 @@ function c(e) {
     t = (0, s.k)(e.id);
   return (null == n ? true : n.isStaff()) === true && e.isDM() && null == t ? (0, i.jsx)(l.sNh, {
     id: "mark-as-likely-ato",
-    label: d.intl.string(d.t.AWKKgY),
+    label: d.intl.string(d.t.AWKKgc),
     action: () => (0, a.J)(e.id)
   }) : null
 }

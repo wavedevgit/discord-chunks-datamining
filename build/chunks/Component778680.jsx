@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk751586 = require("./751586.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk807231 = require("./807231.js");
+  Chunk473846 = require("./473846.js");
 
 function c(e) {
   let {
@@ -22,7 +22,7 @@ function c(e) {
     children: [(0, r.jsx)(l.Heading, {
       variant: "heading-xl/semibold",
       color: "header-primary",
-      children: o.intl.string(o.t.BDUDam)
+      children: o.intl.string(o.t.BDUDau)
     }), (0, r.jsx)("div", {
       className: s.controlsBarContainer,
       children: u
@@ -35,7 +35,7 @@ function c(e) {
       },
       children: [(0, r.jsx)(l.njP.Item, {
         id: "all",
-        children: o.intl.string(o.t.Y9DnPT)
+        children: o.intl.string(o.t.Y9DnPa)
       }), d.map(e => (0, r.jsx)(l.njP.Item, {
         id: e.value,
         children: e.label

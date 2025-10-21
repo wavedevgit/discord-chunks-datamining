@@ -61,7 +61,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk967249 = require("./967249.js"),
   Chunk616922 = require("./616922.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk463736 = require("./463736.js");
+  Chunk723295 = require("./723295.js");
 let es = 8;
 
 function el(e) {
@@ -119,7 +119,7 @@ function ed(e) {
     if (!y) {
       var t;
       e.push({
-        label: null != (t = O.label) ? t : ea.intl.string(ea.t.VJlc0d),
+        label: null != (t = O.label) ? t : ea.intl.string(ea.t.VJlc0S),
         trackingArea: m.j_.SYNC,
         onClick: () => {
           O.onClick()
@@ -138,7 +138,7 @@ function ed(e) {
       className: eo.description,
       color: "none",
       lineClamp: 1,
-      children: ea.intl.string(ea.t["84qx9v"])
+      children: ea.intl.string(ea.t["84qx9r"])
     });
     return (0, r.jsx)(h.W, {
       header: A,
@@ -158,7 +158,7 @@ function ed(e) {
       }
     })
   } {
-    let e = null != g && null != g.details && null != g.state ? ea.intl.formatToPlainString(ea.t.JCvHt7, {
+    let e = null != g && null != g.details && null != g.state ? ea.intl.formatToPlainString(ea.t.JCvHtx, {
         track: g.details,
         artist: g.state
       }) : l.name,
@@ -262,7 +262,7 @@ function e_(e) {
     }
   }).filter(U.lm), [a]);
   if (!(null != n || o.length > 0)) return null;
-  let l = null != n ? (0, K.V)(n) : ea.intl.string(ea.t["4dGUPz"]);
+  let l = null != n ? (0, K.V)(n) : ea.intl.string(ea.t["4dGUP0"]);
   return (0, r.jsxs)("div", {
     className: eo.footer,
     children: [(0, r.jsx)("div", {
@@ -310,7 +310,7 @@ function ep(e) {
     application: S,
     analyticsLocations: T
   }), el = i.useMemo(() => null == es ? null : {
-    label: ea.intl.string(ea.t["jaYS/v"]),
+    label: ea.intl.string(ea.t["jaYS/h"]),
     icon: c.v3n,
     trackingArea: m.j_.CLOUD_PLAY,
     onClick: es
@@ -327,7 +327,7 @@ function ep(e) {
     isFrameApplication: x,
     isGameLaunchable: ei
   }), ep = eu(L, N, P, S), eh = (0, Y.g)(N, L), em = (0, F.L)(L, P, S, C), eg = (0, l.e7)([k.Z], () => null != L && null != L.application_id && k.Z.getState(L.application_id, en.mFx.JOIN) === en.OcF.LOADING), eE = i.useMemo(() => ec ? {
-    label: ea.intl.string(ea.t.VJlc0d),
+    label: ea.intl.string(ea.t.VJlc0S),
     trackingArea: m.j_.JOIN,
     submitting: eg,
     onClick: () => {
@@ -356,13 +356,13 @@ function ep(e) {
       })
     }
   } : ep ? {
-    label: ea.intl.string(ea.t.VJlc0d),
+    label: ea.intl.string(ea.t.VJlc0S),
     trackingArea: m.j_.SYNC,
     onClick: () => {
       null != L && f.Z_(L, P.author.id)
     }
   } : em ? {
-    label: ea.intl.string(ea.t["hC/Ze3"]),
+    label: ea.intl.string(ea.t["hC/Zey"]),
     trackingArea: m.j_.INVITE,
     onClick: () => {
       null != L && u.Z.sendActivityInvite({
@@ -373,14 +373,14 @@ function ep(e) {
       })
     },
     disabled: P.author.id === C,
-    disabledReason: P.author.id === C ? ea.intl.string(ea.t.IBl8IC) : true
+    disabledReason: P.author.id === C ? ea.intl.string(ea.t.IBl8ID) : true
   } : eh ? {
-    label: ea.intl.string(ea.t.KC26NT),
+    label: ea.intl.string(ea.t.KC26NR),
     trackingArea: m.j_.PLAY,
     onClick: () => {},
     disabled: true
   } : null != el ? el : true, [ec, ep, em, eh, el, P.author.id, P.id, L, A.id, A.guild_id, T, ed, C, eg]), eb = i.useMemo(() => ei && null != et ? {
-    label: ea.intl.string(ea.t.RscU7O),
+    label: ea.intl.string(ea.t.RscU7I),
     trackingArea: m.j_.PLAY,
     onClick: () => {
       d.Z.launch({
@@ -406,7 +406,7 @@ function ep(e) {
       children: [(0, r.jsx)(c.YqE, {
         size: "xxs",
         color: "currentColor"
-      }), ea.intl.string(ea.t.TsWCdX)]
+      }), ea.intl.string(ea.t.TsWCdW)]
     }) : null,
     eA = eh ? null : (0, r.jsx)(e_, {
       presenceActivity: L,

@@ -15,10 +15,10 @@ var r, a, Chunk951288 = require("./951288.js"),
   Chunk899789 = require("./899789.jsx"),
   Chunk735276 = require("./735276.jsx"),
   Chunk619733 = require("./619733.js"),
-  Chunk45765 = require("./45765.js"),
+  Chunk470658 = require("./470658.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk204613 = require("./204613.js");
-let p = (r = function(e) {
+  Chunk62525 = require("./62525.js");
+let j = (r = function(e) {
   for (var n = 1; n < arguments.length; n++) {
     var t = null != arguments[n] ? arguments[n] : {},
       r = Object.keys(t);
@@ -68,34 +68,34 @@ function h(e) {
     }, [null == t ? true : t.catalog, null == t ? true : t.instances]),
     h = a.length >= _.YX;
   return 0 === r.length ? (0, i.jsx)("div", {
-    className: j.container,
+    className: p.container,
     children: (0, i.jsx)(c.$jN, {
       type: c.RAz.SPINNING_CIRCLE,
-      className: j.spinner
+      className: p.spinner
     })
   }) : (0, i.jsxs)("div", {
-    className: j.container,
+    className: p.container,
     children: [(0, i.jsx)(s.X6q, {
-      className: j.heading,
+      className: p.heading,
       variant: "heading-md/semibold",
       children: b.intl.string(v.default["3vWDMz"])
     }), h && (0, i.jsx)("div", {
-      className: j.maxInstancesWarning,
+      className: p.maxInstancesWarning,
       children: (0, i.jsx)(f.C, {})
     }), (0, i.jsx)(s.zJl, {
-      className: j.gameContainerWrapper,
+      className: p.gameContainerWrapper,
       children: (0, i.jsx)("div", {
-        className: j.gameContainer,
+        className: p.gameContainer,
         children: r.map((e, t) => (0, i.jsx)(g.Z, {
           game: e,
           onClick: () => (0, x.Z)({
             guildId: n,
-            stepConfig: p,
+            stepConfig: j,
             initialGameServerGame: e,
             analyticsLocation: d.Z.GAME_SERVER_OVERVIEW
           }),
-          imageClassName: j.image,
-          titleClassName: j.title,
+          imageClassName: p.image,
+          titleClassName: p.title,
           disabled: h
         }, "sidebar-game-".concat(t, "-").concat(e.id)))
       })

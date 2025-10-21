@@ -1,4 +1,4 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 753898, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk518950 = require("./518950.js"),
   Chunk967128 = require("./967128.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk40036 = require("./40036.js");
+  Chunk963392 = require("./963392.js");
 
 function x(e) {
   var t;
@@ -78,13 +78,13 @@ function x(e) {
       className: v.buttonContainer,
       children: [(0, i.jsx)(b.l, {
         channel: n,
-        text: _.intl.string(_.t["6Qgren"]),
+        text: _.intl.string(_.t["6Qgrev"]),
         icon: o.ejJ
       }), (0, i.jsx)(a.zxk, {
         icon: o.vdY,
         variant: "secondary",
-        text: _.intl.string(_.t["5Q9+/P"]),
-        "aria-label": _.intl.string(_.t["5Q9+/P"]),
+        text: _.intl.string(_.t["5Q9+/L"]),
+        "aria-label": _.intl.string(_.t["5Q9+/L"]),
         onClick: () => (0, g.B)(n.id, c.Z.EMPTY_GROUP_DM)
       })]
     })]

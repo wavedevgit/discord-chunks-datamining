@@ -29,7 +29,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk46140 = require("./46140.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk189730 = require("./189730.js");
+  Chunk879048 = require("./879048.js");
 
 function R(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -80,16 +80,16 @@ let L = 10,
 function B(e) {
   var t;
   let n = {
-      [S.S7.PACKAGE_ACTION_ADVENTURE]: C.t.PYFVdX,
-      [S.S7.PACKAGE_RPG_MMO]: C.t.rFQo2N,
-      [S.S7.PACKAGE_RACING_SPORTS]: C.t.zDRa6u,
-      [S.S7.PACKAGE_SANDBOX_CREATIVE]: C.t.vz9U2d,
-      [S.S7.PACKAGE_FAMILY_FRIENDLY]: C.t.IOiAEx,
-      [S.S7.PACKAGE_HOLIDAY_SEASON]: C.t.cJPqvL,
-      [S.S7.PACKAGE_NEW_YEARS]: C.t.S0w2mp
+      [S.S7.PACKAGE_ACTION_ADVENTURE]: C.t.PYFVdf,
+      [S.S7.PACKAGE_RPG_MMO]: C.t.rFQo2F,
+      [S.S7.PACKAGE_RACING_SPORTS]: C.t.zDRa6g,
+      [S.S7.PACKAGE_SANDBOX_CREATIVE]: C.t.vz9U2Q,
+      [S.S7.PACKAGE_FAMILY_FRIENDLY]: C.t.IOiAE0,
+      [S.S7.PACKAGE_HOLIDAY_SEASON]: C.t.cJPqvD,
+      [S.S7.PACKAGE_NEW_YEARS]: C.t.S0w2mv
     },
     r = e.config.features.find(e => e in n),
-    i = null != (t = null != r ? n[r] : null) ? t : C.t["D+DkEB"];
+    i = null != (t = null != r ? n[r] : null) ? t : C.t["D+DkEH"];
   return C.intl.string(i)
 }
 let Z = e => {
@@ -114,12 +114,12 @@ let Z = e => {
           }), (0, r.jsx)(c.Text, {
             variant: "text-sm/normal",
             color: "text-tertiary",
-            children: C.intl.string(C.t.VgN1Bg)
+            children: C.intl.string(C.t.VgN1Bn)
           })]
         })]
       }), (0, r.jsx)(c.P3F, {
         className: N.closeButton,
-        "aria-label": C.intl.string(C.t.cpT0Cg),
+        "aria-label": C.intl.string(C.t.cpT0Cq),
         onClick: n,
         children: (0, r.jsx)(c.Dio, {
           size: "md",
@@ -151,7 +151,7 @@ let Z = e => {
       }), await (0, c.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("89311"), n.e("20074")]).then(n.bind(n, 644941));
+        } = await Promise.all([n.e("89311"), n.e("83123")]).then(n.bind(n, 644941));
         return t => (0, r.jsx)(e, P({
           applicationId: o.applicationId,
           source: h.m1.GameSheet,

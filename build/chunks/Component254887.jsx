@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk485386 = require("./485386.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk744774 = require("./744774.js");
+  Chunk65448 = require("./65448.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -87,7 +87,7 @@ function v(e) {
   }), E = (0, l.e7)([f.Z], () => null == t.guild || null == t.roles || 0 === t.roles.length ? [] : t.roles.map(e => f.Z.getRole(t.guild.id, e.id)).filter(e => null != e).sort(d.Z), [t]);
   if (0 === E.length) return null;
   let O = E.length,
-    v = p.intl.formatToPlainString(p.t.PCs0oq, {
+    v = p.intl.formatToPlainString(p.t.PCs0oo, {
       numRoles: O
     });
   return (0, r.jsx)(s.bG, {
@@ -103,7 +103,7 @@ function v(e) {
             variant: "text-sm/medium",
             color: "text-default",
             className: h.rolesHeading,
-            children: p.intl.string(p.t.stcSfH)
+            children: p.intl.string(p.t.stcSfI)
           }), (0, r.jsx)("div", b(g({
             className: h.rolesList,
             "aria-label": v,

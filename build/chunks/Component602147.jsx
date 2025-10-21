@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 602147, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -64,7 +64,7 @@ let m = Chunk647438.forwardRef(function(e, t) {
       O(), true !== m && m()
     },
     selected: n,
-    tooltip: g.intl.string(g.t["4nEZLi"]),
+    tooltip: g.intl.string(g.t["4nEZLk"]),
     icon: o.Jmo
   })
 })

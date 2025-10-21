@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk443603 = require("./443603.jsx"),
   Chunk957825 = require("./957825.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk744114 = require("./744114.js");
+  Chunk564355 = require("./564355.js");
 
 function p(e, t) {
   let {
@@ -33,7 +33,7 @@ function p(e, t) {
       }),
       onClick: h,
       isActive: p,
-      "aria-label": f.intl.string(f.t.yvN8bG),
+      "aria-label": f.intl.string(f.t.yvN8bE),
       "aria-haspopup": "false",
       children: (0, r.jsx)(s.l22, {
         size: "refresh_sm",

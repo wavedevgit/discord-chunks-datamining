@@ -10,29 +10,29 @@ var Chunk442837 = require("./442837.js"),
   Chunk536442 = require("./536442.js"),
   Chunk142497 = require("./142497.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk402793 = require("./402793.js"),
+  Chunk785281 = require("./785281.js"),
   Chunk137707 = require("./137707.js");
 let d = () => (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
   children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
     color: "header-primary",
     variant: "text-xs/normal",
-    className: Chunk402793.inlineText,
-    children: Chunk388032.intl.string(Chunk388032.t.GcZzp6)
+    className: Chunk785281.inlineText,
+    children: Chunk388032.intl.string(Chunk388032.t.GcZzp2)
   }), (0, Chunk951288.jsx)(Chunk481060.Text, {
     color: "header-primary",
     variant: "text-xs/normal",
-    className: Chunk402793.inlineText,
-    children: Chunk388032.intl.string(Chunk388032.t["/NEGrK"])
+    className: Chunk785281.inlineText,
+    children: Chunk388032.intl.string(Chunk388032.t["/NEGrO"])
   }), (0, Chunk951288.jsx)(Chunk481060.Text, {
     color: "header-primary",
     variant: "text-xs/normal",
-    className: Chunk402793.inlineText,
-    children: Chunk388032.intl.string(Chunk388032.t.eUbuHB)
+    className: Chunk785281.inlineText,
+    children: Chunk388032.intl.string(Chunk388032.t.eUbuHL)
   }), (0, Chunk951288.jsx)(Chunk481060.Text, {
     color: "header-primary",
     variant: "text-xs/normal",
-    className: Chunk402793.inlineText,
-    children: Chunk388032.intl.string(Chunk388032.t.sCAZeH)
+    className: Chunk785281.inlineText,
+    children: Chunk388032.intl.string(Chunk388032.t.sCAZeI)
   })]
 });
 
@@ -48,16 +48,16 @@ function g(e) {
         className: c.textContainer,
         children: [(0, r.jsx)(i.Heading, {
           variant: "heading-md/semibold",
-          children: o.intl.string(o.t.Sx8Ezs)
+          children: o.intl.string(o.t.Sx8Ezi)
         }), (0, r.jsx)(i.Text, {
           color: "header-secondary",
           variant: "text-xs/normal",
           className: c.descriptionText,
-          children: o.intl.string(o.t.JUzPho)
+          children: o.intl.string(o.t.JUzPhm)
         }), (0, r.jsx)(i.Text, {
           color: "header-secondary",
           variant: "text-xs/normal",
-          children: o.intl.format(o.t.Vh7rPz, {
+          children: o.intl.format(o.t.Vh7rP7, {
             suggestionsHook: d
           })
         })]
@@ -65,7 +65,7 @@ function g(e) {
         className: c.image,
         children: (0, r.jsx)("img", {
           src: u,
-          alt: o.intl.string(o.t["uIm/n5"])
+          alt: o.intl.string(o.t["uIm/n4"])
         })
       })]
     }), (0, r.jsx)("div", {
@@ -76,7 +76,7 @@ function g(e) {
         children: [(0, r.jsx)(i.Button, {
           onClick: t,
           variant: "secondary",
-          text: o.intl.string(o.t["X/3SyM"])
+          text: o.intl.string(o.t["X/3SyA"])
         }), (0, r.jsx)("div", {
           className: c.textButtonWrapper,
           children: (0, r.jsx)(i.Avr, {
@@ -85,7 +85,7 @@ function g(e) {
             },
             variant: "secondary",
             textVariant: "text-sm/medium",
-            text: o.intl.string(o.t["5E9SBw"])
+            text: o.intl.string(o.t["5E9SB9"])
           })
         })]
       })

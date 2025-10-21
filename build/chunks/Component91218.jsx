@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk681715 = require("./681715.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk266501 = require("./266501.js");
+  Chunk274424 = require("./274424.js");
 let d = Chunk647438.forwardRef(function(e, t) {
   let {
     className: n,
@@ -28,7 +28,7 @@ let d = Chunk647438.forwardRef(function(e, t) {
     let e = (0, r.jsx)("img", {
       ref: t,
       alt: "",
-      "aria-label": c.intl.formatToPlainString(c.t["9+YWrK"], {
+      "aria-label": c.intl.formatToPlainString(c.t["9+YWrE"], {
         name: d
       }),
       className: o()(u.roleIcon, n, {

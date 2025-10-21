@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk161572 = require("./161572.jsx"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk593540 = require("./593540.js");
+  Chunk116649 = require("./116649.js");
 
 function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -89,7 +89,7 @@ function P(e) {
     },
     W = () => k ? null : (0, r.jsx)(o.sNh, {
       id: "view-profile",
-      label: A.intl.string(A.t["+Xp3ho"]),
+      label: A.intl.string(A.t["+Xp3hq"]),
       action: () => {
         Y(), (0, p.pQ)(R({
           action: "PRESS_VIEW_PROFILE",
@@ -114,7 +114,7 @@ function P(e) {
         children: [(0, r.jsx)(o.nn4, {
           children: (0, r.jsx)(o.H, {
             id: z,
-            children: A.intl.format(A.t.KRe1Fh, {
+            children: A.intl.format(A.t.KRe1Fk, {
               name: q
             })
           })

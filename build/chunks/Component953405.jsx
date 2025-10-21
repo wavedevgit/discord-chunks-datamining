@@ -1,4 +1,4 @@
-/** Chunk was on 90020 **/
+/** Chunk was on 95215 **/
 /** chunk id: 953405, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -11,14 +11,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk409116 = require("./409116.jsx"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk75344 = require("./75344.js");
+  Chunk551909 = require("./551909.js");
 
 function d(e) {
   let {
     orbPrice: t,
     isProductDisabled: n,
     hasSufficientOrbs: a
-  } = e, l = n ? c.intl.string(c.t.wu4gyc) : c.intl.string(c.t.eFNRzc), s = n || !a;
+  } = e, l = n ? c.intl.string(c.t.wu4gyV) : c.intl.string(c.t.eFNRzU), s = n || !a;
   return (0, r.jsxs)("div", {
     className: u.priceLine,
     children: [(0, r.jsx)("div", {

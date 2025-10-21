@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk376191 = require("./376191.jsx"),
   Chunk86203 = require("./86203.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk709179 = require("./709179.js");
+  Chunk539410 = require("./539410.js");
 
 function b(e) {
   let {
@@ -53,7 +53,7 @@ function b(e) {
       children: [(0, r.jsx)(a.Button, {
         variant: "secondary",
         size: "sm",
-        text: g.intl.string(g.t.vicfl5),
+        text: g.intl.string(g.t.vicfl6),
         onClick: e => {
           y(b.id), e.stopPropagation()
         },

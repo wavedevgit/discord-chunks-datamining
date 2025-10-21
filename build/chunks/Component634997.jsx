@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk800530 = require("./800530.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk889469 = require("./889469.js");
+  Chunk678189 = require("./678189.js");
 let I = function(e) {
   let {
     transitionState: t,
@@ -47,10 +47,10 @@ let I = function(e) {
   }, [O, n]), (0, r.jsxs)(o.Modal, {
     transitionState: t,
     onClose: I,
-    title: M.intl.string(M.t.JHNunp),
+    title: M.intl.string(M.t.JHNunj),
     subtitle: M.intl.string(M.t["+BLIGh"]),
     actions: [{
-      text: M.intl.string(M.t.SJMnkZ),
+      text: M.intl.string(M.t.SJMnkX),
       loading: G,
       icon: l.Gr1,
       iconPosition: "end",
@@ -63,7 +63,7 @@ let I = function(e) {
         R.Z.openUrl(A.Z.getArticleURL(T.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, d.x3)(O, d.d_.PRIMARY, d.sU.LEARN_MORE)
       },
       className: C.learnMoreButton,
-      children: [M.intl.string(M.t["aA6q//"]), (0, r.jsx)(l.Gr1, {
+      children: [M.intl.string(M.t["aA6q/z"]), (0, r.jsx)(l.Gr1, {
         size: "xs",
         color: "currentColor"
       })]
@@ -83,7 +83,7 @@ let I = function(e) {
       variant: "text-xs/medium",
       color: "text-muted",
       className: C.requestContainer,
-      children: M.intl.format(M.t.pJAxgY, {
+      children: M.intl.format(M.t.pJAxgQ, {
         handleOnRequestHook: () => {
           R.Z.openUrl(f.sQ.APPEALS_LINK), (0, d.x3)(O, d.d_.PRIMARY, d.sU.MANUAL_REVIEW_REQUEST)
         }

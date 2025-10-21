@@ -1,4 +1,4 @@
-/** Chunk was on 37786 **/
+/** Chunk was on 84071 **/
 /** chunk id: 14476, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   c: () => m
@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk699758 = require("./699758.js"),
   Chunk616066 = require("./616066.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk281377 = require("./281377.js");
+  Chunk632939 = require("./632939.js");
 let m = e => {
   let {
     skuId: t,
@@ -41,16 +41,16 @@ let m = e => {
       onClick: () => {
         null == t || null == f || m || f(t)
       },
-      className: l()(I ? _.shopCardDark : _.shopCard, {
-        [_.shopCardAnimation]: !m,
-        [I ? _.shopCardDarkHighlighted : _.shopCardHighlighted]: L,
-        [_.shopCardSelected]: j === t
+      className: l()(I ? h.shopCardDark : h.shopCard, {
+        [h.shopCardAnimation]: !m,
+        [I ? h.shopCardDarkHighlighted : h.shopCardHighlighted]: L,
+        [h.shopCardSelected]: j === t
       }),
       children: [(0, r.jsx)("div", {
-        className: l()(_.preview, {
-          [_.previewTrick]: b === u.KN.Trick,
-          [_.previewTreat]: b === u.KN.Treat,
-          [_.shopCardClaimed]: m
+        className: l()(h.preview, {
+          [h.previewTrick]: b === u.KN.Trick,
+          [h.previewTreat]: b === u.KN.Treat,
+          [h.shopCardClaimed]: m
         }),
         children: (0, r.jsx)(p.R, {
           item: w,
@@ -64,15 +64,15 @@ let m = e => {
         width: 48,
         height: 48,
         color: d.TVs.colors.WHITE,
-        className: _.claimedIcon
+        className: h.claimedIcon
       }), (0, r.jsxs)("div", {
-        className: _.productName,
+        className: h.productName,
         children: [(0, r.jsx)(d.Heading, {
           variant: "text-md/bold",
           children: x
         }), (0, r.jsx)(d.Text, {
           variant: "text-md/normal",
-          children: m ? h.intl.string(h.t["6cfuDg"]) : h.intl.string(h.t.QQsaCQ)
+          children: m ? _.intl.string(_.t["6cfuDj"]) : _.intl.string(_.t.QQsaCc)
         })]
       })]
     })

@@ -64,7 +64,7 @@ function S(e) {
   let I = a[l];
   o()(null != I, "Expected sku");
   let T = null != d || null != f || null != _,
-    S = h.length > 0 ? v.intl.formatToPlainString(v.t.VuV3TU, {
+    S = h.length > 0 ? v.intl.formatToPlainString(v.t.VuV3Td, {
       discountOfferAmount: h[0].discount.amount
     }) : true;
   return (i.useEffect(() => {

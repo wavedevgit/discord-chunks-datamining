@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 660962, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -42,12 +42,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk141006 = require("./141006.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk258640 = require("./258640.js"),
-  Chunk250302 = require("./250302.js"),
-  Chunk10083 = require("./10083.js"),
+  Chunk149829 = require("./149829.js"),
+  Chunk12574 = require("./12574.js"),
+  Chunk21321 = require("./21321.js"),
   Chunk179517 = require("./179517.js"),
   Chunk79829 = require("./79829.js");
-let z = (0, Chunk663993.Un)({
+let V = (0, Chunk663993.Un)({
     createPromise: () => require.e("4848").then(require.bind(require, 797967)),
     webpackId: 797967
   }),
@@ -61,7 +61,7 @@ function Y(e) {
   return i.useEffect(() => {
     a(t.name)
   }, [t.name]), (0, r.jsx)(m.oil, {
-    label: U.intl.string(U.t.dLbkBg),
+    label: U.intl.string(U.t.dLbkBk),
     required: true,
     type: "text",
     value: l,
@@ -80,13 +80,13 @@ function q(e) {
     selectedStyle: i,
     disabled: l,
     shouldShowUpsell: s
-  } = e, o = (0, P.F)(U.intl.string(U.t.Mi9KbW)), d = (0, f.ZP)(), h = (0, v.oC)(n, t), x = {
+  } = e, o = (0, P.F)(U.intl.string(U.t.Mi9Kbe)), d = (0, f.ZP)(), h = (0, v.oC)(n, t), x = {
     dark: {
       src: W,
       name: t.name
     },
     light: {
-      src: V,
+      src: z,
       name: t.name
     }
   };
@@ -101,7 +101,7 @@ function q(e) {
         visibleContent: p
       } = e;
       return (0, r.jsxs)(m.gNt, {
-        label: U.intl.string(U.t["9wVJRE"]),
+        label: U.intl.string(U.t["9wVJRB"]),
         badge: p === u.z.GUILD_SETTINGS_ROLE_STYLES_NEW_BADGE ? "new" : true,
         children: [(0, r.jsx)("div", {
           className: F.roleStyleContainer,
@@ -152,19 +152,19 @@ function q(e) {
             children: [(0, r.jsx)(m.Text, {
               variant: "text-sm/semibold",
               color: "button-outline-primary-text",
-              children: U.intl.format(B.default.VpEDJS, {
+              children: U.intl.format(B.default.VpEDJc, {
                 magical: (0, r.jsx)(X, {})
               })
             }), (0, r.jsx)(m.Text, {
               variant: "text-xs/medium",
               color: "button-outline-primary-text",
-              children: U.intl.string(B.default.FJZeZG)
+              children: U.intl.string(B.default.FJZeZF)
             })]
           }), (0, r.jsx)(m.Button, {
             onClick: O,
             variant: "expressive",
             icon: m.Ucv,
-            text: U.intl.string(U.t["+7XY39"])
+            text: U.intl.string(U.t["+7XY31"])
           })]
         })]
       })
@@ -204,12 +204,12 @@ function X() {
       return e
     }({}, exports),
     className: require,
-    "data-text": Chunk388032.intl.string(Chunk258640.default["+/IHLi"]),
-    children: Chunk388032.intl.string(Chunk258640.default["+/IHLi"])
+    "data-text": Chunk388032.intl.string(Chunk149829.default["+/IHLl"]),
+    children: Chunk388032.intl.string(Chunk149829.default["+/IHLl"])
   })
 }
 
-function Q(e) {
+function J(e) {
   var t, n;
   let {
     role: i,
@@ -220,10 +220,10 @@ function Q(e) {
   return (0, r.jsx)("div", {
     className: F.colorPicker,
     children: (0, r.jsx)(m.gNt, {
-      label: U.intl.string(U.t["1F6FzM"]),
-      description: U.intl.string(U.t["9UCxlZ"]),
+      label: U.intl.string(U.t["1F6FzL"]),
+      description: U.intl.string(U.t["9UCxlf"]),
       required: true,
-      children: (0, r.jsx)(z, {
+      children: (0, r.jsx)(V, {
         defaultColor: G.p6O,
         colors: a === T.g.GRADIENT && s ? M.tl : G.pmI,
         value: i.color,
@@ -247,13 +247,13 @@ function Q(e) {
   })
 }
 
-function J(e) {
+function Q(e) {
   let {
     role: t,
     guildId: n,
     selectedStyle: i,
     disableInteraction: l
-  } = e, s = (0, P.F)(U.intl.string(U.t.Mi9KbW)), o = {
+  } = e, s = (0, P.F)(U.intl.string(U.t.Mi9Kbe)), o = {
     nick: s.author.username,
     guildId: n,
     authorId: s.author.id,
@@ -264,7 +264,7 @@ function J(e) {
     src: W,
     name: t.name
   }, d = {
-    src: V,
+    src: z,
     name: t.name
   }, u = (0, v.oC)(n, t), p = [G.BRd.DARK, G.BRd.DARKER, G.BRd.MIDNIGHT, G.BRd.LIGHT];
   return (0, r.jsx)(m.Rny, {
@@ -291,7 +291,7 @@ function J(e) {
             variant: "text-xs/medium",
             color: "text-secondary",
             className: F.lightThemeNotice,
-            children: U.intl.string(U.t.nxwm3N)
+            children: U.intl.string(U.t.nxwm3I)
           })]
         })
       }, e))
@@ -306,15 +306,15 @@ function $(e) {
   } = e;
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(m.rsf, {
-      label: U.intl.string(U.t.vceJPj),
+      label: U.intl.string(U.t.vceJPk),
       checked: t.hoist,
       onChange: e => (0, S.we)(t.id, e, t.mentionable),
       disabled: n
     }), (0, r.jsx)(m.izJ, {
       className: F.divider
     }), (0, r.jsx)(m.rsf, {
-      label: U.intl.formatToPlainString(U.t.DTXoJS, {}),
-      description: U.intl.string(U.t.kRg5W1),
+      label: U.intl.formatToPlainString(U.t.DTXoJQ, {}),
+      description: U.intl.string(U.t.kRg5W5),
       checked: t.mentionable,
       onChange: e => (0, S.we)(t.id, t.hoist, e),
       disabled: n
@@ -370,7 +370,7 @@ function ee(e) {
         selectedStyle: u,
         disabled: p,
         shouldShowUpsell: c
-      }), u !== T.g.HOLOGRAPHIC && null != u && (0, r.jsx)(Q, {
+      }), u !== T.g.HOLOGRAPHIC && null != u && (0, r.jsx)(J, {
         role: n,
         disabled: p,
         currentStyle: u,
@@ -379,13 +379,13 @@ function ee(e) {
         className: F.holographicInfoBox,
         children: (0, r.jsx)(m.Text, {
           variant: "text-xs/medium",
-          children: U.intl.string(B.default.tBhCys)
+          children: U.intl.string(B.default.tBhCyr)
         })
       }), (0, r.jsx)(Z.Z, {
         guild: t,
         disabled: p,
         role: n
-      }), (0, r.jsx)(J, {
+      }), (0, r.jsx)(Q, {
         role: n,
         guildId: t.id,
         selectedStyle: u,

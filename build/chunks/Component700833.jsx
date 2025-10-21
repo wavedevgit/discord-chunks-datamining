@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 700833, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -95,7 +95,7 @@ function p(e) {
     case a.QJ.TERMS:
       return (0, r.jsx)(c.Z, g({
         channelId: f.rulesChannelId,
-        title: E === a.it.COMPACT ? u.intl.string(u.t["55+giY"]) : u.intl.string(u.t["53vNcH"]),
+        title: E === a.it.COMPACT ? u.intl.string(u.t["55+gic"]) : u.intl.string(u.t["53vNcB"]),
         formField: p
       }, w));
     case a.QJ.PARAGRAPH:

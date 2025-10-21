@@ -32,9 +32,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk539086 = require("./539086.js"),
   Chunk292352 = require("./292352.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk412297 = require("./412297.js"),
+  Chunk660886 = require("./660886.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk799114 = require("./799114.js");
+  Chunk166387 = require("./166387.js");
 let L = {
     [Chunk292352.dG.REQUESTS]: Chunk731934.Z,
     [Chunk292352.dG.ACTIVITY]: Chunk830746.Z,
@@ -53,7 +53,7 @@ function M() {
   return (0, Chunk951288.jsx)(Chunk481060.Kqy, {
     justify: "center",
     align: "center",
-    className: Chunk799114.loadingContainer,
+    className: Chunk166387.loadingContainer,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
   })
 }
@@ -65,7 +65,7 @@ function k(e) {
   } = e, i = (0, O.gU)(), a = (0, y.Z)();
   return t === N.dG.CONTENT_AND_SOCIAL || t === N.dG.DATA_AND_PRIVACY ? null : (0, r.jsxs)(c.njP, {
     className: D.settingsTabBar,
-    "aria-label": w.intl.string(P.default.RZqaJi),
+    "aria-label": w.intl.string(P.default.RZqaJn),
     selectedItem: t,
     type: "top",
     look: "brand",
@@ -73,19 +73,19 @@ function k(e) {
     children: [(0, r.jsx)(c.njP.Item, {
       className: D.settingsTabBarItem,
       id: N.dG.ACTIVITY,
-      children: w.intl.string(P.default.bdBmq6)
+      children: w.intl.string(P.default.bdBmqy)
     }), (0, r.jsxs)(c.njP.Item, {
       className: D.settingsTabBarItem,
       id: N.dG.REQUESTS,
-      "aria-label": w.intl.string(P.default["gVWG+/"]),
-      children: [w.intl.string(P.default["gVWG+/"]), i > 0 ? (0, r.jsx)(c.mAB, {
+      "aria-label": w.intl.string(P.default["gVWG+6"]),
+      children: [w.intl.string(P.default["gVWG+6"]), i > 0 ? (0, r.jsx)(c.mAB, {
         className: D.badge,
         count: i
       }) : null]
     }), a ? (0, r.jsx)(c.njP.Item, {
       className: D.settingsTabBarItem,
       id: N.dG.SETTINGS,
-      children: w.intl.string(w.t["3D5yo6"])
+      children: w.intl.string(w.t["3D5yo/"])
     }) : null]
   })
 }
@@ -109,21 +109,21 @@ function j(e) {
         "aria-hidden": true
       }), (0, r.jsx)(h.Z.Title, {
         id: a,
-        children: w.intl.string(P.default.RZqaJi)
+        children: w.intl.string(P.default.RZqaJn)
       }), (0, r.jsx)(h.Z.Divider, {}), (0, r.jsxs)(c.njP, {
-        "aria-label": w.intl.string(P.default.RZqaJi),
+        "aria-label": w.intl.string(P.default.RZqaJn),
         selectedItem: n,
         type: "top-pill",
         onItemSelect: i,
         children: [(0, r.jsx)(c.njP.Item, {
           id: N.dG.ACTIVITY,
           className: D.item,
-          children: w.intl.string(P.default.bdBmq6)
+          children: w.intl.string(P.default.bdBmqy)
         }), (0, r.jsxs)(c.njP.Item, {
           id: N.dG.REQUESTS,
           className: D.item,
-          "aria-label": w.intl.string(P.default["gVWG+/"]),
-          children: [w.intl.string(P.default["gVWG+/"]), l > 0 ? (0, r.jsx)(c.mAB, {
+          "aria-label": w.intl.string(P.default["gVWG+6"]),
+          children: [w.intl.string(P.default["gVWG+6"]), l > 0 ? (0, r.jsx)(c.mAB, {
             className: D.badge,
             count: l
           }) : null]
@@ -152,17 +152,17 @@ function U() {
   if (Chunk120356) return null;
   let s = L[require];
   return (0, Chunk951288.jsxs)("main", {
-    className: Chunk799114.container,
-    "aria-label": Chunk388032.intl.string(Chunk412297.default.RZqaJi),
+    className: Chunk166387.container,
+    "aria-label": Chunk388032.intl.string(Chunk660886.default.RZqaJn),
     children: [(0, Chunk951288.jsx)(Chunk252618.yY, {
-      location: Chunk388032.intl.string(Chunk412297.default.RZqaJi)
+      location: Chunk388032.intl.string(Chunk660886.default.RZqaJn)
     }), (0, Chunk951288.jsx)(k, {
       section: require,
       handleItemSelect: o
     }), (0, Chunk951288.jsx)(Chunk481060.njP.Panel, {
       id: require,
       "aria-labelledby": module,
-      className: Chunk799114.contentPanel,
+      className: Chunk166387.contentPanel,
       children: (0, Chunk951288.jsx)("div", {
         children: exports ? (0, Chunk951288.jsx)(M, {}) : (0, Chunk951288.jsx)(Chunk873546, {})
       })
@@ -197,10 +197,10 @@ function G() {
   return (0, Chunk951288.jsx)(Chunk906732.Gt, {
     value: module,
     children: (0, Chunk951288.jsxs)("main", {
-      className: o()(Chunk799114.container, Chunk799114.containerSidenav),
-      "aria-label": Chunk388032.intl.string(Chunk412297.default.RZqaJi),
+      className: o()(Chunk166387.container, Chunk166387.containerSidenav),
+      "aria-label": Chunk388032.intl.string(Chunk660886.default.RZqaJn),
       children: [(0, Chunk951288.jsx)(Chunk252618.yY, {
-        location: Chunk388032.intl.string(Chunk412297.default.RZqaJi)
+        location: Chunk388032.intl.string(Chunk660886.default.RZqaJn)
       }), (0, Chunk951288.jsx)(j, {
         theme: Chunk120356,
         section: Chunk731934,
@@ -208,10 +208,10 @@ function G() {
       }), (0, Chunk951288.jsx)(Chunk481060.njP.Panel, {
         id: Chunk731934,
         "aria-labelledby": Chunk873546,
-        className: Chunk799114.contentPanel,
+        className: Chunk166387.contentPanel,
         children: (0, Chunk951288.jsx)(Chunk481060.Ttm, {
           children: (0, Chunk951288.jsx)("div", {
-            className: Chunk799114.sideNavContent,
+            className: Chunk166387.sideNavContent,
             children: Chunk984370 ? (0, Chunk951288.jsx)(M, {}) : (0, Chunk951288.jsx)(Chunk521450, {})
           })
         })

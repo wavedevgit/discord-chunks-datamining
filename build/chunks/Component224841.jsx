@@ -11,21 +11,21 @@ var Chunk481060 = require("./481060.js"),
   Chunk63063 = require("./63063.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk747800 = require("./747800.js");
+  Chunk820796 = require("./820796.js");
 let u = () => (0, Chunk951288.jsx)(Chunk388905.ZP, {
   children: (0, Chunk951288.jsxs)("div", {
-    className: Chunk747800.contentContainer,
+    className: Chunk820796.contentContainer,
     children: [(0, Chunk951288.jsx)(Chunk388905.Dx, {
-      className: Chunk747800.title,
-      children: Chunk388032.intl.string(Chunk388032.t.nCB6GR)
+      className: Chunk820796.title,
+      children: Chunk388032.intl.string(Chunk388032.t.nCB6Ga)
     }), (0, Chunk951288.jsx)(Chunk388905.DK, {
-      className: Chunk747800.subtitle,
-      children: Chunk388032.intl.format(Chunk388032.t.KQgoxM, {
-        underageMessage: Chunk388032.intl.string(Chunk388032.t.WqEH4O)
+      className: Chunk820796.subtitle,
+      children: Chunk388032.intl.format(Chunk388032.t.KQgoxG, {
+        underageMessage: Chunk388032.intl.string(Chunk388032.t.WqEH4D)
       })
     }), (0, Chunk951288.jsx)(Chunk481060.Button, {
       icon: Chunk481060.Gr1,
-      text: Chunk388032.intl.string(Chunk388032.t.hvVgAQ),
+      text: Chunk388032.intl.string(Chunk388032.t.hvVgAZ),
       onClick: () => window.open(Chunk63063.Z.getArticleURL(Chunk981631.BhN.AGE_GATE), "_blank"),
       iconPosition: "end"
     })]

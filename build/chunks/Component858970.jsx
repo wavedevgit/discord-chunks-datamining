@@ -1,7 +1,7 @@
 /** Chunk was on 93979 **/
 /** chunk id: 858970, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => Z
+  Z: () => _
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk65464 = require("./65464.js");
+  Chunk220566 = require("./220566.js");
 
 function y(e) {
   for (var n = 1; n < arguments.length; n++) {
@@ -42,12 +42,12 @@ function y(e) {
   return e
 }
 
-function Z(e) {
+function _(e) {
   let {
     user: n,
     guildId: t,
-    channelId: Z,
-    messageId: _,
+    channelId: _,
+    messageId: Z,
     roleId: O,
     transitionState: N,
     openedAt: A,
@@ -60,16 +60,16 @@ function Z(e) {
     userId: n.id,
     showGuildProfile: true,
     guildId: E,
-    channelId: Z,
-    messageId: _,
+    channelId: _,
+    messageId: Z,
     roleId: O
-  }), R = [{
+  }), D = [{
     icon: o.owK,
-    description: b.intl.string(b.t.kcuWvb)
+    description: b.intl.string(b.t.kcuWva)
   }, {
     icon: o.owK,
-    description: b.intl.string(C ? b.t.QxrDY2 : b.t.W6fjkZ)
-  }], D = (0, p.ZP)(n.id, E), L = d.ZP.getName(null == D ? true : D.guildId, Z, n), M = b.intl.formatToPlainString(b.t.KRe1Fh, {
+    description: b.intl.string(C ? b.t.QxrDY1 : b.t.W6fjkS)
+  }], R = (0, p.ZP)(n.id, E), L = d.ZP.getName(null == R ? true : R.guildId, _, n), M = b.intl.formatToPlainString(b.t.KRe1Fk, {
     name: L
   });
   return (0, l.jsx)(s.Gt, {
@@ -77,9 +77,9 @@ function Z(e) {
     children: (0, l.jsx)(u.Mt, {
       value: w,
       openedAt: A,
-      fetchStartedAt: null == D ? true : D.fetchStartedAt,
-      fetchEndedAt: null == D ? true : D.fetchEndedAt,
-      isLoaded: null == D ? true : D.isLoaded,
+      fetchStartedAt: null == R ? true : R.fetchStartedAt,
+      fetchEndedAt: null == R ? true : R.fetchEndedAt,
+      isLoaded: null == R ? true : R.isLoaded,
       children: (0, l.jsx)(o.Y0X, {
         "data-migration-pending": true,
         transitionState: N,
@@ -88,7 +88,7 @@ function Z(e) {
         parentComponent: "RestrictedUserProfileModalV2",
         children: (0, l.jsxs)(x.Z, {
           user: n,
-          displayProfile: D,
+          displayProfile: R,
           themeType: g.l.MODAL_V2,
           children: [(0, l.jsx)("div", {
             className: I.background
@@ -102,17 +102,17 @@ function Z(e) {
               children: [(0, l.jsx)(o.Heading, {
                 variant: "heading-xl/bold",
                 color: "text-default",
-                children: b.intl.string(b.t.b33pLC)
+                children: b.intl.string(b.t.b33pLD)
               }), (0, l.jsx)(o.Text, {
                 variant: "text-md/medium",
                 color: "text-default",
-                children: b.intl.format(C ? b.t.T7QiLi : b.t.MnEow8, {
+                children: b.intl.format(C ? b.t.T7QiLn : b.t.MnEowy, {
                   username: L
                 })
               })]
             }), (0, l.jsx)("div", {
               className: I.safetyTable,
-              children: R.map((e, n) => {
+              children: D.map((e, n) => {
                 let {
                   icon: t,
                   description: i

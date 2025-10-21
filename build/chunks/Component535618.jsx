@@ -51,17 +51,17 @@ function S(t) {
   if (null == S) return null;
   switch (d.state) {
     case "LINK":
-      return (0, i.jsx)(f.Z, {
+      return (0, i.jsx)(m.Z, {
         sku: e,
         application: S,
         transitionState: n,
         onClose: s,
-        successStateButtonText: h.intl.string(h.t["go1e4+"]),
+        successStateButtonText: h.intl.string(h.t.go1e4x),
         onSuccessButtonClick: T,
         isSuccessButtonLoading: C
       });
     case "SUCCESS":
-      return (0, i.jsx)(m.SocialLayerStorefrontItemClaimedSuccessfullyModal, {
+      return (0, i.jsx)(f.SocialLayerStorefrontItemClaimedSuccessfullyModal, {
         transitionState: n,
         application: S,
         sku: e,

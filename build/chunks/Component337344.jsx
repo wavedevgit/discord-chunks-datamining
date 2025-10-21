@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 337344, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk434404 = require("./434404.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk897174 = require("./897174.js");
+  Chunk666921 = require("./666921.js");
 
 function u(e) {
   let {
@@ -21,8 +21,8 @@ function u(e) {
   return (0, r.jsx)("div", {
     className: d.container,
     children: (0, r.jsx)(i.gNt, {
-      label: c.intl.string(c.t.arFPfH),
-      description: c.intl.string(c.t["IT/0AA"]),
+      label: c.intl.string(c.t.arFPfJ),
+      description: c.intl.string(c.t["IT/0AI"]),
       children: (0, r.jsx)(i.Button, {
         size: "sm",
         variant: "secondary",
@@ -35,7 +35,7 @@ function u(e) {
             returnToSection: o.pNK.ROLES
           })
         },
-        text: c.intl.string(c.t.arFPfH),
+        text: c.intl.string(c.t.arFPfJ),
         icon: i.d4D,
         iconPosition: "end"
       })

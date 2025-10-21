@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk918165 = require("./918165.js");
+  Chunk118896 = require("./118896.js");
 
 function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -72,7 +72,7 @@ function N(e) {
       setDevice: u.Z.setInputDevice,
       Icon: c.S6n,
       getCanSetDevice: e => e.supports(y.AN.AUDIO_INPUT_DEVICE),
-      getWarningMessage: () => O.intl.format(O.t["1iK6UV"], {
+      getWarningMessage: () => O.intl.format(O.t["1iK6UW"], {
         onDownloadClick: () => (0, _.y)("Help Text Input Devices")
       }),
       getLocation: e => "".concat(e, ".SingleSelectInputDevices")
@@ -81,7 +81,7 @@ function N(e) {
       setDevice: u.Z.setOutputDevice,
       Icon: c.VWR,
       getCanSetDevice: e => e.supports(y.AN.AUDIO_OUTPUT_DEVICE),
-      getWarningMessage: () => O.intl.format(O.t.Ow0dbG, {
+      getWarningMessage: () => O.intl.format(O.t.Ow0dbF, {
         onDownloadClick: () => (0, _.y)("Help Text Output Devices")
       }),
       getLocation: e => "".concat(e, ".SingleSelectOutputDevices")
@@ -90,7 +90,7 @@ function N(e) {
       setDevice: u.Z.setVideoDevice,
       Icon: c.xmR,
       getCanSetDevice: e => e.isVideoAvailable(),
-      getWarningMessage: () => O.intl.format(O.t["1iK6UV"], {
+      getWarningMessage: () => O.intl.format(O.t["1iK6UW"], {
         onDownloadClick: () => (0, _.y)("Help Text Video Devices")
       }),
       getLocation: e => "".concat(e, ".SingleSelectVideoDevices")
@@ -160,7 +160,7 @@ function R(e) {
       let e = (0, l.ap)(k) ? n(561259) : n(887695);
       i = (0, r.jsx)("img", {
         src: e,
-        alt: O.intl.string(O.t.smSKsr)
+        alt: O.intl.string(O.t.smSKsj)
       })
     }
     return (0, r.jsxs)("div", {
@@ -213,7 +213,7 @@ function R(e) {
     } {
       let e = {
         value: C,
-        label: O.intl.string(O.t.E99UMj),
+        label: O.intl.string(O.t.E99UMh),
         preventCloseOnSelect: true
       };
       return t.concat(e)

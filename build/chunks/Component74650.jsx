@@ -1,4 +1,4 @@
-/** Chunk was on 41348 **/
+/** Chunk was on 79041 **/
 /** chunk id: 74650, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   U: () => x
@@ -14,7 +14,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk921944 = require("./921944.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk716537 = require("./716537.js"),
+  Chunk972979 = require("./972979.js"),
   Chunk217379 = require("./217379.js");
 
 function x(e) {
@@ -41,14 +41,14 @@ function x(e) {
           variant: "heading-md/semibold",
           color: "text-primary",
           className: p.title,
-          children: m.intl.string(m.t["PRXV4+"])
+          children: m.intl.string(m.t.PRXV49)
         }), (0, a.jsx)(l.Text, {
           variant: "text-sm/medium",
           color: "text-secondary",
-          children: m.intl.string(m.t.RSHtFx)
+          children: m.intl.string(m.t["RSHtF+"])
         })]
       }), f ? (0, a.jsx)(l.Button, {
-        text: m.intl.string(m.t.LhcHi4),
+        text: m.intl.string(m.t.LhcHi5),
         fullWidth: true,
         onClick: () => {
           t(d.L.TAKE_ACTION), n()
@@ -62,7 +62,7 @@ function x(e) {
         size: i.zx.Sizes.LARGE,
         color: i.zx.Colors.CUSTOM,
         textOptions: {
-          textOverride: m.intl.string(m.t.pj0XBA)
+          textOverride: m.intl.string(m.t.pj0XBN)
         },
         className: p.button
       })]

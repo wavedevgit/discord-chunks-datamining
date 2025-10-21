@@ -36,7 +36,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk52741 = require("./52741.jsx"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk518520 = require("./518520.js"),
+  Chunk1721 = require("./1721.js"),
   Chunk895601 = require("./895601.js"),
   Chunk381126 = require("./381126.js"),
   Chunk234286 = require("./234286.js");
@@ -164,7 +164,7 @@ function Z(e) {
       [D.withGiftBanner]: g
     }),
     children: [(0, r.jsx)(Y, {}), (0, r.jsx)(A.E, {
-      text: null != H ? H : w.intl.string(w.t["6bEcYm"]),
+      text: null != H ? H : w.intl.string(w.t["6bEcYr"]),
       className: D.pill
     }), (0, r.jsx)(E.Z, {
       className: D.wordmark,
@@ -260,7 +260,7 @@ function V(e) {
         variant: "display-md",
         color: "header-primary",
         className: D.premiumCardsHeader,
-        children: w.intl.string(w.t.vLz3Zm)
+        children: w.intl.string(w.t.vLz3Zs)
       }), (0, r.jsxs)("div", {
         ref: l,
         className: D.premiumCards,

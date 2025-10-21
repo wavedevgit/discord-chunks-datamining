@@ -1,4 +1,4 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 257115, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => l
@@ -9,8 +9,8 @@ var Chunk927923 = require("./927923.js"),
 function l(e) {
   switch (e) {
     case i.YE.XBOX:
-      return r.intl.string(r.t.T0uYKy);
+      return r.intl.string(r.t.T0uYK9);
     case i.YE.PLAYSTATION:
-      return r.intl.string(r.t.FWAzS0)
+      return r.intl.string(r.t.FWAzS6)
   }
 }

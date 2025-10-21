@@ -20,7 +20,7 @@ var Chunk990547 = require("./990547.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk522488 = require("./522488.js");
+  Chunk50953 = require("./50953.js");
 
 function b(e) {
   switch (e) {
@@ -47,9 +47,9 @@ function y(e) {
 function O(e) {
   switch (e) {
     case h.Si.TIER_0:
-      return g.intl.string(g.t.mCG029);
+      return g.intl.string(g.t.mCG023);
     case h.Si.TIER_2:
-      return g.intl.string(g.t["7590PT"]);
+      return g.intl.string(g.t["7590Pe"]);
     default:
       throw Error("Unsupported subscription tier: ".concat(e))
   }

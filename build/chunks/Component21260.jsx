@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk393238 = require("./393238.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk595296 = require("./595296.js");
+  Chunk384934 = require("./384934.js");
 
 function d(e) {
   let {
@@ -82,7 +82,7 @@ function _(e) {
     }),
     "aria-label": "overflow",
     children: (0, r.jsx)("div", {
-      children: n(c.intl.formatToPlainString(c.t.vGclWl, {
+      children: n(c.intl.formatToPlainString(c.t.vGclWm, {
         count: t.length
       }))
     })
@@ -147,7 +147,7 @@ function m(e) {
       }), (0, r.jsx)("div", {
         className: u.overflowMeasurement,
         ref: O,
-        children: a(c.intl.formatToPlainString(c.t.vGclWl, {
+        children: a(c.intl.formatToPlainString(c.t.vGclWm, {
           count: Number("1".concat(n.length))
         }))
       })]

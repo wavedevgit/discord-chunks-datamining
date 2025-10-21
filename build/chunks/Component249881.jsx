@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk243778 = require("./243778.jsx"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk798118 = require("./798118.js");
+  Chunk375369 = require("./375369.js");
 let d = e => {
     let {
       markAsDismissed: t
@@ -58,7 +58,7 @@ let d = e => {
         size: a.Ph.MEDIUM,
         onClick: f,
         className: u.reconnectButton,
-        children: c.intl.string(c.t.vD60Pj)
+        children: c.intl.string(c.t.vD60Pv)
       })]
     })
   }

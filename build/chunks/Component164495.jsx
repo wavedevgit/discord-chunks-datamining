@@ -1,8 +1,8 @@
 /** Chunk was on 52407 **/
 /** chunk id: 164495, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  i: () => z,
-  y: () => B
+  i: () => B,
+  y: () => A
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk46140 = require("./46140.js"),
   Chunk215023 = require("./215023.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk541565 = require("./541565.js");
+  Chunk165016 = require("./165016.js");
 
 function k(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -88,7 +88,7 @@ let N = e => {
     } = e, s = (0, d.aM)(), l = (() => {
       var e;
       let n = null == (e = t.config.ctaConfig) ? true : e.buttonLabel;
-      return null != n ? n : (0, p.pO)(t) || t.config.features.includes(b.S7.NON_GAMING_PLAY_QUEST) ? v.intl.string(v.t.hvVgAQ) : v.intl.string(v.t.lwQdjI)
+      return null != n ? n : (0, p.pO)(t) || t.config.features.includes(b.S7.NON_GAMING_PLAY_QUEST) ? v.intl.string(v.t.hvVgAZ) : v.intl.string(v.t.lwQdjB)
     })();
     return (0, r.jsx)(o.zxk, {
       size: "sm",
@@ -119,7 +119,7 @@ let N = e => {
         sourceQuestContent: s
       }),
       size: "sm",
-      text: v.intl.string(v.t.csptqa)
+      text: v.intl.string(v.t.csptqV)
     })
   },
   P = e => {
@@ -161,11 +161,11 @@ let N = e => {
         variant: "secondary",
         fullWidth: true,
         size: "sm",
-        text: v.intl.string(v.t["93PTEh"])
+        text: v.intl.string(v.t["93PTEs"])
       }, e))
     })
   },
-  z = e => {
+  B = e => {
     var t, n, {
         quest: d,
         useReducedMotion: f,
@@ -197,7 +197,7 @@ let N = e => {
         questContent: E,
         sourceQuestContent: N
       }),
-      z = s.useCallback(e => {
+      B = s.useCallback(e => {
         var t;
         null == b || b(e), (0, p.xN)(d.config) && (null == (t = d.userStatus) ? true : t.claimedAt) != null ? (0, c.mK)({
           tab: y.AW.ORBS,
@@ -206,29 +206,29 @@ let N = e => {
         }) : _()
       }, [b, d.config, null == (n = d.userStatus) ? true : n.claimedAt, _]),
       {
-        shouldUseShinyButton: A
+        shouldUseShinyButton: z
       } = g.Z.useConfig({
         location: (0, u._b)(N) + "- CtaButton"
       });
-    return A ? (0, r.jsx)(i.gtL, S(k({
+    return z ? (0, r.jsx)(i.gtL, S(k({
       fullWidth: true,
       size: l.zx.Sizes.SMALL,
-      onClick: z,
+      onClick: B,
       pauseAnimation: f || !j && !P,
       className: m,
       buttonShineClassName: O.shine,
       "data-migration-pending": true
     }, w), {
-      children: null != C ? C : v.intl.string(v.t.cfY4PD)
+      children: null != C ? C : v.intl.string(v.t.cfY4PE)
     })) : (0, r.jsx)(o.zxk, S(k({
       fullWidth: true,
-      onClick: z,
-      text: null != C ? C : v.intl.string(v.t.cfY4PD)
+      onClick: B,
+      text: null != C ? C : v.intl.string(v.t.cfY4PE)
     }, w), {
       size: w.size === l.zx.Sizes.MEDIUM ? "md" : "sm"
     }))
   },
-  A = e => {
+  z = e => {
     var t;
     let {
       quest: n,
@@ -244,7 +244,7 @@ let N = e => {
       onGameSheetOpened: g,
       onGameSheetClosed: j
     } = e, m = (null == (t = n.userStatus) ? true : t.completedAt) != null, h = (0, p.q8)(n), C = u !== x.LI.SELECT && !a && !c, b = null;
-    return m ? b = (0, r.jsx)(z, {
+    return m ? b = (0, r.jsx)(B, {
       quest: n,
       sourceQuestContent: s,
       useReducedMotion: o,
@@ -274,18 +274,18 @@ let N = e => {
     })
   };
 
-function B(e) {
+function A(e) {
   let t = s.useRef(null);
   return (0, r.jsxs)("div", {
     className: O.ctaButtons,
     ref: t,
     children: [e.showBackButton && (0, r.jsx)(o.hU, {
       size: "sm",
-      "aria-label": v.intl.string(v.t["13/7kZ"]),
+      "aria-label": v.intl.string(v.t["13/7kX"]),
       onClick: e.onBack,
       icon: i.V7D,
       variant: "secondary"
-    }), (0, r.jsx)(A, S(k({}, e), {
+    }), (0, r.jsx)(z, S(k({}, e), {
       popoutTargetElementRef: t,
       onGameSheetOpened: e.onGameSheetOpened,
       onGameSheetClosed: e.onGameSheetClosed

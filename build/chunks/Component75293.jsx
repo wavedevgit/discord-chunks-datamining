@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk10198 = require("./10198.js");
+  Chunk197571 = require("./197571.js");
 
 function p(t, e, n) {
   return e in t ? Object.defineProperty(t, e, {
@@ -52,19 +52,19 @@ class m extends Chunk647438.Component {
         children: (0, Chunk951288.jsx)(Chunk481060.Text, {
           tag: "strong",
           variant: "text-md/normal",
-          className: Chunk10198.marginBottom20,
-          children: Chunk388032.intl.string(Chunk388032.t.UCEXPj)
+          className: Chunk197571.marginBottom20,
+          children: Chunk388032.intl.string(Chunk388032.t.UCEXPq)
         })
       }), (0, Chunk951288.jsx)(Chunk481060.mzw, {
         children: (0, Chunk951288.jsxs)(Chunk481060.ButtonGroup, {
           direction: "horizontal-reverse",
           children: [(0, Chunk951288.jsx)(Chunk481060.Button, {
             variant: "primary",
-            text: Chunk388032.intl.string(Chunk388032.t.taPRcH),
+            text: Chunk388032.intl.string(Chunk388032.t.taPRcJ),
             onClick: this.handleRequestElevated
           }), (0, Chunk951288.jsx)(Chunk481060.Button, {
             variant: "secondary",
-            text: Chunk388032.intl.string(Chunk388032.t.of0VoK),
+            text: Chunk388032.intl.string(Chunk388032.t.of0VoB),
             onClick: this.handleStreamWithoutSound
           })]
         })

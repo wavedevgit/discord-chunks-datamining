@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk185923 = require("./185923.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk508465 = require("./508465.js");
+  Chunk41356 = require("./41356.js");
 let h = {
     section: Chunk981631.jXE.VOICE_CHANNEL_EFFECTS_EMOJI_PICKER,
     openPopoutType: "gift_effect_emoji_picker"
@@ -34,10 +34,10 @@ function g(e) {
       className: p.customGiftHeader,
       children: [(0, r.jsx)(l.Text, {
         variant: "text-md/bold",
-        children: _.intl.string(_.t.Hl2IgY)
+        children: _.intl.string(_.t.Hl2Ige)
       }), (0, r.jsx)(l.Text, {
         variant: "text-sm/normal",
-        children: _.intl.string(_.t.stGFAw)
+        children: _.intl.string(_.t.stGFA3)
       })]
     }), e]
   }), y = e => {
@@ -90,7 +90,7 @@ function g(e) {
           className: E,
           variant: "text-sm/semibold",
           lineClamp: 1,
-          children: _.intl.string(_.t.Hl2IgY)
+          children: _.intl.string(_.t.Hl2Ige)
         })]
       }) : (0, r.jsxs)("div", {
         className: p.contentContainer,

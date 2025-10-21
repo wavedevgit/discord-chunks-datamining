@@ -19,9 +19,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk524444 = require("./524444.jsx"),
   Chunk585483 = require("./585483.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk613324 = require("./613324.js");
+  Chunk925962 = require("./925962.js");
 
-function v(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var a = null != arguments[t] ? arguments[t] : {},
       n = Object.keys(a);
@@ -40,21 +40,21 @@ function v(e) {
   return e
 }
 
-function f() {
+function v() {
   var e, t;
   let a = (e = ["grayscale(", ")"], exports || (t = module.slice(0)), Object.freeze(Object.defineProperties(module, {
     raw: {
       value: Object.freeze(exports)
     }
   })));
-  return f = function() {
+  return v = function() {
     return require
   }, require
 }
 let I = 747,
   x = e => {
     var t, a;
-    return (0, b.lV)((t = v({}, e), a = a = {
+    return (0, b.lV)((t = f({}, e), a = a = {
       className: _.videoWrapper,
       mediaPlayerClassName: _.mediaPlayer
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
@@ -68,7 +68,7 @@ let I = 747,
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(a, e))
     }), t))
   },
-  j = e => (0, n.jsx)(g.ZP, v({}, e));
+  j = e => (0, n.jsx)(g.ZP, f({}, e));
 
 function y(e) {
   let {
@@ -117,7 +117,7 @@ let k = (0, Chunk112724.Z)(e => {
     className: a,
     paused: r = false,
     autoplayInterval: c = 8e3
-  } = e, [u, g] = (0, l.useState)(0), [b, v] = (0, l.useState)(true), [x, j] = (0, l.useState)(false), [k, P] = (0, l.useState)(false), [S, N] = (0, l.useState)(false), [w, O] = (0, l.useState)(false), A = (0, l.useCallback)((e, a) => {
+  } = e, [u, g] = (0, l.useState)(0), [b, f] = (0, l.useState)(true), [x, j] = (0, l.useState)(false), [k, P] = (0, l.useState)(false), [S, N] = (0, l.useState)(false), [w, O] = (0, l.useState)(false), A = (0, l.useCallback)((e, a) => {
     var n;
     let l = null == (n = t[e]) ? true : n.backgroundSrc,
       r = a.interpolate({
@@ -131,29 +131,29 @@ let k = (0, Chunk112724.Z)(e => {
         outputRange: [.3, 1],
         extrapolate: o.Z.Extrapolate.CLAMP
       }),
-      filter: o.Z.template(f(), r),
+      filter: o.Z.template(v(), r),
       backgroundImage: null != l ? "url(".concat(l, ")") : true,
       backgroundSize: "cover",
       backgroundPosition: "center",
       backgroundRepeat: "no-repeat"
     }
-  }, [t]), E = (0, l.useCallback)(function(e) {
+  }, [t]), W = (0, l.useCallback)(function(e) {
     let a = !(arguments.length > 1) || true === arguments[1] || arguments[1],
       n = (0, p.gN)(u, t.length),
       l = (0, p.gN)(e, t.length),
       r = 1 === Math.abs(e - n) || e === t.length - 1 && 0 === n || 0 === e && n === t.length - 1;
-    j(false), g(l), v(r), P(a)
-  }, [u, t]), W = (0, l.useCallback)(() => {
-    E(u + 1, false)
-  }, [E, u]), L = (0, l.useCallback)(() => {
-    E(u + 1)
-  }, [E, u]), R = (0, l.useCallback)(() => {
-    E(u - 1)
-  }, [E, u]), Z = (0, l.useCallback)(e => {
+    j(false), g(l), f(r), P(a)
+  }, [u, t]), E = (0, l.useCallback)(() => {
+    W(u + 1, false)
+  }, [W, u]), L = (0, l.useCallback)(() => {
+    W(u + 1)
+  }, [W, u]), R = (0, l.useCallback)(() => {
+    W(u - 1)
+  }, [W, u]), Z = (0, l.useCallback)(e => {
     j(true), P(!e)
   }, []), H = (0, l.useCallback)(() => {
-    k || W()
-  }, [k, W]), T = (0, l.useCallback)(e => {
+    k || E()
+  }, [k, E]), T = (0, l.useCallback)(e => {
     e < u ? N(true) : e > u && O(true)
   }, [u]), B = (0, l.useCallback)(() => {
     N(false), O(false)
@@ -166,7 +166,7 @@ let k = (0, Chunk112724.Z)(e => {
       className: _.currentImage
     })
   }) : (0, n.jsx)(s.P3F, {
-    onClick: () => E(t),
+    onClick: () => W(t),
     className: _.itemImageWrapper,
     children: (0, n.jsx)("img", {
       alt: "",
@@ -174,7 +174,7 @@ let k = (0, Chunk112724.Z)(e => {
       src: e.src,
       draggable: false
     })
-  }), [E]), M = (0, l.useCallback)((e, a, l) => {
+  }), [W]), M = (0, l.useCallback)((e, a, l) => {
     let r = a === (0, p.gN)(u, t.length);
     return (0, n.jsx)(o.Z.div, {
       className: i()(_.item, {
@@ -188,10 +188,10 @@ let k = (0, Chunk112724.Z)(e => {
         onPlay: Z,
         onEnded: H,
         playable: r,
-        onClick: () => E(a)
+        onClick: () => W(a)
       }) : D(e, a, r)
     })
-  }, [u, t.length, A, T, B, Z, H, E, D]), Q = (0, l.useCallback)(() => {
+  }, [u, t.length, A, T, B, Z, H, W, D]), Q = (0, l.useCallback)(() => {
     let e = (0, n.jsx)(p.ZP, {
       className: _.carousel,
       items: t,
@@ -234,7 +234,7 @@ let k = (0, Chunk112724.Z)(e => {
     h.S.unsubscribe(C.CkL.CAROUSEL_PREV, R), h.S.unsubscribe(C.CkL.CAROUSEL_NEXT, L)
   }), [R, L]), (0, n.jsxs)(d.Z, {
     pauseOnHover: true,
-    onInterval: W,
+    onInterval: E,
     interval: c,
     className: a,
     disable: x || k || r,
@@ -245,7 +245,7 @@ let k = (0, Chunk112724.Z)(e => {
         scrollToPadding: 40,
         items: t,
         selectedIndex: u,
-        onSetItem: E,
+        onSetItem: W,
         paginationContainerClass: _.scroller,
         align: m.ZP.Align.CENTER
       })

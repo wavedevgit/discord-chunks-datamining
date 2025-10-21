@@ -1,4 +1,4 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 544142, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk967128 = require("./967128.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk910062 = require("./910062.js");
+  Chunk149623 = require("./149623.js");
 
 function x(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -69,7 +69,7 @@ function j(e) {
     (0, c.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("79695"), n.e("70675"), n.e("82611")]).then(n.bind(n, 654663));
+      } = await Promise.all([n.e("79695"), n.e("70675"), n.e("17773")]).then(n.bind(n, 654663));
       return t => (0, i.jsx)(e, O(x({}, t), {
         user: E,
         guildId: y.guild_id,
@@ -122,7 +122,7 @@ function E(e) {
       color: "header-secondary",
       children: (0, i.jsx)("div", {
         className: v.subtitle,
-        children: _.intl.format(_.t.imPXd3, {
+        children: _.intl.format(_.t.imPXd5, {
           usernameHook: (e, n) => (0, i.jsx)(j, {
             userId: t.ownerId,
             channel: t

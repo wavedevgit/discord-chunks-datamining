@@ -11,15 +11,15 @@ var Chunk703656 = require("./703656.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk262706 = require("./262706.js"),
+  Chunk726718 = require("./726718.js"),
   Chunk235810 = require("./235810.js");
 
 function b() {
   return (0, Chunk951288.jsx)("div", {
-    className: Chunk262706.artContainer,
+    className: Chunk726718.artContainer,
     children: (0, Chunk951288.jsx)("img", {
       src: Chunk235810,
-      className: Chunk262706.artAsset,
+      className: Chunk726718.artAsset,
       alt: ""
     })
   })
@@ -64,10 +64,10 @@ function f(t) {
   }({
     artElement: (0, r.jsx)(b, {}),
     type: i.cd.FOR_LATER_MODAL_UPSELL,
-    title: l.intl.string(l.t.w4DRbW),
-    body: l.intl.string(l.t.F6u3Ex),
-    glowUp: l.intl.string(l.t.F6u3Ex),
-    secondaryCTA: l.intl.string(l.t.PcTCBw),
+    title: l.intl.string(l.t.w4DRbZ),
+    body: l.intl.string(l.t.F6u3E3),
+    glowUp: l.intl.string(l.t.F6u3E3),
+    secondaryCTA: l.intl.string(l.t.PcTCB7),
     onSecondaryClick: function() {
       c.default.track(s.rMx.PREMIUM_PROMOTION_OPENED, {
         location_section: s.jXE.PREMIUM_FOR_LATER_UPSELL_MODAL,

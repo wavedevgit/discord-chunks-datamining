@@ -11,7 +11,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk565138 = require("./565138.jsx"),
   Chunk411198 = require("./411198.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk727576 = require("./727576.js");
+  Chunk407749 = require("./407749.js");
 let u = e => {
   let {
     guild: t,
@@ -28,7 +28,7 @@ let u = e => {
       variant: "heading-md/normal",
       color: "header-muted",
       className: c.alignStart,
-      children: o.intl.string(o.t.Eabu19)
+      children: o.intl.string(o.t.Eabu1z)
     }), (0, r.jsxs)("div", {
       className: c.guild,
       children: [(0, r.jsx)(s.ZP, {
@@ -51,7 +51,7 @@ let u = e => {
             className: c.dot
           }), null != n && n > 0 ? (0, r.jsx)(i.Text, {
             variant: "text-sm/normal",
-            children: o.intl.format(o.t["LC+S+v"], {
+            children: o.intl.format(o.t["LC+S+m"], {
               membersOnline: n
             })
           }) : null]

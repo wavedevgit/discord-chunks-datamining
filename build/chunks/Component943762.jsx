@@ -11,7 +11,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk884338 = require("./884338.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk633082 = require("./633082.js");
+  Chunk188206 = require("./188206.js");
 
 function c(e) {
   let {
@@ -42,19 +42,19 @@ function u(e) {
   switch (null == t ? true : t.type) {
     case o.IIU.STREAMING:
       return {
-        text: s.intl.formatToPlainString(s.t.tyCw2t, {
+        text: s.intl.formatToPlainString(s.t.tyCw2q, {
           count: n
         }), Icon: i.m3e
       };
     case o.IIU.LISTENING:
       return {
-        text: s.intl.formatToPlainString(s.t["2l8ykZ"], {
+        text: s.intl.formatToPlainString(s.t["2l8yka"], {
           count: n
         }), Icon: i.RZG
       };
     default:
       return {
-        text: s.intl.formatToPlainString(s.t.yJj039, {
+        text: s.intl.formatToPlainString(s.t.yJj035, {
           count: n
         }), Icon: i.iWm
       }

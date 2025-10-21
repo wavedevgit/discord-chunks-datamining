@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk823379 = require("./823379.js"),
   Chunk5192 = require("./5192.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk290590 = require("./290590.js");
+  Chunk79148 = require("./79148.js");
 
 function v(e) {
   let {
@@ -50,7 +50,7 @@ function h(e) {
       className: f.__invalid_header,
       children: (0, a.jsxs)(s.vwX, {
         className: f.title,
-        children: [p.intl.string(p.t.WTozwc), (0, a.jsxs)("div", {
+        children: [p.intl.string(p.t.WTozwe), (0, a.jsxs)("div", {
           className: f.userCountPill,
           children: [(0, a.jsx)(s.Text, {
             color: "text-default",

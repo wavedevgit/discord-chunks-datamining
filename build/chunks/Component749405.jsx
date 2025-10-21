@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk486622 = require("./486622.js"),
   Chunk376191 = require("./376191.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk336549 = require("./336549.js");
+  Chunk513245 = require("./513245.js");
 
 function h(e) {
   let {
@@ -21,7 +21,7 @@ function h(e) {
     user: n,
     channel: h
   } = e, g = (0, c.K)(), m = i.useCallback(() => {
-    (0, l.showToast)((0, l.createToast)(p.intl.string(p.t.EDYbS0), l.ToastType.FAILURE))
+    (0, l.showToast)((0, l.createToast)(p.intl.string(p.t["EDYbS+"]), l.ToastType.FAILURE))
   }, []), b = i.useCallback(() => {
     o.Z.closeChannelSidebar(s.uZ)
   }, []), _ = i.useCallback(() => {
@@ -54,7 +54,7 @@ function h(e) {
         children: (0, r.jsx)(l.Button, {
           variant: "secondary",
           size: "sm",
-          text: p.intl.string(p.t.B2nygY),
+          text: p.intl.string(p.t.B2nygW),
           onClick: e => {
             e.stopPropagation(), O(h.id)
           },
@@ -67,7 +67,7 @@ function h(e) {
         children: (0, r.jsx)(l.Button, {
           variant: "primary",
           size: "sm",
-          text: p.intl.string(p.t.Kz8Pws),
+          text: p.intl.string(p.t.Kz8Pwr),
           onClick: e => {
             e.stopPropagation(), E(h.id)
           },

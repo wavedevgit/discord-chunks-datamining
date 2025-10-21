@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk776767 = require("./776767.jsx"),
   Chunk50493 = require("./50493.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk152540 = require("./152540.js");
+  Chunk87819 = require("./87819.js");
 
 function A(e) {
   let {
@@ -34,7 +34,7 @@ function A(e) {
     })
   }, [n, A, t]);
   return (0, r.jsx)(s.gNt, {
-    label: d.intl.string(d.t.vCn2Tk),
+    label: d.intl.string(d.t.vCn2Tn),
     children: (0, r.jsxs)(c.WM, {
       children: [(0, r.jsx)(c._2, {
         icon: (0, r.jsx)(s.kBi, {
@@ -46,7 +46,7 @@ function A(e) {
         name: (0, r.jsx)(s.Text, {
           variant: "text-sm/semibold",
           color: "text-default",
-          children: d.intl.string(d.t.OIgYlZ)
+          children: d.intl.string(d.t.OIgYlQ)
         }),
         description: T === u.II ? (0, r.jsx)(s.$jN, {
           type: s.RAz.SPINNING_CIRCLE,
@@ -66,7 +66,7 @@ function A(e) {
         name: (0, r.jsx)(s.Text, {
           variant: "text-sm/semibold",
           color: "text-default",
-          children: d.intl.string(d.t.DFSvTk)
+          children: d.intl.string(d.t.DFSvTt)
         }),
         description: I === u.II ? (0, r.jsx)(s.$jN, {
           type: s.RAz.SPINNING_CIRCLE,
@@ -86,7 +86,7 @@ function A(e) {
         name: (0, r.jsx)(s.Text, {
           variant: "text-sm/semibold",
           color: "text-default",
-          children: d.intl.string(d.t["Aw9+/P"])
+          children: d.intl.string(d.t["Aw9+/M"])
         }),
         description: m === u.II ? (0, r.jsx)(s.$jN, {
           type: s.RAz.SPINNING_CIRCLE,

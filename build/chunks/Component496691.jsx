@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk763032 = require("./763032.js");
+  Chunk430355 = require("./430355.js");
 class p extends Chunk647438.Component {
   shouldScrollToTop(e) {
     let {
@@ -41,9 +41,9 @@ class p extends Chunk647438.Component {
           className: m.marketingHeader,
           onChangeLocale: this.handleHeaderLocaleChange,
           mobileClassName: m.marketingHeader,
-          openNavAriaLabel: N.intl.string(N.t.Fs9k3N),
-          hideNavAriaLabel: N.intl.string(N.t.AbfyHB),
-          skipToContentLabel: N.intl.string(N.t["18gavL"])
+          openNavAriaLabel: N.intl.string(N.t.Fs9k3K),
+          hideNavAriaLabel: N.intl.string(N.t.AbfyHI),
+          skipToContentLabel: N.intl.string(N.t["18gavA"])
         }), a(t, i), (0, n.jsx)(s.$, {
           locale: o,
           authRedirectTo: e.pathname,

@@ -1,4 +1,4 @@
-/** Chunk was on 84283 **/
+/** Chunk was on 69844 **/
 /** chunk id: 744695, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk79707 = require("./79707.jsx"),
   Chunk49898 = require("./49898.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk301826 = require("./301826.js");
+  Chunk995182 = require("./995182.js");
 
 function g(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -112,8 +112,8 @@ function b(e) {
           [h.selected]: s
         }),
         id: p.GlobalDiscoverySharedTabId.MORE,
-        "aria-label": m.intl.string(m.t.UKOtz8),
-        children: [m.intl.string(m.t.UKOtz8), n ? (0, r.jsx)(o.u04, {
+        "aria-label": m.intl.string(m.t["UKOtz+"]),
+        children: [m.intl.string(m.t["UKOtz+"]), n ? (0, r.jsx)(o.u04, {
           size: "xs"
         }) : (0, r.jsx)(o.CJ0, {
           size: "xs"

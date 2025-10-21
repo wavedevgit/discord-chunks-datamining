@@ -18,18 +18,18 @@ var Chunk442837 = require("./442837.js"),
 
 function f(e, t, n) {
   var f;
-  let Z = a.Z.getChannel(n),
-    E = (0, i.e7)([o.Z], () => o.Z.getGuild(t), [t]),
+  let E = a.Z.getChannel(n),
+    Z = (0, i.e7)([o.Z], () => o.Z.getGuild(t), [t]),
     P = (0, i.e7)([c.ZP], () => c.ZP.getPermissionsForUser(e.id, n), [n, e.id]),
-    b = (null == (f = s.default.getCurrentUser()) ? true : f.id) === e.id,
-    v = (0, i.e7)([u.Z], () => null != n && u.Z.canWithPartialContext(g.Plq.MUTE_MEMBERS, {
+    v = (null == (f = s.default.getCurrentUser()) ? true : f.id) === e.id,
+    b = (0, i.e7)([u.Z], () => null != n && u.Z.canWithPartialContext(g.Plq.MUTE_MEMBERS, {
       channelId: n
     }), [n]);
-  return null != Z && null != E && (v || b) && P.speaker ? (0, l.jsx)(r.sNh, {
+  return null != E && null != Z && (b || v) && P.speaker ? (0, l.jsx)(r.sNh, {
     id: "audience",
-    label: b ? m.intl.string(m.t["6C6PJy"]) : m.intl.string(m.t.VK3vQ0),
+    label: v ? m.intl.string(m.t["6C6PJx"]) : m.intl.string(m.t.VK3vQy),
     action: () => {
-      b ? (0, d.yi)(Z) : (0, d.hz)(e, Z)
+      v ? (0, d.yi)(E) : (0, d.hz)(e, E)
     }
   }) : null
 }

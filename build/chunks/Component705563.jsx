@@ -1,4 +1,4 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 705563, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -19,7 +19,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk360328 = require("./360328.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk982539 = require("./982539.js");
+  Chunk482722 = require("./482722.js");
 
 function y(e) {
   let {
@@ -48,12 +48,12 @@ function y(e) {
   return null != v && v.applicationStatus === f.wB.SUBMITTED && x ? (0, i.jsxs)("div", {
     className: C.buttons,
     children: [(0, i.jsx)(l.u, {
-      text: b.intl.string(b.t.cdPGbG),
+      text: b.intl.string(b.t.cdPGbE),
       shouldShow: S,
       children: (0, i.jsx)(a.Button, {
         variant: "active",
         size: "sm",
-        text: b.intl.string(b.t.BzjDQE),
+        text: b.intl.string(b.t.BzjDQJ),
         loading: Z,
         onClick: P,
         disabled: S
@@ -61,7 +61,7 @@ function y(e) {
     }), (0, i.jsx)(a.Button, {
       variant: "critical-primary",
       size: "sm",
-      text: b.intl.string(b.t.hDtbs7),
+      text: b.intl.string(b.t.hDtbsz),
       onClick: I,
       disabled: Z || v.applicationStatus !== f.wB.SUBMITTED
     }), n && (0, i.jsx)(a.Button, {
@@ -73,7 +73,7 @@ function y(e) {
       },
       variant: "secondary",
       size: "sm",
-      text: b.intl.string(b.t.iXAna2)
+      text: b.intl.string(b.t.iXAna6)
     }), y && (0, i.jsx)(o.ZP.Divider, {})]
   }) : null
 }

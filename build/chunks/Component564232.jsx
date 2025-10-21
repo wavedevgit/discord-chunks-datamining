@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk594174 = require("./594174.js"),
   Chunk432496 = require("./432496.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk146807 = require("./146807.js");
+  Chunk283602 = require("./283602.js");
 
 function y(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -45,7 +45,7 @@ function w(e) {
     guildOwnerId: s,
     member: u
   } = e, l = p.default.getUser(u.userId), o = i.useRef(null);
-  return (0, n.jsx)(m.Z, {
+  return (0, n.jsx)(f.Z, {
     targetElementRef: o,
     userId: u.userId,
     guildId: t,
@@ -70,7 +70,7 @@ function w(e) {
           (0, d.jW)(e, async () => {
             let {
               default: e
-            } = await Promise.all([r.e("79695"), r.e("26976"), r.e("34138")]).then(r.bind(r, 415118));
+            } = await Promise.all([r.e("79695"), r.e("26976"), r.e("52092")]).then(r.bind(r, 415118));
             return r => {
               var i, s;
               return (0, n.jsx)(e, (i = y({}, r), s = s = {
@@ -104,8 +104,8 @@ function I(e) {
   i.useEffect(() => {
     g.Z.fetchFriendMembersIfNotFetched(t.id, d)
   }, [t.id, d]);
-  let a = (0, o.e7)([f.ZP], () => f.ZP.getMembers(t.id)),
-    m = i.useMemo(() => u()(a).filter(e => !!d.includes(e.userId) && null != p.default.getUser(e.userId)).sortBy(e => {
+  let a = (0, o.e7)([m.ZP], () => m.ZP.getMembers(t.id)),
+    f = i.useMemo(() => u()(a).filter(e => !!d.includes(e.userId) && null != p.default.getUser(e.userId)).sortBy(e => {
       var t;
       let r = p.default.getUser(e.userId);
       return (null != r ? null != (t = e.nick) ? t : r.username : "").toLocaleLowerCase()
@@ -117,13 +117,13 @@ function I(e) {
     j = g.Z.isFetchingFriendsForGuild(t.id);
   return (0, n.jsxs)(l.Modal, {
     title: O.intl.string(O.t.kYxEcH),
-    subtitle: O.intl.format(j ? O.t.EtQnZm : O.t.OgMdNT, {
+    subtitle: O.intl.format(j ? O.t.EtQnZi : O.t.OgMdNS, {
       guildName: t.name,
-      numFriends: m.length
+      numFriends: f.length
     }),
     actions: true,
     transitionState: r,
     onClose: s,
-    children: [j && (0, n.jsx)(c.$jN, {}), m]
+    children: [j && (0, n.jsx)(c.$jN, {}), f]
   })
 }

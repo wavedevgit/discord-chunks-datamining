@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk865066 = require("./865066.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk271187 = require("./271187.js");
+  Chunk685383 = require("./685383.js");
 
 function m(e) {
   let {
@@ -46,7 +46,7 @@ function m(e) {
 }
 
 function g(e, t) {
-  return "voice" === e ? p.intl.string(p.t.vxfv7u) : null != t ? p.intl.string(p.t.fAYU2N) : p.intl.string(p.t["9V4X/f"])
+  return "voice" === e ? p.intl.string(p.t.vxfv7v) : null != t ? p.intl.string(p.t.fAYU2G) : p.intl.string(p.t["9V4X/c"])
 }
 
 function E(e) {
@@ -76,7 +76,7 @@ function E(e) {
       }), (0, r.jsx)(s.Text, {
         variant: "text-xs/medium",
         color: "text-muted",
-        children: p.intl.format(p.t["/y6htr"], {
+        children: p.intl.format(p.t["/y6htt"], {
           helpCenterLink: d.Z.getArticleURL(_.BhN.SYSTEM_SERVICE)
         })
       })]

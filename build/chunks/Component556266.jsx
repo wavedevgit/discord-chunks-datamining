@@ -1,7 +1,7 @@
 /** Chunk was on 45227 **/
 /** chunk id: 556266, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => h
+  default: () => x
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -45,7 +45,7 @@ let b = function() {
   })
 };
 
-function x(e) {
+function h(e) {
   let {
     onClose: t,
     onComplete: n,
@@ -70,7 +70,7 @@ function x(e) {
   })
 }
 
-function h(e) {
+function x(e) {
   let {
     loadId: t,
     applicationId: n,
@@ -78,10 +78,10 @@ function h(e) {
     analyticsLocations: g,
     isGift: b = false
   } = e, {
-    analyticsLocations: h
+    analyticsLocations: x
   } = (0, l.ZP)(g, r.Z.PREMIUM_PAYMENT_MODAL);
   return (0, i.jsx)(l.Gt, {
-    value: h,
+    value: x,
     children: (0, i.jsx)(o.PaymentContextProvider, {
       loadId: t,
       stepConfigs: function() {
@@ -99,7 +99,7 @@ function h(e) {
       children: (0, i.jsx)(c.c1, {
         children: (0, i.jsx)(a.KB, {
           isGift: b,
-          children: (0, i.jsx)(x, v({}, e))
+          children: (0, i.jsx)(h, v({}, e))
         })
       })
     })

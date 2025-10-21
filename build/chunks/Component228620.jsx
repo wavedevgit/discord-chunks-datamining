@@ -1,7 +1,7 @@
 /** Chunk was on 51529 **/
 /** chunk id: 228620, original params: n,e,t (module,exports,require) **/
 require.d(exports, {
-  default: () => b
+  default: () => h
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -14,23 +14,23 @@ var Chunk481060 = require("./481060.js"),
   Chunk703656 = require("./703656.js"),
   Chunk852245 = require("./852245.jsx"),
   Chunk388032 = require("./388032.jsx");
-let b = (0, Chunk108843.Z)(function(n) {
+let h = (0, Chunk108843.Z)(function(n) {
   let {
     channel: e,
     onSelect: t
   } = n, c = (0, d.Z)(e), s = (0, o.Z)({
     id: e.id,
-    label: h.intl.string(h.t.gFHI3t)
+    label: b.intl.string(b.t.gFHI3k)
   });
   return (0, a.jsxs)(r.v2r, {
     navId: "channel-context",
     onClose: i.Zy,
-    "aria-label": h.intl.string(h.t.Xm41aW),
+    "aria-label": b.intl.string(b.t.Xm41aV),
     onSelect: t,
     children: [(0, a.jsxs)(r.kSQ, {
       children: [c, e.isCategory() ? null : (0, a.jsx)(r.sNh, {
         id: "jump-to-channel",
-        label: h.intl.string(h.t["bQIM4+"]),
+        label: b.intl.string(b.t.bQIM40),
         action: () => {
           (0, u.XU)(e.guild_id, e.id), (0, l.xf)()
         }

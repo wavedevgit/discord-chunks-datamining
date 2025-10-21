@@ -11,11 +11,11 @@ var Chunk120356 = require("./120356.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk969069 = require("./969069.js");
+  Chunk68531 = require("./68531.js");
 
 function u(e) {
   let {
-    text: t = l.intl.string(l.t["5AFxuL"]),
+    text: t = l.intl.string(l.t["5AFxuK"]),
     className: n
   } = e;
   return (0, r.jsx)(o.u, {

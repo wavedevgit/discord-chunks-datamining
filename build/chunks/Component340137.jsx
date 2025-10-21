@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk961040 = require("./961040.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk10663 = require("./10663.js");
+  Chunk445202 = require("./445202.js");
 let C = {
     cozy: 0,
     default: 0,
@@ -73,7 +73,7 @@ function T(e) {
     }), (0, r.jsx)(u.u, {
       asContainer: true,
       shouldShow: !j,
-      text: y.intl.string(y.t.HcoRu7),
+      text: y.intl.string(y.t.HcoRu0),
       children: (0, r.jsxs)(d.P3F, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},

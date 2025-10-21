@@ -1,4 +1,4 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 83896, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   I: () => S
@@ -22,8 +22,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk505905 = require("./505905.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk35913 = require("./35913.js"),
-  Chunk929618 = require("./929618.js");
+  Chunk10359 = require("./10359.js"),
+  Chunk254477 = require("./254477.js");
 
 function j(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -110,12 +110,12 @@ function S(e) {
       children: (0, f.O8)(l, t)
     }), I ? (0, i.jsx)(s.aML, {
       "data-migration-pending": true,
-      text: T ? true : v.intl.string(v.t["0LMpW1"]),
+      text: T ? true : v.intl.string(v.t["0LMpW+"]),
       children: e => (0, i.jsx)("div", E(j({}, e), {
         children: (0, i.jsx)(s.Button, {
           size: "sm",
           variant: "secondary",
-          text: v.intl.string(v.t["0eHzpq"]),
+          text: v.intl.string(v.t["0eHzpm"]),
           onClick: A,
           disabled: !T
         })
@@ -123,7 +123,7 @@ function S(e) {
     }) : Z && (0, i.jsx)(s.Button, {
       size: "sm",
       variant: "secondary",
-      text: v.intl.string(v.t["B/dHXF"]),
+      text: v.intl.string(v.t["B/dHXL"]),
       onClick: N
     })]
   })

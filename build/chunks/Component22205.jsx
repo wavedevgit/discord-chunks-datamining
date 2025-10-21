@@ -31,7 +31,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk987650 = require("./987650.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk460063 = require("./460063.js");
+  Chunk534887 = require("./534887.js");
 
 function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -85,7 +85,7 @@ function x(e) {
       children: [(0, r.jsx)(f.Text, {
         variant: "text-md/semibold",
         color: "text-primary",
-        children: R.intl.string(R.t.mn4eXF)
+        children: R.intl.string(R.t.mn4eXC)
       }), (0, r.jsxs)("div", {
         className: P.stackTraceCode,
         children: [(0, r.jsx)(f.Text, {
@@ -104,14 +104,14 @@ function x(e) {
         })]
       })]
     }) : null,
-    j = g ? null : R.intl.string(R.t.oEJEFh),
+    j = g ? null : R.intl.string(R.t.oEJEFq),
     U = null != (t = null == I ? true : I.isStaff()) && t || null != (n = null == I ? true : I.isStaffPersonal()) && n;
   return (0, r.jsx)(A.Y, {
-    title: R.intl.string(R.t.U38qZm),
+    title: R.intl.string(R.t.U38qZj),
     body: k,
     hint: U ? j : true,
-    confirmText: R.intl.string(R.t.a3HlgI),
-    cancelText: null != M ? R.intl.string(R.t.qIYnPj) : true,
+    confirmText: R.intl.string(R.t.a3HlgJ),
+    cancelText: null != M ? R.intl.string(R.t.qIYnPo) : true,
     icon: (0, r.jsx)(b.Z, {
       width: 40,
       height: 40,
@@ -165,7 +165,7 @@ class M extends Chunk647438.PureComponent {
       showError: i
     } = this.state;
     return null != require ? Chunk647438 ? (0, Chunk951288.jsx)(Chunk333031.Z, {
-      className: Chunk460063.errorClickNotification,
+      className: Chunk534887.errorClickNotification,
       children: (0, Chunk951288.jsx)(x, {
         error: require,
         onLock: () => {

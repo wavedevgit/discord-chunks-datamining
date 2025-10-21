@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk747387 = require("./747387.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk285758 = require("./285758.js"),
+  Chunk518840 = require("./518840.js"),
   Chunk140238 = require("./140238.js");
 let v = new Set([Chunk481060.Dvm.ENTERING, Chunk481060.Dvm.ENTERED]);
 
@@ -92,8 +92,8 @@ function m(e) {
       type: "image",
       src: b
     },
-    title: null != O ? O : f.intl.string(f.t.FpoiHR),
-    subtitle: null != g ? g : f.intl.string(f.t["/CidxM"]),
+    title: null != O ? O : f.intl.string(f.t.FpoiHe),
+    subtitle: null != g ? g : f.intl.string(f.t["/CidxO"]),
     children: j
   })
 }

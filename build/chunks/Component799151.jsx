@@ -14,20 +14,20 @@ var Chunk951288 = require("./951288.js"),
   Chunk607070 = require("./607070.js"),
   Chunk79320 = require("./79320.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk382462 = require("./382462.js");
+  Chunk110109 = require("./110109.js");
 
 function p(e) {
   let {
     className: t
   } = e, n = [{
     keybinds: ["Spacebar", "Enter"],
-    name: f.intl.string(f.t["cs/HVF"])
+    name: f.intl.string(f.t["cs/HVH"])
   }, {
     keybinds: ["up", "down"],
-    name: f.intl.string(f.t.dmMqa2)
+    name: f.intl.string(f.t.dmMqay)
   }, {
     keybinds: ["ESC"],
-    name: f.intl.string(f.t["1ioMJS"])
+    name: f.intl.string(f.t["1ioMJQ"])
   }], a = (0, l.e7)([u.Z], () => u.Z.useReducedMotion), p = (0, d.zP)();
   return (0, c.Yzy)(p, {
     enter: {

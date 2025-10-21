@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk957825 = require("./957825.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk744114 = require("./744114.js");
+  Chunk564355 = require("./564355.js");
 
 function b(e, t) {
   let {
@@ -48,7 +48,7 @@ function b(e, t) {
   if (n) return null;
   let w = v === m.X1.GIF && I === a;
   return (0, r.jsx)(u.u, {
-    text: O ? g.intl.string(g.t.mE2e8P) : null,
+    text: O ? g.intl.string(g.t.mE2e8A) : null,
     forceOpen: true,
     children: (0, r.jsx)("div", {
       ref: t,
@@ -62,7 +62,7 @@ function b(e, t) {
         },
         isActive: w,
         pulse: b,
-        "aria-label": g.intl.string(g.t.PtVpk5),
+        "aria-label": g.intl.string(g.t.PtVpk2),
         "aria-expanded": w,
         "aria-haspopup": "dialog",
         "aria-controls": T,

@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk938736 = require("./938736.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk55282 = require("./55282.js"),
+  Chunk120472 = require("./120472.js"),
   Chunk691766 = require("./691766.js");
 
 function S(e, t, n) {
@@ -86,7 +86,7 @@ let R = e => {
       children: n
     });
     return (0, r.jsx)(c.aML, {
-      text: v.intl.string(v.t.UnKHdn),
+      text: v.intl.string(v.t.UnKHdo),
       shouldShow: !o,
       tooltipContentClassName: I.unsentTooltipContent,
       children: e => (0, r.jsx)("div", N(A({
@@ -215,7 +215,7 @@ let R = e => {
                   src: T,
                   alt: "",
                   className: I.expandedProgressBarSelectFriendsIcon
-                }), S ? v.intl.string(v.t.SY9tyM) : v.intl.string(v.t.Lm2nFR)]
+                }), S ? v.intl.string(v.t.SY9tyI) : v.intl.string(v.t.Lm2nFc)]
               })
             })
           })]

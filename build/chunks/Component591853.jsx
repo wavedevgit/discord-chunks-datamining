@@ -70,7 +70,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk959517 = require("./959517.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk826565 = require("./826565.js");
+  Chunk951948 = require("./951948.js");
 
 function ed(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -188,11 +188,11 @@ function ey(e) {
     onVoiceChannelPreview: m
   }), {
     embeddedActivity: w
-  } = (0, $.Z)(o), D = eA(w), L = null != P && 0 === s.length ? [P] : s, x = L.length > 0, M = L.length >= 2, [k, U] = i.useState(!x), B = K.ZP.getName(null == t ? true : t.guild_id, null == t ? true : t.id, n), Z = null != t && g ? ec.intl.formatToPlainString(ec.t["8lzR/f"], {
+  } = (0, $.Z)(o), D = eA(w), L = null != P && 0 === s.length ? [P] : s, x = L.length > 0, M = L.length >= 2, [k, U] = i.useState(!x), B = K.ZP.getName(null == t ? true : t.guild_id, null == t ? true : t.id, n), Z = null != t && g ? ec.intl.formatToPlainString(ec.t["8lzR/R"], {
     channel: "#".concat(t.name)
-  }) : ec.intl.formatToPlainString(ec.t["4c+CAw"], {
+  }) : ec.intl.formatToPlainString(ec.t["4c+CAx"], {
     channel: "@".concat(B)
-  }), F = g ? ec.intl.string(ec.t.Z2CUgo) : ec.intl.string(ec.t.XLGiTE), V = async e => {
+  }), F = g ? ec.intl.string(ec.t.Z2CUgn) : ec.intl.string(ec.t.XLGiTG), V = async e => {
     let r, {
       emoji: i
     } = e;
@@ -323,7 +323,7 @@ function ey(e) {
             variant: "secondary",
             onClick: () => X(true),
             size: M ? "sm" : "md",
-            text: ec.intl.string(ec.t.OAJQlJ)
+            text: ec.intl.string(ec.t.OAJQlP)
           }, "toggleMessageMode"), L]
         })]
       })
@@ -359,11 +359,11 @@ let eO = e => {
       return null != i ? (0, r.jsx)("div", {
         children: (0, r.jsx)(_.u, {
           asContainer: true,
-          text: ec.intl.formatToPlainString(ec.t.kilW3t, {
+          text: ec.intl.formatToPlainString(ec.t.kilW3l, {
             emojiName: t.name
           }),
           position: "top",
-          "aria-label": ec.intl.formatToPlainString(ec.t.kilW3t, {
+          "aria-label": ec.intl.formatToPlainString(ec.t.kilW3l, {
             emojiName: t.name
           }),
           shouldShow: !s && true,
@@ -612,7 +612,7 @@ function eS(e) {
             children: (0, r.jsx)(p.Text, {
               variant: "text-md/normal",
               color: "always-white",
-              children: ec.intl.string(ec.t["7Xq/nZ"])
+              children: ec.intl.string(ec.t["7Xq/nV"])
             })
           })]
         })
@@ -663,7 +663,7 @@ function eA(e) {
     children: [(0, r.jsxs)("div", {
       className: eu.voiceChannelPopoutReactorHeader,
       children: [(0, r.jsxs)(p.P3F, {
-        "aria-label": ec.intl.string(ec.t["W/A4Qk"]),
+        "aria-label": ec.intl.string(ec.t["W/A4Qp"]),
         onClick: () => (0, L.Kh)(n.id),
         className: eu.voiceChannelPopoutReactorChannel,
         children: [(0, r.jsx)(w.Z, {
@@ -754,10 +754,10 @@ function eC(e) {
           width: 13,
           height: 13,
           className: eu.popoutBlockedWarningIcon
-        }), ec.intl.string(ec.t.d6DpXF)]
+        }), ec.intl.string(ec.t.d6DpXI)]
       }) : n;
       return (0, r.jsx)(_.u, {
-        "aria-label": i ? ec.intl.string(ec.t.d6DpXF) : null != n && n,
+        "aria-label": i ? ec.intl.string(ec.t.d6DpXI) : null != n && n,
         __unsupportedReactNodeAsText: a,
         shouldShow: true,
         children: t
@@ -768,10 +768,10 @@ function eC(e) {
       children: [(0, r.jsxs)("div", {
         className: eu.voiceChannelPopoutReactorHeader,
         children: [(0, r.jsx)(O, {
-          text: ec.intl.string(ec.t.WIVYqK),
+          text: ec.intl.string(ec.t.WIVYqJ),
           hasRestrictedOrMutedVCParticipant: g,
           children: (0, r.jsxs)(p.P3F, {
-            "aria-label": ec.intl.string(ec.t.WIVYqK),
+            "aria-label": ec.intl.string(ec.t.WIVYqJ),
             onClick: b,
             className: eu.voiceChannelPopoutReactorChannel,
             children: [(0, r.jsx)(w.Z, {
@@ -820,7 +820,7 @@ function eC(e) {
       children: (0, r.jsx)(p.Button, {
         onClick: y,
         fullWidth: true,
-        text: E ? ec.intl.string(ec.t["I6JG4+"]) : ec.intl.string(ec.t.VJlc0d),
+        text: E ? ec.intl.string(ec.t.I6JG46) : ec.intl.string(ec.t.VJlc0S),
         icon: E ? p.pzj : p.gj8,
         variant: "active",
         size: "md"

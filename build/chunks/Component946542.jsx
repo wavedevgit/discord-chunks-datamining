@@ -1,4 +1,4 @@
-/** Chunk was on 84283 **/
+/** Chunk was on 69844 **/
 /** chunk id: 946542, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk359993 = require("./359993.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk975047 = require("./975047.js");
+  Chunk431085 = require("./431085.js");
 
 function _(e) {
   let {
@@ -141,7 +141,7 @@ let b = function(e) {
       variant: "heading-sm/semibold",
       color: "header-primary",
       className: g.sectionHeader,
-      children: h.intl.string(h.t.E8wCnp)
+      children: h.intl.string(h.t.E8wCnk)
     }), (0, r.jsx)(u.Z, {
       loading: n === o.M.FETCHING,
       children: null != a ? (0, r.jsx)(_, {

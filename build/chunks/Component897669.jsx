@@ -1,4 +1,4 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 897669, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -12,7 +12,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk954313 = require("./954313.js"),
   Chunk390966 = require("./390966.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk258652 = require("./258652.js");
+  Chunk719188 = require("./719188.js");
 
 function p(e) {
   let {
@@ -27,7 +27,7 @@ function p(e) {
     }), (0, i.jsx)(c.z, {
       startTime: p.startTime.toISOString(),
       status: null != f ? f : t.status,
-      liveText: u.intl.string(u.t.kM6e4O),
+      liveText: u.intl.string(u.t.kM6e4G),
       className: d.eventSchedule,
       textVariant: "text-lg/semibold",
       eventType: t.entity_type,

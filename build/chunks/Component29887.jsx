@@ -53,7 +53,7 @@ function h(e) {
     icon: n(570111),
     timestamp: i.timestamp,
     compact: o,
-    children: null != f && null != h ? _.intl.format(_.t["21R6Cg"], {
+    children: null != f && null != h ? _.intl.format(_.t["21R6Ch"], {
       username: f,
       usernameHook: u(),
       guildName: h,
@@ -78,12 +78,12 @@ function m(e) {
     icon: n(474019),
     timestamp: i.timestamp,
     compact: o,
-    children: null != f && null != h ? _.intl.format(_.t["Bz/QCw"], {
+    children: null != f && null != h ? _.intl.format(_.t["Bz/QC2"], {
       username: f,
       usernameHook: u(),
       guildName: h,
       guildNameClick: d
-    }) : _.intl.string(_.t.FVF6qa)
+    }) : _.intl.string(_.t.FVF6qU)
   })
 }
 
@@ -103,11 +103,11 @@ function g(e) {
     icon: n(474019),
     timestamp: i.timestamp,
     compact: o,
-    children: null != f && null != h ? _.intl.format(_.t.Kpkesr, {
+    children: null != f && null != h ? _.intl.format(_.t.Kpkesg, {
       username: f,
       usernameHook: u(),
       guildName: h,
       guildNameClick: d
-    }) : _.intl.string(_.t.BMlbEx)
+    }) : _.intl.string(_.t.BMlbE7)
   })
 }

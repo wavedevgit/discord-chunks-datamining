@@ -1,4 +1,4 @@
-/** Chunk was on 65825 **/
+/** Chunk was on 87943 **/
 /** chunk id: 462061, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   T: () => D,
@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk400872 = require("./400872.js");
+  Chunk7504 = require("./7504.js");
 let T = Chunk481060.EFr.SIZE_80,
   N = Chunk481060.EFr.SIZE_40;
 
@@ -43,7 +43,7 @@ function D(e) {
     participant: n
   } = e;
   return (0, h.Eu)(t, n.id) ? (0, r.jsx)(c.u, {
-    text: A.intl.string(A.t.HFwRpq),
+    text: A.intl.string(A.t.HFwRpk),
     position: "bottom",
     children: (0, r.jsx)("div", {
       className: R.interactive,
@@ -70,12 +70,12 @@ function M(e) {
     noVideoRender: k = false,
     pulseSpeakingIndicator: F = false,
     inOverlayPopout: L = false,
-    paused: U = false
-  } = e, V = O.Z.getVideoComponent(), W = (0, o.e7)([S.default], () => S.default.getId()), {
+    paused: V = false
+  } = e, U = O.Z.getVideoComponent(), W = (0, o.e7)([S.default], () => S.default.getId()), {
     user: H,
     streamId: B,
     speaking: q
-  } = t, z = H.id === W, Y = (0, w.ZP)(t), K = (0, o.e7)([I.Z], () => I.Z.isFocused()), G = (0, o.e7)([v.Z], () => v.Z.getWindowFocused(Z.KJ3.CHANNEL_CALL_POPOUT)), Q = (0, o.e7)([O.Z], () => null != H.id && O.Z.isLocalVideoDisabled(H.id, (0, p.Z)(t.type)), [H.id, t.type]), X = (0, o.e7)([y.ZP], () => y.ZP.isGuestOrLurker(n.guild_id, H.id)), J = C.ZP.getName(n.getGuildId(), n.id, H) + (X ? " ".concat(A.intl.string(A.t["pFO/Pj"])) : ""), $ = q && (G || K), ee = c < 124 ? N : T, {
+  } = t, z = H.id === W, Y = (0, w.ZP)(t), K = (0, o.e7)([I.Z], () => I.Z.isFocused()), G = (0, o.e7)([v.Z], () => v.Z.getWindowFocused(Z.KJ3.CHANNEL_CALL_POPOUT)), Q = (0, o.e7)([O.Z], () => null != H.id && O.Z.isLocalVideoDisabled(H.id, (0, p.Z)(t.type)), [H.id, t.type]), X = (0, o.e7)([y.ZP], () => y.ZP.isGuestOrLurker(n.guild_id, H.id)), J = C.ZP.getName(n.getGuildId(), n.id, H) + (X ? " ".concat(A.intl.string(A.t["pFO/Ph"])) : ""), $ = q && (G || K), ee = c < 124 ? N : T, {
     avatarSrc: et,
     avatarDecorationSrc: en
   } = (0, E.Z)({
@@ -97,7 +97,7 @@ function M(e) {
       user: n
     } = eo.current;
     e.isGuildStageVoice() && !Y && (null == t ? true : t.id) === n.id && u.Z.selectParticipant(e.id, null)
-  }, [Y]), l && !Q && !k && Y && !s && null != V && O.Z.supports(x.AN.VIDEO)) ? null != ei && null == el ? (0, r.jsx)(j.Z, {
+  }, [Y]), l && !Q && !k && Y && !s && null != U && O.Z.supports(x.AN.VIDEO)) ? null != ei && null == el ? (0, r.jsx)(j.Z, {
     avError: ei,
     userId: t.id,
     width: c,
@@ -108,10 +108,10 @@ function M(e) {
     className: R.content,
     mirror: z,
     streamId: B,
-    videoComponent: V,
+    videoComponent: U,
     fit: h,
     videoSpinnerContext: H.id === W ? d.m.SELF_VIDEO : d.m.REMOTE_VIDEO,
-    paused: U,
+    paused: V,
     userId: H.id
   }, B) : (0, r.jsx)("div", {
     className: a()(R.content, {

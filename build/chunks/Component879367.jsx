@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk81643 = require("./81643.js"),
   Chunk469775 = require("./469775.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk513358 = require("./513358.js");
+  Chunk248319 = require("./248319.js");
 let m = function(e) {
   let {
     onClose: n,
@@ -59,11 +59,11 @@ let m = function(e) {
           fullWidthContainer: true,
           children: [(0, a.jsx)(r.Avr, {
             variant: "secondary",
-            text: f.intl.string(f.t.fjKFaW),
+            text: f.intl.string(f.t.fjKFae),
             onClick: n
           }), null != i && (0, a.jsx)(r.Avr, {
             variant: "secondary",
-            text: f.intl.string(f.t["4gTnU1"]),
+            text: f.intl.string(f.t["4gTnU0"]),
             onClick: i
           })]
         })

@@ -25,15 +25,15 @@ var Chunk951288 = require("./951288.js"),
   Chunk921944 = require("./921944.js"),
   Chunk135899 = require("./135899.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk59067 = require("./59067.js");
+  Chunk281718 = require("./281718.js");
 
-function y(e) {
+function C(e) {
   let {
     guild: t,
     headerText: a,
     headerSubtext: o,
     step: s
-  } = e, l = S.ZP.getGuildIconURL({
+  } = e, r = S.ZP.getGuildIconURL({
     id: t.id,
     icon: t.icon,
     size: 120
@@ -42,8 +42,8 @@ function y(e) {
     className: b.header,
     children: [(0, i.jsxs)("div", {
       className: b.headerIconContainer,
-      children: [null != l ? (0, i.jsx)(_.qEK, {
-        src: l,
+      children: [null != r ? (0, i.jsx)(_.qEK, {
+        src: r,
         "aria-label": t.name,
         size: _.EFr.SIZE_120,
         className: b.__invalid_guildIcon
@@ -53,8 +53,8 @@ function y(e) {
       }), 2 === s ? (0, i.jsx)(_.owK, {
         size: "md",
         className: b.greenPing,
-        color: r.Z.unsafe_rawColors.GREEN_360.css,
-        secondaryColor: r.Z.unsafe_rawColors.WHITE_100.css
+        color: l.Z.unsafe_rawColors.GREEN_360.css,
+        secondaryColor: l.Z.unsafe_rawColors.WHITE_100.css
       }) : (0, i.jsx)(u.Ee, {
         src: n(173326),
         className: b.redPing
@@ -74,7 +74,7 @@ function y(e) {
   })
 }
 
-function C(e) {
+function y(e) {
   let {
     guild: t
   } = e, n = (0, s.e7)([N.Z], () => N.Z.getEveryoneRole(t));
@@ -98,7 +98,7 @@ function C(e) {
     })]
   })
 }
-let R = e => e.toString() === O.Plq.MENTION_EVERYONE.toString() ? g.intl.string(g.t.yCpsQ0) : (0, m.wt)(e);
+let R = e => e.toString() === O.Plq.MENTION_EVERYONE.toString() ? g.intl.string(g.t.yCpsQw) : (0, m.wt)(e);
 
 function j(e) {
   let {
@@ -111,7 +111,7 @@ function j(e) {
       className: b.tableHeader,
       variant: "text-xs/semibold",
       color: "text-muted",
-      children: 0 === n ? g.intl.string(g.t["0WZKIy"]) : g.intl.string(g.t.xU8RDg)
+      children: 0 === n ? g.intl.string(g.t["0WZKI4"]) : g.intl.string(g.t.xU8RDk)
     }), (0, i.jsx)("div", {
       className: b.permissionsTable,
       children: t.map((e, t) => (0, i.jsxs)("div", {
@@ -139,7 +139,7 @@ function L(e) {
       className: b.tableHeader,
       variant: "text-xs/semibold",
       color: "text-muted",
-      children: 2 === n ? g.intl.string(g.t.FgMS6u) : g.intl.string(g.t.Yo5qlp)
+      children: 2 === n ? g.intl.string(g.t.FgMS6i) : g.intl.string(g.t.Yo5qlq)
     }), (0, i.jsx)("div", {
       className: b.permissionsTable,
       children: t.map((e, t) => (0, i.jsxs)("div", {
@@ -192,11 +192,11 @@ function U(e) {
         children: [(0, i.jsx)(_.owK, {
           size: "md",
           className: b.checklistIcon,
-          color: r.Z.unsafe_rawColors.GREEN_360.css,
-          secondaryColor: r.Z.unsafe_rawColors.WHITE_100.css
+          color: l.Z.unsafe_rawColors.GREEN_360.css,
+          secondaryColor: l.Z.unsafe_rawColors.WHITE_100.css
         }), (0, i.jsx)(_.Text, {
           variant: "text-md/normal",
-          children: g.intl.format(g.t.K8Eg4O, {
+          children: g.intl.format(g.t.K8Eg4P, {
             infoHook: () => (0, i.jsx)(c.u, {
               text: g.intl.string(g.t["3h2WyM"]),
               "aria-label": g.intl.string(g.t["3h2WyM"]),
@@ -213,12 +213,12 @@ function U(e) {
         children: [(0, i.jsx)(_.owK, {
           size: "md",
           className: b.checklistIcon,
-          color: r.Z.unsafe_rawColors.GREEN_360.css,
-          secondaryColor: r.Z.unsafe_rawColors.WHITE_100.css
+          color: l.Z.unsafe_rawColors.GREEN_360.css,
+          secondaryColor: l.Z.unsafe_rawColors.WHITE_100.css
         }), (0, i.jsx)(_.Text, {
           variant: "text-md/normal",
-          children: g.intl.string(g.t.LfeFFh)
-        }), (0, i.jsx)(C, {
+          children: g.intl.string(g.t.LfeFFr)
+        }), (0, i.jsx)(y, {
           guild: t
         })]
       }) : null, (0, i.jsx)(v, {
@@ -240,7 +240,7 @@ function G(e) {
     className: b.footer,
     children: [(0, i.jsx)(_.Button, {
       variant: "primary",
-      text: 0 === o ? a ? g.intl.string(g.t.R7GC7e) : g.intl.string(g.t.iOSdAQ) : g.intl.string(g.t.mVuDq6),
+      text: 0 === o ? a ? g.intl.string(g.t.R7GC7b) : g.intl.string(g.t.iOSdAW) : g.intl.string(g.t.mVuDq5),
       onClick: t,
       loading: 1 === o
     }), 0 === o ? (0, i.jsx)(d.zx, {
@@ -261,7 +261,7 @@ function D(e) {
     guild: t,
     canEveryoneModerate: n,
     isDefaultNotificationsAllMessages: s,
-    transitionState: r,
+    transitionState: l,
     onClose: c
   } = e, [d, u] = a.useState(0), m = a.useMemo(() => {
     let e = [],
@@ -315,14 +315,14 @@ function D(e) {
     }))
   };
   return (0, i.jsxs)(_.Y0X, {
-    transitionState: r,
+    transitionState: l,
     size: _.CgR.SMALL,
     className: b.modal,
     parentComponent: "GuildSettingsDisableUnsafeDefaultPermissionsNotice",
-    children: [(0, i.jsx)(y, {
+    children: [(0, i.jsx)(C, {
       guild: t,
-      headerText: n ? g.intl.string(g.t["7/ux19"]) : g.intl.string(g.t["sRcn4+"]),
-      headerSubtext: n ? g.intl.string(g.t.aliKPz) : g.intl.string(g.t.F4KDOD),
+      headerText: n ? g.intl.string(g.t["7/ux15"]) : g.intl.string(g.t.sRcn4z),
+      headerSubtext: n ? g.intl.string(g.t.aliKPx) : g.intl.string(g.t.F4KDOH),
       step: d
     }), (0, i.jsx)(U, {
       guild: t,
@@ -333,10 +333,10 @@ function D(e) {
     }), (0, i.jsx)(G, {
       onConfirm: () => {
         var e, i;
-        n || (E(), c(), (0, h.Qd)(l.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, null != (e = null == t ? true : t.id) ? e : "", true, T.L.PRIMARY)), 0 === d ? (u(1), setTimeout(() => u(2), 3e3)) : 2 === d && (E(), c(), (0, h.Qd)(l.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, null != (i = null == t ? true : t.id) ? i : "", true, T.L.PRIMARY))
+        n || (E(), c(), (0, h.Qd)(r.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, null != (e = null == t ? true : t.id) ? e : "", true, T.L.PRIMARY)), 0 === d ? (u(1), setTimeout(() => u(2), 3e3)) : 2 === d && (E(), c(), (0, h.Qd)(r.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, null != (i = null == t ? true : t.id) ? i : "", true, T.L.PRIMARY))
       },
       onDismiss: () => {
-        c(), (0, h.Qd)(l.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, t.id, true, T.L.DISMISS)
+        c(), (0, h.Qd)(r.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, t.id, true, T.L.DISMISS)
       },
       step: d,
       canEveryoneModerate: n

@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 143316, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk288552 = require("./288552.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk629775 = require("./629775.js");
+  Chunk407067 = require("./407067.js");
 
 function p(e) {
   let {
@@ -30,11 +30,11 @@ function p(e) {
       confirm: h,
       cancel: () => p(false)
     }) : null, "bottom-floating" === t ? (0, r.jsx)(s.a, {
-      text: u.intl.string(u.t["8k+6QU"]),
+      text: u.intl.string(u.t["8k+6QY"]),
       icon: o.W6s,
       onClick: g
     }) : (0, r.jsx)(o.M0o, {
-      tooltip: u.intl.string(u.t["8k+6QU"]),
+      tooltip: u.intl.string(u.t["8k+6QY"]),
       color: o.YX$.TERTIARY,
       icon: (0, r.jsx)(o.W6s, {
         size: "xs",
@@ -54,15 +54,15 @@ function f(e) {
   return (0, r.jsx)(o.sYh, {
     dismissable: true,
     header: u.intl.string(u.t.h4bVZ2),
-    confirmText: u.intl.string(u.t.e6RscX),
-    cancelText: u.intl.string(u.t["ETE/oK"]),
+    confirmText: u.intl.string(u.t.e6RscS),
+    cancelText: u.intl.string(u.t["ETE/oC"]),
     confirmButtonColor: l.zx.Colors.BRAND,
     onCancel: t,
     onConfirm: n,
     children: (0, r.jsx)(o.Text, {
       color: "text-default",
       variant: "text-sm/normal",
-      children: u.intl.string(u.t["0MQ0BQ"])
+      children: u.intl.string(u.t["0MQ0Bf"])
     })
   })
 }

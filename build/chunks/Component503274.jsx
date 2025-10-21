@@ -15,9 +15,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk60482 = require("./60482.js"),
   Chunk162190 = require("./162190.js"),
   Chunk68015 = require("./68015.jsx"),
-  Chunk258640 = require("./258640.js"),
+  Chunk149829 = require("./149829.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk277781 = require("./277781.js");
+  Chunk678873 = require("./678873.js");
 
 function j(e) {
   let {
@@ -26,9 +26,9 @@ function j(e) {
     cost: a
   } = e;
   return (0, l.jsx)(o.i_, {
-    "aria-label": b.intl.string(f.default.TZsu1d),
-    title: b.intl.string(f.default.TZsu1d),
-    body: b.intl.formatToPlainString(f.default["5HQUzM"], {
+    "aria-label": b.intl.string(f.default.TZsu1U),
+    title: b.intl.string(f.default.TZsu1U),
+    body: b.intl.formatToPlainString(f.default["5HQUzD"], {
       boostCount: a
     }),
     children: (0, l.jsx)("div", {
@@ -41,7 +41,7 @@ function j(e) {
         text: a.toString(),
         variant: "secondary",
         size: "sm",
-        "aria-label": b.intl.string(f.default.TZsu1d),
+        "aria-label": b.intl.string(f.default.TZsu1U),
         onClick: e => {
           e.stopPropagation(), (0, g.x)(n, t)
         }
@@ -78,7 +78,7 @@ function x(e) {
       }), P ? (0, l.jsx)(d.rL, {
         dateString: O.ends_at
       }) : (0, l.jsx)(d.P2, {
-        text: b.intl.string(f.default.FFLkm5)
+        text: b.intl.string(f.default.FFLkmx)
       })]
     }), S && (0, l.jsx)(j, {
       guildId: g,

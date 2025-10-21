@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk736777 = require("./736777.js");
+  Chunk228624 = require("./228624.js");
 let C = Math.ceil(Math.sqrt(115200)),
   S = (C - 240) / 2,
   N = function(e) {
@@ -141,7 +141,7 @@ let C = Math.ceil(Math.sqrt(115200)),
           onClick: A,
           route: O.Z5c.QUEST_HOME_V2,
           selected: l,
-          text: y.intl.string(y.t.JALI2N)
+          text: y.intl.string(y.t.JALI2K)
         }, N), n = n = {
           children: j && (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(o.animated.div, {

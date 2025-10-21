@@ -4,10 +4,10 @@ require.d(exports, {
   MC: () => p,
   Y5: () => v,
   ZF: () => j,
-  ZP: () => S,
+  ZP: () => O,
   d6: () => k,
   m8: () => w,
-  nU: () => O,
+  nU: () => S,
   tO: () => x
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -19,8 +19,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk493773 = require("./493773.js"),
   Chunk38618 = require("./38618.js"),
-  Chunk756746 = require("./756746.js"),
-  Chunk866403 = require("./866403.js");
+  Chunk499504 = require("./499504.js"),
+  Chunk451429 = require("./451429.js");
 let x = 1e3 / 60,
   h = 1e3 / 30,
   p = 5e3,
@@ -138,13 +138,13 @@ function y(e) {
     renderedFrameCount: b,
     bufferFramecountRef: y,
     frameCheckerEffect: T
-  } = k(r, c), [R, C, O] = j(t), [S, E] = v(R, T), F = performance.now() - l.current < p, P = C(d, y.current);
-  (0, i.ZP)(() => (S(), () => {
+  } = k(r, c), [R, C, S] = j(t), [O, E] = v(R, T), F = performance.now() - l.current < p, P = C(d, y.current);
+  (0, i.ZP)(() => (O(), () => {
     E()
   }));
   let I = a.useCallback(() => {
-    h(), O(), S()
-  }, [h, O, S]);
+    h(), S(), O()
+  }, [h, S, O]);
   return (0, n.jsxs)("div", {
     className: f.panelGroup,
     children: [(0, n.jsxs)(o.Text, {
@@ -385,7 +385,7 @@ function C(e) {
   })
 }
 
-function O() {
+function S() {
   let [, e] = Chunk647438.useState({});
   Chunk647438.useEffect(() => {
     let t = setInterval(() => {
@@ -397,13 +397,13 @@ function O() {
   }, [])
 }
 
-function S() {
+function O() {
   let e = (0, Chunk442837.e7)([Chunk38618.Z], () => Chunk38618.Z.getSocket()),
     [t, r] = Chunk647438.useState(false);
-  return O(), (0, Chunk951288.jsx)("div", {
-    className: l()(Chunk866403.panel, Chunk756746.panel),
+  return S(), (0, Chunk951288.jsx)("div", {
+    className: l()(Chunk451429.panel, Chunk499504.panel),
     children: (0, Chunk951288.jsxs)(Chunk481060.zJl, {
-      className: Chunk756746.panel,
+      className: Chunk499504.panel,
       children: [(0, Chunk951288.jsx)(y, {
         socket: module,
         isAverageFrameTime: exports

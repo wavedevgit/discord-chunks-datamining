@@ -1,4 +1,4 @@
-/** Chunk was on 11324 **/
+/** Chunk was on 74240 **/
 /** chunk id: 276486, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   l: () => d,
@@ -12,23 +12,23 @@ var Chunk28664 = require("./28664.jsx"),
   Chunk489813 = require("./489813.jsx"),
   Chunk815660 = require("./815660.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk162359 = require("./162359.js");
+  Chunk624463 = require("./624463.js");
 
 function d() {
   return (0, Chunk951288.jsx)(Chunk489813.PU, {
-    className: Chunk162359.editableRequirementContainer,
+    className: Chunk624463.editableRequirementContainer,
     icon: Chunk481060.AtH,
-    text: Chunk388032.intl.string(Chunk388032.t.woMjLS),
-    footnote: Chunk388032.intl.string(Chunk388032.t["jMh+TU"]),
+    text: Chunk388032.intl.string(Chunk388032.t.woMjLV),
+    footnote: Chunk388032.intl.string(Chunk388032.t["jMh+TY"]),
     meetsRequirement: false,
     children: (0, Chunk951288.jsx)(Chunk28664.u, {
       asContainer: true,
-      text: Chunk388032.intl.string(Chunk388032.t.mGlP39),
+      text: Chunk388032.intl.string(Chunk388032.t.mGlP30),
       children: (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "primary",
         size: "sm",
         disabled: true,
-        text: Chunk388032.intl.string(Chunk388032.t["13ofGh"])
+        text: Chunk388032.intl.string(Chunk388032.t["13ofGu"])
       })
     })
   })
@@ -37,17 +37,17 @@ function d() {
 function m(e) {
   let {
     isUserVerified: t
-  } = e, l = t ? c.intl.string(c.t.WWzQtb) : c.intl.string(c.t.woMjLS);
+  } = e, l = t ? c.intl.string(c.t.WWzQta) : c.intl.string(c.t.woMjLV);
   return (0, r.jsx)(a.PU, {
     className: u.editableRequirementContainer,
     icon: i.AtH,
     text: l,
-    footnote: c.intl.string(c.t["jMh+TU"]),
+    footnote: c.intl.string(c.t["jMh+TY"]),
     meetsRequirement: t,
     children: (0, r.jsx)(i.Button, {
       variant: "primary",
       size: "sm",
-      text: c.intl.string(c.t["13ofGh"]),
+      text: c.intl.string(c.t["13ofGu"]),
       onClick: () => {
         (0, i.ZDy)(async () => {
           let {

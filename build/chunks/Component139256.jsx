@@ -31,7 +31,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk65145 = require("./65145.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk397789 = require("./397789.js");
+  Chunk313464 = require("./313464.js");
 
 function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -96,7 +96,7 @@ function D(e) {
     children: n
   } = e;
   return (0, r.jsx)("ul", {
-    "aria-label": T.intl.string(T.t.sJpqBQ),
+    "aria-label": T.intl.string(T.t.sJpqBS),
     className: t,
     children: n
   })
@@ -108,7 +108,7 @@ function L(e) {
     children: n
   } = e;
   return (0, r.jsx)("div", {
-    "aria-label": T.intl.string(T.t.sJpqBQ),
+    "aria-label": T.intl.string(T.t.sJpqBS),
     role: "group",
     className: t,
     children: n
@@ -125,7 +125,7 @@ function x(e) {
     ref: a
   } = i, o = P(i, ["ref"]);
   return (0, r.jsx)("div", R(C({
-    "aria-label": T.intl.string(T.t.sJpqBQ),
+    "aria-label": T.intl.string(T.t.sJpqBS),
     ref: a
   }, o), {
     className: t,

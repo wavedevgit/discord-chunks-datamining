@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 782896, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   c: () => m
@@ -11,9 +11,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk430824 = require("./430824.js"),
   Chunk914010 = require("./914010.js"),
   Chunk797670 = require("./797670.jsx"),
-  Chunk893867 = require("./893867.js"),
+  Chunk951917 = require("./951917.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk547752 = require("./547752.js");
+  Chunk906530 = require("./906530.js");
 
 function h(e) {
   let {
@@ -50,7 +50,7 @@ function g(e) {
     }, e.id)), n > 0 && (0, r.jsx)(o.Text, {
       variant: "text-xs/medium",
       color: "text-secondary",
-      children: p.intl.format(d.default.bAzBIS, {
+      children: p.intl.format(d.default.bAzBIf, {
         numServers: n
       })
     })]
@@ -84,7 +84,7 @@ function m(e) {
     }
   }, [m, n]);
   return (0, r.jsx)(o.jSM, {
-    "aria-label": p.intl.string(d.default.TG0Qsb),
+    "aria-label": p.intl.string(d.default.TG0QsS),
     text: (0, r.jsx)(g, {
       guilds: O,
       numTruncated: y

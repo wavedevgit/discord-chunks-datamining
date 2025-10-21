@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk385774 = require("./385774.js");
+  Chunk569408 = require("./569408.js");
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -83,7 +83,7 @@ function v(e) {
       }), (0, r.jsx)(c.Text, {
         className: E.text,
         variant: "text-sm/normal",
-        children: g.intl.format(g.t.BNAIBQ, {
+        children: g.intl.format(g.t.BNAIBU, {
           onLearnMore: O
         })
       })]
@@ -92,7 +92,7 @@ function v(e) {
       className: E.iconOnly,
       onClick: () => O(),
       children: (0, r.jsx)(l.u, {
-        text: g.intl.string(g.t["+eFIjY"]),
+        text: g.intl.string(g.t["+eFIjX"]),
         position: "top",
         children: (0, r.jsx)(c.SrA, {
           size: "md",

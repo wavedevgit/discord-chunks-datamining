@@ -12,7 +12,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk806729 = require("./806729.js"),
   Chunk821179 = require("./821179.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk883172 = require("./883172.js");
+  Chunk878449 = require("./878449.js");
 
 function m(e) {
   let {
@@ -52,7 +52,7 @@ function m(e) {
         className: u.emptyIconGuilds
       }), (0, l.jsx)("div", {
         className: u.emptyText,
-        children: d.intl.string(d.t.zjVh8v)
+        children: d.intl.string(d.t.zjVh8h)
       })]
     })
   })

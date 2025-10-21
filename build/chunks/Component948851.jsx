@@ -10,7 +10,7 @@ var Chunk533800 = require("./533800.js"),
   Chunk630388 = require("./630388.js"),
   Chunk971130 = require("./971130.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk633297 = require("./633297.js");
+  Chunk337709 = require("./337709.js");
 let u = Chunk971130.ZP.getMaxUsesOptions;
 
 function c(e) {
@@ -28,32 +28,32 @@ function c(e) {
     isGuestInviteCreationToggleEnabled: S,
     inviteFlags: f,
     onSetInviteFlags: E
-  } = e, y = r.ZP.getMaxAgeOptionByValue(g), C = u.find(e => e.value === h);
+  } = e, C = a.ZP.getMaxAgeOptionByValue(g), y = u.find(e => e.value === h);
   return (0, i.jsx)("div", {
     className: d.settingsContent,
     children: (0, i.jsxs)("form", {
       onSubmit: v,
       className: d.settingsForm,
       children: [(0, i.jsx)(s.VcW, {
-        label: o.intl.string(o.t["60qw29"]),
+        label: o.intl.string(o.t["60qw2x"]),
         options: c,
-        value: null != (t = null == y ? true : y.value) ? t : c[0].value,
+        value: null != (t = null == C ? true : C.value) ? t : c[0].value,
         onChange: x
       }), (0, i.jsx)(s.VcW, {
-        label: o.intl.string(o.t.jDqWHR),
+        label: o.intl.string(o.t.jDqWHW),
         options: u,
-        value: null == C ? true : C.value,
+        value: null == y ? true : y.value,
         onChange: I
       }), !n && (0, i.jsx)(s.rsf, {
         checked: m,
         onChange: e => p(e),
-        description: o.intl.string(o.t.UN5IRU),
-        label: o.intl.string(o.t["wE+9dn"])
+        description: o.intl.string(o.t.UN5IRX),
+        label: o.intl.string(o.t["wE+9dr"])
       }), S && (0, i.jsx)(s.rsf, {
-        checked: (0, a.yE)(f, l.$.IS_GUEST_INVITE),
-        onChange: e => E((0, a.mB)(f, l.$.IS_GUEST_INVITE, e)),
-        description: o.intl.string(o.t["/FeTKy"]),
-        label: o.intl.string(o.t.siexRU)
+        checked: (0, r.yE)(f, l.$.IS_GUEST_INVITE),
+        onChange: e => E((0, r.mB)(f, l.$.IS_GUEST_INVITE, e)),
+        description: o.intl.string(o.t["/FeTK6"]),
+        label: o.intl.string(o.t.siexRS)
       })]
     })
   })

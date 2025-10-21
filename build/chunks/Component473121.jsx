@@ -9,7 +9,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk454585 = require("./454585.js"),
   Chunk273744 = require("./273744.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk775148 = require("./775148.js");
+  Chunk204800 = require("./204800.js");
 let d = e => {
   var t, n;
   let {
@@ -60,7 +60,7 @@ let d = e => {
       children: _.current(u)
     }) : null, g && !p && (0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
-      children: o.intl.format(o.t.Q0tSKS, {})
+      children: o.intl.format(o.t.Q0tSKT, {})
     })]
   })
 }

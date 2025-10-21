@@ -16,7 +16,7 @@ var Chunk658722 = require("./658722.js"),
   Chunk485386 = require("./485386.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk554896 = require("./554896.js");
+  Chunk470197 = require("./470197.js");
 let h = function(e) {
   let {
     className: t,
@@ -30,8 +30,8 @@ let h = function(e) {
     className: t,
     value: new Set,
     onChange: h,
-    placeholder: _.intl.string(_.t.XPGZXF),
-    "aria-label": _.intl.string(_.t.ljnBlp),
+    placeholder: _.intl.string(_.t.XPGZXP),
+    "aria-label": _.intl.string(_.t.ljnBlo),
     onClose: m,
     children: e => b(e).map(e => {
       var t, n;

@@ -20,11 +20,11 @@ var Chunk442837 = require("./442837.js"),
 
 function d(e) {
   let t = (e - Date.now()) / o.Z.Millis.HOUR;
-  return t > 24 ? u.intl.formatToPlainString(u.t["g9s+dH"], {
+  return t > 24 ? u.intl.formatToPlainString(u.t["g9s+dA"], {
     numDays: Math.floor(t / 24)
-  }) : t >= 1 ? u.intl.formatToPlainString(u.t.k9v339, {
+  }) : t >= 1 ? u.intl.formatToPlainString(u.t.k9v33y, {
     numHours: Math.floor(t)
-  }) : u.intl.formatToPlainString(u.t["/d0GmZ"], {
+  }) : u.intl.formatToPlainString(u.t["/d0GmT"], {
     numMinutes: Math.floor(60 * t)
   })
 }

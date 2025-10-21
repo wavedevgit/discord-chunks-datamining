@@ -178,7 +178,7 @@ class N extends(i = Chunk442837.ZP.PersistedStore) {
   }
   getLabelFromPath(e) {
     var t, n;
-    return e === m ? u.intl.string(u.t.VdDrjo) : null != (n = null != (t = s.Z.fileManager.basename(e)) ? t : e.replace(/[/\\]+$/, "").split(/[/\\]+/g).slice(false)[0]) ? n : "?"
+    return e === m ? u.intl.string(u.t.VdDrjm) : null != (n = null != (t = s.Z.fileManager.basename(e)) ? t : e.replace(/[/\\]+$/, "").split(/[/\\]+/g).slice(false)[0]) ? n : "?"
   }
 }
 d(N, "displayName", "InstallationManagerStore"), d(N, "persistKey", "InstallationManagerStore");

@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk926526 = require("./926526.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk191333 = require("./191333.js");
+  Chunk394121 = require("./394121.js");
 let c = function(e) {
   let {
     onWithdrawApplication: t,
@@ -29,20 +29,20 @@ let c = function(e) {
       children: [(0, r.jsx)(l.Heading, {
         variant: "heading-lg/semibold",
         color: "header-primary",
-        children: (null == n ? true : n.name) != null ? o.intl.formatToPlainString(o.t["0Qlu//"], {
+        children: (null == n ? true : n.name) != null ? o.intl.formatToPlainString(o.t["0Qlu/6"], {
           guildName: n.name
-        }) : o.intl.string(o.t["5iLvS0"])
+        }) : o.intl.string(o.t["5iLvSx"])
       }), (0, r.jsx)(l.Text, {
         variant: "text-md/medium",
         color: "header-secondary",
-        children: o.intl.string(o.t.FdsK4u)
+        children: o.intl.string(o.t.FdsK4h)
       })]
     }), (0, r.jsx)(l.Button, {
       fullWidth: true,
       onClick: t,
       variant: "critical-primary",
       size: "md",
-      text: o.intl.string(o.t.g9tK0t)
+      text: o.intl.string(o.t.g9tK0o)
     })]
   })
 }

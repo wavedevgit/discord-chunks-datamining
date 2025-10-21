@@ -76,9 +76,9 @@ let g = {
     [Chunk206583.kG.PLAYSTATION]: Chunk374129.Z
   },
   E = {
-    [Chunk206583.kG.SPOTIFY]: () => Chunk388032.intl.string(Chunk388032.t["0ZB/XF"]),
-    [Chunk206583.kG.CRUNCHYROLL]: () => Chunk388032.intl.string(Chunk388032.t.jdJYX1),
-    [Chunk206583.kG.XBOX]: () => Chunk388032.intl.string(Chunk388032.t["Nfvo7+"]),
+    [Chunk206583.kG.SPOTIFY]: () => Chunk388032.intl.string(Chunk388032.t["0ZB/XE"]),
+    [Chunk206583.kG.CRUNCHYROLL]: () => Chunk388032.intl.string(Chunk388032.t.jdJYXw),
+    [Chunk206583.kG.XBOX]: () => Chunk388032.intl.string(Chunk388032.t.Nfvo72),
     [Chunk206583.kG.PLAYSTATION]: () => Chunk388032.intl.string(Chunk388032.t.fFl4jo)
   };
 

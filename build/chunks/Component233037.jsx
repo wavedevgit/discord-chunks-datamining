@@ -16,7 +16,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk499596 = require("./499596.jsx"),
   Chunk148381 = require("./148381.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk520258 = require("./520258.js");
+  Chunk376681 = require("./376681.js");
 
 function j(e) {
   let {
@@ -45,7 +45,7 @@ function j(e) {
     }
   });
   return (0, l.jsx)(x.Z, {
-    title: g.intl.string(g.t["eg7R/v"]),
+    title: g.intl.string(g.t["eg7R/k"]),
     scrollerInnerClassName: h.channelSelectScrollerInner,
     children: (0, l.jsx)(i.Gu, {
       options: Z,

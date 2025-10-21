@@ -78,35 +78,35 @@ let m = e => (t, n) => null == n ? "" : s.intl.format(e(), c({
   g = {
     ACTIVITY_FEED: {
       START: {
-        [Chunk379649.J6.SECONDS]: () => Chunk388032.intl.string(Chunk388032.t.ahzZr6),
-        [Chunk379649.J6.MINUTES]: e => s.intl.formatToPlainString(s.t["03mIHR"], {
+        [Chunk379649.J6.SECONDS]: () => Chunk388032.intl.string(Chunk388032.t["ahzZr+"]),
+        [Chunk379649.J6.MINUTES]: e => s.intl.formatToPlainString(s.t["03mIHW"], {
           time: e
         }),
-        [Chunk379649.J6.HOURS]: e => s.intl.formatToPlainString(s.t.eNoooa, {
+        [Chunk379649.J6.HOURS]: e => s.intl.formatToPlainString(s.t.eNoooU, {
           time: e
         }),
-        [Chunk379649.J6.DAYS]: e => s.intl.formatToPlainString(s.t["2rUo/v"], {
+        [Chunk379649.J6.DAYS]: e => s.intl.formatToPlainString(s.t["2rUo/p"], {
           time: e
         })
       },
       END: {
-        [Chunk379649.J6.SECONDS]: () => Chunk388032.intl.string(Chunk388032.t.EluAd3),
-        [Chunk379649.J6.MINUTES]: e => s.intl.formatToPlainString(s.t.BZxG8f, {
+        [Chunk379649.J6.SECONDS]: () => Chunk388032.intl.string(Chunk388032.t.EluAd9),
+        [Chunk379649.J6.MINUTES]: e => s.intl.formatToPlainString(s.t.BZxG8Z, {
           time: e
         }),
-        [Chunk379649.J6.HOURS]: e => s.intl.formatToPlainString(s.t.cRMUp6, {
+        [Chunk379649.J6.HOURS]: e => s.intl.formatToPlainString(s.t.cRMUpw, {
           time: e
         }),
-        [Chunk379649.J6.DAYS]: e => s.intl.formatToPlainString(s.t["yP1T8/"], {
+        [Chunk379649.J6.DAYS]: e => s.intl.formatToPlainString(s.t.yP1T84, {
           time: e
         }),
-        [Chunk379649.J6.WEEKS]: e => s.intl.formatToPlainString(s.t.AWkdqa, {
+        [Chunk379649.J6.WEEKS]: e => s.intl.formatToPlainString(s.t.AWkdqe, {
           time: e
         }),
-        [Chunk379649.J6.MONTHS]: e => s.intl.formatToPlainString(s.t.upamAw, {
+        [Chunk379649.J6.MONTHS]: e => s.intl.formatToPlainString(s.t.upamA7, {
           time: e
         }),
-        [Chunk379649.J6.YEARS]: e => s.intl.formatToPlainString(s.t.vfMC2t, {
+        [Chunk379649.J6.YEARS]: e => s.intl.formatToPlainString(s.t.vfMC2h, {
           time: e
         })
       }
@@ -114,31 +114,31 @@ let m = e => (t, n) => null == n ? "" : s.intl.format(e(), c({
     ACTIVITY_FEED_NEW: {
       START: {
         [Chunk379649.J6.SECONDS]: m(() => Chunk388032.t.Bf3PRU),
-        [Chunk379649.J6.MINUTES]: m(() => Chunk388032.t["A9P+dX"]),
-        [Chunk379649.J6.HOURS]: m(() => Chunk388032.t.KwVzfn),
-        [Chunk379649.J6.DAYS]: m(() => Chunk388032.t.hbUpBA)
+        [Chunk379649.J6.MINUTES]: m(() => Chunk388032.t["A9P+dT"]),
+        [Chunk379649.J6.HOURS]: m(() => Chunk388032.t.KwVzfh),
+        [Chunk379649.J6.DAYS]: m(() => Chunk388032.t.hbUpBN)
       },
       END: {
         [Chunk379649.J6.SECONDS]: e => s.intl.formatToPlainString(s.t.C3MTOD, {
           seconds: e
         }),
-        [Chunk379649.J6.MINUTES]: e => s.intl.formatToPlainString(s.t["GqQ/Y2"], {
+        [Chunk379649.J6.MINUTES]: e => s.intl.formatToPlainString(s.t["GqQ/Y9"], {
           minutes: e
         }),
-        [Chunk379649.J6.HOURS]: e => s.intl.formatToPlainString(s.t.c5zfWV, {
+        [Chunk379649.J6.HOURS]: e => s.intl.formatToPlainString(s.t.c5zfWZ, {
           hours: e
         }),
-        [Chunk379649.J6.DAYS]: e => s.intl.formatToPlainString(s.t.amjnaG, {
+        [Chunk379649.J6.DAYS]: e => s.intl.formatToPlainString(s.t.amjnaI, {
           days: e
         })
       }
     },
     USER_ACTIVITY: {
       START: {
-        [Chunk379649.J6.SECONDS]: () => Chunk388032.intl.string(Chunk388032.t.ahzZr6),
+        [Chunk379649.J6.SECONDS]: () => Chunk388032.intl.string(Chunk388032.t["ahzZr+"]),
         [Chunk379649.J6.MINUTES]: function(e, t) {
           let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
-          return n ? s.intl.formatToPlainString(s.t["03mIHR"], {
+          return n ? s.intl.formatToPlainString(s.t["03mIHW"], {
             time: e
           }) : s.intl.formatToPlainString(s.t["vQml+P"], {
             time: e
@@ -146,17 +146,17 @@ let m = e => (t, n) => null == n ? "" : s.intl.format(e(), c({
         },
         [Chunk379649.J6.HOURS]: function(e, t) {
           let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
-          return n ? s.intl.formatToPlainString(s.t.eNoooa, {
+          return n ? s.intl.formatToPlainString(s.t.eNoooU, {
             time: e
-          }) : s.intl.formatToPlainString(s.t["4Wq+6+"], {
+          }) : s.intl.formatToPlainString(s.t["4Wq+6x"], {
             time: e
           })
         },
         [Chunk379649.J6.DAYS]: function(e, t) {
           let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
-          return n ? s.intl.formatToPlainString(s.t["2rUo/v"], {
+          return n ? s.intl.formatToPlainString(s.t["2rUo/p"], {
             time: e
-          }) : s.intl.formatToPlainString(s.t["jN3/fX"], {
+          }) : s.intl.formatToPlainString(s.t["jN3/fR"], {
             time: e
           })
         }
@@ -164,38 +164,38 @@ let m = e => (t, n) => null == n ? "" : s.intl.format(e(), c({
     },
     GAME_LIBRARY_TIME_PLAYED: {
       TIME: {
-        [Chunk379649.J6.NONE]: () => Chunk388032.intl.string(Chunk388032.t.LqDiCg),
-        [Chunk379649.J6.SECONDS]: e => s.intl.formatToPlainString(s.t.xDIDBA, {
+        [Chunk379649.J6.NONE]: () => Chunk388032.intl.string(Chunk388032.t.LqDiCt),
+        [Chunk379649.J6.SECONDS]: e => s.intl.formatToPlainString(s.t.xDIDBL, {
           time: e
         }),
-        [Chunk379649.J6.MINUTES]: e => s.intl.formatToPlainString(s.t.KGqJcX, {
+        [Chunk379649.J6.MINUTES]: e => s.intl.formatToPlainString(s.t.KGqJce, {
           time: e
         }),
-        [Chunk379649.J6.HOURS]: e => s.intl.formatToPlainString(s.t.OLchUF, {
+        [Chunk379649.J6.HOURS]: e => s.intl.formatToPlainString(s.t.OLchUE, {
           time: e
         })
       }
     },
     GAME_LIBRARY_LAST_PLAYED: {
       END: {
-        [Chunk379649.J6.NONE]: () => Chunk388032.intl.string(Chunk388032.t.EoWLrq),
-        [Chunk379649.J6.SECONDS]: () => Chunk388032.intl.string(Chunk388032.t.QTHa8f),
-        [Chunk379649.J6.MINUTES]: e => s.intl.formatToPlainString(s.t.SVEfcX, {
+        [Chunk379649.J6.NONE]: () => Chunk388032.intl.string(Chunk388032.t.EoWLru),
+        [Chunk379649.J6.SECONDS]: () => Chunk388032.intl.string(Chunk388032.t.QTHa8b),
+        [Chunk379649.J6.MINUTES]: e => s.intl.formatToPlainString(s.t.SVEfcd, {
           time: e
         }),
-        [Chunk379649.J6.HOURS]: e => s.intl.formatToPlainString(s.t["0Gbusb"], {
+        [Chunk379649.J6.HOURS]: e => s.intl.formatToPlainString(s.t["0Gbusd"], {
           time: e
         }),
-        [Chunk379649.J6.DAYS]: e => s.intl.formatToPlainString(s.t.hnPZZ2, {
+        [Chunk379649.J6.DAYS]: e => s.intl.formatToPlainString(s.t.hnPZZ7, {
           time: e
         }),
-        [Chunk379649.J6.WEEKS]: e => s.intl.formatToPlainString(s.t.L3fTpK, {
+        [Chunk379649.J6.WEEKS]: e => s.intl.formatToPlainString(s.t.L3fTpL, {
           time: e
         }),
-        [Chunk379649.J6.MONTHS]: e => s.intl.formatToPlainString(s.t.xAFWQU, {
+        [Chunk379649.J6.MONTHS]: e => s.intl.formatToPlainString(s.t.xAFWQV, {
           time: e
         }),
-        [Chunk379649.J6.YEARS]: e => s.intl.formatToPlainString(s.t["9Yr3NT"], {
+        [Chunk379649.J6.YEARS]: e => s.intl.formatToPlainString(s.t["9Yr3NW"], {
           time: e
         })
       }

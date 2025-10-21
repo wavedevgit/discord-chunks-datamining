@@ -27,7 +27,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk701560 = require("./701560.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk806698 = require("./806698.js");
+  Chunk767248 = require("./767248.js");
 
 function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -78,11 +78,11 @@ let L = Object.freeze({
     [Chunk981631.apO.MOVE_UP]: "queued",
     [Chunk981631.apO.RESUME]: "paused"
   }),
-  x = () => [Chunk388032.intl.string(Chunk388032.t.r9wmKi), Chunk388032.intl.string(Chunk388032.t["6CpimZ"]), Chunk388032.intl.string(Chunk388032.t.ysbNDQ), Chunk388032.intl.string(Chunk388032.t.TLnXx8), Chunk388032.intl.string(Chunk388032.t.Qi8mnZ), Chunk388032.intl.string(Chunk388032.t.yvMu3d), Chunk388032.intl.string(Chunk388032.t.PnNUZ2), Chunk388032.intl.string(Chunk388032.t.hU2TEB), Chunk388032.intl.string(Chunk388032.t.YyY519), Chunk388032.intl.string(Chunk388032.t.PbHJb2)];
+  x = () => [Chunk388032.intl.string(Chunk388032.t.r9wmKn), Chunk388032.intl.string(Chunk388032.t["6CpimS"]), Chunk388032.intl.string(Chunk388032.t.ysbNDc), Chunk388032.intl.string(Chunk388032.t["TLnXx/"]), Chunk388032.intl.string(Chunk388032.t.Qi8mne), Chunk388032.intl.string(Chunk388032.t.yvMu3S), Chunk388032.intl.string(Chunk388032.t["PnNUZ/"]), Chunk388032.intl.string(Chunk388032.t.hU2TEJ), Chunk388032.intl.string(Chunk388032.t["YyY51/"]), Chunk388032.intl.string(Chunk388032.t.PbHJb3)];
 
 function M(e) {
   let t = v.en(e.sku);
-  return null != t ? A.intl.formatToPlainString(A.t.Aqe2ZG, {
+  return null != t ? A.intl.formatToPlainString(A.t.Aqe2ZC, {
     date: t
   }) : null
 }
@@ -96,24 +96,24 @@ class k extends(r = Chunk647438.Component) {
     switch ("uninstalling" !== e && (this._uninstallStringIndex = null), e) {
       case "install":
       case "unsupported_os":
-        return A.intl.string(A.t.nL0WvL);
+        return A.intl.string(A.t.nL0WvC);
       case "update":
-        return A.intl.string(A.t.tkhwp6);
+        return A.intl.string(A.t.tkhwp9);
       case "paused":
         return A.intl.string(A.t["6EKrh4"]);
       case "locate":
-        return A.intl.string(A.t["nIj+a2"]);
+        return A.intl.string(A.t["nIj+a0"]);
       case "uninstalling":
         let t = x();
         return null == this._uninstallStringIndex && (this._uninstallStringIndex = Math.floor(Math.random() * t.length)), t[this._uninstallStringIndex];
       case "queued":
-        return A.intl.string(A.t.TiJg5u);
+        return A.intl.string(A.t.TiJg5l);
       case "downloading":
-        return A.intl.string(A.t.Tdhepa);
+        return A.intl.string(A.t.Tdhepf);
       case "preorder_wait":
-        return A.intl.string(A.t.xiXyPT);
+        return A.intl.string(A.t.xiXyPc);
       case "add_to_library":
-        return A.intl.string(A.t.r3fwub);
+        return A.intl.string(A.t.r3fwuQ);
       default:
         throw Error("Unexpected button state")
     }
@@ -196,7 +196,7 @@ class k extends(r = Chunk647438.Component) {
       size: Chunk481060.Exd.Sizes.XSMALL,
       foregroundColor: require.paused ? Chunk692547.Z.unsafe_rawColors.PRIMARY_500.css : Chunk692547.Z.unsafe_rawColors.GREEN_360.css,
       backgroundColor: Chunk692547.Z.unsafe_rawColors.TRANSPARENT.css,
-      className: Chunk806698.progress
+      className: Chunk767248.progress
     })
   }
   renderActionButton(e, t) {
@@ -224,10 +224,10 @@ class k extends(r = Chunk647438.Component) {
     } = this.props, n = this.getButtonState();
     if ("play" === require) return this.renderPlayButton();
     if ("preorder_wait" === require) return this.renderDisabledButton(require, M(exports));
-    if ("unsupported_os" === require) return this.renderDisabledButton(require, Chunk388032.intl.formatToPlainString(Chunk388032.t.LBm0Aw, {
-      operatingSystem: Chunk388032.intl.string(Chunk388032.t["0/xHFB"])
+    if ("unsupported_os" === require) return this.renderDisabledButton(require, Chunk388032.intl.formatToPlainString(Chunk388032.t.LBm0A4, {
+      operatingSystem: Chunk388032.intl.string(Chunk388032.t["0/xHFO"])
     }));
-    if ("install" === require && module) return this.renderDisabledButton(require, Chunk388032.intl.string(Chunk388032.t.QUSQIC));
+    if ("install" === require && module) return this.renderDisabledButton(require, Chunk388032.intl.string(Chunk388032.t.QUSQIA));
     let r = this.onClickHandlers[require];
     return null == r ? this.renderDisabledButton(require) : this.renderActionButton(require, r)
   }

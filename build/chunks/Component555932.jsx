@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk436444 = require("./436444.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk581363 = require("./581363.js");
+  Chunk228103 = require("./228103.js");
 let h = 200,
   m = 250,
   g = 36,
@@ -108,7 +108,7 @@ function O(e) {
     "aria-valuenow": T,
     "aria-valuetext": t.premiumTier === f.Eu4.NONE ? _.intl.formatToPlainString(_.t.Ukqm9v, {
       numSubscriptionsApplied: T
-    }) : _.intl.formatToPlainString(_.t.qWunaW, {
+    }) : _.intl.formatToPlainString(_.t.qWunaU, {
       numSubscriptionsApplied: T,
       tierName: (0, c.nW)(t.premiumTier, {
         useLevels: false

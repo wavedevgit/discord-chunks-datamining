@@ -13,9 +13,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk622999 = require("./622999.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk804136 = require("./804136.js");
+  Chunk848747 = require("./848747.js");
 
-function d(t, e, i) {
+function g(t, e, i) {
   return e in t ? Object.defineProperty(t, e, {
     value: i,
     enumerable: true,
@@ -40,13 +40,13 @@ class m extends Chunk647438.Component {
     } = this.state;
     switch (module) {
       case 0:
-        return Chunk388032.intl.string(Chunk388032.t.N65Zra);
+        return Chunk388032.intl.string(Chunk388032.t.N65ZrW);
       case 2:
         return Chunk388032.intl.string(Chunk388032.t.DPgrRk);
       case 3:
-        return Chunk388032.intl.string(Chunk388032.t.xypuIi);
+        return Chunk388032.intl.string(Chunk388032.t.xypuIv);
       default:
-        return Chunk388032.intl.string(Chunk388032.t.uEoQdH)
+        return Chunk388032.intl.string(Chunk388032.t.uEoQdA)
     }
   }
   getImageStyle() {
@@ -55,11 +55,11 @@ class m extends Chunk647438.Component {
     } = this.state;
     switch (module) {
       case 0:
-        return Chunk804136.authenticationRequiredImage;
+        return Chunk848747.authenticationRequiredImage;
       case 2:
-        return Chunk804136.authenticationSuccessImage;
+        return Chunk848747.authenticationSuccessImage;
       default:
-        return Chunk804136.authenticationFailImage
+        return Chunk848747.authenticationFailImage
     }
   }
   getMessage() {
@@ -70,18 +70,18 @@ class m extends Chunk647438.Component {
     } = this.props;
     switch (module) {
       case 0:
-        return Chunk388032.intl.format(Chunk388032.t.RoxWER, {
+        return Chunk388032.intl.format(Chunk388032.t.RoxWET, {
           price: (0, Chunk937615.T4)(exports.amount, exports.currency),
           item: exports.description
         });
       case 2:
-        return Chunk388032.intl.string(Chunk388032.t.PZskfn);
+        return Chunk388032.intl.string(Chunk388032.t.PZskfs);
       case 3:
-        return Chunk388032.intl.format(Chunk388032.t["j0tI/f"], {
+        return Chunk388032.intl.format(Chunk388032.t["j0tI/b"], {
           item: exports.description
         });
       default:
-        return Chunk388032.intl.string(Chunk388032.t.BAr3rK)
+        return Chunk388032.intl.string(Chunk388032.t.BAr3rB)
     }
   }
   renderButtons() {
@@ -90,16 +90,16 @@ class m extends Chunk647438.Component {
       isAwaitingAuthentication: e
     } = this.state;
     return 0 === module ? [{
-      text: Chunk388032.intl.string(Chunk388032.t["2NeVoa"]),
+      text: Chunk388032.intl.string(Chunk388032.t["2NeVoY"]),
       onClick: this.cancelPayment,
       variant: "secondary"
     }, {
-      text: Chunk388032.intl.string(Chunk388032.t.VAqBoK),
+      text: Chunk388032.intl.string(Chunk388032.t.VAqBoE),
       onClick: this.handleAuthenticate,
       variant: "primary",
       loading: exports
     }] : [{
-      text: Chunk388032.intl.string(Chunk388032.t.cpT0Cg),
+      text: Chunk388032.intl.string(Chunk388032.t.cpT0Cq),
       onClick: this.close,
       variant: "primary"
     }]
@@ -123,10 +123,10 @@ class m extends Chunk647438.Component {
     })
   }
   constructor(...t) {
-    super(...t), d(this, "state", {
+    super(...t), g(this, "state", {
       step: 0,
       isAwaitingAuthentication: false
-    }), d(this, "close", async () => {
+    }), g(this, "close", async () => {
       let {
         step: t
       } = this.state, {
@@ -134,7 +134,7 @@ class m extends Chunk647438.Component {
         pendingPayment: i
       } = this.props;
       0 === t && await (0, c.UY)(i.id), e()
-    }), d(this, "cancelPayment", async () => {
+    }), g(this, "cancelPayment", async () => {
       let {
         pendingPayment: t
       } = this.props;
@@ -148,7 +148,7 @@ class m extends Chunk647438.Component {
       this.setState({
         step: 3
       })
-    }), d(this, "handleAuthenticate", async () => {
+    }), g(this, "handleAuthenticate", async () => {
       let {
         pendingPayment: t
       } = this.props;

@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 486311, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -18,9 +18,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk933104 = require("./933104.jsx"),
   Chunk332538 = require("./332538.jsx"),
   Chunk921944 = require("./921944.js"),
-  Chunk258640 = require("./258640.js"),
+  Chunk149829 = require("./149829.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk524707 = require("./524707.js");
+  Chunk969649 = require("./969649.js");
 
 function v(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -88,12 +88,12 @@ let j = {
     i.useEffect(() => {
       (null == x ? true : x.popout) == null && N(null)
     }, [null == x ? true : x.popout]);
-    let T = i.useCallback(e => {
+    let w = i.useCallback(e => {
         N(e)
       }, []),
-      w = i.useRef(null);
+      T = i.useRef(null);
     return (0, r.jsx)(s.yRy, {
-      targetElementRef: w,
+      targetElementRef: T,
       shouldShow: (null == x ? true : x.popout) != null && !(S || I),
       nudgeAlignIntoViewport: true,
       animationPosition: "bottom",
@@ -102,7 +102,7 @@ let j = {
       children: e => {
         var i, a;
         return (0, r.jsx)(u.m, (i = v({}, e), a = a = {
-          ref: w,
+          ref: T,
           className: y.container,
           id: "skill-trees-".concat(t),
           renderIcon: e => (0, r.jsx)(s.Ucv, {
@@ -117,7 +117,7 @@ let j = {
               className: y.lottie,
               sceneSegments: j,
               importData: () => n.e("50821").then(n.t.bind(n, 548421, 19)),
-              onScenePlay: T,
+              onScenePlay: w,
               rendererSettings: {
                 preserveAspectRatio: "xMidYMid slice"
               }
@@ -127,7 +127,7 @@ let j = {
             className: o()({
               [y.textImportant]: (null == x ? true : x.showUnread) === true
             }),
-            children: O.intl.string(_.default.yv3DJC)
+            children: O.intl.string(_.default.yv3DJJ)
           }),
           selected: l,
           onClick: C,

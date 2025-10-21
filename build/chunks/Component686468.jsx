@@ -1,4 +1,4 @@
-/** Chunk was on 63962 **/
+/** Chunk was on 91053 **/
 /** chunk id: 686468, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => I
@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk979339 = require("./979339.js"),
   Chunk643632 = require("./643632.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk780287 = require("./780287.js");
+  Chunk196979 = require("./196979.js");
 
 function v(e) {
   let {
@@ -41,8 +41,8 @@ function v(e) {
       width: 20
     }),
     color: o.Z.unsafe_rawColors.PRIMARY_700.css,
-    title: O.intl.string(O.t.jMLfp6),
-    description: O.intl.string(O.t["Vd/rER"]),
+    title: j.intl.string(j.t["jMLfp/"]),
+    description: j.intl.string(j.t["Vd/rEX"]),
     onClick: t,
     className: n
   })
@@ -67,15 +67,15 @@ function C(e) {
       color: "header-secondary",
       children: function(e) {
         if (0 === e.length) return "";
-        if (1 === e.length) return O.intl.formatToPlainString(O.t["5ULgaW"], {
+        if (1 === e.length) return j.intl.formatToPlainString(j.t["5ULgaQ"], {
           first: e[0].userNick
         });
-        if (2 === e.length) return O.intl.formatToPlainString(O.t.BHK0Oj, {
+        if (2 === e.length) return j.intl.formatToPlainString(j.t.BHK0Op, {
           first: e[0].userNick,
           second: e[1].userNick
         });
         let t = e.length - 2;
-        return O.intl.formatToPlainString(O.t.T3MT4u, {
+        return j.intl.formatToPlainString(j.t.T3MT4n, {
           first: e[0].userNick,
           second: e[1].userNick,
           numOthers: t
@@ -91,7 +91,7 @@ function I(e) {
     onContinueClick: n
   } = e, l = (0, s.e7)([b.Z], () => b.Z.can(y.yP, t), [t]), o = t.guild_id, {
     canCreateGuildEvent: d
-  } = (0, g.XJ)(t), u = (0, j.Z)(t.id), _ = i.useRef(null);
+  } = (0, g.XJ)(t), u = (0, O.Z)(t.id), _ = i.useRef(null);
   return (0, r.jsxs)("div", {
     className: x.container,
     ref: _,
@@ -104,12 +104,12 @@ function I(e) {
         children: [(0, r.jsx)(c.Heading, {
           className: x.__invalid_title,
           variant: "heading-xxl/normal",
-          children: O.intl.string(O.t.QGnDLi)
+          children: j.intl.string(j.t.QGnDLs)
         }), (0, r.jsx)(c.Text, {
           tag: "div",
           className: x.subtitle,
           variant: "heading-lg/normal",
-          children: O.intl.string(O.t.djfK39)
+          children: j.intl.string(j.t.djfK36)
         })]
       }), u ? null : (0, r.jsx)(h.Z, {
         channelId: t.id

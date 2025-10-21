@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk489863 = require("./489863.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk267043 = require("./267043.js");
+  Chunk990199 = require("./990199.js");
 let d = 5;
 
 function f(e) {
@@ -43,7 +43,7 @@ function f(e) {
     children: [(0, r.jsx)(a.X6q, {
       variant: "heading-deprecated-12/semibold",
       className: u.sectionLabel,
-      children: c.intl.string(c.t["8qKd+P"])
+      children: c.intl.string(c.t["8qKd+J"])
     }), null != p && "" !== p ? (0, r.jsx)(o.x, {
       variant: "text-xs/normal",
       color: "text-danger",
@@ -52,7 +52,7 @@ function f(e) {
       wrapperClassName: u.select,
       maxVisibleItems: d,
       onChange: _,
-      placeholder: c.intl.string(c.t["Re/64e"]),
+      placeholder: c.intl.string(c.t["Re/64R"]),
       options: E,
       value: f,
       renderOptionLabel: e => (0, r.jsx)(o.x, {
@@ -67,7 +67,7 @@ function f(e) {
       variant: "text-xs/normal",
       color: "header-secondary",
       className: u.label,
-      children: c.intl.string(c.t.kQXMfH)
+      children: c.intl.string(c.t.kQXMfN)
     })]
   })
 }

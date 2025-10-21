@@ -1,4 +1,4 @@
-/** Chunk was on 99063 **/
+/** Chunk was on 86736 **/
 /** chunk id: 37607, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk466070 = require("./466070.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk539065 = require("./539065.js");
+  Chunk588993 = require("./588993.js");
 
 function x(e) {
   let {
@@ -64,7 +64,7 @@ function j(e) {
   }, [n]), (0, i.jsxs)("div", {
     children: [(0, i.jsx)(o.Text, {
       variant: "text-sm/normal",
-      children: f.intl.format(f.t["9gsSLi"], {
+      children: f.intl.format(f.t["9gsSLu"], {
         helpdeskArticle: m.Z.getArticleURL(g.BhN.LINKED_LOBBIES)
       })
     }), (0, i.jsx)(o.izJ, {

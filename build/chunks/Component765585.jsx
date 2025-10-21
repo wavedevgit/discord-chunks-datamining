@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 765585, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk279745 = require("./279745.jsx"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk399559 = require("./399559.js");
+  Chunk882482 = require("./882482.js");
 let b = Chunk647438.forwardRef(function(e, t) {
   let {
     body: n,
@@ -35,8 +35,8 @@ let b = Chunk647438.forwardRef(function(e, t) {
     showGIFTag: P = false,
     dismissibleContent: N,
     position: Z = "top",
-    align: T = "center",
-    art: w,
+    align: w = "center",
+    art: T,
     isPremiumEarlyAccess: A = false,
     maxWidth: R = 280,
     hideDismissButton: D = false,
@@ -80,7 +80,7 @@ let b = Chunk647438.forwardRef(function(e, t) {
         className: o()(b, E ? m.artInline : m.artAbsolute),
         children: [P && (0, r.jsx)(f.Z, {
           className: m.gifTag
-        }), w]
+        }), T]
       }), (0, r.jsxs)("div", {
         className: m.body,
         children: [(0, r.jsxs)(s.Heading, {
@@ -101,7 +101,7 @@ let b = Chunk647438.forwardRef(function(e, t) {
               className: m.earlyAccessIcon
             }), (0, r.jsx)("span", {
               className: m.earlyAccessText,
-              children: g.intl.string(g.t.phHyIS)
+              children: g.intl.string(g.t.phHyIY)
             })]
           }) : null, l]
         }), null == n ? null : "string" == typeof n ? (0, r.jsx)(s.Text, {
@@ -120,7 +120,7 @@ let b = Chunk647438.forwardRef(function(e, t) {
               null == x || x(e), j(e), W(h.L.PRIMARY)
             },
             color: null != U ? U : S || A ? a.zx.Colors.BRAND_INVERTED : a.zx.Colors.WHITE,
-            children: null != y ? y : g.intl.string(g.t.IHf1RE)
+            children: null != y ? y : g.intl.string(g.t.IHf1RN)
           }), !D && (0, r.jsx)(a.zx, {
             className: m.button,
             size: B,
@@ -129,7 +129,7 @@ let b = Chunk647438.forwardRef(function(e, t) {
             },
             color: S || A ? a.zx.Colors.WHITE : a.zx.Colors.BRAND,
             look: S || A ? a.zx.Looks.LINK : a.zx.Looks.FILLED,
-            children: null != v ? v : g.intl.string(g.t.om7Ovr)
+            children: null != v ? v : g.intl.string(g.t.om7Ovn)
           })]
         }) : (0, r.jsx)(a.zx, {
           className: m.button,
@@ -138,14 +138,14 @@ let b = Chunk647438.forwardRef(function(e, t) {
             null == x || x(e), W(h.L.PRIMARY)
           },
           color: a.zx.Colors.WHITE,
-          children: g.intl.string(g.t.HU2IR0)
+          children: g.intl.string(g.t.HU2IR5)
         })
       }), (0, r.jsx)("div", {
         className: o()(m.pointer, L, {
           [m.bottomPointer]: "top" === Z,
-          [m.centerLeftPointer]: "right" === Z && "center" === T,
-          [m.topLeftPointer]: "right" === Z && "top" === T,
-          [m.bottomLeftPointer]: "right" === Z && "bottom" === T
+          [m.centerLeftPointer]: "right" === Z && "center" === w,
+          [m.topLeftPointer]: "right" === Z && "top" === w,
+          [m.bottomLeftPointer]: "right" === Z && "bottom" === w
         })
       })]
     })

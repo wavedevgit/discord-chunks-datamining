@@ -21,8 +21,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk933557 = require("./933557.js"),
   Chunk287746 = require("./287746.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk952713 = require("./952713.js"),
-  Chunk998603 = require("./998603.js");
+  Chunk10832 = require("./10832.js"),
+  Chunk419246 = require("./419246.js");
 
 function I(e) {
   let {
@@ -41,7 +41,7 @@ function I(e) {
   if (null == t || !t.isDM()) return null;
   let Z = [(0, r.jsx)(s.ZP.Icon, {
     icon: a.Dio,
-    tooltip: O.intl.string(O.t.cpT0Cg),
+    tooltip: O.intl.string(O.t.cpT0Cq),
     onClick: () => m.Z.closeChannelSidebar(n)
   }, "close")];
   return (0, r.jsxs)(r.Fragment, {
@@ -57,13 +57,13 @@ function I(e) {
       className: y.hamBanner,
       children: [(0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
-        children: O.intl.string(O.t.XVOKgo)
+        children: O.intl.string(O.t.XVOKgj)
       }), (0, r.jsx)("div", {
         className: y.hamBannerButton,
         children: (0, r.jsx)(a.Button, {
           size: "sm",
           onClick: () => A(t, P),
-          text: O.intl.string(O.t.koqL3d)
+          text: O.intl.string(O.t.koqL3Z)
         })
       })]
     }), (0, r.jsx)("div", {

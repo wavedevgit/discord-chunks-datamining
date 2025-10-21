@@ -39,7 +39,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk354459 = require("./354459.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk825048 = require("./825048.js");
+  Chunk435413 = require("./435413.js");
 
 function D(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -185,7 +185,7 @@ function k(e) {
               children: ei ? (0, v.AV)({
                 quest: k,
                 taskDetails: eA
-              }) : q.intl.formatToPlainString(q.t.EQa7oq, {
+              }) : q.intl.formatToPlainString(q.t.EQa7os, {
                 questName: k.config.messages.questName
               })
             }), (0, r.jsx)(P.r, {
@@ -196,7 +196,7 @@ function k(e) {
               shouldShowDisclosure: (null == (m = k.userStatus) ? true : m.enrolledAt) == null,
               children: e => (0, r.jsx)(u.P3F, V(D({}, e), {
                 className: M.submenuWrapper,
-                "aria-label": q.intl.string(q.t.DEoVWV),
+                "aria-label": q.intl.string(q.t.DEoVWZ),
                 children: (0, r.jsx)(u.xhG, {
                   size: "md",
                   color: "currentColor",
@@ -207,9 +207,9 @@ function k(e) {
           }), (0, r.jsx)(u.Text, {
             color: "header-secondary",
             variant: "text-xs/medium",
-            children: eS ? q.intl.formatToPlainString(q.t.APddvL, {
+            children: eS ? q.intl.formatToPlainString(q.t.APddvF, {
               expirationDate: ed
-            }) : q.intl.formatToPlainString(q.t["pX+fmp"], {
+            }) : q.intl.formatToPlainString(q.t["pX+fmn"], {
               expirationDate: ec
             })
           })]
@@ -246,13 +246,13 @@ function k(e) {
           variant: "primary",
           size: "sm",
           fullWidth: true,
-          text: q.intl.string(q.t.VN1Ajo),
+          text: q.intl.string(q.t.VN1Ajl),
           onClick: ef
         }), eS && (0, r.jsx)(u.Button, {
           variant: "primary",
           size: "sm",
           fullWidth: true,
-          text: q.intl.string(q.t.cfY4PD),
+          text: q.intl.string(q.t.cfY4PE),
           onClick: eb
         })]
       })]

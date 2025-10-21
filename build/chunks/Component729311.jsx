@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 729311, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -31,8 +31,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk353890 = require("./353890.jsx"),
   Chunk716130 = require("./716130.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk290274 = require("./290274.js"),
-  Chunk602009 = require("./602009.js");
+  Chunk868893 = require("./868893.js"),
+  Chunk430864 = require("./430864.js");
 
 function w(e) {
   let {
@@ -45,13 +45,13 @@ function w(e) {
     children: [(0, r.jsx)(a.Text, {
       variant: "text-md/medium",
       color: "header-primary",
-      children: S.intl.string(S.t.NN7rDw)
+      children: S.intl.string(S.t.NN7rD3)
     }), (0, r.jsxs)("div", {
       className: T.recsSubheader,
       children: [(0, r.jsx)(a.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
-        children: S.intl.string(S.t["3Uuql5"])
+        children: S.intl.string(S.t["3Uuql+"])
       }), (0, r.jsxs)(a.P3F, {
         className: T.dismissAll,
         onClick: () => C(true),
@@ -63,7 +63,7 @@ function w(e) {
           className: T.dismissAllText,
           variant: "text-xs/medium",
           color: "text-brand",
-          children: S.intl.string(S.t.ZC3PJy)
+          children: S.intl.string(S.t.ZC3PJ2)
         })]
       })]
     }), (0, r.jsx)("div", {
@@ -101,12 +101,12 @@ function w(e) {
           }), (0, c.s)(t.id, e.id) ? (0, r.jsx)(a.Button, {
             size: "sm",
             variant: "primary",
-            text: S.intl.string(S.t.OYkgVl),
+            text: S.intl.string(S.t.OYkgVk),
             onClick: () => (0, j.pt)(e.id)
           }) : (0, r.jsx)(a.Button, {
             size: "sm",
             variant: "secondary",
-            text: S.intl.string(S.t.zA9d1N),
+            text: S.intl.string(S.t.zA9d1J),
             icon: a.mBM,
             iconPosition: "start",
             onClick: () => {
@@ -195,11 +195,11 @@ function Z(e) {
       }), (0, r.jsx)(a.Heading, {
         className: T.header,
         variant: "heading-lg/extrabold",
-        children: S.intl.string(S.t["4GSygo"])
+        children: S.intl.string(S.t["4GSygh"])
       }), (0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
-        children: S.intl.string(S.t.Kq7FAQ)
+        children: S.intl.string(S.t.Kq7FAS)
       }), (0, r.jsx)(y.Wu, {
         className: T.advancedModeToggle,
         guildId: n.id
@@ -219,12 +219,12 @@ function Z(e) {
         }), (0, r.jsx)(a.Heading, {
           className: T.prejoinHeader,
           variant: "heading-lg/extrabold",
-          children: S.intl.string(S.t.g2Rnpa)
+          children: S.intl.string(S.t.g2RnpV)
         }), (0, r.jsx)(a.Text, {
           className: T.prejoinSubHeader,
           variant: "text-sm/normal",
           color: "header-secondary",
-          children: S.intl.string(S.t.bLDQ1d)
+          children: S.intl.string(S.t.bLDQ1Q)
         }), (0, r.jsx)("div", {
           ref: g,
           className: T.advancedModeQuestions,
@@ -261,6 +261,6 @@ function R() {
     },
     onReset: Chunk743475.BG,
     submitting: exports,
-    onSaveText: Chunk388032.intl.string(Chunk388032.t.R3BPHx)
+    onSaveText: Chunk388032.intl.string(Chunk388032.t["R3BPH+"])
   })
 }

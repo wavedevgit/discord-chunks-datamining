@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk514020 = require("./514020.js"),
   Chunk529840 = require("./529840.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk286026 = require("./286026.js"),
+  Chunk107785 = require("./107785.js"),
   Chunk724531 = require("./724531.js"),
   Chunk99713 = require("./99713.js"),
   Chunk334202 = require("./334202.js"),
@@ -46,7 +46,7 @@ function O(e) {
         className: b.titleImage
       }), (0, a.jsx)(p.Heading, {
         variant: "heading-xl/bold",
-        children: S.intl.string(S.t.Lm2nFR)
+        children: S.intl.string(S.t.Lm2nFc)
       })]
     }), (0, a.jsx)(p.Text, {
       className: b.description,
@@ -60,23 +60,23 @@ function O(e) {
 function U() {
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsx)("div", {
-      className: Chunk286026.title,
+      className: Chunk107785.title,
       children: (0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-xl/bold",
-        children: Chunk388032.intl.string(Chunk388032.t["PFp+aG"])
+        children: Chunk388032.intl.string(Chunk388032.t["PFp+aJ"])
       })
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
-      className: Chunk286026.description,
+      className: Chunk107785.description,
       variant: "text-md/medium",
       color: "header-secondary",
-      children: Chunk388032.intl.string(Chunk388032.t.eBIGBw)
+      children: Chunk388032.intl.string(Chunk388032.t.eBIGB4)
     })]
   })
 }
 
 function E() {
   return (0, Chunk951288.jsx)("div", {
-    className: Chunk286026.erroredContent,
+    className: Chunk107785.erroredContent,
     children: (0, Chunk951288.jsx)(Chunk481060.Eep, {
       src: Chunk334202,
       width: 225,
@@ -97,13 +97,13 @@ function R(e) {
         className: b.title,
         children: (0, a.jsx)(p.Heading, {
           variant: "heading-xl/bold",
-          children: S.intl.string(S.t.a9HOKi)
+          children: S.intl.string(S.t.a9HOKg)
         })
       }), (0, a.jsx)(p.Text, {
         className: b.description,
         variant: "text-md/medium",
         color: "header-secondary",
-        children: S.intl.string(S.t.JjjeZW)
+        children: S.intl.string(S.t.JjjeZb)
       })]
     }), (0, a.jsx)("div", {
       className: b.erroredContent,
@@ -118,7 +118,7 @@ function R(e) {
         "data-migration-pending": true,
         className: b.submit,
         onClick: () => t(),
-        children: S.intl.string(S.t.wpSqAQ)
+        children: S.intl.string(S.t.wpSqAW)
       })
     })]
   })
@@ -147,13 +147,13 @@ function B(e) {
           className: b.titleImage
         }), (0, a.jsx)(p.Heading, {
           variant: "heading-xl/bold",
-          children: S.intl.string(S.t.SY9tyM)
+          children: S.intl.string(S.t.SY9tyI)
         })]
       }), (0, a.jsx)(p.Text, {
         className: b.description,
         variant: "text-md/medium",
         color: "header-secondary",
-        children: S.intl.string(S.t.mPmPrq)
+        children: S.intl.string(S.t.mPmPri)
       })]
     }), (0, a.jsx)("div", {
       className: b.list,
@@ -176,7 +176,7 @@ function B(e) {
         onClick: async () => {
           f(true), await t([...o.values()]), f(false)
         },
-        children: S.intl.string(S.t.ItpQxs)
+        children: S.intl.string(S.t.ItpQxk)
       })
     })]
   })
@@ -213,7 +213,7 @@ let k = function(e) {
     selectedUsers: _
   }), P = i.useMemo(() => [..._.keys()].filter(e => !A.has(e)), [_, A]);
   o()(null != s, "Referrals remaining should not be null");
-  let G = (0, C.O)(e => {
+  let I = (0, C.O)(e => {
     e && !k && F()
   });
   if (M) return (0, a.jsx)(R, {
@@ -222,18 +222,18 @@ let k = function(e) {
   if (0 === s) return (0, a.jsx)(B, {
     onShare: r
   });
-  let I = m.length > 0 && 0 === Z.length;
+  let G = m.length > 0 && 0 === Z.length;
   return (0, a.jsxs)("div", {
     children: [(0, a.jsxs)("div", {
       className: n()(b.header, b.headerSeparator),
-      children: [I ? (0, a.jsx)(U, {}) : (0, a.jsx)(O, {
+      children: [G ? (0, a.jsx)(U, {}) : (0, a.jsx)(O, {
         numOfSelectedUsers: P.length,
         anySelected: _.size > 0
       }), (0, a.jsx)(f.Z, {
         className: b.searchbar,
         size: f.Z.Sizes.MEDIUM,
         tags: [..._.values()].map(e => j.ZP.getName(e)),
-        placeholder: S.intl.string(S.t.Kd5RaG),
+        placeholder: S.intl.string(S.t.Kd5RaI),
         query: l,
         onRemoveTag: e => {
           y(t => {
@@ -244,7 +244,7 @@ let k = function(e) {
         },
         onQueryChange: h
       })]
-    }), I ? (0, a.jsx)(E, {}) : (0, a.jsxs)(d.w0Z, {
+    }), G ? (0, a.jsx)(E, {}) : (0, a.jsxs)(d.w0Z, {
       className: b.list,
       children: [Z.map(e => (0, a.jsx)(v.Z, {
         disabled: [..._.values()].filter(e => !A.has(e.id)).length >= s && !_.has(e.id) && !A.has(e.id),
@@ -257,19 +257,19 @@ let k = function(e) {
           })
         }
       }, e.id)), k && (0, a.jsx)(p.$jN, {}), (0, a.jsx)("div", {
-        ref: G
+        ref: I
       })]
     }), (0, a.jsx)("div", {
       className: n()(b.footer, b.footerSeparator),
       children: (0, a.jsx)(x.zx, {
         "data-migration-pending": true,
         className: b.submit,
-        disabled: 0 === _.size && !I || w,
+        disabled: 0 === _.size && !G || w,
         onClick: async () => {
-          if (I) return void t();
+          if (G) return void t();
           N(true), await r([..._.values()]), N(false)
         },
-        children: I ? S.intl.string(S.t.wpSqAQ) : S.intl.string(S.t.ItpQxs)
+        children: G ? S.intl.string(S.t.wpSqAW) : S.intl.string(S.t.ItpQxk)
       })
     })]
   })

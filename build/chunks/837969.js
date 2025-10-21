@@ -80,26 +80,26 @@ function E(e) {
         })
       }));
       r.useEffect(() => () => D.clean(), [D]);
-      let L = r.useCallback((e, t) => {
+      let U = r.useCallback((e, t) => {
           S.current && _(e, t)
         }, [_]),
-        [U, M] = r.useState(true);
+        [L, M] = r.useState(true);
       r.useEffect(() => {
-        if (U && !g) return void M(false);
-        L(h(t, E), E)
+        if (L && !g) return void M(false);
+        U(h(t, E), E)
       }, [E]);
-      let x = r.useCallback(function() {
+      let b = r.useCallback(function() {
           let e = !(arguments.length > 0) || true === arguments[0] || arguments[0],
             n = null != A ? A(E) : E;
           n !== E && T({
             type: l.G.SET_FOCUSED_INDEX,
             index: n
-          }), e && L(h(t, n), n)
-        }, [h, E, A, T, t, L]),
-        b = r.useCallback(e => {
+          }), e && U(h(t, n), n)
+        }, [h, E, A, T, t, U]),
+        x = r.useCallback(e => {
           if (!S.current) return;
           if (a.includes(e.key) && !(e.shiftKey || e.altKey || e.metaKey || e.ctrlKey) && e.currentTarget === e.target) {
-            e.preventDefault(), e.stopPropagation(), x();
+            e.preventDefault(), e.stopPropagation(), b();
             return
           }
           let n = function(e) {
@@ -134,19 +134,19 @@ function E(e) {
                 }), null != d) return void d(E);
               null == r || r.click()
           }
-        }, [h, t, T, E, x, d]),
+        }, [h, t, T, E, b, d]),
         v = r.useCallback(() => {
           p || C(true)
         }, [p]),
         P = r.useCallback(() => {
-          p || (I ? L(h(t, E), E) : x(true))
-        }, [h, t, L, I, p, E, x]),
+          p || (I ? U(h(t, E), E) : b(true))
+        }, [h, t, U, I, p, E, b]),
         j = r.useCallback(e => {
           e.currentTarget.contains(e.relatedTarget) || requestAnimationFrame(() => {
-            if (null == u(o(h, t, E))) return void L(t);
+            if (null == u(o(h, t, E))) return void U(t);
             C(false)
           })
-        }, [h, t, E, L]),
+        }, [h, t, E, U]),
         y = r.useRef(null);
       r.useLayoutEffect(() => {
         let e = y.current;
@@ -158,9 +158,9 @@ function E(e) {
           role: "list",
           tabIndex: p && I ? false : 0,
           id: t,
-          onKeyDown: b,
+          onKeyDown: x,
           ref: y
-        }), [t, p, b, I]),
+        }), [t, p, x, I]),
         k = r.useCallback(e => {
           let {
             index: n

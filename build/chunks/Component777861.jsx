@@ -11,7 +11,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx");
 
 function o(e) {
-  return null == e || null == e.end_time ? null : a.intl.formatToPlainString(a.t.j7h4AA, {
+  return null == e || null == e.end_time ? null : a.intl.formatToPlainString(a.t.j7h4AJ, {
     endTime: new Date(e.end_time).toLocaleString(a.intl.currentLocale, {
       month: "numeric",
       day: "numeric",

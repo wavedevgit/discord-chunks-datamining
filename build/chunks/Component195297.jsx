@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk486324 = require("./486324.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk135592 = require("./135592.js");
+  Chunk382775 = require("./382775.js");
 
 function P(e) {
   let {
@@ -46,7 +46,7 @@ function P(e) {
     r(), (0, c.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("59732"), n.e("84725")]).then(n.bind(n, 712451));
+      } = await Promise.all([n.e("59732"), n.e("42529")]).then(n.bind(n, 712451));
       return t => (0, i.jsx)(e, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -78,7 +78,7 @@ function P(e) {
     })
   }
   a.useEffect(() => {
-    _.default.track(m.rMx.OPEN_MODAL, {
+    g.default.track(m.rMx.OPEN_MODAL, {
       type: m.jXE.GIF_PICKER_AVATAR_OR_BANNER_MODAL,
       location_stack: I,
       location: {
@@ -94,7 +94,7 @@ function P(e) {
       onClose: r,
       transitionState: t,
       children: [(0, i.jsx)(l.xBx, {
-        title: h.intl.string(h.t["xsC+//"])
+        title: h.intl.string(h.t["xsC+/y"])
       }), v && !O && (0, i.jsx)("div", {
         className: A.upsellHeaderContainer,
         children: (0, i.jsx)(p.Z, {
@@ -114,7 +114,7 @@ function P(e) {
           hideFavorites: true
         }), j && (0, i.jsx)(c.$jN, {
           className: A.spinner
-        }), v && O && (0, i.jsx)(g.Z, {
+        }), v && O && (0, i.jsx)(_.Z, {
           uploadType: b,
           analyticsSource: C,
           showUpsell: true,

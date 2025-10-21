@@ -90,15 +90,15 @@ class I extends Chunk317770.Z {
       }, {
         name: b.tS.MUTE,
         active: t,
-        tooltip: t ? O.intl.string(O.t.YqAjX1) : O.intl.string(O.t["w4m94+"])
+        tooltip: t ? O.intl.string(O.t.YqAjXy) : O.intl.string(O.t.w4m945)
       }, {
         name: b.tS.DEAFEN,
         active: n,
-        tooltip: n ? O.intl.string(O.t["2US87+"]) : O.intl.string(O.t.wjcRFR)
+        tooltip: n ? O.intl.string(O.t["2US872"]) : O.intl.string(O.t.wjcRFX)
       }, {
         name: b.tS.DISCONNECT,
         active: true,
-        tooltip: O.intl.string(O.t["6vrfgo"])
+        tooltip: O.intl.string(O.t["6vrfgt"])
       }])
     }, 100))
   }

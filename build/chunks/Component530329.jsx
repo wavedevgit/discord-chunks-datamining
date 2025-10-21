@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk486324 = require("./486324.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk797192 = require("./797192.js");
+  Chunk463339 = require("./463339.js");
 
 function p(e) {
   var {
@@ -43,11 +43,11 @@ function p(e) {
     m = l.useMemo(() => {
       switch (t) {
         case u.pC.AVATAR:
-          return d.intl.format(d.t["pvw/HB"], {
+          return d.intl.format(d.t["pvw/HH"], {
             onClick: g
           });
         case u.pC.BANNER:
-          return d.intl.format(d.t.aCrz1d, {
+          return d.intl.format(d.t.aCrz1e, {
             onClick: g
           });
         default:
@@ -73,7 +73,7 @@ function p(e) {
     return e
   }({
     text: m,
-    button: d.intl.string(d.t.BmJkbW),
+    button: d.intl.string(d.t.BmJkbd),
     buttonAnalyticsObject: {
       section: c.jXE.USER_PROFILE
     },

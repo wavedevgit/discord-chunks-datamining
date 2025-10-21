@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk639119 = require("./639119.js"),
   Chunk533246 = require("./533246.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk639762 = require("./639762.js");
+  Chunk788963 = require("./788963.js");
 let g = 6e4;
 
 function E(e) {
@@ -33,9 +33,9 @@ function E(e) {
   } = e, p = i.useMemo(() => Date.parse(n), [n]), E = (0, c.Z)(p, g);
   return Object.values(E).every(e => 0 === e) ? null : (0, r.jsx)(s.u, {
     text: null != f ? f : (0, u.QX)(E, {
-      days: h.t.qVGNkZ,
-      hours: h.t.wyg9a2,
-      minutes: h.t.IzmIlZ
+      days: h.t.qVGNkU,
+      hours: h.t.wyg9a9,
+      minutes: h.t.IzmIlV
     }),
     position: null != _ ? _ : "top",
     children: (0, r.jsxs)("div", {
@@ -81,7 +81,7 @@ function y(e) {
     isTabSelected: t,
     userDiscount: n,
     includesAmountOff: i
-  } = e, a = h.intl.formatToPlainString(h.t.iiLbvr, {
+  } = e, a = h.intl.formatToPlainString(h.t.iiLbvu, {
     percent: n.discount.amount
   }), o = (0, p.h$)(n), {
     hasExperimentalTooltip: s

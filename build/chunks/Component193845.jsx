@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk135899 = require("./135899.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk767875 = require("./767875.js");
+  Chunk56726 = require("./56726.js");
 
 function _(e) {
   let {
@@ -45,16 +45,16 @@ function _(e) {
       children: [(0, n.jsx)(l.Heading, {
         variant: "heading-lg/extrabold",
         color: "header-primary",
-        children: h.intl.string(h.t.MatO7O)
+        children: h.intl.string(h.t.MatO7M)
       }), (0, n.jsx)(l.Text, {
         variant: "text-md/normal",
         color: "header-primary",
-        children: h.intl.string(h.t.VyPIen)
+        children: h.intl.string(h.t.VyPIeu)
       })]
     })]
   })
 }
-let f = e => e.toString() === p.Plq.MENTION_EVERYONE.toString() ? h.intl.string(h.t.yCpsQ0) : (0, o.wt)(e);
+let f = e => e.toString() === p.Plq.MENTION_EVERYONE.toString() ? h.intl.string(h.t.yCpsQw) : (0, o.wt)(e);
 
 function g(e) {
   let {
@@ -66,7 +66,7 @@ function g(e) {
       className: j.tableHeader,
       variant: "text-xs/semibold",
       color: "text-muted",
-      children: h.intl.string(h.t["0WZKIy"])
+      children: h.intl.string(h.t["0WZKI4"])
     }), (0, n.jsx)("div", {
       className: j.permissionsTable,
       children: t.map((e, t) => (0, n.jsxs)("div", {
@@ -93,7 +93,7 @@ function v(e) {
       className: j.tableHeader,
       variant: "text-xs/semibold",
       color: "text-muted",
-      children: h.intl.string(h.t.Yo5qlp)
+      children: h.intl.string(h.t.Yo5qlq)
     }), (0, n.jsx)("div", {
       className: j.permissionsTable,
       children: t.map((e, t) => (0, n.jsxs)("div", {
@@ -138,7 +138,7 @@ function O(e) {
     className: j.footer,
     children: [(0, n.jsx)(l.Button, {
       variant: "primary",
-      text: h.intl.string(h.t.iOSdAQ),
+      text: h.intl.string(h.t.iOSdAW),
       onClick: t
     }), (0, n.jsx)(a.zx, {
       look: a.zx.Looks.LINK,

@@ -57,8 +57,8 @@ let l = e => {
   },
   c = e => {
     let t = a.intl.string(a.t["7v0T9P"]),
-      n = a.intl.string(a.t.wR5wOj),
-      r = a.intl.string(a.t.x5CoXV);
+      n = a.intl.string(a.t.wR5wOo),
+      r = a.intl.string(a.t.x5CoXR);
     if (null != e.bundledProducts) {
       var i, o, s;
       e.bundledProducts.length > 0 && (t = null == (i = e.bundledProducts[0]) ? true : i.name), e.bundledProducts.length > 1 && (n = null == (o = e.bundledProducts[1]) ? true : o.name), e.bundledProducts.length > 2 && (r = null == (s = e.bundledProducts[2]) ? true : s.name)

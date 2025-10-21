@@ -12,7 +12,7 @@ var Chunk793030 = require("./793030.js"),
   Chunk981631 = require("./981631.js"),
   Chunk332325 = require("./332325.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk440039 = require("./440039.js");
+  Chunk688364 = require("./688364.js");
 
 function m(t) {
   let {
@@ -21,8 +21,8 @@ function m(t) {
   } = t;
   return (0, i.jsx)(n.Modal, {
     transitionState: e,
-    title: d.intl.string(d.t.pWLGnJ),
-    subtitle: d.intl.string(d.t.WKxo8v),
+    title: d.intl.string(d.t.pWLGnF),
+    subtitle: d.intl.string(d.t.WKxo8n),
     actions: [],
     onClose: r,
     children: (0, i.jsx)(u, {
@@ -39,25 +39,25 @@ function u(t) {
       size: "refresh_sm",
       color: "currentColor"
     }),
-    text: d.intl.string(d.t.vXBrdn)
+    text: d.intl.string(d.t.vXBrdg)
   }, {
     icon: (0, i.jsx)(s.kBi, {
       size: "refresh_sm",
       color: "currentColor"
     }),
-    text: d.intl.string(d.t["i7/QHB"])
+    text: d.intl.string(d.t["i7/QHN"])
   }, {
     icon: (0, i.jsx)(s.lMe, {
       size: "refresh_sm",
       color: "currentColor"
     }),
-    text: d.intl.string(d.t.ZmBfKC)
+    text: d.intl.string(d.t.ZmBfKJ)
   }, {
     icon: (0, i.jsx)(s.ewm, {
       size: "refresh_sm",
       color: "currentColor"
     }),
-    text: d.intl.format(d.t.wBlJCg, {
+    text: d.intl.format(d.t.wBlJCr, {
       recentActivityURL: l.Z.getArticleURL(c.BhN.MEMBER_LIST_ACTIVITY_FEED),
       handleActivityPrivacyClick: () => {
         e(), (0, o.Z)(a.Z.ACTIVITY_PRIVACY)
@@ -68,7 +68,7 @@ function u(t) {
     className: x.notes,
     children: [(0, i.jsx)(s.Text, {
       variant: "text-sm/semibold",
-      children: d.intl.string(d.t.YjqBbm)
+      children: d.intl.string(d.t.YjqBbg)
     }), r.map((t, e) => {
       let {
         icon: r,

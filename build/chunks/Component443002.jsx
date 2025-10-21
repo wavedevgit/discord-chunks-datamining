@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk383881 = require("./383881.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk436950 = require("./436950.js");
+  Chunk517872 = require("./517872.js");
 let T = function(e) {
   let {
     analyticsLocation: t,
@@ -94,7 +94,7 @@ let T = function(e) {
             className: I.heading,
             color: "always-white",
             variant: "display-lg",
-            children: v.intl.string(v.t.N4sqzM)
+            children: v.intl.string(v.t.N4sqzL)
           }), (0, r.jsx)(p.Z, {
             guild: n,
             closeLayer: x,

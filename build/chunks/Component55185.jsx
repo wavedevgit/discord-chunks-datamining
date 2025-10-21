@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 55185, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   I: () => C,
@@ -13,9 +13,9 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk695346 = require("./695346.js"),
   Chunk885110 = require("./885110.js"),
   Chunk223730 = require("./223730.jsx"),
-  Chunk893867 = require("./893867.js"),
+  Chunk951917 = require("./951917.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk515438 = require("./515438.js"),
+  Chunk87587 = require("./87587.js"),
   Chunk354810 = require("./354810.js");
 
 function b(e) {
@@ -28,7 +28,7 @@ function b(e) {
     children: (0, i.jsx)(s.Button, {
       variant: "primary",
       size: "sm",
-      text: h.intl.string(f.default.Poezn5),
+      text: h.intl.string(f.default.Poezn1),
       onClick: () => {
         t(), (0, c.Z)({
           nextStatus: s.Skl.ONLINE
@@ -51,7 +51,7 @@ function _(e) {
       children: [(0, i.jsx)(s.Text, {
         variant: "text-sm/medium",
         color: "header-primary",
-        children: h.intl.string(f.default.WhdCGB)
+        children: h.intl.string(f.default.WhdCGP)
       }), n && (0, i.jsxs)("div", {
         className: g.toggleContainerOnlineRow,
         children: [(0, i.jsx)(s.qbd, {
@@ -60,7 +60,7 @@ function _(e) {
         }), (0, i.jsx)(s.Text, {
           variant: "text-xs/normal",
           color: "text-secondary",
-          children: r === s.Skl.INVISIBLE ? h.intl.string(f.default.a3AofX) : h.intl.string(h.t.WbGtnJ)
+          children: r === s.Skl.INVISIBLE ? h.intl.string(f.default.a3AofS) : h.intl.string(h.t.WbGtnH)
         })]
       })]
     }), (0, i.jsx)(s.rsf, {
@@ -98,7 +98,7 @@ function y(e) {
     }), (0, i.jsx)(s.Text, {
       variant: "text-sm/normal",
       color: "text-secondary",
-      children: h.intl.string(f.default["7cfFoa"])
+      children: h.intl.string(f.default["7cfFob"])
     }), (0, i.jsx)(s.izJ, {
       className: g.divider
     }), (0, i.jsx)(p.yj, {
@@ -122,7 +122,7 @@ function v(e) {
         variant: "heading-sm/semibold",
         color: "header-primary",
         className: g.controlTitle,
-        children: h.intl.string(f.default["5YsmGB"])
+        children: h.intl.string(f.default["5YsmGI"])
       }), (0, i.jsxs)("div", {
         className: g.toggleContainerOnlineRow,
         children: [(0, i.jsx)(s.qbd, {
@@ -131,7 +131,7 @@ function v(e) {
         }), (0, i.jsx)(s.Text, {
           variant: "text-xs/normal",
           color: "text-secondary",
-          children: h.intl.string(f.default.U8MFdX)
+          children: h.intl.string(f.default.U8MFdR)
         })]
       })]
     }), (0, i.jsx)(s.Text, {
@@ -155,7 +155,7 @@ function j(e) {
     }), (0, i.jsx)(s.Text, {
       variant: "text-sm/normal",
       color: "text-secondary",
-      children: h.intl.string(f.default["7cfFoa"])
+      children: h.intl.string(f.default["7cfFob"])
     }), (0, i.jsx)(s.izJ, {
       className: g.divider
     }), (0, i.jsx)(p.yj, {
@@ -177,20 +177,20 @@ function C(e) {
     switch (e) {
       case 0:
         return {
-          type: "popover", title: h.intl.string(f.default.vxVbGB), body: [h.intl.string(f.default["7cfFoa"])], action: {
-            text: h.intl.string(f.default.k4tCg4),
+          type: "popover", title: h.intl.string(f.default.vxVbGP), body: [h.intl.string(f.default["7cfFob"])], action: {
+            text: h.intl.string(f.default.k4tCg2),
             onClick: () => {
               u.G6.updateSetting(true)
             }
           }, textLink: {
-            text: h.intl.string(h.t["ZrN+DQ"]),
+            text: h.intl.string(h.t["ZrN+DT"]),
             onClick: p.S$
           }
         };
       case 1:
         return {
-          type: "popover", title: h.intl.string(f.default.qKDqen), body: [h.intl.string(f.default.Yl0mh4)], action: {
-            text: h.intl.string(f.default.Poezn5),
+          type: "popover", title: h.intl.string(f.default.qKDqet), body: [h.intl.string(f.default.Yl0mh4)], action: {
+            text: h.intl.string(f.default.Poezn1),
             onClick: () => {
               (0, c.Z)({
                 nextStatus: s.Skl.ONLINE
@@ -200,15 +200,15 @@ function C(e) {
         };
       case 2:
         return {
-          type: "popover", title: h.intl.string(f.default["6cA8HR"]), body: [h.intl.string(f.default["7cfFoa"])], action: {
-            text: h.intl.string(f.default.k4tCg4),
+          type: "popover", title: h.intl.string(f.default["6cA8HZ"]), body: [h.intl.string(f.default["7cfFob"])], action: {
+            text: h.intl.string(f.default.k4tCg2),
             onClick: () => {
               u.G6.updateSetting(true), (0, c.Z)({
                 nextStatus: s.Skl.ONLINE
               })
             }
           }, textLink: {
-            text: h.intl.string(h.t["ZrN+DQ"]),
+            text: h.intl.string(h.t["ZrN+DT"]),
             onClick: p.S$
           }
         };

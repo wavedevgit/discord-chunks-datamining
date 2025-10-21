@@ -29,8 +29,8 @@ var Chunk442837 = require("./442837.js"),
   Chunk915014 = require("./915014.jsx"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk759253 = require("./759253.js"),
-  Chunk593540 = require("./593540.js");
+  Chunk57842 = require("./57842.js"),
+  Chunk116649 = require("./116649.js");
 
 function R(e) {
   let {
@@ -110,7 +110,7 @@ function R(e) {
       guildId: null == P ? true : P.id,
       onClick: x
     }), null != P && (0, r.jsx)(m.Z, {
-      heading: A.intl.string(A.t.LPJmLy),
+      heading: A.intl.string(A.t["LPJmL/"]),
       children: (0, r.jsx)(I.Z, {
         user: t,
         currentUser: n,

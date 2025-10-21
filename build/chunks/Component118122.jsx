@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 118122, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C
@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk675999 = require("./675999.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk207972 = require("./207972.js");
+  Chunk816827 = require("./816827.js");
 let j = {
   origin: {
     x: false,
@@ -86,7 +86,7 @@ function C(e) {
     },
     selected: S,
     onContextMenu: x,
-    tooltip: y.intl.string(y.t.l5WIbW),
+    tooltip: y.intl.string(y.t.l5WIbf),
     icon: o.oFk
   });
   return t ? P : (0, r.jsx)("div", {
@@ -96,7 +96,7 @@ function C(e) {
       inlineSpecs: j,
       position: "right",
       children: [P, null != n && (0, r.jsx)(m.ZP, {
-        name: y.intl.string(y.t["45xjMz"]),
+        name: y.intl.string(y.t["45xjM5"]),
         targetNode: n,
         below: true,
         noCombine: true

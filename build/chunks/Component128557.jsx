@@ -1,4 +1,4 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 128557, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => M,
@@ -31,7 +31,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk231873 = require("./231873.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk797553 = require("./797553.js");
+  Chunk183334 = require("./183334.js");
 
 function N(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -131,7 +131,7 @@ function M(e) {
         }), null != e && (0, u.ZDy)(async () => {
           let {
             default: t
-          } = await Promise.all([n.e("49049"), n.e("7654"), n.e("89334")]).then(n.bind(n, 560114));
+          } = await Promise.all([n.e("49049"), n.e("7654"), n.e("68971")]).then(n.bind(n, 560114));
           return n => (0, i.jsx)(t, A(N({}, n), {
             guild: e,
             source: P.t4x.CHANNEL_WELCOME,
@@ -195,7 +195,7 @@ function M(e) {
       }, [e])
     }
   }(l), W = !(D || k || U || B), {
-    titleAnimatedStyle: K,
+    titleAnimatedStyle: q,
     opacities: Y
   } = function(e) {
     let t = (0, d.Z)(() => new o.Z.Value(0)),
@@ -233,7 +233,7 @@ function M(e) {
       } : {},
       opacities: i
     }
-  }(W), [q, X] = r.useState([]), J = q.length > 0;
+  }(W), [K, X] = r.useState([]), J = K.length > 0;
   if (r.useEffect(() => {
       (async () => {
         try {
@@ -251,7 +251,7 @@ function M(e) {
     } : {},
     children: (0, i.jsx)(w, {
       iconUrl: u.YvY,
-      header: Z.intl.string(Z.t.q9n0TU),
+      header: Z.intl.string(Z.t.q9n0Ta),
       completed: k,
       onClick: H
     })
@@ -262,7 +262,7 @@ function M(e) {
     } : {},
     children: (0, i.jsx)(w, {
       iconUrl: u.$_T,
-      header: Z.intl.string(Z.t.c5kxPj),
+      header: Z.intl.string(Z.t.c5kxPh),
       completed: B,
       onClick: F
     })
@@ -273,7 +273,7 @@ function M(e) {
     } : {},
     children: (0, i.jsx)(w, {
       iconUrl: u.qMX,
-      header: Z.intl.string(Z.t["SoP7+v"]),
+      header: Z.intl.string(Z.t["SoP7+l"]),
       completed: U,
       onClick: V
     })
@@ -284,7 +284,7 @@ function M(e) {
     } : {},
     children: (0, i.jsx)(w, {
       iconUrl: u.yIb,
-      header: Z.intl.string(Z.t.pGVNIy),
+      header: Z.intl.string(Z.t.pGVNI9),
       completed: D,
       onClick: G
     })
@@ -295,13 +295,13 @@ function M(e) {
     } : {},
     children: (0, i.jsx)(w, {
       iconUrl: u.Tg$,
-      header: Z.intl.string(Z.t.IhHDEB),
+      header: Z.intl.string(Z.t.IhHDEO),
       completed: J,
       onClick: z
     })
   }, "addapp")));
-  let $ = v ? Z.intl.string(Z.t["1ach9P"]) : Z.intl.string(Z.t["ezm+/v"]);
-  p && ($ = Z.intl.string(Z.t["gwyU/P"]));
+  let $ = v ? Z.intl.string(Z.t["1ach9C"]) : Z.intl.string(Z.t["ezm+/j"]);
+  p && ($ = Z.intl.string(Z.t["gwyU/J"]));
   let ee = "".concat(O.Z.getArticleURL(P.BhN.GUILD_GETTING_STARTED), "?utm_source=discord&utm_medium=blog&utm_campaign=2020-06_help-new-user&utm_content=--t%3Apm");
   return (0, i.jsx)(S.ZP, {
     channelId: t.id,
@@ -310,11 +310,11 @@ function M(e) {
       children: (0, i.jsxs)("div", {
         className: T.inner,
         children: [(0, i.jsxs)(o.Z.div, {
-          style: K,
+          style: q,
           children: [(0, i.jsx)(u.Heading, {
             className: T.titleName,
             variant: "heading-xxl/medium",
-            children: Z.intl.format(Z.t.rkHVKS, {
+            children: Z.intl.format(Z.t.rkHVKf, {
               guildName: l.name
             })
           }), (0, i.jsxs)(u.Text, {
@@ -324,7 +324,7 @@ function M(e) {
               [T.noChildren]: 0 === Q.length
             }),
             variant: "text-sm/normal",
-            children: [$, " ", Q.length > 0 ? Z.intl.format(Z.t.UOtD39, {
+            children: [$, " ", Q.length > 0 ? Z.intl.format(Z.t.UOtD32, {
               guideURL: ee
             }) : null]
           })]

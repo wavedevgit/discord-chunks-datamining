@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk710352 = require("./710352.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk244736 = require("./244736.js");
+  Chunk101453 = require("./101453.js");
 
 function j(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -79,8 +79,8 @@ function y(e) {
       }))
     })
   }, [r, t]), {
-    handleDragStart: O,
-    handleDragReset: N,
+    handleDragStart: N,
+    handleDragReset: O,
     handleDragComplete: Z
   } = (0, h.Z)(t.availableTags, e => {
     (0, d.pW)({
@@ -95,8 +95,8 @@ function y(e) {
       canManageChannels: r,
       onTagClick: S,
       onDragComplete: Z,
-      onDragReset: N,
-      onDragStart: O
+      onDragReset: O,
+      onDragStart: N
     }, e.id)) : null, p ? (0, i.jsx)(c.P3F, {
       onClick: y,
       className: s()(x.addTags, {
@@ -104,14 +104,14 @@ function y(e) {
       }),
       children: (0, i.jsx)(c.qJs, {
         size: "custom",
-        "aria-label": b.intl.string(b.t["/jubeH"]),
+        "aria-label": b.intl.string(b.t["/jubeD"]),
         color: o.Z.unsafe_rawColors.WHITE_500.css,
         width: 20,
         height: 20
       })
     }) : (0, i.jsx)(c.Button, {
       variant: "primary",
-      text: b.intl.string(b.t["/jubeH"]),
+      text: b.intl.string(b.t["/jubeD"]),
       disabled: !r,
       onClick: y
     })]
@@ -153,7 +153,7 @@ function C(e) {
     children: (0, i.jsx)(p.Z, {
       tag: t,
       disabled: !l,
-      ariaLabel: b.intl.formatToPlainString(b.t.jhSvBw, {
+      ariaLabel: b.intl.formatToPlainString(b.t.jhSvB9, {
         name: t.name
       }),
       onClick: l ? () => r(t) : true

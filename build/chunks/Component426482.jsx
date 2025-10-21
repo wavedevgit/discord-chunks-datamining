@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   o = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk922258 = require("./922258.js"),
+  Chunk451697 = require("./451697.js"),
   u = function(e) {
     return e[e.SMALL = 0] = "SMALL", e[e.LARGE = 1] = "LARGE", e
   }({});
@@ -47,7 +47,7 @@ function d(e) {
   }) : (0, r.jsx)("img", {
     className: d,
     src: n.coverImageUrl,
-    alt: l.intl.formatToPlainString(l.t["3ev90d"], {
+    alt: l.intl.formatToPlainString(l.t["3ev90U"], {
       game: p
     }),
     onError: m,

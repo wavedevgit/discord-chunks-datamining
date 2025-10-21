@@ -18,9 +18,9 @@ let m = t => {
   let {
     onClose: n,
     channelId: m,
-    applicationId: _,
-    transitionState: h
-  } = t, p = (0, d.e7)([o.ZP], () => o.ZP.getChannelMuteConfig(null, m)), O = l.useMemo(() => (0, s.k)().map(t => {
+    applicationId: O,
+    transitionState: _
+  } = t, h = (0, d.e7)([o.ZP], () => o.ZP.getChannelMuteConfig(null, m)), p = l.useMemo(() => (0, s.k)().map(t => {
     let {
       label: e,
       value: n
@@ -31,20 +31,20 @@ let m = t => {
     }
   }), []);
   return (0, i.jsx)(a.Modal, {
-    transitionState: h,
+    transitionState: _,
     onClose: n,
-    title: c.intl.string(c.t.NkwaBg),
+    title: g.intl.string(g.t.NkwaBs),
     actions: [{
       variant: "primary",
-      text: c.intl.string(c.t.cpT0Cg),
+      text: g.intl.string(g.t.cpT0Cq),
       onClick: n
     }],
     children: (0, i.jsx)(r.FXm, {
-      options: O,
+      options: p,
       onChange: t => {
-        u.Z.updateAppDMOverrideSettings(null, m, _, (0, s.u9)(t), g.ZB.Muted)
+        u.Z.updateAppDMOverrideSettings(null, m, O, (0, s.u9)(t), c.ZB.Muted)
       },
-      value: null != (e = null == p ? true : p.selected_time_window) ? e : true
+      value: null != (e = null == h ? true : h.selected_time_window) ? e : true
     })
   })
 }

@@ -15,7 +15,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk632256 = require("./632256.js");
+  Chunk466653 = require("./466653.js");
 
 function g(e) {
   let {
@@ -27,10 +27,10 @@ function g(e) {
     children: [(0, r.jsx)(a.Heading, {
       variant: "heading-md/semibold",
       className: h.header,
-      children: f.intl.string(f.t.HcbnMD)
+      children: f.intl.string(f.t.HcbnMM)
     }), (0, r.jsx)(a.Text, {
       variant: "text-sm/normal",
-      children: f.intl.format(f.t.NkFrzM, {
+      children: f.intl.format(f.t.NkFrzN, {
         onPrivacyClick: () => {
           (0, u.openUserSettings)(c.n.DATA_AND_PRIVACY_PANEL, {
             section: d.oAB.DATA_AND_PRIVACY
@@ -43,13 +43,13 @@ function g(e) {
         variant: "primary",
         size: "sm",
         fullWidth: true,
-        text: f.intl.string(f.t.ebojgI),
+        text: f.intl.string(f.t.ebojgD),
         onClick: () => (0, o.g)([d.pjP.PERSONALIZATION], [])
       }), (0, r.jsx)(a.Button, {
         variant: "secondary",
         size: "sm",
         fullWidth: true,
-        text: f.intl.string(f.t.f3Pet7),
+        text: f.intl.string(f.t.f3Pet9),
         onClick: () => n(p.L.DISMISS)
       })]
     })]

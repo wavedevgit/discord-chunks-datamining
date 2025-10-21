@@ -1,4 +1,4 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 211640, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk375954 = require("./375954.js"),
   Chunk496675 = require("./496675.js"),
   Chunk796263 = require("./796263.jsx"),
-  Chunk304726 = require("./304726.js"),
+  Chunk833540 = require("./833540.js"),
   Chunk388032 = require("./388032.jsx");
 
 function m(e) {
@@ -29,7 +29,7 @@ function m(e) {
     return null != (t = null == (e = c.Z.getChannel(g.id)) ? true : e.isArchivedThread()) && t
   });
   if (!b) return null;
-  let x = null == y ? f.intl.string(h.default["0IZbwM"]) : f.intl.string(h.default.Uj6oDw),
+  let x = null == y ? f.intl.string(h.default["0IZbwC"]) : f.intl.string(h.default.Uj6oD4),
     O = null == y,
     j = "delete-message-".concat(t.id);
   return (0, i.jsx)(p.Z, {

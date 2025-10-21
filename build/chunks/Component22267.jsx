@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk158776 = require("./158776.js"),
   Chunk579407 = require("./579407.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk550224 = require("./550224.js"),
+  Chunk198921 = require("./198921.js"),
   Chunk460400 = require("./460400.js"),
   Chunk943549 = require("./943549.js");
 let C = {
@@ -60,9 +60,9 @@ let C = {
       userId: null == t ? true : t.id,
       guildId: n,
       pendingDisplayNameStyles: M
-    }), X = i.useMemo(() => null != a ? I.intl.formatToPlainString(I.t.YJig7O, {
+    }), X = i.useMemo(() => null != a ? I.intl.formatToPlainString(I.t.YJig7C, {
       a11y_text: a.label
-    }) : I.intl.string(I.t.SZeUdX), [a]);
+    }) : I.intl.string(I.t.SZeUdR), [a]);
     return (0, r.jsx)("div", {
       role: "img",
       "aria-label": X,

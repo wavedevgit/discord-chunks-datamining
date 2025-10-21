@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 836697, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk179809 = require("./179809.jsx"),
   Chunk588275 = require("./588275.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk933154 = require("./933154.js");
+  Chunk264096 = require("./264096.js");
 
 function O(e) {
   let {
@@ -46,16 +46,16 @@ function O(e) {
             className: _.coachmarkTextContainer,
             children: [(0, r.jsx)(o.Heading, {
               variant: "heading-md/medium",
-              children: b.intl.string(b.t["0YV0YG"])
+              children: b.intl.string(b.t["0YV0YE"])
             }), (0, r.jsx)(o.Text, {
               variant: "text-xs/normal",
               color: "text-muted",
-              children: b.intl.string(b.t["0UQVDA"])
+              children: b.intl.string(b.t["0UQVDL"])
             })]
           }), (0, r.jsx)(o.Button, {
             variant: "primary",
             size: "sm",
-            text: b.intl.string(b.t["4r+amZ"]),
+            text: b.intl.string(b.t["4r+amb"]),
             fullWidth: true,
             onClick: p
           })]
@@ -110,7 +110,7 @@ function y(e) {
   } = e, [n, y] = i.useState(false), v = (0, l.e7)([d.Z], () => d.Z.getGuildId()), j = (0, l.e7)([u.Z], () => u.Z.hasFetchedRequestToJoinGuilds), x = (0, h.Z)(), C = (0, a.Z)(v), E = i.useMemo(() => {
     let e = (0, f.qQ)({
       folderId: p.S.PENDING_JOIN_REQUESTS_FOLDER,
-      folderName: b.intl.string(b.t["scsU+v"]),
+      folderName: b.intl.string(b.t["scsU+l"]),
       expanded: n,
       guildIds: []
     });

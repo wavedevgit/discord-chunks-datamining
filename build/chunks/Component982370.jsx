@@ -15,7 +15,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk164662 = require("./164662.js"),
   Chunk732728 = require("./732728.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk947759 = require("./947759.js");
+  Chunk527552 = require("./527552.js");
 let p = e => {
   let {
     className: t,
@@ -32,7 +32,7 @@ let p = e => {
       className: _.backButtonContainer,
       children: (0, r.jsx)(s.zxk, {
         onClick: n,
-        text: f.intl.string(f.t["13/7kZ"]),
+        text: f.intl.string(f.t["13/7kX"]),
         variant: "overlay-secondary"
       })
     }), (0, r.jsx)("div", {
@@ -43,7 +43,7 @@ let p = e => {
           containerVisibilityPercentage: h,
           isMotionReduced: i
         }), (0, r.jsx)(c.Z, {
-          children: f.intl.string(f.t.hqjDX1)
+          children: f.intl.string(f.t["hqjDX/"])
         })]
       })
     })]

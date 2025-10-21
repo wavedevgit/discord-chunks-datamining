@@ -1,7 +1,7 @@
 /** Chunk was on 93979 **/
 /** chunk id: 116906, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => Z
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -23,14 +23,14 @@ var Chunk442837 = require("./442837.js"),
   Chunk228168 = require("./228168.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk847540 = require("./847540.js"),
-  Chunk883172 = require("./883172.js");
+  Chunk7994 = require("./7994.js"),
+  Chunk878449 = require("./878449.js");
 
-function _(e) {
+function Z(e) {
   let {
     user: n,
     currentUser: t,
-    guildId: _,
+    guildId: Z,
     subsection: O,
     onClose: N
   } = e, {
@@ -48,16 +48,16 @@ function _(e) {
     voiceActivity: w
   } = (0, p.Z)({
     userId: n.id,
-    guildId: _
-  }), R = (0, i.e7)([s.Z], () => s.Z.isFetchingUserOutbox(n.id)), D = n.id === t.id, L = (0, i.e7)([c.Z, a.Z], () => {
-    let e = D ? c.Z.getStatus() : a.Z.getStatus(n.id);
+    guildId: Z
+  }), D = (0, i.e7)([s.Z], () => s.Z.isFetchingUserOutbox(n.id)), R = n.id === t.id, L = (0, i.e7)([c.Z, a.Z], () => {
+    let e = R ? c.Z.getStatus() : a.Z.getStatus(n.id);
     return e === o.Skl.OFFLINE || e === o.Skl.INVISIBLE
   }), M = P.length > 0 || null != C, B = A && null == C && null == w && null != S, U = !L && (M || B), k = E.length > 0;
-  return U || k || !R ? (0, l.jsxs)(o.zJl, {
+  return U || k || !D ? (0, l.jsxs)(o.zJl, {
     className: y.scroller,
     fade: true,
     children: [U ? (0, l.jsx)(f.Z, {
-      "aria-label": I.intl.string(I.t.J6STd3),
+      "aria-label": I.intl.string(I.t.J6STd9),
       children: (0, l.jsxs)("ul", {
         className: y.activityList,
         children: [!T && B && (0, l.jsx)("li", {
@@ -84,8 +84,8 @@ function _(e) {
         }, "live-".concat(i)))]
       })
     }) : null, k ? (0, l.jsx)(f.Z, {
-      heading: I.intl.string(I.t.M0zgnZ),
-      introText: D ? I.intl.format(I.t["4bk9Ag"], {
+      heading: I.intl.string(I.t.M0zgnT),
+      introText: R ? I.intl.format(I.t["4bk9Ak"], {
         learnMoreHook: (e, n) => (0, l.jsx)(o.Anchor, {
           href: d.Z.getArticleURL(b.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e
@@ -104,7 +104,7 @@ function _(e) {
       })
     }) : null]
   }) : (0, l.jsx)("div", {
-    className: Z.empty,
+    className: _.empty,
     children: (0, l.jsx)(o.$jN, {})
   })
 }

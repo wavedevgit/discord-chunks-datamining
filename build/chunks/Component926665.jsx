@@ -1,7 +1,7 @@
 /** Chunk was on 1544 **/
 /** chunk id: 926665, original params: e,s,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => p
+  default: () => j
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,36 +16,36 @@ var Chunk951288 = require("./951288.js"),
   Chunk656649 = require("./656649.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk971990 = require("./971990.js");
-let x = "https://dis.gd/Amazon-Music-Connection",
-  j = null != window.opener;
+  Chunk78713 = require("./78713.js");
+let p = "https://dis.gd/Amazon-Music-Connection",
+  x = null != window.opener;
 
-function p() {
+function j() {
   let {
     type: e
   } = (0, Chunk843611.UO)(), s = (0, Chunk656649.vJ)(module), n = (0, Chunk169382.l)().get("error-code"), t = Chunk647438.useCallback(() => {
     window.close()
-  }, []), p = Chunk647438.useMemo(() => {
+  }, []), j = Chunk647438.useMemo(() => {
     switch (exports) {
       case Chunk981631.ABu.AMAZON_MUSIC:
         return (0, Chunk951288.jsx)("div", {
-          className: a()(Chunk971990.message, Chunk971990.details),
-          children: Chunk873546.tq ? Chunk388032.intl.format(Chunk388032.t["0EikXl"], {
+          className: a()(Chunk78713.message, Chunk78713.details),
+          children: Chunk873546.tq ? Chunk388032.intl.format(Chunk388032.t["0EikXi"], {
             link: () => (0, Chunk951288.jsx)(Chunk481060.Anchor, {
-              href: x,
-              children: x
+              href: p,
+              children: p
             })
-          }) : Chunk388032.intl.format(Chunk388032.t.hKHZhI, {
+          }) : Chunk388032.intl.format(Chunk388032.t.hKHZhO, {
             link: () => (0, Chunk951288.jsx)(Chunk481060.Anchor, {
-              href: x,
-              children: x
+              href: p,
+              children: p
             })
           })
         });
       case Chunk981631.ABu.YOUTUBE:
         if (require === Chunk981631.evJ.UNKNOWN_ACCOUNT.toString()) return (0, Chunk951288.jsx)("div", {
-          className: a()(Chunk971990.message, Chunk971990.details),
-          children: Chunk388032.intl.format(Chunk388032.t.nQPJdH, {
+          className: a()(Chunk78713.message, Chunk78713.details),
+          children: Chunk388032.intl.format(Chunk388032.t.nQPJdL, {
             link: "https://support.google.com/youtube/answer/1646861"
           })
         });
@@ -59,20 +59,20 @@ function p() {
   return (0, Chunk951288.jsxs)(Chunk656649.UV, {
     platformType: exports,
     children: [(0, Chunk951288.jsx)("div", {
-      className: a()(Chunk971990.message, Chunk971990.error),
-      children: Chunk388032.intl.format(Chunk388032.t.E62dXl, {
+      className: a()(Chunk78713.message, Chunk78713.error),
+      children: Chunk388032.intl.format(Chunk388032.t.E62dXo, {
         name: N.name
       })
     }), (0, Chunk951288.jsx)("div", {
-      className: a()(Chunk971990.message, Chunk971990.details),
-      children: Chunk388032.intl.string(Chunk388032.t.Ra6lcn)
-    }), p, j ? (0, Chunk951288.jsx)(Chunk755721.zx, {
-      className: Chunk971990.btn,
+      className: a()(Chunk78713.message, Chunk78713.details),
+      children: Chunk388032.intl.string(Chunk388032.t.Ra6lcp)
+    }), j, x ? (0, Chunk951288.jsx)(Chunk755721.zx, {
+      className: Chunk78713.btn,
       onClick: Chunk120356,
-      children: Chunk388032.intl.string(Chunk388032.t.i4jeWV)
+      children: Chunk388032.intl.string(Chunk388032.t.i4jeWR)
     }) : null, null != require ? (0, Chunk951288.jsx)("div", {
-      className: a()(Chunk971990.message, Chunk971990.errorDetails),
-      children: Chunk388032.intl.format(Chunk388032.t.LElyIC, {
+      className: a()(Chunk78713.message, Chunk78713.errorDetails),
+      children: Chunk388032.intl.format(Chunk388032.t.LElyIL, {
         errorCode: require
       })
     }) : null]

@@ -57,17 +57,17 @@ function m(e) {
   return ({
     [u.h7.AUDIO_INPUT]: {
       setDevice: o.Z.setInputDevice,
-      getLabel: () => d.intl.string(d.t.ElbIXF),
+      getLabel: () => d.intl.string(d.t.ElbIXN),
       getLocation: e => "".concat(e, ".useInputDeviceMenuItems")
     },
     [u.h7.AUDIO_OUTPUT]: {
       setDevice: o.Z.setOutputDevice,
-      getLabel: () => d.intl.string(d.t["6Ww0iI"]),
+      getLabel: () => d.intl.string(d.t["6Ww0iH"]),
       getLocation: e => "".concat(e, ".useOutputDeviceMenuItems")
     },
     [u.h7.VIDEO_INPUT]: {
       setDevice: o.Z.setVideoDevice,
-      getLabel: () => d.intl.string(d.t.F122Gx),
+      getLabel: () => d.intl.string(d.t.F122Gz),
       getLocation: e => "".concat(e, ".useVideoDeviceMenuItems")
     }
   })[e]
@@ -120,7 +120,7 @@ function g(e) {
     }, null == b ? true : b(o)), "".concat(t, "-").concat(o))
   }), L = (0, r.jsx)(a.sNh, {
     id: "SHOW_MORE",
-    label: d.intl.string(d.t.E99UMj),
+    label: d.intl.string(d.t.E99UMh),
     dontCloseOnAction: true,
     action: () => {
       T(true), s.default.track(c.rMx.DEVICES_LIST_SHOW_MORE_CLICKED, {

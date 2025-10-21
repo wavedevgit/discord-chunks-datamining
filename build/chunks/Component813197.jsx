@@ -23,7 +23,7 @@ function c(e, t, n) {
 
 function u() {
   return [{
-    name: Chunk388032.intl.string(Chunk388032.t.Sp2NFx),
+    name: Chunk388032.intl.string(Chunk388032.t["Sp2NF+"]),
     extensions: ["jpg", "jpeg", "png", "gif", "webp", "avif"]
   }]
 }
@@ -103,8 +103,8 @@ class _ extends(r = Chunk647438.PureComponent) {
         openUploadError: e
       } = await Promise.resolve().then(n.bind(n, 531643));
       e({
-        title: l.intl.string(l.t["0egKg4"]),
-        help: l.intl.string(l.t["7PnXqq"])
+        title: l.intl.string(l.t["0egKg3"]),
+        help: l.intl.string(l.t["7PnXqu"])
       })
     })
   }

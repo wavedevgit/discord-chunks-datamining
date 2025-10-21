@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 354031, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -23,12 +23,12 @@ function d(e) {
     })
   }, [t]);
   return (0, r.jsx)(l.C3N, {
-    label: c.intl.string(c.t.FOYxgo),
-    description: c.intl.format(c.t["c6Cy/v"], {
+    label: c.intl.string(c.t.FOYxgr),
+    description: c.intl.format(c.t["c6Cy/h"], {
       helpdeskArticle: a.Z.getArticleURL(o.BhN.CONVERSATION_SUMMARIES)
     }),
     children: (0, r.jsx)(l.rsf, {
-      label: c.intl.string(c.t.vmEDQk),
+      label: c.intl.string(c.t.vmEDQs),
       badge: "beta",
       checked: t.has(o.GuildFeatures.SUMMARIES_ENABLED_BY_USER),
       onChange: d,

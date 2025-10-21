@@ -19,7 +19,7 @@ function d() {
   return (0, Chunk951288.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_QOS,
     children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
-      label: Chunk388032.intl.string(Chunk388032.t["3CqDxs"]),
+      label: Chunk388032.intl.string(Chunk388032.t["3CqDxp"]),
       description: Chunk388032.intl.string(Chunk388032.t.I1Eoqq),
       checked: module,
       onChange: e => o.Z.setQoS(e)

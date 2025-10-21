@@ -1,4 +1,4 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 333535, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk523900 = require("./523900.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk92321 = require("./92321.js");
+  Chunk235391 = require("./235391.js");
 
 function b(e) {
   let {
@@ -33,17 +33,17 @@ function b(e) {
       children: [(0, i.jsx)(a.Text, {
         variant: "text-md/semibold",
         color: "header-primary",
-        children: m.intl.string(m.t["5uAO7e"])
+        children: m.intl.string(m.t["5uAO7d"])
       }), (0, i.jsx)(a.Text, {
         variant: "text-sm/medium",
         color: "text-default",
-        children: m.intl.format(m.t.WnfPV1, {
+        children: m.intl.format(m.t.WnfPV3, {
           helpArticleUrl: d.Z.getCreatorSupportArticleURL(f.BhN.MEDIA_CHANNEL)
         })
       }), (0, i.jsx)(a.LZC, {
         size: 4
       }), (0, i.jsx)(a.Button, {
-        text: m.intl.string(m.t.C5UQCw),
+        text: m.intl.string(m.t.C5UQC9),
         variant: "primary",
         icon: a.xPt,
         onClick: C
@@ -53,7 +53,7 @@ function b(e) {
       onClick: () => {
         (0, p.fn)(t)
       },
-      "aria-label": m.intl.string(m.t["0+xZHx"]),
+      "aria-label": m.intl.string(m.t["0+xZH0"]),
       children: (0, i.jsx)(a.Dio, {
         color: "currentColor",
         size: "xs"

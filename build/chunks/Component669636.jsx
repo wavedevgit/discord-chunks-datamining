@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk22267 = require("./22267.jsx"),
   Chunk302800 = require("./302800.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk793000 = require("./793000.js"),
+  Chunk186175 = require("./186175.js"),
   Chunk593639 = require("./593639.js"),
   Chunk945182 = require("./945182.js"),
   Chunk234286 = require("./234286.js");
@@ -89,15 +89,15 @@ let C = e => {
     })).with(c.Z.EXTERNAL_SKU, () => {
       if (w)
         if (r) return (0, n.jsx)("img", {
-          src: _ ? x : E,
-          alt: y.intl.string(y.t.t0xkSE),
+          src: _ ? E : x,
+          alt: y.intl.string(y.t.t0xkSB),
           style: {
             width: "100%"
           }
         });
         else return (0, n.jsx)("img", {
           src: O,
-          alt: y.intl.string(y.t.g5W1g4)
+          alt: y.intl.string(y.t.g5W1g8)
         });
       return (0, n.jsx)(m.b, {
         product: t

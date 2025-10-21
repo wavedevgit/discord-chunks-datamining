@@ -16,12 +16,12 @@ let E = (0, Chunk509613.x1)(Chunk313789.n.GIFT_PANE, {
     render: Chunk387747.Z
   }),
   d = (0, Chunk509613.wf)(Chunk313789.n.GIFT_PANEL, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t["jcSP+v"]),
+    useTitle: () => Chunk388032.intl.string(Chunk388032.t["jcSP+g"]),
     buildLayout: () => [E]
   }),
   T = (0, Chunk509613.m7)(Chunk313789.n.GIFT_SIDEBAR_ITEM, {
     icon: Chunk657707.OgN,
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t["jcSP+v"]),
+    useTitle: () => Chunk388032.intl.string(Chunk388032.t["jcSP+g"]),
     legacySearchKey: Chunk726985.s6.GIFT_INVENTORY,
     buildLayout: () => [d],
     trailing: {

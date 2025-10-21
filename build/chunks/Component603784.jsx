@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 603784, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk501801 = require("./501801.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk617314 = require("./617314.js");
+  Chunk404211 = require("./404211.js");
 
 function S(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -69,7 +69,7 @@ class P extends Chunk647438.PureComponent {
     } = this.props;
     return (0, Chunk951288.jsxs)("span", {
       onContextMenu: exports,
-      className: Chunk617314.userHook,
+      className: Chunk404211.userHook,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         children: Chunk51144.ZP.getUserTag(module, {
@@ -77,7 +77,7 @@ class P extends Chunk647438.PureComponent {
         })
       }), "0" !== module.discriminator && (0, Chunk951288.jsxs)(Chunk481060.Text, {
         variant: "text-xs/normal",
-        className: Chunk617314.discrim,
+        className: Chunk404211.discrim,
         children: ["#", module.discriminator]
       })]
     })
@@ -199,7 +199,7 @@ let w = Chunk647438.forwardRef((e, t) => {
                       let e = u.Z.get(l.options.integration_type);
                       return null != (n = null == e ? true : e.name) ? n : N.intl.string(N.t["n+olu7"])
                     }
-                    return N.intl.string(N.t["30mdIy"])
+                    return N.intl.string(N.t["30mdIx"])
                   },
                   targetHook: (e, t) => l.targetType === E.KFR.USER && l.target instanceof h.Z ? (0, r.jsx)(P, {
                     user: l.target,

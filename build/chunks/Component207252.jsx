@@ -10,7 +10,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk246295 = require("./246295.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk680386 = require("./680386.js");
+  Chunk119902 = require("./119902.js");
 
 function d(e) {
   let {
@@ -25,11 +25,11 @@ function d(e) {
     d(), h()
   }, [d, h]);
   return (0, i.jsx)(c.u_l, {
-    title: s.intl.string(s.t.Q8OFNz),
+    title: s.intl.string(s.t["Q8OFN+"]),
     subtitle: s.intl.string(s.t["WT+829"]),
     actions: [{
       disabled: !b,
-      text: s.intl.string(s.t["qjtt/v"]),
+      text: s.intl.string(s.t["qjtt/p"]),
       onClick: k
     }],
     transitionState: n,

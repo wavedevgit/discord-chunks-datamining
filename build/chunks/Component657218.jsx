@@ -1,4 +1,4 @@
-/** Chunk was on 63962 **/
+/** Chunk was on 91053 **/
 /** chunk id: 657218, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => K
@@ -45,8 +45,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk602034 = require("./602034.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk177763 = require("./177763.js"),
-  Chunk910062 = require("./910062.js");
+  Chunk757212 = require("./757212.js"),
+  Chunk149623 = require("./149623.js");
 
 function Y(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -80,7 +80,7 @@ function K(e) {
     value: a,
     children: (0, r.jsx)(A.I3, {
       children: (0, r.jsxs)("section", {
-        "aria-label": V.intl.string(V.t.rBIGBA),
+        "aria-label": V.intl.string(V.t.rBIGBL),
         className: z.container,
         children: [(0, r.jsx)(f.Z, {
           channel: l,
@@ -105,12 +105,12 @@ function Q(e) {
       n = T.Z.getDraft(t, T.d.FirstThreadMessage).trim(),
       r = w.Z.getUploads(t, T.d.FirstThreadMessage);
     if ((null == e ? true : e.name) != null && (null == e ? true : e.name) !== "" || 0 !== n.length || 0 !== r.length) return void p.Z.show({
-      title: V.intl.string(V.t["6kDZh4"]),
-      body: V.intl.string(V.t.NgS9jY),
+      title: V.intl.string(V.t["6kDZh1"]),
+      body: V.intl.string(V.t.NgS9jX),
       confirmColor: o.Tt.RED,
-      confirmText: V.intl.string(V.t["7WGI4O"]),
+      confirmText: V.intl.string(V.t["7WGI4H"]),
       confirmVariant: "critical-primary",
-      cancelText: V.intl.string(V.t.olcKd3),
+      cancelText: V.intl.string(V.t["olcKd/"]),
       onConfirm: () => {
         (0, G.NK)(t)
       }
@@ -120,15 +120,15 @@ function Q(e) {
   return (0, r.jsxs)(C.ZP, {
     toolbar: (0, r.jsx)(C.ZP.Icon, {
       icon: c.Dio,
-      tooltip: V.intl.string(V.t.cpT0Cg),
+      tooltip: V.intl.string(V.t.cpT0Cq),
       onClick: n
     }),
     children: [(0, r.jsx)(C.ZP.Icon, {
       icon: c.or_,
       disabled: true,
-      "aria-label": V.intl.string(V.t["7Xm5QE"])
+      "aria-label": V.intl.string(V.t["7Xm5QI"])
     }), (0, r.jsx)(C.ZP.Title, {
-      children: V.intl.string(V.t["4WNcpq"])
+      children: V.intl.string(V.t["4WNcpu"])
     })]
   })
 }
@@ -191,8 +191,8 @@ function X(e) {
       textAreaState: n,
       setTextAreaState: r
     }
-  }(t, f), j = (0, k.vH)(t), {
-    isGeneratingAI: O,
+  }(t, f), O = (0, k.vH)(t), {
+    isGeneratingAI: j,
     enableAIFeatures: x,
     getThreadNameInputAccessory: C
   } = (0, H.U)({
@@ -273,11 +273,11 @@ function X(e) {
     parentChannel: t,
     parentMessageId: n,
     threadSettings: p,
-    privateThreadMode: j,
+    privateThreadMode: O,
     textAreaState: b,
     location: l,
     enableAIFeatures: x
-  }), R = (0, k.oD)(p, j) ? c.qtY : c.or_;
+  }), R = (0, k.oD)(p, O) ? c.qtY : c.or_;
   return (0, r.jsx)("div", {
     className: z.chat,
     onMouseDown: u,
@@ -309,14 +309,14 @@ function X(e) {
                   updateThreadSettings: m,
                   error: I,
                   disabled: N,
-                  isGeneratingAI: O,
+                  isGeneratingAI: j,
                   enableAIFeatures: x,
                   getThreadNameInputAccessory: C
                 }), t.type === B.d4z.GUILD_TEXT ? (0, r.jsx)(J, {
                   startedFromMessage: null != n,
                   threadSettings: p,
                   updateThreadSettings: m,
-                  privateThreadMode: j
+                  privateThreadMode: O
                 }) : null]
               })]
             }), (0, r.jsx)(et, {
@@ -356,11 +356,11 @@ function J(e) {
     onChange: e => i({
       isPrivate: e
     }),
-    label: V.intl.string(V.t.TRPp3t)
+    label: V.intl.string(V.t.TRPp3g)
   });
   return t || l === k.Jw.Disabled ? null : (0, r.jsx)(c.gNt, {
-    label: V.intl.string(V.t.F1zyvb),
-    helperText: a ? V.intl.string(V.t.EWXyc3) : true,
+    label: V.intl.string(V.t.F1zyvU),
+    helperText: a ? V.intl.string(V.t.EWXycz) : true,
     children: s
   })
 }
@@ -381,7 +381,7 @@ function $(e) {
     content: f
   }), m = (0, k.Od)(n, i), b = null != i && !p, y = (0, x.Dt)(), _ = p ? V.intl.string(V.t["Nb2/RE"]) : "" !== m ? m : V.intl.string(V.t["Nb2/RE"]);
   return (0, r.jsx)(c.oil, {
-    label: V.intl.string(b ? V.t.JPvIiI : V.t.j3XWjI),
+    label: V.intl.string(b ? V.t.JPvIiL : V.t.j3XWjD),
     trailing: h(o),
     value: f,
     id: y,
@@ -435,7 +435,7 @@ function ee(e) {
       content: n.textValue
     });
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(O.Z, {
+    children: [(0, r.jsx)(j.Z, {
       channelId: t.id,
       type: q,
       canAttachFiles: _
@@ -444,7 +444,7 @@ function ee(e) {
       children: (0, r.jsx)(c.pdY, {
         error: x
       })
-    }), (0, r.jsx)(j.ZP, {
+    }), (0, r.jsx)(O.ZP, {
       type: q,
       channel: t,
       placeholder: V.intl.string(V.t.taZfIC),

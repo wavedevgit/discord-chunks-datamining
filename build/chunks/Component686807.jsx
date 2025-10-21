@@ -13,13 +13,13 @@ var Chunk481060 = require("./481060.js"),
   Chunk303737 = require("./303737.js"),
   Chunk293810 = require("./293810.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk465297 = require("./465297.js");
+  Chunk24132 = require("./24132.js");
 
 function f(e) {
   let {
     channelId: t
   } = e, n = (0, l.m7)(t);
-  if (null == n) return "[".concat(u.intl.string(u.t.bz1PZW), "]");
+  if (null == n) return "[".concat(u.intl.string(u.t.bz1PZX), "]");
   let s = n.isMediaChannel() ? i.XBm : (0, o.Th)(n.type);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(i.nn4, {

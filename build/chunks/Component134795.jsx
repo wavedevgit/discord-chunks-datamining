@@ -15,7 +15,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk993413 = require("./993413.jsx"),
   Chunk486324 = require("./486324.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk107225 = require("./107225.js");
+  Chunk808639 = require("./808639.js");
 
 function p(e) {
   let {
@@ -34,7 +34,7 @@ function p(e) {
   } = (0, l.ZP)(), v = y ? s.gtL : o.zx;
   return (0, r.jsx)(u.Z, {
     className: h,
-    title: f.intl.string(f.t.Vgdusr),
+    title: f.intl.string(f.t.Vgdusv),
     showPremiumIcon: g,
     errors: n,
     disabled: m,
@@ -52,14 +52,14 @@ function p(e) {
           guildId: p,
           isTryItOutFlow: E
         }),
-        children: f.intl.string(f.t.N0bC3N)
+        children: f.intl.string(f.t.N0bC3P)
       }), t && (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: _.removeButton,
         children: (0, r.jsx)(s.Button, {
           variant: "secondary",
           size: "sm",
-          text: null != p ? f.intl.string(f.t.jHlJNT) : f.intl.string(f.t.tT9n7O),
+          text: null != p ? f.intl.string(f.t.jHlJNS) : f.intl.string(f.t.tT9n7D),
           onClick: () => i(null)
         })
       })]

@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk709054 = require("./709054.js"),
   Chunk997431 = require("./997431.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk923641 = require("./923641.js");
+  Chunk212229 = require("./212229.js");
 
 function E(e) {
   let {
@@ -83,7 +83,7 @@ function b(e) {
         }), (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "text-secondary",
-          children: m.intl.format(m.t["LC+S+v"], {
+          children: m.intl.format(m.t["LC+S+m"], {
             membersOnline: t.onlineCount
           })
         })]
@@ -94,7 +94,7 @@ function b(e) {
         }), (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "text-secondary",
-          children: m.intl.format(m.t.zRl6XV, {
+          children: m.intl.format(m.t.zRl6XR, {
             count: t.memberCount
           })
         })]
@@ -104,7 +104,7 @@ function b(e) {
       children: (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
         color: "text-secondary",
-        children: m.intl.format(m.t["zb2Q5+"], {
+        children: m.intl.format(m.t.zb2Q56, {
           createdAtDate: c
         })
       })

@@ -18,25 +18,25 @@ var Chunk951288 = require("./951288.js"),
   Chunk800530 = require("./800530.js"),
   Chunk388032 = require("./388032.jsx");
 let h = [{
-    title: Chunk388032.intl.string(Chunk388032.t["1+E7LC"]),
-    description: Chunk388032.intl.string(Chunk388032.t.BXiat7)
+    title: Chunk388032.intl.string(Chunk388032.t["1+E7LP"]),
+    description: Chunk388032.intl.string(Chunk388032.t["BXiat/"])
   }, {
-    title: Chunk388032.intl.string(Chunk388032.t.iMQXtL),
-    description: Chunk388032.intl.string(Chunk388032.t.oQ0vws)
+    title: Chunk388032.intl.string(Chunk388032.t.iMQXtK),
+    description: Chunk388032.intl.string(Chunk388032.t.oQ0vwu)
   }, {
-    title: Chunk388032.intl.string(Chunk388032.t["oY/z1d"]),
-    description: Chunk388032.intl.string(Chunk388032.t.wtj02d)
+    title: Chunk388032.intl.string(Chunk388032.t["oY/z1Q"]),
+    description: Chunk388032.intl.string(Chunk388032.t.wtj02W)
   }],
   j = function(t) {
     let {
       onClose: e,
       transitionState: n,
       classificationId: j
-    } = t, _ = (0, s.e7)([p.Z], () => p.Z.getAgeVerificationWebviewUrl()), v = (0, s.e7)([p.Z], () => p.Z.getIsLoadingAgeVerification()), b = r.useCallback(() => {
+    } = t, _ = (0, s.e7)([p.Z], () => p.Z.getAgeVerificationWebviewUrl()), b = (0, s.e7)([p.Z], () => p.Z.getIsLoadingAgeVerification()), v = r.useCallback(() => {
       e(), u.Z.close()
     }, [e]), N = r.useCallback(() => {
-      u.Z.success(), b(), u.Z.start_verification_check()
-    }, [b]);
+      u.Z.success(), v(), u.Z.start_verification_check()
+    }, [v]);
     return r.useEffect(() => {
       "" !== _ && o.Z.showAgeVerification({
         webviewUrl: _,
@@ -46,16 +46,16 @@ let h = [{
     }, [_, N]), (0, i.jsx)(l.Modal, {
       onClose: e,
       transitionState: n,
-      title: f.intl.string(f.t["9SDLnp"]),
-      subtitle: f.intl.string(f.t["yvx///"]),
+      title: f.intl.string(f.t["9SDLnj"]),
+      subtitle: f.intl.string(f.t["yvx//1"]),
       actions: [{
-        text: f.intl.string(f.t.dKacJy),
-        onClick: b,
+        text: f.intl.string(f.t.dKacJ8),
+        onClick: v,
         variant: "secondary"
       }, {
-        text: f.intl.string(f.t["54b8V1"]),
+        text: f.intl.string(f.t["54b8V0"]),
         onClick: () => (0, m.FN)(j),
-        loading: v
+        loading: b
       }],
       children: (0, i.jsxs)(c.Kqy, {
         gap: 8,
@@ -77,11 +77,11 @@ let h = [{
           gap: 8,
           direction: "vertical",
           children: [(0, i.jsx)(x.rT, {
-            title: f.intl.string(f.t.WPwp1d),
+            title: f.intl.string(f.t.WPwp1b),
             children: (0, i.jsx)(x.JZ, {
-              title: f.intl.string(f.t.N9WJMD),
-              description: f.intl.string(f.t["NHq38/"]),
-              buttonText: f.intl.string(f.t["9iy4lJ"]),
+              title: f.intl.string(f.t.N9WJMM),
+              description: f.intl.string(f.t.NHq382),
+              buttonText: f.intl.string(f.t["9iy4lB"]),
               titleVariant: "text-md/medium",
               onButtonPress: () => window.open(g.sQ.AGE_VERIFICATION_LINK, "_blank")
             })
@@ -90,7 +90,7 @@ let h = [{
             children: (0, i.jsx)(c.Text, {
               variant: "text-sm/medium",
               color: "text-secondary",
-              children: f.intl.format(f.t.ZbWsOD, {
+              children: f.intl.format(f.t.ZbWsOF, {
                 learnMoreLink: g.sQ.LEARN_MORE_UU_APPEAL_LINK
               })
             })

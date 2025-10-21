@@ -1,4 +1,4 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 734386, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => M
@@ -32,8 +32,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk967128 = require("./967128.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk73288 = require("./73288.js"),
-  Chunk602009 = require("./602009.js");
+  Chunk338518 = require("./338518.js"),
+  Chunk430864 = require("./430864.js");
 
 function M(e) {
   let {
@@ -75,12 +75,12 @@ function M(e) {
       locked: true,
       channelType: t.type
     }), (0, i.jsx)(Z.Ot, {
-      children: N.intl.format(N.t.I3R7Vl, {
+      children: N.intl.format(N.t.I3R7Vn, {
         channelName: o
       })
     }), (0, i.jsx)(Z.jz, {
       className: w.markup,
-      children: N.intl.format(N.t.QuwqjI, {
+      children: N.intl.format(N.t.QuwqjG, {
         channelName: o,
         topicHook: () => _.Z.parseTopic(t.topic, true, {
           channelId: t.id
@@ -89,14 +89,14 @@ function M(e) {
     }), B ? (0, i.jsxs)("div", {
       className: A.channelSettingButtons,
       children: [(0, i.jsx)(I.Z, {
-        label: N.intl.string(N.t.dMJ3Y2),
+        label: N.intl.string(N.t.dMJ3Y6),
         onClick: () => l(true),
         icon: (0, i.jsx)(p.BFJ, {
           size: "xs",
           color: "currentColor"
         })
       }), (0, i.jsx)(I.Z, {
-        label: N.intl.string(N.t["3gUsJS"]),
+        label: N.intl.string(N.t["3gUsJb"]),
         onClick: function() {
           h.ZP.open(t.id)
         },
@@ -131,7 +131,7 @@ function M(e) {
             tag: "span",
             variant: "text-md/normal",
             color: "text-muted",
-            children: N.intl.string(N.t.rt0ERU)
+            children: N.intl.string(N.t.rt0ERW)
           })]
         })
       }(), k.map((e, n) => {

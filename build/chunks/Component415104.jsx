@@ -1,4 +1,4 @@
-/** Chunk was on 3408 **/
+/** Chunk was on 17013 **/
 /** chunk id: 415104, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk439826 = require("./439826.jsx"),
   Chunk43779 = require("./43779.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk974326 = require("./974326.js");
+  Chunk88036 = require("./88036.js");
 
 function b(e) {
   var t, n;
@@ -41,7 +41,7 @@ function b(e) {
       },
       sourceQuestContent: C
     }), w && (0, p.loadVideoQuestModal)()
-  }, [P, a.id, u, w, C, b]), R = s.useCallback(() => {
+  }, [P, a.id, u, w, C, b]), A = s.useCallback(() => {
     E(false), P({
       questId: a.id,
       event: x.rMx.QUEST_HOVER_OFF,
@@ -52,7 +52,7 @@ function b(e) {
       },
       sourceQuestContent: C
     })
-  }, [P, a.id, u, C, b]), A = s.useContext(g.t), {
+  }, [P, a.id, u, C, b]), R = s.useContext(g.t), {
     visibilityElementRef: B,
     almostVisibleInViewport: k
   } = function(e) {
@@ -67,7 +67,7 @@ function b(e) {
       }, true),
       almostVisibleInViewport: t
     }
-  }(null != (n = null == A || null == (t = A.current) ? true : t.getScrollerNode()) ? n : null);
+  }(null != (n = null == R || null == (t = R.current) ? true : t.getScrollerNode()) ? n : null);
   return (0, r.jsxs)("div", {
     id: "quest-tile-".concat(a.id),
     ref: e => {
@@ -75,9 +75,9 @@ function b(e) {
     },
     className: o()(_.container, d),
     onMouseEnter: N,
-    onMouseLeave: R,
+    onMouseLeave: A,
     onFocus: N,
-    onBlur: R,
+    onBlur: A,
     children: [(0, r.jsx)(f.Z, {
       quest: a,
       isHovering: y,

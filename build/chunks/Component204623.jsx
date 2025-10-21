@@ -54,7 +54,7 @@ class S extends Chunk647438.PureComponent {
   render() {
     let e = (0, Chunk951288.jsx)("div", {
         children: (0, Chunk951288.jsxs)("p", {
-          children: [Chunk388032.intl.string(Chunk388032.t["4tRjHB"]), " ", (0, Chunk951288.jsx)(Chunk596454.Z, {
+          children: [Chunk388032.intl.string(Chunk388032.t["4tRjHC"]), " ", (0, Chunk951288.jsx)(Chunk596454.Z, {
             src: Chunk176354.ZP.getURL(Chunk336317.Z.convert.fromCodePoint("1f44c")),
             emojiName: ":ok_hand:",
             animated: false
@@ -64,7 +64,7 @@ class S extends Chunk647438.PureComponent {
       t = (0, Chunk951288.jsx)(Chunk755721.zx, {
         size: Chunk755721.Ph.LARGE,
         onClick: this.handleDownload,
-        children: Chunk388032.intl.string(Chunk388032.t["1WjMbG"])
+        children: Chunk388032.intl.string(Chunk388032.t["1WjMbC"])
       });
     return (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk352206.ql, {
@@ -74,7 +74,7 @@ class S extends Chunk647438.PureComponent {
       }), (0, Chunk951288.jsx)(T, {
         type: this.getPlatform()
       }), (0, Chunk951288.jsx)(Chunk406128.Z, {
-        title: Chunk388032.intl.string(Chunk388032.t["3h+n+/"]),
+        title: Chunk388032.intl.string(Chunk388032.t["3h+n+8"]),
         note: module,
         action: exports
       })]

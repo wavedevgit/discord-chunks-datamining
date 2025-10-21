@@ -10,9 +10,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk985002 = require("./985002.js"),
   Chunk957656 = require("./957656.jsx"),
-  Chunk412297 = require("./412297.js"),
+  Chunk660886 = require("./660886.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk589357 = require("./589357.js");
+  Chunk490839 = require("./490839.js");
 let b = e => {
   let {
     currentUser: t,
@@ -24,8 +24,8 @@ let b = e => {
   }, []), j = o.useCallback(() => {
     b()
   }, [b]), g = t.nsfwAllowed, {
-    cancelLinkRequest: m,
-    isCancelLoading: O
+    cancelLinkRequest: O,
+    isCancelLoading: m
   } = (0, a.G)({
     onError: y,
     onSuccess: j
@@ -35,12 +35,12 @@ let b = e => {
     onClose: b,
     children: [p && (0, n.jsx)(l.M14, {
       type: "critical",
-      children: u.intl.string(d.default["6gyAQU"])
+      children: u.intl.string(d.default["6gyAQZ"])
     }), (0, n.jsx)(l.fef, {
       children: (0, n.jsx)(s.Z.Header, {
         currentUser: t,
         otherUser: r,
-        header: u.intl.string(d.default.HynllZ),
+        header: u.intl.string(d.default.HynllX),
         icon: (0, n.jsx)(l.Dio, {
           size: "md",
           color: "currentColor",
@@ -53,15 +53,15 @@ let b = e => {
         variant: "secondary",
         text: u.intl.string(d.default.czincX),
         onClick: b,
-        disabled: O
+        disabled: m
       }, {
         variant: "critical-primary",
-        text: u.intl.string(d.default.mK40bm),
+        text: u.intl.string(d.default.mK40bk),
         onClick: () => {
-          h(false), m(r.id)
+          h(false), O(r.id)
         },
-        disabled: O || p,
-        loading: O
+        disabled: m || p,
+        loading: m
       }]
     })]
   })

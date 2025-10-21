@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk978369 = require("./978369.jsx"),
   Chunk286957 = require("./286957.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk200344 = require("./200344.js");
+  Chunk44258 = require("./44258.js");
 
 function h(e) {
   var t;
@@ -29,11 +29,11 @@ function h(e) {
     disableInteraction: h = false
   } = e, x = null != (t = null == n ? true : n.filter(e => null != (0, p.zK)(e))) ? t : [], _ = x.length > 0, I = o.qH, P = a && !h && (0, f.M8)(s) && x.length < I, {
     trackUserProfileAction: w
-  } = (0, d.KZ)(), S = (0, i.useRef)(new Map), E = (0, i.useRef)(null), T = (0, i.useRef)(null), [C, N] = (0, i.useState)(0), [D, A] = (0, i.useState)(false), k = O(E, T, x, S, N);
+  } = (0, d.KZ)(), S = (0, i.useRef)(new Map), E = (0, i.useRef)(null), T = (0, i.useRef)(null), [C, N] = (0, i.useState)(0), [A, D] = (0, i.useState)(false), k = O(E, T, x, S, N);
   if ((0, i.useEffect)(() => (k(), window.addEventListener("resize", k), () => {
       window.removeEventListener("resize", k)
     }), [k, null == x ? true : x.join("")]), !_ && !P) return null;
-  let Z = D ? x : x.slice(0, x.length - C);
+  let Z = A ? x : x.slice(0, x.length - C);
   return (0, r.jsxs)("div", {
     className: l()(b.tagListContainer, u),
     children: [_ && (0, r.jsxs)(r.Fragment, {
@@ -50,16 +50,16 @@ function h(e) {
           },
           disableInteraction: h
         }, e))
-      }), C > 0 && (D ? (0, r.jsx)(j, {
+      }), C > 0 && (A ? (0, r.jsx)(j, {
         onClick: () => {
-          A(false), w({
+          D(false), w({
             action: "COLLAPSE_GAME_TAGS"
           })
         }
       }) : (0, r.jsx)(y, {
         numHidden: C,
         onClick: () => {
-          A(true), w({
+          D(true), w({
             action: "EXPAND_GAME_TAGS"
           })
         },
@@ -100,7 +100,7 @@ let v = e => {
         color: "text-secondary",
         children: h()
       }), n && !l && (0, r.jsx)(s.u, {
-        text: m.intl.string(m.t.Otv9fH),
+        text: m.intl.string(m.t.Otv9fP),
         children: (0, r.jsx)(c.P3F, {
           onClick: () => {
             (0, f.RZ)(a, i, t), u({
@@ -110,7 +110,7 @@ let v = e => {
             })
           },
           className: b.removeButton,
-          "aria-label": m.intl.formatToPlainString(m.t.GCn1nZ, {
+          "aria-label": m.intl.formatToPlainString(m.t.GCn1ne, {
             tag: h()
           }),
           children: (0, r.jsx)(c.Dio, {
@@ -137,12 +137,12 @@ let v = e => {
       })
     }) : (0, r.jsx)(s.u, {
       asContainer: true,
-      text: m.intl.string(m.t.mriLXF),
+      text: m.intl.string(m.t.mriLXL),
       children: (0, r.jsx)(c.P3F, {
         onClick: n,
         className: b.expandButton,
         innerRef: a,
-        "aria-label": m.intl.string(m.t.mriLXF),
+        "aria-label": m.intl.string(m.t.mriLXL),
         children: (0, r.jsx)(c.Text, {
           variant: "text-xxs/medium",
           color: "none",
@@ -157,11 +157,11 @@ let v = e => {
     } = e;
     return (0, r.jsx)(s.u, {
       asContainer: true,
-      text: m.intl.string(m.t.z9VPra),
+      text: m.intl.string(m.t.z9VPrQ),
       children: (0, r.jsx)(c.P3F, {
         onClick: t,
         className: b.collapseButton,
-        "aria-label": m.intl.string(m.t.z9VPra),
+        "aria-label": m.intl.string(m.t.z9VPrQ),
         children: (0, r.jsx)(u.Z, {
           direction: u.Z.Directions.LEFT,
           width: 12,

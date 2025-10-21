@@ -13,7 +13,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk518596 = require("./518596.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk656900 = require("./656900.js");
+  Chunk26621 = require("./26621.js");
 
 function f(e) {
   let {
@@ -32,7 +32,7 @@ function f(e) {
         [d.disabled]: t
       }),
       onClick: n,
-      children: u.intl.string(u.t.Br1ls7)
+      children: u.intl.string(u.t.Br1ls3)
     })]
   })
 }

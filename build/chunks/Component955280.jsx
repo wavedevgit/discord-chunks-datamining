@@ -44,9 +44,9 @@ function f(e) {
       let t = u.Z.getWidget(e.id);
       return null != t && (0, p.Aw)(t) ? t : null
     }),
-    k = null != (a = null == h || null == (t = h.meta) ? true : t.voiceStatesMaxShown) ? a : g.At;
+    x = null != (a = null == h || null == (t = h.meta) ? true : t.voiceStatesMaxShown) ? a : g.At;
 
-  function x(e) {
+  function k(e) {
     null != h && (e < 1 ? (0, s.zG)(h.id, {
       voiceStatesMaxShown: g.Og
     }) : (0, s.zG)(h.id, {
@@ -56,16 +56,16 @@ function f(e) {
   return (0, n.jsxs)(i.v2r, {
     navId: "overlay-voice-widget-context-menu",
     onClose: o.Zy,
-    "aria-label": y.intl.string(y.t.tPfVWl),
+    "aria-label": y.intl.string(y.t.tPfVWi),
     onSelect: f,
     children: [(0, n.jsx)(i.kSQ, {
-      label: y.intl.string(y.t.dnvZSk),
+      label: y.intl.string(y.t.dnvZSg),
       children: [{
         value: m.ipw.LARGE,
         name: y.intl.string(y.t.YcOxtr)
       }, {
         value: m.ipw.SMALL,
-        name: y.intl.string(y.t.BKIKq6)
+        name: y.intl.string(y.t.BKIKqx)
       }].map(e => (0, n.jsx)(i.k5B, {
         label: e.name,
         checked: O === e.value,
@@ -74,16 +74,16 @@ function f(e) {
         action: () => c.Z.setAvatarSizeMode(e.value)
       }, e.value))
     }), (0, n.jsx)(i.kSQ, {
-      label: y.intl.string(y.t.J0dpcH),
+      label: y.intl.string(y.t.J0dpcB),
       children: [{
         value: m.wC$.ALWAYS,
-        name: y.intl.string(y.t.nBmDra)
+        name: y.intl.string(y.t.nBmDrT)
       }, {
         value: m.wC$.ONLY_WHILE_SPEAKING,
-        name: y.intl.string(y.t["2OvIZW"])
+        name: y.intl.string(y.t["2OvIZY"])
       }, {
         value: m.wC$.NEVER,
-        name: y.intl.string(y.t.ekjlPD)
+        name: y.intl.string(y.t.ekjlPL)
       }].map(e => (0, n.jsx)(i.k5B, {
         label: e.name,
         checked: j === e.value,
@@ -92,13 +92,13 @@ function f(e) {
         action: () => c.Z.setDisplayNameMode(e.value)
       }, e.value))
     }), (0, n.jsx)(i.kSQ, {
-      label: y.intl.string(y.t.swsWWF),
+      label: y.intl.string(y.t.swsWWC),
       children: [{
         value: m.OYC.ALWAYS,
-        name: y.intl.string(y.t.nBmDra)
+        name: y.intl.string(y.t.nBmDrT)
       }, {
         value: m.OYC.ONLY_WHILE_SPEAKING,
-        name: y.intl.string(y.t["2OvIZW"])
+        name: y.intl.string(y.t["2OvIZY"])
       }].map(e => (0, n.jsx)(i.k5B, {
         label: e.name,
         checked: w === e.value,
@@ -131,11 +131,11 @@ function f(e) {
             return e
           }({}, e), l = l = {
             ref: t,
-            value: k,
+            value: x,
             minValue: 0,
             maxValue: g.yC,
-            onChange: x,
-            renderValue: e => e < 1 ? y.intl.string(y.t.nrUzFB) : "".concat(Math.floor(e)),
+            onChange: k,
+            renderValue: e => e < 1 ? y.intl.string(y.t.nrUzFL) : "".concat(Math.floor(e)),
             "aria-label": y.intl.string(y.t["X/Uyzc"])
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(a, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var a = Object.keys(e);

@@ -1,7 +1,7 @@
 /** Chunk was on 26976 **/
 /** chunk id: 415118, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => _
+  default: () => T
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -34,74 +34,74 @@ var Chunk481060 = require("./481060.js"),
   Chunk332031 = require("./332031.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let _ = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
+let T = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
   let {
     user: t,
     guildId: n,
     showModalItems: o = true,
     showMediaItems: a = false,
     showChatItems: u = true,
-    context: _,
-    onSelect: T
+    context: T,
+    onSelect: D
   } = e, U = {
     page: A.ZY5.GUILD_CHANNEL,
     section: A.jXE.CHAT_USERNAME,
     object: A.qAy.CONTEXT_MENU_ITEM
-  }, L = (0, M.Z)({
+  }, w = (0, M.Z)({
     userId: t.id,
     guildId: n
-  }), w = (0, P.Z)(t, n, _), k = (0, p.Z)(t.id, _), R = (0, N.Z)(t.id), B = (0, v.Z)({
+  }), L = (0, P.Z)(t, n, T), k = (0, p.Z)(t.id, T), R = (0, N.Z)(t.id), B = (0, E.Z)({
     user: t,
-    context: _
-  }), q = (0, m.Z)({
+    context: T
+  }), V = (0, m.Z)({
     user: t,
     guildId: n,
-    context: _
-  }), V = (0, f.Z)({
+    context: T
+  }), q = (0, Z.Z)({
     user: t
   }), G = (0, x.Z)(t.id), F = (0, C.Z)(t.id), Y = (0, c.Z)({
     guildId: n,
     userId: t.id,
     analyticsLocation: U,
-    context: _
-  }), H = (0, g.Z)({
+    context: T
+  }), Q = (0, g.Z)({
     user: t,
     guildId: n
-  }), Q = (0, j.Z)({
+  }), H = (0, j.Z)({
     user: t,
     guildId: n
-  }), K = (0, s.Z)(null, t), W = (0, Z.Z)({
+  }), K = (0, s.Z)(null, t), W = (0, f.Z)({
     user: t
-  }), J = (0, b.Z)({
+  }), X = (0, b.Z)({
     user: t
-  }), X = (0, S.Z)({
+  }), J = (0, y.Z)({
     user: t
   }), z = (0, h.Z)({
     user: t,
     guildId: n,
     location: "GuildUserContextMenu"
-  }), $ = (0, E.Z)({
+  }), $ = (0, v.Z)({
     user: t,
     guildId: n,
     location: "GuildUserContextMenu"
-  }), ee = (0, O.Z)(t, n), et = (0, I.Z)(t.id, n), en = (0, y.Z)(t, n), el = (0, d.Z)({
+  }), ee = (0, O.Z)(t, n), et = (0, I.Z)(t.id, n), en = (0, S.Z)(t, n), el = (0, d.Z)({
     id: t.id,
-    label: D.intl.string(D.t["/AXYnJ"])
+    label: _.intl.string(_.t["/AXYnE"])
   }), ei = t.isNonUserBot();
   return (0, l.jsxs)(i.v2r, {
     navId: "user-context",
     onClose: r.Zy,
-    "aria-label": D.intl.string(D.t.liqwPD),
-    onSelect: T,
+    "aria-label": _.intl.string(_.t.liqwPJ),
+    onSelect: D,
     children: [!ei && (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsxs)(i.kSQ, {
-        children: [o && L, u && w, k, B, o && q, o && V, R]
+        children: [o && w, u && L, k, B, o && V, o && q, R]
       }), a && (0, l.jsx)(i.kSQ, {
         children: G
       }), (0, l.jsx)(i.kSQ, {
         children: o && K
       }), (0, l.jsxs)(i.kSQ, {
-        children: [a && F, o && Y, o && Q, W, J, X, H, o && $, o && z]
+        children: [a && F, o && Y, o && H, W, X, J, Q, o && $, o && z]
       }), (0, l.jsx)(i.kSQ, {
         children: ee
       }), (0, l.jsxs)(i.kSQ, {

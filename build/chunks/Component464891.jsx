@@ -47,7 +47,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk935910 = require("./935910.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk136907 = require("./136907.js"),
+  Chunk724913 = require("./724913.js"),
   Chunk121282 = require("./121282.js");
 
 function W(e, t, n) {
@@ -419,14 +419,14 @@ let ea = Chunk647438.memo(function(e) {
     return (0, r.jsx)(c.u, {
       asContainer: true,
       shouldShow: null != i,
-      text: V.intl.formatToPlainString(V.t["8zbGNT"], {
+      text: V.intl.formatToPlainString(V.t["8zbGNR"], {
         date: i
       }),
       onTooltipShow: () => (0, T.Z)(n.id),
       children: (0, r.jsx)(u.P3F, {
         className: H.nitroAuthorBadgeContainer,
         onClick: () => er(t),
-        "aria-label": V.intl.formatToPlainString(V.t["8zbGNT"], {
+        "aria-label": V.intl.formatToPlainString(V.t["8zbGNR"], {
           date: i
         }),
         children: (0, r.jsx)("img", {
@@ -479,14 +479,14 @@ let ea = Chunk647438.memo(function(e) {
       avatar: P,
       username: (0, r.jsxs)(r.Fragment, {
         children: [R && (0, r.jsx)(c.u, {
-          text: V.intl.string(V.t.AeYyLy),
+          text: V.intl.string(V.t["AeYyL+"]),
           children: (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(u.YlB, {
               size: "xxs",
               color: "currentColor",
               className: a ? H.compactCommunicationDisabled : H.communicationDisabled
             }), (0, r.jsx)(u.nn4, {
-              children: V.intl.string(V.t.AmHag4)
+              children: V.intl.string(V.t.AmHag5)
             })]
           })
         }), (0, r.jsx)($, q(K({}, e), {

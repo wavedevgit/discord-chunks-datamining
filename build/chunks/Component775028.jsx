@@ -1,7 +1,7 @@
 /** Chunk was on 58121 **/
 /** chunk id: 775028, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => G
+  Z: () => W
 }), require("./388685.js"), require("./539854.js"), require("./472816.js"), require("./794429.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -32,8 +32,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk174986 = require("./174986.js"),
-  Chunk602009 = require("./602009.js");
+  Chunk444630 = require("./444630.js"),
+  Chunk430864 = require("./430864.js");
 
 function A(e) {
   for (var n = 1; n < arguments.length; n++) {
@@ -111,14 +111,14 @@ function L(e) {
       }), (0, l.jsx)(m.Text, {
         color: "text-muted",
         variant: "text-xs/medium",
-        children: S.intl.string(S.t.mSQwnZ)
+        children: S.intl.string(S.t.mSQwnW)
       })]
     })]
   })
 }
 let M = Chunk647438.memo(function() {
     return (0, Chunk951288.jsx)("div", {
-      className: Chunk174986.separator
+      className: Chunk444630.separator
     })
   }),
   H = Chunk647438.memo(function(e) {
@@ -142,12 +142,12 @@ let M = Chunk647438.memo(function() {
       tooltipDirection: w = "right"
     } = e, {
       isSubscriptionGated: L
-    } = (0, g.Z)(n.id), U = (0, I.Mf)(i.id, n.id, r.id), G = (0, I.t4)(i.id, n.id, r.id), W = (0, I.EH)(i.id, r.id), F = (0, o.e7)([O.Z], () => O.Z.getActiveThreadCount(i.id, n.id)), q = (0, o.e7)([b.Z], () => b.Z.shouldIndicateNewChannel(i.id, n.id)), z = function(e, n) {
+    } = (0, g.Z)(n.id), U = (0, I.Mf)(i.id, n.id, r.id), W = (0, I.t4)(i.id, n.id, r.id), G = (0, I.EH)(i.id, r.id), F = (0, o.e7)([O.Z], () => O.Z.getActiveThreadCount(i.id, n.id)), q = (0, o.e7)([b.Z], () => b.Z.shouldIndicateNewChannel(i.id, n.id)), z = function(e, n) {
       let t = [];
       return P.TPd.GUILD_THREADS_ONLY.has(e.type) && n >= 1 && t.push((0, l.jsx)(m.Text, {
         variant: "text-xs/normal",
         className: T.channelSubtitle,
-        children: S.intl.format(S.t.z0qMLy, {
+        children: S.intl.format(S.t.z0qML2, {
           count: n
         })
       }, "thread-count")), D.has(e.type) || t.push((0, l.jsx)(m.Text, {
@@ -166,23 +166,23 @@ let M = Chunk647438.memo(function() {
       }, "topic")), [t.map((e, n) => [e, (0, l.jsx)(H, {
         index: n
       }, "subtitle-separator-".concat(n))])].flat(2).slice(0, false)
-    }(n, F), V = S.intl.string(S.t.vetGQk);
-    n.isGuildStageVoice() || n.isGuildVoice() ? V = S.intl.string(S.t.VJlc0d) : n.isForumLikeChannel() && (V = S.intl.string(S.t["3xjX0d"]));
-    let X = G ? "text-muted" : "text-default",
-      Q = (0, m.dQu)(G ? c.Z.colors.TEXT_MUTED : c.Z.colors.TEXT_DEFAULT).hex();
+    }(n, F), V = S.intl.string(S.t.vetGQs);
+    n.isGuildStageVoice() || n.isGuildVoice() ? V = S.intl.string(S.t.VJlc0S) : n.isForumLikeChannel() && (V = S.intl.string(S.t["3xjX0U"]));
+    let X = W ? "text-muted" : "text-default",
+      Q = (0, m.dQu)(W ? c.Z.colors.TEXT_MUTED : c.Z.colors.TEXT_DEFAULT).hex();
     return (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsx)(d.u, {
-        text: W,
+        text: G,
         delay: 500,
         position: w,
         children: (0, l.jsxs)(m.P3F, {
           className: a()(T.channelRow, {
             [T.firstChannel]: s,
             [T.lastChannel]: f,
-            [T.disabled]: G
+            [T.disabled]: W
           }),
           onClick: e => {
-            if (!G) return e.stopPropagation(), Z(i.id, n.id, r.id), true
+            if (!W) return e.stopPropagation(), Z(i.id, n.id, r.id), true
           },
           onContextMenu: e => {
             n.isGuildVocal() ? (0, h.jW)(e, async () => {
@@ -249,7 +249,7 @@ let M = Chunk647438.memo(function() {
               "aria-checked": U,
               value: U,
               type: u.M0.INVERTED,
-              disabled: G,
+              disabled: W,
               innerClassName: T.checkboxInner,
               displayOnly: true
             })]
@@ -259,7 +259,7 @@ let M = Chunk647438.memo(function() {
     })
   });
 
-function G(e) {
+function W(e) {
   let {
     categories: n,
     guild: t,

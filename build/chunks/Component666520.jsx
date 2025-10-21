@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk246946 = require("./246946.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk460211 = require("./460211.js");
+  Chunk215258 = require("./215258.js");
 
 function p(e) {
   let {
@@ -34,8 +34,8 @@ function p(e) {
       ref: j,
       className: m.textarea,
       disabled: h,
-      placeholder: h ? u.intl.string(u.t["WLKx//"]) : u.intl.string(u.t.VBhOe3),
-      "aria-label": u.intl.string(u.t.PbMNh4),
+      placeholder: h ? u.intl.string(u.t["WLKx/9"]) : u.intl.string(u.t.VBhOe2),
+      "aria-label": u.intl.string(u.t.PbMNh2),
       onBlur: e => {
         let n = e.currentTarget.value;
         (null != v ? v : "") !== n && (null == f || f(), s.Z.updateNote(p, n))

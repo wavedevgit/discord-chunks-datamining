@@ -10,7 +10,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk565138 = require("./565138.jsx"),
   Chunk430824 = require("./430824.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk410886 = require("./410886.js");
+  Chunk573265 = require("./573265.js");
 let d = e => {
   let {
     event: t
@@ -20,7 +20,7 @@ let d = e => {
     children: [(0, r.jsx)(l.Heading, {
       className: c.header,
       variant: "heading-sm/semibold",
-      children: o.intl.string(o.t.SDTOLy)
+      children: o.intl.string(o.t.SDTOL7)
     }), (0, r.jsxs)("div", {
       className: c.guildContainer,
       children: [(0, r.jsxs)("div", {

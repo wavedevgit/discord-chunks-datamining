@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 654142, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -89,9 +89,9 @@ let _ = Chunk647438.memo(function(e) {
     mentionCount: x.map(e => u.default.getMentionCount(e)).reduce((e, t) => e + t, 0),
     isMentionLowImportance: x.every(e => u.default.getIsMentionLowImportance(e)),
     unread: x.some(e => u.default.hasUnread(e))
-  })), T = i.useCallback(() => {
+  })), w = i.useCallback(() => {
     a.Z.toggleGuildFolderExpand(O)
-  }, [O]), w = i.useCallback(e => {
+  }, [O]), T = i.useCallback(e => {
     (0, o.jW)(e, async () => {
       let {
         default: e
@@ -113,7 +113,7 @@ let _ = Chunk647438.memo(function(e) {
     unread: Z,
     mediaState: I,
     defaultFolderName: S,
-    onExpandCollapse: T,
-    onContextMenu: w
+    onExpandCollapse: w,
+    onContextMenu: T
   }))
 })

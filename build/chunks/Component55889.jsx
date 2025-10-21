@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 55889, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -10,7 +10,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk941524 = require("./941524.jsx"),
   Chunk563115 = require("./563115.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk993061 = require("./993061.js");
+  Chunk482908 = require("./482908.js");
 
 function d(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -65,14 +65,14 @@ let g = Chunk647438.memo(function(e) {
     onChange: e => i(u(d({}, t), {
       exemptRoles: e
     })),
-    placeholder: o.intl.string(o.t.aFO1Iy),
+    placeholder: o.intl.string(o.t.aFO1I6),
     disableEveryoneRole: true
   })), (0, r.jsxs)("div", {
     children: [g, (0, r.jsx)(l.Text, {
       color: "header-secondary",
       variant: "text-xs/normal",
       className: c.exemptionHint,
-      children: o.intl.string(o.t.GKlYaW)
+      children: o.intl.string(o.t.GKlYaS)
     })]
   })
 })

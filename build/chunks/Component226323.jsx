@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk51144 = require("./51144.js"),
   Chunk524484 = require("./524484.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk188270 = require("./188270.js");
+  Chunk720711 = require("./720711.js");
 
 function N(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -65,27 +65,27 @@ let P = {
     serverDeaf: {
       icon: Chunk481060.Vm4,
       colorize: true,
-      getStatus: () => Chunk388032.intl.string(Chunk388032.t.btxSdH)
+      getStatus: () => Chunk388032.intl.string(Chunk388032.t.btxSdB)
     },
     serverMute: {
       icon: Chunk481060.v0G,
       colorize: true,
-      getStatus: () => Chunk388032.intl.string(Chunk388032.t.uLddbW)
+      getStatus: () => Chunk388032.intl.string(Chunk388032.t.uLddbQ)
     },
     deaf: {
       icon: Chunk481060.wE8,
       colorize: false,
-      getStatus: () => Chunk388032.intl.string(Chunk388032.t.NjmiOD)
+      getStatus: () => Chunk388032.intl.string(Chunk388032.t.NjmiOL)
     },
     mute: {
       icon: Chunk481060.nRN,
       colorize: false,
-      getStatus: () => Chunk388032.intl.string(Chunk388032.t.tjtv3N)
+      getStatus: () => Chunk388032.intl.string(Chunk388032.t.tjtv3P)
     },
     localMute: {
       icon: Chunk481060.v0G,
       colorize: false,
-      getStatus: () => Chunk388032.intl.string(Chunk388032.t["9F+xJS"])
+      getStatus: () => Chunk388032.intl.string(Chunk388032.t["9F+xJU"])
     }
   };
 
@@ -136,7 +136,7 @@ function x(e) {
       mute: Z,
       localMute: D
     })) ? l : {},
-    F = null != V ? C.intl.formatToPlainString(C.t["1+MVBA"], {
+    F = null != V ? C.intl.formatToPlainString(C.t["1+MVBP"], {
       userName: G,
       status: V()
     }) : G;
@@ -145,7 +145,7 @@ function x(e) {
     null != k ? (0, u.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("19848")]).then(n.bind(n, 757387));
+      } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("52021")]).then(n.bind(n, 757387));
       return t => (0, r.jsx)(e, T(N({}, t), {
         user: x,
         guildId: k,
@@ -242,7 +242,7 @@ function A(e) {
     onClick: () => u(!s),
     color: c.YX$.PRIMARY,
     size: c.tT7.SIZE_24,
-    tooltip: s ? C.intl.string(C.t["Z/Tya2"]) : C.intl.string(C.t.XR5BAQ),
+    tooltip: s ? C.intl.string(C.t["Z/Tya5"]) : C.intl.string(C.t.XR5BAc),
     icon: (0, r.jsx)(_, {
       size: "xs",
       color: "currentColor"
@@ -256,7 +256,7 @@ function A(e) {
       ref: h,
       className: a()(S.voiceUsers, !s && S.collapsed),
       role: "group",
-      "aria-label": C.intl.string(C.t["/ZgaVV"]),
+      "aria-label": C.intl.string(C.t["/ZgaVU"]),
       children: [v.map(e => {
         let {
           user: t,

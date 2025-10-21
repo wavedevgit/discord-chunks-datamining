@@ -1,4 +1,4 @@
-/** Chunk was on 63962 **/
+/** Chunk was on 91053 **/
 /** chunk id: 406326, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => E
@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk250990 = require("./250990.js");
+  Chunk865239 = require("./865239.js");
 
 function I(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -67,7 +67,7 @@ function E(e) {
     isIndexing: p,
     isSearching: h,
     documentsIndexed: y,
-    selectedChannelId: j
+    selectedChannelId: O
   } = e, E = (0, m.nP)({
     location: "SearchHeader"
   }), P = (0, m.KS)({
@@ -75,12 +75,12 @@ function E(e) {
   }), T = E || P, N = (0, _.I)(t), {
     totalFilters: R
   } = (0, b.p4)(N, t), D = i.useMemo(() => {
-    if (t.type === O.aib.DMS) {
+    if (t.type === j.aib.DMS) {
       var e, n;
       let t = null != (n = null == (e = (0, f.$G)(N).channel_id) ? true : e.length) ? n : 0;
-      return t > 0 ? v.intl.format(v.t.A2dqWF, {
+      return t > 0 ? v.intl.format(v.t.A2dqWG, {
         filterCount: t
-      }) : v.intl.string(v.t.tc619f)
+      }) : v.intl.string(v.t.tc619d)
     }
     return null
   }, [t.type, N]), [L, M] = i.useState(null), k = i.useMemo(() => h ? [] : [s.z.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER], [h]), [U, G] = (0, u.US)(k), H = U === s.z.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER, F = i.useCallback(e => {
@@ -91,16 +91,16 @@ function E(e) {
     F(null), (0, d.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("37979"), n.e("386")]).then(n.bind(n, 238088));
+      } = await Promise.all([n.e("37979"), n.e("57390")]).then(n.bind(n, 238088));
       return n => (0, r.jsx)(e, S(I({}, n), {
         searchContext: t
       }))
     })
-  }, [t, F]), z = i.useMemo(() => R > 0 ? v.intl.format(v.t.uaR4sL, {
+  }, [t, F]), z = i.useMemo(() => R > 0 ? v.intl.format(v.t.uaR4sI, {
     filterCount: R
-  }) : v.intl.string(v.t.UdhTtr), [R]), W = (0, g.u5)({
+  }) : v.intl.string(v.t.UdhTtk), [R]), W = (0, g.u5)({
     location: "SearchHeader"
-  }), Y = t.type === O.aib.DMS || t.type === O.aib.CHANNEL, q = i.useMemo(() => T && W ? (0, r.jsxs)("div", {
+  }), Y = t.type === j.aib.DMS || t.type === j.aib.CHANNEL, q = i.useMemo(() => T && W ? (0, r.jsxs)("div", {
     className: C.searchModeAndFiltersContainer,
     children: [(0, r.jsx)(d.Button, {
       variant: "secondary",
@@ -115,7 +115,7 @@ function E(e) {
       setOpenPopout: F
     }), Y && (0, r.jsx)(w, {
       searchContext: t,
-      selectedChannelId: j,
+      selectedChannelId: O,
       isPopoutOpen: "settings" === L,
       setOpenPopout: F,
       isPopoverVisible: H,
@@ -144,7 +144,7 @@ function E(e) {
       setOpenPopout: F
     }), Y && (0, r.jsx)(w, {
       searchContext: t,
-      selectedChannelId: j,
+      selectedChannelId: O,
       isPopoutOpen: "settings" === L,
       setOpenPopout: F,
       isPopoverVisible: H,
@@ -157,18 +157,18 @@ function E(e) {
     onItemSelect: o,
     children: [(0, r.jsx)(d.njP.Item, {
       className: C.searchHeaderTab,
-      id: O.QIO.NEWEST,
-      children: v.intl.string(v.t.rLjqbW)
+      id: j.QIO.NEWEST,
+      children: v.intl.string(v.t.rLjqbS)
     }), (0, r.jsx)(d.njP.Item, {
       className: C.searchHeaderTab,
-      id: O.QIO.OLDEST,
-      children: v.intl.string(v.t.a1BaUl)
+      id: j.QIO.OLDEST,
+      children: v.intl.string(v.t.a1BaUr)
     }), (0, r.jsx)(d.njP.Item, {
       className: C.searchHeaderTab,
-      id: O.QIO.MOST_RELEVANT,
-      children: v.intl.string(v.t.FtR97u)
+      id: j.QIO.MOST_RELEVANT,
+      children: v.intl.string(v.t.FtR97k)
     })]
-  }), [z, V, T, L, W, Y, o, t, l, j, H, F, B]);
+  }), [z, V, T, L, W, Y, o, t, l, O, H, F, B]);
   return (0, r.jsxs)("header", {
     className: a()(C.searchHeader, {
       [C.searchHeaderWithSubtitle]: null != D
@@ -205,11 +205,11 @@ function Z(e) {
 
 function P() {
   return (0, Chunk951288.jsx)("div", {
-    className: Chunk250990.spinnerWrapper,
+    className: Chunk865239.spinnerWrapper,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {
       type: Chunk481060.$jN.Type.SPINNING_CIRCLE,
-      className: Chunk250990.spinner,
-      itemClassName: Chunk250990.spinnerPath
+      className: Chunk865239.spinner,
+      itemClassName: Chunk865239.spinnerPath
     })
   })
 }
@@ -220,7 +220,7 @@ function T(e) {
   } = e;
   return (0, r.jsx)(c.u, {
     asContainer: true,
-    text: v.intl.formatToPlainString(v.t["4Y3O+P"], {
+    text: v.intl.formatToPlainString(v.t["4Y3O+O"], {
       count: t
     }),
     children: (0, r.jsxs)("div", {
@@ -230,8 +230,8 @@ function T(e) {
         color: "text-muted",
         children: (0, r.jsx)(d.Anchor, {
           className: C.helpdeskLink,
-          href: h.Z.getArticleURL(O.BhN.SEARCH_INDEXING),
-          children: v.intl.string(v.t["G3EA+/"])
+          href: h.Z.getArticleURL(j.BhN.SEARCH_INDEXING),
+          children: v.intl.string(v.t["G3EA+4"])
         })
       }), (0, r.jsx)(P, {})]
     })
@@ -243,7 +243,7 @@ function N() {
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/medium",
       color: "header-secondary",
-      children: Chunk388032.intl.string(Chunk388032.t.uixzLS)
+      children: Chunk388032.intl.string(Chunk388032.t.uixzLf)
     }), (0, Chunk951288.jsx)(P, {})]
   })
 }
@@ -255,7 +255,7 @@ function R(e) {
   } = e, l = i.useMemo(() => t.toLocaleString(), [t]), a = (0, r.jsx)(d.Text, {
     variant: "text-md/medium",
     color: "header-primary",
-    children: v.intl.format(v.t.ZGVL3t, {
+    children: v.intl.format(v.t.ZGVL3g, {
       count: l
     })
   });
@@ -278,11 +278,11 @@ function w(e) {
     setOpenPopout: s,
     onPopoverRequestClose: c,
     isPopoverVisible: u
-  } = e, h = i.useRef(null), g = null != (t = p.rR.useSetting()) ? t : j.K, m = i.useCallback(e => {
+  } = e, h = i.useRef(null), g = null != (t = p.rR.useSetting()) ? t : O.K, m = i.useCallback(e => {
     if (g !== e) {
       if (e) {
         let e = {
-          type: O.aib.DMS
+          type: j.aib.DMS
         };
         y.Z.transitionQueryStateToSearchContext(n, e, t => {
           y.Z.cleanUpPrivateChannelSearchState(), y.Z.fetchCrossDMMessages({
@@ -293,7 +293,7 @@ function w(e) {
         })
       } else {
         let e = {
-          type: O.aib.CHANNEL,
+          type: j.aib.CHANNEL,
           channelId: l
         };
         y.Z.transitionQueryStateToSearchContext(n, e, t => {
@@ -327,20 +327,20 @@ function w(e) {
         return (0, r.jsx)(d.v2r, {
           navId: "search-settings-cog",
           onClose: t,
-          "aria-label": v.intl.string(v.t.fb59v7),
+          "aria-label": v.intl.string(v.t.fb59v0),
           onSelect: () => s(null),
           children: (0, r.jsxs)(d.kSQ, {
-            label: v.intl.string(v.t["/tMwrK"]),
+            label: v.intl.string(v.t["/tMwrA"]),
             children: [(0, r.jsx)(d.k5B, {
               id: "xdm-search-disabled",
               group: "xdm-search-items",
-              label: v.intl.string(v.t.jRkYAg),
+              label: v.intl.string(v.t.jRkYAh),
               checked: !g,
               action: () => m(false)
             }), (0, r.jsx)(d.k5B, {
               id: "xdm-search-enabled",
               group: "xdm-search-items",
-              label: v.intl.string(v.t["lWpJ/v"]),
+              label: v.intl.string(v.t["lWpJ/t"]),
               checked: g,
               action: () => m(true)
             })]
@@ -354,15 +354,15 @@ function w(e) {
         onClick: () => {
           s(a ? null : "settings")
         },
-        "aria-label": v.intl.string(v.t["3D5yo6"]),
+        "aria-label": v.intl.string(v.t["3D5yo/"]),
         size: "sm"
       }))
     }), (0, r.jsx)(o.J2, {
       targetElementRef: h,
       shouldShow: u,
       onRequestClose: c,
-      title: v.intl.string(v.t.qha2Zm),
-      body: v.intl.string(v.t.IQWEoa),
+      title: v.intl.string(v.t.qha2Zv),
+      body: v.intl.string(v.t.IQWEoV),
       caretConfig: b
     })]
   })
@@ -375,14 +375,14 @@ function A(e) {
     isPopoutOpen: l,
     setOpenPopout: a
   } = e, s = i.useRef(null), o = i.useMemo(() => [{
-    label: v.intl.string(v.t.CbaapK),
-    value: O.QIO.NEWEST
+    label: v.intl.string(v.t.CbaapP),
+    value: j.QIO.NEWEST
   }, {
-    label: v.intl.string(v.t.OukXZm),
-    value: O.QIO.OLDEST
+    label: v.intl.string(v.t.OukXZj),
+    value: j.QIO.OLDEST
   }, {
-    label: v.intl.string(v.t["q8gB5+"]),
-    value: O.QIO.MOST_RELEVANT
+    label: v.intl.string(v.t.q8gB52),
+    value: j.QIO.MOST_RELEVANT
   }], []);
   return (0, r.jsx)(d.yRy, {
     targetElementRef: s,
@@ -398,7 +398,7 @@ function A(e) {
       return (0, r.jsx)(d.v2r, {
         navId: "search-result-sort-menu",
         onClose: i,
-        "aria-label": v.intl.string(v.t.utp2hY),
+        "aria-label": v.intl.string(v.t.utp2hS),
         onSelect: () => a(null),
         children: (0, r.jsx)(d.kSQ, {
           children: o.map(e => {
@@ -424,7 +424,7 @@ function A(e) {
       onClick: () => {
         a(l ? null : "sort")
       },
-      "aria-label": v.intl.string(v.t.XvNMNj),
+      "aria-label": v.intl.string(v.t.XvNMNk),
       size: "sm"
     }))
   })

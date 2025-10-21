@@ -71,7 +71,7 @@ function y(e) {
     return c.Z.getChannel(null == (e = d.Z.getVoiceStateForUser(t.id)) ? true : e.channelId)
   }), v = (0, i.e7)([u.Z], () => u.Z.getChannelId() === (null == O ? true : O.id));
   return (null == n ? true : n.type) !== p.IIU.HANG_STATUS || null == O ? null : (0, r.jsx)(_.O1, {
-    text: v ? h.intl.string(h.t.BXxdl5) : h.intl.string(h.t["9C444u"]),
+    text: v ? h.intl.string(h.t.BXxdl7) : h.intl.string(h.t["9C444m"]),
     fullWidth: true,
     onClick: e => {
       e.stopPropagation(), null == m || m({

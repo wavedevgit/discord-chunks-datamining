@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk98650 = require("./98650.js"),
   Chunk383056 = require("./383056.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk786614 = require("./786614.js");
+  Chunk361421 = require("./361421.js");
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -322,7 +322,7 @@ function L(e) {
                 role: "button",
                 "aria-disabled": s,
                 onClick: eo,
-                "aria-label": E.intl.string(E.t.VkKicX),
+                "aria-label": E.intl.string(E.t.VkKicb),
                 children: (0, r.jsx)(p.Dio, {
                   size: "xs",
                   color: "currentColor",

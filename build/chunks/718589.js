@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 718589, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => l
@@ -14,7 +14,7 @@ function l(e) {
   if (t.type === r.d4z.GUILD_VOICE) {
     if (null != n && n.length > 0) {
       let e = n.map(e => e.application.name);
-      return i.intl.formatToPlainString(i.t.LmYuHR, {
+      return i.intl.formatToPlainString(i.t.LmYuHT, {
         activeActivities: e.join(", ")
       })
     }

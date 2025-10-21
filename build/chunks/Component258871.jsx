@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 258871, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -53,7 +53,7 @@ let g = [{
       color: "currentColor",
       className: e
     }),
-    getName: () => Chunk388032.intl.string(Chunk388032.t.K50GHR),
+    getName: () => Chunk388032.intl.string(Chunk388032.t.K50GHd),
     handler: (e, t) => (0, s.XU)(e.id, t.id)
   }, {
     key: "ADD_SERVERS",
@@ -62,7 +62,7 @@ let g = [{
       color: "currentColor",
       className: e
     }),
-    getName: () => Chunk388032.intl.string(Chunk388032.t.emRpdX),
+    getName: () => Chunk388032.intl.string(Chunk388032.t.emRpdS),
     handler: (e, t) => (0, l.ZDy)(async () => {
       let {
         default: i
@@ -78,11 +78,11 @@ let g = [{
     renderIcon: e => (0, r.jsx)(l.ejJ, {
       className: e
     }),
-    getName: () => Chunk388032.intl.string(Chunk388032.t.MJQOuL),
+    getName: () => Chunk388032.intl.string(Chunk388032.t.MJQOuJ),
     handler: (e, t) => (0, l.ZDy)(async () => {
       let {
         default: i
-      } = await Promise.all([n.e("7654"), n.e("28297")]).then(n.bind(n, 560114));
+      } = await Promise.all([n.e("7654"), n.e("89772")]).then(n.bind(n, 560114));
       return n => (0, r.jsx)(i, h(f({}, n), {
         guild: e,
         channel: t,

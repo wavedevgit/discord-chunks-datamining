@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk186901 = require("./186901.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk961588 = require("./961588.js");
+  Chunk87805 = require("./87805.js");
 
 function m(e) {
   let {
@@ -54,20 +54,20 @@ function m(e) {
     className: g.container,
     children: [(0, r.jsx)(s.Heading, {
       variant: "heading-xxl/bold",
-      children: h.intl.string(h.t.csrAMD)
+      children: h.intl.string(h.t.csrAMJ)
     }), (0, r.jsx)(s.Text, {
       variant: "text-xs/semibold",
-      children: h.intl.string(h.t["m1+IBg"])
+      children: h.intl.string(h.t["m1+IBn"])
     }), (0, r.jsx)(o.zxk, {
       variant: "primary",
-      text: h.intl.string(h.t.fIv16O),
+      text: h.intl.string(h.t.fIv16B),
       onClick: () => b(true)
     })]
   }) : (0, r.jsxs)("div", {
     className: g.container,
     children: [(0, r.jsx)(s.Heading, {
       variant: "heading-xxl/bold",
-      children: h.intl.string(h.t["Z+hCVV"])
+      children: h.intl.string(h.t["Z+hCVU"])
     }), (0, r.jsx)(s.$jN, {})]
   }) : (0, r.jsx)(d.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {

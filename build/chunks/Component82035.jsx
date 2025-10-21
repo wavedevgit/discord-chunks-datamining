@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk51144 = require("./51144.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk174804 = require("./174804.js");
+  Chunk277081 = require("./277081.js");
 
 function p(l) {
   let {
@@ -28,22 +28,22 @@ function p(l) {
     user: n,
     setNickname: i,
     nickname: a,
-    error: u,
+    error: s,
     hasNick: d
   } = l, c = r.useRef(null), x = r.useCallback(() => {
     var l;
     i(""), null == (l = c.current) || l.focus()
   }, [i]);
   return (0, e.jsxs)(e.Fragment, {
-    children: [t || null == n || n.id === o.default.getId() ? null : (0, e.jsx)(s.Zbd, {
-      type: s.Zbd.Types.WARNING,
+    children: [t || null == n || n.id === o.default.getId() ? null : (0, e.jsx)(u.Zbd, {
+      type: u.Zbd.Types.WARNING,
       className: C.card,
-      children: (0, e.jsx)(s.Text, {
+      children: (0, e.jsx)(u.Text, {
         variant: "text-md/normal",
-        children: h.intl.string(h.t.dq3At7)
+        children: h.intl.string(h.t.dq3At2)
       })
-    }), (0, e.jsx)(s.oil, {
-      label: t ? h.intl.string(h.t.EyA4q6) : h.intl.string(h.t["621LJC"]),
+    }), (0, e.jsx)(u.oil, {
+      label: t ? h.intl.string(h.t.EyA4q5) : h.intl.string(h.t["621LJD"]),
       disabled: t,
       inputRef: c,
       maxLength: E.l$U,
@@ -51,15 +51,15 @@ function p(l) {
       placeholder: m.ZP.getName(n),
       onChange: i,
       autoFocus: true
-    }), null != u ? (0, e.jsx)(s.Text, {
+    }), null != s ? (0, e.jsx)(u.Text, {
       variant: "text-xs/normal",
       color: "text-danger",
       className: C.nickError,
-      children: u
+      children: s
     }) : null, d && !t ? (0, e.jsx)("div", {
       className: C.reset,
-      children: (0, e.jsx)(s.Avr, {
-        text: h.intl.string(h.t.aE02R0),
+      children: (0, e.jsx)(u.Avr, {
+        text: h.intl.string(h.t.aE02Rz),
         onClick: x,
         textVariant: "text-sm/normal"
       })
@@ -70,15 +70,15 @@ let A = function(l) {
   var t;
   let {
     transitionState: n,
-    user: s,
+    user: u,
     guildId: o,
     onClose: m,
     analyticsSource: C,
     analyticsLocations: A
-  } = l, f = (0, i.e7)([x.ZP], () => null != o ? x.ZP.getMember(o, s.id) : null), _ = (0, i.e7)([N.Z, g.default, v.Z], () => {
+  } = l, f = (0, i.e7)([x.ZP], () => null != o ? x.ZP.getMember(o, u.id) : null), _ = (0, i.e7)([N.Z, g.default, v.Z], () => {
     var l;
     let t = v.Z.getGuild(o);
-    return null != t && ((null == (l = g.default.getCurrentUser()) ? true : l.id) === s.id ? N.Z.can(E.Plq.CHANGE_NICKNAME, t) || N.Z.can(E.Plq.MANAGE_NICKNAMES, t) : N.Z.canManageUser(E.Plq.MANAGE_NICKNAMES, s.id, t))
+    return null != t && ((null == (l = g.default.getCurrentUser()) ? true : l.id) === u.id ? N.Z.can(E.Plq.CHANGE_NICKNAME, t) || N.Z.can(E.Plq.MANAGE_NICKNAMES, t) : N.Z.canManageUser(E.Plq.MANAGE_NICKNAMES, u.id, t))
   }), [b, M] = r.useState(false), [Z, j] = r.useState(null != (t = null == f ? true : f.nick) ? t : ""), [y, I] = r.useState({});
   (0, d.ZP)(() => {
     k.default.track(E.rMx.OPEN_MODAL, {
@@ -89,16 +89,16 @@ let A = function(l) {
   });
   let P = (0, c.sE)(o, {
       location: null == A ? true : A[0],
-      targetUserId: s.id
+      targetUserId: u.id
     }),
     S = r.useCallback(async l => {
-      var t, n, e, r, i, u, d, x, v;
+      var t, n, e, r, i, s, d, x, v;
       l.preventDefault();
       let N = null;
       if (Z !== (null != (t = null == f ? true : f.nick) ? t : "") && ((N = null != N ? N : {}).nick = Z), null == N) return void m();
       try {
         M(true), await a.tn.patch({
-          url: E.ANM.GUILD_MEMBER(o, s.id),
+          url: E.ANM.GUILD_MEMBER(o, u.id),
           body: N,
           rejectWithError: false
         }), P(c.jQ.CHANGE_NICKNAME), m()
@@ -106,30 +106,30 @@ let A = function(l) {
         let l;
         M(false);
         let t = null != (e = null == (n = a.body) ? true : n.errors) ? e : null;
-        (null == t ? true : t.nick) != null ? l = (null == (u = t.nick) || null == (i = u._errors) || null == (r = i[0]) ? true : r.message) || h.intl.string(h.t.xex86u) : (null == t ? true : t.username) != null && (l = (null == (v = t.username) || null == (x = v._errors) || null == (d = x[0]) ? true : d.message) || h.intl.string(h.t.xex86u)), I({
+        (null == t ? true : t.nick) != null ? l = (null == (s = t.nick) || null == (i = s._errors) || null == (r = i[0]) ? true : r.message) || h.intl.string(h.t.xex86n) : (null == t ? true : t.username) != null && (l = (null == (v = t.username) || null == (x = v._errors) || null == (d = x[0]) ? true : d.message) || h.intl.string(h.t.xex86n)), I({
           nick: l
         })
       }
-    }, [o, Z, m, s, f, P]);
+    }, [o, Z, m, u, f, P]);
   return (0, e.jsx)("form", {
     onSubmit: S,
-    children: (0, e.jsx)(u.u_l, {
+    children: (0, e.jsx)(s.u_l, {
       transitionState: n,
       onClose: m,
-      title: h.intl.string(h.t.dilOFx),
+      title: h.intl.string(h.t.dilOF6),
       actions: [{
-        text: h.intl.string(h.t["ETE/oK"]),
+        text: h.intl.string(h.t["ETE/oC"]),
         onClick: m,
         variant: "secondary"
       }, {
-        text: h.intl.string(h.t.R3BPHx),
+        text: h.intl.string(h.t["R3BPH+"]),
         variant: "primary",
         type: "submit",
         disabled: b
       }],
       children: (0, e.jsx)(p, {
         disabled: !_,
-        user: s,
+        user: u,
         error: y.nick,
         nickname: Z,
         setNickname: j,

@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk369171 = require("./369171.js"),
   Chunk545093 = require("./545093.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk578436 = require("./578436.js");
+  Chunk774846 = require("./774846.js");
 let g = Chunk647438.memo(function(e) {
   let {
     message: t
@@ -70,7 +70,7 @@ function h(e) {
       children: e => (0, i.jsx)(O.Z, {
         onClick: l,
         icon: s.Dio,
-        tooltip: b.intl.string(b.t.cpT0Cg),
+        tooltip: b.intl.string(b.t.cpT0Cq),
         className: a()(E.closeButton, e)
       })
     })]

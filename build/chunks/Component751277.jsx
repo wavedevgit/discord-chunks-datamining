@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 751277, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -33,7 +33,7 @@ function h(e) {
     guild: m,
     invite: g
   }) : (0, r.jsx)(d.Z, {
-    tooltip: f.intl.string(f.t.rn9HIS),
+    tooltip: f.intl.string(f.t.rn9HIc),
     id: "guild-hub-button",
     icon: o.aVH
   }) : null

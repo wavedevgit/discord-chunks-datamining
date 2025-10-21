@@ -5,14 +5,14 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk200025 = require("./200025.js");
+var Chunk771831 = require("./771831.js");
 
 function s(e) {
   let {
     children: a
   } = e;
-  return (0, r.jsx)("div", {
-    className: n.slideContainer,
+  return (0, n.jsx)("div", {
+    className: r.slideContainer,
     children: a
   })
 }

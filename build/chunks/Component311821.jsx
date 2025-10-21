@@ -11,7 +11,7 @@ var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk804849 = require("./804849.js");
+  Chunk831371 = require("./831371.js");
 let c = e => {
     let {
       className: t,
@@ -32,6 +32,6 @@ let c = e => {
     return (0, r.jsx)(c, {
       className: t,
       onClick: n,
-      children: s.intl.string(s.t["13/7kZ"])
+      children: s.intl.string(s.t["13/7kX"])
     })
   }

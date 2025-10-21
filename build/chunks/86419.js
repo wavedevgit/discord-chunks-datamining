@@ -78,7 +78,7 @@ function y(e, t) {
   let {
     isCurrentUser: n
   } = t, i = e.games.length > 0;
-  if (n && i) return 1 === r.kp[e.type] ? p.intl.string(p.t.wiXdER) : p.intl.format(p.t["zR1+09"], {
+  if (n && i) return 1 === r.kp[e.type] ? p.intl.string(p.t.wiXdEa) : p.intl.format(p.t["zR1+0/"], {
     numGames: r.kp[e.type]
   })
 }

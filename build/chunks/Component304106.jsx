@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk55935 = require("./55935.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk327484 = require("./327484.js");
+  Chunk529368 = require("./529368.js");
 let p = e => {
     let {
       IconComponent: t,
@@ -57,7 +57,7 @@ class h extends Chunk647438.Component {
       circle: (0, Chunk951288.jsx)(p, {
         IconComponent: Chunk481060.Que
       }),
-      smallHeader: Chunk388032.intl.string(Chunk388032.t.u81aYW),
+      smallHeader: Chunk388032.intl.string(Chunk388032.t.u81aYY),
       text: (0, Chunk55935.vc)(module.releaseDate, "LL")
     });
     if (module.type === Chunk981631.AzA.RELEASE_DATE) return (0, Chunk951288.jsx)(f, {
@@ -65,7 +65,7 @@ class h extends Chunk647438.Component {
       circle: (0, Chunk951288.jsx)(p, {
         IconComponent: Chunk481060.Que
       }),
-      smallHeader: Chunk388032.intl.string(Chunk388032.t.qpwaNT),
+      smallHeader: Chunk388032.intl.string(Chunk388032.t.qpwaNY),
       text: (0, Chunk55935.vc)(module.releaseDate, "LL")
     });
     if (module.type === Chunk981631.AzA.EARLY_ACCESS)
@@ -73,18 +73,18 @@ class h extends Chunk647438.Component {
         className: exports,
         circle: (0, Chunk951288.jsx)(p, {
           IconComponent: Chunk481060.d$P,
-          className: Chunk327484.earlyAccess
+          className: Chunk529368.earlyAccess
         }),
-        smallHeader: Chunk388032.intl.string(Chunk388032.t.HYys0t),
+        smallHeader: Chunk388032.intl.string(Chunk388032.t.HYys0s),
         text: (0, Chunk55935.vc)(module.releaseDate, "LL")
       });
       else return (0, Chunk951288.jsx)(f, {
         className: exports,
         circle: (0, Chunk951288.jsx)(p, {
           IconComponent: Chunk481060.d$P,
-          className: Chunk327484.earlyAccess
+          className: Chunk529368.earlyAccess
         }),
-        text: Chunk388032.intl.string(Chunk388032.t.HYys0t)
+        text: Chunk388032.intl.string(Chunk388032.t.HYys0s)
       });
     return module.type === Chunk981631.AzA.FLAVOR_TEXT ? (0, Chunk951288.jsx)(f, {
       circle: (0, Chunk951288.jsx)(p, {
@@ -96,7 +96,7 @@ class h extends Chunk647438.Component {
       className: exports,
       circle: (0, Chunk951288.jsx)(p, {
         IconComponent: Chunk481060.SrA,
-        className: Chunk327484.premiumCircle
+        className: Chunk529368.premiumCircle
       }),
       text: Chunk388032.intl.string(Chunk388032.t.R9SwVl)
     }) : null

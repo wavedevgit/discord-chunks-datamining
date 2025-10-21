@@ -34,8 +34,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk838655 = require("./838655.js"),
-  Chunk10198 = require("./10198.js");
+  Chunk12205 = require("./12205.js"),
+  Chunk197571 = require("./197571.js");
 
 function k() {
   let {
@@ -61,17 +61,17 @@ function k() {
       },
       analyticsLocations: module
     }),
-    className: Chunk838655.experimentUpsellError,
+    className: Chunk12205.experimentUpsellError,
     children: [(0, Chunk951288.jsx)(Chunk481060.SrA, {
       size: "md",
-      className: Chunk838655.experimentUpsellIcon,
+      className: Chunk12205.experimentUpsellIcon,
       color: Chunk436774.JX.PREMIUM_TIER_2
     }), (0, Chunk951288.jsx)("span", {
-      className: Chunk838655.experimentUpsellText,
+      className: Chunk12205.experimentUpsellText,
       children: Chunk388032.intl.string(Chunk388032.t["4/W4Pz"])
     }), (0, Chunk951288.jsx)("span", {
-      className: Chunk838655.experimentGetNitro,
-      children: Chunk388032.intl.string(Chunk388032.t.b6KOkJ)
+      className: Chunk12205.experimentGetNitro,
+      children: Chunk388032.intl.string(Chunk388032.t.b6KOkI)
     })]
   })
 }
@@ -117,15 +117,15 @@ function U(e) {
           id: t,
           variant: "heading-xl/semibold",
           color: "header-primary",
-          children: Z.intl.string(Z.t.u9zxnZ)
+          children: z.intl.string(z.t.u9zxnX)
         }), (0, i.jsx)("div", {
           className: M.errorBody,
-          children: Z.intl.string(Z.t.FWkU6O)
+          children: z.intl.string(z.t.FWkU6P)
         }), (0, i.jsx)(p.zx, {
           size: p.zx.Sizes.LARGE,
           onClick: () => P.Z.close(),
           color: p.zx.Colors.BRAND,
-          children: Z.intl.string(Z.t.wcqOoK)
+          children: z.intl.string(z.t.wcqOoF)
         })]
       })
     })
@@ -145,7 +145,7 @@ function y(e) {
     {
       invite: j,
       error: S,
-      submitting: z
+      submitting: Z
     } = (0, o.cj)([b.Z], () => b.Z.getProps());
   l.useEffect(() => {
     if (null != j && null != j.guild) {
@@ -155,7 +155,7 @@ function y(e) {
   }, [j, null == j ? true : j.approximate_member_count, null == j ? true : j.code, null == j || null == (n = j.guild) ? true : n.id]);
   let O = (0, f.yr)();
   l.useEffect(() => {
-    !__OVERLAY__ && T.isPlatformEmbedded && ((0, T.isWindows)() ? L.ZP.minimize() : L.ZP.restore(), L.ZP.focus())
+    !__OVERLAY__ && A.isPlatformEmbedded && ((0, A.isWindows)() ? L.ZP.minimize() : L.ZP.restore(), L.ZP.focus())
   }, []);
   let y = (0, N.Dt)(),
     {
@@ -172,18 +172,18 @@ function y(e) {
   }
   let {
     guild: V,
-    channel: W,
-    inviter: B,
+    channel: B,
+    inviter: W,
     target_application: w
-  } = j, H = null != V, Y = null == j.guild && null == j.channel && null != j.inviter;
+  } = j, Y = null != V, H = null == j.guild && null == j.channel && null != j.inviter;
   if (null != w) t = null == V ? true : V.name, a = I.ZP.createFromServer(w).getCoverImageURL(1024);
-  else if (null != V) t = V.name, a = A.ZP.getGuildSplashURL({
+  else if (null != V) t = V.name, a = T.ZP.getGuildSplashURL({
     id: V.id,
     splash: V.splash
   });
-  else if ((null == (t = W.name) || "" === t) && null != B && (t = B.username), null == t) throw Error("no name for group DM invite");
+  else if ((null == (t = B.name) || "" === t) && null != W && (t = W.username), null == t) throw Error("no name for group DM invite");
   let K = (0, h.yU)();
-  return r = Y ? Z.intl.string(Z.t["e/6Ogo"]) : Z.intl.format(Z.t["9sWQNT"], {
+  return r = H ? z.intl.string(z.t["e/6Ogt"]) : z.intl.format(z.t["9sWQNT"], {
     usernameHook: () => (0, i.jsx)("span", {
       children: O
     })
@@ -212,14 +212,14 @@ function y(e) {
             id: y,
             children: (0, i.jsx)(u.Z, {
               invite: j,
-              disableUser: H,
+              disableUser: Y,
               error: S
             })
           }), (0, i.jsxs)("div", {
             className: M.ctas,
             children: [K ? (0, i.jsx)(k, {}) : null, null == w ? (0, i.jsx)(c.aML, {
               "data-migration-pending": true,
-              text: K ? Z.intl.string(Z.t.iLyuDA) : null,
+              text: K ? z.intl.string(z.t.iLyuDO) : null,
               position: "bottom",
               children: e => {
                 let {
@@ -229,12 +229,12 @@ function y(e) {
                 return (0, i.jsx)(p.zx, {
                   size: p.zx.Sizes.LARGE,
                   onClick: G,
-                  submitting: z,
+                  submitting: Z,
                   disabled: K,
                   color: p.zx.Colors.BRAND,
                   onMouseEnter: n,
                   onMouseLeave: t,
-                  children: K ? Z.intl.string(Z.t.ZNCziI) : (0, i.jsxs)("div", {
+                  children: K ? z.intl.string(z.t.ZNCziL) : (0, i.jsxs)("div", {
                     className: M.acceptAs,
                     children: [(0, i.jsx)(d.Z, {
                       "aria-hidden": true,
@@ -253,14 +253,14 @@ function y(e) {
               children: [(0, i.jsx)(p.zx, {
                 size: p.zx.Sizes.LARGE,
                 onClick: G,
-                submitting: z,
-                children: Z.intl.string(Z.t.RscU7O)
+                submitting: Z,
+                children: z.intl.string(z.t.RscU7I)
               }), (0, i.jsx)(p.zx, {
                 color: p.zx.Colors.PRIMARY,
                 size: p.zx.Sizes.LARGE,
                 onClick: G,
-                submitting: z,
-                children: Z.intl.string(Z.t.eylRaW)
+                submitting: Z,
+                children: z.intl.string(z.t.eylRaY)
               })]
             }), (0, i.jsx)(x.Z, {
               justify: x.Z.Justify.CENTER,
@@ -276,7 +276,7 @@ function y(e) {
                   }), P.Z.close()
                 },
                 color: p.zx.Colors.TRANSPARENT,
-                children: Z.intl.string(Z.t.ndsK4e)
+                children: z.intl.string(z.t.ndsK4Z)
               })
             })]
           })]

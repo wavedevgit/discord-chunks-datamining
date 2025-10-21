@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 170509, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => c
@@ -9,7 +9,7 @@ var Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk933557 = require("./933557.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk50368 = require("./50368.js");
+  Chunk188319 = require("./188319.js");
 
 function c(e) {
   var t, n, {
@@ -51,9 +51,9 @@ function c(e) {
     }
     return e
   }({
-    header: a.intl.string(a.t.YWMtRU),
-    confirmText: a.intl.string(a.t.eW8Gy8),
-    cancelText: a.intl.string(a.t.s4uM3d),
+    header: a.intl.string(a.t.YWMtRe),
+    confirmText: a.intl.string(a.t.eW8Gy4),
+    cancelText: a.intl.string(a.t.s4uM3b),
     confirmButtonColor: i.zx.Colors.BRAND
   }, d), n = n = {
     children: (0, r.jsx)(l.Text, {

@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk908522 = require("./908522.js");
+  Chunk107293 = require("./107293.js");
 let T = 80;
 
 function S(e) {
@@ -60,17 +60,17 @@ function S(e) {
       onClose: A,
       type: O.cd.EMPTY_STICKER_PICKER_UPSELL,
       subscriptionTier: null != (a = null == R || null == (n = R.subscription_trial) ? true : n.sku_id) ? a : O.Si.TIER_2,
-      children: v.intl.string(v.t.FnNud3)
+      children: v.intl.string(v.t.FnNud4)
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.Heading, {
         className: I.header,
         variant: "heading-xl/semibold",
-        children: v.intl.string(v.t.HEm04O)
+        children: v.intl.string(v.t.HEm04J)
       }), (0, r.jsx)(l.Text, {
         className: I.subtitle,
         color: "header-secondary",
         variant: "text-md/normal",
-        children: v.intl.string(v.t.FnNud3)
+        children: v.intl.string(v.t.FnNud4)
       }), (0, r.jsx)("div", {
         className: I.stickersRow,
         children: N.filter(e => null != e).map(e => (0, r.jsx)(g.Z, {
@@ -81,7 +81,7 @@ function S(e) {
       })]
     }), !w && (0, r.jsx)(E.Z, {
       analyticsSection: y.jXE.EXPRESSION_PICKER,
-      buttonText: w ? D ? v.intl.string(v.t.hz78hI) : v.intl.string(v.t["Gd/XHB"]) : true
+      buttonText: w ? D ? v.intl.string(v.t.hz78hE) : v.intl.string(v.t["Gd/XHF"]) : true
     })]
   })
 }

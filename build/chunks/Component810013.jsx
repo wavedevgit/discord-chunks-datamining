@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk499596 = require("./499596.jsx"),
   Chunk537135 = require("./537135.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk79985 = require("./79985.js");
+  Chunk542257 = require("./542257.js");
 
 function m(e) {
   let {
@@ -20,7 +20,7 @@ function m(e) {
   return (0, l.jsx)("div", {
     className: d.modalContent,
     children: (0, l.jsx)(i.gNt, {
-      label: u.intl.string(u.t.KPuWsr),
+      label: u.intl.string(u.t.KPuWsm),
       children: (0, l.jsx)(o.Z, {
         children: (0, l.jsx)(c.Z, {
           channel: n,

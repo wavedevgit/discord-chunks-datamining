@@ -20,13 +20,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk583901 = require("./583901.jsx"),
   Chunk576157 = require("./576157.js"),
   Chunk231338 = require("./231338.js"),
-  Chunk684555 = require("./684555.js"),
+  Chunk687101 = require("./687101.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk617385 = require("./617385.js");
+  Chunk279457 = require("./279457.js");
 
 function v() {
   return (0, Chunk951288.jsxs)("svg", {
-    className: Chunk617385.newRing,
+    className: Chunk279457.newRing,
     width: "68",
     height: "68",
     viewBox: "0 0 68 68",
@@ -89,7 +89,7 @@ function I(e) {
       onSelect: t ? true : k,
       isSelected: false,
       showSelectionCircle: P,
-      name: y.intl.string(b.default.KSBBpK),
+      name: y.intl.string(b.default.KSBBpC),
       className: o()(O.container, w && C, t && O.disabled),
       showBadge: false,
       showLockedBadge: false,

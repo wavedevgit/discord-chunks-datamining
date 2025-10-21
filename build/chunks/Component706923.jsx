@@ -14,7 +14,7 @@ var Chunk399606 = require("./399606.js"),
   Chunk812545 = require("./812545.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk421846 = require("./421846.js");
+  Chunk625221 = require("./625221.js");
 
 function f(e) {
   let {
@@ -22,11 +22,11 @@ function f(e) {
     messageId: t,
     transitionState: f,
     onClose: S
-  } = e, h = (0, l.e7)([c.Z], () => c.Z.getChannel(n)), [F, m] = (0, u.Z)(n), p = null == h ? true : h.guild_id;
+  } = e, h = (0, l.e7)([c.Z], () => c.Z.getChannel(n)), [C, F] = (0, u.Z)(n), m = null == h ? true : h.guild_id;
   return (0, s.jsx)(i.ConfirmModal, {
-    header: g.intl.string(g.t.aIz1oa),
-    confirmText: g.intl.string(g.t["cY+Ooa"]),
-    cancelText: g.intl.string(g.t["ETE/oK"]),
+    header: g.intl.string(g.t.aIz1oV),
+    confirmText: g.intl.string(g.t["cY+Oob"]),
+    cancelText: g.intl.string(g.t["ETE/oC"]),
     confirmButtonColor: o.zx.Colors.BRAND,
     onConfirm: () => a.Z.crosspostMessage(n, t),
     transitionState: f,
@@ -34,22 +34,22 @@ function f(e) {
     children: (0, s.jsx)(i.Text, {
       variant: "text-md/normal",
       className: _.spacing,
-      children: m ? (0, s.jsx)(i.$jN, {}) : null != F && null != F.guildsFollowing && F.guildsFollowing > 0 ? (0, s.jsxs)(s.Fragment, {
+      children: F ? (0, s.jsx)(i.$jN, {}) : null != C && null != C.guildsFollowing && C.guildsFollowing > 0 ? (0, s.jsxs)(s.Fragment, {
         children: [(0, s.jsx)(i.Text, {
           className: _.spacing,
           variant: "text-sm/normal",
-          children: g.intl.format(g.t.GCGrND, {
-            numGuildsFollowing: F.guildsFollowing
+          children: g.intl.format(g.t.GCGrNP, {
+            numGuildsFollowing: C.guildsFollowing
           })
         }), (0, s.jsx)(i.Text, {
           variant: "text-sm/normal",
-          children: g.intl.format(g.t.IMhGZ2, {
+          children: g.intl.format(g.t.IMhGZz, {
             onClick: () => {
-              null != p && null != S && (S(), r.Z.open(p, d.pNK.ANALYTICS))
+              null != m && null != S && (S(), r.Z.open(m, d.pNK.ANALYTICS))
             }
           })
         })]
-      }) : g.intl.string(g.t["8FpqOj"])
+      }) : g.intl.string(g.t["8FpqOs"])
     })
   })
 }

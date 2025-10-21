@@ -37,7 +37,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk982204 = require("./982204.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk138475 = require("./138475.js");
+  Chunk416439 = require("./416439.js");
 
 function j(e) {
   let {
@@ -122,13 +122,13 @@ function U(e) {
       iconSize: f.Z.Sizes.SMALL,
       color: f.Z.Colors.WARNING,
       className: k.errorBlock,
-      children: M.intl.string(M.t.OvMyMT)
+      children: M.intl.string(M.t.OvMyMd)
     }, "TEST_MODE") : null, (0, A.yE)(U.flags, x.udG.EMBEDDED) && q === h.O.ERROR ? (0, r.jsx)(f.Z, {
       icon: (0, c.GSL)(S.Z),
       iconSize: f.Z.Sizes.SMALL,
       color: f.Z.Colors.ERROR,
       className: k.errorBlock,
-      children: M.intl.string(M.t.tAmECg)
+      children: M.intl.string(M.t.tAmECt)
     }, "DEV_SHELF_ERROR") : null, (0, r.jsx)(j, {
       application: U,
       sku: er,
@@ -138,7 +138,7 @@ function U(e) {
     }), null != $ ? (0, r.jsx)(b.s, {
       giftRecipient: $
     }) : null, (0, r.jsx)(c.gNt, {
-      label: J ? M.intl.string(M.t.PEjaCw) : M.intl.string(M.t.sail9P),
+      label: J ? M.intl.string(M.t.PEjaCx) : M.intl.string(M.t.sail9P),
       children: null != es ? (0, r.jsx)(L.B, {
         sku: er,
         skuPricePreview: es,
@@ -162,7 +162,7 @@ function U(e) {
         children: M.intl.string(M.t["6fBC//"])
       })]
     }), (0, r.jsx)(_.ZP, {
-      label: M.intl.string(M.t.mmDvV1),
+      label: M.intl.string(M.t["mmDvV+"]),
       paymentSources: Object.values(B),
       selectedPaymentSourceId: Z,
       onChange: a,
@@ -181,7 +181,7 @@ function U(e) {
         finePrintClassname: k.fineprint,
         purchaseType: K,
         isGift: J,
-        checkboxLabel: er.productLine === x.POd.COLLECTIBLES ? M.intl.format(M.t["1EdAlZ"], {
+        checkboxLabel: er.productLine === x.POd.COLLECTIBLES ? M.intl.format(M.t["1EdAld"], {
           paidURL: x.EYA.PAID_TERMS
         }) : true,
         finePrint: (0, r.jsx)(d.Z, {

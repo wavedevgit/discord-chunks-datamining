@@ -12,7 +12,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk314897 = require("./314897.js"),
   Chunk131951 = require("./131951.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk5569 = require("./5569.js");
+  Chunk725227 = require("./725227.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -82,7 +82,7 @@ function h(e, t) {
     id: "change-video-background",
     label: (0, r.jsx)("div", {
       className: u.item,
-      children: _ ? c.intl.string(c.t.mZKxHR) : c.intl.string(c.t.vkV939)
+      children: _ ? c.intl.string(c.t.mZKxHb) : c.intl.string(c.t["vkV93/"])
     }),
     action: E,
     icon: _ ? a.yMH : a.tEF

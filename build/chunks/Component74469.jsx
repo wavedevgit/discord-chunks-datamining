@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk131085 = require("./131085.js"),
   Chunk526761 = require("./526761.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk221627 = require("./221627.js");
+  Chunk999087 = require("./999087.js");
 let v = (0, Chunk313201.hQ)(),
   I = Chunk647438.memo(function(e) {
     let {
@@ -88,7 +88,7 @@ let v = (0, Chunk313201.hQ)(),
       T(g.L.TAKE_ACTION), null == l || l(null)
     }, [T, l]), j = i.useRef(null);
     return (0, p.Z)(j, b.Y_.GUILD_TAG), (0, r.jsxs)(_.Z, {
-      title: y.intl.string(y.t.Pdd1nZ),
+      title: y.intl.string(y.t.Pdd1nd),
       titleId: v,
       ref: j,
       titleIcon: I === o.z.GUILD_TAG_USER_PROFILE_NEW_BADGE && (0, r.jsx)(s.IGR, {
@@ -98,7 +98,7 @@ let v = (0, Chunk313201.hQ)(),
       children: [(0, r.jsx)(s.Text, {
         className: O.subtitle,
         variant: "text-sm/normal",
-        children: y.intl.string(y.t.mlZ6Jy)
+        children: y.intl.string(y.t.mlZ6Jx)
       }), (0, r.jsx)(s.PhF, {
         className: O.select,
         optionClassName: O.selectPopout,

@@ -1,7 +1,7 @@
 /** Chunk was on 4093 **/
 /** chunk id: 399299, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  default: () => H
+  default: () => q
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -40,8 +40,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk70722 = require("./70722.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk740071 = require("./740071.js"),
-  Chunk79985 = require("./79985.js");
+  Chunk734102 = require("./734102.js"),
+  Chunk542257 = require("./542257.js");
 
 function B(e) {
   let {
@@ -49,7 +49,7 @@ function B(e) {
     selectSource: t,
     sourceChanged: r,
     onChangeSource: i
-  } = e, s = (0, a.e7)([x.ZP, C.Z], () => (0, I.isWindows)() ? (0, O.Z)(x.ZP, C.Z) : null), d = (0, a.e7)([u.Z], () => (null == s ? true : s.id) != null ? u.Z.getApplication(s.id) : null), m = (0, a.e7)([x.ZP], () => x.ZP.getRunningGames()), h = (0, a.Wu)([u.Z], () => m.map(e => null != e.id ? u.Z.getApplication(e.id) : null).filter(P.lm), [m]), j = null;
+  } = e, s = (0, a.e7)([x.ZP, C.Z], () => (0, I.isWindows)() ? (0, y.Z)(x.ZP, C.Z) : null), d = (0, a.e7)([u.Z], () => (null == s ? true : s.id) != null ? u.Z.getApplication(s.id) : null), m = (0, a.e7)([x.ZP], () => x.ZP.getRunningGames()), h = (0, a.Wu)([u.Z], () => m.map(e => null != e.id ? u.Z.getApplication(e.id) : null).filter(P.lm), [m]), j = null;
   if (null != n ? j = n.name : null != s && (j = s.name), null == j) return null;
   let p = (0, U.Z)(s, n, m),
     v = r ? h.find(e => {
@@ -60,7 +60,7 @@ function B(e) {
     }) : d,
     f = null != n && n.id.startsWith("screen") ? o.pzj : o.GON;
   return (0, l.jsx)(o.gNt, {
-    label: z.intl.string(z.t.TC7Ev7),
+    label: z.intl.string(z.t.TC7Evz),
     children: (0, l.jsxs)(M.Z, {
       children: [null != v ? (0, l.jsx)(g.Z, {
         game: v,
@@ -76,13 +76,13 @@ function B(e) {
         color: c.zx.Colors.PRIMARY,
         size: c.zx.Sizes.SMALL,
         onClick: i,
-        children: z.intl.string(z.t.GEgsAw)
+        children: z.intl.string(z.t.GEgsA4)
       }) : null]
     })
   })
 }
 
-function F(e) {
+function W(e) {
   let {
     onChange: n,
     guildId: t
@@ -90,7 +90,7 @@ function F(e) {
   return null == r ? (n(), null) : (0, l.jsx)("div", {
     className: G.modalContent,
     children: (0, l.jsx)(o.gNt, {
-      label: z.intl.string(z.t.WC3u3t),
+      label: z.intl.string(z.t.WC3u3n),
       children: (0, l.jsxs)(M.Z, {
         children: [(0, l.jsx)(h.Z, {
           guild: r,
@@ -104,14 +104,14 @@ function F(e) {
           color: c.zx.Colors.PRIMARY,
           size: c.zx.Sizes.SMALL,
           onClick: n,
-          children: z.intl.string(z.t.GEgsAw)
+          children: z.intl.string(z.t.GEgsA4)
         })]
       })
     })
   })
 }
 
-function W(e) {
+function F(e) {
   let {
     text: n
   } = e;
@@ -139,11 +139,11 @@ function V(e) {
     var e;
     return null != (e = v.Z.getMemberCount(n)) ? e : 0
   }), i = j.eo.useSetting(), c = r.useCallback(e => {
-    j.eo.updateSetting(e), b.default.track(_.rMx.NOTIFY_STREAM_SETTING_UPDATE, {
+    j.eo.updateSetting(e), b.default.track(w.rMx.NOTIFY_STREAM_SETTING_UPDATE, {
       value: e
     })
   }, []);
-  return t >= 2 && t <= D.tB ? (0, l.jsx)("div", {
+  return t >= 2 && t <= _.tB ? (0, l.jsx)("div", {
     className: s()(G.modalContent, L.checkboxRow),
     children: (0, l.jsx)(o.Checkbox, {
       checked: !!i,
@@ -153,7 +153,7 @@ function V(e) {
   }) : null
 }
 
-function Y(e) {
+function H(e) {
   let {
     enabled: n,
     onChange: t,
@@ -166,12 +166,12 @@ function Y(e) {
     children: (0, l.jsx)(o.Checkbox, {
       checked: n,
       onChange: c,
-      label: i || u ? z.intl.string(z.t["5Adrtb"]) : z.intl.string(z.t.gRpbRE)
+      label: i || u ? z.intl.string(z.t["5AdrtW"]) : z.intl.string(z.t.gRpbRF)
     })
   })
 }
 
-function q(e) {
+function Y(e) {
   let {
     enabled: n,
     onChange: t
@@ -183,12 +183,12 @@ function q(e) {
     children: (0, l.jsx)(o.Checkbox, {
       checked: n,
       onChange: i,
-      label: z.intl.string(z.t.JE73jI)
+      label: z.intl.string(z.t.JE73jB)
     })
   })
 }
 
-function H(e) {
+function q(e) {
   let {
     selectedSource: n,
     selectedFPS: t,
@@ -208,12 +208,12 @@ function H(e) {
     onChangeSelectedPreset: b,
     onChangeSelectedChannelId: P,
     onChangeSource: I,
-    onChangeAudioDevice: O,
+    onChangeAudioDevice: y,
     onChangeGuild: M,
     onChangeSound: U,
-    onChangePreviewDisabled: D
-  } = e, L = (0, a.e7)([S.Z, p.Z], () => p.Z.getChannel(S.Z.getVoiceChannelId())), G = (0, a.e7)([E.Z], () => E.Z.GPUDriversOutdated), H = (0, a.e7)([E.Z], () => E.Z.problematicGPUDriver), X = (0, a.e7)([N.default], () => N.default.getCurrentUser()), K = (0, y.Z)();
-  null != n && n.id.startsWith("screen") && !Z.Z.supportsScreenSoundshare() && (K = z.intl.string(z.t["1b0Gm5"]));
+    onChangePreviewDisabled: _
+  } = e, L = (0, a.e7)([S.Z, p.Z], () => p.Z.getChannel(S.Z.getVoiceChannelId())), G = (0, a.e7)([O.Z], () => O.Z.GPUDriversOutdated), q = (0, a.e7)([O.Z], () => O.Z.problematicGPUDriver), X = (0, a.e7)([N.default], () => N.default.getCurrentUser()), K = (0, E.Z)();
+  null != n && n.id.startsWith("screen") && !Z.Z.supportsScreenSoundshare() && (K = z.intl.string(z.t["1b0Gm7"]));
   let J = !!(null == n ? true : n.id.startsWith("camera")),
     Q = null != X && X.verified && !X.bot,
     $ = null != L && !(0, d.Yk)(L);
@@ -221,21 +221,21 @@ function H(e) {
     children: [J ? (0, l.jsx)(k.Z, {
       selectedSource: n,
       onChangeVideoDeviceSource: I,
-      onChangeAudioDevice: O
+      onChangeAudioDevice: y
     }) : (0, l.jsxs)("div", {
       children: [(0, l.jsx)(B, {
         selectSource: x,
         sourceChanged: o,
         onChangeSource: I,
         selectedSource: n
-      }), null != K ? (0, l.jsx)(W, {
+      }), null != K ? (0, l.jsx)(F, {
         text: K
-      }) : null, null != n && null == K ? (0, l.jsx)(Y, {
+      }) : null, null != n && null == K ? (0, l.jsx)(H, {
         enabled: h,
         onChange: U,
         screen: n.id.startsWith("screen")
       }) : null]
-    }), g && null != u ? (0, l.jsx)(F, {
+    }), g && null != u ? (0, l.jsx)(W, {
       guildId: u,
       onChange: M
     }) : null, null != L ? (0, l.jsx)(R.Z, {
@@ -246,13 +246,13 @@ function H(e) {
       onChangeSelectedChannelId: P
     }), null != u && Q && $ ? (0, l.jsx)(V, {
       guildId: u
-    }) : null, G ? (0, l.jsx)(W, {
-      text: z.intl.string(z.t.q65tS0)
-    }) : null, H ? (0, l.jsx)(W, {
-      text: z.intl.format(z.t.RrLvub, {
-        helpCenterLink: T.Z.getArticleURL(_.BhN.NVIDIA_DRIVER_ISSUES)
+    }) : null, G ? (0, l.jsx)(F, {
+      text: z.intl.string(z.t.q65tSw)
+    }) : null, q ? (0, l.jsx)(F, {
+      text: z.intl.format(z.t.RrLvuT, {
+        helpCenterLink: T.Z.getArticleURL(w.BhN.NVIDIA_DRIVER_ISSUES)
       })
-    }) : null, (0, l.jsx)(w.Z, {
+    }) : null, (0, l.jsx)(D.Z, {
       selectedPreset: s,
       selectedFPS: t,
       selectedResolution: c,
@@ -262,9 +262,9 @@ function H(e) {
       onResolutionChange: C,
       onPresetChange: b,
       captureDeviceSelected: J
-    }), (0, l.jsx)(q, {
+    }), (0, l.jsx)(Y, {
       enabled: j,
-      onChange: D
+      onChange: _
     })]
   })
 }

@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk302463 = require("./302463.js"),
   Chunk293810 = require("./293810.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk342325 = require("./342325.js");
+  Chunk829675 = require("./829675.js");
 
 function D(e) {
   let {
@@ -60,25 +60,25 @@ function L(e) {
   } = e;
   return (0, r.jsx)(D, {
     onClick: t,
-    children: P.intl.string(P.t.R9GHyc)
+    children: P.intl.string(P.t.R9GHya)
   })
 }
 
 function x(e) {
   switch (e) {
     case A.pNK.INTEGRATIONS:
-      return P.intl.string(P.t.k7LGdn);
+      return P.intl.string(P.t.k7LGdh);
     case A.pNK.ROLE_SUBSCRIPTIONS:
       return P.intl.string(P.t.bRqiqa);
     case A.pNK.ONBOARDING:
-      return P.intl.string(P.t.qZpU3d);
+      return P.intl.string(P.t.qZpU3S);
     default:
-      return P.intl.string(P.t.MTIXho)
+      return P.intl.string(P.t.MTIXhi)
   }
 }
 
 function M(e) {
-  return e === A.pNK.ROLE_SUBSCRIPTIONS ? P.intl.string(P.t.hZUCzc) : P.intl.string(P.t["/djIh4"])
+  return e === A.pNK.ROLE_SUBSCRIPTIONS ? P.intl.string(P.t.hZUCzd) : P.intl.string(P.t["/djIh7"])
 }
 
 function k() {
@@ -108,31 +108,31 @@ function k() {
     };
   return (0, Chunk951288.jsxs)(Chunk481060.qXd, {
     color: Chunk481060.DM8.BRAND,
-    className: Chunk342325.notice,
+    className: Chunk829675.notice,
     children: [(0, Chunk951288.jsxs)(D, {
       onClick: () => G({
         backToSettings: true
       }),
-      className: Chunk342325.backButton,
+      className: Chunk829675.backButton,
       children: [(0, Chunk951288.jsx)(Chunk671533.Z, {
         width: 16,
         height: 16,
         direction: Chunk671533.Z.Directions.LEFT,
-        className: Chunk342325.backArrow
+        className: Chunk829675.backArrow
       }), k]
     }), U && Chunk755721 ? (0, Chunk951288.jsx)("div", {
-      className: Chunk342325.noticeContents,
+      className: Chunk829675.noticeContents,
       children: (0, Chunk951288.jsx)("div", {
-        className: Chunk342325.noticeText,
-        children: Chunk388032.intl.string(Chunk388032.t.PxbiAQ)
+        className: Chunk829675.noticeText,
+        children: Chunk388032.intl.string(Chunk388032.t.PxbiAf)
       })
     }) : (0, Chunk951288.jsxs)("div", {
-      className: Chunk342325.noticeContents,
+      className: Chunk829675.noticeContents,
       children: [(0, Chunk951288.jsx)("div", {
-        className: Chunk342325.noticeText,
+        className: Chunk829675.noticeText,
         children: Chunk755721 ? Chunk388032.intl.formatToPlainString(Chunk388032.t["0PHahI"], {
           numRoles: Object.keys(Chunk120356).length
-        }) : Chunk388032.intl.formatToPlainString(Chunk388032.t.vMlK8v, {
+        }) : Chunk388032.intl.formatToPlainString(Chunk388032.t.vMlK8t, {
           numRoles: Object.keys(Chunk120356).length
         })
       }), (0, Chunk951288.jsx)(Chunk481060.yRy, {
@@ -158,14 +158,14 @@ function k() {
         }
       }), Chunk755721 && (0, Chunk951288.jsx)(Chunk28664.u, {
         asContainer: true,
-        text: Chunk388032.intl.string(Chunk388032.t.mW4DUF),
+        text: Chunk388032.intl.string(Chunk388032.t.mW4DUE),
         children: (0, Chunk951288.jsx)(Chunk481060.Mgn, {
           size: "xs",
           color: Chunk692547.Z.unsafe_rawColors.YELLOW_300.css
         })
       }), Chunk358085 && (0, Chunk951288.jsx)(Chunk28664.u, {
         asContainer: true,
-        text: Chunk388032.intl.formatToPlainString(Chunk388032.t.eummvb, {
+        text: Chunk388032.intl.formatToPlainString(Chunk388032.t.eummvd, {
           maxTiers: Chunk293810.fF,
           maxProducts: Chunk302463.dD
         }),

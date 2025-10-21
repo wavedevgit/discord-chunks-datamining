@@ -1,4 +1,4 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 526846, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   m: () => k
@@ -34,7 +34,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk558317 = require("./558317.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk915062 = require("./915062.js");
+  Chunk201512 = require("./201512.js");
 let R = Chunk973693.Y.APP_LAUNCHER_IN_VOICE_BANNER,
   L = "vc-activities-".concat((0, Chunk772848.Z)());
 
@@ -180,7 +180,7 @@ let k = Chunk647438.forwardRef(function(e, t) {
           children: (0, i.jsx)(p.nn4, {
             children: (0, i.jsx)(p.H, {
               id: L,
-              children: w.intl.string(w.t["2lnYtL"])
+              children: w.intl.string(w.t["2lnYtB"])
             })
           })
         }), (0, i.jsxs)("div", {
@@ -197,14 +197,14 @@ let k = Chunk647438.forwardRef(function(e, t) {
                 color: "var(--interactive-active)"
               }), (0, i.jsx)(p.Text, {
                 variant: "eyebrow",
-                children: w.intl.string(w.t.f3Cz29)
+                children: w.intl.string(w.t.f3Cz25)
               })]
             }), (0, i.jsxs)(p.P3F, {
               className: M.titleRight,
               onClick: V,
               children: [(0, i.jsx)(p.Text, {
                 variant: "eyebrow",
-                children: w.intl.string(w.t["K8+z4e"])
+                children: w.intl.string(w.t["K8+z4S"])
               }), (0, i.jsx)(p.Fbu, {
                 size: "custom",
                 width: 12,

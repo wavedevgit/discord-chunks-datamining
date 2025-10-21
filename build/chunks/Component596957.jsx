@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk617015 = require("./617015.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk494720 = require("./494720.js");
+  Chunk983703 = require("./983703.js");
 
 function P(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -180,23 +180,23 @@ let L = function(e) {
       let n = function(e, t, n) {
         switch (e) {
           case S.pJs.ONLINE:
-            return N.intl.formatToPlainString(N.t.BagU2d, {
+            return N.intl.formatToPlainString(N.t.BagU2U, {
               online: t.toString()
             });
           case S.pJs.PENDING:
-            if (0 === n) return N.intl.formatToPlainString(N.t["g+3FIS"], {
+            if (0 === n) return N.intl.formatToPlainString(N.t["g+3FIa"], {
               count: t.toString()
             });
-            if (1 === n) return N.intl.formatToPlainString(N.t.npJsRk, {
+            if (1 === n) return N.intl.formatToPlainString(N.t.npJsRl, {
               count: t.toString()
             });
             throw Error("Unexpected pending friend requests section index: ".concat(n));
           case S.pJs.SUGGESTIONS:
-            return N.intl.formatToPlainString(N.t["DYMZ/v"], {
+            return N.intl.formatToPlainString(N.t["DYMZ/p"], {
               count: t.toString()
             });
           default:
-            return N.intl.formatToPlainString(N.t.rHRrhI, {
+            return N.intl.formatToPlainString(N.t.rHRrhC, {
               count: t.toString()
             })
         }
@@ -209,9 +209,9 @@ let L = function(e) {
         }), q && (0, r.jsx)("div", {
           className: T.clearButton,
           children: (0, r.jsx)(a.Avr, {
-            text: N.intl.string(N.t.O8k7Oz),
+            text: N.intl.string(N.t.O8k7O4),
             onClick: K,
-            "aria-label": N.intl.string(N.t.O8k7Oz),
+            "aria-label": N.intl.string(N.t.O8k7O4),
             textVariant: "text-sm/medium"
           })
         })]
@@ -252,7 +252,7 @@ let L = function(e) {
         footer: H && !J ? (0, r.jsx)("div", {
           className: T.viewSpamButton,
           children: (0, r.jsx)(a.Avr, {
-            text: N.intl.string(N.t.R40bU1),
+            text: N.intl.string(N.t.R40bU2),
             onClick: Z,
             textVariant: "text-xs/medium",
             variant: "secondary"

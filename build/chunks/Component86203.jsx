@@ -1,4 +1,4 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 86203, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -36,6 +36,6 @@ function c(e) {
     },
     onMouseEnter: u,
     onMouseLeave: d,
-    text: s.intl.string(s.t["+78Pfn"])
+    text: s.intl.string(s.t["+78Pfm"])
   })
 }

@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk768581 = require("./768581.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk374491 = require("./374491.js"),
+  Chunk917733 = require("./917733.js"),
   Chunk63190 = require("./63190.js"),
   Chunk102219 = require("./102219.js");
 
@@ -33,11 +33,11 @@ function _(e) {
   } = n.features.has(x.GuildFeatures.BANNER) ? {
     variant: "overlay-secondary",
     icon: c.FmF,
-    text: b.intl.string(b.t.b0y3DA)
+    text: b.intl.string(b.t.b0y3DL)
   } : {
     variant: "expressive",
     icon: c.Ucv,
-    text: b.intl.string(b.t["+7XY39"])
+    text: b.intl.string(b.t["+7XY31"])
   };
   return (0, l.jsx)("div", {
     className: j.editButtonContainer,
@@ -109,11 +109,11 @@ let Z = Chunk647438.memo(function(e) {
               className: j.inviteButton,
               children: (0, l.jsx)(c.Button, {
                 variant: "secondary",
-                text: b.intl.string(b.t.VINpSE),
+                text: b.intl.string(b.t.VINpSK),
                 onClick: () => (0, c.ZDy)(async () => {
                   let {
                     default: e
-                  } = await Promise.all([t.e("7654"), t.e("28297")]).then(t.bind(t, 560114));
+                  } = await Promise.all([t.e("7654"), t.e("89772")]).then(t.bind(t, 560114));
                   return t => {
                     var r, a;
                     return (0, l.jsx)(e, (r = function(e) {

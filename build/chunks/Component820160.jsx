@@ -8,7 +8,7 @@ require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk813197 = require("./813197.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk111460 = require("./111460.js");
+  Chunk437907 = require("./437907.js");
 
 function o(e) {
   let {
@@ -55,7 +55,7 @@ function o(e) {
         onChange: n,
         multiple: false,
         tabIndex: 0,
-        "aria-label": r.intl.string(r.t.DWB2YW)
+        "aria-label": r.intl.string(r.t.DWB2YZ)
       })]
     })
   })

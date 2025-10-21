@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk885006 = require("./885006.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk911839 = require("./911839.js");
+  Chunk233828 = require("./233828.js");
 let Chunk412998 = require("./412998.js"),
   Chunk515695 = require("./515695.js"),
   p = "".concat(window.GLOBAL_ENV.WEBAPP_ENDPOINT.split("//")[1]).concat(Chunk981631.Z5c.ACTIVATE),
@@ -75,11 +75,11 @@ let m = e => {
             variant: "heading-xxl/semibold",
             color: "header-primary",
             className: d.qrcodeTextHeading,
-            children: c.intl.string(c.t.llDCiY)
+            children: c.intl.string(c.t.llDCid)
           }), (0, r.jsx)(i.Heading, {
             variant: "heading-xxl/normal",
             color: "header-secondary",
-            children: c.intl.string(c.t.JfHzXF)
+            children: c.intl.string(c.t.JfHzXG)
           })]
         })]
       }), (0, r.jsxs)("div", {
@@ -90,7 +90,7 @@ let m = e => {
           variant: "heading-lg/semibold",
           color: "header-primary",
           className: d.dividerText,
-          children: c.intl.string(c.t.arEHn5)
+          children: c.intl.string(c.t.arEHn4)
         }), (0, r.jsx)("div", {
           className: d.divider
         })]
@@ -102,11 +102,11 @@ let m = e => {
             variant: "heading-xxl/semibold",
             color: "header-primary",
             className: d.fallbackContentHeading,
-            children: c.intl.string(c.t.Eu8rJy)
+            children: c.intl.string(c.t["Eu8rJ/"])
           }), (0, r.jsx)(i.Heading, {
             variant: "heading-xxl/normal",
             color: "header-secondary",
-            children: c.intl.string(c.t.BkEMJy)
+            children: c.intl.string(c.t.BkEMJ1)
           })]
         }), (0, r.jsxs)("div", {
           className: d.fallbackContentAction,
@@ -120,7 +120,7 @@ let m = e => {
             children: [(0, r.jsx)(i.Heading, {
               variant: "heading-xxl/normal",
               color: "header-secondary",
-              children: c.intl.string(c.t.RyDxBQ)
+              children: c.intl.string(c.t.RyDxBX)
             }), (0, r.jsx)(i.Heading, {
               variant: "heading-xxl/bold",
               color: "header-primary",

@@ -12,7 +12,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk295907 = require("./295907.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk278463 = require("./278463.js");
+  Chunk599684 = require("./599684.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -36,9 +36,9 @@ function _(e) {
   return e
 }
 let p = Object.freeze({
-  SMALL: Chunk278463.small,
-  MEDIUM: Chunk278463.medium,
-  LARGE: Chunk278463.large
+  SMALL: Chunk599684.small,
+  MEDIUM: Chunk599684.medium,
+  LARGE: Chunk599684.large
 });
 var h = function(e) {
   return e.MEMBER = "MEMBER", e.ROLE = "ROLE", e.CHANNEL = "CHANNEL", e.USER = "USER", e
@@ -144,7 +144,7 @@ class m extends(r = Chunk647438.Component) {
     let {
       autoFocus: e,
       query: t,
-      placeholder: n = Chunk388032.intl.string(Chunk388032.t.LzcpeX),
+      placeholder: n = Chunk388032.intl.string(Chunk388032.t.LzcpeZ),
       themeOverride: r,
       disabled: a,
       size: o,
@@ -165,7 +165,7 @@ class m extends(r = Chunk647438.Component) {
         size: "md",
         color: "currentColor",
         className: d.close,
-        "aria-label": u.intl.string(u.t.N86XcH)
+        "aria-label": u.intl.string(u.t.N86XcP)
       })]
     }, t))) : (E = true, f.forEach((e, t) => b.push((0, i.jsxs)(l.Anchor, {
       className: s()(d.tag, d.richTag),
@@ -186,7 +186,7 @@ class m extends(r = Chunk647438.Component) {
         size: "md",
         color: "currentColor",
         className: d.close,
-        "aria-label": u.intl.string(u.t.N86XcH)
+        "aria-label": u.intl.string(u.t.N86XcP)
       })]
     }, t))))), (0, Chunk951288.jsx)(Chunk481060.tEY, {
       focusTarget: this.ref,

@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk524444 = require("./524444.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk414215 = require("./414215.js");
+  Chunk512399 = require("./512399.js");
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -103,7 +103,7 @@ function A(e) {
     a = i.useCallback(() => {
       var e;
       return (0, p.yE)(null != (e = n.flags) ? e : 0, E.J0y.IS_CLIP) ? (0, r.jsxs)(s.jS, {
-        text: b.intl.string(b.t["/fgfWl"]),
+        text: b.intl.string(b.t["/fgfWh"]),
         className: y.clipPill,
         children: [(0, r.jsx)(l.AlX, {
           size: "xs",
@@ -111,7 +111,7 @@ function A(e) {
         }), (0, r.jsx)(o.x, {
           variant: "text-xs/semibold",
           color: "always-white",
-          children: b.intl.string(b.t.oA4afH)
+          children: b.intl.string(b.t.oA4afG)
         })]
       }) : null
     }, [n]),

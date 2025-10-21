@@ -20,8 +20,8 @@ var Chunk120356 = require("./120356.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk258640 = require("./258640.js"),
-  Chunk942617 = require("./942617.js");
+  Chunk149829 = require("./149829.js"),
+  Chunk724437 = require("./724437.js");
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -143,15 +143,15 @@ let T = {
       } : {};
     return (0, r.jsx)(s.aML, {
       tooltipClassName: E.tooltip,
-      text: x ? m.intl.formatToPlainString(m.t["1o48kp"], {
+      text: x ? m.intl.formatToPlainString(m.t["1o48ki"], {
         tierName: (0, d.nW)(A, {
           useLevels: false
         })
-      }) : j ? m.intl.formatToPlainString(g.default["9CtPjo"], {
+      }) : j ? m.intl.formatToPlainString(g.default["9CtPjt"], {
         perk: (0, d.nW)(A, {
           useLevels: false
         })
-      }) : m.intl.formatToPlainString(m.t.r6NN6e, {
+      }) : m.intl.formatToPlainString(m.t.r6NN6Q, {
         numBoostsRequired: D,
         tierName: (0, d.nW)(A, {
           useLevels: false

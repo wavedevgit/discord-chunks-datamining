@@ -56,9 +56,9 @@ function f(e) {
       default: t
     } = await n.e("67753").then(n.bind(n, 873809));
     return n => (0, r.jsx)(t, d(c({}, n), {
-      header: s.intl.string(s.t["8jSzSU"]),
+      header: s.intl.string(s.t["8jSzSe"]),
       body: s.intl.string(s.t.bhqSWl),
-      confirmText: s.intl.string(s.t.BddRzc),
+      confirmText: s.intl.string(s.t.BddRzS),
       onConfirm: e
     }))
   }) : (0, i.ZDy)(async () => {
@@ -66,9 +66,9 @@ function f(e) {
       default: t
     } = await n.e("67753").then(n.bind(n, 873809));
     return a => (0, r.jsx)(t, d(c({}, a), {
-      header: s.intl.string(s.t.XLw6FB),
-      body: s.intl.string(s.t.wVjKGh),
-      confirmText: s.intl.string(s.t.BK8LKy),
+      header: s.intl.string(s.t.XLw6FF),
+      body: s.intl.string(s.t.wVjKGi),
+      confirmText: s.intl.string(s.t["BK8LK+"]),
       onConfirm: () => {
         null == e || e(), (0, i.ZDy)(async () => {
           let {

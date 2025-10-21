@@ -20,7 +20,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk63487 = require("./63487.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk691259 = require("./691259.js");
+  Chunk875210 = require("./875210.js");
 
 function b(e) {
   var t;
@@ -32,7 +32,7 @@ function b(e) {
     navigateToHome: b,
     subscriptionGroup: O,
     renewalSkuId: v
-  } = e, I = (0, s.y)(n, 100), T = (0, _.KK)(O.flags), S = T ? o.QTo : o.tBG, A = T ? g.intl.string(g.t["46YF2N"]) : g.intl.string(g.t.fFyGiI), C = null == (t = a.metadata) ? true : t.application_subscription_guild_id, N = (0, i.e7)([d.Z], () => T && null != C ? d.Z.getGuild(C) : true, [C, T]), R = (0, i.e7)([f.Z], () => {
+  } = e, I = (0, s.y)(n, 100), T = (0, _.KK)(O.flags), S = T ? o.QTo : o.tBG, A = T ? g.intl.string(g.t["46YF2D"]) : g.intl.string(g.t.fFyGiA), C = null == (t = a.metadata) ? true : t.application_subscription_guild_id, N = (0, i.e7)([d.Z], () => T && null != C ? d.Z.getGuild(C) : true, [C, T]), R = (0, i.e7)([f.Z], () => {
     if (null != v) return f.Z.get(v)
   }, [v]), P = (0, h.p)(a.currentPeriodEnd);
   return (0, r.jsxs)("div", {
@@ -68,7 +68,7 @@ function b(e) {
               }), (0, r.jsx)(o.Heading, {
                 variant: "heading-md/semibold",
                 color: "text-muted",
-                children: g.intl.format(g.t["7ZD8p6"], {
+                children: g.intl.format(g.t["7ZD8p1"], {
                   guildName: N.name
                 })
               })]
@@ -81,17 +81,17 @@ function b(e) {
         className: E.planNotice,
         children: [(0, r.jsx)(o.Text, {
           variant: "text-md/normal",
-          children: g.intl.string(g.t["goe+ho"])
+          children: g.intl.string(g.t["goe+hk"])
         }), e && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(o.Text, {
             variant: "text-md/normal",
-            children: g.intl.format(g.t["Q8qJ+/"], {})
+            children: g.intl.format(g.t["Q8qJ+5"], {})
           }), (0, r.jsx)(o.Text, {
             variant: "text-md/normal",
-            children: g.intl.format(g.t.sqowY2, {})
+            children: g.intl.format(g.t.sqowYz, {})
           })]
         }), (0, r.jsx)(l.Z.Toggle, {
-          text: e ? g.intl.string(g.t["1Rkq/P"]) : g.intl.string(g.t.WsTHkZ)
+          text: e ? g.intl.string(g.t["1Rkq/E"]) : g.intl.string(g.t.WsTHkY)
         })]
       })
     }), (0, r.jsxs)("div", {
@@ -104,11 +104,11 @@ function b(e) {
           children: [(0, r.jsx)(o.Text, {
             variant: "eyebrow",
             color: "text-brand",
-            children: g.intl.string(g.t.fHIpOT)
+            children: g.intl.string(g.t.fHIpOY)
           }), null != R && (0, r.jsx)(o.Text, {
             variant: "text-sm/semibold",
             color: "text-secondary",
-            children: g.intl.format(g.t["OQk+jo"], {
+            children: g.intl.format(g.t["OQk+jr"], {
               endDate: P
             })
           })]
@@ -118,7 +118,7 @@ function b(e) {
         cta: (0, r.jsx)(o.Text, {
           variant: "text-sm/semibold",
           color: "text-secondary",
-          children: g.intl.format(g.t.nn88hI, {
+          children: g.intl.format(g.t.nn88hB, {
             startDate: P
           })
         })
@@ -150,7 +150,7 @@ function y(e) {
     cta: (0, r.jsx)(a.zxk, {
       variant: "primary",
       size: "sm",
-      text: g.intl.string(g.t["+KwmBg"]),
+      text: g.intl.string(g.t["+KwmBt"]),
       onClick: o
     })
   })

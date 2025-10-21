@@ -11,8 +11,8 @@ var Chunk120356 = require("./120356.js"),
   Chunk481060 = require("./481060.js"),
   Chunk987997 = require("./987997.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk634468 = require("./634468.js"),
-  Chunk336763 = require("./336763.js"),
+  Chunk627782 = require("./627782.js"),
+  Chunk903163 = require("./903163.js"),
   Chunk845904 = require("./845904.js");
 
 function f(e) {
@@ -23,13 +23,13 @@ function f(e) {
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(o.Heading, {
       variant: "heading-md/bold",
-      children: l.intl.string(l.t["48ywCg"])
+      children: l.intl.string(l.t["48ywCu"])
     }), (0, r.jsx)(o.LZC, {
       size: 4
     }), (0, r.jsx)(o.Text, {
       variant: "text-md/normal",
       className: c.sectionDescription,
-      children: l.intl.string(l.t.VWxmSk)
+      children: l.intl.string(l.t.VWxmSo)
     }), (0, r.jsx)(o.LZC, {
       size: 24
     }), (0, r.jsxs)("div", {
@@ -43,17 +43,17 @@ function f(e) {
         children: [(0, r.jsx)(o.Heading, {
           variant: "heading-xl/semibold",
           className: c.header,
-          children: l.intl.string(l.t["48ywCg"])
+          children: l.intl.string(l.t["48ywCu"])
         }), (0, r.jsx)(o.Text, {
           variant: "text-md/normal",
           className: c.description,
-          children: l.intl.format(l.t["/esXLi"], {
+          children: l.intl.format(l.t["/esXLj"], {
             numSubscriptions: n
           })
         })]
       }), (0, r.jsx)(s.Z, {
         onClick: t,
-        text: l.intl.string(l.t.z5YcJy)
+        text: l.intl.string(l.t["z5YcJ+"])
       })]
     })]
   })

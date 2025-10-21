@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 469351, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -31,7 +31,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk514709 = require("./514709.js");
+  Chunk68920 = require("./68920.js");
 
 function w(e) {
   let {
@@ -62,10 +62,10 @@ function w(e) {
   let M = (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(o.Heading, {
         variant: "heading-lg/semibold",
-        children: T.intl.string(T.t.X6h2g4)
+        children: T.intl.string(T.t.X6h2gz)
       }), (0, r.jsx)(o.Text, {
         variant: "text-sm/normal",
-        children: T.intl.format(T.t.xiYuDg, {
+        children: T.intl.format(T.t.xiYuDt, {
           monetizationPolicyLink: C.Z.getArticleURL(I.BhN.CREATOR_POLICY),
           serverProductsSupportLink: C.Z.getCreatorSupportArticleURL(I.BhN.SERVER_PRODUCTS)
         })
@@ -75,27 +75,27 @@ function w(e) {
       type: "top",
       look: "brand",
       className: P.tabBar,
-      "aria-label": T.intl.string(T.t.X6h2g4),
+      "aria-label": T.intl.string(T.t.X6h2gz),
       selectedItem: L,
       onItemSelect: k,
       children: [(0, r.jsx)(u.Z, {
         id: "basic_info",
-        disabledTooltip: T.intl.string(T.t.NVDuUV),
+        disabledTooltip: T.intl.string(T.t.NVDuUX),
         disabled: !n,
-        children: T.intl.string(T.t.w27QAQ)
+        children: T.intl.string(T.t.w27QAR)
       }), (0, r.jsx)(u.Z, {
         id: "manage_listings",
-        disabledTooltip: T.intl.string(T.t.NVDuUV),
+        disabledTooltip: T.intl.string(T.t.NVDuUX),
         disabled: !n,
-        children: T.intl.string(T.t.wlZ1mp)
+        children: T.intl.string(T.t.wlZ1mh)
       }), D ? (0, r.jsx)(o.njP.Item, {
         id: "payment",
         className: P.tabBarItem,
-        children: T.intl.string(T.t.YBrFe3)
+        children: T.intl.string(T.t.YBrFe6)
       }) : null, n ? (0, r.jsx)("div", {
         className: P.previewButton,
         children: (0, r.jsx)(s.zxk, {
-          text: T.intl.string(T.t.vM81yc),
+          text: T.intl.string(T.t.vM81yY),
           variant: "secondary",
           onClick: G,
           size: "sm"

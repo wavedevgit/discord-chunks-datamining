@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk993413 = require("./993413.jsx"),
   Chunk486324 = require("./486324.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk190575 = require("./190575.js");
+  Chunk801292 = require("./801292.js");
 let h = [{
   name: "gif",
   extensions: ["gif"]
@@ -59,14 +59,14 @@ function m(e) {
         }),
         size: s.zx.Sizes.SMALL,
         onClick: A,
-        children: null != g ? g : _.intl.string(_.t["4OynCA"])
+        children: null != g ? g : _.intl.string(_.t["4OynCD"])
       }), t && (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: p.removeButton,
         children: (0, r.jsx)(l.Button, {
           variant: "secondary",
           size: "sm",
-          text: null != E ? _.intl.string(_.t.TDjKDg) : _.intl.string(_.t.twB3f3),
+          text: null != E ? _.intl.string(_.t.TDjKDm) : _.intl.string(_.t.twB3fz),
           onClick: () => a(null)
         })
       })]

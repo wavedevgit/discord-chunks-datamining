@@ -1,4 +1,4 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 613548, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => R
@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk185935 = require("./185935.js"),
   Chunk354459 = require("./354459.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk611295 = require("./611295.js");
+  Chunk956235 = require("./956235.js");
 
 function M(e) {
   let {
@@ -47,7 +47,7 @@ function M(e) {
     className: w.speakers,
     children: r.map(e => (0, i.jsx)(u.u, {
       position: "bottom",
-      text: A.intl.formatToPlainString(A.t.JjdizM, {
+      text: A.intl.formatToPlainString(A.t.JjdizN, {
         username: e.user.username
       }),
       children: (0, i.jsx)(S.ZP, {

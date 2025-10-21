@@ -16,12 +16,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk526761 = require("./526761.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk270879 = require("./270879.js");
+  Chunk252319 = require("./252319.js");
 
 function b() {
   let [e, t] = (0, Chunk243778.US)([Chunk704215.z.RESTRICTED_ACCOUNTS_SETTING_NOTICE]);
   return Chunk647438.useMemo(() => module === Chunk704215.z.RESTRICTED_ACCOUNTS_SETTING_NOTICE, [module]) ? (0, Chunk951288.jsx)(Chunk907995.f, {
-    label: Chunk388032.t.zqv4nZ,
+    label: Chunk388032.t.zqv4nV,
     labelHook: () => {
       (0, Chunk518596.openUserSettings)(Chunk313789.n.CONTENT_AND_SOCIAL_PANEL, {
         section: Chunk981631.oAB.CONTENT_AND_SOCIAL,
@@ -30,7 +30,7 @@ function b() {
       })
     },
     dismissNotice: () => exports(Chunk921944.L.USER_DISMISS),
-    className: Chunk270879.blockedIgnoredSettingsNotice,
+    className: Chunk252319.blockedIgnoredSettingsNotice,
     noticeType: Chunk484710.nq.RESTRICTED_ACCOUNTS_SETTING_NOTICE
   }) : null
 }

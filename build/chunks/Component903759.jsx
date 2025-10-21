@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk598117 = require("./598117.js"),
   Chunk746622 = require("./746622.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk702607 = require("./702607.js");
+  Chunk443899 = require("./443899.js");
 let h = e => {
     let {
       setImage: t
@@ -28,7 +28,7 @@ let h = e => {
           className: d.textContainer,
           children: [(0, r.jsx)(l.Text, {
             variant: "text-md/medium",
-            children: c.intl.format(c.t["Ks2/3d"], {
+            children: c.intl.format(c.t["Ks2/3R"], {
               selectFileHook: (e, n) => (0, r.jsx)(m, {
                 translatedContent: e,
                 setUserImage: t
@@ -37,7 +37,7 @@ let h = e => {
           }), (0, r.jsx)(l.Text, {
             variant: "text-xs/normal",
             color: "text-tertiary",
-            children: c.intl.string(c.t.UTE8Cw)
+            children: c.intl.string(c.t["UTE8C/"])
           })]
         }), null !== n && (0, r.jsx)(u.H4, {
           error: o.ze.IMAGE_LOAD,

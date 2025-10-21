@@ -55,19 +55,19 @@ function b(t) {
     isRecurrenceItem: p
   } = t, {
     canManageGuildEvent: Z
-  } = (0, u.XJ)(null != v ? v : b), y = (0, r.e7)([o.ZP], () => o.ZP.getGuildScheduledEvent(e)), O = Z(y), h = (0, s.Z)(), P = (0, c.Z)(E, null == y ? true : y.id), m = (0, a.zI)(e, E);
-  if (!O || null == m || null == y) return null;
+  } = (0, u.XJ)(null != v ? v : b), y = (0, r.e7)([o.ZP], () => o.ZP.getGuildScheduledEvent(e)), h = Z(y), P = (0, s.Z)(), O = (0, c.Z)(E, null == y ? true : y.id), m = (0, a.zI)(e, E);
+  if (!h || null == m || null == y) return null;
   let j = null != y.recurrence_rule && !p,
     N = t => {
       (null == E || t) && !p ? (0, i.ZDy)(async () => {
         let {
           default: t
-        } = await Promise.all([n.e("36599"), n.e("49049"), n.e("61"), n.e("61231")]).then(n.bind(n, 779250));
+        } = await Promise.all([n.e("36599"), n.e("49049"), n.e("61"), n.e("48399")]).then(n.bind(n, 779250));
         return n => (0, l.jsx)(t, f(g({}, n), {
           guildScheduledEventId: e,
           guildId: b.id
         }))
-      }, h) : null != E && (0, i.ZDy)(async () => {
+      }, P) : null != E && (0, i.ZDy)(async () => {
         let {
           default: t
         } = await n.e("27919").then(n.bind(n, 379038));
@@ -75,21 +75,21 @@ function b(t) {
           guildEvent: y,
           recurrenceId: E
         }))
-      }, h)
+      }, P)
     };
   return (0, l.jsx)(i.sNh, {
-    id: d.intl.string(d.t.Rgy2dX),
-    label: d.intl.string(d.t.Rgy2dX),
+    id: d.intl.string(d.t.Rgy2dU),
+    label: d.intl.string(d.t.Rgy2dU),
     action: j ? true : () => N(true),
     children: j && (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsx)(i.sNh, {
-        id: d.intl.string(d.t.wmVmXF),
-        label: d.intl.string(d.t.wmVmXF),
+        id: d.intl.string(d.t.wmVmXN),
+        label: d.intl.string(d.t.wmVmXN),
         action: () => N(false),
-        disabled: (null == P ? true : P.is_canceled) || m.startTime.getTime() < Date.now()
+        disabled: (null == O ? true : O.is_canceled) || m.startTime.getTime() < Date.now()
       }), (0, l.jsx)(i.sNh, {
-        id: d.intl.string(d.t.BW1Qoq),
-        label: d.intl.string(d.t.BW1Qoq),
+        id: d.intl.string(d.t.BW1Qoh),
+        label: d.intl.string(d.t.BW1Qoh),
         action: () => N(true),
         disabled: new Date(y.scheduled_start_time).getTime() < Date.now()
       })]

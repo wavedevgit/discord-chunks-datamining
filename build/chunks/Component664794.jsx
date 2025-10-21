@@ -75,8 +75,8 @@ function O(e) {
   } = (0, s.ZP)(o.Z.USER_PROFILE_OVERFLOW_MENU), I = {
     action: h.yM.PRESS_OPTIONS,
     icon: a.xhG,
-    tooltipText: m.intl.string(m.t.UKOtz8),
-    "aria-label": m.intl.string(m.t.UKOtz8)
+    tooltipText: m.intl.string(m.t["UKOtz+"]),
+    "aria-label": m.intl.string(m.t["UKOtz+"])
   }, T = (0, d.Z)({
     user: t,
     guildId: n,
@@ -144,7 +144,7 @@ function O(e) {
     })],
     [(0, l.Z)({
       id: t.id,
-      label: m.intl.string(m.t["/AXYnJ"]),
+      label: m.intl.string(m.t["/AXYnE"]),
       onSuccess: () => y({
         action: "COPY_USER_ID",
         analyticsLocations: O
@@ -163,7 +163,7 @@ function O(e) {
           navId: "user-profile-overflow-menu",
           onSelect: true,
           onClose: t,
-          "aria-label": m.intl.string(m.t.AXIHpa),
+          "aria-label": m.intl.string(m.t.AXIHpV),
           children: N.map((e, t) => (0, r.jsx)(a.kSQ, {
             children: e.map(e => e)
           }, t))

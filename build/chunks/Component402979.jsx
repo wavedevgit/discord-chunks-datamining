@@ -51,18 +51,18 @@ function u(e) {
     }
     return e
   }({
-    header: l.intl.formatToPlainString(l.t["1GX6Pz"], {
+    header: l.intl.formatToPlainString(l.t["1GX6P/"], {
       name: u.name
     }),
-    confirmText: u.features.has(c.GuildFeatures.HUB) ? l.intl.string(l.t.Dv8gFR) : l.intl.string(l.t.J2TBi4),
-    cancelText: l.intl.string(l.t["ETE/oK"]),
+    confirmText: u.features.has(c.GuildFeatures.HUB) ? l.intl.string(l.t.Dv8gFT) : l.intl.string(l.t.J2TBi3),
+    cancelText: l.intl.string(l.t["ETE/oC"]),
     onConfirm: b
   }, s), r = r = {
     children: (0, n.jsx)(i.Text, {
       variant: "text-md/normal",
-      children: u.features.has(c.GuildFeatures.HUB) ? l.intl.format(l.t.ZHTXVF, {
+      children: u.features.has(c.GuildFeatures.HUB) ? l.intl.format(l.t.ZHTXVD, {
         name: u.name
-      }) : l.intl.format(l.t.ZEXC0t, {
+      }) : l.intl.format(l.t.ZEXC0r, {
         name: u.name
       })
     })

@@ -1,4 +1,4 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 974251, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => F
@@ -40,7 +40,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk356659 = require("./356659.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk935730 = require("./935730.js");
+  Chunk90274 = require("./90274.js");
 
 function H(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -80,9 +80,9 @@ let F = Chunk647438.memo(function(e) {
     channel: G,
     draftType: z,
     editorTextContent: W,
-    setValue: K,
+    setValue: q,
     canOnlyUseTextCommands: Y
-  } = e, q = (0, y.bp)(), X = r.useRef(null), J = r.useRef(null), Q = (0, o.e7)([I.Z], () => I.Z.getActivities()), $ = (0, o.e7)([m.Z], () => m.Z.getSettings().clipsEnabled), ee = (0, o.e7)([m.Z], () => m.Z.getLastClipsSession()), et = (0, o.Wu)([m.Z], () => m.Z.getNewClipIds()), en = (0, o.e7)([j.ZP], () => null == j.ZP.getCurrentSidebarChannelId(G.id)), {
+  } = e, K = (0, y.bp)(), X = r.useRef(null), J = r.useRef(null), Q = (0, o.e7)([I.Z], () => I.Z.getActivities()), $ = (0, o.e7)([m.Z], () => m.Z.getSettings().clipsEnabled), ee = (0, o.e7)([m.Z], () => m.Z.getLastClipsSession()), et = (0, o.Wu)([m.Z], () => m.Z.getNewClipIds()), en = (0, o.e7)([j.ZP], () => null == j.ZP.getCurrentSidebarChannelId(G.id)), {
     showClipsHeaderEntrypoint: ei
   } = f.NV.useExperiment({
     location: "ChannelAttachButton"
@@ -136,7 +136,7 @@ let F = Chunk647438.memo(function(e) {
       newClipsCount: eO,
       canPostPolls: ey,
       canLaunchActivities: e_,
-      appContext: q,
+      appContext: K,
       canSendScheduledMessages: ev,
       canSummarizeThreads: ex
     });
@@ -181,7 +181,7 @@ let F = Chunk647438.memo(function(e) {
               },
               draftType: z,
               editorTextContent: W,
-              setValue: K,
+              setValue: q,
               openClips: em
             }));
           default:
@@ -193,7 +193,7 @@ let F = Chunk647438.memo(function(e) {
         className: a()(B.attachButton, F),
         childClassName: B.attachButtonInner,
         isActive: false,
-        "aria-label": U.intl.string(U.t.d56gCQ),
+        "aria-label": U.intl.string(U.t.d56gCa),
         onDoubleClick: ep ? () => {
           var e;
           return null == (e = X.current) ? true : e.activateUploadDialogue()

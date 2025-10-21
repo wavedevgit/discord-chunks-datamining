@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk91907 = require("./91907.jsx"),
   Chunk866040 = require("./866040.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk991553 = require("./991553.js");
+  Chunk817120 = require("./817120.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -97,7 +97,7 @@ function y(e) {
       color: "text-secondary",
       className: o()(h.truncatedText, h.usersHeader),
       scaleFontToUserSetting: true,
-      children: p.intl.format(p.t.rH95Gh, {
+      children: p.intl.format(p.t.rH95Gu, {
         user0: c.ZP.getName(n.guild_id, n.id, S[0]),
         user1: c.ZP.getName(n.guild_id, n.id, S[1]),
         countOthers: I,

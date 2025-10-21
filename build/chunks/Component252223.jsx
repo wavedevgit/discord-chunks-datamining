@@ -32,7 +32,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk556638 = require("./556638.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk666998 = require("./666998.js");
+  Chunk80568 = require("./80568.js");
 
 function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -76,13 +76,13 @@ function M(e, t) {
 function k(e) {
   let t = (0, d.R)("formatActivityString"),
     n = (null == e ? true : e.name) === "" ? null : null == e ? true : e.name;
-  return null != n ? t ? n : P.intl.formatToPlainString(P.t["0wJXSk"], {
+  return null != n ? t ? n : P.intl.formatToPlainString(P.t["0wJXSh"], {
     name: n
-  }) : P.intl.string(P.t.eXan7O)
+  }) : P.intl.string(P.t.eXan7B)
 }
 
 function j(e, t) {
-  return (e.isDM() || e.isGroupDM() ? P.intl.string(P.t["9FaEzs"]) : e.isGuildStageVoice() ? P.intl.string(P.t.QygGCA) : P.intl.string(P.t.msxteH)) + (null != t ? " (".concat(t, ")") : "")
+  return (e.isDM() || e.isGroupDM() ? P.intl.string(P.t["9FaEzi"]) : e.isGuildStageVoice() ? P.intl.string(P.t.QygGCN) : P.intl.string(P.t.msxteM)) + (null != t ? " (".concat(t, ")") : "")
 }
 
 function U(e) {

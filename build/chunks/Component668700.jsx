@@ -25,7 +25,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk663907 = require("./663907.js");
+  Chunk704543 = require("./704543.js");
 let I = 3;
 
 function T(e) {
@@ -122,7 +122,7 @@ function T(e) {
         },
         onUserClick: e => e.stopPropagation(),
         disableUserPopout: !!x || (e => e === t.id),
-        "aria-label": O.intl.string(O.t.jNqDh4)
+        "aria-label": O.intl.string(O.t["jNqDh/"])
       })]
     })]
   })

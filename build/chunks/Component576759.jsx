@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk994102 = require("./994102.jsx"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk230759 = require("./230759.js");
+  Chunk114004 = require("./114004.js");
 
 function b(e) {
   var t;
@@ -47,7 +47,7 @@ function b(e) {
           color: u.Z.BG_BRAND
         }), (0, r.jsx)(a.Text, {
           variant: "text-xs/medium",
-          children: g.intl.string(g.t.IQjdmZ)
+          children: g.intl.string(g.t.IQjdmV)
         })]
       }), (0, r.jsx)(h.Z, {
         application: I,

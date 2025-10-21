@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk946273 = require("./946273.js"),
   Chunk441110 = require("./441110.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk610369 = require("./610369.js");
+  Chunk334090 = require("./334090.js");
 
 function d(e) {
   let {
@@ -44,7 +44,7 @@ function d(e) {
         tag: "span",
         innerRef: d,
         children: (0, r.jsx)(a.u, {
-          text: c.intl.string(c.t["v/OYd3"]),
+          text: c.intl.string(c.t["v/OYd2"]),
           children: (0, r.jsx)("div", {
             className: u.newMemberBadge,
             children: (0, r.jsx)(o.hg2, {

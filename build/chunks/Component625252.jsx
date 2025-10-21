@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk46140 = require("./46140.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk654283 = require("./654283.js"),
+  Chunk154115 = require("./154115.js"),
   Chunk66094 = require("./66094.js");
 
 function y(e, t, n) {
@@ -65,32 +65,32 @@ function I() {
       location: Chunk46140.dr.QUEST_HOME_MOVED_CALLOUT
     });
   return (0, Chunk951288.jsx)("div", {
-    className: Chunk654283.container,
+    className: Chunk154115.container,
     style: exports,
     children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
-      className: Chunk654283.textContainer,
+      className: Chunk154115.textContainer,
       justify: "space-between",
       children: [(0, Chunk951288.jsxs)(Chunk481060.Kqy, {
         gap: 4,
         children: [(0, Chunk951288.jsxs)("div", {
-          className: Chunk654283.headerContainer,
+          className: Chunk154115.headerContainer,
           children: [(0, Chunk951288.jsx)("img", {
             alt: "",
             src: Chunk66094,
-            className: Chunk654283.icon
+            className: Chunk154115.icon
           }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
             variant: "heading-lg/bold",
             color: "always-white",
-            children: Chunk388032.intl.string(Chunk388032.t.z8YP2N)
+            children: Chunk388032.intl.string(Chunk388032.t.z8YP2A)
           })]
         }), (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-md/medium",
           color: "text-secondary",
-          children: Chunk388032.intl.string(y ? Chunk388032.t["HdKh6+"] : Chunk388032.t.IqmRZ2)
+          children: Chunk388032.intl.string(y ? Chunk388032.t.HdKh65 : Chunk388032.t.IqmRZ9)
         })]
       }), (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: module ? "primary" : "overlay-primary",
-        text: Chunk388032.intl.string(Chunk388032.t.GURBQk),
+        text: Chunk388032.intl.string(Chunk388032.t.GURBQl),
         onClick: require
       })]
     })

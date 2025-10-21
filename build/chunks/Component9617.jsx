@@ -17,21 +17,21 @@ var Chunk951288 = require("./951288.js"),
   Chunk921944 = require("./921944.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk885820 = require("./885820.js");
+  Chunk700803 = require("./700803.js");
 let g = () => {
   let [e, t] = (0, Chunk243778.US)([Chunk704215.z.WIDGETS_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE]), n = module === Chunk704215.z.WIDGETS_USER_SETTINGS_PROFILE_PAGE_NEW_BADGE, g = (0, Chunk442837.e7)([Chunk314897.default], () => Chunk314897.default.getId());
   return (0, Chunk951288.jsx)(Chunk993413.Z, {
-    title: Chunk388032.intl.string(Chunk388032.t.Jzj9q6),
-    description: Chunk388032.intl.string(Chunk388032.t.lfF1Sk),
+    title: Chunk388032.intl.string(Chunk388032.t.Jzj9q4),
+    description: Chunk388032.intl.string(Chunk388032.t.lfF1Sp),
     titleIcon: require ? (0, Chunk951288.jsx)(Chunk481060.IGR, {
-      className: Chunk885820.newBadge,
+      className: Chunk700803.newBadge,
       text: Chunk388032.intl.string(Chunk388032.t.y2b7CA)
     }) : null,
     borderType: Chunk504983.Y.LIMITED,
     showBorder: require,
     hasBackground: require,
     children: (0, Chunk951288.jsx)(Chunk481060.Button, {
-      text: Chunk388032.intl.string(Chunk388032.t.Geikws),
+      text: Chunk388032.intl.string(Chunk388032.t.Geikwq),
       onClick: () => {
         require && exports(Chunk921944.L.TAKE_ACTION), (0, Chunk892001.openUserProfileModal)({
           userId: g,

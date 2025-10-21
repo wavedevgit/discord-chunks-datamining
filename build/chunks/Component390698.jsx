@@ -10,7 +10,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk105876 = require("./105876.js");
+  Chunk863577 = require("./863577.js");
 let u = e => {
   let {
     className: t,
@@ -31,12 +31,12 @@ let u = e => {
         })
       }), (0, r.jsx)(o.Text, {
         variant: "text-md/semibold",
-        children: s.intl.string(s.t.BEjTio)
+        children: s.intl.string(s.t.BEjTij)
       })]
     })
   }) : (0, r.jsx)(o.Text, {
     variant: "text-md/semibold",
     className: t,
-    children: s.intl.string(s.t["6cfuDg"])
+    children: s.intl.string(s.t["6cfuDj"])
   })
 }

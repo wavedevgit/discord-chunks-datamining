@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk939716 = require("./939716.jsx"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk73262 = require("./73262.js");
+  Chunk424215 = require("./424215.js");
 
 function C(e) {
   var t, a, l, r;
@@ -52,7 +52,7 @@ function C(e) {
             isGift: false
           })
         },
-        text: b.intl.string(b.t.boqtTE),
+        text: b.intl.string(b.t.boqtTA),
         fullWidth: true
       }), (0, n.jsx)(i.Button, {
         icon: i.OgN,
@@ -62,7 +62,7 @@ function C(e) {
             isGift: true
           })
         },
-        text: b.intl.string(b.t.QAZA5e),
+        text: b.intl.string(b.t.QAZA5f),
         fullWidth: true
       })]
     })]
@@ -101,7 +101,7 @@ function _(e) {
   })
 }
 
-function v(e) {
+function f(e) {
   let {
     socialLayerTenantMetadata: t,
     selectedCarouselItemIndex: a,
@@ -125,7 +125,7 @@ function v(e) {
   })
 }
 
-function f(e) {
+function v(e) {
   let {
     onClick: t,
     children: a,
@@ -163,7 +163,7 @@ function I(e) {
       className: h.modalContent,
       children: [(0, n.jsxs)("div", {
         className: h.infoContainer,
-        children: [(0, n.jsx)(v, {
+        children: [(0, n.jsx)(f, {
           applicationId: p,
           socialLayerTenantMetadata: null == j || null == (a = j.tenantMetadata) ? true : a.socialLayer,
           selectedCarouselItemIndex: k
@@ -178,9 +178,9 @@ function I(e) {
           storefront: x.storefront
         }), (0, n.jsx)("div", {
           className: h.modalHeaderButtonsContainer,
-          children: (0, n.jsx)(f, {
+          children: (0, n.jsx)(v, {
             onClick: I,
-            "aria-label": b.intl.string(b.t.cpT0Cg),
+            "aria-label": b.intl.string(b.t.cpT0Cq),
             children: (0, n.jsx)(i.Dio, {
               size: "md",
               color: "currentColor"

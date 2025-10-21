@@ -1,4 +1,4 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 534469, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   AP: () => et,
@@ -52,7 +52,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk959517 = require("./959517.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk5898 = require("./5898.js");
+  Chunk360514 = require("./360514.js");
 
 function J() {
   return (J = Object.assign || function(e) {
@@ -136,7 +136,7 @@ function en(e) {
     {
       popouts: f,
       setPopout: m
-    } = (0, L.Z)(r.id, K.d$),
+    } = (0, L.Z)(r.id, q.d$),
     g = (0, T.ZP)(r),
     b = (0, w.iG)(r),
     C = (0, w.Gx)(r);
@@ -195,7 +195,7 @@ function ei(e) {
     popouts: G,
     selected: J,
     setPopout: et
-  } = (0, L.Z)(o.id, K.d$), en = x.RS.useSetting(), ei = x.NA.useSetting(), er = (0, u.e7)([_.Z], () => _.Z.getMessageByReference(E)), el = (0, m.A)((null != (n = o.editedTimestamp) ? n : o.timestamp).valueOf()), {
+  } = (0, L.Z)(o.id, q.d$), en = x.RS.useSetting(), ei = x.NA.useSetting(), er = (0, u.e7)([_.Z], () => _.Z.getMessageByReference(E)), el = (0, m.A)((null != (n = o.editedTimestamp) ? n : o.timestamp).valueOf()), {
     handleMouseEnter: ea,
     handleMouseLeave: eo,
     isHovered: es
@@ -226,8 +226,8 @@ function ei(e) {
     children: [(0, i.jsx)(d.P3F, {
       className: X.jump,
       onClick: e_,
-      "aria-label": q.intl.string(q.t.k5WiPT),
-      children: q.intl.string(q.t.k5WiPT)
+      "aria-label": K.intl.string(K.t.k5WiPf),
+      children: K.intl.string(K.t.k5WiPf)
     }), (0, i.jsx)(A.Z, $(Q({}, N), {
       id: l,
       compact: b,
@@ -314,7 +314,7 @@ let er = Chunk647438.memo(function(e) {
       popouts: em,
       selected: eg,
       setPopout: eb
-    } = (0, L.Z)(v.id, K.d$),
+    } = (0, L.Z)(v.id, q.d$),
     eC = (0, M.qo)(v, J, eb),
     ey = (0, M.Go)(v, J),
     {
@@ -376,13 +376,13 @@ let er = Chunk647438.memo(function(e) {
     }),
     ez = (0, w.iG)(v, el),
     eW = (0, w.Gx)(v),
-    eK = (0, u.e7)([h.Z], () => h.Z.getMessage(I), [I]),
+    eq = (0, u.e7)([h.Z], () => h.Z.getMessage(I), [I]),
     eY = (0, k.Z)({
       message: v,
       channel: J
     }),
-    eq = r.useRef(window),
-    eX = null != eK,
+    eK = r.useRef(window),
+    eX = null != eq,
     eJ = r.useMemo(() => Object.values(em).some(e => e), [em]);
   l = v.type === Y.uaV.CUSTOM_GIFT ? "" : !eT && eX ? (0, B.Z)(e, ek) : (0, F.Z)(e, ek, eT);
   let eQ = v.id === el,
@@ -401,7 +401,7 @@ let er = Chunk647438.memo(function(e) {
           hovering: eO && !eT && !eJ
         }), (0, i.jsx)(A.Z, $(Q({}, eu), {
           "aria-setsize": false,
-          "aria-roledescription": q.intl.string(q.t.BAB0yM),
+          "aria-roledescription": K.intl.string(K.t.BAB0yK),
           "aria-labelledby": ez,
           "aria-describedby": eW,
           onFocus: eI,
@@ -459,7 +459,7 @@ let er = Chunk647438.memo(function(e) {
             setPopout: eb,
             messagePopouts: em,
             isFocused: eO || ej,
-            messageWindow: eq.current
+            messageWindow: eK.current
           }) : true,
           childrenSystemMessage: (0, W.Z)(e),
           childrenMessageContent: l,
@@ -470,7 +470,7 @@ let er = Chunk647438.memo(function(e) {
           hasReply: v.type === Y.uaV.REPLY,
           messageRef: e => {
             var t, n;
-            eY.current = e, eq.current = null != (n = null == e || null == (t = e.ownerDocument) ? true : t.defaultView) ? n : window
+            eY.current = e, eK.current = null != (n = null == e || null == (t = e.ownerDocument) ? true : t.defaultView) ? n : window
           },
           author: eH
         }))]

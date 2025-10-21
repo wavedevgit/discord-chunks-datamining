@@ -1,4 +1,4 @@
-/** Chunk was on 13608 **/
+/** Chunk was on 75685 **/
 /** chunk id: 404975, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   P: () => v
@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk996435 = require("./996435.js"),
   Chunk854014 = require("./854014.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk565184 = require("./565184.js");
+  Chunk845435 = require("./845435.js");
 
 function v(e) {
   let {
@@ -72,7 +72,7 @@ function v(e) {
                 onClick: y,
                 variant: "icon-only",
                 size: "sm",
-                "aria-label": j.intl.string(j.t.cpT0Cg)
+                "aria-label": j.intl.string(j.t.cpT0Cq)
               })
             }), (0, r.jsx)("div", {
               children: P.map(e => (0, r.jsx)(g, {

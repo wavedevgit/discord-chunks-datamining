@@ -12,8 +12,8 @@ var Chunk442837 = require("./442837.js"),
   Chunk144507 = require("./144507.js"),
   Chunk388032 = require("./388032.jsx");
 let c = {
-  title: () => Chunk388032.intl.string(Chunk388032.t["KzCF//"]),
-  description: () => Chunk388032.intl.string(Chunk388032.t.xMW8FB),
+  title: () => Chunk388032.intl.string(Chunk388032.t["KzCF/6"]),
+  description: () => Chunk388032.intl.string(Chunk388032.t.xMW8FH),
   canCreateGuild: false,
   useIsGuildSupported: () => (0, Chunk442837.e7)([Chunk353926.Z], () => (e, t) => (0, o.eM)(e, t) && (0, u.X$)({
     guild: e,

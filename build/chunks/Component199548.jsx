@@ -15,12 +15,12 @@ let c = (0, Chunk509613.x1)(Chunk313789.n.ACTIVITY_PRIVACY_PANE, {
     render: () => (0, Chunk951288.jsx)(Chunk309739.Z, {})
   }),
   E = (0, Chunk509613.wf)(Chunk313789.n.ACTIVITY_PRIVACY_PANEL, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t.Cq98yM),
+    useTitle: () => Chunk388032.intl.string(Chunk388032.t.Cq98yL),
     buildLayout: () => [c]
   }),
   d = (0, Chunk509613.m7)(Chunk313789.n.ACTIVITY_PRIVACY_SIDEBAR_ITEM, {
     icon: Chunk657707.KED,
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t.Cq98yM),
+    useTitle: () => Chunk388032.intl.string(Chunk388032.t.Cq98yL),
     legacySearchKey: Chunk726985.s6.ACTIVITY_PRIVACY,
     buildLayout: () => [E]
   })

@@ -1,11 +1,11 @@
-/** Chunk was on 33840 **/
+/** Chunk was on 47863 **/
 /** chunk id: 567126, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Hu: () => K,
+  Hu: () => J,
   jx: () => H,
   oA: () => W,
   ov: () => F,
-  se: () => J
+  se: () => X
 }), require("./35282.js"), require("./388685.js"), require("./642613.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -44,7 +44,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk46140 = require("./46140.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk613098 = require("./613098.js");
+  Chunk336606 = require("./336606.js");
 
 function U(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -106,7 +106,7 @@ function W(e) {
     enableGoLiveCaptureCard: l
   } = O.Z.useExperiment({
     location: "GoLive_Source_Select"
-  }), o = b.Z.supports(B.AN.GO_LIVE_HARDWARE), [a, p] = i.useState(null), [x, j] = i.useState(null), [y, C] = i.useState(null), w = null != y && y.length > 0, [P, Z] = i.useState(c.vA.WINDOW), [E, T] = i.useState(false), A = i.useRef(null), M = i.useRef(new u.Xp), D = (0, d.e7)([_.ZP], () => _.ZP.getRunningGames()), U = H((0, d.e7)([v.Z], () => v.Z.quests), D, x), W = i.useMemo(() => null == x ? null : [...x].sort((e, t) => F(t, null == U ? true : U.source.id) - F(e, null == U ? true : U.source.id)), [U, x]);
+  }), o = b.Z.supports(L.AN.GO_LIVE_HARDWARE), [a, p] = i.useState(null), [x, j] = i.useState(null), [y, C] = i.useState(null), w = null != y && y.length > 0, [P, Z] = i.useState(c.vA.WINDOW), [E, T] = i.useState(false), A = i.useRef(null), M = i.useRef(new u.Xp), D = (0, d.e7)([_.ZP], () => _.ZP.getRunningGames()), U = H((0, d.e7)([v.Z], () => v.Z.quests), D, x), W = i.useMemo(() => null == x ? null : [...x].sort((e, t) => F(t, null == U ? true : U.source.id) - F(e, null == U ? true : U.source.id)), [U, x]);
   i.useEffect(() => {
     let e = M.current;
     return (0, I.t)({
@@ -136,13 +136,13 @@ function W(e) {
   let z = i.useCallback(e => {
       null !== e && (A.current = e, T(!e.isScrolledToTop()))
     }, []),
-    [V, J] = i.useState(true);
+    [V, X] = i.useState(true);
   i.useEffect(() => {
     g.Z.hasPermission(k.Eu.SCREEN_RECORDING, {
       showAuthorizationError: false
-    }).then(J)
+    }).then(X)
   }, []);
-  let K = function(e) {
+  let J = function(e) {
     switch (e) {
       case c.vA.WINDOW:
         return W;
@@ -152,18 +152,18 @@ function W(e) {
         return y
     }
   }(P);
-  if (null == K) returnfalse === V ? (0, r.jsxs)(f.Text, {
+  if (null == J) returnfalse === V ? (0, r.jsxs)(f.Text, {
     className: G.errorMessage,
     variant: "text-md/normal",
     color: "text-danger",
-    children: [L.intl.string(L.t["kW5h/f"]), (0, r.jsx)("br", {}), L.intl.string(L.t["5Jvu1d"])]
+    children: [B.intl.string(B.t["kW5h/W"]), (0, r.jsx)("br", {}), B.intl.string(B.t["5Jvu1R"])]
   }) : (0, r.jsx)(h.Z, {
     className: G.spinner,
     justify: h.Z.Justify.CENTER,
     align: h.Z.Align.CENTER,
     children: (0, r.jsx)(f.$jN, {})
   });
-  let X = K.map(e => {
+  let K = J.map(e => {
     let {
       id: i
     } = e, l = (null == t ? true : t.id) === i;
@@ -186,14 +186,14 @@ function W(e) {
       }), (0, r.jsx)(f.sY7, {
         options: function() {
           let e = [{
-            name: L.intl.string(L.t.tHoi7u),
+            name: B.intl.string(B.t.tHoi7u),
             value: c.vA.WINDOW
           }, {
-            name: L.intl.string(L.t["/iX8u7"]),
+            name: B.intl.string(B.t["/iX8uz"]),
             value: c.vA.SCREEN
           }];
           return l && o && w && e.push({
-            name: L.intl.string(L.t.cWt5Ul),
+            name: B.intl.string(B.t.cWt5Up),
             value: c.vA.CAMERA
           }), e
         }(),
@@ -220,7 +220,7 @@ function W(e) {
         layout: m.Z.Layout.WRAP,
         columns: 2,
         className: G.sourceContainer,
-        children: X
+        children: K
       })]
     })]
   })
@@ -232,7 +232,7 @@ function z(e) {
   } = e, n = i.useCallback(() => {
     t({
       id: "prepicked:",
-      name: L.intl.string(L.t["KKcy9/"]),
+      name: B.intl.string(B.t.KKcy95),
       url: ""
     })
   }, [t]);
@@ -249,7 +249,7 @@ function z(e) {
       }), (0, r.jsx)(f.Text, {
         variant: "text-md/medium",
         color: "none",
-        children: L.intl.string(L.t.Yp6h5e)
+        children: B.intl.string(B.t.Yp6h5W)
       })]
     })
   })
@@ -288,7 +288,7 @@ function V(e) {
   })
 }
 
-function J(e) {
+function X(e) {
   let {
     onSourceSelect: t,
     selectedSource: n
@@ -342,20 +342,20 @@ function J(e) {
       children: [(0, r.jsx)(V, {
         onSelect: t,
         id: "screen",
-        name: L.intl.string(L.t.R4wpLC),
-        text: L.intl.string(L.t.cVUFXV),
+        name: B.intl.string(B.t.R4wpLN),
+        text: B.intl.string(B.t.cVUFXY),
         icon: f.pzj
       }), (0, r.jsx)(V, {
         onSelect: t,
         id: "window",
-        name: L.intl.string(L.t["+SLJCg"]),
-        text: L.intl.string(L.t.dG2A1N),
+        name: B.intl.string(B.t["+SLJCh"]),
+        text: B.intl.string(B.t.dG2A1E),
         icon: f.GON
       }), g ? (0, r.jsx)(V, {
         onSelect: t,
         id: "app",
-        name: L.intl.string(L.t.ct7AKS),
-        text: L.intl.string(L.t["8lQwf3"]),
+        name: B.intl.string(B.t.ct7AKQ),
+        text: B.intl.string(B.t["8lQwf8"]),
         icon: f.gw7
       }) : null]
     });
@@ -365,7 +365,7 @@ function J(e) {
       className: G.nativePickerLabel,
       variant: "text-md/semibold",
       color: "interactive-normal",
-      children: L.intl.string(L.t.XyYoFR)
+      children: B.intl.string(B.t.XyYoFc)
     }), S, 0 === l.length ? null : (0, r.jsxs)("div", {
       className: s()(G.nativePickerCaptureSection, x ? null : G.nativePickerCollapsed),
       children: [(0, r.jsxs)(f.P3F, {
@@ -375,7 +375,7 @@ function J(e) {
           className: G.nativeCaptureDevicesText,
           variant: "text-md/semibold",
           color: "interactive-normal",
-          children: L.intl.string(L.t.rO0Vi4)
+          children: B.intl.string(B.t.rO0Vix)
         }), (0, r.jsx)(f.CJ0, {
           size: "sm",
           color: "currentColor",
@@ -400,7 +400,7 @@ function J(e) {
   })
 }
 
-function K(e) {
+function J(e) {
   let {
     onSourceSelect: t,
     onCancel: n,
@@ -415,7 +415,7 @@ function K(e) {
     className: G.errorMessage,
     variant: "text-md/normal",
     color: "text-danger",
-    children: null != o && o.length > 0 ? o : L.intl.string(L.t.CKsXk5)
+    children: null != o && o.length > 0 ? o : B.intl.string(B.t.CKsXk3)
   }) : (0, r.jsx)(A.Z, {
     animated: true,
     className: G.nativePickerGuide

@@ -29,7 +29,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk526761 = require("./526761.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk683326 = require("./683326.js");
+  Chunk455734 = require("./455734.js");
 
 function R() {
   Chunk254901.Z.useExperiment({
@@ -67,22 +67,22 @@ function R() {
   let M = true,
     k = true;
   return D && 1 === L.length && (L.includes(Chunk726985.s6.PROFILE_SERVER_PROFILES) ? (x(Chunk526761.NB.GUILD), k = false) : L.includes(Chunk726985.s6.PROFILE_USER_PROFILE) && (x(Chunk526761.NB.USER_PROFILE), M = false)), (0, Chunk951288.jsxs)(Chunk10298.N, {
-    header: Chunk388032.intl.string(Chunk388032.t["vi7f+v"]),
+    header: Chunk388032.intl.string(Chunk388032.t["vi7f+q"]),
     children: [(0, Chunk951288.jsxs)(Chunk481060.njP, {
-      className: Chunk683326.tabBar,
+      className: Chunk455734.tabBar,
       type: "top",
       look: "brand",
       selectedItem: P,
       onItemSelect: x,
       children: [k ? (0, Chunk951288.jsx)(Chunk481060.njP.Item, {
-        className: Chunk683326.tabBarItem,
+        className: Chunk455734.tabBarItem,
         id: Chunk526761.NB.USER_PROFILE,
         children: Chunk388032.intl.string(Chunk388032.t["2p07FR"])
       }, Chunk526761.NB.USER_PROFILE) : null, M ? (0, Chunk951288.jsx)(Chunk481060.njP.Item, {
-        className: o()(Chunk683326.tabBarItem, Chunk683326.guildTabBarItem),
-        "aria-label": Chunk388032.intl.string(Chunk388032.t.kPHroa),
+        className: o()(Chunk455734.tabBarItem, Chunk455734.guildTabBarItem),
+        "aria-label": Chunk388032.intl.string(Chunk388032.t.kPHroX),
         id: Chunk526761.NB.GUILD,
-        children: Chunk388032.intl.string(Chunk388032.t.kPHroa)
+        children: Chunk388032.intl.string(Chunk388032.t.kPHroX)
       }, Chunk526761.NB.GUILD) : null]
     }), P === Chunk526761.NB.GUILD ? (0, Chunk951288.jsx)(Chunk851894.Z, {
       selectedGuild: Chunk120356

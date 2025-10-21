@@ -39,9 +39,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk215023 = require("./215023.js"),
   Chunk981631 = require("./981631.js"),
   Chunk295907 = require("./295907.js"),
-  Chunk654664 = require("./654664.js"),
-  Chunk391447 = require("./391447.js");
-let M = e => {
+  Chunk887353 = require("./887353.js"),
+  Chunk345213 = require("./345213.js");
+let D = e => {
     let {
       children: t,
       shouldAddEventListener: n,
@@ -60,12 +60,12 @@ let M = e => {
       tab: t = R.AW.HOME
     } = e;
     (0, C.z)(f.f), (0, j.f)();
-    let n = (0, g.Z)((0, o.Z)()),
-      i = (0, s.e7)([b.default], () => b.default.getCurrentUser()),
+    let n = (0, g.Z)((0, s.Z)()),
+      i = (0, o.e7)([b.default], () => b.default.getCurrentUser()),
       {
         userProfile: c,
         wishlistId: w
-      } = (0, s.cj)([h.Z], () => ({
+      } = (0, o.cj)([h.Z], () => ({
         userProfile: null != i ? h.Z.getUserProfile(i.id) : null,
         wishlistId: null != i ? h.Z.getFirstWishlistId(i.id) : null
       }), [i]);
@@ -91,22 +91,22 @@ let M = e => {
         tab: z
       }),
       Y = (0, y.O)(G),
-      [q, Q] = l.useState(),
-      J = (0, s.e7)([E.Z], () => {
+      [q, J] = l.useState(),
+      Q = (0, o.e7)([E.Z], () => {
         var e;
         return null == (e = E.Z.getCategory(q)) ? true : e.name
       }),
       [X, $] = l.useState();
     (0, I.Kp)();
     let ee = l.useCallback((e, t) => {
-        $(e), Q(t)
+        $(e), J(t)
       }, []),
       {
         selectedTab: et,
         transitionState: en,
         transitionToTab: er
       } = (0, k.B)(z);
-    (0, O.q3)(n, et, J, en, X), (0, O.EB)(et, i);
+    (0, O.q3)(n, et, Q, en, X), (0, O.EB)(et, i);
     let {
       dismissShopButtonDC: el
     } = (0, N.Z)();
@@ -122,24 +122,24 @@ let M = e => {
       null == (e = ea.current) || e.focus()
     }, []);
     let {
-      analyticsLocations: eo
+      analyticsLocations: es
     } = (0, O.MV)(et);
     return (0, r.jsx)(p.Gt, {
-      value: eo,
+      value: es,
       children: (0, r.jsx)(v.k0, {
         newValue: {
           sessionId: n,
-          pageCategory: J,
+          pageCategory: Q,
           pageSize: R.kN
         },
         children: (0, r.jsx)(x.ni, {
           tab: et,
-          children: (0, r.jsx)(M, {
+          children: (0, r.jsx)(D, {
             onClose: W,
             shouldAddEventListener: false,
             children: (0, r.jsxs)("div", {
               className: a()(H.shop, {
-                [D.shopTakeOver]: F
+                [M.shopTakeOver]: F
               }),
               ref: ea,
               tabIndex: false,

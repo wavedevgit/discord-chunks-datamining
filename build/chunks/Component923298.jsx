@@ -21,8 +21,8 @@ function f(e) {
       sku_name: p,
       guild_id: y,
       cancelLabel: d,
-      confirmLabel: g,
-      transitionState: m,
+      confirmLabel: m,
+      transitionState: g,
       onClose: j
     } = e,
     v = function(e, t) {
@@ -59,22 +59,22 @@ function f(e) {
     }
     return e
   }({
-    header: null != f ? f : s.intl.string(s.t["+78Pfn"]),
-    cancelText: null != d ? d : s.intl.string(s.t["ETE/oK"]),
-    confirmText: null != g ? g : s.intl.string(s.t["+78Pfn"]),
+    header: null != f ? f : s.intl.string(s.t["+78Pfm"]),
+    cancelText: null != d ? d : s.intl.string(s.t["ETE/oC"]),
+    confirmText: null != m ? m : s.intl.string(s.t["+78Pfm"]),
     onConfirm: () => {
       a.default.track(u.rMx.TNS_SKU_REPORT_SUBMITTED, {
         sku_id: O,
         guild_id: y,
         user_id: null == P ? true : P.id
       }), l.Z.show({
-        title: s.intl.string(s.t.sUvCKS),
-        body: s.intl.format(s.t["7KJnk5"], {
+        title: s.intl.string(s.t.sUvCKU),
+        body: s.intl.format(s.t["7KJnk0"], {
           skuName: p
         })
       })
     },
-    transitionState: m,
+    transitionState: g,
     onClose: j
   }, v), r = r = {
     children: b

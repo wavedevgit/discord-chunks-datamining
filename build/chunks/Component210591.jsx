@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 210591, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk259580 = require("./259580.jsx"),
   Chunk293810 = require("./293810.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk351761 = require("./351761.js");
+  Chunk937028 = require("./937028.js");
 
 function p(e) {
   let {
@@ -44,13 +44,13 @@ function f(e) {
     children: t
   } = e, [n, l] = i.useState(false), a = t.flatMap(e => e.items.map(e => e.completed)), o = a.filter(e => e).length / a.length, f = 1 === o, h = (0, c.q_F)({
     width: "".concat(100 * o, "%")
-  }), b = [g.intl.format(g.t.wtQtXl, {
+  }), b = [g.intl.format(g.t.wtQtXs, {
     promoPageGuideUrl: u.iv.PROMO_PAGE_GUIDE
-  }), g.intl.format(g.t["0Fo0wc"], {
+  }), g.intl.format(g.t["0Fo0wf"], {
     caseStudiesUrl: u.iv.CASE_STUDIES
-  }), g.intl.format(g.t["7JdzjI"], {
+  }), g.intl.format(g.t["7JdzjA"], {
     subscriptionOfferingGuideUrl: u.iv.SUBSCRIPTION_OFFERING_GUIDE
-  }), g.intl.format(g.t.zkXN6O, {
+  }), g.intl.format(g.t.zkXN6I, {
     tierStructureGuideUrl: u.iv.TIER_STRUCTURE_GUIDE
   })], x = n ? null : (0, r.jsxs)(c.C3N, {
     children: [!f && t.map((e, t) => {
@@ -96,7 +96,7 @@ function f(e) {
           children: [(0, r.jsx)(c.Heading, {
             variant: "heading-md/semibold",
             className: m.headerText,
-            children: g.intl.string(g.t["2Xbd/P"])
+            children: g.intl.string(g.t["2Xbd/G"])
           }), (0, r.jsx)(d.Z, {
             direction: n ? d.Z.Directions.DOWN : d.Z.Directions.UP,
             className: m.headerCaret

@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk279604 = require("./279604.jsx"),
   Chunk279475 = require("./279475.js"),
   Chunk535396 = require("./535396.js"),
-  Chunk470039 = require("./470039.js");
+  Chunk237522 = require("./237522.js");
 
 function x(e) {
   let {
@@ -24,12 +24,12 @@ function x(e) {
     powerup: n
   } = e, [x, _] = i.useState(true);
   (0, f.KT)(x);
-  let [b, h] = i.useState(false), j = (0, s.ZP)(t, n).type !== g.A3.INACTIVE, C = (0, m.d)(j), I = (0, a.g1)(t, "GuildPowerupPerkCard"), E = n.skuId === o.A$;
+  let [b, h] = i.useState(false), j = (0, s.ZP)(t, n).type !== g.A3.INACTIVE, C = (0, m.d)(j), I = (0, a.g1)(t, "GuildPowerupPerkCard"), w = n.skuId === o.A$;
   return (0, r.jsxs)(p.Z, {
     onHover: e => h(e),
     guildId: t,
     powerup: n,
-    badge: E && I ? "beta" : true,
+    badge: w && I ? "beta" : true,
     children: [(0, r.jsx)(d.m, {
       className: v.image,
       powerup: n,

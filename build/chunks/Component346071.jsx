@@ -10,7 +10,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk886969 = require("./886969.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk796926 = require("./796926.js"),
+  Chunk163395 = require("./163395.js"),
   Chunk774945 = require("./774945.js");
 
 function u(e) {
@@ -21,13 +21,13 @@ function u(e) {
     style: d
   } = e, f = t.fractionalState === o.a$.FP_SUB_PAUSED, _ = (0, a.Z)(t.endsAt, f), p = "", h = {
     trial: {
-      days_and_hours: s.t.SQyVVV,
+      days_and_hours: s.t.SQyVVd,
       days: s.t["2ifAYG"],
-      hours: s.t.kZSTYm
+      hours: s.t.kZSTYg
     },
     default: {
-      days_and_hours: s.t["6r9LLi"],
-      days: s.t.c2BbVF,
+      days_and_hours: s.t["6r9LLp"],
+      days: s.t.c2BbVA,
       hours: s.t["8Xm6uL"]
     }
   };

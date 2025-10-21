@@ -1,4 +1,4 @@
-/** Chunk was on 41794 **/
+/** Chunk was on 45141 **/
 /** chunk id: 887904, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => o
@@ -12,14 +12,14 @@ var Chunk481060 = require("./481060.js"),
 function o(e) {
   let {
     guildFriendsEnabled: t
-  } = l.Z.useExperiment({
+  } = a.Z.useExperiment({
     location: "useFriendsItem"
   }, {
     autoTrackExposure: false
   });
   return t ? (0, i.jsx)(r.sNh, {
     id: "friends",
-    label: a.intl.string(a.t.kYxEcH),
+    label: l.intl.string(l.t.kYxEcH),
     icon: r.iFz,
     action: () => {
       (0, r.ZDy)(async () => {

@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 708510, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk384632 = require("./384632.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk332177 = require("./332177.js");
+  Chunk912231 = require("./912231.js");
 
 function N(e) {
   let {
@@ -77,8 +77,8 @@ function I(e) {
     h.Z.setIsAgeRestricted(t, e)
   }, [t]), g = n === O.V_K.AGE_RESTRICTED && s !== O.V_K.AGE_RESTRICTED;
   return (0, r.jsx)(a.rsf, {
-    label: y.intl.string(y.t.N9xEJC),
-    description: y.intl.format(y.t["iyQQ6+"], {
+    label: y.intl.string(y.t.N9xEJF),
+    description: y.intl.format(y.t.iyQQ62, {
       helpArticleLink: u.Z.getArticleURL(O.BhN.NSFW_SERVER_AGE_RESTRICTION)
     }),
     checked: o,
@@ -121,13 +121,13 @@ function T() {
     children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
       color: "header-primary",
       variant: "heading-lg/semibold",
-      children: Chunk388032.intl.string(Chunk388032.t.YJlvBA)
+      children: Chunk388032.intl.string(Chunk388032.t.YJlvBM)
     }), (0, Chunk951288.jsx)(Chunk307375.h, {
       onTypePicked: require,
       activeType: Chunk456268,
       guild: module
     }), (0, Chunk951288.jsx)("div", {
-      className: Chunk332177.divider
+      className: Chunk912231.divider
     }), null != module && (0, Chunk951288.jsx)(S, {
       guildId: module.id
     }), (0, Chunk951288.jsx)("div", {

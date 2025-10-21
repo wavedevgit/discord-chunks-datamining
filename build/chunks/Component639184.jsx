@@ -1,4 +1,4 @@
-/** Chunk was on 76892 **/
+/** Chunk was on 9456 **/
 /** chunk id: 639184, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -14,9 +14,9 @@ var Chunk120356 = require("./120356.js"),
   Chunk710352 = require("./710352.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk440282 = require("./440282.js"),
-  Chunk932981 = require("./932981.js"),
-  Chunk262008 = require("./262008.js"),
+  Chunk816922 = require("./816922.js"),
+  Chunk971309 = require("./971309.js"),
+  Chunk586301 = require("./586301.js"),
   Chunk504764 = require("./504764.js");
 
 function x(e) {
@@ -43,7 +43,7 @@ function x(e) {
         }), (0, r.jsx)(l.Text, {
           variant: "text-sm/semibold",
           color: "header-primary",
-          children: u.intl.string(u.t.uvGmCw)
+          children: u.intl.string(u.t.uvGmCx)
         }), (0, r.jsxs)("div", {
           className: h.notice,
           children: [(0, r.jsx)(l.d3s, {
@@ -53,7 +53,7 @@ function x(e) {
           }), (0, r.jsx)(l.Text, {
             variant: "text-sm/normal",
             color: "header-secondary",
-            children: u.intl.string(u.t.t2GkVV)
+            children: u.intl.string(u.t.t2GkVR)
           })]
         })]
       }), (0, r.jsx)(l.P3F, {
@@ -77,15 +77,15 @@ function x(e) {
           className: a()(g.__invalid_channelName, h.title),
           variant: "heading-lg/semibold",
           color: "header-primary",
-          children: u.intl.string(u.t.JtSpDw)
+          children: u.intl.string(u.t.JtSpD0)
         }), (0, r.jsx)(l.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
-          children: u.intl.string(u.t.Ajhp09)
+          children: u.intl.string(u.t.Ajhp03)
         })]
       }), (0, r.jsx)("img", {
         src: f,
-        alt: u.intl.string(u.t.gAlJzc),
+        alt: u.intl.string(u.t.gAlJzV),
         width: o.TJ,
         height: o.TJ
       })]

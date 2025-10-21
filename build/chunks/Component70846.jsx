@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk159691 = require("./159691.js"),
   Chunk426642 = require("./426642.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk336774 = require("./336774.js");
+  Chunk997328 = require("./997328.js");
 let l = t => {
   let {
     transitionState: r,
@@ -16,7 +16,7 @@ let l = t => {
     onClose: l
   } = t, d = i.useMemo(() => [{
     variant: "secondary",
-    text: o.intl.string(o.t["NX+WJC"]),
+    text: o.intl.string(o.t["NX+WJN"]),
     onClick: l
   }], [l]);
   return (0, s.jsx)(n.u_l, {

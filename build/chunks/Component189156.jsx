@@ -11,7 +11,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk833062 = require("./833062.jsx"),
   Chunk292814 = require("./292814.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk377095 = require("./377095.js");
+  Chunk699568 = require("./699568.js");
 
 function c(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -105,7 +105,7 @@ function g(e) {
       children: [(0, r.jsx)(i.Heading, {
         variant: "text-md/semibold",
         color: "text-default",
-        children: s.intl.string(s.t.Iyka0d)
+        children: s.intl.string(s.t.Iyka0U)
       }), (0, r.jsx)(i.Mgn, {
         size: "xs",
         className: l.icon

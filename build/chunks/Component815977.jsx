@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 815977, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk707076 = require("./707076.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk24773 = require("./24773.js");
+  Chunk344037 = require("./344037.js");
 
 function R() {
   let e = (0, Chunk442837.e7)([Chunk999382.Z], () => Chunk999382.Z.getGuildId());
@@ -114,7 +114,7 @@ function D(e) {
         }), (0, r.jsx)(d.Text, {
           variant: "text-sm/semibold",
           color: "interactive-normal",
-          children: w.intl.string(w.t["13/7kZ"])
+          children: w.intl.string(w.t["13/7kX"])
         })]
       })
     }), (0, r.jsx)("div", {
@@ -143,7 +143,7 @@ function A(e) {
       }), (0, r.jsx)(d.Text, {
         color: t === O.PG.SAFETY_CHECK ? "text-brand" : "text-muted",
         variant: "text-xs/medium",
-        children: w.intl.format(w.t.Me5MmZ, {
+        children: w.intl.format(w.t.Me5Mma, {
           stepNumber: 1
         })
       })]
@@ -157,9 +157,9 @@ function A(e) {
       }), (0, r.jsx)(d.Text, {
         color: t === O.PG.DEFAULT_CHANNELS ? "text-brand" : "text-muted",
         variant: "text-xs/medium",
-        children: c ? w.intl.formatToPlainString(w.t["8mGhOz"], {
+        children: c ? w.intl.formatToPlainString(w.t["8mGhOy"], {
           stepNumber: 2
-        }) : w.intl.formatToPlainString(w.t.vxpuTU, {
+        }) : w.intl.formatToPlainString(w.t.vxpuTd, {
           stepNumber: 2
         })
       })]
@@ -173,7 +173,7 @@ function A(e) {
       }), (0, r.jsx)(d.Text, {
         color: t === O.PG.CUSTOMIZATION_QUESTIONS ? "text-brand" : "text-muted",
         variant: "text-xs/medium",
-        children: c ? w.intl.formatToPlainString(w.t.vb6J5u, {
+        children: c ? w.intl.formatToPlainString(w.t.vb6J5g, {
           stepNumber: 3
         }) : w.intl.formatToPlainString(w.t.ZpdQqK, {
           stepNumber: 3
@@ -189,7 +189,7 @@ function A(e) {
       }), (0, r.jsx)(d.Text, {
         color: t === O.PG.HOME_SETTINGS ? "text-brand" : "text-muted",
         variant: "text-xs/medium",
-        children: w.intl.format(w.t.KVOukp, {
+        children: w.intl.format(w.t.KVOukh, {
           stepNumber: 4
         })
       })]
@@ -202,7 +202,7 @@ function A(e) {
       }), (0, r.jsx)(d.Text, {
         color: t === O.PG.REVIEW ? "text-brand" : "text-muted",
         variant: "text-xs/medium",
-        children: w.intl.format(w.t.oVzkiI, {
+        children: w.intl.format(w.t.oVzkiA, {
           stepNumber: 3 + +!!i + 1
         })
       })]

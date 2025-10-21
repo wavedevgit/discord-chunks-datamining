@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk497505 = require("./497505.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk849845 = require("./849845.js");
+  Chunk101202 = require("./101202.js");
 
 function g(t) {
   let {
@@ -49,10 +49,10 @@ function g(t) {
     size: "sm",
     transitionState: e,
     onClose: s,
-    title: d.intl.string(d.t.GcsZKC),
+    title: d.intl.string(d.t.GcsZKJ),
     actions: [{
       onClick: () => s(),
-      text: d.intl.string(d.t.cpT0Cg)
+      text: d.intl.string(d.t.cpT0Cq)
     }],
     children: [(0, i.jsx)(a.Text, {
       variant: "text-sm/medium",
@@ -64,7 +64,7 @@ function g(t) {
     }), (0, i.jsx)(a.Text, {
       variant: "text-xs/medium",
       color: "text-muted",
-      children: d.intl.format(d.t.tzq9WV, {
+      children: d.intl.format(d.t.tzq9Wa, {
         privacySettingsUrl: c.Z.getArticleURL(u.BhN.QUESTS_PRIVACY_CONTROLS)
       })
     })]
@@ -86,13 +86,13 @@ function x(t) {
       className: m.targetList,
       children: [t && (0, i.jsx)(T, {
         icon: a.enf,
-        children: d.intl.string(d.t.xQSdPj)
+        children: d.intl.string(d.t.xQSdPv)
       }), s && (0, i.jsx)(T, {
         icon: a.tBG,
-        children: d.intl.string(d.t.mYt7hY)
+        children: d.intl.string(d.t.mYt7hQ)
       }), n && (0, i.jsx)(T, {
         icon: a.iWm,
-        children: d.intl.string(d.t.XAsWxc)
+        children: d.intl.string(d.t.XAsWxQ)
       })]
     })
   }

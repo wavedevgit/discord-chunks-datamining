@@ -1,4 +1,4 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 248789, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Y: () => C
@@ -78,7 +78,7 @@ function C(e) {
       (0, o.ZDy)(async () => {
         let {
           default: e
-        } = await Promise.all([n.e("37031"), n.e("89650"), n.e("41837")]).then(n.bind(n, 611446));
+        } = await Promise.all([n.e("37031"), n.e("89650"), n.e("899")]).then(n.bind(n, 611446));
         return n => {
           let {
             transitionState: r,
@@ -107,7 +107,7 @@ function C(e) {
       (0, o.ZDy)(async () => {
         let {
           default: e
-        } = await n.e("63498").then(n.bind(n, 699783));
+        } = await n.e("19538").then(n.bind(n, 699783));
         return n => {
           let {
             transitionState: r,
@@ -132,15 +132,15 @@ function C(e) {
     warningId: C,
     senderId: y,
     warningType: d.pj.INAPPROPRIATE_CONVERSATION_TIER_2,
-    header: m.intl.string(m.t.ZzlB5u),
-    description: m.intl.string(m.t["D1aU+v"]),
+    header: m.intl.string(m.t.ZzlB5p),
+    description: m.intl.string(m.t["D1aU+h"]),
     onDismiss: _,
     buttons: [{
-      text: m.intl.string(m.t.Qyu4UF),
+      text: m.intl.string(m.t.Qyu4UK),
       variant: "primary",
       onClick: j
     }, ...v ? [] : [{
-      text: m.intl.string(m.t["7q0bNT"]),
+      text: m.intl.string(m.t["7q0bNY"]),
       variant: "secondary",
       onClick: P
     }]]

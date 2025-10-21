@@ -23,7 +23,7 @@ function d(t, e, n) {
   }, [e]), v = n === f.IlC.POPOUT;
   return !p || v ? null : (0, r.jsx)(o.sNh, {
     id: "mention",
-    label: b.intl.string(b.t.P8tvKC),
+    label: b.intl.string(b.t.P8tvKG),
     action: function() {
       let {
         id: e

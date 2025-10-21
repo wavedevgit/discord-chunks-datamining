@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk174727 = require("./174727.js"),
   Chunk990792 = require("./990792.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk609978 = require("./609978.js");
+  Chunk612926 = require("./612926.js");
 let m = Chunk647438.memo(function(e) {
   let {
     sound: n,
@@ -34,7 +34,7 @@ let m = Chunk647438.memo(function(e) {
         })) : (y.pause(), h(false)))
       },
       className: f.playButton,
-      "aria-label": g ? d.intl.string(d.t.hHBkuL) : d.intl.string(d.t.RscU7O),
+      "aria-label": g ? d.intl.string(d.t.hHBkuG) : d.intl.string(d.t.RscU7I),
       children: g ? (0, a.jsx)(r.wNq, {
         size: "xs",
         color: "currentColor",

@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk356683 = require("./356683.js");
+  Chunk473385 = require("./473385.js");
 
 function m(e) {
   let {
@@ -42,11 +42,11 @@ function m(e) {
       maxLength: f.l$U,
       onChange: T,
       disabled: !O,
-      helperText: O ? true : p.intl.string(p.t.gzjxQk)
+      helperText: O ? true : p.intl.string(p.t.gzjxQi)
     }), !O && (0, r.jsx)(a.Text, {
       variant: "text-sm/normal",
       className: h.nicknameDisabled,
-      children: p.intl.string(p.t.gzjxQk)
+      children: p.intl.string(p.t.gzjxQi)
     }), I && v && (0, r.jsx)(c.Z, {
       user: E,
       guildId: b.id,

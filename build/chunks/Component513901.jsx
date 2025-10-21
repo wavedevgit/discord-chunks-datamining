@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk445143 = require("./445143.js");
+  Chunk78946 = require("./78946.js");
 
 function y(e) {
   let {
@@ -72,14 +72,14 @@ function y(e) {
         className: o()({
           [b.buttonHighlighted]: I
         }),
-        children: E.intl.string(E.t["/dRfCQ"])
+        children: E.intl.string(E.t["/dRfCf"])
       }), L && (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: b.removeButton,
         children: (0, r.jsx)(l.Button, {
           variant: "secondary",
           size: "sm",
-          text: D ? E.intl.string(E.t.CHf9iI) : E.intl.string(E.t.uMuafH),
+          text: D ? E.intl.string(E.t.CHf9iJ) : E.intl.string(E.t.uMuafO),
           onClick: x
         })
       })]

@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 30818, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -15,9 +15,9 @@ function a(e) {
     canManageGuild: a
   } = e;
   return (0, r.jsx)(i.z, {
-    label: l.intl.string(l.t["23TVho"]),
-    description: l.intl.string(l.t.U4LwWF),
-    helperText: l.intl.string(l.t.xdY0pK),
+    label: l.intl.string(l.t["23TVhl"]),
+    description: l.intl.string(l.t.U4LwWC),
+    helperText: l.intl.string(l.t.xdY0pC),
     guildId: t,
     defaultSettings: n,
     canManageGuild: a

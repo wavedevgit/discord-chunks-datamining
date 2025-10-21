@@ -1,4 +1,4 @@
-/** Chunk was on 84283 **/
+/** Chunk was on 69844 **/
 /** chunk id: 292191, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -9,13 +9,13 @@ var Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk541496 = require("./541496.js"),
+  Chunk895057 = require("./895057.js"),
   Chunk516450 = require("./516450.js");
 
 function d(e) {
   let {
-    heading: t = s.intl.string(s.t.NGw8v7),
-    body: n = s.intl.string(s.t["1XZRY2"]),
+    heading: t = s.intl.string(s.t.NGw8v2),
+    body: n = s.intl.string(s.t["1XZRY4"]),
     className: a
   } = e;
   return (0, r.jsxs)("div", {
@@ -25,7 +25,7 @@ function d(e) {
       children: (0, r.jsx)("img", {
         className: o.image,
         src: c,
-        alt: s.intl.string(s.t["/UJaIy"])
+        alt: s.intl.string(s.t["/UJaI2"])
       })
     }), (0, r.jsx)(l.Heading, {
       variant: "heading-xl/semibold",

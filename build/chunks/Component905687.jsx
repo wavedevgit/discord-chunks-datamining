@@ -17,20 +17,20 @@ function d(n) {
     handleDeletePermission: d
   } = n, a = (0, u.Z)({
     id: l,
-    label: null == i ? o.intl.string(o.t["/AXYnJ"]) : o.intl.string(o.t.sMsaLi)
+    label: null == i ? o.intl.string(o.t["/AXYnE"]) : o.intl.string(o.t.sMsaLg)
   });
   return t.useEffect(() => {
     null == d && null == a && (0, r.Zy)()
   }, [a, d]), (0, s.jsxs)(e.v2r, {
     navId: null == i ? "member-permissions-menu" : "role-permissions-menu",
-    "aria-label": null == i ? o.intl.string(o.t.pJMip6) : o.intl.string(o.t.ltedOj),
+    "aria-label": null == i ? o.intl.string(o.t.pJMipx) : o.intl.string(o.t.ltedOh),
     onClose: r.Zy,
     onSelect: true,
     children: [null != d && (0, s.jsx)(e.kSQ, {
       children: (0, s.jsx)(e.sNh, {
         id: "remove-permission",
         color: "danger",
-        label: null == i ? o.intl.string(o.t.hXfRwM) : o.intl.string(o.t["T+3Adn"]),
+        label: null == i ? o.intl.string(o.t.hXfRwD) : o.intl.string(o.t["T+3Adg"]),
         icon: e.XHJ,
         action: d
       })

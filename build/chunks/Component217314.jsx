@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 217314, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -16,7 +16,7 @@ var Chunk399606 = require("./399606.js"),
   Chunk51144 = require("./51144.js"),
   Chunk984370 = require("./984370.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk161655 = require("./161655.js");
+  Chunk97009 = require("./97009.js");
 
 function m(e) {
   let t = e.channel.getRecipientId(),
@@ -34,7 +34,7 @@ function m(e) {
     });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(o.nn4, {
-      children: h.intl.string(h.t.EJRzg4)
+      children: h.intl.string(h.t.EJRzg7)
     }), null != m && !n && (0, r.jsx)("div", {
       children: (0, r.jsx)(o.qEK, {
         status: b,
@@ -56,10 +56,10 @@ function m(e) {
           className: v,
           children: null != O ? O : p.ZP.getName(m)
         }), j && (0, r.jsx)(l.u, {
-          text: h.intl.string(h.t.QyZ4TU),
+          text: h.intl.string(h.t.QyZ4Td),
           children: (0, r.jsx)(o.tQf, {
             size: "xs",
-            "aria-label": h.intl.string(h.t.VHXh8f),
+            "aria-label": h.intl.string(h.t.VHXh8a),
             color: o.TVs.colors.INTERACTIVE_NORMAL,
             className: g.secureFramesIcon
           })

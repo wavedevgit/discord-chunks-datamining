@@ -1,7 +1,7 @@
 /** Chunk was on 76157 **/
 /** chunk id: 828569, original params: e,r,n (module,exports,require) **/
 require.d(exports, {
-  default: () => R
+  default: () => M
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk23152 = require("./23152.js");
+  Chunk803414 = require("./803414.js");
 let N = e => {
     let {
       locale: r
@@ -39,18 +39,18 @@ let N = e => {
       children: [(0, t.jsx)(x.Z, {
         icon: a.SlE,
         iconClassName: E.iconColorPurple,
-        description: S.intl.string(S.t.uAfKTU)
+        description: S.intl.string(S.t.uAfKTe)
       }), (0, t.jsx)(x.Z, {
         icon: a.$zw,
         iconClassName: E.iconColorPink,
-        description: S.intl.formatToPlainString(S.t.sWnv5O, {
+        description: S.intl.formatToPlainString(S.t.sWnv5M, {
           numGuildSubscriptions: w.cb,
           discountPercent: (0, k.T3)(r, w.Rr / 100)
         })
       }), (0, t.jsx)(x.Z, {
         icon: a.EO4,
         iconClassName: E.iconColorYellow,
-        description: S.intl.string(S.t.pqHIf3)
+        description: S.intl.string(S.t.pqHIf7)
       })]
     })
   },
@@ -82,7 +82,7 @@ let N = e => {
           className: E.heading,
           children: null == s ? (0, t.jsx)(a.$jN, {
             type: a.$jN.Type.PULSING_ELLIPSIS
-          }) : S.intl.format(S.t.TBsJfX, {
+          }) : S.intl.format(S.t.TBsJfQ, {
             monthlyPrice: (0, I.T4)(s.amount, s.currency)
           })
         }), (0, t.jsx)("div", {
@@ -108,11 +108,11 @@ let N = e => {
       children: [(0, t.jsx)(a.Button, {
         variant: "secondary",
         size: "sm",
-        text: S.intl.string(S.t.cpT0Cg),
+        text: S.intl.string(S.t.cpT0Cq),
         onClick: o
       }), (0, t.jsx)(O.Z, {
         textOptions: {
-          textOverride: null != r || null != n ? S.intl.string(S.t["Gd/XHB"]) : true
+          textOverride: null != r || null != n ? S.intl.string(S.t["Gd/XHF"]) : true
         },
         premiumModalAnalyticsLocation: i,
         subscriptionTier: w.Si.TIER_2,
@@ -125,7 +125,7 @@ let N = e => {
     })
   };
 
-function R(e) {
+function M(e) {
   var r, n, {
       onClose: i
     } = e,

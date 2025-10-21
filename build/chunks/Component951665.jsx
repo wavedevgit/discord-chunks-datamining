@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 951665, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -10,7 +10,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk457414 = require("./457414.js"),
   Chunk311173 = require("./311173.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk332310 = require("./332310.js");
+  Chunk97247 = require("./97247.js");
 
 function d(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -80,7 +80,7 @@ function g(e) {
           className: c.header,
           children: [(0, r.jsx)(l.Heading, {
             variant: "text-sm/medium",
-            children: o.intl.string(o.t.dnunm5)
+            children: o.intl.string(o.t["dnunm+"])
           }), p ? (0, r.jsx)(l.u04, {
             size: "md",
             color: "currentColor",

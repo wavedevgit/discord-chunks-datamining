@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk653617 = require("./653617.js");
+  Chunk632357 = require("./632357.js");
 
 function s(e) {
   let {
@@ -17,7 +17,7 @@ function s(e) {
     hasBoostPerk: r,
     canAddBoosts: i
   } = e;
-  return i ? t ? r && !n ? a.intl.format(a.t.s9zQyM, {}) : a.intl.format(a.t.Rb8Jho, {}) : a.intl.string(a.t["2rh0b2"]) : a.intl.format(a.t.Rb8Jho, {})
+  return i ? t ? r && !n ? a.intl.format(a.t.s9zQyG, {}) : a.intl.format(a.t.Rb8Jhs, {}) : a.intl.string(a.t["2rh0by"]) : a.intl.format(a.t.Rb8Jhs, {})
 }
 let l = function(e) {
   let {

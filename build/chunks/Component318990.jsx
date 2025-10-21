@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk518950 = require("./518950.js"),
   Chunk357355 = require("./357355.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk591315 = require("./591315.js");
+  Chunk880406 = require("./880406.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -47,20 +47,20 @@ function _() {
       animateOnHover: true
     }),
     _ = e => null != e.globalName ? e.globalName : e.username,
-    p = Chunk647438.useMemo(() => module.length >= 2 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.c7ETJC, {
+    p = Chunk647438.useMemo(() => module.length >= 2 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.c7ETJH, {
       username: _(module[0])
-    }) : 1 === module.length ? Chunk388032.intl.formatToPlainString(Chunk388032.t.dpjXPD, {
+    }) : 1 === module.length ? Chunk388032.intl.formatToPlainString(Chunk388032.t.dpjXPL, {
       username: _(module[0])
     }) : "", [module]);
   return 0 === module.length ? null : (0, Chunk951288.jsxs)("div", {
-    className: Chunk591315.container,
+    className: Chunk880406.container,
     children: [(0, Chunk951288.jsx)(Chunk481060.qEK, f({
-      className: Chunk591315.__invalid_icon,
+      className: Chunk880406.__invalid_icon,
       src: require,
       "aria-label": exports.username,
       size: Chunk481060.EFr.SIZE_24
     }, d)), (0, Chunk951288.jsx)(Chunk481060.Text, {
-      className: Chunk591315.text,
+      className: Chunk880406.text,
       variant: "text-sm/normal",
       color: "always-white",
       children: p

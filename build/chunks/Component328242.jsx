@@ -1,4 +1,4 @@
-/** Chunk was on 33840 **/
+/** Chunk was on 47863 **/
 /** chunk id: 328242, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => E
@@ -25,9 +25,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk567126 = require("./567126.jsx"),
   Chunk615161 = require("./615161.jsx"),
   Chunk761274 = require("./761274.js"),
-  Chunk137349 = require("./137349.js"),
+  Chunk489999 = require("./489999.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk615770 = require("./615770.js");
+  Chunk602804 = require("./602804.js");
 
 function Z(e) {
   let {
@@ -75,7 +75,7 @@ function I(e) {
             children: (0, r.jsx)(u.Text, {
               variant: "text-sm/medium",
               color: "button-filled-white-text",
-              children: w.intl.string(w.t.z7WGho)
+              children: w.intl.string(w.t.z7WGhv)
             })
           })
         })]
@@ -121,8 +121,8 @@ function E(e) {
     if (false === E) {
       let e = false;
       if ((0, x.isMac)()) {
-        var B, L;
-        let t = null === f.Z || true === f.Z || null == (L = f.Z.remoteApp) || null == (B = L.getVersion) ? true : B.call(L);
+        var L, B;
+        let t = null === f.Z || true === f.Z || null == (B = f.Z.remoteApp) || null == (L = B.getVersion) ? true : L.call(B);
         e = !v.o || "0.0.0" === t || a().satisfies(t, "0.0.363")
       }
       return (0, r.jsxs)("div", {
@@ -131,9 +131,9 @@ function E(e) {
           className: P.errorText,
           variant: "text-md/normal",
           color: "text-danger",
-          children: [w.intl.string(w.t["kW5h/f"]), (0, r.jsx)("br", {}), w.intl.string(w.t["5Jvu1d"])]
+          children: [w.intl.string(w.t["kW5h/W"]), (0, r.jsx)("br", {}), w.intl.string(w.t["5Jvu1R"])]
         }), e && (0, r.jsx)(u.Button, {
-          text: w.intl.string(w.t["XgZk+v"]),
+          text: w.intl.string(w.t["XgZk+u"]),
           onClick: () => {
             m.Z.openSettings(C.Eu.SCREEN_RECORDING)
           }
@@ -158,24 +158,24 @@ function E(e) {
 
 function T() {
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk615770.emptyState,
+    className: Chunk602804.emptyState,
     children: [(0, Chunk951288.jsx)(Chunk481060.Odl, {
       size: "md",
       color: Chunk481060.TVs.colors.ICON_MUTED,
-      className: Chunk615770.emptyIcon
+      className: Chunk602804.emptyIcon
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-lg/medium",
       color: "header-primary",
-      className: Chunk615770.emptyHeader,
-      children: Chunk388032.intl.string(Chunk137349.default["/z3YaW"])
+      className: Chunk602804.emptyHeader,
+      children: Chunk388032.intl.string(Chunk489999.default["/z3YaZ"])
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/medium",
       color: "text-secondary",
-      className: Chunk615770.emptyBody,
-      children: Chunk388032.intl.string(Chunk137349.default.agwSGB)
+      className: Chunk602804.emptyBody,
+      children: Chunk388032.intl.string(Chunk489999.default.agwSGA)
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/semibold",
-      children: Chunk388032.intl.format(Chunk137349.default.xpVzr6, {
+      children: Chunk388032.intl.format(Chunk489999.default.xpVzr3, {
         helpdeskURL: Chunk63063.Z.getArticleURL(0x53d41ade17)
       })
     })]

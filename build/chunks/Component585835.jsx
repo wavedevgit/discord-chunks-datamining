@@ -1,7 +1,7 @@
-/** Chunk was on 99063 **/
+/** Chunk was on 86736 **/
 /** chunk id: 585835, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => O
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,35 +20,35 @@ var Chunk951288 = require("./951288.js"),
   Chunk929507 = require("./929507.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk633568 = require("./633568.js");
+  Chunk473059 = require("./473059.js");
 
-function y(e) {
+function O(e) {
   var t, n, l;
   let {
-    name: y,
-    icon: O,
+    name: O,
+    icon: y,
     imageSrc: _,
     iconBackgroundColor: C,
     iconClassName: N,
     iconWrapperClassName: S,
     details: E,
     integration: I,
-    buttonText: P,
-    buttonDisabled: w,
+    buttonText: w,
+    buttonDisabled: P,
     hasNextSection: T,
     onButtonClick: Z,
     guildId: k,
     isScrolling: A,
     canShowMigrationTooltip: D,
     trailing: R
-  } = e, [L, M] = r.useState(false), B = D && !A && !L && true !== k && null != I, U = r.useRef(null), W = r.useRef(null), H = null == P || null == Z ? null : T ? (0, i.jsxs)(d.Kqy, {
+  } = e, [L, M] = r.useState(false), U = D && !A && !L && true !== k && null != I, B = r.useRef(null), W = r.useRef(null), H = null == w || null == Z ? null : T ? (0, i.jsxs)(d.Kqy, {
     direction: "horizontal",
     fullWidth: false,
     align: "center",
     ref: W,
     children: [(0, i.jsx)(d.Text, {
       variant: "text-sm/normal",
-      children: P
+      children: w
     }), T ? (0, i.jsx)(d.Fbu, {
       size: "custom",
       color: "currentColor",
@@ -58,14 +58,14 @@ function y(e) {
     }) : null]
   }) : (0, i.jsx)(d.Button, {
     size: "sm",
-    buttonRef: U,
-    disabled: w,
+    buttonRef: B,
+    disabled: P,
     onClick: Z,
-    text: P
+    text: w
   });
   r.useEffect(() => {
     var e, t;
-    B && g.default.track(x.rMx.COMMANDS_MIGRATION_TOOLTIP_VIEWED, (e = function(e) {
+    U && g.default.track(x.rMx.COMMANDS_MIGRATION_TOOLTIP_VIEWED, (e = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           i = Object.keys(n);
@@ -95,11 +95,11 @@ function y(e) {
     })(Object(t)).forEach(function(n) {
       Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
     }), e))
-  }, [k, null == I ? true : I.application.id, B]);
-  let G = B && (null != W.current || null != U.current) ? (0, i.jsx)(c.J2, {
-      targetElementRef: T ? W : U,
-      title: j.intl.string(j.t.ufFDiI),
-      body: j.intl.string(j.t.TyMJwM),
+  }, [k, null == I ? true : I.application.id, U]);
+  let G = U && (null != W.current || null != B.current) ? (0, i.jsx)(c.J2, {
+      targetElementRef: T ? W : B,
+      title: j.intl.string(j.t.ufFDiC),
+      body: j.intl.string(j.t.TyMJwC),
       onRequestClose: () => {
         M(true), h.Z.dismissOverviewTooltip(k, I.integration)
       },
@@ -109,24 +109,24 @@ function y(e) {
         align: "center"
       }
     }) : null,
-    K = (0, s.Wu)([m.Z], () => {
+    F = (0, s.Wu)([m.Z], () => {
       var e;
       return null != I && null != k && null != (e = m.Z.getApplicationEntitlementsForGuild(I.application.id, k)) ? e : []
     }),
-    F = (0, p.LD)(k, true),
-    z = (null == I ? true : I.application) != null && Object.keys(null != (l = null == (n = F.result) || null == (t = n.sections[I.application.id]) ? true : t.commands) ? l : {}).length > 0,
+    K = (0, p.LD)(k, true),
+    z = (null == I ? true : I.application) != null && Object.keys(null != (l = null == (n = K.result) || null == (t = n.sections[I.application.id]) ? true : t.commands) ? l : {}).length > 0,
     q = (0, i.jsxs)(d.Kqy, {
       direction: "horizontal",
       align: "center",
       children: [(0, i.jsx)(f.Z, {
-        name: y,
-        icon: O,
+        name: O,
+        icon: y,
         imageSrc: _,
         iconBackgroundColor: C,
         iconClassName: N,
         iconWrapperClassName: S,
         details: E,
-        isPremium: K.length > 0,
+        isPremium: F.length > 0,
         children: function(e, t) {
           var n, r;
           if (null == e) return null;
@@ -138,23 +138,23 @@ function y(e) {
             } = e;
           return null != a.bot && (null == s || null == (n = s.scopes) ? true : n.includes(o.x.BOT)) && l.push({
             id: "bot",
-            label: new b.Z(a.bot).isVerifiedBot() ? j.intl.string(j.t.xxcTGx) : j.intl.string(j.t.AOdOYm),
+            label: new b.Z(a.bot).isVerifiedBot() ? j.intl.string(j.t.xxcTGy) : j.intl.string(j.t.AOdOYr),
             icon: d.wGt
           }), c.length > 0 && l.push({
             id: "webhooks",
-            label: j.intl.formatToPlainString(j.t["6HqDfX"], {
+            label: j.intl.formatToPlainString(j.t["6HqDfT"], {
               count: c.length
             }),
             icon: d.tYf
           }), (null == s || null == (r = s.scopes) ? true : r.includes(o.x.APPLICATIONS_COMMANDS)) === true && t && l.push({
             id: "commands",
-            label: j.intl.string(j.t["0hKkS0"]),
+            label: j.intl.string(j.t["0hKkS+"]),
             icon: d.SsZ
           }), (0, i.jsx)(d.Kqy, {
             direction: "horizontal",
             gap: 4,
             children: (0, i.jsx)(d.QSK, {
-              label: j.intl.string(j.t.G8u3JS),
+              label: j.intl.string(j.t.G8u3Jf),
               layout: "inline",
               items: l
             })

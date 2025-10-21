@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk880419 = require("./880419.jsx"),
   Chunk535396 = require("./535396.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk893922 = require("./893922.js"),
+  Chunk237963 = require("./237963.js"),
   Chunk942570 = require("./942570.js");
 
 function _(e) {
@@ -39,7 +39,7 @@ function _(e) {
       }
       return r
     }(e, ["guildId", "powerup", "onClose"]);
-  let [g, j] = r.useState(true), v = (0, d.ZP)(a, _), x = v.type === b.A3.TIER_OVERRIDE_ACTIVATED, y = (0, l.Z)(a), C = null == v.sourceEntitlement || !y;
+  let [j, g] = r.useState(true), v = (0, d.ZP)(a, _), x = v.type === b.A3.TIER_OVERRIDE_ACTIVATED, y = (0, l.Z)(a), C = null == v.sourceEntitlement || !y;
   return (0, i.$)(a, _, i.w.DETAIL), (0, n.jsxs)(s.Y0X, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var o = null != arguments[t] ? arguments[t] : {},
@@ -78,10 +78,10 @@ function _(e) {
           children: _.title
         }), (0, n.jsx)(u.Z, {
           powerup: _
-        }), null != g && (0, n.jsx)(s.Text, {
+        }), null != j && (0, n.jsx)(s.Text, {
           color: "status-danger",
           variant: "text-sm/semibold",
-          children: g
+          children: j
         }), (0, n.jsxs)("div", {
           className: c()(f.footer, {
             [f.disabled]: C
@@ -89,13 +89,13 @@ function _(e) {
           children: [!x && y && (0, n.jsx)(p.ZP, {
             guildId: a,
             powerup: _,
-            onError: j,
+            onError: g,
             grow: false,
             compact: !C
           }), (0, n.jsx)(s.Button, {
             variant: C ? "secondary" : "primary",
             onClick: O,
-            text: m.intl.string(m.t.cpT0Cg)
+            text: m.intl.string(m.t.cpT0Cq)
           })]
         })]
       })]

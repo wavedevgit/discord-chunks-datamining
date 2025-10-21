@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk792058 = require("./792058.js");
+  Chunk844642 = require("./844642.js");
 
 function N() {
   let e, {
@@ -55,20 +55,20 @@ function N() {
     },
     [O, I] = Chunk647438.useState(new Set);
   return Chunk120356 ? (0, Chunk951288.jsx)(Chunk497321.Z, {}) : (e = null == exports && 0 === require.length ? Chunk100527 ? (0, Chunk951288.jsx)("div", {
-    className: Chunk792058.loading,
+    className: Chunk844642.loading,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
   }) : null : (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsxs)(Chunk481060.Kqy, {
       gap: 24,
-      className: Chunk792058.sessions,
+      className: Chunk844642.sessions,
       children: [(0, Chunk951288.jsx)(Chunk481060.C3N, {
-        label: Chunk388032.intl.string(Chunk388032.t.LLS19v),
+        label: Chunk388032.intl.string(Chunk388032.t.LLS19o),
         children: null != exports ? (0, Chunk951288.jsx)(R, {
           session: exports,
           current: true
         }) : null
       }), !(require.length > 0) && (null == o ? true : o.mfaEnabled) ? null : (0, Chunk951288.jsxs)(Chunk481060.C3N, {
-        label: Chunk388032.intl.string(Chunk388032.t.xx1MWV),
+        label: Chunk388032.intl.string(Chunk388032.t.xx1MWc),
         children: [require.map(e => (0, r.jsx)(R, {
           session: e,
           useChecks: O.size > 0,
@@ -80,17 +80,17 @@ function N() {
         }, e.id_hash)), (null == o ? true : o.mfaEnabled) ? null : (0, Chunk951288.jsx)(P, {})]
       })]
     }), require.length > 0 ? (0, Chunk951288.jsx)(Chunk481060.gNt, {
-      label: Chunk313789.size > 0 ? Chunk388032.intl.string(Chunk388032.t.mMEmRE) : Chunk388032.intl.string(Chunk388032.t.Vij32N),
-      description: Chunk388032.intl.string(Chunk388032.t.OTXyaW),
+      label: Chunk313789.size > 0 ? Chunk388032.intl.string(Chunk388032.t.mMEmRO) : Chunk388032.intl.string(Chunk388032.t.Vij32M),
+      description: Chunk388032.intl.string(Chunk388032.t.OTXyaf),
       children: (0, Chunk951288.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
-        className: Chunk792058.logOutAllButton,
+        className: Chunk844642.logOutAllButton,
         children: (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "critical-secondary",
           size: "sm",
-          text: Chunk313789.size > 0 ? Chunk388032.intl.formatToPlainString(Chunk388032.t["83CPLi"], {
+          text: Chunk313789.size > 0 ? Chunk388032.intl.formatToPlainString(Chunk388032.t["83CPLj"], {
             count: Chunk313789.size
-          }) : Chunk388032.intl.string(Chunk388032.t.cLmmeX),
+          }) : Chunk388032.intl.string(Chunk388032.t.cLmmeY),
           onClick: () => {
             Chunk313789.size > 0 ? (0, Chunk43015.L$)(Array.from(Chunk313789)) : (0, Chunk43015.L$)(require.map(e => e.id_hash))
           }
@@ -98,19 +98,19 @@ function N() {
       })
     }) : null]
   }), (0, Chunk951288.jsxs)(Chunk10298.N, {
-    header: Chunk388032.intl.string(Chunk388032.t["+1h0k5"]),
+    header: Chunk388032.intl.string(Chunk388032.t["+1h0k/"]),
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
-      className: Chunk792058.description,
-      children: Chunk388032.intl.string(Chunk388032.t.zZp619)
+      className: Chunk844642.description,
+      children: Chunk388032.intl.string(Chunk388032.t.zZp618)
     }), (null == o ? true : o.isStaff()) ? (0, Chunk951288.jsxs)("div", {
-      className: Chunk792058.tools,
+      className: Chunk844642.tools,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
-        className: Chunk792058.toolsTitle,
+        className: Chunk844642.toolsTitle,
         variant: "text-md/bold",
         children: "DEV TOOLS"
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
-        className: Chunk792058.toolsTitle,
+        className: Chunk844642.toolsTitle,
         variant: "text-sm/normal",
         color: "text-danger",
         children: "These tools are only shown to staff users."
@@ -187,7 +187,7 @@ function R(e) {
       onClick: e => {
         e.shiftKey ? null == u || u(true) : (0, p.L$)(l.id_hash)
       },
-      "aria-label": A.intl.string(A.t.E4MJNj),
+      "aria-label": A.intl.string(A.t.E4MJNt),
       children: (0, r.jsx)(d.Dio, {
         size: "md",
         color: "currentColor"
@@ -198,28 +198,28 @@ function R(e) {
 
 function P() {
   return (0, Chunk951288.jsxs)("div", {
-    className: o()(Chunk792058.session, Chunk792058.legacySession),
+    className: o()(Chunk844642.session, Chunk844642.legacySession),
     children: [(0, Chunk951288.jsx)("div", {
-      className: Chunk792058.sessionIcon,
+      className: Chunk844642.sessionIcon,
       children: (0, Chunk951288.jsx)(Chunk460562.Z, {
         width: "32",
         height: "32"
       })
     }), (0, Chunk951288.jsxs)("div", {
-      className: Chunk792058.sessionInfo,
+      className: Chunk844642.sessionInfo,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "eyebrow",
-        className: Chunk792058.sessionInfoRow,
+        className: Chunk844642.sessionInfoRow,
         color: "text-muted",
         children: (0, Chunk951288.jsx)("span", {
-          children: Chunk388032.intl.string(Chunk388032.t.iUa0sr)
+          children: Chunk388032.intl.string(Chunk388032.t.iUa0sn)
         })
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/medium",
-        className: Chunk792058.sessionInfoRow,
+        className: Chunk844642.sessionInfoRow,
         color: "text-muted",
         children: (0, Chunk951288.jsx)("span", {
-          children: Chunk388032.intl.format(Chunk388032.t["044+8v"], {
+          children: Chunk388032.intl.format(Chunk388032.t["044+8i"], {
             onClick: () => (0, Chunk518596.openUserSettings)(Chunk313789.n.ACCOUNT_PANEL, {
               section: Chunk981631.oAB.ACCOUNT,
               analyticsLocations: [Chunk100527.Z.USER_SETTINGS_SESSIONS]
@@ -237,7 +237,7 @@ function w(e) {
     case true:
     case "":
       return {
-        text: A.intl.string(A.t.cDHCNT), icon: d.pzj
+        text: A.intl.string(A.t.cDHCNY), icon: d.pzj
       };
     case "ios":
     case "android":

@@ -20,7 +20,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk310380 = require("./310380.js"),
+  Chunk402197 = require("./402197.js"),
   Chunk917062 = require("./917062.js"),
   Chunk579273 = require("./579273.js"),
   Chunk38874 = require("./38874.js"),
@@ -48,12 +48,12 @@ let I = function(e) {
           className: g.bannerHeader,
           variant: "heading-md/extrabold",
           color: "header-primary",
-          children: m.intl.string(m.t["+5UxMD"])
+          children: m.intl.string(m.t["+5UxML"])
         }), (0, r.jsx)(s.Text, {
           className: g.bannerText,
           variant: "text-sm/medium",
           color: "text-secondary",
-          children: m.intl.format(m.t["lVOH/v"], {
+          children: m.intl.format(m.t["lVOH/p"], {
             helpCenterLink: d.Z.getArticleURL(h.BhN.SUMMER_BOGO_2025)
           })
         })]
@@ -81,17 +81,17 @@ let I = function(e) {
             className: g.bannerHeader,
             variant: "heading-lg/extrabold",
             color: "header-primary",
-            children: m.intl.string(m.t["+5UxMD"])
+            children: m.intl.string(m.t["+5UxML"])
           }), (0, r.jsx)(s.Text, {
             className: g.bannerText,
             variant: "text-sm/medium",
             color: "text-secondary",
-            children: m.intl.format(m.t["lVOH/v"], {
+            children: m.intl.format(m.t["lVOH/p"], {
               helpCenterLink: d.Z.getArticleURL(h.BhN.SUMMER_BOGO_2025)
             })
           }), (0, r.jsx)(_.Z, {
             textOptions: {
-              textOverride: m.intl.string(m.t.J61px8),
+              textOverride: m.intl.string(m.t.J61px0),
               textClassName: g.subscribeButtonText
             },
             subscriptionTier: p.Si.TIER_2,
@@ -123,7 +123,7 @@ let I = function(e) {
           children: (0, r.jsx)(s.Text, {
             variant: "eyebrow",
             color: "always-white",
-            children: m.intl.string(m.t.OS9KPj)
+            children: m.intl.string(m.t.OS9KPu)
           })
         }), (0, r.jsxs)("div", {
           className: g.bannerContent,
@@ -131,17 +131,17 @@ let I = function(e) {
             className: g.bannerHeader,
             variant: "heading-xxl/extrabold",
             color: "header-primary",
-            children: m.intl.string(m.t["+5UxMD"])
+            children: m.intl.string(m.t["+5UxML"])
           }), (0, r.jsx)(s.Text, {
             className: g.bannerText,
             variant: "text-md/medium",
             color: "text-secondary",
-            children: m.intl.format(m.t["lVOH/v"], {
+            children: m.intl.format(m.t["lVOH/p"], {
               helpCenterLink: d.Z.getArticleURL(h.BhN.SUMMER_BOGO_2025)
             })
           }), (0, r.jsx)(_.Z, {
             textOptions: {
-              textOverride: m.intl.string(m.t.J61px8),
+              textOverride: m.intl.string(m.t.J61px0),
               textClassName: g.subscribeButtonText
             },
             subscriptionTier: p.Si.TIER_2,

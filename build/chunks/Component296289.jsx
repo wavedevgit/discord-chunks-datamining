@@ -8,9 +8,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk625651 = require("./625651.jsx"),
   Chunk905551 = require("./905551.js"),
   Chunk162190 = require("./162190.js"),
-  Chunk45765 = require("./45765.js"),
+  Chunk470658 = require("./470658.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk715909 = require("./715909.js");
+  Chunk924889 = require("./924889.js");
 
 function d(e) {
   var {
@@ -60,8 +60,8 @@ function d(e) {
         className: u.image
       })
     }),
-    warningText: s.intl.string(c.default.ukbS3N),
-    acknowledgementText: s.intl.string(c.default.xjRtFx),
+    warningText: s.intl.string(c.default.ukbS3E),
+    acknowledgementText: s.intl.string(c.default.xjRtF9),
     isLoading: f,
     error: b,
     onDeactivate: () => {

@@ -10,8 +10,8 @@ var Chunk509613 = require("./509613.js"),
   Chunk313789 = require("./313789.js"),
   Chunk388032 = require("./388032.jsx");
 let o = (0, Chunk509613.qs)(Chunk313789.n.VOICE_ACTIVITY_NOTIFICATIONS, {
-  useTitle: () => Chunk388032.intl.string(Chunk388032.t.wtk08f),
-  useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.rngMNz),
+  useTitle: () => Chunk388032.intl.string(Chunk388032.t.wtk08S),
+  useSubtitle: () => Chunk388032.intl.string(Chunk388032.t.rngMNx),
   useValue: Chunk695346.d8.useSetting,
   setValue: Chunk210176.I,
   usePredicate: () => (0, Chunk462354.Az)("VoiceActivityNotifications").enabled

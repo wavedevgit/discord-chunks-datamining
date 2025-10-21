@@ -17,13 +17,13 @@ function c(n) {
   } = n;
   return (0, i.jsx)(l.v2r, {
     navId: "guild-role-connections-context",
-    "aria-label": r.intl.string(r.t.vytvJC),
+    "aria-label": r.intl.string(r.t.vytvJF),
     onClose: o.Zy,
     onSelect: c,
     children: (0, i.jsx)(l.kSQ, {
       children: (0, i.jsx)(l.sNh, {
         id: "guild-role-connections-leave-role",
-        label: r.intl.string(r.t.vytvJC),
+        label: r.intl.string(r.t.vytvJF),
         action: e,
         color: "danger"
       }, t)

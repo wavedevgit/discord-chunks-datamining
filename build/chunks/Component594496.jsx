@@ -37,7 +37,7 @@ var Chunk512722 = require("./512722.js"),
   Chunk291334 = require("./291334.jsx"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk486750 = require("./486750.js");
+  Chunk737788 = require("./737788.js");
 
 function k(e) {
   var t, n, i, k;
@@ -108,7 +108,7 @@ function k(e) {
       user: G,
       guild: X
     }, "nick"), (0, r.jsx)(O.Z, {
-      sectionTitle: x.intl.string(x.t["+T3RIy"]),
+      sectionTitle: x.intl.string(x.t["+T3RI/"]),
       errors: null == K ? true : K.pronouns,
       onPronounsChange: e => {
         (0, P.xs)(e, eo)
@@ -120,8 +120,8 @@ function k(e) {
       showOverlay: !et,
       children: [(0, r.jsx)(h.Z, {
         sectionTitle: (0, r.jsxs)(r.Fragment, {
-          children: [x.intl.string(x.t.lqaIxM), (0, r.jsx)(s.u, {
-            text: x.intl.string(x.t["5AFxuL"]),
+          children: [x.intl.string(x.t.lqaIxI), (0, r.jsx)(s.u, {
+            text: x.intl.string(x.t["5AFxuK"]),
             children: (0, r.jsx)(l.SrA, {
               size: "md",
               color: "currentColor",
@@ -137,7 +137,7 @@ function k(e) {
       }, "avatar"), (0, r.jsx)(p.Z, {
         sectionTitle: (0, r.jsxs)(r.Fragment, {
           children: [x.intl.string(x.t["7v0T9P"]), (0, r.jsx)(s.u, {
-            text: x.intl.string(x.t["5AFxuL"]),
+            text: x.intl.string(x.t["5AFxuK"]),
             children: (0, r.jsx)(l.SrA, {
               size: "md",
               color: "currentColor",
@@ -154,7 +154,7 @@ function k(e) {
         user: G,
         guild: X,
         titleIcon: (0, r.jsx)(s.u, {
-          text: x.intl.string(x.t["5AFxuL"]),
+          text: x.intl.string(x.t["5AFxuK"]),
           children: (0, r.jsx)(l.SrA, {
             size: "md",
             color: "currentColor",
@@ -163,8 +163,8 @@ function k(e) {
         })
       }, "nameplate"), (0, r.jsx)(b.Z, {
         sectionTitle: (0, r.jsxs)(r.Fragment, {
-          children: [x.intl.string(x.t.wR5wOj), (0, r.jsx)(s.u, {
-            text: x.intl.string(x.t["5AFxuL"]),
+          children: [x.intl.string(x.t.wR5wOo), (0, r.jsx)(s.u, {
+            text: x.intl.string(x.t["5AFxuK"]),
             children: (0, r.jsx)(l.SrA, {
               size: "md",
               color: "currentColor",
@@ -190,10 +190,10 @@ function k(e) {
         guildId: null == X ? true : X.id,
         showResetThemeButton: ei
       }), (0, r.jsx)(_.Z, {
-        placeholder: x.intl.string(x.t["/7NKgo"]),
+        placeholder: x.intl.string(x.t["/7NKgv"]),
         sectionTitle: (0, r.jsxs)(r.Fragment, {
-          children: [x.intl.string(x.t.jGoPJS), (0, r.jsx)(s.u, {
-            text: x.intl.string(x.t["5AFxuL"]),
+          children: [x.intl.string(x.t.jGoPJT), (0, r.jsx)(s.u, {
+            text: x.intl.string(x.t["5AFxuK"]),
             children: (0, r.jsx)(l.SrA, {
               size: "md",
               color: "currentColor",

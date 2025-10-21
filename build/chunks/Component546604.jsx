@@ -21,7 +21,7 @@ var Chunk512722 = require("./512722.js"),
   Chunk409110 = require("./409110.jsx"),
   Chunk843880 = require("./843880.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk75498 = require("./75498.js");
+  Chunk791873 = require("./791873.js");
 
 function v(e) {
   var t, n;
@@ -51,7 +51,7 @@ function v(e) {
     });
   return (0, r.jsxs)(l.Modal, {
     title: y.name,
-    subtitle: g.intl.format(g.t.xImSen, {
+    subtitle: g.intl.format(g.t.xImSei, {
       productType: C,
       personName: null != (n = null == L ? true : L.name) ? n : ""
     }),
@@ -84,7 +84,7 @@ function v(e) {
       }), (0, r.jsx)(c.Heading, {
         variant: "heading-lg/medium",
         color: "header-primary",
-        children: g.intl.string(g.t.TNnDJi)
+        children: g.intl.string(g.t.TNnDJs)
       }), (0, r.jsx)(c.LZC, {
         size: 12
       }), (0, r.jsx)(m.Z, {

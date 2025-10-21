@@ -17,8 +17,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk931810 = require("./931810.js"),
-  Chunk10198 = require("./10198.js");
+  Chunk607180 = require("./607180.js"),
+  Chunk197571 = require("./197571.js");
 
 function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -37,9 +37,9 @@ class T extends Chunk647438.PureComponent {
       autoThreshold: e
     } = this.props;
     return (0, Chunk951288.jsx)(Chunk600164.Z, {
-      className: Chunk10198.marginBottom4,
+      className: Chunk197571.marginBottom4,
       children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
-        label: Chunk388032.intl.string(Chunk388032.t.I1Zuq6),
+        label: Chunk388032.intl.string(Chunk388032.t.I1Zuq0),
         checked: module,
         onChange: this.handleAutoThresholdChange
       })
@@ -54,15 +54,15 @@ class T extends Chunk647438.PureComponent {
       initialValue: exports + 100,
       onValueRender: this.handleValueRender,
       onValueChange: this.handleSensitivityChange,
-      label: Chunk388032.intl.string(Chunk388032.t["sqUm+v"]),
+      label: Chunk388032.intl.string(Chunk388032.t["sqUm+k"]),
       hideLabel: true
     })
   }
   render() {
     return (0, Chunk951288.jsx)("div", {
-      className: Chunk10198.marginBottom20,
+      className: Chunk197571.marginBottom20,
       children: (0, Chunk951288.jsxs)(Chunk481060.gNt, {
-        label: Chunk388032.intl.string(Chunk388032.t["sqUm+v"]),
+        label: Chunk388032.intl.string(Chunk388032.t["sqUm+k"]),
         role: "group",
         children: [this.renderAutomaticVADToggle(), this.renderSlider()]
       })
@@ -88,7 +88,7 @@ class T extends Chunk647438.PureComponent {
 function b(e) {
   let t, {
       mediaEngineContext: n,
-      speaking: i = false
+      speaking: l = false
     } = e,
     {
       inputVolume: d,
@@ -109,23 +109,23 @@ function b(e) {
     })),
     M = [{
       value: p.pM4.VOICE_ACTIVITY,
-      name: m.intl.string(m.t.cHCEOD)
+      name: m.intl.string(m.t.cHCEOJ)
     }, {
       value: p.pM4.PUSH_TO_TALK,
-      name: m.intl.string(m.t.Q8gkVF)
+      name: m.intl.string(m.t.Q8gkVL)
     }];
-  return t = V === p.pM4.PUSH_TO_TALK ? (0, l.jsxs)(a.Kqy, {
+  return t = V === p.pM4.PUSH_TO_TALK ? (0, i.jsxs)(a.Kqy, {
     gap: 20,
-    children: [(0, l.jsx)(a.gNt, {
-      label: m.intl.string(m.t.YkDjVF),
-      children: (0, l.jsx)(r.Z, {
+    children: [(0, i.jsx)(a.gNt, {
+      label: m.intl.string(m.t.YkDjVM),
+      children: (0, i.jsx)(r.Z, {
         defaultValue: j,
         onChange: e => o.Z.setMode(V, {
           shortcut: e
         }, n)
       })
-    }), (0, l.jsx)(a.iRW, {
-      label: m.intl.string(m.t.y0ShVl),
+    }), (0, i.jsx)(a.iRW, {
+      label: m.intl.string(m.t.y0ShVt),
       initialValue: Z,
       onValueChange: e => o.Z.setMode(V, {
         delay: e
@@ -133,8 +133,8 @@ function b(e) {
       onValueRender: e => e >= 1e3 ? (e /= 1e3, "".concat(e.toFixed(2), "s")) : "".concat(e.toFixed(0), "ms"),
       maxValue: p.qhL
     })]
-  }) : (0, l.jsx)(T, {
-    speaking: i,
+  }) : (0, i.jsx)(T, {
+    speaking: l,
     inputMode: V,
     threshold: C,
     autoThreshold: b,
@@ -142,27 +142,27 @@ function b(e) {
       threshold: e,
       autoThreshold: t
     }, n)
-  }), (0, l.jsxs)(a.Kqy, {
+  }), (0, i.jsxs)(a.Kqy, {
     gap: 20,
-    children: [(0, l.jsx)(h.j, {
-      label: m.intl.string(m.t.hHMYbW),
+    children: [(0, i.jsx)(h.j, {
+      label: m.intl.string(m.t.hHMYbb),
       deviceType: x.h7.AUDIO_INPUT,
       location: "VoiceSettingsModal"
-    }), (0, l.jsx)(a.iRW, {
-      label: m.intl.string(m.t.OX2Bnp),
+    }), (0, i.jsx)(a.iRW, {
+      label: m.intl.string(m.t.OX2Bnr),
       initialValue: (0, g.P)(d),
       asValueChanges: e => o.Z.setInputVolume((0, g.A)(e))
-    }), (0, l.jsx)(h.j, {
-      label: m.intl.string(m.t.dl18zc),
+    }), (0, i.jsx)(h.j, {
+      label: m.intl.string(m.t.dl18zb),
       deviceType: x.h7.AUDIO_OUTPUT,
       location: "VoiceSettingsModal"
-    }), (0, l.jsx)(a.iRW, {
-      label: m.intl.string(m.t.eATD2N),
+    }), (0, i.jsx)(a.iRW, {
+      label: m.intl.string(m.t.eATD2B),
       initialValue: (0, g.P)(c),
       maxValue: 200,
       asValueChanges: e => o.Z.setOutputVolume((0, g.A)(e))
-    }), (0, l.jsx)(a.FXm, {
-      label: m.intl.string(m.t["pS+K2N"]),
+    }), (0, i.jsx)(a.FXm, {
+      label: m.intl.string(m.t["pS+K2L"]),
       onChange: e => o.Z.setMode(e, {}, n),
       options: M,
       value: V
@@ -174,29 +174,29 @@ function Z(e) {
   var t;
   return (0, c.Z)(() => {
     null != p.e3s && e.onClose()
-  }), (0, l.jsxs)(a.Y0X, {
+  }), (0, i.jsxs)(a.Y0X, {
     transitionState: e.transitionState,
-    "aria-label": m.intl.string(m.t.NiTd0d),
+    "aria-label": m.intl.string(m.t.NiTd0e),
     parentComponent: "VoiceSettingsModal",
-    children: [(0, l.jsxs)(a.xBx, {
-      children: [(0, l.jsxs)(d.Z.Child, {
-        children: [(0, l.jsx)(a.Heading, {
+    children: [(0, i.jsxs)(a.xBx, {
+      children: [(0, i.jsxs)(d.Z.Child, {
+        children: [(0, i.jsx)(a.Heading, {
           variant: "heading-lg/semibold",
           className: j.marginReset,
-          children: m.intl.string(m.t.NiTd0d)
-        }), (0, l.jsx)(a.Text, {
+          children: m.intl.string(m.t.NiTd0e)
+        }), (0, i.jsx)(a.Text, {
           variant: "text-xs/normal",
           className: V.title,
           children: e.title
         })]
-      }), (0, l.jsx)(d.Z.Child, {
+      }), (0, i.jsx)(d.Z.Child, {
         grow: 0,
-        children: (0, l.jsx)(a.olH, {
+        children: (0, i.jsx)(a.olH, {
           onClick: e.onClose
         })
       })]
-    }), (0, l.jsx)(a.hzk, {
-      children: (0, l.jsx)(b, {
+    }), (0, i.jsx)(a.hzk, {
+      children: (0, i.jsx)(b, {
         mediaEngineContext: null != (t = e.mediaEngineContext) ? t : x.Yn.DEFAULT
       })
     })]

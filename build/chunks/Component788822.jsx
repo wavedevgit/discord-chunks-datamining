@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk794324 = require("./794324.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk687983 = require("./687983.js");
+  Chunk310582 = require("./310582.js");
 let C = e => {
   var t, n, C;
   let h, {
@@ -32,7 +32,7 @@ let C = e => {
     O = (0, d.YG)(_, m),
     S = l.useRef(null),
     y = null == m ? true : m.bodyText,
-    j = (0, s.sp)();
+    j = (0, o.sp)();
   return (0, r.jsx)(i.$, {
     innerRef: S,
     onChange: x,
@@ -61,7 +61,7 @@ let C = e => {
         backgroundImage: "url(".concat(O, ")")
       }),
       onClick: () => {
-        v("shop marketing tile", E, true, true), o.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+        v("shop marketing tile", E, true, true), s.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
           collectibles_shop_session_id: null == j ? true : j.sessionId,
           sku_id: E,
           page_type: "home",
@@ -91,9 +91,9 @@ let C = e => {
         className: f.featuredBlockButtonContainer,
         children: (0, r.jsx)(a.Button, {
           variant: "overlay-primary",
-          text: p.intl.string(p.t.jVcuVV),
+          text: p.intl.string(p.t.jVcuVY),
           onClick: e => {
-            v("shop marketing take me there button", E, true, true), e.stopPropagation(), o.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+            v("shop marketing take me there button", E, true, true), e.stopPropagation(), s.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
               collectibles_shop_session_id: null == j ? true : j.sessionId,
               sku_id: E,
               page_type: "home",

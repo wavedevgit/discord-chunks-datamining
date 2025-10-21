@@ -45,32 +45,32 @@ function u() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
     t = arguments.length > 1 && true !== arguments[1] && arguments[1];
   return [{
-    name: Chunk388032.intl.string(Chunk388032.t.PEzffn),
-    desc: module ? Chunk388032.intl.string(Chunk388032.t.j9WtHx) : Chunk388032.intl.string(Chunk388032.t.nDQy0t),
+    name: Chunk388032.intl.string(Chunk388032.t.PEzffq),
+    desc: module ? Chunk388032.intl.string(Chunk388032.t.j9WtHx) : Chunk388032.intl.string(Chunk388032.t.nDQy0p),
     value: Chunk981631.sFg.NONE,
     disabled: module
   }, {
-    name: Chunk388032.intl.string(Chunk388032.t.SsCK8P),
-    desc: Chunk388032.intl.string(Chunk388032.t["8GCOX1"]),
+    name: Chunk388032.intl.string(Chunk388032.t.SsCK8I),
+    desc: Chunk388032.intl.string(Chunk388032.t["8GCOX6"]),
     value: Chunk981631.sFg.LOW,
     color: exports ? true : (0, Chunk900089.Fw)("GREEN_360")
   }, {
-    name: Chunk388032.intl.string(Chunk388032.t.WwNoR0),
-    desc: Chunk388032.intl.formatToPlainString(Chunk388032.t.VS14gY, {
+    name: Chunk388032.intl.string(Chunk388032.t.WwNoR4),
+    desc: Chunk388032.intl.formatToPlainString(Chunk388032.t.VS14ga, {
       min: Chunk981631.YeM.ACCOUNT_AGE
     }),
     value: Chunk981631.sFg.MEDIUM,
     color: exports ? true : (0, Chunk900089.Fw)("YELLOW_360")
   }, {
     name: Chunk388032.intl.string(Chunk388032.t.I2jMUF),
-    desc: Chunk388032.intl.formatToPlainString(Chunk388032.t["r+b3Iy"], {
+    desc: Chunk388032.intl.formatToPlainString(Chunk388032.t["r+b3I4"], {
       min: Chunk981631.YeM.MEMBER_AGE
     }),
     value: Chunk981631.sFg.HIGH,
     color: exports ? true : (0, Chunk900089.Fw)("ORANGE_345")
   }, {
-    name: Chunk388032.intl.string(Chunk388032.t.cJY8w8),
-    desc: Chunk388032.intl.string(Chunk388032.t.PWaKmZ),
+    name: Chunk388032.intl.string(Chunk388032.t.cJY8w9),
+    desc: Chunk388032.intl.string(Chunk388032.t.PWaKme),
     value: Chunk981631.sFg.VERY_HIGH,
     color: exports ? true : (0, Chunk900089.Fw)("RED_400")
   }]
@@ -79,19 +79,19 @@ function u() {
 function d() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
   return [{
-    name: Chunk388032.intl.string(Chunk388032.t.iHuPEx),
+    name: Chunk388032.intl.string(Chunk388032.t.iHuPE6),
     desc: Chunk388032.intl.string(Chunk388032.t["Z+yUWF"]),
     value: Chunk981631.lxg.ALL_MEMBERS,
     color: (0, Chunk900089.Fw)("RED_400")
   }, {
-    name: Chunk388032.intl.string(Chunk388032.t.ynfFaG),
-    desc: module ? Chunk388032.intl.string(Chunk388032.t.j9WtHx) : Chunk388032.intl.string(Chunk388032.t["3fRINz"]),
+    name: Chunk388032.intl.string(Chunk388032.t.ynfFaI),
+    desc: module ? Chunk388032.intl.string(Chunk388032.t.j9WtHx) : Chunk388032.intl.string(Chunk388032.t["3fRIN4"]),
     value: Chunk981631.lxg.MEMBERS_WITHOUT_ROLES,
     disabled: module,
     color: (0, Chunk900089.Fw)("YELLOW_360")
   }, {
-    name: Chunk388032.intl.string(Chunk388032.t.VbSyAw),
-    desc: module ? Chunk388032.intl.string(Chunk388032.t.j9WtHx) : Chunk388032.intl.string(Chunk388032.t.M6GNsL),
+    name: Chunk388032.intl.string(Chunk388032.t.VbSyAx),
+    desc: module ? Chunk388032.intl.string(Chunk388032.t.j9WtHx) : Chunk388032.intl.string(Chunk388032.t.M6GNsJ),
     value: Chunk981631.lxg.DISABLED,
     disabled: module,
     color: (0, Chunk900089.Fw)("PRIMARY_400")
@@ -100,18 +100,18 @@ function d() {
 
 function f() {
   return [{
-    name: Chunk388032.intl.string(Chunk388032.t["4IaoCA"]),
-    desc: Chunk388032.intl.string(Chunk388032.t.TgipjI),
+    name: Chunk388032.intl.string(Chunk388032.t["4IaoCI"]),
+    desc: Chunk388032.intl.string(Chunk388032.t.TgipjE),
     value: Chunk524437.Xr.FRIENDS_AND_NON_FRIENDS,
     color: (0, Chunk900089.Fw)("GREEN_360")
   }, {
-    name: Chunk388032.intl.string(Chunk388032.t["6NnX6O"]),
-    desc: Chunk388032.intl.string(Chunk388032.t["+dw1qq"]),
+    name: Chunk388032.intl.string(Chunk388032.t["6NnX6F"]),
+    desc: Chunk388032.intl.string(Chunk388032.t["+dw1qu"]),
     value: Chunk524437.Xr.NON_FRIENDS,
     color: (0, Chunk900089.Fw)("YELLOW_360")
   }, {
-    name: Chunk388032.intl.string(Chunk388032.t["1tiAFx"]),
-    desc: Chunk388032.intl.string(Chunk388032.t.LKTyeH),
+    name: Chunk388032.intl.string(Chunk388032.t["1tiAFz"]),
+    desc: Chunk388032.intl.string(Chunk388032.t.LKTyeA),
     value: Chunk524437.Xr.DISABLED,
     color: (0, Chunk900089.Fw)("RED_400")
   }]

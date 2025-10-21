@@ -9,7 +9,7 @@ require("./120356.js");
 var Chunk258536 = require("./258536.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk881338 = require("./881338.js");
+  Chunk490369 = require("./490369.js");
 
 function c(e) {
   let {
@@ -90,13 +90,13 @@ function d(e) {
         variant: "secondary",
         icon: a.whL,
         onClick: d,
-        "aria-label": s.intl.string(s.t["13/7kZ"])
+        "aria-label": s.intl.string(s.t["13/7kX"])
       }), (0, l.jsx)(a.hU, {
         size: "sm",
         variant: "secondary",
         icon: a.ZSh,
         onClick: m,
-        "aria-label": s.intl.string(s.t.PDTjLC)
+        "aria-label": s.intl.string(s.t.PDTjLN)
       })]
     })]
   })

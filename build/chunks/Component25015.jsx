@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk479398 = require("./479398.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk453116 = require("./453116.js");
+  Chunk491068 = require("./491068.js");
 let m = Chunk647438.lazy(() => Promise.all([require.e("51889"), require.e("85831")]).then(require.bind(require, 120314)));
 
 function g(e, t) {
@@ -43,7 +43,7 @@ function g(e, t) {
   }, [e.content]), i.useMemo(() => {
     if (null != e.customRenderedContent) return e.customRenderedContent;
     if (e.isUnsupported) return {
-      content: p.intl.string(p.t.sWi5ER),
+      content: p.intl.string(p.t.sWi5EU),
       hasSpoilerEmbeds: false
     };
     if (e.isCommandType() && 0 === e.content.length || e.hasFlag(_.iLy.LOADING)) return (0, u.Z)(e);

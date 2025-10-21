@@ -30,10 +30,10 @@ let g = e => {
     analyticsLocations: x
   } = (0, c.ZP)(), P = l.useRef(null), E = (0, p.sp)(), _ = (0, f.Z)();
   return (0, r.jsx)(o.u, {
-    text: v.intl.string(v.t["JCFN//"]),
+    text: v.intl.string(v.t["JCFN/y"]),
     delay: j,
     children: (0, r.jsx)(s.hU, {
-      "aria-label": v.intl.string(v.t["JCFN//"]),
+      "aria-label": v.intl.string(v.t["JCFN/y"]),
       buttonRef: P,
       variant: n ? "primary" : "secondary",
       icon: s.OgN,

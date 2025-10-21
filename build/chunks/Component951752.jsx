@@ -11,7 +11,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk358085 = require("./358085.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk913828 = require("./913828.js");
+  Chunk307907 = require("./307907.js");
 let Chunk575703 = require("./575703.js");
 
 function p(e) {
@@ -28,9 +28,9 @@ function p(e) {
       children: (0, r.jsxs)(l.ZP, {
         children: [(0, r.jsx)(l.Dx, {
           className: u.appOpenedTitle,
-          children: c.intl.string(c.t.csrAMD)
+          children: c.intl.string(c.t.csrAMJ)
         }), (0, r.jsx)(l.DK, {
-          children: c.intl.string(c.t.ghBJz8)
+          children: c.intl.string(c.t.ghBJz9)
         })]
       })
     })]
@@ -43,7 +43,7 @@ function p(e) {
       className: u.container,
       children: (0, r.jsxs)(l.ZP, {
         children: [(0, r.jsx)(l.Dx, {
-          children: c.intl.string(c.t["Z+hCVV"])
+          children: c.intl.string(c.t["Z+hCVU"])
         }), (0, r.jsx)(l.Hh, {})]
       })
     })]

@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk279604 = require("./279604.jsx"),
   Chunk787188 = require("./787188.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk489454 = require("./489454.js");
+  Chunk397321 = require("./397321.js");
 
 function x(e) {
   let {
@@ -61,7 +61,7 @@ function x(e) {
             }), (0, n.jsx)(s.Text, {
               variant: "text-sm/medium",
               color: "text-secondary",
-              children: m.intl.formatToPlainString(m.t.t2Wbo6, {
+              children: m.intl.formatToPlainString(m.t.t2Wbo1, {
                 required: a.cost,
                 decorator: ""
               })

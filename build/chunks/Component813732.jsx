@@ -48,21 +48,21 @@ var Chunk951288 = require("./951288.js"),
   Chunk526761 = require("./526761.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk304343 = require("./304343.js");
+  Chunk49122 = require("./49122.js");
 
 function z() {
   return (0, Chunk951288.jsx)(Chunk481060.Zbd, {
-    className: Chunk304343.noItemsCard,
+    className: Chunk49122.noItemsCard,
     type: Chunk481060.Zbd.Types.CUSTOM,
     children: (0, Chunk951288.jsxs)(Chunk600164.Z, {
       align: Chunk600164.Z.Align.CENTER,
       children: [(0, Chunk951288.jsx)(Chunk925329.Z, {
         game: null,
         size: Chunk925329.A.SMALL,
-        className: Chunk304343.noItemsIcon
+        className: Chunk49122.noItemsIcon
       }), (0, Chunk951288.jsx)("span", {
-        className: Chunk304343.cardText,
-        children: Chunk388032.intl.string(Chunk388032.t["jy/hys"])
+        className: Chunk49122.cardText,
+        children: Chunk388032.intl.string(Chunk388032.t["jy/hyj"])
       })]
     })
   })
@@ -73,10 +73,10 @@ function q() {
   return Chunk647438.useEffect(() => {
     (0, Chunk496929.yD)(Chunk474936.CL)
   }, []), (0, Chunk951288.jsx)(Chunk481060.C3N, {
-    label: Chunk388032.intl.string(Chunk388032.t["2GKrvr"]),
-    description: Chunk388032.intl.string(Chunk388032.t.kNEjGh),
+    label: Chunk388032.intl.string(Chunk388032.t["2GKrvn"]),
+    description: Chunk388032.intl.string(Chunk388032.t.kNEjGm),
     children: null != module && Chunk74538.ZP.hasAccountCredit(module) ? (0, Chunk951288.jsx)(Chunk639056.Z, {
-      className: Chunk304343.accountCredit,
+      className: Chunk49122.accountCredit,
       entitlements: module
     }) : (0, Chunk951288.jsx)(z, {})
   })
@@ -91,7 +91,7 @@ function X(e, t) {
     }), (0, r.jsx)(l.Text, {
       variant: "text-md/normal",
       className: K.accountCreditDescription,
-      children: W.intl.format(W.t["7Zi06e"], {
+      children: W.intl.format(W.t["7Zi06b"], {
         helpCenterLink: M.Z.getArticleURL(V.BhN.FRACTIONAL_PREMIUM_ABOUT)
       })
     }), (0, r.jsx)(U.Z, {
@@ -104,7 +104,7 @@ function X(e, t) {
 
 function Q() {
   return (0, Chunk951288.jsx)("hr", {
-    className: Chunk304343.hr
+    className: Chunk49122.hr
   })
 }
 let J = function() {
@@ -141,9 +141,9 @@ let J = function() {
   }) : Chunk580130 === Chunk526761.XZ ? (0, Chunk951288.jsx)(Chunk856888.Z, {
     onGoBack: () => Chunk230711.Z.clearSubsection()
   }) : (0, Chunk951288.jsx)("div", {
-    className: Chunk304343.container,
+    className: Chunk49122.container,
     children: (0, Chunk951288.jsxs)("div", {
-      className: Chunk304343.content,
+      className: Chunk49122.content,
       children: [require ? (0, Chunk951288.jsx)(Chunk91430.Yn, {}) : null, null != module ? (0, Chunk951288.jsx)(Chunk91430.ZP, {
         subscription: module,
         paymentSource: Chunk120356,
@@ -176,7 +176,7 @@ let J = function() {
       }) : null]
     })
   }) : (0, Chunk951288.jsx)("div", {
-    className: o()(Chunk304343.container, Chunk304343.loading),
+    className: o()(Chunk49122.container, Chunk49122.loading),
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
   })
 }

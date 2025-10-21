@@ -1,4 +1,4 @@
-/** Chunk was on 63962 **/
+/** Chunk was on 91053 **/
 /** chunk id: 739830, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -56,7 +56,7 @@ function g(e) {
       s.S.unsubscribe(u.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
     }
   }, []);
-  let y = p.intl.string(p.t.h850Sk);
+  let y = p.intl.string(p.t.h850Ss);
   return (0, r.jsx)(l.yRy, {
     targetElementRef: b,
     shouldShow: g,
@@ -68,7 +68,7 @@ function g(e) {
     renderPopout: e => (0, r.jsx)(c.Z, f(h({}, e), {
       channel: t,
       navId: "thread-context",
-      label: p.intl.string(p.t["1NBjqa"])
+      label: p.intl.string(p.t["1NBjqb"])
     })),
     children: (e, t) => {
       let {

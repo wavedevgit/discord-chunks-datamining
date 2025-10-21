@@ -22,13 +22,13 @@ function _() {
   a()(null != exports, "should not render this without a holiday soundpack");
   let n = [{
     value: Chunk871465.Y.CLASSIC,
-    label: Chunk388032.intl.string(Chunk388032.t.p3Hg5e)
+    label: Chunk388032.intl.string(Chunk388032.t.p3Hg5W)
   }, {
     value: exports.soundpack,
     label: Chunk388032.intl.string(exports.soundpackLabel)
   }];
   return (0, Chunk951288.jsx)(Chunk481060.q4e, {
-    label: Chunk388032.intl.string(Chunk388032.t.fgSHf3),
+    label: Chunk388032.intl.string(Chunk388032.t.fgSHf8),
     onChange: Chunk716364.c,
     value: module,
     options: require,

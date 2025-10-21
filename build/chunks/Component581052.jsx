@@ -16,11 +16,11 @@ function d(e) {
   return (null == n ? true : n.isStaff()) !== true ? null : (0, i.jsxs)(i.Fragment, {
     children: [!e.isMessageRequest && (0, i.jsx)(l.sNh, {
       id: "mark-as-message-request",
-      label: o.intl.string(o.t.L6623t),
+      label: o.intl.string(o.t.L6623r),
       action: () => (0, a.Xy)(e.id)
     }), (0, i.jsx)(l.sNh, {
       id: "clear-message-request",
-      label: o.intl.string(o.t["85YWlZ"]),
+      label: o.intl.string(o.t["85YWlY"]),
       action: () => (0, a.qR)(e.id)
     })]
   })

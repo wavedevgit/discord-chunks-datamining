@@ -1,4 +1,4 @@
-/** Chunk was on 41348 **/
+/** Chunk was on 79041 **/
 /** chunk id: 562705, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -62,10 +62,10 @@ function _(e) {
     }), m.S.dispatch(g.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, {})
   }, [i]), j = (0, r.useCallback)(() => {
     i(b.L.USER_DISMISS)
-  }, [i]), _ = f.vK[n], y = v.intl.formatToPlainString(v.t.ewkaVV, {
+  }, [i]), _ = f.vK[n], y = v.intl.formatToPlainString(v.t.ewkaVR, {
     timeMilestone: null == (t = (0, p.q)(_.id, _.tenureReqNumMonths)) ? true : t.toLocaleLowerCase()
   }), C = [{
-    text: v.intl.string(v.t.RzWDqa),
+    text: v.intl.string(v.t.RzWDqY),
     variant: "primary",
     onClick: h
   }];
@@ -82,7 +82,7 @@ function _(e) {
       aspectRatio: "6/4"
     } : true,
     size: "lg",
-    title: v.intl.string(v.t.VoDxsb),
+    title: v.intl.string(v.t.VoDxsV),
     body: y,
     actions: C
   })

@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 598622, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -22,24 +22,24 @@ let g = e => {
     enabled: true
   }, {
     renderComponent: () => (0, r.jsx)(o.Z, {
-      title: u.intl.string(u.t.QiONLy),
-      details: u.intl.string(u.t.dSRTMD)
+      title: u.intl.string(u.t.QiONL5),
+      details: u.intl.string(u.t.dSRTMB)
     }, "hide-suspicious-dms"),
     enabled: true
   }, {
     renderComponent: () => (0, r.jsx)(o.Z, {
-      title: u.intl.string(u.t["f+8F8P"]),
-      details: u.intl.string(u.t.qChrIy)
+      title: u.intl.string(u.t["f+8F8F"]),
+      details: u.intl.string(u.t.qChrI2)
     }, "filter-unknown-dms"),
     enabled: true
   }, {
     renderComponent: () => (0, r.jsx)(o.Z, {
-      title: u.intl.string(u.t.EkSAHR)
+      title: u.intl.string(u.t.EkSAHZ)
     }, "outbound-links-warn"),
     enabled: true
   }, {
     renderComponent: () => (0, r.jsx)(o.Z, {
-      title: u.intl.string(u.t["7cAQmp"])
+      title: u.intl.string(u.t["7cAQmj"])
     }, "delete-spam"),
     enabled: true
   }].filter(e => null != e);
@@ -51,12 +51,12 @@ let g = e => {
       enabled: !e.features.has(d.GuildFeatures.RAID_ALERTS_DISABLED)
     }, {
       renderComponent: () => (0, r.jsx)(o.Z, {
-        title: u.intl.string(u.t.gOkFfH)
+        title: u.intl.string(u.t.gOkFfI)
       }, "captcha-suspicious-joins"),
       enabled: true
     }, {
       renderComponent: () => (0, r.jsx)(o.Z, {
-        title: u.intl.string(u.t.r3esyM)
+        title: u.intl.string(u.t.r3esyC)
       }, "captcha-raid-joins"),
       enabled: true
     }],

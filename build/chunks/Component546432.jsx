@@ -33,8 +33,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk217702 = require("./217702.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk908011 = require("./908011.js"),
-  Chunk348594 = require("./348594.js");
+  Chunk337595 = require("./337595.js"),
+  Chunk374299 = require("./374299.js");
 
 function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -142,14 +142,14 @@ let F = e => {
     imageUrl: n,
     mimeType: t
   }, "app")), null != a && b.push((0, r.jsx)(l.u, {
-    text: R.intl.string(R.t["/XT3io"]),
+    text: R.intl.string(R.t["/XT3ij"]),
     children: (0, r.jsx)(c.P3F, {
       className: o()(w.hoverButton, P.removeMosaicItemHoverButton),
       focusProps: {
         offset: 2
       },
       onClick: a,
-      "aria-label": R.intl.string(R.t["0+xZHx"]),
+      "aria-label": R.intl.string(R.t["0+xZH0"]),
       children: (0, r.jsx)(c.XHJ, {
         size: "custom",
         color: "currentColor",
@@ -158,7 +158,7 @@ let F = e => {
       })
     })
   }, "remove")), s && b.push((0, r.jsx)(l.u, {
-    text: R.intl.string(R.t["1WjMbG"]),
+    text: R.intl.string(R.t["1WjMbC"]),
     children: (0, r.jsx)(h.Z, {
       target: "_blank",
       rel: "noreferrer noopener",
@@ -281,7 +281,7 @@ function V(e) {
           }
         },
         onClick: () => u(n),
-        "aria-label": R.intl.string(R.t["0+xZHx"]),
+        "aria-label": R.intl.string(R.t["0+xZH0"]),
         children: (0, r.jsx)(c.Dio, {
           size: "xs",
           color: "currentColor"

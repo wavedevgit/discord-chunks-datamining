@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk131092 = require("./131092.js");
+  Chunk132810 = require("./132810.js");
 
 function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -127,7 +127,7 @@ let P = e => {
       }), F(false)
     }, q = g.Z.getPremiumTypeSubscription(), X = (0, r.jsxs)("div", {
       className: I.button,
-      children: [M, null != T ? T : v.intl.string(v.t.gKmQ1N)]
+      children: [M, null != T ? T : v.intl.string(v.t.gKmQ1G)]
     }), Q = false;
   return ((Q = null !== q && !(Y.length > 0) && (null == q ? true : q.isPausedOrPausePending) && V === O.a$.NONE) && (X = (0, r.jsxs)("div", {
     className: I.button,
@@ -142,7 +142,7 @@ let P = e => {
       icon: u.mBM,
       iconPosition: "start",
       disabled: true,
-      text: null != T ? T : v.intl.string(v.t.gKmQ1N)
+      text: null != T ? T : v.intl.string(v.t.gKmQ1G)
     })
   }) : (0, r.jsx)(p.Z, {
     text: K,
@@ -160,7 +160,7 @@ let P = e => {
     variant: "expressive",
     disabled: Q,
     loading: Z,
-    text: null != T ? T : v.intl.string(v.t.gKmQ1N),
+    text: null != T ? T : v.intl.string(v.t.gKmQ1G),
     onClick: z
   }) : (0, r.jsx)(u.gtL, C(S({
     "data-migration-pending": true,

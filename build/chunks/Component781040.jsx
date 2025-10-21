@@ -19,7 +19,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk872269 = require("./872269.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk640962 = require("./640962.js");
+  Chunk176870 = require("./176870.js");
 
 function y(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -62,21 +62,21 @@ let O = e => {
       isDragging: e.isDragging()
     }));
     return (0, r.jsx)(s.aML, {
-      "aria-label": h.intl.formatToPlainString(h.t.HWNJJC, {
+      "aria-label": h.intl.formatToPlainString(h.t.HWNJJN, {
         widgetTitle: t
       }),
       text: () => (0, r.jsxs)("div", {
         className: v.dragClickTooltipText,
         children: [(0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
-          children: h.intl.format(i ? h.t["zvln/v"] : h.t["7cdwho"], {
+          children: h.intl.format(i ? h.t["zvln/l"] : h.t["7cdwhg"], {
             emphasizeHook: e => (0, r.jsx)("strong", {
               children: e
             })
           })
         }), (0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
-          children: h.intl.format(h.t["4e0rMz"], {
+          children: h.intl.format(h.t["4e0rM4"], {
             emphasizeHook: e => (0, r.jsx)("strong", {
               children: e
             })
@@ -135,7 +135,7 @@ let O = e => {
           children: (0, r.jsxs)(s.kSQ, {
             children: [l, (0, r.jsx)(s.sNh, {
               id: "remove-widget",
-              label: h.intl.string(h.t.Mm07YW),
+              label: h.intl.string(h.t.Mm07Yc),
               action: u,
               color: "danger",
               icon: s.XHJ
@@ -163,7 +163,7 @@ let O = e => {
           innerRef: i,
           className: a()(v.dragHandleButton, n),
           "data-dnd-name": o,
-          "aria-label": h.intl.formatToPlainString(h.t.HWNJJC, {
+          "aria-label": h.intl.formatToPlainString(h.t.HWNJJN, {
             widgetTitle: o
           }),
           "aria-describedby": c
@@ -172,7 +172,7 @@ let O = e => {
             size: "sm"
           }), (0, r.jsx)(s.nn4, {
             id: c,
-            children: h.intl.string(h.t.bsuqFh)
+            children: h.intl.string(h.t.bsuqFn)
           })]
         }))
       })

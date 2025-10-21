@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk888617 = require("./888617.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk456353 = require("./456353.js"),
+  Chunk431048 = require("./431048.js"),
   Chunk983008 = require("./983008.js"),
   Chunk478408 = require("./478408.js");
 
@@ -48,18 +48,18 @@ function y(e) {
         children: [(0, i.jsx)(a.Heading, {
           variant: "heading-lg/bold",
           color: "header-primary",
-          children: m.intl.string(m.t["kw8/ER"])
+          children: m.intl.string(m.t["kw8/Ec"])
         }), (0, i.jsx)(a.Text, {
           variant: "text-xs/normal",
           color: "text-default",
-          children: m.intl.string(m.t.GZoV1N)
+          children: m.intl.string(m.t.GZoV1O)
         })]
       }), (0, i.jsx)(a.Button, {
         variant: "primary",
-        text: m.intl.string(m.t.Ye51oa),
-        "aria-label": m.intl.formatToPlainString(m.t.xx5Sur, {
-          sectionTitle: m.intl.string(m.t["kw8/ER"]),
-          sectionBody: m.intl.string(m.t.GZoV1N)
+        text: m.intl.string(m.t.Ye51oT),
+        "aria-label": m.intl.formatToPlainString(m.t.xx5Sug, {
+          sectionTitle: m.intl.string(m.t["kw8/Ec"]),
+          sectionBody: m.intl.string(m.t.GZoV1O)
         }),
         onClick: g
       })]

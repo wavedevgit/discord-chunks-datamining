@@ -1,4 +1,4 @@
-/** Chunk was on 41348 **/
+/** Chunk was on 79041 **/
 /** chunk id: 427347, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -19,7 +19,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk120289 = require("./120289.js");
+  Chunk972663 = require("./972663.js");
 
 function v(e) {
   let {
@@ -57,11 +57,11 @@ function v(e) {
             variant: "heading-md/bold",
             color: true,
             className: b.specialText,
-            children: g.intl.string(g.t.zUhr3N)
+            children: g.intl.string(g.t.zUhr3D)
           }), (0, a.jsx)(r.Text, {
             variant: "text-xs/normal",
             color: "always-white",
-            children: g.intl.format(g.t.Xw2XUV, {
+            children: g.intl.format(g.t.Xw2XUT, {
               settingsHook: (e, t) => (0, a.jsx)(r.P3F, {
                 tag: "span",
                 className: b.specialTextLink,

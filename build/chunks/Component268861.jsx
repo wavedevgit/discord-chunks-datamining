@@ -10,7 +10,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk243778 = require("./243778.jsx"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk216397 = require("./216397.js");
+  Chunk303010 = require("./303010.js");
 
 function d(e) {
   let {
@@ -29,11 +29,11 @@ function d(e) {
         children: [(0, i.jsx)(o.Heading, {
           variant: "heading-xl/medium",
           color: "header-primary",
-          children: u.intl.string(u.t.jzjJQk)
+          children: u.intl.string(u.t.jzjJQg)
         }), (0, i.jsx)(o.Text, {
           variant: "text-md/normal",
           color: "text-muted",
-          children: u.intl.string(u.t["5dOfxc"])
+          children: u.intl.string(u.t["5dOfxb"])
         })]
       }), (0, i.jsxs)("div", {
         className: c.widgetCalloutContainer,
@@ -42,28 +42,28 @@ function d(e) {
           children: [(0, i.jsx)(o.qjv, {}), (0, i.jsx)(o.Text, {
             variant: "text-md/medium",
             color: "interactive-normal",
-            children: u.intl.string(u.t.S6VRyM)
+            children: u.intl.string(u.t.S6VRyK)
           })]
         }), (0, i.jsxs)("div", {
           className: c.widgetCallout,
           children: [(0, i.jsx)(o.Dkj, {}), (0, i.jsx)(o.Text, {
             variant: "text-md/medium",
             color: "interactive-normal",
-            children: u.intl.string(u.t.xq8CKS)
+            children: u.intl.string(u.t.xq8CKY)
           })]
         }), (0, i.jsxs)("div", {
           className: c.widgetCallout,
           children: [(0, i.jsx)(o.Odl, {}), (0, i.jsx)(o.Text, {
             variant: "text-md/medium",
             color: "interactive-normal",
-            children: u.intl.string(u.t.GwpRe3)
+            children: u.intl.string(u.t.GwpRe0)
           })]
         }), (0, i.jsxs)("div", {
           className: c.widgetCallout,
           children: [(0, i.jsx)(o.KY1, {}), (0, i.jsx)(o.Text, {
             variant: "text-md/medium",
             color: "interactive-normal",
-            children: u.intl.string(u.t.VUoC5O)
+            children: u.intl.string(u.t.VUoC5F)
           })]
         })]
       })]

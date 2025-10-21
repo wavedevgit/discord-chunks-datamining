@@ -46,9 +46,9 @@ async function j(e, t) {
   let n = s.Z.getEnabled(e),
     a = Array.from(p.Z.editedDefaultChannelIds).filter(e => null != g.Z.getChannel(e)),
     [o, d] = (0, c.d9)(e, [...a]);
-  if (n && t === E.Un.ONBOARDING_DEFAULT && (d.length < E.md || o.length < E.X)) return void r.Z.show({
-    title: x.intl.string(x.t.iLdiqa),
-    body: x.intl.string(x.t.JOT74e)
+  if (n && t === S.Un.ONBOARDING_DEFAULT && (d.length < S.md || o.length < S.X)) return void r.Z.show({
+    title: x.intl.string(x.t.iLdiqY),
+    body: x.intl.string(x.t.JOT74c)
   });
   try {
     await (0, N.n_)(e, {
@@ -61,7 +61,7 @@ async function j(e, t) {
       error: t
     } = null != (u = new i.Z(n).getAnyErrorMessageAndField()) ? u : {};
     r.Z.show({
-      title: x.intl.string(x.t.iLdiqa),
+      title: x.intl.string(x.t.iLdiqY),
       body: [e, t].filter(f.lm).join(": ")
     })
   }
@@ -97,6 +97,6 @@ async function D(e) {
   }), o.ZP.resetOnboardingStatus(t.id), (0, d.EI)(t.id), await (0, d.default)({
     guildId: t.id,
     isPreview: true,
-    returnChannelId: S.oC.GUILD_HOME
+    returnChannelId: E.oC.GUILD_HOME
   }))
 }

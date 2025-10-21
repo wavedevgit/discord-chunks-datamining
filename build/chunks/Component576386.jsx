@@ -1,4 +1,4 @@
-/** Chunk was on 82897 **/
+/** Chunk was on 5873 **/
 /** chunk id: 576386, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk74538 = require("./74538.js"),
   Chunk539530 = require("./539530.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk801707 = require("./801707.js");
+  Chunk24391 = require("./24391.js");
 let b = e => {
     var t;
     let {
@@ -31,7 +31,7 @@ let b = e => {
     } = (0, u.Z)(v);
     return (0, r.jsxs)(s.P3F, {
       innerRef: v,
-      "aria-label": null != (t = a.label) ? t : m.intl.string(m.t.x5CoXV),
+      "aria-label": null != (t = a.label) ? t : m.intl.string(m.t.x5CoXR),
       className: h.nameplateItem,
       onClick: g,
       children: [(0, r.jsx)(d.Z, {
@@ -78,7 +78,7 @@ let b = e => {
               color: "currentColor"
             }), (0, r.jsx)(s.Text, {
               variant: "text-xs/normal",
-              children: null != i ? m.intl.string(m.t.CHf9iI) : m.intl.string(m.t.PoWNfX)
+              children: null != i ? m.intl.string(m.t.CHf9iJ) : m.intl.string(m.t.PoWNfe)
             })]
           }), (0, r.jsxs)(s.P3F, {
             className: h.inventoryControlsButton,
@@ -88,7 +88,7 @@ let b = e => {
               color: "currentColor"
             }), (0, r.jsx)(s.Text, {
               variant: "text-xs/normal",
-              children: m.intl.string(m.t.pWG4zc)
+              children: m.intl.string(m.t.pWG4ze)
             })]
           })]
         }), (0, r.jsx)("div", {

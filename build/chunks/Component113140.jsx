@@ -9,7 +9,7 @@ var Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
   Chunk471253 = require("./471253.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk374378 = require("./374378.js"),
+  Chunk981038 = require("./981038.js"),
   Chunk768982 = require("./768982.js");
 
 function h(t) {
@@ -26,8 +26,8 @@ function h(t) {
       type: "image",
       src: l.Z
     },
-    title: c.intl.string(c.t.Ul1RJS),
-    subtitle: c.intl.format(c.t["Z+3bW1"], {
+    title: c.intl.string(c.t.Ul1RJQ),
+    subtitle: c.intl.format(c.t["Z+3bWy"], {
       stageChannelHook: () => (0, i.jsxs)(i.Fragment, {
         children: [(0, i.jsx)(a.ewx, {
           size: "custom",

@@ -11,7 +11,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk873546 = require("./873546.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk149353 = require("./149353.js"),
+  Chunk676201 = require("./676201.js"),
   u = function(e) {
     return e.DEFAULT = "", e.BOLD = "Bold", e.SOLID = "Solid", e
   }(u || {});
@@ -31,7 +31,7 @@ function d(e) {
         [c.closeButtonSolid]: "Solid" === n
       }),
       onClick: t,
-      "aria-label": l.intl.string(l.t.cpT0Cg),
+      "aria-label": l.intl.string(l.t.cpT0Cq),
       children: "Solid" === n ? (0, r.jsx)(s.k$p, {
         size: "md",
         color: "currentColor",

@@ -2,7 +2,7 @@
 /** chunk id: 786906, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => j
+  Z: () => Z
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk707878 = require("./707878.jsx"),
   Chunk518084 = require("./518084.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk507161 = require("./507161.js");
+  Chunk846602 = require("./846602.js");
 
 function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -34,7 +34,7 @@ function S(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class Z extends Chunk647438.Component {
+class C extends Chunk647438.Component {
   componentDidUpdate() {
     this.props.locked && this.state.showOpacitySlider && this.setState({
       showOpacitySlider: false
@@ -50,7 +50,7 @@ class Z extends Chunk647438.Component {
     if (!(0, Chunk131704.hv)(require.type)) return null;
     let l = Chunk481060.Csw,
       c = false;
-    return Chunk647438 ? Chunk120356 ? (e = Chunk388032.intl.string(Chunk388032.t["4ry6ys"]), l = Chunk481060.gkL) : e = Chunk388032.intl.string(Chunk388032.t["0D/6R0"]) : o ? (e = Chunk388032.intl.string(Chunk388032.t.PHzjvb), t = Chunk481060.aML.Colors.RED, c = true) : e = Chunk388032.intl.string(Chunk388032.t.focH1t), (0, Chunk951288.jsx)(Chunk984370.Z.Icon, {
+    return Chunk647438 ? Chunk120356 ? (e = Chunk388032.intl.string(Chunk388032.t["4ry6yi"]), l = Chunk481060.gkL) : e = Chunk388032.intl.string(Chunk388032.t["0D/6Rz"]) : o ? (e = Chunk388032.intl.string(Chunk388032.t.PHzjvX), t = Chunk481060.aML.Colors.RED, c = true) : e = Chunk388032.intl.string(Chunk388032.t.focH1t), (0, Chunk951288.jsx)(Chunk984370.Z.Icon, {
       icon: Chunk442837,
       tooltip: module,
       onClick: this.handleClickCall,
@@ -74,16 +74,16 @@ class Z extends Chunk647438.Component {
       showOpacitySlider: g
     } = this.state;
     return Chunk523746 && !require ? (0, Chunk951288.jsxs)(Chunk518084.ZP.Bar, {
-      className: Chunk507161.opacityHeader,
+      className: Chunk846602.opacityHeader,
       children: [(0, Chunk951288.jsx)(Chunk707878.Z, {}), (0, Chunk951288.jsx)(Chunk984370.Z.Icon, {
         icon: Chunk481060.Dio,
         onClick: this.handleCloseOpacitySettings,
-        tooltip: Chunk388032.intl.string(Chunk388032.t.cpT0Cg)
+        tooltip: Chunk388032.intl.string(Chunk388032.t.cpT0Cq)
       })]
     }) : (0, Chunk951288.jsx)(Chunk518084.ZP.Background, {
       opacityOverride: require || Chunk933557 ? null : 1,
       children: (0, Chunk951288.jsx)("div", {
-        className: o()(module, exports, Chunk507161.headerContainer),
+        className: o()(module, exports, Chunk846602.headerContainer),
         onMouseDown: Chunk13245,
         onContextMenu: Chunk287734,
         children: (0, Chunk951288.jsxs)(Chunk984370.Z, {
@@ -94,7 +94,7 @@ class Z extends Chunk647438.Component {
           children: [Chunk933557 || require || Chunk131704 ? null : (0, Chunk951288.jsx)(Chunk481060.Vni, {
             size: "custom",
             color: "currentColor",
-            className: o()(Chunk507161.dragIcon, exports),
+            className: o()(Chunk846602.dragIcon, exports),
             width: 20,
             height: 20
           }), (0, Chunk910611.ud)({
@@ -143,11 +143,11 @@ class Z extends Chunk647438.Component {
         locked: e,
         handlePin: t,
         pinned: n
-      } = this.props, s = n ? E.intl.string(E.t.cSu80t) : E.intl.string(E.t.cM8Vnp);
+      } = this.props, s = n ? E.intl.string(E.t.cSu80j) : E.intl.string(E.t.cM8Vnm);
       return e ? null : (0, i.jsxs)(r.Fragment, {
         children: [this.renderCallButton(), n ? (0, i.jsx)(p.Z.Icon, {
           icon: a._S3,
-          tooltip: E.intl.string(E.t.OVovCQ),
+          tooltip: E.intl.string(E.t.OVovCb),
           onClick: this.handleOpenOpacitySettings
         }) : null, (0, i.jsx)(p.Z.Icon, {
           icon: n ? a.QVc : a.k5M,
@@ -160,7 +160,7 @@ class Z extends Chunk647438.Component {
   }
 }
 
-function j(e) {
+function Z(e) {
   var {
     channel: t
   } = e, n = function(e, t) {
@@ -186,7 +186,7 @@ function j(e) {
     o = (0, l.e7)([g.Z], () => g.Z.isCallActive(t.id)),
     a = (0, u.ZP)(t),
     c = (0, l.e7)([_.Z], () => !!t.isDM() && null != t.getRecipientId() && _.Z.isBlocked(t.getRecipientId()));
-  return (0, i.jsx)(Z, function(e) {
+  return (0, i.jsx)(C, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         i = Object.keys(n);

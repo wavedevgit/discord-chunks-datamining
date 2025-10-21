@@ -13,7 +13,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk74538 = require("./74538.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk640671 = require("./640671.js");
+  Chunk159240 = require("./159240.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -71,7 +71,7 @@ function m(e) {
       className: d.infoIcon
     }), (0, r.jsx)("div", {
       className: d.text,
-      children: u.intl.format(u.t.ar1cPj, {
+      children: u.intl.format(u.t.ar1cPl, {
         planName: t.hasExternalPlanChange ? (0, l.zL)(i) : l.ZP.getDisplayName(i.planId),
         date: g
       })
@@ -89,7 +89,7 @@ function m(e) {
         })
       },
       className: d.cancelLink,
-      children: u.intl.string(u.t["ETE/oK"])
+      children: u.intl.string(u.t["ETE/oC"])
     })]
   })
 }

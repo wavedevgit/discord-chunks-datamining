@@ -34,7 +34,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk856768 = require("./856768.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk192201 = require("./192201.js");
+  Chunk813709 = require("./813709.js");
 
 function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -145,7 +145,7 @@ function Z(e) {
     value: n,
     children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
-      children: D.intl.format(D.t["/PTB2N"], {
+      children: D.intl.format(D.t["/PTB2E"], {
         helpCenterLink: T.Z.getArticleURL(w.BhN.GUILD_PROFILES)
       })
     }), null != t ? (0, r.jsxs)(r.Fragment, {
@@ -158,7 +158,7 @@ function Z(e) {
         profilePreviewTitle: (0, r.jsx)(l.Heading, {
           variant: "heading-md/medium",
           className: L.profilePreviewTitle,
-          children: D.intl.formatToPlainString(D.t.Tc0slJ, {
+          children: D.intl.formatToPlainString(D.t.Tc0slG, {
             guildName: null == t ? true : t.name
           })
         }),

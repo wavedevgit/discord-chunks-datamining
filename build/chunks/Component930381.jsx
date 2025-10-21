@@ -15,19 +15,19 @@ var Chunk481060 = require("./481060.js"),
 function c(t) {
   let {
     onSelect: a,
-    layoutId: e = s.OVERLAY_LAYOUT_ID,
+    layoutId: e = l.OVERLAY_LAYOUT_ID,
     version: c
   } = t;
   return (0, n.jsx)(i.v2r, {
     navId: "overlay",
-    onClose: l.Zy,
-    "aria-label": u.intl.string(u.t.tPfVWl),
+    onClose: r.Zy,
+    "aria-label": u.intl.string(u.t.tPfVWi),
     onSelect: a,
     children: (0, n.jsx)(i.sNh, {
       id: "reset",
-      label: u.intl.string(u.t["hW+EMj"]),
+      label: u.intl.string(u.t["hW+EMu"]),
       action: t => {
-        t.stopPropagation(), r.Z.resetDefaultLayout(e, null != c ? c : o.bv)
+        t.stopPropagation(), s.Z.resetDefaultLayout(e, null != c ? c : o.bv)
       }
     })
   })

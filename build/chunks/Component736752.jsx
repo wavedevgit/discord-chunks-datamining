@@ -43,8 +43,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk801461 = require("./801461.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk719766 = require("./719766.js"),
-  Chunk10198 = require("./10198.js");
+  Chunk343396 = require("./343396.js"),
+  Chunk197571 = require("./197571.js");
 
 function V(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -104,24 +104,24 @@ class z extends Chunk647438.PureComponent {
     if (!module.isClaimed()) {
       let e = (0, Chunk951288.jsxs)("section", {
         children: [(0, Chunk951288.jsx)("div", {
-          className: Chunk719766.accountWarningBodyText,
-          children: Chunk388032.intl.string(Chunk388032.t.qKs3vr)
+          className: Chunk343396.accountWarningBodyText,
+          children: Chunk388032.intl.string(Chunk388032.t.qKs3vg)
         }), (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "secondary",
           size: "sm",
-          text: Chunk388032.intl.string(Chunk388032.t["7psymp"]),
+          text: Chunk388032.intl.string(Chunk388032.t["7psymi"]),
           onClick: () => Chunk952306.Z.openClaimAccountModal()
         })]
       });
       return (0, Chunk951288.jsx)(Chunk481060.ToO, {
         type: Chunk481060.ToO.Types.DANGER,
-        className: Chunk10198.marginBottom20,
+        className: Chunk197571.marginBottom20,
         imageData: {
           src: require("./418558.js"),
           width: 60,
           height: 60
         },
-        title: Chunk388032.intl.string(Chunk388032.t["/3qnLy"]),
+        title: Chunk388032.intl.string(Chunk388032.t["/3qnL/"]),
         body: module
       })
     }
@@ -129,8 +129,8 @@ class z extends Chunk647438.PureComponent {
     if (!module.verified) {
       let e = (0, Chunk951288.jsxs)("section", {
         children: [(0, Chunk951288.jsx)("div", {
-          className: Chunk719766.accountWarningBodyText,
-          children: Chunk388032.intl.string(Chunk388032.t.NAzplJ)
+          className: Chunk343396.accountWarningBodyText,
+          children: Chunk388032.intl.string(Chunk388032.t.NAzplE)
         }), (0, Chunk951288.jsx)(Chunk418632.Z, {
           size: "sm",
           variant: "secondary"
@@ -138,25 +138,25 @@ class z extends Chunk647438.PureComponent {
       });
       return (0, Chunk951288.jsx)(Chunk481060.ToO, {
         type: Chunk481060.ToO.Types.PRIMARY,
-        className: Chunk10198.marginBottom20,
+        className: Chunk197571.marginBottom20,
         imageData: {
           src: require("./449125.js"),
           width: 60,
           height: 60
         },
-        title: Chunk388032.intl.string(Chunk388032.t.tuGzBQ),
+        title: Chunk388032.intl.string(Chunk388032.t.tuGzBT),
         body: module
       })
     }
   }
   renderPomeloWarning() {
     return this.props.shouldRenderPomeloWarning ? (0, Chunk951288.jsxs)(Chunk481060.Wn, {
-      className: Chunk719766.accountWarningBodyText,
+      className: Chunk343396.accountWarningBodyText,
       messageType: Chunk481060.QYI.WARNING,
-      children: [Chunk388032.intl.format(Chunk388032.t.pdYZys, {}), " ", "", (0, Chunk951288.jsx)(Chunk690221.Z, {
-        className: Chunk719766.noticeTextButton,
+      children: [Chunk388032.intl.format(Chunk388032.t.pdYZyg, {}), " ", "", (0, Chunk951288.jsx)(Chunk690221.Z, {
+        className: Chunk343396.noticeTextButton,
         onClick: () => (0, Chunk303172.Z)(Chunk801461.Kq.USER_SETTINGS),
-        children: Chunk388032.intl.string(Chunk388032.t.LhlgY2)
+        children: Chunk388032.intl.string(Chunk388032.t.LhlgY9)
       })]
     }) : null
   }
@@ -171,18 +171,18 @@ class z extends Chunk647438.PureComponent {
       currentUser: t
     } = this.props;
     return (0, Chunk951288.jsxs)(Chunk481060.C3N, {
-      className: Chunk719766.userSettingsSecurity,
-      label: Chunk388032.intl.string(Chunk388032.t.pKSjEh),
+      className: Chunk343396.userSettingsSecurity,
+      label: Chunk388032.intl.string(Chunk388032.t.pKSjEj),
       children: [exports.mfaEnabled ? (0, Chunk951288.jsx)(Chunk481060.Wn, {
         icon: Chunk481060.mBM,
         messageType: Chunk481060.QYI.POSITIVE,
-        children: Chunk388032.intl.string(Chunk388032.t.FsmBy8)
+        children: Chunk388032.intl.string(Chunk388032.t.FsmBy4)
       }) : null, (0, Chunk951288.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.ACCOUNT_CHANGE_PASSWORD,
         children: (0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "primary",
           size: "sm",
-          text: Chunk388032.intl.string(Chunk388032.t["FRep5+"]),
+          text: Chunk388032.intl.string(Chunk388032.t["FRep5/"]),
           onClick: () => (0, Chunk481060.h7j)(e => (0, r.jsx)(k.default, W(H({}, e), {
             onSuccess: e.onClose
           })))
@@ -209,14 +209,14 @@ class z extends Chunk647438.PureComponent {
       });
       return (0, Chunk951288.jsx)(Chunk481060.sYh, {
         dismissable: true,
-        header: Chunk388032.intl.string(Chunk388032.t.UNGZDA),
-        confirmText: Chunk388032.intl.string(Chunk388032.t.BddRzc),
+        header: Chunk388032.intl.string(Chunk388032.t.UNGZDI),
+        confirmText: Chunk388032.intl.string(Chunk388032.t.BddRzS),
         confirmButtonColor: Chunk755721.Tt.BRAND,
         onCancel: module,
         onConfirm: module,
         children: (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
-          children: Chunk388032.intl.string(Chunk388032.t.alpAUl)
+          children: Chunk388032.intl.string(Chunk388032.t.alpAUm)
         })
       })
     }
@@ -226,14 +226,14 @@ class z extends Chunk647438.PureComponent {
       });
       return (0, Chunk951288.jsx)(Chunk481060.sYh, {
         dismissable: true,
-        header: Chunk388032.intl.string(Chunk388032.t.I5UrbW),
-        confirmText: Chunk388032.intl.string(Chunk388032.t.BddRzc),
+        header: Chunk388032.intl.string(Chunk388032.t.I5UrbV),
+        confirmText: Chunk388032.intl.string(Chunk388032.t.BddRzS),
         confirmButtonColor: Chunk755721.Tt.BRAND,
         onCancel: module,
         onConfirm: module,
         children: (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
-          children: Chunk388032.intl.string(Chunk388032.t.UyVVam)
+          children: Chunk388032.intl.string(Chunk388032.t.UyVVan)
         })
       })
     }
@@ -243,14 +243,14 @@ class z extends Chunk647438.PureComponent {
       });
       return (0, Chunk951288.jsx)(Chunk481060.sYh, {
         dismissable: true,
-        header: Chunk388032.intl.string(Chunk388032.t["8lQ2ra"]),
-        confirmText: Chunk388032.intl.string(Chunk388032.t["8lQ2ra"]),
-        cancelText: Chunk388032.intl.string(Chunk388032.t["ETE/oK"]),
+        header: Chunk388032.intl.string(Chunk388032.t["8lQ2rR"]),
+        confirmText: Chunk388032.intl.string(Chunk388032.t["8lQ2rR"]),
+        cancelText: Chunk388032.intl.string(Chunk388032.t["ETE/oC"]),
         onCancel: module,
         onConfirm: () => (0, Chunk809206.ss)("", true).then(module),
         children: (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
-          children: Chunk388032.intl.string(Chunk388032.t.FB4H1N)
+          children: Chunk388032.intl.string(Chunk388032.t.FB4H1D)
         })
       })
     }
@@ -261,8 +261,8 @@ class z extends Chunk647438.PureComponent {
       });
       return (0, Chunk951288.jsx)(Chunk481060.sYh, {
         dismissable: true,
-        header: Chunk388032.intl.string(Chunk388032.t.LX0nT0),
-        confirmText: Chunk388032.intl.string(Chunk388032.t.BddRzc),
+        header: Chunk388032.intl.string(Chunk388032.t.LX0nT8),
+        confirmText: Chunk388032.intl.string(Chunk388032.t.BddRzS),
         confirmButtonColor: Chunk755721.Tt.BRAND,
         onCancel: module,
         onConfirm: module,
@@ -307,11 +307,11 @@ class z extends Chunk647438.PureComponent {
       subsection: e
     } = this.props;
     return (0, Chunk951288.jsx)(Chunk10298.N, {
-      header: Chunk388032.intl.string(Chunk388032.t["JAIM/v"]),
+      header: Chunk388032.intl.string(Chunk388032.t["JAIM/m"]),
       children: (0, Chunk951288.jsx)(Chunk526156.Z, {
         parentSetting: Chunk726985.s6.ACCOUNT,
         settingsSection: Chunk981631.oAB.ACCOUNT,
-        panelClassName: Chunk719766.tabPanel,
+        panelClassName: Chunk343396.tabPanel,
         onTabChange: e => {
           C.default.track(U.rMx.MY_ACCOUNT_PAGE_TAB_NAVIGATE, {
             target_tab_name: e === j.s6.ACCOUNT_SECURITY_TAB ? "SECURITY" : "STANDING"
@@ -319,11 +319,11 @@ class z extends Chunk647438.PureComponent {
         },
         defaultTabIndex: "ACCOUNT_STANDING" === module ? 1 : true,
         tabs: [{
-          title: Chunk388032.intl.string(Chunk388032.t.Am9YHh),
+          title: Chunk388032.intl.string(Chunk388032.t.Am9YHi),
           component: () => this.renderSecuritySettingsRedesign(),
           setting: Chunk726985.s6.ACCOUNT_SECURITY_TAB
         }, {
-          title: Chunk388032.intl.string(Chunk388032.t["Vov/9v"]),
+          title: Chunk388032.intl.string(Chunk388032.t["Vov/9o"]),
           component: Chunk518560.Z,
           setting: Chunk726985.s6.PRIVACY_AND_SAFETY_STANDING
         }]
@@ -357,9 +357,9 @@ class z extends Chunk647438.PureComponent {
       shouldRenderOwnedGuildsModal: true
     }) : void(require.isClaimed() ? (0, Chunk481060.h7j)(e => (0, r.jsx)(_.Z, W(H({}, e), {
       handleSubmit: e => this.handleSubmitDisableAccount(e, t),
-      title: t ? B.intl.string(B.t["8lQ2ra"]) : B.intl.string(B.t.jf5GGR),
-      actionText: t ? B.intl.string(B.t["8lQ2ra"]) : B.intl.string(B.t.jf5GGR),
-      children: t ? B.intl.string(B.t.FB4H1N) : B.intl.string(B.t.gk7h39)
+      title: t ? B.intl.string(B.t["8lQ2rR"]) : B.intl.string(B.t.jf5GGb),
+      actionText: t ? B.intl.string(B.t["8lQ2rR"]) : B.intl.string(B.t.jf5GGb),
+      children: t ? B.intl.string(B.t.FB4H1D) : B.intl.string(B.t.gk7h32)
     }))) : this.setState({
       shouldRenderDeleteAccountConfirmModal: true
     }))

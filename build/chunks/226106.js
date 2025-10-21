@@ -14,12 +14,12 @@ function o(e) {
   };
   r.Z.show({
     title: a.intl.string(a.t.z2pFjo),
-    body: a.intl.formatToPlainString(a.t["0nTvEx"], {
+    body: a.intl.formatToPlainString(a.t["0nTvEw"], {
       incomingRequestCount: e
     }),
-    confirmText: a.intl.string(a.t["cY+Ooa"]),
+    confirmText: a.intl.string(a.t["cY+Oob"]),
     confirmVariant: "critical-primary",
-    cancelText: a.intl.string(a.t["ETE/oK"]),
+    cancelText: a.intl.string(a.t["ETE/oC"]),
     onConfirm: t
   })
 }

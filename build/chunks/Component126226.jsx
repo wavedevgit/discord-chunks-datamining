@@ -27,7 +27,7 @@ var Chunk793030 = require("./793030.js"),
   Chunk761652 = require("./761652.js"),
   Chunk689079 = require("./689079.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk114781 = require("./114781.js");
+  Chunk12816 = require("./12816.js");
 
 function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -141,8 +141,8 @@ let P = {
       autocompletes: t,
       onHover: l,
       onClick: c,
-      titleWithQuery: I.t.HFRoZW,
-      titleWithoutQuery: I.intl.string(I.t["0hKkS0"]),
+      titleWithQuery: I.t.HFRoZR,
+      titleWithoutQuery: I.intl.string(I.t["0hKkS+"]),
       getQuery: e => "".concat(O.GI).concat(e),
       Component: d ? m.ZP.Command : m.ZP.NewCommand,
       getProps: e => {
@@ -164,7 +164,7 @@ let P = {
       headerTrailingContent: d && (0, r.jsx)(i.Avr, {
         size: "xs",
         onClick: N,
-        text: I.intl.string(I.t["8a0P09"])
+        text: I.intl.string(I.t["8a0P0y"])
       })
     })
   },

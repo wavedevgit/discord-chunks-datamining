@@ -1,4 +1,4 @@
-/** Chunk was on 99063 **/
+/** Chunk was on 86736 **/
 /** chunk id: 741247, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => c,
@@ -23,7 +23,7 @@ function c(e) {
   } = e, c = (0, a.Z)(n, t);
   return 0 === c.length ? null : (0, i.jsx)(r.v2r, {
     navId: "guild-settings-role-context",
-    "aria-label": o.intl.string(o.t["337Ja2"]),
+    "aria-label": o.intl.string(o.t["337Ja9"]),
     onClose: l.Zy,
     onSelect: s,
     children: c

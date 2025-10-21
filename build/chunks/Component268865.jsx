@@ -9,8 +9,8 @@ require("./647438.js");
 var Chunk567400 = require("./567400.js"),
   Chunk786040 = require("./786040.js"),
   Chunk143941 = require("./143941.jsx"),
-  Chunk619550 = require("./619550.js");
-let s = e => {
+  Chunk652100 = require("./652100.js");
+let o = e => {
     let {
       product: t,
       selectedVariantIndex: n,
@@ -20,7 +20,7 @@ let s = e => {
       product: t,
       selectedVariantIndex: n,
       isCardHovered: l,
-      className: o.wishlistButton
+      className: s.wishlistButton
     })
   },
   c = e => {
@@ -28,10 +28,10 @@ let s = e => {
       skuId: t,
       selectedVariantIndex: n,
       isCardHovered: a
-    } = e, o = (0, l.Y)({
+    } = e, s = (0, l.Y)({
       location: "ProductWishlistButton"
     }), c = (0, i.LJ)(t);
-    return null != c && o ? (0, r.jsx)(s, {
+    return null != c && s ? (0, r.jsx)(o, {
       product: c,
       selectedVariantIndex: n,
       isCardHovered: a

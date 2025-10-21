@@ -38,11 +38,11 @@ let f = e => {
       }
     })
   }
-  return (0, a.EQ)([n, b > 1]).with(["card", true], () => null != p && p === i.z.HERO ? y(d.intl.formatToPlainString(d.t.Io7ozs, {
+  return (0, a.EQ)([n, b > 1]).with(["card", true], () => null != p && p === i.z.HERO ? y(d.intl.formatToPlainString(d.t.Io7ozn, {
     days: b
-  })) : null).with(["banner", true], () => y(d.intl.formatToPlainString(d.t["8gsP5O"], {
+  })) : null).with(["banner", true], () => y(d.intl.formatToPlainString(d.t["8gsP5M"], {
     days: b
-  }))).with(["modal", true], () => y(d.intl.formatToPlainString(d.t.Io7ozs, {
+  }))).with(["modal", true], () => y(d.intl.formatToPlainString(d.t.Io7ozn, {
     days: b
-  }))).otherwise(() => y(d.intl.string(d.t.Bc13HB)))
+  }))).otherwise(() => y(d.intl.string(d.t.Bc13HF)))
 }

@@ -16,7 +16,7 @@ var Chunk704215 = require("./704215.js"),
   Chunk987650 = require("./987650.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk892701 = require("./892701.js");
+  Chunk74912 = require("./74912.js");
 
 function f() {
   let e = (0, Chunk809357.Z)({
@@ -55,7 +55,7 @@ function g(e) {
         })
       }), (0, i.jsx)(s.Text, {
         variant: "text-sm/normal",
-        children: p.intl.string(p.t.EFRNtL)
+        children: p.intl.string(p.t.EFRNtK)
       })]
     }),
     onDismissClick: (e, n) => {

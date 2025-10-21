@@ -1,4 +1,4 @@
-/** Chunk was on 63962 **/
+/** Chunk was on 91053 **/
 /** chunk id: 651612, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk918559 = require("./918559.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk664131 = require("./664131.js");
+  Chunk332139 = require("./332139.js");
 
 function _(e) {
   var {
@@ -39,12 +39,12 @@ function _(e) {
     }
     return i
   }(e, ["channelId", "className"]);
-  let j = i.useRef(null),
-    O = (0, a.e7)([f.ZP], () => f.ZP.getFocusedLayout() === g.MI.RESIZABLE),
+  let O = i.useRef(null),
+    j = (0, a.e7)([f.ZP], () => f.ZP.getFocusedLayout() === g.MI.RESIZABLE),
     x = i.useCallback(() => {
-      let e = O ? g.MI.NO_CHAT : g.MI.RESIZABLE;
+      let e = j ? g.MI.NO_CHAT : g.MI.RESIZABLE;
       (0, h.gC)(e)
-    }, [O]),
+    }, [j]),
     {
       unreadCount: v,
       mentionCount: C
@@ -65,17 +65,17 @@ function _(e) {
     }(t),
     I = i.useCallback(() => {
       var e;
-      null == (e = j.current) || e.focus()
+      null == (e = O.current) || e.focus()
     }, []);
   (0, p.yp)({
     event: m.CkL.FOCUS_CHAT_BUTTON,
     handler: I
   });
-  let S = O ? b.intl.string(b.t["5MstTk"]) : b.intl.string(b.t.kkKapK),
+  let S = j ? b.intl.string(b.t["5MstTl"]) : b.intl.string(b.t.kkKapG),
     E = [S];
-  C > 0 && E.push(b.intl.formatToPlainString(b.t["3l1GOz"], {
+  C > 0 && E.push(b.intl.formatToPlainString(b.t["3l1GOx"], {
     mentionCount: C
-  })), v > 0 && E.push(b.intl.string(b.t.x5zAGR));
+  })), v > 0 && E.push(b.intl.string(b.t.x5zAGZ));
   let Z = (0, a.e7)([f.ZP], () => f.ZP.getFocusedLayout()),
     P = C > 0 ? C : v,
     T = P > 0;
@@ -100,7 +100,7 @@ function _(e) {
       return e
     }({
       isTrayButton: true,
-      buttonRef: j,
+      buttonRef: O,
       onClick: x,
       label: S,
       "aria-label": E.join(", "),

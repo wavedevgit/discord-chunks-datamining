@@ -13,7 +13,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk496675 = require("./496675.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk102497 = require("./102497.js");
+  Chunk776873 = require("./776873.js");
 
 function p(e) {
   let {
@@ -40,17 +40,17 @@ function p(e) {
       color: "header-primary",
       variant: "heading-xl/semibold",
       className: g.title,
-      children: d.intl.string(d.t["WgZ+3N"])
+      children: d.intl.string(d.t["WgZ+3D"])
     }), (0, r.jsx)(l.Text, {
       color: "header-secondary",
       variant: "text-sm/normal",
       className: g.subtitle,
-      children: d.intl.string(d.t["v/S/PD"])
+      children: d.intl.string(d.t["v/S/PG"])
     }), p && (0, r.jsx)(l.Text, {
       color: "header-secondary",
       variant: "text-sm/normal",
       className: g.roleTip,
-      children: d.intl.format(d.t["K+DH2t"], {
+      children: d.intl.format(d.t["K+DH2o"], {
         onClick: () => {
           a.Z.open(n, u.pNK.ROLES), t()
         }

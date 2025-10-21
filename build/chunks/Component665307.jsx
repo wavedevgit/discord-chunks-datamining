@@ -30,7 +30,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk645818 = require("./645818.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk402723 = require("./402723.js");
+  Chunk117554 = require("./117554.js");
 
 function Z(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -91,10 +91,10 @@ let R = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
   },
   U = [{
     key: Chunk981631.iEv.NAME,
-    renderHeader: () => Chunk388032.intl.string(Chunk388032.t.dBfWfX),
+    renderHeader: () => Chunk388032.intl.string(Chunk388032.t.dBfWfc),
     sort: true,
-    cellClassName: Chunk402723.nameCell,
-    bodyCellClassName: Chunk402723.nameBodyCell,
+    cellClassName: Chunk117554.nameCell,
+    bodyCellClassName: Chunk117554.nameBodyCell,
     render: e => (0, i.jsxs)(E.Z, {
       align: E.Z.Align.CENTER,
       children: [(0, i.jsx)(v.Z, {
@@ -107,7 +107,7 @@ let R = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
           className: A.nameCellText,
           children: e.libraryApplication.getBranchedName(e.application)
         }), e.libraryApplication.hasFlag(j.eHb.PREMIUM) ? (0, i.jsxs)(d.u, {
-          text: x.intl.string(x.t.tG2SzM),
+          text: x.intl.string(x.t.tG2SzG),
           children: ["(", (0, i.jsx)(h.SrA, {
             size: "md",
             color: "currentColor",
@@ -118,29 +118,29 @@ let R = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
     })
   }, {
     key: Chunk981631.iEv.PLATFORM,
-    renderHeader: () => Chunk388032.intl.string(Chunk388032.t.YR4cHB),
+    renderHeader: () => Chunk388032.intl.string(Chunk388032.t.YR4cHH),
     sort: true,
-    cellClassName: Chunk402723.platformCell,
-    bodyCellClassName: Chunk402723.textCell,
+    cellClassName: Chunk117554.platformCell,
+    bodyCellClassName: Chunk117554.textCell,
     render(e) {
       let t = e.libraryApplication.getDistributor();
       return (0, i.jsx)(E.Z, {
         align: E.Z.Align.CENTER,
-        children: null != t ? j.EOG[t] : x.intl.string(x.t["F+l3Ji"])
+        children: null != t ? j.EOG[t] : x.intl.string(x.t["F+l3Jt"])
       })
     }
   }, {
     key: Chunk981631.iEv.LAST_PLAYED,
-    renderHeader: () => Chunk388032.intl.string(Chunk388032.t.FDDyjY),
+    renderHeader: () => Chunk388032.intl.string(Chunk388032.t.FDDyjS),
     sort: true,
-    cellClassName: Chunk402723.lastPlayedCell,
-    bodyCellClassName: Chunk402723.textCell,
+    cellClassName: Chunk117554.lastPlayedCell,
+    bodyCellClassName: Chunk117554.textCell,
     render(e) {
       let t;
-      return t = e.isRunning ? x.intl.string(x.t.Md326u) : e.isNew ? x.intl.string(x.t["+F0Tho"]) : 0 !== e.lastPlayed ? (0, i.jsx)(y.ZP, {
+      return t = e.isRunning ? x.intl.string(x.t.Md326p) : e.isNew ? x.intl.string(x.t["+F0Tho"]) : 0 !== e.lastPlayed ? (0, i.jsx)(y.ZP, {
         end: e.lastPlayed,
         location: y.ZP.Locations.GAME_LIBRARY_LAST_PLAYED
-      }) : x.intl.string(x.t.EoWLrq), (0, i.jsx)(E.Z, {
+      }) : x.intl.string(x.t.EoWLru), (0, i.jsx)(E.Z, {
         align: E.Z.Align.CENTER,
         className: o()({
           [A.lastPlayedCellNew]: e.isNew
@@ -151,7 +151,7 @@ let R = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
   }, {
     key: Chunk981631.iEv.ACTIONS,
     renderHeader: () => null,
-    cellClassName: Chunk402723.actionsCell,
+    cellClassName: Chunk117554.actionsCell,
     render(e, t, n) {
       var r, a;
       if (null == t) throw Error("No cell props defined.");
@@ -163,12 +163,12 @@ let R = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
             flag: j.eHb.PRIVATE,
             item: e,
             icon: h.kZF,
-            tooltip: x.intl.string(x.t.NozAoq)
+            tooltip: x.intl.string(x.t.NozAop)
           }), (0, i.jsx)(k, {
             flag: j.eHb.OVERLAY_DISABLED,
             item: e,
             icon: h.o8v,
-            tooltip: x.intl.string(x.t.Az9eqq)
+            tooltip: x.intl.string(x.t.Az9eqn)
           }), (0, i.jsx)(P.Z, {
             className: o()(A.settingIcon, {
               [A.hidden]: !e.supportsCloudSync
@@ -319,23 +319,23 @@ class B extends(r = Chunk647438.PureComponent) {
         filterQuery: n
       } = this.props,
       r = exports.length > 0;
-    return r ? null : (e = "" !== require ? Chunk388032.intl.format(Chunk388032.t["4Q1TAg"], {
+    return r ? null : (e = "" !== require ? Chunk388032.intl.format(Chunk388032.t["4Q1TAr"], {
       query: require
-    }) : Chunk388032.intl.string(Chunk388032.t["0Y+0PT"]), (0, Chunk951288.jsxs)("div", {
-      className: r ? Chunk402723.emptyStateSmall : Chunk402723.emptyStateLarge,
+    }) : Chunk388032.intl.string(Chunk388032.t["0Y+0PY"]), (0, Chunk951288.jsxs)("div", {
+      className: r ? Chunk117554.emptyStateSmall : Chunk117554.emptyStateLarge,
       children: [(0, Chunk951288.jsx)("div", {
-        className: Chunk402723.emptyWumpus
+        className: Chunk117554.emptyWumpus
       }), (0, Chunk951288.jsx)(Chunk600164.Z, {
         grow: 0,
         shrink: +!!r,
         direction: Chunk600164.Z.Direction.VERTICAL,
         children: (0, Chunk951288.jsxs)("div", {
-          className: Chunk402723.emptyStateText,
+          className: Chunk117554.emptyStateText,
           children: [(0, Chunk951288.jsx)("div", {
-            className: Chunk402723.emptyStateHeader,
-            children: Chunk388032.intl.string(Chunk388032.t.Lw8X2t)
+            className: Chunk117554.emptyStateHeader,
+            children: Chunk388032.intl.string(Chunk388032.t.Lw8X2j)
           }), (0, Chunk951288.jsx)("div", {
-            className: Chunk402723.emptyStateDescription,
+            className: Chunk117554.emptyStateDescription,
             children: module
           })]
         })
@@ -359,12 +359,12 @@ class B extends(r = Chunk647438.PureComponent) {
         data: require,
         sortData: false,
         rowComponent: G,
-        className: Chunk402723.table,
-        headerClassName: Chunk120356 ? Chunk402723.stickyHeader : Chunk402723.header,
-        headerCellClassName: Chunk402723.headerCell,
-        sortedHeaderCellClassName: Chunk402723.headerCellSorted,
-        bodyCellClassName: Chunk402723.bodyCell,
-        rowClassName: Chunk402723.row,
+        className: Chunk117554.table,
+        headerClassName: Chunk120356 ? Chunk117554.stickyHeader : Chunk117554.header,
+        headerCellClassName: Chunk117554.headerCell,
+        sortedHeaderCellClassName: Chunk117554.headerCellSorted,
+        bodyCellClassName: Chunk117554.bodyCell,
+        rowClassName: Chunk117554.row,
         sortKey: module,
         sortDirection: exports,
         stickyHeader: Chunk120356,

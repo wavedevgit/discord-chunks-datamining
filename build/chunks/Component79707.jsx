@@ -1,4 +1,4 @@
-/** Chunk was on 84283 **/
+/** Chunk was on 69844 **/
 /** chunk id: 79707, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => l
@@ -17,7 +17,7 @@ function l(e) {
   } = e;
   return (0, r.jsx)(a.v2r, {
     navId: "global-discovery-tabs-overflow-menu",
-    "aria-label": i.intl.string(i.t.riPnr6),
+    "aria-label": i.intl.string(i.t.riPnr0),
     hideScroller: true,
     onClose: s,
     onSelect: s,

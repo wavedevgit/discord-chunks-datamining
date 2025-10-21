@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk418128 = require("./418128.js"),
+  Chunk459931 = require("./459931.js"),
   Chunk740353 = require("./740353.js");
 let v = "VoiceChannelStatusModal",
   I = 500;
@@ -90,13 +90,13 @@ function T(e) {
       shouldClear: false,
       shouldRefocus: true
     })), V = (0, r.jsx)(a.gNt, {
-      label: b.intl.string(b.t.Fq5lwM),
+      label: b.intl.string(b.t.Fq5lwN),
       errorMessage: D,
       children: (0, r.jsx)(_.ZP, {
         innerClassName: y.textArea,
         textValue: N,
         richValue: G,
-        placeholder: b.intl.formatToPlainString(b.t.DUXxBg, {
+        placeholder: b.intl.formatToPlainString(b.t.DUXxBh, {
           channelName: t.name
         }),
         focused: true,
@@ -120,17 +120,17 @@ function T(e) {
       type: "image",
       src: O
     },
-    title: b.intl.string(b.t["5CyJBQ"]),
-    subtitle: b.intl.string(b.t.NRBYjo),
+    title: b.intl.string(b.t["5CyJBd"]),
+    subtitle: b.intl.string(b.t.NRBYju),
     actions: [{
       variant: "secondary",
-      text: b.intl.string(b.t["ETE/oK"]),
+      text: b.intl.string(b.t["ETE/oC"]),
       onClick: S
     }, {
       variant: "primary",
       loading: P,
       disabled: M,
-      text: b.intl.string(b.t.XqK2Iy),
+      text: b.intl.string(b.t.XqK2I2),
       onClick: U
     }],
     children: V

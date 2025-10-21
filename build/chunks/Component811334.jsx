@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk911969 = require("./911969.js"),
   Chunk937615 = require("./937615.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk181459 = require("./181459.js");
+  Chunk704442 = require("./704442.js");
 let f = Chunk647438.createContext({
     isPremiumRebrand: false
   }),
@@ -104,7 +104,7 @@ function g(e) {
     children: [(0, r.jsx)(m, {
       label: t,
       value: (0, r.jsxs)(r.Fragment, {
-        children: [h ? u.intl.formatToPlainString(u.t.hXcaLS, {
+        children: [h ? u.intl.formatToPlainString(u.t.hXcaLT, {
           price: (0, c.T4)(0, f)
         }) : n, null != y ? (0, r.jsxs)("div", {
           className: d.rowPercentDiscount,
@@ -115,7 +115,7 @@ function g(e) {
     }), h && (0, r.jsx)(s.Text, {
       variant: "text-md/medium",
       className: d.trialEndPrice,
-      children: u.intl.format(u.t.v9QeOD, {
+      children: u.intl.format(u.t.v9QeON, {
         price: O
       })
     }), null != y ? (0, r.jsxs)("div", {
@@ -123,7 +123,7 @@ function g(e) {
       children: ["(", null != o && null != p ? (0, c.og)(O, o, p) : O, ")"]
     }) : null, null != b ? (0, r.jsx)("div", {
       className: d.entitlementDiscountRow,
-      children: u.intl.string(u.t.A7Hpfn)
+      children: u.intl.string(u.t.A7Hpfs)
     }) : null]
   })
 }

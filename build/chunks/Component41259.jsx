@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk268685 = require("./268685.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk972731 = require("./972731.js");
+  Chunk604483 = require("./604483.js");
 
 function E(e) {
   let {
@@ -36,7 +36,7 @@ function E(e) {
     children: [(0, r.jsx)(s.x, {
       variant: "text-lg/normal",
       color: "header-secondary",
-      children: m.intl.string(m.t.uT1CPT)
+      children: m.intl.string(m.t.uT1CPa)
     }), (0, r.jsx)(a.X6q, {
       variant: "heading-xxl/bold",
       color: "header-primary",
@@ -57,7 +57,7 @@ function E(e) {
     }) : (0, r.jsx)(s.x, {
       variant: "text-md/normal",
       color: "header-secondary",
-      children: m.intl.string(m.t["X+Fdpq"])
+      children: m.intl.string(m.t["X+Fdpo"])
     })]
   }), [b.length, n, E, v]);
   return (0, r.jsxs)("header", {
@@ -90,7 +90,7 @@ function E(e) {
       children: (0, r.jsxs)(s.x, {
         variant: "text-sm/normal",
         color: "text-muted",
-        children: [m.intl.format(m.t.qRvpYW, {
+        children: [m.intl.format(m.t.qRvpYU, {
           userHook: () => (0, r.jsxs)(s.x, {
             className: g.currentUserTag,
             variant: "text-sm/normal",
@@ -104,7 +104,7 @@ function E(e) {
           tag: "a",
           className: g.logoutLink,
           onClick: () => (0, d.c$)(O, "oauth2_logout"),
-          children: m.intl.string(m.t["yV/hjI"])
+          children: m.intl.string(m.t["yV/hjC"])
         })]
       })
     }) : null]

@@ -1,4 +1,4 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 600084, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => F
@@ -40,8 +40,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk40036 = require("./40036.js"),
-  Chunk10198 = require("./10198.js");
+  Chunk963392 = require("./963392.js"),
+  Chunk197571 = require("./197571.js");
 
 function V(e) {
   let {
@@ -91,7 +91,7 @@ function F(e) {
   } = (0, l.cj)([_.Z], () => ({
     authorizedAppToken: _.Z.getNewestTokenForApplication(null == G ? true : G.id),
     authorizedAppsFetchState: _.Z.getFetchState()
-  })), K = c.Z.useExperiment({
+  })), q = c.Z.useExperiment({
     location: "EmptyMessages"
   }).enabledDesktop;
   if (r.useEffect(() => {
@@ -104,7 +104,7 @@ function F(e) {
     channel: p
   }) : (0, i.jsx)(N.Z, {
     channel: p,
-    children: U.intl.string(U.t.Rzvnio)
+    children: U.intl.string(U.t.Rzvnig)
   });
   if (v === D.d4z.DM) {
     let e;
@@ -120,7 +120,7 @@ function F(e) {
         application: G,
         channel: p,
         oauth2Token: z
-      }), K && (0, i.jsx)(f.Z, {
+      }), q && (0, i.jsx)(f.Z, {
         channel: p
       })]
     })) : e = (0, i.jsx)(E.Z, {
@@ -145,11 +145,11 @@ function F(e) {
     if (p.isManaged()) return (0, i.jsxs)(S.ZP, {
       channelId: p.id,
       children: [(0, i.jsx)(S.Ot, {
-        children: U.intl.format(U.t.I3R7Vl, {
+        children: U.intl.format(U.t.I3R7Vn, {
           channelName: y
         })
       }), (0, i.jsx)(S.jz, {
-        children: U.intl.string(U.t.M8Ao6O)
+        children: U.intl.string(U.t.M8Ao6I)
       })]
     });
     else if (p.hasFlag(k.zZ.IS_JOIN_REQUEST_INTERVIEW_CHANNEL)) return (0, i.jsx)(I.Z, {
@@ -157,7 +157,7 @@ function F(e) {
   });
   else return (0, i.jsx)(N.Z, {
     channel: p,
-    children: U.intl.format(U.t.MFwcqK, {
+    children: U.intl.format(U.t.MFwcqO, {
       name: y
     })
   });
@@ -167,7 +167,7 @@ function F(e) {
   }) : (0, i.jsx)(S.ZP, {
     channelId: p.id,
     children: (0, i.jsx)(S.jz, {
-      children: U.intl.format(U.t.hPVEQE, {
+      children: U.intl.format(U.t.hPVEQG, {
         channelName: y
       })
     })

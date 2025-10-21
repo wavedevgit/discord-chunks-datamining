@@ -32,8 +32,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk689079 = require("./689079.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk387206 = require("./387206.js"),
-  Chunk613321 = require("./613321.js");
+  Chunk202874 = require("./202874.js"),
+  Chunk698342 = require("./698342.js");
 let Z = "placeholder",
   w = [, , , , , ].fill(Z);
 
@@ -104,22 +104,22 @@ function M() {
       }
     }), []),
     r = Chunk647438.useMemo(() => (0, Chunk951288.jsxs)("div", {
-      className: Chunk613321.commandTextContainerPlaceholder,
+      className: Chunk698342.commandTextContainerPlaceholder,
       children: [(0, Chunk951288.jsx)("div", {
-        className: Chunk387206.textPlaceholder,
+        className: Chunk202874.textPlaceholder,
         style: exports,
         children: (0, Chunk951288.jsx)(Chunk481060.Text, {
-          className: Chunk387206.hidden,
+          className: Chunk202874.hidden,
           variant: "text-sm/semibold",
           color: "header-primary",
           lineClamp: 1,
           children: "_"
         })
       }), (0, Chunk951288.jsx)("div", {
-        className: Chunk387206.textPlaceholder,
+        className: Chunk202874.textPlaceholder,
         style: require,
         children: (0, Chunk951288.jsx)(Chunk481060.Text, {
-          className: Chunk387206.hidden,
+          className: Chunk202874.hidden,
           variant: "text-xs/medium",
           color: "text-muted",
           lineClamp: 1,
@@ -128,8 +128,8 @@ function M() {
       })]
     }), [exports, require]);
   return (0, Chunk951288.jsx)("div", {
-    className: a()(Chunk613321.command, Chunk387206.loadingAnimation, {
-      [Chunk387206.noAnimation]: module
+    className: a()(Chunk698342.command, Chunk202874.loadingAnimation, {
+      [Chunk202874.noAnimation]: module
     }),
     children: Chunk120356
   })
@@ -177,10 +177,10 @@ function U(e) {
     onClick: d,
     disabled: o,
     variant: "secondary",
-    "aria-label": T.intl.formatToPlainString(T.t.UXw6W1, {
+    "aria-label": T.intl.formatToPlainString(T.t.UXw6W2, {
       commandName: n.untranslatedName
     }),
-    text: T.intl.string(T.t.TXNS7e),
+    text: T.intl.string(T.t.TXNS7S),
     icon: s.U,
     iconPosition: "end",
     size: "md"
@@ -268,13 +268,13 @@ function H(e) {
       context: n,
       section: f,
       commands: b,
-      headerName: T.intl.string(T.t.acSE0t),
+      headerName: T.intl.string(T.t.acSE0h),
       sectionName: a
     }), (0, i.jsx)(D, {
       context: n,
       section: f,
       commands: m ? w : x,
-      headerName: T.intl.string(T.t.DUU9Ly),
+      headerName: T.intl.string(T.t.DUU9L3),
       sectionName: a,
       children: g && (0, i.jsx)(O.Z, {
         sortOrder: v,

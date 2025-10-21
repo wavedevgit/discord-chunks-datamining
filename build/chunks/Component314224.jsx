@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 314224, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk620436 = require("./620436.jsx"),
   Chunk273504 = require("./273504.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk609637 = require("./609637.js");
+  Chunk145468 = require("./145468.js");
 
 function f(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -71,7 +71,7 @@ function b(e) {
     className: p.cardContentsContainer,
     children: [(0, r.jsxs)(d.Z, {
       step: 1,
-      header: m.intl.string(m.t["ue+tnZ"]),
+      header: m.intl.string(m.t["ue+tnb"]),
       children: [(0, r.jsx)(o.Z, {
         onChangeText: O,
         maxWordCount: g.RH,
@@ -90,7 +90,7 @@ function b(e) {
       type: u.Z.Type.ARROW_DOWN
     }), (0, r.jsx)(d.Z, {
       step: 2,
-      header: m.intl.string(m.t["18TOiY"]),
+      header: m.intl.string(m.t["18TOiQ"]),
       children: (0, r.jsx)(a.Z, {
         rule: _,
         onChangeRule: C
@@ -99,7 +99,7 @@ function b(e) {
       type: u.Z.Type.CROSS
     }), (0, r.jsx)(d.Z, {
       step: 3,
-      header: m.intl.string(m.t.eq3gjo),
+      header: m.intl.string(m.t.eq3gjh),
       children: (0, r.jsx)(c.Z, {
         rule: _,
         onChangeRule: C

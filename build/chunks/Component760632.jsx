@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 760632, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -23,27 +23,27 @@ function m(e) {
     label: p
   } = e, f = i.useMemo(() => [{
     value: o,
-    label: s.intl.formatToPlainString(s.t.iXLF9f, {
+    label: s.intl.formatToPlainString(s.t.iXLF9W, {
       minutes: 1
     })
   }, {
     value: c,
-    label: s.intl.formatToPlainString(s.t.iXLF9f, {
+    label: s.intl.formatToPlainString(s.t.iXLF9W, {
       minutes: 5
     })
   }, {
     value: d,
-    label: s.intl.formatToPlainString(s.t.iXLF9f, {
+    label: s.intl.formatToPlainString(s.t.iXLF9W, {
       minutes: 15
     })
   }, {
     value: u,
-    label: s.intl.formatToPlainString(s.t.iXLF9f, {
+    label: s.intl.formatToPlainString(s.t.iXLF9W, {
       minutes: 30
     })
   }, {
     value: g,
-    label: s.intl.formatToPlainString(s.t.xCjYxM, {
+    label: s.intl.formatToPlainString(s.t.xCjYxK, {
       hours: 1
     })
   }], []), h = i.useCallback(e => {

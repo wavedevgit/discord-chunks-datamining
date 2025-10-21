@@ -9,8 +9,8 @@ var Chunk846027 = require("./846027.js"),
 
 function l(e, t) {
   if (e) return void a.Z.show({
-    title: c.intl.string(c.t.QZ7WSU),
-    body: c.intl.string(c.t.Tl9JpK)
+    title: c.intl.string(c.t.QZ7WSS),
+    body: c.intl.string(c.t.Tl9JpL)
   });
   n.Z.toggleSelfDeaf({
     location: t

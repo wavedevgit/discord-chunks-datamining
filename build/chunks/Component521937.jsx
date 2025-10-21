@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk511540 = require("./511540.js"),
   Chunk828878 = require("./828878.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk907441 = require("./907441.js");
+  Chunk962514 = require("./962514.js");
 
 function p(e) {
   let {
@@ -38,16 +38,16 @@ function p(e) {
       children: [(0, r.jsx)(s.Heading, {
         variant: "heading-xl/extrabold",
         className: f.text,
-        children: u.intl.string(u.t.KYPNUl)
+        children: u.intl.string(u.t.KYPNUv)
       }), (0, r.jsxs)(s.Kqy, {
         gap: 24,
         children: [(0, r.jsx)(s.Text, {
           variant: "text-md/medium",
           color: "header-secondary",
           className: f.text,
-          children: u.intl.string(u.t.xRHk7e)
+          children: u.intl.string(u.t.xRHk7f)
         }), (0, r.jsx)(s.oil, {
-          placeholder: u.intl.formatToPlainString(u.t["0tbz6+"], {
+          placeholder: u.intl.formatToPlainString(u.t["0tbz6x"], {
             number: d.A.USER_CODE_LENGTH
           }),
           maxLength: d.A.USER_CODE_LENGTH,
@@ -62,7 +62,7 @@ function p(e) {
     }), (0, r.jsx)(s.Button, {
       fullWidth: true,
       variant: "primary",
-      text: u.intl.string(u.t["3PatS0"]),
+      text: u.intl.string(u.t["3PatSz"]),
       onClick: g,
       loading: b,
       disabled: p.length !== d.A.USER_CODE_LENGTH

@@ -24,7 +24,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk95291 = require("./95291.jsx"),
   Chunk390966 = require("./390966.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk726768 = require("./726768.js");
+  Chunk396934 = require("./396934.js");
 
 function O(e) {
   let {
@@ -59,7 +59,7 @@ function O(e) {
     }), (0, r.jsx)("div", {
       className: y.spacer
     }), null != n && (0, r.jsx)(s.u, {
-      text: b.intl.formatToPlainString(b.t["+3iypa"], {
+      text: b.intl.formatToPlainString(b.t["+3iypQ"], {
         username: null != S ? S : u.ZP.getName(n)
       }),
       children: (0, r.jsx)(l.qEK, {
@@ -69,7 +69,7 @@ function O(e) {
         className: y.creator
       })
     }), (0, r.jsx)(s.u, {
-      text: b.intl.formatToPlainString(b.t["+DLsDw"], {
+      text: b.intl.formatToPlainString(b.t["+DLsD8"], {
         count: I
       }),
       children: (0, r.jsxs)("div", {

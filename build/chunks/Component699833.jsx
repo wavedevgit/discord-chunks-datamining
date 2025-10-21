@@ -12,7 +12,7 @@ var Chunk913527 = require("./913527.js"),
   Chunk481060 = require("./481060.js"),
   Chunk800530 = require("./800530.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk244209 = require("./244209.js");
+  Chunk832467 = require("./832467.js");
 let d = e => a()().diff(a().unix(e), "days");
 
 function f(e) {
@@ -49,13 +49,13 @@ function f(e) {
           color: o.Z.colors.STATUS_DANGER
         }), (0, r.jsx)(s.Text, {
           variant: "text-md/semibold",
-          children: c.intl.string(c.t["4CxGXl"])
+          children: c.intl.string(c.t["4CxGXi"])
         })]
       }), (0, r.jsx)("div", {
         className: u.incidentTiming,
         children: (0, r.jsx)(s.Text, {
           variant: "text-xs/medium",
-          children: c.intl.format(c.t.eevFb2, {
+          children: c.intl.format(c.t.eevFb6, {
             daysAgo: d(E)
           })
         })
@@ -64,13 +64,13 @@ function f(e) {
         children: (0, r.jsx)(s.Text, {
           variant: "text-md/normal",
           color: "text-muted",
-          children: c.intl.string(c.t["5CLb0N"])
+          children: c.intl.string(c.t["5CLb0A"])
         })
       })]
     }), (0, r.jsx)("div", {
       className: u.footerContainer,
       children: (0, r.jsx)(s.Avr, {
-        text: c.intl.string(c.t.zKnzws),
+        text: c.intl.string(c.t.zKnzwm),
         variant: "secondary"
       })
     })]

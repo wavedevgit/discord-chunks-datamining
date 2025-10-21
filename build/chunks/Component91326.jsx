@@ -10,7 +10,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk862099 = require("./862099.jsx"),
   Chunk938475 = require("./938475.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk626095 = require("./626095.js");
+  Chunk561223 = require("./561223.js");
 let u = function(e) {
   let {
     name: t,
@@ -22,9 +22,9 @@ let u = function(e) {
     return t
   }), [n]), d = (0, l.KS)(n);
   return (0, r.jsx)(a.gt, {
-    heading: s.intl.string(s.t["X2K3//"]),
+    heading: s.intl.string(s.t["X2K3/4"]),
     topic: t,
-    location: s.intl.string(s.t.LZA6NT),
+    location: s.intl.string(s.t.LZA6Na),
     locationIcon: null != d ? (0, r.jsx)(d, {
       size: "xs",
       color: "currentColor",

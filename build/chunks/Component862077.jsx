@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk907179 = require("./907179.jsx"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk836061 = require("./836061.js"),
+  Chunk637079 = require("./637079.js"),
   Chunk609440 = require("./609440.js");
 
 function v(e, t, n) {
@@ -104,10 +104,10 @@ function T(e) {
                   guildId: n
                 }), (0, r.jsx)(o.Heading, {
                   variant: "heading-lg/bold",
-                  children: b.intl.string(b.t.b33pLC)
+                  children: b.intl.string(b.t.b33pLD)
                 }), (0, r.jsx)(o.Text, {
                   variant: "text-sm/medium",
-                  children: b.intl.format(w ? b.t["8F+WNz"] : b.t["/cZp5u"], {
+                  children: b.intl.format(w ? b.t["8F+WNz"] : b.t["/cZp5s"], {
                     username: u.ZP.getName(n, T, t)
                   })
                 })]

@@ -16,7 +16,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk496675 = require("./496675.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk910565 = require("./910565.js");
+  Chunk880033 = require("./880033.js");
 
 function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -86,14 +86,14 @@ function b(e) {
     },
     children: e => (0, r.jsx)(o.u, {
       asContainer: true,
-      text: _.intl.string(_.t.icyMgY),
+      text: _.intl.string(_.t.icyMgc),
       "aria-label": false,
       shouldShow: h > 0,
       children: (0, r.jsxs)(s.P3F, E(m({
         innerRef: y,
         className: p.button,
         role: "button",
-        "aria-label": _.intl.string(_.t.icyMgY)
+        "aria-label": _.intl.string(_.t.icyMgc)
       }, e), {
         children: [(0, r.jsx)(s.qJs, {
           size: "xs",
@@ -101,7 +101,7 @@ function b(e) {
         }), 0 === h && (0, r.jsx)(s.Text, {
           variant: "text-xs/normal",
           color: "none",
-          children: _.intl.string(_.t.icyMgY)
+          children: _.intl.string(_.t.icyMgc)
         })]
       }))
     })

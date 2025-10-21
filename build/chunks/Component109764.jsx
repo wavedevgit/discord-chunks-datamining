@@ -18,7 +18,7 @@ function h(t, n, e) {
   let h = (0, a.e7)([s.Z], () => null != t ? s.Z.getChannel(t.parent_id) : null);
   return null == t ? null : (0, i.jsx)(l.sNh, {
     id: "channel-copy-link",
-    label: c.intl.string(c.t.WqhZsr),
+    label: c.intl.string(c.t.WqhZss),
     action: () => {
       t.isForumPost() && (0, r.B)({
         postId: t.id,

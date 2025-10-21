@@ -24,7 +24,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk937615 = require("./937615.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk553869 = require("./553869.js");
+  Chunk221152 = require("./221152.js");
 let v = (e, t) => {
     let n = null != t && e.productLine === b.POd.COLLECTIBLES && t.type !== l.Z.BUNDLE,
       r = e.productLine === b.POd.SOCIAL_LAYER_GAME_ITEM;
@@ -169,7 +169,7 @@ function w(e) {
     }), f && (0, r.jsxs)(T, {
       children: ["THREE_COLUMN" === o && (0, r.jsx)(S, {}), (0, r.jsx)(A, {
         className: O.invoiceRegularText,
-        children: y.intl.string(y.t["/I8zmJ"])
+        children: y.intl.string(y.t["/I8zmP"])
       }), (0, r.jsx)(C, {
         className: O.invoiceRegularText,
         children: (0, E.T4)(n.tax, n.currency)
@@ -179,7 +179,7 @@ function w(e) {
         className: O.totalRow,
         children: [(0, r.jsx)(S, {
           className: O.invoiceRegularText,
-          children: y.intl.format(y.t["+B5KfH"], {})
+          children: y.intl.format(y.t["+B5KfG"], {})
         }), "THREE_COLUMN" === o && (0, r.jsx)(A, {}), (0, r.jsx)(C, {
           className: O.invoiceRegularText,
           children: (0, E.T4)(n.amount, n.currency)

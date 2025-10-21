@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk273504 = require("./273504.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk31593 = require("./31593.js");
+  Chunk335260 = require("./335260.js");
 
 function h(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -96,15 +96,15 @@ function E(e, t) {
           keywordFilter: [...null != (r = null == (n = t.triggerMetadata) ? true : n.keywordFilter) ? r : [], e]
         })
       });
-      await S(i, x), N(i), null != _ ? (0, l.showToast)((0, l.createToast)(y.intl.string(y.t.wH6L0t), l.ToastType.FAILURE)) : (0, l.showToast)((0, l.createToast)(y.intl.string(y.t["0rdYm5"]), l.ToastType.SUCCESS))
+      await S(i, x), N(i), null != _ ? (0, l.showToast)((0, l.createToast)(y.intl.string(y.t.wH6L0r), l.ToastType.FAILURE)) : (0, l.showToast)((0, l.createToast)(y.intl.string(y.t["0rdYm2"]), l.ToastType.SUCCESS))
     }, G = (0, r.jsx)(l.sNh, {
       id: "automod-rules-loading",
-      label: y.intl.string(y.t.ZTNur6)
+      label: y.intl.string(y.t.ZTNur7)
     });
   return I || (G = (0, r.jsxs)(r.Fragment, {
     children: [D && (0, r.jsx)(l.sNh, {
       id: "add-first-rule",
-      label: y.intl.string(y.t.f72Zqa),
+      label: y.intl.string(y.t.f72Zqb),
       action: L,
       disabled: E
     }), x.map(e => {
@@ -136,14 +136,14 @@ function E(e, t) {
     }), M && (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(l.Clw, {}), (0, r.jsx)(l.sNh, {
         id: "add-another-rule",
-        label: y.intl.string(y.t["0K5jDA"]),
+        label: y.intl.string(y.t["0K5jDE"]),
         action: L,
         disabled: E
       })]
     })]
   })), (0, r.jsx)(l.sNh, {
     id: "guild-automod-add-selection",
-    label: y.intl.formatToPlainString(y.t.Kkjv1t, {
+    label: y.intl.formatToPlainString(y.t.Kkjv1m, {
       keywordCount: R
     }),
     onFocus: () => {

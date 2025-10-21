@@ -1,4 +1,4 @@
-/** Chunk was on 90020 **/
+/** Chunk was on 95215 **/
 /** chunk id: 224068, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -12,7 +12,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk979554 = require("./979554.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk765413 = require("./765413.js");
+  Chunk351768 = require("./351768.js");
 
 function d(e) {
   var t;
@@ -20,7 +20,7 @@ function d(e) {
     product: n,
     isDarkText: i = false,
     isOrbExclusive: d = false
-  } = e, m = (t = n.type, d ? c.intl.string(c.t["0TmQRE"]) : (0, l.EQ)(t).with(o.Z.AVATAR_DECORATION, () => c.intl.string(c.t["7v0T9P"])).with(o.Z.PROFILE_EFFECT, () => c.intl.string(c.t.wR5wOj)).otherwise(() => null));
+  } = e, m = (t = n.type, d ? c.intl.string(c.t["0TmQRG"]) : (0, l.EQ)(t).with(o.Z.AVATAR_DECORATION, () => c.intl.string(c.t["7v0T9P"])).with(o.Z.PROFILE_EFFECT, () => c.intl.string(c.t.wR5wOo)).otherwise(() => null));
   return null === m ? null : (0, r.jsx)(s.Text, {
     variant: "text-xxs/normal",
     className: a()([u.container, i ? u.darkText : u.lightText]),

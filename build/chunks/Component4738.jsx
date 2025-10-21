@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk889963 = require("./889963.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk384 = require("./384.js");
+  Chunk18039 = require("./18039.js");
 
 function f(e) {
   let {
@@ -93,7 +93,7 @@ function _(e) {
         className: d.iconCaret,
         "aria-hidden": true
       }), (0, r.jsx)("span", {
-        children: u.intl.string(u.t["13/7kZ"])
+        children: u.intl.string(u.t["13/7kX"])
       })]
     }, t)
   }
@@ -113,7 +113,7 @@ function _(e) {
       disabled: n,
       rel: "next",
       children: [(0, r.jsx)("span", {
-        children: u.intl.string(u.t.PDTjLC)
+        children: u.intl.string(u.t.PDTjLN)
       }), (0, r.jsx)(l.Fbu, {
         size: "md",
         color: "currentColor",
@@ -129,7 +129,7 @@ function _(e) {
         [d.activeButton]: e.selected
       }),
       onClick: e.selected ? true : e.navigateToPage,
-      "aria-label": u.intl.formatToPlainString(u.t.IGMs8f, {
+      "aria-label": u.intl.formatToPlainString(u.t.IGMs8S, {
         pageNumber: e.targetPage
       }),
       "aria-current": e.selected ? "page" : true,

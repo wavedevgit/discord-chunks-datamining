@@ -1,4 +1,4 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 603490, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -34,7 +34,7 @@ function c(e) {
     clickTrap: true,
     children: () => (0, i.jsx)(o.sF, {
       ref: p,
-      label: s.intl.string(s.t.lfIHs7),
+      label: s.intl.string(s.t.lfIHs4),
       icon: a.EO4,
       onClick: c
     }, "add-reaction")

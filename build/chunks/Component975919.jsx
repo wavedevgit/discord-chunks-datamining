@@ -1,4 +1,4 @@
-/** Chunk was on 67261 **/
+/** Chunk was on 26196 **/
 /** chunk id: 975919, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   _: () => d
@@ -10,7 +10,7 @@ var Chunk793030 = require("./793030.js"),
   Chunk526689 = require("./526689.jsx"),
   Chunk229373 = require("./229373.jsx"),
   Chunk518027 = require("./518027.jsx"),
-  Chunk684555 = require("./684555.js"),
+  Chunk687101 = require("./687101.js"),
   Chunk388032 = require("./388032.jsx");
 let d = e => {
   let {
@@ -22,10 +22,10 @@ let d = e => {
     canSend: b
   } = (0, o.C$)();
   return (0, r.jsx)(a.Modal, {
-    title: u.intl.string(c.default.zgFs8P),
+    title: u.intl.string(c.default.zgFs8C),
     actions: [{
       variant: "primary",
-      text: u.intl.string(u.t.TXNS7e),
+      text: u.intl.string(u.t.TXNS7S),
       onClick: d,
       loading: f,
       disabled: !b()

@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk957825 = require("./957825.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk875825 = require("./875825.js");
+  Chunk422840 = require("./422840.js");
 
 function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -152,33 +152,33 @@ function L(e, t, n, i, a, o) {
 function x(e) {
   switch (e.categoryInfo.type) {
     case g.bg.FAVORITES:
-      return v.intl.string(v.t.k8fFjo);
+      return v.intl.string(v.t.k8fFjp);
     case g.bg.RECENTLY_HEARD:
-      return v.intl.string(v.t["8i/+SE"]);
+      return v.intl.string(v.t["8i/+SA"]);
     case g.bg.FREQUENTLY_USED:
-      return v.intl.string(v.t["+cGVV1"]);
+      return v.intl.string(v.t["+cGVV6"]);
     case g.bg.GUILD:
       return (0, r.jsx)(_.K, {
         guild: e.categoryInfo.guild,
         includeActivity: false
       });
     case g.bg.DEFAULTS:
-      return v.intl.string(v.t.Rtvk9f)
+      return v.intl.string(v.t.Rtvk9X)
   }
 }
 
 function M(e) {
   switch (e.categoryInfo.type) {
     case g.bg.FAVORITES:
-      return v.intl.string(v.t.k8fFjo);
+      return v.intl.string(v.t.k8fFjp);
     case g.bg.RECENTLY_HEARD:
-      return v.intl.string(v.t["8i/+SE"]);
+      return v.intl.string(v.t["8i/+SA"]);
     case g.bg.FREQUENTLY_USED:
-      return v.intl.string(v.t["+cGVV1"]);
+      return v.intl.string(v.t["+cGVV6"]);
     case g.bg.GUILD:
       return e.categoryInfo.guild.name;
     case g.bg.DEFAULTS:
-      return v.intl.string(v.t.Rtvk9f)
+      return v.intl.string(v.t.Rtvk9X)
   }
 }
 

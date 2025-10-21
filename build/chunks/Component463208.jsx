@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk74655 = require("./74655.jsx"),
   Chunk897037 = require("./897037.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk693697 = require("./693697.js");
+  Chunk430490 = require("./430490.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -152,7 +152,7 @@ function T(e) {
   return (0, r.jsx)(s.P3F, {
     className: h.clearButton,
     onClick: n,
-    "aria-label": p.intl.string(p.t.VkKicX),
+    "aria-label": p.intl.string(p.t.VkKicb),
     children: (0, r.jsx)(s.k$p, {
       size: i,
       color: "currentColor"

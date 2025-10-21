@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk430824 = require("./430824.js"),
   Chunk594174 = require("./594174.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk598955 = require("./598955.js");
+  Chunk121271 = require("./121271.js");
 
 function v(e) {
   var t, n, v, j;
@@ -40,7 +40,7 @@ function v(e) {
     }),
     id: "integration-owner",
     label: T.name,
-    subtext: m.intl.formatToPlainString(m.t.ShLXXF, {
+    subtext: m.intl.formatToPlainString(m.t.ShLXXB, {
       application: e.author.username
     })
   }) : null != Z && (N = (0, r.jsx)(o.sNh, {
@@ -57,12 +57,12 @@ function v(e) {
     }),
     id: "integration-owner",
     label: Z.username,
-    subtext: m.intl.formatToPlainString(m.t.ShLXXF, {
+    subtext: m.intl.formatToPlainString(m.t.ShLXXB, {
       application: e.author.username
     })
   })), (0, r.jsxs)(o.sNh, {
     id: "view-interaction-info",
-    label: m.intl.string(m.t.Rjezb2),
+    label: m.intl.string(m.t.Rjezbz),
     children: [N, null != A ? (0, r.jsx)(o.sNh, {
       action: () => (0, g.openUserProfileModal)({
         userId: A.id,
@@ -77,7 +77,7 @@ function v(e) {
       }),
       id: "interaction-user",
       label: A.username,
-      subtext: m.intl.string(m.t["04gxNj"])
+      subtext: m.intl.string(m.t["04gxNg"])
     }) : null]
   })
 }

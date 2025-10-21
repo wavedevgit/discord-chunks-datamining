@@ -58,8 +58,8 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk701476 = require("./701476.js"),
   Chunk801461 = require("./801461.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk67894 = require("./67894.js"),
-  Chunk10198 = require("./10198.js");
+  Chunk33724 = require("./33724.js"),
+  Chunk197571 = require("./197571.js");
 
 function el(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -149,7 +149,7 @@ class eu extends(r = Chunk647438.PureComponent) {
     } = this.state;
     (t.apiErrors !== s || t.parsedDateOfBirth !== l) && (this.hasError("email") || this.hasError("phone") ? null != this.emailRef && this.emailRef.focus() : this.hasError("username") ? null != this.usernameRef && this.usernameRef.focus() : this.hasError("global_name") ? null != this.globalNameRef && this.globalNameRef.focus() : this.hasError("password") ? null != this.passwordRef && this.passwordRef.focus() : null == this.state.parsedDateOfBirth ? null != this.dateOfBirthRef.current && this.dateOfBirthRef.current.focus() : this.hasError("retry_after") && "number" == typeof s.retry_after && (this.setState({
       isRateLimited: true
-    }), this._retryTimer.start(s.retry_after * W.Z.Millis.SECOND, () => {
+    }), this._retryTimer.start(s.retry_after * H.Z.Millis.SECOND, () => {
       this.setState({
         isRateLimited: false
       })
@@ -232,17 +232,17 @@ class eu extends(r = Chunk647438.PureComponent) {
       onChange: e => this.setState({
         consent: e
       }),
-      subText: Chunk388032.intl.format(Chunk388032.t.qMDAPz, {
+      subText: Chunk388032.intl.format(Chunk388032.t.qMDAP0, {
         termsURL: Chunk981631.EYA.TERMS,
         privacyURL: Chunk981631.EYA.PRIVACY
       }),
-      marginTopStyle: Chunk67894.consentBox,
-      subtextClassName: Chunk67894.consentSubText
+      marginTopStyle: Chunk33724.consentBox,
+      subtextClassName: Chunk33724.consentSubText
     }) : (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
       color: "text-secondary",
-      className: a()(Chunk10198.marginTop8, Chunk67894.consentSubText),
-      children: Chunk388032.intl.format(Chunk388032.t["KI+BSU"], {
+      className: a()(Chunk197571.marginTop8, Chunk33724.consentSubText),
+      children: Chunk388032.intl.format(Chunk388032.t["KI+BSb"], {
         termsURL: Chunk981631.EYA.TERMS,
         privacyURL: Chunk981631.EYA.PRIVACY
       })
@@ -259,17 +259,17 @@ class eu extends(r = Chunk647438.PureComponent) {
     return (0, Chunk951288.jsxs)(Chunk388905.ZP, {
       className: module,
       children: [(0, Chunk951288.jsx)(Chunk588705.R, {}), (0, Chunk951288.jsxs)(Chunk388905.gO, {
-        className: Chunk67894.authBlock,
+        className: Chunk33724.authBlock,
         children: [(0, Chunk951288.jsx)(Chunk28664.u, {
-          text: Chunk388032.intl.string(Chunk388032.t["hBB85+"]),
+          text: Chunk388032.intl.string(Chunk388032.t["hBB85/"]),
           position: "right",
           children: (0, Chunk951288.jsx)(Chunk388905.II, {
-            label: Chunk388032.intl.string(Chunk388032.t["9AjdkJ"]),
+            label: Chunk388032.intl.string(Chunk388032.t["9AjdkD"]),
             autoFocus: true,
-            className: Chunk10198.marginBottom8,
+            className: Chunk197571.marginBottom8,
             name: "username",
             value: require,
-            placeholder: Chunk388032.intl.string(Chunk388032.t["09Q8ys"]),
+            placeholder: Chunk388032.intl.string(Chunk388032.t["09Q8yp"]),
             onChange: exports,
             onFocus: () => this.trackInputFocus("username"),
             onBlur: () => this.trackInputBlur("username")
@@ -277,21 +277,21 @@ class eu extends(r = Chunk647438.PureComponent) {
         }), (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-sm/normal",
           color: "text-secondary",
-          className: a()(Chunk10198.marginTop20, Chunk67894.consentSubText),
-          children: Chunk388032.intl.format(Chunk388032.t["KI+BSU"], {
+          className: a()(Chunk197571.marginTop20, Chunk33724.consentSubText),
+          children: Chunk388032.intl.format(Chunk388032.t["KI+BSb"], {
             termsURL: Chunk981631.EYA.TERMS,
             privacyURL: Chunk981631.EYA.PRIVACY
           })
         }), (0, Chunk951288.jsx)(Chunk388905.zx, {
-          className: Chunk10198.marginTop8,
+          className: Chunk197571.marginTop8,
           disabled: true,
-          children: Chunk388032.intl.string(Chunk388032.t["825cFx"])
+          children: Chunk388032.intl.string(Chunk388032.t["825cFy"])
         }), Chunk188785.a ? null : (0, Chunk951288.jsx)(Chunk388905.zx, {
           look: Chunk388905.zx.Looks.LINK,
           color: Chunk388905.zx.Colors.LINK,
           disabled: true,
-          className: Chunk10198.marginTop20,
-          children: Chunk388032.intl.string(Chunk388032.t["1lWxu7"])
+          className: Chunk197571.marginTop20,
+          children: Chunk388032.intl.string(Chunk388032.t["1lWxux"])
         })]
       })]
     })
@@ -314,11 +314,11 @@ class eu extends(r = Chunk647438.PureComponent) {
     } = this.props, {
       consent: t,
       registering: n
-    } = this.state, r = Chunk388905.zx.Colors.BRAND, s = Chunk388032.intl.string(Chunk388032.t["825cFx"]);
+    } = this.state, r = Chunk388905.zx.Colors.BRAND, s = Chunk388032.intl.string(Chunk388032.t["825cFy"]);
     return (0, Chunk951288.jsx)(Chunk28664.u, {
-      text: !exports && module ? Chunk388032.intl.string(Chunk388032.t.AY4IVF) : null,
+      text: !exports && module ? Chunk388032.intl.string(Chunk388032.t.AY4IVA) : null,
       children: (0, Chunk951288.jsx)("div", {
-        className: Chunk10198.marginTop8,
+        className: Chunk197571.marginTop8,
         children: (0, Chunk951288.jsx)(Chunk388905.zx, {
           type: "submit",
           submitting: require,
@@ -354,17 +354,17 @@ class eu extends(r = Chunk647438.PureComponent) {
         tag: "form",
         className: exports,
         children: [this.renderInviteHeader(), Chunk990547 ? (0, Chunk951288.jsx)("div", {
-          className: Chunk67894.divider
+          className: Chunk33724.divider
         }) : null, (0, Chunk951288.jsxs)(Chunk388905.gO, {
-          className: Chunk990547 ? true : Chunk67894.authBlock,
+          className: Chunk990547 ? true : Chunk33724.authBlock,
           children: [(0, Chunk951288.jsx)(Chunk481060.oil, {
-            helperText: Chunk388032.intl.string(Chunk388032.t["330TCQ"]),
-            label: Chunk388032.intl.string(Chunk388032.t["9AjdkJ"]),
+            helperText: Chunk388032.intl.string(Chunk388032.t["330TCc"]),
+            label: Chunk388032.intl.string(Chunk388032.t["9AjdkD"]),
             error: null != a ? a : ec(null != r ? r : require),
             autoFocus: true,
             name: "global_name",
             value: Chunk120356,
-            placeholder: Chunk388032.intl.string(Chunk388032.t["09Q8ys"]),
+            placeholder: Chunk388032.intl.string(Chunk388032.t["09Q8yp"]),
             onChange: Chunk442837,
             onFocus: () => {
               this.setState({
@@ -377,8 +377,8 @@ class eu extends(r = Chunk647438.PureComponent) {
               }), this.trackInputBlur("global_name")
             }
           }), Chunk188785.a ? null : (0, Chunk951288.jsx)(Chunk13430.Z, {
-            label: Chunk388032.intl.string(Chunk388032.t.rhBeKS),
-            wrapperClassName: Chunk67894.inviteBirthdayInput,
+            label: Chunk388032.intl.string(Chunk388032.t.rhBeKe),
+            wrapperClassName: Chunk33724.inviteBirthdayInput,
             name: "date_of_birth",
             onChange: this.handleBirthdayChange,
             ref: this.dateOfBirthRef,
@@ -389,13 +389,13 @@ class eu extends(r = Chunk647438.PureComponent) {
               look: Chunk388905.zx.Looks.LINK,
               color: Chunk388905.zx.Colors.LINK,
               onClick: this.handleGotoLogin,
-              className: Chunk10198.marginTop20,
-              children: Chunk388032.intl.string(Chunk388032.t["1lWxu7"])
+              className: Chunk197571.marginTop20,
+              children: Chunk388032.intl.string(Chunk388032.t["1lWxux"])
             })
           })]
         })]
       }), null != module && Chunk990547 ? (0, Chunk951288.jsx)(Chunk388905.ZP, {
-        className: Chunk10198.marginTop20,
+        className: Chunk197571.marginTop20,
         children: (0, Chunk951288.jsx)(Chunk792766.y, {
           guild: module.guild,
           onlineCount: module.approximate_presence_count
@@ -410,7 +410,7 @@ class eu extends(r = Chunk647438.PureComponent) {
       }
     } = this.state;
     return "string" != typeof module ? null : (0, Chunk951288.jsx)(Chunk388905.i_, {
-      className: a()(Chunk10198.marginTop20, Chunk67894.errorMessage),
+      className: a()(Chunk197571.marginTop20, Chunk33724.errorMessage),
       children: module
     })
   }
@@ -433,21 +433,21 @@ class eu extends(r = Chunk647438.PureComponent) {
         username: b,
         global_name: j,
         password: I,
-        date_of_birth: O
+        date_of_birth: y
       } = {}
     } = this.state, {
-      consentRequired: y,
+      consentRequired: O,
       authBoxClassName: C,
       hasLoggedInAccounts: A
     } = this.props, T = this.renderErrorMessage(), Z = (0, i.jsx)(g.u, {
-      text: !c && y ? er.intl.string(er.t.AY4IVF) : null,
+      text: !c && O ? er.intl.string(er.t.AY4IVA) : null,
       children: (0, i.jsx)("div", {
         className: es.marginTop20,
         children: (0, i.jsx)(N.zx, {
           type: "submit",
           submitting: x,
           disabled: !this.hasConsent() || this.state.isRateLimited,
-          children: er.intl.string(er.t["825cFx"])
+          children: er.intl.string(er.t["825cFy"])
         })
       })
     }), P = async () => {
@@ -462,13 +462,13 @@ class eu extends(r = Chunk647438.PureComponent) {
     }, L = null != e ? (0, i.jsx)(s.Fragment, {
       children: e()
     }, "custom-header") : (0, i.jsx)(N.Dx, {
-      children: er.intl.string(er.t.wC4TlZ)
+      children: er.intl.string(er.t.wC4TlR)
     }, "title"), k = (0, i.jsxs)(N.gO, {
       className: es.marginTop20,
       children: [(0, i.jsx)(N.II, {
         autoFocus: true,
         className: es.marginBottom20,
-        label: er.intl.string(er.t.dI4d4e),
+        label: er.intl.string(er.t.dI4d4S),
         name: "email",
         value: n,
         onChange: e => this.setState({
@@ -485,7 +485,7 @@ class eu extends(r = Chunk647438.PureComponent) {
         onFocus: () => this.trackInputFocus("email"),
         onBlur: () => this.trackInputBlur("email")
       }), (0, i.jsx)(N.II, {
-        label: er.intl.string(er.t["9AjdkJ"]),
+        label: er.intl.string(er.t["9AjdkD"]),
         className: es.marginBottom20,
         name: "global_name",
         value: l,
@@ -515,7 +515,7 @@ class eu extends(r = Chunk647438.PureComponent) {
         children: (0, i.jsx)(p.Text, {
           variant: "text-sm/normal",
           color: "text-default",
-          children: er.intl.string(er.t["330TCQ"])
+          children: er.intl.string(er.t["330TCc"])
         })
       }), (0, i.jsxs)("div", {
         onBlur: () => this.setState({
@@ -524,7 +524,7 @@ class eu extends(r = Chunk647438.PureComponent) {
         onFocus: P,
         tabIndex: false,
         children: [(0, i.jsx)(N.II, {
-          label: er.intl.string(er.t.TWzdWl),
+          label: er.intl.string(er.t.TWzdWj),
           className: es.marginBottom20,
           name: "username",
           value: r,
@@ -539,7 +539,7 @@ class eu extends(r = Chunk647438.PureComponent) {
           onBlur: () => this.trackInputBlur("username")
         }), this.renderUsernameValidation()]
       }), (0, i.jsx)(N.II, {
-        label: er.intl.string(er.t["CIGa+/"]),
+        label: er.intl.string(er.t["CIGa+7"]),
         name: "password",
         value: o,
         onChange: e => this.setState({
@@ -556,12 +556,12 @@ class eu extends(r = Chunk647438.PureComponent) {
         onFocus: () => this.trackInputFocus("password"),
         onBlur: () => this.trackInputBlur("password")
       }), (0, i.jsx)(E.Z, {
-        label: er.intl.string(er.t.rhBeKS),
+        label: er.intl.string(er.t.rhBeKe),
         wrapperClassName: ei.birthdayInput,
         name: "date_of_birth",
         onChange: this.handleBirthdayChange,
         ref: this.dateOfBirthRef,
-        error: null != _ ? _ : ec(O),
+        error: null != _ ? _ : ec(y),
         value: u,
         required: true,
         onFocus: this.trackInputFocus,
@@ -571,7 +571,7 @@ class eu extends(r = Chunk647438.PureComponent) {
         color: N.zx.Colors.LINK,
         onClick: this.handleGotoLogin,
         className: es.marginTop20,
-        children: er.intl.string(er.t["1lWxu7"])
+        children: er.intl.string(er.t["1lWxux"])
       })]
     });
     return t ? (0, i.jsx)(Q.Z, {
@@ -582,7 +582,7 @@ class eu extends(r = Chunk647438.PureComponent) {
         className: ei.flex,
         children: [(0, i.jsx)(N.Dx, {
           className: ei.createAccountTemplateHeader,
-          children: er.intl.string(er.t.wC4TlZ)
+          children: er.intl.string(er.t.wC4TlR)
         }), k]
       }, "register-title")]
     }) : (0, i.jsxs)(N.ZP, {
@@ -602,7 +602,7 @@ class eu extends(r = Chunk647438.PureComponent) {
             className: ei.caret
           }), (0, i.jsx)(p.Text, {
             variant: "text-md/normal",
-            children: er.intl.string(er.t["1MrpWF"])
+            children: er.intl.string(er.t["1MrpWO"])
           })]
         })
       }) : null, L, k]
@@ -648,7 +648,7 @@ class eu extends(r = Chunk647438.PureComponent) {
       })), m.Z.loginReset(), u(t, {
         search: (0, o.stringify)(d),
         source: "register"
-      }), null == a || a(e), H.S.dispatch(X.CkL.WAVE_EMPHASIZE)
+      }), null == a || a(e), W.S.dispatch(X.CkL.WAVE_EMPHASIZE)
     }), el(this, "handleSubmit", e => {
       null == e || e.preventDefault();
       let {
@@ -783,7 +783,7 @@ function eh(e) {
   })).otherwise(() => (0, i.jsx)(p.Text, {
     variant: "text-sm/normal",
     color: "text-default",
-    children: er.intl.string(er.t.z7c4bG)
+    children: er.intl.string(er.t.z7c4bP)
   })) : null != r && r.length > 0 && s.length > 0 ? (0, i.jsx)(p.Text, {
     variant: "text-sm/normal",
     color: "text-default",
@@ -794,7 +794,7 @@ function eh(e) {
   }) : (0, i.jsx)(p.Text, {
     variant: "text-sm/normal",
     color: "text-default",
-    children: er.intl.string(er.t.z7c4bG)
+    children: er.intl.string(er.t.z7c4bP)
   }), (0, i.jsx)(U.Z, {
     show: u && (null == o ? true : o.type) === k.K.ERROR || l,
     top: false,

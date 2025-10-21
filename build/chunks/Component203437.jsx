@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk710111 = require("./710111.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk672046 = require("./672046.js");
+  Chunk697847 = require("./697847.js");
 
 function _(e) {
   let {
@@ -37,7 +37,7 @@ function _(e) {
       size: "md",
       color: "currentColor",
       className: w.speakerIcon
-    }), j.intl.format(j.t["8Dyg1N"], {
+    }), j.intl.format(j.t["8Dyg1C"], {
       slots: n
     })]
   })
@@ -119,6 +119,6 @@ function C(e) {
     renderOptionPrefix: E,
     renderOptionSuffix: P,
     renderOptionLabel: I,
-    placeholder: 0 === O.length ? j.intl.string(j.t.O3i2gY) : j.intl.string(j.t.CunCMD)
+    placeholder: 0 === O.length ? j.intl.string(j.t.O3i2gV) : j.intl.string(j.t.CunCMN)
   })
 }

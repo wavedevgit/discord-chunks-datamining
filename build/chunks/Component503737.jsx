@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 503737, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -52,19 +52,19 @@ class f extends Chunk317770.Z {
     o ? (0, l.h7j)(e => {
       var n, o;
       return (0, r.jsx)(i.Modal, (n = u({
-        title: c.intl.formatToPlainString(c.t["2tN7io"], {
+        title: c.intl.formatToPlainString(c.t["2tN7ih"], {
           name: t.name
         }),
         actions: [{
           variant: "primary",
-          text: c.intl.string(c.t.BddRzc),
+          text: c.intl.string(c.t.BddRzS),
           onClick: e.onClose,
           autoFocus: true
         }]
       }, e), o = o = {
         children: (0, r.jsx)(l.Text, {
           variant: "text-md/normal",
-          children: c.intl.string(c.t.MAxtkp)
+          children: c.intl.string(c.t.MAxtks)
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
         var n = Object.keys(e);

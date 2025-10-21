@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk186901 = require("./186901.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk596009 = require("./596009.js"),
+  Chunk781984 = require("./781984.js"),
   Chunk74830 = require("./74830.js"),
   Chunk13299 = require("./13299.js");
 Chunk442837.ZP.initialize();
@@ -88,10 +88,10 @@ function f(e) {
         }), (0, s.jsx)(r.Text, {
           variant: "text-md/normal",
           className: E.bodyText,
-          children: j.intl.string(j.t.bWuKqq)
+          children: j.intl.string(j.t.bWuKqh)
         }), (0, s.jsx)(r.Button, {
           variant: "primary",
-          text: j.intl.string(j.t.UQvCf3),
+          text: j.intl.string(j.t.UQvCf7),
           fullWidth: true,
           onClick: b
         })]
@@ -100,7 +100,7 @@ function f(e) {
           variant: "heading-lg/semibold",
           color: "text-default",
           className: E.headingText,
-          children: j.intl.string(j.t.k4z4en)
+          children: j.intl.string(j.t.k4z4er)
         }), (0, s.jsx)(r.Text, {
           variant: "text-md/normal",
           className: E.bodyText,
@@ -119,14 +119,14 @@ function f(e) {
       children: (0, s.jsx)(d.ZP, {
         children: I ? (0, s.jsxs)(s.Fragment, {
           children: [(0, s.jsx)(d.Dx, {
-            children: j.intl.string(j.t["Z+hCVV"])
+            children: j.intl.string(j.t["Z+hCVU"])
           }), (0, s.jsx)(d.Hh, {})]
         }) : (0, s.jsxs)(s.Fragment, {
           children: [(0, s.jsx)(d.Dx, {
             className: E.appOpenedTitle,
-            children: j.intl.string(j.t.csrAMD)
+            children: j.intl.string(j.t.csrAMJ)
           }), (0, s.jsx)(d.DK, {
-            children: j.intl.string(j.t.ghBJz8)
+            children: j.intl.string(j.t.ghBJz9)
           })]
         })
       })

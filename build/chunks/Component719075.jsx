@@ -19,12 +19,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk956472 = require("./956472.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk189084 = require("./189084.js");
+  Chunk997033 = require("./997033.js");
 let b = e => {
     let {
       product: t,
       prioritizedCurrency: n
-    } = e, p = (0, i.e7)([o.default], () => o.default.getCurrentUser()), b = s.ZP.canUseCollectibles(p), {
+    } = e, p = (0, i.e7)([s.default], () => s.default.getCurrentUser()), b = o.ZP.canUseCollectibles(p), {
       isDisabled: v
     } = (0, u.G)(t.skuId), {
       isPurchased: E,
@@ -41,19 +41,19 @@ let b = e => {
     return v ? (0, r.jsx)(a.Text, {
       variant: "text-md/semibold",
       color: "header-muted",
-      children: _.intl.string(_.t.wu4gyc)
+      children: _.intl.string(_.t.wu4gyV)
     }) : x ? (0, r.jsx)(a.Text, {
       variant: "text-md/semibold",
-      children: _.intl.string(_.t.BEjTio)
+      children: _.intl.string(_.t.BEjTij)
     }) : E && !L ? (0, r.jsx)(a.Text, {
       variant: "text-md/semibold",
-      children: _.intl.string(_.t["6cfuDg"])
+      children: _.intl.string(_.t["6cfuDj"])
     }) : S ? (0, r.jsx)(a.Text, {
       variant: "text-md/semibold",
-      children: _.intl.string(_.t.nBtvYG)
+      children: _.intl.string(_.t.nBtvYB)
     }) : O ? (0, r.jsx)(a.Text, {
       variant: "text-md/semibold",
-      children: _.intl.string(_.t.rt69oq)
+      children: _.intl.string(_.t.rt69oo)
     }) : 0 === k.length ? null : (0, r.jsx)(g.F, {
       price: k[0],
       discount: y,

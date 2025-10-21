@@ -12,7 +12,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk377171 = require("./377171.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk470948 = require("./470948.js");
+  Chunk803635 = require("./803635.js");
 
 function u(e) {
   let {
@@ -41,7 +41,7 @@ function u(e) {
 
 function d() {
   return (0, Chunk951288.jsx)(u, {
-    label: Chunk388032.intl.string(Chunk388032.t["I+02Gh"]),
+    label: Chunk388032.intl.string(Chunk388032.t["I+02Gs"]),
     backgroundColor: "#207B8D",
     icon: Chunk481060.T$Z
   })
@@ -49,7 +49,7 @@ function d() {
 
 function f() {
   return (0, Chunk951288.jsx)(u, {
-    label: Chunk388032.intl.string(Chunk388032.t.TgsPaG),
+    label: Chunk388032.intl.string(Chunk388032.t.TgsPaP),
     icon: Chunk481060.vdY,
     iconColor: (0, Chunk44315.Lq)(Chunk981631.Ilk.PRIMARY_330)
   })

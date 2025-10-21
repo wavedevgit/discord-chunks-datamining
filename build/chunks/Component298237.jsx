@@ -40,7 +40,7 @@ function y(e) {
         if (null != e.body && null != e.body.date_of_birth) u.Z.flowStep(m.MK.ANY, m.FF.AGE_GATE_UNDERAGE), p.wE(_.L0.CLAIM_ACCOUNT), p.hp(_.L0.CLAIM_ACCOUNT), n();
         else {
           var t;
-          (null == e || null == (t = e.body) ? true : t.username) != null ? T(A.intl.string(A.t["TGg/2t"])) : T(null == e ? true : e.body.message)
+          (null == e || null == (t = e.body) ? true : t.username) != null ? T(A.intl.string(A.t["TGg/2k"])) : T(null == e ? true : e.body.message)
         }
       }
       N(false)
@@ -54,12 +54,12 @@ function y(e) {
     children: (0, r.jsx)(a.Modal, {
       transitionState: t,
       onClose: n,
-      title: A.intl.string(A.t.QpSKo6),
-      subtitle: A.intl.format(A.t.EcJBEB, {
+      title: A.intl.string(A.t.QpSKow),
+      subtitle: A.intl.format(A.t.EcJBEI, {
         helpURL: f.Z.getArticleURL(E.BhN.AGE_GATE)
       }),
       actions: [{
-        text: A.intl.string(A.t.i4jeWV),
+        text: A.intl.string(A.t.i4jeWR),
         type: "submit",
         loading: O,
         disabled: null == y
@@ -75,7 +75,7 @@ function y(e) {
       children: (0, r.jsx)(d.Z, {
         required: true,
         autoFocus: true,
-        label: A.intl.string(A.t.rhBeKS),
+        label: A.intl.string(A.t.rhBeKe),
         name: "birthday",
         onChange: e => b(e),
         onPopulated: w,

@@ -1,4 +1,4 @@
-/** Chunk was on 84283 **/
+/** Chunk was on 69844 **/
 /** chunk id: 682807, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -14,7 +14,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk726542 = require("./726542.js"),
   Chunk881294 = require("./881294.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk68790 = require("./68790.js");
+  Chunk84933 = require("./84933.js");
 
 function h(e) {
   var t, n;
@@ -28,7 +28,7 @@ function h(e) {
     children: [(0, r.jsx)(s.Heading, {
       variant: "heading-sm/semibold",
       color: "header-primary",
-      children: p.intl.string(p.t.l6DP2t)
+      children: p.intl.string(p.t.l6DP2n)
     }), (0, r.jsxs)("div", {
       className: i()(m.list, o),
       children: [c.map((e, t) => (0, r.jsx)(g, {
@@ -37,11 +37,11 @@ function h(e) {
       }, t)), null != a.terms_of_service_url ? (0, r.jsx)(_, {
         icon: s.aAW,
         url: a.terms_of_service_url,
-        children: p.intl.string(p.t.s7STcX)
+        children: p.intl.string(p.t.s7STcY)
       }) : null, null != a.privacy_policy_url ? (0, r.jsx)(_, {
         icon: s.mBM,
         url: a.privacy_policy_url,
-        children: p.intl.string(p.t.kH3JR0)
+        children: p.intl.string(p.t.kH3JR5)
       }) : null]
     })]
   }) : null

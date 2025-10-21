@@ -72,7 +72,7 @@ let p = () => {
       (0, i.ZD)(async () => {
         let {
           default: t
-        } = await Promise.all([n.e("44686"), n.e("11324")]).then(n.bind(n, 645264));
+        } = await Promise.all([n.e("44686"), n.e("74240")]).then(n.bind(n, 645264));
         return n => (0, r.jsx)(t, _(d({}, n), {
           guildId: e,
           inviteKey: a,
@@ -101,7 +101,7 @@ let p = () => {
       (0, i.ZD)(async () => {
         let {
           default: t
-        } = await Promise.all([n.e("44686"), n.e("11324")]).then(n.bind(n, 645264));
+        } = await Promise.all([n.e("44686"), n.e("74240")]).then(n.bind(n, 645264));
         return n => (0, r.jsx)(t, _(d({}, n), {
           guildId: e,
           isPreview: true

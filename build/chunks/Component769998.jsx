@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 769998, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -17,7 +17,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk590433 = require("./590433.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk75765 = require("./75765.js");
+  Chunk464992 = require("./464992.js");
 
 function h(e) {
   var t;
@@ -55,21 +55,21 @@ function h(e) {
       }), x && (0, r.jsxs)(s.Text, {
         color: "interactive-normal",
         variant: "text-xs/medium",
-        children: [null === O ? null : h === u.fX.MENTION_SPAM ? p.intl.format(p.t.i3lsKC, {
+        children: [null === O ? null : h === u.fX.MENTION_SPAM ? p.intl.format(p.t.i3lsKD, {
           friendlyDurationString: O
-        }) : p.intl.format(p.t.mvHxzc, {
+        }) : p.intl.format(p.t.mvHxze, {
           friendlyDurationString: O
         }), y && (0, r.jsx)(s.P3F, {
           onClick: v(true),
           className: f.editChannel,
           tag: "span",
           role: "link",
-          children: p.intl.string(p.t["0B95RE"])
+          children: p.intl.string(p.t["0B95RJ"])
         })]
       })]
     }), (0, r.jsx)(l.u, {
-      text: p.intl.format(p.t.wx6Vb2, {}),
-      "aria-label": p.intl.formatToMarkdownString(p.t.wx6Vb2, {}),
+      text: p.intl.format(p.t.wx6Vb9, {}),
+      "aria-label": p.intl.formatToMarkdownString(p.t.wx6Vb9, {}),
       shouldShow: !y,
       children: (0, r.jsx)("div", {
         children: (0, r.jsx)(a.$q, {

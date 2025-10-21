@@ -34,20 +34,20 @@ function p(e) {
       text: function(e) {
         switch (e) {
           case o.yE.DISCOVER:
-            return u.intl.string(u.t.BeeKh4);
+            return u.intl.string(u.t.BeeKh0);
           case o.yE.ACTION:
             return u.intl.string(u.t["8Dp3R0"]);
           case o.yE.EARN:
-            return u.intl.string(u.t.facYnJ);
+            return u.intl.string(u.t.facYnD);
           case o.yE.REWARD:
-            return u.intl.string(u.t.gL45vL)
+            return u.intl.string(u.t.gL45vM)
         }
       }(g),
       variant: "primary",
       onClick: m
     }],
     align: "top",
-    body: u.intl.string(u.t.o4NGXV),
+    body: u.intl.string(u.t.o4NGXc),
     caretConfig: {
       align: "start"
     },
@@ -63,11 +63,11 @@ function p(e) {
     title: function(e) {
       switch (e) {
         case o.yE.DISCOVER:
-          return u.intl.string(u.t["2qdOVl"]);
+          return u.intl.string(u.t["2qdOVq"]);
         case o.yE.ACTION:
-          return u.intl.string(u.t.E3Rw09);
+          return u.intl.string(u.t.E3Rw0y);
         case o.yE.EARN:
-          return u.intl.string(u.t["2/2YdH"]);
+          return u.intl.string(u.t["2/2YdK"]);
         case o.yE.REWARD:
           return u.intl.string(u.t.mOH7r6)
       }

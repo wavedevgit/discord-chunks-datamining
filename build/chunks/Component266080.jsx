@@ -27,11 +27,11 @@ let m = e => {
     }), s.Z.leaveGuild(t)
   }, [t, n]);
   return null == g ? null : (0, r.jsx)(o.JZ, {
-    title: u.intl.string(u.t.cU96io),
-    description: u.intl.formatToPlainString(u.t["26mR6+"], {
+    title: u.intl.string(u.t.cU96ip),
+    description: u.intl.formatToPlainString(u.t["26mR6/"], {
       guildName: null == g ? true : g.name
     }),
-    buttonText: m ? u.intl.string(u.t["9Ak99v"]) : u.intl.string(u.t.F3qExs),
+    buttonText: m ? u.intl.string(u.t["9Ak99h"]) : u.intl.string(u.t.F3qExp),
     buttonDisabled: m,
     buttonVariant: "critical-primary",
     onButtonPress: () => {
@@ -55,16 +55,16 @@ let m = e => {
           }
           return e
         }({
-          header: u.intl.formatToPlainString(u.t["1GX6Pz"], {
+          header: u.intl.formatToPlainString(u.t["1GX6P/"], {
             name: g.name
           }),
-          confirmText: u.intl.string(u.t.J2TBi4),
-          cancelText: u.intl.string(u.t["ETE/oK"]),
+          confirmText: u.intl.string(u.t.J2TBi3),
+          cancelText: u.intl.string(u.t["ETE/oC"]),
           onConfirm: h
         }, e), n = n = {
           children: (0, r.jsx)(l.Text, {
             variant: "text-md/normal",
-            children: u.intl.format(u.t.ZEXC0t, {
+            children: u.intl.format(u.t.ZEXC0r, {
               name: g.name
             })
           })

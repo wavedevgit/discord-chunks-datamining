@@ -1,4 +1,4 @@
-/** Chunk was on 63962 **/
+/** Chunk was on 91053 **/
 /** chunk id: 611064, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   R: () => b,
@@ -16,8 +16,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk809017 = require("./809017.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk489229 = require("./489229.js"),
-  Chunk854641 = require("./854641.js");
+  Chunk532406 = require("./532406.js"),
+  Chunk32482 = require("./32482.js");
 
 function b(e) {
   return (null == e ? true : e.id) === p.G
@@ -29,8 +29,8 @@ let y = Chunk647438.memo(function(e) {
       expanded: y,
       expandedCount: _
     } = e,
-    j = (0, l.e7)([d.Z], () => d.Z.hidden),
-    O = i.useCallback(e => {
+    O = (0, l.e7)([d.Z], () => d.Z.hidden),
+    j = i.useCallback(e => {
       (0, s.jW)(e, async () => {
         let {
           MemberListContentSettingsMenu: e
@@ -43,15 +43,15 @@ let y = Chunk647438.memo(function(e) {
   return (0, r.jsxs)(o.Z, {
     className: m.membersGroup,
     children: [(0, r.jsx)(a.nn4, {
-      children: f.intl.format(f.t.UaqbkZ, {
+      children: f.intl.format(f.t.Uaqbke, {
         title: p,
         count: _
       })
     }), (0, r.jsxs)(a.P3F, {
       onClick: e => {
-        if (e.currentTarget === e.target || e.currentTarget.contains(e.target)) return j ? (0, c.lY)() : _ > 3 ? b() : (0, h.dG4)()
+        if (e.currentTarget === e.target || e.currentTarget.contains(e.target)) return O ? (0, c.lY)() : _ > 3 ? b() : (0, h.dG4)()
       },
-      onContextMenu: O,
+      onContextMenu: j,
       tag: "span",
       "aria-hidden": true,
       className: g.headerContainer,
@@ -60,7 +60,7 @@ let y = Chunk647438.memo(function(e) {
         children: [(0, r.jsxs)("span", {
           children: [p, " — ", _]
         }), (0, r.jsx)(u.Z, {})]
-      }), _ <= 3 && !j ? null : (t = j ? (0, r.jsx)(a.u04, {
+      }), _ <= 3 && !O ? null : (t = O ? (0, r.jsx)(a.u04, {
         className: g.toggleExpandIcon
       }) : y ? (0, r.jsx)(a.CJ0, {
         className: g.toggleExpandIcon

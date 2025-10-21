@@ -48,7 +48,7 @@ function p(e) {
   let t = (0, i.e7)([a.Z], () => a.Z.can(c.Plq.MANAGE_CHANNELS, e));
   return __OVERLAY__ ? null : e.id === o._ ? (0, r.jsx)(l.sNh, {
     id: "create-category",
-    label: u.intl.string(u.t["ISN+ND"]),
+    label: u.intl.string(u.t["ISN+NM"]),
     action: () => (0, l.ZDy)(async () => {
       let {
         default: e
@@ -57,11 +57,11 @@ function p(e) {
     })
   }) : t ? [(0, r.jsx)(l.sNh, {
     id: "create-channel",
-    label: u.intl.string(u.t["fUYU+v"]),
+    label: u.intl.string(u.t["fUYU+j"]),
     action: () => (0, l.ZDy)(async () => {
       let {
         default: t
-      } = await Promise.all([n.e("33285"), n.e("29497"), n.e("75139")]).then(n.bind(n, 241865));
+      } = await Promise.all([n.e("33285"), n.e("29497"), n.e("26861")]).then(n.bind(n, 241865));
       return n => (0, r.jsx)(t, d(s({}, n), {
         channelType: c.d4z.GUILD_TEXT,
         guildId: e.id
@@ -69,11 +69,11 @@ function p(e) {
     })
   }, "create-channel"), (0, r.jsx)(l.sNh, {
     id: "create-category",
-    label: u.intl.string(u.t["ISN+ND"]),
+    label: u.intl.string(u.t["ISN+NM"]),
     action: () => (0, l.ZDy)(async () => {
       let {
         default: t
-      } = await Promise.all([n.e("33285"), n.e("29497"), n.e("75139")]).then(n.bind(n, 241865));
+      } = await Promise.all([n.e("33285"), n.e("29497"), n.e("26861")]).then(n.bind(n, 241865));
       return n => (0, r.jsx)(t, d(s({}, n), {
         channelType: c.d4z.GUILD_CATEGORY,
         guildId: e.id

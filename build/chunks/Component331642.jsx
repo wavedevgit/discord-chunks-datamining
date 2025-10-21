@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk603074 = require("./603074.jsx"),
   Chunk294206 = require("./294206.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk622453 = require("./622453.js");
+  Chunk298879 = require("./298879.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -94,7 +94,7 @@ function v(e) {
       onClick: () => {
         o(!n)
       },
-      text: m.intl.string(m.t.uOe0Aw),
+      text: m.intl.string(m.t.uOe0Az),
       children: (0, r.jsx)(s.vdY, {
         size: "md",
         color: "currentColor",
@@ -109,7 +109,7 @@ function I(e) {
     sound: t
   } = e, {
     previewSound: n
-  } = (0, f.Z)(t, null), i = 0 === (0, d.pI)() ? m.intl.string(m.t.OASXjo) : m.intl.formatToPlainString(m.t["/8fYOz"], {
+  } = (0, f.Z)(t, null), i = 0 === (0, d.pI)() ? m.intl.string(m.t.OASXjt) : m.intl.formatToPlainString(m.t["/8fYO5"], {
     emojiName: t.emojiName,
     soundName: t.name
   });
@@ -137,7 +137,7 @@ function T(e) {
   });
 
   function _() {
-    return null == t ? m.intl.string(m.t.PoWNfX) : n ? m.intl.format(m.t.B6HU6O, {
+    return null == t ? m.intl.string(m.t.PoWNfe) : n ? m.intl.format(m.t.B6HU6O, {
       soundName: t.name,
       subtextHook: f
     }) : t.name
@@ -168,7 +168,7 @@ function T(e) {
         onSelect: i
       }), a && !n && (0, r.jsx)(h.hU, {
         onClick: () => i(null),
-        text: m.intl.string(m.t.jmtcGB),
+        text: m.intl.string(m.t.jmtcGA),
         children: (0, r.jsx)(s.XHJ, {
           size: "md",
           color: o.Z.unsafe_rawColors.RED_400.css,

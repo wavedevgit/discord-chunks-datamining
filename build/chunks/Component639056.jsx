@@ -21,7 +21,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk764810 = require("./764810.js");
+  Chunk196272 = require("./196272.js");
 
 function y(e) {
   let t, {
@@ -57,14 +57,14 @@ function y(e) {
       className: b.rowDetails,
       children: [(0, r.jsx)(c.Heading, {
         variant: "heading-md/semibold",
-        children: E.intl.format(E.t.LzobT0, {
+        children: E.intl.format(E.t.LzobT9, {
           planName: O
         })
       }), n.hasFreePremium() || null != s && s.isPurchasedExternally ? null : (0, r.jsx)(c.Heading, {
         className: b.rowApplied,
         variant: "heading-sm/semibold",
         color: "header-secondary",
-        children: y && null != s ? E.intl.formatToPlainString(E.t["5CNRRE"], {
+        children: y && null != s ? E.intl.formatToPlainString(E.t["5CNRRA"], {
           date: null != t ? t : 0
         }) : E.intl.formatToPlainString(E.t.eNXZ5O, {
           planName: O
@@ -73,7 +73,7 @@ function y(e) {
     }), (0, r.jsx)(c.Text, {
       className: b.rowCreditCount,
       variant: "text-md/semibold",
-      children: E.intl.format(E.t["ess/xs"], {
+      children: E.intl.format(E.t["ess/xl"], {
         count: o
       })
     })]
@@ -105,7 +105,7 @@ let O = function(e) {
       children: [(0, r.jsx)(c.Text, {
         className: b.tier1AccountCreditHeader,
         variant: "text-md/normal",
-        children: E.intl.string(E.t["VNr4+P"])
+        children: E.intl.string(E.t["VNr4+O"])
       }), (0, r.jsx)(h.R, {})]
     })]
   })

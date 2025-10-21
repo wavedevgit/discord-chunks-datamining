@@ -10,7 +10,7 @@ var Chunk951288 = require("./951288.js"),
   o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk585453 = require("./585453.js");
+  Chunk996014 = require("./996014.js");
 
 function u(e) {
   return "" === e || "-" === e
@@ -40,7 +40,7 @@ let d = e => {
       size: "sm",
       icon: s.V_R,
       onClick: E,
-      "aria-label": l.intl.string(l.t["k+ohJi"]),
+      "aria-label": l.intl.string(l.t["k+ohJm"]),
       disabled: h
     }), (0, r.jsx)("div", {
       className: c.value,
@@ -53,7 +53,7 @@ let d = e => {
       variant: "icon-only",
       icon: s.qJs,
       onClick: b,
-      "aria-label": l.intl.string(l.t.w8Sc4O),
+      "aria-label": l.intl.string(l.t.w8Sc4B),
       disabled: m
     })]
   })

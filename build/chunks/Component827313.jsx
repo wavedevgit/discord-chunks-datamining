@@ -14,7 +14,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk531301 = require("./531301.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk205853 = require("./205853.js");
+  Chunk925568 = require("./925568.js");
 
 function _(e) {
   let {
@@ -23,7 +23,7 @@ function _(e) {
     onOpenProfile: i
   } = e, {
     note: _
-  } = (0, c.Z)(t), p = null != _ && "" !== _, h = p ? s.hH0 : s.Wos, m = p ? d.intl.string(d.t["gs+qcH"]) : d.intl.string(d.t["1ZZttr"]), g = p ? _ : d.intl.string(d.t["1ZZttr"]), {
+  } = (0, c.Z)(t), p = null != _ && "" !== _, h = p ? s.hH0 : s.Wos, m = p ? d.intl.string(d.t["gs+qcM"]) : d.intl.string(d.t["1ZZtts"]), g = p ? _ : d.intl.string(d.t["1ZZtts"]), {
     trackUserProfileAction: E
   } = (0, l.KZ)(), b = () => {
     E({

@@ -27,8 +27,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk225104 = require("./225104.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk479306 = require("./479306.js"),
-  Chunk562721 = require("./562721.js");
+  Chunk375563 = require("./375563.js"),
+  Chunk245141 = require("./245141.js");
 
 function k(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -81,9 +81,9 @@ let Z = function(e) {
   let U = S.filter(e => null === e.tags.guild_connections);
   return (0, n.jsx)(a.Modal, {
     transitionState: l,
-    title: N.intl.string(N.t.ghtnsr),
+    title: N.intl.string(N.t.ghtnss),
     onClose: Z,
-    subtitle: N.intl.format(N.t["Y+TsER"], {
+    subtitle: N.intl.format(N.t["Y+TsEV"], {
       helpdeskArticleUrl: x.Z.getArticleURL(P.BhN.CONNECTION_DETAILS)
     }),
     actions: [],

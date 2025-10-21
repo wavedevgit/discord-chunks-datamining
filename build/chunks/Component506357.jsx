@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk882826 = require("./882826.js");
+  Chunk752338 = require("./752338.js");
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -112,16 +112,16 @@ function S(e) {
           size: "xs",
           color: "currentColor"
         }), (0, r.jsx)("span", {
-          children: b.intl.string(b.t["c+7oa2"])
+          children: b.intl.string(b.t["c+7oa7"])
         })]
       })
     })]
   });
-  let j = (0, m.CG)(P) ? b.intl.formatToPlainString(b.t.tZTx2N, {
+  let j = (0, m.CG)(P) ? b.intl.formatToPlainString(b.t.tZTx2E, {
       guildName: N.name
-    }) : (0, m.kk)(P) ? b.intl.formatToPlainString(b.t["1bSmxs"], {
+    }) : (0, m.kk)(P) ? b.intl.formatToPlainString(b.t["1bSmxr"], {
       guildName: N.name
-    }) : b.intl.formatToPlainString(b.t.W87xDA, {
+    }) : b.intl.formatToPlainString(b.t.W87xDE, {
       guildName: N.name
     }),
     U = D && A === E.oC.MEMBER_SAFETY;
@@ -137,7 +137,7 @@ function S(e) {
       children: (0, r.jsx)("div", {
         className: y.actionButtonInner,
         children: (0, r.jsx)("span", {
-          children: b.intl.string(b.t.zDJDho)
+          children: b.intl.string(b.t.zDJDhr)
         })
       })
     })]

@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk59248 = require("./59248.js");
+  Chunk729020 = require("./729020.js");
 
 function l(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -76,10 +76,10 @@ let p = Chunk647438.forwardRef(function(e, t) {
   } = e, p = f(e, ["currentPageIndex", "numPages", "onChangePage", "children", "showPageCount"]);
   let h = n <= 0,
     m = n >= i - 1,
-    g = _ ? o.intl.format(o.t.MtpIws, {
+    g = _ ? o.intl.format(o.t.MtpIwg, {
       currentPage: n + 1,
       numPages: i
-    }) : o.intl.format(o.t.bKI77e, {
+    }) : o.intl.format(o.t.bKI77c, {
       currentPage: n + 1
     });
   return (0, r.jsxs)("div", d(c({
@@ -94,7 +94,7 @@ let p = Chunk647438.forwardRef(function(e, t) {
           icon: a.V7D,
           disabled: h,
           onClick: () => l(n - 1),
-          "aria-label": o.intl.string(o.t.vgfxaG)
+          "aria-label": o.intl.string(o.t.vgfxaA)
         }), (0, r.jsx)(a.Text, {
           variant: "text-sm/medium",
           children: g
@@ -103,7 +103,7 @@ let p = Chunk647438.forwardRef(function(e, t) {
           icon: a.Fbu,
           disabled: m,
           onClick: () => l(n + 1),
-          "aria-label": o.intl.string(o.t.XiOHRU)
+          "aria-label": o.intl.string(o.t.XiOHRX)
         })]
       })
     })]

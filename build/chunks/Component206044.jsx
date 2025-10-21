@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk46140 = require("./46140.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk74576 = require("./74576.js");
+  Chunk310696 = require("./310696.js");
 
 function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -112,7 +112,7 @@ let D = (0, Chunk258536.animated)(Chunk481060.CJ0),
         [C.outerContainerEmbed]: q,
         [C.outerContainerXs]: "xs" === P
       }),
-      "aria-label": A.intl.string(A.t.dcl9MT),
+      "aria-label": A.intl.string(A.t.dcl9MQ),
       style: {
         height: z ? Z : true
       },
@@ -149,7 +149,7 @@ let D = (0, Chunk258536.animated)(Chunk481060.CJ0),
             },
             "aria-hidden": !x && M,
             children: (0, r.jsxs)(u.kL8, {
-              "aria-label": A.intl.string(A.t.dcl9MT),
+              "aria-label": A.intl.string(A.t.dcl9MQ),
               onClick: en,
               className: C.headerCollapsedClickableContainer,
               children: [(0, r.jsx)("div", {
@@ -207,18 +207,18 @@ let D = (0, Chunk258536.animated)(Chunk481060.CJ0),
                     variant: "lg" === P ? "heading-xxl/bold" : "sm" === P ? "heading-xl/bold" : "heading-lg/bold",
                     className: C.heading,
                     color: "always-white",
-                    children: A.intl.format(A.t.EAYZAg, {
+                    children: A.intl.format(A.t.EAYZAr, {
                       questName: a.config.messages.questName
                     })
                   })
                 }), (0, r.jsx)(u.Text, {
                   variant: "text-xs/normal",
                   color: "always-white",
-                  children: Q ? A.intl.formatToPlainString(A.t.APddvL, {
+                  children: Q ? A.intl.formatToPlainString(A.t.APddvF, {
                     expirationDate: ee
-                  }) : n ? A.intl.formatToPlainString(A.t.v7xMw8, {
+                  }) : n ? A.intl.formatToPlainString(A.t.v7xMw7, {
                     expirationDate: $
-                  }) : A.intl.formatToPlainString(A.t["pX+fmp"], {
+                  }) : A.intl.formatToPlainString(A.t["pX+fmn"], {
                     expirationDate: $
                   })
                 })]
@@ -249,7 +249,7 @@ let D = (0, Chunk258536.animated)(Chunk481060.CJ0),
               "aria-hidden": !x && !M,
               children: (0, r.jsx)(u.P3F, w(R({}, e), {
                 className: C.iconWrapper,
-                "aria-label": A.intl.string(A.t.DEoVWV),
+                "aria-label": A.intl.string(A.t.DEoVWZ),
                 children: (0, r.jsx)(u.xhG, {
                   size: "md",
                   color: l.Z.WHITE
@@ -259,7 +259,7 @@ let D = (0, Chunk258536.animated)(Chunk481060.CJ0),
           }), !(0, I.W_)(N) && (0, r.jsx)(u.P3F, {
             onClick: en,
             className: C.iconWrapper,
-            "aria-label": M ? A.intl.string(A.t.iTcumZ) : A.intl.string(A.t.dcl9MT),
+            "aria-label": M ? A.intl.string(A.t.iTcuma) : A.intl.string(A.t.dcl9MQ),
             children: (0, r.jsx)(D, {
               style: {
                 rotate: L.to({

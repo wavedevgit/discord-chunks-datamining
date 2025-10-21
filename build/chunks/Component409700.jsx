@@ -24,8 +24,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk240479 = require("./240479.jsx"),
   Chunk710111 = require("./710111.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk518025 = require("./518025.js"),
-  Chunk620209 = require("./620209.js");
+  Chunk937309 = require("./937309.js"),
+  Chunk463063 = require("./463063.js");
 
 function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -72,14 +72,14 @@ function A() {
     onVolumeChange: t
   } = (0, Chunk824690.Z)();
   return (0, Chunk951288.jsxs)(Chunk481060.P3F, {
-    className: Chunk518025.sliderContainer,
+    className: Chunk937309.sliderContainer,
     onClick: e => e.stopPropagation(),
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
-      children: Chunk388032.intl.string(Chunk388032.t["2JbvKy"])
+      children: Chunk388032.intl.string(Chunk388032.t["2JbvKw"])
     }), (0, Chunk951288.jsx)(Chunk481060.iRW, {
       onValueChange: exports,
-      className: Chunk518025.slider,
+      className: Chunk937309.slider,
       initialValue: (0, Chunk36703.P)(module),
       maxValue: 100
     })]
@@ -111,7 +111,7 @@ function C(e) {
         variant: "text-xs/medium",
         color: "always-white",
         className: y.infoNitroText,
-        children: b.intl.string(b.t["BMw+7O"])
+        children: b.intl.string(b.t["BMw+7I"])
       }), (0, r.jsx)(u.IGR, {
         text: "BETA",
         color: s.Z.BG_BRAND,
@@ -145,7 +145,7 @@ function N(e) {
         className: y.infoSoundInnerContainer,
         children: (0, r.jsx)(u.Text, {
           variant: "text-sm/normal",
-          children: b.intl.string(b.t.D6eYmZ)
+          children: b.intl.string(b.t.D6eYmf)
         })
       })]
     })]
@@ -218,7 +218,7 @@ function P(e) {
     children: [(0, r.jsx)(R, {
       setTooltipShowing: i,
       renderPopout: () => (0, r.jsx)(A, {}),
-      tooltipText: b.intl.string(b.t["19lt29"]),
+      tooltipText: b.intl.string(b.t["19lt24"]),
       position: "top",
       children: (0, r.jsx)(u.gj8, {
         size: "md",
@@ -231,7 +231,7 @@ function P(e) {
         sound: t,
         channel: n
       }, e)),
-      tooltipText: b.intl.string(b.t.KVbJU1),
+      tooltipText: b.intl.string(b.t["KVbJU/"]),
       position: "right",
       children: (0, r.jsx)(u.d3s, {
         size: "md",

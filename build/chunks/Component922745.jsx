@@ -20,7 +20,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk507675 = require("./507675.jsx"),
   Chunk273716 = require("./273716.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk533362 = require("./533362.js");
+  Chunk186880 = require("./186880.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -85,7 +85,7 @@ function v(e) {
       children: [(0, r.jsx)(l.whL, {
         size: "custom",
         color: "currentColor",
-        "aria-label": m.intl.string(m.t.mSfLs7),
+        "aria-label": m.intl.string(m.t.mSfLs0),
         className: g.backButton,
         width: 20,
         height: 20
@@ -97,7 +97,7 @@ function v(e) {
       })]
     }), p && null != i ? (0, r.jsx)(h.Z, {
       onClick: i,
-      label: m.intl.string(m.t.BEuDEh)
+      label: m.intl.string(m.t.BEuDEn)
     }) : null, d]
   })
 }

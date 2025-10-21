@@ -16,7 +16,7 @@ var Chunk755721 = require("./755721.js"),
   Chunk411198 = require("./411198.js"),
   Chunk230224 = require("./230224.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk248602 = require("./248602.js");
+  Chunk694527 = require("./694527.js");
 
 function p(e) {
   var t;
@@ -47,7 +47,7 @@ function p(e) {
       color: i.zx.Colors.GREEN,
       onClick: l,
       submitting: a,
-      children: h.intl.string(h.t.riu2R0)
+      children: h.intl.string(h.t.riu2R5)
     })]
   })
 }
@@ -64,7 +64,7 @@ function m(e) {
     children: [(0, r.jsx)(s.Heading, {
       className: g.presentedBy,
       variant: "text-sm/medium",
-      children: h.intl.string(h.t.Eabu19)
+      children: h.intl.string(h.t.Eabu1z)
     }), (0, r.jsxs)("div", {
       className: g.guildContainer,
       children: [(0, r.jsx)(l.Z, {

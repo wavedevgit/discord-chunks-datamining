@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk794295 = require("./794295.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk441451 = require("./441451.js");
+  Chunk94209 = require("./94209.js");
 
 function s(e) {
   let {
@@ -19,13 +19,13 @@ function s(e) {
     className: o.text,
     children: [null != t && (0, r.jsx)(i.Z, {
       href: t,
-      children: a.intl.string(a.t["8S0kcH"])
+      children: a.intl.string(a.t["8S0kcM"])
     }), null != t && null != n && (0, r.jsx)("span", {
       "aria-disabled": "true",
       children: "•"
     }), null != n && (0, r.jsx)(i.Z, {
       href: n,
-      children: a.intl.string(a.t.ZpyeCg)
+      children: a.intl.string(a.t.ZpyeCm)
     })]
   })
 }

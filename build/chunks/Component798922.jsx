@@ -13,17 +13,17 @@ var Chunk951288 = require("./951288.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
 let d = (0, Chunk509613.x1)(Chunk313789.n.SESSIONS_PANE, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t["+1h0k5"]),
+    useTitle: () => Chunk388032.intl.string(Chunk388032.t["+1h0k/"]),
     buildLayout: () => [],
     render: () => (0, Chunk951288.jsx)(Chunk36192.Z, {})
   }),
   T = (0, Chunk509613.wf)(Chunk313789.n.SESSIONS_PANEL, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t["+1h0k5"]),
+    useTitle: () => Chunk388032.intl.string(Chunk388032.t["+1h0k/"]),
     buildLayout: () => [d]
   }),
   I = (0, Chunk509613.m7)(Chunk313789.n.SESSIONS_SIDEBAR_ITEM, {
     icon: Chunk657707.dW3,
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t["+1h0k5"]),
+    useTitle: () => Chunk388032.intl.string(Chunk388032.t["+1h0k/"]),
     legacySearchKey: Chunk726985.s6.PRIVACY_ENCRYPTION_VERIFIED_DEVICES_V2,
     buildLayout: () => [T],
     trailing: {

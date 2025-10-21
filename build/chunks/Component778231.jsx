@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk881998 = require("./881998.js"),
   Chunk709054 = require("./709054.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk900399 = require("./900399.js"),
+  Chunk719706 = require("./719706.js"),
   Chunk970952 = require("./970952.js");
 let b = e => {
   var t, n;
@@ -35,7 +35,7 @@ let b = e => {
     children: [(0, r.jsx)(s.Heading, {
       className: _.header,
       variant: "heading-sm/semibold",
-      children: g.intl.string(g.t["aYfK//"])
+      children: g.intl.string(g.t["aYfK/w"])
     }), (0, r.jsx)("div", {
       className: _.appContainer,
       children: (0, r.jsxs)("div", {
@@ -74,7 +74,7 @@ let b = e => {
             }), null != O && (0, r.jsx)(s.Text, {
               color: "text-default",
               variant: "text-md/normal",
-              children: g.intl.formatToPlainString(g.t.C9rUOz, {
+              children: g.intl.formatToPlainString(g.t.C9rUO8, {
                 authorizedAt: O
               })
             })]

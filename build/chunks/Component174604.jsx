@@ -12,9 +12,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
   Chunk70300 = require("./70300.js"),
-  Chunk258640 = require("./258640.js"),
+  Chunk149829 = require("./149829.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk837059 = require("./837059.js");
+  Chunk240656 = require("./240656.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -93,7 +93,7 @@ function b(e) {
     if (1 === p.length) e = (0, r.jsx)(E, {
       powerup: p[0]
     });
-    else if (2 === p.length) e = f.intl.format(d.default.MNO3sL, {
+    else if (2 === p.length) e = f.intl.format(d.default.MNO3sG, {
       perk1: (0, r.jsx)(E, {
         powerup: p[0]
       }),
@@ -103,7 +103,7 @@ function b(e) {
     });
     else {
       let t = Array.from(p).reverse();
-      e = f.intl.format(d.default.GmN3VV, {
+      e = f.intl.format(d.default.GmN3Vf, {
         perk1: (0, r.jsx)(E, {
           powerup: t[0]
         }),
@@ -112,7 +112,7 @@ function b(e) {
         })
       })
     }
-    return f.intl.format(d.default["/6GgQk"], {
+    return f.intl.format(d.default["/6GgQq"], {
       perks: e
     })
   }, [p]);
@@ -133,7 +133,7 @@ function b(e) {
       children: v
     }), (0, r.jsx)(l.zxk, {
       variant: "primary",
-      text: f.intl.string(d.default.E5V5KC),
+      text: f.intl.string(d.default.E5V5KK),
       onClick: a
     })]
   })

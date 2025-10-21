@@ -1,5 +1,5 @@
 /** Chunk was on 25120 **/
-/** chunk id: 926281, original params: e,t,r (module,exports,require) **/
+/** chunk id: 926281, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => d
 }), require("./388685.js");
@@ -13,18 +13,18 @@ var Chunk951288 = require("./951288.js"),
 
 function u(e) {
   for (var t = 1; t < arguments.length; t++) {
-    var r = null != arguments[t] ? arguments[t] : {},
-      n = Object.keys(r);
-    "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(r, e).enumerable
-    }))), n.forEach(function(t) {
-      var n;
-      n = r[t], t in e ? Object.defineProperty(e, t, {
-        value: n,
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = n
+      }) : e[t] = r
     })
   }
   return e
@@ -32,21 +32,21 @@ function u(e) {
 
 function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
-    var r = Object.keys(e);
+    var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var n = Object.getOwnPropertySymbols(e);
-      r.push.apply(r, n)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
-    return r
-  })(Object(t)).forEach(function(r) {
-    Object.defineProperty(e, r, Object.getOwnPropertyDescriptor(t, r))
+    return n
+  })(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
 function d(e) {
   let {
     modalProps: t,
-    onConfirm: r
+    onConfirm: n
   } = e, [d, p] = c.useState({
     Account: {
       value: "Account",
@@ -55,27 +55,27 @@ function d(e) {
     },
     Analytics: {
       value: "Analytics",
-      label: o.intl.string(o.t["j+d6RE"]),
+      label: o.intl.string(o.t["j+d6RN"]),
       checked: false
     },
     Activities: {
       value: "Activities",
-      label: o.intl.string(o.t.KO88BQ),
+      label: o.intl.string(o.t.KO88BS),
       checked: false
     },
     Ads: {
       value: "Ads",
-      label: o.intl.string(o.t.wb7QJy),
+      label: o.intl.string(o.t.wb7QJ3),
       checked: false
     },
     Messages: {
       value: "Messages",
-      label: o.intl.string(o.t["0dO1t7"]),
+      label: o.intl.string(o.t["0dO1t+"]),
       checked: false
     },
     Servers: {
       value: "Servers",
-      label: o.intl.string(o.t.JN9c39),
+      label: o.intl.string(o.t.JN9c36),
       checked: false
     },
     Zendesk: {
@@ -83,30 +83,30 @@ function d(e) {
       label: o.intl.string(o.t.yaLeEB),
       checked: false
     }
-  }), [O, f] = c.useState(false), g = Object.values(d).some(e => e.checked);
-  return (0, n.jsx)(i.Modal, {
-    title: o.intl.string(o.t.jxXMEx),
-    subtitle: o.intl.format(o.t.fSv59f, {
+  }), [O, g] = c.useState(false), f = Object.values(d).some(e => e.checked);
+  return (0, r.jsx)(i.Modal, {
+    title: o.intl.string(o.t.jxXMEz),
+    subtitle: o.intl.format(o.t.fSv59b, {
       helpdeskArticle: s.Z.getArticleURL(a.BhN.GDPR_PACKAGE_CONTENTS)
     }),
     transitionState: t.transitionState,
     onClose: t.onClose,
     actions: [{
-      text: o.intl.string(o.t.jpVjsr),
+      text: o.intl.string(o.t.jpVjsg),
       onClick: () => {
         t.onClose()
       },
       variant: "secondary"
     }, {
-      text: o.intl.string(o.t.NYgNg4),
+      text: o.intl.string(o.t.NYgNg9),
       onClick: () => {
-        if (!g) return void f(true);
+        if (!f) return void g(true);
         let e = Object.keys(d).filter(e => d[e].checked).map(e => d[e].value);
-        null == r || r(e), t.onClose()
+        null == n || n(e), t.onClose()
       },
       variant: "primary"
     }],
-    children: (0, n.jsx)(l.cOn, {
+    children: (0, r.jsx)(l.cOn, {
       selectedValues: Object.keys(d).filter(e => d[e].checked),
       options: Object.keys(d).map(e => {
         let {
@@ -119,19 +119,19 @@ function d(e) {
       }),
       onChange: e => {
         p(t => {
-          let r = u({}, t);
-          return Object.keys(r).forEach(e => {
-            r[e] = b(u({}, r[e]), {
+          let n = u({}, t);
+          return Object.keys(n).forEach(e => {
+            n[e] = b(u({}, n[e]), {
               checked: false
             })
           }), e.forEach(e => {
-            r[e] = b(u({}, r[e]), {
+            n[e] = b(u({}, n[e]), {
               checked: true
             })
-          }), r
-        }), e.length > 0 && O && f(false)
+          }), n
+        }), e.length > 0 && O && g(false)
       },
-      errorMessage: O ? o.intl.string(o.t.W1Rw3N) : true
+      errorMessage: O ? o.intl.string(o.t.W1Rw3D) : true
     })
   })
 }

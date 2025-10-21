@@ -107,7 +107,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk448494 = require("./448494.js"),
+  Chunk636428 = require("./636428.js"),
   Chunk680674 = require("./680674.js");
 
 function e$(e, t, n) {
@@ -169,15 +169,15 @@ function e4(e, t) {
 
 function e8() {
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk448494.nitroFileSizeUpsell,
+    className: Chunk636428.nitroFileSizeUpsell,
     children: [(0, Chunk951288.jsx)("img", {
       src: Chunk680674,
-      className: Chunk448494.nitroBadgeSvg,
+      className: Chunk636428.nitroBadgeSvg,
       alt: ""
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-xs/normal",
       color: "text-muted",
-      children: Chunk388032.intl.format(Chunk388032.t["G/H+s7"], {
+      children: Chunk388032.intl.format(Chunk388032.t["G/H+s6"], {
         onClick: () => (0, Chunk98278.z)()
       })
     })]
@@ -259,7 +259,7 @@ class tt extends(r = Chunk647438.Component) {
         return null
     }
     return (0, Chunk951288.jsx)("div", {
-      className: Chunk448494.ctaButtonContainer,
+      className: Chunk636428.ctaButtonContainer,
       children: r
     })
   }
@@ -551,7 +551,7 @@ class tt extends(r = Chunk647438.Component) {
   renderThreadRoleMentionWarning(e) {
     if (e.hasFlag(ez.iLy.FAILED_TO_MENTION_SOME_ROLES_IN_THREAD) && this.props.isCurrentUser && !(Date.now() - eO.default.extractTimestamp(e.id) >= e6)) return (0, i.jsx)("div", {
       className: eQ.threadRoleMentionFailure,
-      children: eX.intl.string(eX.t.ma8Rs7)
+      children: eX.intl.string(eX.t.ma8Rs0)
     })
   }
   renderSuppressConfirmModal() {
@@ -561,9 +561,9 @@ class tt extends(r = Chunk647438.Component) {
     } = this.props;
     return (0, Chunk951288.jsxs)(Chunk481060.sYh, {
       dismissable: true,
-      header: Chunk388032.intl.string(Chunk388032.t.VL1KOj),
-      confirmText: Chunk388032.intl.string(Chunk388032.t.YEHppK),
-      cancelText: Chunk388032.intl.string(Chunk388032.t["ETE/oK"]),
+      header: Chunk388032.intl.string(Chunk388032.t.VL1KOk),
+      confirmText: Chunk388032.intl.string(Chunk388032.t.YEHppG),
+      cancelText: Chunk388032.intl.string(Chunk388032.t["ETE/oC"]),
       onCancel: () => this.setState({
         showSuppressModal: false
       }),
@@ -575,12 +575,12 @@ class tt extends(r = Chunk647438.Component) {
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         color: "text-default",
-        className: Chunk448494.confirmText,
-        children: Chunk388032.intl.string(Chunk388032.t["vXZ+Fh"])
+        className: Chunk636428.confirmText,
+        children: Chunk388032.intl.string(Chunk388032.t["vXZ+Fo"])
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         color: "text-muted",
-        children: Chunk388032.intl.string(Chunk388032.t["5j2by8"])
+        children: Chunk388032.intl.string(Chunk388032.t["5j2by3"])
       })]
     })
   }
@@ -595,9 +595,9 @@ class tt extends(r = Chunk647438.Component) {
       showRemoveAttachmentModal: false
     }) : (0, Chunk951288.jsx)(Chunk481060.sYh, {
       dismissable: true,
-      header: Chunk388032.intl.string(Chunk388032.t.CbTIEh),
-      confirmText: Chunk388032.intl.string(Chunk388032.t.kFwAsb),
-      cancelText: Chunk388032.intl.string(Chunk388032.t["ETE/oK"]),
+      header: Chunk388032.intl.string(Chunk388032.t.CbTIEo),
+      confirmText: Chunk388032.intl.string(Chunk388032.t.kFwAsa),
+      cancelText: Chunk388032.intl.string(Chunk388032.t["ETE/oC"]),
       onCancel: () => this.setState({
         showRemoveAttachmentModal: false,
         attachmentToDelete: null
@@ -612,8 +612,8 @@ class tt extends(r = Chunk647438.Component) {
       children: (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
         color: "text-default",
-        className: Chunk448494.confirmText,
-        children: Chunk388032.intl.string(Chunk388032.t.faHmOz)
+        className: Chunk636428.confirmText,
+        children: Chunk388032.intl.string(Chunk388032.t.faHmO3)
       })
     })
   }
@@ -699,7 +699,7 @@ class tt extends(r = Chunk647438.Component) {
     } = this.state, l = this.renderEditedTag(exports, r), c = this.renderCodedLinks(exports), u = this.renderGiftCodes(exports), d = this.renderAttachments(exports), f = this.renderCtaButton(), _ = this.renderSocialProofingFileSizeNitroUpsell(exports), p = this.renderEmbeds(exports), h = this.renderActivityInvite(exports), m = this.renderReactions(exports), g = this.renderPublishBump(exports), E = this.renderEphemeralAccessories(exports), b = this.renderStickersAccessories(exports), y = this.renderThreadAccessories(exports), O = this.renderComponentAccessories(exports), v = this.renderThreadRoleMentionWarning(exports), I = this.renderEmbeddedApplicationInstanceEmbed(exports), T = this.renderInteractionPremiumUpsell(exports), S = this.renderMediaPostEmbeds(exports), A = this.renderSafetyPolicyNotice(exports), C = this.renderSafetySystemNotification(exports), N = this.renderMediaObscureNotice(exports), R = this.renderPoll(exports, require), P = this.renderForwardedMessage(exports), w = this.renderReportedMessage(exports), D = this.renderShareClientTheme(exports);
     return null == Chunk442837 && null == Chunk902704 && null == Chunk637374 && null == Chunk626799 && null == Chunk624367 && null == Chunk377108 && null == Chunk183431 && null == Chunk421474 && null == Chunk603270 && null == Chunk234431 && null == Chunk162297 && null == Chunk446411 && null == Chunk222709 && null == Chunk960904 && null == Chunk161314 && null != Chunk36129 && null == Chunk262777 && null == Chunk761538 && null == Chunk674611 && null == Chunk294734 ? null : (0, Chunk951288.jsxs)("div", {
       id: (0, Chunk453687.bX)(exports),
-      className: s()(module, Chunk448494.container),
+      className: s()(module, Chunk636428.container),
       children: [Chunk674611, Chunk761538, Chunk222709, Chunk262777, Chunk294734, Chunk442837, Chunk377108, Chunk960904, Chunk902704, Chunk481060, Chunk637374, Chunk629710, Chunk626799, Chunk603270, Chunk162297, Chunk446411, Chunk36129, Chunk904245, Chunk275726, Chunk624367, Chunk183431, Chunk421474, Chunk647438 && this.renderSuppressConfirmModal(), Chunk120356 && this.renderRemoveAttachmentConfirmModal(), Chunk234431, Chunk161314, Chunk247206]
     })
   }

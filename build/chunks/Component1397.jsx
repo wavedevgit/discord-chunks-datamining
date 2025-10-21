@@ -1,7 +1,7 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 1397, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => K
+  Z: () => q
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -42,7 +42,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk701488 = require("./701488.js"),
   Chunk815660 = require("./815660.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk989028 = require("./989028.js");
+  Chunk97508 = require("./97508.js");
 
 function F(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -127,33 +127,33 @@ class W extends Chunk647438.PureComponent {
       useReducedMotion: Chunk305325
     };
     if (module && !Chunk607070) {
-      if (Chunk33154.message = Chunk388032.intl.string(Chunk388032.t.Hl0Mqq), null != Chunk391650 && Chunk391650 >= 1e3) {
+      if (Chunk33154.message = Chunk388032.intl.string(Chunk388032.t.Hl0Mqh), null != Chunk391650 && Chunk391650 >= 1e3) {
         let e = 1e3 * Math.floor(Chunk391650 / 1e3);
-        Chunk33154.subtitle = Chunk388032.intl.formatToPlainString(Chunk388032.t.C5bgrK, {
+        Chunk33154.subtitle = Chunk388032.intl.formatToPlainString(Chunk388032.t.C5bgrC, {
           count: module.toLocaleString()
         })
       }
-      Chunk33154.buttonText = Chunk388032.intl.string(Chunk388032.t["3aOv+v"]), Chunk33154.onButtonClick = this.handleFollowAnnouncement, exports && (Chunk33154.onSecondaryButtonClick = this.handleJoinServer, Chunk33154.secondaryButtonText = Chunk388032.intl.string(Chunk388032.t["RLch7+"]))
-    } else if (require) Chunk33154.message = Chunk388032.intl.string(Chunk388032.t["Eg3/c3"]), Chunk33154.buttonText = Chunk388032.intl.string(Chunk388032.t.fiNVio), Chunk33154.onButtonClick = Chunk881952 ? this.handleShowMemberVerification : this.handleClaimAccount;
+      Chunk33154.buttonText = Chunk388032.intl.string(Chunk388032.t["3aOv+h"]), Chunk33154.onButtonClick = this.handleFollowAnnouncement, exports && (Chunk33154.onSecondaryButtonClick = this.handleJoinServer, Chunk33154.secondaryButtonText = Chunk388032.intl.string(Chunk388032.t.RLch70))
+    } else if (require) Chunk33154.message = Chunk388032.intl.string(Chunk388032.t["Eg3/c9"]), Chunk33154.buttonText = Chunk388032.intl.string(Chunk388032.t.fiNVin), Chunk33154.onButtonClick = Chunk881952 ? this.handleShowMemberVerification : this.handleClaimAccount;
     else if (Chunk881952) switch (null == Chunk937111 ? true : Chunk937111.applicationStatus) {
         case Chunk246364.wB.SUBMITTED:
-          Chunk33154.message = Chunk388032.intl.string(Chunk388032.t["5iLvS0"]), Chunk33154.subtitle = Chunk388032.intl.string(Chunk388032.t.FdsK4u), Chunk33154.buttonText = Chunk388032.intl.string(Chunk388032.t.mqtdmZ), Chunk33154.onButtonClick = this.handleCancelApplication;
+          Chunk33154.message = Chunk388032.intl.string(Chunk388032.t["5iLvSx"]), Chunk33154.subtitle = Chunk388032.intl.string(Chunk388032.t.FdsK4h), Chunk33154.buttonText = Chunk388032.intl.string(Chunk388032.t.mqtdmQ), Chunk33154.onButtonClick = this.handleCancelApplication;
           break;
         case Chunk246364.wB.REJECTED:
-          Chunk33154.message = Chunk388032.intl.string(Chunk388032.t.lk30cX), Chunk33154.buttonText = Chunk388032.intl.string(Chunk388032.t["8RrsHh"]), Chunk33154.onButtonClick = this.handleViewApplicationRejection;
+          Chunk33154.message = Chunk388032.intl.string(Chunk388032.t.lk30cY), Chunk33154.buttonText = Chunk388032.intl.string(Chunk388032.t["8RrsHr"]), Chunk33154.onButtonClick = this.handleViewApplicationRejection;
           break;
         default:
-          Chunk33154.message = Chunk388032.intl.string(Chunk388032.t.rEBKvr), Chunk33154.buttonText = Chunk388032.intl.string(Chunk388032.t["r8/DT0"]), Chunk33154.buttonVariant = "primary", Chunk33154.onButtonClick = this.handleShowMemberVerification
-      } else if (Chunk270801 || null == Chunk652730) Chunk647438 && !Chunk983736 ? (Chunk33154.message = Chunk388032.intl.string(Chunk388032.t["2dThMD"]), Chunk33154.buttonText = Chunk388032.intl.string(Chunk388032.t["50gfOj"]), Chunk33154.onButtonClick = this.handleVerifyPhone) : Chunk512722 ? (Chunk33154.message = Chunk388032.intl.string(Chunk388032.t.FkGPS0), Chunk33154.buttonText = Chunk388032.intl.string(Chunk388032.t.lm1UKi), Chunk33154.onButtonClick = this.handleResendVerification) : a ? (Chunk33154.message = Chunk388032.intl.formatToPlainString(Chunk388032.t.IH7RMD, {
+          Chunk33154.message = Chunk388032.intl.string(Chunk388032.t.rEBKvg), Chunk33154.buttonText = Chunk388032.intl.string(Chunk388032.t["r8/DT+"]), Chunk33154.buttonVariant = "primary", Chunk33154.onButtonClick = this.handleShowMemberVerification
+      } else if (Chunk270801 || null == Chunk652730) Chunk647438 && !Chunk983736 ? (Chunk33154.message = Chunk388032.intl.string(Chunk388032.t["2dThMM"]), Chunk33154.buttonText = Chunk388032.intl.string(Chunk388032.t["50gfOv"]), Chunk33154.onButtonClick = this.handleVerifyPhone) : Chunk512722 ? (Chunk33154.message = Chunk388032.intl.string(Chunk388032.t.FkGPS5), Chunk33154.buttonText = Chunk388032.intl.string(Chunk388032.t.lm1UKt), Chunk33154.onButtonClick = this.handleResendVerification) : a ? (Chunk33154.message = Chunk388032.intl.formatToPlainString(Chunk388032.t.IH7RMF, {
         min: Chunk981631.YeM.MEMBER_AGE
-      }), Chunk33154.countdown = Chunk442837) : Chunk693789 && (Chunk33154.message = Chunk388032.intl.formatToPlainString(Chunk388032.t["2JA2GB"], {
+      }), Chunk33154.countdown = Chunk442837) : Chunk693789 && (Chunk33154.message = Chunk388032.intl.formatToPlainString(Chunk388032.t["2JA2GH"], {
         min: Chunk981631.YeM.ACCOUNT_AGE
       }), Chunk33154.countdown = Chunk893776);
       else {
         var S;
-        Chunk33154.imageSrc = null != (S = Chunk652730.getIconURL(Chunk701488.Si.SMALL)) ? Chunk144114 : true, Chunk33154.message = Chunk388032.intl.format(Chunk388032.t.EvDn1N, {
+        Chunk33154.imageSrc = null != (S = Chunk652730.getIconURL(Chunk701488.Si.SMALL)) ? Chunk144114 : true, Chunk33154.message = Chunk388032.intl.format(Chunk388032.t.EvDn1D, {
           name: Chunk652730.name
-        }), null != Chunk652730.connectionEntrypointUrl && (Chunk33154.buttonText = Chunk388032.intl.string(Chunk388032.t.S0W8Z2), Chunk33154.onButtonClick = () => {
+        }), null != Chunk652730.connectionEntrypointUrl && (Chunk33154.buttonText = Chunk388032.intl.string(Chunk388032.t.S0W8Z5), Chunk33154.onButtonClick = () => {
           window.open(Chunk652730.connectionEntrypointUrl, "_blank")
         })
       } return (0, Chunk951288.jsx)(Chunk481060.yRy, {
@@ -205,9 +205,9 @@ class W extends Chunk647438.PureComponent {
         guild: e
       } = this.props;
       null != e && (0, c.h7j)(t => (0, i.jsx)(c.ConfirmModal, z(G({
-        header: H.intl.string(H.t.aIz1oa),
-        confirmText: H.intl.string(H.t["cY+Ooa"]),
-        cancelText: H.intl.string(H.t["ETE/oK"]),
+        header: H.intl.string(H.t.aIz1oV),
+        confirmText: H.intl.string(H.t["cY+Oob"]),
+        cancelText: H.intl.string(H.t["ETE/oC"]),
         onConfirm: () => m.Z.removeGuildJoinRequest(e.id),
         confirmButtonColor: s.Tt.BRAND
       }, t), {
@@ -251,12 +251,12 @@ class W extends Chunk647438.PureComponent {
       u.Z.verifyResend();
       let t = null == (e = M.default.getCurrentUser()) ? true : e.email;
       null != t && (0, c.h7j)(e => (0, i.jsx)(c.ConfirmModal, z(G({}, e), {
-        header: H.intl.string(H.t.LykQYm),
-        confirmText: H.intl.string(H.t.BddRzc),
+        header: H.intl.string(H.t.LykQYk),
+        confirmText: H.intl.string(H.t.BddRzS),
         confirmButtonColor: s.Tt.BRAND,
         children: (0, i.jsx)(c.Text, {
           variant: "text-md/normal",
-          children: H.intl.format(H.t.azKEPz, {
+          children: H.intl.format(H.t.azKEPy, {
             email: t
           })
         })
@@ -331,7 +331,7 @@ class W extends Chunk647438.PureComponent {
   }
 }
 
-function K(e) {
+function q(e) {
   var t, n;
   let {
     channel: r,

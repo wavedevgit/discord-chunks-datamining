@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk693546 = require("./693546.js"),
   Chunk937111 = require("./937111.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk191333 = require("./191333.js");
+  Chunk394121 = require("./394121.js");
 let p = e => {
   let {
     headerId: t,
@@ -44,15 +44,15 @@ let p = e => {
         id: t,
         variant: "heading-lg/semibold",
         color: "header-primary",
-        children: (null == m ? true : m.name) != null ? u.intl.formatToPlainString(u.t["P+/gzM"], {
+        children: (null == m ? true : m.name) != null ? u.intl.formatToPlainString(u.t["P+/gzA"], {
           guildName: m.name
-        }) : u.intl.string(u.t.gBPcuL)
+        }) : u.intl.string(u.t.gBPcuP)
       }), null != g && "" !== g ? (0, r.jsxs)(o.Text, {
         variant: "text-md/medium",
         color: "header-secondary",
         children: [(0, r.jsx)("span", {
           className: d.rejectionReasonLabel,
-          children: u.intl.string(u.t.cf1psb)
+          children: u.intl.string(u.t.cf1psW)
         }), (0, r.jsx)("span", {
           children: g
         })]
@@ -61,10 +61,10 @@ let p = e => {
       className: d.confirmationButtonRow,
       children: [(0, r.jsx)(a.u, {
         asContainer: true,
-        text: _ ? u.intl.formatToPlainString(u.t.A0f0Pz, {
+        text: _ ? u.intl.formatToPlainString(u.t.A0f0P7, {
           days: E
         }) : null,
-        "aria-label": _ ? u.intl.formatToPlainString(u.t.A0f0Pz, {
+        "aria-label": _ ? u.intl.formatToPlainString(u.t.A0f0P7, {
           days: E
         }) : true,
         children: (0, r.jsx)(o.Button, {

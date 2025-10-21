@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk170245 = require("./170245.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk469314 = require("./469314.js");
+  Chunk507694 = require("./507694.js");
 
 function y(e) {
   var t;
@@ -48,18 +48,18 @@ function y(e) {
       className: v.staffIndicator,
       children: (0, r.jsx)(o.IGR, {
         color: a.Z.unsafe_rawColors.BRAND_500.css,
-        text: O.intl.string(O.t.oMx98P)
+        text: O.intl.string(O.t.oMx98L)
       })
     }), (0, r.jsx)(m.Z, {
       icon: o.dz2,
       actionType: m.Z.ActionTypes.ACCEPT,
-      tooltip: O.intl.string(O.t.ZcibdX),
+      tooltip: O.intl.string(O.t.Zcibdf),
       onClick: h,
       shouldHighlight: c
     }), (0, r.jsx)(m.Z, {
       icon: o.Dio,
       actionType: m.Z.ActionTypes.DENY,
-      tooltip: O.intl.string(O.t.xuio0N),
+      tooltip: O.intl.string(O.t.xuio0C),
       onClick: b,
       shouldHighlight: c
     })]
@@ -85,7 +85,7 @@ function I(e) {
   return (0, r.jsx)(m.Z, {
     icon: o.Dio,
     actionType: m.Z.ActionTypes.DENY,
-    tooltip: O.intl.string(O.t.eaq81d),
+    tooltip: O.intl.string(O.t.eaq81S),
     onClick: c,
     shouldHighlight: a
   })
@@ -97,7 +97,7 @@ function C(e) {
     applicationId: n,
     userTag: a,
     isProvisional: s
-  } = e, p = i.useMemo(() => t ? O.intl.string(O.t["Uv/eT0"]) : a, [t, a]), f = (0, l.e7)([c.Z], () => null != n ? c.Z.getApplication(n) : null);
+  } = e, p = i.useMemo(() => t ? O.intl.string(O.t["Uv/eTx"]) : a, [t, a]), f = (0, l.e7)([c.Z], () => null != n ? c.Z.getApplication(n) : null);
   return (0, r.jsxs)("div", {
     className: v.applicationSublabel,
     children: [!s && (0, r.jsx)(o.Text, {

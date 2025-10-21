@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk524943 = require("./524943.js");
+  Chunk117474 = require("./117474.js");
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -99,9 +99,9 @@ function I(e) {
     artContainerClassName: E.artContainer,
     enableArtBoxShadow: false,
     type: h.cd.UPLOAD_ERROR_UPSELL,
-    title: g.intl.string(g.t["9C+41t"]),
+    title: g.intl.string(g.t["9C+41g"]),
     body: R,
-    context: g.intl.formatToPlainString(g.t.q5fTZm, {
+    context: g.intl.formatToPlainString(g.t.q5fTZp, {
       maxSize: C
     }),
     glowUp: N,

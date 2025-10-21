@@ -1,4 +1,4 @@
-/** Chunk was on 18764 **/
+/** Chunk was on 26473 **/
 /** chunk id: 323297, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   default: () => v
@@ -11,9 +11,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk796724 = require("./796724.jsx"),
   Chunk343312 = require("./343312.jsx"),
   Chunk619733 = require("./619733.js"),
-  Chunk45765 = require("./45765.js"),
+  Chunk470658 = require("./470658.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk487569 = require("./487569.js");
+  Chunk871404 = require("./871404.js");
 
 function f(e) {
   for (var n = 1; n < arguments.length; n++) {
@@ -58,11 +58,11 @@ function p(e) {
     switch (e) {
       case c.EK.SELECT_GAME:
         return {
-          title: g.intl.string(u.default["3vWDMz"]), subtitle: g.intl.string(u.default.Az5bjo)
+          title: g.intl.string(u.default["3vWDMz"]), subtitle: g.intl.string(u.default.Az5bjs)
         };
       case c.EK.SERVER_SETTINGS:
         return {
-          title: g.intl.string(u.default["RLGW9/"])
+          title: g.intl.string(u.default.RLGW9z)
         }
     }
   }(n);

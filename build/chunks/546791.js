@@ -26,7 +26,7 @@ var Chunk913527 = require("./913527.js"),
   Chunk914788 = require("./914788.js"),
   Chunk277537 = require("./277537.js"),
   Chunk292352 = require("./292352.js"),
-  Chunk412297 = require("./412297.js"),
+  Chunk660886 = require("./660886.js"),
   Chunk388032 = require("./388032.jsx");
 let f = 60,
   _ = 3600,
@@ -34,18 +34,18 @@ let f = 60,
   h = 172800,
   m = 604800,
   g = () => ({
-    today: Chunk388032.intl.string(Chunk412297.default.VjIAQU),
-    yesterday: Chunk388032.intl.string(Chunk412297.default["2a8xHR"]),
-    days: Chunk412297.default.Xt6oND
+    today: Chunk388032.intl.string(Chunk660886.default.VjIAQQ),
+    yesterday: Chunk388032.intl.string(Chunk660886.default["2a8xHY"]),
+    days: Chunk660886.default.Xt6oND
   }),
   E = e => e ? {
-    today: d.intl.string(u.default["2AtcIi"]),
-    yesterday: d.intl.string(u.default.stOECg),
-    days: u.default.n8n5BQ
+    today: d.intl.string(u.default["2AtcIs"]),
+    yesterday: d.intl.string(u.default.stOECr),
+    days: u.default.n8n5Ba
   } : {
-    today: d.intl.string(u.default.g1ZX6u),
-    yesterday: d.intl.string(u.default.s3qSVl),
-    days: u.default.f1UJiI
+    today: d.intl.string(u.default.g1ZX6m),
+    yesterday: d.intl.string(u.default.s3qSVt),
+    days: u.default.f1UJiC
   },
   b = (e, t, n) => {
     let r = i()().diff(i()(e), "s"),
@@ -102,11 +102,11 @@ let f = 60,
       n = (0, Chunk277537.vE)("settings-controls");
     return (null == module ? true : module.nsfwAllowed) === false && exports && require
   },
-  L = (e, t) => t > 0 && 0 === e ? d.intl.formatToPlainString(u.default["L/Cj7e"], {
+  L = (e, t) => t > 0 && 0 === e ? d.intl.formatToPlainString(u.default["L/Cj7S"], {
     callCount: t
-  }) : e > 0 && 0 === t ? d.intl.formatToPlainString(u.default["6X1F0t"], {
+  }) : e > 0 && 0 === t ? d.intl.formatToPlainString(u.default["6X1F0i"], {
     messageCount: e
-  }) : d.intl.formatToPlainString(u.default.IYqGMD, {
+  }) : d.intl.formatToPlainString(u.default.IYqGMG, {
     messageCount: e,
     callCount: t
   })

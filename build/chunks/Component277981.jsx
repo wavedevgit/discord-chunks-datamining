@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk761652 = require("./761652.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk306618 = require("./306618.js");
+  Chunk227430 = require("./227430.js");
 let O = {
   results: {
     command: null,
@@ -106,7 +106,7 @@ let T = {
           }
         }),
         s = c.commands === m.L8.OLD_BUILT_INS ? h : null != (I = null == (O = d.Z.getActiveCommand(o.id)) ? true : O.integrationTitle) ? I : h,
-        l = g.length > 0 && null != s ? b.intl.format(b.t["3njXz8"], {
+        l = g.length > 0 && null != s ? b.intl.format(b.t["3njXz/"], {
           query: g,
           command: s
         }) : null != s ? s : h;

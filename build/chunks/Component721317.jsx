@@ -63,7 +63,7 @@ function a(e) {
     }), (0, n.jsxs)(c.mzw, {
       children: [(0, n.jsx)(c.Button, {
         variant: "secondary",
-        text: l.intl.string(l.t["ETE/oK"]),
+        text: l.intl.string(l.t["ETE/oC"]),
         onClick: c.pTH
       }), (0, n.jsx)(i.zx, {
         color: i.Tt.RED,
@@ -71,7 +71,7 @@ function a(e) {
         style: {
           marginRight: 8
         },
-        children: l.intl.string(l.t.R9GHyc)
+        children: l.intl.string(l.t.R9GHya)
       })]
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {

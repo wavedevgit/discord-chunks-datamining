@@ -14,8 +14,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk688465 = require("./688465.jsx"),
   Chunk314583 = require("./314583.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk925626 = require("./925626.js"),
-  Chunk602009 = require("./602009.js"),
+  Chunk443663 = require("./443663.js"),
+  Chunk430864 = require("./430864.js"),
   Chunk413097 = require("./413097.js");
 
 function m(e, t, n) {
@@ -53,14 +53,14 @@ function b(e) {
   }), [t]), m = i.useMemo(() => [{
     type: a.Y.USER_INSTALL,
     icon: o.oLu,
-    title: f.intl.string(f.t.aCg60N),
-    subtitle: f.intl.string(f.t.YeiIUV),
+    title: f.intl.string(f.t.aCg60P),
+    subtitle: f.intl.string(f.t.YeiIUZ),
     beta: false
   }, {
     type: a.Y.GUILD_INSTALL,
     icon: o.QTo,
-    title: f.intl.string(f.t.E64YCw),
-    subtitle: f.intl.string(f.t.bbtoKi),
+    title: f.intl.string(f.t.E64YCz),
+    subtitle: f.intl.string(f.t.bbtoKm),
     beta: false
   }].filter(e => {
     var n, r;
@@ -144,7 +144,7 @@ function O(e) {
       children: (0, r.jsx)(o.Text, {
         variant: "text-xs/medium",
         color: "text-default",
-        children: f.intl.string(f.t.LO4f0N)
+        children: f.intl.string(f.t.LO4f0P)
       })
     }) : null]
   })
@@ -208,7 +208,7 @@ function I(e) {
       children: [(0, r.jsx)(o.Text, {
         variant: "text-sm/semibold",
         color: "text-brand",
-        children: O ? f.intl.string(f.t.u4YJ8v) : f.intl.string(f.t["N/tajI"])
+        children: O ? f.intl.string(f.t.u4YJ8g) : f.intl.string(f.t["N/tajD"])
       }), O ? (0, r.jsx)(o.u04, {
         size: "sm",
         color: o.TVs.colors.TEXT_BRAND

@@ -8,9 +8,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk985002 = require("./985002.js"),
   Chunk957656 = require("./957656.jsx"),
-  Chunk412297 = require("./412297.js"),
+  Chunk660886 = require("./660886.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk640754 = require("./640754.js");
+  Chunk601582 = require("./601582.js");
 let u = e => {
   let {
     currentUser: t,
@@ -33,12 +33,12 @@ let u = e => {
     onClose: f,
     children: [g && (0, n.jsx)(o.M14, {
       type: "critical",
-      children: s.intl.string(l.default.krIDd3)
+      children: s.intl.string(l.default.krIDdy)
     }), (0, n.jsxs)(o.fef, {
       children: [(0, n.jsx)(a.Z.Header, {
         currentUser: t,
         otherUser: r,
-        header: s.intl.formatToPlainString(l.default.NMSTb2, {
+        header: s.intl.formatToPlainString(l.default["NMSTb/"], {
           isAdult: String(h)
         }),
         icon: (0, n.jsx)(o.Dio, {
@@ -49,25 +49,25 @@ let u = e => {
       }), (0, n.jsxs)(o.Kqy, {
         gap: 16,
         children: [(0, n.jsx)(a.Z.Notice, {
-          notice: h ? s.intl.string(l.default.EvMGLS) : s.intl.string(l.default.f1SUeX)
+          notice: h ? s.intl.string(l.default.EvMGLT) : s.intl.string(l.default.f1SUeW)
         }), (0, n.jsx)(o.Checkbox, {
           checked: p,
           onChange: e => {
             j(e), y(false)
           },
-          label: h ? s.intl.string(l.default["/MYCeX"]) : s.intl.string(l.default.VJaHUV)
+          label: h ? s.intl.string(l.default["/MYCee"]) : s.intl.string(l.default.VJaHUb)
         })]
       })]
     }), (0, n.jsx)(o.Go$, {
       actionsFullWidth: true,
       actions: [{
         variant: "secondary",
-        text: s.intl.string(s.t["ETE/oK"]),
+        text: s.intl.string(s.t["ETE/oC"]),
         onClick: f,
         disabled: m
       }, {
         variant: "critical-primary",
-        text: s.intl.string(l.default["c5L+sr"]),
+        text: s.intl.string(l.default["c5L+sl"]),
         onClick: () => {
           y(false), O(r.id)
         },

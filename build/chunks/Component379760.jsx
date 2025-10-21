@@ -11,8 +11,8 @@ var Chunk755721 = require("./755721.js"),
   Chunk7557 = require("./7557.jsx"),
   Chunk388905 = require("./388905.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk41636 = require("./41636.js"),
-  Chunk10198 = require("./10198.js");
+  Chunk158017 = require("./158017.js"),
+  Chunk197571 = require("./197571.js");
 
 function h(e) {
   let {
@@ -43,7 +43,7 @@ function h(e) {
       className: u.button,
       onClick: f,
       color: s.zx.Colors.PRIMARY,
-      children: c.intl.string(c.t["ETE/oK"])
+      children: c.intl.string(c.t["ETE/oC"])
     })]
   })
 }

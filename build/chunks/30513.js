@@ -19,7 +19,7 @@ var Chunk388032 = require("./388032.jsx");
 let l = () => ({
     color: Chunk692547.Z.unsafe_rawColors.PREMIUM_PERK_GREEN.css,
     icon: Chunk481060.Ka2,
-    description: Chunk388032.intl.string(Chunk388032.t.iGuEFR)
+    description: Chunk388032.intl.string(Chunk388032.t.iGuEFe)
   }),
   c = function() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk692547.Z.unsafe_rawColors.PREMIUM_PERK_ORANGE.css;
@@ -32,17 +32,17 @@ let l = () => ({
   u = () => ({
     color: Chunk692547.Z.unsafe_rawColors.PREMIUM_PERK_GREEN.css,
     icon: Chunk481060.Ka2,
-    description: Chunk388032.intl.string(Chunk388032.t["n/HqCg"])
+    description: Chunk388032.intl.string(Chunk388032.t["n/HqCh"])
   }),
   d = () => ({
     color: Chunk692547.Z.unsafe_rawColors.PREMIUM_PERK_GREEN.css,
     icon: Chunk481060.OUq,
-    description: Chunk388032.intl.string(Chunk388032.t.AU0zcX)
+    description: Chunk388032.intl.string(Chunk388032.t.AU0zcQ)
   }),
   f = () => ({
     color: Chunk692547.Z.unsafe_rawColors.PREMIUM_PERK_ORANGE.css,
     icon: Chunk481060.lZ8,
-    description: Chunk388032.intl.string(Chunk388032.t.zZe94u)
+    description: Chunk388032.intl.string(Chunk388032.t.zZe94m)
   }),
   _ = function() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk692547.Z.unsafe_rawColors.PREMIUM_PERK_PURPLE.css;
@@ -69,7 +69,7 @@ let l = () => ({
     return {
       color: t,
       icon: i.SlE,
-      description: s.intl.formatToPlainString(s.t["12vFYG"], {
+      description: s.intl.formatToPlainString(s.t["12vFYK"], {
         numStickers: n,
         numEmojis: a
       })
@@ -78,10 +78,10 @@ let l = () => ({
   h = () => ({
     color: Chunk692547.Z.unsafe_rawColors.PREMIUM_PERK_GOLD.css,
     icon: Chunk481060.r7p,
-    description: Chunk388032.intl.string(Chunk388032.t["ThRK/v"])
+    description: Chunk388032.intl.string(Chunk388032.t["ThRK/u"])
   }),
   m = function() {
-    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk388032.intl.string(Chunk388032.t.SQV8g4);
+    let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk388032.intl.string(Chunk388032.t.SQV8g6);
     return {
       color: Chunk692547.Z.unsafe_rawColors.PREMIUM_PERK_BLUE.css,
       icon: Chunk481060.EO4,
@@ -91,14 +91,14 @@ let l = () => ({
   g = () => ({
     color: Chunk692547.Z.unsafe_rawColors.PREMIUM_PERK_PURPLE.css,
     icon: Chunk123245.Z,
-    description: Chunk388032.intl.string(Chunk388032.t.Tm40TU)
+    description: Chunk388032.intl.string(Chunk388032.t.Tm40TZ)
   }),
   E = function() {
     let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : Chunk692547.Z.unsafe_rawColors.PREMIUM_PERK_GREEN.css;
     return {
       color: module,
       icon: Chunk481060.hGI,
-      description: Chunk388032.intl.string(Chunk388032.t.oIKhwc)
+      description: Chunk388032.intl.string(Chunk388032.t.oIKhwT)
     }
   };
 

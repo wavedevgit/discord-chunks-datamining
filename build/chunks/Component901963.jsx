@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk445102 = require("./445102.js");
+  Chunk503922 = require("./503922.js");
 let O = "premiumRetentionEmojiPickerNotice",
   v = Chunk433517.K.get(O),
   I = e => {
@@ -52,7 +52,7 @@ let O = "premiumRetentionEmojiPickerNotice",
         className: y.premiumRetentionNoticeContent,
         children: [(0, r.jsx)(c.Text, {
           variant: "text-xs/normal",
-          children: b.intl.format(b.t.bTMjiI, {
+          children: b.intl.format(b.t.bTMjiO, {
             planName: h.ZP.getDisplayPremiumType(T.planId),
             endsAt: A.toDate()
           })
@@ -63,7 +63,7 @@ let O = "premiumRetentionEmojiPickerNotice",
                 section: g.oAB.PREMIUM
               })
             },
-            children: b.intl.string(b.t.W3aavr)
+            children: b.intl.string(b.t.W3aavh)
           })
         })]
       }), (0, r.jsx)(c.P3F, {

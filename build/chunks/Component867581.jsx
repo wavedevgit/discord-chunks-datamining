@@ -1,4 +1,4 @@
-/** Chunk was on 27662 **/
+/** Chunk was on 24209 **/
 /** chunk id: 867581, original params: e,t,n (module,exports,require) **/
 let r, o;
 require.d(exports, {
@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk782605 = require("./782605.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk927931 = require("./927931.js"),
+  Chunk604509 = require("./604509.js"),
   Chunk216019 = require("./216019.js"),
   Chunk286359 = require("./286359.js");
 let O = "hTKzmak",
@@ -40,11 +40,11 @@ let O = "hTKzmak",
         children: [(0, l.jsx)(s.Heading, {
           className: I.rowText,
           variant: "heading-md/semibold",
-          children: f.intl.string(f.t.DwDxDQ)
+          children: f.intl.string(f.t.DwDxDU)
         }), (0, l.jsx)(s.Text, {
           className: I.rowText,
           variant: "text-xs/normal",
-          children: f.intl.string(f.t["5RL4CA"])
+          children: f.intl.string(f.t["5RL4CD"])
         })]
       }), (0, l.jsx)("img", {
         className: I.rowArrow,
@@ -59,15 +59,15 @@ function C(e) {
     onBack: t,
     onClose: n,
     isSlideReady: r
-  } = e, [o, d] = i.useState(""), [m, N] = i.useState(false), [T, C] = i.useState(null), g = i.useRef(null);
+  } = e, [o, d] = i.useState(""), [m, N] = i.useState(false), [T, C] = i.useState(null), h = i.useRef(null);
   i.useEffect(() => {
     var e;
-    r && (null == (e = g.current) || e.focus())
+    r && (null == (e = h.current) || e.focus())
   }, [r]);
-  let h = e => {
+  let g = e => {
     e.preventDefault();
     let t = o.trim();
-    if ("" === t) return void C(f.intl.string(f.t.IRq5am));
+    if ("" === t) return void C(f.intl.string(f.t.IRq5ah));
     C(null), N(true);
     let r = t.split("/"),
       l = r[r.length - 1];
@@ -77,7 +77,7 @@ function C(e) {
       let {
         invite: t
       } = e;
-      if (N(false), null == t) return void C(f.intl.string(f.t["GEYI+f"]));
+      if (N(false), null == t) return void C(f.intl.string(f.t["GEYI+Z"]));
       if (null != t.channel) {
         let e = c.ZP.getInviteContext("Join Guild", t);
         c.ZP.acceptInvite({
@@ -87,7 +87,7 @@ function C(e) {
             n(), c.ZP.transitionToInvite(e)
           }
         }).then(() => {}, e => {
-          e instanceof u.yZ || e instanceof u.Hx ? C((0, p.O)(e.code)) : C(f.intl.string(f.t.dDZRd3))
+          e instanceof u.yZ || e instanceof u.Hx ? C((0, p.O)(e.code)) : C(f.intl.string(f.t.dDZRdy))
         })
       }
     }, e => {
@@ -104,7 +104,7 @@ function C(e) {
       children: [(0, l.jsx)(s.Heading, {
         className: I.title,
         variant: "heading-xl/semibold",
-        children: f.intl.string(f.t.riOUtL)
+        children: f.intl.string(f.t.riOUtB)
       }), (0, l.jsx)(s.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
@@ -116,21 +116,21 @@ function C(e) {
     }), (0, l.jsxs)(s.hzk, {
       className: I.__invalid_content,
       children: [(0, l.jsx)("form", {
-        onSubmit: h,
+        onSubmit: g,
         className: I.inputForm,
         children: (0, l.jsx)(s.oil, {
-          label: f.intl.string(f.t.qreV29),
+          label: f.intl.string(f.t.qreV25),
           required: true,
           error: T,
           value: o,
           onChange: d,
           placeholder: "".concat(S).concat(O),
-          inputRef: g
+          inputRef: h
         })
       }), (0, l.jsx)(s.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
-        children: f.intl.string(f.t.Bnq46O)
+        children: f.intl.string(f.t.Bnq46H)
       }), (0, l.jsx)("div", {
         className: I.sampleLinks,
         children: E.map(e => (0, l.jsx)(s.P3F, {
@@ -145,15 +145,15 @@ function C(e) {
       className: I.footer,
       children: [(0, l.jsx)(s.Button, {
         variant: "primary",
-        text: f.intl.string(f.t["Ts/9AQ"]),
+        text: f.intl.string(f.t["Ts/9Ac"]),
         loading: m,
-        onClick: h
+        onClick: g
       }), (0, l.jsx)(a.zx, {
         color: a.zx.Colors.PRIMARY,
         look: a.zx.Looks.LINK,
         size: a.zx.Sizes.MIN,
         onClick: t,
-        children: f.intl.string(f.t["13/7kZ"])
+        children: f.intl.string(f.t["13/7kX"])
       })]
     })]
   })

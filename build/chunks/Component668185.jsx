@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk422559 = require("./422559.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk348061 = require("./348061.js");
+  Chunk979995 = require("./979995.js");
 
 function d(e) {
   let {
@@ -60,7 +60,7 @@ function d(e) {
       children: [(0, r.jsx)(o.x, {
         variant: "text-sm/medium",
         color: "header-secondary",
-        children: c.intl.format(c.t.sOaT2t, {
+        children: c.intl.format(c.t.sOaT2j, {
           applicationName: t.name,
           guildName: _.name
         })
@@ -72,7 +72,7 @@ function d(e) {
       children: [(0, r.jsx)(o.x, {
         variant: "text-sm/medium",
         color: "header-secondary",
-        children: c.intl.format(c.t.fsOkFx, {
+        children: c.intl.format(c.t.fsOkF4, {
           applicationName: t.name
         })
       }), (0, r.jsx)("ul", {

@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk293979 = require("./293979.js"),
   Chunk954654 = require("./954654.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk536289 = require("./536289.js");
+  Chunk620309 = require("./620309.js");
 
 function p(n) {
   let {
@@ -54,7 +54,7 @@ function p(n) {
         }) : null, (0, i.jsx)(s.Wn, {
           messageType: s.QYI.WARNING,
           className: u.submissionWarning,
-          children: d.intl.format(d.t["dSTy//"], {
+          children: d.intl.format(d.t["dSTy/w"], {
             applicationName: b
           })
         }), (0, i.jsx)("div", {
@@ -70,11 +70,11 @@ function p(n) {
       }), (0, i.jsx)(a.Go$, {
         actions: [{
           variant: "secondary",
-          text: d.intl.string(d.t["ETE/oK"]),
+          text: d.intl.string(d.t["ETE/oC"]),
           onClick: t
         }, {
           variant: "primary",
-          text: d.intl.string(d.t.geKm7u),
+          text: d.intl.string(d.t.geKm7t),
           loading: x === o.i.IN_FLIGHT,
           onClick: I
         }],

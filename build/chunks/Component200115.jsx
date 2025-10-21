@@ -23,10 +23,10 @@ function x(e) {
   } = e, x = (0, r.e7)([d.Z], () => d.Z.getGuild(s)), p = (0, r.e7)([c.ZP], () => c.ZP.isMuted(s)), v = (0, r.e7)([c.ZP], () => c.ZP.getMuteConfig(s));
   return null == x ? null : (0, i.jsxs)(a.C3N, {
     children: [(0, i.jsx)(a.rsf, {
-      label: m.intl.format(m.t["J+7D9P"], {
+      label: m.intl.format(m.t["J+7D9E"], {
         name: x.name
       }),
-      description: m.intl.string(m.t.IngcUl),
+      description: m.intl.string(m.t.IngcUv),
       checked: p,
       onChange: e => {
         o.Z.updateGuildNotificationSettings(s, {
@@ -34,8 +34,8 @@ function x(e) {
         }, u.UE.muted(e))
       }
     }), p && (0, i.jsx)(a.q4e, {
-      label: m.intl.string(m.t.Ztu2Ym),
-      description: null == (n = v) || null == n.end_time ? null : m.intl.formatToPlainString(m.t.j7h4AA, {
+      label: m.intl.string(m.t.Ztu2Yo),
+      description: null == (n = v) || null == n.end_time ? null : m.intl.formatToPlainString(m.t.j7h4AJ, {
         endTime: new Date(n.end_time).toLocaleString(m.intl.currentLocale, {
           month: "numeric",
           day: "numeric",

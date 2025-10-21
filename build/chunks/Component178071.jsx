@@ -70,7 +70,7 @@ class f extends Chunk647438.PureComponent {
       onDropdownClick: this.handleContextMenu,
       onContextMenu: this.handleContextMenu
     }, p), t = t = {
-      children: Chunk388032.intl.string(Chunk388032.t.hElye3)
+      children: Chunk388032.intl.string(Chunk388032.t.hElye1)
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(module, Object.getOwnPropertyDescriptors(exports)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
@@ -99,7 +99,7 @@ class f extends Chunk647438.PureComponent {
       return (0, r.jsx)(a.v2r, {
         onSelect: i,
         navId: "test-store-listing",
-        "aria-label": u.intl.string(u.t.ogxXGh),
+        "aria-label": u.intl.string(u.t.ogxXGq),
         onClose: o.Zy,
         children: l
       })

@@ -38,7 +38,7 @@ function E(e) {
     n = null == e ? true : e.name;
   if (null != t) return {
     src: t,
-    alt: null == n ? m.intl.string(m.t["2B/phI"]) : m.intl.formatToPlainString(m.t.tiKyYm, {
+    alt: null == n ? m.intl.string(m.t["2B/phM"]) : m.intl.formatToPlainString(m.t.tiKyYg, {
       applicationName: n
     })
   }
@@ -105,7 +105,7 @@ function y(e, t) {
   if (null == n && (0, o.Z)(e)) return {
     largeImage: {
       src: r.Z.get(p.ABu.XBOX).icon.customPNG,
-      alt: m.intl.string(m.t["Nfvo7+"])
+      alt: m.intl.string(m.t.Nfvo72)
     },
     smallImage: true
   };

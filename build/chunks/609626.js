@@ -17,7 +17,7 @@ function u(e, t) {
       username: ""
     }),
     c = (0, i.ov)(e),
-    d = s.intl.string(s.t.WRj1Wl),
+    d = s.intl.string(s.t.WRj1Wn),
     {
       trackView: p,
       trackClick: h

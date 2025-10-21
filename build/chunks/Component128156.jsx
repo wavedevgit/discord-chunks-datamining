@@ -26,7 +26,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk228168 = require("./228168.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk837493 = require("./837493.js");
+  Chunk158069 = require("./158069.js");
 
 function w(e) {
   let {
@@ -41,10 +41,10 @@ function w(e) {
     voiceActivityStatusEnabled: N
   } = (0, l.U)({
     location: "UserProfileModalV2Activity"
-  }), D = (0, f.b)({
+  }), A = (0, f.b)({
     location: "UserProfileModalV2Activity"
   }), {
-    live: A,
+    live: D,
     recent: k,
     stream: Z
   } = (0, g.Z)(t.id), {
@@ -56,8 +56,8 @@ function w(e) {
   }), G = (0, i.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t.id)), B = t.id === n.id, M = (0, i.e7)([u.Z, c.Z], () => {
     let e = B ? u.Z.getStatus() : c.Z.getStatus(t.id);
     return e === a.Skl.OFFLINE || e === a.Skl.INVISIBLE
-  }), F = A.length > 0 || null != Z, W = N && null == Z && null == L && null != R, U = !M && (F || W), H = k.length > 0;
-  if (!U && !H && G) return (0, r.jsx)("div", {
+  }), F = D.length > 0 || null != Z, U = N && null == Z && null == L && null != R, W = !M && (F || U), H = k.length > 0;
+  if (!W && !H && G) return (0, r.jsx)("div", {
     className: P.cards,
     children: Array.from({
       length: 8
@@ -72,7 +72,7 @@ function w(e) {
       })]
     }, t))
   });
-  if (!U && !H && !G) {
+  if (!W && !H && !G) {
     var z;
     return B ? (0, r.jsx)(y.Uf, {
       onClose: C
@@ -86,11 +86,11 @@ function w(e) {
   return (0, r.jsxs)(O.F, {
     className: P.scroller,
     fade: true,
-    children: [U ? (0, r.jsx)(j.Z, {
-      heading: I.intl.string(I.t.J6STd3),
+    children: [W ? (0, r.jsx)(j.Z, {
+      heading: I.intl.string(I.t.J6STd9),
       children: (0, r.jsxs)("ul", {
         className: P.cards,
-        children: [!D && W && (0, r.jsx)("li", {
+        children: [!A && U && (0, r.jsx)("li", {
           children: (0, r.jsx)(v.Z, {
             user: t,
             currentUser: n,
@@ -104,14 +104,14 @@ function w(e) {
             stream: Z,
             onClose: C
           })
-        }), A.map((e, i) => (0, r.jsx)("li", {
+        }), D.map((e, i) => (0, r.jsx)("li", {
           children: (0, r.jsx)(m.Z, {
             user: t,
             currentUser: n,
             activity: e,
             onClose: C
           })
-        }, "live-".concat(i))), D && W && (0, r.jsx)("li", {
+        }, "live-".concat(i))), A && U && (0, r.jsx)("li", {
           children: (0, r.jsx)(v.Z, {
             user: t,
             currentUser: n,
@@ -121,8 +121,8 @@ function w(e) {
         })]
       })
     }) : null, H ? (0, r.jsx)(j.Z, {
-      heading: I.intl.string(I.t.jzgEoK),
-      introText: B ? I.intl.format(I.t["4bk9Ag"], {
+      heading: I.intl.string(I.t.jzgEoL),
+      introText: B ? I.intl.format(I.t["4bk9Ak"], {
         learnMoreHook: (e, t) => (0, r.jsx)(a.Anchor, {
           href: d.Z.getArticleURL(_.BhN.ACTIVITY_STATUS_SETTINGS),
           children: e

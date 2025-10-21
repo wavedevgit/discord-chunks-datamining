@@ -89,20 +89,20 @@ function m(e) {
   return (0, r.jsx)(a.Modal, _(d({}, l), {
     size: "md",
     title: c.intl.string(c.t.ye21jI),
-    subtitle: c.intl.string(c.t.hbagWF),
+    subtitle: c.intl.string(c.t.hbagWD),
     actions: [{
-      text: c.intl.string(c.t.B8pz39),
+      text: c.intl.string(c.t.B8pz37),
       onClick: h,
       variant: "secondary"
     }, {
-      text: c.intl.string(c.t.makWn5),
+      text: c.intl.string(c.t.makWn9),
       onClick: m,
       variant: "primary"
     }],
     actionBarInput: (0, r.jsx)(o.Checkbox, {
       checked: u,
       onChange: e => f(e),
-      label: c.intl.string(c.t.wGAwOT)
+      label: c.intl.string(c.t.wGAwOS)
     })
   }))
 }

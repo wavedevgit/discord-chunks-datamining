@@ -15,12 +15,12 @@ var Chunk13245 = require("./13245.js"),
   Chunk981631 = require("./981631.js"),
   Chunk37113 = require("./37113.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk978595 = require("./978595.js");
+  Chunk496107 = require("./496107.js");
 
 function g(e, t, n, g) {
   if (u.Z.isNotificationDisabled(d.n0.RequestToStream)) return null;
   let y = t.username,
-    O = f.intl.format(m.default.jTbTAA, {
+    O = f.intl.format(m.default.jTbTAF, {
       username: "",
       game: n.name
     }),
@@ -38,8 +38,8 @@ function g(e, t, n, g) {
     icon: E,
     title: y,
     body: O,
-    confirmText: f.intl.string(m.default.UGbmBg),
-    cancelText: f.intl.string(f.t.tpXzJy),
+    confirmText: f.intl.string(m.default.UGbmBp),
+    cancelText: f.intl.string(f.t["tpXzJ+"]),
     onNotificationShow: () => {
       v()
     },

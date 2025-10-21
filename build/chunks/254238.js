@@ -68,8 +68,8 @@ async function O() {
     await Promise.all(require)
   } catch (e) {
     Chunk668781.Z.show({
-      title: Chunk388032.intl.string(Chunk388032.t.LNhXcH),
-      body: Chunk388032.intl.string(Chunk388032.t.QnKxtL)
+      title: Chunk388032.intl.string(Chunk388032.t.LNhXcL),
+      body: Chunk388032.intl.string(Chunk388032.t.QnKxtP)
     })
   }
 }

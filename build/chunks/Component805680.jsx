@@ -42,7 +42,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk185923 = require("./185923.js"),
   Chunk611480 = require("./611480.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk364744 = require("./364744.js");
+  Chunk887648 = require("./887648.js");
 
 function F(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -273,7 +273,7 @@ function Q(e) {
           }),
           ref: en,
           role: "dialog",
-          "aria-label": B.intl.string(B.t.Utlwvr),
+          "aria-label": B.intl.string(B.t.Utlwvi),
           children: n ? (0, r.jsxs)("div", {
             className: Z.drawerSizingWrapper,
             style: {
@@ -294,14 +294,14 @@ function Q(e) {
                 children: (0, r.jsxs)("div", {
                   className: Z.navList,
                   role: "tablist",
-                  "aria-label": B.intl.string(B.t["2j4VgY"]),
+                  "aria-label": B.intl.string(B.t["2j4Vgd"]),
                   children: [eg ? (0, r.jsx)(q, {
                     id: j._3,
                     "aria-controls": j.vO,
                     "aria-selected": el === x.X1.GIF,
                     isActive: el === x.X1.GIF,
                     viewType: x.X1.GIF,
-                    children: B.intl.string(B.t["6gUTsb"])
+                    children: B.intl.string(B.t["6gUTsS"])
                   }) : null, eE ? (0, r.jsx)(q, {
                     id: G.ED,
                     "aria-controls": G.nZ,
@@ -311,7 +311,7 @@ function Q(e) {
                     viewType: x.X1.STICKER,
                     children: (0, r.jsx)("div", {
                       className: Z.stickersNavItem,
-                      children: B.intl.string(B.t.nf1s3t)
+                      children: B.intl.string(B.t.nf1s3u)
                     })
                   }) : null, (0, r.jsx)(q, {
                     id: j.td,
@@ -319,7 +319,7 @@ function Q(e) {
                     "aria-selected": el === x.X1.EMOJI,
                     isActive: el === x.X1.EMOJI,
                     viewType: x.X1.EMOJI,
-                    children: B.intl.string(B.t.Xu3wEx)
+                    children: B.intl.string(B.t.Xu3wE3)
                   }), e_ && eP && (0, r.jsx)(q, {
                     id: j.Hr,
                     "aria-controls": j.gV,
@@ -328,7 +328,7 @@ function Q(e) {
                     viewType: x.X1.SOUNDBOARD,
                     children: (0, r.jsxs)("div", {
                       className: Z.soundmojiLabelContainer,
-                      children: [B.intl.string(B.t.EHlAMT), null != eT && (0, r.jsx)(p.IGR, {
+                      children: [B.intl.string(B.t.EHlAMc), null != eT && (0, r.jsx)(p.IGR, {
                         text: B.intl.string(B.t.y2b7CA)
                       })]
                     })

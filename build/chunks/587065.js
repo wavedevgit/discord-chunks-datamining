@@ -14,7 +14,7 @@ function c(e) {
   let n = r.useRef(null),
     [t, c] = r.useState(false);
   return {
-    handleCopyServerIp: r.useCallback(() => (null != n.current && clearTimeout(n.current), (0, l.JG)(null != e ? e : ""), (0, i.showToast)((0, a.Y)(o.intl.string(o.t["+5kSoa"]), i.ToastType.SUCCESS)), c(true), n.current = setTimeout(() => {
+    handleCopyServerIp: r.useCallback(() => (null != n.current && clearTimeout(n.current), (0, l.JG)(null != e ? e : ""), (0, i.showToast)((0, a.Y)(o.intl.string(o.t["+5kSoW"]), i.ToastType.SUCCESS)), c(true), n.current = setTimeout(() => {
       c(false)
     }, 2 * s.Z.Millis.SECOND), () => {
       null != n.current && clearTimeout(n.current)

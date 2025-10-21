@@ -144,7 +144,7 @@ function m(e) {
     o = g(e, ["buttonRef", "aria-label", "iconSize"]);
   return (0, r.jsx)(u.P3F, (t = f({
     innerRef: i,
-    "aria-label": null != a ? a : d.intl.string(d.t.Zc1neH)
+    "aria-label": null != a ? a : d.intl.string(d.t.Zc1neM)
   }, o), n = n = {
     children: (0, r.jsx)(u.Vni, {
       size: l,

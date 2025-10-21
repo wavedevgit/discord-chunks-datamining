@@ -35,7 +35,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk593540 = require("./593540.js");
+  Chunk116649 = require("./116649.js");
 
 function M(e) {
   let {
@@ -110,7 +110,7 @@ function M(e) {
     }), t.isProvisional ? (0, r.jsx)(v.Z.Overlay, {
       className: x.card,
       children: (0, r.jsx)(y.Z, {
-        heading: L.intl.string(L.t.Iyka0d),
+        heading: L.intl.string(L.t.Iyka0U),
         headingIcon: (0, r.jsx)(a.Mgn, {
           size: "xxs",
           color: a.TVs.colors.HEADER_PRIMARY

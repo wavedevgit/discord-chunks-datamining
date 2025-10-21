@@ -21,7 +21,7 @@ var Chunk122289 = require("./122289.js"),
   Chunk70956 = require("./70956.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk397519 = require("./397519.js");
+  Chunk987954 = require("./987954.js");
 let y = new Set([Chunk409813.h8.SKU_SELECT, Chunk409813.h8.AWAITING_AUTHENTICATION, Chunk409813.h8.AWAITING_PURCHASE_TOKEN_AUTH, Chunk409813.h8.CONFIRM]);
 
 function O(e) {
@@ -34,7 +34,7 @@ function O(e) {
     header: I,
     footer: T,
     isGift: S = false,
-    giftMessage: A = E.intl.string(E.t.DrgnS0),
+    giftMessage: A = E.intl.string(E.t["DrgnS+"]),
     hideBreadcrumbs: C = false,
     isLoading: N = false,
     purchaseError: R,
@@ -46,7 +46,7 @@ function O(e) {
   } = e, M = null;
   null != v && null == (0, p.ly)(v) ? M = v : null != R ? M = R : null != w && (M = w);
   let k = null != M ? M.message : "";
-  null != M && M instanceof d.HF && (M.code === f.SM.CARD_DECLINED && x && (k += " ".concat(E.intl.string(E.t.iWvwQU))), M.code === f.SM.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED && (k = E.intl.string(E.t.ypuSd3)), M.code === g.evJ.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE && (k = E.intl.string(E.t.mXMmWF)));
+  null != M && M instanceof d.HF && (M.code === f.SM.CARD_DECLINED && x && (k += " ".concat(E.intl.string(E.t.iWvwQS))), M.code === f.SM.INVALID_GIFT_REDEMPTION_FRAUD_REJECTED && (k = E.intl.string(E.t.ypuSd8)), M.code === g.evJ.BILLING_NON_REFUNDABLE_PAYMENT_SOURCE && (k = E.intl.string(E.t.mXMmWE)));
   let {
     stripe: j
   } = (0, _.JL)();

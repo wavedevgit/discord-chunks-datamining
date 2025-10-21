@@ -13,7 +13,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk955708 = require("./955708.jsx"),
   Chunk850165 = require("./850165.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk581697 = require("./581697.js"),
+  Chunk394968 = require("./394968.js"),
   Chunk282668 = require("./282668.js");
 
 function g(t) {
@@ -26,12 +26,12 @@ function g(t) {
     return o.ZP.getName(t)
   });
   return (0, i.jsx)(d.Z, {
-    header: u.intl.string(u.t.sSMgCw),
-    description: u.intl.formatToPlainString(u.t.q2QrTU, {
+    header: u.intl.string(u.t.sSMgC6),
+    description: u.intl.formatToPlainString(u.t.q2QrTY, {
       username: h
     }),
     heroImageSrc: x,
-    heroImageAlt: u.intl.string(u.t["3QhxXF"]),
+    heroImageAlt: u.intl.string(u.t["3QhxXJ"]),
     children: (0, i.jsxs)("div", {
       className: p.buttonContainer,
       children: [(0, i.jsx)(r.Button, {
@@ -42,7 +42,7 @@ function g(t) {
           g(l.x.TAKE_ACTION), n(c.NM.USER_TAKEOVER_MODAL_TAKE_ACTION)
         }
       }), (0, i.jsx)(r.Button, {
-        text: u.intl.string(u.t.xLkGzM),
+        text: u.intl.string(u.t.xLkGzP),
         variant: "secondary",
         fullWidth: true,
         onClick: () => {

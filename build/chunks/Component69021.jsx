@@ -94,8 +94,8 @@ function f() {
   } = (0, Chunk482215.i)(), {
     setHorizontalSpacing: R,
     setVerticalSpacing: m
-  } = Chunk482215.i.getState(), k = Chunk695346.zY.useSetting(), Z = [];
-  return exports && require && (Z.push((0, Chunk951288.jsx)(Chunk481060.sNh, {
+  } = Chunk482215.i.getState(), Z = Chunk695346.zY.useSetting(), k = [];
+  return exports && require && (k.push((0, Chunk951288.jsx)(Chunk481060.sNh, {
     id: "overrides",
     label: "Overrides",
     action: () => {
@@ -104,7 +104,7 @@ function f() {
         subsection: Chunk726985.s6.DEVELOPER_OPTIONS_OVERRIDES_TAB
       })
     }
-  }, "overrides")), Z.push((0, Chunk951288.jsx)(Chunk481060.sNh, {
+  }, "overrides")), k.push((0, Chunk951288.jsx)(Chunk481060.sNh, {
     id: "manual-triggers",
     label: "Manual Triggers",
     action: () => {
@@ -113,7 +113,7 @@ function f() {
         subsection: Chunk726985.s6.DEVELOPER_OPTIONS_MANUAL_TRIGGERS_TAB
       })
     }
-  }, "manual-triggers")), Z.push((0, Chunk951288.jsxs)(Chunk481060.sNh, {
+  }, "manual-triggers")), k.push((0, Chunk951288.jsxs)(Chunk481060.sNh, {
     id: "developer-flags",
     label: "Developer Flags",
     action: () => {
@@ -143,9 +143,9 @@ function f() {
     }, "forced-canary"), (0, Chunk951288.jsx)(Chunk481060.S89, {
       id: "always-deliver",
       label: "Ads auto-targeting",
-      checked: k,
+      checked: Z,
       action: () => {
-        Chunk695346.zY.updateSetting(!k)
+        Chunk695346.zY.updateSetting(!Z)
       }
     }, "always-deliver"), (0, Chunk951288.jsx)(Chunk481060.S89, {
       id: "source-maps",
@@ -202,7 +202,7 @@ function f() {
         })
       }
     }, "disable-collections-cache")]
-  }, "developer-flags")), Z.push((0, Chunk951288.jsxs)(Chunk481060.sNh, {
+  }, "developer-flags")), k.push((0, Chunk951288.jsxs)(Chunk481060.sNh, {
     id: "logging",
     label: "Logging",
     action: () => {
@@ -248,7 +248,7 @@ function f() {
         })
       }
     }, "analytics-debugger")]
-  }, "logging")), Z.push((0, Chunk951288.jsx)(Chunk481060.sNh, {
+  }, "logging")), k.push((0, Chunk951288.jsx)(Chunk481060.sNh, {
     id: "design-tools",
     label: "Design Tools",
     action: () => {
@@ -267,7 +267,7 @@ function f() {
         })
       }
     }, "layout-debugging")
-  }, "design-tools")), module && (Z.push((0, Chunk951288.jsx)(Chunk481060.II_, {
+  }, "design-tools")), module && (k.push((0, Chunk951288.jsx)(Chunk481060.II_, {
     id: "horizontal-spacing",
     label: "Horizontal Spacing",
     control: (e, t) => (0, a.jsx)(l._wy, y(E({}, e), {
@@ -279,7 +279,7 @@ function f() {
       renderValue: e => "".concat(Math.round(e), "px"),
       "aria-label": "Horizontal Spacing"
     }))
-  }, "horizontal-spacing")), Z.push((0, Chunk951288.jsx)(Chunk481060.II_, {
+  }, "horizontal-spacing")), k.push((0, Chunk951288.jsx)(Chunk481060.II_, {
     id: "vertical-spacing",
     label: "Vertical Spacing",
     control: (e, t) => (0, a.jsx)(l._wy, y(E({}, e), {
@@ -291,5 +291,5 @@ function f() {
       "aria-label": "Horizontal Spacing",
       renderValue: e => "".concat(Math.round(e), "px")
     }))
-  }, "vertical-spacing")))), 0 === Z.length ? null : Z
+  }, "vertical-spacing")))), 0 === k.length ? null : k
 }

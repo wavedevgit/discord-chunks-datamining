@@ -31,7 +31,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk46140 = require("./46140.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk868317 = require("./868317.js");
+  Chunk997267 = require("./997267.js");
 
 function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -117,17 +117,17 @@ function j(e) {
         idx: null == (r = o.userStatus) ? true : r.claimedTier
       }) : null,
       t = null != (i = null == e ? true : e.messages.nameWithArticle) ? i : null;
-    return null != t ? R.intl.formatToPlainString(R.t.RrxtPT, {
+    return null != t ? R.intl.formatToPlainString(R.t.RrxtPU, {
       reward: t,
       date: d
-    }) : R.intl.formatToPlainString(R.t.zNoqRU, {
+    }) : R.intl.formatToPlainString(R.t.zNoqRe, {
       reward: E,
       date: d
     })
   }
-  if (f) return g ? R.intl.formatToPlainString(R.t.l1jCMz, {
+  if (f) return g ? R.intl.formatToPlainString(R.t["l1jCM/"], {
     date: d
-  }) : R.intl.formatToPlainString(R.t.zNoqRU, {
+  }) : R.intl.formatToPlainString(R.t.zNoqRe, {
     reward: E,
     date: d
   });
@@ -135,9 +135,9 @@ function j(e) {
     quest: o,
     idx: 0
   }) : null;
-  return l ? R.intl.formatToPlainString(R.t.DT3aub, {
+  return l ? R.intl.formatToPlainString(R.t.DT3auf, {
     reward: null != (a = null == b ? true : b.messages.nameWithArticle) ? a : E
-  }) : null != b && null != b.approximateCount ? R.intl.format(R.t["4bMK19"], {
+  }) : null != b && null != b.approximateCount ? R.intl.format(R.t["4bMK1z"], {
     maxReward: b.messages.nameWithArticle,
     maxRewardCount: (0, p.Bs)(b.approximateCount, s),
     helpCenterLink: _.Z.getArticleURL(N.BhN.QUESTS_LEARN_MORE)
@@ -260,7 +260,7 @@ let B = e => {
       },
       "aria-hidden": !G,
       children: [(0, r.jsx)(l.u, {
-        text: z ? R.intl.string(R.t["04MTGR"]) : null,
+        text: z ? R.intl.string(R.t["04MTGf"]) : null,
         shouldShow: z,
         children: (0, r.jsxs)("div", {
           className: P.rewardTileWrapper,
@@ -289,7 +289,7 @@ let B = e => {
         children: [(0, r.jsx)(u.Text, {
           variant: M(a, c, D),
           className: P.taskInstructions,
-          children: _ ? R.intl.formatToPlainString(R.t["ge+AJi"], {
+          children: _ ? R.intl.formatToPlainString(R.t["ge+AJp"], {
             questName: n.config.messages.questName
           }) : B
         }), (0, r.jsx)(u.Text, {
@@ -311,11 +311,11 @@ let B = e => {
         children: [(0, r.jsx)(u.Button, {
           variant: "secondary",
           disabled: true,
-          text: R.intl.string(R.t.V293qq)
+          text: R.intl.string(R.t.V293qn)
         }), (0, r.jsx)(u.Button, {
           variant: "primary",
           onClick: () => (0, T.openQuestMinorEnrollmentBlockModal)(n, a, A),
-          text: R.intl.string(R.t.vY9GgI)
+          text: R.intl.string(R.t.vY9GgG)
         })]
       }) : (0, r.jsxs)(u.ButtonGroup, {
         direction: "horizontal",

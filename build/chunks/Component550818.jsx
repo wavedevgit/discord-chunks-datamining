@@ -1,4 +1,4 @@
-/** Chunk was on 63962 **/
+/** Chunk was on 91053 **/
 /** chunk id: 550818, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => I
@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk907179 = require("./907179.jsx"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk951869 = require("./951869.js"),
+  Chunk491010 = require("./491010.js"),
   Chunk268293 = require("./268293.js");
 
 function C(e) {
@@ -67,7 +67,7 @@ function I(e) {
         ref: N,
         user: t,
         displayProfile: S,
-        themeType: j.l.SIDEBAR,
+        themeType: O.l.SIDEBAR,
         themeOverride: E,
         children: (0, r.jsx)(l.u2D, {
           children: (0, r.jsxs)("div", {
@@ -85,10 +85,10 @@ function I(e) {
                   user: t
                 }), (0, r.jsx)(s.Heading, {
                   variant: "heading-lg/bold",
-                  children: O.intl.string(O.t.b33pLC)
+                  children: j.intl.string(j.t.b33pLD)
                 }), (0, r.jsx)(s.Text, {
                   variant: "text-sm/medium",
-                  children: O.intl.format(Z ? O.t["8F+WNz"] : O.t["/cZp5u"], {
+                  children: j.intl.format(Z ? j.t["8F+WNz"] : j.t["/cZp5s"], {
                     username: p.ZP.getName(n.guild_id, n.id, t)
                   })
                 })]

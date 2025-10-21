@@ -17,7 +17,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk573702 = require("./573702.jsx"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk491881 = require("./491881.js"),
+  Chunk108626 = require("./108626.js"),
   Chunk236078 = require("./236078.js"),
   Chunk278345 = require("./278345.js"),
   Chunk895601 = require("./895601.js"),
@@ -108,7 +108,7 @@ let T = function(e) {
     U = null != j && null != w,
     G = C && U && w === l.h8.REVIEW,
     B = A ? "nitro-pink" : "nitro-green",
-    Z = A ? p.intl.string(p.t["lG6a5+"]) : p.intl.string(p.t["t9uG/v"]);
+    Z = A ? p.intl.string(p.t.lG6a5x) : p.intl.string(p.t["t9uG/o"]);
   return x ? (0, r.jsx)("div", {
     className: h.container,
     children: (0, r.jsx)(o.$1m, {

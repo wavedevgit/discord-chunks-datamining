@@ -1,4 +1,4 @@
-/** Chunk was on 65825 **/
+/** Chunk was on 87943 **/
 /** chunk id: 849171, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   OV: () => M,
@@ -35,7 +35,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk823379 = require("./823379.js"),
   Chunk5192 = require("./5192.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk412222 = require("./412222.js");
+  Chunk798242 = require("./798242.js");
 let D = ["embedded_background"];
 
 function M(e) {
@@ -104,7 +104,7 @@ function k(e) {
         [N.medium]: 1 === b
       }),
       variant: "text-sm/normal",
-      children: E.length > 1 ? T.intl.formatToPlainString(T.t.cpe6CA, {
+      children: E.length > 1 ? T.intl.formatToPlainString(T.t.cpe6CK, {
         username: O,
         count: E.length - 1
       }) : T.intl.formatToPlainString(T.t["7Uuia2"], {
@@ -120,7 +120,7 @@ function k(e) {
     }), (0, r.jsx)("div", {
       className: N.buttons,
       children: w ? (0, r.jsx)(s.Button, {
-        text: T.intl.string(T.t["4i2vj4"]),
+        text: T.intl.string(T.t["4i2vj+"]),
         onClick: function(e) {
           e.stopPropagation(), null != h && (0, f.Z)({
             applicationId: h.applicationId,

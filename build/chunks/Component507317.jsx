@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 507317, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk486324 = require("./486324.js"),
   Chunk200299 = require("./200299.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk359449 = require("./359449.js");
+  Chunk197530 = require("./197530.js");
 let j = function(e) {
   let {
     guild: t
@@ -30,7 +30,7 @@ let j = function(e) {
     (0, l.ZDy)(async () => {
       let {
         default: l
-      } = await Promise.all([n.e("91689"), n.e("59732"), n.e("63188")]).then(n.bind(n, 712451));
+      } = await Promise.all([n.e("91689"), n.e("59732"), n.e("7016")]).then(n.bind(n, 712451));
       return n => (0, r.jsx)(l, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -88,7 +88,7 @@ let j = function(e) {
     }) : null,
     disabled: !j,
     onChange: v,
-    hint: b.intl.string(b.t.NyXznp),
+    hint: b.intl.string(b.t.NyXznh),
     enabled: j,
     maxFileSizeBytes: h.B
   });
@@ -98,7 +98,7 @@ let j = function(e) {
       children: [(0, r.jsx)(l.Heading, {
         className: x.header,
         variant: "heading-lg/extrabold",
-        children: b.intl.string(b.t.BBj1nZ)
+        children: b.intl.string(b.t.BBj1nY)
       }), (0, r.jsx)(s.Z, {
         className: x.boostIndicator,
         guild: t,
@@ -112,13 +112,13 @@ let j = function(e) {
         children: [(0, r.jsx)(l.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
-          children: b.intl.string(b.t.Vwintr)
+          children: b.intl.string(b.t.Vwintv)
         }), (0, r.jsx)("div", {
           className: x.uploadButton,
           children: (0, r.jsx)(d.Z, {
             onChange: v,
             maxFileSizeBytes: h.B,
-            text: b.intl.string(b.t.yG2pUl),
+            text: b.intl.string(b.t.yG2pUi),
             size: "md",
             variant: "primary"
           })
@@ -133,7 +133,7 @@ let j = function(e) {
       children: [(0, r.jsx)(l.Heading, {
         className: x.header,
         variant: "heading-lg/extrabold",
-        children: b.intl.string(b.t.BBj1nZ)
+        children: b.intl.string(b.t.BBj1nY)
       }), (0, r.jsx)(s.Z, {
         className: x.boostIndicator,
         guild: t,
@@ -148,11 +148,11 @@ let j = function(e) {
           variant: "text-sm/normal",
           color: "header-secondary",
           className: x.bannerDescription,
-          children: b.intl.string(b.t.Vwintr)
+          children: b.intl.string(b.t.Vwintv)
         }), (0, r.jsx)(l.Button, {
           variant: "expressive",
           icon: l.Ucv,
-          text: b.intl.string(b.t["+7XY39"]),
+          text: b.intl.string(b.t["+7XY31"]),
           onClick: _
         })]
       }), (0, r.jsx)("div", {

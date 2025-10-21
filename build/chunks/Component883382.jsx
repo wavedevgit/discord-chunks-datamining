@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk726985 = require("./726985.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk412297 = require("./412297.js");
+  Chunk660886 = require("./660886.js");
 
 function g() {
   let e = (0, Chunk442837.cj)([Chunk480294.Z], () => Chunk480294.Z.hasConsented(Chunk981631.pjP.PERSONALIZATION)),
@@ -25,26 +25,26 @@ function g() {
     g = (0, Chunk915009.LN)(),
     E = e => {
       e ? (0, o.g)([p.pjP.PERSONALIZATION], []).catch(f.S).then(() => n(true)) : (0, f.V)({
-        header: h.intl.string(h.t["9SNpzs"]),
-        confirmText: h.intl.string(h.t["9g5UGx"]),
-        cancelText: h.intl.string(h.t["+ZLPw8"]),
+        header: h.intl.string(h.t["9SNpzv"]),
+        confirmText: h.intl.string(h.t["9g5UGw"]),
+        cancelText: h.intl.string(h.t["+ZLPw9"]),
         onConfirm: () => {
           (0, o.g)([], [p.pjP.PERSONALIZATION]).catch(f.S).then(() => n(false))
         },
-        body: h.intl.string(h.t.gJvDDg)
+        body: h.intl.string(h.t.gJvDDh)
       })
     };
   return (0, Chunk951288.jsx)(Chunk838436.U, {
     setting: Chunk726985.s6.PRIVACY_DATA_PERSONALIZE_V2,
     children: (0, Chunk951288.jsx)(Chunk51331.ZP, {
-      title: Chunk388032.intl.string(Chunk388032.t.MNKzys),
-      note: Chunk388032.intl.format(Chunk388032.t["eQL/Mj"], {
+      title: Chunk388032.intl.string(Chunk388032.t.MNKzyg),
+      note: Chunk388032.intl.format(Chunk388032.t["eQL/Mr"], {
         helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.DATA_USED_FOR_RECOMMENDED)
       }),
       value: exports,
       onChange: E,
       disabled: g,
-      tooltipText: g ? Chunk388032.intl.string(Chunk412297.default["6Af/c3"]) : true
+      tooltipText: g ? Chunk388032.intl.string(Chunk660886.default["6Af/cw"]) : true
     })
   })
 }

@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk45474 = require("./45474.js"),
   Chunk594135 = require("./594135.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk300845 = require("./300845.js");
+  Chunk181679 = require("./181679.js");
 let C = t => {
     let {
       churnUserDiscountOffer: e
@@ -47,7 +47,7 @@ let C = t => {
     }, [y]);
     let v = (0, Chunk847903.Z)(),
       T = "US" === v.ipCountryCode && "CA" === v.ipSubdivisionCode;
-    if (Chunk300845) return (0, Chunk951288.jsx)(Chunk793030.Modal, {
+    if (Chunk181679) return (0, Chunk951288.jsx)(Chunk793030.Modal, {
       transitionState: module,
       title: "",
       actions: [],
@@ -57,22 +57,22 @@ let C = t => {
     });
     let E = [];
     return null != Chunk10508 ? E.push({
-      text: Chunk388032.intl.string(Chunk388032.t.zrCzVF),
+      text: Chunk388032.intl.string(Chunk388032.t.zrCzVB),
       onClick: () => Chunk512722(Chunk45474.R.CONFIRM_DISCOUNT),
       variant: "secondary",
       icon: Chunk481060.SrA
     }) : E.push({
-      text: Chunk388032.intl.string(Chunk388032.t.h9tkAA),
+      text: Chunk388032.intl.string(Chunk388032.t.h9tkAK),
       onClick: () => exports(),
       variant: "secondary"
     }), E.push({
-      text: T ? Chunk388032.intl.string(Chunk388032.t.PfnxqK) : Chunk388032.intl.string(Chunk388032.t["3PatS0"]),
+      text: T ? Chunk388032.intl.string(Chunk388032.t.PfnxqD) : Chunk388032.intl.string(Chunk388032.t["3PatSz"]),
       onClick: () => Chunk512722(Chunk45474.R.CONFIRM),
       variant: "primary"
     }), (0, Chunk951288.jsx)(Chunk793030.Modal, {
       transitionState: module,
-      title: Chunk388032.intl.string(Chunk388032.t.PWq8TE),
-      subtitle: Chunk388032.intl.formatToPlainString(Chunk388032.t.nsGVzs, {}),
+      title: Chunk388032.intl.string(Chunk388032.t.PWq8TL),
+      subtitle: Chunk388032.intl.formatToPlainString(Chunk388032.t.nsGVzg, {}),
       actions: E,
       preview: null !== Chunk10508 && (0, Chunk951288.jsx)(C, {
         churnUserDiscountOffer: Chunk10508

@@ -30,13 +30,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk723359 = require("./723359.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk194783 = require("./194783.js");
+  Chunk236202 = require("./236202.js");
 
 function x() {
   return (0, Chunk951288.jsx)("div", {
-    className: Chunk194783.inviteToolbar,
+    className: Chunk236202.inviteToolbar,
     children: (0, Chunk951288.jsx)(Chunk518311.Z, {
-      tooltip: Chunk388032.intl.string(Chunk388032.t.HfOgAw),
+      tooltip: Chunk388032.intl.string(Chunk388032.t["HfOgA/"]),
       location: "PeoplePageHeaderToolbar-CreateDMButton"
     })
   })
@@ -76,23 +76,23 @@ let A = function(e) {
     U = [{
       id: N.pJs.ONLINE,
       show: w.filter(N.pJs.ONLINE).length > 0,
-      content: P.intl.string(P.t.b9w3bG),
+      content: P.intl.string(P.t.b9w3bO),
       className: j.item
     }, {
       id: N.pJs.ALL,
       show: R[N.OGo.FRIEND] > 0,
-      content: P.intl.string(P.t.PfjFjY),
+      content: P.intl.string(P.t.PfjFjR),
       className: j.item
     }, {
       id: N.pJs.PENDING,
       show: w.filter(N.pJs.PENDING).length > 0,
       content: (0, r.jsxs)(r.Fragment, {
-        children: [P.intl.string(P.t.p6IHGB), A > 0 && (0, r.jsx)(c.mAB, {
+        children: [P.intl.string(P.t.p6IHGE), A > 0 && (0, r.jsx)(c.mAB, {
           count: A,
           className: j.badge
         })]
       }),
-      ariaLabel: P.intl.formatToPlainString(P.t.OAC0Z2, {
+      ariaLabel: P.intl.formatToPlainString(P.t.OAC0Z4, {
         count: A.toString()
       }),
       className: j.item
@@ -100,12 +100,12 @@ let A = function(e) {
       id: N.pJs.SUGGESTIONS,
       show: L > 0,
       content: (0, r.jsxs)(r.Fragment, {
-        children: [P.intl.string(P.t["8rSi19"]), (0, r.jsx)(c.mAB, {
+        children: [P.intl.string(P.t["8rSi1/"]), (0, r.jsx)(c.mAB, {
           count: L,
           className: j.badge
         })]
       }),
-      ariaLabel: P.intl.formatToPlainString(P.t.AbMQp6, {
+      ariaLabel: P.intl.formatToPlainString(P.t.AbMQp7, {
         count: L.toString()
       }),
       className: j.item
@@ -113,9 +113,9 @@ let A = function(e) {
       id: N.pJs.ADD_FRIEND,
       show: true,
       content: (0, r.jsx)("span", {
-        children: P.intl.string(P.t.j0wbEx)
+        children: P.intl.string(P.t.j0wbE5)
       }),
-      ariaLabel: P.intl.string(P.t.j0wbEx),
+      ariaLabel: P.intl.string(P.t.j0wbE5),
       className: a()(j.item, j.addFriend)
     }],
     G = y.o.useConfig({
@@ -130,9 +130,9 @@ let A = function(e) {
     titleId: k
   }), (0, r.jsxs)("main", {
     className: j.container,
-    "aria-label": P.intl.string(P.t.TdEu5e),
+    "aria-label": P.intl.string(P.t.TdEu5X),
     children: [(0, r.jsx)(f.yY, {
-      location: P.intl.string(P.t.TdEu5e)
+      location: P.intl.string(P.t.TdEu5X)
     }), (0, r.jsx)(c.f6W, {
       theme: b,
       children: e => (0, r.jsxs)(m.Z, {
@@ -146,9 +146,9 @@ let A = function(e) {
           "aria-hidden": true
         }), (0, r.jsx)(m.Z.Title, {
           id: M,
-          children: P.intl.string(P.t.TdEu5e)
+          children: P.intl.string(P.t.TdEu5X)
         }), (0, r.jsx)(m.Z.Divider, {}), (0, r.jsx)(c.njP, {
-          "aria-label": P.intl.string(P.t.TdEu5e),
+          "aria-label": P.intl.string(P.t.TdEu5X),
           selectedItem: Z,
           type: "top-pill",
           onItemSelect: D,

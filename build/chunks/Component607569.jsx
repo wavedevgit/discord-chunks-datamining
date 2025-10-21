@@ -1,7 +1,7 @@
 /** Chunk was on 94064 **/
 /** chunk id: 607569, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => v
+  default: () => j
 }), require("./388685.js"), require("./704826.js"), require("./35282.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk915509 = require("./915509.jsx"),
   Chunk592286 = require("./592286.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk567147 = require("./567147.js");
+  Chunk1904 = require("./1904.js");
 let x = "MULTIPLE_CHOICE",
   y = e => {
     let {
@@ -27,7 +27,7 @@ let x = "MULTIPLE_CHOICE",
       onClear: s,
       onReorder: u,
       isDropHovered: g
-    } = e, m = l.useRef(null), b = l.useRef(null), [, y, v] = (0, o.c)({
+    } = e, m = l.useRef(null), b = l.useRef(null), [, y, j] = (0, o.c)({
       type: x,
       item: {
         choice: t,
@@ -36,7 +36,7 @@ let x = "MULTIPLE_CHOICE",
       end: (e, t) => {
         null == e || t.didDrop() || u(e.choice, null, true)
       }
-    }), [, j] = (0, c.L)({
+    }), [, v] = (0, c.L)({
       accept: x,
       hover: (e, t) => {
         var r;
@@ -52,9 +52,9 @@ let x = "MULTIPLE_CHOICE",
         u(e.choice, n, true)
       }
     });
-    return l.useLayoutEffect(() => (y(b), v(j(m)), () => {
-      y(null), j(null)
-    }), [y, j, v]), (0, r.jsxs)("div", {
+    return l.useLayoutEffect(() => (y(b), j(v(m)), () => {
+      y(null), v(null)
+    }), [y, v, j]), (0, r.jsxs)("div", {
       ref: m,
       className: a()(f.draggableInputContainer, {
         [f.dragging]: g
@@ -72,7 +72,7 @@ let x = "MULTIPLE_CHOICE",
         children: [(0, r.jsx)(d.oil, {
           autoFocus: true,
           onChange: e => i(e),
-          placeholder: h.intl.formatToPlainString(h.t["Ep/pbG"], {
+          placeholder: h.intl.formatToPlainString(h.t["Ep/pbH"], {
             index: n + 1
           }),
           value: t
@@ -81,7 +81,7 @@ let x = "MULTIPLE_CHOICE",
           children: (0, r.jsx)(d.hU, {
             icon: d.k$p,
             size: "sm",
-            "aria-label": h.intl.string(h.t.VkKicX),
+            "aria-label": h.intl.string(h.t.VkKicb),
             variant: "icon-only",
             onClick: s
           })
@@ -98,27 +98,27 @@ let x = "MULTIPLE_CHOICE",
       })]
     })
   },
-  v = function(e) {
+  j = function(e) {
     var t, n, i, a;
     let {
       field: o,
       onSave: c,
       onClose: p
-    } = e, [x, v] = l.useState(null != (t = null == o ? true : o.label) ? t : ""), [j, C] = l.useState(null != (n = null == o ? true : o.choices) ? n : [""]), [_, I] = l.useState(null), [O, w] = l.useState(null), E = (e, t, n) => {
-      if (null == j) return;
+    } = e, [x, j] = l.useState(null != (t = null == o ? true : o.label) ? t : ""), [v, C] = l.useState(null != (n = null == o ? true : o.choices) ? n : [""]), [_, I] = l.useState(null), [O, w] = l.useState(null), E = (e, t, n) => {
+      if (null == v) return;
       null != _ && I(null);
-      let r = j.indexOf(e),
-        l = [...j];
+      let r = v.indexOf(e),
+        l = [...v];
       null != t && t !== r && (l.splice(r, 1), l.splice(t, 0, e), C(l)), n ? null !== t && w(null) : t !== O && w(t)
     }, P = async () => {
       null != _ && I(null);
       let e = x.trim();
-      if ("" === e) return void I(h.intl.string(h.t["G+TI4+"]));
-      if (0 === j.map(e => e.trim()).filter(e => "" !== e).length) return void I(h.intl.string(h.t.jZoHgI));
+      if ("" === e) return void I(h.intl.string(h.t["G+TI44"]));
+      if (0 === v.map(e => e.trim()).filter(e => "" !== e).length) return void I(h.intl.string(h.t.jZoHgI));
       let t = {
         field_type: g.QJ.MULTIPLE_CHOICE,
         label: e,
-        choices: j,
+        choices: v,
         required: true
       };
       try {
@@ -146,7 +146,7 @@ let x = "MULTIPLE_CHOICE",
       return e
     }({}, e), a = a = {
       errorText: _,
-      title: h.intl.string(h.t.ooKh3t),
+      title: h.intl.string(h.t.ooKh3m),
       onConfirm: P,
       onCancel: p,
       children: [(0, r.jsx)("div", {
@@ -156,36 +156,36 @@ let x = "MULTIPLE_CHOICE",
           onChange: e => {
             null != _ && I(null);
             let t = e.replace(/(\r\n|\n|\r)/g, " ");
-            t.length > b.XN && (t = e.slice(0, b.XN)), v(t)
+            t.length > b.XN && (t = e.slice(0, b.XN)), j(t)
           },
-          placeholder: h.intl.string(h.t.fqVmbG),
+          placeholder: h.intl.string(h.t.fqVmbL),
           value: x
         })
       }), (0, r.jsx)("div", {
         className: f.divider
-      }), j.map((e, t) => (0, r.jsx)(y, {
+      }), v.map((e, t) => (0, r.jsx)(y, {
         choice: e,
         index: t,
         onChange: e => ((e, t) => {
           null != _ && I(null);
           let n = e.replace(/(\r\n|\n|\r)/g, " ");
           n.length > b.au && (n = n.slice(0, b.au));
-          let r = [...j];
+          let r = [...v];
           r[t] = n, C(r)
         })(e, t),
         onClear: () => (e => {
           null != _ && I(null);
-          let t = [...j.slice(0, e), ...j.slice(e + 1)];
+          let t = [...v.slice(0, e), ...v.slice(e + 1)];
           C(0 === t.length ? [""] : t)
         })(t),
         onReorder: E,
         isDropHovered: t === O
-      }, "choice-".concat(t))), j.length !== b.mb && (0, r.jsx)("div", {
+      }, "choice-".concat(t))), v.length !== b.mb && (0, r.jsx)("div", {
         className: f.addItemContainer,
         children: (0, r.jsxs)(d.P3F, {
           className: f.addItemButton,
           onClick: () => {
-            null != _ && I(null), j.length !== b.mb && C([...j, ""])
+            null != _ && I(null), v.length !== b.mb && C([...v, ""])
           },
           children: [(0, r.jsx)(d.oFk, {
             size: "custom",
@@ -195,7 +195,7 @@ let x = "MULTIPLE_CHOICE",
           }), (0, r.jsx)(d.Text, {
             color: "text-link",
             variant: "text-md/normal",
-            children: h.intl.string(h.t.sVfx9v)
+            children: h.intl.string(h.t.sVfx9r)
           })]
         })
       })]

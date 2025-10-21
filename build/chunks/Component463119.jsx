@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk830652 = require("./830652.js");
+  Chunk677372 = require("./677372.js");
 
 function L(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -136,7 +136,7 @@ let M = e => {
         selected: t,
         route: C,
         icon: null != a ? a : c.EOn,
-        text: Z.intl.string(Z.t.pWG4zc),
+        text: Z.intl.string(Z.t.pWG4ze),
         locationState: n
       }, b, m), {
         onMouseEnter: u,
@@ -211,7 +211,7 @@ let M = e => {
       delay: 100,
       allowOverflow: true,
       hideOnClick: false,
-      "aria-label": "string" == typeof H ? H : Z.intl.string(Z.t.rSXaxc),
+      "aria-label": "string" == typeof H ? H : Z.intl.string(Z.t.rSXaxY),
       children: e => (0, r.jsxs)(U, R(L(R(L({
         className: null != I.entryPointClassName ? (0, v.l)(w, I.entryPointClassName) : true
       }, C), {

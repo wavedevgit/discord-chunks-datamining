@@ -1,4 +1,4 @@
-/** Chunk was on 41794 **/
+/** Chunk was on 45141 **/
 /** chunk id: 294978, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk392711 = require("./392711.js"),
-  l = require.n(Chunk392711),
+  a = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk344185 = require("./344185.js"),
@@ -15,10 +15,10 @@ var Chunk392711 = require("./392711.js"),
 
 function u(e) {
   let t = (0, d.Xb)(e),
-    r = (0, a.e7)([c.Z], () => !l().isEmpty(c.Z.getThreadsForGuild(e.id)));
+    r = (0, l.e7)([c.Z], () => !a().isEmpty(c.Z.getThreadsForGuild(e.id)));
   return t && r ? (0, i.jsx)(o.sNh, {
     id: "active-threads",
-    label: s.intl.string(s.t.TM6erq),
+    label: s.intl.string(s.t.TM6err),
     icon: o.kBi,
     action: () => {
       (0, o.ZDy)(async () => {

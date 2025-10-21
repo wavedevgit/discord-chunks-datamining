@@ -8,7 +8,7 @@ require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk174767 = require("./174767.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk607582 = require("./607582.js");
+  Chunk33108 = require("./33108.js");
 
 function o(t) {
   let {
@@ -32,7 +32,7 @@ function o(t) {
           className: l.__invalid_title,
           variant: "heading-lg/semibold",
           color: "header-primary",
-          children: s.intl.string(s.t.P8nDIC)
+          children: s.intl.string(s.t.P8nDIN)
         }), (0, i.jsx)(a.olH, {
           onClick: e
         })]
@@ -40,18 +40,18 @@ function o(t) {
         variant: "text-md/normal",
         color: "text-default",
         className: l.__invalid_body,
-        children: s.intl.string(s.t.fwFcj4)
+        children: s.intl.string(s.t.fwFcj5)
       })]
     }), (0, i.jsx)(a.mzw, {
       children: (0, i.jsxs)(a.ButtonGroup, {
         direction: "horizontal-reverse",
         children: [(0, i.jsx)(a.Button, {
           variant: "critical-primary",
-          text: s.intl.string(s.t["5I4fSk"]),
+          text: s.intl.string(s.t["5I4fSm"]),
           onClick: d
         }), (0, i.jsx)(a.Button, {
           variant: "secondary",
-          text: s.intl.string(s.t["ETE/oK"]),
+          text: s.intl.string(s.t["ETE/oC"]),
           onClick: e
         })]
       })

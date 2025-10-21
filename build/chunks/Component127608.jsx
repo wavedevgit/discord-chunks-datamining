@@ -1,4 +1,4 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 127608, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => o
@@ -45,8 +45,8 @@ function o() {
       var r, o;
       return (0, i.jsx)(t, (r = a({}, n), o = o = {
         header: l.intl.string(l.t.GFr0GR),
-        body: l.intl.string(l.t.QSk6Ex),
-        confirmText: l.intl.string(l.t.BK8LKy),
+        body: l.intl.string(l.t.QSk6E8),
+        confirmText: l.intl.string(l.t["BK8LK+"]),
         onConfirm: e
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
         var n = Object.keys(e);

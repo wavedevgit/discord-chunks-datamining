@@ -9,9 +9,9 @@ var Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk162190 = require("./162190.js"),
-  Chunk45765 = require("./45765.js"),
+  Chunk470658 = require("./470658.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk3804 = require("./3804.js");
+  Chunk722417 = require("./722417.js");
 
 function d(e) {
   let {
@@ -53,7 +53,7 @@ function d(e) {
           color: r.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK
         }), (0, l.jsx)(r.Text, {
           variant: "text-sm/medium",
-          children: u.intl.formatToPlainString(t.plans.length > 1 ? o.default["G/aTXl"] : o.default.r9pa9P, {
+          children: u.intl.formatToPlainString(t.plans.length > 1 ? o.default["G/aTXi"] : o.default.r9pa9K, {
             boostCount: t.baseCost
           })
         })]

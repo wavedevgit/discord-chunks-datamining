@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk439959 = require("./439959.js"),
   Chunk125988 = require("./125988.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk928479 = require("./928479.js");
+  Chunk706053 = require("./706053.js");
 
 function v(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -157,7 +157,7 @@ let O = () => 80,
           }), (0, n.jsx)(o.Text, {
             variant: "text-xs/normal",
             color: "header-primary",
-            children: (0, m.ad)(t, r) ? x.intl.string(x.t.CHf9iI) : x.intl.string(x.t.PoWNfX)
+            children: (0, m.ad)(t, r) ? x.intl.string(x.t.CHf9iJ) : x.intl.string(x.t.PoWNfe)
           })]
         }, y)).with(p.oT, () => (0, n.jsxs)(f, {
           style: j,
@@ -171,7 +171,7 @@ let O = () => 80,
           }), (0, n.jsx)(o.Text, {
             variant: "text-xs/normal",
             color: "header-primary",
-            children: x.intl.string(x.t.pWG4zc)
+            children: x.intl.string(x.t.pWG4ze)
           })]
         }, y)).otherwise(e => {
           let r = (null == i ? true : i.skuId) === e.skuId;

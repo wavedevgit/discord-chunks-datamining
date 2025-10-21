@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk759291 = require("./759291.js");
+  Chunk505754 = require("./505754.js");
 
 function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -183,7 +183,7 @@ let R = Chunk647438.memo(e => {
           className: T.flipCardButtonContainer,
           children: (0, r.jsx)(u.Button, {
             variant: "primary",
-            text: I.intl.string(I.t.dcztdX),
+            text: I.intl.string(I.t.dcztdU),
             onClick: () => w(true)
           })
         })]

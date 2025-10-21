@@ -1,4 +1,4 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 538084, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => p,
@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk45251 = require("./45251.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk772676 = require("./772676.js");
+  Chunk206536 = require("./206536.js");
 let d = "SCHEDULED_MESSAGE_CREATE_MODAL_KEY";
 
 function p(e) {
@@ -24,7 +24,7 @@ function p(e) {
   return (0, i.jsxs)(o.Y0X, {
     transitionState: n,
     size: o.CgR.SMALL,
-    "aria-label": c.intl.string(c.t.WbFpq6),
+    "aria-label": c.intl.string(c.t.WbFpq4),
     parentComponent: "ScheduledMessageCreateModal",
     children: [(0, i.jsx)(o.olH, {
       onClick: l,
@@ -34,7 +34,7 @@ function p(e) {
       className: u.header,
       children: (0, i.jsx)(o.Heading, {
         variant: "heading-xl/medium",
-        children: c.intl.string(c.t["3+ii4O"])
+        children: c.intl.string(c.t["3+ii4F"])
       })
     }), (0, i.jsx)(o.hzk, {
       children: (0, i.jsxs)("div", {
@@ -43,7 +43,7 @@ function p(e) {
           className: u.column,
           children: (0, i.jsx)(o.Wrb, {
             required: true,
-            label: c.intl.string(c.t.pSZKvL),
+            label: c.intl.string(c.t.pSZKvM),
             value: m,
             onSelect: e => {
               g(e)
@@ -55,7 +55,7 @@ function p(e) {
         }), (0, i.jsx)("div", {
           className: u.column,
           children: (0, i.jsx)(o.MGJ, {
-            label: c.intl.string(c.t.GOmEb2),
+            label: c.intl.string(c.t.GOmEb8),
             required: true,
             value: m,
             onChange: e => {
@@ -73,12 +73,12 @@ function p(e) {
         className: u.cancelButton,
         children: (0, i.jsx)(o.Button, {
           variant: "secondary",
-          text: c.intl.string(c.t["ETE/oK"]),
+          text: c.intl.string(c.t["ETE/oC"]),
           onClick: l
         })
       }), (0, i.jsx)(o.Button, {
         variant: "primary",
-        text: c.intl.string(c.t.iQ1Swc),
+        text: c.intl.string(c.t.iQ1SwX),
         onClick: () => {
           (0, s._e)({
             channelId: t.id,

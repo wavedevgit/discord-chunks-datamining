@@ -32,7 +32,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk921944 = require("./921944.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk549258 = require("./549258.js");
+  Chunk164161 = require("./164161.js");
 let D = () => {
     var e, t, n;
     let i = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk74538.ZP.isPremium(Chunk594174.default.getCurrentUser())),
@@ -41,10 +41,10 @@ let D = () => {
     return (0, Chunk951288.jsx)(Chunk767714.Z, {
       size: Chunk755721.zx.Sizes.MEDIUM,
       textOptions: {
-        textOverride: Chunk647438 ? Chunk388032.intl.string(Chunk388032.t.IJI7ys) : o ? (0, Chunk74538.Rt)({
+        textOverride: Chunk647438 ? Chunk388032.intl.string(Chunk388032.t.IJI7yk) : o ? (0, Chunk74538.Rt)({
           intervalType: null == Chunk120356 || null == (t = Chunk120356.subscription_trial) ? true : exports.interval,
           intervalCount: null == Chunk120356 || null == (n = Chunk120356.subscription_trial) ? true : require.interval_count
-        }) : Chunk388032.intl.string(Chunk388032.t.mr4K7O)
+        }) : Chunk388032.intl.string(Chunk388032.t.mr4K7D)
       },
       subscriptionTier: Chunk474936.Si.TIER_2
     })
@@ -69,7 +69,7 @@ let D = () => {
         className: w.title,
         children: [(0, r.jsx)(u.Heading, {
           variant: "heading-lg/extrabold",
-          children: P.intl.string(P.t["hb/wEx"])
+          children: P.intl.string(P.t["hb/wE0"])
         }), (0, r.jsx)(E.Z, {
           className: w.premiumIcon
         })]
@@ -91,7 +91,7 @@ let D = () => {
         onClick: a,
         variant: "secondary",
         fullWidth: true,
-        text: i || t ? P.intl.string(P.t["dqH+qq"]) : P.intl.string(P.t.Olc2Ky)
+        text: i || t ? P.intl.string(P.t["dqH+qr"]) : P.intl.string(P.t.Olc2K3)
       })]
     })
   };

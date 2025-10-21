@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk778567 = require("./778567.jsx"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk363725 = require("./363725.js");
+  Chunk10094 = require("./10094.js");
 
 function I(e) {
   let {
@@ -47,8 +47,8 @@ function I(e) {
   }, [null == P ? true : P.visibility]);
   let {
     wishlist: N,
-    error: D
-  } = (0, p.kZ)(n, t.id), A = i.useCallback(() => {
+    error: A
+  } = (0, p.kZ)(n, t.id), D = i.useCallback(() => {
     if (null == n) return;
     let e = T ? a.f.PRIVATE : a.f.PUBLIC;
     C(!T), g.Z.updateWishlistVisibility(n, e), (0, b.Er)({
@@ -62,7 +62,7 @@ function I(e) {
       analyticsSource: u.Z.USER_PROFILE_WISHLIST
     })
   }, [w]);
-  return null != D ? null : null == N || 0 === N.items.length ? (0, r.jsx)(v.F, {
+  return null != A ? null : null == N || 0 === N.items.length ? (0, r.jsx)(v.F, {
     fade: true,
     children: (0, r.jsxs)("div", {
       className: _.emptyStateContainer,
@@ -71,17 +71,17 @@ function I(e) {
         children: [(0, r.jsx)(c.Heading, {
           variant: "heading-md/medium",
           color: "header-primary",
-          children: x.intl.string(x.t.HGnLLS)
+          children: x.intl.string(x.t.HGnLLT)
         }), (0, r.jsx)(c.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
-          children: x.intl.string(x.t["/X1ny8"])
+          children: x.intl.string(x.t["/X1ny6"])
         })]
       }), S && (0, r.jsx)(c.Button, {
         variant: "primary",
         size: "sm",
         icon: c.EOn,
-        text: x.intl.string(x.t.ZbS4QE),
+        text: x.intl.string(x.t.ZbS4QB),
         onClick: k
       })]
     })
@@ -95,11 +95,11 @@ function I(e) {
         children: [(0, r.jsx)(c.Text, {
           variant: "text-xs/semibold",
           color: "text-secondary",
-          children: x.intl.format(x.t.r6Y1Li, {
+          children: x.intl.format(x.t.r6Y1Lg, {
             count: N.items.length
           })
         }), !T && (0, r.jsx)(s.u, {
-          text: x.intl.string(x.t.RX7D9v),
+          text: x.intl.string(x.t.RX7D9h),
           asContainer: true,
           children: (0, r.jsx)(c.tEY, {
             children: (0, r.jsx)("div", {
@@ -113,7 +113,7 @@ function I(e) {
             })
           })
         }), T && E && (0, r.jsx)(s.u, {
-          text: x.intl.string(x.t.d78ChY),
+          text: x.intl.string(x.t.d78ChW),
           asContainer: true,
           children: (0, r.jsx)(c.tEY, {
             children: (0, r.jsx)("div", {
@@ -133,18 +133,18 @@ function I(e) {
           variant: "secondary",
           size: "sm",
           icon: c.qJs,
-          text: x.intl.string(x.t.SDUwMz),
+          text: x.intl.string(x.t.SDUwM0),
           onClick: k
         }), (0, r.jsx)(j.Z, {
           isOwner: S,
           isWishlistPublic: T,
-          onToggleVisibility: A
+          onToggleVisibility: D
         })]
       }) : (0, r.jsx)(c.Button, {
         variant: "secondary",
         size: "sm",
         icon: c.EOn,
-        text: x.intl.string(x.t["i/yzHh"]),
+        text: x.intl.string(x.t["i/yzHs"]),
         onClick: k
       })]
     }), (0, r.jsx)(y.Z, {

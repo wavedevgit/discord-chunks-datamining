@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk399521 = require("./399521.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk664688 = require("./664688.js");
+  Chunk944658 = require("./944658.js");
 
 function T(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -91,13 +91,13 @@ function j(e) {
     null != e && (0, f.yw)(C.rMx.CHANNEL_OPENED, P(T({}, (0, f.$H)(e)), {
       location: "".concat(p.Z.FREQUENT_FRIENDS_ROW, " ").concat(l + 1)
     }))
-  }, y = 0 === l, I = y ? s.YqE : a ? s.XcD : true, j = y ? S.intl.string(S.t.aI4VOD) : a ? S.intl.string(S.t.kABl29) : true;
+  }, y = 0 === l, I = y ? s.YqE : a ? s.XcD : true, j = y ? S.intl.string(S.t.aI4VOL) : a ? S.intl.string(S.t.kABl2x) : true;
   return (0, r.jsx)(s.P3F, {
     className: N.frequentFriendAvatarButton,
     onClick: v,
     onMouseEnter: E.onMouseEnter,
     onMouseLeave: E.onMouseLeave,
-    "aria-label": S.intl.formatToPlainString(S.t.M5FjCg, {
+    "aria-label": S.intl.formatToPlainString(S.t.M5FjCr, {
       username: i.username
     }),
     children: (0, r.jsx)(s.qEK, {
@@ -174,16 +174,16 @@ function x() {
   } = exports, x = Chunk120356.scrollWidth > Chunk120356.clientWidth, A = Chunk120356.scrollLeft > 0, Z = Chunk120356.scrollLeft < Chunk120356.scrollWidth - Chunk120356.clientWidth - 2;
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsxs)("div", {
-      className: Chunk664688.frequentFriendsRow,
+      className: Chunk944658.frequentFriendsRow,
       children: [(0, Chunk951288.jsxs)("div", {
-        className: Chunk664688.frequentFriendsHeader,
+        className: Chunk944658.frequentFriendsHeader,
         children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-sm/semibold",
-          className: Chunk664688.frequentFriendsTitle,
-          children: Chunk388032.intl.string(Chunk388032.t.QEh90N)
+          className: Chunk944658.frequentFriendsTitle,
+          children: Chunk388032.intl.string(Chunk388032.t.QEh90H)
         }), (0, Chunk951288.jsx)(Chunk481060.aML, {
           "data-migration-pending": true,
-          text: Chunk388032.intl.string(Chunk388032.t.tqCMcX),
+          text: Chunk388032.intl.string(Chunk388032.t.tqCMcU),
           children: e => (0, r.jsx)(s.d3s, P(T({}, e), {
             className: N.frequentFriendsInfoIcon
           }))
@@ -192,9 +192,9 @@ function x() {
         ref: e => {
           p.current = e, g.current = (null == e ? true : e.getScrollerNode()) != null ? e.getScrollerNode() : null
         },
-        className: a()(Chunk664688.frequentFriendsAvatars, {
-          [Chunk664688.scrollMaskLeft]: x && A,
-          [Chunk664688.scrollMaskRight]: x && Z
+        className: a()(Chunk944658.frequentFriendsAvatars, {
+          [Chunk944658.scrollMaskLeft]: x && A,
+          [Chunk944658.scrollMaskRight]: x && Z
         }),
         orientation: "horizontal",
         onScroll: Chunk592125,

@@ -16,12 +16,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk956664 = require("./956664.js"),
   Chunk185923 = require("./185923.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk647898 = require("./647898.js"),
+  Chunk759415 = require("./759415.js"),
   Chunk84717 = require("./84717.js");
 
 function h() {
   return [{
-    name: Chunk388032.intl.string(Chunk388032.t.Sp2NFx),
+    name: Chunk388032.intl.string(Chunk388032.t["Sp2NF+"]),
     extensions: ["jpg", "jpeg", "png"]
   }]
 }
@@ -43,7 +43,7 @@ let C = function(n) {
     onSelectUnicodeEmoji: p,
     onClose: m,
     transitionState: C
-  } = n, v = (0, d.Dt)(), b = u.ZP.getDefaultChannel(e), [N, y] = o.useState("tab-id-role-icon-file-upload"), [_, k] = o.useState(false), E = (0, i.Z)(h);
+  } = n, v = (0, d.Dt)(), b = u.ZP.getDefaultChannel(e), [N, y] = o.useState("tab-id-role-icon-file-upload"), [_, k] = o.useState(false), z = (0, i.Z)(h);
   return o.useEffect(() => {
     k(false)
   }, [N]), (0, t.jsx)(l.Y0X, {
@@ -64,10 +64,10 @@ let C = function(n) {
         className: I.nav,
         children: [(0, t.jsx)(l.njP.Item, {
           id: "tab-id-role-icon-file-upload",
-          children: g.intl.string(g.t.royWSE)
+          children: x.intl.string(x.t.royWSB)
         }), (0, t.jsx)(l.njP.Item, {
           id: "tab-id-role-icon-emoji",
-          children: g.intl.string(g.t["/Ny2wc"])
+          children: x.intl.string(x.t["/Ny2wZ"])
         })]
       }), "tab-id-role-icon-file-upload" === N ? (0, t.jsx)(l.hzk, {
         "data-migration-pending": true,
@@ -88,7 +88,7 @@ let C = function(n) {
             })]
           }), (0, t.jsx)("div", {
             className: I.uploadInfo,
-            children: g.intl.string(g.t["mz++Qk"])
+            children: x.intl.string(x.t["mz++Qq"])
           }), (0, t.jsx)(c.Z, {
             onChange: n => {
               k(false), a(n), m()
@@ -97,15 +97,15 @@ let C = function(n) {
               k(true)
             },
             maxFileSizeBytes: 256e3,
-            filters: E,
-            text: g.intl.string(g.t.sdCQY2),
+            filters: z,
+            text: x.intl.string(x.t.sdCQY4),
             size: "md",
             variant: "primary"
           }), _ ? (0, t.jsx)(l.Text, {
             className: I.uploadError,
             color: "text-danger",
             variant: "text-sm/normal",
-            children: g.intl.string(g.t.HFyKsb)
+            children: x.intl.string(x.t.HFyKsa)
           }) : null]
         })
       }) : null, "tab-id-role-icon-emoji" === N ? (0, t.jsx)(r.Z, {
@@ -122,7 +122,7 @@ let C = function(n) {
           }
           m()
         },
-        pickerIntention: x.Hz.COMMUNITY_CONTENT,
+        pickerIntention: g.Hz.COMMUNITY_CONTENT,
         channel: b
       }) : null]
     })

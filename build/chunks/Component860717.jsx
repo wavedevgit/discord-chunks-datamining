@@ -29,7 +29,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk750312 = require("./750312.jsx"),
   Chunk919498 = require("./919498.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk895652 = require("./895652.js");
+  Chunk18827 = require("./18827.js");
 
 function C(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -62,8 +62,8 @@ function N(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let D = /{{(.*?)}}/g,
-  A = [{
+let A = /{{(.*?)}}/g,
+  D = [{
     type: "HERO",
     title: "{{username}}",
     image: "{{featured_played_character_image}}",
@@ -201,9 +201,9 @@ function Z(e) {
     case "TEXT":
       return (0, r.jsx)(F, C({}, t));
     case "TEXT_WITH_IMAGE":
-      return (0, r.jsx)(W, C({}, t));
-    case "SEPARATOR":
       return (0, r.jsx)(U, C({}, t));
+    case "SEPARATOR":
+      return (0, r.jsx)(W, C({}, t));
     case "SOCIAL_PROOF":
       return (0, r.jsx)(H, {})
   }
@@ -296,7 +296,7 @@ function F(e) {
   })
 }
 
-function W(e) {
+function U(e) {
   let {
     content: t,
     image: n,
@@ -321,7 +321,7 @@ function W(e) {
   })
 }
 
-function U(e) {
+function W(e) {
   let {
     size: t = "small",
     divider: n = false
@@ -342,9 +342,9 @@ function H() {
     }(),
     {
       game: t
-    } = q(module.widget);
+    } = Y(module.widget);
   return null == exports ? null : (0, Chunk951288.jsx)(Chunk919498.Z, {
-    className: Chunk895652.socialProof,
+    className: Chunk18827.socialProof,
     applicationId: exports.id,
     guildId: module.guildId,
     channelId: module.channelId
@@ -353,7 +353,7 @@ function H() {
 
 function z(e, t) {
   if (null == e) return null;
-  let n = e.split(D);
+  let n = e.split(A);
   if (1 === n.length) return n[0];
   if ("skeleton" === t.mode) return null;
   let r = "";
@@ -372,14 +372,14 @@ function z(e, t) {
 function K(e, t) {
   var n, r;
   if (null == e || "skeleton" === t.mode) return null;
-  let i = null == (r = e.match(D)) || null == (n = r[0]) ? true : n.slice(2, false);
+  let i = null == (r = e.match(A)) || null == (n = r[0]) ? true : n.slice(2, false);
   if (null == i) return null;
   let a = t.variables[i];
   return null == a || "unfurled_media" !== a.type ? null : a.media
 }
 let V = Chunk647438.createContext(null);
 
-function q(e) {
+function Y(e) {
   return (0, o.cj)([f.Z, P.Z, _.Z], () => {
     let t = f.Z.getApplication(e.applicationId);
     return {
@@ -390,7 +390,7 @@ function q(e) {
   })
 }
 
-function Y(e) {
+function q(e) {
   let {
     children: t,
     widget: n
@@ -448,7 +448,7 @@ let Q = Object.assign(function(e) {
     application: o,
     game: u,
     config: f
-  } = q(n), m = null == o ? true : o.getIconURL(16), b = (0, x.O)(t.id).data, h = null == b ? true : b.find(e => e.application_id === n.applicationId), v = (0, p.Z)({
+  } = Y(n), m = null == o ? true : o.getIconURL(16), b = (0, x.O)(t.id).data, h = null == b ? true : b.find(e => e.application_id === n.applicationId), v = (0, p.Z)({
     location: "UserProfileApplicationWidget",
     applicationId: null == u ? true : u.id,
     source: g.m1.UserProfile,
@@ -459,7 +459,7 @@ let Q = Object.assign(function(e) {
     hasAlreadyLinked: O,
     canStartAuthorization: _,
     startAuthorization: P
-  } = (0, d.FG)(o), S = null == a && y && !O && _, D = (0, r.jsxs)(r.Fragment, {
+  } = (0, d.FG)(o), S = null == a && y && !O && _, A = (0, r.jsxs)(r.Fragment, {
     children: [null != m ? (0, r.jsx)("img", {
       className: T.appIcon,
       src: m,
@@ -476,15 +476,15 @@ let Q = Object.assign(function(e) {
     })]
   }), k = null == u ? (0, r.jsx)("div", {
     className: T.header,
-    children: D
+    children: A
   }) : (0, r.jsx)(s.u, {
     asContainer: true,
-    text: E.intl.string(E.t.ajHoOj),
+    text: E.intl.string(E.t.ajHoOr),
     children: (0, r.jsx)(c.P3F, {
       className: l()(T.header, T.headerClickable),
       onClick: v,
-      "aria-label": E.intl.string(E.t.ajHoOj),
-      children: D
+      "aria-label": E.intl.string(E.t.ajHoOr),
+      children: A
     })
   }), R = i.useMemo(() => {
     var e, t, n, r, i;
@@ -514,7 +514,7 @@ let Q = Object.assign(function(e) {
       }).filter(I.lm)),
       config: t
     });
-    return A.map(function e(t) {
+    return D.map(function e(t) {
       switch (t.type) {
         case "HERO":
           var n;
@@ -556,7 +556,7 @@ let Q = Object.assign(function(e) {
     }) : null,
     children: [(0, r.jsx)(V.Provider, {
       value: e,
-      children: (0, r.jsx)(Y, {
+      children: (0, r.jsx)(q, {
         widget: n,
         children: (0, r.jsx)(Z, {
           component: R
@@ -571,13 +571,13 @@ let Q = Object.assign(function(e) {
         }), (0, r.jsx)(c.Text, {
           variant: "text-sm/medium",
           color: "text-secondary",
-          children: E.intl.string(E.t.z5K4Ul)
+          children: E.intl.string(E.t.z5K4Uv)
         })]
       }), S ? (0, r.jsx)(X, {
-        heading: E.intl.string(E.t.UDPRLC),
-        content: E.intl.string(E.t["OW/2am"]),
+        heading: E.intl.string(E.t.UDPRLO),
+        content: E.intl.string(E.t["OW/2al"]),
         buttons: (0, r.jsx)(c.Button, {
-          text: E.intl.string(E.t.S0W8Z2),
+          text: E.intl.string(E.t.S0W8Z5),
           onClick: P
         })
       }) : a]

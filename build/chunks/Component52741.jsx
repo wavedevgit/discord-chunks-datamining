@@ -22,7 +22,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk504865 = require("./504865.jsx"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk40747 = require("./40747.js");
+  Chunk560230 = require("./560230.js");
 
 function O(e) {
   var t;
@@ -32,7 +32,7 @@ function O(e) {
     discountOffer: a
   } = e, o = (0, m.Aq)(i);
   return (0, r.jsx)(r.Fragment, {
-    children: b.intl.format(b.t.sJTwHR, {
+    children: b.intl.format(b.t.sJTwHQ, {
       numMonths: null != (t = a.discount.user_usage_limit) ? t : E.rt,
       discountedPrice: o,
       regularPrice: n
@@ -62,13 +62,13 @@ function v(e) {
       n = f.ZP.formatPriceString(f.ZP.getDefaultPrice(t.id), t.interval),
       i = () => {
         var t, r, i;
-        return o === E.C.PREMIUM_TRIAL ? b.intl.format(b.t["2CGBrq"], {
+        return o === E.C.PREMIUM_TRIAL ? b.intl.format(b.t["2CGBri"], {
           remainingTime: e,
           price: n
-        }) : P.planIdFromItems === E.Xh.PREMIUM_YEAR_TIER_2 ? b.intl.format(b.t["+qqh6u"], {
+        }) : P.planIdFromItems === E.Xh.PREMIUM_YEAR_TIER_2 ? b.intl.format(b.t["+qqh6g"], {
           percent: null != (t = null == L ? true : L.percentage) ? t : E.Bo,
           regularPrice: n
-        }) : b.intl.formatToPlainString(b.t["3Ziutb"], {
+        }) : b.intl.formatToPlainString(b.t["3ZiutU"], {
           percent: null != (r = null == L ? true : L.percentage) ? r : E.M_,
           regularPrice: n,
           numMonths: null != (i = null == L ? true : L.duration) ? i : E.rt
@@ -89,7 +89,7 @@ function v(e) {
         variant: N,
         color: R,
         className: a()(y.trialHeader, C),
-        children: b.intl.format(b.t["9vyovr"], {
+        children: b.intl.format(b.t["9vyovu"], {
           planName: (0, f.aq)(null != (B = E.IW[null != (G = null == U ? true : U.sku_id) ? G : E.Si.NONE]) ? B : E.Xh.PREMIUM_MONTH_TIER_2),
           duration: (0, f.if)({
             intervalType: null != (Z = null == U ? true : U.interval) ? Z : E.rV.DAY,

@@ -1,7 +1,7 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 400023, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => q
+  Z: () => K
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -43,7 +43,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk406534 = require("./406534.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk266834 = require("./266834.js");
+  Chunk151227 = require("./151227.js");
 
 function G(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -92,7 +92,7 @@ function W(e, t) {
   }
   return r
 }
-let K = (0, Chunk258536.animated)(Chunk481060.eTT),
+let q = (0, Chunk258536.animated)(Chunk481060.eTT),
   Y = Chunk647438.memo(function(e) {
     var t, n;
     let {
@@ -115,7 +115,7 @@ let K = (0, Chunk258536.animated)(Chunk481060.eTT),
       hideSummaries: A = false,
       jumpBarClassName: M,
       typingGradient: R
-    } = e, [D, Y] = r.useState(null != (n = E.Z.isAtBottom(m.id)) && n), q = r.useMemo(() => y ? (0, L.aJ)({
+    } = e, [D, Y] = r.useState(null != (n = E.Z.isAtBottom(m.id)) && n), K = r.useMemo(() => y ? (0, L.aJ)({
       compact: true,
       messageGroups: 30,
       groupRange: 4,
@@ -135,7 +135,7 @@ let K = (0, Chunk258536.animated)(Chunk481060.eTT),
       compact: y,
       hasUnreads: j,
       focusId: S,
-      placeholderHeight: q.totalHeight,
+      placeholderHeight: K.totalHeight,
       canLoadMore: null == T,
       handleScrollToBottom: r.useCallback(() => Y(true), [Y]),
       handleScrollFromBottom: r.useCallback(() => Y(false), [Y]),
@@ -161,7 +161,7 @@ let K = (0, Chunk258536.animated)(Chunk481060.eTT),
       uploads: x,
       loadMore: X.loadMore,
       scrollManager: X,
-      specs: q,
+      specs: K,
       filterAfterTimestamp: null != T ? T : Q,
       showingQuarantineBanner: N,
       hideSummaries: A,
@@ -224,7 +224,7 @@ let K = (0, Chunk258536.animated)(Chunk481060.eTT),
       navigator: J,
       children: [null != ei && ei, (0, i.jsxs)("div", {
         className: a()(F.messagesWrapper, l, "group-spacing-".concat(o)),
-        children: [null == ei && ee, (0, i.jsxs)(K, z(G({
+        children: [null == ei && ee, (0, i.jsxs)(q, z(G({
           ref: es,
           customTheme: true,
           className: a()(p, F.scroller, ec ? ed : true),
@@ -240,7 +240,7 @@ let K = (0, Chunk258536.animated)(Chunk481060.eTT),
             className: a()(F.scrollerInner, {
               [F.scrollerAllowSticky]: m.isModeratorReportChannel()
             }),
-            "aria-label": V.intl.formatToPlainString(V.t.XarRiI, {
+            "aria-label": V.intl.formatToPlainString(V.t.XarRiL, {
               channelName: m.name
             })
           }, eo), {
@@ -248,7 +248,7 @@ let K = (0, Chunk258536.animated)(Chunk481060.eTT),
               className: F.navigationDescription,
               id: "messagesNavigationDescription",
               "aria-hidden": true,
-              children: V.intl.string(V.t.Spb3s7)
+              children: V.intl.string(V.t["Spb3s/"])
             }), $, (0, i.jsx)("div", {
               className: a()({
                 [F.scrollerSpacer]: !N,
@@ -263,7 +263,7 @@ let K = (0, Chunk258536.animated)(Chunk481060.eTT),
       })]
     })
   }, (e, t) => null != e.isHidden && null != t.isHidden && e.isHidden && t.isHidden),
-  q = Chunk647438.memo(function(e) {
+  K = Chunk647438.memo(function(e) {
     var {
       channel: t,
       showingQuarantineBanner: n,

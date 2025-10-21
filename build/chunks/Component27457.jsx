@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 27457, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   BP: () => er,
@@ -52,7 +52,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk524484 = require("./524484.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk400872 = require("./400872.js");
+  Chunk7504 = require("./7504.js");
 let J = [Chunk354459.fO.ACTIVITY],
   $ = Chunk647438.memo(e => {
     var t, n, l, s, c, b, _;
@@ -82,7 +82,7 @@ let J = [Chunk354459.fO.ACTIVITY],
       pulseSpeakingIndicator: e_ = false,
       forceIdle: eO = false,
       inOverlayPopout: ey = false
-    } = e, ev = i.useContext(S.h9) || eO, [ej, ex] = i.useState(false), eC = E.Sb.useSetting(), eE = (0, a.e7)([Z.default], () => Z.default.isStreamInfoOverlayEnabled), [eS, eI] = i.useState(false), eP = (0, a.e7)([N.default], () => N.default.getId()), eN = D.type === K.fO.ACTIVITY ? null : D.user, eZ = null != (l = null == eN ? true : eN.id) ? l : null, [eT] = (0, h.Z)(D.type === K.fO.ACTIVITY ? [D.applicationId] : []), ew = (0, a.e7)([w.Z], () => null != eZ && w.Z.isLocalVideoDisabled(eZ, (0, g.Z)(D.type)), [eZ, D.type]), eA = (0, a.e7)([w.Z], () => null != eZ ? w.Z.getVideoToggleState(eZ, (0, g.Z)(D.type)) : W.ZUi.NONE, [eZ, D.type]), eR = eA === W.ZUi.AUTO_PROBING, {
+    } = e, ev = i.useContext(S.h9) || eO, [ej, ex] = i.useState(false), eC = E.Sb.useSetting(), eE = (0, a.e7)([Z.default], () => Z.default.isStreamInfoOverlayEnabled), [eS, eI] = i.useState(false), eP = (0, a.e7)([N.default], () => N.default.getId()), eN = D.type === K.fO.ACTIVITY ? null : D.user, eZ = null != (l = null == eN ? true : eN.id) ? l : null, [ew] = (0, h.Z)(D.type === K.fO.ACTIVITY ? [D.applicationId] : []), eT = (0, a.e7)([T.Z], () => null != eZ && T.Z.isLocalVideoDisabled(eZ, (0, g.Z)(D.type)), [eZ, D.type]), eA = (0, a.e7)([T.Z], () => null != eZ ? T.Z.getVideoToggleState(eZ, (0, g.Z)(D.type)) : W.ZUi.NONE, [eZ, D.type]), eR = eA === W.ZUi.AUTO_PROBING, {
       speaking: eD,
       ringing: eL,
       hasVideo: eM
@@ -99,15 +99,15 @@ let J = [Chunk354459.fO.ACTIVITY],
             voiceChannelId: null == i ? true : i.channelId
           }
         }),
-        u = (0, a.cj)([w.Z], () => {
+        u = (0, a.cj)([T.Z], () => {
           let n = (0, g.Z)(t.type);
           return e === s ? {
             muted: false,
             deafened: false
           } : {
-            muted: w.Z.isLocalMute(s, n),
-            localVideoDisabled: w.Z.isLocalVideoDisabled(s, n),
-            localVideoAutoDisabled: w.Z.isLocalVideoAutoDisabled(s, n)
+            muted: T.Z.isLocalMute(s, n),
+            localVideoDisabled: T.Z.isLocalVideoDisabled(s, n),
+            localVideoAutoDisabled: T.Z.isLocalVideoAutoDisabled(s, n)
           }
         }, [e, t.type, s]);
       return {
@@ -124,7 +124,7 @@ let J = [Chunk354459.fO.ACTIVITY],
       location: "voice_users"
     }, {
       autoTrackExposure: false
-    }), eH = (0, a.e7)([A.Z], () => eV && null != eZ ? A.Z.findActivity(eZ, e => null != e.application_id && e.type === W.IIU.PLAYING) : null, [eV, eZ]), ez = (0, a.e7)([T.Z], () => (null == eH ? true : eH.application_id) != null ? T.Z.getDetectableGame(eH.application_id) : null), eW = (0, a.e7)([f.Z], () => null != ez && (null == eH ? true : eH.application_id) != null ? f.Z.getApplication(null == eH ? true : eH.application_id) : true), eK = (0, x.wV)({
+    }), eH = (0, a.e7)([A.Z], () => eV && null != eZ ? A.Z.findActivity(eZ, e => null != e.application_id && e.type === W.IIU.PLAYING) : null, [eV, eZ]), ez = (0, a.e7)([w.Z], () => (null == eH ? true : eH.application_id) != null ? w.Z.getDetectableGame(eH.application_id) : null), eW = (0, a.e7)([f.Z], () => null != ez && (null == eH ? true : eH.application_id) != null ? f.Z.getApplication(null == eH ? true : eH.application_id) : true), eK = (0, x.wV)({
       userId: eZ,
       channelId: el.id
     }), eY = (0, x.zU)({
@@ -168,7 +168,7 @@ let J = [Chunk354459.fO.ACTIVITY],
           focused: ef,
           idle: ev,
           premiumIndicator: false
-        }), e4 = X.intl.formatToPlainString(X.t.gHPz3d, {
+        }), e4 = X.intl.formatToPlainString(X.t.gHPz3Q, {
           streamerName: D.user.username
         });
         break;
@@ -190,7 +190,7 @@ let J = [Chunk354459.fO.ACTIVITY],
         }), e1 = (0, r.jsx)(V.T, {
           participant: D,
           channelId: el.id
-        }), e4 = X.intl.formatToPlainString(X.t["iC/x/f"], {
+        }), e4 = X.intl.formatToPlainString(X.t["iC/x/Q"], {
           username: D.user.username
         });
         break;
@@ -201,8 +201,8 @@ let J = [Chunk354459.fO.ACTIVITY],
           selected: eu,
           channel: el,
           width: eo
-        }), e4 = X.intl.formatToPlainString(X.t.YCvOsL, {
-          activityName: null == eT ? true : eT.name
+        }), e4 = X.intl.formatToPlainString(X.t.YCvOsO, {
+          activityName: null == ew ? true : ew.name
         });
         break;
       case K.fO.HIDDEN_STREAM:
@@ -312,7 +312,7 @@ let J = [Chunk354459.fO.ACTIVITY],
                 title: (0, k.Z)(el, D),
                 blocked: eh,
                 ignored: eg,
-                localVideoDisabled: ew,
+                localVideoDisabled: eT,
                 videoToggleState: eA,
                 hideAudioIcon: eU,
                 onContextMenu: e$,
@@ -431,8 +431,8 @@ let en = Chunk647438.memo(e => {
     serverDeafened: P,
     hasVideo: N,
     hideAudioIcon: Z,
-    onToggleMute: T
-  } = e, A = (0, a.e7)([w.Z], () => null != O && w.Z.isLocalVideoAutoDisabled(O, (0, g.Z)(m)), [O, m]), R = (0, b.Z)({
+    onToggleMute: w
+  } = e, A = (0, a.e7)([T.Z], () => null != O && T.Z.isLocalVideoAutoDisabled(O, (0, g.Z)(m)), [O, m]), R = (0, b.Z)({
     userId: O,
     guildId: y.getGuildId()
   }), L = (0, _.j)({
@@ -487,7 +487,7 @@ let en = Chunk647438.memo(e => {
         }), (0, r.jsx)(u.Text, {
           variant: "text-sm/normal",
           className: Q.overlayTitleText,
-          children: X.intl.string(X.t.m2Hyj4)
+          children: X.intl.string(X.t.m2Hyj0)
         })]
       }) : null
     }), !M && (0, r.jsxs)("div", {
@@ -541,12 +541,12 @@ let en = Chunk647438.memo(e => {
           onClick: e => {
             e.stopPropagation(), U(true), x(e, true, K.A5.THREE_DOT)
           },
-          tooltipText: X.intl.string(X.t["+1H47u"]),
+          tooltipText: X.intl.string(X.t["+1H47t"]),
           icon: u.xhG,
           hideWhenInactive: !G
         }), B && (0, r.jsx)(et, {
-          onClick: T,
-          tooltipText: S ? X.intl.string(X.t.YqAjX1) : X.intl.string(X.t["w4m94+"]),
+          onClick: w,
+          tooltipText: S ? X.intl.string(X.t.YqAjXy) : X.intl.string(X.t.w4m945),
           icon: S ? u.OyP : u.gj8,
           hideWhenInactive: !S && !G
         })]

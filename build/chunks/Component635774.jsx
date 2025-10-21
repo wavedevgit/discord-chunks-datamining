@@ -8,7 +8,7 @@ require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk518596 = require("./518596.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk38579 = require("./38579.js");
+  Chunk631936 = require("./631936.js");
 
 function l(e) {
   let {
@@ -20,7 +20,7 @@ function l(e) {
       className: s.finishTitle,
       color: "header-primary",
       variant: "heading-xl/bold",
-      children: o.intl.string(o.t["3C+rbG"])
+      children: o.intl.string(o.t["3C+rbC"])
     }), (0, r.jsx)(i.Text, {
       className: s.subtitleFinish,
       color: "header-secondary",
@@ -30,7 +30,7 @@ function l(e) {
       className: s.promptFinish,
       color: "header-secondary",
       variant: "text-md/medium",
-      children: o.intl.format(o.t.bWE0ZG, {
+      children: o.intl.format(o.t.bWE0ZD, {
         onClick: () => {
           t(), (0, a.openUserSettings)()
         }
@@ -41,7 +41,7 @@ function l(e) {
       children: (0, r.jsx)(i.Button, {
         variant: "primary",
         size: "sm",
-        text: o.intl.string(o.t["yD/zkp"]),
+        text: o.intl.string(o.t["yD/zkn"]),
         type: "button",
         onClick: t
       })

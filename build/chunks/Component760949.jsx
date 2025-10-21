@@ -1,7 +1,7 @@
 /** Chunk was on 44153 **/
 /** chunk id: 760949, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  default: () => f
+  default: () => x
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -12,43 +12,43 @@ var Chunk951288 = require("./951288.js"),
   Chunk695346 = require("./695346.js"),
   Chunk342386 = require("./342386.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk412297 = require("./412297.js"),
+  Chunk660886 = require("./660886.js"),
   Chunk388032 = require("./388032.jsx");
 
-function f(t) {
+function x(t) {
   let {
     transitionState: n,
     onClose: e
-  } = t, [f, p] = a.useState(false), [S, g] = a.useState(null), k = async () => {
-    g(null), p(true);
+  } = t, [x, f] = a.useState(false), [S, g] = a.useState(null), k = async () => {
+    g(null), f(true);
     try {
       await o.Ex.updateSetting(false), (0, s.uL)(d.Z5c.FRIENDS), (0, u.default)(), e()
     } catch (t) {
       g(new c.Z(t).getAnyErrorMessage())
     } finally {
-      p(false)
+      f(false)
     }
-  }, y = () => {
+  }, C = () => {
     (0, s.uL)(d.Z5c.SETTINGS("family-center")), e()
   };
   return (0, i.jsx)(l.Modal, {
     transitionState: n,
     onClose: e,
-    title: x.intl.string(h.default.VGB30N),
-    subtitle: x.intl.format(h.default["CrZZ+v"], {
+    title: p.intl.string(h.default.VGB30H),
+    subtitle: p.intl.format(h.default["CrZZ+p"], {
       openSettingsHook: (t, n) => (0, i.jsx)(r.Anchor, {
-        onClick: y,
+        onClick: C,
         children: t
       }, n)
     }),
     actions: [{
       variant: "secondary",
-      text: x.intl.string(x.t["ETE/oK"]),
+      text: p.intl.string(p.t["ETE/oC"]),
       onClick: e
     }, {
-      text: x.intl.string(h.default.cSb7U1),
+      text: p.intl.string(h.default.cSb7U0),
       onClick: k,
-      loading: f,
+      loading: x,
       variant: "critical-primary"
     }],
     children: (0, i.jsx)("div", {

@@ -1,4 +1,4 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 430371, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => I
@@ -22,8 +22,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk796638 = require("./796638.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk354459 = require("./354459.js"),
-  Chunk450906 = require("./450906.js"),
-  Chunk74246 = require("./74246.js");
+  Chunk394024 = require("./394024.js"),
+  Chunk597843 = require("./597843.js");
 
 function j(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -82,8 +82,8 @@ function I(e) {
     F = h.Z.getVideoComponent(),
     G = p.default.getId(),
     [z, W] = r.useState(null),
-    K = (0, c.Z)(z),
-    [Y, q] = r.useState(true),
+    q = (0, c.Z)(z),
+    [Y, K] = r.useState(true),
     [X, J] = r.useState(false),
     Q = R.type === v.fO.ACTIVITY,
     $ = (0, u.Z)(Q ? R.applicationId : true),
@@ -104,13 +104,13 @@ function I(e) {
     eh = U > k / ec + 72 + P + 8;
   n = en || Q ? en ? false : false : 40 + Math.max(0, 72 - (U - ep) / 2), r.useEffect(() => {
     let e = setTimeout(() => {
-      q(false)
+      K(false)
     }, 250);
     return () => {
       clearTimeout(e)
     }
   }, []);
-  let ef = Y || null == K,
+  let ef = Y || null == q,
     em = ef ? "animate-never" : "animate-always",
     eg = (0, s.q_F)({
       value: +!!en,
@@ -159,7 +159,7 @@ function I(e) {
       }
     }, em),
     ev = r.useCallback(e => {
-      W(e), q(false)
+      W(e), K(false)
     }, []),
     ex = en ? [] : (0, C.n3)(T, R, G),
     {

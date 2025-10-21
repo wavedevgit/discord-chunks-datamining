@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk185923 = require("./185923.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk477127 = require("./477127.js");
+  Chunk576311 = require("./576311.js");
 
 function E(e, t) {
   let {
@@ -79,7 +79,7 @@ function E(e, t) {
   });
   return (0, r.jsx)(s.sNh, {
     id: "add-reaction",
-    label: v.intl.string(v.t.lfIHs7),
+    label: v.intl.string(v.t.lfIHs4),
     action: () => {
       O.S.dispatchKeyed(m.LPv.TOGGLE_REACTION_POPOUT, e.id, {
         emojiPicker: true
@@ -90,7 +90,7 @@ function E(e, t) {
       children: [j, (0, r.jsx)(s.Clw, {}), (0, r.jsx)(s.sNh, {
         color: "default",
         id: "other-reactions",
-        label: v.intl.string(v.t["OBCR+v"]),
+        label: v.intl.string(v.t["OBCR+p"]),
         icon: s.EO4,
         action: () => {
           O.S.dispatchKeyed(m.LPv.TOGGLE_REACTION_POPOUT, e.id, {

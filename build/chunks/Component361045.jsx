@@ -1,4 +1,4 @@
-/** Chunk was on 41348 **/
+/** Chunk was on 79041 **/
 /** chunk id: 361045, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   n: () => c
@@ -9,7 +9,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk688465 = require("./688465.jsx"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk509353 = require("./509353.js");
+  Chunk941246 = require("./941246.js");
 
 function c(e) {
   let {
@@ -42,17 +42,17 @@ function c(e) {
           variant: "heading-md/semibold",
           color: "header-primary",
           className: s.heading,
-          children: [o.intl.string(o.t.MLt8Hx), (0, a.jsx)(i.Z, {
+          children: [o.intl.string(o.t.MLt8H4), (0, a.jsx)(i.Z, {
             className: s.betaTag
           })]
         }), (0, a.jsx)(r.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
-          children: o.intl.string(o.t["l+lSLi"])
+          children: o.intl.string(o.t["l+lSLp"])
         })]
       }), (0, a.jsx)(r.Button, {
         variant: "primary",
-        text: o.intl.string(o.t["9WdoBw"]),
+        text: o.intl.string(o.t["9WdoB+"]),
         fullWidth: true,
         onClick: () => {
           t(l.L.TAKE_ACTION), c()

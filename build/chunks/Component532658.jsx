@@ -36,7 +36,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk444295 = require("./444295.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk133214 = require("./133214.js");
+  Chunk213285 = require("./213285.js");
 
 function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -207,7 +207,7 @@ let K = Chunk647438.memo(function(e) {
           children: (0, r.jsx)(c.Text, {
             variant: "text-xs/medium",
             color: "text-default",
-            children: D.intl.format(D.t.uFcRen, {
+            children: D.intl.format(D.t.uFcReq, {
               nick: t
             })
           })

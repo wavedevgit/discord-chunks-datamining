@@ -14,7 +14,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk365355 = require("./365355.js"),
   Chunk891304 = require("./891304.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk643443 = require("./643443.js");
+  Chunk861265 = require("./861265.js");
 
 function h(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -67,11 +67,11 @@ let m = Chunk185514.Nx.binds["0"],
       className: f.backForwardButtons,
       children: [(0, r.jsx)(o.aML, {
         "data-migration-pending": true,
-        "aria-label": p.intl.string(p.t.B9vzIC),
+        "aria-label": p.intl.string(p.t.B9vzIP),
         tooltipContentClassName: f.navigationTooltip,
         shouldShow: i,
         text: (0, r.jsxs)(r.Fragment, {
-          children: [p.intl.string(p.t.B9vzIC), (0, r.jsx)(o.M2$, {
+          children: [p.intl.string(p.t.B9vzIP), (0, r.jsx)(o.M2$, {
             shortcut: m
           })]
         }),
@@ -89,11 +89,11 @@ let m = Chunk185514.Nx.binds["0"],
         }))
       }), (0, r.jsx)(o.aML, {
         "data-migration-pending": true,
-        "aria-label": p.intl.string(p.t["9KJ29f"]),
+        "aria-label": p.intl.string(p.t["9KJ29e"]),
         tooltipContentClassName: f.navigationTooltip,
         shouldShow: s,
         text: (0, r.jsxs)(r.Fragment, {
-          children: [p.intl.string(p.t["9KJ29f"]), (0, r.jsx)(o.M2$, {
+          children: [p.intl.string(p.t["9KJ29e"]), (0, r.jsx)(o.M2$, {
             shortcut: b
           })]
         }),

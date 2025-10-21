@@ -15,7 +15,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk868172 = require("./868172.js");
+  Chunk561870 = require("./561870.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -87,13 +87,13 @@ function E(e) {
     modalClassName: f.modal,
     modalContentClassName: f.modalContent,
     type: c.cd.TRY_IT_OUT_MODAL_UPSELL,
-    title: d.intl.string(d.t.reVc0N),
-    body: d.intl.string(d.t.KckEj4),
-    glowUp: d.intl.string(d.t.reVc0N),
+    title: d.intl.string(d.t.reVc0M),
+    body: d.intl.string(d.t.KckEj7),
+    glowUp: d.intl.string(d.t.reVc0M),
     onSecondaryClick: () => {
       (0, s.$)(n)
     },
-    secondaryCTA: d.intl.string(d.t.PcTCBw),
+    secondaryCTA: d.intl.string(d.t.PcTCB7),
     onClose: n,
     enableArtBoxShadow: false,
     hideBackButton: true,

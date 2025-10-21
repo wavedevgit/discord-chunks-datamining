@@ -15,22 +15,22 @@ var a = function(e) {
 let o = ["tips", "recommendations_and_events", "updates_and_announcements"],
   s = [{
     category: "communication",
-    label: () => Chunk388032.intl.string(Chunk388032.t["B75+xc"]),
-    subLabel: () => Chunk388032.intl.string(Chunk388032.t.ZHg9TU)
+    label: () => Chunk388032.intl.string(Chunk388032.t["B75+xe"]),
+    subLabel: () => Chunk388032.intl.string(Chunk388032.t.ZHg9Tc)
   }, {
     category: "social",
-    label: () => Chunk388032.intl.string(Chunk388032.t.sxn7lZ),
-    subLabel: () => Chunk388032.intl.string(Chunk388032.t.l7sdzM)
+    label: () => Chunk388032.intl.string(Chunk388032.t.sxn7lR),
+    subLabel: () => Chunk388032.intl.string(Chunk388032.t.l7sdzF)
   }, {
     category: "updates_and_announcements",
-    label: () => Chunk388032.intl.string(Chunk388032.t.EkxXhY),
-    subLabel: () => Chunk388032.intl.string(Chunk388032.t["8ba9Q0"])
+    label: () => Chunk388032.intl.string(Chunk388032.t.EkxXhe),
+    subLabel: () => Chunk388032.intl.string(Chunk388032.t["8ba9Q7"])
   }, {
     category: "tips",
-    label: () => Chunk388032.intl.string(Chunk388032.t.jNrkrK),
-    subLabel: () => Chunk388032.intl.string(Chunk388032.t["FF6/+P"])
+    label: () => Chunk388032.intl.string(Chunk388032.t.jNrkrM),
+    subLabel: () => Chunk388032.intl.string(Chunk388032.t["FF6/+B"])
   }, {
     category: "recommendations_and_events",
-    label: () => Chunk388032.intl.string(Chunk388032.t.E8g1l5),
-    subLabel: () => Chunk388032.intl.string(Chunk388032.t.X4JMt7)
+    label: () => Chunk388032.intl.string(Chunk388032.t.E8g1l8),
+    subLabel: () => Chunk388032.intl.string(Chunk388032.t.X4JMt1)
   }]

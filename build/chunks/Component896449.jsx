@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk26033 = require("./26033.js"),
   Chunk178762 = require("./178762.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk313175 = require("./313175.js");
+  Chunk709516 = require("./709516.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -75,10 +75,10 @@ function O(e) {
     onAction: S
   }), C = (0, l.Z)({
     id: n.id,
-    label: p.intl.string(p.t["/AXYnJ"])
+    label: p.intl.string(p.t["/AXYnE"])
   }), N = "application_id" in O.extra ? O.extra.application_id : null, R = (0, l.Z)({
     id: N,
-    label: p.intl.string(p.t["FfCL+/"])
+    label: p.intl.string(p.t["FfCL+6"])
   }), P = (0, f.dX)(O), w = (0, u.Z)({
     location: "ContentPopoutContextMenu",
     applicationId: P && true !== I ? null == (t = O.extra) ? true : t.application_id : true,
@@ -100,13 +100,13 @@ function O(e) {
         onClose: () => {
           (0, s.Zy)(), t()
         },
-        "aria-label": p.intl.string(p.t.liqwPD),
+        "aria-label": p.intl.string(p.t.liqwPJ),
         onSelect: v,
         children: (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsxs)(o.kSQ, {
             children: [A, null != w && (0, r.jsx)(o.sNh, {
               id: "game-profile",
-              label: p.intl.string(p.t.f7aVGh),
+              label: p.intl.string(p.t.f7aVGn),
               action: e => {
                 w(e), null == S || S()
               }
@@ -119,7 +119,7 @@ function O(e) {
     },
     children: e => (0, r.jsx)(a.u, {
       asContainer: true,
-      text: p.intl.string(p.t.UKOtz8),
+      text: p.intl.string(p.t["UKOtz+"]),
       children: (0, r.jsx)(o.P3F, b(g({
         innerRef: T,
         className: h.menuIcon

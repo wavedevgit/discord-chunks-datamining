@@ -34,7 +34,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk959517 = require("./959517.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk963167 = require("./963167.js"),
+  Chunk823708 = require("./823708.js"),
   Chunk527455 = require("./527455.js");
 
 function M(e, t, n) {
@@ -149,7 +149,7 @@ function G(e) {
       onMouseLeave: ec,
       children: [!X && (true === V.shouldShowBlurredThumbnailImage ? (0, r.jsx)("img", {
         src: x,
-        alt: D.intl.string(D.t.rIbh8P),
+        alt: D.intl.string(D.t.rIbh8H),
         className: o()(L.thumbnail, {
           [L.spoiler]: V.shouldSpoiler
         }),
@@ -158,7 +158,7 @@ function G(e) {
       }) : (0, r.jsx)(h.Z, {
         src: !eg && em ? "".concat(eh, "?format=png") : eh,
         backgroundSrc: "".concat(eh, "?format=png"),
-        alt: D.intl.string(D.t.rIbh8P),
+        alt: D.intl.string(D.t.rIbh8H),
         aspectRatio: 16 / 9,
         className: o()(L.thumbnail, {
           [L.spoiler]: V.shouldSpoiler
@@ -216,7 +216,7 @@ function G(e) {
               ref: F,
               size: u.EFr.SIZE_40,
               src: ef,
-              "aria-label": D.intl.string(D.t.KXz3XF),
+              "aria-label": D.intl.string(D.t.KXz3XB),
               avatarDecoration: ed
             }))
           })
@@ -241,7 +241,7 @@ function G(e) {
             variant: "text-sm/medium",
             color: "text-muted",
             className: L.descriptionFooterAuthorContainer,
-            children: D.intl.format(D.t.voIDKS, {
+            children: D.intl.format(D.t.voIDKa, {
               authorName: V.authorName,
               authorNameHook: ep
             })

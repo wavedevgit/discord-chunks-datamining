@@ -1,7 +1,7 @@
 /** Chunk was on 45227 **/
 /** chunk id: 444448, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  d: () => x
+  d: () => h
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,37 +17,37 @@ var Chunk951288 = require("./951288.js"),
   Chunk517730 = require("./517730.jsx"),
   Chunk436585 = require("./436585.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk261112 = require("./261112.js");
+  Chunk216215 = require("./216215.js");
 
-function x(e) {
+function h(e) {
   var t;
   let {
     handleClose: n
   } = e, {
     skusById: l,
-    selectedSkuId: x,
-    application: h
+    selectedSkuId: h,
+    application: x
   } = (0, d.JL)(), {
     isGift: j,
     giftRecipient: C
   } = (0, c.wD)();
-  a()(null != x, "Expected selectedSkuId"), a()(null != h, "Expected application");
-  let y = l[x];
+  a()(null != h, "Expected selectedSkuId"), a()(null != x, "Expected application");
+  let y = l[h];
   return (a()(null != y, "Expected sku"), r.useEffect(() => {
     j || ((0, m.U)(), n(), (0, p.I)({
       sku: y,
-      application: h
+      application: x
     }))
-  }, [j, y, h, n]), j) ? (0, i.jsxs)(u.C3, {
+  }, [j, y, x, n]), j) ? (0, i.jsxs)(u.C3, {
     children: [(0, i.jsx)(g.Z, {}), (0, i.jsx)(f.Z, {}), (0, i.jsxs)("div", {
       className: b.confirmation,
       children: [(0, i.jsx)(s.Heading, {
         variant: "heading-xxl/bold",
         className: b.confirmationHeader,
-        children: v.intl.string(v.t["5glWtb"])
+        children: v.intl.string(v.t["5glWta"])
       }), (0, i.jsx)(s.Text, {
         variant: "text-md/normal",
-        children: v.intl.formatToPlainString(v.t["2VjPT0"], {
+        children: v.intl.formatToPlainString(v.t["2VjPTw"], {
           itemName: y.name,
           giftRecipient: null != (t = null == C ? true : C.username) ? t : "your recipient"
         })
@@ -55,7 +55,7 @@ function x(e) {
         className: b.divider
       }), (0, i.jsx)(o.zxk, {
         onClick: n,
-        text: v.intl.string(v.t.cpT0Cg),
+        text: v.intl.string(v.t.cpT0Cq),
         fullWidth: true
       })]
     })]

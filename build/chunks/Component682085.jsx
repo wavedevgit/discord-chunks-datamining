@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk430790 = require("./430790.jsx"),
   Chunk795990 = require("./795990.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk267233 = require("./267233.js");
+  Chunk66582 = require("./66582.js");
 
 function j() {
   let {
@@ -77,21 +77,21 @@ function j() {
     })
   }, [module]);
   if (null == exports || null == j || null == I || !_) return (0, Chunk951288.jsx)("div", {
-    className: Chunk267233.loading,
+    className: Chunk66582.loading,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
   });
   if (null == x) return (0, Chunk951288.jsx)(Chunk795990.Z, {});
   let w = (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
     gap: 4,
-    className: Chunk267233.header,
+    className: Chunk66582.header,
     children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
       variant: "heading-md/medium",
       color: "header-primary",
-      children: Chunk388032.intl.string(Chunk388032.t.oqalCw)
+      children: Chunk388032.intl.string(Chunk388032.t["oqalC+"])
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
       color: "text-secondary",
-      children: Chunk388032.intl.format(Chunk388032.t.YnNFWV, {
+      children: Chunk388032.intl.format(Chunk388032.t.YnNFWa, {
         applicationName: j.name
       })
     })]
@@ -125,7 +125,7 @@ function j() {
               size: 128
             }), w, (0, r.jsx)(s.Button, {
               icon: s.qJs,
-              text: v.intl.string(v.t.lBG2s7),
+              text: v.intl.string(v.t["lBG2s/"]),
               size: "md",
               color: "secondary",
               onClick: P

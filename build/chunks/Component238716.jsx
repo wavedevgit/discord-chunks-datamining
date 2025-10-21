@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk853856 = require("./853856.js"),
   Chunk117984 = require("./117984.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk380041 = require("./380041.js");
+  Chunk589253 = require("./589253.js");
 
 function h(t) {
   let {
@@ -23,7 +23,7 @@ function h(t) {
     heading: m,
     formTitle: f,
     allowReset: v = false
-  } = t, k = (0, l.e7)([c.Z], () => c.Z.getChannel(n)), C = (0, o.ZP)(k), g = u.Z.getNickname(n), [j, b] = a.useState(null != g ? g : "");
+  } = t, C = (0, l.e7)([c.Z], () => c.Z.getChannel(n)), k = (0, o.ZP)(C), g = u.Z.getNickname(n), [j, b] = a.useState(null != g ? g : "");
 
   function y(t) {
     t.preventDefault(), (0, d.UT)(n, j), e()
@@ -33,7 +33,7 @@ function h(t) {
     children: (0, i.jsxs)(s.u_l, {
       title: m,
       actions: [{
-        text: p.intl.string(p.t["ETE/oK"]),
+        text: p.intl.string(p.t["ETE/oC"]),
         onClick: e,
         variant: "secondary"
       }, {
@@ -48,13 +48,13 @@ function h(t) {
         label: f,
         value: j,
         onChange: b,
-        placeholder: null != C ? C : true,
+        placeholder: null != k ? k : true,
         maxLength: 100,
         autoFocus: true
       }), v && null != g ? (0, i.jsx)("div", {
         className: x.reset,
         children: (0, i.jsx)(r.Avr, {
-          text: p.intl.string(p.t.aE02R0),
+          text: p.intl.string(p.t.aE02Rz),
           onClick: function() {
             (0, d.UT)(n, null), e()
           },
@@ -64,7 +64,7 @@ function h(t) {
         className: x.description,
         variant: "text-sm/normal",
         color: "header-secondary",
-        children: p.intl.string(p.t["2vyz+P"])
+        children: p.intl.string(p.t["2vyz+N"])
       })]
     })
   })

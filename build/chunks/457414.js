@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 457414, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -38,31 +38,31 @@ function d(e, t) {
   })(e) ? {
     headerText: null !== (n = null != (m = null == t ? true : t.name) ? m : a.I6[e].getDefaultRuleName()) && true !== n ? n : "",
     headerSubtext: null != (c = ((e, t) => {
-      if ((0, l.Vb)(t) && (0, l.DO)(t)) return t.triggerMetadata.regexPatterns.length > 0 ? o.intl.formatToPlainString(o.t.xZUvxc, {
+      if ((0, l.Vb)(t) && (0, l.DO)(t)) return t.triggerMetadata.regexPatterns.length > 0 ? o.intl.formatToPlainString(o.t.xZUvxR, {
         keywordCount: t.triggerMetadata.keywordFilter.length,
         regexPatternCount: t.triggerMetadata.regexPatterns.length
-      }) : o.intl.formatToPlainString(o.t.dJN7Li, {
+      }) : o.intl.formatToPlainString(o.t.dJN7Lk, {
         keywordCount: t.triggerMetadata.keywordFilter.length
       })
     })(0, t)) ? c : "",
     descriptionText: null != (d = (e => {
       switch (e) {
         case s.fX.KEYWORD:
-          return o.intl.string(o.t.TzvaeH);
+          return o.intl.string(o.t.TzvaeK);
         case s.fX.ML_SPAM:
-          return o.intl.string(o.t.jBZSQk);
+          return o.intl.string(o.t.jBZSQl);
         case s.fX.DEFAULT_KEYWORD_LIST:
-          return o.intl.string(o.t.Drc8fn);
+          return o.intl.string(o.t.Drc8ft);
         case s.fX.MENTION_SPAM:
-          return o.intl.string(o.t.flhXOz);
+          return o.intl.string(o.t.flhXO4);
         case s.fX.USER_PROFILE:
-          return o.intl.string(o.t.A35LyM);
+          return o.intl.string(o.t.A35LyL);
         default:
           return null
       }
     })(e)) ? d : "",
     descriptionSubtext: null != (u = (e => {
-      if (e === s.fX.KEYWORD) return o.intl.formatToPlainString(o.t.yNec2t, {})
+      if (e === s.fX.KEYWORD) return o.intl.formatToPlainString(o.t.yNec2m, {})
     })(e)) ? u : "",
     icon: null != (g = (e => {
       switch (e) {

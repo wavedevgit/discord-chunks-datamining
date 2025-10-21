@@ -66,12 +66,12 @@ let m = () => {
     }
     let [s, f] = (0, Chunk442837.Wu)([Chunk209590.Z], () => [Chunk209590.Z.shouldShowWarning(), Chunk209590.Z.isAFKChannel()], []), p = Chunk647438.useCallback(() => {
       let t, n;
-      f ? (t = Chunk388032.intl.string(Chunk388032.t.Y40JkZ), n = Chunk388032.intl.string(Chunk388032.t["5J4yGR"])) : (t = Chunk388032.intl.string(Chunk388032.t.FJSZVF), n = Chunk388032.intl.string(Chunk388032.t.etJjgY)), module.current = (0, Chunk481060.h7j)(e => (0, r.jsx)(l.default, _({
+      f ? (t = Chunk388032.intl.string(Chunk388032.t.Y40Jke), n = Chunk388032.intl.string(Chunk388032.t["5J4yGc"])) : (t = Chunk388032.intl.string(Chunk388032.t.FJSZVM), n = Chunk388032.intl.string(Chunk388032.t.etJjgW)), module.current = (0, Chunk481060.h7j)(e => (0, r.jsx)(l.default, _({
         title: t,
         body: n,
         onConfirm: m,
-        confirmText: d.intl.string(d.t.BddRzc),
-        secondaryConfirmText: d.intl.string(d.t["5E9SBw"]),
+        confirmText: d.intl.string(d.t.BddRzS),
+        secondaryConfirmText: d.intl.string(d.t["5E9SB9"]),
         onConfirmSecondary: g
       }, e)))
     }, [f]), E = Chunk647438.useCallback(() => {

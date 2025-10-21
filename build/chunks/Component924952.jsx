@@ -23,8 +23,8 @@ function Z(e, t, Z) {
     (null == Z ? true : Z.isGuildStageVoice()) ? (0, o.NZ)(Z) : null != e && s.Z.endEvent(e, t.id), (0, l.pTH)()
   };
   return (0, i.jsx)(l.sNh, {
-    id: d.intl.string(d.t.qaYzPD),
-    label: d.intl.string(d.t.qaYzPD),
+    id: d.intl.string(d.t.qaYzPA),
+    label: d.intl.string(d.t.qaYzPA),
     action: function() {
       (0, l.ZDy)(async () => {
         let {
@@ -37,17 +37,17 @@ function Z(e, t, Z) {
           } = t;
           return (0, i.jsx)(e, {
             transitionState: r,
-            title: d.intl.string(d.t.qaYzPD),
-            subtitle: d.intl.string(d.t.bnDQ7O),
+            title: d.intl.string(d.t.qaYzPA),
+            subtitle: d.intl.string(d.t.bnDQ7E),
             onClose: n,
             actions: [{
               onClick: n,
               variant: "secondary",
-              text: d.intl.string(d.t["ETE/oK"])
+              text: d.intl.string(d.t["ETE/oC"])
             }, {
               onClick: j,
               variant: "critical-primary",
-              text: d.intl.string(d.t.mjB9pa)
+              text: d.intl.string(d.t.mjB9pd)
             }]
           })
         }

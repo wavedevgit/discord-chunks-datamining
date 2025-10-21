@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 880419, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => O
@@ -13,9 +13,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk973772 = require("./973772.js"),
   Chunk279604 = require("./279604.jsx"),
   Chunk535396 = require("./535396.js"),
-  Chunk258640 = require("./258640.js"),
+  Chunk149829 = require("./149829.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk123879 = require("./123879.js");
+  Chunk362320 = require("./362320.js");
 
 function m(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -44,10 +44,10 @@ function b(e) {
     className: g.tooltipContainer,
     children: [(0, r.jsx)(s.Text, {
       variant: "text-xs/semibold",
-      children: h.intl.string(f.default.TZsu1d)
+      children: h.intl.string(f.default.TZsu1U)
     }), (0, r.jsx)(s.Text, {
       variant: "text-xs/medium",
-      children: h.intl.formatToPlainString(f.default["5HQUzM"], {
+      children: h.intl.formatToPlainString(f.default["5HQUzD"], {
         boostCount: t
       })
     })]
@@ -68,8 +68,8 @@ function _(e) {
         children: h.intl.string(f.default["9oYuvb"])
       }), (0, r.jsx)(s.Text, {
         variant: "text-xs/medium",
-        children: h.intl.formatToPlainString(f.default.WRRYUV, {
-          perkName: null != (o = null == (l = i.sourcePowerup) ? true : l.title) ? o : h.intl.string(h.t.BfF6EB)
+        children: h.intl.formatToPlainString(f.default.WRRYUT, {
+          perkName: null != (o = null == (l = i.sourcePowerup) ? true : l.title) ? o : h.intl.string(h.t.BfF6ED)
         })
       })]
     })
@@ -102,7 +102,7 @@ function O(e) {
     null == j || j(E)
   }, [E, j]), (0, r.jsx)(s.aML, {
     delay: 100,
-    "aria-label": null != N ? N : I ? h.intl.string(f.default.TZsu1d) : true,
+    "aria-label": null != N ? N : I ? h.intl.string(f.default.TZsu1U) : true,
     text: null != N ? N : I ? (0, r.jsx)(_, {
       guildId: t,
       powerup: n
@@ -129,7 +129,7 @@ function O(e) {
               text: t.toString(),
               icon: a
             } : {
-              text: h.intl.format(n ? f.default.uzQpQU : f.default.ad2Mfn, {
+              text: h.intl.format(n ? f.default.uzQpQd : f.default.ad2Mfj, {
                 boostCount: t,
                 dotHook: () => (0, r.jsx)("span", {
                   className: g.dot,
@@ -150,7 +150,7 @@ function O(e) {
           });
           return (0, r.jsx)(a.zxk, m({
             variant: I ? "secondary" : "primary",
-            "aria-label": h.intl.string(I ? f.default.TZsu1d : f.default.gSxlHR),
+            "aria-label": h.intl.string(I ? f.default.TZsu1U : f.default.gSxlHf),
             disabled: P,
             onClick: I ? S : x,
             loading: C,

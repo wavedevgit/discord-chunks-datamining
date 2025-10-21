@@ -22,7 +22,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk332712 = require("./332712.js"),
   Chunk81471 = require("./81471.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk418337 = require("./418337.js");
+  Chunk79072 = require("./79072.js");
 let y = e => {
     let {
       userId: t
@@ -31,7 +31,7 @@ let y = e => {
       className: v.mutualGuilds,
       variant: "text-sm/normal",
       color: "text-muted",
-      children: O.intl.string(O.t.jpY0X1)
+      children: O.intl.string(O.t.jpY0X5)
     }) : (0, r.jsxs)("div", {
       className: v.mutualGuildsContainer,
       children: [(0, r.jsx)(l.Z, {
@@ -43,7 +43,7 @@ let y = e => {
         className: v.mutualGuilds,
         variant: "text-sm/normal",
         color: "text-muted",
-        children: O.intl.format(O.t.eE3oen, {
+        children: O.intl.format(O.t.eE3oep, {
           count: n.length
         })
       })]
@@ -70,7 +70,7 @@ function C(e) {
       src: (0, f.x)(n, 40, C),
       avatarDecoration: N,
       size: a.EFr.SIZE_40,
-      "aria-label": null != (t = null == l ? true : l.username) ? t : O.intl.string(O.t["30mdIy"])
+      "aria-label": null != (t = null == l ? true : l.username) ? t : O.intl.string(O.t["30mdIx"])
     }), (0, r.jsxs)("div", {
       className: v.userPreview,
       children: [(0, r.jsxs)("div", {

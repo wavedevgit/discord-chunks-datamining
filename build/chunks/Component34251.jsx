@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk291967 = require("./291967.jsx"),
   Chunk46140 = require("./46140.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk522144 = require("./522144.js");
+  Chunk258910 = require("./258910.js");
 
 function C(e) {
   let {
@@ -43,18 +43,18 @@ function C(e) {
         variant: "heading-xl/semibold",
         color: "header-primary",
         className: x.heading,
-        children: f.intl.string(f.t["0/Yz+f"])
+        children: f.intl.string(f.t["0/Yz+Y"])
       }), (0, r.jsx)(i.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
-        children: f.intl.format(f.t["v1u/zs"], {
+        children: f.intl.format(f.t["v1u/zq"], {
           rewardName: n
         })
       })]
     }), (0, r.jsx)(i.Button, {
       variant: "secondary",
       size: "sm",
-      text: f.intl.string(f.t.OD6Tvb),
+      text: f.intl.string(f.t.OD6Tvf),
       disabled: true,
       fullWidth: true
     })]

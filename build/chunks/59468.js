@@ -1,4 +1,4 @@
-/** Chunk was on 33840 **/
+/** Chunk was on 47863 **/
 /** chunk id: 59468, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   t: () => d
@@ -21,7 +21,7 @@ async function d(e) {
   }), p = (0, o._)(), h = await p, m = await f, _ = m.filter(e => e.id.startsWith(i.vA.SCREEN)).map(e => {
     var t, n;
     let r = e.name;
-    return "Entire screen" === r ? r = a.intl.string(a.t.R4wpLC) : /^Screen \d+$/.test(r) && (r = a.intl.formatToPlainString(a.t["y/R7n5"], {
+    return "Entire screen" === r ? r = a.intl.string(a.t.R4wpLN) : /^Screen \d+$/.test(r) && (r = a.intl.formatToPlainString(a.t["y/R7n4"], {
       index: parseInt(r.split(" ")[1])
     })), t = function(e) {
       for (var t = 1; t < arguments.length; t++) {

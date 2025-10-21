@@ -34,7 +34,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk844439 = require("./844439.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk543434 = require("./543434.js");
+  Chunk491856 = require("./491856.js");
 
 function x(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -242,7 +242,7 @@ function j(e) {
     onSelect: t,
     navId: "image-context-commands-popout",
     onClose: n,
-    "aria-label": D.intl.string(D.t.P3ShV1),
+    "aria-label": D.intl.string(D.t["P3ShV+"]),
     children: [(0, r.jsx)(l.sNh, {
       id: "menu-image-rec-header",
       render: () => (0, r.jsx)(l.Text, {
@@ -288,14 +288,14 @@ function j(e) {
           children: i ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(l.sNh, {
               id: "".concat(e.command.id, "-send"),
-              label: D.intl.string(D.t["M+BhUV"]),
-              subtext: D.intl.string(D.t.zXFjJS),
+              label: D.intl.string(D.t["M+BhUW"]),
+              subtext: D.intl.string(D.t.zXFjJV),
               action: () => H(t, m.Vh.IMAGE_RECS_SUBMENU, n.imageOption),
               icon: l.Uuj
             }, "".concat(e.command.id, "-send")), (0, r.jsx)(l.sNh, {
               id: "".concat(e.command.id, "-edit"),
-              label: D.intl.string(D.t["wTaN+P"]),
-              subtext: D.intl.string(D.t.bIB3bm),
+              label: D.intl.string(D.t["wTaN+K"]),
+              subtext: D.intl.string(D.t.bIB3bs),
               action: () => {
                 V(e.command, e.section, m.Vh.IMAGE_RECS_SUBMENU, s)
               },

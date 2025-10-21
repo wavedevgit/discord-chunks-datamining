@@ -1,7 +1,7 @@
 /** Chunk was on 9924 **/
 /** chunk id: 987491, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => k
+  Z: () => G
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk246364 = require("./246364.js"),
   Chunk98493 = require("./98493.js"),
   Chunk328977 = require("./328977.js"),
-  Chunk665625 = require("./665625.js"),
+  Chunk412222 = require("./412222.js"),
   Chunk223312 = require("./223312.js"),
   Chunk172751 = require("./172751.jsx"),
   Chunk768762 = require("./768762.jsx"),
@@ -29,10 +29,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk430824 = require("./430824.js"),
   Chunk51144 = require("./51144.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk659541 = require("./659541.js"),
-  Chunk461914 = require("./461914.js"),
-  Chunk909350 = require("./909350.js"),
-  Chunk399291 = require("./399291.js");
+  Chunk106682 = require("./106682.js"),
+  Chunk243194 = require("./243194.js"),
+  Chunk494409 = require("./494409.js"),
+  Chunk266631 = require("./266631.js");
 
 function A(e) {
   let t, n, {
@@ -40,13 +40,13 @@ function A(e) {
   } = e;
   switch (r) {
     case f.wB.REJECTED:
-      t = O.t["7YSJ6e"], n = O.t.i05OUV;
+      t = O.t["7YSJ6f"], n = O.t.i05OUR;
       break;
     case f.wB.APPROVED:
-      t = O.t.bv82GR, n = O.t.D4OUHR;
+      t = O.t.bv82GS, n = O.t.D4OUHT;
       break;
     default:
-      t = O.t["/wqiSk"], n = O.t.o47YZm
+      t = O.t["/wqiSv"], n = O.t.o47YZs
   }
   return (0, l.jsxs)("div", {
     className: I.emptyContainer,
@@ -65,7 +65,7 @@ function A(e) {
   })
 }
 
-function Z(e) {
+function M(e) {
   let {
     sortOrder: t,
     onSortChange: n
@@ -78,7 +78,7 @@ function Z(e) {
         children: (0, l.jsx)(u.Text, {
           variant: "eyebrow",
           color: "interactive-normal",
-          children: O.intl.string(O.t.Es7n9f)
+          children: O.intl.string(O.t.Es7n9c)
         })
       }), (0, l.jsx)("th", {
         className: a()(I.headerCell, w.mediumCol),
@@ -88,7 +88,7 @@ function Z(e) {
           children: [(0, l.jsx)(u.Text, {
             variant: "eyebrow",
             color: "interactive-normal",
-            children: O.intl.string(O.t.EZ5QWF)
+            children: O.intl.string(O.t.EZ5QWL)
           }), t === f.Nw.TIMESTAMP_ASC ? (0, l.jsx)(E.Z, {
             className: I.sortIcon,
             direction: E.Z.Directions.UP
@@ -102,13 +102,13 @@ function Z(e) {
         children: (0, l.jsx)(u.Text, {
           variant: "eyebrow",
           color: "interactive-normal",
-          children: O.intl.string(O.t["5Q9xGh"])
+          children: O.intl.string(O.t["5Q9xGr"])
         })
       })]
     })
   })
 }
-let M = Chunk647438.memo(function(e) {
+let Z = Chunk647438.memo(function(e) {
     let {
       joinRequest: t,
       user: n
@@ -179,7 +179,7 @@ let M = Chunk647438.memo(function(e) {
         [w.selected]: (null == h ? true : h.joinRequestId) === t.joinRequestId
       }),
       children: [(0, l.jsx)("td", {
-        children: (0, l.jsx)(M, {
+        children: (0, l.jsx)(Z, {
           joinRequest: t,
           user: b
         })
@@ -193,7 +193,7 @@ let M = Chunk647438.memo(function(e) {
       }), (0, l.jsx)("td", {
         className: I.moreOptionsCol,
         children: v && (0, l.jsx)(d.u, {
-          text: O.intl.string(O.t.x8Nn4O),
+          text: O.intl.string(O.t.x8Nn4M),
           children: (0, l.jsx)(u.P3F, {
             onClick: e => {
               (0, m.jW)(e, async () => {
@@ -250,29 +250,29 @@ let M = Chunk647438.memo(function(e) {
       })]
     })
   }),
-  G = () => {
+  k = () => {
     let e = "".concat(Math.floor(50 * Math.random()) + 100, "px"),
       t = "".concat(Math.floor(50 * Math.random()) + 100, "px"),
       n = "".concat(Math.floor(25 * Math.random()) + 50, "px");
     return (0, Chunk951288.jsxs)("tr", {
-      className: a()(Chunk399291.roundedRow, Chunk399291.memberRowContainer),
+      className: a()(Chunk266631.roundedRow, Chunk266631.memberRowContainer),
       children: [(0, Chunk951288.jsx)("td", {
         children: (0, Chunk951288.jsxs)("div", {
-          className: Chunk399291.memberNameContainer,
+          className: Chunk266631.memberNameContainer,
           children: [(0, Chunk951288.jsx)("div", {
-            className: a()(Chunk659541.placeholderAvatar, Chunk399291.memberAvatar)
+            className: a()(Chunk106682.placeholderAvatar, Chunk266631.memberAvatar)
           }), (0, Chunk951288.jsx)("div", {
-            className: Chunk399291.memberName,
+            className: Chunk266631.memberName,
             children: (0, Chunk951288.jsx)("div", {
-              className: Chunk659541.placeholderText,
+              className: Chunk106682.placeholderText,
               style: {
                 width: module
               }
             })
           }), (0, Chunk951288.jsx)("div", {
-            className: Chunk399291.memberGlobalName,
+            className: Chunk266631.memberGlobalName,
             children: (0, Chunk951288.jsx)("div", {
-              className: Chunk659541.placeholderTextSmall,
+              className: Chunk106682.placeholderTextSmall,
               style: {
                 width: exports
               }
@@ -280,20 +280,20 @@ let M = Chunk647438.memo(function(e) {
           })]
         })
       }), (0, Chunk951288.jsx)("td", {
-        className: Chunk399291.mediumCol,
+        className: Chunk266631.mediumCol,
         children: (0, Chunk951288.jsx)("div", {
-          className: Chunk659541.placeholderText,
+          className: Chunk106682.placeholderText,
           style: {
             width: require
           }
         })
       }), (0, Chunk951288.jsx)("td", {
-        className: Chunk659541.moreOptionsCol
+        className: Chunk106682.moreOptionsCol
       })]
     })
   };
 
-function k(e) {
+function G(e) {
   let {
     guildId: t,
     currentTab: n
@@ -322,11 +322,11 @@ function k(e) {
       orientation: "horizontal",
       children: (0, l.jsxs)("table", {
         className: I.table,
-        children: [(0, l.jsx)(Z, {
+        children: [(0, l.jsx)(M, {
           sortOrder: s,
           onSortChange: x
         }), (0, l.jsx)("tbody", {
-          children: o ? [, , , , , ].fill(0).map((e, t) => (0, l.jsx)(G, {}, "placeholder-".concat(t))) : 0 === d.length ? (0, l.jsx)("td", {
+          children: o ? [, , , , , ].fill(0).map((e, t) => (0, l.jsx)(k, {}, "placeholder-".concat(t))) : 0 === d.length ? (0, l.jsx)("td", {
             colSpan: 3,
             children: (0, l.jsx)(A, {
               status: n

@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk593235 = require("./593235.js");
+  Chunk966117 = require("./966117.js");
 
 function I(e, t, n, a, i) {
   let o = [];
@@ -45,12 +45,12 @@ function I(e, t, n, a, i) {
   } = t;
   if (o.push({
       section: u.ID.HEADER,
-      label: F.intl.formatToPlainString(F.t.PK5fOD, {
+      label: F.intl.formatToPlainString(F.t.PK5fOC, {
         context: e
       })
     }), null != d && o.push({
       section: (0, v.J$)(e, R._s_.TRANSPORT, n),
-      label: F.intl.string(F.t.wU9INz),
+      label: F.intl.string(F.t.wU9IN2),
       element: Z.Z,
       elementProps: {
         context: e,
@@ -58,15 +58,15 @@ function I(e, t, n, a, i) {
       }
     }), null == h || l().isEmpty(h) || o.push({
       section: (0, v.J$)(e, R._s_.OUTBOUND, n),
-      label: F.intl.string(F.t["3u0gIC"]),
-      element: C.Z,
+      label: F.intl.string(F.t["3u0gII"]),
+      element: x.Z,
       elementProps: {
         context: e,
         index: n
       }
     }), null != f && o.push({
       section: (0, v.J$)(e, R._s_.CAMERA, n),
-      label: F.intl.string(F.t["2AGBWF"]),
+      label: F.intl.string(F.t["2AGBWH"]),
       element: D.Z,
       elementProps: {
         context: e,
@@ -122,7 +122,7 @@ function I(e, t, n, a, i) {
       })
     }), t.length > 0 && (o.push({
       section: u.ID.HEADER,
-      label: F.intl.string(F.t.SJmZam)
+      label: F.intl.string(F.t.SJmZaq)
     }), o.push(...t))
   }
   return o
@@ -150,14 +150,14 @@ function k() {
     };
     return null != i && (p.push(f), p.push({
       section: R._s_.SCREENSHARE,
-      label: F.intl.string(F.t["gWbr/f"]),
-      element: x.Z,
+      label: F.intl.string(F.t["gWbr/U"]),
+      element: C.Z,
       elementProps: {
         screenshare: i
       }
     })), null != l && (h.push(f), h.push({
       section: R._s_.CLIPS,
-      label: F.intl.string(F.t.MKrFKC),
+      label: F.intl.string(F.t.MKrFKE),
       element: P.Z,
       elementProps: {
         clips: l

@@ -9,7 +9,7 @@ require("./647438.js");
 var Chunk732380 = require("./732380.jsx"),
   Chunk955418 = require("./955418.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk593540 = require("./593540.js");
+  Chunk116649 = require("./116649.js");
 
 function l(e) {
   let {
@@ -21,7 +21,7 @@ function l(e) {
     className: s.footer,
     children: (0, r.jsx)(i.O1, {
       variant: "primary",
-      text: o.intl.string(o.t.hZkfwc),
+      text: o.intl.string(o.t.hZkfwY),
       onClick: () => {},
       fullWidth: true
     })

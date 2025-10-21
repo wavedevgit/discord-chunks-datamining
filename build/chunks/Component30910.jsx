@@ -14,9 +14,9 @@ var Chunk120356 = require("./120356.js"),
   Chunk603113 = require("./603113.js"),
   Chunk481060 = require("./481060.js"),
   Chunk343312 = require("./343312.jsx"),
-  Chunk45765 = require("./45765.js"),
+  Chunk470658 = require("./470658.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk815177 = require("./815177.js");
+  Chunk467078 = require("./467078.js");
 
 function g(e) {
   for (var n = 1; n < arguments.length; n++) {
@@ -43,7 +43,7 @@ function f(e) {
   } = (0, c.JL)();
   return (0, l.jsx)(u.Button, g({
     variant: "primary",
-    text: m.intl.string(m.t["3PatS0"]),
+    text: m.intl.string(m.t["3PatSz"]),
     onClick: n,
     icon: u.ZSh,
     iconPosition: "end"
@@ -57,7 +57,7 @@ function b(e) {
     gameServerInstance: a,
     availableBoostCount: i,
     planCost: r
-  } = (0, c.JL)(), s = r > 0 && i < r, o = r > 0 ? null != a ? m.intl.string(d.default.e3Q5Ky) : m.intl.string(d.default["cmSy/f"]) : m.intl.string(m.t.K344S0);
+  } = (0, c.JL)(), s = r > 0 && i < r, o = r > 0 ? null != a ? m.intl.string(d.default.e3Q5Kz) : m.intl.string(d.default["cmSy/b"]) : m.intl.string(m.t.K344S7);
   return (0, l.jsx)(u.Button, g({
     variant: s || r > 0 ? "expressive" : "primary",
     text: o,
@@ -92,10 +92,10 @@ function j(e) {
     d = null == o || null == (n = o.onBack) ? true : n.type;
   switch (d) {
     case "go-to-step":
-      i = m.intl.string(m.t["13/7kZ"]);
+      i = m.intl.string(m.t["13/7kX"]);
       break;
     case "close":
-      i = m.intl.string(m.t.cpT0Cg)
+      i = m.intl.string(m.t.cpT0Cq)
   }
   return s()(null != i, "Invalid stepType ".concat(d)), (0, l.jsx)(u.Button, (t = g({}, e), a = a = {
     variant: "secondary",

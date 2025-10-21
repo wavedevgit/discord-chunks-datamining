@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk378441 = require("./378441.js"),
   Chunk358820 = require("./358820.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk551766 = require("./551766.js");
+  Chunk48528 = require("./48528.js");
 
 function f() {
   let {
@@ -70,11 +70,11 @@ function f() {
         children: [(0, r.jsx)(s.Text, {
           variant: "text-sm/semibold",
           color: "text-primary",
-          children: p.intl.format(p.t["r+uZYW"], {
+          children: p.intl.format(p.t["r+uZYZ"], {
             progress: t
           })
         }), (0, r.jsx)(s.Avr, {
-          text: p.intl.string(p.t["ETE/oK"]),
+          text: p.intl.string(p.t["ETE/oC"]),
           onClick: d.ge,
           variant: "always-white",
           textVariant: "text-sm/normal"

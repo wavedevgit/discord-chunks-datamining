@@ -1,4 +1,4 @@
-/** Chunk was on 43157 **/
+/** Chunk was on 25046 **/
 /** chunk id: 462747, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => w
@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk376108 = require("./376108.js"),
   Chunk765305 = require("./765305.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk699183 = require("./699183.js");
+  Chunk200608 = require("./200608.js");
 
 function b(e) {
   for (var n = 1; n < arguments.length; n++) {
@@ -80,8 +80,8 @@ function Z() {
     children: (0, Chunk951288.jsx)(Chunk481060.Heading, {
       color: "header-primary",
       variant: "heading-xl/semibold",
-      className: Chunk699183.title,
-      children: Chunk388032.intl.string(Chunk388032.t.hW0mBQ)
+      className: Chunk200608.title,
+      children: Chunk388032.intl.string(Chunk388032.t.hW0mBR)
     })
   })
 }
@@ -91,8 +91,8 @@ function y() {
     children: (0, Chunk951288.jsx)(Chunk481060.Heading, {
       color: "header-secondary",
       variant: "heading-md/semibold",
-      className: Chunk699183.errorTitle,
-      children: Chunk388032.intl.string(Chunk388032.t.obChXl)
+      className: Chunk200608.errorTitle,
+      children: Chunk388032.intl.string(Chunk388032.t.obChXk)
     })
   })
 }
@@ -115,7 +115,7 @@ function C(e) {
     }), (0, l.jsx)(o.Text, {
       color: "text-default",
       variant: "text-md/normal",
-      children: j.intl.format(j.t.BdQTfX, {
+      children: j.intl.format(j.t.BdQTfR, {
         userRemainCount: n
       })
     })]
@@ -182,7 +182,7 @@ function P(e) {
   })
 }
 
-function E(e) {
+function k(e) {
   let {
     children: n,
     style: t
@@ -194,12 +194,12 @@ function E(e) {
   })
 }
 
-function k(e) {
+function E(e) {
   let {
     children: n,
     height: t
   } = e;
-  return (0, l.jsx)(E, {
+  return (0, l.jsx)(k, {
     style: {
       height: t
     },
@@ -216,22 +216,22 @@ function w(e) {
     error: c,
     containerHeight: d
   } = e, u = (0, g.Z)(n.guild_id, n.id, r);
-  if (s && 0 === i.length) return (0, l.jsx)(k, {
+  if (s && 0 === i.length) return (0, l.jsx)(E, {
     height: d,
     children: (0, l.jsx)(o.$jN, {
       type: o.$jN.Type.SPINNING_CIRCLE,
       className: p.spinner
     })
   });
-  if (null != c && 0 === i.length) return (0, l.jsx)(k, {
+  if (null != c && 0 === i.length) return (0, l.jsx)(E, {
     height: d,
     children: (0, l.jsx)(y, {})
   });
   let _ = 0;
-  return i.length >= v.rC && u > v.rC && (_ = Math.max(u - i.length, 0)), 0 === i.length ? (0, l.jsx)(k, {
+  return i.length >= v.rC && u > v.rC && (_ = Math.max(u - i.length, 0)), 0 === i.length ? (0, l.jsx)(E, {
     height: d,
     children: (0, l.jsx)(Z, {})
-  }) : (0, l.jsx)(E, {
+  }) : (0, l.jsx)(k, {
     children: (0, l.jsx)(P, {
       eventUsers: i,
       guildId: n.guild_id,

@@ -9,7 +9,7 @@ var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk217241 = require("./217241.js"),
+  Chunk402529 = require("./402529.js"),
   s = function(e) {
     return e.SELECT_PAYMENT_METHOD = "SELECT_PAYMENT_METHOD", e.ADD_NEW_PAYMENT_METHOD = "ADD_NEW_PAYMENT_METHOD", e
   }({});
@@ -21,10 +21,10 @@ function l(e) {
   if (!t) return null;
   switch (t) {
     case "SELECT_PAYMENT_METHOD":
-      n = a.intl.string(a.t.Tdb5qa);
+      n = a.intl.string(a.t.Tdb5qb);
       break;
     case "ADD_NEW_PAYMENT_METHOD":
-      n = a.intl.string(a.t["6d44Fx"])
+      n = a.intl.string(a.t["6d44F5"])
   }
   return (0, r.jsxs)("div", {
     className: o.paymentRestrictionBannerContainer,

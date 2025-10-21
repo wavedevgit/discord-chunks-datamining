@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk736530 = require("./736530.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk412297 = require("./412297.js");
+  Chunk660886 = require("./660886.js");
 
 function T(e) {
   let {
@@ -57,27 +57,27 @@ function T(e) {
         };
       (0, m.V)({
         header: v.intl.string(v.t["uUr+GR"]),
-        body: v.intl.string(v.t.hjGJBg),
-        confirmText: v.intl.string(v.t.gm1Ven),
-        cancelText: v.intl.string(v.t.p89ACg),
+        body: v.intl.string(v.t.hjGJBp),
+        confirmText: v.intl.string(v.t.gm1Vej),
+        cancelText: v.intl.string(v.t.p89ACt),
         confirmButtonColor: a.zx.Colors.BRAND,
         onConfirm: n,
         onCancel: t
       })
     },
-    D = A ? v.intl.string(v.t.PMsfcH) : v.intl.string(v.t.RAQUSE);
+    D = A ? v.intl.string(v.t.PMsfcH) : v.intl.string(v.t.RAQUSN);
   return (0, r.jsx)(p.U, {
     setting: b.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_DMS_V2,
     children: n === y.T ? (0, r.jsx)(h.ZP, {
       title: D,
-      note: A ? v.intl.string(v.t.XXGmuL) : v.intl.string(v.t.wbYDfX),
+      note: A ? v.intl.string(v.t.XXGmuB) : v.intl.string(v.t.wbYDfT),
       value: !S,
       onChange: P,
       disabled: C,
-      tooltipText: C ? v.intl.string(I.default["6Af/c3"]) : true
+      tooltipText: C ? v.intl.string(I.default["6Af/cw"]) : true
     }) : (0, r.jsx)(h.ZP, {
       title: D,
-      note: E ? v.intl.string(v.t.V0ka0d) : A ? v.intl.string(v.t.F9WY3d) : v.intl.string(v.t.G7c3Xl),
+      note: E ? v.intl.string(v.t.V0ka0Q) : A ? v.intl.string(v.t.F9WY3f) : v.intl.string(v.t.G7c3Xo),
       value: !T,
       onChange: N
     })

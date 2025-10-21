@@ -20,7 +20,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk970184 = require("./970184.jsx"),
   Chunk280501 = require("./280501.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk500278 = require("./500278.js");
+  Chunk392061 = require("./392061.js");
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -88,7 +88,7 @@ function T(e) {
     children: (0, r.jsx)(l.kSQ, {
       children: (0, r.jsx)(l.sNh, {
         id: "copy",
-        label: g.intl.string(g.t.uHhnfX),
+        label: g.intl.string(g.t.uHhnfa),
         action: () => (0, _.JG)(t)
       })
     })

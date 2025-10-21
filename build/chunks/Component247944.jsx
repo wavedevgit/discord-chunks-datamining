@@ -1,4 +1,4 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 247944, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   S: () => Chunk904847.Z,
@@ -13,8 +13,8 @@ var Chunk545594 = require("./545594.jsx"),
 let Chunk848304 = require("./848304.js"),
   c = () => (0, Chunk951288.jsx)(Chunk545594.i, {
     bannerIcon: Chunk848304,
-    bannerHeader: Chunk388032.intl.string(Chunk388032.t.EouHws),
-    bannerSubtext: Chunk388032.intl.format(Chunk388032.t.PThBen, {
+    bannerHeader: Chunk388032.intl.string(Chunk388032.t.EouHwv),
+    bannerSubtext: Chunk388032.intl.format(Chunk388032.t.PThBel, {
       appealLink: Chunk610674.Z
     })
   })

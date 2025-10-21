@@ -26,61 +26,61 @@ var c = function(e) {
 }({});
 let u = [{
   value: "PLAYING",
-  label: () => Chunk388032.intl.string(Chunk388032.t.r5TNm5)
+  label: () => Chunk388032.intl.string(Chunk388032.t.r5TNmx)
 }, {
   value: "LISTENING_TO",
-  label: () => Chunk388032.intl.string(Chunk388032.t.ylzor6)
+  label: () => Chunk388032.intl.string(Chunk388032.t["ylzor/"])
 }, {
   value: "WATCHING",
-  label: () => Chunk388032.intl.string(Chunk388032.t.pzz9iI)
+  label: () => Chunk388032.intl.string(Chunk388032.t.pzz9iP)
 }, {
   value: "CURRENT_OBSESSION",
-  label: () => Chunk388032.intl.string(Chunk388032.t.xaCthI)
+  label: () => Chunk388032.intl.string(Chunk388032.t.xaCthD)
 }, {
   value: "SHOWER_THOUGHT",
-  label: () => Chunk388032.intl.string(Chunk388032.t.Wf8fxM)
+  label: () => Chunk388032.intl.string(Chunk388032.t.Wf8fxL)
 }, {
   value: "TODAY_I_LEARNED",
-  label: () => Chunk388032.intl.string(Chunk388032.t.pycKi4)
+  label: () => Chunk388032.intl.string(Chunk388032.t.pycKiy)
 }, {
   value: "HOT_TAKE",
-  label: () => Chunk388032.intl.string(Chunk388032.t.l3pZcn)
+  label: () => Chunk388032.intl.string(Chunk388032.t.l3pZci)
 }, {
   value: "DAD_JOKE",
-  label: () => Chunk388032.intl.string(Chunk388032.t["3XVZ0t"])
+  label: () => Chunk388032.intl.string(Chunk388032.t["3XVZ0v"])
 }, {
   value: "EMOJI_DAY",
-  label: () => Chunk388032.intl.string(Chunk388032.t["4U+EJC"])
+  label: () => Chunk388032.intl.string(Chunk388032.t["4U+EJP"])
 }, {
   value: "USELESS_TALENT",
-  label: () => Chunk388032.intl.string(Chunk388032.t["Z3Vn/f"])
+  label: () => Chunk388032.intl.string(Chunk388032.t["Z3Vn/X"])
 }, {
   value: "VIDEO_GAME_ITEM",
-  label: () => Chunk388032.intl.string(Chunk388032.t.PiepBg)
+  label: () => Chunk388032.intl.string(Chunk388032.t.PiepBk)
 }, {
   value: "READING",
-  label: () => Chunk388032.intl.string(Chunk388032.t.pYQRnJ)
+  label: () => Chunk388032.intl.string(Chunk388032.t.pYQRnN)
 }, {
   value: "SONG_STUCK",
-  label: () => Chunk388032.intl.string(Chunk388032.t.S7UJ0t)
+  label: () => Chunk388032.intl.string(Chunk388032.t.S7UJ0u)
 }, {
   value: "MOST_USED_EMOJI",
-  label: () => Chunk388032.intl.string(Chunk388032.t["1TlHw8"])
+  label: () => Chunk388032.intl.string(Chunk388032.t["1TlHwx"])
 }, {
   value: "BEST_FOOD",
-  label: () => Chunk388032.intl.string(Chunk388032.t.ZPjue3)
+  label: () => Chunk388032.intl.string(Chunk388032.t.ZPjuez)
 }, {
   value: "FICTIONAL_WORLD",
-  label: () => Chunk388032.intl.string(Chunk388032.t.lyOeXF)
+  label: () => Chunk388032.intl.string(Chunk388032.t.lyOeXL)
 }, {
   value: "USERNAME_ORIGIN",
-  label: () => Chunk388032.intl.string(Chunk388032.t.l6Yb3d)
+  label: () => Chunk388032.intl.string(Chunk388032.t.l6Yb3T)
 }, {
   value: "THEME_SONG",
   label: () => Chunk388032.intl.string(Chunk388032.t.Vok4QU)
 }, {
   value: "FAVORITE_COLLECTIBLE",
-  label: () => Chunk388032.intl.string(Chunk388032.t.T24um5)
+  label: () => Chunk388032.intl.string(Chunk388032.t.T24umy)
 }, {
   value: "GAME_MECHANIC",
   label: () => Chunk388032.intl.string(Chunk388032.t.kzToEh)
@@ -89,38 +89,38 @@ let u = [{
   label: () => Chunk388032.intl.string(Chunk388032.t["/Zm5VV"])
 }, {
   value: "FOOD_CRAVING",
-  label: () => Chunk388032.intl.string(Chunk388032.t.ujnXur)
+  label: () => Chunk388032.intl.string(Chunk388032.t.ujnXus)
 }, {
   value: "MYTHICAL_PET",
-  label: () => Chunk388032.intl.string(Chunk388032.t["45r7ub"])
+  label: () => Chunk388032.intl.string(Chunk388032.t["45r7ue"])
 }, {
   value: "LATEST_HOBBY",
-  label: () => Chunk388032.intl.string(Chunk388032.t.SluNa2)
+  label: () => Chunk388032.intl.string(Chunk388032.t.SluNa8)
 }, {
   value: "FAVORITE_ANIME",
-  label: () => Chunk388032.intl.string(Chunk388032.t.R1f9RU)
+  label: () => Chunk388032.intl.string(Chunk388032.t.R1f9RT)
 }, {
   value: "RANKED_UP",
-  label: () => Chunk388032.intl.string(Chunk388032.t.nXJgjo)
+  label: () => Chunk388032.intl.string(Chunk388032.t.nXJgjn)
 }, {
   value: "CHARACTER_CLASS",
-  label: () => Chunk388032.intl.string(Chunk388032.t.SWVxPD)
+  label: () => Chunk388032.intl.string(Chunk388032.t.SWVxPM)
 }, {
   value: "HIGH_SCORE",
-  label: () => Chunk388032.intl.string(Chunk388032.t.gbUeX1)
+  label: () => Chunk388032.intl.string(Chunk388032.t.gbUeX7)
 }, {
   value: "FINISHED_PLAYING",
-  label: () => Chunk388032.intl.string(Chunk388032.t.bIrdLi)
+  label: () => Chunk388032.intl.string(Chunk388032.t.bIrdLj)
 }, {
   value: "FINISHED_READING",
-  label: () => Chunk388032.intl.string(Chunk388032.t["tcQn+P"])
+  label: () => Chunk388032.intl.string(Chunk388032.t["tcQn+J"])
 }, {
   value: "CANT_WAIT",
-  label: () => Chunk388032.intl.string(Chunk388032.t["40gTj4"])
+  label: () => Chunk388032.intl.string(Chunk388032.t["40gTjw"])
 }, {
   value: "ADD_STATUS",
-  label: () => Chunk388032.intl.string(Chunk388032.t.Vq4UmZ)
+  label: () => Chunk388032.intl.string(Chunk388032.t.Vq4UmS)
 }, {
   value: "WHATS_ON_YOUR_MIND",
-  label: () => Chunk388032.intl.string(Chunk388032.t["xod36+"])
+  label: () => Chunk388032.intl.string(Chunk388032.t.xod367)
 }]

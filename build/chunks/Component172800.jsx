@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk149203 = require("./149203.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk39162 = require("./39162.js");
+  Chunk999642 = require("./999642.js");
 
 function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -183,7 +183,7 @@ let x = e => {
               collapsed: e.sectionCollapsedToThreeRows,
               guild_id: e.guildId
             }))
-          }, l = e.sectionCollapsedToThreeRows ? a ? (0, s.wj)(eo) ? er : ea : (0, s.wj)(eo) ? J : $ : a ? (0, s.wj)(eo) ? en : ei : (0, s.wj)(eo) ? ee : et, c = A.intl.string(e.sectionCollapsedToThreeRows ? A.t.NZI2Zm : A.t["/K2RDA"]);
+          }, l = e.sectionCollapsedToThreeRows ? a ? (0, s.wj)(eo) ? er : ea : (0, s.wj)(eo) ? J : $ : a ? (0, s.wj)(eo) ? en : ei : (0, s.wj)(eo) ? ee : et, c = A.intl.string(e.sectionCollapsedToThreeRows ? A.t.NZI2Zk : A.t["/K2RDH"]);
           return n({
             handleSelect: o,
             icon: (0, r.jsx)("img", {

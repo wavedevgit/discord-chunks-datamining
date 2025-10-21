@@ -1,7 +1,7 @@
 /** Chunk was on 49910 **/
 /** chunk id: 239191, original params: e,t,i (module,exports,require) **/
 require.d(exports, {
-  DesktopRefreshOnboardingModal: () => k
+  DesktopRefreshOnboardingModal: () => C
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,9 +21,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk874893 = require("./874893.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk86603 = require("./86603.js");
+  Chunk3498 = require("./3498.js");
 
-function O(e) {
+function N(e) {
   let {
     options: t,
     selected: i,
@@ -45,7 +45,7 @@ function O(e) {
           children: (0, s.jsxs)(c.P3F, {
             "data-selected": e.id === i,
             onClick: () => n(e.id),
-            className: l()(e.className, N.option),
+            className: l()(e.className, O.option),
             style: e.style,
             children: [a && (0, s.jsx)(c.Text, {
               variant: "text-sm/medium",
@@ -54,7 +54,7 @@ function O(e) {
             }), e.new && (0, s.jsx)(c.IGR, {
               color: c.TVs.colors.BG_BRAND.css,
               text: b.intl.string(b.t.y2b7CA),
-              className: N.new
+              className: O.new
             })]
           })
         })
@@ -65,39 +65,39 @@ function O(e) {
 }
 let v = [{
     id: Chunk231338.BR.LIGHT,
-    label: Chunk388032.intl.string(Chunk388032.t.K2sFfn),
-    className: l()("theme-light", Chunk86603.themeOption)
+    label: Chunk388032.intl.string(Chunk388032.t.K2sFfo),
+    className: l()("theme-light", Chunk3498.themeOption)
   }, {
     id: Chunk231338.BR.DARK,
-    label: Chunk388032.intl.string(Chunk388032.t.SMPT1t),
-    className: l()("theme-dark", Chunk86603.themeOption)
+    label: Chunk388032.intl.string(Chunk388032.t.SMPT1k),
+    className: l()("theme-dark", Chunk3498.themeOption)
   }, {
     id: Chunk231338.BR.DARKER,
-    label: Chunk388032.intl.string(Chunk388032.t.b8Cei4),
-    className: l()("theme-darker", Chunk86603.themeOption),
+    label: Chunk388032.intl.string(Chunk388032.t.b8Cei3),
+    className: l()("theme-darker", Chunk3498.themeOption),
     new: true
   }, {
     id: Chunk231338.BR.MIDNIGHT,
-    label: Chunk388032.intl.string(Chunk388032.t.Do4ZJy),
-    className: l()("theme-midnight", Chunk86603.themeOption),
+    label: Chunk388032.intl.string(Chunk388032.t.Do4ZJx),
+    className: l()("theme-midnight", Chunk3498.themeOption),
     new: true
   }],
-  C = [{
+  k = [{
     id: "compact",
-    label: Chunk388032.intl.string(Chunk388032.t["7iegX1"])
+    label: Chunk388032.intl.string(Chunk388032.t["7iegX4"])
   }, {
     id: "default",
-    label: Chunk388032.intl.string(Chunk388032.t.bBvAEB)
+    label: Chunk388032.intl.string(Chunk388032.t.bBvAEH)
   }, {
     id: "cozy",
     label: Chunk388032.intl.string(Chunk388032.t["4cuYHx"])
   }];
 
-function k(e) {
+function C(e) {
   let {
     transitionState: t,
     onClose: i
-  } = e, [a] = n.useState(() => g.Z.gradientPreset), o = (0, r.e7)([x.Z], () => x.Z.theme), [_] = n.useState(() => u.ZP.useSystemTheme === j.KW.ON), [k, K] = n.useState(() => _ ? "system" : null != a ? "gradient" : o), {
+  } = e, [a] = n.useState(() => g.Z.gradientPreset), o = (0, r.e7)([x.Z], () => x.Z.theme), [_] = n.useState(() => u.ZP.useSystemTheme === j.KW.ON), [C, K] = n.useState(() => _ ? "system" : null != a ? "gradient" : o), {
     density: f
   } = (0, c.TCT)(), w = n.useMemo(() => {
     if (null == a && !_) return v;
@@ -115,7 +115,7 @@ function k(e) {
       e.push({
         id: "gradient",
         label: d,
-        className: l()((0, c.wjy)(s) ? N.darkOverlay : N.lightOverlay, N.themeOption),
+        className: l()((0, c.wjy)(s) ? O.darkOverlay : O.lightOverlay, O.themeOption),
         style: {
           background: "var(--background-gradient), ".concat(r)
         }
@@ -123,50 +123,50 @@ function k(e) {
     }
     return _ && e.push({
       id: "system",
-      label: b.intl.string(b.t["7rOU6u"]),
-      className: N.themeOption
+      label: b.intl.string(b.t["7rOU6j"]),
+      className: O.themeOption
     }), e
   }, [a, _]), I = (0, h.Z)("(max-height: 800px)");
   return (0, s.jsxs)(c.Y0X, {
     transitionState: t,
     size: c.CgR.DYNAMIC,
-    className: N.root,
+    className: O.root,
     "data-modal-align": "top",
     parentComponent: "DesktopRefreshOnboardingModal",
     children: [(0, s.jsx)("div", {
-      className: N.gradient
+      className: O.gradient
     }), (0, s.jsx)(c.xBx, {
-      className: N.header,
+      className: O.header,
       children: (0, s.jsxs)(c.Kqy, {
         gap: I ? 4 : 8,
         children: [(0, s.jsxs)(c.Kqy, {
           gap: I ? 8 : 16,
           children: [(0, s.jsx)("div", {
-            className: N.headerImage
+            className: O.headerImage
           }), (0, s.jsx)(c.Heading, {
             variant: I ? "heading-lg/semibold" : "heading-xl/semibold",
             color: "header-primary",
-            children: b.intl.string(b.t["7+iCGx"])
+            children: b.intl.string(b.t["7+iCG4"])
           })]
         }), (0, s.jsx)(c.Heading, {
           variant: I ? "heading-sm/medium" : "heading-md/medium",
           color: "text-secondary",
-          children: b.intl.string(b.t.fZMMqK)
+          children: b.intl.string(b.t.fZMMqN)
         })]
       })
     }), (0, s.jsx)(c.hzk, {
-      className: N.content,
+      className: O.content,
       children: (0, s.jsxs)(c.Kqy, {
         gap: I ? 20 : 24,
         children: [(0, s.jsxs)(c.Kqy, {
           gap: I ? 8 : 12,
           children: [(0, s.jsx)(c.Heading, {
             variant: "heading-md/medium",
-            children: b.intl.string(b.t.Ksh3io)
-          }), (0, s.jsx)(O, {
+            children: b.intl.string(b.t.Ksh3ik)
+          }), (0, s.jsx)(N, {
             showLabels: false,
             options: w,
-            selected: k,
+            selected: C,
             onSelect: e => {
               K(e), "gradient" === e ? null != a && (0, m.ZI)({
                 backgroundGradientPresetId: a.id,
@@ -176,10 +176,10 @@ function k(e) {
               })
             },
             renderOptionContainer: (e, t) => "gradient" === e.id ? t : "system" === e.id ? (0, s.jsxs)(c.Kqy, {
-              className: N.systemOption,
+              className: O.systemOption,
               children: [t, (0, s.jsx)(c.DuK, {
                 size: "sm",
-                className: N.systemIcon
+                className: O.systemIcon
               })]
             }) : (0, s.jsx)(c.f6W, {
               theme: e.id,
@@ -200,7 +200,7 @@ function k(e) {
               align: "center",
               children: [(0, s.jsx)(c.Heading, {
                 variant: "heading-md/medium",
-                children: b.intl.string(b.t["C/5V0N"])
+                children: b.intl.string(b.t["C/5V0A"])
               }), (0, s.jsx)(c.IGR, {
                 color: c.TVs.colors.BG_BRAND.css,
                 text: b.intl.string(b.t.y2b7CA)
@@ -208,11 +208,11 @@ function k(e) {
             }), (0, s.jsx)(c.Text, {
               variant: "text-sm/medium",
               color: "text-secondary",
-              children: b.intl.string(b.t["2w1sEB"])
+              children: b.intl.string(b.t["2w1sEO"])
             })]
-          }), (0, s.jsx)(O, {
+          }), (0, s.jsx)(N, {
             showLabels: true,
-            options: C,
+            options: k,
             selected: f,
             onSelect: e => {
               switch (e) {
@@ -230,10 +230,10 @@ function k(e) {
         })]
       })
     }), (0, s.jsx)(c.mzw, {
-      className: N.footer,
+      className: O.footer,
       children: (0, s.jsx)(c.Button, {
         variant: "primary",
-        text: b.intl.string(b.t["1Qm829"]),
+        text: b.intl.string(b.t["1Qm822"]),
         onClick: i
       })
     })]

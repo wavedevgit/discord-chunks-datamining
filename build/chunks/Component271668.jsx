@@ -31,7 +31,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk689079 = require("./689079.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk587222 = require("./587222.js"),
+  Chunk57507 = require("./57507.js"),
   Chunk239840 = require("./239840.js");
 let D = 512,
   L = 7,
@@ -176,7 +176,7 @@ let D = 512,
             [P.categorySectionLast]: n
           }),
           children: [t, 0 === a.length && (0, r.jsx)(c.Z, {
-            message: R.intl.format(R.t.WoQXT0, {
+            message: R.intl.format(R.t.WoQXT6, {
               applicationName: i.name
             }),
             noResultsImageURL: w,

@@ -1,4 +1,4 @@
-/** Chunk was on 37786 **/
+/** Chunk was on 84071 **/
 /** chunk id: 846464, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   q: () => v
@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk48175 = require("./48175.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk178397 = require("./178397.js");
+  Chunk360026 = require("./360026.js");
 
 function v(e) {
   let {
@@ -35,10 +35,10 @@ function v(e) {
     setSelectedPlanId: C,
     priceOptions: u,
     defaultPlanId: j
-  } = (0, _.JL)(), {
+  } = (0, h.JL)(), {
     isGift: b,
     claimableRewards: v
-  } = (0, h.wD)(), L = b && null != v && v.length > 0, y = (0, d.N)(i), I = (0, s.Nx)(), w = (0, o.Z)({
+  } = (0, _.wD)(), L = b && null != v && v.length > 0, y = (0, d.N)(i), I = (0, s.Nx)(), w = (0, o.Z)({
     location: "PremiumPaymentSelect"
   });
   return (0, r.jsx)(S, {
@@ -63,13 +63,13 @@ function v(e) {
           isGift: a,
           skuId: n
         }),
-        h = (0, f.Kp)({
+        _ = (0, f.Kp)({
           isTrial: u,
           isGift: a,
           selectedSkuId: n,
           startedPaymentFlowWithPaymentSources: o
         });
-      c !== m.h8.WHAT_YOU_LOSE && h && (c = m.h8.REVIEW, s((0, f.nA)(n, t, d))), i(c, {
+      c !== m.h8.WHAT_YOU_LOSE && _ && (c = m.h8.REVIEW, s((0, f.nA)(n, t, d))), i(c, {
         analyticsDataOverride: {
           sku_id: n
         }
@@ -102,28 +102,28 @@ function S(e) {
     inOfferExperience: s,
     priceOptions: o,
     showPromotionalGiftBanner: d,
-    enablePremiumBrandRefresh: _
+    enablePremiumBrandRefresh: h
   } = e, {
     giftRecipient: m
-  } = (0, h.wD)(), f = (0, u.ao)({
+  } = (0, _.wD)(), f = (0, u.ao)({
     location: "PremiumPaymentSelect",
     giftRecipient: m,
     isGift: i
   }), x = f ? (0, r.jsx)(l.Heading, {
     variant: "heading-lg/bold",
-    children: j.intl.string(j.t["wg/30t"])
-  }) : _ ? (0, r.jsx)(l.Heading, {
+    children: j.intl.string(j.t["wg/30i"])
+  }) : h ? (0, r.jsx)(l.Heading, {
     variant: "heading-lg/bold",
-    children: j.intl.string(j.t["r+SebW"])
+    children: j.intl.string(j.t["r+SebU"])
   }) : (0, r.jsx)(l.Heading, {
     variant: "heading-md/semibold",
-    children: j.intl.string(j.t["r+SebW"])
+    children: j.intl.string(j.t["r+SebU"])
   });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(l.xBx, {
       "data-migration-pending": true,
       className: a()(b.skuSelectModalHeader, {
-        [b.premiumBrandRefreshHeader]: _
+        [b.premiumBrandRefreshHeader]: h
       }),
       separator: false,
       children: (0, r.jsxs)(l.Kqy, {
@@ -139,9 +139,9 @@ function S(e) {
     }), (0, r.jsx)(l.hzk, {
       "data-migration-pending": true,
       className: a()(b.skuSelectModalContent, {
-        [b.modalSize]: !_,
-        [b.modalPadding]: s && !_,
-        [b.premiumBrandRefreshContent]: _,
+        [b.modalSize]: !h,
+        [b.modalPadding]: s && !h,
+        [b.premiumBrandRefreshContent]: h,
         [b.wishlistModalSize]: f
       }),
       children: null != m && f ? (0, r.jsx)(C.Z, {
@@ -155,7 +155,7 @@ function S(e) {
         isGift: i,
         priceOptions: o,
         showPromotionalGiftBanner: d,
-        enablePremiumBrandRefresh: _
+        enablePremiumBrandRefresh: h
       })
     })]
   })

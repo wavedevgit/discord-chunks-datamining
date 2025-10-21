@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk426563 = require("./426563.js"),
   Chunk998502 = require("./998502.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk116618 = require("./116618.js");
+  Chunk545869 = require("./545869.js");
 let f = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk481060.qEK;
 
 function _() {
@@ -42,7 +42,7 @@ function p(e) {
     children: (0, r.jsx)(f, {
       src: t,
       size: o.EFr.SIZE_40,
-      "aria-label": u.intl.string(u.t.hG1StL)
+      "aria-label": u.intl.string(u.t.hG1StD)
     })
   })
 }

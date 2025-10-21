@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk892001 = require("./892001.js"),
   Chunk252417 = require("./252417.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk883172 = require("./883172.js");
+  Chunk878449 = require("./878449.js");
 
 function x(e) {
   let {
@@ -44,7 +44,7 @@ function x(e) {
         className: f.emptyIconFriends
       }), (0, l.jsx)("div", {
         className: f.emptyText,
-        children: p.intl.string(p.t["/5p4g4"])
+        children: p.intl.string(p.t["/5p4gx"])
       })]
     }) : v.map(e => {
       let {

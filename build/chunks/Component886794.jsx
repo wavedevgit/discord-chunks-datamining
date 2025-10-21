@@ -28,9 +28,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk526594 = require("./526594.js"),
-  Chunk438160 = require("./438160.js"),
-  Chunk909735 = require("./909735.js");
+  Chunk673517 = require("./673517.js"),
+  Chunk54966 = require("./54966.js"),
+  Chunk602727 = require("./602727.js");
 
 function C(e) {
   var n;
@@ -39,22 +39,22 @@ function C(e) {
     guildId: C,
     channelId: S,
     messageId: w,
-    roleId: R,
-    sessionId: D,
+    roleId: D,
+    sessionId: R,
     transitionState: L,
     openedAt: M,
     onClose: B,
     sourceAnalyticsLocations: U = []
-  } = e, k = C === O.ME ? true : C, G = (0, p.ZP)(t.id, k), F = u.ZP.getName(k, S, t), V = (0, a.Dt)(), {
+  } = e, k = C === O.ME ? true : C, G = (0, p.ZP)(t.id, k), V = u.ZP.getName(k, S, t), F = (0, a.Dt)(), {
     analyticsLocations: W
   } = (0, s.ZP)([...U, r.Z.USER_PROFILE_MODAL]), H = (0, m.ZB)({
     layout: "MODAL",
     userId: t.id,
-    sourceSessionId: D,
+    sourceSessionId: R,
     guildId: k,
     channelId: S,
     messageId: w,
-    roleId: R
+    roleId: D
   }), z = i.useRef(null), Y = (0, c.X)(z);
   return (0, l.jsx)(s.Gt, {
     value: W,
@@ -69,14 +69,14 @@ function C(e) {
         transitionState: L,
         className: T.root,
         hideShadow: true,
-        "aria-labelledby": V,
+        "aria-labelledby": F,
         parentComponent: "NonUserBotProfileModal",
         children: [(0, l.jsx)(o.y5t, {
           component: (0, l.jsx)(o.nn4, {
             children: (0, l.jsx)(o.H, {
-              id: V,
-              children: A.intl.format(A.t.KRe1Fh, {
-                name: F
+              id: F,
+              children: A.intl.format(A.t.KRe1Fk, {
+                name: V
               })
             })
           }),
@@ -85,7 +85,7 @@ function C(e) {
             displayProfile: G,
             themeType: N.l.MODAL,
             ref: (null == G ? true : G.profileEffect) != null ? z : true,
-            children: [(0, l.jsx)(Z.Z, {
+            children: [(0, l.jsx)(_.Z, {
               children: (0, l.jsx)(y.Z, {
                 user: t
               })
@@ -110,7 +110,7 @@ function C(e) {
                 className: T.username,
                 user: t,
                 guildId: k,
-                nickname: F,
+                nickname: V,
                 pronouns: null == G ? true : G.pronouns,
                 nicknameVariant: "heading-xl/bold",
                 tags: (0, l.jsx)(x.Z, {
@@ -123,17 +123,17 @@ function C(e) {
                 children: [(0, l.jsx)(o.njP, {
                   className: E.tabBar,
                   type: "top",
-                  selectedItem: _.oh.BOT_INFO,
+                  selectedItem: Z.oh.BOT_INFO,
                   onItemSelect: O.dG4,
                   children: (0, l.jsx)(o.njP.Item, {
                     className: E.tabBarItem,
-                    id: _.oh.BOT_INFO,
-                    "aria-label": A.intl.string(A.t.jGoPJS),
+                    id: Z.oh.BOT_INFO,
+                    "aria-label": A.intl.string(A.t.jGoPJT),
                     children: (0, l.jsx)(o.Text, {
                       variant: "text-sm/normal",
-                      children: A.intl.string(A.t.jGoPJS)
+                      children: A.intl.string(A.t.jGoPJT)
                     })
-                  }, _.oh.BOT_INFO)
+                  }, Z.oh.BOT_INFO)
                 }), (0, l.jsxs)(o.zJl, {
                   fade: true,
                   className: P.scroller,
@@ -142,11 +142,11 @@ function C(e) {
                     userBio: null == G ? true : G.bio,
                     setLineClamp: false
                   }), (0, l.jsx)(g.Z, {
-                    heading: A.intl.string(A.t["A//N4u"]),
+                    heading: A.intl.string(A.t["A//N4k"]),
                     children: (0, l.jsx)(j.Z, {
                       userId: t.id,
                       guildId: k,
-                      tooltipDelay: _.vB
+                      tooltipDelay: Z.vB
                     })
                   })]
                 })]

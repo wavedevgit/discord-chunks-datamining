@@ -15,7 +15,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk170245 = require("./170245.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk715246 = require("./715246.js");
+  Chunk475823 = require("./475823.js");
 
 function g(e) {
   let {
@@ -49,13 +49,13 @@ function g(e) {
         children: [(0, r.jsx)(c.Z, {
           icon: i.dz2,
           actionType: c.Z.ActionTypes.ACCEPT,
-          tooltip: f.intl.string(f.t.ZcibdX),
+          tooltip: f.intl.string(f.t.Zcibdf),
           onClick: _,
           shouldHighlight: e
         }), (0, r.jsx)(c.Z, {
           icon: i.Dio,
           actionType: c.Z.ActionTypes.DENY,
-          tooltip: f.intl.string(f.t.xuio0N),
+          tooltip: f.intl.string(f.t.xuio0C),
           onClick: E,
           shouldHighlight: e
         })]

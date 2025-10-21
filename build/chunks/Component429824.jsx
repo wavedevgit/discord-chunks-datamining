@@ -65,7 +65,7 @@ function b(e) {
     }, [e.id, d]);
   return e.features.has(u.GuildFeatures.COMMUNITY) && b ? (0, r.jsx)(l.sNh, {
     id: "server-lockdown",
-    label: p ? s.intl.string(s.t["+tSVi4"]) : s.intl.string(s.t.EPlEdn),
+    label: p ? s.intl.string(s.t["+tSVi3"]) : s.intl.string(s.t.EPlEdu),
     icon: t ? p ? l.d$P : l.mBM : true,
     action: O,
     color: "danger"

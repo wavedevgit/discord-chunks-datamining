@@ -21,34 +21,34 @@ var Chunk951288 = require("./951288.js"),
   Chunk426482 = require("./426482.jsx"),
   Chunk644941 = require("./644941.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk456486 = require("./456486.js"),
-  Chunk276145 = require("./276145.js");
+  Chunk226788 = require("./226788.js"),
+  Chunk414642 = require("./414642.js");
 let b = e => {
   let {
     game: t,
     onClose: n,
-    trackClick: r
+    trackClick: i
   } = e, l = (0, c.e7)([f.Z], () => f.Z.getApplication(t.applicationId));
-  return (0, i.jsx)(d.u, {
+  return (0, r.jsx)(d.u, {
     asContainer: true,
     text: t.name,
-    children: (0, i.jsx)(u.P3F, {
+    children: (0, r.jsx)(u.P3F, {
       className: I.similarGameImageClickable,
       onClick: async () => {
-        r(g.as.ClickSimilarGame, t.applicationId), (0, u.ZDy)(() => Promise.resolve(e => (0, i.jsx)(v.default, function(e) {
+        i(g.as.ClickSimilarGame, t.applicationId), (0, u.ZDy)(() => Promise.resolve(e => (0, r.jsx)(v.default, function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
-              i = Object.keys(n);
-            "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+              r = Object.keys(n);
+            "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
               return Object.getOwnPropertyDescriptor(n, e).enumerable
-            }))), i.forEach(function(t) {
-              var i;
-              i = n[t], t in e ? Object.defineProperty(e, t, {
-                value: i,
+            }))), r.forEach(function(t) {
+              var r;
+              r = n[t], t in e ? Object.defineProperty(e, t, {
+                value: r,
                 enumerable: true,
                 configurable: true,
                 writable: true
-              }) : e[t] = i
+              }) : e[t] = r
             })
           }
           return e
@@ -57,7 +57,7 @@ let b = e => {
           source: g.m1.SimilarGames
         }, e)))), await new Promise(e => setTimeout(e, 10)), n()
       },
-      children: (0, i.jsx)(j.C, {
+      children: (0, r.jsx)(j.C, {
         game: t,
         application: l,
         className: I.similarGameImage,
@@ -79,27 +79,27 @@ function E(e) {
       n = s.some(e => p.Z.isFetching(e));
     return e || n
   }), g = (0, c.Wu)([p.Z], () => s.map(e => p.Z.getGame(e)).filter(e => null != e).filter(e => (0, h.z6)(e.applicationId)).slice(0, 5));
-  return (r.useEffect(() => {
+  return (i.useEffect(() => {
     s.length > 0 && m.Z.getDetectableGamesSupplemental([t, ...s])
-  }, [t, s]), f && null == d) ? (0, i.jsxs)("div", {
-    children: [(0, i.jsx)("div", {
+  }, [t, s]), f && null == d) ? (0, r.jsxs)("div", {
+    children: [(0, r.jsx)("div", {
       className: a()(I.loadingHeading, y.sectionHeader)
-    }), (0, i.jsx)("div", {
+    }), (0, r.jsx)("div", {
       className: a()(y.row, y.gapLg),
-      children: o().range(0, 5).map(e => (0, i.jsx)("div", {
+      children: o().range(0, 5).map(e => (0, r.jsx)("div", {
         className: I.loadingArtwork
       }, e))
     })]
-  }) : (f || 0 !== g.length) && null == d ? (0, i.jsxs)("div", {
-    children: [(0, i.jsx)(u.Heading, {
+  }) : (f || 0 !== g.length) && null == d ? (0, r.jsxs)("div", {
+    children: [(0, r.jsx)(u.Heading, {
       className: y.sectionHeader,
       variant: "text-md/semibold",
       color: "header-primary",
-      children: O.intl.string(O.t["6rLyQE"])
-    }), (0, i.jsx)("div", {
+      children: O.intl.string(O.t["6rLyQB"])
+    }), (0, r.jsx)("div", {
       className: I.similarGames,
       style: {},
-      children: g.map(e => (0, i.jsx)(b, {
+      children: g.map(e => (0, r.jsx)(b, {
         game: e,
         onClose: n,
         trackClick: l

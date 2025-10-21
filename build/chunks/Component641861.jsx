@@ -1,4 +1,4 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 641861, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -22,7 +22,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk933557 = require("./933557.js"),
   Chunk354459 = require("./354459.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk180192 = require("./180192.js");
+  Chunk115858 = require("./115858.js");
 
 function x(e) {
   let {
@@ -71,7 +71,7 @@ function x(e) {
         className: v.chatHeaderBarText,
         variant: "text-md/medium",
         color: "header-secondary",
-        children: _.intl.format(_.t.f2tNxM, {
+        children: _.intl.format(_.t.f2tNxH, {
           username: null == t ? true : t.globalName,
           channelName: (0, i.jsx)(c.Text, {
             variant: "text-md/semibold",
@@ -93,7 +93,7 @@ function O(e) {
     channelId: t,
     recipientUserId: n,
     isUserRinging: r
-  } = e, l = r ? _.intl.string(_.t.ygslb2) : _.intl.string(_.t["3Hv9qa"]), a = r ? () => u.Z.stopRinging(t, [n]) : () => {
+  } = e, l = r ? _.intl.string(_.t.ygslb0) : _.intl.string(_.t["3Hv9qQ"]), a = r ? () => u.Z.stopRinging(t, [n]) : () => {
     u.Z.ring(t, [n], "dm_banner"), (0, m.Kh)(t)
   };
   return (0, i.jsx)(s.zxk, {

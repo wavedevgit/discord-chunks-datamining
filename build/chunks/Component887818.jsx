@@ -10,7 +10,7 @@ var Chunk951288 = require("./951288.js"),
   o = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk749542 = require("./749542.js");
+  Chunk426633 = require("./426633.js");
 let u = Chunk647438.createContext({
   isOpen: false,
   toggleOpen: () => {}
@@ -35,7 +35,7 @@ d.Toggle = function(e) {
   } = e, {
     isOpen: a,
     toggleOpen: d
-  } = i.useContext(u), f = a ? s.u04 : s.CJ0, _ = null != n ? n : a ? l.intl.string(l.t.fgq1go) : l.intl.string(l.t.XJuakJ);
+  } = i.useContext(u), f = a ? s.u04 : s.CJ0, _ = null != n ? n : a ? l.intl.string(l.t.fgq1gs) : l.intl.string(l.t.XJuakA);
   return (0, r.jsxs)(s.P3F, {
     className: o()(c.toggle, t),
     onClick: d,

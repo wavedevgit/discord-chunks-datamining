@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk849464 = require("./849464.js"),
   Chunk765305 = require("./765305.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk606532 = require("./606532.js");
+  Chunk646615 = require("./646615.js");
 let E = 20;
 
 function b(e, t) {
@@ -28,30 +28,30 @@ function b(e, t) {
     });
   switch (e) {
     case p.z.WEEKLY:
-      return m.intl.formatToPlainString(m.t.xQM9X1, {
+      return m.intl.formatToPlainString(m.t.xQM9X0, {
         weekday: r
       });
     case p.z.BIWEEKLY:
-      return m.intl.formatToPlainString(m.t.RYscaW, {
+      return m.intl.formatToPlainString(m.t.RYscac, {
         weekday: r
       });
     case p.z.MONTHLY:
       let i = Math.ceil(n.getDate() / 7);
-      return m.intl.formatToPlainString(m.t["4ZN9Ag"], {
+      return m.intl.formatToPlainString(m.t["4ZN9Ap"], {
         weekday: r,
         nth: i
       });
     case p.z.YEARLY:
-      return m.intl.formatToPlainString(m.t["rXUS+v"], {
+      return m.intl.formatToPlainString(m.t["rXUS+j"], {
         date: n.toLocaleString(m.intl.currentLocale, {
           month: "short",
           day: "2-digit"
         })
       });
     case p.z.WEEKDAY_ONLY:
-      return m.intl.string(m.t["2BX6bG"]);
+      return m.intl.string(m.t["2BX6bC"]);
     case p.z.WEEKEND_ONLY:
-      return m.intl.string(m.t["IEi+R0"]);
+      return m.intl.string(m.t["IEi+Rw"]);
     default:
       return null
   }
@@ -60,13 +60,13 @@ function b(e, t) {
 function y(e, t, n, i, a) {
   switch (e) {
     case 1:
-      return a > 0 ? m.intl.formatToPlainString(m.t.PQlCWl, {
+      return a > 0 ? m.intl.formatToPlainString(m.t.PQlCWk, {
         minutes: a
-      }) : m.intl.string(m.t.WINqKS);
+      }) : m.intl.string(m.t.WINqKV);
     case 2:
-      return m.intl.string(m.t.WINqKS);
+      return m.intl.string(m.t.WINqKV);
     case 3:
-      return null != i && "" !== i ? m.intl.format(m.t.vHYgJS, {
+      return null != i && "" !== i ? m.intl.format(m.t.vHYgJW, {
         start: n,
         startHook: e => (0, r.jsx)(d.Text, {
           color: "text-feedback-positive",
@@ -117,10 +117,10 @@ function O(e) {
 
 function v() {
   return (0, Chunk951288.jsx)(Chunk481060.IGR, {
-    className: Chunk606532.newBadge,
+    className: Chunk646615.newBadge,
     color: Chunk692547.Z.unsafe_rawColors.BRAND_260.css,
     text: (0, Chunk951288.jsx)(Chunk481060.Text, {
-      className: Chunk606532.newBadgeText,
+      className: Chunk646615.newBadgeText,
       variant: "text-xs/bold",
       children: Chunk388032.intl.string(Chunk388032.t.y2b7CA)
     })
@@ -161,7 +161,7 @@ function T(e) {
     guildEventId: C,
     recurrenceId: N
   } = e, R = (0, d.dQu)(c.Z.colors.TEXT_BRAND).hex(), P = (0, d.dQu)(c.Z.colors.TEXT_FEEDBACK_POSITIVE).hex(), w = (0, d.dQu)(c.Z.colors.TEXT_DANGER).hex();
-  null == p && (p = a === h.WX.EXTERNAL ? m.intl.string(m.t.IyZxjI) : m.intl.string(m.t["X2K3//"]));
+  null == p && (p = a === h.WX.EXTERNAL ? m.intl.string(m.t.IyZxjH) : m.intl.string(m.t["X2K3/4"]));
   let D = (0, f.Z)(N, C),
     [{
       startDateTimeString: L,
@@ -178,7 +178,7 @@ function T(e) {
     }
   }, [t, u]);
   let G = L;
-  null != x && "" !== x && (G = m.intl.formatToPlainString(m.t.tXbu7O, {
+  null != x && "" !== x && (G = m.intl.formatToPlainString(m.t.tXbu7I, {
     start: L,
     end: x
   }));
@@ -200,7 +200,7 @@ function T(e) {
     W = null;
   if (null != A) {
     let e = (0, _.Ho)(A);
-    W = m.intl.formatToPlainString(m.t.HmKEqa, {
+    W = m.intl.formatToPlainString(m.t.HmKEqW, {
       recurrenceRule: e.toText()
     });
     let n = l()(t);

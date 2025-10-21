@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk235894 = require("./235894.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk360389 = require("./360389.js");
+  Chunk975405 = require("./975405.js");
 let y = e => {
   var t;
   let {
@@ -51,9 +51,9 @@ let y = e => {
   return O && null != T && (null == I ? true : I.type) === h.B.CONFETTI ? (0, r.jsx)(o.P3F, {
     onFocus: S,
     onClick: A,
-    "aria-label": E.intl.string(E.t.Mp5k6O),
+    "aria-label": E.intl.string(E.t.Mp5k6E),
     children: (0, r.jsx)(a.u, {
-      text: E.intl.formatToPlainString(E.t["FE++aG"], {
+      text: E.intl.formatToPlainString(E.t["FE++aN"], {
         user: T
       }),
       children: (0, r.jsxs)("div", {
@@ -67,7 +67,7 @@ let y = e => {
         }), (0, r.jsx)(o.Text, {
           variant: "text-xs/bold",
           color: "currentColor",
-          children: E.intl.string(E.t["8Rrro6"])
+          children: E.intl.string(E.t["8Rrro+"])
         })]
       })
     })

@@ -1,4 +1,4 @@
-/** Chunk was on 99063 **/
+/** Chunk was on 86736 **/
 /** chunk id: 241635, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -27,7 +27,7 @@ function b(e, t) {
   null != f && g.push(f);
   let h = (0, c.Z)({
     id: t.id,
-    label: m.intl.string(m.t.sMsaLi)
+    label: m.intl.string(m.t.sMsaLg)
   });
   null != h && g.push(h);
   let x = (null == (n = t.tags) ? true : n.guild_connections) === null,
@@ -36,16 +36,16 @@ function b(e, t) {
   return b || j || v || g.push((0, i.jsx)(l.kSQ, {
     children: (0, i.jsx)(l.sNh, {
       id: "delete-role",
-      label: m.intl.string(m.t.oyYWHB),
+      label: m.intl.string(m.t.oyYWHE),
       color: "danger",
       icon: l.XHJ,
       action: () => {
         o.Z.show({
-          title: m.intl.string(m.t.YWISbW),
-          body: m.intl.format(m.t["9+nrUV"], {
+          title: m.intl.string(m.t.YWISbQ),
+          body: m.intl.format(m.t["9+nrUS"], {
             name: t.name
           }),
-          cancelText: m.intl.string(m.t["ETE/oK"]),
+          cancelText: m.intl.string(m.t["ETE/oC"]),
           onConfirm: async () => {
             x && await (0, s.L_)(e.id, t.id, []), a.Z.deleteRole(e.id, t.id)
           }

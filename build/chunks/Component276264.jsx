@@ -37,7 +37,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk674563 = require("./674563.js"),
   Chunk524484 = require("./524484.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk325804 = require("./325804.js");
+  Chunk894723 = require("./894723.js");
 
 function k(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -104,7 +104,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       ownerTooltipText: i
     } = e;
     return null != t && t && null == n ? (0, r.jsx)(s.u, {
-      __unsupportedReactNodeAsText: null != i ? i : x.intl.string(x.t.pclUFB),
+      __unsupportedReactNodeAsText: null != i ? i : x.intl.string(x.t.pclUFJ),
       children: (0, r.jsx)(c.CEn, {
         size: "md",
         color: "currentColor",
@@ -118,7 +118,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       onClickPremiumGuildIcon: n
     } = e;
     return null == t ? null : (0, r.jsx)(s.u, {
-      text: x.intl.formatToPlainString(x.t.IWkAq6, {
+      text: x.intl.formatToPlainString(x.t.IWkAq7, {
         date: t
       }),
       asContainer: true,

@@ -1,7 +1,7 @@
 /** Chunk was on 93979 **/
 /** chunk id: 384816, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => Z
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -24,13 +24,13 @@ var Chunk442837 = require("./442837.js"),
   Chunk179828 = require("./179828.jsx"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk438160 = require("./438160.js");
+  Chunk54966 = require("./54966.js");
 
-function _(e) {
+function Z(e) {
   let {
     user: n,
     currentUser: t,
-    displayProfile: _,
+    displayProfile: Z,
     subsection: O,
     onClose: N
   } = e, {
@@ -40,17 +40,17 @@ function _(e) {
   }), E = (0, i.e7)([u.Z], () => u.Z.hidePersonalInformation), C = (0, i.e7)([c.default], () => c.default.locale), S = (0, f.Z)(n.id), w = (0, p.Z)(n.id);
   return (0, l.jsxs)(o.zJl, {
     fade: true,
-    className: Z.scroller,
-    children: [(null == _ ? true : _.bio) != null && (null == _ ? true : _.bio) !== "" && !E && (0, l.jsx)(x.Z, {
-      userBio: _.bio,
+    className: _.scroller,
+    children: [(null == Z ? true : Z.bio) != null && (null == Z ? true : Z.bio) !== "" && !E && (0, l.jsx)(x.Z, {
+      userBio: Z.bio,
       setLineClamp: false
-    }), (null == _ ? true : _.guildId) != null && (0, l.jsx)(b.Z, {
+    }), (null == Z ? true : Z.guildId) != null && (0, l.jsx)(b.Z, {
       user: n,
       currentUser: t,
-      guildId: _.guildId,
+      guildId: Z.guildId,
       scrollIntoView: O === I.Tb.ROLES
     }), n.isProvisional && (0, l.jsx)(g.Z, {
-      heading: y.intl.string(y.t.Iyka0d),
+      heading: y.intl.string(y.t.Iyka0U),
       headingIcon: (0, l.jsx)(o.Mgn, {
         size: "xxs",
         color: o.TVs.colors.HEADER_PRIMARY
@@ -60,30 +60,30 @@ function _(e) {
         userId: n.id
       })
     }), P.length > 0 && (0, l.jsx)(g.Z, {
-      heading: y.intl.string(y.t["Uv/eT0"]),
+      heading: y.intl.string(y.t["Uv/eTx"]),
       children: (0, l.jsx)(v.Z, {
         applicationIds: P
       })
     }), (0, l.jsx)(g.Z, {
-      heading: y.intl.string(y.t.a6XYDw),
+      heading: y.intl.string(y.t.a6XYD9),
       children: (0, l.jsx)(j.Z, {
         userId: n.id,
-        guildId: null == _ ? true : _.guildId,
+        guildId: null == Z ? true : Z.guildId,
         tooltipDelay: I.vB
       })
     }), S.length > 0 && (0, l.jsx)(g.Z, {
-      heading: y.intl.string(y.t["3fe7U1"]),
+      heading: y.intl.string(y.t["3fe7U5"]),
       scrollIntoView: O === I.Tb.CONNECTIONS,
       children: (0, l.jsx)(h.ZP, {
         connectedAccounts: S,
-        className: Z.connections,
+        className: _.connections,
         userId: n.id,
         locale: C
       })
     }), w.length > 0 && (0, l.jsx)(g.Z, {
       heading: y.intl.string(y.t.PHjkRE),
       children: w.map(e => (0, l.jsx)(h.tH, {
-        className: Z.appsConnections,
+        className: _.appsConnections,
         applicationRoleConnection: e,
         locale: C,
         onApplicationClicked: () => {
@@ -98,7 +98,7 @@ function _(e) {
       scrollIntoView: O === I.Tb.NOTE,
       children: (0, l.jsx)(r.Z, {
         userId: n.id,
-        className: Z.note,
+        className: _.note,
         autoFocus: O === I.Tb.NOTE,
         onUpdate: () => A({
           action: "SET_NOTE"

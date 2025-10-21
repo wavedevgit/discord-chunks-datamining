@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 894610, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -9,19 +9,19 @@ var Chunk951288 = require("./951288.js"),
   Chunk755930 = require("./755930.jsx"),
   Chunk267101 = require("./267101.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk994364 = require("./994364.js");
+  Chunk771598 = require("./771598.js");
 let c = (0, Chunk755930.Yn)([(0, Chunk755930.nn)({
   key: "LISTING_NAME",
-  cellClassName: Chunk994364.listingNameColumn,
+  cellClassName: Chunk771598.listingNameColumn,
   renderHeader: () => (0, Chunk951288.jsx)(Chunk755930.qN, {
-    children: Chunk388032.intl.string(Chunk388032.t.OGpGqK)
+    children: Chunk388032.intl.string(Chunk388032.t.OGpGqO)
   }),
   sort: (0, Chunk755930.Qg)(e => e.listing.name.toLowerCase())
 }), (0, Chunk755930.GW)({
   key: "PAYMENTS_COUNT",
-  cellClassName: Chunk994364.paymentsCountColumn,
+  cellClassName: Chunk771598.paymentsCountColumn,
   renderHeader: () => (0, Chunk951288.jsx)(Chunk755930.qN, {
-    children: Chunk388032.intl.string(Chunk388032.t.vpHXJy)
+    children: Chunk388032.intl.string(Chunk388032.t.vpHXJ0)
   }),
   getCount: e => e.paymentsCount,
   sort: (0, Chunk755930.Qg)(e => {
@@ -30,9 +30,9 @@ let c = (0, Chunk755930.Yn)([(0, Chunk755930.nn)({
   })
 }), (0, Chunk755930.i$)({
   key: "PRICE",
-  cellClassName: Chunk994364.priceColumn,
+  cellClassName: Chunk771598.priceColumn,
   renderHeader: () => (0, Chunk951288.jsx)(Chunk755930.qN, {
-    children: Chunk388032.intl.string(Chunk388032.t.VodAGR)
+    children: Chunk388032.intl.string(Chunk388032.t.VodAGZ)
   }),
   getAmount(e) {
     let {

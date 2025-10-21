@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk785717 = require("./785717.jsx"),
   Chunk86419 = require("./86419.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk720641 = require("./720641.js");
+  Chunk302627 = require("./302627.js");
 
 function p(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -75,7 +75,7 @@ function h(e) {
   } = (0, u.KZ)(), P = (0, l.e7)([c.default], () => ["en-US", "en-GB"].includes(c.default.locale)), w = i.useCallback(e => {
     (0, d.ES)(t, {
       applicationId: e
-    }), o.uvj.announce(f.intl.string(f.t.q0U3DA)), I({
+    }), o.uvj.announce(f.intl.string(f.t.q0U3DE)), I({
       action: "GAME_ADDED",
       gameId: e,
       widgetEdited: t
@@ -92,9 +92,9 @@ function h(e) {
       numCharacters: e.trim().length,
       numResults: T(e).length
     }), O(e), x.current = e
-  }, [j, I, t, T]), N = i.useMemo(() => "" !== j.trim() && P ? f.intl.format(f.t.jhiTsL, {
+  }, [j, I, t, T]), N = i.useMemo(() => "" !== j.trim() && P ? f.intl.format(f.t.jhiTsN, {
     searchTerm: j.trim()
-  }) : f.intl.string(f.t.QwSXv7), [j, P]);
+  }) : f.intl.string(f.t.QwSXv8), [j, P]);
   return (0, r.jsx)(o.yRy, m(p({}, v), {
     onRequestOpen: () => {
       I({
@@ -116,7 +116,7 @@ function h(e) {
       } = e;
       return (0, r.jsx)(o.DBG, {
         className: g.gameSearchCombobox,
-        placeholder: f.intl.string(f.t["5h0QOD"]),
+        placeholder: f.intl.string(f.t["5h0QOP"]),
         autoFocus: true,
         value: y,
         onChange: e => {
@@ -159,7 +159,7 @@ function v(e) {
       variant: "secondary",
       size: "sm",
       icon: o.qJs,
-      text: f.intl.string(f.t.SgTOtb),
+      text: f.intl.string(f.t.SgTOtX),
       disabled: t
     }, e))
   }))
@@ -175,7 +175,7 @@ function y(e) {
     children: e => (0, r.jsx)(o.P3F, m(p({
       innerRef: t,
       className: g.coverButton,
-      "aria-label": f.intl.string(f.t.SgTOtb)
+      "aria-label": f.intl.string(f.t.SgTOtX)
     }, e), {
       children: (0, r.jsx)(o.svS, {
         color: "currentColor"

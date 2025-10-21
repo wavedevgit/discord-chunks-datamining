@@ -16,7 +16,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk225715 = require("./225715.jsx"),
   Chunk750143 = require("./750143.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk525026 = require("./525026.js"),
+  Chunk848902 = require("./848902.js"),
   Chunk365627 = require("./365627.js"),
   Chunk753260 = require("./753260.js");
 let h = e => {
@@ -37,7 +37,7 @@ let h = e => {
       }), (0, r.jsx)(i.P3F, {
         className: f.closeContainer,
         onClick: () => n(),
-        "aria-label": d.intl.string(d.t.cpT0Cg),
+        "aria-label": d.intl.string(d.t.cpT0Cq),
         children: (0, r.jsx)(i.Dio, {
           size: "md",
           color: "currentColor",
@@ -93,21 +93,21 @@ function g(e) {
       className: f.confirmationTitle,
       variant: "heading-xl/extrabold",
       color: "header-primary",
-      children: d.intl.format(d.t["wLFT6+"], {
+      children: d.intl.format(d.t.wLFT6z, {
         tier: t
       })
     }), (0, r.jsx)(i.Text, {
       className: f.confirmationSubtitle,
       variant: "text-md/medium",
       color: "header-secondary",
-      children: d.intl.format(d.t.OsAK9v, {
+      children: d.intl.format(d.t.OsAK9h, {
         timestamp: null == a ? true : a.currentPeriodEnd
       })
     }), (0, r.jsx)(l.O3, {
       children: (0, r.jsx)(s.Z, {
         onPrimary: n,
         primaryCTA: s.g.CONTINUE,
-        primaryText: d.intl.string(d.t["JtWl+f"])
+        primaryText: d.intl.string(d.t["JtWl+a"])
       })
     })]
   })

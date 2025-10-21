@@ -19,8 +19,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk745752 = require("./745752.js"),
   Chunk17181 = require("./17181.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk812070 = require("./812070.js"),
-  Chunk904885 = require("./904885.js");
+  Chunk76531 = require("./76531.js"),
+  Chunk718215 = require("./718215.js");
 
 function v(e) {
   let {
@@ -64,16 +64,16 @@ function v(e) {
         children: [(0, r.jsx)(s.Heading, {
           variant: "heading-xxl/normal",
           color: "always-white",
-          children: _.intl.string(_.t.CCmhpK)
+          children: _.intl.string(_.t.CCmhpF)
         }), (0, r.jsx)(s.Text, {
           variant: "text-lg/normal",
           color: "always-white",
-          children: _.intl.string(_.t.gRAHcX)
+          children: _.intl.string(_.t.gRAHcZ)
         })]
       }), (0, r.jsx)(s.Button, {
         variant: "overlay-primary",
         size: "md",
-        text: _.intl.string(_.t.VVFjAA),
+        text: _.intl.string(_.t.VVFjAC),
         onClick: I
       })]
     })]

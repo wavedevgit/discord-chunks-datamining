@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 277369, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -26,13 +26,13 @@ function g(e) {
     children: [(0, r.jsx)(a.Text, {
       variant: "text-sm/normal",
       color: f ? "text-muted" : "text-default",
-      children: null != h ? u.intl.format(u.t.erxwWF, {
+      children: null != h ? u.intl.format(u.t.erxwWA, {
         teamName: h.name
-      }) : u.intl.string(u.t.FGzLkJ)
+      }) : u.intl.string(u.t.FGzLkK)
     }), (0, r.jsx)(a.LZC, {
       size: 16
     }), (0, r.jsx)(l.zxk, {
-      text: null != h ? u.intl.string(u.t["/Fjq5O"]) : u.intl.string(u.t["6ih+b2"]),
+      text: null != h ? u.intl.string(u.t["/Fjq5P"]) : u.intl.string(u.t["6ih+b4"]),
       variant: null != h ? "secondary" : "primary",
       onClick: () => {
         (0, a.ZDy)(async () => {

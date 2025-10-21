@@ -17,7 +17,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk320161 = require("./320161.jsx"),
   Chunk998502 = require("./998502.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk950954 = require("./950954.js");
+  Chunk447160 = require("./447160.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -75,11 +75,11 @@ function O(e) {
   var t, n, i, o, s;
   let {
     compact: _ = false
-  } = e, m = (0, d.Dt)(), E = window.GLOBAL_ENV.RELEASE_CHANNEL, O = "460015", v = "2910d14c93e718dadfbfd439e26052db0ffe9642".substring(0, 7), I = null === c.Z || true === c.Z ? true : c.Z.remoteApp.getVersion(), T = null === c.Z || true === c.Z || null == (t = (n = c.Z.remoteApp).getBuildNumber) ? true : t.call(n), S = null === c.Z || true === c.Z || null == (i = (o = c.Z.remoteApp).getAppArch) ? true : i.call(o), A = null == (s = u.C.getCurrentBuildOverride().overrides) ? true : s.discord_web, C = y(), N = [E, O, "(".concat(v, ")")];
+  } = e, m = (0, d.Dt)(), E = window.GLOBAL_ENV.RELEASE_CHANNEL, O = "460098", v = "8730d41850d52460492d94ab0d7180907a2d7c31".substring(0, 7), I = null === c.Z || true === c.Z ? true : c.Z.remoteApp.getVersion(), T = null === c.Z || true === c.Z || null == (t = (n = c.Z.remoteApp).getBuildNumber) ? true : t.call(n), S = null === c.Z || true === c.Z || null == (i = (o = c.Z.remoteApp).getAppArch) ? true : i.call(o), A = null == (s = u.C.getCurrentBuildOverride().overrides) ? true : s.discord_web, C = y(), N = [E, O, "(".concat(v, ")")];
   return (null != I && (N.push("Host ".concat(I)), null != S && N.push(S.toLowerCase()), null != T && N.push("(".concat(T, ")"))), N.push("Build Override: ".concat(null != A ? A.id : "N/A")), null != C && N.push(C), _) ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(f.Z, {
       copyValue: N.join(" "),
-      text: p.intl.string(p.t["9Al4QU"]),
+      text: p.intl.string(p.t["9Al4Qd"]),
       "aria-label": false,
       children: e => (0, r.jsxs)(l.P3F, b(g({}, e), {
         "aria-describedby": m,
@@ -118,12 +118,12 @@ function O(e) {
       }))
     }), (0, r.jsx)(l.nn4, {
       id: m,
-      children: p.intl.string(p.t["9Al4QU"])
+      children: p.intl.string(p.t["9Al4Qd"])
     })]
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(f.Z, {
       copyValue: N.join(" "),
-      text: p.intl.string(p.t["9Al4QU"]),
+      text: p.intl.string(p.t["9Al4Qd"]),
       "aria-label": false,
       children: e => (0, r.jsx)(l.P3F, b(g({}, e), {
         "aria-describedby": m,
@@ -173,7 +173,7 @@ function O(e) {
       }))
     }), (0, r.jsx)(l.nn4, {
       id: m,
-      children: p.intl.string(p.t["9Al4QU"])
+      children: p.intl.string(p.t["9Al4Qd"])
     })]
   })
 }

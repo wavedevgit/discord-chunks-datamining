@@ -58,10 +58,10 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk702417 = require("./702417.js"),
-  Chunk487111 = require("./487111.js"),
-  Chunk639543 = require("./639543.js"),
-  Chunk430534 = require("./430534.js");
+  Chunk975900 = require("./975900.js"),
+  Chunk127947 = require("./127947.js"),
+  Chunk893973 = require("./893973.js"),
+  Chunk827610 = require("./827610.js");
 
 function ea(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -165,7 +165,7 @@ class em extends(r = Chunk647438.PureComponent) {
         reactionRef: N,
         tooltipPositionKey: P
       } = this.state,
-      w = Chunk436774 ? Chunk639543 : Chunk487111,
+      w = Chunk436774 ? Chunk893973 : Chunk127947,
       D = {
         transform: [{
           scale: this.scale
@@ -415,7 +415,7 @@ class em extends(r = Chunk647438.PureComponent) {
             variant: "text-sm/normal",
             className: ei.reactionTooltipText,
             "aria-label": "super reaction tooltip cta",
-            children: ee.intl.string(ee.t.ZbNJXl)
+            children: ee.intl.string(ee.t.ZbNJXn)
           })]
         }) : this.userCanBurstReact() ? (0, i.jsxs)("div", {
           className: s()(ei.burstReactionTooltipPrompt, ei.burstReactionTooltipSpacer, ei.burstReactionTooltipPromptClickable),
@@ -429,7 +429,7 @@ class em extends(r = Chunk647438.PureComponent) {
               variant: "text-sm/normal",
               className: ei.reactionTooltipText,
               "aria-label": "super reaction tooltip cta",
-              children: ee.intl.string(ee.t.kVfuVl)
+              children: ee.intl.string(ee.t.kVfuVu)
             })
           })]
         }) : this.userCanBurstReact() || this.isKeyboardNavigation ? null : (0, i.jsx)("div", {
@@ -438,11 +438,11 @@ class em extends(r = Chunk647438.PureComponent) {
             children: [(0, i.jsx)(h.Text, {
               variant: "text-sm/normal",
               "aria-label": "super reaction tooltip upsell",
-              children: ee.intl.string(ee.t.W1bMkp)
+              children: ee.intl.string(ee.t.W1bMkq)
             }), (0, i.jsx)(P.Z, {
               subscriptionTier: $.Si.TIER_2,
               textOptions: {
-                textOverride: ee.intl.string(ee.t.mr4K7O)
+                textOverride: ee.intl.string(ee.t.mr4K7D)
               },
               className: ei.burstReactionTooltipUpsellCta,
               onClick: e => e.stopPropagation()

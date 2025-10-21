@@ -124,7 +124,7 @@ function m(e) {
     className: d,
     playable: p = true,
     renderImageComponent: m,
-    alt: g = l.intl.string(l.t.I5gL2N),
+    alt: g = l.intl.string(l.t.I5gL2H),
     sourceMetadata: E
   } = e, b = _(e, ["src", "poster", "naturalWidth", "naturalHeight", "responsive", "autoPlay", "className", "playable", "renderImageComponent", "alt", "sourceMetadata"]);
   return (0, r.jsx)(o.h.Consumer, {

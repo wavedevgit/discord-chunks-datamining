@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk424218 = require("./424218.js"),
   Chunk998502 = require("./998502.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk578766 = require("./578766.js");
+  Chunk901650 = require("./901650.js");
 
 function p(t, e, s) {
   return e in t ? Object.defineProperty(t, e, {
@@ -86,18 +86,18 @@ class m extends Chunk647438.PureComponent {
       installationPathsMetadata: e
     } = this.props;
     return null != exports[module] && false === exports[module].hasPermission ? (0, Chunk951288.jsx)("div", {
-      className: Chunk578766.error,
-      children: Chunk388032.intl.string(Chunk388032.t.cEUT8P)
+      className: Chunk901650.error,
+      children: Chunk388032.intl.string(Chunk388032.t.cEUT8B)
     }) : this.hasEnoughDiskSpace(module) ? null : (0, Chunk951288.jsx)("div", {
-      className: Chunk578766.error,
-      children: Chunk388032.intl.string(Chunk388032.t.duXbEx)
+      className: Chunk901650.error,
+      children: Chunk388032.intl.string(Chunk388032.t["duXbE/"])
     })
   }
   renderLabel(t, e) {
     let {
       installationPathsMetadata: s
     } = this.props, l = null != e ? e : t;
-    return null != s[t] && null != s[t].availableKB ? u.intl.formatToPlainString(u.t["Y+M3rq"], {
+    return null != s[t] && null != s[t].availableKB ? u.intl.formatToPlainString(u.t["Y+M3rp"], {
       path: l,
       size: (0, o.BU)(s[t].availableKB, {
         useKibibytes: true
@@ -113,7 +113,7 @@ class m extends Chunk647438.PureComponent {
     return (0, Chunk951288.jsxs)("div", {
       className: exports,
       children: [(0, Chunk951288.jsx)(Chunk481060.q4e, {
-        label: Chunk388032.intl.string(Chunk388032.t.WTJuNj),
+        label: Chunk388032.intl.string(Chunk388032.t.WTJuNr),
         autoFocus: require,
         options: this.getOptions(),
         value: module,

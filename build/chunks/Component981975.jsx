@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 981975, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -25,8 +25,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk856651 = require("./856651.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk405729 = require("./405729.js"),
-  Chunk10083 = require("./10083.js");
+  Chunk144563 = require("./144563.js"),
+  Chunk21321 = require("./21321.js");
 
 function N(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -63,12 +63,12 @@ function S(e) {
     children: [(0, r.jsx)(d.Heading, {
       className: y.headerHeading,
       variant: "eyebrow",
-      children: O.intl.string(O.t.nMir29)
+      children: O.intl.string(O.t.nMir27)
     }), (0, r.jsx)(d.Text, {
       variant: "text-sm/normal",
       color: "header-secondary",
       className: y.headerNoConfigSubtitle,
-      children: O.intl.format(O.t.q5f7tL, {
+      children: O.intl.format(O.t.q5f7tK, {
         helpdeskArticleUrl: m.Z.getArticleURL(_.BhN.CONNECTION_DETAILS_ADMIN)
       })
     }), (0, r.jsx)(d.Button, {
@@ -146,30 +146,30 @@ function T(e) {
             className: y.headerTitleTextContainer,
             children: (0, r.jsx)(d.Heading, {
               variant: "eyebrow",
-              children: O.intl.string(O.t.nMir29)
+              children: O.intl.string(O.t.nMir27)
             })
           }), (0, r.jsx)(d.Avr, {
             variant: "critical",
             onClick: B,
             disabled: l,
-            text: O.intl.string(O.t.ntW1cX),
+            text: O.intl.string(O.t.ntW1cc),
             textVariant: "text-sm/semibold"
           })]
         }), (0, r.jsx)(d.Text, {
           variant: "text-sm/normal",
-          children: O.intl.format(O.t.q5f7tL, {
+          children: O.intl.format(O.t.q5f7tK, {
             helpdeskArticleUrl: m.Z.getArticleURL(_.BhN.CONNECTION_DETAILS_ADMIN)
           })
         })]
       })), function(e, t, n, i, l) {
         let a = I(i, g.O1.OR);
         return (0, r.jsx)(d.FXm, {
-          label: O.intl.string(O.t.Xs7PHR),
+          label: O.intl.string(O.t.Xs7PHX),
           options: [{
-            name: O.intl.string(O.t["W3iY5+"]),
+            name: O.intl.string(O.t.W3iY58),
             value: g.O1.OR
           }, {
-            name: O.intl.string(O.t.gHXS9P),
+            name: O.intl.string(O.t.gHXS9A),
             value: g.O1.AND
           }],
           onChange: e => l(i, e),
@@ -270,7 +270,7 @@ function T(e) {
         }), (0, r.jsx)(d.Text, {
           variant: "text-sm/normal",
           color: "text-default",
-          children: O.intl.string(O.t["2aFeeX"])
+          children: O.intl.string(O.t["2aFeef"])
         })]
       }) : null, U]
     })

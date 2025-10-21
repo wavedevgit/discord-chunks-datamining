@@ -30,7 +30,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk474936 = require("./474936.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk305745 = require("./305745.js");
+  Chunk397263 = require("./397263.js");
 let E = {
   key: Chunk409813.h8.GIFT_CUSTOMIZATION,
   renderStep: e => (0, i.jsx)(k, function(e) {
@@ -53,7 +53,7 @@ let E = {
   }({}, e)),
   options: {
     isLargeModal: true,
-    useBreadcrumbLabel: () => Chunk388032.intl.string(Chunk388032.t["W685+f"])
+    useBreadcrumbLabel: () => Chunk388032.intl.string(Chunk388032.t["W685+b"])
   }
 };
 
@@ -72,7 +72,7 @@ function S(e) {
       onClick: () => t(u),
       disabled: a,
       loading: o,
-      text: N.intl.string(N.t.XiOHRU)
+      text: N.intl.string(N.t.XiOHRX)
     }), r ? (0, i.jsx)(p.Z, {
       onClick: n
     }) : null]
@@ -95,7 +95,7 @@ function k(e) {
   } = (0, s.wD)(), {
     selectedSkuId: M,
     application: A
-  } = (0, c.JL)(), B = (0, r.e7)([b.default], () => b.default.getCurrentUser()), D = (0, r.e7)([x.Z], () => null != M ? x.Z.get(M) : null, [M]), L = (0, j.Do)(D), W = (0, j.a7)(D), H = (0, P.K)(D, {
+  } = (0, c.JL)(), B = (0, r.e7)([b.default], () => b.default.getCurrentUser()), D = (0, r.e7)([h.Z], () => null != M ? h.Z.get(M) : null, [M]), L = (0, j.Do)(D), H = (0, j.a7)(D), W = (0, P.K)(D, {
     shouldFetchIfMissing: true
   }), R = async (e, t) => {};
   return (0, i.jsxs)(i.Fragment, {
@@ -107,7 +107,7 @@ function k(e) {
           children: [null != L && (0, i.jsx)(_.p, {
             className: T.skuCardImage,
             cardImage: L,
-            cardBackgroundImage: W,
+            cardBackgroundImage: H,
             altText: null != (t = null == D ? true : D.name) ? t : ""
           }), (0, i.jsxs)("div", {
             className: T.giftEffectsContainer,
@@ -128,7 +128,7 @@ function k(e) {
             validateSelectedGift: R,
             searchableSelectWrapperClassName: T.recipientPickerSelectWrapper
           }), (0, i.jsx)(f.Z, {
-            sectionTitle: N.intl.string(N.t.B3miEx),
+            sectionTitle: N.intl.string(N.t.B3miE8),
             onTextChange: e => null == m ? true : m(e),
             pendingText: p,
             currentText: p,
@@ -138,12 +138,12 @@ function k(e) {
           }), (() => {
             var e, t, n, r;
             if (null == D) return null;
-            let a = (0, h.T4)(null != (n = null == (e = D.price) ? true : e.amount) ? n : 0, null != (r = null == (t = D.price) ? true : t.currency) ? r : I.pK.USD);
+            let a = (0, x.T4)(null != (n = null == (e = D.price) ? true : e.amount) ? n : 0, null != (r = null == (t = D.price) ? true : t.currency) ? r : I.pK.USD);
             return (0, i.jsxs)("div", {
               className: T.giftPreviewContainer,
               children: [(0, i.jsx)(l.vwX, {
                 className: T.giftPreviewTitle,
-                children: N.intl.string(N.t.PpoJzs)
+                children: N.intl.string(N.t.PpoJzt)
               }), (0, i.jsxs)("div", {
                 className: T.giftPreviewContent,
                 children: [(0, i.jsx)("div", {
@@ -151,7 +151,7 @@ function k(e) {
                   children: null != D && null != L && (0, i.jsx)(_.p, {
                     className: T.giftPreviewCardContainer,
                     cardImage: L,
-                    cardBackgroundImage: W,
+                    cardBackgroundImage: H,
                     altText: D.name
                   })
                 }), (0, i.jsxs)("div", {
@@ -168,10 +168,10 @@ function k(e) {
                 })]
               })]
             })
-          })(), null != H && null != D && (0, i.jsx)(Z, {
+          })(), null != W && null != D && (0, i.jsx)(Z, {
             handleClose: d,
             sku: D,
-            guild: H
+            guild: W
           })]
         })]
       })
@@ -200,7 +200,7 @@ function Z(e) {
   return (0, i.jsx)("div", {
     className: T.viewItemButton,
     children: (0, i.jsx)(l.Avr, {
-      text: N.intl.string(N.t.ImioFB),
+      text: N.intl.string(N.t.ImioFL),
       onClick: function() {
         var e;
         t();

@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk441319 = require("./441319.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk376930 = require("./376930.js");
+  Chunk63224 = require("./63224.js");
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -60,10 +60,10 @@ function I(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let T = () => [Chunk388032.intl.string(Chunk388032.t.EgWTY2), Chunk388032.intl.string(Chunk388032.t.umBn5e), Chunk388032.intl.string(Chunk388032.t.dG1wDw), Chunk388032.intl.string(Chunk388032.t.SesI4e), Chunk388032.intl.string(Chunk388032.t.RnMLvr)],
+let T = () => [Chunk388032.intl.string(Chunk388032.t["EgWTY+"]), Chunk388032.intl.string(Chunk388032.t.umBn5f), Chunk388032.intl.string(Chunk388032.t.dG1wD1), Chunk388032.intl.string(Chunk388032.t.SesI4S), Chunk388032.intl.string(Chunk388032.t.RnMLvl)],
   S = () => {
     var e;
-    return null != (e = l().sample(T())) ? module : Chunk388032.intl.string(Chunk388032.t.EgWTY2)
+    return null != (e = l().sample(T())) ? module : Chunk388032.intl.string(Chunk388032.t["EgWTY+"])
   },
   A = (e, t) => {
     let [n, r] = (0, _.US)([c.z.HALLOWEEN_APP_ICONS_TRICK_ICON_WEB_BADGE]), [i, a] = (0, _.US)([c.z.HALLOWEEN_APP_ICONS_TREAT_ICON_WEB_BADGE]);

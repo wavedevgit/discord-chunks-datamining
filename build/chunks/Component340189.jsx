@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 340189, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -8,18 +8,18 @@ var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk359449 = require("./359449.js");
+  Chunk197530 = require("./197530.js");
 let s = function() {
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk359449.badExample,
+    className: Chunk197530.badExample,
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "eyebrow",
       color: "header-secondary",
-      children: Chunk388032.intl.string(Chunk388032.t.MjVwl5)
+      children: Chunk388032.intl.string(Chunk388032.t.MjVwl8)
     }), (0, Chunk951288.jsxs)("div", {
-      className: Chunk359449.example,
+      className: Chunk197530.example,
       children: [(0, Chunk951288.jsx)("div", {
-        className: Chunk359449.badExampleIcon,
+        className: Chunk197530.badExampleIcon,
         children: (0, Chunk951288.jsx)(Chunk481060.Dio, {
           size: "md",
           color: "currentColor"
@@ -28,11 +28,11 @@ let s = function() {
         children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-md/semibold",
           color: "header-primary",
-          children: Chunk388032.intl.string(Chunk388032.t.wyARg4)
+          children: Chunk388032.intl.string(Chunk388032.t.wyARgw)
         }), (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-xs/medium",
           color: "text-muted",
-          children: Chunk388032.intl.string(Chunk388032.t.lhsK1d)
+          children: Chunk388032.intl.string(Chunk388032.t.lhsK1V)
         })]
       })]
     })]

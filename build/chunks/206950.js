@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 206950, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -51,7 +51,7 @@ function u(e) {
       }), t)),
       u = new s.Z({
         id: "313337",
-        username: c.intl.string(c.t.cqpybG),
+        username: c.intl.string(c.t.cqpybK),
         discriminator: "0000",
         bot: false
       });

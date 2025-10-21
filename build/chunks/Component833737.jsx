@@ -44,52 +44,52 @@ let I = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     showTransferOwnershipItem: w
   } = e, {
     analyticsLocations: x
-  } = (0, f.ZP)(d.Z.CONTEXT_MENU), U = (0, s.O)(), R = null != (t = null == T ? true : T[0]) ? t : x[0], k = (0, O.sE)(u, {
-    location: R,
+  } = (0, f.ZP)(d.Z.CONTEXT_MENU), R = (0, s.O)(), U = null != (t = null == T ? true : T[0]) ? t : x[0], k = (0, O.sE)(u, {
+    location: U,
     targetUserId: n.id
   }), L = (0, i.e7)([y.Z], () => {
     var e;
     return null != (e = y.Z.getUserVoiceChannelId(u, n.id)) ? e : true
-  }, [u, n.id]), q = r.useCallback(() => {
+  }, [u, n.id]), G = r.useCallback(() => {
     k(O.jQ.COPY_ID)
-  }, [k]), G = (0, i.e7)([E.ZP], () => E.ZP.isMember(u, n.id), [u, n.id]), B = (0, _.Z)({
+  }, [k]), q = (0, i.e7)([E.ZP], () => E.ZP.isMember(u, n.id), [u, n.id]), B = (0, S.Z)({
     userId: n.id,
     guildId: u,
     sourceAnalyticsLocations: T
   }), F = (0, m.Z)(n.id, M), V = (0, g.Z)({
     guildId: u,
     userId: n.id,
-    analyticsLocation: null != A ? A : U.location,
-    analyticsLocations: [R],
+    analyticsLocation: null != A ? A : R.location,
+    analyticsLocations: [U],
     context: M
-  }), Y = (0, Z.Z)({
+  }), K = (0, p.Z)({
     user: n,
     guildId: u,
-    location: R,
+    location: U,
     channelId: c
-  }), K = (0, P.Z)({
+  }), Y = (0, P.Z)({
     user: n,
     guildId: u,
-    location: R,
+    location: U,
     channelId: c
-  }), Q = (0, p.Z)(n, u, null != c ? c : L, R), H = (0, v.Z)(c, N), W = (0, h.Z)(n, u), X = (0, S.Z)(n.id, u, false, R), z = (0, b.Z)({
+  }), Q = (0, Z.Z)(n, u, null != c ? c : L, U), H = (0, h.Z)(c, N), W = (0, v.Z)(n, u), X = (0, _.Z)(n.id, u, false, U), z = (0, b.Z)({
     id: n.id,
-    label: C.intl.string(C.t["/AXYnJ"]),
-    onSuccess: q
+    label: C.intl.string(C.t["/AXYnE"]),
+    onSuccess: G
   }), J = (0, j.Z)(n, u), $ = !!(null == n ? true : n.isNonUserBot());
   return (0, l.jsxs)(a.v2r, {
     navId: "user-context",
     onClose: () => {
       (0, o.Zy)(), null == D || D()
     },
-    "aria-label": C.intl.string(C.t.liqwPD),
+    "aria-label": C.intl.string(C.t.liqwPJ),
     onSelect: I,
     children: [!$ && (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsxs)(a.kSQ, {
         children: [B, F]
       }), (0, l.jsxs)(a.kSQ, {
-        children: [V, K, Y]
-      }), G && (0, l.jsxs)(l.Fragment, {
+        children: [V, Y, K]
+      }), q && (0, l.jsxs)(l.Fragment, {
         children: [(0, l.jsx)(a.kSQ, {
           children: Q
         }), (0, l.jsxs)(a.kSQ, {

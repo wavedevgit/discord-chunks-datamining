@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk898625 = require("./898625.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk388133 = require("./388133.js");
+  Chunk555562 = require("./555562.js");
 
 function N(e) {
   let {
@@ -98,10 +98,10 @@ let T = e => {
           }
           return e
         }({
-          header: C.intl.string(C.t.y0CVen),
-          cancelText: C.intl.string(C.t.oEAioK),
+          header: C.intl.string(C.t.y0CVes),
+          cancelText: C.intl.string(C.t.oEAioF),
           onConfirm: t,
-          confirmText: C.intl.string(C.t.p89ACg),
+          confirmText: C.intl.string(C.t.p89ACt),
           confirmButtonColor: a.zx.Colors.RED
         }, n), l = l = {
           children: (0, r.jsx)(o.Text, {
@@ -123,9 +123,9 @@ let T = e => {
     },
     w = async () => {
       await g.Z.resetGuildJoinRequest(t), (0, m.hk)(t)
-    }, L = Z(C.intl.format(C.t["9ZezpK"], {
+    }, L = Z(C.intl.format(C.t["9ZezpN"], {
       name: null == x ? true : x.name
-    }), A), R = Z(C.intl.format(C.t.fJwWVl, {
+    }), A), R = Z(C.intl.format(C.t.fJwWVt, {
       name: null == x ? true : x.name
     }), A);
   return (0, r.jsxs)("div", {
@@ -147,9 +147,9 @@ let T = e => {
             });
           case b.wB.REJECTED:
             return (0, r.jsx)(O.Z, {
-              reapplyText: C.intl.string(C.t.I1LYVl),
+              reapplyText: C.intl.string(C.t.I1LYVk),
               onReapply: w,
-              confirmText: C.intl.string(C.t.g9tK0t),
+              confirmText: C.intl.string(C.t.g9tK0o),
               onWithdrawApplication: L,
               rejectionReason: T.rejectionReason,
               guild: x

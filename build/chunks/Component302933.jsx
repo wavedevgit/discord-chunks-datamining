@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk435935 = require("./435935.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk168020 = require("./168020.jsx"),
-  Chunk535123 = require("./535123.js");
+  Chunk779485 = require("./779485.js");
 let p = Chunk647438.memo(function(e) {
   let {
     countdownTimerBlock: t,
@@ -26,8 +26,8 @@ let p = Chunk647438.memo(function(e) {
       friction: 12
     }
   });
-  return (0, r.jsxs)(o.animated.div, {
-    className: a()([g.countDownWrapper, s.tq && g.mobileWrapper]),
+  return (0, r.jsxs)(s.animated.div, {
+    className: a()([g.countDownWrapper, o.tq && g.mobileWrapper]),
     role: "status",
     style: function(e) {
       for (var t = 1; t < arguments.length; t++) {

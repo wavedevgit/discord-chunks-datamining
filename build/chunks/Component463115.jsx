@@ -10,7 +10,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk481060 = require("./481060.js"),
   Chunk888592 = require("./888592.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk162985 = require("./162985.js");
+  Chunk330966 = require("./330966.js");
 let d = e => {
   let {
     school: t,
@@ -23,14 +23,14 @@ let d = e => {
     }), (0, r.jsx)(a.Heading, {
       className: i()(c.centerText, c.header),
       variant: "heading-xl/semibold",
-      children: o.intl.string(o.t.OaloU1)
+      children: o.intl.string(o.t.OaloU5)
     }), (0, r.jsx)("div", {
       className: c.descriptionWidth,
       children: (0, r.jsx)(a.Text, {
         className: c.centerText,
         variant: "text-sm/normal",
         color: "header-secondary",
-        children: o.intl.format(o.t.Rs7MXF, {
+        children: o.intl.format(o.t.Rs7MXJ, {
           school: t
         })
       })

@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 420966, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk852898 = require("./852898.jsx"),
   Chunk203377 = require("./203377.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk344441 = require("./344441.js");
+  Chunk345987 = require("./345987.js");
 
 function f() {
   let [e, t] = Chunk647438.useState(true);
@@ -51,7 +51,7 @@ function h(e) {
         className: p.titleText,
         color: "header-primary",
         variant: "text-md/semibold",
-        children: m.intl.format(m.t.BUdGkJ, {
+        children: m.intl.format(m.t.BUdGkE, {
           roleName: f.name
         })
       }), C ? (0, r.jsx)(a.P3F, {
@@ -96,7 +96,7 @@ function h(e) {
             }
           })
         },
-        "aria-label": m.intl.string(m.t.PdRCRk),
+        "aria-label": m.intl.string(m.t.PdRCRg),
         children: (0, r.jsx)(a.xhG, {
           size: "md",
           color: "currentColor"
@@ -107,7 +107,7 @@ function h(e) {
       children: _
     }) : null, (0, r.jsxs)(a.njP, {
       className: p.tabBar,
-      "aria-label": m.intl.string(m.t["+1H47u"]),
+      "aria-label": m.intl.string(m.t["+1H47t"]),
       selectedItem: h,
       type: "top",
       look: "brand",
@@ -116,21 +116,21 @@ function h(e) {
         className: p.tabBarItem,
         id: g.ZI.DISPLAY,
         disabled: v,
-        children: m.intl.string(m.t.hmdom5)
+        children: m.intl.string(m.t.hmdomw)
       }), (0, r.jsx)(a.njP.Item, {
         className: p.tabBarItem,
         id: g.ZI.PERMISSIONS,
-        children: m.intl.string(m.t.WIDE1N)
+        children: m.intl.string(m.t.WIDE1L)
       }), (0, r.jsx)(a.njP.Item, {
         className: p.tabBarItem,
         id: g.ZI.VERIFICATIONS,
         disabled: v,
-        children: m.intl.string(m.t["5//Mur"])
+        children: m.intl.string(m.t["5//Muu"])
       }), (0, r.jsx)(a.njP.Item, {
         className: p.tabBarItem,
         id: g.ZI.MEMBERS,
         disabled: v,
-        children: v ? m.intl.string(m.t["kg//+/"]) : m.intl.formatToPlainString(m.t.bHnZWV, {
+        children: v ? m.intl.string(m.t["kg//+7"]) : m.intl.formatToPlainString(m.t.bHnZWW, {
           numMembers: String(j)
         })
       })]

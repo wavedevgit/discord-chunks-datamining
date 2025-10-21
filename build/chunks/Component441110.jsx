@@ -16,7 +16,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk112822 = require("./112822.js");
+  Chunk829424 = require("./829424.js");
 let h = function(e) {
   let {
     guild: t,
@@ -53,10 +53,10 @@ let h = function(e) {
           children: [(0, r.jsx)(i.Heading, {
             variant: "heading-md/semibold",
             className: p.header,
-            children: _.intl.string(_.t["v/OYd3"])
+            children: _.intl.string(_.t["v/OYd2"])
           }), (0, r.jsx)(i.Text, {
             variant: "text-sm/normal",
-            children: _.intl.string(_.t.Z85MlJ)
+            children: _.intl.string(_.t.Z85MlD)
           })]
         })]
       }), (0, r.jsx)("div", {
@@ -65,7 +65,7 @@ let h = function(e) {
         children: (0, r.jsx)(i.Button, {
           variant: "primary",
           size: "sm",
-          text: _.intl.format(_.t["+xsVS0"], {
+          text: _.intl.format(_.t["+xsVS6"], {
             username: n.author.username
           }),
           fullWidth: true,

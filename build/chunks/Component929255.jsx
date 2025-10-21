@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk215023 = require("./215023.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk25616 = require("./25616.js");
+  Chunk452785 = require("./452785.js");
 
 function y(e) {
   let {
@@ -40,7 +40,7 @@ function y(e) {
     f = l.useRef(null),
     {
       handleScroll: h
-    } = (0, s.z)(f, t),
+    } = (0, o.z)(f, t),
     {
       setCategoryRef: m,
       handleScrollToCategory: b
@@ -66,7 +66,7 @@ function y(e) {
       className: a()(S.page, {
         [S.pageFilter]: p
       }),
-      children: [(0, r.jsx)(o.yWw, {
+      children: [(0, r.jsx)(s.yWw, {
         className: S.shopScroll,
         ref: f,
         onScroll: h,
@@ -81,7 +81,7 @@ function y(e) {
         })
       }), v && !x && (0, r.jsx)("div", {
         className: S.divider
-      }), v && !x && (0, r.jsx)(o.Ttm, {
+      }), v && !x && (0, r.jsx)(s.Ttm, {
         className: S.filterBar,
         children: (0, r.jsx)(_.Z, {})
       })]
@@ -93,7 +93,7 @@ let j = e => {
     isSmallScreen: t,
     filterBarOpen: n,
     setFilterBarOpen: i,
-    tab: s,
+    tab: o,
     scrollerRef: C,
     sortedCategories: y,
     setCategoryRef: j
@@ -146,13 +146,13 @@ let j = e => {
           }),
           children: [(0, r.jsxs)("div", {
             className: S.sortBy,
-            children: [(0, r.jsx)(o.Text, {
+            children: [(0, r.jsx)(s.Text, {
               variant: "text-md/semibold",
-              children: O.intl.string(O.t.uaX709)
+              children: O.intl.string(O.t.uaX705)
             }), (0, r.jsx)(h.Z, {})]
           }), (0, r.jsx)("div", {
             ref: P,
-            children: (0, r.jsx)(o.Button, {
+            children: (0, r.jsx)(s.Button, {
               onClick: () => {
                 let e = !n;
                 c.default.track(x.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
@@ -166,26 +166,26 @@ let j = e => {
                 }), i(e)
               },
               variant: "secondary",
-              text: O.intl.string(n ? O.t.fYtm6e : O.t.TeTYEx),
-              icon: o.gXV,
+              text: O.intl.string(n ? O.t.fYtm6f : O.t["TeTYE+"]),
+              icon: s.gXV,
               iconPosition: "end"
             })
           })]
         }), n && t && (0, r.jsx)("div", {
           className: S.filterOverlay,
           ref: T,
-          children: (0, r.jsx)(o.Den, {
+          children: (0, r.jsx)(s.Den, {
             className: S.filterOverlayContent,
             children: (0, r.jsx)(_.Z, {})
           })
         })]
       }), k && !L ? (0, r.jsx)(b.Z, {
         scrollerRef: C,
-        tab: s
-      }, s) : (0, E.RE)(s) ? (0, r.jsx)(v.Z, {
+        tab: o
+      }, o) : (0, E.RE)(o) ? (0, r.jsx)(v.Z, {
         scrollerRef: C,
-        tab: s
-      }, s) : (0, r.jsx)(u.k0, {
+        tab: o
+      }, o) : (0, r.jsx)(u.k0, {
         newValue: {
           pageIndex: A
         },

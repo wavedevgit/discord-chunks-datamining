@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk993977 = require("./993977.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk801488 = require("./801488.js");
+  Chunk50089 = require("./50089.js");
 
 function g() {
   return (0, Chunk951288.jsxs)(Chunk843611.rs, {
@@ -25,7 +25,7 @@ function g() {
         page: Chunk981631.ZY5.LIBRARY_SETTINGS,
         root: true,
         children: [(0, Chunk951288.jsx)(Chunk252618.yY, {
-          subsection: Chunk388032.intl.string(Chunk388032.t["3D5yo6"])
+          subsection: Chunk388032.intl.string(Chunk388032.t["3D5yo/"])
         }), (0, Chunk951288.jsx)(Chunk993977.Z, {})]
       })
     }), (0, Chunk951288.jsx)(Chunk765717.Z, {
@@ -34,7 +34,7 @@ function g() {
         page: Chunk981631.ZY5.LIBRARY,
         root: true,
         children: [(0, Chunk951288.jsx)(Chunk252618.yY, {
-          subsection: Chunk388032.intl.string(Chunk388032.t.p7ARTE)
+          subsection: Chunk388032.intl.string(Chunk388032.t.p7ARTB)
         }), (0, Chunk951288.jsx)(Chunk895991.Z, {})]
       })
     })]
@@ -44,9 +44,9 @@ let m = Chunk647438.memo(function() {
   return Chunk647438.useEffect(() => {
     (0, Chunk108427.e)("application_library")
   }, []), (0, Chunk951288.jsxs)("div", {
-    className: Chunk801488.container,
+    className: Chunk50089.container,
     children: [(0, Chunk951288.jsx)(Chunk252618.yY, {
-      location: Chunk388032.intl.string(Chunk388032.t.cw57am)
+      location: Chunk388032.intl.string(Chunk388032.t.cw57ar)
     }), (0, Chunk951288.jsx)(g, {})]
   })
 })

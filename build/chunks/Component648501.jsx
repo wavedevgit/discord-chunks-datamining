@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 648501, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => N
@@ -23,13 +23,13 @@ var Chunk442837 = require("./442837.js"),
   Chunk790901 = require("./790901.js"),
   Chunk714794 = require("./714794.js"),
   Chunk355363 = require("./355363.js"),
-  Chunk687352 = require("./687352.jsx"),
+  Chunk259404 = require("./259404.jsx"),
   Chunk876548 = require("./876548.jsx"),
   Chunk25601 = require("./25601.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk490897 = require("./490897.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk88448 = require("./88448.js");
+  Chunk885525 = require("./885525.js");
 
 function N(e) {
   var t;
@@ -37,8 +37,8 @@ function N(e) {
     channel: n,
     isChannelSelected: N,
     isChannelCollapsed: Z,
-    voiceStates: T,
-    enableConnectedUserLimit: w,
+    voiceStates: w,
+    enableConnectedUserLimit: T,
     enableActivities: A,
     isSubscriptionGated: R,
     needSubscriptionToAccess: D,
@@ -69,7 +69,7 @@ function N(e) {
   if (!M && k === S.i.ALL_MESSAGES && n.isForumLikeChannel() && null != K && K > 0) return (0, r.jsx)(o.Text, {
     variant: "text-xs/semibold",
     color: "text-brand",
-    children: I.intl.format(I.t.GkAbqa, {
+    children: I.intl.format(I.t.GkAbqY, {
       count: (0, o.NGo)(K)
     })
   });
@@ -78,13 +78,13 @@ function N(e) {
     color: "text-muted",
     children: (0, o.NGo)(Y)
   });
-  let X = null != (t = null == T ? true : T.length) ? t : 0;
-  return null != w && w && W ? (0, r.jsx)(x.Z, {
+  let X = null != (t = null == w ? true : w.length) ? t : 0;
+  return null != T && T && W ? (0, r.jsx)(x.Z, {
     userCount: X,
     video: H || z,
     channel: n
-  }) : Z && (0, _.a)(T) && q ? (0, r.jsx)(o.IGR, {
-    text: I.intl.string(I.t.dI3q4u),
+  }) : Z && (0, _.a)(w) && q ? (0, r.jsx)(o.IGR, {
+    text: I.intl.string(I.t.dI3q4h),
     color: l.Z.unsafe_rawColors.RED_400.css
   }) : null != V ? (0, r.jsx)(c.x3, {
     textColor: "text-feedback-positive",

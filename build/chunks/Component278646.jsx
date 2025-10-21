@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 278646, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   h: () => d
@@ -8,9 +8,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk262212 = require("./262212.jsx"),
   Chunk795338 = require("./795338.jsx"),
   Chunk535396 = require("./535396.js"),
-  Chunk258640 = require("./258640.js"),
+  Chunk149829 = require("./149829.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk500254 = require("./500254.js");
+  Chunk477487 = require("./477487.js");
 
 function d(e, t) {
   if (null == t) return;
@@ -37,10 +37,10 @@ function d(e, t) {
       }
       return e
     }({
-      title: c.intl.formatToPlainString(s.default.lFuOFB, {
+      title: c.intl.formatToPlainString(s.default.lFuOFF, {
         perkName: t.title
       }),
-      description: c.intl.formatToPlainString(s.default.y3wHoq, {
+      description: c.intl.formatToPlainString(s.default.y3wHot, {
         perkName: t.title
       }),
       image: (0, r.jsx)(o.m, {
@@ -57,7 +57,7 @@ function d(e, t) {
         className: u.button,
         children: (0, r.jsx)(i.Button, {
           variant: "primary",
-          text: c.intl.string(c.t.cpT0Cg),
+          text: c.intl.string(c.t.cpT0Cq),
           onClick: n.onClose
         })
       })

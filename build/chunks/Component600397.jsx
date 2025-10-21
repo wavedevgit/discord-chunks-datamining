@@ -15,7 +15,7 @@ var Chunk657707 = require("./657707.js"),
   Chunk834129 = require("./834129.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk838808 = require("./838808.js");
+  Chunk372563 = require("./372563.js");
 
 function p(e) {
   let {
@@ -32,7 +32,7 @@ function p(e) {
     messageId: true
   })(), E = (0, a.q)(t.applicationId);
   if (null == E) return null;
-  let b = f.intl.format(f.t.m7Lwam, {
+  let b = f.intl.format(f.t.m7Lwas, {
     username: m,
     usernameHook: g,
     gameName: E.name,

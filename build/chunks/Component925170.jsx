@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk299560 = require("./299560.jsx"),
   Chunk247397 = require("./247397.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk279994 = require("./279994.js");
+  Chunk32442 = require("./32442.js");
 
 function O(e) {
   var t, r, {
@@ -43,7 +43,7 @@ function O(e) {
     [P, k] = o.useState(false),
     v = {
       onClick: () => O(),
-      text: f.intl.string(f.t.cpT0Cg)
+      text: f.intl.string(f.t.cpT0Cq)
     },
     x = o.useCallback(() => {
       k(true), O()
@@ -66,13 +66,13 @@ function O(e) {
     }
     return e
   }({
-    title: f.intl.string(f.t.grUgR0),
+    title: f.intl.string(f.t["grUgR+"]),
     actions: w ? [] : [v],
     size: w ? "md" : "sm",
     onClose: O
   }, y), r = r = {
     children: w ? (0, n.jsx)("ul", {
-      "aria-label": f.intl.string(f.t["+EIBSE"]),
+      "aria-label": f.intl.string(f.t["+EIBSA"]),
       className: b.options,
       children: m.map(e => (0, n.jsx)(u.Z, {
         widgetType: e,
@@ -83,7 +83,7 @@ function O(e) {
     }) : (0, n.jsx)(l.Text, {
       variant: "text-md/medium",
       color: "text-secondary",
-      children: f.intl.string(f.t["1nkDOj"])
+      children: f.intl.string(f.t["1nkDOs"])
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
     var r = Object.keys(e);

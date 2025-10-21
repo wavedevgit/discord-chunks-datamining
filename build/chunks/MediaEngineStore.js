@@ -878,7 +878,7 @@ function nn(e) {
 
 function nr(e) {
   let t = e3;
-  if (e3 = t7(e, eA.intl.string(eA.t.xlUg0t)), !p().isEqual(e3, t)) {
+  if (e3 = t7(e, eA.intl.string(eA.t.xlUg0v)), !p().isEqual(e3, t)) {
     let e = tj(),
       n = t9(e3, e.outputDeviceId);
     eq.setAudioOutputDevice(n);
@@ -891,7 +891,7 @@ function nr(e) {
 function ni(e) {
   ts = e.length > 0;
   let t = e4;
-  if (e4 = t7(e, eA.intl.string(eA.t.WKWARU)), e9 && !p().isEqual(e4, t)) {
+  if (e4 = t7(e, eA.intl.string(eA.t.WKWARY)), e9 && !p().isEqual(e4, t)) {
     var n;
     let e = true !== e4[te],
       r = te === eS.w5 && (null == (n = t[eS.w5]) ? true : n.disabled);

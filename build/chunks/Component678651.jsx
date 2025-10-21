@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk706454 = require("./706454.js"),
   Chunk709054 = require("./709054.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk431754 = require("./431754.js");
+  Chunk571270 = require("./571270.js");
 
 function p(e) {
   var t, n;
@@ -37,7 +37,7 @@ function p(e) {
         children: [(0, a.jsx)(i.Text, {
           variant: "text-md/medium",
           className: m.timeTitle,
-          children: d.intl.string(d.t.g8pDeX)
+          children: d.intl.string(d.t.g8pDeY)
         }), (0, a.jsx)(i.Text, {
           variant: "text-sm/normal",
           color: "interactive-active",
@@ -51,7 +51,7 @@ function p(e) {
         children: [(0, a.jsx)(i.Text, {
           variant: "text-md/medium",
           className: m.timeTitle,
-          children: d.intl.string(d.t.v6XAgo)
+          children: d.intl.string(d.t.v6XAgu)
         }), (0, a.jsx)(i.Text, {
           variant: "text-sm/normal",
           color: "interactive-active",

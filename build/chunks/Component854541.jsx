@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk44315 = require("./44315.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk68701 = require("./68701.js");
+  Chunk164688 = require("./164688.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -274,7 +274,7 @@ function w(e) {
         trailing: E && null != I ? {
           icon: f.ilE,
           onClick: x,
-          "aria-label": m.intl.string(m.t["0dU9Nz"])
+          "aria-label": m.intl.string(m.t["0dU9Ny"])
         } : true
       }), null != l && l.length > 0 && (0, r.jsx)("div", {
         className: g.suggestedColors,

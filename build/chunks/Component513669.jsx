@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk813197 = require("./813197.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk288532 = require("./288532.js");
+  Chunk793156 = require("./793156.js");
 
 function g(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -84,16 +84,16 @@ function h(e) {
     imageName: a,
     savedImageName: h,
     onChange: v,
-    uploadButtonLabel: q = u.intl.string(u.t["MsUY/f"]),
-    radioGroupAriaLabel: b = u.intl.string(u.t["0Q0UJi"]),
+    uploadButtonLabel: q = u.intl.string(u.t["MsUY/S"]),
+    radioGroupAriaLabel: b = u.intl.string(u.t["0Q0UJq"]),
     disabled: C = false
   } = e, U = a === p, [j, V] = r.useState(U ? A : null), [x, O] = r.useState(null), P = r.useRef(null), F = r.useRef(null);
   r.useEffect(() => {
     h !== p && (V(null), O(null))
   }, [h]);
-  let y = null != x ? u.intl.formatToPlainString(u.t["Kw+5YW"], {
+  let y = null != x ? u.intl.formatToPlainString(u.t["Kw+5YX"], {
       filename: x
-    }) : u.intl.string(u.t.SNPvSk),
+    }) : u.intl.string(u.t.SNPvSv),
     I = (0, o.Jb)({
       orientation: "horizontal",
       isDisabled: C
@@ -153,14 +153,14 @@ function h(e) {
       className: c.customImageActionContainer,
       children: [(0, n.jsx)(l.u, {
         asContainer: true,
-        text: u.intl.string(u.t.AQYXMD),
+        text: u.intl.string(u.t.AQYXMO),
         children: (0, n.jsx)(s.P3F, {
           className: c.customImageAction,
           onClick: () => {
             var e;
             return null == (e = P.current) ? true : e.activateUploadDialogue()
           },
-          "aria-label": u.intl.formatToPlainString(u.t.Qc9Lg4, {
+          "aria-label": u.intl.formatToPlainString(u.t.Qc9Lg6, {
             filename: x
           }),
           children: (0, n.jsx)(s.vdY, {
@@ -171,13 +171,13 @@ function h(e) {
         })
       }), (0, n.jsx)(l.u, {
         asContainer: true,
-        text: u.intl.string(u.t.WxqWU1),
+        text: u.intl.string(u.t.WxqWU0),
         children: (0, n.jsx)(s.P3F, {
           className: c.customImageAction,
           onClick: () => {
             a === p && v(t[0].data, t[0].name), V(null), O(null)
           },
-          "aria-label": u.intl.formatToPlainString(u.t.Z43V9f, {
+          "aria-label": u.intl.formatToPlainString(u.t.Z43V9S, {
             filename: x
           }),
           children: (0, n.jsx)(s.XHJ, {

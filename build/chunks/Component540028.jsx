@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk354459 = require("./354459.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk533362 = require("./533362.js");
+  Chunk186880 = require("./186880.js");
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -85,11 +85,11 @@ function T(e) {
     if (e.pipWindow.component === m.NYg.ACTIVITY && null != b) {
       var t;
       let e = null == (t = d.Z.getApplication(b.applicationId)) ? true : t.name;
-      return null == e ? E.intl.string(E.t["8raC1N"]) : E.intl.formatToPlainString(E.t["a9+V+f"], {
+      return null == e ? E.intl.string(E.t["8raC1P"]) : E.intl.formatToPlainString(E.t["a9+V+V"], {
         activityName: e
       })
     }
-    return null == e.participant || e.participant.type !== g.fO.STREAM ? E.intl.string(E.t["ng/Kws"]) : E.intl.formatToPlainString(E.t.sqmFRk, {
+    return null == e.participant || e.participant.type !== g.fO.STREAM ? E.intl.string(E.t["ng/Kwl"]) : E.intl.formatToPlainString(E.t.sqmFRg, {
       username: e.participant.userNick
     })
   }

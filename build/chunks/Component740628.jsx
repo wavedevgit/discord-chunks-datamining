@@ -17,8 +17,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk428927 = require("./428927.jsx"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk883172 = require("./883172.js"),
-  Chunk909735 = require("./909735.js");
+  Chunk878449 = require("./878449.js"),
+  Chunk602727 = require("./602727.js");
 
 function g(e) {
   let {
@@ -74,8 +74,8 @@ function b(e) {
     initialSubsection: I,
     onClose: y
   } = e, {
-    trackUserProfileAction: Z
-  } = (0, a.KZ)(), _ = (0, o.e7)([s.Z], () => s.Z.hidePersonalInformation), [{
+    trackUserProfileAction: _
+  } = (0, a.KZ)(), Z = (0, o.e7)([s.Z], () => s.Z.hidePersonalInformation), [{
     section: O,
     subsection: N
   }, A] = i.useState({
@@ -94,15 +94,15 @@ function b(e) {
     })
   }, [f, O]);
   let T = i.useCallback(e => {
-    Z({
+    _({
       action: "PRESS_SECTION",
       section: e
     }), A({
       section: e,
       subsection: true
     })
-  }, [Z, A]);
-  return _ ? (0, l.jsx)("div", {
+  }, [_, A]);
+  return Z ? (0, l.jsx)("div", {
     className: j.container,
     children: (0, l.jsxs)("div", {
       className: v.empty,
@@ -110,7 +110,7 @@ function b(e) {
         className: v.emptyIconStreamerMode
       }), (0, l.jsx)("div", {
         className: v.emptyText,
-        children: h.intl.string(h.t.Br1ls7)
+        children: h.intl.string(h.t.Br1ls3)
       })]
     })
   }) : (0, l.jsxs)("div", {

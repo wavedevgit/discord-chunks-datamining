@@ -13,7 +13,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk922156 = require("./922156.js"),
   Chunk63063 = require("./63063.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk41245 = require("./41245.js");
+  Chunk534084 = require("./534084.js");
 let h = l => {
   let {
     onClose: n,
@@ -36,7 +36,7 @@ let h = l => {
   return (0, r.jsxs)(e.Y0X, {
     transitionState: i,
     size: e.CgR.SMALL,
-    "aria-label": u.intl.string(u.t["6kHRYG"]),
+    "aria-label": u.intl.string(u.t["6kHRYP"]),
     parentComponent: "DispatchErrorModal",
     children: [(0, r.jsxs)(e.xBx, {
       justify: s.Z.Justify.BETWEEN,
@@ -45,7 +45,7 @@ let h = l => {
         grow: 1,
         children: (0, r.jsx)(e.Heading, {
           variant: "heading-lg/semibold",
-          children: u.intl.string(u.t["6kHRYG"])
+          children: u.intl.string(u.t["6kHRYP"])
         })
       }), (0, r.jsx)(s.Z.Child, {
         grow: 0,
@@ -57,15 +57,15 @@ let h = l => {
       children: (0, r.jsxs)("div", {
         className: p.body,
         children: [(0, r.jsx)("div", {
-          children: u.intl.format(u.t["NnE/6O"], {
+          children: u.intl.format(u.t["NnE/6P"], {
             link: "https://dis.gd/dispatch-error"
           })
         }), (0, r.jsx)("div", {
           className: p.supportCallToAction,
-          children: u.intl.string(u.t["o+efY2"])
+          children: u.intl.string(u.t["o+efY9"])
         }), (0, r.jsx)("div", {
           className: p.errorLabel,
-          children: u.intl.string(u.t.BiSnZ2)
+          children: u.intl.string(u.t.BiSnZ9)
         }), (0, r.jsx)("div", {
           className: p.errorDetails,
           children: (0, r.jsxs)("div", {
@@ -76,7 +76,7 @@ let h = l => {
     }), (0, r.jsxs)(e.mzw, {
       children: [(0, r.jsx)(e.Button, {
         variant: "primary",
-        text: u.intl.string(u.t.VdyWmJ),
+        text: u.intl.string(u.t.VdyWmB),
         onClick: () => {
           window.open(c.Z.getSubmitRequestURL())
         }
@@ -84,7 +84,7 @@ let h = l => {
         look: o.zx.Looks.LINK,
         onClick: n,
         color: p.closeLink,
-        children: u.intl.string(u.t.cpT0Cg)
+        children: u.intl.string(u.t.cpT0Cq)
       })]
     })]
   })

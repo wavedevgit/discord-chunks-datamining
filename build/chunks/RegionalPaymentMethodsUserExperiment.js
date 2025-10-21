@@ -167,7 +167,7 @@ let o = (0, Chunk818083.B)({
   ]);
 
 function l(e) {
-  return true !== e && s.has(e) ? s.get(e) : a.intl.string(a.t.jdPblp)
+  return true !== e && s.has(e) ? s.get(e) : a.intl.string(a.t.jdPblk)
 }
 let c = new Map([
   ["arzte_und_apotheker_bank", "\xc4rzte- und Apothekerbank"],
@@ -200,5 +200,5 @@ let c = new Map([
 ]);
 
 function u(e) {
-  return true !== e && c.has(e) ? c.get(e) : a.intl.string(a.t.jdPblp)
+  return true !== e && c.has(e) ? c.get(e) : a.intl.string(a.t.jdPblk)
 }

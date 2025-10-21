@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 426521, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   U: () => U
@@ -32,7 +32,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk11825 = require("./11825.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk17250 = require("./17250.js"),
+  Chunk231796 = require("./231796.js"),
   Chunk756688 = require("./756688.js"),
   Chunk886765 = require("./886765.js");
 
@@ -45,12 +45,12 @@ function D(e) {
   let d = null != (a = b.default.getUser(null == (i = c.message) || null == (n = i.author) ? true : n.id)) ? a : new m.Z(null == (l = c.message) ? true : l.author),
     f = p.Z.parse(u);
   return (0, r.jsxs)("div", {
-    className: w.messagePreviewContainer,
+    className: T.messagePreviewContainer,
     children: [(0, r.jsx)(s.Z, {
       user: d,
       size: o.EFr.SIZE_24
     }), (0, r.jsx)(o.Text, {
-      className: w.messagePreviewText,
+      className: T.messagePreviewText,
       variant: "text-sm/normal",
       lineClamp: 2,
       children: f
@@ -67,7 +67,7 @@ function L(e) {
   if (null == t) return null;
   let n = p.Z.parse(t);
   return (0, r.jsx)("div", {
-    className: w.calloutContainer,
+    className: T.calloutContainer,
     children: (0, r.jsx)(o.Text, {
       variant: "text-sm/normal",
       lineClamp: 2,
@@ -79,15 +79,15 @@ function L(e) {
 function M(e) {
   let {
     item: t
-  } = e, n = R, i = T.intl.string(T.t.SJTHJS);
-  return t.completed && (n = A, i = T.intl.string(T.t.f6RTAA)), (0, r.jsxs)("div", {
-    className: w.lifecycleContainer,
+  } = e, n = R, i = w.intl.string(w.t.SJTHJb);
+  return t.completed && (n = A, i = w.intl.string(w.t.f6RTAM)), (0, r.jsxs)("div", {
+    className: T.lifecycleContainer,
     children: [(0, r.jsx)("img", {
-      className: w.checkbox,
+      className: T.checkbox,
       alt: "",
       src: n
     }), (0, r.jsx)(o.Text, {
-      className: w.lifecycleText,
+      className: T.lifecycleText,
       variant: "text-xs/bold",
       color: "header-secondary",
       children: i
@@ -175,29 +175,29 @@ let G = Chunk647438.memo(function(e) {
         })
       }),
       {
-        emoji_id: T,
+        emoji_id: w,
         emoji_name: A
       } = l,
-      R = null != T || null != A ? (0, r.jsx)(a.Z, {
-        className: w.emoji,
-        emojiId: T,
+      R = null != w || null != A ? (0, r.jsx)(a.Z, {
+        className: T.emoji,
+        emojiId: w,
         emojiName: A
       }) : null;
     return (0, r.jsxs)("div", {
-      className: w.row,
+      className: T.row,
       children: [(0, r.jsxs)(o.kL8, {
-        className: w.rowContent,
+        className: T.rowContent,
         focusProps: {
           offset: 4
         },
         "aria-label": E,
         onClick: g,
         children: [f ? null : (0, r.jsx)("div", {
-          className: w.unread
+          className: T.unread
         }), (0, r.jsx)(I.U, {
           item: l
         }), (0, r.jsxs)("div", {
-          className: w.body,
+          className: T.body,
           children: ["lifecycle_item" === l.type && null != l.item_enum && (0, r.jsx)(M, {
             item: l
           }), (0, r.jsxs)(o.Text, {

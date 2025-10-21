@@ -45,7 +45,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk225639 = require("./225639.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk985822 = require("./985822.js");
+  Chunk896681 = require("./896681.js");
 let K = Chunk884338.u8.SIZE_24;
 
 function Y(e) {
@@ -168,12 +168,12 @@ function Y(e) {
             iconClassName: G.inviteButtonIcon,
             size: u.zx.Sizes.TINY,
             look: u.zx.Looks.FILLED,
-            buttonText: H.intl.string(H.t["6F9ivr"]),
+            buttonText: H.intl.string(H.t["6F9ivu"]),
             color: u.zx.Colors.TRANSPARENT
           }), et ? (0, o.jsx)(I.Z, {
             onClick: en,
             iconComponent: _.epB,
-            label: H.intl.string(H.t.mseZsL)
+            label: H.intl.string(H.t.mseZsD)
           }) : null, eo ? (0, o.jsx)(N.Z, {
             popoutWindowAlwaysOnTop: er,
             onToggleStayOnTop: ea

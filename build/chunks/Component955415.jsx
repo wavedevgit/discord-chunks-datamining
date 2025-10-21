@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk768581 = require("./768581.js"),
   Chunk153066 = require("./153066.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk257727 = require("./257727.js");
+  Chunk722579 = require("./722579.js");
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -191,7 +191,7 @@ let C = e => {
         className: y.statusOnline
       }), (0, r.jsx)("span", {
         className: y.count,
-        children: b.intl.format(b.t["LC+S+v"], {
+        children: b.intl.format(b.t["LC+S+m"], {
           membersOnline: t
         })
       })]
@@ -201,7 +201,7 @@ let C = e => {
         className: y.statusOffline
       }), (0, r.jsx)("span", {
         className: y.count,
-        children: b.intl.format(b.t.zRl6XV, {
+        children: b.intl.format(b.t.zRl6XR, {
           count: n
         })
       })]

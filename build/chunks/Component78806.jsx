@@ -16,12 +16,12 @@ function a(e) {
   } = e, t = (0, o.Z)(n).filter(e => null != e);
   if (0 === t.length) return null;
   let a = null;
-  if (1 === t.length) a = s.intl.format(s.t.wQ6ur6, {
+  if (1 === t.length) a = s.intl.format(s.t.wQ6urw, {
     applicationName: () => (0, l.jsx)(r.Z, {
       application: t[0]
     }, t[0].id)
   });
-  else if (2 === t.length) a = s.intl.format(s.t.C98CSE, {
+  else if (2 === t.length) a = s.intl.format(s.t.C98CSN, {
     applicationName: () => (0, l.jsx)(r.Z, {
       application: t[0]
     }, t[0].id),
@@ -32,7 +32,7 @@ function a(e) {
   else {
     let e = t[t.length - 1],
       n = t.slice(0, false);
-    a = s.intl.format(s.t.UxpwAg, {
+    a = s.intl.format(s.t.UxpwAh, {
       applications: () => n.map(e => (0, l.jsx)(r.Z, {
         application: e,
         useComma: true

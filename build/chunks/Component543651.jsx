@@ -18,7 +18,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk594174 = require("./594174.js"),
   Chunk823379 = require("./823379.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk325803 = require("./325803.js");
+  Chunk467826 = require("./467826.js");
 let g = function(e) {
   let {
     createdAt: t,
@@ -44,7 +44,7 @@ let g = function(e) {
       }) : (0, r.jsx)(u.Text, {
         variant: "text-md/semibold",
         color: "text-muted",
-        children: h.intl.string(h.t.Cyxddn)
+        children: h.intl.string(h.t.Cyxddp)
       }), (0, r.jsxs)(u.Text, {
         variant: "text-xs/medium",
         color: "text-muted",
@@ -54,7 +54,7 @@ let g = function(e) {
       maxUsers: 4,
       users: y,
       guildId: g,
-      "aria-label": h.intl.string(h.t.WTozwc)
+      "aria-label": h.intl.string(h.t.WTozwe)
     })]
   })
 }

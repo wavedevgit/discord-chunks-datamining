@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk905663 = require("./905663.js");
+  Chunk476215 = require("./476215.js");
 
 function f(e) {
   var {
@@ -43,9 +43,9 @@ function f(e) {
     a = r.useCallback(() => {
       if (null != i) {
         var e;
-        return null != (e = (0, g.fr)(i, j.Si.TIER_2)) ? e : p.intl.string(p.t.Y2WKTk)
+        return null != (e = (0, g.fr)(i, j.Si.TIER_2)) ? e : p.intl.string(p.t.Y2WKTl)
       }
-      return p.intl.string(p.t.Y2WKTk)
+      return p.intl.string(p.t.Y2WKTl)
     }, [i]);
   return (0, l.jsx)(x.Z, function(e) {
     for (var n = 1; n < arguments.length; n++) {
@@ -79,12 +79,12 @@ function f(e) {
 function Z() {
   let e = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion);
   return (0, Chunk951288.jsxs)("div", {
-    className: s()(Chunk905663.reverseTrialEducationBannerContainer, {
-      [Chunk905663.reducedMotion]: module
+    className: s()(Chunk476215.reverseTrialEducationBannerContainer, {
+      [Chunk476215.reducedMotion]: module
     }),
     children: [(0, Chunk951288.jsx)(Chunk481060.Fmz, {
-      className: s()(Chunk905663.unlockAnimation, {
-        [Chunk905663.reducedMotion]: module
+      className: s()(Chunk476215.unlockAnimation, {
+        [Chunk476215.reducedMotion]: module
       }),
       loop: false,
       shouldAnimate: !module,
@@ -92,8 +92,8 @@ function Z() {
       importData: () => require.e("21812").then(require.t.bind(require, 741855, 19))
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-xs/medium",
-      className: Chunk905663.reverseTrialEducationText,
-      children: Chunk388032.intl.format(Chunk388032.t.GimLpa, {})
+      className: Chunk476215.reverseTrialEducationText,
+      children: Chunk388032.intl.format(Chunk388032.t.GimLpS, {})
     })]
   })
 }
@@ -121,7 +121,7 @@ function S(e) {
       }), (0, l.jsx)(o.Text, {
         variant: "text-sm/medium",
         className: s()(v.upsellText, v.enhancedUpsellText),
-        children: null != n ? n : p.intl.format(p.t["L/zCtr"], {
+        children: null != n ? n : p.intl.format(p.t["L/zCto"], {
           onClick: () => r({
             analyticsLocation: a,
             onClose: t

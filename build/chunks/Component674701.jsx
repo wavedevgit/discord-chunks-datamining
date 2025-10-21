@@ -34,7 +34,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk957825 = require("./957825.js"),
   Chunk268685 = require("./268685.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk571528 = require("./571528.js"),
+  Chunk553517 = require("./553517.js"),
   L = function(e) {
     return e.SYSTEM_MESSAGE = "system_message", e.COACHMARK = "coachmark", e
   }({});
@@ -65,23 +65,23 @@ function x(e) {
       }
     })
   }, [t, n]);
-  let V = () => t === C.hX.FRIEND_ANNIVERSARY ? w.intl.formatToPlainString(w.t.BWJvAA, {
+  let V = () => t === C.hX.FRIEND_ANNIVERSARY ? w.intl.formatToPlainString(w.t.BWJvAK, {
       friendUserName: v.ZP.getName(a)
     }) : (0, I.Ou)(t),
-    H = () => t === C.hX.FRIEND_ANNIVERSARY ? w.intl.formatToPlainString(w.t.S3fdq6, {
+    H = () => t === C.hX.FRIEND_ANNIVERSARY ? w.intl.formatToPlainString(w.t.S3fdq7, {
       numberOfYears: F
     }) : (0, I.Ou)(t),
     Y = () => {
       switch (G) {
         case C.X2.VIEW_ALL:
-          return w.intl.string(w.t.WkxniI);
+          return w.intl.string(w.t.WkxniM);
         case C.X2.SEND_MESSAGE:
-          return w.intl.string(w.t.I61IsL);
+          return w.intl.string(w.t.I61IsE);
         default:
           return
       }
     },
-    W = () => t === C.hX.FRIEND_ANNIVERSARY ? w.intl.formatToPlainString(w.t["L2s/Nz"], {
+    W = () => t === C.hX.FRIEND_ANNIVERSARY ? w.intl.formatToPlainString(w.t["L2s/N3"], {
       numberOfYears: F
     }) : (0, I.Ou)(t),
     K = e => {
@@ -201,7 +201,7 @@ function x(e) {
             }), (0, r.jsx)(d.Text, {
               variant: "text-sm/medium",
               className: o()(D.buttonText, er),
-              children: w.intl.string(w.t["wg/30t"])
+              children: w.intl.string(w.t["wg/30i"])
             })]
           })
         })]

@@ -161,16 +161,16 @@ let U = e => {
 
 function B(e) {
   return e.config.features.includes(R.S7.START_QUEST_CTA) ? (0, m.pO)(e) ? e.config.features.includes(R.S7.CLOUD_GAMING_ACTIVITY) ? {
-    text: D.intl.string(D.t["+qoymJ"]),
+    text: D.intl.string(D.t["+qoymD"]),
     questContentCTA: p.jZ.START_QUEST
   } : {
-    text: D.intl.string(D.t["Ie9++v"]),
+    text: D.intl.string(D.t["Ie9++s"]),
     questContentCTA: p.jZ.START_QUEST
   } : {
-    text: D.intl.string(D.t.hRIVy8),
+    text: D.intl.string(D.t["hRIVy+"]),
     questContentCTA: p.jZ.START_QUEST
   } : {
-    text: D.intl.string(D.t.l7E81t),
+    text: D.intl.string(D.t.l7E81v),
     questContentCTA: p.jZ.ACCEPT_QUEST
   }
 }
@@ -213,7 +213,7 @@ function Z(e) {
   } = (0, E.zB)(n), G = (0, m.Rt)(n), Z = i.useMemo(() => n.config.features.includes(R.S7.MOBILE_ONLY_QUEST_PUSH_TO_MOBILE), [n.config.features]);
   return i.useMemo(() => {
     if (!Z && (0, m.HJ)(n) && r !== E.OH.COMPLETED && r !== E.OH.CLAIMED) {
-      let e = D.intl.string(D.t.BkZhUF);
+      let e = D.intl.string(D.t.BkZhUI);
       return {
         text: e,
         tooltipText: e,
@@ -222,9 +222,9 @@ function Z(e) {
     }
     switch (r) {
       case E.OH.UNACCEPTED:
-        let e = D.intl.string(D.t.kUQLMD),
+        let e = D.intl.string(D.t.kUQLMJ),
           t = p.jZ.ACCEPT_QUEST;
-        return b && (e = D.intl.string(D.t.umdNio), t = p.jZ.START_QUEST), (y || (0, m.pO)(n)) && ({
+        return b && (e = D.intl.string(D.t.umdNin), t = p.jZ.START_QUEST), (y || (0, m.pO)(n)) && ({
           text: e,
           questContentCTA: t
         } = B(n)), {
@@ -283,7 +283,7 @@ function Z(e) {
       case E.OH.ACCEPTED:
       case E.OH.IN_PROGRESS:
         if (I && _) return {
-          text: D.intl.string(D.t.Cfye4u),
+          text: D.intl.string(D.t.Cfye4v),
           tooltipText: null,
           onClick: () => (0, m.gI)({
             quest: n
@@ -297,7 +297,7 @@ function Z(e) {
           })
         };
         if (Z && (0, m.HJ)(n)) return {
-          text: D.intl.string(D.t.IsH2Sk),
+          text: D.intl.string(D.t.IsH2Sp),
           tooltipText: null,
           onClick: () => {
             (0, C.openPushToPhoneModal)(n)
@@ -305,7 +305,7 @@ function Z(e) {
         };
         if (b) return {
           text: (0, m.F9)(A),
-          tooltipText: D.intl.string(D.t.hsbwjo),
+          tooltipText: D.intl.string(D.t.hsbwjv),
           onClick: () => (0, C.openVideoQuestModal)({
             quest: n,
             questContent: o,
@@ -319,18 +319,18 @@ function Z(e) {
           } = B(n);
           return {
             text: e,
-            tooltipText: D.intl.string(D.t.hsbwjo),
+            tooltipText: D.intl.string(D.t.hsbwjv),
             onClick: () => {
               n.config.features.includes(R.S7.START_QUEST_CTA) && U()
             }
           }
         }
         return {
-          text: D.intl.string(D.t.cfY4PD), tooltipText: D.intl.string(D.t.hsbwjo), onClick: null
+          text: D.intl.string(D.t.cfY4PE), tooltipText: D.intl.string(D.t.hsbwjv), onClick: null
         };
       case E.OH.COMPLETED:
         return {
-          text: D.intl.string(D.t.cfY4PD), tooltipText: null, onClick: v
+          text: D.intl.string(D.t.cfY4PE), tooltipText: null, onClick: v
         };
       case E.OH.CLAIMED:
         let i = {
@@ -340,26 +340,26 @@ function Z(e) {
         if ((0, T.i)("useCtaConfig")) return {
           tooltipText: null,
           onClick: v,
-          text: (0, m.wj)(n.config) ? D.intl.string(D.t.bAGFz8) : D.intl.string(D.t.vTgCW1)
+          text: (0, m.wj)(n.config) ? D.intl.string(D.t.bAGFz3) : D.intl.string(D.t.vTgCWx)
         };
         if (a) return k(x({}, i), {
-          text: D.intl.string(D.t.MAS7uL)
+          text: D.intl.string(D.t.MAS7uK)
         });
         if ((0, m.vQ)(n.config)) return k(x({}, i), {
-          text: D.intl.string(D.t.vTgCW1)
+          text: D.intl.string(D.t.vTgCWx)
         });
         if ((0, m.Bg)(n.config)) return {
           tooltipText: null,
           onClick: N,
-          text: D.intl.string(D.t["eQX+go"])
+          text: D.intl.string(D.t["eQX+gg"])
         };
         else if ((0, m.xN)(n.config)) return {
           tooltipText: null,
-          text: D.intl.string(D.t.WYchdX),
+          text: D.intl.string(D.t.WYchde),
           onClick: L
         };
         return k(x({}, i), {
-          text: D.intl.string(D.t.bAGFz8)
+          text: D.intl.string(D.t.bAGFz3)
         })
     }
   }, [r, b, I, _, v, a, n, o, s, f, M, A, N, L, y, U, O, Z, G])

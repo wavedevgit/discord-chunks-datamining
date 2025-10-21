@@ -12,8 +12,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk313201 = require("./313201.js"),
   Chunk742458 = require("./742458.js"),
   Chunk766650 = require("./766650.jsx"),
-  Chunk827391 = require("./827391.js"),
-  Chunk219990 = require("./219990.js");
+  Chunk584090 = require("./584090.js"),
+  Chunk979712 = require("./979712.js");
 
 function f(e) {
   let {
@@ -24,9 +24,9 @@ function f(e) {
     error: m,
     className: g,
     required: y,
-    value: b,
+    value: C,
     setRef: O,
-    placeholder: C,
+    placeholder: b,
     autoFocus: j,
     maxLength: w,
     spellCheck: S,
@@ -35,7 +35,7 @@ function f(e) {
     autoCorrect: P,
     onChange: E,
     inputClassName: N
-  } = e, k = (0, c.Dt)(), [Z, A] = s.useState(false), T = (0, u.o9)(i, b);
+  } = e, k = (0, c.Dt)(), [Z, A] = s.useState(false), T = (0, u.o9)(i, C);
   return (0, n.jsx)("div", {
     className: null != g ? g : true,
     children: (0, n.jsx)(l.gNt, {
@@ -56,9 +56,9 @@ function f(e) {
           id: k,
           name: "email",
           type: i === u.Nz.EMAIL ? "email" : "text",
-          value: b,
+          value: C,
           inputRef: O,
-          placeholder: C,
+          placeholder: b,
           "aria-label": f,
           required: y,
           onChange: function(e) {

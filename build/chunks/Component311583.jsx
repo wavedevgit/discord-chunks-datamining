@@ -21,12 +21,12 @@ let C = e => {
     let {
       product: t,
       selectedVariantIndex: n,
-      cardRef: s,
+      cardRef: o,
       onClick: d,
       icon: C,
       prioritizedCurrency: h,
       onClickAnalytics: _
-    } = e, m = (0, o.Nd)(), b = null == m ? true : m.tab, v = (0, a.sp)(), E = (0, g.J)(t, h), x = (0, u.J7)(t, i.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, _);
+    } = e, m = (0, s.Nd)(), b = null == m ? true : m.tab, v = (0, a.sp)(), E = (0, g.J)(t, h), x = (0, u.J7)(t, i.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON, _);
     return null != d || null != C ? (0, r.jsx)(l.hU, {
       variant: "primary",
       "aria-label": f.intl.string(f.t.SKNnqq),
@@ -42,7 +42,7 @@ let C = e => {
         primary: true,
         product: t,
         selectedVariantIndex: n,
-        returnRef: s,
+        returnRef: o,
         tooltipDelay: 250
       })
     }) : null
@@ -54,8 +54,8 @@ let C = e => {
       onClick: l,
       icon: i,
       prioritizedCurrency: a,
-      onClickAnalytics: o
-    } = e, c = (0, u.LJ)(t), g = (0, s.o)(c);
+      onClickAnalytics: s
+    } = e, c = (0, u.LJ)(t), g = (0, o.o)(c);
     if (null == c) return null;
     let p = (0, d.W)(c, g);
     return (0, r.jsx)(C, {
@@ -65,6 +65,6 @@ let C = e => {
       onClick: l,
       icon: i,
       prioritizedCurrency: a,
-      onClickAnalytics: o
+      onClickAnalytics: s
     })
   }

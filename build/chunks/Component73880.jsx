@@ -1,4 +1,4 @@
-/** Chunk was on 11324 **/
+/** Chunk was on 74240 **/
 /** chunk id: 73880, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Q8: () => o,
@@ -57,7 +57,7 @@ function u(e) {
       value: t.response,
       onChange: l,
       autofocus: n,
-      placeholder: a.intl.string(a.t["Sqn+Wl"])
+      placeholder: a.intl.string(a.t["Sqn+Wh"])
     })
   })
 }

@@ -12,8 +12,8 @@ var Chunk120356 = require("./120356.js"),
   Chunk481060 = require("./481060.js"),
   Chunk810568 = require("./810568.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk456486 = require("./456486.js"),
-  Chunk234891 = require("./234891.js");
+  Chunk226788 = require("./226788.js"),
+  Chunk803351 = require("./803351.js");
 let f = [Chunk643872.p.OFFICIAL, Chunk643872.p.TWITTER, Chunk643872.p.YOUTUBE];
 
 function p(e) {
@@ -21,38 +21,38 @@ function p(e) {
     website: t,
     trackClick: n
   } = e, {
-    action: r,
+    action: i,
     icon: l,
     title: u
   } = function(e) {
     switch (e.category) {
       case a.p.OFFICIAL:
         return {
-          icon: (0, i.jsx)(o.enf, {
+          icon: (0, r.jsx)(o.enf, {
             colorClass: m.linkIcon
-          }), action: c.as.WebsiteLink, title: d.intl.string(d.t.fOUKvr)
+          }), action: c.as.WebsiteLink, title: d.intl.string(d.t.fOUKvg)
         };
       case a.p.TWITTER:
         return {
-          icon: (0, i.jsx)(o.TAi, {
+          icon: (0, r.jsx)(o.TAi, {
             colorClass: m.linkIcon
-          }), action: c.as.XLink, title: d.intl.string(d.t["INic4+"])
+          }), action: c.as.XLink, title: d.intl.string(d.t.INic4y)
         };
       case a.p.YOUTUBE:
         return {
-          action: c.as.YouTubeLink, icon: (0, i.jsx)(o.$5w, {
+          action: c.as.YouTubeLink, icon: (0, r.jsx)(o.$5w, {
             colorClass: m.linkIcon
-          }), title: d.intl.string(d.t.lNmxbG)
+          }), title: d.intl.string(d.t.lNmxbE)
         };
       default:
         throw Error("Unknown IGDB website category")
     }
   }(t);
-  return (0, i.jsx)(s.u, {
+  return (0, r.jsx)(s.u, {
     __unsupportedReactNodeAsText: t.url,
-    children: (0, i.jsx)(o.Anchor, {
+    children: (0, r.jsx)(o.Anchor, {
       onClick: () => {
-        n(r)
+        n(i)
       },
       className: m.linkAnchor,
       title: u,
@@ -68,21 +68,21 @@ let g = function(e) {
     trackClick: n
   } = e;
   if (null == t.websites) return null;
-  let r = t.websites.filter(e => {
+  let i = t.websites.filter(e => {
     let {
       category: t
     } = e;
     return f.includes(t)
   }).sort((e, t) => e.category - t.category);
-  return 0 === r.length ? null : (0, i.jsxs)("div", {
-    children: [(0, i.jsx)(o.Heading, {
+  return 0 === i.length ? null : (0, r.jsxs)("div", {
+    children: [(0, r.jsx)(o.Heading, {
       className: u.sectionHeader,
       variant: "text-xs/semibold",
       color: "header-secondary",
-      children: d.intl.string(d.t.Oj3o19)
-    }), (0, i.jsx)("div", {
+      children: d.intl.string(d.t["Oj3o1/"])
+    }), (0, r.jsx)("div", {
       className: l()(u.row, u.gapMd),
-      children: r.map(e => (0, i.jsx)(p, {
+      children: i.map(e => (0, r.jsx)(p, {
         website: e,
         trackClick: n
       }, e.url))

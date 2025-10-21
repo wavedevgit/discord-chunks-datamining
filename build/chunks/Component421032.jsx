@@ -1,4 +1,4 @@
-/** Chunk was on 51725 **/
+/** Chunk was on 98878 **/
 /** chunk id: 421032, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -19,7 +19,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk390966 = require("./390966.jsx"),
   Chunk765305 = require("./765305.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk862379 = require("./862379.js");
+  Chunk709380 = require("./709380.js");
 
 function v(e) {
   let {
@@ -32,10 +32,10 @@ function v(e) {
   if (null == I) return null;
   let {
     is_canceled: y = false
-  } = null != j ? j : {}, N = (null == j ? true : j.scheduled_start_time) != null ? new Date(null == j ? true : j.scheduled_start_time) : a, S = (0, g.DK)(I), P = y ? b.p1.CANCELED : b.p1.SCHEDULED;
-  S === n && (P = I.status);
-  let E = (null == I ? true : I.scheduled_start_time) != null ? (0, g.lh)(j, N, new Date(null == I ? true : I.scheduled_start_time)) : null,
-    Z = e => {
+  } = null != j ? j : {}, N = (null == j ? true : j.scheduled_start_time) != null ? new Date(null == j ? true : j.scheduled_start_time) : a, E = (0, g.DK)(I), S = y ? b.p1.CANCELED : b.p1.SCHEDULED;
+  E === n && (S = I.status);
+  let Z = (null == I ? true : I.scheduled_start_time) != null ? (0, g.lh)(j, N, new Date(null == I ? true : I.scheduled_start_time)) : null,
+    P = e => {
       e.stopPropagation(), null != k && (0, s.jW)(e, async () => {
         let {
           default: e
@@ -75,11 +75,11 @@ function v(e) {
     onClick: e => {
       e.stopPropagation(), y || null == x || x(n)
     },
-    onContextMenu: Z,
+    onContextMenu: P,
     "aria-label": "",
     children: [(0, i.jsx)(m.z, {
       startTime: N.toISOString(),
-      status: null != E ? E : P,
+      status: null != Z ? Z : S,
       eventType: I.entity_type,
       guildEventId: I.id,
       recurrenceId: n,
@@ -88,13 +88,13 @@ function v(e) {
       variant: "text-sm/semibold",
       color: "text-danger",
       className: f.canceledStatus,
-      children: h.intl.string(h.t.fyBVRk)
+      children: h.intl.string(h.t.fyBVRm)
     }), (0, i.jsx)(o.u, {
-      text: h.intl.string(h.t.UKOtz8),
+      text: h.intl.string(h.t["UKOtz+"]),
       position: "top",
-      "aria-label": h.intl.string(h.t.bt75u7),
+      "aria-label": h.intl.string(h.t.bt75uw),
       children: (0, i.jsx)(c.P3F, {
-        onClick: Z,
+        onClick: P,
         className: f.iconButton,
         children: (0, i.jsx)(c.xhG, {
           size: "custom",

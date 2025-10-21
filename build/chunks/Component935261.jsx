@@ -15,7 +15,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk565473 = require("./565473.js"),
   Chunk927923 = require("./927923.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk981912 = require("./981912.js");
+  Chunk971108 = require("./971108.js");
 
 function g(e) {
   let {
@@ -38,7 +38,7 @@ function m(e) {
   }), u = null != i ? i : c;
   if (null == u || !p.al.has(u)) return null;
   let m = null != n,
-    b = m ? u === p.YE.XBOX ? f.intl.string(f.t.UjA4HR) : f.intl.string(f.t.QCw1oa) : u === p.YE.XBOX ? f.intl.format(f.t["ynEs/f"], {}) : f.intl.format(f.t.TZ17Bg, {});
+    b = m ? u === p.YE.XBOX ? f.intl.string(f.t.UjA4HX) : f.intl.string(f.t.QCw1oW) : u === p.YE.XBOX ? f.intl.format(f.t["ynEs/Y"], {}) : f.intl.format(f.t.TZ17Bg, {});
   return (0, r.jsxs)("div", {
     className: l()(h.root, m ? h.connecting : h.connected),
     children: [(0, r.jsx)(g, {

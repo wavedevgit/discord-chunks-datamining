@@ -1,4 +1,4 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 5200, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Y: () => _
@@ -15,7 +15,7 @@ var i, Chunk951288 = require("./951288.js"),
   Chunk513202 = require("./513202.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk482538 = require("./482538.js");
+  Chunk748788 = require("./748788.js");
 let b = ["embedded_cover"],
   C = {
     tension: 800,
@@ -68,7 +68,7 @@ function _(e) {
             children: (0, r.jsx)(c.Text, {
               variant: "text-sm/medium",
               color: "always-white",
-              children: m.intl.string(m.t.VJlc0d)
+              children: m.intl.string(m.t.VJlc0S)
             })
           })
         });
@@ -80,7 +80,7 @@ function _(e) {
             children: (0, r.jsx)(c.Text, {
               variant: "text-sm/medium",
               color: "always-white",
-              children: m.intl.string(m.t["wH/wDA"])
+              children: m.intl.string(m.t["wH/wDO"])
             })
           })
         });

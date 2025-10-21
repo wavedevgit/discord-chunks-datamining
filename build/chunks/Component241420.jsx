@@ -15,27 +15,27 @@ var Chunk793030 = require("./793030.js"),
   Chunk526761 = require("./526761.js"),
   Chunk388032 = require("./388032.jsx");
 
-function R(i) {
+function g(i) {
   let {
     guildId: s
   } = i;
-  return (0, n.jsxs)(a.Z, {
-    children: [(0, n.jsx)(o.Z, {
+  return (0, n.jsxs)(o.Z, {
+    children: [(0, n.jsx)(l.Z, {
       ingress: u.f4.SERVER_PRIVACY_MODAL,
       guildId: s
     }), (0, n.jsx)(c.Z, {
       ingress: u.f4.SERVER_PRIVACY_MODAL,
       guildId: s
-    }), (0, n.jsx)(l.Z, {
+    }), (0, n.jsx)(d.Z, {
       ingress: u.f4.SERVER_PRIVACY_MODAL,
       guildId: s
-    }), (0, n.jsx)(d.Z, {
+    }), (0, n.jsx)(a.Z, {
       ingress: u.f4.SERVER_PRIVACY_MODAL,
       guildId: s
     }), (0, n.jsx)(r.Text, {
       color: "header-secondary",
       variant: "text-sm/normal",
-      children: g.intl.format(g.t.LNsV09, {
+      children: R.intl.format(R.t.LNsV04, {
         policyLink: "https://discord.com/safety/360043709612-our-policies"
       })
     })]
@@ -47,18 +47,18 @@ function p(i) {
     guild: s,
     transitionState: t,
     onClose: r
-  } = i, a = "".concat(g.intl.string(g.t.BayiAg), "—").concat(null != s ? s.name : "??");
+  } = i, o = "".concat(R.intl.string(R.t.BayiAo), "—").concat(null != s ? s.name : "??");
   return (0, n.jsx)(e.Modal, {
     transitionState: t,
     size: "sm",
-    title: a,
+    title: o,
     actions: [{
       onClick: () => r(),
       variant: "primary",
-      text: g.intl.string(g.t.i4jeWV)
+      text: R.intl.string(R.t.i4jeWR)
     }],
     onClose: () => Promise.resolve(r()),
-    children: (0, n.jsx)(R, {
+    children: (0, n.jsx)(g, {
       guildId: s.id
     })
   })

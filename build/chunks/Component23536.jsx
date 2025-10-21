@@ -1,4 +1,4 @@
-/** Chunk was on 63962 **/
+/** Chunk was on 91053 **/
 /** chunk id: 23536, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -25,7 +25,7 @@ function y(e) {
     onJump: y
   } = e, {
     items: _,
-    state: j
+    state: O
   } = (0, l.cj)([h.Z], () => {
     var e, n;
     let r = h.Z.getPins(t.id);
@@ -33,11 +33,11 @@ function y(e) {
       items: null != (e = null == r ? true : r.items) ? e : b,
       state: null != (n = null == r ? true : r.state) ? n : h.M.LOADING
     }
-  }), O = i.useMemo(() => _.map(e => e.message), [_]), x = (0, l.e7)([f.ZP], () => f.ZP.hasUnreadPins(t.id));
+  }), j = i.useMemo(() => _.map(e => e.message), [_]), x = (0, l.e7)([f.ZP], () => f.ZP.hasUnreadPins(t.id));
   i.useEffect(() => {
     x && o.Z.ackPins(t.id)
   }, [x, t.id]), (0, c.ZP)(() => {
-    O.some(d.k5) && o.Z.fetchPins(t.id, {
+    j.some(d.k5) && o.Z.fetchPins(t.id, {
       reset: true
     })
   });
@@ -52,17 +52,17 @@ function y(e) {
     }, [t.id, _]),
     I = (0, l.e7)([p.Z], () => (0, a.ap)(p.Z.theme));
   return (0, r.jsx)(s.VqE, {
-    "aria-label": m.intl.string(m.t["mp1N//"]),
+    "aria-label": m.intl.string(m.t["mp1N/2"]),
     children: (0, r.jsx)(g.ZP, {
       channel: t,
       onFetch: v,
-      messages: O,
-      loading: j === h.M.LOADING,
-      hasMore: j === h.M.LOADED_HAS_MORE,
+      messages: j,
+      loading: O === h.M.LOADING,
+      hasMore: O === h.M.LOADED_HAS_MORE,
       analyticsName: "Channel Pins",
       renderEmptyState: function() {
         if (_.length > 0) return;
-        let e = m.intl.string(t.isPrivate() ? m.t.rhqcbG : m.t.fmyaWF),
+        let e = m.intl.string(t.isPrivate() ? m.t.rhqcbJ : m.t.fmyaWJ),
           i = I ? n(306059) : n(281485);
         return (0, r.jsx)(g.nH, {
           msg: e,
@@ -71,7 +71,7 @@ function y(e) {
       },
       renderHeader: () => (0, r.jsx)(g.h4, {
         icon: s.qQX,
-        title: m.intl.string(m.t["mp1N//"])
+        title: m.intl.string(m.t["mp1N/2"])
       }),
       onCloseMessage: function(e, n) {
         null != e && (n.shiftKey ? o.Z.unpinMessage(t, e.id) : u.Z.confirmUnpin(t, e))
@@ -79,7 +79,7 @@ function y(e) {
       onJump: y,
       loadMore: C,
       getProTip: function() {
-        return t.isPrivate() ? m.intl.string(m.t["3dLGAg"]) : m.intl.string(m.t.KTbRcn)
+        return t.isPrivate() ? m.intl.string(m.t["3dLGAs"]) : m.intl.string(m.t.KTbRcg)
       },
       listName: "pins"
     })

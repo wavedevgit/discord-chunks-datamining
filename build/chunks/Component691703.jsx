@@ -1,4 +1,4 @@
-/** Chunk was on 84283 **/
+/** Chunk was on 69844 **/
 /** chunk id: 691703, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -62,7 +62,7 @@ function g(e) {
     children: [(0, r.jsx)(l.Heading, {
       variant: "heading-sm/semibold",
       color: "header-primary",
-      children: m.intl.string(m.t.KJEO29)
+      children: m.intl.string(m.t.KJEO27)
     }), (0, r.jsx)(u.Z, {
       guild: t.guild,
       onClick: g

@@ -14,10 +14,10 @@ let s = 5,
   a = 30;
 var c = ((r = {})[r.DISPLAY = 0] = "DISPLAY", r[r.PERMISSIONS = 1] = "PERMISSIONS", r[r.MEMBERS = 2] = "MEMBERS", r[r.VERIFICATIONS = 3] = "VERIFICATIONS", r);
 let d = {
-  afk_channel_id: () => Chunk388032.intl.string(Chunk388032.t.KuYcnZ),
-  public_updates_channel_id: () => Chunk388032.intl.string(Chunk388032.t.vAyDGR),
-  safety_alerts_channel_id: () => Chunk388032.intl.string(Chunk388032.t.sMkYEx),
-  system_channel_id: () => Chunk388032.intl.string(Chunk388032.t.NASFnp)
+  afk_channel_id: () => Chunk388032.intl.string(Chunk388032.t.KuYcnU),
+  public_updates_channel_id: () => Chunk388032.intl.string(Chunk388032.t.vAyDGU),
+  safety_alerts_channel_id: () => Chunk388032.intl.string(Chunk388032.t.sMkYE8),
+  system_channel_id: () => Chunk388032.intl.string(Chunk388032.t.NASFnq)
 };
 
 function o(e) {

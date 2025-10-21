@@ -36,14 +36,14 @@ function S(e) {
 function Z(e, t, n) {
   let l = n instanceof d.Sf;
   if ((0, s.Y3)(t) && !(l && (0, s.Y3)(n))) return {
-    label: E.intl.string(E.t.KgPx1N)
+    label: E.intl.string(E.t.KgPx1D)
   };
   if (l && (0, d.Km)(n.type)) {
     if ((e.attachments.length > 0 || e.messageSnapshots.some(e => e.message.attachments.length > 0)) && !h.Z.can(y.Plq.ATTACH_FILES, n)) return {
       label: E.intl.string(E.t.P7yvbm)
     };
     if ((e.embeds.length > 0 || e.messageSnapshots.some(e => e.message.embeds.length > 0)) && !(0, g.eC)(n, h.Z) && !(0, g.En)(e)) return {
-      label: E.intl.string(E.t.Wr4RIS)
+      label: E.intl.string(E.t.Wr4RIX)
     };
     let t = [...(0, o.cv)(e), ...e.messageSnapshots.flatMap(e => {
       let {
@@ -55,10 +55,10 @@ function Z(e, t, n) {
         let n = c.Z.getStickerById(e.id);
         return null != n && !!(0, o.J8)(n) && (n.guild_id !== t.guild_id || true)
       })(e, n))) return {
-      label: E.intl.string(E.t["0Yyrub"])
+      label: E.intl.string(E.t["0Yyrua"])
     };
     if ((e.hasFlag(y.iLy.IS_VOICE_MESSAGE) || e.messageSnapshots.some(e => e.message.hasFlag(y.iLy.IS_VOICE_MESSAGE))) && !h.Z.can(y.Plq.SEND_VOICE_MESSAGES, n)) return {
-      label: E.intl.string(E.t.quj4DQ)
+      label: E.intl.string(E.t.quj4DY)
     }
   }
 }

@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk124072 = require("./124072.jsx"),
   Chunk457926 = require("./457926.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk962272 = require("./962272.js");
+  Chunk695719 = require("./695719.js");
 
 function O(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -123,7 +123,7 @@ let S = function(e) {
             children: N
           }), (0, r.jsx)("span", {
             className: y.name,
-            children: null != (n = null == I ? true : I.name) ? n : b.intl.string(b.t["11pdXV"])
+            children: null != (n = null == I ? true : I.name) ? n : b.intl.string(b.t["11pdXZ"])
           })]
         }))
       })

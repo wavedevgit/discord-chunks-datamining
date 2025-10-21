@@ -1,4 +1,4 @@
-/** Chunk was on 63962 **/
+/** Chunk was on 91053 **/
 /** chunk id: 124823, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => w
@@ -30,8 +30,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk544989 = require("./544989.jsx"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk910455 = require("./910455.js"),
-  Chunk892068 = require("./892068.js");
+  Chunk231688 = require("./231688.js"),
+  Chunk892273 = require("./892273.js");
 
 function R(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -93,7 +93,7 @@ function w(e) {
             })
           }), (0, r.jsxs)("div", {
             className: T.header,
-            children: [(0, r.jsx)(j.Z, {
+            children: [(0, r.jsx)(O.Z, {
               user: n,
               displayProfile: D,
               themeType: Z.l.SIDEBAR,
@@ -122,14 +122,14 @@ function w(e) {
               children: [(0, r.jsx)(v.Z, {
                 heading: P.intl.string(P.t["61W33d"]),
                 headingColor: "header-primary",
-                children: (0, r.jsx)(O.Z, {
+                children: (0, r.jsx)(j.Z, {
                   userBio: null == D ? true : D.bio,
                   userId: n.id,
                   animateOnHoverOrFocusOnly: true,
                   isHoveringOrFocusing: H
                 })
               }), (0, r.jsx)(v.Z, {
-                heading: P.intl.string(P.t["A//N4u"]),
+                heading: P.intl.string(P.t["A//N4k"]),
                 headingColor: "header-primary",
                 children: (0, r.jsx)(x.Z, {
                   userId: n.id
@@ -147,7 +147,7 @@ function w(e) {
               }, U))
             },
             className: T.footerButton,
-            children: P.intl.string(P.t["+Xp3ho"])
+            children: P.intl.string(P.t["+Xp3hq"])
           })
         }), (null == D ? true : D.profileEffect) != null && (0, r.jsx)(p.Z, {
           skuId: null == D || null == (t = D.profileEffect) ? true : t.skuId,

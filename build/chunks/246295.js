@@ -12,7 +12,7 @@ function o(e) {
   let [t, n] = i.useState(false), [o, a] = i.useState(false), [s, u] = i.useState(false);
   return {
     rules: i.useMemo(() => {
-      let i = l.intl.format(l.t.S2lVJS, {
+      let i = l.intl.format(l.t.S2lVJd, {
         onCommunityGuidelinesClick: () => (0, r.lW)({
           articleId: c.BhN.PUBLIC_GUILD_GUILDLINES,
           guildId: e,
@@ -26,20 +26,20 @@ function o(e) {
       });
       return [{
         key: "healthy",
-        title: l.intl.string(l.t.jIi9go),
-        body: l.intl.string(l.t["4uUAXl"]),
+        title: l.intl.string(l.t.jIi9gq),
+        body: l.intl.string(l.t["4uUAXh"]),
         onCheck: () => n(!t),
         checked: t
       }, {
         key: "nonNSFW",
-        title: l.intl.string(l.t.iwnCh4),
-        body: l.intl.string(l.t.UKFzER),
+        title: l.intl.string(l.t["iwnCh+"]),
+        body: l.intl.string(l.t.UKFzEY),
         onCheck: () => a(!o),
         checked: o
       }, {
         key: "guidelines",
         title: i,
-        body: l.intl.string(l.t.u0Go2t),
+        body: l.intl.string(l.t.u0Go2s),
         onCheck: () => u(!s),
         checked: s
       }]

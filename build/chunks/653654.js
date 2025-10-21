@@ -2,13 +2,13 @@
 /** chunk id: 653654, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  y: () => o
+  y: () => s
 });
 var Chunk544891 = require("./544891.js"),
   Chunk343817 = require("./343817.js"),
   Chunk411700 = require("./411700.js"),
   Chunk981631 = require("./981631.js");
-let o = async e => {
+let s = async e => {
   try {
     return (await r.tn.get({
       url: a.ANM.COLLECTIBLES_SEARCH,

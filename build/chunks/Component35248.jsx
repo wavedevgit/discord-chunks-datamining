@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk236052 = require("./236052.js");
+  Chunk162925 = require("./162925.js");
 let b = 1e3,
   y = e => {
     let t, {
@@ -66,11 +66,11 @@ let b = 1e3,
       className: E.body,
       children: [(0, r.jsx)(a.Heading, {
         variant: "heading-xl/bold",
-        children: g.intl.string(g.t.C4HYf3)
+        children: g.intl.string(g.t.C4HYfy)
       }), (0, r.jsx)(a.Text, {
         variant: "text-md/normal",
         className: E.description,
-        children: g.intl.string(g.t.xfG7Ji)
+        children: g.intl.string(g.t.xfG7Jp)
       })]
     })
   },
@@ -86,7 +86,7 @@ let b = 1e3,
         "data-migration-pending": true,
         children: [(0, r.jsx)(c.y, {
           onClick: t,
-          children: g.intl.string(g.t["4Qvmmp"])
+          children: g.intl.string(g.t["4Qvmmj"])
         }), (0, r.jsx)(c.Z, {
           onClick: n
         })]

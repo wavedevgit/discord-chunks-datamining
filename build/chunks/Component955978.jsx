@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk620954 = require("./620954.js"),
   Chunk987650 = require("./987650.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk64102 = require("./64102.js");
+  Chunk439419 = require("./439419.js");
 
 function O(e, t, n) {
   var O;
@@ -45,7 +45,7 @@ function O(e, t, n) {
           variant: "text-sm/medium",
           color: "interactive-normal",
           className: y.bodyText,
-          children: g.intl.format(g.t["q7/rgo"], {
+          children: g.intl.format(g.t["q7/rgv"], {
             username: null != I ? I : E.username,
             gameName: j,
             gameIcon: () => null != b || null != x ? (0, i.jsx)(s.Z, {

@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk267642 = require("./267642.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk52779 = require("./52779.js");
+  Chunk30408 = require("./30408.js");
 
 function b(e) {
   let {
@@ -27,8 +27,8 @@ function b(e) {
     query: n
   } = e;
   return (0, r.jsx)(c.E1j, {
-    placeholder: g.intl.string(g.t.vf3ZTU),
-    "aria-label": g.intl.string(g.t.vf3ZTU),
+    placeholder: g.intl.string(g.t.vf3ZTa),
+    "aria-label": g.intl.string(g.t.vf3ZTa),
     query: n,
     onChange: t,
     onClear: () => t("")
@@ -61,7 +61,7 @@ function y(e) {
             tag: "a",
             children: e
           }, t)
-        }) : g.intl.string(g.t.w3GLl5)
+        }) : g.intl.string(g.t.w3GLl9)
       })
     }), y.map(e => (0, r.jsxs)(c.P3F, {
       className: E.selectGuild,
@@ -88,7 +88,7 @@ function y(e) {
         className: E.selectGuildPseudoCta,
         color: "always-white",
         variant: "text-sm/medium",
-        children: t ? g.intl.string(g.t.dUgaFx) : g.intl.string(g.t.Uj0md3)
+        children: t ? g.intl.string(g.t.dUgaF8) : g.intl.string(g.t.Uj0md3)
       })]
     }, e.id))]
   })
@@ -103,7 +103,7 @@ function O(e) {
     selectedSlotGuilds: l
   } = e, [c, u] = i.useState(""), d = async () => {
     await t()
-  }, f = o ? g.intl.string(g.t.IB13DQ) : g.intl.string(g.t.cQYceX);
+  }, f = o ? g.intl.string(g.t.IB13DV) : g.intl.string(g.t.cQYceV);
   return (0, r.jsx)(s.Modal, {
     transitionState: a,
     onClose: d,

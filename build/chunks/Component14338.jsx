@@ -1,7 +1,7 @@
-/** Chunk was on 63962 **/
+/** Chunk was on 91053 **/
 /** chunk id: 14338, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => j
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk670188 = require("./670188.jsx"),
   Chunk237583 = require("./237583.jsx"),
   Chunk768581 = require("./768581.js"),
-  Chunk343238 = require("./343238.js");
+  Chunk374379 = require("./374379.js");
 
 function y(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -51,13 +51,13 @@ function _(e, t) {
   }), e
 }
 
-function j(e) {
+function O(e) {
   let {
     channel: t,
     speaker: l,
     className: g
-  } = e, j = i.useRef(null), {
-    newestAnalyticsLocation: O
+  } = e, O = i.useRef(null), {
+    newestAnalyticsLocation: j
   } = (0, u.ZP)(), x = (0, h.bp)(), {
     reducedMotion: v
   } = i.useContext(o.Sfi), C = (0, d.Z)({
@@ -66,7 +66,7 @@ function j(e) {
     (0, c.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("19848")]).then(n.bind(n, 757387));
+      } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("52021")]).then(n.bind(n, 757387));
       return n => (0, r.jsx)(e, _(y({}, n), {
         user: l.user,
         guildId: t.guild_id,
@@ -74,24 +74,24 @@ function j(e) {
         showMediaItems: true,
         showStageChannelItems: true,
         showChatItems: false,
-        onInteraction: (0, p.u)("GuildChannelUserContextMenu", O)
+        onInteraction: (0, p.u)("GuildChannelUserContextMenu", j)
       }))
     }, {
       context: x
     })
   };
   return (0, r.jsx)(f.Z, {
-    targetElementRef: j,
+    targetElementRef: O,
     user: l.user,
     guildId: t.guild_id,
     channelId: t.id,
     clickTrap: true,
     children: e => (0, r.jsx)(s.u, {
-      targetElementRef: j,
+      targetElementRef: O,
       __unsupportedReactNodeAsText: l.userNick,
       position: "bottom",
       children: (0, r.jsx)(o.P3F, _(y({}, e), {
-        innerRef: j,
+        innerRef: O,
         onClick: t => {
           t.stopPropagation(), e.onClick(t)
         },
@@ -108,7 +108,7 @@ function j(e) {
   })
 }
 
-function O(e) {
+function j(e) {
   let {
     speakers: t,
     channel: n
@@ -118,7 +118,7 @@ function O(e) {
     guildId: n.guild_id,
     users: t,
     max: 10,
-    renderUser: (e, t, i) => (0, r.jsx)(j, {
+    renderUser: (e, t, i) => (0, r.jsx)(O, {
       channel: n,
       speaker: e,
       className: t

@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 833695, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -41,7 +41,7 @@ function v(e) {
     children: [(0, r.jsx)(c.Z, {
       revenue: v.metrics.revenue,
       revenueTrend: v.metrics.revenuePctChange,
-      summaryMetricLabel: x.intl.string(x.t.R3PCmZ),
+      summaryMetricLabel: x.intl.string(x.t.R3PCmW),
       summaryMetricValue: null != (n = v.metrics.paymentsCount) ? n : "-",
       summaryMetricTrend: null != (s = v.metrics.paymentsCountChange) ? s : 0,
       summaryMetricTrendIsPercent: false,
@@ -50,21 +50,21 @@ function v(e) {
         earningsData: v
       })
     }), (0, r.jsx)(l.gNt, {
-      label: x.intl.string(x.t["+5Rmho"]),
+      label: x.intl.string(x.t["+5Rmhl"]),
       children: (0, r.jsx)(o.Z, {
         ListingIdLabel: j,
         payoutsByPeriod: v.payoutsByPeriod,
         team: null == (t = v.application) ? true : t.team
       })
     }), (0, r.jsx)(l.gNt, {
-      label: x.intl.string(x.t.O8cDAA),
+      label: x.intl.string(x.t.O8cDAJ),
       disabled: _,
       children: (0, r.jsx)(g.Z, {
         guildId: f,
         application: v.application
       })
     }), (0, r.jsx)(l.gNt, {
-      label: x.intl.string(x.t["0n7R2d"]),
+      label: x.intl.string(x.t["0n7R2X"]),
       children: (0, r.jsx)(m.Z, {
         guildId: f,
         allPeriods: v.payoutsByPeriod

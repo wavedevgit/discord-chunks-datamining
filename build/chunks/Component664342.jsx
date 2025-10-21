@@ -1,4 +1,4 @@
-/** Chunk was on 63962 **/
+/** Chunk was on 91053 **/
 /** chunk id: 664342, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => R
@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk192127 = require("./192127.jsx"),
   Chunk13736 = require("./13736.jsx"),
   Chunk732393 = require("./732393.jsx"),
-  Chunk71991 = require("./71991.jsx"),
+  Chunk214906 = require("./214906.jsx"),
   Chunk612856 = require("./612856.jsx"),
   Chunk137591 = require("./137591.jsx"),
   Chunk299206 = require("./299206.jsx"),
@@ -69,7 +69,7 @@ function T(e) {
   function o() {
     a(e => !e)
   }
-  let c = E.intl.string(E.t.UKOtz8);
+  let c = E.intl.string(E.t["UKOtz+"]);
   return (0, r.jsx)(l.yRy, {
     targetElementRef: s,
     shouldShow: n,
@@ -87,7 +87,7 @@ function T(e) {
       let {
         isShown: n
       } = t;
-      return (0, r.jsx)(j.ZP.Icon, P(Z({}, e), {
+      return (0, r.jsx)(O.ZP.Icon, P(Z({}, e), {
         ref: s,
         onClick: o,
         tooltip: n ? null : c,
@@ -104,33 +104,33 @@ function N(e) {
     channel: t,
     closePopout: n,
     onSelect: i
-  } = e, _ = (0, c.Z)(t, "Sidebar Overflow"), j = (0, u.Z)(t), v = (0, g.Z)(t), C = (0, m.Z)(t), I = (0, a.Z)(t), Z = (0, d.Z)(t), P = (0, f.Z)(t.id), T = (0, h.Z)(t), N = (0, o.Z)(t), R = (0, s.Z)(t), w = (0, y.Z)({
+  } = e, _ = (0, c.Z)(t, "Sidebar Overflow"), O = (0, u.Z)(t), v = (0, g.Z)(t), C = (0, m.Z)(t), I = (0, a.Z)(t), Z = (0, d.Z)(t), P = (0, f.Z)(t.id), T = (0, h.Z)(t), N = (0, o.Z)(t), R = (0, s.Z)(t), w = (0, y.Z)({
     id: t.id,
-    label: E.intl.string(E.t.DQ797u)
+    label: E.intl.string(E.t.DQ797g)
   }), A = (0, b.Z)(t), D = (0, p.Z)(t);
 
   function L() {
-    (0, O.Kh)(t.id)
+    (0, j.Kh)(t.id)
   }
   return (0, r.jsxs)(l.v2r, {
     navId: "thread-context",
     onClose: n,
-    "aria-label": E.intl.string(E.t["1NBjqa"]),
+    "aria-label": E.intl.string(E.t["1NBjqb"]),
     onSelect: i,
     children: [(0, r.jsxs)(l.kSQ, {
       children: [_, (0, r.jsx)(l.sNh, {
         id: "open",
-        label: E.intl.string(E.t.IxVmZm),
+        label: E.intl.string(E.t.IxVmZi),
         action: L
       })]
     }), (0, r.jsxs)(l.kSQ, {
       children: [v, C]
     }), (0, r.jsxs)(l.kSQ, {
-      children: [T, j, P, D]
+      children: [T, O, P, D]
     }), (0, r.jsxs)(l.kSQ, {
       children: [(0, r.jsx)(l.sNh, {
         id: "search",
-        label: E.intl.string(E.t["5h0QOD"]),
+        label: E.intl.string(E.t["5h0QOP"]),
         icon: l.rgF,
         action: function() {
           L(), setTimeout(() => {
@@ -141,7 +141,7 @@ function N(e) {
         }
       }), (0, r.jsx)(l.sNh, {
         id: "pins",
-        label: E.intl.string(E.t["2BSH7u"]),
+        label: E.intl.string(E.t["2BSH7n"]),
         icon: l.rgF,
         action: function() {
           L(), x.S.dispatch(S.CkL.TOGGLE_CHANNEL_PINS)
@@ -167,9 +167,9 @@ function R(e) {
       channel: t
     }) : null, (0, r.jsx)(T, {
       channel: t
-    }), (0, r.jsx)(j.ZP.Icon, {
+    }), (0, r.jsx)(O.ZP.Icon, {
       icon: l.Dio,
-      tooltip: E.intl.string(E.t.cpT0Cg),
+      tooltip: E.intl.string(E.t.cpT0Cq),
       onClick: () => (0, I.vN)((0, _.e)(t), null != n ? n : t.parent_id)
     })]
   })

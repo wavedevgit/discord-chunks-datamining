@@ -32,7 +32,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk419953 = require("./419953.js");
+  Chunk85468 = require("./85468.js");
 
 function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -180,25 +180,25 @@ function j(e) {
     em = (() => {
       if (Q && !q) return {
         headerText: P.intl.string(P.t.gHerLS),
-        ctaText: P.intl.string(P.t.cfY4PD),
+        ctaText: P.intl.string(P.t.cfY4PE),
         handleClickCta: z,
         tileAssetType: "reward"
       };
       if (X && !q) return {
-        headerText: P.intl.string(P.t.uH2sf3),
-        ctaText: P.intl.string(P.t.VN1Ajo),
+        headerText: P.intl.string(P.t.uH2sf2),
+        ctaText: P.intl.string(P.t.VN1Ajl),
         handleClickCta: ef,
         tileAssetType: "reward"
       };
       if ((0, b.Rc)(Z, K)) return {
-        headerText: P.intl.string(P.t.Bz6SkJ),
-        ctaText: P.intl.string(P.t.BXFP39),
+        headerText: P.intl.string(P.t.Bz6SkH),
+        ctaText: P.intl.string(P.t.BXFP30),
         handleClickCta: ep,
         tileAssetType: "game"
       };
-      let e = (0, b.Rt)(G) ? eh : P.intl.string(P.t.BSXPZ2);
+      let e = (0, b.Rt)(G) ? eh : P.intl.string(P.t["BSXPZ+"]);
       return {
-        headerText: (0, b.Rt)(G) && (0, b.pO)(G) && !G.config.features.includes(C.S7.CLOUD_GAMING_ACTIVITY) ? e : P.intl.string(P.t.Bz6SkJ),
+        headerText: (0, b.Rt)(G) && (0, b.pO)(G) && !G.config.features.includes(C.S7.CLOUD_GAMING_ACTIVITY) ? e : P.intl.string(P.t.Bz6SkH),
         ctaText: e,
         handleClickCta: ef,
         tileAssetType: "game"
@@ -240,7 +240,7 @@ function j(e) {
               variant: "text-xs/medium",
               color: "text-muted",
               className: w.helpText,
-              children: P.intl.format(P.t["Lm8/mJ"], {
+              children: P.intl.format(P.t["Lm8/mH"], {
                 gamePublisher: G.config.messages.gamePublisher
               })
             }), (0, r.jsx)(u.idN, {
@@ -259,7 +259,7 @@ function j(e) {
               style: e,
               className: w.imgUnderlay
             })), "game" === em.tileAssetType && (0, r.jsx)("img", {
-              alt: P.intl.formatToPlainString(P.t.IskzPj, {
+              alt: P.intl.formatToPlainString(P.t.IskzPg, {
                 gameTitle: G.config.messages.gameTitle,
                 gamePublisher: G.config.messages.gamePublisher
               }),

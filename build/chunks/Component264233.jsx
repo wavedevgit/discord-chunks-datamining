@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 264233, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   S: () => _,
@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk240126 = require("./240126.jsx"),
   Chunk326838 = require("./326838.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk767117 = require("./767117.js");
+  Chunk201848 = require("./201848.js");
 
 function g() {
   let e = (0, Chunk442837.Wu)([Chunk317632.Z], () => Chunk317632.Z.getInvites()),
@@ -27,25 +27,25 @@ function g() {
   return (Chunk647438.useEffect(() => {
     (0, Chunk174767.sJ)()
   }), 0 === module.length) ? (0, Chunk951288.jsx)("div", {
-    className: Chunk767117.__invalid_emptyStateContainer,
+    className: Chunk201848.__invalid_emptyStateContainer,
     children: (0, Chunk951288.jsx)(Chunk240126.Z, {
       Icon: Chunk481060.iWm,
-      header: Chunk388032.intl.string(Chunk388032.t.PbSPWV),
-      tip: Chunk388032.intl.string(Chunk388032.t.BxNbS0)
+      header: Chunk388032.intl.string(Chunk388032.t.PbSPWc),
+      tip: Chunk388032.intl.string(Chunk388032.t.BxNbSz)
     })
   }) : (0, Chunk951288.jsx)(Chunk481060.h21, {
     children: (0, Chunk951288.jsxs)("div", {
-      className: Chunk767117.invitesContainer,
+      className: Chunk201848.invitesContainer,
       children: [require.length > 0 && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
         children: [(0, Chunk951288.jsx)(m, {
-          title: Chunk388032.intl.string(Chunk388032.t.yflAJS)
+          title: Chunk388032.intl.string(Chunk388032.t.yflAJV)
         }), require.map(e => (0, r.jsx)(p.Z, {
           invite: e,
           expired: false
         }, e.invite_id))]
       }), Chunk392711.length > 0 && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
         children: [(0, Chunk951288.jsx)(m, {
-          title: Chunk388032.intl.string(Chunk388032.t.f0Ia4e)
+          title: Chunk388032.intl.string(Chunk388032.t.f0Ia4V)
         }), Chunk392711.map(e => (0, r.jsx)(p.Z, {
           invite: e,
           expired: true
@@ -116,7 +116,7 @@ function b() {
 
 function _() {
   return 0 === (0, Chunk442837.Wu)([Chunk317632.Z], () => Chunk317632.Z.getInvites()).length ? null : (0, Chunk951288.jsx)(Chunk481060.M0o, {
-    tooltip: Chunk388032.intl.string(Chunk388032.t.Zy3MR0),
+    tooltip: Chunk388032.intl.string(Chunk388032.t["Zy3MR/"]),
     color: Chunk481060.YX$.SECONDARY,
     icon: (0, Chunk951288.jsx)(Chunk481060.XHJ, {
       size: "xs"

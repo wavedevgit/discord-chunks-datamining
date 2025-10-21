@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk569984 = require("./569984.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk325910 = require("./325910.js"),
+  Chunk741463 = require("./741463.js"),
   Chunk677486 = require("./677486.js");
 
 function b(e, t, n) {
@@ -141,11 +141,11 @@ function S(e) {
             className: g.asset
           }), (0, r.jsx)(l.Heading, {
             variant: "heading-lg/semibold",
-            children: m.intl.string(m.t.KTjjrK)
+            children: m.intl.string(m.t.KTjjrG)
           }), (0, r.jsx)(l.Text, {
             variant: "text-md/normal",
             color: "text-muted",
-            children: m.intl.string(m.t.AvbrEB)
+            children: m.intl.string(m.t.AvbrEM)
           })]
         }), (0, r.jsx)(l.mzw, {
           "data-migration-pending": true,
@@ -153,7 +153,7 @@ function S(e) {
             className: g.closeButtonContainer,
             children: [(0, r.jsx)(l.Button, {
               variant: "primary",
-              text: m.intl.string(m.t.cpT0Cg),
+              text: m.intl.string(m.t.cpT0Cq),
               onClick: o
             }), (0, r.jsx)(s.animated.div, {
               className: g.progressOverlay,

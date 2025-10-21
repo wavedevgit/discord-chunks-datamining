@@ -1,4 +1,4 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 673539, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -15,7 +15,7 @@ function c(e) {
   let t = (0, r.e7)([a.Z], () => a.Z.getToastsEnabled(e));
   return (0, i.jsx)(l.S89, {
     id: "show-call-chat-toasts",
-    label: s.intl.string(s.t["5NL5vb"]),
+    label: s.intl.string(s.t["5NL5vT"]),
     checked: t,
     action: () => o.Z.setCallChatToastsEnabled(e, !t)
   })

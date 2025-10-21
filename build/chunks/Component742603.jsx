@@ -1,4 +1,4 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 742603, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => F
@@ -39,8 +39,8 @@ var Chunk120356 = require("./120356.js"),
   Chunk981631 = require("./981631.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk16517 = require("./16517.js"),
-  Chunk602009 = require("./602009.js");
+  Chunk39219 = require("./39219.js"),
+  Chunk430864 = require("./430864.js");
 
 function B(e) {
   let {
@@ -145,14 +145,14 @@ function F(e) {
   } = (0, a.cj)([I.Z], () => ({
     focusedParticipant: I.Z.getSelectedParticipant(t.id),
     participantsOpen: I.Z.getParticipantsOpen(t.id)
-  }), [t.id]), C = (0, h.ZP)(t), x = (0, f.KS)(t), [S] = (0, d.Z)((null == b ? true : b.type) === M.fO.ACTIVITY ? [b.applicationId] : []), P = D.intl.string(D.t.BVZqJi);
-  t.isDM() ? P = D.intl.string(D.t.jN2DfX) : t.isGroupDM() && (P = D.intl.string(D.t["e5y+go"]));
+  }), [t.id]), C = (0, h.ZP)(t), x = (0, f.KS)(t), [S] = (0, d.Z)((null == b ? true : b.type) === M.fO.ACTIVITY ? [b.applicationId] : []), P = D.intl.string(D.t.BVZqJl);
+  t.isDM() ? P = D.intl.string(D.t.jN2DfZ) : t.isGroupDM() && (P = D.intl.string(D.t["e5y+gm"]));
   let T = (0, a.e7)([p.Z], () => p.Z.getChannelStatus(t)),
     A = t.isGuildVoice() && u && null != T && T.length > 0,
     R = (0, Z.ZP)(t),
     B = A ? (0, i.jsx)(o.u, {
       asContainer: true,
-      text: D.intl.string(D.t.Mgpxi4),
+      text: D.intl.string(D.t.Mgpxiw),
       delay: 500,
       position: "bottom",
       shouldShow: R,
@@ -234,10 +234,10 @@ function F(e) {
               icon: x,
               "aria-label": P
             }) : null, C, H && (0, i.jsx)(o.u, {
-              text: D.intl.string(D.t.QyZ4TU),
+              text: D.intl.string(D.t.QyZ4Td),
               children: (0, i.jsx)(s.tQf, {
                 size: "xs",
-                "aria-label": D.intl.string(D.t.VHXh8f),
+                "aria-label": D.intl.string(D.t.VHXh8a),
                 color: s.TVs.colors.INTERACTIVE_NORMAL,
                 className: k.secureFramesIcon
               })

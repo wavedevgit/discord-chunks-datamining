@@ -133,7 +133,7 @@ $(ef, "displayName", "NotificationStore"), new ef(Chunk570140.Z, __OVERLAY__ ? {
     } = e;
     if (t === z.$Ab.ENABLED && !K.isPlatformEmbedded) {
       let e = !(0, m.QU)("NotificationStore.handleSetHavePermission");
-      Y.Z.showNotification(n(910653), J.intl.string(J.t.VSgOVl), J.intl.string(J.t["1UJvqa"]), {
+      Y.Z.showNotification(n(910653), J.intl.string(J.t.VSgOVg), J.intl.string(J.t["1UJvqc"]), {
         notif_type: "NOTIFICATIONS_SET_PERMISSION_STATE"
       }, {
         omitViewTracking: e,
@@ -245,8 +245,8 @@ $(ef, "displayName", "NotificationStore"), new ef(Chunk570140.Z, __OVERLAY__ ? {
       let l = Q.ZP.getName(e),
         i = n.name,
         r = e.getAvatarURL(true, 128),
-        a = J.intl.string(J.t.XoTWsL),
-        o = J.intl.formatToPlainString(J.t.o4Aipq, {
+        a = J.intl.string(J.t.XoTWsI),
+        o = J.intl.formatToPlainString(J.t.o4Aipn, {
           username: l,
           gameName: i
         });
@@ -287,7 +287,7 @@ $(ef, "displayName", "NotificationStore"), new ef(Chunk570140.Z, __OVERLAY__ ? {
     let s = R.Z.getGuild(r),
       u = j.Z.getChannel(i),
       c = x.Z.getStageInstanceByChannel(i);
-    null != s && null != u && null != c && Y.Z.showNotification((0, A.EB)(s, 128), u.name, J.intl.formatToPlainString(J.t.sqnsSE, {
+    null != s && null != u && null != c && Y.Z.showNotification((0, Z.EB)(s, 128), u.name, J.intl.formatToPlainString(J.t.sqnsSP, {
       channelName: (0, p.F6)(u, F.default, M.Z),
       channelTopic: null == c ? true : c.topic
     }), {
@@ -306,9 +306,9 @@ $(ef, "displayName", "NotificationStore"), new ef(Chunk570140.Z, __OVERLAY__ ? {
       r = j.Z.getChannel(t.channel_id),
       a = F.default.getUser(t.host_id);
     if (null == n || null == r || null == l || null == a || !(0, T.LL)(n, a, r) || !k.Z.can(i.$e(z.Plq.CONNECT, z.Plq.VIEW_CHANNEL), r) || eo.has(t.id)) returnfalse;
-    eo.add(t.id), Y.Z.showNotification((0, A.EB)(l, 128), J.intl.formatToPlainString(J.t.bZ4OkZ, {
+    eo.add(t.id), Y.Z.showNotification((0, Z.EB)(l, 128), J.intl.formatToPlainString(J.t.bZ4Okd, {
       guildName: l.name
-    }), J.intl.formatToPlainString(J.t.qTelnJ, {
+    }), J.intl.formatToPlainString(J.t.qTelnO, {
       username: H.ZP.getName(l.id, r.id, a),
       topic: t.topic
     }), {
@@ -341,9 +341,9 @@ $(ef, "displayName", "NotificationStore"), new ef(Chunk570140.Z, __OVERLAY__ ? {
         l = R.Z.getGuild(e.guild_id),
         r = j.Z.getChannel(e.channel_id),
         a = F.default.getUser(e.host_id);
-      if (null != n && null != r && null != l && null != a && k.Z.can(i.$e(z.Plq.CONNECT, z.Plq.VIEW_CHANNEL), r)) Y.Z.showNotification((0, A.EB)(l, 128), J.intl.formatToPlainString(J.t.bOu6Wl, {
+      if (null != n && null != r && null != l && null != a && k.Z.can(i.$e(z.Plq.CONNECT, z.Plq.VIEW_CHANNEL), r)) Y.Z.showNotification((0, Z.EB)(l, 128), J.intl.formatToPlainString(J.t.bOu6Wn, {
         guildName: l.name
-      }), J.intl.formatToPlainString(J.t.GV9L8v, {
+      }), J.intl.formatToPlainString(J.t.GV9L8u, {
         topic: e.name,
         username: H.ZP.getName(l.id, r.id, a)
       }), {
@@ -360,9 +360,9 @@ $(ef, "displayName", "NotificationStore"), new ef(Chunk570140.Z, __OVERLAY__ ? {
       if (ec()) return;
       let t = F.default.getCurrentUser(),
         n = R.Z.getGuild(e.guild_id);
-      if (null != t && null != n) Y.Z.showNotification((0, A.EB)(n, 128), J.intl.formatToPlainString(J.t.bOu6Wl, {
+      if (null != t && null != n) Y.Z.showNotification((0, Z.EB)(n, 128), J.intl.formatToPlainString(J.t.bOu6Wn, {
         guildName: n.name
-      }), J.intl.formatToPlainString(J.t.mYyaRE, {
+      }), J.intl.formatToPlainString(J.t.mYyaRB, {
         topic: e.name
       }), {
         notif_type: "GUILD_SCHEDULED_EVENT_UPDATE",
@@ -397,7 +397,7 @@ $(ef, "displayName", "NotificationStore"), new ef(Chunk570140.Z, __OVERLAY__ ? {
         channelName: i.name,
         guildName: o.name
       }),
-      u = J.intl.formatToPlainString(J.t.jPhTvb, {
+      u = J.intl.formatToPlainString(J.t.jPhTvT, {
         channelName: n.name,
         userUsername: null != (t = null == r ? true : r.nick) ? t : null == a ? true : a.username
       }),
@@ -470,7 +470,7 @@ $(ef, "displayName", "NotificationStore"), new ef(Chunk570140.Z, __OVERLAY__ ? {
       t = (0, Chunk358085.isLinux)();
     if (!(!Chunk433517.K.get(ei, false) && Chunk358085.isPlatformEmbedded && (module || exports))) returnfalse;
     let l = false;
-    return null != ea && (l = es.includes(ea)), !!l && (Chunk654769.Z.showNotification(require("./95045.js"), Chunk388032.intl.string(Chunk388032.t.VSgOVl), Chunk388032.intl.string(Chunk388032.t["+J/F6+"]), {
+    return null != ea && (l = es.includes(ea)), !!l && (Chunk654769.Z.showNotification(require("./95045.js"), Chunk388032.intl.string(Chunk388032.t.VSgOVg), Chunk388032.intl.string(Chunk388032.t["+J/F66"]), {
       notif_type: "WINDOW_HIDDEN"
     }, {
       overrideStreamerMode: true,
@@ -506,7 +506,7 @@ $(ef, "displayName", "NotificationStore"), new ef(Chunk570140.Z, __OVERLAY__ ? {
       icon: i,
       body: r
     } = (0, T.Xi)(l, n, n.author);
-    Y.Z.showNotification(i, J.intl.string(J.t.IjZJBw), r, {
+    Y.Z.showNotification(i, J.intl.string(J.t.IjZJB5), r, {
       notif_type: "MESSAGE_REMINDER_DUE"
     }, {
       onClick() {

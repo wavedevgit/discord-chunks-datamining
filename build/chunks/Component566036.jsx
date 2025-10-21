@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 566036, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk383124 = require("./383124.jsx"),
   Chunk795691 = require("./795691.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk605348 = require("./605348.js");
+  Chunk448369 = require("./448369.js");
 let p = () => null;
 
 function f(e) {
@@ -32,7 +32,7 @@ function f(e) {
     wrapperClassName: m.selectWrapper,
     options: l,
     value: t,
-    placeholder: g.intl.string(g.t.JTLolJ),
+    placeholder: g.intl.string(g.t.JTLolO),
     onChange: n,
     isDisabled: 20 === t.length || i,
     matchSorterOptions: a,
@@ -76,8 +76,8 @@ function x(e) {
     })
   }, [o, d]), x = i.useRef(d), j = i.useMemo(() => (a().isEqual(new Set(d), new Set(x.current)) || (x.current = [...d]), x.current), [d]);
   return (0, r.jsxs)(s.C3N, {
-    label: g.intl.string(g.t.BR68vL),
-    description: g.intl.string(g.t.MobxiI),
+    label: g.intl.string(g.t.BR68vK),
+    description: g.intl.string(g.t.MobxiB),
     children: [(0, r.jsx)(f, {
       gameApplicationIds: d,
       handleChange: m,

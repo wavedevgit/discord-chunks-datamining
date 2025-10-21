@@ -12,7 +12,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk830352 = require("./830352.js"),
+  Chunk454703 = require("./454703.js"),
   Chunk932478 = require("./932478.js");
 let f = e => {
   let t = (0, r.jsx)(i.M2$, {
@@ -23,7 +23,7 @@ let f = e => {
     guild: e.guild,
     onDismissed: () => e.markAsDismissed(c.L.UNKNOWN),
     onClick: () => (0, a.$Z)("CHANNEL_NOTICE"),
-    message: u.intl.string(u.t.Qhk8cn),
+    message: u.intl.string(u.t.Qhk8cs),
     cta: t,
     trackingSource: s.PsQ.QUICK_SWITCHER_NOTICE,
     type: s.vID.QUICKSWITCHER,

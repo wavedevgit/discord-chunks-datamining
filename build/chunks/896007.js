@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 896007, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -71,17 +71,17 @@ function f(e) {
   }), t), N = [];
   N.push({
     section: m,
-    label: "" !== c.name ? c.name : u.intl.string(u.t["154/bG"])
+    label: "" !== c.name ? c.name : u.intl.string(u.t["154/bL"])
   }), N.push(g(d.pNK.PROFILE, E)), N.push(g(d.pNK.TAG, E)), N.push(g(d.pNK.ENGAGEMENT, E)), N.push(g(d.pNK.BOOST_PERKS, E)), O && (N.push({
     section: p
   }), N.push({
     section: m,
-    label: u.intl.string(u.t.m6lkGx)
+    label: u.intl.string(u.t.m6lkGy)
   }), N.push(g(d.pNK.EMOJI, E)), N.push(g(d.pNK.STICKERS, E)), N.push(g(d.pNK.SOUNDBOARD, E))), (f || b || j || C) && (N.push({
     section: p
   }), N.push({
     section: m,
-    label: u.intl.string(u.t.bMAKMD)
+    label: u.intl.string(u.t.bMAKMK)
   }), N.push(g(d.pNK.MEMBERS, E)), N.push(g(d.pNK.ROLES, E)), N.push(g(d.pNK.INVITES, E)), N.push(g(d.pNK.ACCESS, E))), N.push({
     section: p
   }), N.push({
@@ -93,7 +93,7 @@ function f(e) {
     section: p
   }), N.push({
     section: m,
-    label: u.intl.string(u.t["5tbTdX"])
+    label: u.intl.string(u.t["5tbTdV"])
   }), N.push(g(d.pNK.SAFETY, E)), N.push(g(d.pNK.MODERATION, E)), N.push(g(d.pNK.AUDIT_LOG, E)), N.push(g(d.pNK.BANS, E)), N.push(g(d.pNK.GUILD_AUTOMOD, E)));
   let S = c.features.has(d.GuildFeatures.COMMUNITY) && v,
     T = y();

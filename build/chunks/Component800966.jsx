@@ -1,4 +1,4 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 800966, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   h: () => C
@@ -15,7 +15,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk738672 = require("./738672.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk517485 = require("./517485.js");
+  Chunk916796 = require("./916796.js");
 
 function m() {
   return (m = Object.assign || function(e) {
@@ -67,7 +67,7 @@ function b(e) {
     }), (0, i.jsx)(o.zx, {
       "data-migration-pending": true,
       className: f.closeButton,
-      "aria-label": h.intl.string(h.t.cpT0Cg),
+      "aria-label": h.intl.string(h.t.cpT0Cq),
       look: o.zx.Looks.BLANK,
       size: o.zx.Sizes.NONE,
       onClick: () => {
@@ -85,7 +85,7 @@ function b(e) {
         children: [(0, i.jsx)(s.Text, {
           className: f.infoText,
           variant: "text-sm/medium",
-          children: h.intl.format(h.t.ruvD7u, {})
+          children: h.intl.format(h.t.ruvD7i, {})
         }), (0, i.jsxs)("div", {
           className: f.poweredByNitroContainer,
           children: [(0, i.jsx)(s.SrA, {
@@ -93,7 +93,7 @@ function b(e) {
           }), (0, i.jsx)(s.Text, {
             className: f.infoText,
             variant: "text-sm/medium",
-            children: h.intl.string(h.t["BMw+7O"])
+            children: h.intl.string(h.t["BMw+7I"])
           })]
         })]
       })

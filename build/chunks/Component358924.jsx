@@ -59,7 +59,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk599706 = require("./599706.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk544284 = require("./544284.js");
+  Chunk84822 = require("./84822.js");
 let eo = [14, 14, 12, 12, 10, 8, 6],
   es = function(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null;
@@ -122,12 +122,12 @@ let eo = [14, 14, 12, 12, 10, 8, 6],
         location_stack: n
       }
     }), (0, i.jsx)(p.u, {
-      text: el.intl.string(el.t.JVwWvb),
+      text: el.intl.string(el.t.JVwWva),
       children: (0, i.jsx)(f.Button, {
         size: "sm",
         variant: "primary",
         icon: f.v3n,
-        text: el.intl.string(el.t.YsIsPT),
+        text: el.intl.string(el.t.YsIsPU),
         onClick: t
       })
     })
@@ -209,7 +209,7 @@ let eo = [14, 14, 12, 12, 10, 8, 6],
             color: w.Z.BG_BRAND
           }), (0, i.jsx)(f.Text, {
             variant: "text-xs/medium",
-            children: el.intl.formatToPlainString(el.t.RmiYFx, {
+            children: el.intl.formatToPlainString(el.t.RmiYF3, {
               gameName: l
             })
           })]
@@ -456,7 +456,7 @@ eO.Header = eE, eO.Body = e => {
         src: t,
         className: ea.gameSectionIcon
       }) : null, (0, i.jsxs)("div", {
-        children: [es(n), ec(el.intl.formatToPlainString(el.t.C4WXvb, {
+        children: [es(n), ec(el.intl.formatToPlainString(el.t.C4WXvc, {
           memberCount: r.totalSize
         }))]
       }), (0, i.jsx)(er.Z, {
@@ -552,7 +552,7 @@ eO.Header = eE, eO.Body = e => {
         className: ea.xboxSectionIcon
       }), (0, i.jsxs)("div", {
         className: ea.__invalid_xboxSectionDetails,
-        children: [es(t), ec(el.intl.string(el.t["JG9r+/"]))]
+        children: [es(t), ec(el.intl.string(el.t["JG9r+9"]))]
       })]
     })
   })
@@ -668,7 +668,7 @@ eO.Header = eE, eO.Body = e => {
       color: "always-white",
       children: (0, U.P9)(p)
     })]
-  }), g = null != (n = null == (t = (0, C.Z)(r, a)) ? true : t.activityText) ? n : el.intl.string(el.t.eXan7O);
+  }), g = null != (n = null == (t = (0, C.Z)(r, a)) ? true : t.activityText) ? n : el.intl.string(el.t.eXan7B);
   return (0, i.jsxs)(ed, {
     children: [(0, i.jsxs)("div", {
       className: ea.applicationStreamingSection,
@@ -749,7 +749,7 @@ eO.Header = eE, eO.Body = e => {
           children: (0, i.jsx)(f.Button, {
             variant: "primary",
             size: "sm",
-            text: el.intl.string(el.t.VJlc0d),
+            text: el.intl.string(el.t.VJlc0S),
             onClick: e => {
               e.stopPropagation(), (0, _.Z)({
                 applicationId: u,

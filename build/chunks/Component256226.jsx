@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk518738 = require("./518738.js"),
   Chunk884902 = require("./884902.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk139205 = require("./139205.js");
+  Chunk787185 = require("./787185.js");
 
 function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -110,7 +110,7 @@ let N = Chunk647438.forwardRef(function(e, t) {
         } = await n.e("5396").then(n.bind(n, 731646));
         return t => (0, r.jsx)(e, S(I({}, t), {
           id: P.id,
-          label: y.intl.string(y.t.sMsaLi)
+          label: y.intl.string(y.t.sMsaLg)
         }))
       })
     }, [P.id]),
@@ -145,7 +145,7 @@ let N = Chunk647438.forwardRef(function(e, t) {
     }, [H, L, e.style]),
     q = () => N ? (0, r.jsx)(d.u, {
       asContainer: true,
-      text: y.intl.string(y.t.u3RVsL),
+      text: y.intl.string(y.t.u3RVsH),
       children: (0, r.jsxs)(f.P3F, {
         className: o()(O.roleRemoveButtonCanRemove, O.roleRemoveButton),
         onClick: w,

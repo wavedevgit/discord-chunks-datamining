@@ -1,4 +1,4 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 185145, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   T: () => g
@@ -16,7 +16,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk893732 = require("./893732.jsx"),
   Chunk590433 = require("./590433.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk932032 = require("./932032.js");
+  Chunk105095 = require("./105095.js");
 
 function g(e) {
   let {
@@ -33,8 +33,8 @@ function g(e) {
         color: "currentColor",
         className: m.bannerIcon
       }),
-      bannerHeader: f.intl.string(f.t["9UoK6e"]),
-      bannerSubtext: f.intl.format(f.t["4ZwD5O"], {
+      bannerHeader: f.intl.string(f.t["9UoK6Y"]),
+      bannerSubtext: f.intl.format(f.t["4ZwD5G"], {
         link: h.cu
       }),
       textStyles: m.bannerContainer,

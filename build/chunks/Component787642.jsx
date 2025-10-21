@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk125631 = require("./125631.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk502439 = require("./502439.js");
+  Chunk184904 = require("./184904.js");
 
 function g(e, t, n) {
   return (0, r.jsxs)("button", {
@@ -44,18 +44,18 @@ function m() {
   let e = Chunk430824.Z.getGuildsArray().filter(e => e.features.has(p.GuildFeatures.HUB));
   return (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
     children: [(0, Chunk951288.jsxs)("header", {
-      className: Chunk502439.header,
+      className: Chunk184904.header,
       children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/semibold",
         color: "header-primary",
-        children: Chunk388032.intl.string(Chunk388032.t.IuMx1d)
+        children: Chunk388032.intl.string(Chunk388032.t.IuMx1Y)
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         tag: "div",
         variant: "heading-md/normal",
-        children: Chunk388032.intl.string(Chunk388032.t.DwevPj)
+        children: Chunk388032.intl.string(Chunk388032.t.DwevPs)
       })]
     }), (0, Chunk951288.jsxs)("div", {
-      className: Chunk502439.grid,
+      className: Chunk184904.grid,
       children: [module.map(e => g(u.ZP.getGuildIconURL({
         id: e.id,
         icon: e.icon,
@@ -65,7 +65,7 @@ function m() {
         t = e.id, c.default.track(p.rMx.ADD_FRIEND_OTHER_PLACES_HUB_CLICKED, {
           guild_id: t
         }), (0, o.X)(t)
-      })), g(Chunk481060.Jmo, Chunk388032.intl.string(Chunk388032.t.AhKnz8), () => {
+      })), g(Chunk481060.Jmo, Chunk388032.intl.string(Chunk388032.t.AhKnz4), () => {
         Chunk626135.default.track(Chunk981631.rMx.ADD_FRIEND_OTHER_PLACES_DISCOVERY_CLICKED), (0, Chunk703656.uL)(Chunk981631.Z5c.GUILD_DISCOVERY)
       })]
     })]

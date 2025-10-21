@@ -1,4 +1,4 @@
-/** Chunk was on 41348 **/
+/** Chunk was on 79041 **/
 /** chunk id: 723547, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   v: () => s
@@ -8,7 +8,7 @@ require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk376499 = require("./376499.js");
+  Chunk820762 = require("./820762.js");
 
 function s(e) {
   let {
@@ -28,11 +28,11 @@ function s(e) {
       }), (0, a.jsx)(r.Text, {
         className: o.description,
         variant: "text-md/normal",
-        children: l.intl.string(l.t["Ny/0ur"])
+        children: l.intl.string(l.t["Ny/0ui"])
       }), (0, a.jsx)(r.Button, {
         variant: "primary",
         size: "sm",
-        text: l.intl.string(l.t.TYo739),
+        text: l.intl.string(l.t.TYo738),
         fullWidth: true,
         onClick: () => {
           t(i.L.TAKE_ACTION), n()

@@ -14,8 +14,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk893966 = require("./893966.js"),
   Chunk527379 = require("./527379.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk399291 = require("./399291.js"),
-  Chunk508708 = require("./508708.js");
+  Chunk266631 = require("./266631.js"),
+  Chunk51237 = require("./51237.js");
 
 function f(e) {
   let {
@@ -73,7 +73,7 @@ function f(e) {
       children: (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
         color: "always-white",
-        children: m.intl.format(m.t["/i5uJy"], {
+        children: m.intl.format(m.t["/i5uJ1"], {
           count: v,
           date: h
         })
@@ -92,7 +92,7 @@ function f(e) {
             color: "always-white",
             className: p.memberNoticeAction,
             children: [(0, r.jsx)("div", {
-              children: m.intl.string(m.t.rkyOzM)
+              children: m.intl.string(m.t.rkyOzK)
             }), (0, r.jsx)(s.tBG, {
               size: "custom",
               color: "currentColor",

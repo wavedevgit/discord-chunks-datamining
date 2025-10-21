@@ -34,11 +34,11 @@ function Z(e) {
   };
   return x ? (0, l.jsx)(r.sNh, {
     id: "invite-speaker",
-    label: O ? b.intl.string(b.t["W6c/VV"]) : b.intl.string(b.t.VUCWcH),
+    label: O ? b.intl.string(b.t["W6c/Vf"]) : b.intl.string(b.t.VUCWcO),
     action: _
   }) : h && O ? (0, l.jsx)(r.sNh, {
     id: "invite-speaker",
-    label: b.intl.string(b.t["W6c/VV"]),
+    label: b.intl.string(b.t["W6c/Vf"]),
     action: _
   }) : null
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 729995, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -24,7 +24,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk677892 = require("./677892.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk764655 = require("./764655.js");
+  Chunk820983 = require("./820983.js");
 
 function O(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -154,12 +154,12 @@ function N(e) {
       variant: "heading-lg/semibold",
       color: "header-primary",
       className: C.header,
-      children: _.intl.string(_.t.mhxUsL)
+      children: _.intl.string(_.t.mhxUsE)
     }), (0, r.jsx)(l.Text, {
       variant: "text-md/normal",
       color: "header-secondary",
       className: C.subheader,
-      children: _.intl.string(_.t.GtWdQE)
+      children: _.intl.string(_.t.GtWdQH)
     }), (0, r.jsxs)("div", {
       className: C.help,
       children: [(0, r.jsx)(l.Anchor, {
@@ -168,7 +168,7 @@ function N(e) {
         children: (0, r.jsx)(l.Text, {
           variant: "text-sm/medium",
           color: "text-link",
-          children: _.intl.string(_.t.Ok55Ki)
+          children: _.intl.string(_.t.Ok55Kh)
         })
       }), (0, r.jsx)("div", {
         className: C.helpSeparator
@@ -177,7 +177,7 @@ function N(e) {
         children: (0, r.jsx)(l.Text, {
           variant: "text-sm/medium",
           color: "text-link",
-          children: _.intl.string(_.t["6gsjdH"])
+          children: _.intl.string(_.t["6gsjdM"])
         })
       }), (0, r.jsx)("div", {
         className: C.helpSeparator
@@ -191,25 +191,25 @@ function N(e) {
 function I() {
   let e = "• ";
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk764655.notice,
+    className: Chunk820983.notice,
     children: [(0, Chunk951288.jsx)("img", {
-      className: Chunk764655.wumpus,
+      className: Chunk820983.wumpus,
       src: require("./33631.js"),
       alt: "wumpus"
     }), (0, Chunk951288.jsxs)("div", {
       children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-md/semibold",
         color: "header-primary",
-        className: Chunk764655.header,
-        children: Chunk388032.intl.string(Chunk388032.t.WslWRE)
+        className: Chunk820983.header,
+        children: Chunk388032.intl.string(Chunk388032.t.WslWRL)
       }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
         variant: "text-sm/medium",
         color: "header-secondary",
-        children: [module, Chunk388032.intl.string(Chunk388032.t.z9k21N)]
+        children: [module, Chunk388032.intl.string(Chunk388032.t.z9k21H)]
       }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
         variant: "text-sm/medium",
         color: "header-secondary",
-        children: [module, Chunk388032.intl.string(Chunk388032.t.t1LelZ)]
+        children: [module, Chunk388032.intl.string(Chunk388032.t.t1Lele)]
       })]
     })]
   })
@@ -223,8 +223,8 @@ function S(e) {
   return (0, r.jsx)("div", {
     className: C.review,
     children: (0, r.jsx)(l.rsf, {
-      label: s ? _.intl.string(_.t.MBdTCQ) : _.intl.string(_.t.Wslim5),
-      description: s ? _.intl.string(_.t.LokpLi) : _.intl.string(_.t.nBIyJi),
+      label: s ? _.intl.string(_.t.MBdTCZ) : _.intl.string(_.t["Wslim+"]),
+      description: s ? _.intl.string(_.t.LokpLi) : _.intl.string(_.t.nBIyJp),
       checked: s,
       onChange: () => n(false),
       disabled: !s && !a
@@ -244,10 +244,10 @@ function T(e) {
       className: C.reviewHeaderText,
       children: [(0, r.jsx)(l.Heading, {
         variant: "heading-md/semibold",
-        children: s ? _.intl.string(_.t.FcIcT0) : _.intl.string(_.t.R09tJy)
+        children: s ? _.intl.string(_.t.FcIcT8) : _.intl.string(_.t.R09tJ2)
       }), (0, r.jsx)(l.Text, {
         variant: "text-xs/normal",
-        children: s ? _.intl.string(_.t.ockHVV) : _.intl.string(_.t["u/ji09"])
+        children: s ? _.intl.string(_.t.ockHVS) : _.intl.string(_.t["u/ji07"])
       })]
     }), (0, r.jsxs)("div", {
       className: C.reviewActions,
@@ -255,11 +255,11 @@ function T(e) {
         size: "sm",
         variant: "secondary",
         onClick: a,
-        text: _.intl.string(_.t["6gsjdH"])
+        text: _.intl.string(_.t["6gsjdM"])
       }), (0, r.jsx)(l.Button, {
         variant: "primary",
         size: "sm",
-        text: _.intl.string(_.t.Yz7hsL),
+        text: _.intl.string(_.t.Yz7hsB),
         onClick: () => n(d),
         disabled: !s
       })]
@@ -280,7 +280,7 @@ function P(e) {
     }), (0, r.jsx)(l.Text, {
       variant: "text-sm/medium",
       color: "text-muted",
-      children: _.intl.string(_.t.HVoKZ2)
+      children: _.intl.string(_.t.HVoKZ5)
     })]
   })
 }

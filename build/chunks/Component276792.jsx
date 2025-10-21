@@ -18,7 +18,7 @@ var Chunk657707 = require("./657707.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk570656 = require("./570656.js");
+  Chunk605548 = require("./605548.js");
 
 function _(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -65,7 +65,7 @@ function O(e) {
     {
       onClose: j
     } = C,
-    x = null != (v = null == (t = I.button) ? true : t.copy) ? v : m.intl.string(m.t.YScQSE),
+    x = null != (v = null == (t = I.button) ? true : t.copy) ? v : m.intl.string(m.t.YScQSF),
     A = (null == (n = I.button) ? true : n.buttonAction) === a.Wc.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button";
   switch (null == (O = I.button) ? true : O.buttonAction) {
     case a.Wc.OPEN_MARKETING_PAGE:
@@ -105,7 +105,7 @@ function O(e) {
       children: ["\xa0", (0, r.jsx)(s.Anchor, {
         className: b.termsApplyAnchor,
         href: p.Z.getArticleURL(I.helpArticleId),
-        children: m.intl.string(m.t["sBp+u7"])
+        children: m.intl.string(m.t["sBp+u0"])
       })]
     }) : true,
     w = {

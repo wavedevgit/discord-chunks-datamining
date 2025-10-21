@@ -20,7 +20,7 @@ function c(t) {
   return a.isPlatformEmbedded && null != u ? (0, l.jsx)(i.v2r, {
     navId: "image-context",
     onClose: r.Zy,
-    "aria-label": s.intl.string(s.t.Zow2V1),
+    "aria-label": s.intl.string(s.t.Zow2V5),
     onSelect: c,
     children: (0, l.jsx)(i.kSQ, {
       children: u

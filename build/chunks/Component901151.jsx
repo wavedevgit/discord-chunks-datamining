@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk726985 = require("./726985.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk511693 = require("./511693.js");
+  Chunk42101 = require("./42101.js");
 let v = 3,
   I = 3;
 
@@ -38,13 +38,13 @@ function T(e) {
     }
     let t = e.join(", "),
       i = n.length - v;
-    return i > 0 ? y.intl.format(y.t.sHFdTk, {
+    return i > 0 ? y.intl.format(y.t.sHFdTg, {
       gameList: t,
       plusMoreHook: (e, t) => (0, r.jsx)(s.Text, {
         tag: "span",
         variant: "text-sm/medium",
         color: "text-muted",
-        children: y.intl.format(y.t["EADv+/"], {
+        children: y.intl.format(y.t["EADv+4"], {
           count: i
         })
       }, t)
@@ -99,7 +99,7 @@ function T(e) {
         children: [(0, r.jsx)(s.Text, {
           variant: "text-xs/normal",
           color: "interactive-normal",
-          children: y.intl.format(y.t.oYaYOT, {})
+          children: y.intl.format(y.t.oYaYOe, {})
         }), (0, r.jsx)(s.Fbu, {
           size: "xxs",
           color: s.TVs.colors.INTERACTIVE_NORMAL,
@@ -120,8 +120,8 @@ function S() {
   return (0, Chunk951288.jsx)(Chunk838436.U, {
     setting: Chunk726985.s6.PRIVACY_AND_SAFETY_ALLOW_GAME_FRIEND_DMS,
     children: (0, Chunk951288.jsx)(Chunk51331.ZP, {
-      title: Chunk388032.intl.string(Chunk388032.t.XpBObG),
-      note: Chunk388032.intl.format(Chunk388032.t.oZsHTE, {
+      title: Chunk388032.intl.string(Chunk388032.t.XpBObB),
+      note: Chunk388032.intl.format(Chunk388032.t.oZsHTD, {
         helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.SLAYER_GAME_FRIENDS)
       }),
       value: module,
@@ -134,19 +134,19 @@ function A() {
   let e = Chunk695346.JG.useSetting(),
     t = module === Chunk524437.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_UNSET ? Chunk524437.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL : module,
     n = [{
-      name: Chunk388032.intl.string(Chunk388032.t.JIFnNz),
+      name: Chunk388032.intl.string(Chunk388032.t.JIFnN9),
       value: Chunk524437.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_ALL
     }, {
-      name: Chunk388032.intl.string(Chunk388032.t.rRdsk5),
+      name: Chunk388032.intl.string(Chunk388032.t.rRdsk1),
       value: Chunk524437.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_USERS_WITH_GAME
     }, {
-      name: Chunk388032.intl.string(Chunk388032.t.AolKwM),
+      name: Chunk388032.intl.string(Chunk388032.t.AolKwN),
       value: Chunk524437.O_.SLAYER_SDK_RECEIVE_IN_GAME_DMS_NONE
     }];
   return (0, Chunk951288.jsxs)(Chunk838436.U, {
     setting: Chunk726985.s6.PRIVACY_AND_SAFETY_IN_GAME_DMS,
     children: [(0, Chunk951288.jsx)(Chunk838436.H, {
-      header: Chunk388032.intl.string(Chunk388032.t["ms+TmZ"]),
+      header: Chunk388032.intl.string(Chunk388032.t["ms+Tme"]),
       description: Chunk388032.intl.string(Chunk388032.t["4NN4+/"])
     }), (0, Chunk951288.jsx)(Chunk481060.FXm, {
       value: exports,
@@ -166,19 +166,19 @@ function C() {
       children: [(0, Chunk951288.jsx)(T, {
         applications: exports
       }), (0, Chunk951288.jsx)(S, {}), (0, Chunk951288.jsx)("div", {
-        className: Chunk511693.divider
+        className: Chunk42101.divider
       }), (0, Chunk951288.jsx)(A, {})]
     }) : (0, Chunk951288.jsxs)("div", {
-      className: Chunk511693.emptyContainer,
+      className: Chunk42101.emptyContainer,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/medium",
         color: "header-primary",
-        className: Chunk511693.noGamesConnectedText,
-        children: Chunk388032.intl.string(Chunk388032.t["+0U77e"])
+        className: Chunk42101.noGamesConnectedText,
+        children: Chunk388032.intl.string(Chunk388032.t["+0U77d"])
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
         color: "text-muted",
-        children: Chunk388032.intl.format(Chunk388032.t.V8wClJ, {
+        children: Chunk388032.intl.format(Chunk388032.t.V8wClM, {
           helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.SOCIAL_LAYER_CONNECTIONS)
         })
       })]

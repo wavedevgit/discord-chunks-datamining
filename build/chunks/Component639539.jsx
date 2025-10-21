@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk70956 = require("./70956.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk20887 = require("./20887.js");
+  Chunk636433 = require("./636433.js");
 
 function m(e) {
   if (null != e) {
@@ -29,7 +29,7 @@ function m(e) {
       hours: String(n).padStart(2, "0"),
       minutes: String(r).padStart(2, "0"),
       seconds: String(i).padStart(2, "0"),
-      countdownString: d.intl.formatToPlainString(d.t.U0Hhr6, {
+      countdownString: d.intl.formatToPlainString(d.t.U0Hhr7, {
         duration: new Date(0, 0, 0, n, r, i)
       })
     }
@@ -128,11 +128,11 @@ let f = e => {
     });
     return (0, Chunk951288.jsxs)(Chunk258536.animated.div, {
       style: require,
-      className: Chunk20887.colonContainer,
+      className: Chunk636433.colonContainer,
       children: [(0, Chunk951288.jsx)("div", {
-        className: Chunk20887.tinyDot
+        className: Chunk636433.tinyDot
       }), (0, Chunk951288.jsx)("div", {
-        className: Chunk20887.tinyDot
+        className: Chunk636433.tinyDot
       })]
     })
   },
@@ -201,7 +201,7 @@ function y(e) {
       }), (0, r.jsx)(c.Text, {
         variant: null != t ? t : "text-sm/medium",
         color: "header-primary",
-        children: d.intl.string(d.t.VZsY3t)
+        children: d.intl.string(d.t.VZsY3r)
       })]
     }), (0, r.jsx)("div", {
       className: p.digitsContainer,

@@ -41,27 +41,27 @@ function m(e) {
     switch (n) {
       case _.sE.IS_MEMBER:
         return {
-          text: h.intl.string(h.t.IRoQXl), onClick: s
+          text: h.intl.string(h.t.IRoQXr), onClick: s
         };
       case _.sE.ADOPT_TAG:
         return {
-          text: h.intl.string(h.t.cQDYRk), onClick: b
+          text: h.intl.string(h.t.cQDYRu), onClick: b
         };
       case _.sE.HAS_APPLICATION:
         return {
-          text: h.intl.string(h.t["4yfIDg"]), onClick: y
+          text: h.intl.string(h.t["4yfIDk"]), onClick: y
         };
       case _.sE.APPLY_TO_JOIN:
         return {
-          text: h.intl.string(h.t["7XdMW1"]), onClick: f
+          text: h.intl.string(h.t["7XdMW2"]), onClick: f
         };
       case _.sE.LURK_DISCOVERABLE:
         return {
-          text: h.intl.string(h.t.VJlc0d), onClick: O
+          text: h.intl.string(h.t.VJlc0S), onClick: O
         };
       case _.sE.JOIN_VIA_INVITE:
         return {
-          text: h.intl.string(h.t.VJlc0d), onClick: u
+          text: h.intl.string(h.t.VJlc0S), onClick: u
         };
       case _.sE.ACCEPT_ROLES:
         return {

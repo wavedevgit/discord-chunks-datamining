@@ -1,4 +1,4 @@
-/** Chunk was on 25038 **/
+/** Chunk was on 37931 **/
 /** chunk id: 621145, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => L
@@ -31,7 +31,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk800530 = require("./800530.js"),
   Chunk981631 = require("./981631.js"),
   Chunk217702 = require("./217702.js"),
-  Chunk934064 = require("./934064.js");
+  Chunk20316 = require("./20316.js");
 
 function A(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -131,7 +131,7 @@ let k = e => {
                 fileName: t.filename,
                 fileSize: null == t.size ? true : t.size.toString(),
                 playable: true,
-                renderLinkComponent: g.iT,
+                renderLinkComponent: _.iT,
                 onClick: e.onClick,
                 onPlay: e.onPlay,
                 onEnded: e.onEnded,
@@ -141,15 +141,15 @@ let k = e => {
               })
             })
           })(t, e, o),
-          renderImageComponent: e => (0, i.jsx)(_.dS, M(A({}, e), {
+          renderImageComponent: e => (0, i.jsx)(g.dS, M(A({}, e), {
             hiddenSpoilers: true,
             shouldHideMediaOptions: true,
             shouldLink: false
           })),
-          renderAudioComponent: _.q7,
-          renderPlaintextFilePreview: _.d4,
-          renderGenericFileComponent: _.ZK,
-          renderMosaicItemFooter: _.L9,
+          renderAudioComponent: g.q7,
+          renderPlaintextFilePreview: g.d4,
+          renderGenericFileComponent: g.ZK,
+          renderMosaicItemFooter: g.L9,
           getObscureReason: a,
           gifFavoriteButton: () => null
         }
@@ -162,7 +162,7 @@ function L(e) {
   var t;
   let {
     flaggedContent: n
-  } = e, r = (0, a.e7)([O.default], () => O.default.getCurrentUser()), [c, d] = o.useState({}), [h, _] = o.useState(true), g = (0, a.e7)([E.Z], () => E.Z.getUsername()), v = n[0], w = ((e, t, n, i) => {
+  } = e, r = (0, a.e7)([O.default], () => O.default.getCurrentUser()), [c, d] = o.useState({}), [h, g] = o.useState(true), _ = (0, a.e7)([E.Z], () => E.Z.getUsername()), v = n[0], w = ((e, t, n, i) => {
     let o = e.attachments.map(e => {
       var n, i, o, r;
       let a = M(A({}, e), {
@@ -191,7 +191,7 @@ function L(e) {
       attachments: o,
       state: I.yb.SENT
     }))
-  })(v, c, r, g), x = (0, m.ZP)(w), T = (0, y.Z)(w, {
+  })(v, c, r, _), x = (0, m.ZP)(w), T = (0, y.Z)(w, {
     hideSimpleEmbedContent: false,
     allowList: false,
     allowHeading: false,
@@ -228,7 +228,7 @@ function L(e) {
       })
     }).then(t => d(n => M(A({}, n), {
       [e.id]: t
-    }))))).finally(() => _(false))
+    }))))).finally(() => g(false))
   }, [v.attachments]), "" === w.content && 0 === w.attachments.length) ? null : (0, i.jsx)("div", {
     className: Z.classificationEvidenceCard,
     children: h ? (0, i.jsx)(l.$jN, {}) : (0, i.jsx)(p.Z, {
@@ -237,7 +237,7 @@ function L(e) {
         author: M(A({}, r), {
           colorString: "",
           colorStrings: null,
-          nick: null != (t = null == r ? true : r.username) ? t : g
+          nick: null != (t = null == r ? true : r.username) ? t : _
         }),
         message: w,
         channel: true,

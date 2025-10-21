@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk410426 = require("./410426.jsx"),
   Chunk207346 = require("./207346.jsx"),
   Chunk356659 = require("./356659.js"),
-  Chunk790805 = require("./790805.js");
+  Chunk862220 = require("./862220.js");
 
 function P(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -63,7 +63,7 @@ function N(e) {
     channelId: t,
     onClose: r,
     transitionState: o
-  } = e, [N, T] = a.useState(""), [E, I] = a.useState("descending"), [S, k] = a.useState(true), [Z, D] = a.useState(null), L = a.useDeferredValue(N), M = (0, u.e7)([h.Z], () => h.Z.getClips()), R = (0, u.e7)([h.Z], () => h.Z.getPendingClips()), H = (0, u.e7)([h.Z], () => h.Z.getSettings().storageLocation), A = (0, u.Wu)([h.Z], () => h.Z.getNewClipIds()), {
+  } = e, [N, E] = a.useState(""), [T, I] = a.useState("descending"), [S, k] = a.useState(true), [Z, L] = a.useState(null), D = a.useDeferredValue(N), M = (0, u.e7)([h.Z], () => h.Z.getClips()), R = (0, u.e7)([h.Z], () => h.Z.getPendingClips()), H = (0, u.e7)([h.Z], () => h.Z.getSettings().storageLocation), A = (0, u.Wu)([h.Z], () => h.Z.getNewClipIds()), {
     analyticsLocations: z
   } = (0, f.ZP)(m.Z.CLIPS_GALLERY), B = a.useMemo(() => [...R, ...M], [M, R]);
   (0, g.Z)({
@@ -78,10 +78,10 @@ function N(e) {
     (0, x.eL)(), (0, x.zq)()
   }), []);
   let V = a.useMemo(() => s()(B).filter(e => {
-    if ("" === L.trim()) returntrue;
-    let t = L.toLowerCase();
+    if ("" === D.trim()) returntrue;
+    let t = D.toLowerCase();
     return null != e.name && "" !== e.name && i()(t, e.name.toLowerCase()) || i()(t, e.applicationName.toLowerCase())
-  }).sort((e, t) => "ascending" === E ? b.default.compare(e.id, t.id) : "descending" === E ? b.default.compare(t.id, e.id) : 0).chunk(3).value(), [B, L, E]);
+  }).sort((e, t) => "ascending" === T ? b.default.compare(e.id, t.id) : "descending" === T ? b.default.compare(t.id, e.id) : 0).chunk(3).value(), [B, D, T]);
   a.useEffect(() => {
     !async function() {
       k(true);
@@ -109,7 +109,7 @@ function N(e) {
       onShareClick: G
     } = (0, j.Z)({
       channelId: t,
-      setExporting: D
+      setExporting: L
     }),
     K = a.useCallback((e, t) => {
       (0, p.ZDy)(async () => {
@@ -170,8 +170,8 @@ function N(e) {
       children: [(0, l.jsx)(v.Z, {
         onClose: r,
         filterQuery: N,
-        setFilterQuery: T,
-        sortOrder: E,
+        setFilterQuery: E,
+        sortOrder: T,
         setSortOrder: I
       }), U]
     })

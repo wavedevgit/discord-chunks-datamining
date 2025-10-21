@@ -1,4 +1,4 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 434488, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   h: () => I
@@ -21,12 +21,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk895924 = require("./895924.js"),
   Chunk266454 = require("./266454.js"),
   Chunk340541 = require("./340541.js"),
-  Chunk448239 = require("./448239.jsx"),
+  Chunk416345 = require("./416345.jsx"),
   Chunk626135 = require("./626135.js"),
   Chunk607187 = require("./607187.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk954289 = require("./954289.js"),
+  Chunk348130 = require("./348130.js"),
   Chunk359165 = require("./359165.js");
 
 function I(e) {
@@ -81,7 +81,7 @@ function Z(e) {
       className: S.root,
       children: [(0, i.jsx)(c.u, {
         asContainer: true,
-        text: E.intl.string(E.t.qJvTKS),
+        text: E.intl.string(E.t.qJvTKQ),
         children: (0, i.jsx)(u.P3F, {
           onClick: () => {
             (0, b.Z)({
@@ -152,7 +152,7 @@ function T(e) {
     (0, u.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("49049"), n.e("7654"), n.e("89334")]).then(n.bind(n, 560114));
+      } = await Promise.all([n.e("49049"), n.e("7654"), n.e("68971")]).then(n.bind(n, 560114));
       return n => {
         var r, a;
         return (0, i.jsx)(e, (r = function(e) {
@@ -223,12 +223,12 @@ function T(e) {
           children: [(0, i.jsx)(u.Button, {
             variant: "secondary",
             icon: v,
-            text: d.isInCallEntrypointEnabled ? E.intl.string(E.t["EE+P0N"]) : E.intl.string(E.t["6Qgren"]),
+            text: d.isInCallEntrypointEnabled ? E.intl.string(E.t["EE+P0H"]) : E.intl.string(E.t["6Qgrev"]),
             onClick: f
           }), (0, i.jsx)(u.Button, {
             variant: "secondary",
             icon: y,
-            text: E.intl.string(E.t.qnFavb),
+            text: E.intl.string(E.t.qnFavR),
             onClick: C
           })]
         })]
@@ -268,7 +268,7 @@ function N(e) {
       children: [s > 300 ? (0, i.jsx)(u.Text, {
         className: S.heading,
         variant: s > 550 ? "text-md/semibold" : "text-sm/semibold",
-        children: E.intl.string(E.t["7BKMcH"])
+        children: E.intl.string(E.t["7BKMcG"])
       }) : null, (0, i.jsx)("div", {
         className: a()(S.activitiesContainer, {
           [S.activitiesContainerSmol]: s <= 300
@@ -291,7 +291,7 @@ function N(e) {
         },
         children: [(0, i.jsx)(v.Z, {}), (0, i.jsx)(u.Text, {
           variant: "text-sm/medium",
-          children: E.intl.string(E.t["5E9SBw"])
+          children: E.intl.string(E.t["5E9SB9"])
         })]
       }), (0, i.jsx)(u.P3F, {
         className: S.closeButtonContainer,

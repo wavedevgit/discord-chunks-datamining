@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 441248, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   k: () => b
@@ -16,7 +16,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk168524 = require("./168524.js"),
   Chunk115530 = require("./115530.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk516814 = require("./516814.js");
+  Chunk48733 = require("./48733.js");
 
 function m(e) {
   let {
@@ -48,7 +48,7 @@ function b(e) {
     setIsForceShowSharingPopout: p,
     ref: f,
     popoutTargetRef: b
-  } = e, _ = null != n ? n.name : null != i ? i.name : h.intl.string(h.t["UQMV/P"]);
+  } = e, _ = null != n ? n.name : null != i ? i.name : h.intl.string(h.t["UQMV/E"]);
   return (0, c.V)(), (0, r.jsxs)("div", {
     className: g.gameWrapper,
     children: [(0, r.jsxs)("div", {

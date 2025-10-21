@@ -13,7 +13,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk555638 = require("./555638.jsx"),
   Chunk42011 = require("./42011.jsx"),
   Chunk798930 = require("./798930.js"),
-  Chunk200025 = require("./200025.js");
+  Chunk771831 = require("./771831.js");
 
 function _(t) {
   let {
@@ -23,9 +23,9 @@ function _(t) {
     platformType: b
   } = t, {
     slide: C,
-    gotoNext: T,
-    gotoError: h,
-    handleWaitingForConnection: f,
+    gotoNext: h,
+    gotoError: f,
+    handleWaitingForConnection: T,
     handleAuthToken: A,
     expectedCallbackState: g,
     callbackData: I,
@@ -43,7 +43,7 @@ function _(t) {
         id: u.O.LANDING,
         children: (0, o.jsx)(c.A, {
           platformType: b,
-          onContinue: T,
+          onContinue: h,
           onClose: e
         })
       }), (0, o.jsx)(i.Mi4, {
@@ -51,9 +51,9 @@ function _(t) {
         children: (0, o.jsx)(l.A, {
           platformType: b,
           isWaitingForConnection: false,
-          onWaitingForConnection: f,
+          onWaitingForConnection: T,
           onAuthToken: A,
-          onError: h,
+          onError: f,
           onClose: e
         })
       }), (0, o.jsx)(i.Mi4, {
@@ -63,7 +63,7 @@ function _(t) {
           isWaitingForConnection: true,
           expectedCallbackState: g,
           onAuthToken: A,
-          onError: h,
+          onError: f,
           onClose: e
         })
       }), (0, o.jsx)(i.Mi4, {
@@ -71,14 +71,14 @@ function _(t) {
         children: (0, o.jsx)(s.E, {
           platformType: b,
           authToken: I,
-          onContinue: T,
-          onError: h,
+          onContinue: h,
+          onError: f,
           onClose: e
         })
       }), (0, o.jsx)(i.Mi4, {
         id: u.O.ERROR,
         children: (0, o.jsx)(a.X, {
-          onContinue: T,
+          onContinue: h,
           onClose: e,
           errorCode: N
         })

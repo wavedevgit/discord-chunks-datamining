@@ -7,7 +7,7 @@ var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk531785 = require("./531785.js"),
+  Chunk881873 = require("./881873.js"),
   Chunk134519 = require("./134519.js");
 
 function l(t) {
@@ -39,16 +39,16 @@ function l(t) {
         children: [(0, i.jsx)(s.Heading, {
           variant: "heading-xl/semibold",
           className: o.title,
-          children: a.intl.string(a.t.xSV3nZ)
+          children: a.intl.string(a.t.xSV3nU)
         }), (0, i.jsx)(s.Text, {
           variant: "text-md/normal",
           className: o.text,
-          children: a.intl.string(a.t.jPMGbG)
+          children: a.intl.string(a.t.jPMGbB)
         }), (0, i.jsx)("div", {
           className: o.buttonContainer,
           children: (0, i.jsx)(s.Button, {
             variant: "primary",
-            text: a.intl.string(a.t["NX+WJC"]),
+            text: a.intl.string(a.t["NX+WJN"]),
             onClick: e
           })
         })]

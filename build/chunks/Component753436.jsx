@@ -18,8 +18,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk919498 = require("./919498.jsx"),
   Chunk853072 = require("./853072.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk279280 = require("./279280.js"),
-  Chunk436136 = require("./436136.js");
+  Chunk932366 = require("./932366.js"),
+  Chunk133458 = require("./133458.js");
 
 function j(e) {
   let {
@@ -40,7 +40,7 @@ function j(e) {
     listType: n,
     itemType: "GAME_COVER",
     itemPreviewProps: g,
-    "aria-label": h.intl.formatToPlainString(h.t["0dR3g4"], {
+    "aria-label": h.intl.formatToPlainString(h.t["0dR3gw"], {
       positionNumber: t + 1
     }),
     onReorder: (e, t) => (0, c.Eq)(n, e, t),

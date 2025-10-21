@@ -13,7 +13,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk839963 = require("./839963.js"),
   Chunk139256 = require("./139256.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk427816 = require("./427816.js");
+  Chunk33470 = require("./33470.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -66,7 +66,7 @@ function E(e) {
   return (0, r.jsxs)("div", {
     className: d.votesData,
     children: [t && (0, r.jsx)(o.T, {
-      children: u.intl.string(u.t["8DAM+/"])
+      children: u.intl.string(u.t["8DAM+5"])
     }), (0, r.jsxs)(s.Text, {
       variant: "text-md/semibold",
       color: "none",

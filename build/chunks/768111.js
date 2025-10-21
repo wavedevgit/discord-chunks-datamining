@@ -27,17 +27,17 @@ function g(e) {
   } = e, {
     mutualFriendsCount: g,
     mutualGuilds: b
-  } = (0, p.Z)(n), I = null == b ? true : b.length, y = (0, m.Z)(n), Z = (0, d.Z)({
+  } = (0, p.Z)(n), I = null == b ? true : b.length, y = (0, m.Z)(n), _ = (0, d.Z)({
     location: "useUserProfileModalV2TabBarItems"
-  }), _ = (0, u.Z)({
+  }), Z = (0, u.Z)({
     location: "useUserProfileModalV2TabBarItems"
   }), O = (0, f.Z)(n.id), N = (0, s.Y)({
     location: "useUserProfileModalV2TabBarItems"
   }), A = (0, a.S)({
     location: "useUserProfileModalV2TabBarItems"
-  }), T = (0, c.Z)(n.id), P = [], E = n.id === (null == t ? true : t.id), C = r.Z.getFirstWishlistId(n.id), S = null != C, w = S ? r.Z.getWishlistSettings(n.id, C) : null, R = (S ? i.Z.getWishlistItems(C) : []).length > 0, D = O.length > 0;
-  (E && Z || D && _) && P.push({
-    text: j.intl.string(j.t.laViw8),
+  }), T = (0, c.Z)(n.id), P = [], E = n.id === (null == t ? true : t.id), C = r.Z.getFirstWishlistId(n.id), S = null != C, w = S ? r.Z.getWishlistSettings(n.id, C) : null, D = (S ? i.Z.getWishlistItems(C) : []).length > 0, R = O.length > 0;
+  (E && _ || R && Z) && P.push({
+    text: j.intl.string(j.t.laViwx),
     section: v.oh.WIDGETS,
     subsection: true
   }), P.push({
@@ -48,8 +48,8 @@ function g(e) {
   let L = false === n.nsfwAllowed,
     M = o.Z.isFriend(n.id),
     B = (null == w ? true : w.visibility) === l.f.PUBLIC;
-  return (E && N || !E && A && R && B && T && (!L || L && M)) && P.push({
-    text: j.intl.string(j.t["7lZ31N"]),
+  return (E && N || !E && A && D && B && T && (!L || L && M)) && P.push({
+    text: j.intl.string(j.t["7lZ31J"]),
     section: v.oh.WISHLIST,
     subsection: true
   }), n.id !== (null == t ? true : t.id) && y && (P.push({

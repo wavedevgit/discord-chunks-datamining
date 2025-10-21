@@ -9,7 +9,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk596454 = require("./596454.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk629498 = require("./629498.js");
+  Chunk870269 = require("./870269.js");
 
 function d(e) {
   return null != e && (null != e.id || null != e.name)
@@ -63,7 +63,7 @@ function u(e) {
         children: (0, l.jsx)(a.Text, {
           variant: "text-xs/normal",
           color: "always-white",
-          children: s.intl.format(s.t.EgKsZG, {
+          children: s.intl.format(s.t.EgKsZA, {
             memberCount: r
           })
         })

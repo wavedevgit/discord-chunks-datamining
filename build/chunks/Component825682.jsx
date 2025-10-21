@@ -11,7 +11,7 @@ var Chunk468363 = require("./468363.js"),
   Chunk771173 = require("./771173.jsx"),
   Chunk51144 = require("./51144.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk921487 = require("./921487.js");
+  Chunk599685 = require("./599685.js");
 let d = function(e) {
   let {
     hovered: t,
@@ -31,7 +31,7 @@ let d = function(e) {
   }), b = g ? m : true;
   return h ? (0, r.jsx)("div", {
     className: u.text,
-    children: c.intl.string(c.t.tFY5ZW)
+    children: c.intl.string(c.t.tFY5Zb)
   }) : (0, l.Z)({
     activities: n,
     status: p,

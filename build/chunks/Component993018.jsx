@@ -21,9 +21,9 @@ function c(t) {
     headerText: m,
     confirmButtonText: h,
     confirmButtonVariant: f = "primary"
-  } = t, [y, A] = s.useState(false), [g, v] = s.useState(""), [x, E] = s.useState(null), Z = s.useRef(null), b = async t => {
+  } = t, [y, A] = s.useState(false), [g, v] = s.useState(""), [C, E] = s.useState(null), Z = s.useRef(null), b = async t => {
     if (t.preventDefault(), E(null), A(true), false === p.test(g)) {
-      E(u.intl.string(u.t.hML7Gx)), A(false);
+      E(u.intl.string(u.t.hML7Gw)), A(false);
       return
     }
     try {
@@ -50,7 +50,7 @@ function c(t) {
       },
       title: m,
       actions: [{
-        text: u.intl.string(u.t["ETE/oK"]),
+        text: u.intl.string(u.t["ETE/oC"]),
         onClick: d,
         variant: "secondary",
         disabled: y
@@ -62,8 +62,8 @@ function c(t) {
       }],
       onClose: d,
       children: (0, i.jsx)(l.oil, {
-        label: u.intl.string(u.t.hvOfmJ),
-        error: x,
+        label: u.intl.string(u.t.hvOfmC),
+        error: C,
         value: g,
         onChange: v,
         inputRef: Z

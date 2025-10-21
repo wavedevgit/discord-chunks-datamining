@@ -1,7 +1,7 @@
-/** Chunk was on 76993 **/
+/** Chunk was on 76212 **/
 /** chunk id: 846632, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => h
+  default: () => m
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -17,11 +17,11 @@ var Chunk120356 = require("./120356.js"),
   Chunk731722 = require("./731722.js"),
   Chunk446094 = require("./446094.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk755032 = require("./755032.js"),
-  Chunk671749 = require("./671749.js");
+  Chunk234786 = require("./234786.js"),
+  Chunk265227 = require("./265227.js");
 
-function h(e) {
-  var t, n, r, h, {
+function m(e) {
+  var t, n, r, m, {
       guildId: j
     } = e,
     v = function(e, t) {
@@ -68,28 +68,28 @@ function h(e) {
     }
     return e
   }({
-    className: m.modal,
+    className: h.modal,
     size: d.CgR.DYNAMIC
   }, v), n = n = {
     parentComponent: "GuildTagAdoptModal",
     children: [(0, a.jsxs)(d.hzk, {
-      className: m.modalContent,
+      className: h.modalContent,
       scrollbarType: "none",
       children: [(0, a.jsx)("div", {
-        className: m.modalContentChild,
+        className: h.modalContentChild,
         children: (0, a.jsxs)("div", {
-          className: m.left,
+          className: h.left,
           children: [(0, a.jsxs)("div", {
-            className: m.headerContainer,
+            className: h.headerContainer,
             children: [(0, a.jsx)(d.Heading, {
               variant: "heading-lg/bold",
-              children: p.intl.string(C.default.OvKPi4)
+              children: p.intl.string(C.default.OvKPi0)
             }), (0, a.jsx)(d.Text, {
               variant: "text-md/normal",
               children: p.intl.string(C.default.kHxfDw)
             })]
           }), (0, a.jsx)(c.Z, {
-            className: m.guildRow,
+            className: h.guildRow,
             guildId: _.id,
             guildName: _.name,
             guildIcon: _.icon,
@@ -97,13 +97,13 @@ function h(e) {
             guildTag: _.profile.tag,
             guildBadge: null != (r = _.profile.badge) ? r : ""
           }), (0, a.jsxs)("div", {
-            className: m.buttonContainer,
+            className: h.buttonContainer,
             children: [(0, a.jsx)(l.u, {
-              text: p.intl.string(C.default.WlENZm),
+              text: p.intl.string(C.default.WlENZt),
               shouldShow: y,
               children: (0, a.jsx)(d.Button, {
                 variant: "primary",
-                text: p.intl.string(p.t.jwEaiY),
+                text: p.intl.string(p.t.jwEaiX),
                 fullWidth: true,
                 onClick: x,
                 loading: O,
@@ -111,23 +111,23 @@ function h(e) {
               })
             }), (0, a.jsx)(d.Button, {
               variant: "secondary",
-              text: p.intl.string(p.t.s5vZlZ),
+              text: p.intl.string(p.t.s5vZlQ),
               fullWidth: true,
               onClick: w
             })]
           })]
         })
       }), (0, a.jsx)("div", {
-        className: i()(m.modalContentChild, m.right),
+        className: i()(h.modalContentChild, h.right),
         children: (0, a.jsx)(s.Z, {
-          className: m.rightContent,
+          className: h.rightContent,
           guildId: _.id,
           tag: _.profile.tag,
-          badge: null != (h = _.profile.badge) ? h : ""
+          badge: null != (m = _.profile.badge) ? m : ""
         })
       })]
     }), (0, a.jsx)(d.olH, {
-      className: m.close,
+      className: h.close,
       onClick: v.onClose
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

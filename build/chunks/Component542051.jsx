@@ -13,7 +13,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk607802 = require("./607802.js"),
   Chunk579612 = require("./579612.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk2442 = require("./2442.js");
+  Chunk575209 = require("./575209.js");
 
 function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -75,14 +75,14 @@ let g = e => {
   }, [t]);
   return n ? (0, i.jsx)("div", {
     className: f.queryText,
-    children: d.intl.string(d.t["6RVtLC"])
+    children: d.intl.string(d.t["6RVtLA"])
   }) : r ? o > 0 ? (0, i.jsx)(l.Text, {
     variant: "text-sm/medium",
     color: "text-secondary",
     className: f.searchDMQueryText,
-    children: u ? d.intl.format(d.t.iV2ftr, {
+    children: u ? d.intl.format(d.t.iV2fth, {
       filterCount: o
-    }) : d.intl.format(d.t["5CTmUl"], {
+    }) : d.intl.format(d.t["5CTmUk"], {
       filterCount: o,
       value: s
     })
@@ -90,12 +90,12 @@ let g = e => {
     variant: "text-sm/medium",
     color: "text-secondary",
     className: f.searchDMQueryText,
-    children: u ? d.intl.string(d.t.w39VdH) : d.intl.format(d.t["9gKPv7"], {
+    children: u ? d.intl.string(d.t.w39VdC) : d.intl.format(d.t["9gKPvw"], {
       value: s
     })
   }) : (0, i.jsx)("div", {
     className: f.queryText,
-    children: d.intl.format(d.t.ub226e, {
+    children: d.intl.format(d.t.ub226W, {
       value: t
     })
   })
@@ -194,7 +194,7 @@ class y extends(r = Chunk647438.PureComponent) {
       navId: n
     } = this.props, r = "" === module.trim();
     return (0, Chunk951288.jsxs)(Chunk481060.u2D, {
-      className: Chunk2442.container,
+      className: Chunk575209.container,
       onMouseDown: E,
       role: "listbox",
       id: require,
@@ -217,7 +217,7 @@ class y extends(r = Chunk647438.PureComponent) {
         s = (0, c.X3)(t),
         _ = (0, i.jsx)(u.ZP, {
           channel: t,
-          text: d.intl.formatToPlainString(d.t.LDpotL, {
+          text: d.intl.formatToPlainString(d.t.LDpotA, {
             guildName: s
           }),
           channelContainerClassName: f.channelContainer,
@@ -230,7 +230,7 @@ class y extends(r = Chunk647438.PureComponent) {
           variant: "text-md/normal",
           color: "interactive-normal",
           className: f.inChannelOption,
-          children: d.intl.format(d.t.LDpotL, {
+          children: d.intl.format(d.t.LDpotA, {
             guildName: _
           })
         })

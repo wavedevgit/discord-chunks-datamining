@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk151459 = require("./151459.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk319763 = require("./319763.js");
+  Chunk10058 = require("./10058.js");
 
 function I(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -181,8 +181,8 @@ function S(e) {
         onClick: e,
         icon: o.iFz,
         iconSize: b,
-        "aria-label": v.intl.string(v.t.TdEu5e),
-        tooltip: i ? null : v.intl.string(v.t.TdEu5e),
+        "aria-label": v.intl.string(v.t.TdEu5X),
+        tooltip: i ? null : v.intl.string(v.t.TdEu5X),
         selected: i,
         showBadge: n
       }))

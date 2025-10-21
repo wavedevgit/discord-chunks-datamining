@@ -117,8 +117,8 @@ class w extends Chunk147913.Z {
     }), T(this, "handleWaitForRemoteSession", () => {
       this.awaitRemoteTimeout.start(C, () => {
         (0, m.s6)(), o.Z.show({
-          title: I.intl.string(I.t.wGMxr6),
-          body: I.intl.string(I.t.i5k8b2)
+          title: I.intl.string(I.t.wGMxr3),
+          body: I.intl.string(I.t.i5k8b5)
         })
       })
     }), T(this, "handleConsoleCommandUpdate", e => {
@@ -135,8 +135,8 @@ class w extends Chunk147913.Z {
       let o = E.default.getDevice(a.type, null != (t = a.deviceId) ? t : ""),
         s = (0, y.Z)(null != o ? o : {
           id: "id",
-          platform: I.intl.string(I.t["UQMV/P"]),
-          name: I.intl.string(I.t["UQMV/P"])
+          platform: I.intl.string(I.t["UQMV/E"]),
+          name: I.intl.string(I.t["UQMV/E"])
         }, r, i);
       null != s && g.Z.showSelfDismissableAlert({
         title: s.title,

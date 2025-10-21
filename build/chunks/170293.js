@@ -1,4 +1,4 @@
-/** Chunk was on 41348 **/
+/** Chunk was on 79041 **/
 /** chunk id: 170293, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   $: () => l
@@ -9,11 +9,11 @@ var Chunk668781 = require("./668781.js"),
 
 function l(e) {
   a.Z.show({
-    title: i.intl.string(i.t.RpjdLy),
-    body: i.intl.string(i.t.nOSopa),
-    confirmText: i.intl.string(i.t["sKJ7+f"]),
+    title: i.intl.string(i.t.RpjdL8),
+    body: i.intl.string(i.t.nOSopS),
+    confirmText: i.intl.string(i.t["sKJ7+Y"]),
     confirmVariant: "critical-primary",
-    cancelText: i.intl.string(i.t["7wZ1GR"]),
+    cancelText: i.intl.string(i.t["7wZ1GY"]),
     onConfirm: () => {
       (0, r.v6)(null)
     },

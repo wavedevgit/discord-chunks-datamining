@@ -21,7 +21,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk170568 = require("./170568.js");
+  Chunk781990 = require("./781990.js");
 
 function y(e) {
   var t, n, i, y;
@@ -31,7 +31,7 @@ function y(e) {
     maxCharacterCount: I,
     showRemainingCharsAfterCount: T,
     className: S
-  } = e, A = (0, o.e7)([_.default], () => p.ZP.canUseIncreasedMessageLength(_.default.getCurrentUser())), C = (0, d.Z)(), N = null != I ? I : C, R = null != (y = null != T ? T : I) ? y : C / 10, P = v.length, w = null != O.upsellLongMessages && (null != P ? P : 0) > m.J6R && A, D = null != O.upsellLongMessages && !A, L = (null == (n = (0, f.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === g.Si.TIER_2, x = N - P, M = x > R, k = x < 0 && L, j = 0 === x ? E.intl.string(E.t.tU6YQ0) : x > 0 ? E.intl.formatToPlainString(E.t.qH8uFR, {
+  } = e, A = (0, o.e7)([_.default], () => p.ZP.canUseIncreasedMessageLength(_.default.getCurrentUser())), C = (0, d.Z)(), N = null != I ? I : C, R = null != (y = null != T ? T : I) ? y : C / 10, P = v.length, w = null != O.upsellLongMessages && (null != P ? P : 0) > m.J6R && A, D = null != O.upsellLongMessages && !A, L = (null == (n = (0, f.N)()) || null == (t = n.subscription_trial) ? true : t.sku_id) === g.Si.TIER_2, x = N - P, M = x > R, k = x < 0 && L, j = 0 === x ? E.intl.string(E.t.tU6YQ7) : x > 0 ? E.intl.formatToPlainString(E.t.qH8uFW, {
     count: x
   }) : E.intl.string(E.t.YSRIqa), {
     analyticsLocations: U
@@ -45,7 +45,7 @@ function y(e) {
       children: [(0, r.jsxs)("div", {
         className: b.flairContainer,
         children: [w && G ? (0, r.jsx)(s.u, {
-          text: E.intl.formatToPlainString(E.t.vcvHa2, {
+          text: E.intl.formatToPlainString(E.t.vcvHa0, {
             maxLength: N
           }),
           position: "top",
@@ -66,7 +66,7 @@ function y(e) {
           })
         })]
       }), (0, r.jsx)(l.nn4, {
-        children: E.intl.format(E.t.qH8uFR, {
+        children: E.intl.format(E.t.qH8uFW, {
           count: x
         })
       }), D && !M ? (0, r.jsx)(h.Z, {

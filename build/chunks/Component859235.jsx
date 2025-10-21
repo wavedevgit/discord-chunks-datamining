@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk43085 = require("./43085.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk729506 = require("./729506.js");
+  Chunk132045 = require("./132045.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -140,7 +140,7 @@ function T(e, t) {
               [h.smallActionBar]: D
             }),
             onContextMenu: I,
-            "aria-label": p.intl.string(p.t["8Lu3Dg"]),
+            "aria-label": p.intl.string(p.t["8Lu3Du"]),
             children: (0, r.jsx)(u.ZP, {
               className: o()({
                 [h.miniPopover]: D

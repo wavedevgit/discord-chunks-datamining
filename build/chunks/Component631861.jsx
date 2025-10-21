@@ -24,12 +24,12 @@ let v = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(t) {
     onSelect: a
   } = t, l = (0, f.Z)(e.id, e.name), d = (0, b.Z)(e), v = (0, s.Z)(e, n, c), Z = (0, u.Z)({
     id: e.id,
-    label: p.intl.string(p.t["FfCL+/"])
+    label: p.intl.string(p.t["FfCL+6"])
   });
   return (0, r.jsxs)(i.v2r, {
     navId: "game-context",
     onClose: o.Zy,
-    "aria-label": p.intl.string(p.t.liqwPD),
+    "aria-label": p.intl.string(p.t.liqwPJ),
     onSelect: a,
     children: [(0, r.jsxs)(i.kSQ, {
       children: [l, d, v]

@@ -1,4 +1,4 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 493010, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk229 = require("./229.js");
+  Chunk952899 = require("./952899.js");
 let v = function(e) {
   let {
     channel: t,
@@ -37,7 +37,7 @@ let v = function(e) {
     }, [t.id]),
     O = (0, i.jsx)(h.ZP.Icon, {
       icon: a.Dio,
-      tooltip: y.intl.string(y.t.cpT0Cg),
+      tooltip: y.intl.string(y.t.cpT0Cq),
       onClick: x
     });
   return (0, i.jsxs)(u.Z, {
@@ -52,7 +52,7 @@ let v = function(e) {
       "aria-label": y.intl.string(y.t.BIYAqa),
       children: [(0, i.jsx)(h.ZP.ChannelIcon, {
         icon: a.kBi,
-        "aria-label": y.intl.string(y.t.Kx5kCA)
+        "aria-label": y.intl.string(y.t.Kx5kCN)
       }), (0, i.jsx)(h.ZP.Title, {
         children: t.name
       })]

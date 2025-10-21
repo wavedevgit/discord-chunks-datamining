@@ -54,35 +54,35 @@ let Y = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     showChannelCallItems: F = false,
     showModalItems: Y = true,
     targetIsUser: V = false,
-    context: W,
-    onSelect: z,
-    onHeightUpdate: K,
+    context: K,
+    onSelect: W,
+    onHeightUpdate: z,
     onInteraction: B
-  } = e, X = (0, w.Z)({
+  } = e, q = (0, D.Z)({
     userId: n.id,
     guildId: null
-  }), q = (0, E.Z)({
+  }), J = (0, I.Z)({
     user: n,
-    context: W
-  }), J = (0, P.Z)({
+    context: K
+  }), X = (0, N.Z)({
     user: n,
     channelId: t.id,
-    context: W
+    context: K
   }), H = (0, S.Z)({
     user: n
   }), $ = (0, G.Z)(n.id), ee = (0, A.Z)(t.id, a), en = (0, U.Z)({
     user: n
   }), et = (0, d.Z)(null, n), ei = (0, Q.Z)(n.id), er = (0, R.O)(t.id, "DMUserContextMenu"), el = (0, R.Z)(n, er), ea = (0, x.Z)({
     user: n
-  }), es = (0, N.Z)({
+  }), es = (0, P.Z)({
     user: n
   }), eo = (0, M.Z)({
     user: n
-  }), ed = (0, D.Z)(n.id), ec = (0, g.B)({
+  }), ed = (0, w.Z)(n.id), ec = (0, g.B)({
     userId: n.id,
     channelId: t.id,
     guildId: t.getGuildId()
-  }), eu = (0, k.Z)(n.id, t.id), ef = (0, I.Z)({
+  }), eu = (0, k.Z)(n.id, t.id), ef = (0, E.Z)({
     user: n,
     location: "DMUserContextMenu"
   }), eh = (0, T.Z)({
@@ -90,42 +90,42 @@ let Y = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     location: "DMUserContextMenu"
   }), eg = (0, b.ZP)(t), ej = (0, O.Z)({
     id: n.id,
-    label: L.intl.string(L.t["/AXYnJ"])
+    label: L.intl.string(L.t["/AXYnE"])
   }), ep = (0, O.Z)({
     id: t.id,
-    label: L.intl.string(L.t.gFHI3t)
-  }), eb = (0, p.Z)(t), eO = (0, f.Z)(n.id), ev = (0, u.Z)(t.id), eZ = (0, _.Z)(n), ey = (0, h.Z)(n.id), e_ = (0, m.Z)({
+    label: L.intl.string(L.t.gFHI3k)
+  }), eb = (0, p.Z)(t), eO = (0, f.Z)(n.id), ev = (0, u.Z)(t.id), ey = (0, _.Z)(n), eZ = (0, h.Z)(n.id), e_ = (0, m.Z)({
     commandType: o.yU.USER,
     commandTargetId: n.id,
     channel: t,
     guildId: true,
-    onHeightUpdate: K
-  }), ex = (0, v.l)(t), eS = (0, v.P)(t), eN = (0, Z.Z)(t), eP = (0, y.Z)(t), em = (0, C.Z)({
+    onHeightUpdate: z
+  }), ex = (0, v.l)(t), eS = (0, v.P)(t), eP = (0, y.Z)(t), eN = (0, Z.Z)(t), em = (0, C.Z)({
     channel: t
-  }), eI = t.isManaged(), eE = n.isNonUserBot();
+  }), eE = t.isManaged(), eI = n.isNonUserBot();
   return (0, i.jsxs)(r.v2r, {
     navId: "user-context",
     onClose: l.Zy,
-    "aria-label": L.intl.string(L.t.liqwPD),
-    onSelect: z,
+    "aria-label": L.intl.string(L.t.liqwPJ),
+    onSelect: W,
     onInteraction: B,
     children: [(0, i.jsx)(r.kSQ, {
-      children: !(eE && !(0, j.Z)(t.id)) && eb
+      children: !(eI && !(0, j.Z)(t.id)) && eb
     }), (0, i.jsxs)(r.kSQ, {
-      children: [ex, eN, eP]
+      children: [ex, eP, eN]
     }), (0, i.jsx)(r.kSQ, {
-      children: !eE && eZ
+      children: !eI && ey
     }), (0, i.jsxs)(r.kSQ, {
-      children: [!eE && (0, i.jsxs)(i.Fragment, {
-        children: [Y && X, q, !eI && el, Y && J, Y && H, $]
-      }), (0, j.Z)(t.id) && X, ee]
-    }), !eE && (0, i.jsxs)(i.Fragment, {
+      children: [!eI && (0, i.jsxs)(i.Fragment, {
+        children: [Y && q, J, !eE && el, Y && X, Y && H, $]
+      }), (0, j.Z)(t.id) && q, ee]
+    }), !eI && (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(r.kSQ, {
         children: c && ei
       }), (0, i.jsx)(r.kSQ, {
         children: Y && et
       }), (0, i.jsxs)(r.kSQ, {
-        children: [c && ed, Y && ec, c && eu, e_, Y && en, ea, es, eo, Y && eh, Y && ef, c && ey]
+        children: [c && ed, Y && ec, c && eu, e_, Y && en, ea, es, eo, Y && eh, Y && ef, c && eZ]
       }), (0, i.jsx)(r.kSQ, {
         children: s && eg
       }), F && (0, i.jsxs)(r.kSQ, {

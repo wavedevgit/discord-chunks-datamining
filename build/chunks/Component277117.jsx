@@ -1,4 +1,4 @@
-/** Chunk was on 63962 **/
+/** Chunk was on 91053 **/
 /** chunk id: 277117, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => w
@@ -33,7 +33,7 @@ var Chunk657707 = require("./657707.js"),
   Chunk981631 = require("./981631.js"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk892068 = require("./892068.js");
+  Chunk892273 = require("./892273.js");
 
 function w(e) {
   let {
@@ -79,13 +79,13 @@ function w(e) {
         })]
       })
     }), M === P.OGo.PENDING_INCOMING && (0, r.jsx)(S.Z.Overlay, {
-      children: (0, r.jsx)(O.Z, {
+      children: (0, r.jsx)(j.Z, {
         user: t,
         channelId: A.id,
         applicationId: k
       })
     }), U.map(e => (0, r.jsx)(S.Z.Overlay, {
-      children: (0, r.jsx)(O.Z, {
+      children: (0, r.jsx)(j.Z, {
         user: t,
         isGameRelationship: true,
         applicationId: e.applicationId,
@@ -97,7 +97,7 @@ function w(e) {
     }), t.isProvisional && (0, r.jsx)(S.Z.Overlay, {
       className: R.card,
       children: (0, r.jsx)(C.Z, {
-        heading: N.intl.string(N.t.Iyka0d),
+        heading: N.intl.string(N.t.Iyka0U),
         headingIcon: (0, r.jsx)(i.Mgn, {
           size: "xxs",
           color: a.Z.colors.HEADER_PRIMARY
@@ -131,13 +131,13 @@ function w(e) {
         commandIds: F.popularApplicationCommandIds,
         channel: A
       }), G.length > 0 && (0, r.jsx)(C.Z, {
-        heading: N.intl.string(N.t["Uv/eT0"]),
+        heading: N.intl.string(N.t["Uv/eTx"]),
         headingColor: "header-primary",
-        children: (0, r.jsx)(j.Z, {
+        children: (0, r.jsx)(O.Z, {
           applicationIds: G
         })
       }), (0, r.jsx)(C.Z, {
-        heading: t.bot ? N.intl.string(N.t["A//N4u"]) : N.intl.string(N.t.a6XYDw),
+        heading: t.bot ? N.intl.string(N.t["A//N4k"]) : N.intl.string(N.t.a6XYD9),
         headingColor: "header-primary",
         children: (0, r.jsx)(x.Z, {
           userId: t.id

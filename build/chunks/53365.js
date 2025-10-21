@@ -56,7 +56,7 @@ async function u(t) {
       },
       rejectWithError: true
     });
-    a.Z.dispatch({
+    e.Z.dispatch({
       type: "CREATOR_MONETIZATION_NAG_ACTIVATE_ELIGIBLITY_FETCH_SUCCESS",
       eligibleGuilds: r.body.eligible_guilds
     })
@@ -70,7 +70,7 @@ async function N(t, r) {
     },
     rejectWithError: false
   })).body;
-  return null != n.application && a.Z.dispatch({
+  return null != n.application && e.Z.dispatch({
     type: "APPLICATION_FETCH_SUCCESS",
     application: n.application
   }), n
@@ -97,7 +97,7 @@ async function I(t) {
   })
 }
 async function R(t) {
-  return await I(t), await e.ZP.getApplicationsForGuild(t, {
+  return await I(t), await a.ZP.getApplicationsForGuild(t, {
     type: o.wW.GUILD_ROLE_SUBSCRIPTIONS,
     includeTeam: true
   })

@@ -23,7 +23,7 @@ var n, Chunk951288 = require("./951288.js"),
   Chunk585483 = require("./585483.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk10198 = require("./10198.js");
+  Chunk197571 = require("./197571.js");
 
 function x(e, t, r) {
   return t in e ? Object.defineProperty(e, t, {
@@ -56,14 +56,14 @@ class P extends(n = Chunk647438.PureComponent) {
       children: [(0, Chunk951288.jsx)("img", {
         alt: "",
         src: null == Chunk593473 ? require("./26230.js") : require("./935227.js"),
-        className: Chunk10198.marginBottom20
+        className: Chunk197571.marginBottom20
       }), (0, Chunk951288.jsx)(Chunk388905.Dx, {
-        children: Chunk388032.intl.string(Chunk388032.t["1LV6Ki"])
+        children: Chunk388032.intl.string(Chunk388032.t["1LV6Kq"])
       }), (0, Chunk951288.jsxs)(Chunk388905.gO, {
-        className: Chunk10198.marginTop20,
+        className: Chunk197571.marginTop20,
         children: [(0, Chunk951288.jsx)(Chunk388905.II, {
-          label: Chunk388032.intl.string(Chunk388032.t["8dM4FB"]),
-          className: Chunk10198.marginBottom20,
+          label: Chunk388032.intl.string(Chunk388032.t["8dM4FO"]),
+          className: Chunk197571.marginBottom20,
           name: "password",
           value: module,
           onChange: e => this.setState({
@@ -76,13 +76,13 @@ class P extends(n = Chunk647438.PureComponent) {
         }), (0, Chunk951288.jsx)(Chunk388905.zx, {
           type: "submit",
           submitting: Chunk647438,
-          children: Chunk388032.intl.string(Chunk388032.t["FRep5+"])
+          children: Chunk388032.intl.string(Chunk388032.t["FRep5/"])
         }), n ? (0, Chunk951288.jsx)(Chunk388905.zx, {
-          className: Chunk10198.marginTop8,
+          className: Chunk197571.marginTop8,
           onClick: this.handleGoToLogin,
           submitting: Chunk647438,
           color: Chunk388905.zx.Colors.PRIMARY,
-          children: Chunk388032.intl.string(Chunk388032.t["ETE/oK"])
+          children: Chunk388032.intl.string(Chunk388032.t["ETE/oC"])
         }) : null]
       })]
     })
@@ -133,13 +133,13 @@ class P extends(n = Chunk647438.PureComponent) {
       children: [(0, Chunk951288.jsx)("img", {
         alt: "",
         src: require("./26230.js"),
-        className: a()(Chunk10198.marginBottom20, Chunk873546.tq ? Chunk10198.marginTop20 : "")
+        className: a()(Chunk197571.marginBottom20, Chunk873546.tq ? Chunk197571.marginTop20 : "")
       }), (0, Chunk951288.jsx)(Chunk388905.Dx, {
-        className: Chunk10198.marginBottom40,
+        className: Chunk197571.marginBottom40,
         children: Chunk388032.intl.string(Chunk388032.t.WAUOoK)
       }), (0, Chunk951288.jsx)(Chunk388905.zx, {
         onClick: this.handleOpenApp,
-        children: Chunk388032.intl.string(Chunk388032.t.uJWIj4)
+        children: Chunk388032.intl.string(Chunk388032.t["uJWIj/"])
       })]
     })
   }
@@ -160,7 +160,7 @@ class P extends(n = Chunk647438.PureComponent) {
       } = this.state;
       if (e.preventDefault(), 0 === i.length) {
         this.setState({
-          error: S.intl.string(S.t.R98xDw)
+          error: S.intl.string(S.t.R98xD5)
         }), j.S.dispatch(w.CkL.WAVE_EMPHASIZE);
         return
       }
@@ -286,9 +286,9 @@ x(P, "defaultProps", {
   replaceWith: Chunk703656.dL
 });
 let E = function(e) {
-  let t = (0, u.cj)([C.default], () => ({
-    mfaTicket: C.default.getMFATicket(),
-    mfaMethods: C.default.getMFAMethods()
+  let t = (0, u.cj)([b.default], () => ({
+    mfaTicket: b.default.getMFATicket(),
+    mfaMethods: b.default.getMFAMethods()
   }));
   return (0, s.jsx)(P, function(e) {
     for (var t = 1; t < arguments.length; t++) {

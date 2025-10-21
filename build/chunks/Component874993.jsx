@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 874993, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk273504 = require("./273504.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk716971 = require("./716971.js");
+  Chunk894780 = require("./894780.js");
 
 function y(e) {
   var t, n;
@@ -40,8 +40,8 @@ function y(e) {
   } = (0, l.cj)([o.Z], () => o.Z.getProps()), P = null != (n = null != (t = null == S ? true : S.id) ? t : y) ? n : _.lds, w = null != N, [Z] = (0, m.RD)(P), {
     rulesByTriggerType: R
   } = (0, m.pH)(P), D = {
-    [p.vh.MEMBERS]: C.intl.string(C.t.sx4E5u),
-    [p.vh.CONTENT]: C.intl.string(C.t.fphZb2)
+    [p.vh.MEMBERS]: C.intl.string(C.t.sx4E5v),
+    [p.vh.CONTENT]: C.intl.string(C.t.fphZb0)
   }, A = i.useMemo(() => Object.values(null != R ? R : {}).flat().filter(d.lm), [R]), L = {
     isInEditMode: w,
     setEditingRule: I
@@ -79,7 +79,7 @@ function y(e) {
     children: [(0, r.jsx)(s.Heading, {
       variant: "heading-lg/semibold",
       color: "header-primary",
-      children: C.intl.string(C.t.uRelg4)
+      children: C.intl.string(C.t.uRelgx)
     }), (0, r.jsxs)("div", {
       className: O.descriptionContainer,
       children: [(0, r.jsxs)("div", {
@@ -87,11 +87,11 @@ function y(e) {
         children: [(0, r.jsx)(s.Text, {
           variant: "text-sm/normal",
           color: "header-secondary",
-          children: C.intl.string(C.t.EwuSCQ)
+          children: C.intl.string(C.t.EwuSCR)
         }), (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           className: O.helpUrl,
-          children: C.intl.format(C.t["B+sgGh"], {
+          children: C.intl.format(C.t["B+sgGt"], {
             helpUrl: u.Z.getArticleURL(_.BhN.GUILD_AUTOMOD_BLOCKED_MESSAGE)
           })
         })]
@@ -100,7 +100,7 @@ function y(e) {
         children: [(0, r.jsx)(s.qEK, {
           src: (0, g.j)(),
           size: s.EFr.SIZE_80,
-          "aria-label": C.intl.string(C.t.hG1StL)
+          "aria-label": C.intl.string(C.t.hG1StD)
         }), (0, r.jsx)(s.IGR, {
           text: (0, r.jsxs)("div", {
             className: O.automodBadgeText,
@@ -111,7 +111,7 @@ function y(e) {
             }), (0, r.jsx)(s.Text, {
               variant: "text-xs/bold",
               className: O.automodText,
-              children: C.intl.string(C.t.hG1StL)
+              children: C.intl.string(C.t.hG1StD)
             })]
           }),
           color: a.Z.unsafe_rawColors.BRAND_500.css,

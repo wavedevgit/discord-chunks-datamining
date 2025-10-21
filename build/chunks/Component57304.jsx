@@ -1,4 +1,4 @@
-/** Chunk was on 63962 **/
+/** Chunk was on 91053 **/
 /** chunk id: 57304, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -50,17 +50,17 @@ function m(e, t) {
 let b = function(e) {
   let {
     channel: t
-  } = e, n = (0, o.$5)(t), [b, y] = i.useState(false), _ = (0, l.e7)([d.ZP], () => d.ZP.hasUnreadPins(t.id), [t]), j = (0, c.Aq)(), O = i.useRef(null), x = i.useCallback(() => {
+  } = e, n = (0, o.$5)(t), [b, y] = i.useState(false), _ = (0, l.e7)([d.ZP], () => d.ZP.hasUnreadPins(t.id), [t]), O = (0, c.Aq)(), j = i.useRef(null), x = i.useCallback(() => {
     n || y(e => !e)
   }, [n]);
 
   function v(e) {
-    (null == e ? true : e.shiftKey) || j.dispatch(h.CkL.POPOUT_CLOSE)
+    (null == e ? true : e.shiftKey) || O.dispatch(h.CkL.POPOUT_CLOSE)
   }
   return i.useEffect(() => (u.S.subscribe(h.CkL.TOGGLE_CHANNEL_PINS, x), () => {
     u.S.unsubscribe(h.CkL.TOGGLE_CHANNEL_PINS, x)
   }), [x]), (0, r.jsx)(a.yRy, {
-    targetElementRef: O,
+    targetElementRef: j,
     shouldShow: b,
     animation: a.yRy.Animation.NONE,
     position: "bottom",
@@ -80,12 +80,12 @@ let b = function(e) {
         isShown: i
       } = t;
       return (0, r.jsx)(p.JO, m(g({}, e), {
-        ref: O,
+        ref: j,
         onClick: x,
-        tooltip: i ? null : f.intl.string(f.t["mp1N//"]),
+        tooltip: i ? null : f.intl.string(f.t["mp1N/2"]),
         icon: a.qQX,
         iconSize: 20,
-        "aria-label": f.intl.string(f.t["mp1N//"]),
+        "aria-label": f.intl.string(f.t["mp1N/2"]),
         disabled: n,
         showBadge: _,
         selected: i

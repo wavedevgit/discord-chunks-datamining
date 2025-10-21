@@ -33,8 +33,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk630724 = require("./630724.js"),
   Chunk436620 = require("./436620.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk858518 = require("./858518.js"),
-  Chunk10198 = require("./10198.js");
+  Chunk160033 = require("./160033.js"),
+  Chunk197571 = require("./197571.js");
 
 function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -72,23 +72,23 @@ class w extends Chunk647438.PureComponent {
     return (0, Chunk951288.jsxs)(Chunk388905.ZP, {
       children: [(0, Chunk951288.jsx)(Chunk388905.Ee, {
         src: require("./167969.js"),
-        className: Chunk10198.marginBottom8
+        className: Chunk197571.marginBottom8
       }), (0, Chunk951288.jsx)(Chunk388905.Dx, {
-        className: l()(Chunk10198.marginTop8, Chunk10198.marginBottom8),
-        children: Chunk388032.intl.string(Chunk388032.t.C7ZRNz)
+        className: l()(Chunk197571.marginTop8, Chunk197571.marginBottom8),
+        children: Chunk388032.intl.string(Chunk388032.t.C7ZRNw)
       }), (0, Chunk951288.jsx)(Chunk388905.DK, {
-        children: Chunk388032.intl.string(Chunk388032.t.A6MwXF)
-      }), this.renderButton(Chunk388032.intl.string(Chunk388032.t.fIv16O), this.handleContinue)]
+        children: Chunk388032.intl.string(Chunk388032.t.A6MwXE)
+      }), this.renderButton(Chunk388032.intl.string(Chunk388032.t.fIv16B), this.handleContinue)]
     })
   }
   renderAppOpened() {
     return (0, Chunk951288.jsxs)(Chunk388905.ZP, {
       children: [(0, Chunk951288.jsx)(Chunk388905.Dx, {
-        className: Chunk10198.marginBottom8,
-        children: Chunk388032.intl.string(Chunk388032.t.csrAMD)
+        className: Chunk197571.marginBottom8,
+        children: Chunk388032.intl.string(Chunk388032.t.csrAMJ)
       }), (0, Chunk951288.jsx)(Chunk388905.DK, {
-        children: Chunk388032.intl.string(Chunk388032.t["m1+IBg"])
-      }), this.renderButton(Chunk388032.intl.string(Chunk388032.t.fIv16O), this.handleContinue)]
+        children: Chunk388032.intl.string(Chunk388032.t["m1+IBn"])
+      }), this.renderButton(Chunk388032.intl.string(Chunk388032.t.fIv16B), this.handleContinue)]
     })
   }
   renderAuthenticatedOrDownload() {
@@ -96,7 +96,7 @@ class w extends Chunk647438.PureComponent {
       guildTemplate: e
     } = this.props;
     return (o()(null != module, "guild template must not be null"), module.state === Chunk260539.Rj.RESOLVING) ? (0, Chunk951288.jsx)(Chunk388905.ZP, {
-      className: Chunk858518.authBox,
+      className: Chunk160033.authBox,
       children: (0, Chunk951288.jsx)(Chunk306453.Z, {
         guildTemplate: module
       })
@@ -107,8 +107,8 @@ class w extends Chunk647438.PureComponent {
   renderContinue() {
     return (0, Chunk951288.jsxs)(Chunk388905.ZP, {
       children: [(0, Chunk951288.jsx)(Chunk388905.Dx, {
-        children: Chunk388032.intl.string(Chunk388032.t.fOc4go)
-      }), this.renderButton(Chunk388032.intl.string(Chunk388032.t.fIv16O), this.handleContinue)]
+        children: Chunk388032.intl.string(Chunk388032.t.fOc4gn)
+      }), this.renderButton(Chunk388032.intl.string(Chunk388032.t.fIv16B), this.handleContinue)]
     })
   }
   render() {
@@ -119,12 +119,12 @@ class w extends Chunk647438.PureComponent {
       transitionTo: i,
       location: s
     } = this.props;
-    if (null == module) return this.renderSpinner(Chunk388032.intl.string(Chunk388032.t.ZTNur6));
+    if (null == module) return this.renderSpinner(Chunk388032.intl.string(Chunk388032.t.ZTNur7));
     if (exports === Chunk981631.kEZ.OPEN) return this.renderAppOpened();
-    if (exports === Chunk981631.kEZ.OPENING) return this.renderSpinner(Chunk388032.intl.string(Chunk388032.t["Z+hCVV"]));
+    if (exports === Chunk981631.kEZ.OPENING) return this.renderSpinner(Chunk388032.intl.string(Chunk388032.t["Z+hCVU"]));
     switch (module.state) {
       case Chunk260539.Rj.RESOLVING:
-        return this.renderSpinner(Chunk388032.intl.string(Chunk388032.t["Z+hCVV"]));
+        return this.renderSpinner(Chunk388032.intl.string(Chunk388032.t["Z+hCVU"]));
       case Chunk260539.Rj.RESOLVED:
         if (require || !Chunk436620.KO) return this.renderAuthenticatedOrDownload();
         if (this.props.login) return (0, Chunk951288.jsx)(Chunk781428.Z, {
@@ -189,7 +189,7 @@ function k(e) {
   let s = (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(u.Dx, {
       className: P.header,
-      children: Z.intl.string(Z.t.UNFvtL)
+      children: Z.intl.string(Z.t.UNFvtM)
     }), n, (0, r.jsx)(u.zx, {
       className: P.createButton,
       onClick: i,

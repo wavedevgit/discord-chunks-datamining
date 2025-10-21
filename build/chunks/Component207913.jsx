@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 207913, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => K
@@ -38,9 +38,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk987889 = require("./987889.jsx"),
   Chunk586694 = require("./586694.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk997998 = require("./997998.js"),
+  Chunk943910 = require("./943910.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk66449 = require("./66449.js");
+  Chunk361584 = require("./361584.js");
 
 function B(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -99,7 +99,7 @@ function V(e) {
     user: t.author,
     compact: true,
     isRepliedMessage: true
-  }), T = (0, r.jsx)("div", {
+  }), w = (0, r.jsx)("div", {
     className: U.usernameTagContainer,
     inert: true,
     children: (0, r.jsx)(j.Z, {
@@ -161,7 +161,7 @@ function V(e) {
                 color: null != y ? y : true
               },
               children: (0, r.jsx)(g.Z, {
-                children: T
+                children: w
               })
             }), P]
           }) : (0, r.jsx)(g.Z, {
@@ -248,7 +248,7 @@ function H(e) {
     }), (0, r.jsx)(u.Text, {
       variant: "text-sm/medium",
       className: U.overflowText,
-      children: G.intl.formatToPlainString(k.default.NzUuLC, {
+      children: G.intl.formatToPlainString(k.default.NzUuLD, {
         count: t.length
       })
     })]
@@ -311,15 +311,15 @@ function W(e) {
       let y = true,
         v = null;
       if (e)
-        if (c) v = G.intl.string(G.t["9ddYKi"]);
+        if (c) v = G.intl.string(G.t["9ddYKt"]);
         else if (p) {
         var j;
         y = false, v = null == (j = t.poll) ? true : j.question.text
-      } else v = f ? G.intl.string(G.t.sad2PD) : i ? G.intl.string(G.t.p0oZm5) : s > 1 ? G.intl.formatToPlainString(G.t.rtfTKi, {
+      } else v = f ? G.intl.string(G.t.sad2PH) : i ? G.intl.string(G.t.p0oZmy) : s > 1 ? G.intl.formatToPlainString(G.t.rtfTKp, {
         count: s
-      }) : 1 === s ? G.intl.string(G.t.tCcq5u) : d ? G.intl.format(G.t.zY4v1N, {
+      }) : 1 === s ? G.intl.string(G.t.tCcq5p) : d ? G.intl.format(G.t.zY4v1B, {
         stickerName: t.stickerItems[0].name
-      }) : h ? G.intl.string(G.t.slFYgo) : g ? G.intl.string(G.t.Yvvfw8) : G.intl.string(G.t.sDqZHB);
+      }) : h ? G.intl.string(G.t.slFYgi) : g ? G.intl.string(G.t.Yvvfw9) : G.intl.string(G.t.sDqZHL);
       else y = false, v = (0, r.jsx)(O.ZP, {
         content: a,
         message: t,
@@ -378,14 +378,14 @@ let K = (0, Chunk647438.memo)(function(e) {
       id: l.channelId,
       guild_id: l.guildId,
       type: M.d4z.UNKNOWN,
-      name: G.intl.string(G.t.J90oLS)
+      name: G.intl.string(G.t.J90oLW)
     })
   }), b = (0, R.z)(e => {
     var t;
     return e.isMenuOpenForMessage(null != (t = null == f ? true : f.id) ? t : null)
   }), {
     notificationCenterVariant: _
-  } = (0, T.pN)({
+  } = (0, w.pN)({
     location: "NotificationsInboxMessageUnit"
   }), O = i.useMemo(() => "".concat(null == f ? true : f.author.username, ": ").concat(null == m ? true : m.name), [null == f ? true : f.author.username, null == m ? true : m.name]), y = null != (t = null == a ? true : a.map(e => e.message).filter(e => null != e)) ? t : [];
   return null == f || null == m ? null : (0, r.jsx)(u.kL8, {
@@ -395,11 +395,11 @@ let K = (0, Chunk647438.memo)(function(e) {
       [U.actionMenuOpen]: b
     }),
     onClick: () => {
-      w.Z.inboxItemClick({
+      T.Z.inboxItemClick({
         message: f,
         channel: m,
         isUnread: p,
-        isSidebar: _ === T.jP.SIDEBAR,
+        isSidebar: _ === w.jP.SIDEBAR,
         viewId: h
       })
     },

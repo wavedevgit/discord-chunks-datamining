@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk110560 = require("./110560.jsx"),
   Chunk78826 = require("./78826.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk497377 = require("./497377.js");
+  Chunk858191 = require("./858191.js");
 
 function T(e) {
   let {
@@ -96,7 +96,7 @@ let S = function(e) {
       asset: k,
       assetId: "QuestRewardTile_rewardTileStatic",
       className: I.imageVideoOverlay,
-      alt: v.intl.string(v.t.UMclVF)
+      alt: v.intl.string(v.t.UMclVN)
     } : true,
     videoAsset: {
       asset: M,
@@ -152,7 +152,7 @@ let S = function(e) {
       style: {
         fontSize: A
       },
-      children: v.intl.format(v.t.DYAleX, {})
+      children: v.intl.format(v.t.DYAleT, {})
     }), "icon" === S && (0, r.jsx)("div", {
       className: I.questRewardTileDetailsLearnMore,
       children: (0, r.jsx)(c.d3s, {

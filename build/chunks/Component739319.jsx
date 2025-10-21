@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk454585 = require("./454585.js"),
   Chunk572004 = require("./572004.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk964330 = require("./964330.js");
+  Chunk852950 = require("./852950.js");
 
 function m(e) {
   let {
@@ -51,7 +51,7 @@ function m(e) {
           children: (0, r.jsx)(s.Button, {
             variant: "secondary",
             size: "sm",
-            text: p ? d.intl.string(d.t["t5VZ8/"]) : d.intl.string(d.t.OpuAlJ),
+            text: p ? d.intl.string(d.t.t5VZ88) : d.intl.string(d.t.OpuAlK),
             onClick: () => {
               (0, c.JG)(l, () => g(true))
             }

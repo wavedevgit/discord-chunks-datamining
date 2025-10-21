@@ -21,7 +21,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk791359 = require("./791359.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk321286 = require("./321286.js");
+  Chunk708567 = require("./708567.js");
 
 function v(e) {
   let {
@@ -55,7 +55,7 @@ function v(e) {
               variant: "heading-lg/semibold",
               className: O.header,
               id: I,
-              children: E.intl.string(E.t.F4Zgg4)
+              children: E.intl.string(E.t.F4Zggw)
             }), (0, r.jsx)(f.ZP, {
               contentTypes: i,
               children: e => {

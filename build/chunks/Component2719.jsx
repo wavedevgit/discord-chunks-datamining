@@ -47,7 +47,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk815660 = require("./815660.js"),
   Chunk801461 = require("./801461.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk538271 = require("./538271.js");
+  Chunk378846 = require("./378846.js");
 
 function K(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -106,7 +106,7 @@ function $(e) {
   }, [l.username]);
   let b = !l.isClaimed(),
     y = _ && !l.hasUniqueUsername() && !l.hasVerifiedEmailOrPhone() || b,
-    v = y ? Y.intl.string(Y.t["7Ngnys"]) : true;
+    v = y ? Y.intl.string(Y.t["7Ngnyr"]) : true;
   return (0, r.jsxs)("div", {
     className: o()(W.field, s),
     children: [(0, r.jsx)("div", {
@@ -116,7 +116,7 @@ function $(e) {
         children: [(0, r.jsx)(f.Text, {
           variant: "text-md/medium",
           className: W.fieldTitle,
-          children: Y.intl.string(Y.t.qqhR3N)
+          children: Y.intl.string(Y.t.qqhR3L)
         }), (0, r.jsxs)("div", {
           className: W.usernameInnerRow,
           ref: c,
@@ -136,7 +136,7 @@ function $(e) {
     }), p && (0, r.jsx)("div", {
       className: W.pomeloWarning,
       children: (0, r.jsx)(d.u, {
-        text: Y.intl.string(Y.t.HHC5Z2),
+        text: Y.intl.string(Y.t.HHC5Z4),
         children: (0, r.jsx)(f.Mgn, {
           size: "custom",
           width: 20,
@@ -164,9 +164,9 @@ function $(e) {
         children: (0, r.jsx)(f.Button, {
           variant: "secondary",
           size: "sm",
-          text: g ? Y.intl.string(Y.t["16kTw8"]) : Y.intl.string(Y.t.bt75u7),
+          text: g ? Y.intl.string(Y.t["16kTw/"]) : Y.intl.string(Y.t.bt75uw),
           disabled: y,
-          "aria-label": Y.intl.string(Y.t["JECa9/"]),
+          "aria-label": Y.intl.string(Y.t.JECa91),
           onClick: () => (0, f.ZDy)(async () => {
             if (p) {
               let {
@@ -205,7 +205,7 @@ function ee(e) {
         children: [(0, r.jsx)(f.Text, {
           variant: "text-md/medium",
           className: W.fieldTitle,
-          children: Y.intl.string(Y.t["9AjdkJ"])
+          children: Y.intl.string(Y.t["9AjdkD"])
         }), (0, r.jsx)("div", {
           className: W.usernameInnerRow,
           ref: p,
@@ -213,7 +213,7 @@ function ee(e) {
             tag: "span",
             color: "header-primary",
             variant: "text-md/normal",
-            children: null == _ ? Y.intl.string(Y.t.ep5kjI) : _
+            children: null == _ ? Y.intl.string(Y.t.ep5kjK) : _
           })
         })]
       })
@@ -235,8 +235,8 @@ function ee(e) {
       children: (0, r.jsx)(f.Button, {
         variant: "secondary",
         size: "sm",
-        text: h ? Y.intl.string(Y.t["16kTw8"]) : Y.intl.string(Y.t.bt75u7),
-        "aria-label": Y.intl.string(Y.t.YXeWYG),
+        text: h ? Y.intl.string(Y.t["16kTw/"]) : Y.intl.string(Y.t.bt75uw),
+        "aria-label": Y.intl.string(Y.t.YXeWYM),
         onClick: J
       })
     })]
@@ -257,7 +257,7 @@ function et(e) {
       textVariant: "text-sm/medium",
       "aria-label": s ? o : a,
       onClick: () => l(!s),
-      text: s ? Y.intl.string(Y.t.fgq1go) : Y.intl.string(Y.t.dcztdX)
+      text: s ? Y.intl.string(Y.t.fgq1gs) : Y.intl.string(Y.t.dcztdU)
     })]
   })
 }
@@ -269,9 +269,9 @@ function en(e) {
   } = e;
   if (a.isClaimed())
     if (null == a.email) t = {
-      buttonText: Y.intl.string(Y.t.OYkgVl),
-      buttonAriaLabel: Y.intl.string(Y.t["pvBD+f"]),
-      valueMessage: Y.intl.string(Y.t["8SfTNz"]),
+      buttonText: Y.intl.string(Y.t.OYkgVk),
+      buttonAriaLabel: Y.intl.string(Y.t["pvBD+W"]),
+      valueMessage: Y.intl.string(Y.t["8SfTN/"]),
       handleClick: () => (0, f.ZDy)(async () => {
         let {
           default: e
@@ -284,13 +284,13 @@ function en(e) {
         email: e
       } = a;
       t = {
-        buttonText: Y.intl.string(Y.t.bt75u7),
+        buttonText: Y.intl.string(Y.t.bt75uw),
         buttonAriaLabel: Y.intl.string(Y.t["8peUT0"]),
         valueMessage: (0, r.jsx)(et, {
           text: e,
           censor: G.E,
-          revealLabel: Y.intl.string(Y.t["Zvx+yc"]),
-          hideLabel: Y.intl.string(Y.t.nqTD4e)
+          revealLabel: Y.intl.string(Y.t["Zvx+yV"]),
+          hideLabel: Y.intl.string(Y.t.nqTD4d)
         }),
         handleClick: () => (0, f.ZDy)(async () => {
           let {
@@ -301,9 +301,9 @@ function en(e) {
       }
     }
   else t = {
-    buttonText: Y.intl.string(Y.t.BleMPD),
-    buttonAriaLabel: Y.intl.string(Y.t.BleMPD),
-    valueMessage: Y.intl.string(Y.t.qxk9zs),
+    buttonText: Y.intl.string(Y.t.BleMPB),
+    buttonAriaLabel: Y.intl.string(Y.t.BleMPB),
+    valueMessage: Y.intl.string(Y.t.qxk9zo),
     handleClick: () => E.Z.openClaimAccountModal()
   };
   return (0, r.jsxs)("div", {
@@ -314,7 +314,7 @@ function en(e) {
         children: [(0, r.jsx)(f.Text, {
           variant: "text-md/medium",
           className: W.fieldTitle,
-          children: Y.intl.string(Y.t.tlZllJ)
+          children: Y.intl.string(Y.t.tlZllC)
         }), (0, r.jsx)("div", {
           children: (0, r.jsx)(f.Text, {
             tag: "span",
@@ -365,17 +365,17 @@ function er(e) {
   function _() {
     (0, f.h7j)(e => (0, r.jsx)(p.Z, X(z({}, e), {
       title: Y.intl.string(Y.t["3CTiKi"]),
-      children: a.hasFlag(F.xW$.MFA_SMS) ? Y.intl.string(Y.t.jrhJys) : true,
-      actionText: Y.intl.string(Y.t.N86XcH),
+      children: a.hasFlag(F.xW$.MFA_SMS) ? Y.intl.string(Y.t.jrhJyo) : true,
+      actionText: Y.intl.string(Y.t.N86XcP),
       handleSubmit: e => v.Z.removePhone(e, v.L.USER_SETTINGS_UPDATE)
     })))
   }
   return t = c ? (0, r.jsx)(et, {
     text: s,
     censor: G.n,
-    revealLabel: Y.intl.string(Y.t.eY3xlZ),
-    hideLabel: Y.intl.string(Y.t.jllbv7)
-  }) : Y.intl.string(Y.t.I5kDqq), (0, r.jsxs)("div", {
+    revealLabel: Y.intl.string(Y.t.eY3xlT),
+    hideLabel: Y.intl.string(Y.t["jllbv+"])
+  }) : Y.intl.string(Y.t.I5kDqj), (0, r.jsxs)("div", {
     className: o()(W.field, i),
     children: [(0, r.jsx)("div", {
       className: W.constrainedRow,
@@ -383,7 +383,7 @@ function er(e) {
         children: [(0, r.jsx)(f.Text, {
           variant: "text-md/medium",
           className: W.fieldTitle,
-          children: Y.intl.string(Y.t.kerONj)
+          children: Y.intl.string(Y.t.kerONq)
         }), (0, r.jsx)("div", {
           children: (0, r.jsx)(f.Text, {
             tag: "span",
@@ -400,8 +400,8 @@ function er(e) {
         children: (0, r.jsx)(f.Avr, {
           textVariant: "text-sm/medium",
           variant: "secondary",
-          text: Y.intl.string(Y.t.N86XcH),
-          "aria-label": Y.intl.string(Y.t.Rpn4Aw),
+          text: Y.intl.string(Y.t.N86XcP),
+          "aria-label": Y.intl.string(Y.t.Rpn4A3),
           onClick: _
         })
       }) : null, (0, r.jsx)("div", {
@@ -410,8 +410,8 @@ function er(e) {
         children: (0, r.jsx)(f.Button, {
           variant: "secondary",
           size: "sm",
-          text: c ? Y.intl.string(Y.t.bt75u7) : Y.intl.string(Y.t.OYkgVl),
-          "aria-label": c ? Y.intl.string(Y.t.YDabSU) : Y.intl.string(Y.t.SfUuEx),
+          text: c ? Y.intl.string(Y.t.bt75uw) : Y.intl.string(Y.t.OYkgVk),
+          "aria-label": c ? Y.intl.string(Y.t.YDabSe) : Y.intl.string(Y.t["SfUuE+"]),
           onClick: d
         })
       })]
@@ -424,7 +424,7 @@ function ei(e) {
     user: t
   } = e, n = (0, b.Z)({
     id: t.id,
-    label: Y.intl.string(Y.t["/AXYnJ"])
+    label: Y.intl.string(Y.t["/AXYnE"])
   }), a = j.Sb.useSetting(), o = i.useRef(null);
   return a && x.wS ? (0, r.jsx)(f.yRy, {
     targetElementRef: o,
@@ -436,14 +436,14 @@ function ei(e) {
         onClose: t,
         onSelect: true,
         navId: "copy-id",
-        "aria-label": Y.intl.string(Y.t.RANhlJ),
+        "aria-label": Y.intl.string(Y.t.RANhlE),
         children: n
       })
     },
     children: e => (0, r.jsx)(f.P3F, X(z({}, e), {
       innerRef: o,
       className: W.overflowMenuButton,
-      "aria-label": Y.intl.string(Y.t.DEoVWV),
+      "aria-label": Y.intl.string(Y.t.DEoVWZ),
       children: (0, r.jsx)(f.xhG, {
         size: "md",
         color: "currentColor",
@@ -456,7 +456,7 @@ function ei(e) {
 function ea(e) {
   let {
     className: t
-  } = e, n = (0, g.l6)(), a = (0, g.Jm)(), s = !n || a, l = i.useMemo(() => n ? a ? Y.intl.string(Y.t.sK0dmJ) : Y.intl.string(Y.t.XxRj7e) : Y.intl.string(Y.t.UX0OdX), [n, a]);
+  } = e, n = (0, g.l6)(), a = (0, g.Jm)(), s = !n || a, l = i.useMemo(() => n ? a ? Y.intl.string(Y.t.sK0dmH) : Y.intl.string(Y.t.XxRj7f) : Y.intl.string(Y.t.UX0Ode), [n, a]);
   return (0, r.jsxs)("div", {
     className: o()(W.field, t),
     children: [(0, r.jsx)("div", {
@@ -465,7 +465,7 @@ function ea(e) {
         children: [(0, r.jsx)(f.Text, {
           variant: "text-md/medium",
           className: W.fieldTitle,
-          children: Y.intl.string(Y.t["/52UY2"])
+          children: Y.intl.string(Y.t["/52UYy"])
         }), (0, r.jsx)("div", {
           children: (0, r.jsx)(f.Text, {
             tag: "span",
@@ -481,8 +481,8 @@ function ea(e) {
       children: (0, r.jsx)(f.Button, {
         variant: "secondary",
         size: "sm",
-        text: a ? Y.intl.string(Y.t.KPGVWl) : Y.intl.string(Y.t.yNGjyM),
-        "aria-label": a ? Y.intl.string(Y.t.KPGVWl) : Y.intl.string(Y.t.yNGjyM),
+        text: a ? Y.intl.string(Y.t.KPGVWl) : Y.intl.string(Y.t.yNGjyK),
+        "aria-label": a ? Y.intl.string(Y.t.KPGVWl) : Y.intl.string(Y.t.yNGjyK),
         onClick: () => h.Z.showAgeVerificationGetStartedModal({
           entryPoint: m.cU.ACCOUNT_AGE_GROUP
         })
@@ -511,7 +511,7 @@ function eo() {
     }),
     p = (0, Chunk438976.Z)();
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk538271.accountProfileCard,
+    className: Chunk378846.accountProfileCard,
     children: [(0, Chunk951288.jsx)(Chunk867176.b, {
       user: exports,
       displayProfile: require,
@@ -522,9 +522,9 @@ function eo() {
       bannerHeight: 100,
       themePadding: 0
     }), (0, Chunk951288.jsxs)("div", {
-      className: Chunk538271.userInfo,
+      className: Chunk378846.userInfo,
       children: [(0, Chunk951288.jsx)(Q, {
-        className: Chunk538271.avatar,
+        className: Chunk378846.avatar,
         src: Chunk692547,
         avatarDecoration: Chunk28664,
         status: Chunk120356,
@@ -532,39 +532,39 @@ function eo() {
         "aria-label": exports.username
       }), (0, Chunk951288.jsxs)("div", {
         children: [(0, Chunk951288.jsxs)("div", {
-          className: Chunk538271.profileCardUsernameRow,
+          className: Chunk378846.profileCardUsernameRow,
           children: [(0, Chunk951288.jsx)(Chunk129861.Z, {
             user: exports,
-            className: Chunk538271.userTag,
-            discriminatorClass: Chunk538271.discriminator,
+            className: Chunk378846.userTag,
+            discriminatorClass: Chunk378846.discriminator,
             displayNameStylesType: Chunk821795.F.STATIC
           }), (0, Chunk951288.jsx)(ei, {
             user: exports
           })]
         }), (0, Chunk951288.jsx)(Chunk184325.Z, {
           badges: Chunk647438,
-          className: Chunk538271.badgeList,
-          badgeClassName: Chunk538271.badge
+          className: Chunk378846.badgeList,
+          badgeClassName: Chunk378846.badge
         })]
       }), (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: "primary",
         size: "sm",
-        text: Chunk388032.intl.string(Chunk388032.t["2p2aY2"]),
+        text: Chunk388032.intl.string(Chunk388032.t["2p2aYz"]),
         onClick: J
       })]
     }), (0, Chunk951288.jsxs)("div", {
-      className: Chunk538271.background,
+      className: Chunk378846.background,
       children: [null != Chunk512722 ? (0, Chunk951288.jsx)(Chunk481060.Text, {
-        className: Chunk538271.avatarError,
+        className: Chunk378846.avatarError,
         variant: "text-xs/normal",
         color: "text-danger",
         children: Chunk512722
       }) : null, (0, Chunk951288.jsxs)("div", {
-        className: Chunk538271.fieldList,
+        className: Chunk378846.fieldList,
         children: [(0, Chunk951288.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.ACCOUNT_DISPLAY_NAME,
           children: (0, Chunk951288.jsx)(ee, {
-            className: Chunk538271.fieldSpacerBottom,
+            className: Chunk378846.fieldSpacerBottom,
             user: exports
           })
         }), (0, Chunk951288.jsx)(Chunk921801.F, {
@@ -575,19 +575,19 @@ function eo() {
         }), (0, Chunk951288.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.ACCOUNT_EMAIL,
           children: (0, Chunk951288.jsx)(en, {
-            className: Chunk538271.fieldSpacer,
+            className: Chunk378846.fieldSpacer,
             user: exports
           })
         }), (0, Chunk951288.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.ACCOUNT_PHONE_NUMBER,
           children: (0, Chunk951288.jsx)(er, {
-            className: Chunk538271.fieldSpacer,
+            className: Chunk378846.fieldSpacer,
             user: exports
           })
         }), (0, Chunk951288.jsx)(Chunk921801.F, {
           setting: Chunk726985.s6.ACCOUNT_AGE_GROUP,
           children: (0, Chunk951288.jsx)(ea, {
-            className: Chunk538271.fieldSpacer
+            className: Chunk378846.fieldSpacer
           })
         })]
       })]

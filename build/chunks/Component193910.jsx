@@ -1,4 +1,4 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 193910, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => M
@@ -31,7 +31,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk921944 = require("./921944.js"),
   Chunk489887 = require("./489887.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk878066 = require("./878066.js");
+  Chunk749723 = require("./749723.js");
 let A = RegExp("(.*)```(\\w+)\\n(.*)```(.*)", "s");
 
 function w() {
@@ -131,7 +131,7 @@ function M(e) {
     })
   }
 
-  function K() {
+  function q() {
     v.default.track(P.rMx.CHANNEL_ATTACH_MENU_START_ACTIVITY_CLICKED, {
       channel_type: t.type,
       channel_id: t.id,
@@ -171,7 +171,7 @@ function M(e) {
     onSelect: M,
     navId: "channel-attach",
     onClose: _,
-    "aria-label": T.intl.string(T.t.Xm41aW),
+    "aria-label": T.intl.string(T.t.Xm41aV),
     className: N.menu,
     children: f.map(function(e) {
       var n;
@@ -273,7 +273,7 @@ function M(e) {
           return (0, i.jsx)(s.sNh, {
             id: "activity",
             label: r,
-            action: K,
+            action: q,
             hint: (0, i.jsx)(w, {})
           }, "activity");
         case S.r.SCHEDULED_MESSAGE:
@@ -297,12 +297,12 @@ function M(e) {
             children: V ? null : (0, i.jsxs)(i.Fragment, {
               children: [(0, i.jsx)(s.sNh, {
                 id: "summarize_thread_for_everyone",
-                label: T.intl.string(T.t.eCzSdX),
+                label: T.intl.string(T.t.eCzSdd),
                 iconLeft: s.BFJ,
                 action: () => b.Z.summarizeThread(t, false)
               }, "summarize_thread_for_everyone"), (0, i.jsx)(s.sNh, {
                 id: "summarize_thread_for_me",
-                label: T.intl.string(T.t["HOe+Hh"]),
+                label: T.intl.string(T.t["HOe+Hq"]),
                 iconLeft: s.tBG,
                 action: () => b.Z.summarizeThread(t)
               }, "summarize_thread_for_me")]

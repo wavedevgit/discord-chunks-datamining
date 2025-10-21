@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 53425, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk823379 = require("./823379.js"),
   Chunk734190 = require("./734190.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk95701 = require("./95701.js");
+  Chunk113914 = require("./113914.js");
 let g = Chunk647438.memo(function(e) {
   let {
     channel: t,
@@ -34,7 +34,7 @@ let g = Chunk647438.memo(function(e) {
     className: h.container,
     children: (0, r.jsxs)("ul", {
       role: "group",
-      "aria-label": f.intl.formatToPlainString(f.t.EiyIi4, {
+      "aria-label": f.intl.formatToPlainString(f.t.EiyIi6, {
         channelName: t.name
       }),
       children: [(0, r.jsx)("div", {

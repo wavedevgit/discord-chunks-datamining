@@ -33,9 +33,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk305813 = require("./305813.jsx"),
   Chunk203872 = require("./203872.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk62222 = require("./62222.js"),
+  Chunk592186 = require("./592186.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk845378 = require("./845378.js");
+  Chunk300119 = require("./300119.js");
 
 function w(e) {
   var t, n, w, B;
@@ -44,14 +44,14 @@ function w(e) {
     analyticsLocations: M,
     guildId: G,
     onClose: Y
-  } = e, H = (0, s.e7)([C.default], () => C.default.getCurrentUser()), F = null != (t = v.ZP.useName(H)) ? t : "", z = (0, s.e7)([h.Z, S.Z, _.ZP], () => {
+  } = e, H = (0, s.e7)([j.default], () => j.default.getCurrentUser()), F = null != (t = v.ZP.useName(H)) ? t : "", z = (0, s.e7)([h.Z, S.Z, b.ZP], () => {
     var e, t, n;
-    return null != G ? null != (t = null != (e = h.Z.getPendingNickname()) ? e : _.ZP.getNick(G, null == H ? true : H.id)) ? t : F : null != (n = S.Z.getPendingGlobalName()) ? n : F
-  }, [G, H, F]), U = (0, s.e7)([b.Z], () => b.Z.getGuild(G)), {
+    return null != G ? null != (t = null != (e = h.Z.getPendingNickname()) ? e : b.ZP.getNick(G, null == H ? true : H.id)) ? t : F : null != (n = S.Z.getPendingGlobalName()) ? n : F
+  }, [G, H, F]), U = (0, s.e7)([_.Z], () => _.Z.getGuild(G)), {
     userDisplayNameStyles: q,
     guildDisplayNameStyles: K,
-    pendingDisplayNameStyles: V
-  } = (0, x.mD)(H, G), X = true !== V ? V : null != K ? K : q, [W, $] = o.useState(null != (n = null == X ? true : X.fontId) ? n : a.C.DEFAULT), [J, Q] = o.useState(null != (w = null == X ? true : X.effectId) ? w : i.m.SOLID), ee = (0, D.R)(J), et = (0, D.R)(i.m.GRADIENT), en = null != (B = null == X ? true : X.colors) ? B : [], [el, eo] = o.useState(en.length > 0 && J !== i.m.GRADIENT ? en[0] : ee.defaultColors[0]), [er, ei] = o.useState(en.length > 0 && J === i.m.GRADIENT ? en : et.defaultColors);
+    pendingDisplayNameStyles: X
+  } = (0, x.mD)(H, G), V = true !== X ? X : null != K ? K : q, [W, $] = o.useState(null != (n = null == V ? true : V.fontId) ? n : a.C.DEFAULT), [J, Q] = o.useState(null != (w = null == V ? true : V.effectId) ? w : i.m.SOLID), ee = (0, D.R)(J), et = (0, D.R)(i.m.GRADIENT), en = null != (B = null == V ? true : V.colors) ? B : [], [el, eo] = o.useState(en.length > 0 && J !== i.m.GRADIENT ? en[0] : ee.defaultColors[0]), [er, ei] = o.useState(en.length > 0 && J === i.m.GRADIENT ? en : et.defaultColors);
   (0, f.Z)({
     type: r.ImpressionTypes.POPOUT,
     name: r.ImpressionNames.DISPLAY_NAME_STYLES_MODAL
@@ -62,8 +62,8 @@ function w(e) {
     analyticsLocations: ea
   } = (0, m.ZP)(M, p.Z.EDIT_DISPLAY_NAME_STYLES_MODAL), es = o.useMemo(() => J === i.m.GRADIENT ? er : [el], [J, er, el]), ec = o.useMemo(() => {
     var e;
-    return W !== (null == X ? true : X.fontId) || J !== (null == X ? true : X.effectId) || !(0, c.E)(es, null != (e = null == X ? true : X.colors) ? e : [])
-  }, [X, W, J, es]), ed = o.useCallback(() => {
+    return W !== (null == V ? true : V.fontId) || J !== (null == V ? true : V.effectId) || !(0, c.E)(es, null != (e = null == V ? true : V.colors) ? e : [])
+  }, [V, W, J, es]), ed = o.useCallback(() => {
     if (ec) {
       let e = es;
       J === i.m.SOLID && es.length > 0 && es[0] === ee.defaultColors[0] && (e = []);
@@ -72,7 +72,7 @@ function w(e) {
         effectId: J,
         colors: e
       };
-      null != G ? (0, g.N_)(t) : (0, u.NI)(t), j.default.track(R.rMx.DISPLAY_NAME_STYLES_APPLIED, {
+      null != G ? (0, g.N_)(t) : (0, u.NI)(t), C.default.track(R.rMx.DISPLAY_NAME_STYLES_APPLIED, {
         font_name: a.C[W],
         effect_name: i.m[J],
         colors: es
@@ -83,8 +83,8 @@ function w(e) {
       fontId: e,
       effectId: t,
       colors: n
-    } = (0, y.aY)();
-    $(e), Q(t), t === i.m.GRADIENT ? ei(n) : eo(n[0]), j.default.track(R.rMx.DISPLAY_NAME_STYLES_SURPRISE_ME)
+    } = (0, N.aY)();
+    $(e), Q(t), t === i.m.GRADIENT ? ei(n) : eo(n[0]), C.default.track(R.rMx.DISPLAY_NAME_STYLES_SURPRISE_ME)
   }, [ei, eo]), ep = o.useCallback(e => {
     Q(e)
   }, [Q]), em = o.useCallback(e => {
@@ -116,7 +116,7 @@ function w(e) {
               className: L.sectionHeader,
               children: (0, l.jsx)(d.Heading, {
                 variant: "heading-lg/semibold",
-                children: I.intl.string(A.default.ZPMAlZ)
+                children: I.intl.string(A.default.ZPMAlX)
               })
             }), (0, l.jsx)(O.Z, {
               selectedFontId: W,
@@ -127,7 +127,7 @@ function w(e) {
               selectedEffectId: J,
               setSelectedEffectId: ep,
               className: L.selectionSubSection
-            }), (0, l.jsx)(N.Z, {
+            }), (0, l.jsx)(y.Z, {
               selectedColors: es,
               setSelectedColors: em,
               selectedEffectId: J,

@@ -32,7 +32,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk526594 = require("./526594.js");
+  Chunk673517 = require("./673517.js");
 
 function S(e) {
   let {
@@ -40,26 +40,26 @@ function S(e) {
     currentUser: t,
     guildId: S,
     channelId: w,
-    messageId: R,
-    roleId: D,
+    messageId: D,
+    roleId: R,
     sessionId: L,
     initialSection: M,
     initialSubsection: B,
     transitionState: U,
     openedAt: k,
     onClose: G,
-    sourceAnalyticsLocations: F = [],
-    showGuildProfile: V
-  } = e, W = S === T.ME ? true : S, H = (0, u.ZP)(n.id, V ? W : true), z = c.ZP.getName(W, w, n), Y = (0, a.Dt)(), {
+    sourceAnalyticsLocations: V = [],
+    showGuildProfile: F
+  } = e, W = S === T.ME ? true : S, H = (0, u.ZP)(n.id, F ? W : true), z = c.ZP.getName(W, w, n), Y = (0, a.Dt)(), {
     analyticsLocations: K
-  } = (0, s.ZP)([...F, r.Z.USER_PROFILE_MODAL]), J = (0, d.ZB)({
+  } = (0, s.ZP)([...V, r.Z.USER_PROFILE_MODAL]), J = (0, d.ZB)({
     layout: "MODAL",
     userId: n.id,
     sourceSessionId: L,
     guildId: W,
     channelId: w,
-    messageId: R,
-    roleId: D
+    messageId: D,
+    roleId: R
   }), q = (0, N.Z)(n), X = (0, m.Z)({
     user: n,
     guildId: W,
@@ -86,7 +86,7 @@ function S(e) {
           component: (0, l.jsx)(i.nn4, {
             children: (0, l.jsx)(i.H, {
               id: Y,
-              children: E.intl.format(E.t.KRe1Fh, {
+              children: E.intl.format(E.t.KRe1Fk, {
                 name: z
               })
             })
@@ -115,7 +115,7 @@ function S(e) {
                   guildId: W,
                   channelId: w,
                   themeType: P.l.MODAL
-                }), (0, l.jsx)(_.Z, {
+                }), (0, l.jsx)(Z.Z, {
                   user: n,
                   themeType: P.l.MODAL,
                   hasEntered: U === i.Dvm.ENTERED,
@@ -125,14 +125,14 @@ function S(e) {
                   className: C.headerButtons,
                   children: [(0, l.jsx)("div", {
                     className: C.messageTextButton,
-                    children: (0, l.jsx)(Z.H, {
+                    children: (0, l.jsx)(_.H, {
                       variant: "secondary",
                       userId: n.id,
                       onClose: o.Z.popAll
                     })
                   }), (0, l.jsx)("div", {
                     className: C.messageIconButton,
-                    children: (0, l.jsx)(Z.v, {
+                    children: (0, l.jsx)(_.v, {
                       variant: "secondary",
                       userId: n.id,
                       onClose: o.Z.popAll

@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
 function I() {
   return (0, Chunk951288.jsxs)(Chunk893996.Z, {
     title: Chunk388032.intl.string(Chunk388032.t.WWaFn5),
-    description: Chunk388032.intl.format(Chunk388032.t["/6sFWV"], {
+    description: Chunk388032.intl.format(Chunk388032.t["/6sFWa"], {
       helpArticle: (0, Chunk630759.uV)()
     }),
     webSetting: Chunk726985.s6.PRIVACY_AND_SAFETY_VOICE_SECURITY,
@@ -38,7 +38,7 @@ function I() {
 
 function T() {
   return (0, Chunk951288.jsx)(Chunk893996.Z, {
-    title: Chunk388032.intl.string(Chunk388032.t.BG7Qsb),
+    title: Chunk388032.intl.string(Chunk388032.t.BG7QsQ),
     webSetting: Chunk726985.s6.PRIVACY_AND_SAFETY_RECEIVE_DISCORD_DATA_CATEGORY,
     children: (0, Chunk951288.jsx)(Chunk623196.Z, {})
   })
@@ -47,7 +47,7 @@ function T() {
 function S() {
   let e = (0, Chunk695463.W)("UserSettingsDataAndPrivacy");
   return (0, Chunk951288.jsxs)(Chunk893996.Z, {
-    title: Chunk388032.intl.string(Chunk388032.t.SRZyHh),
+    title: Chunk388032.intl.string(Chunk388032.t.SRZyHg),
     webSetting: Chunk726985.s6.PRIVACY_AND_SAFETY_DISCORD_DATA_USAGE_CATEGORY,
     children: [(0, Chunk951288.jsx)(Chunk402583.Z, {}), (0, Chunk951288.jsx)(Chunk940021.Z, {}), module && (0, Chunk951288.jsx)(Chunk265390.Z, {}), (0, Chunk951288.jsx)(Chunk883382.Z, {}), (0, Chunk951288.jsx)(Chunk993315.Z, {})]
   })
@@ -57,7 +57,7 @@ function A() {
   return (0, Chunk493773.ZP)(() => {
     (0, Chunk924628.I)(), (0, Chunk398826.A)()
   }), (0, Chunk951288.jsx)(Chunk10298.N, {
-    header: Chunk388032.intl.string(Chunk388032.t.OAuOHB),
+    header: Chunk388032.intl.string(Chunk388032.t.OAuOHD),
     notice: (0, Chunk951288.jsx)(Chunk441007.Z, {
       page: Chunk441007.N.DATA_AND_PRIVACY
     }),

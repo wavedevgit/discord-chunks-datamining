@@ -20,9 +20,9 @@ var Chunk951288 = require("./951288.js"),
 function p(e) {
   let {
     guildId: t
-  } = e, n = (0, a.e7)([h.Z], () => h.Z.getGuild(t)), [p, k] = l.useState(null), [v, C] = l.useState(""), {
+  } = e, n = (0, a.e7)([h.Z], () => h.Z.getGuild(t)), [p, k] = l.useState(null), [C, v] = l.useState(""), {
     createMultipleConfettiAt: x
-  } = l.useContext(d.h), m = (0, a.e7)([u.Z], () => u.Z.useReducedMotion, []), w = async t => {
+  } = l.useContext(d.h), m = (0, a.e7)([s.Z], () => s.Z.useReducedMotion, []), w = async t => {
     let {
       onClose: n,
       guildId: i
@@ -30,10 +30,10 @@ function p(e) {
     t.preventDefault(), k(null);
     try {
       await (0, c.e)(i, {
-        nick: v
+        nick: C
       }), null == n || n()
     } catch (e) {
-      k(new s.Hx(e))
+      k(new u.Hx(e))
     }
   }, {
     transitionState: S,
@@ -42,16 +42,16 @@ function p(e) {
   return l.useEffect(() => {
     E && x(window.innerWidth / 2, window.innerHeight / 2)
   }, [x, E]), (0, i.jsx)(r.u_l, {
-    title: b.intl.formatToPlainString(b.t["d+6kzs"], {
+    title: b.intl.formatToPlainString(b.t["d+6kzl"], {
       guildName: null == n ? true : n.name
     }),
     actions: [{
       variant: "secondary",
-      text: b.intl.string(b.t["ETE/oK"]),
+      text: b.intl.string(b.t["ETE/oC"]),
       onClick: _
     }, {
       variant: "primary",
-      text: b.intl.string(b.t.Np4yXV),
+      text: b.intl.string(b.t.Np4yXU),
       onClick: w
     }],
     transitionState: S,
@@ -59,14 +59,14 @@ function p(e) {
     children: (0, i.jsx)("form", {
       onSubmit: w,
       children: (0, i.jsx)(o.oil, {
-        label: b.intl.string(b.t.pt6jh4),
-        placeholder: b.intl.string(b.t.RfWvWF),
-        description: b.intl.string(b.t.VAaqfH),
+        label: b.intl.string(b.t.pt6jhx),
+        placeholder: b.intl.string(b.t.RfWvWI),
+        description: b.intl.string(b.t.VAaqfF),
         onChange: e => {
-          C(e)
+          v(e)
         },
         error: null == p ? true : p.getFirstFieldErrorMessage("name"),
-        value: v
+        value: C
       })
     })
   })

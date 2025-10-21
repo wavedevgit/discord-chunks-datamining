@@ -8,7 +8,7 @@ require("./647438.js");
 var Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk614905 = require("./614905.js"),
+  Chunk76349 = require("./76349.js"),
   Chunk768982 = require("./768982.js");
 let a = t => {
   let {
@@ -78,11 +78,11 @@ function u(t) {
       type: "image",
       src: s.Z
     },
-    title: c.intl.string(c.t.UVuXCg),
+    title: c.intl.string(c.t.UVuXCs),
     onClose: u,
     transitionState: l,
     actions: [{
-      text: c.intl.string(c.t.obLqZ2),
+      text: c.intl.string(c.t.obLqZ8),
       variant: "primary",
       onClick: u
     }],
@@ -91,10 +91,10 @@ function u(t) {
       icon: i.nRN,
       foreground: "var(--status-danger)"
     }), (0, n.jsx)(a, {
-      text: c.intl.string(c.t.x58YtL),
+      text: c.intl.string(c.t.x58YtH),
       icon: i.gkL
     }), (0, n.jsx)(a, {
-      text: c.intl.string(c.t.XtVqlZ),
+      text: c.intl.string(c.t.XtVqla),
       icon: i.V9
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(r)) : (function(t, e) {

@@ -14,71 +14,71 @@ var Chunk951288 = require("./951288.js"),
   Chunk39377 = require("./39377.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk288428 = require("./288428.js");
+  Chunk126373 = require("./126373.js");
 let g = [{
     feature: Chunk981631.Qa3.SINGLE_PLAYER,
-    getText: () => Chunk388032.intl.string(Chunk388032.t["V+/FjI"]),
-    getTooltip: () => Chunk388032.intl.string(Chunk388032.t["w+X9sb"]),
+    getText: () => Chunk388032.intl.string(Chunk388032.t["V+/FjO"]),
+    getTooltip: () => Chunk388032.intl.string(Chunk388032.t["w+X9sT"]),
     IconComponent: Chunk481060.tBG
   }, {
     feature: Chunk981631.Qa3.LOCAL_MULTIPLAYER,
-    getText: () => Chunk388032.intl.string(Chunk388032.t.srnWrq),
-    getTooltip: () => Chunk388032.intl.string(Chunk388032.t.sDdLWF),
+    getText: () => Chunk388032.intl.string(Chunk388032.t.srnWru),
+    getTooltip: () => Chunk388032.intl.string(Chunk388032.t.sDdLWA),
     IconComponent: Chunk481060.BFJ
   }, {
     feature: Chunk981631.Qa3.ONLINE_MULTIPLAYER,
-    getText: () => Chunk388032.intl.string(Chunk388032.t.xPHbgI),
-    getTooltip: () => Chunk388032.intl.string(Chunk388032.t.g6kR4O),
+    getText: () => Chunk388032.intl.string(Chunk388032.t.xPHbgA),
+    getTooltip: () => Chunk388032.intl.string(Chunk388032.t.g6kR4D),
     IconComponent: Chunk481060.BFJ
   }, {
     feature: Chunk981631.Qa3.PVP,
-    getText: () => Chunk388032.intl.string(Chunk388032.t.qhgwx8),
-    getTooltip: () => Chunk388032.intl.string(Chunk388032.t["5jGrhI"]),
+    getText: () => Chunk388032.intl.string(Chunk388032.t.qhgwxx),
+    getTooltip: () => Chunk388032.intl.string(Chunk388032.t["5jGrhN"]),
     IconComponent: Chunk481060.HI3
   }, {
     feature: Chunk981631.Qa3.LOCAL_COOP,
     getText: () => Chunk388032.intl.string(Chunk388032.t.FqbalJ),
-    getTooltip: () => Chunk388032.intl.string(Chunk388032.t.vIgDgY),
+    getTooltip: () => Chunk388032.intl.string(Chunk388032.t.vIgDgd),
     IconComponent: Chunk481060.BFJ
   }, {
     feature: Chunk981631.Qa3.ONLINE_COOP,
-    getText: () => Chunk388032.intl.string(Chunk388032.t.lDHO4e),
-    getTooltip: () => Chunk388032.intl.string(Chunk388032.t.VXDpho),
+    getText: () => Chunk388032.intl.string(Chunk388032.t.lDHO4Y),
+    getTooltip: () => Chunk388032.intl.string(Chunk388032.t.VXDphs),
     IconComponent: Chunk481060.BFJ
   }, {
     feature: Chunk981631.Qa3.CROSS_PLATFORM,
-    getText: () => Chunk388032.intl.string(Chunk388032.t.SWo2HR),
-    getTooltip: () => Chunk388032.intl.string(Chunk388032.t.ll2wzc),
+    getText: () => Chunk388032.intl.string(Chunk388032.t.SWo2Hf),
+    getTooltip: () => Chunk388032.intl.string(Chunk388032.t.ll2wzY),
     IconComponent: Chunk481060.DuK
   }, {
     feature: Chunk981631.Qa3.RICH_PRESENCE,
-    getText: () => Chunk388032.intl.string(Chunk388032.t.PVSVtL),
-    getTooltip: () => Chunk388032.intl.string(Chunk388032.t.O6Yp4e),
+    getText: () => Chunk388032.intl.string(Chunk388032.t.PVSVtI),
+    getTooltip: () => Chunk388032.intl.string(Chunk388032.t.O6Yp4d),
     IconComponent: Chunk6074.Z
   }, {
     feature: Chunk981631.Qa3.DISCORD_GAME_INVITES,
     getText: () => Chunk388032.intl.string(Chunk388032.t.agm68P),
-    getTooltip: () => Chunk388032.intl.string(Chunk388032.t.kS2vFB),
+    getTooltip: () => Chunk388032.intl.string(Chunk388032.t.kS2vFN),
     IconComponent: Chunk38761.Z
   }, {
     feature: Chunk981631.Qa3.SPECTATOR_MODE,
-    getText: () => Chunk388032.intl.string(Chunk388032.t["ZtiU7+"]),
-    getTooltip: () => Chunk388032.intl.string(Chunk388032.t.kUtiKS),
+    getText: () => Chunk388032.intl.string(Chunk388032.t.ZtiU7w),
+    getTooltip: () => Chunk388032.intl.string(Chunk388032.t.kUtiKa),
     IconComponent: Chunk481060.Odl
   }, {
     feature: Chunk981631.Qa3.CONTROLLER_SUPPORT,
     getText: () => Chunk388032.intl.string(Chunk388032.t.UlBQ8P),
-    getTooltip: () => Chunk388032.intl.string(Chunk388032.t.iG00jI),
+    getTooltip: () => Chunk388032.intl.string(Chunk388032.t.iG00jA),
     IconComponent: Chunk481060.xoD
   }, {
     feature: Chunk981631.Qa3.CLOUD_SAVES,
-    getText: () => Chunk388032.intl.string(Chunk388032.t.rOcNrK),
-    getTooltip: () => Chunk388032.intl.string(Chunk388032.t.kvw18P),
+    getText: () => Chunk388032.intl.string(Chunk388032.t.rOcNrD),
+    getTooltip: () => Chunk388032.intl.string(Chunk388032.t.kvw18E),
     IconComponent: Chunk863969.Z
   }, {
     feature: Chunk981631.Qa3.SECURE_NETWORKING,
-    getText: () => Chunk388032.intl.string(Chunk388032.t.GKFWLy),
-    getTooltip: () => Chunk388032.intl.string(Chunk388032.t.VudViI),
+    getText: () => Chunk388032.intl.string(Chunk388032.t.GKFWL3),
+    getTooltip: () => Chunk388032.intl.string(Chunk388032.t.VudViJ),
     IconComponent: Chunk39377.Z
   }],
   m = e => {
@@ -127,7 +127,7 @@ class b extends Chunk647438.PureComponent {
       }, t)
     });
     return 0 === exports.length ? null : (0, Chunk951288.jsxs)("div", {
-      className: Chunk288428.features,
+      className: Chunk126373.features,
       children: [(0, Chunk951288.jsx)(Chunk770146.Z, {
         children: Chunk388032.intl.string(Chunk388032.t.XXENra)
       }), exports]

@@ -44,8 +44,8 @@ var Chunk120356 = require("./120356.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk24202 = require("./24202.js"),
-  Chunk318271 = require("./318271.js"),
+  Chunk644219 = require("./644219.js"),
+  Chunk526980 = require("./526980.js"),
   Chunk872905 = require("./872905.js"),
   Chunk578478 = require("./578478.js");
 
@@ -91,7 +91,7 @@ let X = (e, t, i) => {
     (0, l.ZDy)(async () => {
       let {
         PremiumBrandRefreshSubscriptionCancellationModal: a
-      } = await Promise.all([n.e("17938"), n.e("69432"), n.e("26526"), n.e("60088")]).then(n.bind(n, 48813));
+      } = await Promise.all([n.e("17938"), n.e("69432"), n.e("26526"), n.e("46573")]).then(n.bind(n, 48813));
       return n => (0, r.jsx)(a, q(K({}, n), {
         analyticsLocations: e,
         initialStep: i,
@@ -146,14 +146,14 @@ let X = (e, t, i) => {
             expiresAt: y.expires_at,
             className: F.heroOfferCountdown
           }), (0, r.jsx)(x.Z, {
-            children: k ? Z.intl.format(Z.t["3yZP0N"], {
+            children: k ? Z.intl.format(Z.t["3yZP0G"], {
               percent: y.discount.amount
             }) : m
           }), k && null != O && (0, r.jsx)(l.Text, {
             className: F.churnEntrypointDescriptionBrandRefresh,
             variant: "text-sm/medium",
             color: "text-primary",
-            children: Z.intl.format(Z.t["3Q4wCw"], {
+            children: Z.intl.format(Z.t["3Q4wCy"], {
               discountedPrice: O,
               billingPeriod: (0, E.JP)(y.discount.user_usage_limit_interval),
               numMonths: y.discount.user_usage_limit
@@ -169,12 +169,12 @@ let X = (e, t, i) => {
             variant: "expressive",
             icon: l.SrA,
             size: "md",
-            text: Z.intl.string(Z.t.zrCzVF),
+            text: Z.intl.string(Z.t.zrCzVB),
             onClick: () => X(C, D, L.R.CONFIRM_DISCOUNT)
           }), (0, r.jsx)(R.Z, {
             variant: z || k ? "secondary" : "expressive",
             size: "md",
-            buttonTextOverride: Z.intl.string(Z.t["3KomGR"])
+            buttonTextOverride: Z.intl.string(Z.t["3KomGa"])
           })]
         }), N]
       })
@@ -210,14 +210,14 @@ let X = (e, t, i) => {
           variant: "display-lg",
           color: "always-white",
           className: O ? F.churnDiscountHeader : F.header,
-          children: O && null != p ? Z.intl.format(Z.t["3yZP0N"], {
+          children: O && null != p ? Z.intl.format(Z.t["3yZP0G"], {
             percent: p.discount.amount
           }) : c
         }), O && null != m && (0, r.jsx)(l.Text, {
           className: F.churnEntrypointDescription,
           variant: "text-sm/medium",
           color: "always-white",
-          children: Z.intl.format(Z.t["3Q4wCw"], {
+          children: Z.intl.format(Z.t["3Q4wCy"], {
             discountedPrice: m,
             billingPeriod: (0, E.JP)(p.discount.user_usage_limit_interval),
             numMonths: p.discount.user_usage_limit
@@ -234,13 +234,13 @@ let X = (e, t, i) => {
               variant: "expressive",
               icon: l.SrA,
               size: "md",
-              text: Z.intl.string(Z.t.zrCzVF),
+              text: Z.intl.string(Z.t.zrCzVB),
               onClick: () => X(b, y, L.R.CONFIRM_DISCOUNT),
               fullWidth: true
             }), (0, r.jsx)(R.Z, {
               variant: "overlay-secondary",
               size: "md",
-              buttonTextOverride: Z.intl.string(Z.t.Ve9Ge3),
+              buttonTextOverride: Z.intl.string(Z.t.Ve9Ge6),
               fullWidth: true
             })]
           }), !O && (0, r.jsx)("div", {
@@ -249,7 +249,7 @@ let X = (e, t, i) => {
               look: s.iL.FILLED,
               color: s.Tt.BRAND,
               textOptions: {
-                textOverride: Z.intl.string(Z.t["3KomGR"])
+                textOverride: Z.intl.string(Z.t["3KomGa"])
               },
               className: F.button
             })
@@ -267,29 +267,29 @@ let X = (e, t, i) => {
       children: [(0, Chunk951288.jsx)("img", {
         src: Chunk578478,
         alt: "",
-        className: Chunk24202.headerArtV2
+        className: Chunk644219.headerArtV2
       }), (0, Chunk951288.jsx)("div", {
-        className: Chunk24202.containerV2,
+        className: Chunk644219.containerV2,
         "data-testid": "subscriber-nitro-home-hero-header",
         children: (0, Chunk951288.jsxs)("div", {
-          className: Chunk24202.contentV2,
+          className: Chunk644219.contentV2,
           children: [exports, (0, Chunk951288.jsx)(Chunk481060.Heading, {
             variant: "display-lg",
             color: "always-white",
-            className: Chunk24202.header,
+            className: Chunk644219.header,
             children: module
           }), (0, Chunk951288.jsx)("div", {
-            className: Chunk24202.premiumSubscribeButton,
+            className: Chunk644219.premiumSubscribeButton,
             children: (0, Chunk951288.jsx)(Chunk736519.Z, {
               look: Chunk755721.iL.FILLED,
               color: Chunk755721.Tt.BRAND,
               textOptions: {
-                textOverride: Chunk388032.intl.string(Chunk388032.t["3KomGR"])
+                textOverride: Chunk388032.intl.string(Chunk388032.t["3KomGa"])
               },
-              className: Chunk24202.button
+              className: Chunk644219.button
             })
           }), (0, Chunk951288.jsx)(Chunk647277._, {
-            className: Chunk24202.referralBanner
+            className: Chunk644219.referralBanner
           })]
         })
       })]
@@ -324,7 +324,7 @@ let X = (e, t, i) => {
             look: s.iL.FILLED,
             color: s.Tt.BRAND,
             textOptions: {
-              textOverride: Z.intl.string(Z.t["3KomGR"])
+              textOverride: Z.intl.string(Z.t["3KomGa"])
             },
             className: F.button
           })
@@ -344,15 +344,15 @@ let X = (e, t, i) => {
       discountedPrice: s
     } = e, {
       analyticsLocations: c
-    } = (0, d.ZP)(u.Z.PREMIUM_MARKETING_HERO_CTA), h = (0, O.W)(), m = (0, b.Vi)(), E = (0, y._O)(), v = Z.intl.string(Z.t.qYKftb), I = (0, S.b)(), T = (0, r.jsx)(J, {
+    } = (0, d.ZP)(u.Z.PREMIUM_MARKETING_HERO_CTA), h = (0, O.W)(), m = (0, b.Vi)(), E = (0, y._O)(), v = Z.intl.string(Z.t.qYKftX), I = (0, S.b)(), T = (0, r.jsx)(J, {
       className: t
-    }), A = Z.intl.string(Z.t.ifwQZW), {
+    }), A = Z.intl.string(Z.t.ifwQZb), {
       fractionalState: C,
       endsAt: N
     } = (0, _.Z)(), R = (0, f.ZP)(N, f.aj.CREDITS_ENDS_IN);
     h || m ? T = (0, r.jsx)(ee, {
       isEligibleForBogoPromotion: m
-    }) : I && (v = Z.intl.string(Z.t.qYKftb), T = (0, r.jsx)($, {}));
+    }) : I && (v = Z.intl.string(Z.t.qYKftX), T = (0, r.jsx)($, {}));
     let P = null;
     if (C === G.a$.NONE || h) P = n ? (0, r.jsx)(k.Z, {
       enablePremiumBrandRefresh: true,
@@ -373,7 +373,7 @@ let X = (e, t, i) => {
             color: "var(--premium-tier-2-purple-for-gradients)"
           })
         }),
-        t = Z.intl.format(Z.t["yR+oDA"], {
+        t = Z.intl.format(Z.t["yR+oDD"], {
           helpCenterLink: g.Z.getArticleURL(B.BhN.FRACTIONAL_PREMIUM_ABOUT)
         });
       P = (0, r.jsx)(p.Z, {

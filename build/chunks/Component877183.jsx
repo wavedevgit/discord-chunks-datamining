@@ -16,7 +16,7 @@ var Chunk704215 = require("./704215.js"),
   Chunk312839 = require("./312839.js"),
   Chunk987650 = require("./987650.js"),
   Chunk388032 = require("./388032.jsx");
-let f = e => (0, l.QR)(e, (0, u.P)(), h.t["z8/sgI"]);
+let f = e => (0, l.QR)(e, (0, u.P)(), h.t["z8/sgJ"]);
 
 function g(e) {
   let {
@@ -49,7 +49,7 @@ function g(e) {
         return e
       }({}, e), i = i = {
         title: h.intl.string(h.t.xxADho),
-        body: h.intl.string(h.t.GtUrGB)
+        body: h.intl.string(h.t.GtUrGD)
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -64,8 +64,8 @@ function g(e) {
     return e
   }({
     icon: n(639525),
-    title: h.intl.string(h.t.r0ObgY),
-    body: h.intl.string(h.t.hc6XFx),
+    title: h.intl.string(h.t.r0ObgV),
+    body: h.intl.string(h.t.hc6XF7),
     hint: f,
     notifType: p.n0.OopWelcomeNudge
   }, e), {
@@ -86,7 +86,7 @@ function g(e) {
       },
       children: h.intl.string(h.t["9MyuT0"])
     }),
-    confirmText: t ? h.intl.string(h.t.TxyTbm) : true,
+    confirmText: t ? h.intl.string(h.t.TxyTbk) : true,
     onConfirmClick: t ? () => {
       b("unlock"), s.Z.setInputLocked(false, (0, d.getPID)())
     } : true,

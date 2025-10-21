@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 932711, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => a
@@ -15,7 +15,7 @@ function a(e) {
     notificationCenterVariant: n
   } = (0, l.pN)({
     location: "NotificationsInboxTooltip"
-  }), a = n === l.jP.LEGACY ? o.intl.string(o.t.GSmTKC) : o.intl.string(o.t.HcoRu7);
+  }), a = n === l.jP.LEGACY ? o.intl.string(o.t.GSmTKJ) : o.intl.string(o.t.HcoRu0);
   return (0, r.jsx)(i.u, {
     spacing: 12,
     position: "right",

@@ -1,4 +1,4 @@
-/** Chunk was on 65825 **/
+/** Chunk was on 87943 **/
 /** chunk id: 517525, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => F
@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk643930 = require("./643930.js");
+  Chunk386393 = require("./386393.js");
 
 function j(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -118,7 +118,7 @@ let Z = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
       } = (0, m.O)(),
       F = (0, s.e7)([v.default], () => v.default.getCurrentUser()),
       L = c && !h.ZP.isPremium(F, I.PremiumTypes.TIER_1) && !h.ZP.canStreamQuality(h.ZP.StreamQuality.MID, F),
-      U = i.useCallback(() => {
+      V = i.useCallback(() => {
         L && M && (0, p.ZDy)(async () => {
           let {
             default: e
@@ -136,11 +136,11 @@ let Z = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
           location_stack: N
         }), x(true))
       }, [t, l, M, Z, x, N]), null == T) return null;
-    let V = (0, r.jsx)(d.u, {
-      text: D ? C.intl.string(C.t.q8TiVl) : M ? C.intl.string(C.t.IHgpEh) : C.intl.string(C.t.vLb0VV),
+    let U = (0, r.jsx)(d.u, {
+      text: D ? C.intl.string(C.t.q8TiVt) : M ? C.intl.string(C.t.IHgpEn) : C.intl.string(C.t.vLb0VW),
       position: "bottom",
       children: (0, r.jsxs)(p.P3F, {
-        onClick: U,
+        onClick: V,
         className: a()(w.qualityIndicator, b, g.eE[f], D ? w.qualityIndicatorLowQuality : w.qualityIndicatorFullQuality, {
           [w.clickable]: L && M
         }),
@@ -157,7 +157,7 @@ let Z = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
       })
     });
     return (0, r.jsx)(p.IGR, {
-      text: V,
+      text: U,
       className: a()(A, w.qualityIndicatorBadge, {
         [w.qualityIndicatorBadgePremium]: M && R
       }),

@@ -31,16 +31,16 @@ function c(t, e) {
     }
   }
   let I = (0, o.Z)(n, null != e ? e : "", d),
-    [O, A] = i.useState(I),
-    S = function(t, e) {
+    [O, S] = i.useState(I),
+    A = function(t, e) {
       if (t.size !== e.size) returntrue;
       for (let n of t)
         if (!e.has(n)) returntrue;
       returnfalse
     }(O, I);
   return i.useEffect(() => {
-    S && A(I)
-  }, [S, I]), i.useMemo(() => {
+    A && S(I)
+  }, [A, I]), i.useMemo(() => {
     var t, e, i;
     let l = new s.Z;
     return {

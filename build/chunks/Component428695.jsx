@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk830352 = require("./830352.js");
+  Chunk454703 = require("./454703.js");
 let g = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
   m = function(e) {
     let {
@@ -86,7 +86,7 @@ let g = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
           }), null == y || y()
         },
         className: h.close,
-        "aria-label": f.intl.string(f.t.WAI6xs),
+        "aria-label": f.intl.string(f.t.WAI6xu),
         children: (0, r.jsx)(c.Dio, {
           size: "md",
           color: "currentColor",

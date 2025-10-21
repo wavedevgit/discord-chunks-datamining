@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk30513 = require("./30513.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk685518 = require("./685518.js");
+  Chunk349085 = require("./349085.js");
 let v = e => {
   let {
     className: t,
@@ -65,12 +65,12 @@ let v = e => {
         color: "interactive-normal",
         className: O.body,
         variant: "text-sm/normal",
-        children: y.intl.format(y.t.AXWla2, {
+        children: y.intl.format(y.t.AXWla1, {
           count: (0, g.A3)(E.Eu4.TIER_1)
         })
       }), (0, r.jsx)(l.Avr, {
         variant: "primary",
-        text: y.intl.string(y.t["Gb+BJC"]),
+        text: y.intl.string(y.t["Gb+BJD"]),
         onClick: e
       })]
     })
@@ -90,10 +90,10 @@ let v = e => {
         color: "interactive-normal",
         className: O.body,
         variant: "text-sm/normal",
-        children: y.intl.string(y.t.S83wgo)
+        children: y.intl.string(y.t.S83wgh)
       }), (0, r.jsx)(l.Avr, {
         variant: "primary",
-        text: y.intl.string(y.t.bwNjur),
+        text: y.intl.string(y.t.bwNjug),
         onClick: e
       })]
     })

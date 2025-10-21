@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk332325 = require("./332325.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk736689 = require("./736689.js");
+  Chunk641719 = require("./641719.js");
 
 function h(e) {
   let {
@@ -25,16 +25,16 @@ function h(e) {
   } = e, r = (0, o.e7)([u.ZP], () => u.ZP.getKeybindForAction(m.kg4.SAVE_CLIP)), h = (0, o.e7)([p.Z], () => p.Z.getSettings().clipsEnabled), x = t ? b.noSearchResultsImage : b.noClipsImage, j = a.useCallback(() => {
     n(), (0, c.Z)(f.Z.CLIPS)
   }, [n]), y = (() => {
-    if (!h) return g.intl.format(g.t["3iveam"], {
+    if (!h) return g.intl.format(g.t["3iveao"], {
       onClick: j
     });
-    if (t) return g.intl.string(g.t["xrEs6+"]);
+    if (t) return g.intl.string(g.t["xrEs6/"]);
     if (null == r) return g.intl.format(g.t.jpKk7e, {
       onClick: j
     });
     {
       let e = d.BB(r.shortcut, true);
-      return g.intl.format(g.t["xY/8Ky"], {
+      return g.intl.format(g.t["xY/8K5"], {
         keybind: e,
         keybindHook: () => (0, l.jsx)("span", {
           className: b.keybindHintKeys,

@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 671066, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -15,7 +15,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk594174 = require("./594174.js"),
   Chunk556012 = require("./556012.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk75765 = require("./75765.js");
+  Chunk464992 = require("./464992.js");
 
 function p(e) {
   var t;
@@ -55,14 +55,14 @@ function p(e) {
       }), f && (0, r.jsxs)(a.Text, {
         color: "text-muted",
         variant: "text-xs/medium",
-        children: [null != v && g.intl.format(g.t["8Sr/am"], {
+        children: [null != v && g.intl.format(g.t["8Sr/ar"], {
           channelName: v
         }), (0, r.jsx)(a.P3F, {
           onClick: b(true),
           className: m.editChannel,
           tag: "span",
           role: "link",
-          children: g.intl.string(g.t["3gUsJS"])
+          children: g.intl.string(g.t["3gUsJb"])
         })]
       })]
     }), (0, r.jsx)("div", {

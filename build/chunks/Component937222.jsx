@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 937222, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -60,7 +60,7 @@ function h(e) {
     children: (0, r.jsx)(l.zxk, {
       disabled: !(x && n),
       variant: "primary",
-      text: f.intl.string(f.t.yG2pUl),
+      text: f.intl.string(f.t.yG2pUi),
       onClick: C
     })
   }) : j ? (0, r.jsx)("div", {

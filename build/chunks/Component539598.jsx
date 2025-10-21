@@ -1,4 +1,4 @@
-/** Chunk was on 90020 **/
+/** Chunk was on 95215 **/
 /** chunk id: 539598, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -13,7 +13,7 @@ var Chunk28664 = require("./28664.jsx"),
   Chunk200615 = require("./200615.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk242081 = require("./242081.js");
+  Chunk58174 = require("./58174.js");
 
 function m(e) {
   let {
@@ -24,8 +24,8 @@ function m(e) {
   return (0, r.jsxs)("div", {
     className: d.container,
     children: [(0, r.jsx)(i.u, {
-      text: u.intl.string(u.t.MPFyJy),
-      "aria-label": u.intl.string(u.t.X3Ekj4),
+      text: u.intl.string(u.t.MPFyJ5),
+      "aria-label": u.intl.string(u.t.X3Ekj8),
       children: (0, r.jsx)(a.SrA, {
         size: "md",
         color: "currentColor",
@@ -33,7 +33,7 @@ function m(e) {
       })
     }), (0, r.jsx)(a.Text, {
       variant: "text-xs/medium",
-      children: u.intl.format(u.t.Sv8iiY, {
+      children: u.intl.format(u.t.Sv8iic, {
         price: m,
         subscribeNowHook: e => (0, r.jsx)(s.F, {
           text: e

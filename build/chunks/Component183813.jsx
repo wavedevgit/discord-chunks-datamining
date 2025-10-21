@@ -1,4 +1,4 @@
-/** Chunk was on 37786 **/
+/** Chunk was on 84071 **/
 /** chunk id: 183813, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   S: () => S
@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk614277 = require("./614277.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk739621 = require("./739621.js");
+  Chunk950174 = require("./950174.js");
 
 function S(e) {
   var t, n;
@@ -38,7 +38,7 @@ function S(e) {
     selectedGiftingPromotionReward: P,
     claimableRewards: E,
     claimableVariants: O
-  } = (0, m.wD)(), T = (0, s.e7)([h.default], () => h.default.getCurrentUser()), k = (0, C.ZP)(E, O, P), [N, A] = i.useState(null != (n = null == k ? true : k.defaultCategory) ? n : C.KN.Trick), [Z, M] = i.useState(null == k || null == (t = k.defaultHighlightedReward) ? true : t.skuId), [R, B] = i.useState(false), F = i.useRef(N), H = i.useMemo(() => null == O ? null != E ? E : [] : O.flatMap(e => {
+  } = (0, m.wD)(), T = (0, s.e7)([_.default], () => _.default.getCurrentUser()), k = (0, C.ZP)(E, O, P), [A, N] = i.useState(null != (n = null == k ? true : k.defaultCategory) ? n : C.KN.Trick), [Z, M] = i.useState(null == k || null == (t = k.defaultHighlightedReward) ? true : t.skuId), [R, B] = i.useState(false), F = i.useRef(A), H = i.useMemo(() => null == O ? null != E ? E : [] : O.flatMap(e => {
     var t, n;
     return e.variants.length < C.mo ? [] : (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -57,7 +57,7 @@ function S(e) {
         })
       }
       return e
-    }({}, e.variants[N]), n = n = {
+    }({}, e.variants[A]), n = n = {
       name: e.name
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
@@ -69,12 +69,12 @@ function S(e) {
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t)
-  }), [O, E, N]);
+  }), [O, E, A]);
   i.useEffect(() => {
     let e = null == k ? true : k.defaultHighlightedReward;
     !R && null == P && null != e && null != e && H.some(t => t.skuId === e.skuId) && (w(e), M(e.skuId))
   }, [k, R, P, H, w]), i.useEffect(() => {
-    (null == k ? true : k.defaultCategory) == null || R || A(k.defaultCategory)
+    (null == k ? true : k.defaultCategory) == null || R || N(k.defaultCategory)
   }, [null == k ? true : k.defaultCategory, R]), l()(null != L, "Expected plan to selected"), l()(null != y, "Expected selectedSkuId"), l()(null != I, "Step should be set");
   let G = i.useMemo(() => null != Z && (null != E ? E : []).some(e => e.skuId === Z), [Z, E]),
     U = i.useMemo(() => null != P && H.some(e => e.skuId === P.skuId), [H, P]),
@@ -86,8 +86,8 @@ function S(e) {
     }
     G && H.some(e => e.skuId === Z) || null == Z || (M(true), w(true))
   }, [H, G, Z, w]), i.useEffect(() => {
-    F.current === N || U || (w(true), M(true)), F.current = N
-  }, [N, U, w]);
+    F.current === A || U || (w(true), M(true)), F.current = A
+  }, [A, U, w]);
   let z = e => {
       w(H.find(t => t.skuId === e)), M(e), B(true)
     },
@@ -102,7 +102,7 @@ function S(e) {
         user: T,
         onSelect: z,
         selectedSkuId: Z,
-        category: N
+        category: A
       }, e.skuId)
     }),
     K = (0, r.jsx)(g.O3, {
@@ -111,7 +111,7 @@ function S(e) {
         className: v.modalFooter,
         children: (0, r.jsx)(p.y, {
           onStepChange: e => {
-            null != T && null != P && _.default.track(j.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
+            null != T && null != P && h.default.track(j.rMx.GIFT_PROMOTION_REWARD_SELECTED, {
               user_id: T.id,
               reward_sku_id: P.skuId
             }), a(e)
@@ -140,7 +140,7 @@ function S(e) {
         variant: "text-md/normal",
         color: "text-secondary",
         className: v.headerSubtitle,
-        children: b.intl.string(b.t.MhwtRU)
+        children: b.intl.string(b.t.MhwtRc)
       }), (0, r.jsx)(o.olH, {
         "data-migration-pending": true,
         className: v.closeButton,
@@ -153,8 +153,8 @@ function S(e) {
         justify: "center",
         align: "center",
         children: [null != O && O.length > 1 && (0, r.jsx)(u.Z, {
-          defaultCategory: N,
-          onCategoryChange: A
+          defaultCategory: A,
+          onCategoryChange: N
         }), (0, r.jsx)("div", {
           className: v.giftRewardShopCardsGrid,
           children: W

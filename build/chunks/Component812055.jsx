@@ -1,4 +1,4 @@
-/** Chunk was on 41348 **/
+/** Chunk was on 79041 **/
 /** chunk id: 812055, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C,
@@ -67,7 +67,7 @@ function C(e) {
       },
       gradientColor: "purple",
       actions: [{
-        text: g.intl.string(g.t.fwPura),
+        text: g.intl.string(g.t.fwPurU),
         onClick: () => {
           (0, c.Z)({
             nextStatus: f.Sk.ONLINE

@@ -17,7 +17,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk44359 = require("./44359.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk438540 = require("./438540.js");
+  Chunk8280 = require("./8280.js");
 
 function m(e, t, n) {
   let {
@@ -50,13 +50,13 @@ function g(e) {
   return O ? (0, r.jsx)(a.Text, {
     variant: "text-xxs/semibold",
     color: g ? "text-feedback-warning" : "text-muted",
-    children: v ? p.intl.format(p.t.MVS9pa, {
+    children: v ? p.intl.format(p.t.MVS9pV, {
       onSettingsClick: e => {
         e.stopPropagation(), (0, s.Z)(true, true), (0, u.openUserSettings)(c.n.OVERLAY_PANEL, {
           section: _.oAB.OVERLAY
         })
       }
-    }) : p.intl.string(p.t.PIeSHB)
+    }) : p.intl.string(p.t.PIeSHF)
   }) : y ? E ? (0, r.jsx)("div", {
     className: h.keybindFlexboxLayout,
     children: p.intl.format(n, {

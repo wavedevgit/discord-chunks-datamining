@@ -10,7 +10,7 @@ var Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
   Chunk410030 = require("./410030.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk127439 = require("./127439.js"),
+  Chunk978774 = require("./978774.js"),
   Chunk982404 = require("./982404.js"),
   Chunk299156 = require("./299156.js");
 let d = function(e) {
@@ -38,7 +38,7 @@ let d = function(e) {
           children: [(0, r.jsx)(i.Text, {
             variant: "text-md/medium",
             className: c.churnFooterCopy,
-            children: l.intl.format(l.t["2gem09"], {
+            children: l.intl.format(l.t["2gem05"], {
               percent: s.discount.amount,
               numMonths: s.discount.user_usage_limit
             })
@@ -58,11 +58,11 @@ let d = function(e) {
               }), (0, r.jsx)(i.Text, {
                 variant: "text-sm/semibold",
                 className: c.churnFooterClaimCopy,
-                children: l.intl.string(l.t.zrCzVF)
+                children: l.intl.string(l.t.zrCzVB)
               })]
             }), (0, r.jsx)(i.Button, {
               variant: "primary",
-              text: l.intl.string(l.t["3PatS0"]),
+              text: l.intl.string(l.t["3PatSz"]),
               onClick: () => null == d ? true : d()
             })]
           })]

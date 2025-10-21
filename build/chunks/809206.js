@@ -69,7 +69,7 @@ function m() {
 }
 
 function g(e, t) {
-  let n = t ? f.intl.string(f.t["8lQ2ra"]) : f.intl.string(f.t.jf5GGR),
+  let n = t ? f.intl.string(f.t["8lQ2rR"]) : f.intl.string(f.t.jf5GGb),
     i = t ? u.ANM.DELETE_ACCOUNT : u.ANM.DISABLE_ACCOUNT,
     a = t => r.tn.post({
       url: i,
@@ -157,7 +157,7 @@ function b(e) {
   }, {
     checkEnabled: false,
     modalProps: {
-      title: f.intl.string(f.t.clQc1d)
+      title: f.intl.string(f.t.clQc1f)
     },
     hooks: {
       onEarlyClose: () => o.Z.dispatch({
@@ -190,7 +190,7 @@ function O(e) {
   o.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_PENDING_AVATAR",
     avatar: e
-  }), null == e ? a.uv.announce(f.intl.string(f.t["f1+oNj"])) : a.uv.announce(f.intl.string(f.t.NstziY))
+  }), null == e ? a.uv.announce(f.intl.string(f.t["f1+oNk"])) : a.uv.announce(f.intl.string(f.t.NstziV))
 }
 
 function v(e) {

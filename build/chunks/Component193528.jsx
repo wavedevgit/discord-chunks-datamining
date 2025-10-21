@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk654904 = require("./654904.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk472564 = require("./472564.js");
+  Chunk707892 = require("./707892.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -119,7 +119,7 @@ function I(e) {
             borderColor: w
           },
           className: m.swatch,
-          "aria-label": h.intl.string(h.t.Qp04hI),
+          "aria-label": h.intl.string(h.t.Qp04hK),
           focusProps: {
             ringTarget: A
           },

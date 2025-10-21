@@ -29,7 +29,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk561466 = require("./561466.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk119280 = require("./119280.js");
+  Chunk624315 = require("./624315.js");
 
 function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -85,11 +85,11 @@ function L() {
     "aria-label": "Playground Settings",
     children: [(0, Chunk951288.jsx)(Chunk828214.sN, {
       id: "appearance",
-      label: Chunk388032.intl.string(Chunk388032.t["iHH+k5"]),
+      label: Chunk388032.intl.string(Chunk388032.t["iHH+ky"]),
       children: module.filter(e => null != e)
     }), (0, Chunk951288.jsx)(Chunk828214.sN, {
       id: "accessibility",
-      label: Chunk388032.intl.string(Chunk388032.t.G0neg4),
+      label: Chunk388032.intl.string(Chunk388032.t.G0neg7),
       children: exports.filter(e => null != e)
     }), (0, Chunk951288.jsx)(Chunk828214.sN, {
       id: "experiments",

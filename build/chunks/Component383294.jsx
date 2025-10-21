@@ -1,4 +1,4 @@
-/** Chunk was on 81501 **/
+/** Chunk was on 13025 **/
 /** chunk id: 383294, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => w
@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk215023 = require("./215023.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk898694 = require("./898694.js"),
+  Chunk378658 = require("./378658.js"),
   Chunk557256 = require("./557256.js"),
   Chunk582425 = require("./582425.js"),
   Chunk345554 = require("./345554.js"),
@@ -61,18 +61,18 @@ function Z() {
     }
   });
   return (0, Chunk951288.jsxs)(Chunk258536.animated.div, {
-    className: Chunk898694.videoLayers,
+    className: Chunk378658.videoLayers,
     style: Chunk960919,
     children: [!Chunk120356 && (0, Chunk951288.jsx)("div", {
-      className: Chunk898694.videoPlaceholder
+      className: Chunk378658.videoPlaceholder
     }), (0, Chunk951288.jsx)(Chunk70097.Z, {
       ref: Chunk100527,
       autoPlay: false,
       loop: true,
       muted: true,
       playsInline: true,
-      className: c()(Chunk898694.videoAsset, {
-        [Chunk898694.hidden]: exports
+      className: c()(Chunk378658.videoAsset, {
+        [Chunk378658.hidden]: exports
       }),
       controls: false,
       children: (0, Chunk951288.jsx)("source", {
@@ -83,8 +83,8 @@ function Z() {
       autoPlay: true,
       muted: true,
       playsInline: true,
-      className: c()(Chunk898694.videoAsset, {
-        [Chunk898694.hidden]: !exports
+      className: c()(Chunk378658.videoAsset, {
+        [Chunk378658.hidden]: !exports
       }),
       controls: false,
       onLoadedData: () => Chunk110924(true),
@@ -129,7 +129,7 @@ function T(e) {
       children: [(0, r.jsx)(Z, {}), (0, r.jsx)(l.Heading, {
         variant: "heading-lg/medium",
         className: O.title,
-        children: x.intl.format(x.t["8l9H0t"], {
+        children: x.intl.format(x.t["8l9H0s"], {
           balanceHook: () => (0, r.jsxs)("span", {
             className: O.orbsBalance,
             children: [(0, r.jsx)(g.Z, {
@@ -141,7 +141,7 @@ function T(e) {
       }), (0, r.jsx)(l.Text, {
         variant: "text-sm/normal",
         className: O.subtext,
-        children: x.intl.string(x.t.EDUOIC)
+        children: x.intl.string(x.t.EDUOIH)
       }), (0, r.jsxs)(l.ButtonGroup, {
         className: O.buttonContainer,
         fullWidthContainer: true,
@@ -150,12 +150,12 @@ function T(e) {
         children: [(0, r.jsx)(l.Button, {
           variant: "primary",
           fullWidth: true,
-          text: x.intl.string(x.t.WYchdX),
+          text: x.intl.string(x.t.WYchde),
           onClick: a
         }), (0, r.jsx)(l.Button, {
           variant: "secondary",
           fullWidth: true,
-          text: x.intl.string(x.t["7kTAgI"]),
+          text: x.intl.string(x.t["7kTAgJ"]),
           onClick: () => window.open(j.EYA.PAID_TERMS_ORBS)
         })]
       })]
@@ -170,18 +170,18 @@ function T(e) {
         children: [(0, r.jsx)(l.Heading, {
           variant: "heading-xl/medium",
           className: O.errorHeader,
-          children: x.intl.string(x.t.tWYWJy)
+          children: x.intl.string(x.t["tWYWJ+"])
         }), (0, r.jsx)(l.Text, {
           variant: "text-md/normal",
           color: "text-muted",
-          children: x.intl.string(x.t.JNQRU1)
+          children: x.intl.string(x.t.JNQRU4)
         })]
       }), (0, r.jsx)("div", {
         className: O.buttonContainer,
         children: (0, r.jsx)(l.Button, {
           variant: "primary",
           fullWidth: true,
-          text: x.intl.string(x.t.cpT0Cg),
+          text: x.intl.string(x.t.cpT0Cq),
           onClick: o
         })
       })]

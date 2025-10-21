@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk34305 = require("./34305.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk936390 = require("./936390.js");
+  Chunk77839 = require("./77839.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -78,7 +78,7 @@ function v(e) {
     children: [(0, r.jsx)(a.Heading, {
       variant: "heading-md/semibold",
       className: _.hiddenLibraryApplicationsTitle,
-      children: b.intl.string(b.t["5PJtrK"])
+      children: b.intl.string(b.t["5PJtrH"])
     }), i]
   })
 }
@@ -101,17 +101,17 @@ class y extends Chunk647438.PureComponent {
       installShortcutStartMenu: n
     } = this.props;
     return (0, Chunk951288.jsxs)("div", {
-      className: Chunk936390.body,
+      className: Chunk77839.body,
       children: [(0, Chunk804739.Q)() ? (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
         gap: 16,
         children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
-          label: Chunk388032.intl.string(Chunk388032.t["9ID+Ki"]),
-          description: Chunk388032.intl.string(Chunk388032.t.vT61Nz),
+          label: Chunk388032.intl.string(Chunk388032.t["9ID+Kh"]),
+          description: Chunk388032.intl.string(Chunk388032.t.vT61N0),
           checked: exports,
           onChange: this.handleToggleShortcutDesktop
         }), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk481060.rsf, {
           label: Chunk388032.intl.string(Chunk388032.t.vNpUMz),
-          description: Chunk388032.intl.string(Chunk388032.t.cpYp0N),
+          description: Chunk388032.intl.string(Chunk388032.t.cpYp0H),
           checked: require,
           onChange: this.handleToggleShortcutStartMenu
         }), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk34305.Z, {})]
@@ -126,7 +126,7 @@ class y extends Chunk647438.PureComponent {
       children: [(0, Chunk951288.jsx)(Chunk957657.Z, {
         currentRoute: Chunk981631.Z5c.APPLICATION_LIBRARY_SETTINGS
       }), (0, Chunk951288.jsx)(Chunk481060.w0Z, {
-        className: Chunk936390.scroller,
+        className: Chunk77839.scroller,
         children: this.renderBody()
       })]
     })

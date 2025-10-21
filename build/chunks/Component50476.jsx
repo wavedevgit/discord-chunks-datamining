@@ -1,4 +1,4 @@
-/** Chunk was on 3408 **/
+/** Chunk was on 17013 **/
 /** chunk id: 50476, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => i
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk634034 = require("./634034.js");
+  Chunk437587 = require("./437587.js");
 let i = function(e) {
   let {
     onDesktop: t,
@@ -19,13 +19,13 @@ let i = function(e) {
     size: "sm",
     children: [(0, r.jsx)(s.Button, {
       onClick: t,
-      text: a.intl.string(a.t.QXc019),
+      text: a.intl.string(a.t["QXc01+"]),
       variant: "secondary",
       icon: s.pzj,
       iconPosition: "end"
     }), (0, r.jsx)(s.Button, {
       onClick: n,
-      text: a.intl.string(a.t["8lAfuL"]),
+      text: a.intl.string(a.t["8lAfuB"]),
       variant: "secondary",
       icon: s.iWm,
       iconPosition: "end"

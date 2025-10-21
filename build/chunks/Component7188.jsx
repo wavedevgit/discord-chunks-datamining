@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk354459 = require("./354459.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk605299 = require("./605299.js");
+  Chunk572065 = require("./572065.js");
 
 function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -151,7 +151,7 @@ function w(e) {
     animation: o.yRy.Animation.FADE,
     children: e => (0, r.jsx)(E.Z, T(A(T({}, e), {
       buttonRef: v,
-      label: O.intl.string(O.t.tmiYpK),
+      label: O.intl.string(O.t.tmiYpF),
       iconComponent: x,
       onClick: t => {
         (null != S || null != u) && (0, l.v)(null != S ? S : u, l.d.STREAM_SETTINGS), null == e || e.onClick(t)

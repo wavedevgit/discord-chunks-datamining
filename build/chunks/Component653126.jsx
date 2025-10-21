@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk268865 = require("./268865.jsx"),
   Chunk29121 = require("./29121.js"),
   Chunk215023 = require("./215023.js"),
-  Chunk374874 = require("./374874.js");
+  Chunk213301 = require("./213301.js");
 let j = Chunk647438.memo(function(e) {
     let {
       product: t,
@@ -45,8 +45,8 @@ let j = Chunk647438.memo(function(e) {
       onFocus: Z,
       onBlur: w,
       primaryCTAText: H,
-      secondaryCTAIcon: D,
-      productNameClassName: M,
+      secondaryCTAIcon: M,
+      productNameClassName: D,
       badgeClassName: F,
       cardClassName: W,
       prioritizedCurrency: V,
@@ -54,15 +54,15 @@ let j = Chunk647438.memo(function(e) {
     } = e, z = (0, g.Nd)(), G = null == z ? true : z.tab, K = (0, O.zQ)(t), Y = l.useRef(null), {
       isHoveringOrFocusing: q
     } = (0, d.Z)(Y), {
-      handleCardVisibilityChange: Q
-    } = (0, p.E)(t.skuId, G === S.AW.CATALOG ? "full" : G), J = (0, b.J7)(t, u.Z.COLLECTIBLES_SHOP_CARD, U), X = t.type === o.Z.VARIANTS_GROUP && !j, $ = !T || !L, ee = !k || X, et = $ || X;
-    return (0, r.jsx)(s.$, {
+      handleCardVisibilityChange: J
+    } = (0, p.E)(t.skuId, G === S.AW.CATALOG ? "full" : G), Q = (0, b.J7)(t, u.Z.COLLECTIBLES_SHOP_CARD, U), X = t.type === s.Z.VARIANTS_GROUP && !j, $ = !T || !L, ee = !k || X, et = $ || X;
+    return (0, r.jsx)(o.$, {
       innerRef: Y,
-      onChange: Q,
+      onChange: J,
       threshold: 0,
       children: (0, r.jsx)(c.kL8, {
         ref: Y,
-        onClick: null != B ? B : J,
+        onClick: null != B ? B : Q,
         "aria-label": K,
         className: a()(W, y.productCardContainer),
         onFocus: () => null == Z ? true : Z(t.skuId),
@@ -86,7 +86,7 @@ let j = Chunk647438.memo(function(e) {
             className: y.footerContainer,
             children: [!i && (0, r.jsx)(C.Z, {
               skuId: t.skuId,
-              className: M
+              className: D
             }), ee && (0, r.jsxs)("div", {
               className: a()(y.footerInfoContainer, {
                 [y.footerHideOnHover]: et
@@ -116,7 +116,7 @@ let j = Chunk647438.memo(function(e) {
                   skuId: t.skuId,
                   cardRef: Y,
                   onClick: N,
-                  icon: D,
+                  icon: M,
                   prioritizedCurrency: V,
                   onClickAnalytics: U
                 })]

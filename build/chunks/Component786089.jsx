@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk685613 = require("./685613.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk384809 = require("./384809.js");
+  Chunk199679 = require("./199679.js");
 let P = (0, Chunk647438.memo)(function(e) {
   var t, n, l, P, j, x;
   let {
@@ -167,7 +167,7 @@ let P = (0, Chunk647438.memo)(function(e) {
           className: T.title,
           variant: "heading-md/semibold",
           color: "always-white",
-          children: N.intl.format(N.t.EAYZAg, {
+          children: N.intl.format(N.t.EAYZAr, {
             questName: A.config.messages.questName
           })
         }), (0, r.jsx)(d.Text, {
@@ -176,7 +176,7 @@ let P = (0, Chunk647438.memo)(function(e) {
           style: {
             opacity: $ ? 1 : .75
           },
-          children: N.intl.format(N.t.kXVcV1, {
+          children: N.intl.format(N.t["kXVcV+"], {
             reward: Y.name,
             claimedDate: z
           })

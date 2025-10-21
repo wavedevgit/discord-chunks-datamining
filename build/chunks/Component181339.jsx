@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 181339, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk449226 = require("./449226.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk298392 = require("./298392.js");
+  Chunk824804 = require("./824804.js");
 
 function I(e) {
   let {
@@ -53,7 +53,7 @@ function I(e) {
         (0, d.yw)(y.rMx.GUILD_RAID_ALERTS_SETUP, e)
       }
     } catch (e) {
-      (0, c.showToast)((0, c.createToast)(E.intl.string(E.t["46Rs3t"]), c.ToastType.FAILURE)), v(!x)
+      (0, c.showToast)((0, c.createToast)(E.intl.string(E.t["46Rs3v"]), c.ToastType.FAILURE)), v(!x)
     }
   };
   return (0, r.jsxs)("div", {
@@ -63,7 +63,7 @@ function I(e) {
       children: [(0, r.jsx)(c.Heading, {
         variant: "text-md/semibold",
         color: "header-primary",
-        children: E.intl.string(E.t.Qp98s7)
+        children: E.intl.string(E.t.Qp98s9)
       }), (0, r.jsx)(c.Text, {
         variant: "text-sm/medium",
         color: "header-secondary",
@@ -128,7 +128,7 @@ function S(e) {
         (0, d.yw)(y.rMx.GUILD_RAID_ALERTS_SETUP, t)
       }
     } catch (e) {
-      (0, c.showToast)((0, c.createToast)(E.intl.string(E.t["46Rs3t"]), c.ToastType.FAILURE)), l(m)
+      (0, c.showToast)((0, c.createToast)(E.intl.string(E.t["46Rs3v"]), c.ToastType.FAILURE)), l(m)
     }
   };
   return (0, r.jsx)("div", {
@@ -137,8 +137,8 @@ function S(e) {
       className: N.itemBodyInner,
       children: (0, r.jsx)(c.VcW, {
         wrapperClassName: N.bringToFront,
-        label: E.intl.string(E.t.sMkYEx),
-        helperText: E.intl.string(E.t["1QxN9P"]),
+        label: E.intl.string(E.t.sMkYE8),
+        helperText: E.intl.string(E.t["1QxN9N"]),
         options: h,
         onChange: b,
         value: i,

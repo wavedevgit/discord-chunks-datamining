@@ -1,4 +1,4 @@
-/** Chunk was on 76892 **/
+/** Chunk was on 9456 **/
 /** chunk id: 795639, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -25,9 +25,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk470623 = require("./470623.jsx"),
   Chunk983200 = require("./983200.js"),
   Chunk127654 = require("./127654.js"),
-  Chunk124252 = require("./124252.js"),
+  Chunk809639 = require("./809639.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk770290 = require("./770290.js");
+  Chunk272210 = require("./272210.js");
 let N = [{
     name: "Media Post Thumbnail",
     extensions: ["jpg", "jpeg", "png", "gif", "webp"]
@@ -152,7 +152,7 @@ let I = e => {
     "aria-hidden": true,
     filters: N,
     "aria-describedby": O,
-    "aria-label": I ? w.intl.string(w.t.MxJI3d) : w.intl.string(w.t.CbiofX),
+    "aria-label": I ? w.intl.string(w.t.MxJI3f) : w.intl.string(w.t.Cbiofa),
     children: I ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(P, {
         mediaAttachments: j,
@@ -165,7 +165,7 @@ let I = e => {
         children: [(0, r.jsx)(m.Text, {
           variant: "text-xs/medium",
           color: "header-secondary",
-          children: w.intl.string(w.t.MxJI3d)
+          children: w.intl.string(w.t.MxJI3f)
         }), null == C && (0, r.jsx)(m.vdY, {
           size: "xs",
           color: "currentColor",
@@ -182,7 +182,7 @@ let I = e => {
       }), (0, r.jsx)(m.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
-        children: w.intl.string(w.t.CbiofX)
+        children: w.intl.string(w.t.Cbiofa)
       })]
     })
   });
@@ -193,7 +193,7 @@ let I = e => {
       actions: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(x.Z, {
           className: S.action,
-          tooltip: w.intl.string(w.t.Y8ujqq),
+          tooltip: w.intl.string(w.t.Y8ujqr),
           onClick: M,
           children: (0, r.jsx)(m.vdY, {
             size: "xs",
@@ -201,7 +201,7 @@ let I = e => {
           })
         }), (0, r.jsx)(x.Z, {
           className: S.action,
-          tooltip: w.intl.string(w.t.vN7REx),
+          tooltip: w.intl.string(w.t.vN7REz),
           onClick: () => h.Z.remove(a.id, C.id, f.Ie.CREATE_FORUM_POST.drafts.type),
           dangerous: true,
           children: (0, r.jsx)(m.XHJ, {

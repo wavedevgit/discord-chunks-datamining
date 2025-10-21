@@ -55,7 +55,7 @@ function g(e, t) {
   return n ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.sNh, {
       id: "mute-folder",
-      label: p.intl.string(p.t.vBTk2N),
+      label: p.intl.string(p.t.vBTk2A),
       action: () => u(),
       children: (0, c.k)().map(e => {
         let {
@@ -70,7 +70,7 @@ function g(e, t) {
       })
     }), (0, r.jsx)(d.sNh, {
       id: "unmute-folder",
-      label: p.intl.string(p.t.VFDdkZ),
+      label: p.intl.string(p.t.VFDdkU),
       action: g
     })]
   }) : null

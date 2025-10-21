@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 428127, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk934415 = require("./934415.js"),
   Chunk968847 = require("./968847.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk32976 = require("./32976.js");
+  Chunk74664 = require("./74664.js");
 let b = {
   friction: 30,
   tension: 300
@@ -47,7 +47,7 @@ function _(e) {
     }), (0, r.jsx)(c.Text, {
       variant: "text-xs/semibold",
       className: m.barText,
-      children: g.intl.format(g.t["fDlr+P"], {
+      children: g.intl.format(g.t["fDlr+F"], {
         count: b.length
       })
     }), (0, r.jsx)(d.Z, {
@@ -113,7 +113,7 @@ function O(e) {
           variant: "text-xs/semibold",
           color: "interactive-normal",
           className: m.barText,
-          children: g.intl.string(g.t.FCRiT0)
+          children: g.intl.string(g.t.FCRiT3)
         })]
       }) : v === h.x.MENTIONS ? (0, r.jsx)(c.P3F, {
         className: o()(m.bar, m.mentionsBar),
@@ -122,7 +122,7 @@ function O(e) {
           variant: "text-xs/semibold",
           color: "status-danger-text",
           className: m.barText,
-          children: g.intl.format(g.t.EQcLys, {
+          children: g.intl.format(g.t.EQcLyp, {
             count: j
           })
         })

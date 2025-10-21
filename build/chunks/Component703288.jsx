@@ -11,6 +11,6 @@ var Chunk28664 = require("./28664.jsx"),
   Chunk388032 = require("./388032.jsx");
 let s = () => (0, Chunk951288.jsx)(Chunk28664.u, {
   asContainer: true,
-  text: Chunk388032.intl.string(Chunk388032.t["/fgfWl"]),
+  text: Chunk388032.intl.string(Chunk388032.t["/fgfWh"]),
   children: (0, Chunk951288.jsx)(Chunk688465.Z, {})
 })

@@ -12,7 +12,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk785717 = require("./785717.jsx"),
   Chunk86419 = require("./86419.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk145624 = require("./145624.js");
+  Chunk51708 = require("./51708.js");
 
 function f(e) {
   let {
@@ -26,7 +26,7 @@ function f(e) {
     trackUserProfileEditAction: m
   } = (0, s.KZ)();
   return (0, r.jsx)(l.u, {
-    text: u.intl.string(u.t.HUvyDQ),
+    text: u.intl.string(u.t.HUvyDc),
     children: (0, r.jsx)(o.P3F, {
       innerRef: g,
       onClick: () => {
@@ -36,7 +36,7 @@ function f(e) {
           widgetEdited: n
         }), null == p || p()
       },
-      "aria-label": u.intl.string(u.t.HUvyDQ),
+      "aria-label": u.intl.string(u.t.HUvyDc),
       className: a()(f, d.clickable),
       children: (0, r.jsx)(o.XHJ, {
         size: i,

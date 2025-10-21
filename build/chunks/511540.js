@@ -22,7 +22,7 @@ function s(e, t, n) {
       })
     } catch (e) {
       var r;
-      d(429 === (r = null == e ? true : e.status) ? o.intl.string(o.t.BPmZvr) : 404 === r || 400 === r ? o.intl.string(o.t.aWa1Pz) : o.intl.string(o.t.JNQRU1)), l(false), (null == e ? true : e.status) === 401 && n()
+      d(429 === (r = null == e ? true : e.status) ? o.intl.string(o.t.BPmZvj) : 404 === r || 400 === r ? o.intl.string(o.t.aWa1Pw) : o.intl.string(o.t.JNQRU4)), l(false), (null == e ? true : e.status) === 401 && n()
     }
   }, [e, t, n]);
   return r.useEffect(() => {

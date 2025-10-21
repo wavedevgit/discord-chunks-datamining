@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk15470 = require("./15470.js");
+  Chunk375646 = require("./375646.js");
 let T = function(e) {
   let {
     closeLayer: t,
@@ -94,14 +94,14 @@ let T = function(e) {
         }), (0, r.jsx)(u.Text, {
           className: I.guildStatusCopy,
           variant: "text-md/bold",
-          children: v.intl.format(v.t["pob/cH"], {
+          children: v.intl.format(v.t["pob/cL"], {
             subscriptions: P
           })
         })]
       }), R > 0 ? (0, r.jsx)(u.Text, {
         className: I.guildBoostCountCurrentUser,
         variant: "text-sm/normal",
-        children: v.intl.format(v.t.Jeto2t, {
+        children: v.intl.format(v.t.Jeto2u, {
           numSubscriptions: R
         })
       }) : null]
@@ -143,7 +143,7 @@ let T = function(e) {
           size: "md",
           color: "currentColor",
           className: I.guildBoostCtaGiftIcon
-        }), v.intl.string(v.t["8MYSQ0"])]
+        }), v.intl.string(v.t["8MYSQw"])]
       }) : (0, r.jsx)(c.zx, {
         "data-migration-pending": true,
         className: o()(I.guildBoostCta, I.guildBoostCtaSecondary),
@@ -152,7 +152,7 @@ let T = function(e) {
         color: c.zx.Colors.WHITE,
         onClick: w,
         size: c.zx.Sizes.LARGE,
-        children: v.intl.string(v.t.Q43TvL)
+        children: v.intl.string(v.t.Q43TvC)
       })]
     })]
   })

@@ -18,7 +18,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk246946 = require("./246946.js"),
   Chunk51144 = require("./51144.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk497238 = require("./497238.js");
+  Chunk739406 = require("./739406.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -84,7 +84,7 @@ let v = e => {
         [m.withDisplayNameStyles]: y && null != E
       }, f),
       children: [(0, r.jsx)(s.u, {
-        text: h.intl.string(h.t.Br1ls7),
+        text: h.intl.string(h.t.Br1ls3),
         shouldShow: g,
         "aria-label": !!g && true,
         children: (0, r.jsx)("span", {

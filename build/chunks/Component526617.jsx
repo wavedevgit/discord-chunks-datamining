@@ -51,7 +51,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk957825 = require("./957825.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk25220 = require("./25220.js");
+  Chunk412553 = require("./412553.js");
 
 function X(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -165,17 +165,17 @@ function el(e) {
   function u() {
     switch (t.type) {
       case M.bg.FAVORITES:
-        return z.intl.string(z.t.k8fFjo);
+        return z.intl.string(z.t.k8fFjp);
       case M.bg.RECENTLY_HEARD:
-        return z.intl.string(z.t["8i/+SE"]);
+        return z.intl.string(z.t["8i/+SA"]);
       case M.bg.FREQUENTLY_USED:
-        return z.intl.string(z.t["+cGVV1"]);
+        return z.intl.string(z.t["+cGVV6"]);
       case M.bg.GUILD:
         return t.guild.name;
       case M.bg.DEFAULTS:
-        return z.intl.string(z.t.Rtvk9f);
+        return z.intl.string(z.t.Rtvk9X);
       case M.bg.SEARCH:
-        return z.intl.string(z.t.zkoeq6)
+        return z.intl.string(z.t["zkoeq/"])
     }
   }
   return (0, r.jsxs)(r.Fragment, {
@@ -210,7 +210,7 @@ function el(e) {
 
 function ec() {
   return (0, Chunk951288.jsx)(Chunk788911.Z, {
-    message: Chunk388032.intl.string(Chunk388032.t.bgDdND)
+    message: Chunk388032.intl.string(Chunk388032.t.bgDdNK)
   })
 }
 
@@ -317,7 +317,7 @@ function eu(e) {
     null != e && ev(e)
   }, []), e0 = i.useCallback(() => {
     let e = (0, D.Px)(K.PremiumTypes.TIER_2);
-    return z.intl.format(z.t["tw/SSk"], {
+    return z.intl.format(z.t["tw/SSq"], {
       nitroTierName: e,
       onClick: e$
     })
@@ -371,7 +371,7 @@ function eu(e) {
     })
   }, [eg]), e7 = i.useCallback(() => ep ? (0, r.jsx)(O.Hh, {
     renderPopout: () => (0, r.jsx)(O.hq, {}),
-    tooltipText: z.intl.string(z.t["19lt29"]),
+    tooltipText: z.intl.string(z.t["19lt24"]),
     position: "top",
     clickableClassName: o()(q.settingsClickArea, q.settingsSoundmojiClickArea),
     children: (0, r.jsx)(c.gj8, {
@@ -383,7 +383,7 @@ function eu(e) {
     tabIndex: 0,
     className: q.settingsClickArea,
     onClick: e6,
-    "aria-label": z.intl.string(z.t.kbFsAA),
+    "aria-label": z.intl.string(z.t.kbFsAD),
     children: (0, r.jsx)(c.gj8, {
       size: "md",
       color: "currentColor",
@@ -412,7 +412,7 @@ function eu(e) {
       return (0, r.jsx)(v.p, {
         showUpsell: e,
         text: e0(),
-        button: z.intl.string(z.t.pj0XBA),
+        button: z.intl.string(z.t.pj0XBN),
         buttonAnalyticsObject: {
           section: Y.jXE.SOUND_PICKER_FLOATING_UPSELL
         }
@@ -452,8 +452,8 @@ function eu(e) {
         width: 220,
         height: 132
       },
-      title: z.intl.string(ep ? z.t.rZEEvb : z.t.jGDYFx),
-      description: z.intl.string(ep ? z.t.ZPNG5O : z.t["grL/ho"]),
+      title: z.intl.string(ep ? z.t.rZEEvU : z.t.jGDYF0),
+      description: z.intl.string(ep ? z.t.ZPNG5A : z.t["grL/hg"]),
       enableSocialProof: true,
       analyticsLocationSection: Y.jXE.SOUNDBOARD_SOUND_PICKER_UPSELL,
       upsellViewedTrackingData: {
@@ -476,7 +476,7 @@ function eu(e) {
       onSelectItem: eX,
       onSearchExpressions: e5,
       hasSearchResults: ex.length > 0,
-      defaultSearchPlaceholder: z.intl.string(z.t.sKt3xc),
+      defaultSearchPlaceholder: z.intl.string(z.t.sKt3xS),
       renderRow: eQ,
       renderSectionHeader: e4,
       renderSectionFooter: e8,

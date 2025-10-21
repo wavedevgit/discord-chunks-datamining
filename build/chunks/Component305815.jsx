@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk291967 = require("./291967.jsx"),
   Chunk46140 = require("./46140.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk691864 = require("./691864.js");
+  Chunk129034 = require("./129034.js");
 
 function w(e) {
   var n;
@@ -52,7 +52,7 @@ function w(e) {
         variant: "heading-xl/semibold",
         color: "header-primary",
         className: b.heading,
-        children: N.intl.string(N.t["0/Yz+f"])
+        children: N.intl.string(N.t["0/Yz+Y"])
       }), (0, r.jsx)(s.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
@@ -61,7 +61,7 @@ function w(e) {
     }), (0, r.jsx)(s.Button, {
       variant: "secondary",
       size: "sm",
-      text: m ? N.intl.string(N.t.hjaYYm) : N.intl.string(N.t.MAS7uL),
+      text: m ? N.intl.string(N.t.hjaYYn) : N.intl.string(N.t.MAS7uK),
       loading: "applying" === o,
       disabled: "claimed" !== o || m,
       onClick: i,
@@ -79,7 +79,7 @@ function T(e) {
     preview: h,
     location: N,
     sourceQuestContent: b
-  } = e, T = a.useMemo(() => (0, g.xn)(s.config), [s]), E = (0, l.e7)([p.default], () => p.default.getCurrentUser()), [A, P] = function(e) {
+  } = e, T = a.useMemo(() => (0, g.xn)(s.config), [s]), P = (0, l.e7)([p.default], () => p.default.getCurrentUser()), [E, A] = function(e) {
     let {
       product: n,
       isFetching: t
@@ -98,16 +98,16 @@ function T(e) {
       return (0, o.si)(), !!(null == t ? true : t.ok)
     };
     return [r, l]
-  }(null != (t = null == T ? true : T.skuId) ? t : null), D = (null == (n = s.userStatus) ? true : n.claimedAt) != null, O = !h && !D, [L, S] = a.useState(O ? "loading" : "claimed");
+  }(null != (t = null == T ? true : T.skuId) ? t : null), D = (null == (n = s.userStatus) ? true : n.claimedAt) != null, L = !h && !D, [O, S] = a.useState(L ? "loading" : "claimed");
   a.useEffect(() => {
-    O && (0, C.QB)(s.id, v.y$.CROSS_PLATFORM, N).then(() => S("claimed")).catch(() => S("error"))
-  }, [s.id, N, O]);
-  let R = true === h && null === A && (null == T ? true : T.skuId) !== "",
-    I = null == E,
-    k = I || null == A && true !== h || R || "loading" === L,
-    M = "error" === L || null == T,
+    L && (0, C.QB)(s.id, v.y$.CROSS_PLATFORM, N).then(() => S("claimed")).catch(() => S("error"))
+  }, [s.id, N, L]);
+  let R = true === h && null === E && (null == T ? true : T.skuId) !== "",
+    k = null == P,
+    I = k || null == E && true !== h || R || "loading" === O,
+    M = "error" === O || null == T,
     Z = async () => {
-      S("applying"), S(await P() ? "applied" : "claimed")
+      S("applying"), S(await A() ? "applied" : "claimed")
     };
   return (0, r.jsx)(j.Z, {
     onClose: c,
@@ -115,15 +115,15 @@ function T(e) {
     quest: s,
     sourceQuestContent: b,
     location: y.dr.COLLECTIBLE_REWARD_MODAL,
-    isRewardContentLoading: k,
+    isRewardContentLoading: I,
     rewardContentHasError: M,
-    rewardContent: M || I ? null : (0, r.jsx)(_.Z, {
+    rewardContent: M || k ? null : (0, r.jsx)(_.Z, {
       rewardName: T.messages.name,
       children: (0, r.jsx)(w, {
         quest: s,
-        avatarDeco: A,
-        user: E,
-        mode: L,
+        avatarDeco: E,
+        user: P,
+        mode: O,
         onUseNow: Z
       })
     })

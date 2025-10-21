@@ -1,4 +1,4 @@
-/** Chunk was on 99063 **/
+/** Chunk was on 86736 **/
 /** chunk id: 491302, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk486199 = require("./486199.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk101649 = require("./101649.js");
+  Chunk941678 = require("./941678.js");
 
 function f(e) {
   let {
@@ -25,14 +25,14 @@ function f(e) {
     isExpanded: x,
     errors: j,
     onToggleExpand: v
-  } = e, y = r.useMemo(() => {
+  } = e, O = r.useMemo(() => {
     var e;
     return null != (e = t.avatar) && /^data:/.test(e) ? e : (0, u.ov)({
       id: t.id,
       avatar: e,
       discriminator: m.fo$
     })
-  }, [t]), O = r.useCallback(() => {
+  }, [t]), y = r.useCallback(() => {
     (0, a.ZDy)(async () => {
       let {
         ConfirmModal: e
@@ -57,22 +57,22 @@ function f(e) {
           }
           return e
         }({}, n), l = l = {
-          header: b.intl.formatToPlainString(b.t.gBKqZ2, {
+          header: b.intl.formatToPlainString(b.t.gBKqZ0, {
             name: t.name
           }),
-          confirmText: b.intl.string(b.t.CMy0Cg),
-          cancelText: b.intl.string(b.t["ETE/oK"]),
+          confirmText: b.intl.string(b.t.CMy0Cj),
+          cancelText: b.intl.string(b.t["ETE/oC"]),
           onConfirm: () => {
             c.Z.delete(t.guild_id, t.id).catch(() => {
               o.Z.show({
-                title: b.intl.string(b.t.LpbaFR),
-                body: b.intl.string(b.t["/4TwKS"])
+                title: b.intl.string(b.t.LpbaFV),
+                body: b.intl.string(b.t["/4TwKf"])
               })
             })
           },
           children: (0, i.jsx)(a.Text, {
             variant: "text-md/normal",
-            children: b.intl.string(b.t.zO9jrK)
+            children: b.intl.string(b.t.zO9jrD)
           })
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
           var n = Object.keys(e);
@@ -93,7 +93,7 @@ function f(e) {
   }), _.push({
     text: (0, i.jsx)("span", {
       className: g.guildSource,
-      children: b.intl.format(b.t["H/jJ6e"], {
+      children: b.intl.format(b.t["H/jJ6R"], {
         guildHook: () => (0, i.jsx)("span", {
           className: g.sourceName,
           children: t.source_guild.name
@@ -112,7 +112,7 @@ function f(e) {
         direction: "horizontal",
         gap: 16,
         children: [(0, i.jsx)(a.oil, {
-          label: b.intl.string(b.t.I1o5gY),
+          label: b.intl.string(b.t.I1o5gV),
           value: f.name,
           onChange: e => {
             s.Z.updateWebhook({
@@ -122,7 +122,7 @@ function f(e) {
           maxLength: 80,
           error: j.name
         }), (0, i.jsx)(a.q4e, {
-          label: b.intl.string(b.t["4TuWfX"]),
+          label: b.intl.string(b.t["4TuWfc"]),
           value: f.channel_id,
           options: h,
           onChange: e => {
@@ -134,10 +134,10 @@ function f(e) {
       }), (0, i.jsx)(a.izJ, {
         className: g.bottomDivider
       }), (0, i.jsx)(l.Avr, {
-        onClick: O,
+        onClick: y,
         size: "sm",
         variant: "critical",
-        text: b.intl.string(b.t.CMy0Cg)
+        text: b.intl.string(b.t.CMy0Cj)
       })]
     })]
   })), (0, i.jsx)(a.Zbd, {
@@ -154,7 +154,7 @@ function f(e) {
           align: "center",
           children: [(0, i.jsx)(p.Z, {
             name: t.name,
-            imageSrc: y,
+            imageSrc: O,
             details: _
           }), (0, i.jsx)(d.Z, {
             className: g.expandIcon,

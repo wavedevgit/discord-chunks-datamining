@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk189357 = require("./189357.js"),
   Chunk718617 = require("./718617.jsx"),
   Chunk327250 = require("./327250.jsx"),
-  Chunk250412 = require("./250412.js");
+  Chunk345226 = require("./345226.js");
 
 function p(e) {
   let {
@@ -34,21 +34,21 @@ function p(e) {
     className: p,
     infoPanelClassName: C,
     style: D
-  } = e, L = (0, O.m)(n), U = (0, a.e7)([h.default], () => h.default.getUser(t), [t]), M = (0, a.e7)([N.ZP], () => N.ZP.getMember(n, t), [n, t]), [x, b] = l.useState(null == U || null == M), v = (0, c.Z)(M), P = l.useRef(null), {
+  } = e, U = (0, O.m)(n), L = (0, a.e7)([h.default], () => h.default.getUser(t), [t]), M = (0, a.e7)([N.ZP], () => N.ZP.getMember(n, t), [n, t]), [b, x] = l.useState(null == L || null == M), v = (0, c.Z)(M), P = l.useRef(null), {
     analyticsLocations: j
   } = (0, A.ZP)(_.Z.GUILD_MEMBER_MOD_VIEW), y = (0, I.ZP)(t, n), G = (0, E.ZP)();
   return (l.useEffect(() => {
-    L || i()
-  }, [L, i]), l.useEffect(() => {
-    null == v || null != M || x || i()
-  }, [x, M, i, v]), l.useEffect(() => {
-    null != U && null != M && b(false)
-  }, [U, M]), l.useEffect(() => {
+    U || i()
+  }, [U, i]), l.useEffect(() => {
+    null == v || null != M || b || i()
+  }, [b, M, i, v]), l.useEffect(() => {
+    null != L && null != M && x(false)
+  }, [L, M]), l.useEffect(() => {
     let e = null == M;
-    return !x && e && (P.current = window.setTimeout(i, 500)), () => {
+    return !b && e && (P.current = window.setTimeout(i, 500)), () => {
       null != P.current && window.clearTimeout(P.current)
     }
-  }, [x, M, i]), (0, d.$)({
+  }, [b, M, i]), (0, d.$)({
     [n]: [t]
   }, "GuildMemberModViewSidebar"), l.useEffect(() => {
     !async function() {
@@ -56,14 +56,14 @@ function p(e) {
         guildId: n,
         dispatchWait: true
       })];
-      await Promise.all(e), b(false)
+      await Promise.all(e), x(false)
     }()
-  }, [n, t]), L) ? x || null == U || null == M ? (0, r.jsx)("div", {
+  }, [n, t]), U) ? b || null == L || null == M ? (0, r.jsx)("div", {
     className: s()(S.sidebarContainer, S.loadingContainer, p),
     style: D,
     children: (0, r.jsx)(o.$jN, {
       animated: true,
-      type: x ? o.$jN.Type.SPINNING_CIRCLE : o.$jN.Type.CHASING_DOTS
+      type: b ? o.$jN.Type.SPINNING_CIRCLE : o.$jN.Type.CHASING_DOTS
     })
   }) : (0, r.jsx)(A.Gt, {
     value: j,
@@ -71,7 +71,7 @@ function p(e) {
       className: s()(S.sidebarContainer, p),
       style: D,
       children: (0, r.jsx)(g.Z, {
-        user: U,
+        user: L,
         displayProfile: y,
         themeType: null,
         themeOverride: G,

@@ -17,7 +17,7 @@ function u(e) {
     sound: t
   } = e, n = (0, i.e7)([s.Z], () => {
     var e;
-    return t.guildId === l.X8 ? c.intl.string(c.t.Rtvk9f) : null == (e = s.Z.getGuild(t.guildId)) ? true : e.name
+    return t.guildId === l.X8 ? c.intl.string(c.t.Rtvk9X) : null == (e = s.Z.getGuild(t.guildId)) ? true : e.name
   });
   return (0, r.jsxs)(o.RX, {
     children: [(null != t.emojiId || null != t.emojiName) && (0, r.jsx)(o.Tw, {

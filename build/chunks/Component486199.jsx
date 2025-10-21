@@ -1,4 +1,4 @@
-/** Chunk was on 99063 **/
+/** Chunk was on 86736 **/
 /** chunk id: 486199, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -10,7 +10,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk77464 = require("./77464.js");
+  Chunk961174 = require("./961174.js");
 
 function d(e) {
   let {
@@ -87,7 +87,7 @@ function d(e) {
             variant: u ? "heading-xl/semibold" : "heading-md/medium",
             className: u ? c.header : c.secondaryHeader,
             children: [t, p && (0, i.jsx)(a.u, {
-              text: s.intl.string(s.t.VFuFur),
+              text: s.intl.string(s.t.VFuFum),
               children: (0, i.jsx)(o.Prq, {
                 size: "xs",
                 color: "currentColor",

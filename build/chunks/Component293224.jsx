@@ -65,7 +65,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388627 = require("./388627.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk41143 = require("./41143.js");
+  Chunk131714 = require("./131714.js");
 
 function eo(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -436,12 +436,12 @@ function ep(e) {
       })
     },
     g = null != h;
-  if (g) t = er.intl.string(er.t.S5anIS);
+  if (g) t = er.intl.string(er.t.S5anIc);
   else if (null != n) {
     let e = (0, en.pL)();
-    t = c ? null != e ? er.intl.format(er.t.AB5gT0, {
+    t = c ? null != e ? er.intl.format(er.t.AB5gTy, {
       game: e.name
-    }) : er.intl.string(er.t.FeUKeH) : er.intl.string(er.t.uQn9Bw)
+    }) : er.intl.string(er.t.FeUKeA) : er.intl.string(er.t.uQn9B8)
   }
   let y = () => {
       if (g) return (0, $.Ws)(ei.Odu.QUICK_ACTIONS, {
@@ -497,7 +497,7 @@ function ep(e) {
         ref: a,
         iconComponent: E,
         tooltip: t,
-        "aria-label": er.intl.string(er.t.FeUKeH),
+        "aria-label": er.intl.string(er.t.FeUKeA),
         isActive: g,
         highlightedColor: "green",
         onClick: y,
@@ -574,7 +574,7 @@ function eh(e) {
       return (0, i.jsx)(es, {
         ref: s,
         iconComponent: v,
-        tooltip: p ? er.intl.string(er.t["Ox4/zc"]) : f ? er.intl.string(er.t["+YBKYG"]) : m ? er.intl.string(er.t.X1lQlp) : true,
+        tooltip: p ? er.intl.string(er.t["Ox4/zU"]) : f ? er.intl.string(er.t["+YBKYI"]) : m ? er.intl.string(er.t.X1lQli) : true,
         onClick: e => {
           S(), (0, $.Ws)(ei.Odu.QUICK_ACTIONS, {
             type: $.Qu.SOUNDBOARD,
@@ -652,7 +652,7 @@ function ef(e) {
       return (0, i.jsx)(es, {
         ref: a,
         iconComponent: v,
-        tooltip: s ? er.intl.string(er.t["6vrfgo"]) : er.intl.string(er.t.S0W8Z2),
+        tooltip: s ? er.intl.string(er.t["6vrfgt"]) : er.intl.string(er.t.S0W8Z5),
         onClick: s ? u : m(n),
         defaultColor: s ? "disconnect" : true,
         onMouseEnter: y,

@@ -11,13 +11,13 @@ var Chunk481060 = require("./481060.js"),
   Chunk305347 = require("./305347.jsx"),
   Chunk220250 = require("./220250.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk943626 = require("./943626.js");
+  Chunk505044 = require("./505044.js");
 
 function u(e) {
   let {
     name: t,
     onRetry: n
-  } = e, u = (0, s.nv)(), d = (0, s.dG)(u.hex()), f = null != t ? t : l.intl.string(l.t.DmIUGB);
+  } = e, u = (0, s.nv)(), d = (0, s.dG)(u.hex()), f = null != t ? t : l.intl.string(l.t.DmIUGK);
   return (0, r.jsxs)("div", {
     className: c.container,
     children: [(0, r.jsx)("div", {
@@ -54,7 +54,7 @@ function u(e) {
         }), (0, r.jsx)(i.Text, {
           variant: "text-sm/normal",
           color: "text-feedback-warning",
-          children: l.intl.string(l.t.tmGHjY)
+          children: l.intl.string(l.t.tmGHjc)
         })]
       })]
     })]

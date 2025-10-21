@@ -61,7 +61,7 @@ let u = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk
       src: g,
       size: d,
       status: l,
-      "aria-label": f ? true : s.intl.string(s.t.lqaIxM),
+      "aria-label": f ? true : s.intl.string(s.t.lqaIxI),
       "aria-hidden": f,
       className: _
     }, E))

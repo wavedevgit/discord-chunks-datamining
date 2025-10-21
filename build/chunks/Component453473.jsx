@@ -38,7 +38,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk74551 = require("./74551.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk912960 = require("./912960.js");
+  Chunk125919 = require("./125919.js");
 
 function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -232,7 +232,7 @@ function z(e) {
     children: [(0, r.jsx)(p.P3F, {
       className: k.clickableMessageBackground,
       onClick: l,
-      "aria-label": M.intl.string(M.t["+TSRGB"])
+      "aria-label": M.intl.string(M.t["+TSRGD"])
     }), null != t.saveData.dueAt ? (0, r.jsx)(L.Z, {
       reminder: t,
       throttledNow: a
@@ -264,11 +264,11 @@ function z(e) {
     }), (0, r.jsx)(p.Heading, {
       variant: "text-md/semibold",
       color: "header-secondary",
-      children: null != t.saveData.dueAt ? M.intl.string(M.t["wuQm+v"]) : M.intl.string(M.t.o572FR)
+      children: null != t.saveData.dueAt ? M.intl.string(M.t["wuQm+j"]) : M.intl.string(M.t.o572Fe)
     }), (0, r.jsx)(y.ZP, {
       className: k.hoverBar,
       children: (0, r.jsx)(y.sF, {
-        label: M.intl.string(M.t.SvXS1d),
+        label: M.intl.string(M.t.SvXS1Z),
         icon: p.XHJ,
         dangerous: true,
         onClick: () => (0, A.x)(t.saveData)
@@ -297,7 +297,7 @@ function X(e) {
   } = e;
   return (l()(null != t.message, "Saved message must be cached for For Later action buttons"), null != t.saveData.dueAt) ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(y.sF, {
-      label: M.intl.string(M.t.yjGtdH),
+      label: M.intl.string(M.t.yjGtdJ),
       icon: p.dz2,
       onClick: () => (0, A.z)({
         channelId: t.saveData.channelId,
@@ -305,23 +305,23 @@ function X(e) {
         dueAt: true
       })
     }, "mark-complete"), (0, r.jsx)(y.sF, {
-      label: M.intl.string(M.t.vrbqs7),
+      label: M.intl.string(M.t.vrbqs1),
       icon: p.vdY,
       onClick: e => (0, h.jW)(e, async () => {
         let {
           MessageReminderEditMenu: e
         } = await n.e("69818").then(n.bind(n, 898150));
         return n => (0, r.jsx)(e, B(U({}, n), {
-          label: M.intl.string(M.t.roMu1N),
+          label: M.intl.string(M.t.roMu1H),
           message: t.message
         }))
       })
     }, "edit-reminder"), (0, r.jsx)(y.fO, {}), (0, r.jsx)(y.sF, {
-      label: M.intl.string(M.t["+TSRGB"]),
+      label: M.intl.string(M.t["+TSRGD"]),
       icon: p.acy,
       onClick: e => i(e)
     }, "jump-to-message"), (0, r.jsx)(y.sF, {
-      label: M.intl.string(M.t.SvXS1d),
+      label: M.intl.string(M.t.SvXS1Z),
       icon: p.plf,
       onClick: () => (0, A.x)(t.saveData)
     }, "remove-reminder")]
@@ -339,11 +339,11 @@ function X(e) {
         }))
       })
     }, "create-reminder"), (0, r.jsx)(y.sF, {
-      label: M.intl.string(M.t["+TSRGB"]),
+      label: M.intl.string(M.t["+TSRGD"]),
       icon: p.acy,
       onClick: e => i(e)
     }, "jump-to-message"), (0, r.jsx)(y.sF, {
-      label: M.intl.string(M.t.SvXS1d),
+      label: M.intl.string(M.t.SvXS1Z),
       icon: p.plf,
       onClick: () => (0, A.x)(t.saveData)
     }, "remove-bookmark")]

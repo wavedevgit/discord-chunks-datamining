@@ -59,9 +59,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk468788 = require("./468788.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk609157 = require("./609157.js"),
-  Chunk602009 = require("./602009.js"),
-  Chunk10198 = require("./10198.js");
+  Chunk392082 = require("./392082.js"),
+  Chunk430864 = require("./430864.js"),
+  Chunk197571 = require("./197571.js");
 
 function eo(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -147,21 +147,21 @@ let ef = e => {
     }, [t])
   },
   e_ = (e, t) => {
-    let n = en.intl.string(en.t.DT39Aw),
-      i = en.intl.formatToPlainString(en.t.QWGvxM, {
+    let n = en.intl.string(en.t["DT39A+"]),
+      i = en.intl.formatToPlainString(en.t.QWGvxA, {
         applicationName: e.name
       }),
       a = null;
-    return (0, C.Z)(e) && (n = en.intl.formatToPlainString(en.t["paC+UV"], {
+    return (0, C.Z)(e) && (n = en.intl.formatToPlainString(en.t["paC+US"], {
       applicationName: e.name
-    }), i = en.intl.formatToPlainString(en.t.inM1Ym, {
+    }), i = en.intl.formatToPlainString(en.t.inM1Yt, {
       applicationName: e.name
     }), a = (0, r.jsx)(X.Z, {
       look: X.z.WARNING,
-      children: en.intl.string(en.t.LY35Z2)
+      children: en.intl.string(en.t.LY35Zy)
     })), (0, q.Z)(e.id) && (a = (0, r.jsxs)(r.Fragment, {
       children: [a, (0, r.jsx)(X.Z, {
-        children: en.intl.format(en.t.KRnERk, {
+        children: en.intl.format(en.t.KRnERi, {
           applicationName: e.name
         })
       })]
@@ -169,11 +169,11 @@ let ef = e => {
       title: n,
       subtitle: i,
       actions: [{
-        text: en.intl.string(en.t["ETE/oK"]),
+        text: en.intl.string(en.t["ETE/oC"]),
         onClick: e.onClose,
         variant: "secondary"
       }, {
-        text: en.intl.string(en.t.xUqheH),
+        text: en.intl.string(en.t.xUqheM),
         onClick: () => {
           t(), e.onClose()
         },
@@ -210,7 +210,7 @@ let ef = e => {
         children: [(0, r.jsx)(g.Text, {
           variant: "text-sm/normal",
           color: "text-link",
-          children: en.intl.string(en.t["lx+GeX"])
+          children: en.intl.string(en.t["lx+Gec"])
         }), (0, r.jsx)(g.Gr1, {
           size: "sm",
           className: er.externalLinkIcon,
@@ -227,7 +227,7 @@ let ef = e => {
           children: [(0, r.jsx)(g.Text, {
             variant: "text-sm/normal",
             color: "text-link",
-            children: en.intl.string(en.t.okSwq6)
+            children: en.intl.string(en.t.okSwq9)
           }), (0, r.jsx)(g.Gr1, {
             size: "sm",
             className: er.externalLinkIcon,
@@ -263,7 +263,7 @@ let ef = e => {
       dmChannelMuted: j.ZP.isChannelMuted(null, M)
     }), [V, H] = i.useState(false), [X, Q] = i.useState(false), eo = () => {
       let e = [];
-      for (let n of t) e.push(...(0, w.CI)(n, t)), n === f.x.APPLICATIONS_COMMANDS && e.push(en.intl.string(en.t.Ls2XRk));
+      for (let n of t) e.push(...(0, w.CI)(n, t)), n === f.x.APPLICATIONS_COMMANDS && e.push(en.intl.string(en.t.Ls2XRq));
       if (e.length > 0 || null != d && d.length > 0) return (0, r.jsx)(g.zF9, {
         className: er.appDetailsSection,
         isExpanded: X,
@@ -303,7 +303,7 @@ let ef = e => {
               children: [(0, r.jsx)(g.Heading, {
                 variant: "heading-sm/medium",
                 color: "header-primary",
-                children: en.intl.string(en.t.xrmhRU)
+                children: en.intl.string(en.t.xrmhRX)
               }), X ? (0, r.jsx)(g.CJ0, {
                 size: "md",
                 color: g.TVs.colors.INTERACTIVE_NORMAL
@@ -315,7 +315,7 @@ let ef = e => {
               variant: "text-sm/normal",
               color: "text-secondary",
               className: o()(er.appDetailsContent, er.permissionsDescription),
-              children: en.intl.format(en.t.nZOS8v, {
+              children: en.intl.format(en.t.nZOS8j, {
                 numPermissions: e.length
               })
             })]
@@ -390,7 +390,7 @@ let ef = e => {
           }), (0, r.jsx)(g.Text, {
             variant: "text-sm/normal",
             color: "text-default",
-            children: en.intl.format(en.t.yOApCA, {
+            children: en.intl.format(en.t.yOApCK, {
               date: n
             })
           })]
@@ -434,12 +434,12 @@ let ef = e => {
         variant: "heading-sm/medium",
         color: "header-primary",
         className: er.dmSettingsHeader,
-        children: en.intl.string(en.t.NaZyYG)
+        children: en.intl.string(en.t.NaZyYC)
       }), (0, r.jsxs)(g.Kqy, {
         gap: 20,
         children: [null != L ? (0, r.jsx)(g.rsf, {
-          label: en.intl.string(en.t.NkwaBg),
-          description: (null == k ? true : k.end_time) != null ? en.intl.format(en.t.j7h4AA, {
+          label: en.intl.string(en.t.NkwaBs),
+          description: (null == k ? true : k.end_time) != null ? en.intl.format(en.t.j7h4AJ, {
             endTime: new Date(k.end_time).toLocaleString(en.intl.currentLocale, {
               month: "numeric",
               day: "numeric",
@@ -450,8 +450,8 @@ let ef = e => {
           checked: B,
           onChange: em
         }) : null, v && C.enabled ? (0, r.jsx)(g.rsf, {
-          label: en.intl.string(en.t["Pkw//v"]),
-          description: en.intl.string(en.t.hw1nKS),
+          label: en.intl.string(en.t["Pkw//o"]),
+          description: en.intl.string(en.t.hw1nKf),
           checked: I,
           disabled: B,
           onChange: eh
@@ -461,12 +461,12 @@ let ef = e => {
       className: er.footer,
       children: [eb ? (0, r.jsx)(ed, {
         className: er.warningContainer,
-        text: en.intl.format(en.t.j4B7ER, {
+        text: en.intl.format(en.t.j4B7EW, {
           applicationName: a.name
         })
       }) : eE ? (0, r.jsx)(ed, {
         className: er.warningContainer,
-        text: en.intl.format(en.t.jUhnwc, {
+        text: en.intl.format(en.t.jUhnwb, {
           applicationName: a.name,
           onConnectionPress: () => (0, $.openUserSettings)(Y.n.CONNECTIONS_PANEL, {
             section: ee.oAB.CONNECTIONS
@@ -477,7 +477,7 @@ let ef = e => {
         children: (0, r.jsx)(g.Button, {
           variant: "critical-secondary",
           size: "sm",
-          text: en.intl.string(en.t.xUqheH),
+          text: en.intl.string(en.t.xUqheM),
           onClick: () => e_(a, c)
         })
       })]
@@ -542,13 +542,13 @@ let ef = e => {
         Chunk243814("")
       },
       m = () => (0, Chunk951288.jsx)("div", {
-        className: Chunk609157.searchContainer,
+        className: Chunk392082.searchContainer,
         children: (0, Chunk951288.jsx)(Chunk481060.E1j, {
           query: Chunk191336,
           onChange: Chunk793030,
           onClear: Chunk921072,
-          placeholder: Chunk388032.intl.string(Chunk388032.t["5prvKS"]),
-          "aria-label": Chunk388032.intl.string(Chunk388032.t["5prvKS"])
+          placeholder: Chunk388032.intl.string(Chunk388032.t["5prvKe"]),
+          "aria-label": Chunk388032.intl.string(Chunk388032.t["5prvKe"])
         })
       }),
       b = (e, t) => (0, r.jsx)(eu, {
@@ -563,10 +563,10 @@ let ef = e => {
         return "" === module || null == require ? require : require.length < 100 ? require.filter(t => l()(e, t.application.name.toLowerCase())) : require.filter(t => t.application.name.toLowerCase().includes(e))
       }, [require, Chunk191336]),
       T = () => null == require || null == Chunk87051 || exports !== Chunk881998.M.FETCHED ? (0, Chunk951288.jsx)(Chunk481060.$jN, {
-        className: Chunk10198.marginTop20,
+        className: Chunk197571.marginTop20,
         type: Chunk481060.$jN.Type.SPINNING_CIRCLE
-      }) : 0 === require.length ? Chunk493683(Chunk388032.intl.string(Chunk388032.t.CpPv5u), Chunk388032.intl.string(Chunk388032.t["E+SM6e"])) : 0 === Chunk87051.length ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-        children: [Chunk524437(), Chunk493683(null, Chunk388032.intl.string(Chunk388032.t.EVWFNj))]
+      }) : 0 === require.length ? Chunk493683(Chunk388032.intl.string(Chunk388032.t.CpPv5l), Chunk388032.intl.string(Chunk388032.t["E+SM6T"])) : 0 === Chunk87051.length ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+        children: [Chunk524437(), Chunk493683(null, Chunk388032.intl.string(Chunk388032.t.EVWFNr))]
       }) : (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
         children: [Chunk524437(), Chunk87051.sort((e, t) => Number(t.id) - Number(e.id)).map(e => (0, r.jsx)(eh, es({
           locale: a,
@@ -576,13 +576,13 @@ let ef = e => {
         }, e), e.id))]
       });
     return module ? (0, Chunk951288.jsx)(Chunk497321.Z, {}) : (0, Chunk951288.jsx)(Chunk273313.Z, {
-      title: Chunk388032.intl.string(Chunk388032.t["f6kk+v"]),
+      title: Chunk388032.intl.string(Chunk388032.t["f6kk+r"]),
       children: (0, Chunk951288.jsx)(Chunk481060.y5t, {
         component: (0, Chunk951288.jsx)(Chunk481060.ToO, {
-          className: Chunk10198.marginBottom40,
+          className: Chunk197571.marginBottom40,
           type: Chunk481060.sje.PRIMARY,
-          title: Chunk388032.intl.string(Chunk388032.t.HU3RFx),
-          body: Chunk388032.intl.string(Chunk388032.t.Nu5Yi4)
+          title: Chunk388032.intl.string(Chunk388032.t.HU3RFw),
+          body: Chunk388032.intl.string(Chunk388032.t.Nu5Yi0)
         }),
         children: Chunk367907()
       })

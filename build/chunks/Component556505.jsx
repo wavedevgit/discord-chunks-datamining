@@ -8,15 +8,15 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk911969 = require("./911969.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk334955 = require("./334955.js");
+  Chunk542445 = require("./542445.js");
 
 function c(e) {
   let {
     labelType: t,
     collapsed: n = false
-  } = e, c = t === a.ww.NEW ? o.intl.string(o.t.y2b7CA) : o.intl.string(o.t["/qdhkp"]), u = t === a.ww.NEW ? s.activityNewBadge : s.activityUpdatedBadge, [d, p] = l.useState(n ? "" : c);
+  } = e, c = t === a.ww.NEW ? o.intl.string(o.t.y2b7CA) : o.intl.string(o.t["/qdhkk"]), u = t === a.ww.NEW ? s.activityNewBadge : s.activityUpdatedBadge, [d, p] = l.useState(n ? "" : c);
   return (l.useEffect(() => {
-    n ? p("") : t === a.ww.NEW ? p(o.intl.string(o.t.y2b7CA)) : t === a.ww.UPDATED && p(o.intl.string(o.t["/qdhkp"]))
+    n ? p("") : t === a.ww.NEW ? p(o.intl.string(o.t.y2b7CA)) : t === a.ww.UPDATED && p(o.intl.string(o.t["/qdhkk"]))
   }, [n, t]), t === a.ww.NONE) ? null : (0, i.jsx)(r.IGR, {
     className: u,
     disableColor: true,

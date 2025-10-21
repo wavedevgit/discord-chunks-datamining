@@ -1,4 +1,4 @@
-/** Chunk was on 63962 **/
+/** Chunk was on 91053 **/
 /** chunk id: 52639, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -19,7 +19,7 @@ var Chunk81897 = require("./81897.js"),
   Chunk502762 = require("./502762.jsx"),
   Chunk686625 = require("./686625.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk398095 = require("./398095.js");
+  Chunk439178 = require("./439178.js");
 
 function _(e) {
   let {
@@ -28,8 +28,8 @@ function _(e) {
   } = e, {
     analyticsLocations: _
   } = (0, l.ZP)(), {
-    context: j
-  } = (0, o.KZ)(), O = (0, i.Z)(), {
+    context: O
+  } = (0, o.KZ)(), j = (0, i.Z)(), {
     mutualFriendsCount: x,
     mutualFriends: v,
     mutualGuilds: C
@@ -38,7 +38,7 @@ function _(e) {
     className: y.overlay,
     children: [S && (0, r.jsx)(m.Z, {
       section: "MUTUAL_GUILDS",
-      header: b.intl.string(b.t["4lTDZm"]),
+      header: b.intl.string(b.t["4lTDZq"]),
       listClassName: y.list,
       items: C.map(e => {
         let {
@@ -56,9 +56,9 @@ function _(e) {
       className: y.divider
     }), I && (0, r.jsx)(m.Z, {
       section: "MUTUAL_FRIENDS",
-      header: b.intl.string(b.t["0mTJ3t"]),
+      header: b.intl.string(b.t["0mTJ3j"]),
       listClassName: y.list,
-      onExpand: () => (0, d.Z)(t.id, O),
+      onExpand: () => (0, d.Z)(t.id, j),
       items: null == v ? Array.from({
         length: x
       }).map((e, t) => (0, r.jsxs)("div", {
@@ -99,7 +99,7 @@ function _(e) {
                 })
               }
               return e
-            }({}, j), t = t = {
+            }({}, O), t = t = {
               userId: i.id,
               sourceAnalyticsLocations: _
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {

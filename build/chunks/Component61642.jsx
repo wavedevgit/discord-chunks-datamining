@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 61642, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -23,7 +23,7 @@ function d(e) {
     renderIcon: e => (0, r.jsx)(l.Z, {
       className: e
     }),
-    text: u.intl.string(u.t["KzCF//"]),
+    text: u.intl.string(u.t["KzCF/6"]),
     selected: d,
     onClick: () => {
       (0, o.uL)(s.Z5c.CHANNEL(t.id, c.oC.ROLE_SUBSCRIPTIONS))

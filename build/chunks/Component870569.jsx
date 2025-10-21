@@ -10,7 +10,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk686546 = require("./686546.jsx"),
-  Chunk197466 = require("./197466.js");
+  Chunk861526 = require("./861526.js");
 let d = Chunk647438.forwardRef(function(e, t) {
   let {
     tooltipText: n,
@@ -22,8 +22,8 @@ let d = Chunk647438.forwardRef(function(e, t) {
     iconForeground: m,
     innerClassName: b,
     className: y,
-    redGlow: O,
-    orangeGlow: v,
+    redGlow: v,
+    orangeGlow: O,
     tooltipClassName: g,
     onMouseEnter: h,
     onMouseLeave: j,
@@ -99,12 +99,12 @@ let d = Chunk647438.forwardRef(function(e, t) {
         innerClassName: b,
         wrapperClassName: o()(u.button, y),
         className: o()(u.button, y, {
-          [u.redGlow]: O,
-          [u.orangeGlow]: v,
+          [u.redGlow]: v,
+          [u.orangeGlow]: O,
           [u.disabled]: p,
           [u.enabled]: !p,
           [u.plated]: Z,
-          [u.plateMuted]: O && Z
+          [u.plateMuted]: v && Z
         }),
         onClick: e => {
           null != f && f(), null != d && d(e)

@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk960919 = require("./960919.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk815420 = require("./815420.js");
+  Chunk66360 = require("./66360.js");
 
 function x(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -95,16 +95,16 @@ let E = e => {
       variant: "active",
       type: "submit",
       "data-testid": "submitButton",
-      text: h.intl.string(h.t.wmcDys)
+      text: h.intl.string(h.t.wmcDyu)
     }, s);
     return null === n ? (0, r.jsx)(i.aML, {
       "data-migration-pending": true,
-      text: h.intl.string(h.t["c/rcUl"]),
+      text: h.intl.string(h.t["c/rcUu"]),
       children: e => (0, r.jsx)(a.zxk, P(x({}, e, c), {
         disabled: true
       }))
     }) : null === t || n > t ? (0, r.jsx)(i.aML, {
-      text: h.intl.string(h.t.keFvXF),
+      text: h.intl.string(h.t.keFvXM),
       children: e => (0, r.jsx)(a.zxk, P(x({}, e, c), {
         disabled: true
       }))
@@ -143,13 +143,13 @@ let E = e => {
       orbBalance: t
     } = e;
     return (0, r.jsx)(i.gNt, {
-      label: h.intl.string(h.t.mmDvV1),
+      label: h.intl.string(h.t["mmDvV+"]),
       children: (0, r.jsxs)(l.U, {
         className: j.paymentSourceItem,
         children: [(0, r.jsx)(i.Text, {
           className: j.displayFlex,
           variant: "text-md/medium",
-          children: h.intl.string(h.t.y0WGqK)
+          children: h.intl.string(h.t.y0WGqP)
         }), (0, r.jsx)(i.Text, {
           className: j.displayFlex,
           variant: "text-md/medium",
@@ -166,7 +166,7 @@ let E = e => {
     } = e;
     if (null == t) return;
     let n = "";
-    return n = t.code === c.SM.VIRTUAL_CURRENCY_INSUFFICIENT_BALANCE ? h.intl.string(h.t.keFvXF) : t.code === c.SM.ALREADY_PURCHASED ? h.intl.string(h.t.m371Mz) : h.intl.string(h.t.fqJZ19), (0, r.jsx)(i.M14, {
+    return n = t.code === c.SM.VIRTUAL_CURRENCY_INSUFFICIENT_BALANCE ? h.intl.string(h.t.keFvXM) : t.code === c.SM.ALREADY_PURCHASED ? h.intl.string(h.t.m371Mx) : h.intl.string(h.t.fqJZ11), (0, r.jsx)(i.M14, {
       type: "critical",
       children: n
     })
@@ -179,7 +179,7 @@ let E = e => {
       skuId: t,
       isOrbsPurchase: true
     }) ? (0, r.jsx)(f.Z, {
-      message: h.intl.format(h.t.fsOXXF, {})
+      message: h.intl.format(h.t.fsOXXO, {})
     }) : null
   },
   w = e => {

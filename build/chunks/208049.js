@@ -161,8 +161,8 @@ async function P(e, t) {
 
 function w(e) {
   c.DZ.updateAsync("favoriteSoundboardSounds", t => i().size(t.soundIds) >= E.oX ? (s.Z.show({
-    title: b.intl.string(b.t["+XYXtb"]),
-    body: b.intl.formatToPlainString(b.t.JaIyFh, {
+    title: b.intl.string(b.t["+XYXtZ"]),
+    body: b.intl.formatToPlainString(b.t.JaIyFi, {
       count: E.oX
     })
   }), false) : !t.soundIds.includes(e) && void t.soundIds.push(e), E.fy.INFREQUENT_USER_ACTION)

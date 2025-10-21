@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 951483, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Sr: () => x,
@@ -69,61 +69,61 @@ let x = {
 
 function E() {
   return [{
-    description: Chunk388032.intl.string(Chunk388032.t.bx4Uy8),
+    description: Chunk388032.intl.string(Chunk388032.t.bx4Uyz),
     binds: j(Chunk981631.EkH.SERVER_PREV, Chunk981631.EkH.SERVER_NEXT)
   }, {
-    description: Chunk388032.intl.string(Chunk388032.t["+Wem6u"]),
+    description: Chunk388032.intl.string(Chunk388032.t["+Wem6h"]),
     binds: j(Chunk981631.EkH.CHANNEL_PREV, Chunk981631.EkH.CHANNEL_NEXT)
   }, {
-    description: Chunk388032.intl.string(Chunk388032.t["+2fcd3"]),
+    description: Chunk388032.intl.string(Chunk388032.t["+2fcdz"]),
     binds: j(Chunk981631.EkH.NAVIGATE_BACK, Chunk981631.EkH.NAVIGATE_FORWARD)
   }, {
-    description: Chunk388032.intl.string(Chunk388032.t.eVmj1N),
+    description: Chunk388032.intl.string(Chunk388032.t.eVmj1H),
     binds: j(Chunk981631.EkH.UNREAD_PREV, Chunk981631.EkH.UNREAD_NEXT)
   }, {
-    description: Chunk388032.intl.string(Chunk388032.t.EcqS7e),
+    description: Chunk388032.intl.string(Chunk388032.t.EcqS7Y),
     binds: j(Chunk981631.EkH.MENTION_CHANNEL_PREV, Chunk981631.EkH.MENTION_CHANNEL_NEXT),
     groupEnd: true
   }, {
-    description: Chunk388032.intl.string(Chunk388032.t["Bqss7+"]),
+    description: Chunk388032.intl.string(Chunk388032.t.Bqss72),
     binds: j(Chunk981631.EkH.TOGGLE_PREVIOUS_GUILD)
   }, {
-    description: Chunk388032.intl.string(Chunk388032.t.UaXAPz),
+    description: Chunk388032.intl.string(Chunk388032.t.UaXAPx),
     binds: j(Chunk981631.EkH.MARK_SERVER_READ)
   }, {
-    description: Chunk388032.intl.string(Chunk388032.t["5X9vFh"]),
+    description: Chunk388032.intl.string(Chunk388032.t["5X9vFj"]),
     binds: j(Chunk981631.EkH.MARK_CHANNEL_READ)
   }, {
-    description: Chunk388032.intl.string(Chunk388032.t.JoxNnp),
+    description: Chunk388032.intl.string(Chunk388032.t.JoxNnl),
     binds: j(Chunk981631.EkH.SEARCH_EMOJIS),
     groupEnd: true
   }, {
-    description: Chunk388032.intl.string(Chunk388032.t.tL6eVV),
+    description: Chunk388032.intl.string(Chunk388032.t.tL6eVW),
     binds: j(Chunk981631.EkH.TOGGLE_MUTE)
   }, {
-    description: Chunk388032.intl.string(Chunk388032.t["QXe/7e"]),
+    description: Chunk388032.intl.string(Chunk388032.t["QXe/7T"]),
     binds: j(Chunk981631.EkH.TOGGLE_DEAFEN)
   }, {
-    description: Chunk388032.intl.string(Chunk388032.t.d6UIio),
+    description: Chunk388032.intl.string(Chunk388032.t.d6UIii),
     binds: j(Chunk981631.EkH.CALL_ACCEPT)
   }, {
-    description: Chunk388032.intl.string(Chunk388032.t.IcEW09),
+    description: Chunk388032.intl.string(Chunk388032.t.IcEW06),
     binds: j(Chunk981631.EkH.MARK_CHANNEL_READ)
   }, {
-    description: Chunk388032.intl.string(Chunk388032.t.WN2dsb),
+    description: Chunk388032.intl.string(Chunk388032.t.WN2dsS),
     binds: j(Chunk981631.EkH.CALL_START),
     groupEnd: true
   }, {
-    description: Chunk388032.intl.string(Chunk388032.t.L3RYYG),
+    description: Chunk388032.intl.string(Chunk388032.t.L3RYYJ),
     binds: j(Chunk981631.EkH.SCROLL_UP, Chunk981631.EkH.SCROLL_DOWN)
   }, {
-    description: Chunk388032.intl.string(Chunk388032.t["3HAurK"]),
+    description: Chunk388032.intl.string(Chunk388032.t["3HAurM"]),
     binds: j(Chunk981631.EkH.JUMP_TO_FIRST_UNREAD)
   }, {
-    description: Chunk388032.intl.string(Chunk388032.t.rrYBEh),
+    description: Chunk388032.intl.string(Chunk388032.t.rrYBEu),
     binds: j(Chunk981631.EkH.TEXTAREA_FOCUS)
   }, {
-    description: Chunk388032.intl.string(Chunk388032.t.yYsRlJ),
+    description: Chunk388032.intl.string(Chunk388032.t.yYsRlD),
     binds: j(Chunk981631.EkH.QUICKSWITCHER_SHOW)
   }]
 }

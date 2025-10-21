@@ -14,7 +14,7 @@ var Chunk793030 = require("./793030.js"),
   Chunk563132 = require("./563132.jsx"),
   Chunk612853 = require("./612853.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk461019 = require("./461019.js");
+  Chunk42207 = require("./42207.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -118,7 +118,7 @@ let g = e => {
         onPrimary: O
       }))
     }, T = () => null == t ? null : (0, r.jsx)(a.Avr, {
-      text: null != n ? n : u.intl.string(u.t["13/7kZ"]),
+      text: null != n ? n : u.intl.string(u.t["13/7kX"]),
       onClick: t,
       variant: "secondary"
     });

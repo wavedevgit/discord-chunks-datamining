@@ -100,7 +100,7 @@ function h(e) {
       return g.push({
         variant: "secondary",
         onClick: m,
-        text: u.intl.string(u.t["ETE/oK"])
+        text: u.intl.string(u.t["ETE/oC"])
       }, {
         onClick: h,
         text: "Try Again"

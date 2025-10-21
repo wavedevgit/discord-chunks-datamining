@@ -1,4 +1,4 @@
-/** Chunk was on 3408 **/
+/** Chunk was on 17013 **/
 /** chunk id: 495722, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => J
@@ -44,7 +44,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk46140 = require("./46140.js"),
   Chunk743294 = require("./743294.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk990759 = require("./990759.js");
+  Chunk475832 = require("./475832.js");
 
 function U(e) {
   var t, n;
@@ -154,7 +154,7 @@ function K(e) {
     questConfig: t.config
   }), B = s.useMemo(() => (0, w.fh)(t, w.eC.HERO_IMAGE), [t]), k = s.useMemo(() => null == B ? {} : {
     backgroundImage: "url(".concat(B.url, ")")
-  }, [B]), I = (0, g.ZP)(), q = (0, p.wj)(I), D = (0, d.e7)([x.Z], () => x.Z.isFocused()), L = (0, d.e7)([f.Z], () => f.Z.useReducedMotion);
+  }, [B]), I = (0, g.ZP)(), D = (0, p.wj)(I), q = (0, d.e7)([x.Z], () => x.Z.isFocused()), L = (0, d.e7)([f.Z], () => f.Z.useReducedMotion);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       ref: v,
@@ -169,7 +169,7 @@ function K(e) {
             className: H.title,
             color: "header-primary",
             variant: "heading-md/medium",
-            children: W.intl.format(W.t.EQa7oq, {
+            children: W.intl.format(W.t.EQa7os, {
               questName: t.config.messages.questName
             })
           }), (0, r.jsx)(z, {
@@ -187,7 +187,7 @@ function K(e) {
             loading: y,
             text: S,
             size: "sm",
-            icon: (0, R.getPrimaryCtaIcon)(t),
+            icon: (0, A.getPrimaryCtaIcon)(t),
             fullWidth: true
           })
         })]
@@ -218,7 +218,7 @@ function K(e) {
         className: H.shine,
         "data-migration-pending": true,
         shineSize: m.rHe.DEFAULT,
-        shinePaused: !D || L
+        shinePaused: !q || L
       })]
     }), (0, r.jsxs)(i.animated.div, {
       className: H.heroAssetWrapper,
@@ -239,7 +239,7 @@ function K(e) {
             opacity: a.to([0, 1], [1, 0])
           }
         })]
-      }), E.isAnimated ? (0, r.jsx)(A.Fl, {
+      }), E.isAnimated ? (0, r.jsx)(R.Fl, {
         id: "QuestBarV2ContentExpanded_heroAnimated",
         children: e => (0, r.jsx)(G, {
           ref: e,
@@ -247,7 +247,7 @@ function K(e) {
           isExpanded: h,
           reducedMotion: c
         })
-      }) : (0, r.jsx)(A.Fl, {
+      }) : (0, r.jsx)(R.Fl, {
         id: "QuestBarV2ContentExpanded_heroStatic",
         children: e => (0, r.jsx)("img", {
           ref: e,
@@ -257,7 +257,7 @@ function K(e) {
         })
       }), (0, r.jsx)("div", {
         className: o()(H.legibilityGradient, {
-          [H.legibilityGradientDark]: q
+          [H.legibilityGradientDark]: D
         })
       })]
     })]
@@ -306,10 +306,10 @@ function X(e) {
     onCtxMenuSelect: h,
     onGameSheetOpened: x,
     onGameSheetClosed: j
-  } = e, C = (null == (t = n.userStatus) ? true : t.completedAt) != null, E = a.percentComplete > 0, O = (0, v.z)(n), [S, T, w] = (0, v.me)(n, a), P = s.useRef(null), N = s.useRef(null), A = (0, v._s)({
+  } = e, C = (null == (t = n.userStatus) ? true : t.completedAt) != null, E = a.percentComplete > 0, O = (0, v.z)(n), [S, T, w] = (0, v.me)(n, a), P = s.useRef(null), N = s.useRef(null), R = (0, v._s)({
     quest: n
   }), W = (0, b.q8)(n), F = (0, v.Jf)(n), z = s.useCallback(() => {
-    (0, R.openVideoQuestModal)({
+    (0, A.openVideoQuestModal)({
       quest: n,
       questContent: y.jn.QUEST_BAR_V2,
       sourceQuestContent: y.jn.QUEST_BAR_V2,
@@ -331,7 +331,7 @@ function X(e) {
       ref: e => {
         "function" == typeof m ? m(e) : null != m && (m.current = e), null != e && (N.current = e)
       },
-      children: [(0, r.jsx)(V.Z, {
+      children: [(0, r.jsx)(Q.Z, {
         quest: n,
         onCtxMenuOpen: g,
         onCtxMenuClose: f,
@@ -356,12 +356,12 @@ function X(e) {
         onGameSheetOpened: x,
         onGameSheetClosed: j
       }), (0, r.jsx)(B.n, {
-        children: !C && !(0, b.Gd)(n) && (0, l.EQ)(S).with(y.LI.SELECT, () => (0, r.jsx)(Q.Z, {
+        children: !C && !(0, b.Gd)(n) && (0, l.EQ)(S).with(y.LI.SELECT, () => (0, r.jsx)(V.Z, {
           onConsole: () => w(M.cd.CONSOLE),
           onDesktop: () => w(M.cd.DESKTOP)
-        })).with(y.LI.DESKTOP, () => (0, r.jsx)(D.Z, {
+        })).with(y.LI.DESKTOP, () => (0, r.jsx)(q.Z, {
           quest: n
-        })).with(y.LI.CONSOLE, () => (0, r.jsx)(q.Z, {
+        })).with(y.LI.CONSOLE, () => (0, r.jsx)(D.Z, {
           quest: n,
           taskDetails: a
         })).exhaustive()
@@ -375,7 +375,7 @@ function X(e) {
           quest: n,
           useReducedMotion: p,
           isExpanded: u,
-          awaitingConsoleConnections: A,
+          awaitingConsoleConnections: R,
           hasMadeProgress: E,
           isProgressing: O,
           activeScreen: S,
@@ -397,7 +397,7 @@ function X(e) {
 }
 async function Y(e, t, n, r) {
   let s = (0, b.q8)(e);
-  return s && (0, S.R)(M.dr.QUESTS_BAR) ? void await (0, R.enrollAndStartVideoQuestWithErrorHandling)(e, {
+  return s && (0, S.R)(M.dr.QUESTS_BAR) ? void await (0, A.enrollAndStartVideoQuestWithErrorHandling)(e, {
     questContent: t,
     questContentCTA: n,
     sourceQuestContent: r,
@@ -410,7 +410,7 @@ async function Y(e, t, n, r) {
     questContent: t,
     questContentCTA: n,
     sourceQuestContent: r
-  }), s && (0, R.openVideoQuestModal)({
+  }), s && (0, A.openVideoQuestModal)({
     quest: e,
     questContent: t,
     sourceQuestContent: r,

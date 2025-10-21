@@ -1,4 +1,4 @@
-/** Chunk was on 76892 **/
+/** Chunk was on 9456 **/
 /** chunk id: 542581, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -17,8 +17,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk470623 = require("./470623.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk320401 = require("./320401.js"),
-  Chunk602009 = require("./602009.js");
+  Chunk899861 = require("./899861.js"),
+  Chunk430864 = require("./430864.js");
 let b = Chunk647438.memo(function(e) {
   let {
     channel: t,
@@ -63,7 +63,7 @@ let b = Chunk647438.memo(function(e) {
             color: "currentColor",
             width: 20,
             height: 20
-          }), f.intl.string(f.t["4d4T4u"]), v && (0, r.jsx)(c.P3F, {
+          }), f.intl.string(f.t["4d4T4l"]), v && (0, r.jsx)(c.P3F, {
             onClick: () => {
               d.ZP.open(t.id, true, g.ZfP.TOPIC)
             },
@@ -75,7 +75,7 @@ let b = Chunk647438.memo(function(e) {
             })
           })]
         }), (0, r.jsx)(c.P3F, {
-          "aria-label": f.intl.string(f.t.cpT0Cg),
+          "aria-label": f.intl.string(f.t.cpT0Cq),
           className: x.clickable,
           onClick: () => {
             b.getState().setGuidelinesOpen(false)
@@ -154,7 +154,7 @@ let b = Chunk647438.memo(function(e) {
                 variant: "text-sm/semibold",
                 color: "text-brand",
                 className: x.showMoreText,
-                children: [f.intl.string(f.t.Vu7odH), (0, r.jsx)(c.bJT, {
+                children: [f.intl.string(f.t.Vu7odK), (0, r.jsx)(c.bJT, {
                   size: "xs",
                   color: "currentColor",
                   className: x.showMoreIcon

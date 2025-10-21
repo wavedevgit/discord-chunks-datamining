@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk216701 = require("./216701.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk236426 = require("./236426.js");
+  Chunk530815 = require("./530815.js");
 let T = 60;
 
 function S(e) {
@@ -34,13 +34,13 @@ function S(e) {
   return null == n ? (0, r.jsx)(c.Text, {
     variant: "text-xxs/normal",
     color: "header-secondary",
-    children: v.intl.format(v.t.MkzlDA, {
-      channelName: v.intl.string(v.t.J90oLS)
+    children: v.intl.format(v.t.MkzlDL, {
+      channelName: v.intl.string(v.t.J90oLW)
     })
   }) : (0, r.jsx)(c.Text, {
     variant: "text-xxs/normal",
     color: "header-secondary",
-    children: v.intl.format(v.t.MkzlDA, {
+    children: v.intl.format(v.t.MkzlDL, {
       channelName: i
     })
   })
@@ -119,7 +119,7 @@ function C(e) {
           children: [(0, r.jsx)(c.Text, {
             variant: "text-md/semibold",
             color: "header-primary",
-            children: v.intl.format(v.t["/beONz"], {
+            children: v.intl.format(v.t["/beONw"], {
               step: y.title
             })
           }), (0, r.jsx)(S, {
@@ -155,7 +155,7 @@ function C(e) {
         }), (0, r.jsx)(c.Text, {
           variant: "text-xxs/normal",
           color: "text-muted",
-          children: v.intl.string(v.t["ElGg8/"])
+          children: v.intl.string(v.t["ElGg8+"])
         })]
       }), b ? (0, r.jsx)(c.owK, {
         size: "custom",

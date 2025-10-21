@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk921944 = require("./921944.js"),
   Chunk185923 = require("./185923.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk162600 = require("./162600.js");
+  Chunk345857 = require("./345857.js");
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -71,10 +71,10 @@ let T = 20,
   N = () => {
     let e = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion);
     return (0, Chunk951288.jsxs)("div", {
-      className: Chunk162600.premiumTooltipContainer,
+      className: Chunk345857.premiumTooltipContainer,
       children: [(0, Chunk951288.jsx)(Chunk481060.Fmz, {
-        className: o()(Chunk162600.premiumUnlockAnimation, {
-          [Chunk162600.reducedMotion]: module
+        className: o()(Chunk345857.premiumUnlockAnimation, {
+          [Chunk345857.reducedMotion]: module
         }),
         loop: false,
         shouldAnimate: !module,
@@ -82,8 +82,8 @@ let T = 20,
         importData: () => require.e("21812").then(require.t.bind(require, 741855, 19))
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/medium",
-        className: Chunk162600.premiumTooltipText,
-        children: Chunk388032.intl.format(Chunk388032.t["/7R4q6"], {})
+        className: Chunk345857.premiumTooltipText,
+        children: Chunk388032.intl.format(Chunk388032.t["/7R4q4"], {})
       })]
     })
   };
@@ -116,7 +116,7 @@ let P = function(e) {
     "data-migration-pending": true,
     targetElementRef: z,
     text: () => (0, r.jsx)(N, {}),
-    "aria-label": E.intl.formatToMarkdownString(E.t["/7R4q6"], {}),
+    "aria-label": E.intl.formatToMarkdownString(E.t["/7R4q4"], {}),
     position: "top",
     shouldShow: Y,
     tooltipClassName: b.premiumTooltip,
@@ -139,7 +139,7 @@ let P = function(e) {
         var n;
         null == v || v(t), null == (n = e.onClick) || n.call(e)
       },
-      "aria-label": E.intl.string(E.t["59QgaG"]),
+      "aria-label": E.intl.string(E.t["59QgaD"]),
       "aria-controls": T,
       "aria-expanded": y,
       "aria-haspopup": "dialog",

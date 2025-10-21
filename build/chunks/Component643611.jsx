@@ -1,7 +1,7 @@
 /** Chunk was on 74543 **/
 /** chunk id: 643611, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  default: () => _
+  default: () => S
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -42,11 +42,11 @@ let N = t => {
       let n = i.find(n => n.id === t);
       r(null != n ? n : true)
     },
-    placeholder: E.intl.string(E.t["N+T69/"])
+    placeholder: E.intl.string(E.t["N+T69y"])
   })
 };
 
-function _(t) {
+function S(t) {
   let {
     action: n,
     triggerType: e,
@@ -54,28 +54,28 @@ function _(t) {
     isEdit: d,
     onEditChannel: j,
     onClose: o,
-    transitionState: _
-  } = t, [S, C] = r.useState(n.metadata.channelId), [h, g] = r.useState(null), I = (0, a.e7)([c.Z], () => c.Z.getChannel(S), [S]), L = (0, A.c)(n.type, n, e);
+    transitionState: S
+  } = t, [_, C] = r.useState(n.metadata.channelId), [h, g] = r.useState(null), I = (0, a.e7)([c.Z], () => c.Z.getChannel(_), [_]), L = (0, A.c)(n.type, n, e);
   if (null == L) return null;
   let {
     headerText: T
   } = L;
   return (0, l.jsx)(i.Modal, {
     onClose: o,
-    transitionState: _,
+    transitionState: S,
     title: T,
-    subtitle: E.intl.string(E.t["z/ZF2t"]),
+    subtitle: E.intl.string(E.t["z/ZF2i"]),
     actions: [{
-      text: E.intl.string(E.t["ETE/oK"]),
+      text: E.intl.string(E.t["ETE/oC"]),
       onClick: () => {
         o()
       },
       variant: "secondary"
     }, {
-      text: d ? E.intl.string(E.t.bt75u7) : E.intl.string(E.t.R3BPHx),
+      text: d ? E.intl.string(E.t.bt75uw) : E.intl.string(E.t["R3BPH+"]),
       onClick: () => {
-        if (null == S) return void g(E.intl.string(E.t.lM1NLi));
-        j(S)
+        if (null == _) return void g(E.intl.string(E.t.lM1NLh));
+        j(_)
       }
     }],
     children: (0, l.jsxs)(u.Kqy, {
@@ -94,7 +94,7 @@ function _(t) {
       }) : (0, l.jsx)(u.Text, {
         color: "text-muted",
         variant: "text-sm/normal",
-        children: E.intl.string(E.t["ric+5u"])
+        children: E.intl.string(E.t["ric+5q"])
       })]
     })
   })

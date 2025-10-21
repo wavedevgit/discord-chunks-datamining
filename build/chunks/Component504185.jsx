@@ -1,4 +1,4 @@
-/** Chunk was on 63962 **/
+/** Chunk was on 91053 **/
 /** chunk id: 504185, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => ed,
@@ -58,7 +58,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk354459 = require("./354459.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk854409 = require("./854409.js");
+  Chunk515074 = require("./515074.js");
 
 function ei(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -93,21 +93,21 @@ function es(e) {
     selectedParticipant: c
   } = e, {
     parentAnalyticsLocation: d
-  } = (0, g.ZP)(), p = t.getGuildId(), h = (0, o.e7)([k.Z], () => k.Z.getMostRecentSelectedTextChannelId(p), [p]), f = A.default.getId(), y = !(0, o.e7)([m.Z], () => m.Z.isFullscreenInContext(n)) && (!U.isPlatformEmbedded || U.isPlatformEmbedded && G.ZP.supportsFeature(ee.eRX.POPOUT_WINDOWS)), _ = null != c && c.type !== et.fO.ACTIVITY && c.user.id !== f, j = i.useMemo(() => {
+  } = (0, g.ZP)(), p = t.getGuildId(), h = (0, o.e7)([k.Z], () => k.Z.getMostRecentSelectedTextChannelId(p), [p]), f = A.default.getId(), y = !(0, o.e7)([m.Z], () => m.Z.isFullscreenInContext(n)) && (!U.isPlatformEmbedded || U.isPlatformEmbedded && G.ZP.supportsFeature(ee.eRX.POPOUT_WINDOWS)), _ = null != c && c.type !== et.fO.ACTIVITY && c.user.id !== f, O = i.useMemo(() => {
     var e;
     return null != (e = null == a ? true : a.window) ? e : window
-  }, [a]), O = (0, J.Z)({
+  }, [a]), j = (0, J.Z)({
     channel: t,
     appContext: n,
     popoutOpen: l,
     popoutWindow: a,
-    currentWindow: j
+    currentWindow: O
   }), v = n === ee.IlC.POPOUT && U.isPlatformEmbedded && G.ZP.supportsFeature(ee.eRX.POPOUT_WINDOWS);
   return (0, r.jsxs)(r.Fragment, {
     children: [_ ? (0, r.jsx)(w.Z, {
       context: (0, b.Z)(c.type),
       userId: c.user.id,
-      currentWindow: j,
+      currentWindow: O,
       sliderClassName: er.volumeSlider,
       location: d
     }) : null, v ? (0, r.jsx)(R.Z, {
@@ -124,7 +124,7 @@ function es(e) {
       onClosePopout: () => {
         (0, x.v)(d, x.d.POPOUT, false), u.Z.wait(() => C.xv(ee.KJ3.CHANNEL_CALL_POPOUT))
       }
-    }) : null, O]
+    }) : null, j]
   })
 }
 
@@ -150,10 +150,10 @@ function ec(e) {
       popoutWindowAlwaysOnTop: h,
       popoutOpen: b,
       chatOpen: _,
-      idleProps: j
+      idleProps: O
     } = e,
     {
-      analyticsLocations: O
+      analyticsLocations: j
     } = (0, g.ZP)(f.Z.VOICE_CONTROL_TRAY),
     x = (0, v.bp)(),
     C = (0, o.e7)([k.Z], () => k.Z.getVoiceChannelId() === c.id, [c.id]),
@@ -194,14 +194,14 @@ function ec(e) {
     },
     disableGradients: !C || 0 === N && T.e.TOP,
     renderBottomCenter: () => C ? (0, r.jsx)(g.Gt, {
-      value: O,
+      value: j,
       children: (0, r.jsx)(Q.Z, {
         channel: c,
         isOnStartStageScreen: w
       })
     }) : null,
     renderBottomRight: () => C ? (0, r.jsx)(g.Gt, {
-      value: O,
+      value: j,
       children: (0, r.jsx)(es, {
         channel: c,
         appContext: x,
@@ -225,9 +225,9 @@ function ec(e) {
       })
     }),
     screenMessage: Z ? {
-      mainText: en.intl.string(en.t.J5bXZW)
+      mainText: en.intl.string(en.t.J5bXZU)
     } : null
-  }, j), n = n = {
+  }, O), n = n = {
     children: !Z && l
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
@@ -262,7 +262,7 @@ function ed(e) {
     participantsListOpen: m.Z.getParticipantsListOpen(t.id)
   }), [t.id]), N = (0, o.e7)([L.Z], () => L.Z.getGuild(t.guild_id), [t.guild_id]), {
     hasParticipantsPanel: R
-  } = (0, O.Z)({
+  } = (0, j.Z)({
     location: "StageChannelCall"
   });
   (0, h.ZP)(() => {
@@ -314,7 +314,7 @@ function ed(e) {
             channel: t,
             guild: N,
             maxWidth: D
-          }), T && R && M && (0, r.jsx)(j.Z, {
+          }), T && R && M && (0, r.jsx)(O.Z, {
             channel: t,
             maxWidth: D
           })]

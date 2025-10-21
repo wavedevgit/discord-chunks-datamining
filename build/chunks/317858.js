@@ -48,7 +48,7 @@ function y() {
     if (!module) return;
     let t = Chunk998502.ZP.bounceDock("critical"),
       n = (0, Chunk252618.EM)({
-        messages: [Chunk388032.intl.string(Chunk388032.t["fk1/bW"])],
+        messages: [Chunk388032.intl.string(Chunk388032.t["fk1/bX"])],
         count: 50
       });
     return () => {

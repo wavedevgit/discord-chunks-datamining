@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 346163, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -48,21 +48,21 @@ function h(e) {
     } = (0, l.eC)(null == e ? true : e.id),
     w = C || (null == N ? true : N.isApplicationPending) === true,
     Z = (null == N ? true : N.canApply) === true,
-    R = f.intl.format(f.t.aJUdOj, {
+    R = f.intl.format(f.t.aJUdOi, {
       faqUrl: o.Z.getArticleURL(p.BhN.CREATOR_FAQ)
     });
-  I && P ? t = true === h ? f.intl.format(f.t["0o1Q+v"], {
+  I && P ? t = true === h ? f.intl.format(f.t["0o1Q+t"], {
     communityGuidelineUrl: p.EYA.GUIDELINES
-  }) : f.intl.format(f.t.b6h59v, {
+  }) : f.intl.format(f.t.b6h59n, {
     communityGuidelineUrl: p.EYA.GUIDELINES
-  }) : I && null != S && (t = f.intl.format(f.t.TvX209, {
+  }) : I && null != S && (t = f.intl.format(f.t.TvX207, {
     requestCooldownDuration: S,
     creatorRevenuePolicyUrl: o.Z.getArticleURL(p.BhN.CREATOR_POLICY)
   }));
   let D = n && x && false === b,
     A = n && false === h,
     L = (0, m.f)(),
-    k = I && Z && x ? f.intl.format(f.t.wbVIUF, {}) : true;
+    k = I && Z && x ? f.intl.format(f.t.wbVIUB, {}) : true;
   return r.useEffect(() => {
     D && E()
   }, [E, D]), {

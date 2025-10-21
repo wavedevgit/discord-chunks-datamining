@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk527379 = require("./527379.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk195689 = require("./195689.js");
+  Chunk936765 = require("./936765.js");
 
 function f(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -73,7 +73,7 @@ function g(e) {
   return (0, r.jsx)(s.v2r, {
     navId: "member-safety-flags",
     onClose: n,
-    "aria-label": b.intl.string(b.t.k9m8Rk),
+    "aria-label": b.intl.string(b.t.k9m8Rg),
     onSelect: m.dG4,
     children: (0, r.jsxs)(s.kSQ, {
       children: [(0, r.jsx)(s.S89, {
@@ -86,7 +86,7 @@ function g(e) {
             width: 16,
             height: 16,
             className: p.unusualDMLabelIcon
-          }), b.intl.string(b.t.ZRnONz)]
+          }), b.intl.string(b.t.ZRnON3)]
         }),
         action: j,
         checked: i.requireUnusualDmActivity
@@ -100,7 +100,7 @@ function g(e) {
             width: 16,
             height: 16,
             className: p.timeoutLabelIcon
-          }), b.intl.string(b.t.z3wbj4)]
+          }), b.intl.string(b.t.z3wbj8)]
         }),
         action: x,
         checked: i.requireCommunicationDisabled
@@ -113,7 +113,7 @@ function g(e) {
               width: 16,
               height: 16,
               className: p.unusualAccountActivityLabelIcon
-            }), b.intl.string(b.t.DIQsDw)]
+            }), b.intl.string(b.t.DIQsD9)]
           }),
           action: v,
           checked: i.requireUnusualAccountActivity
@@ -127,7 +127,7 @@ function g(e) {
               width: 16,
               height: 16,
               className: p.quarantinedLabelIcon
-            }), b.intl.string(b.t.Jloklp)]
+            }), b.intl.string(b.t.Jloklk)]
           }),
           action: y,
           checked: i.requireUsernameQuarantined

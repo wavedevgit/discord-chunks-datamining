@@ -1,4 +1,4 @@
-/** Chunk was on 76892 **/
+/** Chunk was on 9456 **/
 /** chunk id: 219664, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -41,7 +41,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk710352 = require("./710352.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk873584 = require("./873584.js");
+  Chunk740202 = require("./740202.js");
 
 function z(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -171,7 +171,7 @@ function G(e) {
         ringTarget: b
       },
       onContextMenu: R,
-      "aria-label": D.intl.formatToPlainString(D.t.pgYN6e, {
+      "aria-label": D.intl.formatToPlainString(D.t.pgYN6c, {
         title: n.name,
         count: y
       }),
@@ -246,11 +246,11 @@ function V(e) {
     isIgnored: null != n && w.Z.isIgnoredForMessage(n)
   }));
   return s ? (0, r.jsx)($, {
-    message: D.intl.string(D.t.Lkp2fH),
+    message: D.intl.string(D.t.Lkp2fB),
     containerWidth: l.width,
     channel: t
   }) : c ? (0, r.jsx)($, {
-    message: D.intl.string(D.t.yWK7ZG),
+    message: D.intl.string(D.t.yWK7ZM),
     containerWidth: l.width,
     channel: t
   }) : (0, r.jsx)(W, {
@@ -354,8 +354,8 @@ function q(e) {
     })]
   })
 }
-let X = e => e.preventDefault(),
-  K = Chunk647438.memo(function(e) {
+let K = e => e.preventDefault(),
+  X = Chunk647438.memo(function(e) {
     return (0, r.jsx)(r.Fragment, {
       children: (0, v.Yi)(B(z({}, e), {
         analyticsSource: "ForumPostMediaPreviewImage"
@@ -388,7 +388,7 @@ let X = e => e.preventDefault(),
         width: e.width,
         height: e.height,
         alt: null != e.alt && a ? g : e.alt,
-        onClick: X,
+        onClick: K,
         shouldRenderAccessory: !m && !u
       }), b = (0, x.d$)(e.src) ? "".concat(e.src, "?format=png") : e.src, C = o && !a ? e.src : b;
       return (0, r.jsxs)("div", {
@@ -408,7 +408,7 @@ let X = e => e.preventDefault(),
           imageClassName: l()(H.thumbnailOverride, {
             [H.obscured]: a
           })
-        })) : (0, r.jsx)(K, B(z({}, f), {
+        })) : (0, r.jsx)(X, B(z({}, f), {
           autoPlay: o && !a,
           containerClassName: H.mosaicMediaContainer,
           imageClassName: l()(H.imageCover, {
@@ -506,7 +506,7 @@ function Q(e) {
       children: [a && null == n && (0, r.jsx)(d.Text, {
         variant: "text-sm/normal",
         color: o ? "header-secondary" : "text-muted",
-        children: D.intl.string(D.t.mE3KJC)
+        children: D.intl.string(D.t.mE3KJN)
       }), a && null != n && (0, r.jsx)(j.ZP, {
         message: n,
         content: h,

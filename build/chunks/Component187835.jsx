@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 187835, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => s
@@ -44,7 +44,7 @@ function s() {
       })
     },
     selected: module,
-    tooltip: Chunk388032.intl.string(Chunk388032.t.Z7jwrK),
+    tooltip: Chunk388032.intl.string(Chunk388032.t.Z7jwrJ),
     icon: Chunk481060._8t
   })
 }

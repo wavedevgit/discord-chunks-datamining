@@ -168,29 +168,29 @@ function y(e, t, n) {
   return f(E(e, t, n))
 }
 u(l({}, {
-  "#1abc9c": () => Chunk388032.intl.string(Chunk388032.t.fBawRk),
-  "#2ecc71": () => Chunk388032.intl.string(Chunk388032.t.hvv3QU),
-  "#3498db": () => Chunk388032.intl.string(Chunk388032.t.JwX6JS),
-  "#9b59b6": () => Chunk388032.intl.string(Chunk388032.t.H3xljo),
-  "#e91e63": () => Chunk388032.intl.string(Chunk388032.t.X9izyc),
-  "#11806a": () => Chunk388032.intl.string(Chunk388032.t.Kw7K29),
-  "#1f8b4c": () => Chunk388032.intl.string(Chunk388032.t.z5AZKS),
-  "#206694": () => Chunk388032.intl.string(Chunk388032.t.JqBqKy),
-  "#71368a": () => Chunk388032.intl.string(Chunk388032.t.edPgnJ),
-  "#ad1457": () => Chunk388032.intl.string(Chunk388032.t.ti7gsb),
-  "#f1c40f": () => Chunk388032.intl.string(Chunk388032.t["H9jz+f"]),
-  "#e67e22": () => Chunk388032.intl.string(Chunk388032.t.UmsfHB),
-  "#e74c3c": () => Chunk388032.intl.string(Chunk388032.t.GoDlAA),
-  "#95a5a6": () => Chunk388032.intl.string(Chunk388032.t["9GpDYG"]),
-  "#607d8b": () => Chunk388032.intl.string(Chunk388032.t.lwrNQE),
-  "#c27c0e": () => Chunk388032.intl.string(Chunk388032.t.Lf10GB),
-  "#a84300": () => Chunk388032.intl.string(Chunk388032.t["H+AjY2"]),
-  "#992d22": () => Chunk388032.intl.string(Chunk388032.t.XTkde3),
-  "#979c9f": () => Chunk388032.intl.string(Chunk388032.t.Ve0Lio),
-  "#546e7a": () => Chunk388032.intl.string(Chunk388032.t.BwbOAA),
-  "#99aab5": () => Chunk388032.intl.string(Chunk388032.t["/po5rK"])
+  "#1abc9c": () => Chunk388032.intl.string(Chunk388032.t.fBawRj),
+  "#2ecc71": () => Chunk388032.intl.string(Chunk388032.t.hvv3QR),
+  "#3498db": () => Chunk388032.intl.string(Chunk388032.t.JwX6Jd),
+  "#9b59b6": () => Chunk388032.intl.string(Chunk388032.t.H3xljj),
+  "#e91e63": () => Chunk388032.intl.string(Chunk388032.t.X9izyR),
+  "#11806a": () => Chunk388032.intl.string(Chunk388032.t.Kw7K2z),
+  "#1f8b4c": () => Chunk388032.intl.string(Chunk388032.t.z5AZKW),
+  "#206694": () => Chunk388032.intl.string(Chunk388032.t.JqBqKz),
+  "#71368a": () => Chunk388032.intl.string(Chunk388032.t.edPgnK),
+  "#ad1457": () => Chunk388032.intl.string(Chunk388032.t.ti7gsS),
+  "#f1c40f": () => Chunk388032.intl.string(Chunk388032.t["H9jz+S"]),
+  "#e67e22": () => Chunk388032.intl.string(Chunk388032.t.UmsfHL),
+  "#e74c3c": () => Chunk388032.intl.string(Chunk388032.t.GoDlAC),
+  "#95a5a6": () => Chunk388032.intl.string(Chunk388032.t["9GpDYK"]),
+  "#607d8b": () => Chunk388032.intl.string(Chunk388032.t.lwrNQG),
+  "#c27c0e": () => Chunk388032.intl.string(Chunk388032.t.Lf10GG),
+  "#a84300": () => Chunk388032.intl.string(Chunk388032.t["H+AjY7"]),
+  "#992d22": () => Chunk388032.intl.string(Chunk388032.t.XTkdex),
+  "#979c9f": () => Chunk388032.intl.string(Chunk388032.t.Ve0Lip),
+  "#546e7a": () => Chunk388032.intl.string(Chunk388032.t.BwbOAO),
+  "#99aab5": () => Chunk388032.intl.string(Chunk388032.t["/po5rJ"])
 }), {
-  "#5865f2": () => Chunk388032.intl.string(Chunk388032.t["Cn/LJy"])
+  "#5865f2": () => Chunk388032.intl.string(Chunk388032.t["Cn/LJ4"])
 });
 let O = 30,
   v = 80,

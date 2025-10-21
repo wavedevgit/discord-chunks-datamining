@@ -9,7 +9,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk793030 = require("./793030.js"),
   Chunk198993 = require("./198993.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk456068 = require("./456068.js");
+  Chunk93691 = require("./93691.js");
 let l = [],
   u = function(e) {
     let {
@@ -25,10 +25,10 @@ let l = [],
       actions: l,
       onClose: t,
       size: "md",
-      subtitle: a.intl.format(a.t.y2Dgd3, {
+      subtitle: a.intl.format(a.t.y2Dgd4, {
         questName: p
       }),
-      title: a.intl.string(a.t.tQWM2N),
+      title: a.intl.string(a.t.tQWM2E),
       transitionState: r,
       children: (0, n.jsx)("div", {
         className: c.qrCodeWrapper,

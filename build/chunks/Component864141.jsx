@@ -29,7 +29,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk670451 = require("./670451.jsx"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk663907 = require("./663907.js");
+  Chunk704543 = require("./704543.js");
 
 function N(e) {
   let {
@@ -59,7 +59,7 @@ function N(e) {
     location: "UserProfileVoiceActivityCard"
   }), U = () => {
     if (t.id !== n.id) return null;
-    let e = i.isDM() || i.isGroupDM() ? A.intl.string(A.t["+DsWbW"]) : A.intl.string(A.t.xOVEjY);
+    let e = i.isDM() || i.isGroupDM() ? A.intl.string(A.t["+DsWbX"]) : A.intl.string(A.t.xOVEjc);
     return (0, r.jsx)(s.u, {
       text: e,
       children: (0, r.jsx)(l.d3s, {
@@ -73,7 +73,7 @@ function N(e) {
       onAction: D,
       onClose: R
     })
-  }), B = i.isDM() || i.isGroupDM() ? A.intl.string(A.t["9FaEzs"]) : i.isGuildStageVoice() ? A.intl.string(A.t.QygGCA) : A.intl.string(A.t.msxteH);
+  }), B = i.isDM() || i.isGroupDM() ? A.intl.string(A.t["9FaEzi"]) : i.isGuildStageVoice() ? A.intl.string(A.t.QygGCN) : A.intl.string(A.t.msxteM);
   return (0, r.jsx)(u.Gt, {
     value: w,
     children: (0, r.jsxs)(E.Z, {

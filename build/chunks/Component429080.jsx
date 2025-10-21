@@ -15,8 +15,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk553393 = require("./553393.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk674455 = require("./674455.js"),
-  Chunk6723 = require("./6723.js");
+  Chunk818923 = require("./818923.js"),
+  Chunk746882 = require("./746882.js");
 let b = function(e) {
   let {
     quest: t
@@ -66,10 +66,10 @@ let b = function(e) {
       children: [(0, r.jsx)(s.Heading, {
         className: m.heading,
         variant: "heading-md/semibold",
-        children: h.intl.string(h.t.jY7Zxs)
+        children: h.intl.string(h.t.jY7Zxg)
       }), (0, r.jsx)("div", {
         className: m.previewDescription,
-        children: h.intl.string(h.t.q3hbnZ)
+        children: h.intl.string(h.t.q3hbne)
       }), (0, r.jsx)("div", {
         className: m.memberListContainer,
         children: (0, r.jsx)(s.yRy, {
@@ -108,7 +108,7 @@ let b = function(e) {
                   }), (0, r.jsx)(s.Text, {
                     variant: "text-sm/normal",
                     color: "text-muted",
-                    children: h.intl.string(h.t.b9w3bG)
+                    children: h.intl.string(h.t.b9w3bO)
                   })]
                 })]
               })

@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 12078, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk570911 = require("./570911.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk823222 = require("./823222.js");
+  Chunk453921 = require("./453921.js");
 
 function v(e) {
   let {
@@ -35,11 +35,11 @@ function v(e) {
   });
   return (0, r.jsx)(o.u, {
     asContainer: true,
-    text: x.intl.string(x.t.W4Nd7e),
+    text: x.intl.string(x.t.W4Nd7Q),
     children: (0, r.jsx)(c.P3F, {
       "aria-disabled": !n,
       tabIndex: n ? 0 : false,
-      "aria-label": x.intl.string(x.t.W4Nd7e),
+      "aria-label": x.intl.string(x.t.W4Nd7Q),
       onClick: n ? i : true,
       style: {
         background: (0, d.dG)(u)
@@ -125,7 +125,7 @@ function C(e) {
     })
   }, [C]), y = i.useCallback(e => (!p || null == n.customBanner) && e === n.brandColorPrimary, [n, p]);
   return (0, r.jsx)(c.gNt, {
-    label: x.intl.string(x.t.BSVog4),
+    label: x.intl.string(x.t.BSVog8),
     children: (0, r.jsxs)("div", {
       className: j.grid,
       children: [(0, r.jsx)(v, {

@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk74538 = require("./74538.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk623337 = require("./623337.js");
+  Chunk975377 = require("./975377.js");
 let E = {
     tension: 750,
     mass: 2.5,
@@ -54,7 +54,7 @@ function y(e) {
 }
 
 function O(e) {
-  return e ? m.intl.string(m.t["5cRA/f"]) : m.intl.string(m.t.buV4am)
+  return e ? m.intl.string(m.t["5cRA/b"]) : m.intl.string(m.t.buV4av)
 }
 
 function v(e) {
@@ -79,8 +79,8 @@ function v(e) {
     let e = S === c.z.SUPER_REACTION_TOGGLE_EDUCATION_DESKTOP;
     e && (A(h.L.DISMISS), setTimeout(() => N(e), 200))
   }, [S, A]);
-  let L = C ? m.intl.string(m.t["Osi/u7"]) : O(t),
-    x = C ? m.intl.string(m.t.ORK94u) : true;
+  let L = C ? m.intl.string(m.t["Osi/uy"]) : O(t),
+    x = C ? m.intl.string(m.t.ORK94p) : true;
   return (0, r.jsxs)(u.jSM, {
     position: "top",
     text: (0, r.jsx)(y, {
@@ -114,7 +114,7 @@ function v(e) {
         children: (0, r.jsx)(u.Text, {
           className: g.visuallyHidden,
           variant: "text-sm/semibold",
-          children: m.intl.string(m.t.buV4am)
+          children: m.intl.string(m.t.buV4av)
         })
       })]
     })]

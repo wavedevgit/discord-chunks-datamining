@@ -1,8 +1,8 @@
 /** Chunk was on 7654 **/
 /** chunk id: 462376, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  d: () => C,
-  k: () => y
+  d: () => y,
+  k: () => C
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk624138 = require("./624138.js"),
   Chunk51144 = require("./51144.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk869306 = require("./869306.js");
+  Chunk451964 = require("./451964.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -31,8 +31,8 @@ function E(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let y = 44;
-class C extends Chunk647438.Component {
+let C = 44;
+class y extends Chunk647438.Component {
   shouldComponentUpdate(e, t) {
     return this.state.sending !== t.sending || this.state.invited !== t.invited || this.state.hovered !== t.hovered || this.props.user !== e.user || this.props.channel !== e.channel
   }
@@ -53,7 +53,7 @@ class C extends Chunk647438.Component {
     if (null == exports || null == require)
       if (null != module) return (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/medium",
-        className: Chunk869306.acronym,
+        className: Chunk451964.acronym,
         "aria-hidden": true,
         children: module
       });
@@ -62,7 +62,7 @@ class C extends Chunk647438.Component {
       src: exports,
       "aria-label": require,
       size: Chunk481060.EFr.SIZE_32,
-      className: Chunk869306.inviteRowAvatar
+      className: Chunk451964.inviteRowAvatar
     })
   }
   render() {
@@ -72,7 +72,7 @@ class C extends Chunk647438.Component {
       } = this.props,
       {
         sending: l,
-        invited: r,
+        invited: a,
         hovered: o
       } = this.state;
     return e = Chunk481060 ? (0, Chunk951288.jsx)(Chunk755721.zx, {
@@ -80,23 +80,23 @@ class C extends Chunk647438.Component {
       size: Chunk755721.zx.Sizes.SMALL,
       disabled: true,
       color: (0, Chunk780384.wj)(Chunk210887.Z.theme) ? Chunk755721.zx.Colors.WHITE : Chunk755721.zx.Colors.BRAND,
-      children: Chunk388032.intl.string(Chunk388032.t["dVT14+"])
+      children: Chunk388032.intl.string(Chunk388032.t.dVT149)
     }) : (0, Chunk951288.jsx)(Chunk755721.zx, {
       color: Chunk755721.zx.Colors.GREEN,
       look: Chunk630810 ? Chunk755721.zx.Looks.FILLED : Chunk755721.zx.Looks.OUTLINED,
-      className: Chunk869306.inviteRowButton,
+      className: Chunk451964.inviteRowButton,
       size: Chunk755721.zx.Sizes.SMALL,
       submitting: Chunk647438,
       onClick: this.handleClickInvite,
-      children: Chunk388032.intl.string(Chunk388032.t.jYnGPD)
+      children: Chunk388032.intl.string(Chunk388032.t.jYnGPG)
     }), (0, Chunk951288.jsxs)("div", {
-      className: Chunk869306.inviteRow,
+      className: Chunk451964.inviteRow,
       onMouseEnter: this.handleMouseEnter,
       onMouseLeave: this.handleMouseLeave,
       children: [(0, Chunk951288.jsxs)("div", {
-        className: Chunk869306.inviteRowInfo,
+        className: Chunk451964.inviteRowInfo,
         children: [this.renderUserOrChannel(), (0, Chunk951288.jsxs)("div", {
-          className: Chunk869306.inviteRowName,
+          className: Chunk451964.inviteRowName,
           children: [Chunk51144.ZP.getName(exports), null != require ? (0, Chunk933557.F6)(require, Chunk594174.default, Chunk699516.Z, true) : null]
         })]
       }), module]

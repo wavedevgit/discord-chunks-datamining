@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk710111 = require("./710111.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk985597 = require("./985597.js");
+  Chunk647484 = require("./647484.js");
 
 function C(e) {
   return (0, a.e7)([_.Z], () => {
@@ -73,15 +73,15 @@ function R() {
   }, []);
   return (0, Chunk951288.jsx)(Chunk738486.Z, {
     children: (0, Chunk951288.jsxs)(Chunk481060.C3N, {
-      label: Chunk388032.intl.string(Chunk388032.t.nzUc3N),
-      description: Chunk388032.intl.format(Chunk388032.t.u9RWmp, {
+      label: Chunk388032.intl.string(Chunk388032.t.nzUc3B),
+      description: Chunk388032.intl.format(Chunk388032.t.u9RWmv, {
         helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.SOUNDBOARD)
       }),
       children: [(0, Chunk951288.jsx)(Chunk856768.Z, {
         guildId: exports,
-        className: Chunk985597.guildSelector,
+        className: Chunk647484.guildSelector,
         globalOption: {
-          label: Chunk388032.intl.string(Chunk388032.t.CpEUPz),
+          label: Chunk388032.intl.string(Chunk388032.t["CpEUP/"]),
           value: Chunk710111.hY
         },
         onChange: e => {
@@ -90,11 +90,11 @@ function R() {
         renderOptionSuffix: Chunk970813,
         hideDivider: true
       }), (0, Chunk951288.jsxs)(Chunk993413.Z, {
-        title: Chunk388032.intl.format(Chunk388032.t.I2TsYG, {
+        title: Chunk388032.intl.format(Chunk388032.t.I2TsYN, {
           nitroWheelHook: () => (0, Chunk951288.jsx)(Chunk481060.SrA, {
             size: "md",
             color: "currentColor",
-            className: Chunk985597.nitroWheel
+            className: Chunk647484.nitroWheel
           })
         }),
         children: [(0, Chunk951288.jsx)(Chunk331642.Z, {
@@ -104,7 +104,7 @@ function R() {
             null == n ? (0, p.aC)(t, e) : (0, p.SZ)(t, n, e)
           }
         }), Chunk918257 && (0, Chunk951288.jsx)(Chunk481060.Wn, {
-          className: Chunk985597.notice,
+          className: Chunk647484.notice,
           messageType: Chunk481060.QYI.WARNING,
           children: Chunk388032.intl.string(Chunk388032.t.WkPsFR)
         })]

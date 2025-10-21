@@ -42,12 +42,12 @@ function _(e) {
       case 1:
         return l;
       case 2:
-        return b.intl.format(b.t.t1DyCw, {
+        return b.intl.format(b.t.t1DyC1, {
           user1: l,
           user2: a
         });
       default:
-        return b.intl.format(b.t["5CSEcH"], {
+        return b.intl.format(b.t["5CSEcJ"], {
           user1: l,
           user2: a,
           extras: n.length - 2
@@ -87,7 +87,7 @@ function _(e) {
       switch (v.type) {
         case m.IIU.PLAYING:
           if ((0, s.Z)(v)) return {
-            subtitle: b.intl.string(b.t.tO8wOz),
+            subtitle: b.intl.string(b.t.tO8wOx),
             icon: (0, r.jsx)(h.Z.Header.Icon, {
               src: h.Z.Header.Icon.Src.XBOX
             })
@@ -103,7 +103,7 @@ function _(e) {
           };
         case m.IIU.STREAMING:
           return {
-            subtitle: b.intl.string(b.t.HyGHj4), icon: null != e && null != e.getIconURL(g.Z) ? (0, r.jsx)(h.Z.Header.Icon, {
+            subtitle: b.intl.string(b.t.HyGHj7), icon: null != e && null != e.getIconURL(g.Z) ? (0, r.jsx)(h.Z.Header.Icon, {
               src: e.getIconURL(g.Z)
             }) : null
           };
@@ -116,14 +116,14 @@ function _(e) {
           }) : (0, r.jsx)(h.Z.Header.Icon, {
             src: n(211827)
           }), {
-            subtitle: b.intl.formatToPlainString(b.t.NF5xoq, {
+            subtitle: b.intl.formatToPlainString(b.t.NF5xop, {
               name: v.name
             }),
             icon: i
           };
         case m.IIU.WATCHING:
           return {
-            subtitle: b.intl.formatToPlainString(b.t.pW3Ip6, {
+            subtitle: b.intl.formatToPlainString(b.t.pW3Ip3, {
               name: v.name
             }), icon: null != e && null != e.getIconURL(g.Z) ? (0, r.jsx)(h.Z.Header.Icon, {
               src: e.getIconURL(g.Z)
@@ -131,13 +131,13 @@ function _(e) {
           };
         default:
           return {
-            subtitle: b.intl.string(b.t.grGyaW), icon: null
+            subtitle: b.intl.string(b.t.grGyaf), icon: null
           }
       }
     }
     if (0 === p.length) {
       if (u.length > 0) return {
-        subtitle: b.intl.string(b.t.grGyaW),
+        subtitle: b.intl.string(b.t.grGyaf),
         icon: null
       };
       let e = p[0];
@@ -150,7 +150,7 @@ function _(e) {
           if (null != e) return e
         }
         if (null != t && t.type === m.IIU.LISTENING) return {
-          subtitle: b.intl.string(b.t.rmnkz8),
+          subtitle: b.intl.string(b.t.rmnkz4),
           icon: (0, r.jsx)(h.Z.Header.Icon, {
             src: h.Z.Header.Icon.Src.SPOTIFY
           })
@@ -179,7 +179,7 @@ function _(e) {
       }
     }
     return {
-      subtitle: b.intl.string(b.t.sau5tr),
+      subtitle: b.intl.string(b.t.sau5tt),
       icon: (0, r.jsx)(h.Z.Header.Icon, {
         src: h.Z.Header.Icon.Src.MULTIPLE
       })

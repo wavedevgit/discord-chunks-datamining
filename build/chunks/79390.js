@@ -152,7 +152,7 @@ function M(e, t) {
 function k(e) {
   let t = (0, u.ZH)(e),
     n = M(e, E.Dv);
-  return y.intl.format(y.t.Vn97KS, {
+  return y.intl.format(y.t.Vn97Ka, {
     username: t.nick,
     title: n
   })
@@ -182,29 +182,29 @@ function U(e, t) {
 function G(e, t) {
   let n = Math.max(0, t - e.length);
   if (1 === e.length)
-    if (n > 0) return y.intl.formatToPlainString(y.t["SV/iZm"], {
+    if (n > 0) return y.intl.formatToPlainString(y.t["SV/iZn"], {
       a: e[0],
       n: n.toLocaleString()
     });
     else return e[0];
   if (2 === e.length)
-    if (n > 0) return y.intl.formatToPlainString(y.t.YBnZKy, {
+    if (n > 0) return y.intl.formatToPlainString(y.t.YBnZK0, {
       a: e[0],
       b: e[1],
       n: n.toLocaleString()
     });
-    else return y.intl.formatToPlainString(y.t["O5+f5e"], {
+    else return y.intl.formatToPlainString(y.t["O5+f5c"], {
       a: e[0],
       b: e[1]
     });
-  return 3 !== e.length ? y.intl.formatToPlainString(y.t.yVX6kJ, {
+  return 3 !== e.length ? y.intl.formatToPlainString(y.t.yVX6kE, {
     n: n.toLocaleString()
-  }) : n > 0 ? y.intl.formatToPlainString(y.t["ThXp+P"], {
+  }) : n > 0 ? y.intl.formatToPlainString(y.t["ThXp+N"], {
     a: e[0],
     b: e[1],
     c: e[2],
     n: n.toLocaleString()
-  }) : y.intl.formatToPlainString(y.t["0UzBMz"], {
+  }) : y.intl.formatToPlainString(y.t["0UzBM3"], {
     a: e[0],
     b: e[1],
     c: e[2]

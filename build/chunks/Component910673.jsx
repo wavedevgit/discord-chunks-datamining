@@ -1,7 +1,7 @@
 /** Chunk was on 14021 **/
 /** chunk id: 910673, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  default: () => f
+  default: () => R
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,19 +19,19 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk526761 = require("./526761.js"),
   Chunk388032 = require("./388032.jsx");
-let f = t => {
+let R = t => {
   let {
     channelId: e,
-    messageId: f,
+    messageId: R,
     transitionState: g,
     onClose: O
   } = t, P = (0, I.Z)(), v = (0, _.Jm)(), T = (0, A.m8)(), h = r.useMemo(() => v && T, [v, T]), M = r.useCallback(t => {
     (0, A.aP)({
       action: t,
       channelId: e,
-      messageId: f
+      messageId: R
     })
-  }, [e, f]), p = r.useCallback(() => {
+  }, [e, R]), p = r.useCallback(() => {
     O(), M(A.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_FALSE_POSITIVE), (0, o.ZDy)(async () => {
       let {
         default: t
@@ -55,51 +55,51 @@ let f = t => {
         return t
       }({
         channelId: e,
-        messageId: f
+        messageId: R
       }, n))
     })
-  }, [e, f, O, M]);
+  }, [e, R, O, M]);
   return r.useEffect(() => {
     (0, A.aP)({
       action: A.Yy.EXPLICIT_MEDIA_LEARN_MORE_VIEWED,
       channelId: e,
-      messageId: f
+      messageId: R
     })
-  }, [e, f]), (0, i.jsx)(l.Modal, {
-    title: L.intl.string(L.t.sGW77u),
+  }, [e, R]), (0, i.jsx)(l.Modal, {
+    title: f.intl.string(f.t.sGW77l),
     subtitle: function() {
-      if (h) return L.intl.format(L.t["1L0hub"], {
+      if (h) return f.intl.format(f.t["1L0huf"], {
         handleOnHelpUrlHook: () => {
           s.Z.openUrl(C.Z.getArticleURL(d.BhN.TIGGER_PAWTECT_LEARN_MORE)), M(A.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_AGE_VERIFY_LEARN_MORE)
         }
       });
-      let t = L.intl.string(L.t.RUw0ZG),
-        e = L.intl.string(L.t["E/oQYG"]);
+      let t = f.intl.string(f.t.RUw0ZC),
+        e = f.intl.string(f.t["E/oQYL"]);
       return P ? t : e
     }(),
     actions: [function() {
       if (!T && !h) return {
-        text: L.intl.string(L.t.ZH7P2t),
+        text: f.intl.string(f.t.ZH7P2h),
         onClick: p,
         variant: "secondary"
       }
     }(), h ? {
-      text: L.intl.string(L.t.KPGVWl),
+      text: f.intl.string(f.t.KPGVWl),
       onClick: function() {
         O(), M(A.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_AGE_VERIFY_REVERIFY), s.Z.showAgeVerificationGetStartedModal({
           entryPoint: E.cU.SENSITIVE_MEDIA_LEARN_MORE
         })
       }
     } : P ? {
-      text: L.intl.string(L.t["9D+zGR"]),
+      text: f.intl.string(f.t["9D+zGX"]),
       onClick: function() {
         M(A.Yy.EXPLICIT_MEDIA_LEARN_MORE_CLICK_SETTINGS), (0, u.openUserSettings)(c.n.CONTENT_AND_SOCIAL_PANEL, {
           section: d.oAB.CONTENT_AND_SOCIAL,
-          scrollPosition: R.FY.EXPLICIT_MEDIA_REDACTION_V2
+          scrollPosition: L.FY.EXPLICIT_MEDIA_REDACTION_V2
         }), O()
       }
     } : {
-      text: L.intl.string(L.t.hvVgAQ),
+      text: f.intl.string(f.t.hvVgAZ),
       onClick: () => {
         (0, a.Z)(C.Z.getArticleURL(d.BhN.EXPLICIT_MEDIA_REDACTION))
       }

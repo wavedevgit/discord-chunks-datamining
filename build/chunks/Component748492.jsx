@@ -38,8 +38,8 @@ var Chunk120356 = require("./120356.js"),
   Chunk981631 = require("./981631.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk44149 = require("./44149.js"),
-  Chunk533362 = require("./533362.js");
+  Chunk702952 = require("./702952.js"),
+  Chunk186880 = require("./186880.js");
 
 function M(e) {
   let {
@@ -52,7 +52,7 @@ function M(e) {
     }),
     onClick: t,
     iconComponent: s.CJ0,
-    label: n ? D.intl.string(D.t["2TiKgY"]) : D.intl.string(D.t.oN8bqa)
+    label: n ? D.intl.string(D.t["2TiKgS"]) : D.intl.string(D.t.oN8bqe)
   })
 }
 

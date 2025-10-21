@@ -9,7 +9,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk153867 = require("./153867.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk826967 = require("./826967.js");
+  Chunk412335 = require("./412335.js");
 
 function b(e) {
   var t, r, {
@@ -52,8 +52,8 @@ function b(e) {
   }({
     header: s.intl.string(s.t.HlAPoq),
     confirmButtonColor: c.zx.Colors.GREEN,
-    confirmText: s.intl.string(s.t.rimG2d),
-    cancelText: s.intl.string(s.t["ETE/oK"]),
+    confirmText: s.intl.string(s.t.rimG2R),
+    cancelText: s.intl.string(s.t["ETE/oC"]),
     onConfirm: b,
     onClose: () => (f && l.ZP.updatedUnsyncedSettings({
       disableCallUserConfirmationPrompt: true
@@ -61,13 +61,13 @@ function b(e) {
   }, p), r = r = {
     children: [(0, n.jsx)(i.Text, {
       variant: "text-md/normal",
-      children: s.intl.string(s.t.Jz3oqK)
+      children: s.intl.string(s.t.Jz3oqA)
     }), (0, n.jsx)("div", {
       className: a.checkbox,
       children: (0, n.jsx)(i.Checkbox, {
         checked: f,
         onChange: e => O(e),
-        label: s.intl.string(s.t["JdIQ/f"]),
+        label: s.intl.string(s.t["JdIQ/Y"]),
         labelType: "secondary"
       })
     })]

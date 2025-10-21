@@ -10,7 +10,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk992050 = require("./992050.js");
+  Chunk74450 = require("./74450.js");
 
 function b(e) {
   var t, r, {
@@ -54,22 +54,22 @@ function b(e) {
     }
     return e
   }({
-    header: a.intl.string(a.t.VKsXpa),
-    confirmText: a.intl.string(a.t.R3BPHx),
-    cancelText: a.intl.string(a.t["ETE/oK"]),
+    header: a.intl.string(a.t.VKsXpY),
+    confirmText: a.intl.string(a.t["R3BPH+"]),
+    cancelText: a.intl.string(a.t["ETE/oC"]),
     confirmButtonColor: l.zx.Colors.BRAND,
     onConfirm: d
   }, b), r = r = {
     children: (0, n.jsxs)("div", {
       className: s.doubleInput,
       children: [(0, n.jsx)(u.Wrb, {
-        label: a.intl.string(a.t.pSZKvL),
+        label: a.intl.string(a.t.pSZKvM),
         required: true,
         value: p,
         onSelect: j,
         minDate: O
       }), (0, n.jsx)(u.MGJ, {
-        label: a.intl.string(a.t.GOmEb2),
+        label: a.intl.string(a.t.GOmEb8),
         required: true,
         value: p,
         onChange: j

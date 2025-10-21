@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk710111 = require("./710111.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk518025 = require("./518025.js");
+  Chunk937309 = require("./937309.js");
 
 function A(e) {
   let {
@@ -49,12 +49,12 @@ function A(e) {
     color: l.zx.Colors.CUSTOM,
     onClick: n,
     textOptions: {
-      textOverride: T.intl.string(T.t.pj0XBA)
+      textOverride: T.intl.string(T.t.pj0XBN)
     }
   }) : a === y.y.JOIN_GUILD ? (0, r.jsx)(c.Button, {
     variant: "primary",
     size: "sm",
-    text: T.intl.string(T.t.riu2R0),
+    text: T.intl.string(T.t.riu2R5),
     fullWidth: true,
     onClick: o
   }) : null
@@ -101,7 +101,7 @@ function C(e) {
           variant: "eyebrow",
           color: "header-muted",
           className: S.infoExpandedGuildTitle,
-          children: v ? T.intl.string(T.t.tGDabm) : T.intl.string(T.t.rnOmOT)
+          children: v ? T.intl.string(T.t.tGDabk) : T.intl.string(T.t.rnOmOa)
         }), (0, r.jsx)("div", {
           className: S.infoExpandedGuildInfo,
           children: (0, r.jsx)(f.Oe, {

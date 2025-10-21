@@ -10,7 +10,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk690221 = require("./690221.jsx"),
   Chunk460181 = require("./460181.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk199750 = require("./199750.js");
+  Chunk943584 = require("./943584.js");
 let c = [{
   preBold: "That's pretty...",
   bold: "fly!"
@@ -50,7 +50,7 @@ function p(t) {
   return (0, l.jsx)(s.Y0X, {
     className: u.bugReporterSubmitModalRoot,
     transitionState: e,
-    "aria-label": d.intl.string(d.t.mCCdws),
+    "aria-label": d.intl.string(d.t.mCCdwi),
     parentComponent: "BugReporterSubmitModal",
     children: (0, l.jsxs)(s.hzk, {
       style: {
@@ -67,8 +67,8 @@ function p(t) {
       }), (0, l.jsxs)(s.Text, {
         className: u.submitText,
         variant: "text-sm/normal",
-        children: ["Thanks for submitting a ", (0, l.jsx)(i.Z, {
-          onClick: () => (0, r.Z)(p.permalink_url),
+        children: ["Thanks for submitting a ", (0, l.jsx)(r.Z, {
+          onClick: () => (0, i.Z)(p.permalink_url),
           children: "bug"
         }), "!", (0, l.jsx)("br", {}), (0, l.jsx)(b, {
           punConfig: m

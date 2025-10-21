@@ -30,8 +30,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk825334 = require("./825334.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk978672 = require("./978672.js"),
-  Chunk602009 = require("./602009.js"),
+  Chunk877762 = require("./877762.js"),
+  Chunk430864 = require("./430864.js"),
   Chunk931057 = require("./931057.js");
 
 function M(e) {
@@ -154,7 +154,7 @@ function L(e) {
     children: [(0, l.jsx)(c.Heading, {
       variant: "heading-xl/bold",
       color: "header-primary",
-      children: w.intl.string(w.t.owvC9f)
+      children: w.intl.string(w.t.owvC9U)
     }), (0, l.jsx)("img", {
       className: E.emptyStateImage,
       src: A,
@@ -169,7 +169,7 @@ function L(e) {
           null != e && (0, p.uL)(P.Z5c.CHANNEL(n.id, e.id))
         },
         fullWidth: true,
-        text: w.intl.string(w.t["3iCBUl"])
+        text: w.intl.string(w.t["3iCBUn"])
       })
     })]
   }) : (0, l.jsxs)("div", {
@@ -177,7 +177,7 @@ function L(e) {
     children: [(0, l.jsx)(c.Heading, {
       variant: "heading-lg/bold",
       color: "header-primary",
-      children: w.intl.string(w.t.xwY4LS)
+      children: w.intl.string(w.t.xwY4La)
     }), r.map(e => (0, l.jsx)(k, {
       resource: e
     }, e.channelId))]

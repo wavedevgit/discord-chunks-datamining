@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk497505 = require("./497505.js"),
   Chunk415104 = require("./415104.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk674455 = require("./674455.js");
+  Chunk818923 = require("./818923.js");
 let c = e => {
   let {
     quest: t
@@ -20,7 +20,7 @@ let c = e => {
       children: [(0, r.jsx)(i.Heading, {
         className: s.heading,
         variant: "heading-md/semibold",
-        children: o.intl.string(o.t["5wnpFx"])
+        children: o.intl.string(o.t["5wnpF3"])
       }), (0, r.jsx)(a.Z, {
         className: s.questTile,
         quest: t,

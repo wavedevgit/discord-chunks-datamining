@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 178088, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   k: () => Z
@@ -24,12 +24,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk153209 = require("./153209.jsx"),
   Chunk903672 = require("./903672.jsx"),
   Chunk791914 = require("./791914.jsx"),
-  Chunk416018 = require("./416018.jsx"),
+  Chunk711165 = require("./711165.jsx"),
   Chunk946443 = require("./946443.jsx"),
   Chunk264233 = require("./264233.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk427998 = require("./427998.js");
+  Chunk253107 = require("./253107.js");
 
 function Z(e) {
   let {
@@ -37,8 +37,8 @@ function Z(e) {
     onClose: n,
     children: l,
     badgeState: Z,
-    popoutPosition: T,
-    popoutAlign: w,
+    popoutPosition: w,
+    popoutAlign: T,
     targetElementRef: A,
     spacing: R,
     dialogClassName: D
@@ -99,14 +99,14 @@ function Z(e) {
     children: (0, r.jsx)(u.yRy, {
       targetElementRef: A,
       animation: u.yRy.Animation.NONE,
-      position: T,
-      align: w,
+      position: w,
+      align: T,
       autoInvert: false,
       shouldShow: M,
       onRequestClose: V,
       renderPopout: function() {
         return (0, r.jsx)(u.VqE, {
-          "aria-label": P.intl.string(P.t.GSmTKC),
+          "aria-label": P.intl.string(P.t.GSmTKJ),
           className: D,
           children: (0, r.jsx)("div", {
             className: o()(N.container, {

@@ -10,7 +10,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk43740 = require("./43740.js"),
   Chunk437152 = require("./437152.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk351432 = require("./351432.js");
+  Chunk557313 = require("./557313.js");
 
 function f(e) {
   var t, r;
@@ -33,16 +33,16 @@ function f(e) {
     }
     return e
   }({}, e), r = r = {
-    header: a.intl.string(a.t.pjYu09),
+    header: a.intl.string(a.t["pjYu0/"]),
     confirmText: a.intl.string(a.t.zVZXRU),
-    cancelText: a.intl.string(a.t["ETE/oK"]),
+    cancelText: a.intl.string(a.t["ETE/oC"]),
     onConfirm: () => {
       (0, l.l)(true)
     },
     confirmButtonColor: c.zx.Colors.BRAND,
     children: [(0, n.jsx)(i.Text, {
       variant: "text-md/normal",
-      children: a.intl.format(a.t["0eydys"], {})
+      children: a.intl.format(a.t["0eydyj"], {})
     }), (0, n.jsx)("div", {
       className: u.checkboxMargin,
       children: (0, n.jsx)(i.Checkbox, {
@@ -50,7 +50,7 @@ function f(e) {
         onChange: () => {
           (0, s.E)(), b(true)
         },
-        label: a.intl.string(a.t["50TyjY"])
+        label: a.intl.string(a.t["50TyjR"])
       })
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {

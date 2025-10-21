@@ -45,8 +45,8 @@ var Chunk120356 = require("./120356.js"),
   Chunk474936 = require("./474936.js"),
   Chunk217702 = require("./217702.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk518520 = require("./518520.js"),
-  Chunk163594 = require("./163594.js"),
+  Chunk1721 = require("./1721.js"),
+  Chunk740150 = require("./740150.js"),
   Chunk107283 = require("./107283.js"),
   Chunk476945 = require("./476945.js"),
   Chunk945182 = require("./945182.js");
@@ -231,7 +231,7 @@ function W(e) {
     children: [m && (0, r.jsx)(l.Text, {
       variant: "text-sm/bold",
       className: s ? k.tier2ApplicationHomeSubheader : j.tier2ApplicationHomeSubheader,
-      children: M.intl.string(M.t.AozD3d)
+      children: M.intl.string(M.t.AozD3Q)
     }), g.map((e, n) => {
       let {
         Icon: i,
@@ -432,7 +432,7 @@ function X(e) {
       className: j.applicationHomeTierCardSectionHeader,
       variant: "display-md",
       color: "header-primary",
-      children: M.intl.string(M.t.vLz3Zm)
+      children: M.intl.string(M.t.vLz3Zs)
     }), (0, r.jsxs)("div", {
       ref: s,
       className: a()(j.premiumCards, i),

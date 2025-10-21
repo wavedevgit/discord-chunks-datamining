@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 333834, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => D
@@ -28,15 +28,15 @@ var Chunk951288 = require("./951288.js"),
   Chunk862149 = require("./862149.jsx"),
   Chunk982183 = require("./982183.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk997998 = require("./997998.js"),
+  Chunk943910 = require("./943910.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk763888 = require("./763888.js");
+  Chunk809946 = require("./809946.js");
 
-function T(e) {
+function w(e) {
   e.stopPropagation()
 }
 
-function w(e) {
+function T(e) {
   let {
     group: t,
     isOpen: n,
@@ -71,7 +71,7 @@ function R() {
     analyticsLocations: e
   } = (0, Chunk906732.ZP)(Chunk100527.Z.NOTIFICATIONS_INBOX);
   return (0, Chunk951288.jsx)("div", {
-    className: Chunk763888.emptyStateContainer,
+    className: Chunk809946.emptyStateContainer,
     children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
       gap: 24,
       align: "center",
@@ -89,7 +89,7 @@ function R() {
           style: {
             textAlign: "center"
           },
-          children: Chunk388032.intl.string(Chunk997998.default["O+racX"])
+          children: Chunk388032.intl.string(Chunk943910.default["O+racd"])
         })]
       }), (0, Chunk951288.jsx)(Chunk755721.zx, {
         onClick: () => (0, Chunk370774.j4)(module),
@@ -97,7 +97,7 @@ function R() {
         style: {
           fontWeight: 600
         },
-        children: Chunk388032.intl.string(Chunk997998.default.klSpfn)
+        children: Chunk388032.intl.string(Chunk943910.default.klSpfs)
       })]
     })
   })
@@ -205,7 +205,7 @@ function D(e) {
     Q = i.useMemo(() => {
       let e = [];
       return X ? e.push(a()) : q ? e.push((0, r.jsx)(R, {}, "empty-state")) : N ? (e.push(...n.map(e => d([e], true))), e.push(...t.map(e => d([e], false)))) : s().each(A, t => {
-        0 !== Y[t].length && (e.push((0, r.jsx)(w, {
+        0 !== Y[t].length && (e.push((0, r.jsx)(T, {
           group: t,
           isOpen: H[t],
           toggleOpenedState: () => {
@@ -220,7 +220,7 @@ function D(e) {
       }), e
     }, [t, n, a, H, z, Y, N, d, q, X, D]),
     J = Q[Q.length - 1],
-    $ = i.isValidElement(J) && J.type === w,
+    $ = i.isValidElement(J) && J.type === T,
     ee = (0, C.d)(e => e.setInboxReadState);
   i.useEffect(() => {
     X || ee(0 === Y.UNREAD.length)
@@ -265,8 +265,8 @@ function D(e) {
     viewId: D
   }), (0, r.jsx)("div", {
     className: o()(g, Z.messagesPopoutWrap),
-    onClick: T,
-    onDoubleClick: T,
+    onClick: w,
+    onDoubleClick: w,
     "aria-label": e["aria-label"],
     children: (0, r.jsx)(c.bG, {
       navigator: M,

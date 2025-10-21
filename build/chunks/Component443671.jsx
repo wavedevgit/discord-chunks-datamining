@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk487894 = require("./487894.jsx"),
   Chunk300234 = require("./300234.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk572002 = require("./572002.js");
+  Chunk836227 = require("./836227.js");
 
 function h(e) {
   let {
@@ -25,7 +25,7 @@ function h(e) {
   }, "".concat(e.section, "-").concat(e.row)), [n, h]);
   return 0 === n.length ? (0, r.jsx)(i.Z, {
     channel: t,
-    header: d.intl.string(d.t.HgTQ8v),
+    header: d.intl.string(d.t.HgTQ8p),
     startThread: a
   }) : (0, r.jsx)(o.aVo, {
     className: s()(u.list, u.activeThreadsList),

@@ -19,11 +19,11 @@ function c(e) {
   } = e;
   return (0, r.jsx)(i.Mb, {
     targetElementRef: c,
-    title: s.intl.string(s.t.gCgirq),
-    body: s.intl.string(s.t.fLMZFx),
+    title: s.intl.string(s.t.gCgirr),
+    body: s.intl.string(s.t.fLMZFw),
     assetUrl: "https://cdn.discordapp.com/assets/server-subscription-tier-template/upsell.mov",
     action: {
-      text: s.intl.string(s.t.BQq86u),
+      text: s.intl.string(s.t.BQq86h),
       variant: "primary",
       onClick: () => {
         l.Z.open(t, a.pNK.ROLE_SUBSCRIPTIONS, true, a.KsC.ROLE_SUBSCRIPTION_TIER_TEMPLATE)

@@ -1,4 +1,4 @@
-/** Chunk was on 3408 **/
+/** Chunk was on 17013 **/
 /** chunk id: 694802, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -8,7 +8,7 @@ require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk113434 = require("./113434.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk453799 = require("./453799.js");
+  Chunk603558 = require("./603558.js");
 
 function l(e) {
   let {
@@ -44,11 +44,11 @@ let c = function(e) {
   } = e, n = (0, a.qb)(t);
   if (0 === n.length) return null;
   let s = n.at(0);
-  return s === o.intl.string(o.t.BV6xDg) ? (0, r.jsx)(l, {
-    header: o.intl.string(o.t.onh6cn),
-    children: o.intl.string(o.t.arVHRE)
-  }) : s === o.intl.string(o.t.MFGxFB) ? (0, r.jsx)(l, {
-    header: o.intl.string(o.t.JPihZG),
-    children: o.intl.string(o.t.MFGxFB)
+  return s === o.intl.string(o.t.BV6xDm) ? (0, r.jsx)(l, {
+    header: o.intl.string(o.t.onh6ct),
+    children: o.intl.string(o.t.arVHRA)
+  }) : s === o.intl.string(o.t.MFGxFM) ? (0, r.jsx)(l, {
+    header: o.intl.string(o.t.JPihZA),
+    children: o.intl.string(o.t.MFGxFM)
   }) : null
 }

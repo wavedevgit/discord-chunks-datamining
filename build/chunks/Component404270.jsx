@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 404270, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -19,7 +19,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk937615 = require("./937615.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk205371 = require("./205371.js");
+  Chunk723116 = require("./723116.js");
 let x = e => {
   var t;
   let {
@@ -30,7 +30,7 @@ let x = e => {
     children: [(0, r.jsx)(s.Heading, {
       className: b.heading,
       variant: "heading-xl/semibold",
-      children: h.intl.string(h.t["3x1PFB"])
+      children: h.intl.string(h.t["3x1PFE"])
     }), (0, r.jsx)(s.Text, {
       variant: "text-md/normal",
       children: function(e) {
@@ -50,7 +50,7 @@ let x = e => {
           }, t),
           freeSubscriptionCount: f.cb,
           discountPercent: (0, g.T3)(n, f.Rr / 100)
-        }) : m.ZP.isPremium(t, f.PremiumTypes.TIER_1) ? h.intl.format(h.t.nQLVBA, {
+        }) : m.ZP.isPremium(t, f.PremiumTypes.TIER_1) ? h.intl.format(h.t.nQLVBF, {
           price: c,
           originalPrice: d,
           originalPriceHook: (e, t) => (0, r.jsx)("span", {
@@ -58,7 +58,7 @@ let x = e => {
             children: e
           }, t),
           discountPercent: (0, g.T3)(n, f.Rr / 100)
-        }) : h.intl.format(h.t.Mmf63N, {
+        }) : h.intl.format(h.t.Mmf63F, {
           price: c
         })
       }({

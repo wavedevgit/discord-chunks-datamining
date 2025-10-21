@@ -1,7 +1,7 @@
 /** Chunk was on 77370 **/
 /** chunk id: 83950, original params: t,a,n (module,exports,require) **/
 require.d(exports, {
-  default: () => m
+  default: () => h
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -23,58 +23,58 @@ var Chunk951288 = require("./951288.js"),
   Chunk890767 = require("./890767.js"),
   Chunk480443 = require("./480443.js");
 
-function m(t) {
+function h(t) {
   let {
     transitionState: a,
     onClose: n,
-    skuId: m
+    skuId: h
   } = t, {
-    analyticsLocations: y
-  } = (0, l.ZP)(u.Z.COLLECTIBLES_EXPIRY_MODAL), I = (0, r.wjy)((0, d.ZP)()), O = (0, f.Z)({
-    analyticsLocations: y
+    analyticsLocations: m
+  } = (0, l.ZP)(u.Z.COLLECTIBLES_EXPIRY_MODAL), I = (0, r.wjy)((0, p.ZP)()), O = (0, f.Z)({
+    analyticsLocations: m
   }), Z = s.useRef(null);
-  s.useEffect(() => ((0, p.Mn)({
+  s.useEffect(() => ((0, d.Mn)({
     avatarDecoration: null
   }), () => {
     E.default.track(b.rMx.COLLECTIBLES_EXPIRY_MODAL_CLOSED, {
       reason: Z.current,
-      sku_id: m
+      sku_id: h
     })
-  }), [m]), (0, _.Z)({
+  }), [h]), (0, _.Z)({
     type: c.ImpressionTypes.MODAL,
     name: c.ImpressionNames.COLLECTIBLES_EXPIRY_MODAL,
     properties: {
-      location_stack: y,
-      sku_id: m
+      location_stack: m,
+      sku_id: h
     }
   });
   let M = async () => {
     Z.current = "change_avatar_decoration", await n(), (0, o.xf)(), O(), (0, L.ps)({
-      analyticsLocations: y
+      analyticsLocations: m
     })
   }, x = async () => {
     Z.current = "go_to_shop", await n(), (0, C.mK)({
-      analyticsLocations: y,
+      analyticsLocations: m,
       analyticsSource: u.Z.COLLECTIBLES_EXPIRY_MODAL
     })
   }, D = async () => {
     Z.current = "tap_close_button", await n()
   }, S = [{
-    text: k.intl.string(k.t["x8T+k5"]),
+    text: k.intl.string(k.t["x8T+k9"]),
     variant: "secondary",
     onClick: M
   }, {
-    text: k.intl.string(k.t.fmqMER),
+    text: k.intl.string(k.t.fmqMEd),
     variant: "primary",
     onClick: x
   }];
   return (0, e.jsx)(i.ExpressiveModal, {
     graphic: {
       type: "image",
-      src: I ? g.Z : h.Z
+      src: I ? y.Z : g.Z
     },
-    title: k.intl.string(k.t.xz81o6),
-    subtitle: k.intl.string(k.t.Vrbnnp),
+    title: k.intl.string(k.t.xz81oy),
+    subtitle: k.intl.string(k.t.Vrbnnu),
     onClose: D,
     transitionState: a,
     actions: S

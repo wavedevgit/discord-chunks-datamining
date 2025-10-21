@@ -1,4 +1,4 @@
-/** Chunk was on 41348 **/
+/** Chunk was on 79041 **/
 /** chunk id: 720734, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => tx,
@@ -122,7 +122,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk46140 = require("./46140.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk490579 = require("./490579.js");
+  Chunk25874 = require("./25874.js");
 
 function tr(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -259,7 +259,7 @@ function tu(e) {
           var n;
           null == (n = e.onClick) || n.call(e, t), null == c || c(t)
         },
-        "aria-label": tn.intl.string(tn.t["3Uj+2t"]),
+        "aria-label": tn.intl.string(tn.t["3Uj+2p"]),
         "data-jump-section": g,
         className: l()(ta.avatarWrapper, {
           [ta.plated]: null != m
@@ -305,7 +305,7 @@ class tm extends Chunk647438.PureComponent {
   renderCopiedSuccess() {
     let {
       copiedStreak: e
-    } = this.state, t = [Chunk388032.intl.string(Chunk388032.t.MSaeTU), Chunk388032.intl.string(Chunk388032.t.UmrCw8), Chunk388032.intl.string(Chunk388032.t.gKE0Ji), Chunk388032.intl.string(Chunk388032.t["4DSKbm"]), Chunk388032.intl.string(Chunk388032.t["+8ENdX"]), Chunk388032.intl.string(Chunk388032.t.GlWHv7), Chunk388032.intl.string(Chunk388032.t.hIzxU1), Chunk388032.intl.string(Chunk388032.t["26uMPD"]), Chunk388032.intl.string(Chunk388032.t.uFs7R0), Chunk388032.intl.string(Chunk388032.t.bLXdcX), Chunk388032.intl.string(Chunk388032.t.gPg9fX)], n = Math.min(Math.max(0, module - 1), exports.length - 1);
+    } = this.state, t = [Chunk388032.intl.string(Chunk388032.t.MSaeTe), Chunk388032.intl.string(Chunk388032.t.UmrCw7), Chunk388032.intl.string(Chunk388032.t.gKE0Jq), Chunk388032.intl.string(Chunk388032.t["4DSKbi"]), Chunk388032.intl.string(Chunk388032.t["+8ENdT"]), Chunk388032.intl.string(Chunk388032.t.GlWHv8), Chunk388032.intl.string(Chunk388032.t.hIzxU9), Chunk388032.intl.string(Chunk388032.t["26uMPL"]), Chunk388032.intl.string(Chunk388032.t.uFs7R2), Chunk388032.intl.string(Chunk388032.t.bLXdcY), Chunk388032.intl.string(Chunk388032.t.gPg9fS)], n = Math.min(Math.max(0, module - 1), exports.length - 1);
     return (0, Chunk951288.jsx)(Chunk481060.UkV, {
       isShaking: this.isCopiedStreakGodlike,
       children: exports[require]
@@ -338,7 +338,7 @@ class tm extends Chunk647438.PureComponent {
         activities: exports,
         applicationStream: require,
         voiceChannel: Chunk392711 ? s : true,
-        textClassName: Chunk490579.activityStatusText,
+        textClassName: Chunk25874.activityStatusText,
         hideTooltip: true
       })
     });
@@ -353,8 +353,8 @@ class tm extends Chunk647438.PureComponent {
       forceHover: module,
       children: (0, Chunk951288.jsx)(Chunk427217.Z, {
         activity: Chunk374470,
-        emojiClassName: Chunk490579.emoji,
-        className: Chunk490579.customStatus
+        emojiClassName: Chunk25874.emoji,
+        className: Chunk25874.customStatus
       })
     }) : null != Chunk120356 && Chunk120356 !== Chunk981631.Skl.UNKNOWN && Chunk647438.hasUniqueUsername() ? (0, Chunk951288.jsx)(Chunk570928.Z, {
       hoverText: l,
@@ -668,7 +668,7 @@ class tm extends Chunk647438.PureComponent {
           })
         }), (0, a.jsx)("div", {
           className: ta.panelSubtextContainer,
-          children: (0, a.jsx)(e2.Z, {
+          children: (0, a.jsx)(e6.Z, {
             children: this.renderStatus()
           })
         })]
@@ -950,24 +950,24 @@ function tf(e) {
     {
       name: j
     } = (0, et.p6)(tt.h7.AUDIO_OUTPUT);
-  !g && m ? (t = tn.intl.format(tn.t["18wnuL"], {
+  !g && m ? (t = tn.intl.format(tn.t["18wnuD"], {
     inputDeviceName: v
-  }), n = tn.intl.formatToPlainString(tn.t["18wnuL"], {
+  }), n = tn.intl.formatToPlainString(tn.t["18wnuD"], {
     inputDeviceName: v
-  }), i = tn.intl.formatToPlainString(tn.t["18wnuL"], {
+  }), i = tn.intl.formatToPlainString(tn.t["18wnuD"], {
     inputDeviceName: v
-  })) : !g && p ? (t = tn.intl.format(tn.t["f+DDY2"], {
+  })) : !g && p ? (t = tn.intl.format(tn.t["f+DDY/"], {
     outputDeviceName: j
-  }), n = tn.intl.formatToPlainString(tn.t["f+DDY2"], {
+  }), n = tn.intl.formatToPlainString(tn.t["f+DDY/"], {
     outputDeviceName: j
-  }), i = tn.intl.formatToPlainString(tn.t["f+DDY2"], {
+  }), i = tn.intl.formatToPlainString(tn.t["f+DDY/"], {
     outputDeviceName: j
-  })) : t = null != l ? tn.intl.formatToPlainString(tn.t.Gzh6ZG, {
+  })) : t = null != l ? tn.intl.formatToPlainString(tn.t.Gzh6ZP, {
     webBuildOverride: l.id
-  }) : tn.intl.string(tn.t.cduTBA);
+  }) : tn.intl.string(tn.t.cduTBL);
   let _ = f.ewm,
     y = (0, h.i)();
-  return _ = null != l ? f.bgT : o ? f.Ncx : y.Component, (0, a.jsx)(e6.Z, tl(ti({
+  return _ = null != l ? f.bgT : o ? f.Ncx : y.Component, (0, a.jsx)(e2.Z, tl(ti({
     ref: x,
     tooltipText: t,
     tooltipColor: b ? f.r6K.GREEN : true,
@@ -1027,8 +1027,8 @@ function tg(e) {
     } = P,
     V = i || o ? f.v0G : F,
     W = (0, Z.Z)(n, i, o, s),
-    K = R ? tn.intl.string(tn.t.ARRV6u) : null;
-  t = _ ? tn.intl.string(tn.t["29gnR0"]) : null != K ? (0, a.jsxs)("div", {
+    K = R ? tn.intl.string(tn.t.ARRV6m) : null;
+  t = _ ? tn.intl.string(tn.t["29gnR4"]) : null != K ? (0, a.jsxs)("div", {
     className: ta.tooltipWithSubtext,
     children: [(0, a.jsx)(f.Text, {
       variant: "text-sm/medium",
@@ -1140,9 +1140,9 @@ function tg(e) {
             [ta.hasColorGlow]: el,
             [ta.popoutOpen]: i
           }),
-          children: [(0, a.jsx)(e6.Z, {
+          children: [(0, a.jsx)(e2.Z, {
             "aria-checked": S,
-            "aria-label": tn.intl.string(tn.t["w4m94+"]),
+            "aria-label": tn.intl.string(tn.t.w4m945),
             className: l()({
               [ta.micButtonWithMenu]: true
             }),
@@ -1169,10 +1169,10 @@ function tg(e) {
             tooltipColor: _ ? f.r6K.GREEN : true,
             tooltipForceOpen: _,
             tooltipText: t
-          }), (0, a.jsx)(e6.Z, {
-            "aria-label": y ? tn.intl.formatToPlainString(tn.t["18wnuL"], {
+          }), (0, a.jsx)(e2.Z, {
+            "aria-label": y ? tn.intl.formatToPlainString(tn.t["18wnuD"], {
               inputDeviceName: ec
-            }) : tn.intl.string(tn.t.fRzCbG),
+            }) : tn.intl.string(tn.t.fRzCbB),
             className: l()(ta.buttonChevron, {
               [ta.popoutOpen]: i
             }),
@@ -1195,13 +1195,13 @@ function tg(e) {
             tooltipColor: y ? f.r6K.GREEN : true,
             tooltipContentClassName: ta.accountButtonsTooltipContent,
             tooltipForceOpen: y,
-            tooltipPositionKeyStemOverride: y ? tn.intl.formatToPlainString(tn.t["18wnuL"], {
+            tooltipPositionKeyStemOverride: y ? tn.intl.formatToPlainString(tn.t["18wnuD"], {
               inputDeviceName: ec
             }) : true,
             tooltipShouldShow: !i,
-            tooltipText: y ? tn.intl.format(tn.t["18wnuL"], {
+            tooltipText: y ? tn.intl.format(tn.t["18wnuD"], {
               inputDeviceName: ec
-            }) : tn.intl.string(tn.t.fRzCbG)
+            }) : tn.intl.string(tn.t.fRzCbB)
           })]
         })
       }
@@ -1213,7 +1213,7 @@ function tg(e) {
       className: l()(ta.micButtonParent, {
         [ta.hasColorGlow]: el
       }),
-      children: [(0, a.jsx)(e6.Z, {
+      children: [(0, a.jsx)(e2.Z, {
         tooltipText: t,
         tooltipColor: _ ? f.r6K.GREEN : true,
         tooltipForceOpen: _,
@@ -1239,7 +1239,7 @@ function tg(e) {
         }),
         orangeGlow: R,
         redGlow: S,
-        "aria-label": tn.intl.string(tn.t["w4m94+"]),
+        "aria-label": tn.intl.string(tn.t.w4m945),
         "aria-checked": S,
         disabled: s
       }), Y && (0, a.jsx)(f.yRy, {
@@ -1302,7 +1302,7 @@ function tg(e) {
                   markAsDismissed: i,
                   onCTA: () => $(true)
                 }));
-                let c = () => (0, a.jsx)(e6.Z, ti({
+                let c = () => (0, a.jsx)(e2.Z, ti({
                   ref: T,
                   plated: null != v,
                   tooltipForceOpen: en,
@@ -1316,9 +1316,9 @@ function tg(e) {
                     }), (0, a.jsx)(f.Text, {
                       variant: "text-sm/medium",
                       color: "always-white",
-                      children: tn.intl.string(tn.t.VlC1dX)
+                      children: tn.intl.string(tn.t.VlC1de)
                     })]
-                  }) : tn.intl.string(tn.t.Hapb4O),
+                  }) : tn.intl.string(tn.t.Hapb4J),
                   icon: (0, a.jsx)(l, {
                     className: ta.buttonChevronIcon,
                     size: "custom",
@@ -1330,7 +1330,7 @@ function tg(e) {
                   className: ta.buttonChevron,
                   orangeGlow: R,
                   redGlow: S,
-                  "aria-label": tn.intl.string(tn.t.Hapb4O),
+                  "aria-label": tn.intl.string(tn.t.Hapb4J),
                   disabled: s,
                   onClick: e => {
                     i(e9.L.INDIRECT_ACTION), n(e), null != w && !Q && k ? (0, ew.$)(() => $(true)) : $(!Q)
@@ -1421,9 +1421,9 @@ function tb(e) {
             [ta.hasColorGlow]: h,
             [ta.popoutOpen]: s
           }),
-          children: [(0, a.jsx)(e6.Z, {
+          children: [(0, a.jsx)(e2.Z, {
             "aria-checked": h,
-            "aria-label": tn.intl.string(tn.t.wjcRFR),
+            "aria-label": tn.intl.string(tn.t.wjcRFX),
             className: ta.micButtonWithMenu,
             disabled: i,
             icon: (0, a.jsx)(j, {
@@ -1445,10 +1445,10 @@ function tb(e) {
             redGlow: h,
             role: "switch",
             tooltipText: C
-          }), (0, a.jsx)(e6.Z, {
-            "aria-label": u ? tn.intl.formatToPlainString(tn.t["f+DDY2"], {
+          }), (0, a.jsx)(e2.Z, {
+            "aria-label": u ? tn.intl.formatToPlainString(tn.t["f+DDY/"], {
               outputDeviceName: _
-            }) : tn.intl.string(tn.t.aA4VcX),
+            }) : tn.intl.string(tn.t.aA4Vce),
             className: l()(ta.buttonChevron, {
               [ta.popoutOpen]: s
             }),
@@ -1468,20 +1468,20 @@ function tb(e) {
             tooltipColor: u ? f.r6K.GREEN : true,
             tooltipContentClassName: ta.accountButtonsTooltipContent,
             tooltipForceOpen: u,
-            tooltipPositionKeyStemOverride: u ? tn.intl.formatToPlainString(tn.t["f+DDY2"], {
+            tooltipPositionKeyStemOverride: u ? tn.intl.formatToPlainString(tn.t["f+DDY/"], {
               outputDeviceName: _
             }) : true,
             tooltipShouldShow: !s,
-            tooltipText: u ? tn.intl.format(tn.t["f+DDY2"], {
+            tooltipText: u ? tn.intl.format(tn.t["f+DDY/"], {
               outputDeviceName: _
-            }) : tn.intl.string(tn.t.aA4VcX)
+            }) : tn.intl.string(tn.t.aA4Vce)
           })]
         })
       }
     })
   }) : (0, a.jsx)(N.Gt, {
     value: S,
-    children: (0, a.jsx)(e6.Z, {
+    children: (0, a.jsx)(e2.Z, {
       plated: null != d,
       tooltipText: C,
       onMouseEnter: b,
@@ -1501,7 +1501,7 @@ function tb(e) {
       iconForeground: h ? ta.strikethrough : true,
       role: "switch",
       redGlow: h,
-      "aria-label": tn.intl.string(tn.t.wjcRFR),
+      "aria-label": tn.intl.string(tn.t.wjcRFX),
       "aria-checked": h,
       disabled: i
     })

@@ -16,7 +16,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk266843 = require("./266843.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk660866 = require("./660866.js"),
+  Chunk598272 = require("./598272.js"),
   Chunk87181 = require("./87181.js");
 
 function m(e, t, n) {
@@ -62,7 +62,7 @@ function E(e) {
       fullWidth: i,
       variant: "primary",
       onClick: a,
-      text: _.intl.string(_.t.GURBQk)
+      text: _.intl.string(_.t.GURBQl)
     })
   })
 }
@@ -90,7 +90,7 @@ function b(e) {
       children: [(0, r.jsx)(s.Heading, {
         variant: "lg" === u ? "heading-xl/bold" : "heading-lg/bold",
         color: "header-primary",
-        children: _.intl.string(_.t.vnP31d)
+        children: _.intl.string(_.t.vnP31W)
       }), (0, r.jsx)(s.Text, {
         variant: "lg" === u ? "text-sm/medium" : "text-xs/medium",
         color: "text-default",

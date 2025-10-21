@@ -21,7 +21,7 @@ function c(e) {
       t = s.intl.string(s.t.SzxiqK);
       break;
     case o.bS.ALPHABETICAL:
-      t = s.intl.string(s.t.m8xstr)
+      t = s.intl.string(s.t.m8xsti)
   }
   return (0, i.jsx)(r.yRy, {
     targetElementRef: u,
@@ -60,7 +60,7 @@ function c(e) {
         buttonRef: u,
         size: "sm",
         variant: "secondary",
-        "aria-label": s.intl.string(s.t.yeYaHR),
+        "aria-label": s.intl.string(s.t.yeYaHf),
         icon: r.uVW,
         text: t
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {

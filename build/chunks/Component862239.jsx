@@ -12,7 +12,7 @@ var Chunk866442 = require("./866442.js"),
   Chunk549631 = require("./549631.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk437280 = require("./437280.js");
+  Chunk346340 = require("./346340.js");
 
 function x(e) {
   let {
@@ -133,17 +133,17 @@ function f(e) {
     children: [(0, a.jsx)(r.Heading, {
       variant: "heading-sm/semibold",
       className: m.perksHeader,
-      children: d.intl.string(d.t.CjC5XV)
+      children: d.intl.string(d.t.CjC5XZ)
     }), (0, a.jsx)(r.Text, {
       variant: "text-xs/semibold",
       className: m.benefitTypeHeader,
-      children: d.intl.string(d.t.rI43W1)
+      children: d.intl.string(d.t.rI43Wx)
     }), t.channels.map(e => (0, a.jsx)(p, {
       channel: e
     }, e.id)), (0, a.jsx)(r.Text, {
       variant: "text-xs/semibold",
       className: m.benefitTypeHeader,
-      children: d.intl.string(d.t.XqWRLi)
+      children: d.intl.string(d.t.XqWRLj)
     }), t.additional_perks.map((e, t) => (0, a.jsx)(u, {
       benefit: e.name
     }, t))]
@@ -170,7 +170,7 @@ function _(e) {
       })]
     }), (0, a.jsx)(r.Button, {
       variant: "primary",
-      text: d.intl.string(d.t["1W7mCg"]),
+      text: d.intl.string(d.t["1W7mCt"]),
       onClick: () => {
         n(t)
       }

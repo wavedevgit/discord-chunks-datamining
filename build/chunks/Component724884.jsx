@@ -10,7 +10,7 @@ var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk650267 = require("./650267.js"),
+  Chunk825460 = require("./825460.js"),
   Chunk247844 = require("./247844.js");
 
 function u(e) {
@@ -42,13 +42,13 @@ let d = function(e) {
         className: l.heading,
         color: "always-white",
         variant: "heading-xxl/bold",
-        children: s.intl.string(s.t.IzKs3t)
+        children: s.intl.string(s.t.IzKs3o)
       }), (0, r.jsxs)("ul", {
         className: l.cards,
         children: [(0, r.jsx)(u, {
           className: t,
           icon: o.$zw,
-          children: s.intl.string(s.t.TZigSE)
+          children: s.intl.string(s.t.TZigSO)
         }), (0, r.jsx)(u, {
           className: t,
           icon: e => (0, r.jsx)("img", {
@@ -56,15 +56,15 @@ let d = function(e) {
             src: c,
             alt: ""
           }),
-          children: s.intl.string(s.t.hjQuV1)
+          children: s.intl.string(s.t.hjQuV2)
         }), (0, r.jsx)(u, {
           className: t,
           icon: o.lZ8,
-          children: s.intl.string(s.t["2RUcaG"])
+          children: s.intl.string(s.t["2RUcaM"])
         }), (0, r.jsx)(u, {
           className: t,
           icon: o.h_8,
-          children: s.intl.string(s.t.bJoZKS)
+          children: s.intl.string(s.t.bJoZKV)
         })]
       })]
     }), (0, r.jsx)("div", {

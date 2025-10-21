@@ -68,8 +68,8 @@ let y = (0, Chunk191336.U)(e => ({
       w(g.L.USER_DISMISS), C(null)
     };
     return (0, r.jsx)(l.J2, {
-      title: E.intl.string(E.t["+WNDtb"]),
-      body: E.intl.string(E.t["5QKxGB"]),
+      title: E.intl.string(E.t["+WNDtV"]),
+      body: E.intl.string(E.t["5QKxGI"]),
       targetElementRef: a,
       shouldShow: D,
       position: "left",
@@ -83,7 +83,7 @@ let y = (0, Chunk191336.U)(e => ({
       },
       actions: [{
         icon: c.v3n,
-        text: E.intl.string(E.t["jaYS/v"]),
+        text: E.intl.string(E.t["jaYS/h"]),
         onClick: L
       }],
       onRequestClose: k

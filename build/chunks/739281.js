@@ -1,3 +1,0 @@
-/** Chunk was on 2481 **/
-/** chunk id: 739281, original params: e (module,exports,require) **/
-module.exports = JSON.parse('{"zyFyf3":"Du er i Ikke forstyrr. Endre til P\xe5logget for \xe5 bli med i samtalen.","7cuAe3":"Ikke forstyrr har v\xe6rt p\xe5 en stund. La vennene dine f\xe5 vite at du er tilgjengelig.","3nnb4u":"Vennene dine kan tro at du er opptatt. Endre til P\xe5logget for \xe5 delta i samtalen.","3t3FR0":"Fortell andre at du er tilgjengelig","Onha6O":"Er du fortsatt opptatt?","NtY0dX":"Du har hatt p\xe5 Ikke forstyrr i over en dag"}')

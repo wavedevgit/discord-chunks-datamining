@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk436660 = require("./436660.js"),
   Chunk887490 = require("./887490.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk53457 = require("./53457.js");
+  Chunk953782 = require("./953782.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -78,9 +78,9 @@ function v(e, t, n) {
       let f = {};
       if (l > 0) {
         let e;
-        e = c > 0 ? m.intl.formatToPlainString(m.t.BP8N0N, {
+        e = c > 0 ? m.intl.formatToPlainString(m.t.BP8N0K, {
           count: l
-        }) : m.intl.formatToPlainString(m.t.lziVCw, {
+        }) : m.intl.formatToPlainString(m.t.lziVC9, {
           count: l
         }), f["data-trailing-placeholder"] = e
       }
@@ -137,7 +137,7 @@ let I = e => {
   }) : (0, r.jsxs)("span", {
     className: o()(g.optionPillValue, g.readonlyPillValue),
     contentEditable: false,
-    children: [m.intl.string(m.t.GRdFnp), E]
+    children: [m.intl.string(m.t.GRdFni), E]
   }) : (0, r.jsxs)("span", {
     className: g.optionPillValue,
     children: [E, N ? (0, r.jsx)("span", {

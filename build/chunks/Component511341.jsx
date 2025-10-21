@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk231338 = require("./231338.js"),
   Chunk295907 = require("./295907.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk938365 = require("./938365.js");
+  Chunk396579 = require("./396579.js");
 let O = e => {
   let {
     emoji: t,
@@ -31,18 +31,18 @@ let O = e => {
   } = e, a = ":".concat(t.name, ":");
   switch (r) {
     case h.n_.ACTIVITY:
-      let o = b.intl.formatToPlainString(b.t.EUFEJi, {
+      let o = b.intl.formatToPlainString(b.t.EUFEJt, {
           username: n
         }),
         s = "\n> ".concat(i);
       return null != i ? "".concat(_.jd).concat(o, "*").concat(s, "\n").concat(a) : "".concat(_.jd).concat(o, "*\n").concat(a);
     case h.n_.AVATAR:
-      let l = b.intl.formatToPlainString(b.t.E6H15u, {
+      let l = b.intl.formatToPlainString(b.t.E6H15q, {
         username: n
       });
       return "".concat(_.jd).concat(l, "*\n").concat(a);
     case h.n_.STATUS:
-      let u = b.intl.formatToPlainString(b.t.XPQgLy, {
+      let u = b.intl.formatToPlainString(b.t.XPQgL2, {
           username: n
         }),
         d = "\n> ".concat(i);

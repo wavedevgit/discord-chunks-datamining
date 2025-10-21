@@ -1,4 +1,4 @@
-/** Chunk was on 99063 **/
+/** Chunk was on 86736 **/
 /** chunk id: 469880, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -10,7 +10,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk680298 = require("./680298.jsx"),
   Chunk289465 = require("./289465.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk240440 = require("./240440.js");
+  Chunk110594 = require("./110594.js");
 
 function u(e) {
   let {
@@ -32,7 +32,7 @@ function u(e) {
       onClear: () => g("")
     }),
     inModal: false,
-    title: c.intl.string(c.t["0hKkS0"]),
+    title: c.intl.string(c.t["0hKkS+"]),
     children: m.map((e, a) => (0, i.jsxs)(r.Fragment, {
       children: [(0, i.jsx)(o.Z, {
         applicationIcon: t,
@@ -48,7 +48,7 @@ function u(e) {
     children: (0, i.jsx)(l.Text, {
       color: "text-muted",
       variant: "text-sm/normal",
-      children: c.intl.string(c.t["x78c+P"])
+      children: c.intl.string(c.t["x78c+J"])
     })
   })
 }

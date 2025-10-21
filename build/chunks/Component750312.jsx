@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk840367 = require("./840367.jsx"),
   Chunk34335 = require("./34335.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk546178 = require("./546178.js");
+  Chunk415734 = require("./415734.js");
 
 function y(e) {
   let {
@@ -36,22 +36,22 @@ function y(e) {
   } = e, S = (0, c.Dt)(), E = (0, s.e7)([u.default], () => u.default.getId() === t), T = i.useRef(null), {
     registerManageWidgetButtonRef: C,
     manageFocusOnReorder: N
-  } = (0, b.j)(), D = i.useRef(null);
+  } = (0, b.j)(), A = i.useRef(null);
   i.useLayoutEffect(() => {
     let e = C(n.type);
-    return e(D.current), () => e(null)
+    return e(A.current), () => e(null)
   }, [C, n.type]);
   let {
-    trackUserProfileAction: A
+    trackUserProfileAction: D
   } = (0, d.KZ)(), k = (0, g.Z)({
     widgetType: n.type,
-    onAction: A
+    onAction: D
   }), Z = E && null != O && !h, {
     isDragging: R,
     dragSourcePosition: L
   } = (0, f.q)({
     dropRef: T,
-    dragRef: D,
+    dragRef: A,
     userId: t,
     widget: n,
     index: O,
@@ -72,7 +72,7 @@ function y(e) {
       }),
       "aria-labelledby": S,
       children: [Z && (0, r.jsx)(p.Z, {
-        buttonRef: D,
+        buttonRef: A,
         widget: n,
         className: l()(v.dragHandleButton, {
           [v.opacity]: G || R

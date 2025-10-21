@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk228168 = require("./228168.js"),
   Chunk295907 = require("./295907.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk336821 = require("./336821.js");
+  Chunk36190 = require("./36190.js");
 let T = (0, Chunk131704.createChannelRecord)({
     id: "1",
     type: Chunk106351.d.DM
@@ -38,18 +38,18 @@ let T = (0, Chunk131704.createChannelRecord)({
     } = e;
     switch (r) {
       case y.n_.ACTIVITY:
-        let a = v.intl.formatToPlainString(v.t.WmvMCg, {
+        let a = v.intl.formatToPlainString(v.t.WmvMCo, {
             username: n
           }),
           o = "\n> ".concat(i);
         return null != i ? "".concat(E.jd).concat(a, "*").concat(o, "\n").concat(t) : "".concat(E.jd).concat(a, "*\n").concat(t);
       case y.n_.AVATAR:
-        let s = v.intl.formatToPlainString(v.t.lpaBsL, {
+        let s = v.intl.formatToPlainString(v.t.lpaBsB, {
           username: n
         });
         return "".concat(E.jd).concat(s, "*\n").concat(t);
       case y.n_.STATUS:
-        let l = v.intl.formatToPlainString(v.t.lFXgFR, {
+        let l = v.intl.formatToPlainString(v.t.lFXgFV, {
             username: n
           }),
           c = "\n> ".concat(i);
@@ -61,11 +61,11 @@ let T = (0, Chunk131704.createChannelRecord)({
   A = e => {
     switch (e) {
       case y.n_.ACTIVITY:
-        return v.t.Qn081N;
+        return v.t.Qn081O;
       case y.n_.AVATAR:
-        return v.t.xGNPFB;
+        return v.t.xGNPFK;
       case y.n_.STATUS:
-        return v.t.g9BTCA;
+        return v.t.g9BTCM;
       default:
         (0, _.vE)(e)
     }

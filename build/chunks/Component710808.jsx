@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk10198 = require("./10198.js");
+  Chunk197571 = require("./197571.js");
 
 function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -72,12 +72,12 @@ async function P() {
 }
 
 function w() {
-  let e = Chunk388032.intl.string(Chunk388032.t["fKBB8/"]),
-    t = Chunk388032.intl.string(Chunk388032.t.BvyxEx);
+  let e = Chunk388032.intl.string(Chunk388032.t["fKBB8+"]),
+    t = Chunk388032.intl.string(Chunk388032.t.BvyxE7);
   (0, Chunk481060.h7j)(n => (0, r.jsx)(s.ConfirmModal, R(C({
     header: e,
     confirmButtonColor: o.zx.Colors.BRAND,
-    confirmText: T.intl.string(T.t.BddRzc)
+    confirmText: T.intl.string(T.t.BddRzS)
   }, n), {
     children: (0, r.jsx)(s.Text, {
       variant: "text-md/normal",
@@ -88,16 +88,16 @@ function w() {
 
 function D(e) {
   var t;
-  let n = T.intl.string(T.t.QZg0Jy),
-    i = null != e ? e : T.intl.string(T.t.VzHcSk),
+  let n = T.intl.string(T.t.QZg0J7),
+    i = null != e ? e : T.intl.string(T.t.VzHcSm),
     a = null == (t = (0, p.hp)(p.u.DEBUG_LOG_UPLOAD_FAILED)) ? true : t.errorCode,
-    l = T.intl.formatToPlainString(T.t["ejOT9/"], {
+    l = T.intl.formatToPlainString(T.t.ejOT95, {
       errorCode: a
     });
   (0, s.h7j)(e => (0, r.jsx)(s.ConfirmModal, R(C({
     header: n,
     confirmButtonColor: o.zx.Colors.BRAND,
-    confirmText: T.intl.string(T.t.BddRzc)
+    confirmText: T.intl.string(T.t.BddRzS)
   }, e), {
     children: (0, r.jsxs)("div", {
       style: {
@@ -122,15 +122,15 @@ function D(e) {
 
 function L(e) {
   (0, s.h7j)(t => (0, r.jsx)(s.ConfirmModal, R(C({
-    header: T.intl.string(T.t["7UXEFx"]),
-    confirmText: T.intl.string(T.t.BddRzc),
-    cancelText: T.intl.string(T.t["ETE/oK"]),
+    header: T.intl.string(T.t["7UXEF2"]),
+    confirmText: T.intl.string(T.t.BddRzS),
+    cancelText: T.intl.string(T.t["ETE/oC"]),
     onCancel: t.onClose,
     onConfirm: () => l.Z.setDebugLogging(e)
   }, t), {
     children: (0, r.jsx)(s.Text, {
       variant: "text-md/normal",
-      children: T.intl.string(T.t.IYPrRk)
+      children: T.intl.string(T.t.IYPrRl)
     })
   })))
 }
@@ -162,7 +162,7 @@ function x() {
       setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_STREAM_INFO_OVERLAY,
       children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
         label: Chunk388032.intl.string(Chunk388032.t["0CEP6e"]),
-        description: Chunk388032.intl.string(Chunk388032.t.kBXuW1),
+        description: Chunk388032.intl.string(Chunk388032.t["kBXuW+"]),
         checked: Chunk579806,
         onChange: e => {
           (0, y.Z)("stream_info_overlay_enabled", e, d), (0, c.y)({
@@ -173,27 +173,27 @@ function x() {
     }), (0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_AEC_DUMP,
       children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
-        label: Chunk388032.intl.string(Chunk388032.t["r6K+TE"]),
-        description: Chunk388032.intl.string(Chunk388032.t["xl9+Iy"]),
+        label: Chunk388032.intl.string(Chunk388032.t["r6K+TL"]),
+        description: Chunk388032.intl.string(Chunk388032.t["xl9+I6"]),
         checked: Chunk755721,
         onChange: e => l.Z.setAecDump(e)
       })
     }), (0, Chunk951288.jsxs)(Chunk921801.F, {
       setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_CONNECTION_REPLAY,
       children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
-        label: Chunk388032.intl.string(Chunk388032.t.U4FgFB),
+        label: Chunk388032.intl.string(Chunk388032.t.U4FgFK),
         description: Chunk388032.intl.string(Chunk388032.t.Lm72RU),
         checked: Chunk458725,
         onChange: e => u.TC(e)
       }), (0, Chunk951288.jsx)(Chunk600164.Z, {
-        className: Chunk10198.marginBottom20,
+        className: Chunk197571.marginBottom20,
         children: (0, Chunk951288.jsx)(Chunk600164.Z.Child, {
           grow: 0,
           shrink: 0,
           children: (0, Chunk951288.jsx)(Chunk481060.Button, {
             variant: "primary",
             size: "sm",
-            text: Chunk388032.intl.string(Chunk388032.t.nJnOHB),
+            text: Chunk388032.intl.string(Chunk388032.t.nJnOHO),
             onClick: () => Chunk304680.z4()
           })
         })
@@ -202,20 +202,20 @@ function x() {
       setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_DEBUGGING_LOGGING,
       children: (0, Chunk951288.jsxs)("div", {
         children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
-          label: Chunk388032.intl.string(Chunk388032.t["726JHB"]),
-          description: Chunk388032.intl.string(Chunk388032.t["/7ak9f"]),
+          label: Chunk388032.intl.string(Chunk388032.t["726JHL"]),
+          description: Chunk388032.intl.string(Chunk388032.t["/7ak9Q"]),
           checked: require,
           onChange: L
         }), (0, Chunk951288.jsxs)(Chunk481060.ButtonGroup, {
           size: "sm",
           children: [(0, Chunk951288.jsx)(Chunk481060.Button, {
             variant: "primary",
-            text: Chunk388032.intl.string(Chunk388032.t["3UB9aW"]),
+            text: Chunk388032.intl.string(Chunk388032.t["3UB9ad"]),
             disabled: module,
             onClick: A
           }), (0, Chunk951288.jsx)(Chunk481060.Button, {
             variant: "primary",
-            text: Chunk388032.intl.string(Chunk388032.t.nuPtYm),
+            text: Chunk388032.intl.string(Chunk388032.t.nuPtYi),
             onClick: P
           })]
         })]

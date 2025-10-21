@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk256003 = require("./256003.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk211606 = require("./211606.js");
+  Chunk800209 = require("./800209.js");
 
 function x(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -62,7 +62,7 @@ function y(e) {
   } = (0, f.Z)(t), _ = O.size > 0, w = async (e, t, n, r) => {
     try {
       let l = await c.Z.banMultipleUsers(e, t, n, r);
-      (0, s.showToast)((0, s.createToast)(g.intl.string(g.t.AsCe5O), s.ToastType.SUCCESS)), m.default.track(h.rMx.BULK_MODERATION_ACTION_COMPLETED, v(x({}, (0, d.hH)(e)), {
+      (0, s.showToast)((0, s.createToast)(g.intl.string(g.t.AsCe5I), s.ToastType.SUCCESS)), m.default.track(h.rMx.BULK_MODERATION_ACTION_COMPLETED, v(x({}, (0, d.hH)(e)), {
         action_type: b.jQ.BAN,
         target_user_ids: [...O],
         mod_user_id: C.default.getId(),
@@ -70,7 +70,7 @@ function y(e) {
         location
       }))
     } catch (e) {
-      (0, s.showToast)((0, s.createToast)(g.intl.string(g.t.mICAWV), s.ToastType.FAILURE))
+      (0, s.showToast)((0, s.createToast)(g.intl.string(g.t.mICAWY), s.ToastType.FAILURE))
     }
     H()
   }, S = l.useCallback(() => {
@@ -85,11 +85,11 @@ function y(e) {
     }), (0, r.jsx)(s.Text, {
       variant: "heading-md/bold",
       color: "text-default",
-      children: g.intl.format(g.t.TstoSU, {
+      children: g.intl.format(g.t.TstoSZ, {
         count: O.size
       })
     }), (0, r.jsx)(s.Avr, {
-      text: g.intl.string(g.t.yW6ZdH),
+      text: g.intl.string(g.t.yW6ZdE),
       onClick: S
     })]
   }), Z = (0, r.jsxs)("span", {
@@ -102,7 +102,7 @@ function y(e) {
     }), (0, r.jsx)(s.Text, {
       variant: "text-sm/semibold",
       color: "currentColor",
-      children: g.intl.string(g.t["2a50fH"])
+      children: g.intl.string(g.t["2a50fF"])
     })]
   });
   return y ? (0, r.jsx)(o.W, {
@@ -119,7 +119,7 @@ function y(e) {
           })), (0, s.ZDy)(async () => {
             let {
               default: e
-            } = await n.e("4114").then(n.bind(n, 98746));
+            } = await n.e("43350").then(n.bind(n, 98746));
             return n => (0, r.jsx)(e, v(x({}, n), {
               guildId: t,
               canBulkBan: y,

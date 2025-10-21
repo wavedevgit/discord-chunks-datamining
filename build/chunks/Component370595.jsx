@@ -8,8 +8,8 @@ require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk50493 = require("./50493.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk546679 = require("./546679.js"),
-  Chunk152540 = require("./152540.js");
+  Chunk220512 = require("./220512.js"),
+  Chunk87819 = require("./87819.js");
 
 function u(e) {
   let {
@@ -29,7 +29,7 @@ function u(e) {
           height: 20
         }), (0, r.jsx)(l.Heading, {
           variant: "heading-md/semibold",
-          children: s.intl.string(s.t["13/7kZ"])
+          children: s.intl.string(s.t["13/7kX"])
         })]
       })
     }), (0, r.jsx)(l.M2$, {

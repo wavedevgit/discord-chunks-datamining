@@ -1,4 +1,4 @@
-/** Chunk was on 3408 **/
+/** Chunk was on 17013 **/
 /** chunk id: 308069, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => C
@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk303385 = require("./303385.jsx"),
   Chunk46140 = require("./46140.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk461579 = require("./461579.js");
+  Chunk579605 = require("./579605.js");
 let v = (0, Chunk258536.animated)(Chunk685613.ZP),
   C = e => {
     let {
@@ -50,10 +50,10 @@ let v = (0, Chunk258536.animated)(Chunk685613.ZP),
         impressionId: S,
         sourceQuestContent: p.jn.QUEST_BAR_V2
       })
-    }, [S, t]), R = E && O, A = (0, r.jsx)(l.P3F, {
+    }, [S, t]), A = E && O, R = (0, r.jsx)(l.P3F, {
       onClick: N,
       className: o()(j.clickable, {
-        [j.logo]: R
+        [j.logo]: A
       }),
       children: (0, r.jsx)(v, {
         quest: t,
@@ -71,7 +71,7 @@ let v = (0, Chunk258536.animated)(Chunk685613.ZP),
     });
     return (0, r.jsxs)(i.animated.div, {
       className: o()(j.wrapper, j.rewardHighlightWrapper, {
-        [j.interactable]: R
+        [j.interactable]: A
       }),
       style: {
         transform: (0, i.to)([n.to({
@@ -90,8 +90,8 @@ let v = (0, Chunk258536.animated)(Chunk685613.ZP),
       }), (0, r.jsx)(x.Z, {
         quest: t,
         expansionSpring: n,
-        isFullyExpanded: R,
-        partnerBranding: A,
+        isFullyExpanded: A,
+        partnerBranding: R,
         useReducedMotion: y
       }), (0, r.jsxs)(i.animated.div, {
         className: j.promotedBadgeWrapper,
@@ -107,7 +107,7 @@ let v = (0, Chunk258536.animated)(Chunk685613.ZP),
           children: [(0, r.jsx)(l.Text, {
             color: "always-white",
             variant: "text-xs/normal",
-            children: b.intl.string(b.t.o6FLcH)
+            children: b.intl.string(b.t.o6FLcF)
           }), (0, r.jsx)(l.idN, {
             color: l.TVs.colors.WHITE,
             className: j.promotedBadgeIcon
@@ -142,7 +142,7 @@ let v = (0, Chunk258536.animated)(Chunk685613.ZP),
               return e
             }({}, e), n = n = {
               className: j.submenuWrapper,
-              "aria-label": b.intl.string(b.t.DEoVWV),
+              "aria-label": b.intl.string(b.t.DEoVWZ),
               children: (0, r.jsx)(l.xhG, {
                 size: "md",
                 color: "currentColor",

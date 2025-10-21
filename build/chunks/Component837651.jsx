@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk594174 = require("./594174.js"),
   Chunk287880 = require("./287880.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk378149 = require("./378149.js");
+  Chunk186603 = require("./186603.js");
 
 function p(e, t, r) {
   return t in e ? Object.defineProperty(e, t, {
@@ -65,10 +65,10 @@ class f extends Chunk647438.PureComponent {
       totpSecret: a,
       code: p,
       isVerifying: f
-    } = this.state, m = null == (e = Chunk594174.default.getCurrentUser()) ? true : module.email, b = (0, Chunk287880.U0)(null != m ? m : "", Chunk816814), x = (0, Chunk951288.jsx)("form", {
+    } = this.state, m = null == (e = Chunk594174.default.getCurrentUser()) ? true : module.email, x = (0, Chunk287880.U0)(null != m ? m : "", Chunk816814), b = (0, Chunk951288.jsx)("form", {
       onSubmit: this.handleActivate,
       children: (0, Chunk951288.jsxs)(Chunk600164.Z, {
-        className: Chunk378149.inputContainer,
+        className: Chunk186603.inputContainer,
         align: Chunk600164.Z.Align.START,
         children: [(0, Chunk951288.jsx)(Chunk481060.oil, {
           value: p,
@@ -84,7 +84,7 @@ class f extends Chunk647438.PureComponent {
           shrink: 0,
           children: (0, Chunk951288.jsx)(Chunk481060.Button, {
             variant: "primary",
-            text: Chunk388032.intl.string(Chunk388032.t["/a5+YW"]),
+            text: Chunk388032.intl.string(Chunk388032.t["/a5+YV"]),
             type: "submit",
             loading: f
           })
@@ -94,7 +94,7 @@ class f extends Chunk647438.PureComponent {
     return (0, Chunk951288.jsxs)(Chunk481060.Y0X, {
       transitionState: exports,
       size: Chunk481060.CgR.DYNAMIC,
-      className: Chunk378149.customWidth,
+      className: Chunk186603.customWidth,
       parentComponent: "MFAEnable",
       children: [(0, Chunk951288.jsxs)(Chunk481060.xBx, {
         separator: false,
@@ -103,11 +103,11 @@ class f extends Chunk647438.PureComponent {
           shrink: 1,
           children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
             variant: "heading-lg/semibold",
-            children: Chunk388032.intl.string(Chunk388032.t.cDgKtb)
+            children: Chunk388032.intl.string(Chunk388032.t.cDgKte)
           }), (0, Chunk951288.jsx)(Chunk481060.Text, {
             variant: "text-xs/normal",
-            className: Chunk378149.subHeader,
-            children: Chunk388032.intl.string(Chunk388032.t["7NGwtL"])
+            className: Chunk186603.subHeader,
+            children: Chunk388032.intl.string(Chunk388032.t["7NGwtH"])
           })]
         }), (0, Chunk951288.jsx)(Chunk600164.Z.Child, {
           grow: 0,
@@ -123,42 +123,42 @@ class f extends Chunk647438.PureComponent {
             width: 100,
             height: 100
           }),
-          label: Chunk388032.intl.string(Chunk388032.t["9E74Dw"]),
-          text: Chunk388032.intl.format(Chunk388032.t.A7Aeh4, {
+          label: Chunk388032.intl.string(Chunk388032.t["9E74Dx"]),
+          text: Chunk388032.intl.format(Chunk388032.t.A7Aehw, {
             googleAuthURL: "https://support.google.com/accounts/answer/1066447?hl=en",
             authyURL: "https://www.authy.com/"
           })
         }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
-          className: Chunk378149.divider
+          className: Chunk186603.divider
         }), (0, Chunk951288.jsx)(g, {
           image: (0, Chunk951288.jsx)(Chunk198993.ZP, {
-            text: b
+            text: x
           }),
-          label: Chunk388032.intl.string(Chunk388032.t["91InFx"]),
-          text: Chunk388032.intl.string(Chunk388032.t.hFeBkp),
+          label: Chunk388032.intl.string(Chunk388032.t["91InF1"]),
+          text: Chunk388032.intl.string(Chunk388032.t.hFeBkl),
           children: (0, Chunk951288.jsxs)("div", {
-            className: Chunk378149.topSpacing,
+            className: Chunk186603.topSpacing,
             children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
               variant: "heading-sm/semibold",
-              className: Chunk378149.headerSpacing,
-              children: Chunk388032.intl.string(Chunk388032.t["76IPws"])
+              className: Chunk186603.headerSpacing,
+              children: Chunk388032.intl.string(Chunk388032.t["76IPwr"])
             }), (0, Chunk951288.jsx)(Chunk481060.Text, {
               variant: "text-md/normal",
-              className: Chunk378149.secret,
+              className: Chunk186603.secret,
               selectable: true,
               children: Chunk816814
             })]
           })
         }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
-          className: Chunk378149.divider
+          className: Chunk186603.divider
         }), (0, Chunk951288.jsx)(g, {
           image: (0, Chunk951288.jsx)("img", {
             alt: "",
             src: require("./308777.js")
           }),
-          label: Chunk388032.intl.string(Chunk388032.t["SaD/LS"]),
-          text: Chunk388032.intl.string(Chunk388032.t.vI1ziY),
-          children: x
+          label: Chunk388032.intl.string(Chunk388032.t["SaD/LY"]),
+          text: Chunk388032.intl.string(Chunk388032.t.vI1zic),
+          children: b
         })]
       })]
     })

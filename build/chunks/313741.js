@@ -16,11 +16,11 @@ let d = {
     "server-subscriptions-create-tier-from-template": Chunk172337.Z
   },
   c = {
-    title: () => Chunk388032.intl.string(Chunk388032.t.V42OaG),
-    description: () => Chunk388032.intl.string(Chunk388032.t["7dJ16e"]),
-    selectGuildCta: () => Chunk388032.intl.string(Chunk388032.t.LhlgY2),
-    createGuildDescription: () => Chunk388032.intl.string(Chunk388032.t.anOis7),
-    createGuildCta: () => Chunk388032.intl.string(Chunk388032.t.B44MTk),
+    title: () => Chunk388032.intl.string(Chunk388032.t.V42OaH),
+    description: () => Chunk388032.intl.string(Chunk388032.t["7dJ16X"]),
+    selectGuildCta: () => Chunk388032.intl.string(Chunk388032.t.LhlgY9),
+    createGuildDescription: () => Chunk388032.intl.string(Chunk388032.t.anOisx),
+    createGuildCta: () => Chunk388032.intl.string(Chunk388032.t.B44MTm),
     canCreateGuild: true,
     useIsGuildSupported: () => (0, Chunk442837.e7)([Chunk496675.Z], () => e => s.Z.canAccessGuildSettings(e), [], Chunk442837.pF)
   };

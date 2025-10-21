@@ -10,7 +10,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk210887 = require("./210887.js"),
   Chunk687683 = require("./687683.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk949331 = require("./949331.js"),
+  Chunk669850 = require("./669850.js"),
   Chunk138715 = require("./138715.js"),
   Chunk979770 = require("./979770.js");
 
@@ -27,7 +27,7 @@ function p(e) {
       lightSrc: d,
       darkSrc: u
     }), (0, r.jsx)(l.OZU, {
-      note: t === o.pS.SPAM ? s.intl.string(s.t.hasFPT) : s.intl.string(s.t.SXrqTU)
+      note: t === o.pS.SPAM ? s.intl.string(s.t.hasFPQ) : s.intl.string(s.t.SXrqTf)
     })]
   })
 }

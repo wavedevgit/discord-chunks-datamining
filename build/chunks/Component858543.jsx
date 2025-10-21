@@ -16,8 +16,8 @@ var Chunk120356 = require("./120356.js"),
   Chunk479099 = require("./479099.jsx"),
   Chunk176505 = require("./176505.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk262008 = require("./262008.js"),
-  Chunk521630 = require("./521630.js");
+  Chunk586301 = require("./586301.js"),
+  Chunk240778 = require("./240778.js");
 
 function x(e) {
   let {
@@ -61,7 +61,7 @@ function j(e) {
     }) : null, p && (0, a.jsx)("div", {
       className: f.pinIcon,
       children: (0, a.jsx)(i.u, {
-        text: h.intl.string(h.t["1QLRYW"]),
+        text: h.intl.string(h.t["1QLRYb"]),
         children: (0, a.jsx)(o.qQX, {
           size: "custom",
           width: 16,

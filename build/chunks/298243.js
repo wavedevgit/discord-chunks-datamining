@@ -32,13 +32,13 @@ function f(e) {
   }), [i, f]);
   return (null != (n = null == _ || null == (t = _.attachments) ? true : t.length) ? n : 0) > 1 ? {
     variant: "primary",
-    text: d.intl.string(d.t.UyuiUF),
+    text: d.intl.string(d.t.UyuiUE),
     icon: s.d4D,
     iconPosition: "end",
     onClick: g
   } : {
     variant: "primary",
-    text: d.intl.string(d.t.t9bE9f),
+    text: d.intl.string(d.t.t9bE9b),
     icon: s._8t,
     iconPosition: "end",
     loading: p,

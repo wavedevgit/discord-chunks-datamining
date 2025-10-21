@@ -707,10 +707,10 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
         containQuery: RegExp(ei.Z.escape(i), "i"),
         queryLower: i
       }, s = {
-        [d.Ky.SHOP]: [ef.intl.string(ef.t.pWG4zc)],
-        [d.Ky.NITRO_HOME]: [ef.intl.string(ef.t.Ipxkoq)],
-        [d.Ky.QUEST_HOME]: [ef.intl.string(ef.t.JALI2N)],
-        [d.Ky.APPS_HOME]: [ef.intl.string(ef.t.PHjkRE), ef.intl.string(ef.t.AKcFUl)]
+        [d.Ky.SHOP]: [ef.intl.string(ef.t.pWG4ze)],
+        [d.Ky.NITRO_HOME]: [ef.intl.string(ef.t.Ipxkog)],
+        [d.Ky.QUEST_HOME]: [ef.intl.string(ef.t.JALI2K)],
+        [d.Ky.APPS_HOME]: [ef.intl.string(ef.t.PHjkRE), ef.intl.string(ef.t.AKcFUj)]
       }, l = [];
       for (let e in s) {
         let t = d.Ky[e],
@@ -895,13 +895,13 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
         queryLower: r
       }, a = (0, y.s)(n.id) && !n.features.has(el.GuildFeatures.HUB), o = n.features.has(el.GuildFeatures.COMMUNITY), s = (0, b.t)(n) && n.features.has(el.GuildFeatures.COMMUNITY), l = [{
         id: eu.HY.SERVER_GUIDE,
-        name: ef.intl.string(ef.t.VbpLyc)
+        name: ef.intl.string(ef.t.VbpLyU)
       }, {
         id: eu.HY.CHANNEL_BROWSER,
-        name: ef.intl.string(ef.t.et6wam)
+        name: ef.intl.string(ef.t.et6wav)
       }, {
         id: eu.HY.CUSTOMIZE_COMMUNITY,
-        name: ef.intl.string(ef.t.h9mGOD)
+        name: ef.intl.string(ef.t.h9mGOP)
       }], c = [];
       for (let e of l)(e.id !== eu.HY.SERVER_GUIDE || a) && (e.id !== eu.HY.CHANNEL_BROWSER || o) && (e.id !== eu.HY.CUSTOMIZE_COMMUNITY || s) && eq(e.name.toLocaleLowerCase(), i, false) > 0 && c.push(new L.nl({
         id: e.id,

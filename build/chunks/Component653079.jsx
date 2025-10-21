@@ -1,4 +1,4 @@
-/** Chunk was on 82897 **/
+/** Chunk was on 5873 **/
 /** chunk id: 653079, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk25990 = require("./25990.js"),
   Chunk74538 = require("./74538.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk118494 = require("./118494.js");
+  Chunk763740 = require("./763740.js");
 let g = e => {
   let {
     user: t,
@@ -34,7 +34,7 @@ let g = e => {
     children: [(0, r.jsx)("div", {
       className: b.previewBox,
       role: "img",
-      "aria-label": h.intl.string(h.t.SZeUdX),
+      "aria-label": h.intl.string(h.t.SZeUdR),
       children: (0, r.jsxs)("div", {
         className: b.previewContents,
         "aria-hidden": true,
@@ -65,7 +65,7 @@ let g = e => {
         children: f
       }), j && (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
-        children: P ? h.intl.string(h.t.nD78oa) : y && C ? h.intl.string(h.t.hmyYKy) : y ? h.intl.string(h.t.JY1i0t) : h.intl.string(h.t.fEGjVV)
+        children: P ? h.intl.string(h.t.nD78oa) : y && C ? h.intl.string(h.t.hmyYK8) : y ? h.intl.string(h.t.JY1i0u) : h.intl.string(h.t.fEGjVQ)
       })]
     })]
   })

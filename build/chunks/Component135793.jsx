@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk183608 = require("./183608.js"),
+  Chunk393919 = require("./393919.js"),
   Chunk99713 = require("./99713.js");
 
 function L(e, t, n) {
@@ -251,15 +251,15 @@ let V = e => {
           className: w.heading,
           children: [(0, r.jsx)(u.Heading, {
             variant: "heading-lg/bold",
-            children: P.intl.string(P.t["5/knv7"])
+            children: P.intl.string(P.t["5/knv4"])
           }), (0, r.jsx)(h.Z, {})]
         }), (0, r.jsx)(u.Text, {
           variant: "text-sm/normal",
-          children: P.intl.string(P.t.NFTQoa)
+          children: P.intl.string(P.t.NFTQoc)
         }), (0, r.jsx)(u.Text, {
           color: "text-link",
           variant: "text-sm/normal",
-          children: P.intl.format(P.t["jerM9/"], {
+          children: P.intl.format(P.t.jerM90, {
             helpCenterLink: E.Z.getArticleURL(N.BhN.CONFETTI_POTION)
           })
         })]
@@ -269,7 +269,7 @@ let V = e => {
         className: w.selectContainer,
         children: [(0, r.jsx)(u.Text, {
           variant: "eyebrow",
-          children: P.intl.string(P.t.o8XwoK)
+          children: P.intl.string(P.t.o8XwoI)
         }), (0, r.jsx)(Y, {
           channel: t,
           selectedEmoji: n,
@@ -290,7 +290,7 @@ let V = e => {
       selectionText: _
     } = (0, i.useMemo)(() => null == n ? {
       emojiName: null,
-      selectionText: P.intl.string(P.t.KgK5qq)
+      selectionText: P.intl.string(P.t.KgK5qg)
     } : {
       emojiName: null == n.id ? n.optionallyDiverseSequence : n.name,
       selectionText: n.name.replace(/_/g, " ")
@@ -351,7 +351,7 @@ let V = e => {
       className: w.footer,
       children: [(0, r.jsx)(u.Button, {
         variant: "secondary",
-        text: P.intl.string(P.t.w2Qbd3),
+        text: P.intl.string(P.t.w2Qbd6),
         onClick: () => {
           (0, u.Mr3)(G)
         }
@@ -372,12 +372,12 @@ let V = e => {
       numPotions: t
     } = (0, Chunk576645.t6)(Chunk317951.D1);
     if (null == exports || 0 === exports) return null;
-    let n = (null == module ? true : module.type) === Chunk981631.qc2.DEVELOPER_GIFT ? Chunk388032.t["b+P6ra"] : Chunk388032.t.RiQ4cn;
+    let n = (null == module ? true : module.type) === Chunk981631.qc2.DEVELOPER_GIFT ? Chunk388032.t["b+P6ra"] : Chunk388032.t.RiQ4ci;
     return (0, Chunk951288.jsxs)("div", {
-      className: Chunk183608.remaining,
+      className: Chunk393919.remaining,
       children: [(0, Chunk951288.jsx)(Chunk481060.l22, {
         color: "currentColor",
-        className: Chunk183608.shootingStar
+        className: Chunk393919.shootingStar
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         color: "none",
         variant: "text-sm/semibold",
@@ -399,18 +399,18 @@ let V = e => {
       tooltipCopy: d
     } = (0, i.useMemo)(() => {
       let e = {
-          0: P.intl.formatToPlainString(P.t.POGRmp, {
+          0: P.intl.formatToPlainString(P.t.POGRmi, {
             amount: I.pe,
             price: (0, b.T4)(a.amount, a.currency)
           }),
-          1: P.intl.string(P.t.RrKeDw),
-          2: P.intl.string(P.t.WOXaWF),
-          3: P.intl.string(P.t["1Qm829"])
+          1: P.intl.string(P.t.RrKeD5),
+          2: P.intl.string(P.t.WOXaWH),
+          3: P.intl.string(P.t["1Qm822"])
         },
         r = {
-          1: P.intl.string(P.t["Cb8/7+"]),
-          2: P.intl.string(P.t.fMkB9P),
-          3: P.intl.string(P.t["59ElNj"])
+          1: P.intl.string(P.t["Cb8/70"]),
+          2: P.intl.string(P.t.fMkB9K),
+          3: P.intl.string(P.t["59ElNn"])
         },
         i = 0 !== n;
       return {
@@ -430,23 +430,23 @@ let V = e => {
     })
   },
   q = () => (0, Chunk951288.jsx)("div", {
-    className: Chunk183608.anomaly,
+    className: Chunk393919.anomaly,
     children: (0, Chunk951288.jsxs)("div", {
-      className: Chunk183608.error,
+      className: Chunk393919.error,
       children: [(0, Chunk951288.jsx)(Chunk481060.Eep, {
         src: Chunk99713,
         width: U,
         height: j
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
-        children: Chunk388032.intl.string(Chunk388032.t.oKJdSk)
+        children: Chunk388032.intl.string(Chunk388032.t.oKJdSs)
       })]
     })
   }),
   X = () => (0, Chunk951288.jsx)("div", {
-    className: Chunk183608.anomaly,
+    className: Chunk393919.anomaly,
     children: (0, Chunk951288.jsx)("div", {
-      className: Chunk183608.spinner,
+      className: Chunk393919.spinner,
       children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
     })
   })

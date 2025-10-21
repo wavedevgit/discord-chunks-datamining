@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 450377, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk181339 = require("./181339.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk984734 = require("./984734.js");
+  Chunk776853 = require("./776853.js");
 
 function S(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -78,7 +78,7 @@ function P(e) {
         verificationLevel: n
       })
     } catch (e) {
-      (0, c.showToast)((0, c.createToast)(N.intl.string(N.t["46Rs3t"]), c.ToastType.FAILURE))
+      (0, c.showToast)((0, c.createToast)(N.intl.string(N.t["46Rs3v"]), c.ToastType.FAILURE))
     }
   }, [t]), a = i.useMemo(() => {
     let e = (0, j.IF)(null == t ? true : t.features.has(E.GuildFeatures.COMMUNITY)).map(e => T(S({}, e), {
@@ -93,14 +93,14 @@ function P(e) {
       children: [(0, r.jsx)(c.Text, {
         color: "header-primary",
         variant: "text-md/semibold",
-        children: N.intl.string(N.t.DpRdYG)
+        children: N.intl.string(N.t.DpRdYK)
       }), (0, r.jsx)(c.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
-        children: N.intl.format(N.t.iuRk2t, {})
+        children: N.intl.format(N.t.iuRk2j, {})
       })]
     }), (0, r.jsx)(O.Z, {
-      changeTitle: N.intl.string(N.t.TxESJC),
+      changeTitle: N.intl.string(N.t.TxESJG),
       value: null == s ? true : s.value,
       options: a,
       disabled: !n,
@@ -125,7 +125,7 @@ function w(e) {
         explicitContentFilter: n
       })
     } catch (e) {
-      (0, c.showToast)((0, c.createToast)(N.intl.string(N.t["46Rs3t"]), c.ToastType.FAILURE))
+      (0, c.showToast)((0, c.createToast)(N.intl.string(N.t["46Rs3v"]), c.ToastType.FAILURE))
     }
   }, [t.id]), u = i.useMemo(() => {
     let e = (0, j.MF)(null == t ? true : t.features.has(E.GuildFeatures.COMMUNITY)).map(e => T(S({}, e), {
@@ -143,16 +143,16 @@ function w(e) {
         children: [(0, r.jsx)(c.Text, {
           color: "header-primary",
           variant: "text-md/semibold",
-          children: N.intl.string(N.t.bPgfJy)
+          children: N.intl.string(N.t.bPgfJz)
         }), (0, r.jsx)(c.Text, {
           color: "header-secondary",
           variant: "text-sm/normal",
-          children: N.intl.format(N.t.BI4ukJ, {
+          children: N.intl.format(N.t.BI4ukC, {
             helpdeskArticle: x.Z.getArticleURL(E.BhN.SAFE_DIRECT_MESSAGING)
           })
         })]
       }), (0, r.jsx)(O.Z, {
-        changeTitle: N.intl.string(N.t["eBd+Ul"]),
+        changeTitle: N.intl.string(N.t["eBd+Uv"]),
         value: null == g ? true : g.value,
         options: u,
         disabled: !s,
@@ -179,8 +179,8 @@ function R(e) {
     children: [(0, r.jsxs)("div", {
       className: I.setupContainer,
       children: [(0, r.jsx)(c.rsf, {
-        label: N.intl.string(N.t.jDarm5),
-        description: N.intl.string(N.t["/ee7yM"]),
+        label: N.intl.string(N.t.jDarmy),
+        description: N.intl.string(N.t["/ee7yK"]),
         badge: "beta",
         checked: s,
         onChange: g,
@@ -188,7 +188,7 @@ function R(e) {
       }), (0, r.jsx)(c.Wn, {
         messageType: c.QYI.INFO,
         textVariant: "text-xs/normal",
-        children: N.intl.string(N.t.JxO639)
+        children: N.intl.string(N.t.JxO63z)
       })]
     }), (0, r.jsx)(c.izJ, {
       className: I.divider
@@ -222,15 +222,15 @@ function D(e) {
     }), (0, r.jsxs)("div", {
       className: I.setupContainer,
       children: [(0, r.jsx)(c.rsf, {
-        label: N.intl.string(N.t.lbBfER),
-        description: N.intl.string(N.t.REr5AA),
+        label: N.intl.string(N.t.lbBfEQ),
+        description: N.intl.string(N.t.REr5AI),
         checked: h,
         onChange: x,
         disabled: !d
       }), u && (0, r.jsx)(c.Wn, {
         messageType: c.QYI.INFO,
         textVariant: "text-xs/normal",
-        children: N.intl.format(N.t.Xz1O0d, {
+        children: N.intl.format(N.t.Xz1O0W, {
           onClick: function() {
             (0, m.openUserSettings)(g.n.ACCOUNT_PANEL, {
               section: E.oAB.ACCOUNT
@@ -249,9 +249,9 @@ function A() {
   } = (0, Chunk442837.cj)([Chunk999382.Z], () => Chunk999382.Z.getProps(), []), n = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.enabled, []);
   return null == module ? null : require ? (0, Chunk951288.jsx)(Chunk497321.Z, {}) : (0, Chunk951288.jsxs)("div", {
     children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
-      className: Chunk984734.headerContainer,
+      className: Chunk776853.headerContainer,
       variant: "heading-lg/semibold",
-      children: Chunk388032.intl.string(Chunk388032.t["suhY+f"])
+      children: Chunk388032.intl.string(Chunk388032.t["suhY+Y"])
     }), (0, Chunk951288.jsx)(Chunk723136.z, {
       guild: module
     }), (0, Chunk951288.jsx)(R, {
@@ -264,9 +264,9 @@ function A() {
     }), (0, Chunk951288.jsx)(w, {
       guild: module
     }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
-      className: Chunk984734.divider
+      className: Chunk776853.divider
     }), (0, Chunk951288.jsx)("div", {
-      className: Chunk984734.setupContainer,
+      className: Chunk776853.setupContainer,
       children: (0, Chunk951288.jsx)(Chunk181339.w, {
         guild: module
       })

@@ -18,9 +18,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk176940 = require("./176940.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk477302 = require("./477302.js"),
-  Chunk79985 = require("./79985.js"),
-  Chunk10198 = require("./10198.js");
+  Chunk591554 = require("./591554.js"),
+  Chunk542257 = require("./542257.js"),
+  Chunk197571 = require("./197571.js");
 
 function S(e) {
   let {
@@ -60,11 +60,11 @@ function S(e) {
             color: u.zx.Colors.PRIMARY,
             size: u.zx.Sizes.SMALL,
             onClick: t,
-            children: p.intl.string(p.t.GEgsAw)
+            children: p.intl.string(p.t.GEgsA4)
           })]
         })
       }), (0, l.jsx)(m.j, {
-        label: p.intl.string(p.t.y4ooen),
+        label: p.intl.string(p.t.y4ooer),
         deviceType: j.h7.AUDIO_INPUT,
         location: "CaptureDeviceConfig",
         className: Z.__invalid_marginaTop8,

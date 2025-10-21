@@ -9,8 +9,8 @@ var Chunk531643 = require("./531643.jsx"),
 
 function a(e) {
   (0, r.openUploadError)({
-    title: i.intl.string(i.t["/tGlcn"]),
-    help: i.intl.formatToPlainString(i.t.fxEKdX, {
+    title: i.intl.string(i.t["/tGlcj"]),
+    help: i.intl.formatToPlainString(i.t.fxEKdS, {
       maxSize: (0, l.Ng)(e)
     })
   })

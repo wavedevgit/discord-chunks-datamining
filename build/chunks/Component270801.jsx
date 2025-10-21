@@ -1,4 +1,4 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 270801, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -9,7 +9,7 @@ var Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
   Chunk313201 = require("./313201.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk88881 = require("./88881.js");
+  Chunk881053 = require("./881053.js");
 let c = () => require.e("49812").then(require.t.bind(require, 48603, 19)).then(e => {
     let {
       default: t
@@ -51,7 +51,7 @@ let c = () => require.e("49812").then(require.t.bind(require, 48603, 19)).then(e
             variant: "heading-lg/semibold",
             className: s.header,
             id: u,
-            children: o.intl.format(o.t.z9qozM, {
+            children: o.intl.format(o.t.z9qozJ, {
               guildName: e.guildName
             })
           }), (0, i.jsx)(l.Text, {
@@ -66,7 +66,7 @@ let c = () => require.e("49812").then(require.t.bind(require, 48603, 19)).then(e
           onClick: () => {
             e.onAccept(), e.onClose()
           },
-          text: o.intl.string(o.t.NuzmOD)
+          text: o.intl.string(o.t.NuzmOA)
         }],
         actionsFullWidth: true
       })]

@@ -15,7 +15,7 @@ function a(t) {
   let e = (0, r.e7)([o.ZP], () => o.ZP.getGuildScheduledEvent(t), [t]);
   return null == t || null == e ? null : (0, l.jsx)(i.sNh, {
     id: "report-event",
-    label: c.intl.string(c.t.IBA5wc),
+    label: c.intl.string(c.t.IBA5wX),
     action: () => (0, u.d$)(e),
     icon: i.U65,
     color: "danger"

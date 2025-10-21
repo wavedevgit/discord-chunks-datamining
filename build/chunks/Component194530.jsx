@@ -26,7 +26,7 @@ function _(e) {
   async function D(e) {
     e.preventDefault(), (0, l.b9)();
     let t = false;
-    if ("" === O ? (A(f.intl.string(f.t["/7/oPT"])), t = true) : A(null), O !== I ? (N(f.intl.string(f.t.IEKYZ2)), t = true) : N(null), t) return;
+    if ("" === O ? (A(f.intl.string(f.t["/7/oPU"])), t = true) : A(null), O !== I ? (N(f.intl.string(f.t["IEKYZ/"])), t = true) : N(null), t) return;
     let n = await (0, l.Mn)({
       password: b,
       newPassword: O
@@ -47,22 +47,22 @@ function _(e) {
     children: (0, r.jsx)(a.Modal, {
       transitionState: h,
       onClose: g,
-      title: f.intl.string(f.t["geta7+"]),
-      subtitle: E ? f.intl.string(f.t["37iHbW"]) : f.intl.string(f.t.iOurYm),
+      title: f.intl.string(f.t.geta79),
+      subtitle: E ? f.intl.string(f.t["37iHbZ"]) : f.intl.string(f.t.iOurYj),
       actions: [{
         variant: "secondary",
-        text: f.intl.string(f.t["ETE/oK"]),
+        text: f.intl.string(f.t["ETE/oC"]),
         onClick: g
       }, {
         variant: "primary",
-        text: f.intl.string(f.t.i4jeWV),
+        text: f.intl.string(f.t.i4jeWR),
         loading: P === d.QZA.SUBMITTING,
         type: "submit"
       }],
       children: (0, r.jsxs)(s.Kqy, {
         gap: 20,
         children: [(0, r.jsx)(s.oil, {
-          label: f.intl.string(f.t.WBqMRU),
+          label: f.intl.string(f.t.WBqMRQ),
           error: null == R || null == (t = R.password) ? true : t[0],
           type: "password",
           value: b,
@@ -71,7 +71,7 @@ function _(e) {
           autoComplete: "current-password",
           required: true
         }), (0, r.jsx)(s.oil, {
-          label: f.intl.string(f.t["8dM4FB"]),
+          label: f.intl.string(f.t["8dM4FO"]),
           error: null != (p = null != (_ = null == R || null == (n = R.new_password) ? true : n[0]) ? _ : S) ? p : true,
           type: "password",
           value: O,

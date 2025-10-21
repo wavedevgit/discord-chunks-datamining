@@ -1,4 +1,4 @@
-/** Chunk was on 63962 **/
+/** Chunk was on 91053 **/
 /** chunk id: 180216, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk305342 = require("./305342.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk31428 = require("./31428.js");
+  Chunk200813 = require("./200813.js");
 
 function b(e) {
   let {
@@ -25,7 +25,7 @@ function b(e) {
   } = e, b = (0, d.C)({
     guildId: t,
     channelId: n
-  }), y = (0, c.GG)(t), _ = (0, c.YB)(t), j = (0, l.e7)([o.Z], () => o.Z.getGuild(t), [t]), O = null == j ? true : j.name, x = (0, l.e7)([s.Z], () => s.Z.getChannel(n)), v = i.useMemo(() => {
+  }), y = (0, c.GG)(t), _ = (0, c.YB)(t), O = (0, l.e7)([o.Z], () => o.Z.getGuild(t), [t]), j = null == O ? true : O.name, x = (0, l.e7)([s.Z], () => s.Z.getChannel(n)), v = i.useMemo(() => {
     let e = {};
     for (let t of y)
       for (let n of t.subscription_listings_ids) e[n] = t.id;
@@ -35,7 +35,7 @@ function b(e) {
     guildId: t,
     location: f.Sbl.ROLE_SUBSCRIPTION_GATED_CHANNEL,
     relevantSubscriptionListingIds: b.map(e => e.id)
-  }), null == j) ? (0, r.jsx)("div", {
+  }), null == O) ? (0, r.jsx)("div", {
     className: m.__invalid_spinnerContainer,
     children: (0, r.jsx)(a.$jN, {
       className: m.__invalid_spinner
@@ -45,8 +45,8 @@ function b(e) {
     children: [(0, r.jsx)(a.Heading, {
       variant: "heading-xl/semibold",
       className: m.joinCtaTitle,
-      children: g.intl.format(g.t.xHMpys, {
-        serverName: O,
+      children: g.intl.format(g.t.xHMpym, {
+        serverName: j,
         channelName: null == x ? true : x.name
       })
     }), (0, r.jsx)(a.Text, {

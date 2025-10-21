@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388905 = require("./388905.jsx"),
   Chunk703656 = require("./703656.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk10198 = require("./10198.js");
+  Chunk197571 = require("./197571.js");
 let g = function(e) {
   let {
     match: t,
@@ -44,35 +44,35 @@ let g = function(e) {
       return (0, r.jsxs)(c.ZP, {
         children: [(0, r.jsx)(c.Dx, {
           className: h.marginBottom8,
-          children: d.intl.string(d.t.qllnGh)
+          children: d.intl.string(d.t.qllnGm)
         }), (0, r.jsx)(c.DK, {
-          children: d.intl.string(d.t.SXCxyc)
+          children: d.intl.string(d.t.SXCxye)
         }), (0, r.jsx)(c.zx, {
           className: h.marginTop40,
           onClick: () => m(t, n),
-          children: d.intl.string(d.t.UQvCf3)
+          children: d.intl.string(d.t.UQvCf7)
         }), (0, r.jsx)(c.zx, {
           className: l()(h.marginTop8, h.marginCenterHorz),
           color: c.zx.Colors.LINK,
           look: c.zx.Looks.LINK,
           onClick: () => (0, u.uL)((0, o.M)()),
-          children: d.intl.string(d.t["2ixEBg"])
+          children: d.intl.string(d.t["2ixEBi"])
         })]
       });
     case 0:
     case 2:
       return (0, r.jsxs)(c.ZP, {
         children: [(0, r.jsx)(c.Dx, {
-          children: d.intl.string(d.t["Z+hCVV"])
+          children: d.intl.string(d.t["Z+hCVU"])
         }), (0, r.jsx)(c.Hh, {})]
       });
     case 3:
       return (0, r.jsxs)(c.ZP, {
         children: [(0, r.jsx)(c.Dx, {
           className: h.marginBottom8,
-          children: d.intl.string(d.t.csrAMD)
+          children: d.intl.string(d.t.csrAMJ)
         }), (0, r.jsx)(c.DK, {
-          children: d.intl.string(d.t.ghBJz8)
+          children: d.intl.string(d.t.ghBJz9)
         })]
       })
   }

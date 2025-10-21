@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk741247 = require("./741247.jsx"),
   Chunk75464 = require("./75464.jsx"),
   Chunk884902 = require("./884902.js"),
-  Chunk350333 = require("./350333.js");
+  Chunk332448 = require("./332448.js");
 
 function m(e) {
   let {
@@ -93,8 +93,8 @@ function f(e) {
     showContextMenu: y,
     theme: C,
     roleStyle: S,
-    onContextMenu: O,
-    "aria-label": N
+    onContextMenu: N,
+    "aria-label": O
   } = e, Z = (0, g._f)(s.id, r, null == r ? true : r.colorStrings);
   return u ? (0, i.jsx)("div", {
     className: p.dragged
@@ -104,8 +104,8 @@ function f(e) {
     selectedItem: f,
     onItemSelect: b,
     itemType: x,
-    "aria-label": null != v ? "".concat(N, ", ").concat(v) : N,
-    onContextMenu: O,
+    "aria-label": null != v ? "".concat(O, ", ").concat(v) : O,
+    onContextMenu: N,
     children: (0, i.jsxs)("div", {
       className: p.roleContent,
       children: ["dot" === S ? (0, i.jsx)(c.FhE, {

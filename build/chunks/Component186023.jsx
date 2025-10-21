@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk185625 = require("./185625.js"),
   Chunk255514 = require("./255514.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk731927 = require("./731927.js");
+  Chunk584581 = require("./584581.js");
 let x = e => {
   let {
     reportType: t,
@@ -32,7 +32,7 @@ let x = e => {
     root_node_id: I,
     success_node_id: S,
     fail_node_id: C
-  } = n, [N, T] = i.useState(I), [P, E] = i.useState(true), [k, w] = i.useState(true), [D, M] = i.useState([]), [R, A] = i.useState(true), [B, U] = i.useState(true), L = (0, m.PO)("in_app_report_modal");
+  } = n, [N, T] = i.useState(I), [P, E] = i.useState(true), [k, w] = i.useState(true), [M, R] = i.useState([]), [D, A] = i.useState(true), [B, U] = i.useState(true), L = (0, m.PO)("in_app_report_modal");
   (0, s.ZP)(() => {
     L && (0, u.k0)()
   });
@@ -73,7 +73,7 @@ let x = e => {
       })(Object(i)).forEach(function(e) {
         Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(i, e))
       }), r));
-      if (M([...D, e]), null != c.key && (null == v || v(c.key)), E(true), w(true), t.name === p.b.MESSAGE || t.name === p.b.FIRST_DM) {
+      if (R([...M, e]), null != c.key && (null == v || v(c.key)), E(true), w(true), t.name === p.b.MESSAGE || t.name === p.b.FIRST_DM) {
         let e = t.record.id;
         o.ZP.trackWithMetadata(h.rMx.IAR_NAVIGATE, {
           message_id: e,
@@ -87,13 +87,13 @@ let x = e => {
     },
     H = async e => {
       var r;
-      let i = y ? await (0, g.ZD)(n, t, [...D, e]) : await (0, g.fw)(n, t, [...D, e], j),
+      let i = y ? await (0, g.ZD)(n, t, [...M, e]) : await (0, g.fw)(n, t, [...M, e], j),
         l = null == i || null == (r = i.body) ? true : r.report_id;
       null != l && A(l), U(Z[e.nodeRef].report_type), null == f || f(l)
     }, W = () => {
       var e, n;
-      if (D.length < 1) return;
-      let r = [...D],
+      if (M.length < 1) return;
+      let r = [...M],
         i = r.pop(),
         l = null != (n = null == i ? true : i.nodeRef) ? n : I;
       if (t.name === p.b.MESSAGE || t.name === p.b.FIRST_DM) {
@@ -106,7 +106,7 @@ let x = e => {
           next_node: Z[l].id
         })
       }
-      E(null == i || null == (e = i.multiSelect) ? true : e.state), w(null == i ? true : i.textInput), T(l), M(r), null == v || v("..")
+      E(null == i || null == (e = i.multiSelect) ? true : e.state), w(null == i ? true : i.textInput), T(l), R(r), null == v || v("..")
     }, F = i.useMemo(() => {
       let e = [],
         t = [];
@@ -144,7 +144,7 @@ let x = e => {
             node: e,
             reportType: t,
             reportSubType: B,
-            history: D,
+            history: M,
             onModalClose: x.onClose,
             onSelectChild: G,
             onNavigateBack: W,
@@ -153,7 +153,7 @@ let x = e => {
             successNodeId: S,
             failNodeId: C,
             onSubmit: H,
-            reportId: R,
+            reportId: D,
             nodeMap: Z
           })
         })

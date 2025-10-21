@@ -16,8 +16,8 @@ var Chunk120356 = require("./120356.js"),
   Chunk817053 = require("./817053.jsx"),
   Chunk890814 = require("./890814.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk279280 = require("./279280.js"),
-  Chunk101250 = require("./101250.js");
+  Chunk932366 = require("./932366.js"),
+  Chunk845859 = require("./845859.js");
 
 function h(e) {
   var t, n, {
@@ -39,8 +39,8 @@ function h(e) {
       }
       return i
     }(e, ["gameName", "onClick"]);
-  let g = null != i ? i : p.intl.string(p.t.GIWFlJ),
-    h = p.intl.formatToPlainString(p.t["3mb1s7"], {
+  let g = null != i ? i : p.intl.string(p.t.GIWFlF),
+    h = p.intl.formatToPlainString(p.t["3mb1s5"], {
       game: g
     }),
     v = (0, l.e7)([u.Z], () => u.Z.suggestedFetchIsLoading);
@@ -106,7 +106,7 @@ function v(e) {
       className: b.header,
       children: [(0, r.jsx)(s.P3F, {
         className: b.dismissButton,
-        "aria-label": p.intl.string(p.t["pUR+3t"]),
+        "aria-label": p.intl.string(p.t["pUR+3g"]),
         onClick: i,
         children: (0, r.jsx)(s.Dio, {
           size: "sm",
@@ -116,7 +116,7 @@ function v(e) {
         id: u,
         variant: "text-xs/medium",
         color: "text-secondary",
-        children: p.intl.string(p.t.zMUr6e)
+        children: p.intl.string(p.t.zMUr6Z)
       })]
     }), (0, r.jsx)(g.Z, {
       games: n,

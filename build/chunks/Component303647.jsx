@@ -11,53 +11,53 @@ var Chunk951288 = require("./951288.js"),
   Chunk99325 = require("./99325.js"),
   Chunk75666 = require("./75666.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk800268 = require("./800268.js");
+  Chunk960780 = require("./960780.js");
 
 function b(t) {
   var e, a;
   let {
     transitionState: b,
-    onClose: g,
-    entry: h
-  } = t, [p, m] = i.useState(null != (e = h.description) ? e : ""), [x, I] = i.useState(null != (a = h.primaryCategoryId) ? a : c.AR.UNCATEGORIZED), [C, _] = i.useState(false), [f, v] = i.useState(null), y = async () => {
-    if (v(null), p !== h.description || x !== h.primaryCategoryId) {
+    onClose: p,
+    entry: g
+  } = t, [h, m] = n.useState(null != (e = g.description) ? e : ""), [C, I] = n.useState(null != (a = g.primaryCategoryId) ? a : c.AR.UNCATEGORIZED), [x, _] = n.useState(false), [f, v] = n.useState(null), y = async () => {
+    if (v(null), h !== g.description || C !== g.primaryCategoryId) {
       _(true);
       try {
-        await (0, o.Dr)(h.channelId, h.guildId, p, x), _(false), g()
+        await (0, o.Dr)(g.channelId, g.guildId, h, C), _(false), p()
       } catch (t) {
         _(false), v(new s.Z(t))
       }
     }
   };
-  return (0, l.jsx)(n.Modal, {
+  return (0, l.jsx)(i.Modal, {
     transitionState: b,
-    "aria-label": u.intl.string(u.t.eQ2bLi),
-    onClose: g,
-    title: u.intl.formatToPlainString(u.t.w9tsNj, {
-      guildName: h.name
+    "aria-label": u.intl.string(u.t.eQ2bLp),
+    onClose: p,
+    title: u.intl.formatToPlainString(u.t.w9tsNk, {
+      guildName: g.name
     }),
-    subtitle: u.intl.string(u.t["vEkX//"]),
+    subtitle: u.intl.string(u.t["vEkX/8"]),
     actions: [{
       variant: "primary",
-      text: u.intl.string(u.t.R3BPHx),
+      text: u.intl.string(u.t["R3BPH+"]),
       onClick: y,
-      loading: C
+      loading: x
     }],
     children: (0, l.jsxs)("div", {
       className: d.createGuild,
       children: [(0, l.jsx)(r.Kx8, {
-        label: u.intl.string(u.t.FFFAGh),
-        value: p,
+        label: u.intl.string(u.t.FFFAGt),
+        value: h,
         maxLength: 200,
-        placeholder: u.intl.string(u.t.VzuITE),
+        placeholder: u.intl.string(u.t.VzuITC),
         onChange: m,
         error: null == f ? true : f.getAnyErrorMessage()
       }), (0, l.jsx)(r.q4e, {
         label: u.intl.string(u.t.Olo8FB),
         placeholder: u.intl.string(u.t.XqMe3N),
-        options: (0, c.b7)(h.channelId),
+        options: (0, c.b7)(g.channelId),
         clearable: false,
-        value: x,
+        value: C,
         onChange: I,
         maxVisibleItems: 4
       })]

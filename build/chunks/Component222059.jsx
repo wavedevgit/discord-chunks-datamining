@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 222059, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   u: () => M
@@ -34,7 +34,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk474936 = require("./474936.js"),
   Chunk871465 = require("./871465.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk688825 = require("./688825.js");
+  Chunk815141 = require("./815141.js");
 let D = {
   origin: {
     x: false,
@@ -56,14 +56,14 @@ function L(e) {
     badge: f,
     link: g,
     showProgressBadge: _
-  } = e, [O, y] = i.useState(false), [v, j] = i.useState(false), [x, C] = i.useState(null), [E, T] = i.useState(0), L = (0, l.Ie)("home"), M = (0, p.oq)().activePanel === p.wh.APP_ICON, k = () => {
-    C(null), T(0), clearTimeout(x)
+  } = e, [O, y] = i.useState(false), [v, j] = i.useState(false), [x, C] = i.useState(null), [E, w] = i.useState(0), L = (0, l.Ie)("home"), M = (0, p.oq)().activePanel === p.wh.APP_ICON, k = () => {
+    C(null), w(0), clearTimeout(x)
   }, G = h.o.useConfig({
     location: "home button"
   }).dmsTab;
   if (null == d) return null;
-  let U = G ? A.intl.string(A.t.Ym2Ri4) : A.intl.string(A.t.YUU0RE);
-  v && (U = a.K.get(Z.wli) ? A.intl.string(A.t.nkq1l5) : A.intl.string(A.t.Be8Q5O));
+  let U = G ? A.intl.string(A.t.Ym2Ri6) : A.intl.string(A.t.YUU0RF);
+  v && (U = a.K.get(Z.wli) ? A.intl.string(A.t["nkq1l+"]) : A.intl.string(A.t.Be8Q5E));
   let B = null;
   !o && _ && (B = (0, r.jsx)(c.Z, {
     className: R.downloadProgress,
@@ -98,16 +98,16 @@ function L(e) {
         onMouseEnter: () => y(true),
         onMouseLeave: () => y(false),
         onClick: () => {
-          if (!__OVERLAY__ && (null != x && clearTimeout(x), C(setTimeout(k, 500)), T(E + 1), 15 === E)) {
+          if (!__OVERLAY__ && (null != x && clearTimeout(x), C(setTimeout(k, 500)), w(E + 1), 15 === E)) {
             k();
             let e = !a.K.get(Z.wli);
-            a.K.set(Z.wli, e), e && a.K.set(w.O, true), e ? (0, m.GN)("discodo") : (0, m.GN)("user_leave"), j(true), setTimeout(() => {
+            a.K.set(Z.wli, e), e && a.K.set(T.O, true), e ? (0, m.GN)("discodo") : (0, m.GN)("user_leave"), j(true), setTimeout(() => {
               j(false)
             }, 1e3)
           }
         },
         selected: F,
-        ariaLabel: A.intl.string(A.t.YUU0RE),
+        ariaLabel: A.intl.string(A.t.YUU0RF),
         "aria-owns": "guild-list-unread-dms",
         "aria-selected": o
       }, L), n = n = {

@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk891561 = require("./891561.jsx"),
   Chunk333866 = require("./333866.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk222250 = require("./222250.js");
+  Chunk451489 = require("./451489.js");
 
 function g(e) {
   let {
@@ -48,7 +48,7 @@ function g(e) {
   })(s, h), [s, h]);
   return o ? (0, n.jsx)("ul", {
     className: j.cardContainer,
-    "aria-label": b.intl.string(b.t.qe4kTU),
+    "aria-label": b.intl.string(b.t.qe4kTa),
     children: O.map(e => (0, n.jsx)("li", {
       className: j.card,
       children: (0, n.jsx)("div", {

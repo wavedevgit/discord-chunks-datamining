@@ -349,7 +349,7 @@ function ep(e) {
   return r.useMemo(() => {
     var t;
     let n = null == (t = e.config.ctaConfig) ? true : t.buttonLabel;
-    return null != n ? n : (0, C.q8)(e) || (0, C.Pb)(e) || (0, C.pO)(e) || (0, C.Vl)(e) || e.config.features.includes(U.S7.NON_GAMING_PLAY_QUEST) ? Z.intl.string(Z.t.hvVgAQ) : Z.intl.string(Z.t.lwQdjI)
+    return null != n ? n : (0, C.q8)(e) || (0, C.Pb)(e) || (0, C.pO)(e) || (0, C.Vl)(e) || e.config.features.includes(U.S7.NON_GAMING_PLAY_QUEST) ? Z.intl.string(Z.t.hvVgAZ) : Z.intl.string(Z.t.lwQdjB)
   }, [e])
 }
 
@@ -438,42 +438,42 @@ function eT(e, t, n, r) {
   }), s = (0, C.Pb)(e);
   if ((0, C.$J)(e) && !(0, C.Nj)({
       quest: e
-    })) return Z.intl.format(Z.t["l4S+cX"], {
+    })) return Z.intl.format(Z.t["l4S+cQ"], {
     minutes: i,
     onClick: o,
     gameTitle: j.r.build(e.config).application.name
   });
-  if ((0, C.$J)(e)) return s ? Z.intl.format(Z.t.gbtCpa, {
+  if ((0, C.$J)(e)) return s ? Z.intl.format(Z.t.gbtCpW, {
     onClick: o,
     minutes: i
-  }) : Z.intl.format(Z.t.Ajlcd3, {
+  }) : Z.intl.format(Z.t.Ajlcd7, {
     minutes: i,
     onClick: o,
     gameTitle: j.r.build(e.config).application.name
   });
-  if (s) return Z.intl.format(Z.t.Hu8SKS, {
+  if (s) return Z.intl.format(Z.t.Hu8SKW, {
     targetMinutes: i
   });
   if ((0, C.q8)(e)) {
     let t = j.r.build(e.config).defaultWatchVideoTask,
       n = null == t ? true : t.messages.videoTitle;
-    return null == n ? Z.intl.string(Z.t["o+e9ys"]) : Z.intl.formatToPlainString(Z.t["9m9MnZ"], {
+    return null == n ? Z.intl.string(Z.t["o+e9yh"]) : Z.intl.formatToPlainString(Z.t["9m9Mna"], {
       videoTitle: n
     })
   }
   if (null != a) return a.title;
   if ((0, C.pO)(e))
-    if ((0, C.KM)(e)) return Z.intl.format(Z.t["1NaRSk"], {
+    if ((0, C.KM)(e)) return Z.intl.format(Z.t["1NaRSs"], {
       minutes: i
     });
-    else return Z.intl.format(Z.t.xHXCyc, {
+    else return Z.intl.format(Z.t.xHXCyf, {
       minutes: i,
       activityName: e.config.application.name
     });
-  let l = Z.t["6zWtV1"];
+  let l = Z.t["6zWtV8"];
   return (0, C.Nj)({
     quest: e
-  }) && (l = e.config.features.includes(U.S7.NON_GAMING_PLAY_QUEST) ? Z.t.fe7XeX : Z.t["wmOh/v"]), Z.intl.format(l, {
+  }) && (l = e.config.features.includes(U.S7.NON_GAMING_PLAY_QUEST) ? Z.t.fe7Xec : Z.t["wmOh/q"]), Z.intl.format(l, {
     minutes: i,
     gameTitle: e.config.messages.gameTitle
   })
@@ -593,10 +593,10 @@ let eR = e => {
     let {
       xboxAccounts: e,
       playstationAccounts: t
-    } = eN(), n = module.length > 0, r = exports.length > 0, i = require && !Chunk647438 || !require && Chunk647438, a = Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUEST_HOW_TO_PLAYSTATION), o = Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUEST_HOW_TO_XBOX), s = Chunk388032.intl.format(Chunk388032.t.beN4DA, {
+    } = eN(), n = module.length > 0, r = exports.length > 0, i = require && !Chunk647438 || !require && Chunk647438, a = Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUEST_HOW_TO_PLAYSTATION), o = Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUEST_HOW_TO_XBOX), s = Chunk388032.intl.format(Chunk388032.t.beN4DG, {
       psHelpdeskArticle: Chunk278074,
       xboxHelpdeskArticle: Chunk754700
-    }), l = Chunk388032.intl.format(Chunk388032.t.HVS7np, {
+    }), l = Chunk388032.intl.format(Chunk388032.t.HVS7nh, {
       helpdeskArticle: Chunk647438 ? Chunk278074 : Chunk754700
     });
     return {
@@ -650,7 +650,7 @@ function eM(e, t, n) {
     }),
     l = (null == (r = e.userStatus) ? true : r.claimedAt) != null,
     c = eh(null == (i = e.userStatus) ? true : i.claimedAt);
-  return l ? Z.intl.formatToPlainString(Z.t.lOVr0N, {
+  return l ? Z.intl.formatToPlainString(Z.t.lOVr0O, {
     claimDate: c
   }) : null != o ? o.description : null != s ? s : null
 }
@@ -727,7 +727,7 @@ function eU(e) {
     p = (0, I.isWeb)() && _ && !(0, C.Gd)(e),
     h = (0, I.isMac)() && i.taskType === o.X.STREAM_ON_DESKTOP && _,
     m = [];
-  return h && m.push(Z.intl.string(Z.t.MFGxFB)), p && m.push(Z.intl.string(Z.t.BV6xDg)), m
+  return h && m.push(Z.intl.string(Z.t.MFGxFM)), p && m.push(Z.intl.string(Z.t.BV6xDm)), m
 }
 
 function eG(e) {
@@ -771,16 +771,16 @@ function eZ(e) {
     o = ev(e),
     s = (null == (t = e.userStatus) ? true : t.completedAt) != null,
     l = null != o ? o.percentComplete : i.percentComplete;
-  if (s) return Z.intl.string(Z.t["ij5E//"]);
+  if (s) return Z.intl.string(Z.t["ij5E/5"]);
   if ((null == (n = e.userStatus) ? true : n.enrolledAt) != null && l > 0) {
     let e = (0, v.T3)(r, l, {
       roundingMode: "floor"
     });
-    return Z.intl.formatToPlainString(Z.t.lVZaXF, {
+    return Z.intl.formatToPlainString(Z.t.lVZaXD, {
       percent: e
     })
   }
-  return a === P.LI.SELECT ? Z.intl.string(Z.t.EMrUHR) : (0, C.$J)(e) ? Z.intl.string(Z.t.mOrpXF) : Z.intl.string(Z.t["7e5k7O"])
+  return a === P.LI.SELECT ? Z.intl.string(Z.t.EMrUHQ) : (0, C.$J)(e) ? Z.intl.string(Z.t.mOrpXG) : Z.intl.string(Z.t["7e5k7L"])
 }
 
 function eF(e) {
@@ -803,27 +803,27 @@ function eF(e) {
     onGameSheetOpened: c,
     onGameSheetClosed: u
   }), b = null != _ ? _.percentComplete : f.percentComplete;
-  if (p) return Z.intl.formatToPlainString(Z.t.APddvL, {
+  if (p) return Z.intl.formatToPlainString(Z.t.APddvF, {
     expirationDate: d
   });
   if (a)
-    if (s === P.LI.SELECT) return Z.intl.string(Z.t.sWUpNz);
+    if (s === P.LI.SELECT) return Z.intl.string(Z.t.sWUpN8);
     else {
       if (!(0, C.Pb)(i) || !h || m) return E;
       let e = j.r.build(i.config).defaultRewardNameWithArticle;
-      return Z.intl.format(Z.t["1votFx"], {
+      return Z.intl.format(Z.t["1votF6"], {
         rewardNameWithArticle: e,
         targetMinutes: f.targetMinutes
       })
-    } if ((0, C.q8)(i)) return Z.intl.string(Z.t["o+e9ys"]);
+    } if ((0, C.q8)(i)) return Z.intl.string(Z.t["o+e9yh"]);
   if (b > 0)
-    if (!g) return Z.intl.string(Z.t.mOrpXF);
+    if (!g) return Z.intl.string(Z.t.mOrpXG);
     else return (0, C.AV)({
       quest: i,
       taskDetails: f,
       thirdPartyTaskDetails: null != _ ? _ : true
     });
-  return Z.intl.string(Z.t.S6UUc3)
+  return Z.intl.string(Z.t.S6UUc5)
 }
 
 function eV(e, t) {
@@ -844,28 +844,28 @@ function eH(e) {
     a = (0, C.f$)(e),
     o = (0, c.e7)([E.default], () => E.default.getCurrentUser()),
     s = (0, T.I5)(o, B.PremiumTypes.TIER_2);
-  if (null == n) return Z.intl.formatToPlainString(Z.t.l9uXLy, {
+  if (null == n) return Z.intl.formatToPlainString(Z.t.l9uXL8, {
     decorationName: t
   });
-  let l = Z.intl.formatToPlainString(Z.t.o97tNj, {
+  let l = Z.intl.formatToPlainString(Z.t.o97tNn, {
       rewardName: t
     }),
-    u = Z.intl.formatToPlainString(Z.t.PkyRZm, {
+    u = Z.intl.formatToPlainString(Z.t.PkyRZo, {
       rewardName: t,
       expirationDate: r
     }),
-    d = Z.intl.formatToPlainString(Z.t.ie4YKy, {
+    d = Z.intl.formatToPlainString(Z.t.ie4YK0, {
       rewardName: t,
       duration: n
     }),
-    f = Z.intl.formatToPlainString(Z.t.yCpc0d, {
+    f = Z.intl.formatToPlainString(Z.t.yCpc0U, {
       duration: n,
       rewardName: t
     }),
     _ = s ? l : d,
     p = s ? u : f,
     h = i ? _ : p;
-  return a ? h : Z.intl.formatToPlainString(Z.t.tTlItr, {
+  return a ? h : Z.intl.formatToPlainString(Z.t.tTlItm, {
     duration: n,
     decorationName: t
   })

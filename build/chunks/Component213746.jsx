@@ -1,4 +1,4 @@
-/** Chunk was on 84283 **/
+/** Chunk was on 69844 **/
 /** chunk id: 213746, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk979007 = require("./979007.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk51324 = require("./51324.js");
+  Chunk154494 = require("./154494.js");
 
 function C(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -86,7 +86,7 @@ function y(e) {
       children: [(0, r.jsx)(i.X6q, {
         variant: "heading-lg/semibold",
         color: "header-primary",
-        children: x.intl.string(x.t.yUGTs7)
+        children: x.intl.string(x.t.yUGTs8)
       }), (0, r.jsx)("div", {
         className: v.products,
         children: a.map(e => (0, r.jsx)(u.hd, {
@@ -173,9 +173,9 @@ function S(e) {
       children: null != a && null != l ? x.intl.format(x.t.nylPOT, {
         termsHook: e => s(e, a),
         privacyHook: e => s(e, l)
-      }) : null != a ? x.intl.format(x.t["0cPyDw"], {
+      }) : null != a ? x.intl.format(x.t["0cPyDz"], {
         termsHook: e => s(e, a)
-      }) : null != l ? x.intl.format(x.t.loYGCw, {
+      }) : null != l ? x.intl.format(x.t["loYGC/"], {
         privacyHook: e => s(e, l)
       }) : null
     })

@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk401416 = require("./401416.js"),
   Chunk920133 = require("./920133.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk382716 = require("./382716.js"),
+  Chunk956051 = require("./956051.js"),
   Chunk444812 = require("./444812.js");
 
 function y(e) {
@@ -39,7 +39,7 @@ function y(e) {
       onSubmit: e => {
         e.preventDefault();
         let t = (0, g.YK)();
-        t.add(y), b.h2.updateSetting(Array.from(t)).then(() => (0, l.showToast)((0, l.createToast)(f.intl.string(f.t.rlYD1d), l.ToastType.SUCCESS))), O(), (0, p.L)(p.Q.MODAL_DISABLED_DMS, y)
+        t.add(y), b.h2.updateSetting(Array.from(t)).then(() => (0, l.showToast)((0, l.createToast)(f.intl.string(f.t.rlYD1W), l.ToastType.SUCCESS))), O(), (0, p.L)(p.Q.MODAL_DISABLED_DMS, y)
       },
       children: [(0, n.jsx)("img", {
         alt: "",
@@ -51,12 +51,12 @@ function y(e) {
         children: [(0, n.jsx)(l.Heading, {
           variant: "heading-lg/bold",
           className: x.title,
-          children: f.intl.string(f.t.w2BvnJ)
+          children: f.intl.string(f.t.w2BvnL)
         }), (0, n.jsx)(l.Text, {
           variant: "text-md/normal",
           color: "header-secondary",
           className: x.body,
-          children: f.intl.format(f.t.Depjkp, {
+          children: f.intl.format(f.t.Depjkv, {
             guild_name: D.name
           })
         })]
@@ -65,7 +65,7 @@ function y(e) {
           variant: "eyebrow",
           color: "header-secondary",
           className: x.subtitle,
-          children: f.intl.string(f.t.KPB2i4)
+          children: f.intl.string(f.t.KPB2iw)
         }), (0, n.jsx)("div", {
           className: x.guildContainer,
           children: (0, n.jsxs)("div", {
@@ -86,19 +86,19 @@ function y(e) {
             type: "submit",
             color: o.zx.Colors.BRAND,
             size: o.zx.Sizes.MEDIUM,
-            children: f.intl.string(f.t.TD7iU1)
+            children: f.intl.string(f.t.TD7iUx)
           }), (0, n.jsx)(o.zx, {
             className: x.button,
             color: o.zx.Colors.PRIMARY,
             onClick: () => {
               O(), (0, p.L)(p.Q.MODAL_DISMISSED, y)
             },
-            children: f.intl.string(f.t.PsWbcn)
+            children: f.intl.string(f.t.PsWbcp)
           }), (0, n.jsx)(l.Text, {
             variant: "text-xs/normal",
             color: "header-secondary",
             className: x.footer,
-            children: f.intl.format(f.t.IzZxXV, {
+            children: f.intl.format(f.t.IzZxXW, {
               onClick: () => {
                 O(), (0, u.X)(y), (0, l.ZDy)(async () => {
                   let {

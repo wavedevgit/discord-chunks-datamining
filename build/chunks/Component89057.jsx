@@ -19,7 +19,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk211242 = require("./211242.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk142766 = require("./142766.js"),
+  Chunk840416 = require("./840416.js"),
   Chunk51125 = require("./51125.js"),
   Chunk47268 = require("./47268.js");
 
@@ -32,15 +32,15 @@ function E(e) {
     children: [(0, r.jsx)(l.Heading, {
       className: h.header,
       variant: "heading-xl/semibold",
-      children: p.intl.string(p.t.vwMEHR)
+      children: p.intl.string(p.t.vwMEHS)
     }), (0, r.jsxs)(l.Text, {
       className: h.description,
       variant: "text-md/normal",
       color: "header-secondary",
       children: [(0, r.jsx)("p", {
-        children: p.intl.string(p.t.fev8MT)
+        children: p.intl.string(p.t.fev8MQ)
       }), (0, r.jsx)("p", {
-        children: p.intl.format(p.t.IHxEJS, {
+        children: p.intl.format(p.t.IHxEJU, {
           helpdeskArticle: d.Z.getArticleURL(_.BhN.BLOCKED_PAYMENTS)
         })
       })]
@@ -54,7 +54,7 @@ function E(e) {
 
 function b() {
   return (0, Chunk951288.jsx)(E, {
-    className: Chunk142766.settings
+    className: Chunk840416.settings
   })
 }
 
@@ -96,7 +96,7 @@ function O(e) {
       color: o.Z.unsafe_rawColors.YELLOW_300.css
     }), (0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
-      children: p.intl.format(p.t.NYkcCg, {
+      children: p.intl.format(p.t.NYkcCh, {
         helpdeskArticle: d.Z.getArticleURL(_.BhN.BLOCKED_PAYMENTS)
       })
     })]

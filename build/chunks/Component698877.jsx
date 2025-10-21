@@ -1,4 +1,4 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 698877, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   O: () => s
@@ -36,7 +36,7 @@ function s(e) {
     return r
   }(e, ["hasPermission", "streamActive", "isSelfStream", "centerButton", "onMouseEnter", "onMouseLeave", "renderNUXHighlight", "buttonRef"]);
   let b = d ? a.d : a.Z;
-  t = c ? u ? o.intl.string(o.t.S5anIS) : o.intl.string(o.t.q3O3Jy) : s ? o.intl.string(o.t.fjBNo6) : o.intl.string(o.t.uQn9Bw);
+  t = c ? u ? o.intl.string(o.t.S5anIc) : o.intl.string(o.t.q3O3J8) : s ? o.intl.string(o.t.fjBNo1) : o.intl.string(o.t.uQn9B8);
   let {
     Component: C,
     events: y,

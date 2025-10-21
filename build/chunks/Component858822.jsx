@@ -1,4 +1,4 @@
-/** Chunk was on 63962 **/
+/** Chunk was on 91053 **/
 /** chunk id: 858822, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -28,14 +28,14 @@ function f(e, t) {
     g = (0, d.U)(f);
   return null == n ? null : i ? (0, r.jsx)(s.sNh, {
     id: "unmute-guild",
-    label: h.intl.string(h.t.De0BTE),
+    label: h.intl.string(h.t.De0BTC),
     subtext: g,
     action: () => o.Z.updateGuildNotificationSettings(n, {
       muted: false
     }, p.ZB.Unmuted)
   }) : (0, r.jsx)(s.sNh, {
     id: "mute-guild",
-    label: h.intl.string(h.t.vRzp7O),
+    label: h.intl.string(h.t.vRzp7P),
     action: () => o.Z.updateGuildNotificationSettings(n, {
       muted: true
     }, p.ZB.Muted),

@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk293979 = require("./293979.js"),
   Chunk674563 = require("./674563.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk499330 = require("./499330.js");
+  Chunk409574 = require("./409574.js");
 let m = (0, Chunk624138.Mg)(Chunk477690.Z.INTERACTION_IFRAME_MODAL_MODAL_MIN_WIDTH),
   g = (0, Chunk624138.Mg)(Chunk477690.Z.INTERACTION_IFRAME_MODAL_MODAL_MAX_WIDTH),
   j = (0, Chunk624138.Mg)(Chunk477690.Z.INTERACTION_IFRAME_MODAL_MODAL_MARGIN),
@@ -35,7 +35,7 @@ function _(e) {
   } = (0, f.b8)(e), {
     width: M,
     height: N
-  } = (0, u.Z)(), A = a.useMemo(() => {
+  } = (0, d.Z)(), A = a.useMemo(() => {
     let e = Math.min((N - w - 2 * j) * 16 / 9, g);
     return Math.max(m, Math.min(M - 2 * j, e))
   }, [M, N]);
@@ -96,7 +96,7 @@ function _(e) {
           className: h.closeButtonContainer,
           look: i.zx.Looks.BLANK,
           size: i.zx.Sizes.NONE,
-          "aria-label": O.intl.string(O.t.WAI6xs),
+          "aria-label": O.intl.string(O.t.WAI6xu),
           "data-migration-pending": true,
           children: (0, r.jsx)(c.Dio, {
             size: "md",
@@ -104,7 +104,7 @@ function _(e) {
             className: h.closeIcon
           })
         })]
-      }), (0, r.jsx)(d.Z, {
+      }), (0, r.jsx)(u.Z, {
         aspectRatio: 16 / 9,
         children: (0, r.jsx)(s.J, {
           url: I,

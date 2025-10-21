@@ -17,10 +17,10 @@ let s = {
     oldFormErrors: true,
     rejectWithError: false
   }).then(e => {
-    s = e.body.nick, i.Z.sendBotMessage(t, null != s && "" !== s ? o.intl.formatToMarkdownString(o.t["gz+HRk"], {
+    s = e.body.nick, i.Z.sendBotMessage(t, null != s && "" !== s ? o.intl.formatToMarkdownString(o.t["gz+HRq"], {
       nick: s
-    }) : o.intl.string(o.t.Vhpd9P))
+    }) : o.intl.string(o.t.Vhpd9A))
   }, e => {
-    403 === e.status ? i.Z.sendBotMessage(t, o.intl.formatToMarkdownString(o.t.Izf9jI, {})) : i.Z.sendBotMessage(t, o.intl.string(o.t["5LO/Sk"]))
+    403 === e.status ? i.Z.sendBotMessage(t, o.intl.formatToMarkdownString(o.t.Izf9jO, {})) : i.Z.sendBotMessage(t, o.intl.string(o.t["5LO/Ss"]))
   })
 }

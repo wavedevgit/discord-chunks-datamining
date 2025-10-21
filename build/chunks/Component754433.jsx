@@ -1,4 +1,4 @@
-/** Chunk was on 90020 **/
+/** Chunk was on 95215 **/
 /** chunk id: 754433, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -11,7 +11,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk481060 = require("./481060.js"),
   Chunk937615 = require("./937615.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk662404 = require("./662404.js");
+  Chunk410187 = require("./410187.js");
 let u = e => {
   let {
     price: {
@@ -25,7 +25,7 @@ let u = e => {
     variant: u,
     className: a()(c.striked, i),
     children: [(0, r.jsx)(l.nn4, {
-      children: s.intl.format(s.t["2CEGlp"], {
+      children: s.intl.format(s.t["2CEGln"], {
         price: d
       })
     }), (0, r.jsx)("span", {

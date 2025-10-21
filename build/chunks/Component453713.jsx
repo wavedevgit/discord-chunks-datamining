@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk429368 = require("./429368.js"),
   Chunk724994 = require("./724994.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk341086 = require("./341086.js");
+  Chunk270132 = require("./270132.js");
 
 function m(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -93,7 +93,7 @@ let x = s()(e => {
       e.preventDefault(), e.stopPropagation(), (0, y.$)(t, a), C()
     }, [C, t, a]);
     return (0, r.jsx)(p.u, {
-      text: v.intl.string(v.t["6cfuDg"]),
+      text: v.intl.string(v.t["6cfuDj"]),
       "aria-label": false,
       shouldShow: !P && E,
       asContainer: true,
@@ -182,7 +182,7 @@ let x = s()(e => {
               variant: "text-xs/medium",
               color: "text-secondary",
               className: g.variantLabel,
-              children: d ? v.intl.string(v.t.wbgaj4) : C
+              children: d ? v.intl.string(v.t.wbgaj6) : C
             })]
           }))
         }

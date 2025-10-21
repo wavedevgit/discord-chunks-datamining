@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk314734 = require("./314734.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk712658 = require("./712658.js");
+  Chunk399235 = require("./399235.js");
 
 function T(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -112,7 +112,7 @@ function k(e) {
   return d ? (0, i.jsx)(B, {}) : A ? (0, i.jsx)(C.A, {
     type: y.LG.SEARCH_EMPTY,
     searchQuery: n,
-    textContent: r === y._b.TEXT ? I.intl.string(I.t.LSNOYW) : I.intl.string(I.t.Clu7Qk)
+    textContent: r === y._b.TEXT ? I.intl.string(I.t.LSNOYf) : I.intl.string(I.t.Clu7Qh)
   }) : (0, i.jsxs)("div", {
     children: [h && (0, i.jsx)(M, {
       context: t,
@@ -158,7 +158,7 @@ function M(e) {
     M = w ? a : x;
   return (0, i.jsxs)("div", {
     children: [(0, i.jsx)(E.Z, {
-      title: I.intl.string(I.t["0hKkS0"]),
+      title: I.intl.string(I.t["0hKkS+"]),
       buttonType: k,
       onClickViewButton: m ? C : true
     }), (0, i.jsx)("div", {
@@ -264,7 +264,7 @@ function D(e) {
     })]
   }) : (0, i.jsxs)("div", {
     children: [(0, i.jsx)(E.Z, {
-      title: I.intl.string(I.t.shUONj)
+      title: I.intl.string(I.t.shUONg)
     }), (0, i.jsxs)("div", {
       className: S.sectionActivitiesContentContainer,
       children: [n.map((e, n) => {
@@ -304,14 +304,14 @@ function H(e) {
 function B() {
   return (0, Chunk951288.jsxs)("div", {
     children: [(0, Chunk951288.jsx)(Chunk41558.Z, {
-      title: Chunk388032.intl.string(Chunk388032.t["0hKkS0"])
+      title: Chunk388032.intl.string(Chunk388032.t["0hKkS+"])
     }), (0, Chunk951288.jsx)("div", {
-      className: Chunk712658.sectionContentContainer,
+      className: Chunk399235.sectionContentContainer,
       children: L.map(e => (0, i.jsx)(A.Z, {}, e))
     }), (0, Chunk951288.jsx)(Chunk41558.Z, {
       title: Chunk388032.intl.string(Chunk388032.t.PHjkRE)
     }), (0, Chunk951288.jsx)("div", {
-      className: Chunk712658.sectionContentContainer,
+      className: Chunk399235.sectionContentContainer,
       children: R.map(e => (0, i.jsx)(A.Z, {}, e))
     })]
   })

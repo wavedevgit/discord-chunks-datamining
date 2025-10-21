@@ -8,5 +8,5 @@ var Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
 function a(e) {
-  return e.hasAnyStaffLevel() || e.hasFlag(r.xW$.PARTNER) ? i.intl.string(i.t.Sq6Q1t) : null == e.email ? i.intl.string(i.t.LfCBZG) : null
+  return e.hasAnyStaffLevel() || e.hasFlag(r.xW$.PARTNER) ? i.intl.string(i.t.Sq6Q1u) : null == e.email ? i.intl.string(i.t.LfCBZG) : null
 }

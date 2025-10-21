@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 675377, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -39,7 +39,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk710111 = require("./710111.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk909258 = require("./909258.js");
+  Chunk360054 = require("./360054.js");
 
 function M(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -85,7 +85,7 @@ function F() {
       gap: 8,
       children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/semibold",
-        children: Chunk388032.intl.string(Chunk388032.t.OWQNYm)
+        children: Chunk388032.intl.string(Chunk388032.t.OWQNYr)
       }), (0, Chunk951288.jsx)(K, {
         guild: module
       })]
@@ -112,13 +112,13 @@ function W(e) {
     guildId: i
   } = e, l = N.Z.getGuild(i), a = null != l ? (0, P.nL)(l) : 0;
   return 0 === t ? (0, r.jsx)(r.Fragment, {
-    children: k.intl.format(k.t["7E9Hd3"], {
+    children: k.intl.format(k.t["7E9Hdz"], {
       slots: n,
       totalSlots: a
     })
   }) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(u.u, {
-      text: k.intl.formatToPlainString(k.t.tuuJJS, {
+      text: k.intl.formatToPlainString(k.t.tuuJJT, {
         currentBoostLevel: t
       }),
       children: (0, r.jsx)(g.P3F, {
@@ -135,14 +135,14 @@ function W(e) {
         tabIndex: false,
         children: (0, r.jsx)(S.Z, {})
       })
-    }), k.intl.format(k.t.HHCdvb, {
+    }), k.intl.format(k.t.HHCdvU, {
       slots: n,
       totalSlots: a,
       boostLevel: t
     })]
   })
 }
-let V = e => {
+let z = e => {
     var {
       renderPopoutBody: t,
       renderPopoutChildren: n,
@@ -183,13 +183,13 @@ let V = e => {
       children: e => n(e, p)
     }))
   },
-  z = () => {
+  V = () => {
     let e = Chunk647438.useRef(null);
-    return (0, Chunk951288.jsx)(V, {
+    return (0, Chunk951288.jsx)(z, {
       renderPopoutBody: () => (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
         color: "header-secondary",
-        children: Chunk388032.intl.format(Chunk388032.t.bGXPVl, {})
+        children: Chunk388032.intl.format(Chunk388032.t.bGXPVt, {})
       }),
       renderPopoutChildren: (t, n) => (0, r.jsx)("div", U(M({
         ref: e
@@ -197,7 +197,7 @@ let V = e => {
         children: (0, r.jsx)(g.Button, U(M({}, t), {
           disabled: true,
           variant: "primary",
-          text: k.intl.string(k.t["/uNYPD"])
+          text: k.intl.string(k.t["/uNYPJ"])
         }))
       })),
       popoutTargetRef: module
@@ -231,7 +231,7 @@ function K(e) {
     }, []), a) return (0, r.jsx)(g.$jN, {});
   let x = B ? (0, r.jsx)(g.Button, {
     variant: "primary",
-    text: k.intl.string(k.t["/uNYPD"]),
+    text: k.intl.string(k.t["/uNYPJ"]),
     onClick: function() {
       (0, g.ZDy)(async () => {
         let {
@@ -243,14 +243,14 @@ function K(e) {
       })
     },
     disabled: m <= 0 || !s
-  }) : (0, r.jsx)(z, {});
+  }) : (0, r.jsx)(V, {});
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)("div", {
       children: [(0, r.jsx)(g.Text, {
         className: G.helpText,
         variant: "text-sm/normal",
         color: "header-secondary",
-        children: k.intl.string(k.t.BohnsL)
+        children: k.intl.string(k.t.BohnsE)
       }), (0, r.jsx)("div", {
         className: G.buttons,
         children: !h && x
@@ -264,9 +264,9 @@ function K(e) {
         width: 272,
         height: 212
       }), (0, r.jsx)(g.OZU, {
-        note: k.intl.string(k.t.ZhoSBA),
+        note: k.intl.string(k.t.ZhoSBI),
         noteClassName: G.emptyText,
-        children: k.intl.string(k.t.I6P1p6)
+        children: k.intl.string(k.t.I6P1p7)
       }), x]
     }) : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(g.izJ, {
@@ -289,11 +289,11 @@ function K(e) {
         children: [(0, r.jsxs)("div", {
           className: G.tableHeaders,
           children: [(0, r.jsx)(H, {
-            children: k.intl.string(k.t.sMOuub)
+            children: k.intl.string(k.t.sMOuuS)
           }), (0, r.jsx)(H, {
-            children: k.intl.string(k.t.lLFvlZ)
+            children: k.intl.string(k.t.lLFvlT)
           }), (0, r.jsx)(H, {
-            children: k.intl.string(k.t["85qMS0"])
+            children: k.intl.string(k.t["85qMS/"])
           })]
         }), l.map(e => (0, r.jsx)(Y, {
           sound: e,
@@ -403,7 +403,7 @@ function Y(e) {
             }))
           })
         },
-        "aria-label": k.intl.string(k.t.bt75u7),
+        "aria-label": k.intl.string(k.t.bt75uw),
         children: (0, r.jsx)(g.vdY, {
           size: "xs",
           color: "currentColor",
@@ -413,22 +413,22 @@ function Y(e) {
         className: G.soundRemove,
         onClick: function(e) {
           e.stopPropagation(), (0, g.h7j)(e => (0, r.jsx)(g.ConfirmModal, U(M({
-            header: k.intl.formatToPlainString(k.t["PR/VbG"], {
+            header: k.intl.formatToPlainString(k.t["PR/VbI"], {
               soundName: u
             }),
-            confirmText: k.intl.string(k.t.oyYWHB),
-            cancelText: k.intl.string(k.t["ETE/oK"]),
+            confirmText: k.intl.string(k.t.oyYWHE),
+            cancelText: k.intl.string(k.t["ETE/oC"]),
             onConfirm: A
           }, e), {
             children: (0, r.jsx)(g.Text, {
               variant: "text-md/normal",
-              children: k.intl.format(k.t["u6+CmJ"], {
+              children: k.intl.format(k.t["u6+CmN"], {
                 soundName: u
               })
             })
           })))
         },
-        "aria-label": k.intl.string(k.t.N86XcH),
+        "aria-label": k.intl.string(k.t.N86XcP),
         children: (0, r.jsx)(g.Dio, {
           size: "md",
           color: "currentColor",

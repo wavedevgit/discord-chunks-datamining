@@ -14,6 +14,6 @@ function o(e) {
   } = e;
   return (0, r.e7)([i.Z], () => (function(e) {
     let [t] = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [i.Z];
-    return e === l.Hk ? a.intl.string(a.t.Omu0fX) : t.getCategoryName(e)
+    return e === l.Hk ? a.intl.string(a.t.Omu0fS) : t.getCategoryName(e)
   })(t, [i.Z]))
 }

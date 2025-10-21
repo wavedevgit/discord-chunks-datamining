@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 324081, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => P
@@ -27,7 +27,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk306680 = require("./306680.js"),
   Chunk594174 = require("./594174.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk692636 = require("./692636.js");
+  Chunk888097 = require("./888097.js");
 let I = {
   top: 8,
   bottom: 8,
@@ -75,7 +75,7 @@ function P(e) {
       children: [(0, r.jsx)(N, {
         channel: i,
         gotoChannel: a
-      }), (0, r.jsx)(w, {
+      }), (0, r.jsx)(T, {
         channel: i,
         gotoChannel: a,
         mentionCount: c
@@ -101,7 +101,7 @@ function N(e) {
   return t.isPrivate() ? (0, r.jsx)(Z, {
     channel: t,
     gotoChannel: n
-  }) : (0, r.jsx)(T, {
+  }) : (0, r.jsx)(w, {
     channel: t,
     gotoChannel: n
   })
@@ -124,7 +124,7 @@ function Z(e) {
   })
 }
 
-function T(e) {
+function w(e) {
   let {
     channel: t,
     gotoChannel: n
@@ -140,12 +140,12 @@ function T(e) {
   })
 }
 
-function w(e) {
+function T(e) {
   let {
     channel: t,
     gotoChannel: n,
     mentionCount: i
-  } = e, o = (0, a.e7)([v.Z], () => v.Z.getGuild(t.guild_id)), c = (0, a.e7)([y.Z], () => y.Z.getChannel(t.parent_id)), u = (0, a.e7)([x.ZP], () => x.ZP.getIsMentionLowImportance(t.id)), d = (0, g.KS)(t, o), p = (0, h.ZP)(t, false), f = null == c ? null == o ? true : o.name : "".concat(null == o ? true : o.name, " › ").concat(c.name), b = t.isMultiUserDM() ? E.intl.formatToPlainString(E.t.CxSA5O, {
+  } = e, o = (0, a.e7)([v.Z], () => v.Z.getGuild(t.guild_id)), c = (0, a.e7)([y.Z], () => y.Z.getChannel(t.parent_id)), u = (0, a.e7)([x.ZP], () => x.ZP.getIsMentionLowImportance(t.id)), d = (0, g.KS)(t, o), p = (0, h.ZP)(t, false), f = null == c ? null == o ? true : o.name : "".concat(null == o ? true : o.name, " › ").concat(c.name), b = t.isMultiUserDM() ? E.intl.formatToPlainString(E.t.CxSA5N, {
     members: t.recipients.length + 1
   }) : t.isPrivate() ? (0, r.jsx)(A, {
     channel: t

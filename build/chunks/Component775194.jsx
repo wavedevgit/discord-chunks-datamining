@@ -11,7 +11,7 @@ var Chunk392711 = require("./392711.js"),
   Chunk481250 = require("./481250.jsx"),
   Chunk513547 = require("./513547.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk10198 = require("./10198.js");
+  Chunk197571 = require("./197571.js");
 let u = {
   userId: 1,
   dataType: 2,
@@ -44,7 +44,7 @@ function m(e) {
   }, "framerate")), (0, r.jsxs)(l.Kqy, {
     children: [(0, r.jsx)(l.Heading, {
       variant: "heading-md/medium",
-      children: c.intl.string(c.t.MKrFKC)
+      children: c.intl.string(c.t.MKrFKE)
     }), (0, o.VE)(n), function(e) {
       if (null != e.buffers) return e.buffers.map(e => {
         let t = [];

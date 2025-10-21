@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk800530 = require("./800530.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk396723 = require("./396723.js"),
+  Chunk740076 = require("./740076.js"),
   Chunk736056 = require("./736056.js");
 let b = function(t) {
   let {
@@ -34,20 +34,20 @@ let b = function(t) {
     (0, d.lA)(_, d.d_.RETRY, n)
   }, [_, n]);
   let T = r.useMemo(() => [{
-    title: x.intl.string(x.t.FYkioq),
-    description: x.intl.string(x.t.xMfbR0),
-    buttonText: x.intl.string(x.t.RtOE1t),
+    title: g.intl.string(g.t.FYkioq),
+    description: g.intl.string(g.t.xMfbRz),
+    buttonText: g.intl.string(g.t.RtOE1v),
     buttonLoading: m,
     onButtonPress: () => {
       O(d.cU.RETRY_MODAL), (0, d.x3)(_, d.d_.RETRY, d.sU.GET_STARTED)
     }
   }, {
-    title: x.intl.string(x.t["LZO+HR"]),
-    description: x.intl.string(x.t.N2mHaG),
-    buttonText: x.intl.string(x.t["LZO+HR"]),
+    title: g.intl.string(g.t["LZO+Hd"]),
+    description: g.intl.string(g.t.N2mHaK),
+    buttonText: g.intl.string(g.t["LZO+Hd"]),
     buttonLoading: m,
     onButtonPress: () => {
-      u.Z.openUrl(f.sQ.APPEALS_LINK), (0, d.x3)(_, d.d_.RETRY, d.sU.MANUAL_REVIEW_REQUEST)
+      u.Z.openUrl(x.sQ.APPEALS_LINK), (0, d.x3)(_, d.d_.RETRY, d.sU.MANUAL_REVIEW_REQUEST)
     }
   }], [O, _, m]);
   return (0, i.jsx)(l.ExpressiveModal, {
@@ -55,20 +55,20 @@ let b = function(t) {
     onClose: b,
     gradientColor: "blue",
     graphic: {
-      src: E.Z,
+      src: R.Z,
       type: "image"
     },
-    title: x.intl.string(x.t["5l3R/v"]),
-    subtitle: x.intl.string(x.t.O7SO0N),
+    title: g.intl.string(g.t["5l3R/m"]),
+    subtitle: g.intl.string(g.t.O7SO0D),
     children: (0, i.jsxs)(s.Kqy, {
       direction: "vertical",
       gap: 16,
       children: [(0, i.jsx)(s.Wn, {
         messageType: s.QYI.INFO,
-        className: g.infoBox,
+        className: E.infoBox,
         textColor: "text-feedback-info",
         textVariant: "text-sm/medium",
-        children: x.intl.string(x.t.El4aXl)
+        children: g.intl.string(g.t.El4aXl)
       }), T.map((t, e) => (0, i.jsx)(a.JZ, function(t) {
         for (var e = 1; e < arguments.length; e++) {
           var n = null != arguments[e] ? arguments[e] : {},
@@ -91,9 +91,9 @@ let b = function(t) {
       }, t), e)), (0, i.jsx)(s.Text, {
         variant: "text-xs/medium",
         color: "text-muted",
-        children: x.intl.format(x.t["L+FgkZ"], {
+        children: g.intl.format(g.t["L+FgkZ"], {
           handleOnHelpUrlHook: () => {
-            u.Z.openUrl(c.Z.getArticleURL(R.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, d.x3)(_, d.d_.RETRY, d.sU.LEARN_MORE)
+            u.Z.openUrl(c.Z.getArticleURL(f.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, d.x3)(_, d.d_.RETRY, d.sU.LEARN_MORE)
           }
         })
       })]

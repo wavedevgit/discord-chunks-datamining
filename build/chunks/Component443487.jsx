@@ -25,11 +25,11 @@ var Chunk120356 = require("./120356.js"),
   Chunk5192 = require("./5192.js"),
   Chunk192918 = require("./192918.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk584830 = require("./584830.js");
+  Chunk451419 = require("./451419.js");
 
 function E() {
   return (0, Chunk951288.jsx)("div", {
-    className: Chunk584830.container,
+    className: Chunk451419.container,
     "aria-hidden": true
   })
 }
@@ -136,7 +136,7 @@ function v(e) {
         children: ["+", T]
       })
     }) : null, (0, r.jsx)(s.nn4, {
-      children: m.intl.format(m.t.rH95Gh, {
+      children: m.intl.format(m.t.rH95Gu, {
         user0: p.ZP.getName(n, i, v),
         user1: p.ZP.getName(n, i, I),
         countOthers: T,
@@ -180,6 +180,6 @@ function T(e) {
 
 function S() {
   return (0, Chunk951288.jsx)("div", {
-    className: Chunk584830.divider
+    className: Chunk451419.divider
   })
 }

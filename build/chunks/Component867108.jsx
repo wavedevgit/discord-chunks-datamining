@@ -1,4 +1,4 @@
-/** Chunk was on 99063 **/
+/** Chunk was on 86736 **/
 /** chunk id: 867108, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -18,7 +18,7 @@ function p(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : d.pNK.ROLES;
   return (0, r.e7)([c.Z], () => c.Z.canImpersonateRole(e, t)) ? (0, i.jsx)(l.sNh, {
     id: "view-as-role",
-    label: u.intl.string(u.t.arFPfH),
+    label: u.intl.string(u.t.arFPfJ),
     icon: l.ZSh,
     action: () => {
       a.Z.close(), (0, o.iD)(e.id, {

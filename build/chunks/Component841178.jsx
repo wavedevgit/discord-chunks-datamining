@@ -1,7 +1,7 @@
 /** Chunk was on 46317 **/
 /** chunk id: 841178, original params: t,i,n (module,exports,require) **/
 require.d(exports, {
-  default: () => d
+  default: () => c
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -10,48 +10,48 @@ var Chunk481060 = require("./481060.js"),
   Chunk313201 = require("./313201.js"),
   Chunk952164 = require("./952164.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk949498 = require("./949498.js");
+  Chunk551850 = require("./551850.js");
 
-function d(t) {
+function c(t) {
   let {
     transitionState: i,
     onClose: n
-  } = t, d = (0, s.Dt)();
-  return (0, e.jsxs)(a.Y0X, {
-    "aria-labelledby": d,
+  } = t, c = (0, s.Dt)();
+  return (0, e.jsxs)(r.Y0X, {
+    "aria-labelledby": c,
     transitionState: i,
-    size: a.CgR.SMALL,
+    size: r.CgR.SMALL,
     parentComponent: "SpotifyPremiumUpgradeModal",
-    children: [(0, e.jsx)(a.xBx, {
+    children: [(0, e.jsx)(r.xBx, {
       separator: false,
-      children: (0, e.jsx)(a.Heading, {
-        id: d,
+      children: (0, e.jsx)(r.Heading, {
+        id: c,
         variant: "heading-lg/semibold",
-        children: l.intl.formatToMarkdownString(l.t.DQsSGh, {})
+        children: d.intl.formatToMarkdownString(d.t.DQsSGr, {})
       })
-    }), (0, e.jsxs)(a.hzk, {
-      children: [(0, e.jsx)(r.Z, {
-        justify: r.Z.Justify.CENTER,
+    }), (0, e.jsxs)(r.hzk, {
+      children: [(0, e.jsx)(a.Z, {
+        justify: a.Z.Justify.CENTER,
         children: (0, e.jsx)("div", {
-          className: c.image
+          className: l.image
         })
-      }), (0, e.jsx)(a.Text, {
-        className: c.text,
+      }), (0, e.jsx)(r.Text, {
+        className: l.text,
         variant: "text-sm/normal",
-        children: l.intl.string(l.t.xGMwi4)
+        children: d.intl.string(d.t.xGMwi9)
       })]
-    }), (0, e.jsx)(a.mzw, {
-      children: (0, e.jsxs)(a.ButtonGroup, {
+    }), (0, e.jsx)(r.mzw, {
+      children: (0, e.jsxs)(r.ButtonGroup, {
         direction: "horizontal-reverse",
-        children: [(0, e.jsx)(a.Button, {
+        children: [(0, e.jsx)(r.Button, {
           variant: "primary",
-          text: l.intl.string(l.t.n8U5jY),
+          text: d.intl.string(d.t.n8U5jd),
           onClick: function() {
             (0, o.KK)(), n()
           }
-        }), (0, e.jsx)(a.Button, {
+        }), (0, e.jsx)(r.Button, {
           variant: "secondary",
-          text: l.intl.string(l.t["ETE/oK"]),
+          text: d.intl.string(d.t["ETE/oC"]),
           onClick: n
         })]
       })

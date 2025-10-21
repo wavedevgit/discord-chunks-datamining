@@ -1,4 +1,4 @@
-/** Chunk was on 41348 **/
+/** Chunk was on 79041 **/
 /** chunk id: 918714, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -17,9 +17,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk535188 = require("./535188.jsx"),
   Chunk856597 = require("./856597.jsx"),
   Chunk231338 = require("./231338.js"),
-  Chunk753160 = require("./753160.js"),
+  Chunk424709 = require("./424709.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk594097 = require("./594097.js");
+  Chunk104940 = require("./104940.js");
 let Chunk575703 = require("./575703.js");
 
 function _(e) {
@@ -66,7 +66,7 @@ let y = function(e) {
         }
       })
     } catch (e) {
-      C(b.intl.string(g.default["/f++3t"]))
+      C(b.intl.string(g.default["/f++3g"]))
     } finally {
       x(false)
     }
@@ -128,11 +128,11 @@ let y = function(e) {
               gap: 4,
               children: [(0, a.jsx)(i.Heading, {
                 variant: "heading-xl/semibold",
-                children: b.intl.string(b.t.c6kn6O)
+                children: b.intl.string(b.t.c6kn6F)
               }), (0, a.jsx)(i.Text, {
                 variant: "text-md/normal",
                 color: "text-muted",
-                children: b.intl.string(b.t.ZUEGFh)
+                children: b.intl.string(b.t.ZUEGFn)
               })]
             }), (0, a.jsxs)(i.Kqy, {
               direction: "horizontal",
@@ -141,13 +141,13 @@ let y = function(e) {
               children: [(0, a.jsx)(i.Button, {
                 fullWidth: true,
                 variant: "secondary",
-                text: b.intl.string(b.t["2jxGen"]),
+                text: b.intl.string(b.t["2jxGer"]),
                 onClick: () => {
                   (0, p.R)("safety_flows_modal")
                 }
               }), (0, a.jsx)(i.Button, {
                 fullWidth: true,
-                text: b.intl.string(b.t["7NqTJi"]),
+                text: b.intl.string(b.t["7NqTJn"]),
                 onClick: () => {
                   T()
                 }

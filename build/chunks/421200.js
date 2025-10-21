@@ -1,0 +1,18 @@
+/** Chunk was on 45620 **/
+/** chunk id: 421200, original params: e,t,n (module,exports,require) **/
+"use strict";
+module.exports = {
+  headerBar: "headerBar__80679",
+  headerBarInner: "headerBarInner__80679",
+  tabs: "tabs__80679",
+  tabWrapper: "tabWrapper__80679",
+  tab: "tab__80679",
+  selected: "selected__80679",
+  tabWithMenuContainer: "tabWithMenuContainer__80679",
+  tabWithChevron: "tabWithChevron__80679",
+  discordLogo: "discordLogo__80679",
+  shopHomeLink: "shopHomeLink__80679",
+  alignedRightContent: "alignedRightContent__80679",
+  wishlistButton: "wishlistButton__80679",
+  balanceWidgetMenu: "balanceWidgetMenu__80679"
+}

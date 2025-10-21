@@ -15,8 +15,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk526383 = require("./526383.js"),
   Chunk294330 = require("./294330.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk333682 = require("./333682.js"),
-  Chunk58071 = require("./58071.js");
+  Chunk663448 = require("./663448.js"),
+  Chunk988050 = require("./988050.js");
 let b = function(e) {
   let {
     onScroll: t
@@ -58,8 +58,8 @@ let b = function(e) {
   return (0, r.jsxs)(u.Z, {
     onScroll: t,
     children: [(0, r.jsx)(s.Z, {
-      title: h.intl.string(h.t.X5xPlZ),
-      description: h.intl.string(h.t["F/IQCA"]),
+      title: h.intl.string(h.t.X5xPlb),
+      description: h.intl.string(h.t["F/IQCI"]),
       children: (0, r.jsx)(o.Z, {})
     }), (0, r.jsxs)(c.Z, {
       children: [n.length > 0 ? (0, r.jsxs)(r.Fragment, {
@@ -67,7 +67,7 @@ let b = function(e) {
           className: g.sectionTitle,
           variant: "heading-lg/semibold",
           color: "header-primary",
-          children: h.intl.string(h.t["2DfZIS"])
+          children: h.intl.string(h.t["2DfZIQ"])
         }), (0, r.jsxs)("div", {
           className: g.content,
           children: [b.map(e => (0, r.jsx)(f.VD, {
@@ -90,12 +90,12 @@ let b = function(e) {
           className: m.text,
           variant: "text-sm/medium",
           color: "header-secondary",
-          children: [h.intl.string(h.t.O1k9XV), " "]
+          children: [h.intl.string(h.t.O1k9XX), " "]
         }), (0, r.jsx)(l.Text, {
           className: m.text,
           variant: "text-sm/medium",
           color: "header-secondary",
-          children: h.intl.string(h.t.FV5dvr)
+          children: h.intl.string(h.t.FV5dvh)
         })]
       })]
     })]

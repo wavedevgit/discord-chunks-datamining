@@ -1,4 +1,4 @@
-/** Chunk was on 82897 **/
+/** Chunk was on 5873 **/
 /** chunk id: 612293, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk372172 = require("./372172.js");
+  Chunk886020 = require("./886020.js");
 
 function S(e) {
   var t, n;
@@ -41,19 +41,19 @@ function S(e) {
     guildId: S,
     initialSelectedNameplate: k
   } = e, E = (0, a.e7)([v.ZP], () => null != S && null != c ? v.ZP.getMember(S, c.id) : null), A = null != E ? null == E || null == (t = E.collectibles) ? true : t.nameplate : null == c || null == (n = c.collectibles) ? true : n.nameplate, {
-    pendingNameplate: B
-  } = (0, g.Zx)(c, S), [N, T] = (0, i.useState)(() => {
+    pendingNameplate: N
+  } = (0, g.Zx)(c, S), [B, Z] = (0, i.useState)(() => {
     var e;
-    return null != k ? k : true !== B ? B : null == A ? null : null != (e = (0, u.Y)(x, _).find(e => {
+    return null != k ? k : true !== N ? N : null == A ? null : null != (e = (0, u.Y)(x, _).find(e => {
       let {
         skuId: t
       } = e;
       return t === A.skuId
     })) ? e : null
   }), {
-    product: Z,
+    product: T,
     purchase: L
-  } = (0, p.Z)(null == N ? true : N.skuId), U = C.ZP.canUseCollectibles(c), D = true === B ? (null == N ? true : N.skuId) === (null == A ? true : A.skuId) : (null == N ? true : N.skuId) === (null == B ? true : B.skuId), M = (0, i.useCallback)(e => {
+  } = (0, p.Z)(null == B ? true : B.skuId), U = C.ZP.canUseCollectibles(c), D = true === N ? (null == B ? true : B.skuId) === (null == A ? true : A.skuId) : (null == B ? true : B.skuId) === (null == N ? true : N.skuId), M = (0, i.useCallback)(e => {
     P(), (0, d.mK)({
       analyticsLocations: f,
       analyticsSource: o.Z.EDIT_NAMEPLATE_MODAL,
@@ -67,7 +67,7 @@ function S(e) {
       className: O.header,
       children: [(0, r.jsx)(l.Heading, {
         variant: "heading-lg/semibold",
-        children: w.intl.string(w.t.BwdeMz)
+        children: w.intl.string(w.t.BwdeM1)
       }), (0, r.jsx)(l.olH, {
         "data-migration-pending": true,
         className: O.closeButton,
@@ -79,41 +79,41 @@ function S(e) {
       scrollbarType: "none",
       children: [(0, r.jsx)(y.Z, {
         currentUser: c,
-        selectedNameplate: N,
+        selectedNameplate: B,
         guildId: S,
-        onSelect: T,
+        onSelect: Z,
         onOpenShop: M
       }), (0, r.jsx)(I.Z, {
         user: c,
         guildId: S,
-        selectedNameplate: N
+        selectedNameplate: B
       })]
     }), (0, r.jsxs)(l.mzw, {
       "data-migration-pending": true,
       className: O.modalFooter,
-      children: [null != L && (!(0, u.qS)(L) || U) || null === N ? (0, r.jsx)(l.Button, {
+      children: [null != L && (!(0, u.qS)(L) || U) || null === B ? (0, r.jsx)(l.Button, {
         variant: "primary",
-        text: w.intl.string(w.t.Jh8fJy),
+        text: w.intl.string(w.t.Jh8fJz),
         onClick: () => {
-          null != S ? (0, m.RH)(N) : (0, s.Rx)(N), P()
+          null != S ? (0, m.RH)(B) : (0, s.Rx)(B), P()
         },
         disabled: D
-      }) : null == L && (U || !(0, u.G1)(Z)) ? (0, r.jsx)(l.Button, {
+      }) : null == L && (U || !(0, u.G1)(T)) ? (0, r.jsx)(l.Button, {
         variant: "primary",
-        onClick: () => M(null == Z ? true : Z.skuId),
-        text: w.intl.string(w.t.fYfGgI)
+        onClick: () => M(null == T ? true : T.skuId),
+        text: w.intl.string(w.t.fYfGgK)
       }) : (0, r.jsx)(b.Z, {
         subscriptionTier: j.Si.TIER_2,
         showGradient: !U,
         textOptions: {
-          textOverride: C.ZP.isPremium(c) ? w.intl.string(w.t.KXLX7u) : U ? w.intl.string(w.t.mr4K7O) : w.intl.string(w.t.pj0XBA)
+          textOverride: C.ZP.isPremium(c) ? w.intl.string(w.t.KXLX7l) : U ? w.intl.string(w.t.mr4K7D) : w.intl.string(w.t.pj0XBN)
         }
-      }), !U && (0, u.G1)(Z) ? (0, r.jsx)(h.Z, {
-        product: Z,
+      }), !U && (0, u.G1)(T) ? (0, r.jsx)(h.Z, {
+        product: T,
         onClose: P
       }) : (0, r.jsx)(l.Button, {
         variant: "secondary",
-        text: w.intl.string(w.t["ETE/oK"]),
+        text: w.intl.string(w.t["ETE/oC"]),
         onClick: P
       })]
     })]

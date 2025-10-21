@@ -15,7 +15,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk987650 = require("./987650.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk599330 = require("./599330.js");
+  Chunk653773 = require("./653773.js");
 
 function f(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -51,11 +51,11 @@ function g(e, t) {
 
 function m() {
   return (0, Chunk951288.jsx)("div", {
-    className: Chunk599330.footer,
+    className: Chunk653773.footer,
     children: (0, Chunk951288.jsx)(Chunk481060.Button, {
       variant: "active",
       size: "sm",
-      text: Chunk388032.intl.string(Chunk388032.t.U76Ft7),
+      text: Chunk388032.intl.string(Chunk388032.t.U76Ft2),
       fullWidth: true
     })
   })
@@ -95,7 +95,7 @@ function y(e) {
           (0, r.ZDy)(async () => {
             let {
               default: e
-            } = await Promise.all([n.e("4093"), n.e("33840"), n.e("33641")]).then(n.bind(n, 60594));
+            } = await Promise.all([n.e("4093"), n.e("47863"), n.e("33641")]).then(n.bind(n, 60594));
             return t => (0, i.jsx)(e, g(f({}, t), {
               sourcePID: (0, a.getPID)(),
               selectSource: false,
@@ -121,7 +121,7 @@ function y(e) {
       return {
         icon: n(847881),
         title: null,
-        body: p.intl.formatToPlainString(p.t["0SVWgI"], {
+        body: p.intl.formatToPlainString(p.t["0SVWgF"], {
           game: t.name
         }),
         hint: () => (0, i.jsx)(m, {}),
@@ -139,7 +139,7 @@ function y(e) {
           (0, r.ZDy)(async () => {
             let {
               default: e
-            } = await Promise.all([n.e("4093"), n.e("33840"), n.e("33641")]).then(n.bind(n, 60594));
+            } = await Promise.all([n.e("4093"), n.e("47863"), n.e("33641")]).then(n.bind(n, 60594));
             return t => (0, i.jsx)(e, g(f({}, t), {
               sourcePID: (0, a.getPID)(),
               selectSource: false,

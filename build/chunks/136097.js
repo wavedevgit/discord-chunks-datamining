@@ -31,5 +31,5 @@ function u() {
 }
 
 function d(e) {
-  return (Date.now() - e.valueOf()) / 1e3 / 60 / 60 < 1 ? c.intl.string(c.t.TXCmfH) : a()(e).fromNow()
+  return (Date.now() - e.valueOf()) / 1e3 / 60 / 60 < 1 ? c.intl.string(c.t.TXCmfL) : a()(e).fromNow()
 }

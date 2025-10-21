@@ -14,8 +14,8 @@ var Chunk120356 = require("./120356.js"),
   Chunk720196 = require("./720196.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk926609 = require("./926609.js"),
-  Chunk10198 = require("./10198.js");
+  Chunk710509 = require("./710509.js"),
+  Chunk197571 = require("./197571.js");
 
 function p(e) {
   let {
@@ -42,10 +42,10 @@ function m(e) {
       className: s()(g.marginBottom20, g.marginTop8)
     }), (0, r.jsx)(a.Dx, {
       className: g.marginBottom8,
-      children: d.intl.string(d.t["8UcxIy"])
+      children: d.intl.string(d.t["8UcxI6"])
     }), (0, r.jsx)(l.Text, {
       variant: "text-md/normal",
-      children: d.intl.string(d.t.O37hMj)
+      children: d.intl.string(d.t.O37hMl)
     }), (0, r.jsxs)(a.gO, {
       className: s()(g.marginBottom20, g.marginTop20),
       children: [(0, r.jsx)(l.Text, {
@@ -53,28 +53,28 @@ function m(e) {
       }), (0, r.jsxs)("ul", {
         className: h.listContainer,
         children: [(0, r.jsx)(p, {
-          children: d.intl.string(d.t.Gj1Zr6)
+          children: d.intl.string(d.t.Gj1Zry)
         }), (0, r.jsx)(o.Z, {}), (0, r.jsx)(p, {
-          children: d.intl.string(d.t["8C6t3N"])
+          children: d.intl.string(d.t["8C6t3B"])
         }), (0, r.jsx)(o.Z, {}), (0, r.jsx)(p, {
-          children: d.intl.string(d.t.mToZMD)
+          children: d.intl.string(d.t.mToZMA)
         }), (0, r.jsx)(o.Z, {}), (0, r.jsx)(p, {
-          children: d.intl.string(d.t.TPEvkZ)
+          children: d.intl.string(d.t.TPEvkc)
         }), (0, r.jsx)(o.Z, {}), (0, r.jsx)(p, {
-          children: d.intl.string(d.t.H8Y1Li)
+          children: d.intl.string(d.t.H8Y1Ln)
         })]
       })]
     }), (0, r.jsxs)("div", {
       className: h.buttonContainer,
       children: [(0, r.jsx)(a.zx, {
         onClick: () => t(c.n.PASSWORD),
-        children: d.intl.string(d.t.GgCRqa)
+        children: d.intl.string(d.t.GgCRqR)
       }), (0, r.jsx)(a.zx, {
         color: a.zx.Colors.PRIMARY,
         onClick: () => i(u.Z5c.LOGIN, {
           source: "account_revert"
         }),
-        children: d.intl.string(d.t["B/yHcX"])
+        children: d.intl.string(d.t["B/yHcQ"])
       })]
     })]
   })

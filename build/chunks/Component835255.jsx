@@ -1,4 +1,4 @@
-/** Chunk was on 37786 **/
+/** Chunk was on 84071 **/
 /** chunk id: 835255, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => H,
@@ -37,7 +37,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk215023 = require("./215023.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk988388 = require("./988388.js"),
+  Chunk232644 = require("./232644.js"),
   Chunk660097 = require("./660097.js");
 let B = e => {
   let {
@@ -47,7 +47,7 @@ let B = e => {
     className: M.placeholderAvatar,
     src: R,
     size: t,
-    "aria-label": Z.intl.string(Z.t.lqaIxM)
+    "aria-label": Z.intl.string(Z.t.lqaIxI)
   })
 };
 
@@ -87,15 +87,15 @@ function H(e) {
     showIcons: F = false,
     collectibleSource: H = y.lr.WISHLIST,
     disableHoverEffects: G = false,
-    giftingOrigin: U = A.Wt.USER_PROFILE_WISHLIST
+    giftingOrigin: U = N.Wt.USER_PROFILE_WISHLIST
   } = e, D = i.useRef(null), z = i.useRef(null), {
     isHoveringOrFocusing: W
   } = (0, j.Z)(z), {
     analyticsLocations: K
-  } = (0, h.ZP)(), V = (0, s.TH)(), Y = i.useCallback(() => {
+  } = (0, _.ZP)(), V = (0, s.TH)(), Y = i.useCallback(() => {
     if (V.pathname.startsWith(k.Z5c.COLLECTIBLES_SHOP)) {
-      let e = _.Z.getProduct(t.skuId),
-        n = _.Z.getCategoryForProduct(t.skuId);
+      let e = h.Z.getProduct(t.skuId),
+        n = h.Z.getCategoryForProduct(t.skuId);
       if (null != e && null != n) {
         (0, E.closeUserProfileModal)(), (0, m.T)({
           product: e,
@@ -107,12 +107,12 @@ function H(e) {
           analyticsSource: p.Z.USER_PROFILE_WISHLIST,
           returnRef: true,
           tab: true,
-          variantType: N.Ch.DEFAULT
+          variantType: A.Ch.DEFAULT
         });
         return
       }
     }(0, E.closeUserProfileModal)(), (0, S.uL)("".concat(k.Z5c.COLLECTIBLES_SHOP, "#itemSkuId=").concat(t.skuId))
-  }, [V.pathname, t.skuId, K]), q = t.collectiblesItem, J = q.type, [Q] = (0, c.Wu)([L.Z], () => [L.Z.hasSentGift(t.skuId, n.id)], [t.skuId, n.id]), X = !Q && W, $ = R ? Z.t.FdGl5O : Z.t.ilhtIS, ee = R ? true : u.OgN, et = (0, r.jsx)("div", {
+  }, [V.pathname, t.skuId, K]), q = t.collectiblesItem, J = q.type, [Q] = (0, c.Wu)([L.Z], () => [L.Z.hasSentGift(t.skuId, n.id)], [t.skuId, n.id]), X = !Q && W, $ = R ? Z.t.FdGl5A : Z.t.ilhtIa, ee = R ? true : u.OgN, et = (0, r.jsx)("div", {
     className: M.cardStateIconWrapper,
     children: (0, r.jsx)(u.sV5, {
       size: "custom",
@@ -171,15 +171,15 @@ function H(e) {
           children: (() => {
             switch (J) {
               case o.Z.AVATAR_DECORATION:
-                return Z.intl.formatToPlainString(Z.t.IQQYeX, {
+                return Z.intl.formatToPlainString(Z.t.IQQYef, {
                   itemName: t.skuName
                 });
               case o.Z.PROFILE_EFFECT:
-                return Z.intl.formatToPlainString(Z.t["x/MGW1"], {
+                return Z.intl.formatToPlainString(Z.t["x/MGWy"], {
                   itemName: t.skuName
                 });
               case o.Z.NAMEPLATE:
-                return Z.intl.formatToPlainString(Z.t.eVNt6O, {
+                return Z.intl.formatToPlainString(Z.t.eVNt6E, {
                   itemName: t.skuName
                 });
               default:
@@ -250,7 +250,7 @@ function H(e) {
     }), F ? H === y.lr.WISHLIST ? (0, r.jsx)("div", {
       className: M.itemIcon,
       children: (0, r.jsx)(C.u, {
-        text: Z.intl.formatToPlainString(Z.t.p3RmJC, {
+        text: Z.intl.formatToPlainString(Z.t.p3RmJF, {
           username: w.ZP.getName(n)
         }),
         position: "top",
@@ -265,7 +265,7 @@ function H(e) {
     }) : H === y.lr.POPULAR ? (0, r.jsx)("div", {
       className: M.itemIcon,
       children: (0, r.jsx)(C.u, {
-        text: Z.intl.string(Z.t.Ig6VDA),
+        text: Z.intl.string(Z.t.Ig6VDH),
         position: "top",
         children: (0, r.jsx)(u.EOn, {
           size: "custom",

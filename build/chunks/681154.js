@@ -1,4 +1,4 @@
-/** Chunk was on 76892 **/
+/** Chunk was on 9456 **/
 /** chunk id: 681154, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -22,7 +22,7 @@ function l() {
 }
 
 function s() {
-  return a(0, Chunk388032.intl.string(Chunk388032.t["w/BT3N"]))
+  return a(0, Chunk388032.intl.string(Chunk388032.t["w/BT3G"]))
 }
 
 function o(e, t) {

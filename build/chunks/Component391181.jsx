@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk48691 = require("./48691.jsx"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk892717 = require("./892717.js");
+  Chunk692316 = require("./692316.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -81,39 +81,39 @@ function O(e) {
     children: (0, r.jsxs)(s.v2r, {
       navId: "guild-product-context",
       onClose: g,
-      "aria-label": p.intl.string(p.t.Z146dH),
+      "aria-label": p.intl.string(p.t.Z146dM),
       onSelect: E,
       children: [(0, r.jsxs)(s.kSQ, {
         children: [t && (0, r.jsx)(s.sNh, {
           id: "guild-product-edit",
-          label: p.intl.string(p.t.EEfce3),
+          label: p.intl.string(p.t.EEfce4),
           action: c
         }), i && (0, r.jsx)(s.sNh, {
           id: "guild-product-copy-link",
-          label: p.intl.string(p.t.XR26ur),
+          label: p.intl.string(p.t.XR26uj),
           icon: s.xPt,
           action: f
         }), a && (0, r.jsx)(s.sNh, {
           id: "guild-product-test-download",
-          label: p.intl.string(p.t.aXoI6e),
+          label: p.intl.string(p.t.aXoI6U),
           icon: s._8t,
           action: _
         })]
       }), (0, r.jsxs)(s.kSQ, {
         children: [n && (0, r.jsx)(s.sNh, {
           id: "guild-product-unpublish",
-          label: p.intl.string(p.t.QrkMlJ),
+          label: p.intl.string(p.t.QrkMlN),
           action: u
         }), o && (0, r.jsx)(s.sNh, {
           id: "guild-product-delete",
-          label: p.intl.string(p.t.zWjqvL),
+          label: p.intl.string(p.t.zWjqvB),
           color: "danger",
           action: d
         })]
       }), (0, r.jsx)(s.kSQ, {
         children: l && (0, r.jsx)(s.sNh, {
           id: "guild-product-report",
-          label: p.intl.string(p.t["6yUzvL"]),
+          label: p.intl.string(p.t["6yUzvG"]),
           color: "danger",
           action: m
         })
@@ -171,7 +171,7 @@ function v(e) {
         } = n;
         return (0, r.jsx)(s.P3F, b(g({}, e), {
           innerRef: I,
-          "aria-label": p.intl.formatToPlainString(p.t.RtqjeH, {
+          "aria-label": p.intl.formatToPlainString(p.t.RtqjeB, {
             productName: t.name
           }),
           "aria-haspopup": "listbox",
@@ -227,7 +227,7 @@ function I(e) {
     }),
     onClick: T ? true : i,
     onContextMenu: N,
-    "aria-label": p.intl.formatToPlainString(p.t["X/yAKi"], {
+    "aria-label": p.intl.formatToPlainString(p.t["X/yAKs"], {
       productName: t.name
     }),
     children: [(0, r.jsx)("img", {

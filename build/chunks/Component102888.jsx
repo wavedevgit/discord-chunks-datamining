@@ -1,4 +1,4 @@
-/** Chunk was on 63962 **/
+/** Chunk was on 91053 **/
 /** chunk id: 102888, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -9,7 +9,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk128557 = require("./128557.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk772825 = require("./772825.js");
+  Chunk957717 = require("./957717.js");
 let d = e => {
   let {
     guild: t,
@@ -18,7 +18,7 @@ let d = e => {
     (0, l.ZDy)(async () => {
       let {
         default: e
-      } = await Promise.all([n.e("7654"), n.e("28297")]).then(n.bind(n, 560114));
+      } = await Promise.all([n.e("7654"), n.e("89772")]).then(n.bind(n, 560114));
       return n => {
         var i, l;
         return (0, r.jsx)(e, (i = function(e) {
@@ -66,23 +66,23 @@ let d = e => {
     }), (0, r.jsx)(l.Heading, {
       className: c.emptyTitle,
       variant: "heading-xl/semibold",
-      children: o.intl.format(o.t.vyvrpK, {
+      children: o.intl.format(o.t.vyvrpC, {
         guildName: t.name
       })
     }), (0, r.jsx)(l.Text, {
       variant: "text-md/normal",
       className: c.emptySubtitle,
-      children: o.intl.string(o.t.WypE0t)
+      children: o.intl.string(o.t.WypE0i)
     }), null != d ? (0, r.jsx)(a.i, {
       className: c.emptyCTA,
       iconUrl: n(362827),
-      header: o.intl.string(o.t.hyK15u),
+      header: o.intl.string(o.t.hyK15i),
       completed: false,
       onClick: d
     }) : null, (0, r.jsx)(a.i, {
       className: c.emptyCTA,
       iconUrl: n(538548),
-      header: o.intl.string(o.t.L4bwJy),
+      header: o.intl.string(o.t.L4bwJ9),
       completed: false,
       onClick: u
     })]

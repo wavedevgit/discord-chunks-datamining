@@ -21,8 +21,8 @@ function c(e) {
       "aria-describedby": f,
       filters: _,
       multiple: v = false,
-      disabled: g = false,
-      submitting: h = false
+      disabled: h = false,
+      submitting: g = false
     } = e,
     b = function(e, t) {
       if (null == e) return {};
@@ -60,8 +60,8 @@ function c(e) {
         }
         return e
       }({}, b), n = n = {
-        submitting: h,
-        disabled: g
+        submitting: g,
+        disabled: h
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
@@ -72,7 +72,7 @@ function c(e) {
       })(Object(n)).forEach(function(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
       }), t))),
-      "aria-disabled": g,
+      "aria-disabled": h,
       children: [(0, r.jsx)("span", {
         "aria-hidden": true,
         className: u,
@@ -84,7 +84,7 @@ function c(e) {
         multiple: v,
         "aria-label": p,
         "aria-describedby": f,
-        disabled: g
+        disabled: h
       })]
     })
   })

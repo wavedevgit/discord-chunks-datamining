@@ -39,7 +39,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk526761 = require("./526761.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk90290 = require("./90290.js");
+  Chunk227674 = require("./227674.js");
 
 function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -131,10 +131,10 @@ let H = Object.freeze({
       type: "EDITOR",
       isCoachmark: true,
       isPreview: true
-    }, () => M.intl.string(M.t.D29k19)).with({
+    }, () => M.intl.string(M.t.D29k16)).with({
       type: "EDITOR",
       isCoachmark: true
-    }, () => M.intl.string(M.t["8+vbqa"])).otherwise(() => M.intl.string(M.t.hjV0fX));
+    }, () => M.intl.string(M.t["8+vbqd"])).otherwise(() => M.intl.string(M.t.hjV0fZ));
     return (0, r.jsxs)("div", {
       className: k.title,
       children: [(0, r.jsx)(c.Heading, {
@@ -162,19 +162,19 @@ let H = Object.freeze({
     }).with({
       type: "EDITOR",
       isPreview: true
-    }, () => M.intl.format(M.t.G8yQXl, {
+    }, () => M.intl.format(M.t.G8yQXi, {
       onPremiumClick: () => m.z
     })).with({
       type: "EDITOR",
       isCoachmark: true
-    }, () => M.intl.string(M.t.jmZiNj)).with({
+    }, () => M.intl.string(M.t.jmZiNu)).with({
       type: "EDITOR",
       isPreview: false
-    }, () => M.intl.string(M.t.dqDFwc)).with({
+    }, () => M.intl.string(M.t.dqDFwe)).with({
       isPreview: true
-    }, () => M.intl.format(M.t.DWIjJy, {
+    }, () => M.intl.format(M.t["DWIjJ/"], {
       onPremiumClick: () => m.z
-    })).otherwise(() => M.intl.string(M.t["np0X/v"]));
+    })).otherwise(() => M.intl.string(M.t["np0X/u"]));
     return (0, r.jsx)(c.Heading, {
       variant: "text-sm/normal",
       className: k.subtext,
@@ -192,7 +192,7 @@ let H = Object.freeze({
     return "EDITOR" === l && c && u ? (0, r.jsx)(E.ZP, {
       type: w.cd.PREMIUM_CLIENT_THEME_TRY_IT_OUT,
       subscriptionTier: w.Si.TIER_2,
-      children: M.intl.format(M.t.G8yQXl, {
+      children: M.intl.format(M.t.G8yQXi, {
         onPremiumClick: () => m.z
       })
     }) : (0, r.jsxs)("div", {
@@ -378,7 +378,7 @@ let H = Object.freeze({
       }), t && a && (0, r.jsx)(c.Heading, {
         className: k.upsellText,
         variant: "heading-sm/semibold",
-        children: M.intl.string(M.t.POSLGR)
+        children: M.intl.string(M.t.POSLGY)
       }), (0, r.jsxs)(c.Kqy, {
         direction: "horizontal",
         wrap: true,

@@ -21,7 +21,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk981631 = require("./981631.js"),
   Chunk856651 = require("./856651.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk638999 = require("./638999.js");
+  Chunk20163 = require("./20163.js");
 
 function I(e) {
   var n;
@@ -37,7 +37,7 @@ function I(e) {
       children: (0, l.jsx)("div", {
         className: b.platformIconContainer,
         children: (0, l.jsx)("img", {
-          alt: g.intl.formatToPlainString(g.t.rtm15O, {
+          alt: g.intl.formatToPlainString(g.t.rtm15P, {
             name: null == I ? true : I.name
           }),
           className: b.platformIcon,
@@ -62,7 +62,7 @@ function I(e) {
             href: n,
             className: b.platformUrlAnchor,
             useDefaultUnderlineStyles: false,
-            "aria-label": (null == I ? true : I.name) != null ? "".concat(I.name, ", ").concat(t.name, ", ").concat(g.intl.string(g.t.q5jLJC)) : "".concat(t.name, ", ").concat(g.intl.string(g.t.q5jLJC)),
+            "aria-label": (null == I ? true : I.name) != null ? "".concat(I.name, ", ").concat(t.name, ", ").concat(g.intl.string(g.t.q5jLJB)) : "".concat(t.name, ", ").concat(g.intl.string(g.t.q5jLJB)),
             onClick: e => {
               (0, d.yw)(v.rMx.CONNECTED_ACCOUNT_VIEWED, {
                 platform_type: t.type,
@@ -90,7 +90,7 @@ function I(e) {
           })
         })(), null != x && (0, l.jsx)(a.Text, {
           variant: "text-xs/normal",
-          children: g.intl.format(g.t["9rfonp"], {
+          children: g.intl.format(g.t["9rfonh"], {
             date: x
           })
         })]

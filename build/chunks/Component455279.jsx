@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk600164 = require("./600164.jsx"),
   Chunk13140 = require("./13140.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk638675 = require("./638675.js");
+  Chunk151028 = require("./151028.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -31,8 +31,8 @@ var g = function(e) {
   return e.DEFAULT = "DEFAULT", e.RECORDING = "RECORDING", e
 }({});
 let E = {
-  DEFAULT: Chunk638675.__invalid_default,
-  RECORDING: Chunk638675.recording
+  DEFAULT: Chunk151028.__invalid_default,
+  RECORDING: Chunk151028.recording
 };
 class b extends Chunk647438.PureComponent {
   componentWillUnmount() {
@@ -61,23 +61,23 @@ class b extends Chunk647438.PureComponent {
         disabled: i
       } = this.props,
       a = (0, Chunk13140.BB)(require, true);
-    return e = "RECORDING" === exports ? Chunk388032.intl.string(Chunk388032.t.bmOri4) : 0 === require.length ? Chunk388032.intl.string(Chunk388032.t.co3wt7) : Chunk388032.intl.string(Chunk388032.t.idFMvL), (0, Chunk951288.jsx)(Chunk481060.tEY, {
+    return e = "RECORDING" === exports ? Chunk388032.intl.string(Chunk388032.t.bmOri0) : 0 === require.length ? Chunk388032.intl.string(Chunk388032.t.co3wt9) : Chunk388032.intl.string(Chunk388032.t.idFMvH), (0, Chunk951288.jsx)(Chunk481060.tEY, {
       focusTarget: this._inputRef,
       ringTarget: this._containerRef,
       children: (0, Chunk951288.jsx)("div", {
         onClick: this.handleClick,
         onMouseDown: this.handleMouseDown,
         ref: this._containerRef,
-        className: o()(Chunk638675.recorderContainer, E[exports], {
-          [Chunk638675.containerDisabled]: Chunk647438
+        className: o()(Chunk151028.recorderContainer, E[exports], {
+          [Chunk151028.containerDisabled]: Chunk647438
         }),
         children: (0, Chunk951288.jsxs)(Chunk600164.Z, {
-          className: Chunk638675.recorderLayout,
+          className: Chunk151028.recorderLayout,
           children: [(0, Chunk951288.jsx)(Chunk600164.Z.Child, {
-            className: Chunk638675.keybindInput,
+            className: Chunk151028.keybindInput,
             children: (0, Chunk951288.jsx)("input", {
               id: this._inputId,
-              placeholder: Chunk388032.intl.string(Chunk388032.t.nWRdnp),
+              placeholder: Chunk388032.intl.string(Chunk388032.t.nWRdnl),
               type: "text",
               ref: this.setInputRef,
               readOnly: true,
@@ -85,7 +85,7 @@ class b extends Chunk647438.PureComponent {
               disabled: "RECORDING" !== this.props.mode || Chunk647438
             })
           }), (0, Chunk951288.jsx)("div", {
-            className: Chunk638675.buttonContainer,
+            className: Chunk151028.buttonContainer,
             children: (0, Chunk951288.jsx)(Chunk481060.Button, {
               size: "sm",
               variant: "RECORDING" === this.props.mode ? "critical-secondary" : "secondary",

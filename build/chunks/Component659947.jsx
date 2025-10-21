@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk914010 = require("./914010.js"),
   Chunk727785 = require("./727785.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk47976 = require("./47976.js");
+  Chunk704563 = require("./704563.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -93,12 +93,12 @@ function C() {
 
 function N() {
   return (0, Chunk951288.jsx)("div", {
-    className: Chunk47976.voiceListSearchEmpty,
+    className: Chunk704563.voiceListSearchEmpty,
     children: (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/medium",
       color: "text-muted",
-      className: Chunk47976.noVoiceChannelSelected,
-      children: Chunk388032.intl.string(Chunk388032.t.zHjCd3)
+      className: Chunk704563.noVoiceChannelSelected,
+      children: Chunk388032.intl.string(Chunk388032.t.zHjCd1)
     })
   })
 }
@@ -140,7 +140,7 @@ function P(e) {
   return (0, r.jsx)("div", {
     className: g.channelIdSection,
     children: (0, r.jsx)(o.gNt, {
-      label: m.intl.string(m.t.q4JpMz),
+      label: m.intl.string(m.t.q4JpM8),
       children: (0, r.jsxs)(c.Z, {
         align: c.Z.Align.STRETCH,
         children: [(0, r.jsx)("div", {
@@ -291,7 +291,7 @@ function L(e) {
           value: b,
           onChange: y,
           onKeyDown: M,
-          placeholder: m.intl.string(m.t.tG0r7u),
+          placeholder: m.intl.string(m.t.tG0r7g),
           role: "combobox",
           "aria-controls": s,
           "aria-expanded": L > 0,
@@ -302,7 +302,7 @@ function L(e) {
       }), 0 === L && "" !== b && (0, r.jsx)(N, {}), (L > 0 || "" === b) && (0, r.jsx)(o.Tvr, {
         innerId: s,
         innerRole: "listbox",
-        "aria-label": m.intl.string(m.t["+N3fW1"]),
+        "aria-label": m.intl.string(m.t["+N3fW7"]),
         ref: c,
         sections: [L],
         renderRow: x,
@@ -341,7 +341,7 @@ function x(e) {
     variant: "text-md/medium",
     color: "text-muted",
     className: g.noVoiceChannelSelected,
-    children: m.intl.string(m.t["/fYIKy"])
+    children: m.intl.string(m.t["/fYIK7"])
   }) : (0, r.jsx)(u.$W, {
     channel: n,
     id: n.id,

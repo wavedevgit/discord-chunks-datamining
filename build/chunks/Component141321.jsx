@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk178088 = require("./178088.jsx"),
   Chunk490897 = require("./490897.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk230718 = require("./230718.js");
+  Chunk741047 = require("./741047.js");
 
 function O(e) {
   let {
@@ -50,7 +50,7 @@ function O(e) {
         children: [(0, r.jsx)(c.u, {
           targetElementRef: v,
           shouldShow: !t,
-          text: _.intl.string(_.t.GSmTKC),
+          text: _.intl.string(_.t.GSmTKJ),
           children: (0, r.jsx)(u.P3F, (o = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
@@ -73,7 +73,7 @@ function O(e) {
             innerRef: v,
             onClick: e,
             "data-jump-section": l,
-            "aria-label": _.intl.string(_.t.GSmTKC),
+            "aria-label": _.intl.string(_.t.GSmTKJ),
             className: a()(E.clickable, {
               [E.withHighlight]: C
             }),

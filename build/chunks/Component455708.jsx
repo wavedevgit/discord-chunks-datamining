@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk149203 = require("./149203.js"),
   Chunk295907 = require("./295907.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk709637 = require("./709637.js");
+  Chunk577021 = require("./577021.js");
 
 function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -93,23 +93,23 @@ class N extends Chunk647438.PureComponent {
         return (0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: "heading-md/semibold",
           color: exports,
-          className: Chunk709637.searchHeader,
-          children: Chunk388032.intl.string(Chunk388032.t.y3LQCA)
+          className: Chunk577021.searchHeader,
+          children: Chunk388032.intl.string(Chunk388032.t.y3LQCG)
         });
       case Chunk981631.wI2.TRENDING_GIFS:
         return (0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: "heading-md/semibold",
           color: exports,
-          className: Chunk709637.searchHeader,
-          children: Chunk388032.intl.string(Chunk388032.t.H6zNFx)
+          className: Chunk577021.searchHeader,
+          children: Chunk388032.intl.string(Chunk388032.t.H6zNFz)
         });
       default:
         return (0, Chunk951288.jsx)(Chunk481060.E1j, {
           query: module,
           onChange: this.handleChangeQuery,
           onClear: this.handleClearQuery,
-          placeholder: Chunk388032.intl.string(Chunk388032.t.TnYqkZ),
-          "aria-label": Chunk388032.intl.string(Chunk388032.t.TnYqkZ),
+          placeholder: Chunk388032.intl.string(Chunk388032.t.TnYqke),
+          "aria-label": Chunk388032.intl.string(Chunk388032.t.TnYqke),
           ref: this.props.searchBarRef,
           autoFocus: true
         })
@@ -121,8 +121,8 @@ class N extends Chunk647438.PureComponent {
     } = this.state, t = null;
     return null != module && (t = (0, Chunk951288.jsx)(Chunk481060.P3F, {
       onClick: this.handleClearQuery,
-      className: Chunk709637.backButton,
-      "aria-label": Chunk388032.intl.string(Chunk388032.t["13/7kZ"]),
+      className: Chunk577021.backButton,
+      "aria-label": Chunk388032.intl.string(Chunk388032.t["13/7kX"]),
       children: (0, Chunk951288.jsx)(Chunk481060.whL, {
         size: "md",
         color: "currentColor"
@@ -174,14 +174,14 @@ class N extends Chunk647438.PureComponent {
       id: Chunk149203.vO,
       role: "tabpanel",
       "aria-labelledby": Chunk149203._3,
-      className: o()(Chunk709637.container, module),
+      className: o()(Chunk577021.container, module),
       onClick: C,
       ref: exports,
       children: [(0, Chunk951288.jsx)("div", {
-        className: Chunk709637.header,
+        className: Chunk577021.header,
         children: this.renderHeader()
       }), (0, Chunk951288.jsx)("div", {
-        className: Chunk709637.content,
+        className: Chunk577021.content,
         children: this.renderContent()
       })]
     })

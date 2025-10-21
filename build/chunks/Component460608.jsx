@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk709054 = require("./709054.js"),
   Chunk659679 = require("./659679.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk683365 = require("./683365.js");
+  Chunk240379 = require("./240379.js");
 
 function x(e) {
   let {
@@ -48,7 +48,7 @@ function x(e) {
       className: v.header,
       variant: "eyebrow",
       color: "text-secondary",
-      children: g.intl.string(g.t.yM9Krq)
+      children: g.intl.string(g.t.yM9Krm)
     }), (0, r.jsx)(o.zJl, {
       className: v.container,
       fade: true,

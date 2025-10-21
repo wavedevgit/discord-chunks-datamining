@@ -10,7 +10,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk695676 = require("./695676.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk480921 = require("./480921.js");
+  Chunk943509 = require("./943509.js");
 
 function d(e) {
   let {
@@ -23,7 +23,7 @@ function d(e) {
   return (0, i.jsx)(o.P3F, {
     onClick: r,
     className: a()(u.clickable, t),
-    "aria-label": c.intl.string(c.t.ybUZqq),
+    "aria-label": c.intl.string(c.t.ybUZql),
     children: (0, i.jsx)(o.j9r, {
       size: "sm",
       color: o.TVs.colors.INTERACTIVE_ACTIVE

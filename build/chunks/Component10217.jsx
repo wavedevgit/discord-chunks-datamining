@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk572720 = require("./572720.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk519246 = require("./519246.js");
+  Chunk134351 = require("./134351.js");
 let S = function(e) {
   var t, n, r;
   let {
@@ -43,12 +43,12 @@ let S = function(e) {
     onShare: y
   } = e, v = (0, d.Wu)([_.default], () => o.users.map(e => _.default.getUser(e)).filter(O.lm)), {
     analyticsLocations: w
-  } = (0, j.ZP)(x.Z.CLIPS_GALLERY_ITEM), [N, S] = a.useState(false), D = a.useRef(null), M = (0, c.Z)(null != (r = null == (t = o.editMetadata) ? true : t.start) ? r : 0), R = a.useRef(new p.sW(500, () => {
+  } = (0, j.ZP)(x.Z.CLIPS_GALLERY_ITEM), [N, S] = a.useState(false), L = a.useRef(null), M = (0, c.Z)(null != (r = null == (t = o.editMetadata) ? true : t.start) ? r : 0), R = a.useRef(new p.sW(500, () => {
     var e;
-    let t = D.current;
-    null != t && t.paused && (t.currentTime = M.current, null == (e = D.current) || e.play())
+    let t = L.current;
+    null != t && t.paused && (t.currentTime = M.current, null == (e = L.current) || e.play())
   })), H = a.useCallback(() => {
-    let e = D.current;
+    let e = L.current;
     null != e && (e.pause(), e.src = "")
   }, []), A = a.useCallback(() => {
     var e;
@@ -56,7 +56,7 @@ let S = function(e) {
   }, []), z = a.useCallback(() => {
     var e, t, n;
     S(false);
-    let l = D.current;
+    let l = L.current;
     null == (e = R.current) || e.cancel(), null != l && (l.pause(), l.currentTime = null != (n = null == (t = o.editMetadata) ? true : t.start) ? n : 0)
   }, [null == (n = o.editMetadata) ? true : n.start]), B = a.useCallback(e => {
     var t, n;
@@ -69,9 +69,9 @@ let S = function(e) {
     value: w,
     children: (0, l.jsxs)(h.kL8, {
       "aria-disabled": u,
-      "aria-label": E.intl.string(E.t.bt75u7),
+      "aria-label": T.intl.string(T.t.bt75uw),
       onClick: u ? true : () => {
-        b(o), C.default.track(T.rMx.CLIP_GALLERY_CARD_CLICKED)
+        b(o), C.default.track(E.rMx.CLIP_GALLERY_CARD_CLICKED)
       },
       className: i()(I.clipItem, {
         [I.disabled]: u
@@ -83,7 +83,7 @@ let S = function(e) {
       children: [(0, l.jsx)(k, {
         clip: o,
         isNew: m,
-        videoRef: D
+        videoRef: L
       }), (0, l.jsxs)("div", {
         className: I.clipFooter,
         children: [(0, l.jsx)(Z, {
@@ -111,8 +111,8 @@ let S = function(e) {
                 i = null == (n = e.currentTarget.parentElement) || null == (t = n.parentElement) ? true : t.parentElement;
               (null == r ? true : r.parentElement) !== i && (null == r || null == (a = r.parentElement) || null == (l = a.parentElement) ? true : l.parentElement) !== i && A()
             },
-            "aria-label": E.intl.string(E.t.WTozwc)
-          }), N && (0, l.jsx)(L, {
+            "aria-label": T.intl.string(T.t.WTozwe)
+          }), N && (0, l.jsx)(D, {
             clip: o,
             actionsDisabled: u,
             exporting: s,
@@ -144,7 +144,7 @@ function k(e) {
   }, [t.length, t.editMetadata]), u = "".concat(c.seconds()).padStart(2, "0");
   return (0, l.jsxs)("div", {
     className: I.clipThumbContainer,
-    children: [(0, l.jsx)(D, {
+    children: [(0, l.jsx)(L, {
       clip: t,
       videoRef: r
     }), (0, l.jsxs)("div", {
@@ -154,7 +154,7 @@ function k(e) {
         children: (0, l.jsx)(h.Text, {
           variant: "text-md/medium",
           color: "always-white",
-          children: E.intl.string(E.t["2Fp7OD"])
+          children: T.intl.string(T.t["2Fp7OP"])
         })
       }), !i && n && (0, l.jsxs)(h.Text, {
         className: I.clipNewBadge,
@@ -164,7 +164,7 @@ function k(e) {
           size: "md",
           color: "currentColor",
           className: I.newIcon
-        }), E.intl.string(E.t.y2b7CA).toUpperCase()]
+        }), T.intl.string(T.t.y2b7CA).toUpperCase()]
       }), !i && (0, l.jsxs)("div", {
         className: I.clipDurationBadge,
         children: [o ? (0, l.jsx)(v.Z, {
@@ -215,7 +215,7 @@ function Z(e) {
       className: I.clipTitle,
       color: "text-muted",
       variant: "heading-lg/medium",
-      children: E.intl.string(E.t["x+/nmJ"])
+      children: T.intl.string(T.t["x+/nmN"])
     }) : (0, l.jsx)(h.Heading, {
       className: I.clipTitle,
       color: "text-default",
@@ -223,7 +223,7 @@ function Z(e) {
       children: n.name
     }), r && (0, l.jsx)(h.vdY, {
       size: "custom",
-      "aria-label": E.intl.string(E.t.bt75u7),
+      "aria-label": T.intl.string(T.t.bt75uw),
       color: h.TVs.colors.TEXT_MUTED,
       height: m.Z.sm,
       width: m.Z.sm,
@@ -232,7 +232,7 @@ function Z(e) {
   })
 }
 
-function D(e) {
+function L(e) {
   let {
     clip: t,
     videoRef: n
@@ -255,7 +255,7 @@ function D(e) {
   })
 }
 
-function L(e) {
+function D(e) {
   let {
     clip: t,
     exporting: n,
@@ -266,22 +266,22 @@ function L(e) {
     onShare: c,
     onBlur: d
   } = e, p = (0, u.Z)(), m = a.useCallback(e => {
-    e.stopPropagation(), e.shiftKey ? (i(), (0, w.sS)(t.filepath)) : o(t, i), C.default.track(T.rMx.CLIP_GALLERY_CARD_BUTTON_CLICKED, {
+    e.stopPropagation(), e.shiftKey ? (i(), (0, w.sS)(t.filepath)) : o(t, i), C.default.track(E.rMx.CLIP_GALLERY_CARD_BUTTON_CLICKED, {
       type: "delete"
     })
   }, [o, i, t]), f = a.useCallback(e => {
-    e.stopPropagation(), s(t), C.default.track(T.rMx.CLIP_GALLERY_CARD_BUTTON_CLICKED, {
+    e.stopPropagation(), s(t), C.default.track(E.rMx.CLIP_GALLERY_CARD_BUTTON_CLICKED, {
       type: "edit"
     })
   }, [s, t]), x = a.useCallback(e => {
-    e.stopPropagation(), c(t), C.default.track(T.rMx.CLIP_GALLERY_CARD_BUTTON_CLICKED, {
+    e.stopPropagation(), c(t), C.default.track(E.rMx.CLIP_GALLERY_CARD_BUTTON_CLICKED, {
       type: "share"
     })
   }, [c, t]);
   return (0, l.jsxs)("div", {
     className: I.buttonContainer,
     children: [null != o && (0, l.jsx)(g.u, {
-      text: E.intl.string(E.t.oyYWHB),
+      text: T.intl.string(T.t.oyYWHE),
       children: (0, l.jsx)(b.zx, {
         disabled: r,
         color: p ? b.zx.Colors.RED : b.zx.Colors.PRIMARY,
@@ -296,7 +296,7 @@ function L(e) {
         })
       })
     }), (0, l.jsx)(g.u, {
-      text: E.intl.string(E.t.bt75u7),
+      text: T.intl.string(T.t.bt75uw),
       children: (0, l.jsx)(b.zx, {
         disabled: r,
         color: b.zx.Colors.PRIMARY,
@@ -309,7 +309,7 @@ function L(e) {
         })
       })
     }), (0, l.jsx)(g.u, {
-      text: E.intl.string(E.t.RDE0SU),
+      text: T.intl.string(T.t.RDE0Sc),
       children: (0, l.jsx)(b.zx, {
         disabled: r && !n,
         submitting: n,

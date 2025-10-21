@@ -73,7 +73,7 @@ function _(e) {
     color: n = i.Z.unsafe_rawColors.BRAND_500.css
   } = e, s = d(e, ["className", "color"]);
   return (0, r.jsx)(a.IGR, u(l({}, s), {
-    text: o.intl.string(o.t.oW0eUV),
+    text: o.intl.string(o.t.oW0eUd),
     color: n,
     className: t
   }))

@@ -19,8 +19,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk441319 = require("./441319.js"),
   Chunk526761 = require("./526761.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk871976 = require("./871976.js"),
-  Chunk5874 = require("./5874.js");
+  Chunk339637 = require("./339637.js"),
+  Chunk226518 = require("./226518.js");
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -118,14 +118,14 @@ function A(e) {
               children: [(0, r.jsx)(s.Heading, {
                 className: E.titleText,
                 variant: "text-lg/medium",
-                children: g.intl.string(g.t.NThqT0)
+                children: g.intl.string(g.t.NThqTw)
               }), (0, r.jsx)(u.Z, {
                 className: E.premiumIcon
               })]
             }), (0, r.jsx)(s.Heading, {
               variant: "text-sm/normal",
               className: b.subtext,
-              children: g.intl.string(g.t.IgENJi)
+              children: g.intl.string(g.t.IgENJo)
             })]
           }), null == v ? true : v()]
         }), (0, r.jsx)(s.Kqy, {

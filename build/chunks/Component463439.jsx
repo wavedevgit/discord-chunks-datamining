@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk850165 = require("./850165.jsx"),
   Chunk134612 = require("./134612.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk581697 = require("./581697.js"),
+  Chunk394968 = require("./394968.js"),
   Chunk149355 = require("./149355.js");
 
 function O(t) {
@@ -28,49 +28,49 @@ function O(t) {
     hasReported: O,
     onReport: v,
     trackAnalyticsEvent: j
-  } = t, T = (0, a.e7)([p.Z], () => p.Z.isBlocked(e)), [E, y] = r.useState(T), S = (0, d.o)(), A = (0, d.Q)(), [N, C] = r.useState(false), I = (0, g.q)(n), M = r.useMemo(() => S ? 0 : A ? 2 : 1, [S, A]), R = async () => {
+  } = t, T = (0, a.e7)([p.Z], () => p.Z.isBlocked(e)), [E, S] = r.useState(T), y = (0, d.o)(), A = (0, d.Q)(), [N, C] = r.useState(false), I = (0, g.q)(n), R = r.useMemo(() => y ? 0 : A ? 2 : 1, [y, A]), M = async () => {
     null != I && (C(true), await (0, l.J7)(I, () => {
       u.Z.showReportSuccessToast(e, n), v()
     }, () => {
       u.Z.showFailedToast()
     }), C(false), j(x.NM.USER_TAKEOVER_MODAL_REPORT))
   }, Z = r.useMemo(() => {
-    switch (M) {
+    switch (R) {
       case 0:
-        return _.intl.string(_.t.sZf6c3);
+        return _.intl.string(_.t.sZf6cz);
       case 2:
-        return _.intl.string(_.t.HQ2nKi);
+        return _.intl.string(_.t.HQ2nKl);
       default:
-        return _.intl.string(_.t["65XQam"])
+        return _.intl.string(_.t["65XQar"])
     }
-  }, [M]);
+  }, [R]);
   return (0, i.jsx)(h.Z, {
     heroImageSrc: b,
-    heroImageAlt: _.intl.string(_.t.RVyYCA),
+    heroImageAlt: _.intl.string(_.t.RVyYCK),
     header: _.intl.string(_.t["mWO+ys"]),
-    description: _.intl.string(_.t.S0XtKC),
+    description: _.intl.string(_.t.S0XtKF),
     children: (0, i.jsxs)("div", {
       className: f.buttonContainer,
       children: [(0, i.jsx)(s.Button, {
-        text: E ? _.intl.string(_.t.XyHpKC) : _.intl.string(_.t.l4EmaW),
+        text: E ? _.intl.string(_.t.XyHpKH) : _.intl.string(_.t.l4Emac),
         variant: "primary",
         fullWidth: true,
         icon: s.k$p,
         onClick: () => {
-          E ? (y(false), o.Z.unblockUser(e, {
+          E ? (S(false), o.Z.unblockUser(e, {
             location: m.DL
-          }), j(x.NM.USER_TAKEOVER_MODAL_UNBLOCK), u.Z.showUnblockSuccessToast(e, n)) : (y(true), j(x.NM.USER_TAKEOVER_MODAL_BLOCK), o.Z.blockUser(e, {
+          }), j(x.NM.USER_TAKEOVER_MODAL_UNBLOCK), u.Z.showUnblockSuccessToast(e, n)) : (S(true), j(x.NM.USER_TAKEOVER_MODAL_BLOCK), o.Z.blockUser(e, {
             location: m.DL
           }).then(() => {
             u.Z.showBlockSuccessToast(e, n)
           }))
         }
       }), (0, i.jsx)(s.Button, {
-        text: O ? _.intl.string(_.t.QvwOJy) : _.intl.string(_.t["7fHyEx"]),
+        text: O ? _.intl.string(_.t.QvwOJ6) : _.intl.string(_.t["7fHyE6"]),
         variant: "secondary",
         fullWidth: true,
         icon: s.U65,
-        onClick: R,
+        onClick: M,
         loading: N,
         disabled: O
       }), (0, i.jsx)(s.Button, {
@@ -79,7 +79,7 @@ function O(t) {
         fullWidth: true,
         icon: s.kBi,
         onClick: () => {
-          0 === M ? ((0, c.Z)(m.EI), j(x.NM.USER_TAKEOVER_MODAL_CTL)) : 2 === M ? ((0, c.Z)(m.$l), j(x.NM.USER_TAKEOVER_MODAL_THROUGHLINE)) : ((0, c.Z)(m.n4), j(x.NM.USER_TAKEOVER_MODAL_NO_FILTR))
+          0 === R ? ((0, c.Z)(m.EI), j(x.NM.USER_TAKEOVER_MODAL_CTL)) : 2 === R ? ((0, c.Z)(m.$l), j(x.NM.USER_TAKEOVER_MODAL_THROUGHLINE)) : ((0, c.Z)(m.n4), j(x.NM.USER_TAKEOVER_MODAL_NO_FILTR))
         }
       })]
     })

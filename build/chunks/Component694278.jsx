@@ -49,8 +49,8 @@ function p(t) {
     }
     return t
   }({}, t), r = r = {
-    title: d.intl.string(d.t.DpRdYG),
-    description: d.intl.format(d.t.iuRk2t, {}),
+    title: d.intl.string(d.t.DpRdYK),
+    description: d.intl.format(d.t.iuRk2j, {}),
     errorText: _,
     onConfirm: j,
     onCancel: b,

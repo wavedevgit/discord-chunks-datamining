@@ -10,7 +10,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk592125 = require("./592125.js"),
   Chunk430824 = require("./430824.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk50079 = require("./50079.js");
+  Chunk238972 = require("./238972.js");
 let d = e => {
   let {
     entry: t
@@ -22,7 +22,7 @@ let d = e => {
     children: [(0, r.jsx)(i.Heading, {
       className: c.header,
       variant: "heading-sm/semibold",
-      children: o.intl.string(o.t.nTe4HB)
+      children: o.intl.string(o.t.nTe4HC)
     }), (0, r.jsxs)("div", {
       className: c.guildContainer,
       children: [(0, r.jsxs)("div", {

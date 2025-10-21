@@ -14,12 +14,12 @@ function s(e) {
   } = (0, l.Z)(e), t = null == n ? true : n.length;
   return [{
     section: o.oh.BOT_INFO,
-    text: r.intl.string(r.t.jGoPJS)
+    text: r.intl.string(r.t.jGoPJT)
   }, {
     section: o.oh.MUTUAL_GUILDS,
     text: (0, i.Z)(t)
   }, {
     section: o.oh.BOT_DATA_ACCESS,
-    text: r.intl.string(r.t.WstFb2)
+    text: r.intl.string(r.t.WstFb0)
   }]
 }

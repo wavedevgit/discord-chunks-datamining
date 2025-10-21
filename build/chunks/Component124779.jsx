@@ -20,17 +20,17 @@ function o(t) {
   function l() {
     r.default.disconnect(), o()
   }
-  return (0, a.jsx)(s.Modal, {
+  return (0, s.jsx)(a.Modal, {
     transitionState: n,
-    title: e.intl.string(e.t.pADdJi),
-    subtitle: e.intl.string(e.t.mT7jwM),
+    title: e.intl.string(e.t.pADdJu),
+    subtitle: e.intl.string(e.t.mT7jwN),
     onClose: o,
     actions: [{
-      text: e.intl.string(e.t.xTwqz8),
+      text: e.intl.string(e.t.xTwqz2),
       onClick: l,
       variant: "secondary"
     }, {
-      text: e.intl.string(e.t["sBP/1t"]),
+      text: e.intl.string(e.t["sBP/1s"]),
       onClick: function() {
         (0, c.NZ)(i), l()
       },

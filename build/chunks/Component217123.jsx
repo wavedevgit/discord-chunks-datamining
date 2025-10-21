@@ -11,17 +11,17 @@ var Chunk951288 = require("./951288.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx");
 let c = (0, Chunk509613.x1)(Chunk313789.n.CONTENT_AND_SOCIAL_PANE, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t["+o1pDQ"]),
+    useTitle: () => Chunk388032.intl.string(Chunk388032.t["+o1pDZ"]),
     buildLayout: () => [],
     render: () => (0, Chunk951288.jsx)(Chunk949493.Z, {})
   }),
   E = (0, Chunk509613.wf)(Chunk313789.n.CONTENT_AND_SOCIAL_PANEL, {
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t["+o1pDQ"]),
+    useTitle: () => Chunk388032.intl.string(Chunk388032.t["+o1pDZ"]),
     buildLayout: () => [c]
   }),
   d = (0, Chunk509613.m7)(Chunk313789.n.CONTENT_AND_SOCIAL_SIDEBAR_ITEM, {
     icon: Chunk657707.lZ8,
-    useTitle: () => Chunk388032.intl.string(Chunk388032.t["+o1pDQ"]),
+    useTitle: () => Chunk388032.intl.string(Chunk388032.t["+o1pDZ"]),
     legacySearchKey: Chunk726985.s6.CONTENT_SOCIAL,
     buildLayout: () => [E]
   })

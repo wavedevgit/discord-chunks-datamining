@@ -1,4 +1,4 @@
-/** Chunk was on 41794 **/
+/** Chunk was on 45141 **/
 /** chunk id: 513102, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => s
@@ -15,7 +15,7 @@ var Chunk481060 = require("./481060.js"),
 function s(e) {
   let {
     enabled: t
-  } = l.c.useExperiment({
+  } = a.c.useExperiment({
     location: "useApplicationDirectoryItem"
   }, {
     autoTrackExposure: true
@@ -23,11 +23,11 @@ function s(e) {
   return (0, i.jsx)(r.sNh, {
     id: "application-directory",
     label: (0, i.jsx)(i.Fragment, {
-      children: d.intl.string(d.t.AKcFUl)
+      children: d.intl.string(d.t.AKcFUj)
     }),
     icon: n,
     action: () => {
-      (0, a.transitionToGlobalDiscovery)({
+      (0, l.transitionToGlobalDiscovery)({
         tab: c.GlobalDiscoveryTab.APPS,
         newSessionState: {
           entrypoint: {

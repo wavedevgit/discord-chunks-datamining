@@ -33,7 +33,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk63063 = require("./63063.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk646668 = require("./646668.js");
+  Chunk28731 = require("./28731.js");
 
 function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -267,7 +267,7 @@ let P = e => {
         className: c,
         variant: "text-sm/normal",
         color: "header-secondary",
-        children: m.intl.format(m.t["LC+S+v"], {
+        children: m.intl.format(m.t["LC+S+m"], {
           membersOnline: n
         })
       })]
@@ -283,7 +283,7 @@ let P = e => {
           className: c,
           variant: "text-sm/normal",
           color: "header-secondary",
-          children: m.intl.format(m.t.zRl6XV, {
+          children: m.intl.format(m.t.zRl6XR, {
             count: i
           })
         })]
@@ -300,7 +300,7 @@ let P = e => {
         tag: "span",
         variant: "text-md/normal",
         color: "header-secondary",
-        children: m.intl.string(m.t["/8WWvL"])
+        children: m.intl.string(m.t["/8WWvE"])
       }), (0, r.jsx)(C, {
         className: g.joiningAsAvatar,
         src: t.getAvatarURL(true, 24),
@@ -323,12 +323,12 @@ let P = e => {
       className: t,
       children: [(0, r.jsx)(o.zx, {
         onClick: () => window.open((0, _.t3)()),
-        children: m.intl.format(m.t.JoS1i4, {
+        children: m.intl.format(m.t.JoS1i3, {
           platform: (0, _.DW)()
         })
       }), (0, r.jsx)(D, {
         className: g.downloadButtonSubtext,
-        children: m.intl.format(m.t.wO1VBg, {
+        children: m.intl.format(m.t.wO1VBk, {
           supportedBrowserURL: p.Z.getArticleURL(h.BhN.SUPPORTED_BROWSERS)
         })
       })]

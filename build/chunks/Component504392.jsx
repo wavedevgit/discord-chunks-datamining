@@ -32,9 +32,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk857666 = require("./857666.jsx"),
   Chunk535396 = require("./535396.js"),
   Chunk921944 = require("./921944.js"),
-  Chunk258640 = require("./258640.js"),
+  Chunk149829 = require("./149829.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk287569 = require("./287569.js");
+  Chunk823441 = require("./823441.js");
 let R = [Chunk535396.Us.LEVEL, Chunk535396.Us.PERK];
 
 function L(e) {
@@ -46,17 +46,17 @@ function L(e) {
     L && (0, f.ce)(t)
   }, [t, L]), i.useEffect(() => {
     (0, v.Sn)(t), (0, v.BN)(t)
-  }, [t]), (0, y.Wj)(t);
+  }, [t]), (0, T.Wj)(t);
   let U = (0, a.e7)([x.Z], () => x.Z.getStateForGuild(t)),
     M = (0, _.Z)(t),
     D = i.useRef(false),
     {
       shouldShow: V,
-      modalConfig: B
+      modalConfig: G
     } = (0, P.K)(t, "GuildPowerupsOverview"),
-    G = null == o && null != B,
+    B = null == o && null != G,
     W = [];
-  V && G && W.push(s.z.VANITY_URL_POWERUP_ROLLBACK_MODAL);
+  V && B && W.push(s.z.VANITY_URL_POWERUP_ROLLBACK_MODAL);
   let [z, F] = (0, u.US)(W), K = i.useMemo(() => R.reduce((e, t) => {
     let n = null == U ? true : U.powerupCatalog[t];
     if (null == n) return e;
@@ -65,7 +65,7 @@ function L(e) {
       type: t,
       listings: r
     }), e
-  }, []), [null == U ? true : U.powerupCatalog, L]), X = K.flatMap(e => e.listings).filter(e => "multiPerk" === e.type).map(e => e.group), H = (0, T.f)(X, t);
+  }, []), [null == U ? true : U.powerupCatalog, L]), X = K.flatMap(e => e.listings).filter(e => "multiPerk" === e.type).map(e => e.group), H = (0, y.f)(X, t);
   return (i.useEffect(() => {
     if (null != o && !D.current)
       for (let e of K)
@@ -90,7 +90,7 @@ function L(e) {
           }
         }
   }, [t, o, K, H]), i.useEffect(() => {
-    null != z && null != B && (0, c.ZDy)(async () => {
+    null != z && null != G && (0, c.ZDy)(async () => {
       let {
         default: e
       } = await n.e("61879").then(n.bind(n, 802426));
@@ -112,7 +112,7 @@ function L(e) {
         }
         return e
       }({
-        modalConfig: B,
+        modalConfig: G,
         markAsDismissed: F
       }, t))
     }, {
@@ -121,7 +121,7 @@ function L(e) {
       },
       modalKey: "dismissible_content_".concat(z)
     })
-  }, [t, z, F, B]), (null == U ? true : U.powerupCatalog) == null) ? null : (0, r.jsxs)("div", {
+  }, [t, z, F, G]), (null == U ? true : U.powerupCatalog) == null) ? null : (0, r.jsxs)("div", {
     className: k.container,
     children: [(0, r.jsxs)(d.Z, {
       className: k.toolbar,
@@ -131,7 +131,7 @@ function L(e) {
         icon: c.Ucv,
         "aria-label": ""
       }), (0, r.jsx)(d.Z.Title, {
-        children: A.intl.string(S.default.yv3DJC)
+        children: A.intl.string(S.default.yv3DJJ)
       })]
     }), (0, r.jsxs)("div", {
       className: k.contentContainer,
@@ -148,11 +148,11 @@ function L(e) {
             switch (e) {
               case N.Us.LEVEL:
                 return {
-                  title: A.intl.string(S.default["TXY/b2"]), description: A.intl.string(S.default.aJv4PD)
+                  title: A.intl.string(S.default["TXY/b0"]), description: A.intl.string(S.default.aJv4PB)
                 };
               case N.Us.PERK:
                 return {
-                  title: A.intl.string(S.default.TV3Vm5), description: A.intl.string(S.default.STx9ho)
+                  title: A.intl.string(S.default.TV3Vm8), description: A.intl.string(S.default.STx9hp)
                 }
             }
           }(n), s = n === N.Us.LEVEL ? c.zJl : "div";
@@ -209,9 +209,9 @@ function L(e) {
         className: k.sidebarContainer,
         children: [M ? (0, r.jsx)(I.Z, {
           guildId: t
-        }) : (0, r.jsx)(E.Z, {
+        }) : (0, r.jsx)(w.Z, {
           guildId: t
-        }), (0, r.jsx)(w.Z, {
+        }), (0, r.jsx)(E.Z, {
           guildId: t
         })]
       })]

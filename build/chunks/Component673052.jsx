@@ -12,7 +12,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk942951 = require("./942951.jsx"),
   Chunk834129 = require("./834129.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk453161 = require("./453161.js");
+  Chunk427070 = require("./427070.js");
 
 function d(e) {
   let {
@@ -26,7 +26,7 @@ function d(e) {
     messageId: t.id
   })(f), p = (0, a.q)(t.applicationId);
   if (null == p) return null;
-  let h = c.intl.format(c.t.mAtJTE, {
+  let h = c.intl.format(c.t.mAtJTC, {
     username: t.author.username,
     usernameHook: _,
     applicationName: p.name,

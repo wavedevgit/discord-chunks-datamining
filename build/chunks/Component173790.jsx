@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk675993 = require("./675993.jsx"),
   Chunk689079 = require("./689079.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk808888 = require("./808888.js"),
+  Chunk30787 = require("./30787.js"),
   Chunk413097 = require("./413097.js");
 
 function C(e) {
@@ -44,7 +44,7 @@ function C(e) {
     fade: true,
     ref: O,
     role: "region",
-    "aria-label": b.intl.formatToPlainString(b.t["4OP4Ul"], {
+    "aria-label": b.intl.formatToPlainString(b.t["4OP4Uk"], {
       applicationName: L
     }),
     children: [(0, i.jsx)(y.Z, {

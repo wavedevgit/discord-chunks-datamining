@@ -38,7 +38,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk661462 = require("./661462.jsx"),
   Chunk795990 = require("./795990.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk479283 = require("./479283.js");
+  Chunk830202 = require("./830202.js");
 
 function G(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -88,19 +88,19 @@ function M(e) {
 
 function F() {
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk479283.ukTeenDisclaimer,
+    className: Chunk830202.ukTeenDisclaimer,
     children: [(0, Chunk951288.jsx)(Chunk481060.d3s, {
       size: "xs"
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {
-      "aria-label": Chunk388032.intl.string(Chunk388032.t["7blcz8"]),
+      "aria-label": Chunk388032.intl.string(Chunk388032.t["7blcz6"]),
       variant: "text-xs/normal",
       color: "text-muted",
-      children: Chunk388032.intl.string(Chunk388032.t["7blcz8"])
+      children: Chunk388032.intl.string(Chunk388032.t["7blcz6"])
     })]
   })
 }
 
-function W(e) {
+function U(e) {
   let {
     user: t
   } = e, {
@@ -126,7 +126,7 @@ function W(e) {
   })
 }
 
-function U(e) {
+function W(e) {
   let {
     user: t,
     guildId: n,
@@ -149,8 +149,8 @@ function U(e) {
   N.current = S, i.useEffect(() => {
     null !== N.current && C()
   }, [C]);
-  let A = () => (0, r.jsxs)(r.Fragment, {
-    children: [s && c && (0, r.jsx)(F, {}), s && (0, r.jsx)(W, {
+  let D = () => (0, r.jsxs)(r.Fragment, {
+    children: [s && c && (0, r.jsx)(F, {}), s && (0, r.jsx)(U, {
       user: t
     }), l.map((e, i) => (0, r.jsx)(M, {
       widget: e,
@@ -161,11 +161,11 @@ function U(e) {
     }, e.type)), s && (0, r.jsx)(E.Z, {})]
   });
   if (f)
-    if (d) return (0, r.jsx)(D.Z, {});
+    if (d) return (0, r.jsx)(A.Z, {});
     else return (0, r.jsx)(Z.Z, {});
   return s ? (0, r.jsx)(T.K, {
-    children: A()
-  }) : A()
+    children: D()
+  }) : D()
 }
 
 function H(e) {
@@ -176,7 +176,7 @@ function H(e) {
   (0, x.r)({
     container: a.current
   });
-  let o = (0, A.h)(t.id);
+  let o = (0, D.h)(t.id);
   return (0, r.jsxs)(k.F, {
     "data-scroller": true,
     scrollerRef: a,
@@ -186,7 +186,7 @@ function H(e) {
     fade: true,
     children: [(0, r.jsx)(C.Z, {
       scrollerRef: a
-    }), (0, r.jsx)(U, G({
+    }), (0, r.jsx)(W, G({
       user: t
     }, n))]
   })

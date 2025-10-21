@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 946443, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   QP: () => N,
@@ -27,15 +27,15 @@ var Chunk951288 = require("./951288.js"),
   Chunk809780 = require("./809780.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk77902 = require("./77902.js");
+  Chunk915087 = require("./915087.js");
 
 function S(e) {
   var t, n, l, a, O, S, P;
   let {
     onJump: N,
     showTutorial: Z,
-    setSeenTutorial: T,
-    closePopout: w
+    setSeenTutorial: w,
+    closePopout: T
   } = e, A = i.useRef(null), [R, D] = (0, j.ZP)(A), {
     loadState: L,
     channels: M
@@ -82,17 +82,17 @@ function S(e) {
     m.default.track(x.rMx.OPEN_POPOUT, {
       type: "Inbox"
     })
-  }, []), i.useEffect(() => (p.Z.subscribe("CONNECTION_OPEN", w), () => {
-    p.Z.unsubscribe("CONNECTION_OPEN", w)
-  }), [w]), (0, f.ZP)(() => (b.S.subscribe(x.CkL.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead), () => {
+  }, []), i.useEffect(() => (p.Z.subscribe("CONNECTION_OPEN", T), () => {
+    p.Z.unsubscribe("CONNECTION_OPEN", T)
+  }), [T]), (0, f.ZP)(() => (b.S.subscribe(x.CkL.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead), () => {
     b.S.unsubscribe(x.CkL.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead)
   }));
   let U = (0, g.Z)("unreads", A);
   if (0 === M.length) {
     return (0, r.jsx)(y.Z, {
       Icon: d.xx7,
-      header: C.intl.string(C.t["6XMM+P"]),
-      tip: (null == (P = s().os) ? true : P.family) === "OS X" ? C.intl.string(C.t.w9uDOT) : C.intl.string(C.t.BiUJCw)
+      header: C.intl.string(C.t["6XMM+D"]),
+      tip: (null == (P = s().os) ? true : P.family) === "OS X" ? C.intl.string(C.t.w9uDOW) : C.intl.string(C.t.BiUJC6)
     })
   }
   return (0, r.jsx)(c.bG, {
@@ -143,7 +143,7 @@ function S(e) {
           onScroll: L === j.jd.Done ? true : k,
           className: o()(E.scroller, "group-spacing-".concat(G)),
           children: [Z ? (0, r.jsx)(I, {
-            setSeenTutorial: T
+            setSeenTutorial: w
           }) : null, (0, v.Z)(M, D, N), L === j.jd.Done ? null : (0, r.jsx)(d.$jN, {
             className: E.spinner
           })]
@@ -178,18 +178,18 @@ function I(e) {
       children: [(0, r.jsx)(d.Heading, {
         className: E.__invalid_tutorialHeader,
         variant: "heading-md/semibold",
-        children: C.intl.string(C.t.vZPktL)
+        children: C.intl.string(C.t.vZPktJ)
       }), (0, r.jsx)(d.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
-        children: C.intl.string(C.t.vWkIIC)
+        children: C.intl.string(C.t.vWkIII)
       }), (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: E.tutorialButton,
         children: (0, r.jsx)(d.Button, {
           variant: "primary",
           size: "sm",
-          text: C.intl.string(C.t["+IrDzM"]),
+          text: C.intl.string(C.t["+IrDzN"]),
           onClick: t
         })
       })]
@@ -201,8 +201,8 @@ function P() {
   return (0, Chunk951288.jsx)(Chunk240126.Z, {
     Icon: Chunk481060.xx7,
     disableStars: true,
-    header: Chunk388032.intl.string(Chunk388032.t["KG/ynZ"]),
-    tip: Chunk388032.intl.string(Chunk388032.t.cvcKzc)
+    header: Chunk388032.intl.string(Chunk388032.t["KG/ynf"]),
+    tip: Chunk388032.intl.string(Chunk388032.t.cvcKzX)
   })
 }
 let N = () => (0, Chunk951288.jsx)(Chunk143316.Z, {

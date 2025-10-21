@@ -24,9 +24,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk47760 = require("./47760.js"),
   Chunk629452 = require("./629452.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk684555 = require("./684555.js"),
+  Chunk687101 = require("./687101.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk132705 = require("./132705.js");
+  Chunk306518 = require("./306518.js");
 let A = e => e.map(e => "#".concat(e)),
   C = e => {
     let {
@@ -100,12 +100,12 @@ let A = e => e.map(e => "#".concat(e)),
         children: [(0, r.jsxs)(d.Heading, {
           variant: "heading-md/semibold",
           className: S.sharedTitle,
-          children: [T.intl.string(I.default.KSBBpK), " ", (0, r.jsx)(l.SrA, {})]
+          children: [T.intl.string(I.default.KSBBpC), " ", (0, r.jsx)(l.SrA, {})]
         }), (0, r.jsx)(d.Text, {
           variant: "text-sm/medium",
           color: "text-secondary",
           className: S.sharedBy,
-          children: N("".concat(T.intl.format(I.default.fQPSER, {
+          children: N("".concat(T.intl.format(I.default.fQPSEf, {
             username: "__USERNAME__"
           })), t.author, c.nick)
         })]

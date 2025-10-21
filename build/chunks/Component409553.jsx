@@ -17,25 +17,25 @@ function u(e) {
   let {
     onContinue: t,
     onClose: n
-  } = e, u = s.Z.getArticleURL(c.BhN.XBOX_CONNECTION), p = l.intl.format(l.t.CIc3IC, {
+  } = e, u = s.Z.getArticleURL(c.BhN.XBOX_CONNECTION), p = l.intl.format(l.t.CIc3IN, {
     helpdeskArticleUrl: u
   }), f = r.useMemo(() => [{
     label: l.intl.string(l.t.ihQXsb),
     icon: i.gj8
   }, {
-    label: l.intl.string(l.t.Xt1n4O),
+    label: l.intl.string(l.t.Xt1n4P),
     icon: i.m3e
   }, {
-    label: l.intl.string(l.t.xqVY3t),
+    label: l.intl.string(l.t.xqVY3p),
     icon: i.BFJ
   }, {
-    label: l.intl.string(l.t.iQsKVV),
+    label: l.intl.string(l.t.iQsKVW),
     icon: i.iWm
   }], []);
   return (0, o.jsx)(a.m, {
     platformType: c.ABu.XBOX,
-    headerConnect: l.intl.string(l.t.m8aaho),
-    headerReconnect: l.intl.string(l.t.z3rAho),
+    headerConnect: l.intl.string(l.t.m8aahn),
+    headerReconnect: l.intl.string(l.t.z3rAhq),
     body: p,
     onClose: n,
     onContinue: t,

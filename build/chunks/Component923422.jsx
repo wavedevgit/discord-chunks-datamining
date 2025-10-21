@@ -33,7 +33,7 @@ let D = (0, Chunk108843.Z)(function(e) {
     webBuildOverride: t,
     onSelect: n,
     onInteraction: s
-  } = e, [c, D] = i.useState(false), x = (0, v.Z)(), I = (0, P.Z)(), T = (0, f.Z)(), C = (0, y.Z)(), L = (0, A.Z)(), R = (0, j.Z)(), m = (0, S.Z)(), k = (0, N.Z)(), Z = (0, h.Z)(), {
+  } = e, [c, D] = i.useState(false), x = (0, v.Z)(), I = (0, P.Z)(), T = (0, f.Z)(), C = (0, y.Z)(), L = (0, A.Z)(), R = (0, j.Z)(), m = (0, S.Z)(), Z = (0, N.Z)(), k = (0, h.Z)(), {
     analyticsLocations: V
   } = (0, u.ZP)(), M = i.useMemo(() => (0, g.j)(), []);
   async function B() {
@@ -61,7 +61,7 @@ let D = (0, Chunk108843.Z)(function(e) {
     children: (0, a.jsxs)(l.v2r, {
       navId: "user-settings-cog",
       onClose: r.Zy,
-      "aria-label": _.intl.string(_.t.opYYHh),
+      "aria-label": _.intl.string(_.t.opYYHn),
       onSelect: n,
       onInteraction: s,
       children: [F.map(e => {
@@ -120,7 +120,7 @@ let D = (0, Chunk108843.Z)(function(e) {
               case w.oAB.EXPERIMENTS:
                 return m;
               case w.oAB.DEVELOPER_OPTIONS:
-                return k;
+                return Z;
               default:
                 return null
             }
@@ -135,7 +135,7 @@ let D = (0, Chunk108843.Z)(function(e) {
         })(Object(n)).forEach(function(e) {
           Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
         }), t), s)
-      }), e.user.isStaff() && Z, e.user.isStaff() && M.length > 0 ? (0, a.jsx)(l.sNh, {
+      }), e.user.isStaff() && k, e.user.isStaff() && M.length > 0 ? (0, a.jsx)(l.sNh, {
         label: "Build Overrides",
         id: "build_overrides",
         children: (0, a.jsx)(l.kSQ, {
@@ -153,7 +153,7 @@ let D = (0, Chunk108843.Z)(function(e) {
         children: (0, a.jsx)(l.sNh, {
           id: "clear-build-override",
           disabled: c,
-          label: _.intl.string(_.t["/Nz9ra"]),
+          label: _.intl.string(_.t["/Nz9rY"]),
           action: B,
           color: "danger"
         })

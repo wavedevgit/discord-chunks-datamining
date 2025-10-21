@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 737982, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -17,9 +17,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js"),
   Chunk921944 = require("./921944.js"),
-  Chunk45765 = require("./45765.js"),
+  Chunk470658 = require("./470658.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk878055 = require("./878055.js");
+  Chunk990963 = require("./990963.js");
 let y = Chunk647438.memo(function(e) {
   let {
     guildId: t,
@@ -64,7 +64,7 @@ let y = Chunk647438.memo(function(e) {
           className: e,
           color: "currentColor"
         }),
-        text: _.intl.string(b.default.vCzwMz),
+        text: _.intl.string(b.default.vCzwM7),
         selected: n,
         onClick: j,
         trailing: C ? (0, r.jsx)(s.IGR, {

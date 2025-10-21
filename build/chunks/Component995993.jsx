@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 995993, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   m: () => C
@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk176505 = require("./176505.js"),
   Chunk490897 = require("./490897.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk88448 = require("./88448.js");
+  Chunk885525 = require("./885525.js");
 
 function C(e) {
   let {
@@ -35,9 +35,9 @@ function C(e) {
     if (null == n) returnfalse;
     let r = m.default.extractTimestamp(n);
     return null != e && e > r
-  }), T = i.useCallback(() => {
+  }), w = i.useCallback(() => {
     (0, h.uL)(O.Z5c.CHANNEL(t.id, E ? y.oC.CUSTOMIZE_COMMUNITY : y.oC.CHANNEL_BROWSER))
-  }, [t.id, E]), w = i.useCallback(e => {
+  }, [t.id, E]), T = i.useCallback(e => {
     (0, c.jW)(e, async () => {
       let {
         default: e
@@ -87,10 +87,10 @@ function C(e) {
       color: "currentColor",
       className: e
     }),
-    text: E ? j.intl.string(j.t.h9mGOD) : j.intl.string(j.t.et6wam),
+    text: E ? j.intl.string(j.t.h9mGOP) : j.intl.string(j.t.et6wav),
     selected: C,
-    onClick: T,
-    onContextMenu: w,
+    onClick: w,
+    onContextMenu: T,
     trailing: A
   })
 }

@@ -15,7 +15,7 @@ var Chunk399606 = require("./399606.js"),
   Chunk430824 = require("./430824.js"),
   Chunk709054 = require("./709054.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk143144 = require("./143144.js");
+  Chunk131806 = require("./131806.js");
 
 function x(e) {
   let {
@@ -33,7 +33,7 @@ function x(e) {
     children: [(0, l.jsxs)("div", {
       className: f.memberSince,
       children: [(0, l.jsx)(o.u, {
-        text: p.intl.string(p.t.uvGmCw),
+        text: p.intl.string(p.t.uvGmCx),
         delay: h,
         children: (0, l.jsx)(r.gw7, {
           size: "custom",

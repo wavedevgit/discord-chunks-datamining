@@ -34,7 +34,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk1226 = require("./1226.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk838773 = require("./838773.js");
+  Chunk379746 = require("./379746.js");
 
 function D(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -90,7 +90,7 @@ function L(e) {
   } = e;
   return (0, i.jsx)(u.aML, {
     "data-migration-pending": true,
-    text: P.intl.string(P.t["4EGMWF"]),
+    text: P.intl.string(P.t["4EGMWL"]),
     children: e => {
       var {
         onClick: n
@@ -126,7 +126,7 @@ function M(e) {
   }, [n]);
   return (0, i.jsx)(u.aML, {
     "data-migration-pending": true,
-    text: p ? P.intl.string(P.t.YqAjX1) : P.intl.string(P.t["w4m94+"]),
+    text: p ? P.intl.string(P.t.YqAjXy) : P.intl.string(P.t.w4m945),
     children: e => {
       var {
         onClick: n
@@ -179,7 +179,7 @@ function z(e) {
   } = e, l = (0, E.bp)(), s = n.user, c = (0, a.e7)([C.default], () => {
     var e;
     return null != (e = C.default.getUser(s.id)) ? e : s
-  }, [s]), d = t ? P.intl.string(P.t.tLxK4u) : P.intl.string(P.t.E5RDnJ), {
+  }, [s]), d = t ? P.intl.string(P.t.tLxK4l) : P.intl.string(P.t.E5RDnK), {
     enabled: p
   } = (0, w.aq)("GoLiveTile");
   return (0, i.jsxs)(i.Fragment, {
@@ -208,7 +208,7 @@ function z(e) {
           children: [(0, i.jsx)(u.Text, {
             variant: "text-sm/semibold",
             color: "always-white",
-            children: P.intl.string(P.t["I6JG4+"])
+            children: P.intl.string(P.t.I6JG46)
           }), (0, i.jsx)(u.OgY, {
             size: "sm",
             color: "currentColor"
@@ -249,7 +249,7 @@ function z(e) {
             participant: n
           }), (0, i.jsx)(u.aML, {
             "data-migration-pending": true,
-            text: P.intl.string(P.t["3D5yo6"]),
+            text: P.intl.string(P.t["3D5yo/"]),
             children: e => {
               var {
                 onClick: t
@@ -286,7 +286,7 @@ let U = new Set([Chunk981631.jm8.ENDED, Chunk981631.jm8.FAILED, Chunk981631.jm8.
       }), h ? (0, i.jsx)("div", {
         className: A.streamTile,
         children: (0, i.jsx)(u.kL8, {
-          "aria-label": P.intl.formatToPlainString(P.t.gHPz3d, {
+          "aria-label": P.intl.formatToPlainString(P.t.gHPz3Q, {
             streamerName: t.user.username
           }),
           onClick: () => {},

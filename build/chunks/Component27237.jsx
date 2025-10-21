@@ -1,7 +1,7 @@
 /** Chunk was on 44799 **/
 /** chunk id: 27237, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZP: () => E
+  ZP: () => w
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,10 +18,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk279475 = require("./279475.js"),
   Chunk535396 = require("./535396.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk258640 = require("./258640.js"),
+  Chunk149829 = require("./149829.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk470039 = require("./470039.js"),
-  Chunk444012 = require("./444012.js");
+  Chunk237522 = require("./237522.js"),
+  Chunk259913 = require("./259913.js");
 
 function C(e) {
   let t, {
@@ -74,13 +74,13 @@ function I(e) {
       children: (0, r.jsx)(a.xvT, {
         color: o,
         variant: "text-sm/medium",
-        children: b.intl.string(_.default.nIj3LS)
+        children: b.intl.string(_.default.nIj3LZ)
       })
     })]
   })
 }
 
-function E(e) {
+function w(e) {
   let {
     guildId: t,
     index: n,
@@ -88,7 +88,7 @@ function E(e) {
     nextPowerup: l
   } = e, a = (0, u.ZP)(t, o), s = (0, u.ZP)(t, l), c = a.type !== v.A3.INACTIVE, x = s.type !== v.A3.INACTIVE, _ = a.type === v.A3.TIER_OVERRIDE_ACTIVATED, [b, h] = i.useState(true);
   (0, m.KT)(b);
-  let E = (0, g.d)(c);
+  let w = (0, g.d)(c);
   return (0, r.jsxs)(f.Z, {
     guildId: t,
     powerup: o,
@@ -99,7 +99,7 @@ function E(e) {
       nextActive: null != l ? x : true
     }), (0, r.jsx)(d.Q9, {
       title: o.title,
-      textColor: E,
+      textColor: w,
       footer: !_ && (0, r.jsx)(f.g, {
         className: j.footer,
         guildId: t,

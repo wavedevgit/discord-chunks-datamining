@@ -1,4 +1,4 @@
-/** Chunk was on 67261 **/
+/** Chunk was on 26196 **/
 /** chunk id: 229373, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   K: () => i
@@ -24,8 +24,8 @@ let i = () => {
     onClear: () => {
       exports("")
     },
-    placeholder: Chunk388032.intl.string(Chunk388032.t["5h0QOD"]),
-    "aria-label": Chunk388032.intl.string(Chunk388032.t["5h0QOD"]),
+    placeholder: Chunk388032.intl.string(Chunk388032.t["5h0QOP"]),
+    "aria-label": Chunk388032.intl.string(Chunk388032.t["5h0QOP"]),
     autoFocus: true
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 196902, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -16,9 +16,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk434404 = require("./434404.js"),
   Chunk999382 = require("./999382.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk755032 = require("./755032.js"),
+  Chunk234786 = require("./234786.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk565744 = require("./565744.js");
+  Chunk764009 = require("./764009.js");
 let x = function(e) {
   let {
     className: t,
@@ -38,7 +38,7 @@ let x = function(e) {
   return (0, r.jsxs)("div", {
     className: t,
     children: [(0, r.jsx)(o.gNt, {
-      label: h.intl.string(f.default["tN+8pK"]),
+      label: h.intl.string(f.default["tN+8pD"]),
       children: e => (0, r.jsxs)("div", {
         className: b.tagContainer,
         children: [(0, r.jsx)("div", {
@@ -66,7 +66,7 @@ let x = function(e) {
           children: (0, r.jsx)(o.Text, {
             variant: "text-xs/medium",
             color: "text-muted",
-            children: h.intl.string(f.default.CrHXHh)
+            children: h.intl.string(f.default.CrHXHt)
           })
         })]
       })
@@ -74,7 +74,7 @@ let x = function(e) {
       className: b.tagChangeInfoBox,
       children: (0, r.jsx)(o.Text, {
         variant: "text-xs/medium",
-        children: h.intl.format(f.default["4ZKDXl"], {
+        children: h.intl.format(f.default["4ZKDXq"], {
           articleUrl: u.Z.getArticleURL(p.BhN.SERVER_TAGS)
         })
       })

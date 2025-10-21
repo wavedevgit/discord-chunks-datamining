@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk886176 = require("./886176.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk675372 = require("./675372.js");
+  Chunk736636 = require("./736636.js");
 
 function A(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -90,14 +90,14 @@ function N(e) {
         variant: "heading-sm/semibold",
         color: "interactive-normal",
         className: S.serverShopLabelText,
-        children: T.intl.string(T.t.al5EXF)
+        children: T.intl.string(T.t.al5EXL)
       })]
     }), (0, r.jsx)(d.LZC, {
       size: 16
     }), (0, r.jsx)(d.Heading, {
       variant: "heading-md/semibold",
       color: "text-default",
-      children: T.intl.format(T.t.NZeik5, {
+      children: T.intl.format(T.t.NZeik9, {
         guildName: a.name
       })
     }), (0, r.jsx)(d.LZC, {
@@ -121,7 +121,7 @@ function N(e) {
           children: (0, r.jsx)(d.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
-            children: T.intl.format(T.t.tKZNlZ, {
+            children: T.intl.format(T.t.tKZNlb, {
               listingCount: P.length
             })
           })
@@ -129,7 +129,7 @@ function N(e) {
           children: (0, r.jsx)(d.Text, {
             variant: "text-sm/normal",
             color: "text-muted",
-            children: T.intl.format(T.t["kXr8+f"], {
+            children: T.intl.format(T.t["kXr8+b"], {
               createdYear: D.getFullYear()
             })
           })
@@ -139,7 +139,7 @@ function N(e) {
         children: (0, r.jsx)(u.zxk, {
           onClick: w,
           icon: v.P,
-          text: T.intl.string(T.t.jXx1CA)
+          text: T.intl.string(T.t.jXx1CC)
         })
       })]
     })]

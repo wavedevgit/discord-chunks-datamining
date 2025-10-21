@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk655868 = require("./655868.jsx"),
   Chunk754103 = require("./754103.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk156588 = require("./156588.js");
+  Chunk189068 = require("./189068.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -39,11 +39,11 @@ let _ = [{
       expirationDate: {
         name: "expirationDate",
         id: (0, Chunk313201.hQ)(),
-        title: () => Chunk388032.intl.string(Chunk388032.t["CeBa//"]),
+        title: () => Chunk388032.intl.string(Chunk388032.t["CeBa/4"]),
         autoComplete: "cc-exp",
-        placeholder: () => Chunk388032.intl.string(Chunk388032.t.xeEWQ0),
+        placeholder: () => Chunk388032.intl.string(Chunk388032.t.xeEWQ6),
         pattern: "\\d*",
-        getClassNameForLayout: () => Chunk156588.width50,
+        getClassNameForLayout: () => Chunk189068.width50,
         renderInput: e => (0, r.jsx)(s.Z, f({}, e))
       }
     }.expirationDate]
@@ -61,7 +61,7 @@ let _ = [{
       }, null === f)
     }, [h, t, f]);
     let g = e => {
-      u || "" === e || d(true), u && "" === e || !(0, o.eH)(e) ? p(c.intl.string(c.t["9/zZdn"])) : p(null), m(e)
+      u || "" === e || d(true), u && "" === e || !(0, o.eH)(e) ? p(c.intl.string(c.t["9/zZdl"])) : p(null), m(e)
     };
     return (0, r.jsx)(l.Z, {
       className: n,

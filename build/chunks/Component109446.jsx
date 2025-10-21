@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 109446, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk124368 = require("./124368.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk990912 = require("./990912.js");
+  Chunk531198 = require("./531198.js");
 
 function x(e) {
   let {
@@ -43,7 +43,7 @@ function x(e) {
       className: j.title,
       variant: "text-xs/bold",
       color: "header-secondary",
-      children: t.isForumLikeChannel() ? v.intl.string(v.t.ioVdOz) : v.intl.string(v.t.VNYs2t)
+      children: t.isForumLikeChannel() ? v.intl.string(v.t.ioVdO2) : v.intl.string(v.t.VNYs2v)
     }), l.slice(0, t.isForumLikeChannel() ? l.length : c).map(e => (0, r.jsx)(C, {
       thread: e
     }, e.id)).filter(e => i.isValidElement(e)).slice(0, c), (0, r.jsx)(s.P3F, {
@@ -78,7 +78,7 @@ function x(e) {
       children: (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
         color: "none",
-        children: v.intl.string(v.t["4qdZ9/"])
+        children: v.intl.string(v.t["4qdZ93"])
       })
     })]
   })

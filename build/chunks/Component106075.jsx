@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk128449 = require("./128449.js"),
   Chunk49898 = require("./49898.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk680326 = require("./680326.js");
+  Chunk301578 = require("./301578.js");
 
 function C() {
   let e = Chunk647438.useRef((0, Chunk726115.PM)()),
@@ -89,7 +89,7 @@ function C() {
       scrollPosition: null
     })
   }, [L]), (0, Chunk951288.jsxs)("div", {
-    className: Chunk680326.container,
+    className: Chunk301578.container,
     children: [(0, Chunk951288.jsxs)(Chunk611928.ZP, {
       variant: L ? Chunk611928._6.RELATIVE : Chunk611928._6.OVERLAY,
       children: [!L && (0, Chunk951288.jsx)(Chunk611928.z6, {
@@ -108,13 +108,13 @@ function C() {
       }), L && (0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/semibold",
         color: "header-primary",
-        className: Chunk680326.searchResultsHeader,
-        children: Chunk388032.intl.format(Chunk388032.t.zHdzqa, {
+        className: Chunk301578.searchResultsHeader,
+        children: Chunk388032.intl.format(Chunk388032.t.zHdzqW, {
           query: G
         })
       }), j && (0, Chunk951288.jsx)(Chunk680180.Z, {
         query: x,
-        placeholder: Chunk388032.intl.string(Chunk388032.t["5h0QOD"]),
+        placeholder: Chunk388032.intl.string(Chunk388032.t["5h0QOP"]),
         onTextChange: A,
         onClear: Z,
         onSubmit: w,

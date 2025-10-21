@@ -49,8 +49,8 @@ function g(e) {
   }, [b, _, O, v]), r.useEffect(() => {
     let e = setTimeout(() => {
       null == O && l.Z.show({
-        title: h.intl.string(h.t.PtobXV),
-        body: h.intl.string(h.t["IOy+Iy"])
+        title: h.intl.string(h.t.PtobXW),
+        body: h.intl.string(h.t["IOy+I5"])
       })
     }, 5e3);
     return () => {

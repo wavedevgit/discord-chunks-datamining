@@ -15,7 +15,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk319392 = require("./319392.jsx"),
   Chunk798930 = require("./798930.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk200025 = require("./200025.js");
+  Chunk771831 = require("./771831.js");
 
 function b(e) {
   let {
@@ -29,7 +29,7 @@ function b(e) {
     handleWaitingForConnection: C,
     handleAuthToken: _,
     expectedCallbackState: m,
-    callbackData: O
+    callbackData: v
   } = (0, i.k)(b, p.ABu.XBOX);
   return (0, o.jsx)(r.Y0X, {
     className: f.modal,
@@ -66,7 +66,7 @@ function b(e) {
       }), (0, o.jsx)(r.Mi4, {
         id: u.O.DISCORD_CONSENT,
         children: (0, o.jsx)(s.Z, {
-          authToken: O,
+          authToken: v,
           onContinue: x,
           onError: h,
           onClose: n

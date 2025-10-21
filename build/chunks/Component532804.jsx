@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 532804, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk220980 = require("./220980.jsx"),
   Chunk28997 = require("./28997.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk205534 = require("./205534.js");
+  Chunk134275 = require("./134275.js");
 
 function f(e) {
   var t, n, l;
@@ -34,13 +34,13 @@ function f(e) {
   let I = b.find(e => e.value === v);
   return (0, r.jsx)(u.Z, {
     title: C ? f : null != (t = null == I ? true : I.title) ? t : f,
-    description: C ? "(".concat(null != (n = null == I ? true : I.title) ? n : m.intl.string(m.t.PoWNfX), ")") : null != (l = null == I ? true : I.description) ? l : "",
+    description: C ? "(".concat(null != (n = null == I ? true : I.title) ? n : m.intl.string(m.t.PoWNfe), ")") : null != (l = null == I ? true : I.description) ? l : "",
     highlightColor: C ? d.q.NONE : null == I ? true : I.highlightColor,
     action: (0, r.jsx)(s.zx, {
       look: s.zx.Looks.LINK,
       size: s.zx.Sizes.MIN,
       color: s.zx.Colors.LINK,
-      children: m.intl.string(m.t.GEgsAw)
+      children: m.intl.string(m.t.GEgsA4)
     }),
     loading: y,
     className: x,

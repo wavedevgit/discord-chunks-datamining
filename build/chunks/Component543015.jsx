@@ -1,4 +1,4 @@
-/** Chunk was on 76892 **/
+/** Chunk was on 9456 **/
 /** chunk id: 543015, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -61,9 +61,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk217702 = require("./217702.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk814675 = require("./814675.js"),
-  Chunk262008 = require("./262008.js"),
-  Chunk602009 = require("./602009.js");
+  Chunk476720 = require("./476720.js"),
+  Chunk586301 = require("./586301.js"),
+  Chunk430864 = require("./430864.js");
 let ec = Chunk647438.memo(function(e) {
   let {
     threadId: t,
@@ -82,7 +82,7 @@ let ec = Chunk647438.memo(function(e) {
     let {
       threadId: t,
       overrideMedia: n
-    } = e, r = (0, h.e7)([X.Z], () => X.Z.getChannel(t));
+    } = e, r = (0, h.e7)([K.Z], () => K.Z.getChannel(t));
     o()(null != r, "the thread should not be null here, a store must have missed an update");
     let a = (0, h.e7)([q.ZP], () => q.ZP.getCurrentSidebarChannelId(r.parent_id) === r.id),
       {
@@ -133,12 +133,12 @@ let ec = Chunk647438.memo(function(e) {
     overrideMedia: s
   });
   (0, et.KK)(j);
-  let _ = (0, h.e7)([Q.default, K.Z], () => {
+  let _ = (0, h.e7)([Q.default, X.Z], () => {
       var e, t, n, r, i, a;
       let l = Q.default.getUser(null == j || null == (t = j.messageSnapshots[0]) || null == (e = t.moderatorReport) ? true : e.reported_user_id);
       if (null != l) return l;
       if ((null == j || null == (n = j.messageReference) ? true : n.channel_id) != null && (null == j || null == (r = j.messageReference) ? true : r.message_id) != null) {
-        let e = K.Z.getMessage(null == j || null == (i = j.messageReference) ? true : i.channel_id, null == j || null == (a = j.messageReference) ? true : a.message_id);
+        let e = X.Z.getMessage(null == j || null == (i = j.messageReference) ? true : i.channel_id, null == j || null == (a = j.messageReference) ? true : a.message_id);
         if (null != e) return e.author
       }
       return null
@@ -218,7 +218,7 @@ let ec = Chunk647438.memo(function(e) {
         ringTarget: C
       },
       onContextMenu: I,
-      "aria-label": ea.intl.formatToPlainString(ea.t.pgYN6e, {
+      "aria-label": ea.intl.formatToPlainString(ea.t.pgYN6c, {
         title: d.name,
         count: x
       }),
@@ -307,7 +307,7 @@ let eu = Chunk647438.memo(function(e) {
     color: s ? "header-secondary" : "text-muted",
     className: l()(es.messageContent, el.messageContent),
     "aria-label": "",
-    children: null == t ? c ? null : ea.intl.string(ea.t.mE3KJC) : g
+    children: null == t ? c ? null : ea.intl.string(ea.t.mE3KJN) : g
   });
   return (0, r.jsxs)(y.aQ.Provider, {
     value: (0, H.Z)(u, d),
@@ -421,7 +421,7 @@ function eh(e) {
       className: es.newMessageCount,
       variant: "text-sm/semibold",
       color: "text-brand",
-      children: ["(", ea.intl.format(ea.t.z3PEtr, {
+      children: ["(", ea.intl.format(ea.t.z3PEth, {
         count: s
       }), ")"]
     })]
@@ -432,7 +432,7 @@ function eg(e) {
   let {
     firstMessage: t,
     channel: n
-  } = e, i = (0, h.e7)([X.Z], () => X.Z.getChannel(n.parent_id)), a = (0, S.Bs)(i), {
+  } = e, i = (0, h.e7)([K.Z], () => K.Z.getChannel(n.parent_id)), a = (0, S.Bs)(i), {
     disableReactionCreates: l,
     isLurking: s,
     isPendingMember: o
@@ -462,7 +462,7 @@ function ef(e) {
     channel: n
   } = e, {
     sortOrder: i
-  } = (0, w.H)(n.parent_id), a = (0, S.xw)(n, i), l = null == (t = n.threadMetadata) ? true : t.createTimestamp, s = null == l ? null : ea.intl.formatToPlainString(ea.t["13euCQ"], {
+  } = (0, w.H)(n.parent_id), a = (0, S.xw)(n, i), l = null == (t = n.threadMetadata) ? true : t.createTimestamp, s = null == l ? null : ea.intl.formatToPlainString(ea.t["13euCd"], {
     timestamp: (0, ee.vc)(d()(l), "LLLL")
   });
   return (0, r.jsx)(g.u, {
@@ -517,7 +517,7 @@ function ep(e) {
   if (p > x ? n = 72 : t = 72, o) {
     var j;
     return (0, r.jsx)("div", {
-      "aria-label": null != (j = null != m ? m : b) ? j : ea.intl.string(ea.t.hqwnc3),
+      "aria-label": null != (j = null != m ? m : b) ? j : ea.intl.string(ea.t.hqwnc2),
       className: l()(es.thumbnailContainer, es.obscuredThumbnailPlaceholder),
       style: {
         maxWidth: t,

@@ -24,14 +24,14 @@ var Chunk442837 = require("./442837.js"),
   Chunk970257 = require("./970257.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk304726 = require("./304726.js");
+  Chunk833540 = require("./833540.js");
 
 function E(e) {
   let t = (0, i.e7)([O.Z], () => O.Z.getGuildId()),
     n = (0, p.Q_)(t);
   return (0, m.a4)(e) ? (0, r.jsx)(a.sNh, {
     id: "report",
-    label: n ? v.intl.string(v.t.n5EBAA) : v.intl.string(v.t.GwbdGR),
+    label: n ? v.intl.string(v.t.n5EBAJ) : v.intl.string(v.t.GwbdGe),
     action: () => (0, f.ak)(e, "web_message_context_menu"),
     icon: n ? a.gw7 : a.U65,
     color: "danger"
@@ -65,7 +65,7 @@ function _(e) {
     })
   }), n) ? (0, r.jsx)(a.sNh, {
     id: "report-to-mod",
-    label: t ? v.intl.string(j.default["8wsdnp"]) : v.intl.string(j.default["1D+vq6"]),
+    label: t ? v.intl.string(j.default["8wsdng"]) : v.intl.string(j.default["1D+vqy"]),
     action: () => {
       (0, u.Q3)(l.z.REPORT_TO_MOD_NEW_TAG, {
         dismissAction: h.L.USER_DISMISS

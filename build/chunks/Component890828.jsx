@@ -31,7 +31,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk136015 = require("./136015.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk665005 = require("./665005.js");
+  Chunk89524 = require("./89524.js");
 let P = e => [e.userId, ... function(e) {
     let t = I.default.getUser(e.userId);
     if (null == t) return [];
@@ -82,7 +82,7 @@ let P = e => [e.userId, ... function(e) {
       overflowCountClassName: _.overflowCount,
       overflowCountVariant: "text-xs/semibold",
       disableUserPopout: true,
-      "aria-label": T.intl.string(T.t.TxqPQU)
+      "aria-label": T.intl.string(T.t.TxqPQR)
     })
   }),
   k = Chunk647438.memo(function(e) {
@@ -112,7 +112,7 @@ let P = e => [e.userId, ... function(e) {
         className: _.guildIconWrapper,
         children: (0, i.jsx)(h.Ft, {
           guildId: l.id,
-          guildName: null != (t = l.name) ? t : T.intl.string(T.t.DmIUGB),
+          guildName: null != (t = l.name) ? t : T.intl.string(T.t.DmIUGK),
           guildIcon: l.icon,
           iconSize: 32
         })
@@ -208,7 +208,7 @@ let P = e => [e.userId, ... function(e) {
       }), (0, i.jsxs)(m, {
         className: _.channelList,
         children: [a && 0 === n.length && (0, i.jsx)(M, {
-          emptyText: T.intl.string(T.t.nxSS09)
+          emptyText: T.intl.string(T.t.nxSS03)
         }), n.map(e => (0, i.jsx)(L, {
           channelId: e,
           isHighlighted: e === d,
@@ -264,7 +264,7 @@ function z(e) {
   return l.length > 0 || s.length > 0 ? (0, i.jsxs)(u.zJl, {
     className: o()(_.channelList, _.channelListWrapper),
     children: [l.length > 0 && (0, i.jsx)(V, {
-      sectionHeader: T.intl.string(T.t.lnk2NT),
+      sectionHeader: T.intl.string(T.t.lnk2NQ),
       channelIds: l.slice(0, 3),
       hasQuery: false,
       query: t,
@@ -272,7 +272,7 @@ function z(e) {
       onSelect: e => r(e, "recent channel"),
       scrollable: false
     }), s.length > 0 && (0, i.jsx)(V, {
-      sectionHeader: T.intl.string(T.t["0lvb9P"]),
+      sectionHeader: T.intl.string(T.t["0lvb9O"]),
       channelIds: s.slice(0, 8),
       hasQuery: false,
       query: t,
@@ -281,7 +281,7 @@ function z(e) {
       scrollable: false
     })]
   }) : (0, i.jsx)(M, {
-    emptyText: T.intl.string(T.t["3ET7Aw"])
+    emptyText: T.intl.string(T.t["3ET7Ay"])
   })
 }
 
@@ -351,7 +351,7 @@ function W(e) {
       children: (0, i.jsx)(u.E1j, {
         autoFocus: true,
         query: d,
-        placeholder: T.intl.string(T.t.UyA6SU),
+        placeholder: T.intl.string(T.t.UyA6ST),
         onClear: () => {
           p("")
         },
@@ -360,11 +360,11 @@ function W(e) {
           p(e)
         },
         inputProps: {
-          "aria-label": T.intl.string(T.t.UyA6SU)
+          "aria-label": T.intl.string(T.t.UyA6ST)
         }
       })
     }), y ? (0, i.jsx)(V, {
-      sectionHeader: E ? T.intl.format(T.t.qdXiQ0, v) : T.intl.format(T.t["Aq+8wM"], v),
+      sectionHeader: E ? T.intl.format(T.t.qdXiQ1, v) : T.intl.format(T.t["Aq+8wB"], v),
       channelIds: h.map(e => {
         let {
           channel: t

@@ -1,4 +1,4 @@
-/** Chunk was on 8818 **/
+/** Chunk was on 9797 **/
 /** chunk id: 388275, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   _: () => f
@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk822869 = require("./822869.js"),
   Chunk912332 = require("./912332.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk132358 = require("./132358.js");
+  Chunk773921 = require("./773921.js");
 
 function f(e) {
   let {
@@ -27,27 +27,27 @@ function f(e) {
   } = e, _ = (0, o.Z)(), v = (0, u.nm)(f), x = (0, d.Ad)(), {
     textValue: y,
     richValue: P
-  } = p, [C, O] = a.useState(false), j = a.useCallback(() => O(true), []), S = a.useCallback(() => O(false), []), Z = a.useCallback((e, n, l) => {
+  } = p, [C, j] = l.useState(false), O = l.useCallback(() => j(true), []), S = l.useCallback(() => j(false), []), Z = l.useCallback((e, n, a) => {
     b({
       textValue: n,
-      richValue: l
+      richValue: a
     }), r.Z.saveDraft(t.channel_id, n, c.d.ForwardContextMessage), x(t.channel_id, t.id)
-  }, [x, t, b]), I = a.useCallback(() => {
+  }, [x, t, b]), I = l.useCallback(() => {
     r.Z.clearDraft(t.channel_id, c.d.ForwardContextMessage), w(y)
-  }, [t.channel_id, w, y]), R = a.useCallback(() => (!n || y.length > _ || I(), Promise.resolve({
+  }, [t.channel_id, w, y]), R = l.useCallback(() => (!n || y.length > _ || I(), Promise.resolve({
     shouldClear: false,
     shouldRefocus: true
   })), [I, y, _, n]);
-  return (0, l.jsx)(s.ZP, {
+  return (0, a.jsx)(s.ZP, {
     innerClassName: g.messageInput,
     onChange: Z,
-    placeholder: m.intl.string(m.t.ZroO3N),
+    placeholder: m.intl.string(m.t.ZroO3G),
     channel: v,
     textValue: y,
     richValue: P,
     type: i.Ie.FORWARD_MESSAGE_INPUT,
     onBlur: S,
-    onFocus: j,
+    onFocus: O,
     focused: C,
     onSubmit: R,
     parentModalKey: h.so,

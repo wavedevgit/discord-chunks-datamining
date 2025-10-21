@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk139256 = require("./139256.jsx"),
   Chunk489887 = require("./489887.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk314900 = require("./314900.js");
+  Chunk18294 = require("./18294.js");
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -127,7 +127,7 @@ function N(e) {
         variant: "text-sm/semibold",
         color: "text-default",
         scaleFontToUserSetting: true,
-        children: E.intl.string(E.t["a+lSZ2"])
+        children: E.intl.string(E.t["a+lSZ/"])
       });
       break;
     case "VICTOR":
@@ -153,7 +153,7 @@ function N(e) {
           variant: "text-xs/medium",
           color: a,
           scaleFontToUserSetting: true,
-          children: [E.intl.string(E.t.ufIDIy), " • ", s, "%"]
+          children: [E.intl.string(E.t.ufIDIx), " • ", s, "%"]
         })]
       });
       break;
@@ -166,7 +166,7 @@ function N(e) {
           variant: "text-sm/semibold",
           color: "text-default",
           scaleFontToUserSetting: true,
-          children: E.intl.string(E.t.kPN9sr)
+          children: E.intl.string(E.t.kPN9si)
         }), (0, r.jsxs)(l.Text, {
           variant: "text-xs/medium",
           color: a,
@@ -198,7 +198,7 @@ function R(e) {
       size: "sm",
       onClick: a,
       variant: "secondary",
-      text: E.intl.string(E.t.Jw7VbW)
+      text: E.intl.string(E.t.Jw7Vbf)
     })]
   })
 }
@@ -230,7 +230,7 @@ function P(e) {
       }),
       timestamp: n.timestamp,
       compact: o,
-      children: E.intl.format(E.t["VJcK4+"], {
+      children: E.intl.format(E.t.VJcK41, {
         username: O.nick,
         usernameHook: v(O),
         title: y,

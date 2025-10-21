@@ -9,7 +9,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk600164 = require("./600164.jsx"),
   Chunk424071 = require("./424071.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk200025 = require("./200025.js");
+  Chunk771831 = require("./771831.js");
 
 function c(e) {
   let {
@@ -19,39 +19,39 @@ function c(e) {
     body: d,
     content: x
   } = e;
-  return (0, r.jsxs)(l.Z, {
-    children: [(0, r.jsxs)(n.xBx, {
+  return (0, n.jsxs)(l.Z, {
+    children: [(0, n.jsxs)(r.xBx, {
       direction: s.Z.Direction.VERTICAL,
       className: o.header,
       separator: false,
-      children: [(0, r.jsx)("div", {
+      children: [(0, n.jsx)("div", {
         className: o.illustration,
         children: t
-      }), (0, r.jsx)(n.Heading, {
+      }), (0, n.jsx)(r.Heading, {
         className: o.title,
         variant: "heading-xl/extrabold",
         children: c
-      }), (0, r.jsx)(n.olH, {
+      }), (0, n.jsx)(r.olH, {
         className: o.closeButton,
         onClick: a
       })]
-    }), (0, r.jsxs)(n.hzk, {
+    }), (0, n.jsxs)(r.hzk, {
       className: o.body,
       paddingFix: false,
-      children: [(0, r.jsx)(n.Text, {
+      children: [(0, n.jsx)(r.Text, {
         tag: "p",
         variant: "text-md/normal",
         color: "header-secondary",
         children: d
       }), x]
-    }), (0, r.jsx)(n.mzw, {
+    }), (0, n.jsx)(r.mzw, {
       className: o.footer,
-      children: (0, r.jsx)("div", {
+      children: (0, n.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: o.footerButton,
-        children: (0, r.jsx)(n.Button, {
+        children: (0, n.jsx)(r.Button, {
           variant: "primary",
-          text: i.intl.string(i.t.i4jeWV),
+          text: i.intl.string(i.t.i4jeWR),
           onClick: a
         })
       })

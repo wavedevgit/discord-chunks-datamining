@@ -9,7 +9,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk565138 = require("./565138.jsx"),
   Chunk430824 = require("./430824.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk748364 = require("./748364.js");
+  Chunk633570 = require("./633570.js");
 let c = e => {
   let {
     stageInstance: t
@@ -19,7 +19,7 @@ let c = e => {
     children: [(0, r.jsx)(i.Heading, {
       className: o.header,
       variant: "heading-sm/semibold",
-      children: s.intl.string(s.t["InbJ8/"])
+      children: s.intl.string(s.t.InbJ8x)
     }), (0, r.jsxs)("div", {
       className: o.guildContainer,
       children: [(0, r.jsxs)("div", {

@@ -46,8 +46,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk995774 = require("./995774.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk629969 = require("./629969.js"),
-  Chunk10198 = require("./10198.js");
+  Chunk302854 = require("./302854.js"),
+  Chunk197571 = require("./197571.js");
 
 function K(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -161,7 +161,7 @@ let er = e => {
       setSelected: s,
       reactionType: l,
       colors: u
-    } = e, f = i.useMemo(() => et(t), [t]), p = i.useMemo(() => en(t, $, Y.emoji, o()(Y.emoji, Y.emojiText)), [t]), h = l === I.O.BURST, m = h ? H.t.VmiNjY : H.t.cNfs19, g = H.intl.formatToPlainString(m, {
+    } = e, f = i.useMemo(() => et(t), [t]), p = i.useMemo(() => en(t, $, Y.emoji, o()(Y.emoji, Y.emojiText)), [t]), h = l === I.O.BURST, m = h ? H.t.VmiNjd : H.t["cNfs1/"], g = H.intl.formatToPlainString(m, {
       name: f,
       n: n
     }), E = i.useMemo(() => {
@@ -321,13 +321,13 @@ class eo extends Chunk647438.PureComponent {
       reactionType: a
     } = this.props, o = [];
     return 0 === exports.length && this.state.loadingMore ? o.push(length) : (o.push(exports.length), module && o.push(1)), (0, Chunk951288.jsxs)("div", {
-      className: Chunk629969.reactorsContainer,
+      className: Chunk302854.reactorsContainer,
       children: [Chunk120356 === Chunk566006.O.BURST && (0, Chunk951288.jsx)(er, {
         emoji: require.emoji,
         channelId: Chunk647438.getChannelId(),
         messageId: Chunk647438.id
       }), (0, Chunk951288.jsx)(Chunk481060.aVo, {
-        className: Chunk629969.reactors,
+        className: Chunk302854.reactors,
         fade: true,
         ref: this.scrollerRef,
         sections: o,
@@ -444,7 +444,7 @@ function eu(e) {
     disableTabs: o = false,
     onClose: s,
     transitionState: l,
-    "aria-label": c = H.intl.string(H.t.gHp0Cw)
+    "aria-label": c = H.intl.string(H.t.gHp0C4)
   } = e, d = (0, u.e7)([R.Z], () => R.Z.getChannel(t.getChannelId())), p = null == d ? true : d.getGuildId(), h = (0, u.e7)([D.Z, O.Z], () => {
     var e, n;
     let r = null != (n = D.Z.getMessage(t.getChannelId(), t.id)) ? n : null == (e = O.Z.getMessage(G.default.castMessageIdAsChannelId(t.id))) ? true : e.firstMessage;

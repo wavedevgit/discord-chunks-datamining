@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk585483 = require("./585483.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk401944 = require("./401944.js");
+  Chunk796016 = require("./796016.js");
 let h = Chunk647438.memo(function(e) {
   let {
     width: t,
@@ -24,7 +24,7 @@ let h = Chunk647438.memo(function(e) {
     url: h,
     format: m,
     className: g
-  } = e, [E, b] = i.useState(false), y = (0, u.hb)((0, c.iy)(h)), O = y ? _.intl.string(_.t["5/NS7+"]) : _.intl.string(_.t.nIH0v7), v = y ? l.r7p : l.vxU;
+  } = e, [E, b] = i.useState(false), y = (0, u.hb)((0, c.iy)(h)), O = y ? _.intl.string(_.t["5/NS74"]) : _.intl.string(_.t.nIH0v8), v = y ? l.r7p : l.vxU;
   i.useEffect(() => {
     if (!E) return;
     let e = setTimeout(() => {

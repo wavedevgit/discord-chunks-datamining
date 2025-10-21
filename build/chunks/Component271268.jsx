@@ -1,17 +1,17 @@
 /** Chunk was on 80448 **/
 /** chunk id: 271268, original params: i,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => o
+  Z: () => c
 });
 var Chunk951288 = require("./951288.js"),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk5888 = require("./5888.js"),
   Chunk198358 = require("./198358.jsx"),
-  Chunk509950 = require("./509950.js"),
+  Chunk124798 = require("./124798.js"),
   Chunk388032 = require("./388032.jsx");
 
-function o() {
+function c() {
   let {
     voice: {
       totalVoiceMinutes: i,
@@ -22,7 +22,7 @@ function o() {
     children: [module >= 1e3 ? (0, Chunk951288.jsx)(Chunk793030.xvT, {
       variant: "display-sm",
       color: "text-primary",
-      children: Chunk388032.intl.format(Chunk509950.default.Xu0Qsb, {
+      children: Chunk388032.intl.format(Chunk124798.default.Xu0QsX, {
         numHours: Math.floor(module / 60),
         hoursHook: (i, t) => (0, e.jsx)(n.xvT, {
           variant: "display-lg",
@@ -33,7 +33,7 @@ function o() {
     }) : (0, Chunk951288.jsx)(Chunk793030.xvT, {
       variant: "display-sm",
       color: "text-primary",
-      children: Chunk388032.intl.format(Chunk509950.default.UZbUtr, {
+      children: Chunk388032.intl.format(Chunk124798.default.UZbUtl, {
         numMinutes: Math.floor(module),
         minutesHook: (i, t) => (0, e.jsx)(n.xvT, {
           variant: "display-lg",
@@ -44,7 +44,7 @@ function o() {
     }), (0, Chunk951288.jsx)(Chunk793030.xvT, {
       variant: "display-sm",
       color: "text-primary",
-      children: Chunk388032.intl.format(Chunk509950.default["36PZws"], {
+      children: Chunk388032.intl.format(Chunk124798.default["36PZwu"], {
         percent: exports
       })
     })]

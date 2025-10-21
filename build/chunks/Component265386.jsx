@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk788858 = require("./788858.jsx"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk663907 = require("./663907.js");
+  Chunk704543 = require("./704543.js");
 
 function b(e) {
   let {
@@ -48,7 +48,7 @@ function b(e) {
     };
     return (0, r.jsx)(p.Z, {
       variant: "text-xs/normal",
-      text: g.intl.formatToPlainString(g.t["hq/Qzc"], {
+      text: g.intl.formatToPlainString(g.t["hq/Qze"], {
         guildName: n.name
       }),
       onClick: e

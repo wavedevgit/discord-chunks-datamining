@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 289481, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk520116 = require("./520116.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk559940 = require("./559940.js");
+  Chunk550116 = require("./550116.js");
 
 function E(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -144,7 +144,7 @@ function P(e) {
   } = e, o = (0, s.Z)() && null != t.guildId;
   return (0, r.jsx)(d.M0o, {
     className: C.markReadButton,
-    tooltip: o ? x.intl.string(x.t["5lLMhI"]) : x.intl.string(x.t.e6RscX),
+    tooltip: o ? x.intl.string(x.t["5lLMhM"]) : x.intl.string(x.t.e6RscS),
     color: d.YX$.TERTIARY,
     icon: o ? (0, r.jsx)(d.W6s, {
       size: "xs",
@@ -171,7 +171,7 @@ function N(e) {
     getNumUnreadChannels: i
   } = e;
   return (0, r.jsx)(u.u, {
-    text: x.intl.string(x.t.iTcumZ),
+    text: x.intl.string(x.t.iTcuma),
     children: (0, r.jsx)(d.P3F, {
       className: o()(C.collapseButton, {
         [C.collapsed]: t.collapsed

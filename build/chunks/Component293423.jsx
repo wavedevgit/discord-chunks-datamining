@@ -17,7 +17,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk726324 = require("./726324.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk651254 = require("./651254.js");
+  Chunk851418 = require("./851418.js");
 let b = e => {
   var t, n;
   let {
@@ -36,7 +36,7 @@ let b = e => {
   } = a.B7(null != (t = null == _ ? true : _.id) ? t : null, b.id);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsxs)(f.Z, {
-      title: g.intl.format(g.t["rm+ojI"], {
+      title: g.intl.format(g.t["rm+ojA"], {
         serverName: b.name
       }),
       description: null != v ? v : null,

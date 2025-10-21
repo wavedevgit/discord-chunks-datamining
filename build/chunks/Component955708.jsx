@@ -13,7 +13,7 @@ var i, Chunk951288 = require("./951288.js"),
   Chunk745982 = require("./745982.jsx"),
   Chunk463439 = require("./463439.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk77300 = require("./77300.js");
+  Chunk35853 = require("./35853.js");
 
 function g(t) {
   for (var e = 1; e < arguments.length; e++) {
@@ -123,7 +123,7 @@ let _ = t => {
       children: [(0, r.jsx)(a.Avr, {
         variant: "secondary",
         size: "sm",
-        text: p.intl.string(p.t.cpT0Cg),
+        text: p.intl.string(p.t.cpT0Cq),
         onClick: function() {
           m.onClose(), (0, o.T)(_, [e]), v(c.NM.USER_TAKEOVER_MODAL_DISMISS)
         },
@@ -131,7 +131,7 @@ let _ = t => {
       }), 0 !== f && (0, r.jsx)(a.Avr, {
         variant: "secondary",
         size: "sm",
-        text: p.intl.string(p.t["13/7kZ"]),
+        text: p.intl.string(p.t["13/7kX"]),
         textVariant: "text-sm/normal",
         onClick: () => E(0)
       })]

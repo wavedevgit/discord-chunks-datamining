@@ -21,11 +21,11 @@ function u() {
       module.length > 0 && Chunk39604.T1(module[0])
     };
   return (0, Chunk951288.jsx)(Chunk481060.gNt, {
-    label: Chunk388032.intl.string(Chunk388032.t.s4773N),
+    label: Chunk388032.intl.string(Chunk388032.t.s4773E),
     description: Chunk388032.intl.string(Chunk388032.t.svjwGh),
     layout: "horizontal",
     children: (0, Chunk951288.jsx)(Chunk481060.P3F, {
-      "aria-label": Chunk388032.intl.formatToPlainString(Chunk388032.t.iMONTk, {
+      "aria-label": Chunk388032.intl.formatToPlainString(Chunk388032.t.iMONTj, {
         storageLocation: module
       }),
       onClick: exports,

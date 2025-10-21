@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 3896, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk259580 = require("./259580.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk298392 = require("./298392.js");
+  Chunk824804 = require("./824804.js");
 
 function m(e) {
   let {
@@ -64,11 +64,11 @@ function m(e) {
       children: [(0, r.jsx)(s.Heading, {
         variant: "text-md/semibold",
         color: "header-primary",
-        children: u.intl.string(u.t.DpRdYG)
+        children: u.intl.string(u.t.DpRdYK)
       }), (0, r.jsx)(s.Text, {
         variant: "text-sm/medium",
         color: "header-secondary",
-        children: u.intl.string(u.t.mA17eH)
+        children: u.intl.string(u.t.mA17eD)
       }), (0, r.jsx)("div", {
         className: g.__invalid_pillRow,
         children: (0, r.jsxs)(s.Text, {

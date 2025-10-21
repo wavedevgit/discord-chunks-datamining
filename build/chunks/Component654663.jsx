@@ -48,27 +48,27 @@ let G = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     context: o,
     onSelect: G,
     onHeightUpdate: L
-  } = e, V = u.id, q = (0, k.Z)({
+  } = e, V = u.id, q = (0, M.Z)({
     userId: n.id,
     guildId: t,
     channelId: V
   }), H = (0, C.Z)(n, t, o), B = (0, I.Z)(n.id, o), W = (0, w.Z)(n.id), K = (0, N.Z)({
     user: n,
     context: o
-  }), F = (0, i.e7)([p.Z, O.Z], () => {
+  }), Q = (0, i.e7)([p.Z, m.Z], () => {
     let e = p.Z.getVoiceChannelId();
-    return O.Z.getChannel(e)
+    return m.Z.getChannel(e)
   }), {
-    enabled: Q
-  } = m.Z.useExperiment({
-    guildId: null == F ? true : F.guild_id,
+    enabled: F
+  } = O.Z.useExperiment({
+    guildId: null == Q ? true : Q.guild_id,
     location: "ThreadUserContextMenu"
-  }), Y = Q ? null == F ? true : F.id : null, X = (0, U.Z)(n, Y), J = (0, v.Z)({
+  }), Y = F ? null == Q ? true : Q.id : null, X = (0, U.Z)(n, Y), z = (0, v.Z)({
     user: n,
     guildId: t,
     channelId: V,
     context: o
-  }), z = (0, j.Z)({
+  }), J = (0, j.Z)({
     user: n
   }), {
     analyticsLocations: $
@@ -101,9 +101,9 @@ let G = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     guildId: t,
     channelId: V,
     location: "ThreadUserContextMenu"
-  }), eo = (0, A.Z)(n, t, V), es = (0, M.Z)(n.id, t), ed = (0, S.Z)(n, t), ec = (0, Z.Z)({
+  }), eo = (0, A.Z)(n, t, V), es = (0, k.Z)(n.id, t), ed = (0, S.Z)(n, t), ec = (0, Z.Z)({
     id: n.id,
-    label: D.intl.string(D.t["/AXYnJ"])
+    label: D.intl.string(D.t["/AXYnE"])
   }), eg = (0, b.Z)(n), eZ = (0, x.Z)({
     commandType: s.yU.USER,
     commandTargetId: n.id,
@@ -114,13 +114,13 @@ let G = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
   return (0, l.jsxs)(r.v2r, {
     navId: "user-context",
     onClose: a.Zy,
-    "aria-label": D.intl.string(D.t.liqwPD),
+    "aria-label": D.intl.string(D.t.liqwPJ),
     onSelect: G,
     children: [!ef && (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsx)(r.kSQ, {
         children: eg
       }), (0, l.jsxs)(r.kSQ, {
-        children: [q, H, B, K, X, J, z, W]
+        children: [q, H, B, K, X, z, J, W]
       }), (0, l.jsx)(r.kSQ, {
         children: et
       }), (0, l.jsxs)(r.kSQ, {

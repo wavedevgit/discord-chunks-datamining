@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk700582 = require("./700582.jsx"),
   Chunk51144 = require("./51144.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk750994 = require("./750994.js");
+  Chunk695681 = require("./695681.js");
 let d = e => {
   let {
     className: t,
@@ -20,7 +20,7 @@ let d = e => {
   return null == n ? null : (0, r.jsx)("div", {
     className: a()(u.content, t),
     children: (0, r.jsx)(o.gNt, {
-      label: c.intl.string(c.t.xFn72t),
+      label: c.intl.string(c.t.xFn72s),
       children: (0, r.jsxs)("div", {
         className: u.giftRecipientInfo,
         children: [(0, r.jsx)(s.Z, {

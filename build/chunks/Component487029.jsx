@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk964398 = require("./964398.jsx"),
   Chunk294206 = require("./294206.jsx"),
   Chunk710111 = require("./710111.js"),
-  Chunk209062 = require("./209062.js");
+  Chunk649093 = require("./649093.js");
 
 function T(e) {
   let {
@@ -47,7 +47,7 @@ function T(e) {
         };
       return i.forEach(e => r(e, true)), i.forEach(e => r(e, false)), l
     }, [t, n, e])
-  }((0, N.h)(n, true)), P = (0, E.j)(), Z = i.useRef(null), [A, j] = i.useState(true), R = (0, a.e7)([d.Z], () => d.Z.getMediaSessionId()), {
+  }((0, N.h)(n, true)), P = (0, E.j)(), A = i.useRef(null), [Z, j] = i.useState(true), R = (0, a.e7)([d.Z], () => d.Z.getMediaSessionId()), {
     analyticsLocations: D
   } = (0, s.ZP)(o.Z.SOUNDBOARD_WHEEL), w = i.useCallback(e => {
     (0, p.GN)(e, n.id, D), v()
@@ -57,7 +57,7 @@ function T(e) {
   }, []), i.useEffect(() => {
     0 === x.length && 0 === P.length && v()
   }, [x.length, P, v]), i.useEffect(() => () => {
-    let e = Z.current;
+    let e = A.current;
     I || null == e || w(e)
   }, [I, w]), (0, u.Z)({
     type: r.ImpressionTypes.POPOUT,
@@ -71,7 +71,7 @@ function T(e) {
     disableTrack: !S
   });
   let k = i.useCallback(e => {
-      Z.current = e, j(null == e ? true : e.soundId)
+      A.current = e, j(null == e ? true : e.soundId)
     }, []),
     U = i.useCallback(e => {
       if (null == e) return void k(null);
@@ -87,9 +87,9 @@ function T(e) {
       interactive: S,
       className: _.soundButton,
       sound: e,
-      focused: A === e.soundId,
+      focused: Z === e.soundId,
       channel: n
-    }, e.soundId)), [A, n, S, x]);
+    }, e.soundId)), [Z, n, S, x]);
   return 0 === x.length ? null : (0, l.jsx)(s.Gt, {
     value: D,
     children: (0, l.jsx)(O.Z, {
@@ -98,7 +98,7 @@ function T(e) {
       itemWidth: 96,
       itemHeight: 52,
       showDeadZoneIndicator: !I,
-      activeItem: A,
+      activeItem: Z,
       onItemSelect: U,
       onItemAction: M,
       onClose: v,

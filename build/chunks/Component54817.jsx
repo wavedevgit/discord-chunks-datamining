@@ -17,7 +17,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk981631 = require("./981631.js"),
   Chunk674563 = require("./674563.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk78642 = require("./78642.js");
+  Chunk682392 = require("./682392.js");
 
 function m(e) {
   let {
@@ -66,7 +66,7 @@ function m(e) {
               color: "text-brand",
               tag: "span",
               className: h.username,
-              children: p.intl.string(p.t.hG1StL)
+              children: p.intl.string(p.t.hG1StD)
             }), (0, r.jsx)(s.Z, {
               type: _.Hb.SYSTEM_DM,
               className: h.systemTag
@@ -78,11 +78,11 @@ function m(e) {
           className: a()(h.__invalid_messageContent, {
             [h.compact]: n
           }),
-          children: t.type === f.uaV.GUILD_INCIDENT_ALERT_MODE_ENABLED ? p.intl.format(p.t["+m8eDw"], {
+          children: t.type === f.uaV.GUILD_INCIDENT_ALERT_MODE_ENABLED ? p.intl.format(p.t["+m8eD7"], {
             username: m.nick,
             usernameHook: g,
             time: O
-          }) : p.intl.format(p.t.BHeke3, {
+          }) : p.intl.format(p.t["BHeke+"], {
             username: m.nick,
             usernameHook: g
           })

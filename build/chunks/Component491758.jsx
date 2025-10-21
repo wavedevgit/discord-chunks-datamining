@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk37113 = require("./37113.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk298291 = require("./298291.js");
+  Chunk556865 = require("./556865.js");
 
 function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -84,57 +84,57 @@ function R() {
   let L = (0, Chunk442837.e7)([Chunk706454.default], () => Chunk706454.default.locale),
     x = Chunk647438.useMemo(() => [{
       value: Chunk356659.OT.SECONDS_30,
-      label: Chunk388032.intl.formatToPlainString(Chunk388032.t["bTFv//"], {
+      label: Chunk388032.intl.formatToPlainString(Chunk388032.t["bTFv/3"], {
         count: 30
       })
     }, {
       value: Chunk356659.OT.MINUTES_1,
-      label: Chunk388032.intl.formatToPlainString(Chunk388032.t.ICo9Nj, {
+      label: Chunk388032.intl.formatToPlainString(Chunk388032.t.ICo9Nk, {
         count: 1
       })
     }, {
       value: Chunk356659.OT.MINUTES_2,
-      label: Chunk388032.intl.formatToPlainString(Chunk388032.t.ICo9Nj, {
+      label: Chunk388032.intl.formatToPlainString(Chunk388032.t.ICo9Nk, {
         count: 2
       })
     }], [L]),
     M = Chunk647438.useMemo(() => [{
       value: Chunk37113.ApplicationStreamResolutions.RESOLUTION_480,
-      label: Chunk388032.intl.formatToPlainString(Chunk388032.t.TEOC0N, {
+      label: Chunk388032.intl.formatToPlainString(Chunk388032.t.TEOC0I, {
         resolution: Chunk37113.ApplicationStreamResolutions.RESOLUTION_480
       })
     }, {
       value: Chunk37113.ApplicationStreamResolutions.RESOLUTION_720,
-      label: Chunk388032.intl.formatToPlainString(Chunk388032.t.TEOC0N, {
+      label: Chunk388032.intl.formatToPlainString(Chunk388032.t.TEOC0I, {
         resolution: Chunk37113.ApplicationStreamResolutions.RESOLUTION_720
       })
     }, {
       value: Chunk37113.ApplicationStreamResolutions.RESOLUTION_1080,
-      label: Chunk388032.intl.formatToPlainString(Chunk388032.t.TEOC0N, {
+      label: Chunk388032.intl.formatToPlainString(Chunk388032.t.TEOC0I, {
         resolution: Chunk37113.ApplicationStreamResolutions.RESOLUTION_1080
       })
     }, {
       value: Chunk37113.ApplicationStreamResolutions.RESOLUTION_1440,
-      label: Chunk388032.intl.formatToPlainString(Chunk388032.t.TEOC0N, {
+      label: Chunk388032.intl.formatToPlainString(Chunk388032.t.TEOC0I, {
         resolution: Chunk37113.ApplicationStreamResolutions.RESOLUTION_1440
       })
     }, {
       value: Chunk37113.ApplicationStreamResolutions.RESOLUTION_SOURCE,
-      label: Chunk388032.intl.string(Chunk388032.t.XjXqzs)
+      label: Chunk388032.intl.string(Chunk388032.t.XjXqzh)
     }], [L]),
     k = Chunk647438.useMemo(() => [{
       value: Chunk37113.ApplicationStreamFPS.FPS_15,
-      label: Chunk388032.intl.formatToPlainString(Chunk388032.t.Qb44XF, {
+      label: Chunk388032.intl.formatToPlainString(Chunk388032.t.Qb44XH, {
         fps: Chunk37113.ApplicationStreamFPS.FPS_15
       })
     }, {
       value: Chunk37113.ApplicationStreamFPS.FPS_30,
-      label: Chunk388032.intl.formatToPlainString(Chunk388032.t.Qb44XF, {
+      label: Chunk388032.intl.formatToPlainString(Chunk388032.t.Qb44XH, {
         fps: Chunk37113.ApplicationStreamFPS.FPS_30
       })
     }, {
       value: Chunk37113.ApplicationStreamFPS.FPS_60,
-      label: Chunk388032.intl.formatToPlainString(Chunk388032.t.Qb44XF, {
+      label: Chunk388032.intl.formatToPlainString(Chunk388032.t.Qb44XH, {
         fps: Chunk37113.ApplicationStreamFPS.FPS_60
       })
     }], [L]),
@@ -147,21 +147,21 @@ function R() {
     gap: 24,
     children: [C === Chunk894694.x.BELOW_MINIMUM ? (0, Chunk951288.jsx)(Chunk494620.Z, {
       look: Chunk494620.z.WARNING,
-      children: Chunk388032.intl.string(Chunk388032.t.SIxrIC)
+      children: Chunk388032.intl.string(Chunk388032.t.SIxrIF)
     }) : null, (0, Chunk951288.jsx)(Chunk481060.rsf, {
       label: Chunk388032.intl.string(Chunk388032.t.h8rgrK),
-      description: Chunk388032.intl.string(Chunk388032.t["4Qw3ND"]),
+      description: Chunk388032.intl.string(Chunk388032.t["4Qw3NO"]),
       checked: module,
       onChange: e => b.em({
         clipsEnabled: e,
         trackAnalytics: true
       })
     }), (0, Chunk951288.jsx)(Chunk494620.Z, {
-      children: Chunk388032.intl.string(Chunk388032.t["Z+Mfqa"])
+      children: Chunk388032.intl.string(Chunk388032.t["Z+MfqT"])
     }), P && w && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk481060.rsf, {
-        label: Chunk388032.intl.string(Chunk388032.t.yXvykp),
-        description: Chunk388032.intl.string(Chunk388032.t.YP3ujo),
+        label: Chunk388032.intl.string(Chunk388032.t.yXvykv),
+        description: Chunk388032.intl.string(Chunk388032.t.YP3ujk),
         checked: require,
         onChange: e => b._Q({
           enabled: e,
@@ -170,8 +170,8 @@ function R() {
       })]
     }), D && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk481060.rsf, {
-        label: Chunk388032.intl.string(Chunk388032.t["3zwNf3"]),
-        description: Chunk388032.intl.string(Chunk388032.t.m4Cjj4),
+        label: Chunk388032.intl.string(Chunk388032.t["3zwNf6"]),
+        description: Chunk388032.intl.string(Chunk388032.t.m4Cjj9),
         checked: exports,
         onChange: e => b.N0(e)
       })]
@@ -180,7 +180,7 @@ function R() {
       children: [(0, Chunk951288.jsx)(Chunk481060.q4e, {
         onChange: Chunk39604.eU,
         label: Chunk388032.intl.string(Chunk388032.t.OgfUio),
-        description: Chunk388032.intl.string(Chunk388032.t.H7j4tb),
+        description: Chunk388032.intl.string(Chunk388032.t.H7j4tY),
         value: Chunk512722,
         options: x
       }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
@@ -188,8 +188,8 @@ function R() {
           resolution: e,
           frameRate: S.frameRate
         }),
-        label: Chunk388032.intl.string(Chunk388032.t.aFudZG),
-        description: Chunk388032.intl.string(Chunk388032.t.nIrkW1),
+        label: Chunk388032.intl.string(Chunk388032.t.aFudZJ),
+        description: Chunk388032.intl.string(Chunk388032.t.nIrkW5),
         value: S.resolution,
         options: M
       }), (0, Chunk951288.jsx)(Chunk481060.q4e, {
@@ -197,16 +197,16 @@ function R() {
           resolution: S.resolution,
           frameRate: e
         }),
-        label: Chunk388032.intl.string(Chunk388032.t["2wScLy"]),
-        description: Chunk388032.intl.string(Chunk388032.t["Rf9+f3"]),
+        label: Chunk388032.intl.string(Chunk388032.t["2wScL1"]),
+        description: Chunk388032.intl.string(Chunk388032.t["Rf9+fy"]),
         value: S.frameRate,
         options: k
       }), (0, Chunk951288.jsx)(Chunk481060.gNt, {
-        label: Chunk388032.intl.string(Chunk388032.t.pf54ER),
-        description: Chunk388032.intl.string(Chunk388032.t["QyB/jI"]),
+        label: Chunk388032.intl.string(Chunk388032.t.pf54EU),
+        description: Chunk388032.intl.string(Chunk388032.t["QyB/jK"]),
         layout: "horizontal",
         children: (0, Chunk951288.jsx)("div", {
-          className: Chunk298291.keyRecorder,
+          className: Chunk556865.keyRecorder,
           children: (0, Chunk951288.jsx)(Chunk825209.Z, {
             defaultValue: R.shortcut,
             onChange: j

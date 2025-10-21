@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk893361 = require("./893361.js");
+  Chunk934422 = require("./934422.js");
 
 function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -61,9 +61,9 @@ function P(e) {
       location: "Friends"
     })
   }, [n, l, t.id]), m = i.useCallback(() => {
-    let e = l ? S.intl.string(S.t["RLcE6+"]) : S.intl.string(S.t.cvSt1N);
+    let e = l ? S.intl.string(S.t.RLcE6x) : S.intl.string(S.t.cvSt1J);
     c.Z.show({
-      title: S.intl.formatToPlainString(S.t.fPLvZW, {
+      title: S.intl.formatToPlainString(S.t.fPLvZd, {
         name: b.ZP.getName(t)
       }),
       body: S.intl.formatToPlainString(S.t.l5FFq6, {
@@ -71,18 +71,18 @@ function P(e) {
       }),
       confirmText: e,
       confirmVariant: "critical-primary",
-      cancelText: S.intl.string(S.t["ETE/oK"]),
+      cancelText: S.intl.string(S.t["ETE/oC"]),
       onConfirm: h
     })
-  }, [h, l, t]), E = (0, o.e7)([g.Z], () => g.Z.supports(C.AN.VIDEO)), O = t.isProvisional, v = l ? S.intl.string(S.t["RLcE6+"]) : S.intl.string(S.t.cvSt1N);
+  }, [h, l, t]), E = (0, o.e7)([g.Z], () => g.Z.supports(C.AN.VIDEO)), O = t.isProvisional, v = l ? S.intl.string(S.t.RLcE6x) : S.intl.string(S.t.cvSt1J);
   return (0, r.jsxs)(s.v2r, {
     navId: "friend-row",
-    "aria-label": S.intl.string(S.t.liqwPD),
+    "aria-label": S.intl.string(S.t.liqwPJ),
     onClose: d.Zy,
     onSelect: a,
     children: [!O && E ? (0, r.jsx)(s.sNh, {
       id: "start-video-call",
-      label: S.intl.string(S.t.oCqlGB),
+      label: S.intl.string(S.t.oCqlGG),
       action: f
     }) : null, !O && (0, r.jsx)(s.sNh, {
       id: "start-voice-call",
@@ -153,7 +153,7 @@ class j extends Chunk647438.PureComponent {
             shouldHighlight: t
           }), (0, r.jsx)(E.Z, {
             icon: s.Huf,
-            tooltip: S.intl.string(S.t.UKOtz8),
+            tooltip: S.intl.string(S.t["UKOtz+"]),
             onClick: this.handleOpenActionsMenu,
             shouldHighlight: t
           })]

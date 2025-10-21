@@ -11,7 +11,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk937615 = require("./937615.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk201608 = require("./201608.js");
+  Chunk770297 = require("./770297.js");
 
 function u(e) {
   let {
@@ -22,9 +22,9 @@ function u(e) {
     intervalCount: d = 1,
     isPrepaidPaymentSource: f = false
   } = e, _ = (0, o.T4)(t, n), p = null;
-  return i === s.rV.YEAR ? p = l.intl.format(l.t["3U719v"], {
+  return i === s.rV.YEAR ? p = l.intl.format(l.t["3U719t"], {
     price: _
-  }) : i === s.rV.MONTH && 1 === d ? p = l.intl.format(l.t.NkR7BQ, {
+  }) : i === s.rV.MONTH && 1 === d ? p = l.intl.format(l.t.NkR7BU, {
     price: _
   }) : i === s.rV.MONTH && d > 1 && (p = l.intl.format(l.t.CNAGg4, {
     price: _,

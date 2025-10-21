@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk71509 = require("./71509.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk384743 = require("./384743.js");
+  Chunk518474 = require("./518474.js");
 
 function C(e) {
   let {
@@ -25,16 +25,16 @@ function C(e) {
     onClose: n
   } = e, {
     currentUser: C,
-    multiAccountUsers: E
+    multiAccountUsers: T
   } = (0, l.cj)([d.default, u.Z], () => ({
     currentUser: d.default.getCurrentUser(),
     multiAccountUsers: u.Z.getUsers()
-  })), [N, T] = a.useState(false), [b, A] = a.useState(_.lds), [p, v] = a.useState(null);
-  return a.useEffect(() => {
-    if (N) v((0, s.jsx)(c.Wn, {
+  })), [E, N] = i.useState(false), [b, A] = i.useState(_.lds), [p, v] = i.useState(null);
+  return i.useEffect(() => {
+    if (E) v((0, s.jsx)(c.Wn, {
       messageType: c.QYI.ERROR,
       className: g.infoMessage,
-      children: f.intl.format(f.t.HAuRSE, {
+      children: f.intl.format(f.t.HAuRSM, {
         maxNumAccounts: h.$H
       })
     })), A(_.lds);
@@ -43,33 +43,33 @@ function C(e) {
       null != e && v((0, s.jsx)(c.Wn, {
         messageType: c.QYI.POSITIVE,
         className: g.infoMessage,
-        children: f.intl.format(f.t["09qidX"], {
+        children: f.intl.format(f.t["09qide"], {
           username: e.username
         })
-      })), T(false)
+      })), N(false)
     }
-  }, [b, N]), a.useEffect(() => {
-    E.length < h.$H && T(false)
-  }, [E]), (0, o.Z)({
-    type: i.ImpressionTypes.MODAL,
-    name: i.ImpressionNames.MULTI_ACCOUNT_SWITCH_LANDING
+  }, [b, E]), i.useEffect(() => {
+    T.length < h.$H && N(false)
+  }, [T]), (0, o.Z)({
+    type: a.ImpressionTypes.MODAL,
+    name: a.ImpressionNames.MULTI_ACCOUNT_SWITCH_LANDING
   }), (0, s.jsxs)(r.Modal, {
     onClose: n,
     transitionState: t,
     size: "md",
-    "aria-label": f.intl.string(f.t.WbFpq6),
-    title: f.intl.string(f.t.WbFpq6),
-    subtitle: f.intl.string(f.t["+1Uk3d"]),
+    "aria-label": f.intl.string(f.t.WbFpq4),
+    title: f.intl.string(f.t.WbFpq4),
+    subtitle: f.intl.string(f.t["+1Uk3c"]),
     actions: [{
-      text: f.intl.string(f.t["9g2mqa"]),
+      text: f.intl.string(f.t["9g2mqT"]),
       variant: "secondary",
       onClick: () => {
-        if (E.length >= h.$H) return void T(true);
+        if (T.length >= h.$H) return void N(true);
         n(), (0, x.y)()
       }
     }],
     children: [p, (0, s.jsx)(m.Z, {
-      actionText: f.intl.string(f.t.Wf421N),
+      actionText: f.intl.string(f.t.Wf421J),
       onAction: (e, t) => {
         switch (e) {
           case m.W.LOGIN_REQUIRED:

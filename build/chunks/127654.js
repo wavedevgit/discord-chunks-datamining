@@ -70,14 +70,14 @@ function T(e, t, n) {
       post_compression_file_sizes: n,
       post_compression_aggregate_file_size: t
     }), (0, o.openUploadError)({
-      title: O.intl.string(O.t["/tGlcn"]),
+      title: O.intl.string(O.t["/tGlcj"]),
       help: (0, g.BK)(r, i),
       showPremiumUpsell: !(0, m.M5)(r, y.PremiumTypes.TIER_2),
       fileSize: d
     });
     return
   }(0, o.openUploadError)({
-    title: O.intl.string(O.t["/tGlcn"]),
+    title: O.intl.string(O.t["/tGlcj"]),
     help: O.intl.formatToPlainString(O.t.tUOJdH, {
       maxSize: h.Ng(h.OC())
     })
@@ -99,8 +99,8 @@ function S(e, t, n) {
   if ((0, g.Bf)(S, v)) return void T(t, S);
   if (f.Z.getUploadCount(t.id, n) + S.length > E.dN1) {
     (0, o.openUploadError)({
-      title: O.intl.string(O.t.wOr6hI),
-      help: O.intl.formatToPlainString(O.t["qqyp/f"], {
+      title: O.intl.string(O.t.wOr6hB),
+      help: O.intl.formatToPlainString(O.t["qqyp/e"], {
         limit: E.dN1
       })
     }), p.default.track(E.rMx.UPLOAD_FILE_LIMIT_ERROR, {

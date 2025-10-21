@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk260539 = require("./260539.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk10198 = require("./10198.js");
+  Chunk197571 = require("./197571.js");
 
 function E(e, t, n) {
   e.preventDefault(), g.default.track(m.rMx.GUILD_TEMPLATE_APP_OPENED, {
@@ -48,11 +48,11 @@ function v(e) {
     }), (0, r.jsx)(a.zx, {
       onClick: e => E(e, t, n),
       className: x.marginTop20,
-      children: _.intl.string(_.t["a3Gl+f"])
+      children: _.intl.string(_.t["a3Gl+e"])
     })]
   }) : (0, r.jsx)(p.Z, {
-    text: _.intl.string(_.t["e/rZ2t"]),
-    buttonCta: _.intl.string(_.t.HAvYn5),
+    text: _.intl.string(_.t["e/rZ2n"]),
+    buttonCta: _.intl.string(_.t.HAvYn0),
     onClick: e => E(e, t, n)
   })
 }

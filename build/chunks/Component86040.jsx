@@ -11,7 +11,7 @@ var Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk600164 = require("./600164.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk391970 = require("./391970.js");
+  Chunk123472 = require("./123472.js");
 let c = e => {
     let {
       className: t,
@@ -31,12 +31,12 @@ let c = e => {
             children: s.intl.string(s.t.BxPxhI)
           }), (0, r.jsx)("br", {}), (0, r.jsx)(a.Text, {
             variant: "text-md/normal",
-            children: s.intl.string(s.t.Y3fdOj)
+            children: s.intl.string(s.t.Y3fdOp)
           }), (0, r.jsx)("br", {}), (0, r.jsxs)(a.Text, {
             variant: "text-md/normal",
-            children: [s.intl.string(s.t.Paa4v7), "\xa0", n ? s.intl.string(s.t.StGVvL) : (0, r.jsx)(a.Anchor, {
+            children: [s.intl.string(s.t.Paa4v4), "\xa0", n ? s.intl.string(s.t.StGVvC) : (0, r.jsx)(a.Anchor, {
               onClick: i,
-              children: s.intl.string(s.t.Ex7sk5)
+              children: s.intl.string(s.t.Ex7sk9)
             })]
           })]
         })]
@@ -52,7 +52,7 @@ let c = e => {
         "data-testid": "continue",
         variant: "primary",
         disabled: true,
-        text: Chunk388032.intl.string(Chunk388032.t.g8vPz8)
+        text: Chunk388032.intl.string(Chunk388032.t.g8vPzy)
       })
     })
   })

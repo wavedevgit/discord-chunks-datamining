@@ -16,7 +16,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk616030 = require("./616030.jsx"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk900678 = require("./900678.js");
+  Chunk15962 = require("./15962.js");
 
 function h(e) {
   let {
@@ -36,9 +36,9 @@ function h(e) {
   } = e, A = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), C = () => {
     switch (t) {
       case s.h8.PLAN_SELECT:
-        return m === f.PremiumTypes.TIER_0 ? _.intl.string(_.t.rk4Uu7) : _.intl.string(_.t["7YWj6+"]);
+        return m === f.PremiumTypes.TIER_0 ? _.intl.string(_.t.rk4Uu8) : _.intl.string(_.t["7YWj6+"]);
       case s.h8.ADD_PAYMENT_STEPS:
-        return _.intl.string(_.t.vHqbJC);
+        return _.intl.string(_.t.vHqbJE);
       case s.h8.REVIEW:
         return _.intl.string(_.t.wKaVLC);
       default:

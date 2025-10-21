@@ -1,4 +1,4 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 207055, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => U
@@ -36,7 +36,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk262317 = require("./262317.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk524484 = require("./524484.js"),
-  Chunk106252 = require("./106252.js");
+  Chunk968080 = require("./968080.js");
 let D = Chunk647438.memo(e => {
   var t, n, r, l;
   let {
@@ -54,7 +54,7 @@ let D = Chunk647438.memo(e => {
       userIds: t
     } = e;
     return t.has(D)
-  }), [D, P.id]), K = (0, p.Z)(null != W ? [W.applicationId] : []), Y = (0, _.Z)(D, P.guild_id)[0], q = null != (n = (0, d.IX)(null == Y ? true : Y.application_id).data) ? n : true, [X, J] = (0, o.Wu)([O.Z], () => [O.Z.getStreamForUser(D, P.getGuildId()), O.Z.getActiveStreamForUser(D, P.getGuildId())], [P, D]), Q = (0, o.e7)([Z.Z], () => Z.Z.getSessionById(I)), $ = A.ZP.useName(x), ee = (0, o.e7)([N.Z], () => N.Z.getVoicePlatformForChannel(P.id, D), [P.id, D]), {
+  }), [D, P.id]), q = (0, p.Z)(null != W ? [W.applicationId] : []), Y = (0, _.Z)(D, P.guild_id)[0], K = null != (n = (0, d.IX)(null == Y ? true : Y.application_id).data) ? n : true, [X, J] = (0, o.Wu)([O.Z], () => [O.Z.getStreamForUser(D, P.getGuildId()), O.Z.getActiveStreamForUser(D, P.getGuildId())], [P, D]), Q = (0, o.e7)([Z.Z], () => Z.Z.getSessionById(I)), $ = A.ZP.useName(x), ee = (0, o.e7)([N.Z], () => N.Z.getVoicePlatformForChannel(P.id, D), [P.id, D]), {
     enableHangStatus: et
   } = (0, m.bN)({
     guildId: P.guild_id,
@@ -101,13 +101,13 @@ let D = Chunk647438.memo(e => {
       speaking: F,
       ringing: z,
       priority: V,
-      embeddedApplication: K[0],
+      embeddedApplication: q[0],
       isStreaming: null != X && X.channelId === P.id,
       isWatching: null != J && J.state !== M.jm8.ENDED,
       isGuest: G,
       isSelf: k,
       requestToStreamActivity: eo ? Y : true,
-      application: (ea || et) && (null == Y ? true : Y.session_id) != null ? q : true,
+      application: (ea || et) && (null == Y ? true : Y.session_id) != null ? K : true,
       showHangStatus: en && et && (k || null != er),
       hangStatusActivity: k ? ei : er
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {

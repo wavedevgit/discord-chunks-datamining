@@ -1,4 +1,4 @@
-/** Chunk was on 84283 **/
+/** Chunk was on 69844 **/
 /** chunk id: 797908, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk768581 = require("./768581.js"),
   Chunk956965 = require("./956965.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk366722 = require("./366722.js");
+  Chunk401346 = require("./401346.js");
 let m = function(e) {
   var t, n, m;
   let {
@@ -39,7 +39,7 @@ let m = function(e) {
         className: p.card,
         onClick: y,
         onContextMenu: () => {},
-        "aria-label": u.intl.string(u.t.np1Wrq),
+        "aria-label": u.intl.string(u.t.np1Wru),
         children: [(0, r.jsxs)("div", {
           className: p.header,
           children: [(0, r.jsx)("div", {
@@ -97,7 +97,7 @@ let m = function(e) {
             }) : null, j ? (0, r.jsx)(l.Text, {
               variant: "text-xs/medium",
               color: "text-secondary",
-              children: u.intl.string(u.t["/eVltr"])
+              children: u.intl.string(u.t["/eVltv"])
             }) : null]
           }) : null, (0, r.jsx)(l.Text, {
             className: p.description,

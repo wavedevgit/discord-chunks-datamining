@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 565849, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk295051 = require("./295051.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk479447 = require("./479447.js");
+  Chunk64929 = require("./64929.js");
 
 function g(e) {
   let {
@@ -25,19 +25,19 @@ function g(e) {
       className: u.column,
       children: [(0, r.jsxs)(i.vwX, {
         className: u.title,
-        children: [d.intl.string(d.t["0r0AzM"]), (0, r.jsx)(o.zA, {
+        children: [d.intl.string(d.t["0r0AzF"]), (0, r.jsx)(o.zA, {
           guild: t
         })]
       }), (0, r.jsx)(i.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
         className: u.text,
-        children: d.intl.string(d.t.UfqmIS)
+        children: d.intl.string(d.t.UfqmIb)
       }), (0, r.jsx)(i.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
         className: u.text,
-        children: d.intl.format(d.t.vBcWUl, {
+        children: d.intl.format(d.t.vBcWUv, {
           articleURL: l.Z.getArticleURL(c.BhN.GUILD_BANNER_SPLASH)
         })
       }), (0, r.jsx)(a.F, {

@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk433355 = require("./433355.js"),
   Chunk384433 = require("./384433.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk401853 = require("./401853.js");
+  Chunk350013 = require("./350013.js");
 let _ = e => {
   let {
     tabs: t,
@@ -30,7 +30,7 @@ let _ = e => {
   } = e;
   return (0, l.jsx)(d.v2r, {
     navId: "members-tabs-overflow-menu",
-    "aria-label": p.intl.string(p.t.riPnr6),
+    "aria-label": p.intl.string(p.t.riPnr0),
     hideScroller: true,
     onClose: i,
     onSelect: i,
@@ -106,11 +106,11 @@ function C(e) {
         className: a()(v.more, {
           [v.selected]: m
         }),
-        "aria-label": p.intl.string(p.t.UKOtz8),
+        "aria-label": p.intl.string(p.t["UKOtz+"]),
         children: [(0, l.jsx)(d.Text, {
           variant: "text-md/medium",
           color: j,
-          children: p.intl.string(p.t.UKOtz8)
+          children: p.intl.string(p.t["UKOtz+"])
         }), i ? (0, l.jsx)(d.u04, {
           size: "sm",
           color: b
@@ -146,15 +146,15 @@ function E(e) {
     }),
     T = (t = null != S ? S : 0, [{
       id: g.e.ALL_MEMBERS,
-      label: p.intl.string(p.t.NOOm1d)
+      label: p.intl.string(p.t.NOOm1Z)
     }, {
       id: g.e.PENDING,
-      label: t > 0 ? p.intl.formatToPlainString(p.t["Wo+zLy"], {
+      label: t > 0 ? p.intl.formatToPlainString(p.t["Wo+zL0"], {
         count: t
-      }) : p.intl.string(p.t["4eQVBA"])
+      }) : p.intl.string(p.t["4eQVBO"])
     }, {
       id: g.e.REJECTED,
-      label: p.intl.string(p.t.bSZklZ)
+      label: p.intl.string(p.t.bSZkla)
     }, {
       id: g.e.APPROVED,
       label: p.intl.string(p.t.aURgY2)
@@ -176,11 +176,11 @@ function E(e) {
     R = r.useMemo(() => i === g.e.ALL_MEMBERS ? I : null != y && null != y.user, [i, I, y]),
     w = r.useMemo(() => T.slice(0, N + 1), [N, T]),
     A = r.useMemo(() => T.slice(N + 1), [N, T]),
-    Z = (0, m.Z)(e => {
+    M = (0, m.Z)(e => {
       let t = e.contentRect.width;
       null != t && E.current !== t && (x(t), E.current = t)
     });
-  return (0, u.s)(_, Z, [R]), (0, l.jsxs)(l.Fragment, {
+  return (0, u.s)(_, M, [R]), (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)(h.Z.Divider, {
       className: v.divider
     }), (0, l.jsxs)("div", {
@@ -205,7 +205,7 @@ function E(e) {
           })
         })]
       }), (0, l.jsxs)(d.njP, {
-        "aria-label": p.intl.string(p.t.tcvVXF),
+        "aria-label": p.intl.string(p.t.tcvVXM),
         selectedItem: i,
         type: "top-pill",
         onItemSelect: a,

@@ -1,4 +1,4 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 436355, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -10,7 +10,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk271383 = require("./271383.js"),
   Chunk496675 = require("./496675.js"),
   Chunk796263 = require("./796263.jsx"),
-  Chunk304726 = require("./304726.js"),
+  Chunk833540 = require("./833540.js"),
   Chunk388032 = require("./388032.jsx");
 
 function p(e) {
@@ -20,7 +20,7 @@ function p(e) {
     guild: h
   } = e, f = (0, r.e7)([s.Z], () => null != p && null != h && (0, a.nX)(p, h, [s.Z])), m = (0, r.e7)([o.ZP], () => null == p || null == o.ZP.getMember(t.guild_id, p.id));
   if (!f) return null;
-  let g = m ? d.intl.string(u.default.Ux67nZ) : d.intl.string(u.default["snp/lJ"]),
+  let g = m ? d.intl.string(u.default.Ux67nW) : d.intl.string(u.default["snp/lJ"]),
     b = "kick-user-".concat(null == p ? true : p.id);
   return (0, i.jsx)(c.Z, {
     text: g,

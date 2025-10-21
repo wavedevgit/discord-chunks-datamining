@@ -14,7 +14,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk481060 = require("./481060.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk196684 = require("./196684.js");
+  Chunk761388 = require("./761388.js");
 let d = e => {
     let {
       children: t
@@ -61,7 +61,7 @@ function _(e) {
         },
         className: u.closeButton,
         onClick: o,
-        "aria-label": c.intl.string(c.t.WAI6xs),
+        "aria-label": c.intl.string(c.t.WAI6xu),
         children: (0, r.jsx)(s.Dio, {
           size: "sm"
         })

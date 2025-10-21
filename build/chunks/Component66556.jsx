@@ -1,4 +1,4 @@
-/** Chunk was on 63962 **/
+/** Chunk was on 91053 **/
 /** chunk id: 66556, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk91159 = require("./91159.js"),
   Chunk593130 = require("./593130.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk170909 = require("./170909.js");
+  Chunk568592 = require("./568592.js");
 
 function p(e) {
   let {
@@ -66,8 +66,8 @@ function p(e) {
         className: u.icon,
         onClick: m,
         icon: l.or_,
-        "aria-label": d.intl.string(d.t.B2panJ),
-        tooltip: a ? null : d.intl.string(d.t.B2panJ),
+        "aria-label": d.intl.string(d.t.B2panI),
+        tooltip: a ? null : d.intl.string(d.t.B2panI),
         disabled: f,
         selected: a
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {

@@ -1,4 +1,4 @@
-/** Chunk was on 37786 **/
+/** Chunk was on 84071 **/
 /** chunk id: 831895, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -12,16 +12,16 @@ var Chunk951288 = require("./951288.js"),
   Chunk699758 = require("./699758.js"),
   Chunk913338 = require("./913338.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk577806 = require("./577806.js");
+  Chunk807276 = require("./807276.js");
 
 function p(e) {
   var t, n, a, p;
   let {
-    defaultCategory: h,
-    onCategoryChange: _,
+    defaultCategory: _,
+    onCategoryChange: h,
     className: m
-  } = e, [f, x] = i.useState(h), [g, j] = i.useState(null), b = (0, o.Z)(), v = i.useMemo(() => [{
-    name: C.intl.string(C.t["6Zuiv7"]),
+  } = e, [f, x] = i.useState(_), [g, j] = i.useState(null), b = (0, o.Z)(), v = i.useMemo(() => [{
+    name: C.intl.string(C.t["6Zuivx"]),
     value: d.KN.Trick,
     key: "Trick",
     icon: (0, r.jsx)(s.yDF, {
@@ -31,7 +31,7 @@ function p(e) {
     onMouseEnter: () => j(d.KN.Trick),
     onMouseLeave: () => j(null)
   }, {
-    name: C.intl.string(C.t["2UeOlZ"]),
+    name: C.intl.string(C.t["2UeOlY"]),
     value: d.KN.Treat,
     key: "Treat",
     icon: (0, r.jsx)(s.sq, {
@@ -41,8 +41,8 @@ function p(e) {
     onMouseEnter: () => j(d.KN.Treat),
     onMouseLeave: () => j(null)
   }], []), S = i.useCallback(e => {
-    x(e.value), _(e.value)
-  }, [_]), L = null == b || null == (n = b.segmentedControlAnimations) || null == (t = n.trick) ? true : t.getAnimationData, y = null == b || null == (p = b.segmentedControlAnimations) || null == (a = p.treat) ? true : a.getAnimationData;
+    x(e.value), h(e.value)
+  }, [h]), L = null == b || null == (n = b.segmentedControlAnimations) || null == (t = n.trick) ? true : t.getAnimationData, y = null == b || null == (p = b.segmentedControlAnimations) || null == (a = p.treat) ? true : a.getAnimationData;
   return (0, r.jsxs)("div", {
     className: l()(u.container, m),
     children: [(0, r.jsx)(c.w, {

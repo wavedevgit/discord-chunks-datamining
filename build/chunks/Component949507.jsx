@@ -1,4 +1,4 @@
-/** Chunk was on 84283 **/
+/** Chunk was on 69844 **/
 /** chunk id: 949507, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -17,7 +17,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk411198 = require("./411198.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk52735 = require("./52735.js"),
+  Chunk70019 = require("./70019.js"),
   Chunk129512 = require("./129512.js"),
   Chunk330065 = require("./330065.js");
 
@@ -48,7 +48,7 @@ function x(e) {
   return (0, r.jsxs)(l.P3F, {
     className: i()(_.card, n),
     onClick: a,
-    "aria-label": g.intl.string(g.t.RB4L29),
+    "aria-label": g.intl.string(g.t.RB4L2x),
     children: [(0, r.jsxs)("div", {
       className: _.cardHeader,
       children: [(0, r.jsx)("img", {
@@ -102,7 +102,7 @@ function x(e) {
           }), (0, r.jsx)(l.Text, {
             variant: "text-xs/normal",
             color: "header-secondary",
-            children: g.intl.format(g.t.zRl6XV, {
+            children: g.intl.format(g.t.zRl6XR, {
               count: t.approximate_member_count
             })
           })]

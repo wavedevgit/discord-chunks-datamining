@@ -17,23 +17,23 @@ function o(n) {
     onSelect: o,
     closePopout: d,
     "aria-label": u
-  } = n, h = (0, c.Z)({
+  } = n, p = (0, c.Z)({
     id: i.id,
-    label: r.intl.string(r.t["94lLDw"]),
+    label: r.intl.string(r.t["94lLD7"]),
     shiftId: l,
     onSuccess: d
-  }), p = t.useCallback(n => {
+  }), h = t.useCallback(n => {
     n.stopPropagation()
   }, []);
   return (0, e.jsx)(a.P3F, {
-    onClick: p,
+    onClick: h,
     children: (0, e.jsx)(a.v2r, {
       onSelect: o,
       navId: "guild-discovery-context-menu",
-      "aria-label": null != u ? u : r.intl.string(r.t.ogxXGh),
+      "aria-label": null != u ? u : r.intl.string(r.t.ogxXGq),
       onClose: s.Zy,
       children: (0, e.jsx)(a.kSQ, {
-        children: h
+        children: p
       })
     })
   })

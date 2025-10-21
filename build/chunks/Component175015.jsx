@@ -1,4 +1,4 @@
-/** Chunk was on 41348 **/
+/** Chunk was on 79041 **/
 /** chunk id: 175015, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   K: () => u
@@ -11,7 +11,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk300284 = require("./300284.js"),
   Chunk430824 = require("./430824.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk544909 = require("./544909.js");
+  Chunk342214 = require("./342214.js");
 
 function u(e, t, n, u, m) {
   let p = (0, r.e7)([s.Z], () => s.Z.getGuild(e)),
@@ -25,7 +25,7 @@ function u(e, t, n, u, m) {
   return (0, a.jsxs)(a.Fragment, {
     children: [null != p ? (0, a.jsx)(i.sNh, {
       id: "edit-server-profile",
-      "aria-label": c.intl.string(c.t["9ESaOz"]),
+      "aria-label": c.intl.string(c.t["9ESaO7"]),
       label: () => (0, a.jsxs)("div", {
         className: d.item,
         children: [(0, a.jsx)(l.Z, {
@@ -35,7 +35,7 @@ function u(e, t, n, u, m) {
         }), (0, a.jsxs)("div", {
           children: [(0, a.jsx)(i.Text, {
             variant: "text-sm/medium",
-            children: c.intl.string(c.t["9ESaOz"])
+            children: c.intl.string(c.t["9ESaO7"])
           }), (0, a.jsx)(i.Text, {
             variant: "text-xs/normal",
             lineClamp: 1,

@@ -36,7 +36,7 @@ var Chunk512722 = require("./512722.js"),
   Chunk594174 = require("./594174.js"),
   Chunk74538 = require("./74538.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk341217 = require("./341217.js");
+  Chunk436360 = require("./436360.js");
 
 function M(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -140,7 +140,7 @@ function G() {
       setPendingAccentColor: Chunk350327.CM
     }, "color");
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk341217.sectionsContainer,
+    className: Chunk436360.sectionsContainer,
     children: [(0, Chunk951288.jsx)(Chunk349177.Z, {
       placeholder: F.username,
       errors: es,
@@ -149,7 +149,7 @@ function G() {
       onGlobalNameChange: Chunk809206.W0,
       user: F
     }), (0, Chunk951288.jsx)(Chunk906364.Z, {
-      sectionTitle: Chunk388032.intl.string(Chunk388032.t["+T3RIy"]),
+      sectionTitle: Chunk388032.intl.string(Chunk388032.t["+T3RI/"]),
       errors: $.pronouns,
       onPronounsChange: Chunk350327.ID,
       pendingPronouns: z,
@@ -158,7 +158,7 @@ function G() {
       onAvatarChange: Chunk809206.I5,
       showRemoveAvatarButton: er,
       errors: $.avatar,
-      sectionTitle: Chunk388032.intl.string(Chunk388032.t.lqaIxM),
+      sectionTitle: Chunk388032.intl.string(Chunk388032.t.lqaIxI),
       forcedDivider: true
     }, "avatar"), (0, Chunk951288.jsx)(Chunk433411.Z, {
       user: F,
@@ -167,9 +167,9 @@ function G() {
       user: F
     }), (0, Chunk951288.jsx)(Chunk513901.Z, {
       user: F,
-      sectionTitle: Chunk388032.intl.string(Chunk388032.t.wR5wOj)
+      sectionTitle: Chunk388032.intl.string(Chunk388032.t.wR5wOo)
     }, "effect"), e_(), (0, Chunk951288.jsx)(Chunk126631.Z, {
-      sectionTitle: Chunk388032.intl.string(Chunk388032.t.NepzEx),
+      sectionTitle: Chunk388032.intl.string(Chunk388032.t.NepzEw),
       errors: el,
       onBioChange: e => (0, d.xQ)(e, null == V ? true : V.bio),
       pendingBio: K,

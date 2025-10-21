@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk449605 = require("./449605.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk115821 = require("./115821.js");
+  Chunk999770 = require("./999770.js");
 
 function h(e) {
   let {
@@ -36,7 +36,7 @@ function h(e) {
         variant: "text-sm/normal",
         color: "none",
         className: p.emptyPreviewText,
-        children: null != a ? a : _.intl.string(_.t.uQZTBQ)
+        children: null != a ? a : _.intl.string(_.t.uQZTBV)
       })]
     })
   })
@@ -61,7 +61,7 @@ function m(e) {
     isLoading: E,
     noText: a,
     noImage: o,
-    previewText: m ? true : _.intl.string(_.t.pgUTZG)
+    previewText: m ? true : _.intl.string(_.t.pgUTZC)
   }) : (0, r.jsx)("div", {
     className: n,
     children: (0, r.jsx)("img", {

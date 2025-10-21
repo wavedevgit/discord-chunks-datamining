@@ -3,7 +3,7 @@
 "use strict";
 let i;
 require.d(exports, {
-  Z: () => ej
+  Z: () => eZ
 }), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -74,7 +74,7 @@ var Chunk266454 = require("./266454.js"),
   Chunk757744 = require("./757744.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk735831 = require("./735831.js");
+  Chunk722363 = require("./722363.js");
 
 function eO(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -173,7 +173,7 @@ let ex = e => {
       ctrlKey: s
     }
   };
-class eZ extends Chunk647438.Component {
+class eC extends Chunk647438.Component {
   handleLock() {
     (0, Chunk481060.$sL)() || Chunk574254.Z.isOpen() || Chunk13245.Z.setInputLocked(true, (0, Chunk145597.getPID)())
   }
@@ -258,11 +258,11 @@ class eZ extends Chunk647438.Component {
       }
       Chunk998502.ZP.on("REQUEST_OPEN_EXTERNAL_URL", (e, t) => {
         Y.default.getDisableExternalLinkAlert() || t === W.Z.getLastURL() ? J.ZP.send("OPEN_EXTERNAL_URL", t) : y.Z.show({
-          title: ey.intl.string(ey.t.WLx4Fx),
-          body: ey.intl.string(ey.t.H8O1TE),
-          secondaryConfirmText: ey.intl.string(ey.t.IwqGhY),
-          confirmText: ey.intl.string(ey.t["3PatS0"]),
-          cancelText: ey.intl.string(ey.t["ETE/oK"]),
+          title: ey.intl.string(ey.t.WLx4F6),
+          body: ey.intl.string(ey.t.H8O1TK),
+          secondaryConfirmText: ey.intl.string(ey.t.IwqGhU),
+          confirmText: ey.intl.string(ey.t["3PatSz"]),
+          cancelText: ey.intl.string(ey.t["ETE/oC"]),
           onConfirmSecondary: () => {
             O.Z.disableExternalLinkAlert()
           },
@@ -279,10 +279,10 @@ class eZ extends Chunk647438.Component {
     return (0, Chunk951288.jsx)(Chunk600164.Z, {
       justify: Chunk600164.Z.Justify.CENTER,
       align: Chunk600164.Z.Align.CENTER,
-      className: Chunk735831.invalidContainer,
+      className: Chunk722363.invalidContainer,
       children: (0, Chunk951288.jsx)("div", {
-        className: Chunk735831.inactiveContainer,
-        children: Chunk388032.intl.format(Chunk388032.t.ketnW1, Chunk145597.OVERLAY_MIN_RESOLUTION)
+        className: Chunk722363.inactiveContainer,
+        children: Chunk388032.intl.format(Chunk388032.t.ketnW0, Chunk145597.OVERLAY_MIN_RESOLUTION)
       })
     })
   }
@@ -306,10 +306,10 @@ class eZ extends Chunk647438.Component {
     let g = module || Chunk120356,
       m = Chunk314897.default.getId();
     return (0, Chunk951288.jsxs)("div", {
-      className: Chunk735831.overlay,
+      className: Chunk722363.overlay,
       children: [(0, Chunk951288.jsx)(Chunk708383.Z, {}), Chunk120356 && (0, Chunk951288.jsx)("header", {
-        className: Chunk735831.previewingInGameHeader,
-        children: Chunk388032.intl.string(Chunk388032.t.iOq96u)
+        className: Chunk722363.previewingInGameHeader,
+        children: Chunk388032.intl.string(Chunk388032.t.iOq96m)
       }), i, (!module || Chunk921738.has(Chunk981631.O0n.TEXT_WIDGET)) && (0, Chunk951288.jsx)(ex, {
         locked: module,
         keybind: exports,
@@ -317,8 +317,8 @@ class eZ extends Chunk647438.Component {
         isPreviewingInGame: Chunk120356
       }), (0, Chunk145597.validResolution)(c) ? (0, Chunk951288.jsx)(Chunk312178.Z, {
         className: l()({
-          [Chunk735831.layoutLocked]: module,
-          [Chunk735831.layoutUnlocked]: !module
+          [Chunk722363.layoutLocked]: module,
+          [Chunk722363.layoutUnlocked]: !module
         })
       }) : module ? null : this.renderInvalidSizeMessage(), (0, Chunk951288.jsx)(Chunk107200.Z, {}), null != Chunk954955 && null != u && (0, Chunk951288.jsx)(Chunk923532.Z, {
         streamerId: Chunk481060,
@@ -330,7 +330,7 @@ class eZ extends Chunk647438.Component {
         locked: Chunk704215,
         keybind: exports
       }), (0, Chunk951288.jsx)(Chunk681603.Z, {}), (0, Chunk951288.jsx)("div", {
-        className: Chunk735831.overlayMountPx
+        className: Chunk722363.overlayMountPx
       })]
     })
   }
@@ -359,7 +359,7 @@ class eZ extends Chunk647438.Component {
   }
 }
 
-function ej() {
+function eZ() {
   var e, t;
   let {
     locked: n,
@@ -380,15 +380,15 @@ function ej() {
   } = (0, Chunk906732.ZP)(Chunk100527.Z.OVERLAY), {
     showKeybindIndicators: b,
     dismissKeybindNotification: E
-  } = (0, Chunk358446.K)(), x = (null == c ? true : c.fullscreenType) === Chunk593472.Jx.FULLSCREEN, S = null != (e = null == c ? true : c.oopEnabled) && module, C = Chunk454991.v.oopEnabled, I = null != (t = null == c ? true : c.hasChangedRenderMode) && exports, {
-    useContextualNudge: T,
+  } = (0, Chunk358446.K)(), x = (null == c ? true : c.fullscreenType) === Chunk593472.Jx.FULLSCREEN, S = null != (e = null == c ? true : c.oopEnabled) && module, j = Chunk454991.v.oopEnabled, I = null != (t = null == c ? true : c.hasChangedRenderMode) && exports, {
+    useContextualNudge: N,
     disableNudge: D
   } = (0, Chunk32300.J0)("OverlaySetup");
   return Chunk647438.useEffect(() => {
     i && (0, Chunk32300.F3)()
   }, [i]), (0, Chunk951288.jsx)(Chunk906732.Gt, {
     value: Chunk13245,
-    children: (0, Chunk951288.jsx)(eZ, {
+    children: (0, Chunk951288.jsx)(eC, {
       locked: require,
       initialized: i,
       incompatibleApp: Chunk120356,

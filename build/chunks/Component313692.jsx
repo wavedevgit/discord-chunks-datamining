@@ -25,42 +25,42 @@ var Chunk951288 = require("./951288.js"),
   Chunk370595 = require("./370595.jsx"),
   Chunk50493 = require("./50493.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk152540 = require("./152540.js"),
-  Chunk447334 = require("./447334.js");
+  Chunk87819 = require("./87819.js"),
+  Chunk125134 = require("./125134.js");
 
 function D(e) {
   var t, n;
   let {
     userId: i,
     guildId: D,
-    location: L,
-    className: U,
+    location: U,
+    className: L,
     onNavigate: M
-  } = e, x = l.useRef(null), b = (0, o.e7)([m.ZP], () => m.ZP.getGuildSidebarState(D), [D]), v = l.useRef(0), [P, j] = l.useState(null != (t = null == b ? true : b.details.additionalSearchQuery) ? t : {}), y = (0, O.z0)(i, D, {
+  } = e, b = l.useRef(null), x = (0, o.e7)([m.ZP], () => m.ZP.getGuildSidebarState(D), [D]), v = l.useRef(0), [P, j] = l.useState(null != (t = null == x ? true : x.details.additionalSearchQuery) ? t : {}), y = (0, O.z0)(i, D, {
     addtionalQuery: P,
     shouldDispatch: true
   }), G = (0, o.e7)([N.default], () => N.default.getUser(i), [i]), k = (0, o.e7)([g.ZP], () => g.ZP.getMember(D, i), [D, i]);
   (0, c.Ng)(() => {
-    let e = null == b ? true : b.details.scrollOffset;
+    let e = null == x ? true : x.details.scrollOffset;
     if (null != e) {
       var t;
-      null == (t = x.current) || t.scrollTo({
+      null == (t = b.current) || t.scrollTo({
         to: e,
         animate: false
       })
     }
   });
   let F = l.useCallback(e => {
-      null != b && (v.current = e.target.scrollTop, (0, h.r)(D, i, b.baseChannelId, {
+      null != x && (v.current = e.target.scrollTop, (0, h.r)(D, i, x.baseChannelId, {
         modViewPanel: R.k.MESSAGE_HISTORY,
         additionalSearchQuery: P,
         scrollOffset: v.current
       }))
-    }, [D, i, b, P]),
+    }, [D, i, x, P]),
     w = (0, a.throttle)(F, 300),
     z = l.useCallback(e => {
       var t, n;
-      if (null == b) return;
+      if (null == x) return;
       let r = (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
@@ -90,12 +90,12 @@ function D(e) {
       })(Object(n)).forEach(function(e) {
         Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
       }), t);
-      j(r), (0, h.r)(D, i, b.baseChannelId, {
+      j(r), (0, h.r)(D, i, x.baseChannelId, {
         modViewPanel: R.k.MESSAGE_HISTORY,
         additionalSearchQuery: r,
         scrollOffset: v.current
       })
-    }, [D, i, b, P]),
+    }, [D, i, x, P]),
     V = null != (n = null == P ? true : P.offset) ? n : 0,
     Z = (0, o.e7)([d.Z], () => {
       if (null == y.result) return [];
@@ -141,14 +141,14 @@ function D(e) {
       }
     }, [y.result, V]);
   return null == G || null == k || null == B ? null : (0, r.jsxs)("div", {
-    className: s()(p.container, U),
+    className: s()(p.container, L),
     children: [(0, r.jsx)(f.Z, {
       guildId: D,
       userId: i,
       onNavigate: M
     }), (0, r.jsx)(u.Den, {
       className: C.innerContainer,
-      ref: x,
+      ref: b,
       onScroll: w,
       children: (0, r.jsx)(T.Z, {
         messages: Z,

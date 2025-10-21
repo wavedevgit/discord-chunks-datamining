@@ -1,7 +1,7 @@
 /** Chunk was on 7654 **/
 /** chunk id: 559310, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  am: () => a,
+  am: () => r,
   s6: () => s
 });
 var Chunk973285 = require("./973285.js");
@@ -27,7 +27,7 @@ function s(e) {
     location: n,
     guildId: s
   } = e, {
-    enabled: a
+    enabled: r
   } = i.W.getCurrentConfig({
     guildId: s,
     location: n
@@ -37,17 +37,17 @@ function s(e) {
     location: n
   }, {
     autoTrackExposure: t,
-    disable: !a
+    disable: !r
   })
 }
 
-function a(e) {
+function r(e) {
   let {
     autoTrackExposure: t,
     location: n,
     guildId: s
   } = e, {
-    enabled: a
+    enabled: r
   } = i.W.useExperiment({
     guildId: s,
     location: n
@@ -57,6 +57,6 @@ function a(e) {
     location: n
   }, {
     autoTrackExposure: t,
-    disable: !a
+    disable: !r
   })
 }

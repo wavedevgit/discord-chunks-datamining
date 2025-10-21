@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk51144 = require("./51144.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk913183 = require("./913183.js");
+  Chunk157684 = require("./157684.js");
 
 function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -41,11 +41,11 @@ function _(e) {
 }
 let E = {
   [Chunk981631.AzA.NOW_PLAYING]: {
-    single: (e, t) => g.intl.format(g.t.NEckzc, {
+    single: (e, t) => g.intl.format(g.t.NEckza, {
       user1: e.username,
       user1Hook: () => t(e)
     }),
-    double: (e, t, n) => g.intl.format(g.t["6uWulZ"], {
+    double: (e, t, n) => g.intl.format(g.t["6uWulc"], {
       user1: e.username,
       user1Hook: () => n(e),
       user2: t.username,
@@ -56,11 +56,11 @@ let E = {
     })
   },
   [Chunk981631.AzA.RECENTLY_PLAYED]: {
-    single: (e, t) => g.intl.format(g.t["nB/JND"], {
+    single: (e, t) => g.intl.format(g.t["nB/JNB"], {
       user1: e.username,
       user1Hook: () => t(e)
     }),
-    double: (e, t, n) => g.intl.format(g.t.AZCcHR, {
+    double: (e, t, n) => g.intl.format(g.t.AZCcHU, {
       user1: e.username,
       user1Hook: () => n(e),
       user2: t.username,
@@ -75,13 +75,13 @@ let E = {
       user1: e.username,
       user1Hook: () => t(e)
     }),
-    double: (e, t, n) => g.intl.format(g.t["0LiGbG"], {
+    double: (e, t, n) => g.intl.format(g.t["0LiGbJ"], {
       user1: e.username,
       user1Hook: () => n(e),
       user2: t.username,
       user2Hook: () => n(t)
     }),
-    other: e => g.intl.format(g.t.Yx1rjY, {
+    other: e => g.intl.format(g.t.Yx1rjU, {
       count: e
     })
   }
@@ -126,9 +126,9 @@ class O extends Chunk647438.PureComponent {
       userInfo: i
     } = module;
     return 0 === Chunk647438.length ? null : (0, Chunk951288.jsxs)("div", {
-      className: a()(Chunk913183.recommendationActivity, exports),
+      className: a()(Chunk157684.recommendationActivity, exports),
       children: [(0, Chunk951288.jsx)(Chunk237583.Z, {
-        className: Chunk913183.players,
+        className: Chunk157684.players,
         users: Chunk647438.map(e => {
           let {
             user: t
@@ -139,7 +139,7 @@ class O extends Chunk647438.PureComponent {
         max: 4,
         renderMoreUsers: this.renderPlayerOverflow
       }), (0, Chunk951288.jsx)("div", {
-        className: Chunk913183.description,
+        className: Chunk157684.description,
         children: this.renderDescription(require, Chunk647438)
       })]
     })

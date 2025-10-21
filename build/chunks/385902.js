@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 385902, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   K: () => O,
@@ -17,7 +17,7 @@ var Chunk647438 = require("./647438.js"),
   Chunk279604 = require("./279604.jsx"),
   Chunk535396 = require("./535396.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk258640 = require("./258640.js"),
+  Chunk149829 = require("./149829.js"),
   Chunk388032 = require("./388032.jsx");
 
 function _(e, t) {
@@ -34,10 +34,10 @@ function _(e, t) {
     y = null != (n = null == r ? true : r.has(g.GuildFeatures.PARTNERED)) && n,
     v = _ && null != O && !y && f.type === h.A3.POWERUP_ACTIVATED,
     j = v ? {
-      title: b.intl.formatToPlainString(m.default.mgoPkZ, {
+      title: b.intl.formatToPlainString(m.default.mgoPkU, {
         perkName: null == u ? true : u.title
       }),
-      description: b.intl.formatToPlainString(m.default.UT9pkJ, {
+      description: b.intl.formatToPlainString(m.default.UT9pkI, {
         dateString: (0, p.Z)(O)
       })
     } : null;
@@ -62,31 +62,31 @@ function O(e, t) {
       var t;
       return null == (t = o.Z.getGuild(e)) ? true : t.features
     }),
-    T = null != (y = null == Z ? true : Z.has(g.GuildFeatures.PARTNERED)) && y,
+    w = null != (y = null == Z ? true : Z.has(g.GuildFeatures.PARTNERED)) && y,
     {
-      onActivate: w
+      onActivate: T
     } = (0, f._C)(e, N),
-    A = !j && x && C && null != S && !T && I.type === h.A3.POWERUP_ACTIVATED && null != P && null != N && null != v,
+    A = !j && x && C && null != S && !w && I.type === h.A3.POWERUP_ACTIVATED && null != P && null != N && null != v,
     R = r.useCallback(e => {
-      w(e)
-    }, [w]),
+      T(e)
+    }, [T]),
     D = r.useMemo(() => {
       if (!A) return null;
       let e = (0, p.Z)(P),
-        t = v.premiumTier === g.Eu4.TIER_2 ? b.intl.string(m.default["0uo/LC"]) : true;
+        t = v.premiumTier === g.Eu4.TIER_2 ? b.intl.string(m.default["0uo/LD"]) : true;
       return {
         firstHeader: S.title,
-        secondHeader: b.intl.formatToPlainString(m.default["8imxAg"], {
+        secondHeader: b.intl.formatToPlainString(m.default["8imxAq"], {
           dateString: e
         }),
-        firstBody: b.intl.formatToPlainString(m.default["/bW9tb"], {
+        firstBody: b.intl.formatToPlainString(m.default["/bW9tW"], {
           serverName: v.name
         }),
-        secondBody: b.intl.formatToPlainString(m.default.D09fdn, {
+        secondBody: b.intl.formatToPlainString(m.default.D09fdi, {
           dateString: e,
           boostCount: S.cost
         }),
-        thirdBody: b.intl.string(m.default["+zvKPj"]),
+        thirdBody: b.intl.string(m.default["+zvKPr"]),
         primaryButtonText: t,
         onPrimaryClick: null != t ? R : true
       }

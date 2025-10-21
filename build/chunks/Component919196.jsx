@@ -1,4 +1,4 @@
-/** Chunk was on 99063 **/
+/** Chunk was on 86736 **/
 /** chunk id: 919196, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk725875 = require("./725875.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk156065 = require("./156065.js");
+  Chunk85541 = require("./85541.js");
 
 function C(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -66,22 +66,22 @@ function N(e) {
       return r
     }(e, ["application", "guild", "integration"]);
   return (0, i.jsx)(o.ConfirmModal, (t = C({}, c), n = n = {
-    header: O.intl.formatToPlainString(O.t["rL9d//"], {
+    header: y.intl.formatToPlainString(y.t["rL9d/1"], {
       applicationName: r.name
     }),
-    confirmText: O.intl.string(O.t.ebGf4u),
-    cancelText: O.intl.string(O.t["ETE/oK"]),
+    confirmText: y.intl.string(y.t.ebGf4m),
+    cancelText: y.intl.string(y.t["ETE/oC"]),
     onConfirm: () => {
       d.Z.disableIntegration(l.id, a.id).catch(() => {
         s.Z.show({
-          title: O.intl.string(O.t.wYqMmJ),
-          body: O.intl.string(O.t.A4Mnsr)
+          title: y.intl.string(y.t.wYqMmI),
+          body: y.intl.string(y.t.A4Mnst)
         })
       })
     },
     children: (0, i.jsx)(o.Text, {
       variant: "text-md/normal",
-      children: O.intl.format(O.t.FGE8yc, {
+      children: y.intl.format(y.t.FGE8ya, {
         applicationName: r.name
       })
     })
@@ -107,31 +107,31 @@ function S(e) {
     errors: E,
     canNavigate: I
   } = e, {
-    application: P,
-    integration: w,
+    application: w,
+    integration: P,
     webhooks: T
-  } = s, [Z, k] = (0, a.Wu)([m.Z], () => [m.Z.can(y.Plq.MANAGE_ROLES, n), null == P.bot || m.Z.canManageUser(y.Plq.MANAGE_GUILD, P.bot.id, n)], [P.bot, n]), A = (0, a.e7)([m.Z], () => m.Z.can(y.Plq.MANAGE_WEBHOOKS, n), [n]), D = r.useCallback(() => {
+  } = s, [Z, k] = (0, a.Wu)([m.Z], () => [m.Z.can(O.Plq.MANAGE_ROLES, n), null == w.bot || m.Z.canManageUser(O.Plq.MANAGE_GUILD, w.bot.id, n)], [w.bot, n]), A = (0, a.e7)([m.Z], () => m.Z.can(O.Plq.MANAGE_WEBHOOKS, n), [n]), D = r.useCallback(() => {
     I() && (0, o.h7j)(e => (0, i.jsx)(N, C({
       guild: n,
-      application: P,
-      integration: w
+      application: w,
+      integration: P
     }, e)))
-  }, [P, I, n, w]), R = r.useMemo(() => {
+  }, [w, I, n, P]), R = r.useMemo(() => {
     let e = [{
       icon: o.T39,
-      text: O.intl.formatToPlainString(O.t.gcdJ8P, {
-        timestamp: g.default.extractTimestamp(w.id)
+      text: y.intl.formatToPlainString(y.t.gcdJ8J, {
+        timestamp: g.default.extractTimestamp(P.id)
       })
     }];
-    return null != w.user && e.push({
+    return null != P.user && e.push({
       icon: o.tBG,
-      text: O.intl.formatToPlainString(O.t.qE7oqq, {
-        user: f.ZP.getUserTag(w.user)
+      text: y.intl.formatToPlainString(y.t.qE7oqs, {
+        user: f.ZP.getUserTag(P.user)
       })
     }), e
-  }, [w.id, w.user]), L = r.useMemo(() => {
+  }, [P.id, P.user]), L = r.useMemo(() => {
     var e;
-    return null != P.bot && (null == (e = w.scopes) ? true : e.includes(l.x.BOT)) ? (0, i.jsx)(j.Z, {
+    return null != w.bot && (null == (e = P.scopes) ? true : e.includes(l.x.BOT)) ? (0, i.jsx)(j.Z, {
       guild: n,
       applicationIntegration: s
     }) : (0, i.jsx)(o.Zbd, {
@@ -140,33 +140,33 @@ function S(e) {
       children: (0, i.jsx)(o.Text, {
         color: "text-muted",
         variant: "text-sm/normal",
-        children: O.intl.string(O.t.pfLnzc)
+        children: y.intl.string(y.t.pfLnza)
       })
     })
-  }, [P.bot, s, n, w.scopes]);
+  }, [w.bot, s, n, P.scopes]);
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(h.Z, {
-      name: P.name,
-      imageSrc: null != (t = P.getIconURL(32)) ? t : b.pK["0"],
+      name: w.name,
+      imageSrc: null != (t = w.getIconURL(32)) ? t : b.pK["0"],
       details: R,
       isHeader: true
-    }), (null == P ? true : P.description) != null ? (0, i.jsx)(p.Z, {
-      userBio: P.description,
+    }), (null == w ? true : w.description) != null ? (0, i.jsx)(p.Z, {
+      userBio: w.description,
       className: _.headerDescription
     }) : null, Z ? (0, i.jsx)(u.Z, {
-      application: P,
+      application: w,
       canNavigate: I,
       guildId: n.id
     }) : null, (0, i.jsx)(o.izJ, {
       className: _.headerDivider
-    }), null != P.bot ? (0, i.jsxs)("div", {
+    }), null != w.bot ? (0, i.jsxs)("div", {
       className: _.section,
       children: [(0, i.jsx)(x.Z, {
         icon: (0, i.jsx)(o.wGt, {
           size: "xs",
           color: "currentColor"
         }),
-        title: O.intl.string(O.t.AOdOYm)
+        title: y.intl.string(y.t.AOdOYr)
       }), L]
     }) : null, (0, i.jsxs)("div", {
       className: _.section,
@@ -175,7 +175,7 @@ function S(e) {
           size: "md",
           color: "currentColor"
         }),
-        title: O.intl.string(O.t["t9ZX/P"])
+        title: y.intl.string(y.t["t9ZX/I"])
       }), T.length > 0 ? (0, i.jsx)(v.Z, {
         webhooks: T,
         editedWebhook: S,
@@ -188,7 +188,7 @@ function S(e) {
         children: (0, i.jsx)(o.Text, {
           color: "text-muted",
           variant: "text-sm/normal",
-          children: A ? O.intl.string(O.t.ahPd2d) : O.intl.string(O.t.axqYMj)
+          children: A ? y.intl.string(y.t.ahPd2Y) : y.intl.string(y.t.axqYMl)
         })
       })]
     }), (0, i.jsx)(o.izJ, {
@@ -200,14 +200,14 @@ function S(e) {
       children: [(0, i.jsx)(o.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
-        children: k ? O.intl.string(O.t.hdneLy) : O.intl.string(O.t.xRCMq6)
+        children: k ? y.intl.string(y.t.hdneL4) : y.intl.string(y.t.xRCMqx)
       }), (0, i.jsx)(c.Z.Child, {
         grow: 0,
         shrink: 0,
         children: (0, i.jsx)(o.Button, {
           variant: "critical-primary",
           size: "sm",
-          text: O.intl.string(O.t.ebGf4u),
+          text: y.intl.string(y.t.ebGf4m),
           disabled: !k,
           onClick: D
         })

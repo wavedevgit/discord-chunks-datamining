@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk835473 = require("./835473.js"),
   Chunk621853 = require("./621853.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk373942 = require("./373942.js");
+  Chunk685009 = require("./685009.js");
 
 function g(e) {
   let {
@@ -76,11 +76,11 @@ function p(e) {
     }), (0, r.jsx)(l.xvT, {
       variant: "text-sm/medium",
       color: "text-secondary",
-      children: g ? a ? d.intl.format(d.t.wiyuGx, {
+      children: g ? a ? d.intl.format(d.t.wiyuG9, {
         applicationName: i.name
-      }) : o ? d.intl.format(d.t.RNWFOT, {
+      }) : o ? d.intl.format(d.t.RNWFOQ, {
         onConnect: u
-      }) : d.intl.string(d.t["9TX4UV"]) : (0, r.jsx)("div", {
+      }) : d.intl.string(d.t["9TX4UT"]) : (0, r.jsx)("div", {
         className: f.footerPlaceholder
       })
     })]

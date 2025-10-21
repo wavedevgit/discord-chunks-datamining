@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk174727 = require("./174727.js"),
   Chunk882126 = require("./882126.jsx"),
   Chunk943351 = require("./943351.js"),
-  Chunk513726 = require("./513726.js");
+  Chunk21243 = require("./21243.js");
 let g = Chunk647438.memo(function(e) {
   let {
     playing: n,
@@ -46,7 +46,7 @@ let g = Chunk647438.memo(function(e) {
     let e = b.duration * s.Z.Millis.SECOND;
     _(0), N(0), O(e), F(e)
   }, [b]);
-  let A = l.useCallback((e, n) => {
+  let U = l.useCallback((e, n) => {
       if (t(), 0 === e.button) switch (n) {
         case 0:
           P(true);
@@ -58,7 +58,7 @@ let g = Chunk647438.memo(function(e) {
           k(true)
       }
     }, [t]),
-    U = l.useCallback(e => {
+    A = l.useCallback(e => {
       switch (e) {
         case 0:
           P(false);
@@ -125,8 +125,8 @@ let g = Chunk647438.memo(function(e) {
           max: (0, c.MN)(D, B, T),
           value: w,
           onChange: H,
-          onMouseDown: e => A(e, 0),
-          onMouseUp: () => U(0),
+          onMouseDown: e => U(e, 0),
+          onMouseUp: () => A(0),
           disabled: !y || h
         }), (0, a.jsx)("input", {
           ref: j,
@@ -136,8 +136,8 @@ let g = Chunk647438.memo(function(e) {
           max: (0, c.MN)(D, B, T),
           value: S,
           onChange: L,
-          onMouseDown: e => A(e, 2),
-          onMouseUp: () => U(2),
+          onMouseDown: e => U(e, 2),
+          onMouseUp: () => A(2),
           disabled: !y || h
         })]
       }), (0, a.jsx)("div", {
@@ -150,8 +150,8 @@ let g = Chunk647438.memo(function(e) {
           max: (0, c.MN)(D, B, T),
           value: C,
           onChange: z,
-          onMouseDown: e => A(e, 1),
-          onMouseUp: () => U(1),
+          onMouseDown: e => U(e, 1),
+          onMouseUp: () => A(1),
           disabled: !y || h
         })
       })]

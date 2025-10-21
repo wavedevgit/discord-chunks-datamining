@@ -23,7 +23,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk981631 = require("./981631.js"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk670563 = require("./670563.js");
+  Chunk448239 = require("./448239.js");
 
 function v(e) {
   let {
@@ -141,7 +141,7 @@ function v(e) {
   });
   return Y ? J : (0, r.jsx)("div", {
     role: "img",
-    "aria-label": y.intl.string(y.t.ayozFh),
+    "aria-label": y.intl.string(y.t.ayozFl),
     children: (0, r.jsx)(o.Rny, {
       children: J
     })

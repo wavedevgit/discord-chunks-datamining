@@ -1,7 +1,7 @@
 /** Chunk was on 42483 **/
 /** chunk id: 382086, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
-  Z: () => _,
+  Z: () => g,
   v: () => u
 });
 var Chunk951288 = require("./951288.js");
@@ -14,7 +14,7 @@ var Chunk755721 = require("./755721.js"),
   Chunk675999 = require("./675999.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk804283 = require("./804283.js");
+  Chunk470816 = require("./470816.js");
 let p = .5 > Math.random();
 
 function u(t) {
@@ -22,13 +22,13 @@ function u(t) {
     onClose: n,
     onBack: e,
     onCreationIntentChosen: u,
-    hasFooter: _ = true
-  } = t, g = (0, i.jsx)(l.zx, {
-    className: C.backButton,
+    hasFooter: g = true
+  } = t, _ = (0, i.jsx)(l.zx, {
+    className: m.backButton,
     look: l.zx.Looks.BLANK,
     size: l.zx.Sizes.MIN,
     onClick: e,
-    children: m.intl.string(m.t["13/7kZ"])
+    children: C.intl.string(C.t["13/7kX"])
   });
 
   function L(t) {
@@ -41,61 +41,61 @@ function u(t) {
     content: (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsxs)(a.xBx, {
         direction: s.Z.Direction.VERTICAL,
-        className: C.header,
+        className: m.header,
         separator: false,
         children: [(0, i.jsx)(a.Heading, {
-          className: C.title,
+          className: m.title,
           variant: "heading-xl/semibold",
-          children: m.intl.string(m.t.f3MvGR)
+          children: C.intl.string(C.t.f3MvGS)
         }), (0, i.jsx)(a.Text, {
-          className: C.subtitle,
+          className: m.subtitle,
           color: "header-secondary",
           variant: "text-md/normal",
-          children: m.intl.string(m.t["nOzc7+"])
+          children: C.intl.string(C.t.nOzc7w)
         }), null != n && (0, i.jsx)(a.olH, {
-          className: C.closeButton,
+          className: m.closeButton,
           onClick: n
         })]
       }), (0, i.jsxs)(a.hzk, {
-        className: C.optionsList,
+        className: m.optionsList,
         children: [p ? (0, i.jsxs)(i.Fragment, {
           children: [(0, i.jsx)(d.Z, {
             icon: a.Nye,
-            message: m.intl.string(m.t.uE7zcn),
+            message: C.intl.string(C.t.uE7zcu),
             onClick: () => L(c.lr.FRIENDS)
           }), (0, i.jsx)(d.Z, {
             icon: a.q3d,
-            message: m.intl.string(m.t.h9Q1lJ),
+            message: C.intl.string(C.t.h9Q1lG),
             onClick: () => L(c.lr.COMMUNITY)
           })]
         }) : (0, i.jsxs)(i.Fragment, {
           children: [(0, i.jsx)(d.Z, {
             icon: a.q3d,
-            message: m.intl.string(m.t.h9Q1lJ),
+            message: C.intl.string(C.t.h9Q1lG),
             onClick: () => L(c.lr.COMMUNITY)
           }), (0, i.jsx)(d.Z, {
             icon: a.Nye,
-            message: m.intl.string(m.t.uE7zcn),
+            message: C.intl.string(C.t.uE7zcu),
             onClick: () => L(c.lr.FRIENDS)
           })]
         }), (0, i.jsx)(a.Text, {
-          className: C.skip,
+          className: m.skip,
           color: "header-secondary",
           variant: "text-sm/normal",
-          children: m.intl.format(m.t["SMc+Gx"], {
+          children: C.intl.format(C.t["SMc+Gz"], {
             onSkip: () => L(null)
           })
         })]
-      }), _ && (0, i.jsx)(a.mzw, {
+      }), g && (0, i.jsx)(a.mzw, {
         justify: s.Z.Justify.BETWEEN,
-        children: g
+        children: _
       })]
     }),
-    footer: g
+    footer: _
   }
 }
 
-function _(t) {
+function g(t) {
   let {
     content: n
   } = u(t);

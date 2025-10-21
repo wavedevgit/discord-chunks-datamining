@@ -19,7 +19,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk179828 = require("./179828.jsx"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk438160 = require("./438160.js");
+  Chunk54966 = require("./54966.js");
 
 function g(e) {
   let {
@@ -30,8 +30,8 @@ function g(e) {
     subsection: I,
     onClose: y
   } = e, {
-    trackUserProfileAction: Z
-  } = (0, c.KZ)(), _ = (0, i.e7)([d.Z], () => {
+    trackUserProfileAction: _
+  } = (0, c.KZ)(), Z = (0, i.e7)([d.Z], () => {
     var e;
     return null == (e = d.Z.getUserProfile(n.id)) ? true : e.application
   }), O = (0, i.e7)([s.Z, a.Z], () => s.Z.getChannel(a.Z.getChannelId()));
@@ -41,9 +41,9 @@ function g(e) {
     children: [(null == g ? true : g.bio) != null && (null == g ? true : g.bio) !== "" && (0, l.jsx)(m.Z, {
       userBio: g.bio,
       setLineClamp: false
-    }), (null == _ ? true : _.popularApplicationCommandIds) != null && null != O && (0, l.jsx)(u.Z, {
-      applicationId: _.id,
-      commandIds: _.popularApplicationCommandIds,
+    }), (null == Z ? true : Z.popularApplicationCommandIds) != null && null != O && (0, l.jsx)(u.Z, {
+      applicationId: Z.id,
+      commandIds: Z.popularApplicationCommandIds,
       channel: O,
       guildId: b,
       onClick: y
@@ -53,7 +53,7 @@ function g(e) {
       guildId: g.guildId,
       scrollIntoView: I === h.Tb.ROLES
     }), (0, l.jsx)(f.Z, {
-      heading: v.intl.string(v.t["A//N4u"]),
+      heading: v.intl.string(v.t["A//N4k"]),
       children: (0, l.jsx)(p.Z, {
         userId: n.id,
         guildId: b,
@@ -66,7 +66,7 @@ function g(e) {
         userId: n.id,
         className: j.note,
         autoFocus: I === h.Tb.NOTE,
-        onUpdate: () => Z({
+        onUpdate: () => _({
           action: "SET_NOTE"
         })
       })

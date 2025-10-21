@@ -52,8 +52,8 @@ let b = e => {
         report_id: n
       }), null != j && null != y && o.Z.disableIntegration(j, y.id).catch(() => {
         a.Z.show({
-          title: h.intl.string(h.t.wYqMmJ),
-          body: h.intl.string(h.t.A4Mnsr)
+          title: h.intl.string(h.t.wYqMmI),
+          body: h.intl.string(h.t.A4Mnst)
         })
       })
     }, [t.id, j, y, n]),
@@ -65,9 +65,9 @@ let b = e => {
       return n && r
     });
   return null != t && null != j && b && I ? (0, r.jsx)(d.JZ, {
-    title: h.intl.string(h.t["WV/CsL"]),
-    description: h.intl.string(h.t["FlcC+/"]),
-    buttonText: f ? h.intl.string(h.t.aCJlq6) : h.intl.string(h.t["6I1F3t"]),
+    title: h.intl.string(h.t["WV/CsH"]),
+    description: h.intl.string(h.t["FlcC+3"]),
+    buttonText: f ? h.intl.string(h.t.aCJlq4) : h.intl.string(h.t["6I1F3i"]),
     buttonDisabled: !f,
     onButtonPress: Z,
     buttonVariant: f ? "critical-primary" : "secondary"

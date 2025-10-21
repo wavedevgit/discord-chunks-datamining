@@ -1,4 +1,4 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 287746, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => tt
@@ -108,8 +108,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk959517 = require("./959517.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk161655 = require("./161655.js"),
-  Chunk599610 = require("./599610.js");
+  Chunk97009 = require("./97009.js"),
+  Chunk180376 = require("./180376.js");
 
 function e2(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -266,7 +266,7 @@ class e9 extends Chunk647438.PureComponent {
       textValue: this.state.textValue,
       richValue: this.state.richValue,
       focused: exports,
-      className: Chunk161655.channelTextArea,
+      className: Chunk97009.channelTextArea,
       channel: module,
       placeholder: Chunk106351,
       accessibilityLabel: Chunk442837,
@@ -289,7 +289,7 @@ class e9 extends Chunk647438.PureComponent {
       textValue: this.state.textValue,
       richValue: this.state.richValue,
       focused: exports,
-      className: Chunk161655.channelTextArea,
+      className: Chunk97009.channelTextArea,
       channel: module,
       placeholder: Chunk106351,
       accessibilityLabel: Chunk442837,
@@ -332,7 +332,7 @@ class e9 extends Chunk647438.PureComponent {
       children: () => Chunk904245 ? (0, Chunk951288.jsx)(Chunk481060.UkV, {
         isShaking: Chunk430742 > 0,
         intensity: Chunk430742,
-        className: Chunk161655.shaker,
+        className: Chunk97009.shaker,
         children: Chunk367907
       }) : Chunk367907
     })
@@ -660,13 +660,13 @@ class te extends Chunk647438.PureComponent {
         textAreaHighlighted: w
       } = this.state,
       M = Chunk873546 === Chunk541716.Ie.SIDEBAR;
-    t = Chunk581364 && require.type === Chunk981631.d4z.GUILD_VOICE ? Chunk388032.t.pnnyFR : Chunk581364 && require.type === Chunk981631.d4z.GUILD_STAGE_VOICE ? Chunk388032.t.YInSkp : Chunk106351.T.THREADS.has(require.type) ? Chunk388032.t["OkzL+f"] : Chunk388032.t.UbNmGR;
+    t = Chunk581364 && require.type === Chunk981631.d4z.GUILD_VOICE ? Chunk388032.t.pnnyFZ : Chunk581364 && require.type === Chunk981631.d4z.GUILD_STAGE_VOICE ? Chunk388032.t.YInSkq : Chunk106351.T.THREADS.has(require.type) ? Chunk388032.t["OkzL+Q"] : Chunk388032.t.UbNmGc;
     let R = (0, Chunk951288.jsx)("div", {
-        className: Chunk161655.channelBottomBarArea,
+        className: Chunk97009.channelBottomBarArea,
         children: (0, Chunk951288.jsx)(Chunk685722.Z, {})
       }),
       L = (0, Chunk951288.jsxs)("div", {
-        className: Chunk161655.channelBottomBarArea,
+        className: Chunk97009.channelBottomBarArea,
         children: [(0, Chunk951288.jsx)(Chunk155409.Z, {
           childRef: this.containerDomRef,
           tutorialId: "writing-messages",
@@ -701,8 +701,8 @@ class te extends Chunk647438.PureComponent {
       k = Chunk989573 && Chunk499254 || Chunk456007,
       U = Chunk752305 ? Chunk667204 : Chunk104919,
       B = a()({
-        [Chunk599610.barWithAppLauncherButton]: Chunk993766,
-        [Chunk599610.barWithAppsDMsUI]: Chunk989573
+        [Chunk180376.barWithAppLauncherButton]: Chunk993766,
+        [Chunk180376.barWithAppsDMsUI]: Chunk989573
       }),
       {
         enabled: H
@@ -731,7 +731,7 @@ class te extends Chunk647438.PureComponent {
               handler: this.handleOpenAppLauncher
             }), (0, Chunk951288.jsxs)(e6, {
               isSidebar: Chunk581364,
-              className: Chunk161655.chatContent,
+              className: Chunk97009.chatContent,
               "aria-label": Chunk388032.intl.formatToPlainString(exports, {
                 channelName: require.name
               }),
@@ -748,7 +748,7 @@ class te extends Chunk647438.PureComponent {
               }), (0, Chunk951288.jsxs)(Chunk481060.y5t, {
                 component: (0, Chunk951288.jsx)(Chunk481060.nn4, {
                   children: (0, Chunk951288.jsx)(Chunk481060.H, {
-                    children: Chunk388032.intl.format(Chunk388032.t.eTzKk5, {
+                    children: Chunk388032.intl.format(Chunk388032.t.eTzKkx, {
                       channelName: require.name
                     })
                   })
@@ -769,8 +769,8 @@ class te extends Chunk647438.PureComponent {
                 })) ? module : (0, Chunk951288.jsxs)("form", {
                   ref: this.inputFormRef,
                   onSubmit: e4,
-                  className: a()(Chunk161655.form, {
-                    [Chunk161655.formWithLoadedChatInput]: !Chunk752305
+                  className: a()(Chunk97009.form, {
+                    [Chunk97009.formWithLoadedChatInput]: !Chunk752305
                   }),
                   children: [Chunk607070 && (0, Chunk951288.jsx)(Chunk217871.Z, {
                     channelId: require.id
@@ -873,7 +873,7 @@ class te extends Chunk647438.PureComponent {
       }) : null != l && (0, Y.J)(l) && null != r && !eI.Z.can(eJ.Plq.ADMINISTRATOR, r) ? (0, i.jsx)(X.T, {
         guild: r,
         disabledUntil: l
-      }) : a ? (0, i.jsx)(K.h, {
+      }) : a ? (0, i.jsx)(q.h, {
         guild: r
       }) : null
     }), e2(this, "renderAppLauncherButton", () => {
@@ -921,7 +921,7 @@ let tt = Chunk647438.memo(function(e) {
     accessibilityLabel: s
   } = (0, eV.Z)({
     channel: t
-  }), c = (0, ed.S)(eN.default.getCurrentUser(), t), [u] = (0, q.AB)(null == n ? true : n.id), h = (0, W.Ux)(null == n ? true : n.id), f = (0, d.e7)([eN.default], () => eN.default.getCurrentUser()), m = (0, d.e7)([eS.ZP], () => {
+  }), c = (0, ed.S)(eN.default.getCurrentUser(), t), [u] = (0, K.AB)(null == n ? true : n.id), h = (0, W.Ux)(null == n ? true : n.id), f = (0, d.e7)([eN.default], () => eN.default.getCurrentUser()), m = (0, d.e7)([eS.ZP], () => {
     var e, t, i;
     return null != f && null != (i = null == (e = eS.ZP.getMember(null != (t = null == n ? true : n.id) ? t : eJ.lds, null == f ? true : f.id)) ? true : e.isPending) && i
   }), g = (0, d.e7)([eo.Z], () => eo.Z.isEnabled()), C = (0, eu.Z)(t.id), y = (0, J.Z)(t.id), v = (0, I.R)({
@@ -958,7 +958,7 @@ let tt = Chunk647438.memo(function(e) {
     F = (0, b.d7)(t),
     z = V.length > 0 || t.rateLimitPerUser > 0 || null != H || null != F,
     {
-      showLinkedLobbyApplicationLoadingIndicator: K
+      showLinkedLobbyApplicationLoadingIndicator: q
     } = (0, eH.Z)(t.linkedLobby),
     Y = (0, G.Z)("ChannelChat");
   return (0, i.jsx)(te, {
@@ -988,7 +988,7 @@ let tt = Chunk647438.memo(function(e) {
     recipientUser: B,
     voiceChannel: U,
     messagesTypingGradient: z,
-    showLinkedLobbyApplicationLoadingIndicator: K,
+    showLinkedLobbyApplicationLoadingIndicator: q,
     announcementComposerEnabled: Y
   })
 })

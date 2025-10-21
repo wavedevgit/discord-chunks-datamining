@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 37772, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => B
@@ -37,8 +37,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk834129 = require("./834129.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk77162 = require("./77162.js"),
-  Chunk5898 = require("./5898.js");
+  Chunk378661 = require("./378661.js"),
+  Chunk360514 = require("./360514.js");
 
 function G(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -123,7 +123,7 @@ let B = Chunk647438.memo(function e(t) {
     message: Y.message,
     channel: q,
     hasThread: false
-  })) : (m.Z.isBlockedForMessage(s) ? i = L.t["+FcYMz"] : m.Z.isIgnoredForMessage(s) ? i = L.t.VFWjc3 : (0, y.DQ)(s) && W && (i = L.t.xfkfTE), true !== i) ? (0, r.jsx)(F, {
+  })) : (m.Z.isBlockedForMessage(s) ? i = L.t["+FcYM/"] : m.Z.isIgnoredForMessage(s) ? i = L.t["VFWjc+"] : (0, y.DQ)(s) && W && (i = L.t.xfkfTK), true !== i) ? (0, r.jsx)(F, {
     className: M,
     compact: R,
     count: 1,
@@ -163,9 +163,9 @@ let B = Chunk647438.memo(function e(t) {
       enabledContentHarmTypeFlags: eu,
       ctaButtonType: ed
     }),
-    childrenExecutedCommand: (0, w.Z)(s, l, R),
+    childrenExecutedCommand: (0, T.Z)(s, l, R),
     childrenMessageContent: (0, N.Z)(t, er),
-    childrenSystemMessage: (0, T.Z)(t),
+    childrenSystemMessage: (0, w.Z)(t),
     onContextMenu: B,
     onClick: V,
     hasThread: false !== z && null != eo && s.hasFlag(D.iLy.HAS_THREAD),
@@ -174,7 +174,7 @@ let B = Chunk647438.memo(function e(t) {
     messageRef: ec,
     author: el,
     "aria-labelledby": ef,
-    "aria-roledescription": L.intl.string(L.t.BAB0yM)
+    "aria-roledescription": L.intl.string(L.t.BAB0yK)
   })
 });
 

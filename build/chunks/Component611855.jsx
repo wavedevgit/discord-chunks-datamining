@@ -12,7 +12,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk481060 = require("./481060.js"),
   Chunk410030 = require("./410030.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk757166 = require("./757166.js");
+  Chunk896810 = require("./896810.js");
 let d = function(e) {
   let {
     className: t,
@@ -32,7 +32,7 @@ let d = function(e) {
       style: {
         opacity: i
       },
-      children: c.intl.string(c.t.o6FLcH)
+      children: c.intl.string(c.t.o6FLcF)
     })]
   })
 }

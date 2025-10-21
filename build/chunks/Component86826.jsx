@@ -12,7 +12,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk120998 = require("./120998.jsx"),
   Chunk353042 = require("./353042.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk403595 = require("./403595.js");
+  Chunk496034 = require("./496034.js");
 let p = function(e) {
   var t;
   let {
@@ -39,9 +39,9 @@ let p = function(e) {
               children: n
             }), (0, r.jsx)("div", {
               className: d.rate,
-              children: (c = e[e.length - 1] / t * 1e3) > 1e3 ? u.intl.formatToPlainString(u.t["WU+gTU"], {
+              children: (c = e[e.length - 1] / t * 1e3) > 1e3 ? u.intl.formatToPlainString(u.t["WU+gTX"], {
                 size: Math.round(c / 1e3)
-              }) : u.intl.formatToPlainString(u.t.wnF6TE, {
+              }) : u.intl.formatToPlainString(u.t.wnF6TH, {
                 size: Math.round(c)
               })
             })]

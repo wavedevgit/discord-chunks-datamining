@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk846071 = require("./846071.js"),
   Chunk345655 = require("./345655.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk10198 = require("./10198.js");
+  Chunk197571 = require("./197571.js");
 
 function p() {
   let {
@@ -32,16 +32,16 @@ function p() {
     })
   }, [module]), h = [{
     value: Chunk345655._.VOICE_ISOLATION,
-    name: Chunk388032.intl.string(Chunk388032.t.cjPbpa),
-    desc: Chunk388032.intl.string(Chunk388032.t.CzhvnJ)
+    name: Chunk388032.intl.string(Chunk388032.t.cjPbpT),
+    desc: Chunk388032.intl.string(Chunk388032.t.CzhvnE)
   }, {
     value: Chunk345655._.STUDIO,
-    name: Chunk388032.intl.string(Chunk388032.t.VZPR0d),
-    desc: Chunk388032.intl.string(Chunk388032.t.ZaJksb)
+    name: Chunk388032.intl.string(Chunk388032.t.VZPR0R),
+    desc: Chunk388032.intl.string(Chunk388032.t.ZaJksS)
   }, {
     value: Chunk345655._.CUSTOM,
-    name: Chunk388032.intl.string(Chunk388032.t["N/PQjo"]),
-    desc: Chunk388032.intl.string(Chunk388032.t.SnBmub)
+    name: Chunk388032.intl.string(Chunk388032.t["N/PQjv"]),
+    desc: Chunk388032.intl.string(Chunk388032.t.SnBmuY)
   }].filter(e => {
     let {
       value: t
@@ -49,9 +49,9 @@ function p() {
     return n.includes(t)
   });
   return (0, Chunk951288.jsx)("div", {
-    className: Chunk10198.marginBottom20,
+    className: Chunk197571.marginBottom20,
     children: (0, Chunk951288.jsx)(Chunk481060.FXm, {
-      label: Chunk388032.intl.string(Chunk388032.t.LM3U3t),
+      label: Chunk388032.intl.string(Chunk388032.t.LM3U3k),
       onChange: e => p({
         value: e
       }),

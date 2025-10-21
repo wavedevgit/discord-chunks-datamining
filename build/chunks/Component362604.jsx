@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk115610 = require("./115610.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk247708 = require("./247708.js");
+  Chunk38297 = require("./38297.js");
 
 function b(e) {
   let {
@@ -47,7 +47,7 @@ function b(e) {
           className: o()({
             [E.compact]: b
           }),
-          children: "" !== t.content ? t.content : g.intl.string(g.t.wnn1DQ)
+          children: "" !== t.content ? t.content : g.intl.string(g.t.wnn1Dc)
         })
       })
     }), (0, r.jsxs)(l.ButtonGroup, {
@@ -69,7 +69,7 @@ function b(e) {
         }
       }), (0, r.jsx)(l.Button, {
         variant: "secondary",
-        text: g.intl.string(g.t.gbrrAw),
+        text: g.intl.string(g.t.gbrrAz),
         icon: null != O ? {
           type: "sticker",
           asset: O,

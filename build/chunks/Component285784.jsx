@@ -1,4 +1,4 @@
-/** Chunk was on 51725 **/
+/** Chunk was on 98878 **/
 /** chunk id: 285784, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   Zs: () => d,
@@ -39,8 +39,8 @@ function d(e) {
       variant: "secondary",
       icon: l.aAc,
       onClick: n,
-      text: s.intl.string(s.t.RDE0SU),
-      "aria-label": s.intl.string(s.t.Ej3B3d)
+      text: s.intl.string(s.t.RDE0Sc),
+      "aria-label": s.intl.string(s.t.Ej3B3Y)
     } : {
       variant: "secondary",
       icon: d ? l.dz2 : l.xPt,
@@ -48,8 +48,8 @@ function d(e) {
         null != n && n(e), u(true), c.start(1e3, () => u(false))
       },
       disabled: d,
-      text: d ? s.intl.string(s.t["t5VZ8/"]) : s.intl.string(s.t.RDE0SU),
-      "aria-label": s.intl.string(s.t.Ej3B3d)
+      text: d ? s.intl.string(s.t.t5VZ88) : s.intl.string(s.t.RDE0Sc),
+      "aria-label": s.intl.string(s.t.Ej3B3Y)
     }
   }({
     onInviteClick: b,
@@ -66,7 +66,7 @@ function d(e) {
           canJoin: t,
           isVoiceChannel: i
         } = e;
-        return t ? n ? s.intl.string(s.t.aW2YlJ) : i ? s.intl.string(s.t.nxUtoa) : s.intl.string(s.t.ZYO5OD) : s.intl.string(s.t.TVBCKS)
+        return t ? n ? s.intl.string(s.t.aW2YlJ) : i ? s.intl.string(s.t.nxUtoQ) : s.intl.string(s.t.ZYO5OK) : s.intl.string(s.t.TVBCKZ)
       }({
         isJoined: v,
         canJoin: x,
@@ -76,7 +76,7 @@ function d(e) {
     }), t && null != f && I.push({
       variant: "active",
       size: "sm",
-      text: s.intl.string(s.t["2BP08P"]),
+      text: s.intl.string(s.t["2BP08E"]),
       onClick: f
     }), !t && !n && null != g) {
     let e = i && !t;
@@ -84,7 +84,7 @@ function d(e) {
       variant: e ? "active" : "secondary",
       size: "sm",
       icon: e ? l.dz2 : l.Dkj,
-      text: s.intl.string(s.t.DlcqlZ),
+      text: s.intl.string(s.t.DlcqlU),
       onClick: g,
       disabled: t
     })
@@ -93,12 +93,12 @@ function d(e) {
     variant: "primary",
     size: "sm",
     onClick: m,
-    text: s.intl.string(s.t.I0v0Qk)
+    text: s.intl.string(s.t.I0v0Qv)
   }), n && null != h && I.push({
     variant: "secondary",
     size: "sm",
     onClick: h,
-    text: s.intl.string(s.t.qaYzPD)
+    text: s.intl.string(s.t.qaYzPA)
   }), I
 }
 
@@ -109,7 +109,7 @@ function u(e) {
   return (0, i.jsx)(l.hU, {
     icon: l.xhG,
     variant: "secondary",
-    "aria-label": s.intl.string(s.t.bt75u7),
+    "aria-label": s.intl.string(s.t.bt75uw),
     onClick: n
   })
 }

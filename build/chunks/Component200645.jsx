@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk998502 = require("./998502.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk680465 = require("./680465.js");
+  Chunk761588 = require("./761588.js");
 
 function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -30,23 +30,23 @@ function m(e, t, n) {
 function g(e) {
   switch (e.state) {
     case "unknown":
-      return p.intl.string(p.t["KW+nqa"]);
+      return p.intl.string(p.t["KW+nqT"]);
     case "disabled":
-      return p.intl.string(p.t["Q/wAFx"]);
+      return p.intl.string(p.t["Q/wAF7"]);
     case "disconnected":
-      return p.intl.string(p.t.Xvs9IC);
+      return p.intl.string(p.t.Xvs9IM);
     case "initializing":
-      return p.intl.string(p.t.h4qz8f);
+      return p.intl.string(p.t.h4qz8W);
     case "connecting":
       return p.intl.string(p.t.fSu9XF);
     case "handshaking":
-      return p.intl.string(p.t["00aYLC"]);
+      return p.intl.string(p.t["00aYLJ"]);
     case "running":
-      return p.intl.string(p.t["54TB7e"]);
+      return p.intl.string(p.t["54TB7Z"]);
     case "waiting-for-retry":
-      return p.intl.string(p.t["0FONws"]);
+      return p.intl.string(p.t["0FONwi"]);
     case "failure":
-      return p.intl.string(p.t.Ic0nkZ);
+      return p.intl.string(p.t.Ic0nkd);
     default:
       (0, c.vE)(e.state)
   }
@@ -63,23 +63,23 @@ function E() {
   if (!module) return null;
   let E = "running" === Chunk998502.state;
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk680465.systemServiceContainer,
+    className: Chunk761588.systemServiceContainer,
     children: [(0, Chunk951288.jsxs)("div", {
-      className: Chunk680465.systemServiceTextContainer,
+      className: Chunk761588.systemServiceTextContainer,
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/medium",
         color: "header-primary",
-        children: Chunk388032.intl.string(Chunk388032.t["roHq8/"])
+        children: Chunk388032.intl.string(Chunk388032.t.roHq80)
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
         color: "text-secondary",
-        children: Chunk388032.intl.format(Chunk388032.t["8CAL+P"], {
+        children: Chunk388032.intl.format(Chunk388032.t["8CAL+D"], {
           helpCenterLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.SYSTEM_SERVICE)
         })
       }), Chunk823379 ? (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
         color: E ? "text-feedback-positive" : "text-feedback-warning",
-        children: E ? Chunk388032.intl.string(Chunk388032.t.KHVMkZ) : Chunk388032.intl.format(Chunk388032.t["5Rlr0d"], {
+        children: E ? Chunk388032.intl.string(Chunk388032.t.KHVMkW) : Chunk388032.intl.format(Chunk388032.t["5Rlr0b"], {
           status: g(Chunk998502)
         })
       }) : null]
@@ -87,7 +87,7 @@ function E() {
       variant: Chunk823379 ? "critical-secondary" : "primary",
       loading: exports,
       onClick: m,
-      text: Chunk823379 ? Chunk388032.intl.string(Chunk388032.t.pAwbdH) : Chunk388032.intl.string(Chunk388032.t["1iI46O"])
+      text: Chunk823379 ? Chunk388032.intl.string(Chunk388032.t.pAwbdL) : Chunk388032.intl.string(Chunk388032.t["1iI46O"])
     })]
   })
 }
@@ -104,7 +104,7 @@ class b extends Chunk647438.PureComponent {
       openOnStartup: e,
       startMinimized: t,
       minimizeToTray: n
-    } = this.state, i = (0, Chunk358085.isLinux)() ? Chunk388032.intl.string(Chunk388032.t["7pPjTU"]) : Chunk388032.intl.string(Chunk388032.t.ZkDZoq);
+    } = this.state, i = (0, Chunk358085.isLinux)() ? Chunk388032.intl.string(Chunk388032.t["7pPjTW"]) : Chunk388032.intl.string(Chunk388032.t.ZkDZov);
     return (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
       gap: 16,
       children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
@@ -113,19 +113,19 @@ class b extends Chunk647438.PureComponent {
         children: Chunk647438
       }), (0, Chunk951288.jsxs)(Chunk481060.C3N, {
         children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
-          label: Chunk388032.intl.string(Chunk388032.t.WQm4p6),
-          description: Chunk388032.intl.string(Chunk388032.t["s/cQra"]),
+          label: Chunk388032.intl.string(Chunk388032.t.WQm4p1),
+          description: Chunk388032.intl.string(Chunk388032.t["s/cQrU"]),
           checked: module,
           onChange: this.handleToggleOpenOnStartup
         }), (0, Chunk358085.isWindows)() ? (0, Chunk951288.jsx)(Chunk481060.rsf, {
-          label: Chunk388032.intl.string(Chunk388032.t.n7Yjen),
-          description: Chunk388032.intl.string(Chunk388032.t.o2FSjI),
+          label: Chunk388032.intl.string(Chunk388032.t.n7Yjes),
+          description: Chunk388032.intl.string(Chunk388032.t.o2FSjB),
           checked: !!module && exports,
           disabled: !module,
           onChange: this.handleToggleStartMinimized
         }) : null, (0, Chunk951288.jsx)(Chunk481060.rsf, {
-          label: Chunk388032.intl.string(Chunk388032.t.abLFen),
-          description: Chunk388032.intl.string(Chunk388032.t["mVuX+v"]),
+          label: Chunk388032.intl.string(Chunk388032.t.abLFes),
+          description: Chunk388032.intl.string(Chunk388032.t["mVuX+j"]),
           checked: require,
           onChange: this.handleToggleMinimizeToTray
         }), (0, Chunk951288.jsx)(E, {})]

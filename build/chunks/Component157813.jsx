@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk475179 = require("./475179.js"),
   Chunk871499 = require("./871499.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk303659 = require("./303659.js");
+  Chunk808602 = require("./808602.js");
 
 function f(e) {
   let {
@@ -77,7 +77,7 @@ function p(e) {
     })
   }, [a, s]);
   return (0, r.jsx)(c.Z, {
-    label: a ? u.intl.string(u.t.QJMRUF) : u.intl.string(u.t.vZiwmJ),
+    label: a ? u.intl.string(u.t.QJMRUB) : u.intl.string(u.t.vZiwmG),
     className: o()(d.participantsButton, n),
     onClick: h,
     iconComponent: m,

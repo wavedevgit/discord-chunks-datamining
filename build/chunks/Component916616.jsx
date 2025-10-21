@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk217702 = require("./217702.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk609966 = require("./609966.js"),
+  Chunk12464 = require("./12464.js"),
   Chunk167969 = require("./167969.js"),
   Chunk557256 = require("./557256.js");
 
@@ -109,7 +109,7 @@ let A = Chunk647438.forwardRef((e, t) => {
       } = e;
       return (0, r.jsx)("img", {
         className: null != a ? a : true,
-        alt: null != i ? i : m.intl.string(m.t.X4IxWF),
+        alt: null != i ? i : m.intl.string(m.t.X4IxWL),
         src: t,
         style: R(n, o)
       })
@@ -177,7 +177,7 @@ let A = Chunk647438.forwardRef((e, t) => {
         className: g.clickableWrapper,
         tabIndex: null != B ? B : 0,
         onClick: G,
-        "aria-label": null != b ? b : m.intl.string(m.t.X4IxWF),
+        "aria-label": null != b ? b : m.intl.string(m.t.X4IxWL),
         "aria-describedby": u.r5,
         innerRef: W,
         focusProps: {
@@ -204,7 +204,7 @@ function C(e) {
     children: (0, r.jsx)("img", {
       src: (0, s.ap)(a) ? b : E,
       className: g.imageError,
-      alt: null != i ? i : m.intl.string(m.t.X4IxWF)
+      alt: null != i ? i : m.intl.string(m.t.X4IxWL)
     })
   })
 }

@@ -34,7 +34,7 @@ async function p(e) {
   } = e, A = I ? i.u1M : i.z1l, C = l.Z.getPremiumTypeSubscription();
   if (null != C && C.isPurchasedExternally && null != C.paymentGateway) {
     null != g && g(), a.Z.show({
-      title: f.intl.formatToPlainString(f.t.rTk9v7, {
+      title: f.intl.formatToPlainString(f.t["rTk9v/"], {
         paymentGatewayName: d.Vzj[C.paymentGateway]
       }),
       body: f.intl.format(f.t.NY03WF, {
@@ -54,7 +54,7 @@ async function p(e) {
   await (0, i.ZDy)(async () => {
     let {
       default: e
-    } = await Promise.all([n.e("24920"), n.e("32284")]).then(n.bind(n, 343649));
+    } = await Promise.all([n.e("24920"), n.e("26539")]).then(n.bind(n, 343649));
     return n => {
       let {
         transitionState: i,

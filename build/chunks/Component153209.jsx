@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 153209, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Gp: () => y,
@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk709054 = require("./709054.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk629775 = require("./629775.js");
+  Chunk407067 = require("./407067.js");
 
 function _() {
   let {
@@ -51,13 +51,13 @@ function y() {
     }
     returnfalse
   }, [exports, Chunk616032, require]) ? (0, Chunk951288.jsx)(Chunk481060.M0o, {
-    tooltip: Chunk388032.intl.string(Chunk388032.t["8k+6QU"]),
+    tooltip: Chunk388032.intl.string(Chunk388032.t["8k+6QY"]),
     color: Chunk481060.YX$.TERTIARY,
     icon: (0, Chunk951288.jsx)(Chunk481060.W6s, {
       size: "xs",
       color: "currentColor"
     }),
-    className: Chunk629775.controlButton,
+    className: Chunk407067.controlButton,
     onClick: () => {
       null != exports && (Chunk695346.d$.updateSetting(exports.id), Chunk626135.default.track(Chunk981631.rMx.NOTIFICATION_CENTER_ACTION, {
         action_type: Chunk497089.ud.MARK_ALL_READ

@@ -1,7 +1,7 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 848442, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => T
+  Z: () => w
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -28,7 +28,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk176505 = require("./176505.js"),
   Chunk629481 = require("./629481.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk702868 = require("./702868.js");
+  Chunk296553 = require("./296553.js");
 
 function P(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -67,7 +67,7 @@ function Z(e) {
     guildId: t,
     selected: n,
     handleClick: i
-  } = e, u = (0, h.RF)(t, "guild_shop_channel_row"), g = (0, o.e7)([y.Z], () => y.Z.getGuild(t)), C = (null == g ? true : g.features.has(x.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE)) === true, Z = "false" === s.K.get(E.tM, "false"), T = (0, o.e7)([d.Z], () => d.Z.useReducedMotion);
+  } = e, u = (0, h.RF)(t, "guild_shop_channel_row"), g = (0, o.e7)([y.Z], () => y.Z.getGuild(t)), C = (null == g ? true : g.features.has(x.GuildFeatures.ROLE_SUBSCRIPTIONS_AVAILABLE_FOR_PURCHASE)) === true, Z = "false" === s.K.get(E.tM, "false"), w = (0, o.e7)([d.Z], () => d.Z.useReducedMotion);
   return (0, r.jsx)(j.m, {
     id: "shop-".concat(t),
     className: l()(I.previewChannelRow, {
@@ -80,12 +80,12 @@ function Z(e) {
       height: 20,
       className: l()([e, I.shopIcon])
     }),
-    text: S.intl.string(S.t.al5EXF),
+    text: S.intl.string(S.t.al5EXL),
     selected: n,
     onClick: i,
     trailing: (0, r.jsxs)("div", {
       className: I.gifSection,
-      children: [T ? (0, r.jsx)(c.IGR, {
+      children: [w ? (0, r.jsx)(c.IGR, {
         color: c.TVs.unsafe_rawColors.BRAND_260.css,
         text: S.intl.string(S.t.y2b7CA),
         className: I.newBadge
@@ -103,7 +103,7 @@ function Z(e) {
             (0, _.dL)(x.Z5c.CHANNEL(t, null == (n = O.ZP.getDefaultChannel(t)) ? true : n.id))
           }
         },
-        "aria-label": S.intl.string(S.t.cpT0Cg),
+        "aria-label": S.intl.string(S.t.cpT0Cq),
         children: (0, r.jsx)(c.k$p, {
           size: "xs",
           color: "currentColor"
@@ -113,7 +113,7 @@ function Z(e) {
   })
 }
 
-function T(e) {
+function w(e) {
   let {
     guild: t,
     selected: i
@@ -131,7 +131,7 @@ function T(e) {
       height: 20,
       className: e
     }),
-    text: S.intl.string(S.t.al5EXF),
+    text: S.intl.string(S.t.al5EXL),
     selected: i,
     onClick: o,
     onContextMenu: e => {

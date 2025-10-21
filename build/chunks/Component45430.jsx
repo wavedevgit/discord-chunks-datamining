@@ -1,4 +1,4 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 45430, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk475179 = require("./475179.js"),
   Chunk841397 = require("./841397.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk631755 = require("./631755.js");
+  Chunk427538 = require("./427538.js");
 
 function c(e) {
   let {
@@ -20,14 +20,14 @@ function c(e) {
       className: s.content,
       children: [(0, i.jsx)(r.Heading, {
         variant: "heading-lg/normal",
-        children: o.intl.format(o.t.ilLVLi, {})
+        children: o.intl.format(o.t.ilLVLr, {})
       }), (0, i.jsx)(r.Button, {
         variant: "secondary",
         size: "md",
         onClick: e => {
           e.stopPropagation(), l.Z.toggleVoiceParticipantsHidden(t, false)
         },
-        text: o.intl.string(o.t.kLQySE)
+        text: o.intl.string(o.t.kLQySL)
       })]
     })]
   })

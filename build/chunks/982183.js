@@ -30,7 +30,7 @@ let s = "Notifications Inbox",
 function f(e) {
   return (0, i.yS)({
     id: a.STv,
-    name: "bookmarks" === e ? o.intl.string(o.t["2pAkDA"]) : o.intl.string(o.t.HcoRu7),
+    name: "bookmarks" === e ? o.intl.string(o.t["2pAkDA"]) : o.intl.string(o.t.HcoRu0),
     description: "",
     icon: true,
     features: []
@@ -46,10 +46,10 @@ var _ = function(e) {
     return e.ALL_MESSAGES_CHANNEL = "ALL_MESSAGES_CHANNEL", e.MENTION = "MENTION", e.BOOKMARK = "BOOKMARK", e
   }({});
 let m = {
-  UNREAD: Chunk388032.t.sRUdBw,
-  TODAY: Chunk388032.t.F4jZQk,
-  YESTERDAY: Chunk388032.t.gnv4pK,
-  OLDER: Chunk388032.t.exrPZm
+  UNREAD: Chunk388032.t.sRUdB8,
+  TODAY: Chunk388032.t.F4jZQs,
+  YESTERDAY: Chunk388032.t.gnv4pE,
+  OLDER: Chunk388032.t.exrPZv
 };
 var g = function(e) {
     return e.UNLOADED = "unloaded", e.LOADED = "loaded", e.LOADED_UNREAD = "loadedUnread", e

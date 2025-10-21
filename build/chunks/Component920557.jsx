@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk139256 = require("./139256.jsx"),
   Chunk294608 = require("./294608.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk525799 = require("./525799.js");
+  Chunk390840 = require("./390840.js");
 
 function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -227,7 +227,7 @@ function D(e) {
       scaleFontToUserSetting: true,
       children: t.pollMedia.text
     }), t.didSelfVote && (0, r.jsx)(s.T, {
-      children: y.intl.string(y.t["8DAM+/"])
+      children: y.intl.string(y.t["8DAM+5"])
     }), a && (0, r.jsx)(R, {
       percentage: t.votesPercentage,
       label: t.votes,

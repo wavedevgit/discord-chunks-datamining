@@ -19,7 +19,7 @@ function d() {
   return (0, Chunk951288.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_CODECS_VIDEO_EXPERIMENTAL_ENCODERS,
     children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
-      label: Chunk388032.intl.string(Chunk388032.t.AxnPm5),
+      label: Chunk388032.intl.string(Chunk388032.t.AxnPm1),
       checked: module,
       onChange: Chunk846027.Z.setExperimentalEncoders
     })
@@ -39,7 +39,7 @@ function f() {
       children: [(0, Chunk951288.jsx)(Chunk921801.F, {
         setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_CODECS_VIDEO_OPENH264,
         children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
-          label: Chunk388032.intl.string(Chunk388032.t["71Ve19"]),
+          label: Chunk388032.intl.string(Chunk388032.t["71Ve1y"]),
           checked: module,
           onChange: Chunk846027.Z.setOpenH264
         })

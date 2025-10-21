@@ -17,7 +17,7 @@ function c(e) {
     t = (0, s.P)(e.id);
   return (null == n ? true : n.isStaff()) === true && e.isDM() && null == t ? (0, i.jsx)(l.sNh, {
     id: "mark-as-stranger-danger",
-    label: d.intl.string(d.t.CgWmmZ),
+    label: d.intl.string(d.t.CgWmmT),
     action: () => (0, a.Dl)(e.id)
   }) : null
 }

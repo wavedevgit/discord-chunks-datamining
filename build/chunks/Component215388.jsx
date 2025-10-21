@@ -15,8 +15,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk703558 = require("./703558.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk980272 = require("./980272.js"),
-  Chunk258422 = require("./258422.js");
+  Chunk231319 = require("./231319.js"),
+  Chunk8542 = require("./8542.js");
 let h = (0, Chunk772848.Z)(),
   v = (0, Chunk131704.createChannelRecord)({
     id: "1",
@@ -132,7 +132,7 @@ function C(e) {
           maxLength: g
         }), null != g && (0, n.jsx)(o.nn4, {
           id: h,
-          children: f.intl.format(f.t["+DFxLS"], {
+          children: f.intl.format(f.t["+DFxLc"], {
             maxLength: g
           })
         })]

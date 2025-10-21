@@ -14,7 +14,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk486324 = require("./486324.js"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk674932 = require("./674932.js");
+  Chunk579534 = require("./579534.js");
 
 function _(e) {
   let {
@@ -57,7 +57,7 @@ function _(e) {
       }), (0, r.jsx)(i.Heading, {
         variant: "text-sm/medium",
         color: "always-white",
-        children: O || I ? d.intl.string(d.t.N0bC3N) : d.intl.string(d.t.O1sT5u)
+        children: O || I ? d.intl.string(d.t.N0bC3P) : d.intl.string(d.t.O1sT5v)
       })]
     })
   })

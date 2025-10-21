@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk217702 = require("./217702.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk528417 = require("./528417.js"),
+  Chunk969868 = require("./969868.js"),
   Chunk476945 = require("./476945.js"),
   Chunk945182 = require("./945182.js");
 
@@ -53,7 +53,7 @@ function I(t) {
         separator: false,
         children: [(0, i.jsx)(s.Heading, {
           variant: "heading-md/semibold",
-          children: x.intl.string(x.t.YBGjsr)
+          children: x.intl.string(x.t.YBGjso)
         }), (0, i.jsx)(s.olH, {
           "data-migration-pending": true,
           onClick: () => {
@@ -147,7 +147,7 @@ function N(t) {
           variant: "display-sm",
           color: "always-white",
           className: E.buttonText,
-          children: x.intl.string(x.t["lG6a5+"])
+          children: x.intl.string(x.t.lG6a5x)
         }), (0, i.jsx)(v, {
           imageType: 0
         })]
@@ -160,7 +160,7 @@ function N(t) {
           variant: "display-sm",
           color: "always-white",
           className: E.buttonText,
-          children: x.intl.string(x.t["t9uG/v"])
+          children: x.intl.string(x.t["t9uG/o"])
         }), (0, i.jsx)(v, {
           imageType: 1
         })]
@@ -183,7 +183,7 @@ function N(t) {
           variant: "display-sm",
           color: "always-white",
           className: E.buttonText,
-          children: x.intl.string(x.t.gFlB9f)
+          children: x.intl.string(x.t.gFlB9b)
         }), (0, i.jsx)(v, {
           imageType: 2
         })]

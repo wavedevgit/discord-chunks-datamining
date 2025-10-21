@@ -1,4 +1,4 @@
-/** Chunk was on 15351 **/
+/** Chunk was on 42124 **/
 /** chunk id: 7225, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
   default: () => v
@@ -20,8 +20,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk979007 = require("./979007.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk58954 = require("./58954.js"),
-  Chunk815847 = require("./815847.js");
+  Chunk465103 = require("./465103.js"),
+  Chunk325380 = require("./325380.js");
 
 function v(t) {
   let {
@@ -53,7 +53,7 @@ function v(t) {
     otps: P
   } = (0, x.q)(v);
   if (null == C) return null;
-  let T = m.intl.formatToPlainString(m.t.XDRjs7, {
+  let T = m.intl.formatToPlainString(m.t.XDRjs5, {
       appName: C.name
     }),
     A = (0, n.jsx)("div", {
@@ -61,13 +61,13 @@ function v(t) {
       children: (0, n.jsx)(u.Z, {})
     }),
     I = d.wS ? (0, n.jsx)(c.hU, {
-      "aria-label": m.intl.string(m.t.WqhZsr),
+      "aria-label": m.intl.string(m.t.WqhZss),
       icon: () => (0, n.jsx)(c.xPt, {
         size: "sm"
       }),
       onClick: () => {
         let t = "".concat(location.protocol, "//").concat(location.host).concat(S.Z5c.GLOBAL_DISCOVERY_APPS_PROFILE_SECTION(v, g.GlobalDiscoveryAppsSections.STORE));
-        (0, d.JG)(t, () => (0, c.showToast)((0, c.createToast)(m.intl.string(m.t["L/PwZW"]), c.ToastType.SUCCESS))), (0, _.X)(v, _.B.STORE_MODAL)
+        (0, d.JG)(t, () => (0, c.showToast)((0, c.createToast)(m.intl.string(m.t["L/PwZf"]), c.ToastType.SUCCESS))), (0, _.X)(v, _.B.STORE_MODAL)
       },
       variant: "icon-only"
     }) : true;
@@ -96,7 +96,7 @@ function v(t) {
         children: null != C.termsOfServiceUrl || null != C.privacyPolicyUrl ? (0, n.jsx)(h.Z, {
           termsOfServiceUrl: C.termsOfServiceUrl,
           privacyPolicyUrl: C.privacyPolicyUrl
-        }) : m.intl.string(m.t["3ZY+0N"])
+        }) : m.intl.string(m.t["3ZY+0D"])
       })
     })]
   })

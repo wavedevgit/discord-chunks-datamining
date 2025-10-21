@@ -3,23 +3,23 @@
 require.d(exports, {
   Z: () => d
 });
-var i, r, Chunk442837 = require("./442837.js"),
+var r, i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 let s = {},
   o = {};
-class c extends(r = Chunk442837.ZP.Store) {
+class c extends(i = Chunk442837.ZP.Store) {
   getSimilarGames(e) {
     return s[e]
   }
   getSimilarGamesError(e) {
     return o[e]
   }
-}(i = "displayName") in c ? Object.defineProperty(c, i, {
+}(r = "displayName") in c ? Object.defineProperty(c, r, {
   value: "GameProfileStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : c[i] = "GameProfileStore";
+}) : c[r] = "GameProfileStore";
 let d = new c(Chunk570140.Z, {
   GAME_PROFILE_GET_SIMILAR_GAMES_SUCCESS: function(e) {
     let {

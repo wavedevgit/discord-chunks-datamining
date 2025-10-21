@@ -1,4 +1,4 @@
-/** Chunk was on 3408 **/
+/** Chunk was on 17013 **/
 /** chunk id: 585857, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Q: () => g
@@ -12,7 +12,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk497505 = require("./497505.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk63803 = require("./63803.js");
+  Chunk39625 = require("./39625.js");
 
 function p(e) {
   let {
@@ -48,7 +48,7 @@ function m(e) {
     sourceQuestContent: s
   } = e;
   return t.length > 0 ? (0, r.jsx)(p, {
-    text: d.intl.string(d.t["qiS+xs"]),
+    text: d.intl.string(d.t["qiS+xj"]),
     quest: n,
     sourceQuestContent: s
   }) : null
@@ -59,7 +59,7 @@ function g(e) {
     children: [(0, r.jsx)(s.Text, {
       color: "text-muted",
       variant: "text-xs/medium",
-      children: d.intl.string(d.t.EJFSvL)
+      children: d.intl.string(d.t.EJFSvD)
     }), (0, r.jsx)(m, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},

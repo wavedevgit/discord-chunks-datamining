@@ -29,10 +29,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk295907 = require("./295907.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk313911 = require("./313911.js"),
-  Chunk285236 = require("./285236.js"),
-  Chunk465106 = require("./465106.js"),
-  Chunk10198 = require("./10198.js");
+  Chunk740508 = require("./740508.js"),
+  Chunk315091 = require("./315091.js"),
+  Chunk149715 = require("./149715.js"),
+  Chunk197571 = require("./197571.js");
 
 function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -98,7 +98,7 @@ function B(e) {
   }));
   return (0, r.jsxs)(c.VqE, {
     className: o()(N.addGamePopout, R.elevationBorderHigh),
-    "aria-label": C.intl.string(C.t.GTCx0t),
+    "aria-label": C.intl.string(C.t.GTCx0p),
     children: [(0, r.jsx)(c.VcW, {
       placeholder: C.intl.string(C.t.XqMe3N),
       value: a,
@@ -116,11 +116,11 @@ function B(e) {
       className: o()(N.actions, P.horizontal),
       children: [(0, r.jsx)(c.Avr, {
         variant: "secondary",
-        text: C.intl.string(C.t["ETE/oK"]),
+        text: C.intl.string(C.t["ETE/oC"]),
         onClick: t
       }), (0, r.jsx)(c.Button, {
         variant: "primary",
-        text: C.intl.string(C.t.GTCx0t),
+        text: C.intl.string(C.t.GTCx0p),
         disabled: null == a,
         onClick: f
       })]
@@ -142,7 +142,7 @@ function Z(e) {
   } = (0, s.cj)([_.ZP], () => ({
     canToggleDetection: null == v || _.ZP.isDetectionEnabled(v),
     isCurrentGameDetectionEnabled: _.ZP.isDetectionEnabled(I)
-  })), w = (0, s.e7)([_.ZP], () => _.ZP.getVisibleGame()), [D, x] = i.useState(false), k = i.useMemo(() => (0, g.le)(I) ? O ? I.gameName : C.intl.formatToPlainString(C.t.G6BGd3, {
+  })), w = (0, s.e7)([_.ZP], () => _.ZP.getVisibleGame()), [D, x] = i.useState(false), k = i.useMemo(() => (0, g.le)(I) ? O ? I.gameName : C.intl.formatToPlainString(C.t.G6BGdx, {
     subgameName: I.gameName
   }) : I.name, [I, O]), [G, B] = i.useState(null != k ? k : "???"), F = o()(P.flexCenter, {
     [N.game]: !a,
@@ -176,18 +176,18 @@ function Z(e) {
         Modal: e
       } = await Promise.resolve().then(n.bind(n, 793030));
       return t => (0, r.jsx)(e, M(L({}, t), {
-        title: C.intl.formatToPlainString(C.t.PZ4fKS, {
+        title: C.intl.formatToPlainString(C.t.PZ4fKc, {
           platform: k
         }),
-        subtitle: C.intl.formatToPlainString(C.t.ZIQbfX, {
+        subtitle: C.intl.formatToPlainString(C.t.ZIQbfb, {
           platform: k
         }),
         actions: [{
-          text: C.intl.string(C.t["ETE/oK"]),
+          text: C.intl.string(C.t["ETE/oC"]),
           onClick: () => t.onClose(),
           variant: "secondary"
         }, {
-          text: C.intl.string(C.t.Fmjzt7),
+          text: C.intl.string(C.t.Fmjztz),
           onClick: () => {
             u.Z.toggleDetection(I), t.onClose()
           },
@@ -229,7 +229,7 @@ function Z(e) {
         children: k
       }), (0, r.jsx)(c.aML, {
         "data-migration-pending": true,
-        text: C.intl.string(C.t["4PJP5u"]),
+        text: C.intl.string(C.t["4PJP5p"]),
         children: e => (0, r.jsx)(h.Z, M(L({
           className: N.gameVerifiedIcon,
           size: U,
@@ -259,7 +259,7 @@ function Z(e) {
       played: t,
       exePath: n
     } = I;
-    return a || et ? e = C.intl.string(C.t.VbV5dn) : null != t && "" !== t && (e = C.intl.format(C.t.gGeOEx, {
+    return a || et ? e = C.intl.string(C.t.VbV5dv) : null != t && "" !== t && (e = C.intl.format(C.t["gGeOE+"], {
       when: t
     })), (0, r.jsx)("div", {
       className: N.lastPlayed,
@@ -287,7 +287,7 @@ function Z(e) {
       colorClass: N.fill
     }), i = t ? (0, r.jsx)(c.aML, {
       "data-migration-pending": true,
-      text: C.intl.string(C.t.Vfw2Ly),
+      text: C.intl.string(C.t.Vfw2L5),
       children: e => (0, r.jsx)("i", L({
         className: N.overlayWarningIcon
       }, e))
@@ -296,9 +296,9 @@ function Z(e) {
       className: o()(P.flexCenter, P.noWrap, P.justifyBetween, N.toggleContainer),
       children: [i, (0, r.jsx)(c.aML, {
         "data-migration-pending": true,
-        text: C.intl.string(C.t["1+O+Tk"]),
+        text: C.intl.string(C.t["1+O+Tu"]),
         children: t => (0, r.jsx)(c.P3F, M(L({}, t), {
-          "aria-label": C.intl.string(C.t["1+O+Tk"]),
+          "aria-label": C.intl.string(C.t["1+O+Tu"]),
           className: N.toggleIcon,
           onClick: () => W(!e),
           children: n
@@ -341,9 +341,9 @@ function Z(e) {
       className: o()(P.flexCenter, P.noWrap, P.justifyBetween, N.toggleContainer),
       children: (0, r.jsx)(c.aML, {
         "data-migration-pending": true,
-        text: C.intl.string(C.t["y0B+lp"]),
+        text: C.intl.string(C.t["y0B+lo"]),
         children: e => (0, r.jsx)(c.P3F, M(L({}, e), {
-          "aria-label": C.intl.string(C.t["y0B+lp"]),
+          "aria-label": C.intl.string(C.t["y0B+lo"]),
           className: N.toggleIcon,
           onClick: z,
           children: (0, r.jsx)(c.U65, {
@@ -390,15 +390,15 @@ function Z(e) {
 
 function F() {
   return (0, Chunk951288.jsx)("div", {
-    className: o()(Chunk465106.flexCenter, Chunk313911.notDetected, Chunk313911.activeGame),
+    className: o()(Chunk149715.flexCenter, Chunk740508.notDetected, Chunk740508.activeGame),
     children: (0, Chunk951288.jsxs)("div", {
-      className: o()(Chunk313911.gameNameLastPlayed, Chunk465106.vertical),
+      className: o()(Chunk740508.gameNameLastPlayed, Chunk149715.vertical),
       children: [(0, Chunk951288.jsx)("div", {
-        className: Chunk313911.gameName,
-        children: Chunk388032.intl.string(Chunk388032.t["H68X9/"])
+        className: Chunk740508.gameName,
+        children: Chunk388032.intl.string(Chunk388032.t.H68X9x)
       }), (0, Chunk951288.jsx)("div", {
-        className: Chunk313911.lastPlayed,
-        children: Chunk388032.intl.string(Chunk388032.t.T5Ilm5)
+        className: Chunk740508.lastPlayed,
+        children: Chunk388032.intl.string(Chunk388032.t.T5Ilmw)
       })]
     })
   })
@@ -443,12 +443,12 @@ let H = (0, Chunk251625.oH)(function() {
     function E() {
       return 0 === d.length ? (0, r.jsx)(V, {
         children: (0, r.jsx)(c.OZU, {
-          children: C.intl.string(C.t["1yiJws"])
+          children: C.intl.string(C.t["1yiJwn"])
         })
       }) : (0, r.jsx)(c.C3N, {
         className: w.marginTop40,
-        label: C.intl.string(C.t.jCOdv7),
-        description: C.intl.format(C.t.KPA3m5, {
+        label: C.intl.string(C.t.jCOdvx),
+        description: C.intl.format(C.t.KPA3m9, {
           igdbLink: G
         }),
         children: d.map(e => (0, r.jsx)(Z, {
@@ -459,7 +459,7 @@ let H = (0, Chunk251625.oH)(function() {
       })
     }
     return i.useEffect(() => ((0, p.Ky)(), p.P7), []), (0, r.jsxs)(T.Z, {
-      title: n ? C.intl.string(C.t.AVDyEh) : null,
+      title: n ? C.intl.string(C.t.AVDyEj) : null,
       className: t,
       children: [null != l ? (0, r.jsx)(Z, {
         rawGame: l,
@@ -469,7 +469,7 @@ let H = (0, Chunk251625.oH)(function() {
       }, (0, _.rH)(l)) : (0, r.jsx)(F, {}), (0, r.jsxs)("div", {
         className: o()(N.nowPlayingAdd, w.marginReset, w.marginTop8, w.marginBottom20),
         children: [(0, r.jsx)("span", {
-          children: C.intl.string(C.t.xwhoqK)
+          children: C.intl.string(C.t.xwhoqM)
         }), (0, r.jsx)(c.yRy, {
           targetElementRef: h,
           renderPopout: e => {
@@ -486,7 +486,7 @@ let H = (0, Chunk251625.oH)(function() {
             buttonRef: h,
             variant: "primary",
             textVariant: "text-sm/medium",
-            text: C.intl.string(C.t.GjgdXV)
+            text: C.intl.string(C.t.GjgdXe)
           }))
         })]
       }), E()]

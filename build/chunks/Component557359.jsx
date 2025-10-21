@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 557359, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk217472 = require("./217472.js"),
   Chunk651390 = require("./651390.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk58801 = require("./58801.js");
+  Chunk229271 = require("./229271.js");
 
 function h(e) {
   let {
@@ -31,8 +31,8 @@ function h(e) {
   }, [h, t]);
   return null == l ? null : null == n ? (0, r.jsx)(c.$jN, {}) : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(c.rsf, {
-      label: p.intl.string(p.t.d21uOj),
-      description: p.intl.string(p.t.SzpUBA),
+      label: p.intl.string(p.t.d21uOr),
+      description: p.intl.string(p.t.SzpUBF),
       onChange: b,
       checked: t
     }), t && (0, r.jsx)(m.c, {
@@ -47,7 +47,7 @@ function h(e) {
           variant: "text-xs/bold",
           color: "text-muted",
           className: f.rulesHeader,
-          children: p.intl.string(p.t.XcAzbm)
+          children: p.intl.string(p.t.XcAzbo)
         }), (0, r.jsx)(d.k, {
           guild: l,
           rules: n,

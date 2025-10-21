@@ -18,7 +18,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk522488 = require("./522488.js");
+  Chunk50953 = require("./50953.js");
 let g = function(e) {
   var t;
   let {
@@ -48,7 +48,7 @@ let g = function(e) {
       children: (0, f.TV)(y, Number(b.discount.amount))
     }), (0, r.jsx)(d.OJ, {
       onClick: I,
-      text: h.intl.string(h.t.zLXssL)
+      text: h.intl.string(h.t.zLXssK)
     })]
   }) : (0, r.jsxs)(i.qXd, {
     color: i.DM8.PREMIUM_TIER_2,
@@ -60,7 +60,7 @@ let g = function(e) {
       className: m.premiumIcon
     }), (0, f.TV)(y, Number(b.discount.amount)), (0, r.jsx)(i.EyT, {
       onClick: I,
-      children: h.intl.string(h.t.zLXssL)
+      children: h.intl.string(h.t.zLXssK)
     })]
   })
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 8965 **/
 /** chunk id: 139035, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => S
+  default: () => N
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -50,21 +50,21 @@ function E(e) {
   let {
     channel: t,
     onSelect: n
-  } = e, o = (0, j.Z)(t), c = (0, h.ZP)(t), s = (0, Z.Z)(t), p = (0, O.Z)(t), g = (0, f.Z)(t), y = (0, d.Z)(t), v = (0, u.Z)(t), w = (0, _.Z)(t), E = (0, a.Z)({
+  } = e, o = (0, j.Z)(t), c = (0, h.ZP)(t), s = (0, P.Z)(t), p = (0, O.Z)(t), y = (0, f.Z)(t), g = (0, d.Z)(t), v = (0, u.Z)(t), w = (0, _.Z)(t), E = (0, a.Z)({
     id: t.id,
-    label: m.intl.string(m.t["2visCw"])
-  }), C = (0, b.Mn)("ChannelCategoryFavoritesMenu"), S = (0, P.ZP)(t);
+    label: m.intl.string(m.t["2visC6"])
+  }), C = (0, b.Mn)("ChannelCategoryFavoritesMenu"), N = (0, Z.ZP)(t);
   return (0, r.jsxs)(i.v2r, {
     navId: "channel-context",
     onClose: l.Zy,
-    "aria-label": m.intl.string(m.t.Xm41aW),
+    "aria-label": m.intl.string(m.t.Xm41aV),
     onSelect: n,
     children: [(0, r.jsxs)(i.kSQ, {
-      children: [o, v, y]
+      children: [o, v, g]
     }), (0, r.jsxs)(i.kSQ, {
-      children: [c, C ? S : s]
+      children: [c, C ? N : s]
     }), (0, r.jsxs)(i.kSQ, {
-      children: [p, g]
+      children: [p, y]
     }), (0, r.jsx)(i.kSQ, {
       children: w
     }), (0, r.jsx)(i.kSQ, {
@@ -78,14 +78,14 @@ function C(e) {
     channel: t,
     guild: n,
     onSelect: o
-  } = e, c = (0, j.Z)(t), s = (0, h.ZP)(t), u = (0, Z.Z)(t), _ = (0, O.Z)(t), w = (0, f.Z)(t), E = (0, y.Z)(t), C = (0, d.Z)(t), S = (0, p.Z)(t, n), N = (0, g.Z)(t), x = (0, a.Z)({
+  } = e, c = (0, j.Z)(t), s = (0, h.ZP)(t), u = (0, P.Z)(t), _ = (0, O.Z)(t), w = (0, f.Z)(t), E = (0, g.Z)(t), C = (0, d.Z)(t), N = (0, p.Z)(t, n), S = (0, y.Z)(t), x = (0, a.Z)({
     id: t.id,
-    label: m.intl.string(m.t["2visCw"])
-  }), k = (0, v.Z)(t), A = (0, b.Mn)("ChannelCategoryNormalMenu"), D = (0, P.ZP)(t);
+    label: m.intl.string(m.t["2visC6"])
+  }), k = (0, v.Z)(t), A = (0, b.Mn)("ChannelCategoryNormalMenu"), D = (0, Z.ZP)(t);
   return (0, r.jsxs)(i.v2r, {
     navId: "channel-context",
     onClose: l.Zy,
-    "aria-label": m.intl.string(m.t.Xm41aW),
+    "aria-label": m.intl.string(m.t.Xm41aV),
     onSelect: o,
     children: [(0, r.jsx)(i.kSQ, {
       children: c
@@ -94,12 +94,12 @@ function C(e) {
     }, "channel-actions"), (0, r.jsxs)(i.kSQ, {
       children: [s, A ? D : u]
     }, "notifications"), (0, r.jsxs)(i.kSQ, {
-      children: [E, C, S, N]
+      children: [E, C, N, S]
     }, "admin-actions"), (0, r.jsx)(i.kSQ, {
       children: x
     }, "developer-actions")]
   })
 }
-let S = (0, Chunk108843.Z)(function(e) {
+let N = (0, Chunk108843.Z)(function(e) {
   return (0, s.Z)() ? (0, r.jsx)(E, w({}, e)) : (0, r.jsx)(C, w({}, e))
 }, [Chunk100527.Z.CONTEXT_MENU, Chunk100527.Z.CHANNEL_CATEGORY_MENU])

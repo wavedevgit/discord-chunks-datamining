@@ -15,8 +15,8 @@ var Chunk120356 = require("./120356.js"),
   Chunk736519 = require("./736519.jsx"),
   Chunk117791 = require("./117791.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk157045 = require("./157045.js"),
-  Chunk704897 = require("./704897.js"),
+  Chunk602062 = require("./602062.js"),
+  Chunk867038 = require("./867038.js"),
   Chunk568147 = require("./568147.js"),
   Chunk373425 = require("./373425.js");
 let g = e => {
@@ -39,14 +39,14 @@ let g = e => {
         children: [(0, r.jsx)(s.Heading, {
           variant: "heading-xxl/bold",
           className: p.heading,
-          children: f.intl.string(f.t.Ve9Ge3)
+          children: f.intl.string(f.t.Ve9Ge6)
         }), (0, r.jsx)(s.Text, {
           variant: "text-md/medium",
-          children: f.intl.string(f.t.yQ06u7)
+          children: f.intl.string(f.t.yQ06u1)
         }), (0, r.jsx)("div", {
           className: p.giftButtonContainer,
           children: (0, r.jsx)(d.Z, {
-            buttonTextOverride: f.intl.string(f.t.Ve9Ge3),
+            buttonTextOverride: f.intl.string(f.t.Ve9Ge6),
             premiumModalAnalyticsLocation: i,
             variant: "secondary"
           })
@@ -66,14 +66,14 @@ let g = e => {
         children: [(0, r.jsx)(s.Heading, {
           variant: "heading-lg/extrabold",
           className: _.heading,
-          children: f.intl.string(f.t.Ve9Ge3)
+          children: f.intl.string(f.t.Ve9Ge6)
         }), (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
-          children: f.intl.string(f.t.yQ06u7)
+          children: f.intl.string(f.t.yQ06u1)
         }), (0, r.jsx)(u.Z, {
           className: _.giftCardButton,
           textOptions: {
-            textOverride: f.intl.string(f.t.Ve9Ge3),
+            textOverride: f.intl.string(f.t.Ve9Ge6),
             textClassName: _.giftButtonCTA
           },
           color: o.zx.Colors.CUSTOM,

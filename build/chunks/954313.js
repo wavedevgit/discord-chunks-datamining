@@ -55,20 +55,20 @@ function N(e) {
     i = e.format("dddd"),
     a = [{
       value: d.z.NONE,
-      label: _.intl.string(_.t["0bK0Bw"])
+      label: _.intl.string(_.t["0bK0B1"])
     }, {
       value: d.z.WEEKLY,
-      label: _.intl.formatToPlainString(_.t["B8/yfn"], {
+      label: _.intl.formatToPlainString(_.t["B8/yfp"], {
         weekday: i
       })
     }, {
       value: d.z.BIWEEKLY,
-      label: _.intl.formatToPlainString(_.t["z+aIub"], {
+      label: _.intl.formatToPlainString(_.t["z+aIuX"], {
         weekday: i
       })
     }, {
       value: d.z.MONTHLY,
-      label: _.intl.formatToPlainString(_.t.mjOEBg, {
+      label: _.intl.formatToPlainString(_.t.mjOEBk, {
         nth: r,
         weekday: i
       })
@@ -83,10 +83,10 @@ function N(e) {
     }];
   return C.has(n.getDay()) ? (null == (t = s.default.getCurrentUser()) ? true : t.isStaff()) && a.push({
     value: d.z.WEEKEND_ONLY,
-    label: _.intl.string(_.t.hRpynZ)
+    label: _.intl.string(_.t.hRpynV)
   }) : a.push({
     value: d.z.WEEKDAY_ONLY,
-    label: _.intl.string(_.t["jYR/MT"])
+    label: _.intl.string(_.t["jYR/MY"])
   }), a
 }
 let R = () => {

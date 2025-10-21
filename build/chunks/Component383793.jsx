@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 383793, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk30513 = require("./30513.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk722811 = require("./722811.js");
+  Chunk856521 = require("./856521.js");
 
 function y(e) {
   let {
@@ -36,7 +36,7 @@ function y(e) {
       variant: "text-sm/medium",
       color: "text-secondary",
       className: O.vanityInfo,
-      children: C.intl.format(C.t["1qTOvr"], {
+      children: C.intl.format(C.t["1qTOvn"], {
         urlText: e,
         urlValue: e
       })
@@ -67,11 +67,11 @@ function E(e) {
       children: [(0, r.jsx)(a.Heading, {
         variant: "heading-sm/semibold",
         color: "text-default",
-        children: C.intl.string(C.t["6oJyq6"])
+        children: C.intl.string(C.t["6oJyq5"])
       }), n.length > 0 ? (0, r.jsx)(a.Text, {
         variant: "text-sm/medium",
         color: "text-secondary",
-        children: C.intl.format(C.t.MVWOUV, {
+        children: C.intl.format(C.t.MVWOUY, {
           uses: l
         })
       }) : null]
@@ -85,7 +85,7 @@ function E(e) {
       children: (0, r.jsx)(a.Button, {
         variant: "critical-secondary",
         onClick: d,
-        text: C.intl.string(C.t["3ggb6O"])
+        text: C.intl.string(C.t["3ggb6K"])
       })
     }) : null]
   })

@@ -1,4 +1,4 @@
-/** Chunk was on 70439 **/
+/** Chunk was on 57695 **/
 /** chunk id: 903672, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Z
@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk240126 = require("./240126.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk969604 = require("./969604.js");
+  Chunk889833 = require("./889833.js");
 let P = {
   offset: {
     left: 4,
@@ -99,21 +99,21 @@ function Z(e) {
     canCloseAllMessages: true,
     renderHeader: Z,
     renderEmptyState: A,
-    renderMessage: T,
-    "aria-label": S.intl.string(S.t.jbV6MD),
+    renderMessage: w,
+    "aria-label": S.intl.string(S.t.jbV6MM),
     listName: "recents"
   })
 }
 
-function T(e, t) {
-  return [(0, r.jsx)(w, {
+function w(e, t) {
+  return [(0, r.jsx)(T, {
     message: e,
     gotoMessage: t,
     dismissible: true
   }, e.id)]
 }
 
-function w(e) {
+function T(e) {
   let {
     message: t,
     gotoMessage: n,
@@ -131,7 +131,7 @@ function w(e) {
       gotoChannel: n,
       children: null != i ? (0, r.jsx)(s.M0o, {
         className: I.closeButton,
-        tooltip: S.intl.string(S.t.cpT0Cg),
+        tooltip: S.intl.string(S.t.cpT0Cq),
         color: s.YX$.TERTIARY,
         icon: (0, r.jsx)(s.Dio, {
           size: "xs",
@@ -161,7 +161,7 @@ function w(e) {
 function A() {
   return (0, Chunk951288.jsx)(Chunk240126.Z, {
     Icon: Chunk481060.lOy,
-    header: Chunk388032.intl.string(Chunk388032.t["bgDz7+"]),
-    tip: Chunk388032.intl.string(Chunk388032.t.NS15vr)
+    header: Chunk388032.intl.string(Chunk388032.t.bgDz74),
+    tip: Chunk388032.intl.string(Chunk388032.t.NS15vk)
   })
 }

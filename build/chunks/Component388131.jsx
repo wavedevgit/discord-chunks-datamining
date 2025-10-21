@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk146085 = require("./146085.js"),
   Chunk71080 = require("./71080.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk561993 = require("./561993.js");
+  Chunk878713 = require("./878713.js");
 
 function j(e, t) {
   return {
@@ -54,9 +54,9 @@ function m(e) {
   let v = (0, o.e7)([b.Z], () => b.Z.getChannel(f)),
     P = (0, o.e7)([y.Z], () => y.Z.getGuild(null == v ? true : v.getGuildId())),
     [S, E] = i.useState(""),
-    [_, N] = i.useState({}),
-    [T, Z] = i.useState(false),
-    [k, C] = i.useState(null),
+    [_, k] = i.useState({}),
+    [C, N] = i.useState(false),
+    [T, Z] = i.useState(null),
     I = i.useRef(null),
     {
       roles: R,
@@ -69,7 +69,7 @@ function m(e) {
     });
   if (null == v || null == P) return null;
   let A = async () => {
-    Z(true);
+    N(true);
     try {
       await
       function(e, t) {
@@ -88,7 +88,7 @@ function m(e) {
       }(v, _), m()
     } catch (t) {
       let e = new a.Hx(t);
-      Z(false), C(e)
+      N(false), Z(e)
     }
   };
   return (0, r.jsx)(d.Z.Provider, {
@@ -96,7 +96,7 @@ function m(e) {
     query: S,
     setQuery: E,
     pendingAdditions: _,
-    setPendingAdditions: N,
+    setPendingAdditions: k,
     roles: R,
     members: H,
     getRichTag: G,
@@ -118,7 +118,7 @@ function m(e) {
       }
       return e
     }({}, w), n = n = {
-      title: h.intl.string(h.t.dMJ3Y2),
+      title: h.intl.string(h.t.dMJ3Y6),
       onClose: m,
       input: (0, r.jsxs)("div", {
         children: [(0, r.jsxs)(c.Text, {
@@ -134,18 +134,18 @@ function m(e) {
           color: "header-secondary",
           className: x.description,
           variant: "text-sm/normal",
-          children: h.intl.string(h.t.f7VbhI)
+          children: h.intl.string(h.t.f7VbhF)
         }), (0, r.jsx)(d.Z.SearchBox, {
-          placeholderText: h.intl.string(h.t.iezLLi)
+          placeholderText: h.intl.string(h.t.iezLLn)
         }), (0, r.jsx)(c.Text, {
           className: x.subtext,
           variant: "text-xs/normal",
-          children: h.intl.string(h.t["rwFx8/"])
-        }), null != k ? (0, r.jsx)(c.Text, {
+          children: h.intl.string(h.t.rwFx85)
+        }), null != T ? (0, r.jsx)(c.Text, {
           className: x.subtext,
           variant: "text-xs/normal",
           color: "text-danger",
-          children: k.getAnyErrorMessage()
+          children: T.getAnyErrorMessage()
         }) : null]
       }),
       listProps: {
@@ -158,13 +158,13 @@ function m(e) {
       },
       actions: [{
         variant: "secondary",
-        text: h.intl.string(h.t["ETE/oK"]),
+        text: h.intl.string(h.t["ETE/oC"]),
         onClick: m
       }, {
         variant: "primary",
-        text: h.intl.string(h.t.OYkgVl),
+        text: h.intl.string(h.t.OYkgVk),
         onClick: A,
-        loading: T
+        loading: C
       }]
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);

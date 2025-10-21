@@ -17,13 +17,13 @@ var Chunk442837 = require("./442837.js"),
 function g() {
   return [{
     setting: Chunk981631.bL.ALL_MESSAGES,
-    label: Chunk388032.intl.string(Chunk388032.t["n/bTaW"])
+    label: Chunk388032.intl.string(Chunk388032.t["n/bTaY"])
   }, {
     setting: Chunk981631.bL.ONLY_MENTIONS,
-    label: Chunk388032.intl.format(Chunk388032.t.L2hmY2, {})
+    label: Chunk388032.intl.format(Chunk388032.t.L2hmYy, {})
   }, {
     setting: Chunk981631.bL.NO_MESSAGES,
-    label: Chunk388032.intl.string(Chunk388032.t.CtVGyc)
+    label: Chunk388032.intl.string(Chunk388032.t.CtVGyQ)
   }]
 }
 
@@ -67,21 +67,21 @@ function b(e) {
         }), (0, i.jsxs)(s.kSQ, {
           children: [(0, i.jsx)(s.S89, {
             id: "suppress-everyone",
-            label: d.intl.format(d.t.OWiWAg, {}),
+            label: d.intl.format(d.t.OWiWAp, {}),
             action: () => E({
               suppress_everyone: !t
             }, a.UE.suppressEveryone(!t)),
             checked: t
           }), (0, i.jsx)(s.S89, {
             id: "suppress-roles",
-            label: d.intl.string(d.t["O/QdoK"]),
+            label: d.intl.string(d.t["O/QdoD"]),
             action: () => E({
               suppress_roles: !n
             }, a.UE.suppressRoles(!n)),
             checked: n
           }), (0, i.jsx)(s.S89, {
             id: "suppress-highlights",
-            label: d.intl.string(d.t.gPuteH),
+            label: d.intl.string(d.t.gPuteJ),
             action: () => {
               E({
                 notify_highlights: h ? u.gLR.ENABLED : u.gLR.DISABLED
@@ -92,7 +92,7 @@ function b(e) {
         }), (0, i.jsx)(s.kSQ, {
           children: (0, i.jsx)(s.S89, {
             id: "mobile-push",
-            label: d.intl.string(d.t["h1DL6+"]),
+            label: d.intl.string(d.t.h1DL66),
             action: () => E({
               mobile_push: !b
             }, a.UE.mobilePush(!b)),
@@ -110,12 +110,12 @@ function b(e) {
     })) ? true : t.label;
   return null != p ? (0, i.jsx)(s.sNh, {
     id: "guild-notifications",
-    label: d.intl.string(d.t.h850Sk),
+    label: d.intl.string(d.t.h850Ss),
     subtext: h,
     action: () => (0, s.ZDy)(async () => {
       let {
         default: t
-      } = await Promise.all([n.e("15076"), n.e("19620")]).then(n.bind(n, 907941));
+      } = await Promise.all([n.e("15076"), n.e("21784")]).then(n.bind(n, 907941));
       return n => {
         var r, s;
         return (0, i.jsx)(t, (r = function(e) {

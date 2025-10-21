@@ -50,7 +50,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk689079 = require("./689079.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk595050 = require("./595050.js");
+  Chunk729755 = require("./729755.js");
 let J = [],
   K = [, , , , ].fill(0).map((e, t) => t),
   $ = [{
@@ -90,7 +90,7 @@ function et(e) {
     children: [O ? (0, i.jsx)(en, {}) : null, (0, i.jsx)(ei, {
       searchQuery: r,
       setSearchQuery: a,
-      placeholder: h ? Q.intl.string(Q.t.ziyFv7) : Q.intl.string(Q.t["pw+r5e"])
+      placeholder: h ? Q.intl.string(Q.t.ziyFv2) : Q.intl.string(Q.t["pw+r5b"])
     }), (0, i.jsx)(f.Ttm, {
       ref: o,
       className: X.scrollableContent,
@@ -117,7 +117,7 @@ function et(e) {
           onEmptyState: P
         }), A && (0, i.jsx)(V.A, {
           type: R.LG.HOME_EMPTY,
-          textContent: n === R._b.TEXT ? Q.intl.string(Q.t.iKZctb) : Q.intl.string(Q.t.RL7Ncn)
+          textContent: n === R._b.TEXT ? Q.intl.string(Q.t.iKZctW) : Q.intl.string(Q.t.RL7Ncg)
         }), _ && (0, i.jsx)(F.Z, {})]
       })
     })]
@@ -126,11 +126,11 @@ function et(e) {
 
 function en() {
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk595050.developerShelfControlsContainer,
+    className: Chunk729755.developerShelfControlsContainer,
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
-      className: Chunk595050.developerShelfControlsLabel,
+      className: Chunk729755.developerShelfControlsLabel,
       variant: "text-sm/normal",
-      children: Chunk388032.intl.string(Chunk388032.t.tZ3FNj)
+      children: Chunk388032.intl.string(Chunk388032.t.tZ3FNs)
     }), (0, Chunk951288.jsx)(Chunk427996.W, {
       hideSearch: true
     })]
@@ -203,8 +203,8 @@ function el(e) {
       application: t.application
     });
     return e
-  }, [o]), u = Q.intl.string(Q.t["s+UQpa"]), d = u;
-  a && (d = Q.intl.string(Q.t["2pFD8P"]));
+  }, [o]), u = Q.intl.string(Q.t["s+UQpc"]), d = u;
+  a && (d = Q.intl.string(Q.t["2pFD8L"]));
   let {
     items: p,
     handleViewMore: m
@@ -304,7 +304,7 @@ function er(e) {
         s.current = e
       },
       children: (0, i.jsx)(W.Z, {
-        title: Q.intl.string(Q.t.shUONj)
+        title: Q.intl.string(Q.t.shUONg)
       })
     }), (0, i.jsx)("div", {
       className: X.sectionTwoColumnContentContainer,
@@ -341,7 +341,7 @@ function ea(e) {
     items: s,
     handleViewMore: c
   } = eu({
-    title: Q.intl.string(Q.t.KfkuGR),
+    title: Q.intl.string(Q.t.KfkuGc),
     look: D.U4.ROW,
     items: a,
     limit: 4,
@@ -361,7 +361,7 @@ function ea(e) {
         u.current = e
       },
       children: (0, i.jsx)(W.Z, {
-        title: Q.intl.string(Q.t.KfkuGR),
+        title: Q.intl.string(Q.t.KfkuGc),
         buttonType: W.Z.buttonTypes.VIEW_MORE,
         onClickViewButton: c
       })

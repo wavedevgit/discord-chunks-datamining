@@ -20,7 +20,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk656139 = require("./656139.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk299383 = require("./299383.js"),
+  Chunk756555 = require("./756555.js"),
   Chunk754761 = require("./754761.js");
 
 function y(e, t, n) {
@@ -150,13 +150,13 @@ let T = e => {
       className: t
     } = e, {
       referralSentUsers: n
-    } = (0, p.G)(), i = (0, o.e7)([_.Z], () => _.Z.getRecipientStatus()), l = (0, o.e7)([_.Z], () => _.Z.getHasEligibleFriends()), c = i.size === p.Q && [...i.values()].every(e => e === f.Fe.REDEEMED), d = i.size === p.Q, b = () => false === l ? g.intl.format(g.t["zWhX/f"], {
+    } = (0, p.G)(), i = (0, o.e7)([_.Z], () => _.Z.getRecipientStatus()), l = (0, o.e7)([_.Z], () => _.Z.getHasEligibleFriends()), c = i.size === p.Q && [...i.values()].every(e => e === f.Fe.REDEEMED), d = i.size === p.Q, b = () => false === l ? g.intl.format(g.t["zWhX/Q"], {
       helpdeskArticle: u.Z.getArticleURL(m.BhN.REFERRAL_PROGRAM)
-    }) : n.length === p.Q ? true === c ? g.intl.format(g.t["1aEjsL"], {
+    }) : n.length === p.Q ? true === c ? g.intl.format(g.t["1aEjsH"], {
       helpdeskArticle: u.Z.getArticleURL(m.BhN.REFERRAL_PROGRAM)
-    }) : g.intl.format(g.t["+u3AOD"], {
+    }) : g.intl.format(g.t["+u3AOO"], {
       helpdeskArticle: u.Z.getArticleURL(m.BhN.REFERRAL_PROGRAM)
-    }) : g.intl.format(g.t["omMr+f"], {
+    }) : g.intl.format(g.t["omMr+V"], {
       helpdeskArticle: u.Z.getArticleURL(m.BhN.REFERRAL_PROGRAM)
     });
     return (0, r.jsxs)("div", {
@@ -184,7 +184,7 @@ let T = e => {
         }), (0, r.jsx)(s.Button, {
           variant: "primary",
           disabled: false === l || true === d,
-          text: g.intl.string(g.t.Lm2nFR),
+          text: g.intl.string(g.t.Lm2nFc),
           onClick: () => T({
             startingScreen: h.SelectFriendsModalScreens.SELECT_FRIENDS,
             analyticsLocations: []

@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 827907, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -24,7 +24,7 @@ function u(e, t) {
 }
 
 function g(e, t) {
-  return (0, r.e7)([s.Z, i.Z], () => null != t && s.Z.editedDefaultChannelIds.has(t) ? c.intl.string(c.t.Lz94y8) : a.Uu(o.Plq.VIEW_CHANNEL, i.Z.getChannel(e)) ? true : c.intl.string(c.t["031cXl"]))
+  return (0, r.e7)([s.Z, i.Z], () => null != t && s.Z.editedDefaultChannelIds.has(t) ? c.intl.string(c.t.Lz94y1) : a.Uu(o.Plq.VIEW_CHANNEL, i.Z.getChannel(e)) ? true : c.intl.string(c.t["031cXt"]))
 }
 
 function m(e, t) {
@@ -36,5 +36,5 @@ function m(e, t) {
       var e;
       return null == (e = i.Z.getChannel(t)) ? true : e.isGuildVocal()
     });
-  return n ? c.intl.string(c.t["2XWEKy"]) : a ? c.intl.string(c.t.t6iJLS) : true
+  return n ? c.intl.string(c.t["2XWEK9"]) : a ? c.intl.string(c.t.t6iJLY) : true
 }

@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk188597 = require("./188597.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk151478 = require("./151478.js");
+  Chunk954800 = require("./954800.js");
 
 function m(e) {
   return {
@@ -33,7 +33,7 @@ function m(e) {
 
 function g(e) {
   return {
-    text: null != e ? e : p.intl.string(p.t.VCsUJi),
+    text: null != e ? e : p.intl.string(p.t.VCsUJu),
     color: "text-danger",
     icon: (0, r.jsx)(c.Mgn, {
       size: "xs",
@@ -46,13 +46,13 @@ function g(e) {
 function E(e, t) {
   switch ((0, f.t$)(t, e)) {
     case f.rQ.SENDING:
-      return m(p.intl.string(p.t.RiLfBQ));
+      return m(p.intl.string(p.t.RiLfBY));
     case f.rQ.CREATED:
-      return m(p.intl.formatToPlainString(p.t["7ePV4u"], {
+      return m(p.intl.formatToPlainString(p.t["7ePV4t"], {
         applicationName: t.author.username
       }));
     case f.rQ.TIMED_OUT:
-      return g(p.intl.string(p.t.h8hzPT));
+      return g(p.intl.string(p.t.h8hzPd));
     case f.rQ.FAILED:
       return g(t.interactionError)
   }

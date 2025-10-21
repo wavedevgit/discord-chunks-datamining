@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk46140 = require("./46140.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk123611 = require("./123611.js");
+  Chunk408228 = require("./408228.js");
 
 function j(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -65,15 +65,15 @@ function x(e) {
       children: [(0, r.jsx)(s.Heading, {
         variant: "heading-md/semibold",
         color: "header-primary",
-        children: d ? T.intl.string(T.t.XBboAA) : T.intl.formatToPlainString(T.t.EQa7oq, {
+        children: d ? T.intl.string(T.t.XBboAK) : T.intl.formatToPlainString(T.t.EQa7os, {
           questName: n.config.messages.questName
         })
       }), (0, r.jsx)(s.Text, {
         variant: "text-xs/normal",
         color: "header-secondary",
-        children: d ? T.intl.formatToPlainString(T.t.APddvL, {
+        children: d ? T.intl.formatToPlainString(T.t.APddvF, {
           expirationDate: l
-        }) : T.intl.formatToPlainString(T.t["pX+fmp"], {
+        }) : T.intl.formatToPlainString(T.t["pX+fmn"], {
           expirationDate: i
         })
       })]
@@ -128,7 +128,7 @@ function A(e) {
     sourceQuestContent: g.jn.ACTIVITY_PANEL
   }), F = (0, d.Rt)(b), z = (0, m.CR)({
     quest: b
-  }), W = F ? z : T.intl.string(T.t.l7E81t);
+  }), W = F ? z : T.intl.string(T.t.l7E81v);
   return (0, r.jsxs)("div", {
     ref: e => {
       c.current = e
@@ -155,7 +155,7 @@ function A(e) {
         children: e => {
           var t, n;
           return (0, r.jsx)(s.P3F, (t = j({}, e), n = n = {
-            "aria-label": T.intl.string(T.t.DEoVWV),
+            "aria-label": T.intl.string(T.t.DEoVWZ),
             children: (0, r.jsx)(s.xhG, {
               size: "md",
               color: "currentColor",
@@ -213,13 +213,13 @@ function A(e) {
         variant: "primary",
         size: "sm",
         fullWidth: true,
-        text: T.intl.string(T.t.VN1Ajo),
+        text: T.intl.string(T.t.VN1Ajl),
         onClick: M
       }), B && (0, r.jsx)(s.Button, {
         variant: "primary",
         size: "sm",
         fullWidth: true,
-        text: T.intl.string(T.t.cfY4PD),
+        text: T.intl.string(T.t.cfY4PE),
         onClick: U
       })]
     })]

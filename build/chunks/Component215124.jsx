@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 215124, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -33,14 +33,14 @@ function g(e) {
   return null == m ? null : (0, r.jsxs)("div", {
     children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
-      children: u.intl.format(u.t.fvOn6O, {
+      children: u.intl.format(u.t.fvOn6J, {
         guildName: m.name
       })
     }), (0, r.jsx)(l.LZC, {
       size: 16
     }), (0, r.jsx)(l.Button, {
       variant: "critical-primary",
-      text: u.intl.string(u.t.FrOFSk),
+      text: u.intl.string(u.t.FrOFSo),
       disabled: !h || x || j || v,
       onClick: () => {
         (0, l.ZDy)(async () => {

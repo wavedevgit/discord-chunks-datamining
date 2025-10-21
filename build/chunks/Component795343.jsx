@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk81136 = require("./81136.js"),
   Chunk440617 = require("./440617.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk843084 = require("./843084.js");
+  Chunk891131 = require("./891131.js");
 
 function k(e) {
   var t;
@@ -38,22 +38,22 @@ function k(e) {
   } = e, T = (0, d.sp)(), L = null != (t = null == T ? true : T.sessionId) ? t : "", {
     noCache: I,
     includeUnpublished: B
-  } = (0, O.Z)(), A = (0, o.e7)([c.default], () => c.default.getCurrentUser()), {
+  } = (0, O.Z)(), A = (0, s.e7)([c.default], () => c.default.getCurrentUser()), {
     skus: N,
     currentPage: P,
     totalCount: R,
     isFetchingResults: Z
-  } = (0, h.a)(), w = (0, o.Wu)([g.Z], () => g.Z.getProductsBySkus(N)), H = l.useCallback(() => {
+  } = (0, h.a)(), w = (0, s.Wu)([g.Z], () => g.Z.getProductsBySkus(N)), H = l.useCallback(() => {
     var e;
     null == i || null == (e = i.current) || e.scrollToTop({
       animate: true
     })
-  }, [i]), D = null == N ? true : N.join("");
+  }, [i]), M = null == N ? true : N.join("");
   l.useEffect(() => {
     H()
-  }, [D, H]);
-  let M = (0, f.a)(),
-    F = l.useMemo(() => M(w), [M, w]);
+  }, [M, H]);
+  let D = (0, f.a)(),
+    F = l.useMemo(() => D(w), [D, w]);
   l.useEffect(() => {
     n || (0, _.n)({
       sessionId: L,
@@ -82,7 +82,7 @@ function k(e) {
     });
     if (null != W.current) return e.observe(W.current), () => e.disconnect()
   }, [V]);
-  let Q = l.useCallback(e => {
+  let J = l.useCallback(e => {
       u.default.track(y.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
         collectibles_shop_session_id: null == T ? true : T.sessionId,
         page_section: null == T ? true : T.pageSection,
@@ -93,7 +93,7 @@ function k(e) {
         page_type: "catalog"
       }), U((e - 1) * z)
     }, [T, z, U]),
-    J = p.Z.useConfig({
+    Q = p.Z.useConfig({
       location: "CollectiblesFilterableShop"
     }).showCardsV2;
   return (0, r.jsxs)(r.Fragment, {
@@ -106,13 +106,13 @@ function k(e) {
           [j.loadIn]: G
         }),
         ref: W,
-        children: [Y && [...Array(z)].map((e, t) => J ? (0, r.jsx)(x.Z, {}, t) : (0, r.jsx)(m.K, {}, t)), !Y && F.map((e, t) => {
+        children: [Y && [...Array(z)].map((e, t) => Q ? (0, r.jsx)(x.Z, {}, t) : (0, r.jsx)(m.K, {}, t)), !Y && F.map((e, t) => {
           let n = g.Z.getCategory(e.categorySkuId);
           return null == n ? null : (0, r.jsx)(d.k0, {
             newValue: {
               tilePosition: t
             },
-            children: J ? (0, r.jsx)(v.Z, {
+            children: Q ? (0, r.jsx)(v.Z, {
               skuId: e.skuId,
               onClickAnalytics: (0, E.wO)(e, k, T)
             }, e.skuId) : (0, r.jsx)(b.Z, {
@@ -127,11 +127,11 @@ function k(e) {
     }), R > z && (0, r.jsx)("div", {
       className: j.paginationContainer,
       children: (0, r.jsx)("div", {
-        children: (0, r.jsx)(s.DsT, {
+        children: (0, r.jsx)(o.DsT, {
           currentPage: P,
           totalCount: R,
           pageSize: z,
-          onPageChange: Q,
+          onPageChange: J,
           disablePaginationGap: true
         })
       })

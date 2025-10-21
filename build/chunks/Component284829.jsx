@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk607993 = require("./607993.js"),
+  Chunk950728 = require("./950728.js"),
   Chunk997892 = require("./997892.js"),
   Chunk288541 = require("./288541.js");
 let P = () => {
@@ -39,17 +39,17 @@ let P = () => {
     }
   };
   if (null === v || null === T) return (0, Chunk951288.jsx)("div", {
-    className: Chunk607993.spinnerContainer,
+    className: Chunk950728.spinnerContainer,
     children: (0, Chunk951288.jsx)(Chunk481060.$jN, {})
   });
-  let A = require === Chunk474936.PremiumTypes.TIER_2,
-    O = [{
-      text: Chunk388032.intl.string(Chunk388032.t.zl7LZm),
+  let O = require === Chunk474936.PremiumTypes.TIER_2,
+    b = [{
+      text: Chunk388032.intl.string(Chunk388032.t.zl7LZp),
       onClick: () => exports(),
       variant: "secondary",
       disabled: S
     }, {
-      text: Chunk388032.intl.string(Chunk388032.t.CKSuZG),
+      text: Chunk388032.intl.string(Chunk388032.t.CKSuZJ),
       onClick: () => D(),
       variant: "primary",
       icon: Chunk481060.SrA,
@@ -59,33 +59,33 @@ let P = () => {
   return (0, Chunk951288.jsxs)(Chunk793030.ExpressiveModal, {
     graphic: {
       type: "image",
-      src: A ? Chunk288541.Z : Chunk997892
+      src: O ? Chunk288541.Z : Chunk997892
     },
-    gradientColor: A ? "nitro-pink" : "nitro-green",
+    gradientColor: O ? "nitro-pink" : "nitro-green",
     transitionState: module,
-    title: P.status === Chunk981631.O0b.CANCELED ? Chunk388032.intl.string(Chunk388032.t["2Otztr"]) : "".concat(Chunk388032.intl.format(Chunk388032.t.q9Vxu7, {
+    title: P.status === Chunk981631.O0b.CANCELED ? Chunk388032.intl.string(Chunk388032.t["2Otzti"]) : "".concat(Chunk388032.intl.format(Chunk388032.t.q9Vxu4, {
       percent: v.discount.amount
     })),
-    actions: O,
+    actions: b,
     onClose: async () => exports(),
     children: [(0, Chunk951288.jsx)("div", {
-      className: Chunk607993.offerDetailContainer,
+      className: Chunk950728.offerDetailContainer,
       children: (0, Chunk951288.jsx)(Chunk10508.o, {
         userDiscountOffer: v,
         offerState: Chunk10508.w.CONFIRMING
       })
     }), (0, Chunk951288.jsx)("div", {
-      className: Chunk607993.legalContainer,
+      className: Chunk950728.legalContainer,
       children: (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-xs/medium",
         color: "text-secondary",
-        children: P.status === Chunk981631.O0b.CANCELED ? Chunk388032.intl.format(Chunk388032.t.mY3ysL, {
+        children: P.status === Chunk981631.O0b.CANCELED ? Chunk388032.intl.format(Chunk388032.t.mY3ysK, {
           discountedPrice: T,
           billingPeriod: (0, Chunk74538.JP)(v.discount.user_usage_limit_interval),
           numMonths: v.discount.user_usage_limit,
           fullPrice: E,
           paidURL: Chunk63063.Z.getArticleURL(Chunk981631.BhN.PAID_TERMS)
-        }) : Chunk388032.intl.format(Chunk388032.t.hrGTjI, {
+        }) : Chunk388032.intl.format(Chunk388032.t.hrGTjG, {
           discountedPrice: T,
           billingPeriod: (0, Chunk74538.JP)(v.discount.user_usage_limit_interval),
           numMonths: v.discount.user_usage_limit,
@@ -95,7 +95,7 @@ let P = () => {
       })
     }), N ? (0, Chunk951288.jsx)(Chunk793030.M14, {
       type: "critical",
-      children: Chunk388032.intl.string(Chunk388032.t["5mlOCQ"])
+      children: Chunk388032.intl.string(Chunk388032.t["5mlOCW"])
     }) : null]
   })
 }

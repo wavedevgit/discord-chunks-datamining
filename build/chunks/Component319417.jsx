@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk443603 = require("./443603.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk910792 = require("./910792.js");
+  Chunk91252 = require("./91252.js");
 
 function d(e) {
   let {
@@ -35,7 +35,7 @@ function d(e) {
           disabled: n,
           isActive: false,
           noHover: n,
-          "aria-label": c.intl.string(c.t.oeb1vr),
+          "aria-label": c.intl.string(c.t.oeb1vg),
           children: (0, r.jsx)(s.Uuj, {
             size: "xs",
             color: "currentColor",

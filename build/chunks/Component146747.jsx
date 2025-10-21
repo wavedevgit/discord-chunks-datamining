@@ -16,8 +16,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk678558 = require("./678558.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk768093 = require("./768093.js"),
-  Chunk10198 = require("./10198.js");
+  Chunk707435 = require("./707435.js"),
+  Chunk197571 = require("./197571.js");
 
 function x(e) {
   for (var r = 1; r < arguments.length; r++) {
@@ -46,7 +46,7 @@ function y(e) {
     image: o
   } = e;
   return (0, n.jsxs)("div", {
-    className: b.header,
+    className: g.header,
     children: [(0, n.jsx)(s.Heading, {
       variant: "heading-xl/semibold",
       id: f,
@@ -55,7 +55,7 @@ function y(e) {
       children: r
     }), (0, n.jsx)(s.Text, {
       variant: "text-md/normal",
-      className: b.subtitleText,
+      className: g.subtitleText,
       children: t
     }), o]
   })
@@ -64,14 +64,14 @@ let O = e => {
     let {
       onClose: r,
       perks: t,
-      perkIntro: o = j.intl.string(j.t.Dr3Goa),
+      perkIntro: o = b.intl.string(b.t.Dr3GoS),
       headerProps: i
     } = e;
     return (0, n.jsxs)("div", {
-      className: b.wrapper,
+      className: g.wrapper,
       children: [(0, n.jsx)(s.olH, {
         "data-migration-pending": true,
-        className: b.closeButton,
+        className: g.closeButton,
         onClick: () => {
           r()
         }
@@ -79,7 +79,7 @@ let O = e => {
         headerProps: i,
         perkIntro: o
       }), (0, n.jsx)("div", {
-        className: b.perks,
+        className: g.perks,
         children: t.map((e, r) => {
           let {
             icon: t,
@@ -104,12 +104,12 @@ let O = e => {
     } = e;
     return (0, n.jsxs)(o.Fragment, {
       children: [null != r ? (0, n.jsx)(y, x({}, r)) : (0, n.jsx)("img", {
-        className: b.heroImage,
+        className: g.heroImage,
         src: t(438471),
-        alt: j.intl.string(j.t.PkcaAA)
+        alt: b.intl.string(b.t.PkcaAH)
       }), (0, n.jsx)(s.Text, {
         variant: "text-md/normal",
-        className: b.heading,
+        className: g.heading,
         children: i
       })]
     })
@@ -121,17 +121,17 @@ let O = e => {
       onClose: o,
       analyticsSourceLocation: i
     } = e, a = {
-      section: g.jXE.PREMIUM_GUILD_UPSELL_MODAL,
-      object: g.qAy.BUTTON_CTA,
+      section: j.jXE.PREMIUM_GUILD_UPSELL_MODAL,
+      object: j.qAy.BUTTON_CTA,
       objectType: null != t ? (0, d.ge)(t) : null
     };
     return (0, n.jsxs)(s.mzw, {
-      className: b.footer,
+      className: g.footer,
       "data-migration-pending": true,
       children: [(0, n.jsx)(s.Button, {
         variant: "secondary",
         size: "sm",
-        text: j.intl.string(j.t.cpT0Cg),
+        text: b.intl.string(b.t.cpT0Cq),
         onClick: () => {
           o()
         }
@@ -153,9 +153,9 @@ function v(e) {
       guild: u,
       targetBoostedGuildTier: d,
       perks: m,
-      perkIntro: g,
-      headerProps: j,
-      onClose: b
+      perkIntro: j,
+      headerProps: b,
+      onClose: g
     } = e,
     h = function(e, r) {
       if (null == e) return {};
@@ -188,15 +188,15 @@ function v(e) {
         children: (0, n.jsx)(p.Z, {
           hideBreadcrumbs: true,
           body: (0, n.jsx)(O, {
-            onClose: b,
+            onClose: g,
             perks: m,
-            perkIntro: g,
-            headerProps: j
+            perkIntro: j,
+            headerProps: b
           }),
           footer: (0, n.jsx)(_, {
             guild: u,
             targetBoostedGuildTier: d,
-            onClose: b,
+            onClose: g,
             analyticsSourceLocation: o
           }),
           steps: [l.h8.PREMIUM_GUILD_UPSELL],

@@ -27,10 +27,10 @@ class g extends Chunk647438.PureComponent {
   getInviteText() {
     return (0, Chunk340541.LK)({
       location: "invite_notice"
-    }).isGuildEntrypointEnabled ? Chunk388032.intl.string(Chunk388032.t.Sd8Ix8) : Chunk388032.intl.string(Chunk388032.t.BN75l5)
+    }).isGuildEntrypointEnabled ? Chunk388032.intl.string(Chunk388032.t.Sd8Ixw) : Chunk388032.intl.string(Chunk388032.t.BN75l9)
   }
   render() {
-    let e = "".concat(Chunk388032.intl.string(Chunk388032.t.VWqWZW), "\n").concat(Chunk388032.intl.string(Chunk388032.t["0Lgb/P"])),
+    let e = "".concat(Chunk388032.intl.string(Chunk388032.t.VWqWZQ), "\n").concat(Chunk388032.intl.string(Chunk388032.t["0Lgb/K"])),
       t = this.getInviteText();
     return (0, Chunk951288.jsx)(Chunk82950.Z, {
       guild: this.props.guild,
@@ -52,7 +52,7 @@ class g extends Chunk647438.PureComponent {
       (0, l.ZDy)(async () => {
         let {
           default: t
-        } = await Promise.all([n.e("7654"), n.e("28297")]).then(n.bind(n, 560114));
+        } = await Promise.all([n.e("7654"), n.e("89772")]).then(n.bind(n, 560114));
         return n => (0, r.jsx)(t, function(e, t) {
           return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
             var n = Object.keys(e);
@@ -82,7 +82,7 @@ class g extends Chunk647438.PureComponent {
       })
     }), h(this, "handleClose", () => {
       let e = s.Z.getChannelId(),
-        t = p.intl.formatToPlainString(p.t.DEn7np, {
+        t = p.intl.formatToPlainString(p.t.DEn7nu, {
           invitePeople: this.getInviteText()
         });
       this.props.markAsDismissed(d.L.UNKNOWN), null != e && a.Z.sendBotMessage(e, t)

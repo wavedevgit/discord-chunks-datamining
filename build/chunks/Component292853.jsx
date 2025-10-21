@@ -1,4 +1,4 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 292853, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk152376 = require("./152376.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk726904 = require("./726904.js");
+  Chunk245995 = require("./245995.js");
 
 function f(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -64,7 +64,7 @@ function g(e) {
       className: h.chatHeaderBarText,
       variant: "text-sm/normal",
       color: "text-default",
-      children: p.intl.string(p.t.iOWmmJ)
+      children: p.intl.string(p.t.iOWmmB)
     }), (0, i.jsx)(o.Button, {
       size: "sm",
       variant: "primary",
@@ -76,7 +76,7 @@ function g(e) {
           section: d.jXE.CHANNEL
         })
       },
-      text: p.intl.string(p.t.ZtIlQk),
+      text: p.intl.string(p.t.ZtIlQo),
       icon: o.qJs
     })]
   })

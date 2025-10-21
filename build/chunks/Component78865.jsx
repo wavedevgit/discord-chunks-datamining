@@ -15,7 +15,7 @@ var Chunk952265 = require("./952265.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk255740 = require("./255740.js");
+  Chunk880916 = require("./880916.js");
 
 function O(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -67,8 +67,8 @@ function y(e) {
       location_object: b.qAy.NAVIGATION_LINK
     }), (0, s.uL)(b.Z5c.APPLICATION_STORE)
   }
-  let h = d.intl.string(d.t.ewxv3N),
-    j = d.intl.string(d.t.qlsCDA);
+  let h = d.intl.string(d.t.ewxv3J),
+    j = d.intl.string(d.t.qlsCDB);
   return (0, c.Z)({
     location: "StreamUpsellModal"
   }) ? (0, n.jsx)(i.Z, O({

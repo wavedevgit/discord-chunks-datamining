@@ -1,4 +1,4 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 408534, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -24,7 +24,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk354459 = require("./354459.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk371882 = require("./371882.js");
+  Chunk895634 = require("./895634.js");
 
 function j(e) {
   let {
@@ -43,7 +43,7 @@ function j(e) {
     onSelect: n,
     onInteraction: S,
     navId: "more-settings-context",
-    "aria-label": x.intl.string(x.t.FTLzdX),
+    "aria-label": x.intl.string(x.t.FTLzdR),
     children: [(0, i.jsx)(l.kSQ, {
       children: Z !== v.d4z.GUILD_STAGE_VOICE ? L : null
     }), (0, i.jsxs)(l.kSQ, {

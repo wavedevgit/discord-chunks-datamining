@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk823379 = require("./823379.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk682133 = require("./682133.js");
+  Chunk598840 = require("./598840.js");
 
 function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -58,17 +58,17 @@ function g(e, t) {
 function E(e) {
   switch (e) {
     case 2:
-      return f.intl.string(f.t.iCehw8);
+      return f.intl.string(f.t.iCehw9);
     case 0:
-      return f.intl.string(f.t.hfYfEB);
+      return f.intl.string(f.t.hfYfEE);
     case 3:
-      return f.intl.string(f.t["TX+iFB"]);
+      return f.intl.string(f.t["TX+iFC"]);
     case 4:
-      return f.intl.string(f.t.NSYGX1);
+      return f.intl.string(f.t.NSYGX0);
     case 5:
-      return f.intl.string(f.t.jjUTLy);
+      return f.intl.string(f.t["jjUTL+"]);
     case 1:
-      return f.intl.string(f.t["lMrv9/"]);
+      return f.intl.string(f.t.lMrv96);
     case 6:
       return null;
     default:
@@ -127,7 +127,7 @@ class b extends Chunk647438.PureComponent {
     let {
       guild: e
     } = this.props, t = new Set(module.features);
-    return exports.has(Chunk981631.GuildFeatures.INTERNAL_EMPLOYEE_ONLY) ? this.renderBadge(1, Chunk481060.Ymb, Chunk682133.staff) : exports.has(Chunk981631.GuildFeatures.VERIFIED) && exports.has(Chunk981631.GuildFeatures.HUB) ? this.renderBadge(4, Chunk481060.aVH, Chunk682133.verifiedHub) : exports.has(Chunk981631.GuildFeatures.HUB) ? this.renderBadge(5, Chunk481060.aVH, Chunk682133.hub) : exports.has(Chunk981631.GuildFeatures.VERIFIED) && exports.has(Chunk981631.GuildFeatures.PARTNERED) ? this.renderBadge(3, Chunk481060.kmB, Chunk682133.verified) : exports.has(Chunk981631.GuildFeatures.VERIFIED) ? this.renderBadge(2, Chunk481060.kmB, Chunk682133.verified) : exports.has(Chunk981631.GuildFeatures.PARTNERED) ? this.renderBadge(0, (0, Chunk481060.GSL)(Chunk665786.Z), Chunk682133.partnered) : null
+    return exports.has(Chunk981631.GuildFeatures.INTERNAL_EMPLOYEE_ONLY) ? this.renderBadge(1, Chunk481060.Ymb, Chunk598840.staff) : exports.has(Chunk981631.GuildFeatures.VERIFIED) && exports.has(Chunk981631.GuildFeatures.HUB) ? this.renderBadge(4, Chunk481060.aVH, Chunk598840.verifiedHub) : exports.has(Chunk981631.GuildFeatures.HUB) ? this.renderBadge(5, Chunk481060.aVH, Chunk598840.hub) : exports.has(Chunk981631.GuildFeatures.VERIFIED) && exports.has(Chunk981631.GuildFeatures.PARTNERED) ? this.renderBadge(3, Chunk481060.kmB, Chunk598840.verified) : exports.has(Chunk981631.GuildFeatures.VERIFIED) ? this.renderBadge(2, Chunk481060.kmB, Chunk598840.verified) : exports.has(Chunk981631.GuildFeatures.PARTNERED) ? this.renderBadge(0, (0, Chunk481060.GSL)(Chunk665786.Z), Chunk598840.partnered) : null
   }
 }
 let y = b

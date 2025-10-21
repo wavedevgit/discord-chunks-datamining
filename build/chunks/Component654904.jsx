@@ -54,11 +54,11 @@ function h(e) {
   (0, a.ZDy)(async () => {
     let {
       default: e
-    } = await Promise.all([n.e("91689"), n.e("89289"), n.e("50893")]).then(n.bind(n, 28130));
+    } = await Promise.all([n.e("91689"), n.e("89289"), n.e("53488")]).then(n.bind(n, 28130));
     return n => (0, r.jsx)(e, p({
       filters: l,
       maxFileSizeBytes: u.B,
-      imageSpecifications: t === d.pC.BANNER ? f.intl.string(f.t.IhzZlp) : true,
+      imageSpecifications: t === d.pC.BANNER ? f.intl.string(f.t.IhzZlo) : true,
       onComplete: e => {
         let {
           assetOrigin: n,

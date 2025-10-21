@@ -29,7 +29,7 @@ function m() {
   if (null == require || !m) return null;
   let g = Chunk13140.BB(require.shortcut, true);
   return {
-    title: Chunk388032.intl.format(Chunk388032.t.S5uhCA, {
+    title: Chunk388032.intl.format(Chunk388032.t.S5uhCN, {
       keybind: g,
       keybindHook: (e, t) => (0, i.jsx)(u.t, {
         keybind: g.split("+")

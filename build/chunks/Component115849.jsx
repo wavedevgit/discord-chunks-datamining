@@ -17,8 +17,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk295907 = require("./295907.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk118213 = require("./118213.js"),
-  Chunk10198 = require("./10198.js");
+  Chunk470840 = require("./470840.js"),
+  Chunk197571 = require("./197571.js");
 
 function v(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -85,7 +85,7 @@ function S(e, t) {
 
 function T(e) {
   let {
-    placeholder: t = h.intl.string(h.t["Rn/sLi"])
+    placeholder: t = h.intl.string(h.t["Rn/sLl"])
   } = e, n = i.useRef(null), a = i.useRef(null), [l, p] = i.useReducer(S, _), {
     canSend: v,
     hint: y,
@@ -111,7 +111,7 @@ function T(e) {
         }
       }).then(() => p({
         type: "SUCCESS",
-        text: h.intl.format(h.t.Rtl1Eh, {
+        text: h.intl.format(h.t.Rtl1Ep, {
           discordTag: t
         })
       }), e => {
@@ -128,7 +128,7 @@ function T(e) {
       children: [(0, r.jsx)(o.Text, {
         tag: "div",
         variant: "heading-md/normal",
-        children: h.intl.string(h.t["Rn/sLi"])
+        children: h.intl.string(h.t["Rn/sLl"])
       }), (0, r.jsx)("img", {
         src: j,
         alt: "Wumpus Waving"
@@ -188,7 +188,7 @@ function T(e) {
         }), (0, r.jsx)(o.Button, {
           variant: "primary",
           size: "sm",
-          text: h.intl.string(h.t["PMsq/f"]),
+          text: h.intl.string(h.t["PMsq/b"]),
           disabled: !v,
           type: "submit"
         })]

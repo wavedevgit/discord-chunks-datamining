@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 795691, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -10,7 +10,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk279881 = require("./279881.js"),
   Chunk383124 = require("./383124.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk583869 = require("./583869.js");
+  Chunk661656 = require("./661656.js");
 
 function d(e) {
   let {
@@ -39,7 +39,7 @@ function d(e) {
       children: [(0, r.jsx)(l.Text, {
         variant: "text-xs/semibold",
         color: "text-muted",
-        children: o.intl.string(o.t.bFGpub)
+        children: o.intl.string(o.t.bFGpua)
       }), (0, r.jsx)("div", {
         className: c.gamesList,
         children: b.map(e => (0, r.jsx)(s.Z, {

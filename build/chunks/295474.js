@@ -46,11 +46,11 @@ function E(e) {
     if (u.has(p.q.AUTOMOD_QUARANTINED_USERNAME_OR_GUILD_NICKNAME))
       if (null == e) {
         var _;
-        t.nick = [m.intl.formatToPlainString(m.t.WBUh3N, {
+        t.nick = [m.intl.formatToPlainString(m.t.WBUh3O, {
           guildName: null != (_ = i.name) ? _ : ""
         })]
-      } else t.nick = [m.intl.string(m.t.EPZCrK)];
-    return u.has(p.q.AUTOMOD_QUARANTINED_BIO) && (t.bio = [m.intl.string(m.t.dZh1v7)]), t
+      } else t.nick = [m.intl.string(m.t.EPZCrM)];
+    return u.has(p.q.AUTOMOD_QUARANTINED_BIO) && (t.bio = [m.intl.string(m.t.dZh1vz)]), t
   }, [e])
 }
 

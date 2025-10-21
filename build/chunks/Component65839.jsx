@@ -1,4 +1,4 @@
-/** Chunk was on 63962 **/
+/** Chunk was on 91053 **/
 /** chunk id: 65839, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -13,8 +13,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk75666 = require("./75666.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk535140 = require("./535140.js"),
-  Chunk31171 = require("./31171.js"),
+  Chunk806328 = require("./806328.js"),
+  Chunk152013 = require("./152013.js"),
   Chunk584354 = require("./584354.js"),
   Chunk725060 = require("./725060.js");
 let b = e => {
@@ -43,19 +43,19 @@ let b = e => {
           children: [(0, r.jsx)(s.Heading, {
             variant: "heading-xl/semibold",
             className: f.searchTitle,
-            children: p.intl.string(p.t.IT7qoK)
+            children: p.intl.string(p.t.IT7qoC)
           }), (0, r.jsx)(s.Text, {
             variant: "text-md/normal",
             className: f.searchSubtitle,
-            children: p.intl.string(p.t["5PoYtr"])
+            children: p.intl.string(p.t["5PoYts"])
           }), (0, r.jsx)(s.f6W, {
             theme: u.BR.LIGHT,
             children: e => (0, r.jsx)("div", {
               className: a()(f.searchContainer, e),
               children: (0, r.jsx)(s.E1j, {
                 query: t,
-                "aria-label": p.intl.string(p.t.nL2wKC),
-                placeholder: p.intl.string(p.t.nL2wKC),
+                "aria-label": p.intl.string(p.t.nL2wKD),
+                placeholder: p.intl.string(p.t.nL2wKD),
                 onChange: n,
                 onClear: i,
                 onKeyDown: l
@@ -78,8 +78,8 @@ let b = e => {
       currentCategoryId: m,
       handleSelectCategory: y,
       categoryCounts: _,
-      allEntriesCount: j,
-      isLoading: O
+      allEntriesCount: O,
+      isLoading: j
     } = e;
     return (0, r.jsx)("div", {
       className: h.pageContainer,
@@ -103,7 +103,7 @@ let b = e => {
             children: [(0, r.jsx)(s.njP.Item, {
               className: f.tabBarItem,
               id: d.AR.ALL,
-              children: "".concat(p.intl.string(p.t.hEAa2d), " (").concat(j, ")")
+              children: "".concat(p.intl.string(p.t.hEAa2a), " (").concat(O, ")")
             }, d.AR.ALL), (0, d.b7)(t.id).map(e => {
               let {
                 value: t,
@@ -116,7 +116,7 @@ let b = e => {
               }, t)
             })]
           })
-        }), O && null == n ? (0, r.jsx)(s.$jN, {
+        }), j && null == n ? (0, r.jsx)(s.$jN, {
           className: h.spinner
         }) : null == n ? true : n.map((e, t) => (0, r.jsxs)(i.Fragment, {
           children: [true !== e.header ? (0, r.jsx)(s.Text, {

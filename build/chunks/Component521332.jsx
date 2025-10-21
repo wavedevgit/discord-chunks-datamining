@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk185625 = require("./185625.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk298186 = require("./298186.js");
+  Chunk769450 = require("./769450.js");
 
 function x(e) {
   let {
@@ -31,7 +31,7 @@ function x(e) {
   }), (0, r.jsx)(c.JZ, {
     title: t,
     description: n,
-    buttonText: o ? h.intl.string(h.t["h+WsPT"]) : h.intl.string(h.t.A8t4NT),
+    buttonText: o ? h.intl.string(h.t["h+WsPb"]) : h.intl.string(h.t.A8t4Nf),
     buttonDisabled: o,
     onButtonPress: () => {
       l(), d(true), a(g.M4.SETTINGS_UPSELLS_APPLY_CLICKED)
@@ -53,7 +53,7 @@ function f(e) {
     children: [(0, r.jsx)(a.Heading, {
       variant: "text-sm/semibold",
       className: b.header,
-      children: h.intl.string(h.t["1yxTIC"])
+      children: h.intl.string(h.t["1yxTIJ"])
     }), (0, r.jsx)("div", {
       className: b.upsellsContainer,
       children: j.map((e, n) => {

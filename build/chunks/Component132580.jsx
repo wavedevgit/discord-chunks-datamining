@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 132580, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -49,7 +49,7 @@ function o(e) {
     }
     return e
   }({}, d), n = n = {
-    text: s.intl.string(s.t.G6GWZ2),
+    text: s.intl.string(s.t.G6GWZ4),
     color: c,
     className: o
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

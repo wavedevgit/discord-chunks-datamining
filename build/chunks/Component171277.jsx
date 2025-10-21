@@ -1,4 +1,4 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 171277, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -12,7 +12,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk607070 = require("./607070.js"),
   Chunk254238 = require("./254238.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk21719 = require("./21719.js");
+  Chunk508773 = require("./508773.js");
 
 function p(e) {
   let {
@@ -34,11 +34,11 @@ function p(e) {
     }), (0, i.jsx)(o.Heading, {
       className: d.header,
       variant: "heading-md/bold",
-      children: u.intl.string(u.t["C+tj1d"])
+      children: u.intl.string(u.t["C+tj1c"])
     }), (0, i.jsx)(o.Text, {
       variant: "text-md/normal",
       color: "header-secondary",
-      children: u.intl.format(u.t["nNHd//"], {
+      children: u.intl.format(u.t["nNHd/y"], {
         onCancel: c.s6
       })
     })]

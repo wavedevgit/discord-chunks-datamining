@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk358085 = require("./358085.js"),
   Chunk998502 = require("./998502.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk196495 = require("./196495.js");
+  Chunk107009 = require("./107009.js");
 let g = 1e3;
 
 function E(e) {
@@ -51,19 +51,19 @@ function T(e) {
   } = e, i = (0, r.jsx)(s.P3F, {
     className: o()(m.winButton, m.winButtonClose),
     onClick: () => y(t),
-    "aria-label": h.intl.string(h.t.ZdNUj4),
+    "aria-label": h.intl.string(h.t.ZdNUj2),
     tabIndex: false,
     children: (0, r.jsx)(u.Z, {})
   }), a = (0, r.jsx)(s.P3F, {
     className: o()(m.winButton, m.winButtonMinMax),
     onClick: () => v(t),
-    "aria-label": h.intl.string(h.t.G1u0hI),
+    "aria-label": h.intl.string(h.t.G1u0hK),
     tabIndex: false,
     children: (0, r.jsx)(d.Z, {})
   }), l = (0, r.jsx)(s.P3F, {
     className: o()(m.winButton, m.winButtonMinMax),
     onClick: () => O(t),
-    "aria-label": h.intl.string(h.t.CxOC4e),
+    "aria-label": h.intl.string(h.t.CxOC4U),
     tabIndex: false,
     children: (0, r.jsx)(f.Z, {})
   });

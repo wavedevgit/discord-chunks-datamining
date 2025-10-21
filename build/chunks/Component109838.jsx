@@ -18,9 +18,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk809121 = require("./809121.jsx"),
   Chunk546303 = require("./546303.jsx"),
   Chunk981631 = require("./981631.js"),
-  Chunk45765 = require("./45765.js"),
+  Chunk470658 = require("./470658.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk909842 = require("./909842.js");
+  Chunk215365 = require("./215365.js");
 
 function h(e) {
   var n;
@@ -34,34 +34,34 @@ function h(e) {
     y = (0, l.e7)([g.Z], () => g.Z.getStateForGuild(t)),
     C = Object.values(null != (n = null == y ? true : y.instances) ? n : {});
   return (0, r.jsxs)("div", {
-    className: p.container,
+    className: j.container,
     children: [(0, r.jsxs)(c.ZP, {
-      className: p.toolbar,
+      className: j.toolbar,
       toolbar: (0, r.jsx)("div", {}),
       children: [(0, r.jsx)(c.ZP.Icon, {
         icon: i.iWm,
         "aria-label": ""
       }), (0, r.jsx)(c.ZP.Title, {
-        children: j.intl.string(b.default.vCzwMz)
+        children: p.intl.string(b.default.vCzwM7)
       }), (0, r.jsx)(s.IGR, {
         disableColor: true,
-        text: j.intl.string(j.t.oW0eUV),
-        className: p.badge
+        text: p.intl.string(p.t.oW0eUd),
+        className: j.badge
       }), (0, r.jsx)(c.ZP.Divider, {
-        className: p.divider
+        className: j.divider
       }), (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
         color: "text-muted",
-        children: j.intl.format(b.default.LiR4eH, {
+        children: p.intl.format(b.default.LiR4eN, {
           helpCenterUrl: d.Z.getArticleURL(v.BhN.GAME_SERVER_HOSTING)
         })
       })]
     }), (0, r.jsxs)("div", {
-      className: p.contentContainer,
+      className: j.contentContainer,
       children: [(null == y ? true : y.instances) != null ? (0, r.jsx)(s.zJl, {
-        className: p.gameContainerWrapper,
+        className: j.gameContainerWrapper,
         children: (0, r.jsxs)("div", {
-          className: p.gameContainer,
+          className: j.gameContainer,
           children: [C.map((e, n) => (0, r.jsx)(x.ZP, {
             guildId: t,
             instance: e
@@ -70,7 +70,7 @@ function h(e) {
           })]
         })
       }) : (0, r.jsx)("div", {
-        className: p.spinnerContainer,
+        className: j.spinnerContainer,
         children: (0, r.jsx)(s.$jN, {
           type: s.RAz.SPINNING_CIRCLE
         })

@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk228168 = require("./228168.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk923805 = require("./923805.js");
+  Chunk31948 = require("./31948.js");
 
 function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -153,7 +153,7 @@ function M(e) {
         })
       },
       variant: "secondary",
-      text: S.intl.string(S.t.pD1L1t),
+      text: S.intl.string(S.t.pD1L1u),
       textVariant: "text-xs/medium"
     })
   }) : null, el = i.useCallback(() => {
@@ -187,7 +187,7 @@ function M(e) {
     children: [(0, r.jsx)(l.nn4, {
       children: (0, r.jsx)(l.H, {
         id: R,
-        children: S.intl.string(S.t.J6STd3)
+        children: S.intl.string(S.t.J6STd9)
       })
     }), (0, r.jsxs)("div", {
       ref: W,
@@ -210,7 +210,7 @@ function M(e) {
               children: (0, r.jsx)(l.Text, {
                 variant: "text-xs/medium",
                 color: "none",
-                children: S.intl.format(S.t.wv8Q7u, {
+                children: S.intl.format(S.t.wv8Q7k, {
                   activitiesCount: ea.length
                 })
               })

@@ -9,7 +9,7 @@ var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk318713 = require("./318713.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk136907 = require("./136907.js"),
+  Chunk724913 = require("./724913.js"),
   s = function(e) {
     return e[e.WITH_CONTENT = 0] = "WITH_CONTENT", e[e.AFTER_ACCESSORIES = 1] = "AFTER_ACCESSORIES", e
   }({});
@@ -31,7 +31,7 @@ function c(e) {
       isInline: false,
       children: (0, r.jsxs)("span", {
         className: o.edited,
-        children: ["(", a.intl.string(a.t.C8sXIC), ")"]
+        children: ["(", a.intl.string(a.t.C8sXIM), ")"]
       })
     })]
   }) : null

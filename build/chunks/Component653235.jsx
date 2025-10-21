@@ -24,7 +24,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk215016 = require("./215016.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk773043 = require("./773043.js");
+  Chunk774802 = require("./774802.js");
 
 function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -73,7 +73,7 @@ function R(e) {
   let n = l().sample(l().values(e));
   return {
     type: O.wI2.FAVORITES,
-    name: v.intl.string(v.t.y3LQCA),
+    name: v.intl.string(v.t.y3LQCG),
     icon: f.r7p,
     src: null != n ? n.src : "https://media.giphy.com/media/1TOSaJsWtnhe0/giphy.gif",
     format: null != (t = null == n ? true : n.format) ? t : u.EO.IMAGE

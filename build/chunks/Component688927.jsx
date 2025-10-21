@@ -1,4 +1,4 @@
-/** Chunk was on 3408 **/
+/** Chunk was on 17013 **/
 /** chunk id: 688927, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk497505 = require("./497505.js"),
   Chunk670638 = require("./670638.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk801252 = require("./801252.js");
+  Chunk319889 = require("./319889.js");
 
 function p(e) {
   let {
@@ -25,7 +25,7 @@ function p(e) {
     children: [(0, r.jsx)(o.Text, {
       variant: "text-xxs/medium",
       className: a()(u.flex, u.headerText),
-      children: d.intl.format(d.t["pX+fmp"], {
+      children: d.intl.format(d.t["pX+fmn"], {
         expirationDate: m
       })
     }), (0, r.jsx)(c.r, {
@@ -58,7 +58,7 @@ function p(e) {
           return e
         }({}, e), n = n = {
           className: u.submenuWrapper,
-          "aria-label": d.intl.string(d.t.DEoVWV),
+          "aria-label": d.intl.string(d.t.DEoVWZ),
           children: (0, r.jsx)(o.xhG, {
             size: "md",
             color: "currentColor",

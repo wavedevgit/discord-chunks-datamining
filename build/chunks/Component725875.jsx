@@ -1,4 +1,4 @@
-/** Chunk was on 99063 **/
+/** Chunk was on 86736 **/
 /** chunk id: 725875, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk936726 = require("./936726.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk460949 = require("./460949.js");
+  Chunk246906 = require("./246906.js");
 
 function g(e) {
   let {
@@ -38,7 +38,7 @@ function g(e) {
           webhooks: [i]
         })
       } return Object.values(e).sort((e, t) => e.channel.name.localeCompare(t.channel.name))
-  }, [n, t]), y = r.useCallback(e => {
+  }, [n, t]), O = r.useCallback(e => {
     x() && (e === (null == f ? true : f.id) ? a.Z.stopEditingWebhook() : a.Z.startEditingWebhook(e))
   }, [x, f]);
   return (0, i.jsx)("div", {
@@ -62,7 +62,7 @@ function g(e) {
           children: [(0, i.jsx)(l.Text, {
             variant: "text-md/medium",
             className: b.groupHeader,
-            children: m.intl.format(m.t.TKDIZm, {
+            children: m.intl.format(m.t.TKDIZg, {
               channelHook: () => (0, i.jsx)("span", {
                 className: b.channelName,
                 children: (0, o.F6)(t, c.default, s.Z, true)
@@ -96,7 +96,7 @@ function g(e) {
         lastCreatedWebhookId: g,
         editedWebhook: f,
         errors: h,
-        toggleWebhookExpand: y
+        toggleWebhookExpand: O
       })
     })
   })

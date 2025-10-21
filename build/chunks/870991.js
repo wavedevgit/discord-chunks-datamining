@@ -1,4 +1,4 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 870991, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   D8: () => r,
@@ -9,13 +9,13 @@ let r = "https://discord.com/safety/understanding-and-avoiding-common-scams";
 
 function l() {
   return [{
-    title: Chunk388032.intl.string(Chunk388032.t.wSZfJS),
-    description: Chunk388032.intl.string(Chunk388032.t.CRwzW1)
+    title: Chunk388032.intl.string(Chunk388032.t.wSZfJR),
+    description: Chunk388032.intl.string(Chunk388032.t.CRwzW5)
   }, {
-    title: Chunk388032.intl.string(Chunk388032.t.cmMUaG),
-    description: Chunk388032.intl.string(Chunk388032.t.n6G1ub)
+    title: Chunk388032.intl.string(Chunk388032.t.cmMUaB),
+    description: Chunk388032.intl.string(Chunk388032.t.n6G1ue)
   }, {
-    title: Chunk388032.intl.string(Chunk388032.t["5SPKS0"]),
-    description: Chunk388032.intl.string(Chunk388032.t.eyjeJS)
+    title: Chunk388032.intl.string(Chunk388032.t["5SPKSy"]),
+    description: Chunk388032.intl.string(Chunk388032.t.eyjeJQ)
   }]
 }

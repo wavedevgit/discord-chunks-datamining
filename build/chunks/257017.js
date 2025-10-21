@@ -11,11 +11,11 @@ var Chunk668781 = require("./668781.js"),
 
 function a(e) {
   i.Z.show({
-    title: s.intl.string(s.t.vElC9f),
-    body: s.intl.format(s.t.yslqFB, {
+    title: s.intl.string(s.t.vElC9b),
+    body: s.intl.format(s.t.yslqFM, {
       name: e
     }),
-    cancelText: s.intl.string(s.t.psXQHB),
+    cancelText: s.intl.string(s.t.psXQHP),
     onCancel() {
       window.open(l.Z.getArticleURL(r.BhN.PERMISSIONS_LOCKOUT))
     }

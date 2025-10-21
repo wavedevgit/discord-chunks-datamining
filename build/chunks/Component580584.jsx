@@ -1,4 +1,4 @@
-/** Chunk was on 67703 **/
+/** Chunk was on 64387 **/
 /** chunk id: 580584, original params: e,t,o (module,exports,require) **/
 require.d(exports, {
   default: () => b
@@ -20,9 +20,9 @@ function b(e) {
   } = e;
   return (0, _.jsx)(c.Z, {
     modalType: "summary",
-    header: i.intl.string(i.t.hghcMj),
-    body: i.intl.string(i.t["QFU78/"]),
-    problemTitle: i.intl.string(i.t.CtiHPj),
+    header: i.intl.string(i.t.hghcMh),
+    body: i.intl.string(i.t.QFU785),
+    problemTitle: i.intl.string(i.t.CtiHPm),
     onSubmit: s,
     onClose: b,
     ratingOptions: [n.aZ.GOOD, n.aZ.BAD],

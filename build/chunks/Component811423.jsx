@@ -1,4 +1,4 @@
-/** Chunk was on 9145 **/
+/** Chunk was on 47840 **/
 /** chunk id: 811423, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -18,7 +18,7 @@ function c(e, t) {
     children: (0, i.jsx)(l.sNh, {
       id: "report-app",
       color: "danger",
-      label: s.intl.string(s.t.NgA5vr),
+      label: s.intl.string(s.t.NgA5vp),
       action: () => (0, a.uu)({
         application: e,
         entrypoint: "activity_ui_channel_call",

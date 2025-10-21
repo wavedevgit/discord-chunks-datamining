@@ -37,7 +37,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk953605 = require("./953605.js");
+  Chunk852529 = require("./852529.js");
 
 function j(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -88,13 +88,13 @@ function Z(e) {
   } = e;
   if (null != s) switch (a) {
     case D.iO.LESS_THAN:
-      t = M.intl.format(M.t["2p7dAw"], {
+      t = M.intl.format(M.t["2p7dA3"], {
         description: s,
         count: Math.max(0, Number(o) - 1)
       });
       break;
     case D.iO.GREATER_THAN:
-      t = M.intl.format(M.t["2p7dAw"], {
+      t = M.intl.format(M.t["2p7dA3"], {
         description: s,
         count: Math.max(0, Number(o) + 1)
       });
@@ -199,7 +199,7 @@ function V(e) {
     var e, t;
     return null != (t = null == (e = T.ZP.getSelfMember(d)) ? true : e.roles.includes(l)) && t
   }, [d, l]);
-  return t = 1 === o.length && 1 === o[0].length ? M.intl.string(M.t.jDym4O) : 1 === o.length ? M.intl.format(M.t["0eBj39"], {}) : M.intl.format(M.t.D7uftL, {}), (0, r.jsxs)("div", {
+  return t = 1 === o.length && 1 === o[0].length ? M.intl.string(M.t.jDym4E) : 1 === o.length ? M.intl.format(M.t["0eBj3x"], {}) : M.intl.format(M.t.D7uftB, {}), (0, r.jsxs)("div", {
     className: k.popout,
     children: [(0, r.jsx)("div", {
       className: k.popoutHeaderContainer,
@@ -224,7 +224,7 @@ function V(e) {
         className: k.viewConnectionsButton,
         color: _.zx.Colors.PRIMARY,
         onClick: a,
-        children: M.intl.string(M.t.hgKDnJ)
+        children: M.intl.string(M.t.hgKDnG)
       })]
     })]
   })
@@ -279,7 +279,7 @@ function H(e) {
     align: "top",
     nudgeAlignIntoViewport: true,
     children: e => (0, r.jsx)(d.u, {
-      text: M.intl.string(M.t.Wpsnam),
+      text: M.intl.string(M.t.Wpsnar),
       children: (0, r.jsxs)("div", B(U({
         ref: g,
         className: k.badge

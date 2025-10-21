@@ -17,7 +17,7 @@ function c(t) {
   let n = (0, o.B)(t);
   return (0, a.e7)([r.Z], () => r.Z.hasJoined(t.id)) ? (0, i.jsx)(l.sNh, {
     id: "thread-notifications",
-    label: u.intl.string(u.t.h850Sk),
+    label: u.intl.string(u.t.h850Ss),
     children: (0, d.zb)().map(e => {
       let {
         setting: a,
@@ -35,7 +35,7 @@ function c(t) {
     })
   }) : (0, i.jsx)(l.sNh, {
     id: "notifications-disabled",
-    label: u.intl.string(u.t.h850Sk),
+    label: u.intl.string(u.t.h850Ss),
     disabled: true
   })
 }

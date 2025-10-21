@@ -17,8 +17,8 @@ let d = "PS two way upsell",
   f = () => {
     let e = Chunk63063.Z.getArticleURL(Chunk981631.BhN.PS_CONNECTION);
     return (0, Chunk951288.jsx)(Chunk249881.t, {
-      title: Chunk388032.intl.string(Chunk388032.t.v20wws),
-      body: Chunk388032.intl.format(Chunk388032.t.lTZBio, {
+      title: Chunk388032.intl.string(Chunk388032.t.v20wwm),
+      body: Chunk388032.intl.format(Chunk388032.t.lTZBit, {
         help_article: module
       }),
       img: (0, Chunk951288.jsx)("img", {

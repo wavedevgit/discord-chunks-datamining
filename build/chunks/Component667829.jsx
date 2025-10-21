@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk925994 = require("./925994.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk744114 = require("./744114.js");
+  Chunk564355 = require("./564355.js");
 
 function L(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -207,7 +207,7 @@ class G extends Chunk647438.Component {
       isPreviewing: n,
       showValueWhenDisabled: r
     } = this.props;
-    return module && !require ? Chunk951288 ? "" : Chunk388032.intl.string(Chunk388032.t.IYKTTU) : exports
+    return module && !require ? Chunk951288 ? "" : Chunk388032.intl.string(Chunk388032.t.IYKTTc) : exports
   }
   render() {
     var e, t, n, i, a, s;
@@ -241,9 +241,9 @@ class G extends Chunk647438.Component {
       popup: V
     } = this.state, H = {
       channel: Chunk911969,
-      className: o()(Chunk30465, Chunk744114.textArea, {
-        [Chunk744114.textAreaSlate]: Chunk998698,
-        [Chunk744114.textAreaDisabled]: u || F
+      className: o()(Chunk30465, Chunk564355.textArea, {
+        [Chunk564355.textAreaSlate]: Chunk998698,
+        [Chunk564355.textAreaDisabled]: u || F
       }),
       id: Chunk330122,
       placeholder: this.getPlaceholder(),
@@ -266,10 +266,10 @@ class G extends Chunk647438.Component {
       onKeyDown: Chunk430742,
       onSubmit: Chunk531643,
       textAreaPaddingClassName: o()({
-        [Chunk744114.textAreaForPostCreation]: Chunk476326 === Chunk541716.Ie.CREATE_FORUM_POST,
-        [Chunk744114.textAreaCustomGift]: Chunk476326 === Chunk541716.Ie.CUSTOM_GIFT,
-        [Chunk744114.textAreaForUserProfile]: Chunk476326 === Chunk541716.Ie.USER_PROFILE,
-        [Chunk744114.textAreaForOverlayInlineReply]: Chunk476326 === Chunk541716.Ie.OVERLAY_INLINE_REPLY
+        [Chunk564355.textAreaForPostCreation]: Chunk476326 === Chunk541716.Ie.CREATE_FORUM_POST,
+        [Chunk564355.textAreaCustomGift]: Chunk476326 === Chunk541716.Ie.CUSTOM_GIFT,
+        [Chunk564355.textAreaForUserProfile]: Chunk476326 === Chunk541716.Ie.USER_PROFILE,
+        [Chunk564355.textAreaForOverlayInlineReply]: Chunk476326 === Chunk541716.Ie.OVERLAY_INLINE_REPLY
       }),
       spellcheckEnabled: Chunk710845,
       useNewSlashCommands: Chunk117530,
@@ -441,8 +441,8 @@ class G extends Chunk647438.Component {
         } = e;
         return "is_directory" === t
       })) && (0, h.openUploadError)({
-        title: w.intl.string(w.t.azO1PT),
-        help: w.intl.string(w.t.Koklr6)
+        title: w.intl.string(w.t.azO1Pe),
+        help: w.intl.string(w.t["Koklr/"])
       }), false) : (e.preventDefault(), e.stopPropagation(), this.saveCurrentText(), O(I), this.focus(), true)
     }), this._unsubscribe = S.p8.subscribe(e => {
       requestAnimationFrame(() => {

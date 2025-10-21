@@ -19,7 +19,7 @@ function u(e, t) {
     (0, l.ZDy)(async () => {
       let {
         default: t
-      } = await Promise.all([n.e("33285"), n.e("29497"), n.e("75139")]).then(n.bind(n, 241865));
+      } = await Promise.all([n.e("33285"), n.e("29497"), n.e("26861")]).then(n.bind(n, 241865));
       return n => {
         var i, l;
         return (0, r.jsx)(t, (i = function(e) {
@@ -60,13 +60,13 @@ function u(e, t) {
     case o.d4z.GUILD_TEXT:
       return (0, r.jsx)(l.sNh, {
         id: "create-text-channel",
-        label: a.intl.string(a.t.HHkTJC),
+        label: a.intl.string(a.t.HHkTJP),
         action: b
       });
     case o.d4z.GUILD_VOICE:
       return (0, r.jsx)(l.sNh, {
         id: "create-voice-channel",
-        label: a.intl.string(a.t.AlbZaG),
+        label: a.intl.string(a.t.AlbZaI),
         action: b
       });
     default:

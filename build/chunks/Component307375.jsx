@@ -1,4 +1,4 @@
-/** Chunk was on 29679 **/
+/** Chunk was on 64982 **/
 /** chunk id: 307375, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk384632 = require("./384632.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk189114 = require("./189114.js");
+  Chunk140367 = require("./140367.js");
 
 function h(e) {
   let {
@@ -28,37 +28,37 @@ function h(e) {
       n = h && (t === g.A.DISCOVERABLE || b);
     return [{
       id: g.A.INVITE,
-      title: p.intl.string(p.t["HQVS/P"]),
-      body: p.intl.string(p.t.KzXzFR),
+      title: p.intl.string(p.t["HQVS/L"]),
+      body: p.intl.string(p.t.KzXzFa),
       icon: c.mBM,
       enabled: !e,
-      ineligibleText: p.intl.string(p.t.LIZgwM)
+      ineligibleText: p.intl.string(p.t.LIZgwJ)
     }, {
       id: g.A.APPLY,
       title: p.intl.string(p.t.LrFEYW),
-      body: p.intl.string(p.t.kJj2oK),
+      body: p.intl.string(p.t.kJj2oG),
       icon: c._XJ,
       enabled: !e,
-      ineligibleText: p.intl.string(p.t.LIZgwM)
+      ineligibleText: p.intl.string(p.t.LIZgwJ)
     }, {
       id: g.A.DISCOVERABLE,
-      title: p.intl.string(p.t.lhOHLy),
-      body: p.intl.string(p.t.pqQylZ),
+      title: p.intl.string(p.t.lhOHL3),
+      body: p.intl.string(p.t.pqQylS),
       icon: c.enf,
       enabled: n,
-      ineligibleText: h ? p.intl.string(p.t.iBpXPj) : p.intl.string(p.t["5TQ+eH"])
+      ineligibleText: h ? p.intl.string(p.t.iBpXPg) : p.intl.string(p.t["5TQ+eE"])
     }]
   }, [t, h, b]);
   return (0, r.jsxs)("div", {
     children: [(0, r.jsx)(c.Heading, {
       color: "header-primary",
       variant: "text-md/semibold",
-      children: p.intl.string(p.t["N+GnPz"])
+      children: p.intl.string(p.t["N+GnP2"])
     }), (0, r.jsx)(c.Text, {
       color: "text-secondary",
       variant: "text-sm/medium",
       className: f.bodyText,
-      children: p.intl.format(p.t["Y/jYws"], {
+      children: p.intl.format(p.t["Y/jYwu"], {
         helpdeskArticle: u.Z.getArticleURL(m.BhN.MEMBER_APPLICATIONS)
       })
     }), (0, r.jsx)(c.njP, {

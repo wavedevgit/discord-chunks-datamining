@@ -10,8 +10,8 @@ var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk621189 = require("./621189.js"),
-  Chunk465106 = require("./465106.js");
+  Chunk796914 = require("./796914.js"),
+  Chunk149715 = require("./149715.js");
 
 function u(e) {
   let {
@@ -27,7 +27,7 @@ function u(e) {
     }), (0, r.jsx)(o.Text, {
       variant: "text-sm/medium",
       className: a()(l.lockIconText, null != n ? n : true),
-      children: s.intl.string(s.t.Kv6Z4O)
+      children: s.intl.string(s.t.Kv6Z4I)
     })]
   })
 }

@@ -17,7 +17,7 @@ var Chunk28664 = require("./28664.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk671955 = require("./671955.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk663907 = require("./663907.js");
+  Chunk704543 = require("./704543.js");
 
 function m(e) {
   var t, n, m, g, E;
@@ -43,7 +43,7 @@ function m(e) {
     children: [(0, r.jsx)(i.u, {
       text: T.tooltip,
       children: (0, r.jsx)(d.O1, {
-        text: null != (t = T.label) ? t : p.intl.string(p.t.eU3inJ),
+        text: null != (t = T.label) ? t : p.intl.string(p.t.eU3inB),
         onClick: A,
         disabled: T.disabled,
         loading: T.loading
@@ -73,8 +73,8 @@ function m(e) {
       })
     }), (0, r.jsx)(d.pt, {
       icon: a.iOO,
-      tooltipText: null != (g = T.tooltip) ? g : p.intl.string(p.t.eU3inJ),
-      "aria-label": null != (E = T.label) ? E : p.intl.string(p.t.eU3inJ),
+      tooltipText: null != (g = T.tooltip) ? g : p.intl.string(p.t.eU3inB),
+      "aria-label": null != (E = T.label) ? E : p.intl.string(p.t.eU3inB),
       disabled: T.disabled,
       loading: T.loading,
       onClick: A
