@@ -47,7 +47,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk217702 = require("./217702.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk430799 = require("./430799.js");
+  Chunk946232 = require("./946232.js");
 let W = new Set([Chunk981631.IyS.FIVE_G, Chunk981631.IyS.FOUR_G, Chunk981631.IyS.UNKNOWN]),
   z = {
     tension: 250,
@@ -58,7 +58,7 @@ let W = new Set([Chunk981631.IyS.FIVE_G, Chunk981631.IyS.FOUR_G, Chunk981631.IyS
 function K() {
   let e = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.getState().theme);
   return (0, Chunk951288.jsx)("div", {
-    className: Chunk430799.pauseText,
+    className: Chunk946232.pauseText,
     style: {
       background: (0, Chunk780384.wj)(module) ? "rgba(0, 0, 0, 0.65)" : "rgba(255, 255, 255, 0.65)"
     },

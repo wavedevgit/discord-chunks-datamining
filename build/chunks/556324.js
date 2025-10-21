@@ -1,0 +1,3 @@
+/** Chunk was on 19640 **/
+/** chunk id: 556324, original params: n (module,exports,require) **/
+module.exports = JSON.parse('{"Z1NZwc":"Borttaget","+a5G2t":"Otillg\xe4nglig","Ys/RrK":"Offline","60kAzs":"Online","aCyHe3":"Otillg\xe4nglig","k+RTIi":"Plats","nB5OZ2":"Plats","rOMEZW":"Namn","K+zMYm":"Plan","k0Y0BA":"Kolla in den","P2ihv7":"Bjud in v\xe4nner","yIH2oK":"Hantera plan","feUiMz":"Inst\xe4llningar","n+ZX7+":"Serverstatus"}')

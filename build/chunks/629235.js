@@ -1,5 +1,5 @@
-/** Chunk was on 79041 **/
-/** chunk id: 629235, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 50614 **/
+/** chunk id: 629235, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
 }), require("./953529.js");
@@ -11,43 +11,43 @@ var Chunk647438 = require("./647438.js"),
   Chunk81643 = require("./81643.js"),
   Chunk469775 = require("./469775.js"),
   Chunk388032 = require("./388032.jsx");
-let u = function(e) {
+let u = function(t) {
   let {
-    onClose: t,
+    onClose: e,
     onMethodClick: n,
     classificationId: u
-  } = e, {
-    methods: m,
-    loading: p
-  } = (0, r.cj)([l.Z], () => ({
-    methods: l.Z.methods,
-    loading: l.Z.loading
+  } = t, {
+    methods: E,
+    loading: _
+  } = (0, l.cj)([a.Z], () => ({
+    methods: a.Z.methods,
+    loading: a.Z.loading
   })), {
-    initiateAgeVerification: h
+    initiateAgeVerification: f
   } = (0, s.WD)({
-    onComplete: t,
+    onComplete: e,
     shouldShowExpressiveModal: true,
     classificationId: u
   });
-  return a.useEffect(() => {
-    null == m && (0, o.Jh)()
-  }, [m]), {
-    ageVerificationMethods: null == m ? true : m.map(e => {
-      let t = c.ed[e];
-      if (null == t) return null;
+  return i.useEffect(() => {
+    null == E && (0, o.Jh)()
+  }, [E]), {
+    ageVerificationMethods: null == E ? true : E.map(t => {
+      let e = c.ed[t];
+      if (null == e) return null;
       let {
-        title: a,
-        description: r
-      } = t;
+        title: i,
+        description: l
+      } = e;
       return {
-        id: e,
-        title: d.intl.string(a),
-        description: d.intl.string(r),
-        onClick: async t => {
-          (0, i.x3)(t, i.d_.EXPRESSIVE_PRIMARY, i.sU.METHOD_SELECT, e), null == n || n(), await h(i.cU.EXPRESSIVE_GET_STARTED, e)
+        id: t,
+        title: d.intl.string(i),
+        description: d.intl.string(l),
+        onClick: async e => {
+          (0, r.x3)(e, r.d_.EXPRESSIVE_PRIMARY, r.sU.METHOD_SELECT, t), null == n || n(), await f(r.cU.EXPRESSIVE_GET_STARTED, t)
         }
       }
-    }).filter(e => null != e),
-    loading: p
+    }).filter(t => null != t),
+    loading: _
   }
 }

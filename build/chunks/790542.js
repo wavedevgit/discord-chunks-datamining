@@ -1,14 +1,14 @@
-/** Chunk was on 74560 **/
+/** Chunk was on 81501 **/
 /** chunk id: 790542, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A: () => o
+  A: () => i
 });
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk751648 = require("./751648.js"),
   Chunk479766 = require("./479766.js");
 
-function o() {
+function i() {
   let {
     balance: e,
     isFetching: t,

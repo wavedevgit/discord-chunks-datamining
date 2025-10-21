@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk849464 = require("./849464.js"),
   Chunk765305 = require("./765305.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk646615 = require("./646615.js");
+  Chunk606532 = require("./606532.js");
 let E = 20;
 
 function b(e, t) {
@@ -117,10 +117,10 @@ function O(e) {
 
 function v() {
   return (0, Chunk951288.jsx)(Chunk481060.IGR, {
-    className: Chunk646615.newBadge,
+    className: Chunk606532.newBadge,
     color: Chunk692547.Z.unsafe_rawColors.BRAND_260.css,
     text: (0, Chunk951288.jsx)(Chunk481060.Text, {
-      className: Chunk646615.newBadgeText,
+      className: Chunk606532.newBadgeText,
       variant: "text-xs/bold",
       children: Chunk388032.intl.string(Chunk388032.t.y2b7CA)
     })

@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk410575 = require("./410575.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk981028 = require("./981028.js");
+  Chunk861218 = require("./861218.js");
 
 function I(e) {
   var t, n;
@@ -80,8 +80,8 @@ let C = Chunk647438.memo(function() {
   } = (0, Chunk316243.Z)();
   return (0, Chunk951288.jsx)("section", {
     ref: module,
-    className: a()(Chunk981028.panels, {
-      [Chunk981028.disablePointersWhileSorting]: exports
+    className: a()(Chunk861218.panels, {
+      [Chunk861218.disablePointersWhileSorting]: exports
     }),
     "aria-label": Chunk388032.intl.string(Chunk388032.t.StREWF),
     children: (0, Chunk951288.jsxs)(Chunk793030.JcV, {
@@ -89,7 +89,7 @@ let C = Chunk647438.memo(function() {
       children: [(0, Chunk951288.jsx)(Chunk316173.Z, {}), (0, Chunk951288.jsx)(Chunk210724.Z, {}), (0, Chunk951288.jsx)(Chunk235555.Z, {}), (0, Chunk951288.jsx)(Chunk410575.Z, {
         section: Chunk981631.jXE.ACTIVITY_PANEL,
         children: (0, Chunk951288.jsx)(I, {
-          className: Chunk981028.activityPanel
+          className: Chunk861218.activityPanel
         })
       }), (0, Chunk951288.jsx)(Chunk410575.Z, {
         section: Chunk981631.jXE.RTC_CONNECTION_PANEL,

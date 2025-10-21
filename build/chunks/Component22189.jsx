@@ -41,8 +41,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk526761 = require("./526761.js"),
   Chunk332325 = require("./332325.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk119475 = require("./119475.js"),
-  Chunk693450 = require("./693450.js"),
+  Chunk684555 = require("./684555.js"),
+  Chunk62222 = require("./62222.js"),
   Chunk660372 = require("./660372.js"),
   Chunk926433 = require("./926433.js"),
   Chunk302036 = require("./302036.js"),
@@ -413,8 +413,8 @@ let eE = () => {
     },
     customThemes: {
       name: "customThemes",
-      title: Chunk388032.intl.string(Chunk119475.default["76L4b2"]),
-      subtitle: Chunk388032.intl.string(Chunk119475.default.i3n50t),
+      title: Chunk388032.intl.string(Chunk684555.default["76L4b2"]),
+      subtitle: Chunk388032.intl.string(Chunk684555.default.i3n50t),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVV),
       onCtaClick: () => {
         (0, Chunk550385.XO)(Chunk550385.wh.CUSTOM_THEME)
@@ -432,8 +432,8 @@ let eE = () => {
     },
     displayNameStyles: {
       name: "displayNameStyles",
-      title: Chunk388032.intl.string(Chunk693450.default.ABtBDQ),
-      subtitle: Chunk388032.intl.string(Chunk693450.default.jhmU5O),
+      title: Chunk388032.intl.string(Chunk62222.default.ABtBDQ),
+      subtitle: Chunk388032.intl.string(Chunk62222.default.jhmU5O),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVV),
       onCtaClick: eU,
       canReveal: eC,

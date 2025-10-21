@@ -1,0 +1,3 @@
+/** Chunk was on 39677 **/
+/** chunk id: 932110, original params: t (module,exports,require) **/
+module.exports = JSON.parse('{"zyFyf3":"Olet \xc4l\xe4 h\xe4iritse -tilassa. Liity keskusteluun siirtym\xe4ll\xe4 online-tilaan.","7cuAe3":"\xc4l\xe4 h\xe4iritse on ollut jo jonkin aikaa p\xe4\xe4ll\xe4. Ilmaise kavereille, ett\xe4 olet vapaana.","3nnb4u":"Kaverit saattavat luulla, ett\xe4 olet varattu. Liity keskusteluun siirtym\xe4ll\xe4 online-tilaan.","3t3FR0":"Ilmaise muille, ett\xe4 olet vapaana","Onha6O":"Oletko edelleen varattuna?","NtY0dX":"Olet ollut \xc4l\xe4 h\xe4iritse -tilassa jo yli vuorokauden"}')

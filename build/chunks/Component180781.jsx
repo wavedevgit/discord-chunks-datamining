@@ -1,7 +1,7 @@
-/** Chunk was on 72891 **/
-/** chunk id: 180781, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 96033 **/
+/** chunk id: 180781, original params: t,e,i (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => m
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -15,48 +15,48 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk30513 = require("./30513.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk413955 = require("./413955.js");
+  Chunk393276 = require("./393276.js");
 
-function p(e) {
+function m(t) {
   let {
-    analyticsSection: t,
-    analyticsPage: n,
-    isGIF: p,
-    banner: x
-  } = e, m = (0, a.e7)([d.Z], () => d.Z.getGuildId()), N = (0, a.e7)([s.Z], () => s.Z.getGuild(m)), {
-    analyticsLocations: h
+    analyticsSection: e,
+    analyticsPage: i,
+    isGIF: m,
+    banner: f
+  } = t, x = (0, a.e7)([c.Z], () => c.Z.getGuildId()), p = (0, a.e7)([d.Z], () => d.Z.getGuild(x)), {
+    analyticsLocations: v
   } = (0, o.ZP)();
-  return null == N || N.features.has(u.GuildFeatures.ANIMATED_BANNER) || !p && N.features.has(u.GuildFeatures.BANNER) ? null : (0, i.jsxs)("div", {
-    className: _.container,
-    children: [(0, i.jsx)(r.Ucv, {
+  return null == p || p.features.has(u.GuildFeatures.ANIMATED_BANNER) || !m && p.features.has(u.GuildFeatures.BANNER) ? null : (0, n.jsxs)("div", {
+    className: h.container,
+    children: [(0, n.jsx)(r.Ucv, {
       color: r.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK,
-      className: _.guildBoostingIcon
-    }), (0, i.jsx)(r.Text, {
+      className: h.guildBoostingIcon
+    }), (0, n.jsx)(r.Text, {
       color: "header-primary",
       variant: "text-sm/semibold",
       children: g.intl.string(g.t["56M7xc"])
-    }), (0, i.jsx)("div", {
-      className: _.subscribeButton,
-      children: (0, i.jsx)(r.Avr, {
+    }), (0, n.jsx)("div", {
+      className: h.subscribeButton,
+      children: (0, n.jsx)(r.Avr, {
         text: g.intl.string(g.t.WUHdZW),
         onClick: () => {
-          if (null == N) return;
-          let e = {
-            section: t,
-            page: n,
+          if (null == p) return;
+          let t = {
+            section: e,
+            page: i,
             object: u.qAy.UPSELL_HEADER
           };
-          null != x ? (0, l.c)({
-            analyticsLocations: h,
-            analyticsLocation: e,
-            guild: N,
-            isGIF: p,
-            banner: x
-          }) : (0, c.Z)({
-            analyticsLocations: h,
-            analyticsSourceLocation: e,
-            guild: N,
-            perks: p ? (0, f.zC)() : (0, f.XO)()
+          null != f ? (0, l.c)({
+            analyticsLocations: v,
+            analyticsLocation: t,
+            guild: p,
+            isGIF: m,
+            banner: f
+          }) : (0, s.Z)({
+            analyticsLocations: v,
+            analyticsSourceLocation: t,
+            guild: p,
+            perks: m ? (0, _.zC)() : (0, _.XO)()
           })
         },
         textVariant: "text-sm/semibold"

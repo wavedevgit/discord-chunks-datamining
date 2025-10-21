@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk12033 = require("./12033.js");
+  Chunk810270 = require("./810270.js");
 let g = (0, Chunk131704.createChannelRecord)({
   id: "1",
   type: Chunk981631.d4z.DM

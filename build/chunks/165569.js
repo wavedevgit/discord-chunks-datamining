@@ -1,0 +1,3 @@
+/** Chunk was on 49442 **/
+/** chunk id: 165569, original params: i (module,exports,require) **/
+module.exports = JSON.parse('{"klSpfn":"Edytuj ustawienia","NzUuLC":["+",[1,"count"]," ",[6,"count",{"one":["wiadomość"],"other":["wiadomości"]},0,"cardinal"]],"O+racX":"Nie ma powiadomień.","5H2Jd3":"Pokaż wszystkie","Ko8NGh":"Pokaż zakładki","dcpdhI":"Wybierz wiadomość, aby do niej przejść.","VAK+h4":"Witaj w centrum powiadomień!"}')

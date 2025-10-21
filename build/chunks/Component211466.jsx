@@ -16,7 +16,7 @@ var Chunk925513 = require("./925513.js"),
   Chunk726985 = require("./726985.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk20492 = require("./20492.js");
+  Chunk627256 = require("./627256.js");
 
 function h() {
   let e = (0, Chunk925513.v6)(),
@@ -44,7 +44,7 @@ function h() {
       settingsSection: Chunk981631.oAB.CONTENT_AND_SOCIAL,
       tabs: exports,
       orientation: "vertical",
-      tabsClassName: Chunk20492.tabs
+      tabsClassName: Chunk627256.tabs
     })]
   })
 }

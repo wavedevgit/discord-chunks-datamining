@@ -1,4 +1,4 @@
-/** Chunk was on 57695 **/
+/** Chunk was on 70439 **/
 /** chunk id: 27457, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   BP: () => er,
@@ -52,7 +52,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk524484 = require("./524484.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk7504 = require("./7504.js");
+  Chunk400872 = require("./400872.js");
 let J = [Chunk354459.fO.ACTIVITY],
   $ = Chunk647438.memo(e => {
     var t, n, l, s, c, b, _;
@@ -148,7 +148,7 @@ let J = [Chunk354459.fO.ACTIVITY],
       }, [M, D]),
       e0 = null,
       e1 = null,
-      e8 = "";
+      e4 = "";
     switch (D.type) {
       case K.fO.STREAM:
         e0 = (0, r.jsx)(F.Z, {
@@ -168,7 +168,7 @@ let J = [Chunk354459.fO.ACTIVITY],
           focused: ef,
           idle: ev,
           premiumIndicator: false
-        }), e8 = X.intl.formatToPlainString(X.t.gHPz3d, {
+        }), e4 = X.intl.formatToPlainString(X.t.gHPz3d, {
           streamerName: D.user.username
         });
         break;
@@ -190,7 +190,7 @@ let J = [Chunk354459.fO.ACTIVITY],
         }), e1 = (0, r.jsx)(V.T, {
           participant: D,
           channelId: el.id
-        }), e8 = X.intl.formatToPlainString(X.t["iC/x/f"], {
+        }), e4 = X.intl.formatToPlainString(X.t["iC/x/f"], {
           username: D.user.username
         });
         break;
@@ -201,7 +201,7 @@ let J = [Chunk354459.fO.ACTIVITY],
           selected: eu,
           channel: el,
           width: eo
-        }), e8 = X.intl.formatToPlainString(X.t.YCvOsL, {
+        }), e4 = X.intl.formatToPlainString(X.t.YCvOsL, {
           activityName: null == eT ? true : eT.name
         });
         break;
@@ -218,7 +218,7 @@ let J = [Chunk354459.fO.ACTIVITY],
           inOverlayPopout: ey
         })
     }
-    let e4 = i.useRef(null),
+    let e8 = i.useRef(null),
       e6 = D.type === K.fO.STREAM ? u.pzj : u.Odl;
     return (0, r.jsx)(p.Z, {
       section: W.jXE.VOICE_CHANNEL_TILE,
@@ -238,7 +238,7 @@ let J = [Chunk354459.fO.ACTIVITY],
           isShaking: eD,
           className: Q.tile,
           children: [(0, r.jsx)(B.Z, {
-            ref: e4,
+            ref: e8,
             className: o()(Q.tile, {
               [Q.noBorder]: ed,
               [Q.noInteraction]: null == H,
@@ -248,7 +248,7 @@ let J = [Chunk354459.fO.ACTIVITY],
             style: er,
             participantUserId: eZ,
             children: (0, r.jsxs)(u.kL8, {
-              "aria-label": e8,
+              "aria-label": e4,
               className: Q.tileChild,
               onDoubleClick: eJ,
               onContextMenu: e => e$(e, D.type === K.fO.STREAM),
@@ -269,8 +269,8 @@ let J = [Chunk354459.fO.ACTIVITY],
                   channelId: el.id,
                   guildId: el.getGuildId(),
                   containerDimensions: {
-                    width: null != (s = null == e4 || null == (t = e4.current) ? true : t.clientWidth) ? s : 0,
-                    height: null != (c = null == e4 || null == (n = e4.current) ? true : n.clientHeight) ? c : 0
+                    width: null != (s = null == e8 || null == (t = e8.current) ? true : t.clientWidth) ? s : 0,
+                    height: null != (c = null == e8 || null == (n = e8.current) ? true : n.clientHeight) ? c : 0
                   }
                 })
               }) : null, e0, ed ? null : (0, r.jsx)("div", {
@@ -343,7 +343,7 @@ let J = [Chunk354459.fO.ACTIVITY],
             participant: D
           }), (0, r.jsx)(v.Z, {
             isFiring: ej,
-            callTileRef: e4.current
+            callTileRef: e8.current
           })]
         })
       })

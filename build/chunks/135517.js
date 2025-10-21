@@ -1,0 +1,3 @@
+/** Chunk was on 82480 **/
+/** chunk id: 135517, original params: s (module,exports,require) **/
+module.exports = JSON.parse('{"Z1NZwc":"Изтрито","+a5G2t":"Недостъпен","Ys/RrK":"Извън линия","60kAzs":"На линия","aCyHe3":"Недостъпен","k+RTIi":"Място","nB5OZ2":"Място","rOMEZW":"Име","K+zMYm":"План","k0Y0BA":"Разгледай","P2ihv7":"Покани приятели","yIH2oK":"Управление на план","feUiMz":"Настройки","n+ZX7+":"Състояние на сървъра"}')

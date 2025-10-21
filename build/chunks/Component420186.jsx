@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk978986 = require("./978986.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk181174 = require("./181174.js");
+  Chunk626090 = require("./626090.js");
 let N = () => {
   var e;
   let [n, t] = Chunk647438.useState(false), a = Chunk695346.G6.useSetting(), {
@@ -30,11 +30,11 @@ let N = () => {
     inviteCode: S
   } = (0, Chunk978986.XW)(), C = null == (e = Chunk590965.Z.getProps().invite) ? true : module.is_nickname_changeable;
   return (0, Chunk951288.jsxs)("div", {
-    className: r()(Chunk181174.editProfileContainer, {
-      [Chunk181174.opened]: exports
+    className: r()(Chunk626090.editProfileContainer, {
+      [Chunk626090.opened]: exports
     }),
     children: [(0, Chunk951288.jsxs)(Chunk481060.P3F, {
-      className: Chunk181174.header,
+      className: Chunk626090.header,
       onClick: () => {
         exports || Chunk626135.default.track(Chunk981631.rMx.INVITE_ACCEPT_JOIN_SETTINGS_EXPANDED, {
           guild_id: j,
@@ -42,12 +42,12 @@ let N = () => {
         }), require(!exports)
       },
       children: [(0, Chunk951288.jsx)("div", {
-        className: Chunk181174.headerIconWrapper,
+        className: Chunk626090.headerIconWrapper,
         children: (0, Chunk951288.jsx)(Chunk481060.ewm, {
           size: "md"
         })
       }), (0, Chunk951288.jsxs)("div", {
-        className: Chunk181174.title,
+        className: Chunk626090.title,
         children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "eyebrow",
           color: "header-secondary",
@@ -58,8 +58,8 @@ let N = () => {
           children: Chunk388032.intl.string(Chunk388032.t.UKCSER)
         })]
       }), (0, Chunk951288.jsx)("div", {
-        className: r()(Chunk181174.caret, {
-          [Chunk181174.opened]: exports
+        className: r()(Chunk626090.caret, {
+          [Chunk626090.opened]: exports
         }),
         children: (0, Chunk951288.jsx)(Chunk259580.Z, {
           width: 18,
@@ -68,11 +68,11 @@ let N = () => {
         })
       })]
     }), (0, Chunk951288.jsxs)("div", {
-      className: r()(Chunk181174.customizationSection, {
-        [Chunk181174.opened]: exports
-      }, C ? null : Chunk181174.condensed),
+      className: r()(Chunk626090.customizationSection, {
+        [Chunk626090.opened]: exports
+      }, C ? null : Chunk626090.condensed),
       children: [C && (0, Chunk951288.jsxs)("div", {
-        className: Chunk181174.serverNickname,
+        className: Chunk626090.serverNickname,
         children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "eyebrow",
           color: "header-secondary",

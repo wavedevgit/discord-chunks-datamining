@@ -7,11 +7,11 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk831605 = require("./831605.js");
+  Chunk842973 = require("./842973.js");
 
 function s() {
   return (0, Chunk951288.jsx)("div", {
-    className: Chunk831605.container,
+    className: Chunk842973.container,
     children: (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/medium",
       color: "text-secondary",

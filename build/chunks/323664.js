@@ -1,0 +1,3 @@
+/** Chunk was on 71624 **/
+/** chunk id: 323664, original params: t (module,exports,require) **/
+module.exports = JSON.parse('{"JA5C7O":"Tyhjenn\xe4","WfH9io":"Sulje","m3Vfcn":"Etk\xf6 halua n\xe4hd\xe4 t\xe4t\xe4 en\xe4\xe4?","cgdAs7":"(Avautuu uuteen v\xe4lilehteen)","/Y7vRU":"Poista painamalla Delete-n\xe4pp\xe4int\xe4.","VMNfsb":"Valittu","A+pfVV":"Valitse...","YpT3kp":"Suurenna ja toista video"}')

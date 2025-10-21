@@ -1,4 +1,4 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 41348 **/
 /** chunk id: 720734, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => tx,
@@ -122,7 +122,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk46140 = require("./46140.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk25874 = require("./25874.js");
+  Chunk490579 = require("./490579.js");
 
 function tr(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -202,8 +202,8 @@ function tu(e) {
         } = t;
         null != r && a(r), null == (n = e.current) || n.call(e)
       };
-      return eY.S.subscribe(e9.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, t), () => {
-        eY.S.unsubscribe(e9.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, t)
+      return eY.S.subscribe(e7.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, t), () => {
+        eY.S.unsubscribe(e7.CkL.SHOW_ACCOUNT_PROFILE_POPOUT, t)
       }
     }), {
       updateOpenPopoutRef: t,
@@ -212,9 +212,9 @@ function tu(e) {
     }
   }(), O = (0, er.A)(m);
   if (null == o) return null;
-  let N = h && p !== e9.I_8 && p !== e9.ME && null != p ? p : true;
+  let N = h && p !== e7.I_8 && p !== e7.ME && null != p ? p : true;
   return (0, a.jsx)(b.Z, {
-    object: e9.qAy.AVATAR,
+    object: e7.qAy.AVATAR,
     children: (0, a.jsx)(eh.Z, {
       user: o,
       targetElementRef: j,
@@ -269,7 +269,7 @@ function tu(e) {
           src: o.getAvatarURL(h ? p : true, 28, false),
           avatarDecoration: y,
           "aria-label": o.username,
-          status: i ? e9.Skl.STREAMING : s,
+          status: i ? e7.Skl.STREAMING : s,
           isSpeaking: n,
           className: ta.avatar
         }), (0, a.jsx)("div", {
@@ -338,7 +338,7 @@ class tm extends Chunk647438.PureComponent {
         activities: exports,
         applicationStream: require,
         voiceChannel: Chunk392711 ? s : true,
-        textClassName: Chunk25874.activityStatusText,
+        textClassName: Chunk490579.activityStatusText,
         hideTooltip: true
       })
     });
@@ -346,15 +346,15 @@ class tm extends Chunk647438.PureComponent {
       let {
         type: t
       } = e;
-      return t === e9.IIU.CUSTOM_STATUS
+      return t === e7.IIU.CUSTOM_STATUS
     });
     return null != Chunk374470 ? (0, Chunk951288.jsx)(Chunk570928.Z, {
       hoverText: l,
       forceHover: module,
       children: (0, Chunk951288.jsx)(Chunk427217.Z, {
         activity: Chunk374470,
-        emojiClassName: Chunk25874.emoji,
-        className: Chunk25874.customStatus
+        emojiClassName: Chunk490579.emoji,
+        className: Chunk490579.customStatus
       })
     }) : null != Chunk120356 && Chunk120356 !== Chunk981631.Skl.UNKNOWN && Chunk647438.hasUniqueUsername() ? (0, Chunk951288.jsx)(Chunk570928.Z, {
       hoverText: l,
@@ -413,11 +413,11 @@ class tm extends Chunk647438.PureComponent {
       })
     }) : (0, a.jsxs)(a.Fragment, {
       children: [(0, a.jsx)(ec.Z, {
-        groupName: e7.R.ACCOUNT_NAME_ZONE,
+        groupName: e9.R.ACCOUNT_NAME_ZONE,
         targetElementRef: this.avatarWithPopoutRef
       }), (0, a.jsx)(H.ZP, {
         contentTypes: n.avatar,
-        groupName: e7.R.ACCOUNT_NAME_ZONE,
+        groupName: e9.R.ACCOUNT_NAME_ZONE,
         children: t => {
           let {
             visibleContent: n,
@@ -502,16 +502,16 @@ class tm extends Chunk647438.PureComponent {
         suppress: t,
         selfMute: n
       } = this.props;
-      (0, F.Z)(e, t, e9.jXE.ACCOUNT_PANEL), (0, B.v)(O.Z.ACCOUNT, B.d.MIC, n)
+      (0, F.Z)(e, t, e7.jXE.ACCOUNT_PANEL), (0, B.v)(O.Z.ACCOUNT, B.d.MIC, n)
     }), tr(this, "handleToggleSelfDeaf", () => {
       let {
         serverDeaf: e,
         selfDeaf: t
       } = this.props;
-      (0, U.Z)(e, e9.jXE.ACCOUNT_PANEL), (0, B.v)(O.Z.ACCOUNT, B.d.DEAFEN, !t)
+      (0, U.Z)(e, e7.jXE.ACCOUNT_PANEL), (0, B.v)(O.Z.ACCOUNT, B.d.DEAFEN, !t)
     }), tr(this, "handleOpenAccountSettings", () => {
       this.dismissTooltips(), eU.Z.isConnected() ? (0, eb.openUserSettings)(ef.n.VOICE_AND_VIDEO_PANEL, {
-        section: e9.oAB.VOICE
+        section: e7.oAB.VOICE
       }) : (0, eb.openUserSettings)()
     }), tr(this, "handleOpenSettingsContextMenu", e => {
       let {
@@ -603,7 +603,7 @@ class tm extends Chunk647438.PureComponent {
       (0, eK.JG)(e0.ZP.getUserTag(e, {
         decoration: "never",
         identifiable: "always"
-      })), eH.default.track(e9.rMx.TEXT_COPIED, {
+      })), eH.default.track(e7.rMx.TEXT_COPIED, {
         type: "User Tag"
       });
       let a = {
@@ -668,7 +668,7 @@ class tm extends Chunk647438.PureComponent {
           })
         }), (0, a.jsx)("div", {
           className: ta.panelSubtextContainer,
-          children: (0, a.jsx)(e6.Z, {
+          children: (0, a.jsx)(e2.Z, {
             children: this.renderStatus()
           })
         })]
@@ -790,7 +790,7 @@ function tx() {
           let {
             type: t
           } = e;
-          return t === e9.IIU.STREAMING
+          return t === e7.IIU.STREAMING
         }),
         status: Chunk885110.Z.getStatus()
       }
@@ -967,7 +967,7 @@ function tf(e) {
   }) : tn.intl.string(tn.t.cduTBA);
   let _ = f.ewm,
     y = (0, h.i)();
-  return _ = null != l ? f.bgT : o ? f.Ncx : y.Component, (0, a.jsx)(e2.Z, tl(ti({
+  return _ = null != l ? f.bgT : o ? f.Ncx : y.Component, (0, a.jsx)(e6.Z, tl(ti({
     ref: x,
     tooltipText: t,
     tooltipColor: b ? f.r6K.GREEN : true,
@@ -1060,7 +1060,7 @@ function tg(e) {
       $(false)
     }, []);
   (0, eq.yp)({
-    event: e9.CkL.OPEN_VOICE_FILTER_POPOUT,
+    event: e7.CkL.OPEN_VOICE_FILTER_POPOUT,
     handler: () => {
       $(true)
     }
@@ -1140,7 +1140,7 @@ function tg(e) {
             [ta.hasColorGlow]: el,
             [ta.popoutOpen]: i
           }),
-          children: [(0, a.jsx)(e2.Z, {
+          children: [(0, a.jsx)(e6.Z, {
             "aria-checked": S,
             "aria-label": tn.intl.string(tn.t["w4m94+"]),
             className: l()({
@@ -1169,7 +1169,7 @@ function tg(e) {
             tooltipColor: _ ? f.r6K.GREEN : true,
             tooltipForceOpen: _,
             tooltipText: t
-          }), (0, a.jsx)(e2.Z, {
+          }), (0, a.jsx)(e6.Z, {
             "aria-label": y ? tn.intl.formatToPlainString(tn.t["18wnuL"], {
               inputDeviceName: ec
             }) : tn.intl.string(tn.t.fRzCbG),
@@ -1213,7 +1213,7 @@ function tg(e) {
       className: l()(ta.micButtonParent, {
         [ta.hasColorGlow]: el
       }),
-      children: [(0, a.jsx)(e2.Z, {
+      children: [(0, a.jsx)(e6.Z, {
         tooltipText: t,
         tooltipColor: _ ? f.r6K.GREEN : true,
         tooltipForceOpen: _,
@@ -1302,7 +1302,7 @@ function tg(e) {
                   markAsDismissed: i,
                   onCTA: () => $(true)
                 }));
-                let c = () => (0, a.jsx)(e2.Z, ti({
+                let c = () => (0, a.jsx)(e6.Z, ti({
                   ref: T,
                   plated: null != v,
                   tooltipForceOpen: en,
@@ -1333,7 +1333,7 @@ function tg(e) {
                   "aria-label": tn.intl.string(tn.t.Hapb4O),
                   disabled: s,
                   onClick: e => {
-                    i(e7.L.INDIRECT_ACTION), n(e), null != w && !Q && k ? (0, ew.$)(() => $(true)) : $(!Q)
+                    i(e9.L.INDIRECT_ACTION), n(e), null != w && !Q && k ? (0, ew.$)(() => $(true)) : $(!Q)
                   }
                 }, r));
                 return null != o ? (0, a.jsx)(f.yRy, {
@@ -1421,7 +1421,7 @@ function tb(e) {
             [ta.hasColorGlow]: h,
             [ta.popoutOpen]: s
           }),
-          children: [(0, a.jsx)(e2.Z, {
+          children: [(0, a.jsx)(e6.Z, {
             "aria-checked": h,
             "aria-label": tn.intl.string(tn.t.wjcRFR),
             className: ta.micButtonWithMenu,
@@ -1445,7 +1445,7 @@ function tb(e) {
             redGlow: h,
             role: "switch",
             tooltipText: C
-          }), (0, a.jsx)(e2.Z, {
+          }), (0, a.jsx)(e6.Z, {
             "aria-label": u ? tn.intl.formatToPlainString(tn.t["f+DDY2"], {
               outputDeviceName: _
             }) : tn.intl.string(tn.t.aA4VcX),
@@ -1481,7 +1481,7 @@ function tb(e) {
     })
   }) : (0, a.jsx)(N.Gt, {
     value: S,
-    children: (0, a.jsx)(e2.Z, {
+    children: (0, a.jsx)(e6.Z, {
       plated: null != d,
       tooltipText: C,
       onMouseEnter: b,

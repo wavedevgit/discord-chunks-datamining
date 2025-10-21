@@ -16,9 +16,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk342386 = require("./342386.js"),
   Chunk981631 = require("./981631.js"),
   Chunk930441 = require("./930441.js"),
-  Chunk345909 = require("./345909.js"),
+  Chunk412297 = require("./412297.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk286661 = require("./286661.js");
+  Chunk262526 = require("./262526.js");
 let E = () => {
   let e = Chunk695346.Ex.useSetting(),
     {
@@ -32,16 +32,16 @@ let E = () => {
   return Chunk647438.useEffect(() => {
     null == require && (0, Chunk960412.Y7)()
   }, [require]), (0, Chunk951288.jsx)("div", {
-    className: Chunk286661.container,
+    className: Chunk262526.container,
     children: (0, Chunk951288.jsxs)(Chunk481060.C3N, {
-      label: Chunk388032.intl.string(Chunk345909.default.USIXU1),
+      label: Chunk388032.intl.string(Chunk412297.default.USIXU1),
       children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
         checked: module,
-        description: Chunk388032.intl.string(Chunk345909.default["5MdB3t"]),
+        description: Chunk388032.intl.string(Chunk412297.default["5MdB3t"]),
         onChange: Chunk695346.Ex.updateSetting,
-        label: Chunk388032.intl.string(Chunk345909.default.zkEceX)
+        label: Chunk388032.intl.string(Chunk412297.default.zkEceX)
       }), module ? (0, Chunk951288.jsx)(Chunk481060.Zbd, {
-        className: Chunk286661.enableCard,
+        className: Chunk262526.enableCard,
         type: Chunk481060.Zbd.Types.CUSTOM,
         outline: true,
         children: (0, Chunk951288.jsxs)(Chunk435935.k, {
@@ -50,7 +50,7 @@ let E = () => {
             children: (0, Chunk951288.jsx)(Chunk481060.Text, {
               variant: "text-sm/semibold",
               color: "text-default",
-              children: Chunk388032.intl.string(Chunk345909.default.xAVm7O)
+              children: Chunk388032.intl.string(Chunk412297.default.xAVm7O)
             })
           }), (0, Chunk951288.jsx)(Chunk481060.P3F, {
             children: (0, Chunk951288.jsx)(Chunk799899.rU, {
@@ -61,19 +61,19 @@ let E = () => {
                   scrollRestoration: false
                 }
               },
-              children: Chunk388032.intl.string(Chunk345909.default.cUIXFR)
+              children: Chunk388032.intl.string(Chunk412297.default.cUIXFR)
             })
           }), (0, Chunk951288.jsx)(Chunk481060.G2e, {
             icon: Chunk481060.ZSh,
-            className: Chunk286661.arrow,
+            className: Chunk262526.arrow,
             disableColor: true
           })]
         })
       }) : null, (0, Chunk951288.jsx)(Chunk481060.rsf, {
         checked: !!exports[Chunk930441.$Z.FAMILY_CENTER_DIGEST],
-        description: Chunk388032.intl.string(Chunk345909.default["y34S4+"]),
+        description: Chunk388032.intl.string(Chunk412297.default["y34S4+"]),
         onChange: E,
-        label: Chunk388032.intl.string(Chunk345909.default.irvJKS)
+        label: Chunk388032.intl.string(Chunk412297.default.irvJKS)
       })]
     })
   })

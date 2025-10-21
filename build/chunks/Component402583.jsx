@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk726985 = require("./726985.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk345909 = require("./345909.js");
+  Chunk412297 = require("./412297.js");
 
 function g() {
   let e = (0, Chunk915009.LN)(),
@@ -41,7 +41,7 @@ function g() {
       value: exports,
       onChange: require,
       disabled: module,
-      tooltipText: module ? Chunk388032.intl.string(Chunk345909.default["6Af/c3"]) : true
+      tooltipText: module ? Chunk388032.intl.string(Chunk412297.default["6Af/c3"]) : true
     })
   })
 }
