@@ -4,10 +4,10 @@
 require.d(exports, {
   DM: () => E,
   Ey: () => b,
-  No: () => v,
-  Ry: () => T,
-  qX: () => S,
-  u3: () => I
+  No: () => I,
+  Ry: () => S,
+  qX: () => A,
+  u3: () => T
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -121,7 +121,14 @@ function O(e) {
   })
 }
 
-function v(e) {
+function v(e, t, n) {
+  null != e && l.default.track(c.rMx.APP_NOTICE_ANCHOR_CLICKED, _({
+    notice_type: e,
+    href: t
+  }, n))
+}
+
+function I(e) {
   var {
     children: t,
     noticeType: n,
@@ -135,19 +142,25 @@ function v(e) {
   }))
 }
 
-function I(e) {
+function T(e) {
   var {
     children: t,
-    href: n
-  } = e, i = m(e, ["children", "href"]);
-  return (0, r.jsx)(s.Anchor, h(_({}, i), {
+    href: n,
+    noticeType: i,
+    additionalTrackingProps: a
+  } = e, o = m(e, ["children", "href", "noticeType", "additionalTrackingProps"]);
+  return (0, r.jsx)(s.Anchor, h(_({}, o), {
     className: d.button,
     href: n,
+    onClick: e => {
+      var t;
+      null == (t = o.onClick) || t.call(o, e), v(i, n, a)
+    },
     children: t
   }))
 }
 
-function T(e) {
+function S(e) {
   let {
     onClick: t,
     noticeType: n,
@@ -170,7 +183,7 @@ function T(e) {
   })
 }
 
-function S(e) {
+function A(e) {
   let {
     color: t = E.DEFAULT,
     className: n,
