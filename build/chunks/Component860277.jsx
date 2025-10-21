@@ -18,17 +18,17 @@ var Chunk951288 = require("./951288.js"),
 
 function v(i) {
   let {
-    slide: t
+    step: t
   } = i, {
     users: r
-  } = (0, l.e7)([o.Z], () => o.Z.getCheckpointData()), v = (0, n.useMemo)(() => r.map(i => {
+  } = (0, l.e7)([c.Z], () => c.Z.getCheckpointData()), v = (0, n.useMemo)(() => r.map(i => {
     let {
       userId: t
     } = i;
     return d.default.getUser(t)
   }).filter(i => null != i), [r]);
-  return (0, e.jsxs)(c.Z, {
-    children: [t === x.Ww.FRIENDS && (0, e.jsxs)("div", {
+  return (0, e.jsxs)(o.Z, {
+    children: [t === x.ij.FRIENDS_INTRO && (0, e.jsxs)("div", {
       children: [(0, e.jsx)(a.xvT, {
         variant: "display-md",
         color: "text-primary",
@@ -43,7 +43,7 @@ function v(i) {
           children: i.username
         })]
       }, i.id))]
-    }), t === x.Ww.BEST_FRIEND && (0, e.jsxs)("div", {
+    }), t === x.ij.FRIENDS_BEST && (0, e.jsxs)("div", {
       children: [(0, e.jsx)(a.xvT, {
         variant: "display-md",
         color: "text-primary",

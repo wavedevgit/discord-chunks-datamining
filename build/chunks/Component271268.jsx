@@ -1,7 +1,7 @@
 /** Chunk was on 80448 **/
 /** chunk id: 271268, original params: i,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
+  Z: () => o
 });
 var Chunk951288 = require("./951288.js"),
   Chunk793030 = require("./793030.js"),
@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk124798 = require("./124798.js"),
   Chunk388032 = require("./388032.jsx");
 
-function c() {
+function o() {
   let {
     voice: {
       totalVoiceMinutes: i,

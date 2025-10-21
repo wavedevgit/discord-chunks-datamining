@@ -1,5 +1,5 @@
 /** Chunk was on 80448 **/
-/** chunk id: 363157, original params: i,t,r (module,exports,require) **/
+/** chunk id: 2835, original params: i,t,r (module,exports,require) **/
 require.d(exports, {
   Z: () => a
 });
@@ -8,8 +8,8 @@ var Chunk951288 = require("./951288.js"),
 
 function a(i) {
   let {
-    currentStep: t,
-    totalSteps: r,
+    activeSlide: t,
+    totalSlides: r,
     className: a
   } = i;
   return (0, e.jsx)("div", {
@@ -17,7 +17,7 @@ function a(i) {
     children: (0, e.jsxs)(n.Text, {
       variant: "display-sm",
       color: "text-primary",
-      children: [t + 1, "/", r]
+      children: [Number.parseInt(t, 10) + 1, "/", r]
     })
   })
 }

@@ -1,7 +1,7 @@
 /** Chunk was on 80448 **/
 /** chunk id: 765457, original params: i,t,r (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => S
+  default: () => g
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -9,7 +9,7 @@ var Chunk951288 = require("./951288.js"),
   l = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk37234 = require("./37234.js"),
-  Chunk363157 = require("./363157.jsx"),
+  Chunk2835 = require("./2835.jsx"),
   Chunk410853 = require("./410853.jsx"),
   Chunk425196 = require("./425196.jsx"),
   Chunk860277 = require("./860277.jsx"),
@@ -25,81 +25,76 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk691446 = require("./691446.js");
 
-function S(i) {
-  let {} = i, [t, r] = n.useState(0), a = f.K5[t], S = n.useCallback(() => {
-    if (t >= f.t$.length - 1) return void(0, d.xf)();
+function g(i) {
+  let {} = i, [t, r] = n.useState(f.ij.WELCOME), a = f.bq[t], g = n.useCallback(() => {
+    if (t >= f.ij.END) return void(0, d.xf)();
     r(t + 1)
   }, [t]);
   return (0, e.jsx)(s.f6W, {
-    theme: g.BR.DARKER,
+    theme: E.BR.DARKER,
     children: i => (0, e.jsxs)("div", {
-      className: l()(E.container, i),
-      "aria-label": Z.intl.string(T.default["CdU/PF"]),
+      className: l()(Z.container, i),
+      "aria-label": S.intl.string(T.default["CdU/PF"]),
       children: [(0, e.jsxs)(s.MyZ, {
         activeSlide: a,
         children: [(0, e.jsx)(s.Mi4, {
-          id: f.Ww.WELCOME,
+          id: f.yD.WELCOME,
           children: (0, e.jsx)(y.Z, {})
         }), (0, e.jsx)(s.Mi4, {
-          id: f.Ww.MESSAGES,
+          id: f.yD.MESSAGES,
           children: (0, e.jsx)(v.Z, {})
         }), (0, e.jsx)(s.Mi4, {
-          id: f.Ww.EMOJIS,
-          children: (0, e.jsx)(c.Z, {})
+          id: f.yD.EMOJIS,
+          children: (0, e.jsx)(o.Z, {})
         }), (0, e.jsx)(s.Mi4, {
-          id: f.Ww.VOICE,
+          id: f.yD.VOICE,
           children: (0, e.jsx)(j.Z, {})
         }), (0, e.jsx)(s.Mi4, {
-          id: f.Ww.GUILDS,
+          id: f.yD.GUILDS,
           children: (0, e.jsx)(m.Z, {})
         }), (0, e.jsx)(s.Mi4, {
-          id: f.Ww.FRIENDS,
+          id: f.yD.FRIENDS,
           children: (0, e.jsx)(u.Z, {
-            slide: f.Ww.FRIENDS
+            step: t
           })
         }), (0, e.jsx)(s.Mi4, {
-          id: f.Ww.BEST_FRIEND,
-          children: (0, e.jsx)(u.Z, {
-            slide: f.Ww.BEST_FRIEND
-          })
-        }), (0, e.jsx)(s.Mi4, {
-          id: f.Ww.GAMING,
+          id: f.yD.GAMING,
           children: (0, e.jsx)(p.Z, {})
         }), (0, e.jsx)(s.Mi4, {
-          id: f.Ww.QUESTS,
+          id: f.yD.QUESTS,
           children: (0, e.jsx)(h.Z, {})
         }), (0, e.jsx)(s.Mi4, {
-          id: f.Ww.END,
+          id: f.yD.END,
           children: (0, e.jsx)(x.Z, {})
         })]
       }), (0, e.jsxs)("div", {
-        className: l()(E.header, i),
+        className: l()(Z.header, i),
         children: [(0, e.jsxs)("div", {
-          className: E.logo,
+          className: Z.logo,
           children: [(0, e.jsx)(s.gw7, {
             color: s.TVs.colors.BG_BRAND
           }), (0, e.jsx)(s.Text, {
             variant: "display-sm",
             color: "text-primary",
-            className: E.logoText,
-            children: Z.intl.string(T.default["CdU/PF"])
+            className: Z.logoText,
+            children: S.intl.string(T.default["CdU/PF"])
           })]
-        }), (0, e.jsx)(o.Z, {
-          currentStep: t,
-          totalSteps: f.t$.length,
-          className: E.stepIndicator
+        }), (0, e.jsx)(c.Z, {
+          activeSlide: a,
+          totalSlides: Object.keys(f.yD).length,
+          className: Z.stepIndicator
         }), (0, e.jsx)(s.P3F, {
           onClick: d.xf,
-          className: E.closeButton,
+          className: Z.closeButton,
           children: (0, e.jsx)(s.Uz9, {})
         })]
       }), (0, e.jsx)(s.P3F, {
-        onClick: S,
-        className: E.nextButton,
+        onClick: g,
+        className: Z.nextButton,
         children: (0, e.jsx)(s.Text, {
           variant: "display-sm",
           color: "text-primary",
-          children: Z.intl.string(Z.t.PDTjLN)
+          children: S.intl.string(S.t.PDTjLN)
         })
       })]
     })
