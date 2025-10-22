@@ -12,24 +12,10 @@ var Chunk27457 = require("./27457.jsx"),
 function s(e) {
   var {
     aspectRatio: t,
-    blocked: n,
-    ignored: s,
-    channel: o,
-    className: c,
-    focused: d,
-    children: u,
-    inCall: p,
-    inPopout: h,
-    noBorder: f,
-    onClick: g,
-    onContextMenu: m,
-    onDoubleClick: b,
-    onVideoResize: y,
-    paused: _,
-    pulseSpeakingIndicator: O,
-    participant: j,
-    width: x
-  } = e, v = function(e, t) {
+    className: n,
+    children: s,
+    width: o
+  } = e, c = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -43,11 +29,11 @@ function s(e) {
       for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(e, ["aspectRatio", "blocked", "ignored", "channel", "className", "focused", "children", "inCall", "inPopout", "noBorder", "onClick", "onContextMenu", "onDoubleClick", "onVideoResize", "paused", "pulseSpeakingIndicator", "participant", "width"]);
-  let C = l.Z.getVideoComponent();
+  }(e, ["aspectRatio", "className", "children", "width"]);
+  let d = l.Z.getVideoComponent();
   return (0, r.jsx)("div", {
     style: {
-      width: x
+      width: o
     },
     className: a.spaceBetweenTiles,
     children: (0, r.jsxs)("div", {
@@ -73,24 +59,10 @@ function s(e) {
         }
         return e
       }({
-        blocked: n,
-        ignored: s,
-        channel: o,
-        className: c,
-        focused: d,
-        inCall: p,
-        inPopout: h,
-        noBorder: f,
-        onClick: g,
-        onContextMenu: m,
-        onDoubleClick: b,
-        onVideoResize: y,
-        participant: j,
-        paused: _,
-        pulseSpeakingIndicator: O,
-        videoComponent: C,
-        width: x
-      }, v)), u]
+        className: n,
+        videoComponent: d,
+        width: o
+      }, c)), s]
     })
   })
 }

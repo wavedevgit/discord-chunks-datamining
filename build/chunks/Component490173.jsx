@@ -162,36 +162,37 @@ class v extends Chunk647438.PureComponent {
     module.removeEventListener("resize", this.closeResize, true), Chunk585483.S.unsubscribe(Chunk981631.CkL.CONTEXT_MENU_CLOSE, this.props.closeContextMenu)
   }
   render() {
-    var e, t;
+    var e, t, n;
     let {
-      appContext: n,
-      target: i,
-      isOpen: a,
-      theme: o,
-      config: s,
-      rect: l
-    } = this.props, c = null != (e = this.state.render) ? module : this.props.render;
-    return Chunk990547 && null != Chunk239091 && null != Chunk481060 && null != Chunk647438 && null != Chunk213609 && Chunk481060.context === require ? (0, Chunk951288.jsx)(O, {
-      target: Chunk647438,
-      rect: Chunk239091,
+      appContext: i,
+      target: a,
+      isOpen: o,
+      theme: s,
+      config: l,
+      rect: c,
+      renderWindow: u
+    } = this.props, d = null != (t = this.state.render) ? exports : this.props.render;
+    return Chunk442837 && null != Chunk213609 && null != Chunk239091 && null != Chunk990547 && null != Chunk728285 && Chunk239091.context === Chunk647438 && (null == (e = Chunk990547.ownerDocument) ? true : module.defaultView) === Chunk314910 ? (0, Chunk951288.jsx)(O, {
+      target: Chunk990547,
+      rect: Chunk213609,
       close: this.close,
-      onUnmount: Chunk481060.onClose,
-      align: Chunk481060.align,
-      position: Chunk481060.position,
-      impressionName: Chunk481060.impressionName,
-      impressionProperties: Chunk481060.impressionProperties,
-      disableClickTrap: null != (t = Chunk481060.disableClickTrap) && exports,
+      onUnmount: Chunk239091.onClose,
+      align: Chunk239091.align,
+      position: Chunk239091.position,
+      impressionName: Chunk239091.impressionName,
+      impressionProperties: Chunk239091.impressionProperties,
+      disableClickTrap: null != (n = Chunk239091.disableClickTrap) && require,
       children: (e, t) => {
         let {
-          position: r
+          position: n
         } = e;
-        return c({
-          position: r,
-          theme: o,
+        return d({
+          position: n,
+          theme: s,
           onHeightUpdate: t,
-          config: s,
-          target: i,
-          context: n
+          config: l,
+          target: a,
+          context: i
         })
       }
     }) : null

@@ -59,12 +59,12 @@ function R(e) {
     title: F,
     showUserInfo: N = false,
     showSimulcastOverride: I = false
-  } = e, [k, w] = a.useState("0"), B = (0, s.e7)([y.Z], () => N ? y.Z.getGuildId() : null), A = (0, s.e7)([v.default], () => N && null != R ? v.default.getUser(R) : null), L = (0, s.e7)([h.ZP], () => N && null != B && null != R ? h.ZP.getNick(B, R) : null);
+  } = e, [k, w] = a.useState("0"), B = (0, s.e7)([y.Z], () => N ? y.Z.getGuildId() : null), A = (0, s.e7)([v.default], () => N && null != R ? v.default.getUser(R) : null), T = (0, s.e7)([h.ZP], () => N && null != B && null != R ? h.ZP.getNick(B, R) : null);
   if (null == t || N && null == R || 0 === t.length) return (0, r.jsx)(c.$jN, {
     type: c.$jN.Type.SPINNING_CIRCLE
   });
-  let T = F;
-  N && null != A && (T = "".concat(F, " — ").concat(null != L ? L : E.ZP.getName(A)));
+  let L = F;
+  N && null != A && (L = "".concat(F, " — ").concat(null != T ? T : E.ZP.getName(A)));
   let O = t.map((e, t) => (0, r.jsx)(c.njP.Item, {
       id: t.toString(),
       children: function(e) {
@@ -127,7 +127,7 @@ function R(e) {
     gap: 16,
     children: [(0, r.jsx)(c.Heading, {
       variant: "heading-md/medium",
-      children: T
+      children: L
     }), (0, r.jsx)(c.njP, {
       type: "top",
       look: "brand",

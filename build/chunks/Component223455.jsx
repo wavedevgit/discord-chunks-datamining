@@ -1,7 +1,7 @@
 /** Chunk was on 80960 **/
 /** chunk id: 223455, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => C
+  default: () => Z
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
@@ -22,11 +22,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk238246 = require("./238246.jsx"),
   Chunk592125 = require("./592125.js"),
   Chunk703558 = require("./703558.js"),
+  Chunk598006 = require("./598006.js"),
   Chunk677601 = require("./677601.jsx"),
   Chunk639030 = require("./639030.js");
-let x = [Chunk679080.S, Chunk777019.O, Chunk400332.U, Chunk721383._];
+let C = [Chunk679080.S, Chunk777019.O, Chunk400332.U, Chunk721383._];
 
-function C(e) {
+function Z(e) {
   let {
     windowKey: t,
     channelId: n
@@ -35,7 +36,7 @@ function C(e) {
   let l = (0, s.e7)([y.ZP], () => y.ZP.getSelfEmbeddedActivityForChannel(a.id), [a]);
   return (0, r.jsx)(E.Z, {
     withTitleBar: true,
-    keybinds: x,
+    keybinds: C,
     windowKey: t,
     title: a.name,
     channelId: a.id,
@@ -55,14 +56,15 @@ function C(e) {
       } else n()
     },
     children: (0, r.jsx)("div", {
-      className: i()("root", j.rootPopout),
+      className: i()("root", x.rootPopout),
       children: (0, r.jsxs)(v.Z.Provider, {
         value: a.guild_id,
         children: [(0, r.jsx)(d.Z, {
           channel: a,
           draftType: D.d.ChannelMessage
-        }), (0, r.jsx)(P.Z, {
-          channel: a
+        }), (0, r.jsx)(j.Z, {
+          channel: a,
+          popoutType: P.P.VOICE_UI
         }), (0, r.jsx)(c.Z, {
           popoutWindowKey: t,
           popoutWindowHasTitleBar: true

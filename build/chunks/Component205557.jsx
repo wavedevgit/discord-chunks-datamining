@@ -1,5 +1,5 @@
 /** Chunk was on 31688 **/
-/** chunk id: 205557, original params: e,n,t (module,exports,require) **/
+/** chunk id: 205557, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
   default: () => P
 });
@@ -16,51 +16,59 @@ var Chunk951288 = require("./951288.js"),
   Chunk937995 = require("./937995.jsx"),
   Chunk592125 = require("./592125.js"),
   Chunk358221 = require("./358221.js"),
+  Chunk598006 = require("./598006.js"),
+  Chunk768864 = require("./768864.jsx"),
   Chunk354459 = require("./354459.js"),
+  Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk11830 = require("./11830.js");
-let m = [Chunk721383._];
+let C = [Chunk721383._];
 
 function P(e) {
   let {
-    windowKey: n,
-    channelId: t,
-    participantId: d
-  } = e, P = (0, l.e7)([f.Z], () => f.Z.getChannel(t)), k = (0, l.e7)([p.Z], () => p.Z.getParticipant(t, d), [t, d]), x = null != P && null != k;
-  r.useEffect(() => {
-    x || s.xv(n)
-  }, [x, n]);
-  let y = r.useCallback(e => {
+    windowKey: t,
+    channelId: n,
+    participantId: o
+  } = e, P = (0, l.e7)([p.Z], () => p.Z.getChannel(n)), j = (0, l.e7)([w.Z], () => w.Z.getParticipant(n, o), [n, o]), T = null != P && null != j;
+  i.useEffect(() => {
+    T || c.xv(t)
+  }, [T, t]);
+  let E = i.useCallback(e => {
       let {
-        unmountWindow: n
+        unmountWindow: t
       } = e;
-      u.Z.returnParticipant(t, d), n()
-    }, [t, d]),
-    C = r.useMemo(() => null == k ? v.intl.string(v.t.lfzt24) : k.type === g.fO.USER ? k.user.username : k.type === g.fO.STREAM ? v.intl.formatToPlainString(v.t["/DC1y9"], {
-      username: k.user.username
-    }) : v.intl.string(v.t["8vlBo7"]), [k]),
-    E = (0, h.Z)();
-  return (0, i.jsx)(a.Z, {
+      a.Z.returnParticipant(n, o), t()
+    }, [n, o]),
+    M = (0, I.B)({
+      channel: P,
+      appContext: O.IlC.POPOUT
+    }),
+    v = i.useMemo(() => null == j ? b.intl.string(b.t.lfzt24) : j.type === m.fO.USER ? j.user.username : j.type === m.fO.STREAM ? b.intl.formatToPlainString(b.t["/DC1y9"], {
+      username: j.user.username
+    }) : b.intl.string(b.t["8vlBo7"]), [j]),
+    U = (0, d.Z)();
+  return (0, r.jsx)(u.Z, {
     withTitleBar: true,
-    keybinds: m,
-    windowKey: n,
-    title: C,
-    channelId: t,
-    onBeforeUnload: y,
+    keybinds: C,
+    windowKey: t,
+    title: v,
+    channelId: n,
+    onBeforeUnload: E,
     hideModals: true,
-    children: x ? (0, i.jsx)(o.Z.Provider, {
+    children: T ? (0, r.jsx)(s.Z.Provider, {
       value: P.guild_id,
-      children: (0, i.jsx)(w.ZP, {
+      children: (0, r.jsx)(f.ZP, {
         timeout: 2e3,
-        children: () => (0, i.jsx)(c.ZP, {
-          className: Z.tile,
-          participant: k,
+        children: () => (0, r.jsx)(h.ZP, {
+          className: g.tile,
+          participant: j,
           channel: P,
-          width: E.width,
+          width: U.width,
           inCall: true,
-          inPopout: true,
+          popoutType: y.P.CALL_TILE,
           focused: true,
-          noBorder: true
+          noBorder: true,
+          onContextMenu: M
         })
       })
     }) : null

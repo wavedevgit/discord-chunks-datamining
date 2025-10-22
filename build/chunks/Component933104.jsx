@@ -78,7 +78,7 @@ function A(e) {
     onClick: () => i ? (0, b.Z)(t, u.Z.GUILD_POWERUPS_COACHMARK_NEW_PERKS) : (0, d.f)({
       guildId: t,
       location: {
-        section: v.jXE.GUILD_POWERUPS_NEW_PERKS_COACHMARK
+        section: j.jXE.GUILD_POWERUPS_NEW_PERKS_COACHMARK
       }
     }),
     markAsDismissed: n,
@@ -194,7 +194,7 @@ function M(e) {
     header: S.intl.string(C.default["eX64+z"]),
     content: S.intl.string(C.default.NpgfEB),
     buttonCTA: S.intl.string(S.t.RzWDqY),
-    onClick: () => (0, p.uL)(v.Z5c.CHANNEL(t, j.oC.GAME_SERVERS)),
+    onClick: () => (0, p.uL)(j.Z5c.CHANNEL(t, v.oC.GAME_SERVERS)),
     markAsDismissed: n
   })
 }

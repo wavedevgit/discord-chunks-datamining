@@ -63,15 +63,15 @@ let _ = Chunk647438.memo(function(e) {
     disableManageChannels: O
   } = e, {
     isFavoritesPerk: y
-  } = (0, a.z)("ChannelListSection"), v = i.useCallback(() => {
+  } = (0, a.z)("ChannelListSection"), j = i.useCallback(() => {
     let e = m.getCategoryFromSection(m.recentsSectionNumber);
     if (null == e) return;
     let t = null,
       r = e.getShownChannelAndThreadIds();
     null != _ && r.includes(_) && (t = (0, s.KY)(m)), (0, s.Uo)(n.id, r, t)
   }, [n.id, _, m, b]), {
-    density: j
-  } = (0, l.TCT)(), x = "compact" === j ? 8 : p.$k;
+    density: v
+  } = (0, l.TCT)(), x = "compact" === v ? 8 : p.$k;
   switch (t) {
     case u.wZ:
       return (0, r.jsx)("div", {
@@ -93,7 +93,7 @@ let _ = Chunk647438.memo(function(e) {
     case m.recentsSectionNumber:
       return (0, r.jsx)(d.P, {
         name: f.intl.string(f.t.gKcrqM),
-        onDismiss: v
+        onDismiss: j
       });
     case m.voiceChannelsSectionNumber: {
       var C;

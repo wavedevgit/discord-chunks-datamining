@@ -97,11 +97,11 @@ function v(e, t) {
           w[t] = n
         }
       }
-      let j = w.filter(s.lm);
-      E.current = (0, l.keyBy)((0, l.range)(j.length), e => j[e].id);
-      let Z = [...I, ...j];
-      return null != b && (f && Z.length >= S ? Z[Math.max(0, Z.length - 1)] = b : Z.push(b)), {
-        visibleParticipants: Z,
+      let P = w.filter(s.lm);
+      E.current = (0, l.keyBy)((0, l.range)(P.length), e => P[e].id);
+      let j = [...I, ...P];
+      return null != b && (f && j.length >= S ? j[Math.max(0, j.length - 1)] = b : j.push(b)), {
+        visibleParticipants: j,
         participantTileWidth: y
       }
     }, [e, t, v, p, f, u, c, o, r]);
@@ -121,9 +121,9 @@ function b(e) {
     onClick: o,
     channel: c,
     inCall: s,
-    popoutWindow: d,
+    popoutType: d,
     paused: p = false
-  } = e, m = null != d;
+  } = e;
   return (0, r.jsx)("div", {
     className: f.root,
     children: t.map(e => {
@@ -146,7 +146,7 @@ function b(e) {
           width: t ? _ : n,
           inCall: s,
           paused: p,
-          inPopout: m
+          popoutType: d
         })
       }, e.id)
     })

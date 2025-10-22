@@ -12,14 +12,16 @@ let s = Chunk647438.memo(function(e) {
     channel: t,
     participants: n,
     tileWidth: i,
-    selectedParticipant: s
+    selectedParticipant: s,
+    popoutType: o
   } = e;
   return (0, r.jsx)("div", {
     className: a.rowContainer,
     children: n.map(e => e.id === (null == s ? true : s.id) ? null : (0, r.jsx)(l.Z, {
       channel: t,
       participant: e,
-      width: i
+      width: i,
+      popoutType: o
     }, e.id))
   })
 })

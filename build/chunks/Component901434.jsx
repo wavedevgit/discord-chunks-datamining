@@ -1,7 +1,7 @@
 /** Chunk was on 63962 **/
 /** chunk id: 901434, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => j
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -9,6 +9,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk287734 = require("./287734.js"),
   Chunk358221 = require("./358221.js"),
+  Chunk598006 = require("./598006.js"),
   Chunk305325 = require("./305325.js"),
   Chunk281956 = require("./281956.js"),
   Chunk27457 = require("./27457.jsx"),
@@ -19,63 +20,63 @@ var Chunk951288 = require("./951288.js"),
   Chunk504185 = require("./504185.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk631755 = require("./631755.js");
-let _ = (e, t) => f.ZP.getName(e.getGuildId(), e.id, t.user),
-  O = function(e) {
+let O = (e, t) => g.ZP.getName(e.getGuildId(), e.id, t.user),
+  j = function(e) {
     let {
       participants: t,
       channel: n,
-      hasConnectPermission: f
-    } = e, O = (0, d.J)(n.guild_id), j = i.useCallback(() => {
-      O ? (0, c.hk)(n.guild_id, () => s.default.selectVoiceChannel(n.id)) : s.default.selectVoiceChannel(n.id)
-    }, [n.id, n.guild_id, O]), x = t.filter(e => e.type === g.Ui.VOICE), v = 4 === x.length ? 2 : 3, C = (0, l.Wu)([o.Z], () => x.map(e => o.Z.getParticipant(n.id, e.id)).filter(h.lm), [n.id, x]);
+      hasConnectPermission: g
+    } = e, j = (0, u.J)(n.guild_id), x = i.useCallback(() => {
+      j ? (0, d.hk)(n.guild_id, () => s.default.selectVoiceChannel(n.id)) : s.default.selectVoiceChannel(n.id)
+    }, [n.id, n.guild_id, j]), v = t.filter(e => e.type === m.Ui.VOICE), C = 4 === v.length ? 2 : 3, I = (0, l.Wu)([o.Z], () => v.map(e => o.Z.getParticipant(n.id, e.id)).filter(f.lm), [n.id, v]);
     return (0, r.jsxs)("div", {
-      className: y.container,
-      children: [(0, r.jsx)(p.Z, {}), (0, r.jsx)("div", {
-        className: y.tiles,
+      className: _.container,
+      children: [(0, r.jsx)(h.Z, {}), (0, r.jsx)("div", {
+        className: _.tiles,
         style: {
-          maxWidth: 168 * v
+          maxWidth: 168 * C
         },
-        children: C.slice(0, 5).map(e => (0, r.jsx)(u.ZP, {
+        children: I.slice(0, 5).map(e => (0, r.jsx)(p.ZP, {
           participant: e,
           channel: n,
-          className: y.tile,
+          className: _.tile,
           inCall: true,
           noVideoRender: true,
-          inPopout: false,
+          popoutType: c.P.NO_POPOUT,
           width: 48
         }, e.id))
       }), (0, r.jsx)(a.Heading, {
-        className: y.channelName,
+        className: _.channelName,
         variant: "heading-xxl/normal",
         children: n.name
       }), (0, r.jsx)("div", {
-        className: y.participantsRow,
+        className: _.participantsRow,
         children: (0, r.jsx)(a.Text, {
           tag: "div",
           color: "header-secondary",
           variant: "heading-lg/normal",
-          children: 0 === x.length ? b.intl.string(b.t.FUVhyC) : 1 === x.length ? b.intl.formatToPlainString(b.t.EQwZlN, {
-            a: _(n, x[0])
-          }) : 2 === x.length ? b.intl.formatToPlainString(b.t.zBcKoA, {
-            a: _(n, x[0]),
-            b: _(n, x[1])
-          }) : x.length > 2 ? b.intl.formatToPlainString(b.t["3AqFaG"], {
-            a: _(n, x[0]),
-            b: _(n, x[1]),
-            n: x.length - 2
+          children: 0 === v.length ? y.intl.string(y.t.FUVhyC) : 1 === v.length ? y.intl.formatToPlainString(y.t.EQwZlN, {
+            a: O(n, v[0])
+          }) : 2 === v.length ? y.intl.formatToPlainString(y.t.zBcKoA, {
+            a: O(n, v[0]),
+            b: O(n, v[1])
+          }) : v.length > 2 ? y.intl.formatToPlainString(y.t["3AqFaG"], {
+            a: O(n, v[0]),
+            b: O(n, v[1]),
+            n: v.length - 2
           }) : true
         })
       }), (0, r.jsxs)("div", {
-        className: y.buttonContainer,
+        className: _.buttonContainer,
         children: [(0, r.jsx)("div", {
-          className: y.joinButton,
+          className: _.joinButton,
           children: (0, r.jsx)(a.Button, {
             variant: "overlay-primary",
-            text: f ? b.intl.string(b.t["7vb2cc"]) : b.intl.string(b.t.TVBCKZ),
-            onClick: j,
-            disabled: !f
+            text: g ? y.intl.string(y.t["7vb2cc"]) : y.intl.string(y.t.TVBCKZ),
+            onClick: x,
+            disabled: !g
           })
-        }), (0, r.jsx)(m.e, {
+        }), (0, r.jsx)(b.e, {
           channel: n
         })]
       })]

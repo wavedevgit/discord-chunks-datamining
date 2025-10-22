@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk643930 = require("./643930.js");
 
-function j(e) {
+function P(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +47,7 @@ function j(e) {
   return e
 }
 
-function Z(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -59,12 +59,12 @@ function Z(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
-  x = {
+let Z = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
+  R = {
     opacity: 0,
     transform: "translate3d(100%, 0, 0)"
   },
-  R = {
+  x = {
     opacity: 1,
     transform: "translate3d(0%, 0, 0)"
   },
@@ -75,10 +75,10 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
     opacity: 1
   },
   N = {
-    borderRadius: "".concat(P, "px ").concat(P, "px ").concat(P, "px ").concat(P, "px")
+    borderRadius: "".concat(Z, "px ").concat(Z, "px ").concat(Z, "px ").concat(Z, "px")
   },
   D = {
-    borderRadius: "0px ".concat(P, "px ").concat(P, "px 0px")
+    borderRadius: "0px ".concat(Z, "px ").concat(Z, "px 0px")
   },
   M = {
     mass: 1,
@@ -92,9 +92,9 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
         isUpsellEnabled: c,
         shape: f,
         size: v,
-        didTrackUpsellViewed: P,
-        setDidTrackUpsellViewed: x,
-        className: R,
+        didTrackUpsellViewed: Z,
+        setDidTrackUpsellViewed: R,
+        className: x,
         premiumIndicator: A,
         quality: T
       } = e,
@@ -123,19 +123,19 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
           let {
             default: e
           } = await n.e("28479").then(n.bind(n, 78865));
-          return t => (0, r.jsx)(e, Z(j({}, t), {
+          return t => (0, r.jsx)(e, j(P({}, t), {
             analyticsSource: k
           }))
         })
       }, [L, M, k]);
     if (i.useEffect(() => {
-        !P && M && (E.default.track(O.rMx.PREMIUM_UPSELL_VIEWED, {
+        !Z && M && (E.default.track(O.rMx.PREMIUM_UPSELL_VIEWED, {
           type: I.cd.STREAM_QUALITY_INDICATOR,
           has_premium_stream_fps: t,
           has_premium_stream_resolution: l,
           location_stack: N
-        }), x(true))
-      }, [t, l, M, P, x, N]), null == T) return null;
+        }), R(true))
+      }, [t, l, M, Z, R, N]), null == T) return null;
     let U = (0, r.jsx)(d.u, {
       text: D ? C.intl.string(C.t.q8TiVt) : M ? C.intl.string(C.t.IHgpEn) : C.intl.string(C.t.vLb0VW),
       position: "bottom",
@@ -158,7 +158,7 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
     });
     return (0, r.jsx)(p.IGR, {
       text: U,
-      className: a()(R, w.qualityIndicatorBadge, {
+      className: a()(x, w.qualityIndicatorBadge, {
         [w.qualityIndicatorBadgePremium]: M && A
       }),
       color: u.Z.unsafe_rawColors.PRIMARY_500.css,
@@ -183,10 +183,10 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
     }, [t]);
     let E = (0, p.Yzy)(b, {
         enter: {
-          from: m.enabled ? A : x,
-          to: m.enabled ? T : R
+          from: m.enabled ? A : R,
+          to: m.enabled ? T : x
         },
-        leave: m.enabled ? A : x,
+        leave: m.enabled ? A : R,
         config: M
       }, "animate-always"),
       h = (0, p.q_F)({
@@ -198,7 +198,7 @@ let P = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
         className: n,
         popoutProps: i
       } = e;
-      return (0, r.jsxs)("div", Z(j({
+      return (0, r.jsxs)("div", j(P({
         className: a()(w.streamQualityIndicator, n)
       }, i), {
         children: [E((e, n) => n ? (0, r.jsx)(o.animated.div, {

@@ -1,12 +1,13 @@
 /** Chunk was on 9145 **/
 /** chunk id: 340295, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk481060 = require("./481060.js"),
   Chunk287734 = require("./287734.js"),
+  Chunk598006 = require("./598006.js"),
   Chunk305325 = require("./305325.js"),
   Chunk281956 = require("./281956.js"),
   Chunk584729 = require("./584729.js"),
@@ -15,57 +16,57 @@ var Chunk951288 = require("./951288.js"),
   Chunk354459 = require("./354459.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk631755 = require("./631755.js");
-let m = function(e) {
+let g = function(e) {
   let {
     participants: t,
     channel: n,
-    hasConnectPermission: m
-  } = e, g = t.filter(p.Io), b = (0, s.J)(n.guild_id), C = r.useCallback(() => {
-    b ? (0, o.hk)(n.guild_id, () => a.default.selectVoiceChannel(n.id)) : a.default.selectVoiceChannel(n.id)
-  }, [n.id, n.guild_id, b]), y = 4 === g.length ? 2 : 3;
+    hasConnectPermission: g
+  } = e, b = t.filter(h.Io), C = (0, c.J)(n.guild_id), y = r.useCallback(() => {
+    C ? (0, s.hk)(n.guild_id, () => a.default.selectVoiceChannel(n.id)) : a.default.selectVoiceChannel(n.id)
+  }, [n.id, n.guild_id, C]), _ = 4 === b.length ? 2 : 3;
   return (0, i.jsxs)("div", {
-    className: f.container,
-    children: [(0, i.jsx)(d.Z, {}), (0, i.jsx)("div", {
-      className: f.tiles,
+    className: m.container,
+    children: [(0, i.jsx)(p.Z, {}), (0, i.jsx)("div", {
+      className: m.tiles,
       style: {
-        maxWidth: 168 * y
+        maxWidth: 168 * _
       },
-      children: g.slice(0, 5).map(e => (0, i.jsx)(u.ZP, {
+      children: b.slice(0, 5).map(e => (0, i.jsx)(d.ZP, {
         participant: e,
         channel: n,
-        className: f.tile,
+        className: m.tile,
         inCall: true,
         noVideoRender: true,
-        inPopout: false,
+        popoutType: o.P.NO_POPOUT,
         width: 48
       }, e.id))
     }), (0, i.jsx)(l.Heading, {
-      className: f.channelName,
+      className: m.channelName,
       variant: "heading-xxl/semibold",
       children: n.name
     }), (0, i.jsx)("div", {
-      className: f.participantsRow,
+      className: m.participantsRow,
       children: (0, i.jsx)(l.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
-        children: 0 === g.length ? h.intl.string(h.t.zSqdrS) : 1 === g.length ? h.intl.formatToPlainString(h.t.BUyJIG, {
-          a: (0, c.Z)(n, g[0])
-        }) : 2 === g.length ? h.intl.formatToPlainString(h.t["dcyZf/"], {
-          a: (0, c.Z)(n, g[0]),
-          b: (0, c.Z)(n, g[1])
-        }) : g.length > 2 ? h.intl.formatToPlainString(h.t["44/Obu"], {
-          a: (0, c.Z)(n, g[0]),
-          b: (0, c.Z)(n, g[1]),
-          n: g.length - 2
+        children: 0 === b.length ? f.intl.string(f.t.zSqdrS) : 1 === b.length ? f.intl.formatToPlainString(f.t.BUyJIG, {
+          a: (0, u.Z)(n, b[0])
+        }) : 2 === b.length ? f.intl.formatToPlainString(f.t["dcyZf/"], {
+          a: (0, u.Z)(n, b[0]),
+          b: (0, u.Z)(n, b[1])
+        }) : b.length > 2 ? f.intl.formatToPlainString(f.t["44/Obu"], {
+          a: (0, u.Z)(n, b[0]),
+          b: (0, u.Z)(n, b[1]),
+          n: b.length - 2
         }) : true
       })
     }), (0, i.jsx)("div", {
-      className: f.joinButton,
+      className: m.joinButton,
       children: (0, i.jsx)(l.Button, {
         variant: "overlay-primary",
-        text: m ? h.intl.string(h.t["96ANUN"]) : h.intl.string(h.t.TVBCKZ),
-        onClick: C,
-        disabled: !m
+        text: g ? f.intl.string(f.t["96ANUN"]) : f.intl.string(f.t.TVBCKZ),
+        onClick: y,
+        disabled: !g
       })
     })]
   })

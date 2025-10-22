@@ -238,7 +238,7 @@ let Z = {
             children: i
           }), (0, r.jsx)("div", {
             className: E.message,
-            children: (0, r.jsx)(v.Z, {
+            children: (0, r.jsx)(j.Z, {
               channel: e,
               message: t,
               animateAvatar: false,
@@ -264,7 +264,7 @@ let Z = {
           children: x.intl.string(x.t.NjEPp7)
         }), (0, r.jsx)("div", {
           className: o()(E.message, E.spacing),
-          children: (0, r.jsx)(v.Z, {
+          children: (0, r.jsx)(j.Z, {
             channel: e,
             message: t,
             disableInteraction: true

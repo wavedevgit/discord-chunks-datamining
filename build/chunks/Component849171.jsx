@@ -72,16 +72,16 @@ function k(e) {
     application: c,
     channel: _,
     width: g
-  } = e, v = g > 400 ? 2 : +(g > 300), [b] = g > 400 ? [s.EFr.SIZE_56, 56] : g > 300 ? [s.EFr.SIZE_32, 32] : [s.EFr.SIZE_24, 24], E = (0, o.Wu)([x.default, Z.default], () => Array.from(l).map(e => (0, p.J)(e, Z.default) ? null : x.default.getUser(e.userId)).filter(R.lm)), h = (0, o.e7)([d.ZP], () => {
+  } = e, v = g > 400 ? 2 : +(g > 300), [b] = g > 400 ? [s.EFr.SIZE_56, 56] : g > 300 ? [s.EFr.SIZE_32, 32] : [s.EFr.SIZE_24, 24], E = (0, o.Wu)([R.default, j.default], () => Array.from(l).map(e => (0, p.J)(e, j.default) ? null : R.default.getUser(e.userId)).filter(x.lm)), h = (0, o.e7)([d.ZP], () => {
     var e;
     return null != (e = d.ZP.getEmbeddedActivitiesForChannel(_.id).find(e => e.applicationId === c.id)) ? e : d.ZP.getEmbeddedActivitiesForStartingChannel(_.id).find(e => e.applicationId === c.id)
   }), {
     analyticsLocations: S
   } = (0, I.ZP)(), y = (0, u.O)(), O = A.ZP.getName(_.getGuildId(), _.id, null == E ? true : E[0]), w = (0, m.s5)({
-    userId: null == (t = x.default.getCurrentUser()) ? true : t.id,
+    userId: null == (t = R.default.getCurrentUser()) ? true : t.id,
     channelId: _.id,
     application: c
-  }) === m.Fw.CAN_JOIN, j = null != (n = _.getGuildId()) ? n : true, P = i.useId(), D = c.id, k = i.useMemo(() => ({
+  }) === m.Fw.CAN_JOIN, P = null != (n = _.getGuildId()) ? n : true, Z = i.useId(), D = c.id, k = i.useMemo(() => ({
     channel: _,
     type: "channel"
   }), [_]), {
@@ -89,13 +89,13 @@ function k(e) {
   } = (0, C.Z)({
     applicationId: D,
     context: k,
-    launchingComponentId: P
+    launchingComponentId: Z
   });
   return (0, r.jsxs)("div", {
     className: N.splash,
     children: [(0, r.jsx)(M, {
       avatarSize: b,
-      guildId: j,
+      guildId: P,
       channelId: _.id,
       users: E
     }), (0, r.jsx)(s.Text, {
@@ -127,7 +127,7 @@ function k(e) {
             activityChannelId: _.id,
             locationObject: y.location,
             analyticsLocations: S,
-            componentId: P
+            componentId: Z
           })
         },
         loading: F,
@@ -155,16 +155,16 @@ function F(e) {
     applicationId: u,
     names: D,
     size: 1024
-  }), h = !l && f, C = !f, Z = !f && !l, x = (0, o.e7)([P.Z, j.Z], () => (0, y.Z)({
-    LayerStore: P.Z,
-    PopoutWindowStore: j.Z
+  }), h = !l && f, C = !f, j = !f && !l, R = (0, o.e7)([Z.Z, P.Z], () => (0, y.Z)({
+    LayerStore: Z.Z,
+    PopoutWindowStore: P.Z
   }));
   return i.useEffect(() => {
-    if (h && null != d && !x) {
+    if (h && null != d && !R) {
       let e = (0, S.Z)(d.location.id, d.applicationId);
       (0, E.jy)(e)
     }
-  }, [h, d, x]), (0, r.jsx)(I.Gt, {
+  }, [h, d, R]), (0, r.jsx)(I.Gt, {
     value: s,
     children: (0, r.jsxs)("div", {
       className: N.container,
@@ -175,7 +175,7 @@ function F(e) {
         className: N.splashImage,
         alt: p.name,
         src: m
-      }) : null, Z && null != p && (0, r.jsx)(k, {
+      }) : null, j && null != p && (0, r.jsx)(k, {
         width: n,
         channel: c,
         participants: t.participants,

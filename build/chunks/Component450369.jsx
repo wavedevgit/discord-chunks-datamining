@@ -80,7 +80,7 @@ let k = 16 / 9,
       width: o,
       isModerator: d,
       onContextMenu: u,
-      inPopout: p
+      popoutType: p
     } = e, h = i.useRef(null), {
       reducedMotion: f
     } = i.useContext(c.Sfi), {
@@ -106,7 +106,7 @@ let k = 16 / 9,
           channel: l,
           className: D.tile,
           inCall: true,
-          inPopout: p,
+          popoutType: p,
           pulseSpeakingIndicator: !f.enabled,
           width: o,
           onContextMenu: u,
@@ -123,7 +123,7 @@ let k = 16 / 9,
       width: a,
       isModerator: s,
       onContextMenu: u,
-      inPopout: h
+      popoutType: h
     } = e, {
       reducedMotion: f
     } = i.useContext(c.Sfi), {
@@ -153,7 +153,7 @@ let k = 16 / 9,
       channel: l,
       className: D.tile,
       inCall: true,
-      inPopout: h,
+      popoutType: h,
       onClick: T,
       onContextMenu: u,
       pulseSpeakingIndicator: !f.enabled,
@@ -166,58 +166,59 @@ let k = 16 / 9,
     let {
       participant: i,
       channel: l,
-      width: c
+      width: c,
+      popoutType: d
     } = e, {
-      newestAnalyticsLocation: d
-    } = (0, f.ZP)(h.Z.STAGE_TILE), p = (0, j.bp)(), y = l.getGuildId(), _ = S.default.getId();
-    a()(null != y, "Channel cannot be guildless");
+      newestAnalyticsLocation: p
+    } = (0, f.ZP)(h.Z.STAGE_TILE), y = (0, j.bp)(), _ = l.getGuildId(), O = S.default.getId();
+    a()(null != _, "Channel cannot be guildless");
     let {
-      user: O
-    } = i, x = (0, o.e7)([m.Z], () => m.Z.getParticipant(l.id, i.id), [l.id, i.id]), C = (0, o.e7)([T.ZP], () => T.ZP.isModerator(O.id, l.id), [l.id, O.id]);
-    if (null == x || x.type === A.fO.ACTIVITY) return null;
-    let I = e => {
+      user: x
+    } = i, C = (0, o.e7)([m.Z], () => m.Z.getParticipant(l.id, i.id), [l.id, i.id]), I = (0, o.e7)([T.ZP], () => T.ZP.isModerator(x.id, l.id), [l.id, x.id]);
+    if (null == C || C.type === A.fO.ACTIVITY) return null;
+    let E = e => {
         (0, g.h)({
           type: s.ImpressionTypes.MENU,
           name: s.ImpressionNames.CALL_TILE_CONTEXT_MENU,
           properties: {
             location: "StageTile",
-            is_tile_owner: O.id === _,
+            is_tile_owner: x.id === O,
             tile_type: e
           }
         })
       },
-      E = (e, t, i, a) => {
+      Z = (e, t, i, a) => {
         switch (e.type) {
           case A.fO.HIDDEN_STREAM:
           case A.fO.STREAM:
-            I(A.TH.STREAM), (0, u.jW)(t, async () => {
+            E(A.TH.STREAM), (0, u.jW)(t, async () => {
               let {
                 default: t
               } = await n.e("22183").then(n.bind(n, 987281));
               return n => (0, r.jsx)(t, M(L({}, n), {
                 stream: e.stream,
-                appContext: p,
+                appContext: y,
                 exitFullscreen: () => {},
-                onInteraction: (0, b.u)("StreamContextMenu", d, {
+                onInteraction: (0, b.u)("StreamContextMenu", p, {
                   entrypoint: a,
-                  targetUserId: O.id,
+                  targetUserId: x.id,
                   tileType: A.TH.STREAM
                 })
               }))
             }, {
-              context: p
+              context: y
             });
             return;
           case A.fO.USER:
           default:
-            if (I(A.TH.USER), i) return (0, v.D)(t, O, l, {
-              context: p
+            if (E(A.TH.USER), i) return (0, v.D)(t, x, l, {
+              context: y
             }, (e, t) => (0, b.o)({
               menuName: e,
               menuItemProps: t,
               entrypoint: A.A5.THREE_DOT,
-              targetUserId: O.id,
-              location: d,
+              targetUserId: x.id,
+              location: p,
               tileType: A.TH.USER
             }));
             (0, u.jW)(t, async () => {
@@ -225,41 +226,41 @@ let k = 16 / 9,
                 default: e
               } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("19848")]).then(n.bind(n, 757387));
               return t => (0, r.jsx)(e, M(L({}, t), {
-                user: O,
-                guildId: y,
+                user: x,
+                guildId: _,
                 channel: l,
                 showMediaItems: true,
                 showStageChannelItems: true,
                 showChatItems: false,
-                onInteraction: (0, b.u)("GuildChannelUserContextMenu", d, {
-                  targetUserId: O.id,
+                onInteraction: (0, b.u)("GuildChannelUserContextMenu", p, {
+                  targetUserId: x.id,
                   tileType: A.TH.USER
                 })
               }))
             }, {
-              context: p
+              context: y
             })
         }
       };
-    return x.type !== A.fO.USER || (null == (t = x.voiceState) ? true : t.selfVideo) ? (0, r.jsx)(G, {
+    return C.type !== A.fO.USER || (null == (t = C.voiceState) ? true : t.selfVideo) ? (0, r.jsx)(G, {
       stageParticipant: i,
-      rtcParticipant: x,
+      rtcParticipant: C,
       channel: l,
-      guildId: y,
-      user: O,
+      guildId: _,
+      user: x,
       width: c,
-      isModerator: C,
-      onContextMenu: E,
-      inPopout: p === w.IlC.POPOUT
+      isModerator: I,
+      onContextMenu: Z,
+      popoutType: d
     }) : (0, r.jsx)(U, {
       stageParticipant: i,
-      rtcParticipant: x,
+      rtcParticipant: C,
       channel: l,
-      guildId: y,
-      user: O,
+      guildId: _,
+      user: x,
       width: c,
-      isModerator: C,
-      onContextMenu: E,
-      inPopout: p === w.IlC.POPOUT
+      isModerator: I,
+      onContextMenu: Z,
+      popoutType: d
     })
   })

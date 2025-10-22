@@ -39,7 +39,7 @@ let _ = (0, Chunk112724.Z)(e => {
     height: N,
     idle: A,
     mode: w,
-    popoutWindow: M,
+    popoutType: M,
     awaitingRemoteSessionInfo: R,
     callContainerDimensions: L
   } = e;
@@ -83,7 +83,8 @@ let _ = (0, Chunk112724.Z)(e => {
         onClick: x,
         onDoubleClick: j,
         onContextMenu: O,
-        inCall: I
+        inCall: I,
+        popoutType: M
       })
     })
   }
@@ -94,7 +95,7 @@ let _ = (0, Chunk112724.Z)(e => {
     selectedParticipant: a,
     filteredParticipants: D,
     participants: t,
-    popoutWindow: M,
+    popoutType: M,
     className: P,
     idle: A,
     height: N,

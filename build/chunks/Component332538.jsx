@@ -79,7 +79,7 @@ function Z(e) {
         var t, n;
         return null != (n = null == (t = h.Z.getGuild(e)) ? true : t.features.has(P.GuildFeatures.GAME_SERVERS)) && n
       }), b = function(e, t) {
-        let n = (0, v.qI)(e, "GuildPowerupsChannelRow"),
+        let n = (0, j.qI)(e, "GuildPowerupsChannelRow"),
           r = (0, m.BU)(e, "GuildPowerupsChannelRow"),
           a = (0, o.e7)([h.Z], () => {
             var t;
@@ -133,7 +133,7 @@ function Z(e) {
               return null != n && !!(l >= n)
             }) ? [] : r.map(r => {
               let i = t.allPowerups[r];
-              return null == i || n < i.cost || (0, j.e)(e, i, "maybeGetPerkPurchaseablePopoutDCF") ? null : i
+              return null == i || n < i.cost || (0, v.e)(e, i, "maybeGetPerkPurchaseablePopoutDCF") ? null : i
             })).filter(f.lm);
           if (0 !== o.length) {
             if (1 === o.length && !(0, p.OY)(a.C.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK, e)) return {
