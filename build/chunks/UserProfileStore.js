@@ -87,14 +87,15 @@ function F(e) {
     case a.l.PLAYED_GAMES:
     case a.l.WANT_TO_PLAY_GAMES:
       let n = e.data.games.map(e => ({
-        applicationId: e.game_id,
-        comment: e.comment,
-        tags: e.tags
-      }));
+          applicationId: e.game_id,
+          comment: e.comment,
+          tags: e.tags
+        })),
+        r = i().uniqBy(n, "applicationId");
       return new E.zy({
         id: e.id,
         type: t,
-        games: n
+        games: r
       });
     case a.l.APPLICATION:
       return new g.q({

@@ -191,22 +191,22 @@ function M(e, t, n) {
 }
 
 function k(e, t) {
-  var n, r, i;
-  let o, l = R(e),
-    u = I(e);
-  if (null != l && (null != (r = null == (n = l.games) ? true : n.length) ? r : 0) >= u) return;
-  let d = {
+  var n, r, i, o;
+  let l, u = R(e),
+    d = I(e);
+  if (null != u && ((null != (r = null == (n = u.games) ? true : n.length) ? r : 0) >= d || (null != (i = u.games) ? i : []).some(e => e.applicationId === t.applicationId))) return;
+  let f = {
     applicationId: t.applicationId,
     comment: t.comment,
     tags: t.tags
   };
-  o = null != l ? [...null != (i = l.games) ? i : [], d] : [d];
-  let f = P(new s.zy(E(m({}, null != l ? l : {
+  l = null != u ? [...null != (o = u.games) ? o : [], f] : [f];
+  let _ = P(new s.zy(E(m({}, null != u ? u : {
     type: e
   }), {
-    games: o
+    games: l
   })));
-  c.Z.setPendingWidgets(f), a.Z.getDetectableGamesSupplemental([t.applicationId])
+  c.Z.setPendingWidgets(_), a.Z.getDetectableGamesSupplemental([t.applicationId])
 }
 
 function j(e, t, n) {
