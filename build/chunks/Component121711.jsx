@@ -73,7 +73,7 @@ function ef(e) {
     onLoadComplete: t
   } = e, {
     enabled: n
-  } = (0, Z.WX)({
+  } = (0, A.WX)({
     location: et.dr.QUEST_HOME_DESKTOP
   }), l = (0, u.e7)([h.Z], () => h.Z.useReducedMotion), o = (0, u.e7)([L.Z], () => L.Z.isFocused()), {
     ref: s,
@@ -253,7 +253,7 @@ let em = function(e) {
   }, [R]);
   let {
     enabled: eu
-  } = (0, Z.WX)({
+  } = (0, A.WX)({
     location: et.dr.QUEST_HOME_DESKTOP
   }), ed = i.useCallback(() => {
     if (eu) return void window.open(en.EYA.PAID_TERMS_ORBS);
@@ -266,7 +266,7 @@ let em = function(e) {
     eh = eu ? el.intl.format(el.t.U9FY0J, {}) : el.intl.string(el.t.oWCrBq),
     em = i.useRef(null),
     eb = i.useCallback(() => {
-      (0, A.Y)({
+      (0, Z.Y)({
         pageType: en.ZY5.GLOBAL_DISCOVERY_QUESTS,
         sectionType: en.jXE.ORBS_BALANCE_MENU,
         ctaObject: en.qAy.CTA_TO_ORBS_SHOP

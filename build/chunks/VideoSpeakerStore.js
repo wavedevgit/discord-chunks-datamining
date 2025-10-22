@@ -31,12 +31,16 @@ function E() {
   if (null == r) e = null;
   else {
     var n, a, o, l, c;
-    e = Chunk358221.Z.getSelectedParticipantId(r);
+    null != (e = Chunk358221.Z.getSelectedParticipantId(r)) && Chunk358221.Z.isParticipantPoppedOut(r, module) && (e = null);
     let t = Chunk199902.Z.getLastActiveStream(),
       g = null != module ? Chunk358221.Z.getParticipant(r, module) : null;
-    if ((null == g ? true : g.type) !== Chunk354459.fO.ACTIVITY && ((null == g ? true : g.type) !== Chunk354459.fO.USER || (null == (n = g.voiceState) ? true : require.selfVideo)) || (e = null), null != exports && null == module && (e = null == (a = Chunk358221.Z.getParticipant(r, (0, Chunk569545.V9)(exports))) ? true : a.id), null == module) {
+    if ((null == g ? true : g.type) !== Chunk354459.fO.ACTIVITY && ((null == g ? true : g.type) !== Chunk354459.fO.USER || (null == (n = g.voiceState) ? true : require.selfVideo)) || (e = null), null != exports && null == module) {
+      let n = null == (a = Chunk358221.Z.getParticipant(r, (0, Chunk569545.V9)(exports))) ? true : a.id;
+      null == require || Chunk358221.Z.isParticipantPoppedOut(r, require) || (e = require)
+    }
+    if (null == module) {
       let t = Chunk314897.default.getId(),
-        n = s()(Chunk358221.Z.getVideoParticipants(r)).filter(e => e.type === m.fO.USER && e.user.id !== t && !p.Z.isLocalVideoDisabled(e.user.id)),
+        n = s()(Chunk358221.Z.getVideoParticipants(r)).filter(e => e.type === m.fO.USER && e.user.id !== t && !p.Z.isLocalVideoDisabled(e.user.id) && !u.Z.isParticipantPoppedOut(r, e.id)),
         a = require.map(e => e.user.id),
         d = Date.now();
       null == (e = null == (o = require.map(e => [e.user.id, h.Z.getSpeakingDuration(e.user.id, d)]).filter(e => {

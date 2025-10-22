@@ -480,8 +480,8 @@ function eb(e) {
     m = (0, c.e7)([H.Z], () => H.Z.isUnavailable(n)),
     j = (0, c.e7)([K.default], () => K.default.getCurrentUser()),
     {
-      enableStudyGroup: Z
-    } = (0, A.s)(o),
+      enableStudyGroup: A
+    } = (0, Z.s)(o),
     w = (0, y.ZP)(e => e.currentlyShown.has(u.z.NAGBAR_NOTICE_CONNECT_PLAYSTATION)),
     [M, k] = i.useState(!w),
     V = (0, _.Z)(n),
@@ -526,7 +526,7 @@ function eb(e) {
     showMediaChannelUpsell: ev,
     showTierTemplatesUpsell: ey,
     isHeaderPopoutOpen: eg,
-    enableStudyGroup: Z,
+    enableStudyGroup: A,
     isGuildHeaderDismissibleTooltipShown: ee,
     canShowCoachMarkAtBottom: M,
     headerAnalyticsLocations: J,

@@ -66,7 +66,7 @@ function O(e) {
       onClose: j
     } = C,
     x = null != (v = null == (t = I.button) ? true : t.copy) ? v : m.intl.string(m.t.YScQSF),
-    A = (null == (n = I.button) ? true : n.buttonAction) === a.Wc.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button";
+    Z = (null == (n = I.button) ? true : n.buttonAction) === a.Wc.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button";
   switch (null == (O = I.button) ? true : O.buttonAction) {
     case a.Wc.OPEN_MARKETING_PAGE:
       y = () => {
@@ -101,7 +101,7 @@ function O(e) {
         }
       })
   }
-  let Z = "" !== I.helpArticleId ? () => (0, r.jsxs)(r.Fragment, {
+  let A = "" !== I.helpArticleId ? () => (0, r.jsxs)(r.Fragment, {
       children: ["\xa0", (0, r.jsx)(s.Anchor, {
         className: b.termsApplyAnchor,
         href: p.Z.getArticleURL(I.helpArticleId),
@@ -129,7 +129,7 @@ function O(e) {
     header: I.header,
     modalTopExtra: L,
     subHeader: I.subheader,
-    subHeaderExtra: Z,
+    subHeaderExtra: A,
     body: I.body,
     heroArt: w,
     featureCards: I.featureCards.map(e => ({
@@ -147,7 +147,7 @@ function O(e) {
         onClick: () => {
           d.default.track(g.rMx.CHANGE_LOG_CTA_CLICKED, {
             change_log_id: P,
-            cta_type: A,
+            cta_type: Z,
             seconds_open: Math.round((Date.now() - e) / 1e3),
             target: P
           }), y()

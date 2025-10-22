@@ -111,8 +111,8 @@ function j(e) {
     heroArtClassName: T,
     modalDismissibleContent: j,
     modalTopExtra: x,
-    header: A,
-    headerClassName: Z,
+    header: Z,
+    headerClassName: A,
     subHeader: w,
     subHeaderExtra: L,
     featureCards: R,
@@ -203,8 +203,8 @@ function j(e) {
         className: I.content,
         children: [(0, r.jsx)(c.Heading, {
           variant: "display-md",
-          className: a()(I.headerText, Z),
-          children: A
+          className: a()(I.headerText, A),
+          children: Z
         }), "video" === l.type ? (0, r.jsx)(h.Z, {
           className: a()(I.video, T),
           autoPlay: !V,

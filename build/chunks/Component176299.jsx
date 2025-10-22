@@ -183,7 +183,7 @@ let eM = (0, Chunk608787.Un)({
       messageId: o,
       threadId: c
     } = t.params, u = null != a ? a : true;
-    null == u && null != t.params.gameShopPageIndex && (u = eA.oC.GAME_SHOP);
+    null == u && null != t.params.gameShopPageIndex && (u = eZ.oC.GAME_SHOP);
     let d = (0, p.e7)([em.Z], () => em.Z.getGuild(l)),
       f = (0, p.e7)([eg.ZP], () => null == l ? null : eg.ZP.getSelfMember(l)),
       h = (0, p.e7)([F.Z], () => {
@@ -200,63 +200,63 @@ let eM = (0, Chunk608787.Un)({
       });
     (0, el.WF)(u) && (0, el.WF)(c) || (null != d && (0, eu.uL)(ex.Z5c.CHANNEL(d.id, (0, ea.Z)(d))), (0, W.V)());
     let g = (0, j.C4)(l, "channel_renderer");
-    if (null != l && null != u && (0, eA.AB)(u)) switch (u) {
-      case eA.oC.ROLE_SUBSCRIPTIONS:
+    if (null != l && null != u && (0, eZ.AB)(u)) switch (u) {
+      case eZ.oC.ROLE_SUBSCRIPTIONS:
         return g ? (0, r.jsx)(eU, {
           guildId: l,
           initialTab: x.y.GUILD_ROLE_SUBSCRIPTIONS
         }) : (0, r.jsx)(G.Z, {
           guildId: l
         });
-      case eA.oC.SERVER_MONETIZATION_ONBOARDING:
+      case eZ.oC.SERVER_MONETIZATION_ONBOARDING:
         return (0, r.jsx)(eB, {
           guildId: l
         });
-      case eA.oC.GAME_SHOP:
+      case eZ.oC.GAME_SHOP:
         return (0, r.jsx)(eG, eD({}, e));
-      case eA.oC.GUILD_SHOP:
+      case eZ.oC.GUILD_SHOP:
         return (0, r.jsx)(eU, {
           guildId: l,
           productId: o,
           initialTab: h
         });
-      case eA.oC.MEMBER_APPLICATIONS:
+      case eZ.oC.MEMBER_APPLICATIONS:
         return (0, r.jsx)(s.l_, {
-          to: ex.Z5c.CHANNEL(l, eA.oC.MEMBER_SAFETY)
+          to: ex.Z5c.CHANNEL(l, eZ.oC.MEMBER_SAFETY)
         });
-      case eA.oC.GUILD_HOME:
+      case eZ.oC.GUILD_HOME:
         return (0, r.jsx)(eH, {
           guildId: l
         });
-      case eA.oC.CHANNEL_BROWSER:
+      case eZ.oC.CHANNEL_BROWSER:
         return (0, r.jsx)(eF, {
           guildId: l,
           selectedSection: ew.l7.BROWSE
         });
-      case eA.oC.GUILD_ONBOARDING:
+      case eZ.oC.GUILD_ONBOARDING:
         return (0, r.jsx)(ez, {
           guildId: l
         });
-      case eA.oC.CUSTOMIZE_COMMUNITY:
+      case eZ.oC.CUSTOMIZE_COMMUNITY:
         return (0, r.jsx)(eF, {
           guildId: l,
           selectedSection: ew.l7.CUSTOMIZE
         });
-      case eA.oC.MEMBER_SAFETY:
+      case eZ.oC.MEMBER_SAFETY:
         return (0, r.jsx)(eV, {
           guildId: l
         });
-      case eA.oC.GUILD_BOOSTS:
+      case eZ.oC.GUILD_BOOSTS:
         var m;
         return (0, r.jsx)(eW, {
           guildId: l,
           powerupListingId: null != (m = n.get("powerupId")) ? m : n.get("powerupSkuId")
         });
-      case eA.oC.GAME_SERVERS:
+      case eZ.oC.GAME_SERVERS:
         return (0, r.jsx)(eY, {
           guildId: l
         });
-      case eA.oC.REPORT_TO_MOD:
+      case eZ.oC.REPORT_TO_MOD:
         return (0, r.jsx)(S.Z, {});
       default:
         (0, ev.vE)(u)
@@ -337,7 +337,7 @@ let eM = (0, Chunk608787.Un)({
     let {
       tab: t
     } = (0, o.parse)(e.location.search);
-    return Object.values(eZ.AW).includes(t) ? (0, r.jsx)(T.Z, eD({
+    return Object.values(eA.AW).includes(t) ? (0, r.jsx)(T.Z, eD({
       tab: t
     }, e)) : (0, r.jsx)(T.Z, eD({}, e))
   };
@@ -458,7 +458,7 @@ function tr(e) {
     location: c
   });
   let u = (0, p.e7)([C.Z], () => C.Z.isFullscreenInContext()),
-    g = (0, A.T)("ChannelSidebar"),
+    g = (0, Z.T)("ChannelSidebar"),
     m = (0, P.useAppSidebarState)(e => !e.isOpen) && g;
   i.useLayoutEffect(() => {
     if (g) {

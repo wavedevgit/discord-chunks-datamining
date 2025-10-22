@@ -74,10 +74,10 @@ let T = e => {
   }, [P, t]), i.useEffect(() => {
     j || g.Z.fetchRequestToJoinGuilds()
   }, [j]);
-  let A = i.useCallback(() => {
+  let Z = i.useCallback(() => {
       h(Math.max(f, I.hO.FILLING)), g.Z.removeGuildJoinRequest(t), (0, d.uL)(y.Z5c.ME)
     }, [t, f]),
-    Z = (e, t) => () => {
+    A = (e, t) => () => {
       (0, o.h7j)(n => {
         var i, l;
         return (0, r.jsx)(o.ConfirmModal, (i = function(e) {
@@ -123,11 +123,11 @@ let T = e => {
     },
     w = async () => {
       await g.Z.resetGuildJoinRequest(t), (0, m.hk)(t)
-    }, L = Z(C.intl.format(C.t["9ZezpN"], {
+    }, L = A(C.intl.format(C.t["9ZezpN"], {
       name: null == x ? true : x.name
-    }), A), R = Z(C.intl.format(C.t.fJwWVt, {
+    }), Z), R = A(C.intl.format(C.t.fJwWVt, {
       name: null == x ? true : x.name
-    }), A);
+    }), Z);
   return (0, r.jsxs)("div", {
     className: S.page,
     ref: n,

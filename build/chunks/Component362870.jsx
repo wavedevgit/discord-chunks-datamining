@@ -47,12 +47,12 @@ let C = Math.ceil(Math.sqrt(115200)),
         shouldShowGradientAndBadge: !(0, f.Nj)(c.z.QUEST_HOME_ENTRYPOINT_ONBOARDING) && e,
         dismissContent: r
       }
-    }(), A = i.useCallback(() => {
+    }(), Z = i.useCallback(() => {
       b.Z.getState().setUtmCurrentContext({
         utmContentCurrent: "PRIMARY_QUEST_HOME"
       })
     }, []), [{
-      glowSpring: Z
+      glowSpring: A
     }, w] = (0, u.q_F)(() => ({
       from: {
         glowSpring: 0
@@ -138,7 +138,7 @@ let C = Math.ceil(Math.sqrt(115200)),
           }),
           icon: u.qDn,
           listItemRef: T,
-          onClick: A,
+          onClick: Z,
           route: O.Z5c.QUEST_HOME_V2,
           selected: l,
           text: y.intl.string(y.t.JALI2K)
@@ -152,7 +152,7 @@ let C = Math.ceil(Math.sqrt(115200)),
             }), (0, r.jsx)(o.animated.div, {
               className: I.glow,
               style: {
-                opacity: Z.to({
+                opacity: A.to({
                   range: [0, 1],
                   output: [0, .5]
                 })
@@ -175,7 +175,7 @@ let C = Math.ceil(Math.sqrt(115200)),
         }), t))
       }), P && (0, r.jsx)(_.Z, {
         targetElementRef: T,
-        onNavigateToQuestHome: A,
+        onNavigateToQuestHome: Z,
         onRender: k,
         onRequestClose: x
       })]

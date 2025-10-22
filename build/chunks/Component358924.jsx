@@ -386,7 +386,7 @@ eO.Header = eE, eO.Body = e => {
     partySize: a,
     members: s,
     onChannelContextMenu: c
-  } = e, u = l.useRef(null), d = (0, A.ZP)(r, true), p = (0, q.EB)(n, 32), g = (0, q.gM)(n);
+  } = e, u = l.useRef(null), d = (0, Z.ZP)(r, true), p = (0, q.EB)(n, 32), g = (0, q.gM)(n);
   return (0, i.jsx)(ed, {
     children: (0, i.jsxs)("div", {
       className: ea.voiceSection,
@@ -679,8 +679,8 @@ eO.Header = eE, eO.Body = e => {
         className: ea.applicationStreamingAvatar
       }), (0, i.jsxs)("div", {
         children: [es(en.ZP.getName(l)), ec(g)]
-      }), (0, i.jsx)(Z.ZP, {
-        size: Z.ZP.Sizes.SMALL
+      }), (0, i.jsx)(A.ZP, {
+        size: A.ZP.Sizes.SMALL
       })]
     }), h]
   })

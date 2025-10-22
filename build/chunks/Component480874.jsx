@@ -42,13 +42,13 @@ function T() {
       (0, Chunk481060.showToast)((0, Chunk481060.createToast)(Chunk388032.intl.string(Chunk388032.t["EDYbS+"]), Chunk481060.ToastType.FAILURE))
     }, []),
     {
-      rejectAll: A
+      rejectAll: Z
     } = (0, Chunk486622.m)({
       onError: x
     }),
-    Z = Chunk647438.useCallback(() => {
-      A(exports.map(e => e.channel.id))
-    }, [exports, A]);
+    A = Chunk647438.useCallback(() => {
+      Z(exports.map(e => e.channel.id))
+    }, [exports, Z]);
   (0, Chunk493773.ZP)(() => {
     Chunk626135.default.track(Chunk981631.rMx.SPAM_MESSAGE_REQUESTS_VIEWED, {
       num_spam_message_requests: require
@@ -86,11 +86,11 @@ function T() {
         }), (0, Chunk951288.jsx)(Chunk481060.Avr, {
           textVariant: "text-sm/normal",
           text: Chunk388032.intl.string(Chunk388032.t.p6t7RC),
-          onClick: Z,
+          onClick: A,
           "aria-label": Chunk388032.intl.string(Chunk388032.t.p6t7RC)
         })]
       }) : null]
-    }, "message-requests-spam-title"), [require, Z, T]);
+    }, "message-requests-spam-title"), [require, A, T]);
   return 0 === exports.length ? (0, Chunk951288.jsx)(Chunk307947.Z, {
     section: Chunk687683.pS.SPAM
   }) : (0, Chunk951288.jsx)(Chunk91192.bG, {

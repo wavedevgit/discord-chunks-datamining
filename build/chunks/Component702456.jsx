@@ -171,7 +171,7 @@ function x() {
   let {
     frequentFriends: _,
     showCompetitiveSpot: O
-  } = exports, x = Chunk120356.scrollWidth > Chunk120356.clientWidth, A = Chunk120356.scrollLeft > 0, Z = Chunk120356.scrollLeft < Chunk120356.scrollWidth - Chunk120356.clientWidth - 2;
+  } = exports, x = Chunk120356.scrollWidth > Chunk120356.clientWidth, Z = Chunk120356.scrollLeft > 0, A = Chunk120356.scrollLeft < Chunk120356.scrollWidth - Chunk120356.clientWidth - 2;
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsxs)("div", {
       className: Chunk664688.frequentFriendsRow,
@@ -193,8 +193,8 @@ function x() {
           p.current = e, g.current = (null == e ? true : e.getScrollerNode()) != null ? e.getScrollerNode() : null
         },
         className: a()(Chunk664688.frequentFriendsAvatars, {
-          [Chunk664688.scrollMaskLeft]: x && A,
-          [Chunk664688.scrollMaskRight]: x && Z
+          [Chunk664688.scrollMaskLeft]: x && Z,
+          [Chunk664688.scrollMaskRight]: x && A
         }),
         orientation: "horizontal",
         onScroll: Chunk592125,

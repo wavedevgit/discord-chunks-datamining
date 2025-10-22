@@ -37,8 +37,8 @@ function T(e) {
     P = (0, s.e7)([O.Z], () => O.Z.getGuildId()),
     j = (0, s.e7)([E.Z], () => E.Z.getChannelId()),
     x = (0, s.e7)([b.Z], () => b.Z.getChannel(j), [j]),
-    A = null != P ? P : null == x ? true : x.guild_id,
-    Z = (0, s.e7)([_.Z], () => _.Z.getGuild(A), [A]),
+    Z = null != P ? P : null == x ? true : x.guild_id,
+    A = (0, s.e7)([_.Z], () => _.Z.getGuild(Z), [Z]),
     w = (0, p.Z)(),
     L = (0, g.D)(),
     {
@@ -71,14 +71,14 @@ function T(e) {
     draggable: false
   })) : L ? (t = C.intl.string(C.t.HcoRu0), G = (0, r.jsx)(c.Dkj, {
     size: R
-  })) : null != Z ? (G = w ? (0, r.jsx)(c.r7p, {
+  })) : null != A ? (G = w ? (0, r.jsx)(c.r7p, {
     size: R
   }) : (0, r.jsx)(h.Z, {
-    guild: Z,
+    guild: A,
     size: D,
     active: true,
     className: N.guildIcon
-  }), t = Z.name) : null != x && (x.isDM() || x.isGroupDM()) ? (t = C.intl.string(C.t.YUU0RF), G = (0, r.jsx)(c.gw7, {
+  }), t = A.name) : null != x && (x.isDM() || x.isGroupDM()) ? (t = C.intl.string(C.t.YUU0RF), G = (0, r.jsx)(c.gw7, {
     size: R
   })) : T.pathname.startsWith(y.Z5c.GLOBAL_DISCOVERY) ? (t = C.intl.string(C.t["4nEZLk"]), G = (0, r.jsx)(c.Jmo, {
     size: R

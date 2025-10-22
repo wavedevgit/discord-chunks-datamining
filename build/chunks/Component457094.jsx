@@ -260,7 +260,7 @@ let ta = [{
     } = e, {
       id: n
     } = t.params;
-    return (0, K.h)(() => (0, eZ.openUserProfileModal)({
+    return (0, K.h)(() => (0, eA.openUserProfileModal)({
       userId: n,
       sourceAnalyticsLocations: [S.Z.URI_SCHEME]
     })), (0, r.jsx)(a.l_, {

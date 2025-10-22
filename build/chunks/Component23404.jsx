@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 23404, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => Z
+  Z: () => A
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -81,12 +81,12 @@ function x(e) {
   })
 }
 
-function A(e) {
+function Z(e) {
   var t, n, l;
   let {
     nodeRef: c,
     quest: b
-  } = e, _ = (0, u.O5)(), E = (0, o.e7)([h.Z], () => h.Z.isEnrolling(b.id), [b]), [N, A] = i.useState(false), Z = i.useCallback(() => A(true), []), w = i.useCallback(() => A(false), []), {
+  } = e, _ = (0, u.O5)(), E = (0, o.e7)([h.Z], () => h.Z.isEnrolling(b.id), [b]), [N, Z] = i.useState(false), A = i.useCallback(() => Z(true), []), w = i.useCallback(() => Z(false), []), {
     launchInGameActivity: L
   } = (0, f.zB)(b), R = i.useCallback(e => {
     e.stopPropagation()
@@ -138,8 +138,8 @@ function A(e) {
     }),
     onClick: R,
     onKeyPress: R,
-    onFocus: Z,
-    onMouseEnter: Z,
+    onFocus: A,
+    onMouseEnter: A,
     onBlur: w,
     onMouseLeave: w,
     children: [(0, r.jsxs)("div", {
@@ -225,12 +225,12 @@ function A(e) {
     })]
   })
 }
-let Z = function(e) {
+let A = function(e) {
   return (0, r.jsx)(E.A, {
     questOrQuests: e.quest,
     questContent: g.jn.ACTIVITY_PANEL,
     sourceQuestContent: g.jn.ACTIVITY_PANEL,
-    children: t => (0, r.jsx)(A, j({
+    children: t => (0, r.jsx)(Z, j({
       nodeRef: t
     }, e))
   })

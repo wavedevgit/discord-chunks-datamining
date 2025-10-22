@@ -41,8 +41,8 @@ function C() {
     j = !Chunk128449.MU.has(N),
     {
       searchQuery: x,
-      onSearchTextChange: A,
-      onClearSearch: Z,
+      onSearchTextChange: Z,
+      onClearSearch: A,
       onSearchSubmit: w,
       isSearchVisible: L
     } = (0, Chunk28494.H)({
@@ -64,8 +64,8 @@ function C() {
     }),
     G = Chunk164991.Z.useField("fetchedQuery"),
     B = Chunk647438.useCallback(e => {
-      T(e), L && Z()
-    }, [L, Z, T]),
+      T(e), L && A()
+    }, [L, A, T]),
     H = Chunk647438.useMemo(() => L ? S.filter(e => {
       let {
         id: t
@@ -96,7 +96,7 @@ function C() {
         scrollPosition: require
       }), L ? (0, Chunk951288.jsx)(Chunk611928.Cm, {
         icon: Chunk481060.j9r,
-        onClick: Z
+        onClick: A
       }) : (0, Chunk951288.jsx)(Chunk611928.aV, {
         icon: Chunk481060.QTo
       }), !L && (0, Chunk951288.jsx)(c.Z, {
@@ -115,8 +115,8 @@ function C() {
       }), j && (0, Chunk951288.jsx)(Chunk680180.Z, {
         query: x,
         placeholder: Chunk388032.intl.string(Chunk388032.t["5h0QOP"]),
-        onTextChange: A,
-        onClear: Z,
+        onTextChange: Z,
+        onClear: A,
         onSubmit: w,
         onCollapsedClick: M,
         state: L ? Chunk49898.GlobalDiscoverySearchBarState.DEFAULT : R,
