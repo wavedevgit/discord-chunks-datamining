@@ -14,7 +14,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk442550 = require("./442550.jsx"),
   Chunk264832 = require("./264832.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk255332 = require("./255332.js");
+  Chunk867075 = require("./867075.js");
 
 function f(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -56,8 +56,8 @@ function h(e, t) {
 }
 let m = {
   none: true,
-  default: Chunk255332.aspectRatio,
-  crunchyroll: a()(Chunk255332.aspectRatio, Chunk255332.crunchyroll)
+  default: Chunk867075.aspectRatio,
+  crunchyroll: a()(Chunk867075.aspectRatio, Chunk867075.crunchyroll)
 };
 var g = function(e) {
   return e.SIZE_60 = "size-60", e.SIZE_72 = "size-72", e.SIZE_100 = "size-100", e

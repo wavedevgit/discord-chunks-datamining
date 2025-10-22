@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk656649 = require("./656649.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk130560 = require("./130560.js");
+  Chunk339166 = require("./339166.js");
 let S = null != window.opener;
 
 function m() {
@@ -43,7 +43,7 @@ function m() {
     k = null == Chunk536285 ? null != Chunk481060 ? Chunk481060 : "" : Chunk536285;
   Chunk647438.useEffect(() => {
     let e;
-    if (null != Chunk130560) return;
+    if (null != Chunk339166) return;
     for (let t of Chunk755721.keys()) exports.startsWith("openid.") && (null == module && (e = {}), module[exports] = Chunk755721.get(exports));
     let t = (0, Chunk656649.vJ)(w);
     !async function() {
@@ -87,7 +87,7 @@ function m() {
         iss: m
       })
     }()
-  }, [k, require, Chunk130560, w, Chunk755721, Chunk388032, m]), Chunk647438.useEffect(() => {
+  }, [k, require, Chunk339166, w, Chunk755721, Chunk388032, m]), Chunk647438.useEffect(() => {
     let e;
     if (!A) return;
     let t = 0;

@@ -18,7 +18,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk332325 = require("./332325.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk830260 = require("./830260.js");
+  Chunk15759 = require("./15759.js");
 
 function g() {
   let e = (0, Chunk326528.b)(),
@@ -31,12 +31,12 @@ function g() {
       switch (require) {
         case Chunk332325.Z.CLIPS:
           return (0, Chunk951288.jsx)(Chunk574755.Z, {
-            className: Chunk830260.body,
+            className: Chunk15759.body,
             showHeader: false
           });
         case Chunk332325.Z.OVERLAY:
           return (0, Chunk951288.jsx)(Chunk327885.Z, {
-            className: Chunk830260.body,
+            className: Chunk15759.body,
             showHeader: false
           });
         case Chunk332325.Z.ACTIVITY_PRIVACY:
@@ -44,18 +44,18 @@ function g() {
         case Chunk332325.Z.MY_GAMES:
         default:
           return (0, Chunk951288.jsx)(Chunk293389.Z, {
-            className: Chunk830260.body,
+            className: Chunk15759.body,
             showHeader: false
           })
       }
     };
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
-      className: Chunk830260.heading,
+      className: Chunk15759.heading,
       variant: "heading-xl/semibold",
       children: Chunk388032.intl.string(Chunk388032.t.URyqtP)
     }), (0, Chunk951288.jsx)(Chunk481060.njP, {
-      className: Chunk830260.tabBar,
+      className: Chunk15759.tabBar,
       selectedItem: require,
       onItemSelect: g,
       orientation: "horizontal",

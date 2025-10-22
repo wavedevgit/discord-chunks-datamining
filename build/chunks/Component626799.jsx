@@ -27,7 +27,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk73346 = require("./73346.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk550125 = require("./550125.js");
+  Chunk350003 = require("./350003.js");
 
 function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -91,7 +91,7 @@ class w extends(r = Chunk647438.Component) {
   renderViewInStoreButton() {
     return (0, Chunk951288.jsx)(Chunk755721.zx.Link, {
       to: this.getStoreListingLocation(),
-      className: Chunk550125.actionButton,
+      className: Chunk350003.actionButton,
       color: Chunk755721.zx.Colors.GREEN,
       size: Chunk755721.zx.Sizes.SMALL,
       children: Chunk388032.intl.string(Chunk388032.t["W+NB90"])

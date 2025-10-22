@@ -14,7 +14,7 @@ var Chunk915009 = require("./915009.js"),
   Chunk726985 = require("./726985.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk660886 = require("./660886.js");
+  Chunk893102 = require("./893102.js");
 
 function _() {
   let e = Chunk695346.JT.useSetting(),
@@ -30,7 +30,7 @@ function _() {
       value: !module,
       onChange: e => o.JT.updateSetting(!e),
       disabled: exports || require,
-      tooltipText: require ? Chunk388032.intl.string(Chunk660886.default["6Af/cw"]) : true
+      tooltipText: require ? Chunk388032.intl.string(Chunk893102.default["6Af/cw"]) : true
     })
   })
 }

@@ -21,7 +21,7 @@ let r = e => {
     handleRightClick: e => (0, s.jW)(e, async () => {
       let {
         default: e
-      } = await Promise.all([n.e("89250"), n.e("32555")]).then(n.bind(n, 422200));
+      } = await Promise.all([n.e("89250"), n.e("44514")]).then(n.bind(n, 422200));
       return t => {
         var n, l;
         return (0, a.jsx)(e, (n = function(e) {

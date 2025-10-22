@@ -18,7 +18,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk944486 = require("./944486.js"),
   Chunk594174 = require("./594174.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk204427 = require("./204427.js");
+  Chunk774185 = require("./774185.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -57,13 +57,13 @@ let y = new b(Chunk570140.Z, {}),
     null != exports && exports.isPrivate() && (E.has(exports.getRecipientId()) || (E.add(exports.getRecipientId()), y.emitChange()))
   },
   I = () => (0, Chunk951288.jsxs)("div", {
-    className: Chunk204427.replyBar,
+    className: Chunk774185.replyBar,
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/medium",
-      className: o()(Chunk204427.text, Chunk204427.replyLabel),
+      className: o()(Chunk774185.text, Chunk774185.replyLabel),
       children: Chunk388032.intl.string(Chunk388032.t["2UvR1E"])
     }), (0, Chunk951288.jsx)("div", {
-      className: Chunk204427.actions,
+      className: Chunk774185.actions,
       children: (0, Chunk951288.jsx)(Chunk962293.B, {
         onClick: v
       })

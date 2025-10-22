@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
   Chunk5888 = require("./5888.js"),
   Chunk198358 = require("./198358.jsx"),
-  Chunk124798 = require("./124798.js"),
+  Chunk459464 = require("./459464.js"),
   Chunk388032 = require("./388032.jsx");
 
 function o() {
@@ -22,7 +22,7 @@ function o() {
     children: [module >= 1e3 ? (0, Chunk951288.jsx)(Chunk793030.xvT, {
       variant: "display-sm",
       color: "text-primary",
-      children: Chunk388032.intl.format(Chunk124798.default.Xu0QsX, {
+      children: Chunk388032.intl.format(Chunk459464.default.Xu0QsX, {
         numHours: Math.floor(module / 60),
         hoursHook: (i, t) => (0, e.jsx)(n.xvT, {
           variant: "display-lg",
@@ -33,7 +33,7 @@ function o() {
     }) : (0, Chunk951288.jsx)(Chunk793030.xvT, {
       variant: "display-sm",
       color: "text-primary",
-      children: Chunk388032.intl.format(Chunk124798.default.UZbUtl, {
+      children: Chunk388032.intl.format(Chunk459464.default.UZbUtl, {
         numMinutes: Math.floor(module),
         minutesHook: (i, t) => (0, e.jsx)(n.xvT, {
           variant: "display-lg",
@@ -44,7 +44,7 @@ function o() {
     }), (0, Chunk951288.jsx)(Chunk793030.xvT, {
       variant: "display-sm",
       color: "text-primary",
-      children: Chunk388032.intl.format(Chunk124798.default["36PZwu"], {
+      children: Chunk388032.intl.format(Chunk459464.default["36PZwu"], {
         percent: exports
       })
     })]

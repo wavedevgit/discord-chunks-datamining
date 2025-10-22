@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk987650 = require("./987650.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk264815 = require("./264815.js");
+  Chunk283043 = require("./283043.js");
 let g = Object.values(Chunk987650.wF).map(e => 100 * e),
   m = (0, Chunk313201.hQ)();
 class y extends Chunk647438.PureComponent {
@@ -29,9 +29,9 @@ class y extends Chunk647438.PureComponent {
   }
   render() {
     return (0, Chunk951288.jsx)("div", {
-      className: Chunk264815.container,
+      className: Chunk283043.container,
       children: (0, Chunk951288.jsx)("div", {
-        className: Chunk264815.sliderContainer,
+        className: Chunk283043.sliderContainer,
         children: (0, Chunk951288.jsx)(Chunk481060.iRW, {
           label: Chunk388032.intl.string(Chunk388032.t.OVovCb),
           mini: true,

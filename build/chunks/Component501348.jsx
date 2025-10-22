@@ -46,8 +46,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk921944 = require("./921944.js"),
   Chunk959517 = require("./959517.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk226518 = require("./226518.js"),
-  Chunk197571 = require("./197571.js");
+  Chunk5874 = require("./5874.js"),
+  Chunk10198 = require("./10198.js");
 
 function K(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -127,15 +127,15 @@ let Q = "cozy",
     }))]
   },
   er = () => (0, Chunk951288.jsxs)("div", {
-    className: Chunk226518.themeTitle,
+    className: Chunk5874.themeTitle,
     children: [(0, Chunk951288.jsxs)("div", {
-      className: Chunk226518.themeTitleContainer,
+      className: Chunk5874.themeTitleContainer,
       children: [(0, Chunk951288.jsx)("div", {
-        className: Chunk226518.title,
+        className: Chunk5874.title,
         children: Chunk388032.intl.string(Chunk388032.t["0EzVst"])
       }), (0, Chunk951288.jsx)(Chunk481060.R94, {
         type: Chunk481060.R94.Types.DESCRIPTION,
-        className: Chunk226518.subtext,
+        className: Chunk5874.subtext,
         children: Chunk388032.intl.string(Chunk388032.t.PV3dGX)
       })]
     }), (0, Chunk951288.jsx)(Chunk329013.g, {})]
@@ -206,7 +206,7 @@ class ea extends Chunk647438.Component {
     } = this.props, a = (0, Chunk780384.wj)(exports) ? this.darkMessages : this.lightMessages;
     return (0, Chunk951288.jsx)(Chunk481060.Rny, {
       children: (0, Chunk951288.jsx)(Chunk481060.Zbd, {
-        className: o()(Chunk226518.preview, Chunk197571.marginBottom40, module ? Chunk226518.compactPreview : true, "group-spacing-".concat(null != require ? require : module ? Chunk959517.c8 : Chunk959517.pq)),
+        className: o()(Chunk5874.preview, Chunk10198.marginBottom40, module ? Chunk5874.compactPreview : true, "group-spacing-".concat(null != require ? require : module ? Chunk959517.c8 : Chunk959517.pq)),
         outline: true,
         "aria-hidden": true,
         children: Chunk120356.map((t, n) => (0, r.jsx)(C.Z, {
@@ -314,7 +314,7 @@ class ea extends Chunk647438.Component {
         }),
         value: module
       }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
-        className: Chunk226518.divider
+        className: Chunk5874.divider
       })]
     }), o = (0, Chunk951288.jsxs)(Chunk921801.F, {
       setting: Chunk726985.s6.APPEARANCE_MESSAGE_DISPLAY_COMPACT,
@@ -341,7 +341,7 @@ class ea extends Chunk647438.Component {
           onChange: e => this.handleDisplayCompactAvatarsChanged(!e)
         }), this.renderMessageGroupSpacingSlider()]
       }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
-        className: Chunk226518.divider
+        className: Chunk5874.divider
       })]
     }), s = (0, Chunk951288.jsxs)(Chunk921801.F, {
       setting: Chunk726985.s6.APPEARANCE_SCALING_SPACING,
@@ -349,14 +349,14 @@ class ea extends Chunk647438.Component {
         label: Chunk388032.intl.string(Chunk388032.t["0Yh+ZX"]),
         children: [this.renderFontScaleSlider(), this.renderZoomSlider()]
       }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
-        className: Chunk226518.divider
+        className: Chunk5874.divider
       })]
     }), l = (0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.APPEARANCE_TIMESTAMP_HOUR_CYCLE,
       children: this.renderTimestampHourCycle()
     }), u = (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/normal",
-      className: Chunk226518.a11yCallout,
+      className: Chunk5874.a11yCallout,
       children: (0, Chunk951288.jsx)(ei, {})
     });
     return (0, Chunk951288.jsxs)(Chunk273313.Z, {

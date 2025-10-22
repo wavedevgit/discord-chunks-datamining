@@ -1,5 +1,5 @@
-/** Chunk was on 60565 **/
-/** chunk id: 215157, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 99229 **/
+/** chunk id: 215157, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Q: () => m
 }), require("./781311.js"), require("./413496.js"), require("./433524.js"), require("./35282.js");
@@ -13,39 +13,39 @@ var Chunk647438 = require("./647438.js"),
   Chunk605436 = require("./605436.js"),
   Chunk71080 = require("./71080.js");
 
-function s(e) {
+function _(e) {
   let t = e.trim();
   return "@" === t[0] ? t.slice(1) : t
 }
 
-function b(e, t) {
-  let r = s(e);
-  return RegExp("".concat(c.Z.escape(r)), "i").test(t)
+function p(e, t) {
+  let n = _(e);
+  return RegExp("".concat(c.Z.escape(n)), "i").test(t)
 }
 
-function m(e, t, r, c) {
+function m(e, t, n, c) {
   let m = arguments.length > 4 && true !== arguments[4] ? arguments[4] : null != t && t.isGuildStageVoice(),
-    p = (0, n.e7)([i.Z], () => null != e ? i.Z.getSortedRoles(e.id) : []),
-    h = (0, n.Wu)([a.ZP], () => null != e ? a.ZP.getMemberIds(e.id) : []),
-    f = o.useMemo(() => {
+    b = (0, r.e7)([a.Z], () => null != e ? a.Z.getSortedRoles(e.id) : []),
+    h = (0, r.Wu)([o.ZP], () => null != e ? o.ZP.getMemberIds(e.id) : []),
+    g = i.useMemo(() => {
       if (null == e || "@" === c[0]) return [];
-      if (m) return u.Wx(e, p, null != t ? t : null, r, e => b(c, e));
-      let o = u.ik(e, p, null != t ? t : null, r, e => b(c, e));
-      return 0 === o.length && "" === c.trim() && 1 === p.length && (o = u.aq()), o
-    }, [p, c, e, t, r, m]),
-    g = o.useMemo(() => null == e ? [] : u.iI(h, null != t ? t : null, e, r, e => b(c, e)), [h, c, e, t, r]);
-  return o.useEffect(() => {
-    null != e && _.Z.requestMembers(e.id, s(c), d.EQ)
+      if (m) return d.Wx(e, b, null != t ? t : null, n, e => p(c, e));
+      let i = d.ik(e, b, null != t ? t : null, n, e => p(c, e));
+      return 0 === i.length && "" === c.trim() && 1 === b.length && (i = d.aq()), i
+    }, [b, c, e, t, n, m]),
+    f = i.useMemo(() => null == e ? [] : d.iI(h, null != t ? t : null, e, n, e => p(c, e)), [h, c, e, t, n]);
+  return i.useEffect(() => {
+    null != e && s.Z.requestMembers(e.id, _(c), u.EQ)
   }, [c, e]), {
-    roles: f,
-    members: g,
-    getRichTag: o.useCallback(e => {
+    roles: g,
+    members: f,
+    getRichTag: i.useCallback(e => {
       let t = null;
-      return e.rowType === d.aC.ROLE || e.rowType === d.aC.ADMINISTRATOR ? t = {
+      return e.rowType === u.aC.ROLE || e.rowType === u.aC.ADMINISTRATOR ? t = {
         type: l.F.ROLE,
         label: e.name,
         color: e.colorString
-      } : (e.rowType === d.aC.MEMBER || e.rowType === d.aC.OWNER) && (t = {
+      } : (e.rowType === u.aC.MEMBER || e.rowType === u.aC.OWNER) && (t = {
         type: l.F.MEMBER,
         label: e.name,
         avatar: e.avatarURL
