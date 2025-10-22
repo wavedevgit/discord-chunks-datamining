@@ -81,7 +81,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk610674 = require("./610674.js"),
   Chunk65154 = require("./65154.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk522488 = require("./522488.js");
+  Chunk50953 = require("./50953.js");
 
 function eA(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -427,7 +427,7 @@ let eZ = Chunk647438.memo(function() {
           noticeType: Chunk981631.kVF.SPOTIFY_AUTO_PAUSED
         }), (0, Chunk951288.jsx)("img", {
           alt: "",
-          className: Chunk522488.platformIcon,
+          className: Chunk50953.platformIcon,
           src: e$.icon.whiteSVG
         }), Chunk388032.intl.string(Chunk388032.t.D8Cp76), (0, Chunk951288.jsx)(Chunk481060.NoS, {
           onClick: () => (0, Chunk518596.openUserSettings)(Chunk313789.n.VOICE_AND_VIDEO_PANEL, {
@@ -436,7 +436,7 @@ let eZ = Chunk647438.memo(function() {
           noticeType: Chunk981631.kVF.SPOTIFY_AUTO_PAUSED,
           children: Chunk388032.intl.string(Chunk388032.t.NiTd0e)
         }), (0, Chunk951288.jsx)(Chunk481060.Anchor, {
-          className: Chunk522488.textLinkSmall,
+          className: Chunk50953.textLinkSmall,
           href: Chunk63063.Z.getArticleURL(Chunk981631.BhN.SPOTIFY_AUTO_PAUSED),
           target: "_blank",
           children: Chunk388032.intl.string(Chunk388032.t.CiqAIU)
@@ -560,7 +560,7 @@ let eZ = Chunk647438.memo(function() {
         }), (0, Chunk951288.jsx)(Chunk481060.SrA, {
           size: "md",
           color: "currentColor",
-          className: Chunk522488.premiumIcon
+          className: Chunk50953.premiumIcon
         }), Chunk388032.intl.format(Chunk388032.t["g3MU/+"], {
           applicationName: e8.name,
           skuName: e4.name
@@ -599,7 +599,7 @@ let eZ = Chunk647438.memo(function() {
         }), (0, Chunk951288.jsx)(Chunk481060.SrA, {
           size: "md",
           color: "currentColor",
-          className: Chunk522488.premiumIcon
+          className: Chunk50953.premiumIcon
         }), Chunk388032.intl.format(Chunk388032.t.LquIKC, {
           applicationName: Chunk647438.name,
           skuName: require.name
@@ -714,7 +714,7 @@ let eZ = Chunk647438.memo(function() {
             total: e9
           }), (0, Chunk951288.jsx)(Chunk481060.$jN, {
             type: Chunk481060.$jN.Type.PULSING_ELLIPSIS,
-            className: Chunk522488.ellipsis
+            className: Chunk50953.ellipsis
           })]
         })]
       });
@@ -746,7 +746,7 @@ let eZ = Chunk647438.memo(function() {
             })
           }), (0, Chunk951288.jsx)(Chunk69499.Z, {
             dropdownSize: Chunk69499.E.DropdownSizes.SMALL,
-            className: Chunk522488.testModeSKUSelector,
+            className: Chunk50953.testModeSKUSelector,
             color: Chunk69499.E.Colors.WHITE,
             look: Chunk69499.E.Looks.OUTLINED,
             size: Chunk69499.E.Sizes.MIN,
@@ -779,7 +779,7 @@ let eZ = Chunk647438.memo(function() {
         }), (0, Chunk951288.jsx)(Chunk481060.SrA, {
           size: "md",
           color: "currentColor",
-          className: Chunk522488.premiumIcon
+          className: Chunk50953.premiumIcon
         }), ez === Chunk474936.PremiumTypes.TIER_1 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.fXv4wm, {
           daysLeft: Chunk100527.metadata.daysLeft
         }) : ez === Chunk474936.PremiumTypes.TIER_0 ? Chunk388032.intl.formatToPlainString(Chunk388032.t.ZOHZMr, {
@@ -793,7 +793,7 @@ let eZ = Chunk647438.memo(function() {
             eG(null == (t = Chunk100527.metadata) || null == (e = exports.premiumSubscription) ? true : module.currentPeriodEnd), (0, Chunk481060.ZDy)(async () => {
               let {
                 default: e
-              } = await Promise.all([require.e("17938"), require.e("84992"), require.e("12222")]).then(require.bind(require, 561623));
+              } = await Promise.all([require.e("17938"), require.e("84992"), require.e("11394")]).then(require.bind(require, 561623));
               return t => (0, r.jsx)(e, eR(eC({}, t), {
                 daysLeft: T.metadata.daysLeft,
                 premiumType: ez,
@@ -916,7 +916,7 @@ let eZ = Chunk647438.memo(function() {
         }), (0, Chunk951288.jsx)(Chunk481060.Anchor, {
           href: Chunk63063.Z.getArticleURL(Chunk981631.BhN.QUARANTINE),
           target: "_blank",
-          className: Chunk522488.quarantineLearnMoreLink,
+          className: Chunk50953.quarantineLearnMoreLink,
           children: Chunk388032.intl.string(Chunk388032.t.hvVgAZ)
         })]
       });

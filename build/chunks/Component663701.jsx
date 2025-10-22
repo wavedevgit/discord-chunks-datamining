@@ -66,8 +66,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk474936 = require("./474936.js"),
   Chunk46140 = require("./46140.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk893102 = require("./893102.js"),
-  Chunk734306 = require("./734306.js");
+  Chunk660886 = require("./660886.js"),
+  Chunk686918 = require("./686918.js");
 
 function ef(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -225,7 +225,7 @@ let em = e => {
     }))
   },
   eE = () => (0, Chunk951288.jsx)("li", {
-    className: Chunk734306.createDMButtonContainer,
+    className: Chunk686918.createDMButtonContainer,
     children: (0, Chunk951288.jsx)(Chunk518311.l, {
       fullWidth: true,
       text: Chunk388032.intl.string(Chunk388032.t["6Urw1t"]),
@@ -320,12 +320,12 @@ let em = e => {
     })
   },
   eC = () => (0, Chunk951288.jsxs)("div", {
-    className: Chunk734306.directMessagesHeader,
+    className: Chunk686918.directMessagesHeader,
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/semibold",
       children: Chunk388032.intl.string(Chunk388032.t.YUU0RF)
     }), (0, Chunk951288.jsx)("div", {
-      className: Chunk734306.directMessagesButton,
+      className: Chunk686918.directMessagesButton,
       children: (0, Chunk951288.jsx)(Chunk518311.Z, {
         tooltip: Chunk388032.intl.string(Chunk388032.t["6Urw1t"]),
         location: "DirectMessagesHeader-CreateDMButton"
@@ -440,7 +440,7 @@ let eT = Chunk647438.memo(function(e) {
 
 function eP() {
   return (0, Chunk951288.jsx)("div", {
-    className: Chunk734306.sectionDivider
+    className: Chunk686918.sectionDivider
   })
 }
 

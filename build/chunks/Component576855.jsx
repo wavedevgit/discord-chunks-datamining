@@ -10,7 +10,7 @@ var r, Chunk951288 = require("./951288.js"),
   s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk25663 = require("./25663.js");
+  Chunk574657 = require("./574657.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -21,8 +21,8 @@ function d(e, t, n) {
   }) : e[t] = n, e
 }
 let f = {
-  BLOCK: Chunk25663.block,
-  INLINE: Chunk25663.inline
+  BLOCK: Chunk574657.block,
+  INLINE: Chunk574657.inline
 };
 class _ extends(r = Chunk647438.PureComponent) {
   render() {
@@ -40,10 +40,10 @@ class _ extends(r = Chunk647438.PureComponent) {
         variant: "text-sm/bold",
         tag: "div",
         color: "text-feedback-positive",
-        className: Chunk25663.pro,
+        className: Chunk574657.pro,
         children: [Chunk388032.intl.string(Chunk388032.t["8tvIiN"]), ":"]
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
-        className: s()(Chunk25663.tip, require),
+        className: s()(Chunk574657.tip, require),
         variant: "text-sm/normal",
         children: module
       })]

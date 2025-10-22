@@ -1,4 +1,4 @@
-/** Chunk was on 50776 **/
+/** Chunk was on 30437 **/
 /** chunk id: 819514, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Z
@@ -24,8 +24,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk294218 = require("./294218.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk877771 = require("./877771.js"),
-  Chunk421846 = require("./421846.js");
+  Chunk833540 = require("./833540.js"),
+  Chunk625221 = require("./625221.js");
 
 function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -91,10 +91,10 @@ class N extends Chunk647438.PureComponent {
       }(Chunk120356, ["channel", "message", "showContextMenuHint", "moderatorReportData"]),
       g = o.type === Chunk981631.d4z.GUILD_ANNOUNCEMENT && (0, Chunk630388.yE)(Chunk755721.flags, Chunk981631.iLy.CROSSPOSTED);
     Chunk332148 && (e = (0, Chunk951288.jsx)(Chunk576855.Z, {
-      className: Chunk421846.spacingTop,
+      className: Chunk625221.spacingTop,
       children: Chunk388032.intl.format(Chunk388032.t.IxY7E6, {})
     })), (0, Chunk970257.vc)(Chunk755721) && (t = (0, Chunk951288.jsx)("div", {
-      className: Chunk421846.spacingTop,
+      className: Chunk625221.spacingTop,
       children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
         label: Chunk388032.intl.string(Chunk388032.t.x0jzo9),
         checked: require,
@@ -104,7 +104,7 @@ class N extends Chunk647438.PureComponent {
     let m = Chunk726521 ? Chunk388032.intl.string(Chunk388032.t["2kHABX"]) : Chunk388032.intl.string(Chunk388032.t.AMvpS4),
       b = (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
         children: [(0, Chunk951288.jsx)("div", {
-          className: Chunk421846.message,
+          className: Chunk625221.message,
           children: (0, Chunk951288.jsx)(Chunk294218.Z, {
             channel: o,
             message: Chunk755721,
@@ -127,7 +127,7 @@ class N extends Chunk647438.PureComponent {
               direction: "vertical",
               justify: "space-between",
               children: [(0, Chunk951288.jsx)(Chunk481060.olH, {
-                className: Chunk421846.closeButton,
+                className: Chunk625221.closeButton,
                 onClick: Chunk933557.onClose
               }), (0, Chunk951288.jsx)(Chunk481060.Heading, {
                 variant: "heading-xl/bold",
@@ -137,7 +137,7 @@ class N extends Chunk647438.PureComponent {
           }), (0, Chunk951288.jsxs)(Chunk481060.hzk, {
             children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
               variant: "heading-md/medium",
-              className: Chunk421846.spacing,
+              className: Chunk625221.spacing,
               children: Chunk501517
             }), Chunk699516]
           }), (0, Chunk951288.jsxs)(Chunk481060.mzw, {
@@ -149,7 +149,7 @@ class N extends Chunk647438.PureComponent {
               onClick: this.handleDelete
             }), !module && (0, Chunk951288.jsx)(Chunk481060.Checkbox, {
               checked: Chunk647438,
-              label: Chunk388032.intl.string(Chunk877771.default["8yIKem"]),
+              label: Chunk388032.intl.string(Chunk833540.default["8yIKem"]),
               onChange: e => this.handleToggleResolveFlag(e)
             })]
           })]

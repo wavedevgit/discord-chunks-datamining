@@ -38,7 +38,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk661462 = require("./661462.jsx"),
   Chunk795990 = require("./795990.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk479283 = require("./479283.js");
+  Chunk830202 = require("./830202.js");
 
 function G(e) {
   for (var t = 1; t < arguments.length; t++) {
@@ -88,7 +88,7 @@ function M(e) {
 
 function F() {
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk479283.ukTeenDisclaimer,
+    className: Chunk830202.ukTeenDisclaimer,
     children: [(0, Chunk951288.jsx)(Chunk481060.d3s, {
       size: "xs"
     }), (0, Chunk951288.jsx)(Chunk481060.Text, {

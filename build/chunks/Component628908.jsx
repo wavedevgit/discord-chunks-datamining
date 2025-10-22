@@ -20,7 +20,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk63063 = require("./63063.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk255063 = require("./255063.js");
+  Chunk505198 = require("./505198.js");
 
 function y(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -113,7 +113,7 @@ class P extends Chunk647438.PureComponent {
       text: Chunk388032.intl.string(Chunk388032.t.okgGTu),
       children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-md/normal",
-        className: Chunk255063.sectionBody,
+        className: Chunk505198.sectionBody,
         children: Chunk388032.intl.format(Chunk388032.t.OeGXVv, {
           learnMoreLink: Chunk63063.Z.getArticleURL(Chunk981631.BhN.SETTING_UP_TWO_FACTOR)
         })
@@ -186,12 +186,12 @@ class P extends Chunk647438.PureComponent {
     } = this.state;
     return (0, Chunk951288.jsxs)(Chunk481060.Y0X, {
       transitionState: module,
-      className: Chunk255063.modal,
+      className: Chunk505198.modal,
       parentComponent: "MFAEnableSuccess",
       children: [this.renderHeader(Chunk388032.intl.string(Chunk388032.t["681MPV"]), Chunk388032.intl.format(Chunk388032.t["/Nhi8R"], {})), (0, Chunk951288.jsxs)(Chunk481060.hzk, {
-        className: Chunk255063.modalInner,
+        className: Chunk505198.modalInner,
         children: [this.renderPasskeyCTASection(), (0, Chunk951288.jsx)(Chunk481060.izJ, {
-          className: Chunk255063.divider
+          className: Chunk505198.divider
         }), this.renderBackupCodesSection(Chunk388032.intl.format(Chunk388032.t.M0Dogh, {}))]
       }), exports && this.renderConfirmModal(Chunk388032.intl.string(Chunk388032.t.WJFPHJ))]
     })
@@ -204,10 +204,10 @@ class P extends Chunk647438.PureComponent {
     } = this.state;
     return (0, Chunk951288.jsxs)(Chunk481060.Y0X, {
       transitionState: module,
-      className: Chunk255063.modal,
+      className: Chunk505198.modal,
       parentComponent: "MFAEnableSuccess",
       children: [this.renderHeader(Chunk388032.intl.string(Chunk388032.t.x6ielD), Chunk388032.intl.format(Chunk388032.t["/Nhi8R"], {})), (0, Chunk951288.jsx)(Chunk481060.hzk, {
-        className: Chunk255063.modalInner,
+        className: Chunk505198.modalInner,
         children: this.renderBackupCodesSection(Chunk388032.intl.format(Chunk388032.t.p59QLQ, {}))
       }), exports && this.renderConfirmModal(Chunk388032.intl.string(Chunk388032.t.aoNIXB))]
     })

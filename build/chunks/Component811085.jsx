@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk959562 = require("./959562.jsx"),
   Chunk800530 = require("./800530.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk987086 = require("./987086.js");
+  Chunk498714 = require("./498714.js");
 let m = 36;
 
 function g() {
@@ -89,18 +89,18 @@ function g() {
     } = y[module.state],
     S = Object.keys(y).length;
   return (0, Chunk951288.jsxs)(Chunk481060.Zbd, {
-    className: Chunk987086.container,
+    className: Chunk498714.container,
     outline: false,
     children: [(0, Chunk951288.jsx)("div", {
-      className: Chunk987086.profile,
+      className: Chunk498714.profile,
       children: (0, Chunk951288.jsx)(Chunk959562.Z, {
         user: exports,
         size: Chunk481060.EFr.SIZE_80
       })
     }), (0, Chunk951288.jsxs)("div", {
-      className: Chunk987086.status,
+      className: Chunk498714.status,
       children: [(0, Chunk951288.jsxs)("div", {
-        className: Chunk987086.title,
+        className: Chunk498714.title,
         children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
           color: "header-primary",
           variant: "heading-lg/normal",
@@ -120,12 +120,12 @@ function g() {
           children: v
         })]
       }), (0, Chunk951288.jsxs)("div", {
-        className: Chunk987086.health,
+        className: Chunk498714.health,
         style: {
           height: require
         },
         children: [(0, Chunk951288.jsx)("div", {
-          className: Chunk987086.line
+          className: Chunk498714.line
         }), Object.entries(y).map((t, n) => {
           let [i, a] = t, o = parseInt(i) === e.state;
           return (0, r.jsxs)("div", {

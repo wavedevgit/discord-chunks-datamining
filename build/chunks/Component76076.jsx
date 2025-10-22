@@ -14,8 +14,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk872269 = require("./872269.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk214906 = require("./214906.js"),
-  Chunk74866 = require("./74866.js");
+  Chunk361623 = require("./361623.js"),
+  Chunk583140 = require("./583140.js");
 let h = {
     [Chunk228168.qb.WIDGET_ADDED]: {
       message: Chunk388032.intl.string(Chunk388032.t.fFP1Uy),

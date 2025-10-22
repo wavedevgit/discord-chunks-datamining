@@ -20,7 +20,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk77247 = require("./77247.js");
+  Chunk980676 = require("./980676.js");
 let b = () => {
     (0, Chunk550385.XO)(Chunk550385.wh.APP_ICON), (0, Chunk342386.default)()
   },
@@ -35,7 +35,7 @@ let b = () => {
       })
     });
     let n = () => (0, Chunk951288.jsxs)("div", {
-      className: Chunk77247.tryItOutButtons,
+      className: Chunk980676.tryItOutButtons,
       children: [(0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: exports ? "secondary" : "primary",
         text: Chunk388032.intl.string(Chunk388032.t["hb/wE0"]),
@@ -51,12 +51,12 @@ let b = () => {
       }) : null]
     });
     return (0, Chunk951288.jsxs)("div", {
-      className: Chunk77247.selectionGroup,
+      className: Chunk980676.selectionGroup,
       children: [(0, Chunk951288.jsx)(Chunk539873.Z, {
         disabled: exports,
         renderCTAButtons: require
       }), (0, Chunk951288.jsx)(Chunk481060.izJ, {
-        className: Chunk77247.divider
+        className: Chunk980676.divider
       })]
     })
   }

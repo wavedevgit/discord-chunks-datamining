@@ -1,4 +1,4 @@
-/** Chunk was on 33840 **/
+/** Chunk was on 47863 **/
 /** chunk id: 152708, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -8,7 +8,7 @@ var r, i, Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk600164 = require("./600164.jsx"),
-  Chunk450733 = require("./450733.js");
+  Chunk152573 = require("./152573.js");
 
 function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -45,7 +45,7 @@ class p extends(i = Chunk647438.PureComponent) {
       className: e
     } = this.props;
     return (0, Chunk951288.jsx)(Chunk600164.Z, {
-      className: a()(module, Chunk450733.grid),
+      className: a()(module, Chunk152573.grid),
       wrap: Chunk600164.Z.Wrap.WRAP,
       children: this.renderChildren()
     })

@@ -55,7 +55,7 @@ function c(e) {
   (0, l.Lb)(t.channel_id, t.id, c), (0, r.ZDy)(async () => {
     let {
       ForwardModal: e
-    } = await Promise.all([n.e("36653"), n.e("8818")]).then(n.bind(n, 930864));
+    } = await Promise.all([n.e("36653"), n.e("9797")]).then(n.bind(n, 930864));
     return n => (0, i.jsx)(e, o(a({}, n), {
       message: t,
       initialSelectedDestinations: u,

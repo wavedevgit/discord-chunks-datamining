@@ -1,8 +1,32 @@
-/** Chunk was on 91792 **/
-/** chunk id: 572002, original params: e,t,n (module,exports,require) **/
-module.exports = {
-  list: "list_c441f0",
-  activeThreadsList: "activeThreadsList_c441f0",
-  sectionHeader: "sectionHeader_c441f0",
-  spinner: "spinner_c441f0"
+/** Chunk was on 82821 **/
+/** chunk id: 572002, original params: e,r,t (module,exports,require) **/
+"use strict";
+require("./864733.js")(exports, "__esModule", {
+  value: true
+}), exports.default = true, exports.default = {
+  abstract: false,
+  accessibleNameRequired: true,
+  baseConcepts: [],
+  childrenPresentational: true,
+  nameFrom: ["author"],
+  prohibitedProps: [],
+  props: {
+    "aria-errormessage": null,
+    "aria-expanded": null,
+    "aria-haspopup": null,
+    "aria-invalid": null
+  },
+  relatedConcepts: [{
+    concept: {
+      name: "pagebreak [EPUB-SSV]"
+    },
+    module: "EPUB"
+  }],
+  requireContextRole: [],
+  requiredContextRole: [],
+  requiredOwnedElements: [],
+  requiredProps: {},
+  superClass: [
+    ["roletype", "structure", "separator"]
+  ]
 }

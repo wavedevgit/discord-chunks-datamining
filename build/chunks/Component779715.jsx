@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk270759 = require("./270759.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk194783 = require("./194783.js");
+  Chunk236202 = require("./236202.js");
 let E = function() {
   Chunk647438.useEffect(() => {
     Chunk150063.Y(Chunk981631.Z5c.ME_ACTIVITY), (0, Chunk108427.e)("activity"), Chunk626135.default.track(Chunk981631.rMx.ACTIVITY_FEED_VIEWED, {})
@@ -26,7 +26,7 @@ let E = function() {
   let e = (0, Chunk442837.e7)([Chunk210887.Z], () => Chunk210887.Z.theme),
     t = (0, Chunk313201.Dt)();
   return (0, Chunk951288.jsxs)("main", {
-    className: Chunk194783.container,
+    className: Chunk236202.container,
     "aria-label": Chunk388032.intl.string(Chunk388032.t.IC5Ann),
     children: [(0, Chunk951288.jsx)(Chunk252618.yY, {
       location: Chunk388032.intl.string(Chunk388032.t.IC5Ann)
@@ -46,9 +46,9 @@ let E = function() {
         })]
       })
     }), (0, Chunk951288.jsx)("div", {
-      className: Chunk194783.tabBody,
+      className: Chunk236202.tabBody,
       children: (0, Chunk951288.jsx)("div", {
-        className: Chunk194783.nowPlayingColumnFullWidth,
+        className: Chunk236202.nowPlayingColumnFullWidth,
         children: (0, Chunk951288.jsx)(Chunk199104.Z, {
           isStandalone: true
         })
