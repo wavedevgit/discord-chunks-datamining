@@ -418,7 +418,7 @@ function er(e) {
   (0, s.ZDy)(async () => {
     let {
       default: t
-    } = await Promise.all([n.e("54569"), n.e("16794")]).then(n.bind(n, 570387));
+    } = await Promise.all([n.e("10284"), n.e("16794")]).then(n.bind(n, 570387));
     return n => (0, r.jsx)(t, U(k({}, n), {
       questId: e.id,
       questName: e.config.messages.questName
