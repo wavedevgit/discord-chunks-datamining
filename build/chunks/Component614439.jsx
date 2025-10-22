@@ -1,4 +1,4 @@
-/** Chunk was on 64982 **/
+/** Chunk was on 29679 **/
 /** chunk id: 614439, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk873029 = require("./873029.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk133190 = require("./133190.js");
+  Chunk858936 = require("./858936.js");
 let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
   P = () => {
     let {
@@ -177,28 +177,28 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
         n[e] = t, B(n)
       };
     return (0, Chunk951288.jsx)("div", {
-      className: Chunk133190.settingsColumn,
+      className: Chunk858936.settingsColumn,
       children: (0, Chunk951288.jsx)("div", {
-        className: Chunk133190.settingsContainer,
+        className: Chunk858936.settingsContainer,
         children: (0, Chunk951288.jsx)(Chunk481060.w0Z, {
-          className: Chunk133190.settingsScroller,
+          className: Chunk858936.settingsScroller,
           children: (0, Chunk951288.jsx)("main", {
             ref: exports,
-            className: Chunk133190.settingsContent,
+            className: Chunk858936.settingsContent,
             children: (0, Chunk951288.jsx)(Chunk481060.JcV, {
               containerRef: exports,
               children: (0, Chunk951288.jsxs)("div", {
-                className: Chunk133190.container,
+                className: Chunk858936.container,
                 children: [(0, Chunk951288.jsxs)("div", {
-                  className: Chunk133190.mainContent,
+                  className: Chunk858936.mainContent,
                   children: [(0, Chunk951288.jsxs)(Chunk481060.Heading, {
                     variant: "heading-lg/semibold",
                     children: [Chunk388032.intl.string(Chunk388032.t.kGlQGF), (0, Chunk951288.jsx)(Chunk688465.Z, {
-                      className: Chunk133190.betaTag
+                      className: Chunk858936.betaTag
                     })]
                   }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
                     variant: "text-sm/normal",
-                    className: Chunk133190.tabMainDescription,
+                    className: Chunk858936.tabMainDescription,
                     children: [Chunk388032.intl.format(Chunk388032.t["+ScrMf"], {
                       discordURL: window.GLOBAL_ENV.MARKETING_ENDPOINT
                     }), " ", Chunk388032.intl.format(Chunk388032.t.T6WtKw, {
@@ -238,7 +238,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                           disabled: !Z
                         }), (null == W ? true : W.category) != null ? (0, Chunk951288.jsx)(Chunk481060.Text, {
                           color: "text-danger",
-                          className: Chunk133190.error,
+                          className: Chunk858936.error,
                           variant: "text-sm/normal",
                           children: W.category
                         }) : null]
@@ -261,7 +261,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                             disabled: !Z,
                             onChange: z,
                             hint: Chunk388032.intl.string(Chunk388032.t.uPvxqJ),
-                            imageClassName: Chunk133190.imageUploaderInnerSquare,
+                            imageClassName: Chunk858936.imageUploaderInnerSquare,
                             hideSize: true
                           }), (0, Chunk951288.jsxs)(Chunk755721.zx, {
                             size: Chunk755721.zx.Sizes.SMALL,
@@ -417,7 +417,7 @@ let T = "https:" + window.GLOBAL_ENV.MARKETING_ENDPOINT + "/servers/",
                     }) : null]
                   })]
                 }), !D.isPublished && (0, Chunk951288.jsx)("div", {
-                  className: Chunk133190.checklist,
+                  className: Chunk858936.checklist,
                   children: (0, Chunk951288.jsx)(Chunk970061.Z, {
                     title: Chunk388032.intl.string(Chunk388032.t["2kCyn/"]),
                     children: Y,

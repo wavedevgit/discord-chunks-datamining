@@ -14,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk19780 = require("./19780.js"),
   Chunk665149 = require("./665149.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk979905 = require("./979905.js");
+  Chunk477962 = require("./477962.js");
 
 function g(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -53,8 +53,8 @@ class m extends Chunk647438.PureComponent {
         return (0, Chunk951288.jsx)(Chunk665149.JO, {
           hideOnClick: false,
           tooltip: Chunk388032.intl.string(Chunk388032.t["zp9d/4"]),
-          foreground: Chunk979905.downloadArrow,
-          background: Chunk979905.cloud,
+          foreground: Chunk477962.downloadArrow,
+          background: Chunk477962.cloud,
           icon: Chunk481060._8t,
           className: this.props.className
         });
@@ -62,7 +62,7 @@ class m extends Chunk647438.PureComponent {
       case "UPDATE_DOWNLOADED":
         return (0, Chunk951288.jsx)(Chunk665149.JO, {
           tooltip: Chunk388032.intl.string(Chunk388032.t.u18OXF),
-          foreground: Chunk979905.updateIconForeground,
+          foreground: Chunk477962.updateIconForeground,
           onClick: this.handleInstallDownload,
           icon: Chunk481060._8t,
           className: this.props.className

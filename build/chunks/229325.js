@@ -1,3 +1,0 @@
-/** Chunk was on 75515 **/
-/** chunk id: 229325, original params: a (module,exports,require) **/
-module.exports = JSON.parse('{"Z1NZwX":["Usunięto"],"+a5G2l":["Niedostępny"],"Ys/RrB":["Niedostępny"],"60kAzo":["Dostępny"],"aCyHe2":["Niedostępny"],"k+RTIm":["Lokalizacja"],"nB5OZ4":["Lokalizacja"],"rOMEZd":["Nazwa"],"K+zMYp":["Plan"],"k0Y0BE":["Wypr\xf3buj"],"P2ihv7":["Zaproś znajomych"],"yIH2oI":["Zarządzaj planem"],"feUiM/":["Ustawienia"],"n+ZX7y":["Status serwer\xf3w"]}')

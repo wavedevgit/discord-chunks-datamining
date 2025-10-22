@@ -1,4 +1,4 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 41348 **/
 /** chunk id: 546895, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -72,7 +72,7 @@ let s = {
   "discord_common/js/shared/animations/app/gifts/standard/coffee/coffee-action.lottiejson": () => require.e("71244").then(require.t.bind(require, 398161, 19)),
   "discord_common/js/shared/animations/app/gifts/standard/coffee/coffee-idle.lottiejson": () => require.e("23847").then(require.t.bind(require, 482293, 19)),
   "discord_common/js/shared/animations/app/gifts/standard/coffee/coffee-loop.lottiejson": () => require.e("93554").then(require.t.bind(require, 732573, 19)),
-  "discord_app/images/burst_reactions/BurstReaction_Anime_v01_Lottie.lottiejson": () => require.e("39690").then(require.t.bind(require, 725432, 19)),
+  "discord_app/images/burst_reactions/BurstReaction_Anime_v01_Lottie.lottiejson": () => require.e("219").then(require.t.bind(require, 725432, 19)),
   "discord_app/images/burst_reactions/BurstReaction_Arcade_v01.lottiejson": () => require.e("54931").then(require.t.bind(require, 488583, 19)),
   "discord_app/images/burst_reactions/BurstReaction_BlackHoles_v01.lottiejson": () => require.e("22523").then(require.t.bind(require, 420183, 19)),
   "discord_app/images/burst_reactions/BurstReaction_BlastOff_v04.lottiejson": () => require.e("59642").then(require.t.bind(require, 759983, 19)),
@@ -134,7 +134,7 @@ let s = {
   "discord_app/modules/premium/powerups/web/images/server_boost_highlight.json": () => require.e("50821").then(require.t.bind(require, 548421, 19)),
   "discord_app/modules/quests/images/confetti.lottiejson": () => require.e("67963").then(require.t.bind(require, 145193, 19)),
   "discord_app/modules/quests/web/images/quest_bar_background.json": () => require.e("30166").then(require.t.bind(require, 235630, 19)),
-  "discord_app/modules/quests/web/images/quest_bar_sparkle.json": () => require.e("4245").then(require.t.bind(require, 403389, 19)),
+  "discord_app/modules/quests/web/images/quest_bar_sparkle.json": () => require.e("63842").then(require.t.bind(require, 403389, 19)),
   "discord_app/modules/self_mod/inappropriate_conversation/images/vibing_wumpus.lottiejson": () => require.e("29641").then(require.t.bind(require, 937359, 19)),
   "discord_common/js/shared/animations/app/everyone_popout/dark.lottiejson": () => require.e("83323").then(require.t.bind(require, 510465, 19)),
   "discord_common/js/shared/animations/app/everyone_popout/light.lottiejson": () => require.e("36052").then(require.t.bind(require, 570227, 19)),

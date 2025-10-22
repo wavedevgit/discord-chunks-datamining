@@ -12,7 +12,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk732380 = require("./732380.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk367155 = require("./367155.js");
+  Chunk918139 = require("./918139.js");
 let g = Chunk63063.Z.getArticleURL(Chunk981631.BhN.CUSTOM_PROFILES_WISHLIST);
 
 function p(e) {

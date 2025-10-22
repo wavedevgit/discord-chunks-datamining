@@ -10,7 +10,7 @@ var Chunk159691 = require("./159691.js"),
   Chunk847033 = require("./847033.jsx"),
   Chunk544978 = require("./544978.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk790632 = require("./790632.js");
+  Chunk75675 = require("./75675.js");
 
 function d() {
   let {
@@ -20,13 +20,13 @@ function d() {
   } = (0, Chunk847033.m)();
   return exports ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsxs)("div", {
-      className: Chunk790632.previewNotice,
+      className: Chunk75675.previewNotice,
       children: [(0, Chunk951288.jsx)(Chunk481060.kZF, {
         size: "xs",
         color: "currentColor"
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
-        className: Chunk790632.previewNoticeText,
+        className: Chunk75675.previewNoticeText,
         children: module === Chunk544978.y.GUILD_PRODUCTS_PREVIEW ? Chunk388032.intl.string(Chunk388032.t.F4Z0nV) : Chunk388032.intl.string(Chunk388032.t.pzTFpM)
       })]
     }), (0, Chunk951288.jsx)(Chunk159691.zxk, {

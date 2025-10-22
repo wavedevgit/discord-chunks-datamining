@@ -40,9 +40,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk474936 = require("./474936.js"),
-  Chunk687101 = require("./687101.js"),
+  Chunk30038 = require("./30038.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk882741 = require("./882741.js");
+  Chunk330749 = require("./330749.js");
 let F = 0,
   V = 5e3;
 
@@ -73,17 +73,17 @@ function Y(e) {
 
 function W() {
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk882741.headerContainer,
+    className: Chunk330749.headerContainer,
     children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/bold",
-      children: Chunk388032.intl.string(Chunk687101.default.AsmU85)
+      children: Chunk388032.intl.string(Chunk30038.default.AsmU85)
     }), (0, Chunk951288.jsx)(Chunk28664.u, {
       text: Chunk388032.intl.string(Chunk388032.t["5AFxuK"]),
       children: (0, Chunk951288.jsx)(Chunk481060.SrA, {
         size: "custom",
         height: 20,
         width: 20,
-        colorClass: Chunk882741.nitroIcon
+        colorClass: Chunk330749.nitroIcon
       })
     }), (0, Chunk951288.jsx)(Y, {})]
   })
