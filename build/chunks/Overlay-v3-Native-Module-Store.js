@@ -2,7 +2,7 @@
 /** chunk id: 509140, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => P
+  Z: () => R
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk579092 = require("./579092.js"),
@@ -25,60 +25,59 @@ function _(e, t, n) {
 let p = new Chunk579092.Yd("OverlayV3NativeModuleStore"),
   h = false,
   m = false,
-  g = false,
-  E = null,
-  b = false,
-  y = new Set,
-  O = (() => {
+  g = null,
+  E = false,
+  b = new Set,
+  y = (() => {
     let e = null;
     async function t() {
-      E = Chunk242297._.getInstance();
+      v(), g = Chunk242297._.getInstance();
       try {
-        await E.initialize(), (0, Chunk932404.U9)(), h = true
+        await g.initialize(), h = true
       } catch (e) {
-        (0, Chunk932404.Uk)(null, "module_load_failed", {
+        (0, Chunk932404.bs)(null, "module_initialization_failed", {
           error: module
-        }), (0, Chunk932404.UK)(module), (0, Chunk932404.PV)(Chunk145597.UNSET_PID, module, {
+        }), h = false, (0, Chunk932404.PV)(Chunk145597.UNSET_PID, module, {
           crashType: "native"
-        }), h = false
+        })
       } finally {
-        R.emitChange()
+        N.emitChange()
       }
     }
     return () => (null == module && (e = exports()), module)
   })();
 
-function v(e) {
-  if (!__OVERLAY__ && f.iP && (m = e, null == E)) return void O()
+function O(e) {
+  !__OVERLAY__ && f.iP && (m = e)
 }
 
-function I() {
-  !__OVERLAY__ && Chunk987650.iP && (p.verbose("Maybe Enable Overlay"), v(Chunk454991.v.oopEnabled), (0, Chunk145597.setOutOfProcessSupport)(true))
+function v() {
+  !__OVERLAY__ && Chunk987650.iP && (p.verbose("Maybe Enable Overlay"), O(Chunk454991.v.oopEnabled), (0, Chunk145597.setOutOfProcessSupport)(true))
 }
 
-function T(e) {
+function I(e) {
   let {
     oopEnabled: t
   } = e;
-  v(t)
+  O(t)
 }
 
-function S() {
-  g = false
+function T() {
+  return y(), false
 }
 
-function A() {
-  return O(), false
-}
-
-function C(e) {
+function S(e) {
   let {
     pid: t,
     isCrashedDisabled: n
   } = e;
-  returntrue === n && (b = true), !!y.has(t) || true === b
+  returntrue === n && (E = true), !!b.has(t) || true === E
 }
-class N extends(r = Chunk442837.ZP.Store) {
+
+function A() {
+  return y(), false
+}
+class C extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk353926.Z)
   }
@@ -92,19 +91,18 @@ class N extends(r = Chunk442837.ZP.Store) {
     return h
   }
   get isCrashedDisabled() {
-    return b
-  }
-  getNativeModule() {
     return E
   }
+  getNativeModule() {
+    return g
+  }
 }
-_(N, "displayName", "Overlay-v3-Native-Module-Store");
-let R = new N(Chunk570140.Z, __OVERLAY__ || !Chunk987650.iP ? {} : {
-    LOGIN: S,
-    LOGOUT: S,
-    EXPERIMENT_OVERRIDE_BUCKET: I,
-    OVERLAY_SET_ENABLED: T,
-    OVERLAY_V3_LOAD_NATIVE_MODULE: A,
-    OVERLAY_CRASHED: C
+_(C, "displayName", "Overlay-v3-Native-Module-Store");
+let N = new C(Chunk570140.Z, __OVERLAY__ || !Chunk987650.iP ? {} : {
+    POST_CONNECTION_OPEN: A,
+    EXPERIMENT_OVERRIDE_BUCKET: v,
+    OVERLAY_SET_ENABLED: I,
+    OVERLAY_V3_LOAD_NATIVE_MODULE: T,
+    OVERLAY_CRASHED: S
   }),
-  P = R
+  R = N

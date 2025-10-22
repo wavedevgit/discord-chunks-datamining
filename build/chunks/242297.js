@@ -45,8 +45,8 @@ class b {
   getLastAssociatedPID() {
     return this.lastAssociatedPID
   }
-  async prepareOverlayModule() {
-    return null != this.modulePromise ? await this.modulePromise : await this.loadOutOfProcessOverlayModule()
+  prepareOverlayModule() {
+    return null != this.modulePromise || (this.modulePromise = this.loadOutOfProcessOverlayModule()), this.modulePromise
   }
   async loadOutOfProcessOverlayModule() {
     if (!Chunk987650.iP) return void E.error("Attempted to load overlay on an unsupported platform.");
@@ -54,42 +54,42 @@ class b {
     try {
       await Chunk998502.ZP.ensureModule("discord_desktop_overlay");
       let e = Chunk998502.ZP.requireModule("discord_desktop_overlay");
-      module.init(), module.setHostWindowCallbacks(e => this.createOutOfProcessOverlayHostWindow(e), () => this.destroyOutOfProcessOverlayHostWindow(), e => this.refreshOutOfProcessOverlayHostWindow(e)), this.module = module, (0, Chunk932404.Uk)((0, Chunk145597.getPID)(), "module_loaded"), (0, Chunk145597.setOutOfProcessSupport)(true), E.info("OverlayV3 Module Loaded")
+      module.init(), module.setHostWindowCallbacks(e => this.createOutOfProcessOverlayHostWindow(e), () => this.destroyOutOfProcessOverlayHostWindow(), e => this.refreshOutOfProcessOverlayHostWindow(e)), this.module = module, (0, Chunk932404.bs)((0, Chunk145597.getPID)(), "module_loaded"), (0, Chunk145597.setOutOfProcessSupport)(true), (0, Chunk932404.U9)(), E.info("OverlayV3 Module Loaded")
     } catch (e) {
-      throw E.error("failed loading overlay module", module), (0, Chunk145597.setOutOfProcessSupport)(false), module
+      throw E.error("failed loading overlay module", module), (0, Chunk145597.setOutOfProcessSupport)(false), (0, Chunk932404.UK)(module), this.module = null, this.modulePromise = null, module
     }
   }
   async createOutOfProcessOverlayHostWindow(e) {
     E.verbose("Creating OOP Host Window for pid ".concat(e)), (0, d.pH)(e);
     let t = null;
     try {
-      (0, d.Uk)(e, "host_window_mounting_started", {
+      (0, d.bs)(e, "host_window_mounting_started", {
         popoutInitializationStages: u.Z.getPopoutInitializationStages()
-      }), await (0, _.s)(), t = await this.openOverlayPopout(), await (0, d.sG)(e), (0, d.Uk)(e, "host_window_created", {
+      }), await (0, _.s)(), t = await this.openOverlayPopout(), await (0, d.sG)(e), (0, d.bs)(e, "host_window_created", {
         hasWindow: null != t,
         popoutInitializationStages: u.Z.getPopoutInitializationStages()
       })
     } catch (t) {
-      E.error("Error creating OOP host window:", t), (0, d.Uk)(e, "host_window_mounting_failed", {
+      E.error("Error creating OOP host window:", t), (0, d.bs)(e, "host_window_mounting_failed", {
         error: t
       }, l.l6.Error)
     }
     try {
       r.Z.window.setBackgroundThrottling(false)
     } catch (t) {
-      E.error("Error setting background throttling:", t), (0, d.Uk)(e, "background_throttling_setting_failed", {
+      E.error("Error setting background throttling:", t), (0, d.bs)(e, "background_throttling_setting_failed", {
         error: t
       }, l.l6.Error)
     }
     let n = null;
     try {
-      n = await this.getNativeWindowHandleWithRetry(), c.Z.resetWindowState(), (0, d.Uk)(e, "native_window_handle_retrieved", {
+      n = await this.getNativeWindowHandleWithRetry(), c.Z.resetWindowState(), (0, d.bs)(e, "native_window_handle_retrieved", {
         handle: n,
         hasWindow: null != n,
         popoutInitializationStages: u.Z.getPopoutInitializationStages()
       }), await (0, d.xO)(e, n)
     } catch (t) {
-      E.error("Error getting native window handle:", t), (0, d.MP)(e, t, n), (0, d.Uk)(e, "native_window_handle_retrieval_failed", {
+      E.error("Error getting native window handle:", t), (0, d.MP)(e, t, n), (0, d.bs)(e, "native_window_handle_retrieval_failed", {
         error: t,
         handle: n,
         hasWindow: null != n,
@@ -102,7 +102,7 @@ class b {
     }) : this.lastAssociatedPID = e, null != n ? n : ""
   }
   destroyOutOfProcessOverlayHostWindow() {
-    E.verbose("Destroying OOP host window"), (0, Chunk932404.Uk)(this.lastAssociatedPID, "host_window_destroyed");
+    E.verbose("Destroying OOP host window"), (0, Chunk932404.bs)(this.lastAssociatedPID, "host_window_destroyed");
     try {
       var e, t;
       null === Chunk579806.Z || true === Chunk579806.Z || null == (e = Chunk579806.Z.window) || module.close(Chunk501787.$J), null === Chunk579806.Z || true === Chunk579806.Z || null == (t = Chunk579806.Z.window) || exports.setBackgroundThrottling(true), Chunk503522.Z.resetWindowState(false)
@@ -111,7 +111,7 @@ class b {
     }(0, Chunk932404.Hi)(this.lastAssociatedPID), this.lastAssociatedPID = null
   }
   refreshOutOfProcessOverlayHostWindow(e) {
-    E.verbose("Refreshing OOP host window for pid ".concat(e)), (0, d.Uk)(e, "host_window_refreshing_started", {
+    E.verbose("Refreshing OOP host window for pid ".concat(e)), (0, d.bs)(e, "host_window_refreshing_started", {
       popoutInitializationStages: u.Z.getPopoutInitializationStages()
     }), (0, d.nV)(e, this.lastAssociatedPID), this.lastAssociatedPID = e
   }
@@ -155,7 +155,7 @@ class b {
   setFocusCallback(e) {
     var t, n;
     let r = (t, n) => {
-      (0, d.Uk)(t, "renderer_window_focus_changed", {
+      (0, d.bs)(t, "renderer_window_focus_changed", {
         windowHandle: n,
         popoutInitializationStages: u.Z.getPopoutInitializationStages()
       }), e(t, null != n ? (0, f.rd)(n) : null)
@@ -165,7 +165,7 @@ class b {
   setFocusLostCallback(e) {
     var t, n;
     let r = t => {
-      (0, d.Uk)(t, "renderer_window_focus_lost", {
+      (0, d.bs)(t, "renderer_window_focus_lost", {
         popoutInitializationStages: u.Z.getPopoutInitializationStages()
       }), e(t)
     };
@@ -174,7 +174,7 @@ class b {
   setSuccessfullyShownCallback(e) {
     var t, n;
     let r = t => {
-      (0, d.Uk)(t, "successfully_shown", {
+      (0, d.bs)(t, "successfully_shown", {
         popoutInitializationStages: u.Z.getPopoutInitializationStages()
       }), e(t)
     };
@@ -183,7 +183,7 @@ class b {
   setOnWindowHandleInitializedCallback(e) {
     var t, n;
     let r = t => {
-      (0, d.Uk)((0, s.getPID)(), "window_handle_initialized", {
+      (0, d.bs)((0, s.getPID)(), "window_handle_initialized", {
         real_initialized: t,
         popoutInitializationStages: u.Z.getPopoutInitializationStages()
       }), e(true)

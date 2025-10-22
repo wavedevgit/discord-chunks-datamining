@@ -9,14 +9,15 @@ var r, Chunk348327 = require("./348327.js"),
   Chunk442837 = require("./442837.js"),
   Chunk579092 = require("./579092.js"),
   Chunk570140 = require("./570140.js"),
-  Chunk69004 = require("./69004.js"),
-  Chunk928518 = require("./928518.js"),
+  Chunk522474 = require("./522474.js"),
   Chunk145597 = require("./145597.js"),
   Chunk932404 = require("./932404.js"),
   Chunk509140 = require("./509140.js"),
+  Chunk575140 = require("./575140.js"),
+  Chunk987650 = require("./987650.js"),
   Chunk501787 = require("./501787.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,88 +25,94 @@ function h(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let m = new Chunk579092.Yd("OverlayV3NativeClickZoneStore"),
-  g = 3e4,
-  E = null,
-  b = [],
+let g = new Chunk579092.Yd("OverlayV3NativeClickZoneStore"),
+  E = 3e4,
+  b = null,
   y = [],
-  O = {};
+  O = [],
+  v = {},
+  I = false;
 
-function v(e) {
-  return !a()(e, b)
-}
-
-function I(e) {
-  let t = setTimeout(() => {
-    C(t)
-  }, g);
-  return e.map(e => (O[e.name] = t, {
-    name: e.name,
-    left: e.left,
-    top: e.top,
-    right: e.right,
-    bottom: e.bottom
-  }))
-}
-
-function T(e, t) {
-  var n;
-  let r = null != (n = null == E ? true : E.getLastAssociatedPID()) ? n : d.UNSET_PID;
-  try {
-    let n = I(e);
-    v(e) && (0, f.Uk)(r, "capture_zones_set", {
-      source: t,
-      capture_zones: n,
-      rawZones: e
-    }), null == E || E.setCaptureZones(n)
-  } catch (e) {
-    m.error("Error setting capture zones:", e)
-  }
+function T(e) {
+  return !a()(e, y)
 }
 
 function S(e) {
-  return Object.keys(O).filter(t => O[t] === e)
+  let t = setTimeout(() => {
+    R(t)
+  }, E);
+  return e.map(e => {
+    let n = {
+        name: e.name,
+        left: e.left,
+        top: e.top,
+        right: e.right,
+        bottom: e.bottom
+      },
+      r = v[e.name];
+    return null != r && clearTimeout(r), v[e.name] = t, n
+  })
 }
 
-function A() {
-  return y.length > 0 && 0 === b.length
+function A(e, t) {
+  var n;
+  if (null == b) return void g.error("Overlay module not found");
+  let r = null != (n = null == b ? true : b.getLastAssociatedPID()) ? n : u.UNSET_PID;
+  try {
+    let n = S(e);
+    T(e) && (0, d.bs)(r, "capture_zones_set", {
+      source: t,
+      capture_zones: n,
+      rawZones: e
+    }), b.setCaptureZones(n)
+  } catch (e) {
+    g.error("Error setting capture zones:", e)
+  }
 }
 
 function C(e) {
-  let t = S(e);
-  for (let n of (null != e && clearTimeout(e), t)) delete O[n];
-  let n = y.filter(e => !t.includes(e.name));
-  A() || (b = n, T(n, "timer_expired")), y = [...n]
+  return Object.keys(v).filter(t => v[t] === e)
 }
 
-function N(e, t) {
-  T(e, t), b = e, y = [...e]
+function N() {
+  return O.length > 0 && 0 === y.length
 }
 
 function R(e) {
-  for (let e of Object.values(O)) null != e && clearTimeout(e);
-  O = {}, b = [], y = [], T([], e)
+  let t = C(e);
+  for (let n of (null != e && clearTimeout(e), t)) delete v[n];
+  let n = O.filter(e => !t.includes(e.name));
+  N() || (y = n, A(n, "timer_expired")), O = [...n]
 }
 
-function P() {
-  0 !== b.length && (y = [...b], b = [], T([], "store_click_zones"))
+function P(e, t) {
+  if (!f.Z.isOverlayEnabled) {
+    if (0 === y.length) return;
+    w("overlay_disabled");
+    return
+  }
+  A(e, t), y = e, O = [...e]
 }
 
-function w() {
-  b.length > 0 || T(b = [...y], "refresh_click_zones")
+function w(e) {
+  for (let e of Object.values(v)) null != e && clearTimeout(e);
+  v = {}, y = [], O = [], A([], e)
 }
-let D = new Chunk69004.Z(100);
 
-function L(e, t, n, r) {
-  return "".concat(e, "-").concat(t, "-").concat(n, "-").concat(r)
+function D() {
+  0 !== y.length && (O = [...y], y = [], A([], "store_click_zones"))
+}
+
+function L() {
+  y.length > 0 || A(y = [...O], "refresh_click_zones")
 }
 
 function x(e, t, n, r) {
-  let i = u.Z.getWindow(p.$J);
+  let i = c.Z.getWindow(h.$J);
   if (null == i) return;
   let a = Math.ceil(n * i.innerWidth),
     o = Math.ceil(r * i.innerHeight),
-    s = new MouseEvent(t, {
+    s = new MouseEvent((0, _.oc)(t), {
       screenX: a,
       screenY: o,
       clientX: a,
@@ -114,68 +121,51 @@ function x(e, t, n, r) {
       view: i
     }),
     l = i.document.elementFromPoint(a, o);
-  if (null == l) return;
-  let c = L(e, t, a, o);
-  if (!D.has(c)) {
-    var _;
-    D.set(c, {
-      eventType: t,
-      event: s,
-      node: l
-    });
-    let n = null != (_ = null == E ? true : E.getLastAssociatedPID()) ? _ : d.UNSET_PID;
-    (0, f.Uk)(n, "new_click_zone_event", {
-      zone: e,
-      eventType: t,
-      event: s,
-      node: l
-    })
-  }
-  l.dispatchEvent(s)
+  null != l && l.dispatchEvent(s)
 }
 
 function M(e) {
-  return R("crashed"), true
+  return w("crashed"), true
 }
 
 function k(e) {
   let {
     zones: t
   } = e;
-  return N(t, "set_click_zones"), true
+  return P(t, "set_click_zones"), true
 }
 
 function j() {
-  return R("refresh_host_window"), true
+  return w("refresh_host_window"), true
 }
 
 function U() {
-  return null != (E = Chunk509140.Z.getNativeModule()) && E.setCaptureZoneCallback(x), true
+  return null == (b = Chunk509140.Z.getNativeModule()) || !!I || (I = true, b.setCaptureZoneCallback(x), true)
 }
 
 function G() {
-  return E = null, true
+  return b = null, true
 }
 
 function B(e) {
   let {
     pid: t
   } = e;
-  return 0 === t ? P() : w(), true
+  return 0 === t ? D() : L(), true
 }
 class Z extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk509140.Z)
   }
   getClickZones() {
-    return b
-  }
-  getFocusLostStoredClickZones() {
     return y
   }
+  getFocusLostStoredClickZones() {
+    return O
+  }
 }
-h(Z, "displayName", "Overlay-v3-Native-Debug-Module-Store");
-let F = new Z(Chunk570140.Z, __OVERLAY__ ? {} : {
+m(Z, "displayName", "Overlay-v3-Native-Debug-Module-Store");
+let F = new Z(Chunk570140.Z, __OVERLAY__ || !Chunk987650.iP ? {} : {
   OVERLAY_V3_LOAD_NATIVE_MODULE_SUCCESS: U,
   OVERLAY_V3_LOAD_NATIVE_MODULE_FAILED: G,
   OVERLAY_SET_CLICK_ZONES: k,

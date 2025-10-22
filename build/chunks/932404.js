@@ -8,12 +8,11 @@ require.d(exports, {
   NB: () => f,
   Nk: () => c,
   PV: () => y,
+  PY: () => v,
   U9: () => d,
   UK: () => u,
-  Uk: () => I,
   _l: () => O,
-  bs: () => T,
-  hF: () => v,
+  bs: () => I,
   k0: () => _,
   nV: () => b,
   pH: () => p,
@@ -170,16 +169,6 @@ function v(e, t, n, r) {
 }
 
 function I(e, t, n, r) {
-  return O({
-    pid: e,
-    name: t,
-    type: a.C7.NativeOOP,
-    data: n,
-    logType: r
-  })
-}
-
-function T(e, t, n, r) {
   return O({
     pid: e,
     name: t,
