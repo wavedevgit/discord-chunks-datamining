@@ -159,14 +159,15 @@ class z extends(r = Chunk647438.Component) {
       clientThemesClassName: c,
       contentClassName: d,
       themeOverride: _,
-      hideModals: m = false
+      hideModals: m = false,
+      appContext: g
     } = this.props;
     (0, Chunk358085.getPlatform)();
-    let g = K({
+    let E = K({
         withTitleBar: Chunk120356,
         isFullScreen: Chunk647438
       }),
-      E = r === Chunk501787.$J ? Chunk22205.Z : Chunk628123.Z;
+      y = r === Chunk501787.$J ? Chunk22205.Z : Chunk628123.Z;
     return (0, Chunk951288.jsx)(Chunk799899.VK, {
       children: (0, Chunk951288.jsx)(Chunk746106.w, {
         windowKey: r,
@@ -177,15 +178,15 @@ class z extends(r = Chunk647438.Component) {
             children: [(0, Chunk951288.jsx)(q, {
               guestWindow: Chunk512722,
               className: c,
-              children: (0, Chunk951288.jsxs)(Chunk607070, {
+              children: (0, Chunk951288.jsxs)(Chunk317381, {
                 children: [(0, Chunk951288.jsx)(Chunk686546.Co, {}), (0, Chunk951288.jsx)(Chunk728285.Wu, {
-                  appContext: Chunk981631.IlC.POPOUT,
+                  appContext: null != Chunk280492 ? Chunk280492 : Chunk981631.IlC.POPOUT,
                   renderWindow: Chunk512722,
                   children: (0, Chunk951288.jsx)(Chunk260035.m, {
                     children: (0, Chunk951288.jsxs)(Chunk314910.yP, {
                       children: [(0, Chunk951288.jsxs)("div", {
                         className: Chunk413943.popout,
-                        children: [Chunk280492 && (0, Chunk951288.jsx)(Chunk950796.TF, {
+                        children: [Chunk607070 && (0, Chunk951288.jsx)(Chunk950796.TF, {
                           windowKey: r
                         }), null, (0, Chunk951288.jsx)("div", {
                           className: s()(Chunk413943.content, Chunk731965),

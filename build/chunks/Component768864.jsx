@@ -1,7 +1,7 @@
 /** Chunk was on 31688 **/
 /** chunk id: 768864, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  B: () => y
+  B: () => O
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -47,18 +47,14 @@ function w(e, t) {
   }), e
 }
 
-function y(e) {
+function O(e) {
   let {
-    channel: t,
-    appContext: l = f.IlC.APP,
-    analyticsLocation: y = s.Z.CHANNEL_CALL,
-    onClose: I
+    channel: t
   } = e;
-  return i.useCallback((e, i, s, m) => {
+  return i.useCallback((e, i, l, O) => {
     if (null == t) return;
-    let C = {
-      onClose: I,
-      context: l
+    let I = {
+      context: f.IlC.CALL_TILE_POPOUT
     };
     switch (e.type) {
       case h.fO.HIDDEN_STREAM:
@@ -69,25 +65,25 @@ function y(e) {
           } = await n.e("22183").then(n.bind(n, 987281));
           return n => (0, r.jsx)(t, p({
             stream: e.stream,
-            appContext: l,
-            minimal: s,
+            appContext: f.IlC.CALL_TILE_POPOUT,
+            minimal: l,
             exitFullscreen: () => {},
-            onInteraction: (0, d.u)("StreamContextMenu", y, {
-              entrypoint: m,
+            onInteraction: (0, d.u)("StreamContextMenu", s.Z.CALL_TILE_POPOUT, {
+              entrypoint: O,
               tileType: h.TH.STREAM,
               targetUserId: e.user.id
             })
           }, n))
-        }, C);
+        }, I);
         return;
       case h.fO.USER:
-        let O = c.default.getUser(e.id);
-        if (null != O) {
-          if (s) return (0, u.D)(i, O, t, C, (e, t) => {
-            (0, d.u)(e, y, {
+        let C = c.default.getUser(e.id);
+        if (null != C) {
+          if (l) return (0, u.D)(i, C, t, I, (e, t) => {
+            (0, d.u)(e, s.Z.CALL_TILE_POPOUT, {
               entrypoint: h.A5.THREE_DOT,
               tileType: h.TH.USER,
-              targetUserId: O.id
+              targetUserId: C.id
             })(t)
           });
           switch (t.type) {
@@ -99,16 +95,16 @@ function y(e) {
                 return n => (0, r.jsx)(e, w(p({}, n), {
                   showChannelCallItems: true,
                   showMediaItems: true,
-                  user: O,
+                  user: C,
                   channel: t,
                   showModalItems: true,
-                  onInteraction: (0, d.u)("DMUserContextMenu", y, {
-                    entrypoint: m,
+                  onInteraction: (0, d.u)("DMUserContextMenu", s.Z.CALL_TILE_POPOUT, {
+                    entrypoint: O,
                     tileType: h.TH.USER,
-                    targetUserId: O.id
+                    targetUserId: C.id
                   })
                 }))
-              }, C);
+              }, I);
             case f.d4z.GROUP_DM:
               return (0, o.jW)(i, async () => {
                 let {
@@ -118,16 +114,16 @@ function y(e) {
                   showChannelCallItems: true,
                   showMediaItems: true,
                   showChatItems: false,
-                  user: O,
+                  user: C,
                   channel: t,
                   showModalItems: true,
-                  onInteraction: (0, d.u)("GroupDMUserContextMenu", y, {
-                    entrypoint: m,
+                  onInteraction: (0, d.u)("GroupDMUserContextMenu", s.Z.CALL_TILE_POPOUT, {
+                    entrypoint: O,
                     tileType: h.TH.USER,
-                    targetUserId: O.id
+                    targetUserId: C.id
                   })
                 }))
-              }, C);
+              }, I);
             case f.d4z.GUILD_VOICE:
             case f.d4z.PUBLIC_THREAD:
             case f.d4z.PRIVATE_THREAD:
@@ -140,22 +136,22 @@ function y(e) {
                   showMediaItems: true,
                   showChannelCallItems: true,
                   showChatItems: false,
-                  user: O,
+                  user: C,
                   channel: t,
                   guildId: e,
                   showModalItems: true,
-                  onInteraction: (0, d.u)("GuildChannelUserContextMenu", y, {
-                    entrypoint: m,
+                  onInteraction: (0, d.u)("GuildChannelUserContextMenu", s.Z.CALL_TILE_POPOUT, {
+                    entrypoint: O,
                     tileType: h.TH.USER,
-                    targetUserId: O.id
+                    targetUserId: C.id
                   })
                 }))
-              }, C)
+              }, I)
           }
         }
         return;
       case h.fO.ACTIVITY:
         return
     }
-  }, [t, l, y, I])
+  }, [t])
 }
