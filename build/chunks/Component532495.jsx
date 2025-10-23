@@ -36,7 +36,7 @@ var Chunk512722 = require("./512722.js"),
   Chunk594174 = require("./594174.js"),
   Chunk74538 = require("./74538.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk341217 = require("./341217.js");
+  Chunk436360 = require("./436360.js");
 
 function M(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -140,7 +140,7 @@ function G() {
       setPendingAccentColor: Chunk350327.CM
     }, "color");
   return (0, Chunk951288.jsxs)("div", {
-    className: Chunk341217.sectionsContainer,
+    className: Chunk436360.sectionsContainer,
     children: [(0, Chunk951288.jsx)(Chunk349177.Z, {
       placeholder: F.username,
       errors: es,

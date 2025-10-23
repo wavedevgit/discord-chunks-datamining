@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk771845 = require("./771845.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk836150 = require("./836150.js");
+  Chunk542560 = require("./542560.js");
 
 function u(e, t, r) {
   return t in e ? Object.defineProperty(e, t, {
@@ -39,7 +39,7 @@ class b extends Chunk647438.PureComponent {
       size: Chunk481060.CgR.DYNAMIC,
       parentComponent: "GuildFolderSettings",
       children: [(0, Chunk951288.jsxs)(Chunk481060.xBx, {
-        className: Chunk836150.header,
+        className: Chunk542560.header,
         separator: false,
         children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
           variant: "heading-lg/semibold",

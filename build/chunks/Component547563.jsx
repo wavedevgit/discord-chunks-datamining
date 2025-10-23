@@ -1,4 +1,4 @@
-/** Chunk was on 84283 **/
+/** Chunk was on 69844 **/
 /** chunk id: 547563, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -9,7 +9,7 @@ var Chunk159635 = require("./159635.js"),
   s = require.n(Chunk159635),
   Chunk481060 = require("./481060.js"),
   Chunk447543 = require("./447543.js"),
-  Chunk978436 = require("./978436.jsx"),
+  Chunk15470 = require("./15470.jsx"),
   Chunk960904 = require("./960904.js"),
   Chunk830121 = require("./830121.js"),
   Chunk746878 = require("./746878.js"),
@@ -35,7 +35,7 @@ function g(e) {
 }
 let _ = /^discord.gg\/[a-zA-Z0-9-]+/,
   f = (r = g({}, Chunk241209.Z.rules), a = a = {
-    heading: g({}, Chunk978436.i.heading),
+    heading: g({}, Chunk15470.i.heading),
     image: g({}, s().defaultRules.image),
     inviteLink: {
       order: Chunk241209.Z.rules.link.order + 1,

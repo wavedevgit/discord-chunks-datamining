@@ -7,7 +7,7 @@ require.d(exports, {
 });
 var Chunk665352 = require("./665352.js"),
   Chunk147591 = require("./147591.js"),
-  Chunk973805 = require("./973805.js"),
+  Chunk216397 = require("./216397.js"),
   Chunk677524 = require("./677524.js"),
   Chunk37484 = require("./37484.js");
 let c = 216 / 24389,
@@ -82,7 +82,7 @@ let M = new Chunk665352.Z({
     }
   },
   base: Chunk147591.Z,
-  gamutSpace: Chunk973805.Z,
+  gamutSpace: Chunk216397.Z,
   fromBase(e) {
     let t, [r, a, n] = [(0, i.sI)(e[0]), (0, i.sI)(e[1]), (0, i.sI)(e[2])];
     return r > 99.9999999 ? (t = 0, r = 100) : r < 1e-8 ? (t = 0, r = 0) : t = a / w(Z(r), n) * 100, [n, t, r]

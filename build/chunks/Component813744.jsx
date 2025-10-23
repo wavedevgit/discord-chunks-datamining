@@ -13,7 +13,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk517100 = require("./517100.js"),
   Chunk594174 = require("./594174.js"),
   Chunk231338 = require("./231338.js"),
-  Chunk104708 = require("./104708.js");
+  Chunk954479 = require("./954479.js");
 
 function f() {
   var e;
@@ -26,17 +26,17 @@ function f() {
     p = [];
   return f || _ || p.push("ACTIVE"), f && p.push("IDLE"), _ && p.push("AFK"), require && exports ? (0, Chunk951288.jsx)(Chunk314910.ZP, {
     children: (0, Chunk951288.jsxs)("div", {
-      className: Chunk104708.container,
+      className: Chunk954479.container,
       children: [(0, Chunk951288.jsxs)("div", {
-        className: Chunk104708.status,
+        className: Chunk954479.status,
         children: [(0, Chunk951288.jsx)(Chunk481060.qbd, {
           status: p.includes("ACTIVE") ? Chunk231338.Sk.ONLINE : Chunk231338.Sk.IDLE,
-          className: Chunk104708.statusIndicator
+          className: Chunk954479.statusIndicator
         }), (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-md/normal",
           children: "IDLE STATUS:"
         }), (0, Chunk951288.jsx)("div", {
-          className: Chunk104708.statusText,
+          className: Chunk954479.statusText,
           children: (0, Chunk951288.jsx)(Chunk481060.Text, {
             variant: "text-md/bold",
             children: p.join(" + ")

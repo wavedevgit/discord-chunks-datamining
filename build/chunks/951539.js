@@ -1,8 +1,8 @@
-/** Chunk was on 61231 **/
+/** Chunk was on 98878 **/
 /** chunk id: 951539, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  ZP: () => f,
-  so: () => b
+  ZP: () => m,
+  so: () => g
 }), require("./388685.js");
 var Chunk442837 = require("./442837.js"),
   Chunk159300 = require("./159300.js"),
@@ -16,27 +16,27 @@ var Chunk442837 = require("./442837.js"),
   Chunk765305 = require("./765305.js"),
   Chunk981631 = require("./981631.js");
 
-function b(e) {
-  let [n, t, a, b] = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [c.ZP, o.Z, l.Z, i.Z];
-  if ((0, _.Z2)(e)) returnfalse;
+function g(e) {
+  let [n, t, i, g] = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [o.ZP, l.Z, c.Z, r.Z];
+  if ((0, u.Z2)(e)) returnfalse;
   let {
-    guild_id: f,
-    channel_id: g
-  } = e, m = e.entity_type === u.WX.EXTERNAL ? n.getDefaultChannel(e.guild_id) : t.getChannel(g), h = a.getGuild(f), v = b.getStageInstanceByChannel(g);
-  return !!(0, r.b)(d.Z, h, m, v) && null != m && function(e) {
-    let [n] = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [o.Z], {
+    guild_id: m,
+    channel_id: b
+  } = e, h = e.entity_type === _.WX.EXTERNAL ? n.getDefaultChannel(e.guild_id) : t.getChannel(b), f = i.getGuild(m), v = g.getStageInstanceByChannel(b);
+  return !!(0, a.b)(s.Z, f, h, v) && null != h && function(e) {
+    let [n] = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [l.Z], {
       entityType: t,
-      channelId: a
+      channelId: i
     } = "entity_type" in e ? {
       entityType: e.entity_type,
       channelId: e.channel_id
     } : e;
-    if (t === u.WX.EXTERNAL) returntrue;
-    let r = n.getChannel(a);
-    return null != r && s.Uu(p.Plq.VIEW_CHANNEL, r)
+    if (t === _.WX.EXTERNAL) returntrue;
+    let a = n.getChannel(i);
+    return null != a && d.Uu(p.Plq.VIEW_CHANNEL, a)
   }(e, [t])
 }
 
-function f(e) {
-  return (0, a.e7)([c.ZP, o.Z, l.Z, i.Z], () => b(e, [c.ZP, o.Z, l.Z, i.Z]), [e])
+function m(e) {
+  return (0, i.e7)([o.ZP, l.Z, c.Z, r.Z], () => g(e, [o.ZP, l.Z, c.Z, r.Z]), [e])
 }

@@ -58,8 +58,8 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk701476 = require("./701476.js"),
   Chunk801461 = require("./801461.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk67894 = require("./67894.js"),
-  Chunk10198 = require("./10198.js");
+  Chunk33724 = require("./33724.js"),
+  Chunk197571 = require("./197571.js");
 
 function el(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -236,12 +236,12 @@ class eu extends(r = Chunk647438.PureComponent) {
         termsURL: Chunk981631.EYA.TERMS,
         privacyURL: Chunk981631.EYA.PRIVACY
       }),
-      marginTopStyle: Chunk67894.consentBox,
-      subtextClassName: Chunk67894.consentSubText
+      marginTopStyle: Chunk33724.consentBox,
+      subtextClassName: Chunk33724.consentSubText
     }) : (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-sm/normal",
       color: "text-secondary",
-      className: a()(Chunk10198.marginTop8, Chunk67894.consentSubText),
+      className: a()(Chunk197571.marginTop8, Chunk33724.consentSubText),
       children: Chunk388032.intl.format(Chunk388032.t["KI+BSb"], {
         termsURL: Chunk981631.EYA.TERMS,
         privacyURL: Chunk981631.EYA.PRIVACY
@@ -259,14 +259,14 @@ class eu extends(r = Chunk647438.PureComponent) {
     return (0, Chunk951288.jsxs)(Chunk388905.ZP, {
       className: module,
       children: [(0, Chunk951288.jsx)(Chunk588705.R, {}), (0, Chunk951288.jsxs)(Chunk388905.gO, {
-        className: Chunk67894.authBlock,
+        className: Chunk33724.authBlock,
         children: [(0, Chunk951288.jsx)(Chunk28664.u, {
           text: Chunk388032.intl.string(Chunk388032.t["hBB85/"]),
           position: "right",
           children: (0, Chunk951288.jsx)(Chunk388905.II, {
             label: Chunk388032.intl.string(Chunk388032.t["9AjdkD"]),
             autoFocus: true,
-            className: Chunk10198.marginBottom8,
+            className: Chunk197571.marginBottom8,
             name: "username",
             value: require,
             placeholder: Chunk388032.intl.string(Chunk388032.t["09Q8yp"]),
@@ -277,20 +277,20 @@ class eu extends(r = Chunk647438.PureComponent) {
         }), (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-sm/normal",
           color: "text-secondary",
-          className: a()(Chunk10198.marginTop20, Chunk67894.consentSubText),
+          className: a()(Chunk197571.marginTop20, Chunk33724.consentSubText),
           children: Chunk388032.intl.format(Chunk388032.t["KI+BSb"], {
             termsURL: Chunk981631.EYA.TERMS,
             privacyURL: Chunk981631.EYA.PRIVACY
           })
         }), (0, Chunk951288.jsx)(Chunk388905.zx, {
-          className: Chunk10198.marginTop8,
+          className: Chunk197571.marginTop8,
           disabled: true,
           children: Chunk388032.intl.string(Chunk388032.t["825cFy"])
         }), Chunk188785.a ? null : (0, Chunk951288.jsx)(Chunk388905.zx, {
           look: Chunk388905.zx.Looks.LINK,
           color: Chunk388905.zx.Colors.LINK,
           disabled: true,
-          className: Chunk10198.marginTop20,
+          className: Chunk197571.marginTop20,
           children: Chunk388032.intl.string(Chunk388032.t["1lWxux"])
         })]
       })]
@@ -318,7 +318,7 @@ class eu extends(r = Chunk647438.PureComponent) {
     return (0, Chunk951288.jsx)(Chunk28664.u, {
       text: !exports && module ? Chunk388032.intl.string(Chunk388032.t.AY4IVA) : null,
       children: (0, Chunk951288.jsx)("div", {
-        className: Chunk10198.marginTop8,
+        className: Chunk197571.marginTop8,
         children: (0, Chunk951288.jsx)(Chunk388905.zx, {
           type: "submit",
           submitting: require,
@@ -354,9 +354,9 @@ class eu extends(r = Chunk647438.PureComponent) {
         tag: "form",
         className: exports,
         children: [this.renderInviteHeader(), Chunk990547 ? (0, Chunk951288.jsx)("div", {
-          className: Chunk67894.divider
+          className: Chunk33724.divider
         }) : null, (0, Chunk951288.jsxs)(Chunk388905.gO, {
-          className: Chunk990547 ? true : Chunk67894.authBlock,
+          className: Chunk990547 ? true : Chunk33724.authBlock,
           children: [(0, Chunk951288.jsx)(Chunk481060.oil, {
             helperText: Chunk388032.intl.string(Chunk388032.t["330TCc"]),
             label: Chunk388032.intl.string(Chunk388032.t["9AjdkD"]),
@@ -378,7 +378,7 @@ class eu extends(r = Chunk647438.PureComponent) {
             }
           }), Chunk188785.a ? null : (0, Chunk951288.jsx)(Chunk13430.Z, {
             label: Chunk388032.intl.string(Chunk388032.t.rhBeKe),
-            wrapperClassName: Chunk67894.inviteBirthdayInput,
+            wrapperClassName: Chunk33724.inviteBirthdayInput,
             name: "date_of_birth",
             onChange: this.handleBirthdayChange,
             ref: this.dateOfBirthRef,
@@ -389,13 +389,13 @@ class eu extends(r = Chunk647438.PureComponent) {
               look: Chunk388905.zx.Looks.LINK,
               color: Chunk388905.zx.Colors.LINK,
               onClick: this.handleGotoLogin,
-              className: Chunk10198.marginTop20,
+              className: Chunk197571.marginTop20,
               children: Chunk388032.intl.string(Chunk388032.t["1lWxux"])
             })
           })]
         })]
       }), null != module && Chunk990547 ? (0, Chunk951288.jsx)(Chunk388905.ZP, {
-        className: Chunk10198.marginTop20,
+        className: Chunk197571.marginTop20,
         children: (0, Chunk951288.jsx)(Chunk792766.y, {
           guild: module.guild,
           onlineCount: module.approximate_presence_count
@@ -410,7 +410,7 @@ class eu extends(r = Chunk647438.PureComponent) {
       }
     } = this.state;
     return "string" != typeof module ? null : (0, Chunk951288.jsx)(Chunk388905.i_, {
-      className: a()(Chunk10198.marginTop20, Chunk67894.errorMessage),
+      className: a()(Chunk197571.marginTop20, Chunk33724.errorMessage),
       children: module
     })
   }

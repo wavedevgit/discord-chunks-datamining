@@ -38,7 +38,7 @@ let f = e => {
       }
     })
   }
-  return (0, a.EQ)([n, b > 1]).with(["card", true], () => null != p && p === i.z.HERO ? y(d.intl.formatToPlainString(d.t.Io7ozn, {
+  return (0, a.EQ)([n, b > 1]).with(["card", true], () => null != p && (p === i.z.HERO || p === i.z.FEED) ? y(d.intl.formatToPlainString(d.t.Io7ozn, {
     days: b
   })) : null).with(["banner", true], () => y(d.intl.formatToPlainString(d.t["8gsP5M"], {
     days: b

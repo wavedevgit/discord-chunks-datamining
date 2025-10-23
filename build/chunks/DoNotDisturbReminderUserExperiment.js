@@ -1,43 +1,43 @@
-/** Chunk was on 41348 **/
+/** Chunk was on 79041 **/
 /** chunk id: 809930, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   a: () => o
 });
 var Chunk818083 = require("./818083.js"),
   Chunk141537 = require("./141537.js"),
-  Chunk101134 = require("./101134.js");
+  Chunk684523 = require("./684523.js");
 let l = (0, Chunk818083.B)({
     kind: "user",
     id: "2025-08_do_not_disturb_reminder",
     label: "Do Not Disturb Reminder",
     defaultConfig: {
       enabled: false,
-      titleText: Chunk101134.default["3t3FRw"],
-      bodyText: Chunk101134.default.zyFyf3
+      titleText: Chunk684523.default["3t3FRw"],
+      bodyText: Chunk684523.default.zyFyf3
     },
     treatments: [{
       id: 1,
       label: "Enabled - Copy 1",
       config: {
         enabled: true,
-        titleText: Chunk101134.default["3t3FRw"],
-        bodyText: Chunk101134.default.zyFyf3
+        titleText: Chunk684523.default["3t3FRw"],
+        bodyText: Chunk684523.default.zyFyf3
       }
     }, {
       id: 2,
       label: "Enabled - Copy 2",
       config: {
         enabled: true,
-        titleText: Chunk101134.default.Onha6E,
-        bodyText: Chunk101134.default["7cuAey"]
+        titleText: Chunk684523.default.Onha6E,
+        bodyText: Chunk684523.default["7cuAey"]
       }
     }, {
       id: 3,
       label: "Enabled - Copy 3",
       config: {
         enabled: true,
-        titleText: Chunk101134.default.NtY0dV,
-        bodyText: Chunk101134.default["3nnb4r"]
+        titleText: Chunk684523.default.NtY0dV,
+        bodyText: Chunk684523.default["3nnb4r"]
       }
     }]
   }),

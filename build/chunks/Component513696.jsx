@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk313789 = require("./313789.js"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk366967 = require("./366967.js");
+  Chunk781652 = require("./781652.js");
 let d = (0, Chunk509613.x1)(Chunk313789.n.POGGERMODE_PANE, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.AtCukI),
     buildLayout: () => [],
@@ -25,7 +25,7 @@ let d = (0, Chunk509613.x1)(Chunk313789.n.POGGERMODE_PANE, {
     icon: () => (0, Chunk951288.jsx)("img", {
       alt: "",
       src: require("./348621.js"),
-      className: Chunk366967.poggermodeIcon
+      className: Chunk781652.poggermodeIcon
     }),
     useTitle: () => Chunk388032.intl.string(Chunk388032.t.AtCukI),
     legacySearchKey: Chunk726985.s6.POGGERMODE,
