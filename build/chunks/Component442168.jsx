@@ -89,9 +89,9 @@ function S(e) {
       },
       config: b
     }, "animate-always"),
-    x = (0, i.useRef)(null),
-    A = (0, c.Yzy)(w, {
-      ref: x,
+    A = (0, i.useRef)(null),
+    T = (0, c.Yzy)(w, {
+      ref: A,
       keys: e => e.timestamp,
       from: e => g({
         position: "fixed",
@@ -128,7 +128,7 @@ function S(e) {
         null != t.item && null != w.find(e => e.timestamp === t.item.timestamp) && (0, d.Gh)(I, t.item.timestamp)
       }
     }, "animate-always");
-  return (0, l.useChain)([Z, x], [0, .1], 3e3), (0, r.jsxs)(r.Fragment, {
+  return (0, l.useChain)([Z, A], [0, .1], 3e3), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: m.hidden,
       ref: y
@@ -138,7 +138,7 @@ function S(e) {
     })), (0, r.jsx)(_.ZP, {
       children: (0, r.jsx)("div", {
         className: m.hidden,
-        children: A((e, t, n, i) => (null == t ? true : t.thumbnail) != null && (0, r.jsx)(l.animated.img, {
+        children: T((e, t, n, i) => (null == t ? true : t.thumbnail) != null && (0, r.jsx)(l.animated.img, {
           src: t.thumbnail,
           className: m.movingImage,
           style: e

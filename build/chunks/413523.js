@@ -91,7 +91,7 @@ function P(e) {
   }
 }
 var w = function(e) {
-  return e.VIDEO = "VIDEO", e.STREAM = "STREAM", e.FILTERED = "FILTERED", e.SPEAKING = "SPEAKING", e.ACTIVITY = "ACTIVITY", e
+  return e.VIDEO = "VIDEO", e.STREAM = "STREAM", e.FILTERED = "FILTERED", e.SPEAKING = "SPEAKING", e.ACTIVITY = "ACTIVITY", e.NOT_POPPED_OUT = "NOT_POPPED_OUT", e
 }({});
 class D {
   get version() {
@@ -160,6 +160,9 @@ class D {
   updateGuildRingingUsers(e, t) {
     t ? this.guildRingingUsers.add(e) : this.guildRingingUsers.delete(e)
   }
+  updateParticipantPoppedOut(e, t) {
+    t ? this.poppedOutParticipants.add(e) : this.poppedOutParticipants.delete(e)
+  }
   _getEmbeddedActivities() {
     let e = Chunk317381.ZP.getEmbeddedActivitiesForChannel(this.channelId),
       t = Chunk317381.ZP.getSelfEmbeddedActivityForChannel(this.channelId);
@@ -209,7 +212,8 @@ class D {
       ringing: w,
       userNick: E.ZP.getName(P, this.channelId, T),
       userAvatarDecoration: (0, s.o)(T, P),
-      localVideoDisabled: _.Z.isLocalVideoDisabled(T.id)
+      localVideoDisabled: _.Z.isLocalVideoDisabled(T.id),
+      isPoppedOut: this.poppedOutParticipants.has(T.id)
     }), v.push(b));
     let D = null != (o = c.Z.getStreamForUser(e, P)) ? o : c.Z.getActiveStreamForUser(e, P);
     if (null != D && D.channelId === this.channelId) {
@@ -226,28 +230,27 @@ class D {
         userVideo: null != (d = null == A ? true : A.selfVideo) && d,
         user: T,
         userNick: E.ZP.getName(P, this.channelId, T),
-        stream: D
+        stream: D,
+        isPoppedOut: this.poppedOutParticipants.has(t)
       }), v.push(y)
     }
     return v
   }
-  constructor(e, t) {
-    T(this, "channelId", true), T(this, "call", true), T(this, "participants", {}), T(this, "lastSpoke", {}), T(this, "guildRingingUsers", new Set), T(this, "isParticipantPoppedOut", null), T(this, "participantByIndex", new i.h(e => {
-      var t, n, r, i;
-      let a = [];
-      e.type === O.fO.USER && e.speaking && a.push("SPEAKING");
-      let o = null != (i = null == (t = (n = this).isParticipantPoppedOut) ? true : t.call(n, e.id)) && i;
-      if (e.type === O.fO.USER && (null == (r = e.voiceState) ? true : r.selfVideo)) a.push("VIDEO"), e.localVideoDisabled || o || a.push("FILTERED");
+  constructor(e) {
+    T(this, "channelId", true), T(this, "call", true), T(this, "participants", {}), T(this, "lastSpoke", {}), T(this, "guildRingingUsers", new Set), T(this, "poppedOutParticipants", new Set), T(this, "participantByIndex", new i.h(e => {
+      var t;
+      let n = [];
+      if (e.type === O.fO.USER && e.speaking && n.push("SPEAKING"), e.type === O.fO.USER && (null == (t = e.voiceState) ? true : t.selfVideo)) n.push("VIDEO"), e.localVideoDisabled || e.isPoppedOut || n.push("FILTERED");
       else if ((0, O._5)(e)) {
-        a.push("STREAM");
+        n.push("STREAM");
         let {
           showInCallGrid: t
         } = (0, b.$)({
           location: "ChannelRTCParticipants"
         });
-        e.type !== O.fO.HIDDEN_STREAM && (null != e.streamId || t) && !o && a.push("FILTERED")
+        e.type !== O.fO.HIDDEN_STREAM && (null != e.streamId || t) && !e.isPoppedOut && n.push("FILTERED")
       }
-      return e.type === O.fO.ACTIVITY && (a.push("ACTIVITY"), o || a.push("FILTERED")), a
-    }, P)), this.channelId = e, this.isParticipantPoppedOut = null != t ? t : null
+      return e.type === O.fO.ACTIVITY && n.push("ACTIVITY"), "isPoppedOut" in e && e.isPoppedOut || n.push("NOT_POPPED_OUT"), n
+    }, P)), this.channelId = e
   }
 }

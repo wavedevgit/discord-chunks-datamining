@@ -51,7 +51,8 @@ function v(e, t, n) {
     ringing: false,
     userNick: u.ZP.getName(t, n, e),
     userAvatarDecoration: (0, l.o)(e, t),
-    localVideoDisabled: false
+    localVideoDisabled: false,
+    isPoppedOut: false
   };
   y.set(e.id, a)
 }

@@ -2,7 +2,7 @@
 /** chunk id: 849171, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   OV: () => M,
-  ZP: () => F
+  ZP: () => L
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -52,7 +52,7 @@ function M(e) {
     max: 4,
     renderUser: e => {
       if (null == e || e === h.ag) return null;
-      let t = A.ZP.getName(n, i, e);
+      let t = T.ZP.getName(n, i, e);
       return (0, r.jsx)(c.u, {
         text: t,
         children: (0, r.jsx)("img", {
@@ -72,12 +72,12 @@ function k(e) {
     application: c,
     channel: _,
     width: g
-  } = e, v = g > 400 ? 2 : +(g > 300), [b] = g > 400 ? [s.EFr.SIZE_56, 56] : g > 300 ? [s.EFr.SIZE_32, 32] : [s.EFr.SIZE_24, 24], E = (0, o.Wu)([R.default, j.default], () => Array.from(l).map(e => (0, p.J)(e, j.default) ? null : R.default.getUser(e.userId)).filter(x.lm)), h = (0, o.e7)([d.ZP], () => {
+  } = e, v = g > 400 ? 2 : +(g > 300), [b] = g > 400 ? [s.EFr.SIZE_56, 56] : g > 300 ? [s.EFr.SIZE_32, 32] : [s.EFr.SIZE_24, 24], E = (0, o.Wu)([R.default, j.default], () => Array.from(l).map(e => (0, p.J)(e, j.default) ? null : R.default.getUser(e.userId)).filter(A.lm)), h = (0, o.e7)([d.ZP], () => {
     var e;
     return null != (e = d.ZP.getEmbeddedActivitiesForChannel(_.id).find(e => e.applicationId === c.id)) ? e : d.ZP.getEmbeddedActivitiesForStartingChannel(_.id).find(e => e.applicationId === c.id)
   }), {
     analyticsLocations: S
-  } = (0, I.ZP)(), y = (0, u.O)(), O = A.ZP.getName(_.getGuildId(), _.id, null == E ? true : E[0]), w = (0, m.s5)({
+  } = (0, I.ZP)(), y = (0, u.O)(), O = T.ZP.getName(_.getGuildId(), _.id, null == E ? true : E[0]), w = (0, m.s5)({
     userId: null == (t = R.default.getCurrentUser()) ? true : t.id,
     channelId: _.id,
     application: c
@@ -85,7 +85,7 @@ function k(e) {
     channel: _,
     type: "channel"
   }), [_]), {
-    submitting: F
+    submitting: L
   } = (0, C.Z)({
     applicationId: D,
     context: k,
@@ -104,10 +104,10 @@ function k(e) {
         [N.medium]: 1 === v
       }),
       variant: "text-sm/normal",
-      children: E.length > 1 ? T.intl.formatToPlainString(T.t.cpe6CK, {
+      children: E.length > 1 ? x.intl.formatToPlainString(x.t.cpe6CK, {
         username: O,
         count: E.length - 1
-      }) : T.intl.formatToPlainString(T.t["7Uuia2"], {
+      }) : x.intl.formatToPlainString(x.t["7Uuia2"], {
         username: O
       })
     }), (0, r.jsx)(s.Text, {
@@ -120,7 +120,7 @@ function k(e) {
     }), (0, r.jsx)("div", {
       className: N.buttons,
       children: w ? (0, r.jsx)(s.Button, {
-        text: T.intl.string(T.t["4i2vj+"]),
+        text: x.intl.string(x.t["4i2vj+"]),
         onClick: function(e) {
           e.stopPropagation(), null != h && (0, f.Z)({
             applicationId: h.applicationId,
@@ -130,7 +130,7 @@ function k(e) {
             componentId: Z
           })
         },
-        loading: F,
+        loading: L,
         size: 2 === v ? "md" : "sm",
         variant: "overlay-primary"
       }) : null
@@ -138,7 +138,7 @@ function k(e) {
   })
 }
 
-function F(e) {
+function L(e) {
   let {
     participant: t,
     width: n,

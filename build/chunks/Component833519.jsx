@@ -55,11 +55,11 @@ function q(e) {
     idle: l,
     width: a,
     premiumIndicator: c
-  } = e, s = (0, o.e7)([w.Z], () => w.Z.getActiveStreamForUser(t.user.id, t.stream.guildId)), u = (0, F.K)(a);
+  } = e, s = (0, o.e7)([w.Z], () => w.Z.getActiveStreamForUser(t.user.id, t.stream.guildId)), u = (0, L.K)(a);
   return (0, r.jsxs)(r.Fragment, {
     children: [n || i ? null : (0, r.jsx)(k.Z, {
       participant: t
-    }), i || null == s || s.state === L.jm8.ENDED || s.state === L.jm8.FAILED ? null : (0, r.jsx)(y.Z, {
+    }), i || null == s || s.state === F.jm8.ENDED || s.state === F.jm8.FAILED ? null : (0, r.jsx)(y.Z, {
       size: m.ZP.Sizes.SMALL,
       className: H.liveIndicator,
       participant: t,
@@ -79,7 +79,7 @@ function Y(e) {
     popoutType: g,
     width: y,
     focused: k,
-    wrapperClassName: F,
+    wrapperClassName: L,
     paused: q = false
   } = e, Y = Z.Z.getVideoComponent(), z = (0, o.e7)([P.default], () => P.default.getId()), K = (0, b.Z)(), {
     stream: G,
@@ -102,12 +102,12 @@ function Y(e) {
     selected: n,
     isSelfStream: Q.id === z
   });
-  if ((null == $ ? true : $.state) === L.jm8.ENDED) return (0, r.jsx)(T.Z, {
+  if ((null == $ ? true : $.state) === F.jm8.ENDED) return (0, r.jsx)(x.Z, {
     selected: n,
     stream: $,
     width: y
   });
-  if (null != eo || (null == $ ? true : $.state) === L.jm8.FAILED) return (0, r.jsx)(N.Z, {
+  if (null != eo || (null == $ ? true : $.state) === F.jm8.FAILED) return (0, r.jsx)(N.Z, {
     avError: null == eo ? true : eo.type,
     avErrorContext: eo,
     selected: n,
@@ -167,12 +167,12 @@ function Y(e) {
       stream: G
     }) : null, (0, r.jsx)(O.Z, {
       onResize: l,
-      wrapperClassName: a()(H.videoWrapper, F),
+      wrapperClassName: a()(g !== _.P.CALL_TILE ? H.videoWrapper : true, L),
       className: H.content,
       streamId: X,
       videoComponent: Y,
       fit: m,
-      paused: q || (null == $ ? true : $.state) === L.jm8.PAUSED || ei,
+      paused: q || (null == $ ? true : $.state) === F.jm8.PAUSED || ei,
       videoSpinnerContext: er ? p.m.SELF_STREAM : p.m.REMOTE_STREAM,
       userId: Q.id,
       streamKey: t.id
@@ -194,8 +194,8 @@ function Y(e) {
       }
       return e
     }({
-      size: (0, x.L)(y)
-    }, el)) : null, (0, r.jsx)(A.Z, {
+      size: (0, A.L)(y)
+    }, el)) : null, (0, r.jsx)(T.Z, {
       stream: G,
       popoutType: g
     })]

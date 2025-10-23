@@ -1,7 +1,7 @@
 /** Chunk was on 17360 **/
 /** chunk id: 517525, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => F
+  Z: () => L
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -64,14 +64,14 @@ let Z = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
     opacity: 0,
     transform: "translate3d(100%, 0, 0)"
   },
-  x = {
+  A = {
     opacity: 1,
     transform: "translate3d(0%, 0, 0)"
   },
-  A = {
+  T = {
     opacity: 0
   },
-  T = {
+  x = {
     opacity: 1
   },
   N = {
@@ -94,21 +94,21 @@ let Z = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
         size: v,
         didTrackUpsellViewed: Z,
         setDidTrackUpsellViewed: R,
-        className: x,
-        premiumIndicator: A,
-        quality: T
+        className: A,
+        premiumIndicator: T,
+        quality: x
       } = e,
       {
         analyticsLocations: N
       } = (0, m.ZP)(),
       D = null != (0, y.Z)(o);
     try {
-      t = (0, S.nG)(T)
+      t = (0, S.nG)(x)
     } catch (e) {
       t = false
     }
     try {
-      l = (0, S.tR)(T)
+      l = (0, S.tR)(x)
     } catch (e) {
       l = false
     }
@@ -116,10 +116,10 @@ let Z = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
       {
         location: k
       } = (0, _.O)(),
-      F = (0, s.e7)([b.default], () => b.default.getCurrentUser()),
-      L = c && !h.ZP.isPremium(F, I.PremiumTypes.TIER_1) && !h.ZP.canStreamQuality(h.ZP.StreamQuality.MID, F),
+      L = (0, s.e7)([b.default], () => b.default.getCurrentUser()),
+      F = c && !h.ZP.isPremium(L, I.PremiumTypes.TIER_1) && !h.ZP.canStreamQuality(h.ZP.StreamQuality.MID, L),
       V = i.useCallback(() => {
-        L && M && (0, p.ZDy)(async () => {
+        F && M && (0, p.ZDy)(async () => {
           let {
             default: e
           } = await n.e("28479").then(n.bind(n, 78865));
@@ -127,7 +127,7 @@ let Z = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
             analyticsSource: k
           }))
         })
-      }, [L, M, k]);
+      }, [F, M, k]);
     if (i.useEffect(() => {
         !Z && M && (E.default.track(O.rMx.PREMIUM_UPSELL_VIEWED, {
           type: I.cd.STREAM_QUALITY_INDICATOR,
@@ -135,14 +135,14 @@ let Z = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
           has_premium_stream_resolution: l,
           location_stack: N
         }), R(true))
-      }, [t, l, M, Z, R, N]), null == T) return null;
+      }, [t, l, M, Z, R, N]), null == x) return null;
     let U = (0, r.jsx)(d.u, {
       text: D ? C.intl.string(C.t.q8TiVt) : M ? C.intl.string(C.t.IHgpEn) : C.intl.string(C.t.vLb0VW),
       position: "bottom",
       children: (0, r.jsxs)(p.P3F, {
         onClick: V,
         className: a()(w.qualityIndicator, v, g.eE[f], D ? w.qualityIndicatorLowQuality : w.qualityIndicatorFullQuality, {
-          [w.clickable]: L && M
+          [w.clickable]: F && M
         }),
         children: [M ? (0, r.jsx)(p.SrA, {
           size: "md",
@@ -150,22 +150,22 @@ let Z = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
           className: w.premiumStreamIcon
         }) : null, (0, r.jsx)("span", {
           className: w.qualityResolution,
-          children: (0, S.ml)(T.maxResolution)
+          children: (0, S.ml)(x.maxResolution)
         }), (0, r.jsx)("span", {
-          children: (0, S.bp)(T.maxFrameRate)
+          children: (0, S.bp)(x.maxFrameRate)
         })]
       })
     });
     return (0, r.jsx)(p.IGR, {
       text: U,
-      className: a()(x, w.qualityIndicatorBadge, {
-        [w.qualityIndicatorBadgePremium]: M && A
+      className: a()(A, w.qualityIndicatorBadge, {
+        [w.qualityIndicatorBadgePremium]: M && T
       }),
       color: u.Z.unsafe_rawColors.PRIMARY_500.css,
       shape: g.eE[f]
     })
   },
-  F = e => {
+  L = e => {
     let {
       participant: t,
       showQuality: n,
@@ -183,10 +183,10 @@ let Z = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
     }, [t]);
     let E = (0, p.Yzy)(b, {
         enter: {
-          from: m.enabled ? A : R,
-          to: m.enabled ? T : x
+          from: m.enabled ? T : R,
+          to: m.enabled ? x : A
         },
-        leave: m.enabled ? A : R,
+        leave: m.enabled ? T : R,
         config: M
       }, "animate-always"),
       h = (0, p.q_F)({
