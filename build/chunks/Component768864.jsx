@@ -52,12 +52,12 @@ function y(e) {
     channel: t,
     appContext: l = f.IlC.APP,
     analyticsLocation: y = s.Z.CHANNEL_CALL,
-    onClose: I
+    onClose: m
   } = e;
-  return i.useCallback((e, i, s, m) => {
+  return i.useCallback((e, i, s, I) => {
     if (null == t) return;
-    let O = {
-      onClose: I,
+    let C = {
+      onClose: m,
       context: l
     };
     switch (e.type) {
@@ -73,21 +73,21 @@ function y(e) {
             minimal: s,
             exitFullscreen: () => {},
             onInteraction: (0, d.u)("StreamContextMenu", y, {
-              entrypoint: m,
+              entrypoint: I,
               tileType: h.TH.STREAM,
               targetUserId: e.user.id
             })
           }, n))
-        }, O);
+        }, C);
         return;
       case h.fO.USER:
-        let b = c.default.getUser(e.id);
-        if (null != b) {
-          if (s) return (0, u.D)(i, b, t, O, (e, t) => {
+        let O = c.default.getUser(e.id);
+        if (null != O) {
+          if (s) return (0, u.D)(i, O, t, C, (e, t) => {
             (0, d.u)(e, y, {
               entrypoint: h.A5.THREE_DOT,
               tileType: h.TH.USER,
-              targetUserId: b.id
+              targetUserId: O.id
             })(t)
           });
           switch (t.type) {
@@ -99,16 +99,16 @@ function y(e) {
                 return n => (0, r.jsx)(e, w(p({}, n), {
                   showChannelCallItems: true,
                   showMediaItems: true,
-                  user: b,
+                  user: O,
                   channel: t,
                   showModalItems: true,
                   onInteraction: (0, d.u)("DMUserContextMenu", y, {
-                    entrypoint: m,
+                    entrypoint: I,
                     tileType: h.TH.USER,
-                    targetUserId: b.id
+                    targetUserId: O.id
                   })
                 }))
-              }, O);
+              }, C);
             case f.d4z.GROUP_DM:
               return (0, o.jW)(i, async () => {
                 let {
@@ -118,16 +118,16 @@ function y(e) {
                   showChannelCallItems: true,
                   showMediaItems: true,
                   showChatItems: false,
-                  user: b,
+                  user: O,
                   channel: t,
                   showModalItems: true,
                   onInteraction: (0, d.u)("GroupDMUserContextMenu", y, {
-                    entrypoint: m,
+                    entrypoint: I,
                     tileType: h.TH.USER,
-                    targetUserId: b.id
+                    targetUserId: O.id
                   })
                 }))
-              }, O);
+              }, C);
             case f.d4z.GUILD_VOICE:
             case f.d4z.PUBLIC_THREAD:
             case f.d4z.PRIVATE_THREAD:
@@ -140,22 +140,22 @@ function y(e) {
                   showMediaItems: true,
                   showChannelCallItems: true,
                   showChatItems: false,
-                  user: b,
+                  user: O,
                   channel: t,
                   guildId: e,
                   showModalItems: true,
                   onInteraction: (0, d.u)("GuildChannelUserContextMenu", y, {
-                    entrypoint: m,
+                    entrypoint: I,
                     tileType: h.TH.USER,
-                    targetUserId: b.id
+                    targetUserId: O.id
                   })
                 }))
-              }, O)
+              }, C)
           }
         }
         return;
       case h.fO.ACTIVITY:
         return
     }
-  }, [t, l, y, I])
+  }, [t, l, y, m])
 }
