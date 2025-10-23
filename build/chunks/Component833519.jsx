@@ -1,4 +1,4 @@
-/** Chunk was on 99407 **/
+/** Chunk was on 34271 **/
 /** chunk id: 833519, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Y,
@@ -81,21 +81,21 @@ function Y(e) {
     focused: k,
     wrapperClassName: L,
     paused: q = false
-  } = e, Y = Z.Z.getVideoComponent(), z = (0, o.e7)([P.default], () => P.default.getId()), K = (0, b.Z)(), {
+  } = e, Y = j.Z.getVideoComponent(), z = (0, o.e7)([P.default], () => P.default.getId()), K = (0, b.Z)(), {
     stream: G,
     user: Q,
     streamId: X
-  } = t, J = (0, o.e7)([j.Z], () => j.Z.getChannel(G.channelId)), $ = (0, o.e7)([w.Z], () => w.Z.getActiveStreamForUser(Q.id, G.guildId), [Q.id, G.guildId]), {
+  } = t, J = (0, o.e7)([Z.Z], () => Z.Z.getChannel(G.channelId)), $ = (0, o.e7)([w.Z], () => w.Z.getActiveStreamForUser(Q.id, G.guildId), [Q.id, G.guildId]), {
     defaultWatchMultipleStreams: ee
   } = (0, E.P)({
     location: "StreamTile"
-  }), et = (0, o.e7)([w.Z], () => w.Z.getAllActiveStreams().length > 0), en = (0, o.e7)([R.Z], () => R.Z.isFocused()), er = (null == $ ? true : $.ownerId) === z, ei = er && !en && g === _.P.NO_POPOUT, el = null != $ ? (0, h.Z)($, Q, Q.id === z, ei) : null, ea = y < 195;
+  }), et = (0, o.e7)([w.Z], () => w.Z.getAllActiveStreams().length > 0), en = (0, o.e7)([T.Z], () => T.Z.isFocused()), er = (null == $ ? true : $.ownerId) === z, ei = er && !en && g === _.P.NO_POPOUT, el = null != $ ? (0, h.Z)($, Q, Q.id === z, ei) : null, ea = y < 195;
   (0, f.ZP)(() => {
     !et && (null == J ? true : J.isGuildStageVoice()) && !er && ((0, d.rn)(G), u.Z.updateStageStreamSize(G.channelId, false))
   });
   let eo = (0, v.c)(U.Yn.STREAM, t.user.id);
   if (i.useEffect(() => {
-      B.info("Stream Tile State - activeStream: ".concat(null != $, " | selected: ").concat(n, " | Video: ").concat(null != Y, " | MediaEngine: ").concat(Z.Z.supports(U.AN.VIDEO)))
+      B.info("Stream Tile State - activeStream: ".concat(null != $, " | selected: ").concat(n, " | Video: ").concat(null != Y, " | MediaEngine: ").concat(j.Z.supports(U.AN.VIDEO)))
     }, [Y, $, n]), K) return (0, r.jsx)(M.Z, {
     stream: t.stream,
     isSmall: ea,
@@ -119,7 +119,7 @@ function Y(e) {
     participant: t,
     width: y
   });
-  if (!(null != $ && !n && null != Y && Z.Z.supports(U.AN.VIDEO))) return (0, r.jsxs)("div", {
+  if (!(null != $ && !n && null != Y && j.Z.supports(U.AN.VIDEO))) return (0, r.jsxs)("div", {
     className: a()(H.content, H.streamPreview, {
       [H.small]: ea
     }),
@@ -195,7 +195,7 @@ function Y(e) {
       return e
     }({
       size: (0, A.L)(y)
-    }, el)) : null, (0, r.jsx)(T.Z, {
+    }, el)) : null, (0, r.jsx)(R.Z, {
       stream: G,
       popoutType: g
     })]

@@ -1,4 +1,4 @@
-/** Chunk was on 99407 **/
+/** Chunk was on 34271 **/
 /** chunk id: 442168, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -62,7 +62,7 @@ function S(e) {
   i.useEffect(() => () => {
     (0, d.Gh)(I)
   }, [I]);
-  let j = e => {
+  let Z = e => {
       if (n !== s.P.NO_POPOUT) return v;
       let t = null == O ? true : O.getBoundingClientRect();
       if (P.current = t, e.timestamp !== C || null == t) return v;
@@ -77,10 +77,10 @@ function S(e) {
         width: 268
       }
     },
-    Z = (0, i.useRef)(null),
-    R = (0, c.Yzy)(w, {
+    j = (0, i.useRef)(null),
+    T = (0, c.Yzy)(w, {
       keys: e => e.timestamp,
-      ref: Z,
+      ref: j,
       from: {
         opacity: .2
       },
@@ -90,14 +90,14 @@ function S(e) {
       config: b
     }, "animate-always"),
     A = (0, i.useRef)(null),
-    T = (0, c.Yzy)(w, {
+    R = (0, c.Yzy)(w, {
       ref: A,
       keys: e => e.timestamp,
       from: e => g({
         position: "fixed",
         visibility: "hidden",
         opacity: 1
-      }, S.enabled ? j(e) : (() => {
+      }, S.enabled ? Z(e) : (() => {
         var e;
         if (n !== s.P.NO_POPOUT) return v;
         let t = null == (e = y.current) ? true : e.getBoundingClientRect();
@@ -111,7 +111,7 @@ function S(e) {
       enter: e => [g({
         opacity: 1,
         visibility: "visible"
-      }, j(e))],
+      }, Z(e))],
       leave: g({
         opacity: 0
       }, !S.enabled && g({
@@ -128,17 +128,17 @@ function S(e) {
         null != t.item && null != w.find(e => e.timestamp === t.item.timestamp) && (0, d.Gh)(I, t.item.timestamp)
       }
     }, "animate-always");
-  return (0, l.useChain)([Z, A], [0, .1], 3e3), (0, r.jsxs)(r.Fragment, {
+  return (0, l.useChain)([j, A], [0, .1], 3e3), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: m.hidden,
       ref: y
-    }), R((e, t) => null != t && (0, r.jsx)(l.animated.div, {
+    }), T((e, t) => null != t && (0, r.jsx)(l.animated.div, {
       className: m.whiteFlash,
       style: e
     })), (0, r.jsx)(_.ZP, {
       children: (0, r.jsx)("div", {
         className: m.hidden,
-        children: T((e, t, n, i) => (null == t ? true : t.thumbnail) != null && (0, r.jsx)(l.animated.img, {
+        children: R((e, t, n, i) => (null == t ? true : t.thumbnail) != null && (0, r.jsx)(l.animated.img, {
           src: t.thumbnail,
           className: m.movingImage,
           style: e

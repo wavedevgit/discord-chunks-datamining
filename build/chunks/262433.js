@@ -1,4 +1,4 @@
-/** Chunk was on 99407 **/
+/** Chunk was on 34271 **/
 /** chunk id: 262433, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   U: () => m,
@@ -55,7 +55,7 @@ function v(e) {
     w = (0, d.np)(a.x, b),
     P = (0, d.np)(a.y, E),
     {
-      outlineColor: j
+      outlineColor: Z
     } = (0, d.bg)(a.userId, S, y, h);
   g(a, e => {
       e.x += e.xSpeed * window.devicePixelRatio, e.y += e.ySpeed * window.devicePixelRatio, e.opacity -= e.opacitySpeed, e.opacity <= 0 && (0, o.j)(() => {
@@ -87,7 +87,7 @@ function v(e) {
           return r.particles[e.id] = o, r.lastSpawned[e.id] = Date.now(), r
         })
       })
-    }(a, w, P), (0, f.I)(v, w, P, j, p.q2), (0, f.T)(v, w, P, a.userId), g(a, e => (function(e, t, n) {
+    }(a, w, P), (0, f.I)(v, w, P, Z, p.q2), (0, f.T)(v, w, P, a.userId), g(a, e => (function(e, t, n) {
       if (null == t) return;
       let r = n.size * window.devicePixelRatio,
         i = n.x - r / 2 * window.devicePixelRatio,

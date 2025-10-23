@@ -1,4 +1,4 @@
-/** Chunk was on 99407 **/
+/** Chunk was on 34271 **/
 /** chunk id: 796638, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZB: () => v,
@@ -99,9 +99,9 @@ function v(e, t) {
       }
       let P = w.filter(s.lm);
       E.current = (0, l.keyBy)((0, l.range)(P.length), e => P[e].id);
-      let j = [...I, ...P];
-      return null != b && (f && j.length >= S ? j[Math.max(0, j.length - 1)] = b : j.push(b)), {
-        visibleParticipants: j,
+      let Z = [...I, ...P];
+      return null != b && (f && Z.length >= S ? Z[Math.max(0, Z.length - 1)] = b : Z.push(b)), {
+        visibleParticipants: Z,
         participantTileWidth: y
       }
     }, [e, t, v, p, f, u, c, o, r]);
