@@ -1,13 +1,13 @@
 /** Chunk was on 1272 **/
 /** chunk id: 429899, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => o
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk558381 = require("./558381.js"),
   Chunk613311 = require("./613311.jsx");
-class o extends Chunk647438.Component {
+class s extends Chunk647438.Component {
   componentDidMount() {
     this.fetchStoreListing()
   }
@@ -18,7 +18,7 @@ class o extends Chunk647438.Component {
       slug: n,
       storeListingId: i,
       pageSize: l,
-      location: o
+      location: s
     } = this.props;
     return (0, Chunk951288.jsx)(Chunk613311.Z, {
       inputSkuId: module,
@@ -26,7 +26,7 @@ class o extends Chunk647438.Component {
       fetchStoreListing: this.fetchStoreListing,
       slug: require,
       storeListingId: Chunk647438,
-      location: o,
+      location: s,
       pageSize: Chunk558381
     })
   }
@@ -49,4 +49,4 @@ class o extends Chunk647438.Component {
       })
   }
 }
-let s = o
+let o = s

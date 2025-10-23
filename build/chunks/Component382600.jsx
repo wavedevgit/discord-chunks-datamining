@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 382600, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  P: () => o
+  P: () => s
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -28,11 +28,11 @@ let a = {
       duration: 70
     }
   },
-  o = e => {
+  s = e => {
     let t = i.useRef(null),
-      o = i.useRef(e);
-    o.current = e;
-    let s = i.useMemo(() => () => {
+      s = i.useRef(e);
+    s.current = e;
+    let o = i.useMemo(() => () => {
         null != t.current && t.current.play(e)
       }, [e]),
       c = i.useCallback(() => {
@@ -46,7 +46,7 @@ let a = {
         t.current.stopIfPlaying(n)
       }, [e]),
       d = i.useCallback(e => {
-        var i, s;
+        var i, o;
         return (0, r.jsx)(l.L, (i = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
@@ -64,29 +64,29 @@ let a = {
             })
           }
           return e
-        }({}, e), s = s = {
+        }({}, e), o = o = {
           src: () => n.e("7584").then(n.t.bind(n, 883488, 19)),
           ref: t,
-          initialAnimation: o.current,
+          initialAnimation: s.current,
           markers: a
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(s)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
             n.push.apply(n, r)
           }
           return n
-        })(Object(s)).forEach(function(e) {
-          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(s, e))
+        })(Object(o)).forEach(function(e) {
+          Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(o, e))
         }), i))
       }, []);
     return {
       events: {
-        onClick: s,
+        onClick: o,
         onMouseEnter: c,
         onMouseLeave: u
       },
-      play: s,
+      play: o,
       getDuration: i.useCallback(() => {
         var e;
         return null == (e = t.current) ? true : e.getDuration()

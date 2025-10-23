@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 480874, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => T
+  Z: () => N
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -28,27 +28,27 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk393272 = require("./393272.js");
 
-function T() {
+function N() {
   let e = Chunk647438.useRef(null),
     t = (0, Chunk727813.Z)(),
     n = (0, Chunk355350.w)(),
     l = (0, Chunk26373.V)(),
-    T = (0, Chunk183126.N)(),
-    P = (0, Chunk209613.Z)("message-requests-spam-list"),
+    N = (0, Chunk183126.N)(),
+    j = (0, Chunk209613.Z)("message-requests-spam-list"),
     {
-      channelId: j
+      channelId: P
     } = (0, Chunk488634._)(),
     x = Chunk647438.useCallback(() => {
       (0, Chunk481060.showToast)((0, Chunk481060.createToast)(Chunk388032.intl.string(Chunk388032.t["EDYbS+"]), Chunk481060.ToastType.FAILURE))
     }, []),
     {
-      rejectAll: Z
+      rejectAll: A
     } = (0, Chunk486622.m)({
       onError: x
     }),
-    A = Chunk647438.useCallback(() => {
-      Z(exports.map(e => e.channel.id))
-    }, [exports, Z]);
+    Z = Chunk647438.useCallback(() => {
+      A(exports.map(e => e.channel.id))
+    }, [exports, A]);
   (0, Chunk493773.ZP)(() => {
     Chunk626135.default.track(Chunk981631.rMx.SPAM_MESSAGE_REQUESTS_VIEWED, {
       num_spam_message_requests: require
@@ -59,24 +59,24 @@ function T() {
   let w = Chunk647438.useCallback(e => {
       var n, i;
       let {
-        row: o
-      } = e, s = t[o], c = null == (i = t[o + 1]) || null == (n = i.channel) ? true : n.id, u = s.channel.id;
+        row: s
+      } = e, o = t[s], c = null == (i = t[s + 1]) || null == (n = i.channel) ? true : n.id, u = o.channel.id;
       return (0, r.jsx)(y.Z, {
-        index: o,
+        index: s,
         className: a()({
-          [N.selected]: null != j && j === u,
-          [N.siblingSelected]: null != j && j === c
+          [T.selected]: null != P && P === u,
+          [T.siblingSelected]: null != P && P === c
         }),
-        channel: s.channel,
-        user: s.user,
+        channel: o.channel,
+        user: o.user,
         hasSingleMessageRequest: l
       }, u)
-    }, [exports, Chunk120356, j]),
+    }, [exports, Chunk120356, P]),
     L = Chunk647438.useCallback(() => (0, Chunk951288.jsxs)(Chunk82295.Z, {
       className: Chunk393272.sectionTitle,
       children: [Chunk388032.intl.format(Chunk388032.t.C79Edh, {
         count: require
-      }), T && require > 0 ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+      }), N && require > 0 ? (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
         children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
           className: Chunk393272.titleDivider,
           variant: "eyebrow",
@@ -86,15 +86,15 @@ function T() {
         }), (0, Chunk951288.jsx)(Chunk481060.Avr, {
           textVariant: "text-sm/normal",
           text: Chunk388032.intl.string(Chunk388032.t.p6t7RC),
-          onClick: A,
+          onClick: Z,
           "aria-label": Chunk388032.intl.string(Chunk388032.t.p6t7RC)
         })]
       }) : null]
-    }, "message-requests-spam-title"), [require, A, T]);
+    }, "message-requests-spam-title"), [require, Z, N]);
   return 0 === exports.length ? (0, Chunk951288.jsx)(Chunk307947.Z, {
     section: Chunk687683.pS.SPAM
   }) : (0, Chunk951288.jsx)(Chunk91192.bG, {
-    navigator: P,
+    navigator: j,
     children: (0, Chunk951288.jsx)(Chunk91192.SJ, {
       children: n => {
         var {
@@ -133,7 +133,7 @@ function T() {
           }
           return e
         }({
-          className: N.list,
+          className: T.list,
           innerRole: l,
           innerAriaLabel: S.intl.string(S.t.e7GWjQ),
           ref: t => {
@@ -142,8 +142,8 @@ function T() {
           },
           paddingTop: 24,
           paddingBottom: 24,
-          sectionHeight: I.oi,
-          rowHeight: I.WN,
+          sectionHeight: v.oi,
+          rowHeight: v.WN,
           renderSection: L,
           renderRow: w,
           sections: [t.length],

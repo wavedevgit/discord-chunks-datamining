@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 426051, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,49 +18,49 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk539410 = require("./539410.js");
 
-function b(e) {
+function _(e) {
   let {
     active: t,
     user: n,
-    channel: b
-  } = e, _ = (0, d.V)(), E = i.useCallback(() => {
-    (0, a.showToast)((0, a.createToast)(g.intl.string(g.t.pIQ3h4), a.ToastType.FAILURE)), o.Z.increment({
+    channel: _
+  } = e, b = (0, d.V)(), E = i.useCallback(() => {
+    (0, a.showToast)((0, a.createToast)(m.intl.string(m.t.pIQ3h4), a.ToastType.FAILURE)), s.Z.increment({
       name: l.V.SPAM_MESSAGE_REQUEST_ERROR_VIEW
     })
   }, []), O = i.useCallback(() => {
     c.Z.closeChannelSidebar(u.uZ)
-  }, []), v = i.useCallback(() => {
-    c.Z.closeChannelSidebar(u.uZ), _ && (0, s.Kh)(b.id)
-  }, [b.id, _]), {
+  }, []), I = i.useCallback(() => {
+    c.Z.closeChannelSidebar(u.uZ), b && (0, o.Kh)(_.id)
+  }, [_.id, b]), {
     acceptMessageRequest: y,
-    isAcceptLoading: I,
+    isAcceptLoading: v,
     isUserProfileLoading: C,
     isOptimisticAccepted: S
   } = (0, p.m)({
     user: n,
-    onAcceptSuccess: v,
+    onAcceptSuccess: I,
     onRejectSuccess: O,
     onError: E
-  }), N = I || C, T = N || S;
+  }), T = v || C, N = T || S;
   return (0, r.jsxs)("div", {
-    className: m.container,
+    className: g.container,
     children: [(0, r.jsx)(f.Z, {
       otherUser: n,
-      channel: b,
+      channel: _,
       active: t
     }), (0, r.jsxs)("div", {
-      className: m.actions,
+      className: g.actions,
       children: [(0, r.jsx)(a.Button, {
         variant: "secondary",
         size: "sm",
-        text: g.intl.string(g.t.vicfl6),
+        text: m.intl.string(m.t.vicfl6),
         onClick: e => {
-          y(b.id), e.stopPropagation()
+          y(_.id), e.stopPropagation()
         },
-        disabled: T,
-        loading: N
+        disabled: N,
+        loading: T
       }), (0, r.jsx)(h.Z, {
-        channel: b
+        channel: _
       })]
     })]
   })

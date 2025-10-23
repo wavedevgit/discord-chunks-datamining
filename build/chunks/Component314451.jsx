@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk665149 = require("./665149.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function m(e) {
+function g(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,42 +35,42 @@ function m(e) {
   }
   return e
 }
-let b = () => (0, Chunk481060.ZDy)(async () => {
+let _ = () => (0, Chunk481060.ZDy)(async () => {
   let {
     default: e
   } = await require.e("83051").then(require.bind(require, 115072));
-  return t => (0, r.jsx)(e, m({}, t))
+  return t => (0, r.jsx)(e, g({}, t))
 });
 
-function _(e) {
+function b(e) {
   let {
     onClose: t,
     isDiscordDeveloper: n
-  } = e, i = (0, c.useDevToolsTabConfig)(), l = (0, u.F)(i, s.d8), p = (0, d.Z)();
+  } = e, i = (0, c.useDevToolsTabConfig)(), l = (0, u.F)(i, o.d8), p = (0, d.Z)();
   return (0, r.jsx)(a.v2r, {
     onSelect: () => {},
     navId: "staff-help-popout",
     variant: "fixed",
     onClose: t,
-    "aria-label": g.intl.string(g.t.HpQykc),
+    "aria-label": m.intl.string(m.t.HpQykc),
     children: (0, r.jsxs)(a.kSQ, {
       children: [(0, r.jsx)(a.sNh, {
         id: "staff-help-bug-reporter",
-        label: g.intl.string(g.t["5LqopY"]),
+        label: m.intl.string(m.t["5LqopY"]),
         icon: a.nnZ,
-        action: b
+        action: _
       }), n && (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(a.sNh, {
           id: "staff-devtools",
           label: "DevTools",
-          action: () => (0, s.d8)(),
+          action: () => (0, o.d8)(),
           children: l
         }), p]
       }), (0, r.jsx)(a.sNh, {
         id: "staff-help-center",
         label: "Go to Help Center",
         icon: a.rgF,
-        action: () => (0, o.Z)(f.w)
+        action: () => (0, s.Z)(f.w)
       })]
     })
   })
@@ -80,7 +80,7 @@ function E(e) {
   let {
     className: t,
     focusSectionProps: n
-  } = e, o = (0, l.e7)([p.Z], () => p.Z.isDeveloper), [s, c] = i.useState(false), [u, d] = i.useState(0), f = i.useRef(null), E = e => {
+  } = e, s = (0, l.e7)([p.Z], () => p.Z.isDeveloper), [o, c] = i.useState(false), [u, d] = i.useState(0), f = i.useRef(null), E = e => {
     clearTimeout(u), d(setTimeout(() => {
       c(e)
     }, 100))
@@ -90,26 +90,26 @@ function E(e) {
     onMouseLeave: () => E(false),
     children: (0, r.jsx)(a.yRy, {
       targetElementRef: f,
-      shouldShow: s,
+      shouldShow: o,
       animation: a.yRy.Animation.NONE,
       position: "bottom",
       align: "right",
       autoInvert: false,
       onRequestOpen: () => c(true),
       onRequestClose: () => c(false),
-      renderPopout: () => (0, r.jsx)(_, {
+      renderPopout: () => (0, r.jsx)(b, {
         onClose: () => c(false),
-        isDiscordDeveloper: o
+        isDiscordDeveloper: s
       }),
       children: (e, i) => {
         let {
           isShown: l
         } = i;
-        return (0, r.jsx)(h.JO, m({
+        return (0, r.jsx)(h.JO, g({
           ref: f,
-          onClick: b,
+          onClick: _,
           icon: a.nnZ,
-          "aria-label": g.intl.string(g.t["cqEoj/"]),
+          "aria-label": m.intl.string(m.t["cqEoj/"]),
           selected: l,
           className: t
         }, n))

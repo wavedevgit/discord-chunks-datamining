@@ -45,7 +45,7 @@ let b = () => {
         defaultTextOverride: Chunk388032.intl.string(Chunk388032.t.mr4K7D),
         premiumModalAnalyticsLocation: {
           object: Chunk981631.qAy.BUTTON_CTA,
-          objectType: Chunk981631.Qqv.BUY
+          objectType: Chunk981631.AnalyticsObjectTypes.BUY
         },
         fullWidth: true
       }) : null]

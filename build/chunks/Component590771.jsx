@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 590771, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,7 +20,7 @@ function h(e) {
     onScroll: t,
     onGuildCardSeen: n,
     onGuildCardClick: a
-  } = e, o = (0, l.e7)([c.Z], () => {
+  } = e, s = (0, l.e7)([c.Z], () => {
     var e;
     return null != (e = c.Z.getGuildIds({
       categoryId: f.Hk
@@ -32,10 +32,10 @@ function h(e) {
     })) || e
   });
   return i.useEffect(() => {
-    s.Z.fetchFeaturedGuilds()
+    o.Z.fetchFeaturedGuilds()
   }, []), (0, r.jsx)(d.Z, {
     tab: f.vf.FEATURED,
-    guildIds: o,
+    guildIds: s,
     loading: u,
     onScroll: t,
     onGuildCardSeen: n,
@@ -43,43 +43,43 @@ function h(e) {
   })
 }
 
-function g(e) {
+function m(e) {
   let {
     tab: t,
     onScroll: n,
     onGuildCardSeen: a,
-    onGuildCardClick: o
+    onGuildCardClick: s
   } = e, p = (0, u.lg)(t), h = (0, l.e7)([c.Z], () => {
     var e;
     return null != (e = c.Z.getGuildIds({
       categoryId: p
     })) ? e : f.q5
-  }), g = (0, l.e7)([c.Z], () => {
+  }), m = (0, l.e7)([c.Z], () => {
     var e;
     return null == (e = c.Z.getIsFetching({
       categoryId: p
     })) || e
   });
   return i.useEffect(() => {
-    s.Z.fetchCategoryFeaturedGuilds({
+    o.Z.fetchCategoryFeaturedGuilds({
       categoryId: p
     })
   }, [p]), (0, r.jsx)(d.Z, {
     tab: t,
     guildIds: h,
-    loading: g,
+    loading: m,
     onScroll: n,
     onGuildCardSeen: a,
-    onGuildCardClick: o
+    onGuildCardClick: s
   })
 }
 
-function m(e) {
+function g(e) {
   let {
     selectedTab: t,
     onScroll: n,
     onGuildCardSeen: l,
-    onGuildCardClick: s
+    onGuildCardClick: o
   } = e;
   switch (i.useEffect(() => {
       let e = (0, u.lg)(t);
@@ -91,7 +91,7 @@ function m(e) {
       return (0, r.jsx)(h, {
         tab: t,
         onScroll: n,
-        onGuildCardClick: s,
+        onGuildCardClick: o,
         onGuildCardSeen: l
       });
     case f.vf.GAMING:
@@ -99,10 +99,10 @@ function m(e) {
     case f.vf.ENTERTAINMENT:
     case f.vf.TECH:
     case f.vf.EDUCATION:
-      return (0, r.jsx)(g, {
+      return (0, r.jsx)(m, {
         tab: t,
         onScroll: n,
-        onGuildCardClick: s,
+        onGuildCardClick: o,
         onGuildCardSeen: l
       }, t);
     case f.vf.HUBS:
@@ -110,6 +110,6 @@ function m(e) {
         onScroll: n
       });
     default:
-      (0, o.vE)(t)
+      (0, s.vE)(t)
   }
 }

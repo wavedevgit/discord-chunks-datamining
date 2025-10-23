@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 300986, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => g
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -16,13 +16,13 @@ var Chunk442837 = require("./442837.js"),
   Chunk665149 = require("./665149.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let g = new Set(["ko", "ja"]);
+let m = new Set(["ko", "ja"]);
 
-function m(e) {
+function g(e) {
   let {
     className: t,
     focusSectionProps: n
-  } = e, m = (0, i.e7)([s.default], () => s.default.getCurrentUser()), b = (0, i.e7)([o.default], () => o.default.locale), _ = (0, d.EO)(m);
+  } = e, g = (0, i.e7)([o.default], () => o.default.getCurrentUser()), _ = (0, i.e7)([s.default], () => s.default.locale), b = (0, d.EO)(g);
   return (0, r.jsx)(a.Anchor, {
     href: u.w,
     target: "_blank",
@@ -45,13 +45,13 @@ function m(e) {
       }
       return e
     }({
-      color: _ ? l.Z.unsafe_rawColors.GREEN_360.css : "currentColor",
+      color: b ? l.Z.unsafe_rawColors.GREEN_360.css : "currentColor",
       className: t,
       onClick: () => c.default.track(f.rMx.HELP_CLICKED, {
-        highlighted: _
+        highlighted: b
       }),
       icon: a.idN,
-      tooltipPosition: g.has(b) ? "left" : true,
+      tooltipPosition: m.has(_) ? "left" : true,
       tooltip: h.intl.string(h.t["cqEoj/"])
     }, n))
   })

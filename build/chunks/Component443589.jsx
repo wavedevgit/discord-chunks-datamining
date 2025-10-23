@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 443589, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => T
+  Z: () => N
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -28,31 +28,31 @@ var Chunk951288 = require("./951288.js"),
   Chunk427954 = require("./427954.js"),
   Chunk286389 = require("./286389.js");
 
-function T(e) {
+function N(e) {
   let {
     recipientUser: t,
     giftIntentType: n,
     analyticsPage: l,
-    shouldHighlight: T
+    shouldHighlight: N
   } = e, {
-    analyticsLocations: P
+    analyticsLocations: j
   } = (0, d.ZP)(), {
-    isHovered: j,
+    isHovered: P,
     setIsHovered: x,
-    onMouseEnter: Z,
-    onMouseLeave: A
+    onMouseEnter: A,
+    onMouseLeave: Z
   } = (0, h.Z)(200, 300), {
     enableEmojiCTA: w
-  } = _.w.useExperiment({
+  } = b.w.useExperiment({
     location: "GiftIntentActionButton"
   }, {
     autoTrackExposure: false
   });
   i.useEffect(() => {
-    let e = g.Z.getUserAffinity(t.id);
+    let e = m.Z.getUserAffinity(t.id);
     (0, p.h)({
-      name: s.ImpressionNames.GIFT_INTENT_ACTION_BUTTON,
-      type: s.ImpressionTypes.VIEW,
+      name: o.ImpressionNames.GIFT_INTENT_ACTION_BUTTON,
+      type: o.ImpressionTypes.VIEW,
       properties: {
         gift_intent_type: n,
         affinity: null == e ? true : e.communicationProbability
@@ -60,12 +60,12 @@ function T(e) {
     })
   }, [t, n]);
   let L = i.useCallback(e => {
-      "focus" !== e.type && Z()
-    }, [Z]),
-    R = e => {
+      "focus" !== e.type && A()
+    }, [A]),
+    D = e => {
       e.stopPropagation();
-      let r = g.Z.getUserAffinity(t.id);
-      m.default.track(I.rMx.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
+      let r = m.Z.getUserAffinity(t.id);
+      g.default.track(v.rMx.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
         gift_intent_type: n,
         affinity: null == r ? true : r.communicationProbability
       }), (0, f.Z)({
@@ -73,55 +73,55 @@ function T(e) {
         initialPlanId: null,
         giftRecipient: t,
         analyticsLocation: (0, O.F)(n).actionButton,
-        analyticsLocations: P,
+        analyticsLocations: j,
         analyticsObject: {
           page: l,
-          section: I.jXE.FRIENDS_LIST_FRIEND_ROW,
-          object: I.qAy.BUTTON_CTA,
-          objectType: I.Qqv.GIFT
+          section: v.jXE.FRIENDS_LIST_FRIEND_ROW,
+          object: v.qAy.BUTTON_CTA,
+          objectType: v.AnalyticsObjectTypes.GIFT
         },
-        giftMessage: D()
+        giftMessage: R()
       })
     },
-    D = () => n === y.hX.FRIEND_ANNIVERSARY ? C.intl.formatToPlainString(C.t["L2s/N3"], {
+    R = () => n === y.hX.FRIEND_ANNIVERSARY ? C.intl.formatToPlainString(C.t["L2s/N3"], {
       numberOfYears: E.Z.getFriendAnniversaryYears(t.id)
-    }) : (0, b.Ou)(n),
-    M = () => n === y.hX.FRIEND_ANNIVERSARY ? C.intl.string(C.t["4LohBA"]) : (0, b.Ou)(n),
+    }) : (0, _.Ou)(n),
+    M = () => n === y.hX.FRIEND_ANNIVERSARY ? C.intl.string(C.t["4LohBA"]) : (0, _.Ou)(n),
     k = i.useRef(null);
   return (0, r.jsx)(u.yRy, {
     targetElementRef: k,
     animation: u.yRy.Animation.FADE,
     nudgeAlignIntoViewport: false,
     scrollBehavior: "close",
-    shouldShow: j,
+    shouldShow: P,
     position: "right",
     align: "top",
     spacing: 9,
     onRequestClose: () => {
       x(false)
     },
-    renderPopout: e => (0, r.jsx)(v.Z, {
+    renderPopout: e => (0, r.jsx)(I.Z, {
       giftIntentType: n,
-      premiumGiftIntentCardType: v.U.COACHMARK,
+      premiumGiftIntentCardType: I.U.COACHMARK,
       recipientUser: t,
-      onMouseEnter: Z,
-      onMouseLeave: A,
+      onMouseEnter: A,
+      onMouseLeave: Z,
       popoutPosition: e.position,
       analyticsPage: l,
-      analyticsSection: I.jXE.FRIENDS_LIST_FRIEND_ROW_GIFT_POPOUT,
+      analyticsSection: v.jXE.FRIENDS_LIST_FRIEND_ROW_GIFT_POPOUT,
       giftIntentSecondaryAction: y.X2.SEND_MESSAGE,
       glow: true
     }),
     children: () => w ? (0, r.jsx)(u.P3F, {
       innerRef: k,
       "aria-label": M(),
-      onClick: R,
-      className: a()(N.actionButton, S.popoutButton, {
-        [N.highlight]: T
+      onClick: D,
+      className: a()(T.actionButton, S.popoutButton, {
+        [T.highlight]: N
       }),
       onMouseEnter: L,
-      onMouseLeave: A,
-      children: (0, r.jsx)(o.animated.div, {
+      onMouseLeave: Z,
+      children: (0, r.jsx)(s.animated.div, {
         className: S.spriteContainer,
         children: (0, r.jsx)("div", {
           className: S.sprite
@@ -130,9 +130,9 @@ function T(e) {
     }) : (0, r.jsx)(c.zx, {
       "data-migration-pending": true,
       buttonRef: k,
-      onClick: R,
+      onClick: D,
       onMouseEnter: L,
-      onMouseLeave: A,
+      onMouseLeave: Z,
       children: (0, r.jsxs)("div", {
         className: S.pillContentContainer,
         children: [(0, r.jsx)(u.OgN, {

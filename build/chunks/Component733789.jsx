@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 733789, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => I
 }), require("./953529.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk157684 = require("./157684.js");
 
-function b(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,61 +27,61 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
 let E = {
   [Chunk981631.AzA.NOW_PLAYING]: {
-    single: (e, t) => g.intl.format(g.t.NEckza, {
+    single: (e, t) => m.intl.format(m.t.NEckza, {
       user1: e.username,
       user1Hook: () => t(e)
     }),
-    double: (e, t, n) => g.intl.format(g.t["6uWulc"], {
+    double: (e, t, n) => m.intl.format(m.t["6uWulc"], {
       user1: e.username,
       user1Hook: () => n(e),
       user2: t.username,
       user2Hook: () => n(t)
     }),
-    other: e => g.intl.format(g.t["8fMgRU"], {
+    other: e => m.intl.format(m.t["8fMgRU"], {
       count: e
     })
   },
   [Chunk981631.AzA.RECENTLY_PLAYED]: {
-    single: (e, t) => g.intl.format(g.t["nB/JNB"], {
+    single: (e, t) => m.intl.format(m.t["nB/JNB"], {
       user1: e.username,
       user1Hook: () => t(e)
     }),
-    double: (e, t, n) => g.intl.format(g.t.AZCcHU, {
+    double: (e, t, n) => m.intl.format(m.t.AZCcHU, {
       user1: e.username,
       user1Hook: () => n(e),
       user2: t.username,
       user2Hook: () => n(t)
     }),
-    other: e => g.intl.format(g.t.yNuaTU, {
+    other: e => m.intl.format(m.t.yNuaTU, {
       count: e
     })
   },
   [Chunk981631.AzA.EVER_PLAYED]: {
-    single: (e, t) => g.intl.format(g.t.Fecf3N, {
+    single: (e, t) => m.intl.format(m.t.Fecf3N, {
       user1: e.username,
       user1Hook: () => t(e)
     }),
-    double: (e, t, n) => g.intl.format(g.t["0LiGbJ"], {
+    double: (e, t, n) => m.intl.format(m.t["0LiGbJ"], {
       user1: e.username,
       user1Hook: () => n(e),
       user2: t.username,
       user2Hook: () => n(t)
     }),
-    other: e => g.intl.format(g.t.Yx1rjU, {
+    other: e => m.intl.format(m.t.Yx1rjU, {
       count: e
     })
   }
@@ -99,9 +99,9 @@ class O extends Chunk647438.PureComponent {
       clickTrap: true,
       children: t => {
         var n, i;
-        return (0, r.jsx)("span", (n = _({
+        return (0, r.jsx)("span", (n = b({
           ref: this.activityDiscordTagRef,
-          className: m.username
+          className: g.username
         }, t), i = i = {
           children: e.username
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
@@ -145,17 +145,17 @@ class O extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), b(this, "activityDiscordTagRef", i.createRef()), b(this, "playerAvatarRef", i.createRef()), b(this, "renderUserTooltip", (e, t, n) => (0, r.jsxs)("div", {
-      className: m.tooltip,
+    super(...e), _(this, "activityDiscordTagRef", i.createRef()), _(this, "playerAvatarRef", i.createRef()), _(this, "renderUserTooltip", (e, t, n) => (0, r.jsxs)("div", {
+      className: g.tooltip,
       children: [(0, r.jsx)("div", {
         children: f.ZP.getUserTag(e)
       }), (0, r.jsx)(u.ZP, {
-        className: m.tooltipTimestamp,
+        className: g.tooltipTimestamp,
         start: t,
         end: n,
         location: u.ZP.Locations.ACTIVITY_FEED
       })]
-    })), b(this, "renderPlayer", (e, t, n, i) => {
+    })), _(this, "renderPlayer", (e, t, n, i) => {
       if (null == e) return null;
       let l = this.props.reason.userInfo.find(t => t.user === e);
       return null == l ? null : (0, r.jsx)(d.Z, {
@@ -163,26 +163,26 @@ class O extends Chunk647438.PureComponent {
         user: e,
         newAnalyticsLocations: [c.Z.AVATAR],
         clickTrap: true,
-        children: t => (0, r.jsx)(o.u, {
+        children: t => (0, r.jsx)(s.u, {
           __unsupportedReactNodeAsText: this.renderUserTooltip(e, l.startTime, l.endTime),
           "aria-label": (0, f.W5)(e, {
             decoration: "never"
           }),
-          children: (0, r.jsx)(s.qEK, _({
+          children: (0, r.jsx)(o.qEK, b({
             ref: this.playerAvatarRef,
-            className: a()(m.playerAvatar, {
-              [m.avatarMasked]: !i
+            className: a()(g.playerAvatar, {
+              [g.avatarMasked]: !i
             }),
             src: e.getAvatarURL(true, 32),
             "aria-label": e.username,
-            size: s.EFr.SIZE_32
+            size: o.EFr.SIZE_32
           }, t))
         })
       }, e.id)
-    }), b(this, "renderPlayerOverflow", (e, t, n) => (0, r.jsx)("div", {
-      className: m.playerOverflow,
+    }), _(this, "renderPlayerOverflow", (e, t, n) => (0, r.jsx)("div", {
+      className: g.playerOverflow,
       children: e
     }, n))
   }
 }
-let v = O
+let I = O

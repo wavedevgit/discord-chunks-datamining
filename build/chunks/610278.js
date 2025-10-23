@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 610278, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZP: () => b,
+  ZP: () => _,
   ro: () => f
 });
 var Chunk570140 = require("./570140.js"),
@@ -35,7 +35,7 @@ function h() {
   return Chunk570140.Z.wait(() => Chunk519938.bA(exports, Chunk981631.NYg.FRAME, {})), void(p = exports)
 }
 
-function g() {
+function m() {
   if ((0, Chunk958185.Z)({
       LayerStore: Chunk819640.Z,
       PopoutWindowStore: Chunk928518.Z
@@ -47,12 +47,12 @@ function g() {
   let e = p;
   null != module && Chunk366050.Z.isOpen(module) && Chunk570140.Z.wait(() => Chunk519938.$Z(module))
 }
-class m extends Chunk317770.Z {
+class g extends Chunk317770.Z {
   _initialize() {
-    Chunk591472.Z.addChangeListener(h), Chunk819640.Z.addChangeListener(g)
+    Chunk591472.Z.addChangeListener(h), Chunk819640.Z.addChangeListener(m)
   }
   _terminate() {
-    Chunk591472.Z.removeChangeListener(h), Chunk819640.Z.removeChangeListener(g)
+    Chunk591472.Z.removeChangeListener(h), Chunk819640.Z.removeChangeListener(m)
   }
 }
-let b = new m
+let _ = new g

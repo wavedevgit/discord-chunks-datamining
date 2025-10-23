@@ -23,10 +23,10 @@ function h(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let g = 10 * Chunk70956.Z.Millis.SECOND,
-  m = new Map,
-  b = new Set,
-  _ = (e, t, n) => {
+let m = 10 * Chunk70956.Z.Millis.SECOND,
+  g = new Map,
+  _ = new Set,
+  b = (e, t, n) => {
     n([u.Z.CLOSE, t], e)
   };
 class E extends Chunk836560.EventEmitter {
@@ -55,48 +55,48 @@ class E extends Chunk836560.EventEmitter {
         }, "Invalid opcode")
     }
   }
-  constructor(e, t, r, s) {
+  constructor(e, t, r, o) {
     var u;
     super(), u = this, h(this, "validateSocketClient", true), h(this, "logger", true), h(this, "createPostMessageProxySocket", true), h(this, "onFrameHandled", true), h(this, "handshakeFailureTimeoutId", true), h(this, "disconnectSocket", function(e, t) {
       var n, r;
       let i = arguments.length > 2 && true !== arguments[2] && arguments[2];
       u.emit("disconnect", e, i ? true : t), e.close(t.code, null != (n = t.message) ? n : "Unknown");
-      let [l] = null != (r = Array.from(m.entries()).find(t => {
+      let [l] = null != (r = Array.from(g.entries()).find(t => {
         let [n, r] = t;
         return r === e
       })) ? r : [null, null];
-      null != l && m.delete(l)
+      null != l && g.delete(l)
     }), h(this, "handleIFrameMount", e => {
       let {
         id: t
       } = e;
-      b.add(t), this.handshakeFailureTimeoutId = setTimeout(() => {
+      _.add(t), this.handshakeFailureTimeoutId = setTimeout(() => {
         Array.from(i.ZP.getSelfEmbeddedActivities().entries()).forEach(e => {
           let [t, n] = e;
           a.default.track(f.rMx.ACTIVITY_HANDSHAKE_TIMED_OUT, {
             application_id: t,
             channel_id: (0, l.p)(n.location),
             guild_id: (0, l.j)(n.location),
-            timeout_ms: g
+            timeout_ms: m
           })
         })
-      }, g)
+      }, m)
     }), h(this, "handleIFrameUnmount", e => {
       var t;
       let {
         id: n
       } = e;
-      b.delete(n);
-      let [r, i] = null != (t = Array.from(m.entries()).find(e => {
+      _.delete(n);
+      let [r, i] = null != (t = Array.from(g.entries()).find(e => {
         let [t, r] = e;
         return r.frameId === n
       })) ? t : [null, null];
       null != i && null != r && (this.disconnectSocket(i, {
         code: f.$VG.CLOSE_NORMAL,
         message: "iFrame gone"
-      }, true), m.delete(r))
+      }, true), g.delete(r))
     }), h(this, "handleMessage", (e, t, n) => {
-      let r = m.get(t);
+      let r = g.get(t);
       try {
         this.routeEvent(r, t, e, n)
       } catch (e) {
@@ -104,7 +104,7 @@ class E extends Chunk836560.EventEmitter {
         null != r ? this.disconnectSocket(r, {
           code: e.code,
           message: e.message
-        }, true) : _(t, {
+        }, true) : b(t, {
           code: e.code,
           message: e.message
         }, n)
@@ -140,34 +140,34 @@ class E extends Chunk836560.EventEmitter {
           closeCode: f.$VG.CLOSE_UNSUPPORTED
         }, e.message)
       }
-      let o = t.frame_id;
-      if (!b.has(o)) throw this.logger.error("Unrecognized frame ID ".concat(o)), new c.Z({
+      let s = t.frame_id;
+      if (!_.has(s)) throw this.logger.error("Unrecognized frame ID ".concat(s)), new c.Z({
         closeCode: f.$VG.CLOSE_UNSUPPORTED
-      }, "Unrecognized frame ID ".concat(o));
+      }, "Unrecognized frame ID ".concat(s));
       null != t.sdk_version && a.default.track(f.rMx.ACTIVITY_HANDSHAKE, {
         application_id: t.client_id,
         sdk_version: t.sdk_version
       });
       try {
-        var s;
+        var o;
         i = this.createPostMessageProxySocket({
           origin: e,
           postMessageToRPCClient: r,
-          frameId: o,
+          frameId: s,
           version: Number(t.v),
           logger: this.logger,
-          postClose: _,
-          encoding: null != (s = t.encoding) ? s : "json"
+          postClose: b,
+          encoding: null != (o = t.encoding) ? o : "json"
         })
       } catch (e) {
         throw this.logger.error("Error opening window socket ".concat(e)), e
       }
       this.logger.info("Socket Opened: ".concat(i.id));
       try {
-        if (await this.validateSocketClient(i, e, t.client_id), !b.has(o)) throw this.logger.error("Frame ID ".concat(o, " no longer exists")), new c.Z({
+        if (await this.validateSocketClient(i, e, t.client_id), !_.has(s)) throw this.logger.error("Frame ID ".concat(s, " no longer exists")), new c.Z({
           closeCode: f.$VG.CLOSE_UNSUPPORTED
-        }, "Unrecognized frame ID ".concat(o));
-        m.set(e, i), b.delete(o), i.authorization.scopes.push(p.b_), this.emit("connect", i), this.logger.info("Socket Validated: ".concat(i.id))
+        }, "Unrecognized frame ID ".concat(s));
+        g.set(e, i), _.delete(s), i.authorization.scopes.push(p.b_), this.emit("connect", i), this.logger.info("Socket Validated: ".concat(i.id))
       } catch (e) {
         throw this.logger.info("Socket Closed: ".concat(i.id, ", ").concat(e.message)), e
       }
@@ -184,6 +184,6 @@ class E extends Chunk836560.EventEmitter {
         }, e.message)
       }
       this.disconnectSocket(e, t)
-    }), o.S.subscribe(f.CkL.IFRAME_MOUNT, this.handleIFrameMount), o.S.subscribe(f.CkL.IFRAME_UNMOUNT, this.handleIFrameUnmount), this.validateSocketClient = e, this.logger = t, this.createPostMessageProxySocket = r, this.onFrameHandled = s
+    }), s.S.subscribe(f.CkL.IFRAME_MOUNT, this.handleIFrameMount), s.S.subscribe(f.CkL.IFRAME_UNMOUNT, this.handleIFrameUnmount), this.validateSocketClient = e, this.logger = t, this.createPostMessageProxySocket = r, this.onFrameHandled = o
   }
 }

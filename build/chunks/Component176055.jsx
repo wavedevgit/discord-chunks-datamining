@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 176055, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => j
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk295265 = require("./295265.js");
 
-function N(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -35,7 +35,7 @@ function N(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class T extends Chunk647438.PureComponent {
+class N extends Chunk647438.PureComponent {
   renderMemberInfo() {
     let {
       approximateMemberCount: e,
@@ -68,16 +68,16 @@ class T extends Chunk647438.PureComponent {
       isInGuild: n,
       isLurking: i,
       isAuthenticated: l,
-      className: o,
-      pageSize: s
+      className: s,
+      pageSize: o
     } = this.props;
     if (exports && require) return null;
     let d = (0, Chunk411198.B3)(module),
       p = Chunk388032.intl.string(Chunk388032.t.pxwdrA),
       f = this.handleJoinOrView,
-      b = Chunk755721.zx.Looks.FILLED,
-      _ = Chunk755721.zx.Colors.PRIMARY;
-    return Chunk120356 ? require ? (b = Chunk755721.zx.Looks.OUTLINED, _ = Chunk295265.buttonColorInGuild, p = (0, Chunk951288.jsxs)(Chunk600164.Z, {
+      _ = Chunk755721.zx.Looks.FILLED,
+      b = Chunk755721.zx.Colors.PRIMARY;
+    return Chunk120356 ? require ? (_ = Chunk755721.zx.Looks.OUTLINED, b = Chunk295265.buttonColorInGuild, p = (0, Chunk951288.jsxs)(Chunk600164.Z, {
       align: Chunk600164.Z.Align.CENTER,
       children: [(0, Chunk951288.jsx)("div", {
         children: Chunk388032.intl.string(Chunk388032.t.cEnaWx)
@@ -119,7 +119,7 @@ class T extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), N(this, "handleJoinOrView", async () => {
+    super(...e), T(this, "handleJoinOrView", async () => {
       let {
         guild: e,
         skuId: t,
@@ -131,26 +131,26 @@ class T extends Chunk647438.PureComponent {
       else try {
         await d.Z.joinGuild(e.id, {
           lurker: true,
-          source: I.vtS.APPLICATION_STORE
+          source: v.vtS.APPLICATION_STORE
         }), i()
       } catch (e) {}
-    }), N(this, "handleLogin", () => {
+    }), T(this, "handleLogin", () => {
       let e = {
-        redirect_to: I.Z5c.APPLICATION_STORE_LISTING_SKU(this.props.skuId)
+        redirect_to: v.Z5c.APPLICATION_STORE_LISTING_SKU(this.props.skuId)
       };
-      (0, _.uL)(I.Z5c.LOGIN, {
-        search: (0, o.stringify)(e),
+      (0, b.uL)(v.Z5c.LOGIN, {
+        search: (0, s.stringify)(e),
         source: "verified_guild_invite"
       })
     })
   }
 }
-let P = (0, Chunk666743.Z)(Chunk442837.ZP.connectStores([Chunk430824.Z, Chunk41776.Z], e => {
+let j = (0, Chunk666743.Z)(Chunk442837.ZP.connectStores([Chunk430824.Z, Chunk41776.Z], e => {
   let {
     guild: t
-  } = e, n = b.Z.isLurking(t.id);
+  } = e, n = _.Z.isLurking(t.id);
   return {
     isInGuild: null != O.Z.getGuild(t.id) && !n,
     isLurking: n
   }
-})(T))
+})(N))

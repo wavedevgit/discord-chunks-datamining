@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 144145, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => P
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function N(e) {
+function T(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -46,7 +46,7 @@ function N(e) {
   return e
 }
 
-function T(e, t) {
+function N(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -58,15 +58,15 @@ function T(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let P = Chunk726542.Z.get(Chunk981631.ABu.XBOX).name;
+let j = Chunk726542.Z.get(Chunk981631.ABu.XBOX).name;
 
-function j(e) {
+function P(e) {
   let {
     currentActivities: t
-  } = e, n = t.length > 1, j = function(e) {
+  } = e, n = t.length > 1, P = function(e) {
     let {
       currentActivities: t
-    } = e, n = (0, l.e7)([b.Z], () => b.Z.getAccounts().some(e => e.type === c.Z.get(C.ABu.XBOX).type)), i = t.some(e => {
+    } = e, n = (0, l.e7)([_.Z], () => _.Z.getAccounts().some(e => e.type === c.Z.get(C.ABu.XBOX).type)), i = t.some(e => {
       let {
         activity: t
       } = e;
@@ -74,30 +74,30 @@ function j(e) {
     });
     return n || !i ? null : (0, r.jsx)(a.sNh, {
       id: "xbox-connect",
-      action: () => (0, m.openUserSettings)(g.n.CONNECTIONS_PANEL, {
+      action: () => (0, g.openUserSettings)(m.n.CONNECTIONS_PANEL, {
         section: C.oAB.CONNECTIONS
       }),
       label: S.intl.formatToPlainString(S.t.XWSHTb, {
-        platform: P
+        platform: j
       })
     })
   }(e), x = function(e) {
     let {
       currentActivities: t
-    } = e, n = i.useContext(v.AnalyticsContext);
-    return (0, l.Wu)([f.ZP, E.Z, h.Z, O.Z, _.Z], () => t.filter(e => !(0, d.Z)(e.activity)).map(e => {
+    } = e, n = i.useContext(I.AnalyticsContext);
+    return (0, l.Wu)([f.ZP, E.Z, h.Z, O.Z, b.Z], () => t.filter(e => !(0, d.Z)(e.activity)).map(e => {
       let {
         activity: t,
         game: r
       } = e, i = E.Z.getActiveLibraryApplication(r.id);
-      return T(N({}, e), {
+      return N(T({}, e), {
         libraryApplication: i,
         canJoin: null != t && (0, u.Z)(t, C.xjy.JOIN) && t.type === C.IIU.PLAYING,
         canPlay: (0, y.t)({
           LibraryApplicationStore: E.Z,
           LaunchableGameStore: h.Z,
           DispatchApplicationStore: O.Z,
-          ConnectedAppsStore: _.Z,
+          ConnectedAppsStore: b.Z,
           applicationId: r.id,
           branchId: null != i ? i.branchId : null
         }),
@@ -106,12 +106,12 @@ function j(e) {
         location: n.location
       })
     }), [n.location, t])
-  }(e), Z = [];
+  }(e), A = [];
   for (let e of x) {
     let {
       activity: t
     } = e;
-    null != t && null != t.type && Z.push(function(e, t) {
+    null != t && null != t.type && A.push(function(e, t) {
       let {
         canJoin: n,
         activity: i,
@@ -120,13 +120,13 @@ function j(e) {
       if (!n || null == i) return null;
       async function c() {
         if (null == i) return;
-        let e = await o.Z.sendActivityInviteUser({
+        let e = await s.Z.sendActivityInviteUser({
           type: C.mFx.JOIN_REQUEST,
           userId: l.id,
           activity: i,
           location: C.Sbl.USER_ACTIVITY_ACTIONS
         });
-        null != e && s.default.selectPrivateChannel(e.id)
+        null != e && o.default.selectPrivateChannel(e.id)
       }
       return (0, r.jsx)(a.sNh, {
         id: "join-".concat(i.session_id),
@@ -140,12 +140,12 @@ function j(e) {
         activity: n,
         game: i,
         libraryApplication: l,
-        location: o,
-        canPlay: s,
+        location: s,
+        canPlay: o,
         isRunning: c,
         isLaunching: u
       } = e;
-      if (!s || null == n) return null;
+      if (!o || null == n) return null;
       let d = c ? S.intl.formatToPlainString(S.t["gBme/4"], {
         name: i.name
       }) : u ? S.intl.formatToPlainString(S.t.WtSQwG, {
@@ -154,9 +154,9 @@ function j(e) {
       return (0, r.jsx)(a.sNh, {
         id: "play-".concat(n.session_id),
         action: function() {
-          (0, I.playApplication)(i.id, l, {
+          (0, v.playApplication)(i.id, l, {
             analyticsParams: {
-              location: T(N({}, o), {
+              location: N(T({}, s), {
                 object: C.qAy.LIST_ITEM
               })
             }
@@ -169,5 +169,5 @@ function j(e) {
       })
     }(e, n))
   }
-  return [j, ...Z]
+  return [P, ...A]
 }

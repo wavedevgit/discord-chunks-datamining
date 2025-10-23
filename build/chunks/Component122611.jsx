@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 122611, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => P
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -26,25 +26,25 @@ var Chunk951288 = require("./951288.js"),
   Chunk785203 = require("./785203.js"),
   Chunk652785 = require("./652785.js"),
   Chunk921944 = require("./921944.js");
-let N = new Set([Chunk704215.z.CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION, Chunk704215.z.CHANNEL_NOTICE_GUILD_BANNER]);
+let T = new Set([Chunk704215.z.CHANNEL_NOTICE_PREMIUM_GUILD_SUBSCRIPTION, Chunk704215.z.CHANNEL_NOTICE_GUILD_BANNER]);
 
-function T(e) {
+function N(e) {
   e.stopPropagation()
 }
 
-function P(e) {
+function j(e) {
   var t;
   let {
     guild: n
-  } = e, [p, h] = i.useState(null != (t = o.K.get(C.Iv)) ? t : 0), g = (0, l.Wu)(C.HG, () => C.XN.filter(e => {
+  } = e, [p, h] = i.useState(null != (t = s.K.get(C.Iv)) ? t : 0), m = (0, l.Wu)(C.HG, () => C.XN.filter(e => {
     let {
       dismissibleContentType: t,
       store: r
     } = e;
-    returntrue === (null == r ? true : r.channelNoticePredicate(n, p)) && !N.has(t)
+    returntrue === (null == r ? true : r.channelNoticePredicate(n, p)) && !T.has(t)
   }).map(e => e.dismissibleContentType), [n, p]);
   return (0, r.jsx)(c.ZP, {
-    contentTypes: g,
+    contentTypes: m,
     groupName: S.R.CHANNEL_NOTICES,
     children: e => {
       let {
@@ -52,7 +52,7 @@ function P(e) {
         markAsDismissed: i
       } = e, l = () => {
         var e;
-        e = Date.now(), o.K.set(C.Iv, e), h(e), i(S.L.UNKNOWN)
+        e = Date.now(), s.K.set(C.Iv, e), h(e), i(S.L.UNKNOWN)
       }, c = (() => {
         switch (t) {
           case a.z.CHANNEL_NOTICE_HUBLINK:
@@ -81,7 +81,7 @@ function P(e) {
               markAsDismissed: l
             });
           case a.z.LINKED_ROLE_ADMIN_GUILD:
-            return (0, r.jsx)(s.Z, {
+            return (0, r.jsx)(o.Z, {
               guild: n,
               markAsDismissed: () => i(S.L.UNKNOWN)
             });
@@ -90,47 +90,47 @@ function P(e) {
         }
       })();
       return null == c ? null : (0, r.jsx)("div", {
-        onContextMenu: T,
+        onContextMenu: N,
         children: c
       })
     }
   })
 }
-let j = e => {
+let P = e => {
   let {
     guild: t
   } = e;
-  switch ((0, I.Z)(t)) {
-    case I.R.ENABLE_PUBLIC_GUILD:
-      return (0, r.jsx)(b.Z, {
+  switch ((0, v.Z)(t)) {
+    case v.R.ENABLE_PUBLIC_GUILD:
+      return (0, r.jsx)(_.Z, {
         guild: t
       });
-    case I.R.MAX_MEMBER_COUNT:
-      return (0, r.jsx)(v.Z, {
+    case v.R.MAX_MEMBER_COUNT:
+      return (0, r.jsx)(I.Z, {
         guild: t
       });
-    case I.R.GUILD_LIVE_CHANNEL:
+    case v.R.GUILD_LIVE_CHANNEL:
       return (0, r.jsx)(p.ZP, {
         guild: t
       });
-    case I.R.GUILD_MFA_WARNING:
+    case v.R.GUILD_MFA_WARNING:
       return (0, r.jsx)(E.Z, {
         guild: t
       });
-    case I.R.COMMANDS_MIGRATION:
-      return (0, r.jsx)(g.Z, {
-        guild: t
-      });
-    case I.R.APPLICATION_SUBSCRIPTION_EXPIRATION:
+    case v.R.COMMANDS_MIGRATION:
       return (0, r.jsx)(m.Z, {
         guild: t
       });
-    case I.R.HUB_STUDY_ROOM:
+    case v.R.APPLICATION_SUBSCRIPTION_EXPIRATION:
+      return (0, r.jsx)(g.Z, {
+        guild: t
+      });
+    case v.R.HUB_STUDY_ROOM:
       return (0, r.jsx)(h.Z, {
         guild: t
       })
   }
-  return _.s.isDisallowPopupsSet() ? null : (0, r.jsx)(P, {
+  return b.s.isDisallowPopupsSet() ? null : (0, r.jsx)(j, {
     guild: e.guild
   })
 }

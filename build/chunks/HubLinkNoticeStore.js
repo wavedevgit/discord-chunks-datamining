@@ -11,7 +11,7 @@ var r, i, Chunk442837 = require("./442837.js"),
 let u = false;
 
 function d(e) {
-  let t = s.Z.getGuild(e);
+  let t = o.Z.getGuild(e);
   return null != t && !!t.features.has(c.GuildFeatures.HUB) && (u = true, true)
 }
 

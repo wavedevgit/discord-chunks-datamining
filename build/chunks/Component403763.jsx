@@ -24,11 +24,11 @@ function f() {
   let f = (0, Chunk34828.X)(Chunk131951.Z.getInputDevices()[exports]),
     h = (0, Chunk34828.X)(Chunk131951.Z.getOutputDevices()[Chunk392711]);
   if (l().some(Chunk34828.Z.lastDeviceConnected, e => d.has(e.displayName) || e.displayName === f || e.displayName === h)) return;
-  let g = l().some(Chunk34828.Z.lastDeviceConnected, e => o.Z.isCertified(c.Z.inputDevices[e.displayName]) || o.Z.isCertified(c.Z.outputDevices[e.displayName]));
-  if ((exports === Chunk65154.w5 && Chunk34828.Z.lastInputSystemDevice.justChanged || Chunk392711 === Chunk65154.w5 && Chunk34828.Z.lastOutputSystemDevice.justChanged) && !g) return;
-  let m = l().first(Object.keys(Chunk34828.Z.lastDeviceConnected)),
-    b = null != m && "" !== m ? Chunk34828.Z.lastDeviceConnected[m] : null;
-  null != b && (Chunk34828.Z.getState().ignoredDevices[b.displayName] || (Chunk34828.Z.initialized && null != m && (Chunk463395.Z.isCertified(Chunk34828.Z.inputDevices[m]) ? e = Chunk463395.Z.getCertifiedDevice(Chunk34828.Z.inputDevices[m]) : Chunk463395.Z.isCertified(Chunk34828.Z.outputDevices[m]) && (e = Chunk463395.Z.getCertifiedDevice(Chunk34828.Z.outputDevices[m]))), (0, Chunk481060.ZDy)(async () => {
+  let m = l().some(Chunk34828.Z.lastDeviceConnected, e => s.Z.isCertified(c.Z.inputDevices[e.displayName]) || s.Z.isCertified(c.Z.outputDevices[e.displayName]));
+  if ((exports === Chunk65154.w5 && Chunk34828.Z.lastInputSystemDevice.justChanged || Chunk392711 === Chunk65154.w5 && Chunk34828.Z.lastOutputSystemDevice.justChanged) && !m) return;
+  let g = l().first(Object.keys(Chunk34828.Z.lastDeviceConnected)),
+    _ = null != g && "" !== g ? Chunk34828.Z.lastDeviceConnected[g] : null;
+  null != _ && (Chunk34828.Z.getState().ignoredDevices[_.displayName] || (Chunk34828.Z.initialized && null != g && (Chunk463395.Z.isCertified(Chunk34828.Z.inputDevices[g]) ? e = Chunk463395.Z.getCertifiedDevice(Chunk34828.Z.inputDevices[g]) : Chunk463395.Z.isCertified(Chunk34828.Z.outputDevices[g]) && (e = Chunk463395.Z.getCertifiedDevice(Chunk34828.Z.outputDevices[g]))), (0, Chunk481060.ZDy)(async () => {
     let {
       default: t
     } = await require.e("30042").then(require.bind(require, 30575));
@@ -38,7 +38,7 @@ function f() {
         onClose: l
       } = n;
       return (0, r.jsx)(t, {
-        device: b,
+        device: _,
         certifiedDeviceMetadata: e,
         transitionState: i,
         onClose: l

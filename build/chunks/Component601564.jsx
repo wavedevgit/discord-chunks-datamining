@@ -2,7 +2,7 @@
 /** chunk id: 601564, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
   default: () => x,
-  getPageSize: () => P
+  getPageSize: () => j
 }), require("./388685.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk430355 = require("./430355.js");
 
-function N(e, t, n) {
+function T(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -36,19 +36,19 @@ function N(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let T = (0, Chunk663993.Un)({
+let N = (0, Chunk663993.Un)({
   createPromise: () => Promise.all([require.e("68264"), require.e("87626")]).then(require.bind(require, 496691)),
   webpackId: 496691
 });
 
-function P(e) {
+function j(e) {
   return e < y.x ? y.b.SMALL : y.b.LARGE
 }
 Chunk442837.ZP.initialize();
-class j extends Chunk647438.PureComponent {
+class P extends Chunk647438.PureComponent {
   componentDidMount() {
     (0, Chunk930118.Y)(this.props.location), this.stopListeningToHistory = (0, Chunk703656.s1)().listen(e => {
-      e.pathname.startsWith(I.Z5c.APPLICATION_STORE) && (0, s.Y)(e)
+      e.pathname.startsWith(v.Z5c.APPLICATION_STORE) && (0, o.Y)(e)
     }), this.props.isAuthenticated && (0, Chunk355467.tZ)(), Chunk714338.Z.disable(), Chunk714338.Z.setLayout(Chunk447269.r), Chunk714338.Z.enable(), (0, Chunk108427.e)("application_store")
   }
   componentWillUnmount() {
@@ -70,7 +70,7 @@ class j extends Chunk647438.PureComponent {
     } = this.props, n = module ? (0, Chunk951288.jsx)("div", {
       className: Chunk430355.applicationStore,
       children: this.renderContent()
-    }) : (0, Chunk951288.jsx)(T, {
+    }) : (0, Chunk951288.jsx)(N, {
       className: Chunk430355.applicationStore,
       location: exports,
       render: this.renderContent
@@ -81,7 +81,7 @@ class j extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), N(this, "stopListeningToHistory", true), N(this, "renderStoreListing", e => {
+    super(...e), T(this, "stopListeningToHistory", true), T(this, "renderStoreListing", e => {
       let {
         match: {
           params: {
@@ -92,45 +92,45 @@ class j extends Chunk647438.PureComponent {
         },
         location: a
       } = e, {
-        width: o
-      } = this.props, s = (0, l.parse)(a.search);
+        width: s
+      } = this.props, o = (0, l.parse)(a.search);
       return (0, r.jsx)(u.Z, {
-        page: I.ZY5.STORE_LISTING,
+        page: v.ZY5.STORE_LISTING,
         root: true,
-        children: (0, r.jsx)(v.Z, {
+        children: (0, r.jsx)(I.Z, {
           skuId: t,
           applicationId: n,
           slug: i,
           location: a,
-          storeListingId: s.store_listing_id,
-          pageSize: P(o)
+          storeListingId: o.store_listing_id,
+          pageSize: j(s)
         })
       })
-    }), N(this, "renderContent", () => (0, r.jsxs)(a.rs, {
+    }), T(this, "renderContent", () => (0, r.jsxs)(a.rs, {
       children: [(0, r.jsx)(a.AW, {
-        path: I.Z5c.APPLICATION_STORE,
+        path: v.Z5c.APPLICATION_STORE,
         exact: true,
         render: () => (0, r.jsx)(u.Z, {
-          page: I.ZY5.STORE_DIRECTORY_HOME,
+          page: v.ZY5.STORE_DIRECTORY_HOME,
           root: true,
           children: (0, r.jsx)(O.Z, {})
         })
       }), (0, r.jsx)(a.AW, {
-        path: I.Z5c.APPLICATION_STORE_LISTING_APPLICATION(":applicationId", ":slug"),
+        path: v.Z5c.APPLICATION_STORE_LISTING_APPLICATION(":applicationId", ":slug"),
         render: this.renderStoreListing
       }), (0, r.jsx)(a.AW, {
-        path: I.Z5c.APPLICATION_STORE_LISTING_APPLICATION(":applicationId"),
+        path: v.Z5c.APPLICATION_STORE_LISTING_APPLICATION(":applicationId"),
         render: this.renderStoreListing
       }), (0, r.jsx)(a.AW, {
-        path: I.Z5c.APPLICATION_STORE_LISTING_SKU(":skuId", ":slug"),
+        path: v.Z5c.APPLICATION_STORE_LISTING_SKU(":skuId", ":slug"),
         render: this.renderStoreListing
       }), (0, r.jsx)(a.AW, {
-        path: I.Z5c.APPLICATION_STORE_LISTING_SKU(":skuId"),
+        path: v.Z5c.APPLICATION_STORE_LISTING_SKU(":skuId"),
         render: this.renderStoreListing
       }), (0, r.jsx)(a.l_, {
-        to: I.Z5c.APP
+        to: v.Z5c.APP
       })]
     }))
   }
 }
-let x = (0, Chunk843611.EN)((0, Chunk666743.Z)((0, Chunk112724.Z)(j)))
+let x = (0, Chunk843611.EN)((0, Chunk666743.Z)((0, Chunk112724.Z)(P)))

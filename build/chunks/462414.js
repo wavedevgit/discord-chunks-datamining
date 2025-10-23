@@ -15,7 +15,7 @@ var Chunk243814 = require("./243814.js"),
 
 function p(e) {
   let t = e.application.id;
-  if (null == t) throw new o.Z({
+  if (null == t) throw new s.Z({
     errorCode: u.lTL.INVALID_COMMAND
   }, "No application.");
   return t
@@ -23,8 +23,8 @@ function p(e) {
 let f = {
   [Chunk981631.Etm.SET_VOICE_SETTINGS_2]: {
     scope: Chunk186901.lH,
-    validation: e => (0, s.Z)(e).required().keys({
-      input_mode: (0, s.Z)(e).keys({
+    validation: e => (0, o.Z)(e).required().keys({
+      input_mode: (0, o.Z)(e).keys({
         type: e.string().valid(Object.keys(u.pM4)),
         shortcut: e.string().required()
       }),
@@ -37,21 +37,21 @@ let f = {
         args: {
           input_mode: n,
           self_mute: r,
-          self_deaf: o
+          self_deaf: s
         }
-      } = e, s = p(t);
+      } = e, o = p(t);
       null != n && i.Z.setMode(n.type, {
         shortcut: (0, a.Kd)(n.shortcut)
-      }, s), null != r && r !== l.Z.isSelfMute(s) && i.Z.toggleSelfMute({
-        context: s
-      }), null != o && o !== l.Z.isSelfDeaf(s) && i.Z.toggleSelfDeaf({
-        context: s
+      }, o), null != r && r !== l.Z.isSelfMute(o) && i.Z.toggleSelfMute({
+        context: o
+      }), null != s && s !== l.Z.isSelfDeaf(o) && i.Z.toggleSelfDeaf({
+        context: o
       })
     }
   },
   [Chunk981631.Etm.SET_USER_VOICE_SETTINGS_2]: {
     scope: Chunk186901.lH,
-    validation: e => (0, s.Z)(e).required().keys({
+    validation: e => (0, o.Z)(e).required().keys({
       user_id: e.string().required(),
       volume: e.number().min(0).max(200),
       mute: e.boolean()
@@ -64,15 +64,15 @@ let f = {
           mute: r,
           volume: a
         }
-      } = e, o = p(t);
-      null != r && r !== l.Z.isLocalMute(n, o) && i.Z.toggleLocalMute(n, o), null != a && i.Z.setLocalVolume(n, a, o)
+      } = e, s = p(t);
+      null != r && r !== l.Z.isLocalMute(n, s) && i.Z.toggleLocalMute(n, s), null != a && i.Z.setLocalVolume(n, a, s)
     }
   },
   [Chunk981631.Etm.PUSH_TO_TALK]: {
     scope: {
       [Chunk186901.Gp.ALL]: [Chunk243814.x.RPC, Chunk243814.x.RPC_VOICE_WRITE]
     },
-    validation: e => (0, s.Z)(e).required().keys({
+    validation: e => (0, o.Z)(e).required().keys({
       active: e.boolean()
     }),
     handler(e) {

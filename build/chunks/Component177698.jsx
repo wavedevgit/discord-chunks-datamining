@@ -19,7 +19,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function b(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function b(e) {
   return e
 }
 
-function _(e, t) {
+function b(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -59,46 +59,46 @@ let E = (0, Chunk703912.Z)(e => {
     parsedPermissions: f,
     responseType: E,
     redirectUri: O,
-    codeChallenge: v,
+    codeChallenge: I,
     codeChallengeMethod: y,
-    state: I,
+    state: v,
     guildId: C,
     channelId: S,
-    prompt: N,
-    disableGuildSelect: T,
-    disclosures: P,
-    integrationType: j,
+    prompt: T,
+    disableGuildSelect: N,
+    disclosures: j,
+    integrationType: P,
     pid: x,
-    signal: Z
-  } = e, A = "OAuth2Authorize_".concat(n, "_").concat(C, "_").concat(S), w = null != j ? null == u ? true : u.get(j) : true, L = null != (t = null == w ? true : w.application) ? t : a.Z.getApplication(n);
+    signal: A
+  } = e, Z = "OAuth2Authorize_".concat(n, "_").concat(C, "_").concat(S), w = null != P ? null == u ? true : u.get(P) : true, L = null != (t = null == w ? true : w.application) ? t : a.Z.getApplication(n);
   return new Promise((e, t) => {
     let a = (0, h.jU)(x),
       w = i.z1l;
     null != L && null != (0, l.ZP)({
       application: L,
       channelId: S
-    }) ? w = i.u1M : a.context === g.IlC.POPOUT && (w = i.u1M);
-    let R = false,
-      D = l => {
+    }) ? w = i.u1M : a.context === m.IlC.POPOUT && (w = i.u1M);
+    let D = false,
+      R = l => {
         let {
-          clientId: o,
-          location: s
+          clientId: s,
+          location: o
         } = l;
-        if (null == o || o === n) {
-          if (R = true, null == s) {
+        if (null == s || s === n) {
+          if (D = true, null == o) {
             t(new p.Z({
-              errorCode: g.lTL.OAUTH2_ERROR
+              errorCode: m.lTL.OAUTH2_ERROR
             }, "OAuth2 Error: No location provided")), a.lock();
             return
           }
-          if (e(s), null == O || null == L) return void a.lock();
-          null == new URL(s).searchParams.get("error") ? (0, i.h7j)(e => (0, r.jsx)(c.$0, b({
+          if (e(o), null == O || null == L) return void a.lock();
+          null == new URL(o).searchParams.get("error") ? (0, i.h7j)(e => (0, r.jsx)(c.$0, _({
             application: L
           }, e)), {
             onCloseCallback: () => {
               a.lock()
             }
-          }, w) : (0, i.h7j)(e => (0, r.jsx)(c.ks, b({}, e)), {
+          }, w) : (0, i.h7j)(e => (0, r.jsx)(c.ks, _({}, e)), {
             onCloseCallback: () => {
               a.lock()
             }
@@ -109,11 +109,11 @@ let E = (0, Chunk703912.Z)(e => {
         cleanup: M
       } = function(e, t) {
         function n() {
-          (0, i.Mr3)(e) && (0, i.h7j)(e => (0, r.jsx)(s.j, _(b({}, e), {
-            title: m.intl.string(m.t.j2d6Km),
-            subtitle: m.intl.string(m.t["4LKmN5"]),
+          (0, i.Mr3)(e) && (0, i.h7j)(e => (0, r.jsx)(o.j, b(_({}, e), {
+            title: g.intl.string(g.t.j2d6Km),
+            subtitle: g.intl.string(g.t["4LKmN5"]),
             actions: [{
-              text: m.intl.string(m.t.cpT0Cq),
+              text: g.intl.string(g.t.cpT0Cq),
               onClick: e.onClose
             }]
           })))
@@ -123,30 +123,30 @@ let E = (0, Chunk703912.Z)(e => {
             null == t || t.removeEventListener("abort", n)
           }
         }
-      }(A, Z);
-    (0, i.h7j)(e => (0, r.jsx)(o.OAuth2AuthorizeModal, _(b({}, e), {
+      }(Z, A);
+    (0, i.h7j)(e => (0, r.jsx)(s.OAuth2AuthorizeModal, b(_({}, e), {
       authorizations: u,
       clientId: n,
       scopes: null != d ? d : [],
-      disclosures: null != P ? P : [],
-      callback: D,
+      disclosures: null != j ? j : [],
+      callback: R,
       responseType: E,
       redirectUri: O,
-      codeChallenge: v,
+      codeChallenge: I,
       codeChallengeMethod: y,
-      state: I,
+      state: v,
       permissions: f,
       guildId: C,
       channelId: S,
-      prompt: N,
-      disableGuildSelect: "boolean" == typeof T ? T : "true" === T,
-      integrationType: j,
+      prompt: T,
+      disableGuildSelect: "boolean" == typeof N ? N : "true" === N,
+      integrationType: P,
       cancelCompletesFlow: true
     })), {
-      modalKey: A,
+      modalKey: Z,
       onCloseCallback: () => {
-        M(), R || (t(new p.Z({
-          errorCode: g.lTL.OAUTH2_ERROR
+        M(), D || (t(new p.Z({
+          errorCode: m.lTL.OAUTH2_ERROR
         }, "User cancelled authorization")), a.lock())
       }
     }, w)

@@ -15,26 +15,26 @@ let c = function(e) {
     questId: t
   } = e;
   return (0, r.jsx)("div", {
-    className: o.previewBackground,
+    className: s.previewBackground,
     children: (0, r.jsxs)("div", {
-      className: o.previewCard,
+      className: s.previewCard,
       children: [(0, r.jsx)(i.Heading, {
         variant: "heading-md/semibold",
         children: a.intl.string(a.t.IcljUu)
       }), (0, r.jsx)("div", {
-        className: s.embedHelper,
+        className: o.embedHelper,
         children: (0, r.jsx)("span", {
-          className: s.helperText,
+          className: o.helperText,
           children: a.intl.string(a.t.q97mEu)
         })
       }), (0, r.jsx)("div", {
-        className: s.embedSections,
+        className: o.embedSections,
         children: (0, r.jsx)("div", {
-          className: s.embedSection,
+          className: o.embedSection,
           children: (0, r.jsx)("div", {
-            className: s.embedWrapper,
+            className: o.embedWrapper,
             children: (0, r.jsx)("div", {
-              className: s.questsEmbed,
+              className: o.questsEmbed,
               children: (0, r.jsx)(l.Z, {
                 questId: t
               })

@@ -20,7 +20,7 @@ var Chunk657707 = require("./657707.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk605548 = require("./605548.js");
 
-function _(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -53,36 +53,36 @@ function E(e, t) {
 }
 
 function O(e) {
-  var t, n, O, v;
+  var t, n, O, I;
   let y, {
-      content: I,
+      content: v,
       renderModalProps: C,
       analyticsLocations: S,
-      analyticsLocation: N,
-      isLightTheme: T
+      analyticsLocation: T,
+      isLightTheme: N
     } = e,
-    P = "AnnouncementModalVariant1_".concat(l.z[Number(I.dismissKey)]),
+    j = "AnnouncementModalVariant1_".concat(l.z[Number(v.dismissKey)]),
     {
-      onClose: j
+      onClose: P
     } = C,
-    x = null != (v = null == (t = I.button) ? true : t.copy) ? v : m.intl.string(m.t.YScQSF),
-    Z = (null == (n = I.button) ? true : n.buttonAction) === a.Wc.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button";
-  switch (null == (O = I.button) ? true : O.buttonAction) {
+    x = null != (I = null == (t = v.button) ? true : t.copy) ? I : g.intl.string(g.t.YScQSF),
+    A = (null == (n = v.button) ? true : n.buttonAction) === a.Wc.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button";
+  switch (null == (O = v.button) ? true : O.buttonAction) {
     case a.Wc.OPEN_MARKETING_PAGE:
       y = () => {
-        (0, u.uL)(g.Z5c.APPLICATION_STORE), j()
+        (0, u.uL)(m.Z5c.APPLICATION_STORE), P()
       };
       break;
     case a.Wc.OPEN_TIER_1_PAYMENT_MODAL:
       y = () => (0, c.Z)({
         subscriptionTier: h.Si.TIER_1,
         analyticsLocations: S,
-        analyticsObject: E(_({}, N), {
-          object: g.qAy.BUTTON_CTA,
-          objectType: g.Qqv.TIER_1
+        analyticsObject: E(b({}, T), {
+          object: m.qAy.BUTTON_CTA,
+          objectType: m.AnalyticsObjectTypes.TIER_1
         }),
         onClose: e => {
-          e && j()
+          e && P()
         }
       });
       break;
@@ -92,70 +92,70 @@ function O(e) {
       y = () => (0, c.Z)({
         subscriptionTier: h.Si.TIER_2,
         analyticsLocations: S,
-        analyticsObject: E(_({}, N), {
-          object: g.qAy.BUTTON_CTA,
-          objectType: g.Qqv.TIER_2
+        analyticsObject: E(b({}, T), {
+          object: m.qAy.BUTTON_CTA,
+          objectType: m.AnalyticsObjectTypes.TIER_2
         }),
         onClose: e => {
-          e && j()
+          e && P()
         }
       })
   }
-  let A = "" !== I.helpArticleId ? () => (0, r.jsxs)(r.Fragment, {
-      children: ["\xa0", (0, r.jsx)(s.Anchor, {
-        className: b.termsApplyAnchor,
-        href: p.Z.getArticleURL(I.helpArticleId),
-        children: m.intl.string(m.t["sBp+u0"])
+  let Z = "" !== v.helpArticleId ? () => (0, r.jsxs)(r.Fragment, {
+      children: ["\xa0", (0, r.jsx)(o.Anchor, {
+        className: _.termsApplyAnchor,
+        href: p.Z.getArticleURL(v.helpArticleId),
+        children: g.intl.string(g.t["sBp+u0"])
       })]
     }) : true,
     w = {
       type: "video",
-      src: T ? I.heroArtVideoLinkLightTheme : I.videoLink
+      src: N ? v.heroArtVideoLinkLightTheme : v.videoLink
     };
-  null != I.heroArtVideoSubtitles && (w.subtitles = I.heroArtVideoSubtitles.map(e => ({
+  null != v.heroArtVideoSubtitles && (w.subtitles = v.heroArtVideoSubtitles.map(e => ({
     locale: e.locale,
     src: e.link,
     isDefault: false
-  }))), ("" !== I.heroArtImageLinkDarkTheme || "" !== I.heroArtImageLinkLightTheme) && (w = {
+  }))), ("" !== v.heroArtImageLinkDarkTheme || "" !== v.heroArtImageLinkLightTheme) && (w = {
     type: "image",
-    src: T ? I.heroArtImageLinkLightTheme : I.heroArtImageLinkDarkTheme
+    src: N ? v.heroArtImageLinkLightTheme : v.heroArtImageLinkDarkTheme
   });
-  let L = "" !== I.modalTopPill ? () => (0, r.jsx)(f.mn, {
-    text: I.modalTopPill,
-    className: b.modalTopPill
+  let L = "" !== v.modalTopPill ? () => (0, r.jsx)(f.mn, {
+    text: v.modalTopPill,
+    className: _.modalTopPill
   }) : true;
   return {
     renderModalProps: C,
-    header: I.header,
+    header: v.header,
     modalTopExtra: L,
-    subHeader: I.subheader,
-    subHeaderExtra: A,
-    body: I.body,
+    subHeader: v.subheader,
+    subHeaderExtra: Z,
+    body: v.body,
     heroArt: w,
-    featureCards: I.featureCards.map(e => ({
+    featureCards: v.featureCards.map(e => ({
       header: e.header,
       subHeader: e.body,
-      imageSrc: T ? e.imageLinkLightTheme : e.imageLink,
+      imageSrc: N ? e.imageLinkLightTheme : e.imageLink,
       tagText: "" !== e.pill ? e.pill : true
     })),
-    changeLogId: P,
+    changeLogId: j,
     button: () => {
       let e = Date.now();
-      return (0, r.jsx)(o.zxk, {
+      return (0, r.jsx)(s.zxk, {
         variant: "expressive",
         size: "md",
         onClick: () => {
-          d.default.track(g.rMx.CHANGE_LOG_CTA_CLICKED, {
-            change_log_id: P,
-            cta_type: Z,
+          d.default.track(m.rMx.CHANGE_LOG_CTA_CLICKED, {
+            change_log_id: j,
+            cta_type: A,
             seconds_open: Math.round((Date.now() - e) / 1e3),
-            target: P
+            target: j
           }), y()
         },
         text: x,
         icon: i.SrA
       })
     },
-    modalDismissibleContent: "" !== I.dismissKey ? Number(I.dismissKey) : true
+    modalDismissibleContent: "" !== v.dismissKey ? Number(v.dismissKey) : true
   }
 }

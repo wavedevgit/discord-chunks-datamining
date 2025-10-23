@@ -18,10 +18,10 @@ let h = () => {
   var e;
   let t = (0, Chunk442837.e7)([Chunk874703.Z], () => Chunk874703.Z.getMarketingBySurface(Chunk115434.K.DESKTOP_SHOP_BUTTON)),
     n = !(0, Chunk481060.$sL)(),
-    [h, g] = (0, Chunk243778.XR)(require ? Chunk704215.z.COLLECTIBLES_SHOP_ENTRY_MARKETING : null, null != (e = null == exports ? true : exports.version) ? module : 0, true, true),
-    m = (0, Chunk794324.mB)(exports),
-    b = null != h ? ((e, t) => {
-      var n, r, i, a, o, s, c, u;
+    [h, m] = (0, Chunk243778.XR)(require ? Chunk704215.z.COLLECTIBLES_SHOP_ENTRY_MARKETING : null, null != (e = null == exports ? true : exports.version) ? module : 0, true, true),
+    g = (0, Chunk794324.mB)(exports),
+    _ = null != h ? ((e, t) => {
+      var n, r, i, a, s, o, c, u;
       if ((null == t ? true : t.type) === l.Z.COACHTIP || e.hasPreviewAssets) {
         let i = null != t ? {
           title: () => t.title,
@@ -81,17 +81,17 @@ let h = () => {
           entrypointBackgroundStyle: null == e ? true : e.style,
           entryPointBackgroundAssets: {
             srcDarkHovered: null == e || null == (a = e.asset) || null == (i = a.hovered) ? true : i.dark,
-            srcLightHovered: null == e || null == (s = e.asset) || null == (o = s.hovered) ? true : o.light
+            srcLightHovered: null == e || null == (o = e.asset) || null == (s = o.hovered) ? true : s.light
           }
         }
       }
       return null
-    })(m, exports) : null,
-    _ = Chunk647438.useCallback(() => {
-      null != b && g(Chunk921944.L.AUTO)
-    }, [b, g]);
+    })(g, exports) : null,
+    b = Chunk647438.useCallback(() => {
+      null != _ && m(Chunk921944.L.AUTO)
+    }, [_, m]);
   return {
-    shopButtonDisplayOptions: b,
-    dismissShopButtonDC: _
+    shopButtonDisplayOptions: _,
+    dismissShopButtonDC: b
   }
 }

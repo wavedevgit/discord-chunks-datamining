@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 199104, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => I
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -23,27 +23,27 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk708567 = require("./708567.js");
 
-function v(e) {
+function I(e) {
   let {
     isStandalone: t
   } = e, {
     analyticsLocations: n
-  } = (0, d.ZP)(u.Z.ACTIVE_NOW_COLUMN), i = (0, a.e7)([m.Z], () => m.Z.hasConsented(_.pjP.PERSONALIZATION)) ? [] : [o.z.NOW_PLAYING_CONSENT_CARD], v = h.o.useConfig({
+  } = (0, d.ZP)(u.Z.ACTIVE_NOW_COLUMN), i = (0, a.e7)([g.Z], () => g.Z.hasConsented(b.pjP.PERSONALIZATION)) ? [] : [s.z.NOW_PLAYING_CONSENT_CARD], I = h.o.useConfig({
     location: "nowplaying"
   }).demureActivityCards, y = h.o.useConfig({
     location: "nowplaying"
-  }).friendsTab, I = (0, p.Dt)();
+  }).friendsTab, v = (0, p.Dt)();
   return (0, r.jsx)(d.Gt, {
     value: n,
     children: (0, r.jsx)(c.Z, {
-      section: _.jXE.ACTIVE_NOW_COLUMN,
+      section: b.jXE.ACTIVE_NOW_COLUMN,
       children: (0, r.jsx)("aside", {
         className: l()(O.container, {
-          [O.refreshActiveNow]: v,
-          "refresh-active-now": v
+          [O.refreshActiveNow]: I,
+          "refresh-active-now": I
         }),
-        "aria-labelledby": I,
-        children: (0, r.jsx)(s.Ttm, {
+        "aria-labelledby": v,
+        children: (0, r.jsx)(o.Ttm, {
           className: l()(O.scroller, {
             [O.standalone]: t
           }),
@@ -51,10 +51,10 @@ function v(e) {
             className: l()({
               [O.standaloneContainer]: t
             }),
-            children: [y ? null : (0, r.jsx)(s.Heading, {
+            children: [y ? null : (0, r.jsx)(o.Heading, {
               variant: "heading-lg/semibold",
               className: O.header,
-              id: I,
+              id: v,
               children: E.intl.string(E.t.F4Zggw)
             }), (0, r.jsx)(f.ZP, {
               contentTypes: i,
@@ -63,12 +63,12 @@ function v(e) {
                   visibleContent: t,
                   markAsDismissed: n
                 } = e;
-                if (t === o.z.NOW_PLAYING_CONSENT_CARD) return (0, r.jsx)(g.Z, {
+                if (t === s.z.NOW_PLAYING_CONSENT_CARD) return (0, r.jsx)(m.Z, {
                   className: O.__invalid_consentCard,
                   markAsDismissed: n
                 })
               }
-            }), (0, r.jsx)(b.Z, {})]
+            }), (0, r.jsx)(_.Z, {})]
           })
         })
       })

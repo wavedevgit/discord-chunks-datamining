@@ -111,16 +111,16 @@ let I = Chunk647438.memo(function(e) {
   })), [t, n, Z]), X = r.useCallback(e => null != l || null != I ? (0, i.jsxs)("div", {
     className: o()(b.extrasContainer, T && b.fullFlex),
     children: [null == l ? true : l(t), null == I ? true : I(t, e)]
-  }) : null, [t, l, T, I]), q = (0, a.e7)([O.Z], () => O.Z.hasRenderDebugMode(g.GO.WidgetAreas)), J = r.useMemo(() => {
+  }) : null, [t, l, T, I]), J = (0, a.e7)([O.Z], () => O.Z.hasRenderDebugMode(g.GO.WidgetAreas)), q = r.useMemo(() => {
     if (null != C) return e => C(j(x({}, e), {
       widget: t
     }))
   }, [C, t]);
   return (0, i.jsx)(y.Z, {
     className: o()({
-      [b.debug]: q,
-      [b.debugUnpinned]: q && !L,
-      [b.debugPinned]: q && L
+      [b.debug]: J,
+      [b.debugUnpinned]: J && !L,
+      [b.debugPinned]: J && L
     }, N),
     id: k,
     size: W,
@@ -144,7 +144,7 @@ let I = Chunk647438.memo(function(e) {
     targetWindow: P,
     forceShowExtras: T,
     renderExtras: X,
-    resizeValidation: J,
+    resizeValidation: q,
     children: K
   })
 })

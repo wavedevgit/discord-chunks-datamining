@@ -60,7 +60,7 @@ let D = () => {
           defaultTextOverride: module,
           premiumModalAnalyticsLocation: {
             object: Chunk981631.qAy.BUTTON_CTA,
-            objectType: Chunk981631.Qqv.BUY
+            objectType: Chunk981631.AnalyticsObjectTypes.BUY
           },
           fullWidth: true
         })]

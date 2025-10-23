@@ -24,11 +24,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk981028 = require("./981028.js");
 
-function I(e) {
+function v(e) {
   var t, n;
   let {
     analyticsLocations: i
-  } = (0, u.ZP)(c.Z.ACTIVITY_PANEL), l = (0, b.Z)(e => {
+  } = (0, u.ZP)(c.Z.ACTIVITY_PANEL), l = (0, _.Z)(e => {
     let {
       guildId: t
     } = e;
@@ -88,7 +88,7 @@ let C = Chunk647438.memo(function() {
       containerRef: module,
       children: [(0, Chunk951288.jsx)(Chunk316173.Z, {}), (0, Chunk951288.jsx)(Chunk210724.Z, {}), (0, Chunk951288.jsx)(Chunk235555.Z, {}), (0, Chunk951288.jsx)(Chunk410575.Z, {
         section: Chunk981631.jXE.ACTIVITY_PANEL,
-        children: (0, Chunk951288.jsx)(I, {
+        children: (0, Chunk951288.jsx)(v, {
           className: Chunk981028.activityPanel
         })
       }), (0, Chunk951288.jsx)(Chunk410575.Z, {

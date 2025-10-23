@@ -1,8 +1,8 @@
 /** Chunk was on 1272 **/
 /** chunk id: 467460, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  F: () => g,
-  a: () => m
+  F: () => m,
+  a: () => g
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk704215 = require("./704215.js"),
@@ -47,13 +47,13 @@ let p = e => {
       days: c,
       hours: p,
       minutes: h,
-      seconds: g
-    } = (0, o.Z)(Date.parse(t), 1e3), m = c > 0 ? [c, p, h] : p > 0 ? [p, h, g] : [h, g], b = (0, s.zu)(i.z.NITRO_TAB_BADGE_OFFER_REMINDER);
+      seconds: m
+    } = (0, s.Z)(Date.parse(t), 1e3), g = c > 0 ? [c, p, h] : p > 0 ? [p, h, m] : [h, m], _ = (0, o.zu)(i.z.NITRO_TAB_BADGE_OFFER_REMINDER);
     return (0, r.jsx)(l.u, {
       text: n,
       position: "right",
       children: (0, r.jsxs)("div", {
-        children: [!b && (0, r.jsx)("img", {
+        children: [!_ && (0, r.jsx)("img", {
           src: d,
           alt: "",
           className: u.gradientCircles
@@ -61,10 +61,10 @@ let p = e => {
           gap: 0,
           direction: "horizontal",
           className: u.countdownContainer,
-          children: m.map((e, t) => (0, r.jsxs)(r.Fragment, {
+          children: g.map((e, t) => (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(f, {
               value: e
-            }, t), t !== m.length - 1 && (0, r.jsx)("div", {
+            }, t), t !== g.length - 1 && (0, r.jsx)("div", {
               className: u.delinator,
               children: ":"
             })]
@@ -73,7 +73,7 @@ let p = e => {
       })
     })
   },
-  g = e => {
+  m = e => {
     let {
       trialOffer: t
     } = e, n = (0, c.YF)(t);
@@ -82,7 +82,7 @@ let p = e => {
       tooltipText: n
     })
   },
-  m = e => {
+  g = e => {
     let {
       discountOffer: t
     } = e, n = (0, c.h$)(t);

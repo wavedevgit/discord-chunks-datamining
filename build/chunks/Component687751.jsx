@@ -20,7 +20,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk484710 = require("./484710.js");
 
-function _(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -65,13 +65,13 @@ class E extends Chunk317770.Z {
       let {
         default: e
       } = await Promise.all([n.e("1716"), n.e("83737")]).then(n.bind(n, 701509));
-      return n => (0, r.jsx)(e, _({
+      return n => (0, r.jsx)(e, b({
         source: t
       }, n))
     }, {
-      modalKey: g.dG,
-      onCloseRequest: m.dG4,
-      backdropStyle: (0, o.bj)(t) ? i.fCB.LIGHTBOX : true
+      modalKey: m.dG,
+      onCloseRequest: g.dG4,
+      backdropStyle: (0, s.bj)(t) ? i.fCB.LIGHTBOX : true
     })
   }
   handleAgeGateSuccess() {
@@ -81,7 +81,7 @@ class E extends Chunk317770.Z {
     let {
       underageMessage: t
     } = e;
-    (0, i.oav)(g.dG, e => (0, r.jsx)(h.default, _({
+    (0, i.oav)(m.dG, e => (0, r.jsx)(h.default, b({
       underageMessage: t
     }, e)))
   }
@@ -92,7 +92,7 @@ class E extends Chunk317770.Z {
     let {
       guild: t
     } = e, n = d.Z.getGuildId();
-    if (null != n && t.id === n && (t.owner_configured_content_level === m.V_K.AGE_RESTRICTED || (0, f.X)("age_gate_manager") && c.Ov.has(t.nsfw_level))) return void(0, p.I8)(t.id, null)
+    if (null != n && t.id === n && (t.owner_configured_content_level === g.V_K.AGE_RESTRICTED || (0, f.X)("age_gate_manager") && c.Ov.has(t.nsfw_level))) return void(0, p.I8)(t.id, null)
   }
 }
 let O = new E

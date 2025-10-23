@@ -12,7 +12,7 @@ var Chunk243814 = require("./243814.js"),
 let c = {
   [Chunk981631.Etm.GET_GUILD]: {
     scope: Chunk243814.x.RPC,
-    validation: e => (0, o.Z)(e).required().keys({
+    validation: e => (0, s.Z)(e).required().keys({
       guild_id: e.string(),
       timeout: e.number().min(0).max(60)
     }),
@@ -22,17 +22,17 @@ let c = {
         server: n,
         args: {
           guild_id: r,
-          timeout: o = 0
+          timeout: s = 0
         }
       } = e;
-      return n.storeWait(t, () => l.Z.getGuild(r), o).catch(() => {
+      return n.storeWait(t, () => l.Z.getGuild(r), s).catch(() => {
         throw new a.Z({
-          errorCode: s.lTL.GET_GUILD_TIMED_OUT
+          errorCode: o.lTL.GET_GUILD_TIMED_OUT
         }, "Request to get guild timed out.")
       }).then(e => {
         var t;
         if (null == e) throw new a.Z({
-          errorCode: s.lTL.INVALID_GUILD
+          errorCode: o.lTL.INVALID_GUILD
         }, "Invalid guild id: ".concat(r));
         return {
           id: e.id,

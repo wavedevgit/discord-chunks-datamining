@@ -21,30 +21,30 @@ function h(e) {
     isFetching: n,
     hasFetched: l,
     hasFiltersApplied: h = false,
-    onClearFilters: g
-  } = e, m = i.useRef(false), b = (0, s.TH)(), _ = i.useMemo(() => {
-    if (b.hash.length > 0) {
-      let e = b.hash.slice(1);
+    onClearFilters: m
+  } = e, g = i.useRef(false), _ = (0, o.TH)(), b = i.useMemo(() => {
+    if (_.hash.length > 0) {
+      let e = _.hash.slice(1);
       for (let n of t)
         if (n.id === e) return e
     }
     return null
-  }, [t, b.hash]);
+  }, [t, _.hash]);
   i.useEffect(() => {
-    m.current = false
-  }, [b.hash]), i.useEffect(() => {
-    if (null == _ || m.current || n || !l) return;
-    let e = document.getElementById("quest-tile-".concat(_));
+    g.current = false
+  }, [_.hash]), i.useEffect(() => {
+    if (null == b || g.current || n || !l) return;
+    let e = document.getElementById("quest-tile-".concat(b));
     null == e || e.scrollIntoView({
       behavior: "smooth",
       block: "center"
-    }), m.current = true
-  }, [t, _, b, n, l]);
-  let E = null != _,
-    [O, v] = i.useState(window.innerWidth);
+    }), g.current = true
+  }, [t, b, _, n, l]);
+  let E = null != b,
+    [O, I] = i.useState(window.innerWidth);
   i.useEffect(() => {
-    let e = (0, o.debounce)(() => {
-      v(window.innerWidth)
+    let e = (0, s.debounce)(() => {
+      I(window.innerWidth)
     }, 250);
     return window.addEventListener("resize", e), () => {
       window.removeEventListener("resize", e)
@@ -62,7 +62,7 @@ function h(e) {
       variant: "text-md/normal",
       color: "text-secondary",
       children: h ? p.intl.format(p.t.LdYS1H, {
-        onClick: g
+        onClick: m
       }) : p.intl.string(p.t.LhD4yH)
     })]
   }) : (0, r.jsx)("div", {
@@ -75,11 +75,11 @@ function h(e) {
         contentPosition: t,
         rowIndex: n,
         className: a()(f.questTile, {
-          [f.selected]: E && e.id === _,
-          [f.unselected]: E && e.id !== _
+          [f.selected]: E && e.id === b,
+          [f.unselected]: E && e.id !== b
         }),
         sourceQuestContent: u.jn.QUEST_HOME_DESKTOP
       }, e.id)
     })
-  }, _)
+  }, b)
 }

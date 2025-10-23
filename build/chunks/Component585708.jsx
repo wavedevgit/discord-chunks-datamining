@@ -64,10 +64,10 @@ function b(e, t, n, b) {
     },
     onNotificationClick: () => {
       let n = (0, h.getPID)();
-      (0, l.In)(e.id, {
+      (0, l.ack)(e.id, {
         section: v.jXE.OVERLAY,
         object: v.qAy.ACK_TEXT_CHAT_NOTIFICATION,
-        objectType: v.Qqv.ACK_SEMI_AUTOMATIC
+        objectType: v.AnalyticsObjectTypes.ACK_SEMI_AUTOMATIC
       }, true, true, t.id), m.Z.isInputLocked(n) ? (N("unlock"), r.Z.setInputLocked(false, n)) : (N("jump"), (0, s.uL)(v.Z5c.CHANNEL(e.guild_id, e.id, t.id)), d.isPlatformEmbedded && p.ZP.focus())
     },
     onDismissClick: () => {

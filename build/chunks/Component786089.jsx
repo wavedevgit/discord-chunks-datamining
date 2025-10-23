@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 786089, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => j
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -28,17 +28,17 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk199679 = require("./199679.js");
-let P = (0, Chunk647438.memo)(function(e) {
-  var t, n, l, P, j, x;
+let j = (0, Chunk647438.memo)(function(e) {
+  var t, n, l, j, P, x;
   let {
-    quest: Z
-  } = e, [A, w] = (0, i.useState)(false), [L, R] = (0, i.useState)(24), [D, M] = (0, i.useState)(false), k = (0, i.useRef)(null), U = (0, i.useRef)(null), G = (0, i.useRef)(null), B = (0, c.e7)([m.default], () => m.default.getCurrentUser()), {
-    ref: H,
+    quest: A
+  } = e, [Z, w] = (0, i.useState)(false), [L, D] = (0, i.useState)(24), [R, M] = (0, i.useState)(false), k = (0, i.useRef)(null), U = (0, i.useRef)(null), G = (0, i.useRef)(null), H = (0, c.e7)([g.default], () => g.default.getCurrentUser()), {
+    ref: B,
     height: V = 0
-  } = (0, p.ZP)(), F = (0, f.ZP)(), z = (0, E.B6)(null == (t = Z.userStatus) ? true : t.claimedAt, {
+  } = (0, p.ZP)(), F = (0, f.ZP)(), Y = (0, E.B6)(null == (t = A.userStatus) ? true : t.claimedAt, {
     month: "numeric",
     day: "numeric"
-  }), W = null != (j = null == (n = Z.userStatus) ? true : n.claimedTier) ? j : 0, Y = Z.config.rewards[W], q = (null == Y ? true : Y.type) === s.w.FRACTIONAL_PREMIUM, K = (null == Y ? true : Y.type) === s.w.COLLECTIBLE, Q = (null == Y ? true : Y.type) === s.w.VIRTUAL_CURRENCY, X = null == Y || null == (P = Y.collectibleProduct) || null == (l = P.items) ? true : l[0], J = (null == X ? true : X.type) === o.Z.AVATAR_DECORATION ? X : null;
+  }), z = null != (P = null == (n = A.userStatus) ? true : n.claimedTier) ? P : 0, W = A.config.rewards[z], q = (null == W ? true : W.type) === o.w.FRACTIONAL_PREMIUM, K = (null == W ? true : W.type) === o.w.COLLECTIBLE, Q = (null == W ? true : W.type) === o.w.VIRTUAL_CURRENCY, J = null == W || null == (j = W.collectibleProduct) || null == (l = j.items) ? true : l[0], X = (null == J ? true : J.type) === s.Z.AVATAR_DECORATION ? J : null;
   (0, p.PM)(k, e => {
     let {
       height: t
@@ -47,13 +47,13 @@ let P = (0, Chunk647438.memo)(function(e) {
     let n = k.current.getBoundingClientRect(),
       r = U.current.getBoundingClientRect(),
       i = G.current.getBoundingClientRect();
-    R((r.top - n.top - i.height) / 2)
+    D((r.top - n.top - i.height) / 2)
   });
   let $ = (0, u.wj)(F),
-    ee = (0, i.useMemo)(() => null != Z.config.cosponsorMetadata, [Z]),
-    et = (0, i.useMemo)(() => (0, v.fh)(Z, v.eC.REWARD), [Z]),
-    en = A ? V + 8 : 0,
-    er = (0, _.mH)(O.jn.TROPHY_CASE_CARD),
+    ee = (0, i.useMemo)(() => null != A.config.cosponsorMetadata, [A]),
+    et = (0, i.useMemo)(() => (0, I.fh)(A, I.eC.REWARD), [A]),
+    en = Z ? V + 8 : 0,
+    er = (0, b.mH)(O.jn.TROPHY_CASE_CARD),
     {
       content_position: ei,
       row_index: el
@@ -73,8 +73,8 @@ let P = (0, Chunk647438.memo)(function(e) {
       }
       return i
     }(er, ["content_position", "row_index"]),
-    eo = () => {
-      w(true), b.default.track(S.rMx.QUEST_HOVER, function(e) {
+    es = () => {
+      w(true), _.default.track(S.rMx.QUEST_HOVER, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             r = Object.keys(n);
@@ -92,45 +92,45 @@ let P = (0, Chunk647438.memo)(function(e) {
         }
         return e
       }({
-        quest_id: Z.id
+        quest_id: A.id
       }, ea))
     },
-    es = () => w(false),
+    eo = () => w(false),
     ec = e => {
-      M(true), b.default.track(S.rMx.QUEST_ASSET_LOADING_FAILURE, {
+      M(true), _.default.track(S.rMx.QUEST_ASSET_LOADING_FAILURE, {
         source: e,
         asset_id: e,
-        quest_id: Z.id
+        quest_id: A.id
       })
     };
-  return null == Y || D ? null : (0, r.jsx)(d.tEY, {
+  return null == W || R ? null : (0, r.jsx)(d.tEY, {
     children: (0, r.jsxs)("div", {
       ref: k,
       tabIndex: 0,
-      onFocus: eo,
-      onBlur: es,
-      onMouseEnter: eo,
-      onMouseLeave: es,
-      className: a()(T.container, {
-        [T.hovered]: A
+      onFocus: es,
+      onBlur: eo,
+      onMouseEnter: es,
+      onMouseLeave: eo,
+      className: a()(N.container, {
+        [N.hovered]: Z
       }),
-      children: [null != B && K && null != J && (0, r.jsx)("div", {
+      children: [null != H && K && null != X && (0, r.jsx)("div", {
         ref: G,
-        className: T.decoWrapper,
+        className: N.decoWrapper,
         style: {
           top: L
         },
         children: (0, r.jsx)(h.Z, {
-          avatarDecorationOverride: J,
-          user: B,
+          avatarDecorationOverride: X,
+          user: H,
           guildId: null
         })
       }), q ? (0, r.jsx)(y.Z, {
-        className: T.image
-      }) : Q ? (0, r.jsx)(I.Z, {
-        className: T.image
-      }) : et.isAnimated ? (0, r.jsx)(g.Z, {
-        className: T.assetBlurred,
+        className: N.image
+      }) : Q ? (0, r.jsx)(v.Z, {
+        className: N.image
+      }) : et.isAnimated ? (0, r.jsx)(m.Z, {
+        className: N.assetBlurred,
         autoPlay: false,
         children: (0, r.jsx)("source", {
           src: et.url,
@@ -138,37 +138,37 @@ let P = (0, Chunk647438.memo)(function(e) {
           onError: () => ec(et.url)
         })
       }) : (0, r.jsx)("img", {
-        className: T.image,
+        className: N.image,
         src: et.url,
-        alt: Z.config.messages.questName,
+        alt: A.config.messages.questName,
         onError: () => ec(et.url)
       }), (0, r.jsx)("div", {
-        className: a()(T.overlay, {
-          [T.darkThemeGradient]: $,
-          [T.lightThemeGradient]: !$
+        className: a()(N.overlay, {
+          [N.darkThemeGradient]: $,
+          [N.lightThemeGradient]: !$
         })
       }), (0, r.jsx)("div", {
         ref: U,
-        className: T.logoContainer,
+        className: N.logoContainer,
         style: {
           transform: "translateY(-".concat(en, "px)")
         },
         children: (0, r.jsx)(C.ZP, {
-          logotypeClassName: a()(T.logo, {
-            [T.logoWithCosponsor]: ee
+          logotypeClassName: a()(N.logo, {
+            [N.logoWithCosponsor]: ee
           }),
-          quest: Z,
+          quest: A,
           withGameTile: false
         })
       }), (0, r.jsxs)("div", {
-        ref: H,
-        className: T.details,
+        ref: B,
+        className: N.details,
         children: [(0, r.jsx)(d.Heading, {
-          className: T.title,
+          className: N.title,
           variant: "heading-md/semibold",
           color: "always-white",
-          children: N.intl.format(N.t.EAYZAr, {
-            questName: Z.config.messages.questName
+          children: T.intl.format(T.t.EAYZAr, {
+            questName: A.config.messages.questName
           })
         }), (0, r.jsx)(d.Text, {
           variant: "text-sm/medium",
@@ -176,9 +176,9 @@ let P = (0, Chunk647438.memo)(function(e) {
           style: {
             opacity: $ ? 1 : .75
           },
-          children: N.intl.format(N.t["kXVcV+"], {
-            reward: Y.name,
-            claimedDate: z
+          children: T.intl.format(T.t["kXVcV+"], {
+            reward: W.name,
+            claimedDate: Y
           })
         })]
       })]

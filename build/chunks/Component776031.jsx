@@ -121,7 +121,7 @@ function S(e, t) {
         id: "stream-settings-fps-".concat(t),
         label: n,
         checked: t === v,
-        action: () => w(i, y, t, m.Qqv.RESOLUTION)
+        action: () => w(i, y, t, m.AnalyticsObjectTypes.RESOLUTION)
       }, "stream-settings-fps-".concat(t))
     }),
     x = g.km.map(e => {
@@ -134,7 +134,7 @@ function S(e, t) {
         id: "stream-settings-resolution-".concat(t),
         label: n,
         checked: t === y,
-        action: () => w(i, t, D, m.Qqv.RESOLUTION)
+        action: () => w(i, t, D, m.AnalyticsObjectTypes.RESOLUTION)
       }, "stream-settings-resolution-".concat(t))
     });
   return (0, r.jsxs)(r.Fragment, {

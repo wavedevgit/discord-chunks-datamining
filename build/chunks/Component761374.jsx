@@ -84,8 +84,8 @@ function C(e) {
     tileWidth: Q,
     tileHeight: K,
     widgetWidth: X,
-    widgetHeight: q,
-    containerRef: J,
+    widgetHeight: J,
+    containerRef: q,
     containerMinMaxSizes: $
   } = (0, S.Bz)({
     tileCount: B,
@@ -103,12 +103,12 @@ function C(e) {
     widgetMinMaxSizes: $,
     containerSize: {
       width: X,
-      height: q
+      height: J
     },
     orientedPosition: {
       top: 0,
       left: 0,
-      bottom: null != (t = null == Y ? true : Y.height) ? t : q,
+      bottom: null != (t = null == Y ? true : Y.height) ? t : J,
       right: null != (n = null == Y ? true : Y.width) ? n : X
     },
     locked: w
@@ -133,7 +133,7 @@ function C(e) {
     style: {
       opacity: P
     },
-    ref: J,
+    ref: q,
     children: (0, i.jsx)(E.Z, {
       widgetId: C,
       tileWidth: Q,

@@ -15,5 +15,6 @@ module.exports = {
   familyCenterButtonContainer: "familyCenterButtonContainer__35e86",
   withPadding: "withPadding__35e86",
   directMessagesHeader: "directMessagesHeader__35e86",
-  directMessagesButton: "directMessagesButton__35e86"
+  directMessagesButton: "directMessagesButton__35e86",
+  preAlphaText: "preAlphaText__35e86"
 }

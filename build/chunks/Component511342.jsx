@@ -19,10 +19,10 @@ function f(e) {
     guild: t,
     markAsDismissed: n,
     renderTargetElement: f
-  } = e, h = i.useRef(null), g = {
+  } = e, h = i.useRef(null), m = {
     text: d.intl.string(u.default.Xnghqy),
     onClick: () => {
-      o.Z.open(t.id, s.pNK.BOOST_PERKS, {
+      s.Z.open(t.id, o.pNK.BOOST_PERKS, {
         section: a.Z.GUILD_BOOSTING_PROGRESS_BAR
       }), n(c.L.TAKE_ACTION)
     }
@@ -40,7 +40,7 @@ function f(e) {
         align: "center"
       },
       assetUrl: p.Z,
-      action: g,
+      action: m,
       onRequestClose: () => n(c.L.USER_DISMISS)
     })]
   })

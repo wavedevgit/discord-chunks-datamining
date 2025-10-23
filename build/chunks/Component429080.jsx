@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 429080, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => _
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,10 +17,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk818923 = require("./818923.js"),
   Chunk746882 = require("./746882.js");
-let b = function(e) {
+let _ = function(e) {
   let {
     quest: t
-  } = e, [n, l] = i.useState(false), b = i.useRef(null), _ = (0, o.e7)([u.default], () => u.default.getCurrentUser()), E = d.ZP.useName(_), O = (0, c.Z)(null == _ ? true : _.id), v = i.useCallback(e => {
+  } = e, [n, l] = i.useState(false), _ = i.useRef(null), b = (0, s.e7)([u.default], () => u.default.getCurrentUser()), E = d.ZP.useName(b), O = (0, c.Z)(null == b ? true : b.id), I = i.useCallback(e => {
     var n, i;
     return (0, r.jsx)(p.Z, (n = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -42,7 +42,7 @@ let b = function(e) {
     }({
       name: E,
       quest: t,
-      memberListItemRef: b,
+      memberListItemRef: _,
       applicationStream: O
     }, e), i = i = {
       closePopout: () => {
@@ -60,52 +60,52 @@ let b = function(e) {
     }), n))
   }, [t, O, E]);
   return (0, r.jsx)("div", {
-    className: g.previewBackground,
+    className: m.previewBackground,
     children: (0, r.jsxs)("div", {
-      className: g.previewCard,
-      children: [(0, r.jsx)(s.Heading, {
-        className: m.heading,
+      className: m.previewCard,
+      children: [(0, r.jsx)(o.Heading, {
+        className: g.heading,
         variant: "heading-md/semibold",
         children: h.intl.string(h.t.jY7Zxg)
       }), (0, r.jsx)("div", {
-        className: m.previewDescription,
+        className: g.previewDescription,
         children: h.intl.string(h.t.q3hbne)
       }), (0, r.jsx)("div", {
-        className: m.memberListContainer,
-        children: (0, r.jsx)(s.yRy, {
-          targetElementRef: b,
-          renderPopout: v,
+        className: g.memberListContainer,
+        children: (0, r.jsx)(o.yRy, {
+          targetElementRef: _,
+          renderPopout: I,
           position: "bottom",
           shouldShow: n,
           onRequestClose: () => l(false),
           nudgeAlignIntoViewport: false,
           useRawTargetDimensions: true,
-          animation: s.yRy.Animation.NONE,
+          animation: o.yRy.Animation.NONE,
           spacing: false,
           fixed: true,
           scrollBehavior: "close",
           children: () => (0, r.jsx)("div", {
-            ref: b,
-            className: a()(m.minimalMemberItem, {
-              [m.selected]: n
+            ref: _,
+            className: a()(g.minimalMemberItem, {
+              [g.selected]: n
             }),
-            children: (0, r.jsx)(s.P3F, {
+            children: (0, r.jsx)(o.P3F, {
               onClick: () => l(!n),
               tabIndex: 0,
               children: (0, r.jsxs)("div", {
-                className: m.memberItemContent,
-                children: [(0, r.jsx)(s.qEK, {
-                  size: s.EFr.SIZE_32,
-                  src: null == _ ? true : _.getAvatarURL(true, 32),
+                className: g.memberItemContent,
+                children: [(0, r.jsx)(o.qEK, {
+                  size: o.EFr.SIZE_32,
+                  src: null == b ? true : b.getAvatarURL(true, 32),
                   status: f.Skl.ONLINE,
-                  "aria-label": null == _ ? true : _.username
+                  "aria-label": null == b ? true : b.username
                 }), (0, r.jsxs)("div", {
-                  className: m.memberInfo,
-                  children: [(0, r.jsx)(s.Text, {
+                  className: g.memberInfo,
+                  children: [(0, r.jsx)(o.Text, {
                     variant: "text-md/semibold",
                     color: "header-primary",
                     children: E
-                  }), (0, r.jsx)(s.Text, {
+                  }), (0, r.jsx)(o.Text, {
                     variant: "text-sm/normal",
                     color: "text-muted",
                     children: h.intl.string(h.t.b9w3bO)

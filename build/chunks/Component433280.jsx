@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 433280, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -18,36 +18,36 @@ var Chunk990547 = require("./990547.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk217110 = require("./217110.js");
 
-function m(e) {
+function g(e) {
   let {
     guildId: t,
     markAsDismissed: n,
-    targetElementRef: m
-  } = e, b = (0, l.e7)([u.Z, d.default], () => {
+    targetElementRef: g
+  } = e, _ = (0, l.e7)([u.Z, d.default], () => {
     let e = d.default.getCurrentUser(),
       n = u.Z.getGuild(t);
     return null != n && (0, c.eM)(n, e)
   });
-  return (0, o.Z)({
+  return (0, s.Z)({
     type: i.ImpressionTypes.POPOUT,
     name: i.ImpressionNames.ENABLE_CREATOR_MONETIZATION_GUILD_HEADER_UPSELL,
     properties: {
       guild_id: t,
-      is_owner: b
+      is_owner: _
     }
   }), (0, r.jsx)(a.J2, {
-    targetElementRef: m,
+    targetElementRef: g,
     title: h.intl.string(h.t.C0m4rQ),
     body: h.intl.string(h.t.zOHfEX),
     graphic: {
       type: "image",
-      src: g
+      src: m
     },
     actions: [{
       text: h.intl.string(h.t.OgQQbG),
       variant: "primary",
       onClick: () => {
-        s.Z.open(t, p.pNK.ROLE_SUBSCRIPTIONS)
+        o.Z.open(t, p.pNK.ROLE_SUBSCRIPTIONS)
       }
     }],
     onRequestClose: () => n(f.L.USER_DISMISS),

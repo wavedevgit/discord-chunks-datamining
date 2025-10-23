@@ -27,7 +27,7 @@ function p(e) {
       lightSrc: d,
       darkSrc: u
     }), (0, r.jsx)(l.OZU, {
-      note: t === o.pS.SPAM ? s.intl.string(s.t.hasFPQ) : s.intl.string(s.t.SXrqTf)
+      note: t === s.pS.SPAM ? o.intl.string(o.t.hasFPQ) : o.intl.string(o.t.SXrqTf)
     })]
   })
 }

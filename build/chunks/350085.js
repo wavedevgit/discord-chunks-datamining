@@ -21,23 +21,23 @@ let d = {
         },
         socket: n
       } = e;
-      if ("number" != typeof t || t < 10) throw new s.Z({
+      if ("number" != typeof t || t < 10) throw new o.Z({
         errorCode: u.lTL.INVALID_EVENT
       }, "Invalid pid");
       return e => {
         let {
           prevState: r,
-          dispatch: s
+          dispatch: o
         } = e, c = a.default.enabled, u = true, d = n.application.id;
         if (null != d) {
           let e = l.Z.getActiveLibraryApplication(d);
-          null != e && (c = c && e.isOverlayEnabled()), u = o.default.isLocked(t)
+          null != e && (c = c && e.isOverlayEnabled()), u = s.default.isLocked(t)
         }
         let p = {
           enabled: c,
           locked: u
         };
-        return i().isEqual(p, r) || s(p), p
+        return i().isEqual(p, r) || o(p), p
       }
     }
   }

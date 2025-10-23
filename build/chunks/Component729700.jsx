@@ -19,10 +19,10 @@ let h = e => {
     displayOptions: t,
     targetElementRef: n,
     onRequestClose: h,
-    onClick: g
+    onClick: m
   } = e, {
-    analyticsLocations: m
-  } = (0, c.ZP)(s.Z.HOME_PAGE_SHOP_TAB), b = (0, o.ZP)(), _ = (0, a.wj)(b) ? t.assetDark : t.assetLight, E = i.useRef(h);
+    analyticsLocations: g
+  } = (0, c.ZP)(o.Z.HOME_PAGE_SHOP_TAB), _ = (0, s.ZP)(), b = (0, a.wj)(_) ? t.assetDark : t.assetLight, E = i.useRef(h);
   return E.current = h, i.useEffect(() => () => {
     var e;
     null == (e = E.current) || e.call(E)
@@ -38,15 +38,15 @@ let h = e => {
     body: t.body(),
     graphic: {
       type: "image",
-      src: _
+      src: b
     },
     actions: [{
       text: f.intl.string(f.t.fYfGgK),
       variant: "primary",
       onClick: () => {
-        null == g || g(), (0, u.uL)(p.Z5c.COLLECTIBLES_SHOP), (0, d.mK)({
-          analyticsLocations: m,
-          analyticsSource: s.Z.HOME_PAGE_SHOP_TAB
+        null == m || m(), (0, u.uL)(p.Z5c.COLLECTIBLES_SHOP), (0, d.mK)({
+          analyticsLocations: g,
+          analyticsSource: o.Z.HOME_PAGE_SHOP_TAB
         })
       }
     }],

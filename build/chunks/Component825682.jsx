@@ -21,14 +21,14 @@ let d = function(e) {
     user: f,
     userIgnored: h
   } = e, {
-    voiceActivityStatusEnabled: g
+    voiceActivityStatusEnabled: m
   } = (0, i.U)({
     location: "StatusText"
   }), {
-    voiceChannel: m
+    voiceChannel: g
   } = (0, a.Z)({
     userId: null == f ? true : f.id
-  }), b = g ? m : true;
+  }), _ = m ? g : true;
   return h ? (0, r.jsx)("div", {
     className: u.text,
     children: c.intl.string(c.t.tFY5Zb)
@@ -36,18 +36,18 @@ let d = function(e) {
     activities: n,
     status: p,
     applicationStream: d,
-    voiceChannel: b
-  }) ? (0, r.jsx)(o.Z, {
+    voiceChannel: _
+  }) ? (0, r.jsx)(s.Z, {
     location: "StatusText",
     textClassName: u.statusText,
     activities: n,
     applicationStream: d,
-    voiceChannel: b,
+    voiceChannel: _,
     animateEmoji: t,
     user: f,
     textSize: "sm"
   }) : (0, r.jsx)("div", {
     className: u.text,
-    children: (0, s.u5)(p)
+    children: (0, o.u5)(p)
   })
 }

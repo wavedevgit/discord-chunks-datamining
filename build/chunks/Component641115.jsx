@@ -108,17 +108,17 @@ function M(e) {
       label: h
     } = r;
   return a ? (n = (0, l.jsx)(d.jSM, {
-    tooltipClassName: O.tooltip,
+    tooltipClassName: I.tooltip,
     spacing: 6,
-    "aria-label": T.intl.string(T.t.sEAnVH),
+    "aria-label": P.intl.string(P.t.sEAnVH),
     text: (0, l.jsx)(R, {}),
     children: (0, l.jsx)("div", {
-      className: O.textContainer,
+      className: I.textContainer,
       onMouseEnter: () => x(true),
       onMouseLeave: () => x(false),
       children: (0, l.jsx)(d.Text, {
         variant: "text-xs/bold",
-        className: s()(O.selectorNitroText, O.enhancedSelectorNitroText),
+        className: s()(I.selectorNitroText, I.enhancedSelectorNitroText),
         children: h
       })
     })
@@ -126,20 +126,20 @@ function M(e) {
     analyticsLocation: o,
     onClose: m
   })) : (n = (0, l.jsx)("div", {
-    className: O.textContainer,
+    className: I.textContainer,
     children: (0, l.jsx)(d.Text, {
       variant: "text-xs/normal",
-      className: s()(O.selectorText, {
-        [O.enhancedSelectorNitroText]: c
+      className: s()(I.selectorText, {
+        [I.enhancedSelectorNitroText]: c
       }),
       children: h
     })
   }), t = () => u(g)), {
     content: n,
-    className: s()(O.selectorButton, {
-      [O.selectorButtonSelected]: i,
-      [O.perksDemo]: c,
-      [O.premiumUpsell]: a
+    className: s()(I.selectorButton, {
+      [I.selectorButtonSelected]: i,
+      [I.perksDemo]: c,
+      [I.premiumUpsell]: a
     }),
     onClick: t
   }
@@ -164,8 +164,8 @@ function D(e) {
   } = (0, x.O)(), G = (0, g.Zq)({
     autoTrackExposure: false
   }), B = (0, p.B4)(), W = !z && !G, [F, V] = r.useState(false), H = U ? b.z8 : b.WC, Y = k(E({}, L), {
-    section: P.jXE.STREAM_SETTINGS
-  }), q = (0, l.jsx)(u.hE, {
+    section: T.jXE.STREAM_SETTINGS
+  }), X = (0, l.jsx)(u.hE, {
     buttons: H.map(e => M({
       type: e,
       selected: e.value === i,
@@ -176,7 +176,7 @@ function D(e) {
       onClose: n,
       setIsHovering: V
     }))
-  }), X = (0, l.jsx)(u.hE, {
+  }), q = (0, l.jsx)(u.hE, {
     buttons: b.k0.map(e => M({
       type: e,
       selected: e.value === s,
@@ -189,26 +189,26 @@ function D(e) {
     }))
   }), K = [{
     value: b.ApplicationStreamPresets.PRESET_VIDEO,
-    label: T.intl.string(T.t.HcwHcx)
+    label: P.intl.string(P.t.HcwHcx)
   }, ...U ? [] : [{
     value: b.ApplicationStreamPresets.PRESET_DOCUMENTS,
-    label: T.intl.string(T.t["/RfohG"])
+    label: P.intl.string(P.t["/RfohG"])
   }], {
     value: b.ApplicationStreamPresets.PRESET_CUSTOM,
-    label: T.intl.string(T.t["+eOtrD"])
+    label: P.intl.string(P.t["+eOtrD"])
   }], J = t === b.ApplicationStreamPresets.PRESET_DOCUMENTS ? (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)(h.Z, {
       children: (0, l.jsx)(d.gNt, {
-        label: T.intl.string(T.t.rHyPXg),
+        label: P.intl.string(P.t.rHyPXg),
         children: (0, l.jsx)(d.Text, {
           variant: "text-xs/normal",
-          children: T.intl.format(T.t["U+hmag"], {
+          children: P.intl.format(P.t["U+hmag"], {
             fps: s
           })
         })
       })
     }), W ? (0, l.jsx)(C.Z, {
-      message: T.intl.string(T.t.deDogB),
+      message: P.intl.string(P.t.deDogB),
       onClose: n,
       openStreamUpsellModal: A
     }) : null, B && (0, l.jsx)(C.c, {})]
@@ -216,11 +216,11 @@ function D(e) {
     gap: 16,
     children: [(0, l.jsxs)(d.NIo, {
       children: [(0, l.jsx)(d.gNt, {
-        label: T.intl.string(T.t.rHyPXg),
-        children: q
-      }), (0, l.jsx)(d.gNt, {
-        label: T.intl.string(T.t.SkkeIt),
+        label: P.intl.string(P.t.rHyPXg),
         children: X
+      }), (0, l.jsx)(d.gNt, {
+        label: P.intl.string(P.t.SkkeIt),
+        children: q
       })]
     }), W ? (0, l.jsx)(C.Z, {
       onClose: n,
@@ -230,13 +230,13 @@ function D(e) {
   });
   return (0, l.jsx)(m.Z, k(E({}, Y), {
     children: (0, l.jsx)("div", {
-      className: I.modalContent,
+      className: y.modalContent,
       children: (0, l.jsxs)("div", {
-        className: O.qualitySettingsContainer,
+        className: I.qualitySettingsContainer,
         children: [(0, l.jsx)(d.q4e, {
-          label: T.intl.string(T.t.ax4Fnc),
+          label: P.intl.string(P.t.ax4Fnc),
           value: t,
-          className: y.marginTop8,
+          className: O.marginTop8,
           options: K,
           onChange: e => R(e)
         }), J]

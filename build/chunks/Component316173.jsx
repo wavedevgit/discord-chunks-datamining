@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 316173, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => g
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,19 +15,19 @@ var Chunk951288 = require("./951288.js"),
   Chunk820254 = require("./820254.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk36398 = require("./36398.js");
-let g = "isHideDevBanner",
-  m = () => {
+let m = "isHideDevBanner",
+  g = () => {
     var e;
-    let [t, n] = (0, Chunk647438.useState)((null == (e = Chunk433517.K.get(g, "false")) ? true : module.toString()) === "true"), l = (0, Chunk442837.e7)([Chunk304761.C], () => {
+    let [t, n] = (0, Chunk647438.useState)((null == (e = Chunk433517.K.get(m, "false")) ? true : module.toString()) === "true"), l = (0, Chunk442837.e7)([Chunk304761.C], () => {
       var e;
       return (0, Chunk865427.fD)() ? null == (e = Chunk304761.C.getCurrentBuildOverride().overrides) ? true : module.discord_web : null
     });
     if (exports) return null;
-    let m = () => {
-        Chunk433517.K.set(g, true), require(true)
+    let g = () => {
+        Chunk433517.K.set(m, true), require(true)
       },
-      b = () => (0, Chunk951288.jsx)(Chunk481060.P3F, {
-        onClick: m,
+      _ = () => (0, Chunk951288.jsx)(Chunk481060.P3F, {
+        onClick: g,
         className: Chunk36398.closeButton,
         "aria-label": Chunk388032.intl.string(Chunk388032.t.WAI6xu),
         children: (0, Chunk951288.jsx)(Chunk481060.Dio, {
@@ -40,13 +40,13 @@ let g = "isHideDevBanner",
       className: a()(Chunk36398.devBanner, Chunk36398.buildOverride),
       children: [(0, Chunk951288.jsx)(Chunk820254.Z, {
         className: Chunk36398.icon
-      }), Chunk388032.intl.string(Chunk388032.t.Wj3LW4), (0, Chunk951288.jsx)(b, {})]
+      }), Chunk388032.intl.string(Chunk388032.t.Wj3LW4), (0, Chunk951288.jsx)(_, {})]
     }) : "staging" === window.GLOBAL_ENV.RELEASE_CHANNEL ? (0, Chunk951288.jsxs)("div", {
       className: a()(Chunk36398.devBanner, Chunk36398.staging),
       children: [(0, Chunk951288.jsx)(Chunk820254.Z, {
         className: Chunk36398.icon
       }), Chunk388032.intl.format(Chunk388032.t.uyrfYF, {
-        buildNumber: "461359"
-      }), (0, Chunk951288.jsx)(b, {})]
+        buildNumber: "461382"
+      }), (0, Chunk951288.jsx)(_, {})]
     }) : null
   }

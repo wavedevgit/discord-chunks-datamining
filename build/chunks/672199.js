@@ -57,10 +57,10 @@ function g(e, t, n, g) {
       }), S("request-to-stream"), i.Z.updateNotificationStatus(t)
     },
     onCancelClick: (t, n) => {
-      (0, r.In)(e.id, {
+      (0, r.ack)(e.id, {
         section: p.jXE.OVERLAY,
         object: p.qAy.ACK_DECLINE_REQUEST_TO_STREAM,
-        objectType: p.Qqv.ACK_SEMI_AUTOMATIC
+        objectType: p.AnalyticsObjectTypes.ACK_SEMI_AUTOMATIC
       }, true, true), i.Z.updateNotificationStatus(n), S("decline")
     },
     onDismissClick: () => {

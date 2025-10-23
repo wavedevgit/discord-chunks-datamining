@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk186901 = require("./186901.js"),
   Chunk115654 = require("./115654.js");
 
-function v(e, t, n) {
+function I(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -66,13 +66,13 @@ class y extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), v(this, "_scrollerRef", i.createRef()), v(this, "_scrollToOnMount", true), v(this, "_scrollToPadding", 0), v(this, "state", {
+    super(...e), I(this, "_scrollerRef", i.createRef()), I(this, "_scrollToOnMount", true), I(this, "_scrollToPadding", 0), I(this, "state", {
       includeUpdatesInScroller: false
-    }), v(this, "handleHeightTallerThanHalfViewportChange", e => {
+    }), I(this, "handleHeightTallerThanHalfViewportChange", e => {
       this.setState({
         includeUpdatesInScroller: e
       })
-    }), v(this, "scrollToRow", (e, t) => {
+    }), I(this, "scrollToRow", (e, t) => {
       let n = this._scrollerRef.current;
       null != n ? (e.focus(), n.scrollIntoViewRect({
         start: t,

@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 506648, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => b
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk126373 = require("./126373.js");
-let g = [{
+let m = [{
     feature: Chunk981631.Qa3.SINGLE_PLAYER,
     getText: () => Chunk388032.intl.string(Chunk388032.t["V+/FjO"]),
     getTooltip: () => Chunk388032.intl.string(Chunk388032.t["w+X9sT"]),
@@ -81,7 +81,7 @@ let g = [{
     getTooltip: () => Chunk388032.intl.string(Chunk388032.t.VudViJ),
     IconComponent: Chunk39377.Z
   }],
-  m = e => {
+  g = e => {
     let {
       IconComponent: t,
       text: n,
@@ -104,11 +104,11 @@ let g = [{
       })]
     })
   };
-class b extends Chunk647438.PureComponent {
+class _ extends Chunk647438.PureComponent {
   render() {
     let {
       sku: e
-    } = this.props, t = g.filter(t => {
+    } = this.props, t = m.filter(t => {
       let {
         feature: n
       } = t;
@@ -120,7 +120,7 @@ class b extends Chunk647438.PureComponent {
         getText: i,
         getTooltip: l
       } = e;
-      return (0, r.jsx)(m, {
+      return (0, r.jsx)(g, {
         IconComponent: n,
         text: i(),
         tooltip: l()
@@ -134,4 +134,4 @@ class b extends Chunk647438.PureComponent {
     })
   }
 }
-let _ = b
+let b = _

@@ -17,19 +17,19 @@ let d = function(e) {
     onChange: t,
     optionClassName: n,
     selectedFilters: d
-  } = e, p = (0, o.N8)();
-  return (0, r.jsx)(s.Z, {
-    renderPopout: (e, o) => {
+  } = e, p = (0, s.N8)();
+  return (0, r.jsx)(o.Z, {
+    renderPopout: (e, s) => {
       let {
         closePopout: f
       } = e;
       return (0, r.jsxs)("div", {
         children: [p.map((e, c) => (0, r.jsxs)("div", {
           className: u.filterOptionGroup,
-          children: [(0, r.jsx)(s.g, {
-            id: o,
+          children: [(0, r.jsx)(o.g, {
+            id: s,
             children: e.heading
-          }), e.options.map((e, o) => (0, r.jsx)(i.$q, {
+          }), e.options.map((e, s) => (0, r.jsx)(i.$q, {
             className: n,
             innerClassName: u.checkboxInput,
             onChange: n => {
@@ -42,7 +42,7 @@ let d = function(e) {
               variant: "text-md/normal",
               children: (0, a.Nt)(e.filter)
             })
-          }, o))]
+          }, s))]
         }, c)), (0, r.jsx)("div", {
           className: u.filterOptionGroup,
           children: (0, r.jsx)(l.Button, {

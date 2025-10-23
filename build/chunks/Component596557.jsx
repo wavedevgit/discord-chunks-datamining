@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 596557, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => m
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,20 +16,20 @@ var Chunk951288 = require("./951288.js"),
   Chunk647086 = require("./647086.js"),
   Chunk135899 = require("./135899.js");
 
-function g(e) {
+function m(e) {
   var t;
-  let g = (0, o.SE)(e),
-    m = h.$X.some(t => (null == e ? true : e.id) !== f._ && c.oz(t, e)),
-    b = (null == e ? true : e.defaultMessageNotifications) === d.bL.ALL_MESSAGES,
-    _ = (0, u.FT)(l.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, null != (t = null == e ? true : e.id) ? t : d.lds),
-    E = g && (m || b) && !_,
+  let m = (0, s.SE)(e),
+    g = h.$X.some(t => (null == e ? true : e.id) !== f._ && c.oz(t, e)),
+    _ = (null == e ? true : e.defaultMessageNotifications) === d.bL.ALL_MESSAGES,
+    b = (0, u.FT)(l.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, null != (t = null == e ? true : e.id) ? t : d.lds),
+    E = m && (g || _) && !b,
     O = i.useCallback(() => {
       var t;
       (0, u.Qd)(l.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, null != (t = null == e ? true : e.id) ? t : d.lds, true, p.L.DISMISS)
     }, [e]),
-    v = i.useRef(false);
+    I = i.useRef(false);
   i.useEffect(() => {
-    if (E && !v.current) {
+    if (E && !I.current) {
       var t;
       (0, a.ZDy)(async () => {
         let {
@@ -54,15 +54,15 @@ function g(e) {
           return e
         }({
           guild: e,
-          canEveryoneModerate: m,
-          isDefaultNotificationsAllMessages: b
+          canEveryoneModerate: g,
+          isDefaultNotificationsAllMessages: _
         }, n))
       }, {
         onCloseCallback: O
-      }), s.default.track(d.rMx.DISMISSIBLE_CONTENT_SHOWN, {
+      }), o.default.track(d.rMx.DISMISSIBLE_CONTENT_SHOWN, {
         type: l.C[l.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE],
         guild_id: null != (t = null == e ? true : e.id) ? t : d.lds
-      }), v.current = true
+      }), I.current = true
     }
-  }, [m, e, O, b, E])
+  }, [g, e, O, _, E])
 }

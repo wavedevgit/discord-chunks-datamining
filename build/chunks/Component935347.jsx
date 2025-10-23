@@ -1,14 +1,14 @@
 /** Chunk was on 1272 **/
 /** chunk id: 935347, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => P
 }), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
-  s = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk433517 = require("./433517.js"),
   Chunk481060 = require("./481060.js"),
@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk744749 = require("./744749.js");
 
-function T(e, t, n) {
+function N(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -36,7 +36,7 @@ function T(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class P extends Chunk647438.PureComponent {
+class j extends Chunk647438.PureComponent {
   createSound() {
     let {
       soundpack: e
@@ -54,8 +54,8 @@ class P extends Chunk647438.PureComponent {
     } = this.state, {
       connected: l,
       soundpack: a
-    } = this.props, o = l && n && !r && !i;
-    e.soundpack !== a && (this._connectedSound = this.createSound()), e.connected !== l || o ? (l && null != this.videoRef && u.K.get(C.wli) && this._connectedSound.play(), this.setState({
+    } = this.props, s = l && n && !r && !i;
+    e.soundpack !== a && (this._connectedSound = this.createSound()), e.connected !== l || s ? (l && null != this.videoRef && u.K.get(C.wli) && this._connectedSound.play(), this.setState({
       problems: false,
       hide: l
     })) : t.hide !== r ? (r ? this.clearProblemsTimeout() : this.setProblemsTimeout(), this.setState({
@@ -137,83 +137,83 @@ class P extends Chunk647438.PureComponent {
     }
   }
   constructor(e) {
-    super(e), T(this, "videoRef", null), T(this, "_noProblemsTimeout", null), T(this, "_problemsTimeout", null), T(this, "_connectedSound", this.createSound()), T(this, "_loadingText", function() {
+    super(e), N(this, "videoRef", null), N(this, "_noProblemsTimeout", null), N(this, "_problemsTimeout", null), N(this, "_connectedSound", this.createSound()), N(this, "_loadingText", function() {
       let e = [S.intl.string(S.t.Ex79K6), S.intl.string(S.t["+v5zsT"]), S.intl.string(S.t["RLx6+Y"]), S.intl.string(S.t.Q1PZkN), S.intl.string(S.t.x7sfVg), S.intl.format(S.t.PHuQsQ, {
         tabHook: (e, t) => (0, r.jsx)(d.M2$, {
           shortcut: "tab",
-          className: N.keybind
+          className: T.keybind
         }, t)
       }), S.intl.string(S.t.UorX4T), S.intl.string(S.t["il/GZt"]), S.intl.string(S.t.HKBJvw), S.intl.format(S.t.FVVp79, {
         F6Hook: (e, t) => (0, r.jsx)(d.M2$, {
           shortcut: "f6",
-          className: N.keybind
+          className: T.keybind
         }, t),
         tabHook: (e, t) => (0, r.jsx)(d.M2$, {
           shortcut: "tab",
-          className: N.keybind
+          className: T.keybind
         }, t)
       }), S.intl.string(S.t["7Y1hFH"]), S.intl.string(S.t.UcCW71), S.intl.string(S.t.E5Ghfc), S.intl.string(S.t.bANqo8), S.intl.string(S.t.yOEVDr), S.intl.string(S.t["u0Ra/G"]), S.intl.string(S.t.un4cQ7), S.intl.string(S.t["2cyYx1"]), S.intl.string(S.t.KCmze1), S.intl.string(S.t.I98MEE), S.intl.format(S.t.c0YCIx, {}), S.intl.string(S.t.z8AvIN), S.intl.string(S.t.IjX3P1), S.intl.string(S.t.lg3Ckc), S.intl.string(S.t["4GaLhY"]), S.intl.string(S.t.qHKbUw), S.intl.string(S.t.mJxKDw), S.intl.string(S.t.iiQBXF), S.intl.string(S.t.YPD46Q), S.intl.string(S.t.O8Bpga), S.intl.string(S.t.xzFwfi), S.intl.string(S.t["4G3fsX"]), S.intl.string(S.t["/jPyKC"]), S.intl.string(S.t["8x7D5c"]), S.intl.string(S.t.G6Q8H3), S.intl.string(S.t["9Cx+xL"]), S.intl.string(S.t.WsZ8dW), S.intl.string(S.t.btoe7M), S.intl.string(S.t.E6Y0j7), S.intl.string(S.t["7KZ81/"]), S.intl.string(S.t.hm7OKu), S.intl.string(S.t["H535i+"]), S.intl.string(S.t["08WJUR"]), S.intl.string(S.t.hhtfyi), S.intl.string(S.t.on980U), S.intl.string(S.t.AL6c01), S.intl.string(S.t.iLTeF6), S.intl.string(S.t.b3vSu7), S.intl.string(S.t.f8ao58), S.intl.format(S.t["1v1h8o"], {
         asterisks: "**"
       }), S.intl.format(S.t.MUlAVW, {
         quickSwitcherHook: (e, t) => (0, r.jsx)(d.M2$, {
           shortcut: "mod+k",
-          className: N.keybind
+          className: T.keybind
         }, t)
       }), S.intl.format(S.t.aes5VI, {
         markUnreadHook: (e, t) => (0, r.jsx)(d.M2$, {
           shortcut: "alt+click",
-          className: N.keybind
+          className: T.keybind
         }, t)
       }), S.intl.format(S.t.md9Svv, {
         markServerUnreadHook: (e, t) => (0, r.jsx)(d.M2$, {
           shortcut: "shift+esc",
-          className: N.keybind
+          className: T.keybind
         }, t)
       }), S.intl.format(S.t["X0Tu+u"], {
         navigateUnreadHook: (e, t) => (0, r.jsx)(d.M2$, {
           shortcut: "shift+alt+up",
-          className: N.keybind
+          className: T.keybind
         }, t),
         downHook: (e, t) => (0, r.jsx)(d.M2$, {
           shortcut: "down",
-          className: N.keybind
+          className: T.keybind
         }, t)
       }), S.intl.format(S.t.AkoeIY, {
         keyboardShortcutsHook: (e, t) => (0, r.jsx)(d.M2$, {
           shortcut: "mod+/",
-          className: N.keybind
+          className: T.keybind
         }, t)
       }), S.intl.format(S.t.P9sfAH, {
         messageNewlineHook: (e, t) => (0, r.jsx)(d.M2$, {
           shortcut: "shift+return",
-          className: N.keybind
+          className: T.keybind
         }, t)
       }), S.intl.format(S.t["3Ox33f"], {
         shiftHook: (e, t) => (0, r.jsx)(d.M2$, {
           shortcut: "shift",
-          className: N.keybind
+          className: T.keybind
         }, t)
       }), S.intl.format(S.t.enCV6b, {
         upHook: (e, t) => (0, r.jsx)(d.M2$, {
           shortcut: "up",
-          className: N.keybind
+          className: T.keybind
         }, t)
       })];
-      return _.default.locale.startsWith("en-") && e.push(S.intl.string(S.t.dQ9Wqk)), e[s().random(e.length - 1)]
-    }()), T(this, "_eventLoadingText", function() {
-      let e = g.Z.getLoadingTips();
-      if (null != e && e.length > 0) return e[s().random(e.length - 1)]
-    }()), T(this, "handleReady", () => {
+      return b.default.locale.startsWith("en-") && e.push(S.intl.string(S.t.dQ9Wqk)), e[o().random(e.length - 1)]
+    }()), N(this, "_eventLoadingText", function() {
+      let e = m.Z.getLoadingTips();
+      if (null != e && e.length > 0) return e[o().random(e.length - 1)]
+    }()), N(this, "handleReady", () => {
       this.setState({
         ready: true
-      }), (0, v.isDesktop)() && (y.ZP.send("UPDATED_QUOTES", ["Hold Tight — Loading Discord"]), y.ZP.send("UPDATE_OPEN_ON_STARTUP"))
-    }), T(this, "setVideoRef", e => {
+      }), (0, I.isDesktop)() && (y.ZP.send("UPDATED_QUOTES", ["Hold Tight — Loading Discord"]), y.ZP.send("UPDATE_OPEN_ON_STARTUP"))
+    }), N(this, "setVideoRef", e => {
       this.videoRef = e
-    }), T(this, "setProblemsTimeout", () => {
+    }), N(this, "setProblemsTimeout", () => {
       null == this._problemsTimeout && (this._problemsTimeout = setTimeout(() => this.setState({
         problems: true
       }), 1e4))
-    }), T(this, "clearProblemsTimeout", () => {
+    }), N(this, "clearProblemsTimeout", () => {
       clearTimeout(this._problemsTimeout), this._problemsTimeout = null
     });
     let {
@@ -227,7 +227,7 @@ class P extends Chunk647438.PureComponent {
     }, this._connectedSound.volume = 1
   }
 }
-let j = Chunk442837.ZP.connectStores([Chunk38618.Z, Chunk215427.Z, Chunk474873.Z, Chunk607070.Z], () => ({
+let P = Chunk442837.ZP.connectStores([Chunk38618.Z, Chunk215427.Z, Chunk474873.Z, Chunk607070.Z], () => ({
   isTryingToConnect: Chunk38618.Z.isTryingToConnect(),
   connected: Chunk38618.Z.isConnected(),
   incident: Chunk215427.Z.getIncident(),
@@ -241,7 +241,7 @@ let j = Chunk442837.ZP.connectStores([Chunk38618.Z, Chunk215427.Z, Chunk474873.Z
     soundpack: l,
     reducedMotion: a
   } = e;
-  return t ? (0, r.jsx)(P, {
+  return t ? (0, r.jsx)(j, {
     reducedMotion: a,
     soundpack: l,
     connected: n,

@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk824138 = require("./824138.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function _(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -50,8 +50,8 @@ class E extends Chunk647438.PureComponent {
     }) : null
   }
   constructor(...e) {
-    super(...e), _(this, "handleUserContextMenu", (e, t) => {
-      (0, s.jW)(e, async () => {
+    super(...e), b(this, "handleUserContextMenu", (e, t) => {
+      (0, o.jW)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("69220")]).then(n.bind(n, 881351));
@@ -73,7 +73,7 @@ class E extends Chunk647438.PureComponent {
             "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
               return Object.getOwnPropertyDescriptor(n, e).enumerable
             }))), r.forEach(function(t) {
-              _(e, t, n[t])
+              b(e, t, n[t])
             })
           }
           return e
@@ -81,13 +81,13 @@ class E extends Chunk647438.PureComponent {
           user: t
         }))
       })
-    }), _(this, "renderOverflowPopout", () => {
+    }), b(this, "renderOverflowPopout", () => {
       let {
         party: e
       } = this.props;
       return (0, r.jsx)(c.Z, {
         party: e,
-        header: b.intl.formatToPlainString(b.t.I9et1z, {
+        header: _.intl.formatToPlainString(_.t.I9et1z, {
           count: e.length
         })
       })
@@ -100,8 +100,8 @@ let O = Chunk442837.ZP.connectStores([Chunk768419.Z, Chunk594174.default, Chunk6
     i = Chunk594174.default.getCurrentUser(),
     l = [];
   if (null != require ? (e = Chunk594174.default.getUser(require.userId), t = require.partyId) : null != Chunk951288 && null != Chunk951288.party && null != Chunk951288.party.id && (e = Chunk647438, t = Chunk951288.party.id), null != exports) {
-    var o;
-    l = a()(Array.from(null != (o = Chunk831506.Z.getParty(exports)) ? Chunk442837 : [])).map(e => h.default.getUser(e)).filter(Chunk823379.lm).orderBy([t => null == e || e.id === t.id, e => f.Z.isFriend(e.id)], ["desc", "desc"]).value()
+    var s;
+    l = a()(Array.from(null != (s = Chunk831506.Z.getParty(exports)) ? Chunk442837 : [])).map(e => h.default.getUser(e)).filter(Chunk823379.lm).orderBy([t => null == e || e.id === t.id, e => f.Z.isFriend(e.id)], ["desc", "desc"]).value()
   }
   return {
     currentUser: Chunk647438,

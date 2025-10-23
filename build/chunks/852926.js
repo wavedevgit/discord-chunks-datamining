@@ -1,10 +1,10 @@
 /** Chunk was on 1272 **/
 /** chunk id: 852926, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  GC: () => b,
-  _X: () => m,
+  GC: () => _,
+  _X: () => g,
   br: () => f,
-  em: () => g,
+  em: () => m,
   jU: () => h
 });
 var Chunk13245 = require("./13245.js"),
@@ -38,24 +38,24 @@ function h(e) {
     context: d.IlC.APP
   })
 }
-let g = async (e, t, n) => {
+let m = async (e, t, n) => {
   if ((0, c.YK)(e, t), (null == n || "" === n) && (0, c.s9)(t)) return e.authorization.scopes = [u.cE, u.CN], Promise.resolve();
-  if (null == n || "" === n) return Promise.reject(new s.Z({
+  if (null == n || "" === n) return Promise.reject(new o.Z({
     closeCode: d.$VG.INVALID_CLIENTID
   }, "No Client ID Specified"));
   let r = a.ZP.releaseChannel !== d.R5N.CANARY && !p.includes(n) && e.transport !== u.He.POST_MESSAGE;
   return await (0, c.vv)(n, r), (0, c.YS)(e, n, t)
-}, m = () => (0, Chunk914946.tr)(e => {
+}, g = () => (0, Chunk914946.tr)(e => {
   let t = [];
   return null != e.modeOptions.shortcut && Array.isArray(e.modeOptions.shortcut) && (t = e.modeOptions.shortcut.map(e => {
     var t;
     return {
       type: e[0],
       code: e[1],
-      name: null != (t = (0, o.H9)(e)) ? t : "unknown"
+      name: null != (t = (0, s.H9)(e)) ? t : "unknown"
     }
   })), t
-}), b = e => (0, c.FJ)(e, e => {
+}), _ = e => (0, c.FJ)(e, e => {
   let t = "";
-  return null != e.modeOptions.shortcut && Array.isArray(e.modeOptions.shortcut) && (t = (0, o.BB)(e.modeOptions.shortcut)), t
+  return null != e.modeOptions.shortcut && Array.isArray(e.modeOptions.shortcut) && (t = (0, s.BB)(e.modeOptions.shortcut)), t
 })

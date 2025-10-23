@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 262702, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => m
 }), require("./388685.js");
 var Chunk570140 = require("./570140.js"),
   Chunk846027 = require("./846027.js"),
@@ -39,11 +39,11 @@ class h extends Chunk317770.Z {
         e.userId === n && (null == (t = u.Z.getChannel(e.channelId)) ? true : t.isGuildStageVoice()) && (0, p.gf)(e) !== p.xO.ON_STAGE && (this.handleStopStream(e), this.handleStopUserVideo())
       })
     }), f(this, "handleStopStream", e => {
-      let t = s.Z.getActiveStreamForUser(e.userId, e.guildId);
-      null != t && (0, l.g)((0, o.V9)(t), false)
+      let t = o.Z.getActiveStreamForUser(e.userId, e.guildId);
+      null != t && (0, l.g)((0, s.V9)(t), false)
     }), f(this, "handleStopUserVideo", () => {
       d.Z.isVideoEnabled() && i.Z.setVideoEnabled(false)
     })
   }
 }
-let g = new h
+let m = new h

@@ -130,13 +130,13 @@ class ef extends Chunk647438.PureComponent {
       skuId: i,
       storeListingId: l,
       slug: a,
-      storeListing: o,
-      fetchStoreListing: s
+      storeListing: s,
+      fetchStoreListing: o
     } = this.props;
-    if (o !== e.storeListing && null != o && (0, W.s)(eo.jE.STORE_LISTING, {
+    if (s !== e.storeListing && null != s && (0, z.s)(es.jE.STORE_LISTING, {
         skuId: i,
         slug: a
-      }), (t !== e.locale || i !== e.skuId) && s(), r && !e.shouldFetchStatistics) {
+      }), (t !== e.locale || i !== e.skuId) && o(), r && !e.shouldFetchStatistics) {
       if (null == n) throw Error("Unexpected missing sku");
       f.Z.wait(() => (0, h.$)(n.applicationId))
     }(i !== e.skuId || l !== e.storeListingId) && (this._trackedViewed = false), this.trackViewed(), this.replaceUrlWithSlug()
@@ -182,28 +182,28 @@ class ef extends Chunk647438.PureComponent {
       channel: n,
       isAuthenticated: l
     } = this.props;
-    return (0, r.jsx)(j.Z, {
+    return (0, r.jsx)(P.Z, {
       isAuthenticated: l,
       toolbar: this.renderHeaderToolbar(e, t),
       children: null != n ? (0, r.jsxs)(i.Fragment, {
-        children: [(0, r.jsx)(j.Z.Icon, {
+        children: [(0, r.jsx)(P.Z.Icon, {
           icon: p.lO_,
-          "aria-label": es.intl.string(es.t["P1/Erq"])
-        }), (0, r.jsx)(j.Z.Title, {
+          "aria-label": eo.intl.string(eo.t["P1/Erq"])
+        }), (0, r.jsx)(P.Z.Title, {
           children: n.name
         })]
       }) : null != t && t.premium ? (0, r.jsxs)(i.Fragment, {
-        children: [(0, r.jsx)(j.Z.Icon, {
+        children: [(0, r.jsx)(P.Z.Icon, {
           icon: p.SrA,
-          "aria-label": es.intl.string(es.t.Ipxkog)
+          "aria-label": eo.intl.string(eo.t.Ipxkog)
         }), (0, r.jsx)(et.Z, {
           sku: t
         })]
       }) : null != t ? (0, r.jsxs)(i.Fragment, {
-        children: [(0, r.jsx)(j.Z.Icon, {
+        children: [(0, r.jsx)(P.Z.Icon, {
           icon: p.lO_,
-          "aria-label": es.intl.string(es.t["P1/Erq"])
-        }), (0, r.jsx)(j.Z.Title, {
+          "aria-label": eo.intl.string(eo.t["P1/Erq"])
+        }), (0, r.jsx)(P.Z.Title, {
           children: t.name
         })]
       }) : null
@@ -224,13 +224,13 @@ class ef extends Chunk647438.PureComponent {
         if (null == n || null == r) throw Error("ApplicationStoreListing.parseMediaItems: Video and Image assets must have a width and height defined");
         return t.mimeType.startsWith("video/") ? {
           type: ea.s9s.VIDEO,
-          thumbnailSrc: (0, z._W)(e.id, t, 1024, "webp"),
-          src: (0, z._W)(e.id, t),
+          thumbnailSrc: (0, Y._W)(e.id, t, 1024, "webp"),
+          src: (0, Y._W)(e.id, t),
           height: r,
           width: n
         } : {
           type: ea.s9s.IMG,
-          src: (0, z._W)(e.id, t, 1024),
+          src: (0, Y._W)(e.id, t, 1024),
           height: r,
           width: n
         }
@@ -253,11 +253,11 @@ class ef extends Chunk647438.PureComponent {
       children: [(0, r.jsx)("div", {
         className: ec.headerBackground,
         style: {
-          backgroundImage: "url(".concat((0, z._W)(e.id, l, 1024, "png"), ")")
+          backgroundImage: "url(".concat((0, Y._W)(e.id, l, 1024, "png"), ")")
         }
       }), (0, r.jsx)("img", {
         className: ec.headerLogo,
-        src: (0, z._W)(e.id, a, 1024, "png"),
+        src: (0, Y._W)(e.id, a, 1024, "png"),
         alt: n.name
       })]
     })
@@ -301,12 +301,12 @@ class ef extends Chunk647438.PureComponent {
     } = t;
     if (null == l) throw Error("Rendering ApplicationStoreListing without description");
     return (0, r.jsxs)(i.Fragment, {
-      children: [(0, r.jsx)(I.Z, {
+      children: [(0, r.jsx)(v.Z, {
         tag: "h1",
-        children: es.intl.format(es.t.tluX4B, {
+        children: eo.intl.format(eo.t.tluX4B, {
           name: n.name
         })
-      }), (0, r.jsx)(_.Z, {}), (0, r.jsx)(q.Z, {
+      }), (0, r.jsx)(b.Z, {}), (0, r.jsx)(q.Z, {
         applicationId: e.id,
         blurb: t.summary,
         description: l,
@@ -316,7 +316,7 @@ class ef extends Chunk647438.PureComponent {
     })
   }
   renderApplicationContentRating(e) {
-    return (0, r.jsx)(Y.Z, {
+    return (0, r.jsx)(W.Z, {
       sku: e,
       className: ec.contentRating
     })
@@ -343,7 +343,7 @@ class ef extends Chunk647438.PureComponent {
         image: Chunk606081.Z.Product.Image(Chunk647438),
         sku: module.id
       }),
-      o = module.getPrice();
+      s = module.getPrice();
     if (null != Chunk442837) {
       let {
         amount: e,
@@ -356,7 +356,7 @@ class ef extends Chunk647438.PureComponent {
         })
       })
     }
-    let s = Chunk606081.Z.ItemPage({
+    let o = Chunk606081.Z.ItemPage({
       mainEntity: a
     });
     return (0, Chunk951288.jsx)(Chunk606081.Z, {
@@ -435,14 +435,14 @@ class ef extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), eu(this, "showCopyLinkTextTimeout", new s.V7), eu(this, "_trackedViewed", false), eu(this, "_analyticsSource", null), eu(this, "_extraAnalyticsProperties", null), eu(this, "state", {
+    super(...e), eu(this, "showCopyLinkTextTimeout", new o.V7), eu(this, "_trackedViewed", false), eu(this, "_analyticsSource", null), eu(this, "_extraAnalyticsProperties", null), eu(this, "state", {
       showHeaderPurchaseUnit: false,
       showLinkCopied: false
     }), eu(this, "trackCarouselScroll", (e, t, n) => {
       let {
         sku: r
       } = this.props;
-      null != r && B.default.track(ea.rMx.STORE_LISTING_MEDIA_SCROLLED, ep(ed({}, (0, T.Z)(r)), {
+      null != r && H.default.track(ea.rMx.STORE_LISTING_MEDIA_SCROLLED, ep(ed({}, (0, N.Z)(r)), {
         card_index: n,
         card_type: e.type === ea.s9s.IMG ? "image" : "video"
       }))
@@ -451,7 +451,7 @@ class ef extends Chunk647438.PureComponent {
       let {
         location: t
       } = this.props, n = (e = t.pathname, "".concat(location.protocol, "//").concat(location.host).concat(e));
-      (0, H.JG)(n, () => this.setState({
+      (0, B.JG)(n, () => this.setState({
         showLinkCopied: true
       }, () => {
         this.showCopyLinkTextTimeout.start(1500, () => {
@@ -481,7 +481,7 @@ class ef extends Chunk647438.PureComponent {
         guild: t
       } = this.props;
       return null != e && null != t && (w.Z.can(ea.Plq.CREATE_INSTANT_INVITE, t) || null != t.vanityURLCode) ? (0, r.jsx)(d.zx, {
-        "aria-label": es.intl.string(es.t.zJrgTG),
+        "aria-label": eo.intl.string(eo.t.zJrgTG),
         look: d.zx.Looks.BLANK,
         size: d.zx.Sizes.NONE,
         onClick: this.handleCreateInstantInvite,
@@ -497,11 +497,11 @@ class ef extends Chunk647438.PureComponent {
         showLinkCopied: e
       } = this.state;
       return this.isChannelType ? this.renderInviteLink() : (0, r.jsx)(c.u, {
-        text: e ? es.intl.string(es.t.uvTCOY) : null,
+        text: e ? eo.intl.string(eo.t.uvTCOY) : null,
         position: "left",
         forceOpen: e,
         children: (0, r.jsx)(d.zx, {
-          "aria-label": e ? es.intl.string(es.t.uvTCOY) : es.intl.string(es.t.WqhZss),
+          "aria-label": e ? eo.intl.string(eo.t.uvTCOY) : eo.intl.string(eo.t.WqhZss),
           look: d.zx.Looks.BLANK,
           size: d.zx.Sizes.NONE,
           onClick: this.copyCurrentUrl,
@@ -519,10 +519,10 @@ class ef extends Chunk647438.PureComponent {
         slug: i,
         storeListing: l,
         analyticsContext: {
-          location: o
+          location: s
         }
       } = this.props, {
-        showHeaderPurchaseUnit: s
+        showHeaderPurchaseUnit: o
       } = this.state;
       return (0, r.jsxs)("div", {
         className: ec.headerBarListing,
@@ -537,10 +537,10 @@ class ef extends Chunk647438.PureComponent {
             className: ec.testModeSelectButton,
             currentStoreListingId: null != l ? l.id : null,
             onStoreListingSelect: e => {
-              null != t && (0, m.yt)(t.id, {
+              null != t && (0, g.yt)(t.id, {
                 slug: i,
                 analyticsSource: {
-                  page: o.page,
+                  page: s.page,
                   section: ea.jXE.NAVIGATION,
                   object: null
                 },
@@ -552,9 +552,9 @@ class ef extends Chunk647438.PureComponent {
           className: ec.headerSection,
           children: (0, r.jsxs)("div", {
             className: a()(ec.headerPurchase, {
-              [ec.active]: s
+              [ec.active]: o
             }),
-            children: [null != t ? (0, P.Z)(t) : null, null != e && null != t ? (0, r.jsx)("div", {
+            children: [null != t ? (0, j.Z)(t) : null, null != e && null != t ? (0, r.jsx)("div", {
               children: "deprecated!"
             }) : null, (0, r.jsx)($.Z, {
               messageStyle: $.G.SHORT,
@@ -569,9 +569,9 @@ class ef extends Chunk647438.PureComponent {
         pageSize: n,
         isFocused: i
       } = this.props;
-      return (0, r.jsx)(b.Z, {
+      return (0, r.jsx)(_.Z, {
         section: ea.jXE.HERO,
-        children: (0, r.jsx)(X.Z, {
+        children: (0, r.jsx)(J.Z, {
           pageSize: n,
           items: t.carouselItems.map(n => this.parseMediaItems(e, n, t.assets)),
           autoplayInterval: 8e3,
@@ -599,8 +599,8 @@ let eh = (0, Chunk730749.Z)((0, Chunk666743.Z)(Chunk442837.ZP.connectStores([Chu
     inputSkuId: i,
     applicationId: l,
     storeListingId: a,
-    isAuthenticated: o,
-    channel: s
+    isAuthenticated: s,
+    channel: o
   } = e;
   if (null == l) {
     if (null == i) throw Error("Needs applicationId or skuId");
@@ -609,25 +609,25 @@ let eh = (0, Chunk730749.Z)((0, Chunk666743.Z)(Chunk442837.ZP.connectStores([Chu
     if (null == l) throw Error("Needs applicationId or skuId");
     null != (r = y.Z.getApplication(l)) && (t = r.destinationSkuId), n = null != t ? M.Z.get(t) : null
   }(null == n ? true : n.flags) != null && (0, V.yE)(n.flags, ea.l4R.STICKER) && (n = null);
-  let c = null != l && (U.Z.inTestModeForApplication(l) || v.Z.inDevModeForApplication(l));
+  let c = null != l && (U.Z.inTestModeForApplication(l) || I.Z.inDevModeForApplication(l));
   return {
     skuId: t,
     application: null != l ? y.Z.getApplication(l) : null,
-    isFetchingEntitlements: null != l && D.Z.applicationIdsFetching.has(l),
-    didFetchEntitlements: null != l && D.Z.applicationIdsFetched.has(l),
-    shouldFetchStatistics: o && null != l && L.Z.shouldFetchStatisticsForApplication(l),
+    isFetchingEntitlements: null != l && R.Z.applicationIdsFetching.has(l),
+    didFetchEntitlements: null != l && R.Z.applicationIdsFetched.has(l),
+    shouldFetchStatistics: s && null != l && L.Z.shouldFetchStatisticsForApplication(l),
     sku: n,
     isFocused: G.Z.isFocused(),
     storeListing: k.Z.getStoreListing({
       storeListingId: a,
       skuId: t,
-      channelId: null != s ? s.id : null,
+      channelId: null != o ? o.id : null,
       isTestMode: c
     }),
     isInTestMode: null != l && c,
-    matureAgree: R.Z.didMatureAgree,
-    theme: Z.Z.theme,
+    matureAgree: D.Z.didMatureAgree,
+    theme: A.Z.theme,
     locale: x.default.locale,
-    guild: null != s ? A.Z.getGuild(s.getGuildId()) : null
+    guild: null != o ? Z.Z.getGuild(o.getGuildId()) : null
   }
 })(ef)))

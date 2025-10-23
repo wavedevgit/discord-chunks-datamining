@@ -1,7 +1,7 @@
 /** Chunk was on 4093 **/
 /** chunk id: 399299, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  default: () => q
+  default: () => X
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -49,7 +49,7 @@ function B(e) {
     selectSource: t,
     sourceChanged: r,
     onChangeSource: i
-  } = e, s = (0, a.e7)([x.ZP, C.Z], () => (0, I.isWindows)() ? (0, y.Z)(x.ZP, C.Z) : null), d = (0, a.e7)([u.Z], () => (null == s ? true : s.id) != null ? u.Z.getApplication(s.id) : null), m = (0, a.e7)([x.ZP], () => x.ZP.getRunningGames()), h = (0, a.Wu)([u.Z], () => m.map(e => null != e.id ? u.Z.getApplication(e.id) : null).filter(P.lm), [m]), j = null;
+  } = e, s = (0, a.e7)([x.ZP, C.Z], () => (0, y.isWindows)() ? (0, O.Z)(x.ZP, C.Z) : null), d = (0, a.e7)([u.Z], () => (null == s ? true : s.id) != null ? u.Z.getApplication(s.id) : null), m = (0, a.e7)([x.ZP], () => x.ZP.getRunningGames()), h = (0, a.Wu)([u.Z], () => m.map(e => null != e.id ? u.Z.getApplication(e.id) : null).filter(T.lm), [m]), j = null;
   if (null != n ? j = n.name : null != s && (j = s.name), null == j) return null;
   let p = (0, U.Z)(s, n, m),
     v = r ? h.find(e => {
@@ -160,7 +160,7 @@ function H(e) {
     screen: i
   } = e, c = r.useCallback(e => {
     t(e)
-  }, [t]), u = (0, a.e7)([Z.Z], () => Z.Z.getUseSystemScreensharePicker() && (0, I.isLinux)());
+  }, [t]), u = (0, a.e7)([Z.Z], () => Z.Z.getUseSystemScreensharePicker() && (0, y.isLinux)());
   return (0, l.jsx)("div", {
     className: s()(G.modalContent, L.checkboxRow),
     children: (0, l.jsx)(o.Checkbox, {
@@ -188,7 +188,7 @@ function Y(e) {
   })
 }
 
-function q(e) {
+function X(e) {
   let {
     selectedSource: n,
     selectedFPS: t,
@@ -206,27 +206,27 @@ function q(e) {
     onChangeSelectedFPS: f,
     onChangeSelectedResolution: C,
     onChangeSelectedPreset: b,
-    onChangeSelectedChannelId: P,
-    onChangeSource: I,
-    onChangeAudioDevice: y,
+    onChangeSelectedChannelId: T,
+    onChangeSource: y,
+    onChangeAudioDevice: O,
     onChangeGuild: M,
     onChangeSound: U,
     onChangePreviewDisabled: _
-  } = e, L = (0, a.e7)([S.Z, p.Z], () => p.Z.getChannel(S.Z.getVoiceChannelId())), G = (0, a.e7)([O.Z], () => O.Z.GPUDriversOutdated), q = (0, a.e7)([O.Z], () => O.Z.problematicGPUDriver), X = (0, a.e7)([N.default], () => N.default.getCurrentUser()), K = (0, E.Z)();
+  } = e, L = (0, a.e7)([S.Z, p.Z], () => p.Z.getChannel(S.Z.getVoiceChannelId())), G = (0, a.e7)([I.Z], () => I.Z.GPUDriversOutdated), X = (0, a.e7)([I.Z], () => I.Z.problematicGPUDriver), q = (0, a.e7)([N.default], () => N.default.getCurrentUser()), K = (0, E.Z)();
   null != n && n.id.startsWith("screen") && !Z.Z.supportsScreenSoundshare() && (K = z.intl.string(z.t["1b0Gm7"]));
   let J = !!(null == n ? true : n.id.startsWith("camera")),
-    Q = null != X && X.verified && !X.bot,
+    Q = null != q && q.verified && !q.bot,
     $ = null != L && !(0, d.Yk)(L);
   return (0, l.jsxs)(r.Fragment, {
     children: [J ? (0, l.jsx)(k.Z, {
       selectedSource: n,
-      onChangeVideoDeviceSource: I,
-      onChangeAudioDevice: y
+      onChangeVideoDeviceSource: y,
+      onChangeAudioDevice: O
     }) : (0, l.jsxs)("div", {
       children: [(0, l.jsx)(B, {
         selectSource: x,
         sourceChanged: o,
-        onChangeSource: I,
+        onChangeSource: y,
         selectedSource: n
       }), null != K ? (0, l.jsx)(F, {
         text: K
@@ -243,14 +243,14 @@ function q(e) {
     }) : (0, l.jsx)(A.Z, {
       guildId: u,
       selectedChannelId: i,
-      onChangeSelectedChannelId: P
+      onChangeSelectedChannelId: T
     }), null != u && Q && $ ? (0, l.jsx)(V, {
       guildId: u
     }) : null, G ? (0, l.jsx)(F, {
       text: z.intl.string(z.t.q65tSw)
-    }) : null, q ? (0, l.jsx)(F, {
+    }) : null, X ? (0, l.jsx)(F, {
       text: z.intl.format(z.t.RrLvuT, {
-        helpCenterLink: T.Z.getArticleURL(w.BhN.NVIDIA_DRIVER_ISSUES)
+        helpCenterLink: P.Z.getArticleURL(w.BhN.NVIDIA_DRIVER_ISSUES)
       })
     }) : null, (0, l.jsx)(D.Z, {
       selectedPreset: s,

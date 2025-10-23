@@ -20,26 +20,26 @@ function h(e) {
     active: t,
     user: n,
     channel: h
-  } = e, g = (0, c.K)(), m = i.useCallback(() => {
+  } = e, m = (0, c.K)(), g = i.useCallback(() => {
     (0, l.showToast)((0, l.createToast)(p.intl.string(p.t["EDYbS+"]), l.ToastType.FAILURE))
-  }, []), b = i.useCallback(() => {
-    o.Z.closeChannelSidebar(s.uZ)
   }, []), _ = i.useCallback(() => {
-    o.Z.closeChannelSidebar(s.uZ), g && (0, a.Kh)(h.id)
-  }, [h.id, g]), {
+    s.Z.closeChannelSidebar(o.uZ)
+  }, []), b = i.useCallback(() => {
+    s.Z.closeChannelSidebar(o.uZ), m && (0, a.Kh)(h.id)
+  }, [h.id, m]), {
     acceptMessageRequest: E,
     rejectMessageRequest: O,
-    isAcceptLoading: v,
+    isAcceptLoading: I,
     isRejectLoading: y,
-    isUserProfileLoading: I,
+    isUserProfileLoading: v,
     isOptimisticAccepted: C,
     isOptimisticRejected: S
   } = (0, u.m)({
     user: n,
-    onAcceptSuccess: _,
-    onRejectSuccess: b,
-    onError: m
-  }), N = v || y || I || C || S;
+    onAcceptSuccess: b,
+    onRejectSuccess: _,
+    onError: g
+  }), T = I || y || v || C || S;
   return (0, r.jsxs)("div", {
     className: f.container,
     children: [(0, r.jsx)(d.Z, {
@@ -58,7 +58,7 @@ function h(e) {
           onClick: e => {
             e.stopPropagation(), O(h.id)
           },
-          disabled: N,
+          disabled: T,
           loading: y || S
         })
       }), (0, r.jsx)("div", {
@@ -71,8 +71,8 @@ function h(e) {
           onClick: e => {
             e.stopPropagation(), E(h.id)
           },
-          disabled: N,
-          loading: v || I || C
+          disabled: T,
+          loading: I || v || C
         })
       })]
     })]

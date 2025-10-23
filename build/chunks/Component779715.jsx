@@ -34,7 +34,7 @@ let E = function() {
       theme: module,
       children: e => (0, r.jsxs)(u.Z, {
         className: e,
-        toolbar: (0, r.jsx)(g.F, {}),
+        toolbar: (0, r.jsx)(m.F, {}),
         role: "navigation",
         "aria-labelledby": t,
         children: [(0, r.jsx)(u.Z.Icon, {
@@ -42,7 +42,7 @@ let E = function() {
           "aria-hidden": true
         }), (0, r.jsx)(u.Z.Title, {
           id: t,
-          children: b.intl.string(b.t.F4Zggw)
+          children: _.intl.string(_.t.F4Zggw)
         })]
       })
     }), (0, Chunk951288.jsx)("div", {

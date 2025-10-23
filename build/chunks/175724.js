@@ -65,8 +65,8 @@ function C(e) {
 function N(e) {
   if (null == e) returnfalse;
   let t = false;
-  return E.Z.getMessages(e).hasMoreAfter && (i.Z.jumpToPresent(e, S.AQB), t = true), b.ZP.hasUnread(e) && ((0, a.In)(e, {
+  return E.Z.getMessages(e).hasMoreAfter && (i.Z.jumpToPresent(e, S.AQB), t = true), b.ZP.hasUnread(e) && ((0, a.ack)(e, {
     object: S.qAy.MARK_CHANNEL_AS_READ_KEYBIND,
-    objectType: S.Qqv.ACK_MANUAL
+    objectType: S.AnalyticsObjectTypes.ACK_MANUAL
   }), t = true), (0, a.iV)(e), t
 }

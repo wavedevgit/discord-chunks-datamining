@@ -50,7 +50,7 @@ let T = function(e) {
         page: y.ZY5.PREMIUM_GUILD_USER_MODAL,
         section: y.jXE.PREMIUM_GUILD_USER_MODAL_CTA_BAR,
         object: y.qAy.BUTTON_ICON,
-        objectType: y.Qqv.BUY
+        objectType: y.AnalyticsObjectTypes.BUY
       },
       onClose: e => e && t()
     })
@@ -66,7 +66,7 @@ let T = function(e) {
         page: y.ZY5.PREMIUM_GUILD_USER_MODAL,
         section: y.jXE.PREMIUM_GUILD_USER_MODAL_CTA_BAR,
         object: y.qAy.BUTTON_ICON,
-        objectType: y.Qqv.GIFT
+        objectType: y.AnalyticsObjectTypes.GIFT
       },
       onClose: e => e && t()
     })
@@ -123,7 +123,7 @@ let T = function(e) {
               page: y.ZY5.PREMIUM_GUILD_USER_MODAL,
               section: y.jXE.PREMIUM_GUILD_USER_MODAL_CTA_BAR,
               object: y.qAy.BUTTON_CTA,
-              objectType: y.Qqv.BUY
+              objectType: y.AnalyticsObjectTypes.BUY
             },
             closeLayer: t,
             color: c.zx.Colors.WHITE,

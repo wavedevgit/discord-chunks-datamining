@@ -107,7 +107,7 @@ function S(e) {
   } = e, a = {
     section: h.jXE.STREAM_SETTINGS,
     object: h.qAy.PREMIUM_UPSELL_BANNER,
-    objectType: h.Qqv.BUY
+    objectType: h.AnalyticsObjectTypes.BUY
   };
   return (0, l.jsxs)("div", {
     className: s()(v.upsellBanner, v.enhancedBanner, {

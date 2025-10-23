@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 751586, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  UN: () => g,
+  UN: () => m,
   Ui: () => h
 });
 var Chunk951288 = require("./951288.js"),
@@ -37,7 +37,7 @@ function h() {
     label: Chunk388032.intl.string(Chunk388032.t.L2mlUb)
   }]
 }
-let g = e => {
+let m = e => {
   let {
     questId: t,
     selectedSections: n
@@ -46,7 +46,7 @@ let g = e => {
   let h = e => null == n || 0 === n.length || n.includes(e);
   return (0, r.jsxs)(r.Fragment, {
     children: [h("quest_bar") && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(s.Z, {
+      children: [(0, r.jsx)(o.Z, {
         quest: f
       }), (0, r.jsx)(a.i, {})]
     }), h("home_card") && (0, r.jsxs)(r.Fragment, {
@@ -66,7 +66,7 @@ let g = e => {
         quest: f
       }), (0, r.jsx)(a.i, {})]
     }), h("activity_panel") && (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(o.Z, {
+      children: [(0, r.jsx)(s.Z, {
         quest: f
       }), (0, r.jsx)(a.i, {})]
     })]

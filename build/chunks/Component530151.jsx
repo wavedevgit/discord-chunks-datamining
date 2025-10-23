@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
-  s = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
   Chunk28664 = require("./28664.jsx"),
@@ -61,8 +61,8 @@ let G = e => {
       children: n
     })
   },
-  B = [Chunk692547.Z.unsafe_rawColors.BLUE_345.css, Chunk692547.Z.colors.INTERACTIVE_NORMAL.css],
-  H = e => {
+  H = [Chunk692547.Z.unsafe_rawColors.BLUE_345.css, Chunk692547.Z.colors.INTERACTIVE_NORMAL.css],
+  B = e => {
     let {
       tooltip: t,
       onClick: n,
@@ -86,13 +86,13 @@ let G = e => {
 
 function V(e, t) {
   switch (t) {
-    case D.f07.POST_INSTALL_SCRIPTS:
-    case D.f07.PLANNING:
-    case D.f07.FINALIZING:
-    case D.f07.ALLOCATING_DISK:
+    case R.f07.POST_INSTALL_SCRIPTS:
+    case R.f07.PLANNING:
+    case R.f07.FINALIZING:
+    case R.f07.ALLOCATING_DISK:
       return "".concat(e);
     default:
-      return (0, A.BU)(e, {
+      return (0, Z.BU)(e, {
         useKibibytes: true
       })
   }
@@ -175,21 +175,21 @@ let F = {
   }
 };
 
-function z(e, t, n, r, i) {
+function Y(e, t, n, r, i) {
   let l = F[t],
     a = null != l ? Object.keys(l) : [],
     {
-      unit: o,
-      time: s
-    } = (0, N.CI)(null != e ? e / 60 : null, a);
-  if (null != l && null != o) {
-    let e = l[o];
-    return null != e ? e(n, r, i, s) : null
+      unit: s,
+      time: o
+    } = (0, T.CI)(null != e ? e / 60 : null, a);
+  if (null != l && null != s) {
+    let e = l[s];
+    return null != e ? e(n, r, i, o) : null
   }
   return null
 }
 
-function W(e) {
+function z(e) {
   let {
     type: t,
     stage: n,
@@ -197,58 +197,58 @@ function W(e) {
     progress: i,
     total: l,
     secondsRemaining: a
-  } = e, o = V(l, n), s = V(i, n);
+  } = e, s = V(l, n), o = V(i, n);
   switch (n) {
-    case D.f07.QUEUED:
+    case R.f07.QUEUED:
       if (0 === i) return M.intl.string(M.t.RpfBqd);
       return M.intl.formatToPlainString(M.t.uNjCXZ, {
         percent: r,
-        progress: s,
-        total: o
+        progress: o,
+        total: s
       });
-    case D.f07.PLANNING:
+    case R.f07.PLANNING:
       return M.intl.formatToPlainString(M.t.sfuCUb, {
         percent: r
       });
-    case D.f07.ALLOCATING_DISK:
+    case R.f07.ALLOCATING_DISK:
       return M.intl.formatToPlainString(M.t.XigoJ9, {
         percent: r
       });
-    case D.f07.PATCHING:
-      return z(a, t, r, s, o);
-    case D.f07.FINALIZING:
+    case R.f07.PATCHING:
+      return Y(a, t, r, o, s);
+    case R.f07.FINALIZING:
       return M.intl.formatToPlainString(M.t["6PHDUN"], {
         percent: r
       });
-    case D.f07.PAUSING:
+    case R.f07.PAUSING:
       return M.intl.formatToPlainString(M.t.vjxhWo, {
         percent: r,
-        progress: s,
-        total: o
+        progress: o,
+        total: s
       });
-    case D.f07.VERIFYING:
+    case R.f07.VERIFYING:
       return M.intl.formatToPlainString(M.t.bbilvq, {
         percent: r,
-        progress: s,
-        total: o
+        progress: o,
+        total: s
       });
-    case D.f07.POST_INSTALL_SCRIPTS:
+    case R.f07.POST_INSTALL_SCRIPTS:
       return M.intl.formatToPlainString(M.t.c5vRUo, {
         percent: r,
-        progress: s,
-        total: o
+        progress: o,
+        total: s
       });
-    case D.f07.REPAIRING:
-      if (t === D.vxO.REPAIRING) return z(a, t, r, s, o);
+    case R.f07.REPAIRING:
+      if (t === R.vxO.REPAIRING) return Y(a, t, r, o, s);
       return M.intl.formatToPlainString(M.t.OCzETT, {
         percent: r,
-        progress: s,
-        total: o
+        progress: o,
+        total: s
       })
   }
   throw Error("Invalid Dispatch stage")
 }
-class Y extends Chunk647438.PureComponent {
+class W extends Chunk647438.PureComponent {
   get isFocused() {
     let {
       cellProps: e
@@ -262,8 +262,8 @@ class Y extends Chunk647438.PureComponent {
       foregroundGradientColor: i,
       message: l
     } = e;
-    return (0, r.jsxs)(I.Z, {
-      direction: I.Z.Direction.VERTICAL,
+    return (0, r.jsxs)(v.Z, {
+      direction: v.Z.Direction.VERTICAL,
       children: [(0, r.jsx)(h.Exd, {
         percent: t,
         size: h.Exd.Sizes.SMALL,
@@ -281,12 +281,12 @@ class Y extends Chunk647438.PureComponent {
       percents: t,
       message: n
     } = e;
-    return (0, r.jsxs)(I.Z, {
-      direction: I.Z.Direction.VERTICAL,
+    return (0, r.jsxs)(v.Z, {
+      direction: v.Z.Direction.VERTICAL,
       children: [(0, r.jsx)(h.yGy, {
         percents: t,
         size: h.yGy.Sizes.SMALL,
-        foregroundColors: B,
+        foregroundColors: H,
         animate: this.isFocused
       }), (0, r.jsx)("div", {
         className: k.progressCellText,
@@ -322,7 +322,7 @@ class Y extends Chunk647438.PureComponent {
       if (null != Chunk951288 && null != Chunk647438) {
         let n = V(Chunk647438, Chunk120356),
           a = V(Chunk951288, Chunk120356),
-          o = Math.floor(t = Chunk780570.xI(Chunk951288, Chunk647438));
+          s = Math.floor(t = Chunk780570.xI(Chunk951288, Chunk647438));
         e = Chunk120356 === Chunk981631.f07.PAUSING ? Chunk388032.intl.formatToPlainString(Chunk388032.t.vjxhWo, {
           percent: Chunk392711,
           progress: a,
@@ -389,7 +389,7 @@ class Y extends Chunk647438.PureComponent {
       a = Math.floor(Chunk120356);
     return this.renderBody({
       percent: Chunk120356,
-      message: W({
+      message: z({
         type: Chunk647438,
         stage: Chunk951288,
         percent: a,
@@ -436,34 +436,34 @@ class Y extends Chunk647438.PureComponent {
         progress: i,
         total: l,
         type: a,
-        readerProgress: o
+        readerProgress: s
       } = n;
       if (null == i || null == l || null == r) return null;
-      let s = w.xI(i, l),
-        c = w.xI(null != o ? o : 0, l),
+      let o = w.xI(i, l),
+        c = w.xI(null != s ? s : 0, l),
         u = e[e.length - 1] / t * 1e3,
         d = l - i,
-        p = W({
+        p = z({
           type: a,
           stage: r,
-          percent: Math.floor(s),
+          percent: Math.floor(o),
           progress: i,
           total: l,
           secondsRemaining: 0 !== u ? Math.max(1, d / u) : null
         });
       return this.renderStackedProgress({
-        percents: [s, c],
+        percents: [o, c],
         message: p
       })
     })
   }
 }
-let q = () => (0, Chunk951288.jsx)(H, {
+let q = () => (0, Chunk951288.jsx)(B, {
     icon: Chunk481060.o1U,
     tooltip: Chunk388032.intl.string(Chunk388032.t.YGm6SZ),
     onClick: () => Chunk51025.v4()
   }),
-  K = () => (0, Chunk951288.jsx)(H, {
+  K = () => (0, Chunk951288.jsx)(B, {
     icon: Chunk481060.fpf,
     tooltip: Chunk388032.intl.string(Chunk388032.t.TVAd5J),
     onClick: () => Chunk51025.wO()
@@ -472,27 +472,27 @@ let q = () => (0, Chunk951288.jsx)(H, {
     let {
       item: t
     } = e;
-    return (0, r.jsx)(H, {
+    return (0, r.jsx)(B, {
       icon: h.wj7,
       tooltip: M.intl.string(M.t["Eqb+LN"]),
-      onClick: () => b.A1(t.applicationId, t.branchId)
+      onClick: () => _.A1(t.applicationId, t.branchId)
     })
   },
-  X = e => {
+  J = e => {
     let {
       item: t
     } = e;
-    return (0, r.jsx)(H, {
+    return (0, r.jsx)(B, {
       icon: h.Dio,
       tooltip: M.intl.string(M.t["0lFmC9"]),
-      onClick: () => b.al(t.applicationId, t.branchId)
+      onClick: () => _.al(t.applicationId, t.branchId)
     })
   },
-  J = [{
+  X = [{
     key: "name",
     cellClassName: Chunk248241.nameCell,
-    render: e => (0, r.jsxs)(I.Z, {
-      align: I.Z.Align.CENTER,
+    render: e => (0, r.jsxs)(v.Z, {
+      align: v.Z.Align.CENTER,
       children: [(0, r.jsx)(S.Z, {
         game: e.application,
         className: k.__invalid_gameIcon,
@@ -507,7 +507,7 @@ let q = () => (0, Chunk951288.jsx)(H, {
     cellClassName: Chunk248241.progressCell,
     headerCellClassName: Chunk248241.progressCellHeader,
     bodyCellClassName: Chunk248241.progressCellBody,
-    render: (e, t) => (0, r.jsx)(Y, {
+    render: (e, t) => (0, r.jsx)(W, {
       item: e,
       cellProps: t
     })
@@ -516,21 +516,21 @@ let q = () => (0, Chunk951288.jsx)(H, {
     cellClassName: Chunk248241.actionsCell,
     render(e, t) {
       let n, i;
-      return e.finished ? n = null != e.libraryApplication ? (0, r.jsx)(_.Z, {
+      return e.finished ? n = null != e.libraryApplication ? (0, r.jsx)(b.Z, {
         libraryApplication: e.libraryApplication,
         size: f.zx.Sizes.SMALL,
         className: k.gameActionButton,
-        source: D.Sbl.APPLICATION_LIBRARY_UPDATES
-      }) : null : null != e.state ? e.state.type !== D.vxO.UP_TO_DATE && (n = e.index > 0 ? (0, r.jsx)(Q, {
+        source: R.Sbl.APPLICATION_LIBRARY_UPDATES
+      }) : null : null != e.state ? e.state.type !== R.vxO.UP_TO_DATE && (n = e.index > 0 ? (0, r.jsx)(Q, {
         item: e
       }) : null != t && t.paused ? (0, r.jsx)(q, {}) : (0, r.jsx)(K, {
         item: e
-      }), i = (0, r.jsx)(X, {
+      }), i = (0, r.jsx)(J, {
         item: e
-      })) : i = (0, r.jsx)(X, {
+      })) : i = (0, r.jsx)(J, {
         item: e
-      }), (0, r.jsxs)(I.Z, {
-        justify: I.Z.Justify.END,
+      }), (0, r.jsxs)(v.Z, {
+        justify: v.Z.Justify.END,
         children: [n, i]
       })
     }
@@ -547,8 +547,8 @@ class $ extends Chunk647438.PureComponent {
       applications: e
     } = this.props;
     module.forEach(e => {
-      e.finished && g.Z.wait(() => {
-        b.wi(e.applicationId, e.branchId)
+      e.finished && m.Z.wait(() => {
+        _.wi(e.applicationId, e.branchId)
       })
     }), window.removeEventListener("resize", this.throttledUpdateHeight), this.isUnmounted = true
   }
@@ -558,7 +558,7 @@ class $ extends Chunk647438.PureComponent {
       paused: t,
       isFocused: i,
       theme: l,
-      analyticsContext: o
+      analyticsContext: s
     } = this.props;
     return 0 === module.length ? null : (0, Chunk951288.jsxs)("div", {
       className: Chunk248241.gameUpdates,
@@ -579,7 +579,7 @@ class $ extends Chunk647438.PureComponent {
         })]
       }), (0, Chunk951288.jsx)(Chunk167533.Z, {
         hasHeader: false,
-        columns: J,
+        columns: X,
         data: module,
         className: Chunk248241.table,
         rowClassName: Chunk248241.row,
@@ -591,7 +591,7 @@ class $ extends Chunk647438.PureComponent {
         },
         rowProps: {
           onContextMenu: (e, t) => {
-            m.jW(e, async () => {
+            g.jW(e, async () => {
               let {
                 default: e
               } = await n.e("98335").then(n.bind(n, 485292));
@@ -611,7 +611,7 @@ class $ extends Chunk647438.PureComponent {
                 }({}, n), l = l = {
                   applicationId: t.applicationId,
                   branchId: t.branchId,
-                  analyticsContext: o
+                  analyticsContext: s
                 }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
                   var n = Object.keys(e);
                   if (Object.getOwnPropertySymbols) {
@@ -631,7 +631,7 @@ class $ extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), U(this, "isUnmounted", false), U(this, "isTallerThanHalfViewport", false), U(this, "throttledUpdateHeight", s().throttle(() => {
+    super(...e), U(this, "isUnmounted", false), U(this, "isTallerThanHalfViewport", false), U(this, "throttledUpdateHeight", o().throttle(() => {
       if (this.isUnmounted) return;
       let {
         height: e,
@@ -646,15 +646,15 @@ function ee(e, t, n, r) {
   return e.reduce((e, i, l) => {
     let {
       applicationId: a,
-      branchId: o
-    } = i, s = n.getApplication(a), c = r.getState(a, o);
-    return null != s && e.push({
-      key: "".concat(a, ":").concat(o),
+      branchId: s
+    } = i, o = n.getApplication(a), c = r.getState(a, s);
+    return null != o && e.push({
+      key: "".concat(a, ":").concat(s),
       applicationId: a,
-      branchId: o,
+      branchId: s,
       state: c,
-      application: s,
-      libraryApplication: P.Z.getLibraryApplication(a, o),
+      application: o,
+      libraryApplication: j.Z.getLibraryApplication(a, s),
       finished: t,
       index: l
     }), e

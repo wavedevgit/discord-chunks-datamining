@@ -853,7 +853,7 @@ function eJ(e) {
     location: {
       section: ee.jXE.CHANNEL,
       object: ee.qAy.ACK_FORUM_CHANNEL_NO_UNREAD_POSTS,
-      objectType: ee.Qqv.ACK_AUTOMATIC
+      objectType: ee.AnalyticsObjectTypes.ACK_AUTOMATIC
     }
   })
 }
@@ -984,7 +984,7 @@ function e9(e) {
     location: {
       section: ee.jXE.CHANNEL,
       object: ee.qAy.ACK_INCOMING_MESSAGE,
-      objectType: ee.Qqv.ACK_AUTOMATIC
+      objectType: ee.AnalyticsObjectTypes.ACK_AUTOMATIC
     }
   });
   if (null != r && r.isInstanceFocused() && h && r.isInstanceLocked() && r.isPinned(ee.Odu.TEXT)) return s.ack({
@@ -993,7 +993,7 @@ function e9(e) {
     location: {
       section: ee.jXE.OVERLAY,
       object: ee.qAy.ACK_INCOMING_MESSAGE,
-      objectType: ee.Qqv.ACK_AUTOMATIC
+      objectType: ee.AnalyticsObjectTypes.ACK_AUTOMATIC
     }
   });
   if (null == s.oldestUnreadMessageId || s.oldestUnreadMessageIdStale ? s.oldestUnreadMessageId = a.id : l || (0, C.nV)() === i || (s.oldestUnreadMessageId = a.id), !c && s.unreadCount++, !(q.Z.isBlockedOrIgnoredForMessage(a) || a.type === ee.uaV.RECIPIENT_REMOVE && (null == d ? true : d.type) === ee.d4z.GROUP_DM)) {
@@ -1116,7 +1116,7 @@ function tu(e) {
   return eQ({
     section: ee.jXE.CHANNEL,
     object: ee.qAy.ACK_RESORT_THREADS,
-    objectType: ee.Qqv.ACK_AUTOMATIC
+    objectType: ee.AnalyticsObjectTypes.ACK_AUTOMATIC
   }, t)
 }
 
@@ -1255,11 +1255,11 @@ function tI(e) {
   return ef !== t && (a = tC(ef) || a, a = tC(e_) || a), (ef === t || (null == r ? true : r.type) != null && ee.TPd.GUILD_THREADS_ONLY.has(r.type)) && (a = eQ({
     section: ee.jXE.CHANNEL,
     object: ee.qAy.ACK_CHANNEL_SELECT_SAME_CHANNEL,
-    objectType: ee.Qqv.ACK_AUTOMATIC
+    objectType: ee.AnalyticsObjectTypes.ACK_AUTOMATIC
   }, t) || a), ef === t && (a = eQ({
     section: ee.jXE.CHANNEL,
     object: ee.qAy.ACK_CHANNEL_SELECT_SAME_CHANNEL_SIDEBAR,
-    objectType: ee.Qqv.ACK_AUTOMATIC
+    objectType: ee.AnalyticsObjectTypes.ACK_AUTOMATIC
   }, n) || a), ef = t, e_ = n, a
 }
 
@@ -1269,7 +1269,7 @@ function tT() {
   return e_ !== module ? (t = tC(e_), e_ = module) : t = eQ({
     section: Chunk981631.jXE.CHANNEL,
     object: Chunk981631.qAy.ACK_CHANNEL_SECTION_STORE_UPDATE,
-    objectType: Chunk981631.Qqv.ACK_AUTOMATIC
+    objectType: Chunk981631.AnalyticsObjectTypes.ACK_AUTOMATIC
   }, module) || exports, exports
 }
 
@@ -1285,7 +1285,7 @@ function tS(e) {
     location: {
       section: ee.jXE.CHANNEL,
       object: ee.qAy.ACK_VOICE_CHANNEL_SELECT,
-      objectType: ee.Qqv.ACK_SEMI_AUTOMATIC
+      objectType: ee.AnalyticsObjectTypes.ACK_SEMI_AUTOMATIC
     }
   })
 }
@@ -1313,7 +1313,7 @@ function tR(e, t) {
   return t || n.hasUnread() || (n.oldestUnreadMessageIdStale = true), eQ({
     section: ee.jXE.CHANNEL,
     object: ee.qAy.ACK_WINDOW_FOCUS,
-    objectType: ee.Qqv.ACK_AUTOMATIC
+    objectType: ee.AnalyticsObjectTypes.ACK_AUTOMATIC
   }, e)
 }
 
@@ -1324,7 +1324,7 @@ function tP(e) {
   return eQ({
     section: ee.jXE.CHANNEL,
     object: ee.qAy.ACK_CHANNEL_SCROLL,
-    objectType: ee.Qqv.ACK_AUTOMATIC
+    objectType: ee.AnalyticsObjectTypes.ACK_AUTOMATIC
   }, t)
 }
 
@@ -1495,7 +1495,7 @@ function tY(e) {
   return !ey.hasWindowId(t, n) && (ey.addWindowId(t, n), eQ({
     section: ee.jXE.CHANNEL,
     object: ee.qAy.ENABLE_AUTOMATIC_ACK,
-    objectType: ee.Qqv.ACK_AUTOMATIC
+    objectType: ee.AnalyticsObjectTypes.ACK_AUTOMATIC
   }, t))
 }
 
@@ -1566,7 +1566,7 @@ function tJ(e) {
   return t === ee.$7l.ACTIVE && eQ({
     section: ee.jXE.CHANNEL,
     object: ee.qAy.ACK_APP_FOREGROUND,
-    objectType: ee.Qqv.ACK_AUTOMATIC
+    objectType: ee.AnalyticsObjectTypes.ACK_AUTOMATIC
   }, X.Z.getChannelId())
 }
 class t$ extends(i = Chunk442837.ZP.Store) {

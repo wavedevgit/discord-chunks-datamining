@@ -34,7 +34,7 @@ function S(e) {
       location: "CaptureDeviceConfig"
     }),
     C = S.concat(N),
-    [b, P] = r.useState(function(e, n, t) {
+    [b, T] = r.useState(function(e, n, t) {
       var l;
       let r = n.find(n => n.id === e);
       if (null == r) return null;
@@ -69,7 +69,7 @@ function S(e) {
         location: "CaptureDeviceConfig",
         className: Z.__invalid_marginaTop8,
         selectedDeviceId: b,
-        onSelectDevice: e => (P(e), i(e), false)
+        onSelectDevice: e => (T(e), i(e), false)
       })]
     })]
   })

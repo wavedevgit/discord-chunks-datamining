@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 830880, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  R: () => b
+  R: () => _
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk252319 = require("./252319.js");
 
-function b() {
+function _() {
   let [e, t] = (0, Chunk243778.US)([Chunk704215.z.RESTRICTED_ACCOUNTS_SETTING_NOTICE]);
   return Chunk647438.useMemo(() => module === Chunk704215.z.RESTRICTED_ACCOUNTS_SETTING_NOTICE, [module]) ? (0, Chunk951288.jsx)(Chunk907995.f, {
     label: Chunk388032.t.zqv4nV,

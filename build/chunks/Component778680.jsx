@@ -18,13 +18,13 @@ function c(e) {
     controls: u
   } = e, d = (0, a.Ui)(), p = 0 === n.length || n.length === d.length, f = i.useMemo(() => p ? "all" : 1 === n.length ? n[0] : "all", [n, p]);
   return (0, r.jsxs)("div", {
-    className: s.container,
+    className: o.container,
     children: [(0, r.jsx)(l.Heading, {
       variant: "heading-xl/semibold",
       color: "header-primary",
-      children: o.intl.string(o.t.BDUDau)
+      children: s.intl.string(s.t.BDUDau)
     }), (0, r.jsx)("div", {
-      className: s.controlsBarContainer,
+      className: o.controlsBarContainer,
       children: u
     }), (0, r.jsxs)(l.njP, {
       type: "top",
@@ -35,15 +35,15 @@ function c(e) {
       },
       children: [(0, r.jsx)(l.njP.Item, {
         id: "all",
-        children: o.intl.string(o.t.Y9DnPa)
+        children: s.intl.string(s.t.Y9DnPa)
       }), d.map(e => (0, r.jsx)(l.njP.Item, {
         id: e.value,
         children: e.label
       }, e.value))]
     }), (0, r.jsx)("div", {
-      className: s.contentArea,
+      className: o.contentArea,
       children: (0, r.jsx)("div", {
-        className: s.content,
+        className: o.content,
         children: t
       })
     })]

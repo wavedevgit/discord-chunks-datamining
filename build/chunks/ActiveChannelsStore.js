@@ -2,7 +2,7 @@
 /** chunk id: 580079, original params: e,t,n (module,exports,require) **/
 require("./539854.js"), require("./388685.js");
 var r, i, l, a, Chunk392711 = require("./392711.js"),
-  s = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk592125 = require("./592125.js");
@@ -10,27 +10,27 @@ require("./914010.js");
 var Chunk709054 = require("./709054.js"),
   Chunk176505 = require("./176505.js");
 let h = {},
-  g = {},
   m = {},
-  b = {};
+  g = {},
+  _ = {};
 
-function _(e) {
-  let t = g[e];
+function b(e) {
+  let t = m[e];
   if (null == t) return;
   let n = p.default.fromTimestamp(Date.now() - 9e5),
-    r = s().findIndex(t, e => p.default.compare(e.id, n) > 0);
-  if (false === r) g[e] = [];
+    r = o().findIndex(t, e => p.default.compare(e.id, n) > 0);
+  if (false === r) m[e] = [];
   else {
     let n = Math.max(r, t.length - 26);
-    g[e] = s().slice(t, n)
+    m[e] = o().slice(t, n)
   }
-  m[e] = Date.now()
+  g[e] = Date.now()
 }
 
 function E(e, t, n, r) {
   h[e].add(t);
-  let i = m[t];
-  (null == i || i + 3e5 > Date.now()) && _(t), null == g[t] && (g[t] = []), g[t].push({
+  let i = g[t];
+  (null == i || i + 3e5 > Date.now()) && b(t), null == m[t] && (m[t] = []), m[t].push({
     id: n,
     userId: r
   })
@@ -40,29 +40,29 @@ function O(e) {
   let {
     channel: t
   } = e;
-  delete g[t.id], delete m[t.id]
+  delete m[t.id], delete g[t.id]
 }
-class v extends(a = Chunk442837.ZP.Store) {
+class I extends(a = Chunk442837.ZP.Store) {
   getActiveChannelsFetchStatus(e) {
-    return b[e]
+    return _[e]
   }
   getActiveChannelIds(e) {
     return h[e]
   }
   getChannelMessageData(e) {
-    return g[e]
+    return m[e]
   }
   shouldFetch(e) {
     var t;
-    return null == h[e] && !(null == (t = b[e]) ? true : t.loading)
+    return null == h[e] && !(null == (t = _[e]) ? true : t.loading)
   }
 }
-l = "ActiveChannelsStore", (i = "displayName") in(r = v) ? Object.defineProperty(r, i, {
+l = "ActiveChannelsStore", (i = "displayName") in(r = I) ? Object.defineProperty(r, i, {
   value: l,
   enumerable: true,
   configurable: true,
   writable: true
-}) : r[i] = l, new v(Chunk570140.Z, {
+}) : r[i] = l, new I(Chunk570140.Z, {
   CHANNEL_SELECT: function(e) {
     let {
       channelId: t,
@@ -73,11 +73,11 @@ l = "ActiveChannelsStore", (i = "displayName") in(r = v) ? Object.defineProperty
     if (null == r) returnfalse;
     r.forEach(e => {
       var t;
-      _(e), (null == (t = g[e]) ? true : t.length) === 0 && delete g[e]
+      b(e), (null == (t = m[e]) ? true : t.length) === 0 && delete m[e]
     });
-    let i = s().chain(Array.from(r)).filter(e => e in g).sortBy(e => {
+    let i = o().chain(Array.from(r)).filter(e => e in m).sortBy(e => {
       var t, n;
-      return -(null != (n = null == (t = g[e]) ? true : t.length) ? n : 0)
+      return -(null != (n = null == (t = m[e]) ? true : t.length) ? n : 0)
     }).value();
     h[n] = new Set(i)
   },
@@ -92,9 +92,9 @@ l = "ActiveChannelsStore", (i = "displayName") in(r = v) ? Object.defineProperty
     if (i || l) returnfalse;
     let a = d.Z.getChannel(n);
     if (null == a) returnfalse;
-    let o = a.guild_id;
-    if (null == o || null == h[o]) returnfalse;
-    E(o, n, r.id, null == (t = r.author) ? true : t.id)
+    let s = a.guild_id;
+    if (null == s || null == h[s]) returnfalse;
+    E(s, n, r.id, null == (t = r.author) ? true : t.id)
   },
   GUILD_DELETE: function(e) {
     let {
@@ -108,7 +108,7 @@ l = "ActiveChannelsStore", (i = "displayName") in(r = v) ? Object.defineProperty
     let {
       guildId: t
     } = e;
-    b[t] = {
+    _[t] = {
       loading: true,
       error: null,
       fetchedAt: Date.now()
@@ -119,7 +119,7 @@ l = "ActiveChannelsStore", (i = "displayName") in(r = v) ? Object.defineProperty
       guildId: t,
       channels: n
     } = e;
-    b[t] = {
+    _[t] = {
       loading: false,
       error: null,
       fetchedAt: Date.now()
@@ -138,7 +138,7 @@ l = "ActiveChannelsStore", (i = "displayName") in(r = v) ? Object.defineProperty
       guildId: t,
       error: n
     } = e;
-    b[t] = {
+    _[t] = {
       loading: false,
       error: n,
       fetchedAt: null

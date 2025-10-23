@@ -27,11 +27,11 @@ let v = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     channel: t,
     selected: a,
     onSelect: o
-  } = e, j = t.isOwner(h.default.getId()), v = (0, p.Z)(t), m = (0, y.ZP)(t), {
+  } = e, j = t.isOwner(h.default.getId()), v = (0, y.Z)(t), m = (0, g.ZP)(t), {
     rearrangeContextMenu: Z
   } = b.Z.useExperiment({
     location: s.Z.GROUP_DM_CONTEXT_MENU
-  }), w = (0, g.Z)(t, a), _ = (0, u.Z)({
+  }), w = (0, p.Z)(t, a), _ = (0, u.Z)({
     id: t.id,
     label: P.intl.string(P.t.gFHI3k)
   }), E = (0, c.Z)(t), S = (0, d.l)(t), x = (0, d.P)(t), k = (0, f.Z)(t), C = j ? (0, r.jsx)(i.sNh, {

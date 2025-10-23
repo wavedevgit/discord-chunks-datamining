@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 457094, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => tu
+  default: () => td
 }), require("./35282.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -58,6 +58,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk879064 = require("./879064.jsx"),
   Chunk315964 = require("./315964.js"),
   Chunk495784 = require("./495784.js"),
+  Chunk883311 = require("./883311.js"),
   Chunk975533 = require("./975533.js"),
   Chunk377400 = require("./377400.jsx"),
   Chunk285865 = require("./285865.js"),
@@ -116,7 +117,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk701476 = require("./701476.js"),
   Chunk186901 = require("./186901.js");
 
-function e6(e, t, n) {
+function e7(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -125,44 +126,44 @@ function e6(e, t, n) {
   }) : e[t] = n, e
 }
 
-function e7(e) {
+function e9(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      e6(e, t, n[t])
+      e7(e, t, n[t])
     })
   }
   return e
 }
 require("./117240.js"), require("./801077.js"), require("./967368.js"), require("./272053.js"), require("./974180.js"), require("./574254.js"), require("./551428.js"), require("./55563.js"), require("./882029.js"), require("./959457.js"), require("./653255.js"), require("./663389.js"), require("./25990.js"), require("./778825.js"), require("./999382.js"), require("./388610.js"), require("./533947.js"), require("./277053.js"), require("./371398.js"), require("./141233.js"), require("./471073.js"), require("./606206.js");
-let e9 = false;
+let te = false;
 (0, Chunk912471.DL)(), Chunk442837.ZP.initialize(), Chunk298969.Z.loadServer(), Chunk358085.isPlatformEmbedded && (Chunk998502.ZP.on("USER_SETTINGS_OPEN", (e, t) => {
-  eW.Z.getLayers().includes(e4.S9g.USER_SETTINGS) || (0, ek.openUserSettings)()
+  eW.Z.getLayers().includes(e3.S9g.USER_SETTINGS) || (0, eU.openUserSettings)()
 }), Chunk998502.ZP.on("LAUNCH_APPLICATION", (e, t) => {
-  let n = eY.Z.getActiveLibraryApplication(t);
-  e8.playApplication(t, n, {
+  let n = eq.Z.getActiveLibraryApplication(t);
+  e4.playApplication(t, n, {
     analyticsParams: {
       location: {
-        page: e4.ZY5.DIRECT,
-        object: e4.qAy.WEB_URL
+        page: e3.ZY5.DIRECT,
+        object: e3.qAy.WEB_URL
       }
     }
   })
 }));
-let te = (0, Chunk951752.l)(e => {
+let tt = (0, Chunk951752.l)(e => {
     let {
       location: t
-    } = e, n = (0, eM.default)(t.pathname);
+    } = e, n = (0, ek.default)(t.pathname);
     return null != n && (0, K.h)(() => {
-      (0, ek.openUserSettingsFromParsedUrl)({
+      (0, eU.openUserSettingsFromParsedUrl)({
         match: n,
         urlOrigin: "deeplink"
       })
     }), (0, r.jsx)(h.Z, {
-      deepLinkType: e2.jE.USER_SETTINGS,
+      deepLinkType: e6.jE.USER_SETTINGS,
       path: t.pathname,
       search: t.search,
       paramsBuilder: function(e, t, n) {
@@ -176,11 +177,11 @@ let te = (0, Chunk951752.l)(e => {
         }
       },
       children: (0, r.jsx)(a.l_, {
-        to: eF.Z.defaultRoute
+        to: eY.Z.defaultRoute
       })
     })
   }),
-  tt = Chunk442837.ZP.connectStores([Chunk38618.Z, Chunk896797.Z, Chunk314897.default], () => ({
+  tn = Chunk442837.ZP.connectStores([Chunk38618.Z, Chunk896797.Z, Chunk314897.default], () => ({
     isConnected: Chunk38618.Z.isConnected(),
     defaultRoute: Chunk896797.Z.defaultRoute,
     defaultRouteFallback: Chunk896797.Z.fallbackRoute,
@@ -215,15 +216,15 @@ let te = (0, Chunk951752.l)(e => {
       return null
     }
   }),
-  tn = (0, Chunk951752.l)((0, Chunk77987.e)(Chunk491575.Z, null, {
+  tr = (0, Chunk951752.l)((0, Chunk77987.e)(Chunk491575.Z, null, {
     passProps: false
   })),
-  tr = (0, Chunk77987.e)(Chunk684572.default, null, {
+  ti = (0, Chunk77987.e)(Chunk684572.default, null, {
     passProps: false
   }),
-  ti = [Chunk981631.Z5c.GUILD_BOOSTING_MARKETING(Chunk893607.Hw.guildId()), ...Array.from(Chunk176505.Vg).map(e => e4.Z5c.CHANNEL(eO.Hw.guildId(), e))];
+  tl = [Chunk981631.Z5c.GUILD_BOOSTING_MARKETING(Chunk893607.Hw.guildId()), ...Array.from(Chunk176505.Vg).map(e => e3.Z5c.CHANNEL(eI.Hw.guildId(), e))];
 
-function tl(e) {
+function ta(e) {
   let {
     guildId: t,
     channelId: n = null,
@@ -231,26 +232,26 @@ function tl(e) {
     threadId: i = null
   } = e.params;
   return {
-    guildId: null != t ? t : e4.ME,
+    guildId: null != t ? t : e3.ME,
     channelId: n,
     messageId: r,
     threadId: i
   }
 }
-let ta = [{
+let ts = [{
   path: [Chunk981631.Z5c.APP_WITH_INVITE_AND_GUILD_ONBOARDING(":inviteCode")],
   render(e) {
     let {
       match: t
     } = e;
-    return (0, r.jsx)(tt, {
+    return (0, r.jsx)(tn, {
       match: t
     })
   },
   isSessionRequired: true
 }, {
   path: [Chunk981631.Z5c.APP],
-  render: () => (0, Chunk951288.jsx)(tt, {}),
+  render: () => (0, Chunk951288.jsx)(tn, {}),
   isSessionRequired: true
 }, {
   path: [Chunk981631.Z5c.USERS(":id")],
@@ -260,11 +261,11 @@ let ta = [{
     } = e, {
       id: n
     } = t.params;
-    return (0, K.h)(() => (0, eA.openUserProfileModal)({
+    return (0, K.h)(() => (0, ew.openUserProfileModal)({
       userId: n,
       sourceAnalyticsLocations: [S.Z.URI_SCHEME]
     })), (0, r.jsx)(a.l_, {
-      to: eF.Z.defaultRoute
+      to: eY.Z.defaultRoute
     })
   }
 }, {
@@ -276,34 +277,34 @@ let ta = [{
       gameId: n,
       action: i
     } = t.params;
-    return eJ.Z.whenInitialized(() => {
-      eY.Z.whenInitialized(() => {
+    return e$.Z.whenInitialized(() => {
+      eq.Z.whenInitialized(() => {
         switch (i) {
           case "launch": {
-            let e = eY.Z.getActiveLibraryApplication(n);
+            let e = eq.Z.getActiveLibraryApplication(n);
             if (null == e) return;
-            e8.playApplication(e.id, e, {
+            e4.playApplication(e.id, e, {
               analyticsParams: {
                 location: {
-                  page: e4.ZY5.DIRECT,
-                  object: e4.qAy.WEB_URL
+                  page: e3.ZY5.DIRECT,
+                  object: e3.qAy.WEB_URL
                 }
               }
             });
             break
           }
           case "test-mode":
-            eQ.Z.whenInitialized(() => f.Wt(n));
+            eJ.Z.whenInitialized(() => f.Wt(n));
             break;
           case "uninstall": {
-            let e = eY.Z.getActiveLibraryApplication(n);
+            let e = eq.Z.getActiveLibraryApplication(n);
             if (null == e) return;
-            (0, u.W)(e.id, e.branchId, e4.Sbl.URI_SCHEME)
+            (0, u.W)(e.id, e.branchId, e3.Sbl.URI_SCHEME)
           }
         }
       })
     }), (0, r.jsx)(a.l_, {
-      to: e4.Z5c.APPLICATION_LIBRARY
+      to: e3.Z5c.APPLICATION_LIBRARY
     })
   }
 }, {
@@ -323,19 +324,19 @@ let ta = [{
     } = e, {
       section: n,
       subsection: i
-    } = t.params, o = (0, l.parse)(location.search).feature;
+    } = t.params, s = (0, l.parse)(location.search).feature;
     return (0, K.h)(() => et.v({
-      section: (0, ee.Z)(e4.pNK, n),
-      subsection: (0, ee.Z)(e4.KsC, i),
-      feature: o
+      section: (0, ee.Z)(e3.pNK, n),
+      subsection: (0, ee.Z)(e3.KsC, i),
+      feature: s
     })), (0, r.jsx)(a.l_, {
-      to: eF.Z.defaultRoute
+      to: eY.Z.defaultRoute
     })
   },
   isSessionRequired: true
 }, {
   path: [Chunk981631.Z5c.SETTINGS(":section", ":subsection?")],
-  render: te,
+  render: tt,
   isSessionRequired: true
 }, {
   path: [Chunk981631.Z5c.USER_GUILD_NOTIFICATION_SETTINGS(Chunk893607.Hw.guildId())],
@@ -346,13 +347,13 @@ let ta = [{
       guildId: i
     } = t.params;
     return (0, K.h)(() => {
-      (0, s.ZDy)(async () => {
+      (0, o.ZDy)(async () => {
         let {
           default: e
         } = await Promise.all([n.e("15076"), n.e("38203")]).then(n.bind(n, 907941));
         return t => {
           var n, l;
-          return (0, r.jsx)(e, (n = e7({}, t), l = l = {
+          return (0, r.jsx)(e, (n = e9({}, t), l = l = {
             guildId: i
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);
@@ -367,7 +368,7 @@ let ta = [{
         }
       })
     }), (0, r.jsx)(a.l_, {
-      to: e4.Z5c.CHANNEL(i)
+      to: e3.Z5c.CHANNEL(i)
     })
   },
   isSessionRequired: true
@@ -394,8 +395,8 @@ let ta = [{
       guildId: n,
       channelId: i
     } = t.params;
-    (0, es.c)(e5.M5.MARKETING_UNCLAIMED);
-    let l = e4.Z5c.CHANNEL(n, i);
+    (0, ec.c)(e2.M5.MARKETING_UNCLAIMED);
+    let l = e3.Z5c.CHANNEL(n, i);
     return (0, r.jsx)(a.l_, {
       to: l
     })
@@ -413,11 +414,11 @@ let ta = [{
       guildEventId: i
     } = t.params;
     return (0, K.h)(() => {
-      (0, J.bO)({
+      (0, X.bO)({
         eventId: i
       })
     }), (0, r.jsx)(a.l_, {
-      to: e4.Z5c.CHANNEL(n)
+      to: e3.Z5c.CHANNEL(n)
     })
   },
   isSessionRequired: true
@@ -432,9 +433,9 @@ let ta = [{
       subsection: l
     } = t.params;
     return (0, K.h)(() => {
-      $.Z.open(n, (0, ee.Z)(e4.pNK, i), true, (0, ee.Z)(e4.KsC, l))
+      $.Z.open(n, (0, ee.Z)(e3.pNK, i), true, (0, ee.Z)(e3.KsC, l))
     }), (0, r.jsx)(a.l_, {
-      to: e4.Z5c.CHANNEL(n)
+      to: e3.Z5c.CHANNEL(n)
     })
   },
   isSessionRequired: true,
@@ -442,13 +443,13 @@ let ta = [{
 }, {
   path: [Chunk981631.Z5c.CHANNEL_THREAD_VIEW(Chunk893607.Hw.guildId(), Chunk893607.Hw.channelId(), ":threadId", ":messageId?"), Chunk981631.Z5c.CHANNEL(Chunk893607.Hw.guildId(), Chunk893607.Hw.channelId({
     optional: true
-  }), ":messageId?"), Chunk981631.Z5c.ACTIVITY, Chunk981631.Z5c.ACTIVITIES, Chunk981631.Z5c.ACTIVITIES_HAPPENING_NOW, Chunk981631.Z5c.ACTIVITY_DETAILS(":applicationId"), Chunk981631.Z5c.APPLICATION_LIBRARY, Chunk981631.Z5c.APPLICATION_STORE, Chunk981631.Z5c.MESSAGE_REQUESTS, Chunk981631.Z5c.COLLECTIBLES_SHOP, Chunk981631.Z5c.COLLECTIBLES_SHOP_PRODUCT_DETAIL(":skuId"), Chunk981631.Z5c.GUILD_DISCOVERY, Chunk981631.Z5c.QUEST_HOME, Chunk981631.Z5c.QUEST_HOME_V2, Chunk981631.Z5c.GLOBAL_DISCOVERY, Chunk981631.Z5c.GUILD_MEMBER_VERIFICATION(Chunk893607.Hw.guildId()), Chunk981631.Z5c.GUILD_MEMBER_VERIFICATION_FOR_HUB(Chunk893607.Hw.guildId(), ":inviteCode?"), Chunk981631.Z5c.GUILD_BOOSTING_MARKETING(Chunk893607.Hw.guildId()), Chunk981631.Z5c.GUILD_FEATURE(":feature", Chunk893607.Hw.guildId()), Chunk981631.Z5c.FEATURE(":feature"), Chunk981631.Z5c.FAMILY_CENTER],
-  render: tn,
+  }), ":messageId?"), Chunk981631.Z5c.ACTIVITY, Chunk981631.Z5c.ACTIVITIES, Chunk981631.Z5c.ACTIVITIES_HAPPENING_NOW, Chunk981631.Z5c.ACTIVITY_DETAILS(":applicationId"), Chunk981631.Z5c.APPLICATION_LIBRARY, Chunk981631.Z5c.APPLICATION_STORE, Chunk981631.Z5c.MESSAGE_REQUESTS, Chunk981631.Z5c.COLLECTIBLES_SHOP, Chunk981631.Z5c.COLLECTIBLES_SHOP_PRODUCT_DETAIL(":skuId"), Chunk981631.Z5c.GUILD_DISCOVERY, Chunk981631.Z5c.QUEST_HOME, Chunk981631.Z5c.QUEST_HOME_V2, Chunk981631.Z5c.ICYMI, Chunk981631.Z5c.GLOBAL_DISCOVERY, Chunk981631.Z5c.GUILD_MEMBER_VERIFICATION(Chunk893607.Hw.guildId()), Chunk981631.Z5c.GUILD_MEMBER_VERIFICATION_FOR_HUB(Chunk893607.Hw.guildId(), ":inviteCode?"), Chunk981631.Z5c.GUILD_BOOSTING_MARKETING(Chunk893607.Hw.guildId()), Chunk981631.Z5c.GUILD_FEATURE(":feature", Chunk893607.Hw.guildId()), Chunk981631.Z5c.FEATURE(":feature"), Chunk981631.Z5c.FAMILY_CENTER],
+  render: tr,
   isSessionRequired: true,
   isChatRoute: true
 }, {
   path: [Chunk981631.Z5c.APPLICATION_DIRECTORY],
-  render: tr,
+  render: ti,
   isSessionRequired: true
 }, {
   path: [Chunk981631.Z5c.GAME_SHOP(Chunk893607.Hw.guildId(), ":shopPageIndex?", ":shopSkuId?", ":shopSlug?")],
@@ -459,10 +460,10 @@ let ta = [{
       guildId: n,
       shopPageIndex: i,
       shopSkuId: l,
-      shopSlug: o
-    } = t.params, s = parseInt(i, 10);
-    return s = isNaN(s) ? 0 : s, (0, r.jsx)(a.l_, {
-      to: e4.Z5c.CHANNELS_GAME_SHOP(n, s, l, o)
+      shopSlug: s
+    } = t.params, o = parseInt(i, 10);
+    return o = isNaN(o) ? 0 : o, (0, r.jsx)(a.l_, {
+      to: e3.Z5c.CHANNELS_GAME_SHOP(n, o, l, s)
     })
   },
   isSessionRequired: true
@@ -473,7 +474,7 @@ function to(e) {
       path: t,
       isChatRoute: n
     }
-    of ta) {
+    of ts) {
     if (!n) continue;
     let r = (0, a.LX)(e, {
       path: t
@@ -483,7 +484,7 @@ function to(e) {
   return null
 }
 
-function ts(e) {
+function tc(e) {
   let {
     channelId: t,
     guildId: n,
@@ -492,23 +493,23 @@ function ts(e) {
   if (!q.Z.isConnected()) return;
   let {
     location: i
-  } = (0, ev.s1)();
-  i.pathname === r && (null == eV.Z.getChannel(t) ? (0, ev.dL)(e4.Z5c.CHANNEL(n)) : (0, ev.dL)(r))
+  } = (0, ey.s1)();
+  i.pathname === r && (null == eF.Z.getChannel(t) ? (0, ey.dL)(e3.Z5c.CHANNEL(n)) : (0, ey.dL)(r))
 }
-class tc extends Chunk647438.PureComponent {
+class tu extends Chunk647438.PureComponent {
   componentDidMount() {
-    Chunk998502.ZP.setZoomFactor(Chunk607070.Z.zoom), Chunk298969.Z.init(), Chunk679891.Z.initialize(), Chunk380570.Z.initialize(), Chunk408026.Z.initialize(), Chunk444961.Z.initialize(), Chunk763916.Z.initialize(), Chunk367207.Z.initialize(), Chunk845767.Z.initialize(), Chunk975533.Z.initialize(), Chunk627845.Z.init(), Chunk531551.Z.init(), Chunk306721.Z.init(), Chunk122333.Z.initialize(), Chunk687751.Z.initialize(), Chunk750995.Z.initialize(), Chunk489977.Z.initialize(), Chunk318891.ZP.initialize(), Chunk610278.ZP.initialize(), Chunk282506.Z.initialize(), Chunk269089.Z.initialize(), Chunk513202.Z.initialize(), Chunk315964.Z.init(), Chunk403763.Z.init(), Chunk900974.Z.init(), Chunk503737.Z.initialize(), Chunk703016.Z.init(), Chunk241890.Z.init(), Chunk332754.Z.init(), Chunk262702.Z.initialize(), Chunk639033.Z.initialize(), Chunk497805.Z.initialize(), Chunk507468.Z.init(), Chunk96051.Z.initialize(), Chunk185666.Z.initialize(), Chunk719256.Z.initialize(), Chunk377368.Z.initialize(), Chunk818765.Z.initialize(), Chunk960275.Z.initialize(), Chunk678492.Z.initialize(), Chunk314533.Z.initialize(), Chunk9029.Z.initialize(), Chunk657030.Z.initialize(), Chunk495784.Z.init({
+    Chunk998502.ZP.setZoomFactor(Chunk607070.Z.zoom), Chunk298969.Z.init(), Chunk679891.Z.initialize(), Chunk380570.Z.initialize(), Chunk408026.Z.initialize(), Chunk444961.Z.initialize(), Chunk763916.Z.initialize(), Chunk367207.Z.initialize(), Chunk845767.Z.initialize(), Chunk975533.Z.initialize(), Chunk627845.Z.init(), Chunk531551.Z.init(), Chunk306721.Z.init(), Chunk122333.Z.initialize(), Chunk687751.Z.initialize(), Chunk750995.Z.initialize(), Chunk489977.Z.initialize(), Chunk318891.ZP.initialize(), Chunk610278.ZP.initialize(), Chunk282506.Z.initialize(), Chunk269089.Z.initialize(), Chunk513202.Z.initialize(), Chunk315964.Z.init(), Chunk403763.Z.init(), Chunk900974.Z.init(), Chunk503737.Z.initialize(), Chunk703016.Z.init(), Chunk241890.Z.init(), Chunk332754.Z.init(), Chunk262702.Z.initialize(), Chunk639033.Z.initialize(), Chunk497805.Z.initialize(), Chunk507468.Z.init(), Chunk96051.Z.initialize(), Chunk185666.Z.initialize(), Chunk719256.Z.initialize(), Chunk377368.Z.initialize(), Chunk818765.Z.initialize(), Chunk960275.Z.initialize(), Chunk678492.Z.initialize(), Chunk314533.Z.initialize(), Chunk9029.Z.initialize(), Chunk657030.Z.initialize(), Chunk883311.Z.initialize(), Chunk495784.Z.init({
       hasModalOpen: Chunk481060.$sL,
       openModal: () => (0, Chunk481060.ZDy)(async () => {
         let {
           default: e
         } = await Promise.resolve().then(require.bind(require, 650233));
-        return t => (0, r.jsx)(e, e7({}, t))
+        return t => (0, r.jsx)(e, e9({}, t))
       })
     }), Chunk377400.Z.initialize(), Chunk329557.Z.initialize(), Chunk837689.Z.initialize(), Chunk823169.Z.initialize(), Chunk954709.Z.initialize(), Chunk644679.Z.initialize(), Chunk64514.Z.initialize(), this.rewriterUnlisten = Chunk304445.Z.addRouteRewriter(this.ensureChannelMatchesGuild), this.historyUnlisten = Chunk304445.Z.addRouteChangeListener(this.handleHistoryChange)
   }
   componentWillUnmount() {
-    Chunk298969.Z.terminate(), Chunk444961.Z.terminate(), Chunk367207.Z.terminate(), Chunk380570.Z.terminate(), Chunk679891.Z.terminate(), Chunk318891.ZP.terminate(), Chunk610278.ZP.terminate(), Chunk282506.Z.terminate(), Chunk513202.Z.terminate(), Chunk489977.Z.terminate(), Chunk269089.Z.terminate(), Chunk497805.Z.terminate(), Chunk503737.Z.terminate(), Chunk96051.Z.terminate(), Chunk377400.Z.terminate(), Chunk185666.Z.terminate(), Chunk329557.Z.terminate(), Chunk719256.Z.terminate(), Chunk377368.Z.terminate(), Chunk818765.Z.terminate(), Chunk960275.Z.terminate(), Chunk678492.Z.terminate(), Chunk314533.Z.terminate(), Chunk9029.Z.terminate(), Chunk837689.Z.terminate(), Chunk823169.Z.terminate(), Chunk696287.Z.terminate(), Chunk954709.Z.terminate(), Chunk644679.Z.terminate(), Chunk64514.Z.terminate(), Chunk657030.Z.terminate(), this.historyUnlisten(), this.rewriterUnlisten()
+    Chunk298969.Z.terminate(), Chunk444961.Z.terminate(), Chunk367207.Z.terminate(), Chunk380570.Z.terminate(), Chunk679891.Z.terminate(), Chunk318891.ZP.terminate(), Chunk610278.ZP.terminate(), Chunk282506.Z.terminate(), Chunk513202.Z.terminate(), Chunk489977.Z.terminate(), Chunk269089.Z.terminate(), Chunk497805.Z.terminate(), Chunk503737.Z.terminate(), Chunk96051.Z.terminate(), Chunk377400.Z.terminate(), Chunk185666.Z.terminate(), Chunk329557.Z.terminate(), Chunk719256.Z.terminate(), Chunk377368.Z.terminate(), Chunk818765.Z.terminate(), Chunk960275.Z.terminate(), Chunk678492.Z.terminate(), Chunk314533.Z.terminate(), Chunk9029.Z.terminate(), Chunk837689.Z.terminate(), Chunk823169.Z.terminate(), Chunk696287.Z.terminate(), Chunk954709.Z.terminate(), Chunk644679.Z.terminate(), Chunk64514.Z.terminate(), Chunk657030.Z.terminate(), Chunk883311.Z.terminate(), this.historyUnlisten(), this.rewriterUnlisten()
   }
   handleHistoryChange(e, t) {
     let {
@@ -524,7 +525,7 @@ class tc extends Chunk647438.PureComponent {
             path: t,
             isSessionRequired: n
           }
-          of ta) {
+          of ts) {
           if (!n) continue;
           let r = (0, a.LX)(e, {
             path: t
@@ -540,51 +541,51 @@ class tc extends Chunk647438.PureComponent {
       let {
         guildId: r,
         channelId: i,
-        messageId: o,
-        threadId: s
-      } = tl(n), c = (0, eO.Ss)(r), u = (0, eO.cq)(i), f = (0, eO.cq)(s), h = eK.Z.getGuildId(), g = h !== r;
-      if (c && g && d.Z.selectGuild(r), c && u) {
-        let n = eq.Z.getChannelId(h),
+        messageId: s,
+        threadId: o
+      } = ta(n), c = (0, eI.Ss)(r), u = (0, eI.cq)(i), f = (0, eI.cq)(o), h = eQ.Z.getGuildId(), m = h !== r;
+      if (c && m && d.Z.selectGuild(r), c && u) {
+        let n = eK.Z.getChannelId(h),
           a = n !== i;
-        if (!e9 || g || a || null != o) {
-          e9 = true, p.default.selectChannel({
+        if (!te || m || a || null != s) {
+          te = true, p.default.selectChannel({
             guildId: r,
             channelId: i,
-            messageId: o
+            messageId: s
           });
           let {
             summaryId: e
           } = (0, l.parse)(t);
-          null != e && ej.ZP.setSelectedSummary(i, e)
+          null != e && ex.ZP.setSelectedSummary(i, e)
         }
-        if (null != s && f) {
-          let e = eH.ZP.getCurrentSidebarChannelId(n) !== s,
-            t = null != eH.ZP.getGuildSidebarState(r);
-          if (null != i && null != s && e)
-            if (t)(0, ev.dL)(e4.Z5c.CHANNEL(r, s, o));
+        if (null != o && f) {
+          let e = eV.ZP.getCurrentSidebarChannelId(n) !== o,
+            t = null != eV.ZP.getGuildSidebarState(r);
+          if (null != i && null != o && e)
+            if (t)(0, ey.dL)(e3.Z5c.CHANNEL(r, o, s));
             else {
               let e = {
-                type: eS.Ff.THREAD
+                type: eT.Ff.THREAD
               };
-              null != o && (e.initialMessageId = o), eC.Z.openThreadAsSidebar({
+              null != s && (e.initialMessageId = s), eS.Z.openThreadAsSidebar({
                 guildId: r,
                 baseChannelId: i,
-                channelId: s,
+                channelId: o,
                 details: e
               })
             }
-        } else null == i || a || eC.Z.closeChannelSidebar(i);
+        } else null == i || a || eS.Z.closeChannelSidebar(i);
         let c = eo.Z.getIsOpen();
-        if (i === e3.oC.ROLE_SUBSCRIPTIONS) ea.Z.closeSidebar();
-        else if (g && c) {
-          let t = null == h && r === e4.ME,
-            n = e === e4.Z5c.GUILD_DISCOVERY;
-          t || n ? ea.Z.closeSidebar() : ea.Z.openSidebar()
-        } else(a && c || !g && !a) && ea.Z.closeSidebar()
-      } else ti.some(t => {
+        if (i === e5.oC.ROLE_SUBSCRIPTIONS) es.Z.closeSidebar();
+        else if (m && c) {
+          let t = null == h && r === e3.ME,
+            n = e === e3.Z5c.GUILD_DISCOVERY;
+          t || n ? es.Z.closeSidebar() : es.Z.openSidebar()
+        } else(a && c || !m && !a) && es.Z.closeSidebar()
+      } else tl.some(t => {
         var n;
         return (null == (n = (0, a.LX)(e, t)) ? true : n.isExact) === true
-      }) || (0, ev.dL)(eF.Z.fallbackRoute)
+      }) || (0, ey.dL)(eY.Z.fallbackRoute)
     }(n, r), (0, k.pN)(n, i, "REPLACE" === t)
   }
   ensureChannelMatchesGuild(e) {
@@ -597,28 +598,28 @@ class tc extends Chunk647438.PureComponent {
       guildId: r,
       channelId: i,
       threadId: l
-    } = tl(n), a = (0, eO.Ss)(r) && r !== e4.ME && r !== e4.I_8;
-    if (null != i && (0, eO.cq)(i) && !(0, e3.AB)(i) && a) {
-      let n = eV.Z.getChannel(i);
-      if (null == n) ex.Z.loadThread(i).then(() => ts({
+    } = ta(n), a = (0, eI.Ss)(r) && r !== e3.ME && r !== e3.I_8;
+    if (null != i && (0, eI.cq)(i) && !(0, e5.AB)(i) && a) {
+      let n = eF.Z.getChannel(i);
+      if (null == n) eA.Z.loadThread(i).then(() => tc({
         channelId: i,
         guildId: r,
         pathname: t
       }));
-      else if (n.guild_id !== r && r !== e4.STv) return {
-        path: e4.Z5c.CHANNEL(r),
+      else if (n.guild_id !== r && r !== e3.STv) return {
+        path: e3.Z5c.CHANNEL(r),
         state: e.state
       };
       if (null != l) {
-        if (!((0, eO.cq)(l) && !(0, e3.AB)(i))) return null;
-        let n = eV.Z.getChannel(l);
-        if (null == n) ex.Z.loadThread(l).then(() => ts({
+        if (!((0, eI.cq)(l) && !(0, e5.AB)(i))) return null;
+        let n = eF.Z.getChannel(l);
+        if (null == n) eA.Z.loadThread(l).then(() => tc({
           channelId: l,
           guildId: r,
           pathname: t
         }));
-        else if ((null == n ? true : n.parent_id) !== i) return eC.Z.closeChannelSidebar(i), {
-          path: e4.Z5c.CHANNEL(r, i),
+        else if ((null == n ? true : n.parent_id) !== i) return eS.Z.closeChannelSidebar(i), {
+          path: e3.Z5c.CHANNEL(r, i),
           state: e.state
         }
       }
@@ -632,7 +633,7 @@ class tc extends Chunk647438.PureComponent {
           exact: true,
           from: "/channels",
           to: "/"
-        }), ta.map(e => {
+        }), ts.map(e => {
           let {
             path: t,
             render: n
@@ -648,7 +649,7 @@ class tc extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), e6(this, "historyUnlisten", () => {}), e6(this, "rewriterUnlisten", () => {})
+    super(...e), e7(this, "historyUnlisten", () => {}), e7(this, "rewriterUnlisten", () => {})
   }
 }
-let tu = tc
+let td = tu

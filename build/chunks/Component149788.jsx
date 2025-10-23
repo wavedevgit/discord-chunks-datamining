@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 149788, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,10 +17,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk663448 = require("./663448.js"),
   Chunk988050 = require("./988050.js");
-let b = function(e) {
+let _ = function(e) {
   let {
     onScroll: t
-  } = e, n = (0, p.Z)(), b = i.useMemo(() => n.map(e => {
+  } = e, n = (0, p.Z)(), _ = i.useMemo(() => n.map(e => {
     var t, n;
     return t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -57,20 +57,20 @@ let b = function(e) {
   }), [n]);
   return (0, r.jsxs)(u.Z, {
     onScroll: t,
-    children: [(0, r.jsx)(s.Z, {
+    children: [(0, r.jsx)(o.Z, {
       title: h.intl.string(h.t.X5xPlb),
       description: h.intl.string(h.t["F/IQCI"]),
-      children: (0, r.jsx)(o.Z, {})
+      children: (0, r.jsx)(s.Z, {})
     }), (0, r.jsxs)(c.Z, {
       children: [n.length > 0 ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(l.Heading, {
-          className: g.sectionTitle,
+          className: m.sectionTitle,
           variant: "heading-lg/semibold",
           color: "header-primary",
           children: h.intl.string(h.t["2DfZIQ"])
         }), (0, r.jsxs)("div", {
-          className: g.content,
-          children: [b.map(e => (0, r.jsx)(f.VD, {
+          className: m.content,
+          children: [_.map(e => (0, r.jsx)(f.VD, {
             guild: e,
             onClick: () => a.Z.transitionToGuildSync(e.id)
           }, e.id)), (0, r.jsx)(d.Z, {
@@ -78,21 +78,21 @@ let b = function(e) {
           })]
         })]
       }) : (0, r.jsx)("div", {
-        className: g.content,
+        className: m.content,
         children: (0, r.jsx)(d.Z, {
           hasHub: false
         })
       }), (0, r.jsx)("div", {
-        className: m.divider
+        className: g.divider
       }), (0, r.jsxs)("div", {
-        className: m.disclaimer,
+        className: g.disclaimer,
         children: [(0, r.jsxs)(l.Text, {
-          className: m.text,
+          className: g.text,
           variant: "text-sm/medium",
           color: "header-secondary",
           children: [h.intl.string(h.t.O1k9XX), " "]
         }), (0, r.jsx)(l.Text, {
-          className: m.text,
+          className: g.text,
           variant: "text-sm/medium",
           color: "header-secondary",
           children: h.intl.string(h.t.FV5dvh)

@@ -49,10 +49,10 @@ function h(e, t, n, h) {
       }), O("join"), r.Z.updateNotificationStatus(n)
     },
     onCancelClick: (t, n) => {
-      (0, l.In)(e.id, {
+      (0, l.ack)(e.id, {
         section: d.jXE.OVERLAY,
         object: d.qAy.ACK_DECLINE_REQUEST_TO_JOIN,
-        objectType: d.Qqv.ACK_SEMI_AUTOMATIC
+        objectType: d.AnalyticsObjectTypes.ACK_SEMI_AUTOMATIC
       }, true, true), r.Z.updateNotificationStatus(n), O("decline")
     },
     onDismissClick: () => {

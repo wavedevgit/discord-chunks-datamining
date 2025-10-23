@@ -7,7 +7,7 @@ var Chunk647438 = require("./647438.js"),
   Chunk166516 = require("./166516.js"),
   l = require.n(Chunk166516),
   Chunk525654 = require("./525654.js"),
-  o = require.n(Chunk525654),
+  s = require.n(Chunk525654),
   Chunk442837 = require("./442837.js"),
   Chunk91896 = require("./91896.js"),
   Chunk849862 = require("./849862.js"),
@@ -21,15 +21,15 @@ var Chunk647438 = require("./647438.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 let O = new Set(["Blink", "Gecko", "WebKit"]),
-  v = Chunk981631.dG4;
-if (Chunk358085.isPlatformEmbedded) v = e => m.ZP.setBadge(e);
-else if (O.has(o().layout)) {
+  I = Chunk981631.dG4;
+if (Chunk358085.isPlatformEmbedded) I = e => g.ZP.setBadge(e);
+else if (O.has(s().layout)) {
   let e = new(l())({
     animation: "none"
   });
-  v = t => {
+  I = t => {
     try {
-      (0, b.PR)(t), e.badge(false === t ? "•" : t)
+      (0, _.PR)(t), e.badge(false === t ? "•" : t)
     } catch (e) {}
   }
 }
@@ -55,6 +55,6 @@ function y() {
       null == exports || exports(), require()
     }
   }, [module]), Chunk647438.useEffect(() => {
-    v(exports)
-  }, [exports]), Chunk647438.useEffect(() => () => v(0), [])
+    I(exports)
+  }, [exports]), Chunk647438.useEffect(() => () => I(0), [])
 }

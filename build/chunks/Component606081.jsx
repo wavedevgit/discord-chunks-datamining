@@ -59,18 +59,18 @@ f.Image = function(e) {
   return 0 === t.length ? null : 1 === t.length ? t[0] : t
 };
 var h = ((i = h || {}).DAMAGED = "http://schema.org/DamagedCondition", i.NEW = "http://schema.org/NewCondition", i.REFURBISHED = "http://schema.org/RefurbishedCondition", i.USED = "http://schema.org/UsedCondition", i),
-  g = ((l = g || {}).DISCONTINUED = "http://schema.org/Discontinued", l.IN_STOCK = "http://schema.org/InStock", l.IN_STORE_ONLY = "http://schema.org/InStoreOnly", l.LIMITED_AVAILABILITY = "http://schema.org/LimitedAvailability", l.ONLINE_ONLY = "http://schema.org/OnlineOnly", l.OUT_OF_STOCK = "http://schema.org/OutOfStock", l.PREORDER = "http://schema.org/PreOrder", l.PRESALE = "http://schema.org/PreSale", l.SOLD_OUT = "http://schema.org/SoldOut", l);
+  m = ((l = m || {}).DISCONTINUED = "http://schema.org/Discontinued", l.IN_STOCK = "http://schema.org/InStock", l.IN_STORE_ONLY = "http://schema.org/InStoreOnly", l.LIMITED_AVAILABILITY = "http://schema.org/LimitedAvailability", l.ONLINE_ONLY = "http://schema.org/OnlineOnly", l.OUT_OF_STOCK = "http://schema.org/OutOfStock", l.PREORDER = "http://schema.org/PreOrder", l.PRESALE = "http://schema.org/PreSale", l.SOLD_OUT = "http://schema.org/SoldOut", l);
 
-function m(e) {
+function g(e) {
   return d("Offer", e)
 }
-m.ItemConditions = h, m.ItemAvailability = g;
-var b = ((a = b || {}).YEARLY = "ANN", a.MONTHLY = "MON", a);
+g.ItemConditions = h, g.ItemAvailability = m;
+var _ = ((a = _ || {}).YEARLY = "ANN", a.MONTHLY = "MON", a);
 
-function _(e) {
+function b(e) {
   return d("QuantitativeValue", e)
 }
-_.UnitCodes = b;
+b.UnitCodes = _;
 class E extends(r = Chunk647438.Component) {
   render() {
     let {
@@ -91,13 +91,13 @@ c(E, "Thing", p), c(E, "Brand", p), c(E, "Person", function(e) {
   return d("Organization", e)
 }), c(E, "ItemPage", function(e) {
   return d("ItemPage", e)
-}), c(E, "Product", f), c(E, "Offer", m), c(E, "Rating", function(e) {
+}), c(E, "Product", f), c(E, "Offer", g), c(E, "Rating", function(e) {
   return d("Rating", e)
 }), c(E, "AggregateRating", function(e) {
   return d("AggregateRating", e)
 }), c(E, "AggregateOffer", function(e) {
   return d("AggregateOffer", e)
-}), c(E, "QuantitativeValue", _), c(E, "UnitPriceSpecification", function(e) {
+}), c(E, "QuantitativeValue", b), c(E, "UnitPriceSpecification", function(e) {
   return d("UnitPriceSpecification", e)
 });
 let O = E

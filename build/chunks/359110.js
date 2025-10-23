@@ -3,7 +3,8 @@
 "use strict";
 require.d(exports, {
   Kh: () => _,
-  ad: () => p
+  ad: () => p,
+  jd: () => h
 });
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -51,4 +52,13 @@ function p(e, t) {
   (0, c.uL)(u.Z5c.CHANNEL(n, e.id), f({
     openChannel: true
   }, t))
+}
+
+function h(e, t, n) {
+  let r = l.Z.getChannel(e);
+  if (null == r) return;
+  let i = (0, s.e)(r);
+  (0, c.uL)(u.Z5c.CHANNEL(i, r.id, t), f({
+    openChannel: true
+  }, n))
 }

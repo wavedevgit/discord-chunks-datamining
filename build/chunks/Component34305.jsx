@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 34305, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => I
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk499126 = require("./499126.js"),
   Chunk197571 = require("./197571.js");
 
-function _(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -42,7 +42,7 @@ class E extends Chunk647438.PureComponent {
       path: n,
       label: i,
       editingPath: l,
-      isDefault: o,
+      isDefault: s,
       metadata: u
     } = this.props;
     return null != Chunk579022 && (e = null != Chunk579022.availableKB ? (0, Chunk424218.BU)(Chunk579022.availableKB, {
@@ -154,10 +154,10 @@ class E extends Chunk647438.PureComponent {
     return this.props.editingPath === this.props.path ? this.renderEditing() : this.renderViewing()
   }
   constructor(...e) {
-    super(...e), _(this, "state", {
+    super(...e), b(this, "state", {
       label: true,
       isDefault: null
-    }), _(this, "handleStartEditing", () => {
+    }), b(this, "handleStartEditing", () => {
       let {
         path: e,
         label: t,
@@ -168,7 +168,7 @@ class E extends Chunk647438.PureComponent {
         label: t,
         isDefault: n
       })
-    }), _(this, "handleStopEditing", () => {
+    }), b(this, "handleStopEditing", () => {
       let {
         onToggleEditing: e
       } = this.props;
@@ -176,7 +176,7 @@ class E extends Chunk647438.PureComponent {
         label: true,
         isDefault: null
       })
-    }), _(this, "handleRemoveLocation", () => {
+    }), b(this, "handleRemoveLocation", () => {
       (0, a.h7j)(e => (0, r.jsx)(a.ConfirmModal, function(e, t) {
         return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
           var n = Object.keys(e);
@@ -195,32 +195,32 @@ class E extends Chunk647438.PureComponent {
           "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
           }))), r.forEach(function(t) {
-            _(e, t, n[t])
+            b(e, t, n[t])
           })
         }
         return e
       }({}, e), {
-        header: g.intl.string(g.t.iBUzS5),
-        confirmText: g.intl.string(g.t.iBUzS5),
-        cancelText: g.intl.string(g.t["ETE/oC"]),
+        header: m.intl.string(m.t.iBUzS5),
+        confirmText: m.intl.string(m.t.iBUzS5),
+        cancelText: m.intl.string(m.t["ETE/oC"]),
         onConfirm: () => {
-          this.handleStopEditing(), (0, o.iD)(this.props.path)
+          this.handleStopEditing(), (0, s.iD)(this.props.path)
         },
         children: (0, r.jsx)(a.Text, {
           variant: "text-md/normal",
-          children: g.intl.string(g.t["1XqeW2"])
+          children: m.intl.string(m.t["1XqeW2"])
         })
       })))
-    }), _(this, "handleSaveChanges", () => {
-      (0, o.Tb)(this.props.path, {
+    }), b(this, "handleSaveChanges", () => {
+      (0, s.Tb)(this.props.path, {
         label: null != this.state.label ? this.state.label : this.props.label,
         isDefault: null != this.state.isDefault ? this.state.isDefault : this.props.isDefault
       }), this.handleStopEditing()
-    }), _(this, "handleLabelChange", e => {
+    }), b(this, "handleLabelChange", e => {
       this.setState({
         label: e
       })
-    }), _(this, "handleToggleDefault", () => {
+    }), b(this, "handleToggleDefault", () => {
       this.setState({
         isDefault: !this.state.isDefault
       })
@@ -276,20 +276,20 @@ class O extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), _(this, "state", {
+    super(...e), b(this, "state", {
       editingPath: null
-    }), _(this, "handleAddInstallationLocation", () => {
+    }), b(this, "handleAddInstallationLocation", () => {
       h.ZP.showOpenDialog(["openDirectory"]).then(e => {
-        null != e && 0 !== e.length && null != e[0] && "undefined" !== e[0] && (0, o.RY)(e[0])
+        null != e && 0 !== e.length && null != e[0] && "undefined" !== e[0] && (0, s.RY)(e[0])
       })
-    }), _(this, "handleToggleEditing", e => {
+    }), b(this, "handleToggleEditing", e => {
       this.setState({
         editingPath: e
       })
     })
   }
 }
-let v = Chunk442837.ZP.connectStores([Chunk391690.Z], () => ({
+let I = Chunk442837.ZP.connectStores([Chunk391690.Z], () => ({
   installationPaths: Chunk391690.Z.installationPaths,
   installationPathsMetadata: Chunk391690.Z.installationPathsMetadata,
   defaultInstallationPath: Chunk391690.Z.defaultInstallationPath

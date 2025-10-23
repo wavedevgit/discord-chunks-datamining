@@ -73,7 +73,7 @@ let E = function(e) {
         page: h.ZY5.GUILD_BOOSTING_USER_SETTINGS,
         section: h.jXE.GUILD_BOOSTING_RECOMMENDED_SERVER_BOOST_THIS_SERVER_CTA,
         object: h.qAy.BUTTON_CTA,
-        objectType: h.Qqv.BUY
+        objectType: h.AnalyticsObjectTypes.BUY
       },
       pauseAnimation: true,
       size: s.zx.Sizes.MEDIUM,

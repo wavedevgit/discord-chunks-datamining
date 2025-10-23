@@ -98,7 +98,7 @@ let j = () => (0, Chunk951288.jsx)("div", {
       defaultTextOverride: g,
       premiumModalAnalyticsLocation: {
         object: D.qAy.BUTTON_CTA,
-        objectType: D.Qqv.BUY
+        objectType: D.AnalyticsObjectTypes.BUY
       },
       onSubscribeModalClose: E,
       fullWidth: true

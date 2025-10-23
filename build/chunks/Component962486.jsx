@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 962486, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => m
 }), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,15 +20,15 @@ let h = {
   section: Chunk981631.jXE.DISCOVER_POPULAR
 };
 
-function g(e) {
+function m(e) {
   let {
     tab: t,
     guildIds: n,
     loading: p,
-    onScroll: g,
-    onGuildCardClick: m,
-    onGuildCardSeen: b
-  } = e, _ = (0, u.Mf)(t), E = (0, u.a$)(t), O = (0, u.QW)(t), v = (0, u.lg)(t), y = i.useMemo(() => {
+    onScroll: m,
+    onGuildCardClick: g,
+    onGuildCardSeen: _
+  } = e, b = (0, u.Mf)(t), E = (0, u.a$)(t), O = (0, u.QW)(t), I = (0, u.lg)(t), y = i.useMemo(() => {
     let e = p ? 30 : n.length,
       t = [];
     for (let a = 0; a < e; a++) {
@@ -36,19 +36,19 @@ function g(e) {
       t.push((0, r.jsx)(d.Eo, {
         guildId: null != (i = n[a]) ? i : null,
         index: a,
-        onClick: e => m(e, a, v, h),
-        onView: e => b(e, v)
+        onClick: e => g(e, a, I, h),
+        onView: e => _(e, I)
       }, null != (l = n[a]) ? l : a))
     }
     return t
-  }, [v, n, p, m, b]);
+  }, [I, n, p, g, _]);
   return (0, r.jsxs)(c.Z, {
-    onScroll: g,
-    children: [(0, r.jsx)(o.Z, {
-      title: _,
+    onScroll: m,
+    children: [(0, r.jsx)(s.Z, {
+      title: b,
       description: E,
       children: (0, r.jsx)(a.Z, {})
-    }), (0, r.jsxs)(s.Z, {
+    }), (0, r.jsxs)(o.Z, {
       children: [(0, r.jsx)(l.Heading, {
         className: f.sectionTitle,
         variant: "heading-lg/semibold",

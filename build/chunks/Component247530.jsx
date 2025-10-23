@@ -25,8 +25,8 @@ function c(e) {
       action: () => {
         l.default.selectVoiceChannel(t.channelId), (0, a.iV)(t)
       },
-      label: s.intl.formatToPlainString(s.t.m09d0T, {
-        streamerName: o.ZP.getName(n)
+      label: o.intl.formatToPlainString(o.t.m09d0T, {
+        streamerName: s.ZP.getName(n)
       })
     }, "spectate-".concat(t.ownerId))
   })

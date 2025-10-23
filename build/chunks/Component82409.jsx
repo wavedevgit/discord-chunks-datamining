@@ -117,10 +117,10 @@ function U(e) {
             r = null == (t = n.last()) ? true : t.id,
             i = y.ZP.ackMessageId(e),
             l = n.hasPresent() && n.ready && !n.cached;
-          null != r && null != i && l && j.default.compare(i, r) >= 0 && d.In(e, {
+          null != r && null != i && l && j.default.compare(i, r) >= 0 && d.ack(e, {
             section: R.jXE.NOTIFICATIONS_INBOX,
             object: R.qAy.ACK_INBOX_CHANNEL_NO_MESSAGES,
-            objectType: R.Qqv.ACK_AUTOMATIC
+            objectType: R.AnalyticsObjectTypes.ACK_AUTOMATIC
           }, true)
         })
       }, [e, t])

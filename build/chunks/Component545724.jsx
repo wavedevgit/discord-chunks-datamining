@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 545724, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => m
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -45,41 +45,41 @@ function h(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let g = function(e) {
+let m = function(e) {
   let {
     index: t,
     children: l,
-    user: g,
-    channel: m,
-    onClick: b,
-    isFocused: _,
+    user: m,
+    channel: g,
+    onClick: _,
+    isFocused: b,
     isActive: E,
     onOtherHover: O,
-    className: v
-  } = e, [y, I] = i.useState(false), [C, S] = i.useState(false), N = () => {
-    I(true), !_ || E || C || null == O || O()
-  }, T = () => {
-    I(false)
+    className: I
+  } = e, [y, v] = i.useState(false), [C, S] = i.useState(false), T = () => {
+    v(true), !b || E || C || null == O || O()
+  }, N = () => {
+    v(false)
   };
-  return (0, r.jsx)(s.mh, {
-    id: m.id,
+  return (0, r.jsx)(o.mh, {
+    id: g.id,
     children: e => (0, r.jsx)(c.tEY, {
       offset: {
         left: false,
         right: false
       },
-      children: (0, r.jsx)(o.Z.div, h(f({
-        className: a()(p.messageRequestItem, v, {
+      children: (0, r.jsx)(s.Z.div, h(f({
+        className: a()(p.messageRequestItem, I, {
           [p.active]: E || C,
           [p.firstItem]: 0 === t
         }),
         onContextMenu: e => {
-          null != g && (S(true), (0, u.jW)(e, async () => {
+          null != m && (S(true), (0, u.jW)(e, async () => {
             let {
               default: e
             } = await Promise.all([n.e("79695"), n.e("69220")]).then(n.bind(n, 881351));
             return t => (0, r.jsx)(e, h(f({}, t), {
-              user: g
+              user: m
             }))
           }, {
             onClose: () => {
@@ -87,9 +87,9 @@ let g = function(e) {
             }
           }))
         },
-        onMouseEnter: N,
-        onMouseLeave: T,
-        onClick: null != b ? b : true,
+        onMouseEnter: T,
+        onMouseLeave: N,
+        onClick: null != _ ? _ : true,
         style: {
           LIST_ROW_HEIGHT: d.WN,
           opacity: 1

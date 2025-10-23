@@ -17,12 +17,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk688510 = require("./688510.js");
-let b = {
+let _ = {
   [Chunk981631.TaA.WINDOWS]: Chunk358085.PlatformTypes.WINDOWS,
   [Chunk981631.TaA.MACOS]: Chunk358085.PlatformTypes.OSX,
   [Chunk981631.TaA.LINUX]: Chunk358085.PlatformTypes.LINUX
 };
-class _ extends Chunk647438.PureComponent {
+class b extends Chunk647438.PureComponent {
   render() {
     let {
       active: e,
@@ -67,18 +67,18 @@ class E extends Chunk647438.PureComponent {
       className: Chunk688510.tabs,
       children: [(0, Chunk951288.jsx)("div", {
         className: Chunk688510.separator
-      }), Chunk647438.map(t => (0, r.jsx)(_, {
+      }), Chunk647438.map(t => (0, r.jsx)(b, {
         active: t === n,
         onClick: () => this.handleSelectOperatingSystem(t),
         pageSize: e,
         children: function(e) {
           switch (e) {
             case h.TaA.WINDOWS:
-              return g.intl.string(g.t["0/xHFO"]);
+              return m.intl.string(m.t["0/xHFO"]);
             case h.TaA.MACOS:
-              return g.intl.string(g.t.E4u4n5);
+              return m.intl.string(m.t.E4u4n5);
             case h.TaA.LINUX:
-              return g.intl.string(g.t.tcawo3)
+              return m.intl.string(m.t.tcawo3)
           }
         }(t)
       }, t))]
@@ -87,48 +87,48 @@ class E extends Chunk647438.PureComponent {
   renderRequirementsSection(e, t) {
     if (null == e) return null;
     let n = [{
-      key: g.intl.string(g.t["0TcHzv"]),
+      key: m.intl.string(m.t["0TcHzv"]),
       value: e.operating_system_version
     }, {
-      key: g.intl.string(g.t.eOX6Hq),
+      key: m.intl.string(m.t.eOX6Hq),
       value: e.cpu
     }, {
-      key: g.intl.string(g.t["+WJ5XQ"]),
-      value: null != e.ram ? g.intl.formatToPlainString(g.t.RNRSl6, {
+      key: m.intl.string(m.t["+WJ5XQ"]),
+      value: null != e.ram ? m.intl.formatToPlainString(m.t.RNRSl6, {
         size: (0, u.BU)(1e3 * e.ram, {
           showDecimalForGB: false
         })
       }) : null
     }, {
-      key: g.intl.string(g.t["+3s/V/"]),
+      key: m.intl.string(m.t["+3s/V/"]),
       value: e.gpu
     }, {
-      key: g.intl.string(g.t["L+x5wB"]),
+      key: m.intl.string(m.t["L+x5wB"]),
       value: null != e.disk ? (0, u.BU)(1e3 * e.disk, {
         showDecimalForGB: false
       }) : null
     }, {
-      key: g.intl.string(g.t["Ghp2/B"]),
+      key: m.intl.string(m.t["Ghp2/B"]),
       value: e.sound_card
     }, {
-      key: g.intl.string(g.t["+w6nJg"]),
+      key: m.intl.string(m.t["+w6nJg"]),
       value: e.network
     }, {
-      key: g.intl.string(g.t.Au3Vbp),
+      key: m.intl.string(m.t.Au3Vbp),
       value: e.notes
     }].map((e, t) => {
       let n = null != e.value ? e.value.trim() : null;
       return null == n || 0 === n.length ? null : (0, r.jsxs)("div", {
-        className: m.requirement,
+        className: g.requirement,
         children: [(0, r.jsxs)("span", {
-          className: m.requirementKey,
+          className: g.requirementKey,
           children: [e.key, ":"]
         }), n]
       }, t)
     }).filter(d.lm);
     return (0, r.jsxs)("div", {
-      className: m.requirements,
-      children: [(0, r.jsx)(s.Z, {
+      className: g.requirements,
+      children: [(0, r.jsx)(o.Z, {
         tag: "h4",
         children: t
       }), n]
@@ -169,7 +169,7 @@ class E extends Chunk647438.PureComponent {
     let t = (0, p.getPlatform)(),
       n = Object.keys(e.systemRequirements),
       r = n[0];
-    for (let e of n) b[e] === t && (r = e);
+    for (let e of n) _[e] === t && (r = e);
     this.state = {
       selectedOperatingSystem: r
     }

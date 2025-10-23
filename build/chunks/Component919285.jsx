@@ -19,12 +19,12 @@ function u(e) {
   return (0, r.jsx)(i.Z, {
     guild: t,
     onDismissed: n,
-    cta: s.intl.string(s.t.RzWDqY),
-    message: s.intl.format(s.t["kQ/MDl"], {}),
-    type: o.vID.COMMANDS_MIGRATION,
+    cta: o.intl.string(o.t.RzWDqY),
+    message: o.intl.format(o.t["kQ/MDl"], {}),
+    type: s.vID.COMMANDS_MIGRATION,
     image: c,
     onClick: () => {
-      n(), l.Z.open(t.id, o.pNK.INTEGRATIONS)
+      n(), l.Z.open(t.id, s.pNK.INTEGRATIONS)
     },
     imageMarginTop: 15,
     imageMarginX: 22

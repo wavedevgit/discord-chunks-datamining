@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 484605, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => m
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -16,16 +16,16 @@ var Chunk264418 = require("./264418.jsx"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk288541 = require("./288541.js");
-let g = e => {
+let m = e => {
   let {
     targetElementRef: t,
-    discountOffer: g,
-    premiumSubscription: m,
-    dismissCoachmark: b,
-    children: _
+    discountOffer: m,
+    premiumSubscription: g,
+    dismissCoachmark: _,
+    children: b
   } = e, {
     analyticsLocations: E
-  } = (0, o.ZP)(a.Z.CHURN_DISCOUNT_POPOVER), O = (0, c.W7)(d.Xh.PREMIUM_MONTH_TIER_2, g, m), v = (0, r.jsx)(i.Z, {
+  } = (0, s.ZP)(a.Z.CHURN_DISCOUNT_POPOVER), O = (0, c.W7)(d.Xh.PREMIUM_MONTH_TIER_2, m, g), I = (0, r.jsx)(i.Z, {
     targetElementRef: t,
     position: "right",
     align: "top",
@@ -34,12 +34,12 @@ let g = e => {
       align: "start"
     },
     title: f.intl.format(f.t["3yZP0G"], {
-      percent: g.discount.amount
+      percent: m.discount.amount
     }).toString(),
     body: f.intl.format(f.t["3Q4wCy"], {
       discountedPrice: O,
-      billingPeriod: (0, s.JP)(g.discount.user_usage_limit_interval),
-      numMonths: g.discount.user_usage_limit
+      billingPeriod: (0, o.JP)(m.discount.user_usage_limit_interval),
+      numMonths: m.discount.user_usage_limit
     }),
     graphic: {
       type: "image",
@@ -50,7 +50,7 @@ let g = e => {
       text: f.intl.string(f.t.zrCzVB),
       variant: "expressive",
       onClick: () => {
-        b(p.L.TAKE_ACTION), (0, l.ZDy)(async () => {
+        _(p.L.TAKE_ACTION), (0, l.ZDy)(async () => {
           let {
             PremiumBrandRefreshSubscriptionCancellationModal: e
           } = await Promise.all([n.e("26526"), n.e("11456")]).then(n.bind(n, 48813));
@@ -74,7 +74,7 @@ let g = e => {
               }
               return e
             }({}, t), i = i = {
-              premiumSubscription: m,
+              premiumSubscription: g,
               analyticsLocations: E,
               initialStep: u.R.CONFIRM_DISCOUNT
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(i)) : (function(e, t) {
@@ -93,12 +93,12 @@ let g = e => {
       icon: l.SrA
     }],
     onRequestClose: () => {
-      b(p.L.USER_DISMISS)
+      _(p.L.USER_DISMISS)
     }
   });
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      children: _
-    }), v]
+      children: b
+    }), I]
   })
 }

@@ -26,9 +26,9 @@ function u(e) {
     },
     position: "bottom",
     color: l.r6K.PRIMARY,
-    children: [(0, r.jsx)(o.Z, {}), (0, r.jsx)(l.Heading, {
+    children: [(0, r.jsx)(s.Z, {}), (0, r.jsx)(l.Heading, {
       variant: "heading-md/extrabold",
-      children: s.intl.format(s.t["+qxkzC"], {
+      children: o.intl.format(o.t["+qxkzC"], {
         count: u.newClipIds.length
       })
     }), (0, r.jsxs)("div", {
@@ -36,10 +36,10 @@ function u(e) {
       children: [(0, r.jsx)(i.zx, {
         color: i.zx.Colors.TRANSPARENT,
         onClick: a.eL,
-        children: s.intl.string(s.t.WAI6xu)
+        children: o.intl.string(o.t.WAI6xu)
       }), (0, r.jsx)(l.Button, {
         variant: "primary",
-        text: s.intl.string(s.t.tQPBml),
+        text: o.intl.string(o.t.tQPBml),
         onClick: t
       })]
     })]

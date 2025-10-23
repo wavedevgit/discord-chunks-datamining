@@ -2,11 +2,11 @@
 /** chunk id: 178318, original params: e,t,n (module,exports,require) **/
 let r, i;
 require.d(exports, {
-  Z: () => A
+  Z: () => Z
 }), require("./49124.js"), require("./388685.js"), require("./35282.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./539854.js"), require("./415506.js");
 var Chunk836560 = require("./836560.js"),
   Chunk392711 = require("./392711.js"),
-  o = require.n(Chunk392711),
+  s = require.n(Chunk392711),
   Chunk570140 = require("./570140.js"),
   Chunk710845 = require("./710845.js"),
   Chunk857192 = require("./857192.js"),
@@ -35,21 +35,21 @@ try {
     r = Chunk998502.ZP.requireModule("erlpack")
   } catch (e) {}
 }
-let v = Chunk998502.ZP.requireModule("discord_rpc").RPCWebSocket,
+let I = Chunk998502.ZP.requireModule("discord_rpc").RPCWebSocket,
   y = window.GLOBAL_ENV.MARKETING_ENDPOINT,
-  I = new Chunk710845.Z("RPCServer:WSS"),
+  v = new Chunk710845.Z("RPCServer:WSS"),
   C = [];
 
 function S(e) {
   return "function" == typeof e ? e() : e
 }
 
-function N() {
+function T() {
   let e = arguments.length > 0 && true !== arguments[0] ? arguments[0] : 0,
     t = module > 0 ? true : () => {
       if (!S(i.listening)) return;
       let e = i.address().port;
-      I.info("Starting on ".concat(module)), Chunk570140.Z.dispatch({
+      v.info("Starting on ".concat(module)), Chunk570140.Z.dispatch({
         type: "RPC_SERVER_READY",
         port: module
       })
@@ -57,7 +57,7 @@ function N() {
   i.listen(Chunk981631.V6Z + module % Chunk981631.frH, "127.0.0.1", exports)
 }
 
-function T(e, t, n) {
+function N(e, t, n) {
   let r = arguments.length > 3 && true !== arguments[3] ? arguments[3] : 200,
     i = arguments.length > 4 && true !== arguments[4] ? arguments[4] : {},
     l = null != S(e.headers).origin ? {
@@ -80,16 +80,16 @@ function T(e, t, n) {
   }({}, i, l)), t.end(n)
 }
 
-function P(e, t, n, r) {
+function j(e, t, n, r) {
   let i = arguments.length > 4 && true !== arguments[4] ? arguments[4] : 0;
-  T(e, t, {
+  N(e, t, {
     code: i,
     message: r
   }, n)
 }
-class j extends Chunk76238.Z {
+class P extends Chunk76238.Z {
   send(e) {
-    (u.default.isLoggingOverlayEvents || e.cmd !== _.Etm.OVERLAY && e.evt !== _.zMe.OVERLAY) && I.info("Socket Emit: ".concat(this.id), (0, h.Z)(e)), null != r && "etf" === this.encoding ? this._socket.send(r.pack(e), {
+    (u.default.isLoggingOverlayEvents || e.cmd !== b.Etm.OVERLAY && e.evt !== b.zMe.OVERLAY) && v.info("Socket Emit: ".concat(this.id), (0, h.Z)(e)), null != r && "etf" === this.encoding ? this._socket.send(r.pack(e), {
       binary: true
     }) : this._socket.send(JSON.stringify(e))
   }
@@ -98,39 +98,39 @@ class j extends Chunk76238.Z {
   }
   constructor(e, t, n) {
     if (super("ws", t, n), O(this, "_socket", true), false === ["etf", "json"].indexOf(n)) throw new f.Z({
-      closeCode: _.$VG.INVALID_ENCODING
+      closeCode: b.$VG.INVALID_ENCODING
     }, "Invalid Encoding: ".concat(n));
     if ("etf" === n && null == r) throw new f.Z({
-      closeCode: _.$VG.INVALID_ENCODING
+      closeCode: b.$VG.INVALID_ENCODING
     }, "Erlpack cannot be used on this client");
     this._socket = e
   }
 }
 class x extends Chunk76238.Z {
   send(e) {
-    (u.default.isLoggingOverlayEvents || e.cmd !== _.Etm.OVERLAY) && I.info("Socket Emit: ".concat(this.id), e), this._sendCallback(e)
+    (u.default.isLoggingOverlayEvents || e.cmd !== b.Etm.OVERLAY) && v.info("Socket Emit: ".concat(this.id), e), this._sendCallback(e)
   }
   close(e, t) {
     this._closeCallback(t, e)
   }
   constructor(e, t, n, r) {
     if (super("http", n, r), O(this, "_sendCallback", true), O(this, "_closeCallback", true), "json" !== r) throw new f.Z({
-      closeCode: _.$VG.INVALID_ENCODING
+      closeCode: b.$VG.INVALID_ENCODING
     }, "Invalid Encoding: ".concat(r));
     this._sendCallback = e, this._closeCallback = t
   }
 }
-class Z extends Chunk836560.EventEmitter {
+class A extends Chunk836560.EventEmitter {
   handleRequest(e, t) {
     let [n, r] = S(e.url).split("?"), i = S(e.method);
-    if ("/rpc" === n && "OPTIONS" === i) return void T(e, t, {
+    if ("/rpc" === n && "OPTIONS" === i) return void N(e, t, {
       body: ""
     });
     let l = "POST" === i;
     if ("/rpc" === n && ("GET" === i || l)) {
       let n = new URLSearchParams(r),
         i = l ? S(e.headers)["content-type"].split("/")[1] : "json",
-        o = function() {
+        s = function() {
           var e, r;
           let {
             protocol: i,
@@ -138,38 +138,38 @@ class Z extends Chunk836560.EventEmitter {
           } = null != (r = d.Z.toURLSafe(null != (e = n.get("callback")) ? e : "")) ? r : {};
           i === location.protocol && l === location.host ? t.setHeader("Location", n.get("callback")) : t.setHeader("Location", y), t.writeHead(301), t.end()
         },
-        s = new x(!l ? o : T.bind(null, e, t), !l ? o : P.bind(null, e, t, 400), Number(n.get("v")), i);
-      if (l)(0, m.em)(s, S(e.headers).origin, n.get("client_id")).then(() => {
+        o = new x(!l ? s : N.bind(null, e, t), !l ? s : j.bind(null, e, t, 400), Number(n.get("v")), i);
+      if (l)(0, g.em)(o, S(e.headers).origin, n.get("client_id")).then(() => {
         let n = "";
-        e.on("data", e => n += e), e.on("error", () => P(e, t, 500, "Internal Server Error")), e.on("end", () => this.handleMessage(s, n))
+        e.on("data", e => n += e), e.on("error", () => j(e, t, 500, "Internal Server Error")), e.on("end", () => this.handleMessage(o, n))
       }).catch(e => {
         let {
           code: t,
           message: n
         } = e;
-        return s.close(t, n)
+        return o.close(t, n)
       });
       else {
         var a;
-        s.authorization.scopes = [b.CN], this.handleMessage(s, decodeURIComponent(null != (a = n.get("payload")) ? a : ""))
+        o.authorization.scopes = [_.CN], this.handleMessage(o, decodeURIComponent(null != (a = n.get("payload")) ? a : ""))
       }
       return
     }
-    P(e, t, 404, "Not Found")
+    j(e, t, 404, "Not Found")
   }
   handleConnection(e) {
     var t, n;
     let r, i = new URLSearchParams(S(e.upgradeReq).url.split("?")[1]),
       l = null != (t = S(e.upgradeReq).headers.origin) ? t : "";
     try {
-      r = new j(e, Number(i.get("v")), null != (n = i.get("encoding")) ? n : "json")
+      r = new P(e, Number(i.get("v")), null != (n = i.get("encoding")) ? n : "json")
     } catch (t) {
       e.close(t.code, t.message);
       return
     }
-    I.info("Socket Opened: ".concat(r.id)), e.on("error", e => I.error("WS Error: ".concat(e.message))), e.on("close", (e, t) => {
-      I.info("Socket Closed: ".concat(r.id, ", code ").concat(e, ", message ").concat(t)), o().remove(C, e => e === r), this.emit("disconnect", r)
-    }), (0, m.em)(r, l, i.get("client_id")).then(() => {
+    v.info("Socket Opened: ".concat(r.id)), e.on("error", e => v.error("WS Error: ".concat(e.message))), e.on("close", (e, t) => {
+      v.info("Socket Closed: ".concat(r.id, ", code ").concat(e, ", message ").concat(t)), s().remove(C, e => e === r), this.emit("disconnect", r)
+    }), (0, g.em)(r, l, i.get("client_id")).then(() => {
       C.push(r), e.on("message", e => this.handleMessage(r, e)), this.emit("connect", r)
     }).catch(e => {
       let {
@@ -186,22 +186,22 @@ class Z extends Chunk836560.EventEmitter {
       else if ("string" == typeof t) n = JSON.parse(t);
       else throw Error()
     } catch (t) {
-      e.close(_.$VG.CLOSE_UNSUPPORTED, "Payload not ".concat(e.encoding));
+      e.close(b.$VG.CLOSE_UNSUPPORTED, "Payload not ".concat(e.encoding));
       return
-    }(u.default.isLoggingOverlayEvents || n.cmd !== _.Etm.OVERLAY) && I.info("Socket Message: ".concat(e.id), (0, h.Z)(n)), this.emit("request", e, n)
+    }(u.default.isLoggingOverlayEvents || n.cmd !== b.Etm.OVERLAY) && v.info("Socket Message: ".concat(e.id), (0, h.Z)(n)), this.emit("request", e, n)
   }
   constructor() {
     var e;
     super();
     let t = 0;
-    (i = v.http.createServer()).on("error", e => {
-      I.error("Error: ".concat(e.message)), ("EADDRINUSE" === e.code || e.message.includes("EADDRINUSE")) && setTimeout(() => N(++t), 1e3)
-    }), i.on("request", this.handleRequest.bind(this)), N(exports);
+    (i = I.http.createServer()).on("error", e => {
+      v.error("Error: ".concat(e.message)), ("EADDRINUSE" === e.code || e.message.includes("EADDRINUSE")) && setTimeout(() => T(++t), 1e3)
+    }), i.on("request", this.handleRequest.bind(this)), T(exports);
     let n = {
       instanceId: null != (e = i.instanceId) ? module : 0,
       server: i
     };
-    new v.ws.Server(require).on("connection", e => this.handleConnection(e))
+    new I.ws.Server(require).on("connection", e => this.handleConnection(e))
   }
 }
-let A = new Z
+let Z = new A

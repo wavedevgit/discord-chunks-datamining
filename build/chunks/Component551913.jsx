@@ -21,10 +21,10 @@ function p(e) {
     targetElementRef: f
   } = e, {
     enabled: h,
-    variant: g
-  } = o.GE.useConfig({
-    location: s.dr.QUEST_HOME_DESKTOP
-  }), m = i.useCallback(() => {
+    variant: m
+  } = s.GE.useConfig({
+    location: o.dr.QUEST_HOME_DESKTOP
+  }), g = i.useCallback(() => {
     t(), (0, a.uL)(c.Z5c.QUEST_HOME_V2)
   }, [t]);
   if (i.useEffect(() => {
@@ -33,18 +33,18 @@ function p(e) {
     actions: [{
       text: function(e) {
         switch (e) {
-          case o.yE.DISCOVER:
+          case s.yE.DISCOVER:
             return u.intl.string(u.t.BeeKh0);
-          case o.yE.ACTION:
+          case s.yE.ACTION:
             return u.intl.string(u.t["8Dp3R0"]);
-          case o.yE.EARN:
+          case s.yE.EARN:
             return u.intl.string(u.t.facYnD);
-          case o.yE.REWARD:
+          case s.yE.REWARD:
             return u.intl.string(u.t.gL45vM)
         }
-      }(g),
+      }(m),
       variant: "primary",
-      onClick: m
+      onClick: g
     }],
     align: "top",
     body: u.intl.string(u.t.o4NGXc),
@@ -62,15 +62,15 @@ function p(e) {
     targetElementRef: f,
     title: function(e) {
       switch (e) {
-        case o.yE.DISCOVER:
+        case s.yE.DISCOVER:
           return u.intl.string(u.t["2qdOVq"]);
-        case o.yE.ACTION:
+        case s.yE.ACTION:
           return u.intl.string(u.t.E3Rw0y);
-        case o.yE.EARN:
+        case s.yE.EARN:
           return u.intl.string(u.t["2/2YdK"]);
-        case o.yE.REWARD:
+        case s.yE.REWARD:
           return u.intl.string(u.t.mOH7r6)
       }
-    }(g)
+    }(m)
   })
 }

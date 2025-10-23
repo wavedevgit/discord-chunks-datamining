@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 35583, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => _
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk979905 = require("./979905.js");
 
-function g(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,7 +24,7 @@ function g(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class m extends Chunk647438.PureComponent {
+class g extends Chunk647438.PureComponent {
   static getDerivedStateFromProps(e, t) {
     return e.mode !== t.memoizedMode ? {
       memoizedMode: e.mode,
@@ -39,7 +39,7 @@ class m extends Chunk647438.PureComponent {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-          g(e, t, n[t])
+          m(e, t, n[t])
         })
       }
       return e
@@ -72,11 +72,11 @@ class m extends Chunk647438.PureComponent {
     }
   }
   constructor(...e) {
-    super(...e), g(this, "state", {
+    super(...e), m(this, "state", {
       memoizedMode: this.props.mode,
       clicked: false
-    }), g(this, "handleInstallDownload", () => {
-      d.Z.isConnected() ? o.Z.show({
+    }), m(this, "handleInstallDownload", () => {
+      d.Z.isConnected() ? s.Z.show({
         title: f.intl.string(f.t.tiu1ly),
         body: f.intl.string(f.t["zK+lqW"]),
         onConfirm: this.doUpdate,
@@ -84,13 +84,13 @@ class m extends Chunk647438.PureComponent {
         confirmText: f.intl.string(f.t["QDX/qu"]),
         confirmVariant: "critical-primary"
       }) : this.doUpdate()
-    }), g(this, "doUpdate", () => {
+    }), m(this, "doUpdate", () => {
       this.state.clicked || (this.setState({
         clicked: true
-      }), (0, s.Q)())
+      }), (0, o.Q)())
     })
   }
 }
-let b = Chunk442837.ZP.connectStores([Chunk91372.Z], () => ({
+let _ = Chunk442837.ZP.connectStores([Chunk91372.Z], () => ({
   mode: Chunk91372.Z.getState()
-}))(m)
+}))(g)

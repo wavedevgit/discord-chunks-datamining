@@ -43,21 +43,21 @@ var Chunk243814 = require("./243814.js"),
 async function U(e, t, n, r) {
   let i = arguments.length > 4 && true !== arguments[4] ? arguments[4] : "",
     l = y.Z.getApplicationActivity(t);
-  if (null == l || null == l.secrets || !(0, Z.t9)(r, l.party, l.secrets)) throw new x.Z({
+  if (null == l || null == l.secrets || !(0, A.t9)(r, l.party, l.secrets)) throw new x.Z({
     errorCode: M.lTL.NO_ELIGIBLE_ACTIVITY
   }, "No eligible activity for application. Ensure an activity includes a party and appropriate secret.");
-  let a = (0, g.Z)(l, I.Z);
+  let a = (0, m.Z)(l, v.Z);
   if (a) {
     let {
       lock: t
-    } = (0, R.jU)(e);
-    return (0, s.h7)(l, a).then(() => {
+    } = (0, D.jU)(e);
+    return (0, o.h7)(l, a).then(() => {
       throw t(), new x.Z({
         errorCode: M.lTL.NO_ELIGIBLE_ACTIVITY
       }, "No eligible activity for application. Ensure user does have have privacy enabled.")
     })
   }
-  await o.Z.sendActivityInviteUser({
+  await s.Z.sendActivityInviteUser({
     userId: n,
     type: r,
     activity: l,
@@ -93,11 +93,11 @@ let G = {
         args: {
           user_id: t
         }
-      } = e, n = v.Z.getDMFromUserId(t);
-      null != n && (0, u.In)(n, {
+      } = e, n = I.Z.getDMFromUserId(t);
+      null != n && (0, u.ack)(n, {
         section: M.jXE.CLOSE_ACTIVITY_JOIN_REQUEST_RPC_COMMAND,
         object: M.qAy.ACK_DECLINE_REQUEST_TO_JOIN,
-        objectType: M.Qqv.ACK_SEMI_AUTOMATIC
+        objectType: M.AnalyticsObjectTypes.ACK_SEMI_AUTOMATIC
       }, true, true)
     }
   },
@@ -105,7 +105,7 @@ let G = {
     scope: {
       [Chunk186901.Gp.ANY]: [Chunk243814.x.RPC, Chunk186901.lH]
     },
-    validation: e => (0, A.Z)(e).required().keys({
+    validation: e => (0, Z.Z)(e).required().keys({
       user_id: e.string().required(),
       type: e.number().required().valid([M.mFx.JOIN]),
       content: e.string().min(0).max(1024),
@@ -131,7 +131,7 @@ let G = {
     scope: {
       [Chunk186901.Gp.ANY]: [Chunk243814.x.RPC, Chunk186901.lH]
     },
-    validation: e => (0, A.Z)(e).required().keys({
+    validation: e => (0, Z.Z)(e).required().keys({
       type: e.number().required().valid([M.mFx.JOIN]),
       user_id: e.string().required(),
       session_id: e.string().required(),
@@ -148,17 +148,17 @@ let G = {
           session_id: i,
           channel_id: l,
           message_id: a,
-          application_id: o
+          application_id: s
         }
-      } = e, s = t.transport === D.He.IPC && null != o ? o : t.application.id;
-      if (null == s) throw new x.Z({
+      } = e, o = t.transport === R.He.IPC && null != s ? s : t.application.id;
+      if (null == o) throw new x.Z({
         errorCode: M.lTL.INVALID_COMMAND
       }, "No application.");
       let u = Promise.resolve(false);
       return n === M.mFx.JOIN && (u = c.Z.join({
         userId: r,
         sessionId: i,
-        applicationId: s,
+        applicationId: o,
         channelId: l,
         messageId: a
       })), u.then(e => {
@@ -181,7 +181,7 @@ let G = {
       }, "No application.");
       let {
         channel: l,
-        guild: o,
+        guild: s,
         frame: c
       } = (0, L.T)(), u = (0, h.ZP)({
         application: t.application,
@@ -189,12 +189,12 @@ let G = {
       }), d = null != u ? E.Z.getWindow(u) : true;
       (null == d ? true : d.closed) && (d = true);
       let p = null != d ? M.IlC.POPOUT : M.IlC.APP;
-      if ((0, j.Pr)({}, null == d ? true : d.document), null != c) {
+      if ((0, P.Pr)({}, null == d ? true : d.document), null != c) {
         if (c.applicationId !== i.id) throw new x.Z({
           errorCode: M.lTL.INVALID_COMMAND
         }, "Application is not currently mounted.");
         let e = y.Z.getApplicationActivity(i.id);
-        if (null != e)(0, s.h7)(e, false, p);
+        if (null != e)(0, o.h7)(e, false, p);
         else throw new x.Z({
           errorCode: M.lTL.NO_ELIGIBLE_ACTIVITY
         }, "No eligible activity for application. Ensure an activity was set using setActivity.")
@@ -222,7 +222,7 @@ let G = {
             }
             return e
           }({}, t), a = a = {
-            guild: o,
+            guild: s,
             channel: l,
             applicationId: i.id,
             analyticsLocation: M.Sbl.ACTIVITY_RPC,
@@ -263,7 +263,7 @@ let G = {
           else {
             var r;
             let e = C.Z.getLastFocusedWindowId();
-            n = null == e ? null : null == (r = (0, _.g0)(e)) ? true : r.renderWindow
+            n = null == e ? null : null == (r = (0, b.g0)(e)) ? true : r.renderWindow
           }
           if (null == n) throw new x.Z({
             errorCode: M.lTL.UNKNOWN_ERROR
@@ -276,13 +276,13 @@ let G = {
             }, 1e3)
           };
           i.addEventListener("change", () => {
-            (0, N.lm)(i.files) && e(i.files[0]), l()
+            (0, T.lm)(i.files) && e(i.files[0]), l()
           }), i.addEventListener("cancel", () => {
             l()
           }), n.document.body.addEventListener("focus", l, true), n.document.body.appendChild(i), i.click()
         }(async n => {
           let l = await (0, f.kv)(r, i, n);
-          (0, N.lm)(l) && (0, N.lm)(l.url) && !(l instanceof d.Z) ? e({
+          (0, T.lm)(l) && (0, T.lm)(l.url) && !(l instanceof d.Z) ? e({
             image_url: l.url
           }): t(l)
         }, () => t(Error("Upload canceled")))
@@ -306,7 +306,7 @@ let G = {
           mediaUrl: r
         }
       } = e;
-      (0, Z.bu)(n.transport);
+      (0, A.bu)(n.transport);
       let i = n.application.id;
       if (null == i) throw new x.Z({
         errorCode: M.lTL.INVALID_COMMAND
@@ -315,10 +315,10 @@ let G = {
         errorCode: M.lTL.INVALID_COMMAND
       }, "This application cannot access this API");
       let l = (0, w.Z)();
-      if (!P.Z.isDiscordCdnUrl(r)) throw new x.Z({
+      if (!j.Z.isDiscordCdnUrl(r)) throw new x.Z({
         errorCode: M.lTL.INVALID_PAYLOAD
       }, "mediaUrl must be a Discord CDN url");
-      (0, m.Z)({
+      (0, g.Z)({
         applicationId: i,
         channelId: null == l ? true : l.id,
         mediaUrl: r
@@ -336,8 +336,8 @@ let G = {
           args: {
             command: i,
             preview_image: l,
-            components: o,
-            require_launch_channel: s,
+            components: s,
+            require_launch_channel: o,
             content: c,
             options: u,
             pid: d
@@ -354,13 +354,13 @@ let G = {
         errorCode: M.lTL.INVALID_COMMAND
       }, "This application cannot access this API");
       let f = (0, w.Z)();
-      if (null == f && s) throw new x.Z({
+      if (null == f && o) throw new x.Z({
         errorCode: M.lTL.INVALID_COMMAND
       }, "No channel found");
-      if (null !== l || null !== o || null !== c) {
+      if (null !== l || null !== s || null !== c) {
         let e = [];
         true !== l && (e = [{
-          id: T.default.cast(T.default.fromTimestamp(Date.now())),
+          id: N.default.cast(N.default.fromTimestamp(Date.now())),
           size: 0,
           proxy_url: l.url,
           filename: "preview",
@@ -368,25 +368,25 @@ let G = {
           height: l.height,
           width: l.width
         }]), n = new O.ZP({
-          id: T.default.cast(T.default.fromTimestamp(Date.now())),
+          id: N.default.cast(N.default.fromTimestamp(Date.now())),
           applicationId: p,
           content: c,
-          components: o,
+          components: s,
           attachments: e
         })
       }
       return new Promise(e => {
         let t = false,
-          r = (0, R.jU)(d),
+          r = (0, D.jU)(d),
           l = a.z1l;
-        (E.Z.getWindowOpen(M.KJ3.ACTIVITY_POPOUT) || r.context === M.IlC.POPOUT) && (l = a.u1M), (0, b.M)({
+        (E.Z.getWindowOpen(M.KJ3.ACTIVITY_POPOUT) || r.context === M.IlC.POPOUT) && (l = a.u1M), (0, _.M)({
           applicationId: p,
           channel: f,
           command: {
             name: i,
             options: u
           },
-          requireLaunchChannel: true === s,
+          requireLaunchChannel: true === o,
           onShareResult: n => {
             t || (t = n), r.lock(), e({
               success: t

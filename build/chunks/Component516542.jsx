@@ -36,10 +36,10 @@ function E(e) {
     richValue: Z
   } = j, [N, w] = r.useState(false), T = r.useCallback(() => w(true), []), _ = r.useCallback(() => w(false), []);
   (0, s.ZP)(() => {
-    (0, a.In)(E.id, {
+    (0, a.ack)(E.id, {
       section: g.jXE.OVERLAY,
       object: g.qAy.ACK_INLINE_REPLY,
-      objectType: g.Qqv.ACK_SEMI_AUTOMATIC
+      objectType: g.AnalyticsObjectTypes.ACK_SEMI_AUTOMATIC
     }, true, true, n)
   });
   let P = r.useCallback((e, t, n) => {

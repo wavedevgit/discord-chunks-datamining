@@ -48,9 +48,9 @@ let v = e => {
   i.useEffect(() => () => {
     let e = c.ZP.lastMessageId(t.id);
     null != e && s.Z.wait(() => {
-      (0, o.In)(t.id, {
+      (0, o.ack)(t.id, {
         object: O.qAy.ACK_GUILD_DIRECTORY_CHANNEL_VIEWED,
-        objectType: O.Qqv.ACK_AUTOMATIC
+        objectType: O.AnalyticsObjectTypes.ACK_AUTOMATIC
       }, true, true, e)
     })
   }, [t.id]);

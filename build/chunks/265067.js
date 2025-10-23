@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 265067, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => g
 }), require("./539854.js"), require("./388685.js");
 var Chunk243814 = require("./243814.js"),
   Chunk100527 = require("./100527.js"),
@@ -16,7 +16,7 @@ var Chunk243814 = require("./243814.js"),
   Chunk736045 = require("./736045.js"),
   Chunk186901 = require("./186901.js"),
   Chunk231338 = require("./231338.js");
-let m = {
+let g = {
   [Chunk231338.Et.GET_SOUNDBOARD_SOUNDS]: {
     scope: {
       [Chunk186901.Gp.ANY]: [Chunk243814.x.RPC, Chunk186901.lH]
@@ -25,7 +25,7 @@ let m = {
       await (0, Chunk208049.w)();
       let e = Chunk763296.Z.getSounds(),
         t = [];
-      return module.forEach(e => e.forEach(e => t.push((0, o.QL)(e)))), exports
+      return module.forEach(e => e.forEach(e => t.push((0, s.QL)(e)))), exports
     }
   },
   [Chunk231338.Et.PLAY_SOUNDBOARD_SOUND]: {
@@ -45,19 +45,19 @@ let m = {
       } = e;
       await (0, l.w)();
       let r = u.default.getCurrentUser(),
-        o = a.Z.getSound(t, n),
+        s = a.Z.getSound(t, n),
         p = (0, f.Z)(),
-        h = null != o && null != r && (0, s.Nq)(r, o, p);
+        h = null != s && null != r && (0, o.Nq)(r, s, p);
       if (null == p) throw new d.Z({
-        errorCode: g.lT.INVALID_CHANNEL
+        errorCode: m.lT.INVALID_CHANNEL
       }, "Invalid Channel.");
       if (h)
-        if ((0, c.Z)(p)) null != o && (0, s.GN)(o, p.id, [i.Z.RPC]);
+        if ((0, c.Z)(p)) null != s && (0, o.GN)(s, p.id, [i.Z.RPC]);
         else throw new d.Z({
-          errorCode: g.lT.INVALID_PERMISSIONS
+          errorCode: m.lT.INVALID_PERMISSIONS
         }, "Invalid Permissions.");
       else throw new d.Z({
-        errorCode: g.lT.INVALID_SOUND
+        errorCode: m.lT.INVALID_SOUND
       }, "Invalid Sound.")
     }
   }

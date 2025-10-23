@@ -15,13 +15,13 @@ let c = e => {
     className: t
   } = e;
   return (0, r.jsx)("div", {
-    className: l()(o.container, t),
+    className: l()(s.container, t),
     children: (0, r.jsx)(a.Z, {
-      className: o.asset,
+      className: s.asset,
       playsInline: true,
       controls: false,
       children: (0, r.jsx)("source", {
-        src: s.Z,
+        src: o.Z,
         type: "video/webm"
       })
     })

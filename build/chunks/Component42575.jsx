@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 42575, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => m
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -17,15 +17,15 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk475823 = require("./475823.js");
 
-function g(e) {
+function m(e) {
   let {
     user: t,
     nickname: n,
-    status: g,
-    isFocused: m
+    status: m,
+    isFocused: g
   } = e, {
-    analyticsLocations: b
-  } = (0, a.ZP)(), _ = e => {
+    analyticsLocations: _
+  } = (0, a.ZP)(), b = e => {
     null == e || e.stopPropagation(), l.Z.addRelationship({
       userId: t.id,
       context: {
@@ -35,14 +35,14 @@ function g(e) {
       fromFriendSuggestion: true
     })
   }, E = e => {
-    null == e || e.stopPropagation(), o.Z.ignore(t.id)
-  }, O = g === p.Skl.OFFLINE ? p.Skl.UNKNOWN : g;
+    null == e || e.stopPropagation(), s.Z.ignore(t.id)
+  }, O = m === p.Skl.OFFLINE ? p.Skl.UNKNOWN : m;
   return (0, r.jsx)(u.Z, {
-    isFocused: m,
+    isFocused: g,
     user: t,
-    onClick: () => (0, s.openUserProfileModal)({
+    onClick: () => (0, o.openUserProfileModal)({
       userId: t.id,
-      sourceAnalyticsLocations: b
+      sourceAnalyticsLocations: _
     }),
     children: e => {
       let l = (0, r.jsxs)(r.Fragment, {
@@ -50,7 +50,7 @@ function g(e) {
           icon: i.dz2,
           actionType: c.Z.ActionTypes.ACCEPT,
           tooltip: f.intl.string(f.t.Zcibdf),
-          onClick: _,
+          onClick: b,
           shouldHighlight: e
         }), (0, r.jsx)(c.Z, {
           icon: i.Dio,

@@ -196,7 +196,7 @@ let w = e => {
           et = () => {
             var e, n;
             let r;
-            return e = Math.max(1, I.oCV[j.tier] - D), n = j.tier, r = null, void(n === I.Eu4.TIER_1 ? r = I.Qqv.TIER_1 : n === I.Eu4.TIER_2 ? r = I.Qqv.TIER_2 : n === I.Eu4.TIER_3 && (r = I.Qqv.TIER_3), (0, f.Z)({
+            return e = Math.max(1, I.oCV[j.tier] - D), n = j.tier, r = null, void(n === I.Eu4.TIER_1 ? r = I.AnalyticsObjectTypes.TIER_1 : n === I.Eu4.TIER_2 ? r = I.AnalyticsObjectTypes.TIER_2 : n === I.Eu4.TIER_3 && (r = I.AnalyticsObjectTypes.TIER_3), (0, f.Z)({
               analyticsLocations: v,
               analyticsLocation: {
                 page: I.ZY5.GUILD_SETTINGS,

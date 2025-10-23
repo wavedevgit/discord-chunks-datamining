@@ -165,9 +165,9 @@ let I = {
         type: "NOTIFICATIONS_INBOX_ITEM_ACK",
         messageId: e.id,
         channelId: e.channel_id
-      }), c.In(e.channel_id, {
+      }), c.ack(e.channel_id, {
         object: O.qAy.MARK_MESSAGE_AS_READ_BUTTON,
-        objectType: O.Qqv.ACK_MANUAL
+        objectType: O.AnalyticsObjectTypes.ACK_MANUAL
       }, true, true, e.id)
     },
     interactionType: Chunk804932.s_.ACK

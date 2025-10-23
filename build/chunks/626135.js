@@ -127,7 +127,7 @@ let F = {
     throttlePeriod: D,
     throttleKeys: () => []
   },
-  [Chunk981631.rMx.ACK_MESSAGES]: e => e.location_object_type === g.Qqv.ACK_MANUAL ? true : {
+  [Chunk981631.rMx.ACK_MESSAGES]: e => e.location_object_type === g.AnalyticsObjectTypes.ACK_MANUAL ? true : {
     throttlePeriod: x,
     throttleKeys: e => [e.guild_id, e.channel_id, e.location_section]
   },

@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 853678, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => j
 }), require("./388685.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./997841.js");
 var Chunk45792 = require("./45792.js"),
   Chunk782568 = require("./782568.js"),
@@ -26,8 +26,8 @@ var Chunk45792 = require("./45792.js"),
   Chunk674563 = require("./674563.js");
 let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
   S = new Set(["www.nytimes.com", "apps.apple.com", "play.google.com"]),
-  N = new Set(["p-ty8do4dje6.exmggames.com", "fortnitetrial.fortnite.com", "fn.gg", "geforcenow.com", "www.fortnite.com", "www.nvidia.com", "www.geforcenow.com"]),
-  T = new Map([
+  T = new Set(["p-ty8do4dje6.exmggames.com", "fortnitetrial.fortnite.com", "fn.gg", "geforcenow.com", "www.fortnite.com", "www.nvidia.com", "www.geforcenow.com"]),
+  N = new Map([
     [Chunk674563.Vt, {
       trustedHosts: S,
       trustedUntilEpochMs: new Date("2027-01-15T00:00:00").valueOf()
@@ -41,11 +41,11 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
       trustedUntilEpochMs: new Date("2027-01-15T00:00:00").valueOf()
     }],
     [Chunk674563.Zs, {
-      trustedHosts: N,
+      trustedHosts: T,
       trustedUntilEpochMs: new Date("2026-01-01T00:00:00").valueOf()
     }]
   ]),
-  P = {
+  j = {
     [Chunk981631.Etm.OPEN_EXTERNAL_LINK]: {
       scope: {
         [Chunk186901.Gp.ANY]: [Chunk186901.wE, Chunk186901.b_]
@@ -60,32 +60,32 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
             url: n
           }
         } = e;
-        (0, _.bu)(t.transport);
+        (0, b.bu)(t.transport);
         let r = a.ZP.getCurrentEmbeddedActivity();
         try {
-          var s, d;
+          var o, d;
           let e = new URL(n),
             a = e.toString();
-          if (m.isPlatformEmbedded) {
-            let e = (0, l.R)() ? v.KJ3.ACTIVITY_POPOUT : null;
+          if (g.isPlatformEmbedded) {
+            let e = (0, l.R)() ? I.KJ3.ACTIVITY_POPOUT : null;
             f.Z.focus(e, true)
           }
-          let h = u.Z.getApplication(null == (s = t.application) ? true : s.id),
-            b = (0, c.p)(null == r ? true : r.location),
-            _ = (null == h ? true : h.id) !== true ? T.get(h.id) : true;
-          if (true !== _ && _.trustedUntilEpochMs >= Date.now() && _.trustedHosts.has(e.host)) return (0, i.Z)(a), p.default.track(v.rMx.RPC_OPEN_EXTERNAL_LINK_CALLED, {
+          let h = u.Z.getApplication(null == (o = t.application) ? true : o.id),
+            _ = (0, c.p)(null == r ? true : r.location),
+            b = (null == h ? true : h.id) !== true ? N.get(h.id) : true;
+          if (true !== b && b.trustedUntilEpochMs >= Date.now() && b.trustedHosts.has(e.host)) return (0, i.Z)(a), p.default.track(I.rMx.RPC_OPEN_EXTERNAL_LINK_CALLED, {
             application_id: null == (d = t.application) ? true : d.id,
             url: a,
             opened: true
           }), Promise.resolve({
             opened: true
           });
-          return new Promise(e => (0, g.q)({
+          return new Promise(e => (0, m.q)({
             href: a,
             shouldConfirm: true,
             onConfirm: () => {
               var n;
-              (0, i.Z)(a), p.default.track(v.rMx.RPC_OPEN_EXTERNAL_LINK_CALLED, {
+              (0, i.Z)(a), p.default.track(I.rMx.RPC_OPEN_EXTERNAL_LINK_CALLED, {
                 application_id: null == (n = t.application) ? true : n.id,
                 url: a,
                 opened: true
@@ -95,7 +95,7 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
             },
             onCancel: () => {
               var n;
-              p.default.track(v.rMx.RPC_OPEN_EXTERNAL_LINK_CALLED, {
+              p.default.track(I.rMx.RPC_OPEN_EXTERNAL_LINK_CALLED, {
                 application_id: null == (n = t.application) ? true : n.id,
                 url: a,
                 opened: false
@@ -103,13 +103,13 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
                 opened: false
               })
             }
-          }, true, true, (0, o.z)({
+          }, true, true, (0, s.z)({
             application: h,
-            channelId: b
+            channelId: _
           })))
         } catch (e) {
-          throw new b.Z({
-            errorCode: v.lTL.INVALID_COMMAND
+          throw new _.Z({
+            errorCode: I.lTL.INVALID_COMMAND
           }, "Invalid URL: ".concat(n))
         }
       }
@@ -123,17 +123,17 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
         let {
           socket: t
         } = e;
-        (0, _.bu)(t.transport);
-        let r = (0, _._f)(t.application);
-        if (!C.has(r)) throw new b.Z({
-          errorCode: v.lTL.UNAUTHORIZED_FOR_APPLICATION
+        (0, b.bu)(t.transport);
+        let r = (0, b._f)(t.application);
+        if (!C.has(r)) throw new _.Z({
+          errorCode: I.lTL.UNAUTHORIZED_FOR_APPLICATION
         }, "Command not available for this application");
         {
           let {
             openUserSettings: e
           } = n(518596);
           e(d.n.CONNECTIONS_PANEL, {
-            section: v.oAB.CONNECTIONS
+            section: I.oAB.CONNECTIONS
           })
         }
       }
@@ -152,16 +152,16 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
             link_id: l
           }
         } = e;
-        (0, _.bu)(n.transport);
-        let a = (0, _._f)(n.application);
-        if (null == a) throw new b.Z({
-          errorCode: v.lTL.INVALID_COMMAND
+        (0, b.bu)(n.transport);
+        let a = (0, b._f)(n.application);
+        if (null == a) throw new _.Z({
+          errorCode: I.lTL.INVALID_COMMAND
         }, "No application.");
-        if (!(0, h.yE)(null != (t = n.application.flags) ? t : 0, v.udG.EMBEDDED)) throw new b.Z({
-          errorCode: v.lTL.INVALID_COMMAND
+        if (!(0, h.yE)(null != (t = n.application.flags) ? t : 0, I.udG.EMBEDDED)) throw new _.Z({
+          errorCode: I.lTL.INVALID_COMMAND
         }, "This application cannot access this API");
         return new Promise(e => {
-          (0, s._)({
+          (0, o._)({
             applicationId: a,
             customId: r,
             linkId: l,

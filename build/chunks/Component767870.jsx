@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 767870, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => g
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -35,14 +35,14 @@ function p(e) {
 let f = "premium_tier_gradient",
   h = "smaller_sparkle_gradient";
 
-function g(e) {
+function m(e) {
   var t, n, {
       width: i = 14,
       height: l = 15,
       color: a = "white",
-      foreground: o
+      foreground: s
     } = e,
-    s = function(e, t) {
+    o = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -57,12 +57,12 @@ function g(e) {
       }
       return i
     }(e, ["width", "height", "color", "foreground"]);
-  return (0, r.jsxs)("svg", (t = p({}, (0, c.Z)(p({}, s))), n = n = {
+  return (0, r.jsxs)("svg", (t = p({}, (0, c.Z)(p({}, o))), n = n = {
     preserveAspectRatio: "none",
     width: i,
     height: l,
     viewBox: "0 0 14 15",
-    className: o,
+    className: s,
     xmlns: "http://www.w3.org/2000/svg",
     children: [(0, r.jsx)("defs", {
       children: (0, r.jsxs)("linearGradient", {
@@ -114,31 +114,31 @@ function g(e) {
   }), t))
 }
 
-function m(e) {
+function g(e) {
   let {
     className: t,
     startsAt: n,
     endsAt: i,
     messageStyle: c,
     upperCase: p,
-    showSparkles: m
-  } = e, [b] = (0, s.Tt)(a.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL, {
+    showSparkles: g
+  } = e, [_] = (0, o.Tt)(a.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL, {
     showAfterTimestamp: n.valueOf(),
     cooldownDurationMs: 0
-  }), _ = (0, o.ZP)(i, c);
-  return "" === _ ? null : (p && (_ = _.toUpperCase()), (0, r.jsxs)("div", {
+  }), b = (0, s.ZP)(i, c);
+  return "" === b ? null : (p && (b = b.toUpperCase()), (0, r.jsxs)("div", {
     className: l()(t, d.countDown),
-    children: [m ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(g, {
+    children: [g ? (0, r.jsxs)(r.Fragment, {
+      children: [(0, r.jsx)(m, {
         foreground: d.sparkleStar1,
         color: "url(#".concat(h, ")")
-      }), (0, r.jsx)(g, {
+      }), (0, r.jsx)(m, {
         foreground: d.sparkleStar2,
         color: "url(#".concat(f, ")")
       })]
     }) : null, (0, r.jsx)(u.mn, {
-      text: _,
-      colorOptions: b === a.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL ? u.VE.PREMIUM_TIER_2_NEW_GRADIENT_FILL : u.VE.PREMIUM_TIER_2_GREY_FILL
+      text: b,
+      colorOptions: _ === a.z.FRACTIONAL_NITRO_DURATION_LEFT_PILL ? u.VE.PREMIUM_TIER_2_NEW_GRADIENT_FILL : u.VE.PREMIUM_TIER_2_GREY_FILL
     })]
   }))
 }

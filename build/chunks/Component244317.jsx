@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 244317, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => g
 }), require("./35282.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,12 +17,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk87805 = require("./87805.js");
 
-function m(e) {
+function g(e) {
   let {
     applicationId: t
-  } = e.match.params, [m, b] = i.useState(false), _ = i.useRef(false), [E, O] = i.useState(null), v = !u.isPlatformEmbedded && !a.tq && !m, y = i.useMemo(() => (0, l.Z)(), []);
+  } = e.match.params, [g, _] = i.useState(false), b = i.useRef(false), [E, O] = i.useState(null), I = !u.isPlatformEmbedded && !a.tq && !g, y = i.useMemo(() => (0, l.Z)(), []);
   return (i.useEffect(() => {
-    v && true !== _.current && (Promise.resolve().then(n.bind(n, 536285)).then(e => {
+    I && true !== b.current && (Promise.resolve().then(n.bind(n, 536285)).then(e => {
       let {
         default: n
       } = e;
@@ -49,26 +49,26 @@ function m(e) {
           rpc_success: false
         })
       }).then(() => n.disconnect())
-    }), _.current = true)
-  }, [t, v, y]), v && false !== E) ? true === E ? (0, r.jsxs)("div", {
-    className: g.container,
-    children: [(0, r.jsx)(s.Heading, {
+    }), b.current = true)
+  }, [t, I, y]), I && false !== E) ? true === E ? (0, r.jsxs)("div", {
+    className: m.container,
+    children: [(0, r.jsx)(o.Heading, {
       variant: "heading-xxl/bold",
       children: h.intl.string(h.t.csrAMJ)
-    }), (0, r.jsx)(s.Text, {
+    }), (0, r.jsx)(o.Text, {
       variant: "text-xs/semibold",
       children: h.intl.string(h.t["m1+IBn"])
-    }), (0, r.jsx)(o.zxk, {
+    }), (0, r.jsx)(s.zxk, {
       variant: "primary",
       text: h.intl.string(h.t.fIv16B),
-      onClick: () => b(true)
+      onClick: () => _(true)
     })]
   }) : (0, r.jsxs)("div", {
-    className: g.container,
-    children: [(0, r.jsx)(s.Heading, {
+    className: m.container,
+    children: [(0, r.jsx)(o.Heading, {
       variant: "heading-xxl/bold",
       children: h.intl.string(h.t["Z+hCVU"])
-    }), (0, r.jsx)(s.$jN, {})]
+    }), (0, r.jsx)(o.$jN, {})]
   }) : (0, r.jsx)(d.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},

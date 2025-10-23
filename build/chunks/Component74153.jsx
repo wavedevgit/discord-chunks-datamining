@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 74153, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => _
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk883307 = require("./883307.js");
 
-function g(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,7 +24,7 @@ function g(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class m extends Chunk647438.PureComponent {
+class g extends Chunk647438.PureComponent {
   componentDidMount() {
     let {
       sku: e,
@@ -56,7 +56,7 @@ class m extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), g(this, "handleClick", e => {
+    super(...e), m(this, "handleClick", e => {
       let {
         sku: t
       } = this.props;
@@ -69,14 +69,14 @@ class m extends Chunk647438.PureComponent {
           }
         }
       })
-    }), g(this, "renderCustomBreadcrumb", (e, t) => (0, r.jsx)(u.Z.Title, {
+    }), m(this, "renderCustomBreadcrumb", (e, t) => (0, r.jsx)(u.Z.Title, {
       className: t ? null : h.breadcrumb,
       muted: !t,
       children: e.label
     }))
   }
 }
-let b = (0, Chunk730749.Z)(Chunk442837.ZP.connectStores([Chunk812206.Z, Chunk55563.Z], e => {
+let _ = (0, Chunk730749.Z)(Chunk442837.ZP.connectStores([Chunk812206.Z, Chunk55563.Z], e => {
   let {
     sku: t
   } = e, n = null != t ? c.Z.getApplication(t.applicationId) : null, r = null != n && null != n.primarySkuId && n.primarySkuId !== t.id ? n.primarySkuId : null;
@@ -85,4 +85,4 @@ let b = (0, Chunk730749.Z)(Chunk442837.ZP.connectStores([Chunk812206.Z, Chunk555
     isFetchingPrimarySku: null != r && p.Z.isFetching(r),
     primarySku: null != r ? p.Z.get(r) : null
   }
-})(m))
+})(g))

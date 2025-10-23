@@ -36,7 +36,7 @@ function I(t) {
     analyticsObject: r
   } = t;
   return (0, c.ZP)(() => {
-    j.default.track(h.rMx.GIFT_CATEGORY_SELECT_MODAL_OPENED, {
+    j.default.track(T.rMx.GIFT_CATEGORY_SELECT_MODAL_OPENED, {
       location: r,
       location_stack: e
     })
@@ -57,9 +57,9 @@ function I(t) {
         }), (0, i.jsx)(s.olH, {
           "data-migration-pending": true,
           onClick: () => {
-            j.default.track(h.rMx.MODAL_DISMISSED, {
-              type: h.jXE.GIFT_CATEGORY_SELECT_MODAL,
-              location_object: h.qAy.BUTTON_CTA
+            j.default.track(T.rMx.MODAL_DISMISSED, {
+              type: T.jXE.GIFT_CATEGORY_SELECT_MODAL,
+              location_object: T.qAy.BUTTON_CTA
             }), a()
           },
           className: E.cursorPointer
@@ -86,7 +86,7 @@ function N(t) {
     onClose: a
   } = t, {
     showBothNitroSkusInCategorySelect: c
-  } = m.G.useExperiment({
+  } = y.G.useExperiment({
     location: "gift-button"
   }, {
     autoTrackExposure: false
@@ -96,11 +96,11 @@ function N(t) {
     t && a()
   }, _ = t => {
     var i, a;
-    let o = h.Qqv.NITRO_SKU_SELECTION;
-    t === b.Si.TIER_2 ? o = h.Qqv.NITRO_STANDARD : t === b.Si.TIER_0 && (o = h.Qqv.NITRO_BASIC), (0, O.Z)({
+    let o = T.AnalyticsObjectTypes.NITRO_SKU_SELECTION;
+    t === h.Si.TIER_2 ? o = T.AnalyticsObjectTypes.NITRO_STANDARD : t === h.Si.TIER_0 && (o = T.AnalyticsObjectTypes.NITRO_BASIC), (0, O.Z)({
       isGift: true,
       giftRecipient: e,
-      giftingOrigin: b.Wt.DM_CHANNEL,
+      giftingOrigin: h.Wt.DM_CHANNEL,
       initialPlanId: null,
       analyticsLocations: d,
       subscriptionTier: t,
@@ -122,8 +122,8 @@ function N(t) {
         }
         return t
       }({}, n), a = a = {
-        section: h.jXE.GIFT_CATEGORY_SELECT_MODAL,
-        object: h.qAy.GIFT_CATEGORY_OPTION,
+        section: T.jXE.GIFT_CATEGORY_SELECT_MODAL,
+        object: T.qAy.GIFT_CATEGORY_OPTION,
         objectType: o
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(t, e) {
         var n = Object.keys(t);
@@ -140,7 +140,7 @@ function N(t) {
   };
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsx)(s.P3F, {
-      onClick: () => _(c ? b.Si.TIER_2 : true),
+      onClick: () => _(c ? h.Si.TIER_2 : true),
       children: (0, i.jsxs)("div", {
         className: o()(E.categoryButton, E.nitroButton),
         children: [(0, i.jsx)(s.Text, {
@@ -148,12 +148,12 @@ function N(t) {
           color: "always-white",
           className: E.buttonText,
           children: x.intl.string(x.t.lG6a5x)
-        }), (0, i.jsx)(v, {
+        }), (0, i.jsx)(A, {
           imageType: 0
         })]
       })
     }), c && (0, i.jsx)(s.P3F, {
-      onClick: () => _(b.Si.TIER_0),
+      onClick: () => _(h.Si.TIER_0),
       children: (0, i.jsxs)("div", {
         className: o()(E.nitroBasicButton, E.categoryButton),
         children: [(0, i.jsx)(s.Text, {
@@ -161,15 +161,15 @@ function N(t) {
           color: "always-white",
           className: E.buttonText,
           children: x.intl.string(x.t["t9uG/o"])
-        }), (0, i.jsx)(v, {
+        }), (0, i.jsx)(A, {
           imageType: 1
         })]
       })
     }), (0, i.jsx)(s.P3F, {
       onClick: () => {
-        (0, y.Z)({
+        (0, m.Z)({
           isGift: true,
-          giftingOrigin: b.Wt.DM_CHANNEL,
+          giftingOrigin: h.Wt.DM_CHANNEL,
           analyticsLocations: d,
           analyticsObject: n,
           giftRecipient: e,
@@ -184,7 +184,7 @@ function N(t) {
           color: "always-white",
           className: E.buttonText,
           children: x.intl.string(x.t.gFlB9b)
-        }), (0, i.jsx)(v, {
+        }), (0, i.jsx)(A, {
           imageType: 2
         })]
       })
@@ -192,7 +192,7 @@ function N(t) {
   })
 }
 
-function v(t) {
+function A(t) {
   let {
     imageType: e
   } = t, {
@@ -204,7 +204,7 @@ function v(t) {
     className: E.wumpusImageContainer,
     children: (0, i.jsx)(s.Eep, {
       src: 1 === e ? f : C,
-      mediaLayoutType: T.hV.RESPONSIVE,
+      mediaLayoutType: b.hV.RESPONSIVE,
       width: 122,
       height: 110,
       zoomable: false

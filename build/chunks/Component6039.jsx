@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 6039, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => T
+  Z: () => N
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -27,7 +27,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk555562 = require("./555562.js");
 
-function N(e) {
+function T(e) {
   let {
     guild: t,
     width: n,
@@ -35,7 +35,7 @@ function N(e) {
   } = e, a = i.useMemo(() => (null == t ? true : t.splash) != null ? f.ZP.getGuildSplashURL({
     id: null == t ? true : t.id,
     splash: null == t ? true : t.splash
-  }) : null, [null == t ? true : t.splash, null == t ? true : t.id]), o = (0, u.N)(a);
+  }) : null, [null == t ? true : t.splash, null == t ? true : t.id]), s = (0, u.N)(a);
   return null == a ? (0, r.jsx)("div", {
     className: S.defaultGradient
   }) : (0, r.jsxs)(r.Fragment, {
@@ -45,42 +45,42 @@ function N(e) {
       imageClassName: S.cover,
       width: n,
       height: l
-    }), null != o && (0, r.jsx)("div", {
+    }), null != s && (0, r.jsx)("div", {
       className: S.splashGradient,
       style: {
-        background: "linear-gradient(180deg, ".concat((0, h.aD)(o, .16), " 0%, ").concat((0, h.aD)(o, 1), " 100%)")
+        background: "linear-gradient(180deg, ".concat((0, h.aD)(s, .16), " 0%, ").concat((0, h.aD)(s, 1), " 100%)")
       }
     }), (0, r.jsx)("div", {
       className: S.splashGradient
     })]
   })
 }
-let T = e => {
+let N = e => {
   let {
     guildId: t
   } = e, {
     ref: n,
     width: c,
     height: u
-  } = (0, s.ZP)(), [f, h] = i.useState(I.hO.INITIAL), T = (0, l.e7)([_.Z], () => _.Z.getRequest(t)), P = (0, l.e7)([p.Z], () => p.Z.getGuild(t)), {
-    hasFetchedRequestToJoinGuilds: j,
+  } = (0, o.ZP)(), [f, h] = i.useState(v.hO.INITIAL), N = (0, l.e7)([b.Z], () => b.Z.getRequest(t)), j = (0, l.e7)([p.Z], () => p.Z.getGuild(t)), {
+    hasFetchedRequestToJoinGuilds: P,
     guildPreviewDisabled: x
-  } = (0, l.cj)([_.Z], () => ({
-    hasFetchedRequestToJoinGuilds: _.Z.hasFetchedRequestToJoinGuilds,
-    guildPreviewDisabled: _.Z.getJoinRequestGuild(t)
+  } = (0, l.cj)([b.Z], () => ({
+    hasFetchedRequestToJoinGuilds: b.Z.hasFetchedRequestToJoinGuilds,
+    guildPreviewDisabled: b.Z.getJoinRequestGuild(t)
   }));
   i.useEffect(() => {
-    null != P && (0, d.uL)(y.Z5c.CHANNEL(t))
-  }, [P, t]), i.useEffect(() => {
-    j || g.Z.fetchRequestToJoinGuilds()
-  }, [j]);
-  let Z = i.useCallback(() => {
-      h(Math.max(f, I.hO.FILLING)), g.Z.removeGuildJoinRequest(t), (0, d.uL)(y.Z5c.ME)
+    null != j && (0, d.uL)(y.Z5c.CHANNEL(t))
+  }, [j, t]), i.useEffect(() => {
+    P || m.Z.fetchRequestToJoinGuilds()
+  }, [P]);
+  let A = i.useCallback(() => {
+      h(Math.max(f, v.hO.FILLING)), m.Z.removeGuildJoinRequest(t), (0, d.uL)(y.Z5c.ME)
     }, [t, f]),
-    A = (e, t) => () => {
-      (0, o.h7j)(n => {
+    Z = (e, t) => () => {
+      (0, s.h7j)(n => {
         var i, l;
-        return (0, r.jsx)(o.ConfirmModal, (i = function(e) {
+        return (0, r.jsx)(s.ConfirmModal, (i = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -104,7 +104,7 @@ let T = e => {
           confirmText: C.intl.string(C.t.p89ACt),
           confirmButtonColor: a.zx.Colors.RED
         }, n), l = l = {
-          children: (0, r.jsx)(o.Text, {
+          children: (0, r.jsx)(s.Text, {
             variant: "text-sm/normal",
             color: "header-secondary",
             children: e
@@ -122,42 +122,42 @@ let T = e => {
       })
     },
     w = async () => {
-      await g.Z.resetGuildJoinRequest(t), (0, m.hk)(t)
-    }, L = A(C.intl.format(C.t["9ZezpN"], {
+      await m.Z.resetGuildJoinRequest(t), (0, g.hk)(t)
+    }, L = Z(C.intl.format(C.t["9ZezpN"], {
       name: null == x ? true : x.name
-    }), Z), R = A(C.intl.format(C.t.fJwWVt, {
+    }), A), D = Z(C.intl.format(C.t.fJwWVt, {
       name: null == x ? true : x.name
-    }), Z);
+    }), A);
   return (0, r.jsxs)("div", {
     className: S.page,
     ref: n,
-    children: [(0, r.jsx)(N, {
+    children: [(0, r.jsx)(T, {
       guild: x,
       height: u,
       width: c
     }), (0, r.jsx)("div", {
       className: S.contentWrapper,
       children: (() => {
-        if (null == T) return null;
-        switch (T.applicationStatus) {
-          case b.wB.SUBMITTED:
-            return (0, r.jsx)(v.Z, {
+        if (null == N) return null;
+        switch (N.applicationStatus) {
+          case _.wB.SUBMITTED:
+            return (0, r.jsx)(I.Z, {
               onWithdrawApplication: L,
               guild: x
             });
-          case b.wB.REJECTED:
+          case _.wB.REJECTED:
             return (0, r.jsx)(O.Z, {
               reapplyText: C.intl.string(C.t.I1LYVk),
               onReapply: w,
               confirmText: C.intl.string(C.t.g9tK0o),
               onWithdrawApplication: L,
-              rejectionReason: T.rejectionReason,
+              rejectionReason: N.rejectionReason,
               guild: x
             });
           default:
             return (0, r.jsx)(E.s, {
-              onDiscardApplication: R,
-              onContinueApplication: () => (0, m.hk)(t),
+              onDiscardApplication: D,
+              onContinueApplication: () => (0, g.hk)(t),
               guild: x
             })
         }

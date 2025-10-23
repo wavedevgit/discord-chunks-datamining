@@ -2,9 +2,10 @@
 /** chunk id: 924301, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
+  BQ: () => ee,
   Ld: () => $,
-  Z2: () => ee,
-  ZP: () => en,
+  Z2: () => et,
+  ZP: () => er,
   bN: () => g,
   xt: () => J
 }), require("./539854.js"), require("./388685.js");
@@ -307,10 +308,14 @@ function $(e) {
   return !f.$I.has(e.status)
 }
 
-function ee(e) {
+function ee(e, t) {
+  return new Date(e.scheduled_start_time).getTime() < Date.now() + 1e3 * t
+}
+
+function et(e) {
   return null != e && f.$I.has(e.status)
 }
-class et extends(r = Chunk442837.ZP.Store) {
+class en extends(r = Chunk442837.ZP.Store) {
   getGuildScheduledEvent(e) {
     var t;
     return null == e ? null : null != (t = y.get(e)) ? t : null
@@ -366,8 +371,8 @@ class et extends(r = Chunk442837.ZP.Store) {
     return null != (r = null == (n = T[e]) ? true : n[i]) ? r : {}
   }
 }
-_(et, "displayName", "GuildScheduledEventStore");
-let en = new et(Chunk570140.Z, {
+_(en, "displayName", "GuildScheduledEventStore");
+let er = new en(Chunk570140.Z, {
   CONNECTION_OPEN: x,
   GUILD_CREATE: j,
   GUILD_DELETE: U,

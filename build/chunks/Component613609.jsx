@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 613609, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => g
 }), require("./388685.js"), require("./457542.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,36 +16,36 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk898625 = require("./898625.js"),
   Chunk242517 = require("./242517.js");
-let m = e => {
+let g = e => {
   let {
     guildId: t,
     inviteCode: n
-  } = e, [m, b] = i.useState(h.hO.INITIAL), [_, E] = i.useState(null != n);
+  } = e, [g, _] = i.useState(h.hO.INITIAL), [b, E] = i.useState(null != n);
   i.useEffect(() => {
     null != n && a.ZP.resolveInvite(n, "Hub").finally(() => E(false))
   }, [n]);
   let O = (0, l.e7)([u.Z], () => null != n ? u.Z.getInvite(n) : null),
-    v = (0, l.e7)([c.Z], () => c.Z.getGuild(t));
+    I = (0, l.e7)([c.Z], () => c.Z.getGuild(t));
   i.useEffect(() => {
-    null != v && (0, s.uL)(f.Z5c.CHANNEL(t))
-  }, [v, t]);
+    null != I && (0, o.uL)(f.Z5c.CHANNEL(t))
+  }, [I, t]);
   let y = i.useCallback(e => {
-      b(t => Math.max(t, e))
+      _(t => Math.max(t, e))
     }, []),
-    I = (0, d.gK)();
+    v = (0, d.gK)();
   return (0, r.jsx)("div", {
-    className: g.page,
-    children: (0, r.jsxs)(o.Z, {
+    className: m.page,
+    children: (0, r.jsxs)(s.Z, {
       embedded: true,
-      splash: I,
-      waveState: m,
+      splash: v,
+      waveState: g,
       showLogo: false,
       updateWaveState: y,
       children: [(0, r.jsx)("div", {
-        className: g.dragRegion
+        className: m.dragRegion
       }), (0, r.jsx)("div", {
-        className: g.contentWrapper,
-        children: !_ && (0, r.jsx)(p.H, {
+        className: m.contentWrapper,
+        children: !b && (0, r.jsx)(p.H, {
           invite: O
         })
       })]

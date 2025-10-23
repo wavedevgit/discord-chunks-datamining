@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 639033, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => m
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -35,17 +35,17 @@ class h extends Chunk317770.Z {
       var t;
       let {
         voiceStates: l
-      } = e, a = o.default.getId(), h = null == (t = c.Z.getSession()) ? true : t.sessionId, g = l.find(e => e.userId === a && e.sessionId === h);
-      if (null == g) return;
-      let m = g.channelId;
-      if (null == m) {
+      } = e, a = s.default.getId(), h = null == (t = c.Z.getSession()) ? true : t.sessionId, m = l.find(e => e.userId === a && e.sessionId === h);
+      if (null == m) return;
+      let g = m.channelId;
+      if (null == g) {
         (0, i.nfh)(f) && (0, i.Mr3)(f);
         return
       }
-      let b = s.Z.getChannel(m);
-      if (!(null == b ? true : b.isGuildStageVoice())) return;
-      let _ = (0, u.gf)(g) === u.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
-      if (null != b && _) {
+      let _ = o.Z.getChannel(g);
+      if (!(null == _ ? true : _.isGuildStageVoice())) return;
+      let b = (0, u.gf)(m) === u.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK;
+      if (null != _ && b) {
         if ((0, i.nfh)(f)) return;
         (0, i.ZDy)(async () => {
           let {
@@ -74,7 +74,7 @@ class h extends Chunk317770.Z {
             }
             return e
           }({}, t), {
-            channel: b
+            channel: _
           }))
         }, {
           modalKey: f,
@@ -84,4 +84,4 @@ class h extends Chunk317770.Z {
     })
   }
 }
-let g = new h
+let m = new h

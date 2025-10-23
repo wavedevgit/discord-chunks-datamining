@@ -1,14 +1,14 @@
 /** Chunk was on 1272 **/
 /** chunk id: 934993, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => s
+  Z: () => o
 }), require("./388685.js");
 var Chunk570140 = require("./570140.js"),
   Chunk996106 = require("./996106.js"),
   Chunk452426 = require("./452426.js"),
   Chunk186901 = require("./186901.js"),
   Chunk981631 = require("./981631.js");
-let s = {
+let o = {
   [Chunk981631.Etm.SET_CONFIG]: {
     scope: Chunk186901.wE,
     validation: e => (0, l.Z)(e).required().keys({
@@ -22,10 +22,10 @@ let s = {
         }
       } = e;
       if (t.transport !== a.He.POST_MESSAGE) throw new i.Z({
-        errorCode: o.lTL.INVALID_COMMAND
+        errorCode: s.lTL.INVALID_COMMAND
       }, 'command not available from "'.concat(t.transport, " transport"));
       if (null == t.application.id) throw new i.Z({
-        errorCode: o.lTL.INVALID_COMMAND
+        errorCode: s.lTL.INVALID_COMMAND
       }, "invalid application");
       return r.Z.dispatch({
         type: "EMBEDDED_ACTIVITY_SET_CONFIG",

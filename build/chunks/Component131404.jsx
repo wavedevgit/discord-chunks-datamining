@@ -58,21 +58,21 @@ let Y = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     onSelect: W,
     onHeightUpdate: z,
     onInteraction: B
-  } = e, q = (0, D.Z)({
+  } = e, J = (0, D.Z)({
     userId: n.id,
     guildId: null
-  }), J = (0, I.Z)({
+  }), X = (0, I.Z)({
     user: n,
     context: K
-  }), X = (0, N.Z)({
+  }), q = (0, N.Z)({
     user: n,
     channelId: t.id,
     context: K
   }), H = (0, S.Z)({
     user: n
-  }), $ = (0, G.Z)(n.id), ee = (0, A.Z)(t.id, a), en = (0, U.Z)({
+  }), $ = (0, Q.Z)(n.id), ee = (0, A.Z)(t.id, a), en = (0, U.Z)({
     user: n
-  }), et = (0, d.Z)(null, n), ei = (0, Q.Z)(n.id), er = (0, R.O)(t.id, "DMUserContextMenu"), el = (0, R.Z)(n, er), ea = (0, x.Z)({
+  }), et = (0, d.Z)(null, n), ei = (0, G.Z)(n.id), er = (0, R.O)(t.id, "DMUserContextMenu"), el = (0, R.Z)(n, er), ea = (0, x.Z)({
     user: n
   }), es = (0, P.Z)({
     user: n
@@ -82,10 +82,10 @@ let Y = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     userId: n.id,
     channelId: t.id,
     guildId: t.getGuildId()
-  }), eu = (0, k.Z)(n.id, t.id), ef = (0, E.Z)({
+  }), eu = (0, T.Z)(n.id, t.id), ef = (0, E.Z)({
     user: n,
     location: "DMUserContextMenu"
-  }), eh = (0, T.Z)({
+  }), eh = (0, k.Z)({
     user: n,
     location: "DMUserContextMenu"
   }), eg = (0, b.ZP)(t), ej = (0, O.Z)({
@@ -94,13 +94,13 @@ let Y = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
   }), ep = (0, O.Z)({
     id: t.id,
     label: L.intl.string(L.t.gFHI3k)
-  }), eb = (0, p.Z)(t), eO = (0, f.Z)(n.id), ev = (0, u.Z)(t.id), ey = (0, _.Z)(n), eZ = (0, h.Z)(n.id), e_ = (0, m.Z)({
+  }), eb = (0, p.Z)(t), eO = (0, f.Z)(n.id), ey = (0, u.Z)(t.id), ev = (0, _.Z)(n), eZ = (0, h.Z)(n.id), e_ = (0, m.Z)({
     commandType: o.yU.USER,
     commandTargetId: n.id,
     channel: t,
     guildId: true,
     onHeightUpdate: z
-  }), ex = (0, v.l)(t), eS = (0, v.P)(t), eP = (0, y.Z)(t), eN = (0, Z.Z)(t), em = (0, C.Z)({
+  }), ex = (0, y.l)(t), eS = (0, y.P)(t), eP = (0, v.Z)(t), eN = (0, Z.Z)(t), em = (0, C.Z)({
     channel: t
   }), eE = t.isManaged(), eI = n.isNonUserBot();
   return (0, i.jsxs)(r.v2r, {
@@ -114,11 +114,11 @@ let Y = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     }), (0, i.jsxs)(r.kSQ, {
       children: [ex, eP, eN]
     }), (0, i.jsx)(r.kSQ, {
-      children: !eI && ey
+      children: !eI && ev
     }), (0, i.jsxs)(r.kSQ, {
       children: [!eI && (0, i.jsxs)(i.Fragment, {
-        children: [Y && q, J, !eE && el, Y && X, Y && H, $]
-      }), (0, j.Z)(t.id) && q, ee]
+        children: [Y && J, X, !eE && el, Y && q, Y && H, $]
+      }), (0, j.Z)(t.id) && J, ee]
     }), !eI && (0, i.jsxs)(i.Fragment, {
       children: [(0, i.jsx)(r.kSQ, {
         children: c && ei
@@ -129,7 +129,7 @@ let Y = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
       }), (0, i.jsx)(r.kSQ, {
         children: s && eg
       }), F && (0, i.jsxs)(r.kSQ, {
-        children: [ev, eO]
+        children: [ey, eO]
       })]
     }), (0, j.Z)(t.id) && (0, i.jsx)(r.kSQ, {
       children: s && eg

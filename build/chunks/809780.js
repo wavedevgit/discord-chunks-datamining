@@ -183,10 +183,10 @@ class z extends Chunk836560.EventEmitter {
         channelId: t,
         newestUnreadMessageId: n
       } = e;
-      d.Z.wait(() => h.In(t, {
+      d.Z.wait(() => h.ack(t, {
         section: M.jXE.INBOX,
         object: M.qAy.ACK_INBOX_NEWEST_UNREAD_MESSAGE,
-        objectType: M.Qqv.ACK_AUTOMATIC
+        objectType: M.AnalyticsObjectTypes.ACK_AUTOMATIC
       }, true, true, n));
       let r = this.state.channels.find(e => e.channelId === t);
       if (null != r && this.undoStack.push(r), 1 === this.state.channels.length) return void this.deleteChannel(t);
@@ -199,10 +199,10 @@ class z extends Chunk836560.EventEmitter {
       if (0 === this.undoStack.length) return;
       let e = this.undoStack.pop();
       if (null == e) return;
-      h.In(e.channelId, {
+      h.ack(e.channelId, {
         section: M.jXE.INBOX,
         object: M.qAy.UNDO_MARK_AS_READ,
-        objectType: M.Qqv.ACK_MANUAL
+        objectType: M.AnalyticsObjectTypes.ACK_MANUAL
       }, true, true, e.oldestReadMessageId);
       let t = this.state.channels.findIndex(t => t.order > e.order),
         n = [...this.state.channels];

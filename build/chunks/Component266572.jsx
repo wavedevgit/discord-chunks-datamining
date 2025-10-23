@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 266572, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => I
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -20,7 +20,7 @@ var Chunk544891 = require("./544891.js"),
   Chunk186901 = require("./186901.js"),
   Chunk981631 = require("./981631.js");
 
-function _(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -52,7 +52,7 @@ function E(e, t) {
   }), e
 }
 let O = 10 * Chunk70956.Z.Millis.SECOND,
-  v = {
+  I = {
     [Chunk981631.Etm.VALIDATE_APPLICATION]: {
       scope: Chunk186901.lH,
       handler(e) {
@@ -60,35 +60,35 @@ let O = 10 * Chunk70956.Z.Millis.SECOND,
           socket: t
         } = e, i = t.application.id;
         try {
-          if (null == i) throw new g.Z({
-            errorCode: b.lTL.INVALID_COMMAND
+          if (null == i) throw new m.Z({
+            errorCode: _.lTL.INVALID_COMMAND
           }, "No application.");
           let e = c.Z.getApplication(i);
-          if (null == e) throw new g.Z({
-            errorCode: b.lTL.INVALID_ENTITLEMENT
+          if (null == e) throw new m.Z({
+            errorCode: _.lTL.INVALID_ENTITLEMENT
           }, "SKU does not exist.");
           let t = e.primarySkuId;
-          if (null == t) throw new g.Z({
-            errorCode: b.lTL.INVALID_ENTITLEMENT
+          if (null == t) throw new m.Z({
+            errorCode: _.lTL.INVALID_ENTITLEMENT
           }, "SKU does not exist.");
           return Promise.race([(function(e, t) {
             let n = d.Z.isEntitledToSku(u.default.getCurrentUser(), e, t);
-            return null != n ? Promise.resolve(n) : (0, o.yD)(t).then(() => true === d.Z.isEntitledToSku(u.default.getCurrentUser(), e, t))
+            return null != n ? Promise.resolve(n) : (0, s.yD)(t).then(() => true === d.Z.isEntitledToSku(u.default.getCurrentUser(), e, t))
           })(t, e.id).then(e => {
-            if (!e) throw new g.Z({
-              errorCode: b.lTL.INVALID_ENTITLEMENT
+            if (!e) throw new m.Z({
+              errorCode: _.lTL.INVALID_ENTITLEMENT
             }, "User does not have entitlement.")
           }), (0, l.GR)(O).then(() => {
-            throw new g.Z({
-              errorCode: b.lTL.INVALID_ENTITLEMENT
+            throw new m.Z({
+              errorCode: _.lTL.INVALID_ENTITLEMENT
             }, "Timed out fetching entitlement.")
           })])
         } catch (e) {
-          throw e.code === b.lTL.INVALID_ENTITLEMENT && (h.ZP.focus(null, true), (0, a.ZDy)(async () => {
+          throw e.code === _.lTL.INVALID_ENTITLEMENT && (h.ZP.focus(null, true), (0, a.ZDy)(async () => {
             let {
               default: e
             } = await n.e("48748").then(n.bind(n, 52004));
-            return t => (0, r.jsx)(e, E(_({}, t), {
+            return t => (0, r.jsx)(e, E(b({}, t), {
               applicationId: i
             }))
           })), e
@@ -101,13 +101,13 @@ let O = 10 * Chunk70956.Z.Millis.SECOND,
         let {
           socket: t
         } = e, l = t.application.id;
-        if (null == l) throw new g.Z({
-          errorCode: b.lTL.INVALID_COMMAND
+        if (null == l) throw new m.Z({
+          errorCode: _.lTL.INVALID_COMMAND
         }, "No application.");
         return i.tn.post({
-          url: b.ANM.ENTITLEMENT_TICKET(l),
+          url: _.ANM.ENTITLEMENT_TICKET(l),
           body: {
-            test_mode: p.Z.inTestModeForApplication(l) || s.Z.inDevModeForApplication(l)
+            test_mode: p.Z.inTestModeForApplication(l) || o.Z.inDevModeForApplication(l)
           },
           retries: 3,
           oldFormErrors: true,
@@ -122,7 +122,7 @@ let O = 10 * Chunk70956.Z.Millis.SECOND,
             let {
               default: e
             } = await n.e("48748").then(n.bind(n, 52004));
-            return t => (0, r.jsx)(e, E(_({}, t), {
+            return t => (0, r.jsx)(e, E(b({}, t), {
               applicationId: l
             }))
           }), e

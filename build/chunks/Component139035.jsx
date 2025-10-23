@@ -81,7 +81,7 @@ function C(e) {
   } = e, c = (0, j.Z)(t), s = (0, h.ZP)(t), u = (0, P.Z)(t), _ = (0, O.Z)(t), w = (0, f.Z)(t), E = (0, g.Z)(t), C = (0, d.Z)(t), N = (0, p.Z)(t, n), S = (0, y.Z)(t), x = (0, a.Z)({
     id: t.id,
     label: m.intl.string(m.t["2visC6"])
-  }), k = (0, v.Z)(t), A = (0, b.Mn)("ChannelCategoryNormalMenu"), D = (0, Z.ZP)(t);
+  }), A = (0, v.Z)(t), k = (0, b.Mn)("ChannelCategoryNormalMenu"), D = (0, Z.ZP)(t);
   return (0, r.jsxs)(i.v2r, {
     navId: "channel-context",
     onClose: l.Zy,
@@ -90,9 +90,9 @@ function C(e) {
     children: [(0, r.jsx)(i.kSQ, {
       children: c
     }, "mark-as-read"), (0, r.jsxs)(i.kSQ, {
-      children: [k, _, w]
+      children: [A, _, w]
     }, "channel-actions"), (0, r.jsxs)(i.kSQ, {
-      children: [s, A ? D : u]
+      children: [s, k ? D : u]
     }, "notifications"), (0, r.jsxs)(i.kSQ, {
       children: [E, C, N, S]
     }, "admin-actions"), (0, r.jsx)(i.kSQ, {

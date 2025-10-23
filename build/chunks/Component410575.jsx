@@ -66,6 +66,6 @@ class f extends(r = Chunk647438.Component) {
     }))), null != e.loadId ? this._loadId = e.loadId : e.root && (this._loadId = (0, o.Z)())
   }
 }
-u(f, "Pages", Chunk981631.ZY5), u(f, "Sections", Chunk981631.jXE), u(f, "Objects", Chunk981631.qAy), u(f, "ObjectTypes", Chunk981631.Qqv), u(f, "defaultProps", {
+u(f, "Pages", Chunk981631.ZY5), u(f, "Sections", Chunk981631.jXE), u(f, "Objects", Chunk981631.qAy), u(f, "ObjectTypes", Chunk981631.AnalyticsObjectTypes), u(f, "defaultProps", {
   root: false
 })

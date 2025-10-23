@@ -21,35 +21,35 @@ function f(e) {
     message: t,
     canSend: n,
     selectedDestinations: f,
-    onSend: w,
-    inputValue: p,
-    setInputValue: b
-  } = e, _ = (0, o.Z)(), v = (0, u.nm)(f), x = (0, d.Ad)(), {
+    onSend: _,
+    inputValue: w,
+    setInputValue: p
+  } = e, b = (0, o.Z)(), v = (0, u.nm)(f), x = (0, d.Ad)(), {
     textValue: y,
-    richValue: P
-  } = p, [C, j] = l.useState(false), O = l.useCallback(() => j(true), []), S = l.useCallback(() => j(false), []), Z = l.useCallback((e, n, a) => {
-    b({
+    richValue: C
+  } = w, [O, P] = l.useState(false), S = l.useCallback(() => P(true), []), j = l.useCallback(() => P(false), []), E = l.useCallback((e, n, a) => {
+    p({
       textValue: n,
       richValue: a
     }), r.Z.saveDraft(t.channel_id, n, c.d.ForwardContextMessage), x(t.channel_id, t.id)
-  }, [x, t, b]), I = l.useCallback(() => {
-    r.Z.clearDraft(t.channel_id, c.d.ForwardContextMessage), w(y)
-  }, [t.channel_id, w, y]), R = l.useCallback(() => (!n || y.length > _ || I(), Promise.resolve({
+  }, [x, t, p]), T = l.useCallback(() => {
+    r.Z.clearDraft(t.channel_id, c.d.ForwardContextMessage), _(y)
+  }, [t.channel_id, _, y]), I = l.useCallback(() => (!n || y.length > b || T(), Promise.resolve({
     shouldClear: false,
     shouldRefocus: true
-  })), [I, y, _, n]);
+  })), [T, y, b, n]);
   return (0, a.jsx)(s.ZP, {
     innerClassName: g.messageInput,
-    onChange: Z,
+    onChange: E,
     placeholder: m.intl.string(m.t.ZroO3G),
     channel: v,
     textValue: y,
-    richValue: P,
+    richValue: C,
     type: i.Ie.FORWARD_MESSAGE_INPUT,
-    onBlur: S,
-    onFocus: O,
-    focused: C,
-    onSubmit: R,
+    onBlur: j,
+    onFocus: S,
+    focused: O,
+    onSubmit: I,
     parentModalKey: h.so,
     autoCompletePosition: "bottom",
     emojiPickerCloseOnModalOuterClick: true,

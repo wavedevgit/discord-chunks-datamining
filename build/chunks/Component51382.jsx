@@ -23,12 +23,12 @@ let d = e => {
       (0, l.Kw)(l.v6.HUB_STUDY_ROOM_NOTICE)
     },
     onClick: () => {
-      (0, l.Kw)(l.v6.HUB_STUDY_ROOM_NOTICE), null != t && null != t.getGuildId() && ((0, o.Cq)(t), (0, a.XU)(t.getGuildId(), t.id))
+      (0, l.Kw)(l.v6.HUB_STUDY_ROOM_NOTICE), null != t && null != t.getGuildId() && ((0, s.Cq)(t), (0, a.XU)(t.getGuildId(), t.id))
     },
     title: c.intl.string(c.t["4Y2AS7"]),
     message: c.intl.string(c.t.wTsxTS),
     cta: c.intl.string(c.t.wBoE6L),
     image: u,
-    type: s.vID.HUB_STUDY_ROOM
+    type: o.vID.HUB_STUDY_ROOM
   })
 }

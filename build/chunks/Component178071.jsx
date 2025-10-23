@@ -35,7 +35,7 @@ class f extends Chunk647438.PureComponent {
         storeListings: i,
         primaryStoreListing: l,
         skuId: a,
-        onStoreListingSelect: o,
+        onStoreListingSelect: s,
         currentStoreListingId: c
       } = require,
       p = function(e, t) {
@@ -93,18 +93,18 @@ class f extends Chunk647438.PureComponent {
         id: "".concat(e.id),
         label: e.id,
         action: () => {
-          o.Zy(), null == t || t(e)
+          s.Zy(), null == t || t(e)
         }
       }) : null);
       return (0, r.jsx)(a.v2r, {
         onSelect: i,
         navId: "test-store-listing",
         "aria-label": u.intl.string(u.t.ogxXGq),
-        onClose: o.Zy,
+        onClose: s.Zy,
         children: l
       })
     }), d(this, "handleContextMenu", e => {
-      e.stopPropagation(), o.vq(e, this.renderContextMenu)
+      e.stopPropagation(), s.vq(e, this.renderContextMenu)
     })
   }
 }

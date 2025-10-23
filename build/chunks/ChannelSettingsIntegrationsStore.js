@@ -2,10 +2,10 @@
 /** chunk id: 533947, original params: e,t,n (module,exports,require) **/
 let r, i, l;
 require.d(exports, {
-  Z: () => Z
+  Z: () => A
 }), require("./539854.js"), require("./388685.js");
 var a, Chunk392711 = require("./392711.js"),
-  s = require.n(Chunk392711),
+  o = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk308063 = require("./308063.js"),
@@ -15,7 +15,7 @@ var a, Chunk392711 = require("./392711.js"),
   Chunk855674 = require("./855674.js"),
   Chunk981631 = require("./981631.js");
 
-function b(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,38 +24,38 @@ function b(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      b(e, t, n[t])
+      _(e, t, n[t])
     })
   }
   return e
 }
 let E = [],
   O = null,
-  v = false,
+  I = false,
   y = Chunk981631.QZA.CLOSED,
-  I = {},
+  v = {},
   C = false,
   S = null;
 
-function N() {
+function T() {
   if (r = null != (i = Chunk388610.Z.getChannel()) ? Chunk430824.Z.getGuild(i.guild_id) : null, E = null != i && null != r && Chunk496675.Z.can(Chunk981631.Plq.MANAGE_WEBHOOKS, i) ? Chunk855674.Z.getWebhooksForChannel(r.id, i.id) : [], null != O) {
-    let e = P(O.id);
+    let e = j(O.id);
     null != module && (O = module)
   }
-  y = Chunk981631.QZA.OPEN, I = {}, C = false
+  y = Chunk981631.QZA.OPEN, v = {}, C = false
 }
-let T = s().debounce(() => {
-  C && ((null == O || s().isEqual(O, P(O.id))) && (C = false), C || x.emitChange())
+let N = o().debounce(() => {
+  C && ((null == O || o().isEqual(O, j(O.id))) && (C = false), C || x.emitChange())
 }, 500);
 
-function P(e) {
+function j(e) {
   return E.find(t => {
     let {
       id: n
@@ -63,7 +63,7 @@ function P(e) {
     return n === e
   })
 }
-class j extends(a = Chunk442837.ZP.Store) {
+class P extends(a = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk388610.Z, Chunk430824.Z, Chunk855674.Z, Chunk496675.Z)
   }
@@ -80,7 +80,7 @@ class j extends(a = Chunk442837.ZP.Store) {
     return y
   }
   getWebhook(e) {
-    return P(e)
+    return j(e)
   }
   showNotice() {
     return this.hasChanges()
@@ -93,24 +93,24 @@ class j extends(a = Chunk442837.ZP.Store) {
       section: l,
       sectionId: S,
       hasChanges: this.hasChanges(),
-      isFetching: v,
-      errors: I
+      isFetching: I,
+      errors: v
     }
   }
 }
-b(j, "displayName", "ChannelSettingsIntegrationsStore");
-let x = new j(Chunk570140.Z, __OVERLAY__ ? {} : {
-    INTEGRATION_SETTINGS_INIT: N,
-    INTEGRATION_SETTINGS_SAVE_SUCCESS: N,
+_(P, "displayName", "ChannelSettingsIntegrationsStore");
+let x = new P(Chunk570140.Z, __OVERLAY__ ? {} : {
+    INTEGRATION_SETTINGS_INIT: T,
+    INTEGRATION_SETTINGS_SAVE_SUCCESS: T,
     CHANNEL_SETTINGS_SET_SECTION: function(e) {
       let {
         section: t
       } = e;
-      if (t !== m.CoT.INTEGRATIONS) returnfalse;
-      if (l = m.b4C.OVERVIEW, null == r) {
+      if (t !== g.CoT.INTEGRATIONS) returnfalse;
+      if (l = g.b4C.OVERVIEW, null == r) {
         let e = p.Z.getChannel(),
           t = null == e ? true : e.getGuildId();
-        null != e && null != t && (d.Z.fetchForChannel(t, e.id), v = true), N()
+        null != e && null != t && (d.Z.fetchForChannel(t, e.id), I = true), T()
       }
     },
     INTEGRATION_SETTINGS_SET_SECTION: function(e) {
@@ -123,19 +123,19 @@ let x = new j(Chunk570140.Z, __OVERLAY__ ? {} : {
     INTEGRATION_SETTINGS_START_EDITING_WEBHOOK: function(e) {
       let {
         webhookId: t
-      } = e, n = P(t);
+      } = e, n = j(t);
       if (null == n) returnfalse;
-      O = n, I = {}, C = false
+      O = n, v = {}, C = false
     },
     INTEGRATION_SETTINGS_STOP_EDITING_WEBHOOK: function() {
-      O = null, I = {}, C = false
+      O = null, v = {}, C = false
     },
     INTEGRATION_SETTINGS_UPDATE_WEBHOOK: function(e) {
       let {
         settings: t
       } = e;
       if (null == O) returnfalse;
-      O = _({}, O), null != t.name && O.name !== t.name && (O.name = t.name, C = true), true !== t.avatar && O.avatar !== t.avatar && (O.avatar = t.avatar, C = true), null != t.channelId && O.channel_id !== t.channelId && (O.channel_id = t.channelId, C = true), C && T()
+      O = b({}, O), null != t.name && O.name !== t.name && (O.name = t.name, C = true), true !== t.avatar && O.avatar !== t.avatar && (O.avatar = t.avatar, C = true), null != t.channelId && O.channel_id !== t.channelId && (O.channel_id = t.channelId, C = true), C && N()
     },
     CHANNEL_SETTINGS_CLOSE: function() {
       i = null, r = null, E = [], O = null, y = Chunk981631.QZA.CLOSED
@@ -146,7 +146,7 @@ let x = new j(Chunk570140.Z, __OVERLAY__ ? {} : {
         channelId: n,
         webhooks: l
       } = e;
-      if (v = false, null != r && t === r.id && null != i && n === i.id && null != l && y !== m.QZA.SUBMITTING) {
+      if (I = false, null != r && t === r.id && null != i && n === i.id && null != l && y !== g.QZA.SUBMITTING) {
         for (let e = E.length - 1; e >= 0; e--) {
           let t = E[e];
           if (null != n && (null == t ? true : t.channel_id) !== n) continue;
@@ -157,7 +157,7 @@ let x = new j(Chunk570140.Z, __OVERLAY__ ? {} : {
             if (n === t.id) returntrue
           });
           if (null != r) {
-            let n = _({}, t, r);
+            let n = b({}, t, r);
             E[e] = n, C || (null == O ? true : O.id) !== n.id || (O = n)
           } else(null == O ? true : O.id) === t.id && (O = null), E.splice(e, 1)
         }
@@ -167,16 +167,16 @@ let x = new j(Chunk570140.Z, __OVERLAY__ ? {} : {
           } = t;
           if (n === e.id) returntrue
         }) && E.push(e);
-        E = [...E], T()
+        E = [...E], N()
       }
     },
     INTEGRATION_SETTINGS_SUBMITTING: function() {
-      y = Chunk981631.QZA.SUBMITTING, I = {}
+      y = Chunk981631.QZA.SUBMITTING, v = {}
     },
     INTEGRATION_SETTINGS_SAVE_FAILURE: function(e) {
       var t;
-      if (y !== m.QZA.SUBMITTING) returnfalse;
-      y = m.QZA.OPEN, I = null != (t = e.errors) ? t : {}
+      if (y !== g.QZA.SUBMITTING) returnfalse;
+      y = g.QZA.OPEN, v = null != (t = e.errors) ? t : {}
     }
   }),
-  Z = x
+  A = x

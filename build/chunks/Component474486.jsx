@@ -31,10 +31,10 @@ let u = e => {
         className: c.coachtipContent,
         children: [(0, r.jsx)(l.Heading, {
           variant: "heading-sm/bold",
-          children: s.intl.string(s.t.USo4s7)
+          children: o.intl.string(o.t.USo4s7)
         }), (0, r.jsx)(l.Text, {
           variant: "text-xs/normal",
-          children: s.intl.format(s.t.AGKQq6, {
+          children: o.intl.format(o.t.AGKQq6, {
             numReferrals: 3
           })
         })]
@@ -43,7 +43,7 @@ let u = e => {
     return (0, r.jsx)(l.aML, {
       text: n,
       position: "right",
-      "aria-label": s.intl.string(s.t.USo4s7),
+      "aria-label": o.intl.string(o.t.USo4s7),
       tooltipClassName: c.marketingBadgeTooltip,
       allowOverflow: true,
       tooltipContentClassName: c.tooltipContent,
@@ -88,7 +88,7 @@ let u = e => {
     } = e;
     return i.useEffect(() => {
       t && n()
-    }, [t, n]), (0, r.jsx)(o.Z, {
-      copy: s.intl.string(s.t.y2b7CA)
+    }, [t, n]), (0, r.jsx)(s.Z, {
+      copy: o.intl.string(o.t.y2b7CA)
     })
   }

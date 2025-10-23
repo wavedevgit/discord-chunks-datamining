@@ -6,7 +6,7 @@ require.d(exports, {
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk748780 = require("./748780.js"),
   Chunk442837 = require("./442837.js"),
   Chunk215569 = require("./215569.js"),
@@ -46,7 +46,7 @@ function S(e) {
   return e
 }
 
-function N(e, t) {
+function T(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -58,16 +58,16 @@ function N(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let T = (0, Chunk663993.Un)({
+let N = (0, Chunk663993.Un)({
     createPromise: () => require.e("69470").then(require.bind(require, 989804)),
     webpackId: 989804,
     name: "UserSettings"
   }),
-  P = (0, Chunk663993.Un)({
+  j = (0, Chunk663993.Un)({
     createPromise: () => require.e("79835").then(require.bind(require, 72493)),
     webpackId: 72493
   }),
-  j = (0, Chunk663993.Un)({
+  P = (0, Chunk663993.Un)({
     createPromise: () => require.e("80448").then(require.bind(require, 765457)),
     webpackId: 765457,
     name: "CheckpointSlides"
@@ -77,27 +77,27 @@ let T = (0, Chunk663993.Un)({
     webpackId: 869779,
     name: "ChannelSettings"
   }),
-  Z = (0, Chunk663993.Un)({
+  A = (0, Chunk663993.Un)({
     createPromise: () => require.e("45620").then(require.bind(require, 838819)),
     webpackId: 838819,
     name: "CollectiblesShop"
   }),
-  A = (0, Chunk663993.Un)({
+  Z = (0, Chunk663993.Un)({
     createPromise: () => Promise.all([require.e("36599"), require.e("76692"), require.e("8271"), require.e("15851"), require.e("51453"), require.e("7654"), require.e("845"), require.e("86736"), require.e("6850"), require.e("58227"), require.e("44686"), require.e("30378"), require.e("64982"), require.e("95140")]).then(require.bind(require, 994763)),
     webpackId: 994763,
     name: "GuildSettings"
   }),
   w = {
-    [Chunk981631.S9g.USER_SETTINGS]: () => (0, Chunk951288.jsx)(T, {}),
+    [Chunk981631.S9g.USER_SETTINGS]: () => (0, Chunk951288.jsx)(N, {}),
     [Chunk981631.S9g.CHANNEL_SETTINGS]: () => (0, Chunk951288.jsx)(x, {}),
-    [Chunk981631.S9g.GUILD_SETTINGS]: () => (0, Chunk951288.jsx)(A, {}),
-    [Chunk981631.S9g.COLLECTIBLES_SHOP]: () => (0, Chunk951288.jsx)(Z, {}),
-    [Chunk981631.S9g.MANA_PLAYGROUND]: () => (0, Chunk951288.jsx)(P, {}),
-    [Chunk981631.S9g.CHECKPOINT]: () => (0, Chunk951288.jsx)(j, {})
+    [Chunk981631.S9g.GUILD_SETTINGS]: () => (0, Chunk951288.jsx)(Z, {}),
+    [Chunk981631.S9g.COLLECTIBLES_SHOP]: () => (0, Chunk951288.jsx)(A, {}),
+    [Chunk981631.S9g.MANA_PLAYGROUND]: () => (0, Chunk951288.jsx)(j, {}),
+    [Chunk981631.S9g.CHECKPOINT]: () => (0, Chunk951288.jsx)(P, {})
   },
   L = "SHOWN",
-  R = "HIDDEN",
-  D = {
+  D = "HIDDEN",
+  R = {
     friction: 10,
     tension: 100
   };
@@ -119,8 +119,8 @@ class k extends(r = Chunk647438.PureComponent) {
       mode: n
     } = e;
     if (t !== n) {
-      if (t === L && n === R) return this.animateIn();
-      if (t === R && n === L) return this.animateUnder()
+      if (t === L && n === D) return this.animateIn();
+      if (t === D && n === L) return this.animateUnder()
     }
   }
   componentWillEnter(e) {
@@ -143,11 +143,11 @@ class k extends(r = Chunk647438.PureComponent) {
       opacity: t,
       scale: n
     } = this.state;
-    s.Z.parallel([s.Z.spring(t, S({
+    o.Z.parallel([o.Z.spring(t, S({
       toValue: 1
-    }, D)), s.Z.spring(n, S({
+    }, R)), o.Z.spring(n, S({
       toValue: 1
-    }, D))]).start(() => this.animateComplete(e))
+    }, R))]).start(() => this.animateComplete(e))
   }
   animateOut(e) {
     c.ZP.Emitter.pause(500);
@@ -155,11 +155,11 @@ class k extends(r = Chunk647438.PureComponent) {
       opacity: t,
       scale: n
     } = this.state;
-    E.S.dispatch(O.CkL.LAYER_POP_START), s.Z.parallel([s.Z.spring(t, S({
+    E.S.dispatch(O.CkL.LAYER_POP_START), o.Z.parallel([o.Z.spring(t, S({
       toValue: 0
-    }, D)), s.Z.spring(n, S({
+    }, R)), o.Z.spring(n, S({
       toValue: 1.1
-    }, D))]).start(() => {
+    }, R))]).start(() => {
       e(), E.S.dispatch(O.CkL.LAYER_POP_COMPLETE)
     })
   }
@@ -171,9 +171,9 @@ class k extends(r = Chunk647438.PureComponent) {
     } = this.state;
     Chunk748780.Z.parallel([Chunk748780.Z.spring(module, S({
       toValue: 0
-    }, D)), Chunk748780.Z.spring(exports, S({
+    }, R)), Chunk748780.Z.spring(exports, S({
       toValue: .93
-    }, D))]).start(() => this.animateComplete())
+    }, R))]).start(() => this.animateComplete())
   }
   animateComplete(e) {
     this.setState({
@@ -202,7 +202,7 @@ class k extends(r = Chunk647438.PureComponent) {
         for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
-    }(exports, ["name", "mode", "children", "baseLayer"]), u = r === R, p = module || Chunk215569 ? this.getAnimatedStyle() : null, f = !Chunk215569 && !Chunk120356, h = (0, Chunk951288.jsx)(Chunk748780.Z.div, N(S({
+    }(exports, ["name", "mode", "children", "baseLayer"]), u = r === D, p = module || Chunk215569 ? this.getAnimatedStyle() : null, f = !Chunk215569 && !Chunk120356, h = (0, Chunk951288.jsx)(Chunk748780.Z.div, T(S({
       ref: e => this.containerRef.current = null != e ? e.componentRef : true,
       "data-layer": null != require ? require : "base",
       "aria-hidden": Chunk215569,
@@ -210,24 +210,24 @@ class k extends(r = Chunk647438.PureComponent) {
       "aria-label": Chunk134616 ? function(e) {
         switch (e) {
           case O.S9g.USER_SETTINGS:
-            return v.intl.string(v.t.cduTBL);
+            return I.intl.string(I.t.cduTBL);
           case O.S9g.CHANNEL_SETTINGS:
-            return v.intl.string(v.t.XPDhcc);
+            return I.intl.string(I.t.XPDhcc);
           case O.S9g.COLLECTIBLES_SHOP:
-            return v.intl.string(v.t.pWG4ze);
+            return I.intl.string(I.t.pWG4ze);
           case O.S9g.MANA_PLAYGROUND:
             return "Component Playground";
           case O.S9g.CHECKPOINT:
-            return v.intl.string(y.default["CdU/PF"]);
+            return I.intl.string(y.default["CdU/PF"]);
           default:
             return ""
         }
       }(require) : true,
       role: Chunk134616 ? "dialog" : true,
-      className: o()(Chunk256076.layer, {
+      className: s()(Chunk256076.layer, {
         [Chunk256076.baseLayer]: Chunk120356,
         [Chunk256076.animating]: module,
-        "stop-animations": r === R
+        "stop-animations": r === D
       }),
       style: Chunk37234
     }, Chunk442837), {
@@ -260,10 +260,10 @@ class k extends(r = Chunk647438.PureComponent) {
     super(e), C(this, "containerRef", l.createRef());
     let t = 1,
       n = 1;
-    e.mode === R && (t = .93, n = 0), this.state = {
+    e.mode === D && (t = .93, n = 0), this.state = {
       animating: false,
-      scale: new s.Z.Value(t),
-      opacity: new s.Z.Value(n),
+      scale: new o.Z.Value(t),
+      opacity: new o.Z.Value(n),
       mode: e.mode
     }
   }
@@ -287,7 +287,7 @@ class U extends Chunk647438.PureComponent {
       length: r
     } = exports, l = [];
     return Chunk647438.push((0, Chunk951288.jsx)(k, {
-      mode: 0 !== r || require ? R : L,
+      mode: 0 !== r || require ? D : L,
       baseLayer: true,
       children: module
     }, "layer-base")), exports.forEach((e, t) => l.push(this.renderComponent(e, t, r))), Chunk647438
@@ -296,7 +296,7 @@ class U extends Chunk647438.PureComponent {
     let r;
     return r = "string" == typeof e ? w[e]() : (0, i.jsx)(e, {}), (0, i.jsxs)(k, {
       name: "string" == typeof e ? e : true,
-      mode: t === n - 1 ? L : R,
+      mode: t === n - 1 ? L : D,
       children: [(0, i.jsx)(M, {}), r]
     }, "layer-".concat(t))
   }
@@ -304,7 +304,7 @@ class U extends Chunk647438.PureComponent {
     return (0, Chunk951288.jsx)(Chunk481060.f6W, {
       theme: this.props.sidebarTheme,
       children: e => (0, i.jsx)("div", {
-        className: o()(I.bg, e)
+        className: s()(v.bg, e)
       })
     })
   }
@@ -312,7 +312,7 @@ class U extends Chunk647438.PureComponent {
     return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [this.renderArtisanalHack(), (0, Chunk951288.jsx)(Chunk215569.W, {
         component: "div",
-        className: o()(Chunk256076.layers, this.props.className),
+        className: s()(Chunk256076.layers, this.props.className),
         children: this.renderLayers()
       })]
     })
@@ -320,10 +320,10 @@ class U extends Chunk647438.PureComponent {
 }
 
 function G(e) {
-  let t = (0, b.Ll)(),
-    n = (0, c.e7)([_.Z], () => _.Z.getLayers()),
-    r = (0, m.QP)(e => e.fullScreenLayers.length > 0);
-  return (0, i.jsx)(U, N(S({}, e), {
+  let t = (0, _.Ll)(),
+    n = (0, c.e7)([b.Z], () => b.Z.getLayers()),
+    r = (0, g.QP)(e => e.fullScreenLayers.length > 0);
+  return (0, i.jsx)(U, T(S({}, e), {
     sidebarTheme: t,
     layers: n,
     hasFullScreenLayer: r

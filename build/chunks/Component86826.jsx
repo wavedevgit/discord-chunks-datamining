@@ -21,19 +21,19 @@ let p = function(e) {
     color: p,
     animate: f,
     gradientStopColor: h,
-    getHistoricalTotalBytes: g
-  } = e, m = (0, a.Sl)(p).hex, b = null == (t = (0, a.Sl)(h)) ? true : t.hex;
+    getHistoricalTotalBytes: m
+  } = e, g = (0, a.Sl)(p).hex, _ = null == (t = (0, a.Sl)(h)) ? true : t.hex;
   return (0, r.jsx)(c.Z, {
-    getHistoricalTotalBytes: g,
+    getHistoricalTotalBytes: m,
     children: (e, t, a) => {
       var c;
       return (0, r.jsx)("div", {
         className: l()(d.monitor, i),
-        children: (0, r.jsxs)(o.Z, {
-          align: o.Z.Align.CENTER,
-          children: [(0, r.jsxs)(o.Z, {
+        children: (0, r.jsxs)(s.Z, {
+          align: s.Z.Align.CENTER,
+          children: [(0, r.jsxs)(s.Z, {
             className: d.text,
-            direction: o.Z.Direction.VERTICAL,
+            direction: s.Z.Direction.VERTICAL,
             children: [(0, r.jsx)("div", {
               className: d.title,
               children: n
@@ -47,13 +47,13 @@ let p = function(e) {
             })]
           }), (0, r.jsx)("div", {
             className: d.overflowContainer,
-            children: (0, r.jsx)(s.Z, {
+            children: (0, r.jsx)(o.Z, {
               data: e,
               maxValue: Math.max(Math.max.apply(null, e), 1e3),
               className: d.sparkChart,
               updateInterval: t,
-              color: m,
-              gradientStopColor: b,
+              color: g,
+              gradientStopColor: _,
               numUpdatesToShow: a,
               animate: f,
               pixelWidth: 600,

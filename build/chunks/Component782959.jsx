@@ -37,11 +37,11 @@ function h(e) {
   let {
     guildId: t,
     markAsDismissed: h,
-    renderTargetElement: g
-  } = e, m = {
+    renderTargetElement: m
+  } = e, g = {
     text: p.intl.string(p.t.JzJpg4),
     onClick: () => {
-      s.default.track(u.rMx.MEDIA_CHANNEL_UPSELL_CLICKED, f({}, (0, o.hH)(t))), h(d.L.PRIMARY), (0, a.ZDy)(async () => {
+      o.default.track(u.rMx.MEDIA_CHANNEL_UPSELL_CLICKED, f({}, (0, s.hH)(t))), h(d.L.PRIMARY), (0, a.ZDy)(async () => {
         let {
           default: e
         } = await Promise.all([n.e("29497"), n.e("53781")]).then(n.bind(n, 241865));
@@ -64,11 +64,11 @@ function h(e) {
       })
     },
     variant: "primary"
-  }, b = i.useRef(null);
+  }, _ = i.useRef(null);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
-      ref: b,
-      children: g()
+      ref: _,
+      children: m()
     }), (0, r.jsx)(l.Mb, {
       title: p.intl.string(p.t.fW7UqM),
       body: p.intl.string(p.t["yQ0X+T"]),
@@ -77,12 +77,12 @@ function h(e) {
         align: "center"
       },
       assetUrl: "https://cdn.discordapp.com/assets/media_channel/media_channel_upsell_demo.mp4",
-      action: m,
+      action: g,
       textLink: {
         link: c.Z.getCreatorSupportArticleURL(u.BhN.MEDIA_CHANNEL),
         text: p.intl.string(p.t.w4DutA)
       },
-      targetElementRef: b,
+      targetElementRef: _,
       onRequestClose: () => h(d.L.DISMISS)
     })]
   })

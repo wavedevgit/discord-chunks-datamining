@@ -70,7 +70,7 @@ let b = function() {
         page: f.ZY5.GUILD_BOOSTING_USER_SETTINGS,
         section: f.jXE.GUILD_BOOSTING_BOOST_ANY_GUILD_CTA,
         object: f.qAy.BUTTON_CTA,
-        objectType: f.Qqv.BUY
+        objectType: f.AnalyticsObjectTypes.BUY
       },
       analyticsLocations: t,
       guild: n

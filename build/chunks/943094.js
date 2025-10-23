@@ -1,14 +1,14 @@
 /** Chunk was on 1272 **/
 /** chunk id: 943094, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  W: () => o
+  W: () => s
 });
 var Chunk481060 = require("./481060.js"),
   Chunk812206 = require("./812206.js"),
   Chunk710845 = require("./710845.js"),
   Chunk51025 = require("./51025.js");
 
-function o(e, t, o) {
+function s(e, t, s) {
   ! function(e, t) {
     let a = i.Z.getApplication(e);
     if (null == a) return new l.Z("DispatchUninstallActionCreators").log("Application not found for game ".concat(e));
@@ -38,5 +38,5 @@ function o(e, t, o) {
         onConfirmUninstall: t
       }, n))
     })
-  }(e, () => (0, a.pC)(e, t, o))
+  }(e, () => (0, a.pC)(e, t, s))
 }

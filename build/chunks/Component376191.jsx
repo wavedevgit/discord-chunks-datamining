@@ -26,21 +26,21 @@ var Chunk442837 = require("./442837.js"),
 let y = e => {
     let {
       userId: t
-    } = e, n = (0, _.O)(t);
+    } = e, n = (0, b.O)(t);
     return null == n || 0 === n.length ? (0, r.jsx)(a.Text, {
-      className: v.mutualGuilds,
+      className: I.mutualGuilds,
       variant: "text-sm/normal",
       color: "text-muted",
       children: O.intl.string(O.t.jpY0X5)
     }) : (0, r.jsxs)("div", {
-      className: v.mutualGuildsContainer,
+      className: I.mutualGuildsContainer,
       children: [(0, r.jsx)(l.Z, {
         guilds: n,
         maxGuilds: 3,
         size: u.Vj.Sizes.SMOL,
         hideOverflowCount: true
       }), (0, r.jsx)(a.Text, {
-        className: v.mutualGuilds,
+        className: I.mutualGuilds,
         variant: "text-sm/normal",
         color: "text-muted",
         children: O.intl.format(O.t.eE3oep, {
@@ -49,7 +49,7 @@ let y = e => {
       })]
     })
   },
-  I = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk481060.qEK;
+  v = Chunk998502.ZP.getEnableHardwareAcceleration() ? Chunk481060.Xo$ : Chunk481060.qEK;
 
 function C(e) {
   var t;
@@ -57,33 +57,33 @@ function C(e) {
     channel: n,
     otherUser: l,
     active: u
-  } = e, m = (0, i.e7)([s.Z], () => s.Z.useReducedMotion), _ = (0, i.e7)([h.Z], () => null == l ? null : h.Z.getNickname(l.id)), C = !m && u, S = (0, b.c)(n), {
-    avatarDecorationSrc: N
+  } = e, g = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), b = (0, i.e7)([h.Z], () => null == l ? null : h.Z.getNickname(l.id)), C = !g && u, S = (0, _.c)(n), {
+    avatarDecorationSrc: T
   } = (0, p.Z)({
     user: l,
     size: (0, d.y9)(a.EFr.SIZE_40),
     onlyAnimateOnHoverOrFocus: true
   });
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(I, {
-      className: v.avatar,
+    children: [(0, r.jsx)(v, {
+      className: I.avatar,
       src: (0, f.x)(n, 40, C),
-      avatarDecoration: N,
+      avatarDecoration: T,
       size: a.EFr.SIZE_40,
       "aria-label": null != (t = null == l ? true : l.username) ? t : O.intl.string(O.t["30mdIx"])
     }), (0, r.jsxs)("div", {
-      className: v.userPreview,
+      className: I.userPreview,
       children: [(0, r.jsxs)("div", {
-        className: v.userContainerWithPreview,
-        children: [(0, r.jsx)(o.Z, {
-          nick: _,
+        className: I.userContainerWithPreview,
+        children: [(0, r.jsx)(s.Z, {
+          nick: b,
           user: l,
           showAccountIdentifier: true,
-          className: v.tagContainer,
-          usernameClass: v.username,
-          discriminatorClass: null != g.ZP.getGlobalName(l) ? v.globalName : v.discriminator
+          className: I.tagContainer,
+          usernameClass: I.username,
+          discriminatorClass: null != m.ZP.getGlobalName(l) ? I.globalName : I.discriminator
         }), (0, r.jsx)(a.Text, {
-          className: v.timestampWithPreview,
+          className: I.timestampWithPreview,
           color: "text-muted",
           variant: "text-xs/normal",
           children: S

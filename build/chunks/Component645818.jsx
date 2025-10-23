@@ -15,9 +15,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 let h = (0, Chunk481060.GSL)(Chunk863969.Z),
-  g = (0, Chunk481060.GSL)(Chunk563593.Z),
-  m = new Set([Chunk981631.TzF.PUSHING, Chunk981631.TzF.PULLING]),
-  b = Object.freeze({
+  m = (0, Chunk481060.GSL)(Chunk563593.Z),
+  g = new Set([Chunk981631.TzF.PUSHING, Chunk981631.TzF.PULLING]),
+  _ = Object.freeze({
     [Chunk981631.TzF.DONE]: h,
     [Chunk981631.TzF.PLANNING]: h,
     [Chunk981631.TzF.PREPARING]: h,
@@ -26,7 +26,7 @@ let h = (0, Chunk481060.GSL)(Chunk863969.Z),
     [Chunk981631.TzF.CONFLICT]: h,
     [Chunk981631.TzF.ERROR]: h
   });
-class _ extends Chunk647438.PureComponent {
+class b extends Chunk647438.PureComponent {
   componentDidMount() {
     this.getIsRecentlySynced() && this.setRecentlySyncedTimeout()
   }
@@ -88,8 +88,8 @@ class _ extends Chunk647438.PureComponent {
     } = this.props, i = null == module ? {
       type: Chunk981631.TzF.DONE
     } : module, l = this.getIsRecentlySynced();
-    (m.has(Chunk647438.type) || Chunk442837) && (exports.id, this.getStop(Chunk647438, Chunk442837));
-    let a = Chunk442837 ? g : b[Chunk647438.type];
+    (g.has(Chunk647438.type) || Chunk442837) && (exports.id, this.getStop(Chunk647438, Chunk442837));
+    let a = Chunk442837 ? m : _[Chunk647438.type];
     return (0, Chunk951288.jsx)(Chunk28664.u, {
       text: this.getTooltip(Chunk647438, Chunk442837),
       children: (0, Chunk951288.jsx)(Chunk846519, {
@@ -116,4 +116,4 @@ let E = Chunk442837.ZP.connectStores([Chunk293245.Z], e => {
   return {
     cloudSyncState: c.Z.getState(t.id, t.branchId)
   }
-})(_)
+})(b)

@@ -13,8 +13,8 @@ function a(e) {
   let {
     applicationId: t,
     channel: a,
-    command: o,
-    previewMessage: s,
+    command: s,
+    previewMessage: o,
     requireLaunchChannel: c,
     contextKey: u,
     onShareResult: d
@@ -43,8 +43,8 @@ function a(e) {
     }({
       applicationId: t,
       channel: a,
-      command: o,
-      previewMessage: s,
+      command: s,
+      previewMessage: o,
       onShareResult: d,
       requireLaunchChannel: c
     }, n))

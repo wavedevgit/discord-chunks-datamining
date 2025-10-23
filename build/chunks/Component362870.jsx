@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 362870, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => T
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -26,33 +26,33 @@ var Chunk951288 = require("./951288.js"),
   Chunk228624 = require("./228624.js");
 let C = Math.ceil(Math.sqrt(115200)),
   S = (C - 240) / 2,
-  N = function(e) {
+  T = function(e) {
     var t, n;
     let {
       selected: l
-    } = e, N = (0, s.JA)("quests"), T = i.useRef(null), {
-      shouldShowPopover: P,
-      shouldShowGradientAndBadge: j,
+    } = e, T = (0, o.JA)("quests"), N = i.useRef(null), {
+      shouldShowPopover: j,
+      shouldShowGradientAndBadge: P,
       dismissContent: x
     } = function() {
       let {
         enabled: e
-      } = m.GE.useConfig({
+      } = g.GE.useConfig({
         location: E.dr.PRIVATE_CHANNELS_LIST
-      }), [t, n] = (0, h.US)(e ? [c.z.QUEST_HOME_ENTRYPOINT_ONBOARDING] : [], v.R.PRIVATE_CHANNELS_LIST, true), r = i.useCallback(() => {
-        e && n(v.L.TAKE_ACTION)
+      }), [t, n] = (0, h.US)(e ? [c.z.QUEST_HOME_ENTRYPOINT_ONBOARDING] : [], I.R.PRIVATE_CHANNELS_LIST, true), r = i.useCallback(() => {
+        e && n(I.L.TAKE_ACTION)
       }, [n, e]);
       return {
         shouldShowPopover: t === c.z.QUEST_HOME_ENTRYPOINT_ONBOARDING,
         shouldShowGradientAndBadge: !(0, f.Nj)(c.z.QUEST_HOME_ENTRYPOINT_ONBOARDING) && e,
         dismissContent: r
       }
-    }(), Z = i.useCallback(() => {
-      b.Z.getState().setUtmCurrentContext({
+    }(), A = i.useCallback(() => {
+      _.Z.getState().setUtmCurrentContext({
         utmContentCurrent: "PRIMARY_QUEST_HOME"
       })
     }, []), [{
-      glowSpring: A
+      glowSpring: Z
     }, w] = (0, u.q_F)(() => ({
       from: {
         glowSpring: 0
@@ -65,7 +65,7 @@ let C = Math.ceil(Math.sqrt(115200)),
       }
     })), [{
       shineSpring: L
-    }, R] = (0, u.q_F)(() => ({
+    }, D] = (0, u.q_F)(() => ({
       from: {
         shineSpring: 0
       },
@@ -75,42 +75,42 @@ let C = Math.ceil(Math.sqrt(115200)),
         tension: 170,
         friction: 38
       }
-    })), D = i.useCallback(() => {
-      R({
+    })), R = i.useCallback(() => {
+      D({
         shineSpring: 1
       }), w({
         glowSpring: 1,
         delay: 200
       })
-    }, [R, w]), M = i.useCallback(() => {
-      R({
+    }, [D, w]), M = i.useCallback(() => {
+      D({
         shineSpring: 0,
         immediate: true
       }), w({
         glowSpring: 0,
         delay: 0
       })
-    }, [R, w]), k = i.useCallback(() => {
-      R({
+    }, [D, w]), k = i.useCallback(() => {
+      D({
         shineSpring: 1,
         delay: 500
       }), w({
         glowSpring: 1,
         delay: 700
-      }), g.default.track(O.rMx.QUEST_HOME_ONBOARDING_POPOVER_RENDERED)
-    }, [R, w]), [U, G] = i.useState(false), B = i.useCallback(e => {
+      }), m.default.track(O.rMx.QUEST_HOME_ONBOARDING_POPOVER_RENDERED)
+    }, [D, w]), [U, G] = i.useState(false), H = i.useCallback(e => {
       G(e.contentRect.width)
-    }, []), H = (0, p.y)(B, [], {
+    }, []), B = (0, p.y)(H, [], {
       fireOnMount: true
     });
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
-        className: I.wrapper,
-        onMouseEnter: D,
+        className: v.wrapper,
+        onMouseEnter: R,
         onMouseLeave: M,
-        onFocus: D,
+        onFocus: R,
         onBlur: M,
-        ref: H,
+        ref: B,
         style: {
           "--custom-shine-dimensions": "".concat(240, "px"),
           "--custom-shine-rotated-dimensions-delta": "".concat(S, "px")
@@ -134,31 +134,31 @@ let C = Math.ceil(Math.sqrt(115200)),
           return e
         }({
           className: a()({
-            [I.withGradientAndBadge]: j
+            [v.withGradientAndBadge]: P
           }),
           icon: u.qDn,
-          listItemRef: T,
-          onClick: Z,
+          listItemRef: N,
+          onClick: A,
           route: O.Z5c.QUEST_HOME_V2,
           selected: l,
           text: y.intl.string(y.t.JALI2K)
-        }, N), n = n = {
-          children: j && (0, r.jsxs)(r.Fragment, {
-            children: [(0, r.jsx)(o.animated.div, {
-              className: I.shine,
+        }, T), n = n = {
+          children: P && (0, r.jsxs)(r.Fragment, {
+            children: [(0, r.jsx)(s.animated.div, {
+              className: v.shine,
               style: {
                 transform: L.to(e => "translateX(calc(".concat(e * U, "px + ").concat(e * C, "px)) translateY(-50%) rotate(45deg)"))
               }
-            }), (0, r.jsx)(o.animated.div, {
-              className: I.glow,
+            }), (0, r.jsx)(s.animated.div, {
+              className: v.glow,
               style: {
-                opacity: A.to({
+                opacity: Z.to({
                   range: [0, 1],
                   output: [0, .5]
                 })
               }
             }), (0, r.jsx)(u.IGR, {
-              className: I.badge,
+              className: v.badge,
               text: y.intl.string(y.t.y2b7CA),
               color: u.TVs.colors.BG_BRAND.css
             })]
@@ -173,9 +173,9 @@ let C = Math.ceil(Math.sqrt(115200)),
         })(Object(n)).forEach(function(e) {
           Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
         }), t))
-      }), P && (0, r.jsx)(_.Z, {
-        targetElementRef: T,
-        onNavigateToQuestHome: Z,
+      }), j && (0, r.jsx)(b.Z, {
+        targetElementRef: N,
+        onNavigateToQuestHome: A,
         onRender: k,
         onRequestClose: x
       })]

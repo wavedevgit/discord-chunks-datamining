@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 617899, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => g
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -23,7 +23,7 @@ function h(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class g extends Chunk647438.PureComponent {
+class m extends Chunk647438.PureComponent {
   getInviteText() {
     return (0, Chunk340541.LK)({
       location: "invite_notice"
@@ -81,7 +81,7 @@ class g extends Chunk647438.PureComponent {
         }))
       })
     }), h(this, "handleClose", () => {
-      let e = s.Z.getChannelId(),
+      let e = o.Z.getChannelId(),
         t = p.intl.formatToPlainString(p.t.DEn7nu, {
           invitePeople: this.getInviteText()
         });
@@ -89,4 +89,4 @@ class g extends Chunk647438.PureComponent {
     })
   }
 }
-let m = g
+let g = m

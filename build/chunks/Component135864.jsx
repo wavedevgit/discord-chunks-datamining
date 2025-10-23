@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 135864, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => N
+  Z: () => T
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -35,35 +35,35 @@ function S(e) {
     location: "GlobalDiscoverySidebar"
   }, {
     autoTrackExposure: true
-  }), l = b.Z.useField("selectedTab"), I = i.useMemo(() => (function(e, t) {
+  }), l = _.Z.useField("selectedTab"), v = i.useMemo(() => (function(e, t) {
     switch (e) {
       case O.GlobalDiscoveryTab.SERVERS:
-        return (0, r.jsx)(s.QTo, {
+        return (0, r.jsx)(o.QTo, {
           color: "currentColor"
         });
       case O.GlobalDiscoveryTab.APPS:
-        return t ? (0, r.jsx)(s.iWm, {
+        return t ? (0, r.jsx)(o.iWm, {
           color: "currentColor"
-        }) : (0, r.jsx)(s.jje, {
+        }) : (0, r.jsx)(o.jje, {
           color: "currentColor"
         });
       case O.GlobalDiscoveryTab.QUESTS:
-        return (0, r.jsx)(s.qDn, {
+        return (0, r.jsx)(o.qDn, {
           color: "currentColor"
         })
     }
-  })(t, n), [t, n]), S = i.useMemo(() => (0, _.s)(t), [t]), N = l === t, T = i.useCallback(() => {
+  })(t, n), [t, n]), S = i.useMemo(() => (0, b.s)(t), [t]), T = l === t, N = i.useCallback(() => {
     switch (t) {
       case O.GlobalDiscoveryTab.QUESTS:
-        return N && g.Z.resetState(), m.default.track(v.rMx.DISCOVERY_QUEST_TAB_CLICKED, {
+        return T && m.Z.resetState(), g.default.track(I.rMx.DISCOVERY_QUEST_TAB_CLICKED, {
           client_ad_session_id: (0, u.Gy)().uuid
         }), (0, E.transitionToGlobalDiscovery)({
           tab: O.GlobalDiscoveryTab.QUESTS,
           location: y.dr.DISCOVERY_SIDEBAR,
-          questContent: o.j.DISCOVERY_SIDEBAR
+          questContent: s.j.DISCOVERY_SIDEBAR
         });
       case O.GlobalDiscoveryTab.APPS:
-        if (!N) return (0, E.transitionToGlobalDiscovery)({
+        if (!T) return (0, E.transitionToGlobalDiscovery)({
           tab: t,
           newSessionState: {
             entrypoint: {
@@ -77,7 +77,7 @@ function S(e) {
         });
         return;
       case O.GlobalDiscoveryTab.SERVERS:
-        if (!N) return (0, E.transitionToGlobalDiscovery)({
+        if (!T) return (0, E.transitionToGlobalDiscovery)({
           tab: t
         });
         f.Z.resetState(), h.Z.resetState();
@@ -87,23 +87,23 @@ function S(e) {
           tab: t
         })
     }
-  }, [t, N]);
-  return (0, r.jsxs)(s.P3F, {
-    onClick: T,
+  }, [t, T]);
+  return (0, r.jsxs)(o.P3F, {
+    onClick: N,
     className: a()(C.navItem, {
-      [C.selected]: N
+      [C.selected]: T
     }),
     children: [(0, r.jsx)("div", {
       className: C.navItemIcon,
-      children: I
-    }), (0, r.jsx)(s.Text, {
+      children: v
+    }), (0, r.jsx)(o.Text, {
       variant: "text-md/medium",
       color: "none",
       children: S
     })]
   })
 }
-let N = function() {
+let T = function() {
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk933767.container,
     children: [(0, Chunk951288.jsx)("div", {

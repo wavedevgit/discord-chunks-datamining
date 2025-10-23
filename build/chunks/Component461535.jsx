@@ -50,7 +50,7 @@ function O(n) {
       (0, c.U6)(n, {
         section: b.jXE.CHANNEL_CONTEXT_MENU,
         object: b.qAy.MARK_CHANNEL_AS_READ_BUTTON,
-        objectType: b.Qqv.ACK_MANUAL
+        objectType: b.AnalyticsObjectTypes.ACK_MANUAL
       })
     },
     disabled: !e

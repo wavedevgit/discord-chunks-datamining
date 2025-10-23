@@ -22,12 +22,12 @@ let d = function(e) {
     status: p,
     isMobile: f,
     className: h
-  } = e, g = (0, a.e7)([c.Z], () => c.Z.getNickname(t.id));
+  } = e, m = (0, a.e7)([c.Z], () => c.Z.getNickname(t.id));
   return (0, r.jsxs)("div", {
     className: l()(u.userInfo, h, {
       [u.hovered]: n
     }),
-    children: [(0, r.jsx)(s.Z, {
+    children: [(0, r.jsx)(o.Z, {
       user: t,
       className: u.avatar,
       animate: n,
@@ -35,9 +35,9 @@ let d = function(e) {
       isMobile: f
     }), (0, r.jsxs)("div", {
       className: u.text,
-      children: [(0, r.jsx)(o.Z, {
+      children: [(0, r.jsx)(s.Z, {
         user: t,
-        nick: g,
+        nick: m,
         botClass: u.botTag,
         className: l()(u.discordTag, {
           [u.alignPomelo]: t.hasUniqueUsername()

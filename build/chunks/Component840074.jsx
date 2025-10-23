@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 840074, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  _: () => o
+  _: () => s
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -9,11 +9,11 @@ var Chunk481060 = require("./481060.js"),
   Chunk812206 = require("./812206.js"),
   Chunk531826 = require("./531826.js");
 
-function o(e) {
+function s(e) {
   let {
     applicationId: t,
-    customId: o,
-    linkId: s,
+    customId: s,
+    linkId: o,
     message: c,
     onShare: u
   } = e, d = l.Z.getApplication(t);
@@ -27,7 +27,7 @@ function o(e) {
     u(e, f)
   }
 
-  function g() {
+  function m() {
     f = true
   }(0, i.ZDy)(async () => {
     let {
@@ -52,10 +52,10 @@ function o(e) {
       return e
     }({
       applicationId: t,
-      customId: o,
-      linkId: s,
+      customId: s,
+      linkId: o,
       message: c,
-      onCopyLink: g,
+      onCopyLink: m,
       onShare: h
     }, n))
   }, {

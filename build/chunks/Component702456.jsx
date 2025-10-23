@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk944658 = require("./944658.js");
 
-function T(e) {
+function N(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -47,7 +47,7 @@ function T(e) {
   return e
 }
 
-function P(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -60,7 +60,7 @@ function P(e, t) {
   }), e
 }
 
-function j(e) {
+function P(e) {
   var t, n;
   let {
     user: i,
@@ -69,47 +69,47 @@ function j(e) {
   } = e, {
     status: u,
     isMobile: d
-  } = (0, o.cj)([_.Z], () => ({
-    status: _.Z.getStatus(i.id),
-    isMobile: _.Z.isMobileOnline(i.id)
-  })), h = (0, o.e7)([O.Z, m.Z], () => {
-    let e = m.Z.getDMFromUserId(i.id);
+  } = (0, s.cj)([b.Z], () => ({
+    status: b.Z.getStatus(i.id),
+    isMobile: b.Z.isMobileOnline(i.id)
+  })), h = (0, s.e7)([O.Z, g.Z], () => {
+    let e = g.Z.getDMFromUserId(i.id);
     return null != e && O.Z.isTyping(e, i.id)
   }, [i]), {
-    avatarSrc: b,
+    avatarSrc: _,
     eventHandlers: E
-  } = (0, g.Z)({
+  } = (0, m.Z)({
     userId: i.id,
-    size: s.EFr.SIZE_32,
+    size: o.EFr.SIZE_32,
     animateOnHover: true
-  }), v = async () => {
+  }), I = async () => {
     await c.Z.openPrivateChannel({
       recipientIds: [i.id],
       location: p.Z.FREQUENT_FRIENDS_ROW
     });
-    let e = m.Z.getDMFromUserId(i.id);
-    null != e && (0, f.yw)(C.rMx.CHANNEL_OPENED, P(T({}, (0, f.$H)(e)), {
+    let e = g.Z.getDMFromUserId(i.id);
+    null != e && (0, f.yw)(C.rMx.CHANNEL_OPENED, j(N({}, (0, f.$H)(e)), {
       location: "".concat(p.Z.FREQUENT_FRIENDS_ROW, " ").concat(l + 1)
     }))
-  }, y = 0 === l, I = y ? s.YqE : a ? s.XcD : true, j = y ? S.intl.string(S.t.aI4VOL) : a ? S.intl.string(S.t.kABl2x) : true;
-  return (0, r.jsx)(s.P3F, {
-    className: N.frequentFriendAvatarButton,
-    onClick: v,
+  }, y = 0 === l, v = y ? o.YqE : a ? o.XcD : true, P = y ? S.intl.string(S.t.aI4VOL) : a ? S.intl.string(S.t.kABl2x) : true;
+  return (0, r.jsx)(o.P3F, {
+    className: T.frequentFriendAvatarButton,
+    onClick: I,
     onMouseEnter: E.onMouseEnter,
     onMouseLeave: E.onMouseLeave,
     "aria-label": S.intl.formatToPlainString(S.t.M5FjCr, {
       username: i.username
     }),
-    children: (0, r.jsx)(s.qEK, {
-      src: b,
+    children: (0, r.jsx)(o.qEK, {
+      src: _,
       "aria-label": null != (t = i.globalName) ? t : i.username,
       status: u,
       isTyping: h,
       isMobile: d && !h,
-      size: s.EFr.SIZE_32,
-      CutoutIcon: I,
+      size: o.EFr.SIZE_32,
+      CutoutIcon: v,
       avatarTooltipAsset: y ? "\uD83D\uDD25" : a ? "❄️" : true,
-      avatarTooltipText: j,
+      avatarTooltipText: P,
       statusTooltip: true,
       statusTooltipDelay: 50,
       avatarTooltipTitle: null != (n = i.globalName) ? n : i.username
@@ -158,8 +158,8 @@ function x() {
   Chunk647438.useEffect(() => {
     (null == exports ? true : exports.frequentFriends.length) != null && Chunk367907()
   }, [null == exports ? true : exports.frequentFriends.length, null == exports ? true : exports.showCompetitiveSpot, Chunk367907]);
-  let g = (0, Chunk393903.y)(Chunk367907, []),
-    m = Chunk647438.useCallback(e => {
+  let m = (0, Chunk393903.y)(Chunk367907, []),
+    g = Chunk647438.useCallback(e => {
       let t = e.currentTarget;
       c({
         scrollLeft: t.scrollLeft,
@@ -169,9 +169,9 @@ function x() {
     }, [Chunk493683]);
   if (!module || null == exports || !require) return null;
   let {
-    frequentFriends: _,
+    frequentFriends: b,
     showCompetitiveSpot: O
-  } = exports, x = Chunk120356.scrollWidth > Chunk120356.clientWidth, Z = Chunk120356.scrollLeft > 0, A = Chunk120356.scrollLeft < Chunk120356.scrollWidth - Chunk120356.clientWidth - 2;
+  } = exports, x = Chunk120356.scrollWidth > Chunk120356.clientWidth, A = Chunk120356.scrollLeft > 0, Z = Chunk120356.scrollLeft < Chunk120356.scrollWidth - Chunk120356.clientWidth - 2;
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsxs)("div", {
       className: Chunk944658.frequentFriendsRow,
@@ -184,24 +184,24 @@ function x() {
         }), (0, Chunk951288.jsx)(Chunk481060.aML, {
           "data-migration-pending": true,
           text: Chunk388032.intl.string(Chunk388032.t.tqCMcU),
-          children: e => (0, r.jsx)(s.d3s, P(T({}, e), {
-            className: N.frequentFriendsInfoIcon
+          children: e => (0, r.jsx)(o.d3s, j(N({}, e), {
+            className: T.frequentFriendsInfoIcon
           }))
         })]
       }), (0, Chunk951288.jsx)(Chunk481060.xVE, {
         ref: e => {
-          p.current = e, g.current = (null == e ? true : e.getScrollerNode()) != null ? e.getScrollerNode() : null
+          p.current = e, m.current = (null == e ? true : e.getScrollerNode()) != null ? e.getScrollerNode() : null
         },
         className: a()(Chunk944658.frequentFriendsAvatars, {
-          [Chunk944658.scrollMaskLeft]: x && Z,
-          [Chunk944658.scrollMaskRight]: x && A
+          [Chunk944658.scrollMaskLeft]: x && A,
+          [Chunk944658.scrollMaskRight]: x && Z
         }),
         orientation: "horizontal",
         onScroll: Chunk592125,
-        children: Chunk158776.map((e, t) => (0, r.jsx)(j, {
+        children: Chunk158776.map((e, t) => (0, r.jsx)(P, {
           user: e,
           index: t,
-          isCompetitive: t === _.length - 1 && O
+          isCompetitive: t === b.length - 1 && O
         }, e.id))
       })]
     }), (0, Chunk951288.jsx)(Chunk663701.d, {})]

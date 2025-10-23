@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 594117, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -20,7 +20,7 @@ function h(e) {
   var t, n;
   let {
     tooltipText: l,
-    onClick: s
+    onClick: o
   } = e, {
     parentAnalyticsLocation: c
   } = (0, a.ZP)(), {
@@ -47,7 +47,7 @@ function h(e) {
   }({
     tooltipText: l,
     onClick: () => {
-      (0, o.v)(c, o.d.DISCONNECT), s()
+      (0, s.v)(c, s.d.DISCONNECT), o()
     }
   }, u), n = n = {
     icon: (0, r.jsx)(d, {
@@ -65,7 +65,7 @@ function h(e) {
   }), t))
 }
 
-function g(e) {
+function m(e) {
   let {
     channel: t
   } = e;
@@ -78,26 +78,26 @@ function g(e) {
   })
 }
 
-function m(e) {
+function g(e) {
   let {
     channel: t
   } = e;
   return (0, r.jsx)(h, {
     tooltipText: f.intl.string(f.t["6vrfgt"]),
     onClick: () => {
-      if ((0, c.Z)(t)) return void(0, s.lC)(t);
+      if ((0, c.Z)(t)) return void(0, o.lC)(t);
       l.default.disconnect()
     }
   })
 }
 
-function b(e) {
+function _(e) {
   let {
     channel: t
   } = e;
-  return t.isGuildStageVoice() ? (0, r.jsx)(g, {
+  return t.isGuildStageVoice() ? (0, r.jsx)(m, {
     channel: t
-  }) : (0, r.jsx)(m, {
+  }) : (0, r.jsx)(g, {
     channel: t
   })
 }

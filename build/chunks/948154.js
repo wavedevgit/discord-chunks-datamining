@@ -161,10 +161,10 @@ let A = {
       interactionType: f.s_.CLICK,
       message: t,
       viewId: l
-    }), r && s.In(t.channel_id, {
+    }), r && s.ack(t.channel_id, {
       section: h.jXE.INBOX,
       object: h.qAy.ACK_MESSAGE_VIEWED,
-      objectType: h.Qqv.ACK_SEMI_AUTOMATIC
+      objectType: h.AnalyticsObjectTypes.ACK_SEMI_AUTOMATIC
     }, true, true, t.id), o.Z.trackJump(n.id, t.id, p.JP);
     let d = a ? h.STv : n.guild_id;
     (0, c.uL)(h.Z5c.CHANNEL(d, n.id, t.id))

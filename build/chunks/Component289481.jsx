@@ -94,10 +94,10 @@ let S = Chunk647438.memo(function(e) {
     } = e, a = (0, c.e7)([m.Z], () => m.Z.getChannel(t.channelId));
     if (i.useEffect(() => {
         null == a || !t.isFullyLoaded || t.hasError || t.collapsed || "messages" !== t.type || 0 !== t.messages.length || p.Z.wait(() => {
-          (0, h.In)(t.channelId, {
+          (0, h.ack)(t.channelId, {
             section: v.jXE.INBOX,
             object: v.qAy.ACK_INBOX_CHANNEL_NO_MESSAGES,
-            objectType: v.Qqv.ACK_AUTOMATIC
+            objectType: v.AnalyticsObjectTypes.ACK_AUTOMATIC
           }, true), l(t.channelId)
         })
       }), null == a || !t.hasLoadedAnything) return null;

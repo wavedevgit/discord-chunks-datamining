@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 417183, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => _
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -36,7 +36,7 @@ function h(e) {
   return e
 }
 
-function g(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -48,21 +48,21 @@ function g(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-class m extends Chunk647438.PureComponent {
+class g extends Chunk647438.PureComponent {
   componentWillLeave(e) {
-    o.Z.parallel([o.Z.timing(this.state.opacity, {
+    s.Z.parallel([s.Z.timing(this.state.opacity, {
       toValue: 0,
       duration: 200
-    }), o.Z.timing(this.state.height, {
+    }), s.Z.timing(this.state.height, {
       toValue: 0,
       duration: 200
     })]).start(e)
   }
   componentWillEnter(e) {
-    this.state.opacity.setValue(0), this.state.height.setValue(0), o.Z.parallel([o.Z.timing(this.state.opacity, {
+    this.state.opacity.setValue(0), this.state.height.setValue(0), s.Z.parallel([s.Z.timing(this.state.opacity, {
       toValue: 1,
       duration: 200
-    }), o.Z.timing(this.state.height, {
+    }), s.Z.timing(this.state.height, {
       toValue: d.NV,
       duration: 200
     })]).start(e)
@@ -78,19 +78,19 @@ class m extends Chunk647438.PureComponent {
       user: u,
       onClick: d,
       isActive: f,
-      className: m,
-      activeClassName: b
+      className: g,
+      activeClassName: _
     } = this.props;
     return (0, Chunk951288.jsx)(Chunk91192.mh, {
       id: Chunk239091.id,
-      children: s => (0, r.jsx)(c.tEY, {
+      children: o => (0, r.jsx)(c.tEY, {
         offset: {
           left: false,
           right: false
         },
-        children: (0, r.jsx)(o.Z.div, g(h({
-          className: a()(m, p.peopleListItem, null != b ? {
-            [b]: f || i
+        children: (0, r.jsx)(s.Z.div, m(h({
+          className: a()(g, p.peopleListItem, null != _ ? {
+            [_]: f || i
           } : null, {
             [p.active]: f || i
           }),
@@ -102,7 +102,7 @@ class m extends Chunk647438.PureComponent {
             height: e,
             opacity: t
           }
-        }, s), {
+        }, o), {
           children: l(n || f || i)
         }))
       })
@@ -110,8 +110,8 @@ class m extends Chunk647438.PureComponent {
   }
   constructor(...e) {
     super(...e), f(this, "state", {
-      height: new o.Z.Value(d.NV),
-      opacity: new o.Z.Value(1),
+      height: new s.Z.Value(d.NV),
+      opacity: new s.Z.Value(1),
       hovered: false,
       isContextMenuActive: false
     }), f(this, "handleMouseEnter", () => {
@@ -136,7 +136,7 @@ class m extends Chunk647438.PureComponent {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("69220")]).then(n.bind(n, 881351));
-        return n => (0, r.jsx)(e, g(h({}, n), {
+        return n => (0, r.jsx)(e, m(h({}, n), {
           user: t
         }))
       }, {
@@ -149,4 +149,4 @@ class m extends Chunk647438.PureComponent {
     })
   }
 }
-let b = m
+let _ = g

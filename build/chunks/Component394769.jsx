@@ -49,7 +49,7 @@ let d = function(e) {
           page: c.ZY5.PREMIUM_GUILD_USER_MODAL,
           section: c.jXE.PREMIUM_GUILD_USER_MODAL_FLOATING_CTA_BAR,
           object: c.qAy.BUTTON_CTA,
-          objectType: c.Qqv.BUY
+          objectType: c.AnalyticsObjectTypes.BUY
         },
         closeLayer: t,
         pauseAnimation: !d,

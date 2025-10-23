@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 340137, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => P
+  Z: () => j
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -34,36 +34,36 @@ let C = {
     default: 24,
     compact: 14
   },
-  N = {
+  T = {
     cozy: 95,
     default: 84,
     compact: 72
   };
 
-function T(e) {
+function N(e) {
   var t, n;
   let {
     onClick: l,
-    selectedOverride: o = false,
-    popoutProps: s,
-    ref: g,
-    focusSectionProps: b
-  } = e, [O, v] = i.useState(false), T = (0, _.D)(), P = o || T, j = o || P, {
+    selectedOverride: s = false,
+    popoutProps: o,
+    ref: m,
+    focusSectionProps: _
+  } = e, [O, I] = i.useState(false), N = (0, b.D)(), j = s || N, P = s || j, {
     backForwardButtons: x,
-    titlebarIconSize: Z,
-    titlebarHoverHighlight: A
+    titlebarIconSize: A,
+    titlebarHoverHighlight: Z
   } = (0, f.T)({
     location: "NotificationsInboxTitleBarButton"
   }), w = (0, r.jsx)(d.Dkj, {
-    className: I.icon,
-    color: O || j ? d.TVs.colors.ICON_PRIMARY : d.TVs.colors.ICON_TERTIARY,
-    size: Z
+    className: v.icon,
+    color: O || P ? d.TVs.colors.ICON_PRIMARY : d.TVs.colors.ICON_TERTIARY,
+    size: A
   }), {
     badge: L,
-    badgeType: R
+    badgeType: D
   } = (0, E.h6)({
-    isSelected: P
-  }), D = (0, m.isDesktop)() && x, M = (0, h.A)(), k = (0, m.isMac)() ? C[M] : D ? S[M] : N[M];
+    isSelected: j
+  }), R = (0, g.isDesktop)() && x, M = (0, h.A)(), k = (0, g.isMac)() ? C[M] : R ? S[M] : T[M];
   return (0, r.jsxs)(d.Kqy, {
     gap: 0,
     direction: "horizontal",
@@ -72,7 +72,7 @@ function T(e) {
       horizontal: true
     }), (0, r.jsx)(u.u, {
       asContainer: true,
-      shouldShow: !j,
+      shouldShow: !P,
       text: y.intl.string(y.t.HcoRu0),
       children: (0, r.jsxs)(d.P3F, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
@@ -92,31 +92,31 @@ function T(e) {
         }
         return e
       }({
-        innerRef: g,
-        className: a()(I.clickableContainer, {
-          [I.withHoverHighlight]: A
+        innerRef: m,
+        className: a()(v.clickableContainer, {
+          [v.withHoverHighlight]: Z
         })
-      }, b, s), n = n = {
+      }, _, o), n = n = {
         onMouseEnter: () => {
-          v(true)
+          I(true)
         },
         onMouseLeave: () => {
-          v(false)
+          I(false)
         },
         onClick: () => {
           var e;
-          null == l || l(), null == s || null == (e = s.onClick) || e.call(s)
+          null == l || l(), null == o || null == (e = o.onClick) || e.call(o)
         },
         children: [(0, r.jsx)("div", {
-          className: a()(I.iconWrapper, null),
-          children: "unread" === R ? (0, r.jsxs)(r.Fragment, {
+          className: a()(v.iconWrapper, null),
+          children: "unread" === D ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(p.ZP, {
-              width: c.Z[Z],
-              height: c.Z[Z],
+              width: c.Z[A],
+              height: c.Z[A],
               mask: p.ZP.Masks.HEADER_BAR_BADGE_BOTTOM,
               children: w
             }), (0, r.jsx)("div", {
-              className: a()(I.unreadDot, I[Z])
+              className: a()(v.unreadDot, v[A])
             })]
           }) : w
         }), L]
@@ -134,7 +134,7 @@ function T(e) {
   })
 }
 
-function P() {
+function j() {
   let {
     focusSectionProps: e
   } = arguments.length > 0 && true !== arguments[0] ? arguments[0] : {}, t = Chunk647438.useRef(null), {
@@ -142,7 +142,7 @@ function P() {
   } = (0, Chunk821020.pN)({
     location: "NotificationsInboxButton"
   }), l = (0, Chunk442837.e7)([Chunk944486.Z], () => Chunk944486.Z.getChannelId()), a = Chunk647438.useMemo(() => Chunk981631.Z5c.CHANNEL(Chunk981631.STv, null != Chunk120356 ? Chunk120356 : true), [Chunk120356]), c = (0, Chunk128008.mv)();
-  return require === Chunk821020.jP.SIDEBAR ? (0, Chunk951288.jsx)(T, {
+  return require === Chunk821020.jP.SIDEBAR ? (0, Chunk951288.jsx)(N, {
     onClick: () => {
       Chunk212605(), (0, Chunk948789.uL)(a)
     },
@@ -152,7 +152,7 @@ function P() {
     popoutPosition: "bottom",
     popoutAlign: "left",
     spacing: 2,
-    children: (n, i, l) => (0, r.jsx)(T, {
+    children: (n, i, l) => (0, r.jsx)(N, {
       ref: t,
       selectedOverride: i,
       onClick: () => {

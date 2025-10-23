@@ -22,12 +22,12 @@ function p(e) {
     user: f,
     hasSingleMessageRequest: h
   } = e, {
-    channelId: g
-  } = (0, s._)();
+    channelId: m
+  } = (0, o._)();
   return (0, r.jsx)(c.Z, {
     index: t,
     className: n,
-    isFocused: g === p.id,
+    isFocused: m === p.id,
     channel: p,
     user: f,
     onClick: e => {
@@ -40,7 +40,7 @@ function p(e) {
         channel_id: p.id,
         other_user_id: f.id
       }), setTimeout(() => {
-        o.S.dispatch(d.CkL.FOCUS_CHANNEL_TEXT_AREA, {
+        s.S.dispatch(d.CkL.FOCUS_CHANNEL_TEXT_AREA, {
           channelId: p.id
         })
       }, 0)

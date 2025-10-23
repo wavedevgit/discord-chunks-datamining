@@ -2,13 +2,13 @@
 /** chunk id: 107105, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   bG: () => a,
-  bY: () => o
+  bY: () => s
 });
 var r, Chunk358085 = require("./358085.js"),
   Chunk75060 = require("./75060.js"),
   a = ((r = {})[r.UNHANDLED = false] = "UNHANDLED", r[r.NOMINAL = 0] = "NOMINAL", r[r.FAIR = 1] = "FAIR", r[r.SERIOUS = 2] = "SERIOUS", r[r.CRITICAL = 3] = "CRITICAL", r);
 
-function o() {
+function s() {
   var e = Chunk75060.Z.getRawThermalState();
   if (null == module) return false;
   if ((0, Chunk358085.isIOS)()) return module;

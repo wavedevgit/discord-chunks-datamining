@@ -97,7 +97,7 @@ function x(e) {
           page: k,
           section: j,
           object: N.qAy.BUTTON_CTA,
-          objectType: N.Qqv.GIFT
+          objectType: N.AnalyticsObjectTypes.GIFT
         },
         giftMessage: W()
       })

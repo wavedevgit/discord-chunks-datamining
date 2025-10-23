@@ -17,14 +17,14 @@ let d = e => {
   } = e, n = i.useCallback(() => {
     (0, l.x)(t.id)
   }, [t.id]);
-  return (0, r.jsx)(o.Z, {
+  return (0, r.jsx)(s.Z, {
     guild: t,
     onDismissed: n,
     message: c.intl.format(c.t["+QqO3U"], {
       maxMemberCount: t.maxMembers,
-      maxMembersUrl: a.Z.getArticleURL(s.BhN.MAX_MEMBERS)
+      maxMembersUrl: a.Z.getArticleURL(o.BhN.MAX_MEMBERS)
     }),
-    type: s.vID.MAX_MEMBER_COUNT,
+    type: o.vID.MAX_MEMBER_COUNT,
     image: u,
     imageMarginX: 61
   })

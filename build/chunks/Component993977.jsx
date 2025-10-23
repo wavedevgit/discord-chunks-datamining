@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 993977, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => v
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -42,7 +42,7 @@ function O(e) {
   return e
 }
 
-function v(e) {
+function I(e) {
   let {
     applicationViewItems: t,
     restoreApplication: n
@@ -51,34 +51,34 @@ function v(e) {
   let i = t.map(e => {
     let t = e.libraryApplication.getDistributor();
     return (0, r.jsxs)("div", {
-      className: _.hiddenLibraryApplication,
-      children: [(0, r.jsxs)(s.Z, {
-        direction: s.Z.Direction.VERTICAL,
-        className: _.hiddenLibraryApplicationContent,
+      className: b.hiddenLibraryApplication,
+      children: [(0, r.jsxs)(o.Z, {
+        direction: o.Z.Direction.VERTICAL,
+        className: b.hiddenLibraryApplicationContent,
         children: [(0, r.jsx)("div", {
-          className: _.applicationName,
+          className: b.applicationName,
           children: e.libraryApplication.getBranchedName(e.application)
         }), null != t ? (0, r.jsx)("div", {
-          className: _.applicationSubText,
-          children: m.EOG[t]
+          className: b.applicationSubText,
+          children: g.EOG[t]
         }) : null]
       }), (0, r.jsx)(a.P3F, {
-        className: _.restoreButton,
+        className: b.restoreButton,
         onClick: () => n(e.libraryApplication),
         children: (0, r.jsx)(a.Dio, {
           size: "md",
           color: "currentColor",
-          className: _.restoreIcon
+          className: b.restoreIcon
         })
       })]
     }, e.key)
   });
   return (0, r.jsxs)("div", {
-    className: _.hiddenLibraryApplications,
+    className: b.hiddenLibraryApplications,
     children: [(0, r.jsx)(a.Heading, {
       variant: "heading-md/semibold",
-      className: _.hiddenLibraryApplicationsTitle,
-      children: b.intl.string(b.t["5PJtrH"])
+      className: b.hiddenLibraryApplicationsTitle,
+      children: _.intl.string(_.t["5PJtrH"])
     }), i]
   })
 }
@@ -90,7 +90,7 @@ class y extends Chunk647438.PureComponent {
     c.Pe.updateSetting(e)
   }
   trackRestoreApplication(e, t) {
-    d.default.track(m.rMx.APPLICATION_SETTINGS_UPDATED, O({
+    d.default.track(g.rMx.APPLICATION_SETTINGS_UPDATED, O({
       hidden_enabled: t
     }, e.getAnalyticsData()))
   }
@@ -115,7 +115,7 @@ class y extends Chunk647438.PureComponent {
           checked: require,
           onChange: this.handleToggleShortcutStartMenu
         }), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk34305.Z, {})]
-      }) : null, (0, Chunk951288.jsx)(v, {
+      }) : null, (0, Chunk951288.jsx)(I, {
         restoreApplication: this.handleRestoreHiddenLibraryApplication,
         applicationViewItems: module
       })]
@@ -133,13 +133,13 @@ class y extends Chunk647438.PureComponent {
   }
   constructor(...e) {
     super(...e), E(this, "handleRestoreHiddenLibraryApplication", e => {
-      let t = p.x9(e.getFlags(), m.eHb.HIDDEN);
-      o.h(e.id, e.branchId, t), this.trackRestoreApplication(e, p.yE(t, m.eHb.HIDDEN))
+      let t = p.x9(e.getFlags(), g.eHb.HIDDEN);
+      s.h(e.id, e.branchId, t), this.trackRestoreApplication(e, p.yE(t, g.eHb.HIDDEN))
     })
   }
 }
 
-function I() {
+function v() {
   let e = {
     installShortcutDesktop: Chunk695346.Xc.useSetting(),
     installShortcutStartMenu: Chunk695346.Pe.useSetting(),

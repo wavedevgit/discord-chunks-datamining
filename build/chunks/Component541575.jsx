@@ -82,7 +82,7 @@ let x = function(e) {
     hideTooltip: C,
     onClick: () => O({
       object: g.qAy.LEARN_MORE,
-      objectType: g.Qqv.TIER_2
+      objectType: g.AnalyticsObjectTypes.TIER_2
     })
   });
   return (0, r.jsxs)("div", {

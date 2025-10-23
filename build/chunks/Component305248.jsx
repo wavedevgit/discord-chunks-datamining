@@ -41,10 +41,10 @@ function y(e) {
   }, []);
   return i.useEffect(() => {
     null == n || !t.isFullyLoaded || t.hasError || t.collapsed || 0 !== y.length || s.Z.wait(() => {
-      (0, c.In)(t.channelId, {
+      (0, c.ack)(t.channelId, {
         section: b.jXE.INBOX,
         object: b.qAy.ACK_INBOX_FORUM_NO_POSTS,
-        objectType: b.Qqv.ACK_AUTOMATIC
+        objectType: b.AnalyticsObjectTypes.ACK_AUTOMATIC
       }, true), l(t.channelId)
     })
   }), (0, r.jsx)("div", {

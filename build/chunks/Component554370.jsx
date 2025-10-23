@@ -51,7 +51,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk977594 = require("./977594.js");
 let X = !Chunk358085.isPlatformEmbedded && false,
-  q = X ? (0, Chunk951288.jsx)(Chunk70097.Z, {
+  J = X ? (0, Chunk951288.jsx)(Chunk70097.Z, {
     src: "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzdpcnRrYXdrNzVuNjZ3NXpmeTJvNGl4Z2N4OXBsamx5aXphdHhxaCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9dg/OPg2B0FPBL94H12uM0/giphy480p.mp4",
     className: Chunk977594.videoDev,
     autoPlay: true,
@@ -59,7 +59,7 @@ let X = !Chunk358085.isPlatformEmbedded && false,
     muted: true
   }) : null;
 
-function J(e) {
+function q(e) {
   e.preventDefault()
 }
 
@@ -258,16 +258,16 @@ function ea(e) {
   }), r.useEffect(() => {
     if (C.S.dispatch(Q.CkL.OVERLAY_V3_SHOW_WIDGETS, {
         show: true
-      }), m) return (0, s.Ay)(u.u1M), n.addEventListener("contextmenu", J, false), () => {
-      n.removeEventListener("contextmenu", J, false)
+      }), m) return (0, s.Ay)(u.u1M), n.addEventListener("contextmenu", q, false), () => {
+      n.removeEventListener("contextmenu", q, false)
     };
-    n.removeEventListener("contextmenu", J, false)
+    n.removeEventListener("contextmenu", q, false)
   }, [m, n]), (0, i.jsx)(f.Gt, {
     value: W,
     children: D || _ ? null : (0, i.jsxs)("div", {
       id: "overlay-container",
       className: K.overlay,
-      children: [!t && q, (0, i.jsx)(ee, {
+      children: [!t && J, (0, i.jsx)(ee, {
         locked: m,
         keybind: L,
         onClick: en

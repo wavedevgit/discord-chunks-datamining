@@ -132,8 +132,8 @@ function I(e) {
         }
       });
       let o = x ? null == (i = L.subscription_trial) ? true : i.id : null,
-        f = m.Qqv.BUY;
-      null != o ? f = m.Qqv.TRIAL : N && (f = m.Qqv.GIFT), (0, l.Z)({
+        f = m.AnalyticsObjectTypes.BUY;
+      null != o ? f = m.AnalyticsObjectTypes.TRIAL : N && (f = m.AnalyticsObjectTypes.GIFT), (0, l.Z)({
         isGift: N,
         initialPlanId: null,
         subscriptionTier: g,

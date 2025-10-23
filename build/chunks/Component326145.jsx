@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 326145, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => I
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,23 +22,23 @@ var Chunk951288 = require("./951288.js"),
   Chunk76531 = require("./76531.js"),
   Chunk718215 = require("./718215.js");
 
-function v(e) {
+function I(e) {
   let {
     guildId: t,
     channelId: n
   } = e, {
     ref: l,
-    width: v,
+    width: I,
     height: y
-  } = (0, c.ZP)(), I = i.useCallback(() => {
-    null != t && null != n && ((0, m.I1)(t), (0, b.default)({
+  } = (0, c.ZP)(), v = i.useCallback(() => {
+    null != t && null != n && ((0, g.I1)(t), (0, _.default)({
       guildId: t,
       returnChannelId: n
     }))
-  }, [t, n]), C = (0, o.e7)([f.Z], () => f.Z.getGuild(t)), S = i.useMemo(() => null == C ? null : h.ZP.getGuildSplashURL({
+  }, [t, n]), C = (0, s.e7)([f.Z], () => f.Z.getGuild(t)), S = i.useMemo(() => null == C ? null : h.ZP.getGuildSplashURL({
     id: C.id,
     splash: C.splash
-  }), [C]), N = (0, d.N)(S);
+  }), [C]), T = (0, d.N)(S);
   return (0, r.jsxs)("div", {
     className: a()(E.outerWrapping, O.main, {
       [O.fullBorderWithGradient]: null == S
@@ -47,13 +47,13 @@ function v(e) {
     children: [null != S ? (0, r.jsx)(u.Z, {
       className: O.artwork,
       src: S,
-      width: v,
+      width: I,
       height: y,
       imageClassName: O.cover
-    }) : (0, r.jsx)(p.Z, {}), null != N && null != S && (0, r.jsx)("div", {
+    }) : (0, r.jsx)(p.Z, {}), null != T && null != S && (0, r.jsx)("div", {
       className: O.gradient,
       style: {
-        background: "linear-gradient(180deg, ".concat((0, g.aD)(N, .16), " 0%, ").concat((0, g.aD)(N, 1), " 100%)")
+        background: "linear-gradient(180deg, ".concat((0, m.aD)(T, .16), " 0%, ").concat((0, m.aD)(T, 1), " 100%)")
       }
     }), null != S && (0, r.jsx)("div", {
       className: O.gradient
@@ -61,20 +61,20 @@ function v(e) {
       className: a()(E.explainerContainer, E.transparentBackground),
       children: [(0, r.jsxs)("div", {
         className: E.header,
-        children: [(0, r.jsx)(s.Heading, {
+        children: [(0, r.jsx)(o.Heading, {
           variant: "heading-xxl/normal",
           color: "always-white",
-          children: _.intl.string(_.t.CCmhpF)
-        }), (0, r.jsx)(s.Text, {
+          children: b.intl.string(b.t.CCmhpF)
+        }), (0, r.jsx)(o.Text, {
           variant: "text-lg/normal",
           color: "always-white",
-          children: _.intl.string(_.t.gRAHcZ)
+          children: b.intl.string(b.t.gRAHcZ)
         })]
-      }), (0, r.jsx)(s.Button, {
+      }), (0, r.jsx)(o.Button, {
         variant: "overlay-primary",
         size: "md",
-        text: _.intl.string(_.t.VVFjAC),
-        onClick: I
+        text: b.intl.string(b.t.VVFjAC),
+        onClick: v
       })]
     })]
   })

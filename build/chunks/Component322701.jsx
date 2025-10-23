@@ -19,20 +19,20 @@ let f = function(e) {
     renderRow: n,
     renderSection: f,
     hasSearchQuery: h,
-    sectionFilter: g,
-    footer: m
-  } = e, b = (0, o.e7)([u.Z], () => u.Z.keyboardModeEnabled), _ = (0, o.e7)([u.Z], () => u.Z.useReducedMotion), E = (0, l.ZP)({
+    sectionFilter: m,
+    footer: g
+  } = e, _ = (0, s.e7)([u.Z], () => u.Z.keyboardModeEnabled), b = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), E = (0, l.ZP)({
     id: "people",
-    isEnabled: b,
+    isEnabled: _,
     async scrollToStart() {},
     async scrollToEnd() {}
-  }), O = g !== d.pJs.ONLINE && g !== d.pJs.ALL, v = _ || h || O, y = i.useMemo(() => t.map((e, t) => 0 === e.length ? null : v ? (0, r.jsxs)("div", {
+  }), O = m !== d.pJs.ONLINE && m !== d.pJs.ALL, I = b || h || O, y = i.useMemo(() => t.map((e, t) => 0 === e.length ? null : I ? (0, r.jsxs)("div", {
     children: [f(t), e.map(n)]
-  }, t) : (0, r.jsxs)(s.W, {
+  }, t) : (0, r.jsxs)(o.W, {
     transitionAppear: false,
     component: "div",
     children: [f(t), e.map(n)]
-  }, t)), [n, f, t, v]);
+  }, t)), [n, f, t, I]);
   return (0, r.jsx)(a.bG, {
     navigator: E,
     children: (0, r.jsx)(a.SJ, {
@@ -76,7 +76,7 @@ let f = function(e) {
           ref: i,
           className: p.peopleList
         }, l), n = n = {
-          children: [y, m]
+          children: [y, g]
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
