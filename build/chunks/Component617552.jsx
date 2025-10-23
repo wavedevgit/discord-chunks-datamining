@@ -75,9 +75,9 @@ function m(e) {
     onCancel: n
   } = e, l = p(e, ["onConfirm", "onCancel"]);
   let [u, f] = i.useState(false);
-  i.useEffect(() => () => {
-    u && s.ZP.updatedUnsyncedSettings({
-      disableEmbeddedActivityPopOutAlert: true
+  i.useEffect(() => {
+    s.ZP.updatedUnsyncedSettings({
+      disableEmbeddedActivityPopOutAlert: u
     })
   }, [u]);
   let h = () => {
