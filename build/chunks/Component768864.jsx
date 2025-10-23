@@ -52,12 +52,12 @@ function y(e) {
     channel: t,
     appContext: l = f.IlC.APP,
     analyticsLocation: y = s.Z.CHANNEL_CALL,
-    onClose: m
+    onClose: I
   } = e;
-  return i.useCallback((e, i, s, I) => {
+  return i.useCallback((e, i, s, m) => {
     if (null == t) return;
     let C = {
-      onClose: m,
+      onClose: I,
       context: l
     };
     switch (e.type) {
@@ -73,7 +73,7 @@ function y(e) {
             minimal: s,
             exitFullscreen: () => {},
             onInteraction: (0, d.u)("StreamContextMenu", y, {
-              entrypoint: I,
+              entrypoint: m,
               tileType: h.TH.STREAM,
               targetUserId: e.user.id
             })
@@ -103,7 +103,7 @@ function y(e) {
                   channel: t,
                   showModalItems: true,
                   onInteraction: (0, d.u)("DMUserContextMenu", y, {
-                    entrypoint: I,
+                    entrypoint: m,
                     tileType: h.TH.USER,
                     targetUserId: O.id
                   })
@@ -122,7 +122,7 @@ function y(e) {
                   channel: t,
                   showModalItems: true,
                   onInteraction: (0, d.u)("GroupDMUserContextMenu", y, {
-                    entrypoint: I,
+                    entrypoint: m,
                     tileType: h.TH.USER,
                     targetUserId: O.id
                   })
@@ -145,7 +145,7 @@ function y(e) {
                   guildId: e,
                   showModalItems: true,
                   onInteraction: (0, d.u)("GuildChannelUserContextMenu", y, {
-                    entrypoint: I,
+                    entrypoint: m,
                     tileType: h.TH.USER,
                     targetUserId: O.id
                   })
@@ -157,5 +157,5 @@ function y(e) {
       case h.fO.ACTIVITY:
         return
     }
-  }, [t, l, y, m])
+  }, [t, l, y, I])
 }
