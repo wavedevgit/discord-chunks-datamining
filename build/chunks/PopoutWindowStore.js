@@ -294,11 +294,6 @@ class J extends(r = Chunk442837.ZP.PersistedStore) {
     let n = R[e];
     return (null == n || null == (t = n.document) ? true : t.visibilityState) === "visible"
   }
-  isAnyWindowVisible() {
-    for (let e of Object.keys(R))
-      if (this.getWindowVisible(module)) returntrue;
-    returnfalse
-  }
   getState() {
     return C
   }
