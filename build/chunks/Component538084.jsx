@@ -1,92 +1,74 @@
 /** Chunk was on 47840 **/
 /** chunk id: 538084, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => p,
-  k: () => d
+  default: () => h,
+  k: () => p
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk913527 = require("./913527.js"),
   a = require.n(Chunk913527),
+  Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
   Chunk45251 = require("./45251.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk206536 = require("./206536.js");
-let d = "SCHEDULED_MESSAGE_CREATE_MODAL_KEY";
+let p = "SCHEDULED_MESSAGE_CREATE_MODAL_KEY";
 
-function p(e) {
+function h(e) {
   let {
     channel: t,
     transitionState: n,
     onClose: l,
-    prefilledTime: p
-  } = e, h = a()(), f = a()().add(365, "days"), [m, g] = r.useState(null != p ? a()(p.substring(0, 200)) : h);
-  return (0, i.jsxs)(o.Y0X, {
+    prefilledTime: h
+  } = e, f = a()(), m = a()().add(365, "days"), [g, b] = r.useState(null != h ? a()(h.substring(0, 200)) : f);
+  return (0, i.jsx)(o.Modal, {
     transitionState: n,
-    size: o.CgR.SMALL,
-    "aria-label": c.intl.string(c.t.WbFpq4),
-    parentComponent: "ScheduledMessageCreateModal",
-    children: [(0, i.jsx)(o.olH, {
-      onClick: l,
-      className: u.closeButton
-    }), (0, i.jsx)(o.xBx, {
-      separator: false,
-      className: u.header,
-      children: (0, i.jsx)(o.Heading, {
-        variant: "heading-xl/medium",
-        children: c.intl.string(c.t["3+ii4F"])
-      })
-    }), (0, i.jsx)(o.hzk, {
-      children: (0, i.jsxs)("div", {
-        className: u.doubleInput,
-        children: [(0, i.jsx)("div", {
-          className: u.column,
-          children: (0, i.jsx)(o.Wrb, {
-            required: true,
-            label: c.intl.string(c.t.pSZKvM),
-            value: m,
-            onSelect: e => {
-              g(e)
-            },
-            minDate: h,
-            maxDate: f,
-            disabled: false
-          })
-        }), (0, i.jsx)("div", {
-          className: u.column,
-          children: (0, i.jsx)(o.MGJ, {
-            label: c.intl.string(c.t.GOmEb8),
-            required: true,
-            value: m,
-            onChange: e => {
-              e.isValid() && g(e)
-            },
-            hideValue: false,
-            disabled: false
-          })
-        })]
-      })
-    }), (0, i.jsxs)(o.mzw, {
-      className: u.footer,
+    size: "md",
+    title: u.intl.string(u.t["3+ii4F"]),
+    onClose: l,
+    actions: [{
+      variant: "secondary",
+      text: u.intl.string(u.t["ETE/oC"]),
+      onClick: l
+    }, {
+      variant: "primary",
+      text: u.intl.string(u.t.iQ1SwX),
+      onClick: () => {
+        (0, c._e)({
+          channelId: t.id,
+          scheduledTimestamp: g.toISOString()
+        }), (0, s.Mr3)(p)
+      }
+    }],
+    children: (0, i.jsxs)("div", {
+      className: d.doubleInput,
       children: [(0, i.jsx)("div", {
-        "data-button-hoisted-classname-wrapper": true,
-        className: u.cancelButton,
-        children: (0, i.jsx)(o.Button, {
-          variant: "secondary",
-          text: c.intl.string(c.t["ETE/oC"]),
-          onClick: l
+        className: d.column,
+        children: (0, i.jsx)(s.Wrb, {
+          required: true,
+          label: u.intl.string(u.t.pSZKvM),
+          value: g,
+          onSelect: e => {
+            b(e)
+          },
+          minDate: f,
+          maxDate: m,
+          disabled: false
         })
-      }), (0, i.jsx)(o.Button, {
-        variant: "primary",
-        text: c.intl.string(c.t.iQ1SwX),
-        onClick: () => {
-          (0, s._e)({
-            channelId: t.id,
-            scheduledTimestamp: m.toISOString()
-          }), (0, o.Mr3)(d)
-        },
-        disabled: false
+      }), (0, i.jsx)("div", {
+        className: d.column,
+        children: (0, i.jsx)(s.MGJ, {
+          label: u.intl.string(u.t.GOmEb8),
+          required: true,
+          value: g,
+          onChange: e => {
+            e.isValid() && b(e)
+          },
+          hideValue: false,
+          disabled: false
+        })
       })]
-    })]
+    })
   })
 }
