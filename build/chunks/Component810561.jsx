@@ -24,16 +24,16 @@ function _(e) {
     activeRecurrenceId: g
   } = e, {
     recurrenceStartTimes: m,
-    canViewMoreRecurrences: b,
-    updateRecurrenceStartTimes: h
-  } = (0, c.Z)(a, n, t), f = p ? "div" : l.Ttm;
+    canViewMoreRecurrences: h,
+    updateRecurrenceStartTimes: b
+  } = (0, c.Z)(a, n, t), v = p ? "div" : l.Ttm;
   return (0, i.jsxs)("div", {
     className: u.recurrences,
     children: [(0, i.jsx)(l.Heading, {
       variant: "heading-sm/medium",
       className: u.heading,
       children: d.intl.string(d.t["D/jjoa"])
-    }), (0, i.jsxs)(f, {
+    }), (0, i.jsxs)(v, {
       className: r()(u.scroller, {
         [u.showScroller]: !p
       }),
@@ -46,11 +46,11 @@ function _(e) {
           onClick: _,
           isActive: n === g
         }, n)
-      }), b && (0, i.jsx)("div", {
+      }), h && (0, i.jsx)("div", {
         className: u.buttonContainer,
         children: (0, i.jsx)(l.Avr, {
           onClick: e => {
-            e.stopPropagation(), h()
+            e.stopPropagation(), b()
           },
           text: d.intl.string(d.t["8O7Hpy"]),
           size: "sm"

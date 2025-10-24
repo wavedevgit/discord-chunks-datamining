@@ -1,115 +1,119 @@
 /** Chunk was on 98878 **/
 /** chunk id: 285784, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Zs: () => d,
-  b5: () => u
+  Zs: () => u,
+  b5: () => _
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk846519 = require("./846519.js"),
   Chunk481060 = require("./481060.js"),
   Chunk493773 = require("./493773.js"),
+  Chunk118998 = require("./118998.js"),
   Chunk765305 = require("./765305.js"),
   Chunk388032 = require("./388032.jsx");
 
-function d(e) {
+function u(e) {
   let {
     isActive: n,
     isUserLurking: t,
     rsvped: i,
-    canInvite: d,
-    isChannelPublic: u = true,
-    entityType: _,
-    onJoinClick: p,
-    onRsvpClick: g,
-    onStartClick: m,
+    canInvite: u,
+    isChannelPublic: _ = true,
+    entityType: p,
+    onJoinClick: g,
+    onRsvpClick: m,
+    onStartClick: h,
     onInviteClick: b,
-    onEndClick: h,
+    onEndClick: v,
     onJoinGuildClick: f,
-    isJoined: v = false
-  } = e, x = true !== p, C = function(e) {
+    isJoined: x = false,
+    channel: C
+  } = e, I = true !== g, j = function(e) {
     let {
       onInviteClick: n,
       canInvite: t,
-      isChannelPublic: i
-    } = e, c = new r.V7, [d, u] = a.useState(false);
+      isChannelPublic: i,
+      channel: s
+    } = e, u = new r.V7, [_, p] = a.useState(false);
     return ((0, o.ZP)(() => () => {
-      c.stop()
-    }), null == n) ? null : t && i ? {
+      u.stop()
+    }), null == n) ? null : (0, c.T)(null != t && t, null != i && i, s) ? {
       variant: "secondary",
       icon: l.aAc,
       onClick: n,
-      text: s.intl.string(s.t.RDE0Sc),
-      "aria-label": s.intl.string(s.t.Ej3B3Y)
+      text: d.intl.string(d.t.RDE0Sc),
+      "aria-label": d.intl.string(d.t.Ej3B3Y)
     } : {
       variant: "secondary",
-      icon: d ? l.dz2 : l.xPt,
+      icon: _ ? l.dz2 : l.xPt,
       onClick: e => {
-        null != n && n(e), u(true), c.start(1e3, () => u(false))
+        null != n && n(e), p(true), u.start(1e3, () => p(false))
       },
-      disabled: d,
-      text: d ? s.intl.string(s.t.t5VZ88) : s.intl.string(s.t.RDE0Sc),
-      "aria-label": s.intl.string(s.t.Ej3B3Y)
+      disabled: _,
+      text: _ ? d.intl.string(d.t.t5VZ88) : d.intl.string(d.t.WqhZss),
+      "aria-label": d.intl.string(d.t.WqhZss)
     }
   }({
     onInviteClick: b,
-    canInvite: d,
-    isChannelPublic: u
-  }), I = [];
-  if (null != C && I.push(C), n && _ !== c.WX.EXTERNAL && I.push({
+    canInvite: u,
+    isChannelPublic: _,
+    channel: C
+  }), k = [];
+  if (null != j && k.push(j), n && p !== s.WX.EXTERNAL && k.push({
       variant: "active",
       size: "sm",
-      onClick: p,
+      onClick: g,
       text: function(e) {
         let {
           isJoined: n,
           canJoin: t,
           isVoiceChannel: i
         } = e;
-        return t ? n ? s.intl.string(s.t.aW2YlJ) : i ? s.intl.string(s.t.nxUtoQ) : s.intl.string(s.t.ZYO5OK) : s.intl.string(s.t.TVBCKZ)
+        return t ? n ? d.intl.string(d.t.aW2YlJ) : i ? d.intl.string(d.t.nxUtoQ) : d.intl.string(d.t.ZYO5OK) : d.intl.string(d.t.TVBCKZ)
       }({
-        isJoined: v,
-        canJoin: x,
-        isVoiceChannel: _ === c.WX.VOICE
+        isJoined: x,
+        canJoin: I,
+        isVoiceChannel: p === s.WX.VOICE
       }),
-      disabled: !x
-    }), t && null != f && I.push({
+      disabled: !I
+    }), t && null != f && k.push({
       variant: "active",
       size: "sm",
-      text: s.intl.string(s.t["2BP08E"]),
+      text: d.intl.string(d.t["2BP08E"]),
       onClick: f
-    }), !t && !n && null != g) {
+    }), !t && !n && null != m) {
     let e = i && !t;
-    I.push({
+    k.push({
       variant: e ? "active" : "secondary",
       size: "sm",
       icon: e ? l.dz2 : l.Dkj,
-      text: s.intl.string(s.t.DlcqlU),
-      onClick: g,
+      text: d.intl.string(d.t.DlcqlU),
+      onClick: m,
       disabled: t
     })
   }
-  return n || null == m || I.push({
+  return n || null == h || k.push({
     variant: "primary",
     size: "sm",
-    onClick: m,
-    text: s.intl.string(s.t.I0v0Qv)
-  }), n && null != h && I.push({
+    onClick: h,
+    text: d.intl.string(d.t.I0v0Qv)
+  }), n && null != v && k.push({
     variant: "secondary",
     size: "sm",
-    onClick: h,
-    text: s.intl.string(s.t.qaYzPA)
-  }), I
+    onClick: v,
+    text: d.intl.string(d.t.qaYzPA)
+  }), k
 }
 
-function u(e) {
+function _(e) {
   let {
     onClick: n
   } = e;
   return (0, i.jsx)(l.hU, {
     icon: l.xhG,
     variant: "secondary",
-    "aria-label": s.intl.string(s.t.bt75uw),
+    "aria-label": d.intl.string(d.t.bt75uw),
     onClick: n
   })
 }

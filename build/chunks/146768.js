@@ -23,11 +23,11 @@ function s(e) {
   } = e, p = (0, r.e7)([o.Z, c.Z], () => {
     var e;
     return o.Z.getGuild(null == (e = c.Z.getChannel(n)) ? true : e.getGuildId())
-  }, [n]), h = (0, r.e7)([a.Z], () => a.Z.getStageInstanceByChannel(n), [n]), m = (0, i.w8)(n, l.pV.SPEAKER), v = (0, i.Rk)(n), j = null != h ? m : u, f = (null != h ? v : d) - j.length;
+  }, [n]), m = (0, r.e7)([a.Z], () => a.Z.getStageInstanceByChannel(n), [n]), h = (0, i.w8)(n, l.pV.SPEAKER), v = (0, i.Rk)(n), j = null != m ? h : u, f = (null != m ? v : d) - j.length;
   return {
     channelId: n,
     guild: null != p ? p : t,
-    stage: null != h ? h : s,
+    stage: null != m ? m : s,
     speakers: j,
     audienceCount: f,
     context: g

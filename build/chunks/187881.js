@@ -14,6 +14,7 @@ module.exports = {
   spacing: "spacing__88264",
   divider: "divider__88264",
   footer: "footer__88264",
+  eventActions: "eventActions__88264",
   channelLocation: "channelLocation__88264 label",
   externalLocation: "externalLocation__88264 label"
 }

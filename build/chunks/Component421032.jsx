@@ -1,7 +1,7 @@
 /** Chunk was on 98878 **/
 /** chunk id: 421032, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => f
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -21,20 +21,20 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk709380 = require("./709380.js");
 
-function v(e) {
+function f(e) {
   let {
     recurrenceId: n,
     originalScheduledStartTime: a,
-    guildEventId: v,
+    guildEventId: f,
     onClick: x,
     isActive: C
-  } = e, I = (0, l.e7)([_.ZP], () => _.ZP.getGuildScheduledEvent(v)), j = (0, p.Z)(n, null == I ? true : I.id), k = (0, l.e7)([u.Z], () => u.Z.getGuild(null == I ? true : I.guild_id)), w = (0, l.e7)([d.Z], () => d.Z.getChannel(null == I ? true : I.channel_id));
+  } = e, I = (0, l.e7)([_.ZP], () => _.ZP.getGuildScheduledEvent(f)), j = (0, p.Z)(n, null == I ? true : I.id), k = (0, l.e7)([u.Z], () => u.Z.getGuild(null == I ? true : I.guild_id)), w = (0, l.e7)([d.Z], () => d.Z.getChannel(null == I ? true : I.channel_id));
   if (null == I) return null;
   let {
     is_canceled: y = false
-  } = null != j ? j : {}, N = (null == j ? true : j.scheduled_start_time) != null ? new Date(null == j ? true : j.scheduled_start_time) : a, E = (0, g.DK)(I), S = y ? b.p1.CANCELED : b.p1.SCHEDULED;
-  E === n && (S = I.status);
-  let Z = (null == I ? true : I.scheduled_start_time) != null ? (0, g.lh)(j, N, new Date(null == I ? true : I.scheduled_start_time)) : null,
+  } = null != j ? j : {}, N = (null == j ? true : j.scheduled_start_time) != null ? new Date(null == j ? true : j.scheduled_start_time) : a, Z = (0, g.DK)(I), S = y ? h.p1.CANCELED : h.p1.SCHEDULED;
+  Z === n && (S = I.status);
+  let E = (null == I ? true : I.scheduled_start_time) != null ? (0, g.lh)(j, N, new Date(null == I ? true : I.scheduled_start_time)) : null,
     P = e => {
       e.stopPropagation(), null != k && (0, s.jW)(e, async () => {
         let {
@@ -67,10 +67,10 @@ function v(e) {
       })
     };
   return (0, i.jsxs)(c.kL8, {
-    className: r()(f.container, {
-      [f.canceled]: y,
-      [f.clickable]: null != x,
-      [f.active]: C
+    className: r()(v.container, {
+      [v.canceled]: y,
+      [v.clickable]: null != x,
+      [v.active]: C
     }),
     onClick: e => {
       e.stopPropagation(), y || null == x || x(n)
@@ -79,29 +79,29 @@ function v(e) {
     "aria-label": "",
     children: [(0, i.jsx)(m.z, {
       startTime: N.toISOString(),
-      status: null != Z ? Z : S,
+      status: null != E ? E : S,
       eventType: I.entity_type,
       guildEventId: I.id,
       recurrenceId: n,
-      className: f.timeStatus
+      className: v.timeStatus
     }), y && (0, i.jsx)(c.Text, {
       variant: "text-sm/semibold",
       color: "text-danger",
-      className: f.canceledStatus,
-      children: h.intl.string(h.t.fyBVRm)
+      className: v.canceledStatus,
+      children: b.intl.string(b.t.fyBVRm)
     }), (0, i.jsx)(o.u, {
-      text: h.intl.string(h.t["UKOtz+"]),
+      text: b.intl.string(b.t["UKOtz+"]),
       position: "top",
-      "aria-label": h.intl.string(h.t.bt75uw),
+      "aria-label": b.intl.string(b.t.bt75uw),
       children: (0, i.jsx)(c.P3F, {
         onClick: P,
-        className: f.iconButton,
+        className: v.iconButton,
         children: (0, i.jsx)(c.xhG, {
           size: "custom",
           color: "currentColor",
           width: 20,
           height: 20,
-          className: f.icon
+          className: v.icon
         })
       })
     })]
