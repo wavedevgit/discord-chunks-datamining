@@ -186,8 +186,9 @@ $(ef, "displayName", "NotificationStore"), new ef(Chunk570140.Z, __OVERLAY__ ? {
     let {
       icon: I,
       title: S,
-      body: v
-    } = (0, T.Xi)(c, a, f), x = !(0, m._x)("NotificationStore.handleMessage", null == g ? true : g.id);
+      body: v,
+      emoji: x
+    } = (0, T.Xi)(c, a, f), P = !(0, m._x)("NotificationStore.handleMessage", null == g ? true : g.id);
     if (o.Z.dispatch({
         type: "RPC_NOTIFICATION_CREATE",
         channelId: c.id,
@@ -196,7 +197,7 @@ $(ef, "displayName", "NotificationStore"), new ef(Chunk570140.Z, __OVERLAY__ ? {
         title: S,
         body: v
       }), (0, _.R)(a, c.guild_id), w.Z.getDesktopType() === z.qrD.NEVER) return N && Y.Z.playNotificationSound(et, en), false;
-    let P = null != (i = D.Z.getMessage(r, a.id)) ? i : (0, C.e5)(a);
+    let A = null != (i = D.Z.getMessage(r, a.id)) ? i : (0, C.e5)(a);
     Y.Z.showNotification(I, S, v, {
       notif_type: "MESSAGE_CREATE",
       notif_user_id: null == (l = a.author) ? true : l.id,
@@ -205,9 +206,9 @@ $(ef, "displayName", "NotificationStore"), new ef(Chunk570140.Z, __OVERLAY__ ? {
       channel_id: c.id,
       channel_type: c.type,
       guild_id: c.guild_id,
-      badge: (0, U.Ex)(P, g)
+      badge: (0, M.Ex)(A, g)
     }, {
-      omitViewTracking: x,
+      omitViewTracking: P,
       tag: a.id,
       sound: N ? et : true,
       volume: en,
@@ -215,8 +216,9 @@ $(ef, "displayName", "NotificationStore"), new ef(Chunk570140.Z, __OVERLAY__ ? {
         (0, b.Kh)(c.id), (c.type === z.d4z.GUILD_VOICE || c.type === z.d4z.GUILD_STAGE_VOICE) && u.Z.updateChatOpen(c.id, true), d.default.clickedNotification()
       },
       isUserAvatar: true,
-      messageRecord: P,
-      fallbackDeepLink: (0, Y.W)(z.Z5c.CHANNEL(c.guild_id, c.id, a.id))
+      messageRecord: A,
+      fallbackDeepLink: (0, Y.W)(z.Z5c.CHANNEL(c.guild_id, c.id, a.id)),
+      emoji: x
     }).then(e => {
       null != e && eu.track(c.id, e.notification, e.trackingProps)
     })
@@ -288,7 +290,7 @@ $(ef, "displayName", "NotificationStore"), new ef(Chunk570140.Z, __OVERLAY__ ? {
       u = j.Z.getChannel(i),
       c = x.Z.getStageInstanceByChannel(i);
     null != s && null != u && null != c && Y.Z.showNotification((0, Z.EB)(s, 128), u.name, J.intl.formatToPlainString(J.t.sqnsSP, {
-      channelName: (0, p.F6)(u, F.default, M.Z),
+      channelName: (0, p.F6)(u, F.default, U.Z),
       channelTopic: null == c ? true : c.topic
     }), {
       notif_type: "Stage Speak Invite"

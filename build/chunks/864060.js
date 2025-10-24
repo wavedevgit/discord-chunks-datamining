@@ -3,10 +3,10 @@
 require.d(exports, {
   FI: () => L,
   LL: () => k,
-  N_: () => M,
+  N_: () => U,
   Xi: () => F,
-  eF: () => U
-}), require("./997841.js"), require("./953529.js"), require("./415506.js");
+  eF: () => M
+}), require("./997841.js"), require("./953529.js"), require("./415506.js"), require("./388685.js");
 var Chunk317381 = require("./317381.js"),
   Chunk599149 = require("./599149.js"),
   Chunk933557 = require("./933557.js"),
@@ -49,7 +49,7 @@ function k(e, t, n) {
   return !(null != i && s.Z.isLurking(i) || !l.ignoreSameUser && t.id === e.id || T.Z.isBlockedOrIgnored(t.id) || !l.ignoreStatus && S.Z.getStatus() === R.Skl.DND || E.QZ.getSetting() || !l.ignoreNoMessagesSetting && b.ZP.allowNoMessages(n))
 }
 
-function U(e, t) {
+function M(e, t) {
   var n, i;
   let r = !(arguments.length > 2) || true === arguments[2] || arguments[2],
     a = arguments.length > 3 && true !== arguments[3] && arguments[3];
@@ -94,7 +94,7 @@ function U(e, t) {
   }
 }
 
-function M(e, t) {
+function U(e, t) {
   var n;
   if (m.Z.getChannelId(I.Z.getGuildId()) !== t) returnfalse;
   let l = y.Z.getChannel(t);
@@ -149,7 +149,8 @@ function F(e, t, n) {
   if ((0, g.Z)(t) && null == (f = A.Z.stringify(t, e))) throw new a.Z("NotificationTextUtils").warn("SystemMessageUtils.stringify(...) could not convert", {
     message: t
   }), Error("failed to stringify system message");
-  let h = "sticker_items" in t ? t.sticker_items : "stickerItems" in t ? t.stickerItems : t.stickers;
+  let h = "sticker_items" in t ? t.sticker_items : "stickerItems" in t ? t.stickerItems : t.stickers,
+    p = [];
   if ("message_reference" in t ? (0, o.s)(t) : (0, o.Z)(t)) l = w.intl.string(w.t["9ddYKt"]);
   else if (null != t.activity && null != t.application) l = t.activity.type === R.mFx.JOIN ? w.intl.formatToPlainString(V(e, w.t.E8CgCh, w.t.c6KHWJ, w.t.Fy7rJN), {
     user: i,
@@ -173,13 +174,17 @@ function F(e, t, n) {
     question: t.poll.question.text
   });
   else if (t.type === R.uaV.POLL_RESULT) {
-    var p, E, N;
-    let e = null == (N = t.embeds) || null == (E = N[0]) || null == (p = E.fields) ? true : p.find(e => ("name" in e ? e.name : e.rawName) === "poll_question_text"),
+    var E, N, O;
+    let e = null == (O = t.embeds) || null == (N = O[0]) || null == (E = N.fields) ? true : E.find(e => ("name" in e ? e.name : e.rawName) === "poll_question_text"),
       n = null != e ? "value" in e ? e.value : e.rawValue : "";
     l = w.intl.formatToPlainString(w.t["9WrecI"], {
       question: n
     })
-  } else l = 0 !== f.length && e.type === R.d4z.DM && !n.bot && f.startsWith("> -# *") ? (l = c.ZP.unparse(f, e.id, true)).substring(0, 1) + l.substring(4) : c.ZP.unparse(f, e.id, true);
+  } else if ({
+      content: l,
+      emoji: p
+    } = c.ZP.unparseWithMeta(f, e.id, true), 0 !== f.length && e.type === R.d4z.DM && !n.bot && f.startsWith("> -# *"))
+    for (let e of (l = l.substring(0, 1) + l.substring(4), p)) e.position -= 2;
   return 0 === l.length && (l = function(e) {
     var t;
     if (true !== e.embeds && e.embeds.length > 0) {
@@ -206,6 +211,7 @@ function F(e, t, n) {
   }(t)), {
     icon: n.getAvatarURL(e.guild_id, 128),
     title: s,
-    body: l
+    body: l,
+    emoji: p
   }
 }

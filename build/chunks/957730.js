@@ -2,7 +2,7 @@
 /** chunk id: 957730, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => eo
+  ZP: () => es
 }), require("./35282.js"), require("./388685.js"), require("./539854.js"), require("./361932.js"), require("./187205.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -357,7 +357,8 @@ let V = Chunk428595.Z.RULES,
           guild: o
         } = n, s = c.ZP.getDisambiguatedEmojiContext(o ? o.id : null).getById(a), l = null != s ? s.name : i;
         return {
-          content: ":".concat(l, ":")
+          content: ":".concat(l, ":"),
+          id: a
         }
       }
     },
@@ -414,25 +415,46 @@ function et(e, t, n) {
 }
 
 function en(e, t, n, r) {
-  let i = "";
+  let i = "",
+    a = [];
   return e.forEach(e => {
     if (et(t, e, r), "string" == typeof e.content) switch (e.type) {
+      case "emoji":
+        a.push({
+          position: i.length,
+          length: e.content.length,
+          id: e.id
+        }), i += e.content;
+        break;
       case "codeBlock":
       case "inlineCode":
       case "mention":
       case "roleMention":
       case "channel":
-      case "emoji":
         true === t.isNotification ? i += (0, s.KM)(e.content, true) : i += e.content;
         break;
       default:
         i += n(e.content)
-    } else e.content.constructor === Array ? i += en(e.content, t, n, r) : console.warn("Unknown message item type: ", e)
-  }), i
+    } else if (e.content.constructor === Array) {
+      let {
+        content: o,
+        emoji: s
+      } = en(e.content, t, n, r);
+      for (let e of s) a.push({
+        position: i.length + e.position,
+        length: e.length,
+        id: e.id
+      });
+      i += o
+    } else console.warn("Unknown message item type: ", e)
+  }), {
+    content: i,
+    emoji: a
+  }
 }
 
 function er(e, t, n) {
-  return en($(e, t), t, u.ZP.translateInlineEmojiToSurrogates, n)
+  return en($(e, t), t, u.ZP.translateInlineEmojiToSurrogates, n).content
 }
 
 function ei(e) {
@@ -516,7 +538,23 @@ function ei(e) {
 function ea(e) {
   return e
 }
-let eo = {
+
+function eo(e, t, n) {
+  let r = E.Z.getChannel(t),
+    a = null != r ? r.getGuildId() : null,
+    s = null != a ? I.Z.getGuild(a) : null,
+    l = n ? J : i().omit(J, ["spoiler", "timestamp"]),
+    c = n ? ea : u.ZP.translateSurrogatesToInlineEmoji,
+    d = o().parserFor(l),
+    f = {
+      inline: true,
+      guild: s,
+      channelId: t,
+      isNotification: n
+    };
+  return en(d(e, f), f, c)
+}
+let es = {
   parse(e, t) {
     let n = arguments.length > 2 && true !== arguments[2] ? arguments[2] : true,
       r = null != n ? n : ei(e),
@@ -535,19 +573,6 @@ let eo = {
     }), i
   },
   parsePreprocessor: (e, t) => $(t, ei(e)),
-  unparse(e, t, n) {
-    let r = E.Z.getChannel(t),
-      a = null != r ? r.getGuildId() : null,
-      s = null != a ? I.Z.getGuild(a) : null,
-      l = n ? J : i().omit(J, ["spoiler", "timestamp"]),
-      c = n ? ea : u.ZP.translateSurrogatesToInlineEmoji,
-      d = o().parserFor(l),
-      f = {
-        inline: true,
-        guild: s,
-        channelId: t,
-        isNotification: n
-      };
-    return en(d(e, f), f, c)
-  }
+  unparse: (e, t, n) => eo(e, t, n).content,
+  unparseWithMeta: eo
 }
