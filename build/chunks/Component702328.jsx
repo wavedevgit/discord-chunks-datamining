@@ -2,7 +2,7 @@
 /** chunk id: 702328, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => H
+  Z: () => z
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,10 +19,14 @@ var Chunk951288 = require("./951288.js"),
   Chunk433811 = require("./433811.js"),
   Chunk214852 = require("./214852.js"),
   Chunk78839 = require("./78839.js"),
+  Chunk431 = require("./431.js"),
   Chunk626135 = require("./626135.js"),
   Chunk74538 = require("./74538.js"),
   Chunk367074 = require("./367074.js"),
+  Chunk931118 = require("./931118.js"),
   Chunk283066 = require("./283066.js"),
+  Chunk104494 = require("./104494.js"),
+  Chunk639119 = require("./639119.js"),
   Chunk8647 = require("./8647.jsx"),
   Chunk744129 = require("./744129.jsx"),
   Chunk823188 = require("./823188.jsx"),
@@ -45,65 +49,76 @@ var Chunk951288 = require("./951288.js"),
   Chunk379039 = require("./379039.js"),
   Chunk810392 = require("./810392.js"),
   Chunk107283 = require("./107283.js");
-let H = () => {
+let z = () => {
   (0, Chunk214852.z)(Chunk433811.X);
   let e = Chunk647438.useRef(null),
     t = Chunk647438.useRef(null),
     n = Chunk647438.useRef(null),
     a = Chunk647438.useRef(null),
-    H = Chunk647438.useRef(null),
-    Y = Chunk647438.useRef(null),
-    W = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
-    K = (0, Chunk410030.ZP)(),
-    z = (0, Chunk780384.wj)(K),
-    [q, X] = Chunk647438.useState(false),
-    [Q, J] = Chunk647438.useState(false),
+    z = Chunk647438.useRef(null),
+    q = Chunk647438.useRef(null),
+    X = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
+    Q = (0, Chunk410030.ZP)(),
+    J = (0, Chunk780384.wj)(Q),
     [$, ee] = Chunk647438.useState(false),
     [et, en] = Chunk647438.useState(false),
     [er, ei] = Chunk647438.useState(false),
-    ea = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()),
-    eo = null != ea ? (0, Chunk74538.Af)(ea) : null,
-    es = null != eo ? Chunk74538.ZP.getSkuIdForPlan(eo.planId) : null,
-    el = null !== es && es !== Chunk474936.Si.TIER_2 ? Chunk474936.Si.TIER_2 : null,
-    ec = (0, Chunk367074.Vi)(),
-    eu = null != ec && ec,
+    [ea, eo] = Chunk647438.useState(false),
+    [es, el] = Chunk647438.useState(false),
+    ec = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()),
+    eu = null != ec ? (0, Chunk74538.Af)(ec) : null,
+    ed = null != eu ? Chunk74538.ZP.getSkuIdForPlan(eu.planId) : null,
+    ef = null !== ed && ed !== Chunk474936.Si.TIER_2 ? Chunk474936.Si.TIER_2 : null,
+    e_ = (0, Chunk367074.Vi)(),
+    ep = null != e_ && e_,
     {
-      analyticsLocations: ed
+      analyticsLocations: eh
     } = (0, Chunk906732.ZP)(Chunk100527.Z.PREMIUM_MARKETING),
-    ef = (0, Chunk283066.Z)({
+    em = (0, Chunk283066.Z)({
       location: "PremiumMarketing"
     }),
-    e_ = !q && !$ && (ef || !Q);
+    eg = !$ && !er && (em || !et);
   Chunk647438.useEffect(() => {
-    ei(true)
+    el(true)
   }, []);
-  let ep = [Chunk664134.h.HOME, Chunk664134.h.WHATS_NEW, Chunk664134.h.BEST_OF_NITRO, Chunk664134.h.PLANS, Chunk664134.h.COMPARE],
+  let eE = [Chunk664134.h.HOME, Chunk664134.h.WHATS_NEW, Chunk664134.h.BEST_OF_NITRO, Chunk664134.h.PLANS, Chunk664134.h.COMPARE],
     {
-      navBarSections: eh,
-      activeSectionId: em
-    } = (0, Chunk954003.O)(ep),
+      navBarSections: eb,
+      activeSectionId: ey
+    } = (0, Chunk954003.O)(eE),
     {
-      home: eg,
-      whatsNew: eE,
-      bestOfNitro: eb,
-      plans: ey,
-      compare: eO
-    } = eh,
-    ev = ef ? Chunk379039 : Chunk810392,
-    eI = (0, Chunk951288.jsxs)("div", {
-      className: o()(ev.container, ev.responsiveContainer, {
-        [ev.containerBackground]: ef || z,
-        [Chunk379039.fadeInFromTop]: !W && ef
+      home: eO,
+      whatsNew: ev,
+      bestOfNitro: eI,
+      plans: eT,
+      compare: eS
+    } = eb,
+    eA = em ? Chunk379039 : Chunk810392,
+    {
+      variant: eC
+    } = (0, Chunk931118.ZP)("PremiumBrandRefreshMarketingHeroHeading"),
+    eN = (0, Chunk639119.N)(),
+    eR = (0, Chunk104494.Ng)(),
+    eP = Chunk431.Z.getAlmostExpiringTrialOffers([Chunk474936.Si.TIER_2]).length > 0 && null != eN && null != eN.expires_at && eN.trial_id !== Chunk474936.a7,
+    ew = Chunk431.Z.getAlmostExpiringDiscountOffers([Chunk474936.Si.TIER_2]).length > 0 && null != eR && null != eR.expires_at,
+    eD = eP ? eN.expires_at : ew ? eR.expires_at : null,
+    eL = eC === Chunk931118.tE.HERO_COUNTDOWN && (eP || ew) && null != eD,
+    ex = (0, Chunk951288.jsxs)("div", {
+      className: o()(eA.container, eA.responsiveContainer, {
+        [eA.containerBackground]: em || J,
+        [Chunk379039.fadeInFromTop]: !X && em
       }),
       "data-cy": "tier-0-marketing-page",
-      children: [ef && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+      children: [em && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
         children: [(0, Chunk951288.jsx)(Chunk306066.Z, {
-          className: Chunk379039.topOfPageGradient
+          className: o()(Chunk379039.topOfPageGradient, {
+            [Chunk379039.topOfPageGradientWithCountdown]: eL
+          })
         }), (0, Chunk951288.jsx)(Chunk457227.Z, {
-          navBarSections: eh,
-          activeSectionId: em
+          navBarSections: eb,
+          activeSectionId: ey
         })]
-      }), !ef && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+      }), !em && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
         children: [(0, Chunk951288.jsx)("div", {
           className: Chunk810392.heroHeaderSideGradient
         }), (0, Chunk951288.jsx)("img", {
@@ -112,114 +127,115 @@ let H = () => {
           alt: ""
         })]
       }), (0, Chunk951288.jsxs)("div", {
-        className: ev.sectionsContainer,
+        className: eA.sectionsContainer,
         children: [(0, Chunk951288.jsx)("div", {
-          className: ev.heroHeadingContainer,
-          ref: eg.ref,
+          className: eA.heroHeadingContainer,
+          ref: eO.ref,
           children: (0, Chunk951288.jsx)(Chunk622535.$, {
             innerRef: Chunk120356,
-            onChange: e => X(e),
+            onChange: e => ee(e),
             threshold: 0,
             active: true,
-            children: ef ? (0, Chunk951288.jsx)(Chunk238649.Z, {
+            children: em ? (0, Chunk951288.jsx)(Chunk238649.Z, {
               ref: Chunk120356,
-              subscriptionTier: el,
-              isEligibleForBogoPromotion: ec
+              subscriptionTier: ef,
+              isEligibleForBogoPromotion: e_,
+              offerExpiresAt: eL ? eD : null
             }) : (0, Chunk951288.jsx)(Chunk903250.Z, {
               ref: Chunk120356,
-              subscriptionTier: el,
-              isDarkMode: z,
-              isEligibleForBogoPromotion: ec,
+              subscriptionTier: ef,
+              isDarkMode: J,
+              isEligibleForBogoPromotion: e_,
               videoRef: exports
             })
           })
-        }), ec && (0, Chunk951288.jsx)("div", {
-          className: ev.promoBannerContainer,
+        }), e_ && (0, Chunk951288.jsx)("div", {
+          className: eA.promoBannerContainer,
           children: (0, Chunk951288.jsx)(Chunk8647.Z, {
             variant: Chunk8647.C.APPLICATION_NITRO_HOME
           })
         }), (0, Chunk951288.jsx)("div", {
-          className: ev.whatsNewSectionContainer,
-          ref: eE.ref,
+          className: eA.whatsNewSectionContainer,
+          ref: ev.ref,
           children: (0, Chunk951288.jsx)(Chunk611116.g, {
-            shouldLoadVideo: er,
-            isReducedMotion: W,
-            enablePremiumBrandRefreshDesign: ef
+            shouldLoadVideo: es,
+            isReducedMotion: X,
+            enablePremiumBrandRefreshDesign: em
           })
         }), (0, Chunk951288.jsx)("div", {
-          className: ev.bestOfNitroSectionContainer,
-          ref: eb.ref,
+          className: eA.bestOfNitroSectionContainer,
+          ref: eI.ref,
           children: (0, Chunk951288.jsx)(Chunk611116.G_, {
-            shouldLoadVideo: er,
-            isReducedMotion: W,
-            enablePremiumBrandRefreshDesign: ef
+            shouldLoadVideo: es,
+            isReducedMotion: X,
+            enablePremiumBrandRefreshDesign: em
           })
         }), (0, Chunk951288.jsx)("div", {
-          className: ev.premiumTierCardsContainer,
-          ref: ey.ref,
+          className: eA.premiumTierCardsContainer,
+          ref: eT.ref,
           children: (0, Chunk951288.jsx)(Chunk622535.$, {
             innerRef: require,
-            onChange: e => ee(e),
+            onChange: e => ei(e),
             threshold: .1,
             active: true,
-            children: ef ? (0, Chunk951288.jsx)(Chunk744129.rz, {
+            children: em ? (0, Chunk951288.jsx)(Chunk744129.rz, {
               innerRef: require
             }) : (0, Chunk951288.jsx)(Chunk823188.Ub, {
               innerRef: require,
-              hasActiveTier2PremiumPromotion: eu
+              hasActiveTier2PremiumPromotion: ep
             })
           })
         }), (0, Chunk951288.jsx)("div", {
-          className: ev.planComparisonTableContainer,
-          ref: eO.ref,
-          children: ef ? (0, Chunk951288.jsx)(Chunk975978.Z, {}) : (0, Chunk951288.jsx)(Chunk8231.Z, {})
+          className: eA.planComparisonTableContainer,
+          ref: eS.ref,
+          children: em ? (0, Chunk951288.jsx)(Chunk975978.Z, {}) : (0, Chunk951288.jsx)(Chunk8231.Z, {})
         })]
-      }), !ef && (0, Chunk951288.jsx)(Chunk349803.Z, {
-        isVisible: e_ && er,
-        subscriptionTier: el,
+      }), !em && (0, Chunk951288.jsx)(Chunk349803.Z, {
+        isVisible: eg && es,
+        subscriptionTier: ef,
         isApplicationHome: true,
-        isEligibleForBogoPromotion: ec
+        isEligibleForBogoPromotion: e_
       }), (0, Chunk951288.jsx)(Chunk622535.$, {
-        innerRef: H,
+        innerRef: z,
         onChange: e => {
-          e && !et && (E.default.track(G.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
-            location_stack: ed
-          }), en(true))
+          e && !ea && (b.default.track(V.rMx.PREMIUM_MARKETING_SURFACE_REACHED_BOTTOM, {
+            location_stack: eh
+          }), eo(true))
         },
         children: (0, Chunk951288.jsx)("div", {
-          ref: H,
-          className: ev.bottomOfPageVisibilitySensor
+          ref: z,
+          className: eA.bottomOfPageVisibilitySensor
         })
       }), (0, Chunk951288.jsx)(Chunk622535.$, {
-        innerRef: Y,
+        innerRef: q,
         onChange: e => {
-          J(e)
+          en(e)
         },
-        children: ef ? (0, Chunk951288.jsx)(Chunk864879.Z, {
-          ref: Y
+        children: em ? (0, Chunk951288.jsx)(Chunk864879.Z, {
+          ref: q
         }) : (0, Chunk951288.jsx)(Chunk836332.Z, {
-          ref: Y,
-          isFooterVisible: Q,
-          isDarkMode: z,
-          isReducedMotion: W,
-          subscriptionTier: el
+          ref: q,
+          isFooterVisible: et,
+          isDarkMode: J,
+          isReducedMotion: X,
+          subscriptionTier: ef
         })
-      }), ef && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+      }), em && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
         children: [(0, Chunk951288.jsx)(Chunk47840.Z, {
-          isVisible: e_ && er,
-          subscriptionTier: el,
-          isEligibleForBogoPromotion: ec
+          isVisible: eg && es,
+          subscriptionTier: ef,
+          isEligibleForBogoPromotion: e_
         }), (0, Chunk951288.jsx)(Chunk306066.Z, {
           className: Chunk379039.bottomOfPageGradient
         })]
       })]
     });
   return (0, Chunk951288.jsx)(Chunk481060.f6W, {
-    theme: ef ? Chunk231338.BR.DARKER : K,
+    theme: em ? Chunk231338.BR.DARKER : Q,
     children: t => (0, r.jsx)(u.yWw, {
-      className: o()(ev.scroller, t),
+      className: o()(eA.scroller, t),
       ref: e,
-      children: eI
+      children: ex
     })
   })
 }

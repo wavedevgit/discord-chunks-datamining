@@ -15,28 +15,33 @@ let a = (0, Chunk722733.Z)({
     defaultConfig: {
       variant: "control",
       showNagbar: true,
-      hasExperimentalTooltip: false
+      hasExperimentalTooltip: false,
+      hasNitroTabBadgeOfferReminder: false
     },
     variations: {
       1: {
         variant: "nagbar-refresh",
         showNagbar: true,
-        hasExperimentalTooltip: true
+        hasExperimentalTooltip: true,
+        hasNitroTabBadgeOfferReminder: false
       },
       2: {
         variant: "offer-badge",
         showNagbar: false,
-        hasExperimentalTooltip: true
+        hasExperimentalTooltip: true,
+        hasNitroTabBadgeOfferReminder: true
       },
       3: {
         variant: "offer-countdown",
         showNagbar: false,
-        hasExperimentalTooltip: true
+        hasExperimentalTooltip: true,
+        hasNitroTabBadgeOfferReminder: true
       },
       4: {
         variant: "hero-countdown",
         showNagbar: false,
-        hasExperimentalTooltip: true
+        hasExperimentalTooltip: true,
+        hasNitroTabBadgeOfferReminder: true
       }
     }
   }),

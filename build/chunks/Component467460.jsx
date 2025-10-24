@@ -20,7 +20,7 @@ let p = e => {
     return (0, r.jsx)("div", {
       className: u.digit,
       children: (0, r.jsx)(a.Text, {
-        variant: "text-xxs/semibold",
+        variant: "text-xs/semibold",
         color: "text-primary",
         children: t
       })
