@@ -113,8 +113,8 @@ function x(e) {
     U = x.getAvatarURL(O.guild_id, 24),
     G = null != A ? A : y.ZP.getName(x),
     {
-      icon: H,
-      colorize: B,
+      icon: B,
+      colorize: H,
       getStatus: V
     } = null != (l = function(e) {
       let {
@@ -141,7 +141,7 @@ function x(e) {
       status: V()
     }) : G;
 
-  function Y(e) {
+  function z(e) {
     null != k ? (0, u.jW)(e, async () => {
       let {
         default: e
@@ -183,7 +183,7 @@ function x(e) {
           e.onClick(t), (0, g.v)(f, g.d.VOICE_USER)
         },
         className: S.avatarContainer,
-        onContextMenu: Y,
+        onContextMenu: z,
         focusProps: j,
         children: (0, r.jsx)(b.Z, {
           shakeLocation: v.oZ.VOICE_USER,
@@ -195,9 +195,9 @@ function x(e) {
             style: {
               backgroundImage: "url(".concat(U, ")")
             },
-            children: null != H ? (0, r.jsx)(H, {
+            children: null != B ? (0, r.jsx)(B, {
               className: a()(S.avatarIconOverlay, {
-                [S.avatarIconRed]: B
+                [S.avatarIconRed]: H
               }),
               color: "currentColor",
               size: "xs"

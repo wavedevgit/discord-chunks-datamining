@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 463119, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  i: () => z
+  i: () => Y
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -149,7 +149,7 @@ let M = e => {
   G = e => (0, r.jsx)(U, D(L({}, e), {
     children: (0, r.jsx)(M, {})
   })),
-  H = Chunk647438.memo(function(e) {
+  B = Chunk647438.memo(function(e) {
     var t;
     let {
       displayOptions: n,
@@ -180,7 +180,7 @@ let M = e => {
       })]
     })
   }),
-  B = e => {
+  H = e => {
     let t, n;
     var l, s, u, d, h, m, g, _, b, E, O, y, {
         displayOptions: v
@@ -198,10 +198,10 @@ let M = e => {
       G = i.useCallback(e => {
         P(false), null == e || e()
       }, []),
-      B = v.title();
+      H = v.title();
     return (0, r.jsx)(c.aML, {
       "data-migration-pending": true,
-      text: (0, r.jsx)(H, {
+      text: (0, r.jsx)(B, {
         displayOptions: v,
         assetId: v.assetIds[T],
         reducedMotion: S
@@ -211,7 +211,7 @@ let M = e => {
       delay: 100,
       allowOverflow: true,
       hideOnClick: false,
-      "aria-label": "string" == typeof B ? B : Z.intl.string(Z.t.rSXaxY),
+      "aria-label": "string" == typeof H ? H : Z.intl.string(Z.t.rSXaxY),
       children: e => (0, r.jsxs)(U, D(L(D(L({
         className: null != v.entryPointClassName ? (0, I.l)(w, v.entryPointClassName) : true
       }, C), {
@@ -303,7 +303,7 @@ let M = e => {
       })]
     })
   },
-  Y = e => {
+  z = e => {
     var {
       dismissContent: t
     } = e, n = R(e, ["dismissContent"]);
@@ -319,7 +319,7 @@ let M = e => {
       })]
     })
   },
-  z = e => {
+  Y = e => {
     let {
       selected: t,
       onClick: n,
@@ -344,7 +344,7 @@ let M = e => {
           displayOptions: a
         }));
       case j.k2.COACHTIP:
-        return (0, r.jsx)(B, D(L({}, h), {
+        return (0, r.jsx)(H, D(L({}, h), {
           displayOptions: a
         }));
       case j.k2.BADGE:
@@ -356,7 +356,7 @@ let M = e => {
           displayOptions: a
         }))
     }
-    return p === s.z.WISHLIST_SHOP_BUTTON_POPOVER ? (0, r.jsx)(Y, D(L({}, h), {
+    return p === s.z.WISHLIST_SHOP_BUTTON_POPOVER ? (0, r.jsx)(z, D(L({}, h), {
       dismissContent: f
     })) : (0, r.jsx)(U, L({}, h))
   }

@@ -1,12 +1,12 @@
-/** Chunk was on 3091 **/
-/** chunk id: 299560, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 39380 **/
+/** chunk id: 299560, original params: e,l,a (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => j
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  r = require.n(Chunk120356),
   Chunk296009 = require("./296009.js"),
   Chunk481060 = require("./481060.js"),
   Chunk812206 = require("./812206.js"),
@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk229870 = require("./229870.js");
-let x = {
+let I = {
   [Chunk296009.l.FAVORITE_GAMES]: {
     placeholder: () => ({
       variant: "details",
@@ -57,118 +57,118 @@ let x = {
       applicationId: e.applicationId
     }),
     icon: e => {
-      var t;
-      return null == (t = s.Z.getApplication(e.applicationId)) ? true : t.getIconURL(16)
+      var l;
+      return null == (l = o.Z.getApplication(e.applicationId)) ? true : l.getIconURL(16)
     },
     getAriaLabel: e => {
-      var t, n;
-      return j.intl.formatToPlainString(j.t.KfGahB, {
-        applicationName: null != (n = null == (t = s.Z.getApplication(e.applicationId)) ? true : t.name) ? n : ""
+      var l, a;
+      return g.intl.formatToPlainString(g.t.KfGahB, {
+        applicationName: null != (a = null == (l = o.Z.getApplication(e.applicationId)) ? true : l.name) ? a : ""
       })
     }
   }
 };
 
-function _(e) {
-  let t, {
-      widgetType: n,
-      onAddWidget: a,
-      size: s = "default",
-      loading: d = false,
-      trackUserProfileEditAction: j
+function j(e) {
+  let l, {
+      widgetType: a,
+      onAddWidget: t,
+      size: o = "default",
+      loading: u = false,
+      trackUserProfileEditAction: g
     } = e,
     {
-      placeholder: _,
-      getAriaLabel: P,
-      icon: I
-    } = x[n],
-    w = "small" === s,
+      placeholder: j,
+      getAriaLabel: T,
+      icon: L
+    } = I[a],
+    _ = "small" === o,
     {
-      config: S
-    } = (0, m.G)(),
-    E = i.useMemo(() => {
-      switch (n) {
-        case o.l.CURRENT_GAMES:
-        case o.l.FAVORITE_GAMES:
-        case o.l.PLAYED_GAMES:
-        case o.l.WANT_TO_PLAY_GAMES:
-          return new g.zy({
-            type: n,
+      config: O
+    } = (0, E.G)(),
+    R = n.useMemo(() => {
+      switch (a) {
+        case s.l.CURRENT_GAMES:
+        case s.l.FAVORITE_GAMES:
+        case s.l.PLAYED_GAMES:
+        case s.l.WANT_TO_PLAY_GAMES:
+          return new m.zy({
+            type: a,
             games: []
           });
-        case o.l.APPLICATION:
-          let e = null == S ? true : S.application_id;
+        case s.l.APPLICATION:
+          let e = null == O ? true : O.application_id;
           if (null == e) return null;
-          return new f.q({
-            type: n,
+          return new p.q({
+            type: a,
             applicationId: e
           })
       }
-    }, [n, null == S ? true : S.application_id]),
-    T = i.useCallback(() => {
-      d || null == E || ((0, p.qH)(n, E), j({
+    }, [a, null == O ? true : O.application_id]),
+    b = n.useCallback(() => {
+      u || null == R || ((0, v.qH)(a, R), g({
         action: "WIDGET_ADDED",
-        widgetEdited: n
-      }), (0, b.L$)(v.qb.WIDGET_ADDED), null == a || a())
-    }, [d, n, E, j, a]);
-  return (null != E && null != I && (t = I(E)), null == E) ? null : (0, r.jsxs)("div", {
-    className: O.addButtonContainer,
-    children: [(0, r.jsxs)(c.P3F, {
-      className: l()(O.addButtonContent, w && O.sizeSmall, d && O.loading),
-      onClick: T,
-      "aria-label": P(E),
-      "aria-busy": d,
+        widgetEdited: a
+      }), (0, f.L$)(x.qb.WIDGET_ADDED), null == t || t())
+    }, [u, a, R, g, t]);
+  return (null != R && null != L && (l = L(R)), null == R) ? null : (0, i.jsxs)("div", {
+    className: N.addButtonContainer,
+    children: [(0, i.jsxs)(c.P3F, {
+      className: r()(N.addButtonContent, _ && N.sizeSmall, u && N.loading),
+      onClick: b,
+      "aria-label": T(R),
+      "aria-busy": u,
       children: [(() => {
-        if (null == E) return null;
-        let e = _(E);
+        if (null == R) return null;
+        let e = j(R);
         switch (e.variant) {
           case "details":
-            return (0, r.jsx)(h.i, {
-              className: O.placeholderPadding,
+            return (0, i.jsx)(A.i, {
+              className: N.placeholderPadding,
               applicationId: e.applicationId,
-              size: s
+              size: o
             });
           case "grid":
-            return (0, r.jsx)(h.c, {
-              className: O.placeholderPadding,
+            return (0, i.jsx)(A.c, {
+              className: N.placeholderPadding,
               applicationIds: e.applicationIds,
-              size: s
+              size: o
             });
           case "application-widget":
-            return (0, r.jsx)(y.Z, {
+            return (0, i.jsx)(h.Z, {
               applicationId: e.applicationId,
-              size: s
+              size: o
             });
           default:
-            return (0, u.vE)(e)
+            return (0, d.vE)(e)
         }
-      })(), (0, r.jsxs)("div", {
-        className: O.overlay,
-        children: [(0, r.jsx)(c.oFk, {
+      })(), (0, i.jsxs)("div", {
+        className: N.overlay,
+        children: [(0, i.jsx)(c.oFk, {
           size: "md",
           color: "currentColor",
-          className: O.addButton
-        }), (0, r.jsxs)("div", {
-          className: O.title,
-          children: [(0, r.jsx)(c.Text, {
+          className: N.addButton
+        }), (0, i.jsxs)("div", {
+          className: N.title,
+          children: [(0, i.jsx)(c.Text, {
             variant: "text-md/medium",
             color: "header-primary",
-            children: (0, p.mR)(E)
-          }), null != t ? (0, r.jsx)("img", {
-            src: t,
+            children: (0, v.mR)(R)
+          }), null != l ? (0, i.jsx)("img", {
+            src: l,
             alt: "",
             width: 16,
             height: 16,
-            className: O.icon
+            className: N.icon
           }) : null]
         })]
       })]
     }), (() => {
-      if (null == E) return null;
-      let e = _(E);
-      return "application-widget" === e.variant ? (0, r.jsx)(y.T, {
+      if (null == R) return null;
+      let e = j(R);
+      return "application-widget" === e.variant ? (0, i.jsx)(h.T, {
         applicationId: e.applicationId,
-        size: s
+        size: o
       }) : null
     })()]
   })

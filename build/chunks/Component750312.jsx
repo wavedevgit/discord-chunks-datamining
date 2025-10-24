@@ -1,4 +1,4 @@
-/** Chunk was on 3091 **/
+/** Chunk was on 63076 **/
 /** chunk id: 750312, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -27,7 +27,7 @@ function v(e) {
     children: a,
     disableInteraction: h,
     className: v,
-    index: O,
+    index: j,
     trailingContent: x,
     headerTitle: _,
     headerSubtitle: P,
@@ -36,43 +36,43 @@ function v(e) {
   } = e, S = (0, s.Dt)(), E = (0, c.e7)([u.default], () => u.default.getId() === t), T = i.useRef(null), {
     registerManageWidgetButtonRef: C,
     manageFocusOnReorder: D
-  } = (0, b.j)(), N = i.useRef(null);
+  } = (0, b.j)(), k = i.useRef(null);
   i.useLayoutEffect(() => {
     let e = C(n.type);
-    return e(N.current), () => e(null)
+    return e(k.current), () => e(null)
   }, [C, n.type]);
   let {
-    trackUserProfileAction: A
-  } = (0, d.KZ)(), k = (0, g.Z)({
+    trackUserProfileAction: N
+  } = (0, d.KZ)(), A = (0, g.Z)({
     widgetType: n.type,
-    onAction: A
-  }), Z = E && null != O && !h, {
+    onAction: N
+  }), Z = E && null != j && !h, {
     isDragging: R,
-    dragSourcePosition: L
+    dragSourcePosition: B
   } = (0, f.q)({
     dropRef: T,
-    dragRef: N,
+    dragRef: k,
     userId: t,
     widget: n,
-    index: O,
+    index: j,
     disableInteraction: !Z,
     onReorder: () => D(n.type)
-  }), [G, B] = i.useState(false);
-  return (0, r.jsx)(j, {
+  }), [G, L] = i.useState(false);
+  return (0, r.jsx)(O, {
     ref: T,
     disableInteraction: !Z,
-    onMouseEnter: () => B(true),
-    onMouseLeave: () => B(false),
-    dragSourcePosition: L,
-    index: null != O ? O : 0,
+    onMouseEnter: () => L(true),
+    onMouseLeave: () => L(false),
+    dragSourcePosition: B,
+    index: null != j ? j : 0,
     children: (0, r.jsxs)("section", {
-      ref: k,
+      ref: A,
       className: l()(y.container, v, {
         [y.isDragging]: R
       }),
       "aria-labelledby": S,
       children: [Z && (0, r.jsx)(p.Z, {
-        buttonRef: N,
+        buttonRef: k,
         widget: n,
         className: l()(y.dragHandleButton, {
           [y.opacity]: G || R
@@ -92,7 +92,7 @@ function v(e) {
     })
   })
 }
-let j = e => {
+let O = e => {
   let {
     ref: t,
     children: n,

@@ -1,4 +1,4 @@
-/** Chunk was on 3091 **/
+/** Chunk was on 63076 **/
 /** chunk id: 780899, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   e_: () => m,
@@ -84,7 +84,7 @@ function p(e) {
         itemPreviewProps: d
       }), [l, r, u, d]), [{
         isDragging: y
-      }, v, j] = (0, o.c)({
+      }, v, O] = (0, o.c)({
         type: m,
         item: h,
         collect: e => ({
@@ -94,12 +94,12 @@ function p(e) {
         end: g
       });
       i.useEffect(() => {
-        p && j((0, s.r)(), {
+        p && O((0, s.r)(), {
           captureDraggingState: true
         })
-      }, [j, p]);
+      }, [O, p]);
       let [{
-        dragSourcePosition: O
+        dragSourcePosition: j
       }, x] = (0, c.L)({
         accept: m,
         drop: e => {
@@ -117,19 +117,19 @@ function p(e) {
       });
       return v(t), x(n), {
         isDragging: y,
-        dragSourcePosition: O
+        dragSourcePosition: j
       }
     }(f({
       dragRef: h,
       dropRef: h,
       index: t
     }, b)),
-    j = null != v,
-    O = j && t < v,
-    x = j && t > v;
+    O = null != v,
+    j = O && t < v,
+    x = O && t > v;
   return (0, r.jsx)("div", {
     ref: h,
-    className: l()(n, y && a, O && u, x && d),
+    className: l()(n, y && a, j && u, x && d),
     "aria-label": p,
     children: m
   })

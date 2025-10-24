@@ -139,8 +139,8 @@ function em(e) {
     scrollerRef: s,
     tabs: c
   } = e, u = i.useCallback(() => {
-    (0, z.navigateToQuestHome)({
-      fromContent: H.jn.QUEST_HOME_MOVE_CALLOUT_DISCOVER
+    (0, Y.navigateToQuestHome)({
+      fromContent: B.jn.QUEST_HOME_MOVE_CALLOUT_DISCOVER
     }), D.default.track(en.rMx.QUEST_CONTENT_CLICKED, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -162,7 +162,7 @@ function em(e) {
       cta_name: k.jZ.VIEW_QUESTS,
       click_id: (0, o.Z)(),
       is_targeted: false
-    }, (0, k.mH)(H.jn.QUEST_HOME_MOVE_CALLOUT_DISCOVER)))
+    }, (0, k.mH)(B.jn.QUEST_HOME_MOVE_CALLOUT_DISCOVER)))
   }, []);
   return (0, r.jsx)($.t.Provider, {
     value: s,
@@ -223,13 +223,13 @@ let eg = function(e) {
     withClaimedQuestsTab: !I
   });
   i.useLayoutEffect(() => {
-    I && D === U.e5.CLAIMED && B.Z.setState({
+    I && D === U.e5.CLAIMED && H.Z.setState({
       tab: U.e5.ALL
     })
   }, [I, D]);
   let {
-    onScroll: H,
-    scrollPosition: z
+    onScroll: B,
+    scrollPosition: Y
   } = (0, C.M)(), q = W.Z.getState().getUtmCurrentContext(), es = (0, G._)({
     location: et.dr.QUEST_HOME_DESKTOP
   }) ? Q.Z : Q.j, eo = (0, J.z)(e => e.registerAssetLoad), ec = i.useRef(q);
@@ -314,7 +314,7 @@ let eg = function(e) {
       }),
       children: I ? (0, r.jsx)(em, {
         onSelectTab: R,
-        onScroll: H,
+        onScroll: B,
         onLoadComplete: eo,
         scrollerRef: eg,
         selectedTabId: D,
@@ -333,7 +333,7 @@ let eg = function(e) {
             ctaOnClick: e_
           })
         }), (0, r.jsxs)(x.Z, {
-          onScroll: H,
+          onScroll: B,
           ref: eg,
           children: [D !== U.e5.PREVIEW_TOOL && (0, r.jsxs)(S.Z, {
             title: ep,
@@ -372,7 +372,7 @@ let eg = function(e) {
           }), (0, r.jsx)(T.Z, {
             children: D === U.e5.CLAIMED ? (0, r.jsx)(es, {
               onSelectTab: R
-            }) : D === U.e5.PREVIEW_TOOL ? (0, r.jsx)(Y.Z, {}) : (0, r.jsx)(K.Z, {})
+            }) : D === U.e5.PREVIEW_TOOL ? (0, r.jsx)(z.Z, {}) : (0, r.jsx)(K.Z, {})
           })]
         })]
       }) : (0, r.jsxs)(r.Fragment, {
@@ -381,14 +381,14 @@ let eg = function(e) {
           children: [(0, r.jsx)("div", {
             className: ea.dragRegion
           }), (0, r.jsx)(j.z6, {
-            scrollPosition: z
+            scrollPosition: Y
           }), (0, r.jsx)(j.aV, {
             icon: p.qDn
           })]
         }), (0, r.jsx)($.t.Provider, {
           value: eg,
           children: (0, r.jsxs)(x.Z, {
-            onScroll: H,
+            onScroll: B,
             ref: eg,
             children: [(0, r.jsxs)(S.Z, {
               title: ep,
@@ -420,7 +420,7 @@ let eg = function(e) {
                 })
               }), D === U.e5.CLAIMED ? (0, r.jsx)(es, {
                 onSelectTab: R
-              }) : D === U.e5.PREVIEW_TOOL ? (0, r.jsx)(Y.Z, {}) : (0, r.jsx)(K.Z, {})]
+              }) : D === U.e5.PREVIEW_TOOL ? (0, r.jsx)(z.Z, {}) : (0, r.jsx)(K.Z, {})]
             })]
           })
         })]

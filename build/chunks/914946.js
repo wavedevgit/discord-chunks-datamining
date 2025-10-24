@@ -3,15 +3,15 @@
 require.d(exports, {
   FJ: () => en,
   RE: () => G,
-  T5: () => B,
+  T5: () => H,
   Xb: () => V,
   YK: () => ee,
   YS: () => X,
-  _J: () => Y,
+  _J: () => z,
   _f: () => ei,
   aE: () => F,
   bu: () => er,
-  kb: () => z,
+  kb: () => Y,
   s9: () => W,
   t9: () => Q,
   tr: () => et,
@@ -98,12 +98,12 @@ function G(e) {
   return /^http/.test(e) ? e : "".concat(location.protocol, "//").concat(location.host).concat("/" === e.charAt(0) ? "" : "/").concat(e)
 }
 
-function H(e) {
+function B(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [];
   return t.indexOf(e) > false
 }
 
-function B(e, t) {
+function H(e, t) {
   let n = [],
     r = e.getGuildId();
   return [A.d4z.GUILD_CATEGORY, ...m.tx].includes(e.type) || n.push(new Promise(t => {
@@ -185,7 +185,7 @@ function F(e, t, n) {
   }
 }
 
-function Y(e, t) {
+function z(e, t) {
   return {
     type: e,
     user: (0, P.Z)(t),
@@ -196,7 +196,7 @@ function Y(e, t) {
   }
 }
 
-function z(e, t) {
+function Y(e, t) {
   var n;
   return null == t ? e : w(Z({}, e), {
     presence: w(Z({}, e.presence), {
@@ -260,12 +260,12 @@ async function X(e, t, n) {
   if ("string" == typeof n)
     if (e.transport === x.He.POST_MESSAGE) {
       let e = (0, u.ZP)(t);
-      if (null == e || !H(n, [e])) throw new j.Z({
+      if (null == e || !B(n, [e])) throw new j.Z({
         closeCode: A.$VG.INVALID_ORIGIN
       }, "Invalid Origin")
     } else {
       let e = await J(t);
-      if (r = h.ZP.createFromServer(e), !H(n, e.rpc_origins)) throw new j.Z({
+      if (r = h.ZP.createFromServer(e), !B(n, e.rpc_origins)) throw new j.Z({
         closeCode: A.$VG.INVALID_ORIGIN
       }, "Invalid Origin")
     } null == r && (r = h.ZP.createFromServer(await J(t)));

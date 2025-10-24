@@ -97,7 +97,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk890332 = require("./890332.js"),
   Chunk197571 = require("./197571.js");
 
-function eB(e, t, n) {
+function eH(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -113,7 +113,7 @@ function eV(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      eB(e, t, n[t])
+      eH(e, t, n[t])
     })
   }
   return e
@@ -132,7 +132,7 @@ function eF(e, t) {
   }), e
 }
 
-function eY(e, t) {
+function ez(e, t) {
   if (null == e) return {};
   var n, r, i = function(e, t) {
     if (null == e) return {};
@@ -147,7 +147,7 @@ function eY(e, t) {
   }
   return i
 }
-let ez = {
+let eY = {
   offset: {
     left: false,
     top: false,
@@ -289,7 +289,7 @@ function eQ(e) {
         label: i,
         iconComponent: l,
         iconColor: c
-      } = e, u = eY(e, ["unavailable", "isActive", "label", "iconComponent", "iconColor"]);
+      } = e, u = ez(e, ["unavailable", "isActive", "label", "iconComponent", "iconColor"]);
       let d = (0, r.jsx)(S, {
         size: "md",
         className: a()(eG.buttonIcon, {
@@ -315,7 +315,7 @@ function eQ(e) {
         children: (e, l) => {
           var {
             onClick: o
-          } = e, c = eY(e, ["onClick"]), {
+          } = e, c = ez(e, ["onClick"]), {
             isShown: p
           } = l;
           return (0, r.jsx)(g.aML, {
@@ -350,7 +350,7 @@ function eQ(e) {
               innerClassName: eG.buttonContents,
               wrapperClassName: eG.button,
               fullWidth: true,
-              focusProps: ez,
+              focusProps: eY,
               children: C ? d : (0, r.jsxs)(M.Z, {
                 align: M.Z.Align.CENTER,
                 children: [d, eU.intl.string(eU.t.FlNoSV)]
@@ -427,7 +427,7 @@ function eJ(e) {
           }),
           innerClassName: eG.buttonContents,
           wrapperClassName: eG.button,
-          focusProps: ez,
+          focusProps: eY,
           children: [i === d.z.ACTIVITIES_VOICE_LAUNCHER_BADGE && (0, r.jsx)(j.r, {
             top: false,
             right: false
@@ -507,7 +507,7 @@ function eX(e) {
       var {
         onClick: n,
         onMouseEnter: i
-      } = e, l = eY(e, ["onClick", "onMouseEnter"]);
+      } = e, l = ez(e, ["onClick", "onMouseEnter"]);
       return (0, r.jsx)(g.aML, {
         "data-migration-pending": true,
         text: N,
@@ -536,7 +536,7 @@ function eX(e) {
           },
           innerClassName: eG.buttonContents,
           wrapperClassName: eG.button,
-          focusProps: ez,
+          focusProps: eY,
           children: j ? R : (0, r.jsxs)(M.Z, {
             align: M.Z.Align.CENTER,
             children: [R, eU.intl.string(eU.t["r0/+v7"])]
@@ -677,7 +677,7 @@ class e$ extends Chunk647438.PureComponent {
         enableActivities: Chunk647438
       }) : null, (0, Chunk641015.Z)(module) ? (0, Chunk951288.jsx)(Chunk848543.Z, {
         channel: module,
-        focusProps: ez
+        focusProps: eY
       }) : null]
     })
   }
@@ -716,14 +716,14 @@ class e$ extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), eB(this, "ref", i.createRef()), eB(this, "krispButtonRef", i.createRef()), eB(this, "handleChannelLinkClick", e => {
+    super(...e), eH(this, "ref", i.createRef()), eH(this, "krispButtonRef", i.createRef()), eH(this, "handleChannelLinkClick", e => {
       var t;
       let {
         guild: n,
         channel: r
       } = this.props;
       o()(null != r, "Channel is null during navigation click"), e.stopPropagation(), E.Z.channelListScrollTo(null != (t = null == n ? true : n.id) ? t : eL.ME, r.id), (0, L.v)(P.Z.RTC_PANEL, L.d.CHANNEL_LINK)
-    }), eB(this, "handleChannelLinkContextMenu", e => {
+    }), eH(this, "handleChannelLinkContextMenu", e => {
       let {
         channel: t,
         analyticsLocations: i
@@ -740,9 +740,9 @@ class e$ extends Chunk647438.PureComponent {
           }))
         })
       })
-    }), eB(this, "handleCloseVoicePanelIntroduction", () => {
+    }), eH(this, "handleCloseVoicePanelIntroduction", () => {
       F.Kw(eM.v.VOICE_PANEL_INTRODUCTION)
-    }), eB(this, "renderVoicePanelIntroduction", () => (0, r.jsxs)("div", {
+    }), eH(this, "renderVoicePanelIntroduction", () => (0, r.jsxs)("div", {
       className: a()(eG.voicePanelIntroductionWrapper, "theme-light"),
       children: [(0, r.jsx)(g.Heading, {
         className: eG.voicePanelIntroductionHeader,
@@ -756,7 +756,7 @@ class e$ extends Chunk647438.PureComponent {
         fullWidth: true,
         onClick: this.handleCloseVoicePanelIntroduction,
         text: eU.intl.string(eU.t.shaBeH),
-        focusProps: ez
+        focusProps: eY
       })]
     }))
   }
@@ -812,7 +812,7 @@ let e1 = (0, Chunk730749.Z)(function(e) {
     {
       channelId: s
     } = a,
-    o = eY(a, ["channelId"]),
+    o = ez(a, ["channelId"]),
     c = (0, u.e7)([e_.Z], () => e_.Z.getChannel(s), [s]),
     d = null == c ? true : c.getGuildId(),
     p = (0, u.e7)([eb.Z], () => eb.Z.getGuild(d), [d]),
@@ -820,13 +820,13 @@ let e1 = (0, Chunk730749.Z)(function(e) {
       noiseCancellationSupported: eO.Z.isNoiseCancellationSupported(),
       noiseCancellationActive: eO.Z.getNoiseCancellation(),
       noiseCancellationError: eO.Z.isNoiseCancellationError(),
-      canGoLive: (0, B.Z)(eO.Z)
+      canGoLive: (0, H.Z)(eO.Z)
     })),
-    h = (0, u.e7)([eO.Z, Y.Z], () => Y.Z.hasHotspot(eM.v.VOICE_PANEL_INTRODUCTION) && (0, eP.EO)(l) && !eO.Z.isInteractionRequired() && !(null == c ? true : c.isGuildStageVoice())),
+    h = (0, u.e7)([eO.Z, z.Z], () => z.Z.hasHotspot(eM.v.VOICE_PANEL_INTRODUCTION) && (0, eP.EO)(l) && !eO.Z.isInteractionRequired() && !(null == c ? true : c.isGuildStageVoice())),
     m = (0, u.e7)([eS.Z], () => null != s && eS.Z.hasVideo(s), [s]),
     _ = (0, u.e7)([em.Z], () => em.Z.getCurrentUserActiveStream()),
     b = (0, u.e7)([eE.Z], () => eE.Z.hasLayers()),
-    E = (0, u.e7)([z.Z], () => z.Z.isViewingRoles(d)),
+    E = (0, u.e7)([Y.Z], () => Y.Z.isViewingRoles(d)),
     O = (0, u.e7)([eI.Z], () => E && !eI.Z.can(eL.Plq.VIEW_CHANNEL, c), [E, c]),
     I = el.Fg.useSetting(),
     [y, v, S] = (0, u.Wu)([eT.ZP, X.Z], () => (null == c ? true : c.isGuildStageVoice()) ? [X.Z.getMutableParticipants(c.id, $.pV.SPEAKER), X.Z.getParticipantsVersion(c.id), null] : [null, null, null != c ? eT.ZP.getVoiceStatesForChannel(c) : null], [c]),
@@ -856,7 +856,7 @@ let e1 = (0, Chunk730749.Z)(function(e) {
     value: Z,
     children: (0, r.jsxs)("div", {
       className: eG.wrapper,
-      children: [null != t || null != n ? (0, r.jsx)(H.Z, {
+      children: [null != t || null != n ? (0, r.jsx)(B.Z, {
         voiceState: t,
         awaitingRemoteSessionInfo: n
       }) : null, (0, r.jsx)(e$, eF(eV({}, e, f, o), {
@@ -885,7 +885,7 @@ let e1 = (0, Chunk730749.Z)(function(e) {
             A(true)
           },
           text: eU.intl.string(eU.t.WAI6xu),
-          focusProps: ez
+          focusProps: eY
         })]
       }) : null]
     })

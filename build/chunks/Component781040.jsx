@@ -1,4 +1,4 @@
-/** Chunk was on 3091 **/
+/** Chunk was on 63076 **/
 /** chunk id: 781040, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -40,7 +40,7 @@ function v(e) {
   return e
 }
 
-function j(e, t) {
+function O(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -52,7 +52,7 @@ function j(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let O = e => {
+let j = e => {
     let {
       widgetTitle: t,
       children: n
@@ -107,7 +107,7 @@ let O = e => {
         let {
           default: e
         } = await n.e("70887").then(n.bind(n, 37668));
-        return t => (0, r.jsx)(e, j(v({}, t), {
+        return t => (0, r.jsx)(e, O(v({}, t), {
           userId: f.default.getId(),
           widget: i,
           trackUserProfileEditAction: o
@@ -153,13 +153,13 @@ let O = e => {
       buttonRef: i,
       additionalMenuItems: l
     } = e, o = (0, p.mR)(t), s = (0, d.Dt)();
-    return (0, r.jsx)(O, {
+    return (0, r.jsx)(j, {
       widgetTitle: o,
       children: e => (0, r.jsx)(x, {
         targetRef: i,
         widget: t,
         additionalMenuItems: l,
-        children: t => (0, r.jsxs)(c.P3F, j(v({
+        children: t => (0, r.jsxs)(c.P3F, O(v({
           innerRef: i,
           className: a()(y.dragHandleButton, n),
           "data-dnd-name": o,

@@ -98,9 +98,9 @@ let C = Math.ceil(Math.sqrt(115200)),
         glowSpring: 1,
         delay: 700
       }), m.default.track(O.rMx.QUEST_HOME_ONBOARDING_POPOVER_RENDERED)
-    }, [D, w]), [U, G] = i.useState(false), H = i.useCallback(e => {
+    }, [D, w]), [U, G] = i.useState(false), B = i.useCallback(e => {
       G(e.contentRect.width)
-    }, []), B = (0, p.y)(H, [], {
+    }, []), H = (0, p.y)(B, [], {
       fireOnMount: true
     });
     return (0, r.jsxs)(r.Fragment, {
@@ -110,7 +110,7 @@ let C = Math.ceil(Math.sqrt(115200)),
         onMouseLeave: M,
         onFocus: R,
         onBlur: M,
-        ref: B,
+        ref: H,
         style: {
           "--custom-shine-dimensions": "".concat(240, "px"),
           "--custom-shine-rotated-dimensions-delta": "".concat(S, "px")

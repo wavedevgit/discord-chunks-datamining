@@ -1,4 +1,4 @@
-/** Chunk was on 3091 **/
+/** Chunk was on 63076 **/
 /** chunk id: 311044, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -27,16 +27,16 @@ function b(e) {
     analyticsLocations: y
   } = (0, l.ZP)(), {
     context: v,
-    trackUserProfileAction: j
+    trackUserProfileAction: O
   } = (0, c.KZ)(), {
-    mutualFriends: O,
+    mutualFriends: j,
     mutualFriendsCount: x
   } = (0, s.Z)(t), _ = (0, a.Z)();
   return i.useEffect(() => {
     (0, u.Z)(t.id, _)
   }, [t.id, _]), (0, r.jsx)(p.F, {
     className: m.scroller,
-    children: null == O ? Array.from({
+    children: null == j ? Array.from({
       length: null != x ? x : 10
     }).map((e, t) => (0, r.jsxs)("div", {
       className: m.friendsLoadingItem,
@@ -47,7 +47,7 @@ function b(e) {
         width: 135,
         opacity: .08
       })]
-    }, t)) : 0 === O.length ? (0, r.jsx)(g.s_, {}) : O.map(e => {
+    }, t)) : 0 === j.length ? (0, r.jsx)(g.s_, {}) : j.map(e => {
       let {
         key: t,
         user: i,
@@ -60,7 +60,7 @@ function b(e) {
         channelId: b,
         onSelect: () => {
           var e, t;
-          null == h || h(), j({
+          null == h || h(), O({
             action: "PRESS_MUTUAL_FRIEND"
           }), (0, d.openUserProfileModal)((e = function(e) {
             for (var t = 1; t < arguments.length; t++) {

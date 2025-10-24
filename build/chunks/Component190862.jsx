@@ -1,7 +1,7 @@
-/** Chunk was on 3091 **/
+/** Chunk was on 63076 **/
 /** chunk id: 190862, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => O
 });
 var Chunk951288 = require("./951288.js"),
   Chunk296009 = require("./296009.js"),
@@ -77,7 +77,7 @@ let v = e => {
         return null
     }
   },
-  j = e => {
+  O = e => {
     var {
       widget: t,
       user: n,
@@ -88,11 +88,11 @@ let v = e => {
         shouldShowSuggestions: g,
         handleDismissSuggestions: p
       } = (0, s.h)(f),
-      j = (0, a.e7)([l.default], () => l.default.getId() === n.id),
-      O = j && !i && g,
+      O = (0, a.e7)([l.default], () => l.default.getId() === n.id),
+      j = O && !i && g,
       x = (0, o.mR)(f),
       _ = (0, o.Hy)(f, {
-        isCurrentUser: j
+        isCurrentUser: O
       }),
       P = (0, o.kQ)(f),
       I = 1 === (0, o.Gv)(f.type);
@@ -102,12 +102,12 @@ let v = e => {
       disableInteraction: i,
       headerTitle: x,
       headerSubtitle: _,
-      headerActionButtons: j && !I ? [(0, r.jsx)(u.yX, {
+      headerActionButtons: O && !I ? [(0, r.jsx)(u.yX, {
         disabled: P,
         widgetType: f.type,
         widget: f
       }, "".concat(f.type, "-browse-games-popout"))] : true,
-      trailingContent: O && (0, r.jsx)(m.Z, {
+      trailingContent: j && (0, r.jsx)(m.Z, {
         userId: n.id,
         widgetType: f.type,
         onDismiss: p,

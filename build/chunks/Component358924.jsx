@@ -71,7 +71,7 @@ let es = [14, 14, 12, 12, 10, 8, 6],
   },
   ec = function(e) {
     let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null,
-      n = B.o.getConfig({
+      n = H.o.getConfig({
         location: "nowplaying"
       }).demureActivityCards;
     return (0, i.jsx)(f.Text, {
@@ -275,7 +275,7 @@ let eE = e => {
     onIconClick: s,
     onContextMenu: o,
     guildId: c
-  } = e, u = B.o.useConfig({
+  } = e, u = H.o.useConfig({
     location: "nowplaying"
   }).demureActivityCards, d = (0, i.jsx)(f.Text, {
     color: u ? "text-muted" : "header-secondary",
@@ -393,7 +393,7 @@ eO.Header = eE, eO.Body = e => {
       ref: u,
       onContextMenu: e => c(e, r),
       children: [(0, i.jsx)(f.P3F, {
-        onClick: () => (0, z.X)(n.id),
+        onClick: () => (0, Y.X)(n.id),
         "aria-hidden": true,
         tabIndex: false,
         children: (0, i.jsxs)("div", {
@@ -422,7 +422,7 @@ eO.Header = eE, eO.Body = e => {
         })
       }), (0, i.jsx)(f.P3F, {
         onClick: () => {
-          h.default.selectVoiceChannel(r.id), (0, Y.Kh)(r.id)
+          h.default.selectVoiceChannel(r.id), (0, z.Kh)(r.id)
         },
         focusProps: {
           ringTarget: u
@@ -525,10 +525,10 @@ eO.Header = eE, eO.Body = e => {
           } = o;
           return null == e || !(0, I.Z)(o) || (0, y.Z)(o) ? null : ec((0, O.Z)(o) ? (0, i.jsx)(eu, {
             timestamps: e
-          }) : (0, i.jsx)(H.ZP, {
+          }) : (0, i.jsx)(B.ZP, {
             start: e.start,
             end: e.end,
-            location: H.ZP.Locations.USER_ACTIVITY,
+            location: B.ZP.Locations.USER_ACTIVITY,
             className: ea.__invalid_playTime
           }))
         })()]

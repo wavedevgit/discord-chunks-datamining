@@ -1,5 +1,5 @@
-/** Chunk was on 93886 **/
-/** chunk id: 491662, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 88742 **/
+/** chunk id: 491662, original params: t,n,e (module,exports,require) **/
 require.d(exports, {
   o: () => o
 });
@@ -8,17 +8,17 @@ var Chunk647438 = require("./647438.js"),
   Chunk384275 = require("./384275.js"),
   Chunk881998 = require("./881998.js");
 
-function o(e, t) {
-  let n = (0, i.e7)([a.Z], () => a.Z.getNewestTokenForApplication(e)),
-    o = (0, i.e7)([a.Z], () => null != e ? a.Z.getFetchStateForApplication(e) : a.M.NOT_FETCHED),
-    s = o === a.M.FETCHED,
+function o(t, n) {
+  let e = (0, a.e7)([l.Z], () => l.Z.getNewestTokenForApplication(t)),
+    o = (0, a.e7)([l.Z], () => null != t ? l.Z.getFetchStateForApplication(t) : l.M.NOT_FETCHED),
+    r = o === l.M.FETCHED,
     {
       disableFetch: c = false
-    } = null != t ? t : {};
-  return r.useEffect(() => {
-    c || o !== a.M.NOT_FETCHED || null != e && l.Z.fetchByApplicationId(e)
-  }, [c, o, e]), {
-    token: n,
-    fetched: s
+    } = null != n ? n : {};
+  return i.useEffect(() => {
+    c || o !== l.M.NOT_FETCHED || null != t && s.Z.fetchByApplicationId(t)
+  }, [c, o, t]), {
+    token: e,
+    fetched: r
   }
 }

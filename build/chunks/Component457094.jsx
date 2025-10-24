@@ -177,7 +177,7 @@ let tt = (0, Chunk951752.l)(e => {
         }
       },
       children: (0, r.jsx)(a.l_, {
-        to: eY.Z.defaultRoute
+        to: ez.Z.defaultRoute
       })
     })
   }),
@@ -265,7 +265,7 @@ let ts = [{
       userId: n,
       sourceAnalyticsLocations: [S.Z.URI_SCHEME]
     })), (0, r.jsx)(a.l_, {
-      to: eY.Z.defaultRoute
+      to: ez.Z.defaultRoute
     })
   }
 }, {
@@ -330,7 +330,7 @@ let ts = [{
       subsection: (0, ee.Z)(e3.KsC, i),
       feature: s
     })), (0, r.jsx)(a.l_, {
-      to: eY.Z.defaultRoute
+      to: ez.Z.defaultRoute
     })
   },
   isSessionRequired: true
@@ -519,7 +519,7 @@ class tu extends Chunk647438.PureComponent {
     } = e;
     ! function(e) {
       if (q.Z.isConnected() || q.Z.isTryingToConnect()) return;
-      let t = eB.default.getToken();
+      let t = eH.default.getToken();
       null != t && null != function(e) {
         for (let {
             path: t,
@@ -585,7 +585,7 @@ class tu extends Chunk647438.PureComponent {
       } else tl.some(t => {
         var n;
         return (null == (n = (0, a.LX)(e, t)) ? true : n.isExact) === true
-      }) || (0, ey.dL)(eY.Z.fallbackRoute)
+      }) || (0, ey.dL)(ez.Z.fallbackRoute)
     }(n, r), (0, k.pN)(n, i, "REPLACE" === t)
   }
   ensureChannelMatchesGuild(e) {

@@ -120,15 +120,15 @@ function A(e) {
     quest: _,
     questContent: m.jn.ACTIVITY_PANEL,
     sourceQuestContent: m.jn.ACTIVITY_PANEL
-  }), G = (null == (t = _.userStatus) ? true : t.enrolledAt) != null, H = (null == (n = _.userStatus) ? true : n.completedAt) != null, B = (0, f.Rf)(_), V = (0, g.DD)({
+  }), G = (null == (t = _.userStatus) ? true : t.enrolledAt) != null, B = (null == (n = _.userStatus) ? true : n.completedAt) != null, H = (0, f.Rf)(_), V = (0, g.DD)({
     quest: _,
-    taskDetails: B,
+    taskDetails: H,
     location: S.dr.ACTIVITY_PANEL,
     questContent: m.jn.ACTIVITY_PANEL,
     sourceQuestContent: m.jn.ACTIVITY_PANEL
-  }), F = (0, d.Rt)(_), Y = (0, g.CR)({
+  }), F = (0, d.Rt)(_), z = (0, g.CR)({
     quest: _
-  }), z = F ? Y : N.intl.string(N.t.l7E81v);
+  }), Y = F ? z : N.intl.string(N.t.l7E81v);
   return (0, r.jsxs)("div", {
     ref: e => {
       c.current = e
@@ -184,13 +184,13 @@ function A(e) {
           children: V
         })
       })]
-    }), G && !H && (0, r.jsx)(C.Z, {
+    }), G && !B && (0, r.jsx)(C.Z, {
       autoplay: T,
       className: j.rewardTileWithInstructions,
       quest: _,
       questContent: m.jn.ACTIVITY_PANEL,
       location: S.dr.ACTIVITY_PANEL,
-      taskDetails: B,
+      taskDetails: H,
       sourceQuestContent: m.jn.ACTIVITY_PANEL
     }), (0, r.jsxs)("div", {
       className: j.ctas,
@@ -204,18 +204,18 @@ function A(e) {
           onClick: k
         }), (0, r.jsx)(o.Button, {
           variant: "primary",
-          text: z,
+          text: Y,
           onClick: R,
           loading: E,
           icon: (0, I.getPrimaryCtaIcon)(_)
         })]
-      }), G && !H && (0, r.jsx)(o.Button, {
+      }), G && !B && (0, r.jsx)(o.Button, {
         variant: "primary",
         size: "sm",
         fullWidth: true,
         text: N.intl.string(N.t.VN1Ajl),
         onClick: M
-      }), H && (0, r.jsx)(o.Button, {
+      }), B && (0, r.jsx)(o.Button, {
         variant: "primary",
         size: "sm",
         fullWidth: true,

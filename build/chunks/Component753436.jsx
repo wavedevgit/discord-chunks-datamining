@@ -1,7 +1,7 @@
-/** Chunk was on 3091 **/
+/** Chunk was on 63076 **/
 /** chunk id: 753436, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  S: () => O
+  S: () => j
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,7 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk932366 = require("./932366.js"),
   Chunk133458 = require("./133458.js");
 
-function j(e) {
+function O(e) {
   let {
     index: t,
     widgetType: n,
@@ -63,7 +63,7 @@ function j(e) {
   })
 }
 
-function O(e) {
+function j(e) {
   let {
     game: t,
     userId: n,
@@ -73,7 +73,7 @@ function O(e) {
     disableInteraction: d = false,
     index: f,
     onRemoveGame: h,
-    coverRef: O
+    coverRef: j
   } = e, x = (0, b.Z)(t.applicationId).length > 0, _ = c.default.getCurrentUser(), P = (null == _ ? true : _.id) === n, I = !d && P, w = (0, u.kO)(t.applicationId), {
     isDragging: S
   } = (0, o.f)(e => ({
@@ -87,7 +87,7 @@ function O(e) {
       disableInteraction: d,
       className: l()(x ? v.socialProofBackdrop : true, (null == t ? true : t.imageSrc) == null || d ? true : y.hoverActiveEffect),
       hideTooltip: S,
-      coverRef: O
+      coverRef: j
     }), I && (0, r.jsx)(p.Z, {
       game: t,
       widgetType: i,
@@ -104,7 +104,7 @@ function O(e) {
   });
   return w ? (0, r.jsx)("div", {
     className: y.loadingCover
-  }) : I ? (0, r.jsx)(j, {
+  }) : I ? (0, r.jsx)(O, {
     widgetType: i,
     index: null != f ? f : 0,
     game: t,

@@ -1,4 +1,4 @@
-/** Chunk was on 3091 **/
+/** Chunk was on 63076 **/
 /** chunk id: 879877, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -29,11 +29,11 @@ function h(e) {
     disableInteraction: h = false
   } = e, x = null != (t = null == n ? true : n.filter(e => null != (0, p.zK)(e))) ? t : [], _ = x.length > 0, P = o.qH, I = a && !h && (0, f.M8)(c) && x.length < P, {
     trackUserProfileAction: w
-  } = (0, d.KZ)(), S = (0, i.useRef)(new Map), E = (0, i.useRef)(null), T = (0, i.useRef)(null), [C, D] = (0, i.useState)(0), [N, A] = (0, i.useState)(false), k = O(E, T, x, S, D);
-  if ((0, i.useEffect)(() => (k(), window.addEventListener("resize", k), () => {
-      window.removeEventListener("resize", k)
-    }), [k, null == x ? true : x.join("")]), !_ && !I) return null;
-  let Z = N ? x : x.slice(0, x.length - C);
+  } = (0, d.KZ)(), S = (0, i.useRef)(new Map), E = (0, i.useRef)(null), T = (0, i.useRef)(null), [C, D] = (0, i.useState)(0), [k, N] = (0, i.useState)(false), A = j(E, T, x, S, D);
+  if ((0, i.useEffect)(() => (A(), window.addEventListener("resize", A), () => {
+      window.removeEventListener("resize", A)
+    }), [A, null == x ? true : x.join("")]), !_ && !I) return null;
+  let Z = k ? x : x.slice(0, x.length - C);
   return (0, r.jsxs)("div", {
     className: l()(b.tagListContainer, u),
     children: [_ && (0, r.jsxs)(r.Fragment, {
@@ -50,16 +50,16 @@ function h(e) {
           },
           disableInteraction: h
         }, e))
-      }), C > 0 && (N ? (0, r.jsx)(j, {
+      }), C > 0 && (k ? (0, r.jsx)(O, {
         onClick: () => {
-          A(false), w({
+          N(false), w({
             action: "COLLAPSE_GAME_TAGS"
           })
         }
       }) : (0, r.jsx)(v, {
         numHidden: C,
         onClick: () => {
-          A(true), w({
+          N(true), w({
             action: "EXPAND_GAME_TAGS"
           })
         },
@@ -151,7 +151,7 @@ let y = e => {
       })
     })
   },
-  j = e => {
+  O = e => {
     let {
       onClick: t
     } = e;
@@ -171,7 +171,7 @@ let y = e => {
       })
     })
   },
-  O = (e, t, n, r, a) => (0, i.useCallback)(() => {
+  j = (e, t, n, r, a) => (0, i.useCallback)(() => {
     var i, l, o, c;
     if (null == n) return void a(0);
     let s = null != (o = null == (i = e.current) ? true : i.getBoundingClientRect().width) ? o : 0,

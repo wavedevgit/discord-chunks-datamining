@@ -1,4 +1,4 @@
-/** Chunk was on 3091 **/
+/** Chunk was on 63076 **/
 /** chunk id: 778414, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   C: () => H,
@@ -59,7 +59,7 @@ function G(e) {
   return e
 }
 
-function B(e, t) {
+function L(e, t) {
   if (null == e) return {};
   var n, r, i = function(e, t) {
     if (null == e) return {};
@@ -78,7 +78,7 @@ function B(e, t) {
 function M(e) {
   var {
     widget: t
-  } = e, n = B(e, ["widget"]);
+  } = e, n = L(e, ["widget"]);
   return t instanceof h.q ? (0, r.jsx)(w.Z, G({
     widget: t
   }, n)) : t instanceof y.zy ? (0, r.jsx)(D.Z, G({
@@ -105,7 +105,7 @@ function U(e) {
     user: t
   } = e, {
     application: n
-  } = (0, O.G)(), {
+  } = (0, j.G)(), {
     token: i
   } = (0, d.o)(null == n ? true : n.id), a = (0, I.Z)(t.id), l = (0, v.k)({
     location: "ApplicationWidgetUpsell"
@@ -138,8 +138,8 @@ function W(e) {
     }, [e, t, n]), "GB" === e && n
   })(), d = (0, v.k)({
     location: "UserProfileModalV2Widgets"
-  }), f = 0 === l.length && c, O = i.useMemo(() => l.filter(y.Wc), [l]), x = i.useMemo(() => l.filter(e => e instanceof h.q), [l]);
-  (0, P.ZP)(O), (0, j.J)(c, O);
+  }), f = 0 === l.length && c, j = i.useMemo(() => l.filter(y.Wc), [l]), x = i.useMemo(() => l.filter(e => e instanceof h.q), [l]);
+  (0, P.ZP)(j), (0, O.J)(c, j);
   var w = t.id;
   (0, _.s)(x);
   let {
@@ -149,7 +149,7 @@ function W(e) {
   D.current = S, i.useEffect(() => {
     null !== D.current && C()
   }, [C]);
-  let A = () => (0, r.jsxs)(r.Fragment, {
+  let N = () => (0, r.jsxs)(r.Fragment, {
     children: [c && s && (0, r.jsx)(F, {}), c && (0, r.jsx)(U, {
       user: t
     }), l.map((e, i) => (0, r.jsx)(M, {
@@ -161,27 +161,27 @@ function W(e) {
     }, e.type)), c && (0, r.jsx)(E.Z, {})]
   });
   if (f)
-    if (d) return (0, r.jsx)(N.Z, {});
+    if (d) return (0, r.jsx)(k.Z, {});
     else return (0, r.jsx)(Z.Z, {});
   return c ? (0, r.jsx)(T.K, {
-    children: A()
-  }) : A()
+    children: N()
+  }) : N()
 }
 
 function H(e) {
   var {
     user: t
-  } = e, n = B(e, ["user"]);
+  } = e, n = L(e, ["user"]);
   let a = i.useRef(null);
   (0, x.r)({
     container: a.current
   });
-  let o = (0, A.h)(t.id);
-  return (0, r.jsxs)(k.F, {
+  let o = (0, N.h)(t.id);
+  return (0, r.jsxs)(A.F, {
     "data-scroller": true,
     scrollerRef: a,
-    className: l()(L.scroller, {
-      [L.hasToolbar]: o
+    className: l()(B.scroller, {
+      [B.hasToolbar]: o
     }),
     fade: true,
     children: [(0, r.jsx)(C.Z, {

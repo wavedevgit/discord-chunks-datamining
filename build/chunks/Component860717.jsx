@@ -1,4 +1,4 @@
-/** Chunk was on 3091 **/
+/** Chunk was on 63076 **/
 /** chunk id: 860717, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Q
@@ -62,8 +62,8 @@ function D(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let N = /{{(.*?)}}/g,
-  A = [{
+let k = /{{(.*?)}}/g,
+  N = [{
     type: "HERO",
     title: "{{username}}",
     image: "{{featured_played_character_image}}",
@@ -158,7 +158,7 @@ let N = /{{(.*?)}}/g,
     }]
   }];
 
-function k(e) {
+function A(e) {
   return null != e && e.loadingState === u.f.LOADED_SUCCESS && null != e.width && null != e.height
 }
 
@@ -166,7 +166,7 @@ function Z(e) {
   let {
     component: t
   } = e;
-  if (Array.isArray(t)) return L(t);
+  if (Array.isArray(t)) return B(t);
   switch (t.type) {
     case "HERO":
       let {
@@ -187,11 +187,11 @@ function Z(e) {
         return i
       }(t, ["body"]);
       return (0, r.jsx)(G, D(C({}, i), {
-        body: L(n)
+        body: B(n)
       }));
     case "GRID":
-      return (0, r.jsx)(B, {
-        children: L(t.children)
+      return (0, r.jsx)(L, {
+        children: B(t.children)
       });
     case "FIELD":
       return (0, r.jsx)(M, {
@@ -215,7 +215,7 @@ function R(e, t) {
   }, t)
 }
 
-function L(e) {
+function B(e) {
   return e.map((e, t) => R(e, t))
 }
 
@@ -240,9 +240,9 @@ function G(e) {
         color: "muted",
         children: n
       })]
-    }), k(i) ? (0, r.jsx)("div", {
+    }), A(i) ? (0, r.jsx)("div", {
       className: T.heroImageContainer,
-      children: (0, r.jsx)(O.ZP, {
+      children: (0, r.jsx)(j.ZP, {
         src: i.proxyUrl,
         alt: "",
         width: i.width,
@@ -263,7 +263,7 @@ function G(e) {
   })
 }
 
-function B(e) {
+function L(e) {
   let {
     children: t
   } = e;
@@ -301,9 +301,9 @@ function U(e) {
     content: t,
     image: n,
     imagePosition: i
-  } = e, a = (0, h._)(), o = k(n) ? (0, r.jsx)("div", {
+  } = e, a = (0, h._)(), o = A(n) ? (0, r.jsx)("div", {
     className: l()(T.image, a.className),
-    children: (0, r.jsx)(O.ZP, {
+    children: (0, r.jsx)(j.ZP, {
       src: n.proxyUrl,
       alt: "",
       width: n.width,
@@ -342,7 +342,7 @@ function H() {
     }(),
     {
       game: t
-    } = Y(module.widget);
+    } = q(module.widget);
   return null == exports ? null : (0, Chunk951288.jsx)(Chunk919498.Z, {
     className: Chunk18827.socialProof,
     applicationId: exports.id,
@@ -353,7 +353,7 @@ function H() {
 
 function z(e, t) {
   if (null == e) return null;
-  let n = e.split(N);
+  let n = e.split(k);
   if (1 === n.length) return n[0];
   if ("skeleton" === t.mode) return null;
   let r = "";
@@ -372,14 +372,14 @@ function z(e, t) {
 function K(e, t) {
   var n, r;
   if (null == e || "skeleton" === t.mode) return null;
-  let i = null == (r = e.match(N)) || null == (n = r[0]) ? true : n.slice(2, false);
+  let i = null == (r = e.match(k)) || null == (n = r[0]) ? true : n.slice(2, false);
   if (null == i) return null;
   let a = t.variables[i];
   return null == a || "unfurled_media" !== a.type ? null : a.media
 }
 let V = Chunk647438.createContext(null);
 
-function Y(e) {
+function q(e) {
   return (0, o.cj)([f.Z, I.Z, _.Z], () => {
     let t = f.Z.getApplication(e.applicationId);
     return {
@@ -390,7 +390,7 @@ function Y(e) {
   })
 }
 
-function q(e) {
+function X(e) {
   let {
     children: t,
     widget: n
@@ -411,7 +411,7 @@ function q(e) {
   })
 }
 
-function X(e) {
+function Y(e) {
   return (0, r.jsxs)(s.Kqy, {
     direction: "horizontal",
     gap: 24,
@@ -448,7 +448,7 @@ let Q = Object.assign(function(e) {
     application: o,
     game: u,
     config: f
-  } = Y(n), m = null == o ? true : o.getIconURL(16), b = (0, x.O)(t.id).data, h = null == b ? true : b.find(e => e.application_id === n.applicationId), y = (0, p.Z)({
+  } = q(n), m = null == o ? true : o.getIconURL(16), b = (0, x.O)(t.id).data, h = null == b ? true : b.find(e => e.application_id === n.applicationId), y = (0, p.Z)({
     location: "UserProfileApplicationWidget",
     applicationId: null == u ? true : u.id,
     source: g.m1.UserProfile,
@@ -456,10 +456,10 @@ let Q = Object.assign(function(e) {
     trackEntryPointImpression: true
   }), {
     fetched: v,
-    hasAlreadyLinked: O,
+    hasAlreadyLinked: j,
     canStartAuthorization: _,
     startAuthorization: I
-  } = (0, d.FG)(o), S = null == a && v && !O && _, N = (0, r.jsxs)(r.Fragment, {
+  } = (0, d.FG)(o), S = null == a && v && !j && _, k = (0, r.jsxs)(r.Fragment, {
     children: [null != m ? (0, r.jsx)("img", {
       className: T.appIcon,
       src: m,
@@ -474,9 +474,9 @@ let Q = Object.assign(function(e) {
         className: T.textPlaceholder
       })
     })]
-  }), k = null == u ? (0, r.jsx)("div", {
+  }), A = null == u ? (0, r.jsx)("div", {
     className: T.header,
-    children: N
+    children: k
   }) : (0, r.jsx)(c.u, {
     asContainer: true,
     text: E.intl.string(E.t.ajHoOr),
@@ -484,7 +484,7 @@ let Q = Object.assign(function(e) {
       className: l()(T.header, T.headerClickable),
       onClick: y,
       "aria-label": E.intl.string(E.t.ajHoOr),
-      children: N
+      children: k
     })
   }), R = i.useMemo(() => {
     var e, t, n, r, i;
@@ -500,7 +500,7 @@ let Q = Object.assign(function(e) {
         if ("object" == typeof n) {
           if ("url" in n && "proxy_url" in n && "loading_state" in n) return [t, {
             type: "unfurled_media",
-            media: (0, j.ym)(n)
+            media: (0, O.ym)(n)
           }]
         } else if ("string" == typeof n) return [t, {
           type: "string",
@@ -514,7 +514,7 @@ let Q = Object.assign(function(e) {
       }).filter(P.lm)),
       config: t
     });
-    return A.map(function e(t) {
+    return N.map(function e(t) {
       switch (t.type) {
         case "HERO":
           var n;
@@ -547,7 +547,7 @@ let Q = Object.assign(function(e) {
     userId: t.id,
     widget: n,
     className: T.widgetContainer,
-    headerTitle: k,
+    headerTitle: A,
     dragHandleAdditionalMenuItems: null != u ? (0, r.jsx)(s.sNh, {
       id: "view-game-profile",
       label: "View Game Profile",
@@ -556,7 +556,7 @@ let Q = Object.assign(function(e) {
     }) : null,
     children: [(0, r.jsx)(V.Provider, {
       value: e,
-      children: (0, r.jsx)(q, {
+      children: (0, r.jsx)(X, {
         widget: n,
         children: (0, r.jsx)(Z, {
           component: R
@@ -573,7 +573,7 @@ let Q = Object.assign(function(e) {
           color: "text-secondary",
           children: E.intl.string(E.t.z5K4Uv)
         })]
-      }), S ? (0, r.jsx)(X, {
+      }), S ? (0, r.jsx)(Y, {
         heading: E.intl.string(E.t.UDPRLO),
         content: E.intl.string(E.t["OW/2al"]),
         buttons: (0, r.jsx)(s.Button, {
@@ -584,5 +584,5 @@ let Q = Object.assign(function(e) {
     })]
   }))
 }, {
-  Cta: X
+  Cta: Y
 })

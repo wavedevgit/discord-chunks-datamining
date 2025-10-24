@@ -429,7 +429,7 @@ let eP = Chunk647438.memo(function(e) {
       }, "library") : null, u && !b ? (0, r.jsx)(ev, {
         selected: null == _ ? null != l && l.startsWith(es.Z5c.MESSAGE_REQUESTS) : _ === es.Z5c.MESSAGE_REQUESTS
       }, "message-requests") : null, o && !b ? (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(B.g, {
+        children: [(0, r.jsx)(H.g, {
           nitroTabButtonRef: S,
           selected: null == _ ? s : _.startsWith(es.Z5c.APPLICATION_STORE),
           route: es.Z5c.APPLICATION_STORE,
@@ -440,7 +440,7 @@ let eP = Chunk647438.memo(function(e) {
               object: es.qAy.NAVIGATION_LINK
             }
           }
-        }, "premium"), c && (0, r.jsx)(H.F, {
+        }, "premium"), c && (0, r.jsx)(B.F, {
           targetElementRef: S
         })]
       }) : null, b ? null : (0, r.jsx)(y.i, {
@@ -455,7 +455,7 @@ let eP = Chunk647438.memo(function(e) {
         }
       }, "discord-shop"), p && !b ? (0, r.jsx)(eC, {
         selected: null != l && l.startsWith(es.Z5c.FAMILY_CENTER) || null != _ && _.startsWith(es.Z5c.FAMILY_CENTER)
-      }, "family-center") : null, f && !b ? (0, r.jsx)(Y.Z, {
+      }, "family-center") : null, f && !b ? (0, r.jsx)(z.Z, {
         selected: null == _ ? null != l && l.startsWith(es.Z5c.QUEST_HOME_V2) : _ === es.Z5c.QUEST_HOME_V2
       }, "quests") : null, b || E ? null : (0, r.jsx)(ex, {}, "section-divider-top"), E ? null : (0, r.jsx)(T.Z, {}, "frequent-friends"), "full-width" !== h || E || b ? null : (0, r.jsx)(eI, {}, "create-dm")]
     }))]

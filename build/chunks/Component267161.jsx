@@ -87,8 +87,8 @@ let k = Chunk647438.memo(function() {
   Chunk647438.useLayoutEffect(() => {
     Chunk998502.ZP.setMinimumSize(Chunk741764.J, Chunk741764.N)
   }, []);
-  let H = (0, Chunk984802.Ll)(),
-    B = (0, Chunk442837.e7)([Chunk451478.Z, Chunk522474.Z], () => (0, Chunk228488.rB)()),
+  let B = (0, Chunk984802.Ll)(),
+    H = (0, Chunk442837.e7)([Chunk451478.Z, Chunk522474.Z], () => (0, Chunk228488.rB)()),
     V = function(e) {
       let {
         showBackForwardButtons: t,
@@ -103,13 +103,13 @@ let k = Chunk647438.memo(function() {
       titlebarFastTravel: require,
       showRecentsButton: G
     });
-  if (B) return null;
+  if (H) return null;
   let F = a()(Chunk82504.button, {
     [Chunk82504.smallButton]: "sm" === Chunk257966
   });
   return (0, Chunk951288.jsx)(Chunk481060.Wdt, {
     children: e => (0, r.jsx)(c.f6W, {
-      theme: H,
+      theme: B,
       children: t => {
         var i, a;
         return (0, r.jsx)(w.TF, {

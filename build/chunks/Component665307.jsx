@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 665307, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => B
+  Z: () => H
 }), require("./415506.js"), require("./388685.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -234,7 +234,7 @@ let D = (0, Chunk624138.Mg)(Chunk477690.Z.GAME_LIST_ROW_MIN_HEIGHT),
       children: (0, i.jsx)("div", w({}, u))
     })
   };
-class H extends(r = Chunk647438.PureComponent) {
+class B extends(r = Chunk647438.PureComponent) {
   componentDidMount() {
     let {
       fetched: e
@@ -427,7 +427,7 @@ class H extends(r = Chunk647438.PureComponent) {
   }
 }
 
-function B(e) {
+function H(e) {
   let t = l.useContext(S.AnalyticsContext),
     n = (0, o.TH)(),
     {
@@ -450,7 +450,7 @@ function B(e) {
       activeRowKey: C.Z.activeRowKey,
       isNavigatingByKeyboard: C.Z.isNavigatingByKeyboard
     }));
-  return (0, i.jsx)(H, L(w({}, e), {
+  return (0, i.jsx)(B, L(w({}, e), {
     analyticsContext: t,
     location: n,
     applicationViewItems: r,
@@ -462,6 +462,6 @@ function B(e) {
     isNavigatingByKeyboard: f
   }))
 }
-Z(H, "defaultProps", {
+Z(B, "defaultProps", {
   stickyHeader: false
 })

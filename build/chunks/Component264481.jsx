@@ -1,4 +1,4 @@
-/** Chunk was on 3091 **/
+/** Chunk was on 63076 **/
 /** chunk id: 264481, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   P9: () => P,
@@ -25,9 +25,9 @@ let h = [() => Chunk388032.intl.string(Chunk388032.t.madJdE), () => Chunk388032.
   v = [() => Chunk388032.intl.string(Chunk388032.t.AyMGXA), () => Chunk388032.intl.string(Chunk388032.t.aAFW7V), e => m.intl.formatToPlainString(m.t.h2g0cM, {
     name: e
   }), () => Chunk388032.intl.string(Chunk388032.t.rrYh58), () => Chunk388032.intl.string(Chunk388032.t["HX3K+F"]), () => Chunk388032.intl.string(Chunk388032.t["/yW3aY"]), () => Chunk388032.intl.string(Chunk388032.t["PmL/v0"]), () => Chunk388032.intl.string(Chunk388032.t.IALa3h), () => Chunk388032.intl.string(Chunk388032.t.HRcTFL), () => Chunk388032.intl.string(Chunk388032.t.NuCqPt), () => Chunk388032.intl.string(Chunk388032.t["M1tw+4"]), () => Chunk388032.intl.string(Chunk388032.t.UBm1y2), () => Chunk388032.intl.string(Chunk388032.t.Cu95PQ), () => Chunk388032.intl.string(Chunk388032.t["R/wFuh"]), () => Chunk388032.intl.string(Chunk388032.t.HQPAVT), () => Chunk388032.intl.string(Chunk388032.t.YolGh4)],
-  j = [Chunk981631.ABu.STEAM, Chunk981631.ABu.PLAYSTATION, Chunk981631.ABu.XBOX, Chunk981631.ABu.TWITCH, Chunk981631.ABu.BATTLENET, Chunk981631.ABu.LEAGUE_OF_LEGENDS, Chunk981631.ABu.EPIC_GAMES, Chunk981631.ABu.RIOT_GAMES, Chunk981631.ABu.ROBLOX, Chunk981631.ABu.SPOTIFY, Chunk981631.ABu.YOUTUBE, Chunk981631.ABu.CRUNCHYROLL, Chunk981631.ABu.BUNGIE];
+  O = [Chunk981631.ABu.STEAM, Chunk981631.ABu.PLAYSTATION, Chunk981631.ABu.XBOX, Chunk981631.ABu.TWITCH, Chunk981631.ABu.BATTLENET, Chunk981631.ABu.LEAGUE_OF_LEGENDS, Chunk981631.ABu.EPIC_GAMES, Chunk981631.ABu.RIOT_GAMES, Chunk981631.ABu.ROBLOX, Chunk981631.ABu.SPOTIFY, Chunk981631.ABu.YOUTUBE, Chunk981631.ABu.CRUNCHYROLL, Chunk981631.ABu.BUNGIE];
 
-function O(e) {
+function j(e) {
   let {
     heading: t,
     bodyText: n,
@@ -56,7 +56,7 @@ function x() {
       var e;
       return (null != (e = (0, Chunk392711.sample)(h)) ? module : h[0])()
     });
-  return (0, Chunk951288.jsx)(O, {
+  return (0, Chunk951288.jsx)(j, {
     heading: module,
     bodyText: exports
   })
@@ -68,7 +68,7 @@ function _() {
       var e;
       return (null != (e = (0, Chunk392711.sample)(y)) ? module : y[0])()
     });
-  return (0, Chunk951288.jsx)(O, {
+  return (0, Chunk951288.jsx)(j, {
     heading: module,
     bodyText: exports
   })
@@ -90,7 +90,7 @@ function P(e) {
       recipientIds: t.id
     }), null == s || s()
   }, [t.id, s]);
-  return (0, r.jsx)(O, {
+  return (0, r.jsx)(j, {
     heading: d,
     bodyText: p,
     children: (0, r.jsx)("div", {
@@ -108,7 +108,7 @@ function I() {
   let e = (0, Chunk410030.ZP)();
   return (0, Chunk951288.jsx)("div", {
     className: Chunk839468.connectionPlatforms,
-    children: j.map((t, n) => {
+    children: O.map((t, n) => {
       let i = s.Z.get(t);
       if (null == i) return null;
       let a = (0, l.wjy)(e) ? i.icon.darkPNG : i.icon.lightPNG;
@@ -134,7 +134,7 @@ function w(e) {
       subsection: "CONNECTED_GAMES"
     })
   }, [t]);
-  return (0, r.jsxs)(O, {
+  return (0, r.jsxs)(j, {
     heading: m.intl.string(m.t.VB6LWY),
     bodyText: m.intl.string(m.t.KpjsU9),
     children: [(0, r.jsx)(I, {}), (0, r.jsxs)("div", {

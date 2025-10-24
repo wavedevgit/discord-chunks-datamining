@@ -99,11 +99,11 @@ function N(e) {
   })) : N.pathname.startsWith(y.Z5c.QUEST_HOME_V2) && (t = C.intl.string(C.t.JALI2K), G = (0, r.jsx)(c.qDn, {
     size: D
   }));
-  let H = i.useCallback(e => {
+  let B = i.useCallback(e => {
       (0, g.ZN)("fast-travel")
     }, []),
-    B = (null == t || "" === t) && n ? C.intl.string(C.t.ZvKwYa) : t;
-  return null == B || "" === B ? null : (0, r.jsx)(c.aML, {
+    H = (null == t || "" === t) && n ? C.intl.string(C.t.ZvKwYa) : t;
+  return null == H || "" === H ? null : (0, r.jsx)(c.aML, {
     "data-migration-pending": true,
     shouldShow: n,
     "aria-label": C.intl.string(C.t["7P/+qz"]),
@@ -137,11 +137,11 @@ function N(e) {
           [T.fastTravel]: n
         })
       }, e, l), i = i = {
-        onClick: n ? H : true,
+        onClick: n ? B : true,
         children: [G, (0, r.jsx)(c.Text, {
           variant: "text-sm/medium",
           lineClamp: 1,
-          children: B
+          children: H
         }), n && (0, r.jsx)(c.Fbu, {
           className: T.fastTravelChevron,
           size: "xs"

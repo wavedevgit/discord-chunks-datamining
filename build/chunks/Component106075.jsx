@@ -63,10 +63,10 @@ function C() {
       })
     }),
     G = Chunk164991.Z.useField("fetchedQuery"),
-    H = Chunk647438.useCallback(e => {
+    B = Chunk647438.useCallback(e => {
       N(e), L && Z()
     }, [L, Z, N]),
-    B = Chunk647438.useMemo(() => L ? S.filter(e => {
+    H = Chunk647438.useMemo(() => L ? S.filter(e => {
       let {
         id: t
       } = e;
@@ -75,7 +75,7 @@ function C() {
     V = Chunk647438.useRef(new Chunk444324.Z(j)),
     {
       onGuildCardSeen: F,
-      onGuildCardClick: Y
+      onGuildCardClick: z
     } = (0, Chunk750910.H)({
       guildDiscoveryCardSeenManager: V.current,
       loadId: module.current
@@ -101,9 +101,9 @@ function C() {
         icon: Chunk481060.QTo
       }), !L && (0, Chunk951288.jsx)(c.Z, {
         className: U,
-        tabs: B,
+        tabs: H,
         selectedTab: L ? null : T,
-        onTabSelect: H,
+        onTabSelect: B,
         onAvailableWidthChange: R
       }), L && (0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/semibold",
@@ -124,12 +124,12 @@ function C() {
       })]
     }), L ? (0, Chunk951288.jsx)(Chunk273596.Z, {
       loadId: module.current,
-      onGuildCardClick: Y,
+      onGuildCardClick: z,
       onGuildCardSeen: F
     }) : (0, Chunk951288.jsx)(Chunk590771.Z, {
       selectedTab: T,
       onScroll: exports,
-      onGuildCardClick: Y,
+      onGuildCardClick: z,
       onGuildCardSeen: F
     })]
   })

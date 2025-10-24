@@ -121,12 +121,12 @@ let A = function(e) {
     G = y.o.useConfig({
       location: "people page"
     }).friendsTab,
-    H = null,
-    B = G ? null : (0, r.jsx)("div", {
+    B = null,
+    H = G ? null : (0, r.jsx)("div", {
       className: P.nowPlayingColumn,
       children: (0, r.jsx)(b.Z, {})
     });
-  return H = Z === T.pJs.ADD_FRIEND ? (0, r.jsx)(C.Z, {}) : (0, r.jsx)(S.Z, {
+  return B = Z === T.pJs.ADD_FRIEND ? (0, r.jsx)(C.Z, {}) : (0, r.jsx)(S.Z, {
     titleId: k
   }), (0, r.jsxs)("main", {
     className: P.container,
@@ -167,8 +167,8 @@ let A = function(e) {
         id: Z,
         className: P.peopleColumn,
         "aria-labelledby": k,
-        children: H
-      }), B]
+        children: B
+      }), H]
     })]
   })
 }

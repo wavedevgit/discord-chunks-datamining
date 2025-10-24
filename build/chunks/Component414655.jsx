@@ -1,4 +1,4 @@
-/** Chunk was on 3091 **/
+/** Chunk was on 63076 **/
 /** chunk id: 414655, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => P
@@ -47,22 +47,22 @@ function P(e) {
   }, [null == I ? true : I.visibility]);
   let {
     wishlist: D,
-    error: N
-  } = (0, p.kZ)(n, t.id), A = i.useCallback(() => {
+    error: k
+  } = (0, p.kZ)(n, t.id), N = i.useCallback(() => {
     if (null == n) return;
     let e = T ? a.f.PRIVATE : a.f.PUBLIC;
     C(!T), g.Z.updateWishlistVisibility(n, e), (0, b.Er)({
       wishlistId: n,
-      action: T ? O.NW.WISHLIST_TOGGLE_PRIVATE : O.NW.WISHLIST_TOGGLE_PUBLIC,
+      action: T ? j.NW.WISHLIST_TOGGLE_PRIVATE : j.NW.WISHLIST_TOGGLE_PUBLIC,
       analyticsLocations: w
     })
-  }, [n, T, w]), k = i.useCallback(() => {
+  }, [n, T, w]), A = i.useCallback(() => {
     (0, o.pT)(), (0, f.mK)({
       analyticsLocations: w,
       analyticsSource: u.Z.USER_PROFILE_WISHLIST
     })
   }, [w]);
-  return null != N ? null : null == D || 0 === D.items.length ? (0, r.jsx)(y.F, {
+  return null != k ? null : null == D || 0 === D.items.length ? (0, r.jsx)(y.F, {
     fade: true,
     children: (0, r.jsxs)("div", {
       className: _.emptyStateContainer,
@@ -82,7 +82,7 @@ function P(e) {
         size: "sm",
         icon: s.EOn,
         text: x.intl.string(x.t.ZbS4QB),
-        onClick: k
+        onClick: A
       })]
     })
   }) : (0, r.jsxs)(y.F, {
@@ -134,18 +134,18 @@ function P(e) {
           size: "sm",
           icon: s.qJs,
           text: x.intl.string(x.t.SDUwM0),
-          onClick: k
-        }), (0, r.jsx)(j.Z, {
+          onClick: A
+        }), (0, r.jsx)(O.Z, {
           isOwner: S,
           isWishlistPublic: T,
-          onToggleVisibility: A
+          onToggleVisibility: N
         })]
       }) : (0, r.jsx)(s.Button, {
         variant: "secondary",
         size: "sm",
         icon: s.EOn,
         text: x.intl.string(x.t["i/yzHs"]),
-        onClick: k
+        onClick: A
       })]
     }), (0, r.jsx)(v.Z, {
       items: D.items,

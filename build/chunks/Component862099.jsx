@@ -4,7 +4,7 @@ require.d(exports, {
   Co: () => Q,
   ZP: () => J,
   bZ: () => K,
-  gt: () => H
+  gt: () => B
 }), require("./388685.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -43,7 +43,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk507795 = require("./507795.js");
-let H = Chunk647438.memo(function(e) {
+let B = Chunk647438.memo(function(e) {
   let {
     heading: t,
     location: n,
@@ -103,7 +103,7 @@ let H = Chunk647438.memo(function(e) {
   })
 });
 
-function B(e) {
+function H(e) {
   let {
     guildEvent: t,
     channel: n
@@ -113,7 +113,7 @@ function B(e) {
     } = e;
     return t
   }), [n]), l = (0, d.KS)(n);
-  return (0, i.jsx)(H, {
+  return (0, i.jsx)(B, {
     onClickCloseIcon: () => (0, N.ji)({
       eventId: null == t ? true : t.id
     }),
@@ -243,11 +243,11 @@ function F(e) {
   })
 }
 
-function Y(e) {
+function z(e) {
   let {
     guildEvent: t
   } = e, n = (0, L.cS)(t);
-  return null == n ? null : (0, i.jsx)(H, {
+  return null == n ? null : (0, i.jsx)(B, {
     onClickCloseIcon: () => (0, N.ji)({
       eventId: null == t ? true : t.id
     }),
@@ -261,13 +261,13 @@ function Y(e) {
       height: 16,
       className: G.stageIcon
     }),
-    children: (0, i.jsx)(z, {
+    children: (0, i.jsx)(Y, {
       guildEvent: t
     })
   })
 }
 
-function z(e) {
+function Y(e) {
   let {
     guildEvent: t
   } = e, n = l.useCallback(() => {
@@ -315,7 +315,7 @@ function q(e) {
   } = e, r = (0, o.Wu)([g.Z], () => [...new Set(g.Z.getMutableParticipants(n.id, _.pV.SPEAKER).map(e => e.user))], [n.id]), l = (0, o.e7)([g.Z], () => g.Z.getParticipantCount(n.id, _.pV.AUDIENCE), [n.id]), a = U.intl.formatToPlainString(U.t["+v2pN2"], {
     count: "".concat(l)
   });
-  return (0, i.jsx)(H, {
+  return (0, i.jsx)(B, {
     onClickCloseIcon: () => (0, N.ji)({
       stageId: null == t ? true : t.id
     }),
@@ -410,9 +410,9 @@ let J = Chunk647438.memo(function(e) {
   })) : l.entity_type === M.WX.STAGE_INSTANCE && h ? d = (0, i.jsx)(q, {
     stageInstance: s,
     channel: r
-  }) : l.entity_type === M.WX.EXTERNAL ? d = (0, i.jsx)(Y, {
+  }) : l.entity_type === M.WX.EXTERNAL ? d = (0, i.jsx)(z, {
     guildEvent: l
-  }) : l.entity_type === M.WX.VOICE && null != r && (d = (0, i.jsx)(B, {
+  }) : l.entity_type === M.WX.VOICE && null != r && (d = (0, i.jsx)(H, {
     guildEvent: l,
     channel: r
   }));

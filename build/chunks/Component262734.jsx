@@ -77,17 +77,17 @@ function j(e) {
   }, [t.applicationId, l]);
   let U = D.width / Math.max(D.height, 1) < C.I0,
     G = 0,
-    H = 0,
-    B = (0, p.Z)(null == n ? true : n.id);
-  if (!B) {
+    B = 0,
+    H = (0, p.Z)(null == n ? true : n.id);
+  if (!H) {
     let e = D.width,
       t = D.height;
-    U ? ((t = D.width / C.I0) > D.height && (e = (t = D.height) * C.I0), H = (D.height - t) / 2) : ((e = Math.min(D.height * C.I0)) > D.width && (t = (e = D.width) / C.I0), G = (D.width - e) / 2)
+    U ? ((t = D.width / C.I0) > D.height && (e = (t = D.height) * C.I0), B = (D.height - t) / 2) : ((e = Math.min(D.height * C.I0)) > D.width && (t = (e = D.width) / C.I0), G = (D.width - e) / 2)
   }
   let V = C.MI.NO_CHAT;
   if (null == n) return null;
   let F = (null != A ? A : v.$Y6) + Z,
-    Y = (0, I.ro)(t);
+    z = (0, I.ro)(t);
   return (0, r.jsx)(u.f6W, {
     theme: v.BRd.DARK,
     children: e => (0, r.jsxs)("div", {
@@ -100,18 +100,18 @@ function j(e) {
         className: T.activityPanelContainer,
         children: (0, r.jsx)("div", {
           className: a()(T.activityContainer, {
-            [T.activityContainerNoMargin]: B
+            [T.activityContainerNoMargin]: H
           }),
           style: {
             paddingLeft: G,
             paddingRight: G,
-            paddingTop: H,
-            paddingBottom: H
+            paddingTop: B,
+            paddingBottom: B
           },
           ref: L,
           children: (0, r.jsx)(O.Z, {
             className: T.iframe,
-            embedId: Y
+            embedId: z
           })
         })
       }), (0, r.jsxs)("div", {

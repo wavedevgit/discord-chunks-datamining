@@ -1,4 +1,4 @@
-/** Chunk was on 3091 **/
+/** Chunk was on 63076 **/
 /** chunk id: 623132, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Z
@@ -144,7 +144,7 @@ function D(e) {
   })
 }
 
-function N(e) {
+function k(e) {
   let {
     text: t,
     className: n
@@ -157,7 +157,7 @@ function N(e) {
   })
 }
 
-function A(e) {
+function N(e) {
   let {
     text: t,
     user: n,
@@ -176,13 +176,13 @@ function A(e) {
       guildId: i,
       channelId: a,
       id: l
-    }), (0, r.jsx)(N, {
+    }), (0, r.jsx)(k, {
       text: t
     })]
   })
 }
 
-function k(e) {
+function A(e) {
   let {
     text: t,
     user: n,
@@ -192,24 +192,24 @@ function k(e) {
     applicationId: f
   } = e, g = (0, s.Dt)(), b = (0, s.Dt)(), {
     trackUserProfileEditAction: h
-  } = (0, p.KZ)(), [y, v] = i.useState("idle"), [j, O] = i.useState(null != t ? t : ""), x = i.useRef(null), _ = i.useRef(null), I = P.intl.string(P.t.xKSfBT), S = null != t && "" !== t.trim(), E = i.useCallback(() => {
+  } = (0, p.KZ)(), [y, v] = i.useState("idle"), [O, j] = i.useState(null != t ? t : ""), x = i.useRef(null), _ = i.useRef(null), I = P.intl.string(P.t.xKSfBT), S = null != t && "" !== t.trim(), E = i.useCallback(() => {
     h({
       action: "PRESS_ADD_COMMENTARY",
       widgetEdited: d
     }), v("editing")
   }, [d, h]), T = i.useCallback(() => {
-    let e = j.trim(),
+    let e = O.trim(),
       n = e !== (null != t ? t : "").trim();
     (0, m.Bu)(d, f, "" !== e ? e : true), v("completed"), n && h({
       action: "COMMENTARY_EDITED",
       widgetEdited: d,
       gameId: f
     })
-  }, [d, f, j, t, h]), C = i.useCallback(e => {
-    O(e)
+  }, [d, f, O, t, h]), C = i.useCallback(e => {
+    j(e)
   }, []);
   return i.useEffect(() => {
-    "editing" === y && O(null != t ? t : "")
+    "editing" === y && j(null != t ? t : "")
   }, [t, y]), i.useEffect(() => {
     if ("completed" === y) {
       var e;
@@ -223,7 +223,7 @@ function k(e) {
       children: P.intl.string(P.t.JxKXeT)
     }), (0, r.jsx)(c.Kx8, {
       id: g,
-      value: j,
+      value: O,
       placeholder: I,
       onChange: C,
       onBlur: T,
@@ -249,7 +249,7 @@ function k(e) {
       guildId: a,
       channelId: u,
       id: b
-    }), (0, r.jsx)(N, {
+    }), (0, r.jsx)(k, {
       text: null != t ? t : I,
       className: l()(w.editableCommentText, !S && w.placeholder)
     }), (0, r.jsx)(c.P3F, {
@@ -278,61 +278,61 @@ function Z(e) {
     coverRef: p,
     className: D
   } = e, {
-    gameName: N = P.intl.string(P.t.GIWFlF),
+    gameName: k = P.intl.string(P.t.GIWFlF),
     imageSrc: Z,
     applicationId: R,
-    comment: L,
+    comment: B,
     tags: G
-  } = o, B = {
+  } = o, L = {
     variant: "heading-sm/medium",
     color: "text-default"
   }, M = f.default.getCurrentUser(), F = (null == M ? true : M.id) === t.id, U = 1 === (0, m.Gv)(s), W = !u && F, H = W && (0, m.vI)(s), z = W && !U, K = (0, b.kO)(R), {
     registerDragHandleRef: V
-  } = (0, y.C)(), Y = i.useRef(null);
-  if (K) return (0, r.jsx)(j.i, {});
-  let q = () => (0, r.jsx)(v.Z, {
+  } = (0, y.C)(), q = i.useRef(null);
+  if (K) return (0, r.jsx)(O.i, {});
+  let X = () => (0, r.jsx)(v.Z, {
       coverRef: p,
       className: null == Z || u ? true : I.hoverActiveEffect,
       imageSrc: Z,
-      gameName: N,
+      gameName: k,
       applicationId: R,
       userId: t.id,
       disableInteraction: u,
       hideTooltip: true
     }),
-    X = () => (0, r.jsxs)("div", {
+    Y = () => (0, r.jsxs)("div", {
       className: l()(w.card, D),
       children: [z ? (0, r.jsxs)("div", {
-        ref: Y,
+        ref: q,
         className: w.dragHandleContainer,
-        children: [q(), (0, r.jsx)(h.e_, {
+        children: [X(), (0, r.jsx)(h.e_, {
           buttonRef: V(o.applicationId),
           className: w.dragHandle,
           focusProps: {
-            ringTarget: Y
+            ringTarget: q
           }
         })]
-      }) : q(), (0, r.jsxs)("div", {
+      }) : X(), (0, r.jsxs)("div", {
         className: w.details,
-        children: [u ? (0, r.jsx)(c.Heading, E(S({}, B), {
-          children: N
+        children: [u ? (0, r.jsx)(c.Heading, E(S({}, L), {
+          children: k
         })) : (0, r.jsx)(C, S({
           applicationId: R,
           userId: t.id,
-          gameName: N
-        }, B)), H ? (0, r.jsx)(k, {
-          text: L,
+          gameName: k
+        }, L)), H ? (0, r.jsx)(A, {
+          text: B,
           user: t,
           guildId: n,
           channelId: a,
           widgetType: s,
           applicationId: R
-        }) : (0, r.jsx)(A, {
-          text: L,
+        }) : (0, r.jsx)(N, {
+          text: B,
           user: t,
           guildId: n,
           channelId: a
-        }), (0, r.jsx)(O.Z, {
+        }), (0, r.jsx)(j.Z, {
           tags: G,
           isCurrentUser: F,
           widgetType: s,
@@ -356,6 +356,6 @@ function Z(e) {
     index: null != d ? d : 0,
     widgetType: s,
     game: o,
-    children: X()
-  }) : X()
+    children: Y()
+  }) : Y()
 }

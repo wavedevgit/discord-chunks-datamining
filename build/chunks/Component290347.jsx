@@ -122,14 +122,14 @@ function P(e) {
   } = e, {
     onClose: U,
     transitionState: G
-  } = n, H = (0, f.Dt)(), B = D.length % 2 == 0, V = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), [F, Y] = i.useState(Date.now()), [z, W] = i.useState(0), [q, K] = i.useState(0), [Q, J] = i.useState(false), [X, $] = i.useState(true), ee = i.useRef(F), et = i.useRef(z), en = i.useRef(q), er = i.useRef(Q), ei = i.useRef(X), [el, ea] = i.useState(T), es = i.useRef(false);
+  } = n, B = (0, f.Dt)(), H = D.length % 2 == 0, V = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), [F, z] = i.useState(Date.now()), [Y, W] = i.useState(0), [q, K] = i.useState(0), [Q, J] = i.useState(false), [X, $] = i.useState(true), ee = i.useRef(F), et = i.useRef(Y), en = i.useRef(q), er = i.useRef(Q), ei = i.useRef(X), [el, ea] = i.useState(T), es = i.useRef(false);
 
   function eo() {
     let e = Date.now(),
       t = e - ee.current,
       n = et.current,
       r = en.current;
-    return er.current && (W(n += t), ei.current || K(r += t)), Y(e), [n, r]
+    return er.current && (W(n += t), ei.current || K(r += t)), z(e), [n, r]
   }
   return i.useEffect(() => {
     let e = async () => {
@@ -159,8 +159,8 @@ function P(e) {
       URL.revokeObjectURL(e.src)
     })
   }, [el]), i.useEffect(() => {
-    ee.current = F, et.current = z, en.current = q, er.current = Q, ei.current = X
-  }, [F, z, q, Q, X]), i.useEffect(() => () => {
+    ee.current = F, et.current = Y, en.current = q, er.current = Q, ei.current = X
+  }, [F, Y, q, Q, X]), i.useEffect(() => () => {
     if ("video" === l.type || "embed" === l.type) {
       let [e, t] = eo();
       b.default.track(O.rMx.CHANGE_LOG_VIDEO_PLAYED, {
@@ -188,7 +188,7 @@ function P(e) {
     "data-migration-pending": true,
     className: a()(v.root, v.largeBorderRadius, t),
     transitionState: G,
-    "aria-labelledby": H,
+    "aria-labelledby": B,
     parentComponent: "PremiumAnnouncementModalVariant1",
     children: (0, r.jsxs)(c.$1m, {
       color: "nitro-pink",
@@ -217,7 +217,7 @@ function P(e) {
           onPlay: e => {
             b.default.track(O.rMx.CHANGE_LOG_VIDEO_INTERACTED, {
               change_log_id: R
-            }), Y(Date.now()), J(true), $(e.currentTarget.muted)
+            }), z(Date.now()), J(true), $(e.currentTarget.muted)
           },
           onEnded: e => {
             eo(), $(e.currentTarget.muted), J(false)
@@ -271,10 +271,10 @@ function P(e) {
           children: k
         }), D.length > 0 && (0, r.jsx)("div", {
           className: a()(v.featureCardGroup, {
-            [v.wideStyle]: B
+            [v.wideStyle]: H
           }),
           children: D.map((e, t) => (0, r.jsx)(j, S(C({}, e), {
-            wideStyle: B
+            wideStyle: H
           }), "".concat(e.header, "_").concat(t)))
         }), (0, r.jsx)("div", {
           className: v.buttonContainer,

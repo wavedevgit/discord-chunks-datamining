@@ -73,15 +73,15 @@ let N = Chunk647438.memo(function(e) {
     }
     return i
   }(e, ["message", "className", "onContextMenu", "onClick", "hideSimpleEmbedContent", "channel", "isGroupStart", "animateAvatar", "subscribeToComponentDispatch", "renderThreadAccessory"]), k = N.type === v.uaV.POLL_RESULT || null != (t = e.disableInteraction) && t, U = N.isFirstMessageInForumPost(Z), G = (0, u.A)((null != (n = N.editedTimestamp) ? n : N.timestamp).valueOf()), {
-    content: H,
-    hasSpoilerEmbeds: B
+    content: B,
+    hasSpoilerEmbeds: H
   } = (0, m.Z)(N, {
     hideSimpleEmbedContent: A,
     allowList: U || G,
     allowHeading: U || G,
     allowLinks: true,
     previewLinkTarget: true
-  }), V = (0, s.JA)(N.id), F = (0, p.ZP)(N), Y = (0, o.e7)([I.Z], () => N.hasFlag(v.iLy.HAS_THREAD) && I.Z.getChannel(y.default.castMessageIdAsChannelId(N.id))), z = (0, c.p9)({
+  }), V = (0, s.JA)(N.id), F = (0, p.ZP)(N), z = (0, o.e7)([I.Z], () => N.hasFlag(v.iLy.HAS_THREAD) && I.Z.getChannel(y.default.castMessageIdAsChannelId(N.id))), Y = (0, c.p9)({
     guildId: Z.guild_id,
     roleId: F.iconRoleId
   }), W = (0, h.iG)(N), q = (0, h.Gx)(N);
@@ -101,12 +101,12 @@ let N = Chunk647438.memo(function(e) {
       compact: false,
       animateAvatar: L,
       isGroupStart: true,
-      roleIcon: z,
+      roleIcon: Y,
       hideTimestamp: true,
       hideGuildTag: false
     }),
-    childrenAccessories: e.hideAccessories ? true : (0, g.Q)(e, B),
-    childrenMessageContent: (0, _.Z)(e, H),
+    childrenAccessories: e.hideAccessories ? true : (0, g.Q)(e, H),
+    childrenMessageContent: (0, _.Z)(e, B),
     childrenSystemMessage: (0, E.Z)((i = T({}, e), l = l = {
       disableInteraction: k
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
@@ -121,7 +121,7 @@ let N = Chunk647438.memo(function(e) {
     }), i)),
     onContextMenu: P,
     onClick: x,
-    hasThread: R && null != Y && N.hasFlag(v.iLy.HAS_THREAD),
+    hasThread: R && null != z && N.hasFlag(v.iLy.HAS_THREAD),
     hasReply: false,
     "aria-labelledby": W,
     "aria-describedby": q,

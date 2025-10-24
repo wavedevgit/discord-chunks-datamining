@@ -1,4 +1,4 @@
-/** Chunk was on 3091 **/
+/** Chunk was on 63076 **/
 /** chunk id: 881410, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   wl: () => v,
@@ -70,7 +70,7 @@ function h(e) {
     widget: n,
     children: h
   } = e, y = b(e, ["widgetType", "widget", "children"]);
-  let [v] = (0, o.ynZ)(), [j, O] = i.useState(""), x = i.useRef(""), _ = i.useMemo(() => new Set(n.games.map(e => e.applicationId)), [n.games]), {
+  let [v] = (0, o.ynZ)(), [O, j] = i.useState(""), x = i.useRef(""), _ = i.useMemo(() => new Set(n.games.map(e => e.applicationId)), [n.games]), {
     trackUserProfileEditAction: P
   } = (0, u.KZ)(), I = (0, l.e7)([s.default], () => ["en-US", "en-GB"].includes(s.default.locale)), w = i.useCallback(e => {
     (0, d.ES)(t, {
@@ -86,21 +86,21 @@ function h(e) {
   } = (0, c.h)(), T = i.useCallback(e => "" === e.trim() ? S : (0, a.Lu)(S, e, m(p({}, E), {
     threshold: a.Lu.rankings.CONTAINS
   })), [S, E]), C = i.useCallback(e => {
-    "" === j.trim() && "" !== e.trim() && P({
+    "" === O.trim() && "" !== e.trim() && P({
       action: "GAME_SEARCH_SESSION_STARTED",
       widgetEdited: t,
       numCharacters: e.trim().length,
       numResults: T(e).length
-    }), O(e), x.current = e
-  }, [j, P, t, T]), D = i.useMemo(() => "" !== j.trim() && I ? f.intl.format(f.t.jhiTsN, {
-    searchTerm: j.trim()
-  }) : f.intl.string(f.t.QwSXv8), [j, I]);
+    }), j(e), x.current = e
+  }, [O, P, t, T]), D = i.useMemo(() => "" !== O.trim() && I ? f.intl.format(f.t.jhiTsN, {
+    searchTerm: O.trim()
+  }) : f.intl.string(f.t.QwSXv8), [O, I]);
   return (0, r.jsx)(o.yRy, m(p({}, y), {
     onRequestOpen: () => {
       P({
         action: "PRESS_ADD_GAME",
         widgetEdited: t
-      }), O(""), x.current = ""
+      }), j(""), x.current = ""
     },
     onRequestClose: () => {
       P({
