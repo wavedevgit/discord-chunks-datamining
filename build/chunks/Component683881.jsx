@@ -1,4 +1,4 @@
-/** Chunk was on 22325 **/
+/** Chunk was on 3091 **/
 /** chunk id: 683881, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -29,7 +29,7 @@ function f(e) {
   if (true !== f || null == p || null == g) return null;
   let h = null == n || null == (t = n.current) ? true : t.getBoundingClientRect();
   if (null == h || null == m) return null;
-  let v = function(e, t) {
+  let y = function(e, t) {
     let {
       id: n,
       itemType: i,
@@ -48,7 +48,7 @@ function f(e) {
         imageSrc: e,
         gameName: i
       } = a;
-      return (0, r.jsx)(s.Z, {
+      return (0, r.jsx)(c.Z, {
         className: d.gamePreview,
         imageSrc: e,
         gameName: i,
@@ -62,7 +62,7 @@ function f(e) {
         game: e,
         widgetType: n
       } = a;
-      return (0, r.jsx)(c.Z, {
+      return (0, r.jsx)(s.Z, {
         className: d.gameDetailsCardPreview,
         user: t,
         widgetType: n,
@@ -72,14 +72,14 @@ function f(e) {
     }
     return null
   }(g, m);
-  if (null == v) return null;
-  let y = p.x - h.left - 60 * !!b,
+  if (null == y) return null;
+  let v = p.x - h.left - 60 * !!b,
     j = p.y - h.top;
   return (0, r.jsx)("div", {
     className: d.container,
     style: {
-      transform: "translate(".concat(y, "px, ").concat(j, "px)")
+      transform: "translate(".concat(v, "px, ").concat(j, "px)")
     },
-    children: v
+    children: y
   })
 }

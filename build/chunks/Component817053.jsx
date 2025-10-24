@@ -1,4 +1,4 @@
-/** Chunk was on 22325 **/
+/** Chunk was on 3091 **/
 /** chunk id: 817053, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b,
@@ -43,7 +43,7 @@ function p(e) {
     role: "img",
     "aria-label": o,
     className: f.fallback,
-    children: (0, r.jsx)(s.Text, {
+    children: (0, r.jsx)(c.Text, {
       variant: "text-xxs/medium",
       lineClamp: 3,
       "aria-hidden": true,
@@ -70,16 +70,16 @@ function m(e) {
   } = e, h = (0, u.Z)({
     location: "GameCover",
     applicationId: i,
-    source: c.m1.UserProfile,
+    source: s.m1.UserProfile,
     sourceUserId: a,
     trackEntryPointImpression: true
-  }), v = null != n ? n : d.intl.string(d.t.GIWFlF), y = d.intl.formatToPlainString(d.t["8QLQB+"], {
-    gameName: v
+  }), y = null != n ? n : d.intl.string(d.t.GIWFlF), v = d.intl.formatToPlainString(d.t["8QLQB+"], {
+    gameName: y
   }), j = e => m ? e : (0, r.jsx)(o.u, {
-    text: v,
+    text: y,
     children: e
   });
-  return j(null == h ? (0, r.jsx)(s.tEY, {
+  return j(null == h ? (0, r.jsx)(c.tEY, {
     children: (0, r.jsx)("div", {
       ref: b,
       className: g,
@@ -89,10 +89,10 @@ function m(e) {
         gameName: n
       })
     })
-  }) : (0, r.jsx)(s.P3F, {
+  }) : (0, r.jsx)(c.P3F, {
     innerRef: b,
     onClick: h,
-    "aria-label": y,
+    "aria-label": v,
     className: l()(f.clickable, g),
     children: (0, r.jsx)(p, {
       imageSrc: t,
@@ -108,7 +108,7 @@ function b(e) {
     className: i,
     disableInteraction: a = false,
     hideTooltip: o,
-    coverRef: c
+    coverRef: s
   } = e, u = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
@@ -125,9 +125,9 @@ function b(e) {
     return i
   }(e, ["applicationId", "userId", "className", "disableInteraction", "hideTooltip", "coverRef"]);
   let d = l()(f.coverContainer, i);
-  return a ? (0, r.jsx)(s.tEY, {
+  return a ? (0, r.jsx)(c.tEY, {
     children: (0, r.jsx)("div", {
-      ref: c,
+      ref: s,
       className: d,
       tabIndex: false,
       children: (0, r.jsx)(p, g({}, u))
@@ -137,6 +137,6 @@ function b(e) {
     applicationId: t,
     userId: n,
     hideTooltip: o,
-    coverRef: c
+    coverRef: s
   }, u))
 }

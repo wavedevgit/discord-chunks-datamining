@@ -1,4 +1,4 @@
-/** Chunk was on 22325 **/
+/** Chunk was on 3091 **/
 /** chunk id: 384166, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -27,10 +27,10 @@ function O(e) {
     className: t
   } = e, {
     trackUserProfileEditSaved: n
-  } = (0, f.KZ)(), [a, O] = i.useState(false), x = (0, s.Wu)([m.Z], () => {
+  } = (0, f.KZ)(), [a, O] = i.useState(false), x = (0, c.Wu)([m.Z], () => {
     var e;
     return null != (e = m.Z.getSaveablePendingWidgets()) ? e : []
-  }), _ = (0, s.Wu)([m.Z], () => m.Z.getChangedWidgets()), I = (0, s.Wu)([m.Z], () => m.Z.getRemovedWidgets()), P = (0, s.e7)([m.Z], () => m.Z.hasSaveablePendingChanges()), w = (0, s.e7)([m.Z], () => m.Z.isSubmitting), S = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), E = (0, c.Yzy)(P, {
+  }), _ = (0, c.Wu)([m.Z], () => m.Z.getChangedWidgets()), P = (0, c.Wu)([m.Z], () => m.Z.getRemovedWidgets()), I = (0, c.e7)([m.Z], () => m.Z.hasSaveablePendingChanges()), w = (0, c.e7)([m.Z], () => m.Z.isSubmitting), S = (0, c.e7)([u.Z], () => u.Z.useReducedMotion), E = (0, s.Yzy)(I, {
     from: {
       opacity: 0,
       y: 80 * !S
@@ -50,12 +50,12 @@ function O(e) {
     function t() {
       O(true), e = setTimeout(() => O(false), 500)
     }
-    return d.S.subscribe(v.CkL.EMPHASIZE_NOTICE, t), () => {
-      d.S.unsubscribe(v.CkL.EMPHASIZE_NOTICE, t), null !== e && clearTimeout(e)
+    return d.S.subscribe(y.CkL.EMPHASIZE_NOTICE, t), () => {
+      d.S.unsubscribe(y.CkL.EMPHASIZE_NOTICE, t), null !== e && clearTimeout(e)
     }
   }, []), i.useEffect(() => {
-    P && c.uvj.announce(y.intl.string(y.t["0Y/qkL"]))
-  }, [P]);
+    I && s.uvj.announce(v.intl.string(v.t["0Y/qkL"]))
+  }, [I]);
   let T = i.useCallback(async () => {
       try {
         await p.Z.savePendingWidgets(x)
@@ -76,11 +76,11 @@ function O(e) {
           return e + (null != (r = null == (n = t.comment) ? true : n.length) ? r : 0)
         }, 0)), n(t)
       }
-      for (let e of I) n({
+      for (let e of P) n({
         widgetEdited: e.type,
         isWidgetRemoved: true
       })
-    }, [x, _, I, n]),
+    }, [x, _, P, n]),
     C = i.useCallback(() => {
       p.Z.clearPendingWidgets()
     }, []);
@@ -91,27 +91,27 @@ function O(e) {
       className: l()(j.content, {
         [j.emphasized]: a
       }),
-      "aria-label": y.intl.string(y.t["odDw+z"]),
-      children: [(0, r.jsx)(c.Text, {
+      "aria-label": v.intl.string(v.t["odDw+z"]),
+      children: [(0, r.jsx)(s.Text, {
         variant: "text-md/medium",
         color: "text-primary",
         className: j.message,
-        children: y.intl.string(y.t["/lQiX/"])
+        children: v.intl.string(v.t["/lQiX/"])
       }), (0, r.jsxs)("div", {
         className: j.actions,
-        children: [(0, r.jsx)(c.Button, {
+        children: [(0, r.jsx)(s.Button, {
           size: "sm",
           variant: "secondary",
-          text: y.intl.string(y.t.yBZMsQ),
+          text: v.intl.string(v.t.yBZMsQ),
           onClick: C,
-          disabled: !P || w
-        }), (0, r.jsx)(c.Button, {
+          disabled: !I || w
+        }), (0, r.jsx)(s.Button, {
           size: "sm",
           variant: "primary",
-          text: y.intl.string(y.t["R3BPH+"]),
+          text: v.intl.string(v.t["R3BPH+"]),
           onClick: T,
           loading: w,
-          disabled: !P || w
+          disabled: !I || w
         })]
       })]
     })

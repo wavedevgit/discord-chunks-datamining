@@ -1,4 +1,4 @@
-/** Chunk was on 84071 **/
+/** Chunk was on 31029 **/
 /** chunk id: 14476, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   c: () => m
@@ -27,23 +27,23 @@ let m = e => {
     a11yLabel: g,
     selectedSkuId: j,
     category: b
-  } = e, v = i.useRef(null), {
-    isHoveringOrFocusing: S
-  } = (0, C.Z)(v), L = !m && S, y = (0, c.ZP)(), I = (0, o.wj)(y), w = {
-    type: s.Z.AVATAR_DECORATION,
+  } = e, y = i.useRef(null), {
+    isHoveringOrFocusing: L
+  } = (0, c.Z)(y), v = !m && L, S = (0, C.ZP)(), w = (0, s.wj)(S), I = {
+    type: o.Z.AVATAR_DECORATION,
     label: g,
     asset: n
   };
   return (0, r.jsx)(d.tEY, {
     children: (0, r.jsxs)(d.kL8, {
-      ref: v,
+      ref: y,
       "aria-label": null != x ? x : "",
       onClick: () => {
         null == t || null == f || m || f(t)
       },
-      className: l()(I ? h.shopCardDark : h.shopCard, {
+      className: l()(w ? h.shopCardDark : h.shopCard, {
         [h.shopCardAnimation]: !m,
-        [I ? h.shopCardDarkHighlighted : h.shopCardHighlighted]: L,
+        [w ? h.shopCardDarkHighlighted : h.shopCardHighlighted]: v,
         [h.shopCardSelected]: j === t
       }),
       children: [(0, r.jsx)("div", {
@@ -53,9 +53,9 @@ let m = e => {
           [h.shopCardClaimed]: m
         }),
         children: (0, r.jsx)(p.R, {
-          item: w,
+          item: I,
           user: a,
-          isHighlighted: L,
+          isHighlighted: v,
           avatarSize: d.EFr.SIZE_120,
           isPurchased: m
         })

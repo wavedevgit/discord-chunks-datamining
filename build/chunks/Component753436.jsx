@@ -1,4 +1,4 @@
-/** Chunk was on 22325 **/
+/** Chunk was on 3091 **/
 /** chunk id: 753436, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   S: () => O
@@ -29,7 +29,7 @@ function j(e) {
     children: l
   } = e, {
     registerDragHandleRef: o,
-    manageFocusOnReorder: s
+    manageFocusOnReorder: c
   } = (0, f.C)(), u = i.useRef(null), g = {
     imageSrc: a.imageSrc,
     gameName: a.gameName
@@ -43,18 +43,18 @@ function j(e) {
     "aria-label": h.intl.formatToPlainString(h.t["0dR3gw"], {
       positionNumber: t + 1
     }),
-    onReorder: (e, t) => (0, c.Eq)(n, e, t),
-    onEnd: () => s(a.applicationId),
-    className: y.container,
-    dropBeforeClassName: y.dropIndicatorBefore,
-    dropAfterClassName: y.dropIndicatorAfter,
-    draggingClassName: y.isDragging,
+    onReorder: (e, t) => (0, s.Eq)(n, e, t),
+    onEnd: () => c(a.applicationId),
+    className: v.container,
+    dropBeforeClassName: v.dropIndicatorBefore,
+    dropAfterClassName: v.dropIndicatorAfter,
+    draggingClassName: v.isDragging,
     children: (0, r.jsxs)("div", {
       ref: u,
-      className: y.dragHandleContainer,
+      className: v.dragHandleContainer,
       children: [l, (0, r.jsx)(d.e_, {
         buttonRef: o(a.applicationId),
-        className: y.dragHandle,
+        className: v.dragHandle,
         focusProps: {
           ringTarget: u
         }
@@ -69,12 +69,12 @@ function O(e) {
     userId: n,
     widgetType: i,
     guildId: a,
-    channelId: c,
+    channelId: s,
     disableInteraction: d = false,
     index: f,
     onRemoveGame: h,
     coverRef: O
-  } = e, x = (0, b.Z)(t.applicationId).length > 0, _ = s.default.getCurrentUser(), I = (null == _ ? true : _.id) === n, P = !d && I, w = (0, u.kO)(t.applicationId), {
+  } = e, x = (0, b.Z)(t.applicationId).length > 0, _ = c.default.getCurrentUser(), P = (null == _ ? true : _.id) === n, I = !d && P, w = (0, u.kO)(t.applicationId), {
     isDragging: S
   } = (0, o.f)(e => ({
     isDragging: e.isDragging()
@@ -85,32 +85,32 @@ function O(e) {
       applicationId: t.applicationId,
       userId: n,
       disableInteraction: d,
-      className: l()(x ? y.socialProofBackdrop : true, (null == t ? true : t.imageSrc) == null || d ? true : v.hoverActiveEffect),
+      className: l()(x ? v.socialProofBackdrop : true, (null == t ? true : t.imageSrc) == null || d ? true : y.hoverActiveEffect),
       hideTooltip: S,
       coverRef: O
-    }), P && (0, r.jsx)(p.Z, {
+    }), I && (0, r.jsx)(p.Z, {
       game: t,
       widgetType: i,
-      className: y.removeGameButton,
+      className: v.removeGameButton,
       iconSize: "xs",
       onRemove: () => null == h ? true : h(t.applicationId)
     }), !d && (0, r.jsx)(m.Z, {
-      className: y.socialProof,
+      className: v.socialProof,
       applicationId: t.applicationId,
       guildId: a,
-      channelId: c,
+      channelId: s,
       visuallyHideLabel: true
     })]
   });
   return w ? (0, r.jsx)("div", {
-    className: v.loadingCover
-  }) : P ? (0, r.jsx)(j, {
+    className: y.loadingCover
+  }) : I ? (0, r.jsx)(j, {
     widgetType: i,
     index: null != f ? f : 0,
     game: t,
     children: E()
   }) : (0, r.jsx)("div", {
-    className: y.container,
+    className: v.container,
     children: E()
   })
 }

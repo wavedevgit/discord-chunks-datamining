@@ -1,7 +1,7 @@
-/** Chunk was on 22325 **/
+/** Chunk was on 3091 **/
 /** chunk id: 272289, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
+  Z: () => s
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -10,7 +10,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk206599 = require("./206599.js"),
   Chunk977416 = require("./977416.jsx");
 
-function c(e) {
+function s(e) {
   var {
     widgetType: t
   } = e, n = function(e, t) {
@@ -29,7 +29,7 @@ function c(e) {
     return i
   }(e, ["widgetType"]);
   let {
-    games: c,
+    games: s,
     onAddGame: u
   } = (0, o.K)(t), {
     trackUserProfileEditAction: d
@@ -44,7 +44,7 @@ function c(e) {
       widgetEdited: t
     })
   }, [u, t, d]);
-  return (0, r.jsx)(s.Z, function(e) {
+  return (0, r.jsx)(c.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);
@@ -62,7 +62,7 @@ function c(e) {
     }
     return e
   }({
-    games: c,
+    games: s,
     onClick: f
   }, n))
 }

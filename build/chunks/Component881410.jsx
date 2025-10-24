@@ -1,8 +1,8 @@
-/** Chunk was on 22325 **/
+/** Chunk was on 3091 **/
 /** chunk id: 881410, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  wl: () => y,
-  yX: () => v
+  wl: () => v,
+  yX: () => y
 }), require("./388685.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -69,41 +69,41 @@ function h(e) {
     widgetType: t,
     widget: n,
     children: h
-  } = e, v = b(e, ["widgetType", "widget", "children"]);
-  let [y] = (0, o.ynZ)(), [j, O] = i.useState(""), x = i.useRef(""), _ = i.useMemo(() => new Set(n.games.map(e => e.applicationId)), [n.games]), {
-    trackUserProfileEditAction: I
-  } = (0, u.KZ)(), P = (0, l.e7)([c.default], () => ["en-US", "en-GB"].includes(c.default.locale)), w = i.useCallback(e => {
+  } = e, y = b(e, ["widgetType", "widget", "children"]);
+  let [v] = (0, o.ynZ)(), [j, O] = i.useState(""), x = i.useRef(""), _ = i.useMemo(() => new Set(n.games.map(e => e.applicationId)), [n.games]), {
+    trackUserProfileEditAction: P
+  } = (0, u.KZ)(), I = (0, l.e7)([s.default], () => ["en-US", "en-GB"].includes(s.default.locale)), w = i.useCallback(e => {
     (0, d.ES)(t, {
       applicationId: e
-    }), o.uvj.announce(f.intl.string(f.t.q0U3DE)), I({
+    }), o.uvj.announce(f.intl.string(f.t.q0U3DE)), P({
       action: "GAME_ADDED",
       gameId: e,
       widgetEdited: t
     })
-  }, [t, I]), {
+  }, [t, P]), {
     options: S,
     matchSorterOptions: E
-  } = (0, s.h)(), T = i.useCallback(e => "" === e.trim() ? S : (0, a.Lu)(S, e, m(p({}, E), {
+  } = (0, c.h)(), T = i.useCallback(e => "" === e.trim() ? S : (0, a.Lu)(S, e, m(p({}, E), {
     threshold: a.Lu.rankings.CONTAINS
   })), [S, E]), C = i.useCallback(e => {
-    "" === j.trim() && "" !== e.trim() && I({
+    "" === j.trim() && "" !== e.trim() && P({
       action: "GAME_SEARCH_SESSION_STARTED",
       widgetEdited: t,
       numCharacters: e.trim().length,
       numResults: T(e).length
     }), O(e), x.current = e
-  }, [j, I, t, T]), N = i.useMemo(() => "" !== j.trim() && P ? f.intl.format(f.t.jhiTsN, {
+  }, [j, P, t, T]), D = i.useMemo(() => "" !== j.trim() && I ? f.intl.format(f.t.jhiTsN, {
     searchTerm: j.trim()
-  }) : f.intl.string(f.t.QwSXv8), [j, P]);
-  return (0, r.jsx)(o.yRy, m(p({}, v), {
+  }) : f.intl.string(f.t.QwSXv8), [j, I]);
+  return (0, r.jsx)(o.yRy, m(p({}, y), {
     onRequestOpen: () => {
-      I({
+      P({
         action: "PRESS_ADD_GAME",
         widgetEdited: t
       }), O(""), x.current = ""
     },
     onRequestClose: () => {
-      I({
+      P({
         action: "GAME_SEARCH_SESSION_ENDED",
         widgetEdited: t,
         numCharacters: x.current.trim().length,
@@ -118,13 +118,13 @@ function h(e) {
         className: g.gameSearchCombobox,
         placeholder: f.intl.string(f.t["5h0QOP"]),
         autoFocus: true,
-        value: y,
+        value: v,
         onChange: e => {
           w(e), t()
         },
         multiSelect: false,
         maxVisibleItems: 7,
-        emptyStateText: N,
+        emptyStateText: D,
         emptyStateHeader: "",
         onQueryChange: C,
         children: e => T(e).map(e => (0, r.jsx)(o.lo1, {
@@ -144,7 +144,7 @@ function h(e) {
   }))
 }
 
-function v(e) {
+function y(e) {
   var {
     disabled: t
   } = e, n = b(e, ["disabled"]);
@@ -165,7 +165,7 @@ function v(e) {
   }))
 }
 
-function y(e) {
+function v(e) {
   let t = i.useRef(null);
   return (0, r.jsx)(h, m(p({
     targetElementRef: t,

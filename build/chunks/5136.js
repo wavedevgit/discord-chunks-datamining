@@ -1,4 +1,4 @@
-/** Chunk was on 22325 **/
+/** Chunk was on 3091 **/
 /** chunk id: 5136, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   r: () => l
@@ -13,7 +13,7 @@ function l(e) {
     edgeDistance: n = 130,
     maxSpeed: l = 1700,
     power: o = 2.2
-  } = e, s = (0, r.useRef)(null), c = (0, r.useRef)(0), u = (0, r.useCallback)(e => ({
+  } = e, c = (0, r.useRef)(null), s = (0, r.useRef)(0), u = (0, r.useCallback)(e => ({
     isDragging: e.isDragging(),
     clientOffset: e.getClientOffset(),
     itemType: e.getItemType()
@@ -22,15 +22,15 @@ function l(e) {
     clientOffset: f,
     itemType: g
   } = (0, i.f)(u), p = (0, a.zPA)();
-  (0, r.useEffect)(() => (s.current = requestAnimationFrame(function e(r) {
+  (0, r.useEffect)(() => (c.current = requestAnimationFrame(function e(r) {
     if (p || null == t) return;
-    if (s.current = requestAnimationFrame(e), false === d || null == f || "WIDGET" !== g) {
-      t.style.overflowAnchor = "auto", t.style.overscrollBehavior = "auto", c.current = r;
+    if (c.current = requestAnimationFrame(e), false === d || null == f || "WIDGET" !== g) {
+      t.style.overflowAnchor = "auto", t.style.overscrollBehavior = "auto", s.current = r;
       return
     }
     t.style.overflowAnchor = "none", t.style.overscrollBehavior = "contain";
-    let i = Math.min(32, 0 !== c.current ? r - c.current : 16) / 1e3;
-    c.current = r;
+    let i = Math.min(32, 0 !== s.current ? r - s.current : 16) / 1e3;
+    s.current = r;
     let a = t.getBoundingClientRect(),
       u = f.y,
       m = u - a.top,
@@ -38,6 +38,6 @@ function l(e) {
       h = 0;
     m >= 0 && m < n ? h = -l * Math.pow(1 - m / n, o) : b >= 0 && b < n && (h = l * Math.pow(1 - b / n, o)), 0 !== h && (t.scrollTop += h * i)
   }), () => {
-    null !== s.current && cancelAnimationFrame(s.current), s.current = null, c.current = 0
+    null !== c.current && cancelAnimationFrame(c.current), c.current = null, s.current = 0
   }), [t, d, f, g, n, l, o, p])
 }

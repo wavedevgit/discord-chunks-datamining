@@ -1,4 +1,4 @@
-/** Chunk was on 22325 **/
+/** Chunk was on 3091 **/
 /** chunk id: 403239, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   q: () => u
@@ -20,17 +20,17 @@ function u(e) {
     index: f,
     disableInteraction: g = false,
     onReorder: p
-  } = e, m = (0, c.Z)(u), {
+  } = e, m = (0, s.Z)(u), {
     isDragging: b,
     currentItem: h
   } = (0, i.f)(e => ({
     isDragging: e.isDragging(),
     currentItem: e.getItem()
-  })), v = (0, r.useCallback)((e, t) => {
+  })), y = (0, r.useCallback)((e, t) => {
     let n = m.slice(),
       [r] = n.splice(e, 1);
-    n.splice(t, 0, r), s.Z.setPendingWidgets(n)
-  }, [m]), [, y, j] = (0, a.c)({
+    n.splice(t, 0, r), c.Z.setPendingWidgets(n)
+  }, [m]), [, v, j] = (0, a.c)({
     type: "WIDGET",
     item: {
       widgetType: d.type,
@@ -67,13 +67,13 @@ function u(e) {
     },
     drop: e => {
       let t = null != f ? f : 0;
-      v(e.index, t), e.index = t
+      y(e.index, t), e.index = t
     }
   });
   return null == f || g ? {
     isDragging: false,
     dragSourcePosition: null
-  } : (y(n), x(t), {
+  } : (v(n), x(t), {
     isDragging: b && (null == h ? true : h.widgetType) === d.type,
     dragSourcePosition: O
   })

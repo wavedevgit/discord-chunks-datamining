@@ -1,4 +1,4 @@
-/** Chunk was on 22325 **/
+/** Chunk was on 3091 **/
 /** chunk id: 232083, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -52,18 +52,18 @@ function d(e) {
     return i
   }(e, ["games", "user", "widgetType"]);
   let {
-    registerItemRef: s,
+    registerItemRef: c,
     manageFocusOnDelete: d
   } = (0, l.C)();
   return (0, r.jsx)("ul", {
-    className: c.cardList,
+    className: s.cardList,
     children: t.map((e, t) => (0, r.jsx)("li", {
       children: (0, r.jsx)(o.Z, u({
         index: t,
         user: n,
         game: e,
         widgetType: i,
-        coverRef: s(e.applicationId),
+        coverRef: c(e.applicationId),
         onRemoveGame: d
       }, a))
     }, e.applicationId))
@@ -75,10 +75,10 @@ function f(e) {
     user: t,
     widgetType: n,
     disableInteraction: o
-  } = e, c = (0, i.e7)([a.default], () => a.default.getId() === t.id), {
+  } = e, s = (0, i.e7)([a.default], () => a.default.getId() === t.id), {
     getManageButtonForWidget: f
-  } = (0, s.j)(), g = f(n);
-  return c && !o ? (0, r.jsx)(l.d, {
+  } = (0, c.j)(), g = f(n);
+  return s && !o ? (0, r.jsx)(l.d, {
     emptyListFallbackRef: g,
     children: (0, r.jsx)(d, u({}, e))
   }) : (0, r.jsx)(d, u({}, e))

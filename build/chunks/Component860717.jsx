@@ -1,4 +1,4 @@
-/** Chunk was on 22325 **/
+/** Chunk was on 3091 **/
 /** chunk id: 860717, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Q
@@ -50,7 +50,7 @@ function C(e) {
   return e
 }
 
-function N(e, t) {
+function D(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -62,8 +62,8 @@ function N(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let A = /{{(.*?)}}/g,
-  D = [{
+let N = /{{(.*?)}}/g,
+  A = [{
     type: "HERO",
     title: "{{username}}",
     image: "{{featured_played_character_image}}",
@@ -186,7 +186,7 @@ function Z(e) {
         }
         return i
       }(t, ["body"]);
-      return (0, r.jsx)(G, N(C({}, i), {
+      return (0, r.jsx)(G, D(C({}, i), {
         body: L(n)
       }));
     case "GRID":
@@ -230,7 +230,7 @@ function G(e) {
     className: T.heroSection,
     children: [(0, r.jsxs)("div", {
       className: T.heroBody,
-      children: [(0, r.jsx)(c.Text, {
+      children: [(0, r.jsx)(s.Text, {
         variant: "text-lg/medium",
         className: T.heroTitle,
         children: null != t ? t : (0, r.jsx)("div", {
@@ -287,7 +287,7 @@ function F(e) {
   let {
     content: t
   } = e, n = i.useId(), a = (0, h._)();
-  return null != t ? (0, r.jsx)(y.Z, {
+  return null != t ? (0, r.jsx)(v.Z, {
     type: u.re.TEXT_DISPLAY,
     id: n,
     content: t
@@ -326,7 +326,7 @@ function W(e) {
     size: t = "small",
     divider: n = false
   } = e, a = i.useId();
-  return (0, r.jsx)(v.Z, {
+  return (0, r.jsx)(y.Z, {
     type: u.re.SEPARATOR,
     id: a,
     divider: n,
@@ -353,7 +353,7 @@ function H() {
 
 function z(e, t) {
   if (null == e) return null;
-  let n = e.split(A);
+  let n = e.split(N);
   if (1 === n.length) return n[0];
   if ("skeleton" === t.mode) return null;
   let r = "";
@@ -372,7 +372,7 @@ function z(e, t) {
 function K(e, t) {
   var n, r;
   if (null == e || "skeleton" === t.mode) return null;
-  let i = null == (r = e.match(A)) || null == (n = r[0]) ? true : n.slice(2, false);
+  let i = null == (r = e.match(N)) || null == (n = r[0]) ? true : n.slice(2, false);
   if (null == i) return null;
   let a = t.variables[i];
   return null == a || "unfurled_media" !== a.type ? null : a.media
@@ -380,12 +380,12 @@ function K(e, t) {
 let V = Chunk647438.createContext(null);
 
 function Y(e) {
-  return (0, o.cj)([f.Z, P.Z, _.Z], () => {
+  return (0, o.cj)([f.Z, I.Z, _.Z], () => {
     let t = f.Z.getApplication(e.applicationId);
     return {
       application: t,
       game: null != t ? _.Z.getGameByApplication(t) : null,
-      config: P.Z.getApplicationWidgetApplicationConfig(e.applicationId)
+      config: I.Z.getApplicationWidgetApplicationConfig(e.applicationId)
     }
   })
 }
@@ -412,24 +412,24 @@ function q(e) {
 }
 
 function X(e) {
-  return (0, r.jsxs)(c.Kqy, {
+  return (0, r.jsxs)(s.Kqy, {
     direction: "horizontal",
     gap: 24,
     padding: 16,
     fullWidth: false,
     className: T.cta,
-    children: [(0, r.jsxs)(c.Kqy, {
+    children: [(0, r.jsxs)(s.Kqy, {
       gap: 4,
-      children: [(0, r.jsx)(c.Heading, {
+      children: [(0, r.jsx)(s.Heading, {
         variant: "heading-sm/medium",
         color: "text-default",
         children: e.heading
-      }), (0, r.jsx)(c.Text, {
+      }), (0, r.jsx)(s.Text, {
         variant: "text-xs/normal",
         color: "header-secondary",
         children: e.content
       })]
-    }), (0, r.jsx)(c.Kqy, {
+    }), (0, r.jsx)(s.Kqy, {
       direction: "horizontal",
       gap: 12,
       align: "center",
@@ -448,18 +448,18 @@ let Q = Object.assign(function(e) {
     application: o,
     game: u,
     config: f
-  } = Y(n), m = null == o ? true : o.getIconURL(16), b = (0, x.O)(t.id).data, h = null == b ? true : b.find(e => e.application_id === n.applicationId), v = (0, p.Z)({
+  } = Y(n), m = null == o ? true : o.getIconURL(16), b = (0, x.O)(t.id).data, h = null == b ? true : b.find(e => e.application_id === n.applicationId), y = (0, p.Z)({
     location: "UserProfileApplicationWidget",
     applicationId: null == u ? true : u.id,
     source: g.m1.UserProfile,
     sourceUserId: t.id,
     trackEntryPointImpression: true
   }), {
-    fetched: y,
+    fetched: v,
     hasAlreadyLinked: O,
     canStartAuthorization: _,
-    startAuthorization: P
-  } = (0, d.FG)(o), S = null == a && y && !O && _, A = (0, r.jsxs)(r.Fragment, {
+    startAuthorization: I
+  } = (0, d.FG)(o), S = null == a && v && !O && _, N = (0, r.jsxs)(r.Fragment, {
     children: [null != m ? (0, r.jsx)("img", {
       className: T.appIcon,
       src: m,
@@ -468,7 +468,7 @@ let Q = Object.assign(function(e) {
       alt: ""
     }) : (0, r.jsx)("span", {
       className: T.appIconPlaceholder
-    }), (0, r.jsx)(c.Text, {
+    }), (0, r.jsx)(s.Text, {
       variant: "text-sm/medium",
       children: (null == o ? true : o.name) != null ? o.name : (0, r.jsx)("div", {
         className: T.textPlaceholder
@@ -476,15 +476,15 @@ let Q = Object.assign(function(e) {
     })]
   }), k = null == u ? (0, r.jsx)("div", {
     className: T.header,
-    children: A
-  }) : (0, r.jsx)(s.u, {
+    children: N
+  }) : (0, r.jsx)(c.u, {
     asContainer: true,
     text: E.intl.string(E.t.ajHoOr),
-    children: (0, r.jsx)(c.P3F, {
+    children: (0, r.jsx)(s.P3F, {
       className: l()(T.header, T.headerClickable),
-      onClick: v,
+      onClick: y,
       "aria-label": E.intl.string(E.t.ajHoOr),
-      children: A
+      children: N
     })
   }), R = i.useMemo(() => {
     var e, t, n, r, i;
@@ -495,7 +495,7 @@ let Q = Object.assign(function(e) {
       mode: "from_data",
       variables: Object.fromEntries(Object.entries(C({
         username: null == (n = e.profile) ? true : n.username
-      }, null == (i = e.profile) || null == (r = i.data) ? true : r.primary)).filter(I.V5).map(e => {
+      }, null == (i = e.profile) || null == (r = i.data) ? true : r.primary)).filter(P.V5).map(e => {
         let [t, n] = e;
         if ("object" == typeof n) {
           if ("url" in n && "proxy_url" in n && "loading_state" in n) return [t, {
@@ -511,10 +511,10 @@ let Q = Object.assign(function(e) {
           value: n
         }];
         return null
-      }).filter(I.lm)),
+      }).filter(P.lm)),
       config: t
     });
-    return D.map(function e(t) {
+    return A.map(function e(t) {
       switch (t.type) {
         case "HERO":
           var n;
@@ -543,16 +543,16 @@ let Q = Object.assign(function(e) {
       }
     })
   }, [f, h]);
-  return (0, r.jsxs)(w.Z, N(C({}, e), {
+  return (0, r.jsxs)(w.Z, D(C({}, e), {
     userId: t.id,
     widget: n,
     className: T.widgetContainer,
     headerTitle: k,
-    dragHandleAdditionalMenuItems: null != u ? (0, r.jsx)(c.sNh, {
+    dragHandleAdditionalMenuItems: null != u ? (0, r.jsx)(s.sNh, {
       id: "view-game-profile",
       label: "View Game Profile",
-      icon: c.iWm,
-      action: v
+      icon: s.iWm,
+      action: y
     }) : null,
     children: [(0, r.jsx)(V.Provider, {
       value: e,
@@ -566,9 +566,9 @@ let Q = Object.assign(function(e) {
       className: T.footer,
       children: [null != h || S ? null : (0, r.jsxs)("div", {
         className: T.stillSyncing,
-        children: [(0, r.jsx)(c.wGF, {
+        children: [(0, r.jsx)(s.wGF, {
           size: "xxs"
-        }), (0, r.jsx)(c.Text, {
+        }), (0, r.jsx)(s.Text, {
           variant: "text-sm/medium",
           color: "text-secondary",
           children: E.intl.string(E.t.z5K4Uv)
@@ -576,9 +576,9 @@ let Q = Object.assign(function(e) {
       }), S ? (0, r.jsx)(X, {
         heading: E.intl.string(E.t.UDPRLO),
         content: E.intl.string(E.t["OW/2al"]),
-        buttons: (0, r.jsx)(c.Button, {
+        buttons: (0, r.jsx)(s.Button, {
           text: E.intl.string(E.t.S0W8Z5),
-          onClick: P
+          onClick: I
         })
       }) : a]
     })]

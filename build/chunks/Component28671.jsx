@@ -1,4 +1,4 @@
-/** Chunk was on 22325 **/
+/** Chunk was on 3091 **/
 /** chunk id: 28671, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -24,18 +24,18 @@ function b(e) {
     onDismiss: b
   } = e, {
     trackUserProfileEditAction: h
-  } = (0, s.KZ)(), v = i.useMemo(() => new c.q({
+  } = (0, c.KZ)(), y = i.useMemo(() => new s.q({
     type: a.l.APPLICATION,
     applicationId: n.id
-  }), [n.id]), y = i.useCallback(() => {
-    null != v && ((0, u.qH)(v.type, v, true), h({
+  }), [n.id]), v = i.useCallback(() => {
+    null != y && ((0, u.qH)(y.type, y, true), h({
       action: "WIDGET_ADDED",
-      widgetEdited: v.type
+      widgetEdited: y.type
     }), (0, d.L$)(g.qb.WIDGET_ADDED))
-  }, [v, h]);
+  }, [y, h]);
   return (0, r.jsx)(f.Z, {
     user: t,
-    widget: v,
+    widget: y,
     cta: (0, r.jsx)(f.Z.Cta, {
       heading: m.intl.format(m.t.OIzLCy, {
         applicationName: n.name
@@ -65,7 +65,7 @@ function b(e) {
               applicationName: n.name
             }),
             onClick: () => {
-              b(p.L.TAKE_ACTION), y()
+              b(p.L.TAKE_ACTION), v()
             }
           })
         })]

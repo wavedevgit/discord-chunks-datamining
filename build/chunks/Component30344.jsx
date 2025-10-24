@@ -1,4 +1,4 @@
-/** Chunk was on 22325 **/
+/** Chunk was on 3091 **/
 /** chunk id: 30344, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -55,7 +55,7 @@ function d(e) {
   } = (0, l.C)();
   return (0, r.jsx)(o.Z, {
     games: t,
-    renderGame: (e, t) => (0, r.jsx)(s.S, u({
+    renderGame: (e, t) => (0, r.jsx)(c.S, u({
       index: t,
       game: e,
       coverRef: i(e.applicationId),
@@ -69,10 +69,10 @@ function f(e) {
     userId: t,
     widgetType: n,
     disableInteraction: o
-  } = e, s = (0, i.e7)([a.default], () => a.default.getId() === t), {
+  } = e, c = (0, i.e7)([a.default], () => a.default.getId() === t), {
     getManageButtonForWidget: f
-  } = (0, c.j)(), g = f(n);
-  return s && !o ? (0, r.jsx)(l.d, {
+  } = (0, s.j)(), g = f(n);
+  return c && !o ? (0, r.jsx)(l.d, {
     emptyListFallbackRef: g,
     children: (0, r.jsx)(d, u({}, e))
   }) : (0, r.jsx)(d, u({}, e))

@@ -1,4 +1,4 @@
-/** Chunk was on 84071 **/
+/** Chunk was on 31029 **/
 /** chunk id: 184160, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   x: () => _
@@ -25,15 +25,15 @@ function _(e) {
     selectedSkuId: _,
     setSelectedPlanId: h,
     startedPaymentFlowWithPaymentSourcesRef: m
-  } = (0, c.JL)(), {
+  } = (0, C.JL)(), {
     isGift: f
-  } = (0, d.wD)(), x = null != i ? (0, o.Af)(i) : null, g = null != x ? (0, o.gq)(x.planId) : null, j = null != x ? (0, o.Rd)(x.planId) : null, b = (0, u.Kp)({
+  } = (0, d.wD)(), x = null != i ? (0, s.Af)(i) : null, g = null != x ? (0, s.gq)(x.planId) : null, j = null != x ? (0, s.Rd)(x.planId) : null, b = (0, u.Kp)({
     isTrial: false,
     isGift: f,
     selectedSkuId: _,
     startedPaymentFlowWithPaymentSources: m.current
   });
-  return a()(null != j, "Expected premium type"), (0, r.jsx)(s.Z, {
+  return a()(null != j, "Expected premium type"), (0, r.jsx)(o.Z, {
     premiumType: j,
     titleText: p.intl.string(p.t["7VcWW0"]),
     subtitleText: p.intl.format(p.t.Qk34Ik, {
@@ -46,7 +46,7 @@ function _(e) {
         variant: "primary",
         text: p.intl.string(p.t["3PatSz"]),
         onClick: () => {
-          b ? (h((0, u.nA)(_, i)), t(C.h8.REVIEW)) : t(C.h8.PLAN_SELECT)
+          b ? (h((0, u.nA)(_, i)), t(c.h8.REVIEW)) : t(c.h8.PLAN_SELECT)
         }
       }), (0, r.jsx)(l.Button, {
         variant: "secondary",

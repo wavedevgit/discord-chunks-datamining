@@ -1,8 +1,8 @@
-/** Chunk was on 22325 **/
+/** Chunk was on 3091 **/
 /** chunk id: 34335, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  K: () => c,
-  j: () => s
+  K: () => s,
+  j: () => c
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,12 +14,12 @@ let l = Chunk647438.createContext(null),
     getManageButtonForWidget: () => null
   };
 
-function s() {
+function c() {
   let e = Chunk647438.useContext(l);
   return null != module ? module : o
 }
 
-function c(e) {
+function s(e) {
   let {
     children: t
   } = e, n = i.useRef(new Map), a = i.useCallback(e => t => {
@@ -29,16 +29,16 @@ function c(e) {
       let t = n.current.get(e);
       null == t || t.focus()
     })
-  }, []), s = i.useCallback(e => {
+  }, []), c = i.useCallback(e => {
     var t;
     return null != (t = n.current.get(e)) ? t : null
-  }, []), c = i.useMemo(() => ({
+  }, []), s = i.useMemo(() => ({
     registerManageWidgetButtonRef: a,
     manageFocusOnReorder: o,
-    getManageButtonForWidget: s
-  }), [a, o, s]);
+    getManageButtonForWidget: c
+  }), [a, o, c]);
   return (0, r.jsx)(l.Provider, {
-    value: c,
+    value: s,
     children: t
   })
 }

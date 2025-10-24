@@ -1,4 +1,4 @@
-/** Chunk was on 22325 **/
+/** Chunk was on 3091 **/
 /** chunk id: 781040, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -21,7 +21,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk176870 = require("./176870.js");
 
-function y(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -61,20 +61,20 @@ let O = e => {
     } = (0, l.f)(e => ({
       isDragging: e.isDragging()
     }));
-    return (0, r.jsx)(s.aML, {
+    return (0, r.jsx)(c.aML, {
       "aria-label": h.intl.formatToPlainString(h.t.HWNJJN, {
         widgetTitle: t
       }),
       text: () => (0, r.jsxs)("div", {
-        className: v.dragClickTooltipText,
-        children: [(0, r.jsx)(s.Text, {
+        className: y.dragClickTooltipText,
+        children: [(0, r.jsx)(c.Text, {
           variant: "text-sm/normal",
           children: h.intl.format(i ? h.t["zvln/l"] : h.t["7cdwhg"], {
             emphasizeHook: e => (0, r.jsx)("strong", {
               children: e
             })
           })
-        }), (0, r.jsx)(s.Text, {
+        }), (0, r.jsx)(c.Text, {
           variant: "text-sm/normal",
           children: h.intl.format(h.t["4e0rM4"], {
             emphasizeHook: e => (0, r.jsx)("strong", {
@@ -103,11 +103,11 @@ let O = e => {
           widgetEdited: i.type
         }), (0, m.L$)(b.qb.WIDGET_REMOVED);
         return
-      }(0, s.ZDy)(async () => {
+      }(0, c.ZDy)(async () => {
         let {
           default: e
         } = await n.e("70887").then(n.bind(n, 37668));
-        return t => (0, r.jsx)(e, j(y({}, t), {
+        return t => (0, r.jsx)(e, j(v({}, t), {
           userId: f.default.getId(),
           widget: i,
           trackUserProfileEditAction: o
@@ -116,7 +116,7 @@ let O = e => {
         stackingBehavior: "stack"
       })
     };
-    return (0, r.jsx)(s.yRy, {
+    return (0, r.jsx)(c.yRy, {
       targetElementRef: a,
       align: "top",
       position: "right",
@@ -125,20 +125,20 @@ let O = e => {
         let {
           closePopout: t
         } = e;
-        return (0, r.jsx)(s.v2r, {
+        return (0, r.jsx)(c.v2r, {
           navId: "user-profile-widget-context-menu",
           onClose: () => {
-            (0, c.Zy)(), t()
+            (0, s.Zy)(), t()
           },
           onSelect: () => {},
           "aria-label": h.intl.string(h.t.xpSHSk),
-          children: (0, r.jsxs)(s.kSQ, {
-            children: [l, (0, r.jsx)(s.sNh, {
+          children: (0, r.jsxs)(c.kSQ, {
+            children: [l, (0, r.jsx)(c.sNh, {
               id: "remove-widget",
               label: h.intl.string(h.t.Mm07Yc),
               action: u,
               color: "danger",
-              icon: s.XHJ
+              icon: c.XHJ
             })]
           })
         })
@@ -152,26 +152,26 @@ let O = e => {
       className: n,
       buttonRef: i,
       additionalMenuItems: l
-    } = e, o = (0, p.mR)(t), c = (0, d.Dt)();
+    } = e, o = (0, p.mR)(t), s = (0, d.Dt)();
     return (0, r.jsx)(O, {
       widgetTitle: o,
       children: e => (0, r.jsx)(x, {
         targetRef: i,
         widget: t,
         additionalMenuItems: l,
-        children: t => (0, r.jsxs)(s.P3F, j(y({
+        children: t => (0, r.jsxs)(c.P3F, j(v({
           innerRef: i,
-          className: a()(v.dragHandleButton, n),
+          className: a()(y.dragHandleButton, n),
           "data-dnd-name": o,
           "aria-label": h.intl.formatToPlainString(h.t.HWNJJN, {
             widgetTitle: o
           }),
-          "aria-describedby": c
+          "aria-describedby": s
         }, e, t), {
-          children: [(0, r.jsx)(s.Vni, {
+          children: [(0, r.jsx)(c.Vni, {
             size: "sm"
-          }), (0, r.jsx)(s.nn4, {
-            id: c,
+          }), (0, r.jsx)(c.nn4, {
+            id: s,
             children: h.intl.string(h.t.bsuqFn)
           })]
         }))

@@ -100,7 +100,7 @@ function S(e) {
   return {
     defaultWishlistId: t,
     wishlist: n,
-    popularProducts: r.useMemo(() => s || null == l || d ? [] : T(l), [s, l, d]),
+    popularCollectiblesProducts: r.useMemo(() => s || null == l || d ? [] : T(l), [s, l, d]),
     isFetchingWishlist: i,
     isFetchingShopHome: !s && d,
     isFetchingCategories: p,
@@ -112,7 +112,7 @@ function S(e) {
 function A(e) {
   let {
     wishlist: t,
-    popularProducts: n,
+    popularCollectiblesProducts: n,
     wishlistError: i,
     fetchShopHomeError: a
   } = e;
@@ -122,27 +122,26 @@ function A(e) {
       displayItems: [],
       wishlistLength: 0
     };
-    let r = null != (e = null == t ? true : t.items.filter(m.Q)) ? e : [],
-      o = [],
-      s = r.slice(0, b),
-      l = s.length;
-    if (o.push(...s.map(e => ({
+    let r = (null != (e = null == t ? true : t.items) ? e : []).slice(0, b),
+      o = r.length,
+      s = [];
+    if (s.push(...r.map(e => ({
         item: e,
         source: "wishlist"
-      }))), o.length < b) {
-      let e = new Set(s.map(e => e.skuId)),
+      }))), s.length < b) {
+      let e = new Set(r.map(e => e.skuId)),
         t = n.filter(t => !e.has(t.skuId));
-      for (let e = 0; e < t.length && o.length < b; e++) {
+      for (let e = 0; e < t.length && s.length < b; e++) {
         let n = I(t[e]);
-        null !== n && o.push({
+        null !== n && s.push({
           item: n,
           source: "popular"
         })
       }
     }
     return {
-      displayItems: o,
-      wishlistLength: l
+      displayItems: s,
+      wishlistLength: o
     }
   }, [t, i, n, a])
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 22325 **/
+/** Chunk was on 3091 **/
 /** chunk id: 311044, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -24,14 +24,14 @@ function b(e) {
     channelId: b,
     onClose: h
   } = e, {
-    analyticsLocations: v
+    analyticsLocations: y
   } = (0, l.ZP)(), {
-    context: y,
+    context: v,
     trackUserProfileAction: j
-  } = (0, s.KZ)(), {
+  } = (0, c.KZ)(), {
     mutualFriends: O,
     mutualFriendsCount: x
-  } = (0, c.Z)(t), _ = (0, a.Z)();
+  } = (0, s.Z)(t), _ = (0, a.Z)();
   return i.useEffect(() => {
     (0, u.Z)(t.id, _)
   }, [t.id, _]), (0, r.jsx)(p.F, {
@@ -79,9 +79,9 @@ function b(e) {
               })
             }
             return e
-          }({}, y), t = t = {
+          }({}, v), t = t = {
             userId: i.id,
-            sourceAnalyticsLocations: v
+            sourceAnalyticsLocations: y
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {

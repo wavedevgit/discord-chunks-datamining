@@ -1,4 +1,4 @@
-/** Chunk was on 22325 **/
+/** Chunk was on 3091 **/
 /** chunk id: 248554, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   c: () => f,
@@ -20,12 +20,12 @@ function u(e) {
     coverImageUrl: n
   } = (0, l.$)(t);
   return null != n && "" !== n ? (0, r.jsx)("div", {
-    className: a()(s.coverContainer, c.placeholderCover),
+    className: a()(c.coverContainer, s.placeholderCover),
     children: (0, r.jsx)(o.o, {
       imageSrc: n
     })
   }) : (0, r.jsx)("div", {
-    className: a()(s.loadingCover, c.placeholderCover)
+    className: a()(c.loadingCover, s.placeholderCover)
   })
 }
 
@@ -36,18 +36,18 @@ function d(e) {
     className: i
   } = e;
   return (0, r.jsxs)("div", {
-    className: a()(c.container, c.placeholderDetailsCard, "small" === n && c.sizeSmall, i),
+    className: a()(s.container, s.placeholderDetailsCard, "small" === n && s.sizeSmall, i),
     "aria-hidden": true,
     children: [null != t ? (0, r.jsx)(u, {
       applicationId: t
     }) : (0, r.jsx)("div", {
-      className: s.loadingCover
+      className: c.loadingCover
     }), (0, r.jsxs)("div", {
-      className: c.placeholderText,
+      className: s.placeholderText,
       children: [(0, r.jsx)("div", {
-        className: c.placeholderBar
+        className: s.placeholderBar
       }), (0, r.jsx)("div", {
-        className: c.placeholderBar
+        className: s.placeholderBar
       })]
     })]
   })
@@ -60,7 +60,7 @@ function f(e) {
     className: i
   } = e, l = "small" === n, o = l ? t.slice(0, 3) : t.slice(0, 4);
   return (0, r.jsx)("div", {
-    className: a()(c.container, c.placeholderCoverGrid, l && c.sizeSmall, i),
+    className: a()(s.container, s.placeholderCoverGrid, l && s.sizeSmall, i),
     "aria-hidden": true,
     children: o.map((e, t) => (0, r.jsx)(u, {
       applicationId: e

@@ -1,4 +1,4 @@
-/** Chunk was on 22325 **/
+/** Chunk was on 3091 **/
 /** chunk id: 747101, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   FX: () => m,
@@ -14,7 +14,7 @@ var Chunk647438 = require("./647438.js"),
   Chunk77498 = require("./77498.js"),
   Chunk836197 = require("./836197.js");
 
-function c(e) {
+function s(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -82,15 +82,15 @@ function p(e) {
 
 function m(e) {
   let t = p(e.games.map(e => e.applicationId));
-  return r.useMemo(() => new s.zy(u(c({}, e), {
+  return r.useMemo(() => new c.zy(u(s({}, e), {
     games: e.games.map(e => {
       let n = t[e.applicationId];
-      if (null != n) return u(c({}, e), {
+      if (null != n) return u(s({}, e), {
         gameName: n.name,
         imageSrc: n.coverImageUrl
       });
       let r = o.Z.getDetectableGame(e.applicationId);
-      return u(c({}, e), {
+      return u(s({}, e), {
         gameName: null == r ? true : r.name
       })
     })

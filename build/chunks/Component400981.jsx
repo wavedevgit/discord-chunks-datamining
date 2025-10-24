@@ -1,4 +1,4 @@
-/** Chunk was on 84071 **/
+/** Chunk was on 31029 **/
 /** chunk id: 400981, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -24,12 +24,12 @@ function f(e) {
     onClose: t,
     selectedPromotionalDecoPurchaseRecord: n,
     selectedGiftingPromotionReward: f
-  } = e, x = (0, i.e7)([p.default], () => p.default.getCurrentUser()), g = (0, i.e7)([s.Z], () => s.Z.useReducedMotion), {
+  } = e, x = (0, i.e7)([p.default], () => p.default.getCurrentUser()), g = (0, i.e7)([o.Z], () => o.Z.useReducedMotion), {
     analyticsLocations: j
-  } = (0, o.ZP)(), b = l.EFr.SIZE_32, v = (0, d.Z)(null == f ? true : f.assetId, b, !g), S = (0, u.Z)(), L = null == S ? true : S.giftPurchaseConfirmation;
-  return null == n || null == L ? null : (0, r.jsx)(_.O3, {
+  } = (0, s.ZP)(), b = l.EFr.SIZE_32, y = (0, d.Z)(null == f ? true : f.assetId, b, !g), L = (0, u.Z)(), v = null == L ? true : L.giftPurchaseConfirmation;
+  return null == n || null == v ? null : (0, r.jsx)(_.O3, {
     children: (0, r.jsx)(l.mzw, {
-      align: C.Z.Align.CENTER,
+      align: c.Z.Align.CENTER,
       "data-migration-pending": true,
       children: (0, r.jsxs)("div", {
         className: m.promotionalFooter,
@@ -37,12 +37,12 @@ function f(e) {
           "aria-label": null == x ? true : x.username,
           size: b,
           src: null == x ? true : x.getAvatarURL(true, (0, l.pxk)(b), !g),
-          avatarDecoration: v
+          avatarDecoration: y
         }), (0, r.jsx)(a.zxk, {
           variant: "primary",
-          text: L.collectRewardButtonText(),
+          text: v.collectRewardButtonText(),
           onClick: () => {
-            t(), (0, c.Z)({
+            t(), (0, C.Z)({
               product: n,
               shouldShowPromotionalExperience: true,
               analyticsLocations: j,
