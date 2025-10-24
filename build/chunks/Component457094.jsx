@@ -546,7 +546,8 @@ class tu extends Chunk647438.PureComponent {
       } = ta(n), c = (0, eI.Ss)(r), u = (0, eI.cq)(i), f = (0, eI.cq)(o), h = eQ.Z.getGuildId(), m = h !== r;
       if (c && m && d.Z.selectGuild(r), c && u) {
         let n = eK.Z.getChannelId(h),
-          a = n !== i;
+          a = n !== i,
+          c = null != eV.ZP.getGuildSidebarState(r);
         if (!te || m || a || null != s) {
           te = true, p.default.selectChannel({
             guildId: r,
@@ -558,11 +559,11 @@ class tu extends Chunk647438.PureComponent {
           } = (0, l.parse)(t);
           null != e && ex.ZP.setSelectedSummary(i, e)
         }
-        if (null != o && f) {
-          let e = eV.ZP.getCurrentSidebarChannelId(n) !== o,
-            t = null != eV.ZP.getGuildSidebarState(r);
-          if (null != i && null != o && e)
-            if (t)(0, ey.dL)(e3.Z5c.CHANNEL(r, o, s));
+        if (c && a && null != i && null != eV.ZP.getCurrentSidebarChannelId(i) && eS.Z.closeChannelSidebar(i), null != o && f) {
+          let e = eV.ZP.getCurrentSidebarChannelId(n),
+            t = e !== o;
+          if (null != i && null != o && t)
+            if (c)(0, ey.dL)(e3.Z5c.CHANNEL(r, o, s));
             else {
               let e = {
                 type: eT.Ff.THREAD
@@ -574,14 +575,15 @@ class tu extends Chunk647438.PureComponent {
                 details: e
               })
             }
+          else c && null != e && null != i && eS.Z.closeChannelSidebar(i)
         } else null == i || a || eS.Z.closeChannelSidebar(i);
-        let c = eo.Z.getIsOpen();
+        let u = eo.Z.getIsOpen();
         if (i === e5.oC.ROLE_SUBSCRIPTIONS) es.Z.closeSidebar();
-        else if (m && c) {
+        else if (m && u) {
           let t = null == h && r === e3.ME,
             n = e === e3.Z5c.GUILD_DISCOVERY;
           t || n ? es.Z.closeSidebar() : es.Z.openSidebar()
-        } else(a && c || !m && !a) && es.Z.closeSidebar()
+        } else(a && u || !m && !a) && es.Z.closeSidebar()
       } else tl.some(t => {
         var n;
         return (null == (n = (0, a.LX)(e, t)) ? true : n.isExact) === true

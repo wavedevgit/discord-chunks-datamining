@@ -24,13 +24,13 @@ function g(e, t) {
     O = (0, r.e7)([s.Z], () => null != e && null != t ? s.Z.getMessage(e, t) : null),
     E = (0, o.NK)(null != O ? O : null);
   if (null == g || null == O) return null;
-  let y = null != E && E.actions.hasOwnProperty(a.d.SET_COMPLETED) ? a.d.UNSET_COMPLETED : a.d.SET_COMPLETED,
-    Z = y === a.d.SET_COMPLETED ? b.intl.string(b.t.VWNyUu) : b.intl.string(b.t.l9GqxI);
+  let p = null != E && E.actions.hasOwnProperty(a.d.SET_COMPLETED) ? a.d.UNSET_COMPLETED : a.d.SET_COMPLETED,
+    y = p === a.d.SET_COMPLETED ? b.intl.string(b.t.VWNyUu) : b.intl.string(b.t.l9GqxI);
   return n && null != t ? (0, l.jsx)(i.sNh, {
     id: "mark-automod-alert-completed",
-    label: Z,
+    label: y,
     action: () => {
-      (0, u.Xx)(t, g, y)
+      (0, u.Xx)(t, g, p)
     }
   }, "mark-automod-alert-completed") : null
 }

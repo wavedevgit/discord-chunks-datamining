@@ -44,33 +44,33 @@ let T = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     context: T,
     onSelect: D
   } = e, U = {
-    page: A.ZY5.GUILD_CHANNEL,
-    section: A.jXE.CHAT_USERNAME,
-    object: A.qAy.CONTEXT_MENU_ITEM
-  }, w = (0, M.Z)({
+    page: _.ZY5.GUILD_CHANNEL,
+    section: _.jXE.CHAT_USERNAME,
+    object: _.qAy.CONTEXT_MENU_ITEM
+  }, L = (0, I.Z)({
     userId: t.id,
     guildId: n
-  }), L = (0, P.Z)(t, n, T), k = (0, p.Z)(t.id, T), R = (0, N.Z)(t.id), B = (0, E.Z)({
+  }), w = (0, P.Z)(t, n, T), k = (0, p.Z)(t.id, T), R = (0, N.Z)(t.id), B = (0, E.Z)({
     user: t,
     context: T
   }), V = (0, m.Z)({
     user: t,
     guildId: n,
     context: T
-  }), q = (0, Z.Z)({
+  }), q = (0, f.Z)({
     user: t
   }), G = (0, x.Z)(t.id), F = (0, C.Z)(t.id), Y = (0, c.Z)({
     guildId: n,
     userId: t.id,
     analyticsLocation: U,
     context: T
-  }), Q = (0, g.Z)({
+  }), K = (0, g.Z)({
     user: t,
     guildId: n
-  }), H = (0, j.Z)({
+  }), Q = (0, j.Z)({
     user: t,
     guildId: n
-  }), K = (0, s.Z)(null, t), W = (0, f.Z)({
+  }), H = (0, s.Z)(null, t), W = (0, Z.Z)({
     user: t
   }), X = (0, b.Z)({
     user: t
@@ -84,24 +84,24 @@ let T = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     user: t,
     guildId: n,
     location: "GuildUserContextMenu"
-  }), ee = (0, O.Z)(t, n), et = (0, I.Z)(t.id, n), en = (0, S.Z)(t, n), el = (0, d.Z)({
+  }), ee = (0, O.Z)(t, n), et = (0, M.Z)(t.id, n), en = (0, S.Z)(t, n), el = (0, d.Z)({
     id: t.id,
-    label: _.intl.string(_.t["/AXYnE"])
+    label: A.intl.string(A.t["/AXYnE"])
   }), ei = t.isNonUserBot();
   return (0, l.jsxs)(i.v2r, {
     navId: "user-context",
     onClose: r.Zy,
-    "aria-label": _.intl.string(_.t.liqwPJ),
+    "aria-label": A.intl.string(A.t.liqwPJ),
     onSelect: D,
     children: [!ei && (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsxs)(i.kSQ, {
-        children: [o && w, u && L, k, B, o && V, o && q, R]
+        children: [o && L, u && w, k, B, o && V, o && q, R]
       }), a && (0, l.jsx)(i.kSQ, {
         children: G
       }), (0, l.jsx)(i.kSQ, {
-        children: o && K
+        children: o && H
       }), (0, l.jsxs)(i.kSQ, {
-        children: [a && F, o && Y, o && H, W, X, J, Q, o && $, o && z]
+        children: [a && F, o && Y, o && Q, W, X, J, K, o && $, o && z]
       }), (0, l.jsx)(i.kSQ, {
         children: ee
       }), (0, l.jsxs)(i.kSQ, {

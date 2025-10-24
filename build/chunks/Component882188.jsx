@@ -1,7 +1,7 @@
 /** Chunk was on 8982 **/
 /** chunk id: 882188, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => Z
+  Z: () => E
 });
 var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk496107 = require("./496107.js"),
   Chunk388032 = require("./388032.jsx");
 
-function Z(e, t) {
+function E(e, t) {
   let {
     enableRequestToStream: n
   } = d.A.useExperiment({
@@ -25,11 +25,11 @@ function Z(e, t) {
     location: "useRequestToStreamItem"
   }, {
     autoTrackExposure: false
-  }), Z = (0, i.e7)([s.default], () => s.default.getId()), P = (0, g.Z)(e, t.guild_id)[0], v = (0, i.e7)([u.Z], () => null != u.Z.getStreamForUser(e, t.getGuildId())), b = (0, o.IX)(null == P ? true : P.application_id).data, h = (0, c.Z)(e, t.id);
-  return Z !== e && null != P && null != b && n && h && !v ? (0, l.jsx)(r.sNh, {
+  }), E = (0, i.e7)([s.default], () => s.default.getId()), P = (0, g.Z)(e, t.guild_id)[0], h = (0, i.e7)([o.Z], () => null != o.Z.getStreamForUser(e, t.getGuildId())), p = (0, u.IX)(null == P ? true : P.application_id).data, b = (0, c.Z)(e, t.id);
+  return E !== e && null != P && null != p && n && b && !h ? (0, l.jsx)(r.sNh, {
     id: "request-to-stream",
-    label: E.intl.format(f.default["8qq+H7"], {
-      applicationName: b.name
+    label: Z.intl.format(f.default["8qq+H7"], {
+      applicationName: p.name
     }),
     action: function() {
       a.Z.sendActivityInvite({

@@ -1,7 +1,7 @@
 /** Chunk was on 6524 **/
 /** chunk id: 27900, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => M
+  default: () => C
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -76,10 +76,10 @@ function I(e) {
   }), A = (0, y.Z)({
     user: t,
     context: P
-  }), M = (0, b.Z)({
+  }), C = (0, b.Z)({
     user: t,
     appContext: P
-  }), x = (0, p.Z)(t.id, _), C = (0, E.Z)(t.id), D = (0, j.Z)(t.id, a), w = (0, m.Z)({
+  }), M = (0, p.Z)(t.id, _), x = (0, j.Z)(t.id), D = (0, E.Z)(t.id, a), w = (0, m.Z)({
     user: t
   }), T = (0, u.Z)(null, t), N = (0, f.Z)({
     user: t,
@@ -103,9 +103,9 @@ function I(e) {
       children: [(0, l.jsx)(r.kSQ, {
         children: R
       }), (0, l.jsxs)(r.kSQ, {
-        children: [I, A, M, x]
+        children: [I, A, C, M]
       }), (0, l.jsx)(r.kSQ, {
-        children: C
+        children: x
       }), (0, l.jsx)(r.kSQ, {
         children: T
       }), (0, l.jsxs)(r.kSQ, {
@@ -137,9 +137,9 @@ function A(e) {
   }), P = (0, b.Z)({
     user: t,
     appContext: g
-  }), I = (0, p.Z)(t.id, c), A = (0, E.Z)(t.id), M = (0, j.Z)(t.id, n), x = (0, m.Z)({
+  }), I = (0, p.Z)(t.id, c), A = (0, j.Z)(t.id), C = (0, E.Z)(t.id, n), M = (0, m.Z)({
     user: t
-  }), C = (0, u.Z)(null, t), D = (0, f.Z)({
+  }), x = (0, u.Z)(null, t), D = (0, f.Z)({
     user: t,
     appContext: g
   }), w = (0, O.Z)({
@@ -165,16 +165,16 @@ function A(e) {
       }), (0, l.jsx)(r.kSQ, {
         children: A
       }), (0, l.jsx)(r.kSQ, {
-        children: C
+        children: x
       }), (0, l.jsxs)(r.kSQ, {
-        children: [M, x, D, T, w]
+        children: [C, M, D, T, w]
       })]
     }), (0, l.jsx)(r.kSQ, {
       children: N
     })]
   })
 }
-let M = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
+let C = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
   var {
     guildId: t,
     channelId: n

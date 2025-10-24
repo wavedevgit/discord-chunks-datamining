@@ -2,10 +2,10 @@
 /** chunk id: 488131, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  NK: () => C,
-  R6: () => S,
-  ok: () => T,
-  vN: () => A
+  NK: () => N,
+  R6: () => A,
+  ok: () => S,
+  vN: () => C
 });
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -21,6 +21,7 @@ var Chunk512722 = require("./512722.js"),
   Chunk703656 = require("./703656.js"),
   Chunk359110 = require("./359110.js"),
   Chunk695346 = require("./695346.js"),
+  Chunk433355 = require("./433355.js"),
   Chunk703558 = require("./703558.js"),
   Chunk944486 = require("./944486.js"),
   Chunk979651 = require("./979651.js"),
@@ -29,10 +30,10 @@ var Chunk512722 = require("./512722.js"),
   Chunk981631 = require("./981631.js"),
   Chunk176505 = require("./176505.js");
 
-function T(e, t, n) {
+function S(e, t, n) {
   if (!(0, _.WF)(e.id)) return void(0, d.V)();
-  f.UI.dispatch(v.CkL.POPOUT_CLOSE);
-  let r = !o().isEmpty(b.Z.getVoiceStatesForChannel(e.id));
+  f.UI.dispatch(I.CkL.POPOUT_CLOSE);
+  let r = !o().isEmpty(y.Z.getVoiceStatesForChannel(e.id));
   if (t || !m.vF.getSetting() || __OVERLAY__ || r) {
     s.Z.dispatch({
       type: "SIDEBAR_CLOSE",
@@ -43,24 +44,34 @@ function T(e, t, n) {
     return
   }
   i()(null != e.parent_id, "all threads must have parents");
-  let a = E.Z.getChannelId();
-  e.parent_id === a || (0, I.ME)(a) || (0, h.Kh)(e.parent_id), (0, p.uL)(v.Z5c.CHANNEL_THREAD_VIEW((0, u.e)(e), (0, I.ME)(a) ? I.oC.GUILD_HOME : e.parent_id, e.id), e.isForumPost() ? {
-    source: O.on.FORUM
+  let a = e.getGuildId();
+  if (null != a && null != g.ZP.getGuildSidebarState(a)) {
+    s.Z.dispatch({
+      type: "SIDEBAR_CLOSE",
+      baseChannelId: e.parent_id
+    }), null != n ? (0, h.ad)(e, {
+      source: n
+    }) : (0, h.Kh)(e.id);
+    return
+  }
+  let l = b.Z.getChannelId();
+  e.parent_id === l || (0, T.ME)(l) || (0, h.Kh)(e.parent_id), (0, p.uL)(I.Z5c.CHANNEL_THREAD_VIEW((0, u.e)(e), (0, T.ME)(l) ? T.oC.GUILD_HOME : e.parent_id, e.id), e.isForumPost() ? {
+    source: v.on.FORUM
   } : true), setTimeout(() => {
-    y.S.dispatch(v.CkL.FOCUS_CHANNEL_TEXT_AREA, {
+    O.S.dispatch(I.CkL.FOCUS_CHANNEL_TEXT_AREA, {
       channelId: e.id
     })
   }, 0)
 }
 
-function S(e, t, n) {
-  if (i()(!e.isForumLikeChannel(), "cannot open thread creation sidebar in forums"), i()(!__OVERLAY__, "Cannot create threads in the overlay."), (0, c.yw)(v.rMx.THREAD_CREATION_STARTED, {
+function A(e, t, n) {
+  if (i()(!e.isForumLikeChannel(), "cannot open thread creation sidebar in forums"), i()(!__OVERLAY__, "Cannot create threads in the overlay."), (0, c.yw)(I.rMx.THREAD_CREATION_STARTED, {
       location: n,
       channel_id: e.id,
       guild_id: e.guild_id
-    }), f.UI.dispatch(v.CkL.POPOUT_CLOSE), E.Z.getChannelId() !== e.id && (0, h.Kh)(e.id), "" === g.Z.getDraft(e.id, g.d.FirstThreadMessage)) {
-    let t = g.Z.getDraft(e.id, g.d.ChannelMessage);
-    l.Z.saveDraft(e.id, "", g.d.ChannelMessage), l.Z.saveDraft(e.id, t, g.d.FirstThreadMessage)
+    }), f.UI.dispatch(I.CkL.POPOUT_CLOSE), b.Z.getChannelId() !== e.id && (0, h.Kh)(e.id), "" === E.Z.getDraft(e.id, E.d.FirstThreadMessage)) {
+    let t = E.Z.getDraft(e.id, E.d.ChannelMessage);
+    l.Z.saveDraft(e.id, "", E.d.ChannelMessage), l.Z.saveDraft(e.id, t, E.d.FirstThreadMessage)
   }
   setTimeout(() => {
     s.Z.dispatch({
@@ -72,24 +83,24 @@ function S(e, t, n) {
   }, 0)
 }
 
-function A(e, t) {
-  (0, p.uL)(v.Z5c.CHANNEL(e, (0, I.ME)(t) ? I.oC.GUILD_HOME : t)), s.Z.dispatch({
+function C(e, t) {
+  (0, p.uL)(I.Z5c.CHANNEL(e, (0, T.ME)(t) ? T.oC.GUILD_HOME : t)), s.Z.dispatch({
     type: "SIDEBAR_CLOSE",
     baseChannelId: t
   })
 }
 
-function C(e) {
+function N(e) {
   s.Z.dispatch({
     type: "SIDEBAR_CLOSE",
     baseChannelId: e
   }), s.Z.dispatch({
     type: "DRAFT_CLEAR",
     channelId: e,
-    draftType: g.d.FirstThreadMessage
+    draftType: E.d.FirstThreadMessage
   }), s.Z.dispatch({
     type: "DRAFT_CLEAR",
     channelId: e,
-    draftType: g.d.ThreadSettings
+    draftType: E.d.ThreadSettings
   })
 }
