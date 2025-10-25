@@ -270,7 +270,7 @@ class C extends(a = Chunk647438.PureComponent) {
     this.didUnmount = true
   }
   importData() {
-    return require.e("89506").then(require.t.bind(require, 88032, 19)).then(e => {
+    return require.e("63859").then(require.t.bind(require, 88032, 19)).then(e => {
       let {
         default: t
       } = e;

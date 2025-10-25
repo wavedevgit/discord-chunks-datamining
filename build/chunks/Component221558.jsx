@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk430824 = require("./430824.js"),
   Chunk5888 = require("./5888.js"),
   Chunk198358 = require("./198358.jsx"),
-  Chunk124798 = require("./124798.js"),
+  Chunk748246 = require("./748246.js"),
   Chunk388032 = require("./388032.jsx");
 
 function p() {
@@ -30,7 +30,7 @@ function p() {
     children: [(0, Chunk951288.jsx)(Chunk793030.xvT, {
       variant: "display-sm",
       color: "text-primary",
-      children: Chunk388032.intl.format(Chunk124798.default.mAroeJ, {
+      children: Chunk388032.intl.format(Chunk748246.default.mAroeJ, {
         joinedCount: exports,
         guildCount: require.length
       })

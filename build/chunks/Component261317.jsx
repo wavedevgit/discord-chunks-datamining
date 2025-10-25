@@ -30,12 +30,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk921944 = require("./921944.js"),
   Chunk131085 = require("./131085.js"),
-  Chunk234786 = require("./234786.js"),
+  Chunk345842 = require("./345842.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk764009 = require("./764009.js");
 let Z = function() {
   var e, t, n, Z;
-  (0, Chunk388032.useSyncMessages)(Chunk234786.messagesLoader);
+  (0, Chunk388032.useSyncMessages)(Chunk345842.messagesLoader);
   let {
     enabled: R
   } = Chunk892803.Z.useConfig({
@@ -89,7 +89,7 @@ let Z = function() {
     children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
       className: Chunk764009.title,
       variant: "heading-lg/semibold",
-      children: Chunk388032.intl.string(Chunk234786.default.mf2OwH)
+      children: Chunk388032.intl.string(Chunk345842.default.mf2OwH)
     }), (0, Chunk951288.jsxs)("div", {
       className: Chunk764009.container,
       children: [(0, Chunk951288.jsxs)("div", {
@@ -99,7 +99,7 @@ let Z = function() {
           children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
             variant: "text-sm/medium",
             color: "text-secondary",
-            children: Chunk388032.intl.format(Chunk234786.default["655Uny"], {
+            children: Chunk388032.intl.format(Chunk345842.default["655Uny"], {
               onClickServerProfile: () => {
                 Chunk434404.Z.setSection(Chunk981631.pNK.PROFILE)
               },
@@ -111,7 +111,7 @@ let Z = function() {
             className: Chunk764009.privateProfileWarning,
             children: (0, Chunk951288.jsx)(Chunk481060.Text, {
               variant: "text-xs/medium",
-              children: Chunk388032.intl.format(Chunk234786.default.CRbkIz, {
+              children: Chunk388032.intl.format(Chunk345842.default.CRbkIz, {
                 onClickEditSetting: () => Chunk434404.Z.setSection(Chunk981631.pNK.PROFILE, Chunk981631.KsC.PROFILE_VISIBILITY)
               })
             })
@@ -123,7 +123,7 @@ let Z = function() {
             children: (0, Chunk951288.jsx)(Chunk481060.Text, {
               variant: "text-md/semibold",
               color: "header-primary",
-              children: Chunk388032.intl.string(Chunk234786.default["1zams8"])
+              children: Chunk388032.intl.string(Chunk345842.default["1zams8"])
             })
           }), (0, Chunk951288.jsx)(Chunk481060.rsf, {
             id: "enable-server-tag",
