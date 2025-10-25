@@ -87,7 +87,7 @@ function S(e) {
         className: E.orbsBalanceIcon,
         customSize: 14
       }), X]
-    })
+    }, P.id)
   }) : K ? (0, r.jsx)(T, {
     questId: P.id,
     children: Q
@@ -99,12 +99,12 @@ function S(e) {
         className: E.orbsBalanceIcon,
         customSize: 14
       }), X]
-    })
+    }, P.id)
   }) : y.intl.format(y.t["0IUT4Y"], {
     rewardWithArticleHook: () => (0, r.jsx)(T, {
       questId: P.id,
       children: V
-    })
+    }, P.id)
   }), [Q, K, V, P.id, X, G]), et = s.useMemo(() => {
     if (null != $) return (0, r.jsx)(c.Text, {
       variant: "text-sm/medium",

@@ -78,5 +78,5 @@ function d(e) {
         children: e
       })
     }))
-  })
+  }, t.id)
 }
