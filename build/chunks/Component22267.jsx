@@ -45,57 +45,58 @@ let C = {
       showStatus: D,
       showPlaceholderUser: L,
       pendingGlobalName: x,
-      pendingDisplayNameStyles: M,
-      avatarDecorationOverride: k,
-      nameplatePreviewSize: j = "default",
-      isPurchased: U = false,
-      skipEffectDisplayName: G = false,
-      width: B
-    } = e, Z = (0, s.e7)([b.Z], () => (0, l.wj)(b.Z.theme)), F = null != a ? (0, v.EU)(a) : N, V = (0, s.e7)([O.Z], () => null != t ? O.Z.getStatus(t.id) : c.Skl.ONLINE), H = Z ? "#706F74" : "#aaaab2", Y = i.useRef(null), W = (0, s.e7)([y.ZP], () => null != n && null != t ? y.ZP.getMember(n, t.id) : null), K = null != t ? (0, E.Ly)({
-      pendingNickname: true,
+      pendingNickname: M,
+      pendingDisplayNameStyles: k,
+      avatarDecorationOverride: j,
+      nameplatePreviewSize: U = "default",
+      isPurchased: G = false,
+      skipEffectDisplayName: B = false,
+      width: Z
+    } = e, F = (0, s.e7)([b.Z], () => (0, l.wj)(b.Z.theme)), V = null != a ? (0, v.EU)(a) : N, H = (0, s.e7)([O.Z], () => null != t ? O.Z.getStatus(t.id) : c.Skl.ONLINE), Y = F ? "#706F74" : "#aaaab2", W = i.useRef(null), K = (0, s.e7)([y.ZP], () => null != n && null != t ? y.ZP.getMember(n, t.id) : null), z = null != t ? (0, E.Ly)({
+      pendingNickname: M,
       pendingGlobalName: x,
       user: t,
-      guildMember: W
-    }) : true, z = i.useMemo(() => C[j], [j]), q = (0, f.Z)({
+      guildMember: K
+    }) : true, q = i.useMemo(() => C[U], [U]), X = (0, f.Z)({
       userId: null == t ? true : t.id,
       guildId: n,
-      pendingDisplayNameStyles: M
-    }), X = i.useMemo(() => null != a ? I.intl.formatToPlainString(I.t.YJig7C, {
+      pendingDisplayNameStyles: k
+    }), Q = i.useMemo(() => null != a ? I.intl.formatToPlainString(I.t.YJig7C, {
       a11y_text: a.label
     }) : I.intl.string(I.t.SZeUdR), [a]);
     return (0, r.jsx)("div", {
       role: "img",
-      "aria-label": X,
+      "aria-label": Q,
       style: {
-        color: Z ? "white" : "black",
-        width: null != B ? "".concat(B, "px") : "100%"
+        color: F ? "white" : "black",
+        width: null != Z ? "".concat(Z, "px") : "100%"
       },
       children: (0, r.jsxs)(c.Rny, {
         className: o()(R, T.nameplatePreview, {
-          [T.nameplatePurchased]: U && !w,
-          [T.large]: "large" === j,
-          [T.xlarge]: "xlarge" === j,
-          [T.inheritWidth]: null != B
+          [T.nameplatePurchased]: G && !w,
+          [T.large]: "large" === U,
+          [T.xlarge]: "xlarge" === U,
+          [T.inheritWidth]: null != Z
         }),
-        children: [null != F && (0, r.jsx)(g.Z, {
-          nameplate: F,
+        children: [null != V && (0, r.jsx)(g.Z, {
+          nameplate: V,
           hovered: w,
           placement: m.i.PREVIEW,
-          content: L ? true : Y
+          content: L ? true : W
         }, null == a ? true : a.skuId), (0, r.jsxs)("div", {
           className: T.overlayContainer,
           children: [null != t ? (0, r.jsx)("div", {
             className: o()(T.avatarContainer, !L && T.avatarVisible),
             children: (0, r.jsx)(u.Z, {
-              ref: Y,
+              ref: W,
               avatar: (0, r.jsx)(d.Z, {
                 user: t,
                 guildId: n,
-                avatarSize: z,
-                status: D ? V : true,
+                avatarSize: q,
+                status: D ? H : true,
                 "aria-hidden": true,
-                avatarDecorationOverride: null != k ? {
-                  asset: k.asset
+                avatarDecorationOverride: null != j ? {
+                  asset: j.asset
                 } : true
               }),
               decorators: (0, r.jsx)(h.ZP, {
@@ -104,22 +105,22 @@ let C = {
                 className: T.tagChiplet
               }),
               name: (0, r.jsx)(p.Z, {
-                userName: K,
-                displayNameStyles: q,
-                effectDisplayType: G ? _.F.PLAIN : _.F.ANIMATED,
+                userName: z,
+                displayNameStyles: X,
+                effectDisplayType: B ? _.F.PLAIN : _.F.ANIMATED,
                 loop: true
               }),
               innerClassName: P,
-              withDisplayNameStyles: null != q
+              withDisplayNameStyles: null != X
             })
           }) : null, (0, r.jsxs)("div", {
             className: o()(T.avatarContainer, L && T.avatarVisible),
             children: [(0, r.jsx)(c.qEK, {
-              src: Z ? S : A,
-              size: z,
+              src: F ? S : A,
+              size: q,
               "aria-hidden": true,
               status: c.Skl.ONLINE,
-              statusColor: H,
+              statusColor: Y,
               className: T.avatar
             }), (0, r.jsx)("div", {
               className: T.placeholderUsername

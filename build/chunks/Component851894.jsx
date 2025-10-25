@@ -170,14 +170,14 @@ function Z(e) {
           canUsePremiumCustomization: S.ZP.canUsePremiumProfileCustomization(a),
           onUpsellClick: B
         })),
-        nameplatePreview: z ? (0, r.jsx)(p.Z, {
+        nameplatePreview: z ? (0, r.jsx)(p.Z, j(M({}, H), {
           pendingDisplayNameStyles: K,
           user: a,
           guildId: null == t ? true : t.id,
           nameplate: V,
           nameplateData: null == V ? W : true,
           isHighlighted: true
-        }) : null,
+        })) : null,
         children: (0, r.jsx)(R.Z, {
           nameplateEnabled: z
         })
