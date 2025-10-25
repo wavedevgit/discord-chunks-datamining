@@ -9,7 +9,7 @@ var Chunk647438 = require("./647438.js"),
   Chunk304809 = require("./304809.js"),
   Chunk586826 = require("./586826.js"),
   Chunk943351 = require("./943351.js");
-let s = new Worker(new URL("/assets/" + require.u("14315"), require.b)),
+let s = new Worker(new URL("/assets/" + require.u("52948"), require.b)),
   u = (0, Chunk304809.N)();
 async function c(e) {
   if (null == u) throw Error("Failed to create audio context");

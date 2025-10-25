@@ -1,3 +1,3 @@
-/** Chunk was on 64065 **/
-/** chunk id: 139726, original params: i (module,exports,require) **/
-module.exports = JSON.parse('{"JA5C7L":["Obriši"],"db85vU":["Nema predmeta za prikaz"],"bPKiId":["Nema rezultata za „",[1,"query"],"”"],"WfH9in":["Zatvori"],"m3Vfcs":["Želiš da se ovo više ne prikazuje?"],"cgdAs2":["(Otvorit će se u novoj kartici)"],"/Y7vRd":["Pritisni tipku za brisanje da ukloniš."],"VMNfsY":["Odabrano"],"A+pfVR":["Odaberi..."],"YpT3kk":["Povećaj i reproduciraj video"]}')
+/** Chunk was on 50448 **/
+/** chunk id: 139726, original params: t,r,n (module,exports,require) **/
+module.exports = require("./416728.js")

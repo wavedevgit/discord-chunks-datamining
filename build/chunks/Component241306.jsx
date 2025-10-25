@@ -8,7 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk793030 = require("./793030.js"),
   Chunk441494 = require("./441494.jsx"),
   Chunk296643 = require("./296643.jsx"),
-  Chunk694967 = require("./694967.jsx"),
+  Chunk343312 = require("./343312.jsx"),
   Chunk162190 = require("./162190.js"),
   Chunk333275 = require("./333275.js");
 
@@ -16,7 +16,7 @@ function u() {
   let {
     currentGame: e,
     planId: n
-  } = (0, Chunk694967.JL)(), t = (0, Chunk162190.Z)(null == module ? true : module.gameId, "cover");
+  } = (0, Chunk343312.JL)(), t = (0, Chunk162190.Z)(null == module ? true : module.gameId, "cover");
   if (null == module) return null;
   let u = null == module ? true : module.plans.find(e => e.id === n);
   return (0, Chunk951288.jsxs)("div", {

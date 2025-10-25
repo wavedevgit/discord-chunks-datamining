@@ -748,12 +748,12 @@ function tp(e) {
 function th(e) {
   let {
     shouldShowDeviceChangedNotifications: t
-  } = (0, e4.P)({
+  } = (0, e3.P)({
     location: "Account.useDeviceChangedTooltip",
     autoTrackExposure: false
   }), n = (0, d.e7)([eU.Z], () => null != eU.Z.getChannelId()), a = (0, et.Fh)(e), i = r.useRef(new m.V7), [l, o] = r.useState(false);
   r.useEffect(() => {
-    n && a && ((0, e4._)({
+    n && a && ((0, e3._)({
       location: "Account.useDeviceChangedTooltip (exposure tracking)",
       autoTrackExposure: true
     }), t && (o(true), i.current.start(td, () => {
@@ -940,7 +940,7 @@ function tf(e) {
     x = r.useRef(null),
     {
       showRefreshedAudioContextMenu: g
-    } = (0, e3.e)({
+    } = (0, e4.e)({
       location: "SettingsCogButton"
     }),
     b = !g && (m || p),
@@ -1087,7 +1087,7 @@ function tg(e) {
     } = (0, et.p6)(tt.h7.AUDIO_INPUT),
     {
       showRefreshedAudioContextMenu: ed
-    } = (0, e3.e)({
+    } = (0, e4.e)({
       location: "MicrophoneButton"
     }),
     {
@@ -1377,7 +1377,7 @@ function tb(e) {
     name: _
   } = (0, et.p6)(tt.h7.AUDIO_OUTPUT), {
     showRefreshedAudioContextMenu: y
-  } = (0, e3.e)({
+  } = (0, e4.e)({
     location: "HeadphonesButton"
   }), C = (0, D.Z)(t, n, i), {
     analyticsLocations: S

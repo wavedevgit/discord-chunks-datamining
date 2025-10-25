@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk478977 = require("./478977.jsx"),
   Chunk456799 = require("./456799.jsx"),
   Chunk210851 = require("./210851.jsx"),
-  Chunk602683 = require("./602683.jsx"),
+  Chunk867595 = require("./867595.jsx"),
   Chunk916028 = require("./916028.jsx"),
   Chunk749912 = require("./749912.jsx"),
   Chunk815183 = require("./815183.jsx"),
@@ -377,33 +377,33 @@ function W() {
       children: "Messages"
     }), (0, Chunk951288.jsxs)("div", {
       className: Chunk188764.fields,
-      children: [(0, Chunk951288.jsx)(Chunk602683.Z, {
+      children: [(0, Chunk951288.jsx)(Chunk867595.Z, {
         title: "Quest Name",
         assetKey: "questName",
         onMessageChange: es,
         initialValue: W.config.messages.questName
-      }), (0, Chunk951288.jsx)(Chunk602683.Z, {
+      }), (0, Chunk951288.jsx)(Chunk867595.Z, {
         title: "Game Title",
         assetKey: "gameTitle",
         onMessageChange: es,
         initialValue: W.config.messages.gameTitle
-      }), (0, Chunk951288.jsx)(Chunk602683.Z, {
+      }), (0, Chunk951288.jsx)(Chunk867595.Z, {
         title: "Game Publisher",
         assetKey: "gamePublisher",
         onMessageChange: es,
         initialValue: W.config.messages.gamePublisher
       }), ed && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-        children: [(0, Chunk951288.jsx)(Chunk602683.Z, {
+        children: [(0, Chunk951288.jsx)(Chunk867595.Z, {
           title: "Video Title",
           assetKey: "videoTitle",
           onMessageChange: ea,
           initialValue: null == eu ? true : eu.messages.videoTitle
-        }), (0, Chunk951288.jsx)(Chunk602683.Z, {
+        }), (0, Chunk951288.jsx)(Chunk867595.Z, {
           title: "End CTA Title",
           assetKey: "videoEndCtaTitle",
           onMessageChange: ea,
           initialValue: null == eu ? true : eu.messages.videoEndCtaTitle
-        }), (0, Chunk951288.jsx)(Chunk602683.Z, {
+        }), (0, Chunk951288.jsx)(Chunk867595.Z, {
           title: "End CTA Subtitle",
           assetKey: "videoEndCtaSubtitle",
           onMessageChange: ea,

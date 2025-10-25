@@ -5,39 +5,39 @@ require.d(exports, {
 });
 var Chunk818083 = require("./818083.js"),
   Chunk141537 = require("./141537.js"),
-  Chunk10109 = require("./10109.js");
+  Chunk391849 = require("./391849.js");
 let l = (0, Chunk818083.B)({
     kind: "user",
     id: "2025-08_do_not_disturb_reminder",
     label: "Do Not Disturb Reminder",
     defaultConfig: {
       enabled: false,
-      titleText: Chunk10109.default["3t3FRw"],
-      bodyText: Chunk10109.default.zyFyf3
+      titleText: Chunk391849.default["3t3FRw"],
+      bodyText: Chunk391849.default.zyFyf3
     },
     treatments: [{
       id: 1,
       label: "Enabled - Copy 1",
       config: {
         enabled: true,
-        titleText: Chunk10109.default["3t3FRw"],
-        bodyText: Chunk10109.default.zyFyf3
+        titleText: Chunk391849.default["3t3FRw"],
+        bodyText: Chunk391849.default.zyFyf3
       }
     }, {
       id: 2,
       label: "Enabled - Copy 2",
       config: {
         enabled: true,
-        titleText: Chunk10109.default.Onha6E,
-        bodyText: Chunk10109.default["7cuAey"]
+        titleText: Chunk391849.default.Onha6E,
+        bodyText: Chunk391849.default["7cuAey"]
       }
     }, {
       id: 3,
       label: "Enabled - Copy 3",
       config: {
         enabled: true,
-        titleText: Chunk10109.default.NtY0dV,
-        bodyText: Chunk10109.default["3nnb4r"]
+        titleText: Chunk391849.default.NtY0dV,
+        bodyText: Chunk391849.default["3nnb4r"]
       }
     }]
   }),
