@@ -260,14 +260,14 @@ let ek = (0, Chunk608787.Un)({
       case eZ.oC.REPORT_TO_MOD:
         return (0, r.jsx)(S.Z, {});
       default:
-        (0, ey.vE)(u)
+        (0, ev.vE)(u)
     }
     if ((0, k.p3)(d, f)) return (0, r.jsx)(U.Z, {
       guildId: l,
       channelId: u
     });
     if ((null == i ? true : i.type) === eA.d4z.GUILD_STORE) {
-      let e = ev.default.cast(t.params.messageId);
+      let e = ey.default.cast(t.params.messageId);
       return (0, r.jsx)(eS.Z, {
         channel: i,
         inputSkuId: e
@@ -348,7 +348,7 @@ function e2() {
     topLevelRoute: true
   })
 }
-let e6 = e => (0, r.jsx)(y.Z, eM({}, e)),
+let e6 = e => (0, r.jsx)(v.Z, eM({}, e)),
   e7 = () => (0, Chunk951288.jsx)(Chunk270759.Z, {}),
   e9 = () => (0, Chunk951288.jsx)(Chunk779715.Z, {}),
   te = () => (0, Chunk951288.jsx)(Chunk927220.Z, {}),
@@ -495,10 +495,10 @@ function tl(e) {
         isOpen: !r
       }), r && ti(ej.p8))
     }, [m]),
-    y = i.useCallback(() => {
+    v = i.useCallback(() => {
       document.body.classList.add(eR.dragging)
     }, []),
-    v = i.useCallback(e => {
+    y = i.useCallback(e => {
       var t;
       document.body.classList.remove(eR.dragging), document.body.classList.remove(eR.draggingMin), document.body.classList.remove(eR.draggingMax), document.body.classList.remove(eR.collapsing), null == (t = O.current) || t.style.setProperty("--custom-overdrag", "0px"), f.K.set(ej.nT, e), eI.default.track(eA.rMx.CHANNEL_SIDEBAR_RESIZED, {
         width: e
@@ -509,8 +509,8 @@ function tl(e) {
       maxDimension: ej.zx,
       resizableDomNodeRef: O,
       onElementResize: I,
-      onElementResizeStart: y,
-      onElementResizeEnd: v,
+      onElementResizeStart: v,
+      onElementResizeEnd: y,
       orientation: E.y.HORIZONTAL_RIGHT,
       throttleDuration: 0
     }),
@@ -607,7 +607,7 @@ function ta() {
     b = Chunk647438.useCallback(() => Chunk285865.Z.openSidebar(), []),
     E = (0, Chunk540059.T)("AppView"),
     O = (0, Chunk267161.useAppSidebarState)(e => !e.isOpen),
-    y = (0, Chunk442837.e7)([Chunk358221.Z], () => Chunk358221.Z.isFullscreenInContext()),
+    v = (0, Chunk442837.e7)([Chunk358221.Z], () => Chunk358221.Z.isFullscreenInContext()),
     S = (0, Chunk442837.e7)([Chunk591472.Z], () => Chunk591472.Z.isFrameActive());
   return (0, Chunk951288.jsx)("div", {
     className: Chunk981028.container,

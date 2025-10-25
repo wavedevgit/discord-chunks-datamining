@@ -28,7 +28,7 @@ function b(e) {
   } = e, {
     priorityMembers: O,
     guildContext: I
-  } = b, y = O[0], v = function(e) {
+  } = b, v = O[0], y = function(e) {
     let {
       priorityMembers: t,
       partiedMembers: n
@@ -63,14 +63,14 @@ function b(e) {
       partiedMembers: c,
       voiceChannels: u,
       currentActivities: p
-    } = e, b = i.length, E = c.length - b, O = p[0], I = null == O ? true : O.activity, y = null == O ? true : O.startedPlayingTime, v = {
+    } = e, b = i.length, E = c.length - b, O = p[0], I = null == O ? true : O.activity, v = null == O ? true : O.startedPlayingTime, y = {
       name: null != (t = null == I ? true : I.name) ? t : ""
     };
     if ((0, a.Z)(I) && null != I) return {
       subtitle: (0, r.jsx)(d.ZP, {
-        start: y,
+        start: v,
         location: d.ZP.Locations.ACTIVITY_FEED_NEW,
-        messageProps: v
+        messageProps: y
       }),
       icon: null
     };
@@ -94,9 +94,9 @@ function b(e) {
           };
           return {
             subtitle: (0, r.jsx)(d.ZP, {
-              start: y,
+              start: v,
               location: d.ZP.Locations.ACTIVITY_FEED_NEW,
-              messageProps: v
+              messageProps: y
             }), icon: null != e ? (0, r.jsx)(h.Z.Header.Icon, {
               src: null != e.getIconURL(m.Z) ? e.getIconURL(m.Z) : n(211827)
             }) : null
@@ -171,7 +171,7 @@ function b(e) {
         subtitle: (0, r.jsx)(d.ZP, {
           start: i,
           location: d.ZP.Locations.ACTIVITY_FEED_NEW,
-          messageProps: v
+          messageProps: y
         }),
         icon: null != n && null != n.getIconURL(m.Z) ? (0, r.jsx)(h.Z.Header.Icon, {
           src: n.getIconURL(m.Z)
@@ -190,13 +190,13 @@ function b(e) {
     source: c.m1.FriendsActivityFeed
   });
   return (0, r.jsx)(h.Z.Header, {
-    priorityUser: y,
+    priorityUser: v,
     guildId: null == I ? true : I.id,
-    title: v,
+    title: y,
     subtitle: C,
     icon: S,
     onSubtitleClick: T,
     onIconClick: T,
-    onContextMenu: e => E(e, y.user)
+    onContextMenu: e => E(e, v.user)
   })
 }

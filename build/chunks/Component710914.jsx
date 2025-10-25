@@ -50,7 +50,7 @@ function h(e) {
       window.removeEventListener("resize", e)
     }
   }, []);
-  let y = O >= 1610 ? 3 : O >= 1340 ? 2 : 1;
+  let v = O >= 1610 ? 3 : O >= 1340 ? 2 : 1;
   return n && 0 === t.length ? (0, r.jsx)(c.$jN, {
     className: f.spinner
   }) : 0 === t.length ? (0, r.jsxs)("div", {
@@ -68,7 +68,7 @@ function h(e) {
   }) : (0, r.jsx)("div", {
     className: f.container,
     children: t.map((e, t) => {
-      let n = Math.floor(t / y);
+      let n = Math.floor(t / v);
       return (0, r.jsx)(d.Z, {
         quest: e,
         questContent: u.jn.QUEST_HOME_DESKTOP,

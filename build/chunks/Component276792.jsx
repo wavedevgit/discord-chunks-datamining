@@ -54,27 +54,27 @@ function E(e, t) {
 
 function O(e) {
   var t, n, O, I;
-  let y, {
-      content: v,
+  let v, {
+      content: y,
       renderModalProps: C,
       analyticsLocations: S,
       analyticsLocation: T,
       isLightTheme: N
     } = e,
-    j = "AnnouncementModalVariant1_".concat(l.z[Number(v.dismissKey)]),
+    j = "AnnouncementModalVariant1_".concat(l.z[Number(y.dismissKey)]),
     {
       onClose: P
     } = C,
-    x = null != (I = null == (t = v.button) ? true : t.copy) ? I : g.intl.string(g.t.YScQSF),
-    A = (null == (n = v.button) ? true : n.buttonAction) === a.Wc.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button";
-  switch (null == (O = v.button) ? true : O.buttonAction) {
+    x = null != (I = null == (t = y.button) ? true : t.copy) ? I : g.intl.string(g.t.YScQSF),
+    A = (null == (n = y.button) ? true : n.buttonAction) === a.Wc.OPEN_MARKETING_PAGE ? "jump_to_mkt_button" : "get_nitro_button";
+  switch (null == (O = y.button) ? true : O.buttonAction) {
     case a.Wc.OPEN_MARKETING_PAGE:
-      y = () => {
+      v = () => {
         (0, u.uL)(m.Z5c.APPLICATION_STORE), P()
       };
       break;
     case a.Wc.OPEN_TIER_1_PAYMENT_MODAL:
-      y = () => (0, c.Z)({
+      v = () => (0, c.Z)({
         subscriptionTier: h.Si.TIER_1,
         analyticsLocations: S,
         analyticsObject: E(b({}, T), {
@@ -89,7 +89,7 @@ function O(e) {
     case a.Wc.OPEN_TIER_2_PAYMENT_MODAL:
     case a.Wc.OPEN_TIER_2_PAYMENT_MODAL_CUSTOM_CONFIRMATION_FOOTER:
     default:
-      y = () => (0, c.Z)({
+      v = () => (0, c.Z)({
         subscriptionTier: h.Si.TIER_2,
         analyticsLocations: S,
         analyticsObject: E(b({}, T), {
@@ -101,38 +101,38 @@ function O(e) {
         }
       })
   }
-  let Z = "" !== v.helpArticleId ? () => (0, r.jsxs)(r.Fragment, {
+  let Z = "" !== y.helpArticleId ? () => (0, r.jsxs)(r.Fragment, {
       children: ["\xa0", (0, r.jsx)(o.Anchor, {
         className: _.termsApplyAnchor,
-        href: p.Z.getArticleURL(v.helpArticleId),
+        href: p.Z.getArticleURL(y.helpArticleId),
         children: g.intl.string(g.t["sBp+u0"])
       })]
     }) : true,
     w = {
       type: "video",
-      src: N ? v.heroArtVideoLinkLightTheme : v.videoLink
+      src: N ? y.heroArtVideoLinkLightTheme : y.videoLink
     };
-  null != v.heroArtVideoSubtitles && (w.subtitles = v.heroArtVideoSubtitles.map(e => ({
+  null != y.heroArtVideoSubtitles && (w.subtitles = y.heroArtVideoSubtitles.map(e => ({
     locale: e.locale,
     src: e.link,
     isDefault: false
-  }))), ("" !== v.heroArtImageLinkDarkTheme || "" !== v.heroArtImageLinkLightTheme) && (w = {
+  }))), ("" !== y.heroArtImageLinkDarkTheme || "" !== y.heroArtImageLinkLightTheme) && (w = {
     type: "image",
-    src: N ? v.heroArtImageLinkLightTheme : v.heroArtImageLinkDarkTheme
+    src: N ? y.heroArtImageLinkLightTheme : y.heroArtImageLinkDarkTheme
   });
-  let L = "" !== v.modalTopPill ? () => (0, r.jsx)(f.mn, {
-    text: v.modalTopPill,
+  let L = "" !== y.modalTopPill ? () => (0, r.jsx)(f.mn, {
+    text: y.modalTopPill,
     className: _.modalTopPill
   }) : true;
   return {
     renderModalProps: C,
-    header: v.header,
+    header: y.header,
     modalTopExtra: L,
-    subHeader: v.subheader,
+    subHeader: y.subheader,
     subHeaderExtra: Z,
-    body: v.body,
+    body: y.body,
     heroArt: w,
-    featureCards: v.featureCards.map(e => ({
+    featureCards: y.featureCards.map(e => ({
       header: e.header,
       subHeader: e.body,
       imageSrc: N ? e.imageLinkLightTheme : e.imageLink,
@@ -150,12 +150,12 @@ function O(e) {
             cta_type: A,
             seconds_open: Math.round((Date.now() - e) / 1e3),
             target: j
-          }), y()
+          }), v()
         },
         text: x,
         icon: i.SrA
       })
     },
-    modalDismissibleContent: "" !== v.dismissKey ? Number(v.dismissKey) : true
+    modalDismissibleContent: "" !== y.dismissKey ? Number(y.dismissKey) : true
   }
 }

@@ -172,7 +172,7 @@ let k = Chunk647438.memo(function() {
             }) : (0, r.jsx)(O.Z, {
               focusSectionProps: "HELP" === V ? e : true,
               className: F
-            }), (0, r.jsx)(y.Z, {
+            }), (0, r.jsx)(v.Z, {
               className: F
             })]
           })

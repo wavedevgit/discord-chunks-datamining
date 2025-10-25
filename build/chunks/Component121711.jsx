@@ -279,7 +279,7 @@ let eg = function(e) {
   i.useEffect(() => {
     l && (0, f.Y)(en.Z5c.QUEST_HOME_V2)
   }, [l]), i.useEffect(() => {
-    v.C.trigger()
+    y.C.trigger()
   }, []);
   let eb = (0, F.T)({
     location: et.dr.QUEST_PREVIEW_TOOL_2
@@ -303,7 +303,7 @@ let eg = function(e) {
     location: et.dr.QUEST_HOME_DESKTOP
   });
   return i.useEffect(() => {
-    n && eE && (0, y.Q3)(d.z.QUEST_HOME_ENTRYPOINT_ONBOARDING)
+    n && eE && (0, v.Q3)(d.z.QUEST_HOME_ENTRYPOINT_ONBOARDING)
   }, [n, eE]), (0, r.jsx)(X.k.Provider, {
     value: {
       onAssetLoadComplete: eo

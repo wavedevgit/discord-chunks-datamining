@@ -65,7 +65,7 @@ function N(e) {
     D = e => {
       e.stopPropagation();
       let r = m.Z.getUserAffinity(t.id);
-      g.default.track(v.rMx.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
+      g.default.track(y.rMx.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
         gift_intent_type: n,
         affinity: null == r ? true : r.communicationProbability
       }), (0, f.Z)({
@@ -76,17 +76,17 @@ function N(e) {
         analyticsLocations: j,
         analyticsObject: {
           page: l,
-          section: v.jXE.FRIENDS_LIST_FRIEND_ROW,
-          object: v.qAy.BUTTON_CTA,
-          objectType: v.AnalyticsObjectTypes.GIFT
+          section: y.jXE.FRIENDS_LIST_FRIEND_ROW,
+          object: y.qAy.BUTTON_CTA,
+          objectType: y.AnalyticsObjectTypes.GIFT
         },
         giftMessage: R()
       })
     },
-    R = () => n === y.hX.FRIEND_ANNIVERSARY ? C.intl.formatToPlainString(C.t["L2s/N3"], {
+    R = () => n === v.hX.FRIEND_ANNIVERSARY ? C.intl.formatToPlainString(C.t["L2s/N3"], {
       numberOfYears: E.Z.getFriendAnniversaryYears(t.id)
     }) : (0, _.Ou)(n),
-    M = () => n === y.hX.FRIEND_ANNIVERSARY ? C.intl.string(C.t["4LohBA"]) : (0, _.Ou)(n),
+    M = () => n === v.hX.FRIEND_ANNIVERSARY ? C.intl.string(C.t["4LohBA"]) : (0, _.Ou)(n),
     k = i.useRef(null);
   return (0, r.jsx)(u.yRy, {
     targetElementRef: k,
@@ -108,8 +108,8 @@ function N(e) {
       onMouseLeave: Z,
       popoutPosition: e.position,
       analyticsPage: l,
-      analyticsSection: v.jXE.FRIENDS_LIST_FRIEND_ROW_GIFT_POPOUT,
-      giftIntentSecondaryAction: y.X2.SEND_MESSAGE,
+      analyticsSection: y.jXE.FRIENDS_LIST_FRIEND_ROW_GIFT_POPOUT,
+      giftIntentSecondaryAction: v.X2.SEND_MESSAGE,
       glow: true
     }),
     children: () => w ? (0, r.jsx)(u.P3F, {

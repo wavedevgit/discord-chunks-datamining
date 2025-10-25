@@ -91,7 +91,7 @@ function P(e) {
     null != e && (0, f.yw)(C.rMx.CHANNEL_OPENED, j(N({}, (0, f.$H)(e)), {
       location: "".concat(p.Z.FREQUENT_FRIENDS_ROW, " ").concat(l + 1)
     }))
-  }, y = 0 === l, v = y ? o.YqE : a ? o.XcD : true, P = y ? S.intl.string(S.t.aI4VOL) : a ? S.intl.string(S.t.kABl2x) : true;
+  }, v = 0 === l, y = v ? o.YqE : a ? o.XcD : true, P = v ? S.intl.string(S.t.aI4VOL) : a ? S.intl.string(S.t.kABl2x) : true;
   return (0, r.jsx)(o.P3F, {
     className: T.frequentFriendAvatarButton,
     onClick: I,
@@ -107,8 +107,8 @@ function P(e) {
       isTyping: h,
       isMobile: d && !h,
       size: o.EFr.SIZE_32,
-      CutoutIcon: v,
-      avatarTooltipAsset: y ? "\uD83D\uDD25" : a ? "❄️" : true,
+      CutoutIcon: y,
+      avatarTooltipAsset: v ? "\uD83D\uDD25" : a ? "❄️" : true,
       avatarTooltipText: P,
       statusTooltip: true,
       statusTooltipDelay: 50,

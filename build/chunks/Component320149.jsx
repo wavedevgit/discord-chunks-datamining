@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 320149, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => y
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -24,11 +24,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk10832 = require("./10832.js"),
   Chunk419246 = require("./419246.js");
 
-function v(e) {
+function y(e) {
   let {
     channel: t,
     baseChannelId: n
-  } = e, v = (0, b.ZP)(t), C = (0, p.K)(), S = (0, p.V)(), T = (0, l.e7)([u.Z], () => u.Z.isMessageRequest(t.id)), N = (0, l.e7)([d.Z], () => d.Z.isSpam(t.id)), j = (0, h.V)(t.id, t.getRecipientId()), P = i.useCallback(() => {
+  } = e, y = (0, b.ZP)(t), C = (0, p.K)(), S = (0, p.V)(), T = (0, l.e7)([u.Z], () => u.Z.isMessageRequest(t.id)), N = (0, l.e7)([d.Z], () => d.Z.isSpam(t.id)), j = (0, h.V)(t.id, t.getRecipientId()), P = i.useCallback(() => {
     g.Z.closeChannelSidebar(_.uZ), T && C && (0, m.Kh)(t.id), N && S && (0, m.Kh)(t.id)
   }, [t.id, N, S, T, C]), x = i.useCallback(() => {
     (0, a.showToast)((0, a.createToast)(O.intl.string(O.t.pIQ3h4), a.ToastType.FAILURE))
@@ -50,16 +50,16 @@ function v(e) {
       "aria-label": O.intl.string(O.t.BIYAqa),
       children: (0, c.ud)({
         channel: t,
-        channelName: v,
+        channelName: y,
         inSidebar: true
       })
     }), N && (0, r.jsxs)("div", {
-      className: y.hamBanner,
+      className: v.hamBanner,
       children: [(0, r.jsx)(a.Text, {
         variant: "text-sm/normal",
         children: O.intl.string(O.t.XVOKgj)
       }), (0, r.jsx)("div", {
-        className: y.hamBannerButton,
+        className: v.hamBannerButton,
         children: (0, r.jsx)(a.Button, {
           size: "sm",
           onClick: () => A(t, j),

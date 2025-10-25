@@ -256,13 +256,13 @@ let e_ = e => {
       subscribeToGlobalHotkey: true
     })
   }),
-  ey = () => {
+  ev = () => {
     let e = (0, Chunk899740.q)();
     return module > 0 ? (0, Chunk951288.jsx)(Chunk481060.mAB, {
       count: module
     }) : null
   },
-  ev = e => {
+  ey = e => {
     let {
       selected: t
     } = e, n = (0, u.JA)("messageRequests"), {
@@ -277,7 +277,7 @@ let e_ = e => {
       text: ed.intl.string(ed.t.e7GWjQ),
       onClick: l
     }, n), {
-      children: (0, r.jsx)(ey, {})
+      children: (0, r.jsx)(ev, {})
     }))
   },
   eC = e => {
@@ -335,7 +335,7 @@ let e_ = e => {
           } = e;
           return t === f.z.FAMILY_CENTER_NEW_BADGE ? (0, r.jsx)(g.IGR, {
             text: ed.intl.string(ed.t.y2b7CA),
-            color: v.Z.BG_BRAND
+            color: y.Z.BG_BRAND
           }) : null
         }
       })
@@ -383,7 +383,7 @@ let eP = Chunk647438.memo(function(e) {
     path: _,
     onlyShowDMs: b,
     hideAllDMs: E
-  } = e, O = i.useRef(null), I = i.useRef(null), v = i.useRef(null), S = i.useRef(null), N = D.o.useConfig({
+  } = e, O = i.useRef(null), I = i.useRef(null), y = i.useRef(null), S = i.useRef(null), N = D.o.useConfig({
     location: "privatechannels"
   }).friendsTab, j = (0, P.b5)("PrivateChannels");
   return (0, r.jsxs)("nav", {
@@ -415,7 +415,7 @@ let eP = Chunk647438.memo(function(e) {
       selectedChannelId: g,
       showDMHeader: !E && !b,
       hideAllDMs: E,
-      listScrollerRef: v,
+      listScrollerRef: y,
       createDMCTAButtonVariant: h,
       children: [N && !b ? (0, r.jsx)(eE, {
         selected: null != _ ? _ === es.Z5c.ME_ACTIVITY : l === es.Z5c.ME_ACTIVITY
@@ -426,9 +426,9 @@ let eP = Chunk647438.memo(function(e) {
       }, "icymi") : null, n && t && !b ? (0, r.jsx)(eO, {
         selected: null == _ ? null != l && l.startsWith(es.Z5c.APPLICATION_LIBRARY) : _.startsWith(es.Z5c.APPLICATION_LIBRARY),
         hideGameUpdateProgressIndicator: l === es.Z5c.APPLICATION_LIBRARY
-      }, "library") : null, u && !b ? (0, r.jsx)(ev, {
+      }, "library") : null, u && !b ? (0, r.jsx)(ey, {
         selected: null == _ ? null != l && l.startsWith(es.Z5c.MESSAGE_REQUESTS) : _ === es.Z5c.MESSAGE_REQUESTS
-      }, "message-requests") : null, o && !b ? (0, r.jsxs)(r.Fragment, {
+      }, "message-requests") : null, o && !b ? (0, r.jsxs)(i.Fragment, {
         children: [(0, r.jsx)(H.g, {
           nitroTabButtonRef: S,
           selected: null == _ ? s : _.startsWith(es.Z5c.APPLICATION_STORE),
@@ -440,10 +440,10 @@ let eP = Chunk647438.memo(function(e) {
               object: es.qAy.NAVIGATION_LINK
             }
           }
-        }, "premium"), c && (0, r.jsx)(B.F, {
+        }), c && (0, r.jsx)(B.F, {
           targetElementRef: S
         })]
-      }) : null, b ? null : (0, r.jsx)(y.i, {
+      }, "nitro-tab-group") : null, b ? null : (0, r.jsx)(v.i, {
         selected: _ === es.Z5c.COLLECTIBLES_SHOP || (null == l ? true : l.startsWith(es.Z5c.COLLECTIBLES_SHOP)),
         listItemRef: I,
         locationState: {

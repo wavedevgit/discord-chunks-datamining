@@ -47,7 +47,7 @@ function L(e, t, n) {
     let e = A._M,
       {
         pttLatchingEnabled: t = false
-      } = y.Z.getModeOptions(l);
+      } = v.Z.getModeOptions(l);
     if (!n.latched && true === t && i < n.pressedTime + e) {
       n.latched = true;
       return
@@ -59,7 +59,7 @@ function L(e, t, n) {
   let s = a.get(t);
   null == s && (s = new Set, a.set(t, s)), e ? s.add(n.id) : s.delete(n.id);
   let o = s.size > 0;
-  y.Z.getMediaEngine().eachConnection(e => e.setForceAudioInput(o, t), l)
+  v.Z.getMediaEngine().eachConnection(e => e.setForceAudioInput(o, t), l)
 }
 let D = {
     [Chunk981631.kg4.TOGGLE_PRIORITY_SPEAKER]: {
@@ -72,7 +72,7 @@ let D = {
     },
     [Chunk981631.kg4.PUSH_TO_TALK]: {
       onTrigger(e, t) {
-        y.Z.getMode(t.context) === x.pM4.PUSH_TO_TALK && (D[x.kg4.PUSH_TO_TALK].isPressed = e, L(e, false, t))
+        v.Z.getMode(t.context) === x.pM4.PUSH_TO_TALK && (D[x.kg4.PUSH_TO_TALK].isPressed = e, L(e, false, t))
       },
       keyEvents: {
         keyup: true,
@@ -82,7 +82,7 @@ let D = {
     },
     [Chunk981631.kg4.PUSH_TO_TALK_PRIORITY]: {
       onTrigger(e, t) {
-        (y.Z.getMode() === x.pM4.PUSH_TO_TALK || P.Z.getCurrentConfig({
+        (v.Z.getMode() === x.pM4.PUSH_TO_TALK || P.Z.getCurrentConfig({
           location: "keybinds"
         }).onPTTKeybind) && (D[x.kg4.PUSH_TO_TALK_PRIORITY].isPressed = e, L(e, true, t))
       },
@@ -94,7 +94,7 @@ let D = {
     },
     [Chunk981631.kg4.VAD_PRIORITY]: {
       onTrigger(e, t) {
-        y.Z.getMode() === x.pM4.VOICE_ACTIVITY && P.Z.getCurrentConfig({
+        v.Z.getMode() === x.pM4.VOICE_ACTIVITY && P.Z.getCurrentConfig({
           location: "keybinds"
         }).separateKeybind && (D[x.kg4.VAD_PRIORITY].isPressed = e, L(e, true, t))
       },
@@ -106,7 +106,7 @@ let D = {
     },
     [Chunk981631.kg4.PUSH_TO_MUTE]: {
       onTrigger(e) {
-        y.Z.getMode() === x.pM4.VOICE_ACTIVITY && (D[x.kg4.PUSH_TO_MUTE].isPressed = e, i.Z.setTemporarySelfMute(e))
+        v.Z.getMode() === x.pM4.VOICE_ACTIVITY && (D[x.kg4.PUSH_TO_MUTE].isPressed = e, i.Z.setTemporarySelfMute(e))
       },
       keyEvents: {
         keyup: true,

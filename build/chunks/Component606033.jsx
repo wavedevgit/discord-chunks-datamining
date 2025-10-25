@@ -24,7 +24,7 @@ let _ = function(e) {
     setQuestId: E,
     quest: O,
     refreshQuest: I
-  } = e, [y, v] = i.useState(false), [C, S] = i.useState(false), T = i.useRef(null), N = (0, u.MP)(), j = (0, l.e7)([d.Z], () => null != b ? d.Z.getFetchQuestPreviewError(b) : null, [b]), P = (0, l.e7)([d.Z], () => null != b && d.Z.isFetchingQuestPreview(b), [b]), x = i.useMemo(() => {
+  } = e, [v, y] = i.useState(false), [C, S] = i.useState(false), T = i.useRef(null), N = (0, u.MP)(), j = (0, l.e7)([d.Z], () => null != b ? d.Z.getFetchQuestPreviewError(b) : null, [b]), P = (0, l.e7)([d.Z], () => null != b && d.Z.isFetchingQuestPreview(b), [b]), x = i.useMemo(() => {
     let e = N.map(e => {
       var t, n, r;
       return {
@@ -38,33 +38,33 @@ let _ = function(e) {
     }), e
   }, [N, b]), A = i.useCallback(async () => {
     if (null != b) {
-      v(true);
+      y(true);
       try {
         await (0, c.Wf)(b, 1)
       } finally {
-        v(false)
+        y(false)
       }
     }
-  }, [b, v]), Z = i.useCallback(async () => {
+  }, [b, y]), Z = i.useCallback(async () => {
     if (null != b) {
-      v(true);
+      y(true);
       try {
         await (0, c.eT)(b)
       } finally {
-        v(false)
+        y(false)
       }
     }
-  }, [b, v]), w = i.useCallback(async () => {
+  }, [b, y]), w = i.useCallback(async () => {
     if (null != b) {
-      v(true);
+      y(true);
       try {
         let e = Math.random();
         await (0, c.Wf)(b, e)
       } finally {
-        v(false)
+        y(false)
       }
     }
-  }, [b, v]), L = i.useCallback(e => {
+  }, [b, y]), L = i.useCallback(e => {
     (0, o.Ew)(e) || null == E || E(e)
   }, [E]);
   return (0, r.jsxs)("div", {
@@ -106,20 +106,20 @@ let _ = function(e) {
         className: g.controlButtons,
         children: [(0, r.jsx)(a.Button, {
           onClick: A,
-          disabled: y,
-          loading: y,
+          disabled: v,
+          loading: v,
           variant: "secondary",
           text: m.intl.string(m.t.jQEfRT)
         }), (0, r.jsx)(a.Button, {
           onClick: Z,
-          disabled: y,
-          loading: y,
+          disabled: v,
+          loading: v,
           variant: "secondary",
           text: m.intl.string(m.t.taqkwK)
         }), (0, r.jsx)(a.Button, {
           onClick: w,
-          disabled: y,
-          loading: y,
+          disabled: v,
+          loading: v,
           variant: "secondary",
           text: m.intl.string(m.t.cKSLr4)
         }), (0, r.jsx)(a.yRy, {

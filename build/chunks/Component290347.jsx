@@ -63,7 +63,7 @@ let T = [],
       className: n
     } = e;
     return (0, r.jsx)(c.IGR, {
-      className: a()(v.tag, n),
+      className: a()(y.tag, n),
       text: t
     })
   },
@@ -76,23 +76,23 @@ let T = [],
       wideStyle: s
     } = e;
     return (0, r.jsxs)("div", {
-      className: a()(v.featureCard, {
-        [v.wideStyle]: s
+      className: a()(y.featureCard, {
+        [y.wideStyle]: s
       }),
       children: [null != l ? (0, r.jsx)(N, {
         tagText: l,
-        className: v.featureCardTag
+        className: y.featureCardTag
       }) : null, (0, r.jsx)("img", {
         alt: "",
-        className: a()(v.featureCardImg, {
-          [v.wideStyle]: s
+        className: a()(y.featureCardImg, {
+          [y.wideStyle]: s
         }),
         src: i
       }), (0, r.jsxs)("div", {
-        className: v.featureCardTextGroup,
+        className: y.featureCardTextGroup,
         children: [(0, r.jsx)(c.Heading, {
           variant: "heading-md/bold",
-          className: v.featureCardTextHeader,
+          className: y.featureCardTextHeader,
           children: t
         }), (0, r.jsx)(c.Text, {
           variant: "text-md/normal",
@@ -186,27 +186,23 @@ function P(e) {
     }
   }, [P, R]), (0, r.jsx)(c.Y0X, {
     "data-migration-pending": true,
-    className: a()(v.root, v.largeBorderRadius, t),
+    className: a()(y.root, y.largeBorderRadius, t),
     transitionState: G,
     "aria-labelledby": B,
     parentComponent: "PremiumAnnouncementModalVariant1",
     children: (0, r.jsxs)(c.$1m, {
       color: "nitro-pink",
       children: [(0, r.jsx)("div", {
-        className: v.closeButtonContainer,
+        className: y.closeButtonContainer,
         children: (0, r.jsx)(o.PZ7, {
           "data-migration-pending": true,
           onClick: async () => await U()
         })
       }), null == x ? true : x(), (0, r.jsxs)(c.hzk, {
         "data-migration-pending": true,
-        className: v.content,
-        children: [(0, r.jsx)(c.Heading, {
-          variant: "display-md",
-          className: a()(v.headerText, Z),
-          children: A
-        }), "video" === l.type ? (0, r.jsx)(h.Z, {
-          className: a()(v.video, N),
+        className: y.content,
+        children: ["video" === l.type ? (0, r.jsx)(h.Z, {
+          className: a()(y.video, N),
           autoPlay: !V,
           loop: true,
           muted: true,
@@ -230,7 +226,7 @@ function P(e) {
           },
           disablePictureInPicture: true,
           children: null == el ? true : el.map(e => {
-            let t = (0, y.getLanguages)().find(t => t.code === e.locale);
+            let t = (0, v.getLanguages)().find(t => t.code === e.locale);
             return null == t ? null : (0, r.jsx)("track", {
               label: t.englishName,
               kind: "captions",
@@ -240,7 +236,7 @@ function P(e) {
             }, e.locale)
           })
         }) : "embed" === l.type ? (0, r.jsx)(d.BC, {
-          className: a()(v.video, N),
+          className: a()(y.video, N),
           allowFullScreen: false,
           href: l.href,
           thumbnail: l.thumbnail,
@@ -258,26 +254,30 @@ function P(e) {
           }
         }) : "image" === l.type ? (0, r.jsx)("img", {
           alt: "",
-          className: a()(v.video, N),
+          className: a()(y.video, N),
           src: l.src
-        }) : null, (0, r.jsxs)(c.Text, {
+        }) : null, (0, r.jsx)(c.Heading, {
+          variant: "display-md",
+          className: a()(y.headerText, Z),
+          children: A
+        }), (0, r.jsxs)(c.Text, {
           variant: "text-md/normal",
           color: "text-secondary",
-          className: v.subHeader,
+          className: y.subHeader,
           children: [w, null == L ? true : L()]
         }), null != k && "" !== k && (0, r.jsx)(c.Heading, {
           variant: "heading-lg/semibold",
-          className: v.bodyText,
+          className: y.bodyText,
           children: k
         }), D.length > 0 && (0, r.jsx)("div", {
-          className: a()(v.featureCardGroup, {
-            [v.wideStyle]: H
+          className: a()(y.featureCardGroup, {
+            [y.wideStyle]: H
           }),
           children: D.map((e, t) => (0, r.jsx)(j, S(C({}, e), {
             wideStyle: H
           }), "".concat(e.header, "_").concat(t)))
         }), (0, r.jsx)("div", {
-          className: v.buttonContainer,
+          className: y.buttonContainer,
           children: M()
         })]
       })]

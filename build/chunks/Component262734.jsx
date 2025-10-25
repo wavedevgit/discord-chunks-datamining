@@ -47,7 +47,7 @@ function j(e) {
   }), M = i.useCallback(() => {
     E.Z.updateFrameLayoutMode({
       applicationId: t.applicationId,
-      layoutMode: y.U.PIP
+      layoutMode: v.U.PIP
     })
   }, [t.applicationId]), k = i.useCallback(() => {
     E.Z.stopFrame({
@@ -68,7 +68,7 @@ function j(e) {
     let e = e => {
       null == w.current || w.current.contains(e.target) || l || E.Z.updateFrameLayoutMode({
         applicationId: t.applicationId,
-        layoutMode: y.U.PIP
+        layoutMode: v.U.PIP
       })
     };
     return document.addEventListener("mousedown", e), () => {
@@ -86,10 +86,10 @@ function j(e) {
   }
   let V = C.MI.NO_CHAT;
   if (null == n) return null;
-  let F = (null != A ? A : v.$Y6) + Z,
+  let F = (null != A ? A : y.$Y6) + Z,
     z = (0, I.ro)(t);
   return (0, r.jsx)(u.f6W, {
-    theme: v.BRd.DARK,
+    theme: y.BRd.DARK,
     children: e => (0, r.jsxs)("div", {
       className: a()(T.wrapper, N[V], e),
       ref: w,
@@ -117,7 +117,7 @@ function j(e) {
       }), (0, r.jsxs)("div", {
         className: T.footer,
         children: [(0, r.jsx)(_.Z, {
-          appContext: v.IlC.APP,
+          appContext: y.IlC.APP,
           applicationId: n.id,
           shouldPrioritizeGroupPlusIcon: true,
           isRichPresenceInvite: true,

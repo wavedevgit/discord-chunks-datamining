@@ -28,8 +28,8 @@ let m = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
       imageMarginTop: E,
       trackingSource: O,
       undismissable: I,
-      onDismissed: y,
-      onClick: v,
+      onDismissed: v,
+      onClick: y,
       cta: C,
       ctaColor: S,
       centerText: T,
@@ -50,7 +50,7 @@ let m = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
           source: O,
           guild_id: t.id,
           notice_type: g
-        }), null == v || v()
+        }), null == y || y()
       },
       fullWidth: true,
       color: S,
@@ -83,7 +83,7 @@ let m = (0, Chunk392711.debounce)(Chunk367907.ZP.trackWithMetadata, 500),
         onClick: () => {
           u.ZP.trackWithMetadata(p.rMx.CHANNEL_NOTICE_CLOSED, {
             notice_type: g
-          }), null == y || y()
+          }), null == v || v()
         },
         className: h.close,
         "aria-label": f.intl.string(f.t.WAI6xu),

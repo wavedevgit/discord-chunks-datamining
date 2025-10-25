@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 81471, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => y
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -23,28 +23,28 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk161414 = require("./161414.js"),
   Chunk430864 = require("./430864.js");
-let v = Chunk647438.memo(function(e) {
+let y = Chunk647438.memo(function(e) {
   let {
     channel: t
   } = e, {
     loaded: n,
     error: l,
-    message: v
+    message: y
   } = (0, _.a)(t), C = (0, u.p)(), {
     isBlocked: S,
     isIgnored: T
   } = (0, s.cj)([g.Z], () => ({
-    isBlocked: null != v && g.Z.isBlockedForMessage(v),
-    isIgnored: null != v && g.Z.isIgnoredForMessage(v)
-  }), [v]), N = (0, s.e7)([m.Z], () => m.Z.can(b.Plq.MANAGE_MESSAGES, t)), j = h.cC.useSetting(), {
+    isBlocked: null != y && g.Z.isBlockedForMessage(y),
+    isIgnored: null != y && g.Z.isIgnoredForMessage(y)
+  }), [y]), N = (0, s.e7)([m.Z], () => m.Z.can(b.Plq.MANAGE_MESSAGES, t)), j = h.cC.useSetting(), {
     content: P
-  } = i.useMemo(() => (null == v ? true : v.content) != null && "" !== v.content ? (0, p.ZP)(v, {
+  } = i.useMemo(() => (null == y ? true : y.content) != null && "" !== y.content ? (0, p.ZP)(y, {
     formatInline: true,
     noStyleAndInteraction: true,
     shouldFilterKeywords: C
   }) : {
     content: null
-  }, [v, C]), x = null;
+  }, [y, C]), x = null;
   if (l) x = (0, r.jsx)(o.Text, {
     className: I.messageReplacement,
     variant: "text-sm/normal",
@@ -52,23 +52,23 @@ let v = Chunk647438.memo(function(e) {
     children: O.intl.string(O.t.BZHld2)
   });
   else if (n)
-    if (null != v && S) x = (0, r.jsx)(o.Text, {
+    if (null != y && S) x = (0, r.jsx)(o.Text, {
       className: I.messageReplacement,
       variant: "text-sm/normal",
       color: "text-muted",
       children: O.intl.string(O.t["WPe+xL"])
     });
-    else if (null != v && T) x = (0, r.jsx)(o.Text, {
+    else if (null != y && T) x = (0, r.jsx)(o.Text, {
     className: I.messageReplacement,
     variant: "text-sm/normal",
     color: "text-muted",
     children: O.intl.string(O.t.uxrh1O)
   });
-  else if (null != v) {
+  else if (null != y) {
     let {
       contentPlaceholder: e,
       renderedContent: t
-    } = (0, f.f)(v, P, S, T, a()(I.messageContent, y.inlineFormat), {
+    } = (0, f.f)(y, P, S, T, a()(I.messageContent, v.inlineFormat), {
       leadingIconClass: I.messageContentIcon,
       trailingIconClass: I.messageContentIcon,
       iconSize: E.WW
