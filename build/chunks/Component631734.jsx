@@ -78,8 +78,8 @@ let a = e => {
       fill: "string" == typeof p ? p : p.css,
       className: h
     }), (0, i.jsx)("path", {
-      "fill-rule": "evenodd",
-      "clip-rule": "evenodd",
+      fillRule: "evenodd",
+      clipRule: "evenodd",
       d: "M15 12.14V11H13V13H11V11H9V13H7V11H5V9H7V7H5V5H7V7H9V5H11V7H13V5H15V7H17V5H19V7H17V9H19V11H17V12H22V5C22 3.34 20.66 2 19 2H5C3.34 2 2 3.34 2 5V13C2 14.66 3.34 16 5 16H12C12 14.14 13.28 12.59 15 12.14Z",
       fill: "string" == typeof p ? p : p.css,
       className: h

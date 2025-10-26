@@ -6,7 +6,7 @@ require.r(exports), require.d(exports, {
   getLanguages: () => Chunk424395.Vb,
   getSystemLocale: () => h,
   initialLocale: () => g,
-  international: () => Chunk713965.Z,
+  international: () => Chunk203601.Z,
   intl: () => E,
   systemLocale: () => m,
   t: () => Chunk253185.k,
@@ -14,12 +14,12 @@ require.r(exports), require.d(exports, {
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
-  Chunk124213 = require("./124213.js"),
+  Chunk400497 = require("./400497.js"),
   Chunk159635 = require("./159635.js"),
   s = require.n(Chunk159635),
   Chunk253185 = require("./253185.js"),
   Chunk424395 = require("./424395.js"),
-  Chunk713965 = require("./713965.js");
+  Chunk203601 = require("./203601.js");
 
 function d(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -65,11 +65,11 @@ function h(e) {
 }
 let m = h("en-US"),
   g = (0, Chunk424395.YI)(m, "en-US"),
-  E = new Chunk124213.IntlManager({
+  E = new Chunk400497.IntlManager({
     initialLocale: g,
     defaultLocale: "en-US"
   }).withFormatters({
-    format: (0, Chunk124213.makeReactFormatter)({
+    format: (0, Chunk400497.makeReactFormatter)({
       $i: (e, t) => (0, r.jsx)("em", {
         children: e
       }, t),
@@ -107,8 +107,8 @@ let m = h("en-US"),
         }), e)
       }
     }),
-    formatToPlainString: Chunk124213.stringFormatter,
-    formatToMarkdownString: Chunk124213.markdownFormatter,
-    formatToParts: Chunk124213.astFormatter
+    formatToPlainString: Chunk400497.stringFormatter,
+    formatToMarkdownString: Chunk400497.markdownFormatter,
+    formatToParts: Chunk400497.astFormatter
   }),
   b = e => (0, c.j1)(e, E)

@@ -80,8 +80,8 @@ let f = ["#847D8B", "#D1CDD5"],
           d: "M12 8H11V4H12V2H14V4H13V6H12V8Z",
           fill: "#FF7FC0"
         }), (0, v.jsx)("path", {
-          "fill-rule": "evenodd",
-          "clip-rule": "evenodd",
+          fillRule: "evenodd",
+          clipRule: "evenodd",
           d: "M9 11H10V12H11V13H12V15H4V13H5V12H6V11H7V9H9V11Z",
           fill: "white"
         }), (0, v.jsx)("path", {

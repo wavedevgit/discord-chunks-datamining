@@ -355,7 +355,7 @@ function em(e) {
     })]
   }) : eX, e0 = i.useRef(null), e1 = (0, M.Y)({
     location: "PrivateChannel"
-  }) && (null == p ? true : p.displayNameStyles) != null, e5 = (0, f.Z)();
+  }) && (null == p ? true : p.displayNameStyles) != null, e8 = (0, f.Z)();
   return (0, r.jsx)(d.mh, {
     id: t.id,
     children: e => {
@@ -480,7 +480,7 @@ function em(e) {
             className: o()(er.iconsContainer, {
               [er.nameplated]: eB
             }),
-            children: [eL && !ey ? (0, r.jsx)(eu, {}) : null, eM ? (0, r.jsx)(ed, {}) : null, ek ? (0, r.jsx)(ep, {}) : null, eA && !e5 ? (0, r.jsx)(b.u, {
+            children: [eL && !ey ? (0, r.jsx)(eu, {}) : null, eM ? (0, r.jsx)(ed, {}) : null, ek ? (0, r.jsx)(ep, {}) : null, eA && !e8 ? (0, r.jsx)(b.u, {
               asContainer: true,
               text: en.intl.string(ex ? en.t.Et8qwj : en.t["d+e27s"]),
               delay: 500,

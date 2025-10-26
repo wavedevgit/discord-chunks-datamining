@@ -11,7 +11,7 @@ var Chunk594928 = require("./594928.js"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk569165 = require("./569165.js");
+  Chunk352609 = require("./352609.js");
 let d = () => {
   let e = (0, Chunk594928.cL)({
       location: "useGetPlanComparisonTableRowsApplicationHome"
@@ -46,7 +46,7 @@ let d = () => {
     }];
   return module && exports.push({
     id: 22,
-    label: Chunk388032.intl.string(Chunk569165.default["86GtGH"]),
+    label: Chunk388032.intl.string(Chunk352609.default["86GtGH"]),
     tier0ColumnData: {
       includes: false
     },

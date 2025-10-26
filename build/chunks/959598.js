@@ -8,7 +8,7 @@ var r = {
   "./abc-ginto-normal/abcgintonormal-800-extrabolditalic.woff2": ["516711"],
   "./gg-sans/ggsans-600-semibolditalic.woff2": ["480854"],
   "./gg-sans/ggsans-500-medium.woff2": ["5983"],
-  "./source-code-pro/sourcecodepro-600-semibold.woff2": ["626025", "94606"],
+  "./source-code-pro/sourcecodepro-600-semibold.woff2": ["626025", "49678"],
   "./fraunces/fraunces-vf.woff2": ["894757"],
   "./abc-ginto-normal/abcgintonormal-700-bolditalic.woff2": ["805987"],
   "./gg-sans/ggsans-800-extrabolditalic.woff2": ["69891"],
