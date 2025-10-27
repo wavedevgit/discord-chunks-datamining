@@ -1,12 +1,14 @@
 /** Chunk was on 26473 **/
 /** chunk id: 323297, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
-  default: () => v
+  default: () => h
 });
-var Chunk951288 = require("./951288.js"),
-  Chunk793030 = require("./793030.js"),
+var Chunk951288 = require("./951288.js");
+require("./647438.js");
+var Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
   Chunk906732 = require("./906732.jsx"),
+  Chunk578756 = require("./578756.js"),
   Chunk899789 = require("./899789.jsx"),
   Chunk796724 = require("./796724.jsx"),
   Chunk343312 = require("./343312.jsx"),
@@ -15,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk871404 = require("./871404.js");
 
-function f(e) {
+function x(e) {
   for (var n = 1; n < arguments.length; n++) {
     var t = null != arguments[n] ? arguments[n] : {},
       r = Object.keys(t);
@@ -34,7 +36,7 @@ function f(e) {
   return e
 }
 
-function x(e, n) {
+function p(e, n) {
   return n = null != n ? n : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(n)) : (function(e, n) {
     var t = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -47,49 +49,49 @@ function x(e, n) {
   }), e
 }
 
-function p(e) {
+function v(e) {
   let {
     step: n,
     setFooterNode: t
-  } = (0, d.JL)(), {
+  } = (0, c.JL)(), {
     title: a,
-    subtitle: p
+    subtitle: o
   } = function(e) {
     switch (e) {
-      case c.EK.SELECT_GAME:
+      case u.EK.SELECT_GAME:
         return {
-          title: g.intl.string(u.default["3vWDMz"]), subtitle: g.intl.string(u.default.Az5bjs)
+          title: m.intl.string(g.default["3vWDMz"]), subtitle: m.intl.string(g.default.Az5bjs)
         };
-      case c.EK.SERVER_SETTINGS:
+      case u.EK.SERVER_SETTINGS:
         return {
-          title: g.intl.string(u.default.RLGW9z)
+          title: m.intl.string(g.default.RLGW9z)
         }
     }
   }(n);
-  return (0, r.jsxs)(i.IX, x(f({}, e), {
+  return (0, r.jsxs)(i.IX, p(x({}, e), {
     size: "lg",
     children: [(0, r.jsx)(i.xBx, {
       title: a,
-      subtitle: p
+      subtitle: o
     }), (0, r.jsx)(l.zJl, {
-      className: m.modalContent,
+      className: f.modalContent,
       style: {
-        width: c.AK
+        width: u.AK
       },
       children: (0, r.jsx)("div", {
         style: {
-          padding: c.TG
+          padding: u.TG
         },
         children: (0, r.jsxs)(l.MyZ, {
-          width: c.SY,
+          width: u.SY,
           activeSlide: n,
           children: [(0, r.jsx)(l.Mi4, {
-            id: c.EK.SELECT_GAME,
-            children: (0, r.jsx)(o.Z, {})
-          }, c.EK.SELECT_GAME), (0, r.jsx)(l.Mi4, {
-            id: c.EK.SERVER_SETTINGS,
+            id: u.EK.SELECT_GAME,
             children: (0, r.jsx)(s.Z, {})
-          }, c.EK.SERVER_SETTINGS)]
+          }, u.EK.SELECT_GAME), (0, r.jsx)(l.Mi4, {
+            id: u.EK.SERVER_SETTINGS,
+            children: (0, r.jsx)(d.Z, {})
+          }, u.EK.SERVER_SETTINGS)]
         })
       })
     }), (0, r.jsx)("div", {
@@ -98,14 +100,14 @@ function p(e) {
   }))
 }
 
-function v(e) {
+function h(e) {
   let {
     analyticsLocations: n
   } = (0, a.ZP)();
-  return (0, r.jsx)(a.Gt, {
+  return (0, o.lY)(e.guildId, n, e.analyticsLocation), (0, r.jsx)(a.Gt, {
     value: n,
-    children: (0, r.jsx)(d.BT, x(f({}, e), {
-      children: (0, r.jsx)(p, f({}, e))
+    children: (0, r.jsx)(c.BT, p(x({}, e), {
+      children: (0, r.jsx)(v, x({}, e))
     }))
   })
 }

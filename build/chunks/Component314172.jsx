@@ -10,10 +10,10 @@ var Chunk442837 = require("./442837.js"),
   Chunk235874 = require("./235874.jsx"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
-  Chunk944613 = require("./944613.jsx"),
   Chunk607070 = require("./607070.js"),
   Chunk345162 = require("./345162.js"),
   Chunk496675 = require("./496675.js"),
+  Chunk608798 = require("./608798.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk880033 = require("./880033.js");
@@ -65,9 +65,9 @@ function b(e) {
     highestRole: g,
     onAddRole: b,
     buttonRef: y
-  } = e, O = (0, i.e7)([c.Z], () => c.Z.roleStyle);
-  if (!(0, i.e7)([d.Z], () => d.Z.can(f.Plq.MANAGE_ROLES, t))) return null;
-  let v = e => !(0, u.fI)(e) && !e.managed && d.Z.isRoleHigher(t, g, e) && false === n.roles.indexOf(e.id);
+  } = e, O = (0, i.e7)([l.Z], () => l.Z.roleStyle);
+  if (!(0, i.e7)([u.Z], () => u.Z.can(f.Plq.MANAGE_ROLES, t))) return null;
+  let v = e => !(0, c.fI)(e) && !e.managed && u.Z.isRoleHigher(t, g, e) && false === n.roles.indexOf(e.id);
   return (0, r.jsx)(a.y, {
     targetElementRef: y,
     position: "bottom",
@@ -76,7 +76,7 @@ function b(e) {
       let {
         closePopout: n
       } = e;
-      return (0, r.jsx)(l.Z, {
+      return (0, r.jsx)(d.Z, {
         guild: t,
         roleStyle: O,
         roleFilter: v,

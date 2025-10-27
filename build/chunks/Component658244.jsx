@@ -1,5 +1,5 @@
 /** Chunk was on 1272 **/
-/** chunk id: 476669, original params: e,t,n (module,exports,require) **/
+/** chunk id: 658244, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
 });
@@ -9,7 +9,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk239091 = require("./239091.js"),
   Chunk129861 = require("./129861.jsx"),
   Chunk600164 = require("./600164.jsx"),
-  Chunk646551 = require("./646551.js");
+  Chunk7675 = require("./7675.js");
 class u extends Chunk647438.PureComponent {
   handleContextMenu(e, t) {
     (0, a.jW)(e, async () => {
@@ -76,12 +76,12 @@ class u extends Chunk647438.PureComponent {
       header: t
     } = this.props, n = module.map(e => this.renderUser(e));
     return (0, Chunk951288.jsxs)("div", {
-      className: Chunk646551.userList,
+      className: Chunk7675.userList,
       children: [(0, Chunk951288.jsx)("div", {
-        className: Chunk646551.header,
+        className: Chunk7675.header,
         children: exports
       }), (0, Chunk951288.jsx)(Chunk481060.zJl, {
-        className: Chunk646551.content,
+        className: Chunk7675.content,
         fade: true,
         children: require
       })]

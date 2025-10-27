@@ -1,7 +1,7 @@
 /** Chunk was on 62934 **/
 /** chunk id: 109838, original params: e,n,t (module,exports,require) **/
 require.r(exports), require.d(exports, {
-  default: () => h
+  default: () => y
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,6 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk63063 = require("./63063.js"),
   Chunk639777 = require("./639777.js"),
   Chunk905551 = require("./905551.js"),
+  Chunk578756 = require("./578756.js"),
   Chunk60482 = require("./60482.js"),
   Chunk52021 = require("./52021.jsx"),
   Chunk809121 = require("./809121.jsx"),
@@ -22,59 +23,59 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk215365 = require("./215365.js");
 
-function h(e) {
+function y(e) {
   var n;
   let {
     guildId: t
   } = e;
-  a.useEffect(() => {
+  (0, g.cX)(t), a.useEffect(() => {
     (0, m.mF)(t), o.Z.getDetectableGames()
   }, [t]);
-  let h = (0, u.Z)(t),
-    y = (0, l.e7)([g.Z], () => g.Z.getStateForGuild(t)),
-    C = Object.values(null != (n = null == y ? true : y.instances) ? n : {});
+  let y = (0, u.Z)(t),
+    C = (0, l.e7)([f.Z], () => f.Z.getStateForGuild(t)),
+    O = Object.values(null != (n = null == C ? true : C.instances) ? n : {});
   return (0, r.jsxs)("div", {
-    className: j.container,
+    className: h.container,
     children: [(0, r.jsxs)(c.ZP, {
-      className: j.toolbar,
+      className: h.toolbar,
       toolbar: (0, r.jsx)("div", {}),
       children: [(0, r.jsx)(c.ZP.Icon, {
         icon: i.iWm,
         "aria-label": ""
       }), (0, r.jsx)(c.ZP.Title, {
-        children: p.intl.string(b.default.vCzwM7)
+        children: j.intl.string(p.default.vCzwM7)
       }), (0, r.jsx)(s.IGR, {
         disableColor: true,
-        text: p.intl.string(p.t.oW0eUd),
-        className: j.badge
+        text: j.intl.string(j.t.oW0eUd),
+        className: h.badge
       }), (0, r.jsx)(c.ZP.Divider, {
-        className: j.divider
+        className: h.divider
       }), (0, r.jsx)(s.Text, {
         variant: "text-sm/normal",
         color: "text-muted",
-        children: p.intl.format(b.default.LiR4eN, {
-          helpCenterUrl: d.Z.getArticleURL(v.BhN.GAME_SERVER_HOSTING)
+        children: j.intl.format(p.default.LiR4eN, {
+          helpCenterUrl: d.Z.getArticleURL(b.BhN.GAME_SERVER_HOSTING)
         })
       })]
     }), (0, r.jsxs)("div", {
-      className: j.contentContainer,
-      children: [(null == y ? true : y.instances) != null ? (0, r.jsx)(s.zJl, {
-        className: j.gameContainerWrapper,
+      className: h.contentContainer,
+      children: [(null == C ? true : C.instances) != null ? (0, r.jsx)(s.zJl, {
+        className: h.gameContainerWrapper,
         children: (0, r.jsxs)("div", {
-          className: j.gameContainer,
-          children: [C.map((e, n) => (0, r.jsx)(x.ZP, {
+          className: h.gameContainer,
+          children: [O.map((e, n) => (0, r.jsx)(_.ZP, {
             guildId: t,
             instance: e
-          }, "".concat(e.gameId, "-").concat(n))), (0, r.jsx)(f.Z, {
+          }, "".concat(e.gameId, "-").concat(n))), (0, r.jsx)(x.Z, {
             guildId: t
           })]
         })
       }) : (0, r.jsx)("div", {
-        className: j.spinnerContainer,
+        className: h.spinnerContainer,
         children: (0, r.jsx)(s.$jN, {
           type: s.RAz.SPINNING_CIRCLE
         })
-      }), h && (0, r.jsx)(_.Z, {
+      }), y && (0, r.jsx)(v.Z, {
         guildId: t
       })]
     })]

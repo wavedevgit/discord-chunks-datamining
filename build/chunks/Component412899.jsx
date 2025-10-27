@@ -30,13 +30,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk884902 = require("./884902.js"),
   Chunk48950 = require("./48950.jsx"),
   Chunk635042 = require("./635042.js"),
+  Chunk608798 = require("./608798.jsx"),
   Chunk345162 = require("./345162.js"),
   Chunk271383 = require("./271383.js"),
   Chunk485386 = require("./485386.js"),
   Chunk496675 = require("./496675.js"),
   Chunk594174 = require("./594174.js"),
   Chunk700785 = require("./700785.js"),
-  Chunk944613 = require("./944613.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk85703 = require("./85703.js");
@@ -284,16 +284,16 @@ function X(e) {
     } = e,
     f = (0, u.JA)("overflow-add-roles-".concat(a.id)),
     p = (0, _.e7)([b.Z], () => b.Z.roleStyle),
-    m = D.Z.getHighestRole(n),
-    g = R.ZP.getMember(n.id, a.id),
-    E = e => !(0, N.fI)(e) && !e.managed && D.Z.isRoleHigher(n, m, e) && (null == g || false === g.roles.indexOf(e.id));
+    m = w.Z.getHighestRole(n),
+    g = P.ZP.getMember(n.id, a.id),
+    E = e => !(0, R.fI)(e) && !e.managed && w.Z.isRoleHigher(n, m, e) && (null == g || false === g.roles.indexOf(e.id));
   return (0, r.jsx)(h.yRy, {
     targetElementRef: t,
     renderPopout: e => {
       let {
         closePopout: t
       } = e;
-      return (0, r.jsx)(x.Z, {
+      return (0, r.jsx)(N.Z, {
         guild: n,
         roleStyle: p,
         roleFilter: E,
@@ -349,9 +349,9 @@ function Q(e) {
       t.includes(e) || (t = [...t, e]), T.Z.updateMemberRoles(a.id, n.id, t, [e], [])
     }, [s, a.id, n.id]),
     [S, A] = i.useState(null),
-    N = (0, _.Wu)([P.Z], () => P.Z.getManyRoles(a.id, s).sort(C.Z)),
+    N = (0, _.Wu)([D.Z], () => D.Z.getManyRoles(a.id, s).sort(C.Z)),
     R = i.useMemo(() => null != S ? N.slice(0, S) : N, [N, S]),
-    x = s.length - R.length;
+    P = s.length - R.length;
   i.useLayoutEffect(() => {
     if (f) return;
     if ("number" != typeof p) throw Error("Unexpected null width");
@@ -368,10 +368,10 @@ function Q(e) {
     }
     A(t => e < R.length ? e : t)
   }, [f, p, R]);
-  let U = w.default.getCurrentUser();
+  let U = L.default.getCurrentUser();
   l()(null != U, "MemberRolesList: currentUser cannot be undefined");
-  let B = !m && D.Z.can(M.Plq.MANAGE_ROLES, a),
-    V = L.e9(a, U.id),
+  let B = !m && w.Z.can(M.Plq.MANAGE_ROLES, a),
+    V = x.e9(a, U.id),
     K = i.useMemo(() => "roles-".concat((0, c.Z)()), []),
     Q = (0, d.ZP)({
       id: K,
@@ -385,15 +385,15 @@ function Q(e) {
       return (0, r.jsx)(z, {
         className: E,
         role: e,
-        canRemove: (null == (t = e.tags) ? true : t.guild_connections) === null ? n.id === U.id : B && L.r6(a, U.id, V, e),
+        canRemove: (null == (t = e.tags) ? true : t.guild_connections) === null ? n.id === U.id : B && x.r6(a, U.id, V, e),
         onRemove: () => v(e),
         ref: t => O(e.id, t),
         guildId: a.id,
         disableBorderColor: b
       }, e.id)
     });
-  return null != S && 0 !== x ? t = (0, r.jsx)(q, Z(G({}, e), {
-    numRolesHidden: x
+  return null != S && 0 !== P ? t = (0, r.jsx)(q, Z(G({}, e), {
+    numRolesHidden: P
   })) : B && (t = (0, r.jsx)(X, Z(G({}, e), {
     handleAddRole: I
   }))), (0, r.jsx)(u.bG, {
@@ -419,8 +419,8 @@ function Q(e) {
 let J = (0, Chunk112724.Z)(Q);
 
 function $(e) {
-  return (0, _.e7)([D.Z], () => {
+  return (0, _.e7)([w.Z], () => {
     var t;
-    return D.Z.getGuildVersion(null == (t = e.guild) ? true : t.id)
+    return w.Z.getGuildVersion(null == (t = e.guild) ? true : t.id)
   }), false === e.wrap ? (0, r.jsx)(J, G({}, e)) : (0, r.jsx)(Q, G({}, e))
 }

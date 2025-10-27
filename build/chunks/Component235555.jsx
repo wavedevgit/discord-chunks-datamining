@@ -9,7 +9,6 @@ var Chunk951288 = require("./951288.js"),
   a = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk239091 = require("./239091.js"),
-  Chunk476669 = require("./476669.jsx"),
   Chunk524331 = require("./524331.js"),
   Chunk768419 = require("./768419.js"),
   Chunk831506 = require("./831506.js"),
@@ -17,6 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk594174 = require("./594174.js"),
   Chunk823379 = require("./823379.js"),
   Chunk824138 = require("./824138.jsx"),
+  Chunk658244 = require("./658244.jsx"),
   Chunk388032 = require("./388032.jsx");
 
 function b(e, t, n) {
@@ -85,7 +85,7 @@ class E extends Chunk647438.PureComponent {
       let {
         party: e
       } = this.props;
-      return (0, r.jsx)(c.Z, {
+      return (0, r.jsx)(g.Z, {
         party: e,
         header: _.intl.formatToPlainString(_.t.I9et1z, {
           count: e.length
@@ -101,7 +101,7 @@ let O = Chunk442837.ZP.connectStores([Chunk768419.Z, Chunk594174.default, Chunk6
     l = [];
   if (null != require ? (e = Chunk594174.default.getUser(require.userId), t = require.partyId) : null != Chunk951288 && null != Chunk951288.party && null != Chunk951288.party.id && (e = Chunk647438, t = Chunk951288.party.id), null != exports) {
     var s;
-    l = a()(Array.from(null != (s = Chunk831506.Z.getParty(exports)) ? Chunk442837 : [])).map(e => h.default.getUser(e)).filter(Chunk823379.lm).orderBy([t => null == e || e.id === t.id, e => f.Z.isFriend(e.id)], ["desc", "desc"]).value()
+    l = a()(Array.from(null != (s = Chunk831506.Z.getParty(exports)) ? Chunk442837 : [])).map(e => f.default.getUser(e)).filter(Chunk823379.lm).orderBy([t => null == e || e.id === t.id, e => p.Z.isFriend(e.id)], ["desc", "desc"]).value()
   }
   return {
     currentUser: Chunk647438,
