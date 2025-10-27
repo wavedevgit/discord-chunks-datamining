@@ -207,9 +207,9 @@ function L(e) {
         })
       }), (0, r.jsxs)("div", {
         className: k.sidebarContainer,
-        children: [M ? (0, r.jsx)(I.Z, {
+        children: [M ? (0, r.jsx)(w.Z, {
           guildId: t
-        }) : (0, r.jsx)(w.Z, {
+        }) : (0, r.jsx)(I.Z, {
           guildId: t
         }), (0, r.jsx)(E.Z, {
           guildId: t

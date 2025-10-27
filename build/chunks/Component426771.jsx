@@ -25,14 +25,14 @@ function x(e) {
       group: h,
       powerups: j
     } = e,
-    [C, I] = i.useState(false),
-    w = (0, c.Gv)(b, j),
+    [C, w] = i.useState(false),
+    I = (0, c.Gv)(b, j),
     E = (0, o.e7)([s.Z], () => s.Z.useReducedMotion),
     Z = (0, d.Z)(h, b);
   if (true === Z || j.length <= 0) return null;
-  let P = w.some(e => e.type !== f.A3.INACTIVE),
+  let P = I.some(e => e.type !== f.A3.INACTIVE),
     T = (0, p.d)(P),
-    y = w.reduce((e, t) => {
+    y = I.reduce((e, t) => {
       let {
         sourceEntitlement: n
       } = t, r = null == n ? true : n.ends_at;
@@ -45,21 +45,21 @@ function x(e) {
     type: "active",
     statusText: g.intl.string(m.default.FFLkmx)
   });
-  let N = w.reduce((e, t) => {
+  let N = I.reduce((e, t) => {
       let {
         type: n,
         powerup: r
       } = t;
       return n === f.A3.POWERUP_ACTIVATED ? e + r.cost : e
     }, 0),
-    O = w.reduce((e, t) => {
+    O = I.reduce((e, t) => {
       var n, r;
       let {
         powerup: i
       } = t;
       return e < (null != (n = null == i ? true : i.cost) ? n : 0) ? e : null != (r = null == i ? true : i.cost) ? r : 0
-    }, null != (x = null == (n = w[0]) || null == (t = n.powerup) ? true : t.cost) ? x : 0),
-    S = w.reduce((e, t) => {
+    }, null != (x = null == (n = I[0]) || null == (t = n.powerup) ? true : t.cost) ? x : 0),
+    S = I.reduce((e, t) => {
       var n;
       let {
         powerup: r
@@ -76,8 +76,8 @@ function x(e) {
     isActive: P,
     badge: Z.badge,
     onClick: () => Z.openModal(j),
-    onMouseOver: () => I(true),
-    onMouseLeave: () => I(false),
+    onMouseOver: () => w(true),
+    onMouseLeave: () => w(false),
     children: [(0, r.jsx)("img", {
       alt: "",
       src: R,

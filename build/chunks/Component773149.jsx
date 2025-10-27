@@ -1,7 +1,7 @@
 /** Chunk was on 44799 **/
 /** chunk id: 773149, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => I
+  Z: () => w
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -11,10 +11,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk100527 = require("./100527.js"),
-  Chunk19394 = require("./19394.js"),
   Chunk838968 = require("./838968.jsx"),
   Chunk279475 = require("./279475.js"),
   Chunk60482 = require("./60482.js"),
+  Chunk765703 = require("./765703.js"),
   Chunk735276 = require("./735276.jsx"),
   Chunk459196 = require("./459196.js"),
   Chunk269794 = require("./269794.js"),
@@ -24,29 +24,26 @@ var Chunk951288 = require("./951288.js"),
   Chunk436370 = require("./436370.js"),
   Chunk611087 = require("./611087.js");
 
-function I(e) {
+function w(e) {
   let {
     guildId: t
   } = e, {
     state: n,
     lowestGameServerCost: o
-  } = (0, s.cj)([m.Z], () => ({
-    state: m.Z.getStateForGuild(t),
-    lowestGameServerCost: m.Z.getLowestGameCostForGuild(t)
-  })), I = i.useMemo(() => {
+  } = (0, s.cj)([f.Z], () => ({
+    state: f.Z.getStateForGuild(t),
+    lowestGameServerCost: f.Z.getLowestGameCostForGuild(t)
+  })), w = (0, m.Z)(t), I = i.useMemo(() => {
     var e;
-    let t = Object.values(null != (e = null == n ? true : n.entitlements) ? e : {});
-    if (0 === t.length) return;
-    let r = (0, d.h)(t);
-    return r.length > 0 ? {
+    if (0 !== Object.values(null != (e = null == n ? true : n.entitlements) ? e : {}).length) return w.length > 0 ? {
       type: "expiring",
-      expiringAt: r[0].ends_at
+      expiringAt: w[0].ends_at
     } : {
       type: "active",
       statusText: _.intl.string(v.default.FFLkmx)
     }
-  }, [null == n ? true : n.entitlements]), w = (0, f.d)((null == I ? true : I.type) === "active");
-  return null == n ? null : (0, r.jsxs)(p.aB, {
+  }, [w, null == n ? true : n.entitlements]), E = (0, p.d)((null == I ? true : I.type) === "active");
+  return null == n ? null : (0, r.jsxs)(d.aB, {
     label: _.intl.string(x.default["B3OfL/"]),
     badge: "beta",
     isActive: (null == I ? true : I.type) === "active",
@@ -64,21 +61,21 @@ function I(e) {
       }), (0, r.jsx)("div", {
         className: l()(b.image, j.gradient)
       })]
-    }), (0, r.jsx)(p.Q9, {
+    }), (0, r.jsx)(d.Q9, {
       title: _.intl.string(x.default["B3OfL/"]),
-      textColor: w,
-      footer: (0, r.jsx)(p.uf, {
+      textColor: E,
+      footer: (0, r.jsx)(d.uf, {
         cost: null != o ? o : 0,
         costDecorator: "+",
         status: I
       }),
       children: (0, r.jsx)(a.xvT, {
         className: b.description,
-        color: w,
+        color: E,
         variant: "text-sm/medium",
         children: _.intl.string(x.default.EGkJAG)
       })
-    }), (0, r.jsx)(p.N4, {
+    }), (0, r.jsx)(d.N4, {
       children: (0, r.jsx)(c.Button, {
         variant: "primary",
         fullWidth: true,
