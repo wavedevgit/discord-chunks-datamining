@@ -83,7 +83,7 @@ let {
       a = Math.min(2, (0, r.x_)());
     return "".concat(location.protocol).concat(h).concat(o, "?size=").concat((0, r.oO)(n * a)).concat(i).concat(s)
   }
-  return "".concat(location.protocol).concat(p).concat(o)
+  return "".concat(location.protocol).concat(h).concat(o)
 }, N = e => null != e.match("development" !== m ? O : v), R = e => ({
   type: d.Ih.PACK,
   id: e.id,
