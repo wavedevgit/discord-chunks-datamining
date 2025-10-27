@@ -211,24 +211,7 @@ class eg extends Chunk647438.PureComponent {
       bannerVisibleHeight: d,
       communityInfoVisible: p
     } = this.state, h = i || l || a;
-    return null == t ? null : (0, w.LK)({
-      location: "guild_sidebar"
-    }).isGuildEntrypointEnabled ? (0, r.jsx)(O.Gt, {
-      value: s,
-      children: (0, r.jsx)(ee.ZP, {
-        guild: t,
-        controller: o,
-        renderBanner: c,
-        hasSubheader: e,
-        bannerVisible: u,
-        communityInfoVisible: p,
-        guildBanner: this.getGuildBannerHash(),
-        onContextMenu: this.handleHeaderContextMenu,
-        disableBannerAnimation: h,
-        animationOverlayHeight: d,
-        children: this.renderGuildHeaderNotices(n)
-      })
-    }) : (0, r.jsx)(O.Gt, {
+    return null == t ? null : (0, r.jsx)(O.Gt, {
       value: s,
       children: (0, r.jsx)(f.KeG, {
         targetElementRef: this.guildHeaderRef,

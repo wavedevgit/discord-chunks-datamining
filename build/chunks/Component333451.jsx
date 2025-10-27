@@ -34,29 +34,29 @@ function L(e) {
   } = e, n = (0, a.e7)([S.default], () => S.default.locale);
   return (0, i.jsxs)("div", {
     className: M.perksList,
-    children: [(0, i.jsx)(h.Z, {
+    children: [(0, i.jsx)(_.Z, {
       icon: u.Ucv,
       iconClassName: M.perkIconGuild,
       description: b.intl.formatToPlainString(b.t.sQBgs2, {
         numFreeGuildSubscriptions: O.cb
       }),
       color: u.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK.css
-    }), (0, i.jsx)(h.Z, {
+    }), (0, i.jsx)(_.Z, {
       icon: u.Ucv,
       iconClassName: M.perkIconGuild,
       description: b.intl.formatToPlainString(b.t["1A6vXi"], {
         percent: (0, y.T3)(n, O.Rr / 100)
       }),
       color: u.TVs.unsafe_rawColors.GUILD_BOOSTING_PINK.css
-    }), t ? (0, i.jsx)(h.Z, {
+    }), t ? (0, i.jsx)(_.Z, {
       icon: u.EO4,
       iconClassName: M.perkIconChatPerks,
       description: b.intl.string(b.t.Z9b2x2)
-    }) : null, (0, i.jsx)(h.Z, {
+    }) : null, (0, i.jsx)(_.Z, {
       icon: u.hGI,
       iconClassName: M.perkIconStream,
       description: b.intl.string(b.t["8dqG5E"])
-    }), (0, i.jsx)(h.Z, {
+    }), (0, i.jsx)(_.Z, {
       icon: u.rG2,
       iconClassName: M.perkIconUpload,
       description: b.intl.string(b.t.cBorIy)
@@ -70,7 +70,7 @@ function T(e) {
     premiumSubscriptionPlan: n,
     onClose: r,
     onBack: a,
-    onSkip: h,
+    onSkip: _,
     onSubscriptionConfirmation: S,
     analyticsLocation: y,
     analyticsSourceLocation: T,
@@ -80,7 +80,7 @@ function T(e) {
     sourceAnalyticsLocations: C
   } = (0, p.ZP)(d.Z.GUILD_BOOSTING_PREMIUM_UPSELL), {
     theme: A
-  } = (0, u.TCT)(), R = (0, o.ap)(A) ? c.zx.Colors.PRIMARY : c.zx.Colors.WHITE, v = null == n || null == n.premiumSubscriptionType, k = f.ZP.getPrice(O.Xh.PREMIUM_MONTH_TIER_2, false, false, x), D = (0, I.T4)(k.amount, k.currency), w = (0, P.N)(), Z = null == w ? true : w.trial_id, U = (null == w || null == (t = w.subscription_trial) ? true : t.sku_id) === O.Si.TIER_2;
+  } = (0, u.TCT)(), R = (0, o.ap)(A) ? c.zx.Colors.PRIMARY : c.zx.Colors.WHITE, v = null == n || null == n.premiumSubscriptionType, k = f.ZP.getPrice(O.Xh.PREMIUM_MONTH_TIER_2, false, false, x), D = (0, I.T4)(k.amount, k.currency), Z = (0, P.N)(), w = null == Z ? true : Z.trial_id, U = (null == Z || null == (t = Z.subscription_trial) ? true : t.sku_id) === O.Si.TIER_2;
   return l.useEffect(() => {
     g.default.track(N.rMx.PREMIUM_UPSELL_VIEWED, {
       type: O.cd.GUILD_PREMIUM_UPSELL_MODAL,
@@ -94,7 +94,7 @@ function T(e) {
         "data-migration-pending": true,
         onClick: r,
         className: M.closeButton
-      }), U && (0, i.jsx)(_.dz, {
+      }), U && (0, i.jsx)(h.dz, {
         className: M.premiumTrialBadge
       }), (0, i.jsx)("div", {
         className: s()(M.upsellImage, {
@@ -102,7 +102,7 @@ function T(e) {
         })
       }), (0, i.jsx)("div", {
         className: M.bodyText,
-        children: null != Z ? b.intl.string(b.t.AoSzEr) : b.intl.format(b.t["7vePZb"], {
+        children: null != w ? b.intl.string(b.t.AoSzEr) : b.intl.format(b.t["7vePZb"], {
           monthlyPrice: D
         })
       }), (0, i.jsx)(L, {
@@ -118,11 +118,11 @@ function T(e) {
           "data-migration-pending": true,
           look: c.zx.Looks.LINK,
           color: R,
-          onClick: h,
+          onClick: _,
           children: b.intl.string(b.t["SI/adm"])
         }), (0, i.jsx)(u.Button, {
           variant: "active",
-          text: null != Z ? b.intl.string(b.t["Gd/XHF"]) : b.intl.string(b.t.p2moip),
+          text: null != w ? b.intl.string(b.t["Gd/XHF"]) : b.intl.string(b.t.p2moip),
           type: "submit",
           onClick: () => {
             var e, t;
@@ -161,7 +161,7 @@ function T(e) {
               }), e),
               analyticsSourceLocation: T,
               onSubscriptionConfirmation: S,
-              trialId: Z
+              trialId: w
             })
           }
         })]

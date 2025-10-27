@@ -38,6 +38,10 @@ class f extends(r = Chunk442837.ZP.Store) {
     let t = l[e];
     if (null != t && !("type" in t)) return t
   }
+  isGuildFetching(e) {
+    let t = l[e];
+    return null != t && "type" in t && "loading" === t.type
+  }
   getGuildOrStatus(e) {
     return l[e]
   }
