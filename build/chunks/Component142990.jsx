@@ -22,33 +22,27 @@ function d(e) {
     }),
     react: (e, t, n) => {
       let l = e.target[0];
-      return (0, o.mG)(l) ? (0, r.jsxs)(r.Fragment, {
+      return (0, o.mG)(l) ? (0, r.jsxs)(i.Fragment, {
         children: [(0, r.jsx)("span", {
           children: l
-        }), (0, r.jsx)(i.Fragment, {
-          children: (0, r.jsx)(s.Z, {
-            url: l
-          }, l)
-        }, n.key)]
-      }) : (0, c.$2)(l) ? (0, r.jsxs)(r.Fragment, {
+        }), (0, r.jsx)(s.Z, {
+          url: l
+        }, l)]
+      }, n.key) : (0, c.$2)(l) ? (0, r.jsxs)(i.Fragment, {
         children: [(0, r.jsx)("span", {
           children: l
-        }), (0, r.jsx)(i.Fragment, {
-          children: (0, r.jsx)(c.vF, {
-            url: l
-          })
-        }, n.key)]
-      }) : (0, a.Y)(l) ? (0, r.jsxs)(r.Fragment, {
+        }), (0, r.jsx)(c.vF, {
+          url: l
+        })]
+      }, n.key) : (0, a.Y)(l) ? (0, r.jsxs)(i.Fragment, {
         children: [(0, r.jsx)("span", {
           children: l
-        }), (0, r.jsx)(i.Fragment, {
-          children: (0, r.jsx)(a.k, {
-            url: l
-          })
-        }, n.key)]
-      }) : (0, r.jsx)("span", {
+        }), (0, r.jsx)(a.k, {
+          url: l
+        })]
+      }, n.key) : (0, r.jsx)("span", {
         children: l
-      })
+      }, n.key)
     },
     order: 6
   }
