@@ -150,7 +150,7 @@ function M(e) {
     })
   }
 
-  function Y() {
+  function K() {
     let e = L,
       n = "txt",
       i = "",
@@ -201,7 +201,7 @@ function M(e) {
           return (0, i.jsx)(s.sNh, {
             id: "upload-text-as-file",
             label: r,
-            action: Y
+            action: K
           }, "upload-text-as-file");
         case S.r.CLIPS:
           return (0, i.jsx)(s.sNh, {

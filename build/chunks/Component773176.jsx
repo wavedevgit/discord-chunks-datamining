@@ -119,7 +119,7 @@ let ef = Chunk647438.memo(function(e) {
   let {
     channel: t,
     message: n
-  } = e, r = (0, b.q5)(t.guild_id).filter(e => !Y.ZP.isEmojiFilteredOrLocked({
+  } = e, r = (0, b.q5)(t.guild_id).filter(e => !K.ZP.isEmojiFilteredOrLocked({
     emoji: e,
     channel: t,
     intention: eo.Hz.REACTION,
@@ -190,8 +190,8 @@ function em(e) {
     canForward: w,
     isExpanded: M,
     showMoreUtilities: H,
-    showEmojiPicker: Y,
-    showMessageBookmarksActions: K,
+    showEmojiPicker: K,
+    showMessageBookmarksActions: Y,
     isMessageBookmark: er,
     setPopout: eo,
     hasDeveloperMode: ec,
@@ -222,7 +222,7 @@ function em(e) {
       H = (0, Q.Z)(n, t),
       W = !t.isSystemDM() && (0, J.Z)(n, h) && g && !b,
       {
-        disableReactionCreates: Y
+        disableReactionCreates: K
       } = (0, ee.Z)({
         channel: t,
         canChat: O,
@@ -232,7 +232,7 @@ function em(e) {
         isGuest: N,
         isActiveChannelOrUnarchivableThread: g
       }),
-      K = t.type === el.d4z.GUILD_ANNOUNCEMENT && null != p && p.features.has(el.GuildFeatures.NEWS) && (A || j) && (0, m.Z)(n),
+      Y = t.type === el.d4z.GUILD_ANNOUNCEMENT && null != p && p.features.has(el.GuildFeatures.NEWS) && (A || j) && (0, m.Z)(n),
       et = t.getGuildId(),
       en = null != et && n.type === el.uaV.USER_JOIN && z.Z.canWithPartialContext(el.Plq.MANAGE_GUILD, {
         guildId: et
@@ -259,8 +259,8 @@ function em(e) {
       canForward: ei,
       canCopy: q.wS,
       hasDeveloperMode: x,
-      canReact: !Y && y,
-      canPublish: K,
+      canReact: !K && y,
+      canPublish: Y,
       canConfigureJoin: en,
       isExpanded: eo && !es && !i && !r && !l,
       showEmojiPicker: i,
@@ -280,9 +280,9 @@ function em(e) {
     })
   }, [H, eo, n]), eg = r.useCallback(() => {
     eo({
-      emojiPicker: !Y
+      emojiPicker: !K
     })
-  }, [Y, eo]), eb = (0, k.$R)(t), ey = n.hasFlag(el.iLy.CROSSPOSTED), [e_, ev] = (0, g.cv)(w ? [d.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE] : []), ex = e_ === d.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE, [eO, ej] = r.useState(false), eE = r.useCallback(() => {
+  }, [K, eo]), eb = (0, k.$R)(t), ey = n.hasFlag(el.iLy.CROSSPOSTED), [e_, ev] = (0, g.cv)(w ? [d.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE] : []), ex = e_ === d.z.MESSAGE_FORWARDING_DESKTOP_UTILITIES_NEW_BADGE, [eO, ej] = r.useState(false), eE = r.useCallback(() => {
     ej(true)
   }, []), eS = r.useCallback(() => {
     ej(false)
@@ -313,7 +313,7 @@ function em(e) {
         label: es.intl.string(es.t.RpE9k7),
         icon: p.z7b,
         onClick: () => (0, en.B8)(t, n)
-      }, "mark-unread") : null, K ? (0, i.jsx)(et.sF, {
+      }, "mark-unread") : null, Y ? (0, i.jsx)(et.sF, {
         label: er ? es.intl.string(es.t.LHUP9D) : es.intl.string(es.t["9p3D9p"]),
         icon: er ? p.plf : p.gt9,
         onClick: () => er ? (0, en.eM)(t, n) : (0, en.dF)(t, n)
@@ -339,7 +339,7 @@ function em(e) {
       }), (0, i.jsx)(ei.Z, {
         togglePopout: eg,
         renderEmojiPicker: eC,
-        shouldShow: Y,
+        shouldShow: K,
         isFocused: ed,
         channel: t,
         message: n

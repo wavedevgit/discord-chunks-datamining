@@ -89,8 +89,8 @@ function V(e) {
     ref: O,
     width: j
   } = (0, h.ZP)(), [S, k] = r.useState(3), [V, G] = r.useState(!n), [z, W] = (0, f.Z)(false, 2e3), q = (0, o.e7)([T.Z], () => T.Z.getChannel(t), [t]), {
-    firstMessage: Y
-  } = (0, M.cl)(q), K = (0, o.e7)([I.Z], () => I.Z.hasJoined(t)), {
+    firstMessage: K
+  } = (0, M.cl)(q), Y = (0, o.e7)([I.Z], () => I.Z.hasJoined(t)), {
     disableReactionUpdates: X,
     disableReactionCreates: J,
     isLurking: Q,
@@ -117,8 +117,8 @@ function V(e) {
   let [ea, eo] = r.useState(true);
   if (r.useEffect(() => {
       null != j && (k(Math.floor((j - 280) / 58)), eo(false))
-    }, [j]), null == q || null == Y) return null;
-  let es = Y.reactions.length > 0,
+    }, [j]), null == q || null == K) return null;
+  let es = K.reactions.length > 0,
     ec = () => {
       (0, R.B)({
         postId: q.id,
@@ -127,7 +127,7 @@ function V(e) {
         }
       }), (0, A.JG)((0, N.EO)(q, en), () => W(true))
     },
-    eu = K ? u.dz2 : u.Dkj;
+    eu = Y ? u.dz2 : u.Dkj;
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)("div", {
       className: a()(U.container, {
@@ -137,7 +137,7 @@ function V(e) {
       children: [et ? (0, i.jsx)("div", {
         className: U.reportedMessageActions,
         children: (0, i.jsx)(P.Z, {
-          message: Y,
+          message: K,
           channel: q
         })
       }) : (0, i.jsxs)("div", {
@@ -147,7 +147,7 @@ function V(e) {
         children: [!es && !J && null != ei && (0, i.jsx)("div", {
           className: B.reactions,
           children: (0, i.jsx)(x.le, {
-            message: Y,
+            message: K,
             readOnly: false,
             useChatFontScaling: false,
             isLurking: Q,
@@ -163,7 +163,7 @@ function V(e) {
             emojiSize: "reaction"
           })
         }), (0, i.jsx)(v.Z, {
-          message: Y,
+          message: K,
           channel: q,
           disableReactionCreates: true,
           disableReactionUpdates: X,
@@ -176,7 +176,7 @@ function V(e) {
           isForumToolbar: true,
           forceHideReactionCreates: true
         }), !J && (0, i.jsx)(y.X, {
-          message: Y,
+          message: K,
           channel: q,
           useChatFontScaling: false,
           className: a()(H.secondary, U.addReactButton, {
@@ -195,9 +195,9 @@ function V(e) {
             icon: eu,
             size: "sm",
             variant: "secondary",
-            text: K ? D.intl.string(D.t["7OkUzs"]) : D.intl.string(D.t["3aOv+h"]),
+            text: Y ? D.intl.string(D.t["7OkUzs"]) : D.intl.string(D.t["3aOv+h"]),
             onClick: () => {
-              K ? Z.Z.leaveThread(q, "Forum Toolbar") : Z.Z.joinThread(q, "Forum Toolbar")
+              Y ? Z.Z.leaveThread(q, "Forum Toolbar") : Z.Z.joinThread(q, "Forum Toolbar")
             }
           })
         }), (0, i.jsx)(c.u, {

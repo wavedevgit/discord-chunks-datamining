@@ -12,10 +12,10 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx");
 
 function s(e) {
-  let t = (0, l.e7)([c.Z], () => c.Z.getVoiceParticipantsHidden(e));
+  let t = (0, l.e7)([a.Z], () => a.Z.getVoiceParticipantsHidden(e));
   return (0, r.jsx)(i.S89, {
     id: "no-video-hide",
-    label: a.intl.string(a.t.BL8ss6),
+    label: c.intl.string(c.t.BL8ss6),
     checked: !t,
     action: () => o.Z.toggleVoiceParticipantsHidden(e, !t)
   })

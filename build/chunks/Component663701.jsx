@@ -425,7 +425,7 @@ let eN = Chunk647438.memo(function(e) {
         hideGameUpdateProgressIndicator: l === ea.Z5c.APPLICATION_LIBRARY
       }, "library") : null, u && !_ ? (0, r.jsx)(eI, {
         selected: null == g ? null != l && l.startsWith(ea.Z5c.MESSAGE_REQUESTS) : g === ea.Z5c.MESSAGE_REQUESTS
-      }, "message-requests") : null, o && !_ ? (0, r.jsxs)(i.Fragment, {
+      }, "message-requests") : null, o && !_ ? (0, r.jsxs)("div", {
         children: [(0, r.jsx)(H.g, {
           nitroTabButtonRef: y,
           selected: null == g ? s : g.startsWith(ea.Z5c.APPLICATION_STORE),

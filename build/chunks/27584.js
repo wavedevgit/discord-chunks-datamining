@@ -13,10 +13,10 @@ var Chunk442837 = require("./442837.js"),
 function u(e) {
   let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : a.Yn.DEFAULT,
     r = (0, n.e7)([i.default], () => i.default.getId()),
-    u = (0, n.e7)([c.Z], () => c.Z.supports(a.AN.DISABLE_VIDEO)),
-    f = (0, n.e7)([c.Z], () => c.Z.isLocalVideoDisabled(r, t), [r, t]);
-  return [(null == e || e === r) && u, f, e => {
-    let n = e ? l.ZUi.DISABLED : l.ZUi.MANUAL_ENABLED;
+    u = (0, n.e7)([l.Z], () => l.Z.supports(a.AN.DISABLE_VIDEO)),
+    s = (0, n.e7)([l.Z], () => l.Z.isLocalVideoDisabled(r, t), [r, t]);
+  return [(null == e || e === r) && u, s, e => {
+    let n = e ? c.ZUi.DISABLED : c.ZUi.MANUAL_ENABLED;
     o.Z.setDisableLocalVideo(r, n, t)
   }]
 }

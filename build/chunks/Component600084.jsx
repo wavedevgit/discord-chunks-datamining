@@ -111,11 +111,9 @@ function V(e) {
     return null != P && null != G ? null != z && (e = (0, i.jsxs)("div", {
       className: B.buttonContainer,
       children: [(0, i.jsx)(T.W, {
-        className: B.button,
         channel: p,
         user: P
       }), (0, i.jsx)(Z.n, {
-        className: B.button,
         user: P,
         application: G,
         channel: p,

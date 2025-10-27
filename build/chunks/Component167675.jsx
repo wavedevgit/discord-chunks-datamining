@@ -15,12 +15,12 @@ var Chunk442837 = require("./442837.js"),
   Chunk388032 = require("./388032.jsx");
 
 function b(e) {
-  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : f.Yn.DEFAULT,
-    [r, b, p] = (0, l.Z)(e, t),
-    y = (0, o.e7)([c.ZP], () => c.ZP.disableHideSelfStreamAndVideoConfirmationAlert);
+  let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : s.Yn.DEFAULT,
+    [r, b, p] = (0, c.Z)(e, t),
+    y = (0, o.e7)([l.ZP], () => l.ZP.disableHideSelfStreamAndVideoConfirmationAlert);
   return r ? (0, n.jsx)(i.S89, {
     id: "self-video-hide",
-    label: s.intl.string(s.t.MH8ESU),
+    label: f.intl.string(f.t.MH8ESU),
     checked: !b,
     action: () => {
       if (y || b) return p(!b);

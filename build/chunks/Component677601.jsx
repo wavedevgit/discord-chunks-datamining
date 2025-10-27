@@ -323,7 +323,7 @@ class ez extends Chunk647438.PureComponent {
           ref: e => {
             this._callContainerRef.current = e, this.props.callContainerRef.current = e
           },
-          children: (0, i.jsx)(K.ZP, {
+          children: (0, i.jsx)(Y.ZP, {
             timeout: 2e3,
             children: e => this.renderContent(e)
           })
@@ -569,7 +569,7 @@ class ez extends Chunk647438.PureComponent {
           canChangeLayout: g,
           canInvite: b
         } = this.viewProperties,
-        C = l ? (0, i.jsx)(Y.Z, {
+        C = l ? (0, i.jsx)(K.Z, {
           channel: n,
           stream: (null == o ? true : o.type) === eL.fO.STREAM ? (0, k.my)(o.id) : true,
           applicationId: (null == o ? true : o.type) === eL.fO.ACTIVITY ? o.applicationId : true,
@@ -761,7 +761,7 @@ let eW = function(e) {
     selectedStream: W
   } = (0, u.cj)([ea.Z], () => ({
     selectedStream: null != V ? ea.Z.getActiveStreamForStreamKey(V.id) : null
-  }), [V]), q = (0, u.e7)([eu.Z], () => eu.Z.getGuild(n.getGuildId())), Y = (0, u.e7)([ec.Z], () => ec.Z.getCall(n.id), [n.id]), K = (0, u.e7)([ep.ZP], () => ep.ZP.getMentionCount(n.id), [n.id]), X = (0, u.e7)([eo.default], () => eo.default.getId()), {
+  }), [V]), q = (0, u.e7)([eu.Z], () => eu.Z.getGuild(n.getGuildId())), K = (0, u.e7)([ec.Z], () => ec.Z.getCall(n.id), [n.id]), Y = (0, u.e7)([ep.ZP], () => ep.ZP.getMentionCount(n.id), [n.id]), X = (0, u.e7)([eo.default], () => eo.default.getId()), {
     popoutWindow: J,
     popoutWindowAlwaysOnTop: Q
   } = (0, u.cj)([F.Z], () => ({
@@ -814,10 +814,10 @@ let eW = function(e) {
             participantsListOpen: U && eC,
             renderExternalHeader: l,
             appContext: C,
-            call: Y,
+            call: K,
             popoutWindow: J,
             popoutWindowAlwaysOnTop: Q,
-            mentionCount: K,
+            mentionCount: Y,
             selectedStream: W,
             mode: w,
             inCall: j,

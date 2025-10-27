@@ -1,46 +1,41 @@
 /** Chunk was on 47840 **/
 /** chunk id: 86863, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  n: () => f
+  n: () => h
 });
 var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
-  Chunk755721 = require("./755721.js"),
+  Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk384275 = require("./384275.js"),
-  Chunk468026 = require("./468026.jsx"),
   Chunk317381 = require("./317381.js"),
   Chunk513202 = require("./513202.jsx"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let f = e => {
+let h = e => {
   let {
-    className: t,
-    channel: n,
-    user: f,
-    application: m,
-    oauth2Token: g
-  } = e, b = (0, r.e7)([c.ZP], () => c.ZP.getSelfEmbeddedActivities());
-  if (!f.bot || null == m) return null;
+    channel: t,
+    user: n,
+    application: h,
+    oauth2Token: f
+  } = e, m = (0, r.e7)([s.ZP], () => s.ZP.getSelfEmbeddedActivities());
+  if (!n.bot || null == h) return null;
 
-  function C() {
-    o.Z.delete(g.id);
-    let e = b.get(m.id);
-    null != e && u.Z.leaveActivity({
+  function g() {
+    o.Z.delete(f.id);
+    let e = m.get(h.id);
+    null != e && c.Z.leaveActivity({
       location: e.location,
-      applicationId: m.id
+      applicationId: h.id
     })
   }
-  return (0, i.jsx)(l.zx, {
-    className: t,
-    size: l.Ph.SMALL,
-    color: l.zx.Colors.PRIMARY,
-    onClick: () => (function(e, t, n) {
-      let r = h.intl.formatToPlainString(h.t.QWGvxA, {
-        applicationName: e.name
-      });
-      (0, a.h7j)(e => (0, i.jsx)(s.default, function(e) {
+  return (0, i.jsx)(a.Button, {
+    variant: "secondary",
+    size: "sm",
+    text: p.intl.string(p.t["5S3sQF"]),
+    onClick: () => {
+      (0, a.h7j)(e => (0, i.jsx)(l.u_l, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             i = Object.keys(n);
@@ -58,18 +53,26 @@ let f = e => {
         }
         return e
       }({
-        title: h.intl.string(h.t["DT39A+"]),
-        body: r,
-        confirmText: h.intl.string(h.t.xUqheM),
-        confirmColor: l.Tt.RED,
-        cancelText: h.intl.string(h.t["ETE/oC"]),
-        onConfirm: t
-      }, e))), d.default.track(p.rMx.APP_MANAGE_CTA_CLICKED, {
-        application_id: e.id,
-        channel_id: n.id,
-        channel_type: n.type
+        title: p.intl.string(p.t["DT39A+"]),
+        subtitle: p.intl.formatToPlainString(p.t.QWGvxA, {
+          applicationName: h.name
+        }),
+        actions: [{
+          text: p.intl.string(p.t["ETE/oC"]),
+          variant: "secondary",
+          onClick: e.onClose
+        }, {
+          text: p.intl.string(p.t.xUqheM),
+          variant: "critical-primary",
+          onClick: () => {
+            g(), e.onClose()
+          }
+        }]
+      }, e))), u.default.track(d.rMx.APP_MANAGE_CTA_CLICKED, {
+        application_id: h.id,
+        channel_id: t.id,
+        channel_type: t.type
       })
-    })(m, C, n),
-    children: h.intl.string(h.t["5S3sQF"])
+    }
   })
 }

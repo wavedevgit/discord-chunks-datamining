@@ -870,7 +870,7 @@ class te extends Chunk647438.PureComponent {
       } = e;
       return t.type === eJ.d4z.DM && n ? (0, i.jsx)(ed.Z, {}) : t.isModeratorReportChannel() && t.isArchivedThread() ? (0, i.jsx)(ef.Z, {
         channelId: t.id
-      }) : null != l && (0, Y.J)(l) && null != r && !eI.Z.can(eJ.Plq.ADMINISTRATOR, r) ? (0, i.jsx)(X.T, {
+      }) : null != l && (0, K.J)(l) && null != r && !eI.Z.can(eJ.Plq.ADMINISTRATOR, r) ? (0, i.jsx)(X.T, {
         guild: r,
         disabledUntil: l
       }) : a ? (0, i.jsx)(q.h, {
@@ -921,7 +921,7 @@ let tt = Chunk647438.memo(function(e) {
     accessibilityLabel: s
   } = (0, eF.Z)({
     channel: t
-  }), c = (0, ed.S)(eN.default.getCurrentUser(), t), [u] = (0, K.AB)(null == n ? true : n.id), h = (0, W.Ux)(null == n ? true : n.id), f = (0, d.e7)([eN.default], () => eN.default.getCurrentUser()), m = (0, d.e7)([eS.ZP], () => {
+  }), c = (0, ed.S)(eN.default.getCurrentUser(), t), [u] = (0, Y.AB)(null == n ? true : n.id), h = (0, W.Ux)(null == n ? true : n.id), f = (0, d.e7)([eN.default], () => eN.default.getCurrentUser()), m = (0, d.e7)([eS.ZP], () => {
     var e, t, i;
     return null != f && null != (i = null == (e = eS.ZP.getMember(null != (t = null == n ? true : n.id) ? t : eJ.lds, null == f ? true : f.id)) ? true : e.isPending) && i
   }), g = (0, d.e7)([eo.Z], () => eo.Z.isEnabled()), C = (0, eu.Z)(t.id), y = (0, J.Z)(t.id), v = (0, I.R)({
@@ -960,7 +960,7 @@ let tt = Chunk647438.memo(function(e) {
     {
       showLinkedLobbyApplicationLoadingIndicator: q
     } = (0, eH.Z)(t.linkedLobby),
-    Y = (0, G.Z)("ChannelChat");
+    K = (0, G.Z)("ChannelChat");
   return (0, i.jsx)(te, {
     channel: t,
     isEditing: null != (0, d.e7)([eE.Z], () => eE.Z.getEditingMessageId(t.id)),
@@ -989,6 +989,6 @@ let tt = Chunk647438.memo(function(e) {
     voiceChannel: U,
     messagesTypingGradient: z,
     showLinkedLobbyApplicationLoadingIndicator: q,
-    announcementComposerEnabled: Y
+    announcementComposerEnabled: K
   })
 })
