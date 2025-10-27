@@ -44,10 +44,10 @@ function P(e) {
   }), k = (0, l.e7)([u.ZP], () => null != u.ZP.getSelfEmbeddedActivityForLocation(u.ZP.getConnectedActivityLocation())), U = !A, B = r.useCallback(e => {
     "focus" !== e.type && R()
   }, [R]), H = (0, _.bp)() === j.IlC.POPOUT, {
-    parentAnalyticsLocation: V,
-    newestAnalyticsLocation: F
+    parentAnalyticsLocation: F,
+    newestAnalyticsLocation: V
   } = (0, g.ZP)(), G = r.useCallback(() => {
-    (0, C.v)(V, C.d.ACTIVITY), (0, b.Z)({
+    (0, C.v)(F, C.d.ACTIVITY), (0, b.Z)({
       context: null != t ? {
         type: "channel",
         channel: t
@@ -55,9 +55,9 @@ function P(e) {
         type: "contextless"
       },
       openInPopout: H,
-      analyticsLocation: F
+      analyticsLocation: V
     })
-  }, [t, H, F, V]), z = [];
+  }, [t, H, V, F]), z = [];
   A || z.push(a.z.ACTIVITIES_MINI_SHELF_SPARKLES), (0, h.Z)(t.id) && !A && z.push(a.z.ACTIVITY_GDM_ROCKET_SPARKLE), A || z.push(a.z.VOICE_PANEL_ACTIVITIES_SHAPES_BUTTON_EDUCATION_TOOLTIP);
   let W = r.useRef(false),
     q = r.useRef(null);

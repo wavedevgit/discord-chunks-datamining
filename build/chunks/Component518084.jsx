@@ -2,7 +2,7 @@
 /** chunk id: 518084, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  ZP: () => C,
+  ZP: () => Z,
   wB: () => _
 }), require("./415506.js");
 var i, Chunk951288 = require("./951288.js"),
@@ -227,4 +227,4 @@ x.Background = e => {
     })
   })
 }, x.Bar = v;
-let C = x
+let Z = x

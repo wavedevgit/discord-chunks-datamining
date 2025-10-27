@@ -20,6 +20,9 @@ function u(e, t, n) {
 let d = false / 0,
   p = new Chunk710845.Z("MessagePreviewStore");
 class f extends Chunk442837.ZP.Store {
+  initialize() {
+    this.waitFor(Chunk592125.Z, Chunk375954.Z)
+  }
   isLatest(e, t) {
     var n;
     let r = this.guilds.get(null != e ? e : null);

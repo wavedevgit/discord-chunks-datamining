@@ -74,6 +74,9 @@ function T(e) {
   f.suggestedGamesIds = f.suggestedGamesIds.filter(e => e !== t), f.suggestedWishlistGamesIds = f.suggestedWishlistGamesIds.filter(e => e !== t)
 }
 class S extends Chunk442837.ZP.Store {
+  initialize() {
+    this.waitFor(Chunk594174.default)
+  }
   getPendingWidgets() {
     return c
   }

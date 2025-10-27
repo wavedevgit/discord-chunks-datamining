@@ -27,6 +27,9 @@ function d(e) {
   r = e.associatedGame
 }
 class f extends(i = Chunk442837.ZP.Store) {
+  initialize() {
+    this.waitFor(Chunk77498.Z, Chunk594190.ZP)
+  }
   getGameForPID(e) {
     if (__OVERLAY__ || null == e) return null;
     let t = s.ZP.getGameOrTransformedSubgameForPID(e);

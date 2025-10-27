@@ -235,7 +235,7 @@ class Q extends(r = Chunk442837.ZP.PersistedStore) {
       var t, n, r, i, a;
       A = null != (t = e.isMembersOpen) && t, C = null != (n = e.isSummariesOpen) && n, N = null == (r = e.isProfileOpen) || r, R = null != (i = e.sidebars) ? i : {}, P = null != (a = e.guildSidebars) ? a : {}
     }
-    this.syncWith([l.Z], z), this.syncWith([p.Z], W), this.waitFor(l.Z, _.Z, f.Z, s.Z)
+    this.syncWith([l.Z], z), this.syncWith([p.Z], W), this.waitFor(f.Z, s.Z, _.Z, p.Z, l.Z, h.Z, m.Z, g.default)
   }
   getState() {
     return {

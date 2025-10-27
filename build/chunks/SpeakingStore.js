@@ -115,7 +115,7 @@ function S(e) {
 }
 class A extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.mustEmitChanges(e => "CONNECTION_OPEN" !== e.type && "VOICE_STATE_UPDATES" !== e.type), this.waitFor(Chunk19780.Z)
+    this.mustEmitChanges(e => "CONNECTION_OPEN" !== e.type && "VOICE_STATE_UPDATES" !== e.type), this.waitFor(Chunk592125.Z, Chunk131951.Z, Chunk19780.Z, Chunk944486.Z)
   }
   getSpeakingDuration(e, t) {
     var n, r;

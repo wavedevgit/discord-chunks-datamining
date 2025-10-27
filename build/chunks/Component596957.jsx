@@ -150,7 +150,7 @@ let L = function(e) {
     k(P(j({}, M), {
       [A]: ""
     }))
-  }, [M, A]), H = i.useMemo(() => A === S.pJs.PENDING && (s.filter(S.pJs.SPAM).length > 0 || s.filter(S.pJs.PENDING_IGNORED).length > 0), [s, A]), V = i.useMemo(() => s.filter(A, M[A]), [s, M, A]), F = A === S.pJs.PENDING, Y = i.useMemo(() => {
+  }, [M, A]), H = i.useMemo(() => A === S.pJs.PENDING && (s.filter(S.pJs.SPAM).length > 0 || s.filter(S.pJs.PENDING_IGNORED).length > 0), [s, A]), V = i.useMemo(() => s.filter(A, M[A]), [s, M, A]), F = A === S.pJs.PENDING, z = i.useMemo(() => {
     if (!F) return x;
     let e = [];
     return V.forEach(t => {
@@ -160,8 +160,8 @@ let L = function(e) {
       null != n && e.push(n)
     }), e
   }, [F, V]);
-  (0, p.Z)(Y, F);
-  let z = i.useMemo(() => {
+  (0, p.Z)(z, F);
+  let Y = i.useMemo(() => {
       if (A !== S.pJs.PENDING) return [V];
       {
         let e = [],
@@ -200,7 +200,7 @@ let L = function(e) {
               count: t.toString()
             })
         }
-      }(A, z[e].length, e);
+      }(A, Y[e].length, e);
       return A === S.pJs.PENDING && 0 === e ? (0, r.jsxs)("div", {
         className: N.sectionTitle,
         children: [(0, r.jsx)(v.Z, {
@@ -222,7 +222,7 @@ let L = function(e) {
           title: n
         })
       }, n)
-    }, [z, A, t, q, K]);
+    }, [Y, A, t, q, K]);
   if (i.useEffect(() => {
       A === S.pJs.ALL && (0, f.d$)()
     }, [A]), 0 === V.length && "" === M[A]) return (0, r.jsx)(w, {
@@ -243,7 +243,7 @@ let L = function(e) {
           onClear: B
         })
       }), (0, r.jsx)(O.Z, {
-        rows: z,
+        rows: Y,
         renderRow: U,
         renderSection: Q,
         sectionFilter: A,

@@ -266,7 +266,7 @@ function Q(e) {
 }
 class J extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    window.addEventListener("message", W), window.addEventListener("beforeunload", q), C = null != e ? e : {}
+    this.waitFor(p.default), window.addEventListener("message", W), window.addEventListener("beforeunload", q), C = null != e ? e : {}
   }
   getWindow(e) {
     return R[e]

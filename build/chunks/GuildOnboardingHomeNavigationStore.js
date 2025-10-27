@@ -21,7 +21,7 @@ let c = {},
 class d extends(i = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     var t;
-    c = null != (t = null == e ? true : e.selectedResourceChannelIdByGuildId) ? t : {}
+    this.waitFor(a.Z), c = null != (t = null == e ? true : e.selectedResourceChannelIdByGuildId) ? t : {}
   }
   getState() {
     return {

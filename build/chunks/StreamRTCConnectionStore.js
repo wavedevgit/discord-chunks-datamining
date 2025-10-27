@@ -261,6 +261,9 @@ function X(e) {
   return "unknown"
 }
 class Q extends(i = Chunk442837.ZP.Store) {
+  initialize() {
+    this.waitFor(Chunk314897.default, Chunk131951.Z, Chunk19780.Z, Chunk594190.ZP)
+  }
   getRTCConnections() {
     return w
   }

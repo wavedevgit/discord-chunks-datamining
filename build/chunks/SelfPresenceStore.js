@@ -118,7 +118,7 @@ function Y() {
 }
 class W extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk517100.Z, Chunk581883.Z, Chunk293273.Z, Chunk797258.Z, Chunk283595.Z, Chunk77498.Z), this.syncWith([Chunk293273.Z], Z)
+    this.waitFor(Chunk77498.Z, Chunk517100.Z, Chunk283595.Z, Chunk293273.Z, Chunk158776.Z, Chunk797258.Z, Chunk768419.Z, Chunk581883.Z), this.syncWith([Chunk293273.Z], Z)
   }
   getLocalPresence() {
     return {

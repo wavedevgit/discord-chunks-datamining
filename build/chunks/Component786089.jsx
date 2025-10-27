@@ -35,10 +35,10 @@ let j = (0, Chunk647438.memo)(function(e) {
   } = e, [Z, w] = (0, i.useState)(false), [L, D] = (0, i.useState)(24), [R, M] = (0, i.useState)(false), k = (0, i.useRef)(null), U = (0, i.useRef)(null), G = (0, i.useRef)(null), B = (0, c.e7)([g.default], () => g.default.getCurrentUser()), {
     ref: H,
     height: V = 0
-  } = (0, p.ZP)(), F = (0, f.ZP)(), Y = (0, E.B6)(null == (t = A.userStatus) ? true : t.claimedAt, {
+  } = (0, p.ZP)(), F = (0, f.ZP)(), z = (0, E.B6)(null == (t = A.userStatus) ? true : t.claimedAt, {
     month: "numeric",
     day: "numeric"
-  }), z = null != (P = null == (n = A.userStatus) ? true : n.claimedTier) ? P : 0, W = A.config.rewards[z], q = (null == W ? true : W.type) === o.w.FRACTIONAL_PREMIUM, K = (null == W ? true : W.type) === o.w.COLLECTIBLE, Q = (null == W ? true : W.type) === o.w.VIRTUAL_CURRENCY, J = null == W || null == (j = W.collectibleProduct) || null == (l = j.items) ? true : l[0], X = (null == J ? true : J.type) === s.Z.AVATAR_DECORATION ? J : null;
+  }), Y = null != (P = null == (n = A.userStatus) ? true : n.claimedTier) ? P : 0, W = A.config.rewards[Y], q = (null == W ? true : W.type) === o.w.FRACTIONAL_PREMIUM, K = (null == W ? true : W.type) === o.w.COLLECTIBLE, Q = (null == W ? true : W.type) === o.w.VIRTUAL_CURRENCY, J = null == W || null == (j = W.collectibleProduct) || null == (l = j.items) ? true : l[0], X = (null == J ? true : J.type) === s.Z.AVATAR_DECORATION ? J : null;
   (0, p.PM)(k, e => {
     let {
       height: t
@@ -178,7 +178,7 @@ let j = (0, Chunk647438.memo)(function(e) {
           },
           children: T.intl.format(T.t["kXVcV+"], {
             reward: W.name,
-            claimedDate: Y
+            claimedDate: z
           })
         })]
       })]

@@ -22,8 +22,8 @@ function g(t) {
     channel: f
   } = t, b = null != n, {
     canManageGuildEvent: v
-  } = (0, u.XJ)(null != f ? f : g), [E, p] = (0, r.Wu)([o.ZP], () => [o.ZP.isActive(e), o.ZP.getGuildScheduledEvent(e)]), Z = (0, a.Z)(n, null == p ? true : p.id), y = null != p && v(p), h = (null == p ? true : p.recurrence_rule) != null && !b, P = (0, s.zI)(e, n);
-  if (!y || E && !h && !b || b && !b || null == p || null == P) return null;
+  } = (0, u.XJ)(null != f ? f : g), [E, p] = (0, r.Wu)([o.ZP], () => [o.ZP.isActive(e), o.ZP.getGuildScheduledEvent(e)]), Z = (0, a.Z)(n, null == p ? true : p.id), h = null != p && v(p), y = (null == p ? true : p.recurrence_rule) != null && !b, P = (0, s.zI)(e, n);
+  if (!h || E && !y && !b || b && !b || null == p || null == P) return null;
   let {
     startTime: O
   } = P;
@@ -55,13 +55,13 @@ function g(t) {
         return t
       }({}, r), o = o = {
         header: d.intl.string(d.t.R5bpin),
-        confirmText: h || t ? d.intl.string(d.t["8ZsNv5"]) : d.intl.string(d.t.B9sJLX),
+        confirmText: y || t ? d.intl.string(d.t["8ZsNv5"]) : d.intl.string(d.t.B9sJLX),
         cancelText: d.intl.string(d.t.oEAioF),
         onConfirm: () => b && !t ? c.Z.deleteRecurrence(g.id, e, n, Z) : c.Z.deleteGuildEvent(e, g.id),
         children: [(0, l.jsx)(i.Text, {
           variant: "text-md/normal",
           children: d.intl.string(d.t.v2GWNQ)
-        }), (0, l.jsx)("br", {}), (h || t) && (0, l.jsx)(i.Text, {
+        }), (0, l.jsx)("br", {}), (y || t) && (0, l.jsx)(i.Text, {
           variant: "text-md/normal",
           children: d.intl.format(d.t.ZcpcyO, {})
         })]

@@ -274,7 +274,7 @@ function B() {
 }
 class Z extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    B(), this.waitFor(Chunk314897.default, Chunk594174.default, Chunk271383.ZP, Chunk979651.Z), this.syncWith([Chunk594174.default], k)
+    B(), this.waitFor(Chunk314897.default, Chunk592125.Z, Chunk271383.ZP, Chunk594174.default, Chunk979651.Z), this.syncWith([Chunk594174.default], k)
   }
   getVoiceStates(e) {
     return T(null != e ? e : g.ME).getVoiceStates()

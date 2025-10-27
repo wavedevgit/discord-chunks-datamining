@@ -244,7 +244,7 @@ let F = () => {
   };
 class X extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk287328.Z, Chunk93093.Z, Chunk430824.Z)
+    this.waitFor(Chunk93093.Z, Chunk430824.Z, Chunk41776.Z)
   }
   get isLoaded() {
     return 0 !== O

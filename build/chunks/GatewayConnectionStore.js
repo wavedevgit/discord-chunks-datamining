@@ -307,7 +307,7 @@ function eg(e) {
 }
 class eE extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk314897.default, Chunk944486.Z, Chunk592125.Z, Chunk523746.Z, Chunk581883.Z), this.syncWith([Chunk131951.Z], $), this.syncWith([Chunk885110.Z], ee)
+    this.waitFor(Chunk314897.default, Chunk523746.Z, Chunk592125.Z, Chunk131951.Z, Chunk19780.Z, Chunk936349.Z, Chunk944486.Z, Chunk885110.Z, Chunk959457.Z, Chunk581883.Z), this.syncWith([Chunk131951.Z], $), this.syncWith([Chunk885110.Z], ee)
   }
   getSocket() {
     return Chunk955132.Wb

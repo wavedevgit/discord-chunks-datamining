@@ -155,6 +155,9 @@ function R(e) {
   return t === b ? 0 : Object.keys(t).length
 }
 class P extends(i = Chunk442837.ZP.Store) {
+  initialize() {
+    this.waitFor(Chunk314897.default)
+  }
   getTypingUsers(e) {
     return y(e)
   }

@@ -51,12 +51,12 @@ function R(e) {
     isEventNoticeHidden: g.Z.isLiveChannelNoticeHidden({
       eventId: null == d ? true : d.id
     })
-  }), [j, d]), U = null == l ? true : l.id, G = (0, s.Wu)([C.Z], () => [...new Set(C.Z.getMutableParticipants(U, S.pV.SPEAKER).map(e => e.user))], [U]), B = (0, s.e7)([C.Z], () => null != U ? C.Z.getParticipantCount(U, S.pV.AUDIENCE) : 0, [U]), H = (0, s.e7)([P.Z], () => P.Z.can(Z.Plq.CONNECT, l)), V = (0, N.Z)(null == l ? true : l.id), F = null == d ? true : d.creator_id, Y = (0, s.e7)([x.default], () => x.default.getUser(F), [F]);
+  }), [j, d]), U = null == l ? true : l.id, G = (0, s.Wu)([C.Z], () => [...new Set(C.Z.getMutableParticipants(U, S.pV.SPEAKER).map(e => e.user))], [U]), B = (0, s.e7)([C.Z], () => null != U ? C.Z.getParticipantCount(U, S.pV.AUDIENCE) : 0, [U]), H = (0, s.e7)([P.Z], () => P.Z.can(Z.Plq.CONNECT, l)), V = (0, N.Z)(null == l ? true : l.id), F = null == d ? true : d.creator_id, z = (0, s.e7)([x.default], () => x.default.getUser(F), [F]);
   i.useEffect(() => {
     null != F && (0, u.PR)(F)
   }, [F]);
   let {
-    noticeType: z,
+    noticeType: Y,
     title: W,
     location: q,
     locationIcon: K,
@@ -251,14 +251,14 @@ function R(e) {
     activeChannel: l,
     canConnect: H,
     myRole: V,
-    eventCreator: Y,
+    eventCreator: z,
     speakers: G,
     listenerCount: B,
     isEventNoticeHidden: k,
     isStageNoticeHidden: R,
     isStudyRoomNotice: n
-  }), [d, j, l, H, V, Y, G, B, k, R, n]);
-  return null == z ? null : (0, r.jsxs)("div", {
+  }), [d, j, l, H, V, z, G, B, k, R, n]);
+  return null == Y ? null : (0, r.jsxs)("div", {
     className: D.container,
     children: [null != ee ? (0, r.jsx)(c.P3F, {
       onClick: ee,
@@ -299,7 +299,7 @@ function R(e) {
         className: D.location,
         children: q
       })]
-    }), Q || 1 === z ? (0, r.jsx)("div", {
+    }), Q || 1 === Y ? (0, r.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
       className: D.button,
       children: (0, r.jsx)(c.Button, {

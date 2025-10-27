@@ -111,7 +111,7 @@ function b() {
 }
 class v extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk752048.Z), this.syncWith([Chunk752048.Z], b)
+    this.waitFor(Chunk158776.Z, Chunk752048.Z, Chunk594174.default), this.syncWith([Chunk752048.Z], b)
   }
   get games() {
     return h

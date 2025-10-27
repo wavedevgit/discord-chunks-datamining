@@ -277,7 +277,7 @@ function K(e) {
 }
 class z extends(a = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk938475.ZP), (0, Chunk338336.r)(this.getRTCConnectionId, this.getMediaSessionId)
+    this.waitFor(Chunk314897.default, Chunk258609.default, Chunk938475.ZP), (0, Chunk338336.r)(this.getRTCConnectionId, this.getMediaSessionId)
   }
   getRTCConnection() {
     return r

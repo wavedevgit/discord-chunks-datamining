@@ -110,7 +110,7 @@ function C() {
 }
 class N extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk581883.Z, Chunk944486.Z, Chunk131951.Z), this.syncWith([Chunk944486.Z, Chunk131951.Z], A)
+    this.waitFor(Chunk131951.Z, Chunk944486.Z, Chunk581883.Z, Chunk594174.default), this.syncWith([Chunk944486.Z, Chunk131951.Z], A)
   }
   get videoFilterAssets() {
     return b

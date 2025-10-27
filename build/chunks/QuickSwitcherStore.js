@@ -265,7 +265,7 @@ function er() {
 class ei extends(i = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     var t;
-    this.waitFor(b.ZP, y.Z, m.Z), this.syncWith([p.Z], () => true), k = l.K.get(D) || false, V = null != (t = null == e ? true : e.channelHistory) ? t : []
+    this.waitFor(_.Z, h.default, m.Z, g.Z, E.ZP, b.ZP, y.Z, O.Z, v.ZP, I.Z, T.Z, p.Z, S.ZP), this.syncWith([p.Z], () => true), k = l.K.get(D) || false, V = null != (t = null == e ? true : e.channelHistory) ? t : []
   }
   getState() {
     return {

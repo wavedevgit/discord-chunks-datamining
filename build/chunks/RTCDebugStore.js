@@ -258,6 +258,9 @@ function F(e) {
 }
 N();
 class V extends(r = Chunk442837.ZP.Store) {
+  initialize() {
+    this.waitFor(Chunk131951.Z, Chunk594174.default)
+  }
   getSection() {
     return h
   }

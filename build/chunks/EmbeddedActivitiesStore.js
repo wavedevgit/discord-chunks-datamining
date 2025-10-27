@@ -524,6 +524,7 @@ function eN(e) {
 class eR extends(i = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     var t;
+    this.waitFor(c.default, u.Z, d.Z, f.default);
     let n = new Set(null != (t = null == e ? true : e.everLaunchedActivities) ? t : []);
     null != e && (N = C(S({}, e), {
       everLaunchedActivities: n

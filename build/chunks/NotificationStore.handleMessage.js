@@ -123,7 +123,7 @@ function ed(e) {
 }
 class ef extends(l = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk594174.default, Chunk592125.Z, Chunk292959.Z, Chunk430824.Z, Chunk427679.Z, Chunk699516.Z, Chunk496675.Z, Chunk979651.Z, Chunk355298.Z)
+    this.waitFor(Chunk802098.Z, Chunk592125.Z, Chunk430824.Z, Chunk355298.Z, Chunk375954.Z, Chunk292959.Z, Chunk496675.Z, Chunk699516.Z, Chunk944486.Z, Chunk885110.Z, Chunk427679.Z, Chunk246946.Z, Chunk594174.default, Chunk979651.Z)
   }
 }
 $(ef, "displayName", "NotificationStore"), new ef(Chunk570140.Z, __OVERLAY__ ? {} : {
@@ -197,7 +197,7 @@ $(ef, "displayName", "NotificationStore"), new ef(Chunk570140.Z, __OVERLAY__ ? {
         title: S,
         body: v
       }), (0, _.R)(a, c.guild_id), w.Z.getDesktopType() === z.qrD.NEVER) return N && Y.Z.playNotificationSound(et, en), false;
-    let A = null != (i = D.Z.getMessage(r, a.id)) ? i : (0, C.e5)(a);
+    let Z = null != (i = D.Z.getMessage(r, a.id)) ? i : (0, C.e5)(a);
     Y.Z.showNotification(I, S, v, {
       notif_type: "MESSAGE_CREATE",
       notif_user_id: null == (l = a.author) ? true : l.id,
@@ -206,7 +206,7 @@ $(ef, "displayName", "NotificationStore"), new ef(Chunk570140.Z, __OVERLAY__ ? {
       channel_id: c.id,
       channel_type: c.type,
       guild_id: c.guild_id,
-      badge: (0, M.Ex)(A, g)
+      badge: (0, M.Ex)(Z, g)
     }, {
       omitViewTracking: P,
       tag: a.id,
@@ -216,7 +216,7 @@ $(ef, "displayName", "NotificationStore"), new ef(Chunk570140.Z, __OVERLAY__ ? {
         (0, b.Kh)(c.id), (c.type === z.d4z.GUILD_VOICE || c.type === z.d4z.GUILD_STAGE_VOICE) && u.Z.updateChatOpen(c.id, true), d.default.clickedNotification()
       },
       isUserAvatar: true,
-      messageRecord: A,
+      messageRecord: Z,
       fallbackDeepLink: (0, Y.W)(z.Z5c.CHANNEL(c.guild_id, c.id, a.id)),
       emoji: x
     }).then(e => {
@@ -289,7 +289,7 @@ $(ef, "displayName", "NotificationStore"), new ef(Chunk570140.Z, __OVERLAY__ ? {
     let s = R.Z.getGuild(r),
       u = j.Z.getChannel(i),
       c = x.Z.getStageInstanceByChannel(i);
-    null != s && null != u && null != c && Y.Z.showNotification((0, Z.EB)(s, 128), u.name, J.intl.formatToPlainString(J.t.sqnsSP, {
+    null != s && null != u && null != c && Y.Z.showNotification((0, A.EB)(s, 128), u.name, J.intl.formatToPlainString(J.t.sqnsSP, {
       channelName: (0, p.F6)(u, F.default, U.Z),
       channelTopic: null == c ? true : c.topic
     }), {
@@ -308,7 +308,7 @@ $(ef, "displayName", "NotificationStore"), new ef(Chunk570140.Z, __OVERLAY__ ? {
       r = j.Z.getChannel(t.channel_id),
       a = F.default.getUser(t.host_id);
     if (null == n || null == r || null == l || null == a || !(0, T.LL)(n, a, r) || !k.Z.can(i.$e(z.Plq.CONNECT, z.Plq.VIEW_CHANNEL), r) || eo.has(t.id)) returnfalse;
-    eo.add(t.id), Y.Z.showNotification((0, Z.EB)(l, 128), J.intl.formatToPlainString(J.t.bZ4Okd, {
+    eo.add(t.id), Y.Z.showNotification((0, A.EB)(l, 128), J.intl.formatToPlainString(J.t.bZ4Okd, {
       guildName: l.name
     }), J.intl.formatToPlainString(J.t.qTelnO, {
       username: H.ZP.getName(l.id, r.id, a),
@@ -343,7 +343,7 @@ $(ef, "displayName", "NotificationStore"), new ef(Chunk570140.Z, __OVERLAY__ ? {
         l = R.Z.getGuild(e.guild_id),
         r = j.Z.getChannel(e.channel_id),
         a = F.default.getUser(e.host_id);
-      if (null != n && null != r && null != l && null != a && k.Z.can(i.$e(z.Plq.CONNECT, z.Plq.VIEW_CHANNEL), r)) Y.Z.showNotification((0, Z.EB)(l, 128), J.intl.formatToPlainString(J.t.bOu6Wn, {
+      if (null != n && null != r && null != l && null != a && k.Z.can(i.$e(z.Plq.CONNECT, z.Plq.VIEW_CHANNEL), r)) Y.Z.showNotification((0, A.EB)(l, 128), J.intl.formatToPlainString(J.t.bOu6Wn, {
         guildName: l.name
       }), J.intl.formatToPlainString(J.t.GV9L8u, {
         topic: e.name,
@@ -362,7 +362,7 @@ $(ef, "displayName", "NotificationStore"), new ef(Chunk570140.Z, __OVERLAY__ ? {
       if (ec()) return;
       let t = F.default.getCurrentUser(),
         n = R.Z.getGuild(e.guild_id);
-      if (null != t && null != n) Y.Z.showNotification((0, Z.EB)(n, 128), J.intl.formatToPlainString(J.t.bOu6Wn, {
+      if (null != t && null != n) Y.Z.showNotification((0, A.EB)(n, 128), J.intl.formatToPlainString(J.t.bOu6Wn, {
         guildName: n.name
       }), J.intl.formatToPlainString(J.t.mYyaRB, {
         topic: e.name

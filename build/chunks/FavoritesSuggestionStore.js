@@ -46,7 +46,7 @@ function h(e) {
 class m extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     var t, n;
-    if (this.syncWith([s.Z], p), null == e) return;
+    if (this.waitFor(o.Z, s.Z, l.ZP), this.syncWith([s.Z], p), null == e) return;
     let {
       suggestedChannels: r,
       dismissedSuggestions: i,

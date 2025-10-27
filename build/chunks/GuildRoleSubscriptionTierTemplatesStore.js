@@ -45,6 +45,9 @@ function f(e) {
   })
 }
 class _ extends(r = Chunk442837.ZP.Store) {
+  initialize() {
+    this.waitFor(Chunk592125.Z)
+  }
   getTemplates(e) {
     return c[e]
   }

@@ -38,6 +38,9 @@ function N(e, t, n) {
   }) : e[t] = n, e
 }
 class I extends(r = Chunk442837.ZP.Store) {
+  initialize() {
+    this.waitFor(Chunk999382.Z, Chunk409059.Z)
+  }
   getTemplate() {
     let e = Chunk999382.Z.getProps().guild;
     if (null == module) return null;

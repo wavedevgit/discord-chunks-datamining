@@ -198,7 +198,7 @@ function L(e) {
 }
 class x extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk314897.default, Chunk944486.Z)
+    this.waitFor(Chunk314897.default, Chunk351780.Z, Chunk944486.Z)
   }
   getComboScore(e, t) {
     let n = T.get(C({

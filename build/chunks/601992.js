@@ -54,6 +54,9 @@ function E(e) {
   c = a, null != t && (_[t] = a), n && (u = a, null != t && (p[t] = a)), r && (d = a, null != t && (m[t] = a)), i && (f = a, null != t && (h[t] = a))
 }
 class b extends Chunk442837.ZP.Store {
+  initialize() {
+    this.waitFor(Chunk271383.ZP, Chunk9156.ZP, Chunk594174.default)
+  }
   getGlobalStats() {
     let e = e => null == e ? null : Math.floor((Date.now() - e) / 1e3);
     return {

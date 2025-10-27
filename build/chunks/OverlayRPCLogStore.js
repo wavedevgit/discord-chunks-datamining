@@ -88,7 +88,7 @@ function I(e) {
 }
 class T extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    Chunk338949.Z.hasRenderDebugMode(Chunk837268.GO.LegacyOverlayLogging) && y()
+    this.waitFor(Chunk338949.Z), Chunk338949.Z.hasRenderDebugMode(Chunk837268.GO.LegacyOverlayLogging) && y()
   }
   getAllLogs() {
     return m

@@ -482,7 +482,7 @@ function ej(e) {
   } = e;
   et = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
   let n = new URLSearchParams;
-  n.append("build_id", "765184532b08db76bf3a5c1ccd27e7592faa5136"), n.append("rpc", String(t)), n.append("rpc_auth_token", et), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+  n.append("build_id", "b812110845bf86a96a2b28a24e80d622c66cbc9e"), n.append("rpc", String(t)), n.append("rpc_auth_token", et), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
 }
 
 function eU(e) {
@@ -609,7 +609,7 @@ function eJ() {
 }
 class e$ extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    !(0, Chunk145597.supportsLegacy)() || __OVERLAY__ || (this.waitFor(Chunk594190.ZP, Chunk353926.Z, Chunk314897.default, Chunk509140.Z, Chunk610394.Z, Chunk371651.default, Chunk322155.Z), this.syncWith([Chunk353926.Z], eX), Chunk490029.sr(eP, eR), Chunk314897.default.addChangeListener(eN), Chunk570140.Z.addInterceptor(ei.queueDispatch))
+    !(0, Chunk145597.supportsLegacy)() || __OVERLAY__ || (this.waitFor(Chunk314897.default, Chunk353926.Z, Chunk77498.Z, Chunk355863.Z, Chunk371651.default, Chunk322155.Z, Chunk509140.Z, Chunk610394.Z, Chunk594190.ZP), this.syncWith([Chunk353926.Z], eX), Chunk490029.sr(eP, eR), Chunk314897.default.addChangeListener(eN), Chunk570140.Z.addInterceptor(ei.queueDispatch))
   }
   isFocusedPidInputLocked() {
     let e = this.getFocusedPID();

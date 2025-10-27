@@ -126,9 +126,9 @@ function A(e) {
     location: S.dr.ACTIVITY_PANEL,
     questContent: m.jn.ACTIVITY_PANEL,
     sourceQuestContent: m.jn.ACTIVITY_PANEL
-  }), F = (0, d.Rt)(_), Y = (0, g.CR)({
+  }), F = (0, d.Rt)(_), z = (0, g.CR)({
     quest: _
-  }), z = F ? Y : N.intl.string(N.t.l7E81v);
+  }), Y = F ? z : N.intl.string(N.t.l7E81v);
   return (0, r.jsxs)("div", {
     ref: e => {
       c.current = e
@@ -204,7 +204,7 @@ function A(e) {
           onClick: k
         }), (0, r.jsx)(o.Button, {
           variant: "primary",
-          text: z,
+          text: Y,
           onClick: R,
           loading: E,
           icon: (0, I.getPrimaryCtaIcon)(_)

@@ -81,7 +81,7 @@ let N = Chunk647438.memo(function(e) {
     allowHeading: U || G,
     allowLinks: true,
     previewLinkTarget: true
-  }), V = (0, s.JA)(N.id), F = (0, p.ZP)(N), Y = (0, o.e7)([I.Z], () => N.hasFlag(y.iLy.HAS_THREAD) && I.Z.getChannel(v.default.castMessageIdAsChannelId(N.id))), z = (0, c.p9)({
+  }), V = (0, s.JA)(N.id), F = (0, p.ZP)(N), z = (0, o.e7)([I.Z], () => N.hasFlag(y.iLy.HAS_THREAD) && I.Z.getChannel(v.default.castMessageIdAsChannelId(N.id))), Y = (0, c.p9)({
     guildId: Z.guild_id,
     roleId: F.iconRoleId
   }), W = (0, h.iG)(N), q = (0, h.Gx)(N);
@@ -101,7 +101,7 @@ let N = Chunk647438.memo(function(e) {
       compact: false,
       animateAvatar: L,
       isGroupStart: true,
-      roleIcon: z,
+      roleIcon: Y,
       hideTimestamp: true,
       hideGuildTag: false
     }),
@@ -121,7 +121,7 @@ let N = Chunk647438.memo(function(e) {
     }), i)),
     onContextMenu: P,
     onClick: x,
-    hasThread: R && null != Y && N.hasFlag(y.iLy.HAS_THREAD),
+    hasThread: R && null != z && N.hasFlag(y.iLy.HAS_THREAD),
     hasReply: false,
     "aria-labelledby": W,
     "aria-describedby": q,

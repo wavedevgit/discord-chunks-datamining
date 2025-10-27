@@ -114,7 +114,7 @@ function D() {
 }
 class w extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk984933.ZP, Chunk314897.default, Chunk271383.ZP, Chunk9156.ZP, Chunk306680.ZP, Chunk581883.Z), this.syncWith([Chunk9156.ZP], D)
+    this.waitFor(Chunk314897.default, Chunk592125.Z, Chunk984933.ZP, Chunk271383.ZP, Chunk430824.Z, Chunk306680.ZP, Chunk9156.ZP, Chunk581883.Z), this.syncWith([Chunk9156.ZP], D)
   }
   getNewChannelIds(e) {
     var t;

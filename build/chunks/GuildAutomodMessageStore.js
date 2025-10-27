@@ -122,7 +122,7 @@ function R(e) {
 }
 class P extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(c.Z), null != e && (h = e.automodFailedMessages, g = e.mentionRaidDetectionByGuild)
+    this.waitFor(l.Z, c.Z), null != e && (h = e.automodFailedMessages, g = e.mentionRaidDetectionByGuild)
   }
   getState() {
     return {

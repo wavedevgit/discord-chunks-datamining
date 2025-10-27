@@ -40,6 +40,9 @@ function h() {
   u = 0, d = null, f = null
 }
 class m extends(r = Chunk442837.ZP.Store) {
+  initialize() {
+    this.waitFor(Chunk38618.Z)
+  }
   get purchaseTokenAuthState() {
     return u
   }

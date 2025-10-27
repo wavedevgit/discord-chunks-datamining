@@ -253,7 +253,7 @@ class el extends Chunk647438.Component {
       this.setState({
         focused: false
       })
-    }), en(this, "renderAttachButton", (e, t) => (0, i.jsx)(C.Z, {
+    }), en(this, "renderAttachButton", (e, t) => (0, i.jsx)(Z.Z, {
       className: t,
       channel: this.props.channel,
       draftType: R.d.ChannelMessage,

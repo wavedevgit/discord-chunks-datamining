@@ -461,7 +461,7 @@ function er(e) {
 }
 class ei extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk314897.default, Chunk106301.Z)
+    this.waitFor(Chunk314897.default, Chunk106301.Z, Chunk594174.default)
   }
   setCurrentUserOnConnectionOpen(e, t) {
     v[m.default.getId()] = e, k(m.default.getId(), [...t].sort(x))

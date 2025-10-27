@@ -134,7 +134,7 @@ function P() {
 }
 class D extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    b = null != e ? e : E, this.waitFor(l.default), this.syncWith([l.default], C), this.syncWith([d.Z], N), this.syncWith([o.Z], P)
+    b = null != e ? e : E, this.waitFor(c.Z, o.Z, d.Z, l.default), this.syncWith([l.default], C), this.syncWith([d.Z], N), this.syncWith([o.Z], P)
   }
   getUserTrialOffer(e) {
     if (null !== e) return b.userTrialOffers[e]

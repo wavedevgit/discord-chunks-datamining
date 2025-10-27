@@ -155,7 +155,7 @@ function B(e) {
 }
 class Z extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk509140.Z)
+    this.waitFor(Chunk509140.Z, Chunk522474.Z)
   }
   getClickZones() {
     return y

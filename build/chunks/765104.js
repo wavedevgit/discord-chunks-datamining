@@ -88,7 +88,7 @@ class Z extends(s = Chunk442837.ZP.PersistedStore) {
   }
   initialize(e) {
     var t;
-    r = null == (t = null == e ? true : e.shouldShowTopicsBar) || t, this.waitFor(m.Z, O.default, b.Z, g.Z, p.Z), this.syncWith([h.Z], B)
+    r = null == (t = null == e ? true : e.shouldShowTopicsBar) || t, this.waitFor(m.Z, p.Z, g.Z, h.Z, E.ZP, b.Z, y.ZP, O.default), this.syncWith([h.Z], B)
   }
   allSummaries() {
     return P

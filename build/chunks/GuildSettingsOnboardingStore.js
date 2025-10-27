@@ -30,7 +30,7 @@ function _(e) {
 }
 class C extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk45966.Z, Chunk889369.Z, Chunk208665.Z, Chunk969632.Z, Chunk392885.Z), this.syncWith([Chunk45966.Z, Chunk889369.Z, Chunk208665.Z, Chunk969632.Z, Chunk392885.Z], () => true)
+    this.waitFor(Chunk45966.Z, Chunk889369.Z, Chunk969632.Z, Chunk208665.Z, Chunk392885.Z, Chunk999382.Z), this.syncWith([Chunk45966.Z, Chunk889369.Z, Chunk208665.Z, Chunk969632.Z, Chunk392885.Z], () => true)
   }
   isEducationUpsellDismissed(e) {
     return x.has(e)

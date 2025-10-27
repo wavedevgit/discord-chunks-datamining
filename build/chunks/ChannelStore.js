@@ -444,7 +444,7 @@ function ew() {
 }
 class eL extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk458772.Z, Chunk594174.default, Chunk430824.Z, Chunk853856.Z), this.syncWith([Chunk853856.Z], eD)
+    this.waitFor(Chunk314897.default, Chunk458772.Z, Chunk853856.Z, Chunk430824.Z, Chunk594174.default), this.syncWith([Chunk853856.Z], eD)
   }
   hasChannel(e) {
     return null != Q(e)

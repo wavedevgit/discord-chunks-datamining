@@ -177,7 +177,7 @@ function V() {
 }
 class H extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk594190.ZP, Chunk317381.ZP, Chunk272053.Z, Chunk199902.Z, Chunk768419.Z, Chunk581883.Z, Chunk77498.Z, Chunk106301.Z, Chunk797258.Z, Chunk812206.Z), this.syncWith([Chunk406066.Z, Chunk106301.Z], () => j())
+    this.waitFor(Chunk812206.Z, Chunk199902.Z, Chunk592125.Z, Chunk317381.ZP, Chunk272053.Z, Chunk406066.Z, Chunk77498.Z, Chunk106301.Z, Chunk594190.ZP, Chunk944486.Z, Chunk797258.Z, Chunk768419.Z, Chunk581883.Z), this.syncWith([Chunk406066.Z, Chunk106301.Z], () => j())
   }
   getActivities() {
     return M

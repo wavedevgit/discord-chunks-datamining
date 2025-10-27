@@ -39,7 +39,7 @@ function p() {
 }
 class O extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk592125.Z, Chunk430824.Z, Chunk271383.ZP, Chunk375954.Z, Chunk594174.default, Chunk706454.default)
+    this.waitFor(Chunk592125.Z, Chunk271383.ZP, Chunk430824.Z, Chunk706454.default, Chunk375954.Z, Chunk699516.Z, Chunk594174.default)
   }
   getPins(e) {
     return D[e]

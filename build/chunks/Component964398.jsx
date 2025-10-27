@@ -105,10 +105,10 @@ let p = Chunk647438.memo(function(e) {
     interactive: _ = true,
     onClose: T,
     children: m
-  } = e, I = i.useRef(null), S = i.useRef([]), b = i.useRef(false), v = i.useRef(null), [x, P] = i.useState(0), [A, Z] = i.useState({
+  } = e, I = i.useRef(null), S = i.useRef([]), b = i.useRef(false), v = i.useRef(null), [x, P] = i.useState(0), [Z, A] = i.useState({
     x: 0,
     y: 0
-  }), j = Math.abs(A.x) + Math.abs(A.y) > 0, R = i.useMemo(() => a().chunk(m, g), [m]), D = i.useCallback((e, t) => {
+  }), j = Math.abs(Z.x) + Math.abs(Z.y) > 0, R = i.useMemo(() => a().chunk(m, g), [m]), D = i.useCallback((e, t) => {
     null == S.current[x] ? S.current[x] = [] : S.current[x][t] = e
   }, [x]), w = i.useCallback((e, t) => {
     v.current = t, y(g * e + t)
@@ -117,7 +117,7 @@ let p = Chunk647438.memo(function(e) {
   }, [y]), M = i.useCallback(e => {
     k(), b.current = e
   }, [k]), U = i.useCallback((e, t, n) => {
-    if (b.current) return void Z({
+    if (b.current) return void A({
       x: 0,
       y: 0
     });
@@ -136,7 +136,7 @@ let p = Chunk647438.memo(function(e) {
           y: Math.max(i * Math.sin(2 * Math.PI * l / 360), 0)
         }
       })(n, l);
-    Z({
+    A({
       x: (i ? Math.max(l.x, -a.x) : Math.min(l.x, a.x)) / 2,
       y: (r ? Math.max(l.y, -a.y) : Math.min(l.y, a.y)) / 2
     })
@@ -248,8 +248,8 @@ let p = Chunk647438.memo(function(e) {
             r: 28.8
           }), j && (0, l.jsx)("circle", {
             className: c.chatWheelCenter,
-            cx: 144 + A.x,
-            cy: 144 + A.y,
+            cx: 144 + Z.x,
+            cy: 144 + Z.y,
             r: 28.8
           })]
         }), N && (0, l.jsx)("circle", {

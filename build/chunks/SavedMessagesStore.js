@@ -222,7 +222,9 @@ function G(e) {
   E.add(t.saveData.messageId)
 }
 class B extends(r = Chunk442837.ZP.Store) {
-  initialize() {}
+  initialize() {
+    this.waitFor(Chunk594174.default)
+  }
   getSavedMessages() {
     return h.values(Chunk686478._l.ALL)
   }

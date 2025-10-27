@@ -40,6 +40,9 @@ function p(e) {
     of(u[e.guildId] = {}, e.channels)) u[e.guildId][t] = n
 }
 class h extends(r = Chunk442837.ZP.Store) {
+  initialize() {
+    this.waitFor(Chunk38618.Z)
+  }
   getChannelStatus(e) {
     var t;
     if (null != e && null != e.guild_id && e.type === i.d.GUILD_VOICE) return c.has(e.guild_id) || (c.add(e.guild_id), s.Z.getSocket().requestChannelStatuses(e.guild_id)), null == (t = u[e.guild_id]) ? true : t[e.id]

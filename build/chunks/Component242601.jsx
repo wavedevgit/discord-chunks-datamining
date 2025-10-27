@@ -459,7 +459,7 @@ function e_(e) {
   let d = (0, C.Z)(n),
     p = (0, c.e7)([B.Z], () => B.Z.getGuildDimensions(n).scrollTo),
     h = (0, c.e7)([q.Z], () => q.Z.getChannelId()),
-    m = (0, c.e7)([z.Z], () => z.Z.can(ei.Plq.MANAGE_GUILD, s)),
+    m = (0, c.e7)([Y.Z], () => Y.Z.can(ei.Plq.MANAGE_GUILD, s)),
     g = (0, c.e7)([H.Z], () => H.Z.isUnavailable(n)),
     P = (0, c.e7)([K.default], () => K.default.getCurrentUser()),
     {
@@ -474,7 +474,7 @@ function e_(e) {
   i.useEffect(() => {
     n !== V && k(!w)
   }, [n, V, w]);
-  let [$, ee] = (0, v.ZP)(e => [el.XN.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(ea.R.GUILD_HEADER_TOOLTIPS)], o.X), et = (0, I.Z)(s), en = (0, f.s9z)(f.JQI), er = (0, c.e7)([Y.Z], () => Y.Z.hasLayers()), es = (0, c.e7)([U.Z], () => U.Z.shouldShow(eh)), eo = (0, D.cT)(n, "GuildSidebar") && m && (null == s ? true : s.premiumProgressBarEnabled) === false && !J.s.isDisallowPopupsSet(), ec = (0, j.Z)(n), eu = (null == s ? true : s.features.has(ei.GuildFeatures.HUB)) === true, ed = m && (null == s ? true : s.features.has(ei.GuildFeatures.DISCOVERABLE)) === true, ep = (0, c.e7)([x.Z, Y.Z], () => null != s && null != P && m && !Y.Z.hasLayers() && x.Z.shouldShowGuildTemplateDirtyTooltip(n)), ef = (0, c.e7)([G.Z], () => G.Z.getChannel(a)), {
+  let [$, ee] = (0, v.ZP)(e => [el.XN.some(t => e.currentlyShown.has(t.dismissibleContentType)), e.currentlyShownGroup.has(ea.R.GUILD_HEADER_TOOLTIPS)], o.X), et = (0, I.Z)(s), en = (0, f.s9z)(f.JQI), er = (0, c.e7)([z.Z], () => z.Z.hasLayers()), es = (0, c.e7)([U.Z], () => U.Z.shouldShow(eh)), eo = (0, D.cT)(n, "GuildSidebar") && m && (null == s ? true : s.premiumProgressBarEnabled) === false && !J.s.isDisallowPopupsSet(), ec = (0, j.Z)(n), eu = (null == s ? true : s.features.has(ei.GuildFeatures.HUB)) === true, ed = m && (null == s ? true : s.features.has(ei.GuildFeatures.DISCOVERABLE)) === true, ep = (0, c.e7)([x.Z, z.Z], () => null != s && null != P && m && !z.Z.hasLayers() && x.Z.shouldShowGuildTemplateDirtyTooltip(n)), ef = (0, c.e7)([G.Z], () => G.Z.getChannel(a)), {
     isPopoutOpen: em
   } = (0, S.y)(), e_ = null != (t = null == s ? true : s.features.has(ei.GuildFeatures.COMMUNITY)) && t, eb = Q.ZP.isNewUser(P), eE = M && !eb;
   (0, T.Z)(s);

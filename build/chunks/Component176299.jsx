@@ -148,13 +148,13 @@ let ek = (0, Chunk608787.Un)({
     name: "MemberSafetyPage",
     renderLoader: eU
   }),
-  eY = (0, Chunk608787.Un)({
+  ez = (0, Chunk608787.Un)({
     createPromise: () => Promise.all([require.e("8271"), require.e("15851"), require.e("51453"), require.e("845"), require.e("58227"), require.e("58121")]).then(require.bind(require, 603072)),
     webpackId: 603072,
     name: "ChannelsAndRolesPage",
     renderLoader: eU
   }),
-  ez = (0, Chunk608787.Un)({
+  eY = (0, Chunk608787.Un)({
     createPromise: () => Promise.all([require.e("8271"), require.e("15851"), require.e("51453"), require.e("845"), require.e("37709")]).then(require.bind(require, 599263)),
     webpackId: 599263,
     name: "GuildOnboardingPage",
@@ -187,10 +187,10 @@ let ek = (0, Chunk608787.Un)({
     null == u && null != t.params.gameShopPageIndex && (u = eZ.oC.GAME_SHOP);
     let d = (0, p.e7)([e_.Z], () => e_.Z.getGuild(l)),
       f = (0, p.e7)([eg.ZP], () => null == l ? null : eg.ZP.getSelfMember(l)),
-      h = (0, p.e7)([Y.Z], () => {
+      h = (0, p.e7)([z.Z], () => {
         if (null == l) return;
-        let e = Y.Z.getData(l);
-        if ((null == e ? true : e.type) === z.z.SERVER_SHOP) switch (e.initialTab) {
+        let e = z.Z.getData(l);
+        if ((null == e ? true : e.type) === Y.z.SERVER_SHOP) switch (e.initialTab) {
           case "role_subscriptions":
             return x.y.GUILD_ROLE_SUBSCRIPTIONS;
           case "guild_products":
@@ -230,16 +230,16 @@ let ek = (0, Chunk608787.Un)({
           guildId: l
         });
       case eZ.oC.CHANNEL_BROWSER:
-        return (0, r.jsx)(eY, {
+        return (0, r.jsx)(ez, {
           guildId: l,
           selectedSection: eL.l7.BROWSE
         });
       case eZ.oC.GUILD_ONBOARDING:
-        return (0, r.jsx)(ez, {
+        return (0, r.jsx)(eY, {
           guildId: l
         });
       case eZ.oC.CUSTOMIZE_COMMUNITY:
-        return (0, r.jsx)(eY, {
+        return (0, r.jsx)(ez, {
           guildId: l,
           selectedSection: eL.l7.CUSTOMIZE
         });

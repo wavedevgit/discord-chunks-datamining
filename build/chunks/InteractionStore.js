@@ -204,6 +204,9 @@ function j(e) {
   }
 }
 class U extends(a = Chunk442837.ZP.Store) {
+  initialize() {
+    this.waitFor(Chunk314897.default, Chunk592125.Z)
+  }
   getInteraction(e) {
     let t = O[e.id];
     return null != t ? y[t] : null

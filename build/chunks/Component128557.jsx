@@ -119,8 +119,8 @@ function M(e) {
     guildPersonalized: B
   } = (0, f.h_)(l), {
     handleInvite: H,
-    handleMessage: V,
-    handlePersonalize: F,
+    handleMessage: F,
+    handlePersonalize: V,
     handleDownload: G,
     handleAddApplication: z
   } = function(e) {
@@ -264,7 +264,7 @@ function M(e) {
       iconUrl: u.$_T,
       header: Z.intl.string(Z.t.c5kxPh),
       completed: B,
-      onClick: F
+      onClick: V
     })
   }, "customize")), L && Q.push((0, i.jsx)(o.Z.div, {
     className: T.cardWrapper,
@@ -275,7 +275,7 @@ function M(e) {
       iconUrl: u.qMX,
       header: Z.intl.string(Z.t["SoP7+l"]),
       completed: U,
-      onClick: V
+      onClick: F
     })
   }, "message")), (0, j.isWeb)() && Q.push((0, i.jsx)(o.Z.div, {
     className: T.cardWrapper,

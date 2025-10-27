@@ -316,6 +316,9 @@ function et(e) {
   return null != e && f.$I.has(e.status)
 }
 class en extends(r = Chunk442837.ZP.Store) {
+  initialize() {
+    this.waitFor(Chunk314897.default, Chunk271383.ZP)
+  }
   getGuildScheduledEvent(e) {
     var t;
     return null == e ? null : null != (t = y.get(e)) ? t : null

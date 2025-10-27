@@ -80,7 +80,7 @@ function T(e) {
 }
 class S extends(o = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    r = (m = p({}, null != e ? e : h)).applicationId, i = m.originURL, this.waitFor(d.Z, c.Z), this.syncWith([d.Z, c.Z], () => true), f.Z.whenInitialized(() => {
+    r = (m = p({}, null != e ? e : h)).applicationId, i = m.originURL, this.waitFor(f.Z, c.Z, d.Z), this.syncWith([d.Z, c.Z], () => true), f.Z.whenInitialized(() => {
       E = true
     })
   }

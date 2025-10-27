@@ -721,7 +721,7 @@ class eg extends(i = Chunk647438.PureComponent) {
     }), eo(this, "pushToExistingDM", (e, t) => {
       let n = this._searchCounter,
         i = (0, S.v_)(e),
-        r = F.Z.getChannelId() === e.id;
+        r = V.Z.getChannelId() === e.id;
       b.Z.addRecipients(e.id, t, ei.Sbl.ADD_FRIENDS_TO_DM).then(n => {
         if (r) {
           if (e.isDM() && n !== e.id) return void g.Z.call(n, false, true);
@@ -825,9 +825,9 @@ function eC(e) {
   var {
     channel: t
   } = e, n = eu(e, ["channel"]);
-  let i = (0, p.cj)([V.Z, H.Z, W.Z], () => {
+  let i = (0, p.cj)([F.Z, H.Z, W.Z], () => {
     let e;
-    return null != t && null != (e = H.Z.getInvite(t.id)) && e.isExpired() && (e = null), ec(es({}, V.Z.getState()), {
+    return null != t && null != (e = H.Z.getInvite(t.id)) && e.isExpired() && (e = null), ec(es({}, F.Z.getState()), {
       invite: e,
       hideDiscriminator: W.Z.hidePersonalInformation,
       hideInstantInvites: W.Z.hideInstantInvites

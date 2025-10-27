@@ -46,7 +46,7 @@ let D = Chunk647438.memo(e => {
     channel: P,
     sessionId: I,
     nick: L
-  } = e, D = x.id, k = (0, o.e7)([j.default], () => j.default.getId() === D, [D]), [U, B, H] = (0, o.Wu)([S.Z], () => k ? [!S.Z.isSupported() || S.Z.isSelfMute() || S.Z.isSelfMutedTemporarily(), S.Z.isSelfDeaf(), false] : [!S.Z.isSupported() || S.Z.isLocalMute(D), false, S.Z.isLocalVideoDisabled(D)], [k, D]), V = (0, o.e7)([T.Z], () => T.Z.isPrioritySpeaker(D)), F = (0, c.Z)({
+  } = e, D = x.id, k = (0, o.e7)([j.default], () => j.default.getId() === D, [D]), [U, B, H] = (0, o.Wu)([S.Z], () => k ? [!S.Z.isSupported() || S.Z.isSelfMute() || S.Z.isSelfMutedTemporarily(), S.Z.isSelfDeaf(), false] : [!S.Z.isSupported() || S.Z.isLocalMute(D), false, S.Z.isLocalVideoDisabled(D)], [k, D]), F = (0, o.e7)([T.Z], () => T.Z.isPrioritySpeaker(D)), V = (0, c.Z)({
     userId: D,
     checkSoundSharing: true
   }), G = (0, o.e7)([E.ZP], () => E.ZP.isGuestOrLurker(P.guild_id, D)), z = (0, o.e7)([h.Z], () => h.Z.getGuildRingingUsers(P.id).has(D)), W = (0, o.e7)([u.ZP], () => u.ZP.getEmbeddedActivitiesForChannel(P.id).find(e => {
@@ -70,7 +70,7 @@ let D = Chunk647438.memo(e => {
   });
   return (0, i.jsx)(C.Z, {
     shakeLocation: R.oZ.VOICE_USER,
-    isShaking: F,
+    isShaking: V,
     children: (0, i.jsx)(w.ZP, (r = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -98,9 +98,9 @@ let D = Chunk647438.memo(e => {
       localVideoDisabled: H,
       mute: a || U,
       deaf: s || B,
-      speaking: F,
+      speaking: V,
       ringing: z,
-      priority: V,
+      priority: F,
       embeddedApplication: q[0],
       isStreaming: null != X && X.channelId === P.id,
       isWatching: null != J && J.state !== M.jm8.ENDED,

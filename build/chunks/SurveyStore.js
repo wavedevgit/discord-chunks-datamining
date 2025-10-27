@@ -202,7 +202,7 @@ function K() {
 }
 class z extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    v = null != e ? e : O, this.syncWith([p.Z], W)
+    this.waitFor(d.Z, f.Z, _.Z, p.Z, h.default), v = null != e ? e : O, this.syncWith([p.Z], W)
   }
   getState() {
     return v

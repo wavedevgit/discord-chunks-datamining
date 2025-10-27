@@ -55,9 +55,9 @@ function b(t) {
     isRecurrenceItem: p
   } = t, {
     canManageGuildEvent: Z
-  } = (0, u.XJ)(null != v ? v : b), y = (0, r.e7)([o.ZP], () => o.ZP.getGuildScheduledEvent(e)), h = Z(y), P = (0, s.Z)(), O = (0, c.Z)(E, null == y ? true : y.id), m = (0, a.zI)(e, E);
-  if (!h || null == m || null == y) return null;
-  let j = null != y.recurrence_rule && !p,
+  } = (0, u.XJ)(null != v ? v : b), h = (0, r.e7)([o.ZP], () => o.ZP.getGuildScheduledEvent(e)), y = Z(h), P = (0, s.Z)(), O = (0, c.Z)(E, null == h ? true : h.id), m = (0, a.zI)(e, E);
+  if (!y || null == m || null == h) return null;
+  let j = null != h.recurrence_rule && !p,
     N = t => {
       (null == E || t) && !p ? (0, i.ZDy)(async () => {
         let {
@@ -72,7 +72,7 @@ function b(t) {
           default: t
         } = await n.e("27919").then(n.bind(n, 379038));
         return e => (0, l.jsx)(t, f(g({}, e), {
-          guildEvent: y,
+          guildEvent: h,
           recurrenceId: E
         }))
       }, P)
@@ -91,7 +91,7 @@ function b(t) {
         id: d.intl.string(d.t.BW1Qoh),
         label: d.intl.string(d.t.BW1Qoh),
         action: () => N(true),
-        disabled: new Date(y.scheduled_start_time).getTime() < Date.now()
+        disabled: new Date(h.scheduled_start_time).getTime() < Date.now()
       })]
     })
   })

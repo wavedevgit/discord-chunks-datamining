@@ -31,7 +31,7 @@ function g(e, t, n) {
 let E = new Set;
 class b extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    null != e && (E = new Set(e))
+    this.waitFor(d.Z, f.ZP, _.Z, p.default), null != e && (E = new Set(e))
   }
   hasId(e) {
     return E.has(e)

@@ -3,7 +3,7 @@
 "use strict";
 let i;
 require.d(exports, {
-  Z: () => eZ
+  Z: () => eC
 }), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -173,7 +173,7 @@ let ex = e => {
       ctrlKey: s
     }
   };
-class eC extends Chunk647438.Component {
+class eZ extends Chunk647438.Component {
   handleLock() {
     (0, Chunk481060.$sL)() || Chunk574254.Z.isOpen() || Chunk13245.Z.setInputLocked(true, (0, Chunk145597.getPID)())
   }
@@ -359,7 +359,7 @@ class eC extends Chunk647438.Component {
   }
 }
 
-function eZ() {
+function eC() {
   var e, t;
   let {
     locked: n,
@@ -388,7 +388,7 @@ function eZ() {
     i && (0, Chunk32300.F3)()
   }, [i]), (0, Chunk951288.jsx)(Chunk906732.Gt, {
     value: Chunk13245,
-    children: (0, Chunk951288.jsx)(eC, {
+    children: (0, Chunk951288.jsx)(eZ, {
       locked: require,
       initialized: i,
       incompatibleApp: Chunk120356,

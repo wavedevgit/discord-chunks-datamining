@@ -75,8 +75,8 @@ function k(e) {
   } = e, W = I.Z.getVideoComponent(), H = (0, o.e7)([y.default], () => y.default.getId()), {
     user: B,
     streamId: q,
-    speaking: Y
-  } = t, z = B.id === H, K = (0, P.ZP)(t), G = (0, o.e7)([C.Z], () => C.Z.isFocused()), Q = (0, o.e7)([E.Z], () => E.Z.getWindowFocused(T.KJ3.CHANNEL_CALL_POPOUT)), X = (0, o.e7)([I.Z], () => null != B.id && I.Z.isLocalVideoDisabled(B.id, (0, p.Z)(t.type)), [B.id, t.type]), J = (0, o.e7)([O.ZP], () => O.ZP.isGuestOrLurker(n.guild_id, B.id)), $ = w.ZP.getName(n.getGuildId(), n.id, B) + (J ? " ".concat(R.intl.string(R.t["pFO/Ph"])) : ""), ee = Y && (Q || G), et = c < 124 ? D : N, {
+    speaking: z
+  } = t, Y = B.id === H, K = (0, P.ZP)(t), G = (0, o.e7)([C.Z], () => C.Z.isFocused()), Q = (0, o.e7)([E.Z], () => E.Z.getWindowFocused(T.KJ3.CHANNEL_CALL_POPOUT)), X = (0, o.e7)([I.Z], () => null != B.id && I.Z.isLocalVideoDisabled(B.id, (0, p.Z)(t.type)), [B.id, t.type]), J = (0, o.e7)([O.ZP], () => O.ZP.isGuestOrLurker(n.guild_id, B.id)), $ = w.ZP.getName(n.getGuildId(), n.id, B) + (J ? " ".concat(R.intl.string(R.t["pFO/Ph"])) : ""), ee = z && (Q || G), et = c < 124 ? D : N, {
     avatarSrc: en,
     avatarDecorationSrc: er
   } = (0, h.Z)({
@@ -107,7 +107,7 @@ function k(e) {
     onResize: M,
     wrapperClassName: S !== _.P.CALL_TILE ? x.videoWrapper : true,
     className: x.content,
-    mirror: z,
+    mirror: Y,
     streamId: q,
     videoComponent: W,
     fit: j,
@@ -125,7 +125,7 @@ function k(e) {
       backgroundSrc: B.getAvatarURL(n.guild_id, 80),
       size: et,
       pulseSpeakingIndicator: V,
-      speaking: Y,
+      speaking: z,
       userId: B.id
     })
   })

@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 463119, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  i: () => z
+  i: () => Y
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -303,7 +303,7 @@ let M = e => {
       })]
     })
   },
-  Y = e => {
+  z = e => {
     var {
       dismissContent: t
     } = e, n = R(e, ["dismissContent"]);
@@ -319,7 +319,7 @@ let M = e => {
       })]
     })
   },
-  z = e => {
+  Y = e => {
     let {
       selected: t,
       onClick: n,
@@ -356,7 +356,7 @@ let M = e => {
           displayOptions: a
         }))
     }
-    return p === s.z.WISHLIST_SHOP_BUTTON_POPOVER ? (0, r.jsx)(Y, D(L({}, h), {
+    return p === s.z.WISHLIST_SHOP_BUTTON_POPOVER ? (0, r.jsx)(z, D(L({}, h), {
       dismissContent: f
     })) : (0, r.jsx)(U, L({}, h))
   }

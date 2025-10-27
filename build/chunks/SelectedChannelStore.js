@@ -278,7 +278,7 @@ class eo extends(u = Chunk442837.ZP.Store) {
         null: null
       }))
     }
-    this.mustEmitChanges(e => "CONNECTION_OPEN" !== e.type && "VOICE_STATE_UPDATES" !== e.type), this.waitFor(Chunk430824.Z, Chunk592125.Z, Chunk914010.Z, Chunk984933.ZP, Chunk131951.Z, Chunk496675.Z)
+    this.mustEmitChanges(e => "CONNECTION_OPEN" !== e.type && "VOICE_STATE_UPDATES" !== e.type), this.waitFor(Chunk314897.default, Chunk592125.Z, Chunk984933.ZP, Chunk430824.Z, Chunk131951.Z, Chunk496675.Z, Chunk914010.Z)
   }
   getChannelId(e) {
     var t, n;

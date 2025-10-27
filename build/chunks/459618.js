@@ -88,6 +88,9 @@ function y(e) {
   t || null == r || v.recordGatewayResponse(r)
 }
 class O extends Chunk442837.ZP.Store {
+  initialize() {
+    this.waitFor(Chunk592125.Z, Chunk650774.Z, Chunk866960.Z)
+  }
   recordMessageSendAttempt(e, t) {
     var n, r, i, a;
     let o = arguments.length > 2 && true !== arguments[2] ? arguments[2] : {},

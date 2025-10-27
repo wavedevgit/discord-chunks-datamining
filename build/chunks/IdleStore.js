@@ -145,6 +145,9 @@ function k() {
   M({})
 }
 class j extends(i = Chunk442837.ZP.Store) {
+  initialize() {
+    this.waitFor(Chunk314897.default)
+  }
   isIdle() {
     return y
   }

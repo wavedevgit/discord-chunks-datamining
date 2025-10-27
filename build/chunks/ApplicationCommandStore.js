@@ -155,7 +155,7 @@ function g(e) {
 }
 class E extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    Chunk433355.ZP.addChangeListener(() => {
+    this.waitFor(Chunk433355.ZP, Chunk944486.Z), Chunk433355.ZP.addChangeListener(() => {
       let e = Chunk944486.Z.getChannelId();
       if (null == module) return d = {}, true;
       let t = Chunk433355.ZP.getCurrentSidebarChannelId(module);

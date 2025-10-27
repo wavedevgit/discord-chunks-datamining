@@ -283,7 +283,7 @@ function ej(e, t) {
 }
 class eI extends(i = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk592125.Z, Chunk594174.default, Chunk649974.Z, Chunk624864.Z, Chunk199902.Z, Chunk944486.Z, Chunk358221.Z, Chunk19780.Z), this.syncWith([Chunk649974.Z], eS),
+    this.waitFor(Chunk199902.Z, Chunk314897.default, Chunk358221.Z, Chunk592125.Z, Chunk435064.Z, Chunk375954.Z, Chunk292959.Z, Chunk649974.Z, Chunk371651.default, Chunk624864.Z, Chunk610394.Z, Chunk158776.Z, Chunk19780.Z, Chunk699516.Z, Chunk944486.Z, Chunk885110.Z, Chunk246946.Z, Chunk594174.default, Chunk979651.Z), this.syncWith([Chunk649974.Z], eS),
       function() {
         let e = Chunk944486.Z.getVoiceChannelId(),
           t = Chunk314897.default.getId(),

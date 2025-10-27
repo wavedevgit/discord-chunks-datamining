@@ -194,6 +194,9 @@ function N() {
   u = null
 }
 class R extends(r = Chunk442837.ZP.Store) {
+  initialize() {
+    this.waitFor(Chunk594174.default)
+  }
   getRequest(e) {
     return d[e]
   }

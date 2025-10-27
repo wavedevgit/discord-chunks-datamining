@@ -112,8 +112,8 @@ function A(e) {
     })
   }
   let {
-    Component: Y,
-    play: z,
+    Component: z,
+    play: Y,
     events: {
       onMouseEnter: W,
       onMouseLeave: q
@@ -162,7 +162,7 @@ function A(e) {
             innerClassName: j.buttonContents,
             disabled: D,
             onClick: () => {
-              null != G && G !== o.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && B(T.L.UNKNOWN), M(!R), z(), (0, g.v)(V, g.d.SOUNDBOARD)
+              null != G && G !== o.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && B(T.L.UNKNOWN), M(!R), Y(), (0, g.v)(V, g.d.SOUNDBOARD)
             },
             onMouseEnter: e => {
               var t;
@@ -176,7 +176,7 @@ function A(e) {
             fullWidth: true,
             size: d.zx.Sizes.MEDIUM
           }), l), {
-            children: (0, r.jsx)(Y, {
+            children: (0, r.jsx)(z, {
               className: j.buttonIcon,
               size: "sm",
               color: "currentColor"

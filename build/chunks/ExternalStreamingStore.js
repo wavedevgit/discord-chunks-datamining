@@ -195,7 +195,7 @@ function M(e) {
 }
 class k extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    x(), this.waitFor(Chunk553795.Z), this.syncWith([Chunk246946.Z], x)
+    x(), this.waitFor(Chunk553795.Z, Chunk246946.Z), this.syncWith([Chunk246946.Z], x)
   }
   getStream() {
     return T

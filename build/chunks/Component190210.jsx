@@ -144,7 +144,7 @@ let ei = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
   s()(null != k, "chat input type must be set");
   let {
     analyticsLocations: eT
-  } = (0, _.ZP)(y.Z.CHANNEL_TEXT_AREA), eN = (0, F.qz)(t), eA = r.useRef(null), ew = r.useRef(null), eM = r.useRef(null), eR = r.useRef(null);
+  } = (0, _.ZP)(y.Z.CHANNEL_TEXT_AREA), eN = (0, V.qz)(t), eA = r.useRef(null), ew = r.useRef(null), eM = r.useRef(null), eR = r.useRef(null);
   null == ey || ey(ew.current);
   let {
     activeCommand: eL
@@ -160,17 +160,17 @@ let ei = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
     disabled: eU,
     canAttachFiles: eB,
     canEveryoneSendMessages: eH
-  } = (0, F.TE)(L, k, eL, I), eV = !A.dN.useSetting() && !(0, D.isAndroidWeb)() && null != window.ResizeObserver, eF = !eV || !(null == (n = k.commands) ? true : n.enabled) || !G || p !== q.GI, eG = (0, T.Z)(), {
+  } = (0, V.TE)(L, k, eL, I), eF = !A.dN.useSetting() && !(0, D.isAndroidWeb)() && null != window.ResizeObserver, eV = !eF || !(null == (n = k.commands) ? true : n.enabled) || !G || p !== q.GI, eG = (0, T.Z)(), {
     fontSize: ez
   } = (0, d.cj)([C.Z], () => ({
     fontSize: C.Z.fontSize,
     isSubmitButtonEnabled: C.Z.isSubmitButtonEnabled
   })), eW = (0, d.e7)([M.Z], () => M.Z.isEnabled()), eq = (0, N.NE)(L);
-  (0, F.hJ)(k, eU);
+  (0, V.hJ)(k, eU);
   let {
     eventEmitter: eY,
     handleEditorSelectionChanged: eK
-  } = (0, F.x2)(ew, p, h), eX = r.useCallback(e => {
+  } = (0, V.x2)(ew, p, h), eX = r.useCallback(e => {
     let t = e => {
         if (e.shouldClear) {
           var t;
@@ -226,17 +226,17 @@ let ei = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
   }, [ed, eS, eP, L.id, eZ, eI, eq]), {
     submit: eJ,
     handleSubmit: eQ
-  } = (0, F.bL)(eX, k, ew, eR, L.id), {
+  } = (0, V.bL)(eX, k, ew, eR, L.id), {
     autocompleteRef: e$,
     handleMaybeShowAutocomplete: e0,
     handleHideAutocomplete: e1
-  } = (0, F.jx)(), e2 = r.useCallback(() => {
+  } = (0, V.jx)(), e2 = r.useCallback(() => {
     var e;
     return null == eR || null == (e = eR.current) ? true : e.hide()
   }, []), {
     editorHeight: e3,
     handleResize: e8
-  } = (0, F.oR)(ei), {
+  } = (0, V.oR)(ei), {
     handleTab: e4,
     handleEnter: e7,
     handleMoveSelection: e6
@@ -256,14 +256,14 @@ let ei = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
         return !!(!n && (null == (r = t.current) ? true : r.onMoveSelection(i))) || (null == (l = e.current) ? true : l.onMoveSelection(i)) || false
       }, [n])
     }
-  }(e$, eA, eF), {
+  }(e$, eA, eV), {
     expressionPickerView: e5,
     shouldHideExpressionPicker: e9,
     handleOuterClick: te
-  } = (0, F.iV)(k, ew), tt = (0, F.aT)(p), {
+  } = (0, V.iV)(k, ew), tt = (0, V.aT)(p), {
     currentAutocompleteType: tn,
     handleAutocompleteVisibilityChange: ti
-  } = (0, F.vB)(), tr = (0, F.ae)(ew), tl = (0, F.Sg)(eJ, k, ew), ta = (0, F.O1)({
+  } = (0, V.vB)(), tr = (0, V.ae)(ew), tl = (0, V.Sg)(eJ, k, ew), ta = (0, V.O1)({
     editorRef: ew,
     disabled: eU,
     textValue: p,
@@ -356,7 +356,7 @@ let ei = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
                     ref: ew,
                     id: E,
                     focused: G,
-                    useSlate: eV,
+                    useSlate: eF,
                     textValue: p,
                     richValue: h,
                     disabled: eU,
@@ -412,7 +412,7 @@ let ei = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
             className: J.footerPart,
             children: [(0, i.jsx)(ea, {
               channel: L
-            }), (0, i.jsx)(V.Z, {
+            }), (0, i.jsx)(F.Z, {
               type: B.Ie.CREATE_ANNOUNCEMENT_POST,
               disabled: eU,
               channel: L,
@@ -474,7 +474,7 @@ let ei = Chunk647438.memo(Chunk647438.forwardRef(function(e, t) {
           channel: L,
           canMentionRoles: eh,
           canMentionChannels: ef,
-          useNewSlashCommands: eV,
+          useNewSlashCommands: eF,
           canOnlyUseTextCommands: false,
           canSendStickers: true,
           textValue: p,

@@ -78,7 +78,7 @@ function B(e) {
       activity_session_id: null == v ? true : v.compositeInstanceId
     }
   });
-  let [O] = (0, S.Z)([l]), N = (0, u.e7)([P.default], () => P.default.getCurrentUser()), [D, M] = a.useState(""), [F, B] = a.useState([]), [K, Q] = a.useState(null), [Y, X] = a.useState(null), [$, J] = a.useState(false);
+  let [O] = (0, S.Z)([l]), j = (0, u.e7)([P.default], () => P.default.getCurrentUser()), [D, M] = a.useState(""), [F, B] = a.useState([]), [K, Q] = a.useState(null), [Y, X] = a.useState(null), [$, J] = a.useState(false);
   a.useEffect(() => {
     (async () => {
       let e = k.Z.toURLSafe(r);
@@ -94,7 +94,7 @@ function B(e) {
       }, a.readAsDataURL(i)
     })()
   }, [r, Q]);
-  let ee = (0, u.Wu)([x.Z, j.Z], () => x.Z.getInviteSuggestionRows().filter(e => e.type === U.bm.FRIEND || e.type === U.bm.DM || j.Z.can(G.Plq.ATTACH_FILES, e.item)));
+  let ee = (0, u.Wu)([x.Z, Z.Z], () => x.Z.getInviteSuggestionRows().filter(e => e.type === U.bm.FRIEND || e.type === U.bm.DM || Z.Z.can(G.Plq.ATTACH_FILES, e.item)));
   a.useEffect(() => {
     (0, g.x)({
       omitUserIds: new Set,
@@ -114,11 +114,11 @@ function B(e) {
     }, [s]),
     en = a.useCallback(async () => {
       A.default.track(G.rMx.ACTIVITY_SHARE_MOMENT_COPY, {
-        user_id: null == N ? true : N.id,
+        user_id: null == j ? true : j.id,
         application_id: l,
         activity_session_id: null == v ? true : v.compositeInstanceId
       }), await L.ZP.copyImage(r), J(true)
-    }, [null == v ? true : v.compositeInstanceId, l, r, null == N ? true : N.id]),
+    }, [null == v ? true : v.compositeInstanceId, l, r, null == j ? true : j.id]),
     ei = a.useCallback(async () => {
       let e = 0,
         t = 0,
@@ -154,7 +154,7 @@ function B(e) {
             draftType: _.d.ChannelMessage
           })
         }
-        let s = Z.Z.getUploads(a, _.d.ChannelMessage);
+        let s = N.Z.getUploads(a, _.d.ChannelMessage);
         I.Z.sendMessage(a, null != O ? w.ZP.parse(r, H.intl.formatToPlainString(H.t.jQULqL, {
           applicationName: "**".concat(O.name, "**")
         })) : {
@@ -181,7 +181,7 @@ function B(e) {
       }
       let a = F.map(e => i(e));
       A.default.track(G.rMx.ACTIVITY_SHARE_MOMENT_SEND, {
-        user_id: null == N ? true : N.id,
+        user_id: null == j ? true : j.id,
         application_id: l,
         activity_session_id: null == v ? true : v.compositeInstanceId,
         n_users: e,
@@ -196,7 +196,7 @@ function B(e) {
         throw (0, p.showToast)((0, p.createToast)(H.intl.string(H.t.PanA4J), p.ToastType.FAILURE)), e
       }
       et()
-    }, [v, O, l, F, K, et, N]);
+    }, [v, O, l, F, K, et, j]);
   return null == Y ? (0, i.jsx)(p.$jN, {}) : (0, i.jsx)(c.Modal, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -302,19 +302,19 @@ function W(e) {
       break;
     case U.bm.GROUP_DM: {
       let e = (0, h.x)(t.item),
-        n = (0, v.F6)(t.item, P.default, N.Z);
+        n = (0, v.F6)(t.item, P.default, j.Z);
       s = (0, i.jsx)(p.qEK, {
         src: e,
         "aria-label": n,
         size: p.EFr.SIZE_40
-      }), o = (0, v.F6)(t.item, P.default, N.Z);
+      }), o = (0, v.F6)(t.item, P.default, j.Z);
       break
     }
     case U.bm.CHANNEL: {
       let e = t.item,
         n = O.Z.getGuild(e.guild_id);
       if (null == n) return null;
-      if (o = "#".concat((0, v.F6)(e, P.default, N.Z)), d = n.name, null != n.icon) {
+      if (o = "#".concat((0, v.F6)(e, P.default, j.Z)), d = n.name, null != n.icon) {
         let t = D.ZP.getGuildIconURL({
           id: e.guild_id,
           icon: n.icon,

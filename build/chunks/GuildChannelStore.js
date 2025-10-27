@@ -285,7 +285,7 @@ function es() {
 }
 class el extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk430824.Z, Chunk271383.ZP, Chunk592125.Z, Chunk496675.Z, Chunk314897.default, Chunk430198.Z, Chunk853856.Z), this.syncWith([Chunk853856.Z], es)
+    this.waitFor(Chunk314897.default, Chunk592125.Z, Chunk853856.Z, Chunk430198.Z, Chunk271383.ZP, Chunk430824.Z, Chunk496675.Z, Chunk594174.default), this.syncWith([Chunk853856.Z], es)
   }
   getAllGuilds() {
     return C

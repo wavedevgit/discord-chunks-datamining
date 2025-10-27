@@ -350,7 +350,7 @@ function eg(e) {
 }
 class eE extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk771845.ZP, Chunk984933.ZP, Chunk592125.Z, Chunk306680.ZP, Chunk601070.Z, Chunk569471.Z, Chunk9156.ZP, Chunk375954.Z, Chunk455199.ZP)
+    this.waitFor(Chunk601070.Z, Chunk592125.Z, Chunk984933.ZP, Chunk569471.Z, Chunk375954.Z, Chunk306680.ZP, Chunk455199.ZP, Chunk771845.ZP, Chunk9156.ZP, Chunk594174.default)
   }
   canLoadMore(e) {
     let {

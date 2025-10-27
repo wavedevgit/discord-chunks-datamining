@@ -2,11 +2,11 @@
 /** chunk id: 554747, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Vm: () => p,
-  ZP: () => Z,
+  ZP: () => m,
   eF: () => S,
-  gM: () => h,
+  gM: () => O,
   k5: () => C,
-  qY: () => O,
+  qY: () => h,
   sz: () => I,
   u1: () => v
 }), require("./388685.js");
@@ -24,9 +24,9 @@ var Chunk647438 = require("./647438.js"),
   Chunk765305 = require("./765305.js"),
   Chunk981631 = require("./981631.js");
 let _ = [],
-  m = 15 * Chunk70956.Z.Millis.MINUTE;
+  Z = 15 * Chunk70956.Z.Millis.MINUTE;
 
-function Z(e, t) {
+function m(e, t) {
   return (0, i.Wu)([u.Z, s.ZP, a.Z, r.Z], () => {
     let n = u.Z.getGuild(e);
     return null == n ? _ : s.ZP.getGuildScheduledEventsByIndex(null != t ? t : s.bN.GUILD_EVENT_UPCOMING(n.id)).filter(e => {
@@ -38,7 +38,7 @@ function Z(e, t) {
   }, [t, e])
 }
 
-function O(e) {
+function h(e) {
   return (0, i.e7)([s.ZP, r.Z, a.Z], () => {
     let t = r.Z.getChannel(e);
     if (!a.Z.can(g.Plq.VIEW_CHANNEL, t) || null == (null == t ? true : t.guild_id)) return null;
@@ -47,7 +47,7 @@ function O(e) {
   }, [e])
 }
 
-function h(e) {
+function O(e) {
   let t = (0, i.Wu)([s.ZP], () => s.ZP.getGuildScheduledEventsForGuild(e), [e]);
   return l.useMemo(() => {
     let e = new Map;
@@ -102,8 +102,8 @@ function p(e) {
       }), n
     }, {}), [n]),
     _ = (0, i.e7)([u.Z], () => u.Z.getGuild(e)),
-    m = null != _ && !_.features.has(g.GuildFeatures.COMMUNITY) && _.features.has(g.GuildFeatures.INTERNAL_EMPLOYEE_ONLY);
-  if (null != n && null != E && m)
+    Z = null != _ && !_.features.has(g.GuildFeatures.COMMUNITY) && _.features.has(g.GuildFeatures.INTERNAL_EMPLOYEE_ONLY);
+  if (null != n && null != E && Z)
     for (let e = 0; e < n.length; e++) {
       let i = n[e],
         r = l[i.id],
@@ -142,7 +142,7 @@ function I(e) {
   l.useEffect(() => {
     let e = setInterval(() => {
       n(Date.now())
-    }, m);
+    }, Z);
     return () => clearInterval(e)
   }, []);
   let r = (0, i.e7)([s.ZP], () => null == e ? [] : s.ZP.getGuildScheduledEventsByIndex(s.bN.CHANNEL_EVENT_UPCOMING(e)), [e, t]);

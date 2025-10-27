@@ -67,7 +67,7 @@ function v(e) {
 }
 class I extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk314897.default), m = new Set(Chunk433517.K.get(h))
+    this.waitFor(Chunk314897.default, Chunk592125.Z, Chunk496675.Z, Chunk594174.default), m = new Set(Chunk433517.K.get(h))
   }
   shouldShowBump(e) {
     return g.has(e)

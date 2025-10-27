@@ -393,7 +393,7 @@ eO.Header = eE, eO.Body = e => {
       ref: u,
       onContextMenu: e => c(e, r),
       children: [(0, i.jsx)(f.P3F, {
-        onClick: () => (0, z.X)(n.id),
+        onClick: () => (0, Y.X)(n.id),
         "aria-hidden": true,
         tabIndex: false,
         children: (0, i.jsxs)("div", {
@@ -422,7 +422,7 @@ eO.Header = eE, eO.Body = e => {
         })
       }), (0, i.jsx)(f.P3F, {
         onClick: () => {
-          h.default.selectVoiceChannel(r.id), (0, Y.Kh)(r.id)
+          h.default.selectVoiceChannel(r.id), (0, z.Kh)(r.id)
         },
         focusProps: {
           ringTarget: u

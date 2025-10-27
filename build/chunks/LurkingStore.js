@@ -119,7 +119,7 @@ function S() {
 }
 class A extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk430824.Z, Chunk594174.default)
+    this.waitFor(Chunk271383.ZP, Chunk430824.Z, Chunk594174.default)
   }
   lurkingGuildIds() {
     return f

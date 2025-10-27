@@ -190,7 +190,7 @@ function P(e) {
 }
 class D extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.syncWith([Chunk885110.Z], N), this.waitFor(Chunk885110.Z, Chunk699516.Z)
+    this.syncWith([Chunk885110.Z], N), this.waitFor(Chunk314897.default, Chunk699516.Z, Chunk885110.Z)
   }
   getParty(e) {
     return null != e && h.has(e) ? h.get(e) : null

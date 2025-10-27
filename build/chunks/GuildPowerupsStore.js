@@ -159,7 +159,7 @@ function A() {
 }
 class C extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    null != e && (h = e)
+    this.waitFor(o.Z), null != e && (h = e)
   }
   getState() {
     return h

@@ -24,7 +24,7 @@ function f() {
 }
 class h extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    null != e && Array.isArray(e.sessionStartsWithDND) && (d = e.sessionStartsWithDND)
+    this.waitFor(s.Z), null != e && Array.isArray(e.sessionStartsWithDND) && (d = e.sessionStartsWithDND)
   }
   showNagBar() {
     return p

@@ -184,7 +184,7 @@ function z(e) {
 }
 class q extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk581883.Z), Y(Chunk581883.Z.settings)
+    this.waitFor(Chunk581883.Z, Chunk594174.default), Y(Chunk581883.Z.settings)
   }
   getOverlaySerializedState() {
     return {
@@ -233,6 +233,9 @@ class q extends(r = Chunk442837.ZP.Store) {
   }
   getFavorites() {
     return A
+  }
+  getAllTopSoundsForGuilds() {
+    return y
   }
   isLocalSoundboardMuted(e) {
     return v.has(e)

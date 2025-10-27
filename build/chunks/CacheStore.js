@@ -304,7 +304,7 @@ function en(e) {
 }
 class er extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    L || Chunk38618.Z.getSocket().dispatcher.unpauseDispatchQueue()
+    this.waitFor(Chunk314897.default, Chunk38618.Z, Chunk944486.Z, Chunk914010.Z), L || Chunk38618.Z.getSocket().dispatcher.unpauseDispatchQueue()
   }
   hasCache() {
     return !L || j

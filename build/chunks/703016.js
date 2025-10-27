@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 703016, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => z
+  Z: () => Y
 }), require("./704826.js"), require("./35282.js"), require("./290780.js");
 var Chunk913527 = require("./913527.js"),
   i = require.n(Chunk913527),
@@ -147,11 +147,11 @@ function F(e) {
   return null != r && t === r.messageId && n === r.channelId && ((0, T.NB)(), true)
 }
 
-function Y() {
+function z() {
   Chunk131951.Z.isSelfDeaf() && Chunk419363.M9()
 }
-let z = {
+let Y = {
   init() {
-    Chunk570140.Z.subscribe("SPEAK_TEXT", G), Chunk570140.Z.subscribe("SPEAK_MESSAGE", H), Chunk570140.Z.subscribe("STOP_SPEAKING", B), Chunk570140.Z.subscribe("MESSAGE_CREATE", V), Chunk570140.Z.subscribe("MESSAGE_DELETE", F), Chunk570140.Z.subscribe("AUDIO_TOGGLE_SELF_DEAF", Y), Chunk570140.Z.subscribe("USER_SETTINGS_PROTO_UPDATE", M), (0, Chunk241601.Ql)(M)
+    Chunk570140.Z.subscribe("SPEAK_TEXT", G), Chunk570140.Z.subscribe("SPEAK_MESSAGE", H), Chunk570140.Z.subscribe("STOP_SPEAKING", B), Chunk570140.Z.subscribe("MESSAGE_CREATE", V), Chunk570140.Z.subscribe("MESSAGE_DELETE", F), Chunk570140.Z.subscribe("AUDIO_TOGGLE_SELF_DEAF", z), Chunk570140.Z.subscribe("USER_SETTINGS_PROTO_UPDATE", M), (0, Chunk241601.Ql)(M)
   }
 }

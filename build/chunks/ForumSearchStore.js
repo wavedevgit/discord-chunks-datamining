@@ -142,6 +142,9 @@ function O() {
   d = {}
 }
 class v extends(r = Chunk442837.ZP.Store) {
+  initialize() {
+    this.waitFor(Chunk592125.Z)
+  }
   getSearchQuery(e) {
     let t = d[e];
     return null == t ? true : t.query

@@ -99,7 +99,7 @@ function v(e) {
 }
 class I extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(s.Z, l.Z), this.removeChangeListener(p), this.addChangeListener(p), f = null != e ? e : {}
+    this.waitFor(s.Z, l.Z, c.ZP), this.removeChangeListener(p), this.addChangeListener(p), f = null != e ? e : {}
   }
   getState() {
     return f

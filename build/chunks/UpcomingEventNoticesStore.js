@@ -42,7 +42,7 @@ function N(e) {
 }
 class g extends(l = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    if (null != e) {
+    if (this.waitFor(u.default, a.ZP), null != e) {
       var t, n;
       E = null != (t = e.upcomingEventDismissals) ? t : {}, f = null != (n = e.upcomingEventSeenTimestamps) ? n : {}
     }

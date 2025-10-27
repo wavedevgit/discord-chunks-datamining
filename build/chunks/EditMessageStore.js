@@ -97,6 +97,9 @@ function b(e) {
   (null == (t = p[n]) ? true : t.messageId) === r && (delete p[n], delete h[n])
 }
 class y extends(r = Chunk442837.ZP.Store) {
+  initialize() {
+    this.waitFor(Chunk375954.Z)
+  }
   isEditing(e, t) {
     var n;
     return (null == (n = p[e]) ? true : n.messageId) === t

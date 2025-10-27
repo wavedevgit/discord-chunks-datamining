@@ -241,7 +241,7 @@ function Q(e, t, n, r) {
 }
 class J extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk594174.default, Chunk430824.Z, Chunk592125.Z, Chunk271383.ZP, Chunk569471.Z, Chunk427679.Z, Chunk160404.Z)
+    this.waitFor(Chunk592125.Z, Chunk271383.ZP, Chunk430824.Z, Chunk160404.Z, Chunk569471.Z, Chunk41776.Z, Chunk427679.Z, Chunk594174.default)
   }
   getChannelPermissions(e) {
     return p.Ec.has(e.type) ? w(e.id) : L(e.id)

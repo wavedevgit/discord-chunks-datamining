@@ -176,6 +176,9 @@ function G(e, t) {
   return null
 }
 class B extends(r = Chunk442837.ZP.Store) {
+  initialize() {
+    this.waitFor(Chunk314897.default)
+  }
   hasFetchedSubscriptions() {
     return null != h
   }

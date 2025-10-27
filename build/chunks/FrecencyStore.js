@@ -113,7 +113,7 @@ let R = {
 };
 class P extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(_.Z, f.Z), null != e && (e.pendingUsages = e.pendingUsages.filter(e => null != e && p.Xyh.test(e.key)), R = e), this.syncWith([c.Z], N)
+    this.waitFor(u.Z, d.Z, f.Z, _.Z, c.Z), null != e && (e.pendingUsages = e.pendingUsages.filter(e => null != e && p.Xyh.test(e.key)), R = e), this.syncWith([c.Z], N)
   }
   getState() {
     return R

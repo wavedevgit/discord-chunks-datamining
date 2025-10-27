@@ -91,7 +91,7 @@ function A() {
 class C extends(r = Chunk442837.ZP.Store) {
   initialize() {
     var e;
-    this.waitFor(Chunk594190.ZP, Chunk55563.Z, Chunk580130.Z), v = null != (e = Chunk433517.K.get(b)) ? module : v
+    this.waitFor(Chunk812206.Z, Chunk580130.Z, Chunk594190.ZP, Chunk55563.Z, Chunk594174.default), v = null != (e = Chunk433517.K.get(b)) ? module : v
   }
   getDetectedOffPlatformPremiumPerks() {
     return a().values(y)

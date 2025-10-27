@@ -1,7 +1,7 @@
 /** Chunk was on 47840 **/
 /** chunk id: 62764, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => F
+  Z: () => V
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -43,7 +43,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk127947 = require("./127947.js"),
   Chunk577650 = require("./577650.js");
 
-function V(e) {
+function F(e) {
   let {
     channel: t
   } = e, l = t.isArchivedThread(), a = (0, j.P0)(t), [o, c] = r.useState(false), d = () => {
@@ -79,7 +79,7 @@ function V(e) {
   }) : null
 }
 
-function F(e) {
+function V(e) {
   let {
     postId: t,
     isFirstMessage: n,
@@ -88,7 +88,7 @@ function F(e) {
   } = e, {
     ref: O,
     width: j
-  } = (0, h.ZP)(), [S, k] = r.useState(3), [F, G] = r.useState(!n), [z, W] = (0, f.Z)(false, 2e3), q = (0, o.e7)([T.Z], () => T.Z.getChannel(t), [t]), {
+  } = (0, h.ZP)(), [S, k] = r.useState(3), [V, G] = r.useState(!n), [z, W] = (0, f.Z)(false, 2e3), q = (0, o.e7)([T.Z], () => T.Z.getChannel(t), [t]), {
     firstMessage: Y
   } = (0, M.cl)(q), K = (0, o.e7)([I.Z], () => I.Z.hasJoined(t)), {
     disableReactionUpdates: X,
@@ -131,7 +131,7 @@ function F(e) {
   return (0, i.jsxs)(i.Fragment, {
     children: [(0, i.jsxs)("div", {
       className: a()(U.container, {
-        [U.header]: F
+        [U.header]: V
       }),
       ref: O,
       children: [et ? (0, i.jsx)("div", {
@@ -187,7 +187,7 @@ function F(e) {
         })]
       }), (0, i.jsxs)("div", {
         className: U.buttons,
-        children: [et ? (0, i.jsx)(V, {
+        children: [et ? (0, i.jsx)(F, {
           channel: q
         }) : (0, i.jsx)(c.u, {
           text: D.intl.string(D.t.F7oeDv),

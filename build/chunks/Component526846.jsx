@@ -151,7 +151,7 @@ let k = Chunk647438.forwardRef(function(e, t) {
     location: "ActivitiesMiniShelf"
   }, {
     autoTrackExposure: true
-  }), V = r.useCallback(() => {
+  }), F = r.useCallback(() => {
     (0, C.Z)({
       context: null != l ? {
         type: "channel",
@@ -162,7 +162,7 @@ let k = Chunk647438.forwardRef(function(e, t) {
       openInPopout: U,
       analyticsLocation: k
     }), u(), g()
-  }, [l, k, g, u, U]), F = r.useCallback(e => {
+  }, [l, k, g, u, U]), V = r.useCallback(e => {
     c(), S.default.track(A.rMx.ACTIVITIES_MINI_SHELF_HOVERED, {
       channel_id: l.id,
       guild_id: l.getGuildId()
@@ -185,7 +185,7 @@ let k = Chunk647438.forwardRef(function(e, t) {
           })
         }), (0, i.jsxs)("div", {
           className: M.container,
-          onMouseEnter: F,
+          onMouseEnter: V,
           onMouseLeave: u,
           children: [(0, i.jsxs)("div", {
             className: M.titleContainer,
@@ -201,7 +201,7 @@ let k = Chunk647438.forwardRef(function(e, t) {
               })]
             }), (0, i.jsxs)(p.P3F, {
               className: M.titleRight,
-              onClick: V,
+              onClick: F,
               children: [(0, i.jsx)(p.Text, {
                 variant: "eyebrow",
                 children: w.intl.string(w.t["K8+z4S"])

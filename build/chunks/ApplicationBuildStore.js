@@ -185,7 +185,7 @@ function W(e) {
 }
 class K extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.syncWith([Chunk283595.Z], x), this.waitFor(Chunk417363.Z, Chunk283595.Z, Chunk812206.Z, Chunk581883.Z)
+    this.syncWith([Chunk283595.Z], x), this.waitFor(Chunk812206.Z, Chunk417363.Z, Chunk391690.Z, Chunk283595.Z, Chunk581883.Z)
   }
   getTargetBuildId(e, t) {
     return null == I[t] ? null : I[t].id

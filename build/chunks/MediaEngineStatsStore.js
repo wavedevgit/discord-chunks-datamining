@@ -122,6 +122,9 @@ function I(e, t) {
   return null == n || n.length <= t ? null : n[n.length - t - 1]
 }
 class T extends(r = Chunk442837.ZP.Store) {
+  initialize() {
+    this.waitFor(Chunk314897.default, Chunk959457.Z)
+  }
   getConnectionStats(e) {
     return I(e, 0)
   }

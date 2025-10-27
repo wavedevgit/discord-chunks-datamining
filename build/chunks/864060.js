@@ -146,7 +146,7 @@ function F(e, t, n) {
       e.isManaged() && n.bot && s === (0, r.F6)(e, v.default, T.Z) || (s = G(s, e))
   }
   let f = t.content;
-  if ((0, g.Z)(t) && null == (f = A.Z.stringify(t, e))) throw new a.Z("NotificationTextUtils").warn("SystemMessageUtils.stringify(...) could not convert", {
+  if ((0, g.Z)(t) && null == (f = Z.Z.stringify(t, e))) throw new a.Z("NotificationTextUtils").warn("SystemMessageUtils.stringify(...) could not convert", {
     message: t
   }), Error("failed to stringify system message");
   let h = "sticker_items" in t ? t.sticker_items : "stickerItems" in t ? t.stickerItems : t.stickers,
@@ -168,7 +168,7 @@ function F(e, t, n) {
     stickerName: h[0].name
   });
   else if (t.type === R.uaV.PREMIUM_REFERRAL) l = w.intl.formatToPlainString(w.t.lieTqU, {
-    username: Z.ZP.getName(n)
+    username: A.ZP.getName(n)
   });
   else if (null != t.poll) l = w.intl.formatToPlainString(w.t.ImizdM, {
     question: t.poll.question.text

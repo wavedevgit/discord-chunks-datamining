@@ -35,6 +35,9 @@ function g(e) {
   }
 }
 class m extends(i = Chunk442837.ZP.Store) {
+  initialize() {
+    this.waitFor(Chunk999382.Z)
+  }
   getCurrentPage() {
     return d
   }

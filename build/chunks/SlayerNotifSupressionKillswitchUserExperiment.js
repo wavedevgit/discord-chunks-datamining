@@ -24,6 +24,9 @@ let u = {},
     }]
   });
 class d extends(i = Chunk442837.ZP.Store) {
+  initialize() {
+    this.waitFor(Chunk314897.default)
+  }
   areSlayerNotificationsSuppressed() {
     if (c.getCurrentConfig({
         location: "Store"

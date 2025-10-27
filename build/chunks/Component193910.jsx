@@ -73,9 +73,9 @@ function M(e) {
     newestAnalyticsLocation: B
   } = (0, d.ZP)(), H = (0, g.Dt)({
     channel: t
-  }), V = (0, a.e7)([C.Z], () => C.Z.isInProgress());
+  }), F = (0, a.e7)([C.Z], () => C.Z.isInProgress());
 
-  function F() {
+  function V() {
     (0, y.R6)(t, true, "Plus Button")
   }
 
@@ -261,7 +261,7 @@ function M(e) {
           return (0, i.jsx)(s.sNh, {
             id: "THREAD",
             label: r,
-            action: F
+            action: V
           }, "THREAD");
         case S.r.SLASH_COMMAND:
           return (0, i.jsx)(s.sNh, {
@@ -290,11 +290,11 @@ function M(e) {
             id: "summarize_thread",
             label: r,
             action: () => b.Z.summarizeThread(t),
-            icon: V ? (0, i.jsx)(s.$jN, {
+            icon: F ? (0, i.jsx)(s.$jN, {
               type: s.RAz.PULSING_ELLIPSIS
             }) : null,
-            disabled: V,
-            children: V ? null : (0, i.jsxs)(i.Fragment, {
+            disabled: F,
+            children: F ? null : (0, i.jsxs)(i.Fragment, {
               children: [(0, i.jsx)(s.sNh, {
                 id: "summarize_thread_for_everyone",
                 label: T.intl.string(T.t.eCzSdd),

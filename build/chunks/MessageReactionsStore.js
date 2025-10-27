@@ -60,6 +60,9 @@ function m(e) {
   n.forEach(e => a.users.set(e.id, new l.Z(e)))
 }
 class g extends(r = Chunk442837.ZP.Store) {
+  initialize() {
+    this.waitFor(Chunk592125.Z, Chunk41776.Z, Chunk594174.default)
+  }
   getReactions(e, t, n, r, i) {
     let a = _.ensure(t, n, i);
     if (!a.fetched) {

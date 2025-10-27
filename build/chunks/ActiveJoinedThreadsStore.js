@@ -341,7 +341,7 @@ let ei = {},
   el = {};
 class ec extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk344185.Z, Chunk592125.Z, Chunk569471.Z, Chunk306680.ZP), this.syncWith([Chunk944486.Z], q)
+    this.waitFor(Chunk344185.Z, Chunk592125.Z, Chunk430824.Z, Chunk569471.Z, Chunk306680.ZP, Chunk944486.Z), this.syncWith([Chunk944486.Z], q)
   }
   hasActiveJoinedUnreadThreads(e, t) {
     return e in T && t in T[e]

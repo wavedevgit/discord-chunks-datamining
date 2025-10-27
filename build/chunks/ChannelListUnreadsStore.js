@@ -163,7 +163,7 @@ function M(e) {
 }
 class k extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk734307.Z, Chunk306680.ZP, Chunk9156.ZP, Chunk569471.Z, Chunk938475.ZP, Chunk914010.Z, Chunk430824.Z)
+    this.waitFor(Chunk734307.Z, Chunk592125.Z, Chunk430824.Z, Chunk569471.Z, Chunk306680.ZP, Chunk914010.Z, Chunk938475.ZP, Chunk565799.Z, Chunk9156.ZP)
   }
   getUnreadStateForGuildId(e) {
     var t;

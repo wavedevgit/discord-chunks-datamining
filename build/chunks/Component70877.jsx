@@ -34,13 +34,13 @@ function N(t, e, n, r) {
     T = (0, a.e7)([v.ZP], () => v.ZP.getGuildScheduledEvent(t), [t]),
     x = (0, a.e7)([f.Z], () => f.Z.getGuild(e), [e]);
   if (S || null == D || null == T) return null;
-  w = T.entity_type === y.WX.EXTERNAL ? T.entity_metadata.location : null != n && null != x ? P.intl.formatToPlainString(P.t["2t8L04"], {
+  w = T.entity_type === h.WX.EXTERNAL ? T.entity_metadata.location : null != n && null != x ? P.intl.formatToPlainString(P.t["2t8L04"], {
     channelName: n.name,
     guildName: x.name
   }) : P.intl.string(P.t.VSgOVg);
   let I = o()(T.scheduled_start_time),
     C = null != T.scheduled_end_time ? o()(T.scheduled_end_time) : I,
-    G = null != T.description && "" !== T.description ? g.ZP.unparse(T.description, null != (u = null == n ? true : n.id) ? u : h.lds, true) : "",
+    G = null != T.description && "" !== T.description ? g.ZP.unparse(T.description, null != (u = null == n ? true : n.id) ? u : y.lds, true) : "",
     L = (0, p.KV)(T.recurrence_rule),
     U = null != L ? (0, Z.Ho)(L) : null,
     {

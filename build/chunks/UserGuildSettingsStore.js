@@ -353,7 +353,7 @@ function e_() {
 }
 class ep extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    if (this.waitFor(m.default, h.Z, c.Z, u.Z), null != e) {
+    if (this.waitFor(p.Z, h.Z, c.Z, u.Z, m.default), null != e) {
       var t, n;
       C = null != (t = e.useNewNotifications) && t, "userGuildSettings" in e && (S = e.userGuildSettings, M = a().mapValues(null != (n = e.optedInChannelsByGuild) ? n : {}, e => new Set(e)), a().forEach(S, (e, t) => {
         x[t] = ed(e)

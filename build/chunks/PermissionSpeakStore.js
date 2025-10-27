@@ -47,7 +47,7 @@ function b(e) {
 }
 class y extends(a = Chunk442837.ZP.Store) {
   initialize() {
-    h = Chunk433517.K.get(f) || h
+    this.waitFor(Chunk592125.Z, Chunk430824.Z), h = Chunk433517.K.get(f) || h
   }
   isAFKChannel() {
     let e = Chunk592125.Z.getChannel(i);

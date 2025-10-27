@@ -23,7 +23,7 @@ class d extends(r = Chunk442837.ZP.PersistedStore) {
     return u
   }
   initialize(e) {
-    null != e && (u = e)
+    this.waitFor(a.Z, o.Z), null != e && (u = e)
   }
   getNotificationStateForGuild(e) {
     return u[e]

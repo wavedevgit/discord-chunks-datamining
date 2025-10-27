@@ -88,7 +88,7 @@ function v(e) {
 }
 class I extends(o = Chunk442837.ZP.Store) {
   initialize() {
-    Chunk358085.isPlatformEmbedded && Chunk209492.S(), r = {}, i = new Set, a = []
+    this.waitFor(Chunk283595.Z, Chunk594190.ZP), Chunk358085.isPlatformEmbedded && Chunk209492.S(), r = {}, i = new Set, a = []
   }
   getState(e, t) {
     return r[(0, f.Tu)(e, t)]

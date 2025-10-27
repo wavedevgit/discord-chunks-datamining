@@ -66,7 +66,7 @@ function O() {
 }
 class I extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk729303.Z, Chunk651941.Z, Chunk19780.Z, Chunk959457.Z)
+    this.waitFor(Chunk314897.default, Chunk19780.Z, Chunk959457.Z, Chunk729303.Z, Chunk651941.Z)
   }
   isCallVerified() {
     return b

@@ -590,7 +590,7 @@ class e9 extends Chunk647438.PureComponent {
     }), e2(this, "handleSetValue", e => {
       var t, n;
       let i = null == (t = this.editorRef) ? true : t.getSlateEditor();
-      null != i && (F.Q.select(i, []), i.insertText(e), null == (n = this.editorRef) || n.focus())
+      null != i && (V.Q.select(i, []), i.insertText(e), null == (n = this.editorRef) || n.focus())
     }), e2(this, "renderAttachButton", (e, t) => (0, i.jsx)(H.Z, {
       className: t,
       channel: this.props.channel,
@@ -710,7 +710,7 @@ class te extends Chunk647438.PureComponent {
         guildId: null == Chunk533379 ? true : Chunk533379.guild_id,
         location: "ChannelChat"
       }),
-      V = Chunk974251 && null != Chunk827498 && null != Chunk533379 && null != Chunk533379.guild_id;
+      F = Chunk974251 && null != Chunk827498 && null != Chunk533379 && null != Chunk533379.guild_id;
     return (0, Chunk951288.jsx)(Chunk410575.Z, {
       page: (0, Chunk934415.mE)(this.props.channel),
       children: (0, Chunk951288.jsx)(Chunk549006.sW, {
@@ -882,7 +882,7 @@ class te extends Chunk647438.PureComponent {
         entryPointCommandButtonRef: t,
         chatInputType: n
       } = this.props;
-      return (0, i.jsx)(eF.Z, {
+      return (0, i.jsx)(eV.Z, {
         channel: e,
         type: n,
         animateRef: this.appIconAnimateRef,
@@ -919,7 +919,7 @@ let tt = Chunk647438.memo(function(e) {
   } = e, {
     placeholder: o,
     accessibilityLabel: s
-  } = (0, eV.Z)({
+  } = (0, eF.Z)({
     channel: t
   }), c = (0, ed.S)(eN.default.getCurrentUser(), t), [u] = (0, K.AB)(null == n ? true : n.id), h = (0, W.Ux)(null == n ? true : n.id), f = (0, d.e7)([eN.default], () => eN.default.getCurrentUser()), m = (0, d.e7)([eS.ZP], () => {
     var e, t, i;
@@ -954,9 +954,9 @@ let tt = Chunk647438.memo(function(e) {
     U = (0, d.e7)([eO.Z], () => eO.Z.getChannel(k)),
     B = (0, d.e7)([eN.default], () => t.type !== eJ.d4z.DM ? null : eN.default.getUser(t.getRecipientId())),
     H = (0, d.e7)([es.ZP, ev.default], () => es.ZP.getUserCombo(ev.default.getId(), t.id)),
-    V = (0, b.iD)(t),
-    F = (0, b.d7)(t),
-    z = V.length > 0 || t.rateLimitPerUser > 0 || null != H || null != F,
+    F = (0, b.iD)(t),
+    V = (0, b.d7)(t),
+    z = F.length > 0 || t.rateLimitPerUser > 0 || null != H || null != V,
     {
       showLinkedLobbyApplicationLoadingIndicator: q
     } = (0, eH.Z)(t.linkedLobby),

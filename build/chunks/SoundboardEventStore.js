@@ -2,7 +2,7 @@
 /** chunk id: 178106, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => k
+  Z: () => j
 }), require("./539854.js"), require("./388685.js");
 var r, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -16,10 +16,11 @@ var r, Chunk392711 = require("./392711.js"),
   Chunk164878 = require("./164878.js"),
   Chunk763296 = require("./763296.js"),
   Chunk697426 = require("./697426.js"),
+  Chunk771784 = require("./771784.js"),
   Chunk710111 = require("./710111.js"),
   Chunk526761 = require("./526761.js");
 
-function E(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -28,20 +29,20 @@ function E(e, t, n) {
   }) : e[t] = n, e
 }
 
-function b(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      E(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
 }
 
-function y(e, t) {
+function O(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -52,122 +53,119 @@ function y(e, t) {
   return n
 }
 
-function O(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : y(Object(t)).forEach(function(n) {
+function v(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : O(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let v = [],
-  I = new(s())({
+let I = [],
+  T = new(s())({
     max: Chunk710111.zb
   }),
-  T = new Chunk704907.Z({
+  S = new Chunk704907.Z({
     computeBonus: () => 100,
     lookupKey: e => p.Z.getSoundById(e),
     afterCompute: () => {},
     numFrequentlyItems: Chunk710111.O6
   });
 
-function S(e) {
+function A(e) {
   let {
     sound: t,
     trigger: n
   } = e;
-  if (!x()) return;
+  if (!M()) return;
   let r = t.soundId.toString();
-  n === h.YQ.SOUNDBOARD && N(r)
+  n === h.YQ.SOUNDBOARD && R(r)
 }
 
-function A(e) {
+function C(e) {
   var t;
   let {
     soundId: n,
     userId: r
   } = e;
-  if (!L()) return;
+  if (!x()) return;
   let i = n.toString();
-  r !== (null == (t = f.default.getCurrentUser()) ? true : t.id) && R(i) && C(i)
-}
-
-function C(e) {
-  I.set(e, e)
+  r !== (null == (t = f.default.getCurrentUser()) ? true : t.id) && P(i) && N(i)
 }
 
 function N(e) {
-  T.track(e), v.push({
-    key: e,
-    timestamp: Date.now()
-  }), T.compute()
+  T.set(e, e)
 }
 
 function R(e) {
+  S.track(e), I.push({
+    key: e,
+    timestamp: Date.now()
+  }), S.compute()
+}
+
+function P(e) {
   for (let t of p.Z.getSounds().values())
     if (null != t.find(t => t.soundId.toString() === e)) returntrue;
   returnfalse
 }
 
-function P(e) {
-  return a().mapValues(e, e => O(b({}, e), {
+function D(e) {
+  return a().mapValues(e, e => v(y({}, e), {
     recentUses: e.recentUses.map(Number).filter(e => e > 0)
   }))
 }
 
-function D() {
+function w() {
   var e;
-  if (!x()) return;
+  if (!M()) return;
   let t = null == (e = Chunk581883.Z.frecencyWithoutFetchingLatest.playedSoundFrecency) ? true : module.playedSounds;
-  T.overwriteHistory(P(null != exports ? exports : {}), v)
+  S.overwriteHistory(D(null != exports ? exports : {}), I)
 }
 
-function w(e) {
+function L(e) {
   let {
     settings: {
       type: t
     },
     wasSaved: n
   } = e;
-  x() && t === g.yP.FRECENCY_AND_FAVORITES_SETTINGS && n && (v = [])
-}
-
-function L() {
-  return (0, Chunk164878.v)({
-    location: "soundboard_event_store",
-    autoTrackExposure: false
-  }).canSeeRecentlyHeard
+  M() && t === E.yP.FRECENCY_AND_FAVORITES_SETTINGS && n && (I = [])
 }
 
 function x() {
   return (0, Chunk164878.v)({
     location: "soundboard_event_store",
     autoTrackExposure: false
-  }).canSeeFrequentlyPlayed
+  }).canSeeRecentlyHeard
 }
-class M extends(r = Chunk442837.ZP.PersistedStore) {
+
+function M() {
+  return (0, Chunk771784.Lq)("soundboard_event_store")
+}
+class k extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(f.default, p.Z), (null == e ? true : e.recentlyHeardCache) != null && I.load(e.recentlyHeardCache), (null == e ? true : e.playedEventsPendingFlush) != null && (v = e.playedEventsPendingFlush), this.syncWith([d.Z], D)
+    this.waitFor(p.Z, d.Z, f.default), (null == e ? true : e.recentlyHeardCache) != null && T.load(e.recentlyHeardCache), (null == e ? true : e.playedEventsPendingFlush) != null && (I = e.playedEventsPendingFlush), this.syncWith([d.Z], w)
   }
   getState() {
     return {
-      recentlyHeardCache: I.dump(),
-      playedEventsPendingFlush: v
+      recentlyHeardCache: T.dump(),
+      playedEventsPendingFlush: I
     }
   }
   hasPendingUsage() {
-    return v.length > 0
+    return I.length > 0
   }
   get playedSoundHistory() {
-    return T.usageHistory
+    return S.usageHistory
   }
   get recentlyHeardSoundIds() {
-    return I.values()
+    return T.values()
   }
   get frecentlyPlayedSounds() {
-    return T.frequently
+    return S.frequently
   }
 }
-E(M, "displayName", "SoundboardEventStore"), E(M, "persistKey", "SoundboardEventStore");
-let k = new M(Chunk570140.Z, {
-  GUILD_SOUNDBOARD_SOUND_PLAY_LOCALLY: S,
-  GUILD_SOUNDBOARD_SOUND_PLAY_START: A,
-  USER_SETTINGS_PROTO_UPDATE: w
+b(k, "displayName", "SoundboardEventStore"), b(k, "persistKey", "SoundboardEventStore");
+let j = new k(Chunk570140.Z, {
+  GUILD_SOUNDBOARD_SOUND_PLAY_LOCALLY: A,
+  GUILD_SOUNDBOARD_SOUND_PLAY_START: C,
+  USER_SETTINGS_PROTO_UPDATE: L
 })

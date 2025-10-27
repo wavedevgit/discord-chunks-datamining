@@ -87,7 +87,7 @@ function j(e) {
   let V = C.MI.NO_CHAT;
   if (null == n) return null;
   let F = (null != A ? A : y.$Y6) + Z,
-    Y = (0, I.ro)(t);
+    z = (0, I.ro)(t);
   return (0, r.jsx)(u.f6W, {
     theme: y.BRd.DARK,
     children: e => (0, r.jsxs)("div", {
@@ -111,7 +111,7 @@ function j(e) {
           ref: L,
           children: (0, r.jsx)(O.Z, {
             className: T.iframe,
-            embedId: Y
+            embedId: z
           })
         })
       }), (0, r.jsxs)("div", {

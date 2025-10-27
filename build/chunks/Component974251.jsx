@@ -1,7 +1,7 @@
 /** Chunk was on 47840 **/
 /** chunk id: 974251, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => F
+  Z: () => V
 }), require("./388685.js"), require("./415506.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -61,7 +61,7 @@ function H(e) {
   return e
 }
 
-function V(e, t) {
+function F(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -73,10 +73,10 @@ function V(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let F = Chunk647438.memo(function(e) {
+let V = Chunk647438.memo(function(e) {
   var t, l;
   let {
-    className: F,
+    className: V,
     channel: G,
     draftType: z,
     editorTextContent: W,
@@ -97,7 +97,7 @@ let F = Chunk647438.memo(function(e) {
       let {
         default: e
       } = await n.e("57478").then(n.bind(n, 542055));
-      return t => (0, i.jsx)(e, V(H({}, t), {
+      return t => (0, i.jsx)(e, F(H({}, t), {
         channelId: G.id
       }))
     }, {
@@ -166,12 +166,12 @@ let F = Chunk647438.memo(function(e) {
       renderPopout: e => {
         switch (es) {
           case "recentClips":
-            return (0, i.jsx)(g.Z, V(H({}, e), {
+            return (0, i.jsx)(g.Z, F(H({}, e), {
               onOpenClips: em,
               lastClipsSession: ee
             }));
           case "attachMenu":
-            return (0, i.jsx)(M.Z, V(H({}, e), {
+            return (0, i.jsx)(M.Z, F(H({}, e), {
               onClose: () => ec(null),
               options: ej,
               channel: G,
@@ -188,9 +188,9 @@ let F = Chunk647438.memo(function(e) {
             throw Error("Invalid popout type provided")
         }
       },
-      children: e => (0, i.jsx)(w.Z, V(H({
+      children: e => (0, i.jsx)(w.Z, F(H({
         ref: J,
-        className: a()(B.attachButton, F),
+        className: a()(B.attachButton, V),
         childClassName: B.attachButtonInner,
         isActive: false,
         "aria-label": U.intl.string(U.t.d56gCa),

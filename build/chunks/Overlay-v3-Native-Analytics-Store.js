@@ -206,7 +206,7 @@ function j(e) {
 }
 class U extends(r = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk509140.Z)
+    this.waitFor(Chunk371651.default, Chunk509140.Z, Chunk594190.ZP)
   }
   getData(e) {
     return T(e)

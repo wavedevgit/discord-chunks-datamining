@@ -35,6 +35,9 @@ function _(e) {
   }
 }
 class p extends(r = Chunk442837.ZP.Store) {
+  initialize() {
+    this.waitFor(Chunk594174.default)
+  }
   shouldShowReactivateNotice() {
     let e = Chunk594174.default.getCurrentUser();
     return !(0, Chunk74538.I5)(module) && f

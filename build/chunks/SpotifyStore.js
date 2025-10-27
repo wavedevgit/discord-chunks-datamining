@@ -591,7 +591,7 @@ function eU(e, t) {
 }
 class eG extends(o = Chunk442837.ZP.Store) {
   initialize() {
-    this.waitFor(Chunk553795.Z, Chunk606304.Z), this.syncWith([Chunk158776.Z], () => eP()), (0, Chunk781518.k1)()
+    this.waitFor(Chunk314897.default, Chunk553795.Z, Chunk517100.Z, Chunk158776.Z, Chunk594190.ZP, Chunk606304.Z, Chunk979651.Z), this.syncWith([Chunk158776.Z], () => eP()), (0, Chunk781518.k1)()
   }
   hasConnectedAccount() {
     return Object.keys(ea).length > 0

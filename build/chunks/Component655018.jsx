@@ -76,8 +76,8 @@ function B(e) {
   let {
     channel: B,
     setIsHangStatusInputFocused: H,
-    setPopoutRef: V
-  } = e, F = r.useRef(null), G = (0, u.e7)([_.Z], () => _.Z.getCustomHangStatus()), z = (0, E.Z)(), W = (0, u.e7)([_.Z], () => _.Z.getFavoritedStatuses()), {
+    setPopoutRef: F
+  } = e, V = r.useRef(null), G = (0, u.e7)([_.Z], () => _.Z.getCustomHangStatus()), z = (0, E.Z)(), W = (0, u.e7)([_.Z], () => _.Z.getFavoritedStatuses()), {
     defaultStatusVariant: q,
     allowPermanentClear: Y
   } = (0, y.bN)({
@@ -95,8 +95,8 @@ function B(e) {
     var e;
     et || J !== (null != (e = null == G ? true : G.status) ? e : "") && "" !== J.trim() ? H(true) : H(false)
   }, [J, null == G ? true : G.status, $, null == G ? true : G.emoji, H, et]), r.useEffect(() => {
-    null == V || V(null == X ? true : X.current)
-  }, [X, V]);
+    null == F || F(null == X ? true : X.current)
+  }, [X, F]);
   let em = r.useCallback(e => {
       e !== ei && ((0, C.Zx)(e, true), null != $ && ee(null), "" !== J.trim() && Q(""))
     }, [ei, $, J]),
@@ -119,7 +119,7 @@ function B(e) {
           name: "\uD83D\uDCAD",
           animated: false
         }
-      }), null == (n = F.current) || n.blur(), en(false))
+      }), null == (n = V.current) || n.blur(), en(false))
     }, [J, $, eb, ea]),
     ey = r.useCallback(() => {
       var e, t;
@@ -135,7 +135,7 @@ function B(e) {
             name: null != (t = null == n ? true : n.optionallyDiverseSequence) ? t : "",
             animated: false
           }, 1 === eo.length)) break; while (null == n || (null == n ? true : n.name) == null || s()($, i));
-      null != i && (null == n ? true : n.name) != null && (ee(i), Q(n.name), en(true), null == (e = F.current) || e.focus(), b.default.track(A.rMx.HANG_STATUS_RANDOMIZER_CLICKED, (0, x.Z)(B.id)))
+      null != i && (null == n ? true : n.name) != null && (ee(i), Q(n.name), en(true), null == (e = V.current) || e.focus(), b.default.track(A.rMx.HANG_STATUS_RANDOMIZER_CLICKED, (0, x.Z)(B.id)))
     }, [eo, $, B.id]),
     e_ = r.useCallback((e, t) => {
       let n = (0, O.Z)(t);
@@ -211,7 +211,7 @@ function B(e) {
         children: [(0, i.jsxs)("div", {
           className: R.inputRow,
           children: [(0, i.jsx)(h.oil, {
-            inputRef: F,
+            inputRef: V,
             value: et || ep ? J : null != (o = null == er ? true : er.title) ? o : "",
             onBlur: ev,
             onFocus: ex,
