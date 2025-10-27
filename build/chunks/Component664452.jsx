@@ -58,7 +58,7 @@ function O(e) {
     transitionState: n,
     onClose: O,
     analyticsData: y
-  } = e, _ = (0, a.e7)([s.Z], () => s.Z.getGuild(t), [t]), C = !!(null == _ ? true : _.features.has(f.GuildFeatures.INVITES_DISABLED)), [N] = r.useState(false), [S, E] = r.useState(g.Fl), I = (0, a.e7)([m.Z], () => m.Z.getGuildIncident(t)), w = (0, u.BT)(_), P = (0, p.SG)(I) || C, T = (0, p.sN)(I), [Z, k] = r.useState(P), [A, D] = r.useState(T), [R, L] = r.useState(false), M = Z !== P || A !== T || R, U = C && !w;
+  } = e, _ = (0, a.e7)([s.Z], () => s.Z.getGuild(t), [t]), C = !!(null == _ ? true : _.features.has(f.GuildFeatures.INVITES_DISABLED)), [N] = r.useState(false), [S, E] = r.useState(g.Fl), I = (0, a.e7)([m.Z], () => m.Z.getGuildIncident(t)), P = (0, u.BT)(_), w = (0, p.SG)(I) || C, T = (0, p.sN)(I), [Z, k] = r.useState(w), [A, D] = r.useState(T), [R, L] = r.useState(false), M = Z !== w || A !== T || R, U = C && !P;
   if (null == _) return O(), null;
 
   function B() {
@@ -75,7 +75,7 @@ function O(e) {
     }, {
       text: h.intl.string(h.t["pwm/z0"]),
       onClick: () => {
-        (P || T) && !Z && !A ? ((0, d.n)(_.id, false, false), (0, o.ZDy)(() => Promise.resolve(e => (0, i.jsx)(b.default, v(j({}, e), {
+        (w || T) && !Z && !A ? ((0, d.n)(_.id, false, false), (0, o.ZDy)(() => Promise.resolve(e => (0, i.jsx)(b.default, v(j({}, e), {
           guildId: t
         }))))) : (0, d.n)(_.id, Z, A, S);
         let {

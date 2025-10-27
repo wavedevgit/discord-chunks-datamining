@@ -1,8 +1,8 @@
 /** Chunk was on 7654 **/
 /** chunk id: 462376, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  d: () => y,
-  k: () => C
+  d: () => C,
+  k: () => y
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -31,8 +31,8 @@ function E(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let C = 44;
-class y extends Chunk647438.Component {
+let y = 44;
+class C extends Chunk647438.Component {
   shouldComponentUpdate(e, t) {
     return this.state.sending !== t.sending || this.state.invited !== t.invited || this.state.hovered !== t.hovered || this.props.user !== e.user || this.props.channel !== e.channel
   }

@@ -73,8 +73,8 @@ function I(e) {
     editedWebhook: l,
     channelOptions: h,
     isExpanded: I,
-    isNew: w,
-    errors: P,
+    isNew: P,
+    errors: w,
     onToggleExpand: T
   } = e, [Z, k] = r.useState(false), [A] = r.useState(new s.V7);
   r.useEffect(() => () => A.stop(), [A]);
@@ -151,10 +151,10 @@ function I(e) {
             makeURL: e => E(n, e),
             imageClassName: C.avatarUploaderInner,
             showIcon: true
-          }), null != P.avatar && "" !== P.avatar ? (0, i.jsx)(c.Text, {
+          }), null != w.avatar && "" !== w.avatar ? (0, i.jsx)(c.Text, {
             color: "text-danger",
             variant: "text-sm/normal",
-            children: P.avatar
+            children: w.avatar
           }) : null]
         })
       }), (0, i.jsxs)(m.Z, {
@@ -172,7 +172,7 @@ function I(e) {
                 })
               },
               maxLength: 80,
-              error: P.name
+              error: w.name
             })
           }), (0, i.jsx)(m.Z.Child, {
             basis: "50%",
@@ -249,7 +249,7 @@ function I(e) {
   })), (0, i.jsx)(c.Zbd, {
     editable: true,
     id: t,
-    className: a()(C.card, w ? C.pulse : null),
+    className: a()(C.card, P ? C.pulse : null),
     children: (0, i.jsxs)(m.Z, {
       direction: m.Z.Direction.VERTICAL,
       children: [(0, i.jsx)(c.P3F, {

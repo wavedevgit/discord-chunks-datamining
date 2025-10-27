@@ -31,9 +31,9 @@ let f = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
       onCopy: s,
       disabled: r
     } = e;
-    return (0, i.jsx)(d.Z, {
+    return (0, i.jsx)(u.Z, {
       value: t,
-      hideMessage: l ? I.intl.string(I.t["6HzNgZ"]) : null,
+      hideMessage: l ? x.intl.string(x.t["6HzNgZ"]) : null,
       buttonColor: a.zx.Colors.BRAND,
       onCopy: s,
       autoFocus: n,
@@ -46,61 +46,61 @@ let f = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
       noInvitesAvailable: n,
       showFriends: r,
       onClose: a,
-      modalState: d,
+      modalState: u,
       isApplicationBypassToggleEnabled: c,
       setInviteFlags: E,
-      copyValue: C,
-      changePage: y,
+      copyValue: y,
+      changePage: C,
       inviteChannel: _,
-      source: N,
-      code: T,
-      guildScheduledEvent: b,
-      disabled: j,
-      application: A
+      source: T,
+      code: b,
+      guildScheduledEvent: N,
+      disabled: A,
+      application: Z
     } = e, {
-      maxAge: Z,
-      maxUses: M,
-      networkError: P,
-      showVanityURL: w,
+      maxAge: M,
+      maxUses: P,
+      networkError: w,
+      showVanityURL: j,
       flags: V
-    } = d, O = l.useCallback(() => {
-      g.default.track(x.rMx.COPY_INSTANT_INVITE, {
-        server: u.Z.getGuildId(),
+    } = u, O = l.useCallback(() => {
+      g.default.track(m.rMx.COPY_INSTANT_INVITE, {
+        server: d.Z.getGuildId(),
         channel: null == _ ? true : _.id,
         channel_type: null == _ ? true : _.type,
-        location: N,
-        code: T,
-        guild_scheduled_event_id: null == b ? true : b.id,
-        application_id: null == A ? true : A.id
+        location: T,
+        code: b,
+        guild_scheduled_event_id: null == N ? true : N.id,
+        application_id: null == Z ? true : Z.id
       })
-    }, [null == A ? true : A.id, _, N, T, b]);
+    }, [null == Z ? true : Z.id, _, T, b, N]);
     return (0, i.jsxs)(o.Kqy, {
       gap: 16,
       children: [(0, i.jsx)(f, {
-        value: C,
+        value: y,
         autoFocus: r,
         onCopy: O,
-        disabled: j
+        disabled: A
       }), c && (0, i.jsx)(o.rsf, {
         checked: (0, h.yE)(V, s.$.IS_APPLICATION_BYPASS),
         onChange: e => E((0, h.mB)(V, s.$.IS_APPLICATION_BYPASS, e)),
-        disabled: j,
-        label: I.intl.string(I.t["1i1bUl"]),
-        description: I.intl.string(I.t["jvd/LF"])
-      }), n || w ? null : (0, i.jsxs)(o.Text, {
+        disabled: A,
+        label: x.intl.string(x.t["1i1bUl"]),
+        description: x.intl.string(x.t["jvd/LF"])
+      }), n || j ? null : (0, i.jsxs)(o.Text, {
         variant: "text-xs/normal",
         className: S.footerText,
-        children: [(0, m.Vg)(Z, M), " ", r ? (0, i.jsx)(o.Anchor, {
-          onClick: () => y(p.RV.SETTINGS),
-          children: I.intl.string(I.t["VNe8P/"])
+        children: [(0, v.Vg)(M, P), " ", r ? (0, i.jsx)(o.Anchor, {
+          onClick: () => C(I.RV.SETTINGS),
+          children: x.intl.string(x.t["VNe8P/"])
         }) : null]
-      }), !n && r && w ? (0, i.jsxs)(o.Text, {
+      }), !n && r && j ? (0, i.jsxs)(o.Text, {
         variant: "text-xs/normal",
         className: S.footerText,
-        children: [I.intl.string(I.t["0M2U95"]), " "]
-      }) : null, null != P ? (0, i.jsx)(v.W, {
+        children: [x.intl.string(x.t["0M2U95"]), " "]
+      }) : null, null != w ? (0, i.jsx)(p.W, {
         guild: t,
-        error: P,
+        error: w,
         onClose: a
       }) : null]
     })

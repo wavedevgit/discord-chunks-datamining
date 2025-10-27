@@ -40,7 +40,7 @@ let E = (0, Chunk509613.m7)(Chunk313789.n.LOGOUT_SIDEBAR_ITEM, {
         cancelText: c.intl.string(c.t["ETE/oC"]),
         onCancel: t.onClose,
         onConfirm: () => {
-          (0, o.default)(), r.Z.logout("settings")
+          (0, a.default)(), r.Z.logout("settings")
         }
       }, t), n = n = {
         children: (0, i.jsx)(u.Text, {

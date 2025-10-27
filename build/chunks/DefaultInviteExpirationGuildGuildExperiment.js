@@ -2,7 +2,7 @@
 /** chunk id: 301873, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   WV: () => c,
-  xU: () => u,
+  xU: () => d,
   zv: () => o
 });
 var Chunk399606 = require("./399606.js"),
@@ -11,7 +11,7 @@ var Chunk399606 = require("./399606.js"),
   Chunk971130 = require("./971130.js"),
   Chunk981631 = require("./981631.js");
 let o = Chunk971130.ZP.INVITE_OPTIONS_7_DAYS.value,
-  d = (0, Chunk818083.B)({
+  u = (0, Chunk818083.B)({
     kind: "guild",
     id: "2025-08_default_invite_expiration_guild",
     label: "Default Invite Expiration Guild",
@@ -39,14 +39,14 @@ let o = Chunk971130.ZP.INVITE_OPTIONS_7_DAYS.value,
     }]
   });
 
-function u(e) {
+function d(e) {
   let {
     guildId: t,
     location: n
-  } = e, l = d.useExperiment({
+  } = e, l = u.useExperiment({
     guildId: null != t ? t : a.lds,
     location: n
-  }), u = (0, i.e7)([s.Z], () => s.Z.getGuild(t));
+  }), d = (0, i.e7)([s.Z], () => s.Z.getGuild(t));
   return null == t ? null : function(e) {
     var t;
     let {
@@ -56,13 +56,13 @@ function u(e) {
     if (null == n ? true : n.features.has(a.GuildFeatures.HUB)) return r.ZP.INVITE_OPTIONS_FOREVER.value;
     let {
       defaultMaxAge: l
-    } = null != i ? i : d.getCurrentConfig({
+    } = null != i ? i : u.getCurrentConfig({
       guildId: null != (t = null == n ? true : n.id) ? t : a.lds,
       location: "getDefaultInviteExpiration"
     });
     return null != l ? l : o
   }({
-    guild: u,
+    guild: d,
     experimentConfig: l
   })
 }
@@ -71,7 +71,7 @@ function c(e) {
   let {
     guildId: t,
     location: n
-  } = e, i = d.useExperiment({
+  } = e, i = u.useExperiment({
     guildId: null != t ? t : a.lds,
     location: n
   });

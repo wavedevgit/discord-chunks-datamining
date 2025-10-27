@@ -5,7 +5,7 @@ require.d(exports, {
   Z: () => r
 });
 let r = (0, require("./972959.js").H)(() => ({
-  currentPanel: true,
+  currentPanelKey: true,
   targetKey: true,
   showNavigationMobile: true
 }))

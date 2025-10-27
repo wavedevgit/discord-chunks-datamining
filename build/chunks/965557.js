@@ -8,17 +8,17 @@ var Chunk657707 = require("./657707.js"),
   Chunk906467 = require("./906467.js"),
   Chunk313789 = require("./313789.js"),
   Chunk287490 = require("./287490.jsx");
-let a = (0, Chunk509613.x1)(Chunk313789.n.EXPERIMENTS_PANE, {
+let o = (0, Chunk509613.x1)(Chunk313789.n.EXPERIMENTS_PANE, {
     buildLayout: () => [],
     render: Chunk287490.Z
   }),
-  o = (0, Chunk509613.wf)(Chunk313789.n.EXPERIMENTS_PANEL, {
+  a = (0, Chunk509613.wf)(Chunk313789.n.EXPERIMENTS_PANEL, {
     useTitle: () => "Experiments",
-    buildLayout: () => [a]
+    buildLayout: () => [o]
   }),
   c = (0, Chunk509613.m7)(Chunk313789.n.EXPERIMENTS_SIDEBAR_ITEM, {
     icon: Chunk657707.uOV,
     useTitle: () => "Experiments",
     usePredicate: () => Chunk906467.Z.isDeveloper,
-    buildLayout: () => [o]
+    buildLayout: () => [a]
   })

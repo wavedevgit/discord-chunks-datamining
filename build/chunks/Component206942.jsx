@@ -1,7 +1,7 @@
 /** Chunk was on 9452 **/
 /** chunk id: 206942, original params: t,e,n (module,exports,require) **/
 require.d(exports, {
-  ZP: () => A
+  ZP: () => S
 }), require("./415506.js"), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -91,11 +91,11 @@ let T = Chunk647438.createContext(true),
     useLabel: () => Chunk388032.intl.string(Chunk388032.t.CP3DC3),
     sound: "reconnect"
   }].map(t => ({
-    node: (0, a.qs)("".concat(E.n.SOUNDS_LIST_ITEM_PREFIX).concat(t.sound), {
+    node: (0, o.qs)("".concat(E.n.SOUNDS_LIST_ITEM_PREFIX).concat(t.sound), {
       useTitle: t.useLabel,
       useSubtitle: () => d.intl.format(d.t.OOiGCM, {
         onClick: () => {
-          (0, o.GN)(t.sound)
+          (0, a.GN)(t.sound)
         }
       }),
       useValue: () => {
@@ -122,13 +122,13 @@ let T = Chunk647438.createContext(true),
     useValue: () => (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.getNotifyMessagesInSelectedChannel()),
     setValue: t => r.default.setNotifyMessagesInSelectedChannel(t)
   }),
-  S = (0, Chunk509613.qs)(Chunk313789.n.DISABLE_ALL_NOTIFICATION_SOUNDS, {
+  y = (0, Chunk509613.qs)(Chunk313789.n.DISABLE_ALL_NOTIFICATION_SOUNDS, {
     useTitle: () => Chunk388032.intl.string(Chunk388032.t["2ZhCOd"]),
     useSubtitle: () => Chunk388032.intl.string(Chunk388032.t["+B0XLE"]),
     useValue: () => (0, Chunk442837.e7)([Chunk292959.Z], () => Chunk292959.Z.getDisableAllSounds()),
     setValue: t => r.default.toggleDisableAllSounds(t)
   }),
-  A = (0, Chunk509613.$l)(Chunk313789.n.NOTIFICATION_SOUNDS_LIST, {
+  S = (0, Chunk509613.$l)(Chunk313789.n.NOTIFICATION_SOUNDS_LIST, {
     collapseAfter: 4,
     useCollapsibleTitle: (t, e) => t ? d.intl.formatToPlainString(d.t["0JYT98"], {
       count: e
@@ -139,7 +139,7 @@ let T = Chunk647438.createContext(true),
       let {
         children: e
       } = t, n = l.useRef(null), u = l.useCallback((t, e) => {
-        e.stopPropagation(), e.preventDefault(), null != n.current && n.current.stop(), n.current = (0, o.GN)(t)
+        e.stopPropagation(), e.preventDefault(), null != n.current && n.current.stop(), n.current = (0, a.GN)(t)
       }, []);
       l.useEffect(() => () => {
         var t;
@@ -153,5 +153,5 @@ let T = Chunk647438.createContext(true),
         children: e
       })
     },
-    buildLayout: () => [I[0].node, O, I[1].node, S, ...I.slice(2).map(t => t.node)]
+    buildLayout: () => [I[0].node, O, I[1].node, y, ...I.slice(2).map(t => t.node)]
   })

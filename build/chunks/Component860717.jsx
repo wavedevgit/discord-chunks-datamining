@@ -199,9 +199,9 @@ function Z(e) {
         name: R(t.name)
       });
     case "TEXT":
-      return (0, r.jsx)(F, C({}, t));
-    case "TEXT_WITH_IMAGE":
       return (0, r.jsx)(U, C({}, t));
+    case "TEXT_WITH_IMAGE":
+      return (0, r.jsx)(F, C({}, t));
     case "SEPARATOR":
       return (0, r.jsx)(W, C({}, t));
     case "SOCIAL_PROOF":
@@ -283,7 +283,7 @@ function M(e) {
   })
 }
 
-function F(e) {
+function U(e) {
   let {
     content: t
   } = e, n = i.useId(), a = (0, h._)();
@@ -296,7 +296,7 @@ function F(e) {
   })
 }
 
-function U(e) {
+function F(e) {
   let {
     content: t,
     image: n,
@@ -315,7 +315,7 @@ function U(e) {
   }) : null;
   return (0, r.jsxs)("div", {
     className: T.textWithImage,
-    children: ["left" === i ? o : null, (0, r.jsx)(F, {
+    children: ["left" === i ? o : null, (0, r.jsx)(U, {
       content: t
     }), "right" === i ? o : null]
   })

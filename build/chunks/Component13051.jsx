@@ -78,30 +78,30 @@ function D(e) {
     } = e,
     [U, B] = r.useState(false),
     W = (0, p.e7)([C.Z], () => C.Z.hidePersonalInformation),
-    H = (0, p.e7)([_.Z], () => _.Z.can(w.Plq.KICK_MEMBERS, n)),
+    H = (0, p.e7)([_.Z], () => _.Z.can(P.Plq.KICK_MEMBERS, n)),
     G = r.useCallback(() => {
       B(true), M(l)
     }, [l, M]),
     F = r.useCallback(() => {
       l.syncing || (0, g.h7j)(e => {
         if (!H && l.expire_behavior === c.l.KICK) return (0, i.jsx)(g.ConfirmModal, A(k({}, e), {
-          header: P.intl.string(P.t.emx3lN),
-          confirmText: P.intl.string(P.t.BddRzS),
+          header: w.intl.string(w.t.emx3lN),
+          confirmText: w.intl.string(w.t.BddRzS),
           confirmButtonColor: m.Tt.BRAND,
           children: (0, i.jsx)(g.Text, {
             variant: "text-md/normal",
-            children: l.type === u.b.YOUTUBE ? P.intl.string(P.t.pDCiEf) : P.intl.string(P.t.sQqHFk)
+            children: l.type === u.b.YOUTUBE ? w.intl.string(w.t.pDCiEf) : w.intl.string(w.t.sQqHFk)
           })
         }));
-        let t = l.expire_behavior === c.l.REMOVE_ROLE ? P.intl.string(P.t["6kpw4i"]) : P.intl.string(P.t.fQUQIJ);
+        let t = l.expire_behavior === c.l.REMOVE_ROLE ? w.intl.string(w.t["6kpw4i"]) : w.intl.string(w.t.fQUQIJ);
         return (0, i.jsx)(g.ConfirmModal, A(k({}, e), {
-          header: P.intl.string(P.t.emx3lN),
+          header: w.intl.string(w.t.emx3lN),
           confirmText: t,
-          cancelText: P.intl.string(P.t["ETE/oC"]),
+          cancelText: w.intl.string(w.t["ETE/oC"]),
           onConfirm: () => L(l),
           children: (0, i.jsx)(g.Text, {
             variant: "text-md/normal",
-            children: l.type === u.b.YOUTUBE ? P.intl.string(P.t.anKQWU) : P.intl.string(P.t["BW/xtn"])
+            children: l.type === u.b.YOUTUBE ? w.intl.string(w.t.anKQWU) : w.intl.string(w.t["BW/xtn"])
           })
         }))
       })
@@ -110,7 +110,7 @@ function D(e) {
       v.Z.syncIntegration(n.id, l.id)
     }, [n.id, l.id]),
     z = r.useCallback(() => {
-      null != l.role_id && (v.Z.setSection(w.pNK.ROLES), v.Z.selectRole(l.role_id))
+      null != l.role_id && (v.Z.setSection(P.pNK.ROLES), v.Z.selectRole(l.role_id))
     }, [l.role_id]),
     {
       serviceName: q,
@@ -127,14 +127,14 @@ function D(e) {
       switch (l.type) {
         case u.b.YOUTUBE:
           return {
-            serviceName: P.intl.string(P.t.aS6cK4), expireBehaviorLabel: P.intl.string(P.t.A5MiqO), syncLabel: P.intl.string(P.t["7vHKVe"]), subscribersText: P.intl.formatToPlainString(P.t["7lNtce"], {
+            serviceName: w.intl.string(w.t.aS6cK4), expireBehaviorLabel: w.intl.string(w.t.A5MiqO), syncLabel: w.intl.string(w.t["7vHKVe"]), subscribersText: w.intl.formatToPlainString(w.t["7lNtce"], {
               subscribers: null != (i = l.subscriber_count) ? i : 0
             }), channelURL: a
           };
         case u.b.TWITCH:
         default:
           return {
-            serviceName: P.intl.string(P.t.q4pBG3), expireBehaviorLabel: P.intl.string(P.t["S/WCrG"]), syncLabel: P.intl.string(P.t["0jbPK4"]), subscribersText: P.intl.formatToPlainString(P.t.RdUTrl, {
+            serviceName: w.intl.string(w.t.q4pBG3), expireBehaviorLabel: w.intl.string(w.t["S/WCrG"]), syncLabel: w.intl.string(w.t["0jbPK4"]), subscribersText: w.intl.formatToPlainString(w.t.RdUTrl, {
               subscribers: null != (r = l.subscriber_count) ? r : 0
             }), channelURL: a
           }
@@ -149,14 +149,14 @@ function D(e) {
       e = null != X ? (0, i.jsx)(g.Anchor, {
         onClick: z,
         children: X.name
-      }) : P.intl.string(P.t.PoWNfe);
+      }) : w.intl.string(w.t.PoWNfe);
       let t = h.Z.get(l.type);
       return {
         roleLink: e,
-        syncDescriptionText: l.revoked && null != t ? P.intl.formatToPlainString(P.t.G16Wji, {
+        syncDescriptionText: l.revoked && null != t ? w.intl.formatToPlainString(w.t.G16Wji, {
           user: l.user,
           platformName: t.name
-        }) : P.intl.formatToPlainString(P.t.unl3AP, {
+        }) : w.intl.formatToPlainString(w.t.unl3AP, {
           datetime: s()(l.synced_at).calendar()
         })
       }
@@ -171,9 +171,9 @@ function D(e) {
       (null == o ? true : o.id) === l.id && (null == o ? true : o.enabled) === true && B(false)
     }, [o, l.id]), l.enabled && null != l.user) t = [{
     icon: g.T39,
-    text: W ? P.intl.formatToPlainString(P.t.gcdJ8J, {
+    text: W ? w.intl.formatToPlainString(w.t.gcdJ8J, {
       timestamp: E.default.extractTimestamp(l.id)
-    }) : P.intl.formatToPlainString(P.t.Nu9sat, {
+    }) : w.intl.formatToPlainString(w.t.Nu9sat, {
       user: null != l.user ? new O.Z(l.user).tag : null,
       timestamp: E.default.extractTimestamp(l.id)
     })
@@ -181,7 +181,7 @@ function D(e) {
   else {
     let e = new URL(V);
     t = [{
-      text: P.intl.format(P.t.BegylZ, {
+      text: w.intl.format(w.t.BegylZ, {
         serviceName: q,
         accountUrl: V,
         accountUrlText: e.hostname + e.pathname
@@ -211,12 +211,12 @@ function D(e) {
           size: "sm",
           disabled: true,
           icon: g.DuK,
-          "aria-label": P.intl.string(P.t["7sCN8m"])
+          "aria-label": w.intl.string(w.t["7sCN8m"])
         }) : (0, i.jsx)(g.Button, {
           variant: "primary",
           size: "sm",
           onClick: G,
-          text: P.intl.string(P.t["7sCN8m"])
+          text: w.intl.string(w.t["7sCN8m"])
         })
       })]
     }),
@@ -241,7 +241,7 @@ function D(e) {
           children: [(0, i.jsx)(g.Heading, {
             variant: "heading-md/semibold",
             className: Z.marginBottom8,
-            children: P.intl.string(P.t.eBtNBa)
+            children: w.intl.string(w.t.eBtNBa)
           }), (0, i.jsx)(g.Text, {
             className: T.syncedRole,
             color: "header-primary",
@@ -271,12 +271,12 @@ function D(e) {
               size: "sm",
               variant: "primary",
               icon: g.DuK,
-              "aria-label": P.intl.string(P.t.BkuOO6),
+              "aria-label": w.intl.string(w.t.BkuOO6),
               disabled: true
             }) : (0, i.jsx)(g.Button, {
               size: "sm",
               variant: "primary",
-              text: P.intl.string(P.t.BkuOO6),
+              text: w.intl.string(w.t.BkuOO6),
               disabled: t.revoked,
               onClick: o
             })]
@@ -308,10 +308,10 @@ function D(e) {
             value: "".concat(t.expire_behavior),
             options: [{
               value: c.l.REMOVE_ROLE.toString(),
-              label: P.intl.string(P.t["6kpw4i"])
+              label: w.intl.string(w.t["6kpw4i"])
             }, {
               value: c.l.KICK.toString(),
-              label: P.intl.string(P.t.fQUQIJ)
+              label: w.intl.string(w.t.fQUQIJ)
             }],
             isDisabled: t.syncing,
             onChange: e => r(parseInt(e))
@@ -319,13 +319,13 @@ function D(e) {
         }), (0, i.jsx)(x.Z.Child, {
           basis: "50%",
           children: (0, i.jsx)(g.q4e, {
-            label: P.intl.string(P.t.uiXMow),
-            placeholder: P.intl.string(P.t.uiXMow),
+            label: w.intl.string(w.t.uiXMow),
+            placeholder: w.intl.string(w.t.uiXMow),
             maxVisibleItems: 5,
             value: "".concat(t.expire_grace_period),
             options: Object.values(d.W).filter(Number.isInteger).map(e => ({
               value: "".concat(e),
-              label: P.intl.formatToPlainString(P.t.eGjmy5, {
+              label: w.intl.formatToPlainString(w.t.eGjmy5, {
                 days: e
               })
             })),
@@ -351,7 +351,7 @@ function D(e) {
       className: T.kickPermissionWarning,
       color: "text-danger",
       variant: "text-sm/normal",
-      children: P.intl.string(P.t.mThMlB)
+      children: w.intl.string(w.t.mThMlB)
     }), l.type === u.b.TWITCH ? function(e) {
       let {
         integration: t,
@@ -366,7 +366,7 @@ function D(e) {
             checked: !!t.enable_emoticons,
             disabled: t.syncing,
             onChange: e => r(e),
-            label: P.intl.string(P.t["7r4OKg"])
+            label: w.intl.string(w.t["7r4OKg"])
           })
         }), (0, i.jsx)(x.Z, {
           wrap: x.Z.Wrap.WRAP,
@@ -374,7 +374,7 @@ function D(e) {
           children: n.map((e, t) => (0, i.jsx)(b.u, {
             text: e.name,
             children: (0, i.jsx)("img", {
-              alt: P.intl.formatToPlainString(P.t.n6ZZn4, {
+              alt: w.intl.formatToPlainString(w.t.n6ZZn4, {
                 name: e.name
               }),
               draggable: false,
@@ -402,7 +402,7 @@ function D(e) {
       children: (0, i.jsx)(g.Button, {
         size: "sm",
         variant: "critical-secondary",
-        text: P.intl.string(P.t.M6q6eX),
+        text: w.intl.string(w.t.M6q6eX),
         onClick: F
       })
     })]

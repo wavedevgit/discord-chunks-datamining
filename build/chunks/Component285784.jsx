@@ -21,21 +21,21 @@ function u(e) {
     canInvite: u,
     isChannelPublic: _ = true,
     entityType: p,
-    onJoinClick: g,
+    onJoinClick: v,
     onRsvpClick: m,
-    onStartClick: h,
-    onInviteClick: b,
-    onEndClick: v,
-    onJoinGuildClick: f,
+    onStartClick: f,
+    onInviteClick: g,
+    onEndClick: h,
+    onJoinGuildClick: b,
     isJoined: x = false,
     channel: C
-  } = e, I = true !== g, j = function(e) {
+  } = e, I = true !== v, j = function(e) {
     let {
       onInviteClick: n,
       canInvite: t,
       isChannelPublic: i,
       channel: s
-    } = e, u = new r.V7, [_, p] = a.useState(false);
+    } = e, u = new a.V7, [_, p] = r.useState(false);
     return ((0, o.ZP)(() => () => {
       u.stop()
     }), null == n) ? null : (0, c.T)(null != t && t, null != i && i, s) ? {
@@ -55,7 +55,7 @@ function u(e) {
       "aria-label": d.intl.string(d.t.WqhZss)
     }
   }({
-    onInviteClick: b,
+    onInviteClick: g,
     canInvite: u,
     isChannelPublic: _,
     channel: C
@@ -63,7 +63,7 @@ function u(e) {
   if (null != j && k.push(j), n && p !== s.WX.EXTERNAL && k.push({
       variant: "active",
       size: "sm",
-      onClick: g,
+      onClick: v,
       text: function(e) {
         let {
           isJoined: n,
@@ -77,11 +77,11 @@ function u(e) {
         isVoiceChannel: p === s.WX.VOICE
       }),
       disabled: !I
-    }), t && null != f && k.push({
+    }), t && null != b && k.push({
       variant: "active",
       size: "sm",
       text: d.intl.string(d.t["2BP08E"]),
-      onClick: f
+      onClick: b
     }), !t && !n && null != m) {
     let e = i && !t;
     k.push({
@@ -93,15 +93,15 @@ function u(e) {
       disabled: t
     })
   }
-  return n || null == h || k.push({
+  return n || null == f || k.push({
     variant: "primary",
     size: "sm",
-    onClick: h,
+    onClick: f,
     text: d.intl.string(d.t.I0v0Qv)
-  }), n && null != v && k.push({
+  }), n && null != h && k.push({
     variant: "secondary",
     size: "sm",
-    onClick: v,
+    onClick: h,
     text: d.intl.string(d.t.qaYzPA)
   }), k
 }

@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk709054 = require("./709054.js"),
   Chunk7697 = require("./7697.js"),
@@ -18,23 +18,23 @@ function _(e) {
   let {
     guildId: n,
     recurrenceRule: t,
-    guildEventId: a,
+    guildEventId: r,
     onRecurrenceClick: _,
     hideScroller: p = false,
-    activeRecurrenceId: g
+    activeRecurrenceId: v
   } = e, {
     recurrenceStartTimes: m,
-    canViewMoreRecurrences: h,
-    updateRecurrenceStartTimes: b
-  } = (0, c.Z)(a, n, t), v = p ? "div" : l.Ttm;
+    canViewMoreRecurrences: f,
+    updateRecurrenceStartTimes: g
+  } = (0, c.Z)(r, n, t), h = p ? "div" : l.Ttm;
   return (0, i.jsxs)("div", {
     className: u.recurrences,
     children: [(0, i.jsx)(l.Heading, {
       variant: "heading-sm/medium",
       className: u.heading,
       children: d.intl.string(d.t["D/jjoa"])
-    }), (0, i.jsxs)(v, {
-      className: r()(u.scroller, {
+    }), (0, i.jsxs)(h, {
+      className: a()(u.scroller, {
         [u.showScroller]: !p
       }),
       children: [m.map(e => {
@@ -42,15 +42,15 @@ function _(e) {
         return (0, i.jsx)(s.Z, {
           recurrenceId: n,
           originalScheduledStartTime: e,
-          guildEventId: a,
+          guildEventId: r,
           onClick: _,
-          isActive: n === g
+          isActive: n === v
         }, n)
-      }), h && (0, i.jsx)("div", {
+      }), f && (0, i.jsx)("div", {
         className: u.buttonContainer,
         children: (0, i.jsx)(l.Avr, {
           onClick: e => {
-            e.stopPropagation(), b()
+            e.stopPropagation(), g()
           },
           text: d.intl.string(d.t["8O7Hpy"]),
           size: "sm"

@@ -33,22 +33,22 @@ function O(e) {
     iconWrapperClassName: S,
     details: E,
     integration: I,
-    buttonText: w,
-    buttonDisabled: P,
+    buttonText: P,
+    buttonDisabled: w,
     hasNextSection: T,
     onButtonClick: Z,
     guildId: k,
     isScrolling: A,
     canShowMigrationTooltip: D,
     trailing: R
-  } = e, [L, M] = r.useState(false), U = D && !A && !L && true !== k && null != I, B = r.useRef(null), W = r.useRef(null), H = null == w || null == Z ? null : T ? (0, i.jsxs)(d.Kqy, {
+  } = e, [L, M] = r.useState(false), U = D && !A && !L && true !== k && null != I, B = r.useRef(null), W = r.useRef(null), H = null == P || null == Z ? null : T ? (0, i.jsxs)(d.Kqy, {
     direction: "horizontal",
     fullWidth: false,
     align: "center",
     ref: W,
     children: [(0, i.jsx)(d.Text, {
       variant: "text-sm/normal",
-      children: w
+      children: P
     }), T ? (0, i.jsx)(d.Fbu, {
       size: "custom",
       color: "currentColor",
@@ -59,9 +59,9 @@ function O(e) {
   }) : (0, i.jsx)(d.Button, {
     size: "sm",
     buttonRef: B,
-    disabled: P,
+    disabled: w,
     onClick: Z,
-    text: w
+    text: P
   });
   r.useEffect(() => {
     var e, t;

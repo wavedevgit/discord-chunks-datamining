@@ -85,8 +85,8 @@ class v extends(i = Chunk647438.PureComponent) {
       iconClassName: S,
       iconWrapperClassName: E,
       icon: I,
-      hideSize: w,
-      imageStyle: P,
+      hideSize: P,
+      imageStyle: w,
       showRemoveButton: T,
       maxFileSizeBytes: Z,
       onFileSizeError: k,
@@ -102,7 +102,7 @@ class v extends(i = Chunk647438.PureComponent) {
       className: o()(Chunk270956.imageUploader, Chunk270956.disabled, C),
       children: (0, Chunk951288.jsxs)("div", {
         className: o()(Chunk270956.imageUploaderInner, N),
-        style: x(h({}, P), {
+        style: x(h({}, w), {
           backgroundImage: require
         }),
         children: [i, _ && (0, Chunk951288.jsx)("div", {
@@ -115,7 +115,7 @@ class v extends(i = Chunk647438.PureComponent) {
       className: Chunk270956.removeButton,
       onClick: this.handleRemove,
       children: Chunk388032.intl.string(Chunk388032.t.N86XcP)
-    }) : w || (l = (0, Chunk951288.jsx)("small", {
+    }) : P || (l = (0, Chunk951288.jsx)("small", {
       className: Chunk270956.sizeInfo,
       children: Chunk388032.intl.format(Chunk388032.t.AH4c7Y, {
         size: Chunk981631.IXf
@@ -130,7 +130,7 @@ class v extends(i = Chunk647438.PureComponent) {
           className: y ? o()(Chunk270956.imageUploaderIconWrapper, E) : true,
           children: [(0, Chunk951288.jsxs)("div", {
             className: o()(Chunk270956.imageUploaderInner, N),
-            style: x(h({}, P), {
+            style: x(h({}, w), {
               backgroundImage: require
             }),
             children: [(0, Chunk951288.jsx)("span", {

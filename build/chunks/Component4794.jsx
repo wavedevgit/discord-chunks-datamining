@@ -20,9 +20,8 @@ let s = Chunk647438.memo(function(e) {
     navTransition: b
   } = (0, o.t)();
   l.useEffect(() => {
-    var e;
-    (null == b || null == (e = b.targetAccordion) ? true : e.key) === t.key && f(true)
-  }, [null == b ? true : b.targetAccordion, t.key]);
+    (null == b ? true : b.targetAccordionKey) === t.key && f(true)
+  }, [null == b ? true : b.targetAccordionKey, t.key]);
   let p = null == n ? true : n(d),
     y = null == u ? true : u();
   return (0, r.jsx)("div", {

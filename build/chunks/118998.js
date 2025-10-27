@@ -2,7 +2,7 @@
 /** chunk id: 118998, original params: e,n,t (module,exports,require) **/
 require.d(exports, {
   H: () => i,
-  T: () => a
+  T: () => r
 });
 let i = e => {
   let {
@@ -12,6 +12,6 @@ let i = e => {
   return "https://discord.com/events/".concat(n, "/").concat(t)
 };
 
-function a(e, n, t) {
+function r(e, n, t) {
   return e && n && null != t
 }

@@ -87,7 +87,7 @@ function p(e) {
     node: t,
     visibleContent: n,
     hoisted: o = false
-  } = e, i = l.useMemo(() => t.layout[0], [t]), c = s.Z.useField("currentPanel"), u = null != c && c.key === (null == i ? true : i.key), f = null != i ? () => s.Z.setState({
+  } = e, i = l.useMemo(() => t.layout[0], [t]), c = s.Z.useField("currentPanelKey"), u = null != c && c === (null == i ? true : i.key), f = null != i ? () => s.Z.setState({
     targetKey: i.key,
     showNavigationMobile: false
   }) : t.onClick, p = l.useMemo(() => {

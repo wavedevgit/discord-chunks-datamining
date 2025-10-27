@@ -81,11 +81,11 @@ let u = {
   rating: {
     getLabel: () => Chunk388032.intl.string(Chunk388032.t["7/umul"]),
     type: "checkbox",
-    tags: [Chunk379405._.LOVE_IT, Chunk379405._.KIND_OF_LOVE_IT, Chunk379405._.KIND_OF_HATE_IT, Chunk379405._.RAGE_QUITTING]
+    tags: [Chunk379405._.OBSESSED, Chunk379405._.LOVE_IT, Chunk379405._.KIND_OF_LOVE_IT, Chunk379405._.KIND_OF_HATE_IT, Chunk379405._.RAGE_QUITTING]
   },
   looking_for: {
     getLabel: () => Chunk388032.intl.string(Chunk388032.t["5Dez17"]),
     type: "checkbox",
-    tags: [Chunk379405._.LOOKING_FOR_GROUP, Chunk379405._.OPEN_TO_PLAY, Chunk379405._.LOOKING_FOR_TIPS, Chunk379405._.OPEN_TO_TEACH]
+    tags: [Chunk379405._.LOOKING_FOR_GROUP, Chunk379405._.OPEN_TO_PLAY, Chunk379405._.LOOKING_FOR_TIPS, Chunk379405._.OPEN_TO_TEACH, Chunk379405._.LOOKING_TO_DISCUSS]
   }
 }

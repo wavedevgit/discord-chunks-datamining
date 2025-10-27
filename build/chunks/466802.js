@@ -26,6 +26,6 @@ let E = (0, Chunk509613.x1)(Chunk313789.n.NITRO_PANE, {
     buildLayout: () => [d],
     trailing: {
       type: Chunk28682.PU.STRONGLY_DISCOURAGED_CUSTOM,
-      useDecoration: (t, e) => (0, a.x)(e)
+      useDecoration: (t, e) => (0, o.x)(e)
     }
   })
