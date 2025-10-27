@@ -51,10 +51,11 @@ function x(e) {
 function P() {
   (0, Chunk481060.Mr3)(Chunk312097.Q)
 }
-let R = Chunk647438.forwardRef(function(e, t) {
+
+function R(e) {
   var {
-    tooltipText: n
-  } = e, r = function(e, t) {
+    tooltipText: t
+  } = e, n = function(e, t) {
     if (null == e) return {};
     var n, i, r = function(e, t) {
       if (null == e) return {};
@@ -70,16 +71,16 @@ let R = Chunk647438.forwardRef(function(e, t) {
     return r
   }(e, ["tooltipText"]);
   return (0, i.jsx)(s.u, {
-    text: n,
+    text: t,
     position: "bottom",
+    asContainer: true,
     children: (0, i.jsx)(c.hU, x({
-      buttonRef: t,
       variant: "icon-only",
-      "aria-label": n,
+      "aria-label": t,
       size: "sm"
-    }, r))
+    }, n))
   })
-});
+}
 
 function L() {
   let {
@@ -288,7 +289,7 @@ function Z(e) {
         onClick: t
       } = e;
       return (0, i.jsx)(R, {
-        ref: a,
+        buttonRef: a,
         tooltipText: C.intl.string(C.t["UKOtz+"]),
         onClick: () => {
           (0, S.yg)(S.uG.MORE_BUTTON_PRESSED), s(!o)

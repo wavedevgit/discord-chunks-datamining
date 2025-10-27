@@ -2,8 +2,9 @@
 /** chunk id: 578976, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Kd: () => _,
-  SQ: () => f,
+  JE: () => f,
+  Kd: () => p,
+  SQ: () => _,
   nW: () => d
 });
 var Chunk311570 = require("./311570.js");
@@ -21,25 +22,28 @@ let d = (e, t) => {
     return null != t && (n.tab = t), null == e || (true === e.noCache && (n.no_cache = true), true === e.includeUnpublished && (n.include_unpublished = true), true === e.includeBundles && (n.include_bundles = true), true === e.includePopularPicks && (n.include_popular_picks = true), true === e.includeDynamicBlocks && (n.include_dynamic_blocks = true), null != e.countryCode && "" !== e.countryCode && (n.country_code = e.countryCode), null !== e.paymentGateway && (n.payment_gateway = e.paymentGateway), e.variantsReturnStyle === r.v.VARIANTS_GROUP && (n.variants_return_style = r.v.VARIANTS_GROUP), null != e.shopHomeConfig && (n.shop_home_config = e.shopHomeConfig), null != e.skipNumCategories && (n.skip_num_categories = e.skipNumCategories), true === e.includeNameplatesOnMobile && (n.include_nameplates_on_mobile = true)), n
   },
   f = e => {
-    var t;
-    let n = null == (t = e.items) ? true : t[0];
-    if (null == n) return "";
-    if ((0, l.M)(n)) {
+    if (null != e) return "".concat(e, "?width=100&height=195")
+  },
+  _ = e => {
+    var t, n;
+    let r = null == (t = e.items) ? true : t[0];
+    if (null == r) return "";
+    if ((0, l.M)(r)) {
       let e = (0, o.NZ)({
-        avatarDecoration: n,
+        avatarDecoration: r,
         size: 40,
         canAnimate: false
       });
       return null != e ? e : ""
     }
-    if ((0, u.H)(n)) {
-      let e = n.staticFrameSrc,
-        t = n.thumbnailPreviewSrc;
-      return null != e && "" !== e ? e : null != t && "" !== t ? t : ""
+    if ((0, u.H)(r)) {
+      let e = r.staticFrameSrc,
+        t = r.thumbnailPreviewSrc;
+      return null != e && "" !== e ? e : null != t && "" !== t && null != (n = f(t)) ? n : ""
     }
-    return (0, c.k)(n) ? (0, i.b)("collectibles/".concat(n.asset, "static.png")) : ""
+    return (0, c.k)(r) ? (0, i.b)("collectibles/".concat(r.asset, "static.png")) : ""
   },
-  _ = () => {
+  p = () => {
     let e = (0, Chunk975298.Z)({
         forceFetch: true
       }),
