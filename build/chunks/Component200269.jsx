@@ -2,10 +2,10 @@
 /** chunk id: 200269, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  H: () => l,
-  x: () => u,
-  y: () => s
-}), require("./388685.js");
+  H: () => u,
+  x: () => d,
+  y: () => c
+});
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js");
 
@@ -31,48 +31,51 @@ function o(e) {
   return e
 }
 
-function s(e) {
+function s(e, t) {
+  return {
+    getLevelAndMarkUsed: () => (t.current = true, e),
+    consumed: t,
+    level: e
+  }
+}
+let l = Chunk647438.createContext(s(2, {
+  current: false
+}));
+
+function c(e) {
   let {
     component: t,
     children: n,
     forceLevel: a
-  } = e, o = i.useContext(c), [s, l] = i.useState(null != t), u = 1, d = 1;
-  null != a ? null != t ? (u = a, d = a + 1) : d = a : null != t ? (u = o.level, d = o.level + 1) : d = o.level + +!!s;
-  let f = i.useMemo(() => ({
-      level: u,
-      getLevelAndMarkUsed: () => (l(true), u)
-    }), [u]),
-    _ = i.useMemo(() => ({
-      level: d,
-      getLevelAndMarkUsed: () => (l(true), d)
-    }), [d]);
+  } = e, o = i.useContext(l), c = null != a ? a : o.level, u = c;
+  (null != t || null == a && o.consumed.current) && u++;
+  let d = i.useRef(false),
+    f = i.useRef(false),
+    _ = i.useMemo(() => s(c, d), [c]),
+    p = i.useMemo(() => s(u, f), [u]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [null != t ? (0, r.jsx)(c.Provider, {
-      value: f,
-      children: t
-    }) : null, (0, r.jsx)(c.Provider, {
+    children: [null != t ? (0, r.jsx)(l.Provider, {
       value: _,
+      children: t
+    }) : null, (0, r.jsx)(l.Provider, {
+      value: p,
       children: n
     })]
   })
 }
 
-function l(e) {
-  let t = u(),
+function u(e) {
+  let t = d(),
     n = "h".concat(Math.min(t, 6));
   return (0, r.jsx)(n, o({}, t > 6 ? {
     "data-excessive-heading-level": t
   } : {}, e))
 }
-let c = Chunk647438.createContext({
-  getLevelAndMarkUsed: () => 2,
-  level: 2
-});
 
-function u() {
+function d() {
   let {
     getLevelAndMarkUsed: e
-  } = Chunk647438.useContext(c);
+  } = Chunk647438.useContext(l);
   return module()
 }
-c.displayName = "HeadingLevelContext"
+l.displayName = "HeadingLevelContext"

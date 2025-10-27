@@ -435,6 +435,10 @@ function ek(e) {
           return [ep.intl.string(ep.t["2Xhy9k"]), null];
         case null == u:
           return [ep.intl.string(ep.t.vwHPRi), null];
+        case H: {
+          let e = (null == u ? true : u.fullscreenType) === O.Jx.FULLSCREEN ? ep.intl.string(ep.t.mJmbeC) : null;
+          return [ep.intl.string(ep.t.VPW4XY), e]
+        }
         default:
           return [ep.intl.string(ep.t.ONovP5), null]
       }

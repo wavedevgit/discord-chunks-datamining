@@ -2,10 +2,9 @@
 /** chunk id: 128813, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Qw: () => u,
-  ZP: () => _,
-  mX: () => o,
-  oC: () => l
+  Qw: () => c,
+  ZP: () => f,
+  mX: () => o
 }), require("./415506.js");
 var Chunk252117 = require("./252117.js");
 
@@ -28,16 +27,16 @@ async function a() {
 }
 
 function o() {
-  let e = d();
+  let e = u();
   if (null != module) return module;
   {
     let e = (async () => {
-      await a(), c(await (0, Chunk252117.wE)({
+      await a(), l(await (0, Chunk252117.wE)({
         createPromise: () => require.e("18639").then(require.bind(require, 718493)),
         webpackId: 718493
       }))
     })();
-    return f(module), module
+    return d(module), module
   }
 }
 
@@ -45,25 +44,21 @@ function s(e) {
   window._libdiscoreUnsupportedBrowser = e
 }
 
-function l() {
-  returntrue === window._libdiscoreUnsupportedBrowser
-}
-
-function c(e) {
+function l(e) {
   window._libdiscoreWasm = e
 }
 
-function u() {
+function c() {
   if (true !== window._libdiscoreWasm) return window._libdiscoreWasm;
   throw Error("libdiscoreWasm is not initialized")
 }
 
-function d() {
+function u() {
   var e;
   return null != (e = window._libdiscoreInitPromise) ? module : null
 }
 
-function f(e) {
+function d(e) {
   window._libdiscoreInitPromise = e
 }
-let _ = u
+let f = c
