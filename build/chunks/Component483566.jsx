@@ -106,27 +106,28 @@ function g(e) {
     layout: y = "vertical",
     badge: O,
     icon: v = null,
-    interactiveLabel: I = false
-  } = e, T = h(e), {
-    labelId: S,
-    controlId: A,
-    errorMessageId: C,
-    describedById: N,
-    helperTextId: R,
-    descriptionId: P
-  } = T, w = "group" === b || "radiogroup" === b, D = w ? "span" : "label", L = w ? "fieldset" : "div", x = w ? (0, r.jsx)("legend", {
-    id: S,
+    interactiveLabel: I = false,
+    ref: T
+  } = e, S = h(e), {
+    labelId: A,
+    controlId: C,
+    errorMessageId: N,
+    describedById: R,
+    helperTextId: P,
+    descriptionId: D
+  } = S, w = "group" === b || "radiogroup" === b, L = w ? "span" : "label", x = w ? "fieldset" : "div", M = w ? (0, r.jsx)("legend", {
+    id: A,
     children: (0, r.jsx)(s.n, {
       children: t
     })
-  }) : null, M = null != t && "" !== t, k = null != l && "" !== l, j = M ? (0, r.jsxs)(u.x, {
+  }) : null, k = null != t && "" !== t, j = null != l && "" !== l, U = k ? (0, r.jsxs)(u.x, {
     "aria-hidden": w,
     "data-interactive": I,
-    id: S,
-    tag: D,
+    id: A,
+    tag: L,
     variant: "text-md/medium",
     color: "text-primary",
-    htmlFor: A,
+    htmlFor: C,
     className: f.label,
     children: [null != v ? (0, r.jsx)(v, {
       "aria-hidden": true,
@@ -146,34 +147,35 @@ function g(e) {
     }) : null]
   }) : null;
   return (0, r.jsx)(d.z.Provider, {
-    value: T,
-    children: (0, r.jsxs)(L, {
+    value: S,
+    children: (0, r.jsxs)(x, {
       role: b,
+      ref: T,
       className: f.container,
       "data-layout": y,
       "data-disabled": a,
-      "aria-describedby": w ? N : true,
+      "aria-describedby": w ? R : true,
       disabled: w ? a : true,
-      children: [x, M || k ? (0, r.jsxs)("div", {
+      children: [M, k || j ? (0, r.jsxs)("div", {
         className: f.labelContainer,
         children: [n ? (0, r.jsx)(s.n, {
-          children: j
-        }) : j, k && (0, r.jsx)(u.x, {
+          children: U
+        }) : U, j && (0, r.jsx)(u.x, {
           variant: "text-sm/normal",
           color: "text-secondary",
           className: f.description,
-          id: P,
+          id: D,
           children: l
         })]
       }) : null, (0, r.jsxs)("div", {
         className: f.control,
-        children: ["function" == typeof _ ? _(T) : _, (0, r.jsx)(E, {
+        children: ["function" == typeof _ ? _(S) : _, (0, r.jsx)(E, {
           successMessage: m,
           errorMessage: p,
           helperText: c,
           trailingContent: g,
-          helperTextId: R,
-          errorMessageId: C
+          helperTextId: P,
+          errorMessageId: N
         })]
       })]
     })

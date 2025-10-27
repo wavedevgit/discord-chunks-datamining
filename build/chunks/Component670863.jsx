@@ -110,8 +110,8 @@ function R(e) {
   } = e, R = S(e, ["deviceType", "location", "showAllDevices", "selectedDeviceId", "onSelectDevice", "hideDeviceTypeIcon", "label"]);
   let {
     setDevice: P,
-    Icon: w,
-    getCanSetDevice: D,
+    Icon: D,
+    getCanSetDevice: w,
     getWarningMessage: L,
     getLocation: x
   } = N(t), {
@@ -120,7 +120,7 @@ function R(e) {
     location: G
   }), {
     id: F
-  } = (0, E.p6)(t), V = null != _ ? _ : F, H = (0, s.e7)([h.Z], () => D(h.Z)), {
+  } = (0, E.p6)(t), V = null != _ ? _ : F, H = (0, s.e7)([h.Z], () => w(h.Z)), {
     showDeviceSelectionImprovements: Y
   } = (0, g.V)({
     location: "".concat(G, "/SingleSelectDevices")
@@ -170,7 +170,7 @@ function R(e) {
       }),
       children: [!I && (0, r.jsx)("div", {
         className: v.deviceIcon,
-        children: (0, r.jsx)(w, {
+        children: (0, r.jsx)(D, {
           size: "custom",
           width: 20,
           height: 20,

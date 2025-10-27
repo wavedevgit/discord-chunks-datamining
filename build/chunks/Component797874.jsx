@@ -96,7 +96,7 @@ let S = function(e) {
       } = await n.e("36427").then(n.bind(n, 196738));
       return t => (0, r.jsx)(e, v({}, t))
     })
-  }, []), w = null != I ? "@game ".concat(I.name) : true;
+  }, []), D = null != I ? "@game ".concat(I.name) : true;
   return (0, r.jsx)(_.Z, {
     applicationId: t,
     targetElementRef: O,
@@ -106,8 +106,8 @@ let S = function(e) {
       return (0, r.jsx)(l.u, {
         asContainer: true,
         tag: "span",
-        text: w,
-        "aria-label": w,
+        text: D,
+        "aria-label": D,
         delay: 750,
         children: (0, r.jsxs)(g.Z, T(v({
           onContextMenu: C,

@@ -40,12 +40,12 @@ function v(e) {
     pendingErrors: R
   } = (0, h.mD)(t, n), P = [];
   I && P.push(a.z.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE);
-  let [w, D] = (0, c.US)(P), L = w === a.z.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, x = (0, i.useCallback)(() => {
-    D(E.L.TAKE_ACTION), _.default.track(g.rMx.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, d.I)({
+  let [D, w] = (0, c.US)(P), L = D === a.z.DISPLAY_NAME_STYLES_NEW_BADGE_PROFILE_PAGE, x = (0, i.useCallback)(() => {
+    w(E.L.TAKE_ACTION), _.default.track(g.rMx.DISPLAY_NAME_STYLES_FROM_SETTINGS), (0, d.I)({
       analyticsLocations: S,
       guildId: n
     })
-  }, [S, D, n]), M = (0, i.useCallback)(() => {
+  }, [S, w, n]), M = (0, i.useCallback)(() => {
     (0, s.NI)(null), _.default.track(g.rMx.DISPLAY_NAME_STYLES_REMOVED)
   }, []), k = (0, i.useCallback)(() => {
     (0, f.N_)(null)

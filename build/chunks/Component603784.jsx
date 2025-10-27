@@ -177,18 +177,19 @@ let w = Chunk647438.forwardRef((e, t) => {
           children: [(0, r.jsx)("div", {
             className: I.title,
             children: function() {
-              let e, {
-                user: t,
-                target: n,
-                options: i
+              var e;
+              let t, {
+                user: n,
+                target: i,
+                options: a
               } = l;
-              e = (0, v.lM)(n) ? n.name : n.toString();
-              let a = O.N5(l);
-              return null != a ? (0, r.jsx)("div", {
+              t = (0, v.lM)(i) ? i.name : i.toString();
+              let s = O.N5(l);
+              return null != s ? (0, r.jsx)("div", {
                 className: I.overflowEllipsis,
-                children: N.intl.format(a, {
-                  user: t,
-                  target: e,
+                children: N.intl.format(s, {
+                  user: n,
+                  target: t,
                   userHook: (e, t) => {
                     if (null != l.user) return (0, r.jsx)(P, {
                       user: l.user,
@@ -208,13 +209,13 @@ let w = Chunk647438.forwardRef((e, t) => {
                     onContextMenu: A,
                     children: e
                   }, t),
-                  count: i.count,
-                  channel: null == i.channel || "string" == typeof i.channel ? i.channel : (0, m.F6)(i.channel, x.default, b.Z, true),
+                  count: null != (e = a.count) ? e : "",
+                  channel: null == a.channel || "string" == typeof a.channel ? a.channel : (0, m.F6)(a.channel, x.default, b.Z, true),
                   channelHook: (e, t) => (0, r.jsx)("span", {
                     onContextMenu: Z,
                     children: e
                   }, t),
-                  subtarget: i.subtarget
+                  subtarget: a.subtarget
                 })
               }) : null
             }()

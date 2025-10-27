@@ -50,8 +50,8 @@ function A(e) {
     channel: N,
     handleSubmit: R,
     isEmpty: P,
-    showAllButtons: w,
-    children: D
+    showAllButtons: D,
+    children: w
   } = e, L = (0, o.e7)([l.Z], () => l.Z.isSubmitButtonEnabled), x = C(N.id, O, P), {
     activeCommand: M,
     activeCommandOption: k
@@ -68,19 +68,19 @@ function A(e) {
   return (a.tq || ((null == (_ = O.gifts) ? true : _.button) != null && null == M && !j && (null == B || m.ZP.isPremiumEligible(B)) && U.push((0, r.jsx)(S, {
     disabled: A,
     channel: N
-  }, "gift")), (null == (p = O.gifs) ? true : p.button) != null && null == M && w && U.push((0, r.jsx)(E.Z, {
+  }, "gift")), (null == (p = O.gifs) ? true : p.button) != null && null == M && D && U.push((0, r.jsx)(E.Z, {
     disabled: A,
     type: O
   }, "gif")), Z && null == M && U.push((0, r.jsx)(b.Z, {
     disabled: A,
     channel: N
-  }, "confetti")), !Z && (null == (y = O.stickers) ? true : y.button) != null && null == M && w && U.push((0, r.jsx)(I.Z, {
+  }, "confetti")), !Z && (null == (y = O.stickers) ? true : y.button) != null && null == M && D && U.push((0, r.jsx)(I.Z, {
     disabled: A,
     type: O
   }, "sticker"))), (null == (n = O.emojis) ? true : n.button) != null && (null == M || null != k && k.type !== s.jw.ATTACHMENT) && U.push((0, r.jsx)(g.Z, {
     disabled: A,
     type: O
-  }, "emoji")), null != D && U.push(D), (null == (i = O.submit) ? true : i.button) != null && ((null == (f = O.submit) ? true : f.ignorePreference) || L) && U.push((0, r.jsx)(v.Z, {
+  }, "emoji")), null != w && U.push(w), (null == (i = O.submit) ? true : i.button) != null && ((null == (f = O.submit) ? true : f.ignorePreference) || L) && U.push((0, r.jsx)(v.Z, {
     onClick: R,
     disabled: A || x
   }, "submit")), 0 === U.length) ? null : (0, r.jsx)("div", {

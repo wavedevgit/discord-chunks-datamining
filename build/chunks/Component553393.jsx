@@ -34,7 +34,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk85468 = require("./85468.js");
 
-function D(e, t, n) {
+function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -50,7 +50,7 @@ function L(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      D(e, t, n[t])
+      w(e, t, n[t])
     })
   }
   return e
@@ -60,7 +60,7 @@ let x = "8px",
   k = 222;
 
 function j(e) {
-  var t, I, D, j, U;
+  var t, I, w, j, U;
   let {
     quest: G,
     memberListItemRef: B,
@@ -77,7 +77,7 @@ function j(e) {
     quest: G,
     questContent: y.jn.MEMBERS_LIST,
     sourceQuestContent: y.jn.MEMBERS_LIST
-  }), q = (null == G || null == (t = G.userStatus) ? true : t.claimedAt) != null, X = (null == G || null == (I = G.userStatus) ? true : I.enrolledAt) != null, Q = (null == G || null == (D = G.userStatus) ? true : D.completedAt) != null, J = (0, s.e7)([m.Z], () => m.Z.getState().theme), $ = (0, c.wj)(J) ? R.BR.DARK : R.BR.LIGHT, ee = (0, s.e7)([p.Z], () => p.Z.useReducedMotion), {
+  }), q = (null == G || null == (t = G.userStatus) ? true : t.claimedAt) != null, X = (null == G || null == (I = G.userStatus) ? true : I.enrolledAt) != null, Q = (null == G || null == (w = G.userStatus) ? true : w.completedAt) != null, J = (0, s.e7)([m.Z], () => m.Z.getState().theme), $ = (0, c.wj)(J) ? R.BR.DARK : R.BR.LIGHT, ee = (0, s.e7)([p.Z], () => p.Z.useReducedMotion), {
     ref: et,
     height: en
   } = (0, _.ZP)(), [er, ei] = i.useState(ee), ea = (0, h.Aq)(), eo = (0, o.eg)();
@@ -209,7 +209,7 @@ function j(e) {
       Y.current = e
     },
     "aria-expanded": er,
-    className: w.wrapper,
+    className: D.wrapper,
     style: {
       width: null != (U = null == (j = B.current) ? true : j.clientWidth) ? U : k,
       height: es.height,
@@ -220,53 +220,53 @@ function j(e) {
       ref: e => {
         et.current = e
       },
-      className: w.container,
+      className: D.container,
       style: {
         borderRadius: eu
       },
       children: [(0, r.jsxs)("div", {
-        className: w.top,
+        className: D.top,
         children: [(0, r.jsxs)("div", {
-          className: w.left,
+          className: D.left,
           children: [(0, r.jsx)(u.Heading, {
             variant: "heading-sm/semibold",
             children: em.headerText
           }), (0, r.jsxs)(u.P3F, {
-            className: w.help,
+            className: D.help,
             onClick: e => {
               ec(), e_(e)
             },
             children: [(0, r.jsx)(u.Text, {
               variant: "text-xs/medium",
               color: "text-muted",
-              className: w.helpText,
+              className: D.helpText,
               children: P.intl.format(P.t["Lm8/mH"], {
                 gamePublisher: G.config.messages.gamePublisher
               })
             }), (0, r.jsx)(u.idN, {
               size: "custom",
-              className: w.helpIcon,
+              className: D.helpIcon,
               width: M,
               height: M,
               color: u.TVs.colors.INTERACTIVE_NORMAL
             })]
           })]
         }), (0, r.jsx)("div", {
-          className: w.right,
+          className: D.right,
           children: (0, r.jsxs)("div", {
-            className: w.imgWrapper,
+            className: D.imgWrapper,
             children: [el((e, t) => t && (0, r.jsx)(a.animated.div, {
               style: e,
-              className: w.imgUnderlay
+              className: D.imgUnderlay
             })), "game" === em.tileAssetType && (0, r.jsx)("img", {
               alt: P.intl.formatToPlainString(P.t.IskzPg, {
                 gameTitle: G.config.messages.gameTitle,
                 gamePublisher: G.config.messages.gamePublisher
               }),
-              className: w.assetTile,
+              className: D.assetTile,
               src: (0, v.fh)(G, v.eC.GAME_TILE, $).url
             }), "reward" === em.tileAssetType && (0, r.jsx)(T.Z, {
-              className: w.assetTile,
+              className: D.assetTile,
               quest: G,
               questContent: y.jn.MEMBERS_LIST,
               learnMoreStyle: "icon",

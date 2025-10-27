@@ -51,7 +51,7 @@ function L(e) {
     k && o.ZP.resolveInvite(t)
   }, [t, k]);
   let j = null != x ? x : {
-      state: w.r2o.RESOLVING,
+      state: D.r2o.RESOLVING,
       code: ""
     },
     {
@@ -70,14 +70,14 @@ function L(e) {
     H = () => {
       if (null == B && (null == x ? true : x.guild) != null) {
         let e = O.Qs(x.guild);
-        if ((0, c.bN)() && (0, c.Yt)(e)) return void(0, l.mN)(D.L0.NSFW_SERVER_INVITE_EMBED)
+        if ((0, c.bN)() && (0, c.Yt)(e)) return void(0, l.mN)(w.L0.NSFW_SERVER_INVITE_EMBED)
       }(0, m.yU)() ? (0, g.Z)({
         analyticsSource: {
-          page: w.ZY5.INVITE_EMBED
+          page: D.ZY5.INVITE_EMBED
         },
         analyticsLocation: {
-          page: w.ZY5.INVITE_EMBED,
-          section: w.jXE.GUILD_CAP_UPSELL_MODAL
+          page: D.ZY5.INVITE_EMBED,
+          section: D.jXE.GUILD_CAP_UPSELL_MODAL
         },
         analyticsLocations: U
       }) : o.ZP.acceptInviteAndTransitionToInviteChannel({
@@ -94,18 +94,18 @@ function L(e) {
       message: n
     });
   switch (j.state) {
-    case w.r2o.RESOLVING:
+    case D.r2o.RESOLVING:
       Y = (0, r.jsx)(R.Z, {});
       break;
-    case w.r2o.EXPIRED:
-    case w.r2o.BANNED:
+    case D.r2o.EXPIRED:
+    case D.r2o.BANNED:
       Y = (0, r.jsx)(N.Z, {
-        banned: j.state === w.r2o.BANNED,
+        banned: j.state === D.r2o.BANNED,
         author: n.author,
         channelId: n.channel_id
       });
       break;
-    case w.r2o.ERROR:
+    case D.r2o.ERROR:
       Y = (0, r.jsx)(I.Z, {
         author: n.author,
         inviteError: M
@@ -169,7 +169,7 @@ function L(e) {
       }
   }
   return (0, r.jsx)(s.Z, {
-    section: w.jXE.INVITE_LINK,
+    section: D.jXE.INVITE_LINK,
     children: Y
   })
 }

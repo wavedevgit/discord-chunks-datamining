@@ -105,6 +105,7 @@ let I = e => {
         });
       case p.wk.EXPLICIT_CONTENT:
       case p.wk.GORE_CONTENT:
+      case p.wk.SELF_HARM_CONTENT:
         return (0, r.jsx)(T, {
           isSingleMosaicItem: i,
           className: n
@@ -126,7 +127,7 @@ let I = e => {
       handleToggleObscurity: i,
       obscurityControlClassName: a
     } = e;
-    return t !== p.wk.EXPLICIT_CONTENT && t !== p.wk.GORE_CONTENT ? null : (0, r.jsx)("div", {
+    return t !== p.wk.EXPLICIT_CONTENT && t !== p.wk.GORE_CONTENT && t !== p.wk.SELF_HARM_CONTENT ? null : (0, r.jsx)("div", {
       className: o()(g.obscureButtonContainer, a),
       children: (0, r.jsx)(l.P3F, {
         className: g.obscureHoverButton,
@@ -346,6 +347,7 @@ class N extends Chunk647438.PureComponent {
         return Chunk388032.intl.string(Chunk388032.t["F+x38C"]);
       case Chunk936141.wk.EXPLICIT_CONTENT:
       case Chunk936141.wk.GORE_CONTENT:
+      case Chunk936141.wk.SELF_HARM_CONTENT:
         return Chunk388032.intl.string(Chunk388032.t.mlJ8Vf);
       case Chunk936141.wk.POTENTIAL_EXPLICIT_CONTENT:
         return Chunk388032.intl.string(Chunk388032.t.MRdR7z);
@@ -362,6 +364,7 @@ class N extends Chunk647438.PureComponent {
         return Chunk388032.intl.string(Chunk388032.t["F+x38C"]);
       case Chunk936141.wk.EXPLICIT_CONTENT:
       case Chunk936141.wk.GORE_CONTENT:
+      case Chunk936141.wk.SELF_HARM_CONTENT:
         return Chunk388032.intl.string(Chunk388032.t.mlJ8Vf);
       case Chunk936141.wk.POTENTIAL_EXPLICIT_CONTENT:
         return Chunk388032.intl.string(Chunk388032.t.MRdR7z);

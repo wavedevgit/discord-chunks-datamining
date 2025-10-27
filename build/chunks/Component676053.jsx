@@ -94,8 +94,8 @@ function I(e) {
     popoverRef: N
   } = e, R = O(e, ["title", "body", "assetUrl", "previewUrl", "action", "caretConfig", "badge", "textLink", "onWatchVideo", "onRequestClose", "popoverRef"]);
   let P = i.useRef(null),
-    w = (0, a.j1L)(b),
-    D = i.useCallback(() => ({
+    D = (0, a.j1L)(b),
+    w = i.useCallback(() => ({
       type: "VIDEO",
       url: g,
       proxyUrl: g,
@@ -112,15 +112,15 @@ function I(e) {
     }, [C]),
     M = i.useCallback(() => {
       null !== P.current && P.current.pause();
-      let e = D();
+      let e = w();
       (0, l.K)({
         items: [e],
         startingIndex: 0,
         location: "VideoPopover",
         shouldHideMediaOptions: true
       }), null == C || C(), null == A || A()
-    }, [D, A, C]),
-    k = w ? (0, r.jsx)(a.zsu, {
+    }, [w, A, C]),
+    k = D ? (0, r.jsx)(a.zsu, {
       type: "image",
       src: b
     }) : (0, r.jsxs)(r.Fragment, {

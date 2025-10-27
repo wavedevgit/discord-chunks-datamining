@@ -98,13 +98,13 @@ let eE = () => {
       section: Chunk981631.oAB.GUILD_BOOSTING,
       analyticsLocations: module
     })
-  }, ew = () => {
+  }, eD = () => {
     (0, Chunk518596.openUserSettings)(Chunk313789.n.VOICE_AND_VIDEO_PANEL, {
       section: Chunk981631.oAB.VOICE,
       subsection: Chunk526761.GA,
       analyticsLocations: module
     })
-  }, eD = () => {
+  }, ew = () => {
     (0, Chunk703656.uL)(Chunk981631.Z5c.COLLECTIBLES_SHOP)
   }, eL = () => {
     (0, Chunk547972.Z)(Chunk332325.Z.CLIPS, {
@@ -196,7 +196,7 @@ let eE = () => {
       subtitle: Chunk388032.intl.string(Chunk388032.t["7ZCYvC"]),
       description: Chunk388032.intl.string(Chunk388032.t.mUT8bO),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVY),
-      onCtaClick: ew,
+      onCtaClick: eD,
       perkImage: Chunk132015
     } : {
       name: "entranceSounds",
@@ -211,7 +211,7 @@ let eE = () => {
       subtitle: Chunk388032.intl.string(Chunk388032.t["7ZCYvC"]),
       description: Chunk388032.intl.string(Chunk388032.t.mUT8bO),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.jVcuVY),
-      onCtaClick: ew,
+      onCtaClick: eD,
       perkImage: Chunk142416
     } : {
       name: "entranceSoundsSeeAllVariation",
@@ -271,7 +271,7 @@ let eE = () => {
       subtitle: Chunk388032.intl.string(Chunk388032.t.opgqDZ),
       description: Chunk388032.intl.string(Chunk388032.t["t+QZSd"]),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.dBJVnZ),
-      onCtaClick: eD,
+      onCtaClick: ew,
       perkImage: Chunk498730
     },
     specialMemberPricingSeeAllVariant: {
@@ -280,7 +280,7 @@ let eE = () => {
       subtitle: Chunk388032.intl.string(Chunk388032.t.opgqDZ),
       description: Chunk388032.intl.string(Chunk388032.t["t+QZSd"]),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.dBJVnZ),
-      onCtaClick: eD,
+      onCtaClick: ew,
       perkImage: Chunk498730
     },
     specialShopPerks: {
@@ -289,7 +289,7 @@ let eE = () => {
       subtitle: Chunk388032.intl.string(Chunk388032.t.chRZiX),
       description: Chunk388032.intl.string(Chunk388032.t["t+QZSd"]),
       descriptionCta: Chunk388032.intl.string(Chunk388032.t.dBJVnZ),
-      onCtaClick: eD,
+      onCtaClick: ew,
       perkImage: Chunk498730
     },
     superReactions: {

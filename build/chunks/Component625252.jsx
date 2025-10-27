@@ -2,7 +2,7 @@
 /** chunk id: 625252, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => I
+  Z: () => O
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,15 +14,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk626135 = require("./626135.js"),
   Chunk617136 = require("./617136.js"),
   Chunk497505 = require("./497505.js"),
-  Chunk937797 = require("./937797.js"),
   Chunk110560 = require("./110560.jsx"),
-  Chunk46140 = require("./46140.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk154115 = require("./154115.js"),
   Chunk66094 = require("./66094.js");
 
-function y(e, t, n) {
+function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -31,39 +29,34 @@ function y(e, t, n) {
   }) : e[t] = n, e
 }
 
-function O(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      y(e, t, n[t])
+      E(e, t, n[t])
     })
   }
   return e
 }
-let v = "https://cdn.discordapp.com/assets/discovery/quests-wumpus-hikes-mountain-transparent-background.png";
+let y = "https://cdn.discordapp.com/assets/discovery/quests-wumpus-hikes-mountain-transparent-background.png";
 
-function I() {
+function O() {
   let e = (0, Chunk780384.wj)((0, Chunk410030.ZP)()),
     t = Chunk647438.useMemo(() => ({
-      backgroundImage: "url(".concat(v, ")")
+      backgroundImage: "url(".concat(y, ")")
     }), []),
     n = Chunk647438.useCallback(() => {
       (0, Chunk342386.default)(), (0, Chunk110560.navigateToQuestHome)({
         fromContent: Chunk497505.jn.QUEST_HOME_MOVE_CALLOUT
-      }), Chunk626135.default.track(Chunk981631.rMx.QUEST_CONTENT_CLICKED, O({
+      }), Chunk626135.default.track(Chunk981631.rMx.QUEST_CONTENT_CLICKED, b({
         cta_name: Chunk617136.jZ.VIEW_QUESTS,
         click_id: (0, Chunk772848.Z)(),
         is_targeted: false
       }, (0, Chunk617136.mH)(Chunk497505.jn.QUEST_HOME_MOVE_CALLOUT)))
-    }, []),
-    {
-      enabled: y
-    } = Chunk937797.m8.useConfig({
-      location: Chunk46140.dr.QUEST_HOME_MOVED_CALLOUT
-    });
+    }, []);
   return (0, Chunk951288.jsx)("div", {
     className: Chunk154115.container,
     style: exports,
@@ -86,7 +79,7 @@ function I() {
         }), (0, Chunk951288.jsx)(Chunk481060.Text, {
           variant: "text-md/medium",
           color: "text-secondary",
-          children: Chunk388032.intl.string(y ? Chunk388032.t.HdKh65 : Chunk388032.t.IqmRZ9)
+          children: Chunk388032.intl.string(Chunk388032.t.HdKh65)
         })]
       }), (0, Chunk951288.jsx)(Chunk481060.Button, {
         variant: module ? "primary" : "overlay-primary",

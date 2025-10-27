@@ -2,17 +2,22 @@
 /** chunk id: 873505, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
+  gb: () => o,
   xQ: () => a
 });
 let r = 7e3,
   i = null;
 
 function a(e, t = "assertive", n = r) {
-  i ? i.announce(e, t, n) : (i = new o, ("boolean" == typeof IS_REACT_ACT_ENVIRONMENT ? IS_REACT_ACT_ENVIRONMENT : "undefined" != typeof jest) ? i.announce(e, t, n) : setTimeout(() => {
+  i ? i.announce(e, t, n) : (i = new s, ("boolean" == typeof IS_REACT_ACT_ENVIRONMENT ? IS_REACT_ACT_ENVIRONMENT : "undefined" != typeof jest) ? i.announce(e, t, n) : setTimeout(() => {
     (null == i ? true : i.isAttached()) && (null == i || i.announce(e, t, n))
   }, 100))
 }
-class o {
+
+function o(e) {
+  i && i.clear(e)
+}
+class s {
   isAttached() {
     var e;
     return null == (e = this.node) ? true : module.isConnected

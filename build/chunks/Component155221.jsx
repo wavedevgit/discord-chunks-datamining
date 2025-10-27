@@ -34,7 +34,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk188785 = require("./188785.js"),
   Chunk436620 = require("./436620.js");
 
-function w(e, t, n) {
+function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -43,14 +43,14 @@ function w(e, t, n) {
   }) : e[t] = n, e
 }
 
-function D(e) {
+function w(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      w(e, t, n[t])
+      D(e, t, n[t])
     })
   }
   return e
@@ -339,7 +339,7 @@ class ea extends Chunk647438.Component {
         }
       }), (0, Chunk951288.jsx)(Chunk843611.l_, {
         from: Chunk981631.Z5c.CONNECT_AUTHORIZE,
-        to: x(D({}, location), {
+        to: x(w({}, location), {
           pathname: Chunk981631.Z5c.OAUTH2_AUTHORIZE
         })
       }), (0, Chunk951288.jsx)(Chunk843611.AW, {
@@ -379,7 +379,7 @@ function eo() {
 function es(e) {
   let t = eo(),
     n = (0, b.h)();
-  return (0, r.jsx)(ea, x(D({}, e), {
+  return (0, r.jsx)(ea, x(w({}, e), {
     skipsSettingDefaultPageTitle: t,
     shouldBlockBrowser: n
   }))

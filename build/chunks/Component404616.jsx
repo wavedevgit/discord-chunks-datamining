@@ -146,17 +146,17 @@ let eo = 72,
     let P = l.useRef(null),
       {
         handleLeftClick: Z,
-        handleRightClick: w
+        handleRightClick: _
       } = (0, et.Z)({
         facepileRef: P,
         goToThread: n,
         channel: g
       }),
-      _ = (0, m.JA)(t),
+      w = (0, m.JA)(t),
       {
-        role: S,
-        onFocus: T
-      } = _,
+        role: T,
+        onFocus: S
+      } = w,
       M = function(e, t) {
         if (null == e) return {};
         var n, a, l = function(e, t) {
@@ -171,17 +171,17 @@ let eo = 72,
           for (a = 0; a < s.length; a++) n = s[a], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
         }
         return l
-      }(_, ["role", "onFocus"]),
+      }(w, ["role", "onFocus"]),
       {
         isFocused: k,
         handleFocus: I,
-        handleBlur: R
-      } = (0, $.Z)(T);
+        handleBlur: E
+      } = (0, $.Z)(S);
     return (0, a.jsxs)("div", {
       ref: y,
       "data-item-id": t,
       onClick: Z,
-      onContextMenu: w,
+      onContextMenu: _,
       className: r()(es.container, c, {
         [es.isOpen]: f
       }),
@@ -190,14 +190,14 @@ let eo = 72,
         focusProps: {
           ringTarget: y
         },
-        onContextMenu: w,
+        onContextMenu: _,
         "aria-label": el.intl.formatToPlainString(el.t.pgYN6c, {
           title: g.name,
           count: j
         }),
         className: es.focusTarget,
         onFocus: I,
-        onBlur: R
+        onBlur: E
       }, M)), (0, a.jsxs)("div", {
         className: es.left,
         children: [(0, a.jsx)(x.y5t, {
@@ -327,7 +327,7 @@ let eh = Chunk647438.memo(function(e) {
     } = null == t ? {
       contentPlaceholder: null,
       renderedContent: null
-    } : (0, E.f)(t, l, o, c, r()(es.messageContent, er.inlineFormat, er.__invalid_smallFontSize), {
+    } : (0, R.f)(t, l, o, c, r()(es.messageContent, er.inlineFormat, er.__invalid_smallFontSize), {
       leadingIconClass: es.messageContentLeadingIcon,
       trailingIconClass: es.messageContentTrailingIcon,
       iconSize: ea.WW
@@ -345,7 +345,7 @@ let eh = Chunk647438.memo(function(e) {
     })
   }
   return (0, a.jsxs)(P.aQ.Provider, {
-    value: (0, T.Z)(m, d),
+    value: (0, S.Z)(m, d),
     children: [!o && (0, a.jsx)(Y.Z, {
       channel: n,
       message: t,
@@ -449,7 +449,7 @@ function ex(e) {
     isLurking: i,
     isPendingMember: o
   } = (0, k.Z)(n);
-  return null == s || r ? null : (0, a.jsx)(R.le, {
+  return null == s || r ? null : (0, a.jsx)(E.le, {
     className: es.updateReactionButton,
     message: t,
     readOnly: n.isArchivedLockedThread(),
@@ -462,7 +462,7 @@ function ex(e) {
     burst_count: 0,
     me: false,
     me_burst: false,
-    type: S.O.NORMAL,
+    type: T.O.NORMAL,
     emojiSize: "reaction",
     emojiSizeTooltip: "reaction"
   })
@@ -478,14 +478,14 @@ function ej(e) {
     isLurking: i,
     isPendingMember: o
   } = (0, k.Z)(l);
-  return null == s ? null : (0, a.jsx)(R.le, ei({
+  return null == s ? null : (0, a.jsx)(E.le, ei({
     className: es.updateReactionButton,
     message: n,
     readOnly: r || l.isArchivedLockedThread(),
     isLurking: i,
     isPendingMember: o,
     useChatFontScaling: false,
-    type: s.burst_count >= s.count ? S.O.BURST : S.O.NORMAL,
+    type: s.burst_count >= s.count ? T.O.BURST : T.O.NORMAL,
     emojiSize: "reaction",
     emojiSizeTooltip: "reaction"
   }, s), "".concat(null != (t = s.emoji.id) ? t : 0, ":").concat(s.emoji.name))
@@ -538,7 +538,7 @@ function ev(e) {
     shouldObscure: n,
     obscureReason: l,
     shouldShowAgeVerification: s
-  } = e, i = (0, h.e7)([D.Z], () => D.Z.isFocused()), o = (0, w.d$)(t.src), c = A.QK.useSetting(), u = (0, _.MC)(l), {
+  } = e, i = (0, h.e7)([D.Z], () => D.Z.isFocused()), o = (0, _.d$)(t.src), c = A.QK.useSetting(), u = (0, w.MC)(l), {
     src: d,
     width: m,
     height: g,
@@ -590,7 +590,7 @@ function eN(e) {
   let {
     channel: t,
     firstMedia: n
-  } = e, [l, s] = (0, _.hL)({
+  } = e, [l, s] = (0, w.hL)({
     media: n,
     channel: t
   }), r = (0, Z.JO)(s);

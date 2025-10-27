@@ -17,9 +17,9 @@ require.d(exports, {
   f7: () => m,
   kN: () => S,
   lb: () => O,
-  o0: () => w,
+  o0: () => D,
   o8: () => N,
-  xg: () => D,
+  xg: () => w,
   yf: () => h
 }), require("./388685.js");
 var Chunk463570 = require("./463570.js"),
@@ -59,8 +59,8 @@ let R = {
     FRACTIONAL_PREMIUM: Chunk314794.a.PREMIUM_TIER_2_3_DAY
   },
   P = new Set(Object.values(R)),
-  w = e => P.has(e),
-  D = [Chunk335818.G.AVATAR_DECORATION, Chunk335818.G.PROFILE_EFFECT, Chunk335818.G.NAMEPLATE, Chunk335818.G.BUNDLE],
+  D = e => P.has(e),
+  w = [Chunk335818.G.AVATAR_DECORATION, Chunk335818.G.PROFILE_EFFECT, Chunk335818.G.NAMEPLATE, Chunk335818.G.BUNDLE],
   L = [{
     sortType: Chunk792091.E.RELEVANCE,
     sortDirection: Chunk497598.F.DESC

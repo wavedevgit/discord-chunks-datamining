@@ -75,8 +75,8 @@ function N(e) {
     analyticsLocations: R,
     onView: P
   } = e, {
-    staticBannerSrc: w,
-    videoBannerSrc: D,
+    staticBannerSrc: D,
+    videoBannerSrc: w,
     bannerAspectRatio: L
   } = (0, d.E)(A), x = g.ZP.getApplicationIconURL({
     id: A.id,
@@ -96,8 +96,8 @@ function N(e) {
   return U ? (Z = I.intl.string(v.default.u4QmWl), F = true) : null != k ? (Z = I.intl.string(v.default.P0wwmM), F = true) : j !== N.id ? (Z = I.intl.string(v.default.qRXats), F = true) : null == M && (Z = I.intl.string(v.default["43zohO"]), F = true), (0, r.jsx)(c.W, {
     header: I.intl.string(v.default.nAyuPp),
     title: A.name,
-    staticBannerSrc: w,
-    videoBannerSrc: D,
+    staticBannerSrc: D,
+    videoBannerSrc: w,
     bannerAspectRatio: L,
     iconSrc: null != x ? x : true,
     info: G,

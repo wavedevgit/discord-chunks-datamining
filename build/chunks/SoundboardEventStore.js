@@ -112,14 +112,14 @@ function P(e) {
   }))
 }
 
-function w() {
+function D() {
   var e;
   if (!x()) return;
   let t = null == (e = Chunk581883.Z.frecencyWithoutFetchingLatest.playedSoundFrecency) ? true : module.playedSounds;
   T.overwriteHistory(P(null != exports ? exports : {}), v)
 }
 
-function D(e) {
+function w(e) {
   let {
     settings: {
       type: t
@@ -144,7 +144,7 @@ function x() {
 }
 class M extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    this.waitFor(f.default, p.Z), (null == e ? true : e.recentlyHeardCache) != null && I.load(e.recentlyHeardCache), (null == e ? true : e.playedEventsPendingFlush) != null && (v = e.playedEventsPendingFlush), this.syncWith([d.Z], w)
+    this.waitFor(f.default, p.Z), (null == e ? true : e.recentlyHeardCache) != null && I.load(e.recentlyHeardCache), (null == e ? true : e.playedEventsPendingFlush) != null && (v = e.playedEventsPendingFlush), this.syncWith([d.Z], D)
   }
   getState() {
     return {
@@ -169,5 +169,5 @@ E(M, "displayName", "SoundboardEventStore"), E(M, "persistKey", "SoundboardEvent
 let k = new M(Chunk570140.Z, {
   GUILD_SOUNDBOARD_SOUND_PLAY_LOCALLY: S,
   GUILD_SOUNDBOARD_SOUND_PLAY_START: A,
-  USER_SETTINGS_PROTO_UPDATE: D
+  USER_SETTINGS_PROTO_UPDATE: w
 })

@@ -2,7 +2,7 @@
 /** chunk id: 653235, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => D
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -210,7 +210,7 @@ class P extends Chunk647438.PureComponent {
   }
 }
 
-function w(e) {
+function D(e) {
   let t = (0, c.e7)([h.Z], () => h.Z.getTrendingCategories()),
     n = (0, g.gG)(),
     i = (0, y.PY)();

@@ -64,12 +64,12 @@ function P(e) {
   return null != (t = e.id) ? t : e.src
 }
 
-function w(e, t) {
+function D(e, t) {
   let n = R[t];
   return null == n ? 0 : n.height
 }
 
-function D(e, t, n, i) {
+function w(e, t, n, i) {
   if (!(e > 0)) return null == R[t] ? null : (0, r.jsx)("div", {
     className: I.placeholder,
     style: S({
@@ -398,8 +398,8 @@ class G extends Chunk647438.PureComponent {
         columns: e,
         itemGutter: 12,
         getItemKey: L,
-        getItemHeight: w,
-        renderItem: D,
+        getItemHeight: D,
+        renderItem: w,
         chunkSize: 128
       }, s) : (0, r.jsx)(f.GMG, {
         ref: this._masonryRef,

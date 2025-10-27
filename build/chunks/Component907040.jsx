@@ -244,10 +244,10 @@ let eu = (e, t) => {
         categoryListClassName: eN,
         shouldShowSoundmojiInEmojiPicker: eR = false,
         showOnlyUnicode: eP = false,
-        showAddEmojiButton: ew = false
+        showAddEmojiButton: eD = false
       } = e,
       {
-        onFocus: eD,
+        onFocus: ew,
         onKeyDown: eL,
         autoFocus: ex = true,
         accessory: eM
@@ -278,13 +278,13 @@ let eu = (e, t) => {
     } = eO, e1 = i.useMemo(() => ei(en({}, eq), {
       section: null != eQ ? eQ : Q.jXE.EMOJI_PICKER_POPOUT
     }), [eq, eQ]), {
-      analyticsLocations: e2
+      analyticsLocations: e3
     } = (0, b.ZP)(g.Z.EMOJI_PICKER), {
-      diversitySurrogate: e3
+      diversitySurrogate: e2
     } = (0, u.cj)([O.ZP], () => ({
       diversitySurrogate: O.ZP.diversitySurrogate
-    })), e4 = (0, U.DV)(eB, c, l, eP), e8 = null == e4 ? 0 : e4.locked.length + e4.unlocked.length, e5 = D.d4.useSetting(), e6 = i.useMemo(() => new Set(e5), [e5]), e7 = i.useCallback(e => {
-      D.d4.updateSetting(Array.from(e))
+    })), e4 = (0, U.DV)(eB, c, l, eP), e8 = null == e4 ? 0 : e4.locked.length + e4.unlocked.length, e5 = w.d4.useSetting(), e6 = i.useMemo(() => new Set(e5), [e5]), e7 = i.useCallback(e => {
+      w.d4.updateSetting(Array.from(e))
     }, []), e9 = (0, C.ep)({
       gridWrapperRef: eZ,
       containerWidth: eu,
@@ -379,7 +379,7 @@ let eu = (e, t) => {
         channelGuildId: eH,
         isBurstReaction: eY
       });
-    ef(eu, eF), e_(eu, e3, eV, ex), i.useEffect(() => {
+    ef(eu, eF), e_(eu, e2, eV, ex), i.useEffect(() => {
       eE || (0, S.ql)("")
     }, [eE]), i.useEffect(() => (M.default.track(Q.rMx.OPEN_POPOUT, en({
       type: null != e$ ? e$ : "Emoji Picker",
@@ -403,8 +403,8 @@ let eu = (e, t) => {
     let t_ = null != eI ? eI : R ? "div" : _.VqE,
       tp = null != e9;
     if ((null == ej ? true : ej.type) === Y.Bg.PREMIUM) {
-      let e = w.p.NONE;
-      2 === j ? e = w.p.PARENT_CONTAINER : 1 === j && (e = w.p.TAB_PARENT_CONTAINER), s = (0, r.jsx)(q.Z, {
+      let e = D.p.NONE;
+      2 === j ? e = D.p.PARENT_CONTAINER : 1 === j && (e = D.p.TAB_PARENT_CONTAINER), s = (0, r.jsx)(q.Z, {
         onLearnMore: ts,
         emojiDescriptor: ej.emojiDescriptor,
         pickerIntention: l,
@@ -437,15 +437,15 @@ let eu = (e, t) => {
           null == td || td(e), null == eL || eL(e)
         },
         searchBarRef: eV,
-        onFocus: eD,
+        onFocus: ew,
         autoFocus: ex,
         accessory: eM,
         headerClassName: ey,
-        diversitySurrogate: e3,
+        diversitySurrogate: e2,
         isBurstReaction: eY,
         onBurstReactionToggle: tm,
         renderHeader: eA,
-        showAddEmojiButton: ew
+        showAddEmojiButton: eD
       }),
       tE = [];
     l === $.Hz.REACTION && tE.push(d.z.SUPER_REACTIONS_NITRO_MARKETING), O.ZP.hasFavoriteEmojis(eH) || tE.push(d.z.EMOJI_PICKER_FAVORITE_EMOJIS_TIP);
@@ -484,7 +484,7 @@ let eu = (e, t) => {
             }, tu), {
               children: tp ? (0, r.jsx)(K.Z, {
                 collapsedSections: e6,
-                diversitySurrogate: e3,
+                diversitySurrogate: e2,
                 emojiGrid: tn,
                 emojiListRef: eF,
                 emojiSize: A,
@@ -525,7 +525,7 @@ let eu = (e, t) => {
       })
     }));
     return (0, r.jsx)(b.Gt, {
-      value: e2,
+      value: e3,
       children: tb
     })
   },

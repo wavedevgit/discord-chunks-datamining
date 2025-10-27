@@ -59,7 +59,7 @@ function k(e) {
     staticBannerSrc: N,
     videoBannerSrc: L,
     bannerAspectRatio: M
-  } = (0, w.E)(n), k = (0, s.e7)([b.default], () => null != l ? l : b.default.getId(), [l]), {
+  } = (0, D.E)(n), k = (0, s.e7)([b.default], () => null != l ? l : b.default.getId(), [l]), {
     analyticsLocations: G
   } = (0, f.ZP)(d.Z.APP_MESSAGE_EMBED), {
     currentChannelId: B,
@@ -72,7 +72,7 @@ function k(e) {
     },
     applicationId: n.id,
     botUserId: null == O ? true : O.id
-  }), W = null != v && I && Y, K = V && I, z = (0, D.G)(n), q = (0, D.z)(n), X = i.useMemo(() => {
+  }), W = null != v && I && Y, K = V && I, z = (0, w.G)(n), q = (0, w.z)(n), X = i.useMemo(() => {
     let e = [];
     return I ? (K && e.push({
       label: null == Z ? x.intl.string(x.t.RscU7I) : F ? x.intl.string(x.t.DPfdsq) : x.intl.string(x.t.sqe0hj),

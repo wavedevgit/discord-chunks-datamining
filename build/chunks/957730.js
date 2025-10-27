@@ -276,12 +276,12 @@ let V = Chunk428595.Z.RULES,
         if (null == s) return {
           content: e[0]
         };
-        let l = w.ZP.getUserTag(s, {
+        let l = D.ZP.getUserTag(s, {
           identifiable: r && A.Z.enabled ? "never" : "always"
         });
         if (r) {
           var c;
-          let e = null != (c = P.ZP.getNickname(null == a ? true : a.id, o, s)) ? c : w.ZP.getGlobalName(s);
+          let e = null != (c = P.ZP.getNickname(null == a ? true : a.id, o, s)) ? c : D.ZP.getGlobalName(s);
           return {
             content: null != e ? "@".concat(e) : "@".concat(l)
           }
@@ -460,7 +460,7 @@ function er(e, t, n) {
 function ei(e) {
   let t, n = null == e ? true : e.getGuildId(),
     r = null != n ? I.Z.getGuild(n) : null,
-    a = T.Z.can(D.Plq.MENTION_EVERYONE, e);
+    a = T.Z.can(w.Plq.MENTION_EVERYONE, e);
   t = (null == e ? true : e.isPrivate()) ? e.recipients.map(e => ({
     userId: e,
     nick: null

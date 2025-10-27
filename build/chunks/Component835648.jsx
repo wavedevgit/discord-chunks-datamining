@@ -83,9 +83,9 @@ function R(e, t) {
   return i
 }
 let P = [8, 8, 8, 8],
-  w = 40;
+  D = 40;
 
-function D(e) {
+function w(e) {
   var {
     icon: t,
     isSelected: n,
@@ -107,21 +107,21 @@ function D(e) {
 function L(e, t, n, i, a, o) {
   switch (e.categoryInfo.type) {
     case g.bg.FAVORITES:
-      return (0, r.jsx)(D, C(S({}, i), {
+      return (0, r.jsx)(w, C(S({}, i), {
         icon: c.r7p,
         onClick: t,
         isSelected: n,
         listItemProps: a
       }), e.key);
     case g.bg.RECENTLY_HEARD:
-      return (0, r.jsx)(D, C(S({}, i), {
+      return (0, r.jsx)(w, C(S({}, i), {
         icon: c.T39,
         onClick: t,
         isSelected: n,
         listItemProps: a
       }), e.key);
     case g.bg.FREQUENTLY_USED:
-      return (0, r.jsx)(D, C(S({}, i), {
+      return (0, r.jsx)(w, C(S({}, i), {
         icon: c.IeX,
         onClick: t,
         isSelected: n,
@@ -138,7 +138,7 @@ function L(e, t, n, i, a, o) {
         })
       }), e.key);
     case g.bg.DEFAULTS:
-      return (0, r.jsx)(D, C(S({}, i), {
+      return (0, r.jsx)(w, C(S({}, i), {
         icon: c.gw7,
         onClick: t,
         isSelected: n,
@@ -237,6 +237,6 @@ function j(e) {
     listPadding: o,
     renderCategoryListItem: v,
     rowCount: n.length,
-    categoryHeight: w
+    categoryHeight: D
   })
 }

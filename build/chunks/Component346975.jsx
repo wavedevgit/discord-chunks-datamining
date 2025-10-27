@@ -972,7 +972,7 @@ function eM(e) {
             variant: "text-xs/normal",
             color: "text-default",
             children: _ ? ex.intl.string(ex.t["/9i3qq"]) : 0 === w ? ex.intl.string(ex.t.DbgHxi) : ex.intl.formatToPlainString(ex.t["tBz/8b"], {
-              numPosts: w,
+              numPosts: null != w ? w : "",
               query: E
             })
           }), !_ && (0, r.jsx)(p.P3F, {

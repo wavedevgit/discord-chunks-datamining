@@ -2,7 +2,7 @@
 /** chunk id: 695346, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A2: () => e2,
+  A2: () => e3,
   AY: () => ei,
   CM: () => el,
   CW: () => ek,
@@ -13,7 +13,7 @@ require.d(exports, {
   Fg: () => ee,
   G6: () => eh,
   H1: () => M,
-  HV: () => e3,
+  HV: () => e2,
   I0: () => U,
   JG: () => eV,
   JN: () => ea,
@@ -26,7 +26,7 @@ require.d(exports, {
   Ou: () => Y,
   P4: () => eb,
   Pe: () => V,
-  QK: () => ew,
+  QK: () => eD,
   QZ: () => R,
   R$: () => y,
   RS: () => eI,
@@ -43,7 +43,7 @@ require.d(exports, {
   Xk: () => k,
   Xr: () => ep,
   YC: () => e1,
-  Yk: () => eD,
+  Yk: () => ew,
   _O: () => L,
   _j: () => eF,
   bh: () => eo,
@@ -52,7 +52,7 @@ require.d(exports, {
   cP: () => H,
   co: () => eg,
   d$: () => Z,
-  d4: () => D,
+  d4: () => w,
   d8: () => A,
   dN: () => b,
   eR: () => v,
@@ -175,10 +175,10 @@ let A = (0, Chunk560997.Zc)("notifications", "enableVoiceActivityNotifications",
     value: !!e
   })),
   P = (0, Chunk560997.Zc)("notifications", "focusModeExpiresAtMs", e => null != e ? e : "0", e => e),
-  w = [],
-  D = (0, Chunk560997.Zc)("textAndImages", "emojiPickerCollapsedSections", e => null != e ? e : w, e => e),
-  L = (0, Chunk560997.Zc)("textAndImages", "stickerPickerCollapsedSections", e => null != e ? e : w, e => e),
-  x = (0, Chunk560997.Zc)("textAndImages", "soundboardPickerCollapsedSections", e => null != e ? e : w, e => e),
+  D = [],
+  w = (0, Chunk560997.Zc)("textAndImages", "emojiPickerCollapsedSections", e => null != e ? e : D, e => e),
+  L = (0, Chunk560997.Zc)("textAndImages", "stickerPickerCollapsedSections", e => null != e ? e : D, e => e),
+  x = (0, Chunk560997.Zc)("textAndImages", "soundboardPickerCollapsedSections", e => null != e ? e : D, e => e),
   M = (0, Chunk560997.Zc)("textAndImages", "viewImageDescriptions", e => {
     var t;
     return null != (t = null == e ? true : e.value) && t
@@ -495,7 +495,7 @@ let eR = (0, Chunk560997.KM)((0, Chunk560997.Zc)("appearance", "developerMode", 
   }), {
     comparator: Chunk902704.Z
   }),
-  ew = (0, Chunk560997.R2)((0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "gifAutoPlay", e => {
+  eD = (0, Chunk560997.R2)((0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "gifAutoPlay", e => {
     var t;
     return null == (t = null == e ? true : e.value) || t
   }, e => o.D5.create({
@@ -507,7 +507,7 @@ let eR = (0, Chunk560997.KM)((0, Chunk560997.Zc)("appearance", "developerMode", 
     var e;
     return null == (e = Chunk263937.Z.getOverride("gifAutoPlay")) ? true : module.value
   })),
-  eD = (0, Chunk560997.R2)((0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "animateEmoji", e => {
+  ew = (0, Chunk560997.R2)((0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "animateEmoji", e => {
     var t;
     return null == (t = null == e ? true : e.value) || t
   }, e => o.D5.create({
@@ -664,12 +664,12 @@ let eJ = (0, Chunk560997.Zc)("appearance", "timestampHourCycle", e => null != e 
 let e$ = (0, Chunk560997.Zc)("userContent", "lastReceivedChangelogId", e => null != e ? e : "0", e => e),
   e0 = (0, Chunk560997.Zc)("safetySettings", "ignoreProfileSpeedbumpDisabled", e => null != e && e, e => e),
   e1 = (0, Chunk560997.Zc)("appearance", "uiDensity", e => e === a.Pi.UNSET_UI_DENSITY ? a.Pi.DEFAULT : null != e ? e : a.Pi.DEFAULT, e => e),
-  e2 = (0, Chunk560997.Zc)("inAppFeedbackSettings", "inAppFeedbackStates", e => (0, r.mapValues)(null != e ? e : {}, e => (0, r.mapValues)(e, e => (null == e ? true : e.value) != null ? Number(e.value) : true)), e => (0, r.mapValues)(e, e => (0, r.mapValues)(e, e => o.wA.create({
+  e3 = (0, Chunk560997.Zc)("inAppFeedbackSettings", "inAppFeedbackStates", e => (0, r.mapValues)(null != e ? e : {}, e => (0, r.mapValues)(e, e => (null == e ? true : e.value) != null ? Number(e.value) : true)), e => (0, r.mapValues)(e, e => (0, r.mapValues)(e, e => o.wA.create({
     value: null != e ? String(e) : true
   }))), {
     delay: Chunk526761.fy.AUTOMATED
   }),
-  e3 = (0, Chunk560997.Zc)("textAndImages", "showMentionSuggestions", e => {
+  e2 = (0, Chunk560997.Zc)("textAndImages", "showMentionSuggestions", e => {
     var t;
     return null == (t = null == e ? true : e.value) || t
   }, e => o.D5.create({

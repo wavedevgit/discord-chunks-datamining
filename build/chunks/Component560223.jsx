@@ -102,8 +102,8 @@ let v = e => {
       {
         fractionalState: P
       } = (0, l.Z)(),
-      w = (0, d.W)(),
-      D = (0, u.bg)({
+      D = (0, d.W)(),
+      w = (0, u.bg)({
         location: "PremiumPerks"
       }),
       L = (0, c.cL)({
@@ -115,8 +115,8 @@ let v = e => {
         hideCardsOnNarrowScreen: false,
         isPremiumSubscriber: R,
         fractionalState: P,
-        isInReverseTrial: w,
-        showProfileWidgets: D,
+        isInReverseTrial: D,
+        showProfileWidgets: w,
         showDisplayNameStyles: L
       }),
       M = x.some(e => null != e.pillText);

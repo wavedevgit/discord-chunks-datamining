@@ -60,7 +60,7 @@ function E(e) {
     S(e)
   }
 
-  function w() {
+  function D() {
     return null == E ? null : (0, r.jsx)("div", {
       className: h.marginBottom20,
       children: (0, r.jsx)(s.M14, {
@@ -70,7 +70,7 @@ function E(e) {
     })
   }
 
-  function D() {
+  function w() {
     return "localhost" !== T ? null : (0, r.jsx)("div", {
       className: p.inputWrapper,
       children: (0, r.jsx)(s.oil, {
@@ -99,7 +99,7 @@ function E(e) {
     actions: M,
     onClose: t,
     transitionState: n,
-    children: [w(), (0, r.jsxs)(d.Z, {
+    children: [D(), (0, r.jsxs)(d.Z, {
       direction: d.Z.Direction.VERTICAL,
       align: d.Z.Align.START,
       children: [(0, r.jsx)("div", {
@@ -131,7 +131,7 @@ function E(e) {
           onChange: P,
           placeholder: "URL Origin Type"
         })
-      }), D()]
+      }), w()]
     })]
   })
 }

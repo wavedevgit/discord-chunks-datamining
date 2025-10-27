@@ -166,7 +166,7 @@ function P(e) {
   })
 }
 
-function w(e) {
+function D(e) {
   let {
     answersInteraction: t,
     isSelected: n,
@@ -201,7 +201,7 @@ function w(e) {
   })).otherwise(() => null)
 }
 
-function D(e) {
+function w(e) {
   let {
     answer: t,
     isExpired: n,
@@ -233,7 +233,7 @@ function D(e) {
       label: t.votes,
       canShowVoterDetails: l,
       answerId: t.answerId
-    }), (0, r.jsx)(w, {
+    }), (0, r.jsx)(D, {
       answersInteraction: i,
       isSelected: c,
       didSelfVote: u,
@@ -256,7 +256,7 @@ function L(e) {
     answerClassName: O.answer,
     answersInteraction: n,
     canTapAnswers: a,
-    renderAnswerContent: e => (0, r.jsx)(D, {
+    renderAnswerContent: e => (0, r.jsx)(w, {
       answer: e,
       isExpired: t,
       answersInteraction: n,

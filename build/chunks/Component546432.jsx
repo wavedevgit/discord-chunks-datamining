@@ -36,7 +36,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk337595 = require("./337595.js"),
   Chunk374299 = require("./374299.js");
 
-function D(e, t, n) {
+function w(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -52,7 +52,7 @@ function L(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      D(e, t, n[t])
+      w(e, t, n[t])
     })
   }
   return e
@@ -136,15 +136,15 @@ let F = e => {
     toggleShowMenu: v,
     showMenu: y,
     channelId: p,
-    className: o()(w.hoverButton, {
-      [w.selected]: y
+    className: o()(D.hoverButton, {
+      [D.selected]: y
     }),
     imageUrl: n,
     mimeType: t
   }, "app")), null != a && b.push((0, r.jsx)(l.u, {
     text: R.intl.string(R.t["/XT3ij"]),
     children: (0, r.jsx)(c.P3F, {
-      className: o()(w.hoverButton, P.removeMosaicItemHoverButton),
+      className: o()(D.hoverButton, P.removeMosaicItemHoverButton),
       focusProps: {
         offset: 2
       },
@@ -162,7 +162,7 @@ let F = e => {
     children: (0, r.jsx)(h.Z, {
       target: "_blank",
       rel: "noreferrer noopener",
-      className: w.hoverButton,
+      className: D.hoverButton,
       iconClassName: P.downloadHoverButtonIcon,
       focusProps: {
         offset: 2
@@ -174,14 +174,14 @@ let F = e => {
   let I = Math.max(0, b.length - g);
   return (0, r.jsxs)(r.Fragment, {
     children: [g > 0 && b.length > 0 && (0, r.jsx)("div", {
-      className: o()(w.hoverButtonGroup, {
-        [w.nonMediaMosaicItem]: !f,
-        [w.forceShowHover]: y
+      className: o()(D.hoverButtonGroup, {
+        [D.nonMediaMosaicItem]: !f,
+        [D.forceShowHover]: y
       }),
       children: b.slice(I)
     }), (0, r.jsx)("div", {
       ref: m,
-      className: w.sizer
+      className: D.sizer
     })]
   })
 };
@@ -201,8 +201,8 @@ function V(e) {
     renderVideoComponent: E,
     renderAudioComponent: T,
     renderPlaintextFilePreview: A,
-    renderGenericFileComponent: w,
-    renderVisualPlaceholderComponent: D,
+    renderGenericFileComponent: D,
+    renderVisualPlaceholderComponent: w,
     className: L,
     imgContainerClassName: x,
     imgClassName: M,
@@ -357,8 +357,8 @@ function V(e) {
         mediaPlayerClassName: Z ? P.hasFooter : true
       });
     case "VISUAL_PLACEHOLDER":
-      if (null == D) return null;
-      return (0, r.jsx)(D, {
+      if (null == w) return null;
+      return (0, r.jsx)(w, {
         item: n,
         message: t,
         className: x,
@@ -390,7 +390,7 @@ function V(e) {
         renderAdjacentContent: e_
       });
     case "OTHER":
-      return (0, r.jsx)(w, {
+      return (0, r.jsx)(D, {
         item: n,
         message: t,
         className: L,
@@ -441,7 +441,7 @@ let Y = function(e) {
     width: h,
     height: b,
     type: y
-  } = n, O = s(n, (0, E.v)(a)), [v, I] = i.useState(null != O), T = (0, m.JO)(O), S = c === C.hV.MOSAIC, N = !S && (null != h && h < U || null != b && b < G), R = B(y), w = (0, A.R_)(y), D = u && null != O && (0, m.yf)(h, b), [x, j] = i.useState(false), Z = () => {
+  } = n, O = s(n, (0, E.v)(a)), [v, I] = i.useState(null != O), T = (0, m.JO)(O), S = c === C.hV.MOSAIC, N = !S && (null != h && h < U || null != b && b < G), R = B(y), D = (0, A.R_)(y), w = u && null != O && (0, m.yf)(h, b), [x, j] = i.useState(false), Z = () => {
     j(true)
   }, F = () => {
     j(false)
@@ -462,8 +462,8 @@ let Y = function(e) {
       focusable: !e,
       mediaLayoutType: c,
       hasFooter: null != d,
-      useFullWidth: !!D && !!e || l,
-      isVisualMediaType: w,
+      useFullWidth: !!w && !!e || l,
+      isVisualMediaType: D,
       onVideoControlsShow: Z,
       onVideoControlsHide: F,
       forcePlaceholder: T && v
@@ -478,7 +478,7 @@ let Y = function(e) {
       [P.mosaicItemNoJustify]: R,
       [P.mosaicItemFullWidth]: l,
       [P.mosaicItemMediaMosaic]: S,
-      [P.hideOverflow]: S && w,
+      [P.hideOverflow]: S && D,
       [P.mosaicItemWithFooter]: null != d
     }),
     children: [null != O ? (0, r.jsx)(p.ZP, {

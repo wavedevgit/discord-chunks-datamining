@@ -100,7 +100,7 @@ function B(e) {
     } = await n.e("84509").then(n.bind(n, 933696));
     return n => (0, r.jsx)(t, M({
       source: j(M({}, e), {
-        page: w.ZY5.GUILD_MEMBER_PROFILE_SETTINGS
+        page: D.ZY5.GUILD_MEMBER_PROFILE_SETTINGS
       })
     }, n))
   })
@@ -130,9 +130,9 @@ function Z(e) {
     pendingDisplayNameStyles: K
   } = (0, g.mD)(a, null == t ? true : t.id);
   i.useEffect(() => () => c.Z.wait(A.W3), []), i.useEffect(() => {
-    null != Z && f.ZP.trackWithMetadata(w.rMx.SETTINGS_PANE_VIEWED, {
+    null != Z && f.ZP.trackWithMetadata(D.rMx.SETTINGS_PANE_VIEWED, {
       settings_type: "guild",
-      destination_pane: w.jXE.SETTINGS_CUSTOMIZE_PROFILE,
+      destination_pane: D.jXE.SETTINGS_CUSTOMIZE_PROFILE,
       source: Z
     })
   }, [Z]);
@@ -145,8 +145,8 @@ function Z(e) {
     value: n,
     children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/normal",
-      children: D.intl.format(D.t["/PTB2E"], {
-        helpCenterLink: T.Z.getArticleURL(w.BhN.GUILD_PROFILES)
+      children: w.intl.format(w.t["/PTB2E"], {
+        helpCenterLink: T.Z.getArticleURL(D.BhN.GUILD_PROFILES)
       })
     }), null != t ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(P.Z, {
@@ -158,7 +158,7 @@ function Z(e) {
         profilePreviewTitle: (0, r.jsx)(l.Heading, {
           variant: "heading-md/medium",
           className: L.profilePreviewTitle,
-          children: D.intl.formatToPlainString(D.t.Tc0slG, {
+          children: w.intl.formatToPlainString(w.t.Tc0slG, {
             guildName: null == t ? true : t.name
           })
         }),

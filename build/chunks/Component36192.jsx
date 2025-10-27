@@ -138,7 +138,7 @@ function R(e) {
   } = e, m = null != (s = null == (t = l.client_info) ? true : t.location) ? s : null == (n = l.client_info) ? true : n.ip, g = null == (i = l.client_info) ? true : i.platform, {
     text: E,
     icon: b
-  } = w(null == (a = l.client_info) ? true : a.os), O = c ? null : (0, h.p)(l.approx_last_used_time), v = [E, g].filter(y.lm), I = [m, O].filter(y.lm);
+  } = D(null == (a = l.client_info) ? true : a.os), O = c ? null : (0, h.p)(l.approx_last_used_time), v = [E, g].filter(y.lm), I = [m, O].filter(y.lm);
   return (0, r.jsxs)("div", {
     className: o()(C.session, c ? C.currentSession : null),
     children: [(0, r.jsx)("div", {
@@ -231,7 +231,7 @@ function P() {
   })
 }
 
-function w(e) {
+function D(e) {
   switch (null == e ? true : e.toLowerCase().trim()) {
     case null:
     case true:

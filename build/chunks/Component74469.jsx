@@ -63,7 +63,7 @@ let v = (0, Chunk313201.hQ)(),
         iconSize: 32,
         animate: false
       })
-    }, [S]), w = i.useCallback(e => {
+    }, [S]), D = i.useCallback(e => {
       var t, n, i;
       if (null == e) return null;
       let a = S.get(e.value);
@@ -77,7 +77,7 @@ let v = (0, Chunk313201.hQ)(),
         textColor: "interactive-normal",
         textVariant: "text-sm/semibold"
       })
-    }, [S]), D = i.useCallback(e => {
+    }, [S]), w = i.useCallback(e => {
       let t = e[0];
       return null == t ? null : (0, r.jsx)(r.Fragment, {
         children: R(t)
@@ -106,8 +106,8 @@ let v = (0, Chunk313201.hQ)(),
         options: N,
         select: L,
         renderLeading: P,
-        renderTrailing: w,
-        renderOptionValue: D,
+        renderTrailing: D,
+        renderOptionValue: w,
         serialize: M,
         clear: k,
         clearable: null != C,

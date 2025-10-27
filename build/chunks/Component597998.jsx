@@ -65,13 +65,13 @@ function P(e, t) {
   return n
 }
 
-function w(e, t) {
+function D(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function D(e, t) {
+function w(e, t) {
   if (null == e) return {};
   var n, r, i = L(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -147,8 +147,8 @@ function j(e) {
     iconClassName: N,
     embeddedApplication: R,
     otherClientSessionType: P,
-    voicePlatform: w,
-    application: D,
+    voicePlatform: D,
+    application: w,
     guildId: L,
     channelId: x,
     user: k,
@@ -206,9 +206,9 @@ function j(e) {
       color: "currentColor",
       className: o()(C.icon, N)
     })
-  }, "activity")), P === S.YE.XBOX || w === T.wR.XBOX ? K.push((0, r.jsx)(y.Z, {
+  }, "activity")), P === S.YE.XBOX || D === T.wR.XBOX ? K.push((0, r.jsx)(y.Z, {
     className: o()(C.icon, N)
-  }, "xbox")) : (P === S.YE.PLAYSTATION || w === T.wR.PLAYSTATION) && K.push((0, r.jsx)(b.Z, {
+  }, "xbox")) : (P === S.YE.PLAYSTATION || D === T.wR.PLAYSTATION) && K.push((0, r.jsx)(b.Z, {
     className: o()(C.icon, N)
   }, "playstation")), v && K.push((0, r.jsx)(l.u, {
     text: A.intl.string(A.t["JH1SJ+"]),
@@ -220,7 +220,7 @@ function j(e) {
   }, "watch")), g && K.push((0, r.jsx)(_.ZP, {
     size: _.ZP.Sizes.SMALL
   }, "stream"));
-  let X = null != D && !(0, O.yE)(D.flags, I.udG.EMBEDDED),
+  let X = null != w && !(0, O.yE)(w.flags, I.udG.EMBEDDED),
     Q = null == U && X;
   return 0 !== K.length || 0 !== z.length || Z || Q ? (0, r.jsxs)("div", {
     className: o()(C.icons, t),
@@ -234,7 +234,7 @@ function j(e) {
       onMouseEnter: () => null == V ? true : V(true),
       onMouseLeave: () => null == V ? true : V(false),
       children: Q ? (0, r.jsx)(G, {
-        application: D,
+        application: w,
         iconClassName: N,
         guildId: L,
         channelId: x,
@@ -259,7 +259,7 @@ let U = function(e) {
       isOverlay: d = false,
       ref: f
     } = e,
-    _ = D(e, ["avatarContainerClass", "userNameClassName", "size", "selected", "disabled", "isOverlay", "ref"]);
+    _ = w(e, ["avatarContainerClass", "userNameClassName", "size", "selected", "disabled", "isOverlay", "ref"]);
   let {
     onClick: m,
     onKeyDown: E,
@@ -343,7 +343,7 @@ let U = function(e) {
           source: d ? I.jXE.OVERLAY : I.Sbl.VOICE_PANEL
         }
       };
-    return !P || d ? (0, r.jsx)(g.Z, w(R({}, t), {
+    return !P || d ? (0, r.jsx)(g.Z, D(R({}, t), {
       children: e
     })) : null
   }

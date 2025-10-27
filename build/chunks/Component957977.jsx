@@ -300,7 +300,7 @@ function C(e) {
     isDisabled: g
   }), {
     ref: R
-  } = N, P = b(N, ["ref"]), w = y.some(e => e.value === c);
+  } = N, P = b(N, ["ref"]), D = y.some(e => e.value === c);
   return (0, r.jsx)("div", E(m({}, P), {
     ref: R,
     className: o()(p.container, l),
@@ -309,7 +309,7 @@ function C(e) {
     "aria-errormessage": null == C ? true : C.errorMessageId,
     "aria-invalid": (null == C ? true : C.errorMessageId) != null,
     children: y.map(e => (0, r.jsx)(T, {
-      hasSelection: w,
+      hasSelection: D,
       disabled: g,
       checked: c === e.value,
       option: e,

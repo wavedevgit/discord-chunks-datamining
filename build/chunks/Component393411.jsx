@@ -106,7 +106,7 @@ function Z(e) {
         children: [(0, r.jsxs)("div", {
           className: L.headerLabel,
           children: [t, s && null != l && (0, r.jsx)(C.Cy, {
-            text: D.intl.formatToPlainString(D.t.iiLbvu, {
+            text: w.intl.formatToPlainString(w.t.iiLbvu, {
               percent: l
             }),
             className: L.discountPill,
@@ -146,7 +146,7 @@ function F(e) {
           }), (0, r.jsxs)("div", {
             className: L.headerColumnB,
             children: [t, s && null != l && (0, r.jsx)(C.Cy, {
-              text: D.intl.formatToPlainString(D.t.iiLbvu, {
+              text: w.intl.formatToPlainString(w.t.iiLbvu, {
                 percent: l
               }),
               className: L.discountPill,
@@ -218,20 +218,20 @@ let Y = function(e) {
   } = (0, S.ZP)({
     location: k
   });
-  P.pj.has(i.planId) && w.JwP.ALL_PAUSEABLE.has(i.status) && !W || (K = false);
+  P.pj.has(i.planId) && D.JwP.ALL_PAUSEABLE.has(i.status) && !W || (K = false);
   let z = (0, A.Ng)(),
     q = null == z || null == (t = z.discount) ? true : t.amount,
     X = (0, I.t7)(),
     Q = (0, I.lr)(),
     J = (0, T.W)(),
     $ = () => {
-      (i.status === w.O0b.ACTIVE || i.status === w.O0b.PAST_DUE || i.status === w.O0b.PAUSED) && en(R.R.PAUSE_SELECT)
+      (i.status === D.O0b.ACTIVE || i.status === D.O0b.PAST_DUE || i.status === D.O0b.PAUSED) && en(R.R.PAUSE_SELECT)
     },
     ee = () => {
-      (i.status === w.O0b.ACTIVE || i.status === w.O0b.PAST_DUE || i.status === w.O0b.PAUSE_PENDING || W) && en()
+      (i.status === D.O0b.ACTIVE || i.status === D.O0b.PAST_DUE || i.status === D.O0b.PAUSE_PENDING || W) && en()
     },
     et = () => {
-      i.status === w.O0b.BILLING_RETRY && en(R.R.CONFIRM)
+      i.status === D.O0b.BILLING_RETRY && en(R.R.CONFIRM)
     },
     en = e => {
       (0, l.ZDy)(async () => {
@@ -270,7 +270,7 @@ let Y = function(e) {
           pauseEndsAt: i.pauseEndsAt
         }
       });
-      i.status === w.O0b.PAUSED ? (0, p.Z)({
+      i.status === D.O0b.PAUSED ? (0, p.Z)({
         initialPlanId: i.premiumPlanIdFromItems,
         analyticsLocations: H,
         analyticsLocation: x,
@@ -280,14 +280,14 @@ let Y = function(e) {
       }) : c.v4(i, H)
     },
     ea = () => {
-      i.status === w.O0b.PAUSED && en(R.R.PAUSE_SELECT)
+      i.status === D.O0b.PAUSED && en(R.R.PAUSE_SELECT)
     },
     eo = () => {
       en(R.R.WHAT_YOU_LOSE)
     },
     es = e => (s()(null != o, "Expected renewalInvoicePreview"), (0, r.jsx)("div", {
       className: L.planInfo,
-      children: J ? D.intl.format(D.t["/SfHwl"], {
+      children: J ? w.intl.format(w.t["/SfHwl"], {
         weeks: 1
       }) : (0, y.qV)({
         planId: e,
@@ -311,7 +311,7 @@ let Y = function(e) {
             variant: "overlay-primary",
             size: "sm",
             loading: C,
-            text: D.intl.string(D.t.obRG6Y).toLocaleUpperCase()
+            text: w.intl.string(w.t.obRG6Y).toLocaleUpperCase()
           })
         })
       }
@@ -328,7 +328,7 @@ let Y = function(e) {
               disabled: C,
               onClick: $,
               size: "sm",
-              text: D.intl.string(D.t.eFlYVA)
+              text: w.intl.string(w.t.eFlYVA)
             })
           }) : (0, r.jsx)("div", {
             className: L.secondaryBannerTextButtonContainer,
@@ -337,7 +337,7 @@ let Y = function(e) {
               onClick: ee,
               disabled: C,
               size: "sm",
-              text: D.intl.string(D.t["ETE/oC"])
+              text: w.intl.string(w.t["ETE/oC"])
             })
           }), (0, r.jsx)(l.aML, {
             text: t,
@@ -352,7 +352,7 @@ let Y = function(e) {
                   subscription: i
                 })
               },
-              text: D.intl.string(D.t["dylp/7"])
+              text: w.intl.string(w.t["dylp/7"])
             }))
           })]
         })
@@ -363,21 +363,21 @@ let Y = function(e) {
         children: (0, r.jsx)(l.Button, {
           variant: "overlay-primary",
           size: "sm",
-          text: D.intl.string(D.t.iIvF2z),
+          text: w.intl.string(w.t.iIvF2z),
           loading: C,
           onClick: er
         })
       });
       switch (e) {
-        case w.O0b.BILLING_RETRY:
+        case D.O0b.BILLING_RETRY:
           return (0, r.jsx)(l.Button, {
             variant: "overlay-primary",
             size: "sm",
             onClick: et,
             loading: C,
-            text: D.intl.string(D.t["ETE/oC"])
+            text: w.intl.string(w.t["ETE/oC"])
           });
-        case w.O0b.PAUSE_PENDING:
+        case D.O0b.PAUSE_PENDING:
           return (0, r.jsxs)("div", {
             className: L.toolsButtons,
             children: [(0, r.jsx)("div", {
@@ -387,7 +387,7 @@ let Y = function(e) {
                 disabled: C,
                 onClick: ee,
                 size: "sm",
-                text: D.intl.string(D.t.cM1H0K)
+                text: w.intl.string(w.t.cM1H0K)
               })
             }), (0, r.jsx)("div", {
               "data-button-hoisted-classname-wrapper": true,
@@ -395,13 +395,13 @@ let Y = function(e) {
               children: (0, r.jsx)(l.Button, {
                 variant: "overlay-primary",
                 size: "sm",
-                text: D.intl.string(D.t.TgV5Qf),
+                text: w.intl.string(w.t.TgV5Qf),
                 loading: C,
                 onClick: ei
               })
             })]
           });
-        case w.O0b.PAUSED:
+        case D.O0b.PAUSED:
           if (W) return t();
           let {
             durations: n
@@ -415,13 +415,13 @@ let Y = function(e) {
                 onClick: ea,
                 disabled: C,
                 size: "sm",
-                text: D.intl.string(D.t.jNHWt6)
+                text: w.intl.string(w.t.jNHWt6)
               }) : (0, r.jsx)(l.Avr, {
                 variant: "always-white",
                 onClick: eo,
                 disabled: C,
                 size: "sm",
-                text: D.intl.string(D.t.cM1H0K)
+                text: w.intl.string(w.t.cM1H0K)
               })
             }), (0, r.jsx)("div", {
               "data-button-hoisted-classname-wrapper": true,
@@ -429,14 +429,14 @@ let Y = function(e) {
               children: (0, r.jsx)(l.Button, {
                 variant: "overlay-primary",
                 size: "sm",
-                text: D.intl.string(D.t.zpi5pg),
+                text: w.intl.string(w.t.zpi5pg),
                 loading: C,
                 onClick: ei
               })
             })]
           });
-        case w.O0b.ACTIVE:
-        case w.O0b.PAST_DUE:
+        case D.O0b.ACTIVE:
+        case D.O0b.PAST_DUE:
           return t()
       }
     },
@@ -448,9 +448,9 @@ let Y = function(e) {
       [L.tier0]: ed === P.PremiumTypes.TIER_0,
       [L.tier1]: ed === P.PremiumTypes.TIER_1,
       [L.tier2]: ed === P.PremiumTypes.TIER_2,
-      [L.canceled]: eu === w.O0b.CANCELED,
-      [L.pausePending]: eu === w.O0b.PAUSE_PENDING,
-      [L.paused]: eu === w.O0b.PAUSED && !W,
+      [L.canceled]: eu === D.O0b.CANCELED,
+      [L.pausePending]: eu === D.O0b.PAUSE_PENDING,
+      [L.paused]: eu === D.O0b.PAUSED && !W,
       [L.failedPayment]: (0, y.zV)(eu)
     },
     e_ = null;
@@ -460,7 +460,7 @@ let Y = function(e) {
         className: L.wordMark,
         children: [(0, r.jsx)(E.Z, {
           className: L.discordWordmark,
-          "aria-label": D.intl.string(D.t["t9uG/o"])
+          "aria-label": w.intl.string(w.t["t9uG/o"])
         }), (0, r.jsx)("div", {
           className: L.basicWordmark
         })]
@@ -472,7 +472,7 @@ let Y = function(e) {
     case P.PremiumTypes.TIER_2:
       e_ = (0, r.jsx)(g.Z, {
         className: L.planName,
-        "aria-label": D.intl.string(D.t.lpNrPu)
+        "aria-label": w.intl.string(w.t.lpNrPu)
       })
   }
   let ep = B.includes(i.status) && !W ? F : Z;

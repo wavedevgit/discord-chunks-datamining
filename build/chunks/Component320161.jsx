@@ -91,8 +91,8 @@ function I(e) {
     children: u({})
   });
   let P = E >= v.length - 1,
-    w = P ? s.r6K.RED : s.r6K.GREEN,
-    D = T ? w : s.r6K.PRIMARY,
+    D = P ? s.r6K.RED : s.r6K.GREEN,
+    w = T ? D : s.r6K.PRIMARY,
     L = () => {
       var e;
       if (!T) return t;
@@ -114,7 +114,7 @@ function I(e) {
     text: L(),
     delay: h,
     "aria-label": _,
-    color: D,
+    color: w,
     forceOpen: A,
     onAnimationRest: x,
     children: e => {

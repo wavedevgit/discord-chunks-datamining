@@ -112,14 +112,14 @@ function P(e) {
   delete v[t.id]
 }
 
-function w(e) {
+function D(e) {
   let {
     guildId: t
   } = e;
   delete v[t]
 }
 
-function D(e) {
+function w(e) {
   let {
     channel: t
   } = e;
@@ -177,13 +177,13 @@ let j = new k(Chunk570140.Z, {
   GUILD_CREATE: P,
   GUILD_UPDATE: P,
   GUILD_DELETE: P,
-  GUILD_ROLE_CREATE: w,
-  GUILD_ROLE_UPDATE: w,
-  GUILD_ROLE_DELETE: w,
-  IMPERSONATE_UPDATE: w,
-  IMPERSONATE_STOP: w,
-  CHANNEL_CREATE: D,
-  CHANNEL_DELETE: D,
+  GUILD_ROLE_CREATE: D,
+  GUILD_ROLE_UPDATE: D,
+  GUILD_ROLE_DELETE: D,
+  IMPERSONATE_UPDATE: D,
+  IMPERSONATE_STOP: D,
+  CHANNEL_CREATE: w,
+  CHANNEL_DELETE: w,
   CHANNEL_UPDATES: L,
   GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_SUCCESS: x,
   GUILD_ROLE_SUBSCRIPTIONS_FETCH_RESTRICTIONS_FAILURE: M

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   ZP: () => es,
-  b2: () => D
+  b2: () => w
 }), require("./388685.js");
 var Chunk952639 = require("./952639.js"),
   i = require.n(Chunk952639),
@@ -34,7 +34,7 @@ var Chunk952639 = require("./952639.js"),
   Chunk981631 = require("./981631.js"),
   Chunk526761 = require("./526761.js");
 
-function w(e, t, n) {
+function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -42,7 +42,7 @@ function w(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let D = 3e3,
+let w = 3e3,
   L = 800,
   x = {};
 
@@ -142,7 +142,7 @@ function F(e, t) {
       setAt: Date.now(),
       timeout: setTimeout(() => {
         G(e)
-      }, D)
+      }, w)
     })
   });
   let a = n || new Set(i.map(e => e.channel_id)).size > 1;
@@ -155,7 +155,7 @@ function V(e) {
   let t = {},
     n = {};
   return e.forEach(e => {
-    var r, i, a, o, s, l, c, u, d, f, _, p;
+    var r, i, a, o, s, l, c, u, d, f, _, p, h, m, g, E;
     null == t[e.channel_id] && (t[e.channel_id] = {
       numOfAttachments: 0,
       numOfAttachmentsPendingScan: 0,
@@ -164,34 +164,42 @@ function V(e) {
     }), null == n[e.id] && (n[e.id] = {
       channelId: e.channel_id,
       numOfAttachments: 0,
+      numOfSelfHarmAttachments: 0,
       numOfGoreAttachments: 0,
       numOfExplicitAttachments: 0,
       numOfEmbeds: 0,
+      numOfSelfHarmEmbeds: 0,
       numOfGoreEmbeds: 0,
       numOfExplicitEmbeds: 0
     });
-    let h = null != (c = null == (r = e.attachments) ? true : r.length) ? c : 0,
-      m = null != (u = null == (i = e.embeds) ? true : i.length) ? u : 0,
+    let b = null != (d = null == (r = e.attachments) ? true : r.length) ? d : 0,
+      y = null != (f = null == (i = e.embeds) ? true : i.length) ? f : 0,
       {
-        attachmentIds: g,
-        embedIds: E
+        attachmentIds: O,
+        embedIds: I
       } = (0, A.DQ)(e),
-      b = t[e.channel_id];
-    b.numOfAttachments += h, b.numOfEmbeds += m, b.numOfAttachmentsPendingScan += g.length, b.numOfEmbedsPendingScan += E.length;
-    let y = n[e.id];
-    y.numOfAttachments += h, y.numOfEmbeds += m, y.numOfExplicitAttachments = null != (d = null == (a = e.attachments) ? true : a.filter(e => (0, A.SI)(S._.EXPLICIT, {
+      T = t[e.channel_id];
+    T.numOfAttachments += b, T.numOfEmbeds += y, T.numOfAttachmentsPendingScan += O.length, T.numOfEmbedsPendingScan += I.length;
+    let C = n[e.id];
+    C.numOfAttachments += b, C.numOfEmbeds += y, C.numOfExplicitAttachments = null != (_ = null == (a = e.attachments) ? true : a.filter(e => (0, A.SI)(S._.EXPLICIT, {
       type: v.l.Attachment,
       media: e
-    })).length) ? d : 0, y.numOfExplicitEmbeds = null != (f = null == (o = e.embeds) ? true : o.filter(e => (0, A.SI)(S._.EXPLICIT, {
+    })).length) ? _ : 0, C.numOfExplicitEmbeds = null != (p = null == (o = e.embeds) ? true : o.filter(e => (0, A.SI)(S._.EXPLICIT, {
       type: v.l.Embed,
       media: e
-    })).length) ? f : 0, y.numOfGoreAttachments = null != (_ = null == (s = e.attachments) ? true : s.filter(e => (0, A.SI)(S._.GORE, {
+    })).length) ? p : 0, C.numOfGoreAttachments = null != (h = null == (s = e.attachments) ? true : s.filter(e => (0, A.SI)(S._.GORE, {
       type: v.l.Attachment,
       media: e
-    })).length) ? _ : 0, y.numOfGoreEmbeds = null != (p = null == (l = e.embeds) ? true : l.filter(e => (0, A.SI)(S._.GORE, {
+    })).length) ? h : 0, C.numOfGoreEmbeds = null != (m = null == (l = e.embeds) ? true : l.filter(e => (0, A.SI)(S._.GORE, {
       type: v.l.Embed,
       media: e
-    })).length) ? p : 0
+    })).length) ? m : 0, C.numOfSelfHarmAttachments = null != (g = null == (c = e.attachments) ? true : c.filter(e => (0, A.SI)(S._.SELF_HARM, {
+      type: v.l.Attachment,
+      media: e
+    })).length) ? g : 0, C.numOfSelfHarmEmbeds = null != (E = null == (u = e.embeds) ? true : u.filter(e => (0, A.SI)(S._.SELF_HARM, {
+      type: v.l.Embed,
+      media: e
+    })).length) ? E : 0
   }), {
     channelLookup: t,
     messageLookup: n
@@ -266,9 +274,11 @@ function W(e, t) {
       numOfAttachments: n.numOfAttachments,
       numOfGoreAttachments: n.numOfGoreAttachments,
       numOfExplicitAttachments: n.numOfExplicitAttachments,
+      numOfSelfHarmAttachments: n.numOfSelfHarmAttachments,
       numOfEmbeds: n.numOfEmbeds,
       numOfGoreEmbeds: n.numOfGoreEmbeds,
-      numOfExplicitEmbeds: n.numOfExplicitEmbeds
+      numOfExplicitEmbeds: n.numOfExplicitEmbeds,
+      numOfSelfHarmEmbeds: n.numOfSelfHarmEmbeds
     })
   }), n.length > 0 && (F(n, t), true)
 }
@@ -295,10 +305,12 @@ function K(e) {
       channelId: n.channelId,
       numOfAttachments: n.numOfAttachments,
       numOfGoreAttachments: n.numOfGoreAttachments,
+      numOfSelfHarmAttachments: n.numOfSelfHarmAttachments,
       numOfExplicitAttachments: n.numOfExplicitAttachments,
       numOfEmbeds: n.numOfEmbeds,
       numOfGoreEmbeds: n.numOfGoreEmbeds,
-      numOfExplicitEmbeds: n.numOfExplicitEmbeds
+      numOfExplicitEmbeds: n.numOfExplicitEmbeds,
+      numOfSelfHarmEmbeds: n.numOfSelfHarmEmbeds
     })
   }), t.length > 0 && (F(t), true)
 }
@@ -434,7 +446,7 @@ function ea(e) {
 }
 class eo extends Chunk147913.Z {
   constructor(...e) {
-    super(...e), w(this, "actions", {
+    super(...e), D(this, "actions", {
       LOAD_MESSAGES_SUCCESS: X,
       LOAD_FORUM_POSTS: $,
       LOAD_THREADS_SUCCESS: ee,

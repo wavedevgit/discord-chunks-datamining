@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  Ek: () => D,
+  Ek: () => w,
   I1: () => j,
   ZP: () => ev
 }), require("./388685.js"), require("./539854.js"), require("./704826.js"), require("./35282.js");
@@ -68,8 +68,8 @@ function P(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let w = new Chunk710845.Z("KeybindsStore"),
-  D = {
+let D = new Chunk710845.Z("KeybindsStore"),
+  w = {
     id: "1000",
     action: Chunk981631.kg4.TOGGLE_MUTE,
     shortcut: (0, Chunk13140.Kd)("mod+shift+m"),
@@ -104,7 +104,7 @@ let x = "1001",
     var i, a;
     let o = (0, b.pz)(false).get("Backquote"),
       s = (0, b.pz)(true).get("Backquote");
-    w.log(e, {
+    D.log(e, {
       tags: {
         backquoteKey: null != o ? o : "unknown",
         nativeBackquoteKey: null != s ? s : "unknown",
@@ -158,8 +158,8 @@ let B = () => {
 
 function X(e) {
   switch (e) {
-    case D.id:
-      return D;
+    case w.id:
+      return w;
     case B().id:
       return B();
     default:
@@ -225,12 +225,12 @@ function en() {
   } = Chunk658785.Z.getCurrentConfig({
     location: "KeybindsStore"
   });
-  null == l().find(F, e => D.action === e.action && e.enabled && e.shortcut.length > 0) && !__OVERLAY__ && !W && H && module && (es(D), W = true)
+  null == l().find(F, e => w.action === e.action && e.enabled && e.shortcut.length > 0) && !__OVERLAY__ && !W && H && module && (es(w), W = true)
 }
 
 function er() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-  (W || module) && (eo(D.id), W = false)
+  (W || module) && (eo(w.id), W = false)
 }
 
 function ei(e) {
@@ -244,7 +244,7 @@ function ea(e, t, n, r) {
   if (g.isPlatformEmbedded) try {
     E.ZP.inputEventRegister(parseInt(e), t, n, r)
   } catch (n) {
-    throw w.error("Failed to register native keybind", {
+    throw D.error("Failed to register native keybind", {
       eventId: e,
       shortcut: t
     }, n), n
@@ -278,7 +278,7 @@ function es(e) {
     enabled: r
   } = e;
   if (0 === t.length || null == t || n === v.kg4.UNASSIGNED || !r) return;
-  if (null == Y[n]) return void w.error("[kb store] KeybindStore: Looking for callback action ".concat(n, " but it doesn't exist in this version. Skipping"));
+  if (null == Y[n]) return void D.error("[kb store] KeybindStore: Looking for callback action ".concat(n, " but it doesn't exist in this version. Skipping"));
   let i = e.id,
     a = Y[n].keyEvents;
   e.action === v.kg4.TOGGLE_MUTE && er(), e.action === v.kg4.TOGGLE_OVERLAY_INPUT_LOCK && et(), ea(i, t, e => $(i, e), N({
@@ -358,7 +358,7 @@ function ep(e) {
     try {
       es(e)
     } catch (t) {
-      w.error("Failed to register keybind", e, t)
+      D.error("Failed to register keybind", e, t)
     }
   }), H = true, null == r && (r = p.Z.subscribe({
     location: "KeybindsStore"
@@ -435,7 +435,7 @@ Chunk714338.Z.setGetKeybindList(() => {
   } = Chunk658785.Z.getCurrentConfig({
     location: "KeybindsStore"
   });
-  return exports && module.push((0, Chunk13140.BB)(D.shortcut)), module
+  return exports && module.push((0, Chunk13140.BB)(w.shortcut)), module
 });
 class ey extends(i = Chunk442837.ZP.DeviceSettingsStore) {
   initialize(e) {
@@ -466,7 +466,7 @@ class ey extends(i = Chunk442837.ZP.DeviceSettingsStore) {
         location: "KeybindsStore"
       }),
       i = l().find(F, r => r.action === e && (!t || r.managed) && (!n || r.shortcut.length > 0 && r.enabled));
-    return null != i ? i : r && e === v.kg4.TOGGLE_MUTE ? D : null
+    return null != i ? i : r && e === v.kg4.TOGGLE_MUTE ? w : null
   }
   getOverlayKeybind() {
     let e = this.getKeybindForAction(Chunk981631.kg4.TOGGLE_OVERLAY_INPUT_LOCK, true);

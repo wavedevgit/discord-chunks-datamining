@@ -34,8 +34,8 @@ function _(e) {
     sourceFile: N,
     existingSound: S,
     onClose: O,
-    transitionState: E,
-    showGuildPicker: P = false
+    transitionState: P,
+    showGuildPicker: E = false
   } = e, [I, M] = l.useState(null != (t = null != (n = null == N ? true : N.name) ? n : null == S ? true : S.name) ? t : ""), [Z, k] = l.useState(null != (r = null == S ? true : S.volume) ? r : 1), [T, F] = l.useState(null == S ? true : S.emojiId), [D, R] = l.useState(null == S ? true : S.emojiName), {
     file: B,
     loadAudioFromFile: U,
@@ -171,14 +171,14 @@ function _(e) {
     }], [ei, ea, z, et, O]);
   return (0, a.jsx)(o.Modal, {
     onClose: O,
-    transitionState: E,
+    transitionState: P,
     title: et ? j.intl.string(j.t.HmsZGS) : j.intl.string(j.t["ioD/9I"]),
     actions: es,
     children: (0, a.jsxs)(o.C3N, {
       children: [null != G && !G.hasFieldErrors() && (0, a.jsx)(o.M14, {
         type: "critical",
         children: G.message
-      }), P ? (0, a.jsx)(y.Z, {
+      }), E ? (0, a.jsx)(y.Z, {
         label: j.intl.string(j.t.UYt7iQ),
         value: K,
         onChange: Q

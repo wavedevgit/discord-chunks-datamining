@@ -203,7 +203,7 @@ function P(e) {
   })
 }
 
-function w(e) {
+function D(e) {
   let {
     guildId: t,
     guildBoostSlotRecords: n,
@@ -227,7 +227,7 @@ function w(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   let {
     guildId: t,
     appliedGuildBoosts: n,
@@ -277,7 +277,7 @@ function L(e) {
     className: v.wrapper,
     children: [(0, r.jsx)("div", {
       className: v.container,
-      children: h.default.keys(a).map(e => (0, r.jsx)(D, {
+      children: h.default.keys(a).map(e => (0, r.jsx)(w, {
         guildId: e,
         premiumSubscription: n,
         appliedGuildBoosts: a[e]
@@ -324,7 +324,7 @@ function x(e) {
     className: v.wrapper,
     children: [(0, r.jsx)("div", {
       className: v.container,
-      children: h.default.keys(s).map(e => (0, r.jsx)(w, {
+      children: h.default.keys(s).map(e => (0, r.jsx)(D, {
         guildId: e,
         guildBoostSlotRecords: s[e],
         premiumSubscription: n,

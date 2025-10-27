@@ -236,7 +236,7 @@ function P(e) {
   })
 }
 
-function w(e) {
+function D(e) {
   var t;
   let {
     modelId: n,
@@ -247,7 +247,7 @@ function w(e) {
   }), "USER_CANCELED_DOWNLOAD" in (null != r ? r : {}) || (E.error = "ERROR_DOWNLOADING_DEPENDENCY"))
 }
 
-function D(e) {
+function w(e) {
   let {
     modelId: t
   } = e;
@@ -283,8 +283,8 @@ f(C, "displayName", "VoiceFilterStore");
 let U = new C(Chunk570140.Z, {
   VOICE_FILTER_DOWNLOAD_STARTED: R,
   VOICE_FILTER_DOWNLOAD_PROGRESS: P,
-  VOICE_FILTER_DOWNLOAD_FAILED: w,
-  VOICE_FILTER_FILE_READY: D,
+  VOICE_FILTER_DOWNLOAD_FAILED: D,
+  VOICE_FILTER_FILE_READY: w,
   VOICE_FILTER_CATALOG_FETCH_SUCCESS: S,
   VOICE_FILTER_CATALOG_FETCH_FAILED: A,
   VOICE_FILTER_UPDATE_LIMITED_TIME_VOICES: N,

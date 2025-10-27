@@ -29,19 +29,19 @@ var Chunk951288 = require("./951288.js"),
   Chunk491202 = require("./491202.js"),
   Chunk434227 = require("./434227.js"),
   Chunk600126 = require("./600126.js");
-let D = new Set(["application/json", "image/png", "image/apng", "image/gif", "image/jpeg", "image/jpg"]),
-  P = [{
+let P = new Set(["application/json", "image/png", "image/apng", "image/gif", "image/jpeg", "image/jpg"]),
+  k = [{
     name: "Sticker file",
     extensions: ["json", "png", "apng", "gif", "jpeg", "jpg"]
   }];
 
-function Z(e, t) {
+function D(e, t) {
   p.default.track(I.rMx.STICKER_UPLOAD_COMPLETED, {
     successful: e,
     error: null != t ? t : ""
   })
 }
-let k = e => {
+let Z = e => {
   let {
     stickerPreview: t
   } = e;
@@ -84,7 +84,7 @@ function R(e) {
     var t;
     if (null == e) return;
     let l = null == (t = e.type) ? true : t.split(";")[0];
-    if (!D.has(l)) return void ei({
+    if (!P.has(l)) return void ei({
       message: w.intl.string(w.t.B2hGAG),
       isBlocking: true
     });
@@ -158,14 +158,14 @@ function R(e) {
           guildId: U,
           body: e,
           platform: "web"
-        }), Z(true), (0, u.showToast)((0, u.createToast)(w.intl.string(w.t.QR85gd), u.ToastType.SUCCESS))
+        }), D(true), (0, u.showToast)((0, u.createToast)(w.intl.string(w.t.QR85gd), u.ToastType.SUCCESS))
       }
       A()
     } catch (e) {
       ei({
         message: e.body.message,
         isBlocking: false
-      }), Z(false, e.body.message)
+      }), D(false, e.body.message)
     } finally {
       el(false)
     }
@@ -226,7 +226,7 @@ function R(e) {
         children: (0, n.jsxs)(s.C3N, {
           children: [(0, n.jsx)(s.gNt, {
             label: w.intl.string(w.t.gjdiKE),
-            children: (0, n.jsx)(k, {
+            children: (0, n.jsx)(Z, {
               stickerPreview: eg
             })
           }), (0, n.jsxs)(s.NIo, {
@@ -240,7 +240,7 @@ function R(e) {
               required: true,
               children: (0, n.jsx)(m.Z, {
                 buttonText: w.intl.string(w.t.xEnDUa),
-                filters: P,
+                filters: k,
                 filename: null != (z = null == X ? true : X.filename) ? z : "",
                 placeholder: w.intl.string(w.t.rUYLJ4),
                 onFileSelect: ec

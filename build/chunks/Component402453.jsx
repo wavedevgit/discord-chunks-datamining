@@ -2,14 +2,15 @@
 /** chunk id: 402453, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  A: () => l,
-  KJ: () => o,
-  ZF: () => s,
-  kb: () => c
+  A: () => c,
+  KJ: () => s,
+  ZF: () => l,
+  kb: () => u
 });
 var Chunk951288 = require("./951288.js"),
-  Chunk647438 = require("./647438.js");
-let a = {
+  Chunk647438 = require("./647438.js"),
+  Chunk594886 = require("./594886.js");
+let o = {
     i18n: {
       SPINNER_LOADING_LABEL: "Loading",
       BUTTON_LOADING_STARTED_LABEL: "Loading",
@@ -44,34 +45,41 @@ let a = {
       KEY_BACKSPACE: "Backspace",
       KEY_BACKSPACE_A11Y_LABEL: "Backspace",
       KEY_DELETE_A11Y_LABEL: "Delete",
-      KEY_SHIFT: "Shift"
+      KEY_SHIFT: "Shift",
+      DATE_INPUT_OPEN_CALENDAR_LABEL: "Open calendar",
+      CALENDAR_PREVIOUS_MONTH_LABEL: "Previous month",
+      CALENDAR_NEXT_MONTH_LABEL: "Next month"
     },
     theme: "light",
+    locale: "en-US",
     saturation: .5,
     defaultLayerContext: true,
     trackImpression: true,
     isWindowFocused: true,
     dynamicGraphicComponents: true
   },
-  o = Chunk647438.createContext(a);
+  s = Chunk647438.createContext(o);
 
-function s() {
-  let e = Chunk647438.useContext(o);
-  return module === a && console.warn("useManaContext must be used within a ManaContext.Provider"), module
-}
-
-function l(e) {
-  var t, n;
-  return (null != (n = null == (t = s().experiments) ? true : t.enabledExperiments) ? n : []).includes("mana-toggle-inputs")
+function l() {
+  let e = Chunk647438.useContext(s);
+  return module === o && console.warn("useManaContext must be used within a ManaContext.Provider"), module
 }
 
 function c(e) {
+  var t, n;
+  return (null != (n = null == (t = l().experiments) ? true : t.enabledExperiments) ? n : []).includes("mana-toggle-inputs")
+}
+
+function u(e) {
   let {
     children: t,
     value: n
   } = e;
-  return (0, r.jsx)(o.Provider, {
+  return (0, r.jsx)(s.Provider, {
     value: n,
-    children: t
+    children: (0, r.jsx)(a.b, {
+      locale: n.locale,
+      children: t
+    })
   })
 }

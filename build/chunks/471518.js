@@ -4,7 +4,7 @@
 require.d(exports, {
   CP: () => N,
   T4: () => R,
-  XK: () => D,
+  XK: () => w,
   g5: () => L,
   gZ: () => A,
   i6: () => C,
@@ -282,10 +282,10 @@ async function P(e) {
   }
 }
 
-function w() {
+function D() {
   return (0, Chunk358085.isAndroid)() ? Chunk344372.R.ANDROID : (0, Chunk358085.isIOS)() ? Chunk344372.R.IOS : Chunk344372.R.WEB
 }
-async function D() {
+async function w() {
   let {
     surface: e = Chunk973693.Y.APPLICATION_DIRECTORY,
     activeState: t = Chunk535655.E.ACTIVE
@@ -310,7 +310,7 @@ async function D() {
         query: {
           surface: module,
           active_state: exports,
-          platform: w(),
+          platform: D(),
           locale: Chunk706454.default.locale,
           cache: Chunk358085
         },

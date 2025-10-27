@@ -52,8 +52,8 @@ let C = "recentMentionFilterSettings",
   N = [],
   R = {},
   P = {},
-  w = false,
-  D = true,
+  D = false,
+  w = true,
   L = Chunk433517.K.get(C, {
     guildFilter: Chunk981631.NgX.ALL_SERVERS,
     everyoneFilter: true,
@@ -85,7 +85,7 @@ function G(e) {
   let {
     guildId: t
   } = e;
-  w = true, null == t && L.guildFilter === T.NgX.THIS_SERVER && X({
+  D = true, null == t && L.guildFilter === T.NgX.THIS_SERVER && X({
     guildFilter: T.NgX.ALL_SERVERS
   })
 }
@@ -129,11 +129,11 @@ function F(e) {
     addedMessages: i
   }), r ? N = N.concat(i) : (N = i, P = {}), a().forEach(i, e => {
     P[e.id] = true
-  }), w = false, D = t, M = (0, l.zO)(), x = true
+  }), D = false, w = t, M = (0, l.zO)(), x = true
 }
 
 function V() {
-  w = false
+  D = false
 }
 
 function H(e) {
@@ -283,7 +283,7 @@ function er(e) {
     deletedMessages: N.slice(t)
   });
   for (let e = t; e < N.length; ++e) delete P[N[e].id];
-  N.length > (N = N.slice(0, t)).length && (D = true)
+  N.length > (N = N.slice(0, t)).length && (w = true)
 }
 
 function ei(e) {
@@ -309,10 +309,10 @@ class ea extends(r = Chunk442837.ZP.Store) {
     return P[e]
   }
   get loading() {
-    return w
+    return D
   }
   get hasMore() {
-    return D
+    return w
   }
   get guildFilter() {
     return L.guildFilter

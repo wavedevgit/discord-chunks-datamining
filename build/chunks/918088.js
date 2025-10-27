@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Tk: () => P,
-  ZP: () => w,
+  ZP: () => D,
   ef: () => A,
   r8: () => R
 }), require("./388685.js"), require("./314940.js");
@@ -123,15 +123,15 @@ function P(e, t) {
     C = O.some(e => true === e.me_vote),
     N = !b && C,
     P = N || h || y,
-    w = _ && T && (!C || b || P),
-    D = null == (r = u.Z.getChannel(e.getChannelId())) || null == (n = r.getGuildId) ? true : n.call(r),
-    L = null != D ? d.ZP.getSelfMember(D) : null,
+    D = _ && T && (!C || b || P),
+    w = null == (r = u.Z.getChannel(e.getChannelId())) || null == (n = r.getGuildId) ? true : n.call(r),
+    L = null != w ? d.ZP.getSelfMember(w) : null,
     x = (0, l.EY)(L),
     M = (0, c.b)(L),
     k = !E && A && !N && _ && !x && !M;
   return {
     poll: s,
-    canTapAnswers: w,
+    canTapAnswers: D,
     canRemoveVote: N && _ && !h,
     canShowVoteCounts: P,
     canSubmitVote: k,
@@ -151,7 +151,7 @@ function P(e, t) {
   }
 }
 
-function w(e, t) {
+function D(e, t) {
   var n, o;
   let {
     animateEmoji: s = false,
@@ -174,8 +174,8 @@ function w(e, t) {
   if (null == S) return;
   let {
     canTapAnswers: R,
-    canRemoveVote: w,
-    canShowVoteCounts: D,
+    canRemoveVote: D,
+    canShowVoteCounts: w,
     canSubmitVote: L,
     expirationLabel: x = T.intl.string(T.t["e+J3JZ"]),
     hasSelectedAnswer: M,
@@ -236,7 +236,7 @@ function w(e, t) {
     canSubmitVote: L,
     hasVoted: k,
     isEditingVote: j,
-    canRemoveVote: w,
+    canRemoveVote: D,
     isInteractive: G,
     showResults: H
   }).with({
@@ -340,7 +340,7 @@ function w(e, t) {
     canTapAnswers: R,
     canSelectMultipleAnswers: $,
     hasSelectedAnswer: M,
-    canShowVoteCounts: D,
+    canShowVoteCounts: w,
     hasVoted: k,
     isExpired: U,
     myAvatarUrl: g,

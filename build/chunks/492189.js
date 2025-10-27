@@ -135,11 +135,11 @@ Chunk507604 ? (Y || (Chunk840991.f = et, Chunk117895.f = en, J(z, "buffer"), J(z
         view: new H(i)
       }); c < l;) P(e, c++)
   }), S && S(E, K), b = E.prototype = I(z)), b.constructor !== E && f(b, "constructor", E), U(b).TypedArrayConstructor = E, W && f(b, W, l);
-  var w = E !== _;
+  var D = E !== _;
   y[l] = E, r({
     global: true,
     constructor: true,
-    forced: w,
+    forced: D,
     sham: !Y
   }, y), X in E || f(E, X, o), X in b || f(b, X, o), R(l)
 }) : module.exports = function() {}

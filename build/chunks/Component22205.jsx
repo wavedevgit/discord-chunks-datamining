@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk534887 = require("./534887.js");
 
-function w(e, t, n) {
+function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -41,7 +41,7 @@ function w(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let D = o().throttle(() => {
+let w = o().throttle(() => {
     Chunk797614.Z.increment({
       name: Chunk286379.V.APP_CRASHED,
       tags: ["reason:".concat(Chunk818405.v.UNHANDLED_JS_ERROR), "level:".concat(Chunk587158.c.FATAL)]
@@ -68,13 +68,13 @@ function x(e) {
   let T = i.useCallback(() => {
       _.set(0), null != m.current && clearTimeout(m.current), m.current = null, null == o || o(), null == u || u()
     }, [_, o, u]),
-    w = i.useCallback(e => {
+    D = i.useCallback(e => {
       O || (v(true), null == o || o(), p.Z.track(N.rMx.NOTIFICATION_CLICKED, {
         notif_type: C.n0.OverlayCrashed,
         action_type: "reload"
       }, true), e.stopPropagation(), setTimeout(() => null == l ? true : l(), 200))
     }, [o, l, O]),
-    D = i.useCallback(e => {
+    w = i.useCallback(e => {
       e.stopPropagation(), e.shiftKey ? (y(true), null != m.current && clearTimeout(m.current)) : y(false)
     }, [y]),
     x = i.useCallback(e => {
@@ -117,8 +117,8 @@ function x(e) {
       height: 40,
       className: P.notificationIcon
     }),
-    onNotificationClick: D,
-    onConfirmClick: w,
+    onNotificationClick: w,
+    onConfirmClick: D,
     onCancelClick: null != M ? x : true,
     onDismissClick: o,
     expand: true,
@@ -154,7 +154,7 @@ class M extends Chunk647438.PureComponent {
       error_stack: e.stack,
       sentry_issue_id: i,
       error_level: "fatal"
-    }), D(), this.pid = r
+    }), w(), this.pid = r
   }
   render() {
     let {
@@ -198,11 +198,11 @@ class M extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), w(this, "state", {
+    super(...e), D(this, "state", {
       error: null,
       showError: true,
       info: null
-    }), w(this, "pid", null)
+    }), D(this, "pid", null)
   }
 }
 let k = M

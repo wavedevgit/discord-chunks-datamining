@@ -2,7 +2,7 @@
 /** chunk id: 25251, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => D
+  Z: () => w
 });
 var r, Chunk392711 = require("./392711.js"),
   Chunk442837 = require("./442837.js"),
@@ -107,7 +107,7 @@ let u = {},
   P = e => {
     u = {}, _ = false, p = 0, h = 0
   };
-class w extends(r = Chunk442837.ZP.Store) {
+class D extends(r = Chunk442837.ZP.Store) {
   getAllProfileEffects() {
     return Object.values(u)
   }
@@ -121,8 +121,8 @@ class w extends(r = Chunk442837.ZP.Store) {
     return Date.now() >= p
   }
 }
-c(w, "displayName", "ProfileEffectStore");
-let D = new w(Chunk570140.Z, {
+c(D, "displayName", "ProfileEffectStore");
+let w = new D(Chunk570140.Z, {
   PROFILE_EFFECTS_FETCH_ALL: O,
   PROFILE_EFFECTS_FETCH_ALL_SUCCESS: v,
   PROFILE_EFFECTS_FETCH_ALL_FAILURE: I,

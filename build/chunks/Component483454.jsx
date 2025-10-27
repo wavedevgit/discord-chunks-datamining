@@ -2,7 +2,7 @@
 /** chunk id: 483454, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  M: () => D,
+  M: () => w,
   h: () => P
 }), require("./467055.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -229,8 +229,8 @@ let A = [Chunk409813.h8.PAYMENT_ELEMENT],
       children: (0, r.jsx)(R, O({}, n))
     })
   },
-  w = ["link"],
-  D = e => {
+  D = ["link"],
+  w = e => {
     let {
       step: t,
       handleStepChange: n,
@@ -243,7 +243,7 @@ let A = [Chunk409813.h8.PAYMENT_ELEMENT],
       onChange: e => {
         s && null != a && a.log("PaymentElements onChange event:", e), _(e.complete), g((0, m.hR)(e.value.type))
       },
-      wallets: w
+      wallets: D
     }), [a, s]), O = i.useMemo(() => ({
       onChange: e => {
         var t;

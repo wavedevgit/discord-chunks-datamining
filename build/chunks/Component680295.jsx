@@ -62,17 +62,17 @@ let I = e => {
     (0, b.Z)(E);
     let [A, C] = i.useState(0), [N, R] = i.useState(0), {
       accessibilityLabel: P
-    } = E, [w, D] = i.useState(-v), {
+    } = E, [D, w] = i.useState(-v), {
       stop: L,
       reset: x,
       ticking: M
     } = (0, p.Z)(e => {
-      D(t => t + e)
+      w(t => t + e)
     }), k = i.useRef(v);
     i.useEffect(() => {
       k.current = v
     }), i.useEffect(() => {
-      D(-k.current), S((0, m.H)(E.effects))
+      w(-k.current), S((0, m.H)(E.effects))
     }, [E]), i.useEffect(() => {
       let e = 0,
         t = 1 / 0;
@@ -83,7 +83,7 @@ let I = e => {
     }, [R, T]);
     let [j, U] = i.useState(false);
     return i.useEffect(() => {
-      true === u || l || (L(), D(0)), !l && j && M.current && (L(), D(0)), a && l && !M.current && (x(), E.animationType === s.y.ANIMATION_TYPE_PERSISTENT ? D(d === _.Q.FromStart ? 0 : A) : D(0))
+      true === u || l || (L(), w(0)), !l && j && M.current && (L(), w(0)), a && l && !M.current && (x(), E.animationType === s.y.ANIMATION_TYPE_PERSISTENT ? w(d === _.Q.FromStart ? 0 : A) : w(0))
     }, [l, j, A, a, L, x, M, E.animationType, u, d]), (0, r.jsx)("div", {
       ref: I,
       className: o()(y.profileEffects, {
@@ -114,7 +114,7 @@ let I = e => {
             layerConfig: e,
             animationType: E.animationType,
             ticking: M.current,
-            time: w,
+            time: D,
             hasPlayedThrough: j,
             setHasPlayedThrough: U,
             urlQueryString: h,

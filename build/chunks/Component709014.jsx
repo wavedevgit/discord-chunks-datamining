@@ -55,11 +55,11 @@ function g(e, t) {
   } = e, [S, A] = i.useState(null), C = i.useRef(null), N = i.useRef(null), R = i.useRef(null), P = "custom" === g ? {
     width: E,
     height: b
-  } : (0, u.m)(g), w = !(0, _.Z)("lottie_hover_multiple_loop"), D = i.useContext(c.Sfi).reducedMotion.enabled, {
+  } : (0, u.m)(g), D = !(0, _.Z)("lottie_hover_multiple_loop"), w = i.useContext(c.Sfi).reducedMotion.enabled, {
     enabled: L
   } = d.Z.useExperiment({
     location: "LottieIcon web entry point"
-  }), x = D || !L, M = i.useRef(O);
+  }), x = w || !L, M = i.useRef(O);
   return (0, f.zq)(() => {
     var e, t;
     null == T || T({
@@ -73,7 +73,7 @@ function g(e, t) {
         let t = I[e];
         R.current.resetSegments(true), R.current.setSegment(t.start + t.duration, t.start + t.duration), R.current.stop()
       } else {
-        R.current.setLoop(!w && e.includes("hover")), R.current.resetSegments(true);
+        R.current.setLoop(!D && e.includes("hover")), R.current.resetSegments(true);
         let n = t && null != v && v >= I[e].start && v <= I[e].start + I[e].duration ? v : I[e].start;
         R.current.playSegments([n, I[e].start + I[e].duration], true)
       }
@@ -86,7 +86,7 @@ function g(e, t) {
     },
     getDuration: e => null == R.current ? null : R.current.getDuration(e),
     getCurrentFrame: () => null == R.current ? null : R.current.currentFrame
-  }), [x, w, I, v]), i.useEffect(() => {
+  }), [x, D, I, v]), i.useEffect(() => {
     null == S && h().then(e => A(e.default))
   }, [S, h]), i.useEffect(() => (Promise.resolve().then(n.t.bind(n, 500923, 23)).then(e => {
     var t, n;

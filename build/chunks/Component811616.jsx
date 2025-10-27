@@ -39,11 +39,11 @@ function S(e) {
     isEligibleForDiscount: C,
     discountAmountOff: N,
     isEligibleForTrial: R
-  } = e, P = (0, l.e7)([_.default], () => _.default.locale), w = (0, l.e7)([p.Z], () => p.Z.get(n)), {
-    isGift: D,
+  } = e, P = (0, l.e7)([_.default], () => _.default.locale), D = (0, l.e7)([p.Z], () => p.Z.get(n)), {
+    isGift: w,
     giftRecipient: L
-  } = (0, f.wD)(), x = D && (0, h.pO)(L);
-  s()(null != w, "Missing subscriptionPlan");
+  } = (0, f.wD)(), x = w && (0, h.pO)(L);
+  s()(null != D, "Missing subscriptionPlan");
   let M = null != t && t.planId === n,
     k = M || n === v.Xh.PREMIUM_MONTH_TIER_2 && null != t && [v.Xh.PREMIUM_YEAR_TIER_0, v.Xh.PREMIUM_YEAR_TIER_1].includes(t.planId),
     j = v.nH[n],
@@ -54,14 +54,14 @@ function S(e) {
     }, {
       autoTrackExposure: false
     });
-  U && (j = (0, g.UV)(w, D, S));
-  let G = (0, g.aS)(n, false, D, S),
+  U && (j = (0, g.UV)(D, w, S));
+  let G = (0, g.aS)(n, false, w, S),
     B = (0, g.Ap)(S.paymentSourceId),
     Z = null != j && !A,
     F = (0, O.Ng)(),
     V = (0, b.Vi)(),
-    H = w.interval === v.rV.YEAR ? I.t.ECT4A5 : I.t.v9QeON,
-    Y = () => V && !D && n === v.Xh.PREMIUM_MONTH_TIER_2 ? (0, r.jsx)(d.Text, {
+    H = D.interval === v.rV.YEAR ? I.t.ECT4A5 : I.t.v9QeON,
+    Y = () => V && !w && n === v.Xh.PREMIUM_MONTH_TIER_2 ? (0, r.jsx)(d.Text, {
       tag: "span",
       variant: "eyebrow",
       color: "always-white",
@@ -77,7 +77,7 @@ function S(e) {
         discount: (0, m.T3)(P, j / 100)
       })
     }),
-    K = () => V ? Y() : w.interval === v.rV.YEAR && null != t || Z && !M ? w.interval === v.rV.YEAR && null != t ? (0, r.jsxs)("span", {
+    K = () => V ? Y() : D.interval === v.rV.YEAR && null != t || Z && !M ? D.interval === v.rV.YEAR && null != t ? (0, r.jsxs)("span", {
       className: T.planOptionMonthsFree,
       children: ["(", I.intl.string(I.t["122kWB"]), ")"]
     }) : Z && !M ? W() : true : null,
@@ -87,7 +87,7 @@ function S(e) {
           [T.optionSelected]: o || x,
           [T.updatedOptionSelected]: A && (o || x)
         }),
-        children: [(0, g.L7)(w.interval, D, B, w.intervalCount, x, (0, g.Rd)(w.id)), x && K()]
+        children: [(0, g.L7)(D.interval, w, B, D.intervalCount, x, (0, g.Rd)(D.id)), x && K()]
       }), x && (0, r.jsx)("div", {
         className: T.planOneTimeCost,
         children: I.intl.format(I.t.ori2Jm, {
@@ -95,12 +95,12 @@ function S(e) {
         })
       })]
     }),
-    q = () => C && null != N && w.interval === v.rV.MONTH ? (0, E.T4)(G.amount - N, G.currency) : R ? (0, E.T4)(0, G.currency, {
+    q = () => C && null != N && D.interval === v.rV.MONTH ? (0, E.T4)(G.amount - N, G.currency) : R ? (0, E.T4)(0, G.currency, {
       minimumFractionDigits: 0,
       maximumFractionDigits: 0
     }) : (0, E.T4)(G.amount, G.currency),
     X = () => {
-      if (C && null != N && w.interval === v.rV.MONTH) {
+      if (C && null != N && D.interval === v.rV.MONTH) {
         var e;
         return I.intl.format(I.t["VeE/4E"], {
           numMonths: null != (e = null == F ? true : F.discount.user_usage_limit) ? e : v.rt,
@@ -110,7 +110,7 @@ function S(e) {
       }
       return R ? I.intl.format(H, {
         price: (0, E.T4)(G.amount, G.currency)
-      }) : w.interval === v.rV.YEAR ? I.intl.formatToPlainString(I.t.rtLTJP, {
+      }) : D.interval === v.rV.YEAR ? I.intl.formatToPlainString(I.t.rtLTJP, {
         percent: j
       }) : null
     };

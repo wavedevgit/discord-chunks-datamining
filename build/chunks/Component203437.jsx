@@ -79,7 +79,7 @@ function C(e) {
         disabled: S[t] <= 0
       }
     }), [N, S]),
-    E = l.useCallback(e => null == e || "" === e.value ? null : (0, a.jsx)(u.Z, {
+    P = l.useCallback(e => null == e || "" === e.value ? null : (0, a.jsx)(u.Z, {
       className: i()(w.guildSelectOptionIcon, {
         [w.disabledOption]: e.disabled
       }),
@@ -87,7 +87,7 @@ function C(e) {
       size: u.Z.Sizes.SMOL,
       active: true
     }), [N]),
-    P = l.useCallback(e => {
+    E = l.useCallback(e => {
       let n = null == e ? true : e.value;
       return null == n || "" === n ? null : (0, a.jsx)(_, {
         className: i()({
@@ -116,8 +116,8 @@ function C(e) {
     value: Z,
     multi: false,
     options: O,
-    renderOptionPrefix: E,
-    renderOptionSuffix: P,
+    renderOptionPrefix: P,
+    renderOptionSuffix: E,
     renderOptionLabel: I,
     placeholder: 0 === O.length ? j.intl.string(j.t.O3i2gV) : j.intl.string(j.t.CunCMN)
   })

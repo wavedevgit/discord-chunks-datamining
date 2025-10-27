@@ -42,10 +42,10 @@ function E(e) {
     guild: n
   }), [v, O, n]), P = O || true !== A ? null != A : (I ? S : T) != null;
 
-  function w() {
+  function D() {
     (0, p.PO)(null == n ? true : n.id, null)
   }
-  let D = b ? l.gtL : s.zx;
+  let w = b ? l.gtL : s.zx;
   return (0, r.jsxs)(h.Z, {
     className: a,
     forcedDivider: E,
@@ -54,7 +54,7 @@ function E(e) {
     errors: C,
     children: [(0, r.jsxs)("div", {
       className: g.buttonsContainer,
-      children: [(0, r.jsx)(D, {
+      children: [(0, r.jsx)(w, {
         size: s.zx.Sizes.SMALL,
         onClick: R,
         className: o()({
@@ -68,7 +68,7 @@ function E(e) {
           variant: "secondary",
           size: "sm",
           text: (0, u.ad)(t, n) ? m.intl.string(m.t.CHf9iJ) : m.intl.string(m.t.OrokWm),
-          onClick: w
+          onClick: D
         })
       })]
     }), t.isStaff() && N && (0, r.jsx)(y, {

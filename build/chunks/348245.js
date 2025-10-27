@@ -40,7 +40,7 @@ function R(e, t, n) {
 }
 let P = new Chunk710845.Z("MessageManager");
 
-function w(e) {
+function D(e) {
   let {
     guildId: t,
     channelId: n,
@@ -112,7 +112,7 @@ function w(e) {
       })
     }
 }
-let D = 90 * Chunk70956.Z.Millis.DAY,
+let w = 90 * Chunk70956.Z.Millis.DAY,
   L = "viewedThreadIds";
 
 function x(e) {
@@ -123,7 +123,7 @@ function x(e) {
   }
   if (e in i) returnfalse;
   i[e] = Date.now();
-  let n = Date.now() - D;
+  let n = Date.now() - w;
   for (let e in i) i[e] < n && delete i[e];
   return o.K.set(L, i), true
 }
@@ -147,7 +147,7 @@ function k() {
   let t = Chunk592125.Z.getChannel(module);
   if (null == exports) return;
   let n = M(exports.id);
-  r = true, w({
+  r = true, D({
     guildId: exports.getGuildId(),
     channelId: exports.id,
     messageId: require.messageId,
@@ -164,7 +164,7 @@ function j() {
   if (!(0, Chunk131704.Qm)(exports.type)) return void Z(exports.getGuildId(), exports.id);
   let n = Chunk89892.Z.getOrCreate(module);
   if (require.ready && require.hasFetched) return void Z(exports.getGuildId(), exports.id);
-  w({
+  D({
     guildId: exports.getGuildId(),
     channelId: exports.id
   }), Z(exports.getGuildId(), exports.id)
@@ -183,7 +183,7 @@ function U(e) {
     messageId: null != i ? i : true,
     jumpType: a
   }), false;
-  w({
+  D({
     guildId: t,
     channelId: n,
     messageId: i,
@@ -196,7 +196,7 @@ function G(e) {
     guildId: t,
     channelId: n
   } = e;
-  w({
+  D({
     guildId: t,
     channelId: n
   })
@@ -209,7 +209,7 @@ function B(e) {
     messageId: r,
     jumpType: i
   } = e;
-  w({
+  D({
     guildId: t,
     channelId: n,
     messageId: r,
@@ -219,7 +219,7 @@ function B(e) {
 
 function Z(e, t) {
   let n = E.ZP.getCurrentSidebarChannelId(t);
-  null != n && w({
+  null != n && D({
     guildId: e,
     channelId: n,
     messageId: E.ZP.getCurrentSidebarMessageId(t)
@@ -240,7 +240,7 @@ function V(e) {
     channelId: n,
     context: r
   } = e;
-  r === A.e3s && (w({
+  r === A.e3s && (D({
     guildId: t,
     channelId: n
   }), Z(t, n))
@@ -251,7 +251,7 @@ function H(e) {
     channel: t,
     messageId: n
   } = e, r = t.guild_id;
-  null != r && v.Z.getChannelId(r) === t.id && w({
+  null != r && v.Z.getChannelId(r) === t.id && D({
     guildId: r,
     channelId: t.id,
     messageId: n
@@ -331,7 +331,7 @@ class X extends Chunk147913.Z {
     Chunk570140.Z.unsubscribe("CONNECTION_OPEN", k)
   }
   constructor(...e) {
-    super(...e), R(this, "fetchMessages", w), R(this, "loadSelectedChannelIfNecessary", j), R(this, "stores", new Map().set(E.ZP, F)), R(this, "actions", {
+    super(...e), R(this, "fetchMessages", D), R(this, "loadSelectedChannelIfNecessary", j), R(this, "stores", new Map().set(E.ZP, F)), R(this, "actions", {
       APP_STATE_UPDATE: q,
       OVERLAY_INITIALIZE: k,
       CHANNEL_SELECT: U,

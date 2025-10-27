@@ -69,7 +69,7 @@ function T(e) {
     targetPosition: b
   } = e, [T, S] = i.useState(0), [A, C] = i.useState(0), [N, R] = i.useState(null), {
     confettiCanvas: P
-  } = i.useContext(u.h), w = (0, a.uR)(P, N), D = i.useMemo(() => [{
+  } = i.useContext(u.h), D = (0, a.uR)(P, N), w = i.useMemo(() => [{
     src: null == n.id ? p.ZP.getURL(n.name) : _.ZP.getEmojiURL({
       id: n.id,
       animated: false,
@@ -119,7 +119,7 @@ function T(e) {
     }
   });
   return i.useEffect(() => {
-    T > 0 && A > 0 && w.createConfetti(y(E({}, h.We), {
+    T > 0 && A > 0 && D.createConfetti(y(E({}, h.We), {
       position: {
         type: "static",
         value: {
@@ -128,10 +128,10 @@ function T(e) {
         }
       }
     }))
-  }, [w, T, A]), (0, r.jsxs)(r.Fragment, {
+  }, [D, T, A]), (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.Ji, {
       ref: R,
-      sprites: D,
+      sprites: w,
       colors: I,
       spriteWidth: h.Ko,
       spriteHeight: h.Ko

@@ -87,8 +87,8 @@ let O = "US",
   N = (0, Chunk313201.hQ)(),
   R = (0, Chunk313201.hQ)(),
   P = (0, Chunk313201.hQ)(),
-  w = (0, Chunk313201.hQ)(),
   D = (0, Chunk313201.hQ)(),
+  w = (0, Chunk313201.hQ)(),
   L = (0, Chunk313201.hQ)();
 var x = function(e) {
     return e.MODAL_US = "modalUS", e.MODAL_INTL = "modalInternational", e.MODAL_US_WITH_NAME = "modalUSWithName", e.MODAL_INTL_WITH_NAME = "modalInternationalWithName", e.SETTINGS_US = "settingsUS", e.SETTINGS_INTL = "settingsInternational", e.SETTINGS_INTL_NO_NAME = "settingsInternationalWithoutName", e.SETTINGS_US_MOBILE = "settingsUSMobile", e.SETTINGS_INTL_MOBILE = "settingsInternationalMobile", e.SETTINGS_INTL_NO_NAME_MOBILE = "settingsInternationalWithoutNameMobile", e
@@ -168,7 +168,7 @@ let k = {
   }),
   F = e => ({
     name: "city",
-    id: w,
+    id: D,
     title: () => _.intl.string(_.t.bUSWlw),
     autoComplete: "address-level2",
     placeholder: () => _.intl.string(_.t["5rRx31"]),
@@ -204,7 +204,7 @@ let k = {
     }
     return {
       name: "postalCode",
-      id: D,
+      id: w,
       title: () => t,
       autoComplete: "postal-code",
       placeholder: () => n,

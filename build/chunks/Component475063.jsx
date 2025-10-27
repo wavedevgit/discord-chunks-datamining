@@ -2,7 +2,7 @@
 /** chunk id: 475063, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  K: () => T
+  K: () => I
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -11,14 +11,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk793030 = require("./793030.js"),
   Chunk15127 = require("./15127.jsx"),
   Chunk841878 = require("./841878.jsx"),
-  Chunk74655 = require("./74655.jsx"),
   Chunk897037 = require("./897037.jsx"),
   Chunk377089 = require("./377089.js"),
   Chunk680874 = require("./680874.jsx"),
   Chunk231282 = require("./231282.js"),
   Chunk154257 = require("./154257.js");
 
-function m(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -27,20 +26,20 @@ function m(e, t, n) {
   }) : e[t] = n, e
 }
 
-function g(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      m(e, t, n[t])
+      h(e, t, n[t])
     })
   }
   return e
 }
 
-function E(e, t) {
+function g(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -51,15 +50,15 @@ function E(e, t) {
   return n
 }
 
-function b(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : E(Object(t)).forEach(function(n) {
+function E(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : g(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function y(e, t) {
+function b(e, t) {
   if (null == e) return {};
-  var n, r, i = O(e, t);
+  var n, r, i = y(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -67,106 +66,106 @@ function y(e, t) {
   return i
 }
 
-function O(e, t) {
+function y(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let v = 10,
-  I = 7.23;
+let O = 10,
+  v = 7.23;
 
-function T(e) {
+function I(e) {
   var t, {
       value: n,
       placeholder: a = "",
       autoFocus: l = false,
-      autosize: _ = false,
-      minLength: m,
-      maxLength: E,
-      error: O,
-      defaultDirty: T,
-      showCharacterCount: N,
-      showRemainingCharacterCount: R = true,
-      rows: P = 3,
-      inputRef: w
+      autosize: f = false,
+      minLength: h,
+      maxLength: g,
+      error: y,
+      defaultDirty: I,
+      showCharacterCount: C,
+      showRemainingCharacterCount: N = true,
+      rows: R = 3,
+      inputRef: P
     } = e,
-    D = y(e, ["value", "placeholder", "autoFocus", "autosize", "minLength", "maxLength", "error", "defaultDirty", "showCharacterCount", "showRemainingCharacterCount", "rows", "inputRef"]);
+    D = b(e, ["value", "placeholder", "autoFocus", "autosize", "minLength", "maxLength", "error", "defaultDirty", "showCharacterCount", "showRemainingCharacterCount", "rows", "inputRef"]);
   let {
-    fieldProps: L,
-    props: x
+    fieldProps: w,
+    props: L
   } = (0, s.XF_)(D), {
-    disabled: M
-  } = L, k = (0, f.U)("UserSettingsDesignSystems"), j = (0, d.m)({
+    disabled: x
+  } = w, M = (0, d.U)("UserSettingsDesignSystems"), k = (0, u.m)({
     validateOn: "change",
-    error: O,
+    error: y,
     value: n,
-    minLength: m,
-    maxLength: E,
-    defaultDirty: T
-  }), U = i.useMemo(() => {
-    if (k) return;
-    if (null == E) return v;
-    let e = "".concat(E).length;
-    return I * (e += "".concat(E, " / ").length) + v
-  }, [k, E]), G = e => {
+    minLength: h,
+    maxLength: g,
+    defaultDirty: I
+  }), j = i.useMemo(() => {
+    if (M) return;
+    if (null == g) return O;
+    let e = "".concat(g).length;
+    return v * (e += "".concat(g, " / ").length) + O
+  }, [M, g]), U = e => {
     let {
       onChange: t
-    } = x;
-    null == t || t(e.currentTarget.value), j.setShouldValidate(true)
-  }, B = k && N ? (0, r.jsx)(c.H, {
+    } = L;
+    null == t || t(e.currentTarget.value), k.setShouldValidate(true)
+  }, G = M && C ? (0, r.jsx)(c.H, {
     value: n,
-    maxLength: R && null != E ? E : true
+    maxLength: N && null != g ? g : true
   }) : null;
-  return (0, r.jsx)(s.gNt, b(g({}, L), {
-    trailingContent: B,
-    errorMessage: j.hasError && null != (t = j.errorMessage) ? t : true,
-    children: (0, r.jsxs)(u.U, {
-      validation: j,
-      disabled: M,
+  return (0, r.jsx)(s.gNt, E(m({}, w), {
+    trailingContent: G,
+    errorMessage: k.hasError && null != (t = k.errorMessage) ? t : true,
+    children: (0, r.jsxs)(s.UPk, {
+      validation: k,
+      disabled: x,
       children: [(0, r.jsx)(s.tEY, {
-        children: (0, r.jsx)(S, b(g({
-          autosize: _,
-          className: o()(p.textArea, h.scrollbarDefault),
+        children: (0, r.jsx)(T, E(m({
+          autosize: f,
+          className: o()(_.textArea, p.scrollbarDefault),
           style: {
-            paddingRight: U
+            paddingRight: j
           },
           placeholder: a,
           value: n,
           autoFocus: l,
-          minLength: m,
-          maxLength: E,
-          rows: P,
-          disabled: M,
+          minLength: h,
+          maxLength: g,
+          rows: R,
+          disabled: x,
           "data-mana-component": "text-area"
-        }, x), {
-          onChange: G,
-          ref: w
+        }, L), {
+          onChange: U,
+          ref: P
         }))
-      }), k ? null : (0, r.jsxs)(r.Fragment, {
-        children: [N ? (0, r.jsx)(A, {
+      }), M ? null : (0, r.jsxs)(r.Fragment, {
+        children: [C ? (0, r.jsx)(S, {
           value: n,
-          maxLength: E,
-          hasError: j.hasError
-        }) : null, N || false === R ? null : (0, r.jsx)(C, {
+          maxLength: g,
+          hasError: k.hasError
+        }) : null, C || false === N ? null : (0, r.jsx)(A, {
           value: n,
-          maxLength: E
+          maxLength: g
         })]
       })]
     })
   }))
 }
 
-function S(e) {
+function T(e) {
   var {
     "aria-labelledby": t,
     autosize: n
-  } = e, a = y(e, ["aria-labelledby", "autosize"]);
+  } = e, a = b(e, ["aria-labelledby", "autosize"]);
   let o = (0, l.Gc)(),
     c = i.useContext(s.zbb),
-    u = n ? _.l : "textarea";
-  return (0, r.jsx)(u, b(g({}, a), {
+    u = n ? f.l : "textarea";
+  return (0, r.jsx)(u, E(m({}, a), {
     id: null == c ? true : c.controlId,
     "aria-labelledby": null != t ? t : o.titleId,
     "aria-describedby": null == c ? true : c.describedById,
@@ -175,7 +174,7 @@ function S(e) {
   }))
 }
 
-function A(e) {
+function S(e) {
   var t;
   let {
     value: n,
@@ -183,22 +182,22 @@ function A(e) {
     hasError: a
   } = e;
   return (0, r.jsxs)("div", {
-    className: o()(p.maxLength, {
-      [p.errorOverflow]: a
+    className: o()(_.maxLength, {
+      [_.errorOverflow]: a
     }),
     "aria-hidden": "true",
     children: [null != (t = null == n ? true : n.length) ? t : 0, " ", null != i && "/ ".concat(i)]
   })
 }
 
-function C(e) {
+function A(e) {
   let {
     value: t,
     maxLength: n
   } = e, a = i.useMemo(() => null == n ? null : n - (null != t ? t.length : 0), [n, t]);
   return null == a ? null : (0, r.jsx)("div", {
-    className: o()(p.maxLength, {
-      [p.errorOverflow]: a < 0
+    className: o()(_.maxLength, {
+      [_.errorOverflow]: a < 0
     }),
     "aria-hidden": "true",
     children: a

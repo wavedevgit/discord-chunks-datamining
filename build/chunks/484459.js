@@ -36,12 +36,12 @@ function h(e, t) {
     R = Date.now() - (null != (g = null == N ? true : N.fetchEndedAt) ? g : 0) >= p;
   if (((null == N || null == (n = N.fetchError) ? true : n.status) === 404 || (null == N || null == (h = N.fetchError) ? true : h.status) === 429) && !R) return Promise.resolve();
   let P = f.Z.getGuildMemberProfile(e, T),
-    w = f.Z.getMutualGuilds(e),
-    D = f.Z.getMutualFriends(e),
+    D = f.Z.getMutualGuilds(e),
+    w = f.Z.getMutualFriends(e),
     L = f.Z.getMutualFriendsCount(e),
-    x = null == D && O,
+    x = null == w && O,
     M = null == L && y,
-    k = null == w && b || x || M,
+    k = null == D && b || x || M,
     j = null == T ? null == N : null == P,
     U = !j && (R || k);
   if (!j && !U) return Promise.resolve();

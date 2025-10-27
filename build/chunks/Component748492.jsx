@@ -52,7 +52,7 @@ function M(e) {
     }),
     onClick: t,
     iconComponent: s.CJ0,
-    label: n ? D.intl.string(D.t["2TiKgS"]) : D.intl.string(D.t.oN8bqe)
+    label: n ? w.intl.string(w.t["2TiKgS"]) : w.intl.string(w.t.oN8bqe)
   })
 }
 
@@ -64,7 +64,7 @@ function k(e) {
     onMouseDown: y,
     onMouseMove: I,
     onMouseLeave: N,
-    onJumpToChannel: D,
+    onJumpToChannel: w,
     idle: M,
     selectedParticipant: k,
     embeddedActivity: j
@@ -91,7 +91,7 @@ function k(e) {
       children: (0, r.jsx)(b.r, {
         idle: M,
         title: null != (i = null != (n = null == F ? true : F.name) ? n : null == a ? true : a.name) ? i : "",
-        onJumpToChannel: D,
+        onJumpToChannel: w,
         preventIdleComponent: E.Z
       })
     }), (0, r.jsxs)("div", {
@@ -127,7 +127,7 @@ function k(e) {
           className: L.rightPipIcon,
           popoutOpen: false,
           onOpenPopout: K,
-          onClosePopout: w.Vq
+          onClosePopout: D.Vq
         }), (0, r.jsx)(O.Z, {
           applicationId: s,
           location: j.location,

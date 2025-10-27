@@ -38,8 +38,8 @@ function C(e, t, n) {
 let N = new Chunk710845.Z("AuthenticationStore"),
   R = "fingerprint",
   P = "user_id_cache",
-  w = null,
   D = null,
+  w = null,
   L = null,
   x = null,
   M = null,
@@ -120,7 +120,7 @@ function ee() {
 }
 
 function et(e, t) {
-  Q("setAuthToken called."), (null == t || t !== w) && o.removeAnalyticsToken(), o.setToken(e, t)
+  Q("setAuthToken called."), (null == t || t !== D) && o.removeAnalyticsToken(), o.setToken(e, t)
 }
 
 function en(e) {
@@ -249,7 +249,7 @@ function ey(e) {
     auth: o,
     staticAuthSessionId: s
   } = e;
-  Q("handleConnectionOpen called"), v.Z.setUser(n.id, n.username, null != (t = n.email) ? t : true, (0, b.Z)(n)), D = r, L = i, x = s, en(a), w = n.id, true !== o && (B = o.authenticator_types), u.K.set(P, n.id)
+  Q("handleConnectionOpen called"), v.Z.setUser(n.id, n.username, null != (t = n.email) ? t : true, (0, b.Z)(n)), w = r, L = i, x = s, en(a), D = n.id, true !== o && (B = o.authenticator_types), u.K.set(P, n.id)
 }
 
 function eO(e) {
@@ -260,7 +260,7 @@ function eO(e) {
     analyticsToken: i,
     token: a
   } = e;
-  v.Z.setUser(n.id, n.username, null != (t = n.email) ? t : true, (0, b.Z)(n)), D = r, j = i, et(a, n.id), null != i && en(i), ee(), w = n.id, u.K.set(P, n.id)
+  v.Z.setUser(n.id, n.username, null != (t = n.email) ? t : true, (0, b.Z)(n)), w = r, j = i, et(a, n.id), null != i && en(i), ee(), D = n.id, u.K.set(P, n.id)
 }
 
 function ev(e) {
@@ -305,7 +305,7 @@ function eA(e) {
   null != (t = null == e ? true : e.isSwitchingAccount) && t || (n && ee(), J()), l.ZP.PersistedStore.clearAll({
     omit: ["InstallationManagerStore", "AgeGateStore", "NativePermissionsStore", "MultiAccountStore", "DraftStore", "OverlayStoreV2", "StreamerModeStore", "LoginRequiredActionStore", "LayoutStore", "OverlaySettingsStore", "ApexExperimentStore"],
     type: (null == e ? true : e.isSwitchingAccount) ? "user-data-only" : "all"
-  }), T.Z.clearAll(), m.ZH(), v.Z.clearUser(), u.K.remove(P), w = null, D = null, U = (null == e ? true : e.isSwitchingAccount) ? S.u34.LOGGING_IN : S.u34.NONE, Z = "", V = null, F = false, z = false, q = false, ed()
+  }), T.Z.clearAll(), m.ZH(), v.Z.clearUser(), u.K.remove(P), D = null, w = null, U = (null == e ? true : e.isSwitchingAccount) ? S.u34.LOGGING_IN : S.u34.NONE, Z = "", V = null, F = false, z = false, q = false, ed()
 }
 
 function eC() {
@@ -320,7 +320,7 @@ function eR(e) {
   let {
     user: t
   } = e;
-  w = t.id, true !== t.authenticator_types && (B = t.authenticator_types), u.K.set(P, t.id)
+  D = t.id, true !== t.authenticator_types && (B = t.authenticator_types), u.K.set(P, t.id)
 }
 
 function eP(e) {
@@ -330,21 +330,21 @@ function eP(e) {
   z = false, K = t, setImmediate(() => (0, E.uL)(S.Z5c.ACCOUNT_STANDING))
 }
 
-function ew() {
+function eD() {
   K = null, U = Chunk981631.u34.NONE, eA(), setImmediate(() => (0, Chunk703656.uL)(Chunk981631.Z5c.DEFAULT_LOGGED_OUT))
 }
-class eD extends(a = Chunk442837.ZP.Store) {
+class ew extends(a = Chunk442837.ZP.Store) {
   initialize() {
-    w = Chunk433517.K.get(P), null == Chunk213919.getToken() && J(), this.addChangeListener(() => (0, Chunk670890.u)(w))
+    D = Chunk433517.K.get(P), null == Chunk213919.getToken() && J(), this.addChangeListener(() => (0, Chunk670890.u)(D))
   }
   getLoginStatus() {
     return U
   }
   getId() {
-    return w
+    return D
   }
   getSessionId() {
-    return D
+    return w
   }
   getAuthSessionIdHash() {
     return L
@@ -393,8 +393,8 @@ class eD extends(a = Chunk442837.ZP.Store) {
     return q
   }
 }
-C(eD, "displayName", "AuthenticationStore");
-let eL = new eD(Chunk570140.Z, {
+C(ew, "displayName", "AuthenticationStore");
+let eL = new ew(Chunk570140.Z, {
   CONNECTION_OPEN: ey,
   OVERLAY_INITIALIZE: eO,
   CONNECTION_CLOSED: ev,
@@ -420,7 +420,7 @@ let eL = new eD(Chunk570140.Z, {
   EXPERIMENTS_FETCH: $,
   CURRENT_USER_UPDATE: eR,
   AGE_GATE_LOGOUT_UNDERAGE_NEW_USER: eS,
-  CLOSE_SUSPENDED_USER: ew,
+  CLOSE_SUSPENDED_USER: eD,
   PASSWORDLESS_FAILURE: eu,
   PASSWORDLESS_START: ec
 }, Chunk570140.c.Early)

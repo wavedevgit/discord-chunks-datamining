@@ -82,9 +82,9 @@ function P(e) {
     return t[e]
   })
 }
-var w = /\/+/g;
+var D = /\/+/g;
 
-function D(e, t) {
+function w(e, t) {
   return "object" == typeof e && null !== e && null != e.key ? P("" + e.key) : t.toString(36)
 }
 
@@ -132,15 +132,15 @@ function M(e, t, n, r, o) {
           return M((l = e._init)(e._payload), t, n, r, o)
       }
   }
-  if (l) return o = o(e), l = "" === r ? "." + D(e, 0) : r, T(o) ? (n = "", null != l && (n = l.replace(w, "$&/") + "/"), M(o, t, n, "", function(e) {
+  if (l) return o = o(e), l = "" === r ? "." + w(e, 0) : r, T(o) ? (n = "", null != l && (n = l.replace(D, "$&/") + "/"), M(o, t, n, "", function(e) {
     return e
-  })) : null != o && (R(o) && (o = N(o, n + (null == o.key || e && e.key === o.key ? "" : ("" + o.key).replace(w, "$&/") + "/") + l)), t.push(o)), 1;
+  })) : null != o && (R(o) && (o = N(o, n + (null == o.key || e && e.key === o.key ? "" : ("" + o.key).replace(D, "$&/") + "/") + l)), t.push(o)), 1;
   l = 0;
   var c = "" === r ? "." : r + ":";
   if (T(e))
-    for (var u = 0; u < e.length; u++) s = c + D(r = e[u], u), l += M(r, t, n, s, o);
+    for (var u = 0; u < e.length; u++) s = c + w(r = e[u], u), l += M(r, t, n, s, o);
   else if ("function" == typeof(u = m(e)))
-    for (e = u.call(e), u = 0; !(r = e.next()).done;) s = c + D(r = r.value, u++), l += M(r, t, n, s, o);
+    for (e = u.call(e), u = 0; !(r = e.next()).done;) s = c + w(r = r.value, u++), l += M(r, t, n, s, o);
   else if ("object" === s) {
     if ("function" == typeof e.then) return M(x(e), t, n, r, o);
     throw Error("Objects are not valid as a React child (found: " + ("[object Object]" === (t = String(e)) ? "object with keys {" + Object.keys(e).join(", ") + "}" : t) + "). If you meant to render a collection of children, use an array instead.")

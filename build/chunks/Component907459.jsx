@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk164161 = require("./164161.js");
-let D = () => {
+let w = () => {
     var e, t, n;
     let i = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk74538.ZP.isPremium(Chunk594174.default.getCurrentUser())),
       a = (0, Chunk639119.N)(),
@@ -56,22 +56,22 @@ let D = () => {
       null == t || t(N.L.DISMISS), (0, h.Ll)(), (0, T.O)()
     };
     return (0, r.jsxs)("div", {
-      className: w.editorHeader,
+      className: D.editorHeader,
       children: [(0, r.jsx)(u.P3F, {
-        className: w.closeCircleButton,
+        className: D.closeCircleButton,
         onClick: () => n(),
         children: (0, r.jsx)(u.k$p, {
           size: "md",
           color: "currentColor",
-          className: w.closeCircle
+          className: D.closeCircle
         })
       }), (0, r.jsxs)("div", {
-        className: w.title,
+        className: D.title,
         children: [(0, r.jsx)(u.Heading, {
           variant: "heading-lg/extrabold",
           children: P.intl.string(P.t["hb/wE0"])
         }), (0, r.jsx)(E.Z, {
-          className: w.premiumIcon
+          className: D.premiumIcon
         })]
       })]
     })
@@ -86,8 +86,8 @@ let D = () => {
       })
     };
     return (0, r.jsxs)("div", {
-      className: w.editorFooter,
-      children: [i && (0, r.jsx)(D, {}), (0, r.jsx)(l.zxk, {
+      className: D.editorFooter,
+      children: [i && (0, r.jsx)(w, {}), (0, r.jsx)(l.zxk, {
         onClick: a,
         variant: "secondary",
         fullWidth: true,
@@ -122,15 +122,15 @@ function M(e) {
     value: a,
     children: (0, r.jsx)("div", {
       ref: E,
-      className: o()(w.editor, m ? w.editorAnimate : null),
+      className: o()(D.editor, m ? D.editorAnimate : null),
       "data-app-right-panel": true,
       children: (0, r.jsxs)(u.y5t, {
         children: [(0, r.jsx)(L, {
           markAsDismissed: n
         }), (0, r.jsx)(u.Ttm, {
-          className: w.editorBody,
+          className: D.editorBody,
           children: (0, r.jsx)(A.Z, {
-            className: w.selectionGroup,
+            className: D.selectionGroup,
             isEditor: true
           })
         }), (0, r.jsx)(x, {

@@ -71,7 +71,7 @@ function R(e, t) {
 
 function P(e, t) {
   if (null == e) return {};
-  var n, r, i = w(e, t);
+  var n, r, i = D(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -79,14 +79,14 @@ function P(e, t) {
   return i
 }
 
-function w(e, t) {
+function D(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let D = {
+let w = {
   keys: ["label"]
 };
 
@@ -109,7 +109,7 @@ function L(e) {
     value: g,
     matchSorterOptions: b,
     required: O
-  } = u, v = i.useId(), I = i.useRef(null), [T, S] = i.useState(null), [A, N] = i.useState(false), [R, w] = i.useState(""), [L, x] = i.useState(""), {
+  } = u, v = i.useId(), I = i.useRef(null), [T, S] = i.useState(null), [A, N] = i.useState(false), [R, D] = i.useState(""), [L, x] = i.useState(""), {
     options: M,
     loading: k,
     onQueryChange: j
@@ -118,14 +118,14 @@ function L(e) {
     options: c,
     renderOption: h
   }), U = i.useCallback((e, t) => {
-    x(e), w(null != t ? t : e)
+    x(e), D(null != t ? t : e)
   }, []);
   i.useEffect(() => {
     j(R)
   }, [j, R]), i.useEffect(() => {
     o || S(null)
   }, [o, S]);
-  let G = i.useMemo(() => "" === R ? M : (0, s.Lu)(M, R, null != b ? b : D), [M, R, b]),
+  let G = i.useMemo(() => "" === R ? M : (0, s.Lu)(M, R, null != b ? b : w), [M, R, b]),
     B = i.useRef(true),
     Z = i.useMemo(() => ("single" === d && (B.current = M.find(e => e.value === g)), null == g || Array.isArray(g) && 0 === g.length) ? [] : (Array.isArray(g) ? g : [g]).map(e => M.find(t => t.value === e)).filter(e => null != e), [g, M, d]);
   i.useEffect(() => {
@@ -199,8 +199,8 @@ function M(e) {
     onBlur: A,
     onKeyDown: N,
     wrapTags: P,
-    ref: w
-  } = e, D = i.useRef(null), L = i.useRef(null), x = i.useRef(null), M = i.useContext(u.z), {
+    ref: D
+  } = e, w = i.useRef(null), L = i.useRef(null), x = i.useRef(null), M = i.useContext(u.z), {
     activeDescendantIndex: k,
     setActiveDescendantIndex: j,
     selectionMode: U,
@@ -303,9 +303,9 @@ function M(e) {
           X("single" === U ? [r] : (0, O.cq)(U, et, r));
           break;
         case "Backspace":
-          if ("multiple" === U && "" === er && et.length > 0 && null != D.current) {
+          if ("multiple" === U && "" === er && et.length > 0 && null != w.current) {
             var i;
-            e.preventDefault(), e.stopPropagation(), null == (i = D.current.lastChild) || i.focus()
+            e.preventDefault(), e.stopPropagation(), null == (i = w.current.lastChild) || i.focus()
           }
           break;
         case "Escape":
@@ -350,14 +350,14 @@ function M(e) {
         }
       });
       return (0, r.jsx)(_.QSK, {
-        listRef: D,
+        listRef: w,
         label: I.intl.string(v.default.VMNfsY),
         items: e,
         layout: "inline",
         onRemove: em
       })
     }, [U, G, eh, em, ea, et, s]),
-    ey = (0, l.Z)(Y, w);
+    ey = (0, l.Z)(Y, D);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(b.q, {
       ref: ey,

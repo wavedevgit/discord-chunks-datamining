@@ -6,9 +6,9 @@ require.d(exports, {
   Hc: () => y,
   IV: () => O,
   JO: () => P,
-  Jl: () => w,
+  Jl: () => D,
   Ks: () => N,
-  M0: () => D,
+  M0: () => w,
   OP: () => b,
   Pq: () => E,
   QN: () => v,
@@ -127,27 +127,32 @@ function v(e) {
     messageId: t,
     channelId: n,
     numOfAttachments: r,
-    numOfEmbeds: i,
-    numOfGoreAttachments: a,
-    numOfExplicitAttachments: o,
-    numOfGoreEmbeds: s,
-    numOfExplicitEmbeds: u
-  } = e, d = o > 0 || u > 0, f = a > 0 || s > 0;
-  if (null == n || null == t || !d && !f) return;
-  let p = l.Z.getChannel(n);
+    numOfSelfHarmAttachments: i,
+    numOfEmbeds: a,
+    numOfGoreAttachments: o,
+    numOfExplicitAttachments: s,
+    numOfSelfHarmEmbeds: u,
+    numOfGoreEmbeds: d,
+    numOfExplicitEmbeds: f
+  } = e, p = s > 0 || f > 0, h = o > 0 || d > 0, m = i > 0 || u > 0;
+  if (null == n || null == t || !p && !h && !m) return;
+  let g = l.Z.getChannel(n);
   c.default.track(_.rMx.REDACTABLE_MESSAGE_LOADED, {
     message_id: t,
     channel_id: n,
-    channel_type: null == p ? true : p.type,
-    guild_id: null == p ? true : p.guild_id,
+    channel_type: null == g ? true : g.type,
+    guild_id: null == g ? true : g.guild_id,
     num_of_attachments: r,
-    num_of_gore_attachments: a,
-    num_of_explicit_attachments: o,
-    num_of_embeds: i,
-    num_of_gore_embeds: s,
-    num_of_explicit_embeds: u,
-    has_redactable_explicit: d,
-    has_redactable_gore: f
+    num_of_gore_attachments: o,
+    num_of_explicit_attachments: s,
+    num_of_self_harm_attachments: i,
+    num_of_embeds: a,
+    num_of_gore_embeds: d,
+    num_of_explicit_embeds: f,
+    num_of_self_harm_embeds: u,
+    has_redactable_explicit: p,
+    has_redactable_gore: h,
+    has_redactable_self_harm: m
   })
 }
 
@@ -230,7 +235,7 @@ function P(e) {
   return !!R() && null != e && d.eq.has(e)
 }
 
-function w(e) {
+function D(e) {
   let {
     obscure: t
   } = e;
@@ -239,7 +244,7 @@ function w(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   var t;
   return null == (t = e.message_snapshots) ? true : t.some(e => {
     var t, n;

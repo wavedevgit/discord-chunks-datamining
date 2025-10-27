@@ -83,8 +83,8 @@ function R(e, t) {
   return i
 }
 let P = 20,
-  w = 125,
-  D = (0, Chunk313201.hQ)(),
+  D = 125,
+  w = (0, Chunk313201.hQ)(),
   L = Chunk336317.Z.convert.fromCodePoint("1f44f"),
   x = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_EMOJI_CONTAINER_PADDING_VERTICAL),
   M = (0, Chunk624138.Mg)(Chunk477690.Z.EMOJI_PICKER_CONSTANTS_DIVERSITY_EMOJI_SIZE);
@@ -144,7 +144,7 @@ let j = e => {
         height: M
       },
       config: {
-        duration: w
+        duration: D
       }
     });
     i.useEffect(() => {
@@ -199,7 +199,7 @@ let j = e => {
         "aria-label": v.intl.string(v.t.pAVHxa),
         "aria-haspopup": true,
         "aria-expanded": l,
-        "aria-controls": D,
+        "aria-controls": w,
         tabIndex: l ? false : 0,
         children: (0, r.jsx)("div", {
           className: I.diversityEmojiItemImage,
@@ -210,7 +210,7 @@ let j = e => {
       }), l ? (0, r.jsx)("div", {
         onKeyDown: m,
         children: (0, r.jsx)(U, {
-          id: D,
+          id: w,
           selectedSurrogate: n,
           onClick: g
         })

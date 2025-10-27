@@ -8,12 +8,12 @@ require.d(exports, {
   Mn: () => b,
   NI: () => N,
   OU: () => x,
-  P6: () => D,
+  P6: () => w,
   Rx: () => S,
   S2: () => E,
   V3: () => y,
   W0: () => v,
-  W3: () => w,
+  W3: () => D,
   Zy: () => m,
   b9: () => R,
   cV: () => T,
@@ -254,13 +254,13 @@ function P() {
   })
 }
 
-function w() {
+function D() {
   Chunk570140.Z.dispatch({
     type: "USER_SETTINGS_RESET_ALL_PENDING"
   })
 }
 
-function D() {
+function w() {
   Chunk570140.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_RESET_AND_CLOSE_FORM"
   })

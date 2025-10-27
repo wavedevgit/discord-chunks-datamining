@@ -4,9 +4,8 @@
 require.d(exports, {
   CD: () => o,
   DL: () => i,
-  GE: () => c,
-  m8: () => s,
-  yE: () => l
+  GE: () => l,
+  yE: () => s
 });
 var Chunk427164 = require("./427164.js");
 let i = (0, Chunk427164.le)({
@@ -46,22 +45,7 @@ let i = (0, Chunk427164.le)({
       location: e
     });
     return t
-  },
-  s = (0, Chunk427164.le)({
-    name: "2025-08-quest-home-v2-entrypoint-relocation",
-    kind: "user",
-    defaultConfig: {
-      enabled: false
-    },
-    variations: {
-      1: {
-        enabled: false
-      },
-      2: {
-        enabled: true
-      }
-    }
-  });
+  };
 (0, Chunk427164.le)({
   name: "2025-10-mobile-quest-home-v2-entrypoint-relocation",
   kind: "user",
@@ -74,10 +58,10 @@ let i = (0, Chunk427164.le)({
     }
   }
 });
-var l = function(e) {
+var s = function(e) {
   return e[e.DISCOVER = 0] = "DISCOVER", e[e.ACTION = 1] = "ACTION", e[e.REWARD = 2] = "REWARD", e[e.EARN = 3] = "EARN", e
 }({});
-let c = (0, Chunk427164.le)({
+let l = (0, Chunk427164.le)({
   name: "2025-10-quest-home-entrypoint-onboarding",
   kind: "user",
   defaultConfig: {

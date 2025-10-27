@@ -104,8 +104,8 @@ function C(e) {
       fullWidth: S = false,
       focusProps: A,
       loading: C,
-      loadingStartedLabel: w,
-      loadingFinishedLabel: D,
+      loadingStartedLabel: D,
+      loadingFinishedLabel: w,
       rounded: L = false,
       type: x = "button",
       rel: M,
@@ -146,8 +146,8 @@ function C(e) {
     eo = (0, s.a)(ei),
     es = i.useRef(false);
   i.useEffect(() => {
-    true === C && (es.current = true, l.u.announce(null != w ? w : ea.BUTTON_LOADING_STARTED_LABEL)), false === C && true === es.current && (l.u.announce(null != D ? D : ea.BUTTON_LOADING_FINISHED_LABEL), es.current = false)
-  }, [C, w, D, ea.BUTTON_LOADING_STARTED_LABEL, ea.BUTTON_LOADING_FINISHED_LABEL]);
+    true === C && (es.current = true, l.u.announce(null != D ? D : ea.BUTTON_LOADING_STARTED_LABEL)), false === C && true === es.current && (l.u.announce(null != w ? w : ea.BUTTON_LOADING_FINISHED_LABEL), es.current = false)
+  }, [C, D, w, ea.BUTTON_LOADING_STARTED_LABEL, ea.BUTTON_LOADING_FINISHED_LABEL]);
   let el = (0, r.jsxs)("div", {
       className: o()(g.buttonChildren, {
         [g.loading]: C

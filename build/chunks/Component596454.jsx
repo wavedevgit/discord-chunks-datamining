@@ -96,8 +96,8 @@ function A(e) {
       onMouseEnter: N,
       onMouseLeave: R,
       canSelect: P = true,
-      autoplay: w,
-      registerInnerRef: D,
+      autoplay: D,
+      registerInnerRef: w,
       registerAnimatedElementRef: L,
       surrogate: x
     } = e,
@@ -105,7 +105,7 @@ function A(e) {
   let [k, j] = i.useState(false), [U, G] = i.useState(true), B = i.useRef(true), {
     triggerAnimation: Z,
     untriggerAnimation: F
-  } = i.useContext(u.Rm), V = _.Yk.useSetting(), H = S(), Y = null == w ? V : w, W = E.kV[T], K = i.useRef(null), z = i.useMemo(() => {
+  } = i.useContext(u.Rm), V = _.Yk.useSetting(), H = S(), Y = null == D ? V : D, W = E.kV[T], K = i.useRef(null), z = i.useMemo(() => {
     if (null != a) return a;
     if (null != f) {
       let e = true === C && Y;
@@ -146,8 +146,8 @@ function A(e) {
     return null == (e = B.current) ? true : e.call(B)
   }, []);
   let $ = i.useCallback(e => {
-      K.current = e, null == D || D(e), null == L || L(e)
-    }, [D, L]),
+      K.current = e, null == w || w(e), null == L || L(e)
+    }, [w, L]),
     ee = (0, l.Z)(K);
   return null == z || "" === z ? (0, r.jsx)("span", v(y({}, J), {
     ref: $,

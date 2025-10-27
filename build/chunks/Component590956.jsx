@@ -139,7 +139,7 @@ let I = e => {
         channelId: g,
         messageId: b
       }))
-    }, w = (0, s.Z)(), D = e => (0, r.jsx)(l.aML, v(y({
+    }, D = (0, s.Z)(), w = e => (0, r.jsx)(l.aML, v(y({
       text: (0, p.Y)(t.name, u),
       "aria-label": t.name
     }, p.b_), {
@@ -149,7 +149,7 @@ let I = e => {
         A(true), u && (S({
           emojiNode: t,
           isCustomEmoji: true,
-          nonce: w
+          nonce: D
         }), (0, d.x)(m.qR.CustomEmojiTooltipShown))
       },
       children: n => (0, r.jsx)(l.P3F, v(y({}, e), {
@@ -164,7 +164,7 @@ let I = e => {
         } : true,
         onMouseLeave: () => {
           T && (f.default.track(h.rMx.CLOSE_POPOUT, {
-            nonce: w
+            nonce: D
           }), A(false))
         },
         tag: "span",
@@ -175,18 +175,18 @@ let I = e => {
         children: P(n)
       }))
     }));
-    if (!u) return D();
+    if (!u) return w();
     let L = e => (0, r.jsx)(_.vk, v(y({}, e), {
       node: t,
       refreshPositionKey: () => I(String(Date.now())),
-      nonce: w
+      nonce: D
     }));
     return (0, r.jsx)(l.yRy, {
       animation: l.yRy.Animation.FADE,
       align: "center",
       onRequestClose: () => {
         f.default.track(h.rMx.CLOSE_POPOUT, {
-          nonce: w
+          nonce: D
         }), A(false), N(false)
       },
       autoInvert: true,
@@ -195,7 +195,7 @@ let I = e => {
       renderPopout: L,
       positionKey: O,
       targetElementRef: R,
-      children: D
+      children: w
     })
   },
   S = e => {

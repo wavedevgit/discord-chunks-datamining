@@ -74,7 +74,7 @@ function M(e) {
       pronouns: null == M ? true : M.pronouns,
       tags: (0, r.jsx)(p.Z, {
         displayProfile: M,
-        themeType: D.l.POPOUT,
+        themeType: w.l.POPOUT,
         onClose: B
       }),
       nicknameIcons: (0, r.jsxs)(r.Fragment, {
@@ -86,7 +86,7 @@ function M(e) {
           onOpenProfile: U
         })]
       })
-    }), F === w.OGo.PENDING_INCOMING && (0, r.jsx)(v.Z.Overlay, {
+    }), F === D.OGo.PENDING_INCOMING && (0, r.jsx)(v.Z.Overlay, {
       children: (0, r.jsx)(E.Z, {
         user: t,
         guildId: null == k ? true : k.id,

@@ -37,8 +37,8 @@ function E(e, t, n) {
     onAction: N,
     linkBehavior: R,
     keyboardNavigationBehavior: P,
-    shouldSelectOnPressUp: w
-  } = r.Co.get(t), D = (0, i.mp)(), L = (0, f.useRef)(null), x = () => {
+    shouldSelectOnPressUp: D
+  } = r.Co.get(t), w = (0, i.mp)(), L = (0, f.useRef)(null), x = () => {
     var e;
     null === n.current || (null == L.current || S.key === L.current) && (null == (e = n.current) ? true : e.contains(document.activeElement)) || (0, u.e)(n.current)
   }, M = {}, k = e.hasChildItems, j = t.selectionManager.isLink(S.key);
@@ -66,7 +66,7 @@ function E(e, t, n) {
     key: S.key,
     ref: n,
     isVirtualized: A,
-    shouldSelectOnPressUp: e.shouldSelectOnPressUp || w,
+    shouldSelectOnPressUp: e.shouldSelectOnPressUp || D,
     onAction: N || (null == (E = S.props) ? true : E.onAction) ? (0, a.t)(null == (y = S.props) ? true : y.onAction, N ? () => N(S.key) : true) : true,
     focus: x,
     linkBehavior: R
@@ -146,7 +146,7 @@ function E(e, t, n) {
     "aria-label": S.textValue || true,
     "aria-selected": t.selectionManager.canSelectItem(S.key) ? t.selectionManager.isSelected(S.key) : true,
     "aria-disabled": t.selectionManager.isDisabled(S.key) || true,
-    "aria-labelledby": D && S.textValue ? `${(0,r.XQ)(t,S.key)} ${D}` : true,
+    "aria-labelledby": w && S.textValue ? `${(0,r.XQ)(t,S.key)} ${w}` : true,
     id: (0, r.XQ)(t, S.key)
   });
   if (A) {
@@ -168,7 +168,7 @@ function E(e, t, n) {
     },
     gridCellProps: W,
     descriptionProps: {
-      id: D
+      id: w
     },
     ...G
   }

@@ -121,8 +121,8 @@ let ec = (e, t) => eo({
       assetUrl: e ? N.Z : P.Z
     },
     noLimits: {
-      thumbnail: D.Z,
-      assetUrl: e ? w.Z : L.Z
+      thumbnail: w.Z,
+      assetUrl: e ? D.Z : L.Z
     }
   } : {
     referralProgram: {
@@ -218,7 +218,7 @@ let ec = (e, t) => eo({
         badgeText: Chunk388032.intl.string(Chunk388032.t.y2b7CA).toLocaleUpperCase(),
         videoUrl: Chunk368243.displayNameStyles.assetUrl
       },
-      w = {
+      D = {
         name: "showYourStyle",
         title: Chunk388032.intl.string(Chunk388032.t.Ij3Zmv),
         description: Chunk388032.intl.string(Chunk388032.t.UsOUxY),
@@ -227,7 +227,7 @@ let ec = (e, t) => eo({
         onClick: Chunk509614,
         videoUrl: Chunk368243.showYourStyle.assetUrl
       },
-      D = {
+      w = {
         name: "yourSpace",
         title: Chunk388032.intl.string(Chunk388032.t.Wme3nX),
         description: Chunk388032.intl.string(Chunk388032.t["/aAIqV"]),

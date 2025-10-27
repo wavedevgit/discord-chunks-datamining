@@ -12,7 +12,7 @@ require.d(exports, {
   n9: () => U,
   pR: () => x,
   rn: () => L,
-  tK: () => w,
+  tK: () => D,
   xc: () => G
 });
 var Chunk512722 = require("./512722.js"),
@@ -75,7 +75,7 @@ function P(e, t, n) {
   }, n))
 }
 
-function w(e, t) {
+function D(e, t) {
   let n = (0, u.V9)(e);
   s.Z.dispatch({
     type: "STREAM_SET_PAUSED",
@@ -84,7 +84,7 @@ function w(e, t) {
   })
 }
 
-function D(e, t) {
+function w(e, t) {
   let n = m.Z.getChannel(t);
   return i()(null != n, "Cannot join a null voice channel"), !b.Z.isInChannel(t) && (0, y.rY)(n, b.Z, g.Z)
 }
@@ -100,7 +100,7 @@ function L(e, t) {
     guildId: r,
     channelId: i
   } = e;
-  if (null != r && D(r, i)) return;
+  if (null != r && w(r, i)) return;
   let a = (0, u.V9)(e),
     o = (null == t ? true : t.forceMultiple) || p.Z.getAllActiveStreamsForChannel(i).filter(e => {
       let {
@@ -128,7 +128,7 @@ function M(e, t) {
     guildId: n,
     channelId: r
   } = e;
-  if (null != n && D(n, r)) return;
+  if (null != n && w(n, r)) return;
   L(e, t);
   let i = f.Z.getWindowOpen(S.KJ3.CHANNEL_CALL_POPOUT),
     a = E.Z.getVoiceChannelId();

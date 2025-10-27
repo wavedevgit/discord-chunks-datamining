@@ -216,7 +216,7 @@ function C(t) {
     transitionState: e,
     onClose: K,
     title: R.intl.formatToPlainString(R.t.wumolR, {
-      age: q
+      age: null != q ? q : ""
     }),
     subtitle: R.intl.formatToPlainString(R.t.n3QjDE, {
       helpURL: m.Z.getArticleURL(O.BhN.AGE_GATE)

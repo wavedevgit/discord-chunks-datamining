@@ -41,7 +41,7 @@ let T = function(e) {
     return null != t.premiumGuildSubscription && t.premiumGuildSubscription.guildId === n.id
   }).length, [A, n.id]), P = (0, h.Z)(e.guild.id).total;
 
-  function w() {
+  function D() {
     (0, p.Z)({
       initialPlanId: null,
       subscriptionTier: O.Si.TIER_2,
@@ -56,7 +56,7 @@ let T = function(e) {
     })
   }
 
-  function D() {
+  function w() {
     (0, p.Z)({
       initialPlanId: null,
       subscriptionTier: O.Si.TIER_2,
@@ -137,7 +137,7 @@ let T = function(e) {
         innerClassName: o()(I.__invalid_guildBoostCtaContent, I.guildBoostCtaGiftContent),
         look: c.zx.Looks.OUTLINED,
         color: c.zx.Colors.WHITE,
-        onClick: D,
+        onClick: w,
         size: c.zx.Sizes.LARGE,
         children: [(0, r.jsx)(u.OgN, {
           size: "md",
@@ -150,7 +150,7 @@ let T = function(e) {
         innerClassName: o()(I.__invalid_guildBoostCtaContent, I.__invalid_guildBoostCtaSubscribeContent),
         look: c.zx.Looks.OUTLINED,
         color: c.zx.Colors.WHITE,
-        onClick: w,
+        onClick: D,
         size: c.zx.Sizes.LARGE,
         children: v.intl.string(v.t.Q43TvC)
       })]

@@ -131,15 +131,15 @@ function ea(e) {
     onControlsShow: C,
     onVolumeChange: N,
     onMute: P,
-    href: D,
+    href: w,
     placeholder: L,
     placeholderVersion: M,
     sourceMetadata: k
   } = e, [U, G] = a.useState(b), Z = null != d && null == d.proxyURL, F = a.useCallback(() => G(false), [G]), H = e => {
-    e.preventDefault(), e.stopPropagation(), null == I || I(false), G(true), Z && (w.S.dispatch(B.CkL.VIDEO_EMBED_PLAYBACK_STARTED), w.S.subscribeOnce(B.CkL.VIDEO_EMBED_PLAYBACK_STARTED, F))
+    e.preventDefault(), e.stopPropagation(), null == I || I(false), G(true), Z && (D.S.dispatch(B.CkL.VIDEO_EMBED_PLAYBACK_STARTED), D.S.subscribeOnce(B.CkL.VIDEO_EMBED_PLAYBACK_STARTED, F))
   };
   a.useEffect(() => () => {
-    Z && w.S.unsubscribe(B.CkL.VIDEO_EMBED_PLAYBACK_STARTED, F)
+    Z && D.S.unsubscribe(B.CkL.VIDEO_EMBED_PLAYBACK_STARTED, F)
   }, [Z, F]);
   let {
     width: Y,
@@ -254,7 +254,7 @@ function ea(e) {
         className: V.centerContent,
         children: E ? (0, i.jsx)(v.Z, {
           onPlay: null != d ? H : null,
-          externalURL: D,
+          externalURL: w,
           renderLinkComponent: g,
           messageId: null == k || null == (t = k.message) ? true : t.id,
           channelId: null == k || null == (n = k.message) ? true : n.channel_id
@@ -812,7 +812,7 @@ class es extends(r = Chunk647438.PureComponent) {
             children: [t.text, null != t.text && null != n ? (0, i.jsx)("span", {
               className: V.embedFooterSeparator,
               children: "•"
-            }) : null, null != n ? (0, D.Y4)(n) : null]
+            }) : null, null != n ? (0, w.Y4)(n) : null]
           })]
         })
       }

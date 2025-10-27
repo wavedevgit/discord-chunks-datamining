@@ -221,7 +221,7 @@ function T(e) {
   return (0, r.jsx)(c.u, {
     asContainer: true,
     text: v.intl.formatToPlainString(v.t["4Y3O+O"], {
-      count: t
+      count: null != t ? t : ""
     }),
     children: (0, r.jsxs)("div", {
       className: C.totalResultsWrapper,

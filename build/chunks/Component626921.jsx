@@ -2,27 +2,26 @@
 /** chunk id: 626921, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  q: () => d
+  q: () => u
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
-  Chunk74655 = require("./74655.jsx"),
   Chunk982519 = require("./982519.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk680765 = require("./680765.js");
 
-function d(e) {
+function u(e) {
   let {
     ref: t,
     disabled: n,
     readOnly: i,
-    loading: o,
+    loading: s,
     clearable: l,
-    fullWidth: c,
-    isOpen: d,
+    fullWidth: u,
+    isOpen: _,
     isInert: p,
     hasValue: h,
     hasError: m,
@@ -32,42 +31,42 @@ function d(e) {
     handleToggle: y,
     handleClear: O
   } = e;
-  return (0, r.jsxs)(s.U, {
+  return (0, r.jsxs)(o.UPk, {
     ref: t,
-    containerClassName: a()(u.selectFieldContainer, {
-      [u.fullWidth]: c
+    containerClassName: a()(c.selectFieldContainer, {
+      [c.fullWidth]: u
     }),
-    className: a()(u.selectField, {
-      [u.isFocused]: d,
-      [u.isInert]: p
+    className: a()(c.selectField, {
+      [c.isFocused]: _,
+      [c.isInert]: p
     }),
-    style: c ? true : {
+    style: u ? true : {
       width: "min(".concat(E, ", 100%)")
     },
     "data-mana-component": "select-input-field",
     disabled: n,
     readOnly: i,
-    fullWidth: c,
+    fullWidth: u,
     validation: m ? {
       hasError: true
     } : true,
-    "aria-busy": o,
+    "aria-busy": s,
     children: [(0, r.jsx)("div", {
-      className: u.selectFieldContent,
+      className: c.selectFieldContent,
       children: b
-    }), (0, r.jsx)(f, {
+    }), (0, r.jsx)(d, {
       show: true === l && !p && true === h,
       iconSize: g ? "xs" : "sm",
       onClick: O
-    }), (0, r.jsx)(_, {
+    }), (0, r.jsx)(f, {
       show: g,
-      isOpen: d,
+      isOpen: _,
       onClick: y
     })]
   })
 }
 
-function f(e) {
+function d(e) {
   let {
     show: t,
     iconSize: n,
@@ -75,8 +74,8 @@ function f(e) {
   } = e;
   return t ? (0, r.jsx)(o.tEY, {
     children: (0, r.jsx)("button", {
-      className: u.clearButton,
-      "aria-label": c.intl.string(l.default.JA5C7L),
+      className: c.clearButton,
+      "aria-label": l.intl.string(s.default.JA5C7L),
       onClick: i,
       children: (0, r.jsx)(o.k$p, {
         size: n,
@@ -86,7 +85,7 @@ function f(e) {
   }) : (0, r.jsx)("span", {})
 }
 
-function _(e) {
+function f(e) {
   let {
     show: t,
     isOpen: n,
@@ -95,11 +94,11 @@ function _(e) {
   return t ? (0, r.jsx)("button", {
     "aria-hidden": true,
     tabIndex: false,
-    className: u.chevronButton,
+    className: c.chevronButton,
     onClick: i,
     children: (0, r.jsx)("span", {
-      className: a()(u.chevronIcon, {
-        [u.isOpen]: n
+      className: a()(c.chevronIcon, {
+        [c.isOpen]: n
       }),
       children: (0, r.jsx)(o.hic, {
         size: "refresh_sm",

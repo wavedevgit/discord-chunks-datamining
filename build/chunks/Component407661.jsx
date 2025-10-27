@@ -103,7 +103,7 @@ function C(e) {
     colorRoleName: N,
     authorId: R,
     displayNameStyles: P
-  } = (0, f.ZP)(a), w = (0, _.X7)(g, R, C), D = (0, d.j)({
+  } = (0, f.ZP)(a), D = (0, _.X7)(g, R, C), w = (0, d.j)({
     displayNameStyles: P
   }), L = S(i, a), x = (0, m.NE)(i, a), M = n.showThreadPromptOnReply && L >= I && x, k = () => (0, h.uL)(y.Z5c.CHANNEL(i.getGuildId(), i.id, a.id));
 
@@ -139,9 +139,9 @@ function C(e) {
                 className: v.name,
                 name: E,
                 colorString: T,
-                colorStrings: w,
+                colorStrings: D,
                 roleName: N,
-                displayNameStylesFont: D
+                displayNameStylesFont: w
               }, t)
             })
           })

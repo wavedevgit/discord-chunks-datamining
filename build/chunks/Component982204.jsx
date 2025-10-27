@@ -2,7 +2,7 @@
 /** chunk id: 982204, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  B: () => w,
+  B: () => D,
   E: () => P
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js");
@@ -123,7 +123,7 @@ let v = (e, t) => {
     })
   };
 
-function w(e) {
+function D(e) {
   let {
     sku: t,
     skuPricePreview: n,

@@ -71,7 +71,7 @@ function P(e) {
   return !R(e, e.getFullYear()) && R(e, new Date().getFullYear())
 }
 
-function w() {
+function D() {
   if (null != N) return void K(N);
   if (x(), !Chunk480294.Z.hasConsented(Chunk981631.pjP.PERSONALIZATION)) return;
   let {
@@ -102,7 +102,7 @@ function w() {
   }
 }
 
-function D(e) {
+function w(e) {
   return Math.round(s()().diff(e, "years", true))
 }
 
@@ -172,7 +172,7 @@ function W(e) {
     total: t
   } = e;
   if (null == t) {
-    N = null, w();
+    N = null, D();
     return
   }
   K(t)
@@ -202,7 +202,7 @@ function K(e) {
 }
 class z extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    T = I(), null != e && (T.friendsTabBadgeLastDismissedTime = e.friendsTabBadgeLastDismissedTime, T.lastShownFriendsListGiftIntents = Array.from(e.lastShownFriendsListGiftIntents), T.messageGiftIntentLastShownMap = g({}, e.messageGiftIntentLastShownMap)), this.syncWith([_.Z, d.Z, f.Z, u.Z], w), F()
+    T = I(), null != e && (T.friendsTabBadgeLastDismissedTime = e.friendsTabBadgeLastDismissedTime, T.lastShownFriendsListGiftIntents = Array.from(e.lastShownFriendsListGiftIntents), T.messageGiftIntentLastShownMap = g({}, e.messageGiftIntentLastShownMap)), this.syncWith([_.Z, d.Z, f.Z, u.Z], D), F()
   }
   getState() {
     return T
@@ -229,7 +229,7 @@ class z extends(r = Chunk442837.ZP.PersistedStore) {
   }
   getFriendAnniversaryYears(e) {
     let t = C[e];
-    return null == t ? 0 : D(t.friendsSince)
+    return null == t ? 0 : w(t.friendsSince)
   }
   isGiftIntentMessageInCooldown(e) {
     return null != T.messageGiftIntentLastShownMap[e]

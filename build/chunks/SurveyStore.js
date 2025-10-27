@@ -74,14 +74,14 @@ let O = {
 var P = function(e) {
   return e.IS_OWNER = "is_owner", e.IS_ADMIN = "is_admin", e.IS_COMMUNITY = "is_community", e.GUILD_SIZE = "guild_size", e.IS_HUB = "is_hub", e.IS_VIEWING = "is_viewing", e.GUILD_PERMISSIONS = "guild_permissions", e.GUILD_SIZE_ALL = "guild_size_all", e
 }(P || {});
-let w = new Set(Object.values(P));
+let D = new Set(Object.values(P));
 
-function D() {
+function w() {
   return null == v.lastFetched || Date.now() - v.lastFetched >= N
 }
 
 function L() {
-  !C && (D() || null != v.surveyOverride) && (C = true, (0, Chunk491428.wk)(v.surveyOverride, true))
+  !C && (w() || null != v.surveyOverride) && (C = true, (0, Chunk491428.wk)(v.surveyOverride, true))
 }
 
 function x(e) {
@@ -96,7 +96,7 @@ function M(e) {
   } = e;
   if (0 === t.length) returntrue;
   for (let e of t)
-    if (!w.has(e)) returnfalse;
+    if (!D.has(e)) returnfalse;
   let i = t.includes("guild_size_all"),
     a = true;
   for (let s of f.Z.getGuildsArray()) {
@@ -208,7 +208,7 @@ class z extends(r = Chunk442837.ZP.PersistedStore) {
     return v
   }
   getCurrentSurvey() {
-    return D() ? null : A
+    return w() ? null : A
   }
   getSurveyOverride() {
     return v.surveyOverride

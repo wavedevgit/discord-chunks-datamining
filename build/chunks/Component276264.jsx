@@ -137,7 +137,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       user: t
     } = e;
     if (null == t || !t.bot) return null;
-    let n = D.Hb.BOT;
+    let n = w.Hb.BOT;
     return (0, r.jsx)(h.Z, {
       className: M.botTag,
       type: n,
@@ -219,7 +219,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       handleSetTypingRef: _,
       typingRef: p,
       currentUser: h
-    } = e, m = a === w.Skl.OFFLINE, g = n ? c.Xo$ : c.qEK, E = (0, u.Z)(i) ? w.Skl.STREAMING : a;
+    } = e, m = a === D.Skl.OFFLINE, g = n ? c.Xo$ : c.qEK, E = (0, u.Z)(i) ? D.Skl.STREAMING : a;
     return E = m ? true : E, (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(g, G(j({}, o), {
         size: c.EFr.SIZE_32,
@@ -260,7 +260,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
         let {
           type: t
         } = e;
-        return t === w.IIU.CUSTOM_STATUS
+        return t === D.IIU.CUSTOM_STATUS
       }),
       user: c,
       channel: u
@@ -295,7 +295,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       status: I,
       shouldAnimateStatus: T = false,
       isMobile: R,
-      premiumSince: D,
+      premiumSince: w,
       channel: L,
       guildId: x,
       className: k,
@@ -341,8 +341,8 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       t && eR(false)
     }, [t]);
     let eP = (0, A.fN)(O),
-      ew = (0, A.Wi)(eP, v, el) && t && !eN,
-      eD = i.useCallback(() => {
+      eD = (0, A.Wi)(eP, v, el) && t && !eN,
+      ew = i.useCallback(() => {
         e_(true)
       }, []),
       eL = i.useCallback(() => {
@@ -372,7 +372,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
       targetElementRef: ed,
       renderPopout: ej,
       position: "bottom",
-      shouldShow: ew,
+      shouldShow: eD,
       nudgeAlignIntoViewport: false,
       useRawTargetDimensions: true,
       animation: c.yRy.Animation.NONE,
@@ -381,15 +381,15 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
         ref: ed,
         selected: t,
         className: o()(M.member, k, {
-          [M.offline]: I === w.Skl.OFFLINE && !t,
-          [M.flatBottom]: ew
+          [M.offline]: I === D.Skl.OFFLINE && !t,
+          [M.flatBottom]: eD
         }),
         innerClassName: M.memberInner,
         onClick: Q,
         onKeyDown: W,
         onMouseDown: Y,
         onContextMenu: J,
-        onMouseEnter: eD,
+        onMouseEnter: ew,
         onMouseLeave: eL,
         onBlur: eM,
         hovered: ef,
@@ -453,7 +453,7 @@ let F = (0, Chunk624138.Mg)(Chunk477690.Z.MEMBER_LIST_ITEM_AVATAR_DECORATION_PAD
           isOwner: u,
           lostPermissionTooltipText: p,
           ownerTooltipText: f,
-          premiumSince: D,
+          premiumSince: w,
           onClickPremiumGuildIcon: $
         }),
         "aria-controls": ee,

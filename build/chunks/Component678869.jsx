@@ -33,13 +33,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk119835 = require("./119835.js"),
   Chunk951948 = require("./951948.js");
 
-function w(e, t) {
+function D(e, t) {
   return N.intl.formatToPlainString(N.t.h2yWWX, {
     username: t.username,
     activity: e
   })
 }
-let D = (e, t, n) => {
+let w = (e, t, n) => {
   let {
     artist: r,
     media: i
@@ -137,7 +137,7 @@ function x(e) {
         channel: R,
         mediaImageSrc: null == U ? true : U.src,
         artist: Z,
-        description: D({
+        description: w({
           artist: Z,
           media: F
         }, R, V),
@@ -207,7 +207,7 @@ function x(e) {
         user: V,
         channel: R,
         generateReactionImage: z,
-        reactionImageAltText: w(Z, V),
+        reactionImageAltText: D(Z, V),
         entry: x,
         buttons: X
       })

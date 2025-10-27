@@ -63,12 +63,12 @@ function P(e, t) {
   return n
 }
 
-function w(e, t) {
+function D(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let D = (0, Chunk13941.animated)(Chunk481060.CJ0),
+let w = (0, Chunk13941.animated)(Chunk481060.CJ0),
   L = e => {
     var t;
     let {
@@ -247,7 +247,7 @@ let D = (0, Chunk13941.animated)(Chunk481060.CJ0),
                 visibility: x || M ? "inherit" : "hidden"
               },
               "aria-hidden": !x && !M,
-              children: (0, r.jsx)(u.P3F, w(R({}, e), {
+              children: (0, r.jsx)(u.P3F, D(R({}, e), {
                 className: C.iconWrapper,
                 "aria-label": A.intl.string(A.t.DEoVWZ),
                 children: (0, r.jsx)(u.xhG, {
@@ -260,7 +260,7 @@ let D = (0, Chunk13941.animated)(Chunk481060.CJ0),
             onClick: en,
             className: C.iconWrapper,
             "aria-label": M ? A.intl.string(A.t.iTcuma) : A.intl.string(A.t.dcl9MQ),
-            children: (0, r.jsx)(D, {
+            children: (0, r.jsx)(w, {
               style: {
                 rotate: L.to({
                   range: [0, 1],

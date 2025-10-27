@@ -35,7 +35,7 @@ let d = {
             flipVariations: O,
             allowedAutoPlacements: v
           }) : n)
-        }, []), N = t.rects.reference, R = t.rects.popper, P = new Map, w = true, D = C[0], L = 0; L < C.length; L++) {
+        }, []), N = t.rects.reference, R = t.rects.popper, P = new Map, D = true, w = C[0], L = 0; L < C.length; L++) {
         var x = C[L],
           M = (0, i.Z)(x),
           k = (0, c.Z)(x) === l.BL,
@@ -55,12 +55,12 @@ let d = {
         if (f && F.push(G[M] <= 0), p && F.push(G[B] <= 0, G[Z] <= 0), F.every(function(e) {
             return e
           })) {
-          D = x, w = false;
+          w = x, D = false;
           break
         }
         P.set(x, F)
       }
-      if (w)
+      if (D)
         for (var V = O ? 3 : 1, H = function(e) {
             var t = C.find(function(t) {
               var n = P.get(t);
@@ -68,9 +68,9 @@ let d = {
                 return e
               })
             });
-            if (t) return D = t, "break"
+            if (t) return w = t, "break"
           }, Y = V; Y > 0 && "break" !== H(Y); Y--);
-      t.placement !== D && (t.modifiersData[a]._skip = true, t.placement = D, t.reset = true)
+      t.placement !== w && (t.modifiersData[a]._skip = true, t.placement = w, t.reset = true)
     }
   },
   requiresIfExists: ["offset"],

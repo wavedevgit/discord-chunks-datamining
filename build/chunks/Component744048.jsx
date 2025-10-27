@@ -33,12 +33,12 @@ let O = function(e) {
   !n && null == T && (v && !O && A.push(a.z.CLIENT_THEMES_COACHMARK), I && A.push(a.z.CUSTOM_THEME_COACHMARK));
   let [C, N] = (0, _.US)(A, b.R.SIDEBAR, true), R = C === a.z.CLIENT_THEMES_COACHMARK, P = C === a.z.CUSTOM_THEME_COACHMARK;
   if ((0, u.HA)(I, C), n) return null;
-  let w = T === g.wh.CLIENT_THEMES || R,
-    D = T === g.wh.APP_ICON,
+  let D = T === g.wh.CLIENT_THEMES || R,
+    w = T === g.wh.APP_ICON,
     L = T === g.wh.CUSTOM_THEME || P;
-  if (!(w || D || L)) return null;
+  if (!(D || w || L)) return null;
   let x = () => (0, r.jsxs)(r.Fragment, {
-    children: [w && (0, r.jsx)(c.Z, {
+    children: [D && (0, r.jsx)(c.Z, {
       markAsDismissed: R ? N : () => {
         (0, f.Q3)(a.z.CLIENT_THEMES_COACHMARK, {
           dismissAction: b.L.INDIRECT_ACTION,
@@ -46,7 +46,7 @@ let O = function(e) {
         })
       },
       showClientThemesCoachmark: R
-    }), D && (0, r.jsx)(o.Z, {
+    }), w && (0, r.jsx)(o.Z, {
       isCoachmark: false,
       markAsDismissed: N
     }), L && (0, r.jsx)(d.Z, {

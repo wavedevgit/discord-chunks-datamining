@@ -98,7 +98,7 @@ function V(e) {
     r = (0, S.ZP)(t),
     a = i.useMemo(() => r.map(e => e.id), [r]),
     o = (0, c.e7)([x.ZP], () => x.ZP.getVoiceStates(t), [t]),
-    s = (0, c.Wu)([w.Z], () => w.Z.getBlockedOrIgnoredIDs()),
+    s = (0, c.Wu)([D.Z], () => D.Z.getBlockedOrIgnoredIDs()),
     u = l().flatMap(n, t => {
       var n;
       if (t === e.afkChannelId) return [];
@@ -142,11 +142,11 @@ function V(e) {
     y = (0, p.dq)(b),
     O = E.filter(e => null != e && !m.includes(e.id)),
     v = (0, c.e7)([C.Z], () => C.Z.getUserAffinitiesMap(), []),
-    D = i.useMemo(() => (0, N.C)(y, v, "GuildTooltip - nonBlockedUsers"), [y, v]),
+    w = i.useMemo(() => (0, N.C)(y, v, "GuildTooltip - nonBlockedUsers"), [y, v]),
     k = i.useMemo(() => (0, N.C)(d, v, "GuildTooltip - stageSpeakers"), [d, v]),
     j = i.useMemo(() => (0, N.C)(O, v, "GuildTooltip - streamUsers"), [O, v]);
   return {
-    voiceUsersToShow: D,
+    voiceUsersToShow: w,
     stageSpeakers: k,
     numStageListeners: _,
     streamUsersToShow: j,
@@ -229,9 +229,9 @@ function K(e) {
   } = V(t), p = H(u.gj8, a, n), h = Y(n, s, l), m = H(u.hGI, f, n), g = H(i ? u.iWm : u.nG3, _, n), {
     isMuted: E,
     muteConfig: b
-  } = (0, c.cj)([D.ZP], () => ({
-    isMuted: D.ZP.isMuted(n),
-    muteConfig: D.ZP.getMuteConfig(n)
+  } = (0, c.cj)([w.ZP], () => ({
+    isMuted: w.ZP.isMuted(n),
+    muteConfig: w.ZP.getMuteConfig(n)
   }), [n]), y = null != p || null != m;
   return (0, r.jsxs)(r.Fragment, {
     children: [h, p, m, g, E ? (0, r.jsx)(W, {

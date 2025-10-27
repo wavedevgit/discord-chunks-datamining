@@ -79,7 +79,7 @@ function k(e) {
     Q = (0, I.Z)(S.Si.TIER_2);
   if (X) {
     let e;
-    e = F ? (0, m.rO)() ? w.Z : D.Z : (0, m.rO)() ? L.Z : x.Z;
+    e = F ? (0, m.rO)() ? D.Z : w.Z : (0, m.rO)() ? L.Z : x.Z;
     let t = F ? "nitro-pink" : "green";
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(u.ZMr, {

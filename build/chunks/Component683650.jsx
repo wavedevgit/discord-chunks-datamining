@@ -2,33 +2,28 @@
 /** chunk id: 683650, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  X: () => c,
-  o: () => u
+  X: () => l,
+  o: () => c
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk497505 = require("./497505.js"),
-  Chunk937797 = require("./937797.js"),
   Chunk543433 = require("./543433.jsx"),
   Chunk46140 = require("./46140.js"),
   Chunk388032 = require("./388032.jsx"),
-  c = function(e) {
+  l = function(e) {
     return e.NOT_FOUND = "not_found", e.MOBILE_ONLY = "mobile_only", e
   }({});
 
-function u(e) {
+function c(e) {
   let {
     questId: t,
     reason: n = "not_found"
-  } = e, {
-    enabled: c
-  } = a.m8.useConfig({
-    location: s.dr.EMBED_DESKTOP
-  });
-  return (0, r.jsx)(o.w, {
+  } = e;
+  return (0, r.jsx)(a.w, {
     questId: t,
-    fallbackReason: s.V_.UNKNOWN_QUEST,
-    bodyText: l.intl.string("mobile_only" === n ? l.t.Pag1gS : c ? l.t.c9275Z : l.t.CTn0yX),
+    fallbackReason: o.V_.UNKNOWN_QUEST,
+    bodyText: s.intl.string("mobile_only" === n ? s.t.Pag1gS : s.t.c9275Z),
     questContent: i.jn.INVALID_QUEST_EMBED
   })
 }

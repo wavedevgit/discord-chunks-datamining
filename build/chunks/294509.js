@@ -2,24 +2,25 @@
 /** chunk id: 294509, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Fj: () => f,
-  _: () => u,
-  qn: () => d
+  Fj: () => _,
+  _: () => d,
+  qn: () => f
 });
-var Chunk768494 = require("./768494.js"),
+var Chunk524437 = require("./524437.js"),
+  Chunk768494 = require("./768494.js"),
   Chunk695346 = require("./695346.js"),
   Chunk991621 = require("./991621.js"),
   Chunk936141 = require("./936141.js"),
   Chunk656577 = require("./656577.js"),
   Chunk925513 = require("./925513.js"),
   Chunk981631 = require("./981631.js"),
-  u = function(e) {
-    return e.EXPLICIT = "explicit", e.GORE = "gore", e
-  }({}),
   d = function(e) {
-    return e[e.NONE = 0] = "NONE", e[e.EXPLICIT = 1] = "EXPLICIT", e[e.GORE = 2] = "GORE", e[e.ALL = 3] = "ALL", e
+    return e.EXPLICIT = "explicit", e.GORE = "gore", e.SELF_HARM = "self_harm", e
+  }({}),
+  f = function(e) {
+    return e[e.NONE = 0] = "NONE", e[e.EXPLICIT = 1] = "EXPLICIT", e[e.GORE = 2] = "GORE", e[e.SELF_HARM = 4] = "SELF_HARM", e[e.ALL = 7] = "ALL", e
   }({});
-let f = {
+let _ = {
   explicit: {
     harmType: "explicit",
     obscureReason: Chunk936141.wk.EXPLICIT_CONTENT,
@@ -32,29 +33,29 @@ let f = {
       var t;
       let n = null == e || null == (t = e.textAndImages) ? true : t.explicitContentSettings;
       return {
-        [a.n.GUILD]: null == n ? true : n.explicitContentGuilds,
-        [a.n.FRIEND_DM]: null == n ? true : n.explicitContentFriendDm,
-        [a.n.NON_FRIEND_DM]: null == n ? true : n.explicitContentNonFriendDm
+        [o.n.GUILD]: null == n ? true : n.explicitContentGuilds,
+        [o.n.FRIEND_DM]: null == n ? true : n.explicitContentFriendDm,
+        [o.n.NON_FRIEND_DM]: null == n ? true : n.explicitContentNonFriendDm
       }
     },
     getUserSettingsWithDefaults: e => {
       var t, n, r;
-      let o = null != e ? e : {
-        [a.n.GUILD]: null == (t = i.Sh.getSetting()) ? true : t.explicitContentGuilds,
-        [a.n.FRIEND_DM]: null == (n = i.Sh.getSetting()) ? true : n.explicitContentFriendDm,
-        [a.n.NON_FRIEND_DM]: null == (r = i.Sh.getSetting()) ? true : r.explicitContentNonFriendDm
+      let i = null != e ? e : {
+        [o.n.GUILD]: null == (t = a.Sh.getSetting()) ? true : t.explicitContentGuilds,
+        [o.n.FRIEND_DM]: null == (n = a.Sh.getSetting()) ? true : n.explicitContentFriendDm,
+        [o.n.NON_FRIEND_DM]: null == (r = a.Sh.getSetting()) ? true : r.explicitContentNonFriendDm
       };
       return {
-        [a.n.GUILD]: (0, s.ec)({
-          setting: null == o ? true : o[a.n.GUILD]
+        [o.n.GUILD]: (0, l.ec)({
+          setting: null == i ? true : i[o.n.GUILD]
         }),
-        [a.n.FRIEND_DM]: (0, s.ec)({
-          setting: null == o ? true : o[a.n.FRIEND_DM],
+        [o.n.FRIEND_DM]: (0, l.ec)({
+          setting: null == i ? true : i[o.n.FRIEND_DM],
           isDm: true,
           isFriend: true
         }),
-        [a.n.NON_FRIEND_DM]: (0, s.ec)({
-          setting: null == o ? true : o[a.n.NON_FRIEND_DM],
+        [o.n.NON_FRIEND_DM]: (0, l.ec)({
+          setting: null == i ? true : i[o.n.NON_FRIEND_DM],
           isDm: true
         })
       }
@@ -72,32 +73,55 @@ let f = {
       var t;
       let n = null == e || null == (t = e.textAndImages) ? true : t.goreContentSettings;
       return {
-        [a.n.GUILD]: null == n ? true : n.goreContentGuilds,
-        [a.n.FRIEND_DM]: null == n ? true : n.goreContentFriendDm,
-        [a.n.NON_FRIEND_DM]: null == n ? true : n.goreContentNonFriendDm
+        [o.n.GUILD]: null == n ? true : n.goreContentGuilds,
+        [o.n.FRIEND_DM]: null == n ? true : n.goreContentFriendDm,
+        [o.n.NON_FRIEND_DM]: null == n ? true : n.goreContentNonFriendDm
       }
     },
     getUserSettingsWithDefaults: e => {
       var t, n, r;
-      let o = null != e ? e : {
-        [a.n.GUILD]: null == (t = i.j7.getSetting()) ? true : t.goreContentGuilds,
-        [a.n.FRIEND_DM]: null == (n = i.j7.getSetting()) ? true : n.goreContentFriendDm,
-        [a.n.NON_FRIEND_DM]: null == (r = i.j7.getSetting()) ? true : r.goreContentNonFriendDm
+      let i = null != e ? e : {
+        [o.n.GUILD]: null == (t = a.j7.getSetting()) ? true : t.goreContentGuilds,
+        [o.n.FRIEND_DM]: null == (n = a.j7.getSetting()) ? true : n.goreContentFriendDm,
+        [o.n.NON_FRIEND_DM]: null == (r = a.j7.getSetting()) ? true : r.goreContentNonFriendDm
       };
       return {
-        [a.n.GUILD]: (0, l._i)({
-          setting: null == o ? true : o[a.n.GUILD]
+        [o.n.GUILD]: (0, c._i)({
+          setting: null == i ? true : i[o.n.GUILD]
         }),
-        [a.n.FRIEND_DM]: (0, l._i)({
-          setting: null == o ? true : o[a.n.FRIEND_DM],
+        [o.n.FRIEND_DM]: (0, c._i)({
+          setting: null == i ? true : i[o.n.FRIEND_DM],
           isDm: true,
           isFriend: true
         }),
-        [a.n.NON_FRIEND_DM]: (0, l._i)({
-          setting: null == o ? true : o[a.n.NON_FRIEND_DM],
+        [o.n.NON_FRIEND_DM]: (0, c._i)({
+          setting: null == i ? true : i[o.n.NON_FRIEND_DM],
           isDm: true
         })
       }
     }
+  },
+  self_harm: {
+    harmType: "self_harm",
+    obscureReason: Chunk936141.wk.SELF_HARM_CONTENT,
+    attachmentFlag: Chunk981631.J0y.CONTAINS_SELF_HARM_CONTENT,
+    embedFlag: Chunk981631.xPJ.CONTAINS_SELF_HARM_CONTENT,
+    genericMediaFlag: Chunk768494.Cb.SELF_HARM,
+    bitmask: 4,
+    devSettingKey: "obscure_blur_effect_self_harm_content_enabled",
+    getProtoUserSettings: e => {
+      var t;
+      let n = null == e || null == (t = e.textAndImages) ? true : t.selfHarmContentSettings;
+      return {
+        [o.n.GUILD]: null == n ? true : n.selfHarmContentGuilds,
+        [o.n.FRIEND_DM]: null == n ? true : n.selfHarmContentFriendDm,
+        [o.n.NON_FRIEND_DM]: null == n ? true : n.selfHarmContentNonFriendDm
+      }
+    },
+    getUserSettingsWithDefaults: () => ({
+      [Chunk991621.n.GUILD]: Chunk524437.Q4.UNSET_EXPLICIT_CONTENT_REDACTION,
+      [Chunk991621.n.FRIEND_DM]: Chunk524437.Q4.UNSET_EXPLICIT_CONTENT_REDACTION,
+      [Chunk991621.n.NON_FRIEND_DM]: Chunk524437.Q4.UNSET_EXPLICIT_CONTENT_REDACTION
+    })
   }
 }

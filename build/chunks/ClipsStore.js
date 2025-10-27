@@ -66,8 +66,8 @@ let O = "default",
   N = {},
   R = null,
   P = null,
-  w = {},
-  D = {
+  D = {},
+  w = {
     clipsEnabled: false,
     storageLocation: O,
     clipsQuality: {
@@ -81,7 +81,7 @@ let O = "default",
     viewerConnectivity: Chunk356659.dJ.ALL
   },
   L = {
-    clipsSettings: D,
+    clipsSettings: w,
     hardwareClassification: null,
     hardwareClassificationForDecoupled: null,
     hardwareClassificationVersion: 0,
@@ -138,7 +138,7 @@ function U(e) {
   if (S += 1, L.hasTakenDecoupledClip = L.hasTakenDecoupledClip || t === p.X9.DECOUPLED, null != n && null != r) {
     var i;
     let e = Date.now();
-    P = null != P ? P : e, w[n] = [...null != (i = w[n]) ? i : [], {
+    P = null != P ? P : e, D[n] = [...null != (i = D[n]) ? i : [], {
       timestamp: e,
       thumbnail: r
     }]
@@ -150,7 +150,7 @@ function G(e) {
     streamKey: t,
     timestamp: n
   } = e;
-  P === n && (P = null), null == n ? w[t] = [] : w[t] = w[t].filter(e => e.timestamp !== n)
+  P === n && (P = null), null == n ? D[t] = [] : D[t] = D[t].filter(e => e.timestamp !== n)
 }
 
 function B() {
@@ -253,7 +253,7 @@ function q(e) {
   let {
     streamKey: t
   } = e;
-  if (P = null, w[t] = [], null == C || (0, l.my)(t).ownerId !== c.default.getId()) returnfalse;
+  if (P = null, D[t] = [], null == C || (0, l.my)(t).ownerId !== c.default.getId()) returnfalse;
   C = 0 === C.newClipIds.length ? null : y(E({}, C), {
     ended: true
   })
@@ -336,10 +336,10 @@ class er extends(r = Chunk442837.ZP.DeviceSettingsStore) {
   }
   getStreamClipAnimations(e) {
     var t;
-    return null != (t = w[e]) ? t : v
+    return null != (t = D[e]) ? t : v
   }
   hasAnyClipAnimations() {
-    return Object.values(w).some(e => e.length > 0)
+    return Object.values(D).some(e => e.length > 0)
   }
   getHardwareClassification() {
     return L.hardwareClassification
@@ -383,10 +383,10 @@ class er extends(r = Chunk442837.ZP.DeviceSettingsStore) {
   }
 }
 g(er, "displayName", "ClipsStore"), g(er, "persistKey", "ClipsStore"), g(er, "migrations", [e => ({
-  clipsSettings: null != e ? e : D,
+  clipsSettings: null != e ? e : w,
   newClipsCount: 0
 }), e => {
-  let t = E({}, D, e.clipsSettings);
+  let t = E({}, w, e.clipsSettings);
   return y(E({}, e), {
     clipsSettings: t
   })
@@ -408,7 +408,7 @@ g(er, "displayName", "ClipsStore"), g(er, "persistKey", "ClipsStore"), g(er, "mi
   })
 }, e => y(E({}, e), {
   clipsSettings: y(E({}, e.clipsSettings), {
-    decoupledClipsEnabled: D.decoupledClipsEnabled
+    decoupledClipsEnabled: w.decoupledClipsEnabled
   })
 }), e => {
   var t;
@@ -432,13 +432,13 @@ g(er, "displayName", "ClipsStore"), g(er, "persistKey", "ClipsStore"), g(er, "mi
   })
 }, e => y(E({}, e), {
   clipsSettings: y(E({}, e.clipsSettings), {
-    clipsQuality: "number" == typeof e.clipsSettings.clipsQuality || null == e.clipsSettings.clipsQuality ? D.clipsQuality : e.clipsSettings.clipsQuality
+    clipsQuality: "number" == typeof e.clipsSettings.clipsQuality || null == e.clipsSettings.clipsQuality ? w.clipsQuality : e.clipsSettings.clipsQuality
   })
 }), e => {
   var t;
   return y(E({}, e), {
     clipsSettings: y(E({}, e.clipsSettings), {
-      remindersEnabled: null != (t = e.clipsSettings.remindersEnabled) ? t : D.remindersEnabled
+      remindersEnabled: null != (t = e.clipsSettings.remindersEnabled) ? t : w.remindersEnabled
     })
   })
 }, e => y(E({}, e), {
