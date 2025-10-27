@@ -38,7 +38,7 @@ let p = new d(Chunk570140.Z, {
     var t, n, r, i, l, d;
     let {
       guildId: p
-    } = e, h = null != (n = null == (t = o.Z.getGuild(p)) ? true : t.premiumSubscriberCount) ? n : 0, f = a.Z.getStateForGuild(p), g = (0, s.h)(Object.values(null != (r = null == f ? true : f.unlockedPowerups) ? r : {}));
+    } = e, f = null != (n = null == (t = o.Z.getGuild(p)) ? true : t.premiumSubscriberCount) ? n : 0, h = a.Z.getStateForGuild(p), g = (0, s.h)(Object.values(null != (r = null == h ? true : h.unlockedPowerups) ? r : {}));
     l = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -53,7 +53,7 @@ let p = new d(Chunk570140.Z, {
     }({}, u), d = d = {
       [p]: {
         lastSeenWarningNotification: null != (i = g[g.length - 1]) ? i : Date.now(),
-        lastBoostCount: h
+        lastBoostCount: f
       }
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(d)) : (function(e, t) {
       var n = Object.keys(e);

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => A
-});
+}), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk351721 = require("./351721.js");
@@ -190,6 +190,13 @@ class S extends(r = Chunk442837.ZP.Store) {
   }
   getStateForGuild(e) {
     return null != e ? d[e] : true
+  }
+  getLowestGameCostForGuild(e) {
+    var t;
+    if (null == e) return null;
+    let n = d[e],
+      r = Object.values(null != (t = null == n ? true : n.catalog) ? t : {});
+    return 0 === r.length ? null : Math.min(...r.map(e => e.baseCost))
   }
   hasFetchedCatalog(e) {
     var t;

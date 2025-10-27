@@ -66,7 +66,7 @@ let Z = Chunk647438.memo(function(e) {
       }),
       {
         parentAnalyticsLocation: K
-      } = (0, f.ZP)(),
+      } = (0, h.ZP)(),
       Y = N(F, B, G),
       q = i.useCallback(() => {
         var e;
@@ -81,7 +81,7 @@ let Z = Chunk647438.memo(function(e) {
         }), (0, u.h7)(B, false)
       }, [B, V, K, k]),
       X = i.useCallback((e, t) => () => {
-        (0, m.v)(K, m.d.LEAVE_ACTIVITY), h.Z.leaveActivity({
+        (0, m.v)(K, m.d.LEAVE_ACTIVITY), f.Z.leaveActivity({
           location: t,
           applicationId: e,
           showFeedback: true
@@ -189,7 +189,7 @@ let Z = Chunk647438.memo(function(e) {
         icon: c.PBZ
       }),
       ep = null == w ? null : (0, r.jsx)(b.Z, {}),
-      eh = ei && ee && !en ? (0, r.jsx)(T, {
+      ef = ei && ee && !en ? (0, r.jsx)(T, {
         runningGame: k,
         startAuthorization: () => {
           ea(true), null != el.current && clearTimeout(el.current), el.current = setTimeout(() => {
@@ -199,7 +199,7 @@ let Z = Chunk647438.memo(function(e) {
         connectionApp: er,
         ref: z
       }) : null,
-      ef = ei && ee && !en ? (0, r.jsx)(s.J2, {
+      eh = ei && ee && !en ? (0, r.jsx)(s.J2, {
         title: I.intl.string(I.t.ULvRFd),
         body: I.intl.string(I.t["HJJDr+"]),
         targetElementRef: z,
@@ -213,9 +213,9 @@ let Z = Chunk647438.memo(function(e) {
           ea(false), null != el.current && (clearTimeout(el.current), el.current = null)
         }
       }) : null;
-    return null == es && null == ec && null == eu && null == ed && null == eh ? null : (0, r.jsxs)("div", {
+    return null == es && null == ec && null == eu && null == ed && null == ef ? null : (0, r.jsxs)("div", {
       className: P.actions,
-      children: [null != eh ? eh : ec, es, null != (t = null != eu ? eu : ed) ? t : ep, ef]
+      children: [null != ef ? ef : ec, es, null != (t = null != eu ? eu : ed) ? t : ep, eh]
     })
   }),
   T = Chunk647438.forwardRef(function(e, t) {

@@ -2,7 +2,7 @@
 /** chunk id: 773149, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => I
-}), require("./388685.js"), require("./953529.js");
+}), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
@@ -27,7 +27,13 @@ var Chunk951288 = require("./951288.js"),
 function I(e) {
   let {
     guildId: t
-  } = e, n = (0, s.e7)([m.Z], () => m.Z.getStateForGuild(t)), o = i.useMemo(() => {
+  } = e, {
+    state: n,
+    lowestGameServerCost: o
+  } = (0, s.cj)([m.Z], () => ({
+    state: m.Z.getStateForGuild(t),
+    lowestGameServerCost: m.Z.getLowestGameCostForGuild(t)
+  })), I = i.useMemo(() => {
     var e;
     let t = Object.values(null != (e = null == n ? true : n.entitlements) ? e : {});
     if (0 === t.length) return;
@@ -39,16 +45,12 @@ function I(e) {
       type: "active",
       statusText: _.intl.string(v.default.FFLkmx)
     }
-  }, [null == n ? true : n.entitlements]), I = (0, f.d)((null == o ? true : o.type) === "active"), w = i.useMemo(() => {
-    if ((null == n ? true : n.catalog) == null) return 0;
-    let e = Object.values(n.catalog);
-    return 0 === e.length ? 0 : Math.min(...e.map(e => e.baseCost))
-  }, [null == n ? true : n.catalog]);
+  }, [null == n ? true : n.entitlements]), w = (0, f.d)((null == I ? true : I.type) === "active");
   return null == n ? null : (0, r.jsxs)(p.aB, {
     label: _.intl.string(x.default["B3OfL/"]),
     badge: "beta",
-    isActive: (null == o ? true : o.type) === "active",
-    isWarning: (null == o ? true : o.type) === "expiring",
+    isActive: (null == I ? true : I.type) === "active",
+    isWarning: (null == I ? true : I.type) === "expiring",
     onClick: () => (0, g.Z)({
       guildId: t,
       analyticsLocation: u.Z.GUILD_POWERUPS_OVERVIEW
@@ -64,15 +66,15 @@ function I(e) {
       })]
     }), (0, r.jsx)(p.Q9, {
       title: _.intl.string(x.default["B3OfL/"]),
-      textColor: I,
+      textColor: w,
       footer: (0, r.jsx)(p.uf, {
-        cost: w,
+        cost: null != o ? o : 0,
         costDecorator: "+",
-        status: o
+        status: I
       }),
       children: (0, r.jsx)(a.xvT, {
         className: b.description,
-        color: I,
+        color: w,
         variant: "text-sm/medium",
         children: _.intl.string(x.default.EGkJAG)
       })

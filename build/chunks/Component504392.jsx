@@ -51,12 +51,12 @@ function L(e) {
     M = (0, _.Z)(t),
     D = i.useRef(false),
     {
-      shouldShow: V,
-      modalConfig: G
+      shouldShow: G,
+      modalConfig: V
     } = (0, P.K)(t, "GuildPowerupsOverview"),
-    B = null == o && null != G,
+    B = null == o && null != V,
     W = [];
-  V && B && W.push(s.z.VANITY_URL_POWERUP_ROLLBACK_MODAL);
+  G && B && W.push(s.z.VANITY_URL_POWERUP_ROLLBACK_MODAL);
   let [z, F] = (0, u.US)(W), K = i.useMemo(() => R.reduce((e, t) => {
     let n = null == U ? true : U.powerupCatalog[t];
     if (null == n) return e;
@@ -90,7 +90,7 @@ function L(e) {
           }
         }
   }, [t, o, K, H]), i.useEffect(() => {
-    null != z && null != G && (0, c.ZDy)(async () => {
+    null != z && null != V && (0, c.ZDy)(async () => {
       let {
         default: e
       } = await n.e("61879").then(n.bind(n, 802426));
@@ -112,7 +112,7 @@ function L(e) {
         }
         return e
       }({
-        modalConfig: G,
+        modalConfig: V,
         markAsDismissed: F
       }, t))
     }, {
@@ -121,7 +121,7 @@ function L(e) {
       },
       modalKey: "dismissible_content_".concat(z)
     })
-  }, [t, z, F, G]), (null == U ? true : U.powerupCatalog) == null) ? null : (0, r.jsxs)("div", {
+  }, [t, z, F, V]), (null == U ? true : U.powerupCatalog) == null) ? null : (0, r.jsxs)("div", {
     className: k.container,
     children: [(0, r.jsxs)(d.Z, {
       className: k.toolbar,

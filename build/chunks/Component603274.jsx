@@ -34,7 +34,7 @@ function S(e, t) {
     children: [(0, r.jsx)(e, {
       className: E.activityIcon,
       color: "currentColor"
-    }), (0, r.jsx)(h.ZP, {
+    }), (0, r.jsx)(f.ZP, {
       guildId: true,
       users: t,
       max: 6
@@ -53,7 +53,7 @@ function I() {
       } = e;
       return t
     })), [require]),
-    o = (0, Chunk442837.Wu)([Chunk565799.Z], () => a().flatMap(Chunk120356, e => f.Z.getMutableParticipants(e, g.pV.SPEAKER).filter(e => e.type === g.Ui.VOICE).map(e => {
+    o = (0, Chunk442837.Wu)([Chunk565799.Z], () => a().flatMap(Chunk120356, e => h.Z.getMutableParticipants(e, g.pV.SPEAKER).filter(e => e.type === g.Ui.VOICE).map(e => {
       let {
         user: t
       } = e;

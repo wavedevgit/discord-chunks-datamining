@@ -97,8 +97,8 @@ class M extends Chunk98597.ZP {
       mentionCount: u,
       connectChannelDropTarget: d,
       connectChannelDragSource: p,
-      connectDragPreview: h,
-      canReorderChannel: f,
+      connectDragPreview: f,
+      canReorderChannel: h,
       isSubscriptionGated: b,
       isFavoriteSuggestion: _,
       subtitle: O,
@@ -282,7 +282,7 @@ function G(e) {
   }), j = (0, a.e7)([_.Z], () => _.Z.shouldIndicateNewChannel(n.id, t.id)), {
     needSubscriptionToAccess: E,
     isSubscriptionGated: S
-  } = (0, b.Z)(t.id), I = (0, a.e7)([C.ZP], () => C.ZP.isFavorite(n.id, t.id)), N = (0, f.$5)(t), Z = (0, p.NX)(t.id), A = (0, P.Z)({
+  } = (0, b.Z)(t.id), I = (0, a.e7)([C.ZP], () => C.ZP.isFavorite(n.id, t.id)), N = (0, h.$5)(t), Z = (0, p.NX)(t.id), A = (0, P.Z)({
     channel: t,
     isChannelCollapsed: false,
     isChannelSelected: s,
@@ -292,7 +292,7 @@ function G(e) {
     muted: o,
     enableActivities: Z,
     resolvedUnreadSetting: g
-  }), R = (0, h.ZP)(t);
+  }), R = (0, f.ZP)(t);
   return (0, r.jsx)(k, L(D({}, d, m, e), {
     hasActiveThreads: c,
     hasMoreActiveThreads: u,

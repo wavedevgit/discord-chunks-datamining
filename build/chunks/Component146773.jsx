@@ -48,7 +48,7 @@ let C = "DRAGGABLE_GUILD_CHANNEL";
 function E(e, t) {
   var n, r;
   if (null == e || null == t) return null;
-  if (e !== v.I_8) return f.Z.getChannel(t);
+  if (e !== v.I_8) return h.Z.getChannel(t);
   let i = m.ZP.getChannels(e),
     l = null != (r = null != (n = i[m.sH].find(e => e.channel.id === t)) ? n : i[m.Zb].find(e => e.channel.id === t)) ? r : i[v.d4z.GUILD_CATEGORY].find(e => e.channel.id === t);
   return null == l ? true : l.channel
@@ -64,27 +64,27 @@ function S(e) {
       let d = E(i, l.id);
       if (null == d) return;
       let p = g.Z.getCategories(i),
-        h = b.Z.getGuild(i);
-      if (null == h) return;
+        f = b.Z.getGuild(i);
+      if (null == f) return;
       let m = (0, y.Dn)(d, E(i, c.referenceId), c.parentId, p);
       if (0 !== m.length) {
         if (i === v.I_8) return void(0, u.s3)(m);
         if (m = m.filter(e => {
             let {
               id: t
-            } = e, n = f.Z.getChannel(t);
+            } = e, n = h.Z.getChannel(t);
             if (null == n) returnfalse;
-            let r = f.Z.getChannel(n.parent_id);
-            return n.type === v.d4z.GUILD_CATEGORY || null == r ? _.Z.can(v.Plq.MANAGE_CHANNELS, h) : _.Z.can(v.Plq.MANAGE_CHANNELS, r)
+            let r = h.Z.getChannel(n.parent_id);
+            return n.type === v.d4z.GUILD_CATEGORY || null == r ? _.Z.can(v.Plq.MANAGE_CHANNELS, f) : _.Z.can(v.Plq.MANAGE_CHANNELS, r)
           }), d.parent_id !== c.parentId && m.find(e => {
             if (e.id !== d.id) returnfalse;
-            let t = f.Z.getChannel(e.parent_id);
+            let t = h.Z.getChannel(e.parent_id);
             if (!(null != t && _.Z.can(v.Plq.MANAGE_ROLES, d) && _.Z.can(v.Plq.MANAGE_ROLES, t))) returntrue;
             let r = j.o4(d, t),
-              i = j.o4(d, f.Z.getChannel(d.parent_id));
+              i = j.o4(d, h.Z.getChannel(d.parent_id));
             return (null != d.parent_id || r) && (!i || r) || (n = e), true
           }), null != n) {
-          let e = f.Z.getChannel(n.parent_id);
+          let e = h.Z.getChannel(n.parent_id);
           null != e && (0, o.h7j)(t => {
             var l, o;
             return (0, r.jsx)(s.default, (l = x({}, t), o = o = {
@@ -112,15 +112,15 @@ function S(e) {
     },
     canDrop(e, t) {
       let n = t.getItem(),
-        r = f.Z.getChannel(n.id);
+        r = h.Z.getChannel(n.id);
       if (null == r) returnfalse;
-      let i = (0, y.if)(f.Z.getChannel(n.id), n.position, e.channel, e.position, n.channelList);
+      let i = (0, y.if)(h.Z.getChannel(n.id), n.position, e.channel, e.position, n.channelList);
       if (null == i) returnfalse;
       if (O.Z.getGuildId() === v.I_8) returntrue;
       let l = b.Z.getGuild(n.guildId);
       if (null == l) returnfalse;
-      let o = f.Z.getChannel(i.parentId),
-        a = f.Z.getChannel(r.parent_id),
+      let o = h.Z.getChannel(i.parentId),
+        a = h.Z.getChannel(r.parent_id),
         s = _.Z.can(v.Plq.MANAGE_CHANNELS, l),
         c = null != a ? _.Z.can(v.Plq.MANAGE_CHANNELS, a) : s,
         u = null != o ? _.Z.can(v.Plq.MANAGE_CHANNELS, o) : s;
@@ -156,7 +156,7 @@ function S(e) {
         return t => (0, r.jsx)(e, x({}, t))
       }), false;
       if (t.type === v.d4z.GUILD_CATEGORY) return _.Z.can(v.Plq.MANAGE_CHANNELS, i) && !(0, p.r1)(i.id);
-      let l = f.Z.getChannel(t.parent_id);
+      let l = h.Z.getChannel(t.parent_id);
       return null != l && _.Z.can(v.Plq.MANAGE_CHANNELS, l) || null == l && _.Z.can(v.Plq.MANAGE_CHANNELS, i)
     },
     beginDrag(e) {
@@ -179,7 +179,7 @@ function S(e) {
           let {
             channel: t
           } = e;
-          return t.type === v.d4z.GUILD_CATEGORY && null != a[t.id] && 0 === a[t.id].length ? o === v.I_8 || _.Z.can(v.Plq.MANAGE_CHANNELS, t) && _.Z.can(v.Plq.VIEW_CHANNEL, t) : !h.Z.isCollapsed(t.parent_id)
+          return t.type === v.d4z.GUILD_CATEGORY && null != a[t.id] && 0 === a[t.id].length ? o === v.I_8 || _.Z.can(v.Plq.MANAGE_CHANNELS, t) && _.Z.can(v.Plq.VIEW_CHANNEL, t) : !f.Z.isCollapsed(t.parent_id)
         }),
         guildId: r
       }

@@ -1,10 +1,11 @@
-/** Chunk was on 87976 **/
-/** chunk id: 269794, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 269794, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.r(exports), require.d(exports, {
-  default: () => b,
+  default: () => o,
   messagesLoader: () => i
 });
-letChunk400497 = require("./400497.js"), i = h({
+letChunk400497 = require("./400497.js"), i = r({
   bg: () => require.e("7971").then(require.t.bind(require, 950790, 19)),
   cs: () => require.e("13310").then(require.t.bind(require, 295135, 19)),
   da: () => require.e("25174").then(require.t.bind(require, 68732, 19)),
@@ -36,4 +37,4 @@ letChunk400497 = require("./400497.js"), i = h({
   "zh-CN": () => require.e("26261").then(require.t.bind(require, 417425, 19)),
   "zh-TW": () => require.e("20323").then(require.t.bind(require, 676956, 19)),
   "en-US": () => require.e("25398").then(require.bind(require, 541251))
-}, "en-US"), Chunk400497 = require("./400497.js"), b = d(i)
+}, "en-US"), Chunk400497 = require("./400497.js"), o = a(i)

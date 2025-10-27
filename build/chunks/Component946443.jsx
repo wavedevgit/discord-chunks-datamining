@@ -41,7 +41,7 @@ function S(e) {
     channels: M
   } = R, {
     maybeLoadMore: k
-  } = D, G = (0, u.e7)([f.Z], () => f.Z.messageGroupSpacing);
+  } = D, G = (0, u.e7)([h.Z], () => h.Z.messageGroupSpacing);
   t = A, n = R, l = D, i.useLayoutEffect(() => {
     var e;
     let {
@@ -84,7 +84,7 @@ function S(e) {
     })
   }, []), i.useEffect(() => (p.Z.subscribe("CONNECTION_OPEN", w), () => {
     p.Z.unsubscribe("CONNECTION_OPEN", w)
-  }), [w]), (0, h.ZP)(() => (b.S.subscribe(x.CkL.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead), () => {
+  }), [w]), (0, f.ZP)(() => (b.S.subscribe(x.CkL.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead), () => {
     b.S.unsubscribe(x.CkL.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead)
   }));
   let U = (0, g.Z)("unreads", A);

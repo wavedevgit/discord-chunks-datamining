@@ -159,9 +159,9 @@ class R extends(r = Chunk647438.PureComponent) {
       isCurrentUserInThisDMCall: u,
       unread: d,
       isGDMFacepileEnabled: p,
-      treeItemProps: h
+      treeItemProps: f
     } = this.props, {
-      hovered: f,
+      hovered: h,
       animating: m
     } = this.state, b = module.isMultiUserDM() && null == module.icon && Chunk43267, _ = () => (0, Chunk951288.jsx)(Chunk481060.LYs, Z({
       to: Chunk981631.Z5c.CHANNEL(Chunk981631.ME, module.id),
@@ -259,7 +259,7 @@ N(R, "defaultProps", {
 });
 let D = Chunk647438.forwardRef(function(e, t) {
   let n = e.channel.id,
-    r = (0, h.ZP)(e.channel),
+    r = (0, f.ZP)(e.channel),
     l = (0, a.Ie)(n, 2),
     o = (0, s.e7)([b.Z], () => b.Z.getChannelId(), []),
     u = (0, s.e7)([d.Z], () => null != o ? d.Z.getMode(o) : S.WtW.VOICE, [o]),
@@ -268,7 +268,7 @@ let D = Chunk647438.forwardRef(function(e, t) {
     y = (0, s.e7)([_.ZP], () => _.ZP.getMentionCount(n), [n]),
     {
       isFacepileEnabled: j
-    } = f.Z.useExperiment({
+    } = h.Z.useExperiment({
       location: "unread_direct_message"
     }, {
       autoTrackExposure: false

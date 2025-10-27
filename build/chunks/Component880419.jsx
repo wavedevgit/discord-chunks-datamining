@@ -44,10 +44,10 @@ function b(e) {
     className: g.tooltipContainer,
     children: [(0, r.jsx)(s.Text, {
       variant: "text-xs/semibold",
-      children: f.intl.string(h.default.TZsu1U)
+      children: h.intl.string(f.default.TZsu1U)
     }), (0, r.jsx)(s.Text, {
       variant: "text-xs/medium",
-      children: f.intl.formatToPlainString(h.default["5HQUzD"], {
+      children: h.intl.formatToPlainString(f.default["5HQUzD"], {
         boostCount: t
       })
     })]
@@ -65,11 +65,11 @@ function _(e) {
       className: g.tooltipContainer,
       children: [(0, r.jsx)(s.Text, {
         variant: "text-xs/semibold",
-        children: f.intl.string(h.default["9oYuvb"])
+        children: h.intl.string(f.default["9oYuvb"])
       }), (0, r.jsx)(s.Text, {
         variant: "text-xs/medium",
-        children: f.intl.formatToPlainString(h.default.WRRYUT, {
-          perkName: null != (o = null == (l = i.sourcePowerup) ? true : l.title) ? o : f.intl.string(f.t.BfF6ED)
+        children: h.intl.formatToPlainString(f.default.WRRYUT, {
+          perkName: null != (o = null == (l = i.sourcePowerup) ? true : l.title) ? o : h.intl.string(h.t.BfF6ED)
         })
       })]
     })
@@ -102,7 +102,7 @@ function O(e) {
     null == v || v(E)
   }, [E, v]), (0, r.jsx)(s.aML, {
     delay: 100,
-    "aria-label": null != N ? N : I ? f.intl.string(h.default.TZsu1U) : true,
+    "aria-label": null != N ? N : I ? h.intl.string(f.default.TZsu1U) : true,
     text: null != N ? N : I ? (0, r.jsx)(_, {
       guildId: t,
       powerup: n
@@ -129,7 +129,7 @@ function O(e) {
               text: t.toString(),
               icon: a
             } : {
-              text: f.intl.format(n ? h.default.uzQpQd : h.default.ad2Mfj, {
+              text: h.intl.format(n ? f.default.uzQpQd : f.default.ad2Mfj, {
                 boostCount: t,
                 dotHook: () => (0, r.jsx)("span", {
                   className: g.dot,
@@ -150,7 +150,7 @@ function O(e) {
           });
           return (0, r.jsx)(a.zxk, m({
             variant: I ? "secondary" : "primary",
-            "aria-label": f.intl.string(I ? h.default.TZsu1U : h.default.gSxlHf),
+            "aria-label": h.intl.string(I ? f.default.TZsu1U : f.default.gSxlHf),
             disabled: P,
             onClick: I ? S : x,
             loading: C,

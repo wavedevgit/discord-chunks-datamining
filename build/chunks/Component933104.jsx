@@ -82,7 +82,7 @@ function A(e) {
       }
     }),
     markAsDismissed: n,
-    caretPosition: i ? h.DF.LEFT_TOP : h.DF.TOP_CENTER
+    caretPosition: i ? f.DF.LEFT_TOP : f.DF.TOP_CENTER
   })
 }
 
@@ -91,9 +91,9 @@ function R(e) {
     guildId: t,
     powerups: n,
     markAsDismissed: i
-  } = e, l = (0, s.e7)([f.Z], () => {
+  } = e, l = (0, s.e7)([h.Z], () => {
     var e;
-    return null == (e = f.Z.getGuild(t)) ? true : e.name
+    return null == (e = h.Z.getGuild(t)) ? true : e.name
   }), {
     onActivate: o
   } = (0, O.ZP)(t, n[0]);
@@ -221,9 +221,9 @@ function k(e) {
     }
     return i
   }(e, ["asset", "header", "content", "caretPosition", "markAsDismissed"]);
-  let d = null != o ? o : h.DF.LEFT_TOP,
-    p = d === h.DF.TOP_CENTER || d === h.DF.LEFT_TOP ? I[d] : "";
-  return (0, r.jsx)(h.ZP, function(e) {
+  let d = null != o ? o : f.DF.LEFT_TOP,
+    p = d === f.DF.TOP_CENTER || d === f.DF.LEFT_TOP ? I[d] : "";
+  return (0, r.jsx)(f.ZP, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

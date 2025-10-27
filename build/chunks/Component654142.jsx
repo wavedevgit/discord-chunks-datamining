@@ -81,7 +81,7 @@ let _ = Chunk647438.memo(function(e) {
       r = [];
     for (let e of t)(e.length < n || 0 === r.length) && (r.push(e), n -= e.length);
     return "".concat(r.join(", ")).concat(r.length < t.length ? ", ..." : "")
-  }(t), I = (0, f.Z)(t), {
+  }(t), I = (0, h.Z)(t), {
     mentionCount: P,
     isMentionLowImportance: N,
     unread: Z
@@ -104,7 +104,7 @@ let _ = Chunk647438.memo(function(e) {
       }))
     })
   }, [O, y, j, Z, P]);
-  return (0, r.jsx)(h.Z, b(m({}, _), {
+  return (0, r.jsx)(f.Z, b(m({}, _), {
     folderNode: t,
     expanded: E,
     selected: null != C && x.includes(C),

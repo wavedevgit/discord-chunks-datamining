@@ -27,14 +27,14 @@ function j(e) {
   let {
     tab: t,
     setTab: n,
-    badgeState: f,
+    badgeState: h,
     closePopout: m
   } = e, {
     enabled: b,
     inInbox: _
   } = d.Z.useExperiment({
     location: "RecentsPopout"
-  }), j = (0, h.Us)({
+  }), j = (0, f.Us)({
     location: "RecentsHeader"
   }), {
     enabled: x
@@ -79,7 +79,7 @@ function j(e) {
           id: l.X.FOR_YOU,
           "aria-label": O.intl.string(O.t["En+D+u"]),
           className: y.tab,
-          children: [O.intl.string(O.t["En+D+u"]), (null == f ? true : f.badgeForYou) ? (0, r.jsx)(o.fWl, {
+          children: [O.intl.string(O.t["En+D+u"]), (null == h ? true : h.badgeForYou) ? (0, r.jsx)(o.fWl, {
             color: s.Z.STATUS_DANGER,
             className: y.iconBadge
           }) : null]
@@ -122,5 +122,5 @@ function v(e) {
   let {
     tab: t
   } = e;
-  return t === l.X.FOR_YOU ? (0, r.jsx)(f.Gp, {}) : t === l.X.UNREADS ? (0, r.jsx)(b.QP, {}) : t === l.X.MENTIONS ? (0, r.jsx)(m.Z, {}) : t === l.X.GAME_INVITES ? (0, r.jsx)(_.S, {}) : null
+  return t === l.X.FOR_YOU ? (0, r.jsx)(h.Gp, {}) : t === l.X.UNREADS ? (0, r.jsx)(b.QP, {}) : t === l.X.MENTIONS ? (0, r.jsx)(m.Z, {}) : t === l.X.GAME_INVITES ? (0, r.jsx)(_.S, {}) : null
 }

@@ -35,7 +35,7 @@ function E(e) {
   let {
     onClick: d,
     selectedOverride: p = false,
-    popoutProps: f,
+    popoutProps: h,
     ref: _
   } = e, v = (0, l.Ie)("notifications-inbox"), [E, S] = i.useState(false), I = (0, m.D)(), P = p || I, {
     notificationCenterVariant: N
@@ -77,7 +77,7 @@ function E(e) {
       unreadChannelsCount: n.length,
       badgeDimensions: o
     }
-  }(P), A = N === g.jP.LEGACY ? a.xx7 : a.Dkj, R = (0, o.e7)([h.Z], () => h.Z.getChannelId()), D = i.useMemo(() => {
+  }(P), A = N === g.jP.LEGACY ? a.xx7 : a.Dkj, R = (0, o.e7)([f.Z], () => f.Z.getChannelId()), D = i.useMemo(() => {
     if (N === g.jP.SIDEBAR) return j.Z5c.CHANNEL(j.STv, R)
   }, [N, R]);
   return (0, r.jsxs)(u.H, {
@@ -110,7 +110,7 @@ function E(e) {
             })
           }
           return e
-        }({}, v, f), n = n = {
+        }({}, v, h), n = n = {
           onClick: d,
           to: D,
           selected: P || E,

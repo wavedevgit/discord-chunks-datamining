@@ -25,7 +25,7 @@ let y = Chunk647438.memo(function(e) {
     guildId: t,
     selected: n
   } = e, [y, j] = (0, c.ZT)([o.z.GAME_SERVER_HOSTING_NEW_BADGE], t), v = i.useCallback(() => {
-    y === o.z.GAME_SERVER_HOSTING_NEW_BADGE && j(m.L.USER_DISMISS), (0, d.uL)(f.Z5c.CHANNEL(t, g.oC.GAME_SERVERS))
+    y === o.z.GAME_SERVER_HOSTING_NEW_BADGE && j(m.L.USER_DISMISS), (0, d.uL)(h.Z5c.CHANNEL(t, g.oC.GAME_SERVERS))
   }, [t, y, j]), x = i.useRef(null), C = y === o.z.GAME_SERVER_HOSTING_NEW_BADGE, E = (0, a.f9)(), S = (0, l.e7)([p.Z], () => p.Z.hasLayers());
   return (0, r.jsx)(s.yRy, {
     targetElementRef: x,
@@ -33,7 +33,7 @@ let y = Chunk647438.memo(function(e) {
     nudgeAlignIntoViewport: true,
     animationPosition: "bottom",
     position: "right",
-    renderPopout: () => (0, r.jsx)(h.En, {
+    renderPopout: () => (0, r.jsx)(f.En, {
       guildId: t,
       markAsDismissed: j
     }),
