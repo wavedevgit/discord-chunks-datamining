@@ -43,15 +43,15 @@ function h() {
     gameServerInstance: a,
     setGameServerInstance: o,
     setCurrentGame: h,
-    onNext: y
+    onNext: S
   } = (0, Chunk343312.JL)();
   (0, Chunk578756.cq)(module, null == Chunk120356 ? "create" : "edit");
-  let O = Chunk647438.useCallback(e => {
-      h(e), y()
-    }, [h, y]),
-    S = Chunk647438.useCallback(e => {
-      o(e), y()
-    }, [Chunk494620, y]),
+  let y = Chunk647438.useCallback(e => {
+      h(e), S()
+    }, [h, S]),
+    O = Chunk647438.useCallback(e => {
+      o(e), S()
+    }, [Chunk494620, S]),
     I = require.length >= Chunk619733.YX,
     k = require.length > 0,
     C = (0, Chunk639777.Z)(module);
@@ -71,7 +71,7 @@ function h() {
         children: require.map((t, n) => (0, l.jsx)(m.Z, {
           guildId: e,
           gameInstance: t,
-          onClick: S
+          onClick: O
         }, "instance-".concat(t.id, "-").concat(n)))
       }), I && (0, Chunk951288.jsx)(E, {})]
     }), (0, Chunk951288.jsxs)("div", {
@@ -87,7 +87,7 @@ function h() {
           guildId: e,
           game: t,
           disabled: I || !C,
-          onClick: O,
+          onClick: y,
           location: u.Z.GAME_SERVER_SETUP_MODAL
         }, "game-".concat(t.id, "-").concat(n)))
       })]

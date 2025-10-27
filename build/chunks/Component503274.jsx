@@ -59,8 +59,8 @@ function x(e) {
   } = e, E = (0, s.e7)([m.Z], () => m.Z.getStateForGuild(g)), h = i.useMemo(() => {
     var e;
     return null == E || null == (e = E.entitlements) ? true : e[x.entitlementId]
-  }, [null == E ? true : E.entitlements, x.entitlementId]), y = (null == h ? true : h.ends_at) != null, O = null == h || null == (u = h.sku) || null == (a = u.tenant_metadata) || null == (n = a.guild_monetization) || null == (t = n.game_server) ? true : t.boost_price, S = (0, v.Z)(x.gameId, "icon"), I = (0, c.Z)(g);
-  return null == O ? null : (0, l.jsxs)(o.P3F, {
+  }, [null == E ? true : E.entitlements, x.entitlementId]), S = (null == h ? true : h.ends_at) != null, y = null == h || null == (u = h.sku) || null == (a = u.tenant_metadata) || null == (n = a.guild_monetization) || null == (t = n.game_server) ? true : t.boost_price, O = (0, v.Z)(x.gameId, "icon"), I = (0, c.Z)(g);
+  return null == y ? null : (0, l.jsxs)(o.P3F, {
     className: r()(b.game, {
       [b.disabled]: !I
     }),
@@ -69,13 +69,13 @@ function x(e) {
     children: [(0, l.jsx)("img", {
       className: b.image,
       alt: "",
-      src: S
+      src: O
     }), (0, l.jsxs)("div", {
       className: b.textContainer,
       children: [(0, l.jsx)(o.Heading, {
         variant: "heading-sm/semibold",
         children: x.name
-      }), y ? (0, l.jsx)(d.rL, {
+      }), S ? (0, l.jsx)(d.rL, {
         dateString: h.ends_at
       }) : (0, l.jsx)(d.P2, {
         text: p.intl.string(f.default.FFLkmx)
@@ -83,7 +83,7 @@ function x(e) {
     }), I && (0, l.jsx)(_, {
       guildId: g,
       gameInstance: x,
-      cost: O
+      cost: y
     })]
   })
 }

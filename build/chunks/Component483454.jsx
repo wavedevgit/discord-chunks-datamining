@@ -2,8 +2,8 @@
 /** chunk id: 483454, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  M: () => w,
-  h: () => P
+  MM: () => w,
+  hn: () => P
 }), require("./467055.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -82,57 +82,45 @@ function S(e, t) {
 let A = [Chunk409813.h8.PAYMENT_ELEMENT],
   C = Chunk647438.memo(function(e) {
     var {
-      originalPaymentType: t,
-      wallets: n = [],
-      analyticsContext: o,
-      options: s,
-      onChange: l,
-      step: c
-    } = e, u = T(e, ["originalPaymentType", "wallets", "analyticsContext", "options", "onChange", "step"]);
-    let p = i.useMemo(() => {
-        if (null == t || !(0, m.qH)(t)) return;
-        let e = (0, _.rI)();
-        if ((0, m.Ko)(t)) {
-          let n = (0, m.ZK)(t, e);
-          return null != n ? [n] : []
-        }
-        return [m.zK[t]]
-      }, [t]),
-      h = i.useCallback(e => {
-        if (c === d.h8.PAYMENT_ELEMENT && (null != l && l(e), null != o)) {
+      wallets: t = [],
+      analyticsContext: n,
+      options: o,
+      onChange: s,
+      step: l
+    } = e, c = T(e, ["wallets", "analyticsContext", "options", "onChange", "step"]);
+    let u = i.useCallback(e => {
+        if (l === d.h8.PAYMENT_ELEMENT && (null != s && s(e), null != n)) {
           let {
             contextMetadata: t,
-            activitySessionId: n,
-            analyticsData: r
-          } = o, i = (0, m.hR)(e.value.type), a = null != i ? m.Ho[i] : e.value.type;
+            activitySessionId: r,
+            analyticsData: i
+          } = n, a = (0, m.hR)(e.value.type), o = null != a ? m.Ho[a] : e.value.type;
           f.default.track(g.rMx.PAYMENT_ELEMENT_CHANGED, {
             load_id: t.loadId,
-            activity_session_id: n,
-            location: r.location,
-            payment_element_selected_method: a,
-            payment_source_type: i,
+            activity_session_id: r,
+            location: i.location,
+            payment_element_selected_method: o,
+            payment_source_type: a,
             complete: e.complete,
             empty: e.empty
           })
         }
-      }, [l, o, c]),
-      E = i.useMemo(() => ({
-        applePay: n.includes("applePay") ? "auto" : "never",
-        googlePay: n.includes("googlePay") ? "auto" : "never",
-        link: n.includes("link") ? "auto" : "never"
-      }), [n]);
+      }, [s, n, l]),
+      _ = i.useMemo(() => ({
+        applePay: t.includes("applePay") ? "auto" : "never",
+        googlePay: t.includes("googlePay") ? "auto" : "never",
+        link: t.includes("link") ? "auto" : "never"
+      }), [t]);
     return (0, r.jsx)(a.PaymentElement, O({
       id: "stripe-payment-element",
-      options: O(I(O({}, null != p && {
-        paymentMethodOrder: p
-      }), {
+      options: O({
         layout: {
           type: "tabs"
         },
-        wallets: E
-      }), s),
-      onChange: h
-    }, u))
+        wallets: _
+      }, o),
+      onChange: u
+    }, c))
   }),
   N = Chunk647438.memo(function(e) {
     var {
@@ -175,29 +163,27 @@ let A = [Chunk409813.h8.PAYMENT_ELEMENT],
       stripePaymentElementProps: o,
       stripeAddressElementProps: l,
       elementsRef: c,
-      originalPaymentType: u,
-      paymentElementSelectedType: f,
-      analyticsContext: _
-    } = e, p = (0, a.useElements)();
+      paymentElementSelectedType: u,
+      analyticsContext: f
+    } = e, _ = (0, a.useElements)();
     i.useEffect(() => {
-      c.current = p
-    }, [p, c]);
-    let h = A.includes(t) && null != f,
-      m = t === d.h8.ADDRESS;
+      c.current = _
+    }, [_, c]);
+    let p = A.includes(t) && null != u,
+      h = t === d.h8.ADDRESS;
     return (0, r.jsxs)("div", {
       className: b.body,
       children: [(0, r.jsx)("div", {
-        className: s()(h ? b.visible : b.hidden, {
-          [b.cardElementContainer]: f === E.He.CARD,
-          [b.customPaymentElementContainer]: f === E.He.PAYPAL
+        className: s()(p ? b.visible : b.hidden, {
+          [b.cardElementContainer]: u === E.He.CARD,
+          [b.customPaymentElementContainer]: u === E.He.PAYPAL
         }),
         children: (0, r.jsx)(C, I(O({}, o), {
           step: t,
-          originalPaymentType: u,
-          analyticsContext: _
+          analyticsContext: f
         }))
       }), (0, r.jsx)("div", {
-        className: s()(b.addressElementContainer, m ? b.visible : b.hidden),
+        className: s()(b.addressElementContainer, h ? b.visible : b.hidden),
         children: (0, r.jsx)(N, I(O({}, l), {
           renderWithoutElement: true,
           billingAddressInfo: n
@@ -239,7 +225,7 @@ let A = [Chunk409813.h8.PAYMENT_ELEMENT],
       onBillingAddressChange: o,
       shouldLogOnChangeEvents: s,
       continueSessionToInitialStep: l
-    } = e, u = i.useRef(null), [f, _] = i.useState(false), [p, g] = i.useState(l === d.h8.CREDIT_CARD_INFORMATION ? E.He.CARD : null), b = r && (t === d.h8.PAYMENT_ELEMENT || t === d.h8.ADDRESS), y = i.useMemo(() => ({
+    } = e, u = i.useRef(null), [f, _] = i.useState(false), [p, g] = i.useState(l === d.h8.CREDIT_CARD_INFORMATION ? E.He.CARD : null), b = r && (t === d.h8.PAYMENT_ELEMENT || t === d.h8.ADDRESS && null != p), y = i.useMemo(() => ({
       onChange: e => {
         s && null != a && a.log("PaymentElements onChange event:", e), _(e.complete), g((0, m.hR)(e.value.type))
       },
@@ -281,8 +267,8 @@ let A = [Chunk409813.h8.PAYMENT_ELEMENT],
       }
     }, [v, r]);
     let I = i.useCallback(() => {
-      g(null), n(d.h8.PAYMENT_TYPE)
-    }, [n]);
+      g(null)
+    }, []);
     return {
       shouldRenderPaymentElement: b,
       stripePaymentElementProps: y,
@@ -292,6 +278,6 @@ let A = [Chunk409813.h8.PAYMENT_ELEMENT],
       paymentElementSelectedType: p,
       setPaymentElementSelectedType: g,
       handlePaymentElementStep: v,
-      onBackPaymentElement: I
+      onBackFromPaymentElement: I
     }
   }
