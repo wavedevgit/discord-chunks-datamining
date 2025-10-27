@@ -18,9 +18,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk607070 = require("./607070.js"),
   Chunk134433 = require("./134433.jsx"),
   Chunk111028 = require("./111028.jsx"),
-  Chunk91218 = require("./91218.jsx"),
   Chunk518738 = require("./518738.js"),
   Chunk884902 = require("./884902.js"),
+  Chunk48950 = require("./48950.jsx"),
   Chunk388032 = require("./388032.jsx"),
   Chunk787185 = require("./787185.js");
 
@@ -96,7 +96,7 @@ let N = Chunk647438.forwardRef(function(e, t) {
       tabIndex: k
     } = M,
     j = A(M, ["tabIndex"]),
-    U = (0, E.p9)({
+    U = (0, g.p9)({
       roleId: P.id,
       size: 16,
       guildId: w
@@ -120,7 +120,7 @@ let N = Chunk647438.forwardRef(function(e, t) {
     Y = u.Z.unsafe_rawColors.WHITE_500.css,
     W = (0, l._i)(V);
   null != W && .3 > (0, l.Bd)(W) && (Y = u.Z.unsafe_rawColors.PRIMARY_630.css);
-  let K = (0, b._f)(w, P, P.colorStrings);
+  let K = (0, E._f)(w, P, P.colorStrings);
   C = B ? (0, r.jsx)(h.Z, {
     className: O.roleFlowerStar,
     iconClassName: N ? O.roleVerifiedIcon : true,
@@ -186,7 +186,7 @@ let N = Chunk647438.forwardRef(function(e, t) {
       "aria-label": P.name,
       tabIndex: k
     }, j), {
-      children: [q(), null != U ? (0, r.jsx)(g.Z, S(I({
+      children: [q(), null != U ? (0, r.jsx)(b.Z, S(I({
         className: O.roleIcon
       }, U), {
         enableTooltip: false

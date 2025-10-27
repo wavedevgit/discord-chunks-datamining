@@ -17,12 +17,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk239091 = require("./239091.js"),
   Chunk493544 = require("./493544.jsx"),
   Chunk134433 = require("./134433.jsx"),
-  Chunk91218 = require("./91218.jsx"),
   Chunk646892 = require("./646892.jsx"),
   Chunk741247 = require("./741247.jsx"),
   Chunk518738 = require("./518738.js"),
   Chunk549631 = require("./549631.jsx"),
   Chunk402235 = require("./402235.js"),
+  Chunk48950 = require("./48950.jsx"),
   Chunk496675 = require("./496675.js"),
   Chunk626135 = require("./626135.js"),
   Chunk480608 = require("./480608.js"),
@@ -150,8 +150,8 @@ function M(e) {
   let {
     role: d,
     guild: p,
-    highestRole: h,
-    currentPosition: j,
+    highestRole: x,
+    currentPosition: v,
     memberCount: _,
     onDragStart: C,
     onDragReset: O,
@@ -160,11 +160,11 @@ function M(e) {
     disableDrag: N,
     setEditRoleId: S,
     setSelectedSection: P
-  } = e, k = (0, I.T)(p, h, d), G = null != k, [M, B] = i.useState(false), F = i.useMemo(() => ({
+  } = e, k = (0, I.T)(p, x, d), G = null != k, [M, B] = i.useState(false), F = i.useMemo(() => ({
     type: L,
     item: () => (C(d.id), {
       id: d.id,
-      position: j
+      position: v
     }),
     canDrag: () => M && !G,
     collect: e => ({
@@ -175,7 +175,7 @@ function M(e) {
       if (null == n) return void O();
       y(n.roleId)
     }
-  }), [d, C, O, y, G, M, j]), [{
+  }), [d, C, O, y, G, M, v]), [{
     isDragging: H
   }, W] = (0, s.c)(F), z = i.useMemo(() => ({
     accept: L,
@@ -203,7 +203,7 @@ function M(e) {
         guild: p
       }))
     })
-  }, [p, d]), q = (0, x.e)(p, d);
+  }, [p, d]), q = (0, b.e)(p, d);
   if (H) return (0, r.jsx)("div", {
     ref: e => {
       W(e)
@@ -217,8 +217,8 @@ function M(e) {
   return (0, r.jsxs)(g.P3F, {
     className: a()(Z.roleRow, {
       [Z.roleRowDisableHover]: E,
-      [Z.containerDragBefore]: null != V && j < V,
-      [Z.containerDragAfter]: null != V && j > V
+      [Z.containerDragBefore]: null != V && v < V,
+      [Z.containerDragAfter]: null != V && v > V
     }),
     onClick: X,
     onContextMenu: Y,
@@ -260,10 +260,10 @@ function M(e) {
         color: "header-primary",
         variant: "text-md/medium",
         children: d.name
-      }), (null == (l = d.tags) ? true : l.subscription_listing_id) != null && (0, r.jsx)(v.Z, {
+      }), (null == (l = d.tags) ? true : l.subscription_listing_id) != null && (0, r.jsx)(j.Z, {
         className: Z.subscriptionRoleIcon,
         "aria-label": w.intl.string(w.t.a2Ak8b)
-      }), (null == (c = d.tags) ? true : c.is_guild_product_role) === true && (0, r.jsx)(b.Z, {})]
+      }), (null == (c = d.tags) ? true : c.is_guild_product_role) === true && (0, r.jsx)(h.Z, {})]
     }), (0, r.jsx)(u.u, {
       text: w.intl.string(w.t.CW75t0),
       "aria-label": w.intl.formatToPlainString(w.t.Fgs8fD, {
@@ -323,32 +323,32 @@ function U(e) {
     defaultIconClassName: p
   } = e, {
     hasGradient: f,
-    stops: b,
-    gradientId: x
-  } = (0, d.De)(null == (t = o.colorStrings) ? true : t.primaryColor, null == (n = o.colorStrings) ? true : n.secondaryColor, null == (i = o.colorStrings) ? true : i.tertiaryColor), v = (0, _.yH)(s, o), C = (0, j.p9)({
+    stops: h,
+    gradientId: b
+  } = (0, d.De)(null == (t = o.colorStrings) ? true : t.primaryColor, null == (n = o.colorStrings) ? true : n.secondaryColor, null == (i = o.colorStrings) ? true : i.tertiaryColor), j = (0, v.yH)(s, o), C = (0, x.p9)({
     guildId: s,
     roleId: o.id,
     size: c
   });
-  if (null != C) return (0, r.jsx)(h.Z, A(D({}, C), {
+  if (null != C) return (0, r.jsx)(_.Z, A(D({}, C), {
     className: m,
     enableTooltip: u
   }));
   let O = null != (l = o.colorString) ? l : P.Pbq;
-  return v && f && (O = "url(#".concat(x, ")")), (0, r.jsxs)(r.Fragment, {
-    children: [v && f && (0, r.jsx)("svg", {
+  return j && f && (O = "url(#".concat(b, ")")), (0, r.jsxs)(r.Fragment, {
+    children: [j && f && (0, r.jsx)("svg", {
       width: "0",
       height: "0",
       style: {
         position: "absolute"
       },
       children: (0, r.jsx)("linearGradient", {
-        id: x,
+        id: b,
         x1: "0%",
         y1: "0%",
         x2: "0%",
         y2: "100%",
-        children: b
+        children: h
       })
     }), (0, r.jsx)(g.lZ8, {
       size: "custom",

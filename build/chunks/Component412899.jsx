@@ -24,11 +24,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk607070 = require("./607070.js"),
   Chunk134433 = require("./134433.jsx"),
   Chunk600164 = require("./600164.jsx"),
-  Chunk91218 = require("./91218.jsx"),
   Chunk313201 = require("./313201.js"),
   Chunk518738 = require("./518738.js"),
   Chunk434404 = require("./434404.js"),
   Chunk884902 = require("./884902.js"),
+  Chunk48950 = require("./48950.jsx"),
   Chunk635042 = require("./635042.js"),
   Chunk345162 = require("./345162.js"),
   Chunk271383 = require("./271383.js"),
@@ -105,7 +105,7 @@ function K(e) {
   let {
     userRoleIds: t,
     position: n
-  } = e, i = F(e, ["userRoleIds", "position"]), a = (0, I.Dt)();
+  } = e, i = F(e, ["userRoleIds", "position"]), a = (0, v.Dt)();
   return (0, r.jsxs)(h.VqE, {
     className: o()(j.overflowRolesPopout, {
       [j.popoutBottom]: "bottom" === n,
@@ -144,8 +144,8 @@ let z = Chunk647438.forwardRef(function(e, t) {
       className: g,
       role: E,
       onRemove: O,
-      guildId: I,
-      disableBorderColor: S,
+      guildId: v,
+      disableBorderColor: T,
       onMouseDown: C
     } = e,
     N = (0, u.JA)(E.id),
@@ -153,13 +153,13 @@ let z = Chunk647438.forwardRef(function(e, t) {
       tabIndex: R
     } = N,
     P = F(N, ["tabIndex"]),
-    D = (0, T.p9)({
+    D = (0, I.p9)({
       roleId: E.id,
       size: 16,
-      guildId: I
+      guildId: v
     }),
     w = (0, _.e7)([b.Z], () => b.Z.roleStyle),
-    L = (0, A._f)(I, E, E.colorStrings),
+    L = (0, S._f)(v, E, E.colorStrings),
     x = (null == (a = E.tags) ? true : a.guild_connections) === null,
     M = i.useCallback(e => {
       (0, m.jW)(e, async () => {
@@ -195,9 +195,9 @@ let z = Chunk647438.forwardRef(function(e, t) {
   let W = i.useMemo(() => {
     var t;
     return G({
-      borderColor: S ? true : V
+      borderColor: T ? true : V
     }, null != (t = e.style) ? t : {})
-  }, [V, S, e.style]);
+  }, [V, T, e.style]);
   return (0, r.jsx)(h.tEY, {
     children: (0, r.jsxs)("div", Z(G({
       ref: t,
@@ -225,7 +225,7 @@ let z = Chunk647438.forwardRef(function(e, t) {
           className: j.roleRemoveIcon,
           "aria-hidden": true
         }) : null]
-      }), null != D ? (0, r.jsx)(v.Z, Z(G({
+      }), null != D ? (0, r.jsx)(A.Z, Z(G({
         className: j.roleIcon
       }, D), {
         enableTooltip: false
@@ -342,15 +342,15 @@ function Q(e) {
   let v = i.useCallback(e => {
       var t;
       let r = s.filter(t => t !== e.id);
-      (null == (t = e.tags) ? true : t.guild_connections) === null ? g.Z.unassignGuildRoleConnection(a.id, e.id) : S.Z.updateMemberRoles(a.id, n.id, r, [], [e.id])
+      (null == (t = e.tags) ? true : t.guild_connections) === null ? g.Z.unassignGuildRoleConnection(a.id, e.id) : T.Z.updateMemberRoles(a.id, n.id, r, [], [e.id])
     }, [s, a.id, n.id]),
     I = i.useCallback(e => {
       let t = s;
-      t.includes(e) || (t = [...t, e]), S.Z.updateMemberRoles(a.id, n.id, t, [e], [])
+      t.includes(e) || (t = [...t, e]), T.Z.updateMemberRoles(a.id, n.id, t, [e], [])
     }, [s, a.id, n.id]),
-    [T, A] = i.useState(null),
+    [S, A] = i.useState(null),
     N = (0, _.Wu)([P.Z], () => P.Z.getManyRoles(a.id, s).sort(C.Z)),
-    R = i.useMemo(() => null != T ? N.slice(0, T) : N, [N, T]),
+    R = i.useMemo(() => null != S ? N.slice(0, S) : N, [N, S]),
     x = s.length - R.length;
   i.useLayoutEffect(() => {
     if (f) return;
@@ -392,7 +392,7 @@ function Q(e) {
         disableBorderColor: b
       }, e.id)
     });
-  return null != T && 0 !== x ? t = (0, r.jsx)(q, Z(G({}, e), {
+  return null != S && 0 !== x ? t = (0, r.jsx)(q, Z(G({}, e), {
     numRolesHidden: x
   })) : B && (t = (0, r.jsx)(X, Z(G({}, e), {
     handleAddRole: I

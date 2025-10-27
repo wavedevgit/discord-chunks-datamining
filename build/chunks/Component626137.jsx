@@ -12,7 +12,6 @@ var Chunk951288 = require("./951288.js"),
   Chunk544891 = require("./544891.js"),
   Chunk481060 = require("./481060.js"),
   Chunk497321 = require("./497321.jsx"),
-  Chunk841470 = require("./841470.jsx"),
   Chunk142497 = require("./142497.js"),
   Chunk706454 = require("./706454.js"),
   Chunk650774 = require("./650774.js"),
@@ -22,6 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk999382 = require("./999382.js"),
   Chunk798528 = require("./798528.js"),
   Chunk743676 = require("./743676.js"),
+  Chunk795145 = require("./795145.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk190378 = require("./190378.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -80,7 +80,7 @@ let N = function(e, t, n) {
         text: Chunk388032.intl.string(Chunk388032.t.Uskgxx),
         onClick: () => {
           exports(true), (function(e) {
-            b.default.track(_.rMx.GUILD_INSIGHTS_SETTINGS_CTA_CLICKED, {
+            h.default.track(_.rMx.GUILD_INSIGHTS_SETTINGS_CTA_CLICKED, {
               guild_id: e
             });
             let t = null == e ? _.E07.DEVELOPER_PORTAL : _.E07.DEVELOPER_PORTAL_GUILD_ANALYTICS(e),
@@ -118,7 +118,7 @@ let N = function(e, t, n) {
         analytics: null != module ? Chunk743676.Z.getOverviewAnalytics(module) : null,
         errorCode: Chunk743676.Z.getError()
       })),
-      b = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.getSettings().enabled),
+      h = (0, Chunk442837.e7)([Chunk246946.Z], () => Chunk246946.Z.getSettings().enabled),
       T = null == exports || null == require || null != exports && exports < 500 && null != require && !require.features.has(Chunk981631.GuildFeatures.PARTNERED) && !require.features.has(Chunk981631.GuildFeatures.VERIFIED);
     Chunk647438.useEffect(() => {
       null == module || T || ((0, Chunk798528.Vk)(module), (0, Chunk798528.SR)(module), (0, Chunk798528.xl)(module))
@@ -129,15 +129,15 @@ let N = function(e, t, n) {
       className: Chunk503562.__invalid_guildAnalyticsOverviewWrapper,
       children: (0, Chunk951288.jsxs)("div", {
         className: Chunk503562.overviewData,
-        children: [(0, Chunk951288.jsx)(Chunk841470.Z, E({
+        children: [(0, Chunk951288.jsx)(Chunk795145.Z, E({
           title: Chunk388032.intl.string(Chunk388032.t.i0NorT),
           tooltipText: Chunk388032.intl.string(Chunk388032.t.KiRbLJ)
-        }, N(Chunk640358.visitors, Chunk640358.visitorsChange, Chunk772848))), (0, Chunk951288.jsx)(Chunk841470.Z, E({
+        }, N(Chunk640358.visitors, Chunk640358.visitorsChange, Chunk772848))), (0, Chunk951288.jsx)(Chunk795145.Z, E({
           title: Chunk388032.intl.string(Chunk388032.t.DDAHdQ),
           tooltipText: Chunk388032.intl.string(Chunk388032.t.HxWUkU)
-        }, N(Chunk640358.communicators, Chunk640358.communicatorsChange, Chunk772848))), (0, Chunk951288.jsx)(Chunk841470.Z, E({
+        }, N(Chunk640358.communicators, Chunk640358.communicatorsChange, Chunk772848))), (0, Chunk951288.jsx)(Chunk795145.Z, E({
           title: Chunk388032.intl.string(Chunk388032.t.hYeOqC)
-        }, N(Chunk640358.newMembers, Chunk640358.newMembersChange, Chunk772848))), (0, Chunk951288.jsx)(Chunk841470.Z, E({
+        }, N(Chunk640358.newMembers, Chunk640358.newMembersChange, Chunk772848))), (0, Chunk951288.jsx)(Chunk795145.Z, E({
           title: Chunk388032.intl.string(Chunk388032.t.jj7OPw),
           tooltipText: Chunk388032.intl.string(Chunk388032.t.MQCslz)
         }, N(Chunk640358.pctRetained, Chunk640358.pctRetainedChange, Chunk772848, true)))]

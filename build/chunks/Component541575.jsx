@@ -9,10 +9,10 @@ require("./647438.js");
 var Chunk481060 = require("./481060.js"),
   Chunk367907 = require("./367907.js"),
   Chunk906732 = require("./906732.jsx"),
-  Chunk91218 = require("./91218.jsx"),
   Chunk807582 = require("./807582.jsx"),
   Chunk518738 = require("./518738.js"),
   Chunk26323 = require("./26323.jsx"),
+  Chunk48950 = require("./48950.jsx"),
   Chunk84058 = require("./84058.js"),
   Chunk981631 = require("./981631.js"),
   Chunk30513 = require("./30513.js"),
@@ -55,7 +55,7 @@ let x = function(e) {
     guild: t,
     disabled: x,
     role: j
-  } = e, v = (0, c.oC)(t.id, j), {
+  } = e, v = (0, o.oC)(t.id, j), {
     analyticsLocations: _
   } = (0, a.ZP)(), C = t.features.has(g.GuildFeatures.ROLE_ICONS), O = e => {
     C || ((0, l.yw)(g.rMx.PREMIUM_GUILD_PROMOTION_OPENED, {
@@ -64,7 +64,7 @@ let x = function(e) {
       }),
       guild_id: null == t ? true : t.id,
       location_stack: _
-    }), (0, d.Z)({
+    }), (0, c.Z)({
       analyticsLocations: _,
       analyticsSourceLocation: {
         page: g.ZY5.GUILD_SETTINGS,
@@ -74,7 +74,7 @@ let x = function(e) {
       guild: t,
       perks: (0, m.Yp)()
     }))
-  }, y = (0, r.jsx)(o.Z, {
+  }, y = (0, r.jsx)(s.Z, {
     className: f.availabilityIndicator,
     guild: t,
     guildFeature: g.GuildFeatures.ROLE_ICONS,
@@ -99,7 +99,7 @@ let x = function(e) {
       className: f.rolePreviewArea,
       children: [(0, r.jsx)("div", {
         className: f.previewContainer,
-        children: null != v ? (0, r.jsx)(s.Z, b(h({}, v), {
+        children: null != v ? (0, r.jsx)(d.Z, b(h({}, v), {
           className: f.roleIconPreview,
           enableTooltip: false
         })) : (0, r.jsx)(i.FmF, {

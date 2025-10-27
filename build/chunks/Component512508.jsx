@@ -16,10 +16,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk794433 = require("./794433.jsx"),
   Chunk933557 = require("./933557.js"),
   Chunk471445 = require("./471445.js"),
-  Chunk91218 = require("./91218.jsx"),
   Chunk313201 = require("./313201.js"),
   Chunk518738 = require("./518738.js"),
   Chunk884902 = require("./884902.js"),
+  Chunk48950 = require("./48950.jsx"),
   Chunk439170 = require("./439170.js"),
   Chunk592125 = require("./592125.js"),
   Chunk485386 = require("./485386.js"),
@@ -129,11 +129,11 @@ let M = Chunk647438.memo(function(e) {
   } = e, {
     id: a,
     name: s
-  } = n.record, d = (0, f.p9)({
+  } = n.record, d = (0, p.p9)({
     guildId: l,
     roleId: a,
     size: 16
-  }), C = (0, c.e7)([x.Z], () => x.Z.getRole(l, a)), m = s.includes(g.CR) ? "" : "@", p = (0, u.dQu)(u.TVs.unsafe_rawColors.PRIMARY_300).hsl(), j = null != (t = null == C ? true : C.colorString) ? t : p, v = (0, h._f)(l, C, null == C ? true : C.colorStrings);
+  }), C = (0, c.e7)([x.Z], () => x.Z.getRole(l, a)), m = s.includes(g.CR) ? "" : "@", b = (0, u.dQu)(u.TVs.unsafe_rawColors.PRIMARY_300).hsl(), j = null != (t = null == C ? true : C.colorString) ? t : b, v = (0, f._f)(l, C, null == C ? true : C.colorStrings);
   return (0, r.jsxs)("div", {
     className: o()(H.rowLabel, H.roleTagContainer, i),
     children: [(0, r.jsx)(u.FhE, {
@@ -142,7 +142,7 @@ let M = Chunk647438.memo(function(e) {
       colors: v,
       background: false,
       tooltip: false
-    }), null != d ? (0, r.jsx)(b.Z, w(_({
+    }), null != d ? (0, r.jsx)(h.Z, w(_({
       className: H.roleTagIcon
     }, d), {
       enableTooltip: false

@@ -716,7 +716,7 @@ class tl extends Chunk647438.PureComponent {
           onClick: () => (0, g.ZDy)(async () => {
             let {
               default: e
-            } = await n.e("54642").then(n.bind(n, 720589));
+            } = await n.e("30571").then(n.bind(n, 28180));
             return n => (0, r.jsx)(e, tn({
               channel: t
             }, n))

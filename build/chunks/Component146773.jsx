@@ -9,8 +9,8 @@ var Chunk472435 = require("./472435.js"),
   Chunk861044 = require("./861044.js"),
   Chunk481060 = require("./481060.js"),
   Chunk749210 = require("./749210.js"),
-  Chunk170509 = require("./170509.jsx"),
   Chunk740504 = require("./740504.js"),
+  Chunk901492 = require("./901492.jsx"),
   Chunk117984 = require("./117984.js"),
   Chunk437152 = require("./437152.js"),
   Chunk398758 = require("./398758.js"),
@@ -59,14 +59,14 @@ function S(e) {
     drop(e, t) {
       let n, i = O.Z.getGuildId(),
         l = t.getItem(),
-        c = (0, y.if)(E(i, l.id), l.position, e.channel, e.position, l.channelList);
-      if (null == c) return;
+        s = (0, y.if)(E(i, l.id), l.position, e.channel, e.position, l.channelList);
+      if (null == s) return;
       let d = E(i, l.id);
       if (null == d) return;
       let p = g.Z.getCategories(i),
         f = b.Z.getGuild(i);
       if (null == f) return;
-      let m = (0, y.Dn)(d, E(i, c.referenceId), c.parentId, p);
+      let m = (0, y.Dn)(d, E(i, s.referenceId), s.parentId, p);
       if (0 !== m.length) {
         if (i === v.I_8) return void(0, u.s3)(m);
         if (m = m.filter(e => {
@@ -76,7 +76,7 @@ function S(e) {
             if (null == n) returnfalse;
             let r = h.Z.getChannel(n.parent_id);
             return n.type === v.d4z.GUILD_CATEGORY || null == r ? _.Z.can(v.Plq.MANAGE_CHANNELS, f) : _.Z.can(v.Plq.MANAGE_CHANNELS, r)
-          }), d.parent_id !== c.parentId && m.find(e => {
+          }), d.parent_id !== s.parentId && m.find(e => {
             if (e.id !== d.id) returnfalse;
             let t = h.Z.getChannel(e.parent_id);
             if (!(null != t && _.Z.can(v.Plq.MANAGE_ROLES, d) && _.Z.can(v.Plq.MANAGE_ROLES, t))) returntrue;
@@ -87,7 +87,7 @@ function S(e) {
           let e = h.Z.getChannel(n.parent_id);
           null != e && (0, o.h7j)(t => {
             var l, o;
-            return (0, r.jsx)(s.default, (l = x({}, t), o = o = {
+            return (0, r.jsx)(c.default, (l = x({}, t), o = o = {
               channel: d,
               category: e,
               onConfirm: () => {
@@ -175,7 +175,7 @@ function S(e) {
         position: l,
         parentId: n,
         type: i,
-        channelList: (0, c.Z)(a._categories, a, e => {
+        channelList: (0, s.Z)(a._categories, a, e => {
           let {
             channel: t
           } = e;

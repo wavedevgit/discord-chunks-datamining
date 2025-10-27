@@ -28,11 +28,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk178762 = require("./178762.jsx"),
   Chunk868671 = require("./868671.js"),
   Chunk82295 = require("./82295.jsx"),
-  Chunk91218 = require("./91218.jsx"),
   Chunk313201 = require("./313201.js"),
   Chunk623624 = require("./623624.jsx"),
   Chunk518738 = require("./518738.js"),
   Chunk850020 = require("./850020.js"),
+  Chunk48950 = require("./48950.jsx"),
   Chunk155409 = require("./155409.jsx"),
   Chunk670188 = require("./670188.jsx"),
   Chunk706454 = require("./706454.js"),
@@ -132,7 +132,7 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
       isMobileOnline: x,
       premiumSince: v,
       nameplate: C
-    } = e, I = J(e, ["colorString", "colorStrings", "colorRoleName", "colorRoleId", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate"]), S = i.useRef(null), [E, Z] = i.useState(false), P = null != v ? new Date(v) : null, N = i.useCallback(e => {
+    } = e, I = J(e, ["colorString", "colorStrings", "colorRoleName", "colorRoleId", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate"]), S = i.useRef(null), [E, Z] = i.useState(false), T = null != v ? new Date(v) : null, N = i.useCallback(e => {
       (0, f.jW)(e, async () => {
         let {
           default: e
@@ -156,7 +156,7 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
         rawText: t
       }), m.Z.startTyping(_.id)
     }, [d, _.id]), w = i.useCallback(e => {
-      null != O && (e.stopPropagation(), (0, T.f)({
+      null != O && (e.stopPropagation(), (0, P.f)({
         guildId: O,
         location: {
           section: W.jXE.MEMBER_LIST,
@@ -194,7 +194,7 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
           activities: h,
           applicationStream: g,
           isOwner: o,
-          premiumSince: P,
+          premiumSince: T,
           colorString: t,
           colorStrings: l,
           colorRoleName: a,
@@ -226,7 +226,7 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
     } = e, s = (0, c.JA)("".concat(a)), o = (0, p.e7)([U.Z], () => U.Z.isTyping(i.id, l.id)), d = (0, p.e7)([G.default], () => G.default.getCurrentUser()), u = (0, p.e7)([M.Z], () => {
       var e;
       return null != t ? null == (e = M.Z.getRole(i.guild_id, t)) ? true : e.name : true
-    }, [i, t]), h = (0, R.K)({
+    }, [i, t]), h = (0, N.K)({
       user: l,
       guildId: i.guild_id,
       location: "ChannelMembers"
@@ -244,7 +244,7 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
       title: n,
       count: i,
       guildId: l
-    } = e, a = (0, N.p9)({
+    } = e, a = (0, T.p9)({
       roleId: t,
       guildId: l,
       size: 16
@@ -263,7 +263,7 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
         })
       }), (0, r.jsxs)("span", {
         "aria-hidden": true,
-        children: [null != a ? (0, r.jsx)(Z.Z, Q({
+        children: [null != a ? (0, r.jsx)(R.Z, Q({
           className: q.roleIcon
         }, a)) : null, n, " — ", s]
       })]
@@ -329,7 +329,7 @@ class el extends Chunk647438.Component {
       sectionHeight: i
     } = this.props;
     return (0, Chunk951288.jsx)(Chunk481060.Wdt, {
-      children: l => (0, r.jsx)(P.FG, {
+      children: l => (0, r.jsx)(Z.FG, {
         children: s => (0, r.jsx)("aside", {
           className: a()(q.membersWrap, q.hiddenMembers),
           "aria-labelledby": s,

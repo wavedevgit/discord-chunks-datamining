@@ -16,8 +16,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk895924 = require("./895924.js"),
   Chunk581364 = require("./581364.js"),
   Chunk471445 = require("./471445.js"),
-  Chunk91218 = require("./91218.jsx"),
   Chunk518738 = require("./518738.js"),
+  Chunk48950 = require("./48950.jsx"),
   Chunk592125 = require("./592125.js"),
   Chunk271383 = require("./271383.js"),
   Chunk485386 = require("./485386.js"),
@@ -165,7 +165,7 @@ function T(e) {
     id: o,
     isLocked: s,
     lockTooltipText: d
-  } = e, m = (0, c.e7)([v.Z], () => v.Z.getRole(l.id, o)), b = (0, h.p9)({
+  } = e, m = (0, c.e7)([v.Z], () => v.Z.getRole(l.id, o)), b = (0, f.p9)({
     guildId: l.id,
     roleId: o,
     size: 24
@@ -183,7 +183,7 @@ function T(e) {
   return (null == m ? true : m.name) == null ? null : (0, i.jsxs)("div", {
     onContextMenu: g,
     className: S.identifier,
-    children: [null != b ? (0, i.jsx)(f.Z, E({
+    children: [null != b ? (0, i.jsx)(h.Z, E({
       className: a()(S.__invalid_icon, S.image)
     }, b)) : (0, i.jsx)(u.lZ8, {
       size: "custom",

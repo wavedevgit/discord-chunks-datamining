@@ -293,7 +293,7 @@ class W extends Chunk647438.PureComponent {
       (0, c.ZDy)(async () => {
         let {
           default: t
-        } = await n.e("54642").then(n.bind(n, 720589));
+        } = await n.e("30571").then(n.bind(n, 28180));
         return n => (0, i.jsx)(t, G({
           channel: e
         }, n))

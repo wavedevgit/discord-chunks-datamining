@@ -1,5 +1,5 @@
-/** Chunk was on 54642 **/
-/** chunk id: 720589, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 30571 **/
+/** chunk id: 28180, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => w
 }), require("./388685.js");
@@ -26,7 +26,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk709054 = require("./709054.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk360242 = require("./360242.js");
+  Chunk910742 = require("./910742.js");
 
 function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
@@ -49,7 +49,7 @@ class O extends Chunk647438.PureComponent {
         let {
           channel: t
         } = e;
-        return "general" === (0, h.F6)(t, y.default, C.Z)
+        return "general" === (0, h.F6)(t, j.default, f.Z)
       }),
       n = null != t ? t : e[0];
     return null != n ? n.channel.id : null
@@ -101,7 +101,7 @@ class O extends Chunk647438.PureComponent {
       } = e;
       return {
         value: t.id,
-        label: (0, h.F6)(t, y.default, C.Z),
+        label: (0, h.F6)(t, j.default, f.Z),
         channel: t,
         category: n
       }
@@ -144,7 +144,7 @@ class O extends Chunk647438.PureComponent {
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
         color: Chunk570140 || null != Chunk120356 ? "text-danger" : "text-muted",
-        className: Chunk360242.bottomMargin,
+        className: Chunk910742.bottomMargin,
         children: null != Chunk120356 ? Chunk120356 : Chunk528963
       })]
     })
@@ -156,20 +156,20 @@ class O extends Chunk647438.PureComponent {
       }
     } = this.props;
     return (0, Chunk951288.jsxs)("div", {
-      className: Chunk360242.body,
+      className: Chunk910742.body,
       children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/semibold",
         id: this.state.headerId,
         children: Chunk388032.intl.string(Chunk388032.t.mvPFbA)
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
         color: "text-muted",
-        className: i()(Chunk360242.topMargin, {
-          [Chunk360242.formMargin]: !module
+        className: i()(Chunk910742.topMargin, {
+          [Chunk910742.formMargin]: !module
         }),
         variant: "text-sm/normal",
         children: Chunk388032.intl.string(Chunk388032.t.kbpkxJ)
       }), module ? (0, Chunk951288.jsx)(Chunk481060.Text, {
-        className: i()(Chunk360242.formMargin, Chunk360242.topMargin),
+        className: i()(Chunk910742.formMargin, Chunk910742.topMargin),
         color: "text-danger",
         variant: "text-sm/normal",
         children: Chunk388032.intl.string(Chunk388032.t["DrNm/5"])
@@ -184,23 +184,23 @@ class O extends Chunk647438.PureComponent {
       channel: r
     } = this.props, a = null != (e = (0, Chunk471445.KS)(Chunk647438)) ? module : Chunk481060.MqZ;
     return (0, Chunk951288.jsxs)(Chunk481060.xBx, {
-      className: Chunk360242.header,
+      className: Chunk910742.header,
       children: [(0, Chunk951288.jsx)(Chunk565138.Z, {
         guild: exports,
         size: Chunk565138.Z.Sizes.LARGE
       }), (0, Chunk951288.jsx)("div", {
-        className: Chunk360242.channelContainer,
+        className: Chunk910742.channelContainer,
         children: (0, Chunk951288.jsxs)("div", {
-          className: Chunk360242.channel,
+          className: Chunk910742.channel,
           children: [(0, Chunk951288.jsx)(Chunk120356, {
             size: "custom",
             color: "currentColor",
             width: 20,
             height: 20,
-            className: Chunk360242.channelIcon
+            className: Chunk910742.channelIcon
           }), (0, Chunk951288.jsx)(Chunk481060.Text, {
             variant: "text-md/medium",
-            className: Chunk360242.channelName,
+            className: Chunk910742.channelName,
             children: require
           })]
         })
@@ -216,7 +216,7 @@ class O extends Chunk647438.PureComponent {
       "aria-labelledby": this.state.headerId,
       parentComponent: "FollowModal",
       children: [this.renderHeader(), (0, Chunk951288.jsxs)(Chunk481060.hzk, {
-        className: Chunk360242.content,
+        className: Chunk910742.content,
         children: [this.renderBody(), this.renderForm()]
       }), (0, Chunk951288.jsx)(Chunk481060.mzw, {
         children: this.renderFooter()
@@ -257,7 +257,7 @@ class O extends Chunk647438.PureComponent {
         }), t(), (0, o.ZDy)(async () => {
           let {
             default: e
-          } = await n.e("14760").then(n.bind(n, 897140));
+          } = await n.e("6554").then(n.bind(n, 356658));
           return t => (0, l.jsx)(e, function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
@@ -301,8 +301,8 @@ class O extends Chunk647438.PureComponent {
 let w = Chunk442837.ZP.connectStores([Chunk430824.Z, Chunk592125.Z, Chunk984933.ZP, Chunk496675.Z, Chunk944486.Z], e => {
   let {
     channel: t
-  } = e, n = f.Z.getGuild(t.guild_id), l = f.Z.getGuildsArray().reduce((e, t) => {
-    let n = b.ZP.getChannels(t.id).SELECTABLE.map(e => e.channel).filter(e => e.type === Z.d4z.GUILD_TEXT && x.Z.can(Z.Plq.MANAGE_WEBHOOKS, e)).map(e => {
+  } = e, n = b.Z.getGuild(t.guild_id), l = b.Z.getGuildsArray().reduce((e, t) => {
+    let n = x.ZP.getChannels(t.id).SELECTABLE.map(e => e.channel).filter(e => e.type === Z.d4z.GUILD_TEXT && _.Z.can(Z.Plq.MANAGE_WEBHOOKS, e)).map(e => {
       let t = p.Z.getChannel(e.parent_id);
       return {
         channel: e,
@@ -313,7 +313,7 @@ let w = Chunk442837.ZP.connectStores([Chunk430824.Z, Chunk592125.Z, Chunk984933.
       guild: t,
       channels: n
     }), e
-  }, {}), r = j.Z.getLastChannelFollowingDestination();
+  }, {}), r = C.Z.getLastChannelFollowingDestination();
   return {
     guildToFollow: n,
     channelNameToFollow: t.name,
