@@ -83,8 +83,8 @@ function P(e) {
       categoryId: x
     })
   }, [Z, o, t, x, w, y]);
-  let z = i.useCallback(e => n(e, x), [n, x]),
-    Y = i.useMemo(() => f ? [o.length, 0] : [o.length], [o.length, f]),
+  let Y = i.useCallback(e => n(e, x), [n, x]),
+    z = i.useMemo(() => f ? [o.length, 0] : [o.length], [o.length, f]),
     W = i.useCallback((e, n, i) => {
       switch (e) {
         case 0:
@@ -163,11 +163,11 @@ function P(e) {
           children: (0, r.jsx)(v.ZP, {
             guildId: e,
             onClick: async e => await J(e, t, x, N),
-            onView: e => z(e)
+            onView: e => Y(e)
           })
         }, i)
       }
-    }, [o, J, z, x]);
+    }, [o, J, Y, x]);
   i.useEffect(() => {
     let e = B.current;
     return () => {
@@ -208,7 +208,7 @@ function P(e) {
     children: (0, r.jsx)(c.GMG, {
       ref: B,
       className: C.masonryList,
-      sections: Y,
+      sections: z,
       columns: k,
       itemGutter: 16,
       padding: ee,

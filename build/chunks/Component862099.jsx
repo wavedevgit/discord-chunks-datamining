@@ -243,7 +243,7 @@ function F(e) {
   })
 }
 
-function z(e) {
+function Y(e) {
   let {
     guildEvent: t
   } = e, n = (0, L.cS)(t);
@@ -261,13 +261,13 @@ function z(e) {
       height: 16,
       className: G.stageIcon
     }),
-    children: (0, i.jsx)(Y, {
+    children: (0, i.jsx)(z, {
       guildEvent: t
     })
   })
 }
 
-function Y(e) {
+function z(e) {
   let {
     guildEvent: t
   } = e, n = l.useCallback(() => {
@@ -410,7 +410,7 @@ let J = Chunk647438.memo(function(e) {
   })) : l.entity_type === M.WX.STAGE_INSTANCE && h ? d = (0, i.jsx)(q, {
     stageInstance: s,
     channel: r
-  }) : l.entity_type === M.WX.EXTERNAL ? d = (0, i.jsx)(z, {
+  }) : l.entity_type === M.WX.EXTERNAL ? d = (0, i.jsx)(Y, {
     guildEvent: l
   }) : l.entity_type === M.WX.VOICE && null != r && (d = (0, i.jsx)(H, {
     guildEvent: l,

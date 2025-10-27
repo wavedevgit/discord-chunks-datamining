@@ -75,7 +75,7 @@ function C() {
     V = Chunk647438.useRef(new Chunk444324.Z(j)),
     {
       onGuildCardSeen: F,
-      onGuildCardClick: z
+      onGuildCardClick: Y
     } = (0, Chunk750910.H)({
       guildDiscoveryCardSeenManager: V.current,
       loadId: module.current
@@ -124,12 +124,12 @@ function C() {
       })]
     }), L ? (0, Chunk951288.jsx)(Chunk273596.Z, {
       loadId: module.current,
-      onGuildCardClick: z,
+      onGuildCardClick: Y,
       onGuildCardSeen: F
     }) : (0, Chunk951288.jsx)(Chunk590771.Z, {
       selectedTab: T,
       onScroll: exports,
-      onGuildCardClick: z,
+      onGuildCardClick: Y,
       onGuildCardSeen: F
     })]
   })

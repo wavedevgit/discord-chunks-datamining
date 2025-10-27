@@ -314,7 +314,7 @@ function er() {
       })
     }
   }, [Chunk375954, Chunk823379]), Chunk647438.useEffect(() => {
-    Chunk375954 && null == $ && Chunk237997 === Chunk981631.Z5c.FRIENDS && (0, Chunk176881.Z)({
+    Chunk375954 && null == $ && (Chunk237997 === Chunk981631.Z5c.FRIENDS || Chunk237997 === Chunk981631.Z5c.ME_ACTIVITY) && (0, Chunk176881.Z)({
       tab_opened: Chunk19780
     })
   }, [Chunk375954, Chunk19780, Chunk237997, $]), Chunk647438.useEffect(() => {

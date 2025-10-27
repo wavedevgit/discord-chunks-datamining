@@ -455,7 +455,7 @@ let eP = Chunk647438.memo(function(e) {
         }
       }, "discord-shop"), p && !b ? (0, r.jsx)(eC, {
         selected: null != l && l.startsWith(es.Z5c.FAMILY_CENTER) || null != _ && _.startsWith(es.Z5c.FAMILY_CENTER)
-      }, "family-center") : null, f && !b ? (0, r.jsx)(z.Z, {
+      }, "family-center") : null, f && !b ? (0, r.jsx)(Y.Z, {
         selected: null == _ ? null != l && l.startsWith(es.Z5c.QUEST_HOME_V2) : _ === es.Z5c.QUEST_HOME_V2
       }, "quests") : null, b || E ? null : (0, r.jsx)(ex, {}, "section-divider-top"), E ? null : (0, r.jsx)(T.Z, {}, "frequent-friends"), "full-width" !== h || E || b ? null : (0, r.jsx)(eI, {}, "create-dm")]
     }))]

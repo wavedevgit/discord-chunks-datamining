@@ -1,10 +1,11 @@
 /** Chunk was on 77250 **/
 /** chunk id: 643087, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  default: () => f
+  default: () => g
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk153867 = require("./153867.js"),
   Chunk663993 = require("./663993.js"),
@@ -13,7 +14,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk542560 = require("./542560.js");
 
-function u(e, t, r) {
+function d(e, t, r) {
   return t in e ? Object.defineProperty(e, t, {
     value: r,
     enumerable: true,
@@ -21,88 +22,76 @@ function u(e, t, r) {
     writable: true
   }) : e[t] = r, e
 }
-let d = (0, Chunk663993.Un)({
+let b = (0, Chunk663993.Un)({
   createPromise: () => require.e("4848").then(require.bind(require, 797967)),
   webpackId: 797967
 });
-class b extends Chunk647438.PureComponent {
+class f extends Chunk647438.PureComponent {
   render() {
     let {
-      transitionState: e
+      transitionState: e,
+      onClose: t
     } = this.props, {
-      name: t,
-      color: r
+      name: r,
+      color: o
     } = this.state;
-    return (0, Chunk951288.jsxs)(Chunk481060.Y0X, {
-      transitionState: module,
-      "aria-label": Chunk388032.intl.string(Chunk388032.t.Dx7im5),
-      size: Chunk481060.CgR.DYNAMIC,
-      parentComponent: "GuildFolderSettings",
-      children: [(0, Chunk951288.jsxs)(Chunk481060.xBx, {
-        className: Chunk542560.header,
-        separator: false,
-        children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
-          variant: "heading-lg/semibold",
-          children: Chunk388032.intl.string(Chunk388032.t.Dx7im5)
-        }), (0, Chunk951288.jsx)(Chunk481060.olH, {
-          onClick: this.close
-        })]
-      }), (0, Chunk951288.jsx)(Chunk481060.hzk, {
-        children: (0, Chunk951288.jsx)("form", {
-          onSubmit: this.handleSubmit,
-          children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
-            gap: 16,
-            children: [(0, Chunk951288.jsx)(Chunk481060.oil, {
-              label: Chunk388032.intl.string(Chunk388032.t.tGRbjA),
-              maxLength: Chunk981631.dYL,
-              value: exports,
-              onChange: this.handleNameChange,
-              placeholder: Chunk388032.intl.string(Chunk388032.t.xV9hVh),
-              autoFocus: true
-            }), (0, Chunk951288.jsx)(Chunk481060.gNt, {
-              label: Chunk388032.intl.string(Chunk388032.t.xpurRF),
-              children: (0, Chunk951288.jsx)(d, {
-                defaultColor: Chunk981631.Wyy,
-                colors: Chunk981631.pmI,
-                value: null != require ? require : Chunk981631.Wyy,
-                onChange: this.handleColorChange
-              })
-            })]
-          })
-        })
-      }), (0, Chunk951288.jsx)(Chunk481060.mzw, {
-        children: (0, Chunk951288.jsx)(Chunk481060.Button, {
+    return (0, Chunk951288.jsx)("form", {
+      onSubmit: this.handleSubmit,
+      children: (0, Chunk951288.jsx)(Chunk159691.u_l, {
+        title: Chunk388032.intl.string(Chunk388032.t.Dx7im5),
+        actions: [{
           variant: "primary",
           text: Chunk388032.intl.string(Chunk388032.t.i4jeWR),
-          type: "submit",
-          onClick: this.handleSubmit
+          type: "submit"
+        }],
+        transitionState: module,
+        onClose: exports,
+        children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
+          gap: 16,
+          className: Chunk542560.container,
+          children: [(0, Chunk951288.jsx)(Chunk481060.oil, {
+            label: Chunk388032.intl.string(Chunk388032.t.tGRbjA),
+            maxLength: Chunk981631.dYL,
+            value: require,
+            onChange: this.handleNameChange,
+            placeholder: Chunk388032.intl.string(Chunk388032.t.xV9hVh),
+            autoFocus: true
+          }), (0, Chunk951288.jsx)(Chunk481060.gNt, {
+            label: Chunk388032.intl.string(Chunk388032.t.xpurRF),
+            children: (0, Chunk951288.jsx)(b, {
+              defaultColor: Chunk981631.Wyy,
+              colors: Chunk981631.pmI,
+              value: null != Chunk647438 ? Chunk647438 : Chunk981631.Wyy,
+              onChange: this.handleColorChange
+            })
+          })]
         })
-      })]
+      })
     })
   }
   constructor(...e) {
     var t;
-    super(...e), u(this, "state", {
+    super(...e), d(this, "state", {
       name: null != (t = this.props.folderName) ? t : "",
       color: this.props.folderColor
-    }), u(this, "close", () => {
+    }), d(this, "close", () => {
       this.props.onClose()
-    }), u(this, "handleNameChange", e => {
+    }), d(this, "handleNameChange", e => {
       this.setState({
         name: e
       })
-    }), u(this, "handleColorChange", e => {
+    }), d(this, "handleColorChange", e => {
       this.setState({
         color: e
       })
-    }), u(this, "handleSubmit", e => {
+    }), d(this, "handleSubmit", e => {
       e.preventDefault();
       let {
         folderId: t
       } = this.props, {
         name: r,
         color: n
-      } = this.state, i = a.ZP.getGuildFolders().map(e => e.folderId === t ? function(e, t) {
+      } = this.state, o = c.ZP.getGuildFolders().map(e => e.folderId === t ? function(e, t) {
         return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
           var r = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -120,7 +109,7 @@ class b extends Chunk647438.PureComponent {
           "function" == typeof Object.getOwnPropertySymbols && (n = n.concat(Object.getOwnPropertySymbols(r).filter(function(e) {
             return Object.getOwnPropertyDescriptor(r, e).enumerable
           }))), n.forEach(function(t) {
-            u(e, t, r[t])
+            d(e, t, r[t])
           })
         }
         return e
@@ -128,8 +117,8 @@ class b extends Chunk647438.PureComponent {
         folderName: r,
         folderColor: n
       }) : e);
-      (0, o.V1)(i), this.close()
+      (0, l.V1)(o), this.close()
     })
   }
 }
-let f = b
+let g = f
