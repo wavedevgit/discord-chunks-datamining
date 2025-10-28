@@ -23,29 +23,19 @@ function o() {
       variant: "display-sm",
       color: "text-primary",
       children: Chunk388032.intl.format(Chunk506945.default.Xu0QsX, {
-        numHours: Math.floor(module / 60),
-        hoursHook: (i, t) => (0, e.jsx)(n.xvT, {
-          variant: "display-lg",
-          color: "text-primary",
-          children: i
-        }, t)
+        numHours: Math.floor(module / 60)
       })
     }) : (0, Chunk951288.jsx)(Chunk793030.xvT, {
       variant: "display-sm",
       color: "text-primary",
       children: Chunk388032.intl.format(Chunk506945.default.UZbUtl, {
-        numMinutes: Math.floor(module),
-        minutesHook: (i, t) => (0, e.jsx)(n.xvT, {
-          variant: "display-lg",
-          color: "text-primary",
-          children: i
-        }, t)
+        numMinutes: Math.floor(module)
       })
     }), (0, Chunk951288.jsx)(Chunk793030.xvT, {
       variant: "display-sm",
       color: "text-primary",
       children: Chunk388032.intl.format(Chunk506945.default["36PZwu"], {
-        percent: exports
+        percent: 100 - exports
       })
     })]
   })

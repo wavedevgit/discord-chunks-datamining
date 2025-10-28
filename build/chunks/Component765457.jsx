@@ -42,13 +42,13 @@ function g(i) {
           children: (0, e.jsx)(y.Z, {})
         }), (0, e.jsx)(s.Mi4, {
           id: f.yD.MESSAGES,
-          children: (0, e.jsx)(v.Z, {})
+          children: (0, e.jsx)(j.Z, {})
         }), (0, e.jsx)(s.Mi4, {
           id: f.yD.EMOJIS,
           children: (0, e.jsx)(o.Z, {})
         }), (0, e.jsx)(s.Mi4, {
           id: f.yD.VOICE,
-          children: (0, e.jsx)(j.Z, {})
+          children: (0, e.jsx)(v.Z, {})
         }), (0, e.jsx)(s.Mi4, {
           id: f.yD.GUILDS,
           children: (0, e.jsx)(m.Z, {})

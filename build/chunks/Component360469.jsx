@@ -23,18 +23,13 @@ function o() {
       variant: "display-sm",
       color: "text-primary",
       children: Chunk388032.intl.format(Chunk506945.default.nPTMHj, {
-        numMessages: module,
-        messagesHook: (i, t) => (0, e.jsx)(n.xvT, {
-          variant: "display-lg",
-          color: "text-primary",
-          children: i
-        }, t)
+        numMessages: module
       })
     }), (0, Chunk951288.jsx)(Chunk793030.xvT, {
       variant: "display-sm",
       color: "text-primary",
       children: Chunk388032.intl.format(Chunk506945.default.ixvOza, {
-        percent: exports
+        percent: 100 - exports
       })
     })]
   })

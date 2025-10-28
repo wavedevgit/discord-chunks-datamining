@@ -1,7 +1,7 @@
 /** Chunk was on 80448 **/
 /** chunk id: 860277, original params: i,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => j
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,12 +16,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk506945 = require("./506945.js"),
   Chunk388032 = require("./388032.jsx");
 
-function v(i) {
+function j(i) {
   let {
     step: t
   } = i, {
     users: r
-  } = (0, l.e7)([c.Z], () => c.Z.getCheckpointData()), v = (0, n.useMemo)(() => r.map(i => {
+  } = (0, l.e7)([c.Z], () => c.Z.getCheckpointData()), j = (0, n.useMemo)(() => r.map(i => {
     let {
       userId: t
     } = i;
@@ -33,7 +33,7 @@ function v(i) {
         variant: "display-md",
         color: "text-primary",
         children: m.intl.string(p.default["4xZpq4"])
-      }), v.slice(1).map(i => (0, e.jsxs)("div", {
+      }), j.slice(1).map(i => (0, e.jsxs)("div", {
         children: [(0, e.jsx)(s.Z, {
           user: i,
           size: u.EF.SIZE_120
@@ -49,13 +49,13 @@ function v(i) {
         color: "text-primary",
         children: m.intl.string(p.default.d5HUsD)
       }), (0, e.jsx)(s.Z, {
-        user: v[0],
+        user: j[0],
         size: u.EF.SIZE_120
       }), (0, e.jsx)(a.xvT, {
         variant: "display-md",
         color: "text-primary",
         children: m.intl.format(p.default.wz2JuF, {
-          user: v[0].username,
+          user: j[0].username,
           userHook: (i, t) => (0, e.jsx)(a.xvT, {
             variant: "display-lg",
             color: "text-primary",
