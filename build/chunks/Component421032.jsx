@@ -32,7 +32,7 @@ function b(e) {
   if (null == I) return null;
   let {
     is_canceled: y = false
-  } = null != j ? j : {}, N = (null == j ? true : j.scheduled_start_time) != null ? new Date(null == j ? true : j.scheduled_start_time) : r, Z = (0, v.DK)(I), E = y ? f.p1.CANCELED : f.p1.SCHEDULED;
+  } = null != j ? j : {}, N = (null == j ? true : j.scheduled_start_time) != null ? new Date(null == j ? true : j.scheduled_start_time) : r, Z = (0, v.DK)(I), E = y ? m.p1.CANCELED : m.p1.SCHEDULED;
   Z === n && (E = I.status);
   let P = (null == I ? true : I.scheduled_start_time) != null ? (0, v.lh)(j, N, new Date(null == I ? true : I.scheduled_start_time)) : null,
     S = e => {
@@ -77,7 +77,7 @@ function b(e) {
     },
     onContextMenu: S,
     "aria-label": "",
-    children: [(0, i.jsx)(m.z, {
+    children: [(0, i.jsx)(f.z, {
       startTime: N.toISOString(),
       status: null != P ? P : E,
       eventType: I.entity_type,

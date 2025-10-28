@@ -2,7 +2,7 @@
 /** chunk id: 751771, original params: e,t,n (module,exports,require) **/
 let i, l, s, r, a, o;
 require.d(exports, {
-  Z: () => M
+  Z: () => P
 }), require("./388685.js"), require("./642613.js");
 var u, d, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -18,8 +18,8 @@ var u, d, Chunk442837 = require("./442837.js"),
   Chunk245335 = require("./245335.js");
 let C = new Set,
   _ = [],
-  T = new Map,
-  b = {
+  b = new Map,
+  T = {
     numFriends: 0,
     numDms: 0,
     numGroupDms: 0,
@@ -50,8 +50,8 @@ function N(e) {
 }
 
 function A(e) {
-  _ = e, T = new Map, e.forEach((e, t) => {
-    T.set(e, {
+  _ = e, b = new Map, e.forEach((e, t) => {
+    b.set(e, {
       index: t
     })
   })
@@ -67,10 +67,10 @@ class Z extends(u = Chunk442837.ZP.Store) {
     return i
   }
   getInitialCounts() {
-    return b
+    return T
   }
   getSelectedInviteMetadata(e) {
-    let t = T.get(e),
+    let t = b.get(e),
       n = p.Z.getUserAffinities().map(e => e.otherUserId);
     if (null != t) return {
       rowNum: t.index,
@@ -86,7 +86,7 @@ class Z extends(u = Chunk442837.ZP.Store) {
   configurable: true,
   writable: true
 }) : Z[d] = "InviteSuggestionsStore";
-let M = new Z(Chunk570140.Z, {
+let P = new Z(Chunk570140.Z, {
   LOAD_INVITE_SUGGESTIONS: function(e) {
     let {
       omitUserIds: t,
@@ -104,7 +104,7 @@ let M = new Z(Chunk570140.Z, {
       rows: g,
       counts: h
     } = N("");
-    A(g), b = h, i = _.length
+    A(g), T = h, i = _.length
   },
   INVITE_SUGGESTIONS_SEARCH: function(e) {
     let {

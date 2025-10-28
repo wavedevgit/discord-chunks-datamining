@@ -30,8 +30,6 @@ var r = {
   inviteSplashImage: "inviteSplashImage_d5f3cd",
   inviteSplashBadge: "inviteSplashBadge_d5f3cd",
   inviteSplashImageLoaded: "inviteSplashImageLoaded_d5f3cd",
-  button: "button_d5f3cd",
-  buttonSize: "buttonSize_d5f3cd",
   guildIconExpired: "guildIconExpired_d5f3cd guildIcon_d5f3cd",
   inviteDestinationExpired: "inviteDestinationExpired_d5f3cd",
   buttonForNonMember: "buttonForNonMember_d5f3cd",
@@ -39,6 +37,7 @@ var r = {
   resolvingWrapper: "resolvingWrapper_d5f3cd",
   resolving: "resolving_d5f3cd",
   resolvingBackground: "resolvingBackground_d5f3cd",
-  resolvingFakeButton: "resolvingFakeButton_d5f3cd"
+  resolvingFakeButton: "resolvingFakeButton_d5f3cd",
+  button: "button_d5f3cd"
 };
 require.r(module.exports = r)

@@ -57,7 +57,7 @@ function E(e, t, n, r) {
     onlyExactMatch: m,
     eagerRecentSenders: E
   } = (0, l.kB)("getMentionSuggestions", {
-    autoTrackExposure: true
+    autoTrackExposure: false
   }), b = g(t, n), {
     query: y
   } = b;

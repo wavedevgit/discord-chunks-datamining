@@ -66,7 +66,7 @@ function E(e) {
     onClick: t
   } = e, {
     canManageAllEvents: i
-  } = (0, _.XJ)(n), l = (0, c.e7)([p.Z], () => !n.isGuildVocal() || p.Z.can(j.Plq.CONNECT, n), [n]), v = a.useMemo(() => (0, d.Z)(n), [n]), m = (0, u.KS)(n);
+  } = (0, _.XJ)(n), l = (0, c.e7)([p.Z], () => !n.isGuildVocal() || p.Z.can(j.Plq.CONNECT, n), [n]), v = a.useMemo(() => (0, d.Z)(n), [n]), f = (0, u.KS)(n);
   return (0, r.jsx)(s.aML, {
     "data-migration-pending": true,
     text: k.intl.string(k.t.nHjY9C),
@@ -81,7 +81,7 @@ function E(e) {
         "data-migration-pending": true,
         text: k.intl.string(k.t["48WXaW"]),
         shouldShow: i && v && l && null != t,
-        children: e => null != m ? (0, r.jsx)(m, N(y({}, e), {
+        children: e => null != f ? (0, r.jsx)(f, N(y({}, e), {
           color: "currentColor",
           size: "custom",
           width: 20,
@@ -140,9 +140,9 @@ function S(e) {
     onRsvpClick: _,
     onStartClick: p,
     onInviteClick: v,
-    onEndClick: f,
+    onEndClick: m,
     onJoinGuildClick: h
-  } = e, b = (0, m.Q)(n, t), x = (0, g.Zs)({
+  } = e, b = (0, f.Q)(n, t), x = (0, g.Zs)({
     entityType: t,
     isJoined: i,
     isActive: a,
@@ -155,7 +155,7 @@ function S(e) {
     onRsvpClick: _,
     onStartClick: p,
     onInviteClick: v,
-    onEndClick: f,
+    onEndClick: m,
     onJoinGuildClick: h
   });
   return (0, r.jsxs)(s.ButtonGroup, {
@@ -180,7 +180,7 @@ function O(e) {
     imageSource: _,
     isActive: p,
     isUserLurking: v,
-    isJoined: m = false,
+    isJoined: f = false,
     isMember: g = false,
     speakers: j,
     speakerCount: k,
@@ -203,8 +203,8 @@ function O(e) {
     recurrenceId: M
   } = e, q = c === I.WX.EXTERNAL, J = q ? e => e.stopPropagation() : true, V = [];
   if (null != H && null != event) {
-    let e = (0, f.Ho)(H);
-    V = (0, f.PJ)(4, e, new Date(z.scheduled_start_time))
+    let e = (0, m.Ho)(H);
+    V = (0, m.PJ)(4, e, new Date(z.scheduled_start_time))
   }
   let X = V.length > 0;
   return (0, r.jsxs)(s.kL8, {
@@ -212,7 +212,7 @@ function O(e) {
     onClick: () => null == A ? true : A(M),
     onContextMenu: O,
     className: o()(w.card, {
-      [w.joined]: m,
+      [w.joined]: f,
       [w.lurking]: v
     }, n),
     children: [(0, r.jsxs)("div", {
@@ -253,7 +253,7 @@ function O(e) {
             channel: i,
             entityType: c,
             isActive: p,
-            isJoined: m,
+            isJoined: f,
             isUserLurking: v,
             isMember: g,
             rsvped: y,

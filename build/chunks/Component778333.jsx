@@ -2,10 +2,11 @@
 /** chunk id: 778333, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => b
+  Z: () => y
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
+  Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk493683 = require("./493683.js"),
   Chunk447543 = require("./447543.js"),
@@ -21,68 +22,68 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk105341 = require("./105341.js");
 
-function b(e) {
+function y(e) {
   var t;
   let {
     invite: n,
-    message: b,
-    getAcceptInviteContext: y
-  } = e, O = (0, a.e7)([f.default], () => f.default.getId()), v = (null == (t = n.inviter) ? true : t.id) === O, I = n.state === m.r2o.ACCEPTING, {
-    analyticsLocations: T
-  } = (0, c.ZP)(l.Z.INVITE_EMBED), S = (0, a.e7)([p.Z], () => {
+    message: y,
+    getAcceptInviteContext: O
+  } = e, v = (0, o.e7)([_.default], () => _.default.getId()), I = (null == (t = n.inviter) ? true : t.id) === v, T = n.state === g.r2o.ACCEPTING, {
+    analyticsLocations: S
+  } = (0, u.ZP)(c.Z.INVITE_EMBED), A = (0, o.e7)([h.Z], () => {
     var e;
-    return null != n.inviter && p.Z.isFriend(null == (e = n.inviter) ? true : e.id)
-  }), A = i.useCallback(() => {
+    return null != n.inviter && h.Z.isFriend(null == (e = n.inviter) ? true : e.id)
+  }), C = i.useCallback(() => {
     let e = "noop";
-    null != n.inviter && null != _.Z.getDMFromUserId(n.inviter.id) && (e = "transition", o.Z.openPrivateChannel({
+    null != n.inviter && null != p.Z.getDMFromUserId(n.inviter.id) && (e = "transition", s.Z.openPrivateChannel({
       recipientIds: [n.inviter.id]
-    })), (0, s.r$)({
+    })), (0, l.r$)({
       invite: n,
       action: e,
-      inviter_id: b.author.id,
-      invite_message_id: b.id
-    }, T)
-  }, [n, b, T]), C = i.useCallback(() => {
-    (0, s.r$)({
+      inviter_id: y.author.id,
+      invite_message_id: y.id
+    }, S)
+  }, [n, y, S]), N = i.useCallback(() => {
+    (0, l.r$)({
       invite: n,
       action: "accept",
-      inviter_id: b.author.id,
-      invite_message_id: b.id
-    }, T);
-    let e = y("Invite Button Embed");
-    s.ZP.acceptInviteAndTransitionToInviteChannel({
+      inviter_id: y.author.id,
+      invite_message_id: y.id
+    }, S);
+    let e = O("Invite Button Embed");
+    l.ZP.acceptInviteAndTransitionToInviteChannel({
       inviteKey: n.code,
       context: e
     })
-  }, [n, b, T, y]);
+  }, [n, y, S, O]);
   if (null == n.inviter) return null;
-  let N = S ? A : C,
-    R = g.intl.string(g.t.ib7Ng1),
-    P = u.Z.Button.Colors.GREEN;
-  S ? (R = g.intl.string(g.t.xhxnPn), P = u.Z.Button.Colors.PRIMARY) : v && (R = g.intl.string(g.t.ib7Ng1), P = u.Z.Button.Colors.PRIMARY);
-  let w = v ? g.intl.string(g.t.eQyu1F) : g.intl.string(g.t.PYJHW6),
-    D = null != n.inviter ? "".concat(n.inviter.username) : "",
-    L = null != n.inviter ? h.ZP.getUserTag(n.inviter) : "";
-  return (0, r.jsxs)(u.Z, {
-    children: [(0, r.jsx)(u.Z.Header, {
-      text: w
-    }), (0, r.jsxs)(u.Z.Body, {
+  let R = A ? C : N,
+    P = E.intl.string(E.t.ib7Ng1),
+    w = "active";
+  A ? (P = E.intl.string(E.t.xhxnPn), w = "secondary") : I && (P = E.intl.string(E.t.ib7Ng1), w = "secondary");
+  let D = I ? E.intl.string(E.t.eQyu1F) : E.intl.string(E.t.PYJHW6),
+    L = null != n.inviter ? "".concat(n.inviter.username) : "",
+    x = null != n.inviter ? m.ZP.getUserTag(n.inviter) : "";
+  return (0, r.jsxs)(d.Z, {
+    children: [(0, r.jsx)(d.Z.Header, {
+      text: D
+    }), (0, r.jsxs)(d.Z.Body, {
       children: [(0, r.jsxs)("div", {
-        className: E.headerLine,
-        children: [(0, r.jsx)(u.Z.Icon, {
-          user: new d.Z(n.inviter),
-          onClick: S ? N : true
-        }), (0, r.jsx)(u.Z.Info, {
-          title: D,
-          onClick: S ? N : true,
-          children: L
+        className: b.headerLine,
+        children: [(0, r.jsx)(d.Z.Icon, {
+          user: new f.Z(n.inviter),
+          onClick: A ? R : true
+        }), (0, r.jsx)(d.Z.Info, {
+          title: L,
+          onClick: A ? R : true,
+          children: x
         })]
-      }), (0, r.jsx)(u.Z.Button, {
-        onClick: N,
-        submitting: I,
-        isDisabled: v,
-        color: P,
-        children: R
+      }), (0, r.jsx)(a.zxk, {
+        onClick: R,
+        text: P,
+        loading: T,
+        disabled: I,
+        variant: w
       })]
     })]
   })

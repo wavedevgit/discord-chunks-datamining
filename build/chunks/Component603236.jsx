@@ -52,14 +52,14 @@ let f = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
       copyValue: y,
       changePage: C,
       inviteChannel: _,
-      source: T,
-      code: b,
+      source: b,
+      code: T,
       guildScheduledEvent: N,
       disabled: A,
       application: Z
     } = e, {
-      maxAge: M,
-      maxUses: P,
+      maxAge: P,
+      maxUses: M,
       networkError: w,
       showVanityURL: j,
       flags: V
@@ -68,12 +68,12 @@ let f = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
         server: d.Z.getGuildId(),
         channel: null == _ ? true : _.id,
         channel_type: null == _ ? true : _.type,
-        location: T,
-        code: b,
+        location: b,
+        code: T,
         guild_scheduled_event_id: null == N ? true : N.id,
         application_id: null == Z ? true : Z.id
       })
-    }, [null == Z ? true : Z.id, _, T, b, N]);
+    }, [null == Z ? true : Z.id, _, b, T, N]);
     return (0, i.jsxs)(o.Kqy, {
       gap: 16,
       children: [(0, i.jsx)(f, {
@@ -90,7 +90,7 @@ let f = Chunk442837.ZP.connectStores([Chunk246946.Z], () => ({
       }), n || j ? null : (0, i.jsxs)(o.Text, {
         variant: "text-xs/normal",
         className: S.footerText,
-        children: [(0, v.Vg)(M, P), " ", r ? (0, i.jsx)(o.Anchor, {
+        children: [(0, v.Vg)(P, M), " ", r ? (0, i.jsx)(o.Anchor, {
           onClick: () => C(I.RV.SETTINGS),
           children: x.intl.string(x.t["VNe8P/"])
         }) : null]

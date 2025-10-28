@@ -22,8 +22,8 @@ function u(e) {
     isChannelPublic: _ = true,
     entityType: p,
     onJoinClick: v,
-    onRsvpClick: m,
-    onStartClick: f,
+    onRsvpClick: f,
+    onStartClick: m,
     onInviteClick: g,
     onEndClick: h,
     onJoinGuildClick: b,
@@ -82,21 +82,21 @@ function u(e) {
       size: "sm",
       text: d.intl.string(d.t["2BP08E"]),
       onClick: b
-    }), !t && !n && null != m) {
+    }), !t && !n && null != f) {
     let e = i && !t;
     k.push({
       variant: e ? "active" : "secondary",
       size: "sm",
       icon: e ? l.dz2 : l.Dkj,
       text: d.intl.string(d.t.DlcqlU),
-      onClick: m,
+      onClick: f,
       disabled: t
     })
   }
-  return n || null == f || k.push({
+  return n || null == m || k.push({
     variant: "primary",
     size: "sm",
-    onClick: f,
+    onClick: m,
     text: d.intl.string(d.t.I0v0Qv)
   }), n && null != h && k.push({
     variant: "secondary",

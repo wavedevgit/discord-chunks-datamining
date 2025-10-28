@@ -17,17 +17,17 @@ var Chunk647438 = require("./647438.js"),
 function p(e, n, t) {
   let r = (0, l.e7)([u.ZP], () => u.ZP.getGuildScheduledEvent(e)),
     p = (0, o.Z)(t),
-    [v, m] = i.useState(null != t && null != r ? (0, _.PJ)(4, (0, _.Ho)(t), new Date(r.scheduled_start_time)) : []);
+    [v, f] = i.useState(null != t && null != r ? (0, _.PJ)(4, (0, _.Ho)(t), new Date(r.scheduled_start_time)) : []);
   i.useEffect(() => {
     if (null == p || null == t || null == r || a().isEqual(p, t)) return;
     let e = (0, _.Ho)(t);
-    m((0, _.PJ)(v.length, e, new Date(r.scheduled_start_time)))
+    f((0, _.PJ)(v.length, e, new Date(r.scheduled_start_time)))
   }, [t, v.length, r, p]), i.useEffect(() => {
     if (null == n) return;
     let t = v.map(e => s.default.fromTimestamp(Math.floor(e.getTime() / c.Z.Millis.SECOND) * c.Z.Millis.SECOND));
     d.Z.getGuildEventUserCounts(n, e, t)
   }, [e, n, v]);
-  let f = i.useMemo(() => {
+  let m = i.useMemo(() => {
     if (null == t || 0 === v.length || (null == r ? true : r.scheduled_start_time) == null) returnfalse;
     let e = new Date;
     e.setFullYear(e.getFullYear() + _.hn);
@@ -37,12 +37,12 @@ function p(e, n, t) {
   }, [t, v, null == r ? true : r.scheduled_start_time]);
   return {
     recurrenceStartTimes: v,
-    canViewMoreRecurrences: f,
+    canViewMoreRecurrences: m,
     updateRecurrenceStartTimes: () => {
       if (null == t || null == r) return;
       let e = (0, _.Ho)(t),
         n = v[v.length - 1];
-      m([...v, ...(0, _.PJ)(4, e, n, true)])
+      f([...v, ...(0, _.PJ)(4, e, n, true)])
     }
   }
 }

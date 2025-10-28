@@ -22,7 +22,7 @@ let _ = {
     let {
       enabled: u
     } = (0, s.kB)("MentionSuggestionAutocompletes", {
-      autoTrackExposure: false
+      autoTrackExposure: true
     });
     return !(!u || e.isDM()) && !!c.HV.getSetting() && !!(null == (o = i.chatInputType.autocomplete) ? true : o.mentionSuggestions) && i.mentions.user !== d.h3.DENY && null != i.currentFullWord && !(i.currentFullWord.length < l.Q) && null == a.Z.getActiveCommand(e.id) && true
   },
