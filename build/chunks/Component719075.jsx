@@ -37,7 +37,7 @@ let b = e => {
       isPremiumUser: b,
       prioritizedCurrency: n,
       hasDiscountOffer: null != j
-    }), I = O && !b;
+    }), L = O && !b;
     return v ? (0, r.jsx)(o.Text, {
       variant: "text-md/semibold",
       color: "header-muted",
@@ -45,7 +45,7 @@ let b = e => {
     }) : x ? (0, r.jsx)(o.Text, {
       variant: "text-md/semibold",
       children: _.intl.string(_.t.BEjTij)
-    }) : E && !I ? (0, r.jsx)(o.Text, {
+    }) : E && !L ? (0, r.jsx)(o.Text, {
       variant: "text-md/semibold",
       children: _.intl.string(_.t["6cfuDj"])
     }) : S ? (0, r.jsx)(o.Text, {

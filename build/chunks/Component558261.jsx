@@ -43,9 +43,9 @@ let A = e => {
       hasDiscountOffer: a,
       discountOfferAmount: u,
       text: d
-    } = e, g = (0, m.XM)(t, false, false), p = a ? L.intl.formatToPlainString(L.t["5U5RB5"], {
+    } = e, g = (0, m.XM)(t, false, false), p = a ? I.intl.formatToPlainString(I.t["5U5RB5"], {
       discountOfferAmount: u
-    }) : L.intl.formatToPlainString(L.t["cNSL/j"], {
+    }) : I.intl.formatToPlainString(I.t["cNSL/j"], {
       price: g
     });
     return (0, r.jsx)(o.Button, {
@@ -75,9 +75,9 @@ let A = e => {
       disabled: t,
       onClick: e => e.stopPropagation(),
       textOptions: {
-        textOverride: null != n ? n : L.intl.string(L.t.sEAnVH)
+        textOverride: null != n ? n : I.intl.string(I.t.sEAnVH)
       },
-      subscriptionTier: I.Si.TIER_2,
+      subscriptionTier: L.Si.TIER_2,
       showGradient: true
     })
   },
@@ -91,7 +91,7 @@ let A = e => {
       onClick: e => {
         e.stopPropagation(), t(e)
       },
-      text: null != n ? n : L.intl.string(L.t.FdGl5A),
+      text: null != n ? n : I.intl.string(I.t.FdGl5A),
       fullWidth: true
     })
   },
@@ -107,7 +107,7 @@ let A = e => {
         e.stopPropagation(), t()
       },
       loading: n,
-      text: null != l ? l : L.intl.string(L.t.MAS7uK),
+      text: null != l ? l : I.intl.string(I.t.MAS7uK),
       fullWidth: true
     })
   },
@@ -122,7 +122,7 @@ let A = e => {
       onClick: e => {
         e.stopPropagation(), n(t)
       },
-      text: null != l ? l : L.intl.string(L.t.FdGl5A),
+      text: null != l ? l : I.intl.string(I.t.FdGl5A),
       fullWidth: true
     })
   },
@@ -148,9 +148,9 @@ let A = e => {
       },
       disabled: n,
       loading: l,
-      loadingStartedLabel: L.intl.string(L.t["TYw+9s"]),
-      loadingFinishedLabel: L.intl.string(L.t.Pg1UP5),
-      text: null != s ? s : L.intl.string(L.t.zp6caO),
+      loadingStartedLabel: I.intl.string(I.t["TYw+9s"]),
+      loadingFinishedLabel: I.intl.string(I.t.Pg1UP5),
+      text: null != s ? s : I.intl.string(I.t.zp6caO),
       fullWidth: true
     })
   },
@@ -165,7 +165,7 @@ let A = e => {
     } = e;
     return (0, r.jsx)(o.Button, {
       variant: "primary",
-      text: null != a ? a : L.intl.format(L.t.kAgx5L, {
+      text: null != a ? a : I.intl.format(I.t.kAgx5L, {
         orbPrice: n[0].amount,
         orbIconHook: () => (0, r.jsx)(d.Z, {
           className: B.orbIconAligned
@@ -194,7 +194,7 @@ let A = e => {
           analyticsLocations: i
         })
       },
-      "aria-label": L.intl.formatToPlainString(L.t["fNG/05"], {
+      "aria-label": I.intl.formatToPlainString(I.t["fNG/05"], {
         orbPrice: n[0].amount
       }),
       fullWidth: true
@@ -210,7 +210,7 @@ let A = e => {
       onClick: e => {
         e.stopPropagation(), t(e)
       },
-      text: null != n ? n : L.intl.string(L.t.GpnHfH),
+      text: null != n ? n : I.intl.string(I.t.GpnHfH),
       fullWidth: true
     })
   },
@@ -228,11 +228,11 @@ let A = e => {
       isPartiallyOwnedBundle: O
     } = (0, E.L)(t), S = (0, m.G1)(t), k = (0, m.rN)(t), {
       isDisabled: T
-    } = (0, v.G)(t.skuId), I = (0, m.ne)({
+    } = (0, v.G)(t.skuId), L = (0, m.ne)({
       product: t,
       isPartiallyOwnedBundle: O,
       isPurchased: _
-    }), L = (0, y.Iw)(t), B = null != L, {
+    }), I = (0, y.Iw)(t), B = null != I, {
       shouldCheckoutWithOrbs: D,
       hasSufficientOrbs: F,
       checkoutEligiblePrices: W
@@ -253,7 +253,7 @@ let A = e => {
       onClick: o,
       skuId: t.skuId,
       text: c
-    }) : !S || C || k ? !I || T ? (0, r.jsx)(N, {
+    }) : !S || C || k ? !L || T ? (0, r.jsx)(N, {
       handlePreviewButtonClick: U,
       text: c
     }) : _ ? (0, r.jsx)(R, {
@@ -286,7 +286,7 @@ let A = e => {
       analyticsLocations: V,
       selectedVariantIndex: l,
       hasDiscountOffer: B,
-      discountOfferAmount: L,
+      discountOfferAmount: I,
       text: c
     }) : (0, r.jsx)(P, {
       isClaimPremiumProductDisabled: G,

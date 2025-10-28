@@ -32,7 +32,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk421200 = require("./421200.js");
 
-function L(e) {
+function I(e) {
   let {
     tab: t,
     displayText: n,
@@ -41,9 +41,9 @@ function L(e) {
   } = e;
   return (0, r.jsx)(p.Z.Title, {
     onClick: () => i(t),
-    wrapperClassName: I.tabWrapper,
-    className: o()(I.tab, {
-      [I.selected]: l
+    wrapperClassName: L.tabWrapper,
+    className: o()(L.tab, {
+      [L.selected]: l
     }),
     children: n
   })
@@ -63,7 +63,7 @@ function B(e) {
     ("Enter" === e.key || " " === e.key) && (e.preventDefault(), m(true))
   };
   return (0, r.jsx)("div", {
-    className: I.tabWithMenuContainer,
+    className: L.tabWithMenuContainer,
     onMouseEnter: () => m(true),
     onMouseLeave: () => m(false),
     children: (0, r.jsx)(c.yRy, {
@@ -111,12 +111,12 @@ function B(e) {
           ref: f,
           onClick: () => s(t),
           onKeyDown: b,
-          wrapperClassName: I.tabWrapper,
-          className: o()(I.tab, {
-            [I.selected]: n
+          wrapperClassName: L.tabWrapper,
+          className: o()(L.tab, {
+            [L.selected]: n
           }),
           children: (0, r.jsxs)("span", {
-            className: I.tabWithChevron,
+            className: L.tabWithChevron,
             children: [i, d ? (0, r.jsx)(c.u04, {
               size: "sm",
               color: "currentColor"
@@ -183,19 +183,19 @@ function A(e) {
     theme: i,
     children: e => (0, r.jsxs)(p.Z, {
       disableDoubleClick: true,
-      className: o()(e, I.headerBar),
-      innerClassname: g ? I.headerBarInner : true,
+      className: o()(e, L.headerBar),
+      innerClassname: g ? L.headerBarInner : true,
       children: [(0, r.jsxs)(c.P3F, {
-        className: I.shopHomeLink,
+        className: L.shopHomeLink,
         onClick: () => n(y.AW.HOME),
         "aria-label": T.intl.string(T.t.pWG4ze) + " home",
         children: [(0, r.jsx)(E.Z, {
-          className: I.discordLogo
+          className: L.discordLogo
         }), (0, r.jsx)(p.Z.Title, {
           children: T.intl.string(T.t.pWG4ze)
         })]
       }), (0, r.jsx)("div", {
-        className: I.tabs,
+        className: L.tabs,
         children: A.map(e => {
           let {
             tab: l,
@@ -206,7 +206,7 @@ function A(e) {
             selected: (0, y.RE)(t) || t === l,
             displayText: i,
             handleTransition: n
-          }, l) : (0, r.jsx)(L, {
+          }, l) : (0, r.jsx)(I, {
             tab: l,
             displayText: i,
             selected: t === l,
@@ -214,12 +214,12 @@ function A(e) {
           }, l)
         })
       }), (g || R || O) && (0, r.jsxs)("div", {
-        className: I.alignedRightContent,
+        className: L.alignedRightContent,
         children: [R && (0, r.jsx)(S.Z, {
           handleTransition: n,
           selectedTab: t
         }), O && (0, r.jsx)(c.P3F, {
-          className: I.wishlistButton,
+          className: L.wishlistButton,
           onClick: Z,
           "aria-label": T.intl.string(T.t["7lZ31J"]),
           children: (0, r.jsx)(c.h_8, {
@@ -231,7 +231,7 @@ function A(e) {
           cardAlignment: b.V9.CardAlignment.END,
           ctaText: T.intl.string(T.t.VC4Mq0),
           ctaOnClick: N,
-          className: I.balanceWidgetMenu
+          className: L.balanceWidgetMenu
         })]
       })]
     })

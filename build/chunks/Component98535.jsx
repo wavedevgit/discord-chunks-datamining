@@ -42,11 +42,11 @@ function E(e) {
         i = (0, d.$2)(t) ? b.AW.ORBS : b.AW.CATALOG;
       y(t), k(!r), await s(i, l)
     }, [E, s, c]),
-    I = (0, g.FF)("CollectiblesContent"),
+    L = (0, g.FF)("CollectiblesContent"),
     {
-      searchError: L
+      searchError: I
     } = (0, p.a)();
-  return I && null != L ? (0, r.jsx)(m.Z, {}) : null != h ? (0, r.jsx)(C.Z, {
+  return L && null != I ? (0, r.jsx)(m.Z, {}) : null != h ? (0, r.jsx)(C.Z, {
     onRetry: u,
     errorMessage: h,
     errorOrigin: C.i.SHOP_PAGE

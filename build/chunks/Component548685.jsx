@@ -47,7 +47,7 @@ let R = e => {
     tab: H,
     buttonContainerClassName: M,
     orbsSupportedOnly: D
-  } = e, F = (0, a.e7)([p.default], () => p.default.getCurrentUser()), W = _.ZP.canUseCollectibles(F), V = (0, I.G)("FeedBlock"), {
+  } = e, F = (0, a.e7)([p.default], () => p.default.getCurrentUser()), W = _.ZP.canUseCollectibles(F), V = (0, L.G)("FeedBlock"), {
     sortType: U,
     setSortType: z,
     sortedItems: G,
@@ -162,7 +162,7 @@ let R = e => {
             className: n,
             children: (0, r.jsx)(O.Z, {
               skuId: null == e ? true : e.skuId,
-              prioritizedCurrency: H === L.AW.ORBS ? S.tA.ORBS : true,
+              prioritizedCurrency: H === I.AW.ORBS ? S.tA.ORBS : true,
               onClickAnalytics: (0, S.wO)(e, H, en)
             })
           }) : (0, r.jsx)(x.Z, {

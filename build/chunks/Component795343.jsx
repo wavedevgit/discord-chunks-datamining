@@ -35,8 +35,8 @@ function k(e) {
     isFetchingCategories: n,
     scrollerRef: i,
     tab: k
-  } = e, T = (0, d.sp)(), I = null != (t = null == T ? true : T.sessionId) ? t : "", {
-    noCache: L,
+  } = e, T = (0, d.sp)(), L = null != (t = null == T ? true : T.sessionId) ? t : "", {
+    noCache: I,
     includeUnpublished: B
   } = (0, O.Z)(), A = (0, s.e7)([c.default], () => c.default.getCurrentUser()), {
     skus: P,
@@ -56,13 +56,13 @@ function k(e) {
     F = l.useMemo(() => D(w), [D, w]);
   l.useEffect(() => {
     n || (0, _.n)({
-      sessionId: I,
+      sessionId: L,
       checkpoint: _.a.SHOP_RENDERED,
       tab: k,
       unpublishedCategoriesShown: B,
-      cacheDisabled: L
+      cacheDisabled: I
     })
-  }, [I, B, L, n, k]);
+  }, [L, B, I, n, k]);
   let W = l.useRef(null),
     {
       setQueryPageSize: V,

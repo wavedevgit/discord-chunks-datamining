@@ -2,7 +2,7 @@
 /** chunk id: 193227, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => I
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -75,7 +75,7 @@ function T(e) {
   })
 }
 
-function I(e) {
+function L(e) {
   let {
     category: t
   } = e, [n, i] = l.useState(false), o = (0, s.O)(e => {
@@ -92,7 +92,7 @@ function I(e) {
   })
 }
 
-function L(e) {
+function I(e) {
   var t;
   let {
     sortedCategories: n,
@@ -139,7 +139,7 @@ function L(e) {
         newValue: {
           categoryPosition: t
         },
-        children: (0, r.jsx)(I, {
+        children: (0, r.jsx)(L, {
           category: e
         })
       })

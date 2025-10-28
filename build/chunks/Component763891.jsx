@@ -49,7 +49,7 @@ function R(e) {
   } = (0, x.Z)(), F = (0, o.e7)([u.default], () => u.default.getCurrentUser()), W = (0, o.e7)([p.Z], () => p.Z.productsWithVariantsAsGroup), [V, U] = l.useState(1), z = (0, c.Fg)(), G = (0, s.ap)(z), [K, Y, q] = l.useMemo(() => {
     switch (Z) {
       case O.AW.AVATAR_DECORATIONS:
-        return [y.intl.string(y.t.dRZYNE), G ? L.Z : I.Z, i.Z.AVATAR_DECORATION];
+        return [y.intl.string(y.t.dRZYNE), G ? I.Z : L.Z, i.Z.AVATAR_DECORATION];
       case O.AW.PROFILE_EFFECTS:
         return [y.intl.string(y.t["1cNjtx"]), G ? N.Z : P.Z, i.Z.PROFILE_EFFECT];
       case O.AW.NAMEPLATES:

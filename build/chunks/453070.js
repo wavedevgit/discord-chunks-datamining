@@ -114,14 +114,7 @@ let v = e => {
       }
     }, [t, n, i, o, s, u, d])
   },
-  S = e => {
-    let t = (0, i.e7)([d.default], () => d.default.getCurrentUser());
-    return (0, i.e7)([g.Z], () => {
-      for (let n of g.Z.getAllStickersIterator())
-        if ((0, p.kl)(n, t, e)) returntrue;
-      returnfalse
-    }, [t, e])
-  },
+  S = e => true,
   A = () => {
     Chunk647438.useEffect(() => {
       (0, Chunk268350.$p)()

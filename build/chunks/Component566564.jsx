@@ -31,7 +31,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk310582 = require("./310582.js");
-let L = e => {
+let I = e => {
     var t;
     let {
       handleTransition: n,
@@ -41,7 +41,7 @@ let L = e => {
     } = e, {
       noCache: u,
       includeUnpublished: h
-    } = (0, _.Z)(), [S, k] = l.useState(false), L = (0, d.sp)(), B = null != (t = null == L ? true : L.sessionId) ? t : "";
+    } = (0, _.Z)(), [S, k] = l.useState(false), I = (0, d.sp)(), B = null != (t = null == I ? true : I.sessionId) ? t : "";
     l.useEffect(() => {
       (0, f.n)({
         sessionId: B,
@@ -80,7 +80,7 @@ let L = e => {
       errorOrigin: C.i.SHOP_PAGE,
       errorMessage: P.message
     }) : A || 0 === N.length ? (0, r.jsxs)("div", {
-      className: o()(I.loadingContainer, I.feedContent),
+      className: o()(L.loadingContainer, L.feedContent),
       children: [(0, r.jsx)(E.Z, {
         isLoading: A,
         handleTransition: n,
@@ -123,7 +123,7 @@ let L = e => {
               isLoading: A || a,
               numVisibleItems: i,
               sortedSkuIds: p,
-              buttonContainerClassName: (null == t ? true : t.type) === s.z.IMMERSIVE_BANNER ? I.feedblockInteractiveBackground : true,
+              buttonContainerClassName: (null == t ? true : t.type) === s.z.IMMERSIVE_BANNER ? L.feedblockInteractiveBackground : true,
               prioritizeUserDiscounts: c === j.AW.HOME,
               tab: c,
               orbsSupportedOnly: c === j.AW.ORBS
@@ -161,8 +161,8 @@ let L = e => {
         return (0, r.jsx)(g.g6, {
           blockType: e.type,
           children: (0, r.jsx)("div", {
-            className: o()(I.blockContainer, I.feedContent, {
-              [I.skipPadding]: 0 === l || d
+            className: o()(L.blockContainer, L.feedContent, {
+              [L.skipPadding]: 0 === l || d
             }),
             children: u
           }, l)
@@ -191,20 +191,20 @@ let L = e => {
         }
       }
     }, [o, f, C, m]), (0, r.jsx)(a.Den, {
-      className: I.shopScroll,
+      className: L.shopScroll,
       ref: o,
       onScroll: s,
       children: (0, r.jsxs)("div", {
-        className: I.shop,
+        className: L.shop,
         children: [(0, r.jsxs)("div", {
-          className: I.mainContent,
-          children: [(0, r.jsx)(L, {
+          className: L.mainContent,
+          children: [(0, r.jsx)(I, {
             handleTransition: t,
             numVisibleItems: f,
             isFetchingCategories: g,
             tab: n
           }), n !== j.AW.CATALOG && f >= 36 && (0, r.jsxs)("div", {
-            className: I.endOfFeed,
+            className: L.endOfFeed,
             children: [(0, r.jsx)(a.Heading, {
               variant: "heading-md/semibold",
               children: T.intl.string(T.t.Yr70c4)

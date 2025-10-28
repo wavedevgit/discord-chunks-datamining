@@ -97,7 +97,7 @@ let D = e => {
         return null == (e = E.Z.getCategory(q)) ? true : e.name
       }),
       [X, $] = l.useState();
-    (0, L.Kp)();
+    (0, I.Kp)();
     let ee = l.useCallback((e, t) => {
         $(e), J(t)
       }, []),
@@ -152,7 +152,7 @@ let D = e => {
                   [H.in]: en === R.f7.IN,
                   [H.out]: en === R.f7.OUT
                 }),
-                children: (0, r.jsx)(I.Z, {
+                children: (0, r.jsx)(L.Z, {
                   tab: et,
                   refreshCategories: K,
                   transitionToTab: er,

@@ -35,8 +35,8 @@ let j = Chunk647438.memo(function(e) {
       hideVariantSwitcher: j,
       hidePrice: k,
       hidePrimaryCTA: T,
-      hideSecondaryCTA: I,
-      badgeOverride: L,
+      hideSecondaryCTA: L,
+      badgeOverride: I,
       onClickCard: B,
       onClickPrimaryCTA: A,
       onClickSecondaryCTA: P,
@@ -55,7 +55,7 @@ let j = Chunk647438.memo(function(e) {
       isHoveringOrFocusing: q
     } = (0, d.Z)(Y), {
       handleCardVisibilityChange: J
-    } = (0, p.E)(t.skuId, G === S.AW.CATALOG ? "full" : G), Q = (0, b.J7)(t, u.Z.COLLECTIBLES_SHOP_CARD, U), X = t.type === s.Z.VARIANTS_GROUP && !j, $ = !T || !I, ee = !k || X, et = $ || X;
+    } = (0, p.E)(t.skuId, G === S.AW.CATALOG ? "full" : G), Q = (0, b.J7)(t, u.Z.COLLECTIBLES_SHOP_CARD, U), X = t.type === s.Z.VARIANTS_GROUP && !j, $ = !T || !L, ee = !k || X, et = $ || X;
     return (0, r.jsx)(a.$, {
       innerRef: Y,
       onChange: J,
@@ -64,7 +64,9 @@ let j = Chunk647438.memo(function(e) {
         ref: Y,
         onClick: null != B ? B : Q,
         "aria-label": K,
-        className: o()(W, y.productCardContainer),
+        className: o()(W, y.productCardContainer, {
+          [y.hovered]: q
+        }),
         onFocus: () => null == Z ? true : Z(t.skuId),
         onBlur: () => null == w ? true : w(t.skuId),
         onMouseEnter: () => null == N ? true : N(t.skuId),
@@ -83,7 +85,7 @@ let j = Chunk647438.memo(function(e) {
             className: y.headerContainer,
             children: [(0, r.jsx)(f.Z, {
               skuId: t.skuId,
-              badgeOverride: L,
+              badgeOverride: I,
               className: F,
               prioritizedCurrency: V
             }), !n && (0, r.jsx)(x.Z, {
@@ -103,20 +105,22 @@ let j = Chunk647438.memo(function(e) {
                 }, D)
               }), ee && (0, r.jsxs)("div", {
                 className: o()(y.footerInfoContainer, {
-                  [y.footerHideOnHover]: et
+                  [y.removePaddingOnHover]: !X
                 }),
-                children: [!k && (0, r.jsx)(h.Z, {
-                  skuId: t.skuId,
-                  prioritizedCurrency: V
+                children: [!k && (0, r.jsx)("div", {
+                  className: y.priceContainer,
+                  "aria-hidden": true,
+                  children: (0, r.jsx)(h.Z, {
+                    skuId: t.skuId,
+                    prioritizedCurrency: V
+                  })
                 }), X && (0, r.jsx)(E.Z, {
                   skuId: t.skuId,
-                  previewOnly: true
+                  isCollapsed: !q
                 })]
-              }), et && (0, r.jsxs)("div", {
-                className: o()(y.footerInteractibleContainer, y.footerShowOnHover),
-                children: [X && (0, r.jsx)(E.Z, {
-                  skuId: t.skuId
-                }), $ && (0, r.jsxs)(c.ButtonGroup, {
+              }), $ && (0, r.jsx)("div", {
+                className: y.footerButtonContainer,
+                children: (0, r.jsxs)(c.ButtonGroup, {
                   wrap: false,
                   fullWidth: true,
                   children: [!T && (0, r.jsx)(_.Z, {
@@ -126,7 +130,7 @@ let j = Chunk647438.memo(function(e) {
                     text: H,
                     prioritizedCurrency: V,
                     onClickAnalytics: U
-                  }), !I && (0, r.jsx)(m.Z, {
+                  }), !L && (0, r.jsx)(m.Z, {
                     skuId: t.skuId,
                     cardRef: Y,
                     onClick: P,
@@ -134,7 +138,7 @@ let j = Chunk647438.memo(function(e) {
                     prioritizedCurrency: V,
                     onClickAnalytics: U
                   })]
-                })]
+                })
               })]
             })]
           })]

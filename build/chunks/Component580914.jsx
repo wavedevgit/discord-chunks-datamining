@@ -223,10 +223,10 @@ let W = (0, Chunk884697.IC)(90),
                   pageSection: "top 4",
                   categoryPosition: 0
                 },
-                children: eO && (null == e ? true : e.skuId) != null ? (0, r.jsx)(I.Z, {
+                children: eO && (null == e ? true : e.skuId) != null ? (0, r.jsx)(L.Z, {
                   skuId: null == e ? true : e.skuId,
-                  prioritizedCurrency: G === H.AW.ORBS ? L.tA.ORBS : true,
-                  onClickAnalytics: (0, L.wO)(e, G, $)
+                  prioritizedCurrency: G === H.AW.ORBS ? I.tA.ORBS : true,
+                  onClickAnalytics: (0, I.wO)(e, G, $)
                 }, e.skuId) : (0, r.jsx)(T.Z, {
                   product: e,
                   category: n,
