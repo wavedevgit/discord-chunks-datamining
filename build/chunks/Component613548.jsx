@@ -76,11 +76,11 @@ function R(e) {
     voiceParticipantsHidden: I.Z.getVoiceParticipantsHidden(s),
     userParticipantCount: I.Z.getUserParticipantCount(s),
     participantsListOpen: I.Z.getParticipantsListOpen(s)
-  }), [s]), A = t.isGuildVoice() && !n, {
+  }), [s]), A = t.isGuildVoiceOrThread() && !n, {
     hasParticipantsPanel: R
   } = (0, T.Z)({
     location: "ChannelCallHeaderToolbar"
-  }), L = !P && R && (t.isGuildVoice() || t.isGroupDM()), {
+  }), L = !P && R && (t.isGuildVoiceOrThread() || t.isGroupDM()), {
     enabled: D,
     inInbox: k
   } = C.Z.useExperiment({

@@ -207,7 +207,7 @@ function es(e) {
     channelId: t,
     messageId: n
   } = e, r = ea(), i = E.Z.getChannel(t);
-  return null == t || null == n || (null == i ? true : i.type) !== C.d4z.GUILD_VOICE && (null == i ? true : i.type) !== C.d4z.GUILD_STAGE_VOICE || F[t] ? r : (V[t] = false, F[t] = true, true)
+  return null != t && null != n && (null == i ? true : i.isGuildVocalOrThread()) && !F[t] ? (V[t] = false, F[t] = true, true) : r
 }
 
 function el(e) {
@@ -499,7 +499,7 @@ function ek(e) {
 
 function ej(e) {
   var t;
-  return !!(null == (t = E.Z.getChannel(e)) ? true : t.isGuildVocal())
+  return !!(null == (t = E.Z.getChannel(e)) ? true : t.isGuildVocalOrThread())
 }
 class eU extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
@@ -584,8 +584,8 @@ class eU extends(r = Chunk442837.ZP.PersistedStore) {
     return null != (n = null == (t = G[e]) ? true : t[r]) ? n : i ? C.AEg.NO_CHAT : C.AEg.NORMAL
   }
   getChatOpen(e) {
-    var t;
-    return null != (t = F[e]) && t
+    var t, n, r;
+    return null != (r = null != (n = F[e]) ? n : null == (t = E.Z.getChannel(e)) ? true : t.isVocalThread()) && r
   }
   getAllChatOpen() {
     return F

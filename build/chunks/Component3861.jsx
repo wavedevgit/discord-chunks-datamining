@@ -51,7 +51,7 @@ let _ = (0, Chunk112724.Z)(e => {
   if ((null == R ? true : R.channelId) === E.id) return (0, i.jsx)(h.Z, {
     height: N
   });
-  if ((null == E ? true : E.isGuildVocal()) && !I) return (0, i.jsx)(p.Z, {
+  if ((null == E ? true : E.isGuildVocalOrThread()) && !I) return (0, i.jsx)(p.Z, {
     channel: E,
     participants: t,
     hasConnectPermission: S

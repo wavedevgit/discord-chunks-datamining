@@ -283,10 +283,11 @@ let k = Chunk647438.memo(function(e) {
       })
     }), (0, r.jsx)(I.Z, {
       channel: t,
-      collapsed: !c,
+      collapsed: !c && 1 !== k.length,
       collapsedMax: 6,
       voiceStates: k,
-      location: P.Sbl.GUILD_CHANNEL_LIST
+      location: P.Sbl.GUILD_CHANNEL_LIST,
+      isThread: true
     })]
   })
 })

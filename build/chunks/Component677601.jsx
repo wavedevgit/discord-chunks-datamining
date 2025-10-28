@@ -259,7 +259,7 @@ class ez extends Chunk647438.PureComponent {
       renderBottomLeft: this.renderBottomLeft,
       renderBottomCenter: this.renderBottomCenter,
       renderBottomRight: this.renderBottomRight,
-      renderChatToasts: p.isGuildVoice() ? this.renderChatToasts : true,
+      renderChatToasts: p.isGuildVoiceOrThread() ? this.renderChatToasts : true,
       renderVoiceChannelEffects: this.renderVoiceChannelEffects
     }, e), {
       screenMessage: this.screenMessage,

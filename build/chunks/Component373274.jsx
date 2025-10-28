@@ -489,7 +489,7 @@ class eh extends(r = Chunk647438.PureComponent) {
         } = this.props;
         s += ef(t);
         let n = r[u.id];
-        null != n && n.length > 0 && (s += l === e ? 32 * n.length : 32, s += el.cx)
+        null != n && n.length > 0 && (s += l === e ? 32 * n.length : 32)
       }
       if (u.record.isGuildVoice()) {
         let e = r[u.id];
