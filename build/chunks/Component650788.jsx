@@ -45,7 +45,7 @@ function E(e) {
   } = e, {
     loaded: o,
     subscriptionsSettings: l
-  } = (0, h.H)(r), s = (0, c.e7)([g.Z], () => g.Z.getGuild(r)), {
+  } = (0, O.H)(r), s = (0, c.e7)([g.Z], () => g.Z.getGuild(r)), {
     selectedTab: d,
     isPhantomPreview: u,
     categoryTabs: C
@@ -82,16 +82,16 @@ function V(e) {
   let {
     guildId: t,
     productId: r
-  } = e, o = (0, c.e7)([p.Z], () => p.Z.isConnected()), h = (0, c.e7)([g.Z], () => g.Z.getGuild(t)), {
+  } = e, o = (0, c.e7)([p.Z], () => p.Z.isConnected()), O = (0, c.e7)([g.Z], () => g.Z.getGuild(t)), {
     shouldHideGuildPurchaseEntryPoints: x,
     restrictionsLoading: v
   } = (0, C.uP)(t), {
     selectedTab: y,
     isPhantomPreview: _,
     categoryTabs: w
-  } = (0, m.m)(), P = o && (null == h || 0 === w.length && !_ || x && !v);
+  } = (0, m.m)(), P = o && (null == O || 0 === w.length && !_ || x && !v);
   return i.useEffect(() => {
-    P && (0, O.M)(t, D.oC.GUILD_SHOP)
+    P && (0, h.M)(t, D.oC.GUILD_SHOP)
   }, [t, P]), (0, d.Z)({
     type: T.n.PAGE,
     name: s.ImpressionNames.GUILD_SHOP_PAGE,

@@ -85,7 +85,7 @@ function _(e) {
     setSelectedTab: o,
     categoryTabs: _,
     handlePreviewDismiss: w
-  } = (0, p.m)(), P = "false" === s.K.get(h.Hr, "false"), L = (0, l.e7)([a.Z], () => a.Z.useReducedMotion), S = _.map(e => {
+  } = (0, p.m)(), P = "false" === s.K.get(O.Hr, "false"), L = (0, l.e7)([a.Z], () => a.Z.useReducedMotion), S = _.map(e => {
     switch (e) {
       case f.y.GUILD_PRODUCTS:
         return (0, n.jsx)(y, {
@@ -106,7 +106,7 @@ function _(e) {
           }),
           title: m.intl.string(m.t["KzCF/6"]),
           body: r ? m.intl.string(m.t["jqz+ly"]) : m.intl.format(m.t.ycs4oO, {
-            openRoleSubPage: () => (0, u.uL)(O.Z5c.CHANNEL(t.id, x.oC.ROLE_SUBSCRIPTIONS))
+            openRoleSubPage: () => (0, u.uL)(h.Z5c.CHANNEL(t.id, x.oC.ROLE_SUBSCRIPTIONS))
           }),
           disabled: !r,
           selected: i === f.y.GUILD_ROLE_SUBSCRIPTIONS,
@@ -128,7 +128,7 @@ function _(e) {
           body: m.intl.string(m.t["827i8I"]),
           selected: i === f.y.GUILD_PRODUCTS_PREVIEW,
           onClick: () => {
-            o(f.y.GUILD_PRODUCTS_PREVIEW), s.K.set(h.Hr, "true")
+            o(f.y.GUILD_PRODUCTS_PREVIEW), s.K.set(O.Hr, "true")
           },
           onPreviewDismiss: w,
           isNew: P

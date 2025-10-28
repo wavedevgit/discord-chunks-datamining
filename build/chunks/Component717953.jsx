@@ -39,7 +39,7 @@ function v() {
       height: "60",
       rx: "8",
       stroke: "url(#paint0_linear_1368_16544)",
-      "stroke-width": "2"
+      strokeWidth: "2"
     }), (0, Chunk951288.jsx)("defs", {
       children: (0, Chunk951288.jsxs)("linearGradient", {
         id: "paint0_linear_1368_16544",
@@ -49,10 +49,10 @@ function v() {
         y2: "65.75",
         gradientUnits: "userSpaceOnUse",
         children: [(0, Chunk951288.jsx)("stop", {
-          "stop-color": "#B473F5"
+          stopColor: "#B473F5"
         }), (0, Chunk951288.jsx)("stop", {
           offset: "1",
-          "stop-color": "#E292AA"
+          stopColor: "#E292AA"
         })]
       })
     })]

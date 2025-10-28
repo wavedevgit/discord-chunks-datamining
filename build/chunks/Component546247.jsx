@@ -30,7 +30,7 @@ let o = Chunk998502.ZP.getEnableHardwareAcceleration() ? function(e) {
       width: "100%"
     },
     children: [(0, Chunk951288.jsxs)("g", {
-      "clip-path": "url(#a)",
+      clipPath: "url(#a)",
       children: [(0, Chunk951288.jsx)("path", {
         fill: "#000",
         d: "M1000 0H0v1000h1000V0Z"
@@ -52,7 +52,7 @@ let o = Chunk998502.ZP.getEnableHardwareAcceleration() ? function(e) {
         filter: "url(#d)",
         children: (0, Chunk951288.jsx)("path", {
           stroke: "#5865F2",
-          "stroke-width": "14.648",
+          strokeWidth: "14.648",
           d: "M500 1664.5c368.098 0 666.5-298.4 666.5-666.5 0-368.098-298.402-666.5-666.5-666.5S-166.5 629.902-166.5 998c0 368.1 298.402 666.5 666.5 666.5Z"
         })
       }), (0, Chunk951288.jsx)("g", {
@@ -69,10 +69,10 @@ let o = Chunk998502.ZP.getEnableHardwareAcceleration() ? function(e) {
         height: "2182.48",
         x: "-376.941",
         y: "-16.241",
-        "color-interpolation-filters": "sRGB",
+        colorInterpolationFilters: "sRGB",
         filterUnits: "userSpaceOnUse",
         children: [(0, Chunk951288.jsx)("feFlood", {
-          "flood-opacity": "0",
+          floodOpacity: "0",
           result: "BackgroundImageFix"
         }), (0, Chunk951288.jsx)("feBlend", {
           in: "SourceGraphic",
@@ -88,10 +88,10 @@ let o = Chunk998502.ZP.getEnableHardwareAcceleration() ? function(e) {
         height: "1389.94",
         x: "-113.969",
         y: "331.031",
-        "color-interpolation-filters": "sRGB",
+        colorInterpolationFilters: "sRGB",
         filterUnits: "userSpaceOnUse",
         children: [(0, Chunk951288.jsx)("feFlood", {
-          "flood-opacity": "0",
+          floodOpacity: "0",
           result: "BackgroundImageFix"
         }), (0, Chunk951288.jsx)("feBlend", {
           in: "SourceGraphic",
@@ -107,10 +107,10 @@ let o = Chunk998502.ZP.getEnableHardwareAcceleration() ? function(e) {
         height: "1738.27",
         x: "-369.137",
         y: "128.863",
-        "color-interpolation-filters": "sRGB",
+        colorInterpolationFilters: "sRGB",
         filterUnits: "userSpaceOnUse",
         children: [(0, Chunk951288.jsx)("feFlood", {
-          "flood-opacity": "0",
+          floodOpacity: "0",
           result: "BackgroundImageFix"
         }), (0, Chunk951288.jsx)("feBlend", {
           in: "SourceGraphic",
@@ -126,10 +126,10 @@ let o = Chunk998502.ZP.getEnableHardwareAcceleration() ? function(e) {
         height: "1234.59",
         x: "-143.797",
         y: "486.203",
-        "color-interpolation-filters": "sRGB",
+        colorInterpolationFilters: "sRGB",
         filterUnits: "userSpaceOnUse",
         children: [(0, Chunk951288.jsx)("feFlood", {
-          "flood-opacity": "0",
+          floodOpacity: "0",
           result: "BackgroundImageFix"
         }), (0, Chunk951288.jsx)("feBlend", {
           in: "SourceGraphic",

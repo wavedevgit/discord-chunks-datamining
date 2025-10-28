@@ -1,7 +1,7 @@
 /** Chunk was on 78431 **/
 /** chunk id: 175390, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -53,7 +53,7 @@ function g() {
   })
 }
 
-function h() {
+function O() {
   return (0, Chunk951288.jsxs)("div", {
     className: Chunk907333.learnMoreTipContainer,
     children: [(0, Chunk951288.jsx)(Chunk481060.d3s, {
@@ -70,7 +70,7 @@ function h() {
   })
 }
 
-function O(e) {
+function h(e) {
   let {
     guildId: t
   } = e;
@@ -82,6 +82,6 @@ function O(e) {
         guildId: t,
         showCTA: true
       })]
-    }), (0, n.jsx)(h, {})]
+    }), (0, n.jsx)(O, {})]
   })
 }

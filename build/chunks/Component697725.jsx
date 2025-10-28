@@ -99,9 +99,9 @@ function d(e) {
         width: "24",
         height: "24",
         filterUnits: "userSpaceOnUse",
-        "color-interpolation-filters": "sRGB",
+        colorInterpolationFilters: "sRGB",
         children: [(0, r.jsx)("feFlood", {
-          "flood-opacity": "0",
+          floodOpacity: "0",
           result: "BackgroundImageFix"
         }), (0, r.jsx)("feColorMatrix", {
           in: "SourceAlpha",

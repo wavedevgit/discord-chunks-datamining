@@ -252,7 +252,7 @@ function v(e) {
       }) : null, _ && (0, r.jsx)("path", {
         d: B,
         stroke: s.Z.BRAND_500,
-        "stroke-width": E,
+        strokeWidth: E,
         className: u.highlight,
         mask: "url(#".concat(x, ")")
       }), (0, r.jsx)("foreignObject", {

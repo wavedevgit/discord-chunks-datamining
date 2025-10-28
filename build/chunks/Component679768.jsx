@@ -46,13 +46,13 @@ function i(e) {
         y2: "2.1675",
         gradientUnits: "userSpaceOnUse",
         children: [(0, r.jsx)("stop", {
-          "stop-color": "#8547C6"
+          stopColor: "#8547C6"
         }), (0, r.jsx)("stop", {
           offset: "0.52899",
-          "stop-color": "#B845C1"
+          stopColor: "#B845C1"
         }), (0, r.jsx)("stop", {
           offset: "1",
-          "stop-color": "#AB5D8A"
+          stopColor: "#AB5D8A"
         })]
       })
     })]

@@ -18,7 +18,7 @@ let c = Object.freeze({
   u = Object.freeze({
     opacity: 0,
     height: 8,
-    x: false
+    transform: "translateX(-4px) translateZ(0)"
   });
 
 function d(e) {
@@ -33,7 +33,7 @@ function d(e) {
   let _ = {
       opacity: 1,
       height: t ? 40 : n ? 20 : 8,
-      x: 0
+      transform: "translateX(0) translateZ(0)"
     },
     p = (0, s.Yzy)(t || n || i, {
       config: c,

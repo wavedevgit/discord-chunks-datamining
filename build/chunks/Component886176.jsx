@@ -79,7 +79,7 @@ function d(e) {
     viewBox: "0 0 20 20",
     fill: "none",
     children: [(0, r.jsxs)("g", {
-      "clip-path": "url(#clip0_2645_182555)",
+      clipPath: "url(#clip0_2645_182555)",
       children: [(0, r.jsx)("path", {
         fillRule: "evenodd",
         clipRule: "evenodd",
@@ -115,7 +115,7 @@ function f(e) {
     viewBox: "0 0 20 20",
     fill: "none",
     children: [(0, r.jsxs)("g", {
-      "clip-path": "url(#clip0_2645_182555)",
+      clipPath: "url(#clip0_2645_182555)",
       children: [(0, r.jsx)("path", {
         fillRule: "evenodd",
         clipRule: "evenodd",

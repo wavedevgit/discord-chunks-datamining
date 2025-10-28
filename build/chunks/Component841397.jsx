@@ -37,7 +37,7 @@ let a = Chunk998502.ZP.getEnableHardwareAcceleration() ? function() {
       width: "100%"
     },
     children: [(0, Chunk951288.jsxs)("g", {
-      "clip-path": "url(#a)",
+      clipPath: "url(#a)",
       children: [(0, Chunk951288.jsx)("path", {
         fill: "#000",
         d: "M1000 0H0v1000h1000V0Z"
@@ -66,10 +66,10 @@ let a = Chunk998502.ZP.getEnableHardwareAcceleration() ? function() {
         height: "1926",
         x: "-890",
         y: "-883",
-        "color-interpolation-filters": "sRGB",
+        colorInterpolationFilters: "sRGB",
         filterUnits: "userSpaceOnUse",
         children: [(0, Chunk951288.jsx)("feFlood", {
-          "flood-opacity": "0",
+          floodOpacity: "0",
           result: "BackgroundImageFix"
         }), (0, Chunk951288.jsx)("feBlend", {
           in: "SourceGraphic",
@@ -85,10 +85,10 @@ let a = Chunk998502.ZP.getEnableHardwareAcceleration() ? function() {
         height: "928.8",
         x: "-429",
         y: "-518",
-        "color-interpolation-filters": "sRGB",
+        colorInterpolationFilters: "sRGB",
         filterUnits: "userSpaceOnUse",
         children: [(0, Chunk951288.jsx)("feFlood", {
-          "flood-opacity": "0",
+          floodOpacity: "0",
           result: "BackgroundImageFix"
         }), (0, Chunk951288.jsx)("feBlend", {
           in: "SourceGraphic",
