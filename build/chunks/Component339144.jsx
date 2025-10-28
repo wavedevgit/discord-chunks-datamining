@@ -145,7 +145,7 @@ let Z = Chunk647438.memo(function(e) {
         hasAlreadyLinked: en,
         connectionApp: er
       } = (0, g.F)(F, {
-        allowedFlows: [g.r.RPC]
+        allowedFlows: [g.r.RPC, g.r.WEB]
       }),
       ei = C.Z.useConfig({
         location: "ActivityActions"

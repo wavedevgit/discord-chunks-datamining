@@ -11,7 +11,7 @@ var Chunk115434 = require("./115434.js"),
   Chunk317381 = require("./317381.js"),
   Chunk416587 = require("./416587.js"),
   Chunk874703 = require("./874703.js"),
-  Chunk75459 = require("./75459.js");
+  Chunk187232 = require("./187232.js");
 
 function d(e) {
   switch (e) {
@@ -22,7 +22,7 @@ function d(e) {
     case i.z.GIFTING_PROMOTION_DESKTOP_FIRST_TIME_COACHMARK:
     case i.z.GIFTING_PROMOTION_MOBILE_FIRST_TIME_HALFSHEET:
     case i.z.GIFTING_PROMOTION_REMINDER:
-      return u.D_;
+      return u.GV;
     case i.z.ACTIVITIES_VOICE_LAUNCHER_BADGE:
       return (0, l.O)({
         storeState: s.ZP.getState(),

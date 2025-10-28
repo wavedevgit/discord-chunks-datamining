@@ -501,7 +501,7 @@ let eZ = (0, Chunk730749.Z)(function(e) {
       connectionApp: Q,
       startAuthorization: ed
     } = (0, P.F)(y, {
-      allowedFlows: [P.r.RPC]
+      allowedFlows: [P.r.RPC, P.r.WEB]
     }),
     {
       isQuestBarEmpty: eh,

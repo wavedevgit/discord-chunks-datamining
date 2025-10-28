@@ -2,7 +2,8 @@
 /** chunk id: 187232, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  p: () => N
+  GV: () => N,
+  py: () => R
 });
 var Chunk242433 = require("./242433.js"),
   Chunk100527 = require("./100527.js"),
@@ -87,7 +88,8 @@ let b = {
   C = {
     gradient: ["rgb(35, 86, 53)", "rgb(3, 15, 40)"]
   },
-  N = {
+  N = 4,
+  R = {
     variants: [{
       name: () => Chunk388032.intl.string(Chunk388032.t["9PzTtM"]),
       variants: [b, y]
@@ -136,10 +138,10 @@ let b = {
         })
       }
     },
-    dismissibleContentVersion: 4,
+    dismissibleContentVersion: N,
     firstTimeNotice: {
       getImageUrl: (e, t) => t ? _.Z : f.Z,
-      title: () => Chunk388032.intl.string(Chunk388032.t.UPFiIi),
+      title: () => Chunk388032.intl.string(Chunk388032.t.MzahXU),
       description: () => Chunk388032.intl.string(Chunk388032.t["F/5kFJ"]),
       cta: () => Chunk388032.intl.string(Chunk388032.t.RzWDqY),
       analyticsLocation: Chunk100527.Z.GIFTING_PROMOTION_COACHMARK,
