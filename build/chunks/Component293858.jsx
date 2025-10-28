@@ -34,8 +34,8 @@ function y(e) {
       continueSessionToInitialStep: w
     } = e,
     {
-      activeSubscription: I,
-      paymentSources: O,
+      activeSubscription: O,
+      paymentSources: I,
       paymentSourceId: P,
       selectedPlan: E,
       selectedSkuId: T,
@@ -61,7 +61,7 @@ function y(e) {
     K = (0, d.Z)(),
     Y = (0, C.a5)(E),
     V = (0, C.tK)(null == D ? true : D.skuId),
-    q = (0, g.$)(O, P),
+    q = (0, g.$)(I, P),
     J = Z && null != D && Y;
   l()(null != E, "Expected plan to selected"), l()(null != T, "Expected selectedSkuId"), l()(null != k, "Step should be set");
   let Q = i.useCallback(() => {
@@ -88,7 +88,7 @@ function y(e) {
     } : {
       followupSKUInfo: S,
       startingPremiumSubscriptionPlanId: A.current,
-      isDowngrade: null != I && (0, p.GY)(I, E.id, a)
+      isDowngrade: null != O && (0, p.GY)(O, E.id, a)
     };
     t = (0, r.jsx)(c.ZP, function(e) {
       for (var t = 1; t < arguments.length; t++) {

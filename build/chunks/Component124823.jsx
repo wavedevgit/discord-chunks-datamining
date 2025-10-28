@@ -93,7 +93,7 @@ function w(e) {
             })
           }), (0, r.jsxs)("div", {
             className: T.header,
-            children: [(0, r.jsx)(x.Z, {
+            children: [(0, r.jsx)(v.Z, {
               user: n,
               displayProfile: D,
               themeType: Z.l.SIDEBAR,
@@ -122,7 +122,7 @@ function w(e) {
               children: [(0, r.jsx)(O.Z, {
                 heading: P.intl.string(P.t["61W33d"]),
                 headingColor: "header-primary",
-                children: (0, r.jsx)(v.Z, {
+                children: (0, r.jsx)(j.Z, {
                   userBio: null == D ? true : D.bio,
                   userId: n.id,
                   animateOnHoverOrFocusOnly: true,
@@ -131,7 +131,7 @@ function w(e) {
               }), (0, r.jsx)(O.Z, {
                 heading: P.intl.string(P.t["A//N4k"]),
                 headingColor: "header-primary",
-                children: (0, r.jsx)(j.Z, {
+                children: (0, r.jsx)(x.Z, {
                   userId: n.id
                 })
               })]

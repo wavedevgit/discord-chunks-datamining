@@ -58,7 +58,7 @@ function w(e) {
     channel: s,
     status: d,
     activities: u
-  } = e, p = (0, a.e7)([y.Z], () => null != y.Z.getTypingUsers(s.id)[t.id]), f = (0, a.e7)([x.default], () => x.default.getCurrentUser()), v = (0, a.e7)([b.Z], () => b.Z.isMobileOnline(t.id)), O = (0, a.e7)([_.Z], () => _.Z.getNickname(t.id)), I = (0, h.Z)(t.id), P = i.useRef(null), N = e => {
+  } = e, p = (0, a.e7)([y.Z], () => null != y.Z.getTypingUsers(s.id)[t.id]), f = (0, a.e7)([v.default], () => v.default.getCurrentUser()), j = (0, a.e7)([b.Z], () => b.Z.isMobileOnline(t.id)), O = (0, a.e7)([_.Z], () => _.Z.getNickname(t.id)), I = (0, h.Z)(t.id), P = i.useRef(null), N = e => {
     (0, o.jW)(e, async () => {
       let {
         default: e
@@ -85,9 +85,9 @@ function w(e) {
         decoration: "never"
       })),
       n = "<@".concat(t.id, ">");
-    j.S.dispatch(E.CkL.TEXTAREA_FOCUS, {
+    x.S.dispatch(E.CkL.TEXTAREA_FOCUS, {
       channelId: s.id
-    }), j.S.dispatchToLastSubscribed(E.CkL.INSERT_TEXT, {
+    }), x.S.dispatchToLastSubscribed(E.CkL.INSERT_TEXT, {
       plainText: e,
       rawText: n
     }), c.Z.startTyping(s.id)
@@ -136,7 +136,7 @@ function w(e) {
         channel: s,
         onContextMenu: N,
         selected: D,
-        isMobile: v,
+        isMobile: j,
         nick: O,
         nameplate: A,
         onClick: e => {
@@ -163,16 +163,16 @@ function A(e, t) {
 function D(e) {
   let {
     channel: t
-  } = e, n = x.default.getCurrentUser(), l = null == n ? true : n.isStaff(), {
+  } = e, n = v.default.getCurrentUser(), l = null == n ? true : n.isStaff(), {
     analyticsLocations: o
   } = (0, u.ZP)(d.Z.MEMBER_LIST), {
     listItems: c
-  } = (0, a.e7)([_.Z, x.default, b.Z], () => {
-    let e = (0, O.T)(t.recipients, x.default),
+  } = (0, a.e7)([_.Z, v.default, b.Z], () => {
+    let e = (0, O.T)(t.recipients, v.default),
       n = {};
     for (let t of e) {
       var r, i, l;
-      _.Z.isFriend(t.id) || t.id === (null == (r = x.default.getCurrentUser()) ? true : r.id) ? n[t.id] = {
+      _.Z.isFriend(t.id) || t.id === (null == (r = v.default.getCurrentUser()) ? true : r.id) ? n[t.id] = {
         status: null != (i = b.Z.getStatus(t.id)) ? i : E.Skl.OFFLINE,
         activities: null != (l = b.Z.getActivities(t.id)) ? l : N
       } : n[t.id] = {
@@ -194,7 +194,7 @@ function D(e) {
     }
   }, [t], A);
   i.useEffect(() => {
-    v.default.track(E.rMx.MEMBER_LIST_VIEWED, {
+    j.default.track(E.rMx.MEMBER_LIST_VIEWED, {
       channel_id: t.id,
       channel_type: t.type,
       guild_id: t.guild_id

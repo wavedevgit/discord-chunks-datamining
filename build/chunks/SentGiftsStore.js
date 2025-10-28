@@ -6,7 +6,7 @@ require.d(exports, {
 var n, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
 
-function l(e, t, r) {
+function s(e, t, r) {
   return t in e ? Object.defineProperty(e, t, {
     value: r,
     enumerable: true,
@@ -43,7 +43,7 @@ class c extends(n = Chunk442837.ZP.PersistedStore) {
     for (let [t, r] of Object.entries(a.sentGifts)) new Date(require.expiresAt) < module && delete a.sentGifts[exports]
   }
 }
-l(c, "displayName", "SentGiftsStore"), l(c, "persistKey", "SentGiftsStore");
+s(c, "displayName", "SentGiftsStore"), s(c, "persistKey", "SentGiftsStore");
 let u = new c(Chunk570140.Z, {
   WISHLIST_GIFT_SENT: function(e) {
     let t = o(e.skuId, e.recipientId),

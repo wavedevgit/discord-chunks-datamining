@@ -34,15 +34,15 @@ function y(e) {
     isFetchingShopHome: v,
     isFetchingCategories: S,
     wishlistError: w,
-    fetchShopHomeError: I
+    fetchShopHomeError: O
   } = (0, h.ZL)(t), {
-    displayItems: O,
+    displayItems: I,
     wishlistLength: P
   } = (0, h.UD)({
     wishlist: f,
     popularCollectiblesProducts: y,
     wishlistError: w,
-    fetchShopHomeError: I
+    fetchShopHomeError: O
   }), {
     theme: E,
     primaryColor: T,
@@ -81,7 +81,7 @@ function y(e) {
       section: g.oh.WISHLIST
     })
   }, [t.id]);
-  if (null != w || null != I) return null;
+  if (null != w || null != O) return null;
   let N = m.ZP.getName(t),
     R = null == n ? true : n.getBannerURL({
       canAnimate: false,
@@ -127,7 +127,7 @@ function y(e) {
           })]
         }), (0, r.jsx)("div", {
           className: e,
-          children: F || 0 === O.length ? (0, r.jsxs)(r.Fragment, {
+          children: F || 0 === I.length ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(o.nn4, {
               children: j.intl.string(j.t.pfChQr)
             }), (0, r.jsx)("div", {
@@ -145,7 +145,7 @@ function y(e) {
               margin: 0,
               padding: 0
             },
-            children: O.map(e => {
+            children: I.map(e => {
               let {
                 item: n,
                 source: i

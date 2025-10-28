@@ -177,18 +177,18 @@ function N(e) {
     streamingDurationRequirement: a,
     questReward: s
   }, r) : t.config.features.includes(_.S7.CLOUD_GAMING_ACTIVITY) ? i === u.jn.QUESTS_EMBED ? v(m.t["C+2RxC"], {
-    activityName: t.config.application.name,
+    activityName: t.config.messages.gameTitle,
     providerName: O,
     providerLink: o.Z.getArticleURL(p.BhN.NVIDIA_GEFORCE_CLOUD_GAMING_QUEST),
     questReward: s
   }, r) : v(m.t["0NNM3l"], {
-    activityName: t.config.application.name,
+    activityName: t.config.messages.gameTitle,
     providerName: O,
     providerLink: o.Z.getArticleURL(p.BhN.NVIDIA_GEFORCE_CLOUD_GAMING_QUEST),
     streamingDurationRequirement: a,
     questReward: s
   }, r) : v(m.t.UuzHh8, {
-    activityName: t.config.application.name,
+    activityName: t.config.messages.gameTitle,
     streamingDurationRequirement: a,
     questReward: s
   }, r)

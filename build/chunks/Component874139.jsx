@@ -26,7 +26,7 @@ function _(e) {
     onClick: _
   } = e, {
     analyticsLocations: y
-  } = (0, o.ZP)(), x = (0, i.useMemo)(() => {
+  } = (0, o.ZP)(), v = (0, i.useMemo)(() => {
     let e = [];
     for (let i = 0; i < t.length && e.length < 4; i++) {
       let s = t[i],
@@ -63,7 +63,7 @@ function _(e) {
     }
     return e
   }, [t, n, y, _]);
-  return 0 === x.length ? null : (0, r.jsxs)(u.Z.Overlay, {
+  return 0 === v.length ? null : (0, r.jsxs)(u.Z.Overlay, {
     className: b.container,
     children: [(0, r.jsx)("div", {
       className: b.header,
@@ -73,7 +73,7 @@ function _(e) {
       })
     }), (0, r.jsx)("div", {
       className: b.cardsContainer,
-      children: x
+      children: v
     })]
   })
 }

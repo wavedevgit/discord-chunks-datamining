@@ -67,15 +67,19 @@ class u extends Chunk81825.Z {
     var {
       sku_id: t,
       sku_product_line: n,
-      sku_name: r
+      sku_name: r,
+      is_owned: i,
+      gifter_user_id: o
     } = e;
-    return new u(s(a({}, l(e, ["sku_id", "sku_product_line", "sku_name"])), {
+    return new u(s(a({}, l(e, ["sku_id", "sku_product_line", "sku_name", "is_owned", "gifter_user_id"])), {
       sku_id: t,
       sku_product_line: n,
-      sku_name: r
+      sku_name: r,
+      is_owned: i,
+      gifter_user_id: o
     }))
   }
   constructor(e) {
-    super(), i(this, "skuId", true), i(this, "skuProductLine", true), i(this, "skuName", true), this.skuId = e.sku_id, this.skuProductLine = e.sku_product_line, this.skuName = e.sku_name
+    super(), i(this, "skuId", true), i(this, "skuProductLine", true), i(this, "skuName", true), i(this, "isOwned", true), i(this, "gifterUserId", true), this.skuId = e.sku_id, this.skuProductLine = e.sku_product_line, this.skuName = e.sku_name, this.isOwned = e.is_owned, this.gifterUserId = e.gifter_user_id
   }
 }

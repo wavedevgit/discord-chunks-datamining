@@ -127,9 +127,9 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
       applicationStream: g,
       status: _,
       channel: y,
-      guildId: x,
-      isTyping: v,
-      isMobileOnline: j,
+      guildId: v,
+      isTyping: j,
+      isMobileOnline: x,
       premiumSince: O,
       nameplate: C
     } = e, I = J(e, ["colorString", "colorStrings", "colorRoleName", "colorRoleId", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate"]), S = i.useRef(null), [E, Z] = i.useState(false), T = null != O ? new Date(O) : null, N = i.useCallback(e => {
@@ -139,12 +139,12 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
         } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("52021")]).then(n.bind(n, 757387)), t = H.Z.isInChannel(k.Z.getVoiceChannelId(), d.id);
         return n => (0, r.jsx)(e, X(Q({}, n), {
           user: d,
-          guildId: x,
+          guildId: v,
           channel: y,
           showMediaItems: t
         }))
       })
-    }, [d, x, y]), R = i.useCallback(() => {
+    }, [d, v, y]), R = i.useCallback(() => {
       let e = "@".concat(V.ZP.getUserTag(d, {
           decoration: "never"
         })),
@@ -156,18 +156,18 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
         rawText: t
       }), m.Z.startTyping(y.id)
     }, [d, y.id]), w = i.useCallback(e => {
-      null != x && (e.stopPropagation(), (0, P.f)({
-        guildId: x,
+      null != v && (e.stopPropagation(), (0, P.f)({
+        guildId: v,
         location: {
           section: W.jXE.MEMBER_LIST,
           object: W.qAy.BOOST_GEM_ICON
         }
       }))
-    }, [x]);
+    }, [v]);
     return (0, r.jsx)(A.Z, {
       targetElementRef: S,
       user: d,
-      guildId: x,
+      guildId: v,
       channelId: y.id,
       roleId: s,
       position: u.tq ? "window_center" : "left",
@@ -198,10 +198,10 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
           colorString: t,
           colorStrings: l,
           colorRoleName: a,
-          isTyping: v,
+          isTyping: j,
           channel: y,
-          guildId: x,
-          isMobile: j,
+          guildId: v,
+          isMobile: x,
           onClickPremiumGuildIcon: w,
           selected: E,
           itemProps: I,
@@ -560,7 +560,7 @@ class el extends Chunk647438.Component {
         num_users_visible_with_avatar_decoration: 0,
         num_users_visible_with_nameplate: 0
       });
-      this.lastReportedAnalyticsChannel = this.props.channel.id, x.ZP.trackWithMetadata(W.rMx.MEMBER_LIST_VIEWED, Q({}, i))
+      this.lastReportedAnalyticsChannel = this.props.channel.id, v.ZP.trackWithMetadata(W.rMx.MEMBER_LIST_VIEWED, Q({}, i))
     })
   }
 }
@@ -571,7 +571,7 @@ function ea(e) {
     className: n
   } = e, {
     analyticsLocations: l
-  } = (0, v.ZP)(y.Z.MEMBER_LIST), s = (0, p.e7)([_.Z], () => _.Z.keyboardModeEnabled), o = (0, p.cj)([L.ZP], () => L.ZP.getProps(t.guild_id, t.id)), {
+  } = (0, j.ZP)(y.Z.MEMBER_LIST), s = (0, p.e7)([_.Z], () => _.Z.keyboardModeEnabled), o = (0, p.cj)([L.ZP], () => L.ZP.getProps(t.guild_id, t.id)), {
     rows: u,
     groups: f,
     version: g,
@@ -580,7 +580,7 @@ function ea(e) {
     memberStoreProps: o,
     channelId: t.id,
     guildId: t.guild_id
-  }), b = i.useRef(null), x = (0, h.UBm)("lg") + (0, h.UBm)("xxs"), j = i.useCallback((e, t) => {
+  }), b = i.useRef(null), v = (0, h.UBm)("lg") + (0, h.UBm)("xxs"), x = i.useCallback((e, t) => {
     let n = b.current;
     if (null == n) return;
     let r = parseInt(t, 10),
@@ -614,12 +614,12 @@ function ea(e) {
     })
   }), []), I = (0, d.ZP)({
     id: "members-".concat(t.id),
-    setFocus: j,
+    setFocus: x,
     isEnabled: s,
     scrollToStart: O,
     scrollToEnd: C
   });
-  return (0, r.jsx)(v.Gt, {
+  return (0, r.jsx)(j.Gt, {
     value: l,
     children: (0, r.jsx)("div", {
       className: a()(q.container, n),
@@ -631,7 +631,7 @@ function ea(e) {
           rows: u,
           listRef: b,
           updateMaxContentFeedRowSeen: m,
-          sectionHeight: 18 + x,
+          sectionHeight: 18 + v,
           rowHeight: 42
         }))
       })

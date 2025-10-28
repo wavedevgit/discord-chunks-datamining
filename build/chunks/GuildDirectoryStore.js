@@ -147,21 +147,21 @@ let y = new _(Chunk570140.Z, {
     let {
       channelId: b,
       entry: _
-    } = e, y = (0, a.MQ)(_), x = null == (t = h[b]) ? true : t[y.guildId];
+    } = e, y = (0, a.MQ)(_), v = null == (t = h[b]) ? true : t[y.guildId];
     h[b] = d(c({}, h[b]), {
-      [y.guildId]: c({}, x, y)
+      [y.guildId]: c({}, v, y)
     });
-    let v = null != (i = null == x ? true : x.primaryCategoryId) ? i : s.AR.UNCATEGORIZED,
-      j = null != (l = y.primaryCategoryId) ? l : s.AR.UNCATEGORIZED,
-      O = Object.assign({}, null == (n = g[b]) ? true : n[v]);
-    null != x && v !== j && delete O[y.guildId], g[b] = d(c({}, g[b]), {
-      [v]: O,
-      [j]: d(c({}, null == (r = g[b]) ? true : r[j]), {
-        [y.guildId]: c({}, x, y)
+    let j = null != (i = null == v ? true : v.primaryCategoryId) ? i : s.AR.UNCATEGORIZED,
+      x = null != (l = y.primaryCategoryId) ? l : s.AR.UNCATEGORIZED,
+      O = Object.assign({}, null == (n = g[b]) ? true : n[j]);
+    null != v && j !== x && delete O[y.guildId], g[b] = d(c({}, g[b]), {
+      [j]: O,
+      [x]: d(c({}, null == (r = g[b]) ? true : r[x]), {
+        [y.guildId]: c({}, v, y)
       })
-    }), j !== v && null != m[b] && (m[b] = d(c({}, m[b]), {
-      [v]: (null == (o = m[b]) ? true : o[v]) > 0 ? (null == (u = m[b]) ? true : u[v]) - 1 : 0,
-      [j]: (null != (f = null == (p = m[b]) ? true : p[j]) ? f : 0) + 1
+    }), x !== j && null != m[b] && (m[b] = d(c({}, m[b]), {
+      [j]: (null == (o = m[b]) ? true : o[j]) > 0 ? (null == (u = m[b]) ? true : u[j]) - 1 : 0,
+      [x]: (null != (f = null == (p = m[b]) ? true : p[x]) ? f : 0) + 1
     }))
   },
   GUILD_DIRECTORY_CATEGORY_SELECT: function(e) {

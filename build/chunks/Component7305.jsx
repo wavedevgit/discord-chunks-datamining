@@ -75,8 +75,8 @@ function F(e) {
     openInvoiceId: L,
     onSubscriptionConfirmation: v,
     renderPurchaseConfirmation: w,
-    postSuccessGuild: I,
-    followupSKUInfo: O,
+    postSuccessGuild: O,
+    followupSKUInfo: I,
     renderHeader: P,
     applicationId: E,
     guildId: T,
@@ -120,8 +120,8 @@ function F(e) {
       openInvoiceId: L,
       onSubscriptionConfirmation: v,
       renderPurchaseConfirmation: w,
-      postSuccessGuild: I,
-      followupSKUInfo: O,
+      postSuccessGuild: O,
+      followupSKUInfo: I,
       renderHeader: P,
       applicationId: E,
       guildId: T,
@@ -153,7 +153,7 @@ function G(e) {
     isGift: C,
     skuId: s,
     referralTrialOfferId: l
-  }), _ = (0, O.Fv)(p), h = (0, c.id)(d, C, u);
+  }), _ = (0, I.Fv)(p), h = (0, c.id)(d, C, u);
   return (0, r.jsx)(b.J, (t = N({}, e), n = n = {
     breadcrumbSteps: R,
     onReturn: () => {
@@ -200,7 +200,7 @@ let H = function() {
       renderStep: e => (0, r.jsx)(P.x, N({}, e)),
       options: {
         renderHeader: true,
-        useBreadcrumbLabel: e => (0, O.Fv)(e) ? null : B.intl.string(B.t["r+SebU"]),
+        useBreadcrumbLabel: e => (0, I.Fv)(e) ? null : B.intl.string(B.t["r+SebU"]),
         sectionHeaderText: () => Chunk388032.intl.string(Chunk388032.t.UKbp1N)
       }
     }, {
@@ -208,7 +208,7 @@ let H = function() {
       renderStep: e => (0, r.jsx)(G, N({}, e)),
       options: {
         renderHeader: true,
-        useBreadcrumbLabel: e => (0, O.Fv)(e) ? null : B.intl.string(B.t.Sb6wI1)
+        useBreadcrumbLabel: e => (0, I.Fv)(e) ? null : B.intl.string(B.t.Sb6wI1)
       }
     }, {
       key: Chunk409813.h8.AWAITING_PURCHASE_TOKEN_AUTH,
@@ -221,14 +221,14 @@ let H = function() {
       renderStep: e => (0, r.jsx)(v.l, N({}, e)),
       options: {
         renderHeader: true,
-        useBreadcrumbLabel: e => (0, O.Fv)(e) ? B.intl.string(B.t.UKbp1N) : B.intl.string(B.t.QBnNHq)
+        useBreadcrumbLabel: e => (0, I.Fv)(e) ? B.intl.string(B.t.UKbp1N) : B.intl.string(B.t.QBnNHq)
       }
     }, {
       key: Chunk409813.h8.CONFIRM,
       renderStep: e => (0, r.jsx)(w.b, N({}, e))
     }, {
       key: Chunk409813.h8.SELECT_FREE_SKU,
-      renderStep: e => (0, r.jsx)(I.S, N({}, e)),
+      renderStep: e => (0, r.jsx)(O.S, N({}, e)),
       options: {
         bodyClassName: Chunk867983.selectFreeSku,
         isDynamicModal: true

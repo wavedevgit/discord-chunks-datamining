@@ -492,14 +492,9 @@ function K(e) {
         searchContext: t,
         query: r,
         queryString: n
-      }), D.Z.updateSearchMode(t, G.QIO.NEWEST), t.type === G.aib.DMS ? L.Z.fetchCrossDMMessages({
+      }), D.Z.updateSearchMode(t, G.QIO.NEWEST), Y({
         searchContext: t,
-        selectedPageIndex: 0,
-        queryString: n
-      }) : Y({
-        searchContext: t,
-        searchQuery: r,
-        queryString: n,
+        searchQueryString: n,
         searchEverywhere: i,
         offset: 0
       })

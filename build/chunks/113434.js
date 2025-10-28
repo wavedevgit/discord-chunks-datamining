@@ -468,7 +468,7 @@ function eT(e, t, n, r) {
     });
     else return Z.intl.format(Z.t.xHXCyf, {
       minutes: i,
-      activityName: e.config.application.name
+      activityName: e.config.messages.gameTitle
     });
   let l = Z.t["6zWtV8"];
   return (0, C.Nj)({

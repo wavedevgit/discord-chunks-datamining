@@ -237,7 +237,7 @@ function $(e) {
     videoAssetId: tv,
     sourceQuestContent: es,
     logger: ts
-  }), tR = l.useRef(null), tI = ee.id, tN = ee.config.application.id, tk = ee.config.application.name, tw = null == tf ? true : tf.url, tA = null == (o = ee.config.taskConfigV2.tasks[u.X.WATCH_VIDEO]) ? true : o.messages.videoTitle;
+  }), tR = l.useRef(null), tI = ee.id, tN = ee.config.application.id, tk = ee.config.messages.gameTitle, tw = null == tf ? true : tf.url, tA = null == (o = ee.config.taskConfigV2.tasks[u.X.WATCH_VIDEO]) ? true : o.messages.videoTitle;
   l.useEffect(() => {
     var e;
     if (null == tw || null == e6.current || tm === I.n1.VIDEO_HLS && null == tp.current || !(0, b.Zx)({

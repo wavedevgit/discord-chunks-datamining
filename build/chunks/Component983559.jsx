@@ -75,17 +75,17 @@ function H(e) {
   }), q = i.useRef(null), {
     isHoveringOrFocusing: K,
     isHovering: Q
-  } = (0, p.Z)(q), X = (0, v.$m)(), J = (0, o.q_F)({
+  } = (0, p.Z)(q), X = (0, j.$m)(), J = (0, o.q_F)({
     opacity: +(null != X.interactionType),
     config: {
       duration: 150
     }
   }), $ = e => {
-    (0, j.openUserProfileModal)(G({
+    (0, x.openUserProfileModal)(G({
       sourceAnalyticsLocations: W,
       hideRestrictedProfile: true
     }, Y, e))
-  }, ee = (0, x.Z)({
+  }, ee = (0, v.Z)({
     location: "UserProfileSidebar"
   }), et = (null == B ? true : B.widgets) != null && B.widgets.length > 0, en = (0, _.S)({
     location: "UserProfileSidebar"
@@ -104,7 +104,7 @@ function H(e) {
       fetchStartedAt: null == B ? true : B.fetchStartedAt,
       fetchEndedAt: null == B ? true : B.fetchEndedAt,
       isLoaded: null == B ? true : B.isLoaded,
-      children: (0, r.jsx)(v.NJ, {
+      children: (0, r.jsx)(j.NJ, {
         value: X,
         children: (0, r.jsxs)(S.Z, {
           ref: q,
