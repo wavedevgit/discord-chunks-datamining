@@ -67,28 +67,28 @@ function I(e) {
         ref: N,
         user: t,
         displayProfile: S,
-        themeType: v.l.SIDEBAR,
+        themeType: x.l.SIDEBAR,
         themeOverride: E,
         children: (0, r.jsx)(l.u2D, {
           children: (0, r.jsxs)("div", {
-            className: x.container,
+            className: j.container,
             children: [(0, r.jsx)("img", {
               alt: "",
               src: O,
-              className: x.preview,
+              className: j.preview,
               "aria-hidden": true
             }), (0, r.jsxs)("div", {
-              className: x.body,
+              className: j.body,
               children: [(0, r.jsxs)("div", {
-                className: x.headerContainer,
+                className: j.headerContainer,
                 children: [(0, r.jsx)(m.Z, {
                   user: t
                 }), (0, r.jsx)(s.Heading, {
                   variant: "heading-lg/bold",
-                  children: j.intl.string(j.t.b33pLD)
+                  children: v.intl.string(v.t.b33pLD)
                 }), (0, r.jsx)(s.Text, {
                   variant: "text-sm/medium",
-                  children: j.intl.format(Z ? j.t["8F+WNz"] : j.t["/cZp5s"], {
+                  children: v.intl.format(Z ? v.t["8F+WNz"] : v.t["/cZp5s"], {
                     username: p.ZP.getName(n.guild_id, n.id, t)
                   })
                 })]

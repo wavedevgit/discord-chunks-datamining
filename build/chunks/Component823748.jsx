@@ -798,14 +798,14 @@ let ta = (0, Chunk112724.Z)(tl),
     let {
       providedChannel: n
     } = e, [l, a] = i.useState(null), s = (0, p.e7)([eV.Z], () => eV.Z.getChannelId()), o = (0, p.e7)([eV.Z], () => eV.Z.getVoiceChannelId()), c = (0, p.e7)([ek.Z], () => null != n ? n : ek.Z.getChannel(s), [s, n]), g = (0, p.e7)([ek.Z], () => ek.Z.getChannel(o), [o]), b = null == c ? true : c.parent_id, _ = (0, p.e7)([ek.Z], () => ek.Z.getChannel(b), [b]), y = (0, p.e7)([eH.Z], () => eH.Z.getGuild(null == c ? true : c.guild_id), [c]), {
-      needSubscriptionToAccess: v
-    } = (0, X.Z)(null != (t = null == c ? true : c.id) ? t : true), j = (0, p.e7)([w.Z], () => {
+      needSubscriptionToAccess: x
+    } = (0, X.Z)(null != (t = null == c ? true : c.id) ? t : true), v = (0, p.e7)([w.Z], () => {
       let e = null != s ? w.Z.getParticipants(s) : [],
         t = null != s ? w.Z.getActivityParticipants(s) : [];
       return e.length - t.length > 0
-    }, [s]), x = (0, z.Z)(), O = (0, p.e7)([eV.Z], () => {
+    }, [s]), j = (0, z.Z)(), O = (0, p.e7)([eV.Z], () => {
       var e;
-      return (null != (e = null == x ? true : x.channelId) ? e : eV.Z.getVoiceChannelId()) === (null == c ? true : c.id)
+      return (null != (e = null == j ? true : j.channelId) ? e : eV.Z.getVoiceChannelId()) === (null == c ? true : c.id)
     }), E = (0, p.e7)([S.ZP], () => null != c ? S.ZP.getSelfEmbeddedActivityForChannel(c.id) : null, [c]), N = (0, p.e7)([eB.Z], () => eB.Z.isConnected()), A = (0, I.Z)(N), D = N && false === A;
     i.useEffect(() => {
       O && D && null != E && null != c && m.Z.selectParticipant(c.id, (0, R.gN)({
@@ -817,7 +817,7 @@ let ta = (0, Chunk112724.Z)(tl),
       M = (0, p.e7)([S.ZP], () => S.ZP.getActivityPanelMode()),
       k = null != L && !(0, Z.Z)(null == c ? true : c.id) && M === e4.Ez.PANEL,
       U = (0, p.e7)([eY.Z], () => null != c && c.isVocalThread() && !d().isEmpty(eY.Z.getVoiceStatesForChannel(c.id)), [c]),
-      G = null != c && c.isPrivate() && !k && j,
+      G = null != c && c.isPrivate() && !k && v,
       F = (null == c ? true : c.isGuildVocal()) || G || U,
       B = (0, p.e7)([V.Z], () => V.Z.getFrameLayoutMode() === e7.U.FOCUSED),
       {
@@ -873,16 +873,16 @@ let ta = (0, Chunk112724.Z)(tl),
     }, [l, ed]);
     let e_ = (0, C.ts)(c),
       ey = null != c && c.isPrivate(),
-      ev = (0, I.Z)(ey),
-      ej = (0, I.Z)(null == c ? true : c.id);
+      ex = (0, I.Z)(ey),
+      ev = (0, I.Z)(null == c ? true : c.id);
     i.useEffect(() => {
-      let e = ev && !ey,
-        t = ev && ey && (null == c ? true : c.id) !== ej;
+      let e = ex && !ey,
+        t = ex && ey && (null == c ? true : c.id) !== ev;
       (e || t) && (0, H.Q3)(h.z.ACTIVITY_GDM_CALL_TOOLTIP, {
         dismissAction: e2.L.AUTO
       })
-    }, [null == c ? true : c.id, ej, ey, ev]);
-    let ex = (0, f.f9)();
+    }, [null == c ? true : c.id, ev, ey, ex]);
+    let ej = (0, f.f9)();
     return (0, r.jsx)(ta, tr(tn({
       guildId: null == c ? true : c.guild_id,
       channelId: s,
@@ -892,14 +892,14 @@ let ta = (0, Chunk112724.Z)(tl),
       parentChannel: _,
       voiceChannel: g,
       layout: K,
-      needSubscriptionToAccess: v,
+      needSubscriptionToAccess: x,
       isLurking: Y,
-      hasModalOpen: ex,
+      hasModalOpen: ej,
       section: et,
       channelSidebarState: en,
       guildSidebarState: ei,
       guild: y,
-      showCall: !v && F,
+      showCall: !x && F,
       showActivityPanel: k,
       showFramePanel: B,
       channelIsContentGated: J,

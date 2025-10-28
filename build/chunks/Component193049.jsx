@@ -192,6 +192,7 @@ function A(e) {
   }, [G]), !q && null == Z && (G === x.Wq.EDIT_USERNAME ? t = I.intl.formatToPlainString(I.t.AJh8BR, {
     source: K.username
   }) : G === x.Wq.SUGGESTION && (Y || null != X) && (t = I.intl.string(I.t["i/2SgP"]))), (0, r.jsxs)(u.Y0X, {
+    "data-migration-pending": true,
     className: P.modalRoot,
     impression: {
       impressionName: s.ImpressionNames.POMELO_LANDING,

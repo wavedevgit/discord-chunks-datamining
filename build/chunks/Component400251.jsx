@@ -84,7 +84,7 @@ function T(e) {
     entry: t
   } = e, [l, s] = i.useState(false), d = i.useRef(null), {
     canEdit: u
-  } = (0, j.Z)(t);
+  } = (0, v.Z)(t);
   return (0, r.jsx)("div", {
     className: a()(I.actionButtonsContainer, {
       [I.forceButtonsShow]: l
@@ -110,7 +110,7 @@ function T(e) {
             className: I.overflowIcon
           })
         })
-      }) : null, (0, r.jsx)(x.Z, {
+      }) : null, (0, r.jsx)(j.Z, {
         targetElementRef: d,
         onRequestOpen: () => s(true),
         onRequestClose: () => s(false),
@@ -158,7 +158,7 @@ let N = e => {
   var t;
   let {
     entry: l
-  } = e, [a, o] = i.useState(false), h = null != (0, s.e7)([_.Z], () => _.Z.getGuild(l.guildId)), j = async () => {
+  } = e, [a, o] = i.useState(false), h = null != (0, s.e7)([_.Z], () => _.Z.getGuild(l.guildId)), v = async () => {
     o(true);
     try {
       h ? (0, b.X)(l.guildId) : await u.Z.joinGuild(l.guildId, {
@@ -167,7 +167,7 @@ let N = e => {
     } finally {
       o(false)
     }
-  }, x = y.ZP.getGuildSplashURL({
+  }, j = y.ZP.getGuildSplashURL({
     id: l.guildId,
     splash: l.splash,
     size: 300 * (0, m.x_)()
@@ -192,8 +192,8 @@ let N = e => {
       className: I.cardHeader,
       children: [(0, r.jsx)("div", {
         className: I.splash,
-        children: null != x && (0, r.jsx)("img", {
-          src: x,
+        children: null != j && (0, r.jsx)("img", {
+          src: j,
           alt: "",
           className: I.splashImage
         })
@@ -208,7 +208,7 @@ let N = e => {
             children: (0, r.jsx)(f.Z, {
               className: I.icon,
               iconSrc: S,
-              guild: (0, v.e)(l),
+              guild: (0, x.e)(l),
               size: f.Z.Sizes.MEDIUM,
               active: true
             })
@@ -263,7 +263,7 @@ let N = e => {
         children: (0, r.jsx)(c.Button, {
           loading: a,
           variant: h ? "secondary" : "active",
-          onClick: j,
+          onClick: v,
           text: P,
           fullWidth: true
         })
