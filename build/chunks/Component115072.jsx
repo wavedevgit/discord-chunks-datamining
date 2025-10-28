@@ -66,7 +66,7 @@ function E(e) {
         return "Linux"
     }
     return ""
-  }((0, _.getOS)())), [en, ei] = r.useState(""), [er, ea] = r.useState(""), [el, eo] = r.useState(""), [es, eu] = r.useState(""), [ec, ed] = r.useState(false), [em, ep] = r.useState(false), [ev, ef] = r.useState(false), [eh, eg] = r.useState(null);
+  }((0, _.getOS)())), [en, ei] = r.useState(""), [er, el] = r.useState(""), [ea, eo] = r.useState(""), [es, eu] = r.useState(""), [ec, ed] = r.useState(false), [em, ep] = r.useState(false), [ev, ef] = r.useState(false), [eh, eg] = r.useState(null);
   r.useEffect(() => {
     let e = Math.random().toString(16).slice(2);
     o.tn.get({
@@ -76,29 +76,29 @@ function E(e) {
       },
       rejectWithError: true
     }).then(e => {
-      if (null != e.body && "f927fb5e6418cec29bdc42aa2836ca80ca909631" !== e.body.hash) {
-        let e = new Date("1761624987898"),
+      if (null != e.body && "6371f77127fa74dfe6d337f59cec022878e92984" !== e.body.hash) {
+        let e = new Date("1761659566557"),
           t = new Date,
           n = (0, j.TD)(t, e);
         n.hours > 6 && eg(n.hours)
       }
     })
   }, []);
-  let ex = (0, l.e7)([b.default], () => {
-      let e = b.default.getCurrentUser();
+  let ex = (0, a.e7)([y.default], () => {
+      let e = y.default.getCurrentUser();
       return (null == e ? true : e.isStaff()) || (null == e ? true : e.isStaffPersonal())
     }),
-    eb = (0, l.e7)([m.C], () => {
+    ey = (0, a.e7)([m.C], () => {
       var e;
       return null == (e = m.C.getCurrentBuildOverride().overrides) ? true : e.discord_web
     }),
     {
-      overridesInfo: ey
+      overridesInfo: eb
     } = (0, x.s)(),
     {
       overridesInfo: ej
     } = (0, g.Q)(),
-    e_ = Object.entries(C({}, ey, ej)).map(e => {
+    e_ = Object.entries(C({}, eb, ej)).map(e => {
       let [t, {
         variantId: n
       }] = e;
@@ -112,19 +112,19 @@ function E(e) {
     if (ef(false), "" === M || "" === W || null == V) return void ed(true);
     let r = null == U || null == (e = U.features) ? true : e.find(e => (0, O.pD)(e) === X);
     ep(true), ed(false);
-    let a = (0, S.D)(z.map(e => {
+    let l = (0, S.D)(z.map(e => {
         let {
           item: t
         } = e;
         return t
       })),
-      l = await (0, O.ZD)({
+      a = await (0, O.ZD)({
         name: M,
         description: W,
         priority: V,
         feature: r,
         url: H,
-        buildOverride: null != (t = null == eb ? true : eb.id) ? t : null,
+        buildOverride: null != (t = null == ey ? true : ey.id) ? t : null,
         experimentOverrides: e_
       }, true === K ? {
         overridePlatformInformation: K,
@@ -132,19 +132,19 @@ function E(e) {
         operatingSystem: ee,
         operatingSystemVersion: en,
         clientVersion: er,
-        clientBuildNumber: el,
+        clientBuildNumber: ea,
         locale: es
       } : {
         overridePlatformInformation: K
-      }, a).catch(() => ef(true));
-    ep(false), null != l && l.ok ? (ex && window.open(l.body.permalink_url, "_blank"), L(), (0, u.ZDy)(async () => {
+      }, l).catch(() => ef(true));
+    ep(false), null != a && a.ok ? (ex && window.open(a.body.permalink_url, "_blank"), L(), (0, u.ZDy)(async () => {
       let {
         default: e
       } = await n.e("64648").then(n.bind(n, 81155));
       return t => {
         var n, r;
         return (0, i.jsx)(e, (n = C({}, t), r = r = {
-          asanaTask: l.body
+          asanaTask: a.body
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(r)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
@@ -178,7 +178,7 @@ function E(e) {
       var n;
       return e.filename === t.name && (null == (n = e.item.file) ? true : n.size) === t.size
     }) || G([...z, new d.ZP({
-      id: (0, a.Z)(),
+      id: (0, l.Z)(),
       file: t,
       platform: d.ow.WEB,
       origin: "clipboard"
@@ -206,7 +206,7 @@ function E(e) {
       onPaste: eS,
       children: [(0, i.jsxs)(u.Kqy, {
         gap: 8,
-        children: [null != eb && (0, i.jsxs)(u.M14, {
+        children: [null != ey && (0, i.jsxs)(u.M14, {
           type: "critical",
           children: [(0, i.jsx)(u.Heading, {
             variant: "heading-md/medium",
@@ -215,11 +215,11 @@ function E(e) {
             variant: "text-sm/normal",
             children: w.intl.format(w.t["yY60+7"], {
               buildOverrideHook: () => (0, i.jsx)("b", {
-                children: null == eb ? true : eb.id
+                children: null == ey ? true : ey.id
               })
             })
           })]
-        }), null == eb && null != eh && (0, i.jsxs)(u.M14, {
+        }), null == ey && null != eh && (0, i.jsxs)(u.M14, {
           type: "critical",
           children: [(0, i.jsx)(u.Heading, {
             variant: "heading-md/medium",
@@ -276,7 +276,7 @@ function E(e) {
                 children: [(0, i.jsx)("img", {
                   alt: "",
                   className: P.formPriorityImage,
-                  src: (0, y.gT)({
+                  src: (0, b.gT)({
                     id: t.emoji,
                     animated: true,
                     size: 48
@@ -348,11 +348,11 @@ function E(e) {
             label: w.intl.string(w.t["wy1M/t"]),
             placeholder: "Client Version",
             value: er,
-            onChange: e => ea(e)
+            onChange: e => el(e)
           }), (0, i.jsx)(u.oil, {
             label: w.intl.string(w.t.f7kbVu),
             placeholder: "Client Build Number",
-            value: el,
+            value: ea,
             onChange: e => eo(e)
           }), (0, i.jsx)(u.oil, {
             label: w.intl.string(w.t["4Z5+zg"]),
@@ -375,7 +375,7 @@ function E(e) {
             onChange: e => {
               var t, n;
               (null == (n = e.currentTarget) || null == (t = n.files) ? true : t[0]) != null && G([...z, ...Array.from(e.currentTarget.files).map(e => new d.ZP({
-                id: (0, a.Z)(),
+                id: (0, l.Z)(),
                 file: e,
                 platform: d.ow.WEB,
                 origin: "file_picker"

@@ -87,7 +87,7 @@ function C(e) {
       })
     }) : (0, r.jsx)(E.ZP, {
       title: S.intl.string(S.t["3o2ojh"]),
-      value: !w,
+      value: !R && !w,
       onChange: e => M(e, true),
       disabled: R,
       note: C ? S.intl.format(S.t.WpnWLc, {
