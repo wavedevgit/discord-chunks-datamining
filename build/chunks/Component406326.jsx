@@ -252,21 +252,21 @@ function R(e) {
   let {
     totalResults: t,
     subtitle: n
-  } = e, l = i.useMemo(() => t.toLocaleString(), [t]), a = (0, r.jsx)(d.Text, {
+  } = e, i = (0, r.jsx)(d.Text, {
     variant: "text-md/medium",
     color: "header-primary",
     children: O.intl.format(O.t.ZGVL3g, {
-      count: l
+      count: t
     })
   });
   return null != n ? (0, r.jsxs)("div", {
     className: C.totalResultsWithSubtitle,
-    children: [a, (0, r.jsx)(d.Text, {
+    children: [i, (0, r.jsx)(d.Text, {
       variant: "text-xs/medium",
       color: "text-secondary",
       children: n
     })]
-  }) : a
+  }) : i
 }
 
 function w(e) {
