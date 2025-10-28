@@ -25,7 +25,7 @@ function f(e, t, n) {
 }
 let v = new Chunk710845.Z("UploadArea");
 
-function g() {
+function h() {
   return (0, Chunk951288.jsxs)("div", {
     children: [(0, Chunk951288.jsx)("div", {
       className: o()(Chunk162130.sparkleWhite, Chunk374450.sparkleOne)
@@ -44,7 +44,7 @@ function g() {
     })]
   })
 }
-class h extends Chunk647438.Component {
+class g extends Chunk647438.Component {
   componentDidMount() {
     let e = this.elementDOMRef.current;
     null != module && (module.ownerDocument.body.addEventListener("dragover", this.handleDragOver, false), module.ownerDocument.body.addEventListener("drop", this.handleDragLeave, false), module.addEventListener("dragover", this.handleDragOverZone, false), module.addEventListener("dragleave", this.handleDragLeaveZone, false), module.addEventListener("drop", this.handleDrop, false))
@@ -58,8 +58,8 @@ class h extends Chunk647438.Component {
       title: e,
       description: t,
       icons: n,
-      style: i,
-      className: a
+      style: a,
+      className: i
     } = this.props;
     return (0, Chunk951288.jsx)("div", {
       ref: this.elementDOMRef,
@@ -70,7 +70,7 @@ class h extends Chunk647438.Component {
       style: Chunk647438,
       children: (0, Chunk951288.jsxs)("div", {
         className: Chunk374450.uploadDropModal,
-        children: [this.state.isDragging && (0, Chunk951288.jsx)(g, {}), (0, Chunk951288.jsx)("div", {
+        children: [this.state.isDragging && (0, Chunk951288.jsx)(h, {}), (0, Chunk951288.jsx)("div", {
           className: Chunk374450.bgScale
         }), (0, Chunk951288.jsxs)("div", {
           className: Chunk374450.inner,
@@ -94,7 +94,7 @@ class h extends Chunk647438.Component {
     super(...e), t = this, f(this, "state", {
       isDragging: false,
       isOverZone: false
-    }), f(this, "dragOverTimeout", null), f(this, "elementDOMRef", i.createRef()), f(this, "isAllDropFiles", e => {
+    }), f(this, "dragOverTimeout", null), f(this, "elementDOMRef", a.createRef()), f(this, "isAllDropFiles", e => {
       for (let n = 0; n < e.length; n++) try {
         var t;
         let r = null != (t = e[n].webkitGetAsEntry()) ? t : e[n].getAsEntry();
@@ -106,9 +106,9 @@ class h extends Chunk647438.Component {
       let n = arguments.length > 1 && true !== arguments[1] && arguments[1],
         r = e.dataTransfer;
       if (null == r) returntrue;
-      let i = Array.isArray(r.types) && false !== r.types.indexOf("text/uri-list") && false === r.types.indexOf("application/json"),
-        a = null != r.items && !t.isAllDropFiles(r.items);
-      return !i && !a || (e.stopPropagation(), e.preventDefault(), r.effectAllowed = "none", r.dropEffect = "none", n && (t.setState({
+      let a = Array.isArray(r.types) && false !== r.types.indexOf("text/uri-list") && false === r.types.indexOf("application/json"),
+        i = null != r.items && !t.isAllDropFiles(r.items);
+      return !a && !i || (e.stopPropagation(), e.preventDefault(), r.effectAllowed = "none", r.dropEffect = "none", n && (t.setState({
         isDragging: false
       }), (0, d.openUploadError)({
         title: u.intl.string(u.t.azO1Pe),
@@ -118,11 +118,11 @@ class h extends Chunk647438.Component {
     }), f(this, "handleDragOver", e => {
       var t, n, r;
       if (!this.preventUnwantedDrop(e)) returnfalse;
-      let i = e.dataTransfer;
-      if (null != i) {
-        if ("move" === i.effectAllowed ? i.dropEffect = "move" : i.dropEffect = "copy", (0, l.nfh)(d.A) && (0, l.Mr3)(d.A), e.stopPropagation(), e.preventDefault(), null == (t = (n = this.props).onDragOver) || t.call(n, e), !this.state.isDragging) {
+      let a = e.dataTransfer;
+      if (null != a) {
+        if ("move" === a.effectAllowed ? a.dropEffect = "move" : a.dropEffect = "copy", (0, l.nfh)(d.A) && (0, l.Mr3)(d.A), e.stopPropagation(), e.preventDefault(), null == (t = (n = this.props).onDragOver) || t.call(n, e), !this.state.isDragging) {
           let e = null == (r = this.elementDOMRef.current) ? true : r.ownerDocument.defaultView;
-          (null != e && i.types instanceof e.DOMStringList && i.types.contains("application/x-moz-file") || false !== i.types.indexOf("Files")) && this.setState(e => e.isDragging ? {} : {
+          (null != e && a.types instanceof e.DOMStringList && a.types.contains("application/x-moz-file") || false !== a.types.indexOf("Files")) && this.setState(e => e.isDragging ? {} : {
             isDragging: true
           })
         }
@@ -157,4 +157,4 @@ class h extends Chunk647438.Component {
     })
   }
 }
-let b = h
+let b = g

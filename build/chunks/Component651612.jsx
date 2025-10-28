@@ -1,7 +1,7 @@
 /** Chunk was on 91053 **/
 /** chunk id: 651612, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => y
 }), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,11 +20,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk332139 = require("./332139.js");
 
-function _(e) {
+function y(e) {
   var {
     channelId: t,
     className: n
-  } = e, _ = function(e, t) {
+  } = e, y = function(e, t) {
     if (null == e) return {};
     var n, r, i = function(e, t) {
       if (null == e) return {};
@@ -39,14 +39,14 @@ function _(e) {
     }
     return i
   }(e, ["channelId", "className"]);
-  let O = i.useRef(null),
-    j = (0, a.e7)([f.ZP], () => f.ZP.getFocusedLayout() === g.MI.RESIZABLE),
-    x = i.useCallback(() => {
-      let e = j ? g.MI.NO_CHAT : g.MI.RESIZABLE;
+  let x = i.useRef(null),
+    v = (0, a.e7)([f.ZP], () => f.ZP.getFocusedLayout() === g.MI.RESIZABLE),
+    j = i.useCallback(() => {
+      let e = v ? g.MI.NO_CHAT : g.MI.RESIZABLE;
       (0, h.gC)(e)
-    }, [j]),
+    }, [v]),
     {
-      unreadCount: v,
+      unreadCount: O,
       mentionCount: C
     } = function(e) {
       let t = (0, a.e7)([u.Z], () => !(0, l.isEmpty)(u.Z.getTypingUsers(e)), [e]),
@@ -65,22 +65,22 @@ function _(e) {
     }(t),
     I = i.useCallback(() => {
       var e;
-      null == (e = O.current) || e.focus()
+      null == (e = x.current) || e.focus()
     }, []);
   (0, p.yp)({
     event: m.CkL.FOCUS_CHAT_BUTTON,
     handler: I
   });
-  let S = j ? b.intl.string(b.t["5MstTl"]) : b.intl.string(b.t.kkKapG),
+  let S = v ? b.intl.string(b.t["5MstTl"]) : b.intl.string(b.t.kkKapG),
     E = [S];
   C > 0 && E.push(b.intl.formatToPlainString(b.t["3l1GOx"], {
     mentionCount: C
-  })), v > 0 && E.push(b.intl.string(b.t.x5zAGZ));
+  })), O > 0 && E.push(b.intl.string(b.t.x5zAGZ));
   let Z = (0, a.e7)([f.ZP], () => f.ZP.getFocusedLayout()),
-    P = C > 0 ? C : v,
+    P = C > 0 ? C : O,
     T = P > 0;
   return (0, r.jsxs)("div", {
-    className: y.wrapper,
+    className: _.wrapper,
     children: [(0, r.jsx)(c.d, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -100,18 +100,18 @@ function _(e) {
       return e
     }({
       isTrayButton: true,
-      buttonRef: O,
-      onClick: x,
+      buttonRef: x,
+      onClick: j,
       label: S,
       "aria-label": E.join(", "),
       tooltipPosition: "top",
       iconComponent: Z === g.MI.NO_CHAT ? s.sXD : s.hic,
       themeable: true,
       className: n
-    }, _)), T ? (0, r.jsx)(o.Z, {
+    }, y)), T ? (0, r.jsx)(o.Z, {
       hasMentions: C > 0,
       truncatedCount: P > 99 ? "99+" : P,
-      className: y.badge
+      className: _.badge
     }) : null]
   })
 }

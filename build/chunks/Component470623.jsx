@@ -1,9 +1,9 @@
 /** Chunk was on 91053 **/
 /** chunk id: 470623, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  AF: () => O,
-  oL: () => y,
-  xH: () => _
+  AF: () => x,
+  oL: () => _,
+  xH: () => y
 }), require("./388685.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -135,13 +135,13 @@ class m {
     let s = null != (r = p.Z.getThreadSettings(a.id)) ? r : {},
       m = null == a.template ? "" : a.template.trim(),
       b = p.Z.getDraft(a.id, p.d.FirstThreadMessage),
-      y = (0, d.eK)(null != b && "" !== b.trim() ? b : m);
-    this.name = null != (i = s.name) ? i : "", l = new Set(s.appliedTags), this.appliedTags = true !== l ? l : new Set, this.formOpen = this.name.length > 0 && y.textValue.length > 0, this.textAreaState = y
+      _ = (0, d.eK)(null != b && "" !== b.trim() ? b : m);
+    this.name = null != (i = s.name) ? i : "", l = new Set(s.appliedTags), this.appliedTags = true !== l ? l : new Set, this.formOpen = this.name.length > 0 && _.textValue.length > 0, this.textAreaState = _
   }
 }
 let b = Chunk647438.createContext(null);
 
-function y(e) {
+function _(e) {
   let {
     children: t,
     channel: n
@@ -152,12 +152,12 @@ function y(e) {
   })
 }
 
-function _(e, t) {
+function y(e, t) {
   let n = i.useContext(b);
   return a()(null != n, "[useForumPostComposerStore] Context should not be null"), n(e, t)
 }
 
-function O() {
+function x() {
   let e = Chunk647438.useContext(b);
   return a()(null != module, "[useForumPostComposerStore] Context should not be null"), module
 }

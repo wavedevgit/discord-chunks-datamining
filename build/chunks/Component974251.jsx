@@ -81,8 +81,8 @@ let V = Chunk647438.memo(function(e) {
     draftType: z,
     editorTextContent: W,
     setValue: q,
-    canOnlyUseTextCommands: K
-  } = e, Y = (0, y.bp)(), X = r.useRef(null), J = r.useRef(null), Q = (0, o.e7)([I.Z], () => I.Z.getActivities()), $ = (0, o.e7)([m.Z], () => m.Z.getSettings().clipsEnabled), ee = (0, o.e7)([m.Z], () => m.Z.getLastClipsSession()), et = (0, o.Wu)([m.Z], () => m.Z.getNewClipIds()), en = (0, o.e7)([j.ZP], () => null == j.ZP.getCurrentSidebarChannelId(G.id)), {
+    canOnlyUseTextCommands: Y
+  } = e, K = (0, y.bp)(), X = r.useRef(null), J = r.useRef(null), Q = (0, o.e7)([I.Z], () => I.Z.getActivities()), $ = (0, o.e7)([m.Z], () => m.Z.getSettings().clipsEnabled), ee = (0, o.e7)([m.Z], () => m.Z.getLastClipsSession()), et = (0, o.Wu)([m.Z], () => m.Z.getNewClipIds()), en = (0, o.e7)([j.ZP], () => null == j.ZP.getCurrentSidebarChannelId(G.id)), {
     showClipsHeaderEntrypoint: ei
   } = f.NV.useExperiment({
     location: "ChannelAttachButton"
@@ -130,13 +130,13 @@ let V = Chunk647438.memo(function(e) {
       canStartThreads: eg || eb,
       useSlate: eC,
       hasClips: eu,
-      canUseApplicationCommands: !K,
+      canUseApplicationCommands: !Y,
       channel: G,
       activities: Q,
       newClipsCount: eO,
       canPostPolls: ey,
       canLaunchActivities: e_,
-      appContext: Y,
+      appContext: K,
       canSendScheduledMessages: ev,
       canSummarizeThreads: ex
     });

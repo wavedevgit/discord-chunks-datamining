@@ -1,7 +1,7 @@
 /** Chunk was on 91053 **/
 /** chunk id: 52639, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => y
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -21,25 +21,25 @@ var Chunk81897 = require("./81897.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk439178 = require("./439178.js");
 
-function _(e) {
+function y(e) {
   let {
     user: t,
     channelId: n
   } = e, {
-    analyticsLocations: _
+    analyticsLocations: y
   } = (0, l.ZP)(), {
-    context: O
-  } = (0, o.KZ)(), j = (0, i.Z)(), {
-    mutualFriendsCount: x,
-    mutualFriends: v,
+    context: x
+  } = (0, o.KZ)(), v = (0, i.Z)(), {
+    mutualFriendsCount: j,
+    mutualFriends: O,
     mutualGuilds: C
-  } = (0, c.Z)(t), I = !t.bot && null != x && x > 0, S = null != C && C.length > 0;
+  } = (0, c.Z)(t), I = !t.bot && null != j && j > 0, S = null != C && C.length > 0;
   return I || S ? (0, r.jsxs)(g.Z.Overlay, {
-    className: y.overlay,
+    className: _.overlay,
     children: [S && (0, r.jsx)(m.Z, {
       section: "MUTUAL_GUILDS",
       header: b.intl.string(b.t["4lTDZq"]),
-      listClassName: y.list,
+      listClassName: _.list,
       items: C.map(e => {
         let {
           guild: n,
@@ -53,16 +53,16 @@ function _(e) {
         }, n.id)
       })
     }), S && I && (0, r.jsx)(p.Z, {
-      className: y.divider
+      className: _.divider
     }), I && (0, r.jsx)(m.Z, {
       section: "MUTUAL_FRIENDS",
       header: b.intl.string(b.t["0mTJ3j"]),
-      listClassName: y.list,
-      onExpand: () => (0, d.Z)(t.id, j),
-      items: null == v ? Array.from({
-        length: x
+      listClassName: _.list,
+      onExpand: () => (0, d.Z)(t.id, v),
+      items: null == O ? Array.from({
+        length: j
       }).map((e, t) => (0, r.jsxs)("div", {
-        className: y.loadingMutualFriend,
+        className: _.loadingMutualFriend,
         children: [(0, r.jsx)(a.ZT, {
           width: 40,
           opacity: .08
@@ -70,7 +70,7 @@ function _(e) {
           width: 135,
           opacity: .08
         })]
-      }, t)) : v.map(e => {
+      }, t)) : O.map(e => {
         let {
           key: t,
           user: i,
@@ -99,9 +99,9 @@ function _(e) {
                 })
               }
               return e
-            }({}, O), t = t = {
+            }({}, x), t = t = {
               userId: i.id,
-              sourceAnalyticsLocations: _
+              sourceAnalyticsLocations: y
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
               var n = Object.keys(e);
               if (Object.getOwnPropertySymbols) {

@@ -47,7 +47,7 @@ function g(e) {
     }), m
   }, [g, t, n], r.pF), {
     blockCount: b,
-    ignoreCount: y
+    ignoreCount: _
   } = (0, r.cj)([d.Z], () => {
     let e = 0,
       t = 0;
@@ -63,6 +63,6 @@ function g(e) {
   return {
     renderedMessages: m,
     blockCount: b,
-    ignoreCount: y
+    ignoreCount: _
   }
 }

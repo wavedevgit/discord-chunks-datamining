@@ -1,7 +1,7 @@
 /** Chunk was on 91053 **/
 /** chunk id: 308177, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => x
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -20,25 +20,25 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk307139 = require("./307139.js");
 
-function _(e) {
+function y(e) {
   return e.type === d.Ui.VOICE
 }
-let O = (0, Chunk112724.Z)(e => {
+let x = (0, Chunk112724.Z)(e => {
   var t, n;
   let {
     channel: a,
-    width: O,
-    onScroll: j,
-    popoutType: x
+    width: x,
+    onScroll: v,
+    popoutType: j
   } = e, {
-    selectedParticipantId: v,
+    selectedParticipantId: O,
     largeStream: C,
     chatOpen: I
   } = (0, l.cj)([s.Z], () => ({
     selectedParticipantId: s.Z.getSelectedParticipantId(a.id),
     largeStream: s.Z.getStageStreamSize(a.id),
     chatOpen: s.Z.getChatOpen(a.id)
-  }), [a.id]), S = (0, c.Io)(a.id), E = (0, c.Rk)(a.id, d.pV.AUDIENCE), Z = (0, l.e7)([o.Z], () => null != v ? o.Z.getParticipant(a.id, v) : null), P = (0, c.w8)(a.id, d.pV.SPEAKER), T = P.filter(_), N = null != P.find(e => e.type === d.Ui.STREAM), R = Math.floor((O - 32) / 102), w = O < 424 ? 1 : O < 624 ? 2 : O < 824 || I ? 3 : 4, A = {
+  }), [a.id]), S = (0, c.Io)(a.id), E = (0, c.Rk)(a.id, d.pV.AUDIENCE), Z = (0, l.e7)([o.Z], () => null != O ? o.Z.getParticipant(a.id, O) : null), P = (0, c.w8)(a.id, d.pV.SPEAKER), T = P.filter(y), N = null != P.find(e => e.type === d.Ui.STREAM), R = Math.floor((x - 32) / 102), w = x < 424 ? 1 : x < 624 ? 2 : x < 824 || I ? 3 : 4, A = {
     [d.pV.SPEAKER]: w,
     [d.pV.AUDIENCE]: R,
     [d.pV.SELECTED]: 1
@@ -52,7 +52,7 @@ let O = (0, Chunk112724.Z)(e => {
       speakerTileWidth: n,
       speakerTileHeight: r
     }
-  })(O, w), H = C ? O - 32 : Math.min(O - 64, 3 * U + 8), F = e => e === L.length - 1 || 0 === E && 1 === e, [B, V] = i.useState(false), [z, W] = i.useState(false);
+  })(x, w), H = C ? x - 32 : Math.min(x - 64, 3 * U + 8), F = e => e === L.length - 1 || 0 === E && 1 === e, [B, V] = i.useState(false), [z, W] = i.useState(false);
   return (0, r.jsx)(h.Z, {
     sections: k,
     renderSection: e => {
@@ -62,7 +62,7 @@ let O = (0, Chunk112724.Z)(e => {
       return 1 === t ? 0 === S ? null : (0, r.jsx)(g.Z, {
         participantCount: S,
         label: b.intl.string(b.t.CduOkx),
-        className: y.header,
+        className: _.header,
         onClick: () => V(!B),
         collapsed: B,
         speakers: T,
@@ -71,7 +71,7 @@ let O = (0, Chunk112724.Z)(e => {
       }, "speaker-header-".concat(t)) : 2 === t ? 0 === E ? null : (0, r.jsx)(g.Z, {
         participantCount: E,
         label: b.intl.string(b.t["3foUu5"]),
-        className: y.header,
+        className: _.header,
         onClick: () => W(!z),
         collapsed: z,
         channel: a
@@ -88,12 +88,12 @@ let O = (0, Chunk112724.Z)(e => {
         case 0:
           if (0 === l.length || null == l[0]) return null;
           return (0, r.jsx)("div", {
-            className: y.focusedRow,
+            className: _.focusedRow,
             children: (0, r.jsx)(m.Z, {
               channel: a,
               participant: l[0],
               width: H,
-              popoutType: x
+              popoutType: j
             })
           }, "selected-participant");
         case 1:
@@ -104,7 +104,7 @@ let O = (0, Chunk112724.Z)(e => {
               channel: a,
               participants: l,
               selectedParticipant: Z,
-              popoutType: x
+              popoutType: j
             })
           }, "speakers-".concat(t, "-").concat(n));
         case 2:
@@ -124,12 +124,12 @@ let O = (0, Chunk112724.Z)(e => {
         section: t
       } = e;
       return F(t) ? (0, r.jsx)("div", {
-        className: y.spacer
+        className: _.spacer
       }, "bottom-spacer") : null
     },
     footerHeight: e => 1 === e ? 8 : 0 === e ? 12 : 88 * !!F(e),
-    className: y.scroller,
+    className: _.scroller,
     chunkSize: 60,
-    onScroll: j
+    onScroll: v
   })
 })

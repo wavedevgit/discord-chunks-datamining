@@ -2,7 +2,7 @@
 /** chunk id: 602034, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b,
-  r: () => _
+  r: () => y
 });
 var Chunk647438 = require("./647438.js"),
   Chunk574583 = require("./574583.js"),
@@ -27,8 +27,8 @@ function b(e) {
     privateThreadMode: c,
     location: d,
     onThreadCreated: b,
-    useDefaultThreadName: y
-  } = e, _ = r.useCallback((e, t, n, r) => {
+    useDefaultThreadName: _
+  } = e, y = r.useCallback((e, t, n, r) => {
     a.Z.sendMessage(e.id, u.ZP.parse(e, n), true, {
       eagerDispatch: false,
       location: g.dy.THREAD_CREATION,
@@ -54,11 +54,11 @@ function b(e) {
     privateThreadMode: c,
     location: d,
     onThreadCreated: b,
-    useDefaultThreadName: y,
-    uploadHandler: _
+    useDefaultThreadName: _,
+    uploadHandler: y
   })
 }
-async function y(e) {
+async function _(e) {
   let t = new c.Z,
     n = await t.uploadFiles(e);
   return {
@@ -67,7 +67,7 @@ async function y(e) {
   }
 }
 
-function _(e) {
+function y(e) {
   let {
     parentChannel: t
   } = e, {
@@ -87,6 +87,6 @@ function _(e) {
     parentChannel: t,
     name: n,
     appliedTags: r,
-    upload: y
+    upload: _
   })
 }

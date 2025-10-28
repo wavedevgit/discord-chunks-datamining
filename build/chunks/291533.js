@@ -23,7 +23,7 @@ function _(e) {
     } = (0, l.Ws)({
       location: d.dr.QUESTS_BAR
     });
-  return (0, a.bf)(t && !n && !_ && p && f ? i.z.GUILD_TAG_AVAILABLE_COACHMARK : null, {
+  return (0, i.bf)(t && !n && !_ && p && f ? a.z.GUILD_TAG_AVAILABLE_COACHMARK : null, {
     cooldownDurationMs: u
   })
 }

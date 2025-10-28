@@ -1,7 +1,7 @@
 /** Chunk was on 91053 **/
 /** chunk id: 207868, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => y
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,29 +19,29 @@ var Chunk951288 = require("./951288.js"),
   Chunk665149 = require("./665149.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let _ = Chunk647438.memo(function(e) {
+let y = Chunk647438.memo(function(e) {
   let {
     channel: t
-  } = e, n = (0, d.Z)(), l = (0, s.e7)([f.Z], () => f.Z.isInChannel(t.id)), _ = (0, s.e7)([f.Z], () => !a().isEmpty(f.Z.getVoiceStatesForChannel(t.id))), O = (0, s.e7)([h.Z], () => h.Z.can(b.Plq.CONNECT, t)), {
-    needSubscriptionToAccess: j
-  } = (0, u.Z)(t.id), x = (0, p.$R)(t), v = i.useCallback(() => {
+  } = e, n = (0, d.Z)(), l = (0, s.e7)([f.Z], () => f.Z.isInChannel(t.id)), y = (0, s.e7)([f.Z], () => !a().isEmpty(f.Z.getVoiceStatesForChannel(t.id))), x = (0, s.e7)([h.Z], () => h.Z.can(b.Plq.CONNECT, t)), {
+    needSubscriptionToAccess: v
+  } = (0, u.Z)(t.id), j = (0, p.$R)(t), O = i.useCallback(() => {
     c.Z.handleVoiceConnect({
       channel: t,
       connected: l,
-      needSubscriptionToAccess: j,
+      needSubscriptionToAccess: v,
       locked: false
     })
-  }, [t, l, j]);
-  return (i.useEffect(() => (g.S.subscribe(b.CkL.CALL_START, v), () => {
-    g.S.unsubscribe(b.CkL.CALL_START, v)
-  }), [v]), p.tM.useExperiment({
+  }, [t, l, v]);
+  return (i.useEffect(() => (g.S.subscribe(b.CkL.CALL_START, O), () => {
+    g.S.unsubscribe(b.CkL.CALL_START, O)
+  }), [O]), p.tM.useExperiment({
     guildId: t.guild_id,
     location: "63250c_1"
   }, {
     autoTrackExposure: false
-  }).enabled && !n && !l && O && x && t.isVocalThread()) ? (0, r.jsx)(m.ZP.Icon, {
+  }).enabled && !n && !l && x && j && t.isVocalThread()) ? (0, r.jsx)(m.ZP.Icon, {
     icon: o.Csw,
-    onClick: v,
-    tooltip: _ ? y.intl.string(y.t.fdEeb5) : y.intl.string(y.t.focH1t)
+    onClick: O,
+    tooltip: y ? _.intl.string(_.t.fdEeb5) : _.intl.string(_.t.focH1t)
   }) : null
 })

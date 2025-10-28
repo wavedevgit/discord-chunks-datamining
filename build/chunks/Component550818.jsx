@@ -67,34 +67,34 @@ function I(e) {
         ref: N,
         user: t,
         displayProfile: S,
-        themeType: O.l.SIDEBAR,
+        themeType: x.l.SIDEBAR,
         themeOverride: E,
         children: (0, r.jsx)(l.u2D, {
           children: (0, r.jsxs)("div", {
-            className: x.container,
+            className: j.container,
             children: [(0, r.jsx)("img", {
               alt: "",
-              src: v,
-              className: x.preview,
+              src: O,
+              className: j.preview,
               "aria-hidden": true
             }), (0, r.jsxs)("div", {
-              className: x.body,
+              className: j.body,
               children: [(0, r.jsxs)("div", {
-                className: x.headerContainer,
+                className: j.headerContainer,
                 children: [(0, r.jsx)(m.Z, {
                   user: t
                 }), (0, r.jsx)(s.Heading, {
                   variant: "heading-lg/bold",
-                  children: j.intl.string(j.t.b33pLD)
+                  children: v.intl.string(v.t.b33pLD)
                 }), (0, r.jsx)(s.Text, {
                   variant: "text-sm/medium",
-                  children: j.intl.format(Z ? j.t["8F+WNz"] : j.t["/cZp5s"], {
+                  children: v.intl.format(Z ? v.t["8F+WNz"] : v.t["/cZp5s"], {
                     username: p.ZP.getName(n.guild_id, n.id, t)
                   })
                 })]
               }), (0, r.jsxs)(s.Kqy, {
                 align: "center",
-                children: [(0, r.jsx)(_.Z, {
+                children: [(0, r.jsx)(y.Z, {
                   isBlocked: Z,
                   onClick: () => {
                     I(), (0, f.pQ)(C({
@@ -102,7 +102,7 @@ function I(e) {
                       analyticsLocations: P
                     }, T))
                   }
-                }), (0, r.jsx)(y.Z, {
+                }), (0, r.jsx)(_.Z, {
                   userId: t.id,
                   onClick: () => {
                     I(), (0, f.pQ)(C({

@@ -37,11 +37,11 @@ function h(e) {
     threadSettings: d,
     textAreaState: h
   } = e, [f, g] = i.useState(false), [m, b] = i.useState(false), {
-    enableAIFeatures: y
+    enableAIFeatures: _
   } = o.C.useExperiment({
     location: "CreateThreadSidebar"
-  }), _ = i.useCallback(async () => {
-    if (y) {
+  }), y = i.useCallback(async () => {
+    if (_) {
       g(true);
       try {
         let r = null;
@@ -60,46 +60,46 @@ function h(e) {
         g(false)
       }
     }
-  }, [t.id, n, l, y, h.textValue]);
+  }, [t.id, n, l, _, h.textValue]);
   i.useEffect(() => {
     b(false), g(false), t.id === d.parentChannelId && n !== d.parentMessageId && l({
       name: ""
     })
   }, [n, l, t.id, d.parentChannelId, d.parentMessageId]), i.useEffect(() => {
-    (null == d.name || "" === d.name.trim()) && !m && y && null != n && (b(true), _())
-  }, [t.id, n, l, d.name, m, y, _]);
-  let O = i.useCallback(function() {
+    (null == d.name || "" === d.name.trim()) && !m && _ && null != n && (b(true), y())
+  }, [t.id, n, l, d.name, m, _, y]);
+  let x = i.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-      if (y) return {
+      if (_) return {
         icon: s.$2U,
-        onClick: _,
+        onClick: y,
         "aria-label": u.intl.string(u.t.ZF2oBs),
         disabled: e || f || null == n && h.textValue.trim().length < 10,
         tooltip: u.intl.string(u.t.ZF2oBs),
         loading: f
       }
-    }, [y, _, f, n, h.textValue]),
-    j = i.useCallback(function() {
+    }, [_, y, f, n, h.textValue]),
+    v = i.useCallback(function() {
       let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-      return y ? (0, r.jsx)(a.u, {
+      return _ ? (0, r.jsx)(a.u, {
         text: u.intl.string(u.t.ZF2oBs),
         children: (0, r.jsx)(s.hU, {
           icon: s.$2U,
           variant: "secondary",
           size: "sm",
           "aria-label": u.intl.string(u.t.ZF2oBs),
-          onClick: _,
+          onClick: y,
           disabled: e || f || null == n && h.textValue.trim().length < 10,
           loading: f,
           type: "button"
         })
       }) : null
-    }, [y, f, n, h.textValue, _]);
+    }, [_, f, n, h.textValue, y]);
   return {
     isGeneratingAI: f,
-    generateAIName: _,
-    enableAIFeatures: y,
-    renderAiGenerateButton: j,
-    getThreadNameInputAccessory: O
+    generateAIName: y,
+    enableAIFeatures: _,
+    renderAiGenerateButton: v,
+    getThreadNameInputAccessory: x
   }
 }

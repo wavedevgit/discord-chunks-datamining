@@ -58,13 +58,13 @@ function m(e) {
     return i
   }(s, ["modalType"]), b = i.useCallback(() => {
     null != l && o.Z.nsfwReturnToSafety(l.id)
-  }, [l]), y = i.useCallback(() => {
-    null != l && o.Z.nsfwAgree(l.id)
   }, [l]), _ = i.useCallback(() => {
+    null != l && o.Z.nsfwAgree(l.id)
+  }, [l]), y = i.useCallback(() => {
     c.Z.showAgeVerificationGetStartedModal({
       entryPoint: d.cU.NSFW_GUILD
     })
-  }, []), O = (t = g({}, m), n = n = {
+  }, []), x = (t = g({}, m), n = n = {
     guildId: null == l ? true : l.id,
     channelId: a,
     disagreement: h.intl.string(h.t["/g10LC"])
@@ -82,16 +82,16 @@ function m(e) {
     case d.it.NSFW_CHANNEL_AGE_VERIFY:
     case d.it.GUILD_LARGE_SERVER:
       return (0, r.jsx)(p.Z, g({
-        onAgree: _,
-        onDisagree: b,
-        modalType: f
-      }, O));
-    default:
-      return (0, r.jsx)(p.Z, g({
         onAgree: y,
         onDisagree: b,
         modalType: f
-      }, O))
+      }, x));
+    default:
+      return (0, r.jsx)(p.Z, g({
+        onAgree: _,
+        onDisagree: b,
+        modalType: f
+      }, x))
   }
 }
 let b = function(e) {

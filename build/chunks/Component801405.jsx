@@ -1,7 +1,7 @@
 /** Chunk was on 91053 **/
 /** chunk id: 801405, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -21,24 +21,24 @@ var Chunk951288 = require("./951288.js"),
   Chunk228488 = require("./228488.js"),
   Chunk981631 = require("./981631.js");
 
-function O(e) {
+function x(e) {
   let {
     channel: t,
     appContext: n,
-    popoutOpen: O,
-    popoutWindow: j,
-    currentWindow: x
+    popoutOpen: x,
+    popoutWindow: v,
+    currentWindow: j
   } = e, {
-    parentAnalyticsLocation: v
-  } = (0, c.ZP)(), C = n === _.IlC.POPOUT, I = i.useRef(null), {
+    parentAnalyticsLocation: O
+  } = (0, c.ZP)(), C = n === y.IlC.POPOUT, I = i.useRef(null), {
     currentLayout: S,
     mode: E
   } = (0, l.cj)([d.Z], () => {
     let e = d.Z.getMode(t.id),
-      r = n === _.IlC.POPOUT;
-    r && (e = _.WtW.VIDEO);
-    let i = e === _.WtW.VIDEO ? d.Z.getLayout(t.id, n) : _.AEg.MINIMUM;
-    return r && i !== _.AEg.FULL_SCREEN && (i = _.AEg.NO_CHAT), {
+      r = n === y.IlC.POPOUT;
+    r && (e = y.WtW.VIDEO);
+    let i = e === y.WtW.VIDEO ? d.Z.getLayout(t.id, n) : y.AEg.MINIMUM;
+    return r && i !== y.AEg.FULL_SCREEN && (i = y.AEg.NO_CHAT), {
       currentLayout: i,
       mode: e
     }
@@ -51,33 +51,33 @@ function O(e) {
       currentDocument: T,
       rootNode: N
     } = i.useMemo(() => {
-      let e = null != j && C ? j.document : document,
-        t = x.document.getElementById("app-mount");
+      let e = null != v && C ? v.document : document,
+        t = j.document.getElementById("app-mount");
       return {
-        currentWindow: x,
+        currentWindow: j,
         currentDocument: e,
         rootNode: t
       }
-    }, [j, C, x]),
-    R = O && !C,
-    w = E === _.WtW.VIDEO && Z && !R,
+    }, [v, C, j]),
+    R = x && !C,
+    w = E === y.WtW.VIDEO && Z && !R,
     A = i.useCallback((e, r) => {
-      r !== e && (s.Z.updateLayout(t.id, r, n), r === _.AEg.FULL_SCREEN && t.isPrivate() && m.S.dispatch(_.CkL.TEXTAREA_BLUR))
+      r !== e && (s.Z.updateLayout(t.id, r, n), r === y.AEg.FULL_SCREEN && t.isPrivate() && m.S.dispatch(y.CkL.TEXTAREA_BLUR))
     }, [n, t]),
     D = i.useCallback(e => {
-      null != N && e === _.AEg.FULL_SCREEN && (A(e, P.current), (0, y.Pr)(e => {
+      null != N && e === y.AEg.FULL_SCREEN && (A(e, P.current), (0, _.Pr)(e => {
         P.current = e
       }, T))
     }, [T, A, N]),
     L = i.useCallback(e => () => {
-      null != N && ((0, u.v)(v, u.d.FULL_SCREEN, e !== _.AEg.FULL_SCREEN), e !== _.AEg.FULL_SCREEN ? (P.current = e, A(e, _.AEg.FULL_SCREEN), (0, y.Dj)(N)) : D(e))
-    }, [A, D, N, v]);
+      null != N && ((0, u.v)(O, u.d.FULL_SCREEN, e !== y.AEg.FULL_SCREEN), e !== y.AEg.FULL_SCREEN ? (P.current = e, A(e, y.AEg.FULL_SCREEN), (0, _.Dj)(N)) : D(e))
+    }, [A, D, N, O]);
   i.useEffect(() => {
     let e = () => {
-      null != N && ((0, y.rB)(N, T) || S !== _.AEg.FULL_SCREEN || L(S)())
+      null != N && ((0, _.rB)(N, T) || S !== y.AEg.FULL_SCREEN || L(S)())
     };
-    return T.addEventListener(y.NO, e), () => {
-      T.removeEventListener(y.NO, e)
+    return T.addEventListener(_.NO, e), () => {
+      T.removeEventListener(_.NO, e)
     }
   }, [T, S, L, N]);
   let M = {
@@ -92,7 +92,7 @@ function O(e) {
       channel: e,
       maybeLeaveFullScreen: t
     } = k.current;
-    return g.default.track(_.rMx.VIDEO_LAYOUT_TOGGLED, function(e) {
+    return g.default.track(y.rMx.VIDEO_LAYOUT_TOGGLED, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -115,13 +115,13 @@ function O(e) {
       C && (0, b.isMac)() || t(S)
     }
   }, [S, C]), i.useEffect(() => {
-    null != N && I.current === _.WtW.VIDEO && E === _.WtW.VOICE && (0, y.Pr)(N, T)
+    null != N && I.current === y.WtW.VIDEO && E === y.WtW.VOICE && (0, _.Pr)(N, T)
   }, [T, E, I, N]), i.useEffect(() => {
-    !Z && C && a.Z.wait(() => p.xv(_.KJ3.CHANNEL_CALL_POPOUT))
+    !Z && C && a.Z.wait(() => p.xv(y.KJ3.CHANNEL_CALL_POPOUT))
   }, [Z, C]), w) ? (0, r.jsx)(h.Z, {
     themeable: false,
     node: N,
-    guestWindow: j,
+    guestWindow: v,
     onClick: L(S)
   }) : null
 }

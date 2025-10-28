@@ -175,14 +175,14 @@ function X(e) {
     }
   }(t, n), {
     textAreaState: b,
-    setTextAreaState: y
+    setTextAreaState: _
   } = function(e, t) {
-    let [n, r] = i.useState((0, _.H2)());
+    let [n, r] = i.useState((0, y.H2)());
     return i.useEffect(() => {
       function n(n) {
         var i;
         let l = T.Z.getDraft(e.id, T.d.FirstThreadMessage);
-        (0 === l.length || true === n) && r((0, _.eK)(l)), t(null != (i = T.Z.getThreadSettings(e.id)) ? i : {})
+        (0 === l.length || true === n) && r((0, y.eK)(l)), t(null != (i = T.Z.getThreadSettings(e.id)) ? i : {})
       }
       return n(true), T.Z.addChangeListener(n), () => {
         T.Z.removeChangeListener(n)
@@ -191,9 +191,9 @@ function X(e) {
       textAreaState: n,
       setTextAreaState: r
     }
-  }(t, f), O = (0, k.vH)(t), {
-    isGeneratingAI: j,
-    enableAIFeatures: x,
+  }(t, f), x = (0, k.vH)(t), {
+    isGeneratingAI: v,
+    enableAIFeatures: j,
     getThreadNameInputAccessory: C
   } = (0, H.U)({
     parentChannel: t,
@@ -236,13 +236,13 @@ function X(e) {
         f(true), null == e && (e = a.textValue), e = e.trim(), (null == i || 0 === i.length) && (i = null == (s = S.Z.getStickerPreview(t.id, q.drafts.type)) ? true : s.map(e => e.id)), (null == l || 0 === l.length) && (l = w.Z.getUploads(t.id, T.d.FirstThreadMessage));
         let m = null != (c = r.name) ? c : "",
           b = (o || null == n) && 0 === m.length,
-          y = "" === e && (null == i || 0 === i.length) && 0 === l.length;
-        if (d(b ? (0, M.V_)() : null), p(y ? (0, M.T4)() : null), b || y) return f(false), {
+          _ = "" === e && (null == i || 0 === i.length) && 0 === l.length;
+        if (d(b ? (0, M.V_)() : null), p(_ ? (0, M.T4)() : null), b || _) return f(false), {
           shouldClear: false,
           shouldRefocus: true
         };
         let {
-          valid: _
+          valid: y
         } = await (0, D.v)({
           content: e,
           stickers: i,
@@ -250,7 +250,7 @@ function X(e) {
           type: q,
           channel: null == n ? t : null
         });
-        if (!_) return f(false), {
+        if (!y) return f(false), {
           shouldClear: false,
           shouldRefocus: true
         };
@@ -273,11 +273,11 @@ function X(e) {
     parentChannel: t,
     parentMessageId: n,
     threadSettings: p,
-    privateThreadMode: O,
+    privateThreadMode: x,
     textAreaState: b,
     location: l,
-    enableAIFeatures: x
-  }), R = (0, k.oD)(p, O) ? c.qtY : c.or_;
+    enableAIFeatures: j
+  }), R = (0, k.oD)(p, x) ? c.qtY : c.or_;
   return (0, r.jsx)("div", {
     className: z.chat,
     onMouseDown: u,
@@ -294,7 +294,7 @@ function X(e) {
           fade: true,
           children: (0, r.jsxs)("div", {
             className: z.scrollerInner,
-            children: [(0, r.jsxs)(v.ZP, {
+            children: [(0, r.jsxs)(O.ZP, {
               channelId: "create-thread-null",
               children: [(0, r.jsx)("div", {
                 className: a()(W.iconWrapper, z.iconWrapper),
@@ -309,14 +309,14 @@ function X(e) {
                   updateThreadSettings: m,
                   error: I,
                   disabled: N,
-                  isGeneratingAI: j,
-                  enableAIFeatures: x,
+                  isGeneratingAI: v,
+                  enableAIFeatures: j,
                   getThreadNameInputAccessory: C
                 }), t.type === B.d4z.GUILD_TEXT ? (0, r.jsx)(J, {
                   startedFromMessage: null != n,
                   threadSettings: p,
                   updateThreadSettings: m,
-                  privateThreadMode: O
+                  privateThreadMode: x
                 }) : null]
               })]
             }), (0, r.jsx)(et, {
@@ -329,7 +329,7 @@ function X(e) {
           children: [(0, r.jsx)(ee, {
             parentChannel: t,
             textAreaState: b,
-            setTextAreaState: y,
+            setTextAreaState: _,
             submit: P,
             error: Z
           }), (0, r.jsx)(h.ZP, {
@@ -379,13 +379,13 @@ function $(e) {
     getThreadNameInputAccessory: h
   } = e, f = null != (t = l.name) ? t : "", g = (0, M.Op)(s, {
     content: f
-  }), m = (0, k.Od)(n, i), b = null != i && !p, y = (0, x.Dt)(), _ = p ? V.intl.string(V.t["Nb2/RE"]) : "" !== m ? m : V.intl.string(V.t["Nb2/RE"]);
+  }), m = (0, k.Od)(n, i), b = null != i && !p, _ = (0, j.Dt)(), y = p ? V.intl.string(V.t["Nb2/RE"]) : "" !== m ? m : V.intl.string(V.t["Nb2/RE"]);
   return (0, r.jsx)(c.oil, {
     label: V.intl.string(b ? V.t.JPvIiL : V.t.j3XWjD),
     trailing: h(o),
     value: f,
-    id: y,
-    placeholder: _,
+    id: _,
+    placeholder: y,
     maxLength: B.HN8,
     onChange: e => {
       a({
@@ -415,7 +415,7 @@ function ee(e) {
       textValue: n,
       richValue: r
     }))
-  }, [t.id, l]), y = i.useCallback(e => {
+  }, [t.id, l]), _ = i.useCallback(e => {
     let {
       value: t,
       uploads: n,
@@ -430,21 +430,21 @@ function ee(e) {
     event: B.CkL.TEXTAREA_BLUR,
     handler: m
   });
-  let _ = (0, s.e7)([R.Z], () => R.Z.can(B.Plq.ATTACH_FILES, t)),
-    x = (0, M.Op)(p, {
+  let y = (0, s.e7)([R.Z], () => R.Z.can(B.Plq.ATTACH_FILES, t)),
+    j = (0, M.Op)(p, {
       content: n.textValue
     });
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(j.Z, {
+    children: [(0, r.jsx)(v.Z, {
       channelId: t.id,
       type: q,
-      canAttachFiles: _
+      canAttachFiles: y
     }), (0, r.jsx)("div", {
       className: z.starterMessageError,
       children: (0, r.jsx)(c.pdY, {
-        error: x
+        error: j
       })
-    }), (0, r.jsx)(O.ZP, {
+    }), (0, r.jsx)(x.ZP, {
       type: q,
       channel: t,
       placeholder: V.intl.string(V.t.taZfIC),
@@ -453,12 +453,12 @@ function ee(e) {
       focused: h,
       className: a()(z.channelTextArea, z.channelTextAreaWithTypingIndicator),
       innerClassName: a()(z.channelTextAreaInner, {
-        [z.channelTextAreaInnerError]: null != x
+        [z.channelTextAreaInnerError]: null != j
       }),
       onFocus: g,
       onBlur: m,
       onChange: b,
-      onSubmit: y,
+      onSubmit: _,
       promptToUpload: L.d
     })]
   })

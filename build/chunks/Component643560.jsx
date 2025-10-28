@@ -53,30 +53,30 @@ function f(e) {
     hideEditButton: m = false
   } = e, {
     isEntryAdmin: b,
-    canEdit: y,
-    canRemove: _
-  } = (0, d.Z)(t), O = (0, s.Z)({
+    canEdit: _,
+    canRemove: y
+  } = (0, d.Z)(t), x = (0, s.Z)({
     id: t.guildId,
     label: u.intl.string(u.t["94lLD7"]),
     onSuccess: g
   });
   i.useEffect(() => {
-    y || _ || null != O || (0, a.Zy)()
+    _ || y || null != x || (0, a.Zy)()
   });
-  let j = () => {
+  let v = () => {
     c.kx(t.channelId, t.guildId)
   };
 
-  function x() {
+  function j() {
     (0, a.Zy)(), null == g || g()
   }
   return (0, r.jsxs)(l.v2r, {
     navId: "guild-entry-context",
-    onClose: x,
+    onClose: j,
     "aria-label": u.intl.string(u.t.HpQykc),
     onSelect: f,
     children: [(0, r.jsxs)(l.kSQ, {
-      children: [y && !m ? (0, r.jsx)(l.sNh, {
+      children: [_ && !m ? (0, r.jsx)(l.sNh, {
         id: "update-entry",
         label: u.intl.string(u.t.XnuOvN),
         action: function() {
@@ -87,9 +87,9 @@ function f(e) {
             return n => (0, r.jsx)(e, h(p({}, n), {
               entry: t
             }))
-          }), x()
+          }), j()
         }
-      }) : null, _ ? (0, r.jsx)(l.sNh, {
+      }) : null, y ? (0, r.jsx)(l.sNh, {
         id: "remove-from-hub",
         label: u.intl.string(u.t.KUxYWH),
         action: function() {
@@ -97,7 +97,7 @@ function f(e) {
             header: u.intl.string(u.t.KUxYWH),
             confirmText: u.intl.string(u.t.N86XcP),
             cancelText: u.intl.string(u.t["ETE/oC"]),
-            onConfirm: j
+            onConfirm: v
           }, e), {
             children: (0, r.jsx)(l.Text, {
               variant: "text-md/normal",
@@ -105,20 +105,20 @@ function f(e) {
                 guildName: t.name
               })
             })
-          }))), x()
+          }))), j()
         },
         color: "danger"
       }) : null, b ? null : (0, r.jsx)(l.sNh, {
         id: "report-server-listing",
         label: u.intl.string(u.t.Aen9eh),
         action: function() {
-          null != t && ((0, o.sq)(t), x())
+          null != t && ((0, o.sq)(t), j())
         },
         icon: l.U65,
         color: "danger"
       })]
     }), (0, r.jsx)(l.kSQ, {
-      children: O
+      children: x
     })]
   })
 }

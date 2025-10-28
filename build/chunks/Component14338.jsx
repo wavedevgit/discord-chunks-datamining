@@ -1,7 +1,7 @@
 /** Chunk was on 91053 **/
 /** chunk id: 14338, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => v
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk768581 = require("./768581.js"),
   Chunk374379 = require("./374379.js");
 
-function y(e) {
+function _(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -38,7 +38,7 @@ function y(e) {
   return e
 }
 
-function _(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -51,15 +51,15 @@ function _(e, t) {
   }), e
 }
 
-function O(e) {
+function x(e) {
   let {
     channel: t,
     speaker: l,
     className: g
-  } = e, O = i.useRef(null), {
-    newestAnalyticsLocation: j
-  } = (0, u.ZP)(), x = (0, h.bp)(), {
-    reducedMotion: v
+  } = e, x = i.useRef(null), {
+    newestAnalyticsLocation: v
+  } = (0, u.ZP)(), j = (0, h.bp)(), {
+    reducedMotion: O
   } = i.useContext(o.Sfi), C = (0, d.Z)({
     userId: l.id
   }), I = null != l.member ? (0, m.CA)(l.member) : null, S = e => {
@@ -67,31 +67,31 @@ function O(e) {
       let {
         default: e
       } = await Promise.all([n.e("79695"), n.e("98783"), n.e("8982"), n.e("7717"), n.e("52021")]).then(n.bind(n, 757387));
-      return n => (0, r.jsx)(e, _(y({}, n), {
+      return n => (0, r.jsx)(e, y(_({}, n), {
         user: l.user,
         guildId: t.guild_id,
         channel: t,
         showMediaItems: true,
         showStageChannelItems: true,
         showChatItems: false,
-        onInteraction: (0, p.u)("GuildChannelUserContextMenu", j)
+        onInteraction: (0, p.u)("GuildChannelUserContextMenu", v)
       }))
     }, {
-      context: x
+      context: j
     })
   };
   return (0, r.jsx)(f.Z, {
-    targetElementRef: O,
+    targetElementRef: x,
     user: l.user,
     guildId: t.guild_id,
     channelId: t.id,
     clickTrap: true,
     children: e => (0, r.jsx)(s.u, {
-      targetElementRef: O,
+      targetElementRef: x,
       __unsupportedReactNodeAsText: l.userNick,
       position: "bottom",
-      children: (0, r.jsx)(o.P3F, _(y({}, e), {
-        innerRef: O,
+      children: (0, r.jsx)(o.P3F, y(_({}, e), {
+        innerRef: x,
         onClick: t => {
           t.stopPropagation(), e.onClick(t)
         },
@@ -101,14 +101,14 @@ function O(e) {
           size: o.EFr.SIZE_24,
           className: a()(b.avatar, g),
           "aria-label": l.userNick,
-          isSpeaking: C && !v.enabled
+          isSpeaking: C && !O.enabled
         })
       }))
     })
   })
 }
 
-function j(e) {
+function v(e) {
   let {
     speakers: t,
     channel: n
@@ -118,7 +118,7 @@ function j(e) {
     guildId: n.guild_id,
     users: t,
     max: 10,
-    renderUser: (e, t, i) => (0, r.jsx)(O, {
+    renderUser: (e, t, i) => (0, r.jsx)(x, {
       channel: n,
       speaker: e,
       className: t

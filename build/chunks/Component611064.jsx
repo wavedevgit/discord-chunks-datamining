@@ -2,7 +2,7 @@
 /** chunk id: 611064, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   R: () => b,
-  Z: () => y
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,15 +22,15 @@ var Chunk951288 = require("./951288.js"),
 function b(e) {
   return (null == e ? true : e.id) === p.G
 }
-let y = Chunk647438.memo(function(e) {
+let _ = Chunk647438.memo(function(e) {
   let t, {
       title: p,
       onToggleExpand: b,
-      expanded: y,
-      expandedCount: _
+      expanded: _,
+      expandedCount: y
     } = e,
-    O = (0, l.e7)([d.Z], () => d.Z.hidden),
-    j = i.useCallback(e => {
+    x = (0, l.e7)([d.Z], () => d.Z.hidden),
+    v = i.useCallback(e => {
       (0, s.jW)(e, async () => {
         let {
           MemberListContentSettingsMenu: e
@@ -45,24 +45,24 @@ let y = Chunk647438.memo(function(e) {
     children: [(0, r.jsx)(a.nn4, {
       children: f.intl.format(f.t.Uaqbke, {
         title: p,
-        count: _
+        count: y
       })
     }), (0, r.jsxs)(a.P3F, {
       onClick: e => {
-        if (e.currentTarget === e.target || e.currentTarget.contains(e.target)) return O ? (0, c.lY)() : _ > 3 ? b() : (0, h.dG4)()
+        if (e.currentTarget === e.target || e.currentTarget.contains(e.target)) return x ? (0, c.lY)() : y > 3 ? b() : (0, h.dG4)()
       },
-      onContextMenu: j,
+      onContextMenu: v,
       tag: "span",
       "aria-hidden": true,
       className: g.headerContainer,
       children: [(0, r.jsxs)("div", {
         className: g.header,
         children: [(0, r.jsxs)("span", {
-          children: [p, " — ", _]
+          children: [p, " — ", y]
         }), (0, r.jsx)(u.Z, {})]
-      }), _ <= 3 && !O ? null : (t = O ? (0, r.jsx)(a.u04, {
+      }), y <= 3 && !x ? null : (t = x ? (0, r.jsx)(a.u04, {
         className: g.toggleExpandIcon
-      }) : y ? (0, r.jsx)(a.CJ0, {
+      }) : _ ? (0, r.jsx)(a.CJ0, {
         className: g.toggleExpandIcon
       }) : (0, r.jsx)(a.Fbu, {
         className: g.toggleExpandIcon

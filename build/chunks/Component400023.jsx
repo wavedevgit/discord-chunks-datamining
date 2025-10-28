@@ -1,7 +1,7 @@
 /** Chunk was on 47840 **/
 /** chunk id: 400023, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => Y
+  Z: () => K
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -93,7 +93,7 @@ function W(e, t) {
   return r
 }
 let q = (0, Chunk13941.animated)(Chunk481060.eTT),
-  K = Chunk647438.memo(function(e) {
+  Y = Chunk647438.memo(function(e) {
     var t, n;
     let {
       className: l,
@@ -115,7 +115,7 @@ let q = (0, Chunk13941.animated)(Chunk481060.eTT),
       hideSummaries: A = false,
       jumpBarClassName: M,
       typingGradient: R
-    } = e, [D, K] = r.useState(null != (n = E.Z.isAtBottom(m.id)) && n), Y = r.useMemo(() => y ? (0, L.aJ)({
+    } = e, [D, Y] = r.useState(null != (n = E.Z.isAtBottom(m.id)) && n), K = r.useMemo(() => y ? (0, L.aJ)({
       compact: true,
       messageGroups: 30,
       groupRange: 4,
@@ -135,10 +135,10 @@ let q = (0, Chunk13941.animated)(Chunk481060.eTT),
       compact: y,
       hasUnreads: j,
       focusId: S,
-      placeholderHeight: Y.totalHeight,
+      placeholderHeight: K.totalHeight,
       canLoadMore: null == T,
-      handleScrollToBottom: r.useCallback(() => K(true), [K]),
-      handleScrollFromBottom: r.useCallback(() => K(false), [K]),
+      handleScrollToBottom: r.useCallback(() => Y(true), [Y]),
+      handleScrollFromBottom: r.useCallback(() => Y(false), [Y]),
       additionalMessagePadding: 48
     }), J = (0, k.Z)({
       scrollerRef: X.ref,
@@ -161,7 +161,7 @@ let q = (0, Chunk13941.animated)(Chunk481060.eTT),
       uploads: x,
       loadMore: X.loadMore,
       scrollManager: X,
-      specs: Y,
+      specs: K,
       filterAfterTimestamp: null != T ? T : Q,
       showingQuarantineBanner: N,
       hideSummaries: A,
@@ -263,7 +263,7 @@ let q = (0, Chunk13941.animated)(Chunk481060.eTT),
       })]
     })
   }, (e, t) => null != e.isHidden && null != t.isHidden && e.isHidden && t.isHidden),
-  Y = Chunk647438.memo(function(e) {
+  K = Chunk647438.memo(function(e) {
     var {
       channel: t,
       showingQuarantineBanner: n,
@@ -381,7 +381,7 @@ let q = (0, Chunk13941.animated)(Chunk481060.eTT),
     return (0, i.jsx)(b.aQ.Provider, {
       value: (0, M.Z)(L, d),
       children: (0, i.jsx)(D.v, {
-        children: (0, i.jsx)(K, z(G({}, u), {
+        children: (0, i.jsx)(Y, z(G({}, u), {
           messageGroupSpacing: O,
           showNewMessagesBar: true,
           channel: t,

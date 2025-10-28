@@ -24,25 +24,25 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk196979 = require("./196979.js");
 
-function v(e) {
+function O(e) {
   let {
     onClick: t,
     className: n
   } = e, i = c.S6n;
   return (0, r.jsx)(u.Z, {
     iconContainerClassName: a()({
-      [x.continueIconContainer]: false
+      [j.continueIconContainer]: false
     }),
     icon: (0, r.jsx)(i, {
       size: "custom",
       color: "currentColor",
-      className: x.continueIcon,
+      className: j.continueIcon,
       height: 20,
       width: 20
     }),
     color: o.Z.unsafe_rawColors.PRIMARY_700.css,
-    title: j.intl.string(j.t["jMLfp/"]),
-    description: j.intl.string(j.t["Vd/rEX"]),
+    title: v.intl.string(v.t["jMLfp/"]),
+    description: v.intl.string(v.t["Vd/rEX"]),
     onClick: t,
     className: n
   })
@@ -54,11 +54,11 @@ function C(e) {
   } = e, {
     participants: n,
     usersInSummary: i
-  } = (0, _.Z)(t.id);
+  } = (0, y.Z)(t.id);
   return (0, r.jsxs)("div", {
-    className: x.audienceSummary,
+    className: j.audienceSummary,
     children: [(0, r.jsx)(d.ZP, {
-      className: x.summaryItem,
+      className: j.summaryItem,
       guildId: t.guild_id,
       users: i,
       size: d.u8.SIZE_16
@@ -67,15 +67,15 @@ function C(e) {
       color: "header-secondary",
       children: function(e) {
         if (0 === e.length) return "";
-        if (1 === e.length) return j.intl.formatToPlainString(j.t["5ULgaQ"], {
+        if (1 === e.length) return v.intl.formatToPlainString(v.t["5ULgaQ"], {
           first: e[0].userNick
         });
-        if (2 === e.length) return j.intl.formatToPlainString(j.t.BHK0Op, {
+        if (2 === e.length) return v.intl.formatToPlainString(v.t.BHK0Op, {
           first: e[0].userNick,
           second: e[1].userNick
         });
         let t = e.length - 2;
-        return j.intl.formatToPlainString(j.t.T3MT4n, {
+        return v.intl.formatToPlainString(v.t.T3MT4n, {
           first: e[0].userNick,
           second: e[1].userNick,
           numOthers: t
@@ -89,39 +89,39 @@ function I(e) {
   let {
     channel: t,
     onContinueClick: n
-  } = e, l = (0, s.e7)([b.Z], () => b.Z.can(y.yP, t), [t]), o = t.guild_id, {
+  } = e, l = (0, s.e7)([b.Z], () => b.Z.can(_.yP, t), [t]), o = t.guild_id, {
     canCreateGuildEvent: d
-  } = (0, g.XJ)(t), u = (0, O.Z)(t.id), _ = i.useRef(null);
+  } = (0, g.XJ)(t), u = (0, x.Z)(t.id), y = i.useRef(null);
   return (0, r.jsxs)("div", {
-    className: x.container,
-    ref: _,
+    className: j.container,
+    ref: y,
     children: [(0, r.jsx)(m.Z, {
-      eventTargetRef: _
+      eventTargetRef: y
     }), (0, r.jsxs)("div", {
-      className: x.content,
+      className: j.content,
       children: [(0, r.jsxs)("div", {
-        className: x.headerContainer,
+        className: j.headerContainer,
         children: [(0, r.jsx)(c.Heading, {
-          className: x.__invalid_title,
+          className: j.__invalid_title,
           variant: "heading-xxl/normal",
-          children: j.intl.string(j.t.QGnDLs)
+          children: v.intl.string(v.t.QGnDLs)
         }), (0, r.jsx)(c.Text, {
           tag: "div",
-          className: x.subtitle,
+          className: j.subtitle,
           variant: "heading-lg/normal",
-          children: j.intl.string(j.t.djfK36)
+          children: v.intl.string(v.t.djfK36)
         })]
       }), u ? null : (0, r.jsx)(h.Z, {
         channelId: t.id
       }), l ? (0, r.jsx)(f.Z, {
-        className: x.eventPrompt,
+        className: j.eventPrompt,
         channel: t
       }) : null, d ? (0, r.jsx)(p.Z, {
-        className: x.eventPrompt,
+        className: j.eventPrompt,
         guildId: o
-      }) : null, l ? (0, r.jsx)(v, {
+      }) : null, l ? (0, r.jsx)(O, {
         className: a()({
-          [x.eventPrompt]: true
+          [j.eventPrompt]: true
         }),
         onClick: n
       }) : null, (0, r.jsx)(C, {

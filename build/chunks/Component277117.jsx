@@ -70,7 +70,7 @@ function w(e) {
         themeType: T.l.SIDEBAR
       }),
       nicknameIcons: (0, r.jsxs)(r.Fragment, {
-        children: [(0, r.jsx)(_.Z, {
+        children: [(0, r.jsx)(y.Z, {
           userId: t.id
         }), !H && (0, r.jsx)(Z.Z, {
           userId: t.id,
@@ -79,19 +79,19 @@ function w(e) {
         })]
       })
     }), M === P.OGo.PENDING_INCOMING && (0, r.jsx)(S.Z.Overlay, {
-      children: (0, r.jsx)(j.Z, {
+      children: (0, r.jsx)(v.Z, {
         user: t,
         channelId: A.id,
         applicationId: k
       })
     }), U.map(e => (0, r.jsx)(S.Z.Overlay, {
-      children: (0, r.jsx)(j.Z, {
+      children: (0, r.jsx)(v.Z, {
         user: t,
         isGameRelationship: true,
         applicationId: e.applicationId,
         channelId: A.id
       })
-    }, e.applicationId)), (0, r.jsx)(v.Z, {
+    }, e.applicationId)), (0, r.jsx)(O.Z, {
       user: t,
       className: R.card
     }), t.isProvisional && (0, r.jsx)(S.Z.Overlay, {
@@ -111,7 +111,7 @@ function w(e) {
       user: t,
       currentUser: n,
       onOpenUserProfileModal: L
-    }) : (0, r.jsx)(y.Z, {
+    }) : (0, r.jsx)(_.Z, {
       user: t,
       currentUser: n,
       className: R.card
@@ -133,13 +133,13 @@ function w(e) {
       }), G.length > 0 && (0, r.jsx)(C.Z, {
         heading: N.intl.string(N.t["Uv/eTx"]),
         headingColor: "header-primary",
-        children: (0, r.jsx)(O.Z, {
+        children: (0, r.jsx)(x.Z, {
           applicationIds: G
         })
       }), (0, r.jsx)(C.Z, {
         heading: t.bot ? N.intl.string(N.t["A//N4k"]) : N.intl.string(N.t.a6XYD9),
         headingColor: "header-primary",
-        children: (0, r.jsx)(x.Z, {
+        children: (0, r.jsx)(j.Z, {
           userId: t.id
         })
       })]

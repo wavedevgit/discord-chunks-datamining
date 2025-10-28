@@ -354,7 +354,7 @@ let eP = Chunk647438.memo(function(e) {
                 isSelfStream: false
               }));
             case "CALL":
-              return (0, i.jsx)(K.Z, eO(ex({}, c), {
+              return (0, i.jsx)(Y.Z, eO(ex({}, c), {
                 color: "disconnect",
                 onClick: () => {
                   (0, P.v)(o, P.d.DISCONNECT), null == n || n()
@@ -458,14 +458,14 @@ let eT = function(e) {
     limit: W
   } = (0, eo.Z)(n), {
     analyticsLocations: q
-  } = (0, v.ZP)(_.Z.VOICE_CONTROL_TRAY), K = (0, $.Hu)({
+  } = (0, v.ZP)(_.Z.VOICE_CONTROL_TRAY), Y = (0, $.Hu)({
     location: _.Z.VOICE_CONTROL_TRAY,
     autoTrackExposure: true
   }), {
     showRefreshedAudioContextMenu: J
   } = (0, U.e)({
     location: _.Z.VOICE_CONTROL_TRAY
-  }), et = (0, F.Z)(n), en = r.useRef(null), eu = r.useRef(null), ep = K ? e => {
+  }), et = (0, F.Z)(n), en = r.useRef(null), eu = r.useRef(null), ep = Y ? e => {
     (0, f.jW)(e, () => Promise.resolve(() => (0, i.jsx)(O.default, {
       onClose: f.Zy,
       renderInputDevices: true,
@@ -498,7 +498,7 @@ let eT = function(e) {
               let t, {
                 closePopout: n
               } = e;
-              return t = K ? (0, i.jsx)(ee.l, {
+              return t = Y ? (0, i.jsx)(ee.l, {
                 wide: true,
                 showOutputDevices: true,
                 onSettingsButtonClick: n
@@ -538,7 +538,7 @@ let eT = function(e) {
               } = e, {
                 isShown: r
               } = t;
-              return (0, i.jsx)(Y.Z, {
+              return (0, i.jsx)(K.Z, {
                 ref: en,
                 centerButton: true,
                 onPopoutClick: B ? null : n,

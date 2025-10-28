@@ -54,7 +54,7 @@ let D = Chunk647438.memo(e => {
       userIds: t
     } = e;
     return t.has(D)
-  }), [D, P.id]), q = (0, p.Z)(null != W ? [W.applicationId] : []), K = (0, _.Z)(D, P.guild_id)[0], Y = null != (n = (0, d.IX)(null == K ? true : K.application_id).data) ? n : true, [X, J] = (0, o.Wu)([O.Z], () => [O.Z.getStreamForUser(D, P.getGuildId()), O.Z.getActiveStreamForUser(D, P.getGuildId())], [P, D]), Q = (0, o.e7)([Z.Z], () => Z.Z.getSessionById(I)), $ = A.ZP.useName(x), ee = (0, o.e7)([N.Z], () => N.Z.getVoicePlatformForChannel(P.id, D), [P.id, D]), {
+  }), [D, P.id]), q = (0, p.Z)(null != W ? [W.applicationId] : []), Y = (0, _.Z)(D, P.guild_id)[0], K = null != (n = (0, d.IX)(null == Y ? true : Y.application_id).data) ? n : true, [X, J] = (0, o.Wu)([O.Z], () => [O.Z.getStreamForUser(D, P.getGuildId()), O.Z.getActiveStreamForUser(D, P.getGuildId())], [P, D]), Q = (0, o.e7)([Z.Z], () => Z.Z.getSessionById(I)), $ = A.ZP.useName(x), ee = (0, o.e7)([N.Z], () => N.Z.getVoicePlatformForChannel(P.id, D), [P.id, D]), {
     enableHangStatus: et
   } = (0, m.bN)({
     guildId: P.guild_id,
@@ -66,7 +66,7 @@ let D = Chunk647438.memo(e => {
     guildId: P.guild_id,
     location: "VoiceUsers"
   }, {
-    autoTrackExposure: (null == K ? true : K.session_id) != null
+    autoTrackExposure: (null == Y ? true : Y.session_id) != null
   });
   return (0, i.jsx)(C.Z, {
     shakeLocation: R.oZ.VOICE_USER,
@@ -106,8 +106,8 @@ let D = Chunk647438.memo(e => {
       isWatching: null != J && J.state !== M.jm8.ENDED,
       isGuest: G,
       isSelf: k,
-      requestToStreamActivity: eo ? K : true,
-      application: (ea || et) && (null == K ? true : K.session_id) != null ? Y : true,
+      requestToStreamActivity: eo ? Y : true,
+      application: (ea || et) && (null == Y ? true : Y.session_id) != null ? K : true,
       showHangStatus: en && et && (k || null != er),
       hangStatusActivity: k ? ei : er
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {

@@ -9,8 +9,8 @@ var Chunk647438 = require("./647438.js"),
 
 function o(e, t) {
   let [n, o] = r.useState(false), l = r.useCallback(async () => {
-    o(true), await (0, i.c)(e, true), o(false), null == t || t()
-  }, [e, t]), s = (0, a.Z)(e);
+    o(true), await (0, a.c)(e, true), o(false), null == t || t()
+  }, [e, t]), s = (0, i.Z)(e);
   return {
     isAdopting: n,
     onAdoptTag: l,

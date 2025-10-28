@@ -25,17 +25,17 @@ function b(e) {
   } = e, b = (0, d.C)({
     guildId: t,
     channelId: n
-  }), y = (0, c.GG)(t), _ = (0, c.YB)(t), O = (0, l.e7)([o.Z], () => o.Z.getGuild(t), [t]), j = null == O ? true : O.name, x = (0, l.e7)([s.Z], () => s.Z.getChannel(n)), v = i.useMemo(() => {
+  }), _ = (0, c.GG)(t), y = (0, c.YB)(t), x = (0, l.e7)([o.Z], () => o.Z.getGuild(t), [t]), v = null == x ? true : x.name, j = (0, l.e7)([s.Z], () => s.Z.getChannel(n)), O = i.useMemo(() => {
     let e = {};
-    for (let t of y)
+    for (let t of _)
       for (let n of t.subscription_listings_ids) e[n] = t.id;
     return e
-  }, [y]);
+  }, [_]);
   return ((0, u.Z)({
     guildId: t,
     location: f.Sbl.ROLE_SUBSCRIPTION_GATED_CHANNEL,
     relevantSubscriptionListingIds: b.map(e => e.id)
-  }), null == O) ? (0, r.jsx)("div", {
+  }), null == x) ? (0, r.jsx)("div", {
     className: m.__invalid_spinnerContainer,
     children: (0, r.jsx)(a.$jN, {
       className: m.__invalid_spinner
@@ -46,20 +46,20 @@ function b(e) {
       variant: "heading-xl/semibold",
       className: m.joinCtaTitle,
       children: g.intl.format(g.t.xHMpym, {
-        serverName: j,
-        channelName: null == x ? true : x.name
+        serverName: v,
+        channelName: null == j ? true : j.name
       })
     }), (0, r.jsx)(a.Text, {
       className: m.joinCtaSubtitle,
       variant: "text-md/normal",
       color: "header-secondary",
-      children: null == _ ? true : _.description
+      children: null == y ? true : y.description
     }), (0, r.jsx)(p.Z, {
       guildId: t,
-      children: b.filter(e => null != v[e.id]).map(e => (0, r.jsx)(h.Z, {
+      children: b.filter(e => null != O[e.id]).map(e => (0, r.jsx)(h.Z, {
         guildId: t,
         listingId: e.id,
-        groupListingId: v[e.id],
+        groupListingId: O[e.id],
         analyticsLocation: f.Sbl.ROLE_SUBSCRIPTION_GATED_CHANNEL
       }, e.id))
     })]

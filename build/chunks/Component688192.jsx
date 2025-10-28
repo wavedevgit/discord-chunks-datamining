@@ -15,7 +15,7 @@ var n, Chunk951288 = require("./951288.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk232644 = require("./232644.js"),
-  h = ((n = {}).GIFTING_FLOW = "gifting_flow", n.PROFILE_MODAL = "profile_modal", n);
+  h = ((n = {}).GIFTING_FLOW = "gifting_flow", n.PROFILE_MODAL = "profile_modal", n.PROFILE_SIDEBAR = "profile_sidebar", n);
 
 function I(e) {
   let {
@@ -29,11 +29,11 @@ function I(e) {
     onCardClick: g,
     buttonCTALabel: b,
     buttonIcon: P,
-    isOwned: j = false,
-    renderSourceIcon: v
-  } = e, S = s.useRef(null), w = s.useRef(null), y = null != h ? h : w, {
+    isOwned: S = false,
+    renderSourceIcon: j
+  } = e, v = s.useRef(null), w = s.useRef(null), y = null != h ? h : w, {
     analyticsLocations: x
-  } = (0, c.ZP)(), E = "profile_modal" === l && !j, T = (0, i.jsx)("div", {
+  } = (0, c.ZP)(), E = "profile_modal" === l && !S, T = (0, i.jsx)("div", {
     className: m.cardStateIconWrapper,
     children: (0, i.jsx)(o.sV5, {
       size: "custom",
@@ -54,12 +54,12 @@ function I(e) {
       text: b,
       icon: P,
       onClick: e => {
-        e.stopPropagation(), k()
+        e.stopPropagation(), L()
       },
       fullWidth: true
     })
-  }), k = () => {
-    j || (null != r && (0, u.Er)({
+  }), L = () => {
+    S || (null != r && (0, u.Er)({
       wishlistId: r,
       action: f.NW.WISHLIST_ITEM_CLICKED,
       skuId: t.skuId,
@@ -67,16 +67,16 @@ function I(e) {
     }), g())
   };
   return (0, i.jsxs)("div", {
-    ref: S,
+    ref: v,
     className: m.container,
     children: [(0, i.jsxs)("div", {
       ref: y,
       className: a()(m.card, {
-        [m.giftSent]: j,
+        [m.giftSent]: S,
         [m.smallCard]: "gifting_flow" === l,
         [m.largeCard]: "profile_modal" === l
       }),
-      onClick: k,
+      onClick: L,
       children: [(0, i.jsx)(o.nn4, {
         children: (0, i.jsx)(o.H, {
           children: O
@@ -84,16 +84,16 @@ function I(e) {
       }), (0, i.jsx)("div", {
         className: m.cardPreview,
         children: I()
-      }), j && T, E ? N : (0, i.jsx)(o.P3F, {
+      }), S && T, E ? N : (0, i.jsx)(o.P3F, {
         "aria-label": b,
         focusProps: {
           ringTarget: y
         },
         onClick: e => {
-          e.stopPropagation(), k()
+          e.stopPropagation(), L()
         }
       })]
-    }), null != v && v(), n && null != r && (0, i.jsx)(d.Z, {
+    }), null != j && j(), n && null != r && (0, i.jsx)(d.Z, {
       iconSize: "sm",
       item: t,
       wishlistId: r,

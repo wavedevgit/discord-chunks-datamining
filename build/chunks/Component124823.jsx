@@ -93,12 +93,12 @@ function w(e) {
             })
           }), (0, r.jsxs)("div", {
             className: T.header,
-            children: [(0, r.jsx)(O.Z, {
+            children: [(0, r.jsx)(x.Z, {
               user: n,
               displayProfile: D,
               themeType: Z.l.SIDEBAR,
               animateOnHoverOrFocusOnly: !H
-            }), (0, r.jsx)(y.Z, {
+            }), (0, r.jsx)(_.Z, {
               user: n,
               displayProfile: D,
               channelId: w.id,
@@ -113,25 +113,25 @@ function w(e) {
               nickname: h.ZP.getName(null, w.id, n),
               pronouns: null == D ? true : D.pronouns,
               onOpenProfile: A ? true : B,
-              tags: (0, r.jsx)(_.Z, {
+              tags: (0, r.jsx)(y.Z, {
                 displayProfile: D,
                 themeType: Z.l.SIDEBAR
               })
             }), (0, r.jsxs)(C.Z.Overlay, {
               className: N.overlay,
-              children: [(0, r.jsx)(v.Z, {
+              children: [(0, r.jsx)(O.Z, {
                 heading: P.intl.string(P.t["61W33d"]),
                 headingColor: "header-primary",
-                children: (0, r.jsx)(j.Z, {
+                children: (0, r.jsx)(v.Z, {
                   userBio: null == D ? true : D.bio,
                   userId: n.id,
                   animateOnHoverOrFocusOnly: true,
                   isHoveringOrFocusing: H
                 })
-              }), (0, r.jsx)(v.Z, {
+              }), (0, r.jsx)(O.Z, {
                 heading: P.intl.string(P.t["A//N4k"]),
                 headingColor: "header-primary",
-                children: (0, r.jsx)(x.Z, {
+                children: (0, r.jsx)(j.Z, {
                   userId: n.id
                 })
               })]
