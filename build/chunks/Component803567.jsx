@@ -10,7 +10,6 @@ var Chunk442837 = require("./442837.js"),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
   Chunk846027 = require("./846027.js"),
-  Chunk600164 = require("./600164.jsx"),
   Chunk921801 = require("./921801.js"),
   Chunk463395 = require("./463395.js"),
   Chunk131951 = require("./131951.js"),
@@ -20,7 +19,8 @@ var Chunk442837 = require("./442837.js"),
   Chunk738486 = require("./738486.jsx"),
   Chunk726985 = require("./726985.js"),
   Chunk981631 = require("./981631.js"),
-  Chunk388032 = require("./388032.jsx");
+  Chunk388032 = require("./388032.jsx"),
+  Chunk419659 = require("./419659.js");
 let Chunk775322 = require("./775322.js"),
   Chunk853453 = require("./853453.js"),
   O = {
@@ -30,12 +30,12 @@ let Chunk775322 = require("./775322.js"),
 
 function v(e) {
   let t = e.currentTarget;
-  f.default.track(g.rMx.NOISE_CANCELLATION_LINK_CLICKED, {
+  d.default.track(m.rMx.NOISE_CANCELLATION_LINK_CLICKED, {
     text: t.text,
     href: t.href,
     location: {
-      page: g.ZY5.USER_SETTINGS,
-      section: g.jXE.SETTINGS_VOICE_AND_VIDEO
+      page: m.ZY5.USER_SETTINGS,
+      section: m.jXE.SETTINGS_VOICE_AND_VIDEO
     }
   })
 }
@@ -45,8 +45,8 @@ function I() {
     {
       noiseCancellation: t,
       noiseSuppression: n,
-      noiseSuppressionSupported: c,
-      noiseCancellationSupported: u
+      noiseSuppressionSupported: l,
+      noiseCancellationSupported: c
     } = (0, Chunk442837.cj)([Chunk131951.Z], () => ({
       noiseCancellation: Chunk131951.Z.getNoiseCancellation(),
       noiseSuppression: Chunk131951.Z.getNoiseSuppression(),
@@ -54,9 +54,9 @@ function I() {
       noiseCancellationSupported: Chunk131951.Z.isNoiseCancellationSupported()
     }));
   if (!Chunk921801 && !Chunk463395) return null;
-  let f = +!!require,
-    h = exports ? 2 : Chunk626135,
-    m = [];
+  let d = +!!require,
+    p = exports ? 2 : Chunk626135,
+    h = [];
   return Chunk463395 && Chunk726985.push({
     name: Chunk388032.intl.string(Chunk388032.t.rdoNzt),
     value: 2
@@ -76,18 +76,20 @@ function I() {
         s.Z.setNoiseCancellation(2 === e, O), s.Z.setNoiseSuppression(1 === e, O)
       },
       value: Chunk738486
-    }), Chunk463395 && (0, Chunk951288.jsx)(Chunk481060.ToO, {
-      type: Chunk481060.Dd5.PRIMARY,
-      imageData: {
-        src: (0, Chunk780384.ap)(module) ? Chunk775322 : Chunk853453,
-        width: 70,
-        height: 40
-      },
-      align: Chunk600164.Z.Align.CENTER,
-      body: (0, Chunk951288.jsx)(Chunk481060.Anchor, {
-        href: Chunk63063.Z.getArticleURL(Chunk981631.BhN.NOISE_SUPPRESSION),
-        onClick: v,
-        children: Chunk388032.intl.string(Chunk388032.t.hvVgAZ)
+    }), Chunk463395 && (0, Chunk951288.jsx)(Chunk481060.Zbd, {
+      type: Chunk481060.Zbd.Types.PRIMARY,
+      children: (0, Chunk951288.jsxs)("div", {
+        className: Chunk419659.krispCard,
+        children: [(0, Chunk951288.jsx)("img", {
+          src: (0, Chunk780384.ap)(module) ? Chunk775322 : Chunk853453,
+          width: 70,
+          height: 40,
+          alt: ""
+        }), (0, Chunk951288.jsx)(Chunk481060.Anchor, {
+          href: Chunk63063.Z.getArticleURL(Chunk981631.BhN.NOISE_SUPPRESSION),
+          onClick: v,
+          children: Chunk388032.intl.string(Chunk388032.t.hvVgAZ)
+        })]
       })
     })]
   })
@@ -99,7 +101,7 @@ function T() {
     inputDeviceId: t,
     echoCancellation: n,
     automaticGainControl: a,
-    vadAutoThreshold: l,
+    vadAutoThreshold: d,
     vadUseKrisp: f,
     bypassSystemInputProcessing: _
   } = (0, Chunk442837.cj)([Chunk131951.Z], () => ({
@@ -111,17 +113,17 @@ function T() {
     vadUseKrisp: Chunk131951.Z.getModeOptions().vadUseKrisp,
     bypassSystemInputProcessing: Chunk131951.Z.getBypassSystemInputProcessing()
   })), {
-    hasEchoCancellation: p,
+    hasEchoCancellation: E,
     hasNoiseSuppression: b,
     hasAutomaticGainControl: y
   } = (0, Chunk442837.cj)([Chunk463395.Z], () => ({
     hasEchoCancellation: Chunk463395.Z.hasEchoCancellation(exports),
     hasNoiseSuppression: Chunk463395.Z.hasNoiseSuppression(exports),
     hasAutomaticGainControl: Chunk463395.Z.hasAutomaticGainControl(exports)
-  }), [exports]), O = Chunk210887 || Chunk775322 || Chunk853453, v = module === Chunk981631.pM4.VOICE_ACTIVITY && Chunk600164;
+  }), [exports]), O = Chunk419659 || Chunk775322 || Chunk853453, v = module === Chunk981631.pM4.VOICE_ACTIVITY && Chunk626135;
   return (0, Chunk951288.jsxs)(Chunk738486.Z, {
-    children: [O && (0, Chunk951288.jsx)(Chunk481060.Wn, {
-      messageType: Chunk481060.QYI.INFO,
+    children: [O && (0, Chunk951288.jsx)(Chunk481060.M14, {
+      type: "info",
       children: Chunk388032.intl.string(Chunk388032.t["/Whuzi"])
     }), (0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_ECHO_CANCELLATION,
@@ -129,10 +131,10 @@ function T() {
         label: Chunk388032.intl.string(Chunk388032.t.iWTwu6),
         checked: require,
         onChange: e => s.Z.setEchoCancellation(e, {
-          page: g.ZY5.USER_SETTINGS,
-          section: g.jXE.SETTINGS_VOICE_AND_VIDEO
+          page: m.ZY5.USER_SETTINGS,
+          section: m.jXE.SETTINGS_VOICE_AND_VIDEO
         }),
-        disabled: Chunk210887
+        disabled: Chunk419659
       })
     }), (0, Chunk951288.jsx)(Chunk921801.F, {
       setting: Chunk726985.s6.VOICE_AND_VIDEO_ADVANCED_PROCESSING_NOISE_SUPPRESSION,
@@ -142,7 +144,7 @@ function T() {
       children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
         label: Chunk388032.intl.string(Chunk388032.t.BbESsg),
         description: Chunk388032.intl.string(Chunk388032.t.LoOB1F),
-        checked: Chunk626135,
+        checked: Chunk63063,
         onChange: t => s.Z.setMode(e, {
           vadUseKrisp: t
         }),
@@ -155,8 +157,8 @@ function T() {
         description: Chunk388032.intl.string(Chunk388032.t["6EjbvA"]),
         checked: Chunk780384,
         onChange: e => s.Z.setAutomaticGainControl(e, {
-          page: g.ZY5.USER_SETTINGS,
-          section: g.jXE.SETTINGS_VOICE_AND_VIDEO
+          page: m.ZY5.USER_SETTINGS,
+          section: m.jXE.SETTINGS_VOICE_AND_VIDEO
         }),
         disabled: Chunk853453
       })
@@ -165,7 +167,7 @@ function T() {
       children: (0, Chunk951288.jsx)(Chunk481060.rsf, {
         label: Chunk388032.intl.string(Chunk388032.t.DFPXIG),
         description: Chunk388032.intl.string(Chunk388032.t["UyRX+C"]),
-        checked: Chunk63063,
+        checked: Chunk210887,
         onChange: e => {
           s.Z.setBypassSystemInputProcessing(e)
         }

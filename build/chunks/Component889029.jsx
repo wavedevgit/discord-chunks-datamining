@@ -51,19 +51,26 @@ function b() {
     disableSounds: y,
     disableNotifications: O,
     enableContentProtection: v
-  } = (0, Chunk442837.cj)([Chunk246946.Z], () => E({}, Chunk246946.Z.getSettings())), I = () => (0, Chunk951288.jsx)(Chunk481060.ToO, {
-    iconClassName: Chunk40086.noticeIcon,
-    type: Chunk481060.Dd5.PRIMARY,
-    imageData: {
+  } = (0, Chunk442837.cj)([Chunk246946.Z], () => E({}, Chunk246946.Z.getSettings())), I = () => (0, Chunk951288.jsxs)(Chunk481060.Zbd, {
+    type: Chunk481060.Zbd.Types.PRIMARY,
+    className: Chunk40086.noticeCard,
+    children: [(0, Chunk951288.jsxs)("div", {
+      children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
+        variant: "heading-md/medium",
+        children: Chunk388032.intl.string(Chunk388032.t.bxGbHL)
+      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+        variant: "text-sm/normal",
+        children: Chunk388032.intl.format(Chunk388032.t["4rmZnx"], {
+          streamkitURL: Chunk981631.EYA.STREAMKIT
+        })
+      })]
+    }), (0, Chunk951288.jsx)("img", {
       src: require("./560264.js"),
       width: 184,
       height: 110,
-      position: Chunk481060.SwA.RIGHT
-    },
-    title: Chunk388032.intl.string(Chunk388032.t.bxGbHL),
-    body: Chunk388032.intl.format(Chunk388032.t["4rmZnx"], {
-      streamkitURL: Chunk981631.EYA.STREAMKIT
-    })
+      alt: "",
+      className: Chunk40086.noticeImage
+    })]
   }), T = () => {
     if (Chunk358085.isPlatformEmbedded) return (0, Chunk951288.jsx)(Chunk481060.rsf, {
       label: Chunk388032.intl.string(Chunk388032.t["PKDAJ/"]),

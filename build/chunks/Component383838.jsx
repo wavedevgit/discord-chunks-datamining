@@ -2,9 +2,7 @@
 /** chunk id: 383838, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Dd: () => h,
-  Sw: () => m,
-  To: () => g
+  To: () => m
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -55,18 +53,15 @@ function p(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let h = Chunk49800.Z.Types,
-  m = {
-    LEFT: "left",
-    RIGHT: "right"
-  };
+Chunk49800.Z.Types;
+let h = "right";
 
-function g(e) {
+function m(e) {
   let t, n, {
       type: i = o.Z.Types.DANGER,
       imageData: d,
       button: p,
-      className: h,
+      className: m,
       iconClassName: g,
       title: E,
       body: b,
@@ -85,11 +80,11 @@ function g(e) {
         alt: "",
         className: a()(u.icon, g)
       }, n))
-    }), e === m.RIGHT && (v = s.Z.Direction.HORIZONTAL_REVERSE)
+    }), e === h && (v = s.Z.Direction.HORIZONTAL_REVERSE)
   } else null != p && (n = p);
   let I = true;
   return i === o.Z.Types.PRIMARY && (I = false), (0, r.jsx)(o.Z, {
-    className: a()(u.formNotice, h),
+    className: a()(u.formNotice, m),
     type: i,
     style: y,
     children: (0, r.jsxs)(s.Z, {
@@ -111,4 +106,4 @@ function g(e) {
     })
   })
 }
-g.Types = Chunk49800.Z.Types
+m.Types = Chunk49800.Z.Types

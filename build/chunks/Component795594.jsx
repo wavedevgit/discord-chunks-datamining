@@ -578,11 +578,16 @@ let ef = e => {
     return module ? (0, Chunk951288.jsx)(Chunk497321.Z, {}) : (0, Chunk951288.jsx)(Chunk273313.Z, {
       title: Chunk388032.intl.string(Chunk388032.t["f6kk+r"]),
       children: (0, Chunk951288.jsx)(Chunk481060.y5t, {
-        component: (0, Chunk951288.jsx)(Chunk481060.ToO, {
-          className: Chunk197571.marginBottom40,
-          type: Chunk481060.sje.PRIMARY,
-          title: Chunk388032.intl.string(Chunk388032.t.HU3RFw),
-          body: Chunk388032.intl.string(Chunk388032.t.Nu5Yi0)
+        component: (0, Chunk951288.jsxs)(Chunk481060.Zbd, {
+          type: Chunk481060.Zbd.Types.PRIMARY,
+          className: Chunk392082.headingCard,
+          children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
+            variant: "heading-md/medium",
+            children: Chunk388032.intl.string(Chunk388032.t.HU3RFw)
+          }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+            variant: "text-sm/normal",
+            children: Chunk388032.intl.string(Chunk388032.t.Nu5Yi0)
+          })]
         }),
         children: Chunk367907()
       })

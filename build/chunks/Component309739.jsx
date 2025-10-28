@@ -69,11 +69,12 @@ function g() {
           variant: "heading-md/medium",
           color: "header-primary",
           children: Chunk388032.intl.string(Chunk388032.t.TqdOvC)
-        }), !module && (0, Chunk951288.jsx)(Chunk481060.Wn, {
+        }), !module && (0, Chunk951288.jsx)("div", {
           className: Chunk85240.myServersIgnoredWarning,
-          messageType: Chunk481060.QYI.WARNING,
-          textColor: "text-feedback-warning",
-          children: Chunk388032.intl.string(Chunk500275.default["xxI0/W"])
+          children: (0, Chunk951288.jsx)(Chunk481060.M14, {
+            type: "warning",
+            children: Chunk388032.intl.string(Chunk500275.default["xxI0/W"])
+          })
         })]
       }), (0, Chunk951288.jsx)(Chunk940276.Z, {})]
     })]
@@ -127,11 +128,15 @@ function b() {
 function y() {
   return (0, Chunk951288.jsx)(Chunk921801.F, {
     setting: Chunk726985.s6.ACTIVITY_PRIVACY_TOS,
-    children: (0, Chunk951288.jsx)(Chunk481060.ToO, {
-      type: Chunk481060.ToO.Types.PRIMARY,
-      body: Chunk388032.intl.format(Chunk388032.t.xvCsx4, {
-        termsLink: Chunk981631.EYA.TERMS,
-        privacyLink: Chunk981631.EYA.PRIVACY
+    children: (0, Chunk951288.jsx)(Chunk481060.Zbd, {
+      type: Chunk481060.Zbd.Types.PRIMARY,
+      className: Chunk85240.privacyTermsCard,
+      children: (0, Chunk951288.jsx)(Chunk481060.Text, {
+        variant: "text-sm/normal",
+        children: Chunk388032.intl.format(Chunk388032.t.xvCsx4, {
+          termsLink: Chunk981631.EYA.TERMS,
+          privacyLink: Chunk981631.EYA.PRIVACY
+        })
       })
     })
   })

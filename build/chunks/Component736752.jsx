@@ -2,8 +2,8 @@
 /** chunk id: 736752, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  D: () => K,
-  Z: () => q
+  D: () => W,
+  Z: () => z
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -43,10 +43,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk801461 = require("./801461.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk343396 = require("./343396.js"),
-  Chunk197571 = require("./197571.js");
+  Chunk343396 = require("./343396.js");
 
-function V(e, t, n) {
+function F(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -55,20 +54,20 @@ function V(e, t, n) {
   }) : e[t] = n, e
 }
 
-function H(e) {
+function V(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      V(e, t, n[t])
+      F(e, t, n[t])
     })
   }
   return e
 }
 
-function Y(e, t) {
+function H(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -79,15 +78,15 @@ function Y(e, t) {
   return n
 }
 
-function W(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : Y(Object(t)).forEach(function(n) {
+function Y(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : H(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-var K = function(e) {
+var W = function(e) {
   return e.SECURITY = "SECURITY", e.STANDING = "STANDING", e
 }({});
-class z extends Chunk647438.PureComponent {
+class K extends Chunk647438.PureComponent {
   componentDidMount() {
     let {
       currentUser: e
@@ -101,63 +100,47 @@ class z extends Chunk647438.PureComponent {
     let {
       currentUser: e
     } = this.props;
-    if (!module.isClaimed()) {
-      let e = (0, Chunk951288.jsxs)("section", {
-        children: [(0, Chunk951288.jsx)("div", {
-          className: Chunk343396.accountWarningBodyText,
-          children: Chunk388032.intl.string(Chunk388032.t.qKs3vg)
-        }), (0, Chunk951288.jsx)(Chunk481060.Button, {
-          variant: "secondary",
-          size: "sm",
-          text: Chunk388032.intl.string(Chunk388032.t["7psymi"]),
-          onClick: () => Chunk952306.Z.openClaimAccountModal()
-        })]
-      });
-      return (0, Chunk951288.jsx)(Chunk481060.ToO, {
-        type: Chunk481060.ToO.Types.DANGER,
-        className: Chunk197571.marginBottom20,
-        imageData: {
-          src: require("./418558.js"),
-          width: 60,
-          height: 60
-        },
-        title: Chunk388032.intl.string(Chunk388032.t["/3qnL/"]),
-        body: module
-      })
-    }
-    if (null == module.email) return null;
-    if (!module.verified) {
-      let e = (0, Chunk951288.jsxs)("section", {
-        children: [(0, Chunk951288.jsx)("div", {
-          className: Chunk343396.accountWarningBodyText,
-          children: Chunk388032.intl.string(Chunk388032.t.NAzplE)
-        }), (0, Chunk951288.jsx)(Chunk418632.Z, {
-          size: "sm",
-          variant: "secondary"
-        })]
-      });
-      return (0, Chunk951288.jsx)(Chunk481060.ToO, {
-        type: Chunk481060.ToO.Types.PRIMARY,
-        className: Chunk197571.marginBottom20,
-        imageData: {
-          src: require("./449125.js"),
-          width: 60,
-          height: 60
-        },
-        title: Chunk388032.intl.string(Chunk388032.t.tuGzBT),
-        body: module
-      })
-    }
+    return module.isClaimed() ? null == module.email ? null : module.verified ? true : (0, Chunk951288.jsxs)(Chunk481060.M14, {
+      type: "warning",
+      children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
+        variant: "heading-md/medium",
+        children: Chunk388032.intl.string(Chunk388032.t.tuGzBT)
+      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+        variant: "text-sm/normal",
+        className: Chunk343396.inlineNoticeText,
+        children: Chunk388032.intl.string(Chunk388032.t.NAzplE)
+      }), (0, Chunk951288.jsx)(Chunk418632.Z, {
+        size: "sm",
+        variant: "secondary"
+      })]
+    }) : (0, Chunk951288.jsxs)(Chunk481060.M14, {
+      type: "critical",
+      children: [(0, Chunk951288.jsx)(Chunk481060.Heading, {
+        variant: "heading-md/medium",
+        children: Chunk388032.intl.string(Chunk388032.t["/3qnL/"])
+      }), (0, Chunk951288.jsx)(Chunk481060.Text, {
+        variant: "text-sm/normal",
+        className: Chunk343396.inlineNoticeText,
+        children: Chunk388032.intl.string(Chunk388032.t.qKs3vg)
+      }), (0, Chunk951288.jsx)(Chunk481060.Button, {
+        variant: "secondary",
+        size: "sm",
+        text: Chunk388032.intl.string(Chunk388032.t["7psymi"]),
+        onClick: () => Chunk952306.Z.openClaimAccountModal()
+      })]
+    })
   }
   renderPomeloWarning() {
-    return this.props.shouldRenderPomeloWarning ? (0, Chunk951288.jsxs)(Chunk481060.Wn, {
-      className: Chunk343396.accountWarningBodyText,
-      messageType: Chunk481060.QYI.WARNING,
-      children: [Chunk388032.intl.format(Chunk388032.t.pdYZyg, {}), " ", "", (0, Chunk951288.jsx)(Chunk690221.Z, {
-        className: Chunk343396.noticeTextButton,
-        onClick: () => (0, Chunk303172.Z)(Chunk801461.Kq.USER_SETTINGS),
-        children: Chunk388032.intl.string(Chunk388032.t.LhlgY9)
-      })]
+    return this.props.shouldRenderPomeloWarning ? (0, Chunk951288.jsx)(Chunk481060.M14, {
+      type: "warning",
+      children: (0, Chunk951288.jsxs)(Chunk481060.Text, {
+        variant: "text-sm/normal",
+        children: [Chunk388032.intl.format(Chunk388032.t.pdYZyg, {}), " ", "", (0, Chunk951288.jsx)(Chunk690221.Z, {
+          className: Chunk343396.noticeTextButton,
+          onClick: () => (0, Chunk303172.Z)(Chunk801461.Kq.USER_SETTINGS),
+          children: Chunk388032.intl.string(Chunk388032.t.LhlgY9)
+        })]
+      })
     }) : null
   }
   renderAccountSettings() {
@@ -183,7 +166,7 @@ class z extends Chunk647438.PureComponent {
           variant: "primary",
           size: "sm",
           text: Chunk388032.intl.string(Chunk388032.t["FRep5/"]),
-          onClick: () => (0, Chunk481060.h7j)(e => (0, r.jsx)(k.default, W(H({}, e), {
+          onClick: () => (0, Chunk481060.h7j)(e => (0, r.jsx)(k.default, Y(V({}, e), {
             onSuccess: e.onClose
           })))
         })
@@ -355,7 +338,7 @@ class z extends Chunk647438.PureComponent {
       shouldRenderOwnedTeamsModal: true
     }) : Chunk512722.length > 0 ? void this.setState({
       shouldRenderOwnedGuildsModal: true
-    }) : void(require.isClaimed() ? (0, Chunk481060.h7j)(e => (0, r.jsx)(O.Z, W(H({}, e), {
+    }) : void(require.isClaimed() ? (0, Chunk481060.h7j)(e => (0, r.jsx)(O.Z, Y(V({}, e), {
       handleSubmit: e => this.handleSubmitDisableAccount(e, t),
       title: t ? B.intl.string(B.t["8lQ2rR"]) : B.intl.string(B.t.jf5GGb),
       actionText: t ? B.intl.string(B.t["8lQ2rR"]) : B.intl.string(B.t.jf5GGb),
@@ -374,7 +357,7 @@ class z extends Chunk647438.PureComponent {
     }
   }
 }
-let q = () => {
+let z = () => {
   let e = (0, Chunk442837.e7)([Chunk594174.default], () => {
       let e = Chunk594174.default.getCurrentUser();
       return o()(null != module, "ConnectedUserAccountSettings: currentUser cannot be undefined"), module
@@ -391,7 +374,7 @@ let q = () => {
     } = (0, Chunk577275.Z)({
       refreshOnDepChange: true
     });
-  return (0, Chunk951288.jsx)(z, {
+  return (0, Chunk951288.jsx)(K, {
     theme: Chunk647438,
     currentUser: module,
     backupCodes: exports,
