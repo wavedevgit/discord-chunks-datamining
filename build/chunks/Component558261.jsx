@@ -38,15 +38,16 @@ let A = e => {
     let {
       product: t,
       cardRef: n,
-      analyticsLocations: i,
-      selectedVariantIndex: s,
-      hasDiscountOffer: a,
-      discountOfferAmount: u,
-      text: d
-    } = e, g = (0, m.XM)(t, false, false), p = a ? I.intl.formatToPlainString(I.t["5U5RB5"], {
-      discountOfferAmount: u
+      isPremiumUser: i,
+      analyticsLocations: s,
+      selectedVariantIndex: a,
+      hasDiscountOffer: u,
+      discountOfferAmount: d,
+      text: g
+    } = e, p = (0, m.XM)(t, i, false), f = u ? I.intl.formatToPlainString(I.t["5U5RB5"], {
+      discountOfferAmount: d
     }) : I.intl.formatToPlainString(I.t["cNSL/j"], {
-      price: g
+      price: p
     });
     return (0, r.jsx)(o.Button, {
       variant: "primary",
@@ -54,14 +55,14 @@ let A = e => {
         e.stopPropagation(), (0, c.Z)({
           skuId: (0, O.S)({
             product: t,
-            selectedVariantIndex: s
+            selectedVariantIndex: a
           }),
           returnRef: n,
-          analyticsLocations: i,
+          analyticsLocations: s,
           variantsReturnStyle: l.v.VARIANTS_GROUP
         })
       },
-      text: null != d ? d : p,
+      text: null != g ? g : f,
       fullWidth: true
     })
   },
@@ -283,6 +284,7 @@ let A = e => {
     }) : (0, r.jsx)(A, {
       product: t,
       cardRef: n,
+      isPremiumUser: C,
       analyticsLocations: V,
       selectedVariantIndex: l,
       hasDiscountOffer: B,
