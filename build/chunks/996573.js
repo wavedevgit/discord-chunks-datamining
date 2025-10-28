@@ -1,11 +1,10 @@
-/** Chunk was on web.js **/
-/** chunk id: 996573, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 33622 **/
+/** chunk id: 996573, original params: e,a,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => r
+  Z: () => u
 });
-var r = {};
-r = {
+var u = {};
+u = {
   dateRange: e => `${e.startDate} \u{2013} ${e.endDate}`,
   dateSelected: e => `${e.date} valittu`,
   finishRangeSelectionPrompt: `Lopeta p\xe4iv\xe4m\xe4\xe4r\xe4alueen valinta napsauttamalla t\xe4t\xe4.`,

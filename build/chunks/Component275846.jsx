@@ -1,33 +1,32 @@
-/** Chunk was on web.js **/
-/** chunk id: 275846, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66548 **/
+/** chunk id: 275846, original params: e,l,t (module,exports,require) **/
 require.d(exports, {
-  i: () => l
+  i: () => s
 }), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk49800 = require("./49800.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk383838 = require("./383838.jsx"),
   Chunk512983 = require("./512983.jsx");
-let l = {
+let s = {
   title: "Form Components",
   stories: [{
     id: "formnotice",
     name: "FormNotice",
     component: function(e) {
       let {
-        type: t,
-        title: n,
-        body: i,
-        hasButton: s
-      } = e, l = s ? (0, r.jsx)(a.Button, {
+        type: l,
+        title: t,
+        body: n,
+        hasButton: r
+      } = e, s = r ? (0, a.jsx)(o.Button, {
         text: "Action"
       }) : true;
-      return (0, r.jsx)(o.To, {
-        type: t,
-        title: n,
-        body: i,
-        button: l
+      return (0, a.jsx)(i.To, {
+        type: l,
+        title: t,
+        body: n,
+        button: s
       })
     },
     controls: {
@@ -76,37 +75,37 @@ let l = {
     name: "FormTitle",
     component: function(e) {
       let {
-        children: t,
-        disabled: n,
-        required: i,
-        errorMessage: a
-      } = e, o = (null == a ? true : a.trim()) === "" ? true : a, l = ["h1", "h2", "h3", "h4", "h5", "legend"];
-      return (0, r.jsx)("div", {
+        children: l,
+        disabled: t,
+        required: n,
+        errorMessage: o
+      } = e, i = (null == o ? true : o.trim()) === "" ? true : o;
+      return (0, a.jsx)("div", {
         style: {
           display: "flex",
           flexDirection: "column",
           gap: "16px"
         },
-        children: l.map(e => (0, r.jsxs)("div", {
+        children: ["h1", "h2", "h3", "h4", "h5", "legend"].map(e => (0, a.jsxs)("div", {
           style: {
             display: "flex",
             alignItems: "center",
             gap: "8px"
           },
-          children: [(0, r.jsxs)("code", {
+          children: [(0, a.jsxs)("code", {
             style: {
               minWidth: "60px",
               fontSize: "12px",
               color: "#666"
             },
             children: [e, ":"]
-          }), (0, r.jsx)(s.v, {
+          }), (0, a.jsx)(r.v, {
             tag: e,
-            disabled: n,
-            required: i,
-            error: o,
-            errorId: null != o ? "error-id-".concat(e) : true,
-            children: t
+            disabled: t,
+            required: n,
+            error: i,
+            errorId: null != i ? "error-id-".concat(e) : true,
+            children: l
           })]
         }, e))
       })

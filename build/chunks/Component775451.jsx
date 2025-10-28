@@ -32,7 +32,7 @@ let f = {
       className: j
     } = e, {
       balance: _
-    } = (0, c.A)(), [y, C] = r.useState(d.b.DEFAULT), [S, E] = r.useState(false), [T, O] = r.useState(false), N = r.useRef(null), P = r.useCallback(() => {
+    } = (0, c.A)(), [y, C] = r.useState(d.b.DEFAULT), [S, E] = r.useState(false), [O, T] = r.useState(false), N = r.useRef(null), P = r.useCallback(() => {
       let e = !S;
       e && null != b && (0, s.Y)({
         pageType: b,
@@ -51,8 +51,8 @@ let f = {
     }), [b, n, g, P, l]);
     return (0, a.jsxs)("div", {
       className: i()(x.container, j, {
-        [x.hidden]: T,
-        [x.visible]: !T
+        [x.hidden]: O,
+        [x.visible]: !O
       }),
       children: [(0, a.jsx)(m.y, {
         pillRef: N,
@@ -65,8 +65,8 @@ let f = {
         showNotificationBadge: t
       }), S && (0, a.jsx)("div", {
         className: i()(x.cardContainer, v, {
-          [x.hidden]: T,
-          [x.visible]: !T
+          [x.hidden]: O,
+          [x.visible]: !O
         }),
         ref: w,
         children: k

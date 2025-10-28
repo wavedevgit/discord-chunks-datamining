@@ -55,8 +55,8 @@ function j(e, t) {
 function _() {
   var e, t;
   let [n, l] = (0, Chunk647438.useState)(false), [o, d] = (0, Chunk647438.useState)(false), [h, f] = (0, Chunk647438.useState)(null), _ = (0, Chunk396821.ZP)(e => e.toolsCache), {
-    setToolsCache: T,
-    removeToolsCache: O
+    setToolsCache: O,
+    removeToolsCache: T
   } = (0, Chunk396821.L3)(), {
     setImgCache: N
   } = (0, Chunk396821.W_)(), P = (0, Chunk647438.useCallback)(e => {
@@ -79,8 +79,8 @@ function _() {
       preview: true
     }))
   }, []), w = (0, Chunk647438.useCallback)(e => {
-    O(e)
-  }, [O]);
+    T(e)
+  }, [T]);
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
     children: [(0, Chunk951288.jsxs)("div", {
       className: Chunk30827.controls,
@@ -106,7 +106,7 @@ function _() {
         children: [require && (0, Chunk951288.jsx)(Chunk329013.i, {}), Chunk276264 && (0, Chunk951288.jsx)(Chunk711325.Z, {
           selected: null == Chunk996746 || null == (e = Chunk996746.palette) ? true : module.name,
           onSelect: e => {
-            (null == h ? true : h.src) != null && T(h.src, h.src, e), I(e)
+            (null == h ? true : h.src) != null && O(h.src, h.src, e), I(e)
           }
         })]
       })]
@@ -127,7 +127,7 @@ function _() {
             let t = URL.createObjectURL(e[0]),
               n = e[0],
               a = await n.arrayBuffer();
-            N(t, t, (0, p.xh)(a)), T(t, t, m.jD)
+            N(t, t, (0, p.xh)(a)), O(t, t, m.jD)
           }
         }), (0, Chunk951288.jsx)("div", {
           className: Chunk30827.uploadedArea,
@@ -191,12 +191,12 @@ function y(e) {
       children: [(0, a.jsx)(i.Text, {
         variant: "text-sm/semibold",
         children: "Memberlist"
-      }), (0, a.jsx)(T, {
+      }), (0, a.jsx)(O, {
         nameplate: t
       }), (0, a.jsx)(i.Text, {
         variant: "text-sm/semibold",
         children: "DMs"
-      }), (0, a.jsx)(O, {
+      }), (0, a.jsx)(T, {
         nameplate: t
       }), (0, a.jsx)(i.Text, {
         variant: "text-sm/semibold",
@@ -284,7 +284,7 @@ function E(e) {
   })
 }
 
-function T(e) {
+function O(e) {
   let {
     nameplate: t
   } = e, n = (0, l.e7)([d.default], () => d.default.getCurrentUser());
@@ -320,7 +320,7 @@ function T(e) {
   })
 }
 
-function O(e) {
+function T(e) {
   let {
     nameplate: t
   } = e;

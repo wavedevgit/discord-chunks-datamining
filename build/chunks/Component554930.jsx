@@ -22,7 +22,7 @@ let c = e => {
       children: s.intl.format(s.t["43kZKL"], {
         days: c - n.getDate()
       })
-    }), (0, r.jsx)(o.g, {
+    }), (0, r.jsx)(o.gu, {
       percentage: t
     }), (0, r.jsx)(a.D, {})]
   })

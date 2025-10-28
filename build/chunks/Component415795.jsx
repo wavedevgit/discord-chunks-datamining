@@ -617,6 +617,12 @@ class L extends Chunk647438.Component {
           color: "currentColor"
         });
         break;
+      case Chunk815372.Ky.REVENUE_PLAYGROUND:
+        e = Chunk388032.intl.string(Chunk388032.t.OZJY67), t = (0, Chunk951288.jsx)(Chunk481060.uMN, {
+          size: "xs",
+          color: "currentColor"
+        });
+        break;
       default:
         e = require.id, t = (0, Chunk951288.jsx)(Chunk481060.xPt, {
           size: "xs",

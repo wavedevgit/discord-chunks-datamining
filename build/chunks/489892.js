@@ -1,23 +1,22 @@
-/** Chunk was on web.js **/
-/** chunk id: 489892, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 33622 **/
+/** chunk id: 489892, original params: e,a,t (module,exports,require) **/
 require.d(exports, {
-  X: () => o
+  X: () => i
 });
 var Chunk386843 = require("./386843.js"),
   Chunk922387 = require("./922387.js"),
   Chunk647438 = require("./647438.js");
-let o = (0, Chunk647438.forwardRef)(function(e, t) {
-  [e, t] = (0, i.pE)(e, t, r.ni);
+let i = (0, Chunk647438.forwardRef)(function(e, a) {
+  [e, a] = (0, n.pE)(e, a, u.ni);
   let {
-    children: n,
-    level: o = 3,
-    className: s,
+    children: t,
+    level: i = 3,
+    className: o,
     ...l
-  } = e, c = `h${o}`;
-  return a.createElement(c, {
+  } = e, s = `h${i}`;
+  return r.createElement(s, {
     ...l,
-    ref: t,
-    className: null != s ? s : "react-aria-Heading"
-  }, n)
+    ref: a,
+    className: null != o ? o : "react-aria-Heading"
+  }, t)
 })

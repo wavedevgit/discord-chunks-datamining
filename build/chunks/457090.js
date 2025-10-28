@@ -1,10 +1,9 @@
-/** Chunk was on web.js **/
-/** chunk id: 457090, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 33622 **/
+/** chunk id: 457090, original params: e,a,t (module,exports,require) **/
 require.d(exports, {
-  p: () => i
+  p: () => n
 });
-let r = new(0, require("./919118.js").J)({
+let u = new(0, require("./919118.js").J)({
   ach: {
     year: "mwaka",
     month: "dwe",
@@ -387,6 +386,6 @@ let r = new(0, require("./919118.js").J)({
   }
 }, "en");
 
-function i(e, t, n) {
-  return "era" === e || "dayPeriod" === e ? t : "year" === e || "month" === e || "day" === e ? r.getStringForLocale(e, n) : "––"
+function n(e, a, t) {
+  return "era" === e || "dayPeriod" === e ? a : "year" === e || "month" === e || "day" === e ? u.getStringForLocale(e, t) : "––"
 }

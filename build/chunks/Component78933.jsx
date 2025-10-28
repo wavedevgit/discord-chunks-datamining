@@ -116,13 +116,13 @@ function ed(e) {
     eS = B.Cr.useSetting(),
     eE = (0, ee.F)(eS),
     {
-      expiringStatusProfileFeedback: eT
+      expiringStatusProfileFeedback: eO
     } = b.Y.useExperiment({
       location: "UserProfileAccountPopout"
     }, {
       autoTrackExposure: false
     }),
-    eO = (0, o.e7)([z.Z], () => z.Z.hidePersonalInformation),
+    eT = (0, o.e7)([z.Z], () => z.Z.hidePersonalInformation),
     eN = (0, g.p)(),
     eP = B.Sb.useSetting(),
     eI = (0, ee.I)(eC),
@@ -148,12 +148,12 @@ function ed(e) {
     }, 500)
   }, []);
   let eG = e => {
-      null == n || n(), (0, O.openUserProfileModal)(ec({
+      null == n || n(), (0, T.openUserProfileModal)(ec({
         customStatusPrompt: eU,
         sourceAnalyticsLocations: eb
       }, eg, e))
     },
-    ez = (0, T.Z)({
+    ez = (0, O.Z)({
       location: "UserProfileAccountPopout"
     }),
     eV = (null == ef ? true : ef.widgets) != null && ef.widgets.length > 0,
@@ -240,7 +240,7 @@ function ed(e) {
             }), (0, a.jsx)(F.Z, {
               user: t,
               bio: null == ef ? true : ef.bio,
-              hidePersonalInformation: eO,
+              hidePersonalInformation: eT,
               onClose: n
             }), ez && eV && (0, a.jsx)(U.Z, {
               widgets: ef.widgets,
@@ -289,7 +289,7 @@ function ed(e) {
                   }), (0, a.jsx)(X.V4, {
                     action: "PRESS_SET_STATUS",
                     label: (0, a.jsx)(Q.Z, {}),
-                    sublabel: eT && null != eE && eE,
+                    sublabel: eO && null != eE && eE,
                     icon: () => (0, a.jsx)(c.qbd, {
                       status: eC,
                       size: 12

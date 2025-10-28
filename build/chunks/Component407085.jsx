@@ -1,38 +1,37 @@
-/** Chunk was on web.js **/
-/** chunk id: 407085, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66548 **/
+/** chunk id: 407085, original params: e,l,t (module,exports,require) **/
 require.d(exports, {
-  W: () => a
+  W: () => o
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk561779 = require("./561779.jsx");
-let a = {
+let o = {
   title: "Slider",
   stories: [{
     id: "slider",
     name: "Slider",
     component: function(e) {
       let {
-        minValue: t,
-        maxValue: n,
-        initialValue: a,
-        markerCount: o,
-        stickToMarkers: s,
-        disabled: l,
-        equidistant: c
-      } = e, u = o > 0 ? Array.from({
-        length: o
-      }, (e, r) => Math.floor(t + r / (o - 1) * (n - t))) : true;
-      return (0, r.jsx)(i.i, {
-        minValue: t,
-        maxValue: n,
-        initialValue: a,
-        markers: u,
-        stickToMarkers: s,
-        disabled: l,
-        equidistant: c
-      }, o)
+        minValue: l,
+        maxValue: t,
+        initialValue: o,
+        markerCount: i,
+        stickToMarkers: r,
+        disabled: s,
+        equidistant: u
+      } = e, d = i > 0 ? Array.from({
+        length: i
+      }, (e, a) => Math.floor(l + a / (i - 1) * (t - l))) : true;
+      return (0, a.jsx)(n.i, {
+        minValue: l,
+        maxValue: t,
+        initialValue: o,
+        markers: d,
+        stickToMarkers: r,
+        disabled: s,
+        equidistant: u
+      }, i)
     },
     controls: {
       minValue: {

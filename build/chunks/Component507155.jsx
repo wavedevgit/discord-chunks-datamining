@@ -68,7 +68,7 @@ function x(e) {
             })]
           })]
         })]
-      }), k && (0, n.jsx)(p.ZP, {
+      }), k && (0, n.jsx)(p.Z, {
         compact: true,
         iconSize: "md",
         guildId: r,

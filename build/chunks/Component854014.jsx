@@ -17,8 +17,8 @@ var Chunk951288 = require("./951288.js"),
 function b(e) {
   var t, n;
   let {
-    onClick: l,
-    active: o,
+    onClick: o,
+    active: l,
     node: a,
     visibleContent: s,
     itemProps: d
@@ -47,9 +47,9 @@ function b(e) {
     return e
   }({
     className: i()(f.item, {
-      [f.active]: o
+      [f.active]: l
     }),
-    onClick: l
+    onClick: o
   }, d), n = n = {
     children: [null != p ? (0, r.jsx)(p, {}) : (0, r.jsxs)("div", {
       className: f.itemContent,
@@ -67,7 +67,7 @@ function b(e) {
       children: (0, r.jsx)(u.W, {
         trailing: y,
         visibleContent: s,
-        isSelected: o
+        isSelected: l
       })
     })]
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -86,16 +86,16 @@ function p(e) {
   let {
     node: t,
     visibleContent: n,
-    hoisted: o = false
-  } = e, i = l.useMemo(() => t.layout[0], [t]), c = s.Z.useField("currentPanelKey"), u = null != c && c === (null == i ? true : i.key), f = null != i ? () => s.Z.setState({
+    hoisted: l = false
+  } = e, i = o.useMemo(() => t.layout[0], [t]), c = s.Z.useField("currentPanelKey"), u = null != c && c === (null == i ? true : i.key), f = null != i ? () => s.Z.setState({
     targetKey: i.key,
     showNavigationMobile: false
-  }) : t.onClick, p = l.useMemo(() => {
+  }) : t.onClick, p = o.useMemo(() => {
     var e;
     return null != (e = null == i ? true : i.layout.flatMap(e => e.layout)) ? e : []
   }, [i]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [o ? (0, r.jsx)("li", {
+    children: [l ? (0, r.jsx)("li", {
       children: (0, r.jsx)(b, {
         onClick: f,
         active: u,

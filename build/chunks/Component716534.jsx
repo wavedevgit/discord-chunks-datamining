@@ -180,9 +180,9 @@ function Q(e) {
   }, [e$, eN]);
   let e0 = (0, u.e7)([T.Z], () => T.Z.enabled),
     e1 = et.paymentSourceId,
-    e3 = (0, I.$)(ee, e1),
+    e2 = (0, I.$)(ee, e1),
     {
-      hasEntitlements: e2,
+      hasEntitlements: e3,
       entitlements: e4
     } = (0, V.H)(eU.id, eD),
     e8 = (0, P.Ap)(et.paymentSourceId),
@@ -290,7 +290,7 @@ function Q(e) {
       planName: eU.name
     });
   eD && !eJ ? tc = z.intl.string(z.t.J5a0eb) : eD && eJ ? tc = "" : (0, P.PV)(eU.id) && (tc = P.ZP.getBillingReviewSubheader(null, eU));
-  let tu = null != eV && eV.length > 0 && (e1 === C.c || null === e3) && eR ? B.w.SELECT_PAYMENT_METHOD : true;
+  let tu = null != eV && eV.length > 0 && (e1 === C.c || null === e2) && eR ? B.w.SELECT_PAYMENT_METHOD : true;
   return e5 ? null : (0, r.jsxs)("div", {
     className: q.stepBody,
     children: [(0, r.jsx)(B.Y, {
@@ -347,7 +347,7 @@ function Q(e) {
         label: em ? z.intl.string(z.t["YH7B+D"]) : z.intl.string(z.t["mmDvV+"]),
         paymentSources: Object.values(ee),
         selectedPaymentSourceId: e1,
-        prependOption: e2 && !em ? {
+        prependOption: e3 && !em ? {
           label: z.intl.string(z.t.IGU7El),
           value: null
         } : null,
@@ -359,7 +359,7 @@ function Q(e) {
         className: o()({
           [q.premiumBrandRefreshInputBackground]: eP
         })
-      }), e2 && null == e1 ? (0, r.jsx)("div", {
+      }), e3 && null == e1 ? (0, r.jsx)("div", {
         className: q.paymentSourceOptionalWarning,
         children: z.intl.format(z.t["2wPRSF"], {
           months: e4.length
@@ -388,7 +388,7 @@ function Q(e) {
           subscriptionPlan: eU,
           renewalInvoice: eW,
           isGift: eD,
-          paymentSourceType: e3,
+          paymentSourceType: e2,
           isEmbeddedIAP: eb,
           basePrice: (0, P.aS)(eU.id, false, eD, et)
         }),

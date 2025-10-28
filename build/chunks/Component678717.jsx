@@ -2,7 +2,7 @@
 /** chunk id: 678717, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
   default: () => ew,
-  openDevToolsPopout: () => eO,
+  openDevToolsPopout: () => eT,
   useDevToolsTabConfig: () => eE
 }), require("./539854.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -356,7 +356,7 @@ function eE() {
   }, [])
 }
 
-function eT(e) {
+function eO(e) {
   let {
     resizableNode: t,
     onResize: n,
@@ -374,7 +374,7 @@ function eT(e) {
   })
 }
 
-function eO() {
+function eT() {
   (0, Chunk788983.bA)(Chunk981631.KJ3.DEVTOOLS_POPOUT, () => (0, Chunk951288.jsx)(Chunk238246.Z, {
     windowKey: Chunk981631.KJ3.DEVTOOLS_POPOUT,
     title: "DevTools",
@@ -419,7 +419,7 @@ function eN(e) {
         children: [(0, a.jsx)(h.ZP.Icon, {
           icon: c.rgF,
           tooltip: "Pop Out",
-          onClick: eO
+          onClick: eT
         }), (0, a.jsx)(h.ZP.Icon, {
           icon: c.Dio,
           tooltip: ey.intl.string(ey.t.cpT0Cq),
@@ -455,7 +455,7 @@ function eP() {
       width: require
     },
     "data-app-right-panel": true,
-    children: [(0, Chunk951288.jsx)(eT, {
+    children: [(0, Chunk951288.jsx)(eO, {
       resizableNode: module,
       onResize: Chunk120356,
       onResizeEnd: i

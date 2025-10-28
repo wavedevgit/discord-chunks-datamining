@@ -100,7 +100,7 @@ async function k(e) {
 }
 
 function R() {
-  let [e, t] = Chunk647438.useState(false), [n, l] = Chunk647438.useState(false), [i, o] = Chunk647438.useState(false), [c, h] = Chunk647438.useState(null), [x, f] = Chunk647438.useState(null), [b, g] = Chunk647438.useState(null), [v, _] = Chunk647438.useState(false), y = (0, Chunk442837.e7)([Chunk853872.Z], () => Chunk853872.Z.paymentSources), S = (0, Chunk442837.e7)([Chunk853872.Z], () => Chunk853872.Z.hasFetchedPaymentSources), T = (0, Chunk442837.e7)([Chunk853872.Z], () => Chunk853872.Z.defaultPaymentSourceId);
+  let [e, t] = Chunk647438.useState(false), [n, l] = Chunk647438.useState(false), [i, o] = Chunk647438.useState(false), [c, h] = Chunk647438.useState(null), [x, f] = Chunk647438.useState(null), [b, g] = Chunk647438.useState(null), [v, _] = Chunk647438.useState(false), y = (0, Chunk442837.e7)([Chunk853872.Z], () => Chunk853872.Z.paymentSources), S = (0, Chunk442837.e7)([Chunk853872.Z], () => Chunk853872.Z.hasFetchedPaymentSources), O = (0, Chunk442837.e7)([Chunk853872.Z], () => Chunk853872.Z.defaultPaymentSourceId);
   Chunk647438.useEffect(() => {
     Chunk981631 || (0, Chunk355467.tZ)()
   }, [Chunk981631]), Chunk647438.useEffect(() => {
@@ -334,7 +334,7 @@ function Z() {
 function M(e) {
   let t = r.useRef(null),
     n = {
-      paymentLabel: T.intl.string(T.t.ZURqX0),
+      paymentLabel: O.intl.string(O.t.ZURqX0),
       paymentRequestRef: t,
       onStripePaymentMethodReceived: () => {},
       onPaymentRequestFailure: () => {},
@@ -357,15 +357,15 @@ function L(e) {
     className: r
   } = e;
   return (0, a.jsx)("div", {
-    className: o()(N.root, N.focusLock, N.small, N.rootWithShadow, O.modal, r),
-    "aria-label": T.intl.string(T.t.eQ2bLp),
+    className: o()(N.root, N.focusLock, N.small, N.rootWithShadow, T.modal, r),
+    "aria-label": O.intl.string(O.t.eQ2bLp),
     children: (0, a.jsxs)("form", {
-      className: O.form,
+      className: T.form,
       onSubmit: e => {
         e.preventDefault()
       },
       children: [(0, a.jsx)(u.hzk, {
-        className: O.scrollerContent,
+        className: T.scrollerContent,
         children: t
       }), n]
     })
@@ -379,7 +379,7 @@ function U(e) {
   return (0, a.jsx)(L, {
     footer: (0, a.jsx)(g.Z, {
       primaryCTA: g.Z.CTAType.CONTINUE,
-      primaryText: T.intl.string("applePay" === t ? T.t.WoXvJL : T.t.wnVVr0),
+      primaryText: O.intl.string("applePay" === t ? O.t.WoXvJL : O.t.wnVVr0),
       primaryDisabled: !l,
       onPrimary: () => void(null != n.current && n.current.show()),
       onBack: () => {}
@@ -399,9 +399,9 @@ function F(e) {
     children: t
   } = e;
   return (0, a.jsx)(L, {
-    className: O.choosePaymentTypeModal,
+    className: T.choosePaymentTypeModal,
     children: (0, a.jsx)("div", {
-      className: O.choosePaymentTypeContainer,
+      className: T.choosePaymentTypeContainer,
       children: t
     })
   })
@@ -636,10 +636,10 @@ function q() {
         children: (0, a.jsxs)("div", {
           children: [(0, a.jsx)(u.Text, {
             variant: "text-md/normal",
-            className: O.labelSpacing,
+            className: T.labelSpacing,
             children: "expressCheckoutElement.options:"
           }), (0, a.jsx)(f.Z, {
-            className: O.markdown,
+            className: T.markdown,
             children: "".concat("``").concat(W(z[e]), " ").concat("``")
           }), (0, a.jsx)(C.DS, {
             errorLabel: t,

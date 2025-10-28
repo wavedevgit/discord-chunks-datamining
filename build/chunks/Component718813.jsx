@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 718813, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => G
+  Z: () => B
 }), require("./539854.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -64,48 +64,53 @@ let N = (0, Chunk663993.Un)({
     name: "UserSettings"
   }),
   j = (0, Chunk663993.Un)({
-    createPromise: () => require.e("79835").then(require.bind(require, 72493)),
+    createPromise: () => Promise.all([require.e("33622"), require.e("66548"), require.e("27325"), require.e("79835")]).then(require.bind(require, 72493)),
     webpackId: 72493
   }),
   P = (0, Chunk663993.Un)({
+    createPromise: () => Promise.all([require.e("27325"), require.e("13706")]).then(require.bind(require, 42692)),
+    webpackId: 42692
+  }),
+  x = (0, Chunk663993.Un)({
     createPromise: () => require.e("80448").then(require.bind(require, 765457)),
     webpackId: 765457,
     name: "CheckpointSlides"
   }),
-  x = (0, Chunk663993.Un)({
+  A = (0, Chunk663993.Un)({
     createPromise: () => Promise.all([require.e("36599"), require.e("7654"), require.e("86736"), require.e("86915")]).then(require.bind(require, 869779)),
     webpackId: 869779,
     name: "ChannelSettings"
   }),
-  A = (0, Chunk663993.Un)({
+  Z = (0, Chunk663993.Un)({
     createPromise: () => require.e("45620").then(require.bind(require, 838819)),
     webpackId: 838819,
     name: "CollectiblesShop"
   }),
-  Z = (0, Chunk663993.Un)({
+  w = (0, Chunk663993.Un)({
     createPromise: () => Promise.all([require.e("36599"), require.e("76692"), require.e("8271"), require.e("15851"), require.e("51453"), require.e("7654"), require.e("845"), require.e("86736"), require.e("6850"), require.e("58227"), require.e("44686"), require.e("30378"), require.e("64982"), require.e("95140")]).then(require.bind(require, 994763)),
     webpackId: 994763,
     name: "GuildSettings"
   }),
-  w = {
+  L = {
     [Chunk981631.S9g.USER_SETTINGS]: () => (0, Chunk951288.jsx)(N, {}),
-    [Chunk981631.S9g.CHANNEL_SETTINGS]: () => (0, Chunk951288.jsx)(x, {}),
-    [Chunk981631.S9g.GUILD_SETTINGS]: () => (0, Chunk951288.jsx)(Z, {}),
-    [Chunk981631.S9g.COLLECTIBLES_SHOP]: () => (0, Chunk951288.jsx)(A, {}),
+    [Chunk981631.S9g.CHANNEL_SETTINGS]: () => (0, Chunk951288.jsx)(A, {}),
+    [Chunk981631.S9g.GUILD_SETTINGS]: () => (0, Chunk951288.jsx)(w, {}),
+    [Chunk981631.S9g.COLLECTIBLES_SHOP]: () => (0, Chunk951288.jsx)(Z, {}),
     [Chunk981631.S9g.MANA_PLAYGROUND]: () => (0, Chunk951288.jsx)(j, {}),
-    [Chunk981631.S9g.CHECKPOINT]: () => (0, Chunk951288.jsx)(P, {})
+    [Chunk981631.S9g.REVENUE_PLAYGROUND]: () => (0, Chunk951288.jsx)(P, {}),
+    [Chunk981631.S9g.CHECKPOINT]: () => (0, Chunk951288.jsx)(x, {})
   },
-  L = "SHOWN",
-  R = "HIDDEN",
-  D = {
+  R = "SHOWN",
+  D = "HIDDEN",
+  M = {
     friction: 10,
     tension: 100
   };
 
-function M() {
+function k() {
   return Chunk647438.useEffect(() => (Chunk714338.Z.enable(), Chunk714338.Z.enableTemp(Chunk134616.u), () => Chunk714338.Z.disableTemp()), []), null
 }
-class k extends(r = Chunk647438.PureComponent) {
+class U extends(r = Chunk647438.PureComponent) {
   static getDerivedStateFromProps(e, t) {
     return e.mode !== t.mode ? {
       animating: true,
@@ -119,8 +124,8 @@ class k extends(r = Chunk647438.PureComponent) {
       mode: n
     } = e;
     if (t !== n) {
-      if (t === L && n === R) return this.animateIn();
-      if (t === R && n === L) return this.animateUnder()
+      if (t === R && n === D) return this.animateIn();
+      if (t === D && n === R) return this.animateUnder()
     }
   }
   componentWillEnter(e) {
@@ -145,9 +150,9 @@ class k extends(r = Chunk647438.PureComponent) {
     } = this.state;
     o.Z.parallel([o.Z.spring(t, S({
       toValue: 1
-    }, D)), o.Z.spring(n, S({
+    }, M)), o.Z.spring(n, S({
       toValue: 1
-    }, D))]).start(() => this.animateComplete(e))
+    }, M))]).start(() => this.animateComplete(e))
   }
   animateOut(e) {
     c.ZP.Emitter.pause(500);
@@ -157,9 +162,9 @@ class k extends(r = Chunk647438.PureComponent) {
     } = this.state;
     E.S.dispatch(O.CkL.LAYER_POP_START), o.Z.parallel([o.Z.spring(t, S({
       toValue: 0
-    }, D)), o.Z.spring(n, S({
+    }, M)), o.Z.spring(n, S({
       toValue: 1.1
-    }, D))]).start(() => {
+    }, M))]).start(() => {
       e(), E.S.dispatch(O.CkL.LAYER_POP_COMPLETE)
     })
   }
@@ -171,9 +176,9 @@ class k extends(r = Chunk647438.PureComponent) {
     } = this.state;
     Chunk748780.Z.parallel([Chunk748780.Z.spring(module, S({
       toValue: 0
-    }, D)), Chunk748780.Z.spring(exports, S({
+    }, M)), Chunk748780.Z.spring(exports, S({
       toValue: .93
-    }, D))]).start(() => this.animateComplete())
+    }, M))]).start(() => this.animateComplete())
   }
   animateComplete(e) {
     this.setState({
@@ -202,7 +207,7 @@ class k extends(r = Chunk647438.PureComponent) {
         for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
-    }(exports, ["name", "mode", "children", "baseLayer"]), u = r === R, p = module || Chunk215569 ? this.getAnimatedStyle() : null, f = !Chunk215569 && !Chunk120356, h = (0, Chunk951288.jsx)(Chunk748780.Z.div, T(S({
+    }(exports, ["name", "mode", "children", "baseLayer"]), u = r === D, p = module || Chunk215569 ? this.getAnimatedStyle() : null, f = !Chunk215569 && !Chunk120356, h = (0, Chunk951288.jsx)(Chunk748780.Z.div, T(S({
       ref: e => this.containerRef.current = null != e ? e.componentRef : true,
       "data-layer": null != require ? require : "base",
       "aria-hidden": Chunk215569,
@@ -227,7 +232,7 @@ class k extends(r = Chunk647438.PureComponent) {
       className: s()(Chunk256076.layer, {
         [Chunk256076.baseLayer]: Chunk120356,
         [Chunk256076.animating]: module,
-        "stop-animations": r === R
+        "stop-animations": r === D
       }),
       style: Chunk37234
     }, Chunk442837), {
@@ -260,7 +265,7 @@ class k extends(r = Chunk647438.PureComponent) {
     super(e), C(this, "containerRef", l.createRef());
     let t = 1,
       n = 1;
-    e.mode === R && (t = .93, n = 0), this.state = {
+    e.mode === D && (t = .93, n = 0), this.state = {
       animating: false,
       scale: new o.Z.Value(t),
       opacity: new o.Z.Value(n),
@@ -268,10 +273,10 @@ class k extends(r = Chunk647438.PureComponent) {
     }
   }
 }
-C(k, "defaultProps", {
+C(U, "defaultProps", {
   baseLayer: false
-}), C(k, "contextType", Chunk481060.Sfi);
-class U extends Chunk647438.PureComponent {
+}), C(U, "contextType", Chunk481060.Sfi);
+class G extends Chunk647438.PureComponent {
   componentDidMount() {
     Chunk585483.S.subscribe(Chunk981631.CkL.LAYER_POP_ESCAPE_KEY, Chunk37234.xf)
   }
@@ -286,18 +291,18 @@ class U extends Chunk647438.PureComponent {
     } = this.props, {
       length: r
     } = exports, l = [];
-    return Chunk647438.push((0, Chunk951288.jsx)(k, {
-      mode: 0 !== r || require ? R : L,
+    return Chunk647438.push((0, Chunk951288.jsx)(U, {
+      mode: 0 !== r || require ? D : R,
       baseLayer: true,
       children: module
     }, "layer-base")), exports.forEach((e, t) => l.push(this.renderComponent(e, t, r))), Chunk647438
   }
   renderComponent(e, t, n) {
     let r;
-    return r = "string" == typeof e ? w[e]() : (0, i.jsx)(e, {}), (0, i.jsxs)(k, {
+    return r = "string" == typeof e ? L[e]() : (0, i.jsx)(e, {}), (0, i.jsxs)(U, {
       name: "string" == typeof e ? e : true,
-      mode: t === n - 1 ? L : R,
-      children: [(0, i.jsx)(M, {}), r]
+      mode: t === n - 1 ? R : D,
+      children: [(0, i.jsx)(k, {}), r]
     }, "layer-".concat(t))
   }
   renderArtisanalHack() {
@@ -319,11 +324,11 @@ class U extends Chunk647438.PureComponent {
   }
 }
 
-function G(e) {
+function B(e) {
   let t = (0, _.Ll)(),
     n = (0, c.e7)([b.Z], () => b.Z.getLayers()),
     r = (0, g.QP)(e => e.fullScreenLayers.length > 0);
-  return (0, i.jsx)(U, T(S({}, e), {
+  return (0, i.jsx)(G, T(S({}, e), {
     sidebarTheme: t,
     layers: n,
     hasFullScreenLayer: r

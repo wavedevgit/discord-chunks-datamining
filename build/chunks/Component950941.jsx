@@ -44,7 +44,7 @@ function s(e) {
   let {
     useCount: t
   } = e, n = t();
-  return 0 === n ? null : (0, r.jsx)(l.mAB, {
+  return 0 === n ? null : (0, r.jsx)(o.mAB, {
     count: n
   })
 }
@@ -53,9 +53,9 @@ function u(e) {
   let {
     getDismissibleContentTypes: t,
     badgeComponent: n,
-    visibleContent: o,
+    visibleContent: l,
     isSelected: a
-  } = e, c = null == t ? true : t(), s = null != o && c.includes(o) && !a, u = null != n ? (0, r.jsx)(n, {}) : (0, r.jsx)(l.IGR, {
+  } = e, c = null == t ? true : t(), s = null != l && c.includes(l) && !a, u = null != n ? (0, r.jsx)(n, {}) : (0, r.jsx)(o.IGR, {
     text: i.intl.string(i.t.y2b7CA)
   });
   return s ? u : null
@@ -74,21 +74,21 @@ function f(e) {
   let {
     trailing: t,
     visibleContent: n,
-    isSelected: l
+    isSelected: o
   } = e;
   if (null == t) return null;
   switch (t.type) {
-    case o.PU.BADGE_COUNT:
+    case l.PU.BADGE_COUNT:
       return (0, r.jsx)(s, a({}, t));
-    case o.PU.BADGE_NEW:
+    case l.PU.BADGE_NEW:
       return (0, r.jsx)(u, c(a({}, t), {
         visibleContent: n,
-        isSelected: l
+        isSelected: o
       }));
-    case o.PU.STRONGLY_DISCOURAGED_CUSTOM:
+    case l.PU.STRONGLY_DISCOURAGED_CUSTOM:
       return (0, r.jsx)(d, c(a({}, t), {
         visibleContent: n,
-        isSelected: l
+        isSelected: o
       }))
   }
 }

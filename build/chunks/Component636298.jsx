@@ -20,10 +20,10 @@ function y(e) {
   let {
     icon: t,
     label: n,
-    onClick: l
+    onClick: o
   } = e;
   return (0, r.jsx)(c.hU, {
-    onClick: l,
+    onClick: o,
     icon: t,
     size: "sm",
     variant: "icon-only",
@@ -35,10 +35,10 @@ function j(e) {
   let {
     title: t,
     badge: n,
-    onClose: l
-  } = e, o = (0, u.Ll)();
+    onClose: o
+  } = e, l = (0, u.Ll)();
   return (0, r.jsx)(s.f6W, {
-    theme: o,
+    theme: l,
     children: e => (0, r.jsxs)("div", {
       className: i()(p.contentHeader, e),
       children: [(0, r.jsxs)("div", {
@@ -56,7 +56,7 @@ function j(e) {
         }), null != n && n]
       }), (0, r.jsx)(y, {
         icon: s.Uz9,
-        onClick: l,
+        onClick: o,
         label: b.intl.string(b.t.cpT0Cq)
       })]
     })
@@ -65,9 +65,9 @@ function j(e) {
 let m = Chunk647438.memo(function(e) {
   var t, n;
   let {
-    onClose: l,
-    setting: o
-  } = e, c = null != (n = null == o ? true : o.useTitle()) ? n : "", s = null == o || null == (t = o.useBadge) ? true : t.call(o), u = d.Z.useField("showNavigationMobile");
+    onClose: o,
+    setting: l
+  } = e, c = null != (n = null == l ? true : l.useTitle()) ? n : "", s = null == l || null == (t = l.useBadge) ? true : t.call(l), u = d.Z.useField("showNavigationMobile");
   return (0, r.jsxs)("div", {
     className: i()(p.content, {
       [p.mobile]: a.tq,
@@ -76,11 +76,11 @@ let m = Chunk647438.memo(function(e) {
     children: [(0, r.jsx)(j, {
       title: c,
       badge: s,
-      onClose: l
+      onClose: o
     }), (0, r.jsx)("div", {
       className: p.contentBody,
-      children: null != o && (0, r.jsx)(f.Z, {
-        node: o
+      children: null != l && (0, r.jsx)(f.Z, {
+        node: l
       })
     })]
   })

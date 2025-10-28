@@ -1,7 +1,6 @@
-/** Chunk was on web.js **/
-/** chunk id: 518797, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66548 **/
+/** chunk id: 518797, original params: e,l,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => r
+  Z: () => a
 });
-let r = "https://cdn.discordapp.com/assets/content/50ca8cad3cb4331549f65e0affccc2f89d712e399706c84eb44ac5b863ad46f9.svg"
+let a = "https://cdn.discordapp.com/assets/content/50ca8cad3cb4331549f65e0affccc2f89d712e399706c84eb44ac5b863ad46f9.svg"

@@ -102,7 +102,7 @@ function j(e) {
   } = e, s = (0, c.ZP)(n, i).type !== f.A3.INACTIVE, d = (0, a.Z)(n, i, "GuildPowerupCardFooterAdmin"), p = s || !d, h = !s;
   return (0, r.jsxs)("div", {
     className: l()(m.container, t),
-    children: [p && (0, r.jsx)(u.ZP, {
+    children: [p && (0, r.jsx)(u.Z, {
       guildId: n,
       powerup: i,
       onError: o,

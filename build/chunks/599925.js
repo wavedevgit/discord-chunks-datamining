@@ -1,33 +1,32 @@
-/** Chunk was on web.js **/
-/** chunk id: 599925, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 33622 **/
+/** chunk id: 599925, original params: e,a,t (module,exports,require) **/
 require.d(exports, {
-  L: () => a
+  L: () => r
 });
 var Chunk191905 = require("./191905.js"),
   Chunk647438 = require("./647438.js");
 
-function a(e) {
-  let t = (0, r.X)({
+function r(e) {
+  let a = (0, u.X)({
       usage: "search",
       ...e
     }),
-    n = (0, i.useCallback)((e, n) => 0 === n.length || (e = e.normalize("NFC"), n = n.normalize("NFC"), 0 === t.compare(e.slice(0, n.length), n)), [t]),
-    a = (0, i.useCallback)((e, n) => 0 === n.length || (e = e.normalize("NFC"), n = n.normalize("NFC"), 0 === t.compare(e.slice(-n.length), n)), [t]),
-    o = (0, i.useCallback)((e, n) => {
-      if (0 === n.length) returntrue;
+    t = (0, n.useCallback)((e, t) => 0 === t.length || (e = e.normalize("NFC"), t = t.normalize("NFC"), 0 === a.compare(e.slice(0, t.length), t)), [a]),
+    r = (0, n.useCallback)((e, t) => 0 === t.length || (e = e.normalize("NFC"), t = t.normalize("NFC"), 0 === a.compare(e.slice(-t.length), t)), [a]),
+    i = (0, n.useCallback)((e, t) => {
+      if (0 === t.length) returntrue;
       e = e.normalize("NFC");
-      let r = 0,
-        i = (n = n.normalize("NFC")).length;
-      for (; r + i <= e.length; r++) {
-        let a = e.slice(r, r + i);
-        if (0 === t.compare(n, a)) returntrue
+      let u = 0,
+        n = (t = t.normalize("NFC")).length;
+      for (; u + n <= e.length; u++) {
+        let r = e.slice(u, u + n);
+        if (0 === a.compare(t, r)) returntrue
       }
       returnfalse
-    }, [t]);
-  return (0, i.useMemo)(() => ({
-    startsWith: n,
-    endsWith: a,
-    contains: o
-  }), [n, a, o])
+    }, [a]);
+  return (0, n.useMemo)(() => ({
+    startsWith: t,
+    endsWith: r,
+    contains: i
+  }), [t, r, i])
 }

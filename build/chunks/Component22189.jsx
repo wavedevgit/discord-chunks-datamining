@@ -447,7 +447,7 @@ let ey = () => {
       name: "recurring3PPromotions",
       title: Chunk388032.intl.string(Chunk388032.t.m7PucM),
       subtitle: " ",
-      onCtaClick: () => (0, Chunk469165.w)({
+      onCtaClick: () => (0, Chunk469165.wQ)({
         analyticsLocations: module
       }),
       pillText: Chunk388032.intl.string(Chunk388032.t.oW0eUd).toLocaleUpperCase(),

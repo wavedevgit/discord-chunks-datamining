@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk675957 = require("./675957.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk295234 = require("./295234.js");
+  Chunk398300 = require("./398300.js");
 let h = e => {
   let {
     targetElementRef: t
@@ -39,7 +39,7 @@ let h = e => {
     actions: [{
       text: p.intl.string(p.t["CDdYB/"]),
       onClick: () => {
-        (0, c.w)({
+        (0, c.wQ)({
           analyticsLocations: [a.Z.HOME_PAGE_PREMIUM_TAB]
         }), (0, u.ow)()
       }

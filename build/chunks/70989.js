@@ -1,10 +1,9 @@
-/** Chunk was on web.js **/
-/** chunk id: 70989, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66548 **/
+/** chunk id: 70989, original params: e,l,t (module,exports,require) **/
 require.d(exports, {
-  K: () => i
+  K: () => n
 });
-let r = (0, require("./722733.js").Z)({
+let a = (0, require("./722733.js").Z)({
   kind: "user",
   name: "2025-10-mana-date-inputs",
   defaultConfig: {
@@ -17,8 +16,8 @@ let r = (0, require("./722733.js").Z)({
   }
 });
 
-function i(e) {
-  return r.useConfig({
+function n(e) {
+  return a.useConfig({
     location: e
   }).enabled
 }

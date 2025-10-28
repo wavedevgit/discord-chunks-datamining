@@ -58,13 +58,13 @@ function f() {
     isLoggingGatewayEvents: f,
     isLoggingOverlayEvents: S,
     isLoggingAnalyticsEvents: v,
-    isAnalyticsDebuggerEnabled: h,
-    isTracingRequests: P,
+    isAnalyticsDebuggerEnabled: P,
+    isTracingRequests: h,
     isForcedCanary: j,
     isSourceMapsEnabled: A,
     isIdleStatusIndicatorEnabled: N,
-    isAxeEnabled: w,
-    preventPopoutClose: _,
+    isAxeEnabled: _,
+    preventPopoutClose: w,
     onlyShowPreviewAppCollections: D,
     disableAppCollectionsCache: x
   } = (0, Chunk442837.cj)([Chunk857192.default, Chunk594174.default, Chunk906467.Z], () => {
@@ -89,10 +89,10 @@ function f() {
   }), {
     horizontalSpacing: I,
     verticalSpacing: T,
-    maxHorizontalSpacing: C,
-    maxVerticalSpacing: L
+    maxHorizontalSpacing: R,
+    maxVerticalSpacing: C
   } = (0, Chunk482215.i)(), {
-    setHorizontalSpacing: R,
+    setHorizontalSpacing: L,
     setVerticalSpacing: m
   } = Chunk482215.i.getState(), Z = Chunk695346.zY.useSetting(), k = [];
   return exports && require && (k.push((0, Chunk951288.jsx)(Chunk481060.sNh, {
@@ -125,10 +125,10 @@ function f() {
     children: [(0, Chunk951288.jsx)(Chunk481060.S89, {
       id: "tracing-requests",
       label: "Tracing Requests",
-      checked: P,
+      checked: h,
       action: () => {
         (0, Chunk179658.y)({
-          trace: !P
+          trace: !h
         })
       }
     }, "tracing-requests"), (0, Chunk951288.jsx)(Chunk481060.S89, {
@@ -168,19 +168,19 @@ function f() {
     }, "idle-status"), (0, Chunk951288.jsx)(Chunk481060.S89, {
       id: "accessibility-auditing",
       label: "Accessibility Auditing",
-      checked: w,
+      checked: _,
       action: () => {
         (0, Chunk179658.y)({
-          axeEnabled: !w
+          axeEnabled: !_
         })
       }
     }, "accessibility-auditing"), (0, Chunk951288.jsx)(Chunk481060.S89, {
       id: "prevent-popout-close",
       label: "Prevent Popouts From Closing",
-      checked: _,
+      checked: w,
       action: () => {
         (0, Chunk179658.y)({
-          preventPopoutClose: !_
+          preventPopoutClose: !w
         })
       }
     }, "prevent-popout-close"), (0, Chunk951288.jsx)(Chunk481060.S89, {
@@ -241,10 +241,10 @@ function f() {
     }, "analytics-events"), (0, Chunk951288.jsx)(Chunk481060.S89, {
       id: "analytics-debugger",
       label: "Analytics Debugger",
-      checked: h,
+      checked: P,
       action: () => {
         (0, Chunk179658.y)({
-          analyticsDebuggerEnabled: !h
+          analyticsDebuggerEnabled: !P
         })
       }
     }, "analytics-debugger")]
@@ -274,8 +274,8 @@ function f() {
       ref: t,
       value: I,
       minValue: 0,
-      maxValue: C,
-      onChange: e => R(e),
+      maxValue: R,
+      onChange: e => L(e),
       renderValue: e => "".concat(Math.round(e), "px"),
       "aria-label": "Horizontal Spacing"
     }))
@@ -286,7 +286,7 @@ function f() {
       ref: t,
       value: T,
       minValue: 0,
-      maxValue: L,
+      maxValue: C,
       onChange: e => m(e),
       "aria-label": "Horizontal Spacing",
       renderValue: e => "".concat(Math.round(e), "px")

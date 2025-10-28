@@ -1,7 +1,7 @@
-/** Chunk was on 93964 **/
+/** Chunk was on 75215 **/
 /** chunk id: 583478, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => j
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,35 +16,35 @@ var Chunk951288 = require("./951288.js"),
   Chunk48541 = require("./48541.js"),
   Chunk664597 = require("./664597.js");
 let y = new Chunk710845.Z("BalanceCounter"),
-  j = (0, Chunk168232.dU)(true) === Chunk48541.C.PRODUCTION,
-  d = e => null === e ? 0 : "".concat(e.toFixed(0)).length,
+  d = (0, Chunk168232.dU)(true) === Chunk48541.C.PRODUCTION,
+  m = e => null == e ? 0 : "".concat(e.toFixed(0)).length,
   g = e => {
     var t, r;
     let {
-      value: l,
+      value: o,
       onSetDigitCount: u,
       onValueChange: i,
       onValueReached: s,
       targetTotalCounterTime: b = 3e3
-    } = e, [p, O] = (0, o.useState)(0), g = (0, o.useRef)(null), m = (0, o.useRef)(null);
-    (0, o.useEffect)(() => {
-      if (null === l) return;
+    } = e, [p, O] = (0, l.useState)(0), g = (0, l.useRef)(null), j = (0, l.useRef)(null);
+    (0, l.useEffect)(() => {
+      if (null === o) return;
       if (null === g.current) {
-        g.current = l;
+        g.current = o;
         return
       }
-      let e = null !== g.current ? l - g.current : l;
-      0 !== e && null !== g.current && i(e), m.current = {
+      let e = null !== g.current ? o - g.current : o;
+      0 !== e && null !== g.current && i(e), j.current = {
         lastChangedAt: Date.now(),
         totalDelta: Math.abs(e)
       }
-    }, [l, i]);
-    let v = null != l ? l : 0,
-      P = null != (t = g.current) ? t : v,
+    }, [o, i]);
+    let v = null != o ? o : 0,
+      h = null != (t = g.current) ? t : v,
       {
-        duration: h,
+        duration: P,
         delay: w
-      } = (0, f.nL)(v - P, b),
+      } = (0, f.nL)(v - h, b),
       {
         number: D
       } = (0, c.q_F)({
@@ -56,61 +56,61 @@ let y = new Chunk710845.Z("BalanceCounter"),
           mass: 1,
           tension: 20,
           friction: 10,
-          duration: h
+          duration: P
         },
         delay: w,
         onStart: () => {
-          u(d(P))
+          u(m(h))
         },
         onRest: () => {
-          if (O(p + 1), s(), !j && null !== m.current && null !== g.current) {
+          if (O(p + 1), s(), !d && null !== j.current && null !== g.current) {
             let e = Date.now();
             y.log("Balance Counter finished updating: ", {
-              time: e - m.current.lastChangedAt,
+              time: e - j.current.lastChangedAt,
               delta: v - g.current
             })
           }
-          u(d(v)), g.current = v
+          u(m(v)), g.current = v
         }
       }),
-      S = d(Math.max(null != l ? l : 0, D.get()));
+      C = m(Math.max(null != o ? o : 0, D.get()));
     return (0, n.jsx)(a.animated.div, {
       style: {
-        width: "calc(".concat(S, "ch)")
+        width: "calc(".concat(C, "ch)")
       },
       children: D.to(e => "".concat(e.toFixed(0)))
     })
   },
-  m = e => {
+  j = e => {
     var t, {
         value: r,
-        className: l
+        className: o
       } = e,
       a = function(e, t) {
         if (null == e) return {};
-        var r, n, o = function(e, t) {
+        var r, n, l = function(e, t) {
           if (null == e) return {};
-          var r, n, o = {},
-            l = Object.keys(e);
-          for (n = 0; n < l.length; n++) r = l[n], t.indexOf(r) >= 0 || (o[r] = e[r]);
-          return o
+          var r, n, l = {},
+            o = Object.keys(e);
+          for (n = 0; n < o.length; n++) r = o[n], t.indexOf(r) >= 0 || (l[r] = e[r]);
+          return l
         }(e, t);
         if (Object.getOwnPropertySymbols) {
-          var l = Object.getOwnPropertySymbols(e);
-          for (n = 0; n < l.length; n++) r = l[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (o[r] = e[r])
+          var o = Object.getOwnPropertySymbols(e);
+          for (n = 0; n < o.length; n++) r = o[n], !(t.indexOf(r) >= 0) && Object.prototype.propertyIsEnumerable.call(e, r) && (l[r] = e[r])
         }
-        return o
+        return l
       }(e, ["value", "className"]);
     let s = null === r,
-      [b, f] = (0, o.useState)(null),
-      p = (0, o.useMemo)(() => d(r), [r]),
+      [b, f] = (0, l.useState)(null),
+      p = (0, l.useMemo)(() => m(r), [r]),
       y = null != (t = (0, i.Z)(p)) ? t : 0,
-      j = (0, o.useMemo)(() => null === b ? Math.max(y, p) : Math.max(p, b), [y, p, b]);
+      d = (0, l.useMemo)(() => null === b ? Math.max(y, p) : Math.max(p, b), [y, p, b]);
     return (0, n.jsx)(c.Text, {
       variant: "text-md/semibold",
-      className: u()(O.balanceCounterText, s ? true : O.balanceCounterMargin, l),
+      className: u()(O.balanceCounterText, s ? true : O.balanceCounterMargin, o),
       style: {
-        width: "".concat(s ? 0 : j, "ch"),
+        width: "".concat(s ? 0 : d, "ch"),
         opacity: s ? "0" : 1
       },
       children: s ? null : (0, n.jsx)(g, function(e) {

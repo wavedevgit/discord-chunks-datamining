@@ -302,11 +302,11 @@ function e1(e, t, n) {
   return e === t || (!!n || !!(0, L.Km)(t)) && (e === B.sH ? (0, L.r8)(t) || (0, L.bw)(t) : e === B.Zb && (0, L.bw)(t))
 }
 
-function e3(e, t) {
+function e2(e, t) {
   return e === B.sH && (0, L.bw)(t)
 }
 
-function e2(e) {
+function e3(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
     n = e.split(" ").filter(e => "" !== e || t).map(e => {
       let t = e.toLocaleLowerCase();
@@ -543,7 +543,7 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
           allowSnowflake: p,
           includeAllThreads: h
         } = e,
-        m = e2(n, c),
+        m = e3(n, c),
         g = e0(l);
       t = null != r ? s()(B.ZP.getChannels(r)[l]).map(e => e.channel).concat(g ? h ? j.Z.getAllThreadsForGuild(r) : P.Z.computeAllActiveJoinedThreads(r) : []).value() : s()(j.Z.loadAllGuildAndPrivateChannelsFromDisk()).values().concat(g ? P.Z.computeAllActiveJoinedThreads() : []).value();
       let E = {},
@@ -565,7 +565,7 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
             }
             c = Math.min(ev - eS, c)
           }
-          0 !== c && !(t.length > 1) && (1 !== t.length || t[0].isFullMatch || s) && (e3(l, e.type) && (c = Math.max(c - eA, eS / 2)), e.isThread() && (e.isActiveThread() || (c -= eC), w.Z.hasJoined(e.id) || (c -= eN)), c = Math.min(c + Math.min(null != (O = U.Z.getScoreWithoutFetchingLatest(e.id)) ? O : 0 / y, 1) * eR, c >= ev ? ey : ev), b.push({
+          0 !== c && !(t.length > 1) && (1 !== t.length || t[0].isFullMatch || s) && (e2(l, e.type) && (c = Math.max(c - eA, eS / 2)), e.isThread() && (e.isActiveThread() || (c -= eC), w.Z.hasJoined(e.id) || (c -= eN)), c = Math.min(c + Math.min(null != (O = U.Z.getScoreWithoutFetchingLatest(e.id)) ? O : 0 / y, 1) * eR, c >= ev ? ey : ev), b.push({
             type: (0, L.bw)(e.type) ? ec.h8.VOICE_CHANNEL : ec.h8.TEXT_CHANNEL,
             record: e,
             score: eY(c, d[e.id]),
@@ -706,20 +706,22 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
         exactQuery: RegExp("^".concat(ei.Z.escape(i)), "i"),
         containQuery: RegExp(ei.Z.escape(i), "i"),
         queryLower: i
-      }, s = {
+      }, s = es.ZP.getUserIsStaff(), l = {
         [d.Ky.SHOP]: [ef.intl.string(ef.t.pWG4ze)],
         [d.Ky.NITRO_HOME]: [ef.intl.string(ef.t.Ipxkog)],
         [d.Ky.QUEST_HOME]: [ef.intl.string(ef.t.JALI2K)],
         [d.Ky.APPS_HOME]: [ef.intl.string(ef.t.PHjkRE), ef.intl.string(ef.t.AKcFUj)]
-      }, l = [];
-      for (let e in s) {
+      };
+      s && (l[d.Ky.REVENUE_PLAYGROUND] = [ef.intl.string(ef.t["4Y3g1V"]), ef.intl.string(ef.t.OZJY67)]);
+      let c = [];
+      for (let e in l) {
         let t = d.Ky[e],
-          n = s[t];
+          n = l[t];
         if (null != n)
           for (let e of n) {
             let n = e.toLocaleLowerCase(),
               i = eq(n, a, r);
-            i > 0 && l.push({
+            i > 0 && c.push({
               type: ec.h8.IN_APP_NAVIGATION,
               record: d.FL.fromType(t),
               score: eY(i),
@@ -732,14 +734,14 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
         var t;
         let n = [e.title].concat(e.searchableTitles),
           i = null != (t = (0, o.max)(n.map(e => eY(eq(e.toLocaleLowerCase(), a, r))))) ? t : 0;
-        i > 0 && l.push({
+        i > 0 && c.push({
           type: ec.h8.IN_APP_NAVIGATION,
           record: d.FL.fromType(d.Ky.SETTINGS, e.path, e.title),
           score: i,
           comparator: e.title.toLocaleLowerCase(),
           sortable: e.title.toLocaleLowerCase()
         })
-      }), l.sort(f.Z), l.length > n && (l.length = n), l
+      }), c.sort(f.Z), c.length > n && (c.length = n), c
     },
     querySKUs(e) {
       let {

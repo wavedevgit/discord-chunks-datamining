@@ -86,7 +86,7 @@ function _(e) {
           className: c()(f.footer, {
             [f.disabled]: C
           }),
-          children: [!x && y && (0, n.jsx)(p.ZP, {
+          children: [!x && y && (0, n.jsx)(p.Z, {
             guildId: a,
             powerup: _,
             onError: g,

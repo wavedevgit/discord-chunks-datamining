@@ -17,7 +17,7 @@ function a(e, t, n) {
   }) : e[t] = n, e
 }
 var o = function(e) {
-  return e.SHOP = "SHOP", e.NITRO_HOME = "NITRO_HOME", e.QUEST_HOME = "QUEST_HOME", e.APPS_HOME = "APPS_HOME", e.SETTINGS = "SETTINGS", e
+  return e.SHOP = "SHOP", e.NITRO_HOME = "NITRO_HOME", e.QUEST_HOME = "QUEST_HOME", e.APPS_HOME = "APPS_HOME", e.SETTINGS = "SETTINGS", e.REVENUE_PLAYGROUND = "REVENUE_PLAYGROUND", e
 }(o || {});
 class s extends Chunk81825.Z {
   static fromType(e, t, n) {
@@ -47,6 +47,11 @@ class s extends Chunk81825.Z {
           path: null != t ? t : i.Z5c.SETTINGS("account"),
           label: n,
           type: "SETTINGS"
+        });
+      case "REVENUE_PLAYGROUND":
+        return new s({
+          path: null != t ? t : i.Z5c.APP,
+          type: "REVENUE_PLAYGROUND"
         });
       default:
         throw Error("Unhandled InAppNavigationType")

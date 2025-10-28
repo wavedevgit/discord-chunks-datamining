@@ -33,38 +33,38 @@ let D = (0, Chunk108843.Z)(function(e) {
     webBuildOverride: t,
     onSelect: n,
     onInteraction: s
-  } = e, [c, D] = i.useState(false), x = (0, v.Z)(), I = (0, P.Z)(), T = (0, f.Z)(), C = (0, y.Z)(), L = (0, A.Z)(), R = (0, j.Z)(), m = (0, S.Z)(), Z = (0, N.Z)(), k = (0, h.Z)(), {
+  } = e, [c, D] = i.useState(false), x = (0, v.Z)(), I = (0, h.Z)(), T = (0, f.Z)(), R = (0, y.Z)(), C = (0, A.Z)(), L = (0, j.Z)(), m = (0, S.Z)(), Z = (0, N.Z)(), k = (0, P.Z)(), {
     analyticsLocations: V
   } = (0, u.ZP)(), M = i.useMemo(() => (0, g.j)(), []);
-  async function B() {
+  async function U() {
     try {
       D(true), await (0, d.bF)(), window.location.reload(true)
     } catch (e) {
       D(false)
     }
   }
-  let U = (0, p.wy)("UserSettingsCogContextMenu"),
+  let B = (0, p.wy)("UserSettingsCogContextMenu"),
     G = (0, E.getWebUserSettingsByUserSettingsSections)(),
-    z = (0, O.VO)(),
-    F = i.useMemo(() => {
+    Y = (0, O.VO)(),
+    z = i.useMemo(() => {
       let e = [];
-      return z.forEach(t => {
+      return Y.forEach(t => {
         let {
           section: n,
           predicate: a
         } = t;
-        n !== o.ID.HEADER && n !== o.ID.CUSTOM && n !== o.ID.DIVIDER && "logout" !== n && (null == a || a()) && (U && null == G.get(n) || (U && n === w.oAB.PROFILE_CUSTOMIZATION ? e.unshift(t) : e.push(t)))
+        n !== o.ID.HEADER && n !== o.ID.CUSTOM && n !== o.ID.DIVIDER && "logout" !== n && (null == a || a()) && (B && null == G.get(n) || (B && n === _.oAB.PROFILE_CUSTOMIZATION ? e.unshift(t) : e.push(t)))
       }), e
-    }, [z, U, G]);
+    }, [Y, B, G]);
   return (0, a.jsx)(u.Gt, {
     value: V,
     children: (0, a.jsxs)(l.v2r, {
       navId: "user-settings-cog",
       onClose: r.Zy,
-      "aria-label": _.intl.string(_.t.opYYHn),
+      "aria-label": w.intl.string(w.t.opYYHn),
       onSelect: n,
       onInteraction: s,
-      children: [F.map(e => {
+      children: [z.map(e => {
         var t, n;
         let {
           section: i,
@@ -95,7 +95,7 @@ let D = (0, Chunk108843.Z)(function(e) {
           action: () => {
             var e;
             return null != o ? o() : function(e, t, n) {
-              let a = Object.values(w.oAB).filter(e => e === t)[0];
+              let a = Object.values(_.oAB).filter(e => e === t)[0];
               null != a && (0, E.openUserSettings)(e, {
                 section: a,
                 analyticsLocations: n
@@ -105,21 +105,21 @@ let D = (0, Chunk108843.Z)(function(e) {
         }), n = n = {
           children: (e => {
             switch (e) {
-              case w.oAB.GAMES:
+              case _.oAB.GAMES:
                 return x;
-              case w.oAB.STREAMER_MODE:
+              case _.oAB.STREAMER_MODE:
                 return I;
-              case w.oAB.APPEARANCE:
+              case _.oAB.APPEARANCE:
                 return T;
-              case w.oAB.ACCESSIBILITY:
-                return C;
-              case w.oAB.VOICE:
-                return L;
-              case w.oAB.TEXT:
+              case _.oAB.ACCESSIBILITY:
                 return R;
-              case w.oAB.EXPERIMENTS:
+              case _.oAB.VOICE:
+                return C;
+              case _.oAB.TEXT:
+                return L;
+              case _.oAB.EXPERIMENTS:
                 return m;
-              case w.oAB.DEVELOPER_OPTIONS:
+              case _.oAB.DEVELOPER_OPTIONS:
                 return Z;
               default:
                 return null
@@ -153,8 +153,8 @@ let D = (0, Chunk108843.Z)(function(e) {
         children: (0, a.jsx)(l.sNh, {
           id: "clear-build-override",
           disabled: c,
-          label: _.intl.string(_.t["/Nz9rY"]),
-          action: B,
+          label: w.intl.string(w.t["/Nz9rY"]),
+          action: U,
           color: "danger"
         })
       }) : null]

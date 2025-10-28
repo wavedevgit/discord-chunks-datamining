@@ -643,7 +643,7 @@ function e1(e) {
   })
 }
 
-function e3(e) {
+function e2(e) {
   let {
     message: t,
     channel: n,
@@ -656,7 +656,7 @@ function e3(e) {
   })
 }
 
-function e2(e) {
+function e3(e) {
   let {
     message: t,
     channel: n,
@@ -819,9 +819,9 @@ let tn = Object.freeze({
   [Chunk981631.uaV.PRIVATE_CHANNEL_INTEGRATION_ADDED]: Chunk563959.P,
   [Chunk981631.uaV.PRIVATE_CHANNEL_INTEGRATION_REMOVED]: Chunk563959.e,
   [Chunk981631.uaV.PREMIUM_REFERRAL]: te,
-  [Chunk981631.uaV.GUILD_DEADCHAT_REVIVE_PROMPT]: e3,
+  [Chunk981631.uaV.GUILD_DEADCHAT_REVIVE_PROMPT]: e2,
   [Chunk981631.uaV.CUSTOM_GIFT]: true,
-  [Chunk981631.uaV.GUILD_GAMING_STATS_PROMPT]: e2,
+  [Chunk981631.uaV.GUILD_GAMING_STATS_PROMPT]: e3,
   [Chunk981631.uaV.VOICE_HANGOUT_INVITE]: true,
   [Chunk981631.uaV.POLL_RESULT]: Chunk507435.Z,
   [Chunk981631.uaV.CHANGELOG]: true,

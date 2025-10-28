@@ -27,21 +27,21 @@ function b(e) {
     } = e,
     O = function(e, t) {
       if (null == e) return {};
-      var n, r, l = function(e, t) {
+      var n, r, o = function(e, t) {
         if (null == e) return {};
-        var n, r, l = {},
-          o = Object.keys(e);
-        for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
-        return l
+        var n, r, o = {},
+          l = Object.keys(e);
+        for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
+        return o
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var o = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
+        var l = Object.getOwnPropertySymbols(e);
+        for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
       }
-      return l
+      return o
     }(e, ["root", "directory", "target", "defaultTarget", "onPanelChange", "sidebarHeader", "sidebarFooter", "emptyState"]);
-  let [x, P] = l.useState(false), [S, C] = l.useState(1.4), _ = l.useRef(null), w = (0, o.e7)([c.Z], () => c.Z.useReducedMotion), E = (0, o.e7)([s.Z], () => s.Z.isFocused());
-  return l.useEffect(() => {
+  let [x, P] = o.useState(false), [S, C] = o.useState(1.4), _ = o.useRef(null), w = (0, l.e7)([c.Z], () => c.Z.useReducedMotion), E = (0, l.e7)([s.Z], () => s.Z.isFocused());
+  return o.useEffect(() => {
     let e = e => {
       let {
         intensity: t,

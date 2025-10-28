@@ -20,14 +20,20 @@ function c() {
     action: () => {
       (0, Chunk37234.jN)(Chunk981631.S9g.MANA_PLAYGROUND)
     },
-    children: (0, Chunk951288.jsx)(Chunk481060.kSQ, {
-      children: (0, Chunk951288.jsx)(Chunk481060.sNh, {
+    children: (0, Chunk951288.jsxs)(Chunk481060.kSQ, {
+      children: [(0, Chunk951288.jsx)(Chunk481060.sNh, {
         id: "mana-playground",
         label: "Mana Playground",
         action: () => {
           (0, Chunk37234.jN)(Chunk981631.S9g.MANA_PLAYGROUND)
         }
-      })
+      }), (0, Chunk951288.jsx)(Chunk481060.sNh, {
+        id: "revenue-playground",
+        label: "Revenue Playground",
+        action: () => {
+          (0, Chunk37234.jN)(Chunk981631.S9g.REVENUE_PLAYGROUND)
+        }
+      })]
     }, "design-systems")
   }, "playgrounds") : null
 }

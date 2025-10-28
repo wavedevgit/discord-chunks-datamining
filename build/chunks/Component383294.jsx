@@ -1,7 +1,7 @@
 /** Chunk was on 13025 **/
 /** chunk id: 383294, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => w
+  default: () => L
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -40,15 +40,15 @@ function Z() {
     b = Chunk647438.useRef(null),
     p = (0, Chunk410030.ZP)(),
     m = (0, Chunk481060.apv)(Chunk335131),
-    h = Chunk507808 ? Chunk345554.Z : Chunk582425.Z,
-    C = Chunk507808 ? Chunk466674.Z : Chunk88490.Z;
+    _ = Chunk507808 ? Chunk345554.Z : Chunk582425.Z,
+    g = Chunk507808 ? Chunk466674.Z : Chunk88490.Z;
   Chunk647438.useEffect(() => {
     if (!exports && !module) {
       var n;
       null == (n = Chunk100527.current) || require.play()
     }
   }, [exports, module]);
-  let g = (0, Chunk481060.q_F)({
+  let h = (0, Chunk481060.q_F)({
     from: {
       y: 50
     },
@@ -99,7 +99,7 @@ function Z() {
   })
 }
 
-function T(e) {
+function I(e) {
   let {
     transitionState: t,
     balance: n,
@@ -111,39 +111,39 @@ function T(e) {
     "data-migration-pending": true,
     transitionState: t,
     size: l.CgR.DYNAMIC,
-    className: O.modal,
+    className: R.modal,
     parentComponent: "QuestsOrbsRewardModal",
     children: [(0, r.jsx)("div", {
-      className: O.header,
+      className: R.header,
       children: (0, r.jsx)(l.olH, {
         "data-migration-pending": true,
-        className: O.closeBtn,
+        className: R.closeBtn,
         onClick: o
       })
     }), "loading" === c ? (0, r.jsx)("div", {
-      className: O.spinnerContainer,
+      className: R.spinnerContainer,
       children: (0, r.jsx)(l.$jN, {
         type: l.RAz.SPINNING_CIRCLE
       })
     }) : "success" === c ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(Z, {}), (0, r.jsx)(l.Heading, {
         variant: "heading-lg/medium",
-        className: O.title,
+        className: R.title,
         children: x.intl.format(x.t["8l9H0s"], {
           balanceHook: () => (0, r.jsxs)("span", {
-            className: O.orbsBalance,
-            children: [(0, r.jsx)(g.Z, {
+            className: R.orbsBalance,
+            children: [(0, r.jsx)(h.Z, {
               shouldUseThemeColor: true,
-              className: O.orbsBalanceIcon
+              className: R.orbsBalanceIcon
             }), n]
           })
         })
       }), (0, r.jsx)(l.Text, {
         variant: "text-sm/normal",
-        className: O.subtext,
+        className: R.subtext,
         children: x.intl.string(x.t.EDUOIH)
       }), (0, r.jsxs)(l.ButtonGroup, {
-        className: O.buttonContainer,
+        className: R.buttonContainer,
         fullWidthContainer: true,
         fullWidth: true,
         direction: "vertical",
@@ -156,20 +156,20 @@ function T(e) {
           variant: "secondary",
           fullWidth: true,
           text: x.intl.string(x.t["7kTAgJ"]),
-          onClick: () => window.open(j.EYA.PAID_TERMS_ORBS)
+          onClick: () => window.open(v.EYA.PAID_TERMS_ORBS)
         })]
       })]
     }) : (0, r.jsxs)("div", {
-      className: O.errorContainer,
+      className: R.errorContainer,
       children: [(0, r.jsx)("img", {
         alt: "",
-        className: O.errorImage,
-        src: A
+        className: R.errorImage,
+        src: S
       }), (0, r.jsxs)("div", {
-        className: O.errorContentContainer,
+        className: R.errorContentContainer,
         children: [(0, r.jsx)(l.Heading, {
           variant: "heading-xl/medium",
-          className: O.errorHeader,
+          className: R.errorHeader,
           children: x.intl.string(x.t["tWYWJ+"])
         }), (0, r.jsx)(l.Text, {
           variant: "text-md/normal",
@@ -177,7 +177,7 @@ function T(e) {
           children: x.intl.string(x.t.JNQRU4)
         })]
       }), (0, r.jsx)("div", {
-        className: O.buttonContainer,
+        className: R.buttonContainer,
         children: (0, r.jsx)(l.Button, {
           variant: "primary",
           fullWidth: true,
@@ -189,7 +189,7 @@ function T(e) {
   })
 }
 
-function w(e) {
+function L(e) {
   var t, n, {
       quest: o,
       onClose: c
@@ -211,10 +211,10 @@ function w(e) {
     }(e, ["quest", "onClose"]);
   let {
     balance: s
-  } = (0, h.A)(), l = function(e, t, n) {
+  } = (0, _.A)(), l = function(e, t, n) {
     let [r, o] = a.useState("loading"), [c, i] = a.useState(false), {
       balance: s
-    } = (0, h.A)(), l = (0, d.Z)(s), [u, f] = a.useState(false);
+    } = (0, _.A)(), l = (0, d.Z)(s), [u, f] = a.useState(false);
     return (a.useEffect(() => {
       let e = null;
       return "success" === r && t && (e = setTimeout(() => {
@@ -225,7 +225,7 @@ function w(e) {
     }, [r, t]), a.useEffect(() => {
       !c && null != s && null != l && s > l && i(true)
     }, [s, l, c]), a.useEffect(() => {
-      (0, y.QB)(e, E.y$.CROSS_PLATFORM, n).then(e => {
+      (0, O.QB)(e, j.y$.CROSS_PLATFORM, n).then(e => {
         if ((null == e ? true : e.claimedAt) != null) return void o("success");
         o("error")
       }).catch(() => {
@@ -234,17 +234,17 @@ function w(e) {
     }, [e, n]), "error" === r) ? r : "success" === r && (c || u) ? "success" : "loading"
   }(o.id, o.preview, i.location), u = a.useCallback(() => {
     c(), (0, m.Y)({
-      pageType: j.ZY5.GLOBAL_DISCOVERY_QUESTS,
-      sectionType: j.jXE.ORBS_REWARD_MODAL,
-      ctaObject: j.qAy.CTA_TO_ORBS_SHOP
+      pageType: v.ZY5.GLOBAL_DISCOVERY_QUESTS,
+      sectionType: v.jXE.ORBS_REWARD_MODAL,
+      ctaObject: v.qAy.CTA_TO_ORBS_SHOP
     }), (0, p.mK)({
-      tab: R.AW.ORBS,
+      tab: E.AW.ORBS,
       analyticsLocations: [],
-      analyticsSource: o.id === v.V6 ? b.Z.INTRO_TO_ORBS_QUEST : b.Z.QUEST_HOME_PAGE
+      analyticsSource: o.id === C.V6 ? b.Z.INTRO_TO_ORBS_QUEST : b.Z.QUEST_HOME_PAGE
     })
   }, [c, o.id]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(C.o, {}), (0, r.jsx)(T, (t = function(e) {
+    children: [(0, r.jsx)(g.o, {}), (0, r.jsx)(I, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);

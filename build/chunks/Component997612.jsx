@@ -1,8 +1,7 @@
-/** Chunk was on web.js **/
-/** chunk id: 997612, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66548 **/
+/** chunk id: 997612, original params: e,l,t (module,exports,require) **/
 require.d(exports, {
-  $: () => D,
+  $: () => k,
   X: () => M
 });
 var Chunk951288 = require("./951288.js"),
@@ -30,54 +29,15 @@ var Chunk951288 = require("./951288.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk624315 = require("./624315.js");
-
-function N(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function R(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      N(e, t, n[t])
-    })
-  }
-  return e
-}
-
-function P(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
-  }), e
-}
-let D = (0, Chunk972959.H)(() => ({
+let k = (0, Chunk972959.H)(() => ({
   selectedCollection: null,
   selectedStory: null
 }));
 
-function L() {
+function T() {
   let e = (0, Chunk53432.Z)(),
-    t = (0, Chunk606669.Z)(),
-    n = (0, Chunk74869.Z)();
+    l = (0, Chunk606669.Z)(),
+    t = (0, Chunk74869.Z)();
   return (0, Chunk951288.jsxs)(Chunk830447.v, {
     onSelect: Chunk231338.dG,
     navId: "playground-settings-menu",
@@ -99,130 +59,161 @@ function L() {
   })
 }
 
-function x() {
+function D() {
   let e = Chunk647438.useRef(null);
   return (0, Chunk951288.jsx)(Chunk235874.y, {
     targetElementRef: module,
-    renderPopout: () => (0, Chunk951288.jsx)(L, {}),
+    renderPopout: () => (0, Chunk951288.jsx)(T, {}),
     position: "bottom",
     align: "center",
     animation: Chunk235874.y.Animation.SCALE,
     onRequestClose: () => {},
-    children: t => (0, r.jsx)(h.hU, w(R({
-      size: "sm",
-      icon: a.ewm,
-      "aria-label": "Settings",
-      variant: "icon-only"
-    }, t), {
-      buttonRef: e
-    }))
+    children: l => {
+      var t, n;
+      return (0, a.jsx)(m.hU, (t = function(e) {
+        for (var l = 1; l < arguments.length; l++) {
+          var t = null != arguments[l] ? arguments[l] : {},
+            a = Object.keys(t);
+          "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+            return Object.getOwnPropertyDescriptor(t, e).enumerable
+          }))), a.forEach(function(l) {
+            var a;
+            a = t[l], l in e ? Object.defineProperty(e, l, {
+              value: a,
+              enumerable: true,
+              configurable: true,
+              writable: true
+            }) : e[l] = a
+          })
+        }
+        return e
+      }({
+        size: "sm",
+        icon: o.ewm,
+        "aria-label": "Settings",
+        variant: "icon-only"
+      }, l), n = n = {
+        buttonRef: e
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, l) {
+        var t = Object.keys(e);
+        if (Object.getOwnPropertySymbols) {
+          var a = Object.getOwnPropertySymbols(e);
+          t.push.apply(t, a)
+        }
+        return t
+      })(Object(n)).forEach(function(e) {
+        Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
+      }), t))
+    }
   })
 }
 
 function M(e) {
-  var t;
+  var l;
   let {
-    config: n
-  } = e, c = D.useField("selectedCollection"), u = D.useField("selectedStory"), {
-    collection: f,
-    group: m,
-    story: E
-  } = i.useMemo(() => {
+    config: t
+  } = e, u = k.useField("selectedCollection"), d = k.useField("selectedStory"), {
+    collection: b,
+    group: f,
+    story: h
+  } = n.useMemo(() => {
     var e;
-    let t = null != c ? n.collections.find(e => e.id === c) : n.collections[0];
-    if (null == t) return {
+    let l = null != u ? t.collections.find(e => e.id === u) : t.collections[0];
+    if (null == l) return {
       collection: null,
       group: null,
       story: null
     };
-    let r = t.groups.find(e => e.stories.some(e => e.id === u)),
-      i = null != (e = null == r ? true : r.stories.find(e => e.id === u)) ? e : null;
+    let a = l.groups.find(e => e.stories.some(e => e.id === d)),
+      n = null != (e = null == a ? true : a.stories.find(e => e.id === d)) ? e : null;
     return {
-      collection: t,
-      group: r,
-      story: i
+      collection: l,
+      group: a,
+      story: n
     }
-  }, [c, u, n.collections]), b = e => {
-    D.setState({
-      selectedCollection: e,
-      selectedStory: null
-    })
-  }, y = e => {
-    D.setState({
-      selectedStory: e
-    })
-  }, S = null != (t = null == f ? true : f.name) ? t : "Design System", A = null == E ? true : E.name, N = () => {
-    let e = "dev://mana/".concat(null == E ? true : E.id);
-    (0, O.JG)(e, () => (0, _.CF)({
-      id: "playground-link-copied",
-      message: "Copied playground link",
-      type: T.pC.SUCCESS
-    }))
-  };
-  return (0, r.jsxs)("div", {
-    className: C.root,
-    children: [(0, r.jsx)("div", {
-      className: C.group,
-      children: n.collections.map(e => {
-        var t;
-        return (0, r.jsx)(l.a, {
-          children: (0, r.jsx)(p.u, {
+  }, [u, d, t.collections]), x = null != (l = null == b ? true : b.name) ? l : "Design System", g = null == h ? true : h.name;
+  return (0, a.jsxs)("div", {
+    className: P.root,
+    children: [(0, a.jsx)("div", {
+      className: P.group,
+      children: t.collections.map(e => {
+        var l;
+        return (0, a.jsx)(s.a, {
+          children: (0, a.jsx)(y.u, {
             position: "right",
             text: "".concat(e.name, " Design System"),
-            children: (0, r.jsx)(d.L, {
+            children: (0, a.jsx)(c.L, {
               name: e.name,
-              selected: (null != c ? c : null == (t = n.collections[0]) ? true : t.id) === e.id,
-              onClick: () => b(e.id)
+              selected: (null != u ? u : null == (l = t.collections[0]) ? true : l.id) === e.id,
+              onClick: () => {
+                var l;
+                return l = e.id, void k.setState({
+                  selectedCollection: l,
+                  selectedStory: null
+                })
+              }
             })
           })
         }, e.id)
       })
-    }), (0, r.jsxs)("div", {
-      className: C.content,
-      children: [(0, r.jsxs)(g.ZP, {
-        className: C.header,
-        children: [null != S ? (0, r.jsx)(g.ZP.Title, {
-          children: S
-        }) : null, null != A ? (0, r.jsxs)(r.Fragment, {
-          children: [null != S ? (0, r.jsx)(g.ZP.Caret, {
-            className: C.headerDivider
-          }) : null, (0, r.jsx)(g.ZP.Title, {
-            children: A
+    }), (0, a.jsxs)("div", {
+      className: P.content,
+      children: [(0, a.jsxs)(v.ZP, {
+        className: P.header,
+        children: [null != x ? (0, a.jsx)(v.ZP.Title, {
+          children: x
+        }) : null, null != g ? (0, a.jsxs)(a.Fragment, {
+          children: [null != x ? (0, a.jsx)(v.ZP.Caret, {
+            className: P.headerDivider
+          }) : null, (0, a.jsx)(v.ZP.Title, {
+            children: g
           })]
-        }) : null, (null == E ? true : E.docs) != null ? (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)(g.ZP.Divider, {
-            className: C.headerDivider
-          }), (0, r.jsx)(g.ZP.Title, {
-            children: (0, r.jsx)(s.Anchor, {
-              href: E.docs,
+        }) : null, (null == h ? true : h.docs) != null ? (0, a.jsxs)(a.Fragment, {
+          children: [(0, a.jsx)(v.ZP.Divider, {
+            className: P.headerDivider
+          }), (0, a.jsx)(v.ZP.Title, {
+            children: (0, a.jsx)(r.Anchor, {
+              href: h.docs,
               children: "Docs"
             })
           })]
-        }) : null, null != E ? (0, r.jsx)(h.hU, {
+        }) : null, null != h ? (0, a.jsx)(m.hU, {
           size: "sm",
           "aria-label": "Copy Link",
           variant: "icon-only",
-          icon: a.TIy,
-          onClick: N
-        }) : null, (0, r.jsx)("div", {
-          className: C.headerRight,
-          children: (0, r.jsx)(x, {})
+          icon: o.TIy,
+          onClick: () => {
+            var e;
+            let l = "dev://".concat(null != (e = t.playgroundBaseUrl) ? e : "mana", "/").concat(null == h ? true : h.id);
+            (0, O.JG)(l, () => (0, p.CF)({
+              id: "playground-link-copied",
+              message: "Copied playground link",
+              type: w.pC.SUCCESS
+            }))
+          }
+        }) : null, (0, a.jsx)("div", {
+          className: P.headerRight,
+          children: (0, a.jsx)(D, {})
         })]
-      }), (0, r.jsxs)("div", {
-        className: C.page,
-        children: [(0, r.jsx)(o.zJl, {
+      }), (0, a.jsxs)("div", {
+        className: P.page,
+        children: [(0, a.jsx)(i.zJl, {
           fade: true,
-          className: C.sidebar,
-          children: null != f ? (0, r.jsx)(v.N, {
-            groups: f.groups,
-            selectedStory: u,
-            onStorySelect: y
+          className: P.sidebar,
+          children: null != b ? (0, a.jsx)(j.N, {
+            groups: b.groups,
+            selectedStory: d,
+            onStorySelect: e => {
+              k.setState({
+                selectedStory: e
+              })
+            }
           }) : null
-        }), (0, r.jsx)("div", {
-          className: C.content,
-          children: null != E && null != m ? (0, r.jsx)(I.b, {
-            story: E,
-            groupTitle: m.title
+        }), (0, a.jsx)("div", {
+          className: P.content,
+          children: null != h && null != f ? (0, a.jsx)(V.b, {
+            story: h,
+            groupTitle: f.title
           }) : null
         })]
       })]

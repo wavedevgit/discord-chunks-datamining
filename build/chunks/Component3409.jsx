@@ -334,8 +334,8 @@ function eO(e) {
     tokenState: e$,
     setTokenState: e0,
     isSubmittingCurrentStep: e1,
-    billingAddressState: e3,
-    setBillingAddressState: e2,
+    billingAddressState: e2,
+    setBillingAddressState: e3,
     setIsSubmittingCurrentStep: e4,
     hasRedirectURL: e8,
     setHasRedirectURL: e5,
@@ -377,8 +377,8 @@ function eO(e) {
       logger: el,
       shouldLogOnChangeEvents: eT || false,
       onBillingAddressChange: (e, t) => {
-        e2({
-          info: er({}, e3.info, e),
+        e3({
+          info: er({}, e2.info, e),
           isValid: t
         })
       }
@@ -430,7 +430,7 @@ function eO(e) {
           null != j.Z.error && (0, _.fw)()
         },
         tA = (e, t) => {
-          e2(e => ea(er({}, e), {
+          e3(e => ea(er({}, e), {
             info: t
           })), eZ(eN), tu(e)
         },
@@ -446,7 +446,7 @@ function eO(e) {
             let t = n[e];
             return null != t && "" !== t
           });
-          if ((null == n.name || "" === n.name) && null != t && (n.name = t), e2({
+          if ((null == n.name || "" === n.name) && null != t && (n.name = t), e3({
               isValid: r,
               info: n
             }), !r) return void eW(R.h8.ADDRESS);
@@ -546,7 +546,7 @@ function eO(e) {
           eJ({
             info: e,
             isValid: t
-          }), e2(t => ea(er({}, t), {
+          }), e3(t => ea(er({}, t), {
             info: ea(er({}, t.info), {
               name: e.name
             })
@@ -598,66 +598,66 @@ function eO(e) {
     case R.h8.EPS_INFORMATION:
       n = (0, r.jsx)(S.Z, {
         type: J.He.EPS,
-        onAccountHolderNameChange: e => e2({
-          info: ea(er({}, e3.info), {
+        onAccountHolderNameChange: e => e3({
+          info: ea(er({}, e2.info), {
             name: e
           }),
-          isValid: e3.isValid
+          isValid: e2.isValid
         }),
         onEPSBankChange: e => tr(e),
         epsBankValue: tn,
-        billingAddressInfo: e3.info
+        billingAddressInfo: e2.info
       }), o = (0, r.jsx)(ey, {
         onBack: () => eW(R.h8.PAYMENT_TYPE),
         primaryCTA: w.Z.CTAType.CONTINUE,
         primaryText: $.intl.string($.t.PDTjLN),
-        primaryDisabled: true === tn || "" === tn || "" === e3.info.name,
+        primaryDisabled: true === tn || "" === tn || "" === e2.info.name,
         onPrimary: () => eW(R.h8.ADDRESS)
       });
       break;
     case R.h8.IDEAL_INFORMATION:
       n = (0, r.jsx)(T.Z, {
         type: J.He.IDEAL,
-        onAccountHolderNameChange: e => e2({
-          info: ea(er({}, e3.info), {
+        onAccountHolderNameChange: e => e3({
+          info: ea(er({}, e2.info), {
             name: e
           }),
-          isValid: e3.isValid
+          isValid: e2.isValid
         }),
-        billingAddressInfo: e3.info
+        billingAddressInfo: e2.info
       }), o = (0, r.jsx)(ey, {
         onBack: () => eW(R.h8.PAYMENT_TYPE),
         primaryCTA: w.Z.CTAType.CONTINUE,
         primaryText: $.intl.string($.t.PDTjLN),
-        primaryDisabled: "" === e3.info.name,
+        primaryDisabled: "" === e2.info.name,
         onPrimary: () => eW(R.h8.ADDRESS)
       });
       break;
     case R.h8.PRZELEWY24_INFORMATION:
       n = (0, r.jsx)(S.Z, {
         type: J.He.PRZELEWY24,
-        onNameChange: e => e2({
-          info: ea(er({}, e3.info), {
+        onNameChange: e => e3({
+          info: ea(er({}, e2.info), {
             name: e
           }),
-          isValid: e3.isValid
+          isValid: e2.isValid
         }),
-        onEmailChange: e => e2({
-          info: ea(er({}, e3.info), {
+        onEmailChange: e => e3({
+          info: ea(er({}, e2.info), {
             email: e
           }),
-          isValid: e3.isValid
+          isValid: e2.isValid
         }),
         onP24BankChange: e => {
           ta(e)
         },
         p24BankValue: ti,
-        billingAddressInfo: e3.info
+        billingAddressInfo: e2.info
       }), o = (0, r.jsx)(ey, {
         onBack: () => eW(R.h8.PAYMENT_TYPE),
         primaryCTA: w.Z.CTAType.CONTINUE,
         primaryText: $.intl.string($.t.PDTjLN),
-        primaryDisabled: true === e3.info.name || "" === e3.info.name || true === e3.info.email || "" === e3.info.email || true === ti || "" === ti,
+        primaryDisabled: true === e2.info.name || "" === e2.info.name || true === e2.info.email || "" === e2.info.email || true === ti || "" === ti,
         onPrimary: () => eW(R.h8.ADDRESS)
       });
       break;
@@ -705,11 +705,11 @@ function eO(e) {
           switch (e) {
             case J.He.PAYMENT_REQUEST:
               if (null == ez) throw tC(), (0, d.SQ)("Missing paymentRequestPaymentMethod");
-              tu(await (0, d.i6)(ez, e3.info, Y));
+              tu(await (0, d.i6)(ez, e2.info, Y));
               break;
             case J.He.CARD:
               try {
-                let e = tU ? await (0, d.Q5)(eu, e3.info, J.He.CARD, tO.current, Y) : await (0, d.f0)(eu, e$.token, e3.info, Y);
+                let e = tU ? await (0, d.Q5)(eu, e2.info, J.He.CARD, tO.current, Y) : await (0, d.f0)(eu, e$.token, e2.info, Y);
                 tu(e)
               } catch (e) {}
               break;
@@ -717,13 +717,13 @@ function eO(e) {
             case J.He.PAYPAL:
               try {
                 s()(null != e7, "Missing braintreeNonce");
-                let e = await (0, d.lP)(e7, e3.info, Y);
+                let e = await (0, d.lP)(e7, e2.info, Y);
                 tu(e)
               } catch (e) {}
               break;
             case J.He.EPS:
               try {
-                let e = await (0, d.YQ)(eu, tn, e3.info, Y);
+                let e = await (0, d.YQ)(eu, tn, e2.info, Y);
                 tu(e)
               } catch (e) {
                 el.warn(e)
@@ -731,7 +731,7 @@ function eO(e) {
               break;
             case J.He.IDEAL:
               try {
-                let e = tU ? await (0, d.Q5)(eu, e3.info, J.He.IDEAL, tO.current, Y) : await (0, d.aN)(eu, e3.info, Y);
+                let e = tU ? await (0, d.Q5)(eu, e2.info, J.He.IDEAL, tO.current, Y) : await (0, d.aN)(eu, e2.info, Y);
                 tu(e)
               } catch (e) {
                 el.warn(e)
@@ -742,14 +742,14 @@ function eO(e) {
                 if (true === ti) throw (0, d.SQ)("Bank required for Przelewy24");
                 let e = await (0, d.pF)(eu, {
                   p24Bank: ti
-                }, e3.info, Y);
+                }, e2.info, Y);
                 tu(e)
               } catch (e) {}
               break;
             case J.He.PAYSAFE_CARD:
             case J.He.GRABPAY_MY:
               try {
-                let t = await (0, d.sF)(e3.info, e, Y);
+                let t = await (0, d.sF)(e2.info, e, Y);
                 tu(t)
               } catch (e) {}
               break;
@@ -760,14 +760,14 @@ function eO(e) {
               try {
                 let {
                   redirectConfirmation: t
-                } = await (0, d.Dk)(e3.info, e, Y);
+                } = await (0, d.Dk)(e2.info, e, Y);
                 e5(t)
               } catch (e) {}
               break;
             case J.He.GIROPAY:
             case J.He.BANCONTACT:
               try {
-                let t = await (0, d.GV)(eu, e3.info, e, Y);
+                let t = await (0, d.GV)(eu, e2.info, e, Y);
                 tu(t)
               } catch (e) {}
               break;
@@ -776,7 +776,7 @@ function eO(e) {
                 s()(null != te, "Missing adyenPaymentData");
                 let {
                   paymentSource: t
-                } = await (0, d.Dk)(e3.info, e, Y, te, ec);
+                } = await (0, d.Dk)(e2.info, e, Y, te, ec);
                 s()(null != t, "Cash App Pay Payment Source missing"), tu(t)
               } catch (e) {}
               break;
@@ -823,10 +823,10 @@ function eO(e) {
           p = R.h8.PAYMENT_TYPE, u = J.He.CARD
       }
       tU && (p = R.h8.PAYMENT_ELEMENT), n = tU ? null : (0, r.jsx)(eg, {
-        billingAddressInfo: e3.info,
+        billingAddressInfo: e2.info,
         onBillingAddressChange: (e, t) => {
-          e2({
-            info: er({}, e3.info, e),
+          e3({
+            info: er({}, e2.info, e),
             isValid: t
           })
         },
@@ -836,7 +836,7 @@ function eO(e) {
         primaryCTA: w.Z.CTAType.CONTINUE,
         primaryText: $.intl.string($.t.PDTjLN),
         primarySubmitting: e1,
-        primaryDisabled: !e3.isValid || tt,
+        primaryDisabled: !e2.isValid || tt,
         onPrimary: tG
       });
       break;
@@ -868,7 +868,7 @@ function eO(e) {
         elementsRef: tO,
         stripePaymentElementProps: tv,
         stripeAddressElementProps: tI,
-        billingAddressInfo: e3.info,
+        billingAddressInfo: e2.info,
         onSetupError: () => {
           ty(), eW(R.h8.PAYMENT_TYPE)
         }

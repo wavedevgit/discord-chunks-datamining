@@ -222,7 +222,7 @@ let ef = (e, t) => ec({
       descriptionCta: Chunk388032.intl.formatToPlainString(Chunk388032.t.Bf1cBD, {
         helpdeskArticle: Chunk63063.Z.getArticleURL(Chunk981631.BhN.RECURRING_PROMOTION)
       }),
-      onClick: () => (0, Chunk469165.w)({
+      onClick: () => (0, Chunk469165.wQ)({
         analyticsLocations: module
       }),
       badgeText: Chunk388032.intl.string(Chunk388032.t.oW0eUd).toLocaleUpperCase(),

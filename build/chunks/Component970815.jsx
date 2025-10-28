@@ -1,4 +1,4 @@
-/** Chunk was on 93964 **/
+/** Chunk was on 75215 **/
 /** chunk id: 970815, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   A4: () => O,
@@ -22,51 +22,51 @@ let p = () => (0, Chunk951288.jsx)("img", {
   O = (0, Chunk647438.forwardRef)(function(e, t) {
     let {
       id: r,
-      balance: l,
+      balance: o,
       balanceWidgetMode: O = i.b.DEFAULT,
       showNotificationBadge: y,
-      onClick: j,
-      onMouseDown: d,
+      onClick: d,
+      onMouseDown: m,
       disabled: g,
-      isInModalOverlay: m,
+      isInModalOverlay: j,
       className: v
-    } = e, [P, h] = (0, o.useState)(false), w = (0, o.useMemo)(() => O === i.b.SELECTED ? f.selected : P ? f.highlighted : f.default, [O, P]), [D, S] = (0, o.useState)(false), [x, C] = (0, o.useState)(false), [E, k] = (0, o.useState)(.9 * c.D2), R = null === l;
-    (0, o.useEffect)(() => {
-      R && !D && (S(true), setTimeout(() => {
-        C(true)
+    } = e, [h, P] = (0, l.useState)(false), w = (0, l.useMemo)(() => O === i.b.SELECTED ? f.selected : h ? f.highlighted : f.default, [O, h]), [D, C] = (0, l.useState)(false), [S, x] = (0, l.useState)(false), [k, E] = (0, l.useState)(.9 * c.D2), M = null === o;
+    (0, l.useEffect)(() => {
+      M && !D && (C(true), setTimeout(() => {
+        x(true)
       }, 500))
-    }, [R, S, D]), (0, o.useEffect)(() => {
-      x && !R && S(false)
-    }, [R, x]);
-    let M = R || D,
-      N = D ? null : l,
-      [L, A] = (0, o.useState)(null),
-      Z = (0, o.useRef)(null),
-      T = (0, o.useCallback)(() => {
-        Z.current = null, A(null)
+    }, [M, C, D]), (0, l.useEffect)(() => {
+      S && !M && C(false)
+    }, [M, S]);
+    let L = M || D,
+      N = D ? null : o,
+      [R, A] = (0, l.useState)(null),
+      T = (0, l.useRef)(null),
+      F = (0, l.useCallback)(() => {
+        T.current = null, A(null)
       }, []),
-      F = (0, o.useCallback)(e => {
-        let t = L === Z.current;
-        e > 0 && ("earn" !== L || !t) && A("earn")
-      }, [A, L]);
+      Z = (0, l.useCallback)(e => {
+        let t = R === T.current;
+        e > 0 && ("earn" !== R || !t) && A("earn")
+      }, [A, R]);
     return (0, n.jsx)(a.P3F, {
-      onClick: M ? true : j,
+      onClick: L ? true : d,
       className: u()(f.clickable, {
         [f.disabled]: g
       }),
       id: null != r ? r : "balance-widget-pill",
       children: (0, n.jsxs)("span", {
-        onMouseDown: d,
-        onMouseEnter: g ? true : () => h(true),
-        onMouseLeave: g ? true : () => h(false),
+        onMouseDown: m,
+        onMouseEnter: g ? true : () => P(true),
+        onMouseLeave: g ? true : () => P(false),
         ref: t,
         className: u()(f.container, w, v, {
-          [f.containerLoading]: M,
-          [f.inModalOverlay]: m,
+          [f.containerLoading]: L,
+          [f.inModalOverlay]: j,
           [f.disabled]: g
         }),
         children: [(0, n.jsx)("div", {
-          className: u()(f.orbsLottieContainer, M ? f.orbIconloading : true),
+          className: u()(f.orbsLottieContainer, L ? f.orbIconloading : true),
           children: (0, n.jsx)(b.ZP, function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var r = null != arguments[t] ? arguments[t] : {},
@@ -85,16 +85,16 @@ let p = () => (0, Chunk951288.jsx)("img", {
             }
             return e
           }({}, {
-            currentAnimationType: L,
-            animationTypeRef: Z,
-            onSetAnimationDurationMS: k
+            currentAnimationType: R,
+            animationTypeRef: T,
+            onSetAnimationDurationMS: E
           }))
         }), (0, n.jsx)(s.Z, {
           value: N,
-          onValueChange: F,
-          onValueReached: T,
-          targetTotalCounterTime: E,
-          className: M ? f.counterLoading : true
+          onValueChange: Z,
+          onValueReached: F,
+          targetTotalCounterTime: k,
+          className: L ? f.counterLoading : true
         }), y && (0, n.jsx)(p, {})]
       })
     })

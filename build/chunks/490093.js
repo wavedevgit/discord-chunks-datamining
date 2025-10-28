@@ -1,17 +1,17 @@
-/** Chunk was on 93964 **/
+/** Chunk was on 75215 **/
 /** chunk id: 490093, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   D2: () => n,
-  nL: () => l
+  nL: () => o
 });
 let n = 3e3,
-  o = {
+  l = {
     EARN: .25,
     SPEND: .3
   },
-  l = (e, t) => {
+  o = (e, t) => {
     let r = e > 0,
-      n = t * o[r ? "EARN" : "SPEND"];
+      n = t * l[r ? "EARN" : "SPEND"];
     return {
       duration: n,
       delay: r ? t - n : 0

@@ -1,4 +1,4 @@
-/** Chunk was on 93964 **/
+/** Chunk was on 75215 **/
 /** chunk id: 934248, original params: e,t,r (module,exports,require) **/
 require.d(exports, {
   D: () => a
@@ -19,15 +19,15 @@ let u = {
     }
   },
   a = e => {
-    let t = o.useRef(null),
-      a = o.useRef(e);
+    let t = l.useRef(null),
+      a = l.useRef(e);
     a.current = e;
-    let c = o.useMemo(() => () => {
+    let c = l.useMemo(() => () => {
         null != t.current && t.current.play(e)
       }, [e]),
-      i = o.useCallback(e => {
-        var o, c;
-        return (0, n.jsx)(l.L, (o = function(e) {
+      i = l.useCallback(e => {
+        var l, c;
+        return (0, n.jsx)(o.L, (l = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var r = null != arguments[t] ? arguments[t] : {},
               n = Object.keys(r);
@@ -49,7 +49,7 @@ let u = {
           ref: t,
           initialAnimation: a.current,
           markers: u
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(c)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(c)) : (function(e, t) {
           var r = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var n = Object.getOwnPropertySymbols(e);
@@ -57,17 +57,17 @@ let u = {
           }
           return r
         })(Object(c)).forEach(function(e) {
-          Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(c, e))
-        }), o))
+          Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(c, e))
+        }), l))
       }, []);
     return {
       events: {},
       play: c,
-      getDuration: o.useCallback(() => {
+      getDuration: l.useCallback(() => {
         var e;
         return null == (e = t.current) ? true : e.getDuration()
       }, []),
-      getCurrentFrame: o.useCallback(() => {
+      getCurrentFrame: l.useCallback(() => {
         var e, r;
         return null != (r = null == (e = t.current) ? true : e.getCurrentFrame()) ? r : null
       }, []),

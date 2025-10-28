@@ -1,11 +1,10 @@
-/** Chunk was on web.js **/
-/** chunk id: 49603, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 33622 **/
+/** chunk id: 49603, original params: e,a,t (module,exports,require) **/
 require.d(exports, {
-  FK: () => f,
-  Lh: () => c,
-  So: () => d,
-  tN: () => u
+  FK: () => m,
+  Lh: () => s,
+  So: () => c,
+  tN: () => d
 });
 var Chunk580560 = require("./580560.js"),
   Chunk533426 = require("./533426.js"),
@@ -16,86 +15,86 @@ var Chunk580560 = require("./580560.js"),
 function l(e) {
   return e && e.__esModule ? e.default : e
 }
-let c = new WeakMap;
+let s = new WeakMap;
 
-function u(e) {
+function d(e) {
   return (null == e ? true : e.calendar.identifier) === "gregory" && "BC" === e.era ? "short" : true
 }
 
-function d(e) {
-  var t;
-  let n, c, d = (0, a.q)(l(r.Z), "@react-aria/calendar");
+function c(e) {
+  var a;
+  let t, s, c = (0, r.q)(l(u.Z), "@react-aria/calendar");
   "highlightedRange" in e ? {
-    start: n,
-    end: c
-  } = e.highlightedRange || {} : n = c = null != (t = e.value) ? t : true;
-  let f = (0, o.a)({
+    start: t,
+    end: s
+  } = e.highlightedRange || {} : t = s = null != (a = e.value) ? a : true;
+  let m = (0, i.a)({
       weekday: "long",
       month: "long",
       year: "numeric",
       day: "numeric",
-      era: u(n) || u(c),
+      era: d(t) || d(s),
       timeZone: e.timeZone
     }),
-    p = "anchorDate" in e ? e.anchorDate : null;
-  return (0, s.useMemo)(() => {
-    if (!p && n && c)
-      if ((0, i.KC)(n, c)) {
-        let t = f.format(n.toDate(e.timeZone));
-        return d.format("selectedDateDescription", {
-          date: t
+    h = "anchorDate" in e ? e.anchorDate : null;
+  return (0, o.useMemo)(() => {
+    if (!h && t && s)
+      if ((0, n.KC)(t, s)) {
+        let a = m.format(t.toDate(e.timeZone));
+        return c.format("selectedDateDescription", {
+          date: a
         })
       } else {
-        let t = _(f, d, n, c, e.timeZone);
-        return d.format("selectedRangeDescription", {
-          dateRange: t
+        let a = D(m, c, t, s, e.timeZone);
+        return c.format("selectedRangeDescription", {
+          dateRange: a
         })
       } return ""
-  }, [n, c, p, e.timeZone, d, f])
+  }, [t, s, h, e.timeZone, c, m])
 }
 
-function f(e, t, n, c) {
-  let d = (0, a.q)(l(r.Z), "@react-aria/calendar"),
-    f = u(e) || u(t),
-    p = (0, o.a)({
+function m(e, a, t, s) {
+  let c = (0, r.q)(l(u.Z), "@react-aria/calendar"),
+    m = d(e) || d(a),
+    h = (0, i.a)({
       month: "long",
       year: "numeric",
-      era: f,
+      era: m,
       calendar: e.calendar.identifier,
-      timeZone: n
+      timeZone: t
     }),
-    h = (0, o.a)({
+    f = (0, i.a)({
       month: "long",
       year: "numeric",
       day: "numeric",
-      era: f,
+      era: m,
       calendar: e.calendar.identifier,
-      timeZone: n
+      timeZone: t
     });
-  return (0, s.useMemo)(() => {
-    if ((0, i.KC)(e, (0, i.Nm)(e))) {
-      let r = e,
-        a = t;
-      if (e.calendar.getFormattableMonth && (r = e.calendar.getFormattableMonth(e)), t.calendar.getFormattableMonth && (a = t.calendar.getFormattableMonth(t)), (0, i.KC)(t, (0, i.Vf)(e))) return p.format(r.toDate(n));
-      if ((0, i.KC)(t, (0, i.Vf)(t))) return c ? _(p, d, r, a, n) : p.formatRange(r.toDate(n), a.toDate(n))
+  return (0, o.useMemo)(() => {
+    if ((0, n.KC)(e, (0, n.Nm)(e))) {
+      let u = e,
+        r = a;
+      if (e.calendar.getFormattableMonth && (u = e.calendar.getFormattableMonth(e)), a.calendar.getFormattableMonth && (r = a.calendar.getFormattableMonth(a)), (0, n.KC)(a, (0, n.Vf)(e))) return h.format(u.toDate(t));
+      if ((0, n.KC)(a, (0, n.Vf)(a))) return s ? D(h, c, u, r, t) : h.formatRange(u.toDate(t), r.toDate(t))
     }
-    return c ? _(h, d, e, t, n) : h.formatRange(e.toDate(n), t.toDate(n))
-  }, [e, t, p, h, d, n, c])
+    return s ? D(f, c, e, a, t) : f.formatRange(e.toDate(t), a.toDate(t))
+  }, [e, a, h, f, c, t, s])
 }
 
-function _(e, t, n, r, i) {
-  let a = e.formatRangeToParts(n.toDate(i), r.toDate(i)),
-    o = false;
-  for (let e = 0; e < a.length; e++) {
-    let t = a[e];
-    if ("shared" === t.source && "literal" === t.type) o = e;
-    else if ("endRange" === t.source) break
+function D(e, a, t, u, n) {
+  let r = e.formatRangeToParts(t.toDate(n), u.toDate(n)),
+    i = false;
+  for (let e = 0; e < r.length; e++) {
+    let a = r[e];
+    if ("shared" === a.source && "literal" === a.type) i = e;
+    else if ("endRange" === a.source) break
   }
-  let s = "",
+  let o = "",
     l = "";
-  for (let e = 0; e < a.length; e++) e < o ? s += a[e].value : e > o && (l += a[e].value);
-  return t.format("dateRange", {
-    startDate: s,
+  for (let e = 0; e < r.length; e++) e < i ? o += r[e].value : e > i && (l += r[e].value);
+  return a.format("dateRange", {
+    startDate: o,
     endDate: l
   })
 }

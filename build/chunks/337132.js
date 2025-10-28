@@ -1,6 +1,5 @@
-/** Chunk was on web.js **/
-/** chunk id: 337132, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 79835 **/
+/** chunk id: 337132, original params: e,a,n (module,exports,require) **/
 module.exports = {
   placeholder: "placeholder__84ae7"
 }

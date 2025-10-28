@@ -176,7 +176,7 @@ class w extends Chunk495852.C {
           a.broadcast = e0.internalBinaryRead(e, e.uint32(), n, a.broadcast);
           break;
         case 19:
-          a.clips = e3.internalBinaryRead(e, e.uint32(), n, a.clips);
+          a.clips = e2.internalBinaryRead(e, e.uint32(), n, a.clips);
           break;
         case 20:
           a.forLater = e5.internalBinaryRead(e, e.uint32(), n, a.forLater);
@@ -206,7 +206,7 @@ class w extends Chunk495852.C {
     return a
   }
   internalBinaryWrite(e, t, n) {
-    e.versions && c.L.internalBinaryWrite(e.versions, t.tag(1, r.TD.LengthDelimited).fork(), n).join(), e.inbox && x.internalBinaryWrite(e.inbox, t.tag(2, r.TD.LengthDelimited).fork(), n).join(), e.guilds && k.internalBinaryWrite(e.guilds, t.tag(3, r.TD.LengthDelimited).fork(), n).join(), e.userContent && X.internalBinaryWrite(e.userContent, t.tag(4, r.TD.LengthDelimited).fork(), n).join(), e.voiceAndVideo && en.internalBinaryWrite(e.voiceAndVideo, t.tag(5, r.TD.LengthDelimited).fork(), n).join(), e.textAndImages && ef.internalBinaryWrite(e.textAndImages, t.tag(6, r.TD.LengthDelimited).fork(), n).join(), e.notifications && ep.internalBinaryWrite(e.notifications, t.tag(7, r.TD.LengthDelimited).fork(), n).join(), e.privacy && em.internalBinaryWrite(e.privacy, t.tag(8, r.TD.LengthDelimited).fork(), n).join(), e.debug && eE.internalBinaryWrite(e.debug, t.tag(9, r.TD.LengthDelimited).fork(), n).join(), e.gameLibrary && ey.internalBinaryWrite(e.gameLibrary, t.tag(10, r.TD.LengthDelimited).fork(), n).join(), e.status && ev.internalBinaryWrite(e.status, t.tag(11, r.TD.LengthDelimited).fork(), n).join(), e.localization && eA.internalBinaryWrite(e.localization, t.tag(12, r.TD.LengthDelimited).fork(), n).join(), e.appearance && eP.internalBinaryWrite(e.appearance, t.tag(13, r.TD.LengthDelimited).fork(), n).join(), e.guildFolders && ek.internalBinaryWrite(e.guildFolders, t.tag(14, r.TD.LengthDelimited).fork(), n).join(), e.favorites && eB.internalBinaryWrite(e.favorites, t.tag(15, r.TD.LengthDelimited).fork(), n).join(), e.audioContextSettings && eW.internalBinaryWrite(e.audioContextSettings, t.tag(16, r.TD.LengthDelimited).fork(), n).join(), e.communities && ez.internalBinaryWrite(e.communities, t.tag(17, r.TD.LengthDelimited).fork(), n).join(), e.broadcast && e0.internalBinaryWrite(e.broadcast, t.tag(18, r.TD.LengthDelimited).fork(), n).join(), e.clips && e3.internalBinaryWrite(e.clips, t.tag(19, r.TD.LengthDelimited).fork(), n).join(), e.forLater && e5.internalBinaryWrite(e.forLater, t.tag(20, r.TD.LengthDelimited).fork(), n).join(), e.safetySettings && e4.internalBinaryWrite(e.safetySettings, t.tag(21, r.TD.LengthDelimited).fork(), n).join(), e.icymiSettings && e7.internalBinaryWrite(e.icymiSettings, t.tag(22, r.TD.LengthDelimited).fork(), n).join(), e.applications && te.internalBinaryWrite(e.applications, t.tag(23, r.TD.LengthDelimited).fork(), n).join(), e.ads && tl.internalBinaryWrite(e.ads, t.tag(24, r.TD.LengthDelimited).fork(), n).join(), e.inAppFeedbackSettings && tp.internalBinaryWrite(e.inAppFeedbackSettings, t.tag(25, r.TD.LengthDelimited).fork(), n).join();
+    e.versions && c.L.internalBinaryWrite(e.versions, t.tag(1, r.TD.LengthDelimited).fork(), n).join(), e.inbox && x.internalBinaryWrite(e.inbox, t.tag(2, r.TD.LengthDelimited).fork(), n).join(), e.guilds && k.internalBinaryWrite(e.guilds, t.tag(3, r.TD.LengthDelimited).fork(), n).join(), e.userContent && X.internalBinaryWrite(e.userContent, t.tag(4, r.TD.LengthDelimited).fork(), n).join(), e.voiceAndVideo && en.internalBinaryWrite(e.voiceAndVideo, t.tag(5, r.TD.LengthDelimited).fork(), n).join(), e.textAndImages && ef.internalBinaryWrite(e.textAndImages, t.tag(6, r.TD.LengthDelimited).fork(), n).join(), e.notifications && ep.internalBinaryWrite(e.notifications, t.tag(7, r.TD.LengthDelimited).fork(), n).join(), e.privacy && em.internalBinaryWrite(e.privacy, t.tag(8, r.TD.LengthDelimited).fork(), n).join(), e.debug && eE.internalBinaryWrite(e.debug, t.tag(9, r.TD.LengthDelimited).fork(), n).join(), e.gameLibrary && ey.internalBinaryWrite(e.gameLibrary, t.tag(10, r.TD.LengthDelimited).fork(), n).join(), e.status && ev.internalBinaryWrite(e.status, t.tag(11, r.TD.LengthDelimited).fork(), n).join(), e.localization && eA.internalBinaryWrite(e.localization, t.tag(12, r.TD.LengthDelimited).fork(), n).join(), e.appearance && eP.internalBinaryWrite(e.appearance, t.tag(13, r.TD.LengthDelimited).fork(), n).join(), e.guildFolders && ek.internalBinaryWrite(e.guildFolders, t.tag(14, r.TD.LengthDelimited).fork(), n).join(), e.favorites && eB.internalBinaryWrite(e.favorites, t.tag(15, r.TD.LengthDelimited).fork(), n).join(), e.audioContextSettings && eW.internalBinaryWrite(e.audioContextSettings, t.tag(16, r.TD.LengthDelimited).fork(), n).join(), e.communities && ez.internalBinaryWrite(e.communities, t.tag(17, r.TD.LengthDelimited).fork(), n).join(), e.broadcast && e0.internalBinaryWrite(e.broadcast, t.tag(18, r.TD.LengthDelimited).fork(), n).join(), e.clips && e2.internalBinaryWrite(e.clips, t.tag(19, r.TD.LengthDelimited).fork(), n).join(), e.forLater && e5.internalBinaryWrite(e.forLater, t.tag(20, r.TD.LengthDelimited).fork(), n).join(), e.safetySettings && e4.internalBinaryWrite(e.safetySettings, t.tag(21, r.TD.LengthDelimited).fork(), n).join(), e.icymiSettings && e7.internalBinaryWrite(e.icymiSettings, t.tag(22, r.TD.LengthDelimited).fork(), n).join(), e.applications && te.internalBinaryWrite(e.applications, t.tag(23, r.TD.LengthDelimited).fork(), n).join(), e.ads && tl.internalBinaryWrite(e.ads, t.tag(24, r.TD.LengthDelimited).fork(), n).join(), e.inAppFeedbackSettings && tp.internalBinaryWrite(e.inAppFeedbackSettings, t.tag(25, r.TD.LengthDelimited).fork(), n).join();
     let i = n.writeUnknownFields;
     returnfalse !== i && (true == i ? r.z.onWrite : i)(this.typeName, e, t), t
   }
@@ -305,7 +305,7 @@ class w extends Chunk495852.C {
       no: 19,
       name: "clips",
       kind: "message",
-      T: () => e3
+      T: () => e2
     }, {
       no: 20,
       name: "for_later",
@@ -3613,8 +3613,8 @@ class e1 extends Chunk495852.C {
     }])
   }
 }
-let e3 = new e1;
-class e2 extends Chunk495852.C {
+let e2 = new e1;
+class e3 extends Chunk495852.C {
   create(e) {
     let t = {
       safetySettingsPreset: 0,
@@ -3665,7 +3665,7 @@ class e2 extends Chunk495852.C {
     }])
   }
 }
-let e4 = new e2;
+let e4 = new e3;
 class e8 extends Chunk495852.C {
   create(e) {
     let t = {

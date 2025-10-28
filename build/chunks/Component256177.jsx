@@ -1,78 +1,77 @@
-/** Chunk was on web.js **/
-/** chunk id: 256177, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66548 **/
+/** chunk id: 256177, original params: e,l,t (module,exports,require) **/
 require.d(exports, {
-  s: () => s
+  s: () => r
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js");
-let s = {
+let r = {
   title: "Checkbox",
   stories: [{
     id: "void-checkbox",
     name: "Checkbox",
     component: function(e) {
       let {
-        disabled: t,
-        readOnly: n,
-        displayOnly: s,
-        type: l,
-        size: c,
-        align: u,
-        shape: d,
-        label: f
-      } = e, [_, p] = i.useState(false), h = i.useCallback((e, t) => {
-        p(t)
-      }, []), m = i.useCallback(() => {
-        p(true)
-      }, []), g = i.useCallback(() => {
-        p(false)
-      }, []), E = i.useCallback(() => {
-        p(e => !e)
+        disabled: l,
+        readOnly: t,
+        displayOnly: r,
+        type: s,
+        size: u,
+        align: d,
+        shape: c,
+        label: b
+      } = e, [p, y] = n.useState(false), m = n.useCallback((e, l) => {
+        y(l)
+      }, []), f = n.useCallback(() => {
+        y(true)
+      }, []), v = n.useCallback(() => {
+        y(false)
+      }, []), h = n.useCallback(() => {
+        y(e => !e)
       }, []);
-      return (0, r.jsxs)(o.Kqy, {
+      return (0, a.jsxs)(i.Kqy, {
         direction: "vertical",
         gap: "md",
-        children: [(0, r.jsx)(a.$q, {
-          value: _,
-          onChange: h,
-          disabled: t,
-          readOnly: n,
-          displayOnly: s,
-          type: l,
-          size: c,
-          align: u,
-          shape: d,
-          children: (0, r.jsx)(o.Text, {
+        children: [(0, a.jsx)(o.$q, {
+          value: p,
+          onChange: m,
+          disabled: l,
+          readOnly: t,
+          displayOnly: r,
+          type: s,
+          size: u,
+          align: d,
+          shape: c,
+          children: (0, a.jsx)(i.Text, {
             variant: "text-md/normal",
-            children: f
+            children: b
           })
-        }), (0, r.jsxs)(o.Text, {
+        }), (0, a.jsxs)(i.Text, {
           variant: "text-sm/normal",
-          children: ["Current state: ", _ ? "Checked" : "Unchecked"]
-        }), (0, r.jsxs)(o.Kqy, {
+          children: ["Current state: ", p ? "Checked" : "Unchecked"]
+        }), (0, a.jsxs)(i.Kqy, {
           direction: "horizontal",
           gap: "sm",
-          children: [(0, r.jsx)(o.Button, {
+          children: [(0, a.jsx)(i.Button, {
             variant: "secondary",
             size: "sm",
             text: "Check",
-            onClick: m,
-            disabled: t || n
-          }), (0, r.jsx)(o.Button, {
+            onClick: f,
+            disabled: l || t
+          }), (0, a.jsx)(i.Button, {
             variant: "secondary",
             size: "sm",
             text: "Uncheck",
-            onClick: g,
-            disabled: t || n
-          }), (0, r.jsx)(o.Button, {
+            onClick: v,
+            disabled: l || t
+          }), (0, a.jsx)(i.Button, {
             variant: "primary",
             size: "sm",
             text: "Toggle",
-            onClick: E,
-            disabled: t || n
+            onClick: h,
+            disabled: l || t
           })]
         })]
       })

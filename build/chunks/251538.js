@@ -1,11 +1,10 @@
-/** Chunk was on web.js **/
-/** chunk id: 251538, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 33622 **/
+/** chunk id: 251538, original params: e,a,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => r
+  Z: () => u
 });
-var r = {};
-r = {
+var u = {};
+u = {
   dateRange: e => `${e.startDate} til ${e.endDate}`,
   dateSelected: e => `${e.date} valgt`,
   finishRangeSelectionPrompt: `Klikk for \xe5 fullf\xf8re valg av datoomr\xe5de`,

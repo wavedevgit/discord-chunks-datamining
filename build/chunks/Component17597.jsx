@@ -30,8 +30,8 @@ let E = function(e) {
     transitionState: t,
     entryPoint: n,
     onClose: E,
-    onComplete: T,
-    dismissable: O,
+    onComplete: O,
+    dismissable: T,
     classificationId: N
   } = e, [P, I] = r.useState(o.z.AGE_VERIFICATION_SURVEY_MODAL_GET_STARTED), w = r.useRef(P), [k, R] = (0, c.US)([P], true, true), A = r.useMemo(() => (0, l.Z)(), []), D = r.useRef(false), Z = (0, m.GE)();
   r.useEffect(() => {
@@ -42,7 +42,7 @@ let E = function(e) {
     ageVerificationMethods: L
   } = (0, g.Z)({
     onClose: () => {
-      null == T || T(), E()
+      null == O || O(), E()
     },
     onMethodClick: () => {
       I(o.z.AGE_VERIFICATION_SURVEY_MODAL_CLOSE)
@@ -62,7 +62,7 @@ let E = function(e) {
     transitionState: t,
     onClose: E,
     gradientColor: "blue",
-    dismissable: O,
+    dismissable: T,
     graphic: {
       type: "image",
       src: S.Z

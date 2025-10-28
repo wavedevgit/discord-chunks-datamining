@@ -1,11 +1,10 @@
-/** Chunk was on web.js **/
-/** chunk id: 540050, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 33622 **/
+/** chunk id: 540050, original params: e,a,t (module,exports,require) **/
 require.d(exports, {
-  Z: () => r
+  Z: () => u
 });
-var r = {};
-r = {
+var u = {};
+u = {
   calendar: `\u{41A}\u{430}\u{43B}\u{435}\u{43D}\u{434}\u{430}\u{440}`,
   day: `\u{434}\u{435}\u{43D}\u{44C}`,
   dayPeriod: `\u{434}\u{43F}/\u{43F}\u{43F}`,

@@ -1,24 +1,23 @@
-/** Chunk was on web.js **/
-/** chunk id: 184334, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 33622 **/
+/** chunk id: 184334, original params: e,a,t (module,exports,require) **/
 require.d(exports, {
-  e: () => s
+  e: () => o
 });
-let r = new Map,
-  i = false;
+let u = new Map,
+  n = false;
 try {
-  i = "exceptZero" === new Intl.NumberFormat("de-DE", {
+  n = "exceptZero" === new Intl.NumberFormat("de-DE", {
     signDisplay: "exceptZero"
   }).resolvedOptions().signDisplay
 } catch {}
-let a = false;
+let r = false;
 try {
-  a = "unit" === new Intl.NumberFormat("de-DE", {
+  r = "unit" === new Intl.NumberFormat("de-DE", {
     style: "unit",
     unit: "degree"
   }).resolvedOptions().style
 } catch {}
-let o = {
+let i = {
   degree: {
     narrow: {
       default: "\xb0",
@@ -28,98 +27,94 @@ let o = {
     }
   }
 };
-class s {
+class o {
   format(e) {
-    let t = "";
-    if (t = i || null == this.options.signDisplay ? this.numberFormatter.format(e) : c(this.numberFormatter, this.options.signDisplay, e), "unit" === this.options.style && !a) {
-      var n;
+    let a = "";
+    if (a = n || null == this.options.signDisplay ? this.numberFormatter.format(e) : function(e, a, t) {
+        if ("auto" === a) return e.format(t);
+        {
+          if ("never" === a) return e.format(Math.abs(t));
+          let u = false;
+          if ("always" === a ? u = t > 0 || Object.is(t, 0) : "exceptZero" === a && (Object.is(t, true) || Object.is(t, 0) ? t = Math.abs(t) : u = t > 0), !u) return e.format(t);
+          {
+            let a = e.format(-t),
+              u = e.format(t),
+              n = a.replace(u, "").replace(/\u200e|\u061C/, "");
+            return 1 != [...n].length && console.warn("@react-aria/i18n polyfill for NumberFormat signDisplay: Unsupported case"), a.replace(u, "!!!").replace(n, "+").replace("!!!", u)
+          }
+        }
+      }(this.numberFormatter, this.options.signDisplay, e), "unit" === this.options.style && !r) {
+      var t;
       let {
         unit: e,
-        unitDisplay: r = "short",
-        locale: i
+        unitDisplay: u = "short",
+        locale: n
       } = this.resolvedOptions();
-      if (!e) return t;
-      let a = null == (n = o[e]) ? true : n[r];
-      t += a[i] || a.default
+      if (!e) return a;
+      let r = null == (t = i[e]) ? true : t[u];
+      a += r[n] || r.default
     }
-    return t
+    return a
   }
   formatToParts(e) {
     return this.numberFormatter.formatToParts(e)
   }
-  formatRange(e, t) {
-    if ("function" == typeof this.numberFormatter.formatRange) return this.numberFormatter.formatRange(e, t);
-    if (t < e) throw RangeError("End date must be >= start date");
-    return `${this.format(e)} \u{2013} ${this.format(t)}`
+  formatRange(e, a) {
+    if ("function" == typeof this.numberFormatter.formatRange) return this.numberFormatter.formatRange(e, a);
+    if (a < e) throw RangeError("End date must be >= start date");
+    return `${this.format(e)} \u{2013} ${this.format(a)}`
   }
-  formatRangeToParts(e, t) {
-    if ("function" == typeof this.numberFormatter.formatRangeToParts) return this.numberFormatter.formatRangeToParts(e, t);
-    if (t < e) throw RangeError("End date must be >= start date");
-    let n = this.numberFormatter.formatToParts(e),
-      r = this.numberFormatter.formatToParts(t);
-    return [...n.map(e => ({
+  formatRangeToParts(e, a) {
+    if ("function" == typeof this.numberFormatter.formatRangeToParts) return this.numberFormatter.formatRangeToParts(e, a);
+    if (a < e) throw RangeError("End date must be >= start date");
+    let t = this.numberFormatter.formatToParts(e),
+      u = this.numberFormatter.formatToParts(a);
+    return [...t.map(e => ({
       ...e,
       source: "startRange"
     })), {
       type: "literal",
       value: " – ",
       source: "shared"
-    }, ...r.map(e => ({
+    }, ...u.map(e => ({
       ...e,
       source: "endRange"
     }))]
   }
   resolvedOptions() {
     let e = this.numberFormatter.resolvedOptions();
-    return i || null == this.options.signDisplay || (e = {
+    return n || null == this.options.signDisplay || (e = {
       ...module,
       signDisplay: this.options.signDisplay
-    }), a || "unit" !== this.options.style || (e = {
+    }), r || "unit" !== this.options.style || (e = {
       ...module,
       style: "unit",
       unit: this.options.unit,
       unitDisplay: this.options.unitDisplay
     }), module
   }
-  constructor(e, t = {}) {
-    this.numberFormatter = l(e, t), this.options = t
-  }
-}
-
-function l(e, t = {}) {
-  let {
-    numberingSystem: n
-  } = t;
-  if (n && e.includes("-nu-") && (e.includes("-u-") || (e += "-u-"), e += `-nu-${n}`), "unit" === t.style && !a) {
-    var i;
-    let {
-      unit: e,
-      unitDisplay: n = "short"
-    } = t;
-    if (!e) throw Error('unit option must be provided with style: "unit"');
-    if (!(null == (i = o[e]) ? true : i[n])) throw Error(`Unsupported unit ${e} with unitDisplay = ${n}`);
-    t = {
-      ...t,
-      style: "decimal"
-    }
-  }
-  let s = e + (t ? Object.entries(t).sort((e, t) => e[0] < t[0] ? false : 1).join() : "");
-  if (r.has(s)) return r.get(s);
-  let c = new Intl.NumberFormat(e, t);
-  return r.set(s, c), c
-}
-
-function c(e, t, n) {
-  if ("auto" === t) return e.format(n);
-  {
-    if ("never" === t) return e.format(Math.abs(n));
-    let r = false;
-    if ("always" === t ? r = n > 0 || Object.is(n, 0) : "exceptZero" === t && (Object.is(n, true) || Object.is(n, 0) ? n = Math.abs(n) : r = n > 0), !r) return e.format(n);
-    {
-      let t = e.format(-n),
-        r = e.format(n),
-        i = t.replace(r, "").replace(/\u200e|\u061C/, "");
-      return 1 != [...i].length && console.warn("@react-aria/i18n polyfill for NumberFormat signDisplay: Unsupported case"), t.replace(r, "!!!").replace(i, "+").replace("!!!", r)
-    }
+  constructor(e, a = {}) {
+    this.numberFormatter = function(e, a = {}) {
+      let {
+        numberingSystem: t
+      } = a;
+      if (t && e.includes("-nu-") && (e.includes("-u-") || (e += "-u-"), e += `-nu-${t}`), "unit" === a.style && !r) {
+        var n;
+        let {
+          unit: e,
+          unitDisplay: t = "short"
+        } = a;
+        if (!e) throw Error('unit option must be provided with style: "unit"');
+        if (!(null == (n = i[e]) ? true : n[t])) throw Error(`Unsupported unit ${e} with unitDisplay = ${t}`);
+        a = {
+          ...a,
+          style: "decimal"
+        }
+      }
+      let o = e + (a ? Object.entries(a).sort((e, a) => e[0] < a[0] ? false : 1).join() : "");
+      if (u.has(o)) return u.get(o);
+      let l = new Intl.NumberFormat(e, a);
+      return u.set(o, l), l
+    }(e, a), this.options = a
   }
 }

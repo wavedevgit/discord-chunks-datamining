@@ -18,13 +18,13 @@ function i(e) {
     useDisabled: s,
     onClick: u
   } = t, d = i(), f = null == a ? true : a(), b = n(), p = null == c ? true : c(), y = null == s ? true : s();
-  return (0, r.jsx)(o.X, {
-    children: (0, r.jsx)(l.gNt, {
+  return (0, r.jsx)(l.X, {
+    children: (0, r.jsx)(o.gNt, {
       label: d,
       description: f,
       disabled: y,
       layout: "horizontal",
-      children: (0, r.jsx)(l.Button, {
+      children: (0, r.jsx)(o.Button, {
         onClick: u,
         text: b,
         variant: p,

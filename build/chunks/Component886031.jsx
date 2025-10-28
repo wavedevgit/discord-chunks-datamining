@@ -1,53 +1,45 @@
-/** Chunk was on web.js **/
-/** chunk id: 886031, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 66548 **/
+/** chunk id: 886031, original params: e,l,t (module,exports,require) **/
 require.d(exports, {
-  B: () => d
+  B: () => u
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js");
 
-function o(e, t, n) {
-  return t in e ? Object.defineProperty(e, t, {
-    value: n,
-    enumerable: true,
-    configurable: true,
-    writable: true
-  }) : e[t] = n, e
-}
-
-function s(e) {
-  for (var t = 1; t < arguments.length; t++) {
-    var n = null != arguments[t] ? arguments[t] : {},
-      r = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), r.forEach(function(t) {
-      o(e, t, n[t])
+function i(e) {
+  for (var l = 1; l < arguments.length; l++) {
+    var t = null != arguments[l] ? arguments[l] : {},
+      a = Object.keys(t);
+    "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(t, e).enumerable
+    }))), a.forEach(function(l) {
+      var a;
+      a = t[l], l in e ? Object.defineProperty(e, l, {
+        value: a,
+        enumerable: true,
+        configurable: true,
+        writable: true
+      }) : e[l] = a
     })
   }
   return e
 }
 
-function l(e, t) {
-  var n = Object.keys(e);
-  if (Object.getOwnPropertySymbols) {
-    var r = Object.getOwnPropertySymbols(e);
-    t && (r = r.filter(function(t) {
-      return Object.getOwnPropertyDescriptor(e, t).enumerable
-    })), n.push.apply(n, r)
-  }
-  return n
-}
-
-function c(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : l(Object(t)).forEach(function(n) {
-    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+function r(e, l) {
+  return l = null != l ? l : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(l)) : (function(e, l) {
+    var t = Object.keys(e);
+    if (Object.getOwnPropertySymbols) {
+      var a = Object.getOwnPropertySymbols(e);
+      t.push.apply(t, a)
+    }
+    return t
+  })(Object(l)).forEach(function(t) {
+    Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(l, t))
   }), e
 }
-let u = {
+let s = {
     name: "Button",
     id: "button",
     component: Chunk793030.zxk,
@@ -122,15 +114,15 @@ let u = {
       }
     }
   },
-  d = {
+  u = {
     title: "Buttons",
-    stories: [u, {
+    stories: [s, {
       name: "IconButton",
       id: "icon-button",
       docs: "https://design.discord.tools/components/web/buttons/icon-button",
       component: function(e) {
-        return (0, r.jsx)(i.hU, c(s({}, e), {
-          icon: a.gw7,
+        return (0, a.jsx)(n.hU, r(i({}, e), {
+          icon: o.gw7,
           "aria-label": "Clyde"
         }))
       },
@@ -228,11 +220,11 @@ let u = {
       id: "button-group",
       docs: "https://design.discord.tools/components/web/buttons/button-group",
       component: function(e) {
-        return (0, r.jsxs)(i.hE2, c(s({}, e), {
-          children: [(0, r.jsx)(i.zxk, {
+        return (0, a.jsxs)(n.hE2, r(i({}, e), {
+          children: [(0, a.jsx)(n.zxk, {
             variant: "secondary",
             text: "Cancel"
-          }), (0, r.jsx)(i.zxk, {
+          }), (0, a.jsx)(n.zxk, {
             variant: "primary",
             text: "Submit"
           })]

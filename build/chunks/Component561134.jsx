@@ -1,36 +1,35 @@
-/** Chunk was on web.js **/
-/** chunk id: 561134, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 36182 **/
+/** chunk id: 561134, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  N: () => o
+  N: () => a
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk481060 = require("./481060.js");
 
-function o(e) {
+function a(e) {
   let {
     groups: t,
     selectedStory: n,
-    onStorySelect: o
+    onStorySelect: a
   } = e;
-  return (0, r.jsx)(a.njP, {
+  return (0, r.jsx)(o.njP, {
     selectedItem: n,
     orientation: "vertical",
     onItemSelect: e => {
-      null != e && o(e)
+      null != e && a(e)
     },
-    children: t.map((e, s) => (0, r.jsxs)(i.Fragment, {
-      children: [(0, r.jsx)(a.njP.Header, {
+    children: t.map((e, i) => (0, r.jsxs)(l.Fragment, {
+      children: [(0, r.jsx)(o.njP.Header, {
         children: e.title
-      }), e.stories.map(e => (0, r.jsx)(a.njP.Item, {
+      }), e.stories.map(e => (0, r.jsx)(o.njP.Item, {
         selectedItem: n,
         id: e.id,
         onItemSelect: () => {
-          o(e.id)
+          a(e.id)
         },
         children: e.name
-      }, e.id)), s < t.length - 1 && (0, r.jsx)(a.njP.Separator, {})]
+      }, e.id)), i < t.length - 1 && (0, r.jsx)(o.njP.Separator, {})]
     }, e.title))
   })
 }

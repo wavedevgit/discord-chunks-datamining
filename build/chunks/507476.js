@@ -1,25 +1,24 @@
-/** Chunk was on web.js **/
-/** chunk id: 507476, original params: e,t,n (module,exports,re quire) **/
-"use strict";
+/** Chunk was on 33622 **/
+/** chunk id: 507476, original params: e,a,t (module,exports,require) **/
 require.d(exports, {
-  d: () => a
+  d: () => r
 });
 var Chunk647438 = require("./647438.js"),
   Chunk379955 = require("./379955.js");
 
-function a(e) {
-  let [t, n] = (0, i.z)(e.isOpen, e.defaultOpen || false, e.onOpenChange), a = (0, r.useCallback)(() => {
-    n(true)
-  }, [n]), o = (0, r.useCallback)(() => {
-    n(false)
-  }, [n]), s = (0, r.useCallback)(() => {
-    n(!t)
-  }, [n, t]);
+function r(e) {
+  let [a, t] = (0, n.z)(e.isOpen, e.defaultOpen || false, e.onOpenChange), r = (0, u.useCallback)(() => {
+    t(true)
+  }, [t]), i = (0, u.useCallback)(() => {
+    t(false)
+  }, [t]), o = (0, u.useCallback)(() => {
+    t(!a)
+  }, [t, a]);
   return {
-    isOpen: t,
-    setOpen: n,
-    open: a,
-    close: o,
-    toggle: s
+    isOpen: a,
+    setOpen: t,
+    open: r,
+    close: i,
+    toggle: o
   }
 }

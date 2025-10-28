@@ -1,7 +1,7 @@
 /** Chunk was on 79041 **/
 /** chunk id: 241209, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => O
+  Z: () => T
 }), require("./413496.js"), require("./433524.js"), require("./35282.js");
 var a, r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -147,7 +147,7 @@ let C = j(v({}, d().defaultRules), {
   }),
   S = d().parserFor(C),
   E = d().reactFor(d().ruleOutput(C, "react"));
-class T extends(r = Chunk647438.PureComponent) {
+class O extends(r = Chunk647438.PureComponent) {
   render() {
     let {
       className: e,
@@ -164,8 +164,8 @@ class T extends(r = Chunk647438.PureComponent) {
     })
   }
 }
-g(T, "rules", C), g(T, "defaultProps", {
+g(O, "rules", C), g(O, "defaultProps", {
   parser: S,
   output: E
 });
-let O = T
+let T = O
