@@ -42,7 +42,7 @@ class S extends Chunk147913.Z {
     if (null == Chunk147913) return;
     let h = Chunk959457.Z.getRTCConnection((0, Chunk569545.V9)(Chunk147913)),
       b = Chunk131951.Z.getGoLiveSource();
-    if (null == Chunk580991 || null == b) return;
+    if (null == Chunk580991 || null == b || !Chunk580991.hasActiveRemoteWants()) return;
     let S = Chunk361291.Z.getState();
     if (S.preset !== Chunk37113.ApplicationStreamPresets.PRESET_AUTO) return;
     if ((null == (e = Chunk199902.Z.getStreamerActiveStreamMetadata()) ? true : module.id) != null) return void I.info("Skipping auto quality checker for game stream.");

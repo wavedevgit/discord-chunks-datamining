@@ -51,7 +51,7 @@ function S(t) {
   if (null == S) return null;
   switch (d.state) {
     case "LINK":
-      return (0, i.jsx)(m.Z, {
+      return (0, i.jsx)(f.Z, {
         sku: e,
         application: S,
         transitionState: n,
@@ -61,7 +61,7 @@ function S(t) {
         isSuccessButtonLoading: C
       });
     case "SUCCESS":
-      return (0, i.jsx)(f.SocialLayerStorefrontItemClaimedSuccessfullyModal, {
+      return (0, i.jsx)(m.SocialLayerStorefrontItemClaimedSuccessfullyModal, {
         transitionState: n,
         application: S,
         sku: e,

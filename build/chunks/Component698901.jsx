@@ -1,4 +1,4 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 32945 **/
 /** chunk id: 698901, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -12,8 +12,8 @@ var Chunk951288 = require("./951288.js"),
 function s(e) {
   let {
     hotspotLocation: t
-  } = e, [n, s] = (0, r.Wu)([l.qc], () => [l.qc.hasHotspot(t, true), l.qc.getHotspotOverride(t)]);
-  return (0, a.jsx)(i.q4e, {
+  } = e, [n, s] = (0, r.Wu)([i.qc], () => [i.qc.hasHotspot(t, true), i.qc.getHotspotOverride(t)]);
+  return (0, a.jsx)(l.q4e, {
     label: t,
     successMessage: n ? "Active" : true,
     errorMessage: n ? "Inactive" : true,
@@ -29,7 +29,7 @@ function s(e) {
       value: false,
       label: "Force Inactive"
     }],
-    onChange: e => null != e ? (0, l.hv)(t, e) : (0, l.Po)(t)
+    onChange: e => null != e ? (0, i.hv)(t, e) : (0, i.Po)(t)
   })
 }
 

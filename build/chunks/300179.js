@@ -1,4 +1,4 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 32945 **/
 /** chunk id: 300179, original params: e,t,n (module,exports,require) **/
 module.exports = {
   shopCard: "shopCard_c3d04b",

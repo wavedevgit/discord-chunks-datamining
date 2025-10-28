@@ -1,7 +1,7 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 32945 **/
 /** chunk id: 107606, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => g
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -20,8 +20,8 @@ var Chunk442837 = require("./442837.js"),
   Chunk469115 = require("./469115.js"),
   Chunk685960 = require("./685960.js");
 
-function b() {
-  var e, t, n, b, v, j, _, y;
+function g() {
+  var e, t, n, g, v, j, _, y;
   (0, Chunk223143.mw)();
   let C = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
     S = Chunk695346.L1.useSetting(),
@@ -73,7 +73,7 @@ function b() {
         children: ["Theme: ", E]
       }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
-        children: ["Client Theme ID:", " ", null != T ? null == (b = Chunk469115.qt[T]) ? true : b.getName() : "None"]
+        children: ["Client Theme ID:", " ", null != T ? null == (g = Chunk469115.qt[T]) ? true : g.getName() : "None"]
       }), (0, Chunk951288.jsxs)(Chunk481060.Text, {
         variant: "text-md/normal",
         children: ["Avatar Decoration: ", null != (_ = null == A ? true : A.name) ? _ : "None"]
@@ -90,13 +90,13 @@ function b() {
         variant: "text-md/normal",
         children: ["UI Density: ", L, " (", function(e) {
           switch (e) {
-            case i.Pi.COMPACT:
+            case l.Pi.COMPACT:
               return "Compact";
-            case i.Pi.COZY:
+            case l.Pi.COZY:
               return "Cozy";
-            case i.Pi.DEFAULT:
+            case l.Pi.DEFAULT:
               return "Default";
-            case i.Pi.RESPONSIVE:
+            case l.Pi.RESPONSIVE:
               return "Responsive";
             default:
               return "Unknown"

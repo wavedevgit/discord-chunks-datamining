@@ -54,7 +54,7 @@ function g() {
     }).enabled || T;
   Chunk647438.useEffect(() => {
     Chunk570140.Z.wait(() => {
-      S && (null == module || E) && Chunk748770.ZP.fetchActiveOutboundPromotions()
+      S && (null == module || E) && Chunk748770.ZP.fetchActivePromotions()
     })
   }, [module, S, E]), Chunk647438.useEffect(() => {
     Chunk570140.Z.wait(() => {

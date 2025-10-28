@@ -1,14 +1,14 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 32945 **/
 /** chunk id: 905953, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => g
 }), require("./388685.js"), require("./457542.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
   Chunk907862 = require("./907862.js"),
-  Chunk20471 = require("./20471.js"),
+  Chunk535139 = require("./535139.js"),
   Chunk243778 = require("./243778.jsx"),
   Chunk931847 = require("./931847.js"),
   Chunk50130 = require("./50130.js"),
@@ -19,12 +19,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx");
 
-function b(e) {
+function g(e) {
   var t;
   let {
     targetElementRef: n,
-    onClose: b
-  } = e, [v, j] = r.useState(false), _ = (0, i.e7)([h.default], () => h.default.getId()), {
+    onClose: g
+  } = e, [v, j] = r.useState(false), _ = (0, l.e7)([h.default], () => h.default.getId()), {
     config: y,
     application: C
   } = (0, u.G)(), {
@@ -32,16 +32,16 @@ function b(e) {
     hasAlreadyLinked: E,
     canStartAuthorization: T,
     startAuthorization: O
-  } = (0, s.FG)(C), N = (0, m.ZP)(_), P = null == N || null == (t = N.widgets) ? true : t.some(e => e instanceof d.q && e.applicationId === (null == C ? true : C.id));
+  } = (0, s.F)(C), N = (0, m.ZP)(_), P = null == N || null == (t = N.widgets) ? true : t.some(e => e instanceof d.q && e.applicationId === (null == C ? true : C.id));
   return null != y && null != y.edit_profile_upsell_image && null != C && S ? (0, a.jsx)(c.ZP, {
-    contentTypes: E ? P ? [] : [l.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED] : T ? [l.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_UNLINKED] : [],
+    contentTypes: E ? P ? [] : [i.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED] : T ? [i.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_UNLINKED] : [],
     children: e => {
       let {
         visibleContent: t,
         markAsDismissed: r
       } = e;
       if (null == t) return null;
-      let i = t === l.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED;
+      let l = t === i.z.APPLICATION_WIDGET_EDIT_PROFILE_POPOVER_LINKED;
       return (0, a.jsx)(o.J2, {
         targetElementRef: n,
         position: "right",
@@ -50,29 +50,29 @@ function b(e) {
           type: "image",
           src: y.edit_profile_upsell_image
         },
-        title: g.intl.format(g.t.TXDztH, {
+        title: b.intl.format(b.t.TXDztH, {
           applicationName: C.name
         }),
-        body: i ? g.intl.string(g.t["63Kso0"]) : g.intl.string(g.t.HwXoeC),
-        actions: [i ? {
-          text: g.intl.string(g.t.VSLDly),
+        body: l ? b.intl.string(b.t["63Kso0"]) : b.intl.string(b.t.HwXoeC),
+        actions: [l ? {
+          text: b.intl.string(b.t.VSLDly),
           onClick: () => {
             j(true), (0, p.openUserProfileModal)({
               userId: _,
               section: f.oh.WIDGETS
             }).then(() => {
-              r(x.L.TAKE_ACTION), b()
+              r(x.L.TAKE_ACTION), g()
             }).finally(() => j(false))
           },
           loading: v
         } : {
-          text: g.intl.string(g.t["DSJi3+"]),
+          text: b.intl.string(b.t["DSJi3+"]),
           onClick: () => {
             O(), j(true), (0, p.openUserProfileModal)({
               userId: _,
               section: f.oh.WIDGETS
             }).then(() => {
-              r(x.L.TAKE_ACTION), b()
+              r(x.L.TAKE_ACTION), g()
             }).finally(() => j(false))
           },
           loading: v

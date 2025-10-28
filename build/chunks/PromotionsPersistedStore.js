@@ -138,7 +138,7 @@ class w extends(r = Chunk442837.ZP.PersistedStore) {
   get lastFetchedActivePromotions() {
     return g
   }
-  get isFetchingActiveOutboundPromotions() {
+  get isFetchingActivePromotions() {
     return m
   }
   get hasFetchedConsumedInboundPromotionId() {
@@ -174,9 +174,9 @@ u(w, "displayName", "PromotionsStore"), u(w, "persistKey", "PromotionsPersistedS
   return e
 }]);
 let L = new w(Chunk570140.Z, {
-  ACTIVE_OUTBOUND_PROMOTIONS_FETCH_SUCCESS: T,
-  ACTIVE_OUTBOUND_PROMOTIONS_FETCH: S,
-  ACTIVE_OUTBOUND_PROMOTIONS_FETCH_FAIL: A,
+  ACTIVE_PROMOTIONS_FETCH_SUCCESS: T,
+  ACTIVE_PROMOTIONS_FETCH: S,
+  ACTIVE_PROMOTIONS_FETCH_FAIL: A,
   ACTIVE_BOGO_PROMOTION_FETCH_SUCCESS: I,
   ACTIVE_BOGO_PROMOTION_FETCH: O,
   ACTIVE_BOGO_PROMOTION_FETCH_FAIL: v,

@@ -1,4 +1,4 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 32945 **/
 /** chunk id: 916790, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => D
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   Chunk913527 = require("./913527.js"),
   c = require.n(Chunk913527),
@@ -115,10 +115,10 @@ function k(e) {
   let {
     actionLog: t,
     initialHeight: n
-  } = e, i = r.useMemo(() => t.error ? [...w, {
+  } = e, l = r.useMemo(() => t.error ? [...w, {
     id: "error",
     name: (0, a.jsxs)(a.Fragment, {
-      children: [(0, a.jsx)(g.Z, {
+      children: [(0, a.jsx)(b.Z, {
         className: T.errorIcon
       }), "Error"]
     }),
@@ -129,7 +129,7 @@ function k(e) {
       } = e;
       return (0, a.jsxs)(a.Fragment, {
         children: [(0, a.jsx)("div", {
-          className: l()(T.errorToolbar, O.toolbar),
+          className: i()(T.errorToolbar, O.toolbar),
           children: (0, a.jsx)("div", {
             className: O.toolbarGroup,
             children: (0, a.jsx)(u.zx, {
@@ -151,19 +151,19 @@ function k(e) {
     TabBar: o,
     renderSelectedTab: s
   } = (0, S.ZP)({
-    tabs: i
-  }, [i]);
+    tabs: l
+  }, [l]);
   return (0, a.jsxs)(y.Z, {
     className: T.subPanel,
     minHeight: 100,
     initialHeight: n,
     children: [(0, a.jsx)(o, {}), (0, a.jsxs)(h.ZP, {
-      className: l()(O.headerBar, T.subPanelHeaderBar),
+      className: i()(O.headerBar, T.subPanelHeaderBar),
       children: [(0, a.jsx)(h.ZP.Icon, {
         icon: m.xVZ,
         tooltip: t.name
       }), (0, a.jsx)(h.ZP.Title, {
-        wrapperClassName: l()(O.headerTitle, O.dispatcherHeader),
+        wrapperClassName: i()(O.headerTitle, O.dispatcherHeader),
         className: O.headerTitleText,
         children: t.name
       }), (0, a.jsx)(h.ZP.Icon, {
@@ -175,7 +175,7 @@ function k(e) {
             var a;
             return t[n] = (a = e[n], E.Jn9.test(a) ? "REDACTED" : a), t
           }, {}), null, 2);
-          (0, b.JG)(n, () => (0, m.showToast)({
+          (0, g.JG)(n, () => (0, m.showToast)({
             id: "copy-action-log-name",
             type: m.ToastType.SUCCESS,
             message: "Copied action log data to clipboard"
@@ -195,7 +195,7 @@ let R = [{
         actionLog: t
       } = e;
       return (0, a.jsxs)(a.Fragment, {
-        children: [t.error && (0, a.jsx)(g.Z, {
+        children: [t.error && (0, a.jsx)(b.Z, {
           className: T.errorIcon
         }), t.name]
       })
@@ -233,7 +233,7 @@ let R = [{
 function D() {
   let e = Chunk647438.useRef(null),
     [t, n] = Chunk647438.useState(""),
-    i = function(e) {
+    l = function(e) {
       let [t, n] = r.useState(e.logs), a = r.useCallback(() => {
         (0, o.debounce)(() => {
           n([...e.logs])
@@ -249,21 +249,21 @@ function D() {
     })).toReversed(), [Chunk120356]),
     [c, u] = Chunk647438.useState(Chunk913527),
     [h, x] = Chunk647438.useState(Chunk913527),
-    [g, b] = Chunk647438.useState(false),
+    [b, g] = Chunk647438.useState(false),
     [v, j] = Chunk647438.useState(),
     _ = Chunk647438.useCallback(e => {
       x(e)
     }, []);
   (0, Chunk301801.BO)(exports, Chunk4912 ? c : Chunk913527, Chunk257785, A);
   let y = Chunk647438.useCallback(e => {
-      u(s), b(e)
+      u(s), g(e)
     }, [Chunk913527]),
     S = exports.trim().length > 0,
     E = Chunk647438.useMemo(() => Chunk621060 ? Chunk665149 : Chunk4912 ? c : Chunk913527, [Chunk913527, Chunk665149, Chunk621060, Chunk4912, c]),
     N = Chunk4912 ? "Enable Event Tracking" : "Pause Event Tracking";
   return (0, Chunk951288.jsxs)("div", {
     ref: module,
-    className: l()(Chunk451429.panel, Chunk687278.panel),
+    className: i()(Chunk451429.panel, Chunk687278.panel),
     children: [(0, Chunk951288.jsxs)("div", {
       className: Chunk687278.toolbar,
       children: [(0, Chunk951288.jsx)(Chunk28664.u, {

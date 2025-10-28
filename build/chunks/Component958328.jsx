@@ -1,4 +1,4 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 32945 **/
 /** chunk id: 958328, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
-  i = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk149765 = require("./149765.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -25,16 +25,16 @@ function v(e) {
   let {
     title: t,
     can: n
-  } = e, r = n ? s.dz2 : s.Dio, l = (0, a.jsx)("div", {
-    className: i()(g.iconOuter, n ? g.iconCheck : g.iconCross),
+  } = e, r = n ? s.dz2 : s.Dio, i = (0, a.jsx)("div", {
+    className: l()(b.iconOuter, n ? b.iconCheck : b.iconCross),
     children: (0, a.jsx)(r, {
-      className: g.icon
+      className: b.icon
     })
   });
   return (0, a.jsxs)("div", {
-    className: g.scope,
-    children: [l, (0, a.jsx)("div", {
-      className: g.scopeInner,
+    className: b.scope,
+    children: [i, (0, a.jsx)("div", {
+      className: b.scopeInner,
       children: (0, a.jsx)(s.Text, {
         variant: "text-md/normal",
         children: t
@@ -57,7 +57,7 @@ function j() {
       let {
         title: t,
         flag: n
-      } = e, r = l.e$(j, n);
+      } = e, r = i.e$(j, n);
       return (0, a.jsx)(v, {
         title: t,
         can: r
@@ -67,14 +67,14 @@ function j() {
       let {
         title: t,
         flag: n
-      } = e, r = l.e$(_, n);
+      } = e, r = i.e$(_, n);
       return (0, a.jsx)(v, {
         title: t,
         can: r
       }, t)
     });
   return (0, Chunk951288.jsx)("div", {
-    className: i()(Chunk451429.panel, Chunk989295.panel),
+    className: l()(Chunk451429.panel, Chunk989295.panel),
     children: (0, Chunk951288.jsxs)("div", {
       className: Chunk989295.panelInner,
       children: [(0, Chunk951288.jsxs)("section", {

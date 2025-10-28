@@ -1,4 +1,4 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 32945 **/
 /** chunk id: 120786, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   L: () => _
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
@@ -47,18 +47,18 @@ let j = () => {
     let {
       ctaText: t,
       ctaOnClick: n,
-      analyticsPage: i,
+      analyticsPage: l,
       linkPreText: o = x.intl.string(x.t["5qZv9E"]),
       linkText: d = x.intl.string(x.t.XRdyjz)
     } = e, u = r.useCallback(() => {
-      null != i && (0, p.Y)({
-        pageType: i,
+      null != l && (0, p.Y)({
+        pageType: l,
         sectionType: h.jXE.ORBS_BALANCE_MENU,
         ctaObject: h.qAy.ORBS_LEARN_MORE_LINK
       })
-    }, [i]);
+    }, [l]);
     return (0, a.jsxs)("div", {
-      className: l()(f.container, g.baseCardOutline),
+      className: i()(f.container, b.baseCardOutline),
       children: [(0, a.jsx)(j, {}), (0, a.jsx)(s.zxk, {
         text: t,
         variant: "primary",

@@ -58,28 +58,28 @@ function v(e) {
   })
 }
 
-function E(e) {
+function x(e) {
   let {
     imageSrc: l,
     gameName: a,
     applicationId: n,
     userId: t,
     className: m,
-    hideTooltip: E = false,
+    hideTooltip: x = false,
     coverRef: f
-  } = e, A = (0, d.Z)({
+  } = e, h = (0, d.Z)({
     location: "GameCover",
     applicationId: n,
     source: o.m1.UserProfile,
     sourceUserId: t,
     trackEntryPointImpression: true
-  }), h = null != a ? a : u.intl.string(u.t.GIWFlF), x = u.intl.formatToPlainString(u.t["8QLQB+"], {
-    gameName: h
-  }), g = e => E ? e : (0, i.jsx)(s.u, {
-    text: h,
+  }), E = null != a ? a : u.intl.string(u.t.GIWFlF), j = u.intl.formatToPlainString(u.t["8QLQB+"], {
+    gameName: E
+  }), A = e => x ? e : (0, i.jsx)(s.u, {
+    text: E,
     children: e
   });
-  return g(null == A ? (0, i.jsx)(c.tEY, {
+  return A(null == h ? (0, i.jsx)(c.tEY, {
     children: (0, i.jsx)("div", {
       ref: f,
       className: m,
@@ -91,8 +91,8 @@ function E(e) {
     })
   }) : (0, i.jsx)(c.P3F, {
     innerRef: f,
-    onClick: A,
-    "aria-label": x,
+    onClick: h,
+    "aria-label": j,
     className: r()(p.clickable, m),
     children: (0, i.jsx)(v, {
       imageSrc: l,
@@ -132,7 +132,7 @@ function f(e) {
       tabIndex: false,
       children: (0, i.jsx)(v, m({}, d))
     })
-  }) : (0, i.jsx)(E, m({
+  }) : (0, i.jsx)(x, m({
     className: u,
     applicationId: l,
     userId: a,

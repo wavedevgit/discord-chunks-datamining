@@ -1,7 +1,7 @@
-/** Chunk was on 63076 **/
+/** Chunk was on 72651 **/
 /** chunk id: 661462, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  F: () => y,
+  F: () => h,
   Z: () => O
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -37,7 +37,7 @@ function b(e) {
   return e
 }
 
-function h(e, t) {
+function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -50,7 +50,7 @@ function h(e, t) {
   }), e
 }
 
-function y(e) {
+function h(e) {
   var {
     children: t,
     className: n,
@@ -70,7 +70,7 @@ function y(e) {
     }
     return i
   }(e, ["children", "className", "scrollerRef"]);
-  return (0, r.jsx)(o.Ttm, h(b({
+  return (0, r.jsx)(o.Ttm, y(b({
     ref: i,
     className: l()(m.tabPanelScroller, n),
     fade: true
@@ -128,12 +128,12 @@ function O(e) {
     initialSubsection: g,
     onClose: p
   } = e, {
-    trackUserProfileAction: y
+    trackUserProfileAction: h
   } = (0, c.KZ)(), [{
     section: O,
     subsection: j,
     text: x
-  }, _] = i.useState(h(b({}, null != (t = d.find(e => {
+  }, _] = i.useState(y(b({}, null != (t = d.find(e => {
     let {
       section: t
     } = e;
@@ -153,7 +153,7 @@ function O(e) {
         look: "custom",
         selectedItem: O,
         onItemSelect: e => {
-          y({
+          h({
             action: "PRESS_SECTION",
             section: e
           }), _(t => {

@@ -1,4 +1,4 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 32945 **/
 /** chunk id: 32574, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -23,7 +23,7 @@ let m = function(e) {
       text: "Consectetur adipiscing",
       variant: "primary",
       onClick: () => {
-        (null == n ? true : n.ageVerificationStatus) === l.F$.UNVERIFIED ? o.Z.showAgeVerificationGetStartedModal({
+        (null == n ? true : n.ageVerificationStatus) === i.F$.UNVERIFIED ? o.Z.showAgeVerificationGetStartedModal({
           entryPoint: s.cU.SAFETY_FLOWS,
           onClose: () => t({
             type: d.rY.Empty
@@ -33,15 +33,15 @@ let m = function(e) {
         })
       }
     }],
-    children: (0, a.jsxs)(i.Kqy, {
+    children: (0, a.jsxs)(l.Kqy, {
       gap: 8,
-      children: [(0, a.jsx)(i.Text, {
+      children: [(0, a.jsx)(l.Text, {
         variant: "text-md/normal",
         children: "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      }), (0, a.jsx)(i.Text, {
+      }), (0, a.jsx)(l.Text, {
         variant: "text-md/normal",
         children: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-      }), (0, a.jsx)(i.Text, {
+      }), (0, a.jsx)(l.Text, {
         variant: "text-md/normal",
         children: "Ut enim ad minim veniam quis"
       })]

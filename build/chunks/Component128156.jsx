@@ -1,4 +1,4 @@
-/** Chunk was on 63076 **/
+/** Chunk was on 72651 **/
 /** chunk id: 128156, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => w
@@ -49,15 +49,15 @@ function w(e) {
     stream: Z
   } = (0, g.Z)(t.id), {
     voiceChannel: R,
-    voiceActivity: B
+    voiceActivity: G
   } = (0, p.Z)({
     userId: t.id,
     guildId: S
-  }), G = (0, i.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t.id)), L = t.id === n.id, M = (0, i.e7)([u.Z, s.Z], () => {
+  }), B = (0, i.e7)([o.Z], () => o.Z.isFetchingUserOutbox(t.id)), L = t.id === n.id, M = (0, i.e7)([u.Z, s.Z], () => {
     let e = L ? u.Z.getStatus() : s.Z.getStatus(t.id);
     return e === a.Skl.OFFLINE || e === a.Skl.INVISIBLE
-  }), U = N.length > 0 || null != Z, F = D && null == Z && null == B && null != R, W = !M && (U || F), H = A.length > 0;
-  if (!W && !H && G) return (0, r.jsx)("div", {
+  }), U = N.length > 0 || null != Z, F = D && null == Z && null == G && null != R, W = !M && (U || F), H = A.length > 0;
+  if (!W && !H && B) return (0, r.jsx)("div", {
     className: I.cards,
     children: Array.from({
       length: 8
@@ -72,7 +72,7 @@ function w(e) {
       })]
     }, t))
   });
-  if (!W && !H && !G) {
+  if (!W && !H && !B) {
     var z;
     return L ? (0, r.jsx)(v.Uf, {
       onClose: C
@@ -91,14 +91,14 @@ function w(e) {
       children: (0, r.jsxs)("ul", {
         className: I.cards,
         children: [!k && F && (0, r.jsx)("li", {
-          children: (0, r.jsx)(y.Z, {
+          children: (0, r.jsx)(h.Z, {
             user: t,
             currentUser: n,
             voiceChannel: R,
             onClose: C
           })
         }), null != Z && (0, r.jsx)("li", {
-          children: (0, r.jsx)(h.Z, {
+          children: (0, r.jsx)(y.Z, {
             user: t,
             currentUser: n,
             stream: Z,
@@ -112,7 +112,7 @@ function w(e) {
             onClose: C
           })
         }, "live-".concat(i))), k && F && (0, r.jsx)("li", {
-          children: (0, r.jsx)(y.Z, {
+          children: (0, r.jsx)(h.Z, {
             user: t,
             currentUser: n,
             voiceChannel: R,

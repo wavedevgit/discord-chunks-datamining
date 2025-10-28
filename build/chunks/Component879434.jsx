@@ -1,12 +1,12 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 32945 **/
 /** chunk id: 879434, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => b
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk678717 = require("./678717.jsx"),
@@ -27,7 +27,7 @@ let f = e => {
           t(1)
         },
         children: (0, a.jsx)("div", {
-          className: l()(x.banner, x.pfxBanner),
+          className: i()(x.banner, x.pfxBanner),
           children: (0, a.jsx)(o.xvT, {
             variant: "text-md/bold",
             color: "always-white",
@@ -39,7 +39,7 @@ let f = e => {
           t(2)
         },
         children: (0, a.jsx)("div", {
-          className: l()(x.banner, x.nameplateBanner),
+          className: i()(x.banner, x.nameplateBanner),
           children: (0, a.jsx)(o.xvT, {
             variant: "text-md/bold",
             color: "always-white",
@@ -51,7 +51,7 @@ let f = e => {
           t(3)
         },
         children: (0, a.jsx)("div", {
-          className: l()(x.banner, x.bundlesBanner),
+          className: i()(x.banner, x.bundlesBanner),
           children: (0, a.jsx)(o.xvT, {
             variant: "text-md/bold",
             color: "always-white",
@@ -84,7 +84,7 @@ let f = e => {
       })]
     })
   },
-  g = () => {
+  b = () => {
     let [e, t] = Chunk647438.useState(0);
     return (0, Chunk951288.jsxs)(Chunk793030.zJl, {
       className: Chunk511130.wrapper,

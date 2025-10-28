@@ -1,4 +1,4 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 32945 **/
 /** chunk id: 58755, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   P: () => v
@@ -47,11 +47,11 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let g = Object.keys(Chunk500949.jQ).map(e => ({
+let b = Object.keys(Chunk500949.jQ).map(e => ({
     value: e,
     label: e
   })),
-  b = Array.from(Array.from(Object.keys(Chunk407146.b).reduce((e, t) => {
+  g = Array.from(Array.from(Object.keys(Chunk407146.b).reduce((e, t) => {
     let [n] = t.split(".");
     return e.add(n), e
   }, new Set))).map(e => ({
@@ -64,11 +64,11 @@ function v(e) {
     state: t,
     setState: n
   } = e, {
-    scales: i
-  } = t, [l, o] = r.useState(null), s = (0, a.jsxs)("div", {
+    scales: l
+  } = t, [i, o] = r.useState(null), s = (0, a.jsxs)("div", {
     className: h.section,
     children: [(0, a.jsx)(d.VcW, {
-      options: b,
+      options: g,
       placeholder: "Select a scale to edit...",
       value: true,
       onChange: e => {
@@ -91,7 +91,7 @@ function v(e) {
       popoutLayerContext: m.O$
     }), (0, a.jsx)("ul", {
       className: h.overrides,
-      children: i.map(e => (0, a.jsx)("li", {
+      children: l.map(e => (0, a.jsx)("li", {
         children: (0, a.jsx)(d.P3F, {
           onClick: () => o(e.name),
           style: {
@@ -106,13 +106,13 @@ function v(e) {
         })
       }, e.name))
     })]
-  }), u = i.find(e => e.name === l), g = null != u ? (0, a.jsx)(j, {
+  }), u = l.find(e => e.name === i), b = null != u ? (0, a.jsx)(j, {
     onClose: () => o(null),
     scale: u,
     setState: n
   }) : s;
   return (0, a.jsx)("div", {
-    children: g
+    children: b
   })
 }
 
@@ -125,7 +125,7 @@ function j(e) {
     name: c,
     base: x,
     lightness: f,
-    showColumnarPalettePreview: b,
+    showColumnarPalettePreview: g,
     colorSpace: v,
     easingStrength: j = 1,
     useP3ColorSpace: _,
@@ -151,7 +151,7 @@ function j(e) {
           let e = Object.entries(S).reduce((e, t) => {
             let [n, a] = t;
             return e[n] = {
-              value: (0, i.Z)((0, l.Z)(a, p.HW.sRGB), {
+              value: (0, l.Z)((0, i.Z)(a, p.HW.sRGB), {
                 format: "hex"
               }),
               type: "color"
@@ -175,7 +175,7 @@ function j(e) {
     }), (0, a.jsx)(d.q4e, {
       label: "Color Space",
       description: "The color space used to generate the palette. Different color spaces will produce different results.",
-      options: g,
+      options: b,
       value: v,
       onChange: e => (0, p.t4)(c, e, n),
       popoutLayerContext: m.O$
@@ -217,7 +217,7 @@ function j(e) {
     }), (0, a.jsx)(d.rsf, {
       label: "Show columnar palette preview",
       description: "Renders the palette preview in a single column, useful for comparing the luminance of each step.",
-      checked: b,
+      checked: g,
       onChange: e => (0, p.KB)(c, e, n)
     }), (0, a.jsx)(d.rsf, {
       label: "Use P3 Color Space",
@@ -241,7 +241,7 @@ function j(e) {
         children: "Palette Preview"
       }), (0, a.jsx)("div", {
         className: h.paletteOverrides,
-        "data-columnar": b,
+        "data-columnar": g,
         children: Object.entries(S).map((e, n) => {
           let [r, c] = e, u = (0, p.HI)(c), m = (0, o.Z)((0, s.Z)("black"), c) > 4.5 ? "black" : "white", h = E[r];
           return (0, a.jsxs)("div", {
@@ -249,20 +249,20 @@ function j(e) {
               backgroundColor: u
             },
             children: [(0, a.jsxs)(d.Text, {
-              variant: b ? "text-sm/medium" : "text-xs/medium",
+              variant: g ? "text-sm/medium" : "text-xs/medium",
               style: {
                 color: m
               },
-              children: [t.name, ".", n + 1, b && null != h ? (0, a.jsx)("strong", {
+              children: [t.name, ".", n + 1, g && null != h ? (0, a.jsx)("strong", {
                 children: " - ".concat(h)
               }) : ""]
-            }), b && (0, a.jsxs)(d.Text, {
+            }), g && (0, a.jsxs)(d.Text, {
               variant: "text-xxs/medium",
               style: {
                 opacity: .75,
                 color: m
               },
-              children: [(0, i.Z)((0, l.Z)(c, p.HW.sRGB), {
+              children: [(0, l.Z)((0, i.Z)(c, p.HW.sRGB), {
                 format: "hex"
               }).toUpperCase(), " - ", u]
             })]
@@ -277,7 +277,7 @@ function _(e) {
   let {
     scale: t,
     onRemove: n
-  } = e, o = r.useMemo(() => Object.values((0, p.XM)(t)).map(e => (0, i.Z)((0, l.Z)(e, p.HW.sRGB), {
+  } = e, o = r.useMemo(() => Object.values((0, p.XM)(t)).map(e => (0, l.Z)((0, i.Z)(e, p.HW.sRGB), {
     format: "hex"
   })), [t]);
   return (0, a.jsxs)("li", {

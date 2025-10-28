@@ -1,4 +1,4 @@
-/** Chunk was on 63076 **/
+/** Chunk was on 72651 **/
 /** chunk id: 264481, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   P9: () => P,
@@ -20,8 +20,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk839468 = require("./839468.js");
-let h = [() => Chunk388032.intl.string(Chunk388032.t.madJdE), () => Chunk388032.intl.string(Chunk388032.t.NYmfoP), () => Chunk388032.intl.string(Chunk388032.t.R2PaCg), () => Chunk388032.intl.string(Chunk388032.t.laSR8h), () => Chunk388032.intl.string(Chunk388032.t.DnsJE8)],
-  y = [() => Chunk388032.intl.string(Chunk388032.t.nFSbeE), () => Chunk388032.intl.string(Chunk388032.t.gTcxOz), () => Chunk388032.intl.string(Chunk388032.t["8T0wYj"]), () => Chunk388032.intl.string(Chunk388032.t.BIHl1g), () => Chunk388032.intl.string(Chunk388032.t["jhBm0+"])],
+let y = [() => Chunk388032.intl.string(Chunk388032.t.madJdE), () => Chunk388032.intl.string(Chunk388032.t.NYmfoP), () => Chunk388032.intl.string(Chunk388032.t.R2PaCg), () => Chunk388032.intl.string(Chunk388032.t.laSR8h), () => Chunk388032.intl.string(Chunk388032.t.DnsJE8)],
+  h = [() => Chunk388032.intl.string(Chunk388032.t.nFSbeE), () => Chunk388032.intl.string(Chunk388032.t.gTcxOz), () => Chunk388032.intl.string(Chunk388032.t["8T0wYj"]), () => Chunk388032.intl.string(Chunk388032.t.BIHl1g), () => Chunk388032.intl.string(Chunk388032.t["jhBm0+"])],
   v = [() => Chunk388032.intl.string(Chunk388032.t.AyMGXA), () => Chunk388032.intl.string(Chunk388032.t.aAFW7V), e => m.intl.formatToPlainString(m.t.h2g0cM, {
     name: e
   }), () => Chunk388032.intl.string(Chunk388032.t.rrYh58), () => Chunk388032.intl.string(Chunk388032.t["HX3K+F"]), () => Chunk388032.intl.string(Chunk388032.t["/yW3aY"]), () => Chunk388032.intl.string(Chunk388032.t["PmL/v0"]), () => Chunk388032.intl.string(Chunk388032.t.IALa3h), () => Chunk388032.intl.string(Chunk388032.t.HRcTFL), () => Chunk388032.intl.string(Chunk388032.t.NuCqPt), () => Chunk388032.intl.string(Chunk388032.t["M1tw+4"]), () => Chunk388032.intl.string(Chunk388032.t.UBm1y2), () => Chunk388032.intl.string(Chunk388032.t.Cu95PQ), () => Chunk388032.intl.string(Chunk388032.t["R/wFuh"]), () => Chunk388032.intl.string(Chunk388032.t.HQPAVT), () => Chunk388032.intl.string(Chunk388032.t.YolGh4)],
@@ -54,7 +54,7 @@ function x() {
   let e = Chunk388032.intl.string(Chunk388032.t.RnD2yZ),
     [t] = Chunk647438.useState(() => {
       var e;
-      return (null != (e = (0, Chunk392711.sample)(h)) ? module : h[0])()
+      return (null != (e = (0, Chunk392711.sample)(y)) ? module : y[0])()
     });
   return (0, Chunk951288.jsx)(j, {
     heading: module,
@@ -66,7 +66,7 @@ function _() {
   let e = Chunk388032.intl.string(Chunk388032.t.bFgqYJ),
     [t] = Chunk647438.useState(() => {
       var e;
-      return (null != (e = (0, Chunk392711.sample)(y)) ? module : y[0])()
+      return (null != (e = (0, Chunk392711.sample)(h)) ? module : h[0])()
     });
   return (0, Chunk951288.jsx)(j, {
     heading: module,
@@ -85,7 +85,7 @@ function P(e) {
   }), [p] = i.useState(() => {
     var e;
     return (null != (e = (0, a.sample)(v)) ? e : v[0])(u)
-  }), h = i.useCallback(() => {
+  }), y = i.useCallback(() => {
     o.Z.openPrivateChannel({
       recipientIds: t.id
     }), null == s || s()
@@ -98,7 +98,7 @@ function P(e) {
       children: (0, r.jsx)(g.O1, {
         icon: l.kBi,
         text: m.intl.string(m.t["g33r/P"]),
-        onClick: h
+        onClick: y
       })
     })
   })

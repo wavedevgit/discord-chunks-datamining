@@ -1,4 +1,4 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 32945 **/
 /** chunk id: 480173, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -26,22 +26,22 @@ function p() {
 function h(e) {
   let {
     levelUpData: t
-  } = e, n = r.useRef(null), i = r.useCallback(() => {
+  } = e, n = r.useRef(null), l = r.useCallback(() => {
     s.Z.setState({
       shouldRenderTenureLevelUp: false
     })
   }, []);
-  return r.useEffect(() => i, [i]), (0, a.jsx)(l.EqS, {
+  return r.useEffect(() => l, [l]), (0, a.jsx)(i.EqS, {
     containerRef: n,
     children: (0, a.jsxs)("div", {
       className: u.wrapper,
       children: [(0, a.jsx)("div", {
         className: u.closeButton,
-        children: (0, a.jsx)(l.aML, {
+        children: (0, a.jsx)(i.aML, {
           text: d.intl.string(d.t.cpT0Cq),
           children: e => {
             var t, n;
-            return (0, a.jsx)(l.hU, (t = function(e) {
+            return (0, a.jsx)(i.hU, (t = function(e) {
               for (var t = 1; t < arguments.length; t++) {
                 var n = null != arguments[t] ? arguments[t] : {},
                   a = Object.keys(n);
@@ -59,10 +59,10 @@ function h(e) {
               }
               return e
             }({}, e), n = n = {
-              icon: l.Dio,
+              icon: i.Dio,
               variant: "secondary",
               size: "sm",
-              onClick: i,
+              onClick: l,
               "aria-label": d.intl.string(d.t.cpT0Cq)
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
               var n = Object.keys(e);

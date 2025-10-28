@@ -1,4 +1,4 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 32945 **/
 /** chunk id: 11075, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   a: () => o
@@ -14,14 +14,14 @@ let o = e => {
   } = e, n = Object.keys(r.z).find(e => "COLLECTIBLES_SHOP_ENTRY_MARKETING" === e);
   return null == n ? null : (0, a.jsxs)("div", {
     className: t,
-    children: [(0, a.jsx)(i.Heading, {
+    children: [(0, a.jsx)(l.Heading, {
       variant: "heading-md/semibold",
       children: "Shop Marketing"
     }), (0, a.jsx)("div", {
       style: {
         zIndex: 1
       },
-      children: (0, a.jsx)(l.Z, {
+      children: (0, a.jsx)(i.Z, {
         items: [n]
       })
     })]

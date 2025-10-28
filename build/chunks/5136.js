@@ -1,4 +1,4 @@
-/** Chunk was on 63076 **/
+/** Chunk was on 72651 **/
 /** chunk id: 5136, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   r: () => l
@@ -35,8 +35,8 @@ function l(e) {
       u = f.y,
       m = u - a.top,
       b = a.bottom - u,
-      h = 0;
-    m >= 0 && m < n ? h = -l * Math.pow(1 - m / n, o) : b >= 0 && b < n && (h = l * Math.pow(1 - b / n, o)), 0 !== h && (t.scrollTop += h * i)
+      y = 0;
+    m >= 0 && m < n ? y = -l * Math.pow(1 - m / n, o) : b >= 0 && b < n && (y = l * Math.pow(1 - b / n, o)), 0 !== y && (t.scrollTop += y * i)
   }), () => {
     null !== c.current && cancelAnimationFrame(c.current), c.current = null, s.current = 0
   }), [t, d, f, g, n, l, o, p])

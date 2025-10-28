@@ -1,4 +1,4 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 32945 **/
 /** chunk id: 778648, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Z
@@ -95,7 +95,7 @@ let Z = function() {
     isSubmitting: et,
     responseMessage: en,
     redeemVirtualCurrency: ea
-  } = (0, Chunk43747.f)(), [er, ei] = Chunk647438.useState(Chunk981631.lds), [el, eo] = Chunk647438.useState(""), [es, ec] = Chunk647438.useState(Chunk981631.lds), [ed, eu] = Chunk647438.useState(Chunk981631.lds);
+  } = (0, Chunk43747.f)(), [er, el] = Chunk647438.useState(Chunk981631.lds), [ei, eo] = Chunk647438.useState(""), [es, ec] = Chunk647438.useState(Chunk981631.lds), [ed, eu] = Chunk647438.useState(Chunk981631.lds);
   return (0, Chunk951288.jsx)(Chunk906732.Gt, {
     value: K,
     children: (0, Chunk951288.jsx)(Chunk481060.zJl, {
@@ -250,7 +250,7 @@ let Z = function() {
           }, e), {
             disabled: V,
             onClick: () => {
-              window.open(I.Z5c.BILLING_PREMIUM_SUBSCRIBE + "?" + i.stringify(R({}, G)))
+              window.open(I.Z5c.BILLING_PREMIUM_SUBSCRIBE + "?" + l.stringify(R({}, G)))
             }
           }))
         }), (0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsxs)(Chunk481060.C3N, {
@@ -281,7 +281,7 @@ let Z = function() {
             label: "SKU ID",
             placeholder: "SKU ID",
             value: er,
-            onChange: e => ei(e)
+            onChange: e => el(e)
           }), (0, Chunk951288.jsx)(Chunk481060.Button, {
             variant: "primary",
             text: "Redeem Virtual Currency for SKU",
@@ -348,7 +348,7 @@ let Z = function() {
                 label: "Application Id",
                 hideLabel: true,
                 placeholder: "Application Id",
-                value: el,
+                value: ei,
                 onChange: eo
               }), (0, Chunk951288.jsx)(Chunk481060.oil, {
                 label: "SKU ID",
@@ -360,7 +360,7 @@ let Z = function() {
                 variant: "primary",
                 text: "Open Standard Payment Modal for SKU",
                 onClick: () => (0, Chunk87484.Z)({
-                  applicationId: el,
+                  applicationId: ei,
                   skuId: es,
                   analyticsLocations: K
                 })

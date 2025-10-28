@@ -1,4 +1,4 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 32945 **/
 /** chunk id: 78933, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => ed
@@ -93,8 +93,8 @@ function ed(e) {
     guildId: ep,
     guildProfileEnabled: eh
   } = e, ex = __OVERLAY__, ef = (0, E.ZP)(t.id, ep), {
-    analyticsLocations: eg
-  } = (0, m.ZP)(u.Z.USER_PROFILE_ACCOUNT_POPOUT), eb = (0, y.ZB)({
+    analyticsLocations: eb
+  } = (0, m.ZP)(u.Z.USER_PROFILE_ACCOUNT_POPOUT), eg = (0, y.ZB)({
     layout: "ACCOUNT_POPOUT",
     userId: t.id,
     guildId: ep
@@ -117,18 +117,18 @@ function ed(e) {
     eE = (0, ee.F)(eS),
     {
       expiringStatusProfileFeedback: eT
-    } = g.Y.useExperiment({
+    } = b.Y.useExperiment({
       location: "UserProfileAccountPopout"
     }, {
       autoTrackExposure: false
     }),
     eO = (0, o.e7)([z.Z], () => z.Z.hidePersonalInformation),
-    eN = (0, b.p)(),
+    eN = (0, g.p)(),
     eP = B.Sb.useSetting(),
     eI = (0, ee.I)(eC),
     ew = (0, Y.g)(n),
     ek = (0, j.Z)({
-      analyticsLocations: eg
+      analyticsLocations: eb
     }),
     eR = (0, W.I5)(t),
     eA = (0, h.p)({
@@ -150,8 +150,8 @@ function ed(e) {
   let eG = e => {
       null == n || n(), (0, O.openUserProfileModal)(ec({
         customStatusPrompt: eU,
-        sourceAnalyticsLocations: eg
-      }, eb, e))
+        sourceAnalyticsLocations: eb
+      }, eg, e))
     },
     ez = (0, T.Z)({
       location: "UserProfileAccountPopout"
@@ -167,14 +167,14 @@ function ed(e) {
       eh && null != ep || (ek(), eY())
     }, [ek, eY, eh, ep]),
     eX = eh && null != ep,
-    eQ = (0, q.K)(ep, eg, eq, n, eY),
+    eQ = (0, q.K)(ep, eb, eq, n, eY),
     e$ = (0, C.k)({
       location: "UserProfileAccountPopout"
     });
   return (0, a.jsx)(m.Gt, {
-    value: eg,
+    value: eb,
     children: (0, a.jsx)(y.Mt, {
-      value: eb,
+      value: eg,
       openedAt: em,
       fetchStartedAt: null == ef ? true : ef.fetchStartedAt,
       fetchEndedAt: null == ef ? true : ef.fetchEndedAt,
@@ -192,22 +192,22 @@ function ed(e) {
           className: eo.themeContainer,
           user: t,
           displayProfile: ef,
-          themeType: ei.l.POPOUT,
+          themeType: el.l.POPOUT,
           children: [(0, a.jsxs)("div", {
             className: es.header,
             children: [(0, a.jsx)(I.Z, {
               user: t,
               displayProfile: ef,
-              themeType: ei.l.POPOUT
+              themeType: el.l.POPOUT
             }), (0, a.jsx)(N.Z, {
               user: t,
               displayProfile: ef,
-              themeType: ei.l.POPOUT,
+              themeType: el.l.POPOUT,
               onOpenProfile: ex ? true : eG
             }), (0, a.jsx)(L.Z, {
               ref: eZ,
               user: t,
-              themeType: ei.l.POPOUT,
+              themeType: el.l.POPOUT,
               onCloseProfile: n,
               prompt: eA ? eU : null
             })]
@@ -224,7 +224,7 @@ function ed(e) {
               pronouns: null == ef ? true : ef.pronouns,
               tags: (0, a.jsx)(P.Z, {
                 displayProfile: ef,
-                themeType: ei.l.POPOUT,
+                themeType: el.l.POPOUT,
                 onClose: n,
                 shouldOpenBadgeTooltip: null != eu ? e => e === eu : true,
                 shouldGlowTenureBadge: eL.current
@@ -268,7 +268,7 @@ function ed(e) {
                 children: (0, a.jsxs)(X.XE, {
                   children: [(0, a.jsx)(X.V4, {
                     action: "EDIT_PROFILE",
-                    label: eh ? el.intl.string(el.t.Ip9nBS) : el.intl.string(el.t.s5vZlQ),
+                    label: eh ? ei.intl.string(ei.t.Ip9nBS) : ei.intl.string(ei.t.s5vZlQ),
                     icon: c.vdY,
                     onClick: eJ,
                     renderSubmenu: eX ? e => {
@@ -277,13 +277,13 @@ function ed(e) {
                       } = e;
                       return (0, a.jsx)(X.gp, {
                         navId: "edit-profile-submenu",
-                        "aria-label": el.intl.string(el.t.szTA8E),
+                        "aria-label": ei.intl.string(ei.t.szTA8E),
                         onClose: t,
                         children: eQ
                       })
                     } : true,
                     trailing: eq ? (0, a.jsx)(c.IGR, {
-                      text: el.intl.string(el.t.y2b7CA)
+                      text: ei.intl.string(ei.t.y2b7CA)
                     }) : true,
                     ref: eM
                   }), (0, a.jsx)(X.V4, {
@@ -297,47 +297,47 @@ function ed(e) {
                     trailing: (eN || eC === en.Skl.DND) && (0, a.jsx)(c.owu, {
                       size: "xxs"
                     }),
-                    renderSubmenu: i.tq ? true : e => {
+                    renderSubmenu: l.tq ? true : e => {
                       let {
                         closePopout: t
                       } = e;
                       return (0, a.jsx)(X.gp, {
                         navId: "set-status-submenu",
                         className: eo.statusPickerModalMenu,
-                        "aria-label": el.intl.string(el.t.E13trI),
+                        "aria-label": ei.intl.string(ei.t.E13trI),
                         onClose: t,
                         children: eI
                       })
                     },
-                    onClick: i.tq ? () => {
+                    onClick: l.tq ? () => {
                       n(), (0, c.ZDy)(() => new Promise(e => e(e => {
                         var t, n, {
                             onClose: r
                           } = e,
-                          i = function(e, t) {
+                          l = function(e, t) {
                             if (null == e) return {};
                             var n, a, r = function(e, t) {
                               if (null == e) return {};
                               var n, a, r = {},
-                                i = Object.keys(e);
-                              for (a = 0; a < i.length; a++) n = i[a], t.indexOf(n) >= 0 || (r[n] = e[n]);
+                                l = Object.keys(e);
+                              for (a = 0; a < l.length; a++) n = l[a], t.indexOf(n) >= 0 || (r[n] = e[n]);
                               return r
                             }(e, t);
                             if (Object.getOwnPropertySymbols) {
-                              var i = Object.getOwnPropertySymbols(e);
-                              for (a = 0; a < i.length; a++) n = i[a], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+                              var l = Object.getOwnPropertySymbols(e);
+                              for (a = 0; a < l.length; a++) n = l[a], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
                             }
                             return r
                           }(e, ["onClose"]);
-                        return (0, a.jsx)(l.IX, (t = ec({
+                        return (0, a.jsx)(i.IX, (t = ec({
                           onClose: r
-                        }, i), n = n = {
+                        }, l), n = n = {
                           size: "sm",
-                          "aria-label": el.intl.string(el.t["3Uj+2p"]),
+                          "aria-label": ei.intl.string(ei.t["3Uj+2p"]),
                           children: (0, a.jsx)(c.v2r, {
                             navId: "set-status-submenu-mobile-web",
                             variant: "fixed",
-                            "aria-label": el.intl.string(el.t.E13trI),
+                            "aria-label": ei.intl.string(ei.t.E13trI),
                             className: eo.statusPickerModal,
                             hideScroller: true,
                             onClose: r,
@@ -364,7 +364,7 @@ function ed(e) {
                   children: [(0, a.jsx)(X.V4, {
                     action: "PRESS_SWITCH_ACCOUNTS",
                     icon: c.lMe,
-                    label: el.intl.string(el.t.oMNyYN),
+                    label: ei.intl.string(ei.t.oMNyYN),
                     onClick: () => {
                       n(), (0, et.Z)()
                     },
@@ -374,7 +374,7 @@ function ed(e) {
                       } = e;
                       return (0, a.jsx)(X.gp, {
                         navId: "switch-accounts-submenu",
-                        "aria-label": el.intl.string(el.t.wFhVqL),
+                        "aria-label": ei.intl.string(ei.t.wFhVqL),
                         onClose: t,
                         children: ew
                       })
@@ -382,7 +382,7 @@ function ed(e) {
                   }), !__OVERLAY__ && V.wS && eP && (0, a.jsx)(X.V4, {
                     action: "COPY_USER_ID",
                     icon: c.VuL,
-                    label: el.intl.string(el.t["/AXYnE"]),
+                    label: ei.intl.string(ei.t["/AXYnE"]),
                     onClick: () => {
                       (0, V.JG)(t.id), n()
                     }

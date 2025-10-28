@@ -1,4 +1,4 @@
-/** Chunk was on 63076 **/
+/** Chunk was on 72651 **/
 /** chunk id: 753436, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   S: () => j
@@ -40,7 +40,7 @@ function O(e) {
     listType: n,
     itemType: "GAME_COVER",
     itemPreviewProps: g,
-    "aria-label": h.intl.formatToPlainString(h.t["0dR3gw"], {
+    "aria-label": y.intl.formatToPlainString(y.t["0dR3gw"], {
       positionNumber: t + 1
     }),
     onReorder: (e, t) => (0, s.Eq)(n, e, t),
@@ -72,7 +72,7 @@ function j(e) {
     channelId: s,
     disableInteraction: d = false,
     index: f,
-    onRemoveGame: h,
+    onRemoveGame: y,
     coverRef: j
   } = e, x = (0, b.Z)(t.applicationId).length > 0, _ = c.default.getCurrentUser(), P = (null == _ ? true : _.id) === n, I = !d && P, w = (0, u.kO)(t.applicationId), {
     isDragging: S
@@ -85,7 +85,7 @@ function j(e) {
       applicationId: t.applicationId,
       userId: n,
       disableInteraction: d,
-      className: l()(x ? v.socialProofBackdrop : true, (null == t ? true : t.imageSrc) == null || d ? true : y.hoverActiveEffect),
+      className: l()(x ? v.socialProofBackdrop : true, (null == t ? true : t.imageSrc) == null || d ? true : h.hoverActiveEffect),
       hideTooltip: S,
       coverRef: j
     }), I && (0, r.jsx)(p.Z, {
@@ -93,7 +93,7 @@ function j(e) {
       widgetType: i,
       className: v.removeGameButton,
       iconSize: "xs",
-      onRemove: () => null == h ? true : h(t.applicationId)
+      onRemove: () => null == y ? true : y(t.applicationId)
     }), !d && (0, r.jsx)(m.Z, {
       className: v.socialProof,
       applicationId: t.applicationId,
@@ -103,7 +103,7 @@ function j(e) {
     })]
   });
   return w ? (0, r.jsx)("div", {
-    className: y.loadingCover
+    className: h.loadingCover
   }) : I ? (0, r.jsx)(O, {
     widgetType: i,
     index: null != f ? f : 0,

@@ -9,7 +9,7 @@ var Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk20471 = require("./20471.js"),
+  Chunk535139 = require("./535139.js"),
   Chunk22928 = require("./22928.jsx"),
   Chunk438926 = require("./438926.jsx"),
   Chunk388032 = require("./388032.jsx"),
@@ -25,11 +25,11 @@ function x(t) {
     onSuccessButtonClick: u,
     isSuccessButtonLoading: x
   } = t, {
-    hasAlreadyLinked: f,
+    hasAlreadyLinked: m,
     canStartAuthorization: h,
     startAuthorization: C,
     fetched: g
-  } = (0, r.FG)(e);
+  } = (0, r.F)(e);
   if (!g) return (0, i.jsx)(l.IX, {
     transitionState: a,
     onClose: s,
@@ -40,7 +40,7 @@ function x(t) {
       })
     })
   });
-  let S = f ? {
+  let S = m ? {
     variant: "primary",
     text: c,
     onClick: u,
@@ -52,12 +52,12 @@ function x(t) {
     icon: l.uIJ,
     disabled: !h
   };
-  return (0, i.jsx)(m, {
+  return (0, i.jsx)(f, {
     sku: n,
     application: e,
     transitionState: a,
     onClose: s,
-    hasAlreadyLinked: f,
+    hasAlreadyLinked: m,
     canStartAuthorization: h,
     primaryCTAButtonProps: S,
     bodyText: d.intl.formatToPlainString(d.t.PaYE38, {
@@ -67,7 +67,7 @@ function x(t) {
   })
 }
 
-function m(t) {
+function f(t) {
   let {
     sku: n,
     application: e,
@@ -76,7 +76,7 @@ function m(t) {
     onClose: r,
     hasAlreadyLinked: c,
     canStartAuthorization: x,
-    bodyText: m,
+    bodyText: f,
     title: h
   } = t;
   return (0, i.jsxs)(l.IX, {
@@ -91,8 +91,8 @@ function m(t) {
         children: [(0, i.jsx)(o.Text, {
           variant: "text-md/normal",
           className: p.modalBodyText,
-          children: m
-        }), (0, i.jsx)(f, {
+          children: f
+        }), (0, i.jsx)(m, {
           isConnected: c,
           application: e
         })]
@@ -109,7 +109,7 @@ function m(t) {
   })
 }
 
-function f(t) {
+function m(t) {
   let {
     isConnected: n,
     application: e

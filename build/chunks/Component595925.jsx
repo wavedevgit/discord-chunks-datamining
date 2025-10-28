@@ -1,7 +1,7 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 32945 **/
 /** chunk id: 595925, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  O: () => b
+  O: () => g
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk386521 = require("./386521.js");
 
-function b() {
+function g() {
   let {
     enabled: e
   } = (0, Chunk825102.WX)({
@@ -31,8 +31,8 @@ function b() {
 }
 
 function v() {
-  let [e, t] = Chunk647438.useState(150), [n, o] = Chunk647438.useState(150), [s, p] = Chunk647438.useState(500), [b, v] = Chunk647438.useState(Chunk317257.b.DEFAULT), j = () => {
-    switch (b) {
+  let [e, t] = Chunk647438.useState(150), [n, o] = Chunk647438.useState(150), [s, p] = Chunk647438.useState(500), [g, v] = Chunk647438.useState(Chunk317257.b.DEFAULT), j = () => {
+    switch (g) {
       case Chunk317257.b.DEFAULT:
         v(Chunk317257.b.HIGHLIGHTED);
         break;
@@ -92,7 +92,7 @@ function v() {
         className: Chunk386521.interactivePillContainer,
         children: (0, Chunk951288.jsx)(Chunk970815.A4, {
           balance: require,
-          balanceWidgetMode: b,
+          balanceWidgetMode: g,
           onClick: () => j()
         })
       }), (0, Chunk951288.jsx)(Chunk481060.Text, {
@@ -116,7 +116,7 @@ function v() {
         className: Chunk386521.interactivePillContainer,
         children: (0, Chunk951288.jsx)(Chunk970815.A4, {
           balance: require,
-          balanceWidgetMode: b,
+          balanceWidgetMode: g,
           onClick: () => j()
         })
       })]

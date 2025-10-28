@@ -1,4 +1,4 @@
-/** Chunk was on 63076 **/
+/** Chunk was on 72651 **/
 /** chunk id: 414655, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => P
@@ -32,12 +32,12 @@ function P(e) {
     wishlistId: n,
     currentUser: P,
     wishlistSettings: I
-  } = (0, l.cj)([h.Z, m.default], () => {
-    let e = h.Z.getFirstWishlistId(t.id);
+  } = (0, l.cj)([y.Z, m.default], () => {
+    let e = y.Z.getFirstWishlistId(t.id);
     return {
       wishlistId: e,
       currentUser: m.default.getCurrentUser(),
-      wishlistSettings: null != e ? h.Z.getWishlistSettings(t.id, e) : null
+      wishlistSettings: null != e ? y.Z.getWishlistSettings(t.id, e) : null
     }
   }), {
     analyticsLocations: w
@@ -62,7 +62,7 @@ function P(e) {
       analyticsSource: u.Z.USER_PROFILE_WISHLIST
     })
   }, [w]);
-  return null != k ? null : null == D || 0 === D.items.length ? (0, r.jsx)(y.F, {
+  return null != k ? null : null == D || 0 === D.items.length ? (0, r.jsx)(h.F, {
     fade: true,
     children: (0, r.jsxs)("div", {
       className: _.emptyStateContainer,
@@ -85,7 +85,7 @@ function P(e) {
         onClick: A
       })]
     })
-  }) : (0, r.jsxs)(y.F, {
+  }) : (0, r.jsxs)(h.F, {
     className: _.scroller,
     fade: true,
     children: [(0, r.jsxs)("div", {

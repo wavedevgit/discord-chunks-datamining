@@ -1,4 +1,4 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 32945 **/
 /** chunk id: 53891, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => j
@@ -18,9 +18,9 @@ var Chunk442837 = require("./442837.js"),
   Chunk446094 = require("./446094.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx");
-let g = new Chunk710845.Z("GuildTagCoachmark");
+let b = new Chunk710845.Z("GuildTagCoachmark");
 
-function b(e) {
+function g(e) {
   function t(t) {
     var n;
     s.Z.dispatch({
@@ -34,7 +34,7 @@ function b(e) {
   let {
     isAdopting: n,
     onAdoptTag: r,
-    onEditProfile: i
+    onEditProfile: l
   } = (0, h.Z)(e.guild.id, () => t(x.L.TAKE_ACTION)), c = [{
     text: f.intl.string(f.t.jwEaiX),
     loading: n,
@@ -42,7 +42,7 @@ function b(e) {
     variant: "primary"
   }, {
     text: f.intl.string(f.t.s5vZlQ),
-    onClick: i,
+    onClick: l,
     variant: "secondary"
   }];
   return (0, a.jsxs)(a.Fragment, {
@@ -52,7 +52,7 @@ function b(e) {
       position: "top",
       graphic: {
         type: "dynamic",
-        component: l.DynamicGraphicComponent.GUILD_TAG_COACHMARK_ASSET,
+        component: i.DynamicGraphicComponent.GUILD_TAG_COACHMARK_ASSET,
         props: {
           guildId: e.guild.id,
           guildProfile: e.guild.profile
@@ -78,7 +78,7 @@ function v(e) {
       lastSeenInfo: {
         tag: e.guild.profile.tag
       }
-    }), (0, d.Qd)(i.C.ADOPT_CLAN_IDENTITY_NOTICE, e.guild.id, true, x.L.DISMISS), null == (n = e.onDismiss) || n.call(e, t)
+    }), (0, d.Qd)(l.C.ADOPT_CLAN_IDENTITY_NOTICE, e.guild.id, true, x.L.DISMISS), null == (n = e.onDismiss) || n.call(e, t)
   }
   let {
     isAdopting: n,
@@ -101,7 +101,7 @@ function v(e) {
       position: "top",
       graphic: {
         type: "dynamic",
-        component: l.DynamicGraphicComponent.GUILD_TAG_COACHMARK_ASSET,
+        component: i.DynamicGraphicComponent.GUILD_TAG_COACHMARK_ASSET,
         props: {
           guildId: e.guild.id,
           guildProfile: e.guild.profile
@@ -121,7 +121,7 @@ function v(e) {
 function j(e) {
   let t = (0, r.e7)([u.Z], () => u.Z.getGuild(e.guildId)),
     n = (0, m.S3)(e.guildId);
-  return null != t && (0, p.jq)(t) && null !== n ? "changed" === n ? (0, a.jsx)(b, {
+  return null != t && (0, p.jq)(t) && null !== n ? "changed" === n ? (0, a.jsx)(g, {
     guild: t,
     onDismiss: e.onDismiss,
     targetElementRef: e.targetElementRef,
@@ -131,5 +131,5 @@ function j(e) {
     onDismiss: e.onDismiss,
     targetElementRef: e.targetElementRef,
     children: e.children
-  }) : (g.error("GuildTagCoachmark rendered without guildId or coachmark type."), e.children)
+  }) : (b.error("GuildTagCoachmark rendered without guildId or coachmark type."), e.children)
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 63076 **/
+/** Chunk was on 72651 **/
 /** chunk id: 860717, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Q
@@ -11,7 +11,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk681715 = require("./681715.js"),
   Chunk481060 = require("./481060.js"),
   Chunk911969 = require("./911969.js"),
-  Chunk20471 = require("./20471.js"),
+  Chunk535139 = require("./535139.js"),
   Chunk812206 = require("./812206.js"),
   Chunk810568 = require("./810568.js"),
   Chunk168524 = require("./168524.js"),
@@ -166,7 +166,7 @@ function Z(e) {
   let {
     component: t
   } = e;
-  if (Array.isArray(t)) return B(t);
+  if (Array.isArray(t)) return G(t);
   switch (t.type) {
     case "HERO":
       let {
@@ -186,12 +186,12 @@ function Z(e) {
         }
         return i
       }(t, ["body"]);
-      return (0, r.jsx)(G, D(C({}, i), {
-        body: B(n)
+      return (0, r.jsx)(B, D(C({}, i), {
+        body: G(n)
       }));
     case "GRID":
       return (0, r.jsx)(L, {
-        children: B(t.children)
+        children: G(t.children)
       });
     case "FIELD":
       return (0, r.jsx)(M, {
@@ -215,11 +215,11 @@ function R(e, t) {
   }, t)
 }
 
-function B(e) {
+function G(e) {
   return e.map((e, t) => R(e, t))
 }
 
-function G(e) {
+function B(e) {
   let {
     title: t,
     body: n,
@@ -236,7 +236,7 @@ function G(e) {
         children: null != t ? t : (0, r.jsx)("div", {
           className: T.textPlaceholder
         })
-      }), (0, r.jsx)(h.U, {
+      }), (0, r.jsx)(y.U, {
         color: "muted",
         children: n
       })]
@@ -286,7 +286,7 @@ function M(e) {
 function U(e) {
   let {
     content: t
-  } = e, n = i.useId(), a = (0, h._)();
+  } = e, n = i.useId(), a = (0, y._)();
   return null != t ? (0, r.jsx)(v.Z, {
     type: u.re.TEXT_DISPLAY,
     id: n,
@@ -301,7 +301,7 @@ function F(e) {
     content: t,
     image: n,
     imagePosition: i
-  } = e, a = (0, h._)(), o = A(n) ? (0, r.jsx)("div", {
+  } = e, a = (0, y._)(), o = A(n) ? (0, r.jsx)("div", {
     className: l()(T.image, a.className),
     children: (0, r.jsx)(j.ZP, {
       src: n.proxyUrl,
@@ -326,7 +326,7 @@ function W(e) {
     size: t = "small",
     divider: n = false
   } = e, a = i.useId();
-  return (0, r.jsx)(y.Z, {
+  return (0, r.jsx)(h.Z, {
     type: u.re.SEPARATOR,
     id: a,
     divider: n,
@@ -342,7 +342,7 @@ function H() {
     }(),
     {
       game: t
-    } = q(module.widget);
+    } = Y(module.widget);
   return null == exports ? null : (0, Chunk951288.jsx)(Chunk919498.Z, {
     className: Chunk18827.socialProof,
     applicationId: exports.id,
@@ -379,7 +379,7 @@ function K(e, t) {
 }
 let V = Chunk647438.createContext(null);
 
-function q(e) {
+function Y(e) {
   return (0, o.cj)([f.Z, I.Z, _.Z], () => {
     let t = f.Z.getApplication(e.applicationId);
     return {
@@ -390,7 +390,7 @@ function q(e) {
   })
 }
 
-function X(e) {
+function q(e) {
   let {
     children: t,
     widget: n
@@ -399,7 +399,7 @@ function X(e) {
     containerInnerWidth: 396,
     children: (0, r.jsx)(m.Il, {
       applicationWidget: n,
-      children: (0, r.jsx)(h.U, {
+      children: (0, r.jsx)(y.U, {
         size: "reduced",
         weight: "reduced",
         children: (0, r.jsx)("div", {
@@ -411,7 +411,7 @@ function X(e) {
   })
 }
 
-function Y(e) {
+function X(e) {
   return (0, r.jsxs)(s.Kqy, {
     direction: "horizontal",
     gap: 24,
@@ -448,7 +448,7 @@ let Q = Object.assign(function(e) {
     application: o,
     game: u,
     config: f
-  } = q(n), m = null == o ? true : o.getIconURL(16), b = (0, x.O)(t.id).data, h = null == b ? true : b.find(e => e.application_id === n.applicationId), y = (0, p.Z)({
+  } = Y(n), m = null == o ? true : o.getIconURL(16), b = (0, x.O)(t.id).data, y = null == b ? true : b.find(e => e.application_id === n.applicationId), h = (0, p.Z)({
     location: "UserProfileApplicationWidget",
     applicationId: null == u ? true : u.id,
     source: g.m1.UserProfile,
@@ -459,7 +459,7 @@ let Q = Object.assign(function(e) {
     hasAlreadyLinked: j,
     canStartAuthorization: _,
     startAuthorization: I
-  } = (0, d.FG)(o), S = null == a && v && !j && _, k = (0, r.jsxs)(r.Fragment, {
+  } = (0, d.F)(o), S = null == a && v && !j && _, k = (0, r.jsxs)(r.Fragment, {
     children: [null != m ? (0, r.jsx)("img", {
       className: T.appIcon,
       src: m,
@@ -482,13 +482,13 @@ let Q = Object.assign(function(e) {
     text: E.intl.string(E.t.ajHoOr),
     children: (0, r.jsx)(s.P3F, {
       className: l()(T.header, T.headerClickable),
-      onClick: y,
+      onClick: h,
       "aria-label": E.intl.string(E.t.ajHoOr),
       children: k
     })
   }), R = i.useMemo(() => {
     var e, t, n, r, i;
-    let a = (e = null != h ? h : null, t = null != f ? f : null, null == e ? {
+    let a = (e = null != y ? y : null, t = null != f ? f : null, null == e ? {
       mode: "skeleton",
       config: t
     } : {
@@ -542,7 +542,7 @@ let Q = Object.assign(function(e) {
           return t
       }
     })
-  }, [f, h]);
+  }, [f, y]);
   return (0, r.jsxs)(w.Z, D(C({}, e), {
     userId: t.id,
     widget: n,
@@ -552,11 +552,11 @@ let Q = Object.assign(function(e) {
       id: "view-game-profile",
       label: "View Game Profile",
       icon: s.iWm,
-      action: y
+      action: h
     }) : null,
     children: [(0, r.jsx)(V.Provider, {
       value: e,
-      children: (0, r.jsx)(X, {
+      children: (0, r.jsx)(q, {
         widget: n,
         children: (0, r.jsx)(Z, {
           component: R
@@ -564,7 +564,7 @@ let Q = Object.assign(function(e) {
       })
     }), (0, r.jsxs)("div", {
       className: T.footer,
-      children: [null != h || S ? null : (0, r.jsxs)("div", {
+      children: [null != y || S ? null : (0, r.jsxs)("div", {
         className: T.stillSyncing,
         children: [(0, r.jsx)(s.wGF, {
           size: "xxs"
@@ -573,7 +573,7 @@ let Q = Object.assign(function(e) {
           color: "text-secondary",
           children: E.intl.string(E.t.z5K4Uv)
         })]
-      }), S ? (0, r.jsx)(Y, {
+      }), S ? (0, r.jsx)(X, {
         heading: E.intl.string(E.t.UDPRLO),
         content: E.intl.string(E.t["OW/2al"]),
         buttons: (0, r.jsx)(s.Button, {
@@ -584,5 +584,5 @@ let Q = Object.assign(function(e) {
     })]
   }))
 }, {
-  Cta: Y
+  Cta: X
 })

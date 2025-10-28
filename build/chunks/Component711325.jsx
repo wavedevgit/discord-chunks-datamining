@@ -1,4 +1,4 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 32945 **/
 /** chunk id: 711325, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -15,7 +15,7 @@ function d(e) {
   let {
     selected: t,
     onSelect: n
-  } = e, d = (0, i.ZP)();
+  } = e, d = (0, l.ZP)();
   return (0, a.jsxs)("div", {
     className: c.picker,
     children: [(0, a.jsx)(r.Text, {
@@ -25,14 +25,14 @@ function d(e) {
       className: c.themes,
       children: o.vs.map(e => {
         let r = d !== s.BRd.LIGHT ? e.darkBackground : e.lightBackground,
-          i = t === e.name;
-        return (0, a.jsx)(l.S4, {
+          l = t === e.name;
+        return (0, a.jsx)(i.S4, {
           onSelect: () => n(e),
           style: {
             background: r
           },
           name: e.name,
-          isSelected: i
+          isSelected: l
         }, e.name)
       })
     })]

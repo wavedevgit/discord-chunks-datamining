@@ -1,4 +1,4 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 32945 **/
 /** chunk id: 963056, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => o
@@ -12,7 +12,7 @@ var Chunk13941 = require("./13941.js"),
 function o(e) {
   let {
     text: t
-  } = e, n = (0, i.Yzy)(t, {
+  } = e, n = (0, l.Yzy)(t, {
     from: {
       opacity: 0,
       transform: "translate3d(0, 107%, 0)"
@@ -27,9 +27,9 @@ function o(e) {
     }
   });
   return (0, a.jsx)("div", {
-    className: l.container,
+    className: i.container,
     children: n((e, t) => (0, a.jsx)(r.animated.div, {
-      className: l.animatedText,
+      className: i.animatedText,
       style: e,
       children: t
     }))

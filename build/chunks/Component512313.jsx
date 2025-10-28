@@ -1,4 +1,4 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 32945 **/
 /** chunk id: 512313, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -17,17 +17,17 @@ function m(e) {
   var t;
   let {
     setting: n,
-    depth: i,
-    highlight: l
+    depth: l,
+    highlight: i
   } = e, o = null == (t = r.useContext(h)) ? true : t.get(n), s = null;
   return null != o && o.length > 0 && (s = o.sort((e, t) => e.localeCompare(t)).map(e => (0, a.jsx)(m, {
     setting: e,
-    depth: i + 1,
-    highlight: l
+    depth: l + 1,
+    highlight: i
   }, e))), (0, a.jsx)(c.r, {
     title: n,
-    initExpanded: i <= 2,
-    highlight: l,
+    initExpanded: l <= 2,
+    highlight: i,
     children: s
   })
 }
@@ -36,14 +36,14 @@ function p(e) {
   let {
     setting: t,
     depth: n
-  } = e, r = (0, o.Lk)(t) && (t.type === o.Jq.SIDEBAR_ITEM && t.layout.some(e => null == e ? true : e.layout.some(e => null != e.render)) || t.type === o.Jq.PANEL && t.layout.some(e => null != e.render) || t.type === o.Jq.PANE && null != t.render), i = null;
+  } = e, r = (0, o.Lk)(t) && (t.type === o.Jq.SIDEBAR_ITEM && t.layout.some(e => null == e ? true : e.layout.some(e => null != e.render)) || t.type === o.Jq.PANEL && t.layout.some(e => null != e.render) || t.type === o.Jq.PANE && null != t.render), l = null;
   if ((0, o.Lk)(t)) {
-    var l, s;
-    0 === t.layout.length && (null == (s = t.parent) || null == (l = s.parent) ? true : l.legacySearchKey) != null ? i = (0, a.jsx)(m, {
+    var i, s;
+    0 === t.layout.length && (null == (s = t.parent) || null == (i = s.parent) ? true : i.legacySearchKey) != null ? l = (0, a.jsx)(m, {
       setting: t.parent.parent.legacySearchKey,
       depth: n + 1,
       highlight: true
-    }) : t.layout.length > 0 && (i = t.layout.map(e => (0, a.jsx)(p, {
+    }) : t.layout.length > 0 && (l = t.layout.map(e => (0, a.jsx)(p, {
       setting: e,
       depth: n + 1
     }, e.key)))
@@ -52,7 +52,7 @@ function p(e) {
     title: t.key,
     initExpanded: n <= 2,
     highlight: r,
-    children: i
+    children: l
   })
 }
 let h = Chunk647438.createContext(null);

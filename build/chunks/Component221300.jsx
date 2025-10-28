@@ -18,14 +18,14 @@ function d(e) {
     item: t,
     profileOwner: r,
     isHighlighted: d,
-    surface: f = o.Y.PROFILE_MODAL
-  } = e, m = t.collectiblesItem;
-  switch (m.type) {
+    surface: f = c.Y.PROFILE_MODAL
+  } = e, p = t.collectiblesItem;
+  switch (p.type) {
     case i.Z.PROFILE_EFFECT:
       return (0, n.jsx)("div", {
         className: u.profileEffectPreview,
-        children: (0, n.jsx)(c.Z, {
-          skuId: m.skuId,
+        children: (0, n.jsx)(o.Z, {
+          skuId: p.skuId,
           isHighlighted: d,
           isPurchased: false,
           removeSetHeight: true
@@ -34,12 +34,12 @@ function d(e) {
     case i.Z.AVATAR_DECORATION:
       return (0, n.jsx)("div", {
         className: u.avatarDecorationPreview,
-        children: (0, n.jsx)(s.R, {
-          item: m,
+        children: (0, n.jsx)(l.R, {
+          item: p,
           user: r,
           isHighlighted: d,
           isPurchased: false,
-          avatarSize: l.EFr.SIZE_80
+          avatarSize: s.EFr.SIZE_80
         })
       });
     case i.Z.NAMEPLATE:
@@ -49,26 +49,26 @@ function d(e) {
           className: u.nameplateTopLeft,
           children: (0, n.jsx)(a.Z, {
             user: r,
-            nameplate: m,
+            nameplate: p,
             isHighlighted: d,
             showPlaceholderUser: true,
             showStatus: true,
             isPurchased: false,
             nameplatePreviewSize: "default",
-            width: f === o.Y.GIFTING_FLOW ? 136 : 200
+            width: f === c.Y.GIFTING_FLOW ? 136 : 200
           })
         }), (0, n.jsx)("div", {
           className: u.nameplateBottomRight,
           "aria-hidden": true,
           children: (0, n.jsx)(a.Z, {
             user: r,
-            nameplate: m,
+            nameplate: p,
             isHighlighted: d,
             showPlaceholderUser: true,
             showStatus: true,
             isPurchased: false,
             nameplatePreviewSize: "default",
-            width: f === o.Y.GIFTING_FLOW ? 136 : 200
+            width: f === c.Y.GIFTING_FLOW ? 136 : 200
           })
         })]
       });

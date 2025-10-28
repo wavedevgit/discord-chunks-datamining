@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   l: () => p
-}), require("./388685.js");
+});
 var Chunk314897 = require("./314897.js"),
   Chunk131951 = require("./131951.js"),
   Chunk19780 = require("./19780.js"),
@@ -42,10 +42,7 @@ let f = 10,
       let t = module.getMediaEngineConnectionId();
       if (null == exports || !Chunk131951.Z.isVideoEnabled()) return null;
       let n = Chunk19780.Z.getLastNonZeroRemoteVideoSinkWantsTime();
-      if (null != require && performance.now() - require < _ || Object.entries(module.getRemoteVideoSinkWants()).every(e => {
-          let [t, n] = e;
-          return "any" === t || 0 === n
-        })) return null;
+      if (null != require && performance.now() - require < _ || !module.hasActiveRemoteWants()) return null;
       let o = (0, Chunk150457.hj)(exports, Chunk314897.default.getId());
       return null == Chunk70956 ? null : Chunk70956.short.frameRate < f || Chunk70956.long.frameRate < f ? [d({
         type: Chunk458725.u.CAMERA_SEND_LOW_FPS,

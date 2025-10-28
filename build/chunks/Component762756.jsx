@@ -1,4 +1,4 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 32945 **/
 /** chunk id: 762756, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -24,8 +24,8 @@ function f(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let g = Chunk63063.Z.getArticleURL(Chunk981631.BhN.VERIFICATION_FAQ);
-class b extends(a = Chunk647438.PureComponent) {
+let b = Chunk63063.Z.getArticleURL(Chunk981631.BhN.VERIFICATION_FAQ);
+class g extends(a = Chunk647438.PureComponent) {
   renderFields() {
     let {
       types: e,
@@ -78,7 +78,7 @@ class b extends(a = Chunk647438.PureComponent) {
             }), (0, Chunk951288.jsx)(Chunk481060.Text, {
               variant: "text-md/normal",
               children: Chunk388032.intl.format(Chunk388032.t["0rqMV5"], {
-                helpCenterURL: g
+                helpCenterURL: b
               })
             })]
           })]
@@ -132,9 +132,9 @@ class b extends(a = Chunk647438.PureComponent) {
     })
   }
 }
-f(b, "defaultProps", {
+f(g, "defaultProps", {
   types: [Chunk981631.PUi.CAPTCHA],
   onCaptchaVerify: Chunk981631.dG4,
   onLogout: Chunk981631.dG4
 });
-let v = b
+let v = g

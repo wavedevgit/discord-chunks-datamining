@@ -1,4 +1,4 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 32945 **/
 /** chunk id: 763577, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -27,12 +27,12 @@ function c() {
 function d(e) {
   let {
     riveName: t
-  } = e, n = i[t].riveSrc, c = r.useRef(null), d = (0, s.o8M)(n);
-  return (0, a.jsxs)(l.Kqy, {
+  } = e, n = l[t].riveSrc, c = r.useRef(null), d = (0, s.o8M)(n);
+  return (0, a.jsxs)(i.Kqy, {
     gap: 8,
     children: [(0, a.jsx)("label", {
       children: t
-    }), (0, a.jsxs)(l.Kqy, {
+    }), (0, a.jsxs)(i.Kqy, {
       justify: "space-between",
       direction: "horizontal",
       align: "center",

@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk620662 = require("./620662.js"),
   Chunk513202 = require("./513202.jsx"),
   Chunk906732 = require("./906732.jsx"),
-  Chunk20471 = require("./20471.js"),
+  Chunk535139 = require("./535139.js"),
   Chunk522651 = require("./522651.js"),
   Chunk311352 = require("./311352.jsx"),
   Chunk48131 = require("./48131.js"),
@@ -144,8 +144,8 @@ let Z = Chunk647438.memo(function(e) {
         startAuthorization: et,
         hasAlreadyLinked: en,
         connectionApp: er
-      } = (0, g.FG)(F, {
-        allowedFlows: [g.ro.RPC]
+      } = (0, g.F)(F, {
+        allowedFlows: [g.r.RPC]
       }),
       ei = C.Z.useConfig({
         location: "ActivityActions"

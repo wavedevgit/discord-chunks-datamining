@@ -1,4 +1,4 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 32945 **/
 /** chunk id: 226625, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   s = require.n(Chunk392711),
   Chunk13941 = require("./13941.js"),
@@ -24,30 +24,30 @@ function x(e) {
   let {
     className: t,
     pageMultiplier: n
-  } = e, i = (0, d.e7)([m.Z], () => m.Z.useReducedMotion), [o, x] = r.useState({
+  } = e, l = (0, d.e7)([m.Z], () => m.Z.useReducedMotion), [o, x] = r.useState({
     x: 0,
     y: 0
   }), f = r.useMemo(() => s().throttle(e => {
-    if (!i) x({
+    if (!l) x({
       x: (window.innerWidth - e.pageX * n) / 90,
       y: (window.innerHeight - e.pageY * n) / 90
     })
-  }, 20), [n, i]);
+  }, 20), [n, l]);
   r.useEffect(() => (window.addEventListener("mousemove", f), () => window.removeEventListener("mousemove", f)), [f]);
-  let [g, b] = (0, u.q_F)(() => ({
+  let [b, g] = (0, u.q_F)(() => ({
     x: 0,
     y: 0,
     config: h
   }));
   return r.useEffect(() => {
-    b({
+    g({
       x: o.x,
       y: o.y
     })
-  }, [o.x, o.y, b]), (0, a.jsx)(c.animated.div, {
+  }, [o.x, o.y, g]), (0, a.jsx)(c.animated.div, {
     style: {
-      transform: (0, c.to)([g.x, g.y], (e, t) => "translate3d(".concat(e, "px, ").concat(t, "px, 0)"))
+      transform: (0, c.to)([b.x, b.y], (e, t) => "translate3d(".concat(e, "px, ").concat(t, "px, 0)"))
     },
-    className: l()(p.background, t)
+    className: i()(p.background, t)
   })
 }

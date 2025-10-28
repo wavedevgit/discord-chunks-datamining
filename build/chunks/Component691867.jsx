@@ -1,4 +1,4 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 32945 **/
 /** chunk id: 691867, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -16,12 +16,12 @@ function d() {
     t = Chunk647438.useMemo(() => module.map(e => {
       let [t, n, r] = e;
       return (0, a.jsxs)(a.Fragment, {
-        children: [(0, a.jsx)(l.rsf, {
+        children: [(0, a.jsx)(i.rsf, {
           label: r,
           description: t,
           checked: n,
           onChange: e => (0, o.Z)(t, e)
-        }, t), (0, a.jsx)(l.izJ, {
+        }, t), (0, a.jsx)(i.izJ, {
           gap: 16
         })]
       })

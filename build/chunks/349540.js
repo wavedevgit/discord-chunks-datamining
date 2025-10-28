@@ -23,21 +23,21 @@ function u(e, t, n) {
 }
 class d extends Chunk147913.Z {
   async onPostConnectionOpen() {
-    this.maybeFetchActiveOutboundPromotions(), await this.maybeFetchBogoPromotion()
+    this.maybeFetchActivePromotions(), await this.maybeFetchBogoPromotion()
   }
-  maybeFetchActiveOutboundPromotions() {
+  maybeFetchActivePromotions() {
     let e = Chunk594174.default.getCurrentUser(),
       t = Chunk74538.ZP.isPremiumExactly(module, Chunk474936.PremiumTypes.TIER_2),
       n = (0, Chunk312973.$)({
-        location: "maybeFetchActiveOutboundPromotions"
+        location: "maybeFetchActivePromotions"
       }),
       r = Chunk163684.g.getCurrentConfig({
-        location: "maybeFetchActiveOutboundPromotions"
+        location: "maybeFetchActivePromotions"
       }, {
         autoTrackExposure: false,
         disable: exports
       }).enabled;
-    (require || exports || Chunk147913) && (0, Chunk748770.vM)()
+    (require || exports || Chunk147913) && (0, Chunk748770.Br)()
   }
   constructor(...e) {
     super(...e), u(this, "actions", {

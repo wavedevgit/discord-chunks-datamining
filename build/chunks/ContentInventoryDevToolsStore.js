@@ -1,13 +1,13 @@
-/** Chunk was on 98025 **/
+/** Chunk was on 88295 **/
 /** chunk id: 550532, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
 });
-var r, i, Chunk442837 = require("./442837.js"),
+var r, l, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk780106 = require("./780106.js");
 let s = "None";
-class c extends(i = Chunk442837.ZP.Store) {
+class c extends(l = Chunk442837.ZP.Store) {
   getFakeGameToShow() {
     return s
   }

@@ -1,4 +1,4 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 32945 **/
 /** chunk id: 200178, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk570140 = require("./570140.js"),
@@ -23,7 +23,7 @@ function p() {
       value: a,
       idx: t
     }
-  }), [], Chunk442837.pF), i = Chunk647438.useMemo(() => 0 === module.length ? require : require.filter(t => {
+  }), [], Chunk442837.pF), l = Chunk647438.useMemo(() => 0 === module.length ? require : require.filter(t => {
     let {
       word: n
     } = t;
@@ -34,7 +34,7 @@ function p() {
     })
   }, []);
   return (0, Chunk951288.jsxs)("div", {
-    className: l()(Chunk451429.panel, Chunk603473.panel),
+    className: i()(Chunk451429.panel, Chunk603473.panel),
     children: [require.length > 0 && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsxs)(Chunk481060.Text, {
         variant: "text-md/semibold",
@@ -64,7 +64,7 @@ function p() {
           children: (0, Chunk951288.jsxs)("div", {
             className: Chunk603473.resultsTable,
             children: [(0, Chunk951288.jsxs)("div", {
-              className: l()(Chunk451429.tableHeader, Chunk603473.tableHeader),
+              className: i()(Chunk451429.tableHeader, Chunk603473.tableHeader),
               children: [(0, Chunk951288.jsx)("div", {
                 className: Chunk603473.indexColumn,
                 children: "Index"
@@ -82,7 +82,7 @@ function p() {
                 idx: r
               } = e;
               return (0, a.jsxs)("div", {
-                className: l()(u.tableRow, m.tableRow),
+                className: i()(u.tableRow, m.tableRow),
                 children: [(0, a.jsx)("div", {
                   className: m.indexColumn,
                   children: (0, a.jsx)(s.Text, {

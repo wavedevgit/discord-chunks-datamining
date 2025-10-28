@@ -1,11 +1,11 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 32945 **/
 /** chunk id: 905551, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   EY: () => _,
   NE: () => j,
-  UM: () => b,
+  UM: () => g,
   WX: () => S,
-  WY: () => g,
+  WY: () => b,
   _k: () => C,
   ce: () => h,
   hz: () => v,
@@ -35,13 +35,13 @@ function h(e) {
       catalog: s.j.reduce((e, t) => (e[t.id] = t, e), {})
     })
   }, 5e3);
-  let l = null != (n = null == (t = i.default.getCurrentUser()) ? true : t.isStaff()) && n;
+  let i = null != (n = null == (t = l.default.getCurrentUser()) ? true : t.isStaff()) && n;
   return (0, o.Kb)({
     url: p.ANM.COLLECTION_PUBLISHED_LISTINGS_SKU(m.SW),
     query: {
       guild_id: e,
-      include_unpublished_products: l,
-      include_unpublished_collection: l
+      include_unpublished_products: i,
+      include_unpublished_collection: i
     },
     oldFormErrors: true,
     rejectWithError: false,
@@ -90,8 +90,8 @@ function f(e, t) {
     retries: 3
   }).then(n => {
     if (null != n.body) {
-      var a, i, l, o;
-      let s = null != (o = null == (l = n.body.tenant_metadata) || null == (i = l.guild_monetization) || null == (a = i.game_server) ? true : a.instructions.pc) ? o : [];
+      var a, l, i, o;
+      let s = null != (o = null == (i = n.body.tenant_metadata) || null == (l = i.guild_monetization) || null == (a = l.game_server) ? true : a.instructions.pc) ? o : [];
       r.Z.dispatch({
         type: "GAME_SERVER_FETCH_GAME_INSTRUCTIONS_SUCCESS",
         guildId: e,
@@ -102,17 +102,17 @@ function f(e, t) {
   })
 }
 
-function g(e, t) {
+function b(e, t) {
   if (e) {
     var n;
-    l.default.track(p.rMx.GAME_SERVER_HOSTING_THIRD_PARTY_CONSENT_ACCEPTED, {
-      user_id: null == (n = i.default.getCurrentUser()) ? true : n.id,
+    i.default.track(p.rMx.GAME_SERVER_HOSTING_THIRD_PARTY_CONSENT_ACCEPTED, {
+      user_id: null == (n = l.default.getCurrentUser()) ? true : n.id,
       provider: t
     })
   }
 }
 
-function b() {
+function g() {
   Chunk570140.Z.dispatch({
     type: "GAME_SERVER_REGION_PING_STATE_RESET"
   })

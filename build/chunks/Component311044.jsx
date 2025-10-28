@@ -1,4 +1,4 @@
-/** Chunk was on 63076 **/
+/** Chunk was on 72651 **/
 /** chunk id: 311044, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -22,9 +22,9 @@ function b(e) {
     user: t,
     guildId: n,
     channelId: b,
-    onClose: h
+    onClose: y
   } = e, {
-    analyticsLocations: y
+    analyticsLocations: h
   } = (0, l.ZP)(), {
     context: v,
     trackUserProfileAction: O
@@ -60,7 +60,7 @@ function b(e) {
         channelId: b,
         onSelect: () => {
           var e, t;
-          null == h || h(), O({
+          null == y || y(), O({
             action: "PRESS_MUTUAL_FRIEND"
           }), (0, d.openUserProfileModal)((e = function(e) {
             for (var t = 1; t < arguments.length; t++) {
@@ -81,7 +81,7 @@ function b(e) {
             return e
           }({}, v), t = t = {
             userId: i.id,
-            sourceAnalyticsLocations: y
+            sourceAnalyticsLocations: h
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {

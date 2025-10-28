@@ -1,4 +1,4 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 32945 **/
 /** chunk id: 903502, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -28,7 +28,7 @@ let p = [{
 }];
 
 function h() {
-  let [e, t] = Chunk647438.useState(null), [n, h] = Chunk647438.useState(0), [x, f] = Chunk647438.useState(1e3), [g, b] = Chunk647438.useState(0), v = (0, Chunk442837.e7)([Chunk115470.Z], () => {
+  let [e, t] = Chunk647438.useState(null), [n, h] = Chunk647438.useState(0), [x, f] = Chunk647438.useState(1e3), [b, g] = Chunk647438.useState(0), v = (0, Chunk442837.e7)([Chunk115470.Z], () => {
     var t;
     return null === module ? null : null != (t = Chunk115470.Z.getFeedbackConfig(Chunk531578.nw[module])) ? exports : Chunk178635.R[Chunk531578.nw[module]]
   }), j = Object.entries(Chunk531578.nw), _ = j.slice(j.length / 2).map(e => {
@@ -37,7 +37,7 @@ function h() {
       label: t,
       value: t
     }
-  }), y = Chunk647438.useMemo(() => null != module && g >= 0 && g <= 100 && require >= 0, [module, g, require]);
+  }), y = Chunk647438.useMemo(() => null != module && b >= 0 && b <= 100 && require >= 0, [module, b, require]);
   return (0, Chunk951288.jsx)("div", {
     className: Chunk584314.container,
     children: (0, Chunk951288.jsxs)(Chunk481060.Kqy, {
@@ -97,9 +97,9 @@ function h() {
           helperText: "As a percentage",
           min: 0,
           max: 100,
-          value: g.toString(),
+          value: b.toString(),
           type: "number",
-          onChange: e => b(parseFloat(e))
+          onChange: e => g(parseFloat(e))
         })
       }), (0, Chunk951288.jsxs)(Chunk481060.ButtonGroup, {
         children: [(0, Chunk951288.jsx)(Chunk481060.Button, {
@@ -117,7 +117,7 @@ function h() {
             type: "FEEDBACK_OVERRIDE_SET",
             feedbackType: v.feedbackType,
             cooldown: require * x,
-            chance: g / 100
+            chance: b / 100
           })),
           disabled: !y
         })]
@@ -129,7 +129,7 @@ function h() {
         variant: "text-sm/normal",
         color: "text-danger",
         children: "Error: cooldown needs to be a number greater than 0"
-      }), !(g >= 0 && g <= 100) && (0, Chunk951288.jsx)(Chunk481060.Text, {
+      }), !(b >= 0 && b <= 100) && (0, Chunk951288.jsx)(Chunk481060.Text, {
         variant: "text-sm/normal",
         color: "text-danger",
         children: "Error: chance needs to be a number between 0 and 100"

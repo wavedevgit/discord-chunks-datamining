@@ -1,4 +1,4 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 32945 **/
 /** chunk id: 761911, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   D: () => o
@@ -14,10 +14,10 @@ let o = e => {
     children: n,
     elementOptions: o
   } = e, s = Date.now();
-  return (0, a.jsx)(l.k, {
+  return (0, a.jsx)(i.k, {
     label: t,
     children: (0, a.jsx)(r.Elements, {
-      stripe: (0, i.d2)(),
+      stripe: (0, l.d2)(),
       options: function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},

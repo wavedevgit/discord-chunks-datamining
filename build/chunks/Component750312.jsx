@@ -1,4 +1,4 @@
-/** Chunk was on 63076 **/
+/** Chunk was on 72651 **/
 /** chunk id: 750312, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -25,7 +25,7 @@ function v(e) {
     userId: t,
     widget: n,
     children: a,
-    disableInteraction: h,
+    disableInteraction: y,
     className: v,
     index: j,
     trailingContent: x,
@@ -46,9 +46,9 @@ function v(e) {
   } = (0, d.KZ)(), A = (0, g.Z)({
     widgetType: n.type,
     onAction: N
-  }), Z = E && null != j && !h, {
+  }), Z = E && null != j && !y, {
     isDragging: R,
-    dragSourcePosition: B
+    dragSourcePosition: G
   } = (0, f.q)({
     dropRef: T,
     dragRef: k,
@@ -57,25 +57,25 @@ function v(e) {
     index: j,
     disableInteraction: !Z,
     onReorder: () => D(n.type)
-  }), [G, L] = i.useState(false);
+  }), [B, L] = i.useState(false);
   return (0, r.jsx)(O, {
     ref: T,
     disableInteraction: !Z,
     onMouseEnter: () => L(true),
     onMouseLeave: () => L(false),
-    dragSourcePosition: B,
+    dragSourcePosition: G,
     index: null != j ? j : 0,
     children: (0, r.jsxs)("section", {
       ref: A,
-      className: l()(y.container, v, {
-        [y.isDragging]: R
+      className: l()(h.container, v, {
+        [h.isDragging]: R
       }),
       "aria-labelledby": S,
       children: [Z && (0, r.jsx)(p.Z, {
         buttonRef: k,
         widget: n,
-        className: l()(y.dragHandleButton, {
-          [y.opacity]: G || R
+        className: l()(h.dragHandleButton, {
+          [h.opacity]: B || R
         }),
         additionalMenuItems: w
       }), (0, r.jsx)(m.Z, {
@@ -85,7 +85,7 @@ function v(e) {
         subtitle: P,
         actionButtons: I,
         widget: n,
-        disableInteraction: h
+        disableInteraction: y
       }), (0, r.jsxs)(o.y5t, {
         children: [a, x]
       })]
@@ -104,13 +104,13 @@ let O = e => {
   } = e, u = null != c, d = u && s < c, f = u && s > c;
   return i ? n : (0, r.jsx)("div", {
     ref: t,
-    className: l()(y.dragAndDropHitbox, {
-      [y.dropIndicatorBefore]: d,
-      [y.dropIndicatorAfter]: f
+    className: l()(h.dragAndDropHitbox, {
+      [h.dropIndicatorBefore]: d,
+      [h.dropIndicatorAfter]: f
     }),
     onMouseEnter: a,
     onMouseLeave: o,
-    "aria-label": h.intl.formatToPlainString(h.t.YLczh4, {
+    "aria-label": y.intl.formatToPlainString(y.t.YLczh4, {
       positionNumber: s + 1
     }),
     children: n

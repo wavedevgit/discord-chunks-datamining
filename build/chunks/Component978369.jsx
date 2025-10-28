@@ -1,4 +1,4 @@
-/** Chunk was on 63076 **/
+/** Chunk was on 72651 **/
 /** chunk id: 978369, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => f
@@ -65,7 +65,7 @@ function f(e) {
     ref: g
   } = e, p = (0, i.useRef)(null), {
     trackUserProfileEditAction: m
-  } = (0, l.KZ)(), b = (0, i.useMemo)(() => null != t ? t : [], [t]), h = (0, i.useCallback)(function(e) {
+  } = (0, l.KZ)(), b = (0, i.useMemo)(() => null != t ? t : [], [t]), y = (0, i.useCallback)(function(e) {
     let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
       r = new Set(b);
     if (t) {
@@ -87,7 +87,7 @@ function f(e) {
       gameId: f
     }));
     (0, o.n$)(n, f, Array.from(r))
-  }, [b, m, n, f]), y = (0, i.useCallback)(e => {
+  }, [b, m, n, f]), h = (0, i.useCallback)(e => {
     let t = new Set(b);
     e.forEach(e => {
       t.delete(e)
@@ -113,8 +113,8 @@ function f(e) {
       } = e;
       return (0, r.jsx)(d, {
         currentTags: b,
-        onTagSelect: h,
-        onNoneSelect: y,
+        onTagSelect: y,
+        onNoneSelect: h,
         onClose: t
       })
     },

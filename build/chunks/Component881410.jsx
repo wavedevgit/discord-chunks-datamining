@@ -1,8 +1,8 @@
-/** Chunk was on 63076 **/
+/** Chunk was on 72651 **/
 /** chunk id: 881410, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   wl: () => v,
-  yX: () => y
+  yX: () => h
 }), require("./388685.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -64,12 +64,12 @@ function b(e, t) {
   return i
 }
 
-function h(e) {
+function y(e) {
   var {
     widgetType: t,
     widget: n,
-    children: h
-  } = e, y = b(e, ["widgetType", "widget", "children"]);
+    children: y
+  } = e, h = b(e, ["widgetType", "widget", "children"]);
   let [v] = (0, o.ynZ)(), [O, j] = i.useState(""), x = i.useRef(""), _ = i.useMemo(() => new Set(n.games.map(e => e.applicationId)), [n.games]), {
     trackUserProfileEditAction: P
   } = (0, u.KZ)(), I = (0, l.e7)([s.default], () => ["en-US", "en-GB"].includes(s.default.locale)), w = i.useCallback(e => {
@@ -95,7 +95,7 @@ function h(e) {
   }, [O, P, t, T]), D = i.useMemo(() => "" !== O.trim() && I ? f.intl.format(f.t.jhiTsN, {
     searchTerm: O.trim()
   }) : f.intl.string(f.t.QwSXv8), [O, I]);
-  return (0, r.jsx)(o.yRy, m(p({}, y), {
+  return (0, r.jsx)(o.yRy, m(p({}, h), {
     onRequestOpen: () => {
       P({
         action: "PRESS_ADD_GAME",
@@ -140,16 +140,16 @@ function h(e) {
         }, String(e.value)))
       })
     },
-    children: e => h(e)
+    children: e => y(e)
   }))
 }
 
-function y(e) {
+function h(e) {
   var {
     disabled: t
   } = e, n = b(e, ["disabled"]);
   let a = i.useRef(null);
-  return (0, r.jsx)(h, m(p({
+  return (0, r.jsx)(y, m(p({
     targetElementRef: a,
     position: "bottom",
     align: "center"
@@ -167,7 +167,7 @@ function y(e) {
 
 function v(e) {
   let t = i.useRef(null);
-  return (0, r.jsx)(h, m(p({
+  return (0, r.jsx)(y, m(p({
     targetElementRef: t,
     position: "right",
     align: "top"

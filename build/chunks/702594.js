@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Hl: () => h,
-  gj: () => b
+  gj: () => y
 }), require("./388685.js");
 var Chunk647438 = require("./647438.js"),
   Chunk561448 = require("./561448.js"),
@@ -40,29 +40,30 @@ let s = [Chunk409813.h8.PAYMENT_TYPE],
     SHARED_IDEAL_STEPS: [Chunk409813.h8.PAYMENT_ELEMENT, Chunk409813.h8.ADDRESS],
     SHARED_TYPE_AND_ADDRESS_STEPS: [Chunk409813.h8.PAYMENT_ELEMENT, Chunk409813.h8.ADDRESS]
   },
-  E = (e, t) => {
+  E = e => null == e || e === o.He.UNKNOWN || (0, i.qH)(e),
+  b = (e, t) => {
     let {
       prependSteps: n,
       appendSteps: r,
-      paymentElementsEnabled: a
+      paymentElementsEnabled: i
     } = t;
     return e.map(e => {
       let {
         sharedStepsKey: t,
-        methodType: o
+        methodType: a
       } = e;
       return {
-        steps: [...n, ...a && (null == o || (0, i.qH)(o)) ? g[t] : m[t], ...r],
-        methodType: o
+        steps: [...n, ...i && E(a) ? g[t] : m[t], ...r],
+        methodType: a
       }
     })
   },
-  b = e => {
+  y = e => {
     let {
       prependSteps: t,
       appendSteps: n,
       paymentElementsEnabled: i
-    } = e, [a, s, l, c, u, d, f, _, p, h] = (0, r.useMemo)(() => E([{
+    } = e, [a, s, l, c, u, d, f, _, p, h] = (0, r.useMemo)(() => b([{
       sharedStepsKey: "SHARED_CREDIT_CARD_STEPS",
       methodType: o.He.CARD
     }, {

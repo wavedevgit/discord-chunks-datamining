@@ -1,7 +1,7 @@
 /** Chunk was on 39380 **/
 /** chunk id: 299560, original params: e,l,a (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => I
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk229870 = require("./229870.js");
-let I = {
+let N = {
   [Chunk296009.l.FAVORITE_GAMES]: {
     placeholder: () => ({
       variant: "details",
@@ -62,31 +62,31 @@ let I = {
     },
     getAriaLabel: e => {
       var l, a;
-      return g.intl.formatToPlainString(g.t.KfGahB, {
+      return A.intl.formatToPlainString(A.t.KfGahB, {
         applicationName: null != (a = null == (l = o.Z.getApplication(e.applicationId)) ? true : l.name) ? a : ""
       })
     }
   }
 };
 
-function j(e) {
+function I(e) {
   let l, {
       widgetType: a,
       onAddWidget: t,
       size: o = "default",
       loading: u = false,
-      trackUserProfileEditAction: g
+      trackUserProfileEditAction: A
     } = e,
     {
-      placeholder: j,
-      getAriaLabel: T,
-      icon: L
-    } = I[a],
+      placeholder: I,
+      getAriaLabel: L,
+      icon: T
+    } = N[a],
     _ = "small" === o,
     {
-      config: O
-    } = (0, E.G)(),
-    R = n.useMemo(() => {
+      config: b
+    } = (0, x.G)(),
+    O = n.useMemo(() => {
       switch (a) {
         case s.l.CURRENT_GAMES:
         case s.l.FAVORITE_GAMES:
@@ -97,45 +97,45 @@ function j(e) {
             games: []
           });
         case s.l.APPLICATION:
-          let e = null == O ? true : O.application_id;
+          let e = null == b ? true : b.application_id;
           if (null == e) return null;
           return new p.q({
             type: a,
             applicationId: e
           })
       }
-    }, [a, null == O ? true : O.application_id]),
-    b = n.useCallback(() => {
-      u || null == R || ((0, v.qH)(a, R), g({
+    }, [a, null == b ? true : b.application_id]),
+    R = n.useCallback(() => {
+      u || null == O || ((0, v.qH)(a, O), A({
         action: "WIDGET_ADDED",
         widgetEdited: a
-      }), (0, f.L$)(x.qb.WIDGET_ADDED), null == t || t())
-    }, [u, a, R, g, t]);
-  return (null != R && null != L && (l = L(R)), null == R) ? null : (0, i.jsxs)("div", {
-    className: N.addButtonContainer,
+      }), (0, f.L$)(j.qb.WIDGET_ADDED), null == t || t())
+    }, [u, a, O, A, t]);
+  return (null != O && null != T && (l = T(O)), null == O) ? null : (0, i.jsxs)("div", {
+    className: g.addButtonContainer,
     children: [(0, i.jsxs)(c.P3F, {
-      className: r()(N.addButtonContent, _ && N.sizeSmall, u && N.loading),
-      onClick: b,
-      "aria-label": T(R),
+      className: r()(g.addButtonContent, _ && g.sizeSmall, u && g.loading),
+      onClick: R,
+      "aria-label": L(O),
       "aria-busy": u,
       children: [(() => {
-        if (null == R) return null;
-        let e = j(R);
+        if (null == O) return null;
+        let e = I(O);
         switch (e.variant) {
           case "details":
-            return (0, i.jsx)(A.i, {
-              className: N.placeholderPadding,
+            return (0, i.jsx)(h.i, {
+              className: g.placeholderPadding,
               applicationId: e.applicationId,
               size: o
             });
           case "grid":
-            return (0, i.jsx)(A.c, {
-              className: N.placeholderPadding,
+            return (0, i.jsx)(h.c, {
+              className: g.placeholderPadding,
               applicationIds: e.applicationIds,
               size: o
             });
           case "application-widget":
-            return (0, i.jsx)(h.Z, {
+            return (0, i.jsx)(E.Z, {
               applicationId: e.applicationId,
               size: o
             });
@@ -143,30 +143,30 @@ function j(e) {
             return (0, d.vE)(e)
         }
       })(), (0, i.jsxs)("div", {
-        className: N.overlay,
+        className: g.overlay,
         children: [(0, i.jsx)(c.oFk, {
           size: "md",
           color: "currentColor",
-          className: N.addButton
+          className: g.addButton
         }), (0, i.jsxs)("div", {
-          className: N.title,
+          className: g.title,
           children: [(0, i.jsx)(c.Text, {
             variant: "text-md/medium",
             color: "header-primary",
-            children: (0, v.mR)(R)
+            children: (0, v.mR)(O)
           }), null != l ? (0, i.jsx)("img", {
             src: l,
             alt: "",
             width: 16,
             height: 16,
-            className: N.icon
+            className: g.icon
           }) : null]
         })]
       })]
     }), (() => {
-      if (null == R) return null;
-      let e = j(R);
-      return "application-widget" === e.variant ? (0, i.jsx)(h.T, {
+      if (null == O) return null;
+      let e = I(O);
+      return "application-widget" === e.variant ? (0, i.jsx)(E.T, {
         applicationId: e.applicationId,
         size: o
       }) : null

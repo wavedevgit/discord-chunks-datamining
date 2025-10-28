@@ -1,4 +1,4 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 32945 **/
 /** chunk id: 206878, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   g: () => v
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk647438 = require("./647438.js"),
   Chunk281598 = require("./281598.js");
 
-function i(e) {
+function l(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       a = Object.keys(n);
@@ -25,7 +25,7 @@ function i(e) {
   return e
 }
 
-function l(e, t) {
+function i(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -90,25 +90,25 @@ let o = new Set([Chunk281598.jE.HERO_BANNER_STATIC, Chunk281598.jE.HERO_LOGO, Ch
       addError: n
     } = e, a = /^[a-z0-9]+(_[a-z0-9]+)*(\.[a-z0-9]+)?$/, r = t.filter(e => !a.test(e));
     r.length > 0 && n("File names must be in lowercase snake case", r)
-  }, g = (e, t, n, a) => {
+  }, b = (e, t, n, a) => {
     let r = t.size,
-      i = r > 1e6 ? "".concat((r / 1e6).toFixed(2), "MB") : "".concat((r / 1e3).toFixed(2), "KB"),
-      l = "".concat(t.name, " - ").concat(i);
+      l = r > 1e6 ? "".concat((r / 1e6).toFixed(2), "MB") : "".concat((r / 1e3).toFixed(2), "KB"),
+      i = "".concat(t.name, " - ").concat(l);
     if (r > e.max) {
       let t = e.max > 1e6 ? "".concat(Math.round(e.max / 1e6), "MB") : "".concat(Math.round(e.max / 1e3), "KB");
-      n("Files exceed the recommended size limit - make sure they are optimized!", ["".concat(l, " (max: ").concat(t, ")")])
-    } else r > e.warn && a("Files are a tad chonky - are you sure they're optimized?", ["".concat(l)])
-  }, b = (e, t, n, a) => {
+      n("Files exceed the recommended size limit - make sure they are optimized!", ["".concat(i, " (max: ").concat(t, ")")])
+    } else r > e.warn && a("Files are a tad chonky - are you sure they're optimized?", ["".concat(i)])
+  }, g = (e, t, n, a) => {
     let r = h[e];
     if (null != r)
-      for (let e of t) e.name.endsWith(".txt") || g(r, e, n, a)
+      for (let e of t) e.name.endsWith(".txt") || b(r, e, n, a)
   }, v = () => {
     let [e, t] = Chunk647438.useState(false), [n, c] = Chunk647438.useState({}), [d, u] = Chunk647438.useState({}), m = Chunk647438.useCallback(function(e) {
       let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : [];
       u(n => {
         var a;
         let r = null != (a = n[e]) ? a : [];
-        return l(i({}, n), {
+        return i(l({}, n), {
           [e]: [...r, ...t]
         })
       })
@@ -117,7 +117,7 @@ let o = new Set([Chunk281598.jE.HERO_BANNER_STATIC, Chunk281598.jE.HERO_LOGO, Ch
       c(n => {
         var a;
         let r = null != (a = n[e]) ? a : [];
-        return l(i({}, n), {
+        return i(l({}, n), {
           [e]: [...r, ...t]
         })
       })
@@ -145,17 +145,17 @@ let o = new Set([Chunk281598.jE.HERO_BANNER_STATIC, Chunk281598.jE.HERO_LOGO, Ch
             } = e;
             for (let e of t.collectionFiles) {
               let t = (0, r.BU)(e),
-                i = null != t ? h[t] : null;
-              null != i && g(i, e, n, a)
+                l = null != t ? h[t] : null;
+              null != l && b(l, e, n, a)
             }
             f({
               names: t.collectionFiles.map(e => e.name),
               addError: n
             });
-            let i = new Set(t.collectionFiles.map(e => e.name)),
-              l = Array.from(o).filter(e => !i.has(e));
-            l.length > 0 && n("Missing required files", l);
-            let s = Object.values(r.jE).filter(e => !o.has(e)).filter(e => !i.has(e));
+            let l = new Set(t.collectionFiles.map(e => e.name)),
+              i = Array.from(o).filter(e => !l.has(e));
+            i.length > 0 && n("Missing required files", i);
+            let s = Object.values(r.jE).filter(e => !o.has(e)).filter(e => !l.has(e));
             s.length > 0 && a("Missing optional assets", s)
           })({
             files: n,
@@ -171,17 +171,17 @@ let o = new Set([Chunk281598.jE.HERO_BANNER_STATIC, Chunk281598.jE.HERO_LOGO, Ch
               names: Object.keys(t.profileEffectFilesMap),
               addError: n
             }), Object.entries(t.profileEffectFilesMap).forEach(e => {
-              let [t, i] = e, l = i.map(e => e.name);
+              let [t, l] = e, i = l.map(e => e.name);
               f({
-                names: l.map(e => {
+                names: i.map(e => {
                   let t = e.indexOf("-");
                   return e.substring(0, t > 0 ? t : e.length)
                 }),
                 addError: n
-              }), b(r.aB.PROFILE_EFFECT, i, n, a);
-              let o = s.filter(e => !l.some(t => t.startsWith(e) && t.endsWith(".png"))).map(e => "".concat(t, "/").concat(e));
-              o.length > 0 && n("Missing required PFX files with prefix", o), l.some(e => e.endsWith(".txt")) || n("PFX configs required - please include both exports! (exception: duplicate variant configs are optional)", [t]);
-              let c = l.filter(e => !s.some(t => e.startsWith(t)) && !e.endsWith(".txt")).map(e => "".concat(t, "/").concat(e));
+              }), g(r.aB.PROFILE_EFFECT, l, n, a);
+              let o = s.filter(e => !i.some(t => t.startsWith(e) && t.endsWith(".png"))).map(e => "".concat(t, "/").concat(e));
+              o.length > 0 && n("Missing required PFX files with prefix", o), i.some(e => e.endsWith(".txt")) || n("PFX configs required - please include both exports! (exception: duplicate variant configs are optional)", [t]);
+              let c = i.filter(e => !s.some(t => e.startsWith(t)) && !e.endsWith(".txt")).map(e => "".concat(t, "/").concat(e));
               c.length > 0 && a("Contains unrecognized files", c)
             })
           })({
@@ -197,7 +197,7 @@ let o = new Set([Chunk281598.jE.HERO_BANNER_STATIC, Chunk281598.jE.HERO_LOGO, Ch
             f({
               names: t.avatarDecorationFiles.map(e => e.name),
               addError: n
-            }), b(r.aB.AVATAR_DECORATION, t.avatarDecorationFiles, n, a)
+            }), g(r.aB.AVATAR_DECORATION, t.avatarDecorationFiles, n, a)
           })({
             files: n,
             addError: m,

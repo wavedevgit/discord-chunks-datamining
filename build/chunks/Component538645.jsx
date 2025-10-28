@@ -1,4 +1,4 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 32945 **/
 /** chunk id: 538645, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk772848 = require("./772848.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -17,35 +17,35 @@ var Chunk951288 = require("./951288.js"),
   Chunk373071 = require("./373071.js"),
   Chunk782691 = require("./782691.jsx"),
   Chunk558270 = require("./558270.js");
-let g = "Make sure you're only uploading text files!",
-  b = e => {
+let b = "Make sure you're only uploading text files!",
+  g = e => {
     var t, n, r;
     let {
-      effect: i,
-      onClick: l
+      effect: l,
+      onClick: i
     } = e, {
       deleteConfig: o
     } = (0, h.n6)();
     return (0, a.jsxs)(c.P3F, {
       className: f.previewCard,
       onClick: () => {
-        l(i)
+        i(l)
       },
       children: [(0, a.jsx)("div", {
         className: f.previewCardImage,
         style: {
-          backgroundImage: "url(".concat(null == (r = i.config) || null == (n = r.effects) || null == (t = n[0]) ? true : t.base64, ")")
+          backgroundImage: "url(".concat(null == (r = l.config) || null == (n = r.effects) || null == (t = n[0]) ? true : t.base64, ")")
         }
       }), (0, a.jsxs)("div", {
         className: f.previewCardFooter,
         children: [(0, a.jsx)(c.Text, {
           variant: "text-md/bold",
-          children: i.name
+          children: l.name
         }), (0, a.jsx)(c.Button, {
           variant: "critical-secondary",
           text: "Delete",
           onClick: e => {
-            e.preventDefault(), e.stopPropagation(), o(i.skuId)
+            e.preventDefault(), e.stopPropagation(), o(l.skuId)
           }
         })]
       })]
@@ -56,23 +56,23 @@ function v() {
   let {
     profileEffects: e,
     upsertConfig: t
-  } = (0, Chunk373071.n6)(), [n, i] = Chunk647438.useState(), v = Chunk647438.useRef(null), j = (0, Chunk442837.Wu)([Chunk25251.Z], () => Chunk25251.Z.getAllProfileEffects()), [_, y] = Chunk647438.useState("");
+  } = (0, Chunk373071.n6)(), [n, l] = Chunk647438.useState(), v = Chunk647438.useRef(null), j = (0, Chunk442837.Wu)([Chunk25251.Z], () => Chunk25251.Z.getAllProfileEffects()), [_, y] = Chunk647438.useState("");
   Chunk647438.useEffect(() => {
     (0, Chunk365943.t)(true)
   }, []);
   let C = Chunk647438.useMemo(() => "" === _ ? j : j.filter(e => {
       var t, n, a, r;
-      let i = _.toLowerCase(),
-        l = null != (a = null == (t = e.config.title) ? true : t.toLowerCase()) ? a : "",
+      let l = _.toLowerCase(),
+        i = null != (a = null == (t = e.config.title) ? true : t.toLowerCase()) ? a : "",
         o = null != (r = null == (n = e.config.description) ? true : n.toLowerCase()) ? r : "";
-      return l.includes(i) || o.includes(i)
+      return i.includes(l) || o.includes(l)
     }), [_, j]),
     S = Chunk647438.useCallback((e, n) => {
-      if (null == n || !e.type.startsWith("text/")) return (0, u.Eo)(g);
+      if (null == n || !e.type.startsWith("text/")) return (0, u.Eo)(b);
       let [a, r] = n.split(",");
-      if (!a.includes("text/plain")) return (0, u.Eo)(g);
-      let i = JSON.parse(atob(r));
-      i.skuId = (0, o.Z)(), t(i), (0, u.XA)("Profile Effect (maybe??) imported!")
+      if (!a.includes("text/plain")) return (0, u.Eo)(b);
+      let l = JSON.parse(atob(r));
+      l.skuId = (0, o.Z)(), t(l), (0, u.XA)("Profile Effect (maybe??) imported!")
     }, [exports]),
     E = Chunk647438.useCallback(e => {
       var t;
@@ -92,15 +92,15 @@ function v() {
           })
         }), (0, Chunk951288.jsx)("div", {
           className: Chunk558270.customEffectsGrid,
-          children: Object.values(module).map(e => (0, a.jsx)(b, {
+          children: Object.values(module).map(e => (0, a.jsx)(g, {
             effect: e,
             onClick: e => {
-              i(e)
+              l(e)
             }
           }, e.skuId))
         })]
       }), (0, Chunk951288.jsxs)("div", {
-        className: l()(Chunk558270.row, Chunk558270.end, Chunk558270.section),
+        className: i()(Chunk558270.row, Chunk558270.end, Chunk558270.section),
         children: [(0, Chunk951288.jsxs)("div", {
           className: Chunk558270.uploadButton,
           children: [(0, Chunk951288.jsx)(Chunk481060.Text, {
@@ -143,7 +143,7 @@ function v() {
               backgroundImage: "url(".concat(e.config.thumbnailPreviewSrc, ")")
             },
             onClick: () => {
-              i({
+              l({
                 skuId: e.skuId,
                 name: e.config.title,
                 readonly: true,

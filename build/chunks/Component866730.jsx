@@ -1,4 +1,4 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 32945 **/
 /** chunk id: 866730, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -6,7 +6,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk913527 = require("./913527.js"),
-  i = require.n(Chunk913527),
+  l = require.n(Chunk913527),
   Chunk442837 = require("./442837.js"),
   Chunk704215 = require("./704215.js"),
   Chunk713284 = require("./713284.js"),
@@ -49,7 +49,7 @@ function x() {
   let e = (0, Chunk442837.e7)([Chunk713284.Z], () => Chunk713284.Z.getDCFEvents()),
     t = (0, Chunk211644.ZP)(e => e.candidates),
     n = (0, Chunk211644.ZP)(e => e.lastWinnerTime),
-    r = 0 !== require ? i()(require).fromNow() : "n/a",
+    r = 0 !== require ? l()(require).fromNow() : "n/a",
     x = (0, Chunk211644.ZP)(e => e.recentlyShown[0]),
     f = module.map(e => {
       let {
@@ -62,7 +62,7 @@ function x() {
         dismissibleContent: n
       }
     }),
-    g = Array.from(exports.keys()).map(e => ({
+    b = Array.from(exports.keys()).map(e => ({
       key: e.toString(),
       dismissibleContent: e
     }));
@@ -79,7 +79,7 @@ function x() {
       children: (0, Chunk951288.jsx)(Chunk681619.Z, {
         className: Chunk607669.candidatesTable,
         columns: h,
-        data: g
+        data: b
       })
     }), (0, Chunk951288.jsx)("br", {}), (0, Chunk951288.jsx)(Chunk681619.Z, {
       columns: p,

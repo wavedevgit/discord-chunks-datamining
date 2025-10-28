@@ -1,22 +1,22 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 32945 **/
 /** chunk id: 619733, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   AK: () => c,
-  EK: () => l,
+  EK: () => i,
   IX: () => o,
   SW: () => h,
   SY: () => d,
   Sg: () => m,
   TG: () => s,
   YX: () => u,
-  Z4: () => g,
+  Z4: () => b,
   nd: () => f,
   tq: () => p,
   uz: () => x
 });
 var a, Chunk763600 = require("./763600.js"),
   Chunk48541 = require("./48541.js"),
-  l = 12633 == require.j ? ((a = {}).SELECT_GAME = "select-game", a.SERVER_SETTINGS = "server-settings", a) : null;
+  i = 12633 == require.j ? ((a = {}).SELECT_GAME = "select-game", a.SERVER_SETTINGS = "server-settings", a) : null;
 let o = {
     steps: {
       "select-game": {
@@ -52,4 +52,4 @@ let o = {
   f = {
     [Chunk763600.Z.SHOCKBYTE]: "https://shockbyte.com/legal/acceptable-use-policy"
   },
-  g = (e, t) => "https://discord.sjc1.qualtrics.com/jfe/form/SV_2h34PnQLPTCjTTM?user_id=".concat(e, "&guild_id=").concat(t)
+  b = (e, t) => "https://discord.sjc1.qualtrics.com/jfe/form/SV_2h34PnQLPTCjTTM?user_id=".concat(e, "&guild_id=").concat(t)

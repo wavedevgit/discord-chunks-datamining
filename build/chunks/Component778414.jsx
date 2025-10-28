@@ -1,4 +1,4 @@
-/** Chunk was on 63076 **/
+/** Chunk was on 72651 **/
 /** chunk id: 778414, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   C: () => H,
@@ -40,7 +40,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk830202 = require("./830202.js");
 
-function G(e) {
+function B(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -79,9 +79,9 @@ function M(e) {
   var {
     widget: t
   } = e, n = L(e, ["widget"]);
-  return t instanceof h.q ? (0, r.jsx)(w.Z, G({
+  return t instanceof y.q ? (0, r.jsx)(w.Z, B({
     widget: t
-  }, n)) : t instanceof y.zy ? (0, r.jsx)(D.Z, G({
+  }, n)) : t instanceof h.zy ? (0, r.jsx)(D.Z, B({
     widget: t
   }, n)) : null
 }
@@ -109,7 +109,7 @@ function F(e) {
     token: i
   } = (0, d.o)(null == n ? true : n.id), a = (0, I.Z)(t.id), l = (0, v.k)({
     location: "ApplicationWidgetUpsell"
-  }), o = a.some(e => e instanceof h.q && e.applicationId === (null == n ? true : n.id));
+  }), o = a.some(e => e instanceof y.q && e.applicationId === (null == n ? true : n.id));
   return null == n || !l || null == i || o ? null : (0, r.jsx)(f.ZP, {
     contentTypes: [c.z.APPLICATION_WIDGET_EMPTY_STATE_CARD_ADD_WIDGET],
     children: e => {
@@ -138,7 +138,7 @@ function W(e) {
     }, [e, t, n]), "GB" === e && n
   })(), d = (0, v.k)({
     location: "UserProfileModalV2Widgets"
-  }), f = 0 === l.length && c, j = i.useMemo(() => l.filter(y.Wc), [l]), x = i.useMemo(() => l.filter(e => e instanceof h.q), [l]);
+  }), f = 0 === l.length && c, j = i.useMemo(() => l.filter(h.Wc), [l]), x = i.useMemo(() => l.filter(e => e instanceof y.q), [l]);
   (0, P.ZP)(j), (0, O.J)(c, j);
   var w = t.id;
   (0, _.s)(x);
@@ -180,13 +180,13 @@ function H(e) {
   return (0, r.jsxs)(A.F, {
     "data-scroller": true,
     scrollerRef: a,
-    className: l()(B.scroller, {
-      [B.hasToolbar]: o
+    className: l()(G.scroller, {
+      [G.hasToolbar]: o
     }),
     fade: true,
     children: [(0, r.jsx)(C.Z, {
       scrollerRef: a
-    }), (0, r.jsx)(W, G({
+    }), (0, r.jsx)(W, B({
       user: t
     }, n))]
   })

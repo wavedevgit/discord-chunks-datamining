@@ -1,4 +1,4 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 32945 **/
 /** chunk id: 484486, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -21,7 +21,7 @@ let c = () => {
       className: Chunk851339.numberInputStepper,
       value: module,
       onChange: e => {
-        (0, l.p8)(e)
+        (0, i.p8)(e)
       },
       minValue: 0,
       maxValue: 100

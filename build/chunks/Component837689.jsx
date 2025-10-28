@@ -39,13 +39,13 @@ function T(e, t, n) {
 let N = "PremiumServerDriveAnnouncementModal";
 class j extends Chunk317770.Z {
   _initialize() {
-    Chunk570140.Z.subscribe("PREMIUM_MARKETING_DATA_READY", this.mayShowAnnouncementModal), Chunk570140.Z.subscribe("PREMIUM_MARKETING_PREVIEW", this.handlePreview), Chunk570140.Z.subscribe("ACTIVE_OUTBOUND_PROMOTIONS_FETCH_SUCCESS", this.handleActiveOutboundPromotionsFetchSuccess)
+    Chunk570140.Z.subscribe("PREMIUM_MARKETING_DATA_READY", this.mayShowAnnouncementModal), Chunk570140.Z.subscribe("PREMIUM_MARKETING_PREVIEW", this.handlePreview), Chunk570140.Z.subscribe("ACTIVE_PROMOTIONS_FETCH_SUCCESS", this.handleActivePromotionsFetchSuccess)
   }
   _terminate() {
-    Chunk570140.Z.unsubscribe("PREMIUM_MARKETING_DATA_READY", this.mayShowAnnouncementModal), Chunk570140.Z.unsubscribe("PREMIUM_MARKETING_PREVIEW", this.handlePreview), Chunk570140.Z.unsubscribe("ACTIVE_OUTBOUND_PROMOTIONS_FETCH_SUCCESS", this.handleActiveOutboundPromotionsFetchSuccess)
+    Chunk570140.Z.unsubscribe("PREMIUM_MARKETING_DATA_READY", this.mayShowAnnouncementModal), Chunk570140.Z.unsubscribe("PREMIUM_MARKETING_PREVIEW", this.handlePreview), Chunk570140.Z.unsubscribe("ACTIVE_PROMOTIONS_FETCH_SUCCESS", this.handleActivePromotionsFetchSuccess)
   }
   constructor(...e) {
-    super(...e), T(this, "handleActiveOutboundPromotionsFetchSuccess", e => {
+    super(...e), T(this, "handleActivePromotionsFetchSuccess", e => {
       let {
         promotions: t
       } = e;

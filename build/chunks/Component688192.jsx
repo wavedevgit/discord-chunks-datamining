@@ -22,7 +22,7 @@ function I(e) {
     item: t,
     wishlistId: r,
     isOwner: n,
-    surface: s = "profile_modal",
+    surface: l = "profile_modal",
     cardRef: h,
     renderItemPreview: I,
     accessibleLabel: O,
@@ -31,23 +31,23 @@ function I(e) {
     buttonIcon: P,
     isOwned: j = false,
     renderSourceIcon: v
-  } = e, S = l.useRef(null), w = l.useRef(null), x = null != h ? h : w, {
-    analyticsLocations: y
-  } = (0, o.ZP)(), E = "profile_modal" === s && !j, N = (0, i.jsx)("div", {
-    className: p.cardStateIconWrapper,
-    children: (0, i.jsx)(c.sV5, {
+  } = e, S = s.useRef(null), w = s.useRef(null), y = null != h ? h : w, {
+    analyticsLocations: x
+  } = (0, c.ZP)(), E = "profile_modal" === l && !j, T = (0, i.jsx)("div", {
+    className: m.cardStateIconWrapper,
+    children: (0, i.jsx)(o.sV5, {
       size: "custom",
-      color: c.TVs.colors.WHITE,
+      color: o.TVs.colors.WHITE,
       width: 38,
       height: 38,
-      className: a()(p.cardStateIcon, p.checkmark),
-      "aria-label": m.intl.string(m.t.L5Pt9L)
+      className: a()(m.cardStateIcon, m.checkmark),
+      "aria-label": p.intl.string(p.t.L5Pt9L)
     })
-  }), T = (0, i.jsx)("div", {
-    className: p.overlay,
-    children: (0, i.jsx)(c.Button, {
+  }), N = (0, i.jsx)("div", {
+    className: m.overlay,
+    children: (0, i.jsx)(o.Button, {
       focusProps: {
-        ringTarget: x
+        ringTarget: y
       },
       variant: "primary",
       size: "sm",
@@ -63,31 +63,31 @@ function I(e) {
       wishlistId: r,
       action: f.NW.WISHLIST_ITEM_CLICKED,
       skuId: t.skuId,
-      analyticsLocations: y
+      analyticsLocations: x
     }), g())
   };
   return (0, i.jsxs)("div", {
     ref: S,
-    className: p.container,
+    className: m.container,
     children: [(0, i.jsxs)("div", {
-      ref: x,
-      className: a()(p.card, {
-        [p.giftSent]: j,
-        [p.smallCard]: "gifting_flow" === s,
-        [p.largeCard]: "profile_modal" === s
+      ref: y,
+      className: a()(m.card, {
+        [m.giftSent]: j,
+        [m.smallCard]: "gifting_flow" === l,
+        [m.largeCard]: "profile_modal" === l
       }),
       onClick: k,
-      children: [(0, i.jsx)(c.nn4, {
-        children: (0, i.jsx)(c.H, {
+      children: [(0, i.jsx)(o.nn4, {
+        children: (0, i.jsx)(o.H, {
           children: O
         })
       }), (0, i.jsx)("div", {
-        className: p.cardPreview,
+        className: m.cardPreview,
         children: I()
-      }), j && N, E ? T : (0, i.jsx)(c.P3F, {
+      }), j && T, E ? N : (0, i.jsx)(o.P3F, {
         "aria-label": b,
         focusProps: {
-          ringTarget: x
+          ringTarget: y
         },
         onClick: e => {
           e.stopPropagation(), k()
@@ -97,7 +97,7 @@ function I(e) {
       iconSize: "sm",
       item: t,
       wishlistId: r,
-      className: p.removeItemButton
+      className: m.removeItemButton
     })]
   })
 }

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   E: () => m
-}), require("./388685.js");
+});
 var Chunk358221 = require("./358221.js"),
   Chunk569545 = require("./569545.js"),
   Chunk199902 = require("./199902.js"),
@@ -47,10 +47,7 @@ let h = 20 * Chunk70956.Z.Millis.SECOND,
       let s = require.getMediaEngineConnectionId();
       if (null == Chunk70956) return null;
       let _ = Chunk959457.Z.getLastNonZeroRemoteVideoSinkWantsTime(exports);
-      if (null != _ && performance.now() - _ < h || Object.entries(require.getRemoteVideoSinkWants()).every(e => {
-          let [t, n] = e;
-          return "any" === t || 0 === n
-        })) return null;
+      if (null != _ && performance.now() - _ < h || !require.hasActiveRemoteWants()) return null;
       let m = Chunk358221.Z.getParticipant(module.channelId, (0, Chunk569545.V9)(module));
       if (null == m) return null;
       let g = (0, Chunk150457.hj)(Chunk70956, module.ownerId);

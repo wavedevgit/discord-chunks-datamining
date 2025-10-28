@@ -1,4 +1,4 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 32945 **/
 /** chunk id: 646466, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   O: () => E
@@ -47,7 +47,7 @@ let h = [{
     label: "[preview all]",
     value: null
   },
-  g = () => {
+  b = () => {
     (0, Chunk481060.nfh)(Chunk637443.g) ? (0, Chunk481060.Mr3)(Chunk637443.g) : (0, Chunk481060.ZDy)(async () => {
       let {
         ShopAssetsPreviewInstructionModal: e
@@ -58,7 +58,7 @@ let h = [{
       onCloseRequest: () => (0, Chunk481060.Mr3)(Chunk637443.g)
     })
   },
-  b = () => {
+  g = () => {
     (0, Chunk481060.nfh)(Chunk637443.c) ? (0, Chunk481060.Mr3)(Chunk637443.c) : (0, Chunk481060.ZDy)(async () => {
       let {
         ShopPFXPreviewInstructionModal: e
@@ -91,7 +91,7 @@ let h = [{
         }), (0, Chunk951288.jsx)(Chunk481060.hU, {
           variant: "icon-only",
           size: "sm",
-          onClick: b,
+          onClick: g,
           icon: Chunk481060.idN,
           "aria-label": "Open PFX preview instructions"
         })]
@@ -109,7 +109,7 @@ let h = [{
       setPreviewAvatarDecorationSkuId: t
     } = (0, Chunk619899.N9)(), {
       avatarDecorationAssets: n
-    } = (0, Chunk619899.xq)(), l = Chunk647438.useMemo(() => [f, ...require.map(e => ({
+    } = (0, Chunk619899.xq)(), i = Chunk647438.useMemo(() => [f, ...require.map(e => ({
       label: e.name,
       value: e.name
     }))], [require]);
@@ -133,25 +133,25 @@ let h = [{
       clearAssets: t,
       clearIgnoredFiles: n
     } = e, {
-      collectionAssets: l
+      collectionAssets: i
     } = (0, s.xq)(), {
       deleteCollectionAsset: o,
       clearAssets: c
-    } = (0, s.N9)(), d = r.useMemo(() => Object.values(l).map(e => ({
+    } = (0, s.N9)(), d = r.useMemo(() => Object.values(i).map(e => ({
       label: e.name,
       value: e.type
-    })), [l]), u = r.useCallback(e => o(e), [o]), p = r.useCallback(() => {
+    })), [i]), u = r.useCallback(e => o(e), [o]), p = r.useCallback(() => {
       c(), t(), n()
     }, [c, t, n]);
     return 0 === d.length ? null : (0, a.jsxs)(a.Fragment, {
-      children: [(0, a.jsx)(i.LZC, {
+      children: [(0, a.jsx)(l.LZC, {
         size: 16
       }), (0, a.jsxs)("div", {
         className: m.headingContainer,
-        children: [(0, a.jsx)(i.Heading, {
+        children: [(0, a.jsx)(l.Heading, {
           variant: "heading-lg/bold",
           children: "Uploaded Assets"
-        }), (0, a.jsx)(i.Button, {
+        }), (0, a.jsx)(l.Button, {
           variant: "critical-primary",
           size: "sm",
           onClick: p,
@@ -160,13 +160,13 @@ let h = [{
       }), (0, a.jsx)("ul", {
         children: d.map(e => (0, a.jsxs)("li", {
           className: m.uploadedFileListItem,
-          children: [(0, a.jsx)(i.hU, {
+          children: [(0, a.jsx)(l.hU, {
             variant: "icon-only",
             size: "sm",
             onClick: () => u(e.value),
-            icon: i.Dio,
+            icon: l.Dio,
             "aria-label": "Remove asset"
-          }), (0, a.jsx)(i.Text, {
+          }), (0, a.jsx)(l.Text, {
             variant: "text-md/normal",
             children: e.label
           })]
@@ -180,14 +180,14 @@ let h = [{
       handleClearIgnoredFiles: n
     } = e;
     return 0 === t.length ? null : (0, a.jsxs)(a.Fragment, {
-      children: [(0, a.jsx)(i.LZC, {
+      children: [(0, a.jsx)(l.LZC, {
         size: 16
       }), (0, a.jsxs)("div", {
         className: m.headingContainer,
-        children: [(0, a.jsx)(i.Heading, {
+        children: [(0, a.jsx)(l.Heading, {
           variant: "heading-lg/bold",
           children: "Ignored Files"
-        }), (0, a.jsx)(i.Button, {
+        }), (0, a.jsx)(l.Button, {
           variant: "primary",
           size: "sm",
           onClick: n,
@@ -196,7 +196,7 @@ let h = [{
       }), (0, a.jsx)("ul", {
         children: t.map((e, t) => (0, a.jsx)("li", {
           className: m.ignoredFileListItem,
-          children: (0, a.jsx)(i.Text, {
+          children: (0, a.jsx)(l.Text, {
             variant: "text-md/normal",
             children: e
           })
@@ -209,7 +209,7 @@ let h = [{
       validateShopAssetPackage: e,
       reset: t,
       validationComplete: n,
-      warnings: l,
+      warnings: i,
       errors: o
     } = (0, Chunk206878.g)(), s = Object.entries(Chunk637443), d = Object.entries(Chunk373071), p = Chunk619899.length > 0, h = Chunk281598.length > 0, x = Chunk647438.useCallback(n => {
       t(), e(n)
@@ -249,14 +249,14 @@ let h = [{
           children: Chunk619899.map((e, t) => {
             let [n, r] = e;
             return (0, a.jsxs)("li", {
-              children: [(0, a.jsx)(i.Text, {
+              children: [(0, a.jsx)(l.Text, {
                 variant: "text-md/bold",
                 color: "text-danger",
                 children: n
               }), r.length > 0 && (0, a.jsx)("ul", {
                 className: m.validationIssuesList,
                 children: r.map((e, t) => (0, a.jsx)("li", {
-                  children: (0, a.jsx)(i.Text, {
+                  children: (0, a.jsx)(l.Text, {
                     variant: "text-sm/normal",
                     color: "text-danger",
                     children: e
@@ -277,14 +277,14 @@ let h = [{
           children: Object.entries(Chunk373071).map((e, t) => {
             let [n, r] = e;
             return (0, a.jsxs)("li", {
-              children: [(0, a.jsx)(i.Text, {
+              children: [(0, a.jsx)(l.Text, {
                 variant: "text-md/bold",
                 color: "text-feedback-warning",
                 children: n
               }), r.length > 0 && (0, a.jsx)("ul", {
                 className: m.validationIssuesList,
                 children: r.map((e, t) => (0, a.jsx)("li", {
-                  children: (0, a.jsx)(i.Text, {
+                  children: (0, a.jsx)(l.Text, {
                     variant: "text-sm/normal",
                     color: "text-feedback-warning",
                     children: e
@@ -303,7 +303,7 @@ let h = [{
       setPreviewEnabled: t,
       clearAssets: n
     } = (0, Chunk619899.N9)(), {
-      ignoredFilenames: l,
+      ignoredFilenames: i,
       clearAssets: o,
       clearIgnoredFilenames: u,
       processAndUpsertAssets: p
@@ -327,7 +327,7 @@ let h = [{
         }), (0, Chunk951288.jsx)(Chunk481060.hU, {
           variant: "icon-only",
           size: "sm",
-          onClick: g,
+          onClick: b,
           icon: Chunk481060.idN,
           "aria-label": "Open preview instructions"
         })]

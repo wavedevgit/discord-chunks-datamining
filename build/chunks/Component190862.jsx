@@ -1,4 +1,4 @@
-/** Chunk was on 63076 **/
+/** Chunk was on 72651 **/
 /** chunk id: 190862, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk272289 = require("./272289.jsx"),
   Chunk39642 = require("./39642.js");
 
-function h(e) {
+function y(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -37,7 +37,7 @@ function h(e) {
   return e
 }
 
-function y(e, t) {
+function h(e, t) {
   if (null == e) return {};
   var n, r, i = function(e, t) {
     if (null == e) return {};
@@ -55,22 +55,22 @@ function y(e, t) {
 let v = e => {
     var {
       widget: t
-    } = e, n = y(e, ["widget"]);
+    } = e, n = h(e, ["widget"]);
     switch (t.type) {
       case i.l.FAVORITE_GAMES:
-        return (0, r.jsx)(f.Z, h({
+        return (0, r.jsx)(f.Z, y({
           widget: t
         }, n));
       case i.l.CURRENT_GAMES:
-        return (0, r.jsx)(d.Z, h({
+        return (0, r.jsx)(d.Z, y({
           widget: t
         }, n));
       case i.l.WANT_TO_PLAY_GAMES:
-        return (0, r.jsx)(p.Z, h({
+        return (0, r.jsx)(p.Z, y({
           widget: t
         }, n));
       case i.l.PLAYED_GAMES:
-        return (0, r.jsx)(g.Z, h({
+        return (0, r.jsx)(g.Z, y({
           widget: t
         }, n));
       default:
@@ -82,7 +82,7 @@ let v = e => {
       widget: t,
       user: n,
       disableInteraction: i
-    } = e, d = y(e, ["widget", "user", "disableInteraction"]);
+    } = e, d = h(e, ["widget", "user", "disableInteraction"]);
     let f = (0, c.FX)(t),
       {
         shouldShowSuggestions: g,
@@ -96,7 +96,7 @@ let v = e => {
       }),
       P = (0, o.kQ)(f),
       I = 1 === (0, o.Gv)(f.type);
-    return (0, r.jsx)(v, h({
+    return (0, r.jsx)(v, y({
       widget: f,
       user: n,
       disableInteraction: i,

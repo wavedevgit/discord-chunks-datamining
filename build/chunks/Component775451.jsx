@@ -1,13 +1,13 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 32945 **/
 /** chunk id: 775451, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  V9: () => g,
+  V9: () => b,
   ek: () => f
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk351773 = require("./351773.js"),
   Chunk507808 = require("./507808.js"),
   Chunk790542 = require("./790542.js"),
@@ -21,36 +21,36 @@ let f = {
     START: Chunk152935.alignLeft,
     END: Chunk152935.alignRight
   },
-  g = e => {
+  b = e => {
     let {
       showNotificationBadge: t,
       ctaText: n,
-      ctaOnClick: i,
-      analyticsPage: g,
-      linkText: b = h.intl.string(h.t.XRdyjz),
+      ctaOnClick: l,
+      analyticsPage: b,
+      linkText: g = h.intl.string(h.t.XRdyjz),
       cardAlignment: v = f.START,
       className: j
     } = e, {
       balance: _
     } = (0, c.A)(), [y, C] = r.useState(d.b.DEFAULT), [S, E] = r.useState(false), [T, O] = r.useState(false), N = r.useRef(null), P = r.useCallback(() => {
       let e = !S;
-      e && null != g && (0, s.Y)({
-        pageType: g,
+      e && null != b && (0, s.Y)({
+        pageType: b,
         sectionType: p.jXE.ORBS_BALANCE_MENU,
         ctaObject: p.qAy.OPEN_ORB_BALANCE_MENU_FROM_PILL
       }), C(e ? d.b.SELECTED : d.b.DEFAULT), E(e)
-    }, [S, g]), I = r.useCallback(() => {
+    }, [S, b]), I = r.useCallback(() => {
       S && P()
     }, [S, P]), w = (0, o.Z)(null, I), k = r.useMemo(() => (0, a.jsx)(u.L, {
-      analyticsPage: g,
+      analyticsPage: b,
       ctaText: n,
       ctaOnClick: () => {
-        P(), i()
+        P(), l()
       },
-      linkText: b
-    }), [g, n, b, P, i]);
+      linkText: g
+    }), [b, n, g, P, l]);
     return (0, a.jsxs)("div", {
-      className: l()(x.container, j, {
+      className: i()(x.container, j, {
         [x.hidden]: T,
         [x.visible]: !T
       }),
@@ -64,7 +64,7 @@ let f = {
         onClick: P,
         showNotificationBadge: t
       }), S && (0, a.jsx)("div", {
-        className: l()(x.cardContainer, v, {
+        className: i()(x.cardContainer, v, {
           [x.hidden]: T,
           [x.visible]: !T
         }),
@@ -73,4 +73,4 @@ let f = {
       })]
     })
   };
-g.CardAlignment = f
+b.CardAlignment = f

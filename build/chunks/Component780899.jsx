@@ -1,4 +1,4 @@
-/** Chunk was on 63076 **/
+/** Chunk was on 72651 **/
 /** chunk id: 780899, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   e_: () => m,
@@ -59,9 +59,9 @@ function p(e) {
     "aria-label": p,
     children: m
   } = e, b = g(e, ["index", "className", "draggingClassName", "dropBeforeClassName", "dropAfterClassName", "aria-label", "children"]);
-  let h = i.useRef(null),
+  let y = i.useRef(null),
     {
-      isDragging: y,
+      isDragging: h,
       dragSourcePosition: v
     } = function(e) {
       let {
@@ -77,16 +77,16 @@ function p(e) {
         disableDefaultPreview: p = true
       } = e, m = "".concat(u, "_").concat(a), b = i.useCallback((e, t) => {
         null == f || f(e, t)
-      }, [f]), h = i.useMemo(() => ({
+      }, [f]), y = i.useMemo(() => ({
         id: l,
         index: r,
         itemType: u,
         itemPreviewProps: d
       }), [l, r, u, d]), [{
-        isDragging: y
+        isDragging: h
       }, v, O] = (0, o.c)({
         type: m,
-        item: h,
+        item: y,
         collect: e => ({
           handlerId: e.getHandlerId(),
           isDragging: e.isDragging()
@@ -116,20 +116,20 @@ function p(e) {
         }
       });
       return v(t), x(n), {
-        isDragging: y,
+        isDragging: h,
         dragSourcePosition: j
       }
     }(f({
-      dragRef: h,
-      dropRef: h,
+      dragRef: y,
+      dropRef: y,
       index: t
     }, b)),
     O = null != v,
     j = O && t < v,
     x = O && t > v;
   return (0, r.jsx)("div", {
-    ref: h,
-    className: l()(n, y && a, j && u, x && d),
+    ref: y,
+    className: l()(n, h && a, j && u, x && d),
     "aria-label": p,
     children: m
   })

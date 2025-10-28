@@ -1,4 +1,4 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 32945 **/
 /** chunk id: 678717, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
   default: () => eI,
@@ -8,7 +8,7 @@ require.r(exports), require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk990547 = require("./990547.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -355,7 +355,7 @@ function eE(e) {
     resizableNode: t,
     onResize: n,
     onResizeEnd: r
-  } = e, i = (0, d.Z)({
+  } = e, l = (0, d.Z)({
     minDimension: C.h,
     resizableDomNodeRef: t,
     onElementResize: n,
@@ -363,7 +363,7 @@ function eE(e) {
     orientation: d.y.HORIZONTAL_LEFT
   });
   return (0, a.jsx)("div", {
-    onMouseDown: i,
+    onMouseDown: l,
     className: ey.resizeHandle
   })
 }
@@ -388,10 +388,10 @@ function eO(e) {
   let {
     isPopout: n = false
   } = e, r = eS(), {
-    TabBar: i,
-    renderSelectedTab: l,
+    TabBar: l,
+    renderSelectedTab: i,
     selectedTabId: s
-  } = (0, eb.ZP)({
+  } = (0, eg.ZP)({
     tabs: r,
     initialSelectedTabId: null != (t = C.Z.lastOpenTabId) ? t : true,
     onChangeTab: e => {
@@ -426,7 +426,7 @@ function eO(e) {
       }), (0, a.jsx)(h.ZP.Title, {
         children: "DevTools"
       })]
-    }), (0, a.jsx)(i, {}), l(), (0, a.jsx)(z.Br, {
+    }), (0, a.jsx)(l, {}), i(), (0, a.jsx)(z.Br, {
       className: ey.layerContainer
     })]
   })
@@ -435,8 +435,8 @@ function eO(e) {
 function eN() {
   let e = Chunk647438.useRef(null),
     t = (0, Chunk442837.e7)([Chunk19759.Z], () => Chunk19759.Z.sidebarWidth),
-    [n, i] = Chunk647438.useState(null),
-    l = Chunk647438.useCallback(e => (0, y.Qh)({
+    [n, l] = Chunk647438.useState(null),
+    i = Chunk647438.useCallback(e => (0, y.Qh)({
       sidebarWidth: e
     }), []);
   return (Chunk647438.useEffect(() => {
@@ -452,7 +452,7 @@ function eN() {
     children: [(0, Chunk951288.jsx)(eE, {
       resizableNode: module,
       onResize: Chunk120356,
-      onResizeEnd: l
+      onResizeEnd: i
     }), (0, Chunk951288.jsx)("div", {
       className: Chunk552883.sidebarContent,
       children: (0, Chunk951288.jsx)(eO, {})
@@ -462,7 +462,7 @@ function eN() {
 
 function eP() {
   return (0, Chunk442837.e7)([Chunk19759.Z], () => Chunk19759.Z.displayTools) ? (0, Chunk951288.jsx)("div", {
-    className: l()(Chunk552883.container, Chunk552883.mobileContainerExpanded),
+    className: i()(Chunk552883.container, Chunk552883.mobileContainerExpanded),
     children: (0, Chunk951288.jsx)("div", {
       className: Chunk552883.sidebarContent,
       children: (0, Chunk951288.jsx)(eO, {})
@@ -472,7 +472,7 @@ function eP() {
     children: (0, Chunk951288.jsx)(Chunk481060.P3F, {
       onClick: Chunk31336.SO,
       children: (0, Chunk951288.jsxs)(Chunk665149.ZP, {
-        className: l()(Chunk451429.headerBar, Chunk552883.mobileHeaderCollapsed),
+        className: i()(Chunk451429.headerBar, Chunk552883.mobileHeaderCollapsed),
         toolbar: (0, Chunk951288.jsx)(Chunk259580.Z, {
           direction: Chunk259580.Z.Directions.UP
         }),

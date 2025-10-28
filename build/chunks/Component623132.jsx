@@ -1,4 +1,4 @@
-/** Chunk was on 63076 **/
+/** Chunk was on 72651 **/
 /** chunk id: 623132, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Z
@@ -68,8 +68,8 @@ function T(e) {
     children: a
   } = e, {
     manageFocusOnReorder: l
-  } = (0, y.C)();
-  return (0, r.jsx)(h.yW, {
+  } = (0, h.C)();
+  return (0, r.jsx)(y.yW, {
     index: t,
     itemId: i.applicationId,
     listType: n,
@@ -191,31 +191,31 @@ function A(e) {
     widgetType: d,
     applicationId: f
   } = e, g = (0, s.Dt)(), b = (0, s.Dt)(), {
-    trackUserProfileEditAction: h
-  } = (0, p.KZ)(), [y, v] = i.useState("idle"), [O, j] = i.useState(null != t ? t : ""), x = i.useRef(null), _ = i.useRef(null), I = P.intl.string(P.t.xKSfBT), S = null != t && "" !== t.trim(), E = i.useCallback(() => {
-    h({
+    trackUserProfileEditAction: y
+  } = (0, p.KZ)(), [h, v] = i.useState("idle"), [O, j] = i.useState(null != t ? t : ""), x = i.useRef(null), _ = i.useRef(null), I = P.intl.string(P.t.xKSfBT), S = null != t && "" !== t.trim(), E = i.useCallback(() => {
+    y({
       action: "PRESS_ADD_COMMENTARY",
       widgetEdited: d
     }), v("editing")
-  }, [d, h]), T = i.useCallback(() => {
+  }, [d, y]), T = i.useCallback(() => {
     let e = O.trim(),
       n = e !== (null != t ? t : "").trim();
-    (0, m.Bu)(d, f, "" !== e ? e : true), v("completed"), n && h({
+    (0, m.Bu)(d, f, "" !== e ? e : true), v("completed"), n && y({
       action: "COMMENTARY_EDITED",
       widgetEdited: d,
       gameId: f
     })
-  }, [d, f, O, t, h]), C = i.useCallback(e => {
+  }, [d, f, O, t, y]), C = i.useCallback(e => {
     j(e)
   }, []);
   return i.useEffect(() => {
-    "editing" === y && j(null != t ? t : "")
-  }, [t, y]), i.useEffect(() => {
-    if ("completed" === y) {
+    "editing" === h && j(null != t ? t : "")
+  }, [t, h]), i.useEffect(() => {
+    if ("completed" === h) {
       var e;
       null == (e = x.current) || e.focus()
     }
-  }, [y]), "editing" === y ? (0, r.jsxs)("div", {
+  }, [h]), "editing" === h ? (0, r.jsxs)("div", {
     className: w.textAreaContainer,
     children: [(0, r.jsx)(c.nn4, {
       tag: "label",
@@ -228,7 +228,7 @@ function A(e) {
       onChange: C,
       onBlur: T,
       rows: 3,
-      autoFocus: "editing" === y,
+      autoFocus: "editing" === h,
       onKeyDown: e => {
         "Enter" !== e.key || e.shiftKey || (e.preventDefault(), T())
       },
@@ -281,16 +281,16 @@ function Z(e) {
     gameName: k = P.intl.string(P.t.GIWFlF),
     imageSrc: Z,
     applicationId: R,
-    comment: B,
-    tags: G
+    comment: G,
+    tags: B
   } = o, L = {
     variant: "heading-sm/medium",
     color: "text-default"
   }, M = f.default.getCurrentUser(), U = (null == M ? true : M.id) === t.id, F = 1 === (0, m.Gv)(s), W = !u && U, H = W && (0, m.vI)(s), z = W && !F, K = (0, b.kO)(R), {
     registerDragHandleRef: V
-  } = (0, y.C)(), q = i.useRef(null);
+  } = (0, h.C)(), Y = i.useRef(null);
   if (K) return (0, r.jsx)(O.i, {});
-  let X = () => (0, r.jsx)(v.Z, {
+  let q = () => (0, r.jsx)(v.Z, {
       coverRef: p,
       className: null == Z || u ? true : I.hoverActiveEffect,
       imageSrc: Z,
@@ -300,19 +300,19 @@ function Z(e) {
       disableInteraction: u,
       hideTooltip: true
     }),
-    Y = () => (0, r.jsxs)("div", {
+    X = () => (0, r.jsxs)("div", {
       className: l()(w.card, D),
       children: [z ? (0, r.jsxs)("div", {
-        ref: q,
+        ref: Y,
         className: w.dragHandleContainer,
-        children: [X(), (0, r.jsx)(h.e_, {
+        children: [q(), (0, r.jsx)(y.e_, {
           buttonRef: V(o.applicationId),
           className: w.dragHandle,
           focusProps: {
-            ringTarget: q
+            ringTarget: Y
           }
         })]
-      }) : X(), (0, r.jsxs)("div", {
+      }) : q(), (0, r.jsxs)("div", {
         className: w.details,
         children: [u ? (0, r.jsx)(c.Heading, E(S({}, L), {
           children: k
@@ -321,19 +321,19 @@ function Z(e) {
           userId: t.id,
           gameName: k
         }, L)), H ? (0, r.jsx)(A, {
-          text: B,
+          text: G,
           user: t,
           guildId: n,
           channelId: a,
           widgetType: s,
           applicationId: R
         }) : (0, r.jsx)(N, {
-          text: B,
+          text: G,
           user: t,
           guildId: n,
           channelId: a
         }), (0, r.jsx)(j.Z, {
-          tags: G,
+          tags: B,
           isCurrentUser: U,
           widgetType: s,
           applicationId: R,
@@ -356,6 +356,6 @@ function Z(e) {
     index: null != d ? d : 0,
     widgetType: s,
     game: o,
-    children: Y()
-  }) : Y()
+    children: X()
+  }) : X()
 }

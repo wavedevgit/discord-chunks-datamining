@@ -1,4 +1,4 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 32945 **/
 /** chunk id: 587243, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   F: () => j,
@@ -37,9 +37,9 @@ let f = [{
     duration: true,
     label: () => Chunk388032.intl.string(Chunk388032.t["46dqJY"])
   }],
-  g = "forever";
+  b = "forever";
 
-function b(e, t) {
+function g(e, t) {
   return e.getFullYear() === t.getFullYear() && e.getMonth() === t.getMonth() && e.getDate() === t.getDate()
 }
 
@@ -50,27 +50,27 @@ function v(e) {
     description: r
   } = e, {
     showTempStatusOptions: o
-  } = l.Y.useExperiment({
+  } = i.Y.useExperiment({
     location: "UserProfileAccountPopout"
   }), s = o && t !== p.Skl.ONLINE, c = (0, a.jsx)(a.Fragment, {
     children: f.map(e => {
       let {
         duration: r,
-        label: l
+        label: i
       } = e;
-      return (0, a.jsx)(i.sNh, {
+      return (0, a.jsx)(l.sNh, {
         id: "".concat(t, "-").concat(r),
-        label: l(),
+        label: i(),
         action: () => (0, m.Z)({
           nextStatus: t,
           prevStatus: n,
           durationMillis: r
         }),
         dontCloseOnAction: true
-      }, null != r ? r : g)
+      }, null != r ? r : b)
     })
   });
-  return (0, a.jsx)(i.sNh, {
+  return (0, a.jsx)(l.sNh, {
     id: t,
     className: x.expiringStatusMenuItem,
     keepItemStyles: true,
@@ -81,7 +81,7 @@ function v(e) {
       } = e;
       return (0, a.jsxs)("div", {
         className: x.statusItem,
-        children: [(0, a.jsx)(i.qbd, {
+        children: [(0, a.jsx)(l.qbd, {
           status: t,
           className: x.icon,
           size: 10,
@@ -109,10 +109,10 @@ function v(e) {
 function j(e) {
   if (null == e || "0" === e) return;
   let t = new Date(Number(e)),
-    n = b(t, new Date),
+    n = g(t, new Date),
     a = new Date;
   a.setDate(a.getDate() + 1);
-  let r = b(t, a);
+  let r = g(t, a);
   return n ? h.intl.formatToPlainString(h.t.ZxxHIO, {
     timeString: h.intl.data.formatTime(t, {
       format: "short"
@@ -132,11 +132,11 @@ function j(e) {
 function _(e) {
   let {
     hasNewStrings: t
-  } = l.Y.useExperiment({
+  } = i.Y.useExperiment({
     location: "UserProfileAccountPopout"
   }), n = c.Cr.useSetting(), d = (0, o.p)(), u = s.e.useExperiment({
     location: "UserProfileAccountPopout"
-  }).allowQuietMode || d, m = c.fv.useSetting(), b = e === p.Skl.DND, _ = a => {
+  }).allowQuietMode || d, m = c.fv.useSetting(), g = e === p.Skl.DND, _ = a => {
     let r = j(n);
     if (e === a && null != r) return r;
     switch (a) {
@@ -153,14 +153,14 @@ function _(e) {
         duration: n,
         label: r
       } = t;
-      return (0, a.jsx)(i.sNh, {
+      return (0, a.jsx)(l.sNh, {
         id: "".concat(e, "-").concat(n),
         label: r(),
         action: () => {
           (0, o.oW)(true, n)
         },
         dontCloseOnAction: true
-      }, null != n ? n : g)
+      }, null != n ? n : b)
     })
   }), C = v({
     status: p.Skl.ONLINE,
@@ -179,8 +179,8 @@ function _(e) {
     description: _(p.Skl.INVISIBLE)
   });
   return (0, a.jsxs)(a.Fragment, {
-    children: [C, (0, a.jsx)(i.Clw, {}, "menu-separator-statuses"), S, E, T, u || d ? (0, a.jsxs)(a.Fragment, {
-      children: [(0, a.jsx)(i.Clw, {}, "menu-separator-statuses"), (0, a.jsx)(i.sNh, {
+    children: [C, (0, a.jsx)(l.Clw, {}, "menu-separator-statuses"), S, E, T, u || d ? (0, a.jsxs)(a.Fragment, {
+      children: [(0, a.jsx)(l.Clw, {}, "menu-separator-statuses"), (0, a.jsx)(l.sNh, {
         id: "quiet-mode",
         "aria-label": "focus mode",
         className: x.expiringStatusMenuItem,
@@ -188,14 +188,14 @@ function _(e) {
         hasSubmenu: true,
         label: () => (0, a.jsxs)("div", {
           className: x.statusItem,
-          children: [(0, a.jsx)(i.owu, {
+          children: [(0, a.jsx)(l.owu, {
             size: "xxs",
             className: x.icon
           }), (0, a.jsxs)("div", {
             className: x.focusModeTitle,
-            children: [h.intl.string(h.t.gJRnwK), (0, a.jsx)(i.IGR, {
-              text: d ? h.intl.string(h.t.ApAu9f) : b ? h.intl.string(h.t.gH3Frd) : h.intl.string(h.t["64pl82"]),
-              color: d ? r.Z.BRAND_500 : b ? r.Z.RED_400 : r.Z.PRIMARY_500
+            children: [h.intl.string(h.t.gJRnwK), (0, a.jsx)(l.IGR, {
+              text: d ? h.intl.string(h.t.ApAu9f) : g ? h.intl.string(h.t.gH3Frd) : h.intl.string(h.t["64pl82"]),
+              color: d ? r.Z.BRAND_500 : g ? r.Z.RED_400 : r.Z.PRIMARY_500
             })]
           }), (0, a.jsx)("div", {
             className: x.description,

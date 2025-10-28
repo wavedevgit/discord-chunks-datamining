@@ -28,7 +28,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk889441 = require("./889441.js"),
   Chunk736409 = require("./736409.jsx"),
   Chunk906732 = require("./906732.jsx"),
-  Chunk20471 = require("./20471.js"),
+  Chunk535139 = require("./535139.js"),
   Chunk835473 = require("./835473.js"),
   Chunk413523 = require("./413523.js"),
   Chunk522651 = require("./522651.js"),
@@ -500,8 +500,8 @@ let eZ = (0, Chunk730749.Z)(function(e) {
       canStartAuthorization: q,
       connectionApp: Q,
       startAuthorization: ed
-    } = (0, P.FG)(y, {
-      allowedFlows: [P.ro.RPC]
+    } = (0, P.F)(y, {
+      allowedFlows: [P.r.RPC]
     }),
     {
       isQuestBarEmpty: eh,
