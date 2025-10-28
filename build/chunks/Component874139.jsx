@@ -30,8 +30,9 @@ function _(e) {
     let e = [];
     for (let i = 0; i < t.length && e.length < 4; i++) {
       let s = t[i],
-        o = 3 === e.length && t.length > 4,
-        u = o ? m.intl.string(m.t.TxBQzD) : m.intl.string(m.t.ilhtIa);
+        o = 3 === e.length && t.length > 4;
+      if (s.isOwned) continue;
+      let u = o ? m.intl.string(m.t.TxBQzD) : m.intl.string(m.t.ilhtIa);
       if ((0, d.Q)(s)) {
         let i = () => {
             if (o) return void _();
