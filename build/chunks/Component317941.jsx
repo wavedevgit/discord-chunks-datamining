@@ -40,8 +40,8 @@ function R(e, t, n) {
   }) : e[t] = n, e
 }
 let P = 512,
-  D = 1e3;
-class w extends Chunk647438.PureComponent {
+  w = 1e3;
+class D extends Chunk647438.PureComponent {
   componentWillUnmount() {
     this._copyModeTimeout.stop()
   }
@@ -104,7 +104,7 @@ class w extends Chunk647438.PureComponent {
         copyMode: u.uA3.SUCCESS
       }), () => this.setState({
         copyMode: u.uA3.ERROR
-      })), this._copyModeTimeout.start(D, () => {
+      })), this._copyModeTimeout.start(w, () => {
         this.setState({
           copyMode: u.uA3.DEFAULT
         })
@@ -208,7 +208,7 @@ class L extends Chunk647438.PureComponent {
         children: Chunk442837 ? (0, Chunk951288.jsx)(Chunk481060.$jN, {
           className: Chunk669255.spinner
         }) : (0, Chunk951288.jsxs)(Chunk647438.Fragment, {
-          children: [require.length < module.length ? this.renderGenerateGiftCodeRow() : null, require.map(e => (0, r.jsx)(w, {
+          children: [require.length < module.length ? this.renderGenerateGiftCodeRow() : null, require.map(e => (0, r.jsx)(D, {
             giftCode: e,
             sku: o,
             hideCode: l

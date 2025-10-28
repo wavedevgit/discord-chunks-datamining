@@ -77,11 +77,11 @@ function A(e) {
   } = t, P = (0, g.Z)({
     autocompletes: N,
     mode: R
-  }), D = (0, E.Z)({
+  }), w = (0, E.Z)({
     setSearchQuery: A,
     searchContext: v,
     mode: R
-  }), w = e => {
+  }), D = e => {
     let {
       searchEverywhere: t
     } = e;
@@ -192,13 +192,13 @@ function A(e) {
       }
       let t = x(C);
       if (C) {
-        let n = [...D, t];
+        let n = [...w, t];
         e.push((0, _.fC)(f.i.GROUP, {
           rows: n,
           title: y.intl.string(y.t.UdhTtk)
         }))
       } else e.push(t);
-      let n = C ? e.length + D.length : e.length,
+      let n = C ? e.length + w.length : e.length,
         {
           autocompleteCount: i,
           autocompleteGroups: o
@@ -287,7 +287,7 @@ function A(e) {
           ariaLabel: y.intl.formatToPlainString(y.t.rCnaoo, {
             value: t.query
           }),
-          onSelect: () => w({
+          onSelect: () => D({
             searchEverywhere: false
           })
         });
@@ -301,7 +301,7 @@ function A(e) {
             label: (0, r.jsx)(d.Q0, {
               label: y.intl.string(y.t.FtSUxc)
             }),
-            onSelect: () => w({
+            onSelect: () => D({
               searchEverywhere: true
             })
           });
@@ -370,7 +370,7 @@ function A(e) {
         }
       }), o = C && 0 === n, s = x(o);
       if (o) {
-        let t = [...D, s];
+        let t = [...w, s];
         e.push((0, _.fC)(f.i.GROUP, {
           rows: t,
           title: y.intl.string(y.t.UdhTtk)

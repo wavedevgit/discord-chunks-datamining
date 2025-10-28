@@ -108,7 +108,7 @@ let U = Chunk442837.ZP.connectStores([Chunk928518.Z, Chunk317381.ZP, Chunk451478
       popoutWindowHasTitleBar: g = false
     } = e,
     v = b.Z.getWindowOpen(N.KJ3.CHANNEL_CALL_POPOUT),
-    w = b.Z.getWindowOpen(N.KJ3.ACTIVITY_POPOUT),
+    D = b.Z.getWindowOpen(N.KJ3.ACTIVITY_POPOUT),
     L = s.ZP.getCurrentEmbeddedActivity(),
     x = (0, c.p)(null == L ? true : L.location),
     M = null != L && !(0, u.Z)(x, I.Z, S.Z),
@@ -116,7 +116,7 @@ let U = Chunk442837.ZP.connectStores([Chunk928518.Z, Chunk317381.ZP, Chunk451478
     U = M && j === R.Ez.PANEL,
     G = null != L && null != x && (null == (t = f.Z.getSelectedParticipant(x)) ? true : t.type) === P.fO.ACTIVITY,
     B = p.Z.getConnectedFrame(),
-    Z = p.Z.getFrameLayoutMode() === D.U.FOCUSED,
+    Z = p.Z.getFrameLayoutMode() === w.U.FOCUSED,
     F = null != m,
     V = F ? b.Z.getWindow(m) : null,
     H = !!F && b.Z.isWindowFullScreen(m),
@@ -132,7 +132,7 @@ let U = Chunk442837.ZP.connectStores([Chunk928518.Z, Chunk317381.ZP, Chunk451478
     }) ? e - (0, _.Y7)({
       isPopoutWindow: F
     }) : e;
-  h = null != L && w || F && M || F && null != B ? null : F || !v || M || null != B ? null != L && U ? null != (n = T.Z.pipActivityWindow) ? n : T.Z.pipVideoWindow : null != B && Z ? null != (i = null != (r = T.Z.pipFrameWindow) ? r : T.Z.pipVideoWindow) ? i : T.Z.pipActivityWindow : null != (o = null != (a = T.Z.pipVideoWindow) ? a : T.Z.pipActivityWindow) ? o : T.Z.pipFrameWindow : null;
+  h = null != L && D || F && M || F && null != B ? null : F || !v || M || null != B ? null != L && U ? null != (n = T.Z.pipActivityWindow) ? n : T.Z.pipVideoWindow : null != B && Z ? null != (i = null != (r = T.Z.pipFrameWindow) ? r : T.Z.pipVideoWindow) ? i : T.Z.pipActivityWindow : null != (o = null != (a = T.Z.pipVideoWindow) ? a : T.Z.pipActivityWindow) ? o : T.Z.pipFrameWindow : null;
   let z = Array.from(T.Z.pipWindows.values()),
     q = T.Z.pipWidth(P.cL.VIDEO),
     X = z.find(e => e.component === N.NYg.VIDEO),

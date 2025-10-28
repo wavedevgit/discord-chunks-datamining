@@ -94,7 +94,7 @@ function x(e) {
   let p = i.useRef(null),
     {
       parentAnalyticsLocation: f
-    } = (0, h.ZP)(),
+    } = (0, m.ZP)(),
     {
       channel: O,
       user: x,
@@ -151,7 +151,7 @@ function x(e) {
         guildId: k,
         channel: O,
         showMediaItems: true,
-        onInteraction: (0, _.u)("GuildChannelUserContextMenu", m.Z.RTC_PANEL, {
+        onInteraction: (0, _.u)("GuildChannelUserContextMenu", h.Z.RTC_PANEL, {
           targetUserId: x.id
         })
       }))
@@ -162,7 +162,7 @@ function x(e) {
       return t => (0, r.jsx)(e, N(T({}, t), {
         user: x,
         showMediaItems: true,
-        onInteraction: (0, _.u)("UserGenericContextMenu", m.Z.RTC_PANEL, {
+        onInteraction: (0, _.u)("UserGenericContextMenu", h.Z.RTC_PANEL, {
           targetUserId: x.id
         })
       }))
@@ -215,8 +215,8 @@ function A(e) {
     channel: n,
     className: l
   } = e, [o, u] = i.useState(false), d = (0, s.e7)([O.default], () => O.default.getId()), {
-    containerRef: m,
-    maxVisibleAvatars: h
+    containerRef: h,
+    maxVisibleAvatars: m
   } = function(e) {
     let [t, n] = i.useState(7), r = (0, f.Z)(() => {
       let t = null == l ? true : l.current;
@@ -238,7 +238,7 @@ function A(e) {
         if (r.length >= n) return [r, true];
         r.push(i)
       } return [r, false]
-  }(t, d, h), b = o ? c.V_R : c.qJs, E = (0, r.jsx)(c.M0o, {
+  }(t, d, m), b = o ? c.V_R : c.qJs, E = (0, r.jsx)(c.M0o, {
     onClick: () => u(!o),
     color: c.YX$.PRIMARY,
     size: c.tT7.SIZE_24,
@@ -253,7 +253,7 @@ function A(e) {
     className: a()(S.scroller, l),
     fade: true,
     children: (0, r.jsxs)("div", {
-      ref: m,
+      ref: h,
       className: a()(S.voiceUsers, !o && S.collapsed),
       role: "group",
       "aria-label": C.intl.string(C.t["/ZgaVU"]),

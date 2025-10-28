@@ -72,12 +72,12 @@ let E = (0, Chunk703912.Z)(e => {
     signal: A
   } = e, Z = "OAuth2Authorize_".concat(n, "_").concat(C, "_").concat(S), w = null != P ? null == u ? true : u.get(P) : true, L = null != (t = null == w ? true : w.application) ? t : a.Z.getApplication(n);
   return new Promise((e, t) => {
-    let a = (0, m.jU)(x),
+    let a = (0, h.jU)(x),
       w = i.z1l;
     null != L && null != (0, l.ZP)({
       application: L,
       channelId: S
-    }) ? w = i.u1M : a.context === h.IlC.POPOUT && (w = i.u1M);
+    }) ? w = i.u1M : a.context === m.IlC.POPOUT && (w = i.u1M);
     let R = false,
       D = l => {
         let {
@@ -87,7 +87,7 @@ let E = (0, Chunk703912.Z)(e => {
         if (null == s || s === n) {
           if (R = true, null == o) {
             t(new p.Z({
-              errorCode: h.lTL.OAUTH2_ERROR
+              errorCode: m.lTL.OAUTH2_ERROR
             }, "OAuth2 Error: No location provided")), a.lock();
             return
           }
@@ -146,13 +146,13 @@ let E = (0, Chunk703912.Z)(e => {
       modalKey: Z,
       onCloseCallback: () => {
         M(), R || (t(new p.Z({
-          errorCode: h.lTL.OAUTH2_ERROR
+          errorCode: m.lTL.OAUTH2_ERROR
         }, "User cancelled authorization")), a.lock())
       }
     }, w)
   })
 }, function(e, t, n) {
-  if ((0, m.br)(n) || !u.isPlatformEmbedded) return;
+  if ((0, h.br)(n) || !u.isPlatformEmbedded) return;
   let r = (0, l.ZP)({
     application: e,
     channelId: t

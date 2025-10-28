@@ -14,9 +14,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk260300 = require("./260300.js"),
-  Chunk997638 = require("./997638.jsx"),
   Chunk819640 = require("./819640.js"),
   Chunk451478 = require("./451478.js"),
+  Chunk350707 = require("./350707.jsx"),
   Chunk21825 = require("./21825.jsx"),
   Chunk232495 = require("./232495.jsx"),
   Chunk10401 = require("./10401.js"),
@@ -123,8 +123,8 @@ class O extends Chunk647438.PureComponent {
       isLongText: c,
       highPriority: u,
       spacing: p,
-      arrowAlignment: f = Chunk997638.cy.TOP,
-      popoutPosition: m
+      arrowAlignment: h = Chunk350707.cy.TOP,
+      popoutPosition: f
     } = Chunk120356, {
       offsetX: b,
       offsetY: C
@@ -139,7 +139,7 @@ class O extends Chunk647438.PureComponent {
         [y.highPriority]: u
       }
     }, j = this.getTutorialPopoutText();
-    return (0, Chunk951288.jsx)(Chunk997638.ZP, x(v({
+    return (0, Chunk951288.jsx)(Chunk350707.ZP, x(v({
       innerRef: this.contentRef,
       position: Chunk451478,
       renderMedia: Chunk512722,

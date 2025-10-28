@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 596557, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,13 +16,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk647086 = require("./647086.js"),
   Chunk135899 = require("./135899.js");
 
-function h(e) {
+function m(e) {
   var t;
-  let h = (0, s.SE)(e),
-    g = m.$X.some(t => (null == e ? true : e.id) !== f._ && c.oz(t, e)),
+  let m = (0, s.SE)(e),
+    g = h.$X.some(t => (null == e ? true : e.id) !== f._ && c.oz(t, e)),
     _ = (null == e ? true : e.defaultMessageNotifications) === d.bL.ALL_MESSAGES,
     b = (0, u.FT)(l.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, null != (t = null == e ? true : e.id) ? t : d.lds),
-    E = h && (g || _) && !b,
+    E = m && (g || _) && !b,
     O = i.useCallback(() => {
       var t;
       (0, u.Qd)(l.C.DISABLE_UNSAFE_COMMUNITY_PERMISSIONS_NOTICE, null != (t = null == e ? true : e.id) ? t : d.lds, true, p.L.DISMISS)

@@ -60,12 +60,12 @@ function b(e) {
     R = g.intl.string(g.t.ib7Ng1),
     P = u.Z.Button.Colors.GREEN;
   S ? (R = g.intl.string(g.t.xhxnPn), P = u.Z.Button.Colors.PRIMARY) : v && (R = g.intl.string(g.t.ib7Ng1), P = u.Z.Button.Colors.PRIMARY);
-  let D = v ? g.intl.string(g.t.eQyu1F) : g.intl.string(g.t.PYJHW6),
-    w = null != n.inviter ? "".concat(n.inviter.username) : "",
+  let w = v ? g.intl.string(g.t.eQyu1F) : g.intl.string(g.t.PYJHW6),
+    D = null != n.inviter ? "".concat(n.inviter.username) : "",
     L = null != n.inviter ? h.ZP.getUserTag(n.inviter) : "";
   return (0, r.jsxs)(u.Z, {
     children: [(0, r.jsx)(u.Z.Header, {
-      text: D
+      text: w
     }), (0, r.jsxs)(u.Z.Body, {
       children: [(0, r.jsxs)("div", {
         className: E.headerLine,
@@ -73,7 +73,7 @@ function b(e) {
           user: new d.Z(n.inviter),
           onClick: S ? N : true
         }), (0, r.jsx)(u.Z.Info, {
-          title: w,
+          title: D,
           onClick: S ? N : true,
           children: L
         })]

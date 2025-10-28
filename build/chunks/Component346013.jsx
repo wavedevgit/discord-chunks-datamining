@@ -84,7 +84,7 @@ function G(e) {
     channel: B
   } = e, Z = i.useRef(null), F = i.useRef(null), V = (0, R.J)(j, G), {
     setPopout: H
-  } = (0, b.Z)(G.id, D.d$), Y = (0, E.qo)(G, B, H, true), W = v.QK.useSetting(), K = (0, C.n)(), [z, q] = i.useState(false), [X, Q] = i.useState((null == V ? true : V.coverImage) == null), J = (0, c.e7)([I.ZP, T.default], () => {
+  } = (0, b.Z)(G.id, w.d$), Y = (0, E.qo)(G, B, H, true), W = v.QK.useSetting(), K = (0, C.n)(), [z, q] = i.useState(false), [X, Q] = i.useState((null == V ? true : V.coverImage) == null), J = (0, c.e7)([I.ZP, T.default], () => {
     var e;
     return I.ZP.isMember(null == V ? true : V.guildId, null == (e = T.default.getCurrentUser()) ? true : e.id)
   }, [V]), $ = (0, c.e7)([I.ZP], () => (null == V ? true : V.authorId) != null ? I.ZP.getMember(V.guildId, V.authorId) : null), ee = (0, _.Z)((null == $ ? true : $.avatarDecoration) != null ? null == $ ? true : $.avatarDecoration : null == V || null == (t = V.user) ? true : t.avatarDecoration), [et, en, er] = i.useMemo(() => {
@@ -149,7 +149,7 @@ function G(e) {
       onMouseLeave: ec,
       children: [!X && (true === V.shouldShowBlurredThumbnailImage ? (0, r.jsx)("img", {
         src: x,
-        alt: w.intl.string(w.t.rIbh8H),
+        alt: D.intl.string(D.t.rIbh8H),
         className: o()(L.thumbnail, {
           [L.spoiler]: V.shouldSpoiler
         }),
@@ -158,7 +158,7 @@ function G(e) {
       }) : (0, r.jsx)(h.Z, {
         src: !eg && em ? "".concat(eh, "?format=png") : eh,
         backgroundSrc: "".concat(eh, "?format=png"),
-        alt: w.intl.string(w.t.rIbh8H),
+        alt: D.intl.string(D.t.rIbh8H),
         aspectRatio: 16 / 9,
         className: o()(L.thumbnail, {
           [L.spoiler]: V.shouldSpoiler
@@ -216,7 +216,7 @@ function G(e) {
               ref: F,
               size: u.EFr.SIZE_40,
               src: ef,
-              "aria-label": w.intl.string(w.t.KXz3XB),
+              "aria-label": D.intl.string(D.t.KXz3XB),
               avatarDecoration: ed
             }))
           })
@@ -241,7 +241,7 @@ function G(e) {
             variant: "text-sm/medium",
             color: "text-muted",
             className: L.descriptionFooterAuthorContainer,
-            children: w.intl.format(w.t.voIDKa, {
+            children: D.intl.format(D.t.voIDKa, {
               authorName: V.authorName,
               authorNameHook: ep
             })

@@ -69,16 +69,16 @@ function O(e) {
     P = null != R ? N ? R : E.intl.format(E.t["0wJXSh"], {
       name: R
     }) : E.intl.string(E.t.eXan7B),
-    D = !v && null != T && null != S;
+    w = !v && null != T && null != S;
   return (0, r.jsxs)(r.Fragment, {
     children: [!y && (0, r.jsx)(p.Z, {
       icon: o.ARS,
-      tooltipText: D ? S : true,
-      tooltipAriaLabel: D ? (0, c.ZP)({
+      tooltipText: w ? S : true,
+      tooltipAriaLabel: w ? (0, c.ZP)({
         channel: T
       }) : true,
       className: b,
-      onTooltipShow: D ? C : true
+      onTooltipShow: w ? C : true
     }), !O && (0, r.jsx)(h.Z, {
       variant: d,
       className: m,

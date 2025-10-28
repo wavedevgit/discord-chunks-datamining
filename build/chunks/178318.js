@@ -89,7 +89,7 @@ function j(e, t, n, r) {
 }
 class P extends Chunk76238.Z {
   send(e) {
-    (u.default.isLoggingOverlayEvents || e.cmd !== b.Etm.OVERLAY && e.evt !== b.zMe.OVERLAY) && y.info("Socket Emit: ".concat(this.id), (0, m.Z)(e)), null != r && "etf" === this.encoding ? this._socket.send(r.pack(e), {
+    (u.default.isLoggingOverlayEvents || e.cmd !== b.Etm.OVERLAY && e.evt !== b.zMe.OVERLAY) && y.info("Socket Emit: ".concat(this.id), (0, h.Z)(e)), null != r && "etf" === this.encoding ? this._socket.send(r.pack(e), {
       binary: true
     }) : this._socket.send(JSON.stringify(e))
   }
@@ -188,7 +188,7 @@ class A extends Chunk836560.EventEmitter {
     } catch (t) {
       e.close(b.$VG.CLOSE_UNSUPPORTED, "Payload not ".concat(e.encoding));
       return
-    }(u.default.isLoggingOverlayEvents || n.cmd !== b.Etm.OVERLAY) && y.info("Socket Message: ".concat(e.id), (0, m.Z)(n)), this.emit("request", e, n)
+    }(u.default.isLoggingOverlayEvents || n.cmd !== b.Etm.OVERLAY) && y.info("Socket Message: ".concat(e.id), (0, h.Z)(n)), this.emit("request", e, n)
   }
   constructor() {
     var e;

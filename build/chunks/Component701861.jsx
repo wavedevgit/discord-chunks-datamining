@@ -54,7 +54,7 @@ function j(e) {
       joinCall: true,
       joinCallVideo: true
     })
-  }, [t.id]), m = i.useCallback(() => {
+  }, [t.id]), h = i.useCallback(() => {
     b.Z.removeFriend({
       userId: t.id,
       applicationId: l ? n : null,
@@ -72,9 +72,9 @@ function j(e) {
       confirmText: e,
       confirmVariant: "critical-primary",
       cancelText: S.intl.string(S.t["ETE/oC"]),
-      onConfirm: m
+      onConfirm: h
     })
-  }, [m, l, t]), E = (0, s.e7)([h.Z], () => h.Z.supports(C.AN.VIDEO)), O = t.isProvisional, I = l ? S.intl.string(S.t.RLcE6x) : S.intl.string(S.t.cvSt1J);
+  }, [h, l, t]), E = (0, s.e7)([m.Z], () => m.Z.supports(C.AN.VIDEO)), O = t.isProvisional, I = l ? S.intl.string(S.t.RLcE6x) : S.intl.string(S.t.cvSt1J);
   return (0, r.jsxs)(o.v2r, {
     navId: "friend-row",
     "aria-label": S.intl.string(S.t.liqwPJ),
@@ -169,7 +169,7 @@ class P extends Chunk647438.PureComponent {
         user: t
       } = this.props;
       e.stopPropagation();
-      let n = a().find(m.Z.getMutablePrivateChannels(), e => e.type === y.d4z.DM && e.getRecipientId() === t.id);
+      let n = a().find(h.Z.getMutablePrivateChannels(), e => e.type === y.d4z.DM && e.getRecipientId() === t.id);
       null != n ? (0, f.uL)(y.Z5c.CHANNEL(y.ME, n.id)) : u.Z.openPrivateChannel({
         recipientIds: t.id
       })

@@ -55,7 +55,7 @@ function S(e) {
   })(t, n), [t, n]), S = i.useMemo(() => (0, b.s)(t), [t]), T = l === t, N = i.useCallback(() => {
     switch (t) {
       case O.GlobalDiscoveryTab.QUESTS:
-        return T && h.Z.resetState(), g.default.track(I.rMx.DISCOVERY_QUEST_TAB_CLICKED, {
+        return T && m.Z.resetState(), g.default.track(I.rMx.DISCOVERY_QUEST_TAB_CLICKED, {
           client_ad_session_id: (0, u.Gy)().uuid
         }), (0, E.transitionToGlobalDiscovery)({
           tab: O.GlobalDiscoveryTab.QUESTS,
@@ -80,7 +80,7 @@ function S(e) {
         if (!T) return (0, E.transitionToGlobalDiscovery)({
           tab: t
         });
-        f.Z.resetState(), m.Z.resetState();
+        f.Z.resetState(), h.Z.resetState();
         return;
       default:
         return (0, E.transitionToGlobalDiscovery)({

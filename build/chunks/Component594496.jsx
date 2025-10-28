@@ -100,7 +100,7 @@ function k(e) {
     ec = e => es(e, null == J ? true : J.avatar, N.I5);
   return (0, r.jsxs)("div", {
     className: M.sectionsContainer,
-    children: [(0, r.jsx)(D.Z, {
+    children: [(0, r.jsx)(w.Z, {
       errors: null != (i = null == K ? true : K.nick) ? i : null == Q ? true : Q.nick,
       username: C.ZP.getName(G),
       pendingNick: F,
@@ -115,7 +115,7 @@ function k(e) {
       },
       pendingPronouns: Y,
       currentPronouns: eo
-    }, "pronouns"), (0, r.jsxs)(w.Z, {
+    }, "pronouns"), (0, r.jsxs)(D.Z, {
       user: G,
       showOverlay: !et,
       children: [(0, r.jsx)(h.Z, {

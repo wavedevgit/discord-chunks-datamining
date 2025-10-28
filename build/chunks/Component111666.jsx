@@ -59,7 +59,7 @@ function C(e, t) {
 function S(e) {
   let {
     className: t
-  } = e, n = (0, a.e7)([h.Z], () => h.Z.getPendingCount() > 0), _ = (0, s.dQu)(s.TVs.modules.chat.INPUT_ICON_SIZE), S = function() {
+  } = e, n = (0, a.e7)([m.Z], () => m.Z.getPendingCount() > 0), _ = (0, s.dQu)(s.TVs.modules.chat.INPUT_ICON_SIZE), S = function() {
     let [e, t] = i.useState(null), {
       showActivityTicker: n
     } = (0, E.Z)(), r = i.useRef({}), l = i.useRef(null);
@@ -72,8 +72,8 @@ function S(e) {
           null == r.current[e] && (r.current[e] = {}), null == n ? delete r.current[e][t] : r.current[e][t] = n, 0 === Object.keys(r.current[e]).length && delete r.current[e]
         },
         i = (n, i, a) => {
-          var s, o, c, u, d, p, m, _, b;
-          if (!h.Z.isFriend(n)) returnfalse;
+          var s, o, c, u, d, p, h, _, b;
+          if (!m.Z.isFriend(n)) returnfalse;
           let E = g.default.getUser(n);
           if (null == E) returnfalse;
           let I = false,
@@ -84,7 +84,7 @@ function S(e) {
                 let t = e.type;
                 return t === O.IIU.PLAYING && null != e.application_id || t === O.IIU.LISTENING || t === O.IIU.WATCHING
               }(i)) {
-              let l = t === O.IIU.WATCHING || t === O.IIU.LISTENING ? "".concat(t, "-").concat(null != (u = i.name) ? u : "", "-").concat(null != (d = i.state) ? d : "", "-").concat(null != (p = i.details) ? p : "") : "".concat(t, "-").concat(null != (m = i.name) ? m : "");
+              let l = t === O.IIU.WATCHING || t === O.IIU.LISTENING ? "".concat(t, "-").concat(null != (u = i.name) ? u : "", "-").concat(null != (d = i.state) ? d : "", "-").concat(null != (p = i.details) ? p : "") : "".concat(t, "-").concat(null != (h = i.name) ? h : "");
               (null == (c = r.current[n]) ? true : c.presence) !== l && (I = true, e(n, "presence", l), v = {
                 user: E,
                 activity: i
@@ -108,7 +108,7 @@ function S(e) {
         a = e => {
           for (let t of e.updates) {
             let e = t.user.id,
-              n = m.Z.getPrimaryActivity(e);
+              n = h.Z.getPrimaryActivity(e);
             if (i(e, n)) break
           }
         },

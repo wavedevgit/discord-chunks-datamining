@@ -14,7 +14,7 @@ require.d(exports, {
   hM: () => p,
   sL: () => h,
   t6: () => g,
-  tA: () => D,
+  tA: () => w,
   tI: () => v,
   z4: () => S,
   zW: () => m
@@ -383,7 +383,7 @@ function P(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   let {
     searchContext: t,
     searchAutocompleteSelectAction: n

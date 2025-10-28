@@ -39,7 +39,7 @@ let p = e => {
   let P = () => {
       null == O || O(), null == y || y()
     },
-    D = e => {
+    w = e => {
       null != e && e.preventDefault(), null == O || O(), null == v || v()
     };
   return null != h && "" !== h && (t = (0, r.jsx)(s.Button, {
@@ -68,7 +68,7 @@ let p = e => {
     "aria-label": T,
     parentComponent: "Alert",
     children: (0, r.jsxs)("form", {
-      onSubmit: D,
+      onSubmit: w,
       className: _.form,
       children: [(0, r.jsx)(l.xB, {
         children: null != T ? (0, r.jsx)(u.Heading, {

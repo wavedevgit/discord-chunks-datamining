@@ -2,7 +2,7 @@
 /** chunk id: 341561, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => D
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -64,12 +64,12 @@ function P(e) {
   return "".concat(E.Iv).concat(e.name).concat(E.Iv)
 }
 
-function D(e) {
+function w(e) {
   var t;
   let n = e.animated ? "a" : "";
   return e.managed || null == e.id ? "".concat(E.Iv).concat(e.name).concat(E.Iv) : "<".concat(n, ":").concat(null != (t = e.originalName) ? t : e.name, ":").concat(e.id, ">")
 }
-let w = {
+let D = {
   sentinel: Chunk761652.Iv,
   stores: [Chunk926491.Z],
   matches: (e, t, n, r, i) => n.length > 1,
@@ -250,7 +250,7 @@ let w = {
     } = e;
     if (a < t.length) {
       let e = t[a];
-      return o.insertText(P(e), D(e)), {
+      return o.insertText(P(e), w(e)), {
         type: g.z2.EMOJI,
         metadata: {
           emojiId: e.id,

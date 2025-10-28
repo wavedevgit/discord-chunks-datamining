@@ -53,16 +53,16 @@ let S = function(e) {
       lazyLoad: N = false,
       style: R,
       showShine: P = true,
-      location: D
+      location: w
     } = e,
-    w = (0, _.O5)(),
+    D = (0, _.O5)(),
     L = (0, l.e7)([f.Z], () => f.Z.isFocused()),
     x = (0, l.e7)([u.Z], () => u.Z.useReducedMotion),
     M = i.useMemo(() => (0, m.fh)(a, m.eC.REWARD), [a]),
     k = i.useMemo(() => (0, m.fh)(a, m.eC.REWARD_IMAGE), [a]),
     j = i.useCallback(t => {
       var n;
-      (0, s.kK)(t.currentTarget, HTMLElement) && t.currentTarget.blur(), w({
+      (0, s.kK)(t.currentTarget, HTMLElement) && t.currentTarget.blur(), D({
         questId: a.id,
         questContent: e.questContent,
         questContentPosition: e.questContentPosition,
@@ -72,7 +72,7 @@ let S = function(e) {
         fromContent: e.questContent,
         questId: a.id
       }), null == (n = e.onClick) || n.call(e, t)
-    }, [w, a.id, e, C]),
+    }, [D, a.id, e, C]),
     U = i.useRef(null),
     G = i.useRef(h),
     B = (0, p.Bg)(a.config);
@@ -144,7 +144,7 @@ let S = function(e) {
     style: R,
     children: [t, P && !x && (0, r.jsx)(T, {
       appFocused: L,
-      location: D
+      location: w
     }), "text" === S && (0, r.jsx)(c.Text, {
       color: "always-white",
       variant: "text-xs/normal",

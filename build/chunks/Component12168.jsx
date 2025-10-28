@@ -2,7 +2,7 @@
 /** chunk id: 12168, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w,
+  Z: () => D,
   u: () => P
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -113,7 +113,7 @@ function P(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   let {
     otherAccessories: t,
     isEmojiPickerExpanded: n,
@@ -137,7 +137,7 @@ function D(e) {
   })
 }
 
-function w(e) {
+function D(e) {
   let {
     channel: t,
     title: n,
@@ -150,7 +150,7 @@ function w(e) {
     recentlyUsedEmojis: b,
     analyticsOverride: T,
     ref: A
-  } = e, w = (0, d.Dt)(), [L, x] = i.useState(false), M = (0, _.wC)(t.guild_id), k = (0, s.uniqBy)([...M, ...R], "name").filter(e => !E.ZP.isEmojiFilteredOrLocked({
+  } = e, D = (0, d.Dt)(), [L, x] = i.useState(false), M = (0, _.wC)(t.guild_id), k = (0, s.uniqBy)([...M, ...R], "name").filter(e => !E.ZP.isEmojiFilteredOrLocked({
     emoji: e,
     channel: t,
     intention: N
@@ -171,13 +171,13 @@ function w(e) {
       null != e && e.key !== v.vn.TAB && (e.key !== v.vn.ENTER || e.shiftKey ? j(true) : j(!L))
     };
   return (0, r.jsxs)(c.VqE, {
-    "aria-labelledby": w,
+    "aria-labelledby": D,
     ref: A,
     children: [(0, r.jsx)(c.y5t, {
       forceLevel: 2,
       children: (0, r.jsx)(c.nn4, {
         children: (0, r.jsx)(c.H, {
-          id: w,
+          id: D,
           children: n
         })
       })
@@ -198,7 +198,7 @@ function w(e) {
         wrapper: "div",
         pickerIntention: N,
         searchProps: C(S({}, m), {
-          accessory: (0, r.jsx)(D, {
+          accessory: (0, r.jsx)(w, {
             otherAccessories: null == m ? true : m.accessory,
             isEmojiPickerExpanded: L,
             onSetExpanded: j,

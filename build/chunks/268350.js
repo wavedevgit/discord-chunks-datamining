@@ -6,10 +6,10 @@ require.d(exports, {
   FQ: () => v,
   Il: () => T,
   Jf: () => C,
-  SA: () => D,
+  SA: () => w,
   Um: () => S,
   eu: () => N,
-  hW: () => w,
+  hW: () => D,
   lY: () => A,
   qB: () => R
 }), require("./953529.js"), require("./539854.js");
@@ -181,7 +181,7 @@ function P(e) {
   return d.Z.totalUnavailableGuilds > 0 || !l.Z.isConnected() ? e : e.filter(e => null != p.Z.getStickerById(e))
 }
 
-function D(e) {
+function w(e) {
   u.DZ.updateAsync("favoriteStickers", t => (t.stickerIds = P(t.stickerIds), i().size(t.stickerIds) >= m.oX) ? (s.Z.show({
     title: g.intl.string(g.t["+XYXtZ"]),
     body: g.intl.formatToPlainString(g.t.JaIyFi, {
@@ -190,7 +190,7 @@ function D(e) {
   }), false) : !t.stickerIds.includes(e) && void t.stickerIds.push(e), m.fy.INFREQUENT_USER_ACTION)
 }
 
-function w(e) {
+function D(e) {
   u.DZ.updateAsync("favoriteStickers", t => {
     t.stickerIds = t.stickerIds.filter(t => t !== e), t.stickerIds = P(t.stickerIds)
   }, m.fy.INFREQUENT_USER_ACTION)

@@ -54,7 +54,7 @@ function u() {
     (0, i.ZDy)(async () => {
       let {
         default: t
-      } = await Promise.all([n.e("85555"), n.e("26717")]).then(n.bind(n, 837651));
+      } = await Promise.all([n.e("85555"), n.e("59030")]).then(n.bind(n, 397386));
       return n => (0, r.jsx)(t, c(s({}, n), {
         handleEnableMFASuccess: e
       }))
@@ -68,7 +68,7 @@ function d() {
     (0, i.ZDy)(async () => {
       let {
         default: t
-      } = await n.e("92229").then(n.bind(n, 628908));
+      } = await n.e("48290").then(n.bind(n, 971650));
       return n => (0, r.jsx)(t, c(s({}, n), {
         isTotp: e
       }))

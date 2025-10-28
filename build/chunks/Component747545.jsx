@@ -2,8 +2,8 @@
 /** chunk id: 747545, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  S: () => D,
-  Z: () => w
+  S: () => w,
+  Z: () => D
 }), require("./704826.js"), require("./35282.js"), require("./415506.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -40,7 +40,7 @@ function P(e) {
   return (0, y.getPlatform)() === y.PlatformTypes.WINDOWS ? "ms-settings:camera" + (null != e ? "?cameraId=".concat(encodeURIComponent(e.replace(C, N))) : "") : ""
 }
 
-function D() {
+function w() {
   let [e, t] = Chunk647438.useState(false), n = (0, Chunk442837.e7)([Chunk131951.Z], () => Chunk131951.Z.isMediaFilterSettingLoading());
   return (Chunk647438.useEffect(() => {
     let e = new Chunk846519.V7;
@@ -53,7 +53,7 @@ function D() {
   }) : null
 }
 
-function w(e) {
+function D(e) {
   let {
     hideDeviceSelector: t = false,
     hideDeviceHeader: n = false,
@@ -68,11 +68,11 @@ function w(e) {
   } = e, {
     analyticsLocations: N
   } = (0, f.ZP)(), {
-    id: D
-  } = (0, p.p6)(I.h7.VIDEO_INPUT), w = (0, s.e7)([E.Z], () => E.Z.isVideoAvailable()), L = m.qF.useSetting();
+    id: w
+  } = (0, p.p6)(I.h7.VIDEO_INPUT), D = (0, s.e7)([E.Z], () => E.Z.isVideoAvailable()), L = m.qF.useSetting();
   return (0, r.jsxs)(c.Kqy, {
     gap: 20,
-    children: [d(D), E.Z.isEnabled() ? null : (0, r.jsx)(c.Text, {
+    children: [d(w), E.Z.isEnabled() ? null : (0, r.jsx)(c.Text, {
       className: S.permissionWarning,
       color: "interactive-normal",
       variant: "text-sm/normal",
@@ -94,14 +94,14 @@ function w(e) {
         label: n ? true : T.intl.string(T.t.FsQ3OR),
         helperText: !i && R() ? T.intl.format(T.t.aJYgRt, {
           onCameraSettingsClick: () => {
-            null == C || C(), window.open(P(D)), b.default.track(O.rMx.SYSTEM_CAMERA_SETTINGS_OPENED, {
+            null == C || C(), window.open(P(w)), b.default.track(O.rMx.SYSTEM_CAMERA_SETTINGS_OPENED, {
               location_stack: N
             })
           }
         }) : true,
         deviceType: I.h7.VIDEO_INPUT,
         location: "CameraSettings",
-        isDisabled: !w,
+        isDisabled: !D,
         showAllDevices: true
       })
     }), (0, r.jsx)(h.F, {
@@ -111,7 +111,7 @@ function w(e) {
         onLearnMore: a,
         selectedBackgroundOption: o,
         onSelectBackgroundOption: l,
-        currentDeviceId: D,
+        currentDeviceId: w,
         smallerBackgroundOptions: A
       })
     })]

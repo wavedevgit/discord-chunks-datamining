@@ -54,8 +54,8 @@ let T = 26,
   N = "user",
   R = new Chunk710845.Z("SessionHeartbeatScheduler"),
   P = null,
-  D = null,
-  w = 0,
+  w = null,
+  D = 0,
   L = 0,
   x = {
     state: "uninitialized"
@@ -162,7 +162,7 @@ function K() {
 }
 
 function z() {
-  null == D && (D = {
+  null == w && (w = {
     id: setInterval(() => {
       V()
     }, S),
@@ -172,8 +172,8 @@ function z() {
 
 function q(e) {
   let t = performance.now();
-  if (!(t - w < A)) try {
-    o.K.set(C, e), w = t
+  if (!(t - D < A)) try {
+    o.K.set(C, e), D = t
   } catch (e) {
     m.Z.captureException(e)
   }
@@ -252,7 +252,7 @@ async function eo() {
         createdAtTimestamp: module,
         lastUsedTimestamp: module,
         version: Chunk686325.EI
-      }, w = 0), require.lastUsedTimestamp = module, q(require)) : null != require && (0, Chunk686325.qK)(require) && (n = null), x = {
+      }, D = 0), require.lastUsedTimestamp = module, q(require)) : null != require && (0, Chunk686325.qK)(require) && (n = null), x = {
         state: "loaded",
         session: require
       }, null != require && Chunk442837 !== require.uuid && exports) {

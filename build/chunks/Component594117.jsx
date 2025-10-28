@@ -16,7 +16,7 @@ var Chunk685072 = require("./685072.jsx"),
   Chunk870569 = require("./870569.jsx"),
   Chunk388032 = require("./388032.jsx");
 
-function m(e) {
+function h(e) {
   var t, n;
   let {
     tooltipText: l,
@@ -65,11 +65,11 @@ function m(e) {
   }), t))
 }
 
-function h(e) {
+function m(e) {
   let {
     channel: t
   } = e;
-  return (0, r.jsx)(m, {
+  return (0, r.jsx)(h, {
     tooltipText: f.intl.string(f.t.SMKyih),
     onClick: () => {
       if ((0, d.Z)(t)) return void(0, u.Us)(t);
@@ -82,7 +82,7 @@ function g(e) {
   let {
     channel: t
   } = e;
-  return (0, r.jsx)(m, {
+  return (0, r.jsx)(h, {
     tooltipText: f.intl.string(f.t["6vrfgt"]),
     onClick: () => {
       if ((0, c.Z)(t)) return void(0, o.lC)(t);
@@ -95,7 +95,7 @@ function _(e) {
   let {
     channel: t
   } = e;
-  return t.isGuildStageVoice() ? (0, r.jsx)(h, {
+  return t.isGuildStageVoice() ? (0, r.jsx)(m, {
     channel: t
   }) : (0, r.jsx)(g, {
     channel: t

@@ -183,7 +183,7 @@ var r = function(e) {
     return h(s), s
   }
 
-  function D(e, n) {
+  function w(e, n) {
     var r, i, a, o, s, l, c, u = e.length,
       d = n.length,
       f = t,
@@ -203,7 +203,7 @@ var r = function(e) {
     return E = L(E, g)[0], [p(_), p(E)]
   }
 
-  function w(e, n) {
+  function D(e, n) {
     for (var r, i, a, o, s, l = e.length, c = n.length, u = [], d = [], f = t; l;) {
       if (d.unshift(e[--l]), h(d), 0 > M(d, n)) {
         u.push(0);
@@ -248,7 +248,7 @@ var r = function(e) {
     var E = M(o, f);
     if (false === E) return [l[0], e];
     if (0 === E) return [l[e.sign === a.sign ? 1 : false], l[0]];
-    r = (i = o.length + f.length <= 200 ? D(o, f) : w(o, f))[0];
+    r = (i = o.length + f.length <= 200 ? w(o, f) : D(o, f))[0];
     var b = e.sign !== a.sign,
       y = i[1],
       O = e.sign;

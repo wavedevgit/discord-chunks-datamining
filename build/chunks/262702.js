@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 262702, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./388685.js");
 var Chunk570140 = require("./570140.js"),
   Chunk846027 = require("./846027.js"),
@@ -22,7 +22,7 @@ function f(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class m extends Chunk317770.Z {
+class h extends Chunk317770.Z {
   _initialize() {
     Chunk570140.Z.subscribe("VOICE_STATE_UPDATES", this.handleVoiceStateUpdates)
   }
@@ -46,4 +46,4 @@ class m extends Chunk317770.Z {
     })
   }
 }
-let h = new m
+let m = new h

@@ -103,14 +103,14 @@ let q = (0, Chunk663993.Un)({
                       className: z.notAppAsidePanel,
                       "data-app-not-dev-tools": true,
                       children: (0, r.jsx)(S.m, {
-                        children: (0, r.jsx)(w.OR, {
+                        children: (0, r.jsx)(D.OR, {
                           children: (0, r.jsx)(b.Z.Provider, {
                             value: y.Z,
                             children: (0, r.jsxs)(T.p, {
                               children: [(0, r.jsx)("div", {
                                 className: o()(u ? z.mobileApp : z.app),
                                 children: t
-                              }), (0, r.jsx)(f.Z, {}), (0, r.jsx)(v.Z, {}), (0, r.jsx)(_.Z, {}), (0, r.jsx)(d.nKe, {}), (0, r.jsx)(p.Z, {}), (0, r.jsx)(D.Ox, {}), (0, r.jsx)(P.Un, {}), (0, r.jsx)(w.ot, {}), (0, r.jsx)(d.Ixi, {
+                              }), (0, r.jsx)(f.Z, {}), (0, r.jsx)(v.Z, {}), (0, r.jsx)(_.Z, {}), (0, r.jsx)(d.nKe, {}), (0, r.jsx)(p.Z, {}), (0, r.jsx)(w.Ox, {}), (0, r.jsx)(P.Un, {}), (0, r.jsx)(D.ot, {}), (0, r.jsx)(d.Ixi, {
                                 appContext: K.IlC.APP
                               }), (0, r.jsx)(O.Z, {}), (0, r.jsx)(x.Z, {}), (0, r.jsx)(q, {}), (0, r.jsx)(X, {})]
                             })

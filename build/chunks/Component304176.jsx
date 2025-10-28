@@ -89,7 +89,7 @@ let C = 40,
         src: null == t.src ? t.src : (0, c.o)(t.src, C),
         size: C
       }),
-      D = () => {
+      w = () => {
         (0, u.f)({
           guildId: n.id,
           location: {
@@ -97,10 +97,10 @@ let C = 40,
           }
         })
       },
-      w = () => {
+      D = () => {
         (0, _.uL)(b.Z5c.CHANNEL(n.id, y.oC.ROLE_SUBSCRIPTIONS))
       },
-      L = N ? w : D;
+      L = N ? D : w;
     return (0, r.jsx)(a.VqE, {
       children: (0, r.jsx)(E.W_, {
         children: (0, r.jsxs)("div", {

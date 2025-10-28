@@ -41,7 +41,7 @@ function b(e) {
     lastClipsSession: p.Z.getLastClipsSession(),
     remindersEnabled: p.Z.getSettings().remindersEnabled,
     hasAnyClipAnimations: p.Z.hasAnyClipAnimations()
-  })), T = null != y && y.newClipIds.length > 0, N = (0, m.n)(e => e.clipsButtonRef), j = (0, m.n)(e => e.setClipsButtonRef), P = (0, l.e7)([c.Z], () => c.Z.hasLayers()), {
+  })), T = null != y && y.newClipIds.length > 0, N = (0, h.n)(e => e.clipsButtonRef), j = (0, h.n)(e => e.setClipsButtonRef), P = (0, l.e7)([c.Z], () => c.Z.hasLayers()), {
     preventIdle: x,
     allowIdle: A
   } = (0, o.Y)("animation");
@@ -74,7 +74,7 @@ function b(e) {
     })
   }
   return (i.useEffect(() => (S ? x() : A(), () => A()), [S, x, A]), O && E && I) ? (0, r.jsxs)(r.Fragment, {
-    children: [null != N && t && C && T && !(0, a.$sL)() && !P && (0, r.jsx)(h.Z, {
+    children: [null != N && t && C && T && !(0, a.$sL)() && !P && (0, r.jsx)(m.Z, {
       clipIconRef: N,
       lastClipsSession: y,
       onOpenClipsGallery: Z

@@ -160,15 +160,15 @@ function F(e) {
     noticeType: r
   } = e, a = (0, L.cS)(n), o = null != a ? (0, x.m)(a, true) : null, u = (0, L.nE)(n), p = (0, d.KS)(u), {
     startTime: f,
-    endTime: m
+    endTime: h
   } = (0, Z.ZP)(n), {
-    startDateTimeString: h,
+    startDateTimeString: m,
     upcomingEvent: g,
     diffMinutes: _
-  } = (0, R.ub)(f.toISOString(), null == m ? true : m.toISOString()), b = g ? _ > 0 ? U.intl.formatToPlainString(U.t.PQlCWk, {
+  } = (0, R.ub)(f.toISOString(), null == h ? true : h.toISOString()), b = g ? _ > 0 ? U.intl.formatToPlainString(U.t.PQlCWk, {
     minutes: _
   }) : U.intl.string(U.t.WINqKV) : U.intl.formatToPlainString(U.t.DC6h3G, {
-    date: h
+    date: m
   });
   return l.useEffect(() => {
     y.default.track(k.rMx.CHANNEL_NOTICE_VIEWED, {
@@ -302,7 +302,7 @@ function W(e) {
       text: n,
       fullWidth: true,
       onClick: () => {
-        null != t && null != t.getGuildId() && ((0, h.Cq)(t), (0, m.XU)(t.getGuildId(), t.id))
+        null != t && null != t.getGuildId() && ((0, m.Cq)(t), (0, h.XU)(t.getGuildId(), t.id))
       }
     })
   })
@@ -351,16 +351,16 @@ function Q(e) {
     channel: t,
     speakers: n,
     voiceType: r
-  } = e, a = t.getGuildId(), d = l.useMemo(() => n.slice(0, 3), [n]), p = (0, o.e7)([I.Z], () => I.Z.can(k.Plq.CONNECT, t)), f = (0, O.Z)(t.id), m = U.intl.string(U.t.VJlc0S);
+  } = e, a = t.getGuildId(), d = l.useMemo(() => n.slice(0, 3), [n]), p = (0, o.e7)([I.Z], () => I.Z.can(k.Plq.CONNECT, t)), f = (0, O.Z)(t.id), h = U.intl.string(U.t.VJlc0S);
   switch (r) {
     case 1:
-      m = U.intl.string(U.t.VJlc0S);
+      h = U.intl.string(U.t.VJlc0S);
       break;
     case 2:
-      m = U.intl.string(U.t.ZYO5OK), (null == f ? true : f.speaker) ? m = U.intl.string(U.t["/cnSFc"]) : null != f && (m = U.intl.string(U.t.btSGOj));
+      h = U.intl.string(U.t.ZYO5OK), (null == f ? true : f.speaker) ? h = U.intl.string(U.t["/cnSFc"]) : null != f && (h = U.intl.string(U.t.btSGOj));
       break;
     case 3:
-      m = U.intl.string(U.t.wBoE6L);
+      h = U.intl.string(U.t.wBoE6L);
       break;
     default:
       (0, C.vE)(r)
@@ -381,7 +381,7 @@ function Q(e) {
       })]
     }) : null, p && null == f && (0, i.jsx)(W, {
       channel: t,
-      label: m
+      label: h
     })]
   })
 }
@@ -400,14 +400,14 @@ let J = Chunk647438.memo(function(e) {
     isEventNoticeHidden: j.Z.isLiveChannelNoticeHidden({
       eventId: null == l ? true : l.id
     })
-  }), [s, l]), d = null, m = null != s && null != r && !c;
+  }), [s, l]), d = null, h = null != s && null != r && !c;
   if (n) return (0, i.jsx)(f.Z, {
     guild: t
   });
-  null == l || u ? m && (d = (0, i.jsx)(q, {
+  null == l || u ? h && (d = (0, i.jsx)(q, {
     stageInstance: s,
     channel: r
-  })) : l.entity_type === M.WX.STAGE_INSTANCE && m ? d = (0, i.jsx)(q, {
+  })) : l.entity_type === M.WX.STAGE_INSTANCE && h ? d = (0, i.jsx)(q, {
     stageInstance: s,
     channel: r
   }) : l.entity_type === M.WX.EXTERNAL ? d = (0, i.jsx)(z, {
@@ -416,8 +416,8 @@ let J = Chunk647438.memo(function(e) {
     guildEvent: l,
     channel: r
   }));
-  let h = t.features.has(k.GuildFeatures.COMMUNITY);
-  if (null == d && null != a && !h) {
+  let m = t.features.has(k.GuildFeatures.COMMUNITY);
+  if (null == d && null != a && !m) {
     let {
       upcomingEvent: e,
       noticeType: t

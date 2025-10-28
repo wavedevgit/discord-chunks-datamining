@@ -120,7 +120,7 @@ let j = (0, Chunk647438.memo)(function(e) {
         style: {
           top: L
         },
-        children: (0, r.jsx)(m.Z, {
+        children: (0, r.jsx)(h.Z, {
           avatarDecorationOverride: X,
           user: B,
           guildId: null
@@ -129,7 +129,7 @@ let j = (0, Chunk647438.memo)(function(e) {
         className: N.image
       }) : Q ? (0, r.jsx)(y.Z, {
         className: N.image
-      }) : et.isAnimated ? (0, r.jsx)(h.Z, {
+      }) : et.isAnimated ? (0, r.jsx)(m.Z, {
         className: N.assetBlurred,
         autoPlay: false,
         children: (0, r.jsx)("source", {

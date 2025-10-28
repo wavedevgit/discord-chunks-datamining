@@ -69,7 +69,7 @@ class E extends Chunk317770.Z {
         source: t
       }, n))
     }, {
-      modalKey: h.dG,
+      modalKey: m.dG,
       onCloseRequest: g.dG4,
       backdropStyle: (0, s.bj)(t) ? i.fCB.LIGHTBOX : true
     })
@@ -81,7 +81,7 @@ class E extends Chunk317770.Z {
     let {
       underageMessage: t
     } = e;
-    (0, i.oav)(h.dG, e => (0, r.jsx)(m.default, b({
+    (0, i.oav)(m.dG, e => (0, r.jsx)(h.default, b({
       underageMessage: t
     }, e)))
   }

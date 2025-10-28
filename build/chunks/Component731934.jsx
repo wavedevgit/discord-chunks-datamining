@@ -53,9 +53,9 @@ function P(e) {
   return e
 }
 
-function D(e, t) {
+function w(e, t) {
   if (null == e) return {};
-  var n, r, i = w(e, t);
+  var n, r, i = D(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -63,7 +63,7 @@ function D(e, t) {
   return i
 }
 
-function w(e, t) {
+function D(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -208,7 +208,7 @@ function k(e) {
           var {
             ref: t,
             role: i
-          } = e, l = D(e, ["ref", "role"]);
+          } = e, l = w(e, ["ref", "role"]);
           return (0, r.jsx)(c.aVo, P({
             innerRole: i,
             innerAriaLabel: n,

@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk50089 = require("./50089.js");
 
-function h() {
+function m() {
   return (0, Chunk951288.jsxs)(Chunk843611.rs, {
     children: [(0, Chunk951288.jsx)(Chunk765717.Z, {
       path: Chunk981631.Z5c.APPLICATION_LIBRARY_SETTINGS,
@@ -47,6 +47,6 @@ let g = Chunk647438.memo(function() {
     className: Chunk50089.container,
     children: [(0, Chunk951288.jsx)(Chunk252618.yY, {
       location: Chunk388032.intl.string(Chunk388032.t.cw57ar)
-    }), (0, Chunk951288.jsx)(h, {})]
+    }), (0, Chunk951288.jsx)(m, {})]
   })
 })

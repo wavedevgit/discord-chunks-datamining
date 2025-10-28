@@ -29,8 +29,8 @@ var Chunk507604 = require("./507604.js"),
   N = Chunk127849.SyntaxError,
   R = Chunk46015(C.exec),
   P = Chunk46015("".charAt),
-  D = Chunk46015("".replace),
-  w = Chunk46015("".indexOf),
+  w = Chunk46015("".replace),
+  D = Chunk46015("".indexOf),
   L = Chunk46015("".slice),
   x = /^\?<[^\s\d!#%&*+<=>@^][^\s!#%&*+<=>@^]*>/,
   M = /a/g,
@@ -80,7 +80,7 @@ if (Chunk275717("RegExp", B)) {
         g = [],
         E = e;
       if (!u && h && m && e.constructor === V) return e;
-      if ((h || d(C, e)) && (e = e.source, m && (t = p(E))), e = true === e ? "" : _(e), t = true === t ? "" : _(t), E = e, I && "dotAll" in M && (r = !!t && w(t, "s") > false) && (t = D(t, /s/g, "")), n = t, U && "sticky" in M && (i = !!t && w(t, "y") > false) && G && (t = D(t, /y/g, "")), T && (e = (a = F(e))[0], g = a[1]), o = s(A(e, t), u ? this : C, V), (r || i || g.length) && (c = y(o), r && (c.dotAll = true, c.raw = V(Z(e), n)), i && (c.sticky = true), g.length && (c.groups = g)), e !== E) try {
+      if ((h || d(C, e)) && (e = e.source, m && (t = p(E))), e = true === e ? "" : _(e), t = true === t ? "" : _(t), E = e, I && "dotAll" in M && (r = !!t && D(t, "s") > false) && (t = w(t, /s/g, "")), n = t, U && "sticky" in M && (i = !!t && D(t, "y") > false) && G && (t = w(t, /y/g, "")), T && (e = (a = F(e))[0], g = a[1]), o = s(A(e, t), u ? this : C, V), (r || i || g.length) && (c = y(o), r && (c.dotAll = true, c.raw = V(Z(e), n)), i && (c.sticky = true), g.length && (c.groups = g)), e !== E) try {
         l(o, "source", "" === E ? "(?:)" : E)
       } catch (e) {}
       return o

@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 886162, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,18 +16,18 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk734305 = require("./734305.js");
 
-function h(e) {
+function m(e) {
   let {
     transitionState: t
-  } = e, h = (0, a.e7)([d.Z], () => d.Z.getAction()), [g, _] = i.useState(false), b = (0, u.Dt)();
+  } = e, m = (0, a.e7)([d.Z], () => d.Z.getAction()), [g, _] = i.useState(false), b = (0, u.Dt)();
   async function E() {
-    return _(true), h === p.c2C.AGREEMENTS && _(await (0, o.Lr)()), null
+    return _(true), m === p.c2C.AGREEMENTS && _(await (0, o.Lr)()), null
   }
   return (0, c.Z)({
     type: l.ImpressionTypes.VIEW,
     name: l.ImpressionNames.USER_AGREEMENTS,
     properties: {
-      required_action: h
+      required_action: m
     }
   }, {}, []), (0, r.jsxs)(s.Y0X, {
     "aria-labelledby": b,
@@ -44,13 +44,13 @@ function h(e) {
     }), (0, r.jsxs)(s.hzk, {
       children: [(0, r.jsx)(s.Text, {
         variant: "text-md/normal",
-        children: h === p.c2C.AGREEMENTS ? f.intl.format(f.t.CN0Hvb, {
+        children: m === p.c2C.AGREEMENTS ? f.intl.format(f.t.CN0Hvb, {
           url: p.EYA.TERMS_SUMMARY
         }) : null
       }), (0, r.jsxs)("div", {
-        className: m.container,
+        className: h.container,
         children: [(0, r.jsxs)("ul", {
-          className: m.links,
+          className: h.links,
           children: [(0, r.jsx)("li", {
             children: f.intl.format(f.t.iw0hFi, {
               url: p.EYA.TERMS
@@ -69,13 +69,13 @@ function h(e) {
             })
           })]
         }), (0, r.jsx)("img", {
-          className: m.image,
+          className: h.image,
           alt: "",
           src: n(146714)
         })]
       }), (0, r.jsx)(s.Text, {
         variant: "text-md/normal",
-        className: m.agreementDescription,
+        className: h.agreementDescription,
         children: f.intl.string(f.t["+USXQE"])
       })]
     }), (0, r.jsx)(s.mzw, {

@@ -57,7 +57,7 @@ async function T(e, t, n) {
   let r = _.Z.getHydratedItems(),
     i = e.slice(t, n);
   if (0 === i.length) return;
-  m.Z.loadHydratedAttempt(v(t, n));
+  h.Z.loadHydratedAttempt(v(t, n));
   let l = i.filter(e => null == r[e.id]),
     a = l.filter(e => e.type === b.Ni.MESSAGE).map(e => ({
       channel_id: e.data.channel_id,
@@ -94,7 +94,7 @@ async function T(e, t, n) {
       guild_id: e.data.guild_id,
       channel_id: e.data.channel_id
     }));
-  await m.Z.fetchHydrated(t, n, {
+  await h.Z.fetchHydrated(t, n, {
     messageItems: [...a, ...s],
     summaryItems: o,
     activityItems: c,
@@ -232,7 +232,7 @@ function Z(e, t) {
 }
 
 function w(e) {
-  return (0, h.VZ)(e)
+  return (0, m.VZ)(e)
 }
 
 function L(e) {
@@ -354,8 +354,8 @@ async function U(e) {
       object: e,
       objectType: r.ACK_SEMI_AUTOMATIC
     }, true, true, f.default.atPreviousMillisecond(n.data.message_id))
-  }), await m.Z.clearReadStates(), await m.Z.fetchDehydrated({
+  }), await h.Z.clearReadStates(), await h.Z.fetchDehydrated({
     isReloading: true,
     forceRefresh: true
-  }), await m.Z.reloadICYMITab(), await m.Z.getGuildChannelScores(), m.Z.getRecommendedGuilds()
+  }), await h.Z.reloadICYMITab(), await h.Z.getGuildChannelScores(), h.Z.getRecommendedGuilds()
 }

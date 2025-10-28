@@ -91,13 +91,13 @@ let G = (e, t, n) => (0, i.wj)(e) ? t : n,
       customAppIcons: {
         title: _.intl.string(_.t.OuItFi),
         description: _.intl.string(_.t.mPyrE6),
-        imageSource: D,
+        imageSource: w,
         imageClassName: t.customAppIconImage
       },
       emoji: {
         title: _.intl.string(_.t["R2IV/Q"]),
         description: _.intl.string(_.t.R5Xag2),
-        imageSource: w,
+        imageSource: D,
         imageClassName: t.emojiImage
       },
       guildProfile: {

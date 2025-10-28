@@ -278,7 +278,7 @@ class ef extends Chunk647438.PureComponent {
       } = this.props;
       (0, h.Ou)();
       let n = null != (e = t.getGuildId()) ? e : ei.ME;
-      (0, w.XU)(n, t.id), p.Z.channelListScrollTo(n, t.id);
+      (0, D.XU)(n, t.id), p.Z.channelListScrollTo(n, t.id);
       let r = this.activeStreamForSelectedParticipant;
       null != r && _.Z.selectParticipant(r.channelId, (0, A.V9)(r))
     }), el(this, "handleStopStream", () => {
@@ -295,7 +295,7 @@ class ef extends Chunk647438.PureComponent {
       let {
         channel: e
       } = this.props;
-      (0, v.v)(g.Z.VIDEO_PIP, v.d.POPOUT, true), D.hP(e)
+      (0, v.v)(g.Z.VIDEO_PIP, v.d.POPOUT, true), w.hP(e)
     }), el(this, "renderBottomLeftControls", () => {
       let {
         canSeeParticipantName: e

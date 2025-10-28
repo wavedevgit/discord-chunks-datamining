@@ -80,7 +80,7 @@ function P(e) {
   }, false)
 }
 
-function D(e) {
+function w(e) {
   let t = false;
   for (let n of e.voiceStates) {
     let [r] = L(e.guildId, n);
@@ -90,7 +90,7 @@ function D(e) {
   return t && h++, t
 }
 
-function w(e) {
+function D(e) {
   let {
     userId: t,
     channelId: n,
@@ -258,6 +258,6 @@ let F = new Z(Chunk570140.Z, {
   GUILD_CREATE: U,
   CHANNEL_DELETE: G,
   CALL_DELETE: B,
-  PASSIVE_UPDATE_V2: D,
-  RTC_CONNECTION_PLATFORM: w
+  PASSIVE_UPDATE_V2: w,
+  RTC_CONNECTION_PLATFORM: D
 })

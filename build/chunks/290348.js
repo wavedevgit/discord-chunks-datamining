@@ -71,7 +71,7 @@ function P(e) {
   return e
 }
 
-function D(e, t) {
+function w(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -82,8 +82,8 @@ function D(e, t) {
   return n
 }
 
-function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
+function D(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -260,7 +260,7 @@ function ee(e) {
 function et(e, t) {
   (0, c.j)(() => {
     S.n.setState(n => ({
-      listings: w(P({}, n.listings), {
+      listings: D(P({}, n.listings), {
         [t]: n.listings[e]
       })
     }))
@@ -274,7 +274,7 @@ function en(e) {
 function er(e, t) {
   (0, c.j)(() => {
     S.n.setState(n => ({
-      listings: w(P({}, n.listings), {
+      listings: D(P({}, n.listings), {
         [t]: n.listings[e],
         [e]: true
       })

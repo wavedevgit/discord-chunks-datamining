@@ -34,7 +34,7 @@ let E = function() {
       theme: module,
       children: e => (0, r.jsxs)(u.Z, {
         className: e,
-        toolbar: (0, r.jsx)(h.F, {}),
+        toolbar: (0, r.jsx)(m.F, {}),
         role: "navigation",
         "aria-labelledby": t,
         children: [(0, r.jsx)(u.Z.Icon, {

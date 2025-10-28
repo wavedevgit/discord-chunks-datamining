@@ -101,11 +101,11 @@ let N = Chunk647438.memo(function(e) {
     title: N,
     renderFooter: R,
     contentOpacity: P,
-    status: D,
-    containerRef: w,
+    status: w,
+    containerRef: D,
     className: L,
     wrapperClassName: x
-  } = e, [M, k] = i.useState(false), j = n || M || D === E._1z.FOCUSED, U = (0, l.e7)([m.Z, h.Z], () => {
+  } = e, [M, k] = i.useState(false), j = n || M || w === E._1z.FOCUSED, U = (0, l.e7)([m.Z, h.Z], () => {
     var e;
     return m.Z.isInputLocked(null != (e = h.Z.getFocusedPID()) ? e : (0, f.getPID)())
   });
@@ -213,7 +213,7 @@ let N = Chunk647438.memo(function(e) {
       className: o()(y.overflowWrapper, x),
       onScroll: C,
       children: (0, r.jsx)(u.P3F, {
-        innerRef: w,
+        innerRef: D,
         ignoreKeyPress: true,
         onMouseOver: F,
         onMouseLeave: V,
@@ -266,16 +266,16 @@ function P(e) {
     children: n
   }) : n
 }
-let D = {
+let w = {
   mass: 1,
   friction: 8,
   tension: 300
 };
 
-function w() {
+function D() {
   let [e, t] = Chunk647438.useState(false), [n, r] = Chunk647438.useState(false), a = (0, Chunk481060.q_F)({
     scale: module ? .975 : 1,
-    config: D,
+    config: w,
     onRest: () => {
       exports(false), setTimeout(() => {
         Chunk951288(false)
@@ -316,11 +316,11 @@ function L(e) {
   }, [c, f]), {
     clickSpring: O,
     handleMouseClick: I
-  } = w(), A = i.useCallback(e => {
+  } = D(), A = i.useCallback(e => {
     null == _ || _(e, c), I()
   }, [_, c, I]), C = i.useCallback(e => {
     null == p || p(e, c)
-  }, [p, c]), D = i.useCallback(e => {
+  }, [p, c]), w = i.useCallback(e => {
     null == h || h(e, c)
   }, [h, c]), L = i.useCallback((e, t) => null == m ? true : m(e, c, t), [m, c]), {
     props: {
@@ -354,7 +354,7 @@ function L(e) {
         onDismissClick: y,
         onNotificationClick: A,
         onConfirmClick: null != p ? C : true,
-        onCancelClick: null != h ? D : true,
+        onCancelClick: null != h ? w : true,
         renderFooter: L,
         expand: false,
         index: n,

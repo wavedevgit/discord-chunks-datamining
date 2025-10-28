@@ -15,7 +15,6 @@ var Chunk951288 = require("./951288.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk129861 = require("./129861.jsx"),
-  Chunk279837 = require("./279837.jsx"),
   Chunk168107 = require("./168107.jsx"),
   Chunk480916 = require("./480916.js"),
   Chunk81643 = require("./81643.js"),
@@ -33,6 +32,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk518950 = require("./518950.js"),
   Chunk184325 = require("./184325.jsx"),
   Chunk867176 = require("./867176.jsx"),
+  Chunk355497 = require("./355497.jsx"),
   Chunk25990 = require("./25990.js"),
   Chunk594174 = require("./594174.js"),
   Chunk572004 = require("./572004.js"),
@@ -100,13 +100,13 @@ function $(e) {
   let {
     className: s,
     user: l
-  } = e, c = i.useRef(null), _ = (0, I.o9)(), p = (0, T.b)(), h = (0, O.gS)(), m = null != (a = null == h || null == (t = h.nick) ? true : t[0]) ? a : null, [g, E] = i.useState(false);
+  } = e, c = i.useRef(null), _ = (0, v.o9)(), p = (0, I.b)(), h = (0, y.gS)(), m = null != (a = null == h || null == (t = h.nick) ? true : t[0]) ? a : null, [g, E] = i.useState(false);
   i.useEffect(() => {
     E(null != c.current && c.current.scrollWidth > c.current.clientWidth)
   }, [l.username]);
   let b = !l.isClaimed(),
-    y = _ && !l.hasUniqueUsername() && !l.hasVerifiedEmailOrPhone() || b,
-    v = y ? Y.intl.string(Y.t["7Ngnyr"]) : true;
+    O = _ && !l.hasUniqueUsername() && !l.hasVerifiedEmailOrPhone() || b,
+    T = O ? Y.intl.string(Y.t["7Ngnyr"]) : true;
   return (0, r.jsxs)("div", {
     className: o()(W.field, s),
     children: [(0, r.jsx)("div", {
@@ -157,7 +157,7 @@ function $(e) {
         })
       })
     }), (0, r.jsx)(d.u, {
-      text: v,
+      text: T,
       children: (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: W.fieldButton,
@@ -165,7 +165,7 @@ function $(e) {
           variant: "secondary",
           size: "sm",
           text: g ? Y.intl.string(Y.t["16kTw/"]) : Y.intl.string(Y.t.bt75uw),
-          disabled: y,
+          disabled: O,
           "aria-label": Y.intl.string(Y.t.JECa91),
           onClick: () => (0, f.ZDy)(async () => {
             if (p) {
@@ -193,7 +193,7 @@ function ee(e) {
   let {
     user: a,
     className: s
-  } = e, l = (0, O.gS)(), c = null != (n = null == l || null == (t = l.nick) ? true : t[0]) ? n : null, _ = M.ZP.getGlobalName(a), p = i.useRef(null), [h, m] = i.useState(false);
+  } = e, l = (0, y.gS)(), c = null != (n = null == l || null == (t = l.nick) ? true : t[0]) ? n : null, _ = M.ZP.getGlobalName(a), p = i.useRef(null), [h, m] = i.useState(false);
   return i.useEffect(() => {
     m(null != p.current && p.current.scrollWidth > p.current.clientWidth)
   }, [_]), (0, r.jsxs)("div", {
@@ -304,7 +304,7 @@ function en(e) {
     buttonText: Y.intl.string(Y.t.BleMPB),
     buttonAriaLabel: Y.intl.string(Y.t.BleMPB),
     valueMessage: Y.intl.string(Y.t.qxk9zo),
-    handleClick: () => E.Z.openClaimAccountModal()
+    handleClick: () => g.Z.openClaimAccountModal()
   };
   return (0, r.jsxs)("div", {
     className: o()(W.field, i),
@@ -355,7 +355,7 @@ function er(e) {
         default: e
       } = await Promise.resolve().then(n.bind(n, 607018));
       return t => (0, r.jsx)(e, z({
-        reason: v.L.USER_SETTINGS_UPDATE
+        reason: O.L.USER_SETTINGS_UPDATE
       }, t))
     }, {
       modalKey: V.M
@@ -363,11 +363,11 @@ function er(e) {
   }
 
   function _() {
-    (0, f.h7j)(e => (0, r.jsx)(p.Z, X(z({}, e), {
+    (0, f.h7j)(e => (0, r.jsx)(w.Z, X(z({}, e), {
       title: Y.intl.string(Y.t["3CTiKi"]),
       children: a.hasFlag(F.xW$.MFA_SMS) ? Y.intl.string(Y.t.jrhJyo) : true,
       actionText: Y.intl.string(Y.t.N86XcP),
-      handleSubmit: e => v.Z.removePhone(e, v.L.USER_SETTINGS_UPDATE)
+      handleSubmit: e => O.Z.removePhone(e, O.L.USER_SETTINGS_UPDATE)
     })))
   }
   return t = c ? (0, r.jsx)(et, {
@@ -422,7 +422,7 @@ function er(e) {
 function ei(e) {
   let {
     user: t
-  } = e, n = (0, b.Z)({
+  } = e, n = (0, E.Z)({
     id: t.id,
     label: Y.intl.string(Y.t["/AXYnE"])
   }), a = j.Sb.useSetting(), o = i.useRef(null);
@@ -456,7 +456,7 @@ function ei(e) {
 function ea(e) {
   let {
     className: t
-  } = e, n = (0, g.l6)(), a = (0, g.Jm)(), s = !n || a, l = i.useMemo(() => n ? a ? Y.intl.string(Y.t.sK0dmH) : Y.intl.string(Y.t.XxRj7f) : Y.intl.string(Y.t.UX0Ode), [n, a]);
+  } = e, n = (0, m.l6)(), a = (0, m.Jm)(), s = !n || a, l = i.useMemo(() => n ? a ? Y.intl.string(Y.t.sK0dmH) : Y.intl.string(Y.t.XxRj7f) : Y.intl.string(Y.t.UX0Ode), [n, a]);
   return (0, r.jsxs)("div", {
     className: o()(W.field, t),
     children: [(0, r.jsx)("div", {
@@ -483,8 +483,8 @@ function ea(e) {
         size: "sm",
         text: a ? Y.intl.string(Y.t.KPGVWl) : Y.intl.string(Y.t.yNGjyK),
         "aria-label": a ? Y.intl.string(Y.t.KPGVWl) : Y.intl.string(Y.t.yNGjyK),
-        onClick: () => h.Z.showAgeVerificationGetStartedModal({
-          entryPoint: m.cU.ACCOUNT_AGE_GROUP
+        onClick: () => p.Z.showAgeVerificationGetStartedModal({
+          entryPoint: h.cU.ACCOUNT_AGE_GROUP
         })
       })
     })]
@@ -518,7 +518,7 @@ function eo() {
       avatarSize: Chunk481060.EFr.SIZE_80,
       avatarOffsetX: 16,
       avatarOffsetY: false,
-      bannerWidth: Chunk279837 ? 696 : 660,
+      bannerWidth: Chunk168107 ? 696 : 660,
       bannerHeight: 100,
       themePadding: 0
     }), (0, Chunk951288.jsxs)("div", {

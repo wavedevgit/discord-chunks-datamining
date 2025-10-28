@@ -70,9 +70,9 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
             let e = (0, l.R)() ? I.KJ3.ACTIVITY_POPOUT : null;
             f.Z.focus(e, true)
           }
-          let m = u.Z.getApplication(null == (o = t.application) ? true : o.id),
+          let h = u.Z.getApplication(null == (o = t.application) ? true : o.id),
             _ = (0, c.p)(null == r ? true : r.location),
-            b = (null == m ? true : m.id) !== true ? N.get(m.id) : true;
+            b = (null == h ? true : h.id) !== true ? N.get(h.id) : true;
           if (true !== b && b.trustedUntilEpochMs >= Date.now() && b.trustedHosts.has(e.host)) return (0, i.Z)(a), p.default.track(I.rMx.RPC_OPEN_EXTERNAL_LINK_CALLED, {
             application_id: null == (d = t.application) ? true : d.id,
             url: a,
@@ -80,7 +80,7 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
           }), Promise.resolve({
             opened: true
           });
-          return new Promise(e => (0, h.q)({
+          return new Promise(e => (0, m.q)({
             href: a,
             shouldConfirm: true,
             onConfirm: () => {
@@ -104,7 +104,7 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
               })
             }
           }, true, true, (0, s.z)({
-            application: m,
+            application: h,
             channelId: _
           })))
         } catch (e) {
@@ -157,7 +157,7 @@ let C = new Set([Chunk701488.Fu, Chunk701488.JT]),
         if (null == a) throw new _.Z({
           errorCode: I.lTL.INVALID_COMMAND
         }, "No application.");
-        if (!(0, m.yE)(null != (t = n.application.flags) ? t : 0, I.udG.EMBEDDED)) throw new _.Z({
+        if (!(0, h.yE)(null != (t = n.application.flags) ? t : 0, I.udG.EMBEDDED)) throw new _.Z({
           errorCode: I.lTL.INVALID_COMMAND
         }, "This application cannot access this API");
         return new Promise(e => {

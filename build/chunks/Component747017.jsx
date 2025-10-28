@@ -40,10 +40,10 @@ function I(e) {
     hideTooltip: P = false
   } = e;
   (0, u.Z)(null == t ? true : t.id);
-  let D = (null == a ? true : a.discoverable) !== false ? a : null,
-    w = (0, f.E)("ActivityStatus", I),
+  let w = (null == a ? true : a.discoverable) !== false ? a : null,
+    D = (0, f.E)("ActivityStatus", I),
     L = (0, l.e7)([_.default], () => _.default.getId() === (null == t ? true : t.id)),
-    x = (0, l.e7)([d.Z], () => w ? L ? d.Z.getHangStatusActivity() : null != n ? n.find(e => e.type === O.IIU.HANG_STATUS) : null : null),
+    x = (0, l.e7)([d.Z], () => D ? L ? d.Z.getHangStatusActivity() : null != n ? n.find(e => e.type === O.IIU.HANG_STATUS) : null : null),
     M = i.useMemo(() => {
       var e, t;
       let r = null == n ? true : n.find(e => {
@@ -60,8 +60,8 @@ function I(e) {
   let k = (null == t ? true : t.bot) === true,
     j = ((null == M ? true : M.state) != null || null != x) && "xs" === A,
     U = () => {
-      if (null != D) return (0, r.jsx)(m.Z, {
-        stream: D,
+      if (null != w) return (0, r.jsx)(m.Z, {
+        stream: w,
         game: null == n ? true : n.find(c.Z),
         textVariant: "text-".concat(A, "/medium"),
         textClassName: T,

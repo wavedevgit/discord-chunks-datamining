@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 558652, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./388685.js"), require("./704826.js"), require("./35282.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,10 +14,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk46140 = require("./46140.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk872058 = require("./872058.js");
-let m = [];
+let h = [];
 
-function h() {
-  let [e, t] = Chunk647438.useState(Chunk46140.yq.SUGGESTED), [n, h] = Chunk647438.useState(m), {
+function m() {
+  let [e, t] = Chunk647438.useState(Chunk46140.yq.SUGGESTED), [n, m] = Chunk647438.useState(h), {
     quests: g,
     isFetchingCurrentQuests: _,
     hasFetched: b
@@ -25,7 +25,7 @@ function h() {
     sortMethod: module,
     filters: require
   }), [module, require])), E = Chunk647438.useCallback(() => {
-    h(m)
+    m(h)
   }, []), O = Chunk647438.useRef(null), I = Chunk647438.useRef(null), v = (0, Chunk843611.TH)(), y = (0, Chunk843611.k6)();
   return Chunk647438.useEffect(() => {
     if ("" !== v.hash && null != O.current && null != I.current) {
@@ -81,7 +81,7 @@ function h() {
           optionClassName: Chunk872058.filterSortOption,
           selectedSortMethod: module
         }), (0, Chunk951288.jsx)(Chunk264282.Z, {
-          onChange: h,
+          onChange: m,
           optionClassName: Chunk872058.filterSortOption,
           selectedFilters: require
         })]

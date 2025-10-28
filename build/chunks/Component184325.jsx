@@ -105,8 +105,8 @@ function U(e) {
     trackUserProfileAction: Z
   } = (0, v.KZ)(), F = E.default.getCurrentUser(), V = (0, y.yd)(null == F ? true : F.premiumType, R.PremiumTypes.TIER_2), H = (0, S.Of)(null != (t = null == F ? true : F.id) ? t : null), Y = (0, T.Z)(H).some(e => e.id === m.l.ORB_PROFILE_BADGE);
   return (0, r.jsx)("div", {
-    className: a()(w.container, i),
-    "aria-label": D.intl.string(D.t.VWV0y5),
+    className: a()(D.container, i),
+    "aria-label": w.intl.string(w.t.VWV0y5),
     role: "group",
     children: n.map((e, t) => {
       var n;
@@ -184,7 +184,7 @@ function U(e) {
             alt: " ",
             "aria-hidden": true,
             src: null != (n = e.iconSrc) ? n : (0, A.Ej)(e.icon),
-            className: a()(w.badge, d)
+            className: a()(D.badge, d)
           })
         })
       }, "".concat(e.id, "-").concat(t))

@@ -170,7 +170,7 @@ function N(e) {
     }
   }
   if (null != h && null != _) {
-    D(i, h) || w(i, h);
+    w(i, h) || D(i, h);
     let e = m.tM(i, h, s.id),
       t = y.bN.above(i, {
         match: e => y.bN.isInline(i, e) && "applicationCommandOption" === e.type,
@@ -271,7 +271,7 @@ function R(e, t, n) {
     })
   });
   let N = null;
-  return null != T ? (b.Q.selectCommandOption(e, T.optionName), N = T.optionName) : null != A ? (b.Q.selectCommandOption(e, A.optionName, false), N = A.optionName) : b.Q.resetSelectionToEditorEnd(e), null == A && w(e, u), N
+  return null != T ? (b.Q.selectCommandOption(e, T.optionName), N = T.optionName) : null != A ? (b.Q.selectCommandOption(e, A.optionName, false), N = A.optionName) : b.Q.resetSelectionToEditorEnd(e), null == A && D(e, u), N
 }
 
 function P(e, t, n, r) {
@@ -296,7 +296,7 @@ function P(e, t, n, r) {
   })
 }
 
-function D(e, t) {
+function w(e, t) {
   if (null == t.options || 0 === t.options.length) returnfalse;
   let n = m.zb(e, t);
   return 0 !== n.length && (y.bN.withoutNormalizing(e, () => {
@@ -331,7 +331,7 @@ function D(e, t) {
   }), true)
 }
 
-function w(e, t) {
+function D(e, t) {
   if (null == t.options || 1 !== t.options.length || true === t.options[0].required || S.has(t.options[0].type) || m.cu(e).length > 0 || null == m.cr(e)) returnfalse;
   let n = y.bN.getFirstText(e);
   if (null == n) returnfalse;

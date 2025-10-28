@@ -15,7 +15,6 @@ var Chunk951288 = require("./951288.js"),
   Chunk816814 = require("./816814.js"),
   Chunk809206 = require("./809206.js"),
   Chunk497321 = require("./497321.jsx"),
-  Chunk279837 = require("./279837.jsx"),
   Chunk952306 = require("./952306.jsx"),
   Chunk690221 = require("./690221.jsx"),
   Chunk332473 = require("./332473.js"),
@@ -24,6 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk921801 = require("./921801.js"),
   Chunk577275 = require("./577275.js"),
   Chunk484459 = require("./484459.js"),
+  Chunk355497 = require("./355497.jsx"),
   Chunk430824 = require("./430824.js"),
   Chunk325067 = require("./325067.js"),
   Chunk246946 = require("./246946.js"),
@@ -355,7 +355,7 @@ class z extends Chunk647438.PureComponent {
       shouldRenderOwnedTeamsModal: true
     }) : Chunk512722.length > 0 ? void this.setState({
       shouldRenderOwnedGuildsModal: true
-    }) : void(require.isClaimed() ? (0, Chunk481060.h7j)(e => (0, r.jsx)(_.Z, W(H({}, e), {
+    }) : void(require.isClaimed() ? (0, Chunk481060.h7j)(e => (0, r.jsx)(O.Z, W(H({}, e), {
       handleSubmit: e => this.handleSubmitDisableAccount(e, t),
       title: t ? B.intl.string(B.t["8lQ2rR"]) : B.intl.string(B.t.jf5GGb),
       actionText: t ? B.intl.string(B.t["8lQ2rR"]) : B.intl.string(B.t.jf5GGb),

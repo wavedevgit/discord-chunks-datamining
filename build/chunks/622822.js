@@ -97,16 +97,16 @@ function R(e) {
 }
 
 function P(e) {
-  return null != e && D(f.Z.getGuild(e))
+  return null != e && w(f.Z.getGuild(e))
 }
 
-function D(e) {
+function w(e) {
   let t = (0, a.u)("age_verification_utils"),
     n = (0, o.yo)();
   return t && n && (null == e ? true : e.features.has(E.GuildFeatures.AGE_VERIFICATION_LARGE_GUILD))
 }
 
-function w(e) {
+function D(e) {
   let t = (0, a.z)("age_verification_utils"),
     n = (0, o.Jm)();
   return t && n && (null == e ? true : e.features.has(E.GuildFeatures.AGE_VERIFICATION_LARGE_GUILD))
@@ -150,7 +150,7 @@ function U(e) {
       return (null == (e = _.default.getCurrentUser()) ? true : e.nsfwAllowed) === false
     }),
     l = j(),
-    u = w(e),
+    u = D(e),
     d = b.intl.string(n ? b.t.xi46lg : b.t.ZmwvDc);
   if (l) {
     if (u) {

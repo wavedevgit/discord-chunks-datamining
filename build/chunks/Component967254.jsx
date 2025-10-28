@@ -146,12 +146,12 @@ let C = e => {
       children: (0, h.XX)(t)
     })
   },
-  D = () => (0, Chunk951288.jsx)(Chunk481060.Text, {
+  w = () => (0, Chunk951288.jsx)(Chunk481060.Text, {
     variant: "text-xs/bold",
     className: Chunk712243.newBadge,
     children: Chunk388032.intl.string(Chunk388032.t.QKMRC4)
   }),
-  w = e => {
+  D = e => {
     let {
       classification: t
     } = e, {
@@ -192,7 +192,7 @@ let C = e => {
       }),
       children: (0, r.jsxs)("div", {
         className: v.descriptionContainer,
-        children: [u ? (0, r.jsx)(D, {}) : (0, r.jsx)(P, {
+        children: [u ? (0, r.jsx)(w, {}) : (0, r.jsx)(P, {
           timestamp: c
         }), (0, r.jsx)(l.Heading, {
           variant: "heading-lg/normal",
@@ -231,7 +231,7 @@ let C = e => {
             height: "1px",
             width: "100%"
           }
-        }), h.length > 0 && h.map(e => (0, r.jsx)(w, {
+        }), h.length > 0 && h.map(e => (0, r.jsx)(D, {
           classification: e
         }, e.id)), h.length < n.length && (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(l.njP.Separator, {

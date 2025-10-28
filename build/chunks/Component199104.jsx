@@ -28,9 +28,9 @@ function I(e) {
     isStandalone: t
   } = e, {
     analyticsLocations: n
-  } = (0, d.ZP)(u.Z.ACTIVE_NOW_COLUMN), i = (0, a.e7)([g.Z], () => g.Z.hasConsented(b.pjP.PERSONALIZATION)) ? [] : [s.z.NOW_PLAYING_CONSENT_CARD], I = m.o.useConfig({
+  } = (0, d.ZP)(u.Z.ACTIVE_NOW_COLUMN), i = (0, a.e7)([g.Z], () => g.Z.hasConsented(b.pjP.PERSONALIZATION)) ? [] : [s.z.NOW_PLAYING_CONSENT_CARD], I = h.o.useConfig({
     location: "nowplaying"
-  }).demureActivityCards, v = m.o.useConfig({
+  }).demureActivityCards, v = h.o.useConfig({
     location: "nowplaying"
   }).friendsTab, y = (0, p.Dt)();
   return (0, r.jsx)(d.Gt, {
@@ -63,7 +63,7 @@ function I(e) {
                   visibleContent: t,
                   markAsDismissed: n
                 } = e;
-                if (t === s.z.NOW_PLAYING_CONSENT_CARD) return (0, r.jsx)(h.Z, {
+                if (t === s.z.NOW_PLAYING_CONSENT_CARD) return (0, r.jsx)(m.Z, {
                   className: O.__invalid_consentCard,
                   markAsDismissed: n
                 })

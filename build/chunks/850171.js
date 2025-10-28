@@ -231,26 +231,26 @@ let C = async (e, t, r) => {
     name: s.S.SurveyWillPresent,
     "survey.id": O
   });
-  let D, M, j, U, G = document.createElement("div"),
+  let w, M, j, U, G = document.createElement("div"),
     B = e => {
       let {
         "view.version": t
       } = e;
       t !== A["x-ul-sdk-version"] && L(), s.e.removeListener("verify.view.version", B)
     };
-  s.e.on("verify.view.version", B), window.UserLeap.useMobileStyling = P, (0, s.h)(A) ? (D = "ul-direct-embeded-frame", M = document.head, j = window, U = false, (() => {
+  s.e.on("verify.view.version", B), window.UserLeap.useMobileStyling = P, (0, s.h)(A) ? (w = "ul-direct-embeded-frame", M = document.head, j = window, U = false, (() => {
     let e = (0, s.g)(window.UserLeap),
       t = R(e),
       n = window.UserLeap.forceDirectEmbed,
       r = "web" === e["userleap-platform"];
     return t || n && r
-  })() && (w(O, f), G.id = D, window.UserLeap.container.appendChild(G), x(), s.e.emit(s.S.SurveyLifeCycle, {
+  })() && (D(O, f), G.id = w, window.UserLeap.container.appendChild(G), x(), s.e.emit(s.S.SurveyLifeCycle, {
     state: "presented"
   }), s.e.emit(s.S.SurveyPresented, {
     name: s.S.SurveyPresented,
     "survey.id": O
   }))) : {
-    frameId: D,
+    frameId: w,
     contentWinDocHead: M,
     contentWindow: j,
     hasOverlay: U,
@@ -260,7 +260,7 @@ let C = async (e, t, r) => {
     useMobileStyling: P,
     surveyId: O,
     isFeedback: f
-  }), window.UserLeap.frameId = D;
+  }), window.UserLeap.frameId = w;
   let Z = {
     apiURL: window.UserLeap._API_URL,
     cards: g,
@@ -355,8 +355,8 @@ function R(e) {
 }
 let P = "ul-frame";
 window.UserLeap && window.Sprig && (window.Sprig._gtm ? window.Sprig = window.UserLeap : window.UserLeap = window.Sprig), window.UserLeap || (window.UserLeap = window.Sprig), window.Sprig || (window.Sprig = window.UserLeap);
-let D = "0px",
-  w = (e, t, n) => {
+let w = "0px",
+  D = (e, t, n) => {
     window.UserLeap.container = document.createElement("div"), window.UserLeap.container.className = "ul-container" + (t ? " ul-container-feedback" : ""), e && (window.UserLeap.container.dataset.studyId = e.toString());
     let r = K();
     n && r && !window.UserLeap.useMobileStyling ? r.appendChild(window.UserLeap.container) : document.body.appendChild(window.UserLeap.container)
@@ -393,7 +393,7 @@ let D = "0px",
     let o, s = {
         position: "fixed",
         bottom: "0px",
-        right: D,
+        right: w,
         border: 0,
         backgroundColor: "rgba(0,0,0,0)",
         zIndex: 0x7ffffffe,
@@ -423,12 +423,12 @@ let D = "0px",
       else switch (l.framePosition) {
         case "bottomLeft":
           o = {
-            left: D
+            left: w
           };
           break;
         case "topLeft":
           o = {
-            left: D,
+            left: w,
             top: 0
           };
           break;
@@ -466,7 +466,7 @@ let D = "0px",
     var i, a;
     let o = P,
       l = r && "slider" === e.desktopDisplay;
-    w(n, r, l), U();
+    D(n, r, l), U();
     let c = document.createElement("iframe");
     c.id = o, c.setAttribute("title", "Sprig User Feedback Dialog");
     let u = M(c, e, t, r);
@@ -908,7 +908,7 @@ let eg = e => {
   eP = () => {
     ey.report(eT[ey.name] || 0), eO.report(eT[eO.name] || 0), ev.report(eT[ev.name] || 0), eI.report(eT[eI.name] || 0), eT = {}
   },
-  eD = (e = 1e3) => {
+  ew = (e = 1e3) => {
     ey = (0, s.r)("sdk_mutations_nodes_added"), eO = (0, s.r)("sdk_mutations_nodes_removed"), ev = (0, s.r)("sdk_mutations_attributes_changed"), eI = (0, s.r)("sdk_mutations_character_data"), new MutationObserver(eR).observe(document, {
       attributes: true,
       attributeOldValue: true,
@@ -918,7 +918,7 @@ let eg = e => {
       subtree: true
     }), setInterval(eP, e)
   },
-  ew = ({
+  eD = ({
     isWeb: e,
     reportingIntervalSeconds: t,
     thresholds: n,
@@ -945,7 +945,7 @@ let eg = e => {
       eb(e, (0, s.r)("sdk_event_queue_latency_seconds"))
     })(), ((e = 1e4) => {
       r = (0, s.r)("sdk_dom_nodes_count"), i = (0, s.r)("sdk_page_html_characters"), eE(), setInterval(eE, e)
-    })(), eD())
+    })(), ew())
   },
   eL = "test",
   ex = ["popState", "pushState", "replaceState"],
@@ -1617,7 +1617,7 @@ function eQ(e = {}) {
         disabled: a.disabled
       }) : Object.assign({}, a, e)
     }(e);
-    null == (r = window.SprigLoggerCallback) || r.call(window, "Sprig fetched config"), ew({
+    null == (r = window.SprigLoggerCallback) || r.call(window, "Sprig fetched config"), eD({
       isWeb: !_,
       reportingIntervalSeconds: p.metricsReportingEnabled || p.mobileMetricsReportingEnabled ? p.metricsReportingIntervalSeconds : 0,
       thresholds: p.metricThresholds,

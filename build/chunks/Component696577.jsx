@@ -33,12 +33,12 @@ function v(e) {
   } = e, u = (null == (t = f.default.getCurrentUser()) ? true : t.isStaff()) && (null == n ? true : n.isStaff()), {
     acceptFriendRequest: d,
     cancelFriendRequest: p
-  } = (0, h.u)({
+  } = (0, m.u)({
     userId: n.id,
     applicationId: l,
     isGameRelationship: o,
     location: "Friends"
-  }), m = i.useCallback(e => {
+  }), h = i.useCallback(e => {
     e.stopPropagation(), d()
   }, [d]), _ = i.useCallback(e => {
     e.stopPropagation(), p()
@@ -54,7 +54,7 @@ function v(e) {
       icon: s.dz2,
       actionType: g.Z.ActionTypes.ACCEPT,
       tooltip: O.intl.string(O.t.Zcibdf),
-      onClick: m,
+      onClick: h,
       shouldHighlight: c
     }), (0, r.jsx)(g.Z, {
       icon: s.Dio,
@@ -74,7 +74,7 @@ function y(e) {
     active: a
   } = e, {
     cancelFriendRequest: o
-  } = (0, h.u)({
+  } = (0, m.u)({
     userId: t,
     applicationId: n,
     isGameRelationship: l,
@@ -127,7 +127,7 @@ function S(e) {
     status: i,
     isGameRelationship: l,
     applicationId: a
-  } = e, s = m.ZP.useUserTag(t);
+  } = e, s = h.ZP.useUserTag(t);
   return (0, r.jsx)(b.Z, {
     user: t,
     hovered: n,

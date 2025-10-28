@@ -35,15 +35,15 @@ var Chunk98405 = require("./98405.js"),
   N = Chunk199838.set,
   R = Chunk199838.getterFor(v),
   P = "stack" in new T(v),
-  D = function(e) {
+  w = function(e) {
     return f(g, e) && g[e].m ? g[e].c : 0
   },
-  w = function() {
+  D = function() {
     Chunk170322(this, L);
     var e = arguments.length,
       t = Chunk759319(module < 1 ? true : arguments[0]),
       n = Chunk759319(module < 2 ? true : arguments[1], "Error"),
-      r = D(require);
+      r = w(require);
     if (N(this, {
         type: v,
         name: require,
@@ -54,7 +54,7 @@ var Chunk98405 = require("./98405.js"),
       Chunk154028.name = v, c(this, "stack", Chunk530575(1, Chunk742850(Chunk154028.stack, 1)))
     }
   },
-  L = w.prototype = Chunk713411(C),
+  L = D.prototype = Chunk713411(C),
   x = function(e) {
     return {
       enumerable: true,
@@ -67,7 +67,7 @@ var Chunk98405 = require("./98405.js"),
       return R(this)[e]
     })
   };
-Chunk507604 && (Chunk573078(L, "code", M("code")), Chunk573078(L, "message", M("message")), Chunk573078(L, "name", M("name"))), c(L, "constructor", Chunk530575(1, w));
+Chunk507604 && (Chunk573078(L, "code", M("code")), Chunk573078(L, "message", M("message")), Chunk573078(L, "name", M("name"))), c(L, "constructor", Chunk530575(1, D));
 var k = Chunk621523(function() {
     return !(new S instanceof T)
   }),
@@ -84,12 +84,12 @@ Chunk98405({
   constructor: true,
   forced: B
 }, {
-  DOMException: B ? w : S
+  DOMException: B ? D : S
 });
 var Z = Chunk154028(v),
   F = Z.prototype;
 for (var V in j && (Chunk511696 || S === Z) && Chunk556585(F, "toString", Chunk266101), U && Chunk507604 && S === Z && Chunk573078(F, "code", x(function() {
-    return D(Chunk179122(this).name)
+    return w(Chunk179122(this).name)
   })), Chunk17204)
   if (Chunk77025(Chunk17204, V)) {
     var H = Chunk17204[V],

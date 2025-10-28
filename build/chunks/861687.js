@@ -530,7 +530,7 @@ class eC extends Chunk47770.Z {
         return null != (t = await (null == (e = this._systemResources) ? true : e.getBatteryLevelStats())) ? t : {
           batteryUsageRounded: null
         }
-      })(), D.Z.getKrispModel(), M.Z.getKrispEnableStats() ? M.Z.getMediaEngine().getNoiseCancellationStats() : Promise.resolve(null), M.Z.getMediaEngine().getSystemMicrophoneMode()]).then(e => {
+      })(), w.Z.getKrispModel(), M.Z.getKrispEnableStats() ? M.Z.getMediaEngine().getNoiseCancellationStats() : Promise.resolve(null), M.Z.getMediaEngine().getSystemMicrophoneMode()]).then(e => {
         let [{
           batteryUsageRounded: t
         }, n, r, i] = e;
@@ -568,7 +568,7 @@ class eC extends Chunk47770.Z {
       active: false
     });
     let l = M.Z.getMediaEngine(),
-      c = w.Z.getPersistentCodesEnabled(),
+      c = D.Z.getPersistentCodesEnabled(),
       u = null != (s = L.default.getStaticAuthSessionId()) ? s : true,
       d = (0, _.zO)(),
       h = l.connect(this.context, this.userId, eu({

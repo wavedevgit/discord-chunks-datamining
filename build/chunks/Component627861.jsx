@@ -290,8 +290,8 @@ function ep(e) {
     currentUserPresenceActivity: N,
     hideParty: R,
     message: P,
-    onView: D,
-    partyStatusElement: w,
+    onView: w,
+    partyStatusElement: D,
     presenceActivity: L
   } = e, x = (0, O.A)(S), M = (0, p.ye)(S), {
     bot: U
@@ -434,7 +434,7 @@ function ep(e) {
       trackingConfig: {
         id: S.id,
         linkType: er.U.RICH_PRESENCE_INVITE,
-        onView: D,
+        onView: w,
         referrerId: P.author.id,
         guildId: A.guild_id,
         channelId: P.channel_id,
@@ -467,7 +467,7 @@ function ep(e) {
     }),
     eP = (0, r.jsxs)("div", {
       className: eo.info,
-      children: [eR, R || Q ? null : w]
+      children: [eR, R || Q ? null : D]
     });
   return (0, r.jsx)(h.W, {
     header: eT,
@@ -482,7 +482,7 @@ function ep(e) {
     trackingConfig: {
       id: S.id,
       linkType: er.U.RICH_PRESENCE_INVITE,
-      onView: D,
+      onView: w,
       referrerId: P.author.id,
       guildId: A.guild_id,
       channelId: P.channel_id,
@@ -507,12 +507,12 @@ function eh(e) {
       let e = c.author.id;
       return (0, H.H)(c) && (e = e === _ && s.isPrivate() ? s.getRecipientId() : _), L.Z.getApplicationActivity(e, c.application.id)
     }
-  }, [c, s, _]), h = (0, l.e7)([w.Z, x.Z], () => {
+  }, [c, s, _]), h = (0, l.e7)([D.Z, x.Z], () => {
     var e;
-    return null != (e = w.Z.getApplicationActivity(f.id)) ? e : x.Z.getApplicationActivity(f.id, true)
-  }, [f.id]), m = (0, l.Wu)([D.Z], () => {
+    return null != (e = D.Z.getApplicationActivity(f.id)) ? e : x.Z.getApplicationActivity(f.id, true)
+  }, [f.id]), m = (0, l.Wu)([w.Z], () => {
     var e;
-    return null == p || null == p.party ? [] : Array.from(null != (e = D.Z.getParty(p.party.id)) ? e : [])
+    return null == p || null == p.party ? [] : Array.from(null != (e = w.Z.getParty(p.party.id)) ? e : [])
   }, [p]), {
     partySize: E,
     maxPartySize: b

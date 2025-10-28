@@ -18,15 +18,15 @@ let f = function(e) {
     rows: t,
     renderRow: n,
     renderSection: f,
-    hasSearchQuery: m,
-    sectionFilter: h,
+    hasSearchQuery: h,
+    sectionFilter: m,
     footer: g
   } = e, _ = (0, s.e7)([u.Z], () => u.Z.keyboardModeEnabled), b = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), E = (0, l.ZP)({
     id: "people",
     isEnabled: _,
     async scrollToStart() {},
     async scrollToEnd() {}
-  }), O = h !== d.pJs.ONLINE && h !== d.pJs.ALL, I = b || m || O, v = i.useMemo(() => t.map((e, t) => 0 === e.length ? null : I ? (0, r.jsxs)("div", {
+  }), O = m !== d.pJs.ONLINE && m !== d.pJs.ALL, I = b || h || O, v = i.useMemo(() => t.map((e, t) => 0 === e.length ? null : I ? (0, r.jsxs)("div", {
     children: [f(t), e.map(n)]
   }, t) : (0, r.jsxs)(o.W, {
     transitionAppear: false,

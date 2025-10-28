@@ -2,9 +2,9 @@
 /** chunk id: 430561, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  GY: () => D,
+  GY: () => w,
   PI: () => I,
-  RT: () => w,
+  RT: () => D,
   XM: () => R,
   bc: () => T,
   ls: () => P,
@@ -131,7 +131,7 @@ function P(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   let {
     widgetId: t,
     showAllStreams: n
@@ -154,7 +154,7 @@ function D(e) {
   })
 }
 
-function w(e) {
+function D(e) {
   let {
     id: t,
     pinned: n

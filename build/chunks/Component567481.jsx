@@ -24,7 +24,7 @@ let E = new Chunk710845.Z("RPCCommandsOverlay"),
   O = {
     [Chunk981631.Etm.SET_OVERLAY_LOCKED]: {
       scope: Chunk186901.lH,
-      validation: e => (0, h.Z)(e).required().keys({
+      validation: e => (0, m.Z)(e).required().keys({
         locked: e.boolean().required(),
         pid: e.number().min(0).required()
       }),
@@ -49,7 +49,7 @@ let E = new Chunk710845.Z("RPCCommandsOverlay"),
     },
     [Chunk981631.Etm.OPEN_OVERLAY_ACTIVITY_INVITE]: {
       scope: Chunk186901.lH,
-      validation: e => (0, h.Z)(e).required().keys({
+      validation: e => (0, m.Z)(e).required().keys({
         type: e.number().required().valid([b.mFx.JOIN]),
         pid: e.number().min(0).required()
       }),
@@ -65,7 +65,7 @@ let E = new Chunk710845.Z("RPCCommandsOverlay"),
           errorCode: b.lTL.INVALID_COMMAND
         }, "No application.");
         let l = d.Z.getApplicationActivity(i);
-        if (null == l || null == l.secrets || !(0, m.t9)(n, l.party, l.secrets)) throw new f.Z({
+        if (null == l || null == l.secrets || !(0, h.t9)(n, l.party, l.secrets)) throw new f.Z({
           errorCode: b.lTL.NO_ELIGIBLE_ACTIVITY
         }, "No eligible activity for application. Ensure an activity includes a party and appropriate secret.");
         let {
@@ -81,7 +81,7 @@ let E = new Chunk710845.Z("RPCCommandsOverlay"),
     },
     [Chunk981631.Etm.OPEN_OVERLAY_GUILD_INVITE]: {
       scope: Chunk186901.lH,
-      validation: e => (0, h.Z)(e).required().keys({
+      validation: e => (0, m.Z)(e).required().keys({
         code: e.string().required(),
         pid: e.number().min(0).required()
       }),
@@ -122,7 +122,7 @@ let E = new Chunk710845.Z("RPCCommandsOverlay"),
     },
     [Chunk981631.Etm.OPEN_OVERLAY_VOICE_SETTINGS]: {
       scope: Chunk186901.lH,
-      validation: e => (0, h.Z)(e).required().keys({
+      validation: e => (0, m.Z)(e).required().keys({
         pid: e.number().min(0).required()
       }),
       handler(e) {

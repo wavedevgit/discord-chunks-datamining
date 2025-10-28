@@ -121,7 +121,7 @@ function P(e) {
     })
   })
 }
-let D = e => {
+let w = e => {
     let {
       sku: t
     } = e, {
@@ -160,7 +160,7 @@ let D = e => {
       })
     }) : l
   },
-  w = e => {
+  D = e => {
     let {
       sku: t
     } = e;
@@ -177,9 +177,9 @@ function L(e) {
   let {
     sku: t
   } = e;
-  return t.productLine === b.POd.COLLECTIBLES ? (0, r.jsx)(D, {
+  return t.productLine === b.POd.COLLECTIBLES ? (0, r.jsx)(w, {
     sku: t
-  }) : t.productLine === b.POd.SOCIAL_LAYER_GAME_ITEM ? (0, r.jsx)(w, {
+  }) : t.productLine === b.POd.SOCIAL_LAYER_GAME_ITEM ? (0, r.jsx)(D, {
     sku: t
   }) : null
 }

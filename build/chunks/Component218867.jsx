@@ -40,7 +40,7 @@ let d = Chunk647438.memo(Chunk647438.forwardRef((e, t) => {
     fade: C = false,
     initialScrollTop: N = 0,
     role: R = "list"
-  } = e, [P, D] = i.useState(false), [w, L] = i.useState(false), x = i.useRef(null), M = i.useRef(0), k = i.useRef(false);
+  } = e, [P, w] = i.useState(false), [D, L] = i.useState(false), x = i.useRef(null), M = i.useRef(0), k = i.useRef(false);
   (0, l.Ng)(() => {
     var e;
     let t = null == (e = x.current) ? true : e.getScrollerNode();
@@ -119,14 +119,14 @@ let d = Chunk647438.memo(Chunk647438.forwardRef((e, t) => {
       offsetHeight: r,
       scrollTop: i
     } = t;
-    L(r), D(i), null == a || a({
+    L(r), w(i), null == a || a({
       width: n,
       height: r
     })
   }, [a]);
   i.useLayoutEffect(() => {
-    false === w && K()
-  }, [w, K]), i.useEffect(() => {
+    false === D && K()
+  }, [D, K]), i.useEffect(() => {
     var e;
     let t = null == (e = x.current) ? true : e.getScrollerNode(),
       n = u(x);
@@ -142,7 +142,7 @@ let d = Chunk647438.memo(Chunk647438.forwardRef((e, t) => {
       let {
         scrollTop: e
       } = t;
-      M.current = e, null == n || n(e), D(e)
+      M.current = e, null == n || n(e), w(e)
     }))
   }, [n]);
   i.useImperativeHandle(t, () => ({
@@ -173,7 +173,7 @@ let d = Chunk647438.memo(Chunk647438.forwardRef((e, t) => {
             top: s,
             bottom: l
           }
-        } = i, c = G(o), u = s - (T ? c : 0) - r <= M.current, d = l + r >= M.current + w;
+        } = i, c = G(o), u = s - (T ? c : 0) - r <= M.current, d = l + r >= M.current + D;
         if (u) {
           let i = M.current + c - s,
             a = T ? M.current - i : s;
@@ -182,7 +182,7 @@ let d = Chunk647438.memo(Chunk647438.forwardRef((e, t) => {
             animate: n
           })
         } else if (d) {
-          let e = l - (M.current + w);
+          let e = l - (M.current + D);
           null == (a = x.current) || a.scrollTo({
             to: M.current + e + r,
             animate: n
@@ -207,7 +207,7 @@ let d = Chunk647438.memo(Chunk647438.forwardRef((e, t) => {
       })
     },
     getListDimensions: () => ({
-      height: w,
+      height: D,
       totalHeight: H
     }),
     getSectionDescriptors: () => F.current,
@@ -222,17 +222,17 @@ let d = Chunk647438.memo(Chunk647438.forwardRef((e, t) => {
         node: e
       })
     }
-  }), [G, T, H, w]);
+  }), [G, T, H, D]);
   let {
     visibleItems: q,
     listOffset: X
   } = i.useMemo(() => {
-    if (false === w || false === P) return {
+    if (false === D || false === P) return {
       visibleItems: null,
       listOffset: 0
     };
     let e = P,
-      t = P + w,
+      t = P + D,
       n = 0,
       r = d[0],
       i = [],
@@ -279,7 +279,7 @@ let d = Chunk647438.memo(Chunk647438.forwardRef((e, t) => {
       visibleItems: i,
       listOffset: r
     }
-  }, [U, B, G, Z, d, f, _, h, p, P, W, T, m, j, w]), Q = i.useMemo(() => {
+  }, [U, B, G, Z, d, f, _, h, p, P, W, T, m, j, D]), Q = i.useMemo(() => {
     var e, t, n;
     return {
       top: X,

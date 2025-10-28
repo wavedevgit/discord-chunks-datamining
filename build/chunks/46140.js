@@ -22,11 +22,11 @@ require.d(exports, {
   cd: () => h,
   dr: () => d,
   l$: () => C,
-  oH: () => w,
+  oH: () => D,
   tD: () => g,
   tt: () => R,
   v6: () => A,
-  yq: () => D
+  yq: () => w
 }), require("./388685.js"), require("./642613.js");
 var Chunk392711 = require("./392711.js"),
   Chunk754700 = require("./754700.js"),
@@ -74,10 +74,10 @@ let I = "1333839522189938740",
   P = {
     is_targeted: false
   };
-var D = function(e) {
+var w = function(e) {
     return e.SUGGESTED = "suggested", e.MOST_RECENT = "most_recent", e.EXPIRING_SOON = "expiring_soon", e.RECENTLY_ENROLLED = "recently_enrolled", e
   }({}),
-  w = function(e) {
+  D = function(e) {
     return e.VIDEO = "task_video", e.PLAY = "task_play", e
   }({}),
   L = function(e) {

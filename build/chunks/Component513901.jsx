@@ -38,7 +38,7 @@ function y(e) {
   } = (0, c.ZP)(), {
     pendingProfileEffect: R,
     errors: P
-  } = (0, _.bd)(n), D = i.useCallback(() => (0, u.H)({
+  } = (0, _.bd)(n), w = i.useCallback(() => (0, u.H)({
     analyticsLocations: N,
     initialSelectedEffect: a,
     guild: n
@@ -49,7 +49,7 @@ function y(e) {
       location_stack: N
     })
   }, [C, N]);
-  let w = null != n,
+  let D = null != n,
     L = S || true !== R ? null != R : null != A;
 
   function x() {
@@ -68,7 +68,7 @@ function y(e) {
       className: b.buttonsContainer,
       children: [(0, r.jsx)(M, {
         size: s.zx.Sizes.SMALL,
-        onClick: D,
+        onClick: w,
         className: o()({
           [b.buttonHighlighted]: I
         }),
@@ -79,7 +79,7 @@ function y(e) {
         children: (0, r.jsx)(l.Button, {
           variant: "secondary",
           size: "sm",
-          text: w ? E.intl.string(E.t.CHf9iJ) : E.intl.string(E.t.uMuafO),
+          text: D ? E.intl.string(E.t.CHf9iJ) : E.intl.string(E.t.uMuafO),
           onClick: x
         })
       })]

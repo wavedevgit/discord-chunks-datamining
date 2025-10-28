@@ -36,12 +36,12 @@ function v(e) {
     N = null == T ? true : T.id,
     R = (0, s.e7)([p.Z], () => p.Z.getGuildId()),
     P = (0, s.e7)([_.Z], () => null != v && null != v.target_user ? _.Z.getActiveStreamForUser(v.target_user.id, N) : null, [v, N]),
-    D = (0, s.e7)([_.Z], () => null != v && null != v.target_user ? _.Z.getStreamForUser(v.target_user.id, N) : null, [v, N]),
+    w = (0, s.e7)([_.Z], () => null != v && null != v.target_user ? _.Z.getStreamForUser(v.target_user.id, N) : null, [v, N]),
     {
-      analyticsLocations: w
+      analyticsLocations: D
     } = (0, u.ZP)(c.Z.INVITE_EMBED),
     L = null != v && v.target_type === b.Iq.STREAM && null != v.target_user && null != P,
-    x = null != v && null != D && null != v.channel && null != v.guild && D.channelId === v.channel.id && D.guildId === v.guild.id;
+    x = null != v && null != w && null != v.channel && null != v.guild && w.channelId === v.channel.id && w.guildId === v.guild.id;
   o()(null != v, "Invite cannot be null");
   let {
     target_type: M,
@@ -57,8 +57,8 @@ function v(e) {
         action: e,
         inviter_id: S.author.id,
         invite_message_id: S.id
-      }, w)
-    }, [v, S, w, L, A, C]),
+      }, D)
+    }, [v, S, D, L, A, C]),
     B = null != T;
   if (null == T) {
     if (null == v.guild) return (0, r.jsx)(g.Z, {});

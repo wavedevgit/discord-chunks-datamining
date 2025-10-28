@@ -47,7 +47,7 @@ function P(e) {
   C = null, m = true
 }
 
-function D(e) {
+function w(e) {
   let {
     referrals_remaining: t,
     sent_user_ids: n,
@@ -60,7 +60,7 @@ function D(e) {
   }).enabled || null == r && a, A = a, m = false, _ = t, p = new Set(n), C = r, h = i
 }
 
-function w(e) {
+function D(e) {
   let {} = e;
   S = false, A = false, C = null, m = false, y += 1, O = Date.now() + 1e3 * Math.pow(2, y)
 }
@@ -190,8 +190,8 @@ d(Y, "displayName", "ReferralTrialStore");
 let W = new Y(Chunk570140.Z, {
   BILLING_REFERRAL_TRIAL_OFFER_UPDATE: B,
   BILLING_REFERRALS_REMAINING_FETCH_START: P,
-  BILLING_REFERRALS_REMAINING_FETCH_SUCCESS: D,
-  BILLING_REFERRALS_REMAINING_FETCH_FAIL: w,
+  BILLING_REFERRALS_REMAINING_FETCH_SUCCESS: w,
+  BILLING_REFERRALS_REMAINING_FETCH_FAIL: D,
   BILLING_CREATE_REFERRAL_SUCCESS: L,
   CREATE_REFERRALS_SUCCESS: x,
   BILLING_REFERRAL_RESOLVE_SUCCESS: k,

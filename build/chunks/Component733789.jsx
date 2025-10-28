@@ -41,47 +41,47 @@ function b(e) {
 }
 let E = {
   [Chunk981631.AzA.NOW_PLAYING]: {
-    single: (e, t) => h.intl.format(h.t.NEckza, {
+    single: (e, t) => m.intl.format(m.t.NEckza, {
       user1: e.username,
       user1Hook: () => t(e)
     }),
-    double: (e, t, n) => h.intl.format(h.t["6uWulc"], {
+    double: (e, t, n) => m.intl.format(m.t["6uWulc"], {
       user1: e.username,
       user1Hook: () => n(e),
       user2: t.username,
       user2Hook: () => n(t)
     }),
-    other: e => h.intl.format(h.t["8fMgRU"], {
+    other: e => m.intl.format(m.t["8fMgRU"], {
       count: e
     })
   },
   [Chunk981631.AzA.RECENTLY_PLAYED]: {
-    single: (e, t) => h.intl.format(h.t["nB/JNB"], {
+    single: (e, t) => m.intl.format(m.t["nB/JNB"], {
       user1: e.username,
       user1Hook: () => t(e)
     }),
-    double: (e, t, n) => h.intl.format(h.t.AZCcHU, {
+    double: (e, t, n) => m.intl.format(m.t.AZCcHU, {
       user1: e.username,
       user1Hook: () => n(e),
       user2: t.username,
       user2Hook: () => n(t)
     }),
-    other: e => h.intl.format(h.t.yNuaTU, {
+    other: e => m.intl.format(m.t.yNuaTU, {
       count: e
     })
   },
   [Chunk981631.AzA.EVER_PLAYED]: {
-    single: (e, t) => h.intl.format(h.t.Fecf3N, {
+    single: (e, t) => m.intl.format(m.t.Fecf3N, {
       user1: e.username,
       user1Hook: () => t(e)
     }),
-    double: (e, t, n) => h.intl.format(h.t["0LiGbJ"], {
+    double: (e, t, n) => m.intl.format(m.t["0LiGbJ"], {
       user1: e.username,
       user1Hook: () => n(e),
       user2: t.username,
       user2Hook: () => n(t)
     }),
-    other: e => h.intl.format(h.t.Yx1rjU, {
+    other: e => m.intl.format(m.t.Yx1rjU, {
       count: e
     })
   }

@@ -15,7 +15,7 @@ require.d(exports, {
   eN: () => N,
   f1: () => h,
   gs: () => T,
-  ky: () => D,
+  ky: () => w,
   lq: () => m,
   o2: () => b,
   oL: () => u,
@@ -197,7 +197,7 @@ function P(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   r.Z.dispatch({
     type: "ACCESSIBILITY_SET_SWITCH_ICONS_ENABLED",
     switchIconsEnabled: e

@@ -39,7 +39,7 @@ let C = Math.ceil(Math.sqrt(115200)),
         enabled: e
       } = g.GE.useConfig({
         location: E.dr.PRIVATE_CHANNELS_LIST
-      }), [t, n] = (0, m.US)(e ? [c.z.QUEST_HOME_ENTRYPOINT_ONBOARDING] : [], I.R.PRIVATE_CHANNELS_LIST, true), r = i.useCallback(() => {
+      }), [t, n] = (0, h.US)(e ? [c.z.QUEST_HOME_ENTRYPOINT_ONBOARDING] : [], I.R.PRIVATE_CHANNELS_LIST, true), r = i.useCallback(() => {
         e && n(I.L.TAKE_ACTION)
       }, [n, e]);
       return {
@@ -97,7 +97,7 @@ let C = Math.ceil(Math.sqrt(115200)),
       }), w({
         glowSpring: 1,
         delay: 700
-      }), h.default.track(O.rMx.QUEST_HOME_ONBOARDING_POPOVER_RENDERED)
+      }), m.default.track(O.rMx.QUEST_HOME_ONBOARDING_POPOVER_RENDERED)
     }, [R, w]), [U, G] = i.useState(false), B = i.useCallback(e => {
       G(e.contentRect.width)
     }, []), H = (0, p.y)(B, [], {

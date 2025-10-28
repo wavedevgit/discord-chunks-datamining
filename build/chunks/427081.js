@@ -56,11 +56,11 @@ function P(e) {
   }
 }
 
-function D(e, t) {
+function w(e, t) {
   return null != t && e.config.application.id === c.eB && (0, u.le)(t)
 }
 
-function w(e) {
+function D(e) {
   return null != e && e.config.features.includes(i.S.MANUAL_HEARTBEAT_INITIALIZATION)
 }
 class L extends Chunk147913.Z {
@@ -115,7 +115,7 @@ class L extends Chunk147913.Z {
         let l = Chunk594190.find(e => e.id === t);
         null != Chunk569545 ? module.set(Chunk670081.id, {
           applicationId: Chunk569545.id
-        }) : D(Chunk670081, Chunk317381) && module.set(Chunk670081.id, {
+        }) : w(Chunk670081, Chunk317381) && module.set(Chunk670081.id, {
           applicationId: Chunk817788.eB
         })
       }
@@ -223,7 +223,7 @@ class L extends Chunk147913.Z {
       N.log("~ handleSendHeartbeatFailure -> Heartbeat failed for questId: ".concat(t))
     }), T(this, "actions", {
       QUESTS_FETCH_CURRENT_QUESTS_SUCCESS: () => this.syncHeartbeats([r.X.PLAY_ON_DESKTOP, r.X.STREAM_ON_DESKTOP], "QUESTS_FETCH_CURRENT_QUESTS_SUCCESS"),
-      QUESTS_ENROLL_SUCCESS: () => this.syncHeartbeats([r.X.PLAY_ON_DESKTOP, r.X.STREAM_ON_DESKTOP, r.X.PLAY_ACTIVITY], "QUESTS_ENROLL_SUCCESS", e => !w(e)),
+      QUESTS_ENROLL_SUCCESS: () => this.syncHeartbeats([r.X.PLAY_ON_DESKTOP, r.X.STREAM_ON_DESKTOP, r.X.PLAY_ACTIVITY], "QUESTS_ENROLL_SUCCESS", e => !D(e)),
       QUESTS_SEND_HEARTBEAT_SUCCESS: this.handleSendHeartbeatSuccess,
       QUESTS_SEND_HEARTBEAT_FAILURE: this.handleSendHeartbeatFailure,
       QUESTS_PREVIEW_UPDATE_SUCCESS: () => this.syncHeartbeats([r.X.PLAY_ON_DESKTOP, r.X.STREAM_ON_DESKTOP, r.X.PLAY_ACTIVITY], "QUESTS_PREVIEW_UPDATE_SUCCESS"),
@@ -239,12 +239,12 @@ class L extends Chunk147913.Z {
         } = e;
         P(t)
       },
-      EMBEDDED_ACTIVITY_UPDATE_V2: () => this.syncHeartbeats([r.X.PLAY_ACTIVITY], "EMBEDDED_ACTIVITY_UPDATE_V2", e => !w(e)),
+      EMBEDDED_ACTIVITY_UPDATE_V2: () => this.syncHeartbeats([r.X.PLAY_ACTIVITY], "EMBEDDED_ACTIVITY_UPDATE_V2", e => !D(e)),
       QUEST_APPLICATION_START_TIMER: e => {
         let {
           questId: t
         } = e;
-        this.syncHeartbeats([r.X.PLAY_ACTIVITY], "QUEST_APPLICATION_START_TIMER", e => null != e && e.id === t && w(e))
+        this.syncHeartbeats([r.X.PLAY_ACTIVITY], "QUEST_APPLICATION_START_TIMER", e => null != e && e.id === t && D(e))
       }
     })
   }

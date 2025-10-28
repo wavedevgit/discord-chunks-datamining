@@ -34,7 +34,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk505575 = require("./505575.js");
-let w = () => {
+let D = () => {
     (0, Chunk266454.Q3)(Chunk704215.z.CLIENT_THEMES_SPARKLE_PREVIEW, {
       dismissAction: Chunk921944.L.PRIMARY,
       forceTrack: true
@@ -54,7 +54,7 @@ let w = () => {
         children: [(0, Chunk951288.jsx)(Chunk481060.Button, {
           variant: "secondary",
           text: Chunk388032.intl.string(Chunk388032.t["E+COuA"]),
-          onClick: () => w()
+          onClick: () => D()
         }), (0, Chunk951288.jsx)(Chunk638212.Z, {
           subscriptionTier: Chunk474936.Si.TIER_2,
           defaultTextOverride: module,
@@ -79,7 +79,7 @@ let w = () => {
             variant: "secondary",
             fullWidth: true,
             text: Chunk388032.intl.string(Chunk388032.t["E+COuA"]),
-            onClick: () => w()
+            onClick: () => D()
           })
         }), (0, Chunk951288.jsx)("div", {
           className: Chunk505575.premiumTier2Divider
@@ -140,5 +140,5 @@ function x() {
 let M = () => (0, Chunk442837.e7)([Chunk514361.Z], () => Chunk514361.Z.isPreview) ? null : (0, Chunk951288.jsx)(Chunk481060.Button, {
   variant: "primary",
   text: Chunk388032.intl.string(Chunk388032.t.qYXrkX),
-  onClick: w
+  onClick: D
 })

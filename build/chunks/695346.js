@@ -26,7 +26,7 @@ require.d(exports, {
   Ou: () => Y,
   P4: () => eb,
   Pe: () => V,
-  QK: () => eD,
+  QK: () => ew,
   QZ: () => R,
   R$: () => y,
   RS: () => eI,
@@ -43,7 +43,7 @@ require.d(exports, {
   Xk: () => k,
   Xr: () => ep,
   YC: () => e1,
-  Yk: () => ew,
+  Yk: () => eD,
   _O: () => L,
   _j: () => eF,
   bh: () => eo,
@@ -52,7 +52,7 @@ require.d(exports, {
   cP: () => H,
   co: () => eg,
   d$: () => Z,
-  d4: () => w,
+  d4: () => D,
   d8: () => A,
   dN: () => b,
   eR: () => v,
@@ -175,10 +175,10 @@ let A = (0, Chunk560997.Zc)("notifications", "enableVoiceActivityNotifications",
     value: !!e
   })),
   P = (0, Chunk560997.Zc)("notifications", "focusModeExpiresAtMs", e => null != e ? e : "0", e => e),
-  D = [],
-  w = (0, Chunk560997.Zc)("textAndImages", "emojiPickerCollapsedSections", e => null != e ? e : D, e => e),
-  L = (0, Chunk560997.Zc)("textAndImages", "stickerPickerCollapsedSections", e => null != e ? e : D, e => e),
-  x = (0, Chunk560997.Zc)("textAndImages", "soundboardPickerCollapsedSections", e => null != e ? e : D, e => e),
+  w = [],
+  D = (0, Chunk560997.Zc)("textAndImages", "emojiPickerCollapsedSections", e => null != e ? e : w, e => e),
+  L = (0, Chunk560997.Zc)("textAndImages", "stickerPickerCollapsedSections", e => null != e ? e : w, e => e),
+  x = (0, Chunk560997.Zc)("textAndImages", "soundboardPickerCollapsedSections", e => null != e ? e : w, e => e),
   M = (0, Chunk560997.Zc)("textAndImages", "viewImageDescriptions", e => {
     var t;
     return null != (t = null == e ? true : e.value) && t
@@ -495,7 +495,7 @@ let eR = (0, Chunk560997.KM)((0, Chunk560997.Zc)("appearance", "developerMode", 
   }), {
     comparator: Chunk902704.Z
   }),
-  eD = (0, Chunk560997.R2)((0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "gifAutoPlay", e => {
+  ew = (0, Chunk560997.R2)((0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "gifAutoPlay", e => {
     var t;
     return null == (t = null == e ? true : e.value) || t
   }, e => o.D5.create({
@@ -507,7 +507,7 @@ let eR = (0, Chunk560997.KM)((0, Chunk560997.Zc)("appearance", "developerMode", 
     var e;
     return null == (e = Chunk263937.Z.getOverride("gifAutoPlay")) ? true : module.value
   })),
-  ew = (0, Chunk560997.R2)((0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "animateEmoji", e => {
+  eD = (0, Chunk560997.R2)((0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "animateEmoji", e => {
     var t;
     return null == (t = null == e ? true : e.value) || t
   }, e => o.D5.create({

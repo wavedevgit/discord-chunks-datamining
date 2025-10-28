@@ -27,7 +27,7 @@ let O = {
   },
   handleRequiredAction(e) {
     let t = e.requiredAction;
-    !m.s.isDisallowPopupsSet() && null != f.default.getCurrentUser() && (t === g.c2C.REQUIRE_CAPTCHA || t === g.c2C.REQUIRE_VERIFIED_EMAIL || t === g.c2C.REQUIRE_VERIFIED_PHONE || t === g.c2C.REQUIRE_REVERIFIED_PHONE || t === g.c2C.REQUIRE_VERIFIED_EMAIL_OR_VERIFIED_PHONE || t === g.c2C.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE || t === g.c2C.REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE || u.Z.isEmailReverification(t) ? (0, o.bu)({
+    !h.s.isDisallowPopupsSet() && null != f.default.getCurrentUser() && (t === g.c2C.REQUIRE_CAPTCHA || t === g.c2C.REQUIRE_VERIFIED_EMAIL || t === g.c2C.REQUIRE_VERIFIED_PHONE || t === g.c2C.REQUIRE_REVERIFIED_PHONE || t === g.c2C.REQUIRE_VERIFIED_EMAIL_OR_VERIFIED_PHONE || t === g.c2C.REQUIRE_REVERIFIED_EMAIL_OR_REVERIFIED_PHONE || t === g.c2C.REQUIRE_VERIFIED_EMAIL_OR_REVERIFIED_PHONE || u.Z.isEmailReverification(t) ? (0, o.bu)({
       location: "verification-legacy"
     }) ? (0, a.q4)(e => {
       let {
@@ -42,7 +42,7 @@ let O = {
     }) : (0, a.q4)(() => (0, r.jsx)(d.Z, {}), {
       layerKey: b.CV,
       Layer: s.ZP
-    }) : t === g.c2C.AGREEMENTS ? (0, i.h7j)(e => (0, r.jsx)(h.Z, function(e) {
+    }) : t === g.c2C.AGREEMENTS ? (0, i.h7j)(e => (0, r.jsx)(m.Z, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);

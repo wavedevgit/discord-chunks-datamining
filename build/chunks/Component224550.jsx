@@ -45,8 +45,8 @@ let g = (e, t, n, r) => {
         productLine: N,
         proratedAmount: R,
         basePrice: P,
-        currentSubscription: D,
-        skuId: w,
+        currentSubscription: w,
+        skuId: D,
         applicationName: L
       } = e,
       x = (0, i.e7)([o.Z], () => o.Z.inReverseTrial());
@@ -59,7 +59,7 @@ let g = (e, t, n, r) => {
     let k = (0, a.K)({
         purchaseType: C || f.GZQ.SUBSCRIPTION,
         plan: b,
-        premiumSubscription: null == D ? null : D,
+        premiumSubscription: null == w ? null : w,
         productLine: N,
         isGift: !!y,
         planGroup: M,
@@ -81,7 +81,7 @@ let g = (e, t, n, r) => {
         paidURL: f.EYA.PAID_TERMS
       });
       let e = "";
-      e = w === _.Vt.ORB_PROFILE_BADGE ? h.intl.string(h.t.APcKRo) : w === _.Vt.FRACTIONAL_PREMIUM ? h.intl.string(h.t.FhJ74j) : h.intl.string(h.t["Sxed/G"]), Array.isArray(G) ? G = [...G, " ".concat(e)] : G += " ".concat(e)
+      e = D === _.Vt.ORB_PROFILE_BADGE ? h.intl.string(h.t.APcKRo) : D === _.Vt.FRACTIONAL_PREMIUM ? h.intl.string(h.t.FhJ74j) : h.intl.string(h.t["Sxed/G"]), Array.isArray(G) ? G = [...G, " ".concat(e)] : G += " ".concat(e)
     } else if (I)
       if (null != s && (null == T ? true : T.subscriptionPeriodEnd) != null) G = h.intl.format(h.t["2VPTay"], {
         subtotalRate: E
@@ -139,18 +139,18 @@ let g = (e, t, n, r) => {
           productLine: N,
           purchaseType: f.GZQ.SUBSCRIPTION,
           plan: b,
-          premiumSubscription: null == D ? null : D,
+          premiumSubscription: null == w ? null : w,
           isGift: false,
           planGroup: M,
           isPrepaidPaymentSource: false
         });
-        O || (e = g(P, t, n, b.id)), G = (null == D ? true : D.isPausedAllowsResumeButNotUpdates) ? h.intl.format(h.t.B6oNwB, {
+        O || (e = g(P, t, n, b.id)), G = (null == w ? true : w.isPausedAllowsResumeButNotUpdates) ? h.intl.format(h.t.B6oNwB, {
           primaryText: r,
           rate: e,
           paidURL: f.EYA.PAID_TERMS,
           contactLink: f.EYA.CONTACT,
           helpdeskArticle: l.Z.getArticleURL(f.BhN.BILLING)
-        }) : null != D && (0, d.GY)(D, b.id, M) ? h.intl.format(h.t.LyBQUW, {
+        }) : null != w && (0, d.GY)(w, b.id, M) ? h.intl.format(h.t.LyBQUW, {
           primaryText: r,
           rate: e,
           paidURL: f.EYA.PAID_TERMS,

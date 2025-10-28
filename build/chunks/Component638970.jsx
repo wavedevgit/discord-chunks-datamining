@@ -67,8 +67,8 @@ function P(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let D = 250,
-  w = 24;
+let w = 250,
+  D = 24;
 
 function L(e, t) {
   switch (t.type) {
@@ -170,14 +170,14 @@ function M(e) {
     }), requestAnimationFrame(() => {
       Q({
         type: "START_EXPAND_ANIMATION",
-        height: e + t - w
+        height: e + t - D
       }), q.current = setTimeout(() => {
         var e;
         Q({
           type: "ANIMATION_COMPLETE",
           height: "auto"
         }), null == (e = K.current) || e.focus()
-      }, D)
+      }, w)
     })
   }, [P, M]);
   return ((0, c.zq)(() => {

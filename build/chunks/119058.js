@@ -23,12 +23,12 @@ var Chunk310644 = require("./310644.js"),
 
 function b(e, t, n) {
   (0, d.Z)(2, arguments);
-  var m, g, b, O, v, I, T, S, A, C, N, R, P, D, w, L, x, M, k = String(t),
+  var m, g, b, O, v, I, T, S, A, C, N, R, P, w, D, L, x, M, k = String(t),
     j = (0, f.j)(),
     U = null != (m = null != (g = null == n ? true : n.locale) ? g : j.locale) ? m : _.Z,
     G = (0, u.Z)(null != (b = null != (O = null != (v = null != (I = null == n ? true : n.firstWeekContainsDate) ? I : null == n || null == (T = n.locale) || null == (S = T.options) ? true : S.firstWeekContainsDate) ? v : j.firstWeekContainsDate) ? O : null == (A = j.locale) || null == (C = A.options) ? true : C.firstWeekContainsDate) ? b : 1);
   if (!(G >= 1 && G <= 7)) throw RangeError("firstWeekContainsDate must be between 1 and 7 inclusively");
-  var B = (0, u.Z)(null != (N = null != (R = null != (P = null != (D = null == n ? true : n.weekStartsOn) ? D : null == n || null == (w = n.locale) || null == (L = w.options) ? true : L.weekStartsOn) ? P : j.weekStartsOn) ? R : null == (x = j.locale) || null == (M = x.options) ? true : M.weekStartsOn) ? N : 0);
+  var B = (0, u.Z)(null != (N = null != (R = null != (P = null != (w = null == n ? true : n.weekStartsOn) ? w : null == n || null == (D = n.locale) || null == (L = D.options) ? true : L.weekStartsOn) ? P : j.weekStartsOn) ? R : null == (x = j.locale) || null == (M = x.options) ? true : M.weekStartsOn) ? N : 0);
   if (!(B >= 0 && B <= 6)) throw RangeError("weekStartsOn must be between 0 and 6 inclusively");
   if (!U.localize) throw RangeError("locale must contain localize property");
   if (!U.formatLong) throw RangeError("locale must contain formatLong property");

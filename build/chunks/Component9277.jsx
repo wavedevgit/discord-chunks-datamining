@@ -46,7 +46,7 @@ function b(e, t) {
       play: P
     } = (0, c.V)();
   if (n) return null;
-  let D = v === m.X1.GIF && I === a;
+  let w = v === m.X1.GIF && I === a;
   return (0, r.jsx)(u.u, {
     text: O ? g.intl.string(g.t.mE2e8A) : null,
     forceOpen: true,
@@ -60,10 +60,10 @@ function b(e, t) {
         onClick: () => {
           C(), P()
         },
-        isActive: D,
+        isActive: w,
         pulse: b,
         "aria-label": g.intl.string(g.t.PtVpk2),
-        "aria-expanded": D,
+        "aria-expanded": w,
         "aria-haspopup": "dialog",
         "aria-controls": T,
         children: (0, r.jsx)(N, {

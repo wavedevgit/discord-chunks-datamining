@@ -2,7 +2,7 @@
 /** chunk id: 997612, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $: () => w,
+  $: () => D,
   X: () => M
 });
 var Chunk951288 = require("./951288.js"),
@@ -64,12 +64,12 @@ function P(e, t) {
   return n
 }
 
-function D(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let w = (0, Chunk972959.H)(() => ({
+let D = (0, Chunk972959.H)(() => ({
   selectedCollection: null,
   selectedStory: null
 }));
@@ -108,7 +108,7 @@ function x() {
     align: "center",
     animation: Chunk235874.y.Animation.SCALE,
     onRequestClose: () => {},
-    children: t => (0, r.jsx)(h.hU, D(R({
+    children: t => (0, r.jsx)(h.hU, w(R({
       size: "sm",
       icon: a.ewm,
       "aria-label": "Settings",
@@ -123,7 +123,7 @@ function M(e) {
   var t;
   let {
     config: n
-  } = e, c = w.useField("selectedCollection"), u = w.useField("selectedStory"), {
+  } = e, c = D.useField("selectedCollection"), u = D.useField("selectedStory"), {
     collection: f,
     group: m,
     story: E
@@ -143,12 +143,12 @@ function M(e) {
       story: i
     }
   }, [c, u, n.collections]), b = e => {
-    w.setState({
+    D.setState({
       selectedCollection: e,
       selectedStory: null
     })
   }, y = e => {
-    w.setState({
+    D.setState({
       selectedStory: e
     })
   }, S = null != (t = null == f ? true : f.name) ? t : "Design System", A = null == E ? true : E.name, N = () => {

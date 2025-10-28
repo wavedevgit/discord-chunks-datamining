@@ -58,7 +58,7 @@ function C() {
       isSearchBarVisible: P,
       isSearchBarEmpty: "" === x.trim(),
       searchBarState: R,
-      setSearchBarState: e => m.Z.setState({
+      setSearchBarState: e => h.Z.setState({
         searchBarState: e
       })
     }),

@@ -38,7 +38,7 @@ function I(e) {
   })), N = (0, m.M)(), {
     selectedTab: R,
     handleTabChange: P
-  } = (0, h.Z)(), D = f.default.getCurrentUser(), w = null != I, L = A && null != D && !w;
+  } = (0, h.Z)(), w = f.default.getCurrentUser(), D = null != I, L = A && null != w && !D;
   (0, s.ZP)(() => {
     (0, d.e)("family-center"), null != n && n(), S || (0, c.Q3)(o.z.FAMILY_CENTER_NEW_BADGE, {
       dismissAction: v.L.AUTO,
@@ -55,7 +55,7 @@ function I(e) {
   return r.useEffect(() => {
     M.current = x
   }), r.useEffect(() => {
-    if (A && w) {
+    if (A && D) {
       let {
         isConsideredAdult: e,
         numOfAcceptedRequests: n,
@@ -72,7 +72,7 @@ function I(e) {
         name: i.V.FAMILY_CENTER_VIEW
       })
     }
-  }, [A, w, t]), r.useEffect(() => {
+  }, [A, D, t]), r.useEffect(() => {
     L && (0, l.mN)(O.L0.FAMILY_CENTER)
   }, [L]), {
     isLoading: C,

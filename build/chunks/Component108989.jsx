@@ -67,7 +67,7 @@ function u(e) {
     sprites: d = a,
     spriteColors: p = s,
     confettiConfig: f
-  } = e, [m, h] = i.useState(null), [g, _] = i.useState(null), b = (0, l.uR)(g, m), E = i.useMemo(() => new l.qA({
+  } = e, [h, m] = i.useState(null), [g, _] = i.useState(null), b = (0, l.uR)(g, h), E = i.useMemo(() => new l.qA({
     wind: u
   }), [u]), O = i.useCallback(() => {
     var e, t;
@@ -123,7 +123,7 @@ function u(e) {
       className: t,
       environment: E
     }), (0, r.jsx)(l.Ji, {
-      ref: h,
+      ref: m,
       colors: p,
       sprites: d,
       spriteWidth: 6,

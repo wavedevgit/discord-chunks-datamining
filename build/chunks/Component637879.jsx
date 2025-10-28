@@ -9,8 +9,8 @@ require.d(exports, {
   V4: () => Y,
   _B: () => N,
   dI: () => M,
-  do: () => w,
-  f: () => D,
+  do: () => D,
+  f: () => w,
   mW: () => P,
   uB: () => H
 }), require("./781311.js"), require("./35282.js");
@@ -141,7 +141,7 @@ function P(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   let t = (0, p.nl)(e);
   return (0, r.jsxs)("div", {
     className: I.channelNameContainer,
@@ -157,7 +157,7 @@ function D(e) {
   })
 }
 
-function w(e) {
+function D(e) {
   let {
     searchContext: t
   } = e;
@@ -427,7 +427,7 @@ function V(e) {
           variant: "text-sm/medium",
           color: "text-primary",
           children: null != (a = h.ZP[y.dCx.FILTER_IN].key) ? a : ""
-        }), D(t)]
+        }), w(t)]
       }),
       ariaLabel: t.name
     }

@@ -16,7 +16,7 @@ require.d(exports, {
   n$: () => x,
   np: () => C,
   ou: () => Y,
-  qH: () => w,
+  qH: () => D,
   tk: () => Z,
   vI: () => v,
   ww: () => O,
@@ -134,7 +134,7 @@ function P(e) {
   return R().find(t => t.type === e)
 }
 
-function D(e) {
+function w(e) {
   let t = R(),
     n = t.findIndex(t => t.type === e.type);
   if (false === n) return [...t, e];
@@ -144,7 +144,7 @@ function D(e) {
   }
 }
 
-function w(e, t) {
+function D(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
     r = R();
   null == r.find(t => t.type === e) && (n ? c.Z.setPendingWidgets([t, ...r]) : c.Z.setPendingWidgets([...r, t]))
@@ -166,7 +166,7 @@ function x(e, t, n) {
       tags: n
     }),
     u = a.games.map(e => e.applicationId === t ? l : e),
-    d = D(new s.zy(E(m({}, a), {
+    d = w(new s.zy(E(m({}, a), {
       games: u
     })));
   c.Z.setPendingWidgets(d)
@@ -190,7 +190,7 @@ function k(e, t, n) {
       comment: n
     }),
     o = r.games.map(e => e.applicationId === t ? a : e),
-    l = D(new s.zy(E(m({}, r), {
+    l = w(new s.zy(E(m({}, r), {
       games: o
     })));
   c.Z.setPendingWidgets(l)
@@ -207,7 +207,7 @@ function j(e, t) {
     tags: t.tags
   };
   l = null != u ? [...null != (o = u.games) ? o : [], f] : [f];
-  let _ = D(new s.zy(E(m({}, null != u ? u : {
+  let _ = w(new s.zy(E(m({}, null != u ? u : {
     type: e
   }), {
     games: l
@@ -222,7 +222,7 @@ function U(e, t, n) {
   if (t < 0 || t >= i.length || n < 0 || n >= i.length) return;
   let [a] = i.splice(t, 1);
   i.splice(n, 0, a);
-  let o = D(new s.zy(E(m({}, r), {
+  let o = w(new s.zy(E(m({}, r), {
     games: i
   })));
   c.Z.setPendingWidgets(o)
@@ -232,7 +232,7 @@ function G(e, t) {
   let n = P(e);
   if (null == n) return;
   let r = (null != n.games ? n.games : []).filter(e => e.applicationId !== t),
-    i = D(new s.zy(E(m({}, n), {
+    i = w(new s.zy(E(m({}, n), {
       games: r
     })));
   c.Z.setPendingWidgets(i)

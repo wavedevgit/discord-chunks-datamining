@@ -39,8 +39,8 @@ function P(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let D = "seenQSTutorial",
-  w = 5,
+let w = "seenQSTutorial",
+  D = 5,
   L = 100,
   x = [Chunk212819.h8.USER, Chunk212819.h8.GROUP_DM, Chunk212819.h8.TEXT_CHANNEL, Chunk212819.h8.GUILD, Chunk212819.h8.APPLICATION, Chunk212819.h8.LINK, Chunk212819.h8.IN_APP_NAVIGATION],
   M = 0,
@@ -193,7 +193,7 @@ function X(e) {
     query: n,
     queryMode: i
   } = e, a = n.trim(), o = null != (t = T.Z.getGuildId()) ? t : true, s = new Set(["user:".concat(h.default.getId())]);
-  null != o && s.add("guild:".concat(o)), H = Date.now(), r = null != r ? r : new u.ZP($, x, null != i ? L : w, {
+  null != o && s.add("guild:".concat(o)), H = Date.now(), r = null != r ? r : new u.ZP($, x, null != i ? L : D, {
     frecencyBoosters: true,
     blacklist: s,
     allowSnowflake: true
@@ -234,7 +234,7 @@ function et(e) {
   } = e, o = i.trim();
   if (null == r) returnfalse;
   if (U !== a) {
-    r.setResultTypes(null != a ? [a] : x), r.setLimit(null != a ? L : w);
+    r.setResultTypes(null != a ? [a] : x), r.setLimit(null != a ? L : D);
     let e = null != (t = T.Z.getGuildId()) ? t : true;
     a === u.h8.USER && null != e ? r.setOptions({
       userFilters: {
@@ -260,12 +260,12 @@ function en(e) {
 
 function er() {
   if (k) returnfalse;
-  k = true, Chunk433517.K.set(D, true)
+  k = true, Chunk433517.K.set(w, true)
 }
 class ei extends(i = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     var t;
-    this.waitFor(_.Z, h.default, m.Z, g.Z, E.ZP, b.ZP, y.Z, O.Z, v.ZP, I.Z, T.Z, p.Z, S.ZP), this.syncWith([p.Z], () => true), k = l.K.get(D) || false, V = null != (t = null == e ? true : e.channelHistory) ? t : []
+    this.waitFor(_.Z, h.default, m.Z, g.Z, E.ZP, b.ZP, y.Z, O.Z, v.ZP, I.Z, T.Z, p.Z, S.ZP), this.syncWith([p.Z], () => true), k = l.K.get(w) || false, V = null != (t = null == e ? true : e.channelHistory) ? t : []
   }
   getState() {
     return {

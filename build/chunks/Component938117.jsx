@@ -69,12 +69,12 @@ function T(e) {
     currentDeviceId: T,
     smallerBackgroundOptions: S,
     className: A
-  } = e, C = (0, a.e7)([l.default], () => l.default.getCurrentUser()), [N, R] = i.useState(null), P = (0, p.Z)(), D = c.ZP.canUseCustomBackgrounds(C);
+  } = e, C = (0, a.e7)([l.default], () => l.default.getCurrentUser()), [N, R] = i.useState(null), P = (0, p.Z)(), w = c.ZP.canUseCustomBackgrounds(C);
   i.useEffect(() => {
     (0, u.XV)()
   }, []);
-  let w = (0, a.cj)([d.Z], () => D ? d.Z.videoFilterAssets : {}),
-    L = i.useMemo(() => Object.values(w).filter(e => e.type === m.xV.BACKGROUND), [w]),
+  let D = (0, a.cj)([d.Z], () => w ? d.Z.videoFilterAssets : {}),
+    L = i.useMemo(() => Object.values(D).filter(e => e.type === m.xV.BACKGROUND), [D]),
     x = (0, s.O)(),
     M = {
       isVideoBackgroundSupported: P,
@@ -134,7 +134,7 @@ function T(e) {
       label: b.intl.string(b.t.lZTUPs),
       errorMessage: N,
       children: (0, r.jsx)(h.Z, {
-        canUseCustomBackgrounds: D,
+        canUseCustomBackgrounds: w,
         customBackgroundOptions: L,
         selectedOption: y,
         onSelectOption: U,

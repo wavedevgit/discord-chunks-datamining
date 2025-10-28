@@ -84,8 +84,8 @@ async function et(e) {
     overlayStatus: d,
     overlayMethod: p,
     sharedGuildIds: f,
-    voiceChannelId: m,
-    voiceChannelType: h,
+    voiceChannelId: h,
+    voiceChannelType: m,
     voiceChannelBitrate: g,
     voiceChannelGuildId: _
   } = e, b = await (0, x.hj)(a.pid), {
@@ -115,8 +115,8 @@ async function et(e) {
     current_user_status: V.Z.getStatus(),
     game_detection_enabled: (0, O.ik)(a),
     executable_path: y,
-    voice_channel_id: m,
-    voice_channel_type: h,
+    voice_channel_id: h,
+    voice_channel_type: m,
     voice_channel_bitrate: g,
     voice_channel_guild_id: _,
     distributor_game_id: a.sku,
@@ -133,7 +133,7 @@ class en extends Chunk647438.PureComponent {
       voiceChannelType: u,
       voiceChannelBitrate: d,
       videoEnabled: f,
-      isScreenSharing: h,
+      isScreenSharing: m,
       runningGame: I,
       runningGamePid: v,
       selectedChannelId: C,
@@ -165,7 +165,7 @@ class en extends Chunk647438.PureComponent {
         t = null != e ? e.name : "",
         n = Z.Z.getStageInstanceByChannel(s),
         r = y.ZP.getActiveEventByChannel(s);
-      (0, p.yw)(X.rMx.CHANNEL_OPENED, ee({}, (0, p.$H)(s))), (0, m.a)(X.rMx.CHANNEL_OPENED_CLICKSTREAM, {
+      (0, p.yw)(X.rMx.CHANNEL_OPENED, ee({}, (0, p.$H)(s))), (0, h.a)(X.rMx.CHANNEL_OPENED_CLICKSTREAM, {
         channelId: s
       });
       let i = null,
@@ -190,7 +190,7 @@ class en extends Chunk647438.PureComponent {
     if (e.runningGame !== I && null != I && !I.isLauncher && (!j || x)) {
       let {
         gameId: e
-      } = (0, E.G8)(I), a = true !== e ? R.Z.getDetectableGame(e) : null, p = O.ZP.getOverrideForGame(I), f = M.Z.getGuildIds(), m = w.SE.getSetting(), h = f.filter(e => !m.includes(e)).slice(0, 200), g = null;
+      } = (0, E.G8)(I), a = true !== e ? R.Z.getDetectableGame(e) : null, p = O.ZP.getOverrideForGame(I), f = M.Z.getGuildIds(), h = w.SE.getSetting(), m = f.filter(e => !h.includes(e)).slice(0, 200), g = null;
       g = null != p ? "custom_override" : null != a ? "verified_game" : "launcher";
       let _ = P.default.getTrackedGameByPid(I.pid),
         y = (0, O.b6)(I),
@@ -208,7 +208,7 @@ class en extends Chunk647438.PureComponent {
             detectionMethod: g,
             overlayStatus: C,
             overlayMethod: S,
-            sharedGuildIds: h,
+            sharedGuildIds: m,
             voiceChannelId: s,
             voiceChannelType: u,
             voiceChannelBitrate: d,
@@ -219,11 +219,11 @@ class en extends Chunk647438.PureComponent {
         o.Z.identifyGame(v, e).then(e => o.Z.reportUnverifiedGame(e)).catch(e => new b.Z("AutoAnalytics").error("Cannot identify game", e))
       }
     }
-    if ((e.videoEnabled !== f || e.isScreenSharing !== h) && null != s) {
+    if ((e.videoEnabled !== f || e.isScreenSharing !== m) && null != s) {
       let e = "none",
-        t = [h ? "screen" : null, f ? "camera" : null].filter(J.lm),
+        t = [m ? "screen" : null, f ? "camera" : null].filter(J.lm),
         n = null;
-      h ? (e = "screen", n = (0, g.t)()) : f && (e = "camera"), K.default.track(X.rMx.VIDEO_INPUT_TOGGLED, ee({
+      m ? (e = "screen", n = (0, g.t)()) : f && (e = "camera"), K.default.track(X.rMx.VIDEO_INPUT_TOGGLED, ee({
         video_input_type: e,
         video_toggle_source: __OVERLAY__ ? "overlay" : "app",
         enabled_inputs: t,

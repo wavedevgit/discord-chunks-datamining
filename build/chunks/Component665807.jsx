@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 665807, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,10 +14,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk394843 = require("./394843.js"),
   Chunk882008 = require("./882008.js");
-let m = function(e) {
+let h = function(e) {
   let {
     loadId: t
-  } = e, n = o.Z.useField("categoryId"), m = (0, l.e7)([c.Z], () => c.Z.getCategoryName(n)), h = i.useCallback(() => {
+  } = e, n = o.Z.useField("categoryId"), h = (0, l.e7)([c.Z], () => c.Z.getCategoryName(n)), m = i.useCallback(() => {
     o.Z.setState({
       categoryId: u.Hk
     }), s.Z.loadCategoryResults({
@@ -27,9 +27,9 @@ let m = function(e) {
       languageCode: o.Z.getField("languageCode")
     })
   }, [t]), g = n === u.Hk ? d.intl.string(d.t.Ivw1Is) : d.intl.formatToPlainString(d.t["+1WAFb"], {
-    categoryName: m
+    categoryName: h
   }), _ = n === u.Hk ? d.intl.string(d.t.aXvEjd) : d.intl.format(d.t.XLioqn, {
-    onClick: h
+    onClick: m
   });
   return (0, r.jsxs)("div", {
     className: p.container,

@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 456065, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./388685.js");
 var r, i, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -31,7 +31,7 @@ class f extends(r = Chunk442837.ZP.Store) {
   configurable: true,
   writable: true
 }) : f[i] = "HubLinkNoticeStore";
-let m = new f(Chunk570140.Z, {
+let h = new f(Chunk570140.Z, {
   CONNECTION_OPEN: function(e) {
     for (let t of e.guilds)
       if (d(t.id)) returntrue;

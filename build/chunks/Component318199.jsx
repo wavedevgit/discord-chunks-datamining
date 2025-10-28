@@ -2,7 +2,7 @@
 /** chunk id: 318199, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => g,
-  r: () => h
+  r: () => m
 }), require("./781311.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -18,7 +18,7 @@ var Chunk581282 = require("./581282.js"),
   Chunk276792 = require("./276792.jsx"),
   Chunk290347 = require("./290347.jsx");
 
-function h(e) {
+function m(e) {
   let {
     content: t,
     isPreview: n
@@ -34,16 +34,16 @@ function g(e) {
     location: i
   } = (0, s.O)(), {
     analyticsLocations: l
-  } = (0, u.ZP)(c.Z.PREMIUM_MARKETING_ANNOUNCEMENT_MODAL), d = (0, o.ZP)(), h = (0, a.apv)(d);
+  } = (0, u.ZP)(c.Z.PREMIUM_MARKETING_ANNOUNCEMENT_MODAL), d = (0, o.ZP)(), m = (0, a.apv)(d);
   if ("announcementModalVariant1" === n.properties.oneofKind) {
     let e = (0, f.N)({
       content: n.properties.announcementModalVariant1,
       renderModalProps: t,
       analyticsLocations: l,
       analyticsLocation: i,
-      isLightTheme: h
+      isLightTheme: m
     });
-    return (0, r.jsx)(m.Z, function(e) {
+    return (0, r.jsx)(h.Z, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);

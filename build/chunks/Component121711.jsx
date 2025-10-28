@@ -75,7 +75,7 @@ function ef(e) {
     enabled: n
   } = (0, Z.WX)({
     location: et.dr.QUEST_HOME_DESKTOP
-  }), l = (0, u.e7)([m.Z], () => m.Z.useReducedMotion), s = (0, u.e7)([L.Z], () => L.Z.isFocused()), {
+  }), l = (0, u.e7)([h.Z], () => h.Z.useReducedMotion), s = (0, u.e7)([L.Z], () => L.Z.isFocused()), {
     ref: o,
     inViewport: c
   } = (0, q.a)(), d = i.useRef(null);
@@ -108,7 +108,7 @@ function ef(e) {
   })
 }
 
-function em(e) {
+function eh(e) {
   let {
     onLoadComplete: t
   } = e;
@@ -130,7 +130,7 @@ function em(e) {
   })
 }
 
-function eh(e) {
+function em(e) {
   let {
     onLoadComplete: t,
     onScroll: n,
@@ -183,7 +183,7 @@ function eh(e) {
           onClick: u
         }),
         className: ea.redirectNoticeBannerContainer,
-        children: (0, r.jsx)(em, {
+        children: (0, r.jsx)(eh, {
           onLoadComplete: t
         })
       }), (0, r.jsx)(T.Z, {
@@ -211,7 +211,7 @@ let eg = function(e) {
   var t;
   let {
     topLevelRoute: n
-  } = e, l = (0, s.TH)(), o = (null == (t = (0, s.LX)(l.pathname, en.Z5c.QUEST_HOME)) ? true : t.isExact) === true, m = (0, u.e7)([b.Z], () => b.Z.getState("quests")), {
+  } = e, l = (0, s.TH)(), o = (null == (t = (0, s.LX)(l.pathname, en.Z5c.QUEST_HOME)) ? true : t.isExact) === true, h = (0, u.e7)([b.Z], () => b.Z.getState("quests")), {
     selectedTab: I,
     onSelectTab: L,
     tabs: R
@@ -261,7 +261,7 @@ let eg = function(e) {
   let eu = eo ? el.intl.format(el.t.BCBIlp, {}) : el.intl.format(el.t.lmMBfy, {}),
     ed = eo ? el.intl.format(el.t.U9FY0J, {}) : el.intl.string(el.t.oWCrBq),
     ep = i.useRef(null),
-    em = i.useCallback(() => {
+    eh = i.useCallback(() => {
       (0, A.Y)({
         pageType: en.ZY5.GLOBAL_DISCOVERY_QUESTS,
         sectionType: en.jXE.ORBS_BALANCE_MENU,
@@ -269,7 +269,7 @@ let eg = function(e) {
       }), (0, E.mK)({
         tab: er.AW.ORBS,
         analyticsLocations: [],
-        analyticsSource: h.Z.ORBS_BALANCE_MENU
+        analyticsSource: m.Z.ORBS_BALANCE_MENU
       })
     }, []);
   i.useEffect(() => {
@@ -281,7 +281,7 @@ let eg = function(e) {
     location: et.dr.QUEST_PREVIEW_TOOL_2
   });
   i.useEffect(() => {
-    if (null != m || !eg) return;
+    if (null != h || !eg) return;
     let e = new URLSearchParams(l.search),
       t = e.get(U.tR.TAB),
       n = e.get(U.tR.QUEST_ID);
@@ -292,7 +292,7 @@ let eg = function(e) {
         tab: t
       }
     })
-  }, [l.search, m, eg]);
+  }, [l.search, h, eg]);
   let {
     enabled: e_
   } = V.GE.useConfig({
@@ -308,7 +308,7 @@ let eg = function(e) {
       className: a()(ea.container, {
         [ea.withoutTopBorder]: !n
       }),
-      children: o ? (0, r.jsx)(eh, {
+      children: o ? (0, r.jsx)(em, {
         onSelectTab: L,
         onScroll: D,
         onLoadComplete: q,
@@ -326,7 +326,7 @@ let eg = function(e) {
             analyticsPage: en.ZY5.GLOBAL_DISCOVERY_QUESTS,
             cardAlignment: w.ek.END,
             ctaText: el.intl.string(el.t["J+vlIR"]),
-            ctaOnClick: em
+            ctaOnClick: eh
           })
         }), (0, r.jsxs)(x.Z, {
           onScroll: D,
@@ -341,7 +341,7 @@ let eg = function(e) {
                 onClick: () => (0, E.mK)({
                   tab: er.AW.ORBS,
                   analyticsLocations: [],
-                  analyticsSource: h.Z.INTRO_TO_ORBS_QUEST_BANNER
+                  analyticsSource: m.Z.INTRO_TO_ORBS_QUEST_BANNER
                 })
               }), (0, r.jsx)(p.Button, {
                 variant: "overlay-secondary",

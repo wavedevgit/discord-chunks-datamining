@@ -72,13 +72,13 @@ function P(e) {
   } = (0, s.cj)([b.Z], () => ({
     status: b.Z.getStatus(i.id),
     isMobile: b.Z.isMobileOnline(i.id)
-  })), m = (0, s.e7)([O.Z, g.Z], () => {
+  })), h = (0, s.e7)([O.Z, g.Z], () => {
     let e = g.Z.getDMFromUserId(i.id);
     return null != e && O.Z.isTyping(e, i.id)
   }, [i]), {
     avatarSrc: _,
     eventHandlers: E
-  } = (0, h.Z)({
+  } = (0, m.Z)({
     userId: i.id,
     size: o.EFr.SIZE_32,
     animateOnHover: true
@@ -104,8 +104,8 @@ function P(e) {
       src: _,
       "aria-label": null != (t = i.globalName) ? t : i.username,
       status: u,
-      isTyping: m,
-      isMobile: d && !m,
+      isTyping: h,
+      isMobile: d && !h,
       size: o.EFr.SIZE_32,
       CutoutIcon: y,
       avatarTooltipAsset: v ? "\uD83D\uDD25" : a ? "❄️" : true,
@@ -121,7 +121,7 @@ function x() {
   let {
     enabled: e
   } = (0, Chunk399521.Q)("frequent_friends_row"), t = function() {
-    let e = (0, Chunk442837.Wu)([Chunk752048.Z], () => [...Chunk752048.Z.getUserAffinities()].sort((e, t) => m.Z.compare(e.otherUserId, t.otherUserId))),
+    let e = (0, Chunk442837.Wu)([Chunk752048.Z], () => [...Chunk752048.Z.getUserAffinities()].sort((e, t) => h.Z.compare(e.otherUserId, t.otherUserId))),
       t = (0, Chunk442837.Wu)([Chunk594174.default, Chunk699516.Z], () => {
         let t = module.map(e => e.otherUserId),
           n = [];
@@ -158,7 +158,7 @@ function x() {
   Chunk647438.useEffect(() => {
     (null == exports ? true : exports.frequentFriends.length) != null && Chunk367907()
   }, [null == exports ? true : exports.frequentFriends.length, null == exports ? true : exports.showCompetitiveSpot, Chunk367907]);
-  let h = (0, Chunk393903.y)(Chunk367907, []),
+  let m = (0, Chunk393903.y)(Chunk367907, []),
     g = Chunk647438.useCallback(e => {
       let t = e.currentTarget;
       c({
@@ -190,7 +190,7 @@ function x() {
         })]
       }), (0, Chunk951288.jsx)(Chunk481060.xVE, {
         ref: e => {
-          p.current = e, h.current = (null == e ? true : e.getScrollerNode()) != null ? e.getScrollerNode() : null
+          p.current = e, m.current = (null == e ? true : e.getScrollerNode()) != null ? e.getScrollerNode() : null
         },
         className: a()(Chunk944658.frequentFriendsAvatars, {
           [Chunk944658.scrollMaskLeft]: x && A,

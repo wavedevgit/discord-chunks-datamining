@@ -34,15 +34,15 @@ function p(e) {
     isTryItOutFlow: T,
     hideBioSection: S,
     shouldOpenBadgeTooltip: A
-  } = e, C = (0, i.e7)([c.ZP], () => null == h ? null : c.ZP.getMember(h.id, n.id)), N = (0, i.e7)([u.Z], () => u.Z.hidePersonalInformation), R = null == p || null == (t = p.getPreviewBio(b)) ? true : t.value, P = null != y ? y : null == p ? true : p.pronouns, D = (0, d.Ly)({
+  } = e, C = (0, i.e7)([c.ZP], () => null == h ? null : c.ZP.getMember(h.id, n.id)), N = (0, i.e7)([u.Z], () => u.Z.hidePersonalInformation), R = null == p || null == (t = p.getPreviewBio(b)) ? true : t.value, P = null != y ? y : null == p ? true : p.pronouns, w = (0, d.Ly)({
     pendingNickname: g,
     pendingGlobalName: E,
     user: n,
     guildMember: C
-  }), w = () => {
+  }), D = () => {
     if (null != C && null !== m && (null != C.avatar || null != m)) return (0, r.jsx)(l.Z, {
       user: n,
-      nickname: D
+      nickname: w
     })
   };
   return (0, r.jsxs)("div", {
@@ -51,8 +51,8 @@ function p(e) {
     children: [(0, r.jsx)(o.Z, {
       user: n,
       guildId: null == h ? true : h.id,
-      usernameIcon: w(),
-      nickname: D,
+      usernameIcon: D(),
+      nickname: w,
       pendingDisplayNameStyles: I,
       pronouns: P,
       isTryItOut: T,

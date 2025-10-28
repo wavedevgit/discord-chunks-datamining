@@ -159,7 +159,7 @@ function ed(e) {
     priceOptions: I
   } = e, {
     setInvoicePreview: S
-  } = (0, v.JL)(), R = (0, N.Z)(), P = a.interval, w = a.intervalCount, x = (0, u.e7)([F.Z], () => F.Z.getForSkuAndInterval((0, K.Wz)(J.Si.GUILD), P, w)), M = (0, u.e7)([G.default], () => G.default.getCurrentUser()), U = (0, y.Z)({
+  } = (0, v.JL)(), R = (0, N.Z)(), P = a.interval, D = a.intervalCount, x = (0, u.e7)([F.Z], () => F.Z.getForSkuAndInterval((0, K.Wz)(J.Si.GUILD), P, D)), M = (0, u.e7)([G.default], () => G.default.getCurrentUser()), U = (0, y.Z)({
     forceFetch: false
   });
   l()(null != x, "Missing guildBoostingSubscriptionPlan");
@@ -264,7 +264,7 @@ function ed(e) {
           className: et.planSelectorLabel,
           children: eI ? ec({
             intervalType: P,
-            intervalCount: w
+            intervalCount: D
           }) : ee.intl.string(ee.t.K9Bmze)
         })]
       }), (0, r.jsx)("div", {
@@ -273,7 +273,7 @@ function ed(e) {
         }),
         children: ep ? (0, r.jsx)(_.$jN, {}) : eI ? (0, z.T4)(eE.amount, eE.currency) : el({
           intervalType: P,
-          intervalCount: w,
+          intervalCount: D,
           amount: eE.amount,
           currency: eE.currency
         })
@@ -289,11 +289,11 @@ function ed(e) {
         className: o()(et.__invalid_planSelectorSubtotalPrice, {
           [et.loadingSpinner]: ep
         }),
-        children: ep ? (0, r.jsx)(_.$jN, {}) : (0, r.jsx)(D.Z, {
+        children: ep ? (0, r.jsx)(_.$jN, {}) : (0, r.jsx)(w.Z, {
           price: eb,
           currency: eE.currency,
           intervalType: P,
-          intervalCount: w,
+          intervalCount: D,
           isPrepaidPaymentSource: eI
         })
       })]
@@ -414,8 +414,8 @@ function e_(e) {
       setInvoicePreview: R
     } = (0, v.JL)(),
     P = s.paymentSourceId,
-    D = (0, I.$)(o, P),
-    w = (0, u.e7)([Z.Z], () => null != d ? Z.Z.getPaymentSource(d) : null),
+    w = (0, I.$)(o, P),
+    D = (0, u.e7)([Z.Z], () => null != d ? Z.Z.getPaymentSource(d) : null),
     L = (0, u.e7)([U.Z], () => U.Z.hidePersonalInformation);
   n = null != l ? (0, K.Zx)(l, y[0].quantity, y[0].planId) : y;
   let {
@@ -456,13 +456,13 @@ function e_(e) {
       priceOptions: s
     }) : null, (0, r.jsx)("div", {
       className: et.paymentSourceWrapper,
-      children: null != d ? null != w ? (0, r.jsx)(f.u, {
+      children: null != d ? null != D ? (0, r.jsx)(f.u, {
         asContainer: true,
         text: ee.intl.string(ee.t.XiuuV9),
         children: (0, r.jsx)(m.ZP, {
           label: ee.intl.string(ee.t["mmDvV+"]),
-          paymentSources: [w],
-          selectedPaymentSourceId: w.id,
+          paymentSources: [D],
+          selectedPaymentSourceId: D.id,
           hidePersonalInformation: L,
           disabled: true
         })
@@ -484,7 +484,7 @@ function e_(e) {
         forceShow: true,
         finePrint: (0, r.jsx)(p.Z, {
           subscriptionPlan: h,
-          paymentSourceType: D,
+          paymentSourceType: w,
           proratedAmount: null != k ? k.total : true,
           basePrice: a,
           productLine: X.POd.BOOST
@@ -541,11 +541,11 @@ function ep(e) {
         }
       },
       pauseWhileUnfocused: false
-    }) : null, (0, r.jsx)(w.ZP, {
+    }) : null, (0, r.jsx)(D.ZP, {
       className: et.confirmationUpgradedBanner,
       theme: h,
       premiumType: J.PremiumTypes.TIER_2,
-      type: $.X7.has(null != u ? u : $.He.UNKNOWN) ? w.ZP.Types.PREMIUM_PAYMENT_STARTED : w.ZP.Types.GUILD_BOOST_APPLIED
+      type: $.X7.has(null != u ? u : $.He.UNKNOWN) ? D.ZP.Types.PREMIUM_PAYMENT_STARTED : D.ZP.Types.GUILD_BOOST_APPLIED
     }), (0, r.jsx)("div", {
       className: et.confirmationText,
       children: n

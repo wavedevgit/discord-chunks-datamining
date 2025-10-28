@@ -8,10 +8,10 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk997638 = require("./997638.jsx"),
   Chunk362658 = require("./362658.js"),
   Chunk216306 = require("./216306.js"),
   Chunk155409 = require("./155409.jsx"),
+  Chunk350707 = require("./350707.jsx"),
   Chunk540126 = require("./540126.js"),
   Chunk301342 = require("./301342.jsx"),
   Chunk327530 = require("./327530.js"),
@@ -63,12 +63,12 @@ let _ = Chunk647438.memo(function(e) {
     disableManageChannels: O
   } = e, {
     isFavoritesPerk: y
-  } = (0, a.z)("ChannelListSection"), j = i.useCallback(() => {
+  } = (0, o.z)("ChannelListSection"), j = i.useCallback(() => {
     let e = m.getCategoryFromSection(m.recentsSectionNumber);
     if (null == e) return;
     let t = null,
       r = e.getShownChannelAndThreadIds();
-    null != _ && r.includes(_) && (t = (0, s.KY)(m)), (0, s.Uo)(n.id, r, t)
+    null != _ && r.includes(_) && (t = (0, a.KY)(m)), (0, a.Uo)(n.id, r, t)
   }, [n.id, _, m, b]), {
     density: v
   } = (0, l.TCT)(), x = "compact" === v ? 8 : p.$k;
@@ -116,9 +116,9 @@ let _ = Chunk647438.memo(function(e) {
         channel: e.record,
         position: e.position,
         disableManageChannels: O,
-        children: (0, r.jsx)(c.Z, {
+        children: (0, r.jsx)(s.Z, {
           inlineSpecs: p.MF,
-          arrowAlignment: o.cy.TOP,
+          arrowAlignment: c.cy.TOP,
           tutorialId: "organize-by-topic",
           position: "right"
         })

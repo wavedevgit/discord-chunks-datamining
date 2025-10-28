@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk979905 = require("./979905.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -39,7 +39,7 @@ class g extends Chunk647438.PureComponent {
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-          h(e, t, n[t])
+          m(e, t, n[t])
         })
       }
       return e
@@ -72,10 +72,10 @@ class g extends Chunk647438.PureComponent {
     }
   }
   constructor(...e) {
-    super(...e), h(this, "state", {
+    super(...e), m(this, "state", {
       memoizedMode: this.props.mode,
       clicked: false
-    }), h(this, "handleInstallDownload", () => {
+    }), m(this, "handleInstallDownload", () => {
       d.Z.isConnected() ? s.Z.show({
         title: f.intl.string(f.t.tiu1ly),
         body: f.intl.string(f.t["zK+lqW"]),
@@ -84,7 +84,7 @@ class g extends Chunk647438.PureComponent {
         confirmText: f.intl.string(f.t["QDX/qu"]),
         confirmVariant: "critical-primary"
       }) : this.doUpdate()
-    }), h(this, "doUpdate", () => {
+    }), m(this, "doUpdate", () => {
       this.state.clicked || (this.setState({
         clicked: true
       }), (0, o.Q)())

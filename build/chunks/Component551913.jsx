@@ -20,16 +20,16 @@ function p(e) {
     onRequestClose: p,
     targetElementRef: f
   } = e, {
-    enabled: m,
-    variant: h
+    enabled: h,
+    variant: m
   } = s.GE.useConfig({
     location: o.dr.QUEST_HOME_DESKTOP
   }), g = i.useCallback(() => {
     t(), (0, a.uL)(c.Z5c.QUEST_HOME_V2)
   }, [t]);
   if (i.useEffect(() => {
-      m && n()
-    }, [m, n]), m) return (0, r.jsx)(l.J2, {
+      h && n()
+    }, [h, n]), h) return (0, r.jsx)(l.J2, {
     actions: [{
       text: function(e) {
         switch (e) {
@@ -42,7 +42,7 @@ function p(e) {
           case s.yE.REWARD:
             return u.intl.string(u.t.gL45vM)
         }
-      }(h),
+      }(m),
       variant: "primary",
       onClick: g
     }],
@@ -71,6 +71,6 @@ function p(e) {
         case s.yE.REWARD:
           return u.intl.string(u.t.mOH7r6)
       }
-    }(h)
+    }(m)
   })
 }

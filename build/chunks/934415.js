@@ -7,7 +7,7 @@ require.d(exports, {
   Nj: () => Chunk90463.Z,
   a5: () => x,
   c4: () => L,
-  g7: () => D,
+  g7: () => w,
   jZ: () => C,
   mE: () => B,
   oQ: () => A,
@@ -105,11 +105,11 @@ function P(e, t, n) {
   return h || m && !_
 }
 
-function D(e, t) {
+function w(e, t) {
   return t.isGuildStageVoice() ? g.epw : null == e ? g.eWB : Math.max(e.features.has(g.GuildFeatures.VIP_REGIONS) ? E.HO[g.Eu4.TIER_3].limits.bitrate : g.eWB, E.HO[e.premiumTier].limits.bitrate)
 }
 
-function w(e) {
+function D(e) {
   let {
     channels: t,
     selectedChannelId: n,
@@ -132,7 +132,7 @@ function L(e) {
     selectedVoiceChannelId: r,
     voiceStates: i
   } = e;
-  return w({
+  return D({
     channels: t,
     selectedChannelId: n,
     selectedVoiceChannelId: r,

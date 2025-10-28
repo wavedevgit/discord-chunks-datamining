@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 28494, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  H: () => m,
+  H: () => h,
   f: () => f
 }), require("./781311.js");
 var Chunk647438 = require("./647438.js"),
@@ -28,7 +28,7 @@ function f(e) {
   }), f = (0, i.e7)([o.Z], () => {
     var e;
     return null != (e = o.Z.getIsFetching(u)) && e
-  }), m = c.Z.useField("resultsQuery"), h = m !== n, g = r.useCallback(() => {
+  }), h = c.Z.useField("resultsQuery"), m = h !== n, g = r.useCallback(() => {
     let e = o.Z.getGuildIds(u),
       n = o.Z.getTotal(u);
     if (null == e || null == n) return;
@@ -44,14 +44,14 @@ function f(e) {
   }, [t, u]);
   return r.useMemo(() => ({
     guildIds: d,
-    loading: h || f,
-    searchResultsQuery: m,
+    loading: m || f,
+    searchResultsQuery: h,
     loadMore: g,
     searchCategoryId: l
-  }), [d, h, f, m, g, l])
+  }), [d, m, f, h, g, l])
 }
 
-function m(e) {
+function h(e) {
   let {
     loadId: t
   } = e, n = d.Z.useField("isSearchVisible"), i = c.Z.useField("query");

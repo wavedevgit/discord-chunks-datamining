@@ -2,7 +2,7 @@
 /** chunk id: 515005, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => D
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -83,8 +83,8 @@ function N(e, t) {
 }
 let R = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewDimensions),
   P = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewPadding),
-  D = 250,
-  w = Chunk647438.memo(function(e) {
+  w = 250,
+  D = Chunk647438.memo(function(e) {
     let {
       isDisplayingIndividualStickers: t = false,
       preferAnimation: a = true,
@@ -92,7 +92,7 @@ let R = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewDimensions
       getStickerRowProps: I,
       gutterWidth: S,
       inspectedStickerPosition: N,
-      isScrolling: w,
+      isScrolling: D,
       isUsingKeyboardNavigation: L,
       onInspect: x,
       onSelect: M,
@@ -127,13 +127,13 @@ let R = (0, Chunk468194.Mg)(Chunk940992.__invalid_stickerPickerPreviewDimensions
         let f = e.visibleRowIndex === (null == N ? true : N.rowIndex) && e.columnIndex === (null == N ? true : N.columnIndex),
           I = e.type === m.al.STICKER && F && f,
           S = t => {
-            if ((null == w ? true : w.current) === true || (null == L ? true : L.current) === true) return;
+            if ((null == D ? true : D.current) === true || (null == L ? true : L.current) === true) return;
             let n = t.altKey;
             n && e.type === m.al.STICKER && !(0, g.gM)(e.sticker.id) && Q(e.sticker.id), null == M || M(e, n)
           },
           R = (0, s.throttle)(() => {
-            (null == w ? true : w.current) === true || (null == L ? true : L.current) === true || f || null == x || x(e)
-          }, D),
+            (null == D ? true : D.current) === true || (null == L ? true : L.current) === true || f || null == x || x(e)
+          }, w),
           P = () => {
             e.type === m.al.CREATE_STICKER && (p.default.track(y.rMx.OPEN_MODAL, {
               type: y.jXE.CREATE_STICKER_MODAL,

@@ -23,11 +23,11 @@ function s(e) {
     }) ? i.u1M : i.z1l,
     f = false;
 
-  function m(e) {
+  function h(e) {
     u(e, f)
   }
 
-  function h() {
+  function m() {
     f = true
   }(0, i.ZDy)(async () => {
     let {
@@ -55,8 +55,8 @@ function s(e) {
       customId: s,
       linkId: o,
       message: c,
-      onCopyLink: h,
-      onShare: m
+      onCopyLink: m,
+      onShare: h
     }, n))
   }, {
     modalKey: "activity-share-moment-modal",

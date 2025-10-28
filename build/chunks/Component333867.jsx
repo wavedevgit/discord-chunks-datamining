@@ -92,8 +92,8 @@ function T(e) {
       variantsReturnStyle: R
     } = e,
     P = false,
-    D = (0, i.Z)(),
-    w = e => {
+    w = (0, i.Z)(),
+    D = e => {
       t = e
     },
     L = h ? v : O,
@@ -123,7 +123,7 @@ function T(e) {
       returnRef: n
     } = e, i = b(e, ["onClose", "returnRef"]);
     return (0, r.jsx)(_.Z, E(m({}, i), {
-      loadId: D,
+      loadId: w,
       skuId: f,
       isGift: h,
       giftMessage: g,
@@ -137,13 +137,13 @@ function T(e) {
         P = true, null == S || S()
       },
       returnRef: n,
-      onStepChange: w
+      onStepChange: D
     }))
   }, {
     modalKey: L,
     onCloseCallback: () => {
       P || d.default.track(p.rMx.PAYMENT_FLOW_CANCELED, {
-        load_id: D,
+        load_id: w,
         payment_type: p.Zuq[p.GZQ.ONE_TIME],
         location: C,
         is_gift: h,

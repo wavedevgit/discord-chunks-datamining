@@ -35,7 +35,7 @@ function N(e) {
     guild: t,
     onClick: l,
     onView: s
-  } = e, [m, h] = i.useState(false), [E, N] = i.useState(false), [j, P] = i.useState(false), x = i.useRef(null), A = i.useCallback(async () => {
+  } = e, [h, m] = i.useState(false), [E, N] = i.useState(false), [j, P] = i.useState(false), x = i.useRef(null), A = i.useCallback(async () => {
     N(true);
     try {
       await l(t.id)
@@ -43,8 +43,8 @@ function N(e) {
       N(false)
     }
   }, [t.id, l]), Z = i.useCallback(e => {
-    e && !m && (h(true), null == s || s(t.id))
-  }, [t.id, m, s]), w = i.useCallback(e => {
+    e && !h && (m(true), null == s || s(t.id))
+  }, [t.id, h, s]), w = i.useCallback(e => {
     (0, u.jW)(e, async () => {
       let {
         default: e
@@ -112,7 +112,7 @@ function N(e) {
     }), (0, r.jsx)(o.$, {
       innerRef: x,
       onChange: Z,
-      active: !m,
+      active: !h,
       threshold: .55,
       children: (0, r.jsxs)(f.Z, {
         ref: x,
@@ -228,13 +228,13 @@ function P(e) {
     index: n,
     onClick: l,
     onView: a
-  } = e, s = i.useRef(null == t), o = i.useCallback((e, t, n, i) => null == t.guildId ? (0, r.jsx)(h.Z, {
+  } = e, s = i.useRef(null == t), o = i.useCallback((e, t, n, i) => null == t.guildId ? (0, r.jsx)(m.Z, {
     state: n,
     cleanUp: i,
-    children: (0, r.jsx)(m.Z, {
+    children: (0, r.jsx)(h.Z, {
       className: y.placeholder
     })
-  }, e) : (0, r.jsx)(h.Z, {
+  }, e) : (0, r.jsx)(m.Z, {
     state: n,
     cleanUp: i,
     animate: s.current,

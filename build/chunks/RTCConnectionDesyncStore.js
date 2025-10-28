@@ -2,7 +2,7 @@
 /** chunk id: 878884, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => D
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk46973 = require("./46973.js"),
@@ -128,7 +128,7 @@ function P(e) {
   } = e;
   return n === a.Yn.DEFAULT && I(t)
 }
-class D extends(r = Chunk442837.ZP.Store) {
+class w extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk979651.Z, Chunk594174.default, Chunk592125.Z, Chunk19780.Z), this.syncWith([Chunk594174.default], T)
   }
@@ -145,8 +145,8 @@ class D extends(r = Chunk442837.ZP.Store) {
     return y.values()
   }
 }
-E(D, "displayName", "RTCConnectionDesyncStore");
-let w = new D(Chunk570140.Z, {
+E(w, "displayName", "RTCConnectionDesyncStore");
+let D = new w(Chunk570140.Z, {
   CONNECTION_OPEN: A,
   VOICE_CHANNEL_SELECT: S,
   RTC_CONNECTION_STATE: C,

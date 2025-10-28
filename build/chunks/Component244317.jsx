@@ -51,23 +51,23 @@ function g(e) {
       }).then(() => n.disconnect())
     }), b.current = true)
   }, [t, I, v]), I && false !== E) ? true === E ? (0, r.jsxs)("div", {
-    className: h.container,
+    className: m.container,
     children: [(0, r.jsx)(o.Heading, {
       variant: "heading-xxl/bold",
-      children: m.intl.string(m.t.csrAMJ)
+      children: h.intl.string(h.t.csrAMJ)
     }), (0, r.jsx)(o.Text, {
       variant: "text-xs/semibold",
-      children: m.intl.string(m.t["m1+IBn"])
+      children: h.intl.string(h.t["m1+IBn"])
     }), (0, r.jsx)(s.zxk, {
       variant: "primary",
-      text: m.intl.string(m.t.fIv16B),
+      text: h.intl.string(h.t.fIv16B),
       onClick: () => _(true)
     })]
   }) : (0, r.jsxs)("div", {
-    className: h.container,
+    className: m.container,
     children: [(0, r.jsx)(o.Heading, {
       variant: "heading-xxl/bold",
-      children: m.intl.string(m.t["Z+hCVU"])
+      children: h.intl.string(h.t["Z+hCVU"])
     }), (0, r.jsx)(o.$jN, {})]
   }) : (0, r.jsx)(d.Z, function(e) {
     for (var t = 1; t < arguments.length; t++) {

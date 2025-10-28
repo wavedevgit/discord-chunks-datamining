@@ -73,7 +73,7 @@ let w = {
           guild_id: t
         }
       } = e;
-      if (null == h.Z.getGuild(t)) throw new O.Z({
+      if (null == m.Z.getGuild(t)) throw new O.Z({
         errorCode: j.lTL.INVALID_GUILD
       }, "Invalid guild id: ".concat(t));
       return e => {
@@ -81,7 +81,7 @@ let w = {
         let {
           prevState: r,
           dispatch: l
-        } = e, a = h.Z.getGuild(t);
+        } = e, a = m.Z.getGuild(t);
         if (null == a) return;
         let s = {
           guild: {
@@ -352,7 +352,7 @@ let w = {
           prevState: n,
           dispatch: r
         } = e, i = {
-          currentGuildMember: m.ZP.getSelfMember(t)
+          currentGuildMember: h.ZP.getSelfMember(t)
         };
         return null == i.currentGuildMember || null != n && (0, s.Z)(i, n) || r((0, S.Z)(i.currentGuildMember)), i
       }

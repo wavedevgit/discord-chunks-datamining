@@ -6,7 +6,7 @@ require.d(exports, {
   $J: () => ta,
   $V: () => t_,
   AV: () => eg,
-  B2: () => tw,
+  B2: () => tD,
   B3: () => tv,
   BM: () => tl,
   Bg: () => eI,
@@ -21,7 +21,7 @@ require.d(exports, {
   GN: () => eE,
   Gd: () => tT,
   HJ: () => ti,
-  Jg: () => ew,
+  Jg: () => eD,
   K: () => eN,
   KM: () => eB,
   Kr: () => ev,
@@ -52,7 +52,7 @@ require.d(exports, {
   _j: () => th,
   _p: () => tO,
   b7: () => e3,
-  bA: () => tD,
+  bA: () => tw,
   f$: () => ty,
   f2: () => eH,
   fY: () => tu,
@@ -81,7 +81,7 @@ require.d(exports, {
   xn: () => ey,
   yH: () => tb,
   yI: () => ec,
-  ys: () => eD,
+  ys: () => ew,
   zE: () => eb,
   zK: () => eZ,
   zi: () => $
@@ -392,15 +392,15 @@ function eh(e, t, n) {
 }
 let em = e => {
   switch (e) {
-    case D.y$.XBOX:
+    case w.y$.XBOX:
       return G.intl.string(G.t.G84UWZ);
-    case D.y$.PLAYSTATION:
+    case w.y$.PLAYSTATION:
       return G.intl.string(G.t["6IeKx2"]);
-    case D.y$.SWITCH:
+    case w.y$.SWITCH:
       return G.intl.string(G.t["1pp0su"]);
-    case D.y$.PC:
+    case w.y$.PC:
       return G.intl.string(G.t["YK+wUg"]);
-    case D.y$.CROSS_PLATFORM:
+    case w.y$.CROSS_PLATFORM:
       return G.intl.string(G.t.UWVbzV)
   }
 };
@@ -425,12 +425,12 @@ function eg(e) {
 }
 
 function eE(e) {
-  return Object.keys(k.a_).includes(D.jn[e])
+  return Object.keys(k.a_).includes(w.jn[e])
 }
 
 function eb(e, t) {
   if (!eE(t)) returnfalse;
-  let n = D.jn[t];
+  let n = w.jn[t];
   return (0, S.yE)(e.dismissedQuestContent, k.a_[n])
 }
 
@@ -507,7 +507,7 @@ function eP(e, t) {
   return e.targetedContent.includes(t)
 }
 
-function eD(e, t) {
+function ew(e, t) {
   C.Z.captureException(e, V(Z({}, t), {
     tags: V(Z({}, null == t ? true : t.tags), {
       app_context: "quests"
@@ -515,7 +515,7 @@ function eD(e, t) {
   }))
 }
 
-function ew(e, t) {
+function eD(e, t) {
   if (null == t || null == e) return null;
   for (let n of t) {
     let t = X(e, n);
@@ -956,9 +956,9 @@ function tS(e, t) {
 
 function tA(e) {
   return ({
-    [D.jn.QUEST_BAR]: D.Ok.DESKTOP_ACCOUNT_PANEL_AREA,
-    [D.jn.QUEST_BAR_V2]: D.Ok.DESKTOP_ACCOUNT_PANEL_AREA,
-    [D.jn.QUEST_BAR_MOBILE]: D.Ok.MOBILE_HOME_DOCK_AREA
+    [w.jn.QUEST_BAR]: w.Ok.DESKTOP_ACCOUNT_PANEL_AREA,
+    [w.jn.QUEST_BAR_V2]: w.Ok.DESKTOP_ACCOUNT_PANEL_AREA,
+    [w.jn.QUEST_BAR_MOBILE]: w.Ok.MOBILE_HOME_DOCK_AREA
   })[e]
 }
 
@@ -978,11 +978,11 @@ let tP = e => e.percentComplete > 0 ? G.intl.formatToPlainString(G.t["c59/Tp"], 
   remainTime: e7(e)
 });
 
-function tD(e, t) {
+function tw(e, t) {
   return e <= 0 || t <= 0 ? 0 : e >= t ? 1 : Math.min(1, Math.round(e / t * 100) / 100)
 }
 
-function tw(e) {
+function tD(e) {
   var t, n, r, i;
   let a = x.r.build(e).defaultWatchVideoTask;
   return null != (i = null != (r = null != (n = null == (t = e.ctaConfig) ? true : t.buttonLabel) ? n : null == a ? true : a.messages.videoEndCtaButtonLabel) ? r : null == a ? true : a.messages.videoEndCtaTitle) ? i : G.intl.string(G.t.iiTtpJ)
@@ -1041,11 +1041,11 @@ function tG(e) {
     questId: r,
     sourceQuestContent: i,
     videoSessionId: a
-  } = e, o = w.ZP.getState().getVideoProgress(r);
+  } = e, o = D.ZP.getState().getVideoProgress(r);
   if (null == o) return;
   let s = P.Z.getQuest(r);
   null != s && (null == (t = s.userStatus) ? true : t.enrolledAt) != null && (null == (n = s.userStatus) ? true : n.completedAt) == null && tS(s, o.maxTimestampSec);
-  let l = tD(o.maxTimestampSec, o.duration);
+  let l = tw(o.maxTimestampSec, o.duration);
   (0, N.dA)({
     questId: r,
     event: j.rMx.QUEST_VIDEO_PROGRESSED,

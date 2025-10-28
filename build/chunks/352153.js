@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 352153, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  a: () => h
+  a: () => m
 }), require("./388685.js"), require("./539854.js");
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
@@ -16,11 +16,11 @@ var Chunk647438 = require("./647438.js"),
   Chunk390536 = require("./390536.js"),
   Chunk11543 = require("./11543.js");
 
-function h(e) {
+function m(e) {
   let {
     showDot: t,
     notificationItem: n,
-    setScrollState: h
+    setScrollState: m
   } = e, [g, _] = r.useState(false), {
     unreadItems: b,
     readItems: E,
@@ -56,7 +56,7 @@ function h(e) {
   r.useEffect(() => {
     if (y || v || null == x || null == P || P === x) return;
     let e = Date.now();
-    e - j > m.C && (a.Z.gravityScrollEvent(e), s.m.trackFeedFirstScrollStarted())
+    e - j > h.C && (a.Z.gravityScrollEvent(e), s.m.trackFeedFirstScrollStarted())
   }, [y, j, x, P, N, v]);
   let A = r.useCallback(e => {
       var t, n;
@@ -64,7 +64,7 @@ function h(e) {
         viewableItems: r
       } = e;
       if (r.some(e => "end" === e.item.data.kind) && _(true), 0 === r.length) return;
-      T(r), (null != (n = null == (t = r[r.length - 1]) ? true : t.index) ? n : 0) > 10 && (null == h || h());
+      T(r), (null != (n = null == (t = r[r.length - 1]) ? true : t.index) ? n : 0) > 10 && (null == m || m());
       let i = [];
       r.forEach(e => {
         let {
@@ -90,7 +90,7 @@ function h(e) {
         id: e.id,
         type: (0, u.v$)(e)
       })), I)
-    }, [I, _, h]),
+    }, [I, _, m]),
     Z = r.useCallback(e => {
       let {
         viewableItems: t

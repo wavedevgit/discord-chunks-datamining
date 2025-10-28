@@ -106,7 +106,7 @@ class O extends Chunk647438.Component {
             let t = a.find(e => e.key === i);
             if (null == t) return;
             let n = t.libraryApplication;
-            h.performDefaultLibraryApplicationAction(n, {
+            m.performDefaultLibraryApplicationAction(n, {
               analyticsParams: {
                 source: g.Sbl.APPLICATION_LIBRARY,
                 location: {

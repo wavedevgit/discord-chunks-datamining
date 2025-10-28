@@ -117,7 +117,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk701476 = require("./701476.js"),
   Chunk186901 = require("./186901.js");
 
-function e9(e, t, n) {
+function e7(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -126,14 +126,14 @@ function e9(e, t, n) {
   }) : e[t] = n, e
 }
 
-function e7(e) {
+function e9(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      e9(e, t, n[t])
+      e7(e, t, n[t])
     })
   }
   return e
@@ -162,7 +162,7 @@ let tt = (0, Chunk951752.l)(e => {
         match: n,
         urlOrigin: "deeplink"
       })
-    }), (0, r.jsx)(m.Z, {
+    }), (0, r.jsx)(h.Z, {
       deepLinkType: e6.jE.USER_SETTINGS,
       path: t.pathname,
       search: t.search,
@@ -353,7 +353,7 @@ let ts = [{
         } = await Promise.all([n.e("15076"), n.e("38203")]).then(n.bind(n, 907941));
         return t => {
           var n, l;
-          return (0, r.jsx)(e, (n = e7({}, t), l = l = {
+          return (0, r.jsx)(e, (n = e9({}, t), l = l = {
             guildId: i
           }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);
@@ -504,7 +504,7 @@ class tu extends Chunk647438.PureComponent {
         let {
           default: e
         } = await Promise.resolve().then(require.bind(require, 650233));
-        return t => (0, r.jsx)(e, e7({}, t))
+        return t => (0, r.jsx)(e, e9({}, t))
       })
     }), Chunk377400.Z.initialize(), Chunk329557.Z.initialize(), Chunk837689.Z.initialize(), Chunk823169.Z.initialize(), Chunk954709.Z.initialize(), Chunk644679.Z.initialize(), Chunk64514.Z.initialize(), this.rewriterUnlisten = Chunk304445.Z.addRouteRewriter(this.ensureChannelMatchesGuild), this.historyUnlisten = Chunk304445.Z.addRouteChangeListener(this.handleHistoryChange)
   }
@@ -543,12 +543,12 @@ class tu extends Chunk647438.PureComponent {
         channelId: i,
         messageId: s,
         threadId: o
-      } = ta(n), c = (0, eI.Ss)(r), u = (0, eI.cq)(i), f = (0, eI.cq)(o), m = eQ.Z.getGuildId(), h = m !== r;
-      if (c && h && d.Z.selectGuild(r), c && u) {
-        let n = eK.Z.getChannelId(m),
+      } = ta(n), c = (0, eI.Ss)(r), u = (0, eI.cq)(i), f = (0, eI.cq)(o), h = eQ.Z.getGuildId(), m = h !== r;
+      if (c && m && d.Z.selectGuild(r), c && u) {
+        let n = eK.Z.getChannelId(h),
           a = n !== i,
           c = null != eV.ZP.getGuildSidebarState(r);
-        if (!te || h || a || null != s) {
+        if (!te || m || a || null != s) {
           te = true, p.default.selectChannel({
             guildId: r,
             channelId: i,
@@ -579,11 +579,11 @@ class tu extends Chunk647438.PureComponent {
         } else null == i || a || eS.Z.closeChannelSidebar(i);
         let u = eo.Z.getIsOpen();
         if (i === e5.oC.ROLE_SUBSCRIPTIONS) es.Z.closeSidebar();
-        else if (h && u) {
-          let t = null == m && r === e3.ME,
+        else if (m && u) {
+          let t = null == h && r === e3.ME,
             n = e === e3.Z5c.GUILD_DISCOVERY;
           t || n ? es.Z.closeSidebar() : es.Z.openSidebar()
-        } else(a && u || !h && !a) && es.Z.closeSidebar()
+        } else(a && u || !m && !a) && es.Z.closeSidebar()
       } else tl.some(t => {
         var n;
         return (null == (n = (0, a.LX)(e, t)) ? true : n.isExact) === true
@@ -651,7 +651,7 @@ class tu extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), e9(this, "historyUnlisten", () => {}), e9(this, "rewriterUnlisten", () => {})
+    super(...e), e7(this, "historyUnlisten", () => {}), e7(this, "rewriterUnlisten", () => {})
   }
 }
 let td = tu

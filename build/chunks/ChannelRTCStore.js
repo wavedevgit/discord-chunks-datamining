@@ -62,12 +62,12 @@ function P(e, t) {
   return n
 }
 
-function D(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let w = new Chunk710845.Z("ChannelRTCStore"),
+let D = new Chunk710845.Z("ChannelRTCStore"),
   L = Object.freeze([]),
   x = [],
   M = {},
@@ -353,7 +353,7 @@ function eI(e) {
       } = (0, _.my)(n);
       e === m.default.getId() && X(e, [t])
     } catch (e) {
-      w.warn("INVALID STREAM KEY FORMAT ".concat(n), e)
+      D.warn("INVALID STREAM KEY FORMAT ".concat(n), e)
     }
     et(r) || (B[t] = false)
   }
@@ -411,7 +411,7 @@ function eN(e) {
     layout: n,
     appContext: r
   } = e;
-  G[t] = D(R({}, G[t]), {
+  G[t] = w(R({}, G[t]), {
     [r]: n
   })
 }
@@ -436,7 +436,7 @@ function eP(e) {
   return X(r, [n])
 }
 
-function eD(e) {
+function ew(e) {
   let {
     channelId: t,
     userId: n
@@ -444,7 +444,7 @@ function eD(e) {
   return X(n, [t])
 }
 
-function ew(e) {
+function eD(e) {
   let {
     channelId: t,
     userId: n
@@ -636,8 +636,8 @@ let eG = new eU(Chunk570140.Z, {
   STREAM_UPDATE_SELF_HIDDEN: eE,
   CHANNEL_RTC_UPDATE_CHAT_OPEN: eO,
   CHANNEL_RTC_UPDATE_PARTCIPANTS_LIST_OPEN: ev,
-  RTC_CONNECTION_VIDEO: eD,
-  RTC_CONNECTION_PLATFORM: ew,
+  RTC_CONNECTION_VIDEO: ew,
+  RTC_CONNECTION_PLATFORM: eD,
   AUDIO_SET_LOCAL_VIDEO_DISABLED: eL,
   MEDIA_ENGINE_VIDEO_SOURCE_QUALITY_CHANGED: ex,
   STREAM_CLOSE: eR,

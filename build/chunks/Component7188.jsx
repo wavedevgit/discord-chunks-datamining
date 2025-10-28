@@ -2,7 +2,7 @@
 /** chunk id: 7188, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => D
+  Z: () => w
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -108,7 +108,7 @@ function P(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   var {
     hideBadges: t = false,
     stream: n,
@@ -120,12 +120,12 @@ function D(e) {
       parentAnalyticsLocation: S
     } = (0, s.ZP)(),
     N = (0, a.e7)([p.default], () => m.ZP.isPremium(p.default.getCurrentUser(), y.PremiumTypes.TIER_1)),
-    D = (0, a.e7)([_.Z], () => _.Z.getChannel(null == n ? true : n.channelId)),
-    w = i.useMemo(() => null != n ? [n] : [], [n]),
+    w = (0, a.e7)([_.Z], () => _.Z.getChannel(null == n ? true : n.channelId)),
+    D = i.useMemo(() => null != n ? [n] : [], [n]),
     L = i.useCallback(() => {
-      null != D && (0, f.Z)(D.getGuildId(), D.id, I)
-    }, [D, I]);
-  if (null == n || null == D) return null;
+      null != w && (0, f.Z)(w.getGuildId(), w.id, I)
+    }, [w, I]);
+  if (null == n || null == w) return null;
   let x = R;
   return t || N || (x = P), (0, r.jsx)(o.yRy, {
     targetElementRef: v,
@@ -136,9 +136,9 @@ function D(e) {
       } = e;
       return (0, r.jsx)(g.Z, {
         children: (0, r.jsx)(d.Z, {
-          channel: D,
+          channel: w,
           currentUser: p.default.getCurrentUser(),
-          activeStreams: w,
+          activeStreams: D,
           onClose: t,
           showReportOption: true,
           handleGoLive: L,

@@ -44,13 +44,13 @@ let I = 1e3,
       isGift: R
     } = (0, h.wD)(), {
       wasTier2PremiumBeforePurchase: P,
-      selectedSkuId: D,
-      purchaseState: w
+      selectedSkuId: w,
+      purchaseState: D
     } = (0, m.JL)(), [L, x] = (0, i.useState)(false);
     (0, i.useEffect)(() => {
-      w === g.A.PURCHASING && x(true)
-    }, [w]);
-    let M = (0, f.P)(R, !!P, D),
+      D === g.A.PURCHASING && x(true)
+    }, [D]);
+    let M = (0, f.P)(R, !!P, w),
       {
         mediaUrls: k,
         isSuccess: j

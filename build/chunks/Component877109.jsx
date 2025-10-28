@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk751586 = require("./751586.jsx"),
   Chunk981631 = require("./981631.js");
 
-function h(e) {
+function m(e) {
   return new URLSearchParams(e).get(c.tR.QUEST_ID)
 }
 let g = function(e) {
@@ -32,12 +32,12 @@ let g = function(e) {
         search: a
       } = (0, l.TH)();
     return i.useEffect(() => {
-      let t = h(a);
+      let t = m(a);
       null != t ? r(t) : null != e && r(e)
     }, [e, a]), i.useEffect(() => {
-      if (null == n || h(a) === n) return;
+      if (null == n || m(a) === n) return;
       let e = new URLSearchParams;
-      e.set(c.tR.TAB, c.e5.PREVIEW_TOOL), e.set(c.tR.QUEST_ID, n), t.push("".concat(m.Z5c.QUEST_HOME_V2, "?").concat(e.toString()))
+      e.set(c.tR.TAB, c.e5.PREVIEW_TOOL), e.set(c.tR.QUEST_ID, n), t.push("".concat(h.Z5c.QUEST_HOME_V2, "?").concat(e.toString()))
     }, [n, t, a]), {
       questId: n,
       setQuestId: r

@@ -74,10 +74,10 @@ function O(e) {
 
 function v(e) {
   if (g = false, O(e), !m)
-    if (null !== r(u)) m = true, D();
+    if (null !== r(u)) m = true, w();
     else {
       var t = r(d);
-      null !== t && w(v, t.startTime - e)
+      null !== t && D(v, t.startTime - e)
     }
 }
 var I = false,
@@ -118,7 +118,7 @@ function N() {
             if (null !== _) n = true;
             else {
               var c = r(d);
-              null !== c && w(v, c.startTime - module), n = false
+              null !== c && D(v, c.startTime - module), n = false
             }
           }
           break e
@@ -146,11 +146,11 @@ else if ("undefined" != typeof MessageChannel) {
   E(N, 0)
 };
 
-function D() {
+function w() {
   I || (I = true, o())
 }
 
-function w(e, n) {
+function D(e, n) {
   T = E(function() {
     e(t.unstable_now())
   }, n)
@@ -158,7 +158,7 @@ function w(e, n) {
 exports.unstable_IdlePriority = 5, exports.unstable_ImmediatePriority = 1, exports.unstable_LowPriority = 4, exports.unstable_NormalPriority = 3, exports.unstable_Profiling = null, exports.unstable_UserBlockingPriority = 2, exports.unstable_cancelCallback = function(e) {
   e.callback = null
 }, exports.unstable_continueExecution = function() {
-  m || h || (m = true, D())
+  m || h || (m = true, w())
 }, exports.unstable_forceFrameRate = function(e) {
   0 > e || 125 < e ? console.error("forceFrameRate takes a positive int between 0 and 125, forcing frame rates higher than 125 fps is not supported") : S = 0 < e ? Math.floor(1e3 / e) : 5
 }, exports.unstable_getCurrentPriorityLevel = function() {
@@ -225,7 +225,7 @@ exports.unstable_IdlePriority = 5, exports.unstable_ImmediatePriority = 1, expor
     startTime: a,
     expirationTime: s,
     sortIndex: false
-  }, a > o ? (e.sortIndex = a, n(d, e), null === r(u) && e === r(d) && (g ? (b(T), T = false) : g = true, w(v, a - o))) : (e.sortIndex = s, n(u, e), m || h || (m = true, D())), e
+  }, a > o ? (e.sortIndex = a, n(d, e), null === r(u) && e === r(d) && (g ? (b(T), T = false) : g = true, D(v, a - o))) : (e.sortIndex = s, n(u, e), m || h || (m = true, w())), e
 }, exports.unstable_shouldYield = C, exports.unstable_wrapCallback = function(e) {
   var t = p;
   return function() {

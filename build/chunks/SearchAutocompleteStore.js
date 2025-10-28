@@ -61,7 +61,7 @@ function P(e) {
   return _.Z.hidePersonalInformation || (t.push(O.dCx.FILTER_FROM), t.push(O.dCx.FILTER_MENTIONS)), (0, E.R6)(e) && t.push(O.dCx.FILTER_IN), t
 }
 
-function D(e) {
+function w(e) {
   var t;
   let n = (0, E.Tm)(e),
     r = null != (t = A.get(n)) ? t : {
@@ -71,7 +71,7 @@ function D(e) {
   return A.set(n, r), r
 }
 
-function w(e) {
+function D(e) {
   return {
     searchContext: e,
     query: "",
@@ -95,7 +95,7 @@ function L(e) {
     cursorScope: a,
     autocompletes: o
   } = e;
-  return D(t), {
+  return w(t), {
     searchContext: t,
     query: n,
     mode: r,
@@ -185,7 +185,7 @@ function Z(e) {
   if (null != l && a === l.query && (null == l.mode || l.mode.filter === o.filter)) t = l.autocompletes, c = false;
   else if (k(o)) {
     var u, d;
-    let e = D(n),
+    let e = w(n),
       i = o.token,
       a = null == i || null == (u = i.getFullMatch()) ? true : u.trim();
     if (null != a && a.length > 0) {
@@ -226,7 +226,7 @@ function F(e) {
   let c = null,
     u = null != (n = null == a || null == (t = a.getFullMatch()) ? true : t.trim()) ? n : "",
     d = 0 === u.length;
-  if ((0, E.b7)(o) && M(i) && !d) c = D(o).results;
+  if ((0, E.b7)(o) && M(i) && !d) c = w(o).results;
   else {
     let e = null == (r = y.ZP[i]) ? true : r.getAutocompletions;
     c = null != e ? e({
@@ -428,7 +428,7 @@ class et extends(r = Chunk442837.ZP.Store) {
   getState(e) {
     var t;
     let n = (0, E.Tm)(e);
-    return null != (t = S.get(n)) ? t : w(e)
+    return null != (t = S.get(n)) ? t : D(e)
   }
   getSelectedSearchContext() {
     return T

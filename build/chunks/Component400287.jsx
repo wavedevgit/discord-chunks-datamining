@@ -40,9 +40,9 @@ function b() {
     R = Chunk695346.HV.useSetting(),
     P = null != (e = Chunk695346.rR.useSetting()) ? module : Chunk125085.K,
     {
-      analyticsLocations: D
+      analyticsLocations: w
     } = (0, Chunk906732.ZP)(Chunk100527.Z.TEXT_AND_IMAGES),
-    w = Chunk647438.useCallback(e => {
+    D = Chunk647438.useCallback(e => {
       let t = 1 === e;
       t ? u.Z.cleanUpPrivateChannelSearchState() : u.Z.cleanUpSearchState({
         type: m.aib.DMS
@@ -149,7 +149,7 @@ function b() {
                   location: {
                     section: m.jXE.SETTINGS_TEXT_AND_IMAGES
                   },
-                  location_stack: D
+                  location_stack: w
                 }), _.fq.updateSetting(e)
               },
               label: Chunk388032.intl.string(Chunk388032.t["29xPVZ"])
@@ -233,7 +233,7 @@ function b() {
               name: Chunk388032.intl.string(Chunk388032.t.MwlEGN),
               value: 1
             }],
-            onChange: w,
+            onChange: D,
             value: +!!P
           })
         })]

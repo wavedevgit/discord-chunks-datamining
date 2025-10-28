@@ -68,7 +68,7 @@ function P(e) {
   return e
 }
 
-function D(e, t) {
+function w(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -79,8 +79,8 @@ function D(e, t) {
   return n
 }
 
-function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
+function D(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -122,12 +122,12 @@ function M(e) {
   } = e;
   a.Z.dispatch({
     type: "CLIPS_SETTINGS_UPDATE",
-    settings: w(P({}, t && {
+    settings: D(P({}, t && {
       clipsEnabled: true
     }), {
       decoupledClipsEnabled: t
     })
-  }), n && b.default.track(N.rMx.CLIPS_SETTINGS_UPDATED, w(P({}, t && {
+  }), n && b.default.track(N.rMx.CLIPS_SETTINGS_UPDATED, D(P({}, t && {
     clips_enabled: true
   }), {
     decoupled_clips_enabled: t
@@ -220,7 +220,7 @@ function F(e, t) {
       a = null != (n = h.get(i)) ? n : 0;
     h.set(i, a + r)
   }
-  return w(P({}, e), {
+  return D(P({}, e), {
     frames_encoded_nvidia_cuda: null != (r = h.get(s.Su.NVIDIA_CUDA)) ? r : 0,
     frames_encoded_nvidia_direct3d: null != (i = h.get(s.Su.NVIDIA_DIRECT_3D)) ? i : 0,
     frames_encoded_openh264: null != (a = h.get(s.Su.OPENH264)) ? a : 0,
@@ -260,7 +260,7 @@ async function V(e) {
     d = Z(e);
   null != e && a.Z.dispatch({
     type: "CLIPS_SAVE_CLIP_PLACEHOLDER",
-    clip: w(P({}, n), {
+    clip: D(P({}, n), {
       filepath: i
     })
   });
@@ -272,7 +272,7 @@ async function V(e) {
     } = await (null != u ? s.saveClipForUser(u, i, l) : s.saveClip(i, l)), r = F(d, t);
     r.clip_save_time_ms = t.clipSaveTimeMs, r.clip_size_bytes = t.clipSizeBytes, null != t.viewerDecodeFps && (r.decode_fps_during_clip = t.viewerDecodeFps, r.encode_fps_during_clip = t.viewerEncodeFps, r.target_fps = null), b.default.track(N.rMx.CLIP_SAVED, r);
     let a = await (0, A.R)(o.Z.clips.getClipProtocolURLFromPath(i), 0);
-    return n.thumbnail = a, n.length = e, C.jF.info("Clip save succeeded with ".concat(e, "ms and thumbnail ").concat(null != (f = null == a ? true : a.length) ? f : 0, " bytes thumbnail.")), await s.updateClipMetadata(i, JSON.stringify(n)), w(P({}, n), {
+    return n.thumbnail = a, n.length = e, C.jF.info("Clip save succeeded with ".concat(e, "ms and thumbnail ").concat(null != (f = null == a ? true : a.length) ? f : 0, " bytes thumbnail.")), await s.updateClipMetadata(i, JSON.stringify(n)), D(P({}, n), {
       filepath: i
     })
   } catch (i) {
@@ -379,7 +379,7 @@ async function q(e) {
   let n = await o.Z.clips.loadClipsDirectory(e),
     r = [];
   for (let e of n) {
-    let t = await (0, T.w)(w(P({}, e.metadata), {
+    let t = await (0, T.w)(D(P({}, e.metadata), {
       filepath: e.filepath
     }));
     null != t && r.push(t)

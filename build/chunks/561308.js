@@ -17,11 +17,11 @@ require.d(exports, {
   ig: () => L,
   kr: () => E,
   n2: () => y,
-  q_: () => D,
+  q_: () => w,
   vU: () => P,
   yA: () => v,
   yh: () => m,
-  zo: () => w
+  zo: () => D
 }), require("./35282.js");
 var Chunk164369 = require("./164369.js"),
   Chunk913527 = require("./913527.js"),
@@ -201,14 +201,14 @@ function P(e) {
   return null == (t = g(e, o.N.STREAK_DAYS)) ? true : t.streak_count_days
 }
 
-function D(e) {
+function w(e) {
   let t = P(e);
   if (null == t || t < 3) returnfalse;
   let n = c.default.extractTimestamp(e.id);
   return !(Date.now() - n > 48 * l.Z.Millis.HOUR)
 }
 
-function w(e) {
+function D(e) {
   let t = v(e);
   if (null == t) return {
     text: null,

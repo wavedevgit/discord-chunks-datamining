@@ -60,10 +60,10 @@ let R = e => {
 function P(e, t) {
   return R(t) - R(e)
 }
-let D = e => +!!(0, u.Z)(e);
+let w = e => +!!(0, u.Z)(e);
 
-function w(e, t) {
-  return D(t) - D(e)
+function D(e, t) {
+  return w(t) - w(e)
 }
 
 function L(e, t) {
@@ -72,7 +72,7 @@ function L(e, t) {
 }
 
 function x(e, t) {
-  return P(e, t) || w(e, t) || L(e, t)
+  return P(e, t) || D(e, t) || L(e, t)
 }
 
 function M(e) {

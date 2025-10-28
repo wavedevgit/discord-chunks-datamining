@@ -36,7 +36,7 @@ let y = Chunk647438.memo(function(e) {
   } = (0, s.cj)([g.Z], () => ({
     isBlocked: null != y && g.Z.isBlockedForMessage(y),
     isIgnored: null != y && g.Z.isIgnoredForMessage(y)
-  }), [y]), N = (0, s.e7)([h.Z], () => h.Z.can(b.Plq.MANAGE_MESSAGES, t)), j = m.cC.useSetting(), {
+  }), [y]), N = (0, s.e7)([m.Z], () => m.Z.can(b.Plq.MANAGE_MESSAGES, t)), j = h.cC.useSetting(), {
     content: P
   } = i.useMemo(() => (null == y ? true : y.content) != null && "" !== y.content ? (0, p.ZP)(y, {
     formatInline: true,

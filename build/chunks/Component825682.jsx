@@ -19,17 +19,17 @@ let d = function(e) {
     applicationStream: d,
     status: p,
     user: f,
-    userIgnored: m
+    userIgnored: h
   } = e, {
-    voiceActivityStatusEnabled: h
+    voiceActivityStatusEnabled: m
   } = (0, i.U)({
     location: "StatusText"
   }), {
     voiceChannel: g
   } = (0, a.Z)({
     userId: null == f ? true : f.id
-  }), _ = h ? g : true;
-  return m ? (0, r.jsx)("div", {
+  }), _ = m ? g : true;
+  return h ? (0, r.jsx)("div", {
     className: u.text,
     children: c.intl.string(c.t.tFY5Zb)
   }) : (0, l.Z)({

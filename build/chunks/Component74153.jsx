@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk883307 = require("./883307.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -56,7 +56,7 @@ class g extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), h(this, "handleClick", e => {
+    super(...e), m(this, "handleClick", e => {
       let {
         sku: t
       } = this.props;
@@ -69,8 +69,8 @@ class g extends Chunk647438.PureComponent {
           }
         }
       })
-    }), h(this, "renderCustomBreadcrumb", (e, t) => (0, r.jsx)(u.Z.Title, {
-      className: t ? null : m.breadcrumb,
+    }), m(this, "renderCustomBreadcrumb", (e, t) => (0, r.jsx)(u.Z.Title, {
+      className: t ? null : h.breadcrumb,
       muted: !t,
       children: e.label
     }))

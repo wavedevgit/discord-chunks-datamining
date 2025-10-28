@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 749405, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  C: () => m
+  C: () => h
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,18 +15,18 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk513245 = require("./513245.js");
 
-function m(e) {
+function h(e) {
   let {
     active: t,
     user: n,
-    channel: m
-  } = e, h = (0, c.K)(), g = i.useCallback(() => {
+    channel: h
+  } = e, m = (0, c.K)(), g = i.useCallback(() => {
     (0, l.showToast)((0, l.createToast)(p.intl.string(p.t["EDYbS+"]), l.ToastType.FAILURE))
   }, []), _ = i.useCallback(() => {
     s.Z.closeChannelSidebar(o.uZ)
   }, []), b = i.useCallback(() => {
-    s.Z.closeChannelSidebar(o.uZ), h && (0, a.Kh)(m.id)
-  }, [m.id, h]), {
+    s.Z.closeChannelSidebar(o.uZ), m && (0, a.Kh)(h.id)
+  }, [h.id, m]), {
     acceptMessageRequest: E,
     rejectMessageRequest: O,
     isAcceptLoading: I,
@@ -43,7 +43,7 @@ function m(e) {
   return (0, r.jsxs)("div", {
     className: f.container,
     children: [(0, r.jsx)(d.Z, {
-      channel: m,
+      channel: h,
       otherUser: n,
       active: t
     }), (0, r.jsxs)("div", {
@@ -56,7 +56,7 @@ function m(e) {
           size: "sm",
           text: p.intl.string(p.t.B2nygW),
           onClick: e => {
-            e.stopPropagation(), O(m.id)
+            e.stopPropagation(), O(h.id)
           },
           disabled: T,
           loading: v || S
@@ -69,7 +69,7 @@ function m(e) {
           size: "sm",
           text: p.intl.string(p.t.Kz8Pwr),
           onClick: e => {
-            e.stopPropagation(), E(m.id)
+            e.stopPropagation(), E(h.id)
           },
           disabled: T,
           loading: I || y || C

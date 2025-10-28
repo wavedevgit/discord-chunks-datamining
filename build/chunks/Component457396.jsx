@@ -92,10 +92,10 @@ let q = e => {
       ed = (0, P.$)(),
       ep = (0, S.W)(),
       ef = (0, C.Vi)(),
-      em = (0, L.HI)({
+      eh = (0, L.HI)({
         trialOffer: ec
       }),
-      eh = (0, B.V)(),
+      em = (0, B.V)(),
       eg = (0, L.eW)(),
       e_ = (0, w._h)(),
       eb = (0, H.Kn)(),
@@ -125,7 +125,7 @@ let q = e => {
       }),
       ew = [],
       eL = [];
-    (0, m.Kl)() && ((ev || eO && !ex) && ew.push(s.z.NITRO_TAB_BADGE_OFFER_REMINDER), e_ && ew.push(s.z.RECURRING_3P_PROMOTION_POPOVER), ef && ew.push(s.z.BOGO_2025_NITRO_TAB_BADGE), eP && ew.push(s.z.VOICE_FILTER_EARLY_ACCESS_PREMIUM_TAB_BADGE), ep && ew.push(s.z.Q2_2025_MARKETING_MOMENT_NITRO_TAB_BADGE_V2), eA && ew.push(s.z.CUSTOM_THEMES_PREMIUM_TAB_BADGE), eZ && ew.push(s.z.GAME_WIDGETS_PREMIUM_TAB_BADGE));
+    (0, h.Kl)() && ((ev || eO && !ex) && ew.push(s.z.NITRO_TAB_BADGE_OFFER_REMINDER), e_ && ew.push(s.z.RECURRING_3P_PROMOTION_POPOVER), ef && ew.push(s.z.BOGO_2025_NITRO_TAB_BADGE), eP && ew.push(s.z.VOICE_FILTER_EARLY_ACCESS_PREMIUM_TAB_BADGE), ep && ew.push(s.z.Q2_2025_MARKETING_MOMENT_NITRO_TAB_BADGE_V2), eA && ew.push(s.z.CUSTOM_THEMES_PREMIUM_TAB_BADGE), eZ && ew.push(s.z.GAME_WIDGETS_PREMIUM_TAB_BADGE));
     let [eR, eD] = (0, g.US)(ew, true, true);
     ey && eL.push(s.z.CHURN_DISCOUNT_PREMIUM_TAB_COACHMARK);
     let [eM, ek] = (0, g.US)(eL, true, true);
@@ -147,7 +147,7 @@ let q = e => {
         messageStyle: u.aj.SHORT_TIME,
         upperCase: true
       })), ef) n = (0, r.jsx)(Z.Z, {}), y = 0;
-    else if (em) {
+    else if (eh) {
       let e = (0, L.$q)();
       n = (0, r.jsx)(M._y, {
         isTabSelected: J,
@@ -168,8 +168,8 @@ let q = e => {
       offerExpiresAt: null
     }), y = 2) : ep ? (n = (0, r.jsx)(G.S, {
       expiresAt: eT
-    }), y = 4) : null != eh ? (n = (0, r.jsx)(V.Z, {
-      copy: eh,
+    }), y = 4) : null != em ? (n = (0, r.jsx)(V.Z, {
+      copy: em,
       showStars: false
     }), y = 1) : null != eu ? (n = ei === T.tE.OFFER_COUNTDOWN && ev ? (0, r.jsx)(k.a, {
       discountOffer: eu
@@ -180,7 +180,7 @@ let q = e => {
       shouldShowOfferReminder: ev
     }), y = 3) : null == ec || ex ? eb ? (n = (0, r.jsx)(U.l, {
       isSelected: J,
-      onSelect: () => (0, h.Q3)(s.z.REFERRAL_PROGRAM_PREMIUM_TAB_BADGE, {
+      onSelect: () => (0, m.Q3)(s.z.REFERRAL_PROGRAM_PREMIUM_TAB_BADGE, {
         dismissAction: Y.L.TAKE_ACTION
       })
     }), y = 6) : ey && (n = (0, r.jsx)(D.Z, {

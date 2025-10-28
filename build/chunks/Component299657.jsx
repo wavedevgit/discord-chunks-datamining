@@ -52,7 +52,7 @@ let j = function(e) {
     G = (0, s.e7)([I.Z], () => I.Z.hasFetchedPaymentSources),
     B = (0, s.e7)([v.default], () => v.default.getCurrentUser()),
     Z = null == B ? true : B.id,
-    F = (0, D.N)(),
+    F = (0, w.N)(),
     V = (0, P.Ng)(),
     H = (0, g.V)(x.nS),
     [Y, W] = i.useState(true),
@@ -92,7 +92,7 @@ let j = function(e) {
     children: [J && (0, r.jsx)(_.Z, {}), $]
   }) : (0, r.jsxs)(h.Gt, {
     value: j,
-    children: [J && !q && (0, r.jsx)(_.Z, {}), (0, r.jsx)(w.Z, {
+    children: [J && !q && (0, r.jsx)(_.Z, {}), (0, r.jsx)(D.Z, {
       entrypoint: t
     })]
   })

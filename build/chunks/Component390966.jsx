@@ -160,9 +160,9 @@ function T(e) {
     recurrenceRule: A,
     guildEventId: C,
     recurrenceId: N
-  } = e, R = (0, d.dQu)(c.Z.colors.TEXT_BRAND).hex(), P = (0, d.dQu)(c.Z.colors.TEXT_FEEDBACK_POSITIVE).hex(), D = (0, d.dQu)(c.Z.colors.TEXT_DANGER).hex();
+  } = e, R = (0, d.dQu)(c.Z.colors.TEXT_BRAND).hex(), P = (0, d.dQu)(c.Z.colors.TEXT_FEEDBACK_POSITIVE).hex(), w = (0, d.dQu)(c.Z.colors.TEXT_DANGER).hex();
   null == p && (p = a === h.WX.EXTERNAL ? m.intl.string(m.t.IyZxjH) : m.intl.string(m.t["X2K3/4"]));
-  let w = (0, f.Z)(N, C),
+  let D = (0, f.Z)(N, C),
     [{
       startDateTimeString: L,
       endDateTimeString: x,
@@ -182,7 +182,7 @@ function T(e) {
     start: L,
     end: x
   }));
-  let B = i.useMemo(() => n === h.p1.CANCELED || (null == w ? true : w.is_canceled) ? 5 : n === h.p1.ACTIVE ? 3 : h.$I.has(n) ? 4 : M ? 2 : +!!k, [n, null == w ? true : w.is_canceled, M, k]),
+  let B = i.useMemo(() => n === h.p1.CANCELED || (null == D ? true : D.is_canceled) ? 5 : n === h.p1.ACTIVE ? 3 : h.$I.has(n) ? 4 : M ? 2 : +!!k, [n, null == D ? true : D.is_canceled, M, k]),
     Z = y(B, G, p, x, j),
     {
       Icon: F,
@@ -193,10 +193,10 @@ function T(e) {
       timeStatus: B,
       textBrand: R,
       textPositive: P,
-      textDanger: D,
+      textDanger: w,
       endDateTimeString: x,
       startDateTimeString: L
-    }), [B, R, P, D, x, L]),
+    }), [B, R, P, w, x, L]),
     W = null;
   if (null != A) {
     let e = (0, _.Ho)(A);

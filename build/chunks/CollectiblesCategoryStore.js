@@ -37,31 +37,31 @@ let m = new Map,
   N = false,
   R = new Set,
   P = new Map,
-  D = new Map,
-  w = {},
+  w = new Map,
+  D = {},
   L = 0,
   x = e => {
     let {
       skuId: t
     } = e;
-    (R = new Set(R)).add(t), (P = new Map(P)).delete(t), (D = new Map(D)).delete(t)
+    (R = new Set(R)).add(t), (P = new Map(P)).delete(t), (w = new Map(w)).delete(t)
   },
   M = e => {
     let {
       skuId: t,
       error: n
     } = e;
-    (R = new Set(R)).delete(t), (P = new Map(P)).set(t, n), (D = new Map(D)).set(t, Date.now())
+    (R = new Set(R)).delete(t), (P = new Map(P)).set(t, n), (w = new Map(w)).set(t, Date.now())
   },
   k = e => {
     let {
       skuId: t,
       product: n
     } = e;
-    v.set(t, n), (R = new Set(R)).delete(t), (P = new Map(P)).delete(t), (D = new Map(D)).delete(t)
+    v.set(t, n), (R = new Set(R)).delete(t), (P = new Map(P)).delete(t), (w = new Map(w)).delete(t)
   },
   j = e => {
-    N = true, r = true, a = true, w = e.options
+    N = true, r = true, a = true, D = e.options
   },
   U = e => {
     let {
@@ -109,7 +109,7 @@ let m = new Map,
     }
   },
   H = () => {
-    O = m, v = g, A = y, i = true, N = false, R = new Set, r = true, a = true, w = {}, L = 0
+    O = m, v = g, A = y, i = true, N = false, R = new Set, r = true, a = true, D = {}, L = 0
   },
   Y = () => {
     if (!Chunk353926.Z.hasLoadedExperiments) return;
@@ -145,7 +145,7 @@ class K extends(o = Chunk442837.ZP.Store) {
     return i
   }
   get lastFetchOptions() {
-    return w
+    return D
   }
   get categories() {
     return O
@@ -175,7 +175,7 @@ class K extends(o = Chunk442837.ZP.Store) {
     return null != e ? P.get(e) : true
   }
   getProductFetchErrorTimestamp(e) {
-    return null != e ? D.get(e) : true
+    return null != e ? w.get(e) : true
   }
   getProductByStoreListingId(e) {
     return null != e ? I.get(e) : true

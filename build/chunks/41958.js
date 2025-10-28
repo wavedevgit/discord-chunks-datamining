@@ -126,7 +126,7 @@ var N = [],
 function P(e) {
   var t = 0;
   if ("undefined" == typeof Symbol || null == e[Symbol.iterator]) {
-    if (Array.isArray(e) || (e = D(e))) return function() {
+    if (Array.isArray(e) || (e = w(e))) return function() {
       return t >= e.length ? {
         done: true
       } : {
@@ -139,16 +139,16 @@ function P(e) {
   return (t = e[Symbol.iterator]()).next.bind(t)
 }
 
-function D(e, t) {
+function w(e, t) {
   if (e) {
-    if ("string" == typeof e) return w(e, t);
+    if ("string" == typeof e) return D(e, t);
     var n = Object.prototype.toString.call(e).slice(8, false);
     if ("Object" === n && e.constructor && (n = e.constructor.name), "Map" === n || "Set" === n) return Array.from(e);
-    if ("Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return w(e, t)
+    if ("Arguments" === n || /^(?:Ui|I)nt(?:8|16|32)(?:Clamped)?Array$/.test(n)) return D(e, t)
   }
 }
 
-function w(e, t) {
+function D(e, t) {
   (null == t || t > e.length) && (t = e.length);
   for (var n = 0, r = Array(t); n < t; n++) r[n] = e[n];
   return r
@@ -779,12 +779,12 @@ var er = function(e) {
       var R = f.getAnimated(this);
       if (!R || a.is.und(m)) return n(q(this, true));
       var P = a.is.und(t.reset) ? l && !t.default : !a.is.und(E) && M(t.reset, r),
-        D = P ? E : this.get(),
-        w = Y(m),
-        L = a.is.num(w) || a.is.arr(w) || a.isAnimatedString(w),
+        w = P ? E : this.get(),
+        D = Y(m),
+        L = a.is.num(D) || a.is.arr(D) || a.isAnimatedString(D),
         k = !T && (!L || M(o.immediate || t.immediate, r));
       if (O)
-        if (k) R = this._updateNode(w);
+        if (k) R = this._updateNode(D);
         else {
           var j = this._getNodeType(m);
           if (j !== R.constructor) throw Error("Cannot animate between " + R.constructor.name + " and " + j.name + ', as the "to" prop suggests')
@@ -793,10 +793,10 @@ var er = function(e) {
         Z = false;
       if (!G) {
         var F = P || this.is(es) && y;
-        (O || F) && (G = !(Z = a.isEqual(Y(D), w))), a.isEqual(S.decay, C) && a.isEqual(S.velocity, N) || (G = true)
+        (O || F) && (G = !(Z = a.isEqual(Y(w), D))), a.isEqual(S.decay, C) && a.isEqual(S.velocity, N) || (G = true)
       }
       if (Z && this.is(ec) && (i.changed && !P ? G = true : G || this._stop()), !T) {
-        (G || a.getFluidConfig(d)) && (i.values = R.getPayload(), i.toValues = v ? null : U == f.AnimatedString ? [1] : a.toArray(w)), i.immediate = k, i.onStart = ep(c("onStart"), r), i.onChange = ep(c("onChange"), r);
+        (G || a.getFluidConfig(d)) && (i.values = R.getPayload(), i.toValues = v ? null : U == f.AnimatedString ? [1] : a.toArray(D)), i.immediate = k, i.onStart = ep(c("onStart"), r), i.onChange = ep(c("onChange"), r);
         var V = i.onRest,
           H = P && !t.onRest ? V[0] || a.noop : eh(ep(c("onRest"), r), this);
         if (G) {
@@ -808,11 +808,11 @@ var er = function(e) {
         } else(P || t.onRest) && (i.onRest[0] = H)
       }
       var K = ep(c("onProps"), r);
-      if (K && K(t, this), P && R.setValue(D), T) n(ee(t.to, t, this._state, this));
+      if (K && K(t, this), P && R.setValue(w), T) n(ee(t.to, t, this._state, this));
       else if (G) P && (this._phase = el), this._reset(), this._start();
       else if (this.is(ec) && !O) i.onRest.push(eh(n, this));
       else {
-        let e = z(this, D),
+        let e = z(this, w),
           t = ep(c("onNoopRest"), r);
         null != t && t(e), n(e)
       }
@@ -1119,7 +1119,7 @@ function eR(e, t) {
   })
 }
 var eP = Chunk647438.createContext({}),
-  eD = function(e) {
+  ew = function(e) {
     var t = e.children,
       n = g(e, ["children"]),
       r = s.useContext(eP);
@@ -1131,8 +1131,8 @@ var eP = Chunk647438.createContext({}),
       value: n
     }, t)
   };
-eD.Provider = eP.Provider, eD.Consumer = eP.Consumer;
-var ew = function() {
+ew.Provider = eP.Provider, ew.Consumer = eP.Consumer;
+var eD = function() {
     return Chunk647438.useContext(eP)
   },
   eL = {
@@ -1238,7 +1238,7 @@ function ex(e, t, n) {
     E = f.map(function(e, t) {
       return eS(e, _[t])
     }),
-    b = ew();
+    b = eD();
   i.useLayoutEffect(function() {
     l.current++, u.ctrls = f, d.current && (d.current.current = g);
     var e = u.queue;
@@ -1421,7 +1421,7 @@ function eZ(e, t, n) {
       payload: f
     })
   });
-  var S = ew();
+  var S = eD();
   i.useLayoutEffect(function() {
     a.each(h, function(e) {
       e.ctrl.start({
@@ -1573,4 +1573,4 @@ Object.keys(Chunk467568).forEach(function(e) {
   get: function() {
     return Chunk698091.createInterpolator
   }
-}), exports.BailSignal = er, exports.Controller = ev, exports.FrameValue = eo, exports.Interpolation = eW, exports.Spring = eV, exports.SpringContext = eD, exports.SpringHandle = eL, exports.SpringValue = ef, exports.Trail = eH, exports.Transition = eY, exports.config = v, exports.inferTo = H, exports.interpolate = ez, exports.to = eK, exports.update = eq, exports.useChain = O, exports.useSpring = eM, exports.useSprings = ex, exports.useTrail = ek, exports.useTransition = eZ
+}), exports.BailSignal = er, exports.Controller = ev, exports.FrameValue = eo, exports.Interpolation = eW, exports.Spring = eV, exports.SpringContext = ew, exports.SpringHandle = eL, exports.SpringValue = ef, exports.Trail = eH, exports.Transition = eY, exports.config = v, exports.inferTo = H, exports.interpolate = ez, exports.to = eK, exports.update = eq, exports.useChain = O, exports.useSpring = eM, exports.useSprings = ex, exports.useTrail = ek, exports.useTransition = eZ

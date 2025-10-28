@@ -46,7 +46,7 @@ async function U(e, t, n, r) {
   if (null == l || null == l.secrets || !(0, A.t9)(r, l.party, l.secrets)) throw new x.Z({
     errorCode: M.lTL.NO_ELIGIBLE_ACTIVITY
   }, "No eligible activity for application. Ensure an activity includes a party and appropriate secret.");
-  let a = (0, h.Z)(l, y.Z);
+  let a = (0, m.Z)(l, y.Z);
   if (a) {
     let {
       lock: t
@@ -183,7 +183,7 @@ let G = {
         channel: l,
         guild: s,
         frame: c
-      } = (0, L.T)(), u = (0, m.ZP)({
+      } = (0, L.T)(), u = (0, h.ZP)({
         application: t.application,
         channelId: null == l ? true : l.id
       }), d = null != u ? E.Z.getWindow(u) : true;

@@ -284,7 +284,7 @@ class ei extends Chunk183139.Z {
   _handleHello(e) {
     let t = this.heartbeatInterval = e.heartbeat_interval,
       n = Date.now() - this.connectionStartTime;
-    V.verbose("[HELLO] via ".concat((0, w.TO)(e), ", ") + "heartbeat interval: ".concat(t, ", ") + "took ".concat(n, " ms")), this._startHeartbeater()
+    V.verbose("[HELLO] via ".concat((0, D.TO)(e), ", ") + "heartbeat interval: ".concat(t, ", ") + "took ".concat(n, " ms")), this._startHeartbeater()
   }
   _handleReconnect() {
     V.verbose("[RECONNECT] gateway requested I reconnect."), this._cleanup(e => e.close(4e3)), this.connectionState = Chunk138859.Z.WILL_RECONNECT, this._connect("reconnect")
@@ -297,9 +297,9 @@ class ei extends Chunk183139.Z {
     if ("READY" === t) {
       let t = e.session_id;
       this.sessionId = t;
-      let n = (0, w.TO)(e);
+      let n = (0, D.TO)(e);
       o.Z.setServerTrace(n), V.info("[READY] took ".concat(r, "ms, as ").concat(t)), V.verbose("".concat(n)), this.connectionState = C.Z.SESSION_ESTABLISHED, this.gatewayBackoff.succeed(), this.iosGoingAwayEventCount = 0, this.setResumeUrl(e.resume_gateway_url)
-    } else "READY_SUPPLEMENTAL" === t ? (V.info("[READY_SUPPLEMENTAL] took ".concat(r, "ms")), this.connectionState = C.Z.SESSION_ESTABLISHED, this.gatewayBackoff.succeed(), this.iosGoingAwayEventCount = 0) : "RESUMED" === t && (V.verbose((0, w.TO)(e)), this.connectionState = C.Z.SESSION_ESTABLISHED, this.gatewayBackoff.succeed(), this.iosGoingAwayEventCount = 0);
+    } else "READY_SUPPLEMENTAL" === t ? (V.info("[READY_SUPPLEMENTAL] took ".concat(r, "ms")), this.connectionState = C.Z.SESSION_ESTABLISHED, this.gatewayBackoff.succeed(), this.iosGoingAwayEventCount = 0) : "RESUMED" === t && (V.verbose((0, D.TO)(e)), this.connectionState = C.Z.SESSION_ESTABLISHED, this.gatewayBackoff.succeed(), this.iosGoingAwayEventCount = 0);
     this.dispatcher.receiveDispatch(e, t, n)
   }
   handleResumeDispatched() {

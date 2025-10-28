@@ -172,7 +172,7 @@ function K(e) {
     return
   }
   if (!i.ready) returnfalse;
-  null != n.nonce && n.state !== w.yb.SENDING && x.has(n.nonce) && (i = i.remove(n.nonce), x.delete(n.nonce)), i = i.receiveMessage(n, true === I.Z.isAtBottom(t)), c.Z.commit(i)
+  null != n.nonce && n.state !== D.yb.SENDING && x.has(n.nonce) && (i = i.remove(n.nonce), x.delete(n.nonce)), i = i.receiveMessage(n, true === I.Z.isAtBottom(t)), c.Z.commit(i)
 }
 
 function z(e) {
@@ -183,7 +183,7 @@ function z(e) {
   } = e, i = c.Z.getOrCreate(t);
   if (null == i || !i.has(n)) returnfalse;
   let a = i.get(n, true);
-  i = (null == a ? true : a.isPoll()) === true ? i.remove(n) : i.update(n, e => ((e = e.set("state", w.yb.SEND_FAILED)).isCommandType() ? e = (e = e.set("interactionError", null != r ? r : "")).set("flags", (0, b.pj)(e.flags, w.iLy.EPHEMERAL)) : null != r && (e = e.set("interactionError", null != r ? r : "")), e)), c.Z.commit(i)
+  i = (null == a ? true : a.isPoll()) === true ? i.remove(n) : i.update(n, e => ((e = e.set("state", D.yb.SEND_FAILED)).isCommandType() ? e = (e = e.set("interactionError", null != r ? r : "")).set("flags", (0, b.pj)(e.flags, D.iLy.EPHEMERAL)) : null != r && (e = e.set("interactionError", null != r ? r : "")), e)), c.Z.commit(i)
 }
 
 function q(e) {
@@ -313,7 +313,7 @@ function es(e) {
   if (null == i) returnfalse;
   i = i.update(n, e => {
     var t;
-    return e.addReactionBatch(r, null == (t = D.default.getCurrentUser()) ? true : t.id)
+    return e.addReactionBatch(r, null == (t = w.default.getCurrentUser()) ? true : t.id)
   }), c.Z.commit(i)
 }
 
@@ -327,7 +327,7 @@ function el(e) {
   if (!o.has(i)) returnfalse;
   o = o.update(i, e => {
     var n;
-    return (null == (n = e.embeds) ? true : n.filter(_.K).length) > 0 && (e = e.set("embeds", [])), "MESSAGE_SEND_FAILED_AUTOMOD" === t && (e = e.set("flags", (0, b.pj)(e.flags, w.iLy.EPHEMERAL))), e
+    return (null == (n = e.embeds) ? true : n.filter(_.K).length) > 0 && (e = e.set("embeds", [])), "MESSAGE_SEND_FAILED_AUTOMOD" === t && (e = e.set("flags", (0, b.pj)(e.flags, D.iLy.EPHEMERAL))), e
   }), c.Z.commit(o)
 }
 
@@ -371,7 +371,7 @@ function e_(e) {
 function ep(e) {
   let {
     message: t
-  } = e, n = D.default.getCurrentUser();
+  } = e, n = w.default.getCurrentUser();
   null != t && null != t.author && null != n && t.author.id === n.id && (k = true)
 }
 class eh extends(r = Chunk442837.ZP.Store) {
@@ -382,7 +382,7 @@ class eh extends(r = Chunk442837.ZP.Store) {
     if (p.Z.hasViewingRoles()) {
       let t = v.Z.getChannel(e),
         n = null == t ? true : t.getGuildId();
-      if (p.Z.isViewingRoles(n) && !C.Z.can(w.Plq.VIEW_CHANNEL, t)) return new c.Z(e)
+      if (p.Z.isViewingRoles(n) && !C.Z.can(D.Plq.VIEW_CHANNEL, t)) return new c.Z(e)
     }
     return c.Z.getOrCreate(e)
   }
@@ -390,11 +390,11 @@ class eh extends(r = Chunk442837.ZP.Store) {
     return c.Z.getOrCreate(e).get(t)
   }
   getLastEditableMessage(e) {
-    let t = D.default.getCurrentUser();
+    let t = w.default.getCurrentUser();
     return a()(this.getMessages(e).toArray()).reverse().find(e => (0, m.Z)(e, null == t ? true : t.id))
   }
   getLastChatCommandMessage(e) {
-    let t = D.default.getCurrentUser();
+    let t = w.default.getCurrentUser();
     return this.getMessages(e).toArray().reverse().find(e => {
       var n, r;
       return (null == (n = e.interaction) ? true : n.type) === l.B8.APPLICATION_COMMAND && (null == (r = e.interactionData) ? true : r.type) === l.yU.CHAT && e.interaction.user.id === (null == t ? true : t.id)
@@ -404,7 +404,7 @@ class eh extends(r = Chunk442837.ZP.Store) {
     return a()(this.getMessages(e).toArray()).reverse().get(0)
   }
   getLastNonCurrentUserMessage(e) {
-    let t = D.default.getCurrentUser();
+    let t = w.default.getCurrentUser();
     return a()(this.getMessages(e).toArray()).reverse().find(e => e.author.id !== (null == t ? true : t.id))
   }
   jumpedMessageId(e) {
@@ -431,7 +431,7 @@ class eh extends(r = Chunk442837.ZP.Store) {
     return c.Z.getOrCreate(e).loadingMore
   }
   hasCurrentUserSentMessage(e) {
-    let t = D.default.getCurrentUser();
+    let t = w.default.getCurrentUser();
     return null != this.getMessages(e).findNewest(e => e.author.id === (null == t ? true : t.id))
   }
   hasCurrentUserSentMessageSinceAppStart() {

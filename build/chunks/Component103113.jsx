@@ -58,8 +58,8 @@ function P(e) {
     user: n,
     guildId: N,
     channelId: P,
-    messageId: D,
-    roleId: w,
+    messageId: w,
+    roleId: D,
     openedAt: L,
     setPopoutRef: x,
     closePopout: M,
@@ -73,8 +73,8 @@ function P(e) {
     userId: n.id,
     guildId: N,
     channelId: P,
-    messageId: D,
-    roleId: w
+    messageId: w,
+    roleId: D
   }), F = i.useRef(null), V = (0, u.X)(F);
   i.useEffect(() => {
     null == x || x(null == F ? true : F.current)

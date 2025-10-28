@@ -88,8 +88,8 @@ var C = function(e) {
 let N = e => 0 === e.type || 3 === e.type,
   R = e => 1 === e.type,
   P = e => N(e) ? e.message.nonce : R(e) ? e.message.messageId : e.message.data.id,
-  D = [+Chunk70956.Z.Millis.MINUTE, 5 * Chunk70956.Z.Millis.MINUTE];
-class w extends Chunk651655.Z {
+  w = [+Chunk70956.Z.Millis.MINUTE, 5 * Chunk70956.Z.Millis.MINUTE];
+class D extends Chunk651655.Z {
   isFull() {
     return this.queue.length >= this.maxSize
   }
@@ -125,7 +125,7 @@ class w extends Chunk651655.Z {
     return this.queue.push(...n), this.logger.log("Cancel pending send requests", t.length), t
   }
   startQueueMetricTimers(e) {
-    let t = D.map(e => setTimeout(() => {
+    let t = w.map(e => setTimeout(() => {
       (0, s.yw)(b.rMx.SEND_MESSAGE_QUEUED, {
         queued_duration_ms: e
       })
@@ -289,4 +289,4 @@ class w extends Chunk651655.Z {
     }
   }
 }
-let L = new w
+let L = new D

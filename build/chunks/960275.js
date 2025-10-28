@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 960275, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./388685.js");
 var Chunk570140 = require("./570140.js"),
   Chunk317770 = require("./317770.js"),
@@ -47,18 +47,18 @@ class f extends Chunk317770.Z {
       if (!c.Z.isEnabled()) returnfalse;
       let f = l.default.getId();
       if ((null == d ? true : d.find(e => e.id === f)) != null ? (0, a.T)(o.hn.PING_ME) : (null != (t = null == d ? true : d.length) ? t : 0) > 0 && (null == r ? true : r.id) === f && (0, a.T)(o.hn.PING_SOMEONE), !(0, u.wU)(null == r ? true : r.id, f, i, p)) returnfalse;
-      let m = u.ZP.getMostRecentMessageCombo(n),
+      let h = u.ZP.getMostRecentMessageCombo(n),
         {
-          combo: h
-        } = null != m ? m : {};
-      if (null == h) returnfalse;
+          combo: m
+        } = null != h ? h : {};
+      if (null == m) returnfalse;
       Object.values(o.hn).forEach(e => {
         if (null != s.Z.getUnlocked(e)) return;
         let t = (0, o.oX)(e),
           n = null == t ? true : t.checkUnlock;
-        null != n && false !== n(h) && (0, a.T)(e)
+        null != n && false !== n(m) && (0, a.T)(e)
       })
     })
   }
 }
-let m = new f
+let h = new f

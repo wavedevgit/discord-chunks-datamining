@@ -60,31 +60,31 @@ let O = 10 * Chunk70956.Z.Millis.SECOND,
           socket: t
         } = e, i = t.application.id;
         try {
-          if (null == i) throw new h.Z({
+          if (null == i) throw new m.Z({
             errorCode: _.lTL.INVALID_COMMAND
           }, "No application.");
           let e = c.Z.getApplication(i);
-          if (null == e) throw new h.Z({
+          if (null == e) throw new m.Z({
             errorCode: _.lTL.INVALID_ENTITLEMENT
           }, "SKU does not exist.");
           let t = e.primarySkuId;
-          if (null == t) throw new h.Z({
+          if (null == t) throw new m.Z({
             errorCode: _.lTL.INVALID_ENTITLEMENT
           }, "SKU does not exist.");
           return Promise.race([(function(e, t) {
             let n = d.Z.isEntitledToSku(u.default.getCurrentUser(), e, t);
             return null != n ? Promise.resolve(n) : (0, s.yD)(t).then(() => true === d.Z.isEntitledToSku(u.default.getCurrentUser(), e, t))
           })(t, e.id).then(e => {
-            if (!e) throw new h.Z({
+            if (!e) throw new m.Z({
               errorCode: _.lTL.INVALID_ENTITLEMENT
             }, "User does not have entitlement.")
           }), (0, l.GR)(O).then(() => {
-            throw new h.Z({
+            throw new m.Z({
               errorCode: _.lTL.INVALID_ENTITLEMENT
             }, "Timed out fetching entitlement.")
           })])
         } catch (e) {
-          throw e.code === _.lTL.INVALID_ENTITLEMENT && (m.ZP.focus(null, true), (0, a.ZDy)(async () => {
+          throw e.code === _.lTL.INVALID_ENTITLEMENT && (h.ZP.focus(null, true), (0, a.ZDy)(async () => {
             let {
               default: e
             } = await n.e("48748").then(n.bind(n, 52004));
@@ -101,7 +101,7 @@ let O = 10 * Chunk70956.Z.Millis.SECOND,
         let {
           socket: t
         } = e, l = t.application.id;
-        if (null == l) throw new h.Z({
+        if (null == l) throw new m.Z({
           errorCode: _.lTL.INVALID_COMMAND
         }, "No application.");
         return i.tn.post({
@@ -118,7 +118,7 @@ let O = 10 * Chunk70956.Z.Millis.SECOND,
           } = e;
           return t
         }).catch(e => {
-          throw m.ZP.focus(null, true), (0, a.ZDy)(async () => {
+          throw h.ZP.focus(null, true), (0, a.ZDy)(async () => {
             let {
               default: e
             } = await n.e("48748").then(n.bind(n, 52004));

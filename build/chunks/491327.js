@@ -135,7 +135,7 @@ let v = {
       }).then(e => {
         let [t, n] = e;
         if (n.guild_id) {
-          if ((0, h.rY)(t, m.Z, d.Z)) throw new g.Z({
+          if ((0, m.rY)(t, h.Z, d.Z)) throw new g.Z({
             errorCode: I.lTL.INVALID_CHANNEL
           }, "Channel is full");
           if (!p.Z.can(I.Plq.CONNECT, t)) throw new g.Z({

@@ -47,17 +47,17 @@ let g = {
       let r = u.default.getCurrentUser(),
         s = a.Z.getSound(t, n),
         p = (0, f.Z)(),
-        m = null != s && null != r && (0, o.Nq)(r, s, p);
+        h = null != s && null != r && (0, o.Nq)(r, s, p);
       if (null == p) throw new d.Z({
-        errorCode: h.lT.INVALID_CHANNEL
+        errorCode: m.lT.INVALID_CHANNEL
       }, "Invalid Channel.");
-      if (m)
+      if (h)
         if ((0, c.Z)(p)) null != s && (0, o.GN)(s, p.id, [i.Z.RPC]);
         else throw new d.Z({
-          errorCode: h.lT.INVALID_PERMISSIONS
+          errorCode: m.lT.INVALID_PERMISSIONS
         }, "Invalid Permissions.");
       else throw new d.Z({
-        errorCode: h.lT.INVALID_SOUND
+        errorCode: m.lT.INVALID_SOUND
       }, "Invalid Sound.")
     }
   }

@@ -23,30 +23,30 @@ function f(e) {
     embedId: t,
     className: n,
     style: a
-  } = e, s = (0, l.e7)([c.Z], () => c.Z.getConnectedFrame()), f = ((0, l.e7)([c.Z], () => c.Z.getFrameLayoutMode()), null != s && u.U.FOCUSED, window), m = i.useRef(null), h = i.useCallback(() => {
-    null != m.current && p(t, m.current.getBoundingClientRect())
+  } = e, s = (0, l.e7)([c.Z], () => c.Z.getConnectedFrame()), f = ((0, l.e7)([c.Z], () => c.Z.getFrameLayoutMode()), null != s && u.U.FOCUSED, window), h = i.useRef(null), m = i.useCallback(() => {
+    null != h.current && p(t, h.current.getBoundingClientRect())
   }, [t]);
   i.useLayoutEffect(() => {
-    h()
+    m()
   });
   let g = i.useMemo(() => new ResizeObserver(() => {
-    h()
-  }), [h]);
+    m()
+  }), [m]);
   return i.useLayoutEffect(() => {
-    let e = m.current;
+    let e = h.current;
     if (null != e) return g.observe(e), () => g.unobserve(e)
   }, [g]), i.useLayoutEffect(() => {
-    let e = () => h(),
-      t = () => h();
+    let e = () => m(),
+      t = () => m();
     return f.addEventListener("scroll", e, true), f.addEventListener("resize", t), () => {
       f.removeEventListener("scroll", e, true), f.removeEventListener("resize", t)
     }
-  }, [h, f]), i.useLayoutEffect(() => (o.S.subscribe(d.CkL.MANUAL_IFRAME_RESIZING, h), () => {
-    o.S.unsubscribe(d.CkL.MANUAL_IFRAME_RESIZING, h)
-  }), [h]), i.useLayoutEffect(() => () => {
+  }, [m, f]), i.useLayoutEffect(() => (o.S.subscribe(d.CkL.MANUAL_IFRAME_RESIZING, m), () => {
+    o.S.unsubscribe(d.CkL.MANUAL_IFRAME_RESIZING, m)
+  }), [m]), i.useLayoutEffect(() => () => {
     p(t, null)
   }, [t]), (0, r.jsx)("div", {
-    ref: m,
+    ref: h,
     className: n,
     style: a
   })

@@ -52,7 +52,7 @@ function E(e) {
       autoOpenFileInput: n,
       analyticsLocation: y
     }), v(false)
-  }, [t, y, T, R]), D = i.useCallback(async (e, n, r) => {
+  }, [t, y, T, R]), w = i.useCallback(async (e, n, r) => {
     var i;
     v(true), await (0, u.i)({
       userImage: {
@@ -82,7 +82,7 @@ function E(e) {
       ref: n,
       tabIndex: 0,
       disabled: R,
-      onChange: D,
+      onChange: w,
       setLoading: b
     }) : null]
   })

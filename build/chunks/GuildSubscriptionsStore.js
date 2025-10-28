@@ -84,7 +84,7 @@ function P() {
   A(false, false)
 }
 
-function D(e) {
+function w(e) {
   let {
     idle: t
   } = e;
@@ -92,7 +92,7 @@ function D(e) {
   A(false, true)
 }
 
-function w() {
+function D() {
   S.reset()
 }
 
@@ -246,8 +246,8 @@ let q = new z(Chunk570140.Z, {
   CONNECTION_OPEN: R,
   CONNECTION_RESUMED: R,
   CONNECTION_CLOSED: P,
-  IDLE: D,
-  LOGOUT: w,
+  IDLE: w,
+  LOGOUT: D,
   VOICE_CHANNEL_SELECT: F,
   CHANNEL_SELECT: F,
   GUILD_CREATE: L,

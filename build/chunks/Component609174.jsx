@@ -16,7 +16,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk861265 = require("./861265.js");
 
-function m(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -35,7 +35,7 @@ function m(e) {
   return e
 }
 
-function h(e, t) {
+function m(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -75,7 +75,7 @@ let g = Chunk185514.Nx.binds["0"],
             shortcut: g
           })]
         }),
-        children: e => (0, r.jsx)(s.P3F, h(m(h(m({}, e), {
+        children: e => (0, r.jsx)(s.P3F, m(h(m(h({}, e), {
           "aria-disabled": !i,
           className: l()(f.button, f.back, {
             [f.disabled]: !i
@@ -97,7 +97,7 @@ let g = Chunk185514.Nx.binds["0"],
             shortcut: _
           })]
         }),
-        children: e => (0, r.jsx)(s.P3F, h(m({}, e), {
+        children: e => (0, r.jsx)(s.P3F, m(h({}, e), {
           "aria-disabled": !o,
           className: l()(f.button, f.forward, {
             [f.disabled]: !o

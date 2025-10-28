@@ -126,14 +126,14 @@ let eE = e => {
     let i = (0, A.b5)("PrivateChannels.ICYMIButton"),
       l = (0, u.JA)("icymi");
     return i ? (0, r.jsx)("div", {
-      className: eh.friendsButtonContainer,
+      className: em.friendsButtonContainer,
       children: (0, r.jsx)(es.Qj, eg({
         selected: t,
         route: eu.Z5c.ICYMI,
         icon: g.qOE,
         text: (0, r.jsxs)(r.Fragment, {
           children: [ef.intl.string(ef.t["jnXV/V"]), (0, r.jsx)("span", {
-            className: eh.preAlphaText,
+            className: em.preAlphaText,
             children: ef.intl.string(ef.t.Ac2OZA)
           })]
         })
@@ -165,9 +165,9 @@ let eE = e => {
         }
       })
     }, [f]);
-    let [m, h] = i.useState(false);
+    let [h, m] = i.useState(false);
     return (0, r.jsxs)("div", {
-      className: eh.friendsButtonContainer,
+      className: em.friendsButtonContainer,
       children: [(0, r.jsx)(es.Qj, e_(eg({
         onClick: () => {
           let e;
@@ -177,27 +177,27 @@ let eE = e => {
             tab_opened: e
           })
         },
-        interactiveClassName: f ? eh.friendsBadge : true,
+        interactiveClassName: f ? em.friendsBadge : true,
         selected: t,
         route: eu.Z5c.FRIENDS,
         icon: g.iFz,
         text: ef.intl.string(ef.t.TdEu5X),
         onMouseEnter: () => {
-          h(true)
+          m(true)
         },
         onMouseLeave: () => {
-          h(false)
+          m(false)
         }
       }, n, l), {
         children: a > 0 ? (0, r.jsx)(g.mAB, {
           count: a
         }) : null
       })), f && !o && (0, r.jsx)(W.Z, {
-        className: eh.confetti,
+        className: em.confetti,
         wind: 0,
         sprites: ed.CA,
         spriteColors: ed.Br,
-        firing: m,
+        firing: h,
         confettiConfig: {
           opacity: {
             type: "static",
@@ -220,7 +220,7 @@ let eE = e => {
     } = e, n = eb(e, ["selected"]);
     let i = (0, u.JA)("activity");
     return (0, r.jsx)("div", {
-      className: eh.friendsButtonContainer,
+      className: em.friendsButtonContainer,
       children: (0, r.jsx)(es.Qj, eg({
         selected: t,
         route: eu.Z5c.ME_ACTIVITY,
@@ -242,8 +242,8 @@ let eE = e => {
       text: ef.intl.string(ef.t.cw57ar)
     }, i, l), {
       children: (0, r.jsx)(ec.Z, {
-        className: a()(eh.downloadProgressCircle, {
-          [eh.hideGameUpdateProgressIndicator]: n
+        className: a()(em.downloadProgressCircle, {
+          [em.hideGameUpdateProgressIndicator]: n
         })
       })
     }))
@@ -285,7 +285,7 @@ let eE = e => {
   eT = e => {
     let {
       selected: t
-    } = e, n = ef.intl.string(em.default.Rkdixs), l = (0, u.JA)("family-center"), [a, s] = i.useState(true);
+    } = e, n = ef.intl.string(eh.default.Rkdixs), l = (0, u.JA)("family-center"), [a, s] = i.useState(true);
     return (0, r.jsx)(es.Qj, e_(eg({
       selected: t,
       route: eu.Z5c.FAMILY_CENTER,
@@ -297,7 +297,7 @@ let eE = e => {
       onMouseLeave: () => {
         s(false)
       },
-      interactiveClassName: eh.familyCenterLinkButton
+      interactiveClassName: em.familyCenterLinkButton
     }, l), {
       children: (0, r.jsx)(eN, {
         isParentHovered: a
@@ -309,10 +309,10 @@ let eE = e => {
       isParentHovered: t
     } = e, i = (0, D.gU)();
     return t ? (0, r.jsx)("div", {
-      className: eh.familyCenterButtonContainer,
+      className: em.familyCenterButtonContainer,
       children: (0, r.jsx)(es.bU, {
         onClick: () => {
-          (0, m.ZD)(async () => {
+          (0, h.ZD)(async () => {
             let {
               default: e
             } = await n.e("44153").then(n.bind(n, 760949));
@@ -323,12 +323,12 @@ let eE = e => {
         icon: g.Dio
       })
     }) : i > 0 ? (0, r.jsx)("div", {
-      className: a()(eh.familyCenterButtonContainer, eh.withPadding),
+      className: a()(em.familyCenterButtonContainer, em.withPadding),
       children: (0, r.jsx)(g.mAB, {
         count: i
       })
     }) : (0, r.jsx)("div", {
-      className: eh.familyCenterButtonContainer,
+      className: em.familyCenterButtonContainer,
       children: (0, r.jsx)(N.ZP, {
         contentTypes: [f.z.FAMILY_CENTER_NEW_BADGE],
         children: e => {
@@ -380,7 +380,7 @@ let eA = Chunk647438.memo(function(e) {
     showRecurring3PPopover: u,
     shouldShowMessageRequestsRow: p,
     shouldShowFamilyCenterRow: f,
-    createDMButtonVariant: m,
+    createDMButtonVariant: h,
     selectedChannelId: g,
     path: _,
     onlyShowDMs: b,
@@ -393,7 +393,7 @@ let eA = Chunk647438.memo(function(e) {
   }) : u && (P = (0, r.jsx)(H.d, {
     targetElementRef: S
   })), (0, r.jsxs)("nav", {
-    className: eh.privateChannels,
+    className: em.privateChannels,
     "aria-label": ef.intl.string(ef.t.ZH9aP4),
     children: [b ? (0, r.jsx)(ej, {}) : (0, r.jsx)(J.Z, {
       childRef: O,
@@ -402,13 +402,13 @@ let eA = Chunk647438.memo(function(e) {
       offsetX: false,
       children: (0, r.jsx)("div", {
         ref: O,
-        className: a()(eh.searchBar, {
-          [eh.themedHeaderMobile]: d.tq
+        className: a()(em.searchBar, {
+          [em.themedHeaderMobile]: d.tq
         }),
-        children: (0, r.jsx)(h.zx, {
+        children: (0, r.jsx)(m.zx, {
           grow: true,
-          color: h.zx.Colors.PRIMARY,
-          size: h.zx.Sizes.SMALL,
+          color: m.zx.Colors.PRIMARY,
+          size: m.zx.Sizes.SMALL,
           fullWidth: true,
           onClick: eP,
           children: (0, r.jsx)(C.Z, {
@@ -422,7 +422,7 @@ let eA = Chunk647438.memo(function(e) {
       showDMHeader: !E && !b,
       hideAllDMs: E,
       listScrollerRef: y,
-      createDMCTAButtonVariant: m,
+      createDMCTAButtonVariant: h,
       children: [T && !b ? (0, r.jsx)(eI, {
         selected: null != _ ? _ === eu.Z5c.ME_ACTIVITY : l === eu.Z5c.ME_ACTIVITY
       }, "activity_experimental") : null, b ? null : (0, r.jsx)(eO, {
@@ -461,7 +461,7 @@ let eA = Chunk647438.memo(function(e) {
         selected: null != l && l.startsWith(eu.Z5c.FAMILY_CENTER) || null != _ && _.startsWith(eu.Z5c.FAMILY_CENTER)
       }, "family-center") : null, b ? null : (0, r.jsx)(q.Z, {
         selected: null == _ ? null != l && l.startsWith(eu.Z5c.QUEST_HOME_V2) : _ === eu.Z5c.QUEST_HOME_V2
-      }, "quests"), b || E ? null : (0, r.jsx)(eZ, {}, "section-divider-top"), E ? null : (0, r.jsx)(j.Z, {}, "frequent-friends"), "full-width" !== m || E || b ? null : (0, r.jsx)(ey, {}, "create-dm")]
+      }, "quests"), b || E ? null : (0, r.jsx)(eZ, {}, "section-divider-top"), E ? null : (0, r.jsx)(j.Z, {}, "frequent-friends"), "full-width" !== h || E || b ? null : (0, r.jsx)(ey, {}, "create-dm")]
     }))]
   })
 });
@@ -501,8 +501,8 @@ function ew() {
     d = (0, Chunk457396.i)({
       selected: null == Chunk91192 ? exports : Chunk91192.startsWith(Chunk981631.Z5c.APPLICATION_STORE)
     }),
-    m = (0, Chunk93237.eW)(),
-    h = (0, Chunk675957._h)(),
+    h = (0, Chunk93237.eW)(),
+    m = (0, Chunk675957._h)(),
     g = [];
   (0, Chunk211644.Kl)() && (Chunk952265 && Chunk481060.push(Chunk704215.z.REFERRAL_PROGRAM_POPOVER), Chunk755721 && Chunk481060.push(Chunk704215.z.RECURRING_3P_PROMOTION_POPOVER));
   let [_, b] = (0, Chunk426032.US)(Chunk481060, true, true), E = (0, Chunk28476.a)(), O = function() {

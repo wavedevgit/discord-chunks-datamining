@@ -2,7 +2,7 @@
 /** chunk id: 51636, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => D
+  Z: () => w
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -72,7 +72,7 @@ let R = Chunk647438.memo(e => {
     dismissibleContentType: a,
     forceShadow: h,
     cardType: b
-  } = e, y = null == e ? true : e.onCtaClick, S = (0, c.e7)([d.Z], () => d.Z.useReducedMotion), [C, D] = i.useState(false), [w, L] = i.useState(false), x = b === E.gM.CARD_CAROUSEL_FIRST_ROW || b === E.gM.CARD_CAROUSEL_SECOND_ROW || b === E.gM.CARD_CAROUSEL_THIRD_ROW, M = (0, g.Z)(), [k, j] = (0, _.cv)(null != a && n ? [a] : []), {
+  } = e, y = null == e ? true : e.onCtaClick, S = (0, c.e7)([d.Z], () => d.Z.useReducedMotion), [C, w] = i.useState(false), [D, L] = i.useState(false), x = b === E.gM.CARD_CAROUSEL_FIRST_ROW || b === E.gM.CARD_CAROUSEL_SECOND_ROW || b === E.gM.CARD_CAROUSEL_THIRD_ROW, M = (0, g.Z)(), [k, j] = (0, _.cv)(null != a && n ? [a] : []), {
     easterEggLevel: U,
     isEasterEggTriggered: G,
     onHover: B,
@@ -94,7 +94,7 @@ let R = Chunk647438.memo(e => {
   }, e), {
     onCtaClick: null != y ? H : true
   });
-  let Y = k !== a || null == a || w,
+  let Y = k !== a || null == a || D,
     W = e => {
       C && "transform" === e.propertyName && e.target.classList.contains(T.flipCard) && (L(true), p.default.track(O.rMx.PREMIUM_MARKETING_PERK_CARD_FLIPPED, {
         card_type: t
@@ -158,10 +158,10 @@ let R = Chunk647438.memo(e => {
         [T.forceShadow]: h
       }),
       children: (0, r.jsxs)(u.P3F, {
-        onClick: () => D(true),
+        onClick: () => w(true),
         className: o()(T.flipCard, T.clickable, {
           [T.flipped]: C,
-          [T.partialFlipCard]: !w && !C,
+          [T.partialFlipCard]: !D && !C,
           [T.reducedMotion]: S
         }),
         onTransitionEnd: W,
@@ -184,7 +184,7 @@ let R = Chunk647438.memo(e => {
           children: (0, r.jsx)(u.Button, {
             variant: "primary",
             text: I.intl.string(I.t.dcztdU),
-            onClick: () => D(true)
+            onClick: () => w(true)
           })
         })]
       })
@@ -216,9 +216,9 @@ let P = Chunk647438.forwardRef((e, t) => {
     perkImage: C,
     imageOverlayText: N,
     hasNitroGradientBackground: R
-  } = e, P = v === E.gM.CARD_CAROUSEL_FIRST_ROW || v === E.gM.CARD_CAROUSEL_SECOND_ROW || v === E.gM.CARD_CAROUSEL_THIRD_ROW, D = "" !== l || "" !== c || "" !== s && O === E.zW.REWARD, w = (0, h._)(O);
+  } = e, P = v === E.gM.CARD_CAROUSEL_FIRST_ROW || v === E.gM.CARD_CAROUSEL_SECOND_ROW || v === E.gM.CARD_CAROUSEL_THIRD_ROW, w = "" !== l || "" !== c || "" !== s && O === E.zW.REWARD, D = (0, h._)(O);
   return (0, r.jsxs)(u.P3F, {
-    className: o()(T.card, m, null == (n = w.cardContainer) ? true : n.className, {
+    className: o()(T.card, m, null == (n = D.cardContainer) ? true : n.className, {
       [T.clickable]: null != I,
       [T.hideOverflow]: P,
       [T.nitroGradientBackground]: R
@@ -249,7 +249,7 @@ let P = Chunk647438.forwardRef((e, t) => {
       subtitleClassName: T.cardSubtitle,
       cardVariant: O,
       imageOverlayText: N
-    }), D && (0, r.jsx)(y.Z, {
+    }), w && (0, r.jsx)(y.Z, {
       title: i,
       titleClassName: a,
       subtitle: s,
@@ -266,4 +266,4 @@ let P = Chunk647438.forwardRef((e, t) => {
   })
 });
 P.displayName = "PerkCardContent";
-let D = R
+let w = R

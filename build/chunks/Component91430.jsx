@@ -68,10 +68,10 @@ function Q(e) {
       let e = N.default.getCurrentUser();
       return l()(null != e, "GuildBoostingHeader: currentUser cannot be undefined"), e
     });
-  if (0 === (0, D.uV)(n.additionalPlans)) return null;
+  if (0 === (0, w.uV)(n.additionalPlans)) return null;
   let {
     status: _
-  } = n, p = (0, D.v6)(n);
+  } = n, p = (0, w.v6)(n);
   if (p) t = q.guildBoostingSubscriptionRowCanceled;
   else switch (_) {
     case Y.O0b.PAST_DUE:
@@ -100,7 +100,7 @@ function Q(e) {
             [q.canceled]: p
           })
         }), (0, r.jsx)("div", {
-          children: (0, D.bt)({
+          children: (0, w.bt)({
             subscription: n,
             renewalInvoicePreview: i,
             user: u,
@@ -217,7 +217,7 @@ function et(e) {
       className: q.detailBlockHeader,
       children: z.intl.string(z.t.KXQjfc)
     }), (0, r.jsx)("div", {
-      children: D.ZP.getBillingInformationString(t, n, i, false, s)
+      children: w.ZP.getBillingInformationString(t, n, i, false, s)
     })]
   })
 }
@@ -282,7 +282,7 @@ function er(e) {
   let v = (0, y.Z)(),
     I = (0, k.$)(),
     T = (0, x.lr)(),
-    S = D.ZP.isBaseSubscriptionCanceled(t),
+    S = w.ZP.isBaseSubscriptionCanceled(t),
     A = (0, j.P)(t, i);
   if (null == m || null == O) return (0, r.jsx)(h.$jN, {});
   let C = A ? (0, x.Yi)(O) : null,
@@ -334,7 +334,7 @@ function er(e) {
               }) : z.intl.string(z.t.iRzXKd),
               children: (0, r.jsx)(Z.Z, {
                 subscription: t,
-                onPaymentSourceAdded: w.i1,
+                onPaymentSourceAdded: D.i1,
                 highlightAddPaymentMethodButton: c || l,
                 analyticsLocation: n,
                 currentInvoicePreview: m,
@@ -409,10 +409,10 @@ function eo(e) {
     analyticsLocation: d,
     userDiscountOfferId: null == O ? true : O.id,
     fetchKey: T
-  }), D = (0, V.x)(), w = null == s ? true : s.invalid, x = (0, f.e7)([N.default], () => {
+  }), w = (0, V.x)(), D = null == s ? true : s.invalid, x = (0, f.e7)([N.default], () => {
     var e;
     return null == (e = N.default.getCurrentUser()) ? true : e.hasFreePremium()
-  }), j = u()(a.currentPeriodEnd), U = null != a.paymentSourceId, G = null != (t = null == R ? true : R.total) ? t : 0, B = !U && G > 0 && (7 >= j.diff(u()(), "days") || a.status === Y.O0b.PAST_DUE) && !x && !a.isPurchasedExternally, Z = w && a.status === Y.O0b.PAST_DUE && !x && !a.isPurchasedExternally, H = (0, M.U)(), W = !x && H, X = (null == a ? true : a.status) === Y.O0b.PAST_DUE, Q = X ? u()().diff(u()(a.currentPeriodStart), "days") : 0, [et] = (0, L.Ox)({
+  }), j = u()(a.currentPeriodEnd), U = null != a.paymentSourceId, G = null != (t = null == R ? true : R.total) ? t : 0, B = !U && G > 0 && (7 >= j.diff(u()(), "days") || a.status === Y.O0b.PAST_DUE) && !x && !a.isPurchasedExternally, Z = D && a.status === Y.O0b.PAST_DUE && !x && !a.isPurchasedExternally, H = (0, M.U)(), W = !x && H, X = (null == a ? true : a.status) === Y.O0b.PAST_DUE, Q = X ? u()().diff(u()(a.currentPeriodStart), "days") : 0, [et] = (0, L.Ox)({
     subscriptionId: a.id,
     preventFetch: !(W || X)
   });
@@ -428,7 +428,7 @@ function eo(e) {
       daysPastDue: Q,
       subscription: a,
       openInvoiceId: et.id
-    }) : null, n, D && (0, r.jsx)(h.Wn, {
+    }) : null, n, w && (0, r.jsx)(h.Wn, {
       messageType: h.QYI.INFO,
       action: (0, r.jsx)(h.P3F, {
         onClick: () => {
