@@ -32,7 +32,7 @@ let j = (0, Chunk647438.memo)(function(e) {
   var t, n, l, j, P, x;
   let {
     quest: A
-  } = e, [Z, w] = (0, i.useState)(false), [L, D] = (0, i.useState)(24), [R, M] = (0, i.useState)(false), k = (0, i.useRef)(null), U = (0, i.useRef)(null), G = (0, i.useRef)(null), B = (0, c.e7)([g.default], () => g.default.getCurrentUser()), {
+  } = e, [Z, w] = (0, i.useState)(false), [L, R] = (0, i.useState)(24), [D, M] = (0, i.useState)(false), k = (0, i.useRef)(null), U = (0, i.useRef)(null), G = (0, i.useRef)(null), B = (0, c.e7)([g.default], () => g.default.getCurrentUser()), {
     ref: H,
     height: V = 0
   } = (0, p.ZP)(), F = (0, f.ZP)(), z = (0, E.B6)(null == (t = A.userStatus) ? true : t.claimedAt, {
@@ -47,7 +47,7 @@ let j = (0, Chunk647438.memo)(function(e) {
     let n = k.current.getBoundingClientRect(),
       r = U.current.getBoundingClientRect(),
       i = G.current.getBoundingClientRect();
-    D((r.top - n.top - i.height) / 2)
+    R((r.top - n.top - i.height) / 2)
   });
   let $ = (0, u.wj)(F),
     ee = (0, i.useMemo)(() => null != A.config.cosponsorMetadata, [A]),
@@ -103,7 +103,7 @@ let j = (0, Chunk647438.memo)(function(e) {
         quest_id: A.id
       })
     };
-  return null == W || R ? null : (0, r.jsx)(d.tEY, {
+  return null == W || D ? null : (0, r.jsx)(d.tEY, {
     children: (0, r.jsxs)("div", {
       ref: k,
       tabIndex: 0,
@@ -120,7 +120,7 @@ let j = (0, Chunk647438.memo)(function(e) {
         style: {
           top: L
         },
-        children: (0, r.jsx)(h.Z, {
+        children: (0, r.jsx)(m.Z, {
           avatarDecorationOverride: X,
           user: B,
           guildId: null
@@ -129,7 +129,7 @@ let j = (0, Chunk647438.memo)(function(e) {
         className: N.image
       }) : Q ? (0, r.jsx)(y.Z, {
         className: N.image
-      }) : et.isAnimated ? (0, r.jsx)(m.Z, {
+      }) : et.isAnimated ? (0, r.jsx)(h.Z, {
         className: N.assetBlurred,
         autoPlay: false,
         children: (0, r.jsx)("source", {

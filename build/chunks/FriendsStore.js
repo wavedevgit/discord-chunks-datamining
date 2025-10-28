@@ -71,7 +71,7 @@ function N(e) {
     status: b.Z.getStatus(e),
     isMobile: b.Z.isMobileOnline(e),
     activities: b.Z.getActivities(e),
-    applicationStream: m.Z.getAnyStreamForUser(e)
+    applicationStream: h.Z.getAnyStreamForUser(e)
   }
 }
 
@@ -107,7 +107,7 @@ class x {
         }, T(n), N(n), j(n)), {
           spam: E.Z.isSpam(n),
           ignoredUser: E.Z.isIgnored(n),
-          giftIntentType: r === I.OGo.FRIEND && h.Z.isTopAffinityFriendAnniversary({
+          giftIntentType: r === I.OGo.FRIEND && m.Z.isTopAffinityFriendAnniversary({
             userId: n
           }) ? v.hX.FRIEND_ANNIVERSARY : true,
           applicationId: E.Z.getOriginApplicationId(n)
@@ -200,8 +200,8 @@ let A = true,
   Z = false,
   w = Chunk981631.pJs.ONLINE,
   L = new x,
-  D = true,
-  R = false;
+  R = true,
+  D = false;
 
 function M() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
@@ -209,18 +209,18 @@ function M() {
 }
 
 function k() {
-  if (A = true, D ? Z = false : M(), L = L.reset(), R) return;
+  if (A = true, R ? Z = false : M(), L = L.reset(), D) return;
   let e = L.getRelationshipCounts();
   w = 0 === module[Chunk981631.OGo.FRIEND] ? 0 !== module[Chunk981631.OGo.PENDING_INCOMING] ? Chunk981631.pJs.PENDING : Chunk981631.pJs.ADD_FRIEND : Chunk981631.pJs.ONLINE
 }
 
 function U() {
-  L = D ? new x : L.reset()
+  L = R ? new x : L.reset()
 }
 
 function G(e) {
   return function() {
-    return !D && !!L.update(e) && (L = L.clone(), true)
+    return !R && !!L.update(e) && (L = L.clone(), true)
   }
 }
 class B extends(r = Chunk442837.ZP.Store) {
@@ -247,7 +247,7 @@ let H = new B(Chunk570140.Z, {
     let {
       channelId: t
     } = e;
-    return D = null != t, U(), !D
+    return R = null != t, U(), !R
   },
   LOAD_RELATIONSHIPS_SUCCESS: function() {
     Z = false
@@ -256,6 +256,6 @@ let H = new B(Chunk570140.Z, {
     A = true, Z = true
   },
   FRIENDS_SET_INITIAL_SECTION: function(e) {
-    w = e.section, R = true
+    w = e.section, D = true
   }
 })

@@ -86,17 +86,17 @@ function A(e) {
       suppress: w
     } = (0, E.Z)(t),
     L = (0, s.e7)([O.Z], () => O.Z.isDeaf()),
-    D = Z || w || L,
-    [R, M] = i.useState(false),
+    R = Z || w || L,
+    [D, M] = i.useState(false),
     k = t.getGuildId(),
     U = (0, v.sR)({
-      isSoundboardButtonDisabled: D
+      isSoundboardButtonDisabled: R
     }),
     [G, B] = (0, b.cv)(U),
     {
       analyticsLocations: H,
       parentAnalyticsLocation: V
-    } = (0, m.ZP)(h.Z.SOUNDBOARD_BUTTON);
+    } = (0, h.ZP)(m.Z.SOUNDBOARD_BUTTON);
 
   function F(e) {
     null != k && (0, f.jW)(e, async () => {
@@ -107,7 +107,7 @@ function A(e) {
         guildId: k,
         sourceAnalyticsLocations: H
       }, t), {
-        onInteraction: (0, _.u)("SoundboardContextMenu", h.Z.RTC_PANEL)
+        onInteraction: (0, _.u)("SoundboardContextMenu", m.Z.RTC_PANEL)
       }))
     })
   }
@@ -119,12 +119,12 @@ function A(e) {
       onMouseLeave: q
     }
   } = (0, c.j)(), K = i.useCallback(() => {
-    D || M(!R)
-  }, [D, R]);
+    R || M(!D)
+  }, [R, D]);
   return (0, I.yp)({
     event: S.CkL.TOGGLE_SOUNDBOARD,
     handler: K
-  }), (0, r.jsx)(m.Gt, {
+  }), (0, r.jsx)(h.Gt, {
     value: H,
     children: (0, r.jsx)(u.u, {
       targetElementRef: A,
@@ -133,7 +133,7 @@ function A(e) {
       children: (0, r.jsx)(p.yRy, {
         targetElementRef: A,
         animation: p.yRy.Animation.FADE,
-        shouldShow: R,
+        shouldShow: D,
         position: "top",
         onRequestClose: () => M(false),
         renderPopout: e => {
@@ -155,14 +155,14 @@ function A(e) {
           ref: A,
           children: (0, r.jsx)(d.zx, x(P(x(P({}, e), {
             className: a()(j.button, j.buttonColor, {
-              [j.greyButtonActive]: R,
-              [j.disabled]: D
+              [j.greyButtonActive]: D,
+              [j.disabled]: R
             }),
             wrapperClassName: j.button,
             innerClassName: j.buttonContents,
-            disabled: D,
+            disabled: R,
             onClick: () => {
-              null != G && G !== o.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && B(T.L.UNKNOWN), M(!R), Y(), (0, g.v)(V, g.d.SOUNDBOARD)
+              null != G && G !== o.z.CUSTOM_CALL_SOUNDS_PICKER_UPSELL && B(T.L.UNKNOWN), M(!D), Y(), (0, g.v)(V, g.d.SOUNDBOARD)
             },
             onMouseEnter: e => {
               var t;

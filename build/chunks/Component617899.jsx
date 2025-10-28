@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk589148 = require("./589148.js");
 
-function h(e, t, n) {
+function m(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -23,7 +23,7 @@ function h(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-class m extends Chunk647438.PureComponent {
+class h extends Chunk647438.PureComponent {
   getInviteText() {
     return (0, Chunk340541.LK)({
       location: "invite_notice"
@@ -45,7 +45,7 @@ class m extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), h(this, "handleInvite", () => {
+    super(...e), m(this, "handleInvite", () => {
       let {
         guild: e
       } = this.props;
@@ -71,7 +71,7 @@ class m extends Chunk647438.PureComponent {
             "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
               return Object.getOwnPropertyDescriptor(n, e).enumerable
             }))), r.forEach(function(t) {
-              h(e, t, n[t])
+              m(e, t, n[t])
             })
           }
           return e
@@ -80,7 +80,7 @@ class m extends Chunk647438.PureComponent {
           source: u.t4x.INVITE_NOTICE
         }))
       })
-    }), h(this, "handleClose", () => {
+    }), m(this, "handleClose", () => {
       let e = o.Z.getChannelId(),
         t = p.intl.formatToPlainString(p.t.DEn7nu, {
           invitePeople: this.getInviteText()
@@ -89,4 +89,4 @@ class m extends Chunk647438.PureComponent {
     })
   }
 }
-let g = m
+let g = h

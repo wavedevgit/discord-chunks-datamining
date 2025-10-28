@@ -16,7 +16,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk665149 = require("./665149.jsx"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
-let m = new Set(["ko", "ja"]);
+let h = new Set(["ko", "ja"]);
 
 function g(e) {
   let {
@@ -51,8 +51,8 @@ function g(e) {
         highlighted: b
       }),
       icon: a.idN,
-      tooltipPosition: m.has(_) ? "left" : true,
-      tooltip: h.intl.string(h.t["cqEoj/"])
+      tooltipPosition: h.has(_) ? "left" : true,
+      tooltip: m.intl.string(m.t["cqEoj/"])
     }, n))
   })
 }

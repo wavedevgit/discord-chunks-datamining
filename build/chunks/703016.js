@@ -35,11 +35,11 @@ let A = [],
   Z = null,
   w = null,
   L = null,
-  D = /\|\|([\s\S]+?)\|\|/g;
+  R = /\|\|([\s\S]+?)\|\|/g;
 
-function R(e, t, n, r) {
+function D(e, t, n, r) {
   let l = b.Z.getGuild(n),
-    a = e.replace(D, x.intl.string(x.t["F+x38C"])).replace(/<@!?(\d+)>/g, (e, t) => {
+    a = e.replace(R, x.intl.string(x.t["F+x38C"])).replace(/<@!?(\d+)>/g, (e, t) => {
       var r;
       let i = C.default.getUser(t);
       return null == i ? e : null != (r = g.ZP.getNick(n, i.id)) ? r : S.ZP.getName(i)
@@ -47,7 +47,7 @@ function R(e, t, n, r) {
       let n = null != l ? _.Z.getRole(l.id, t) : null;
       return null != n && null != n.name ? n.name : x.intl.string(x.t.dRcLA2)
     }).replace(/<#(\d+)>/g, (e, t) => {
-      let n = m.Z.getChannel(t);
+      let n = h.Z.getChannel(t);
       return null == n ? e : (0, o.F6)(n, C.default, I.Z)
     }).replace(/<a?:(\w+):(\d+)>/g, (e, t) => "".concat(x.intl.string(x.t.sMOuuS), " ").concat(t)).replace(/<\/([^\s]+?):(\d+)>/g, (e, t) => "/".concat(t)).replace(/<t:(\d+):([A-Z]|[a-z])>/g, (e, t, n) => {
       let r = c.Qh[n],
@@ -107,7 +107,7 @@ function H(e) {
     message: i,
     channel: l
   } = e, a = i.type === P.uaV.REPLY ? u.Z.getMessageByReference(i.messageReference) : null, s = (null == a ? true : a.state) === u.Y.LOADED ? null == a || null == (t = a.message) ? true : t.author : null, o = null != s ? null != (n = g.ZP.getNick(l.guild_id, null == s ? true : s.id)) ? n : S.ZP.getName(s) : null, c = l.getGuildId(), d = null != (r = g.ZP.getNick(c, i.author.id)) ? r : S.ZP.getName(i.author);
-  return U(R(i.content, d, c, o), true, l.id, i.id), true
+  return U(D(i.content, d, c, o), true, l.id, i.id), true
 }
 
 function V(e) {
@@ -118,10 +118,10 @@ function V(e) {
     optimistic: c
   } = e;
   if (c || E.Z.isSelfDeaf()) returnfalse;
-  let u = m.Z.getChannel(s);
+  let u = h.Z.getChannel(s);
   if (null == u) returnfalse;
   let d = v.Z.getChannelId(),
-    _ = h.ZP.getCurrentSidebarChannelId(d),
+    _ = m.ZP.getCurrentSidebarChannelId(d),
     b = s === d || s === _,
     C = p.OW.getSetting() && o.tts && b,
     T = O.Z.getTTSType(),
@@ -134,7 +134,7 @@ function V(e) {
     let t = null != (l = null != (i = g.ZP.getNick(e, null == (n = o.author) ? true : n.id)) ? i : S.ZP.getName(o.author)) ? l : "",
       c = o.type === P.uaV.REPLY ? null == (r = o.referenced_message) ? true : r.author : null,
       d = null != c ? null != (a = g.ZP.getNick(e, null == c ? true : c.id)) ? a : S.ZP.getName(c) : null;
-    U(R(o.content, t, e, d), false, u.id, o.id, j.f)
+    U(D(o.content, t, e, d), false, u.id, o.id, j.f)
   }
   returnfalse
 }

@@ -48,7 +48,7 @@ function T(e) {
     }), null != s && (0, r.jsx)("div", {
       className: S.splashGradient,
       style: {
-        background: "linear-gradient(180deg, ".concat((0, h.aD)(s, .16), " 0%, ").concat((0, h.aD)(s, 1), " 100%)")
+        background: "linear-gradient(180deg, ".concat((0, m.aD)(s, .16), " 0%, ").concat((0, m.aD)(s, 1), " 100%)")
       }
     }), (0, r.jsx)("div", {
       className: S.splashGradient
@@ -62,7 +62,7 @@ let N = e => {
     ref: n,
     width: c,
     height: u
-  } = (0, o.ZP)(), [f, h] = i.useState(y.hO.INITIAL), N = (0, l.e7)([b.Z], () => b.Z.getRequest(t)), j = (0, l.e7)([p.Z], () => p.Z.getGuild(t)), {
+  } = (0, o.ZP)(), [f, m] = i.useState(y.hO.INITIAL), N = (0, l.e7)([b.Z], () => b.Z.getRequest(t)), j = (0, l.e7)([p.Z], () => p.Z.getGuild(t)), {
     hasFetchedRequestToJoinGuilds: P,
     guildPreviewDisabled: x
   } = (0, l.cj)([b.Z], () => ({
@@ -72,10 +72,10 @@ let N = e => {
   i.useEffect(() => {
     null != j && (0, d.uL)(v.Z5c.CHANNEL(t))
   }, [j, t]), i.useEffect(() => {
-    P || m.Z.fetchRequestToJoinGuilds()
+    P || h.Z.fetchRequestToJoinGuilds()
   }, [P]);
   let A = i.useCallback(() => {
-      h(Math.max(f, y.hO.FILLING)), m.Z.removeGuildJoinRequest(t), (0, d.uL)(v.Z5c.ME)
+      m(Math.max(f, y.hO.FILLING)), h.Z.removeGuildJoinRequest(t), (0, d.uL)(v.Z5c.ME)
     }, [t, f]),
     Z = (e, t) => () => {
       (0, s.h7j)(n => {
@@ -122,10 +122,10 @@ let N = e => {
       })
     },
     w = async () => {
-      await m.Z.resetGuildJoinRequest(t), (0, g.hk)(t)
+      await h.Z.resetGuildJoinRequest(t), (0, g.hk)(t)
     }, L = Z(C.intl.format(C.t["9ZezpN"], {
       name: null == x ? true : x.name
-    }), A), D = Z(C.intl.format(C.t.fJwWVt, {
+    }), A), R = Z(C.intl.format(C.t.fJwWVt, {
       name: null == x ? true : x.name
     }), A);
   return (0, r.jsxs)("div", {
@@ -156,7 +156,7 @@ let N = e => {
             });
           default:
             return (0, r.jsx)(E.s, {
-              onDiscardApplication: D,
+              onDiscardApplication: R,
               onContinueApplication: () => (0, g.hk)(t),
               guild: x
             })

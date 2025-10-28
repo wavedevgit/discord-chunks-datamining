@@ -61,18 +61,18 @@ let A = function(e) {
       section: Z,
       rows: w
     } = (0, o.cj)([I.ZP], () => I.ZP.getState()),
-    L = (0, o.e7)([m.Z], () => m.Z.getSuggestionCount()),
-    D = i.useMemo(() => w.getRelationshipCounts(), [w]);
+    L = (0, o.e7)([h.Z], () => h.Z.getSuggestionCount()),
+    R = i.useMemo(() => w.getRelationshipCounts(), [w]);
   i.useEffect(() => {
-    null != t && p.Z.setInitialSection(t), 0 === D[T.OGo.FRIEND] && 0 === D[T.OGo.PENDING_INCOMING] && 0 === D[T.OGo.PENDING_OUTGOING] && 0 === D[T.OGo.BLOCKED] && p.Z.transitionToSection(T.pJs.ADD_FRIEND)
-  }, [t, D]);
-  let R = e => {
+    null != t && p.Z.setInitialSection(t), 0 === R[T.OGo.FRIEND] && 0 === R[T.OGo.PENDING_INCOMING] && 0 === R[T.OGo.PENDING_OUTGOING] && 0 === R[T.OGo.BLOCKED] && p.Z.transitionToSection(T.pJs.ADD_FRIEND)
+  }, [t, R]);
+  let D = e => {
       p.Z.transitionToSection(e, {
         explicit: true
       })
     },
-    M = (0, h.Dt)(),
-    k = (0, h.Dt)(),
+    M = (0, m.Dt)(),
+    k = (0, m.Dt)(),
     U = [{
       id: T.pJs.ONLINE,
       show: w.filter(T.pJs.ONLINE).length > 0,
@@ -80,7 +80,7 @@ let A = function(e) {
       className: P.item
     }, {
       id: T.pJs.ALL,
-      show: D[T.OGo.FRIEND] > 0,
+      show: R[T.OGo.FRIEND] > 0,
       content: j.intl.string(j.t.PfjFjR),
       className: P.item
     }, {
@@ -151,7 +151,7 @@ let A = function(e) {
           "aria-label": j.intl.string(j.t.TdEu5X),
           selectedItem: Z,
           type: "top-pill",
-          onItemSelect: R,
+          onItemSelect: D,
           className: P.tabBar,
           children: U.filter(e => e.show).map(e => (0, r.jsx)(c.njP.Item, {
             id: e.id,

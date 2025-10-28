@@ -61,7 +61,7 @@ function L(e, t, n) {
   let o = s.size > 0;
   v.Z.getMediaEngine().eachConnection(e => e.setForceAudioInput(o, t), l)
 }
-let D = {
+let R = {
     [Chunk981631.kg4.TOGGLE_PRIORITY_SPEAKER]: {
       onTrigger() {},
       keyEvents: {}
@@ -72,7 +72,7 @@ let D = {
     },
     [Chunk981631.kg4.PUSH_TO_TALK]: {
       onTrigger(e, t) {
-        v.Z.getMode(t.context) === x.pM4.PUSH_TO_TALK && (D[x.kg4.PUSH_TO_TALK].isPressed = e, L(e, false, t))
+        v.Z.getMode(t.context) === x.pM4.PUSH_TO_TALK && (R[x.kg4.PUSH_TO_TALK].isPressed = e, L(e, false, t))
       },
       keyEvents: {
         keyup: true,
@@ -84,7 +84,7 @@ let D = {
       onTrigger(e, t) {
         (v.Z.getMode() === x.pM4.PUSH_TO_TALK || P.Z.getCurrentConfig({
           location: "keybinds"
-        }).onPTTKeybind) && (D[x.kg4.PUSH_TO_TALK_PRIORITY].isPressed = e, L(e, true, t))
+        }).onPTTKeybind) && (R[x.kg4.PUSH_TO_TALK_PRIORITY].isPressed = e, L(e, true, t))
       },
       keyEvents: {
         keyup: true,
@@ -96,7 +96,7 @@ let D = {
       onTrigger(e, t) {
         v.Z.getMode() === x.pM4.VOICE_ACTIVITY && P.Z.getCurrentConfig({
           location: "keybinds"
-        }).separateKeybind && (D[x.kg4.VAD_PRIORITY].isPressed = e, L(e, true, t))
+        }).separateKeybind && (R[x.kg4.VAD_PRIORITY].isPressed = e, L(e, true, t))
       },
       keyEvents: {
         keyup: true,
@@ -106,7 +106,7 @@ let D = {
     },
     [Chunk981631.kg4.PUSH_TO_MUTE]: {
       onTrigger(e) {
-        v.Z.getMode() === x.pM4.VOICE_ACTIVITY && (D[x.kg4.PUSH_TO_MUTE].isPressed = e, i.Z.setTemporarySelfMute(e))
+        v.Z.getMode() === x.pM4.VOICE_ACTIVITY && (R[x.kg4.PUSH_TO_MUTE].isPressed = e, i.Z.setTemporarySelfMute(e))
       },
       keyEvents: {
         keyup: true,
@@ -286,7 +286,7 @@ let D = {
       }
     }
   },
-  R = null;
+  D = null;
 
 function M() {
   w.clear(), Chunk131951.Z.getMediaEngine().eachConnection(e => {
@@ -297,7 +297,7 @@ class k extends Chunk317770.Z {
   _initialize() {
     Chunk570140.Z.wait(() => Chunk570140.Z.dispatch({
       type: "KEYBINDS_REGISTER_GLOBAL_KEYBIND_ACTIONS",
-      keybinds: D
+      keybinds: R
     })), Chunk570140.Z.subscribe("AUDIO_SET_MODE", M), Chunk570140.Z.subscribe("VOICE_CHANNEL_SELECT", this.handleVoiceChannelSelect)
   }
   _terminate() {
@@ -307,7 +307,7 @@ class k extends Chunk317770.Z {
     let {
       currentVoiceChannelId: t
     } = e;
-    t !== R && M(), R = t
+    t !== D && M(), D = t
   }
 }
 let U = new k

@@ -39,7 +39,7 @@ let C = Math.ceil(Math.sqrt(115200)),
         enabled: e
       } = g.GE.useConfig({
         location: E.dr.PRIVATE_CHANNELS_LIST
-      }), [t, n] = (0, h.US)(e ? [c.z.QUEST_HOME_ENTRYPOINT_ONBOARDING] : [], I.R.PRIVATE_CHANNELS_LIST, true), r = i.useCallback(() => {
+      }), [t, n] = (0, m.US)(e ? [c.z.QUEST_HOME_ENTRYPOINT_ONBOARDING] : [], I.R.PRIVATE_CHANNELS_LIST, true), r = i.useCallback(() => {
         e && n(I.L.TAKE_ACTION)
       }, [n, e]);
       return {
@@ -65,7 +65,7 @@ let C = Math.ceil(Math.sqrt(115200)),
       }
     })), [{
       shineSpring: L
-    }, D] = (0, u.q_F)(() => ({
+    }, R] = (0, u.q_F)(() => ({
       from: {
         shineSpring: 0
       },
@@ -75,30 +75,30 @@ let C = Math.ceil(Math.sqrt(115200)),
         tension: 170,
         friction: 38
       }
-    })), R = i.useCallback(() => {
-      D({
+    })), D = i.useCallback(() => {
+      R({
         shineSpring: 1
       }), w({
         glowSpring: 1,
         delay: 200
       })
-    }, [D, w]), M = i.useCallback(() => {
-      D({
+    }, [R, w]), M = i.useCallback(() => {
+      R({
         shineSpring: 0,
         immediate: true
       }), w({
         glowSpring: 0,
         delay: 0
       })
-    }, [D, w]), k = i.useCallback(() => {
-      D({
+    }, [R, w]), k = i.useCallback(() => {
+      R({
         shineSpring: 1,
         delay: 500
       }), w({
         glowSpring: 1,
         delay: 700
-      }), m.default.track(O.rMx.QUEST_HOME_ONBOARDING_POPOVER_RENDERED)
-    }, [D, w]), [U, G] = i.useState(false), B = i.useCallback(e => {
+      }), h.default.track(O.rMx.QUEST_HOME_ONBOARDING_POPOVER_RENDERED)
+    }, [R, w]), [U, G] = i.useState(false), B = i.useCallback(e => {
       G(e.contentRect.width)
     }, []), H = (0, p.y)(B, [], {
       fireOnMount: true
@@ -106,9 +106,9 @@ let C = Math.ceil(Math.sqrt(115200)),
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
         className: y.wrapper,
-        onMouseEnter: R,
+        onMouseEnter: D,
         onMouseLeave: M,
-        onFocus: R,
+        onFocus: D,
         onBlur: M,
         ref: H,
         style: {

@@ -22,7 +22,7 @@ let u = {
       state: n,
       cleanUp: d,
       children: p
-    } = e, f = (0, a.e7)([o.Z], () => o.Z.useReducedMotion), h = i.useMemo(() => false === t || f ? {
+    } = e, f = (0, a.e7)([o.Z], () => o.Z.useReducedMotion), m = i.useMemo(() => false === t || f ? {
       opacity: 1
     } : n === s.pJH.ENTERED || n === s.pJH.MOUNTED ? {
       from: {
@@ -43,9 +43,9 @@ let u = {
       onRest: () => {
         d()
       }
-    }, [t, d, f, n]), m = (0, s.q_F)(h);
+    }, [t, d, f, n]), h = (0, s.q_F)(m);
     return (0, r.jsx)(l.animated.div, {
-      style: m,
+      style: h,
       className: c.transitionItem,
       children: p
     })

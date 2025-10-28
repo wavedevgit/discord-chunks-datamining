@@ -72,7 +72,7 @@ function Z() {
       videoEnabled: n,
       inVoiceChannel: r
     } = t;
-    if (!(0, h.O)()) return;
+    if (!(0, m.O)()) return;
     let {
       videoEnabled: i,
       inVoiceChannel: l
@@ -124,7 +124,7 @@ function L() {
   }), null
 }
 
-function D() {
+function R() {
   return x([Chunk131951.Z], () => Chunk131951.Z.getActiveVoiceFilter(), (e, t) => {
     if (e !== t)
       if (null != t) return null != e ? "voice_filter_swap" : "voice_filter_on";
@@ -132,7 +132,7 @@ function D() {
   }), null
 }
 
-function R() {
+function D() {
   return x([Chunk131951.Z], () => Chunk131951.Z.isSelfMutedTemporarily(), (e, t) => {
     if (e !== t) {
       let e = I.Z.isSelfMute();
@@ -163,7 +163,7 @@ function U() {
     let t = Chunk979651.Z.getVoiceStateForChannel(module);
     return (0, Chunk590415.gf)(exports)
   }, (e, t) => {
-    if (e !== t && t === m.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK) return "reconnect"
+    if (e !== t && t === h.xO.REQUESTED_TO_SPEAK_AND_AWAITING_USER_ACK) return "reconnect"
   }), null
 }
 
@@ -287,6 +287,6 @@ function H() {
 
 function V() {
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-    children: [(0, Chunk951288.jsx)(A, {}), (0, Chunk951288.jsx)(Z, {}), (0, Chunk951288.jsx)(w, {}), (0, Chunk951288.jsx)(L, {}), (0, Chunk951288.jsx)(R, {}), (0, Chunk951288.jsx)(k, {}), (0, Chunk951288.jsx)(G, {}), (0, Chunk951288.jsx)(U, {}), (0, Chunk951288.jsx)(B, {}), (0, Chunk951288.jsx)(D, {}), (0, Chunk951288.jsx)(M, {}), (0, Chunk951288.jsx)(H, {})]
+    children: [(0, Chunk951288.jsx)(A, {}), (0, Chunk951288.jsx)(Z, {}), (0, Chunk951288.jsx)(w, {}), (0, Chunk951288.jsx)(L, {}), (0, Chunk951288.jsx)(D, {}), (0, Chunk951288.jsx)(k, {}), (0, Chunk951288.jsx)(G, {}), (0, Chunk951288.jsx)(U, {}), (0, Chunk951288.jsx)(B, {}), (0, Chunk951288.jsx)(R, {}), (0, Chunk951288.jsx)(M, {}), (0, Chunk951288.jsx)(H, {})]
   })
 }

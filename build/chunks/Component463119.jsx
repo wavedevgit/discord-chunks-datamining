@@ -54,7 +54,7 @@ function L(e) {
   return e
 }
 
-function D(e, t) {
+function R(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -67,7 +67,7 @@ function D(e, t) {
   }), e
 }
 
-function R(e, t) {
+function D(e, t) {
   if (null == e) return {};
   var n, r, i = function(e, t) {
     if (null == e) return {};
@@ -113,12 +113,12 @@ let M = e => {
       onMouseEnter: u,
       onMouseLeave: p,
       children: f
-    } = e, g = R(e, ["selected", "locationState", "icon", "onClick", "collectibleShopTab", "onMouseEnter", "onMouseLeave", "children"]);
+    } = e, g = D(e, ["selected", "locationState", "icon", "onClick", "collectibleShopTab", "onMouseEnter", "onMouseLeave", "children"]);
     let _ = (0, l.JA)("shop"),
-      b = h.Z.HOME_PAGE_SHOP_TAB,
+      b = m.Z.HOME_PAGE_SHOP_TAB,
       {
         analyticsLocations: E
-      } = (0, m.ZP)(b),
+      } = (0, h.ZP)(b),
       [O, I] = i.useState(false),
       y = i.useCallback(() => {
         true !== s && s(), true !== o && (0, v.mK)({
@@ -132,7 +132,7 @@ let M = e => {
       }, [b, E, s, I, o]),
       C = x.Z5c.COLLECTIBLES_SHOP;
     return (0, r.jsxs)(r.Fragment, {
-      children: [O && (0, r.jsx)(k, {}), (0, r.jsx)(d.Qj, D(L({
+      children: [O && (0, r.jsx)(k, {}), (0, r.jsx)(d.Qj, R(L({
         selected: t,
         route: C,
         icon: null != a ? a : c.EOn,
@@ -146,7 +146,7 @@ let M = e => {
       }))]
     })
   },
-  G = e => (0, r.jsx)(U, D(L({}, e), {
+  G = e => (0, r.jsx)(U, R(L({}, e), {
     children: (0, r.jsx)(M, {})
   })),
   B = Chunk647438.memo(function(e) {
@@ -182,16 +182,16 @@ let M = e => {
   }),
   H = e => {
     let t, n;
-    var l, s, u, d, h, m, g, _, b, E, O, v, {
+    var l, s, u, d, m, h, g, _, b, E, O, v, {
         displayOptions: y
       } = e,
-      C = R(e, ["displayOptions"]);
+      C = D(e, ["displayOptions"]);
     let S = (0, a.e7)([f.Z], () => f.Z.useReducedMotion),
       [T, N] = i.useState(0),
       [j, P] = i.useState(false),
       x = (0, p.ZP)(),
       A = (0, o.wj)(x);
-    j ? A ? (t = null == (l = y.entryPointBackgroundAssets) ? true : l.srcDarkHovered, n = null == (u = y.entrypointBackgroundStyle) || null == (s = u.hovered) ? true : s.dark) : (t = null == (d = y.entryPointBackgroundAssets) ? true : d.srcLightHovered, n = null == (m = y.entrypointBackgroundStyle) || null == (h = m.hovered) ? true : h.light) : A ? (t = null == (g = y.entryPointBackgroundAssets) ? true : g.srcDark, n = null == (b = y.entrypointBackgroundStyle) || null == (_ = b.resting) ? true : _.dark) : (t = null == (E = y.entryPointBackgroundAssets) ? true : E.srcLight, n = null == (v = y.entrypointBackgroundStyle) || null == (O = v.resting) ? true : O.light);
+    j ? A ? (t = null == (l = y.entryPointBackgroundAssets) ? true : l.srcDarkHovered, n = null == (u = y.entrypointBackgroundStyle) || null == (s = u.hovered) ? true : s.dark) : (t = null == (d = y.entryPointBackgroundAssets) ? true : d.srcLightHovered, n = null == (h = y.entrypointBackgroundStyle) || null == (m = h.hovered) ? true : m.light) : A ? (t = null == (g = y.entryPointBackgroundAssets) ? true : g.srcDark, n = null == (b = y.entrypointBackgroundStyle) || null == (_ = b.resting) ? true : _.dark) : (t = null == (E = y.entryPointBackgroundAssets) ? true : E.srcLight, n = null == (v = y.entrypointBackgroundStyle) || null == (O = v.resting) ? true : O.light);
     let k = i.useCallback(e => {
         y.assetIds.length > 0 && N(e => (e + 1) % y.assetIds.length), P(true), null == e || e()
       }, [y.assetIds.length]),
@@ -212,7 +212,7 @@ let M = e => {
       allowOverflow: true,
       hideOnClick: false,
       "aria-label": "string" == typeof H ? H : Z.intl.string(Z.t.rSXaxY),
-      children: e => (0, r.jsxs)(U, D(L(D(L({
+      children: e => (0, r.jsxs)(U, R(L(R(L({
         className: null != y.entryPointClassName ? (0, I.l)(w, y.entryPointClassName) : true
       }, C), {
         icon: y.entryPointIcon
@@ -239,7 +239,7 @@ let M = e => {
   V = e => {
     var {
       displayOptions: t
-    } = e, n = R(e, ["displayOptions"]);
+    } = e, n = D(e, ["displayOptions"]);
     let l = i.useMemo(() => {
       var e;
       let n = null != t.emojiName ? null == (e = E.ZP.getByName(t.emojiName)) ? true : e.surrogates : null;
@@ -259,7 +259,7 @@ let M = e => {
       delay: 100,
       hideOnClick: false,
       "aria-label": t.title(),
-      children: e => (0, r.jsx)(U, D(L({}, n, e), {
+      children: e => (0, r.jsx)(U, R(L({}, n, e), {
         children: (0, r.jsx)(M, {
           color: t.badgeColor
         })
@@ -271,16 +271,16 @@ let M = e => {
         displayOptions: l,
         dismissContent: a
       } = e,
-      s = R(e, ["displayOptions", "dismissContent"]);
+      s = D(e, ["displayOptions", "dismissContent"]);
     let c = i.useRef(null),
       u = (0, p.ZP)(),
       d = (0, o.wj)(u),
       f = l.entryPointBackgroundAssets,
-      h = l.entrypointBackgroundStyle,
-      m = d ? null == f ? true : f.srcDarkHovered : null == f ? true : f.srcLightHovered,
-      g = d ? null == h || null == (t = h.hovered) ? true : t.dark : null == h || null == (n = h.hovered) ? true : n.light;
+      m = l.entrypointBackgroundStyle,
+      h = d ? null == f ? true : f.srcDarkHovered : null == f ? true : f.srcLightHovered,
+      g = d ? null == m || null == (t = m.hovered) ? true : t.dark : null == m || null == (n = m.hovered) ? true : n.light;
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsxs)(U, D(L({}, s), {
+      children: [(0, r.jsxs)(U, R(L({}, s), {
         onClick: () => a(A.L.TAKE_ACTION),
         listItemRef: c,
         children: [(0, r.jsx)("div", {
@@ -288,8 +288,8 @@ let M = e => {
           style: null != g ? {
             background: g
           } : true,
-          children: null != m && (0, r.jsx)("img", {
-            src: m,
+          children: null != h && (0, r.jsx)("img", {
+            src: h,
             className: w.marketingButtonBackgroundImage,
             alt: "",
             "aria-hidden": true
@@ -306,10 +306,10 @@ let M = e => {
   z = e => {
     var {
       dismissContent: t
-    } = e, n = R(e, ["dismissContent"]);
+    } = e, n = D(e, ["dismissContent"]);
     let l = i.useRef(null);
     return (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(U, D(L({}, n), {
+      children: [(0, r.jsx)(U, R(L({}, n), {
         onClick: () => t(A.L.TAKE_ACTION),
         listItemRef: l
       })), (0, r.jsx)(S.Z, {
@@ -330,7 +330,7 @@ let M = e => {
       dismissShopButtonDC: o
     } = (0, T.Z)(), u = (0, O.Y)({
       location: "CollectiblesShopButton"
-    }), d = !(0, c.$sL)() && u, [p, f] = (0, b.US)(d ? [s.z.WISHLIST_SHOP_BUTTON_POPOVER] : []), h = {
+    }), d = !(0, c.$sL)() && u, [p, f] = (0, b.US)(d ? [s.z.WISHLIST_SHOP_BUTTON_POPOVER] : []), m = {
       selected: t,
       locationState: i,
       onClick: () => {
@@ -340,23 +340,23 @@ let M = e => {
     };
     if (null != a) switch (a.type) {
       case j.k2.TOOLTIP:
-        return (0, r.jsx)(V, D(L({}, h), {
+        return (0, r.jsx)(V, R(L({}, m), {
           displayOptions: a
         }));
       case j.k2.COACHTIP:
-        return (0, r.jsx)(H, D(L({}, h), {
+        return (0, r.jsx)(H, R(L({}, m), {
           displayOptions: a
         }));
       case j.k2.BADGE:
-        return (0, r.jsx)(G, L({}, h));
+        return (0, r.jsx)(G, L({}, m));
       case j.k2.COACHMARK:
-        return (0, r.jsx)(F, D(L({
+        return (0, r.jsx)(F, R(L({
           dismissContent: o
-        }, h), {
+        }, m), {
           displayOptions: a
         }))
     }
-    return p === s.z.WISHLIST_SHOP_BUTTON_POPOVER ? (0, r.jsx)(z, D(L({}, h), {
+    return p === s.z.WISHLIST_SHOP_BUTTON_POPOVER ? (0, r.jsx)(z, R(L({}, m), {
       dismissContent: f
-    })) : (0, r.jsx)(U, L({}, h))
+    })) : (0, r.jsx)(U, L({}, m))
   }

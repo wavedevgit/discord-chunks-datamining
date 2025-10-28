@@ -20,11 +20,11 @@ let p = function(e) {
     className: i,
     color: p,
     animate: f,
-    gradientStopColor: h,
-    getHistoricalTotalBytes: m
-  } = e, g = (0, a.Sl)(p).hex, _ = null == (t = (0, a.Sl)(h)) ? true : t.hex;
+    gradientStopColor: m,
+    getHistoricalTotalBytes: h
+  } = e, g = (0, a.Sl)(p).hex, _ = null == (t = (0, a.Sl)(m)) ? true : t.hex;
   return (0, r.jsx)(c.Z, {
-    getHistoricalTotalBytes: m,
+    getHistoricalTotalBytes: h,
     children: (e, t, a) => {
       var c;
       return (0, r.jsx)("div", {

@@ -2,7 +2,7 @@
 /** chunk id: 267161, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
   default: () => k,
-  useAppSidebarState: () => R
+  useAppSidebarState: () => D
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -37,7 +37,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk950796 = require("./950796.jsx"),
   Chunk741764 = require("./741764.js"),
   Chunk82504 = require("./82504.js");
-let R = (0, Chunk191336.U)(() => ({
+let D = (0, Chunk191336.U)(() => ({
   isOpen: true
 }));
 
@@ -80,7 +80,7 @@ let k = Chunk647438.memo(function() {
   }, {
     autoTrackExposure: false
   }), {
-    enabled: R
+    enabled: D
   } = Chunk99977.c.useConfig({
     location: "AppTitleBar"
   }), k = (0, Chunk442837.e7)([Chunk906467.Z], () => Chunk906467.Z.isDeveloper), U = null !== module && exports === Chunk821020.u3.TITLE_BAR_LEFT, G = null === module;
@@ -127,7 +127,7 @@ let k = Chunk647438.memo(function() {
             focusSectionProps: "TITLEBAR_FAST_TRAVEL" === V ? e : true
           }),
           trailing: (0, r.jsxs)(r.Fragment, {
-            children: [R && (0, r.jsx)(p.Z, {
+            children: [D && (0, r.jsx)(p.Z, {
               className: F
             }), (0, r.jsx)(b.Z, {
               className: F

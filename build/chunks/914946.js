@@ -79,14 +79,14 @@ function w(e, t) {
   }), e
 }
 let L = null != (i = null == (r = Chunk591759.Z.toURLSafe(window.GLOBAL_ENV.API_ENDPOINT)) ? true : r.host) ? i : "localhost",
-  D = function() {
+  R = function() {
     let e = L.split(":")[0];
     if (!module.includes(".")) return module;
     let t = module.split("."),
       n = exports[exports.length - 1];
     return /^\d+$/.test(require) ? module : exports.slice(false).join(".")
   }(),
-  R = new RegExp("^".concat(Chunk226951.Z.escape("https://"), "(?:[a-z]+\\.)?(").concat(Chunk226951.Z.escape(D), "|discordapp.com|discord.com)$")),
+  D = new RegExp("^".concat(Chunk226951.Z.escape("https://"), "(?:[a-z]+\\.)?(").concat(Chunk226951.Z.escape(R), "|discordapp.com|discord.com)$")),
   M = +Chunk70956.Z.Millis.MINUTE,
   k = {};
 
@@ -106,7 +106,7 @@ function B(e) {
 function H(e, t) {
   let n = [],
     r = e.getGuildId();
-  return [A.d4z.GUILD_CATEGORY, ...m.tx].includes(e.type) || n.push(new Promise(t => {
+  return [A.d4z.GUILD_CATEGORY, ...h.tx].includes(e.type) || n.push(new Promise(t => {
     O.Z.whenReady(e.id, () => t()), c.Z.fetchMessages({
       channelId: e.id,
       limit: A.AQB
@@ -215,7 +215,7 @@ function W(e) {
   } catch (e) {
     returnfalse
   }
-  return window.location.hostname === t && "localhost" === t || null == e.match("staging") && !!(R.test(e) && R.test(n))
+  return window.location.hostname === t && "localhost" === t || null == e.match("staging") && !!(D.test(e) && D.test(n))
 }
 
 function q(e, t, n) {
@@ -265,10 +265,10 @@ async function X(e, t, n) {
       }, "Invalid Origin")
     } else {
       let e = await J(t);
-      if (r = h.ZP.createFromServer(e), !B(n, e.rpc_origins)) throw new j.Z({
+      if (r = m.ZP.createFromServer(e), !B(n, e.rpc_origins)) throw new j.Z({
         closeCode: A.$VG.INVALID_ORIGIN
       }, "Invalid Origin")
-    } null == r && (r = h.ZP.createFromServer(await J(t)));
+    } null == r && (r = m.ZP.createFromServer(await J(t)));
   let {
     id: i,
     name: l,

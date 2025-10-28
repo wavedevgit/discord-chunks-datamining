@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 289341, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 }), require("./35282.js"), require("./388685.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js");
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
@@ -16,15 +16,15 @@ var Chunk647438 = require("./647438.js"),
   Chunk649256 = require("./649256.js"),
   Chunk388032 = require("./388032.jsx");
 
-function m(e) {
+function h(e) {
   var t, n;
   let {
-    match: m
+    match: h
   } = e, g = null != (n = (0, u.DR)()) ? n : [], {
     analyticsLocations: _
   } = (0, o.ZP)([...g, s.Z.ACTIVITY_DETAIL_PAGE]), {
     applicationId: b
-  } = m.params, [E] = (0, c.Z)([b]), O = null == E || null == (t = E.bot) ? true : t.id, I = (0, i.e7)([d.default], () => d.default.getCurrentUser());
+  } = h.params, [E] = (0, c.Z)([b]), O = null == E || null == (t = E.bot) ? true : t.id, I = (0, i.e7)([d.default], () => d.default.getCurrentUser());
   return r.useEffect(() => {
     null != O && null != I && (async () => {
       try {
@@ -49,8 +49,8 @@ function m(e) {
   }, [_, b, O, I]), r.useEffect(() => {
     let e = setTimeout(() => {
       null == O && l.Z.show({
-        title: h.intl.string(h.t.PtobXW),
-        body: h.intl.string(h.t["IOy+I5"])
+        title: m.intl.string(m.t.PtobXW),
+        body: m.intl.string(m.t["IOy+I5"])
       })
     }, 5e3);
     return () => {

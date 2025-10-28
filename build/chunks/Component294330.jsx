@@ -35,7 +35,7 @@ function N(e) {
     guild: t,
     onClick: l,
     onView: s
-  } = e, [h, m] = i.useState(false), [E, N] = i.useState(false), [j, P] = i.useState(false), x = i.useRef(null), A = i.useCallback(async () => {
+  } = e, [m, h] = i.useState(false), [E, N] = i.useState(false), [j, P] = i.useState(false), x = i.useRef(null), A = i.useCallback(async () => {
     N(true);
     try {
       await l(t.id)
@@ -43,8 +43,8 @@ function N(e) {
       N(false)
     }
   }, [t.id, l]), Z = i.useCallback(e => {
-    e && !h && (m(true), null == s || s(t.id))
-  }, [t.id, h, s]), w = i.useCallback(e => {
+    e && !m && (h(true), null == s || s(t.id))
+  }, [t.id, m, s]), w = i.useCallback(e => {
     (0, u.jW)(e, async () => {
       let {
         default: e
@@ -82,21 +82,21 @@ function N(e) {
         }), i))
       }
     })
-  }, [t]), L = (0, d.ZP)(), D = t.features.has(I.GuildFeatures.HUB), R = i.useMemo(() => {
+  }, [t]), L = (0, d.ZP)(), R = t.features.has(I.GuildFeatures.HUB), D = i.useMemo(() => {
     let e = b.ZP.getGuildDiscoverySplashURL({
       id: t.id,
       splash: t.discoverySplash,
       size: 300 * (0, _.x_)()
     });
     if (null != e) return e;
-    if (D) return T;
+    if (R) return T;
     switch (L) {
       case I.BRd.DARK:
         return C;
       case I.BRd.LIGHT:
         return S
     }
-  }, [t.discoverySplash, t.id, D, L]), M = i.useMemo(() => b.ZP.getGuildIconURL({
+  }, [t.discoverySplash, t.id, R, L]), M = i.useMemo(() => b.ZP.getGuildIconURL({
     id: t.id,
     icon: t.icon,
     size: 48
@@ -112,7 +112,7 @@ function N(e) {
     }), (0, r.jsx)(o.$, {
       innerRef: x,
       onChange: Z,
-      active: !h,
+      active: !m,
       threshold: .55,
       children: (0, r.jsxs)(f.Z, {
         ref: x,
@@ -128,7 +128,7 @@ function N(e) {
               [y.loaded]: j
             }),
             children: (0, r.jsx)("img", {
-              src: R,
+              src: D,
               alt: "",
               className: y.bannerImage,
               onLoad: () => P(true)
@@ -228,13 +228,13 @@ function P(e) {
     index: n,
     onClick: l,
     onView: a
-  } = e, s = i.useRef(null == t), o = i.useCallback((e, t, n, i) => null == t.guildId ? (0, r.jsx)(m.Z, {
+  } = e, s = i.useRef(null == t), o = i.useCallback((e, t, n, i) => null == t.guildId ? (0, r.jsx)(h.Z, {
     state: n,
     cleanUp: i,
-    children: (0, r.jsx)(h.Z, {
+    children: (0, r.jsx)(m.Z, {
       className: y.placeholder
     })
-  }, e) : (0, r.jsx)(m.Z, {
+  }, e) : (0, r.jsx)(h.Z, {
     state: n,
     cleanUp: i,
     animate: s.current,

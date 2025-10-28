@@ -43,7 +43,7 @@ function L(e, t, n) {
   }) : e[t] = n, e
 }
 
-function D(e) {
+function R(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -56,7 +56,7 @@ function D(e) {
   return e
 }
 
-function R(e, t) {
+function D(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -99,9 +99,9 @@ let M = +Chunk70956.Z.Millis.DAY,
   ed = false,
   ep = false,
   ef = 0,
-  eh = 0;
+  em = 0;
 
-function em(e, t) {
+function eh(e, t) {
   if (Date.now() - B > 6 * y.Z.Millis.HOUR) {
     let n = new Set(e.map(e => e.id));
     return t.slice(0, 20).filter(e => n.has(e.id)).length >= 3
@@ -177,7 +177,7 @@ function eO(e) {
         for (let r of e)
           if (!(0, d.Z2)(r)) {
             if (null != r.channel_id) {
-              let e = m.Z.getChannel(r.channel_id);
+              let e = h.Z.getChannel(r.channel_id);
               if (!E.Z.can(Z.Plq.VIEW_CHANNEL, e)) continue
             }
             if ((0, d.BQ)(r, 2 * y.Z.Seconds.DAY) || (0, d.xt)(r)) {
@@ -301,7 +301,7 @@ function eN(e) {
     reactionType: l
   } = e, a = Y[n];
   if (null == a || a.type !== P.Ni.MESSAGE) returnfalse;
-  let s = h.default.getId() === r;
+  let s = m.default.getId() === r;
   "MESSAGE_REACTION_ADD" === t ? a.message = a.message.addReaction(i, s, e.colors, l) : a.message = a.message.removeReaction(i, s, l)
 }
 
@@ -314,16 +314,16 @@ function ej(e) {
   });
   let i = X,
     [l, a] = eI(H);
-  if (V = ev(l, t), X = $ ? i && V.length >= P.Lb : i && em(r, H), 0 === n.length && i === X) returnfalse;
+  if (V = ev(l, t), X = $ ? i && V.length >= P.Lb : i && eh(r, H), 0 === n.length && i === X) returnfalse;
   0 !== n.length && (er = r, ei = [...ei, ...n])
 }
 class eP extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
-    if (this.waitFor(h.default, m.Z, s.Z, u.Z, g.Z, d.ZP, _.Z, j.Z, x.Z, b.Z, E.Z, O.ZP, I.Z, v.ZP), null != e) {
+    if (this.waitFor(m.default, h.Z, s.Z, u.Z, g.Z, d.ZP, _.Z, j.Z, x.Z, b.Z, E.Z, O.ZP, I.Z, v.ZP), null != e) {
       var t, n, r, i, l, a, o;
       (U = null != (t = e.dehydratedItems) ? t : []).forEach(e => {
         z[e.id] = e
-      }), q = null != (n = e.customGuildScores) ? n : {}, K = null != (r = e.customChannelScoresByGuild) ? r : {}, en = null != (i = e.numOpens) ? i : 0, B = null != (l = e.lastOpened) ? l : 0, es = null != (a = e.lastJoinedRecommendedGuild) ? a : 0, eh = null != (o = e.lastTakenICYMISurvey) ? o : 0
+      }), q = null != (n = e.customGuildScores) ? n : {}, K = null != (r = e.customChannelScoresByGuild) ? r : {}, en = null != (i = e.numOpens) ? i : 0, B = null != (l = e.lastOpened) ? l : 0, es = null != (a = e.lastJoinedRecommendedGuild) ? a : 0, em = null != (o = e.lastTakenICYMISurvey) ? o : 0
     }
   }
   getVersion() {
@@ -418,7 +418,7 @@ class eP extends(r = Chunk442837.ZP.PersistedStore) {
     return ef
   }
   lastTakenICYMISurvey() {
-    return eh
+    return em
   }
   getIndexInHydratedFeed(e) {
     return "recommended_guilds" === e || "recommendedGuilds" === e ? [...er, ...ei].findIndex(e => e.type === P.Ni.RECOMMENDED_GUILDS) : [...er, ...ei].filter(e => null != Y[e.id]).findIndex(t => t.id === e)
@@ -431,7 +431,7 @@ class eP extends(r = Chunk442837.ZP.PersistedStore) {
       customChannelScoresByGuild: K,
       lastOpened: B,
       lastJoinedRecommendedGuild: es,
-      lastTakenICYMISurvey: eh
+      lastTakenICYMISurvey: em
     }
   }
 }
@@ -458,7 +458,7 @@ let ex = new eP(Chunk570140.Z, {
           channel_type: Z.d4z.GUILD_TEXT
         }
       };
-      if (z[t.message.id] = e, Y[t.message.id] = R(D({}, e), {
+      if (z[t.message.id] = e, Y[t.message.id] = D(R({}, e), {
           message: (0, p.e5)(t.message)
         }), null == G && null == F) {
         let [t, n] = eI(U = [e, ...U]);
@@ -495,7 +495,7 @@ let ex = new eP(Chunk570140.Z, {
       feed_item_ids: H.map(e => e.id)
     };
     let [a, s] = eI(H);
-    if (V = ev(a), !$ || 0 === Q || i) Q = 0, !ed && em(a, H) ? (X = true, J = true) : X = false, eO({
+    if (V = ev(a), !$ || 0 === Q || i) Q = 0, !ed && eh(a, H) ? (X = true, J = true) : X = false, eO({
       newUnread: a,
       newRead: s
     });
@@ -525,11 +525,11 @@ let ex = new eP(Chunk570140.Z, {
       startingIndex: c,
       endingIndex: u
     } = e;
-    ep = true, Y = D({}, Y);
+    ep = true, Y = R({}, Y);
     let d = t.reduce((e, t) => (e[t.message.id] = t, e), {}),
       p = n.reduce((e, t) => (e[t.id] = t, e), {}),
       f = r.reduce((e, t) => (e[t.id] = t, e), {}),
-      h = i.reduce((e, t) => (e[t.content_id] = t, e), {});
+      m = i.reduce((e, t) => (e[t.content_id] = t, e), {});
     l.forEach(e => {
       let t = d[e.message_id];
       if (null == t) {
@@ -552,7 +552,7 @@ let ex = new eP(Chunk570140.Z, {
       let r = b.Z.getMessage(t.channel_id, t.message.id);
       if (null != r) {
         let e = (0, A.IC)(t, n);
-        Y[t.message.id] = R(D({}, e), {
+        Y[t.message.id] = D(R({}, e), {
           message: r
         })
       } else Y[t.message.id] = (0, A.IC)(t, n)
@@ -567,7 +567,7 @@ let ex = new eP(Chunk570140.Z, {
         W[e.summary_id] = true;
         return
       }
-      Y[t.id] = R(D({}, n), {
+      Y[t.id] = D(R({}, n), {
         summary: (0, A.wV)(t, n.data.guild_id)
       })
     }), s.forEach(e => {
@@ -581,11 +581,11 @@ let ex = new eP(Chunk570140.Z, {
         W[e.content_id] = true;
         return
       }
-      Y[t.id] = R(D({}, n), {
+      Y[t.id] = D(R({}, n), {
         activity: t
       })
     }), o.forEach(e => {
-      let t = h[e.content_id];
+      let t = m[e.content_id];
       if (null == t) {
         W[e.content_id] = true;
         return
@@ -595,7 +595,7 @@ let ex = new eP(Chunk570140.Z, {
         W[e.content_id] = true;
         return
       }
-      Y[t.content_id] = R(D({}, n), {
+      Y[t.content_id] = D(R({}, n), {
         candidate: (0, A.NV)(t)
       })
     }), c === el && (el = u), eu.delete((0, A.y_)(c, u))
@@ -606,7 +606,7 @@ let ex = new eP(Chunk570140.Z, {
     } = e;
     for (let e of t)
       for (let t of (q[e.guild_id] = e.guild_score, eT(e.guild_id, e.guild_score), Object.keys(e.custom_channel_scores))) null == K[e.guild_id] && (K[e.guild_id] = {}), K[e.guild_id][t] = e.custom_channel_scores[t], eC(t, e.custom_channel_scores[t]);
-    q = D({}, q), K = D({}, K)
+    q = R({}, q), K = R({}, K)
   },
   LOAD_ICYMI_RECOMMENDED_GUILDS: function(e) {
     let {
@@ -620,12 +620,12 @@ let ex = new eP(Chunk570140.Z, {
       guildId: n,
       guildScore: r
     } = e;
-    null != r && (q[n] = r, eT(n, r), q = D({}, q)), null == t || t.forEach(e => {
+    null != r && (q[n] = r, eT(n, r), q = R({}, q)), null == t || t.forEach(e => {
       let {
         channelId: t,
         score: r
       } = e;
-      null == K[n] && (K[n] = {}), K[n][t] = r, eC(t, r), K = D({}, K)
+      null == K[n] && (K[n] = {}), K[n][t] = r, eC(t, r), K = R({}, K)
     })
   },
   RELOAD_ICYMI: function() {
@@ -645,7 +645,7 @@ let ex = new eP(Chunk570140.Z, {
       reactions: n
     } = e, r = Y[t];
     if (null == r || r.type !== P.Ni.MESSAGE) returnfalse;
-    let i = h.default.getId();
+    let i = m.default.getId();
     r.message = r.message.addReactionBatch(n, i)
   },
   MESSAGE_REACTION_REMOVE: eN,
@@ -701,7 +701,7 @@ let ex = new eP(Chunk570140.Z, {
       forICYMI: i
     } = e;
     if (!i) returnfalse;
-    let l = m.Z.getChannel(n);
+    let l = h.Z.getChannel(n);
     if (null == l || l.type !== Z.d4z.GUILD_TEXT) returnfalse;
     let a = null == (t = K[l.guild_id]) ? true : t[n];
     if (null != a && (0, A.jv)(a) === A.aL.MUTED || v.ZP.isChannelMuted(l.guild_id, n) || 0 === r.length) returnfalse;
@@ -723,7 +723,7 @@ let ex = new eP(Chunk570140.Z, {
         }
       };
     z[c] = u;
-    let d = R(D({}, u), {
+    let d = D(R({}, u), {
       summary: {
         id: c,
         topic: "",
@@ -775,6 +775,6 @@ let ex = new eP(Chunk570140.Z, {
     let {
       takenAt: t
     } = e;
-    eh = t
+    em = t
   }
 })

@@ -23,7 +23,7 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -36,7 +36,7 @@ function h(e) {
   return e
 }
 
-function m(e, t) {
+function h(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -88,7 +88,7 @@ class g extends Chunk647438.PureComponent {
           left: false,
           right: false
         },
-        children: (0, r.jsx)(s.Z.div, m(h({
+        children: (0, r.jsx)(s.Z.div, h(m({
           className: a()(g, p.peopleListItem, null != _ ? {
             [_]: f || i
           } : null, {
@@ -136,7 +136,7 @@ class g extends Chunk647438.PureComponent {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("69220")]).then(n.bind(n, 881351));
-        return n => (0, r.jsx)(e, m(h({}, n), {
+        return n => (0, r.jsx)(e, h(m({}, n), {
           user: t
         }))
       }, {

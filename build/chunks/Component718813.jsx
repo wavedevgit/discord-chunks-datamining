@@ -96,8 +96,8 @@ let N = (0, Chunk663993.Un)({
     [Chunk981631.S9g.CHECKPOINT]: () => (0, Chunk951288.jsx)(P, {})
   },
   L = "SHOWN",
-  D = "HIDDEN",
-  R = {
+  R = "HIDDEN",
+  D = {
     friction: 10,
     tension: 100
   };
@@ -119,8 +119,8 @@ class k extends(r = Chunk647438.PureComponent) {
       mode: n
     } = e;
     if (t !== n) {
-      if (t === L && n === D) return this.animateIn();
-      if (t === D && n === L) return this.animateUnder()
+      if (t === L && n === R) return this.animateIn();
+      if (t === R && n === L) return this.animateUnder()
     }
   }
   componentWillEnter(e) {
@@ -145,9 +145,9 @@ class k extends(r = Chunk647438.PureComponent) {
     } = this.state;
     o.Z.parallel([o.Z.spring(t, S({
       toValue: 1
-    }, R)), o.Z.spring(n, S({
+    }, D)), o.Z.spring(n, S({
       toValue: 1
-    }, R))]).start(() => this.animateComplete(e))
+    }, D))]).start(() => this.animateComplete(e))
   }
   animateOut(e) {
     c.ZP.Emitter.pause(500);
@@ -157,9 +157,9 @@ class k extends(r = Chunk647438.PureComponent) {
     } = this.state;
     E.S.dispatch(O.CkL.LAYER_POP_START), o.Z.parallel([o.Z.spring(t, S({
       toValue: 0
-    }, R)), o.Z.spring(n, S({
+    }, D)), o.Z.spring(n, S({
       toValue: 1.1
-    }, R))]).start(() => {
+    }, D))]).start(() => {
       e(), E.S.dispatch(O.CkL.LAYER_POP_COMPLETE)
     })
   }
@@ -171,9 +171,9 @@ class k extends(r = Chunk647438.PureComponent) {
     } = this.state;
     Chunk748780.Z.parallel([Chunk748780.Z.spring(module, S({
       toValue: 0
-    }, R)), Chunk748780.Z.spring(exports, S({
+    }, D)), Chunk748780.Z.spring(exports, S({
       toValue: .93
-    }, R))]).start(() => this.animateComplete())
+    }, D))]).start(() => this.animateComplete())
   }
   animateComplete(e) {
     this.setState({
@@ -202,7 +202,7 @@ class k extends(r = Chunk647438.PureComponent) {
         for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
       }
       return i
-    }(exports, ["name", "mode", "children", "baseLayer"]), u = r === D, p = module || Chunk215569 ? this.getAnimatedStyle() : null, f = !Chunk215569 && !Chunk120356, h = (0, Chunk951288.jsx)(Chunk748780.Z.div, T(S({
+    }(exports, ["name", "mode", "children", "baseLayer"]), u = r === R, p = module || Chunk215569 ? this.getAnimatedStyle() : null, f = !Chunk215569 && !Chunk120356, m = (0, Chunk951288.jsx)(Chunk748780.Z.div, T(S({
       ref: e => this.containerRef.current = null != e ? e.componentRef : true,
       "data-layer": null != require ? require : "base",
       "aria-hidden": Chunk215569,
@@ -227,7 +227,7 @@ class k extends(r = Chunk647438.PureComponent) {
       className: s()(Chunk256076.layer, {
         [Chunk256076.baseLayer]: Chunk120356,
         [Chunk256076.animating]: module,
-        "stop-animations": r === D
+        "stop-animations": r === R
       }),
       style: Chunk37234
     }, Chunk442837), {
@@ -260,7 +260,7 @@ class k extends(r = Chunk647438.PureComponent) {
     super(e), C(this, "containerRef", l.createRef());
     let t = 1,
       n = 1;
-    e.mode === D && (t = .93, n = 0), this.state = {
+    e.mode === R && (t = .93, n = 0), this.state = {
       animating: false,
       scale: new o.Z.Value(t),
       opacity: new o.Z.Value(n),
@@ -287,7 +287,7 @@ class U extends Chunk647438.PureComponent {
       length: r
     } = exports, l = [];
     return Chunk647438.push((0, Chunk951288.jsx)(k, {
-      mode: 0 !== r || require ? D : L,
+      mode: 0 !== r || require ? R : L,
       baseLayer: true,
       children: module
     }, "layer-base")), exports.forEach((e, t) => l.push(this.renderComponent(e, t, r))), Chunk647438
@@ -296,7 +296,7 @@ class U extends Chunk647438.PureComponent {
     let r;
     return r = "string" == typeof e ? w[e]() : (0, i.jsx)(e, {}), (0, i.jsxs)(k, {
       name: "string" == typeof e ? e : true,
-      mode: t === n - 1 ? L : D,
+      mode: t === n - 1 ? L : R,
       children: [(0, i.jsx)(M, {}), r]
     }, "layer-".concat(t))
   }

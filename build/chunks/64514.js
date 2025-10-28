@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 64514, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./388685.js");
 var Chunk846519 = require("./846519.js"),
   Chunk570140 = require("./570140.js"),
@@ -88,4 +88,4 @@ class f extends Chunk317770.Z {
     })
   }
 }
-let h = new f
+let m = new f

@@ -58,18 +58,18 @@ let _ = function(e) {
   return (0, r.jsxs)(u.Z, {
     onScroll: t,
     children: [(0, r.jsx)(o.Z, {
-      title: h.intl.string(h.t.X5xPlb),
-      description: h.intl.string(h.t["F/IQCI"]),
+      title: m.intl.string(m.t.X5xPlb),
+      description: m.intl.string(m.t["F/IQCI"]),
       children: (0, r.jsx)(s.Z, {})
     }), (0, r.jsxs)(c.Z, {
       children: [n.length > 0 ? (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(l.Heading, {
-          className: m.sectionTitle,
+          className: h.sectionTitle,
           variant: "heading-lg/semibold",
           color: "header-primary",
-          children: h.intl.string(h.t["2DfZIQ"])
+          children: m.intl.string(m.t["2DfZIQ"])
         }), (0, r.jsxs)("div", {
-          className: m.content,
+          className: h.content,
           children: [_.map(e => (0, r.jsx)(f.VD, {
             guild: e,
             onClick: () => a.Z.transitionToGuildSync(e.id)
@@ -78,7 +78,7 @@ let _ = function(e) {
           })]
         })]
       }) : (0, r.jsx)("div", {
-        className: m.content,
+        className: h.content,
         children: (0, r.jsx)(d.Z, {
           hasHub: false
         })
@@ -90,12 +90,12 @@ let _ = function(e) {
           className: g.text,
           variant: "text-sm/medium",
           color: "header-secondary",
-          children: [h.intl.string(h.t.O1k9XX), " "]
+          children: [m.intl.string(m.t.O1k9XX), " "]
         }), (0, r.jsx)(l.Text, {
           className: g.text,
           variant: "text-sm/medium",
           color: "header-secondary",
-          children: h.intl.string(h.t.FV5dvh)
+          children: m.intl.string(m.t.FV5dvh)
         })]
       })]
     })]

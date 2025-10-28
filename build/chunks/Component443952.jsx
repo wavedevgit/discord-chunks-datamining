@@ -46,11 +46,11 @@ async function U(e, t, n, r) {
   if (null == l || null == l.secrets || !(0, A.t9)(r, l.party, l.secrets)) throw new x.Z({
     errorCode: M.lTL.NO_ELIGIBLE_ACTIVITY
   }, "No eligible activity for application. Ensure an activity includes a party and appropriate secret.");
-  let a = (0, m.Z)(l, y.Z);
+  let a = (0, h.Z)(l, y.Z);
   if (a) {
     let {
       lock: t
-    } = (0, D.jU)(e);
+    } = (0, R.jU)(e);
     return (0, o.h7)(l, a).then(() => {
       throw t(), new x.Z({
         errorCode: M.lTL.NO_ELIGIBLE_ACTIVITY
@@ -150,7 +150,7 @@ let G = {
           message_id: a,
           application_id: s
         }
-      } = e, o = t.transport === R.He.IPC && null != s ? s : t.application.id;
+      } = e, o = t.transport === D.He.IPC && null != s ? s : t.application.id;
       if (null == o) throw new x.Z({
         errorCode: M.lTL.INVALID_COMMAND
       }, "No application.");
@@ -183,7 +183,7 @@ let G = {
         channel: l,
         guild: s,
         frame: c
-      } = (0, L.T)(), u = (0, h.ZP)({
+      } = (0, L.T)(), u = (0, m.ZP)({
         application: t.application,
         channelId: null == l ? true : l.id
       }), d = null != u ? E.Z.getWindow(u) : true;
@@ -377,7 +377,7 @@ let G = {
       }
       return new Promise(e => {
         let t = false,
-          r = (0, D.jU)(d),
+          r = (0, R.jU)(d),
           l = a.z1l;
         (E.Z.getWindowOpen(M.KJ3.ACTIVITY_POPOUT) || r.context === M.IlC.POPOUT) && (l = a.u1M), (0, _.M)({
           applicationId: p,

@@ -86,10 +86,10 @@ let G = e => {
 
 function V(e, t) {
   switch (t) {
-    case R.f07.POST_INSTALL_SCRIPTS:
-    case R.f07.PLANNING:
-    case R.f07.FINALIZING:
-    case R.f07.ALLOCATING_DISK:
+    case D.f07.POST_INSTALL_SCRIPTS:
+    case D.f07.PLANNING:
+    case D.f07.FINALIZING:
+    case D.f07.ALLOCATING_DISK:
       return "".concat(e);
     default:
       return (0, Z.BU)(e, {
@@ -199,47 +199,47 @@ function Y(e) {
     secondsRemaining: a
   } = e, s = V(l, n), o = V(i, n);
   switch (n) {
-    case R.f07.QUEUED:
+    case D.f07.QUEUED:
       if (0 === i) return M.intl.string(M.t.RpfBqd);
       return M.intl.formatToPlainString(M.t.uNjCXZ, {
         percent: r,
         progress: o,
         total: s
       });
-    case R.f07.PLANNING:
+    case D.f07.PLANNING:
       return M.intl.formatToPlainString(M.t.sfuCUb, {
         percent: r
       });
-    case R.f07.ALLOCATING_DISK:
+    case D.f07.ALLOCATING_DISK:
       return M.intl.formatToPlainString(M.t.XigoJ9, {
         percent: r
       });
-    case R.f07.PATCHING:
+    case D.f07.PATCHING:
       return z(a, t, r, o, s);
-    case R.f07.FINALIZING:
+    case D.f07.FINALIZING:
       return M.intl.formatToPlainString(M.t["6PHDUN"], {
         percent: r
       });
-    case R.f07.PAUSING:
+    case D.f07.PAUSING:
       return M.intl.formatToPlainString(M.t.vjxhWo, {
         percent: r,
         progress: o,
         total: s
       });
-    case R.f07.VERIFYING:
+    case D.f07.VERIFYING:
       return M.intl.formatToPlainString(M.t.bbilvq, {
         percent: r,
         progress: o,
         total: s
       });
-    case R.f07.POST_INSTALL_SCRIPTS:
+    case D.f07.POST_INSTALL_SCRIPTS:
       return M.intl.formatToPlainString(M.t.c5vRUo, {
         percent: r,
         progress: o,
         total: s
       });
-    case R.f07.REPAIRING:
-      if (t === R.vxO.REPAIRING) return z(a, t, r, o, s);
+    case D.f07.REPAIRING:
+      if (t === D.vxO.REPAIRING) return z(a, t, r, o, s);
       return M.intl.formatToPlainString(M.t.OCzETT, {
         percent: r,
         progress: o,
@@ -264,9 +264,9 @@ class W extends Chunk647438.PureComponent {
     } = e;
     return (0, r.jsxs)(y.Z, {
       direction: y.Z.Direction.VERTICAL,
-      children: [(0, r.jsx)(h.Exd, {
+      children: [(0, r.jsx)(m.Exd, {
         percent: t,
-        size: h.Exd.Sizes.SMALL,
+        size: m.Exd.Sizes.SMALL,
         foregroundColor: (0, v.Lq)(n),
         foregroundGradientColor: null != i ? [(0, v.Lq)(i[0]), (0, v.Lq)(i[1])] : true,
         animate: this.isFocused
@@ -283,9 +283,9 @@ class W extends Chunk647438.PureComponent {
     } = e;
     return (0, r.jsxs)(y.Z, {
       direction: y.Z.Direction.VERTICAL,
-      children: [(0, r.jsx)(h.yGy, {
+      children: [(0, r.jsx)(m.yGy, {
         percents: t,
-        size: h.yGy.Sizes.SMALL,
+        size: m.yGy.Sizes.SMALL,
         foregroundColors: B,
         animate: this.isFocused
       }), (0, r.jsx)("div", {
@@ -473,7 +473,7 @@ let q = () => (0, Chunk951288.jsx)(H, {
       item: t
     } = e;
     return (0, r.jsx)(H, {
-      icon: h.wj7,
+      icon: m.wj7,
       tooltip: M.intl.string(M.t["Eqb+LN"]),
       onClick: () => _.A1(t.applicationId, t.branchId)
     })
@@ -483,7 +483,7 @@ let q = () => (0, Chunk951288.jsx)(H, {
       item: t
     } = e;
     return (0, r.jsx)(H, {
-      icon: h.Dio,
+      icon: m.Dio,
       tooltip: M.intl.string(M.t["0lFmC9"]),
       onClick: () => _.al(t.applicationId, t.branchId)
     })
@@ -520,8 +520,8 @@ let q = () => (0, Chunk951288.jsx)(H, {
         libraryApplication: e.libraryApplication,
         size: f.zx.Sizes.SMALL,
         className: k.gameActionButton,
-        source: R.Sbl.APPLICATION_LIBRARY_UPDATES
-      }) : null : null != e.state ? e.state.type !== R.vxO.UP_TO_DATE && (n = e.index > 0 ? (0, r.jsx)(Q, {
+        source: D.Sbl.APPLICATION_LIBRARY_UPDATES
+      }) : null : null != e.state ? e.state.type !== D.vxO.UP_TO_DATE && (n = e.index > 0 ? (0, r.jsx)(Q, {
         item: e
       }) : null != t && t.paused ? (0, r.jsx)(q, {}) : (0, r.jsx)(K, {
         item: e
@@ -547,7 +547,7 @@ class $ extends Chunk647438.PureComponent {
       applications: e
     } = this.props;
     module.forEach(e => {
-      e.finished && m.Z.wait(() => {
+      e.finished && h.Z.wait(() => {
         _.wi(e.applicationId, e.branchId)
       })
     }), window.removeEventListener("resize", this.throttledUpdateHeight), this.isUnmounted = true

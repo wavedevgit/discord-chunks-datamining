@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 450233, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  G: () => h,
+  G: () => m,
   Z: () => g
 });
 var r, i, l, a, Chunk951288 = require("./951288.js"),
@@ -11,8 +11,8 @@ var r, i, l, a, Chunk951288 = require("./951288.js"),
   Chunk16084 = require("./16084.js"),
   Chunk855775 = require("./855775.js"),
   Chunk388032 = require("./388032.jsx"),
-  h = ((r = {}).SHORT = "SHORT", r.LONG = "LONG", r);
-class m extends(a = Chunk647438.PureComponent) {
+  m = ((r = {}).SHORT = "SHORT", r.LONG = "LONG", r);
+class h extends(a = Chunk647438.PureComponent) {
   getText(e, t) {
     if (429 === e.status) switch (t) {
       case "SHORT":
@@ -44,12 +44,12 @@ class m extends(a = Chunk647438.PureComponent) {
 }
 l = {
   messageStyle: "LONG"
-}, (i = "defaultProps") in m ? Object.defineProperty(m, i, {
+}, (i = "defaultProps") in h ? Object.defineProperty(h, i, {
   value: l,
   enumerable: true,
   configurable: true,
   writable: true
-}) : m[i] = l;
+}) : h[i] = l;
 let g = Chunk442837.ZP.connectStores([Chunk855775.Z], () => ({
   purchaseError: Chunk855775.Z.error
-}))(m)
+}))(h)

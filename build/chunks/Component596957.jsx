@@ -98,12 +98,12 @@ let L = function(e) {
   } = (0, d.ZP)(u.Z.FRIENDS_LIST), {
     rows: s,
     section: A
-  } = (0, l.cj)([m.ZP], () => m.ZP.getState()), L = (0, l.e7)([g.Z], () => g.Z.isFocused()), {
-    relationshipCount: D,
-    hasBlockedOrIgnored: R
-  } = (0, l.cj)([h.Z], () => ({
-    relationshipCount: h.Z.getRelationshipCount(),
-    hasBlockedOrIgnored: h.Z.getBlockedOrIgnoredIDs().length > 0
+  } = (0, l.cj)([h.ZP], () => h.ZP.getState()), L = (0, l.e7)([g.Z], () => g.Z.isFocused()), {
+    relationshipCount: R,
+    hasBlockedOrIgnored: D
+  } = (0, l.cj)([m.Z], () => ({
+    relationshipCount: m.Z.getRelationshipCount(),
+    hasBlockedOrIgnored: m.Z.getBlockedOrIgnoredIDs().length > 0
   })), [M, k] = i.useState(() => {
     let e = {};
     for (let t of Object.values(S.pJs)) e[t] = "";
@@ -235,7 +235,7 @@ let L = function(e) {
     value: n,
     children: (0, r.jsxs)(c.Z, {
       section: S.jXE.FRIENDS_LIST,
-      children: [R && (0, r.jsx)(I.R, {}), (0, r.jsx)("div", {
+      children: [D && (0, r.jsx)(I.R, {}), (0, r.jsx)("div", {
         className: N.searchBar,
         children: (0, r.jsx)(a.E1j, {
           query: M[A],
@@ -247,7 +247,7 @@ let L = function(e) {
         renderRow: U,
         renderSection: Q,
         sectionFilter: A,
-        isVirtualizedList: D >= C.nG,
+        isVirtualizedList: R >= C.nG,
         hasSearchQuery: J,
         footer: H && !X ? (0, r.jsx)("div", {
           className: N.viewSpamButton,

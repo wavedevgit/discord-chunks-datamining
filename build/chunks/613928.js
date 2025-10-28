@@ -2,11 +2,11 @@
 /** chunk id: 613928, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   $U: () => Z,
-  FJ: () => R,
+  FJ: () => D,
   HG: () => k,
   IC: () => A,
   NV: () => x,
-  Rm: () => D,
+  Rm: () => R,
   _e: () => C,
   aL: () => y,
   eO: () => M,
@@ -57,7 +57,7 @@ async function T(e, t, n) {
   let r = _.Z.getHydratedItems(),
     i = e.slice(t, n);
   if (0 === i.length) return;
-  h.Z.loadHydratedAttempt(v(t, n));
+  m.Z.loadHydratedAttempt(v(t, n));
   let l = i.filter(e => null == r[e.id]),
     a = l.filter(e => e.type === b.Ni.MESSAGE).map(e => ({
       channel_id: e.data.channel_id,
@@ -94,7 +94,7 @@ async function T(e, t, n) {
       guild_id: e.data.guild_id,
       channel_id: e.data.channel_id
     }));
-  await h.Z.fetchHydrated(t, n, {
+  await m.Z.fetchHydrated(t, n, {
     messageItems: [...a, ...s],
     summaryItems: o,
     activityItems: c,
@@ -232,7 +232,7 @@ function Z(e, t) {
 }
 
 function w(e) {
-  return (0, m.VZ)(e)
+  return (0, h.VZ)(e)
 }
 
 function L(e) {
@@ -261,14 +261,14 @@ function L(e) {
   }
 }
 
-function D(e, t, n) {
+function R(e, t, n) {
   let r = E.Z.getReadTimestamp(e);
   null == r && (r = null == n ? true : n[e]);
   let i = E.Z.getReadTimestamp(t);
   return (null == i && (i = null == n ? true : n[t]), null == r && null == i) ? 0 : null == r ? false : null == i ? 1 : i - r
 }
 
-function R(e) {
+function D(e) {
   let t = [..._.Z.getUnreadDisplayItems(), ..._.Z.getReadDisplayItems()],
     n = null;
   for (let t = e.length - 1; t >= 0; t--) {
@@ -354,8 +354,8 @@ async function U(e) {
       object: e,
       objectType: r.ACK_SEMI_AUTOMATIC
     }, true, true, f.default.atPreviousMillisecond(n.data.message_id))
-  }), await h.Z.clearReadStates(), await h.Z.fetchDehydrated({
+  }), await m.Z.clearReadStates(), await m.Z.fetchDehydrated({
     isReloading: true,
     forceRefresh: true
-  }), await h.Z.reloadICYMITab(), await h.Z.getGuildChannelScores(), h.Z.getRecommendedGuilds()
+  }), await m.Z.reloadICYMITab(), await m.Z.getGuildChannelScores(), m.Z.getRecommendedGuilds()
 }

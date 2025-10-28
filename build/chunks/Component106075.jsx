@@ -48,17 +48,17 @@ function C() {
     } = (0, Chunk28494.H)({
       loadId: module.current
     }),
-    D = Chunk859921.Z.useField("searchBarState"),
+    R = Chunk859921.Z.useField("searchBarState"),
     {
-      onTabsAvailableWidthChange: R,
+      onTabsAvailableWidthChange: D,
       onCollapsedSearchBarClick: M,
       onSearchBarBlur: k,
       tabsClassName: U
     } = (0, Chunk88693.U)({
       isSearchBarVisible: P,
       isSearchBarEmpty: "" === x.trim(),
-      searchBarState: D,
-      setSearchBarState: e => h.Z.setState({
+      searchBarState: R,
+      setSearchBarState: e => m.Z.setState({
         searchBarState: e
       })
     }),
@@ -104,7 +104,7 @@ function C() {
         tabs: H,
         selectedTab: L ? null : T,
         onTabSelect: B,
-        onAvailableWidthChange: R
+        onAvailableWidthChange: D
       }), L && (0, Chunk951288.jsx)(Chunk481060.Heading, {
         variant: "heading-lg/semibold",
         color: "header-primary",
@@ -119,7 +119,7 @@ function C() {
         onClear: Z,
         onSubmit: w,
         onCollapsedClick: M,
-        state: L ? Chunk49898.GlobalDiscoverySearchBarState.DEFAULT : D,
+        state: L ? Chunk49898.GlobalDiscoverySearchBarState.DEFAULT : R,
         onBlur: k
       })]
     }), L ? (0, Chunk951288.jsx)(Chunk273596.Z, {

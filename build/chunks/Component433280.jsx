@@ -37,14 +37,14 @@ function g(e) {
     }
   }), (0, r.jsx)(a.J2, {
     targetElementRef: g,
-    title: h.intl.string(h.t.C0m4rQ),
-    body: h.intl.string(h.t.zOHfEX),
+    title: m.intl.string(m.t.C0m4rQ),
+    body: m.intl.string(m.t.zOHfEX),
     graphic: {
       type: "image",
-      src: m
+      src: h
     },
     actions: [{
-      text: h.intl.string(h.t.OgQQbG),
+      text: m.intl.string(m.t.OgQQbG),
       variant: "primary",
       onClick: () => {
         o.Z.open(t, p.pNK.ROLE_SUBSCRIPTIONS)

@@ -60,17 +60,17 @@ function P(e) {
     searchCategoryId: x
   } = (0, _.f)({
     loadId: t
-  }), A = 0 === o.length && !f, Z = i.useContext(d.AnalyticsContext), [w, L] = i.useState((0, g.PM)()), [D, R] = i.useState(true), M = i.useRef(D), [k, U] = i.useState(3), G = i.useRef(k), B = i.useRef(null), H = i.useCallback(e => {
+  }), A = 0 === o.length && !f, Z = i.useContext(d.AnalyticsContext), [w, L] = i.useState((0, g.PM)()), [R, D] = i.useState(true), M = i.useRef(R), [k, U] = i.useState(3), G = i.useRef(k), B = i.useRef(null), H = i.useCallback(e => {
     if (null != e && !A && !f) 336 * (o.length / k) <= e.height && P()
   }, [A, f, o.length, k, P]), V = i.useCallback(e => {
     let t = e.contentRect;
     if (null == t) return;
     let n = t.width;
-    n < 1024 && M.current ? (M.current = false, R(false)) : n > 1024 && !M.current && (M.current = true, R(true));
+    n < 1024 && M.current ? (M.current = false, D(false)) : n > 1024 && !M.current && (M.current = true, D(true));
     let r = 1;
-    for (n -= 450 * !!D, n -= 280; n > 0;) n -= 264, r += 1;
+    for (n -= 450 * !!R, n -= 280; n > 0;) n -= 264, r += 1;
     r !== G.current && (G.current = r, U(r)), H(t)
-  }, [D, H]), F = (0, u.y)(V, [D, H]);
+  }, [R, H]), F = (0, u.y)(V, [R, H]);
   i.useEffect(() => {
     L((0, g.PM)())
   }, [y]), i.useEffect(() => {
@@ -78,7 +78,7 @@ function P(e) {
       loadId: t,
       searchId: w,
       query: y,
-      guildResults: o.map(h.Z.getGuild).filter(p.lm),
+      guildResults: o.map(m.Z.getGuild).filter(p.lm),
       analyticsContext: Z,
       categoryId: x
     })
@@ -94,9 +94,9 @@ function P(e) {
               width: n.width - 16
             },
             className: a()(C.heading, {
-              [C.headingTopbar]: !D
+              [C.headingTopbar]: !R
             }),
-            children: [!D && (0, r.jsxs)("div", {
+            children: [!R && (0, r.jsxs)("div", {
               className: C.headingFilters,
               children: [(0, r.jsx)(E.Z, {
                 loadId: t
@@ -110,22 +110,22 @@ function P(e) {
         case 1:
           return (0, r.jsx)(c.$jN, {
             className: a()(C.spinner, {
-              [C.spinnerWithSidebar]: D
+              [C.spinnerWithSidebar]: R
             })
           }, i)
       }
-    }, [A, D, t]),
+    }, [A, R, t]),
     q = i.useCallback(e => {
       switch (e) {
         case 0:
-          let t = D ? 16 : 50;
+          let t = R ? 16 : 50;
           return A ? t + 448 : t;
         case 1:
           return 120;
         default:
           throw Error("[getSectionHeight] Failed for section: ".concat(e))
       }
-    }, [A, D]),
+    }, [A, R]),
     K = i.useCallback((e, t) => {
       switch (e) {
         case 0:
@@ -150,7 +150,7 @@ function P(e) {
       var i, a;
       await l(e, t, n, r);
       let s = null == (a = B.current) || null == (i = a.getScrollerState()) ? true : i.scrollTop;
-      null != s && m.Z.setState({
+      null != s && h.Z.setState({
         scrollPosition: s
       })
     }, [l]),
@@ -173,19 +173,19 @@ function P(e) {
     return () => {
       var t;
       let n = null == e || null == (t = e.getScrollerState()) ? true : t.scrollTop;
-      null != n && m.Z.setState({
+      null != n && h.Z.setState({
         scrollPosition: n
       })
     }
   }, []), i.useLayoutEffect(() => {
-    let e = m.Z.getField("scrollPosition");
+    let e = h.Z.getField("scrollPosition");
     null != e && setTimeout(() => {
       var t;
       null == (t = B.current) || t.scrollTo({
         to: e,
         animate: false,
         callback: () => {
-          m.Z.setState({
+          h.Z.setState({
             scrollPosition: null
           })
         }
@@ -201,7 +201,7 @@ function P(e) {
     }, 100, {
       leading: true
     }), [P]),
-    ee = D ? S : T;
+    ee = R ? S : T;
   return (0, r.jsx)("div", {
     className: C.container,
     ref: F,
@@ -219,7 +219,7 @@ function P(e) {
       getItemHeight: Q,
       chunkSize: 24,
       onScroll: $,
-      renderAccessory: e => D ? (0, r.jsx)("div", {
+      renderAccessory: e => R ? (0, r.jsx)("div", {
         className: C.sidebar,
         style: {
           height: e

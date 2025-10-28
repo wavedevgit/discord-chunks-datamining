@@ -41,7 +41,7 @@ function N(e) {
     setIsHovered: x,
     onMouseEnter: A,
     onMouseLeave: Z
-  } = (0, h.Z)(200, 300), {
+  } = (0, m.Z)(200, 300), {
     enableEmojiCTA: w
   } = b.w.useExperiment({
     location: "GiftIntentActionButton"
@@ -49,7 +49,7 @@ function N(e) {
     autoTrackExposure: false
   });
   i.useEffect(() => {
-    let e = m.Z.getUserAffinity(t.id);
+    let e = h.Z.getUserAffinity(t.id);
     (0, p.h)({
       name: o.ImpressionNames.GIFT_INTENT_ACTION_BUTTON,
       type: o.ImpressionTypes.VIEW,
@@ -62,9 +62,9 @@ function N(e) {
   let L = i.useCallback(e => {
       "focus" !== e.type && A()
     }, [A]),
-    D = e => {
+    R = e => {
       e.stopPropagation();
-      let r = m.Z.getUserAffinity(t.id);
+      let r = h.Z.getUserAffinity(t.id);
       g.default.track(y.rMx.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
         gift_intent_type: n,
         affinity: null == r ? true : r.communicationProbability
@@ -80,10 +80,10 @@ function N(e) {
           object: y.qAy.BUTTON_CTA,
           objectType: y.AnalyticsObjectTypes.GIFT
         },
-        giftMessage: R()
+        giftMessage: D()
       })
     },
-    R = () => n === v.hX.FRIEND_ANNIVERSARY ? C.intl.formatToPlainString(C.t["L2s/N3"], {
+    D = () => n === v.hX.FRIEND_ANNIVERSARY ? C.intl.formatToPlainString(C.t["L2s/N3"], {
       numberOfYears: E.Z.getFriendAnniversaryYears(t.id)
     }) : (0, _.Ou)(n),
     M = () => n === v.hX.FRIEND_ANNIVERSARY ? C.intl.string(C.t["4LohBA"]) : (0, _.Ou)(n),
@@ -115,7 +115,7 @@ function N(e) {
     children: () => w ? (0, r.jsx)(u.P3F, {
       innerRef: k,
       "aria-label": M(),
-      onClick: D,
+      onClick: R,
       className: a()(T.actionButton, S.popoutButton, {
         [T.highlight]: N
       }),
@@ -130,7 +130,7 @@ function N(e) {
     }) : (0, r.jsx)(c.zx, {
       "data-migration-pending": true,
       buttonRef: k,
-      onClick: D,
+      onClick: R,
       onMouseEnter: L,
       onMouseLeave: Z,
       children: (0, r.jsxs)("div", {

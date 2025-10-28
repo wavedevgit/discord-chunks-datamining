@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 662842, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => R
+  Z: () => D
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -37,12 +37,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk454703 = require("./454703.js");
 
-function R(e) {
+function D(e) {
   let {
     guild: t,
     isStudyRoomNotice: n = false
   } = e, l = (0, b.y)(t.id), d = (0, E.k5)(t.id), j = (0, s.e7)([T.Z], () => T.Z.getStageInstanceByChannel(null == l ? true : l.id), [l]), {
-    isStageNoticeHidden: R,
+    isStageNoticeHidden: D,
     isEventNoticeHidden: k
   } = (0, s.cj)([g.Z], () => ({
     isStageNoticeHidden: g.Z.isLiveChannelNoticeHidden({
@@ -88,7 +88,7 @@ function R(e) {
         locationIcon: null != e ? (0, r.jsx)(e, {
           size: "xs",
           color: "currentColor",
-          className: D.locationIcon
+          className: R.locationIcon
         }) : null,
         canListenIn: l,
         buttonText: L.intl.string(L.t.wBoE6L),
@@ -108,26 +108,26 @@ function R(e) {
             color: "currentColor",
             width: 16,
             height: 16,
-            className: D.locationIcon
+            className: R.locationIcon
           }),
           canListenIn: l,
           buttonText: e,
-          onClose: () => (0, m.ji)({
+          onClose: () => (0, h.ji)({
             stageId: null == n ? true : n.id
           }),
           users: o.length > 5 ? o.slice(0, 5) : o,
           overflowUsers: u < 1 ? null : (0, r.jsxs)("div", {
-            className: D.pill,
+            className: R.pill,
             children: [(0, r.jsx)(c.VWR, {
               size: "custom",
               color: "currentColor",
               width: 12,
               height: 12,
-              className: D.pillIcon
+              className: R.pillIcon
             }), (0, r.jsx)(c.Text, {
               variant: "text-xs/medium",
               color: "header-secondary",
-              className: D.pillLabel,
+              className: R.pillLabel,
               children: u
             })]
           })
@@ -144,26 +144,26 @@ function R(e) {
           color: "currentColor",
           width: 16,
           height: 16,
-          className: D.locationIcon
+          className: R.locationIcon
         }),
         canListenIn: l,
         buttonText: e,
-        onClose: () => (0, m.ji)({
+        onClose: () => (0, h.ji)({
           stageId: null == n ? true : n.id
         }),
         users: o.length > 5 ? o.slice(0, 5) : o,
         overflowUsers: u < 1 ? null : (0, r.jsxs)("div", {
-          className: D.pill,
+          className: R.pill,
           children: [(0, r.jsx)(c.VWR, {
             size: "custom",
             color: "currentColor",
             width: 12,
             height: 12,
-            className: D.pillIcon
+            className: R.pillIcon
           }), (0, r.jsx)(c.Text, {
             variant: "text-xs/medium",
             color: "header-secondary",
-            className: D.pillLabel,
+            className: R.pillLabel,
             children: u
           })]
         })
@@ -173,7 +173,7 @@ function R(e) {
       if (null == e) return {
         noticeType: null
       };
-      let n = h.ZP.getUserCount(t.id, E);
+      let n = m.ZP.getUserCount(t.id, E);
       return {
         noticeType: 1,
         title: t.name,
@@ -183,33 +183,33 @@ function R(e) {
           color: "currentColor",
           width: 16,
           height: 16,
-          className: D.locationIcon
+          className: R.locationIcon
         }),
         canListenIn: false,
         buttonText: L.intl.string(L.t.iW6Xuo),
-        onClose: () => (0, m.ji)({
+        onClose: () => (0, h.ji)({
           eventId: null == t ? true : t.id
         }),
         users: null == s ? [] : [s],
         overflowUsers: n < 1 ? null : (0, r.jsxs)("div", {
-          className: D.pill,
+          className: R.pill,
           children: [(0, r.jsx)(c.r7p, {
             size: "custom",
             color: "currentColor",
             width: 12,
             height: 12,
-            className: D.pillIcon
+            className: R.pillIcon
           }), (0, r.jsx)(c.Text, {
             variant: "text-xs/medium",
             color: "header-secondary",
-            className: D.pillLabel,
+            className: R.pillLabel,
             children: n
           })]
         })
       }
     } else if (t.entity_type === w.WX.VOICE && null != i) {
       let e = (0, p.KS)(i),
-        n = h.ZP.getUserCount(t.id, E);
+        n = m.ZP.getUserCount(t.id, E);
       return {
         noticeType: 2,
         title: t.name,
@@ -217,26 +217,26 @@ function R(e) {
         locationIcon: null != e ? (0, r.jsx)(e, {
           size: "xs",
           color: "currentColor",
-          className: D.locationIcon
+          className: R.locationIcon
         }) : null,
         canListenIn: l,
         buttonText: L.intl.string(L.t.nxUtoQ),
-        onClose: () => (0, m.ji)({
+        onClose: () => (0, h.ji)({
           eventId: null == t ? true : t.id
         }),
         users: null == s ? [] : [s],
         overflowUsers: n < 1 ? null : (0, r.jsxs)("div", {
-          className: D.pill,
+          className: R.pill,
           children: [(0, r.jsx)(c.r7p, {
             size: "custom",
             color: "currentColor",
             width: 12,
             height: 12,
-            className: D.pillIcon
+            className: R.pillIcon
           }), (0, r.jsx)(c.Text, {
             variant: "text-xs/medium",
             color: "header-secondary",
-            className: D.pillLabel,
+            className: R.pillLabel,
             children: n
           })]
         })
@@ -255,22 +255,22 @@ function R(e) {
     speakers: G,
     listenerCount: B,
     isEventNoticeHidden: k,
-    isStageNoticeHidden: R,
+    isStageNoticeHidden: D,
     isStudyRoomNotice: n
-  }), [d, j, l, H, V, z, G, B, k, R, n]);
+  }), [d, j, l, H, V, z, G, B, k, D, n]);
   return null == Y ? null : (0, r.jsxs)("div", {
-    className: D.container,
+    className: R.container,
     children: [null != ee ? (0, r.jsx)(c.P3F, {
       onClick: ee,
-      className: D.close,
+      className: R.close,
       "aria-label": L.intl.string(L.t.WAI6xu),
       children: (0, r.jsx)(c.Dio, {
         size: "md",
         color: "currentColor",
-        className: D.closeIcon
+        className: R.closeIcon
       })
     }) : null, (0, r.jsxs)("div", {
-      className: D.header,
+      className: R.header,
       children: [(0, r.jsx)(A.Z, {
         color: o.Z.unsafe_rawColors.GREEN_230.css,
         width: 16,
@@ -281,7 +281,7 @@ function R(e) {
         children: L.intl.string(L.t.dI3q4h)
       })]
     }), (X.length > 0 || null != $) && (0, r.jsxs)("div", {
-      className: D.participants,
+      className: R.participants,
       children: [X.map(e => (0, r.jsx)(M, {
         user: e,
         guildId: t.id
@@ -289,19 +289,19 @@ function R(e) {
     }), (0, r.jsx)(c.Text, {
       variant: "text-md/medium",
       color: "header-primary",
-      className: a()(D.title, D.live),
+      className: a()(R.title, R.live),
       children: W
     }), (0, r.jsxs)("div", {
-      className: D.locationContainer,
+      className: R.locationContainer,
       children: [K, (0, r.jsx)(c.Text, {
         variant: "text-xs/normal",
         color: "text-muted",
-        className: D.location,
+        className: R.location,
         children: q
       })]
     }), Q || 1 === Y ? (0, r.jsx)("div", {
       "data-button-hoisted-classname-wrapper": true,
-      className: D.button,
+      className: R.button,
       children: (0, r.jsx)(c.Button, {
         variant: "active",
         size: "sm",
@@ -356,7 +356,7 @@ function M(e) {
         src: t.getAvatarURL(n, 24),
         "aria-label": t.username,
         size: c.EFr.SIZE_24,
-        className: D.avatar
+        className: R.avatar
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(a)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {

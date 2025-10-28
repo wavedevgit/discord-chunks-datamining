@@ -45,7 +45,7 @@ async function f(e, t) {
     }), r.filter(e => (null == e ? true : e.price) != null).forEach(e => i.push(e))
   }), i
 }
-async function h(e) {
+async function m(e) {
   let {
     socket: t
   } = e;
@@ -63,7 +63,7 @@ async function h(e) {
   return [...r.filter(e => e.sku.type !== p.epS.SUBSCRIPTION_GROUP).map(e => e.sku).filter(e => null != e.price), ...await f(n, r.map(e => e.sku))]
 }
 
-function m(e) {
+function h(e) {
   let {
     socket: t
   } = e;
@@ -77,22 +77,22 @@ function m(e) {
 let g = {
   [Chunk981631.Etm.GET_SKUS]: {
     [Chunk186901.Gp.ANY]: [Chunk186901.wE, Chunk186901.lH],
-    handler: h
+    handler: m
   },
   [Chunk981631.Etm.GET_ENTITLEMENTS]: {
     [Chunk186901.Gp.ANY]: [Chunk186901.wE, Chunk186901.lH],
-    handler: m
+    handler: h
   },
   [Chunk981631.Etm.GET_SKUS_EMBEDDED]: {
     [Chunk186901.Gp.ANY]: [Chunk186901.wE, Chunk186901.lH],
     handler: async e => ({
-      skus: await h(e)
+      skus: await m(e)
     })
   },
   [Chunk981631.Etm.GET_ENTITLEMENTS_EMBEDDED]: {
     [Chunk186901.Gp.ANY]: [Chunk186901.wE, Chunk186901.lH],
     handler: async e => ({
-      entitlements: await m(e)
+      entitlements: await h(e)
     })
   }
 }

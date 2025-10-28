@@ -35,7 +35,7 @@ function I(e) {
       guildId: t,
       returnChannelId: n
     }))
-  }, [t, n]), C = (0, s.e7)([f.Z], () => f.Z.getGuild(t)), S = i.useMemo(() => null == C ? null : h.ZP.getGuildSplashURL({
+  }, [t, n]), C = (0, s.e7)([f.Z], () => f.Z.getGuild(t)), S = i.useMemo(() => null == C ? null : m.ZP.getGuildSplashURL({
     id: C.id,
     splash: C.splash
   }), [C]), T = (0, d.N)(S);
@@ -53,7 +53,7 @@ function I(e) {
     }) : (0, r.jsx)(p.Z, {}), null != T && null != S && (0, r.jsx)("div", {
       className: O.gradient,
       style: {
-        background: "linear-gradient(180deg, ".concat((0, m.aD)(T, .16), " 0%, ").concat((0, m.aD)(T, 1), " 100%)")
+        background: "linear-gradient(180deg, ".concat((0, h.aD)(T, .16), " 0%, ").concat((0, h.aD)(T, 1), " 100%)")
       }
     }), null != S && (0, r.jsx)("div", {
       className: O.gradient

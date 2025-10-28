@@ -88,7 +88,7 @@ class j extends Chunk317770.Z {
         userTrialOffer: n
       } : {}
     }), T(this, "mayShowAnnouncementModal", async () => {
-      if (await (0, m.l2)(), h.s.isDisallowPopupsSet()) return;
+      if (await (0, h.l2)(), m.s.isDisallowPopupsSet()) return;
       let e = this.getOfferFromStore(),
         t = E.Z.getCurrentConfig({
           location: "announcementManager"

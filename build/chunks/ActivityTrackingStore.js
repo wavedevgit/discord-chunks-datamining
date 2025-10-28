@@ -36,7 +36,7 @@ function P(e) {
     n = Date.now(),
     r = null != e.updatedAt ? n - e.updatedAt : 0;
   r > y + C && (r = 0);
-  let i = (0, m.OT)(e.applicationId, b.Z),
+  let i = (0, h.OT)(e.applicationId, b.Z),
     l = O.Z.getVoiceChannelId(),
     a = g.default.getSessionId(),
     c = E.Z.getMediaSessionId();
