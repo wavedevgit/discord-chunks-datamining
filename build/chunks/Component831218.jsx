@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 36925 **/
 /** chunk id: 831218, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => V
@@ -444,7 +444,7 @@ let V = e => {
       t = (0, P.tU)(e, [I.Z, N.Z]);
     return f ? [] : t
   }, [f]);
-  (0, E.z)(C.R);
+  (0, E.z)(x.R);
   let {
     analyticsLocations: v
   } = (0, O.ZP)(b.Z.CONTACTS_LIST), S = (0, Z.Ll)(), {
@@ -481,7 +481,7 @@ let V = e => {
         requestAnimationFrame(() => setTimeout(e, 100))
       }
     })
-  }), [L]), V = (0, x.Dt)(), H = (0, d.ZP)({
+  }), [L]), V = (0, C.Dt)(), H = (0, d.ZP)({
     id: "private-channels-".concat(V),
     isEnabled: w,
     scrollToStart: k,

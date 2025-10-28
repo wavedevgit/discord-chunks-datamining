@@ -1,4 +1,4 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 96604 **/
 /** chunk id: 729154, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   x: () => x
@@ -26,8 +26,8 @@ let x = e => {
       renewalInvoice: m,
       renewalInvoiceDetails: p,
       errorOnCancel: x,
-      errorOnRedeem: b,
-      setActiveStep: g,
+      errorOnRedeem: g,
+      setActiveStep: b,
       activeStep: v
     } = e, {
       analyticsLocations: j
@@ -36,7 +36,7 @@ let x = e => {
       y(f(v))
     }, [v]), (0, a.jsx)(u.CancellationContext.Provider, {
       value: {
-        setStep: g,
+        setStep: b,
         premiumType: s,
         onClose: n,
         transitionState: t,
@@ -60,7 +60,7 @@ let x = e => {
         }),
         applyOffer: () => new Promise((e, t) => {
           setTimeout(() => {
-            if (b) return void t();
+            if (g) return void t();
             e()
           }, 1e3)
         }),

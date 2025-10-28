@@ -1,4 +1,4 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 96604 **/
 /** chunk id: 120786, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   L: () => _
@@ -58,7 +58,7 @@ let j = () => {
       })
     }, [l]);
     return (0, a.jsxs)("div", {
-      className: i()(f.container, b.baseCardOutline),
+      className: i()(f.container, g.baseCardOutline),
       children: [(0, a.jsx)(j, {}), (0, a.jsx)(s.zxk, {
         text: t,
         variant: "primary",

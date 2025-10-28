@@ -21,9 +21,9 @@ function d(e, t, n, d, u) {
     icon: f,
     title: g,
     body: m
-  } = (0, s.Xi)(e, t, n), {
-    trackView: y,
-    trackClick: _
+  } = (0, o.Xi)(e, t, n), {
+    trackView: _,
+    trackClick: y
   } = (0, l.R)(a.n0.ActivityInvite, {
     notif_type: a.n0.ActivityInvite,
     notif_user_id: n.id,
@@ -39,22 +39,22 @@ function d(e, t, n, d, u) {
     icon: f,
     title: g,
     body: m,
-    hint: e => (0, o.QR)(e, (0, l.P)(), c.t.aB5xLy),
+    hint: e => (0, s.QR)(e, (0, l.P)(), c.t.aB5xLy),
     onNotificationShow: () => {
-      y()
+      _()
     },
     confirmText: c.intl.string(c.t.VJlc0S),
-    onConfirmClick: (s, o) => {
+    onConfirmClick: (o, s) => {
       i.Z.join({
         userId: n.id,
         sessionId: h,
         applicationId: d.id,
         channelId: e.id,
         messageId: t.id
-      }), r.Z.updateNotificationStatus(o), _("join")
+      }), r.Z.updateNotificationStatus(s), y("join")
     },
     onDismissClick: () => {
-      _("dismiss")
+      y("dismiss")
     }
   }
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 36925 **/
 /** chunk id: 285573, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -28,8 +28,8 @@ let _ = (0, Chunk146773.B)(function(e) {
     sortingType: y,
     sortingPosition: j,
     connectChannelDragSource: v,
-    connectChannelDropTarget: x,
-    tabIndex: C
+    connectChannelDropTarget: C,
+    tabIndex: x
   } = e, E = (0, a.e7)([u.Z, d.ZP], () => {
     let e = d.ZP.getDirectoryChannelIds(t.id);
     return 0 === e.length ? null : u.Z.getChannel(e[0])
@@ -91,13 +91,13 @@ let _ = (0, Chunk146773.B)(function(e) {
         resolvedUnreadSetting: m.i.ONLY_MENTIONS,
         children: [(0, r.jsx)(f.eP, {
           channel: E,
-          tabIndex: C
+          tabIndex: x
         }), (0, r.jsx)(f.hR, {
           channel: E,
           disableManageChannels: _,
-          tabIndex: C
+          tabIndex: x
         })]
       })
     });
-  return P && (w = x(v(w))), w
+  return P && (w = C(v(w))), w
 })

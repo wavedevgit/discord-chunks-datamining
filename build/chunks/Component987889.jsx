@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 36925 **/
 /** chunk id: 987889, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => P
@@ -42,7 +42,7 @@ function v(e) {
   return e
 }
 
-function x(e, t) {
+function C(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -54,7 +54,7 @@ function x(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let C = {
+let x = {
   [Chunk982183.ln.MENTION]: [Chunk982183.r0.SETTINGS],
   [Chunk982183.ln.REPLY]: [Chunk982183.r0.SETTINGS],
   [Chunk982183.ln.REACTION]: [Chunk982183.r0.SETTINGS],
@@ -105,7 +105,7 @@ function S(e) {
     actionType: d
   } = e, p = (0, g.fJ)(), [f, h] = (0, i.useState)(false), [m, _] = (0, i.useState)(false), O = (0, i.useRef)(null), {
     openMenu: y,
-    closeMenu: C
+    closeMenu: x
   } = (0, b.z)();
   return (0, r.jsx)(a.yRy, {
     shouldShow: m,
@@ -115,7 +115,7 @@ function S(e) {
     autoInvert: false,
     targetElementRef: O,
     onRequestClose: () => {
-      _(false), C(n.id, d)
+      _(false), x(n.id, d)
     },
     renderPopout: e => (0, r.jsx)(a.VqE, {
       onClick: e => e.stopPropagation(),
@@ -143,9 +143,9 @@ function S(e) {
             viewId: p
           }), e.stopPropagation();
           let t = !m;
-          _(t), t ? y(n.id, d) : C(n.id, d)
+          _(t), t ? y(n.id, d) : x(n.id, d)
         },
-        children: (0, r.jsx)(s, x(v({}, e), {
+        children: (0, r.jsx)(s, C(v({}, e), {
           message: n,
           "aria-label": l,
           className: j.actionIcon,
@@ -185,7 +185,7 @@ let I = {
         message: t,
         savedMessage: i
       });
-      return (0, r.jsxs)(a.v2r, x(v({}, n), {
+      return (0, r.jsxs)(a.v2r, C(v({}, n), {
         navId: "message-reminder-create",
         "aria-label": y.intl.string(y.t.mJ3P0N),
         onClose: n.closePopout,
@@ -223,11 +223,11 @@ let I = {
         channel: t,
         renderPopoutProps: n
       } = e;
-      return t.isThread() ? (0, r.jsx)(h.Z, x(v({}, n), {
+      return t.isThread() ? (0, r.jsx)(h.Z, C(v({}, n), {
         channel: t,
         navId: "thread-context",
         label: y.intl.string(y.t["1NBjqb"])
-      })) : (0, r.jsx)(u.Z, x(v({}, n), {
+      })) : (0, r.jsx)(u.Z, C(v({}, n), {
         channel: t,
         navId: "channel-context",
         label: y.intl.string(y.t.Xm41aV)
@@ -246,7 +246,7 @@ function P(e) {
     return (0, i.useMemo)(() => {
       let e = _.ln.MENTION,
         r = new Set;
-      return t && r.add(_.r0.ACK), n && r.add(_.r0.BOOKMARK), C[e].forEach(e => r.add(e)), Array.from(r)
+      return t && r.add(_.r0.ACK), n && r.add(_.r0.BOOKMARK), x[e].forEach(e => r.add(e)), Array.from(r)
     }, [e, t, n])
   })(t, l);
   return (0, r.jsx)(a.Kqy, {
@@ -259,12 +259,12 @@ function P(e) {
       let i = I[e];
       switch (i.type) {
         case "standard":
-          return (0, r.jsx)(E, x(v({}, i), {
+          return (0, r.jsx)(E, C(v({}, i), {
             actionType: e,
             message: t
           }), e);
         case "menu":
-          return (0, r.jsx)(S, x(v({}, i), {
+          return (0, r.jsx)(S, C(v({}, i), {
             actionType: e,
             channel: n,
             message: t

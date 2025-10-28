@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 36925 **/
 /** chunk id: 424785, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => X
@@ -147,7 +147,7 @@ class Y extends Chunk98597.ZP {
       isFavoriteSuggestion: j
     } = this.props, {
       shouldShowGuildVerificationPopout: v
-    } = this.state, x = this.getVoiceStatesCount(), C = (0, Chunk951288.jsxs)("li", {
+    } = this.state, C = this.getVoiceStatesCount(), x = (0, Chunk951288.jsxs)("li", {
       className: o()(this.getModeClass(), {
         [Chunk55940.disabled]: this.isDisabled()
       }),
@@ -196,7 +196,7 @@ class Y extends Chunk98597.ZP {
         })
       }), this.renderVoiceUsers()]
     });
-    return Chunk888651 && (C = Chunk475179(Chunk427679)), Chunk146773 && (C = Chunk120356(Chunk442837(Chunk427679))), Chunk427679
+    return Chunk888651 && (x = Chunk475179(Chunk427679)), Chunk146773 && (x = Chunk120356(Chunk442837(Chunk427679))), Chunk427679
   }
   constructor(...e) {
     super(...e), z(this, "channelItemRef", i.createRef()), z(this, "state", {
@@ -306,7 +306,7 @@ function X(e) {
       bypassLimit: T.Z.can(U.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), p = (0, a.e7)([I.Z], () => I.Z.isCollapsed(n.parent_id)), f = (0, S.ZP)(n.id), h = (0, a.e7)([C.Z], () => C.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, v.Rk)(n.id, x.pV.AUDIENCE), {
+  }), p = (0, a.e7)([I.Z], () => I.Z.isCollapsed(n.parent_id)), f = (0, S.ZP)(n.id), h = (0, a.e7)([x.Z], () => x.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, v.Rk)(n.id, C.pV.AUDIENCE), {
     isSubscriptionGated: m,
     needSubscriptionToAccess: b
   } = (0, _.Z)(n.id), O = (0, a.e7)([A.ZP], () => A.ZP.isFavorite(t.id, n.id)), y = (0, E.xJ)(n.id), j = (0, M.Z)({

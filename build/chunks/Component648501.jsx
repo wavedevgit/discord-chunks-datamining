@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 36925 **/
 /** chunk id: 648501, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => N
@@ -54,7 +54,7 @@ function N(e) {
     var e, t;
     return null != (t = null == (e = h.Z.getGuild(n.guild_id)) ? true : e.features.has(E.GuildFeatures.COMMUNITY)) && t
   });
-  if ((0, y.Z)(G)) return (0, r.jsx)(C.Z, {
+  if ((0, y.Z)(G)) return (0, r.jsx)(x.Z, {
     mentionsCount: G,
     isMentionLowImportance: U
   });
@@ -79,7 +79,7 @@ function N(e) {
     children: (0, o.NGo)(Y)
   });
   let X = null != (t = null == T ? true : T.length) ? t : 0;
-  return null != w && w && W ? (0, r.jsx)(x.Z, {
+  return null != w && w && W ? (0, r.jsx)(C.Z, {
     userCount: X,
     video: H || z,
     channel: n

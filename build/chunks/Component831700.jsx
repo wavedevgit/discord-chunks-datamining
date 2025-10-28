@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 36925 **/
 /** chunk id: 831700, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => ei
@@ -183,8 +183,8 @@ class en extends Chunk98597.ZP {
       canMoveMembers: _,
       showTutorial: j,
       hasActiveEvent: v,
-      embeddedApps: x,
-      isSubscriptionGated: C,
+      embeddedApps: C,
+      isSubscriptionGated: x,
       isFavoriteSuggestion: E,
       withGuildIcon: S,
       hasStartTime: I
@@ -423,9 +423,9 @@ function ei(e) {
     guildId: t.id,
     location: "VoiceChannel"
   }), v = (0, a.e7)([_.Z], () => !!y && null != _.Z.getStartTime(n), [n, y]), {
-    isSubscriptionGated: x,
+    isSubscriptionGated: C,
     needSubscriptionToAccess: E
-  } = (0, I.Z)(n.id), S = (0, C.Z)(), N = (0, a.e7)([U.ZP], () => U.ZP.isFavorite(t.id, n.id)), w = e.connected || (null == S ? true : S.channelId) === n.id, {
+  } = (0, I.Z)(n.id), S = (0, x.Z)(), N = (0, a.e7)([U.ZP], () => U.ZP.isFavorite(t.id, n.id)), w = e.connected || (null == S ? true : S.channelId) === n.id, {
     enableHangStatus: A,
     showEmptyChannelTopic: R
   } = (0, Z.bN)({
@@ -443,7 +443,7 @@ function ei(e) {
     isChannelSelected: o,
     isChannelCollapsed: s,
     voiceStates: c,
-    isSubscriptionGated: x,
+    isSubscriptionGated: C,
     needSubscriptionToAccess: E,
     enableConnectedUserLimit: true,
     enableActivities: true
@@ -454,7 +454,7 @@ function ei(e) {
     embeddedActivityType: q.IIU.PLAYING,
     video: f,
     hasActiveEvent: null != O,
-    isSubscriptionGated: x,
+    isSubscriptionGated: C,
     needSubscriptionToAccess: E
   }, u, p, e), {
     connected: w,

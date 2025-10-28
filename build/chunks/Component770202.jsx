@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 36925 **/
 /** chunk id: 770202, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -44,12 +44,12 @@ function v(e) {
   return e
 }
 
-function x(e, t) {
+function C(e, t) {
   let n = t.getGuildId();
   if (null == n) throw Error("TextChannel, preloadChannel: Channel does not have a guildId");
   s.Z.preload(n, t.id)
 }
-class C extends Chunk98597.ZP {
+class x extends Chunk98597.ZP {
   render() {
     let {
       channel: e,
@@ -68,7 +68,7 @@ class C extends Chunk98597.ZP {
         channel: module,
         selected: exports,
         onClick: this.handleClick,
-        onMouseDown: x,
+        onMouseDown: C,
         onContextMenu: this.handleContextMenu,
         connectDragPreview: Chunk442837 ? Chunk120356 : null,
         "aria-label": (0, Chunk201895.ZP)({
@@ -122,7 +122,7 @@ class C extends Chunk98597.ZP {
     })
   }
 }
-let E = (0, Chunk146773.B)(C),
+let E = (0, Chunk146773.B)(x),
   S = Chunk647438.memo(function(e) {
     let {
       channel: t,

@@ -1,4 +1,4 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 96604 **/
 /** chunk id: 264603, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -58,7 +58,7 @@ function S() {
       canDeauthorize: P,
       deauthorize: I
     } = function(e) {
-      let t = (0, o.e7)([g.Z], () => g.Z.getNewestTokenForApplication(e)),
+      let t = (0, o.e7)([b.Z], () => b.Z.getNewestTokenForApplication(e)),
         n = r.useCallback(() => {
           null != t && d.Z.delete(t.id)
         }, [t]);

@@ -13,13 +13,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk314794 = require("./314794.js"),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
+  Chunk566697 = require("./566697.jsx"),
   Chunk283066 = require("./283066.js"),
   Chunk876917 = require("./876917.jsx"),
   Chunk594174 = require("./594174.js"),
   Chunk508925 = require("./508925.jsx"),
   Chunk616066 = require("./616066.jsx"),
   Chunk216541 = require("./216541.jsx"),
-  Chunk22267 = require("./22267.jsx"),
   Chunk302800 = require("./302800.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk186175 = require("./186175.js"),
@@ -50,19 +50,19 @@ let C = e => {
       product: t,
       itemConsumed: r,
       forCollectedModal: i
-    } = e, [a] = t.items, l = (0, d.e7)([h.default], () => {
-      let e = h.default.getCurrentUser();
+    } = e, [a] = t.items, l = (0, d.e7)([m.default], () => {
+      let e = m.default.getCurrentUser();
       return s()(null != e, "User cannot be undefined"), e
-    }), w = Object.values(u.a).includes(t.skuId), _ = (0, p.Z)({
+    }), w = Object.values(u.a).includes(t.skuId), _ = (0, g.Z)({
       location: "CollectiblesProductPreview"
     });
     return (0, o.EQ)(t.type).with(c.Z.PROFILE_EFFECT, () => (0, n.jsx)("div", {
       className: P.profileEffectShopPreview,
-      children: (0, n.jsx)(g.Z, {
+      children: (0, n.jsx)(h.Z, {
         forCollectedModal: true,
         skuId: a.skuId
       })
-    })).with(c.Z.AVATAR_DECORATION, () => (0, n.jsx)(b.R, {
+    })).with(c.Z.AVATAR_DECORATION, () => (0, n.jsx)(j.R, {
       item: a,
       user: l,
       avatarSize: f.EFr.SIZE_120,
@@ -70,7 +70,7 @@ let C = e => {
       isHighlighted: true
     })).with(c.Z.NAMEPLATE, () => (0, n.jsx)("div", {
       className: P.nameplate,
-      children: (0, n.jsx)(v.Z, {
+      children: (0, n.jsx)(p.Z, {
         nameplate: a,
         user: l,
         nameplatePreviewSize: "large",
@@ -78,7 +78,7 @@ let C = e => {
       })
     })).with(c.Z.BUNDLE, () => (0, n.jsx)("div", {
       className: P.bundlePreview,
-      children: (0, n.jsx)(j.d, {
+      children: (0, n.jsx)(v.d, {
         containerClassName: P.bundlePreviewContainer,
         product: t,
         user: l,
@@ -99,7 +99,7 @@ let C = e => {
           src: O,
           alt: y.intl.string(y.t.g5W1g8)
         });
-      return (0, n.jsx)(m.b, {
+      return (0, n.jsx)(b.b, {
         product: t
       })
     }).otherwise(() => null)

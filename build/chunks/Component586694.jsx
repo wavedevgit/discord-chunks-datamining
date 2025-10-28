@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 36925 **/
 /** chunk id: 586694, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   E: () => b,
@@ -63,8 +63,8 @@ function g(e) {
     specs: y,
     cornerIconUrl: j,
     cornerIconOffsetX: v,
-    cornerIconOffsetY: x,
-    ariaLabel: C
+    cornerIconOffsetY: C,
+    ariaLabel: x
   } = e, E = {
     width: (0, s.pxk)(n),
     height: (0, s.pxk)(n)
@@ -113,7 +113,7 @@ function g(e) {
           rx: e.stroke,
           fill: "black"
         })
-      }(y, I, v, x)]
+      }(y, I, v, C)]
     }), (0, r.jsx)("foreignObject", {
       x: 0,
       y: 0,
@@ -140,7 +140,7 @@ function g(e) {
     onKeyDown: d,
     onMouseEnter: null != h ? h : true,
     onMouseLeave: null != g ? g : true,
-    "aria-label": null != C ? C : true,
+    "aria-label": null != x ? x : true,
     "aria-hidden": b,
     children: [t, P]
   }) : (0, r.jsxs)("div", {
@@ -150,7 +150,7 @@ function g(e) {
     onMouseEnter: null != h ? h : true,
     onMouseLeave: null != g ? g : true,
     role: "img",
-    "aria-label": null != C ? C : true,
+    "aria-label": null != x ? x : true,
     "aria-hidden": b,
     children: [t, P]
   })
@@ -166,7 +166,7 @@ function m(e) {
     cornerIconUrl: m,
     cornerIconOffsetX: b = 0,
     cornerIconOffsetY: y = 0
-  } = e, j = (0, d.UC)(n), v = j.size, x = (0, i.useId)();
+  } = e, j = (0, d.UC)(n), v = j.size, C = (0, i.useId)();
   return (0, r.jsx)(g, h(f({}, e), {
     ariaLabel: s,
     ariaHidden: l,
@@ -178,7 +178,7 @@ function m(e) {
       className: o()(p.mask, p.svg),
       "aria-hidden": true,
       children: [(0, r.jsxs)("mask", {
-        id: x,
+        id: C,
         children: [(0, r.jsx)("circle", {
           cx: j.size / 2,
           cy: j.size / 2,
@@ -205,7 +205,7 @@ function m(e) {
         y: 0,
         width: j.size,
         height: j.size,
-        mask: "url(#".concat(x, ")"),
+        mask: "url(#".concat(C, ")"),
         children: (0, r.jsx)(a.qe, {
           src: t,
           className: u,
@@ -233,15 +233,15 @@ function b(e) {
     cornerIconUrl: s,
     cornerIconOffsetX: u = 0,
     cornerIconOffsetY: m = 0
-  } = e, b = (0, i.useId)(), y = (0, i.useId)(), j = (0, d.UC)(n), v = j.size + u, x = j.size + m, C = O(j, u, m), E = _(j, u, m);
+  } = e, b = (0, i.useId)(), y = (0, i.useId)(), j = (0, d.UC)(n), v = j.size + u, C = j.size + m, x = O(j, u, m), E = _(j, u, m);
   return (0, r.jsx)(g, h(f({}, e), {
     ariaLabel: a,
     ariaHidden: l,
     specs: j,
     children: (0, r.jsxs)("svg", {
       width: v,
-      height: x,
-      viewBox: "0 0 ".concat(v, " ").concat(x),
+      height: C,
+      viewBox: "0 0 ".concat(v, " ").concat(C),
       className: o()(p.mask, p.svg),
       "aria-hidden": true,
       children: [(0, r.jsxs)("mask", {
@@ -254,9 +254,9 @@ function b(e) {
           fill: "white",
           mask: "url(#".concat(c.QS.SQUIRCLE, ")")
         }), (0, r.jsx)("circle", {
-          cx: C.x + C.width / 2,
-          cy: C.y + C.height / 2,
-          r: C.width / 2,
+          cx: x.x + x.width / 2,
+          cy: x.y + x.height / 2,
+          r: x.width / 2,
           fill: "black"
         })]
       }), (0, r.jsx)("mask", {

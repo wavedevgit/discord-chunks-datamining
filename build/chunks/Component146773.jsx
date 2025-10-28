@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 36925 **/
 /** chunk id: 146773, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   B: () => S
@@ -25,7 +25,7 @@ var Chunk472435 = require("./472435.js"),
   Chunk700785 = require("./700785.js"),
   Chunk981631 = require("./981631.js");
 
-function x(e) {
+function C(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -43,7 +43,7 @@ function x(e) {
   }
   return e
 }
-let C = "DRAGGABLE_GUILD_CHANNEL";
+let x = "DRAGGABLE_GUILD_CHANNEL";
 
 function E(e, t) {
   var n, r;
@@ -55,7 +55,7 @@ function E(e, t) {
 }
 
 function S(e) {
-  return (0, i.G)(C, {
+  return (0, i.G)(x, {
     drop(e, t) {
       let n, i = O.Z.getGuildId(),
         l = t.getItem(),
@@ -87,7 +87,7 @@ function S(e) {
           let e = h.Z.getChannel(n.parent_id);
           null != e && (0, o.h7j)(t => {
             var l, o;
-            return (0, r.jsx)(c.default, (l = x({}, t), o = o = {
+            return (0, r.jsx)(c.default, (l = C({}, t), o = o = {
               channel: d,
               category: e,
               onConfirm: () => {
@@ -141,7 +141,7 @@ function S(e) {
       sortingPosition: t.isOver() && t.canDrop() ? n.position : null,
       sortingParent: t.isOver() && t.canDrop() ? n.parentId : null
     }
-  })((0, l.E)(C, {
+  })((0, l.E)(x, {
     canDrag(e) {
       let {
         channel: t
@@ -153,7 +153,7 @@ function S(e) {
         let {
           default: e
         } = await n.e("22016").then(n.bind(n, 391312));
-        return t => (0, r.jsx)(e, x({}, t))
+        return t => (0, r.jsx)(e, C({}, t))
       }), false;
       if (t.type === v.d4z.GUILD_CATEGORY) return _.Z.can(v.Plq.MANAGE_CHANNELS, i) && !(0, p.r1)(i.id);
       let l = h.Z.getChannel(t.parent_id);

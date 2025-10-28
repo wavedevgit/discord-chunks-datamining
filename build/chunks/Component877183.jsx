@@ -25,8 +25,8 @@ function g(e) {
     icon: l,
     title: g,
     body: m,
-    hint: y,
-    notifType: _
+    hint: _,
+    notifType: y
   } = function(e, t) {
     if (t.isFirstTimeNux) {
       var n, i;
@@ -69,16 +69,16 @@ function g(e) {
     hint: f,
     notifType: p.n0.OopWelcomeNudge
   }, e), {
-    trackView: O,
-    trackClick: b
-  } = (0, u.R)(_, {
-    notif_type: _
+    trackView: b,
+    trackClick: v
+  } = (0, u.R)(y, {
+    notif_type: y
   });
   return {
     icon: l,
     title: g,
     body: m,
-    hint: y,
+    hint: _,
     renderFooter: () => (0, i.jsx)("div", {
       style: {
         textAlign: "center",
@@ -88,16 +88,16 @@ function g(e) {
     }),
     confirmText: t ? h.intl.string(h.t.TxyTbk) : true,
     onConfirmClick: t ? () => {
-      b("unlock"), s.Z.setInputLocked(false, (0, d.getPID)())
+      v("unlock"), o.Z.setInputLocked(false, (0, d.getPID)())
     } : true,
     onNotificationShow: () => {
-      O(), t && (0, o.Q3)(r.z.OVERLAY_OOP_WELCOME_SWITCH_FROM_IP_NUX)
+      b(), t && (0, s.Q3)(r.z.OVERLAY_OOP_WELCOME_SWITCH_FROM_IP_NUX)
     },
     onNotificationClick: (e, t) => {
-      b("unlock"), a.default.isOverlayOOPEnabledForPid((0, d.getPID)()) ? s.Z.setInputLocked(false, (0, d.getPID)()) : c.default.isInstanceLocked() && s.Z.setInstanceLocked(false)
+      v("unlock"), a.default.isOverlayOOPEnabledForPid((0, d.getPID)()) ? o.Z.setInputLocked(false, (0, d.getPID)()) : c.default.isInstanceLocked() && o.Z.setInstanceLocked(false)
     },
     onDismissClick: () => {
-      b("dismiss")
+      v("dismiss")
     }
   }
 }

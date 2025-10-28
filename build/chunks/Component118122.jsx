@@ -1,7 +1,7 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 36925 **/
 /** chunk id: 118122, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => x
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -35,7 +35,7 @@ let v = {
   }
 };
 
-function x(e) {
+function C(e) {
   (0, a.jW)(e, async () => {
     let {
       default: e
@@ -61,11 +61,11 @@ function x(e) {
   })
 }
 
-function C(e) {
+function x(e) {
   let {
     disableTooltip: t,
     lastTargetNode: n
-  } = e, a = (0, l.Wu)([h.Z], () => h.Z.getGuildsArray()), C = (0, l.e7)([g.default], () => g.default.getCurrentUser()), E = i.useMemo(() => a.some(e => (0, f.eM)(e, C)), [a, C]), S = (0, o.s9z)(e => (0, o.DEQ)(e, O.PU)), {
+  } = e, a = (0, l.Wu)([h.Z], () => h.Z.getGuildsArray()), x = (0, l.e7)([g.default], () => g.default.getCurrentUser()), E = i.useMemo(() => a.some(e => (0, f.eM)(e, x)), [a, x]), S = (0, o.s9z)(e => (0, o.DEQ)(e, O.PU)), {
     analyticsLocations: I
   } = (0, s.ZP)(), P = (0, r.jsx)(b.Z, {
     showPill: false,
@@ -85,7 +85,7 @@ function C(e) {
       })
     },
     selected: S,
-    onContextMenu: x,
+    onContextMenu: C,
     tooltip: y.intl.string(y.t.l5WIbf),
     icon: o.oFk
   });

@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 36925 **/
 /** chunk id: 830993, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => P
@@ -51,12 +51,12 @@ function P(e) {
   }, [o, g]);
   (0, c.$)(j, "VoiceChannelActivities");
   let v = (0, u.ZP)(o),
-    x = Array.from((0, u.uF)(v).values()),
+    C = Array.from((0, u.uF)(v).values()),
     I = null != (t = null == g ? true : g.filter(_.lm)) ? t : [],
     P = (0, a.e7)([m.Z], () => {
       let e = {};
       return I.forEach(t => {
-        let n = m.Z.findActivity(t.user.id, e => [C.IIU.PLAYING, C.IIU.WATCHING].includes(e.type) && (null != e.assets || null != e.state || null != e.details || null != e.party) && (null == e.session_id || e.session_id === t.voiceState.sessionId) || e.type === C.IIU.LISTENING);
+        let n = m.Z.findActivity(t.user.id, e => [x.IIU.PLAYING, x.IIU.WATCHING].includes(e.type) && (null != e.assets || null != e.state || null != e.details || null != e.party) && (null == e.session_id || e.session_id === t.voiceState.sessionId) || e.type === x.IIU.LISTENING);
         if (null != n && !(0, p.Z)(n)) {
           var r, i, l, o;
           let a = "".concat(null != (i = n.application_id) ? i : "", ":").concat(null != (l = null == (r = n.party) ? true : r.id) ? l : t.user.id),
@@ -64,11 +64,11 @@ function P(e) {
               members: [],
               activity: n
             };
-          s.members.push(t), (0, d.Z)(s.activity, C.xjy.JOIN) || (s.activity = n), e[a] = s
+          s.members.push(t), (0, d.Z)(s.activity, x.xjy.JOIN) || (s.activity = n), e[a] = s
         }
       }), Object.values(e)
     }, [I], a.pF);
-  return P.length + x.length === 0 ? null : (0, r.jsxs)(s.Ttm, {
+  return P.length + C.length === 0 ? null : (0, r.jsxs)(s.Ttm, {
     className: S.container,
     children: [(0, r.jsx)(N, {
       channel: o,
@@ -76,7 +76,7 @@ function P(e) {
       voiceStatesCount: null != (l = null == g ? true : g.length) ? l : 0
     }), (0, r.jsx)("div", {
       className: S.headerDivider
-    }), x.map((e, t) => {
+    }), C.map((e, t) => {
       var n;
       return (0, r.jsx)(y.Z, {
         embeddedApp: e,
@@ -155,7 +155,7 @@ function N(e) {
     channel: t,
     isChannelSelected: n,
     voiceStatesCount: i
-  } = e, l = (0, a.e7)([g.Z], () => !g.Z.can(C.Plq.CONNECT, t)), s = (0, a.e7)([b.Z], () => b.Z.hasVideo(t.id)), c = (0, O.ZP)({
+  } = e, l = (0, a.e7)([g.Z], () => !g.Z.can(x.Plq.CONNECT, t)), s = (0, a.e7)([b.Z], () => b.Z.hasVideo(t.id)), c = (0, O.ZP)({
     channel: t,
     locked: l,
     video: s,
@@ -169,7 +169,7 @@ function N(e) {
       userCount: i,
       video: s,
       channel: t
-    }) : (0, r.jsx)(x.Z, {
+    }) : (0, r.jsx)(C.Z, {
       userCount: i
     })]
   })

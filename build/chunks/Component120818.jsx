@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 36925 **/
 /** chunk id: 120818, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   T: () => _
@@ -35,7 +35,7 @@ let _ = Chunk647438.memo(function(e) {
     return O.forEach(t => {
       null != y[t.channelId] && e++
     }), e
-  }, [y, O]), v = null == O ? 0 : O.length, x = (0, l.JA)("progress-bar-".concat(_.id));
+  }, [y, O]), v = null == O ? 0 : O.length, C = (0, l.JA)("progress-bar-".concat(_.id));
   return (0, r.jsxs)("li", {
     children: [(0, r.jsxs)(a.P3F, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
@@ -54,7 +54,7 @@ let _ = Chunk647438.memo(function(e) {
         })
       }
       return e
-    }({}, x), n = n = {
+    }({}, C), n = n = {
       role: "button",
       focusProps: {
         offset: {

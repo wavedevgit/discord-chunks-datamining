@@ -1,73 +1,73 @@
-/** Chunk was on 86872 **/
-/** chunk id: 590149, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 96604 **/
+/** chunk id: 590149, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => u
+  Z: () => d
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  r = require.n(Chunk120356),
+  i = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk259580 = require("./259580.jsx"),
   Chunk422665 = require("./422665.js");
 
-function u(e) {
+function d(e) {
   let {
-    icon: n,
-    title: t,
-    subtitle: a,
-    children: u,
-    className: d,
+    icon: t,
+    title: n,
+    subtitle: l,
+    children: d,
+    className: u,
     isExpanded: m,
     onExpandedChange: p,
-    defaultExpanded: _ = false,
+    defaultExpanded: h = false,
     onOpen: x,
-    maxHeight: g
-  } = e, [N, h] = l.useState(_), f = true !== m, E = f ? m : N, I = l.useCallback(() => {
-    let e = !E;
-    f || h(e), null == p || p(e), e && null != x && x()
-  }, [E, f, p, x]), v = l.useMemo(() => {
-    if (null != g && E) return {
-      maxHeight: "number" == typeof g ? "".concat(g, "px") : g
+    maxHeight: f
+  } = e, [g, b] = r.useState(h), v = true !== m, j = v ? m : g, _ = r.useCallback(() => {
+    let e = !j;
+    v || b(e), null == p || p(e), e && null != x && x()
+  }, [j, v, p, x]), y = r.useMemo(() => {
+    if (null != f && j) return {
+      maxHeight: "number" == typeof f ? "".concat(f, "px") : f
     }
-  }, [g, E]);
-  return (0, i.jsxs)("div", {
-    className: r()(c.accordionContainer, d, {
-      [c.opened]: E
+  }, [f, j]);
+  return (0, a.jsxs)("div", {
+    className: i()(c.accordionContainer, u, {
+      [c.opened]: j
     }),
-    children: [(0, i.jsxs)(s.P3F, {
+    children: [(0, a.jsxs)(o.P3F, {
       className: c.header,
-      onClick: I,
-      children: [null != n && (0, i.jsx)("div", {
+      onClick: _,
+      children: [null != t && (0, a.jsx)("div", {
         className: c.headerIconWrapper,
-        children: n
-      }), (0, i.jsxs)("div", {
+        children: t
+      }), (0, a.jsxs)("div", {
         className: c.title,
-        children: [(0, i.jsx)(s.Text, {
+        children: [(0, a.jsx)(o.Text, {
           variant: "eyebrow",
           color: "header-secondary",
-          children: t
-        }), null != a && "" !== a && (0, i.jsx)(s.Text, {
+          children: n
+        }), null != l && "" !== l && (0, a.jsx)(o.Text, {
           variant: "text-sm/medium",
           color: "interactive-normal",
-          children: a
+          children: l
         })]
-      }), (0, i.jsx)("div", {
-        className: r()(c.caret, {
-          [c.opened]: E
+      }), (0, a.jsx)("div", {
+        className: i()(c.caret, {
+          [c.opened]: j
         }),
-        children: (0, i.jsx)(o.Z, {
+        children: (0, a.jsx)(s.Z, {
           width: 18,
           height: 18,
-          direction: o.Z.Directions.DOWN
+          direction: s.Z.Directions.DOWN
         })
       })]
-    }), (0, i.jsx)("div", {
-      className: r()(c.content, {
-        [c.opened]: E
+    }), (0, a.jsx)("div", {
+      className: i()(c.content, {
+        [c.opened]: j
       }),
-      style: v,
-      children: u
+      style: y,
+      children: d
     })]
   })
 }

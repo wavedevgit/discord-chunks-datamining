@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 36925 **/
 /** chunk id: 654142, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -71,7 +71,7 @@ let _ = Chunk647438.memo(function(e) {
     name: y,
     color: j,
     children: v
-  } = t, x = v.map(e => e.id), C = (0, s.Z)(e => e.guildId), E = (0, l.e7)([c.Z], () => c.Z.isFolderExpanded(O)), S = function(e) {
+  } = t, C = v.map(e => e.id), x = (0, s.Z)(e => e.guildId), E = (0, l.e7)([c.Z], () => c.Z.isFolderExpanded(O)), S = function(e) {
     let t = e.children.map(e => {
         let t = e.id,
           n = d.Z.getGuild(t);
@@ -86,9 +86,9 @@ let _ = Chunk647438.memo(function(e) {
     isMentionLowImportance: N,
     unread: Z
   } = (0, l.cj)([u.default], () => ({
-    mentionCount: x.map(e => u.default.getMentionCount(e)).reduce((e, t) => e + t, 0),
-    isMentionLowImportance: x.every(e => u.default.getIsMentionLowImportance(e)),
-    unread: x.some(e => u.default.hasUnread(e))
+    mentionCount: C.map(e => u.default.getMentionCount(e)).reduce((e, t) => e + t, 0),
+    isMentionLowImportance: C.every(e => u.default.getIsMentionLowImportance(e)),
+    unread: C.some(e => u.default.hasUnread(e))
   })), T = i.useCallback(() => {
     a.Z.toggleGuildFolderExpand(O)
   }, [O]), w = i.useCallback(e => {
@@ -107,7 +107,7 @@ let _ = Chunk647438.memo(function(e) {
   return (0, r.jsx)(f.Z, b(m({}, _), {
     folderNode: t,
     expanded: E,
-    selected: null != C && x.includes(C),
+    selected: null != x && C.includes(x),
     mentionCount: P,
     isMentionLowImportance: N,
     unread: Z,

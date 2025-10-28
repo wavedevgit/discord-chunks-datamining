@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 36925 **/
 /** chunk id: 754231, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -94,7 +94,7 @@ function v(e) {
   })
 }
 
-function x(e) {
+function C(e) {
   let {
     activity: t,
     user: n,
@@ -113,7 +113,7 @@ function x(e) {
   })
 }
 
-function C(e) {
+function x(e) {
   let {
     activity: t
   } = e, n = null == t ? true : t.state;
@@ -181,11 +181,11 @@ function S(e) {
           activity: t,
           embeddedApp: n,
           onOpenSpotifyTrack: d
-        }), (0, r.jsx)(x, {
+        }), (0, r.jsx)(C, {
           activity: t,
           user: l,
           onOpenSpotifyArtist: f
-        }), (0, r.jsx)(C, {
+        }), (0, r.jsx)(x, {
           activity: t
         }), m.length > 0 && (0, r.jsx)(p.ZP, {
           className: O.usersSummary,

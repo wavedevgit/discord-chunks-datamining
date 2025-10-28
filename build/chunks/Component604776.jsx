@@ -1,4 +1,4 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 96604 **/
 /** chunk id: 604776, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   D: () => v,
@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk696450 = require("./696450.js"),
   Chunk711322 = require("./711322.js"),
   Chunk451429 = require("./451429.js");
-let g = {
+let b = {
     [Chunk981631.kNB.QUEST_REWARD]: "Quest Reward",
     [Chunk981631.kNB.DEVELOPER_GIFT]: "Developer Gift",
     [Chunk981631.kNB.INVOICE]: "Invoice",
@@ -55,7 +55,7 @@ let g = {
         variant: "text-md/normal",
         children: ["Entitlement source type: ", (() => {
           let e = n.sourceType;
-          return null != e && e in g ? g[e] : "Unknown source type ".concat(e)
+          return null != e && e in b ? b[e] : "Unknown source type ".concat(e)
         })()]
       }), r && null != l && (0, a.jsx)(s.zx, {
         className: x.deleteEntitlementButton,
@@ -79,7 +79,7 @@ let g = {
   }];
 
 function _() {
-  let [e, t] = Chunk647438.useState(false), [n, l] = Chunk647438.useState(Chunk314794.a.PREMIUM_TIER_2_1_HOUR), [u, g] = Chunk647438.useState([]), [_, y] = Chunk647438.useState([]), {
+  let [e, t] = Chunk647438.useState(false), [n, l] = Chunk647438.useState(Chunk314794.a.PREMIUM_TIER_2_1_HOUR), [u, b] = Chunk647438.useState([]), [_, y] = Chunk647438.useState([]), {
     refreshEntitlementList: C,
     grantFractionalPremium: S,
     deleteFractionalPremium: E,
@@ -90,7 +90,7 @@ function _() {
   return Chunk647438.useEffect(() => {
     C()
   }, [C]), Chunk647438.useEffect(() => {
-    g(T.filter(e => null != e.endsAt && e.endsAt > new Date && e.type === h.qc2.FRACTIONAL_REDEMPTION)), y(T.filter(e => Object.values(o.a).includes(e.skuId) && null == e.startsAt))
+    b(T.filter(e => null != e.endsAt && e.endsAt > new Date && e.type === h.qc2.FRACTIONAL_REDEMPTION)), y(T.filter(e => Object.values(o.a).includes(e.skuId) && null == e.startsAt))
   }, [T]), (0, Chunk951288.jsx)(Chunk481060.zJl, {
     className: Chunk451429.panel,
     children: (0, Chunk951288.jsxs)("div", {

@@ -1,7 +1,7 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 96604 **/
 /** chunk id: 923576, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => b
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk246992 = require("./246992.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js");
-let b = [{
+let g = [{
   label: "1 Week",
   value: 0
 }, {
@@ -46,9 +46,9 @@ let b = [{
   value: 72
 }];
 
-function g() {
+function b() {
   var e, t;
-  let [n, g] = Chunk647438.useState(false), v = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()), j = (0, Chunk848572.kG)(), _ = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()), y = null != j && null != (t = null == (e = Chunk474936.vK[j]) ? true : module.tenureReqNumMonths) ? exports : 0, C = Chunk647438.useCallback(async e => {
+  let [n, b] = Chunk647438.useState(false), v = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()), j = (0, Chunk848572.kG)(), _ = (0, Chunk442837.e7)([Chunk78839.Z], () => Chunk78839.Z.getPremiumTypeSubscription()), y = null != j && null != (t = null == (e = Chunk474936.vK[j]) ? true : module.tenureReqNumMonths) ? exports : 0, C = Chunk647438.useCallback(async e => {
     let t = new Date;
     e > 0 ? t.setMonth(t.getMonth() - e) : t.setDate(t.getDate() - 7), t.setDate(t.getDate() - 2);
     let n = {
@@ -56,17 +56,17 @@ function g() {
       endedAt: true,
       premium_streak_started_at: p.default.fromTimestamp(t.getTime())
     };
-    g(true), await i.tn.patch({
+    b(true), await i.tn.patch({
       url: "/debug/subscriptions/".concat(_.id),
       body: n,
       rejectWithError: false
-    }), await (0, c.In)(v.id), await (0, s.jg)(), g(false)
+    }), await (0, c.In)(v.id), await (0, s.jg)(), b(false)
   }, [_, v]);
   if (null != v && null != _) return (0, Chunk951288.jsx)(Chunk481060.PhF, {
     isDisabled: require,
     serialize: e => "".concat(e),
     isSelected: e => e === y,
-    options: b,
+    options: g,
     select: C,
     popoutLayerContext: Chunk246992.O$,
     popoutWidth: 200

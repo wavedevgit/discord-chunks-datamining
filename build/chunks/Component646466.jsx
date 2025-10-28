@@ -1,4 +1,4 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 96604 **/
 /** chunk id: 646466, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   O: () => E
@@ -47,7 +47,7 @@ let h = [{
     label: "[preview all]",
     value: null
   },
-  b = () => {
+  g = () => {
     (0, Chunk481060.nfh)(Chunk637443.g) ? (0, Chunk481060.Mr3)(Chunk637443.g) : (0, Chunk481060.ZDy)(async () => {
       let {
         ShopAssetsPreviewInstructionModal: e
@@ -58,7 +58,7 @@ let h = [{
       onCloseRequest: () => (0, Chunk481060.Mr3)(Chunk637443.g)
     })
   },
-  g = () => {
+  b = () => {
     (0, Chunk481060.nfh)(Chunk637443.c) ? (0, Chunk481060.Mr3)(Chunk637443.c) : (0, Chunk481060.ZDy)(async () => {
       let {
         ShopPFXPreviewInstructionModal: e
@@ -91,7 +91,7 @@ let h = [{
         }), (0, Chunk951288.jsx)(Chunk481060.hU, {
           variant: "icon-only",
           size: "sm",
-          onClick: g,
+          onClick: b,
           icon: Chunk481060.idN,
           "aria-label": "Open PFX preview instructions"
         })]
@@ -327,7 +327,7 @@ let h = [{
         }), (0, Chunk951288.jsx)(Chunk481060.hU, {
           variant: "icon-only",
           size: "sm",
-          onClick: b,
+          onClick: g,
           icon: Chunk481060.idN,
           "aria-label": "Open preview instructions"
         })]

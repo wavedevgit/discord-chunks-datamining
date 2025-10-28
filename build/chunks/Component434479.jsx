@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 36925 **/
 /** chunk id: 434479, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   m: () => h
@@ -74,17 +74,17 @@ function h(e) {
       }
       return i
     }(e, ["id", "className", "innerClassName", "renderIcon", "text", "selected", "trailing", "background", "showUnread", "ref"]);
-  let x = (0, o.JA)(n),
-    C = null != (t = (0, a.q)(m)) ? t : "";
+  let C = (0, o.JA)(n),
+    x = null != (t = (0, a.q)(m)) ? t : "";
   return (0, r.jsx)("li", {
     ref: j,
     children: (0, r.jsxs)(s.kL8, f(p({}, v), {
-      buttonProps: f(p({}, x), {
+      buttonProps: f(p({}, C), {
         id: n,
         role: "button"
       }),
       tag: "div",
-      "aria-label": C,
+      "aria-label": x,
       focusProps: {
         offset: {
           top: 1,

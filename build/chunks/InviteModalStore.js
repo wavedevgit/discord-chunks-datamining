@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 36925 **/
 /** chunk id: 590965, original params: e,t,n (module,exports,require) **/
 let r;
 require.d(exports, {
@@ -42,8 +42,8 @@ function y(e) {
 }
 let j = Chunk981631.IlC.APP,
   v = false,
-  x = false,
-  C = [];
+  C = false,
+  x = [];
 
 function E() {
   v = true
@@ -54,13 +54,13 @@ class S extends(i = Chunk442837.ZP.Store) {
   }
   isOpen() {
     let e = __OVERLAY__ ? Chunk981631.IlC.OVERLAY : Chunk981631.IlC.APP;
-    return !!(v && C.length > 0 && j === module)
+    return !!(v && x.length > 0 && j === module)
   }
   getProps() {
     return {
-      invite: C.length > 0 ? C[0][0] : null,
+      invite: x.length > 0 ? x[0][0] : null,
       error: null != r && "" !== r ? r : null,
-      submitting: x
+      submitting: C
     }
   }
 }
@@ -100,11 +100,11 @@ let I = new S(Chunk570140.Z, {
         }
       }
     }
-    if (C.some(e => {
+    if (x.some(e => {
         let [n] = e;
         return n.code === t.code
       })) returnfalse;
-    j = e.context, x = false;
+    j = e.context, C = false;
     let n = function(e) {
       let {
         approximate_member_count: t,
@@ -131,21 +131,21 @@ let I = new S(Chunk570140.Z, {
       };
       return null != c && (p.channel = y({}, c)), null != u && (p.guild = (0, g.Qs)(u)), null != e.inviter && (p.inviter = y({}, e.inviter)), p
     }(t);
-    C.push([n, e.resolve])
+    x.push([n, e.resolve])
   },
   INVITE_MODAL_CLOSE: function() {
-    if (r = null, x = false, C.length > 0) {
-      let [, e] = C.shift();
+    if (r = null, C = false, x.length > 0) {
+      let [, e] = x.shift();
       null != module && module()
     }
   },
   INVITE_ACCEPT: function() {
-    x = true
+    C = true
   },
   INVITE_MODAL_ERROR: function(e) {
     let {
       message: t
     } = e;
-    r = t, x = false
+    r = t, C = false
   }
 })

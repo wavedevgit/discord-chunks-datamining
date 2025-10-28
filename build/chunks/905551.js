@@ -1,11 +1,11 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 96604 **/
 /** chunk id: 905551, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   EY: () => _,
   NE: () => j,
-  UM: () => g,
+  UM: () => b,
   WX: () => S,
-  WY: () => b,
+  WY: () => g,
   _k: () => C,
   ce: () => h,
   hz: () => v,
@@ -102,7 +102,7 @@ function f(e, t) {
   })
 }
 
-function b(e, t) {
+function g(e, t) {
   if (e) {
     var n;
     i.default.track(p.rMx.GAME_SERVER_HOSTING_THIRD_PARTY_CONSENT_ACCEPTED, {
@@ -112,7 +112,7 @@ function b(e, t) {
   }
 }
 
-function g() {
+function b() {
   Chunk570140.Z.dispatch({
     type: "GAME_SERVER_REGION_PING_STATE_RESET"
   })

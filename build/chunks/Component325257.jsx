@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 36925 **/
 /** chunk id: 325257, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => k
@@ -121,7 +121,7 @@ let k = Chunk647438.memo(function(e) {
     [{
       dragging: ed
     }, ep] = (0, a.c)({
-      type: x.eD.GUILD,
+      type: C.eD.GUILD,
       item: () => (requestAnimationFrame(() => {
         null == B || B()
       }), {
@@ -150,15 +150,15 @@ let k = Chunk647438.memo(function(e) {
         state: L
       })
     }, [eo, V]),
-    ex = i.useCallback(() => {
+    eC = i.useCallback(() => {
       if (null != V || null == H || q || !et) return;
       let e = (0, b.V)(H.id);
       null != e && f.Z.preload(H.id, e)
     }, [V, H, q, et]),
-    eC = (0, u.e7)([j.ZP], () => j.ZP.isCurrentUserGuest(eo)),
+    ex = (0, u.e7)([j.ZP], () => j.ZP.isCurrentUserGuest(eo)),
     eE = i.useCallback(e => {
-      null == H || eC || J(e, H)
-    }, [H, J, eC]),
+      null == H || ex || J(e, H)
+    }, [H, J, ex]),
     eS = i.useCallback(e => {
       if ("ArrowLeft" === e.key && null != ea) {
         var t;
@@ -197,7 +197,7 @@ let k = Chunk647438.memo(function(e) {
       onMouseLeave: function() {
         ee || eg(false)
       },
-      onMouseDown: ex,
+      onMouseDown: eC,
       onContextMenu: eE,
       onKeyDown: eS,
       icon: (0, y.EB)(H, 2 * eN, em && z, true),
@@ -233,7 +233,7 @@ let k = Chunk647438.memo(function(e) {
     });
   return (0, r.jsxs)(N.H, {
     ref: eP,
-    children: [(0, r.jsx)(C.Z, {
+    children: [(0, r.jsx)(x.Z, {
       hovered: !ed && em,
       selected: !ed && W,
       unread: !ed && K,

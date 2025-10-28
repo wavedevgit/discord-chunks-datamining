@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 36925 **/
 /** chunk id: 233657, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -71,9 +71,9 @@ function _(e) {
       }))
     }), (0, s.Q3)(l.z.GUILD_HEADER_EVENT_UPSELL)
   }
-  let x = (0, c.ZP)(t.id),
-    C = x.length > 0 ? h.intl.formatToPlainString(h.t.IBdqSu, {
-      number: x.length
+  let C = (0, c.ZP)(t.id),
+    x = C.length > 0 ? h.intl.formatToPlainString(h.t.IBdqSu, {
+      number: C.length
     }) : h.intl.string(h.t.tlopTM);
   return (0, r.jsx)(p.m, {
     id: "upcoming-events-".concat(t.id),
@@ -82,7 +82,7 @@ function _(e) {
       color: "currentColor",
       className: e
     }),
-    text: C,
+    text: x,
     selected: _,
     onClick: v,
     onContextMenu: e => {

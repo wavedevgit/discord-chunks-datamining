@@ -1,1 +1,1 @@
-{"id":"702977","type":"experiment","data":{"kind":"user","id":"2025-05_flamingo_intro_nux","label":"Flamingo Intro NUX","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enabled - Show Intro NUX","config":{"enabled":true}}]},"fromModule":{"id":"79041"}}
+{"id":"702977","type":"experiment","data":{"kind":"user","id":"2025-05_flamingo_intro_nux","label":"Flamingo Intro NUX","defaultConfig":{"enabled":false},"treatments":[{"id":1,"label":"Enabled - Show Intro NUX","config":{"enabled":true}}]},"fromModule":{"id":"96604"}}

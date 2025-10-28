@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 36925 **/
 /** chunk id: 199540, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -88,9 +88,9 @@ function b(e) {
     onClick: y,
     onContextMenu: j,
     onHoverChange: v,
-    onKeyDown: x,
+    onKeyDown: C,
     treeItemProps: {
-      onFocus: C
+      onFocus: x
     },
     "aria-setsize": E,
     "aria-posinset": S
@@ -137,8 +137,8 @@ function b(e) {
       onContextMenu: j,
       onMouseEnter: Z,
       onMouseLeave: T,
-      onKeyDown: x,
-      onFocus: C,
+      onKeyDown: C,
+      onFocus: x,
       focusProps: {
         enabled: false
       }

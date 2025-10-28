@@ -1,4 +1,4 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 96604 **/
 /** chunk id: 678717, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
   default: () => ew,
@@ -412,7 +412,7 @@ function eN(e) {
     properties: {
       panel: s
     }
-  }), (0, a.jsxs)(V.Gk, {
+  }), (0, a.jsxs)(H.Gk, {
     children: [(0, a.jsxs)(h.ZP, {
       className: eS.headerBar,
       toolbar: n ? null : (0, a.jsxs)(a.Fragment, {
@@ -432,7 +432,7 @@ function eN(e) {
       }), (0, a.jsx)(h.ZP.Title, {
         children: "DevTools"
       })]
-    }), (0, a.jsx)(l, {}), i(), (0, a.jsx)(V.Br, {
+    }), (0, a.jsx)(l, {}), i(), (0, a.jsx)(H.Br, {
       className: eC.layerContainer
     })]
   })

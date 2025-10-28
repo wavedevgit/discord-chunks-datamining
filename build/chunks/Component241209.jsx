@@ -1,4 +1,4 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 96604 **/
 /** chunk id: 241209, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => T
@@ -17,7 +17,7 @@ var a, r, Chunk951288 = require("./951288.js"),
   Chunk963071 = require("./963071.js"),
   Chunk154257 = require("./154257.js");
 
-function g(e, t, n) {
+function b(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -33,7 +33,7 @@ function v(e) {
     "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), a.forEach(function(t) {
-      g(e, t, n[t])
+      b(e, t, n[t])
     })
   }
   return e
@@ -119,7 +119,7 @@ let C = j(v({}, d().defaultRules), {
       react(e, t, a) {
         let r = () => (0, l.jsx)("pre", {
           children: (0, l.jsx)("code", {
-            className: s()(b.scrollbarGhostHairline, "hljs"),
+            className: s()(g.scrollbarGhostHairline, "hljs"),
             children: y(e)
           })
         }, a.key);
@@ -133,7 +133,7 @@ let C = j(v({}, d().defaultRules), {
               let n = t.highlight(e.lang, e.content, true);
               return null == n ? r() : (0, l.jsx)("pre", {
                 children: (0, l.jsx)("code", {
-                  className: s()(b.scrollbarGhostHairline, "hljs", n.language),
+                  className: s()(g.scrollbarGhostHairline, "hljs", n.language),
                   dangerouslySetInnerHTML: {
                     __html: n.value
                   }
@@ -164,7 +164,7 @@ class O extends(r = Chunk647438.PureComponent) {
     })
   }
 }
-g(O, "rules", C), g(O, "defaultProps", {
+b(O, "rules", C), b(O, "defaultProps", {
   parser: S,
   output: E
 });

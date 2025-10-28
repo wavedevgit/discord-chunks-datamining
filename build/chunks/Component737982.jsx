@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 36925 **/
 /** chunk id: 737982, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -26,10 +26,10 @@ let y = Chunk647438.memo(function(e) {
     selected: n
   } = e, [y, j] = (0, c.ZT)([o.z.GAME_SERVER_HOSTING_NEW_BADGE], t), v = i.useCallback(() => {
     y === o.z.GAME_SERVER_HOSTING_NEW_BADGE && j(m.L.USER_DISMISS), (0, d.uL)(h.Z5c.CHANNEL(t, g.oC.GAME_SERVERS))
-  }, [t, y, j]), x = i.useRef(null), C = y === o.z.GAME_SERVER_HOSTING_NEW_BADGE, E = (0, a.f9)(), S = (0, l.e7)([p.Z], () => p.Z.hasLayers());
+  }, [t, y, j]), C = i.useRef(null), x = y === o.z.GAME_SERVER_HOSTING_NEW_BADGE, E = (0, a.f9)(), S = (0, l.e7)([p.Z], () => p.Z.hasLayers());
   return (0, r.jsx)(s.yRy, {
-    targetElementRef: x,
-    shouldShow: C && !E && !S,
+    targetElementRef: C,
+    shouldShow: x && !E && !S,
     nudgeAlignIntoViewport: true,
     animationPosition: "bottom",
     position: "right",
@@ -57,7 +57,7 @@ let y = Chunk647438.memo(function(e) {
         }
         return e
       }({}, e), l = l = {
-        ref: x,
+        ref: C,
         id: "game-server-".concat(t),
         renderIcon: e => (0, r.jsx)(s.iWm, {
           size: "md",
@@ -67,7 +67,7 @@ let y = Chunk647438.memo(function(e) {
         text: _.intl.string(b.default.vCzwM7),
         selected: n,
         onClick: v,
-        trailing: C ? (0, r.jsx)(s.IGR, {
+        trailing: x ? (0, r.jsx)(s.IGR, {
           disableColor: true,
           text: _.intl.string(_.t.y2b7CA),
           className: O.badge

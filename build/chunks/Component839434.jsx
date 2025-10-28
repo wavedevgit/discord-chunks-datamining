@@ -80,7 +80,7 @@ function er(e) {
   return e
 }
 
-function es(e, t) {
+function eo(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -93,12 +93,12 @@ function es(e, t) {
   }), e
 }
 
-function eo(e) {
+function es(e) {
   let {
     flipped: t = false,
     locked: n = false,
     user: i,
-    nick: o,
+    nick: s,
     displayNameMode: c,
     displayUserMode: d,
     size: u = $.ipw.LARGE,
@@ -107,14 +107,14 @@ function eo(e) {
     context: f,
     guildId: g,
     voiceState: m
-  } = e, y = (0, Q.Z)({
+  } = e, _ = (0, Q.Z)({
     location: "overlay_voice_widget"
-  }), O = (0, a.e7)([B.default], () => B.default.showKeybindIndicators), b = (0, a.e7)([A.default], () => A.default.getId()), v = (0, a.e7)([z.Z], () => z.Z.isLocalMute(i.id)), E = (0, a.e7)([R.Z], () => R.Z.getCurrentUserActiveStream()), x = (0, a.Wu)([R.Z], () => null != E ? R.Z.getViewerIds(E) : []), S = (0, _.Z)({
+  }), b = (0, a.e7)([G.default], () => G.default.showKeybindIndicators), v = (0, a.e7)([A.default], () => A.default.getId()), O = (0, a.e7)([z.Z], () => z.Z.isLocalMute(i.id)), x = (0, a.e7)([R.Z], () => R.Z.getCurrentUserActiveStream()), E = (0, a.Wu)([R.Z], () => null != x ? R.Z.getViewerIds(x) : []), S = (0, y.Z)({
     userId: i.id,
     context: f
-  }), Z = (0, a.e7)([W.Z], () => W.Z.isPrioritySpeaker(i.id, f)), C = (0, a.e7)([R.Z], () => null != R.Z.getStreamForUser(i.id, g)), j = s.useMemo(() => null != E && E.ownerId !== i.id && x.includes(i.id), [E, i.id, x]);
+  }), C = (0, a.e7)([V.Z], () => V.Z.isPrioritySpeaker(i.id, f)), Z = (0, a.e7)([R.Z], () => null != R.Z.getStreamForUser(i.id, g)), j = o.useMemo(() => null != x && x.ownerId !== i.id && E.includes(i.id), [x, i.id, E]);
   if (d === $.OYC.ONLY_WHILE_SPEAKING && n && !S) return null;
-  let I = i.id === b,
+  let I = i.id === v,
     {
       mute: P,
       selfMute: w,
@@ -122,7 +122,7 @@ function eo(e) {
       deaf: N,
       selfDeaf: D
     } = m,
-    L = y && O,
+    L = _ && b,
     M = w && (!I || !L);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(k.ZP, {
@@ -134,19 +134,19 @@ function eo(e) {
         [en.interactive]: !n
       }),
       user: i,
-      nick: o,
+      nick: s,
       speaking: false,
       flipped: t,
-      isStreaming: C,
+      isStreaming: Z,
       iconClassName: l()(en.voiceIcon, {
         [en.locked]: n
       }),
       isWatching: j,
       isOverlay: true,
       size: u,
-      priority: Z,
-      mute: P || M || v,
-      localMute: v,
+      priority: C,
+      mute: P || M || O,
+      localMute: O,
       serverMute: P || T,
       deaf: N || D,
       serverDeaf: N,
@@ -168,8 +168,8 @@ class el extends(i = Chunk647438.PureComponent) {
       sortedVoiceStates: t,
       displayNameMode: n,
       displayUserMode: i,
-      locked: s,
-      isPreviewingInGame: o,
+      locked: o,
+      isPreviewingInGame: s,
       channel: a,
       anchor: c,
       avatarSizeMode: d
@@ -181,8 +181,8 @@ class el extends(i = Chunk647438.PureComponent) {
         member: h
       } = t;
       if (null == c || null == a || null == e) return null;
-      let f = s || o;
-      return (0, r.jsx)(eo, {
+      let f = o || s;
+      return (0, r.jsx)(es, {
         guildId: null == a ? true : a.guild_id,
         user: c,
         nick: null != (l = null == h ? true : h.nick) ? l : H.ZP.getName(c),
@@ -265,8 +265,8 @@ class el extends(i = Chunk647438.PureComponent) {
       locked: t,
       pinned: n,
       isPreviewingInGame: i,
-      channel: s,
-      application: o,
+      channel: o,
+      application: s,
       streamMetadata: a,
       streamApplication: c,
       stream: u
@@ -352,7 +352,7 @@ class el extends(i = Chunk647438.PureComponent) {
         locked: n,
         pinned: i,
         sortedVoiceStates: r,
-        channel: s
+        channel: o
       } = module;
     return 0 !== Chunk951288.length && null != exports && null != Chunk647438 && (!require || !!i)
   }
@@ -362,8 +362,8 @@ class el extends(i = Chunk647438.PureComponent) {
       lobbyId: t,
       locked: n,
       pinned: i,
-      isPreviewingInGame: s,
-      channel: o
+      isPreviewingInGame: o,
+      channel: s
     } = this.props;
     if (null == Chunk120356 || null == module || !this.shouldDisplay()) return null;
     let a = Chunk981631.t_t.UNPINNED;
@@ -393,7 +393,7 @@ class el extends(i = Chunk647438.PureComponent) {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("69220")]).then(n.bind(n, 881351));
-        return n => (0, r.jsx)(e, es(er({}, n), {
+        return n => (0, r.jsx)(e, eo(er({}, n), {
           user: t,
           showMediaItems: true,
           mediaEngineContext: i
@@ -407,9 +407,9 @@ class el extends(i = Chunk647438.PureComponent) {
       } = this.props;
       (0, h.ZDy)(async () => {
         let {
-          default: s
+          default: o
         } = await n.e("51749").then(n.bind(n, 800740));
-        return n => (0, r.jsx)(s, es(er({}, n), {
+        return n => (0, r.jsx)(o, eo(er({}, n), {
           mediaEngineContext: e,
           title: null != t ? null : i
         }))
@@ -432,48 +432,48 @@ class el extends(i = Chunk647438.PureComponent) {
       let {
         stream: e
       } = this.props;
-      null != e && y.g((0, S.V9)(e))
+      null != e && _.g((0, S.V9)(e))
     })
   }
 }
 
 function ea(e) {
   var t;
-  let n = (0, a.e7)([V.Z, L.Z], () => L.Z.getChannel(V.Z.getVoiceChannelId())),
-    i = (0, b.ZP)(n),
-    o = function() {
-      let [e] = (0, a.e7)([G.ZP, w.Z, V.Z, L.Z], () => {
-        let e = L.Z.getChannel(V.Z.getVoiceChannelId());
+  let n = (0, a.e7)([W.Z, L.Z], () => L.Z.getChannel(W.Z.getVoiceChannelId())),
+    i = (0, v.ZP)(n),
+    s = function() {
+      let [e] = (0, a.e7)([B.ZP, w.Z, W.Z, L.Z], () => {
+        let e = L.Z.getChannel(W.Z.getVoiceChannelId());
         return null == e ? [
           [], false
-        ] : e.isGuildStageVoice() ? [w.Z.getMutableParticipants(e.id, T.pV.SPEAKER), w.Z.getParticipantsVersion(e.id)] : [G.ZP.getVoiceStatesForChannel(e), G.ZP.getVoiceStateVersion(e.getGuildId())]
+        ] : e.isGuildStageVoice() ? [w.Z.getMutableParticipants(e.id, T.pV.SPEAKER), w.Z.getParticipantsVersion(e.id)] : [B.ZP.getVoiceStatesForChannel(e), B.ZP.getVoiceStateVersion(e.getGuildId())]
       }, [], F.Q), t = (0, a.e7)([A.default], () => A.default.getId()), n = (0, Q.Z)({
         location: "voice_widget"
       });
-      return s.useMemo(() => n ? [...e].sort((e, n) => e.user.id === t ? false : +(n.user.id === t)) : e, [e, t, n])
+      return o.useMemo(() => n ? [...e].sort((e, n) => e.user.id === t ? false : +(n.user.id === t)) : e, [e, t, n])
     }(),
     l = (0, a.e7)([R.Z], () => R.Z.getStreamerActiveStreamMetadata()),
-    c = (0, a.e7)([E.ZP, U.Z, M.Z], () => {
+    c = (0, a.e7)([x.ZP, U.Z, M.Z], () => {
       var e;
-      let t = (0, j.Z)(E.ZP, U.Z);
+      let t = (0, j.Z)(x.ZP, U.Z);
       return null != t ? null == (e = M.Z.getGameByGameData(t)) ? true : e.id : null
     }),
-    d = (0, O.q)(c),
-    u = (0, a.cj)([E.ZP, U.Z, R.Z, B.default], () => {
-      let e = (0, j.Z)(E.ZP, U.Z),
+    d = (0, b.q)(c),
+    u = (0, a.cj)([x.ZP, U.Z, R.Z, G.default], () => {
+      let e = (0, j.Z)(x.ZP, U.Z),
         t = R.Z.getCurrentUserActiveStream();
       return {
-        displayUserMode: B.default.getDisplayUserMode(),
-        displayNameMode: B.default.getDisplayNameMode(),
-        avatarSizeMode: B.default.getAvatarSizeMode(),
+        displayUserMode: G.default.getDisplayUserMode(),
+        displayNameMode: G.default.getDisplayNameMode(),
+        avatarSizeMode: G.default.getAvatarSizeMode(),
         streamApplication: (null == l ? true : l.pid) === (0, Y.getPID)() ? (0, I.Z)(e) : null,
         stream: t
       }
     });
-  return (0, r.jsx)(el, es(er(es(er({}, u), {
+  return (0, r.jsx)(el, eo(er(eo(er({}, u), {
     application: d
   }), e), {
-    sortedVoiceStates: o,
+    sortedVoiceStates: s,
     channel: n,
     title: null != i ? i : "",
     streamMetadata: l,

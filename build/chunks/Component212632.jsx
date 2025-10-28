@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
@@ -34,7 +34,7 @@ function g(e) {
   let {
     position: t,
     onChange: n
-  } = e, [s] = r.useState(() => "notification-position-selector-".concat(p++)), g = t === a._vf.DISABLED ? c.intl.string(c.t.R6LxVf) : c.intl.formatToPlainString(c.t["XXHDM/"], {
+  } = e, [o] = r.useState(() => "notification-position-selector-".concat(p++)), g = t === a._vf.DISABLED ? c.intl.string(c.t.R6LxVf) : c.intl.formatToPlainString(c.t["XXHDM/"], {
     position: h(t)
   });
   return (0, i.jsxs)("div", {
@@ -42,11 +42,11 @@ function g(e) {
       within: true,
       offset: false,
       children: (0, i.jsx)("div", {
-        className: o()(d.wrapper, {
+        className: s()(d.wrapper, {
           [d.disabledSelected]: t === a._vf.DISABLED
         }),
         children: f.map(e => (0, i.jsxs)("label", {
-          className: o()({
+          className: s()({
             [d.selected]: e === t,
             [d.disabled]: e === a._vf.DISABLED,
             [d.topRight]: e === a._vf.TOP_RIGHT,
@@ -60,7 +60,7 @@ function g(e) {
             className: d.disabledIcon
           }) : null, (0, i.jsx)("input", {
             type: "radio",
-            name: s,
+            name: o,
             value: e,
             onChange: t => n(t, e),
             className: d.hiddenInput

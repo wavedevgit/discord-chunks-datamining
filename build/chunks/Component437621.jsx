@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 36925 **/
 /** chunk id: 437621, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => G
@@ -105,8 +105,8 @@ class M extends Chunk98597.ZP {
       forceTopLevelThread: y,
       embeddedApps: j,
       resolvedUnreadSetting: v,
-      withGuildIcon: x,
-      enableActivities: C
+      withGuildIcon: C,
+      enableActivities: x
     } = this.props, E = Chunk9156 && null != Chunk430824 && Chunk430824.length > 0, S = (0, Chunk873696.D)(Chunk665906), I = (0, Chunk951288.jsx)("li", {
       className: o()(this.getClassName(), {
         [Chunk55940.disabled]: this.isDisabled(),
@@ -269,11 +269,11 @@ function G(e) {
   } = e, {
     hasActiveThreads: c,
     hasMoreActiveThreads: u
-  } = (0, O.JQ)(t), d = (0, a.cj)([x.ZP], () => ({
-    unread: x.ZP.hasUnread(t.id),
-    ackMessageId: x.ZP.ackMessageId(t.id),
-    isLowImportanceMention: x.ZP.getIsMentionLowImportance(t.id)
-  })), g = (0, a.e7)([C.ZP], () => C.ZP.resolveUnreadSetting(t)), m = (0, a.cj)([y.Z, v.Z], () => {
+  } = (0, O.JQ)(t), d = (0, a.cj)([C.ZP], () => ({
+    unread: C.ZP.hasUnread(t.id),
+    ackMessageId: C.ZP.ackMessageId(t.id),
+    isLowImportanceMention: C.ZP.getIsMentionLowImportance(t.id)
+  })), g = (0, a.e7)([x.ZP], () => x.ZP.resolveUnreadSetting(t)), m = (0, a.cj)([y.Z, v.Z], () => {
     let e = y.Z.getChannel(t.parent_id);
     return {
       canManageChannel: v.Z.can(T.Plq.MANAGE_CHANNELS, t),
@@ -282,7 +282,7 @@ function G(e) {
   }), j = (0, a.e7)([_.Z], () => _.Z.shouldIndicateNewChannel(n.id, t.id)), {
     needSubscriptionToAccess: E,
     isSubscriptionGated: S
-  } = (0, b.Z)(t.id), I = (0, a.e7)([C.ZP], () => C.ZP.isFavorite(n.id, t.id)), N = (0, h.$5)(t), Z = (0, p.NX)(t.id), A = (0, P.Z)({
+  } = (0, b.Z)(t.id), I = (0, a.e7)([x.ZP], () => x.ZP.isFavorite(n.id, t.id)), N = (0, h.$5)(t), Z = (0, p.NX)(t.id), A = (0, P.Z)({
     channel: t,
     isChannelCollapsed: false,
     isChannelSelected: s,

@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 36925 **/
 /** chunk id: 385902, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   K: () => O,
@@ -51,8 +51,8 @@ function O(e, t) {
   var n, _, O, y;
   let j = (0, l.e7)([o.Z], () => o.Z.getGuild(e)),
     v = (0, l.e7)([a.Z], () => a.Z.hasLayers()),
-    x = null != (O = (0, u.Z)(e)) && O,
-    C = (0, c.q8)(e, t),
+    C = null != (O = (0, u.Z)(e)) && O,
+    x = (0, c.q8)(e, t),
     E = (0, l.e7)([s.Z], () => s.Z.getStateForGuild(e)),
     S = null == E || null == (n = E.allPowerups) ? true : n[i.A$],
     I = (0, d.ZP)(e, S),
@@ -66,7 +66,7 @@ function O(e, t) {
     {
       onActivate: w
     } = (0, f._C)(e, N),
-    A = !v && x && C && null != S && !T && I.type === h.A3.POWERUP_ACTIVATED && null != P && null != N && null != j,
+    A = !v && C && x && null != S && !T && I.type === h.A3.POWERUP_ACTIVATED && null != P && null != N && null != j,
     R = r.useCallback(e => {
       w(e)
     }, [w]),

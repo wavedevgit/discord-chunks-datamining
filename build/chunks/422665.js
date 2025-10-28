@@ -1,5 +1,5 @@
-/** Chunk was on 86872 **/
-/** chunk id: 422665, original params: e,n,t (module,exports,require) **/
+/** Chunk was on 96604 **/
+/** chunk id: 422665, original params: e,t,n (module,exports,require) **/
 module.exports = {
   accordionContainer: "accordionContainer__7e354",
   content: "content__7e354",

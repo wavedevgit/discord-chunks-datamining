@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 36925 **/
 /** chunk id: 791914, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -37,10 +37,10 @@ function j(e) {
   }), j = (0, f.Us)({
     location: "RecentsHeader"
   }), {
-    enabled: x
+    enabled: C
   } = u.Z.useExperiment({
     location: "RecentsHeader"
-  }), C = (0, i.e7)([c.Z], () => c.Z.getUnseenInviteCount()), E = (0, i.e7)([p.Z], () => p.Z.getOverdueMessageReminderCount());
+  }), x = (0, i.e7)([c.Z], () => c.Z.getUnseenInviteCount()), E = (0, i.e7)([p.Z], () => p.Z.getOverdueMessageReminderCount());
   return (0, r.jsxs)(a.h4, {
     className: y.header,
     children: [(0, r.jsxs)("div", {
@@ -92,11 +92,11 @@ function j(e) {
           id: l.X.MENTIONS,
           className: y.tab,
           children: O.intl.string(O.t.GRZF96)
-        }), x ? (0, r.jsxs)(o.njP.Item, {
+        }), C ? (0, r.jsxs)(o.njP.Item, {
           "aria-label": "game_invites",
           id: l.X.GAME_INVITES,
           className: y.tab,
-          children: [O.intl.string(O.t.apq3cU), C > 0 ? (0, r.jsx)(o.fWl, {
+          children: [O.intl.string(O.t.apq3cU), x > 0 ? (0, r.jsx)(o.fWl, {
             color: s.Z.STATUS_DANGER,
             className: y.iconBadge
           }) : null]

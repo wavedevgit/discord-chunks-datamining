@@ -1,6 +1,5 @@
-/** Chunk was on 5873 **/
+/** Chunk was on 8895 **/
 /** chunk id: 763740, original params: e,t,n (module,exports,require) **/
-"use strict";
 module.exports = {
   previewContents: "previewContents__36852",
   previewBox: "previewBox__36852",

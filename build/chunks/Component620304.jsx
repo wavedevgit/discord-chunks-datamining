@@ -1,7 +1,7 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 36925 **/
 /** chunk id: 620304, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => C
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -27,7 +27,7 @@ function v(e) {
   let {
     guild: t,
     withMargin: l
-  } = e, v = (0, b.Z)(t), x = (0, m.Z)(t.id), C = i.useCallback(() => {
+  } = e, v = (0, b.Z)(t), C = (0, m.Z)(t.id), x = i.useCallback(() => {
     (0, _.Z)(t.id, p.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY)
   }, [t.id]), E = (0, c.e7)([h.Z], () => {
     var e;
@@ -61,13 +61,13 @@ function v(e) {
       }
     },
     onClick: () => {
-      C()
+      x()
     },
     className: o()(j.container, {
       [j.containerWithMargin]: l
     }),
     onContextMenu: e => {
-      x && (0, d.jW)(e, async () => {
+      C && (0, d.jW)(e, async () => {
         let {
           default: e
         } = await n.e("8570").then(n.bind(n, 651138));
@@ -150,7 +150,7 @@ function v(e) {
   })
 }
 
-function x(e) {
+function C(e) {
   let {
     guild: t,
     withMargin: n

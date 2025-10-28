@@ -1,4 +1,4 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 96604 **/
 /** chunk id: 619733, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   AK: () => c,
@@ -9,7 +9,7 @@ require.d(exports, {
   Sg: () => m,
   TG: () => s,
   YX: () => u,
-  Z4: () => b,
+  Z4: () => g,
   nd: () => f,
   tq: () => p,
   uz: () => x
@@ -52,4 +52,4 @@ let o = {
   f = {
     [Chunk763600.Z.SHOCKBYTE]: "https://shockbyte.com/legal/acceptable-use-policy"
   },
-  b = (e, t) => "https://discord.sjc1.qualtrics.com/jfe/form/SV_2h34PnQLPTCjTTM?user_id=".concat(e, "&guild_id=").concat(t)
+  g = (e, t) => "https://discord.sjc1.qualtrics.com/jfe/form/SV_2h34PnQLPTCjTTM?user_id=".concat(e, "&guild_id=").concat(t)

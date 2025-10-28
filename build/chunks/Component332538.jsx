@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 36925 **/
 /** chunk id: 332538, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Wj: () => T,
@@ -39,7 +39,7 @@ function Z(e) {
       trailing: _,
       showUnread: N
     } = function(e, t, n) {
-      let l = (0, C.Z)(e).available,
+      let l = (0, x.Z)(e).available,
         {
           shouldShow: o
         } = (0, S._)(e, "useGuildPowerupsChannelListIndicators"),
@@ -75,7 +75,7 @@ function Z(e) {
     Z = function(e, t) {
       let [n, r] = (0, d.US)(null != t ? [a.z.GUILD_POWERUP_PERKS_COACHMARK] : []), s = n === a.z.GUILD_POWERUP_PERKS_COACHMARK, {
         available: c
-      } = (0, C.Z)(e), u = (0, o.e7)([f.Z], () => {
+      } = (0, x.Z)(e), u = (0, o.e7)([f.Z], () => {
         var t, n;
         return null != (n = null == (t = f.Z.getGuild(e)) ? true : t.features.has(P.GuildFeatures.GAME_SERVERS)) && n
       }), _ = (0, o.e7)([b.Z], () => b.Z.getLowestGameCostForGuild(e)), O = function(e, t) {
@@ -133,7 +133,7 @@ function Z(e) {
               return null != n && !!(l >= n)
             }) ? [] : r.map(r => {
               let i = t.allPowerups[r];
-              return null == i || n < i.cost || (0, x.e)(e, i, "maybeGetPerkPurchaseablePopoutDCF") ? null : i
+              return null == i || n < i.cost || (0, C.e)(e, i, "maybeGetPerkPurchaseablePopoutDCF") ? null : i
             })).filter(h.lm);
           if (0 !== o.length) {
             if (1 === o.length && !(0, p.OY)(a.C.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK, e)) return {

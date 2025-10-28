@@ -1,4 +1,4 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 96604 **/
 /** chunk id: 572444, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -135,12 +135,12 @@ function y() {
     null == (e = S.current) || module.stop(), S.current = null, C(null)
   }, []);
 
-  function V() {
+  function H() {
     Chunk131951.Z.getMediaEngine().stopRecordingRawSamples()
   }
 
-  function H(e) {
-    if (t && V(), z(), null == G) return;
+  function V(e) {
+    if (t && H(), z(), null == G) return;
     let n = G.createBufferSource();
     n.buffer = e.audioBuffer, E.current = G.createGain(), E.current.gain.value = O, n.connect(E.current), E.current.connect(G.destination), n.loop = true, n.start(), S.current = n, C(e)
   }
@@ -213,20 +213,20 @@ function y() {
         children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
           label: "Auto Threshold",
           checked: k,
-          onChange: e => d.Z.setMode(b.pM.VOICE_ACTIVITY, {
+          onChange: e => d.Z.setMode(g.pM.VOICE_ACTIVITY, {
             autoThreshold: e
           })
         }), k && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
           children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
             label: "Use Krisp VAD",
             checked: R,
-            onChange: e => d.Z.setMode(b.pM.VOICE_ACTIVITY, {
+            onChange: e => d.Z.setMode(g.pM.VOICE_ACTIVITY, {
               vadUseKrisp: e
             })
           }), R && (0, Chunk951288.jsx)(Chunk481060.iRW, {
             label: "Krisp VAD Activation Threshold",
             initialValue: A,
-            onValueChange: e => d.Z.setMode(b.pM.VOICE_ACTIVITY, {
+            onValueChange: e => d.Z.setMode(g.pM.VOICE_ACTIVITY, {
               vadKrispActivationThreshold: e
             }),
             minValue: 0,
@@ -235,7 +235,7 @@ function y() {
         }), (0, Chunk951288.jsx)(Chunk481060.rsf, {
           label: "Run Before Processing",
           checked: null != F && F,
-          onChange: e => d.Z.setMode(b.pM.VOICE_ACTIVITY, {
+          onChange: e => d.Z.setMode(g.pM.VOICE_ACTIVITY, {
             vadDuringPreProcess: e
           })
         })]
@@ -250,7 +250,7 @@ function y() {
           children: "Recorder"
         }), (0, Chunk951288.jsx)(Chunk755721.zx, {
           color: exports ? Chunk755721.zx.Colors.RED : Chunk755721.zx.Colors.BRAND,
-          onClick: exports ? V : function() {
+          onClick: exports ? H : function() {
             z(), require(true), Chunk846027.Z.setLoopback("krisp_test", true), Chunk131951.Z.getMediaEngine().startRecordingRawSamples((t, a, r) => {
               n(false), d.Z.setLoopback("krisp_test", false);
               let l = new AudioBuffer({
@@ -291,7 +291,7 @@ function y() {
         }), Chunk345959.map((e, t) => (0, a.jsx)(_, {
           recording: e,
           playing: e === y,
-          onPlay: H,
+          onPlay: V,
           onStop: z
         }, t))]
       })]

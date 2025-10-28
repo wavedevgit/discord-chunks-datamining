@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  s = require.n(Chunk120356),
   Chunk481060 = require("./481060.js"),
   Chunk518084 = require("./518084.jsx"),
   Chunk981631 = require("./981631.js"),
@@ -16,17 +16,17 @@ var Chunk951288 = require("./951288.js"),
 let p = function(e) {
   let t, {
       title: n,
-      header: s,
+      header: o,
       children: p,
       renderSettings: h,
       onDragStart: f
     } = e,
     g = r.useRef(null);
   return t = null != n ? (0, i.jsxs)(a.ZP.Bar, {
-    className: o()(u.header, u.draggableStartArea),
+    className: s()(u.header, u.draggableStartArea),
     onMouseDown: f,
     children: [(0, i.jsx)(a.ZP.Content, {
-      className: o()(u.headerTitle, u.draggableStartArea),
+      className: s()(u.headerTitle, u.draggableStartArea),
       dynamicSize: true,
       children: n
     }), (0, i.jsx)(a.ZP.Content, {
@@ -71,7 +71,7 @@ let p = function(e) {
         }
       })
     })]
-  }) : s, (0, i.jsxs)("div", {
+  }) : o, (0, i.jsxs)("div", {
     className: u.sidebar,
     children: [t, (0, i.jsx)("div", {
       className: u.children,

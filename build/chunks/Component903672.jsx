@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 36925 **/
 /** chunk id: 903672, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Z
@@ -68,11 +68,11 @@ function Z(e) {
     everyoneFilter: j.ZP.everyoneFilter
   })), v = (0, m.Us)({
     location: "RecentMentions"
-  }), x = (0, p.Z)(g), C = (0, p.Z)(b), P = (0, p.Z)(O);
+  }), C = (0, p.Z)(g), x = (0, p.Z)(b), P = (0, p.Z)(O);
   i.useEffect(() => {
     if (!j.ZP.hasLoadedEver) return void N(n, true);
-    (null != x && g !== x || null != C && b !== C || null != P && O !== P) && N(n, true)
-  }, [x, g, C, b, P, O, n, true]), (0, d.ZP)(() => {
+    (null != C && g !== C || null != x && b !== x || null != P && O !== P) && N(n, true)
+  }, [C, g, x, b, P, O, n, true]), (0, d.ZP)(() => {
     (null == l ? true : l.some(h.k5)) && (c.Z.clearMentions(), N(n, true))
   }), i.useEffect(() => () => {
     c.Z.truncateMentions(E.DJj)
@@ -126,7 +126,7 @@ function w(e) {
     a = !!(0, f.qF)(l) && !o;
   return (0, r.jsxs)("div", {
     className: I.container,
-    children: [(0, r.jsx)(x.Z, {
+    children: [(0, r.jsx)(C.Z, {
       channel: l,
       gotoChannel: n,
       children: null != i ? (0, r.jsx)(s.M0o, {

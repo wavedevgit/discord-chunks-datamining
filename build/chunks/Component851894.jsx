@@ -15,9 +15,9 @@ var Chunk951288 = require("./951288.js"),
   Chunk100527 = require("./100527.js"),
   Chunk367907 = require("./367907.js"),
   Chunk906732 = require("./906732.jsx"),
-  Chunk22267 = require("./22267.jsx"),
   Chunk346811 = require("./346811.js"),
   Chunk850020 = require("./850020.js"),
+  Chunk566697 = require("./566697.jsx"),
   Chunk150039 = require("./150039.js"),
   Chunk296810 = require("./296810.jsx"),
   Chunk678135 = require("./678135.jsx"),
@@ -123,7 +123,7 @@ function Z(e) {
   } = G, H = U(G, ["source", "pendingAvatar", "pendingNameplate"]), Y = (0, y.SD)({
     userId: a.id,
     image: F
-  }), W = (0, m.K)({
+  }), W = (0, h.K)({
     user: a,
     guildId: null == t ? true : t.id
   }), {
@@ -138,7 +138,7 @@ function Z(e) {
   }, [Z]);
   let {
     enabled: z
-  } = h.Z.useConfig({
+  } = p.Z.useConfig({
     location: "GuildIdentitySettingsPage"
   });
   return k ? (0, r.jsx)(u.Z, {}) : x ? (0, r.jsxs)(_.Gt, {
@@ -170,7 +170,7 @@ function Z(e) {
           canUsePremiumCustomization: S.ZP.canUsePremiumProfileCustomization(a),
           onUpsellClick: B
         })),
-        nameplatePreview: z ? (0, r.jsx)(p.Z, j(M({}, H), {
+        nameplatePreview: z ? (0, r.jsx)(m.Z, j(M({}, H), {
           pendingDisplayNameStyles: K,
           user: a,
           guildId: null == t ? true : t.id,

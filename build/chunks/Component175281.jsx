@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 36925 **/
 /** chunk id: 175281, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => A
@@ -62,8 +62,8 @@ function N(e) {
     showBackdrop: t
   } = e;
   return (0, r.jsx)("div", {
-    className: o()(C.backdrop, {
-      [C.show]: t
+    className: o()(x.backdrop, {
+      [x.show]: t
     })
   })
 }
@@ -77,29 +77,29 @@ function Z() {
         i = (0, g.UD)(t),
         l = (0, g.U6)(t);
       return (0, r.jsxs)("div", {
-        className: C.keyboardShortcutSection,
+        className: x.keyboardShortcutSection,
         children: [(0, r.jsxs)("div", {
           children: [(0, r.jsx)(h.Heading, {
             variant: "heading-lg/semibold",
             children: i
           }), null != l && (0, r.jsx)(h.Text, {
-            className: C.keybindGroupDescription,
+            className: x.keybindGroupDescription,
             variant: "text-sm/normal",
             children: l
           })]
         }), (0, r.jsx)("div", {
-          className: C.keyboardShortcutListGroup,
+          className: x.keyboardShortcutListGroup,
           children: n.map((e, t) => {
             var n;
             return (null == (n = e.predicate) ? true : n.call(e)) === false ? null : (0, r.jsxs)("div", {
-              className: C.keybindGroup,
+              className: x.keybindGroup,
               children: [(0, r.jsx)(h.Text, {
                 variant: "text-sm/normal",
                 children: e.description
               }), (0, r.jsx)("div", {
                 className: "keybind-shortcuts",
                 children: e.binds.map(e => (0, r.jsx)(h.M2$, {
-                  className: C.keybindKey,
+                  className: x.keybindKey,
                   shortcut: e
                 }, e))
               })]
@@ -274,8 +274,8 @@ function w(e) {
     }
   }, [s]), (0, r.jsx)(h.P3F, {
     onClick: u,
-    className: o()(C.arrow, l, {
-      [C.active]: t || s
+    className: o()(x.arrow, l, {
+      [x.active]: t || s
     }),
     children: a
   })
@@ -296,11 +296,11 @@ function A(e) {
     children: [(0, r.jsx)(N, {
       showBackdrop: s
     }), (0, r.jsx)(h.Y0X, {
-      className: o()(C.noBackground, {
-        [C.noShadow]: l
+      className: o()(x.noBackground, {
+        [x.noShadow]: l
       }),
       size: h.CgR.DYNAMIC,
-      "aria-label": x.intl.string(x.t.T9DA2K),
+      "aria-label": C.intl.string(C.t.T9DA2K),
       transitionState: t,
       parentComponent: "KeyboardShortcutsModal",
       children: (0, r.jsx)(f.W, {

@@ -1,8 +1,8 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 36925 **/
 /** chunk id: 968847, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => G,
-  x: () => x
+  x: () => C
 }), require("./388685.js");
 var r, i, l, Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -21,15 +21,15 @@ var r, i, l, Chunk392711 = require("./392711.js"),
   Chunk823379 = require("./823379.js"),
   Chunk734307 = require("./734307.js"),
   Chunk981631 = require("./981631.js"),
-  x = ((i = {}).HIDDEN = "hidden", i.UNREAD = "unread", i.MENTIONS = "mentions", i.VOICE_CHANNELS = "voice-channels", i);
-let C = {
+  C = ((i = {}).HIDDEN = "hidden", i.UNREAD = "unread", i.MENTIONS = "mentions", i.VOICE_CHANNELS = "voice-channels", i);
+let x = {
     mode: "hidden",
     mentionCount: 0,
     targetChannelId: null
   },
   E = {
-    topBar: C,
-    bottomBar: C
+    topBar: x,
+    bottomBar: x
   },
   S = {},
   I = {};
@@ -75,7 +75,7 @@ function T(e) {
   }
   let y = 0,
     v = false,
-    x = 0,
+    C = 0,
     E = false;
   if (p || d)
     for (let e = b.length - 1; e >= 0; e--) {
@@ -86,14 +86,14 @@ function T(e) {
     for (let e = 0; e < O.length; e++) {
       let t = O[e];
       if (!p && !d) break;
-      (P(t.id) || a().some(t.threadIds, P)) && (null == u && (u = t.id), E = true), (N(t.id) || a().some(t.threadIds, N)) && (null == c && (c = t.id), x += m.ZP.getMentionCount(t.id), x += a().sumBy(t.threadIds, m.ZP.getMentionCount))
+      (P(t.id) || a().some(t.threadIds, P)) && (null == u && (u = t.id), E = true), (N(t.id) || a().some(t.threadIds, N)) && (null == c && (c = t.id), C += m.ZP.getMentionCount(t.id), C += a().sumBy(t.threadIds, m.ZP.getMentionCount))
     }
   let T = null,
     w = null,
     A = null != (r = null == h ? true : h.getChannelRecords()) ? r : [];
-  d && x > 0 ? T = {
+  d && C > 0 ? T = {
     mode: "mentions",
-    mentionCount: x,
+    mentionCount: C,
     targetChannelId: c
   } : !f && a().some(A, Z) ? T = {
     mode: "voice-channels",
@@ -115,8 +115,8 @@ function T(e) {
   let R = null != w && (null == T || "mentions" !== T.mode && "mentions" === w.mode),
     D = null != T && ("mentions" === T.mode || !R);
   return S[e] = {
-    topBar: R && null != w ? w : C,
-    bottomBar: D && null != T ? T : C
+    topBar: R && null != w ? w : x,
+    bottomBar: D && null != T ? T : x
   }, true
 }
 let w = a().throttle(T, 200);

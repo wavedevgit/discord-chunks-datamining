@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 36925 **/
 /** chunk id: 809780, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   As: () => F,
@@ -235,9 +235,9 @@ class z extends Chunk836560.EventEmitter {
         collapsedChannels: i,
         loadState: l
       } = this.state, o = u().findIndex(r, e => e.channelId === t), a = r[o], s = !a.collapsed;
-      i[t] = s, (0, x.BU)(n, t, e => {
+      i[t] = s, (0, C.BU)(n, t, e => {
         e.collapsedInInbox = s
-      }, x.fy.FREQUENT_USER_ACTION), this.setState({
+      }, C.fy.FREQUENT_USER_ACTION), this.setState({
         scrollToChannelIndex: o,
         collapsedChannels: i,
         loadState: "done" !== l || s || a.isFullyLoaded ? l : "loaded",

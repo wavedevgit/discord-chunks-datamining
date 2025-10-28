@@ -1,4 +1,4 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 96604 **/
 /** chunk id: 220141, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -36,7 +36,7 @@ function p(e) {
     }(e, ["handleOpenUserProfileModal", "markAsDismissed"]);
   let {
     trackUserProfileEditAction: f
-  } = (0, i.KZ)(), b = c.rR.filter(e => o.Ki.includes(e)), g = r.useCallback(() => {
+  } = (0, i.KZ)(), g = c.rR.filter(e => o.Ki.includes(e)), b = r.useCallback(() => {
     h(d.L.TAKE_ACTION), f({
       action: "PRESS_ADD_WIDGET"
     }), p()
@@ -66,10 +66,10 @@ function p(e) {
     children: (0, a.jsx)("ul", {
       "aria-label": u.intl.string(u.t["+EIBSA"]),
       className: m.options,
-      children: b.map(e => (0, a.jsx)(s.Z, {
+      children: g.map(e => (0, a.jsx)(s.Z, {
         widgetType: e,
         size: "medium",
-        onAddWidget: g,
+        onAddWidget: b,
         trackUserProfileEditAction: f
       }, e))
     })

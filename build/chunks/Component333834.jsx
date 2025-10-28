@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 36925 **/
 /** chunk id: 333834, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => D
@@ -192,7 +192,7 @@ function D(e) {
       return (t.length > 0 || n.length > 0) && (s().each(n, e => {
         e.kind === S.fL.MENTION ? r[S.KZ.UNREAD].push(e) : e.channelId in i[S.KZ.UNREAD] ? i[S.KZ.UNREAD][e.channelId].push(e) : i[S.KZ.UNREAD][e.channelId] = [e]
       }), s().each(t, e => {
-        let t = (0, x.bl)(e);
+        let t = (0, C.bl)(e);
         e.kind === S.fL.MENTION ? r[t].push(e) : e.channelId in i[t] ? i[t][e.channelId].push(e) : i[t][e.channelId] = [e]
       }), s().each(A, t => {
         [...Object.values(i[t]).map(e => e.reverse()), ...r[t].map(e => [e])].sort((e, t) => _.default.compare(t[0].id, e[0].id)).forEach(n => {
@@ -221,7 +221,7 @@ function D(e) {
     }, [t, n, a, H, z, Y, N, d, q, X, D]),
     J = Q[Q.length - 1],
     $ = i.isValidElement(J) && J.type === w,
-    ee = (0, C.d)(e => e.setInboxReadState);
+    ee = (0, x.d)(e => e.setInboxReadState);
   i.useEffect(() => {
     X || ee(0 === Y.UNREAD.length)
   }, [Y, X, ee]);

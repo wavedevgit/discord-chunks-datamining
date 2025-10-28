@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 36925 **/
 /** chunk id: 653577, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -28,15 +28,15 @@ function _(e) {
     onClick: O,
     enableHangStatus: y,
     showEmptyChannelTopic: j
-  } = e, v = (0, a.e7)([u.Z], () => u.Z.getChannelStatus(t)), x = null != v && v.length > 0, C = (0, c.ZP)(t, true), E = (!y || !!j) && C, S = null != _ && _.length > 0;
+  } = e, v = (0, a.e7)([u.Z], () => u.Z.getChannelStatus(t)), C = null != v && v.length > 0, x = (0, c.ZP)(t, true), E = (!y || !!j) && x, S = null != _ && _.length > 0;
   if (i.useEffect(() => {
-      x && f.default.track(h.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {
+      C && f.default.track(h.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {
         channel_id: t.id,
         guild_id: t.guild_id
       })
-    }, [x, t.id, t.guild_id]), null == t.guild_id) return null;
+    }, [C, t.id, t.guild_id]), null == t.guild_id) return null;
   let I = o()(m.statusDiv, n && E ? m.hoverable : null);
-  return x ? (0, r.jsx)(s.P3F, {
+  return C ? (0, r.jsx)(s.P3F, {
     className: I,
     onClick: E ? O : true,
     children: (0, r.jsx)(s.Text, {

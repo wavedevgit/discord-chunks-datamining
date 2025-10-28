@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 36925 **/
 /** chunk id: 919436, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => D
@@ -274,9 +274,9 @@ let D = Chunk647438.forwardRef(function(e, t) {
       autoTrackExposure: false
     }),
     v = o === n,
-    x = false,
-    C = false;
-  v && (x = u === S.WtW.VOICE, C = u === S.WtW.VIDEO);
+    C = false,
+    x = false;
+  v && (C = u === S.WtW.VOICE, x = u === S.WtW.VIDEO);
   let E = (0, c.dQu)(c.TVs.modules.guildbar.AVATAR_SIZE);
   return (0, i.jsx)(R, T(Z({}, e), {
     ref: t,
@@ -284,8 +284,8 @@ let D = Chunk647438.forwardRef(function(e, t) {
     unread: y > 0,
     selected: g === n,
     badge: y,
-    audio: x,
-    video: C,
+    audio: C,
+    video: x,
     stream: p,
     isCurrentUserInThisDMCall: v,
     isGDMFacepileEnabled: j,

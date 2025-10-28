@@ -1,4 +1,4 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 96604 **/
 /** chunk id: 87454, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -20,7 +20,7 @@ let d = Chunk647438.memo(function(e) {
     handleToggleDismissState: p
   } = (0, c.Z)(u), [h, x] = r.useState(false), f = r.useCallback(() => {
     null == d || d(n), p()
-  }, [d, p, n]), b = r.useCallback(e => {
+  }, [d, p, n]), g = r.useCallback(e => {
     e.preventDefault(), x(true), navigator.clipboard.writeText(n.toLowerCase())
   }, [n]);
   return (0, a.jsxs)(a.Fragment, {
@@ -32,7 +32,7 @@ let d = Chunk647438.memo(function(e) {
         size: "sm",
         variant: "icon-only",
         icon: h ? i.C2q : i.zTD,
-        onClick: b,
+        onClick: g,
         "aria-label": h ? "Copied" : "Copy"
       }), (0, a.jsx)(i.rsf, {
         label: "".concat(n.toLowerCase(), " (").concat(l.z[n], ")"),

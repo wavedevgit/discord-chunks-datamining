@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 36925 **/
 /** chunk id: 378844, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   R: () => O,
@@ -47,13 +47,13 @@ let y = e => {
   } = e, y = (0, u.Dt)(), {
     notClaimed: j,
     notEmailVerified: v,
-    notPhoneVerified: x,
-    newAccount: C,
+    notPhoneVerified: C,
+    newAccount: x,
     newMember: E
   } = (0, l.e7)([p.Z], () => p.Z.getCheck(r), [r]), S = 0 === t ? m.intl.string(m.t["6zY8BI"]) : null, I = null, P = null;
-  return (0 === t && (j ? (I = m.intl.string(m.t.IRxUlG), P = m.intl.string(m.t.fiNVin)) : x ? (I = m.intl.string(m.t.vW8iUF), P = m.intl.string(m.t["50gfOv"])) : v ? (I = m.intl.string(m.t.vdSOpz), P = m.intl.string(m.t.lm1UKt)) : E ? (I = m.intl.formatToPlainString(m.t.v1ktYb, {
+  return (0 === t && (j ? (I = m.intl.string(m.t.IRxUlG), P = m.intl.string(m.t.fiNVin)) : C ? (I = m.intl.string(m.t.vW8iUF), P = m.intl.string(m.t["50gfOv"])) : v ? (I = m.intl.string(m.t.vdSOpz), P = m.intl.string(m.t.lm1UKt)) : E ? (I = m.intl.formatToPlainString(m.t.v1ktYb, {
     min: h.YeM.MEMBER_AGE
-  }), P = m.intl.string(m.t.BddRzS)) : C && (I = m.intl.formatToPlainString(m.t.sncw41, {
+  }), P = m.intl.string(m.t.BddRzS)) : x && (I = m.intl.formatToPlainString(m.t.sncw41, {
     min: h.YeM.ACCOUNT_AGE
   }), P = m.intl.string(m.t.BddRzS))), null == S || null == I) ? null : (0, i.jsxs)(a.VqE, {
     className: b.container,
@@ -81,7 +81,7 @@ let y = e => {
             variant: "primary",
             text: P,
             onClick: () => {
-              j ? c.j() : x ? (0, a.ZDy)(async () => {
+              j ? c.j() : C ? (0, a.ZDy)(async () => {
                 let {
                   default: e
                 } = await Promise.resolve().then(n.bind(n, 607018));
@@ -116,7 +116,7 @@ let y = e => {
               })), O()
             }
           })
-        }) : null, j || x || v ? (0, i.jsx)(a.Avr, {
+        }) : null, j || C || v ? (0, i.jsx)(a.Avr, {
           onClick: O,
           text: m.intl.string(m.t.oEAioF),
           variant: "secondary"

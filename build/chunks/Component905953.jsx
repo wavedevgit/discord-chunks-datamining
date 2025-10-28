@@ -1,7 +1,7 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 96604 **/
 /** chunk id: 905953, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => b
 }), require("./388685.js"), require("./457542.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,11 +19,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk228168 = require("./228168.js"),
   Chunk388032 = require("./388032.jsx");
 
-function g(e) {
+function b(e) {
   var t;
   let {
     targetElementRef: n,
-    onClose: g
+    onClose: b
   } = e, [v, j] = r.useState(false), _ = (0, l.e7)([h.default], () => h.default.getId()), {
     config: y,
     application: C
@@ -50,29 +50,29 @@ function g(e) {
           type: "image",
           src: y.edit_profile_upsell_image
         },
-        title: b.intl.format(b.t.TXDztH, {
+        title: g.intl.format(g.t.TXDztH, {
           applicationName: C.name
         }),
-        body: l ? b.intl.string(b.t["63Kso0"]) : b.intl.string(b.t.HwXoeC),
+        body: l ? g.intl.string(g.t["63Kso0"]) : g.intl.string(g.t.HwXoeC),
         actions: [l ? {
-          text: b.intl.string(b.t.VSLDly),
+          text: g.intl.string(g.t.VSLDly),
           onClick: () => {
             j(true), (0, p.openUserProfileModal)({
               userId: _,
               section: f.oh.WIDGETS
             }).then(() => {
-              r(x.L.TAKE_ACTION), g()
+              r(x.L.TAKE_ACTION), b()
             }).finally(() => j(false))
           },
           loading: v
         } : {
-          text: b.intl.string(b.t["DSJi3+"]),
+          text: g.intl.string(g.t["DSJi3+"]),
           onClick: () => {
             T(), j(true), (0, p.openUserProfileModal)({
               userId: _,
               section: f.oh.WIDGETS
             }).then(() => {
-              r(x.L.TAKE_ACTION), g()
+              r(x.L.TAKE_ACTION), b()
             }).finally(() => j(false))
           },
           loading: v

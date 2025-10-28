@@ -1,4 +1,4 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 96604 **/
 /** chunk id: 925124, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => k
@@ -92,8 +92,8 @@ function I(e) {
   var t, n, l, s, m;
   let {
     offer: p,
-    offerOptions: b,
-    forceRefetch: g
+    offerOptions: g,
+    forceRefetch: b
   } = e, [v, C] = r.useState(false), [S, E] = r.useState(false), [T, N] = r.useState(false), [P, I] = r.useState(false);
   r.useEffect(() => {
     T && I(true);
@@ -111,7 +111,7 @@ function I(e) {
     trial_id: A,
     subscription_trial: D,
     referrer: Z
-  } = p, M = null != (n = null == (t = b.find(e => {
+  } = p, M = null != (n = null == (t = g.find(e => {
     let {
       value: t
     } = e;
@@ -124,7 +124,7 @@ function I(e) {
     B = async () => {
       N(true), L ? await G({
         expiresAt: null
-      }) : await (0, u.ab)(p), g(), N(false)
+      }) : await (0, u.ab)(p), b(), N(false)
     }, G = async e => {
       N(true);
       try {
@@ -155,7 +155,7 @@ function I(e) {
           rejectWithError: true
         })
       } finally {
-        g(), N(false)
+        b(), N(false)
       }
     };
   r.useEffect(() => {
@@ -284,7 +284,7 @@ function I(e) {
       })]
     }), (0, a.jsx)(c.P3F, {
       onClick: async () => {
-        N(true), await O(w, "trial"), g(), N(false)
+        N(true), await O(w, "trial"), b(), N(false)
       },
       children: (0, a.jsx)(c.XHJ, {
         size: "md",
@@ -306,7 +306,7 @@ function w(e) {
     offer: l,
     offerOptions: s,
     forceRefetch: m
-  } = e, [p, f] = r.useState(false), [b, g] = r.useState(false), [v, _] = r.useState(false), [C, S] = r.useState(false);
+  } = e, [p, f] = r.useState(false), [g, b] = r.useState(false), [v, _] = r.useState(false), [C, S] = r.useState(false);
   r.useEffect(() => {
     v && S(true);
     let e = setTimeout(() => {
@@ -357,15 +357,15 @@ function w(e) {
         clearTimeout(e)
       }
     }
-    if (b) {
+    if (g) {
       let e = setTimeout(() => {
-        g(false)
+        b(false)
       }, 3e3);
       return () => {
         clearTimeout(e)
       }
     }
-  }, [p, b]);
+  }, [p, g]);
   let Z = "Active";
   return R && (Z = "Expired"), k && (Z = "Acked"), (0, a.jsxs)("div", {
     className: i()(y.card, y.discount),
@@ -406,13 +406,13 @@ function w(e) {
     }), (0, a.jsxs)(c.P3F, {
       className: i()(y.row, y.idRow),
       onClick: () => {
-        (0, h.JG)(P, () => g(true))
+        (0, h.JG)(P, () => b(true))
       },
       children: [(0, a.jsxs)(c.Text, {
         variant: "eyebrow",
         color: "text-default",
         children: ["Discount: ", P]
-      }), b ? (0, a.jsx)(c.dz2, {
+      }), g ? (0, a.jsx)(c.dz2, {
         size: "md",
         color: "currentColor",
         className: i()(y.icon, y.noMargin)
@@ -503,7 +503,7 @@ function k() {
     null != Chunk105713 && (await E(Chunk105713, "discount"), R(true))
   }, z = async () => {
     await N(), R(true)
-  }, V = async () => {
+  }, H = async () => {
     let e = new Date(Date.now() + 60 * A * 1e3).toISOString();
     await P(module), F()
   };
@@ -632,7 +632,7 @@ function k() {
           }), (0, Chunk951288.jsx)(Chunk481060.Button, {
             variant: "primary",
             text: "Create",
-            onClick: V
+            onClick: H
           })]
         })]
       }), Z.length > 0 && (0, Chunk951288.jsxs)("div", {
@@ -643,7 +643,7 @@ function k() {
           variant: "text-md/bold",
           children: "Active reverse trial"
         }), (0, Chunk951288.jsx)("div", {
-          children: Z.map(e => (0, a.jsx)(b.D, {
+          children: Z.map(e => (0, a.jsx)(g.D, {
             entitlement: e,
             active: true,
             onDelete: () => U(e.id)

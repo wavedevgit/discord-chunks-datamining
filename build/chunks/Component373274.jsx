@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 36925 **/
 /** chunk id: 373274, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   E: () => eb,
@@ -623,7 +623,7 @@ class eh extends(r = Chunk647438.PureComponent) {
               selected: a === ea.oC.GUILD_BOOSTS
             }, ei.z.GUILD_BOOSTS);
           case ei.z.GAME_SERVERS:
-            return (0, i.jsx)(C.Z, {
+            return (0, i.jsx)(x.Z, {
               guildId: r.id,
               selected: a === ea.oC.GAME_SERVERS
             }, ei.z.GAME_SERVERS);
@@ -637,7 +637,7 @@ class eh extends(r = Chunk647438.PureComponent) {
       let {
         category: b,
         channel: _
-      } = m, O = b instanceof D.VR, v = _.record, x = "".concat(t).concat(_.id);
+      } = m, O = b instanceof D.VR, v = _.record, C = "".concat(t).concat(_.id);
       switch (v.type) {
         case eo.d4z.GUILD_ANNOUNCEMENT:
         case eo.d4z.GUILD_TEXT:
@@ -664,7 +664,7 @@ class eh extends(r = Chunk647438.PureComponent) {
               selectedChannel: null != o && (o.id === _.id || o.parent_id === v.id) ? o : null,
               selectedVoiceChannelId: (null == s ? true : s.parent_id) === v.id ? c : null
             }) : null]
-          }, x);
+          }, C);
         case eo.d4z.GUILD_STAGE_VOICE:
           var I, P;
           return (0, i.jsx)(Q.Z, {
@@ -678,7 +678,7 @@ class eh extends(r = Chunk647438.PureComponent) {
             speakerVoiceStates: null != (P = f[_.id]) ? P : [],
             disableManageChannels: p,
             isFavoriteCategory: O
-          }, x);
+          }, C);
         case eo.d4z.GUILD_VOICE:
           return (0, i.jsx)(er.Z, {
             channel: v,
@@ -693,14 +693,14 @@ class eh extends(r = Chunk647438.PureComponent) {
             showTutorial: _.isFirstVoiceChannel,
             isFavoriteCategory: O,
             withGuildIcon: g
-          }, x);
+          }, C);
         case eo.d4z.GUILD_STORE:
           return (0, i.jsx)(J.Z, {
             channel: v,
             guild: r,
             position: _.position,
             selected: a === _.id
-          }, x);
+          }, C);
         case eo.d4z.GUILD_CATEGORY:
           if (t !== u.voiceChannelsSectionNumber) return null;
           return (0, i.jsx)(U.kw, {
@@ -719,7 +719,7 @@ class eh extends(r = Chunk647438.PureComponent) {
             canBeNewChannel: false,
             isFavoriteCategory: false,
             forceTopLevelThread: true
-          }, x);
+          }, C);
         default:
           return null
       }
@@ -780,7 +780,7 @@ let eg = e => {
     selectedVoiceChannelId: r
   } = e, o = (0, u.e7)([g.Z], () => g.Z.keyboardModeEnabled), {
     analyticsLocations: a
-  } = (0, b.ZP)(m.Z.GUILD_CHANNEL_LIST), d = (0, u.e7)([T.Z], () => T.Z.getChannel(n)), p = (0, u.e7)([T.Z], () => T.Z.getChannel(r)), f = (0, u.e7)([R.Z], () => R.Z.getGuildId()), _ = (0, x.DM)(t), O = l.useRef(null), y = l.useCallback((e, t) => {
+  } = (0, b.ZP)(m.Z.GUILD_CHANNEL_LIST), d = (0, u.e7)([T.Z], () => T.Z.getChannel(n)), p = (0, u.e7)([T.Z], () => T.Z.getChannel(r)), f = (0, u.e7)([R.Z], () => R.Z.getGuildId()), _ = (0, C.DM)(t), O = l.useRef(null), y = l.useCallback((e, t) => {
     let n = O.current;
     if (null != n)
       if (eo.Xyh.test(t) || (0, ea.AB)(t)) n.scrollToChannel(t, false, 2 * el.yE, () => {
@@ -801,14 +801,14 @@ let eg = e => {
     let t = O.current;
     if (null == t) return e();
     t.scrollTo(Number.MAX_SAFE_INTEGER, () => requestAnimationFrame(() => e()))
-  }), []), C = (0, c.ZP)({
+  }), []), x = (0, c.ZP)({
     id: "channels",
     defaultFocused: null != n ? n : true,
     isEnabled: o,
     setFocus: y,
     scrollToStart: j,
     scrollToEnd: v
-  }), E = C.setFocus;
+  }), E = x.setFocus;
   l.useEffect(() => {
     null != n && E(n)
   }, [n, E]);
@@ -818,9 +818,9 @@ let eg = e => {
     children: (0, i.jsx)(h.Z, {
       section: eo.jXE.GUILD_CHANNEL_LIST,
       children: (0, i.jsx)(s.bG, {
-        navigator: C,
+        navigator: x,
         children: (0, i.jsx)(eh, ep(ed({}, e), {
-          listNavigator: C,
+          listNavigator: x,
           ref: O,
           selectedChannel: d,
           selectedVoiceChannel: p,

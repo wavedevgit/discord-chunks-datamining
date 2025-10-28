@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 36925 **/
 /** chunk id: 770858, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -25,7 +25,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk490897 = require("./490897.js"),
   Chunk888158 = require("./888158.js");
 
-function C() {
+function x() {
   let e = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser());
   return (0, Chunk442837.e7)([Chunk306680.ZP], () => (null == module ? true : module.id) != null && Chunk306680.ZP.getMentionCount(module.id, Chunk490897.W.NOTIFICATION_CENTER) > 0)
 }
@@ -52,7 +52,7 @@ function E(e) {
       location: "NotificationsInboxButtonInner"
     }), {
       unreadChannelIds: n
-    } = (0, m.O4)(), i = C(), {
+    } = (0, m.O4)(), i = x(), {
       badge: l,
       dimensions: o
     } = (0, b.h6)({
@@ -86,7 +86,7 @@ function E(e) {
       selected: P && N === g.jP.SIDEBAR,
       hovered: E && N === g.jP.SIDEBAR,
       unread: w > 0,
-      className: x.pill,
+      className: C.pill,
       disabled: N === g.jP.LEGACY
     }), (0, r.jsx)(O.Z, {
       children: (0, r.jsx)(a.aRk, {
@@ -119,7 +119,7 @@ function E(e) {
           children: (0, r.jsx)(A, {
             size: "custom",
             color: "currentColor",
-            className: x.notificationsIcon,
+            className: C.notificationsIcon,
             width: 20,
             height: 20
           })
@@ -145,7 +145,7 @@ function S() {
     } = (0, Chunk821020.pN)({
       location: "NotificationsInboxButton"
     }),
-    n = C(),
+    n = x(),
     l = (0, Chunk128008.mv)();
   return exports === Chunk821020.jP.SIDEBAR ? (0, Chunk951288.jsx)(E, {
     onClick: Chunk91192

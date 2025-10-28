@@ -1,4 +1,4 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 96604 **/
 /** chunk id: 17597, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   default: () => E
@@ -40,7 +40,7 @@ let E = function(e) {
   let {
     loading: M,
     ageVerificationMethods: L
-  } = (0, g.Z)({
+  } = (0, b.Z)({
     onClose: () => {
       null == O || O(), E()
     },
@@ -124,7 +124,7 @@ let E = function(e) {
           size: "sm",
           text: y.intl.string(_.default.hDvmYP),
           onClick: () => {
-            (0, b.Jh)()
+            (0, g.Jh)()
           }
         })]
       }) : (0, a.jsx)(s.Kqy, {

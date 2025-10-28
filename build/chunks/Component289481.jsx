@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 36925 **/
 /** chunk id: 289481, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -110,7 +110,7 @@ let S = Chunk647438.memo(function(e) {
       (0, g.uL)(v.Z5c.CHANNEL(t.guildId, t.channelId, "forum" === t.type ? null : i)), n(e)
     };
     return (0, r.jsx)("div", {
-      className: C.channel,
+      className: x.channel,
       children: (0, r.jsx)(d.y5t, {
         component: (0, r.jsxs)(O.Z, {
           channel: a,
@@ -143,8 +143,8 @@ function P(e) {
     getNumUnreadChannels: l
   } = e, o = (0, s.Z)() && null != t.guildId;
   return (0, r.jsx)(d.M0o, {
-    className: C.markReadButton,
-    tooltip: o ? x.intl.string(x.t["5lLMhM"]) : x.intl.string(x.t.e6RscS),
+    className: x.markReadButton,
+    tooltip: o ? C.intl.string(C.t["5lLMhM"]) : C.intl.string(C.t.e6RscS),
     color: d.YX$.TERTIARY,
     icon: o ? (0, r.jsx)(d.W6s, {
       size: "xs",
@@ -171,10 +171,10 @@ function N(e) {
     getNumUnreadChannels: i
   } = e;
   return (0, r.jsx)(u.u, {
-    text: x.intl.string(x.t.iTcuma),
+    text: C.intl.string(C.t.iTcuma),
     children: (0, r.jsx)(d.P3F, {
-      className: o()(C.collapseButton, {
-        [C.collapsed]: t.collapsed
+      className: o()(x.collapseButton, {
+        [x.collapsed]: t.collapsed
       }),
       onClick: function() {
         n(t), (0, h.yw)(v.rMx.INBOX_CHANNEL_COLLAPSED, {

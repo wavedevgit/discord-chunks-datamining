@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 36925 **/
 /** chunk id: 906817, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   EM: () => m,
@@ -71,19 +71,19 @@ let _ = Chunk647438.memo(function(e) {
     null != _ && r.includes(_) && (t = (0, a.KY)(m)), (0, a.Uo)(n.id, r, t)
   }, [n.id, _, m, b]), {
     density: v
-  } = (0, l.TCT)(), x = "compact" === v ? 8 : p.$k;
+  } = (0, l.TCT)(), C = "compact" === v ? 8 : p.$k;
   switch (t) {
     case u.wZ:
       return (0, r.jsx)("div", {
         style: {
-          height: x
+          height: C
         }
       });
     case u.wd:
       if (n.features.has(f.GuildFeatures.HUB)) return null;
       return (0, r.jsx)("div", {
         style: {
-          height: x
+          height: C
         }
       });
     case u.p2:
@@ -96,10 +96,10 @@ let _ = Chunk647438.memo(function(e) {
         onDismiss: j
       });
     case m.voiceChannelsSectionNumber: {
-      var C;
+      var x;
       let e = m.getCategoryFromSection(m.voiceChannelsSectionNumber);
       if (null == e || e.isEmpty()) return null;
-      let n = null == (C = m.getChannelFromSectionRow(t, 0)) ? true : C.channel;
+      let n = null == (x = m.getChannelFromSectionRow(t, 0)) ? true : x.channel;
       return (0, r.jsxs)(i.Fragment, {
         children: [(0, r.jsx)("div", {
           className: g.sectionDivider

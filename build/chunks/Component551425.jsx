@@ -10,13 +10,13 @@ var Chunk979554 = require("./979554.js"),
   Chunk481060 = require("./481060.js"),
   Chunk1585 = require("./1585.jsx"),
   Chunk125988 = require("./125988.js"),
+  Chunk566697 = require("./566697.jsx"),
   Chunk479446 = require("./479446.js"),
   Chunk981632 = require("./981632.jsx"),
   Chunk876917 = require("./876917.jsx"),
   Chunk594174 = require("./594174.js"),
   Chunk583434 = require("./583434.js"),
   Chunk216541 = require("./216541.jsx"),
-  Chunk22267 = require("./22267.jsx"),
   Chunk948067 = require("./948067.js");
 let b = Chunk481060.EFr.SIZE_152,
   y = (0, Chunk1585.y9)(b),
@@ -24,7 +24,7 @@ let b = Chunk481060.EFr.SIZE_152,
     var e, n;
     let {
       item: r
-    } = t, a = (0, s.e7)([p.default], () => p.default.getCurrentUser()), {
+    } = t, a = (0, s.e7)([f.default], () => f.default.getCurrentUser()), {
       avatarDecorationSrc: c,
       avatarPlaceholderSrc: u,
       eventHandlers: d
@@ -75,7 +75,7 @@ let b = Chunk481060.EFr.SIZE_152,
     } = t;
     return (0, i.jsx)("div", {
       className: g.profileEffectPreview,
-      children: (0, i.jsx)(d.Z, {
+      children: (0, i.jsx)(p.Z, {
         isHighlighted: true,
         skuId: null == e ? true : e.skuId
       })
@@ -87,7 +87,7 @@ let b = Chunk481060.EFr.SIZE_152,
     } = t;
     return (0, i.jsx)("div", {
       className: g.nameplatePreview,
-      children: (0, i.jsx)(m.Z, {
+      children: (0, i.jsx)(c.Z, {
         nameplate: e,
         className: g.nameplate,
         nameplatePreviewSize: "xlarge",
@@ -102,7 +102,7 @@ let b = Chunk481060.EFr.SIZE_152,
     } = t;
     return (0, i.jsx)("div", {
       className: g.bundlePreview,
-      children: (0, i.jsx)(h.d, {
+      children: (0, i.jsx)(m.d, {
         product: e,
         isPurchased: false,
         isHighlighted: false
@@ -115,7 +115,7 @@ let b = Chunk481060.EFr.SIZE_152,
     } = t, {
       product: n,
       isFetching: s
-    } = (0, f.T)(e.skuId, true);
+    } = (0, h.T)(e.skuId, true);
     if (s || null == n) return (0, i.jsx)("div", {
       className: g.spinnerContainer,
       children: (0, i.jsx)(l.$jN, {})
@@ -138,9 +138,9 @@ let b = Chunk481060.EFr.SIZE_152,
           item: a
         });
       default:
-        return null != e.giftStyle ? (0, i.jsx)(u.Z, {
-          defaultAnimationState: c.SR.ACTION,
-          idleAnimationState: c.SR.LOOP,
+        return null != e.giftStyle ? (0, i.jsx)(d.Z, {
+          defaultAnimationState: u.SR.ACTION,
+          idleAnimationState: u.SR.LOOP,
           className: g.giftAnimation,
           giftStyle: e.giftStyle
         }) : null

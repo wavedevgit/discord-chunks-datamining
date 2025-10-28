@@ -1,5 +1,5 @@
 /** Chunk was on web.js **/
-/** chunk id: 22267, original params: e,t,n (module,exports,re quire) **/
+/** chunk id: 566697, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
   Z: () => N
@@ -13,19 +13,19 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk570908 = require("./570908.jsx"),
   Chunk204418 = require("./204418.jsx"),
+  Chunk579407 = require("./579407.js"),
   Chunk386725 = require("./386725.js"),
   Chunk821795 = require("./821795.js"),
   Chunk892567 = require("./892567.jsx"),
   Chunk172751 = require("./172751.jsx"),
-  Chunk359135 = require("./359135.js"),
-  Chunk516817 = require("./516817.jsx"),
   Chunk654904 = require("./654904.jsx"),
   Chunk210887 = require("./210887.js"),
   Chunk271383 = require("./271383.js"),
   Chunk158776 = require("./158776.js"),
-  Chunk579407 = require("./579407.js"),
+  Chunk359135 = require("./359135.js"),
+  Chunk516817 = require("./516817.jsx"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk198921 = require("./198921.js"),
+  Chunk63053 = require("./63053.js"),
   Chunk460400 = require("./460400.js"),
   Chunk943549 = require("./943549.js");
 let C = {
@@ -52,12 +52,12 @@ let C = {
       isPurchased: G = false,
       skipEffectDisplayName: B = false,
       width: Z
-    } = e, F = (0, s.e7)([b.Z], () => (0, l.wj)(b.Z.theme)), V = null != a ? (0, v.EU)(a) : N, H = (0, s.e7)([O.Z], () => null != t ? O.Z.getStatus(t.id) : c.Skl.ONLINE), Y = F ? "#706F74" : "#aaaab2", W = i.useRef(null), K = (0, s.e7)([y.ZP], () => null != n && null != t ? y.ZP.getMember(n, t.id) : null), z = null != t ? (0, E.Ly)({
+    } = e, F = (0, s.e7)([E.Z], () => (0, l.wj)(E.Z.theme)), V = null != a ? (0, f.EU)(a) : N, H = (0, s.e7)([y.Z], () => null != t ? y.Z.getStatus(t.id) : c.Skl.ONLINE), Y = F ? "#706F74" : "#aaaab2", W = i.useRef(null), K = (0, s.e7)([b.ZP], () => null != n && null != t ? b.ZP.getMember(n, t.id) : null), z = null != t ? (0, g.Ly)({
       pendingNickname: M,
       pendingGlobalName: x,
       user: t,
       guildMember: K
-    }) : true, q = i.useMemo(() => C[U], [U]), X = (0, f.Z)({
+    }) : true, q = i.useMemo(() => C[U], [U]), X = (0, _.Z)({
       userId: null == t ? true : t.id,
       guildId: n,
       pendingDisplayNameStyles: k
@@ -78,10 +78,10 @@ let C = {
           [T.xlarge]: "xlarge" === U,
           [T.inheritWidth]: null != Z
         }),
-        children: [null != V && (0, r.jsx)(g.Z, {
+        children: [null != V && (0, r.jsx)(v.Z, {
           nameplate: V,
           hovered: w,
-          placement: m.i.PREVIEW,
+          placement: O.i.PREVIEW,
           content: L ? true : W
         }, null == a ? true : a.skuId), (0, r.jsxs)("div", {
           className: T.overlayContainer,
@@ -99,15 +99,15 @@ let C = {
                   asset: j.asset
                 } : true
               }),
-              decorators: (0, r.jsx)(h.ZP, {
+              decorators: (0, r.jsx)(m.ZP, {
                 userId: t.id,
                 contextGuildId: n,
                 className: T.tagChiplet
               }),
-              name: (0, r.jsx)(p.Z, {
+              name: (0, r.jsx)(h.Z, {
                 userName: z,
                 displayNameStyles: X,
-                effectDisplayType: B ? _.F.PLAIN : _.F.ANIMATED,
+                effectDisplayType: B ? p.F.PLAIN : p.F.ANIMATED,
                 loop: true
               }),
               innerClassName: P,

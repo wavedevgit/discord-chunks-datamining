@@ -1,4 +1,4 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 96604 **/
 /** chunk id: 191767, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   f: () => A
@@ -100,7 +100,7 @@ async function k(e) {
 }
 
 function R() {
-  let [e, t] = Chunk647438.useState(false), [n, l] = Chunk647438.useState(false), [i, o] = Chunk647438.useState(false), [c, h] = Chunk647438.useState(null), [x, f] = Chunk647438.useState(null), [b, g] = Chunk647438.useState(null), [v, _] = Chunk647438.useState(false), y = (0, Chunk442837.e7)([Chunk853872.Z], () => Chunk853872.Z.paymentSources), S = (0, Chunk442837.e7)([Chunk853872.Z], () => Chunk853872.Z.hasFetchedPaymentSources), O = (0, Chunk442837.e7)([Chunk853872.Z], () => Chunk853872.Z.defaultPaymentSourceId);
+  let [e, t] = Chunk647438.useState(false), [n, l] = Chunk647438.useState(false), [i, o] = Chunk647438.useState(false), [c, h] = Chunk647438.useState(null), [x, f] = Chunk647438.useState(null), [g, b] = Chunk647438.useState(null), [v, _] = Chunk647438.useState(false), y = (0, Chunk442837.e7)([Chunk853872.Z], () => Chunk853872.Z.paymentSources), S = (0, Chunk442837.e7)([Chunk853872.Z], () => Chunk853872.Z.hasFetchedPaymentSources), O = (0, Chunk442837.e7)([Chunk853872.Z], () => Chunk853872.Z.defaultPaymentSourceId);
   Chunk647438.useEffect(() => {
     Chunk981631 || (0, Chunk355467.tZ)()
   }, [Chunk981631]), Chunk647438.useEffect(() => {
@@ -377,8 +377,8 @@ function U(e) {
     paymentRequestWallet: t
   } = e, n = r.useRef(null), [l, i] = r.useState(false);
   return (0, a.jsx)(L, {
-    footer: (0, a.jsx)(g.Z, {
-      primaryCTA: g.Z.CTAType.CONTINUE,
+    footer: (0, a.jsx)(b.Z, {
+      primaryCTA: b.Z.CTAType.CONTINUE,
       primaryText: O.intl.string("applePay" === t ? O.t.WoXvJL : O.t.wnVVr0),
       primaryDisabled: !l,
       onPrimary: () => void(null != n.current && n.current.show()),
@@ -483,7 +483,7 @@ let G = {
       }
     }
   },
-  V = {
+  H = {
     appearance: {
       theme: "flat",
       variables: {
@@ -492,7 +492,7 @@ let G = {
       }
     }
   },
-  H = {
+  V = {
     buttonType: {
       googlePay: "pay",
       applePay: "book"
@@ -506,14 +506,14 @@ let G = {
   W = e => true !== e ? JSON.stringify(e, null, 2) : "undefined";
 
 function K() {
-  let [e, t] = Chunk647438.useState(W(V)), [n, i] = Chunk647438.useState(V), [o, s] = Chunk647438.useState(W(H)), [c, m] = Chunk647438.useState(H), [p, h] = Chunk647438.useState(null), [x, b] = Chunk647438.useState((0, Chunk951288.jsx)(Chunk237012.DS, {
+  let [e, t] = Chunk647438.useState(W(H)), [n, i] = Chunk647438.useState(H), [o, s] = Chunk647438.useState(W(V)), [c, m] = Chunk647438.useState(V), [p, h] = Chunk647438.useState(null), [x, g] = Chunk647438.useState((0, Chunk951288.jsx)(Chunk237012.DS, {
     errorLabel: G.CONFIGURABLE,
-    elementOptions: V,
+    elementOptions: H,
     children: (0, Chunk951288.jsx)(Chunk289008.ExpressCheckoutElement, {
       onConfirm: e => {
         console.log("ExpressCheckoutElement onConfirm event: ", e)
       },
-      options: H
+      options: V
     })
   }));
   return (0, Chunk951288.jsxs)("div", {

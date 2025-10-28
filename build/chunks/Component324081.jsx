@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 36925 **/
 /** chunk id: 324081, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => P
@@ -111,7 +111,7 @@ function Z(e) {
   let {
     channel: t,
     gotoChannel: n
-  } = e, i = (0, a.e7)([C.default], () => t.isDM() ? C.default.getUser(t.getRecipientId()) : null), l = null == i ? (0, f.x)(t) : i.getAvatarURL(true, 40);
+  } = e, i = (0, a.e7)([x.default], () => t.isDM() ? x.default.getUser(t.getRecipientId()) : null), l = null == i ? (0, f.x)(t) : i.getAvatarURL(true, 40);
   return (0, r.jsx)(s.P3F, {
     onClick: n,
     tabIndex: false,
@@ -145,7 +145,7 @@ function w(e) {
     channel: t,
     gotoChannel: n,
     mentionCount: i
-  } = e, o = (0, a.e7)([j.Z], () => j.Z.getGuild(t.guild_id)), c = (0, a.e7)([y.Z], () => y.Z.getChannel(t.parent_id)), u = (0, a.e7)([x.ZP], () => x.ZP.getIsMentionLowImportance(t.id)), d = (0, g.KS)(t, o), p = (0, h.ZP)(t, false), f = null == c ? null == o ? true : o.name : "".concat(null == o ? true : o.name, " › ").concat(c.name), b = t.isMultiUserDM() ? E.intl.formatToPlainString(E.t.CxSA5N, {
+  } = e, o = (0, a.e7)([j.Z], () => j.Z.getGuild(t.guild_id)), c = (0, a.e7)([y.Z], () => y.Z.getChannel(t.parent_id)), u = (0, a.e7)([C.ZP], () => C.ZP.getIsMentionLowImportance(t.id)), d = (0, g.KS)(t, o), p = (0, h.ZP)(t, false), f = null == c ? null == o ? true : o.name : "".concat(null == o ? true : o.name, " › ").concat(c.name), b = t.isMultiUserDM() ? E.intl.formatToPlainString(E.t.CxSA5N, {
     members: t.recipients.length + 1
   }) : t.isPrivate() ? (0, r.jsx)(A, {
     channel: t
@@ -196,8 +196,8 @@ function A(e) {
     status: i,
     activities: l,
     applicationStream: o
-  } = (0, a.cj)([C.default, v.Z, O.Z], () => {
-    let e = C.default.getUser(t.getRecipientId());
+  } = (0, a.cj)([x.default, v.Z, O.Z], () => {
+    let e = x.default.getUser(t.getRecipientId());
     return {
       user: e,
       status: null != e ? v.Z.getStatus(e.id) : null,

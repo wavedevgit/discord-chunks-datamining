@@ -2,7 +2,7 @@
 /** chunk id: 158979, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => y
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -61,15 +61,15 @@ function m() {
   })
 }
 
-function y(e) {
+function _(e) {
   switch (e.type) {
     case u.nc.GO_LIVE_VOICE: {
       let {
         game: t,
         voiceGuild: h
       } = e, {
-        trackView: y,
-        trackClick: _
+        trackView: _,
+        trackClick: y
       } = (0, c.R)(u.n0.GoLiveNudge, {
         notif_type: u.n0.GoLiveNudge
       });
@@ -83,12 +83,12 @@ function y(e) {
         hint: () => (0, i.jsx)(m, {}),
         renderFooter: () => (0, i.jsx)(m, {}),
         onNotificationShow: () => {
-          y()
+          _()
         },
         onNotificationClick: (e, t) => {
-          _("unlock"), s.Z.updateNotificationStatus(t);
-          let c = o.default.isOverlayOOPEnabledForPid((0, a.getPID)());
-          if (c ? s.Z.setInputLocked(false, (0, a.getPID)()) : s.Z.setInstanceLocked(false), null == l.default.getCurrentUser()) return;
+          y("unlock"), o.Z.updateNotificationStatus(t);
+          let c = s.default.isOverlayOOPEnabledForPid((0, a.getPID)());
+          if (c ? o.Z.setInputLocked(false, (0, a.getPID)()) : o.Z.setInstanceLocked(false), null == l.default.getCurrentUser()) return;
           let u = c ? {
             contextKey: r.u1M
           } : true;
@@ -105,7 +105,7 @@ function y(e) {
           }, u)
         },
         onDismissClick: () => {
-          _("dismiss")
+          y("dismiss")
         }
       }
     }
@@ -130,9 +130,9 @@ function y(e) {
           l()
         },
         onNotificationClick: (e, t) => {
-          h("unlock"), s.Z.updateNotificationStatus(t);
-          let l = o.default.isOverlayOOPEnabledForPid((0, a.getPID)());
-          l ? s.Z.setInputLocked(false, (0, a.getPID)()) : s.Z.setInstanceLocked(false);
+          h("unlock"), o.Z.updateNotificationStatus(t);
+          let l = s.default.isOverlayOOPEnabledForPid((0, a.getPID)());
+          l ? o.Z.setInputLocked(false, (0, a.getPID)()) : o.Z.setInstanceLocked(false);
           let c = l ? {
             contextKey: r.u1M
           } : true;

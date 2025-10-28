@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 36925 **/
 /** chunk id: 429122, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => _,
@@ -74,22 +74,22 @@ let _ = Chunk647438.memo(function(e) {
   } = e, {
     hasDivider: y,
     canHaveVoiceSummary: j
-  } = i.useMemo(() => (0, d.ie)(n, O, t), [n, O, t, p]), v = i.useMemo(() => t === u.wZ ? null : n.getCategoryFromSection(t), [n, t, p]), x = (0, a.DM)(m), C = (0, l.Wu)([s.ZP], () => {
+  } = i.useMemo(() => (0, d.ie)(n, O, t), [n, O, t, p]), v = i.useMemo(() => t === u.wZ ? null : n.getCategoryFromSection(t), [n, t, p]), C = (0, a.DM)(m), x = (0, l.Wu)([s.ZP], () => {
     if (null == v || !v.isCollapsed || !j) return [];
     let e = v.getChannelRecords(),
       t = [];
     for (let n of e) {
       if (!n.isGuildVocal()) continue;
       let e = s.ZP.isChannelOrParentOptedIn(m, n.id);
-      (!x || e) && t.push(n)
+      (!C || e) && t.push(n)
     }
     return t
-  }, [v, j, m, x]), E = i.useMemo(() => (0, c.c4)({
-    channels: C,
+  }, [v, j, m, C]), E = i.useMemo(() => (0, c.c4)({
+    channels: x,
     selectedChannelId: b,
     selectedVoiceChannelId: _,
     voiceStates: f
-  }), [C, b, _, f]);
+  }), [x, b, _, f]);
   if (t === n.voiceChannelsSectionNumber) return (0, r.jsx)(g, {
     guildChannels: n,
     guildChannelsVersion: p

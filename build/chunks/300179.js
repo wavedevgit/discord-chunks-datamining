@@ -1,4 +1,4 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 96604 **/
 /** chunk id: 300179, original params: e,t,n (module,exports,require) **/
 module.exports = {
   shopCard: "shopCard_c3d04b",
@@ -8,7 +8,7 @@ module.exports = {
   shopCardAnimation: "shopCardAnimation_c3d04b",
   avatarContainer: "avatarContainer_c3d04b",
   previewThumbnailVariant: "previewThumbnailVariant_c3d04b",
-  fadeIn: "fadeIn_c3d04b",
+  nameplateContainer: "nameplateContainer_c3d04b",
   cardText: "cardText_c3d04b",
   darkCardBackground: "darkCardBackground_c3d04b",
   lightCardBackground: "lightCardBackground_c3d04b",
@@ -31,13 +31,6 @@ module.exports = {
   badge: "badge_c3d04b",
   partiallyOwned: "partiallyOwned_c3d04b",
   preview: "preview_c3d04b",
-  nameplatePreviewRootContainer: "nameplatePreviewRootContainer_c3d04b",
-  nameplatePreviewList: "nameplatePreviewList_c3d04b",
-  nameplatePreviewSampleItem: "nameplatePreviewSampleItem_c3d04b",
-  nameplatePlaceholderAvatar: "nameplatePlaceholderAvatar_c3d04b",
-  placeholderItem: "placeholderItem_c3d04b",
-  placeholderBar: "placeholderBar_c3d04b",
-  fadeOut: "fadeOut_c3d04b",
   externalProductDimmed: "externalProductDimmed_c3d04b",
   orbIconAligned: "orbIconAligned_c3d04b",
   thumbnailVariant: "thumbnailVariant_c3d04b",

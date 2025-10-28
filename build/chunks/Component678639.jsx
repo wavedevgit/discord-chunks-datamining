@@ -1,4 +1,4 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 96604 **/
 /** chunk id: 678639, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -21,7 +21,7 @@ function f(e, t) {
   return e.store.getName().localeCompare(t.store.getName())
 }
 
-function b(e) {
+function g(e) {
   let {
     store: t,
     dataGetter: n
@@ -38,7 +38,7 @@ function b(e) {
     })
   })
 }
-let g = [{
+let b = [{
     key: "name",
     cellClassName: Chunk104444.__invalid_eventColumn,
     render(e) {
@@ -61,7 +61,7 @@ let g = [{
         children: ["Store is missing ", (0, a.jsx)("code", {
           children: "__getLocalVars"
         }), " method."]
-      }) : (0, a.jsx)(b, {
+      }) : (0, a.jsx)(g, {
         store: t,
         dataGetter: e => e.__getLocalVars()
       })
@@ -74,7 +74,7 @@ let g = [{
       let {
         store: t
       } = e;
-      return (0, a.jsx)(b, {
+      return (0, a.jsx)(g, {
         store: t,
         dataGetter: e => e
       })
@@ -138,7 +138,7 @@ function _() {
         "aria-label": "Search stores"
       })
     }), (0, Chunk951288.jsx)(Chunk681619.Z, {
-      columns: g,
+      columns: b,
       data: Chunk665149,
       selectedRowKey: Chunk428530,
       onClickRow: e => u(e.key)

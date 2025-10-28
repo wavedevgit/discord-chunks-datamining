@@ -18,10 +18,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk100527 = require("./100527.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk475977 = require("./475977.jsx"),
-  Chunk22267 = require("./22267.jsx"),
   Chunk266454 = require("./266454.js"),
   Chunk243778 = require("./243778.jsx"),
   Chunk957730 = require("./957730.js"),
+  Chunk566697 = require("./566697.jsx"),
   Chunk53691 = require("./53691.jsx"),
   Chunk267717 = require("./267717.jsx"),
   Chunk296810 = require("./296810.jsx"),
@@ -131,9 +131,9 @@ function X() {
     {
       pendingBio: a,
       pendingAvatar: l,
-      pendingNameplate: E
+      pendingNameplate: g
     } = require,
-    b = W(require, ["pendingBio", "pendingAvatar", "pendingNameplate"]),
+    E = W(require, ["pendingBio", "pendingAvatar", "pendingNameplate"]),
     N = (0, Chunk643879.SD)({
       userId: module.id,
       image: Chunk704215
@@ -162,7 +162,7 @@ function X() {
       }, Chunk243778), {
         pendingAvatar: Chunk373230
       })),
-      nameplatePreview: (0, Chunk951288.jsx)(Chunk22267.Z, Y(V({
+      nameplatePreview: (0, Chunk951288.jsx)(Chunk566697.Z, Y(V({
         user: module,
         nameplate: Chunk266454,
         nameplateData: true === Chunk266454 ? module.nameplate : true

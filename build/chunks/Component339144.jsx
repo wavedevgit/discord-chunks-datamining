@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 36925 **/
 /** chunk id: 339144, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   J: () => Z,
@@ -70,11 +70,11 @@ let Z = Chunk647438.memo(function(e) {
       Y = N(F, B, G),
       q = i.useCallback(() => {
         var e;
-        o()(null != B, "Received null activity"), x.default.track(S.rMx.ACTIVITY_PANEL_BUTTON_CLICKED, {
+        o()(null != B, "Received null activity"), C.default.track(S.rMx.ACTIVITY_PANEL_BUTTON_CLICKED, {
           action_type: "invite_to_game",
           game_id: null != (e = null == k ? true : k.id) ? e : null,
           application_id: B.application_id
-        }), (0, m.v)(K, m.d.INVITE), x.default.track(S.rMx.OPEN_MODAL, {
+        }), (0, m.v)(K, m.d.INVITE), C.default.track(S.rMx.OPEN_MODAL, {
           type: "Send Join Invite",
           application_id: B.application_id,
           location: V.location
@@ -147,7 +147,7 @@ let Z = Chunk647438.memo(function(e) {
       } = (0, g.F)(F, {
         allowedFlows: [g.r.RPC, g.r.WEB]
       }),
-      ei = C.Z.useConfig({
+      ei = x.Z.useConfig({
         location: "ActivityActions"
       }).enabled,
       el = i.useRef(null),
@@ -228,7 +228,7 @@ let Z = Chunk647438.memo(function(e) {
       ref: t,
       onClick: () => {
         var e, t;
-        x.default.track(S.rMx.ACTIVITY_PANEL_BUTTON_CLICKED, {
+        C.default.track(S.rMx.ACTIVITY_PANEL_BUTTON_CLICKED, {
           action_type: "link_account",
           game_id: null != (e = null == n ? true : n.id) ? e : null,
           application_id: null != (t = null == l ? true : l.id) ? t : null

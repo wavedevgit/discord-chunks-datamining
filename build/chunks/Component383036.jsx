@@ -1,7 +1,7 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 96604 **/
 /** chunk id: 383036, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => b
+  Z: () => g
 }), require("./388685.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -42,22 +42,22 @@ let f = e => {
       return e
     }({}, e), t)
   },
-  b = () => {
+  g = () => {
     let e = (0, Chunk399606.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()),
       t = (0, Chunk399606.e7)([Chunk597688.Z], () => Chunk597688.Z.categories),
       n = (0, Chunk399606.e7)([Chunk1870.Z], () => Chunk1870.Z.purchases),
       m = (0, Chunk399606.e7)([Chunk597688.Z], () => Chunk597688.Z.lastSuccessfulFetch),
-      b = exports.size > 0 && require.size > 0 && null != Chunk709999,
+      g = exports.size > 0 && require.size > 0 && null != Chunk709999,
       {
-        isFetching: g,
+        isFetching: b,
         categories: v
       } = (0, Chunk223143.ZP)({
         logPerf: false,
         stalePurchasesOK: true,
-        noOp: b
+        noOp: g
       }),
-      j = b ? exports : v,
-      _ = b || !g && j.size > 0,
+      j = g ? exports : v,
+      _ = g || !b && j.size > 0,
       [y, C] = Chunk647438.useState(""),
       [S, E] = Chunk647438.useState(null),
       [O, T] = Chunk647438.useState(null);
@@ -69,7 +69,7 @@ let f = e => {
       let e = Chunk597688.Z.getProduct(y),
         t = Chunk597688.Z.getCategoryForProduct(y);
       null != module && null != exports ? (E(module), T(exports)) : (E(null), T(null))
-    }, [y, _]), g) ? (0, Chunk951288.jsx)(Chunk481060.Text, {
+    }, [y, _]), b) ? (0, Chunk951288.jsx)(Chunk481060.Text, {
       variant: "text-md/normal",
       children: "Loading categories and collectibles..."
     }) : null == module ? (0, Chunk951288.jsx)(Chunk481060.Text, {

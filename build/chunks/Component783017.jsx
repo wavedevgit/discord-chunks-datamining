@@ -10,8 +10,8 @@ var Chunk951288 = require("./951288.js"),
   Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js"),
   Chunk607070 = require("./607070.js"),
-  Chunk22267 = require("./22267.jsx"),
   Chunk70097 = require("./70097.jsx"),
+  Chunk566697 = require("./566697.jsx"),
   Chunk594174 = require("./594174.js"),
   Chunk526167 = require("./526167.js"),
   Chunk741245 = require("./741245.jsx"),
@@ -54,7 +54,7 @@ let g = e => {
         src: m.Z,
         alt: "",
         className: h.nameplateGlow
-      }) : (0, s.jsx)(u.Z, {
+      }) : (0, s.jsx)(d.Z, {
         playsInline: true,
         muted: true,
         autoPlay: true,
@@ -63,7 +63,7 @@ let g = e => {
         children: (0, s.jsx)("source", {
           src: _
         })
-      }), (0, s.jsx)(d.Z, {
+      }), (0, s.jsx)(u.Z, {
         user: E,
         isHighlighted: true,
         nameplate: null,

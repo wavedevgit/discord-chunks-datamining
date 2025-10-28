@@ -1,4 +1,4 @@
-/** Chunk was on 79041 **/
+/** Chunk was on 96604 **/
 /** chunk id: 53891, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   ZP: () => j
@@ -18,9 +18,9 @@ var Chunk442837 = require("./442837.js"),
   Chunk446094 = require("./446094.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx");
-let b = new Chunk710845.Z("GuildTagCoachmark");
+let g = new Chunk710845.Z("GuildTagCoachmark");
 
-function g(e) {
+function b(e) {
   function t(t) {
     var n;
     s.Z.dispatch({
@@ -121,7 +121,7 @@ function v(e) {
 function j(e) {
   let t = (0, r.e7)([u.Z], () => u.Z.getGuild(e.guildId)),
     n = (0, m.S3)(e.guildId);
-  return null != t && (0, p.jq)(t) && null !== n ? "changed" === n ? (0, a.jsx)(g, {
+  return null != t && (0, p.jq)(t) && null !== n ? "changed" === n ? (0, a.jsx)(b, {
     guild: t,
     onDismiss: e.onDismiss,
     targetElementRef: e.targetElementRef,
@@ -131,5 +131,5 @@ function j(e) {
     onDismiss: e.onDismiss,
     targetElementRef: e.targetElementRef,
     children: e.children
-  }) : (b.error("GuildTagCoachmark rendered without guildId or coachmark type."), e.children)
+  }) : (g.error("GuildTagCoachmark rendered without guildId or coachmark type."), e.children)
 }
