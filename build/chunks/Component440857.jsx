@@ -75,7 +75,7 @@ function y(e) {
     H()
   }, S = l.useCallback(() => {
     H()
-  }, [H]), N = (0, r.jsxs)("span", {
+  }, [H]), Z = (0, r.jsxs)("span", {
     className: j.messageContainer,
     children: [(0, r.jsx)(s.tBG, {
       size: "custom",
@@ -92,7 +92,7 @@ function y(e) {
       text: g.intl.string(g.t.yW6ZdE),
       onClick: S
     })]
-  }), Z = (0, r.jsxs)("span", {
+  }), N = (0, r.jsxs)("span", {
     className: j.buttonContainer,
     children: [(0, r.jsx)(s.pgN, {
       size: "custom",
@@ -128,9 +128,9 @@ function y(e) {
             }))
           })
         },
-        onSaveText: Z,
+        onSaveText: N,
         onSaveButtonColor: a.Tt.RED,
-        message: N
+        message: Z
       })
     })
   }) : null

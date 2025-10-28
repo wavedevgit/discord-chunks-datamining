@@ -19,7 +19,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk707592 = require("./707592.jsx"),
   Chunk981631 = require("./981631.js");
 
-function g(e) {
+function p(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -61,7 +61,7 @@ function b(e) {
     return null == (e = s.Z.getGuild(t)) ? true : e.rulesChannelId
   }), c = (e, t) => {
     let r = n[e];
-    l([...n.slice(0, e), v(g({}, r), {
+    l([...n.slice(0, e), v(p({}, r), {
       response: t
     }), ...n.slice(e + 1)])
   };
@@ -74,7 +74,7 @@ function b(e) {
             formField: e,
             onChange: e => ((e, t) => {
               let r = n[e];
-              l([...n.slice(0, e), v(g({}, r), {
+              l([...n.slice(0, e), v(p({}, r), {
                 response: t
               }), ...n.slice(e + 1)])
             })(t, e)
@@ -98,7 +98,7 @@ function b(e) {
               let {
                 value: r
               } = t, i = n[e];
-              l([...n.slice(0, e), v(g({}, i), {
+              l([...n.slice(0, e), v(p({}, i), {
                 response: r
               }), ...n.slice(e + 1)])
             })(t, e)
@@ -119,7 +119,7 @@ function j(e) {
     m = (0, c.i)({
       guildId: n
     });
-  return (t = m === p.sFg.NONE ? null : m === p.sFg.VERY_HIGH ? f.l : u.b, null == d) ? null : (0, r.jsxs)(r.Fragment, {
+  return (t = m === g.sFg.NONE ? null : m === g.sFg.VERY_HIGH ? f.l : u.b, null == d) ? null : (0, r.jsxs)(r.Fragment, {
     children: [!o && null != t && (0, r.jsx)(t, {}), (0, r.jsx)(b, {
       guildId: n,
       formFields: l,
@@ -140,9 +140,9 @@ function C(e) {
       guildId: n
     }),
     x = (null == m ? true : m.isPhoneVerified()) || (null == m ? true : m.isStaff()),
-    g = (null == m ? true : m.verified) || x,
+    p = (null == m ? true : m.verified) || x,
     v = false;
-  h === p.sFg.NONE ? (v = true, t = null) : h === p.sFg.VERY_HIGH ? (v = null != x && x, t = f.v) : (v = null != g && g, t = u.B);
+  h === g.sFg.NONE ? (v = true, t = null) : h === g.sFg.VERY_HIGH ? (v = null != x && x, t = f.v) : (v = null != p && p, t = u.B);
   let j = l.useRef(v);
   return null == m ? null : (0, r.jsxs)(r.Fragment, {
     children: [!d && !j.current && null != t && (0, r.jsx)(t, {

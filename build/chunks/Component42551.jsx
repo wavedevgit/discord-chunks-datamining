@@ -60,7 +60,7 @@ function H(e) {
     (0, g.Dr)(t, {
       selectedRoleIds: e
     }), i(e)
-  }, [t, i]), S = l.useMemo(() => u()(w, 300), [w]), N = l.useCallback(e => {
+  }, [t, i]), S = l.useMemo(() => u()(w, 300), [w]), Z = l.useCallback(e => {
     let t;
     d(t = new Set(c.has(e) ? [...c].filter(t => t !== e) : [...c, e])), S(t)
   }, [c, S]);
@@ -68,7 +68,7 @@ function H(e) {
     className: v.rolePopout,
     placeholder: x.intl.string(x.t.ZveC7e),
     value: c,
-    onChange: N,
+    onChange: Z,
     onClose: () => {
       n()
     },

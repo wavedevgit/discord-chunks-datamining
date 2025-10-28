@@ -60,19 +60,19 @@ let O = Chunk647438.forwardRef(function(e, t) {
     null != n && O && (0, d.ZDy)(async () => e => (0, r.jsx)(C.Z, y(v({}, e), {
       guild: n
     })))
-  }, [n, O]), _ = (0, u.e7)([p.Z], () => p.Z.getSearchStateByGuildId(n.id), [n.id], s()), w = (0, b.gm)(n.id), [S, N] = l.useState(_.query), Z = l.useCallback(e => {
+  }, [n, O]), _ = (0, u.e7)([p.Z], () => p.Z.getSearchStateByGuildId(n.id), [n.id], s()), w = (0, b.gm)(n.id), [S, Z] = l.useState(_.query), N = l.useCallback(e => {
     let t = e.trim();
     t.length > 0 && w(), (0, f.Dr)(n.id, {
       query: t
     })
-  }, [n.id, w]), D = l.useMemo(() => o()(Z, 300), [Z]), R = l.useCallback(e => {
-    N(e), D(e)
+  }, [n.id, w]), D = l.useMemo(() => o()(N, 300), [N]), R = l.useCallback(e => {
+    Z(e), D(e)
   }, [D]), L = l.useCallback(() => {
-    N(""), Z("")
-  }, [Z]);
+    Z(""), N("")
+  }, [N]);
   return l.useImperativeHandle(t, () => ({
     resetSearchText() {
-      N("")
+      Z("")
     }
   })), (0, r.jsxs)("div", {
     className: x.searchHeaderContainer,

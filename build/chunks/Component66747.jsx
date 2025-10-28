@@ -103,7 +103,7 @@ let W = Chunk647438.memo(function(e) {
     let {
       member: t,
       highestRole: n
-    } = e, i = (0, u.e7)([S.Z], () => S.Z.getGuild(t.guildId), [t.guildId]), a = t.roles.length - 1, s = l.useMemo(() => new Intl.NumberFormat(Y.intl.currentLocale).format(a), [a]), c = (0, B.vN)(t), d = (0, B.vN)(t, true), m = (0, u.e7)([N.Z], () => N.Z.can(q.Plq.MANAGE_ROLES, i), [i]);
+    } = e, i = (0, u.e7)([S.Z], () => S.Z.getGuild(t.guildId), [t.guildId]), a = t.roles.length - 1, s = l.useMemo(() => new Intl.NumberFormat(Y.intl.currentLocale).format(a), [a]), c = (0, B.vN)(t), d = (0, B.vN)(t, true), m = (0, u.e7)([Z.Z], () => Z.Z.can(q.Plq.MANAGE_ROLES, i), [i]);
     return null == i ? null : (0, r.jsxs)("div", {
       className: Q.roleContainer,
       children: [null != n && (0, r.jsx)(F.Z, {
@@ -175,7 +175,7 @@ let W = Chunk647438.memo(function(e) {
           variant: "text-xs/normal",
           color: "header-secondary",
           tag: "span",
-          children: P.ZP.getUserTag(i)
+          children: I.ZP.getUserTag(i)
         })
       })]
     })
@@ -229,7 +229,7 @@ let ee = Chunk647438.memo(function(e) {
       accountCreationDateShort: o,
       accountCreationDateLong: a
     } = l.useMemo(() => {
-      let e = I.default.extractTimestamp(t.userId);
+      let e = P.default.extractTimestamp(t.userId);
       return {
         accountCreationDateShort: (0, V.fv)(e, V.jq.ACCOUNT_AGE),
         accountCreationDateLong: new Date(e).toLocaleDateString(Y.intl.currentLocale, V.I)
@@ -259,7 +259,7 @@ let ee = Chunk647438.memo(function(e) {
       onOpenMemberView: d,
       compact: p,
       hasModViewPanelAccess: f
-    } = e, h = (0, u.e7)([N.Z, S.Z], () => N.Z.can(q.Plq.MANAGE_GUILD, S.Z.getGuild(t.guildId)), [t.guildId]), {
+    } = e, h = (0, u.e7)([Z.Z, S.Z], () => Z.Z.can(q.Plq.MANAGE_GUILD, S.Z.getGuild(t.guildId)), [t.guildId]), {
       selectedUserIds: g,
       addUsers: j,
       removeUser: x
@@ -388,11 +388,11 @@ let ee = Chunk647438.memo(function(e) {
       compact: m = false
     } = e, {
       analyticsLocations: b
-    } = (0, h.ZP)(), p = (0, u.e7)([w.ZP], () => w.ZP.getGuildSidebarState(n), [n]), f = (null == p ? true : p.details.userId) === t, g = (0, u.e7)([T.Z], () => T.Z.getEnhancedMember(n, t), [n, t]), j = (0, B.zq)(g), x = (0, u.e7)([Z.default], () => Z.default.getUser(t), [t]), O = (0, y.m)(n), H = (0, B.RN)(null != g ? g : true), _ = l.useCallback(e => {
+    } = (0, h.ZP)(), p = (0, u.e7)([w.ZP], () => w.ZP.getGuildSidebarState(n), [n]), f = (null == p ? true : p.details.userId) === t, g = (0, u.e7)([T.Z], () => T.Z.getEnhancedMember(n, t), [n, t]), j = (0, B.zq)(g), x = (0, u.e7)([N.default], () => N.default.getUser(t), [t]), O = (0, y.m)(n), H = (0, B.RN)(null != g ? g : true), _ = l.useCallback(e => {
       e.stopPropagation(), e.preventDefault(), H(e)
     }, [H]), S = l.useCallback(e => {
       e.stopPropagation(), e.preventDefault(), null != g && (0, B.RE)(g, b)
-    }, [g, b]), N = l.useCallback(e => {
+    }, [g, b]), Z = l.useCallback(e => {
       e.stopPropagation(), e.preventDefault(), null != g && (O ? (0, v.r)(g.guildId, g.userId, G.oC.MEMBER_SAFETY, {
         modViewPanel: z.k.INFO
       }) : (0, B.RE)(g, b))
@@ -411,7 +411,7 @@ let ee = Chunk647438.memo(function(e) {
         highestRole: j,
         isHoldingAdvancedInfoKey: C,
         onOpenModerationMenu: _,
-        onOpenMemberView: N,
+        onOpenMemberView: Z,
         compact: m,
         hasModViewPanelAccess: O
       })

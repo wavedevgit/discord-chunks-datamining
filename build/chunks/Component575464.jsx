@@ -1,7 +1,7 @@
 /** Chunk was on 47840 **/
 /** chunk id: 575464, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => m
 }), require("./35282.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -9,7 +9,6 @@ var Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
   Chunk91192 = require("./91192.jsx"),
   Chunk442837 = require("./442837.js"),
-  Chunk755721 = require("./755721.js"),
   Chunk481060 = require("./481060.js"),
   Chunk129861 = require("./129861.jsx"),
   Chunk700582 = require("./700582.jsx"),
@@ -18,23 +17,23 @@ var Chunk120356 = require("./120356.js"),
   Chunk51144 = require("./51144.js"),
   Chunk469407 = require("./469407.js");
 
-function g(e) {
+function m(e) {
   var t, n;
   let {
     user: r,
-    row: g,
-    hideDiscriminator: b,
-    comparator: C,
-    selected: y,
-    checked: _,
-    disabled: v = false,
-    inlineUsername: x = true,
-    onClick: O,
-    onMouseEnter: j,
-    "aria-setsize": E,
-    "aria-posinset": S
-  } = e, P = (0, o.e7)([h.Z], () => h.Z.getStatus(r.id)), I = (0, a.JA)(String(r.id));
-  return (0, i.jsx)(c.P3F, (t = function(e) {
+    row: m,
+    hideDiscriminator: g,
+    comparator: b,
+    selected: C,
+    checked: y,
+    disabled: _ = false,
+    inlineUsername: v = true,
+    onClick: x,
+    onMouseEnter: O,
+    "aria-setsize": j,
+    "aria-posinset": E
+  } = e, S = (0, o.e7)([p.Z], () => p.Z.getStatus(r.id)), P = (0, a.JA)(String(r.id));
+  return (0, i.jsx)(s.P3F, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         i = Object.keys(n);
@@ -52,60 +51,57 @@ function g(e) {
     }
     return e
   }({
-    id: "user-row-".concat(g),
-    className: l()(m.friendWrapper, {
-      [m.disabled]: v
+    id: "user-row-".concat(m),
+    className: l()(f.friendWrapper, {
+      [f.disabled]: _
     }),
     onClick: () => {
-      null != O && O(r.id)
+      null != x && x(r.id)
     },
     onMouseEnter: () => {
-      null != j && j(g)
+      null != O && O(m)
     }
-  }, I), n = n = {
+  }, P), n = n = {
     role: "option",
-    "aria-selected": _,
-    "aria-disabled": v,
-    "aria-setsize": E,
-    "aria-posinset": S,
-    children: (0, i.jsxs)(p.Z, {
-      align: p.Z.Align.CENTER,
-      className: l()(m.friend, {
-        [m.friendSelected]: y,
-        [m.twoRows]: !x
+    "aria-selected": y,
+    "aria-disabled": _,
+    "aria-setsize": j,
+    "aria-posinset": E,
+    children: (0, i.jsxs)(d.Z, {
+      align: d.Z.Align.CENTER,
+      className: l()(f.friend, {
+        [f.friendSelected]: C,
+        [f.twoRows]: !v
       }),
-      children: [(0, i.jsx)(d.Z, {
+      children: [(0, i.jsx)(u.Z, {
         user: r,
-        status: P,
-        className: m.avatar
-      }), (0, i.jsxs)(p.Z, {
-        className: m.match,
-        align: p.Z.Align.BASELINE,
-        direction: x ? p.Z.Direction.HORIZONTAL : p.Z.Direction.VERTICAL,
-        children: [(0, i.jsx)(c.Text, {
+        status: S,
+        className: f.avatar
+      }), (0, i.jsxs)(d.Z, {
+        className: f.match,
+        align: d.Z.Align.BASELINE,
+        direction: v ? d.Z.Direction.HORIZONTAL : d.Z.Direction.VERTICAL,
+        children: [(0, i.jsx)(s.Text, {
           tag: "strong",
-          className: m.nickname,
+          className: f.nickname,
           "aria-hidden": true,
           variant: "text-md/medium",
-          children: null != C && C === r.tag ? f.ZP.getName(r) : null != C && "" !== C ? C : f.ZP.getName(r)
-        }), (0, i.jsx)(c.Text, {
+          children: null != b && b === r.tag ? h.ZP.getName(r) : null != b && "" !== b ? b : h.ZP.getName(r)
+        }), (0, i.jsx)(s.Text, {
           variant: "text-xs/normal",
           color: "text-muted",
-          children: (0, i.jsx)(u.Z, {
+          children: (0, i.jsx)(c.Z, {
             user: r,
-            hideDiscriminator: b,
-            className: m.discordTag,
-            usernameClass: m.__invalid_weightMedium,
-            discriminatorClass: m.__invalid_weightMedium,
+            hideDiscriminator: g,
+            className: f.discordTag,
+            usernameClass: f.__invalid_weightMedium,
+            discriminatorClass: f.__invalid_weightMedium,
             forceUsername: true
           })
         })]
-      }), (0, i.jsx)(s.$q, {
-        displayOnly: true,
-        size: 22,
-        value: _,
-        disabled: v,
-        className: m.checkbox
+      }), (0, i.jsx)(s.FZ5, {
+        checked: y,
+        disabled: _
       })]
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

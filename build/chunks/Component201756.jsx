@@ -29,7 +29,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk494409 = require("./494409.js"),
   Chunk266631 = require("./266631.js");
 
-function N(e) {
+function Z(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -48,7 +48,7 @@ function N(e) {
   return e
 }
 
-function Z(e, t) {
+function N(e, t) {
   if (null == e) return {};
   var n, r, l = function(e, t) {
     if (null == e) return {};
@@ -71,11 +71,11 @@ let D = Chunk647438.forwardRef(function(e, t) {
       isSorted: c,
       className: u
     } = e,
-    d = Z(e, ["label", "onFilter", "isFiltered", "isSorted", "className"]);
+    d = N(e, ["label", "onFilter", "isFiltered", "isSorted", "className"]);
   let m = s ? "header-primary" : "header-secondary";
   return c && (m = "text-brand"), (0, r.jsx)("th", {
     className: o()(w.tableHeaderCellContainer, u),
-    children: (0, r.jsxs)(C.P3F, (n = N({}, d), l = l = {
+    children: (0, r.jsxs)(C.P3F, (n = Z({}, d), l = l = {
       innerRef: t,
       onClick: a,
       className: o()(w.tableHeaderCell, {
@@ -112,11 +112,11 @@ function R(e) {
   let {
     guildId: t,
     currentPagedMembers: n
-  } = e, i = l.useRef(null), a = l.useRef(null), R = l.useRef(null), L = l.useRef(null), I = l.useRef(null), P = (0, c.e7)([h.Z], () => h.Z.getSearchStateByGuildId(t), [t], s()), V = (0, c.e7)([b.Z, m.Z], () => b.Z.can(H.Plq.MANAGE_GUILD, m.Z.getGuild(t)), [t]), {
+  } = e, i = l.useRef(null), a = l.useRef(null), R = l.useRef(null), L = l.useRef(null), P = l.useRef(null), I = (0, c.e7)([h.Z], () => h.Z.getSearchStateByGuildId(t), [t], s()), V = (0, c.e7)([b.Z, m.Z], () => b.Z.can(H.Plq.MANAGE_GUILD, m.Z.getGuild(t)), [t]), {
     selectedUserIds: M,
     addUsers: E,
     clearSelection: T
-  } = (0, g.Z)(t), k = P.requireUnusualDmActivity || P.requireCommunicationDisabled || P.requireUnusualAccountActivity || P.requireUsernameQuarantined, A = P.selectedRoleIds.size > 0, U = null != P.selectedJoinDateOption.afterDate, B = P.selectedSort === p.d$.ORDER_BY_GUILD_JOINED_AT_ASC, F = null != P.selectedAccountAgeOption.afterDate, q = P.selectedSort === p.d$.ORDER_BY_USER_ID_ASC || P.selectedSort === p.d$.ORDER_BY_USER_ID_DESC, G = null != P.selectedSourceInviteCode && "" !== P.selectedSourceInviteCode, z = null != P.selectedJoinSourceType, Y = G || z, Q = (0, f.xC)(t), W = l.useMemo(() => n.filter(e => (0, f.rX)(t, Q, e)), [Q, n, t]), K = W.length > 0, J = 0 === W.filter(e => !M.has(e)).length, X = l.useCallback(() => {
+  } = (0, g.Z)(t), k = I.requireUnusualDmActivity || I.requireCommunicationDisabled || I.requireUnusualAccountActivity || I.requireUsernameQuarantined, A = I.selectedRoleIds.size > 0, U = null != I.selectedJoinDateOption.afterDate, B = I.selectedSort === p.d$.ORDER_BY_GUILD_JOINED_AT_ASC, F = null != I.selectedAccountAgeOption.afterDate, q = I.selectedSort === p.d$.ORDER_BY_USER_ID_ASC || I.selectedSort === p.d$.ORDER_BY_USER_ID_DESC, G = null != I.selectedSourceInviteCode && "" !== I.selectedSourceInviteCode, z = null != I.selectedJoinSourceType, Y = G || z, Q = (0, f.xC)(t), W = l.useMemo(() => n.filter(e => (0, f.rX)(t, Q, e)), [Q, n, t]), K = W.length > 0, J = 0 === W.filter(e => !M.has(e)).length, X = l.useCallback(() => {
     K && (J ? T() : E(W))
   }, [K, J, T, E, W]);
   return (0, r.jsx)("thead", {
@@ -153,8 +153,8 @@ function R(e) {
           children: e => {
             var {
               onClick: t
-            } = e, n = Z(e, ["onClick"]);
-            return (0, r.jsx)(D, N({
+            } = e, n = N(e, ["onClick"]);
+            return (0, r.jsx)(D, Z({
               ref: i,
               label: _.intl.string(_.t.xcKP1P),
               onFilter: t,
@@ -176,8 +176,8 @@ function R(e) {
           children: e => {
             var {
               onClick: t
-            } = e, n = Z(e, ["onClick"]);
-            return (0, r.jsx)(D, N({
+            } = e, n = N(e, ["onClick"]);
+            return (0, r.jsx)(D, Z({
               ref: a,
               label: _.intl.string(_.t.sPph4O),
               onFilter: t,
@@ -208,8 +208,8 @@ function R(e) {
         children: e => {
           var {
             onClick: t
-          } = e, n = Z(e, ["onClick"]);
-          return (0, r.jsx)(D, N({
+          } = e, n = N(e, ["onClick"]);
+          return (0, r.jsx)(D, Z({
             ref: R,
             label: _.intl.string(_.t["yn0w1+"]),
             onFilter: t,
@@ -238,8 +238,8 @@ function R(e) {
         children: e => {
           var {
             onClick: t
-          } = e, n = Z(e, ["onClick"]);
-          return (0, r.jsx)(D, N({
+          } = e, n = N(e, ["onClick"]);
+          return (0, r.jsx)(D, Z({
             ref: L,
             label: _.intl.string(_.t["2SZsWX"]),
             onFilter: t,
@@ -253,7 +253,7 @@ function R(e) {
         align: "left",
         shouldShow: true,
         children: (0, r.jsx)(C.yRy, {
-          targetElementRef: I,
+          targetElementRef: P,
           animation: C.yRy.Animation.FADE,
           position: "bottom",
           spacing: 4,
@@ -268,7 +268,7 @@ function R(e) {
             })
           },
           children: e => (0, r.jsx)(D, {
-            ref: I,
+            ref: P,
             label: _.intl.string(_.t["7V3759"]),
             "aria-label": _.intl.string(_.t["2cRO3R"]),
             onFilter: t => {

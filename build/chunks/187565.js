@@ -1,7 +1,7 @@
 /** Chunk was on 74240 **/
 /** chunk id: 187565, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  KJ: () => g,
+  KJ: () => p,
   N0: () => b,
   k3: () => j,
   lk: () => C,
@@ -20,7 +20,7 @@ var r, Chunk647438 = require("./647438.js"),
   Chunk983736 = require("./983736.js"),
   Chunk266395 = require("./266395.js"),
   Chunk388032 = require("./388032.jsx"),
-  g = ((r = {})[r.CLAIM_ACCOUNT = 0] = "CLAIM_ACCOUNT", r[r.EMAIL_CONFIRMATION = 1] = "EMAIL_CONFIRMATION", r[r.VERIFICATION_FORM = 2] = "VERIFICATION_FORM", r);
+  p = ((r = {})[r.CLAIM_ACCOUNT = 0] = "CLAIM_ACCOUNT", r[r.EMAIL_CONFIRMATION = 1] = "EMAIL_CONFIRMATION", r[r.VERIFICATION_FORM = 2] = "VERIFICATION_FORM", r);
 
 function v(e, t, n) {
   let [r, s] = l.useState(false), c = (0, i.e7)([m.Z], () => m.Z.get(e)), u = (0, i.e7)([a.Z], () => a.Z.pendingState);
@@ -36,7 +36,7 @@ function v(e, t, n) {
       let e = u.termRules.map(e => e.value.trim()).filter(e => "" !== e);
       r = [{
         field_type: f.QJ.TERMS,
-        label: p.intl.string(p.t["9suSIA"]),
+        label: g.intl.string(g.t["9suSIA"]),
         values: e,
         required: true
       }]

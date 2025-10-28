@@ -2,7 +2,7 @@
 /** chunk id: 512508, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   PM: () => V,
-  WG: () => P,
+  WG: () => I,
   ZP: () => k
 }), require("./388685.js"), require("./781311.js");
 var Chunk951288 = require("./951288.js"),
@@ -62,22 +62,22 @@ function w(e, t) {
 
 function S(e) {
   var t = function(e, t) {
-    if ("object" !== N(e) || null === e) return e;
+    if ("object" !== Z(e) || null === e) return e;
     var n = e[Symbol.toPrimitive];
     if (true !== n) {
       var r = n.call(e, t || "default");
-      if ("object" !== N(r)) return r;
+      if ("object" !== Z(r)) return r;
       throw TypeError("@@toPrimitive must return a primitive value.")
     }
     return ("string" === t ? String : Number)(e)
   }(e, "string");
-  return "symbol" === N(t) ? t : String(t)
+  return "symbol" === Z(t) ? t : String(t)
 }
 
-function N(e) {
+function Z(e) {
   return e && "undefined" != typeof Symbol && e.constructor === Symbol ? "symbol" : typeof e
 }
-let Z = (0, Chunk313201.hQ)(),
+let N = (0, Chunk313201.hQ)(),
   D = (0, Chunk313201.hQ)(),
   R = "text-sm/medium";
 
@@ -85,11 +85,11 @@ function L(e) {
   return 1 === e.type
 }
 
-function I(e) {
+function P(e) {
   return 0 === e.type
 }
 
-function P(e) {
+function I(e) {
   let t = "".concat(!e.name.includes(g.CR) ? "@" : "").concat(e.name);
   return {
     tag: {
@@ -180,7 +180,7 @@ function T(e, t, n) {
     row: e,
     guildId: t,
     className: n
-  }, e.record.id) : I(e) ? (0, r.jsx)(E, {
+  }, e.record.id) : P(e) ? (0, r.jsx)(E, {
     row: e,
     channel: e.record,
     className: n
@@ -205,9 +205,9 @@ function k(e) {
       let t = j.Z.getChannel(e);
       null != t && (r[e] = V(t))
     }), t.forEach(e => {
-      e in n && (r[e] = P(n[e]))
+      e in n && (r[e] = I(n[e]))
     }), r
-  })(a, C, h), [a, C, h]), v = l.useMemo(() => Object.keys(g), [g]), [y, N] = l.useState(""), [R, M] = l.useState(false), [E, k] = l.useState(false), [A, U] = l.useState(false), B = l.useRef(null), {
+  })(a, C, h), [a, C, h]), v = l.useMemo(() => Object.keys(g), [g]), [y, Z] = l.useState(""), [R, M] = l.useState(false), [E, k] = l.useState(false), [A, U] = l.useState(false), B = l.useRef(null), {
     sections: F,
     sectionCounts: q
   } = l.useMemo(() => {
@@ -225,7 +225,7 @@ function k(e) {
         let {
           row: t
         } = e;
-        return I(t)
+        return P(t)
       }).map(e => e.row.record.id),
       r = t.filter(e => {
         let {
@@ -250,7 +250,7 @@ function k(e) {
     },
     Q = l.useCallback(e => {
       let t = _({}, g);
-      I(e) ? t[e.id] = V(e.record) : L(e) && (t[e.id] = P(e.record)), G(t), N(""), z(), setTimeout(() => {
+      P(e) ? t[e.id] = V(e.record) : L(e) && (t[e.id] = I(e.record)), G(t), Z(""), z(), setTimeout(() => {
         var e;
         let t = null == (e = B.current) ? true : e.containerRef.current,
           n = null == t ? true : t.firstChild;
@@ -311,15 +311,15 @@ function k(e) {
               for (r = 0; r < i.length; r++) n = i[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
             }
             return l
-          }(g, [t].map(S))), N(""), z()
+          }(g, [t].map(S))), Z(""), z()
         },
         onQueryChange: e => {
-          N(e.trim().toLocaleLowerCase())
+          Z(e.trim().toLocaleLowerCase())
         },
         placeholder: null != b ? b : O.intl.string(O.t.uqHLzW),
         sections: [v.length],
         inputProps: {
-          "aria-labelledby": Z,
+          "aria-labelledby": N,
           "aria-controls": D,
           "aria-expanded": A,
           onFocus: e => Y(true, 2, e),

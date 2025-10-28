@@ -38,18 +38,18 @@ let b = () => (0, Chunk951288.jsx)(Chunk852860.Z, {
       guildId: n,
       onClose: o,
       onComplete: u,
-      inviteKey: p,
-      isPreview: g = false
+      inviteKey: g,
+      isPreview: p = false
     } = e, j = (0, f.rb)(e => e.shouldShowWarning), {
       verificationForm: C,
       hasFetched: _
-    } = (0, h.ng)(n, g, p), I = (0, d.Dt)();
+    } = (0, h.ng)(n, p, g), O = (0, d.Dt)();
     return (l.useEffect(() => {
       _ && C === m.t && o()
     }, [_, o, C]), C === m.t) ? null : (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)(i.IX, {
         transitionState: t,
-        "aria-labelledby": I,
+        "aria-labelledby": O,
         size: "xl",
         onClose: o,
         children: [(0, r.jsx)("div", {
@@ -61,11 +61,11 @@ let b = () => (0, Chunk951288.jsx)(Chunk852860.Z, {
           className: v.container,
           children: (0, r.jsx)(x.Z, {
             verificationForm: C,
-            headerId: I,
+            headerId: O,
             guildId: n,
             onClose: o,
             onComplete: u,
-            isPreview: g
+            isPreview: p
           })
         })]
       }), (0, r.jsx)(s.W, {
