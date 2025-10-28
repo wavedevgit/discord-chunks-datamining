@@ -165,7 +165,7 @@ let z = Chunk647438.forwardRef(function(e, t) {
       (0, m.jW)(e, async () => {
         let {
           default: e
-        } = await n.e("5396").then(n.bind(n, 731646));
+        } = await n.e("5396").then(n.bind(n, 999588));
         return t => (0, r.jsx)(e, Z(G({}, t), {
           id: E.id,
           label: k.intl.string(k.t.sMsaLg)

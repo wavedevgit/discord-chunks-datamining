@@ -12,12 +12,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk866442 = require("./866442.js"),
   Chunk442837 = require("./442837.js"),
   Chunk692547 = require("./692547.js"),
+  Chunk194983 = require("./194983.jsx"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
   Chunk607070 = require("./607070.js"),
   Chunk134433 = require("./134433.jsx"),
-  Chunk111028 = require("./111028.jsx"),
   Chunk518738 = require("./518738.js"),
   Chunk884902 = require("./884902.js"),
   Chunk48950 = require("./48950.jsx"),
@@ -101,38 +101,38 @@ let N = Chunk647438.forwardRef(function(e, t) {
       size: 16,
       guildId: D
     }),
-    G = (0, c.e7)([p.Z], () => p.Z.roleStyle),
+    G = (0, c.e7)([h.Z], () => h.Z.roleStyle),
     B = (null == (a = P.tags) ? true : a.guild_connections) === null,
     Z = i.useCallback(e => {
-      (0, _.jW)(e, async () => {
+      (0, p.jW)(e, async () => {
         let {
           default: e
-        } = await n.e("5396").then(n.bind(n, 731646));
+        } = await n.e("5396").then(n.bind(n, 999588));
         return t => (0, r.jsx)(e, S(I({}, t), {
           id: P.id,
           label: y.intl.string(y.t.sMsaLg)
         }))
       })
     }, [P.id]),
-    F = (0, f.dQu)(u.Z.unsafe_rawColors.PRIMARY_300).hsl(),
+    F = (0, _.dQu)(u.Z.unsafe_rawColors.PRIMARY_300).hsl(),
     V = null != (v = P.colorString) ? v : F,
     H = null != (T = (0, l.wK)(V, .6)) ? T : true,
     Y = u.Z.unsafe_rawColors.WHITE_500.css,
     W = (0, l._i)(V);
   null != W && .3 > (0, l.Bd)(W) && (Y = u.Z.unsafe_rawColors.PRIMARY_630.css);
   let K = (0, E._f)(D, P, P.colorStrings);
-  C = B ? (0, r.jsx)(h.Z, {
+  C = B ? (0, r.jsx)(m.Z, {
     className: O.roleFlowerStar,
     iconClassName: N ? O.roleVerifiedIcon : true,
     color: V,
     size: 14
-  }) : "dot" === G ? (0, r.jsx)(f.FhE, {
+  }) : "dot" === G ? (0, r.jsx)(_.FhE, {
     className: O.roleDot,
     color: V,
     background: false,
     colors: K,
     tooltip: false
-  }) : (0, r.jsx)(f.xko, {
+  }) : (0, r.jsx)(_.xko, {
     color: V,
     colors: K,
     className: O.roleCircle
@@ -143,10 +143,10 @@ let N = Chunk647438.forwardRef(function(e, t) {
         borderColor: L ? true : H
       }, null != (t = e.style) ? t : {})
     }, [H, L, e.style]),
-    q = () => N ? (0, r.jsx)(d.u, {
+    q = () => N ? (0, r.jsx)(f.u, {
       asContainer: true,
       text: y.intl.string(y.t.u3RVsH),
-      children: (0, r.jsxs)(f.P3F, {
+      children: (0, r.jsxs)(_.P3F, {
         className: o()(O.roleRemoveButtonCanRemove, O.roleRemoveButton),
         onClick: w,
         tabIndex: k,
@@ -157,14 +157,14 @@ let N = Chunk647438.forwardRef(function(e, t) {
         "aria-label": y.intl.formatToPlainString(y.t.QrxwhY, {
           roleName: P.name
         }),
-        children: [C, (0, r.jsx)(f.Dio, {
+        children: [C, (0, r.jsx)(_.Dio, {
           size: "md",
           color: Y,
           className: O.roleRemoveIcon,
           "aria-hidden": true
         })]
       })
-    }) : (0, r.jsx)(f.P3F, {
+    }) : (0, r.jsx)(_.P3F, {
       className: O.roleRemoveButton,
       tabIndex: false,
       focusProps: {
@@ -176,7 +176,7 @@ let N = Chunk647438.forwardRef(function(e, t) {
       }),
       children: C
     });
-  return (0, r.jsx)(f.tEY, {
+  return (0, r.jsx)(_.tEY, {
     children: (0, r.jsxs)("div", S(I({
       ref: t,
       className: o()(O.role, R),
@@ -193,9 +193,9 @@ let N = Chunk647438.forwardRef(function(e, t) {
       })) : null, (0, r.jsx)("div", {
         "aria-hidden": true,
         className: O.roleName,
-        children: (0, r.jsx)(f.Text, {
+        children: (0, r.jsx)(_.Text, {
           variant: "text-xs/medium",
-          children: (0, r.jsx)(m.Z, {
+          children: (0, r.jsx)(d.Z, {
             children: P.name
           })
         })

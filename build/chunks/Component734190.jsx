@@ -9,13 +9,13 @@ var Chunk951288 = require("./951288.js"),
   o = require.n(Chunk120356),
   Chunk91192 = require("./91192.jsx"),
   Chunk442837 = require("./442837.js"),
+  Chunk194983 = require("./194983.jsx"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk493683 = require("./493683.js"),
   Chunk239091 = require("./239091.js"),
   Chunk99690 = require("./99690.jsx"),
   Chunk471445 = require("./471445.js"),
-  Chunk111028 = require("./111028.jsx"),
   Chunk569471 = require("./569471.js"),
   Chunk488131 = require("./488131.js"),
   Chunk592125 = require("./592125.js"),
@@ -81,7 +81,7 @@ function L(e) {
     style: t
   }, {
     density: a
-  } = (0, u.TCT)();
+  } = (0, d.TCT)();
   switch (a) {
     case "cozy":
       return (0, r.jsxs)("svg", D(R({}, l), {
@@ -136,9 +136,9 @@ function M(e) {
     thread: t
   } = e, n = i.useMemo(() => {
     var e;
-    return null != (e = (0, h.KS)(t)) ? e : u.or_
-  }, [t]), l = (0, h.bT)(t);
-  return (0, r.jsx)(c.u, {
+    return null != (e = (0, g.KS)(t)) ? e : d.or_
+  }, [t]), l = (0, g.bT)(t);
+  return (0, r.jsx)(u.u, {
     text: l,
     delay: 500,
     asContainer: true,
@@ -157,8 +157,8 @@ let k = Chunk647438.memo(function(e) {
   let {
     thread: t,
     isSelectedChannel: l,
-    isSelectedVoice: c,
-    isLast: h,
+    isSelectedVoice: u,
+    isLast: g,
     withGuildIcon: A
   } = e, k = (0, s.e7)([v.ZP], () => v.ZP.getVoiceStatesForChannel(t), [t]), G = (0, s.e7)([j.Z], () => j.Z.hasVideo(t.id)), {
     unread: U,
@@ -173,10 +173,10 @@ let k = Chunk647438.memo(function(e) {
   }), z = (0, s.e7)([y.default], () => y.default.getUser(t.ownerId)), W = i.useCallback(e => {
     (0, b.ok)(t, !e.shiftKey, N.on.CHANNEL_LIST)
   }, [t]), K = i.useCallback(() => {
-    d.Z.preload(t.guild_id, t.id)
+    p.Z.preload(t.guild_id, t.id)
   }, [t.guild_id, t.id]), Y = i.useCallback(e => {
     let i = _.Z.getChannel(t.id);
-    null != i && (0, p.jW)(e, async () => {
+    null != i && (0, f.jW)(e, async () => {
       let {
         default: e
       } = await n.e("40157").then(n.bind(n, 422200));
@@ -215,13 +215,13 @@ let k = Chunk647438.memo(function(e) {
     }),
     children: [(0, r.jsx)(L, {
       withGuildIcon: A
-    }), h ? null : (0, r.jsx)(L, {
+    }), g ? null : (0, r.jsx)(L, {
       withGuildIcon: A,
       inverted: true,
       style: {
         transform: "rotateX(180deg) translateY(-9px)"
       }
-    }), (0, r.jsx)(u.tEY, {
+    }), (0, r.jsx)(d.tEY, {
       focusTarget: $,
       ringTarget: $,
       offset: {
@@ -243,7 +243,7 @@ let k = Chunk647438.memo(function(e) {
         onContextMenu: Y,
         children: [!U || V || l ? null : (0, r.jsx)("div", {
           className: o()(w.unread, w.unreadImportant)
-        }), (0, r.jsx)(u.P3F, D(R({}, J), {
+        }), (0, r.jsx)(d.P3F, D(R({}, J), {
           innerRef: $,
           className: w.link,
           onClick: W,
@@ -257,13 +257,13 @@ let k = Chunk647438.memo(function(e) {
               className: w.threadIconWithAvatar,
               children: [(0, r.jsx)(M, {
                 thread: t
-              }), null == z ? null : (0, r.jsx)(f.Z, {
+              }), null == z ? null : (0, r.jsx)(h.Z, {
                 user: z,
-                size: u.EFr.SIZE_16
+                size: d.EFr.SIZE_16
               })]
             }) : null, "icon-in-bubble" === H.variant ? (0, r.jsx)(M, {
               thread: t
-            }) : null, (0, r.jsx)(g.Z, {
+            }) : null, (0, r.jsx)(c.Z, {
               className: w.name,
               "aria-hidden": true,
               children: t.name
@@ -283,7 +283,7 @@ let k = Chunk647438.memo(function(e) {
       })
     }), (0, r.jsx)(I.Z, {
       channel: t,
-      collapsed: !c && 1 !== k.length,
+      collapsed: !u && 1 !== k.length,
       collapsedMax: 6,
       voiceStates: k,
       location: P.Sbl.GUILD_CHANNEL_LIST,

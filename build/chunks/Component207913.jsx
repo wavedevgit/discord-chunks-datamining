@@ -10,12 +10,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk392711 = require("./392711.js"),
   Chunk843611 = require("./843611.js"),
   Chunk442837 = require("./442837.js"),
+  Chunk194983 = require("./194983.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
   Chunk884338 = require("./884338.jsx"),
   Chunk933557 = require("./933557.js"),
   Chunk471445 = require("./471445.js"),
-  Chunk111028 = require("./111028.jsx"),
   Chunk978003 = require("./978003.js"),
   Chunk245216 = require("./245216.jsx"),
   Chunk739566 = require("./739566.js"),
@@ -81,8 +81,8 @@ function V(e) {
     focusProps: l,
     isSelected: a,
     isUnread: s,
-    groupedMessages: d
-  } = e, p = n.type === M.d4z.UNKNOWN ? u.VL1 : (0, h.KS)(n, null), m = (0, f.ZP)(n, false), b = (0, c.e7)([Z.Z], () => Z.Z.getGuild(n.getGuildId())), {
+    groupedMessages: p
+  } = e, f = n.type === M.d4z.UNKNOWN ? d.VL1 : (0, g.KS)(n, null), m = (0, h.ZP)(n, false), b = (0, c.e7)([Z.Z], () => Z.Z.getGuild(n.getGuildId())), {
     nick: O,
     colorString: y
   } = (0, _.ZP)(t), {
@@ -90,7 +90,7 @@ function V(e) {
     eventHandlers: x
   } = (0, E.Z)({
     userId: t.author.id,
-    size: u.EFr.SIZE_32,
+    size: d.EFr.SIZE_32,
     guildId: null == b ? true : b.id,
     animateOnHover: true
   }), S = n.type !== M.d4z.GUILD_ANNOUNCEMENT || null == b, P = (0, j.x)({
@@ -112,14 +112,14 @@ function V(e) {
   });
   return (0, i.useEffect)(() => {
     null != b && N.Z.requestMember(b.id, t.author.id)
-  }, [b, t.author.id]), (0, r.jsx)(u.tEY, F(B({}, l), {
+  }, [b, t.author.id]), (0, r.jsx)(d.tEY, F(B({}, l), {
     children: (0, r.jsxs)("div", {
       onMouseLeave: x.onMouseLeave,
       onMouseEnter: x.onMouseEnter,
       className: U.messageContainer,
       children: [s && !a && (0, r.jsx)("div", {
         className: U.unreadDot
-      }), (0, r.jsx)(u.Kqy, {
+      }), (0, r.jsx)(d.Kqy, {
         align: "start",
         style: {
           width: "fit-content",
@@ -128,24 +128,24 @@ function V(e) {
         children: S ? (0, r.jsx)(L.q, {
           "aria-label": "User Avatar",
           src: C,
-          size: u.EFr.SIZE_32,
+          size: d.EFr.SIZE_32,
           cornerIconUrl: null != b ? (0, I.EB)(b, 24) : true,
           cornerIconOffsetX: 4,
           cornerIconOffsetY: 3
         }) : (0, r.jsx)(L.E, {
           "aria-label": "Guild Icon",
           src: (0, I.EB)(b, 32),
-          size: u.EFr.SIZE_32,
+          size: d.EFr.SIZE_32,
           cornerIconUrl: t.author.getAvatarURL(b.id, 24),
           cornerIconOffsetX: 4,
           cornerIconOffsetY: 3
         })
-      }), (0, r.jsxs)(u.Kqy, {
+      }), (0, r.jsxs)(d.Kqy, {
         gap: 0,
         style: {
           minWidth: 0
         },
-        children: [(0, r.jsxs)(u.Kqy, {
+        children: [(0, r.jsxs)(d.Kqy, {
           direction: "horizontal",
           gap: 4,
           style: {
@@ -160,12 +160,12 @@ function V(e) {
               style: {
                 color: null != y ? y : true
               },
-              children: (0, r.jsx)(g.Z, {
+              children: (0, r.jsx)(u.Z, {
                 children: T
               })
             }), P]
-          }) : (0, r.jsx)(g.Z, {
-            children: (0, r.jsx)(u.Heading, {
+          }) : (0, r.jsx)(u.Z, {
+            children: (0, r.jsx)(d.Heading, {
               variant: "text-md/semibold",
               style: {
                 color: null != y ? y : true
@@ -173,7 +173,7 @@ function V(e) {
               className: U.username,
               children: b.name
             })
-          }), (0, r.jsxs)(u.Kqy, {
+          }), (0, r.jsxs)(d.Kqy, {
             direction: "horizontal",
             gap: 4,
             align: "center",
@@ -184,14 +184,14 @@ function V(e) {
               message: t,
               channel: n,
               isUnread: s
-            }), t.mentioned && s ? (0, r.jsx)(u.mAB, {
+            }), t.mentioned && s ? (0, r.jsx)(d.mAB, {
               className: U.mentionBadge,
               count: 1
             }) : (0, r.jsx)(z, {
               message: t
             })]
           })]
-        }), (0, r.jsxs)(u.Kqy, {
+        }), (0, r.jsxs)(d.Kqy, {
           direction: "horizontal",
           align: "center",
           gap: 4,
@@ -200,10 +200,10 @@ function V(e) {
             [U.unread]: s,
             [U.selected]: a
           }),
-          children: [null !== p && (0, r.jsx)(p, {
+          children: [null !== f && (0, r.jsx)(f, {
             size: "xxs",
             className: U.inlineIcon
-          }), (0, r.jsxs)(u.Text, {
+          }), (0, r.jsxs)(d.Text, {
             variant: "text-sm/medium",
             lineClamp: 1,
             className: o()(U.channelName, {
@@ -217,7 +217,7 @@ function V(e) {
           isUnread: s,
           isSelected: a,
           channel: n
-        }), d.length > 0 && (0, r.jsx)(u.Kqy, {
+        }), p.length > 0 && (0, r.jsx)(d.Kqy, {
           gap: 4,
           style: {
             minWidth: 0,
@@ -225,7 +225,7 @@ function V(e) {
             marginBottom: 4
           },
           children: (0, r.jsx)(H, {
-            overflowMessages: d
+            overflowMessages: p
           })
         })]
       })]
@@ -237,15 +237,15 @@ function H(e) {
   let {
     overflowMessages: t
   } = e, n = (0, a.uniqBy)(t.map(e => e.author), e => e.id).slice(0, 3);
-  return (0, r.jsxs)(u.Kqy, {
+  return (0, r.jsxs)(d.Kqy, {
     direction: "horizontal",
     gap: 4,
     inert: true,
-    children: [(0, r.jsx)(p.ZP, {
+    children: [(0, r.jsx)(f.ZP, {
       users: n,
       useFallbackUserForPopout: true,
-      size: p.u8.SIZE_16
-    }), (0, r.jsx)(u.Text, {
+      size: f.u8.SIZE_16
+    }), (0, r.jsx)(d.Text, {
       variant: "text-sm/medium",
       className: U.overflowText,
       children: G.intl.formatToPlainString(k.default.NzUuLD, {
@@ -301,13 +301,13 @@ function W(e) {
           return e.attachments.length + +!!t
         }(t),
         c = (0, m.Z)(t),
-        d = t.stickerItems.length > 0,
+        u = t.stickerItems.length > 0,
         p = t.isPoll(),
         f = t.type === M.uaV.POLL_RESULT,
         h = t.hasFlag(M.iLy.IS_VOICE_MESSAGE),
         g = t.type === M.uaV.USER_JOIN,
         _ = null;
-      1 === s ? _ = u.XBm : s > 1 ? _ = u.Ka2 : c ? _ = b.Z : p || f ? _ = u.QDj : d ? _ = u.SlE : h && (_ = u.gj8);
+      1 === s ? _ = d.XBm : s > 1 ? _ = d.Ka2 : c ? _ = b.Z : p || f ? _ = d.QDj : u ? _ = d.SlE : h && (_ = d.gj8);
       let y = true,
         j = null;
       if (e)
@@ -317,7 +317,7 @@ function W(e) {
         y = false, j = null == (v = t.poll) ? true : v.question.text
       } else j = f ? G.intl.string(G.t.sad2PH) : i ? G.intl.string(G.t.p0oZmy) : s > 1 ? G.intl.formatToPlainString(G.t.rtfTKp, {
         count: s
-      }) : 1 === s ? G.intl.string(G.t.tCcq5p) : d ? G.intl.format(G.t.zY4v1B, {
+      }) : 1 === s ? G.intl.string(G.t.tCcq5p) : u ? G.intl.format(G.t.zY4v1B, {
         stickerName: t.stickerItems[0].name
       }) : h ? G.intl.string(G.t.slFYgi) : g ? G.intl.string(G.t.Yvvfw9) : G.intl.string(G.t.sDqZHL);
       else y = false, j = (0, r.jsx)(O.ZP, {
@@ -347,7 +347,7 @@ function W(e) {
     isUnread: l,
     isSelected: a
   });
-  return (0, r.jsxs)(u.Kqy, {
+  return (0, r.jsxs)(d.Kqy, {
     direction: "horizontal",
     gap: 4,
     align: "center",
@@ -355,7 +355,7 @@ function W(e) {
     children: [null != c && (0, r.jsx)(c, {
       size: "xxs",
       className: U.inlineIcon
-    }), (0, r.jsx)(u.Text, {
+    }), (0, r.jsx)(d.Text, {
       variant: "text-sm/normal",
       lineClamp: 1,
       className: U.message,
@@ -368,7 +368,7 @@ let K = (0, Chunk647438.memo)(function(e) {
   let {
     message: l,
     groupedMessages: a,
-    isUnread: p
+    isUnread: u
   } = e, f = l.message, h = (0, A.fJ)(), {
     params: g
   } = (0, s.$B)(), m = (0, c.e7)([P.Z], () => {
@@ -388,7 +388,7 @@ let K = (0, Chunk647438.memo)(function(e) {
   } = (0, T.pN)({
     location: "NotificationsInboxMessageUnit"
   }), O = i.useMemo(() => "".concat(null == f ? true : f.author.username, ": ").concat(null == m ? true : m.name), [null == f ? true : f.author.username, null == m ? true : m.name]), y = null != (t = null == a ? true : a.map(e => e.message).filter(e => null != e)) ? t : [];
-  return null == f || null == m ? null : (0, r.jsx)(u.kL8, {
+  return null == f || null == m ? null : (0, r.jsx)(d.kL8, {
     "aria-label": O,
     className: o()(U.messageClickableContainer, {
       [U.selected]: f.id === g.messageId,
@@ -398,7 +398,7 @@ let K = (0, Chunk647438.memo)(function(e) {
       w.Z.inboxItemClick({
         message: f,
         channel: m,
-        isUnread: p,
+        isUnread: u,
         isSidebar: _ === T.jP.SIDEBAR,
         viewId: h
       })
@@ -408,7 +408,7 @@ let K = (0, Chunk647438.memo)(function(e) {
         interactionType: A.s_.CONTEXT_MENU,
         message: f,
         viewId: h
-      }), (0, d.jW)(e, async () => {
+      }), (0, p.jW)(e, async () => {
         let {
           default: e
         } = await n.e("74922").then(n.bind(n, 550265));
@@ -424,7 +424,7 @@ let K = (0, Chunk647438.memo)(function(e) {
       channel: m,
       isSelected: f.id === g.messageId,
       groupedMessages: y,
-      isUnread: p
+      isUnread: u
     })
   })
 }, (e, t) => {

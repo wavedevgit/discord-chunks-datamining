@@ -1,7 +1,7 @@
 /** Chunk was on 83098 **/
 /** chunk id: 137021, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => P
+  default: () => Z
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -25,12 +25,12 @@ var Chunk951288 = require("./951288.js"),
   Chunk834505 = require("./834505.js"),
   Chunk621054 = require("./621054.js");
 
-function P(e) {
+function Z(e) {
   let {
     applicationId: t,
     customId: n,
-    linkId: P,
-    message: Z,
+    linkId: Z,
+    message: P,
     onClose: _,
     onCopyLink: O,
     onShare: C,
@@ -41,9 +41,9 @@ function P(e) {
       applicationId: t,
       referrerId: null == N ? true : N.id,
       customId: n,
-      linkId: P
+      linkId: Z
     }))
-  }, [t, N, n, P, A]);
+  }, [t, N, n, Z, A]);
   let I = l.useRef(0),
     [U, F] = l.useState([]),
     H = U.length,
@@ -68,7 +68,7 @@ function P(e) {
     Q = l.useCallback(e => {
       D(e), W(e)
     }, [D, W]),
-    J = l.useCallback(e => {
+    X = l.useCallback(e => {
       F(t => {
         let n = t.findIndex(t => {
           let {
@@ -82,9 +82,9 @@ function P(e) {
         return r.splice(n, 1), I.current += 1, r
       })
     }, [q]),
-    X = l.useCallback(async e => {
+    J = l.useCallback(async e => {
       if (null == T) return;
-      let t = (0, y.P)(Z, T, M);
+      let t = (0, y.P)(P, T, M);
       R(true), (await Promise.all(e.map(f.qx))).filter(g.lm).forEach(async e => {
         let n = h.Z.getChannel(e);
         null != n && await u.Z.sendMessage(e, d.ZP.parse(n, t), false, {
@@ -93,7 +93,7 @@ function P(e) {
       }), (0, s.showToast)((0, s.createToast)(S.intl.formatToPlainString(S.t.jQULqL, {
         applicationName: T.name
       }), s.ToastType.SUCCESS)), C(true), _()
-    }, [Z, M, _, C, T]),
+    }, [P, M, _, C, T]),
     Y = l.useCallback(() => {
       (0, m.JG)(M, () => {
         O(), (0, s.showToast)((0, s.createToast)(S.intl.string(S.t.t5VZ88), s.ToastType.SUCCESS))
@@ -103,14 +103,14 @@ function P(e) {
       paddingBottom: 8,
       paddingTop: 8,
       rowData: V,
-      handleToggleDestination: J,
+      handleToggleDestination: X,
       selectedDestinations: U,
       disableSelection: q
     }) : (0, r.jsxs)("div", {
-      className: j.noResults,
+      className: E.noResults,
       children: [(0, r.jsx)("img", {
-        className: j.noResultsImg,
-        src: E,
+        className: E.noResultsImg,
+        src: j,
         alt: ""
       }), (0, r.jsx)(s.Text, {
         variant: "text-md/normal",
@@ -122,7 +122,7 @@ function P(e) {
     transitionState: L,
     onClose: _,
     title: S.intl.string(S.t.r9qKow),
-    subtitle: Z,
+    subtitle: P,
     size: "md",
     input: (0, r.jsx)(s.E1j, {
       ref: z,
@@ -140,7 +140,7 @@ function P(e) {
     }, {
       text: S.intl.string(S.t.TXNS7S),
       variant: "primary",
-      onClick: () => X(U),
+      onClick: () => J(U),
       loading: w,
       disabled: !(H > 0)
     }],

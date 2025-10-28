@@ -152,7 +152,7 @@ let G = Chunk647438.forwardRef((e, t) => {
           return (0, g.jW)(e, async () => {
             let {
               default: e
-            } = await n.e("5396").then(n.bind(n, 731646));
+            } = await n.e("5396").then(n.bind(n, 999588));
             return n => (0, r.jsx)(e, L(A({}, n), {
               id: t.targetId,
               label: P.intl.string(P.t.rCazna)

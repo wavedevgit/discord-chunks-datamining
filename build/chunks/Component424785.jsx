@@ -8,6 +8,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
+  Chunk194983 = require("./194983.jsx"),
   Chunk28664 = require("./28664.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk475179 = require("./475179.js"),
@@ -15,7 +16,6 @@ var Chunk951288 = require("./951288.js"),
   Chunk146773 = require("./146773.jsx"),
   Chunk888651 = require("./888651.js"),
   Chunk201895 = require("./201895.js"),
-  Chunk111028 = require("./111028.jsx"),
   Chunk305325 = require("./305325.js"),
   Chunk281956 = require("./281956.js"),
   Chunk66999 = require("./66999.js"),
@@ -134,11 +134,11 @@ class Y extends Chunk98597.ZP {
       locked: i,
       connectChannelDropTarget: l,
       connectChannelDragSource: a,
-      connectUserDropTarget: u,
+      connectUserDropTarget: s,
       connectDragPreview: d,
       canReorderChannel: p,
       canMoveMembers: f,
-      stageInstance: g,
+      stageInstance: h,
       isSubscriptionGated: m,
       needSubscriptionToAccess: b,
       unread: _,
@@ -165,7 +165,7 @@ class Y extends Chunk98597.ZP {
             ref: this.channelItemRef,
             className: Chunk55940.iconVisibility,
             iconClassName: o()({
-              [Chunk556295.iconLive]: null != Chunk111028
+              [Chunk556295.iconLive]: null != Chunk888651
             }),
             channel: module,
             selected: !Chunk922482 && exports,
@@ -180,7 +180,7 @@ class Y extends Chunk98597.ZP {
             onContextMenu: e => {
               this.handleContextMenu(e)
             },
-            connectDragPreview: Chunk239091,
+            connectDragPreview: Chunk475179,
             subtitle: this.renderSubtitle(),
             isFavoriteSuggestion: Chunk922482,
             "aria-label": (0, Chunk201895.ZP)({
@@ -196,7 +196,7 @@ class Y extends Chunk98597.ZP {
         })
       }), this.renderVoiceUsers()]
     });
-    return Chunk888651 && (x = Chunk475179(Chunk427679)), Chunk146773 && (x = Chunk120356(Chunk442837(Chunk427679))), Chunk427679
+    return Chunk146773 && (x = Chunk194983(Chunk427679)), Chunk239091 && (x = Chunk120356(Chunk442837(Chunk427679))), Chunk427679
   }
   constructor(...e) {
     super(...e), z(this, "channelItemRef", i.createRef()), z(this, "state", {
@@ -225,7 +225,7 @@ class Y extends Chunk98597.ZP {
       let {
         channel: t
       } = this.props, i = N.Z.getGuild(t.getGuildId());
-      null != i && (0, d.jW)(e, async () => {
+      null != i && (0, p.jW)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("18320"), n.e("83331"), n.e("81070")]).then(n.bind(n, 213202));
@@ -252,16 +252,16 @@ class Y extends Chunk98597.ZP {
         locked: t,
         forceShowButtons: n
       } = this.props;
-      if (!t) return (0, r.jsx)(s.u, {
+      if (!t) return (0, r.jsx)(c.u, {
         asContainer: true,
         text: F.intl.string(F.t.ZXxLQg),
-        children: (0, r.jsx)(c.P3F, {
+        children: (0, r.jsx)(u.P3F, {
           className: o()(V.iconItem, n ? V.alwaysShown : null),
           onClick: () => {
-            u.Z.updateChatOpen(e.id, true), this.handleClickChat()
+            d.Z.updateChatOpen(e.id, true), this.handleClickChat()
           },
           "aria-label": F.intl.string(F.t.ZXxLQg),
-          children: (0, r.jsx)(c.kBi, {
+          children: (0, r.jsx)(u.kBi, {
             size: "xs",
             color: "currentColor",
             className: V.actionIcon
@@ -276,7 +276,7 @@ class Y extends Chunk98597.ZP {
     }), z(this, "renderSubtitle", () => {
       var e;
       let t = null == (e = this.props.stageInstance) ? true : e.topic;
-      return null == t ? null : (0, r.jsx)(g.Z, {
+      return null == t ? null : (0, r.jsx)(s.Z, {
         children: t
       })
     })

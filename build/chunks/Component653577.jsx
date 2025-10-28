@@ -8,10 +8,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
   o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
+  Chunk194983 = require("./194983.jsx"),
   Chunk481060 = require("./481060.js"),
   Chunk362721 = require("./362721.js"),
   Chunk12498 = require("./12498.js"),
-  Chunk111028 = require("./111028.jsx"),
   Chunk454585 = require("./454585.js"),
   Chunk626135 = require("./626135.js"),
   Chunk981631 = require("./981631.js"),
@@ -28,7 +28,7 @@ function _(e) {
     onClick: O,
     enableHangStatus: y,
     showEmptyChannelTopic: j
-  } = e, v = (0, a.e7)([u.Z], () => u.Z.getChannelStatus(t)), C = null != v && v.length > 0, x = (0, c.ZP)(t, true), E = (!y || !!j) && x, S = null != _ && _.length > 0;
+  } = e, v = (0, a.e7)([d.Z], () => d.Z.getChannelStatus(t)), C = null != v && v.length > 0, x = (0, u.ZP)(t, true), E = (!y || !!j) && x, S = null != _ && _.length > 0;
   if (i.useEffect(() => {
       C && f.default.track(h.rMx.VOICE_CHANNEL_TOPIC_VIEWED, {
         channel_id: t.id,
@@ -36,31 +36,31 @@ function _(e) {
       })
     }, [C, t.id, t.guild_id]), null == t.guild_id) return null;
   let I = o()(m.statusDiv, n && E ? m.hoverable : null);
-  return C ? (0, r.jsx)(s.P3F, {
+  return C ? (0, r.jsx)(c.P3F, {
     className: I,
     onClick: E ? O : true,
-    children: (0, r.jsx)(s.Text, {
+    children: (0, r.jsx)(c.Text, {
       variant: "text-xs/medium",
       className: o()(m.statusText, b.markup),
-      children: (0, r.jsx)(d.Z, {
+      children: (0, r.jsx)(s.Z, {
         children: p.Z.parseVoiceChannelStatus(v, true, {
           channelId: t.id
         })
       })
     })
-  }) : n && E && (!S || l) ? (0, r.jsxs)(s.P3F, {
+  }) : n && E && (!S || l) ? (0, r.jsxs)(c.P3F, {
     className: I,
     onClick: O,
-    children: [(0, r.jsx)(s.Text, {
+    children: [(0, r.jsx)(c.Text, {
       variant: "text-xs/medium",
       className: m.statusText,
       children: g.intl.string(g.t.Mgpxiw)
-    }), (0, r.jsx)(s.vdY, {
+    }), (0, r.jsx)(c.vdY, {
       color: "currentColor",
       className: m.pencilIcon,
       size: "xxs"
     })]
-  }) : S ? (0, r.jsx)(d.Z, {
+  }) : S ? (0, r.jsx)(s.Z, {
     children: _
   }) : null
 }

@@ -7,8 +7,8 @@ require.d(exports, {
 }), require("./781311.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk481060 = require("./481060.js"),
-  Chunk111028 = require("./111028.jsx"),
+var Chunk194983 = require("./194983.jsx"),
+  Chunk481060 = require("./481060.js"),
   Chunk652853 = require("./652853.jsx"),
   Chunk671955 = require("./671955.js"),
   Chunk704543 = require("./704543.js");
@@ -87,11 +87,11 @@ function h(e) {
   })) : (0, r.jsx)(c, f(u({
     color: "text-default"
   }, d), {
-    children: (0, r.jsx)(a.Z, {
+    children: (0, r.jsx)(i.Z, {
       children: h
     })
   }));
-  return null != n ? (0, r.jsx)(i.P3F, {
+  return null != n ? (0, r.jsx)(a.P3F, {
     onClick: e => {
       e.stopPropagation(), n(e)
     },
@@ -102,12 +102,12 @@ function h(e) {
 
 function m(e) {
   return (0, r.jsx)(h, u({
-    component: i.Heading
+    component: a.Heading
   }, e))
 }
 
 function g(e) {
   return (0, r.jsx)(h, u({
-    component: i.Text
+    component: a.Text
   }, e))
 }

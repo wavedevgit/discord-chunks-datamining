@@ -8,8 +8,8 @@ var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
+  Chunk194983 = require("./194983.jsx"),
   Chunk481060 = require("./481060.js"),
-  Chunk111028 = require("./111028.jsx"),
   Chunk652853 = require("./652853.jsx"),
   Chunk671955 = require("./671955.js"),
   Chunk704543 = require("./704543.js");
@@ -29,12 +29,12 @@ function d(e) {
     children: f
   }) : (0, r.jsxs)("div", {
     className: u.header,
-    children: [(0, r.jsxs)(o.Text, {
+    children: [(0, r.jsxs)(s.Text, {
       className: u.headerText,
       variant: _ === c.l.SIDEBAR ? "text-xs/semibold" : "text-xs/medium",
       color: "header-primary",
       id: n,
-      children: [(0, r.jsx)(s.Z, {
+      children: [(0, r.jsx)(o.Z, {
         children: t
       }), null != d && (0, r.jsx)("div", {
         className: u.platformIcon,

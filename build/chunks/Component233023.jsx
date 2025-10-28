@@ -8,8 +8,8 @@ var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
+  Chunk194983 = require("./194983.jsx"),
   Chunk481060 = require("./481060.js"),
-  Chunk111028 = require("./111028.jsx"),
   Chunk574176 = require("./574176.js"),
   Chunk833858 = require("./833858.js"),
   Chunk223135 = require("./223135.jsx"),
@@ -61,13 +61,13 @@ function m(e) {
       let e = null != N && !v && !P;
       return I || e ? (0, r.jsxs)(r.Fragment, {
         children: [w, D]
-      }) : (0, r.jsxs)(s.Z, {
+      }) : (0, r.jsxs)(o.Z, {
         delay: _.X,
         tooltipClassName: m,
         children: [w, D]
       })
     };
-  return (0, r.jsx)(o.Text, {
+  return (0, r.jsx)(s.Text, {
     variant: "text-".concat(y, "/medium"),
     color: "none",
     className: a()(p.truncated, n),

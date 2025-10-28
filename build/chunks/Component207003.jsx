@@ -146,7 +146,7 @@ function U(e) {
       decoration: "never"
     }),
     s = (0, c.e7)([_.Z], () => _.Z.getNickname(t.id)),
-    u = (0, c.e7)([P.Z], () => P.Z.getStatus(t.id));
+    u = (0, c.e7)([Z.Z], () => Z.Z.getStatus(t.id));
   return (0, r.jsx)(I, M(D({}, l), {
     icon: (0, r.jsx)(f.Z, {
       "aria-hidden": true,
@@ -183,13 +183,13 @@ function H(e) {
     channel: t,
     subLabel: n
   } = e, l = A(e, ["channel", "subLabel"]);
-  let a = (0, c.e7)([j.Z], () => j.Z.getGuild(null == t ? true : t.guild_id)),
+  let a = (0, c.e7)([E.Z], () => E.Z.getGuild(null == t ? true : t.guild_id)),
     i = (0, p.ZP)(t),
     s = (0, c.e7)([S.Z, O.default, _.Z], () => {
       let e = S.Z.getChannel(t.parent_id);
       return null == e ? null : (0, p.F6)(e, O.default, _.Z, false)
     }),
-    o = (0, c.e7)([Z.ZP], () => Z.ZP.lastMessageTimestamp(t.id, w.W.CHANNEL)),
+    o = (0, c.e7)([P.ZP], () => P.ZP.lastMessageTimestamp(t.id, w.W.CHANNEL)),
     f = null == a ? true : a.name;
   if (t.isThread() || t.isForumPost()) {
     let e = t.isForumPost() ? d.Mmi : d.VL1;
@@ -261,7 +261,7 @@ function q(e) {
         },
         c = (0, x.hC)(o),
         d = function(e) {
-          if (e instanceof v.Sf && (0, v.Km)(e.type) && null != e.rateLimitPerUser && e.rateLimitPerUser > 0 && !(E.Z.can(N.Plq.MANAGE_CHANNELS, e) || E.Z.can(N.Plq.MANAGE_MESSAGES, e))) return {
+          if (e instanceof v.Sf && (0, v.Km)(e.type) && null != e.rateLimitPerUser && e.rateLimitPerUser > 0 && !(j.Z.can(N.Plq.MANAGE_CHANNELS, e) || j.Z.can(N.Plq.MANAGE_MESSAGES, e))) return {
             label: R.intl.string(R.t.Icu3bf)
           }
         }(u),

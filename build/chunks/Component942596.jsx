@@ -11,6 +11,7 @@ var r, Chunk951288 = require("./951288.js"),
   s = require.n(Chunk120356),
   Chunk512722 = require("./512722.js"),
   c = require.n(Chunk512722),
+  Chunk194983 = require("./194983.jsx"),
   Chunk780384 = require("./780384.js"),
   Chunk481060 = require("./481060.js"),
   Chunk438139 = require("./438139.jsx"),
@@ -18,7 +19,6 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk726542 = require("./726542.js"),
   Chunk600164 = require("./600164.jsx"),
   Chunk686546 = require("./686546.jsx"),
-  Chunk111028 = require("./111028.jsx"),
   Chunk925329 = require("./925329.jsx"),
   Chunk810568 = require("./810568.js"),
   Chunk168524 = require("./168524.js"),
@@ -111,14 +111,14 @@ function Q(e) {
 function J(e) {
   let {
     activity: t
-  } = e, n = (0, _.ZP)(), r = Q({
+  } = e, n = (0, p.ZP)(), r = Q({
     activity: t
   });
   if (null == r) return null;
-  let a = p.Z.get(r);
+  let a = h.Z.get(r);
   return (0, i.jsx)("img", {
     alt: "",
-    src: (0, u.ap)(n) ? a.icon.lightSVG : a.icon.darkSVG,
+    src: (0, d.ap)(n) ? a.icon.lightSVG : a.icon.darkSVG,
     className: F.platformIcon
   })
 }
@@ -154,7 +154,7 @@ class $ extends(r = Chunk647438.PureComponent) {
     switch (l.type) {
       case B.IIU.STREAMING:
         t = Z.intl.formatToPlainString(Z.t.Dzgz4u, {
-          platform: [B.ABu.TWITCH, B.ABu.YOUTUBE].includes(c.toLowerCase()) ? c : p.Z.get(B.ABu.TWITCH).name
+          platform: [B.ABu.TWITCH, B.ABu.YOUTUBE].includes(c.toLowerCase()) ? c : h.Z.get(B.ABu.TWITCH).name
         });
         break;
       case B.IIU.LISTENING:
@@ -176,8 +176,8 @@ class $ extends(r = Chunk647438.PureComponent) {
         })
     }
     if (null != r) {
-      var u;
-      t = (0, P.yE)(null != (u = null == l ? true : l.flags) ? u : 0, B.xjy.EMBEDDED) ? l.type === B.IIU.WATCHING ? Z.intl.formatToPlainString(Z.t["M/L8ot"], {
+      var d;
+      t = (0, P.yE)(null != (d = null == l ? true : l.flags) ? d : 0, B.xjy.EMBEDDED) ? l.type === B.IIU.WATCHING ? Z.intl.formatToPlainString(Z.t["M/L8ot"], {
         guildName: r.name
       }) : Z.intl.formatToPlainString(Z.t["4chKQu"], {
         guildName: r.name
@@ -187,10 +187,10 @@ class $ extends(r = Chunk647438.PureComponent) {
     }
     return (null == l ? true : l.type) === B.IIU.HANG_STATUS && (t = Z.intl.string(Z.t["74vS/x"])), (0, i.jsxs)("div", {
       className: F.headerContainer,
-      children: [(0, i.jsx)(d.Heading, {
+      children: [(0, i.jsx)(f.Heading, {
         className: s()((0, w.l)(F, "headerText", e ? "EmptyBody" : "Normal")),
         variant: a ? "text-xs/semibold" : "eyebrow",
-        children: (0, i.jsx)(g.Z, {
+        children: (0, i.jsx)(u.Z, {
           children: t
         })
       }), null == o ? true : o()]
@@ -223,35 +223,35 @@ class $ extends(r = Chunk647438.PureComponent) {
     let {
       type: u
     } = this.props, {
-      assets: f,
+      assets: d,
       application_id: _
     } = e;
-    if (null == f || null == f.large_image && null == f.small_image) return null;
+    if (null == d || null == d.large_image && null == d.small_image) return null;
     (0, j.Z)(e) && (o = q[u]);
     let p = (0, M.Z)(e),
-      h = null != f.large_image ? (0, i.jsx)("img", {
-        alt: null != (t = f.large_text) ? t : "",
-        src: (0, N.xF)(_, f.large_image, null != o ? o : [G.Si.LARGE, G.Si.LARGE]),
+      h = null != d.large_image ? (0, i.jsx)("img", {
+        alt: null != (t = d.large_text) ? t : "",
+        src: (0, N.xF)(_, d.large_image, null != o ? o : [G.Si.LARGE, G.Si.LARGE]),
         className: s()(this.getTypeClass("assetsLargeImage", this.isStreamerOnTypeActivityFeed() ? B.ABu.TWITCH : ""), {
-          [null != (n = this.getTypeClass("assetsLargeMask")) ? n : ""]: null != f.small_image,
+          [null != (n = this.getTypeClass("assetsLargeMask")) ? n : ""]: null != d.small_image,
           [F.assetsLargeImageSpotify]: p
         })
       }) : null;
-    if (p) h = (0, i.jsx)(d.Anchor, {
+    if (p) h = (0, i.jsx)(f.Anchor, {
       onClick: this.handleOpenSpotifyAlbum,
       children: h
     });
     else if ((0, C.dS)(e)) {
       let t = (0, C.rq)(e);
       if (null == t) return null;
-      h = (0, i.jsx)(m.ZP, {
-        mask: m.ZP.Masks.SQUIRCLE,
+      h = (0, i.jsx)(g.ZP, {
+        mask: g.ZP.Masks.SQUIRCLE,
         width: G.Si.SMALL,
         height: G.Si.SMALL,
         children: (0, i.jsx)("img", {
           src: null != (r = R.ZP.getGuildIconURL({
             id: t.guildId,
-            icon: f.small_image,
+            icon: d.small_image,
             size: G.Si.SMALL
           })) ? r : true,
           className: F.assetsLargeImageVoiceChannel,
@@ -263,7 +263,7 @@ class $ extends(r = Chunk647438.PureComponent) {
       className: F.twitchImageContainer,
       children: [(0, i.jsxs)("div", {
         className: F.twitchImageOverlay,
-        children: [(0, i.jsx)(d.H, {
+        children: [(0, i.jsx)(f.H, {
           className: F.streamName,
           children: e.name
         }), (0, i.jsx)("div", {
@@ -272,19 +272,19 @@ class $ extends(r = Chunk647438.PureComponent) {
             game: e.details
           })
         })]
-      }), (0, i.jsx)(d.Anchor, {
+      }), (0, i.jsx)(f.Anchor, {
         className: F.twitchBackgroundImage,
         href: e.url,
         children: h
       })]
-    })), (0, C.dS)(e) || null == f.small_image || (l = (0, i.jsx)(d.aML, {
-      text: "" !== f.small_text ? f.small_text : null,
+    })), (0, C.dS)(e) || null == d.small_image || (l = (0, i.jsx)(f.aML, {
+      text: "" !== d.small_text ? d.small_text : null,
       position: "top",
       children: e => {
         var t;
         return (0, i.jsx)("img", H({
-          alt: null != (t = f.small_text) ? t : "",
-          src: (0, N.xF)(_, f.small_image, [G.Si.SMALL, G.Si.SMALL]),
+          alt: null != (t = d.small_text) ? t : "",
+          src: (0, N.xF)(_, d.small_image, [G.Si.SMALL, G.Si.SMALL]),
           className: this.getTypeClass("assetsSmallImage", null == h ? "WithoutLargeImage" : true)
         }, e))
       }
@@ -293,8 +293,8 @@ class $ extends(r = Chunk647438.PureComponent) {
       children: l
     }) : (0, i.jsxs)("div", {
       className: F.assets,
-      children: [(0, i.jsx)(d.aML, {
-        text: null != f.large_text ? f.large_text : null,
+      children: [(0, i.jsx)(f.aML, {
+        text: null != d.large_text ? d.large_text : null,
         position: "top",
         children: e => {
           let {
@@ -341,11 +341,11 @@ class $ extends(r = Chunk647438.PureComponent) {
     return (o === B.IIU.HANG_STATUS ? u = (0, v.O8)(t.id, e) : l && null != n ? u = (0, i.jsx)("span", {
       className: F.activityName,
       children: u
-    }) : !l && (c = a, u = a, (0, M.Z)(e) && null != e.sync_id && null != a ? u = (0, i.jsx)(d.Anchor, {
+    }) : !l && (c = a, u = a, (0, M.Z)(e) && null != e.sync_id && null != a ? u = (0, i.jsx)(f.Anchor, {
       className: F.bodyLink,
       onClick: this.handleOpenSpotifyTrack,
       children: a
-    }) : (0, C.dS)(e) && (u = e.name)), null == u) ? null : (0, i.jsx)(d.Text, {
+    }) : (0, C.dS)(e) && (u = e.name)), null == u) ? null : (0, i.jsx)(f.Text, {
       title: c,
       variant: "text-sm/semibold",
       className: s()((0, w.l)(F, "name", t.bot ? "wrap" : "normal")),
@@ -387,7 +387,7 @@ class $ extends(r = Chunk647438.PureComponent) {
     }
     return null == o || "" === o ? null : ((0, j.Z)(e) && (o = Z.intl.formatToPlainString(Z.t.gmCZRY, {
       game: o
-    })), null != t) ? (0, i.jsx)(d.P3F, {
+    })), null != t) ? (0, i.jsx)(f.P3F, {
       onClick: t,
       title: null != s ? s : true,
       className: F.clickableDetails,
@@ -415,15 +415,15 @@ class $ extends(r = Chunk647438.PureComponent) {
         guild: t,
         size: O.Z.Sizes.SMOL,
         className: F.guildIcon
-      }), (0, i.jsx)(d.Fbu, {
+      }), (0, i.jsx)(f.Fbu, {
         size: "xxs",
         color: "currentColor"
       }), (0, i.jsxs)("div", {
         className: F.voiceChannelInfo,
-        children: [(0, i.jsx)(d.gj8, {
+        children: [(0, i.jsx)(f.gj8, {
           size: "xxs",
           color: "currentColor"
-        }), (0, i.jsx)(d.Text, {
+        }), (0, i.jsx)(f.Text, {
           variant: "text-xs/normal",
           children: null == r ? true : r.name
         })]
@@ -474,7 +474,7 @@ class $ extends(r = Chunk647438.PureComponent) {
       c = o,
       u = o;
     if (!(0, x.Z)(e) && (c = null == l ? true : l.large_text, u = null == l ? true : l.large_text, (0, M.Z)(e) && null != c)) {
-      let t = (t, n) => null != e.sync_id && null != u ? (0, i.jsx)(d.Anchor, {
+      let t = (t, n) => null != e.sync_id && null != u ? (0, i.jsx)(f.Anchor, {
         className: F.bodyLink,
         onClick: this.handleOpenSpotifyAlbum,
         children: u
@@ -517,35 +517,35 @@ class $ extends(r = Chunk647438.PureComponent) {
       c = this.activity;
     if (null == c || c.type === Chunk981631.IIU.CUSTOM_STATUS) return null;
     let u = "ActivityFeed" === exports,
-      f = "StreamPreview" === exports,
+      d = "StreamPreview" === exports,
       _ = false;
     (0, Chunk802856.Z)(c) ? (e = this.renderXboxImage(), _ = true) : null == (e = this.renderImage(c)) && (_ = null != (e = this.renderGameImage(c)));
     let p = this.renderName(c),
-      m = this.renderDetails(c),
+      h = this.renderDetails(c),
       g = this.renderState(c, Chunk647438),
       E = this.renderTimePlayed(c),
       b = this.renderChannelDetails(c),
       y = null != require ? require() : null,
       O = this.renderTimeBar(c),
-      v = ![module, Chunk726542, Chunk686546, Chunk111028, Chunk925329, Chunk565138, Chunk168524].some(e => null != e);
+      v = ![module, Chunk410030, Chunk726542, Chunk686546, Chunk925329, Chunk565138, Chunk168524].some(e => null != e);
     return (0, Chunk951288.jsxs)("div", {
       className: s()(this.getTypeClass("activity"), r),
       children: [this.renderHeader(Chunk833858), (0, Chunk951288.jsx)("div", {
-        className: s()(Chunk410030 ? Chunk206733.bodyAlignCenter : Chunk206733.bodyNormal),
+        className: s()(Chunk438139 ? Chunk206733.bodyAlignCenter : Chunk206733.bodyNormal),
         children: (0, Chunk951288.jsxs)("div", {
           className: Chunk206733.activityDetails,
           children: [module, this.isStreamerOnTypeActivityFeed() ? null : (0, Chunk951288.jsxs)(Chunk600164.Z.Child, {
-            className: s()((0, Chunk153066.l)(Chunk206733, "content", Chunk410030 ? "GameImage" : null != module ? "Images" : "NoImages", exports)),
+            className: s()((0, Chunk153066.l)(Chunk206733, "content", Chunk438139 ? "GameImage" : null != module ? "Images" : "NoImages", exports)),
             children: [(0, Chunk951288.jsxs)(Chunk481060.P3F, {
               className: s()(null != Chunk512722 && Chunk206733.openGameProfile),
               onClick: null != Chunk512722 ? e => {
                 l(e), null == o || o()
               } : true,
-              children: [Chunk726542, Chunk686546, Chunk111028, Chunk925329]
-            }), Chunk810568, Chunk438139 ? null : Chunk565138, Chunk780384 ? Chunk168524 : null]
+              children: [Chunk410030, Chunk726542, Chunk686546, Chunk925329]
+            }), Chunk810568, Chunk780384 ? null : Chunk565138, Chunk194983 ? Chunk168524 : null]
           })]
         })
-      }), Chunk438139 ? Chunk168524 : null, (0, Chunk951288.jsx)(J, {
+      }), Chunk780384 ? Chunk168524 : null, (0, Chunk951288.jsx)(J, {
         activity: c
       })]
     })

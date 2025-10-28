@@ -1,5 +1,5 @@
-/** Chunk was on 44808 **/
-/** chunk id: 388080, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 91236 **/
+/** chunk id: 554226, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
 }), require("./388685.js");
@@ -136,7 +136,7 @@ class S extends Chunk647438.PureComponent {
     return (0, Chunk951288.jsxs)(Chunk481060.Y0X, {
       transitionState: Chunk481060.Dvm.ENTERED,
       className: Chunk400167.modal,
-      parentComponent: "ChangelogStandardTemplate",
+      parentComponent: "ChangeLogStandardTemplate",
       children: [(0, Chunk951288.jsxs)(Chunk481060.xBx, {
         align: Chunk600164.Z.Justify.BETWEEN,
         separator: false,

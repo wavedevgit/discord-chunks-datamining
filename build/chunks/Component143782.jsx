@@ -5,8 +5,8 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
-var Chunk153867 = require("./153867.js"),
-  Chunk468026 = require("./468026.jsx"),
+var Chunk273352 = require("./273352.jsx"),
+  Chunk153867 = require("./153867.js"),
   Chunk493773 = require("./493773.js"),
   Chunk933557 = require("./933557.js"),
   Chunk626135 = require("./626135.js"),
@@ -37,7 +37,7 @@ let s = e => {
       type: "Voice channel change confirmation",
       channel_id: t.id
     })
-  }), null == b) ? null : (0, r.jsx)(i.default, function(e) {
+  }), null == b) ? null : (0, r.jsx)(o.default, function(e) {
     for (var n = 1; n < arguments.length; n++) {
       var t = null != arguments[n] ? arguments[n] : {},
         r = Object.keys(t);
@@ -61,7 +61,7 @@ let s = e => {
     cancelText: f.intl.string(f.t["ETE/oC"]),
     onConfirm: n,
     onConfirmSecondary: () => {
-      o.ZP.updatedUnsyncedSettings({
+      i.ZP.updatedUnsyncedSettings({
         disableVoiceChannelChangeAlert: true
       })
     },

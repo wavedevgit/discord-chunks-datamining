@@ -7,9 +7,9 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk793030 = require("./793030.js"),
+  Chunk273352 = require("./273352.jsx"),
   Chunk952265 = require("./952265.js"),
   Chunk755721 = require("./755721.js"),
-  Chunk468026 = require("./468026.jsx"),
   Chunk388032 = require("./388032.jsx");
 
 function c(e, t, n) {
@@ -68,7 +68,7 @@ let _ = {
       titleClassName: O,
       contextKey: v
     } = e;
-    (0, a.h7)(e => {
+    (0, o.h7)(e => {
       if (null == E) {
         let a = [];
         return null != p && "" !== p && a.push({
@@ -90,10 +90,10 @@ let _ = {
           actions: a
         }))
       }
-      return (0, r.jsx)(s.default, f(u({}, e), {
+      return (0, r.jsx)(a.default, f(u({}, e), {
         title: t,
         body: n,
-        confirmColor: "critical-primary" === _ ? o.Tt.RED : o.Tt.BRAND,
+        confirmColor: "critical-primary" === _ ? s.Tt.RED : s.Tt.BRAND,
         confirmText: d,
         cancelText: p,
         onConfirm: h,
