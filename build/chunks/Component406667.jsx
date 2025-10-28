@@ -2,12 +2,12 @@
 /** chunk id: 406667, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => L
+  Z: () => I
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk91192 = require("./91192.jsx"),
   Chunk536895 = require("./536895.js"),
   Chunk979554 = require("./979554.js"),
@@ -74,14 +74,14 @@ let S = e => {
     var t, n, l;
     let {
       product: i
-    } = e, a = (0, C.o)(i), s = null != (l = null == (t = i.variants) ? true : t.length) ? l : 0;
+    } = e, o = (0, C.o)(i), s = null != (l = null == (t = i.variants) ? true : t.length) ? l : 0;
     return 0 === s ? null : (0, r.jsx)("div", {
       className: v.productVariantsPreviewContainer,
       children: null == (n = i.variants) ? true : n.map((e, t) => (0, r.jsx)(k, {
         className: v.miniPreview,
         variant: e,
-        isSelected: t === a,
-        zIndex: s - Math.abs(a - t),
+        isSelected: t === o,
+        zIndex: s - Math.abs(o - t),
         size: "xxs"
       }, e.variantValue))
     })
@@ -90,9 +90,9 @@ let S = e => {
     var t, n;
     let {
       product: i
-    } = e, a = (0, C.o)(i), c = null != (n = null == (t = i.variants) ? true : t.length) ? n : 0, u = l.useCallback((e, t) => {
+    } = e, o = (0, C.o)(i), c = null != (n = null == (t = i.variants) ? true : t.length) ? n : 0, u = l.useCallback((e, t) => {
       e.stopPropagation(), (0, C.$)(i, t)
-    }, [i]), d = (0, p.Z)("shop-variants-group-".concat(i.storeListingId), o.hy.HORIZONTAL);
+    }, [i]), d = (0, p.Z)("shop-variants-group-".concat(i.storeListingId), a.hy.HORIZONTAL);
     return 0 === c ? null : (0, r.jsx)(s.bG, {
       navigator: d,
       children: (0, r.jsx)(s.SJ, {
@@ -107,7 +107,7 @@ let S = e => {
           }, l), {
             children: null == (t = i.variants) ? true : t.map((e, t) => (0, r.jsx)(j, {
               variant: e,
-              isSelected: t === a,
+              isSelected: t === o,
               onClick: e => u(e, t)
             }, e.variantValue))
           }))
@@ -121,8 +121,8 @@ let S = e => {
       isSelected: n,
       onClick: l
     } = e, i = (0, s.JA)("shop-variants-group-".concat(t.storeListingId, "-").concat(t.variantLabel)), {
-      onFocus: a
-    } = i, o = O(i, ["onFocus"]), {
+      onFocus: o
+    } = i, a = O(i, ["onFocus"]), {
       isPurchased: c
     } = (0, h.L)(t);
     return (0, r.jsx)(g.u, {
@@ -132,10 +132,10 @@ let S = e => {
       children: (0, r.jsx)(d.P3F, x(E({
         "aria-label": t.variantLabel,
         onClick: e => {
-          l(e), a()
+          l(e), o()
         },
         className: v.productVariantButton
-      }, o), {
+      }, a), {
         children: (0, r.jsx)(k, {
           variant: t,
           isSelected: n,
@@ -152,17 +152,17 @@ let S = e => {
       zIndex: i = 1,
       size: s = "sm"
     } = e, {
-      isPurchased: o
+      isPurchased: a
     } = (0, h.L)(t);
     return (0, r.jsx)("div", {
-      className: a()(l, v.productVariant, {
+      className: o()(l, v.productVariant, {
         [v.selected]: n
       }),
       style: {
         backgroundColor: t.variantValue,
         zIndex: i
       },
-      children: o && (0, r.jsx)(T, {
+      children: a && (0, r.jsx)(T, {
         variant: t,
         size: s
       })
@@ -181,15 +181,15 @@ let S = e => {
       color: i
     })
   },
-  L = e => {
+  I = e => {
     let {
       skuId: t,
       previewOnly: n,
       showLabel: l = false,
       className: i
-    } = e, s = (0, _.LJ)(t), o = (0, C.o)(s);
+    } = e, s = (0, _.LJ)(t), a = (0, C.o)(s);
     return null == s || s.type !== c.Z.VARIANTS_GROUP || null == s.variants || 0 === s.variants.length ? null : (0, r.jsxs)("div", {
-      className: a()(v.productVariantsContainer, i),
+      className: o()(v.productVariantsContainer, i),
       children: [n ? (0, r.jsx)(S, {
         product: s
       }) : (0, r.jsx)(y, {
@@ -197,7 +197,7 @@ let S = e => {
       }), l && (0, r.jsx)(d.xvT, {
         variant: "text-xs/medium",
         color: "text-secondary",
-        children: s.variants[o].variantLabel
+        children: s.variants[a].variantLabel
       })]
     })
   }

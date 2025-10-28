@@ -32,11 +32,11 @@ function C(e) {
     return () => clearTimeout(e)
   }, [_, h]), l.useEffect(() => {
     m(C)
-  }, [C]), (0, r.jsx)(a.P3F, {
+  }, [C]), (0, r.jsx)(o.P3F, {
     ignoreKeyPress: true,
     className: f.searchBar,
     onClick: () => {
-      n !== d.AW.CATALOG && t(d.AW.CATALOG), o.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+      n !== d.AW.CATALOG && t(d.AW.CATALOG), a.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
         collectibles_shop_session_id: null == b ? true : b.sessionId,
         page_section: null == b ? true : b.pageSection,
         page_category: null == b ? true : b.pageCategory,
@@ -46,7 +46,7 @@ function C(e) {
         page_type: n
       })
     },
-    children: (0, r.jsx)(a.E1j, {
+    children: (0, r.jsx)(o.E1j, {
       size: "sm",
       onKeyDown: e => {
         "Enter" === e.key && h(_)
@@ -54,7 +54,7 @@ function C(e) {
       query: _,
       onChange: m,
       onClear: () => {
-        m(""), o.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+        m(""), a.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
           collectibles_shop_session_id: null == b ? true : b.sessionId,
           page_section: null == b ? true : b.pageSection,
           page_category: null == b ? true : b.pageCategory,

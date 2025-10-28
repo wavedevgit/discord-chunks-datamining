@@ -216,20 +216,20 @@ let f = {
       themeFilters: r,
       orbEligible: l,
       sort: i,
-      searchQuery: a,
+      searchQuery: o,
       queryPageSize: s,
-      queryPageOffset: o
+      queryPageOffset: a
     } = e;
     return {
       item_types: Array.from(t),
       colors: Array.from(n),
       themes: Array.from(r),
       orbs_eligible: !!l || true,
-      offset: o,
+      offset: a,
       limit: s,
       sort_type: i.sortType,
       sort_direction: i.sortDirection,
-      search: "" !== a ? a : true
+      search: "" !== o ? o : true
     }
   },
   E = () => {
@@ -243,7 +243,7 @@ let f = {
         let i = async () => {
           n(true);
           try {
-            let t = await (0, o.y)(r);
+            let t = await (0, a.y)(r);
             e((e => {
               let t = e.skus,
                 n = e.pagination.total,
@@ -270,7 +270,7 @@ let f = {
       let i = b.subscribe(v, Chunk647438, {
           equalityFn: (e, t) => JSON.stringify(e) === JSON.stringify(t)
         }),
-        a = b.subscribe(e => e.hasFilters(), (e, t) => {
+        o = b.subscribe(e => e.hasFilters(), (e, t) => {
           if (!e && t) {
             let e = b.getState();
             e.userHasSelectedSort || b.setState({

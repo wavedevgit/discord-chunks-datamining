@@ -11,7 +11,7 @@ var Chunk647438 = require("./647438.js"),
 
 function s() {
   return (0, Chunk647438.useCallback)(e => i()(e.map(e => {
-    let t = a.Z.getProduct(e);
-    return null != t && null != t.variantGroupStoreListingId ? a.Z.getProductByStoreListingId(t.variantGroupStoreListingId) : t
+    let t = o.Z.getProduct(e);
+    return null != t && null != t.variantGroupStoreListingId ? o.Z.getProductByStoreListingId(t.variantGroupStoreListingId) : t
   }).filter(e => null != e), "storeListingId"), [])
 }

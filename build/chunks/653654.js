@@ -11,7 +11,7 @@ var Chunk544891 = require("./544891.js"),
 let s = async e => {
   try {
     return (await r.tn.get({
-      url: a.ANM.COLLECTIBLES_SEARCH,
+      url: o.ANM.COLLECTIBLES_SEARCH,
       query: e,
       rejectWithError: true
     })).body

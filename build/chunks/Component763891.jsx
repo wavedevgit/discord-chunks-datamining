@@ -46,12 +46,12 @@ function R(e) {
   } = e, w = (0, g.sp)(), H = null != (t = null == w ? true : w.sessionId) ? t : "", {
     noCache: M,
     includeUnpublished: D
-  } = (0, x.Z)(), F = (0, a.e7)([u.default], () => u.default.getCurrentUser()), W = (0, a.e7)([p.Z], () => p.Z.productsWithVariantsAsGroup), [V, U] = l.useState(1), z = (0, c.Fg)(), G = (0, s.ap)(z), [K, Y, q] = l.useMemo(() => {
+  } = (0, x.Z)(), F = (0, o.e7)([u.default], () => u.default.getCurrentUser()), W = (0, o.e7)([p.Z], () => p.Z.productsWithVariantsAsGroup), [V, U] = l.useState(1), z = (0, c.Fg)(), G = (0, s.ap)(z), [K, Y, q] = l.useMemo(() => {
     switch (Z) {
       case O.AW.AVATAR_DECORATIONS:
-        return [y.intl.string(y.t.dRZYNE), G ? I.Z : L.Z, i.Z.AVATAR_DECORATION];
+        return [y.intl.string(y.t.dRZYNE), G ? L.Z : I.Z, i.Z.AVATAR_DECORATION];
       case O.AW.PROFILE_EFFECTS:
-        return [y.intl.string(y.t["1cNjtx"]), G ? P.Z : N.Z, i.Z.PROFILE_EFFECT];
+        return [y.intl.string(y.t["1cNjtx"]), G ? N.Z : P.Z, i.Z.PROFILE_EFFECT];
       case O.AW.NAMEPLATES:
         return [y.intl.string(y.t.V68Fqz), G ? A.Z : B.Z, i.Z.NAMEPLATE];
       case O.AW.BUNDLES:
@@ -87,7 +87,7 @@ function R(e) {
         backgroundImage: "url(".concat(Y, ")")
       },
       className: j.bannerContainer,
-      children: (0, r.jsx)(o.Heading, {
+      children: (0, r.jsx)(a.Heading, {
         variant: "heading-xxl/extrabold",
         children: K
       })
@@ -113,7 +113,7 @@ function R(e) {
     }), X.length > 40 && (0, r.jsx)("div", {
       className: j.paginationContainer,
       children: (0, r.jsx)("div", {
-        children: (0, r.jsx)(o.DsT, {
+        children: (0, r.jsx)(a.DsT, {
           currentPage: V,
           totalCount: X.length,
           pageSize: 40,

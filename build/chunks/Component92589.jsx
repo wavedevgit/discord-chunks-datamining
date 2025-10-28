@@ -49,7 +49,7 @@ let g = e => {
     className: u.immersiveBannerBlock,
     children: [(0, r.jsx)("div", {
       className: u.banner,
-      children: null != p && (0, r.jsx)(o.Z, {
+      children: null != p && (0, r.jsx)(a.Z, {
         bannerStatic: p,
         bannerAnimated: f
       })
@@ -57,7 +57,7 @@ let g = e => {
       className: u.immersiveBannerContent,
       children: (0, r.jsxs)("div", {
         className: u.immersiveBannerTextContainer,
-        children: [null != t.endTime ? (0, r.jsx)(a.R, {
+        children: [null != t.endTime ? (0, r.jsx)(o.R, {
           endDate: t.endTime,
           size: "lg"
         }) : null, (0, r.jsx)(i.Heading, {

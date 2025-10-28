@@ -28,7 +28,7 @@ let _ = e => {
     } = e, {
       isPurchased: m,
       isPartiallyOwnedBundle: b
-    } = (0, d.L)(t), v = (0, a.e7)([o.default], () => o.default.getCurrentUser()), E = c.ZP.canUseCollectibles(v), x = (0, p.Iw)(t), {
+    } = (0, d.L)(t), v = (0, o.e7)([a.default], () => a.default.getCurrentUser()), E = c.ZP.canUseCollectibles(v), x = (0, p.Iw)(t), {
       isOrbExclusive: O
     } = (0, f.Ip)({
       product: t,
@@ -50,9 +50,9 @@ let _ = e => {
       badgeOverride: n,
       className: l,
       prioritizedCurrency: i
-    } = e, a = (0, g.LJ)(t);
-    return null == a ? null : (0, r.jsx)(_, {
-      product: a,
+    } = e, o = (0, g.LJ)(t);
+    return null == o ? null : (0, r.jsx)(_, {
+      product: o,
       badgeOverride: n,
       className: l,
       prioritizedCurrency: i

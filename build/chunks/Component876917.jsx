@@ -40,7 +40,7 @@ let d = .1,
       children: [(0, r.jsx)("img", {
         src: u,
         alt: " ",
-        className: a ? c.previewForCollected : c.preview,
+        className: c.preview,
         "aria-hidden": true
       }), !m && (0, r.jsx)("div", {
         className: _ ? c.purchasedEffect : true,

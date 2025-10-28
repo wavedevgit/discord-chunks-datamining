@@ -22,13 +22,13 @@ let g = {
   p = e => {
     let {
       enabled: t
-    } = (0, a.WX)({
+    } = (0, o.WX)({
       location: "useShopViewTransition"
     }), n = (0, s.FF)("CollectiblesBrowse"), {
       setItemTypeFilter: i,
       reset: p,
       setCurrentTab: f
-    } = (0, o.S)(), C = r.useMemo(() => e !== u.AW.ORBS || t ? (0, u.RE)(e) && n ? u.AW.CATALOG : e : u.AW.HOME, [e, t, n]), [h, _] = r.useState(C), [m, b] = r.useState(u.f7.VISIBLE);
+    } = (0, a.S)(), C = r.useMemo(() => e !== u.AW.ORBS || t ? (0, u.RE)(e) && n ? u.AW.CATALOG : e : u.AW.HOME, [e, t, n]), [h, _] = r.useState(C), [m, b] = r.useState(u.f7.VISIBLE);
     r.useEffect(() => {
       f(h)
     }, [h, f]), r.useEffect(() => {

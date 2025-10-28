@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk622535 = require("./622535.js"),
   Chunk481060 = require("./481060.js"),
   Chunk63063 = require("./63063.js"),
@@ -50,18 +50,18 @@ let _ = e => {
     threshold: 0,
     children: (0, r.jsxs)("div", {
       ref: E,
-      className: a()(h.row, h.between, h.bannerBlockContainer, h.centeredSection, {
+      className: o()(h.row, h.between, h.bannerBlockContainer, h.centeredSection, {
         [h.extraRounded]: T
       }),
       children: [(0, r.jsx)("div", {
-        className: a()(h.wideBannerBackgroundImg, {
+        className: o()(h.wideBannerBackgroundImg, {
           [h.extraRounded]: T
         }),
         children: (0, r.jsx)("img", {
           ref: x,
           src: k,
           alt: _.title,
-          className: a()(h.wideBannerArt, {
+          className: o()(h.wideBannerArt, {
             [h.wideBannerArtOrbs]: T
           }),
           style: {
@@ -75,14 +75,14 @@ let _ = e => {
         },
         children: (0, r.jsxs)("div", {
           className: h.wideBannerTextContainer,
-          children: [(0, r.jsx)(o.Heading, {
+          children: [(0, r.jsx)(a.Heading, {
             style: {
               color: null != (n = _.bannerTextColor) ? n : "var(--header-primary)"
             },
             className: T ? h.wideBannerOrbsHeading : true,
             variant: T ? "heading-xl/bold" : "heading-lg/semibold",
             children: _.title
-          }), (0, r.jsx)(o.Text, {
+          }), (0, r.jsx)(a.Text, {
             style: {
               color: null != (i = _.bannerTextColor) ? i : "var(--text-muted)"
             },
@@ -95,7 +95,7 @@ let _ = e => {
         })
       }), true !== _.disableCta && (0, r.jsx)("div", {
         className: h.wideBannerBlockButton,
-        children: (0, r.jsx)(o.Button, {
+        children: (0, r.jsx)(a.Button, {
           variant: "overlay-primary",
           onClick: () => m("shop wide banner", y, true, true),
           text: C.intl.string(C.t.jVcuVY)

@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  a = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk594174 = require("./594174.js"),
@@ -30,13 +30,13 @@ let v = e => {
     location: "ShelfBlock"
   }).showCardsV2, x = (0, u.sp)(), O = l.useMemo(() => t.rankedSkuIds.map(e => d.Z.getProduct(e)).filter(e => null != e), [t.rankedSkuIds]), S = (0, p.l)(O).slice(0, 4);
   return null == v ? null : (0, r.jsxs)("div", {
-    className: a()(b.shelfBlockContainer, b.centeredSection),
+    className: o()(b.shelfBlockContainer, b.centeredSection),
     children: [(0, r.jsxs)("div", {
       className: b.blockHeader,
-      children: [(0, r.jsx)(o.Heading, {
+      children: [(0, r.jsx)(a.Heading, {
         variant: "heading-lg/semibold",
         children: t.name
-      }), (0, r.jsx)(o.Button, {
+      }), (0, r.jsx)(a.Button, {
         variant: "secondary",
         text: m.intl.formatToPlainString(m.t.bc9RBE, {
           category_name: t.name
@@ -49,7 +49,7 @@ let v = e => {
         children: S.map((e, n) => {
           let l = d.Z.getCategoryForProduct(e.skuId);
           if (null == l || null == e) return null;
-          let a = e.skuId;
+          let o = e.skuId;
           return (0, r.jsx)(u.k0, {
             newValue: {
               tilePosition: n,
@@ -57,16 +57,16 @@ let v = e => {
               categoryPosition: 2
             },
             children: E ? (0, r.jsx)(C.Z, {
-              skuId: a,
+              skuId: o,
               prioritizedCurrency: i === _.AW.ORBS ? h.tA.ORBS : true,
               onClickAnalytics: (0, h.wO)(e, i, x)
-            }, a) : (0, r.jsx)(f.Z, {
+            }, o) : (0, r.jsx)(f.Z, {
               product: e,
               category: l,
               user: v,
               tab: i
-            }, a)
-          }, a)
+            }, o)
+          }, o)
         })
       })
     })]
