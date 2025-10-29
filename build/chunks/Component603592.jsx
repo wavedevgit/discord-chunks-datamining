@@ -24,8 +24,8 @@ let f = Chunk647438.forwardRef(function(e, t) {
     tooltip: _,
     upperBadge: O,
     lowerBadge: y,
-    lowerBadgeSize: v,
-    showPill: j = true,
+    lowerBadgeSize: j,
+    showPill: v = true,
     className: x,
     "aria-label": C,
     children: E,
@@ -34,7 +34,7 @@ let f = Chunk647438.forwardRef(function(e, t) {
     onMouseDown: P
   } = e, N = (0, a.Ie)(f), [Z, T] = i.useState(false);
   return (0, r.jsxs)(u.H, {
-    children: [j ? (0, r.jsx)("div", {
+    children: [v ? (0, r.jsx)("div", {
       className: p.pill,
       children: (0, r.jsx)(c.Z, {
         hovered: Z,
@@ -47,7 +47,7 @@ let f = Chunk647438.forwardRef(function(e, t) {
         selected: true,
         upperBadge: O,
         lowerBadge: y,
-        lowerBadgeSize: v,
+        lowerBadgeSize: j,
         children: (0, r.jsx)(s.P3F, (n = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},

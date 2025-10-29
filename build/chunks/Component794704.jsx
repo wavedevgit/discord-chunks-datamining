@@ -130,7 +130,7 @@ function eI(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let eT = eD(null),
+let eT = ew(null),
   eS = 20,
   eA = 16,
   eC = 1,
@@ -138,11 +138,11 @@ let eT = eD(null),
   eR = [0, 5, 10, 15, 20, 25];
 
 function eP() {
-  let e = eD(eT);
+  let e = ew(eT);
   f().isEqual(module, eT) || (Chunk626135.default.track(Chunk981631.rMx.OVERLAY_SETTINGS_UPDATED, module), eT = module)
 }
 
-function eD(e) {
+function ew(e) {
   var t;
   let n = er.default.getNotificationPositionMode(),
     r = n !== eu._vf.DISABLED,
@@ -160,7 +160,7 @@ function eD(e) {
   }
 }
 
-function ew(e) {
+function eD(e) {
   let {
     header: t,
     icon: n,
@@ -233,7 +233,7 @@ function eL(e) {
       let {
         onClick: t
       } = e;
-      return (0, r.jsx)(ew, eO(eb({}, s), {
+      return (0, r.jsx)(eD, eO(eb({}, s), {
         onClick: e => {
           u(!l), null == t || t(e)
         },
@@ -289,7 +289,7 @@ function ek(e) {
   let C = !(0, el.supportsLegacy)(),
     N = !(0, el.supportsOutOfProcess)(),
     {
-      legacyEnabled: w,
+      legacyEnabled: D,
       oopEnabled: x
     } = (0, _.cj)([k.default], () => k.default.getGlobalEnabledStatus()),
     M = (e, t) => {
@@ -298,25 +298,25 @@ function ek(e) {
       let a = false,
         s = false;
       switch (t) {
-        case D.OverlayToggledClientSettingType.LEGACY_GAME:
+        case w.OverlayToggledClientSettingType.LEGACY_GAME:
           I(e), m.Z.toggleOverlay(o, e, g), a = !e && y;
           break;
-        case D.OverlayToggledClientSettingType.OOP_GAME:
+        case w.OverlayToggledClientSettingType.OOP_GAME:
           E(e), m.Z.toggleOverlay(o, y, e), s = !e && g;
           break;
-        case D.OverlayToggledClientSettingType.LEGACY:
-          b.Z.setEnabled(e, x), (0, D.ou)(e, D.OverlayToggledClientSettingType.LEGACY, null != (n = o.id) ? n : null);
+        case w.OverlayToggledClientSettingType.LEGACY:
+          b.Z.setEnabled(e, x), (0, w.ou)(e, w.OverlayToggledClientSettingType.LEGACY, null != (n = o.id) ? n : null);
           break;
-        case D.OverlayToggledClientSettingType.OOP:
-          b.Z.setEnabled(w, e), (0, D.ou)(e, D.OverlayToggledClientSettingType.OOP, null != (r = o.id) ? r : null)
-      }(a || s) && (0, B.l)(a ? D.OverlayToggledClientSettingType.LEGACY_GAME : D.OverlayToggledClientSettingType.OOP_GAME, null != (i = o.id) ? i : null)
+        case w.OverlayToggledClientSettingType.OOP:
+          b.Z.setEnabled(D, e), (0, w.ou)(e, w.OverlayToggledClientSettingType.OOP, null != (r = o.id) ? r : null)
+      }(a || s) && (0, B.l)(a ? w.OverlayToggledClientSettingType.LEGACY_GAME : w.OverlayToggledClientSettingType.OOP_GAME, null != (i = o.id) ? i : null)
     },
     j = (e, t) => {
       let n = !t && e,
         r = !x && g,
-        i = !w && y,
+        i = !D && y,
         a = !g && x,
-        o = !y && w;
+        o = !y && D;
       switch (true) {
         case n && (r || i) && (a || o):
           return "both";
@@ -335,20 +335,20 @@ function ek(e) {
           m.Z.toggleOverlay(o, e, e), I(e), E(e), n = !e && y, r = !e && g;
           break;
         case "global":
-          b.Z.setEnabled(e, e), n = !e && w, r = !e && x;
+          b.Z.setEnabled(e, e), n = !e && D, r = !e && x;
           break;
         case "both":
-          b.Z.setEnabled(e, e), m.Z.toggleOverlay(o, e, e), I(e), E(e), n = !e && w || !e && y, r = !e && x || !e && g
+          b.Z.setEnabled(e, e), m.Z.toggleOverlay(o, e, e), I(e), E(e), n = !e && D || !e && y, r = !e && x || !e && g
       }
       let i = null;
-      if (n ? i = "game" === t ? D.OverlayToggledClientSettingType.LEGACY_GAME : D.OverlayToggledClientSettingType.LEGACY : r && (i = "game" === t ? D.OverlayToggledClientSettingType.OOP_GAME : D.OverlayToggledClientSettingType.OOP), null != i) {
+      if (n ? i = "game" === t ? w.OverlayToggledClientSettingType.LEGACY_GAME : w.OverlayToggledClientSettingType.LEGACY : r && (i = "game" === t ? w.OverlayToggledClientSettingType.OOP_GAME : w.OverlayToggledClientSettingType.OOP), null != i) {
         var a;
         (0, B.l)(i, null != (a = o.id) ? a : null)
       }
     },
     G = C && N,
-    Z = !w && !x,
-    F = !g && !w && y && !C,
+    Z = !D && !x,
+    F = !g && !D && y && !C,
     V = !y && !x && g && !N,
     H = (null == u ? true : u.overlayMethod) === L.gl.Disabled,
     Y = (null == u ? true : u.state) === L.mM.OVERLAY_RENDERING && !H,
@@ -490,10 +490,10 @@ function ek(e) {
     action: (0, r.jsx)(h.P3F, {
       onClick: e => eM(e),
       children: (0, r.jsx)(h.rsf, {
-        checked: g && x || y && w,
+        checked: g && x || y && D,
         disabled: G,
         onChange: e => {
-          U(e, j(e, g && x || y && w))
+          U(e, j(e, g && x || y && D))
         }
       })
     }),
@@ -501,7 +501,7 @@ function ek(e) {
       className: eh.systemServiceWarning,
       game: o
     }),
-    children: [(0, r.jsx)(ew, {
+    children: [(0, r.jsx)(eD, {
       title: ep.intl.string(ep.t["7BlVIs"]),
       description: ep.intl.string(ep.t.ndgADE),
       hint: x ? true : ep.intl.string(ep.t.cAFVsL),
@@ -511,23 +511,23 @@ function ek(e) {
           checked: g && x,
           disabled: N,
           onChange: e => {
-            e && !x ? M(e, D.OverlayToggledClientSettingType.OOP) : M(e, D.OverlayToggledClientSettingType.OOP_GAME)
+            e && !x ? M(e, w.OverlayToggledClientSettingType.OOP) : M(e, w.OverlayToggledClientSettingType.OOP_GAME)
           }
         }), (0, r.jsx)("div", {
           className: eh.emptySpacer
         })]
       })
-    }), (0, r.jsx)(ew, {
+    }), (0, r.jsx)(eD, {
       title: ep.intl.string(ep.t.BfFpW1),
       description: ep.intl.string(ep.t.OzInYk),
-      hint: w ? true : ep.intl.string(ep.t["3sYHXm"]),
+      hint: D ? true : ep.intl.string(ep.t["3sYHXm"]),
       "aria-label": ep.intl.string(ep.t.BfFpW1),
       action: (0, r.jsxs)(r.Fragment, {
         children: [(0, r.jsx)(h.rsf, {
-          checked: y && w,
+          checked: y && D,
           disabled: C,
           onChange: e => {
-            e && !w ? M(e, D.OverlayToggledClientSettingType.LEGACY) : M(e, D.OverlayToggledClientSettingType.LEGACY_GAME)
+            e && !D ? M(e, w.OverlayToggledClientSettingType.LEGACY) : M(e, w.OverlayToggledClientSettingType.LEGACY_GAME)
           }
         }), (0, r.jsx)("div", {
           className: eh.emptySpacer
@@ -569,7 +569,7 @@ function eU(e) {
       (0, B.l)(l, null != (i = null != (r = u.id) ? r : null == t ? true : t.id) ? i : null)
     }
   };
-  return (0, r.jsx)(ew, {
+  return (0, r.jsx)(eD, {
     title: t.name,
     icon: (0, r.jsx)(ej, {
       game: u,
@@ -596,14 +596,14 @@ function eG() {
     var t, r;
     b.Z.setEnabled(e, a);
     let i = null != (r = null == (t = A.ZP.getCurrentGameForAnalytics()) ? true : t.id) ? r : null;
-    (0, D.ou)(e, D.OverlayToggledClientSettingType.LEGACY, i), !e && n && (0, B.l)(D.OverlayToggledClientSettingType.LEGACY, i)
+    (0, w.ou)(e, w.OverlayToggledClientSettingType.LEGACY, i), !e && n && (0, B.l)(w.OverlayToggledClientSettingType.LEGACY, i)
   }, u = (e, t, n) => {
     let {
       enabledOOP: r
     } = n;
     m.Z.toggleOverlay(t, e, r)
   }, d = Chunk647438.useMemo(() => (0, Chunk145597.supportsLegacy)() ? l ? Chunk388032.intl.string(Chunk388032.t.r9jEVw) : Chunk388032.intl.string(Chunk388032.t.OzInYk) : Chunk388032.intl.string(Chunk388032.t["8Ox6/E"]), [l]);
-  return 0 === o.length ? (0, Chunk951288.jsx)(ew, {
+  return 0 === o.length ? (0, Chunk951288.jsx)(eD, {
     title: Chunk388032.intl.string(Chunk388032.t.BfFpW1),
     description: Chunk392711,
     "aria-label": Chunk388032.intl.string(Chunk388032.t.BfFpW1),
@@ -642,7 +642,7 @@ function eG() {
       className: Chunk607547.scroller,
       children: o.map((e, t) => (0, r.jsx)(eU, {
         rawGame: e,
-        clientSettingType: D.OverlayToggledClientSettingType.LEGACY_GAME,
+        clientSettingType: w.OverlayToggledClientSettingType.LEGACY_GAME,
         supportDisabled: l,
         gameApplication: s[t],
         getEnabledFromStatus: e => {
@@ -669,14 +669,14 @@ function eB() {
     let i = !e && n;
     b.Z.setEnabled(a, e);
     let o = null != (r = null == (t = A.ZP.getCurrentGameForAnalytics()) ? true : t.id) ? r : null;
-    (0, D.ou)(e, D.OverlayToggledClientSettingType.OOP, o), i && (0, B.l)(D.OverlayToggledClientSettingType.OOP, o)
+    (0, w.ou)(e, w.OverlayToggledClientSettingType.OOP, o), i && (0, B.l)(w.OverlayToggledClientSettingType.OOP, o)
   }, u = (e, t, n) => {
     let {
       enabledLegacy: r
     } = n;
     m.Z.toggleOverlay(t, e, r)
   }, d = Chunk647438.useMemo(() => Chunk987650.iP ? o ? Chunk388032.intl.string(Chunk388032.t.C7bLTQ) : Chunk388032.intl.string(Chunk388032.t.ndgADE) : Chunk388032.intl.string(Chunk388032.t.m7X4az), [o]);
-  return 0 === Chunk348327.length ? (0, Chunk951288.jsx)(ew, {
+  return 0 === Chunk348327.length ? (0, Chunk951288.jsx)(eD, {
     title: Chunk388032.intl.string(Chunk388032.t["7BlVIs"]),
     description: Chunk392711,
     "aria-label": Chunk388032.intl.string(Chunk388032.t["7BlVIs"]),
@@ -715,7 +715,7 @@ function eB() {
       className: Chunk607547.scroller,
       children: Chunk348327.map((e, t) => (0, r.jsx)(eU, {
         rawGame: e,
-        clientSettingType: D.OverlayToggledClientSettingType.OOP_GAME,
+        clientSettingType: w.OverlayToggledClientSettingType.OOP_GAME,
         gameApplication: l[t],
         supportDisabled: o,
         getEnabledFromStatus: e => {
@@ -783,27 +783,27 @@ function eZ() {
 let eF = (e, t, n) => [{
   title: ep.t.eVE4LX,
   description: ep.t["72WNqk"],
-  disabledSetting: w.i.TEXT_CHAT
+  disabledSetting: D.i.TEXT_CHAT
 }, {
   title: ep.t.oifnSh,
   description: ep.t.bgU5r0,
-  disabledSetting: w.i.WELCOME_GENERAL
+  disabledSetting: D.i.WELCOME_GENERAL
 }, {
   title: ep.t.hqsZJW,
   description: ep.t.kHjdqc,
-  disabledSetting: w.i.GO_LIVE_NUDGE
+  disabledSetting: D.i.GO_LIVE_NUDGE
 }, e && {
   title: ep.t.sop3rn,
   description: ep.t.pjgffc,
-  disabledSetting: w.i.GAME_ACTIVITY
+  disabledSetting: D.i.GAME_ACTIVITY
 }, t && {
   title: ep.t["2QVhbb"],
   description: ep.t.wQ4ilB,
-  disabledSetting: w.i.NOW_PLAYING
+  disabledSetting: D.i.NOW_PLAYING
 }, n && {
   title: ep.t["5/21FT"],
   description: ep.t.EIzwfA,
-  disabledSetting: w.i.FRIEND_STREAM_WATCH_NUDGE
+  disabledSetting: D.i.FRIEND_STREAM_WATCH_NUDGE
 }].filter(e => false !== e).filter(Boolean);
 
 function eV() {

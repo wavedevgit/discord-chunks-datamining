@@ -35,7 +35,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk724913 = require("./724913.js"),
   Chunk430864 = require("./430864.js");
 
-function w(e) {
+function D(e) {
   let {
     width: t = 12,
     height: n = 8,
@@ -115,7 +115,7 @@ function M(e, t, n) {
     })
   }) : (0, r.jsx)("div", {
     className: P.replyBadge,
-    children: (0, r.jsx)(w, {
+    children: (0, r.jsx)(D, {
       className: P.replyIcon
     })
   });
@@ -244,7 +244,7 @@ function U(e, t, n, i, a, s) {
     S = (0, b.cv)(E).length > 0,
     A = null != E.interaction,
     C = E.hasFlag(N.iLy.IS_VOICE_MESSAGE),
-    w = E.isPoll(),
+    D = E.isPoll(),
     L = E.type === N.uaV.POLL_RESULT;
   if ((0, _.Z)(e) && (g = (0, r.jsx)(h.Z, {
       size: "custom",
@@ -259,10 +259,10 @@ function U(e, t, n, i, a, s) {
     rendered: t
   });
   else if (I)
-    if (w) {
+    if (D) {
       var x, M;
       u = (0, r.jsx)("div", {
-        className: o()(P.repliedTextContent, D.markup),
+        className: o()(P.repliedTextContent, w.markup),
         children: null == E || null == (M = E.poll) || null == (x = M.question) ? true : x.text
       })
     } else L ? l = (0, m.N4)(E) : S ? l = R.intl.string(R.t.kHdYCW) : A ? l = R.intl.string(R.t["E+6SSY"]) : C ? l = R.intl.string(R.t.XC3A52) : E.hasFlag(N.iLy.IS_COMPONENTS_V2) ? l = R.intl.string(R.t.Xxat6S) : (l = R.intl.string(R.t["6hGo0c"]), d = (0, r.jsx)(c.XBm, {

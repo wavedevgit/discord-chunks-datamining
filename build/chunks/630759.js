@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   J6: () => G,
-  LO: () => w,
-  TQ: () => D,
+  LO: () => D,
+  TQ: () => w,
   UB: () => H,
   ZU: () => L,
   Zn: () => x,
@@ -56,7 +56,7 @@ function P() {
   return Chunk63063.Z.getArticleURL(Chunk981631.BhN.END_TO_END_ENCRYPTION)
 }
 
-function D(e, t, n, r, i) {
+function w(e, t, n, r, i) {
   n ? O.Z.createSecureFramesVerifiedKey(e, t) : O.Z.createSecureFramesTransientKey(e, t), (0, T.M1)({
     channelId: r,
     userId: e,
@@ -64,7 +64,7 @@ function D(e, t, n, r, i) {
   })
 }
 
-function w(e, t, n) {
+function D(e, t, n) {
   if (n) {
     let n = (0, c.MK)(new Uint8Array(t));
     O.Z.deleteSecureFramesVerifiedKey(e, n)

@@ -87,7 +87,7 @@ class R extends(r = Chunk647438.PureComponent) {
       controller: t
     } = this.state;
     e(), t.update({
-      immediate: !v.Z.isFocused(),
+      immediate: !j.Z.isFocused(),
       height: 1,
       opacity: 1,
       scale: 1,
@@ -115,7 +115,7 @@ class R extends(r = Chunk647438.PureComponent) {
     this.setState({
       animating: true
     }, () => t.update({
-      immediate: !v.Z.isFocused(),
+      immediate: !j.Z.isFocused(),
       height: 0,
       opacity: 0,
       scale: 0,
@@ -267,16 +267,16 @@ let D = Chunk647438.forwardRef(function(e, t) {
     g = (0, s.e7)([O.Z], () => O.Z.getChannelId(), []),
     y = (0, s.e7)([_.ZP], () => _.ZP.getMentionCount(n), [n]),
     {
-      isFacepileEnabled: v
+      isFacepileEnabled: j
     } = h.Z.useExperiment({
       location: "unread_direct_message"
     }, {
       autoTrackExposure: false
     }),
-    j = o === n,
+    v = o === n,
     x = false,
     C = false;
-  j && (x = u === S.WtW.VOICE, C = u === S.WtW.VIDEO);
+  v && (x = u === S.WtW.VOICE, C = u === S.WtW.VIDEO);
   let E = (0, c.dQu)(c.TVs.modules.guildbar.AVATAR_SIZE);
   return (0, i.jsx)(R, T(Z({}, e), {
     ref: t,
@@ -287,8 +287,8 @@ let D = Chunk647438.forwardRef(function(e, t) {
     audio: x,
     video: C,
     stream: p,
-    isCurrentUserInThisDMCall: j,
-    isGDMFacepileEnabled: v,
+    isCurrentUserInThisDMCall: v,
+    isGDMFacepileEnabled: j,
     size: E,
     treeItemProps: l
   }))

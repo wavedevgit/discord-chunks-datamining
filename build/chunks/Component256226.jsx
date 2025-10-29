@@ -86,8 +86,8 @@ let N = Chunk647438.forwardRef(function(e, t) {
       canRemove: N,
       className: R,
       role: P,
-      onRemove: D,
-      guildId: w,
+      onRemove: w,
+      guildId: D,
       disableBorderColor: L,
       onMouseDown: x
     } = e,
@@ -99,7 +99,7 @@ let N = Chunk647438.forwardRef(function(e, t) {
     U = (0, g.p9)({
       roleId: P.id,
       size: 16,
-      guildId: w
+      guildId: D
     }),
     G = (0, c.e7)([h.Z], () => h.Z.roleStyle),
     B = (null == (a = P.tags) ? true : a.guild_connections) === null,
@@ -120,7 +120,7 @@ let N = Chunk647438.forwardRef(function(e, t) {
     Y = u.Z.unsafe_rawColors.WHITE_500.css,
     W = (0, l._i)(V);
   null != W && .3 > (0, l.Bd)(W) && (Y = u.Z.unsafe_rawColors.PRIMARY_630.css);
-  let K = (0, E._f)(w, P, P.colorStrings);
+  let K = (0, E._f)(D, P, P.colorStrings);
   C = B ? (0, r.jsx)(m.Z, {
     className: O.roleFlowerStar,
     iconClassName: N ? O.roleVerifiedIcon : true,
@@ -148,7 +148,7 @@ let N = Chunk647438.forwardRef(function(e, t) {
       text: y.intl.string(y.t.u3RVsH),
       children: (0, r.jsxs)(_.P3F, {
         className: o()(O.roleRemoveButtonCanRemove, O.roleRemoveButton),
-        onClick: D,
+        onClick: w,
         tabIndex: k,
         focusProps: {
           focusClassName: O.roleRemoveIconFocused

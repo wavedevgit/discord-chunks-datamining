@@ -6,9 +6,9 @@ require.d(exports, {
   NE: () => P,
   Of: () => L,
   QN: () => A,
-  Qf: () => D,
+  Qf: () => w,
   RV: () => N,
-  TY: () => w,
+  TY: () => D,
   V1: () => x,
   pQ: () => C,
   te: () => T,
@@ -248,7 +248,7 @@ let v = e => {
       badge: a
     }))
   },
-  D = e => {
+  w = e => {
     let {
       guildId: t,
       channelId: n,
@@ -260,7 +260,7 @@ let v = e => {
       badge: a
     }))
   },
-  w = e => {
+  D = e => {
     var t, n, r;
     let {
       displayProfile: i,

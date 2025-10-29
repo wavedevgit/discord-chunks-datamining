@@ -32,14 +32,14 @@ function d(e) {
     dynamicDataBinding: S,
     listenOnDocumentBody: A,
     eventCapture: C
-  } = e, N = i.useContext(l.S), R = (0, s.C)(), P = null != (a = null == (t = (n = (0, c.ZF)()).isWindowFocused) ? true : t.call(n)) ? a : R, [D, w] = i.useState(true), L = i.useRef(null), {
+  } = e, N = i.useContext(l.S), R = (0, s.C)(), P = null != (a = null == (t = (n = (0, c.ZF)()).isWindowFocused) ? true : t.call(n)) ? a : R, [w, D] = i.useState(true), L = i.useRef(null), {
     rive: x,
     RiveComponent: M
   } = (0, o.useRive)({
     eventTarget: null == E ? true : E.current,
     buffer: d,
     autoplay: _,
-    stateMachines: D,
+    stateMachines: w,
     artboard: b,
     useOffscreenRenderer: true,
     layout: new o.Layout({
@@ -79,13 +79,13 @@ function d(e) {
       x.resizeDrawingSurfaceToCanvas()
     }, 100))
   }, [x, h]), i.useEffect(() => {
-    null != x && null == D && (w(x.stateMachineNames), x.reset({
+    null != x && null == w && (D(x.stateMachineNames), x.reset({
       stateMachines: x.stateMachineNames,
       autoplay: _,
       artboard: b,
       autoBind: true
     }), x.setupRiveListeners())
-  }, [x, _, D, b]);
+  }, [x, _, w, b]);
   let k = i.useRef(0);
   i.useEffect(() => {
     if (null == x) return;

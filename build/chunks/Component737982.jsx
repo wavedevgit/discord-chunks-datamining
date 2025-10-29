@@ -24,9 +24,9 @@ let y = Chunk647438.memo(function(e) {
   let {
     guildId: t,
     selected: n
-  } = e, [y, v] = (0, c.ZT)([o.z.GAME_SERVER_HOSTING_NEW_BADGE], t), j = i.useCallback(() => {
-    y === o.z.GAME_SERVER_HOSTING_NEW_BADGE && v(m.L.USER_DISMISS), (0, d.uL)(h.Z5c.CHANNEL(t, g.oC.GAME_SERVERS))
-  }, [t, y, v]), x = i.useRef(null), C = y === o.z.GAME_SERVER_HOSTING_NEW_BADGE, E = (0, a.f9)(), S = (0, l.e7)([p.Z], () => p.Z.hasLayers());
+  } = e, [y, j] = (0, c.ZT)([o.z.GAME_SERVER_HOSTING_NEW_BADGE], t), v = i.useCallback(() => {
+    y === o.z.GAME_SERVER_HOSTING_NEW_BADGE && j(m.L.USER_DISMISS), (0, d.uL)(h.Z5c.CHANNEL(t, g.oC.GAME_SERVERS))
+  }, [t, y, j]), x = i.useRef(null), C = y === o.z.GAME_SERVER_HOSTING_NEW_BADGE, E = (0, a.f9)(), S = (0, l.e7)([p.Z], () => p.Z.hasLayers());
   return (0, r.jsx)(s.yRy, {
     targetElementRef: x,
     shouldShow: C && !E && !S,
@@ -35,7 +35,7 @@ let y = Chunk647438.memo(function(e) {
     position: "right",
     renderPopout: () => (0, r.jsx)(f.En, {
       guildId: t,
-      markAsDismissed: v
+      markAsDismissed: j
     }),
     children: e => {
       var i, l;
@@ -66,7 +66,7 @@ let y = Chunk647438.memo(function(e) {
         }),
         text: _.intl.string(b.default.vCzwM7),
         selected: n,
-        onClick: j,
+        onClick: v,
         trailing: C ? (0, r.jsx)(s.IGR, {
           disableColor: true,
           text: _.intl.string(_.t.y2b7CA),

@@ -9,7 +9,7 @@ require.d(exports, {
   hz: () => L,
   mz: () => x,
   ol: () => M,
-  xB: () => D
+  xB: () => w
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -123,10 +123,10 @@ function P(e) {
     }
   });
   let {
-    reducedMotion: D
-  } = i.useContext(d.Sfi), w = (0, d.q_F)({
+    reducedMotion: w
+  } = i.useContext(d.Sfi), D = (0, d.q_F)({
     opacity: +!!P,
-    transform: P || D.enabled || "subtle" === A ? "scale(1)" : "scale(0.7)",
+    transform: P || w.enabled || "subtle" === A ? "scale(1)" : "scale(0.7)",
     config: {
       duration: 200,
       easing: c.Z.Easing.out(c.Z.Easing.quad),
@@ -152,7 +152,7 @@ function P(e) {
           [y.rootWithShadow]: !b
         }),
         ref: L,
-        style: w,
+        style: D,
         children: (0, r.jsx)(d.JcV, {
           containerRef: L,
           children: a
@@ -162,7 +162,7 @@ function P(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   var t, n, a, s, l;
   let {
     headerId: c,
@@ -183,7 +183,7 @@ function D(e) {
   })
 }
 
-function w(e) {
+function D(e) {
   switch (null != e ? e : "thin") {
     case "auto":
       return d.yWw;
@@ -200,7 +200,7 @@ function L(e) {
     children: n,
     scrollerRef: i,
     scrollbarType: a
-  } = e, s = S(e, ["className", "children", "scrollerRef", "scrollbarType"]), l = w(a);
+  } = e, s = S(e, ["className", "children", "scrollerRef", "scrollbarType"]), l = D(a);
   return (0, r.jsx)(l, T(v({
     "data-migration-pending": true,
     className: o()(y.content, t),

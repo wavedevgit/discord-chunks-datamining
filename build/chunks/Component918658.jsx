@@ -35,7 +35,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk829675 = require("./829675.js");
 
-function w(e) {
+function D(e) {
   let {
     className: t,
     onClick: n,
@@ -44,8 +44,8 @@ function w(e) {
   } = e;
   return (0, r.jsx)(u.zx, {
     buttonRef: a,
-    className: o()(D.button, t),
-    innerClassName: D.buttonInner,
+    className: o()(w.button, t),
+    innerClassName: w.buttonInner,
     look: u.zx.Looks.OUTLINED,
     color: u.zx.Colors.WHITE,
     size: u.zx.Sizes.NONE,
@@ -58,7 +58,7 @@ function L(e) {
   let {
     onClick: t
   } = e;
-  return (0, r.jsx)(w, {
+  return (0, r.jsx)(D, {
     onClick: t,
     children: P.intl.string(P.t.R9GHya)
   })
@@ -109,7 +109,7 @@ function k() {
   return (0, Chunk951288.jsxs)(Chunk481060.qXd, {
     color: Chunk481060.DM8.BRAND,
     className: Chunk829675.notice,
-    children: [(0, Chunk951288.jsxs)(w, {
+    children: [(0, Chunk951288.jsxs)(D, {
       onClick: () => G({
         backToSettings: true
       }),
@@ -145,14 +145,14 @@ function k() {
           let {
             onClick: n
           } = t;
-          return (0, r.jsxs)(w, {
+          return (0, r.jsxs)(D, {
             onClick: n,
             buttonRef: e,
             children: [j, (0, r.jsx)(O.Z, {
               width: 16,
               height: 16,
               direction: O.Z.Directions.DOWN,
-              className: D.selectCaret
+              className: w.selectCaret
             })]
           })
         }
@@ -187,9 +187,9 @@ function j(e) {
     guildId: t
   } = e;
   return (0, s.e7)([T.Z], () => T.Z.isViewingRoles(t)) ? (0, r.jsx)("div", {
-    className: o()(D.settingsWrapper, {
-      [D.windows]: (0, v.isWindows)(),
-      [D.osx]: (0, v.isMac)()
+    className: o()(w.settingsWrapper, {
+      [w.windows]: (0, v.isWindows)(),
+      [w.osx]: (0, v.isMac)()
     }),
     children: (0, r.jsx)(k, {})
   }) : null

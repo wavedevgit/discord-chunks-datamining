@@ -85,7 +85,7 @@ function W(e, t) {
 }
 
 function K(e) {
-  D.Z.requestPermission(t => {
+  w.Z.requestPermission(t => {
     let n = t ? G.$Ab.ENABLED : G.$Ab.BLOCKED;
     d.default.setPermissionsState(n, e)
   })

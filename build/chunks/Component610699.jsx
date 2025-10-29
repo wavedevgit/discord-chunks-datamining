@@ -174,14 +174,14 @@ function F(e) {
   l()(E === L.Iq.EMBEDDED_APPLICATION && null != b, "invalid application invite");
   let y = i.useCallback(() => {
       var e;
-      C.default.track(D.rMx.EMBEDDED_APPLICATION_INVITE_EMBED_VIEWED, {
+      C.default.track(w.rMx.EMBEDDED_APPLICATION_INVITE_EMBED_VIEWED, {
         application_id: b.id,
         invite_inviter_id: null == (e = s.inviter) ? true : e.id
       })
     }, [null == (t = s.inviter) ? true : t.id, b.id]),
     v = (0, c.e7)([T.Z], () => null != s.guild ? T.Z.getGuild(s.guild.id) : null, [s]),
     N = (0, O.Z)([b.id])[0],
-    w = (0, c.e7)([_.ZP], () => {
+    D = (0, c.e7)([_.ZP], () => {
       var e;
       return (null == s ? true : s.channel) != null && (null == (e = _.ZP.getSelfEmbeddedActivityForChannel(s.channel.id)) ? true : e.applicationId) === b.id
     }),
@@ -195,7 +195,7 @@ function F(e) {
       })
     }),
     k = I.Z.getChannel(null == (n = s.channel) ? true : n.id),
-    j = (0, c.e7)([S.Z], () => null != k && S.Z.can(D.Plq.USE_EMBEDDED_ACTIVITIES, k), [k]),
+    j = (0, c.e7)([S.Z], () => null != k && S.Z.can(w.Plq.USE_EMBEDDED_ACTIVITIES, k), [k]),
     {
       analyticsLocations: U
     } = (0, h.ZP)(p.Z.INVITE_EMBED),
@@ -213,14 +213,14 @@ function F(e) {
         analyticsLocations: U
       })
     }, [s, u, U, d]),
-    F = s.state === D.r2o.ACCEPTING,
+    F = s.state === w.r2o.ACCEPTING,
     H = null != v;
   if (null == v) {
     if (null == s.guild) return (0, r.jsx)(P.Z, {});
     v = (0, R.Qs)(s.guild)
   }
-  a = H ? w ? x.intl.string(x.t.DPfdsq) : M ? x.intl.string(x.t.sqe0hj) : x.intl.string(x.t.RscU7I) : x.intl.string(x.t["2BP08E"]);
-  let Y = H && !j || H && w;
+  a = H ? D ? x.intl.string(x.t.DPfdsq) : M ? x.intl.string(x.t.sqe0hj) : x.intl.string(x.t.RscU7I) : x.intl.string(x.t["2BP08E"]);
+  let Y = H && !j || H && D;
   return (j || (o = x.intl.string(x.t.hHGrWz)), null == s.code || "" === s.code || null == N) ? null : (0, r.jsx)(h.Gt, {
     value: U,
     children: (0, r.jsx)(V, {
@@ -304,7 +304,7 @@ function V(e) {
     onClickContent: A,
     trackingConfig: {
       id: t.id,
-      linkType: w.U.ACTIVITY_INVITE,
+      linkType: D.U.ACTIVITY_INVITE,
       onView: v,
       guildId: s.id,
       channelId: null == o ? true : o.id,

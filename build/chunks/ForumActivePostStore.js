@@ -40,8 +40,8 @@ let O = [],
   N = [],
   R = false,
   P = [],
-  D = o().chain(O),
   w = o().chain(O),
+  D = o().chain(O),
   L = new Set,
   x = new Set;
 
@@ -74,7 +74,7 @@ function U(e, t) {
 }
 
 function G() {
-  N = [], r = null, I = null, T = new Set, S = Chunk683860.z.LATEST_ACTIVITY, A = Chunk697988.z.MATCH_SOME, C = 0, P = [], D = o().chain(O), w = o().chain(O), x.clear(), L.clear()
+  N = [], r = null, I = null, T = new Set, S = Chunk683860.z.LATEST_ACTIVITY, A = Chunk697988.z.MATCH_SOME, C = 0, P = [], w = o().chain(O), D = o().chain(O), x.clear(), L.clear()
 }
 
 function B() {
@@ -104,8 +104,8 @@ function F(e) {
       id: t
     } = e;
     return t
-  }), C = 0, R = true), 0 !== L.size && (P = P.filter(e => !L.has(e)), L.clear()), 0 !== x.size && (P = Array.from(new Set([...P, ...x])), x.clear()), ((null == e ? true : e.refreshThreadIds) || (null == e ? true : e.sortThreadIds)) && (w = o().chain(P).sort(j(l.z.LATEST_ACTIVITY)), D = o().chain(P).sort(j(l.z.CREATION_DATE)));
-  let n = (S === l.z.LATEST_ACTIVITY ? w : D).value(),
+  }), C = 0, R = true), 0 !== L.size && (P = P.filter(e => !L.has(e)), L.clear()), 0 !== x.size && (P = Array.from(new Set([...P, ...x])), x.clear()), ((null == e ? true : e.refreshThreadIds) || (null == e ? true : e.sortThreadIds)) && (D = o().chain(P).sort(j(l.z.LATEST_ACTIVITY)), w = o().chain(P).sort(j(l.z.CREATION_DATE)));
+  let n = (S === l.z.LATEST_ACTIVITY ? D : w).value(),
     i = (N = 0 === T.size ? n : n.filter(U(T, A))).find(e => k(e));
   r = null == i ? null : i
 }

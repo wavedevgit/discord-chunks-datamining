@@ -3,12 +3,12 @@
 "use strict";
 require.d(exports, {
   $E: () => L,
-  T6: () => D,
+  T6: () => w,
   TW: () => T,
   U0: () => R,
   WO: () => x,
   rU: () => P,
-  wX: () => w
+  wX: () => D
 });
 var Chunk544891 = require("./544891.js"),
   Chunk780384 = require("./780384.js"),
@@ -226,7 +226,7 @@ async function P(e, t, n) {
   })
 }
 
-function D(e) {
+function w(e) {
   let {
     channelId: t,
     messageId: n,
@@ -241,14 +241,14 @@ function D(e) {
     key: i
   })
 }
-async function w(e, t, n) {
+async function D(e, t, n) {
   let i = null != n && !!n.isRetry;
   await c.Z.unarchiveThreadIfNecessary(e), r.tn.del({
     url: E.ANM.REMOVE_REACTIONS(e, t),
     oldFormErrors: true,
     rejectWithError: false
   }).catch(n => {
-    S(n, () => w(e, t, {
+    S(n, () => D(e, t, {
       isRetry: true
     }), {
       isRetry: i

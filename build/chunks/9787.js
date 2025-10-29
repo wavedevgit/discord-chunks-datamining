@@ -70,14 +70,14 @@ let N = null,
 function P(e) {
   return (null == e ? true : e.ownerDocument) || document
 }
-let D = {
+let w = {
   inert: new WeakMap,
   "aria-hidden": new WeakMap,
   none: new WeakMap
 };
 
-function w(e) {
-  return "inert" === e ? D.inert : "aria-hidden" === e ? D["aria-hidden"] : D.none
+function D(e) {
+  return "inert" === e ? w.inert : "aria-hidden" === e ? w["aria-hidden"] : w.none
 }
 let L = new WeakSet,
   x = null,
@@ -110,7 +110,7 @@ function U(e, t, n, r) {
         else {
           let t = a ? e.getAttribute(a) : null,
             n = null !== t && "false" !== t,
-            r = w(a),
+            r = D(a),
             o = (r.get(e) || 0) + 1,
             s = (u.get(e) || 0) + 1;
           r.set(e, o), u.set(e, s), c.push(e), 1 === o && n && L.add(e), 1 === s && e.setAttribute(i, ""), !n && a && e.setAttribute(a, "inert" === a ? "" : "true")
@@ -119,11 +119,11 @@ function U(e, t, n, r) {
   }
   return o.forEach(d), f(t), s.clear(), M++, () => {
     c.forEach(e => {
-      let t = w(a),
+      let t = D(a),
         n = (t.get(e) || 0) - 1,
         r = (u.get(e) || 0) - 1;
       t.set(e, n), u.set(e, r), n || (!L.has(e) && a && e.removeAttribute(a), L.delete(e)), r || e.removeAttribute(i)
-    }), --M || (D.inert = new WeakMap, D["aria-hidden"] = new WeakMap, D.none = new WeakMap, L = new WeakSet, x = {})
+    }), --M || (w.inert = new WeakMap, w["aria-hidden"] = new WeakMap, w.none = new WeakMap, L = new WeakSet, x = {})
   }
 }
 let G = null,
@@ -199,7 +199,7 @@ function z(e, t) {
       R(e), null == (t = (0, a.U9)(e)) || t.removeEventListener("keydown", n)
     };
     null == (t = (0, a.U9)(e)) || t.addEventListener("keydown", n)
-  }), D = (0, a.iW)(e => {
+  }), w = (0, a.iW)(e => {
     var t;
     let n = l.current.insideReactTree;
     l.current.insideReactTree = false;
@@ -246,11 +246,11 @@ function z(e, t) {
         }), !e) return
     }
     r(false, e, "outside-press")
-  }), w = (0, a.iW)(e => {
+  }), D = (0, a.iW)(e => {
     var t;
     let n = () => {
       var t;
-      D(e), null == (t = (0, a.U9)(e)) || t.removeEventListener(f, n)
+      w(e), null == (t = (0, a.U9)(e)) || t.removeEventListener(f, n)
     };
     null == (t = (0, a.U9)(e)) || t.addEventListener(f, n)
   });
@@ -273,7 +273,7 @@ function z(e, t) {
       }, 5 * !!(0, o.Pf)())
     }
     let _ = (0, a.Me)(s.floating);
-    u && (_.addEventListener("keydown", T ? P : R, T), _.addEventListener("compositionstart", i), _.addEventListener("compositionend", d)), y && _.addEventListener(f, S ? w : D, S);
+    u && (_.addEventListener("keydown", T ? P : R, T), _.addEventListener("compositionstart", i), _.addEventListener("compositionend", d)), y && _.addEventListener(f, S ? D : w, S);
     let p = [];
     return h && ((0, o.kK)(s.domReference) && (p = (0, o.Kx)(s.domReference)), (0, o.kK)(s.floating) && (p = p.concat((0, o.Kx)(s.floating))), !(0, o.kK)(s.reference) && s.reference && s.reference.contextElement && (p = p.concat((0, o.Kx)(s.reference.contextElement)))), (p = p.filter(e => {
       var t;
@@ -283,11 +283,11 @@ function z(e, t) {
         passive: true
       })
     }), () => {
-      u && (_.removeEventListener("keydown", T ? P : R, T), _.removeEventListener("compositionstart", i), _.removeEventListener("compositionend", d)), y && _.removeEventListener(f, S ? w : D, S), p.forEach(e => {
+      u && (_.removeEventListener("keydown", T ? P : R, T), _.removeEventListener("compositionstart", i), _.removeEventListener("compositionend", d)), y && _.removeEventListener(f, S ? D : w, S), p.forEach(e => {
         e.removeEventListener("scroll", t)
       }), window.clearTimeout(e)
     }
-  }, [l, s, u, y, f, n, r, h, c, v, I, R, T, P, D, S, w]), i.useEffect(() => {
+  }, [l, s, u, y, f, n, r, h, c, v, I, R, T, P, w, S, D]), i.useEffect(() => {
     l.current.insideReactTree = false
   }, [l, y, f]);
   let L = i.useMemo(() => ({

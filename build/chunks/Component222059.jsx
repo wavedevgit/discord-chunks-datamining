@@ -56,14 +56,14 @@ function L(e) {
     badge: f,
     link: g,
     showProgressBadge: _
-  } = e, [O, y] = i.useState(false), [v, j] = i.useState(false), [x, C] = i.useState(null), [E, T] = i.useState(0), L = (0, l.Ie)("home"), M = (0, p.oq)().activePanel === p.wh.APP_ICON, k = () => {
+  } = e, [O, y] = i.useState(false), [j, v] = i.useState(false), [x, C] = i.useState(null), [E, T] = i.useState(0), L = (0, l.Ie)("home"), M = (0, p.oq)().activePanel === p.wh.APP_ICON, k = () => {
     C(null), T(0), clearTimeout(x)
   }, G = h.o.useConfig({
     location: "home button"
   }).dmsTab;
   if (null == d) return null;
   let U = G ? A.intl.string(A.t.Ym2Ri6) : A.intl.string(A.t.YUU0RF);
-  v && (U = a.K.get(Z.wli) ? A.intl.string(A.t["nkq1l+"]) : A.intl.string(A.t.Be8Q5E));
+  j && (U = a.K.get(Z.wli) ? A.intl.string(A.t["nkq1l+"]) : A.intl.string(A.t.Be8Q5E));
   let B = null;
   !o && _ && (B = (0, r.jsx)(c.Z, {
     className: R.downloadProgress,
@@ -101,8 +101,8 @@ function L(e) {
           if (!__OVERLAY__ && (null != x && clearTimeout(x), C(setTimeout(k, 500)), T(E + 1), 15 === E)) {
             k();
             let e = !a.K.get(Z.wli);
-            a.K.set(Z.wli, e), e && a.K.set(w.O, true), e ? (0, m.GN)("discodo") : (0, m.GN)("user_leave"), j(true), setTimeout(() => {
-              j(false)
+            a.K.set(Z.wli, e), e && a.K.set(w.O, true), e ? (0, m.GN)("discodo") : (0, m.GN)("user_leave"), v(true), setTimeout(() => {
+              v(false)
             }, 1e3)
           }
         },

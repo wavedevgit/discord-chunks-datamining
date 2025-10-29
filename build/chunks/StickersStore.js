@@ -68,7 +68,7 @@ let O = 2,
     N = new Map(N.set(e, t))
   },
   P = Chunk70956.Z.Millis.HOUR,
-  D = async () => {
+  w = async () => {
     if (0 !== O) return;
     let e = Chunk287328.Z.database();
     if (null == module) return;
@@ -80,7 +80,7 @@ let O = 2,
     })
   };
 
-function w(e) {
+function D(e) {
   let {
     stickers: t
   } = e;
@@ -253,7 +253,7 @@ class X extends(r = Chunk442837.ZP.Store) {
     return O
   }
   get stickerMetadata() {
-    return D(), null == T && (T = new Map, k()), T
+    return w(), null == T && (T = new Map, k()), T
   }
   get hasLoadedStickerPacks() {
     return null != A && A + P > Date.now()
@@ -262,7 +262,7 @@ class X extends(r = Chunk442837.ZP.Store) {
     return C
   }
   getStickerById(e) {
-    return I.has(e) || D(), I.get(e)
+    return I.has(e) || w(), I.get(e)
   }
   getStickerPack(e) {
     return v.get(e)
@@ -277,13 +277,13 @@ class X extends(r = Chunk442837.ZP.Store) {
     return N
   }
   getAllStickersIterator() {
-    return D(), I.values()
+    return w(), I.values()
   }
   getAllGuildStickers() {
-    return D(), N
+    return w(), N
   }
   getStickersByGuildId(e) {
-    return D(), N.get(e)
+    return w(), N.get(e)
   }
 }
 g(X, "displayName", "StickersStore");
@@ -300,5 +300,5 @@ let Q = new X(Chunk570140.Z, {
   GUILD_STICKERS_CREATE_SUCCESS: K,
   STICKER_FETCH_SUCCESS: z,
   GUILD_STICKERS_UPDATE: q,
-  CACHED_STICKERS_LOADED: w
+  CACHED_STICKERS_LOADED: D
 })

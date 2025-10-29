@@ -2,7 +2,7 @@
 /** chunk id: 64914, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => D,
+  ZP: () => w,
   fD: () => R
 }), require("./388685.js"), require("./49124.js");
 var Chunk951288 = require("./951288.js"),
@@ -79,7 +79,7 @@ function P(e) {
   (0, f.Y)("DesktopNativeUtils") ? (o.K.set(N, e), h.ZP.setEnableHardwareAcceleration(true)) : h.ZP.setEnableHardwareAcceleration(e)
 }
 
-function D() {
+function w() {
   let [e] = Chunk647438.useState(() => R()), t = Chunk695346.bm.useSetting(), n = Chunk695346.Sb.useSetting(), o = (0, Chunk442837.e7)([Chunk695103.Z], () => Chunk695103.Z.testModeApplicationId), f = (0, Chunk442837.e7)([Chunk740492.ZP], () => Chunk740492.ZP.showPlayAgain), h = Chunk647438.useCallback(e => {
     g.bm.updateSetting(!e)
   }, []), T = Chunk647438.useCallback(e => {
@@ -102,8 +102,8 @@ function D() {
       }))
     })
   }, []), {
-    warpEnabled: D,
-    warpConnecting: w,
+    warpEnabled: w,
+    warpConnecting: D,
     warpLog: L
   } = (0, Chunk442837.cj)([Chunk956097.Z], () => ({
     warpEnabled: Chunk956097.Z.enabled,
@@ -171,9 +171,9 @@ function D() {
           children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
             label: "Enable WARP",
             description: "Enable WARP Proxy Connection",
-            checked: D,
+            checked: w,
             onChange: x
-          }), w ? (0, Chunk951288.jsx)(Chunk481060.$jN, {}) : null, (0, Chunk951288.jsx)(Chunk481060.Text, {
+          }), D ? (0, Chunk951288.jsx)(Chunk481060.$jN, {}) : null, (0, Chunk951288.jsx)(Chunk481060.Text, {
             variant: "code",
             children: L.map((e, t) => (0, r.jsx)("div", {
               children: JSON.stringify(e)

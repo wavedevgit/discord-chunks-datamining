@@ -1,7 +1,7 @@
 /** Chunk was on 30437 **/
 /** chunk id: 262212, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  ZP: () => j,
+  ZP: () => v,
   ms: () => O
 });
 var Chunk951288 = require("./951288.js");
@@ -93,7 +93,7 @@ function y(e) {
   })
 }
 
-function v(e) {
+function j(e) {
   let {
     className: t,
     guildId: n,
@@ -115,10 +115,10 @@ function v(e) {
   })
 }
 
-function j(e) {
+function v(e) {
   var t = b({}, function(e) {
     if (null == e) throw TypeError("Cannot destructure " + e);
     return e
   }(e));
-  return (0, s.Z)(t.guildId) ? (0, r.jsx)(v, _({}, t)) : (0, r.jsx)(y, _({}, t))
+  return (0, s.Z)(t.guildId) ? (0, r.jsx)(j, _({}, t)) : (0, r.jsx)(y, _({}, t))
 }

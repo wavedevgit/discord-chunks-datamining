@@ -2,7 +2,7 @@
 /** chunk id: 607841, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => D
 }), require("./539854.js"), require("./388685.js");
 var Chunk147913 = require("./147913.js"),
   Chunk43267 = require("./43267.js"),
@@ -211,7 +211,7 @@ function P(e) {
     } else n.push(a.id);
   t.length > 0 && h.Z.indexDomains(t), n.length > 0 && h.Z.deleteSearchItems(n)
 }
-class D extends Chunk147913.Z {
+class w extends Chunk147913.Z {
   handleInit() {
     C(Chunk944486.Z.getCurrentlySelectedChannelId()), y() && Chunk495527.Z.clearSearchIndex(), b() && N()
   }
@@ -306,4 +306,4 @@ class D extends Chunk147913.Z {
     })
   }
 }
-let w = new D
+let D = new w

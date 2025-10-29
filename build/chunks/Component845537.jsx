@@ -7,9 +7,9 @@ require.d(exports, {
   N1: () => j,
   NY: () => x,
   Ox: () => P,
-  Vq: () => w,
+  Vq: () => D,
   Wf: () => M,
-  cB: () => D,
+  cB: () => w,
   dy: () => N,
   wP: () => R
 });
@@ -83,7 +83,7 @@ function P(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   let {
     id: t,
     guildId: n,
@@ -124,7 +124,7 @@ function D(e) {
   return f
 }
 
-function w(e) {
+function D(e) {
   let {
     id: t,
     guildId: n

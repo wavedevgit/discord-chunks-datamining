@@ -2,7 +2,7 @@
 /** chunk id: 685756, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  V: () => w,
+  V: () => D,
   Z: () => L
 }), require("./410992.js"), require("./227481.js"), require("./730884.js"), require("./20464.js"), require("./341884.js"), require("./364341.js"), require("./629680.js"), require("./505025.js"), require("./918970.js"), require("./121784.js"), require("./644351.js"), require("./146733.js"), require("./388685.js"), require("./49124.js"), require("./997841.js");
 var Chunk512722 = require("./512722.js"),
@@ -101,7 +101,7 @@ function P(e) {
   return "audio" === e ? f.Tr.AUDIO : "test" === e ? f.Tr.TEST : "screen" === e ? f.Tr.SCREEN : f.Tr.VIDEO
 }
 
-function D(e) {
+function w(e) {
   var t;
   return null != (t = null == e ? true : e.map(e => ({
     type: P(e.type),
@@ -119,7 +119,7 @@ function D(e) {
     } : true
   }))) ? t : []
 }
-var w = function(e) {
+var D = function(e) {
   return e.Connecting = "connecting", e.Connect = "connect", e.Disconnect = "disconnect", e.Resuming = "resuming", e.Ready = "ready", e.Speaking = "speaking", e.Video = "video", e.Ping = "ping", e.ClientConnect = "client-connect", e.ClientDisconnect = "client-disconnect", e.Codecs = "codecs", e.MediaSessionId = "media-session-id", e.MediaSinkWants = "media-sink-wants", e.VoiceBackendVersion = "voice-backend-version", e.KeyframeInterval = "keyframe-interval", e.ChannelOptionsUpdateSecureFramesProtocol = "update-secure-frames-protocol", e.Flags = "flags", e.Platform = "platform", e.SDP = "sdp", e.Encryption = "encryption", e.BandwidthEstimationExperiment = "bandwidth-estimation-experiment", e.SecureFramesInit = "secure-frames-init", e.SecureFramesPrepareTransition = "secure-frames-prepare-transition", e.SecureFramesExecuteTransition = "secure-frames-execute-transition", e.SecureFramesPrepareEpoch = "secure-frames-prepare-epoch", e.MLSExternalSenderPackage = "mls-external-sender-package", e.MLSProposals = "mls-proposals", e.MLSPrepareCommitTransition = "mls-prepare-commit-transition", e.MLSWelcome = "mls-welcome", e.ReceiveMessage = "receive-message", e.SendMessage = "send-message", e
 }({});
 class L extends Chunk47770.Z {
@@ -168,7 +168,7 @@ class L extends Chunk47770.Z {
           this.handleHeartbeatAck(r);
           break;
         case 12:
-          this.emit("video", r.user_id, r.audio_ssrc, r.video_ssrc, D(r.streams));
+          this.emit("video", r.user_id, r.audio_ssrc, r.video_ssrc, w(r.streams));
           break;
         case 11:
           this.emit("client-connect", r.user_ids);
@@ -282,7 +282,7 @@ class L extends Chunk47770.Z {
   handleReady(e) {
     this.backoff.succeed();
     let t = (0, s.zO)() - this.connectionStartTime;
-    this.logger.info("[READY] took ".concat(t, " ms")), this.serverVersion >= 6 && this.send(16, {}), this.emit("ready", e.ip, e.port, e.modes, e.ssrc, D(e.streams), e.experiments)
+    this.logger.info("[READY] took ".concat(t, " ms")), this.serverVersion >= 6 && this.send(16, {}), this.emit("ready", e.ip, e.port, e.modes, e.ssrc, w(e.streams), e.experiments)
   }
   handleResumed(e) {
     this.backoff.succeed()

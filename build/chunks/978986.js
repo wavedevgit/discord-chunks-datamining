@@ -11,7 +11,7 @@ require.d(exports, {
   oE: () => f,
   pB: () => p,
   y: () => O,
-  yr: () => v
+  yr: () => j
 }), require("./781311.js");
 var Chunk191336 = require("./191336.js"),
   Chunk524437 = require("./524437.js"),
@@ -119,7 +119,7 @@ let d = (0, Chunk191336.U)(e => ({
   _ = () => d.getState().dmsAllowed,
   O = () => d.getState().nickname,
   y = () => d.getState().showActivity,
-  v = () => {
+  j = () => {
     var e, t;
     let {
       nickname: n

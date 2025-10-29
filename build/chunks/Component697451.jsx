@@ -320,7 +320,7 @@ function q(e) {
       messageId: a.id,
       newAnalyticsLocations: n
     }))), [b, s, a.id]),
-    L = i.useMemo(() => e => (l()(null != s, "ExecutedCommand: channel cannot be null"), (0, r.jsx)(D.Z, G(j({}, e), {
+    L = i.useMemo(() => e => (l()(null != s, "ExecutedCommand: channel cannot be null"), (0, r.jsx)(w.Z, G(j({}, e), {
       channel: s,
       messageId: a.id,
       interactionData: a.interactionData
@@ -330,7 +330,7 @@ function q(e) {
     B = (null == k ? true : k.type) === _.B8.APPLICATION_COMMAND && null != a.messageReference && null != e.renderTargetMessage,
     Z = (0, R.Sw)(null == (t = a.interaction) ? true : t.user, s),
     F = (0, R.Sw)(U, s),
-    V = i.useMemo(() => e.compact ? (0, w.Z)((0, N.vc)(u()(), "LT")) : null, [e.compact]),
+    V = i.useMemo(() => e.compact ? (0, D.Z)((0, N.vc)(u()(), "LT")) : null, [e.compact]),
     z = (0, h.NX)(s.id),
     q = a.interaction;
   if (null == q || null == Z) return null;

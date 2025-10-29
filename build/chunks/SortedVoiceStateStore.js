@@ -198,11 +198,11 @@ class P {
   }
 }
 
-function D() {
+function w() {
   I = {}
 }
 
-function w() {
+function D() {
   B()
 }
 
@@ -302,8 +302,8 @@ class Z extends(r = Chunk442837.ZP.Store) {
 }
 E(Z, "displayName", "SortedVoiceStateStore");
 let F = new Z(Chunk570140.Z, {
-  CONNECTION_OPEN: D,
-  OVERLAY_INITIALIZE: w,
+  CONNECTION_OPEN: w,
+  OVERLAY_INITIALIZE: D,
   VOICE_CHANNEL_SELECT: M,
   VOICE_STATE_UPDATES: L,
   GUILD_MEMBER_UPDATE: j,

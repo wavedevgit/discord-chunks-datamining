@@ -58,7 +58,7 @@ let A = true,
   P = e => {
     r = true
   },
-  D = e => {
+  w = e => {
     let {
       channelId: t,
       guildId: n
@@ -68,7 +68,7 @@ let A = true,
     null != i && (0, m.zi)(i.type) && (C = true)
   };
 
-function w() {
+function D() {
   A && (r = true), C = false
 }
 let L = () => {
@@ -137,9 +137,9 @@ let j = new k(Chunk570140.Z, {
   UPDATE_BACKGROUND_GRADIENT_PRESET: N,
   UPDATE_MOBILE_PENDING_THEME_INDEX: R,
   RESET_PREVIEW_CLIENT_THEME: P,
-  CLIENT_THEMES_EDITOR_CLOSE: w,
-  CHANNEL_SELECT: D,
-  LOGOUT: w,
+  CLIENT_THEMES_EDITOR_CLOSE: D,
+  CHANNEL_SELECT: w,
+  LOGOUT: D,
   CACHE_LOADED: M,
   CONNECTION_OPEN: M,
   OVERLAY_INITIALIZE: M,

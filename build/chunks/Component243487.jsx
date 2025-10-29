@@ -142,16 +142,16 @@ let K = Chunk647438.memo(function(e) {
     anchorLeft: g,
     avatarSizeMode: b,
     maxDisplayedVoiceStates: y = M.At
-  } = e, O = (0, D.ee)(() => W(o), [o]), [v, I] = o, T = I.length > 0 && null != n && null != a && (!d || f), S = (0, s.Wu)([E.Z], () => Array.from(O).map(e => E.Z.getStreamForUser(e, _)).filter(C.lm).map(e => e.ownerId), [_, O]);
+  } = e, O = (0, w.ee)(() => W(o), [o]), [v, I] = o, T = I.length > 0 && null != n && null != a && (!d || f), S = (0, s.Wu)([E.Z], () => Array.from(O).map(e => E.Z.getStreamForUser(e, _)).filter(C.lm).map(e => e.ownerId), [_, O]);
   i.useEffect(() => {
-    T && (0, D.zi)(k.Odu.VOICE_V3, {
+    T && (0, w.zi)(k.Odu.VOICE_V3, {
       locked: A.default.isInstanceLocked(),
       shownUserIds: Array.from(O),
       liveUserIds: S,
       contentInventoryIds: []
     })
   }, [O, S, T]);
-  let N = () => d || !p ? null : (0, r.jsx)(w.E, {
+  let N = () => d || !p ? null : (0, r.jsx)(D.E, {
       emptyText: U.intl.string(U.t.hEh0l1),
       icon: l.gj8
     }),

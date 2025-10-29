@@ -59,9 +59,9 @@ function O(e) {
   }
   let P = A.name;
   (null == P || "" === P) && (P = t.length > 0 ? t.filter(m.lm).map(e => e.username).join(", ") : b.intl.string(b.t.LJpTRF));
-  let D = b.intl.string(b.t.XpeFYr),
-    w = "active";
-  N && (D = b.intl.string(b.t.cEnaWx), w = "secondary");
+  let w = b.intl.string(b.t.XpeFYr),
+    D = "active";
+  N && (w = b.intl.string(b.t.cEnaWx), D = "secondary");
   let L = b.intl.string(b.t["3p3/BK"]);
   return T && (L = b.intl.string(b.t.qmtuXE)), (0, r.jsxs)(f.Z, {
     children: [(0, r.jsx)(f.Z.Header, {
@@ -83,8 +83,8 @@ function O(e) {
         onClick: R,
         loading: S,
         disabled: N,
-        variant: w,
-        text: D,
+        variant: D,
+        text: w,
         fullWidth: true
       })]
     })]

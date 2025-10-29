@@ -50,11 +50,11 @@ function k(e) {
     giftRecipient: p,
     giftMessageError: g,
     isSendingMessage: y
-  } = e, [O, I] = i.useState(f.kO8.Modes.DEFAULT), S = (0, c.e7)([T.Z], () => T.Z.enabled), k = _ || null != l && null != p, U = (null == a ? true : a.productLine) === D.POd.COLLECTIBLES, G = (0, E.Z)(), {
+  } = e, [O, I] = i.useState(f.kO8.Modes.DEFAULT), S = (0, c.e7)([T.Z], () => T.Z.enabled), k = _ || null != l && null != p, U = (null == a ? true : a.productLine) === w.POd.COLLECTIBLES, G = (0, E.Z)(), {
     selectedGiftingPromotionReward: B
   } = (0, P.wD)(), Z = null == G ? true : G.giftPurchaseConfirmation, F = (0, b.tK)(null == B ? true : B.skuId), V = (0, b.a5)(s) && null != F && null != Z, H = () => null != s ? s.skuId : null != a ? a.id : null, Y = () => {
     let e;
-    return null != g ? L.intl.string(L.t.qB8aya) : null == s ? null : (e = s.interval === w.rV.MONTH ? k ? V ? Z.monthGiftText : L.t["4ZJ+7Z"] : L.t["P+z55d"] : k ? V ? Z.yearGiftText : L.t.p0pZXP : L.t.bXqk3o, L.intl.format(e, {
+    return null != g ? L.intl.string(L.t.qB8aya) : null == s ? null : (e = s.interval === D.rV.MONTH ? k ? V ? Z.monthGiftText : L.t["4ZJ+7Z"] : L.t["P+z55d"] : k ? V ? Z.yearGiftText : L.t.p0pZXP : L.t.bXqk3o, L.intl.format(e, {
       skuName: (0, N.aq)(s.id),
       intervalCount: s.intervalCount
     }))
@@ -174,7 +174,7 @@ let j = e => {
     isLoading: O.Z.isFetching()
   })), T = Array.from(b.keys()).sort((e, t) => O.Z.compare(e, t)), A = (0, c.e7)([I.Z], () => I.Z.getFriendIDs()), C = l().difference(A, T), N = [...T, ...C], P = (0, c.e7)([S.default], () => S.default.filter(e => N.includes(e.id) && !e.bot), [N]);
   if (null == P || 0 === P.length) return null;
-  let D = l().sortBy(P, e => N.indexOf(e.id));
+  let w = l().sortBy(P, e => N.indexOf(e.id));
   return (0, r.jsxs)("div", {
     className: x.giftRecipientSection,
     children: [(0, r.jsxs)("div", {
@@ -195,7 +195,7 @@ let j = e => {
         onChange: e => {
           o(e), d(false)
         },
-        options: D.map(e => ({
+        options: w.map(e => ({
           value: e,
           label: "".concat(R.ZP.getUserTag(e))
         }))

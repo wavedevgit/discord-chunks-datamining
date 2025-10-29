@@ -9,7 +9,7 @@ require.d(exports, {
   RD: () => v,
   Rb: () => u,
   Se: () => m,
-  Sy: () => w,
+  Sy: () => D,
   XE: () => f,
   YB: () => b,
   Yo: () => _,
@@ -18,7 +18,7 @@ require.d(exports, {
   dj: () => p,
   eV: () => R,
   hS: () => g,
-  hb: () => D,
+  hb: () => w,
   lj: () => T,
   mB: () => E,
   o4: () => c,
@@ -403,14 +403,14 @@ let P = (0, Chunk818083.B)({
   }]
 });
 
-function D(e) {
-  let t = w(e, false);
+function w(e) {
+  let t = D(e, false);
   if (i()(P.definition.defaultConfig, t)) return "control";
   let n = P.definition.treatments.find(e => i()(e.config, t));
   return null == n ? "control" : "treatment-".concat(n.id)
 }
 
-function w(e) {
+function D(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
   return P.getCurrentConfig({
     location: e
@@ -420,5 +420,5 @@ function w(e) {
 }
 
 function L() {
-  T("OVERLAY_INITIALIZED"), C("OVERLAY_INITIALIZED"), w("OVERLAY_INITIALIZED")
+  T("OVERLAY_INITIALIZED"), C("OVERLAY_INITIALIZED"), D("OVERLAY_INITIALIZED")
 }

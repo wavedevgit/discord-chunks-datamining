@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk506914 = require("./506914.js");
 let y = Chunk884338.u8.SIZE_24;
 
-function v(e) {
+function j(e) {
   var t, n;
   let {
     activity: i,
@@ -69,7 +69,7 @@ function v(e) {
   })) : _
 }
 
-function j(e) {
+function v(e) {
   let {
     activity: t,
     embeddedApp: n,
@@ -170,14 +170,14 @@ function S(e) {
     className: O.flexColumn,
     children: [(0, r.jsxs)("div", {
       className: O.flexRow,
-      children: [(0, r.jsx)(v, {
+      children: [(0, r.jsx)(j, {
         activity: t,
         user: l,
         embeddedApp: n,
         onOpenSpotifyAlbum: g
       }), (0, r.jsxs)("div", {
         className: O.detailsAndAvatarsContainer,
-        children: [(0, r.jsx)(j, {
+        children: [(0, r.jsx)(v, {
           activity: t,
           embeddedApp: n,
           onOpenSpotifyTrack: d

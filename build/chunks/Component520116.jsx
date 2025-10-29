@@ -106,7 +106,7 @@ function S(e) {
     location: "20e3b0_1"
   }, {
     autoTrackExposure: false
-  }), O = g.jU.useSetting(), C = (0, p.P1)(l), S = false, I = 0 === i.messages.length || o()(i.messages[0].timestamp).isSame(o()(), "day"), P = null != (n = null == (t = b.default.getUser(m.default.getId())) ? true : t.hasFlag(v.xW$.SPAMMER)) && n, N = [];
+  }), O = g.jU.useSetting(), C = (0, p.P1)(l), S = false, I = 0 === i.messages.length || o()(i.messages[0].timestamp).isSame(o()(), "day"), P = null != (n = null == (t = b.default.getUser(m.default.getId())) ? true : t.hasFlag(j.xW$.SPAMMER)) && n, N = [];
   if (!i.collapsed) {
     let e = null,
       t = null,
@@ -132,7 +132,7 @@ function S(e) {
       color: s.zx.Colors.LINK,
       look: s.zx.Looks.LINK,
       onClick: e => a(e, n[n.length - 1].id),
-      children: [j.intl.string(j.t["9OB9hq"]), " ›"]
+      children: [v.intl.string(v.t["9OB9hq"]), " ›"]
     }, "view-all")), 0 === N.length && (N = [(0, r.jsx)(c.$jN, {}, "spinner")])
   }
   return S && C && u.Z.trackExposure({

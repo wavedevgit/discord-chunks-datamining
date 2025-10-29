@@ -35,9 +35,9 @@ var Chunk580983 = require("./580983.js"),
     N = O && I.sticky,
     R = r(o, I),
     P = I.source,
-    D = 0,
-    w = S;
-  if (N && (false === g(R = E(R, "y", ""), "g") && (R += "g"), w = b(S, I.lastIndex), I.lastIndex > 0 && (!I.multiline || I.multiline && "\n" !== m(S, I.lastIndex - 1)) && (P = "(?: " + P + ")", w = " " + w, D++), n = RegExp("^(?:" + P + ")", R)), v && (n = RegExp("^" + P + "$(?!\\s)", R)), y && (i = I.lastIndex), s = r(p, N ? n : I, w), N ? s ? (s.input = b(s.input, D), s[0] = b(s[0], D), s.index = I.lastIndex, I.lastIndex += s[0].length) : I.lastIndex = 0 : y && s && (I.lastIndex = I.global ? s.index + s[0].length : i), v && s && s.length > 1 && r(_, s[0], n, function() {
+    w = 0,
+    D = S;
+  if (N && (false === g(R = E(R, "y", ""), "g") && (R += "g"), D = b(S, I.lastIndex), I.lastIndex > 0 && (!I.multiline || I.multiline && "\n" !== m(S, I.lastIndex - 1)) && (P = "(?: " + P + ")", D = " " + D, w++), n = RegExp("^(?:" + P + ")", R)), v && (n = RegExp("^" + P + "$(?!\\s)", R)), y && (i = I.lastIndex), s = r(p, N ? n : I, D), N ? s ? (s.input = b(s.input, w), s[0] = b(s[0], w), s.index = I.lastIndex, I.lastIndex += s[0].length) : I.lastIndex = 0 : y && s && (I.lastIndex = I.global ? s.index + s[0].length : i), v && s && s.length > 1 && r(_, s[0], n, function() {
       for (l = 1; l < arguments.length - 2; l++) true === arguments[l] && (s[l] = true)
     }), s && C)
     for (l = 0, s.groups = d = c(null); l < C.length; l++) d[(f = C[l])[0]] = s[f[1]];

@@ -75,8 +75,8 @@ function E(e) {
     className: N,
     focusedClassName: R,
     subMenuIconClassName: P,
-    dontCloseOnActionIfHoldingShiftKey: D,
-    dontCloseOnAction: w,
+    dontCloseOnActionIfHoldingShiftKey: w,
+    dontCloseOnAction: D,
     iconProps: L
   } = e, {
     onSelect: x,
@@ -86,8 +86,8 @@ function E(e) {
     if (null == M || M({
         type: c.U.DEFAULT
       }), null == S) returnfalse;
-    e.shiftKey && D || w || A(), e.persist(), null == x || x(), (null != (t = e.nativeEvent.view) ? t : window).requestAnimationFrame(() => S(e))
-  }, [S, A, x, D, w, M]);
+    e.shiftKey && w || D || A(), e.persist(), null == x || x(), (null != (t = e.nativeEvent.view) ? t : window).requestAnimationFrame(() => S(e))
+  }, [S, A, x, w, D, M]);
   return i.useEffect(() => {
     I && ((0, u.F)(k), null == C || C())
   }, [I, C]), (0, r.jsxs)(s.P3F, g(h({

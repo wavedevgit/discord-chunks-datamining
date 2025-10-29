@@ -69,7 +69,7 @@ function T(e) {
     forceShowButtons: l,
     hasChannelInfo: o = false
   } = e;
-  return (0, s.e7)([v.Z, j.Z], () => n || j.Z.getGuildId() === C.I_8 || !v.Z.can(C.Plq.MANAGE_CHANNELS, t) && !v.Z.can(C.Plq.MANAGE_ROLES, t) && !v.Z.can(C.Plq.MANAGE_WEBHOOKS, t) || (0, _.r8)(t.type) && !v.Z.can(C.Plq.VIEW_CHANNEL, t) || t.isGuildVocal() && !v.Z.can(C.Plq.CONNECT, t) || !_.dF.has(t.type) || t.isModeratorReportChannel()) ? null : (0, i.jsx)(c.u, {
+  return (0, s.e7)([j.Z, v.Z], () => n || v.Z.getGuildId() === C.I_8 || !j.Z.can(C.Plq.MANAGE_CHANNELS, t) && !j.Z.can(C.Plq.MANAGE_ROLES, t) && !j.Z.can(C.Plq.MANAGE_WEBHOOKS, t) || (0, _.r8)(t.type) && !j.Z.can(C.Plq.VIEW_CHANNEL, t) || t.isGuildVocal() && !j.Z.can(C.Plq.CONNECT, t) || !_.dF.has(t.type) || t.isModeratorReportChannel()) ? null : (0, i.jsx)(c.u, {
     asContainer: true,
     text: E.intl.string(E.t["3gUsJb"]),
     children: (0, i.jsx)(u.P3F, {
@@ -96,11 +96,11 @@ function w(e) {
     tabIndex: d,
     forceShowButtons: g,
     hasChannelInfo: _ = false
-  } = e, j = (0, f._k)({
+  } = e, v = (0, f._k)({
     location: "channel_base"
-  }), x = (0, s.e7)([y.Z], () => y.Z.getGuild(t.getGuildId())), I = (0, s.e7)([m.Z], () => m.Z.getStageInstanceByChannel(t.id), [t.id]), N = (0, s.e7)([p.ZP], () => p.ZP.getActiveEventByChannel(t.id), [t.id]), Z = (0, s.e7)([v.Z], () => (0, h.b)(v.Z, x, t, I)), T = (0, s.e7)([v.Z], () => (null == t ? true : t.type) === C.d4z.GUILD_VOICE && j.isVoiceChannelEntrypointEnabled ? E.intl.string(E.t["EE+P0H"]) : j.isTextChannelEntrypointEnabled ? E.intl.string(E.t["0jeAXt"]) : v.Z.can(C.Plq.CREATE_INSTANT_INVITE, t) ? E.intl.string(E.t.zJrgTG) : E.intl.string(E.t.Sd8Ixw)), w = l.useRef(null);
+  }), x = (0, s.e7)([y.Z], () => y.Z.getGuild(t.getGuildId())), I = (0, s.e7)([m.Z], () => m.Z.getStageInstanceByChannel(t.id), [t.id]), N = (0, s.e7)([p.ZP], () => p.ZP.getActiveEventByChannel(t.id), [t.id]), Z = (0, s.e7)([j.Z], () => (0, h.b)(j.Z, x, t, I)), T = (0, s.e7)([j.Z], () => (null == t ? true : t.type) === C.d4z.GUILD_VOICE && v.isVoiceChannelEntrypointEnabled ? E.intl.string(E.t["EE+P0H"]) : v.isTextChannelEntrypointEnabled ? E.intl.string(E.t["0jeAXt"]) : j.Z.can(C.Plq.CREATE_INSTANT_INVITE, t) ? E.intl.string(E.t.zJrgTG) : E.intl.string(E.t.Sd8Ixw)), w = l.useRef(null);
   if (o || !Z || t.isModeratorReportChannel()) return null;
-  let A = [j.isVoiceChannelEntrypointEnabled, j.isTextChannelEntrypointEnabled].some(Boolean) ? u.oLu : u.ejJ,
+  let A = [v.isVoiceChannelEntrypointEnabled, v.isTextChannelEntrypointEnabled].some(Boolean) ? u.oLu : u.ejJ,
     R = (0, i.jsx)(A, {
       size: "xs",
       className: S.actionIcon,

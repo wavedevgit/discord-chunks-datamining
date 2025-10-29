@@ -9,7 +9,6 @@ module.exports = {
   inviteRowAvatar: "inviteRowAvatar__67dba",
   inviteRowInfo: "inviteRowInfo__67dba",
   inviteRowName: "inviteRowName__67dba",
-  inviteRowButton: "inviteRowButton__67dba",
   inviteRowEmptyState: "inviteRowEmptyState__67dba",
   warningContainer: "warningContainer__67dba",
   warningIcon: "warningIcon__67dba",

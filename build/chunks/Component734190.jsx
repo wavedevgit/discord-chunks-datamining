@@ -160,7 +160,7 @@ let k = Chunk647438.memo(function(e) {
     isSelectedVoice: u,
     isLast: g,
     withGuildIcon: A
-  } = e, k = (0, s.e7)([j.ZP], () => j.ZP.getVoiceStatesForChannel(t), [t]), G = (0, s.e7)([v.Z], () => v.Z.hasVideo(t.id)), {
+  } = e, k = (0, s.e7)([v.ZP], () => v.ZP.getVoiceStatesForChannel(t), [t]), G = (0, s.e7)([j.Z], () => j.Z.hasVideo(t.id)), {
     unread: U,
     mentionCount: B,
     isMentionLowImportance: F

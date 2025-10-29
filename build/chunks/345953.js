@@ -125,7 +125,7 @@ function P() {
   }, Chunk675478.fy.AUTOMATED)
 }
 
-function D(e, t, n, r) {
+function w(e, t, n, r) {
   var i;
   let a = !(arguments.length > 4) || true === arguments[4] || arguments[4],
     o = (0, m.z)(n);
@@ -134,7 +134,7 @@ function D(e, t, n, r) {
   return s[t] = null != (i = s[t]) ? i : R(n), r(s[t]), s[t].modifiedAt = String(Date.now()), a && C(s, t, n), N(s), true
 }
 
-function w() {
+function D() {
   P()
 }
 let L = i().debounce(() => {
@@ -166,7 +166,7 @@ function U() {
   Chunk675478.hW.updateAsync("audioContextSettings", e => {
     let t = false;
     return (0, h.$E)((n, r, i) => {
-      let a = D(e, r, n, e => {
+      let a = w(e, r, n, e => {
         Object.assign(e, i)
       });
       t = t || a
@@ -213,7 +213,7 @@ function F(e) {
 class V extends Chunk147913.Z {
   constructor(...e) {
     super(...e), b(this, "actions", {
-      POST_CONNECTION_OPEN: w,
+      POST_CONNECTION_OPEN: D,
       AUDIO_SET_LOCAL_VOLUME: G,
       AUDIO_TOGGLE_LOCAL_MUTE: B,
       AUDIO_TOGGLE_LOCAL_SOUNDBOARD_MUTE: Z,

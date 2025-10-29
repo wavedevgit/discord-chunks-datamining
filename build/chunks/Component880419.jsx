@@ -26,8 +26,8 @@ function b(e) {
     compact: _,
     iconSize: O,
     size: y,
-    grow: v,
-    className: j,
+    grow: j,
+    className: v,
     onError: x
   } = e, {
     onActivate: C,
@@ -67,9 +67,9 @@ function b(e) {
     "aria-label": null != T ? T : N ? g.intl.string(h.default.TZsu1U) : true,
     children: (0, r.jsx)("div", {
       className: o()(m.secondaryButton, {
-        [m.buttonWrapper]: v,
-        [m.noGrow]: !v
-      }, j),
+        [m.buttonWrapper]: j,
+        [m.noGrow]: !j
+      }, v),
       children: (() => {
         let {
           text: e,
@@ -127,7 +127,7 @@ function b(e) {
           disabled: Z,
           onClick: N ? I : C,
           loading: E,
-          fullWidth: v,
+          fullWidth: j,
           size: null != y ? y : _ ? "md" : true,
           text: e,
           minWidth: 0

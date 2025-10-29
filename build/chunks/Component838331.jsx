@@ -113,8 +113,8 @@ function S(e) {
     emptyStateText: N,
     emptyStateHeader: R,
     onQueryChange: P
-  } = e, [D, w] = i.useState(""), L = i.useCallback(e => {
-    w(e), null == P || P(e)
+  } = e, [w, D] = i.useState(""), L = i.useCallback(e => {
+    D(e), null == P || P(e)
   }, [P]), [x] = i.useState(true), [M, k] = i.useState(null), j = i.useId(), U = i.useRef(null);
   i.useLayoutEffect(() => {
     let e = document.querySelector("[".concat(b, '="').concat(M, '"]')),
@@ -124,7 +124,7 @@ function S(e) {
       padding: 12
     })
   }, [M]);
-  let G = n(D),
+  let G = n(w),
     B = 0 === G.length,
     Z = null != R ? R : d.intl.string(d.t["4o4z3e"]),
     F = i.useId(),
@@ -181,7 +181,7 @@ function S(e) {
               size: "sm",
               autoFocus: S,
               placeholder: t,
-              query: D,
+              query: w,
               onChange: L,
               onKeyDown: i,
               onBlur: () => k(null),

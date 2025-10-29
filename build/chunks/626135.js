@@ -101,8 +101,8 @@ let C = {
   N = Chunk647438.createContext(C),
   R = {},
   P = 1e4,
-  D = 6e4,
-  w = 12e4,
+  w = 6e4,
+  D = 12e4,
   L = 3e5,
   x = 9e5,
   M = 36e5,
@@ -124,7 +124,7 @@ let F = {
     throttleKeys: () => []
   },
   [Chunk981631.rMx.APP_BACKGROUND]: {
-    throttlePeriod: w,
+    throttlePeriod: D,
     throttleKeys: () => []
   },
   [Chunk981631.rMx.ACK_MESSAGES]: e => e.location_object_type === g.AnalyticsObjectTypes.ACK_MANUAL ? true : {
@@ -156,7 +156,7 @@ let F = {
     throttleKeys: e => [e.server]
   },
   [Chunk981631.rMx.ACTIVITY_UPDATED]: {
-    throttlePeriod: D,
+    throttlePeriod: w,
     throttleKeys: e => [e.application_id],
     deduplicate: true
   },
@@ -185,7 +185,7 @@ let F = {
     throttleKeys: () => []
   },
   [Chunk981631.rMx.KEYBOARD_SHORTCUT_USED]: {
-    throttlePeriod: w,
+    throttlePeriod: D,
     throttleKeys: e => {
       var t;
       return [e.shortcut_name, e.location_object, ...null != (t = e.source_class_list) ? t : []]
@@ -200,7 +200,7 @@ let F = {
     throttleKeys: e => [e.type]
   },
   [Chunk981631.rMx.ROLE_PAGE_VIEWED]: {
-    throttlePeriod: w,
+    throttlePeriod: D,
     throttleKeys: e => [e.role_id, e.tab_opened]
   },
   [Chunk981631.rMx.VIDEO_INPUT_INITIALIZED]: {
@@ -242,11 +242,11 @@ let F = {
     throttleKeys: e => [e.banner_type, e.channel_id]
   },
   [Chunk981631.rMx.PREMIUM_UPSELL_VIEWED]: {
-    throttlePeriod: D,
+    throttlePeriod: w,
     throttleKeys: e => [e.type]
   },
   [Chunk981631.rMx.FORUM_CHANNEL_SEARCHED]: {
-    throttlePeriod: D,
+    throttlePeriod: w,
     throttleKeys: e => [e.guild_id, e.channel_id]
   },
   [Chunk981631.rMx.FORUM_CHANNEL_SCROLLED]: {
@@ -254,11 +254,11 @@ let F = {
     throttleKeys: e => [e.guild_id, e.channel_id]
   },
   [Chunk981631.rMx.VOICE_CHANNEL_GAME_ACTIVITY_INDICATOR_VIEWED]: {
-    throttlePeriod: D,
+    throttlePeriod: w,
     throttleKeys: e => [e.user_id]
   },
   [Chunk981631.rMx.MEDIA_VIEWER_SESSION_COMPLETED]: {
-    throttlePeriod: D,
+    throttlePeriod: w,
     throttleKeys: () => []
   },
   [Chunk981631.rMx.SUMMARIES_UNREAD_BAR_VIEWED]: {
@@ -286,7 +286,7 @@ let F = {
     throttleKeys: e => [e.guild_id]
   },
   [Chunk981631.rMx.EXPLICIT_MEDIA_REDACTABLE_MESSAGES_LOADED]: {
-    throttlePeriod: D,
+    throttlePeriod: w,
     throttleKeys: e => [e.guild_id, e.channel_id]
   },
   [Chunk981631.rMx.LIVE_ACTIVITY_SETTINGS_UPDATED]: {
@@ -328,7 +328,7 @@ let F = {
     throttleKeys: e => [e.channel_id, e.message_id]
   },
   [Chunk981631.rMx.OPEN_MODAL]: e => e.type === g.jXE.MEDIA_VIEWER ? {
-    throttlePeriod: D,
+    throttlePeriod: w,
     throttleKeys: e => [e.type]
   } : true,
   [Chunk981631.rMx.MODERATOR_QUEUE_ACTION]: {

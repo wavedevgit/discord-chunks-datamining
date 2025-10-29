@@ -2,7 +2,7 @@
 /** chunk id: 768604, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  I: () => b
+  I: () => y
 }), require("./290780.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -14,13 +14,14 @@ var Chunk524437 = require("./524437.js"),
   Chunk294602 = require("./294602.js"),
   Chunk915009 = require("./915009.js"),
   Chunk880257 = require("./880257.js"),
+  Chunk312870 = require("./312870.js"),
   Chunk400313 = require("./400313.jsx"),
   Chunk947707 = require("./947707.jsx"),
   Chunk726985 = require("./726985.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk602698 = require("./602698.js");
 
-function g(e, t, n) {
+function E(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -29,80 +30,81 @@ function g(e, t, n) {
   }) : e[t] = n, e
 }
 
-function E(e) {
+function b(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      g(e, t, n[t])
+      E(e, t, n[t])
     })
   }
   return e
 }
 
-function b() {
+function y() {
   var e;
   let t = null == (e = (0, Chunk880257.Z)()) || module,
     n = (0, Chunk915009.LN)(),
+    E = (0, Chunk312870.s)("gore_media_redaction_settings_web"),
     {
-      goreContentGuilds: g,
-      goreContentFriendDm: b,
-      goreContentNonFriendDm: y
+      goreContentGuilds: y,
+      goreContentFriendDm: O,
+      goreContentNonFriendDm: v
     } = (0, Chunk294602.K)(),
-    O = e => {
+    I = e => {
       let t = Object.values(e);
       if ((0, s.Ks)() && t.includes(i.Q4.SHOW)) return void a.Z.showAgeVerificationGetStartedModal({
         entryPoint: o.cU.SENSITIVE_MEDIA_FILTER_SETTINGS
       });
       (0, l.Jr)(e)
     },
-    v = [{
+    T = [{
       value: Chunk524437.Q4.BLUR,
       label: Chunk388032.intl.string(Chunk388032.t.S49Uad)
     }, {
       value: Chunk524437.Q4.BLOCK,
       label: Chunk388032.intl.string(Chunk388032.t["D/157Y"])
     }],
-    I = [{
+    S = [{
       value: Chunk524437.Q4.BLUR,
       label: Chunk388032.intl.string(Chunk388032.t.S49Uad)
     }],
-    T = {
+    A = {
       value: Chunk524437.Q4.SHOW,
       label: Chunk388032.intl.string(Chunk388032.t["5k5OFp"])
     };
-  exports && (v.unshift(T), I.unshift(T));
-  let S = {
-    isDisabled: require,
+  exports && (T.unshift(A), S.unshift(A));
+  let C = {
+    isDisabled: require || E,
     tooltipText: require ? Chunk388032.intl.string(Chunk602698.default["6Af/cw"]) : true
   };
   return (0, Chunk951288.jsxs)(Chunk400313.n, {
     setting: Chunk726985.s6.GORE_MEDIA_REDACTION,
     description: Chunk388032.intl.string(Chunk388032.t.XgH9eh),
-    children: [(0, Chunk951288.jsx)(Chunk947707.Z, E({
+    children: [(0, Chunk951288.jsx)(Chunk947707.Z, b({
       title: Chunk388032.intl.string(Chunk388032.t["+uI23H"]),
-      value: b,
-      onChange: e => O({
+      value: O,
+      onChange: e => I({
         goreContentFriendDm: e
       }),
-      options: v
-    }, S)), (0, Chunk951288.jsx)(Chunk947707.Z, E({
+      options: T
+    }, C)), (0, Chunk951288.jsx)(Chunk947707.Z, b({
       title: Chunk388032.intl.string(Chunk388032.t["Yh+HX1"]),
-      value: y,
-      onChange: e => O({
+      value: v,
+      onChange: e => I({
         goreContentNonFriendDm: e
       }),
-      options: v
-    }, S)), (0, Chunk951288.jsx)(Chunk947707.Z, {
+      options: T
+    }, C)), (0, Chunk951288.jsx)(Chunk947707.Z, {
       title: Chunk388032.intl.string(Chunk388032.t["FP+a42"]),
-      value: g,
-      onChange: e => O({
+      value: y,
+      onChange: e => I({
         goreContentGuilds: e
       }),
       isDisabled: !exports || require,
-      options: I,
+      options: S,
       tooltipText: require ? Chunk388032.intl.string(Chunk602698.default["6Af/cw"]) : true
     })]
   })

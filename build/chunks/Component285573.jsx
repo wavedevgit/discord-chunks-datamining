@@ -26,8 +26,8 @@ let _ = (0, Chunk146773.B)(function(e) {
     disableManageChannels: _,
     sorting: O,
     sortingType: y,
-    sortingPosition: v,
-    connectChannelDragSource: j,
+    sortingPosition: j,
+    connectChannelDragSource: v,
     connectChannelDropTarget: x,
     tabIndex: C
   } = e, E = (0, a.e7)([u.Z, d.ZP], () => {
@@ -73,7 +73,7 @@ let _ = (0, Chunk146773.B)(function(e) {
     })
   }, [E]);
   if (null == E) return null;
-  let Z = (0, f.jo)(c, v),
+  let Z = (0, f.jo)(c, j),
     T = (0, f.CN)(E, O, y),
     w = (0, r.jsx)("div", {
       className: o()(Z, {
@@ -99,5 +99,5 @@ let _ = (0, Chunk146773.B)(function(e) {
         })]
       })
     });
-  return P && (w = x(j(w))), w
+  return P && (w = x(v(w))), w
 })

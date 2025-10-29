@@ -45,7 +45,7 @@ function N(e) {
     isNewChannel: L,
     muted: M,
     resolvedUnreadSetting: k
-  } = e, G = (0, i.e7)([m.ZP], () => m.ZP.getMentionCount(n.id)), U = (0, i.e7)([m.ZP], () => m.ZP.getIsMentionLowImportance(n.id)), B = (0, a.ZP)(n), F = (0, i.e7)([g.Z], () => !g.Z.can(E.Plq.CONNECT, n)), V = (0, s.P)(n), H = (0, i.e7)([b.Z], () => b.Z.hasVideo(n.id)), z = (0, p.PK)(n.id) && n.isGuildStageVoice(), W = (0, v.ZP)({
+  } = e, G = (0, i.e7)([m.ZP], () => m.ZP.getMentionCount(n.id)), U = (0, i.e7)([m.ZP], () => m.ZP.getIsMentionLowImportance(n.id)), B = (0, a.ZP)(n), F = (0, i.e7)([g.Z], () => !g.Z.can(E.Plq.CONNECT, n)), V = (0, s.P)(n), H = (0, i.e7)([b.Z], () => b.Z.hasVideo(n.id)), z = (0, p.PK)(n.id) && n.isGuildStageVoice(), W = (0, j.ZP)({
     channel: n,
     locked: F,
     video: (H || z) && null == V,
@@ -91,7 +91,7 @@ function N(e) {
     entry: {
       start: V
     }
-  }) : null != A && A && (0, O.u)(B) ? (0, r.jsx)(j.Z, {
+  }) : null != A && A && (0, O.u)(B) ? (0, r.jsx)(v.Z, {
     embeddedApps: B,
     muted: M
   }) : null

@@ -71,7 +71,7 @@ async function P() {
   Chunk579806.Z.fileManager.showItemInFolder(module)
 }
 
-function D() {
+function w() {
   let e = Chunk388032.intl.string(Chunk388032.t["fKBB8+"]),
     t = Chunk388032.intl.string(Chunk388032.t.BvyxE7);
   (0, Chunk481060.h7j)(n => (0, r.jsx)(s.ConfirmModal, R(C({
@@ -86,7 +86,7 @@ function D() {
   })))
 }
 
-function w(e) {
+function D(e) {
   var t;
   let n = T.intl.string(T.t.QZg0J7),
     i = null != e ? e : T.intl.string(T.t.VzHcSm),
@@ -152,9 +152,9 @@ function x() {
         message: {
           message: "User Live Dump"
         }
-      }), await (0, Chunk729345.E)(Chunk981631.GU0.RTC), D()
+      }), await (0, Chunk729345.E)(Chunk981631.GU0.RTC), w()
     } catch (e) {
-      w(module.displayMessage)
+      D(module.displayMessage)
     }
   }
   return (0, Chunk951288.jsxs)(Chunk951288.Fragment, {

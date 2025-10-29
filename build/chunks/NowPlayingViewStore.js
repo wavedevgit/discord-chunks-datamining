@@ -138,7 +138,7 @@ function es(e) {
 
 function el(e) {
   let t = k.Z.getVoiceStateForUser(e);
-  return (null == t ? true : t.channelId) != null && w.Z.canWithPartialContext(U.Plq.VIEW_CHANNEL, {
+  return (null == t ? true : t.channelId) != null && D.Z.canWithPartialContext(U.Plq.VIEW_CHANNEL, {
     channelId: t.channelId
   }) ? t.channelId : null
 }
@@ -198,8 +198,8 @@ function ef(e, t, n) {
           isActivitiesEnabledForCurrentPlatform: t,
           ChannelStore: N.Z,
           VoiceStateStore: k.Z,
-          PermissionStore: w.Z,
-          GuildStore: D.Z
+          PermissionStore: D.Z,
+          GuildStore: w.Z
         }) !== c.Fw.CAN_JOIN) continue
     }
     if (!y.JE(r) || null == d || m.has(d.id)) continue;
@@ -229,7 +229,7 @@ function ef(e, t, n) {
     let t = el(e.id),
       n = N.Z.getChannel(t),
       i = null != n ? n.getGuildId() : null,
-      o = D.Z.getGuild(i);
+      o = w.Z.getGuild(i);
     if (Z.has(i) && B.has(t) || null == n || null == o || n.id === o.afkChannelId) null == n && (r = null, U = true);
     else {
       let e = k.Z.getVoiceStatesForChannel(n.id),

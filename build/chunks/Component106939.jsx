@@ -64,28 +64,28 @@ function k(e) {
     handleItemSelect: n
   } = e, i = (0, O.gU)(), a = (0, y.Z)();
   return t === N.dG.CONTENT_AND_SOCIAL || t === N.dG.DATA_AND_PRIVACY ? null : (0, r.jsxs)(c.njP, {
-    className: w.settingsTabBar,
-    "aria-label": D.intl.string(P.default.RZqaJn),
+    className: D.settingsTabBar,
+    "aria-label": w.intl.string(P.default.RZqaJn),
     selectedItem: t,
     type: "top",
     look: "brand",
     onItemSelect: n,
     children: [(0, r.jsx)(c.njP.Item, {
-      className: w.settingsTabBarItem,
+      className: D.settingsTabBarItem,
       id: N.dG.ACTIVITY,
-      children: D.intl.string(P.default.bdBmqy)
+      children: w.intl.string(P.default.bdBmqy)
     }), (0, r.jsxs)(c.njP.Item, {
-      className: w.settingsTabBarItem,
+      className: D.settingsTabBarItem,
       id: N.dG.REQUESTS,
-      "aria-label": D.intl.string(P.default["gVWG+6"]),
-      children: [D.intl.string(P.default["gVWG+6"]), i > 0 ? (0, r.jsx)(c.mAB, {
-        className: w.badge,
+      "aria-label": w.intl.string(P.default["gVWG+6"]),
+      children: [w.intl.string(P.default["gVWG+6"]), i > 0 ? (0, r.jsx)(c.mAB, {
+        className: D.badge,
         count: i
       }) : null]
     }), a ? (0, r.jsx)(c.njP.Item, {
-      className: w.settingsTabBarItem,
+      className: D.settingsTabBarItem,
       id: N.dG.SETTINGS,
-      children: D.intl.string(D.t["3D5yo/"])
+      children: w.intl.string(w.t["3D5yo/"])
     }) : null]
   })
 }
@@ -99,7 +99,7 @@ function j(e) {
   return (0, r.jsx)(c.f6W, {
     theme: t,
     children: e => (0, r.jsxs)(h.Z, {
-      className: o()(e, w.sidebarTabBar),
+      className: o()(e, D.sidebarTabBar),
       scrollable: s.tq,
       role: "navigation",
       "aria-labelledby": a,
@@ -109,22 +109,22 @@ function j(e) {
         "aria-hidden": true
       }), (0, r.jsx)(h.Z.Title, {
         id: a,
-        children: D.intl.string(P.default.RZqaJn)
+        children: w.intl.string(P.default.RZqaJn)
       }), (0, r.jsx)(h.Z.Divider, {}), (0, r.jsxs)(c.njP, {
-        "aria-label": D.intl.string(P.default.RZqaJn),
+        "aria-label": w.intl.string(P.default.RZqaJn),
         selectedItem: n,
         type: "top-pill",
         onItemSelect: i,
         children: [(0, r.jsx)(c.njP.Item, {
           id: N.dG.ACTIVITY,
-          className: w.item,
-          children: D.intl.string(P.default.bdBmqy)
+          className: D.item,
+          children: w.intl.string(P.default.bdBmqy)
         }), (0, r.jsxs)(c.njP.Item, {
           id: N.dG.REQUESTS,
-          className: w.item,
-          "aria-label": D.intl.string(P.default["gVWG+6"]),
-          children: [D.intl.string(P.default["gVWG+6"]), l > 0 ? (0, r.jsx)(c.mAB, {
-            className: w.badge,
+          className: D.item,
+          "aria-label": w.intl.string(P.default["gVWG+6"]),
+          children: [w.intl.string(P.default["gVWG+6"]), l > 0 ? (0, r.jsx)(c.mAB, {
+            className: D.badge,
             count: l
           }) : null]
         })]

@@ -34,7 +34,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk80568 = require("./80568.js");
 
-function w(e, t, n) {
+function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -50,7 +50,7 @@ function L(e) {
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      w(e, t, n[t])
+      D(e, t, n[t])
     })
   }
   return e
@@ -116,7 +116,7 @@ function G(e) {
   } = e, s = a - 1;
   return (0, r.jsxs)(l.xvT, {
     variant: t,
-    className: o()(n, D.activityCounter),
+    className: o()(n, w.activityCounter),
     color: i ? "status-positive" : "none",
     children: ["+", s]
   })
@@ -129,7 +129,7 @@ function B(e) {
   } = e;
   return (0, r.jsx)(l.xvT, {
     variant: t,
-    className: o()(D.dot, n),
+    className: o()(w.dot, n),
     children: N.l
   })
 }
@@ -146,7 +146,7 @@ function Z(e) {
     animateEmoji: O = true,
     hasQuest: v = false,
     hideEmoji: P = false,
-    hideTooltip: w = false
+    hideTooltip: D = false
   } = e;
   (0, _.Z)(null == t ? true : t.id);
   let x = (null == a ? true : a.discoverable) !== false ? a : null,
@@ -193,7 +193,7 @@ function Z(e) {
   if (K) return null;
   let et = function() {
       let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
-        t = true === e || w;
+        t = true === e || D;
       if (null != x) return (0, r.jsx)(T.Z, {
         stream: x,
         game: Y,
@@ -252,31 +252,31 @@ function Z(e) {
       hasCustomStatusText: z,
       totalActivityCount: Q
     }),
-    ei = () => 0 === Q ? null : J && !W ? w ? (0, r.jsxs)("div", {
-      className: o()(D.activityContainer, $ && D.iconOnly),
+    ei = () => 0 === Q ? null : J && !W ? D ? (0, r.jsxs)("div", {
+      className: o()(w.activityContainer, $ && w.iconOnly),
       children: [et(), er()]
     }) : (0, r.jsx)(u.aML, {
       "data-migration-pending": true,
-      tooltipContentClassName: o()(D.container, D.activitiesTooltip, D.hasMultipleActivities),
+      tooltipContentClassName: o()(w.container, w.activitiesTooltip, w.hasMultipleActivities),
       delay: N.X,
       text: en(),
       "aria-label": ee,
       children: e => (0, r.jsxs)("div", M(L({
-        className: o()(D.activityContainer, $ && D.iconOnly)
+        className: o()(w.activityContainer, $ && w.iconOnly)
       }, e), {
         children: [et(true), er()]
       }))
     }) : et(),
-    ea = o()(D.container, {
-      [D.textXs]: "xs" === h,
-      [D.textSm]: "sm" === h
+    ea = o()(w.container, {
+      [w.textXs]: "xs" === h,
+      [w.textSm]: "sm" === h
     }),
     eo = () => null == Z && null == V ? null : (0, r.jsx)(S.Z, {
       customStatusActivity: Z,
       textSize: h,
       animateEmoji: O,
       hideEmoji: P,
-      hideTooltip: w,
+      hideTooltip: D,
       textClassName: d,
       iconClassName: p,
       tooltipClassName: ea,

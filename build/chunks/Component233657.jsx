@@ -60,8 +60,8 @@ function _(e) {
   } = (0, i.cj)([u.ZP], () => ({
     hasUnread: u.ZP.hasUnread(t.id, f.W.GUILD_EVENT),
     mentionCount: u.ZP.getMentionCount(t.id, f.W.GUILD_EVENT)
-  }), [t.id]), v = (0, i.e7)([d.ZP], () => d.ZP.isMuteScheduledEventsEnabled(t.id));
-  async function j() {
+  }), [t.id]), j = (0, i.e7)([d.ZP], () => d.ZP.isMuteScheduledEventsEnabled(t.id));
+  async function v() {
     await (0, o.ZDy)(async () => {
       let {
         default: e
@@ -84,7 +84,7 @@ function _(e) {
     }),
     text: C,
     selected: _,
-    onClick: j,
+    onClick: v,
     onContextMenu: e => {
       (0, a.jW)(e, async () => {
         let {
@@ -95,8 +95,8 @@ function _(e) {
         }))
       })
     },
-    showUnread: O && !v,
-    trailing: !v && y > 0 ? (0, r.jsx)(o.mAB, {
+    showUnread: O && !j,
+    trailing: !j && y > 0 ? (0, r.jsx)(o.mAB, {
       className: g.numberBadge,
       disableColor: true,
       count: y

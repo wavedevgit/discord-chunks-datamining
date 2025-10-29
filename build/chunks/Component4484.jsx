@@ -177,8 +177,8 @@ let k = Chunk647438.forwardRef(function(e, t) {
   }, [k.id, eN, $, eR, ei]);
   (0, S.Z)(t, eN, k, eP), (0, N.Z)(eN, ey, W);
   let {
-    handleKeyDown: eD,
-    handleKeyUp: ew
+    handleKeyDown: ew,
+    handleKeyUp: eD
   } = (0, A.Z)({
     editor: eN,
     channel: k,
@@ -218,10 +218,10 @@ let k = Chunk647438.forwardRef(function(e, t) {
       currentAutocompleteType: eu
     })], [eN, k, ec, eu]),
     eU = i.useCallback(e => {
-      let t = (0, D.Z)(eN, e, k.id);
+      let t = (0, w.Z)(eN, e, k.id);
       return null == t && (t = (0, L.Z)(eN, e)), t
     }, [k.id, eN]),
-    eG = i.useCallback(e => (0, w.Z)(e), []);
+    eG = i.useCallback(e => (0, D.Z)(e), []);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.d9, {
       event: x.CkL.GLOBAL_CLIPBOARD_PASTE,
@@ -245,8 +245,8 @@ let k = Chunk647438.forwardRef(function(e, t) {
         onBlur: z,
         onClick: eM,
         onPaste: eL,
-        onKeyDown: eD,
-        onKeyUp: ew,
+        onKeyDown: ew,
+        onKeyUp: eD,
         decorate: ej,
         renderExtraElement: eU,
         renderExtraLeaf: eG,

@@ -4,7 +4,7 @@
 require.d(exports, {
   AH: () => U,
   Ag: () => z,
-  CS: () => D,
+  CS: () => w,
   EW: () => W,
   MG: () => et,
   OR: () => K,
@@ -15,7 +15,7 @@ require.d(exports, {
   eT: () => H,
   gU: () => ee,
   gl: () => Z,
-  is: () => w,
+  is: () => D,
   it: () => L,
   lL: () => $,
   lx: () => X,
@@ -90,7 +90,7 @@ function R(e, t) {
   }), e
 }
 let P = 5;
-async function D(e) {
+async function w(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
   try {
     let n = (await i.tn.post({
@@ -133,7 +133,7 @@ async function D(e) {
     errorHints: []
   }
 }
-async function w(e) {
+async function D(e) {
   await i.tn.post({
     url: T.ANM.QUEST_ON_CONSOLE_STOP(e),
     rejectWithError: false

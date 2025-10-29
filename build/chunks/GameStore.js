@@ -87,11 +87,11 @@ function P(e) {
   for (let e of t) R(e)
 }
 
-function D() {
+function w() {
   r = true
 }
 
-function w() {
+function D() {
   r = false
 }
 
@@ -204,7 +204,7 @@ g(x, "displayName", "GameStore"), g(x, "persistKey", "GameStore"), g(x, "migrati
 })]);
 let M = new x(Chunk570140.Z, {
   OVERLAY_INITIALIZE: P,
-  GAMES_DATABASE_FETCH: D,
-  GAMES_DATABASE_FETCH_FAIL: w,
+  GAMES_DATABASE_FETCH: w,
+  GAMES_DATABASE_FETCH_FAIL: D,
   GAMES_DATABASE_UPDATE: L
 })

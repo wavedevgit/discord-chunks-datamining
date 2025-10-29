@@ -107,7 +107,7 @@ function y(e) {
   })
 }
 
-function v(e) {
+function j(e) {
   let {
     closePopout: t
   } = e;
@@ -144,7 +144,7 @@ function v(e) {
   })
 }
 
-function j(e) {
+function v(e) {
   let {
     closePopout: t
   } = e, n = u.G6.useSetting();
@@ -218,11 +218,11 @@ function C(e) {
         };
       case 4:
         return {
-          type: "popout", children: v
+          type: "popout", children: j
         };
       case 5:
         return {
-          type: "popout", children: j
+          type: "popout", children: v
         };
       default:
         return null

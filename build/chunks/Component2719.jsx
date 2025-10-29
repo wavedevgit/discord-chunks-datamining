@@ -363,7 +363,7 @@ function er(e) {
   }
 
   function _() {
-    (0, f.h7j)(e => (0, r.jsx)(D.Z, X(z({}, e), {
+    (0, f.h7j)(e => (0, r.jsx)(w.Z, X(z({}, e), {
       title: Y.intl.string(Y.t["3CTiKi"]),
       children: a.hasFlag(F.xW$.MFA_SMS) ? Y.intl.string(Y.t.jrhJyo) : true,
       actionText: Y.intl.string(Y.t.N86XcP),

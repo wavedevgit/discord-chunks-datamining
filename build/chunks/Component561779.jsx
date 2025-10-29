@@ -153,8 +153,8 @@ class I extends(r = Chunk647438.PureComponent) {
       defaultValue: N,
       orientation: R,
       onValueRender: P,
-      renderMarker: D,
-      getAriaValueText: w,
+      renderMarker: w,
+      getAriaValueText: D,
       barClassName: L,
       grabberClassName: x,
       grabberStyles: M = {},
@@ -181,7 +181,7 @@ class I extends(r = Chunk647438.PureComponent) {
           style: {
             left: "".concat(e, "%")
           },
-          children: null != D ? D(n) : (0, i.jsxs)(i.Fragment, {
+          children: null != w ? w(n) : (0, i.jsxs)(i.Fragment, {
             children: [(0, i.jsx)("div", {
               className: h.markValue,
               children: o
@@ -192,7 +192,7 @@ class I extends(r = Chunk647438.PureComponent) {
         }, t)
       }) : null,
       Y = null != P ? P(exports) : "".concat(F.toFixed(0), "%"),
-      W = null != (e = null == w ? true : w(exports)) ? module : true;
+      W = null != (e = null == D ? true : D(exports)) ? module : true;
     return (0, Chunk951288.jsx)(Chunk793030.gNt, b(g({}, Z), {
       children: e => (0, i.jsx)(T, {
         active: n,

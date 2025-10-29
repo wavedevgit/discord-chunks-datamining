@@ -21,10 +21,10 @@ function _(e) {
     guildEventId: r,
     onRecurrenceClick: _,
     hideScroller: p = false,
-    activeRecurrenceId: v
+    activeRecurrenceId: f
   } = e, {
-    recurrenceStartTimes: f,
-    canViewMoreRecurrences: m,
+    recurrenceStartTimes: m,
+    canViewMoreRecurrences: v,
     updateRecurrenceStartTimes: g
   } = (0, c.Z)(r, n, t), h = p ? "div" : l.Ttm;
   return (0, i.jsxs)("div", {
@@ -37,16 +37,16 @@ function _(e) {
       className: a()(u.scroller, {
         [u.showScroller]: !p
       }),
-      children: [f.map(e => {
+      children: [m.map(e => {
         let n = o.default.fromTimestamp(e.getTime());
         return (0, i.jsx)(s.Z, {
           recurrenceId: n,
           originalScheduledStartTime: e,
           guildEventId: r,
           onClick: _,
-          isActive: n === v
+          isActive: n === f
         }, n)
-      }), m && (0, i.jsx)("div", {
+      }), v && (0, i.jsx)("div", {
         className: u.buttonContainer,
         children: (0, i.jsx)(l.Avr, {
           onClick: e => {

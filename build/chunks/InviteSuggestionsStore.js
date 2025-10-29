@@ -2,7 +2,7 @@
 /** chunk id: 751771, original params: e,t,n (module,exports,require) **/
 let i, l, s, r, a, o;
 require.d(exports, {
-  Z: () => P
+  Z: () => Z
 }), require("./388685.js"), require("./642613.js");
 var u, d, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
@@ -38,7 +38,7 @@ function N(e) {
   let a = (0, m.rh)(C, l);
   for (let e of (null == a || f.Z.isBlockedOrIgnored(a.id) || n.add(a.id), p.Z.getUserAffinities())) n.add(e.otherUserId);
   let u = new Set;
-  return o === y.Iq.EMBEDDED_APPLICATION && v.Z.getChannelHistory().map(e => x.Z.getChannel(e)).filter(I.lm).filter(e => e.type === E.d4z.GUILD_TEXT).filter(e => S.Z.can(E.Plq.SEND_MESSAGES, e)).slice(0, 3).forEach(e => u.add(e.id)), (0, m.an)({
+  return o === y.Iq.EMBEDDED_APPLICATION && v.Z.getChannelHistory().map(e => S.Z.getChannel(e)).filter(I.lm).filter(e => e.type === E.d4z.GUILD_TEXT).filter(e => x.Z.can(E.Plq.SEND_MESSAGES, e)).slice(0, 3).forEach(e => u.add(e.id)), (0, m.an)({
     query: e,
     omitUserIds: C,
     suggestedUserIds: n,
@@ -56,7 +56,7 @@ function A(e) {
     })
   })
 }
-class Z extends(u = Chunk442837.ZP.Store) {
+class P extends(u = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk592125.Z, Chunk496675.Z, Chunk823385.Z, Chunk699516.Z, Chunk752048.Z)
   }
@@ -80,13 +80,13 @@ class Z extends(u = Chunk442837.ZP.Store) {
       isFiltered: l
     }
   }
-}(d = "displayName") in Z ? Object.defineProperty(Z, d, {
+}(d = "displayName") in P ? Object.defineProperty(P, d, {
   value: "InviteSuggestionsStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : Z[d] = "InviteSuggestionsStore";
-let P = new Z(Chunk570140.Z, {
+}) : P[d] = "InviteSuggestionsStore";
+let Z = new P(Chunk570140.Z, {
   LOAD_INVITE_SUGGESTIONS: function(e) {
     let {
       omitUserIds: t,

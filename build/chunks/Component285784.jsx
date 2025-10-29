@@ -21,15 +21,15 @@ function u(e) {
     canInvite: u,
     isChannelPublic: _ = true,
     entityType: p,
-    onJoinClick: v,
-    onRsvpClick: f,
-    onStartClick: m,
+    onJoinClick: f,
+    onRsvpClick: m,
+    onStartClick: v,
     onInviteClick: g,
     onEndClick: h,
     onJoinGuildClick: b,
     isJoined: x = false,
     channel: C
-  } = e, I = true !== v, j = function(e) {
+  } = e, I = true !== f, j = function(e) {
     let {
       onInviteClick: n,
       canInvite: t,
@@ -63,7 +63,7 @@ function u(e) {
   if (null != j && k.push(j), n && p !== s.WX.EXTERNAL && k.push({
       variant: "active",
       size: "sm",
-      onClick: v,
+      onClick: f,
       text: function(e) {
         let {
           isJoined: n,
@@ -82,21 +82,21 @@ function u(e) {
       size: "sm",
       text: d.intl.string(d.t["2BP08E"]),
       onClick: b
-    }), !t && !n && null != f) {
+    }), !t && !n && null != m) {
     let e = i && !t;
     k.push({
       variant: e ? "active" : "secondary",
       size: "sm",
       icon: e ? l.dz2 : l.Dkj,
       text: d.intl.string(d.t.DlcqlU),
-      onClick: f,
+      onClick: m,
       disabled: t
     })
   }
-  return n || null == m || k.push({
+  return n || null == v || k.push({
     variant: "primary",
     size: "sm",
-    onClick: m,
+    onClick: v,
     text: d.intl.string(d.t.I0v0Qv)
   }), n && null != h && k.push({
     variant: "secondary",

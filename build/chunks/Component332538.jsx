@@ -80,7 +80,7 @@ function Z(e) {
         var t, n;
         return null != (n = null == (t = f.Z.getGuild(e)) ? true : t.features.has(P.GuildFeatures.GAME_SERVERS)) && n
       }), _ = (0, o.e7)([b.Z], () => b.Z.getLowestGameCostForGuild(e)), O = function(e, t) {
-        let n = (0, j.qI)(e, "GuildPowerupsChannelRow"),
+        let n = (0, v.qI)(e, "GuildPowerupsChannelRow"),
           r = (0, m.BU)(e, "GuildPowerupsChannelRow"),
           a = (0, o.e7)([f.Z], () => {
             var t;
@@ -117,7 +117,7 @@ function Z(e) {
           let i = I.Cp[n],
             l = null != i ? t.allPowerups[i] : true;
           if (null != l) return {
-            type: v.J.LEVEL_REACHED,
+            type: j.J.LEVEL_REACHED,
             powerup: l,
             markAsDismissed: t => {
               (0, p.Qd)(r, e, true, t)
@@ -138,14 +138,14 @@ function Z(e) {
             })).filter(h.lm);
           if (0 !== o.length) {
             if (1 === o.length && !(0, p.OY)(a.C.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK, e)) return {
-              type: v.J.PERKS_PURCHASABLE,
+              type: j.J.PERKS_PURCHASABLE,
               powerups: o,
               markAsDismissed: t => {
                 (0, p.Qd)(a.C.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK, e, true, t)
               }
             };
             if (o.length > 1 && !(0, p.OY)(a.C.GUILD_POWERUP_CHOICE_SKU_PURCHASE_COACHMARK, e)) return {
-              type: v.J.PERKS_PURCHASABLE,
+              type: j.J.PERKS_PURCHASABLE,
               powerups: o,
               markAsDismissed: t => {
                 (0, p.Qd)(a.C.GUILD_POWERUP_CHOICE_SKU_PURCHASE_COACHMARK, e, true, t)
@@ -156,7 +156,7 @@ function Z(e) {
         if (null != r) return r;
         let i = function(e, t, n, r) {
           if ((0, m.v$)(e, "maybeGetGameServerHostingGuildEligiblePopoutDCF") && !t && null != r && n >= r && !(0, p.OY)(a.C.GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK, e)) return {
-            type: v.J.GAME_SERVER_HOSTING_GUILD_ELIGIBLE,
+            type: j.J.GAME_SERVER_HOSTING_GUILD_ELIGIBLE,
             markAsDismissed: t => {
               (0, p.Qd)(a.C.GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK, e, true, t)
             }
@@ -164,17 +164,17 @@ function Z(e) {
         }(e, u, c, _);
         if (null != i) return i
       }, [e, t, s, S, c, u, _]), [Z, T] = (0, d.bf)(null != N ? a.z.GUILD_POWERUP_NOTIFICATION : null, {
-        cooldownDurationMs: v.d
+        cooldownDurationMs: j.d
       });
       return i.useMemo(() => {
         if (null != t) {
           if (s) return {
-            type: v.J.PERKS_AVAILABLE,
+            type: j.J.PERKS_AVAILABLE,
             markAsDismissed: r
           };
           if (S) {
             if (O === I.Du.GAME_SERVER_HOSTING) return {
-              type: v.J.GAME_SERVER_HOSTING_AVAILABLE,
+              type: j.J.GAME_SERVER_HOSTING_AVAILABLE,
               markAsDismissed: E
             };
             let e = I.os[O],
@@ -182,7 +182,7 @@ function Z(e) {
             if (0 === n.length) return;
             return {
               powerups: n,
-              type: v.J.NEW_PERK_AVAILABLE,
+              type: j.J.NEW_PERK_AVAILABLE,
               markAsDismissed: E
             }
           }

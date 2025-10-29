@@ -63,13 +63,13 @@ function P(e, t) {
   return n
 }
 
-function D(e, t) {
+function w(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : P(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function w(e, t) {
+function D(e, t) {
   if (null == e) return {};
   var n, r, i = L(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -144,10 +144,10 @@ let x = e => {
             ref: m,
             tabIndex: g,
             onFocus: E
-          } = h, b = w(h, ["ref", "tabIndex", "onFocus"]), y = el.rowIndex === _ && el.columnIndex === p, O = () => {
+          } = h, b = D(h, ["ref", "tabIndex", "onFocus"]), y = el.rowIndex === _ && el.columnIndex === p, O = () => {
             j.current || U.current || L(e)
           };
-          return (0, i.createElement)("li", D(R({}, b), {
+          return (0, i.createElement)("li", w(R({}, b), {
             key: t
           }), (0, r.jsx)(l.tEY, {
             children: (0, r.jsx)("button", {
@@ -250,7 +250,7 @@ let x = e => {
           return
       }
     },
-    em = e => (0, r.jsx)("ul", D(R({}, k(G)), {
+    em = e => (0, r.jsx)("ul", w(R({}, k(G)), {
       className: o()(C.emojiListRow, {
         [C.emojiListRowLargeSize]: e_,
         [C.emojiListRowMediumSize]: ep

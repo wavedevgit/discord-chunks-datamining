@@ -127,12 +127,12 @@ function S(e) {
       let n = s.Z.getGuild(t);
       null != n && e.push(n)
     }), e
-  }), P = d.ZP.canUseSoundboardEverywhere(o), D = (0, i.e7)([s.Z], () => s.Z.getGuild(null == e ? true : e.guild_id)), w = (0, i.e7)([l.Z], () => {
+  }), P = d.ZP.canUseSoundboardEverywhere(o), w = (0, i.e7)([s.Z], () => s.Z.getGuild(null == e ? true : e.guild_id)), D = (0, i.e7)([l.Z], () => {
     let {
       canCreateExpressions: e
-    } = (0, a.Gw)(D);
+    } = (0, a.Gw)(w);
     return e
-  }, [D]), {
+  }, [w]), {
     canSeeRecentlyHeard: L,
     canSeeFrequentlyPlayed: x
   } = (0, f.k)({
@@ -171,15 +171,15 @@ function S(e) {
       allSounds: E,
       potentialSoundIdsForSection: M.map(e => e.soundId),
       sectionType: h.bg.FREQUENTLY_USED
-    }), true !== D && I(i, D, {
-      currentGuildHasAddPermissions: w,
+    }), true !== w && I(i, w, {
+      currentGuildHasAddPermissions: D,
       allSounds: E,
       filterOutEmptyCurrentGuild: t,
       sortSoundsFn: A
     }), P || T(i, E), v({
       sections: i,
       guilds: R,
-      currentGuildId: null == D ? true : D.id,
+      currentGuildId: null == w ? true : w.id,
       allSounds: E,
       hasNitro: u,
       sortSoundsFn: A
@@ -195,7 +195,7 @@ function S(e) {
         lockedCustomSoundCount: r
       }
     })
-  }, [N, E, y, k, M, x, L, D, w, t, P, R, n, S, u, A])
+  }, [N, E, y, k, M, x, L, w, D, t, P, R, n, S, u, A])
 }
 
 function A(e, t, n) {

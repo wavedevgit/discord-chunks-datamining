@@ -6,7 +6,7 @@ require.d(exports, {
   LO: () => y,
   S1: () => E,
   Wx: () => P,
-  XT: () => D,
+  XT: () => w,
   al: () => N,
   cG: () => O,
   li: () => I,
@@ -178,7 +178,7 @@ function P(e, t) {
   null != n && f.Z.createShortcuts(l.Xc.getSetting(), l.Pe.getSetting(), n.name, n.id, t.installPath)
 }
 
-function D(e, t) {
+function w(e, t) {
   let i = a.Z.getApplication(e);
   r.tn.post({
     url: h.ANM.LIBRARY_APPLICATION_INSTALLED(e, e),

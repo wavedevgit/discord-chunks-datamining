@@ -44,7 +44,7 @@ function O(e) {
   let {
     entity_type: R,
     status: P,
-    recurrence_rule: D
+    recurrence_rule: w
   } = T;
   return (0, r.jsxs)("div", {
     className: a()(y.statusContainer, t),
@@ -53,7 +53,7 @@ function O(e) {
       status: null != N ? N : P,
       eventType: R,
       isNew: m,
-      recurrenceRule: (0, p.KV)(D),
+      recurrenceRule: (0, p.KV)(w),
       guildEventId: g.id,
       recurrenceId: v
     }), (0, r.jsx)("div", {

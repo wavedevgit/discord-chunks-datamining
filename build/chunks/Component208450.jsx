@@ -207,7 +207,7 @@ class W extends Chunk647438.PureComponent {
       let {
         isSearchFiltersRedesignEnabled: e
       } = this.props;
-      return e ? (0, r.jsx)(D.Z, {
+      return e ? (0, r.jsx)(w.Z, {
         ref: this._searchFiltersRedesignPopoutRef,
         searchContext: this.props.searchContext,
         navId: H,
@@ -389,7 +389,7 @@ class W extends Chunk647438.PureComponent {
       let {
         searchContext: t
       } = this.props;
-      w.Z.updateSearchEditorState(t, e)
+      D.Z.updateSearchEditorState(t, e)
     }), F(this, "getPopoutRef", () => {
       let {
         current: e
@@ -419,7 +419,7 @@ class W extends Chunk647438.PureComponent {
         if (e.preventDefault(), O.xb(a)) this.blurEditor();
         else {
           let e = O.FZ(a);
-          w.Z.updateSearchEditorState(o, e), this.setState({
+          D.Z.updateSearchEditorState(o, e), this.setState({
             focused: true
           })
         }
@@ -492,7 +492,7 @@ function K(e) {
         searchContext: t,
         query: r,
         queryString: n
-      }), w.Z.updateSearchMode(t, G.QIO.NEWEST), Y({
+      }), D.Z.updateSearchMode(t, G.QIO.NEWEST), Y({
         searchContext: t,
         searchQueryString: n,
         searchEverywhere: i,
@@ -515,10 +515,10 @@ function K(e) {
     A = (0, N.nP)({
       location: "Search"
     }),
-    D = (0, N.KS)({
+    w = (0, N.KS)({
       location: "Search"
     }),
-    x = A || D,
+    x = A || w,
     M = (0, C.UX)({
       location: "Search"
     }),

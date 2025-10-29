@@ -122,11 +122,11 @@ function N(e) {
     N = (0, d.E)("UserActivityContainer", A),
     R = (0, a.e7)([_.Z], () => l ? _.Z.getAnyStreamForUser(n.id) : null),
     P = (null == t ? true : t.type) === b.IIU.HANG_STATUS && N ? A : null,
-    D = (0, a.e7)([h.Z, m.Z, p.Z], () => {
+    w = (0, a.e7)([h.Z, m.Z, p.Z], () => {
       var e, r;
       return (0, o.Z)(t, b.xjy.EMBEDDED) ? h.Z.getGuild(null == (e = p.Z.getChannel(null == (r = m.Z.getVoiceStateForSession(n.id, null == t ? true : t.session_id)) ? true : r.channelId)) ? true : e.getGuildId()) : null != P ? h.Z.getGuild(P.getGuildId()) : null
     }),
-    w = (0, a.e7)([h.Z], () => null != R ? h.Z.getGuild(R.guildId) : null),
+    D = (0, a.e7)([h.Z], () => null != R ? h.Z.getGuild(R.guildId) : null),
     L = (0, a.e7)([c.Z], () => {
       if (null != t)
         if (null != t.application_id) return c.Z.getApplication(t.application_id);
@@ -143,7 +143,7 @@ function N(e) {
     user: n,
     application: L,
     hideHeader: y,
-    activityGuild: null != D ? D : w,
+    activityGuild: null != w ? w : D,
     showChannelDetails: O,
     channel: O ? A : true,
     renderActions: E ? () => (0, r.jsx)(C, T(v({}, I), {

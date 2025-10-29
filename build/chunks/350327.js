@@ -13,9 +13,9 @@ require.d(exports, {
   g_: () => I,
   ho: () => v,
   pG: () => O,
-  rf: () => D,
+  rf: () => w,
   uV: () => x,
-  x3: () => w,
+  x3: () => D,
   z5: () => C
 });
 var Chunk442837 = require("./442837.js"),
@@ -176,14 +176,14 @@ function P(e) {
   }), E(h.QP.PROFILE_BANNER)
 }
 
-function D(e) {
+function w(e) {
   a.Z.dispatch({
     type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_THEME_COLORS",
     themeColors: e
   }), E(h.QP.PROFILE_THEME_COLOR)
 }
 
-function w(e) {
+function D(e) {
   a.Z.dispatch(g({
     type: "USER_SETTINGS_ACCOUNT_SET_TRY_IT_OUT_PRESET"
   }, e)), E(h.QP.PRESET)

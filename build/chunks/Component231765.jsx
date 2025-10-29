@@ -72,8 +72,8 @@ let C = {
   N = (0, Chunk392711.range)(0, 11),
   R = (0, Chunk392711.range)(0, 2.25, .25),
   P = (0, Chunk392711.range)(1, 11),
-  D = (0, Chunk392711.range)(1, 26),
-  w = () => [{
+  w = (0, Chunk392711.range)(1, 26),
+  D = () => [{
     location: Chunk524484.Hn.CHAT_INPUT,
     title: Chunk388032.intl.string(Chunk388032.t.elTtyz),
     description: Chunk388032.intl.string(Chunk388032.t.HtKfMi)
@@ -221,10 +221,10 @@ function j(e) {
         children: O.intl.string(O.t.xoldVn)
       }), (0, r.jsx)(l.iRW, {
         disabled: c,
-        markers: D,
+        markers: w,
         stickToMarkers: true,
-        minValue: D[0],
-        maxValue: D[D.length - 1],
+        minValue: w[0],
+        maxValue: w[w.length - 1],
         initialValue: a,
         onValueChange: e => s({
           confettiSize: e
@@ -233,7 +233,7 @@ function j(e) {
       })]
     }), (0, r.jsx)(x, {
       disabled: c,
-      locations: w(),
+      locations: D(),
       settingsLocations: o,
       onChange: e => s({
         confettiEnabledLocations: e

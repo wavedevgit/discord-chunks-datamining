@@ -83,15 +83,15 @@ function P(e, t) {
   for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
   return i
 }
-let D = 4,
-  w = 268,
+let w = 4,
+  D = 268,
   L = 2,
   x = e => {
     if (null == e) return 0;
     let {
       width: t
     } = e.getBoundingClientRect();
-    return t > 0 ? t + D : 0
+    return t > 0 ? t + w : 0
   };
 
 function M(e) {
@@ -107,7 +107,7 @@ function M(e) {
     onRemoveRole: b
   } = e, S = i.useRef({}), C = (e, t) => {
     null != t ? S.current[e] = t : delete S.current[e]
-  }, [P, M] = i.useState(f), [k, j] = i.useState(w), [U, G] = i.useState(false), B = i.useRef(null), Z = i.useRef(null), F = i.useRef(0);
+  }, [P, M] = i.useState(f), [k, j] = i.useState(D), [U, G] = i.useState(false), B = i.useRef(null), Z = i.useRef(null), F = i.useRef(0);
   i.useLayoutEffect(() => {
     F.current = 0
   }, [f]), i.useLayoutEffect(() => {
@@ -115,9 +115,9 @@ function M(e) {
     let e = x(B.current),
       t = x(Z.current),
       n = [],
-      r = w - e - t;
+      r = D - e - t;
     for (let e = 0; e < L; e++) {
-      let t = e === L - 1 ? r : w;
+      let t = e === L - 1 ? r : D;
       for (let e = 0, r = n.length; r < f.length; r++) {
         let i = f[r],
           a = S.current[i.id];
@@ -127,7 +127,7 @@ function M(e) {
         }
         let o = Math.min(a.getBoundingClientRect().width, t);
         if (e + o > t) break;
-        e += o + D, n.push(i)
+        e += o + w, n.push(i)
       }
     }
     M(n.length === P.length ? P : n), j(r), F.current++
@@ -150,7 +150,7 @@ function M(e) {
         role: e,
         guildId: l.id,
         style: {
-          maxWidth: U || i !== P.length - 1 ? w : k
+          maxWidth: U || i !== P.length - 1 ? D : k
         },
         disableBorderColor: true,
         ref: t => C(e.id, t),

@@ -37,7 +37,7 @@ function p(e) {
     }
     A(t ? "animateIn" : "animateOut")
   }, [t]);
-  let D = e => {
+  let w = e => {
     null != a && a(e)
   };
   return (0, r.jsx)(c.tE, {
@@ -49,7 +49,7 @@ function p(e) {
       "aria-hidden": h || true,
       "aria-labelledby": g,
       isSelected: t,
-      onChange: D,
+      onChange: w,
       isDisabled: p,
       isReadOnly: h,
       "data-mana-component": "checkbox",

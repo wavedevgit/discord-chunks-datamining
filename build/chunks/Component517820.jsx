@@ -349,7 +349,7 @@ function W(e) {
   }
 
   function f() {
-    null != o && O.Z.open(o, w.pNK.GUILD_AUTOMOD, true, w.KsC.AUTOMOD_MENTION_SPAM)
+    null != o && O.Z.open(o, D.pNK.GUILD_AUTOMOD, true, D.KsC.AUTOMOD_MENTION_SPAM)
   }
   return (0, r.jsx)(K, {
     compact: a,
@@ -452,7 +452,7 @@ function z(e) {
   return (0, r.jsx)("div", {
     onMouseEnter: l,
     onMouseLeave: c,
-    children: (0, r.jsx)(D.Z, {
+    children: (0, r.jsx)(w.Z, {
       className: o()(M.mainContainer, {
         [M.compact]: n
       }),

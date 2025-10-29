@@ -73,14 +73,14 @@ function P(e) {
   R(), p = e.skuId, m = e.applicationId, T = e.isIAP, g = e.analyticsLocation, C = e.context, A = e.isGift, S = true, I = false, r = e.resolve, i = e.reject, v = null, y = null, E = e.promotionId
 }
 
-function D(e) {
+function w(e) {
   let {
     error: t
   } = e;
   S = false, C = null, R(t)
 }
 
-function w(e) {
+function D(e) {
   let {
     skuId: t
   } = e;
@@ -198,8 +198,8 @@ class V extends(a = Chunk442837.ZP.Store) {
 c(V, "displayName", "SKUPaymentModalStore");
 let H = new V(Chunk570140.Z, {
   SKU_PURCHASE_MODAL_OPEN: P,
-  SKU_PURCHASE_MODAL_CLOSE: D,
-  SKU_PURCHASE_PREVIEW_FETCH: w,
+  SKU_PURCHASE_MODAL_CLOSE: w,
+  SKU_PURCHASE_PREVIEW_FETCH: D,
   SKU_PURCHASE_PREVIEW_FETCH_SUCCESS: L,
   SKU_PURCHASE_PREVIEW_FETCH_FAILURE: x,
   SKU_PURCHASE_START: M,

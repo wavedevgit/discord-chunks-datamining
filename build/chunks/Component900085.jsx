@@ -109,7 +109,7 @@ let z = Chunk442837.ZP.connectStores([Chunk306680.ZP, Chunk592125.Z], e => {
       unread: E.ZP.hasUnread(t.id),
       mentions: E.ZP.getMentionCount(t.id),
       isMentionLowImportance: E.ZP.getIsMentionLowImportance(t.id),
-      category: v.Z.getChannel(t.parent_id)
+      category: j.Z.getChannel(t.parent_id)
     }
   })(H),
   W = Chunk442837.ZP.connectStores([Chunk938475.ZP], e => {
@@ -126,7 +126,7 @@ let z = Chunk442837.ZP.connectStores([Chunk306680.ZP, Chunk592125.Z], e => {
       guild: t
     } = e;
     return {
-      unread: j.default.hasUnread(t.id)
+      unread: v.default.hasUnread(t.id)
     }
   })(Chunk415795.ic),
   Y = Chunk442837.ZP.connectStores([Chunk306680.ZP, Chunk158776.Z], e => {
@@ -142,7 +142,7 @@ let z = Chunk442837.ZP.connectStores([Chunk306680.ZP, Chunk592125.Z], e => {
   q = Chunk442837.ZP.connectStores([Chunk592125.Z, Chunk306680.ZP, Chunk158776.Z], e => {
     let {
       user: t
-    } = e, n = v.Z.getDMFromUserId(t.id);
+    } = e, n = j.Z.getDMFromUserId(t.id);
     return {
       mentions: null != n ? E.ZP.getMentionCount(n) : 0,
       status: C.Z.getStatus(t.id),

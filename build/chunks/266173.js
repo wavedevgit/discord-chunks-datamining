@@ -175,10 +175,10 @@ class P {
   }
 }
 
-function D() {
+function w() {
   return Object.values(Chunk486016.i)
 }
-let w = new Set([Chunk486016.i.WELCOME_GENERAL, Chunk486016.i.GO_LIVE_NUDGE, Chunk486016.i.GAME_ACTIVITY]),
+let D = new Set([Chunk486016.i.WELCOME_GENERAL, Chunk486016.i.GO_LIVE_NUDGE, Chunk486016.i.GAME_ACTIVITY]),
   L = "overlay-negative-widget-experiment-bucket";
 class x extends Chunk147913.Z {
   constructor() {
@@ -214,7 +214,7 @@ class x extends Chunk147913.Z {
         disableWelcomeNotification: n,
         unlockedOnlyDefaultOverlay: r
       } = (0, d.Sy)("".concat(__OVERLAY__ ? "LegacyOverlay" : "MainApp", "_ExperimentManager_NotificationSettings"), e), i = new Set, a = new Set;
-      for (let e of D()) r ? i.add(e) : n ? w.has(e) ? i.add(e) : a.add(e) : t && e !== u.i.WELCOME_GENERAL ? i.add(e) : a.add(e);
+      for (let e of w()) r ? i.add(e) : n ? D.has(e) ? i.add(e) : a.add(e) : t && e !== u.i.WELCOME_GENERAL ? i.add(e) : a.add(e);
       return {
         notificationsToOverride: i,
         notificationsToRestore: a
@@ -225,7 +225,7 @@ class x extends Chunk147913.Z {
         notificationsToOverride: t,
         notificationsToRestore: n
       } = this.getNotificationExperimentSettings(e);
-      for (let e of D()) this._settings.initializeNotification(e);
+      for (let e of w()) this._settings.initializeNotification(e);
       for (let e of n) await this._settings.restoreNotification(e);
       for (let e of t) await this._settings.disableNotification(e);
       t.size > 0 && T.info("Experiment Override: Notifications", {

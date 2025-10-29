@@ -28,13 +28,13 @@ function b(e) {
     guildEventId: b,
     onClick: x,
     isActive: C
-  } = e, I = (0, l.e7)([_.ZP], () => _.ZP.getGuildScheduledEvent(b)), j = (0, p.Z)(n, null == I ? true : I.id), k = (0, l.e7)([u.Z], () => u.Z.getGuild(null == I ? true : I.guild_id)), w = (0, l.e7)([d.Z], () => d.Z.getChannel(null == I ? true : I.channel_id));
+  } = e, I = (0, l.e7)([_.ZP], () => _.ZP.getGuildScheduledEvent(b)), j = (0, p.Z)(n, null == I ? true : I.id), k = (0, l.e7)([u.Z], () => u.Z.getGuild(null == I ? true : I.guild_id)), y = (0, l.e7)([d.Z], () => d.Z.getChannel(null == I ? true : I.channel_id));
   if (null == I) return null;
   let {
-    is_canceled: y = false
-  } = null != j ? j : {}, N = (null == j ? true : j.scheduled_start_time) != null ? new Date(null == j ? true : j.scheduled_start_time) : r, Z = (0, v.DK)(I), E = y ? m.p1.CANCELED : m.p1.SCHEDULED;
+    is_canceled: N = false
+  } = null != j ? j : {}, w = (null == j ? true : j.scheduled_start_time) != null ? new Date(null == j ? true : j.scheduled_start_time) : r, Z = (0, f.DK)(I), E = N ? v.p1.CANCELED : v.p1.SCHEDULED;
   Z === n && (E = I.status);
-  let P = (null == I ? true : I.scheduled_start_time) != null ? (0, v.lh)(j, N, new Date(null == I ? true : I.scheduled_start_time)) : null,
+  let P = (null == I ? true : I.scheduled_start_time) != null ? (0, f.lh)(j, w, new Date(null == I ? true : I.scheduled_start_time)) : null,
     S = e => {
       e.stopPropagation(), null != k && (0, s.jW)(e, async () => {
         let {
@@ -60,7 +60,7 @@ function b(e) {
         }({
           guildEventId: I.id,
           recurrenceId: n,
-          channel: w,
+          channel: y,
           guild: k,
           isRecurrenceItem: true
         }, t))
@@ -68,23 +68,23 @@ function b(e) {
     };
   return (0, i.jsxs)(c.kL8, {
     className: a()(h.container, {
-      [h.canceled]: y,
+      [h.canceled]: N,
       [h.clickable]: null != x,
       [h.active]: C
     }),
     onClick: e => {
-      e.stopPropagation(), y || null == x || x(n)
+      e.stopPropagation(), N || null == x || x(n)
     },
     onContextMenu: S,
     "aria-label": "",
-    children: [(0, i.jsx)(f.z, {
-      startTime: N.toISOString(),
+    children: [(0, i.jsx)(m.z, {
+      startTime: w.toISOString(),
       status: null != P ? P : E,
       eventType: I.entity_type,
       guildEventId: I.id,
       recurrenceId: n,
       className: h.timeStatus
-    }), y && (0, i.jsx)(c.Text, {
+    }), N && (0, i.jsx)(c.Text, {
       variant: "text-sm/semibold",
       color: "text-danger",
       className: h.canceledStatus,

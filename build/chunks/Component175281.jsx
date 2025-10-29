@@ -43,13 +43,13 @@ let S = {
 
 function I(e) {
   switch (e.keyCode) {
-    case j.yXg.ARROW_UP:
+    case v.yXg.ARROW_UP:
       return "UP";
-    case j.yXg.ARROW_DOWN:
+    case v.yXg.ARROW_DOWN:
       return "DOWN";
-    case j.yXg.ARROW_LEFT:
+    case v.yXg.ARROW_LEFT:
       return "LEFT";
-    case j.yXg.ARROW_RIGHT:
+    case v.yXg.ARROW_RIGHT:
       return "RIGHT";
     default:
       return null
@@ -239,7 +239,7 @@ class T extends Chunk647438.PureComponent {
         })
       }]
     })), E(this, "handleKeyDown", e => {
-      if (this.lastInputedKeys.push(e.keyCode), this.lastInputedKeys = this.lastInputedKeys.slice(false), this.lastInputedKeys[0] === j.yXg.H && this.lastInputedKeys[1] === j.yXg.H && this.lastInputedKeys[2] === j.yXg.ARROW_RIGHT && this.lastInputedKeys[3] === j.yXg.N && this.lastInputedKeys[4] === j.yXg.K && this.props.activateRagingDemon(), this.props.keyboardModeEnabled) return;
+      if (this.lastInputedKeys.push(e.keyCode), this.lastInputedKeys = this.lastInputedKeys.slice(false), this.lastInputedKeys[0] === v.yXg.H && this.lastInputedKeys[1] === v.yXg.H && this.lastInputedKeys[2] === v.yXg.ARROW_RIGHT && this.lastInputedKeys[3] === v.yXg.N && this.lastInputedKeys[4] === v.yXg.K && this.props.activateRagingDemon(), this.props.keyboardModeEnabled) return;
       let t = I(e);
       null !== t && (e.stopPropagation(), e.preventDefault(), this.arrowDown({
         direction: t
@@ -305,7 +305,7 @@ function A(e) {
       parentComponent: "KeyboardShortcutsModal",
       children: (0, r.jsx)(f.W, {
         component: "div",
-        children: l ? (0, r.jsx)(v.Z, {
+        children: l ? (0, r.jsx)(j.Z, {
           handleDemonClose: function() {
             c(false), setTimeout(n, 500)
           }

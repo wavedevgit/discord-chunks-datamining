@@ -36,9 +36,9 @@ let P = {
 };
 
 function N(e, t, n) {
-  let r = t ? v.ZP.guildFilter : null,
-    i = t ? v.ZP.roleFilter : null,
-    l = t ? v.ZP.everyoneFilter : null,
+  let r = t ? j.ZP.guildFilter : null,
+    i = t ? j.ZP.roleFilter : null,
+    l = t ? j.ZP.everyoneFilter : null,
     o = null;
   null != e && null != r && (o = r === E.NgX.ALL_SERVERS ? null : e.getGuildId()), c.Z.fetchRecentMentions({
     before: n,
@@ -59,18 +59,18 @@ function Z(e) {
     guildFilter: h,
     roleFilter: b,
     everyoneFilter: O
-  } = (0, a.cj)([v.ZP], () => ({
-    messages: v.ZP.getMentions(),
-    hasMore: v.ZP.hasMore,
-    loading: v.ZP.loading,
-    guildFilter: v.ZP.guildFilter,
-    roleFilter: v.ZP.roleFilter,
-    everyoneFilter: v.ZP.everyoneFilter
-  })), j = (0, m.Us)({
+  } = (0, a.cj)([j.ZP], () => ({
+    messages: j.ZP.getMentions(),
+    hasMore: j.ZP.hasMore,
+    loading: j.ZP.loading,
+    guildFilter: j.ZP.guildFilter,
+    roleFilter: j.ZP.roleFilter,
+    everyoneFilter: j.ZP.everyoneFilter
+  })), v = (0, m.Us)({
     location: "RecentMentions"
   }), x = (0, d.Z)(h), C = (0, d.Z)(b), P = (0, d.Z)(O);
   i.useEffect(() => {
-    if (!v.ZP.hasLoadedEver) return void N(n, true);
+    if (!j.ZP.hasLoadedEver) return void N(n, true);
     (null != x && h !== x || null != C && b !== C || null != P && O !== P) && N(n, true)
   }, [x, h, C, b, P, O, n, true]), (0, u.ZP)(() => {
     (null == l ? true : l.some(f.k5)) && (c.Z.clearMentions(), N(n, true))
@@ -80,7 +80,7 @@ function Z(e) {
   let Z = i.useCallback(() => null, []);
   return (0, r.jsx)(g.ZP, {
     className: o()(I.recentMentionsPopout, {
-      [I.widerInbox]: j
+      [I.widerInbox]: v
     }),
     scrollerClassName: I.scroller,
     onFetch: () => null,
@@ -141,7 +141,7 @@ function w(e) {
       }) : null
     }), (0, r.jsxs)("div", {
       className: I.messageContainer,
-      children: [(0, r.jsx)(j.Z, {
+      children: [(0, r.jsx)(v.Z, {
         className: I.jumpMessageButton,
         onJump: n
       }), (0, r.jsx)(h.Z, {

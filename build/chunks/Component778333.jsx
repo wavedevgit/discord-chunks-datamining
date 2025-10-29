@@ -59,14 +59,14 @@ function y(e) {
   if (null == n.inviter) return null;
   let R = A ? C : N,
     P = E.intl.string(E.t.ib7Ng1),
-    D = "active";
-  A ? (P = E.intl.string(E.t.xhxnPn), D = "secondary") : I && (P = E.intl.string(E.t.ib7Ng1), D = "secondary");
-  let w = I ? E.intl.string(E.t.eQyu1F) : E.intl.string(E.t.PYJHW6),
+    w = "active";
+  A ? (P = E.intl.string(E.t.xhxnPn), w = "secondary") : I && (P = E.intl.string(E.t.ib7Ng1), w = "secondary");
+  let D = I ? E.intl.string(E.t.eQyu1F) : E.intl.string(E.t.PYJHW6),
     L = null != n.inviter ? "".concat(n.inviter.username) : "",
     x = null != n.inviter ? m.ZP.getUserTag(n.inviter) : "";
   return (0, r.jsxs)(d.Z, {
     children: [(0, r.jsx)(d.Z.Header, {
-      text: w
+      text: D
     }), (0, r.jsxs)(d.Z.Body, {
       children: [(0, r.jsxs)("div", {
         className: b.headerLine,
@@ -83,7 +83,7 @@ function y(e) {
         text: P,
         loading: T,
         disabled: I,
-        variant: D
+        variant: w
       })]
     })]
   })

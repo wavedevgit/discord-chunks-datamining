@@ -2,7 +2,7 @@
 /** chunk id: 565138, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => D
 });
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -157,8 +157,8 @@ class R extends Chunk647438.PureComponent {
         lossless: R,
         iconSize: P
       } = require,
-      D = T(require, ["guild", "className", "showBadge", "active", "size", "style", "textScale", "showTooltip", "tooltipPosition", "onClick", "to", "badgeStrokeColor", "animate", "tabIndex", "iconSrc", "aria-hidden", "lossless", "iconSize"]),
-      w = N[Chunk442837],
+      w = T(require, ["guild", "className", "showBadge", "active", "size", "style", "textScale", "showTooltip", "tooltipPosition", "onClick", "to", "badgeStrokeColor", "animate", "tabIndex", "iconSrc", "aria-hidden", "lossless", "iconSize"]),
+      D = N[Chunk442837],
       L = null != Chunk451478 ? Chunk481060.P3F : "div",
       x = (0, Chunk601964.gM)(r);
     return (0, Chunk951288.jsxs)(L, I(O({
@@ -169,11 +169,11 @@ class R extends Chunk647438.PureComponent {
       }),
       "aria-hidden": C,
       style: null == r.icon ? O({
-        fontSize: (null != (t = w[x.length]) ? exports : w[w.length - 1]) * Chunk891819
+        fontSize: (null != (t = D[x.length]) ? exports : D[D.length - 1]) * Chunk891819
       }, Chunk692547) : Chunk692547,
       onClick: null != Chunk956664 || null == Chunk451478 ? true : Chunk451478,
       tabIndex: S
-    }, D), {
+    }, w), {
       children: [this.renderAcronym(), this.renderBadge()]
     }))
   }
@@ -228,12 +228,12 @@ let P = Chunk442837.ZP.connectStores([Chunk451478.Z], e => {
     })
   }
 })((0, Chunk891819.N)(e => (0, i.jsx)(R, O({}, e))));
-class D extends(r = Chunk647438.PureComponent) {
+class w extends(r = Chunk647438.PureComponent) {
   render() {
     return (0, Chunk951288.jsx)(P, O({}, this.props))
   }
 }
-y(D, "Sizes", A), y(D, "defaultProps", {
+y(w, "Sizes", A), y(w, "defaultProps", {
   size: A.LARGE,
   textScale: 1,
   showBadge: false,
@@ -243,4 +243,4 @@ y(D, "Sizes", A), y(D, "defaultProps", {
   badgeStrokeColor: Chunk692547.Z.unsafe_rawColors.WHITE_500.css,
   animate: false
 });
-let w = D
+let D = w

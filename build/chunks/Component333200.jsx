@@ -94,8 +94,8 @@ function p(e) {
     refs: N,
     floatingStyles: R,
     getFloatingProps: P,
-    getReferenceProps: D,
-    transitionStyles: w
+    getReferenceProps: w,
+    transitionStyles: D
   } = (0, o.C)();
   return (0, r.jsxs)(i.uz, d(c({}, b), {
     isCollapsible: true,
@@ -119,10 +119,10 @@ function p(e) {
       onKeyDown: I,
       showChevronButton: true,
       ref: N.setReference
-    }, D())), A && (0, r.jsx)("div", d(c({
+    }, w())), A && (0, r.jsx)("div", d(c({
       ref: N.setFloating,
       className: s.selectDropdown,
-      style: c({}, R, w)
+      style: c({}, R, D)
     }, P()), {
       children: (0, r.jsx)(i.px, {
         renderListItem: e => (0, r.jsx)(a.W, c({}, e)),

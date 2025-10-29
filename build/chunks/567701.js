@@ -29,8 +29,8 @@
     N = "Browser",
     R = "Chrome",
     P = "Firefox",
-    D = "Google",
-    w = "Huawei",
+    w = "Google",
+    D = "Huawei",
     L = "LG",
     x = "Microsoft",
     M = "Motorola",
@@ -290,11 +290,11 @@
           [_, E]
         ],
         [/\b((?:ag[rs][23]?|bah2?|sht?|btv)-a?[lw]\d{2})\b(?!.+d\/s)/i],
-        [d, [p, w],
+        [d, [p, D],
           [_, b]
         ],
         [/(?:huawei)([-\w ]+)[;\)]/i, /\b(nexus 6p|\w{2,4}e?-[atu]?[ln][\dx][012359c][adn]?)\b(?!.+d\/s)/i],
-        [d, [p, w],
+        [d, [p, D],
           [_, E]
         ],
         [/\b(poco[\w ]+|m2\d{3}j\d\d[a-z]{2})(?: bui|\))/i, /\b; (\w+) build\/hm\1/i, /\b(hm[-_ ]?note?[_ ]?(?:\d\w)?) bui/i, /\b(redmi[\-_ ]?(?:note|k)?[\w_ ]+)(?: bui|\))/i, /oid[^\)]+; (m?[12][0-389][01]\w{3,6}[c-y])( bui|; wv|\))/i, /\b(mi[-_ ]?(?:a\d|one|one[_ ]plus|note lte|max|cc)?[_ ]?(?:\d?\w?)[_ ]?(?:plus|se|lite|pro)?)(?: bui|\))/i],
@@ -352,11 +352,11 @@
           [_, E]
         ],
         [/(pixel c)\b/i],
-        [d, [p, D],
+        [d, [p, w],
           [_, b]
         ],
         [/droid.+; (pixel[\daxl ]{0,6})(?: bui|\))/i],
-        [d, [p, D],
+        [d, [p, w],
           [_, E]
         ],
         [/droid.+; (a?\d[0-2]{2}so|[c-g]\d{4}|so[-gl]\w+|xq-a\w[4-7][12])(?= bui|\).+chrome\/(?![1-6]{0,1}\d\.))/i],
@@ -580,7 +580,7 @@
         [/crkey/i],
         [
           [d, R + "cast"],
-          [p, D],
+          [p, w],
           [_, y]
         ],
         [/droid.+aft(\w+)( bui|\))/i],
@@ -636,7 +636,7 @@
           [_, O]
         ],
         [/droid.+; (glass) \d/i],
-        [d, [p, D],
+        [d, [p, w],
           [_, O]
         ],
         [/droid.+; (wt63?0{2,3})\)/i],
@@ -644,7 +644,7 @@
           [_, O]
         ],
         [/droid.+; (glass) \d/i],
-        [d, [p, D],
+        [d, [p, w],
           [_, O]
         ],
         [/(pico) (4|neo3(?: link|pro)?)/i],

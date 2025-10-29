@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk969649 = require("./969649.js");
 
-function v(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -40,7 +40,7 @@ function v(e) {
   }
   return e
 }
-let j = {
+let v = {
     animation: {
       BEG: 0,
       END: 75
@@ -61,24 +61,24 @@ let j = {
       var e;
       switch (null == x || null == (e = x.popout) ? true : e.type) {
         case f.J.LEVEL_REACHED:
-          return (0, r.jsx)(g.jG, v({
+          return (0, r.jsx)(g.jG, j({
             guildId: t
           }, x.popout));
         case f.J.PERKS_AVAILABLE:
-          return (0, r.jsx)(g.$h, v({
+          return (0, r.jsx)(g.$h, j({
             guildId: t
           }, x.popout));
         case f.J.PERKS_PURCHASABLE:
-          return (0, r.jsx)(g.yI, v({
+          return (0, r.jsx)(g.yI, j({
             guildId: t
           }, x.popout));
         case f.J.NEW_PERK_AVAILABLE:
-          return (0, r.jsx)(g.cO, v({
+          return (0, r.jsx)(g.cO, j({
             guildId: t
           }, x.popout));
         case f.J.GAME_SERVER_HOSTING_AVAILABLE:
         case f.J.GAME_SERVER_HOSTING_GUILD_ELIGIBLE:
-          return (0, r.jsx)(g.dJ, v({
+          return (0, r.jsx)(g.dJ, j({
             guildId: t
           }, x.popout));
         default:
@@ -101,7 +101,7 @@ let j = {
       renderPopout: E,
       children: e => {
         var i, a;
-        return (0, r.jsx)(u.m, (i = v({}, e), a = a = {
+        return (0, r.jsx)(u.m, (i = j({}, e), a = a = {
           ref: w,
           className: y.container,
           id: "skill-trees-".concat(t),
@@ -115,7 +115,7 @@ let j = {
             children: (0, r.jsx)(s.kci, {
               nextScene: Z,
               className: y.lottie,
-              sceneSegments: j,
+              sceneSegments: v,
               importData: () => n.e("50821").then(n.t.bind(n, 548421, 19)),
               onScenePlay: T,
               rendererSettings: {

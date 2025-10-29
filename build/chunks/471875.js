@@ -144,20 +144,20 @@ function c(e) {
     contains: ["self"].concat(R)
   });
   let P = [].concat(N, I.contains),
-    D = P.concat([{
+    w = P.concat([{
       begin: /(\s*)\(/,
       end: /\)/,
       keywords: E,
       contains: ["self"].concat(P)
     }]),
-    w = {
+    D = {
       className: "params",
       begin: /(\s*)\(/,
       end: /\)/,
       excludeBegin: true,
       excludeEnd: true,
       keywords: E,
-      contains: D
+      contains: w
     },
     L = {
       variants: [{
@@ -201,7 +201,7 @@ function c(e) {
         3: "title.function"
       },
       label: "func.def",
-      contains: [w],
+      contains: [D],
       illegal: /%/
     },
     j = {
@@ -234,7 +234,7 @@ function c(e) {
       },
       contains: [{
         begin: /\(\)/
-      }, w]
+      }, D]
     },
     F = "(\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)|" + e.UNDERSCORE_IDENT_RE + ")\\s*=>",
     V = {
@@ -244,14 +244,14 @@ function c(e) {
         1: "keyword",
         3: "title.function"
       },
-      contains: [w]
+      contains: [D]
     };
   return {
     name: "JavaScript",
     aliases: ["js", "jsx", "mjs", "cjs"],
     keywords: E,
     exports: {
-      PARAMS_CONTAINS: D,
+      PARAMS_CONTAINS: w,
       CLASS_REFERENCE: x
     },
     illegal: /#(?![$_A-z])/,
@@ -289,7 +289,7 @@ function c(e) {
             excludeBegin: true,
             excludeEnd: true,
             keywords: E,
-            contains: D
+            contains: w
           }]
         }]
       }, {
@@ -323,7 +323,7 @@ function c(e) {
       begin: "\\b(?!function)" + e.UNDERSCORE_IDENT_RE + "\\([^()]*(\\([^()]*(\\([^()]*\\)[^()]*)*\\)[^()]*)*\\)\\s*\\{",
       returnBegin: true,
       label: "func.def",
-      contains: [w, e.inherit(e.TITLE_MODE, {
+      contains: [D, e.inherit(e.TITLE_MODE, {
         begin: d,
         className: "title.function"
       })]
@@ -338,7 +338,7 @@ function c(e) {
       className: {
         1: "title.function"
       },
-      contains: [w]
+      contains: [D]
     }, G, j, L, Z, {
       match: /\$[(.]/
     }]

@@ -99,7 +99,7 @@ function U(e) {
     ec = (0, l.e7)([y.Z], () => y.Z.enabled),
     eu = s.M.EEA_COUNTRIES.has(O.Z.ipCountryCodeWithFallback),
     ed = G === P.A.PURCHASING || G === P.A.COMPLETED,
-    ef = (0, D.m)(B, Z),
+    ef = (0, w.m)(B, Z),
     e_ = null != ef ? ef.type : null;
   i.useEffect(() => {
     en && Z === et && et !== I.c && null == es && (0, u.x2)(er.applicationId, er.id, et, {
@@ -133,7 +133,7 @@ function U(e) {
       application: U,
       sku: er,
       isEmbeddedIAP: W
-    }), em && (0, r.jsx)(w.Z, {
+    }), em && (0, r.jsx)(D.Z, {
       sku: er
     }), null != $ ? (0, r.jsx)(b.s, {
       giftRecipient: $

@@ -87,18 +87,18 @@ function j(e) {
     }
   }, [a]);
   return (0, r.jsx)("li", {
-    className: w.marginBottom20,
+    className: D.marginBottom20,
     children: (0, r.jsx)(c.P3F, {
       innerRef: o,
-      className: D.backupCode,
+      className: w.backupCode,
       onKeyDown: s,
       children: (0, r.jsx)(l.$q, {
         displayOnly: true,
         readOnly: true,
-        className: D.codeCheckbox,
+        className: w.codeCheckbox,
         value: n,
         children: (0, r.jsx)("span", {
-          className: D.code,
+          className: w.code,
           children: a
         })
       })

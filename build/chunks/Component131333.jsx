@@ -67,7 +67,7 @@ let b = [],
   N = 48,
   R = .01,
   P = new Set(["jack_o_lantern", "nose"]),
-  D = {
+  w = {
     jack_o_lantern: {
       sprites: (0, Chunk661637.Z)(["chocolate_bar", "lollipop", "candy"])
     },
@@ -76,7 +76,7 @@ let b = [],
     }
   };
 
-function w(e) {
+function D(e) {
   if (null == e) return null;
   for (let t of P)
     if (null != e.match(new RegExp(":".concat(t, "(_tone[1-9])?")))) return t;
@@ -169,7 +169,7 @@ function j(e) {
     children: t
   } = e, n = i.useRef({}), [a, s] = i.useState(null), l = M(a), _ = i.useRef(null), [h, m] = i.useState(false), g = i.useRef("jack_o_lantern"), E = (0, u.bp)(), b = i.useCallback(e => {
     if (!h) {
-      let t = w(e);
+      let t = D(e);
       null != t && (g.current = t, m(true), s(null))
     }
   }, [h]), y = i.useMemo(() => ({
@@ -193,8 +193,8 @@ function j(e) {
     }
   }, [a]), E !== f.IlC.APP) ? t : (0, r.jsxs)(d.Rm.Provider, {
     value: y,
-    children: [t, Object.keys(D).map(e => {
-      let t = D[e];
+    children: [t, Object.keys(w).map(e => {
+      let t = w[e];
       return (0, r.jsx)(k, {
         ref: t => {
           null != t ? n.current[e] = t : delete n.current[e]

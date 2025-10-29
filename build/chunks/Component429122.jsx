@@ -73,10 +73,10 @@ let _ = Chunk647438.memo(function(e) {
     optInEnabled: O
   } = e, {
     hasDivider: y,
-    canHaveVoiceSummary: v
-  } = i.useMemo(() => (0, d.ie)(n, O, t), [n, O, t, p]), j = i.useMemo(() => t === u.wZ ? null : n.getCategoryFromSection(t), [n, t, p]), x = (0, a.DM)(m), C = (0, l.Wu)([s.ZP], () => {
-    if (null == j || !j.isCollapsed || !v) return [];
-    let e = j.getChannelRecords(),
+    canHaveVoiceSummary: j
+  } = i.useMemo(() => (0, d.ie)(n, O, t), [n, O, t, p]), v = i.useMemo(() => t === u.wZ ? null : n.getCategoryFromSection(t), [n, t, p]), x = (0, a.DM)(m), C = (0, l.Wu)([s.ZP], () => {
+    if (null == v || !v.isCollapsed || !j) return [];
+    let e = v.getChannelRecords(),
       t = [];
     for (let n of e) {
       if (!n.isGuildVocal()) continue;
@@ -84,7 +84,7 @@ let _ = Chunk647438.memo(function(e) {
       (!x || e) && t.push(n)
     }
     return t
-  }, [j, v, m, x]), E = i.useMemo(() => (0, c.c4)({
+  }, [v, j, m, x]), E = i.useMemo(() => (0, c.c4)({
     channels: C,
     selectedChannelId: b,
     selectedVoiceChannelId: _,
@@ -97,7 +97,7 @@ let _ = Chunk647438.memo(function(e) {
   let S = y ? (0, r.jsx)("div", {
     className: h.sectionDivider
   }) : null;
-  return v && 0 !== E.length ? (0, r.jsxs)(r.Fragment, {
+  return j && 0 !== E.length ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)("div", {
       className: h.voiceUserSummary,
       children: (0, r.jsx)(o.ZP, {

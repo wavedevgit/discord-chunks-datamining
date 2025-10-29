@@ -6,7 +6,7 @@ require.d(exports, {
   FZ: () => ex,
   ZP: () => e7,
   b6: () => eR,
-  ik: () => eD,
+  ik: () => ew,
   ow: () => eO,
   rH: () => eA
 }), require("./388685.js"), require("./35282.js"), require("./539854.js"), require("./704826.js"), require("./290780.js"), require("./642613.js");
@@ -362,13 +362,13 @@ function eP(e) {
   return i.enabledLegacy || i.enabledOOP
 }
 
-function eD(e) {
+function ew(e) {
   let t = eo.enableDetection[eA(e)];
   return null == t || t
 }
 
-function ew(e) {
-  return !e.hidden && eD(e)
+function eD(e) {
+  return !e.hidden && ew(e)
 }
 
 function eL() {
@@ -380,7 +380,7 @@ function ex(e, t, n, r) {
     played: null != e.lastFocused && 0 !== e.lastFocused ? l()(new Date(e.lastFocused * N.Z.Millis.SECOND)).fromNow() : " ",
     overlay: eP(e),
     verified: n.isGameInDatabase(e),
-    detectable: eD(e)
+    detectable: ew(e)
   });
   return null != e.id && null != el[e.id] && (i.overlayWarn = el[e.id].warn), i
 }
@@ -463,7 +463,7 @@ function eB() {
 
 function eZ(e, t) {
   if (true === t) {
-    let t = w.ZP.getDiscordUtils();
+    let t = D.ZP.getDiscordUtils();
     if (null != t && null != t.getWindowHandleFromPid) {
       let n = t.getWindowHandleFromPid(e);
       return null != n && "0" !== n ? n : null
@@ -563,7 +563,7 @@ function e$(e) {
 function e0(e) {
   let {
     game: t
-  } = e, n = eD(t);
+  } = e, n = ew(t);
   eo.enableDetection[eA(t)] = !n, eL(), C.default.track(j.rMx.USER_SETTINGS_GAME_DETECTION_TOGGLE, {
     enabled: !n
   })
@@ -592,8 +592,8 @@ function e3(e) {
 
 function e2(e) {
   var t;
-  if (__OVERLAY__ || !D.isPlatformEmbedded) return;
-  let n = w.ZP.getDiscordUtils().notifyGameLaunched;
+  if (__OVERLAY__ || !w.isPlatformEmbedded) return;
+  let n = D.ZP.getDiscordUtils().notifyGameLaunched;
   if (null == n) return;
   let r = T.Z.getDetectableGame(e.applicationId);
   null != r && n(r.id, r.name, null != (t = e.pids) ? t : [])
@@ -696,7 +696,7 @@ function e8(e) {
           distributor_v1: o.distributor,
           verified_v1: (0, x.vp)(o.exePath, null != (r = null == s ? true : s.executables) ? r : []),
           is_launcher_v1: o.isLauncher,
-          game_detection_enabled_v1: eD(o),
+          game_detection_enabled_v1: ew(o),
           executable_path_v1: (0, x.N6)(o.exePath),
           distributor_game_id_v1: o.sku,
           hidden_by_distributor_v1: o.hidden,
@@ -707,7 +707,7 @@ function e8(e) {
           distributor_v2: e.distributor,
           verified_v2: (0, x.vp)(e.exePath, null != (i = null == l ? true : l.executables) ? i : []),
           is_launcher_v2: e.isLauncher,
-          game_detection_enabled_v2: eD(e),
+          game_detection_enabled_v2: ew(e),
           executable_path_v2: (0, x.N6)(e.exePath),
           distributor_game_id_v2: e.sku,
           hidden_by_distributor_v2: e.hidden,
@@ -748,13 +748,13 @@ class e5 extends(i = Chunk442837.ZP.Store) {
     this.waitFor(Chunk417363.Z, Chunk353926.Z, Chunk77498.Z, Chunk283595.Z), K = Chunk392711.gamesSeen.filter(e => !(0, I.le)(e)), this.syncWith([Chunk353926.Z], e4), this.syncWith([Chunk283595.Z, Chunk77498.Z, Chunk417363.Z], o().throttle(ek, 1e3)), Chunk913527 && eL()
   }
   getVisibleGame() {
-    return null == en || ew(en) ? en : null
+    return null == en || eD(en) ? en : null
   }
   getCurrentGameForAnalytics() {
     return en
   }
   getVisibleRunningGames() {
-    return et.filter(ew)
+    return et.filter(eD)
   }
   getRunningGames() {
     return et
@@ -834,7 +834,7 @@ class e5 extends(i = Chunk442837.ZP.Store) {
     return X && !this.isInputServiceInitialized()
   }
   isDetectionEnabled(e) {
-    return eD(e)
+    return ew(e)
   }
   addExecutableTrackedByAnalytics(e) {
     var t;

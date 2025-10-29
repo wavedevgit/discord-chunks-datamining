@@ -86,7 +86,7 @@ function T(e) {
         R(b.intl.string(e.code === _.SM.BILLING_PAUSE_INVALID_UPDATE ? b.t.dq4vq7 : b.t["5mlOCW"])), C(false)
       }
     }, [y, t, d]),
-    D = () => {
+    w = () => {
       switch (T) {
         case 1:
           return b.intl.string(b.t.l52ih2);
@@ -96,7 +96,7 @@ function T(e) {
           return ""
       }
     },
-    w = () => {
+    D = () => {
       switch (T) {
         case 1:
           return [{
@@ -139,8 +139,8 @@ function T(e) {
       transitionState: n,
       onClose: async () => await a(),
       size: "sm",
-      title: D(),
-      actions: w(),
+      title: w(),
+      actions: D(),
       children: L()
     })
   })

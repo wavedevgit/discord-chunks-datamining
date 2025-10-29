@@ -6,7 +6,7 @@ require.d(exports, {
   e5: () => R,
   gx: () => P,
   lp: () => j,
-  wi: () => D
+  wi: () => w
 }), require("./997841.js"), require("./388685.js");
 var Chunk913527 = require("./913527.js"),
   i = require.n(Chunk913527),
@@ -85,7 +85,7 @@ function N(e) {
   return new u.pi(T(v({}, e), {
     timestamp: new Date(e.timestamp),
     editedTimestamp: null != e.edited_timestamp ? new Date(e.edited_timestamp) : null,
-    attachments: w(e),
+    attachments: D(e),
     embeds: x(e),
     components: (0, o.uZ)(null != (t = e.components) ? t : []),
     codedLinks: y.V$x.NON_PARSED.has(e.type) ? [] : (0, a.ZP)(e.content)
@@ -103,8 +103,8 @@ function R(e) {
     S = null != (a = e.mention_roles) ? a : [],
     R = null != (o = e.mention_channels) ? o : [],
     P = null != (l = e.mention_games) ? l : [],
-    D = e.message_reference,
-    w = A(e),
+    w = e.message_reference,
+    D = A(e),
     x = null,
     j = null == e ? true : e.gift_info,
     U = e.gifting_prompt,
@@ -115,11 +115,11 @@ function R(e) {
     id: e.id,
     channel_id: e.channel_id,
     type: y.uaV.DEFAULT,
-    author: w,
+    author: D,
     timestamp: O.timestamp,
     isUnsupported: true
   }) : T(v({}, e, x, O.toJS()), {
-    author: w,
+    author: D,
     webhookId: e.webhook_id,
     blocked: _.Z.isBlockedForMessage(e) || null != B && _.Z.isBlocked(B),
     ignored: _.Z.isIgnoredForMessage(e) || null != B && _.Z.isIgnored(B),
@@ -128,7 +128,7 @@ function R(e) {
     mentionRoles: S,
     mentionChannels: R,
     mentionGames: P,
-    messageReference: D,
+    messageReference: w,
     mentioned: (0, E.Sz)({
       userId: f.default.getId(),
       channelId: e.channel_id,
@@ -163,14 +163,14 @@ function P(e, t) {
   }) : v({}, e, t)
 }
 
-function D(e, t) {
+function w(e, t) {
   if (null != t.edited_timestamp) return R(t, {
     reactions: e.reactions,
     interactionData: e.interactionData
   });
   let n = e,
     r = false;
-  if (null != t.call && (n = n.set("call", L(t.call, e.timestamp))), null != t.attachments && (n = n.set("attachments", w(t))), null != t.application && (n = n.set("application", t.application)), null != t.activity && (n = n.set("activity", t.activity)), null != t.content && "" !== t.content && (n = n.set("content", t.content)), null != t.embeds && (n = n.set("embeds", x(t))), null != t.message_snapshots && (n = n.set("messageSnapshots", k(t))), t.pinned !== n.pinned && (n = n.set("pinned", t.pinned)), null != n.webhookId && null != t.author && (n = n.set("author", new d.Z(t.author))), null != t.flags && t.flags !== n.flags && (n = n.set("flags", t.flags)), null != t.components && (n = n.set("components", (0, o.uZ)(t.components))), null != t.role_subscription_data && (n = n.set("roleSubscriptionData", t.role_subscription_data)), null != t.reactions) {
+  if (null != t.call && (n = n.set("call", L(t.call, e.timestamp))), null != t.attachments && (n = n.set("attachments", D(t))), null != t.application && (n = n.set("application", t.application)), null != t.activity && (n = n.set("activity", t.activity)), null != t.content && "" !== t.content && (n = n.set("content", t.content)), null != t.embeds && (n = n.set("embeds", x(t))), null != t.message_snapshots && (n = n.set("messageSnapshots", k(t))), t.pinned !== n.pinned && (n = n.set("pinned", t.pinned)), null != n.webhookId && null != t.author && (n = n.set("author", new d.Z(t.author))), null != t.flags && t.flags !== n.flags && (n = n.set("flags", t.flags)), null != t.components && (n = n.set("components", (0, o.uZ)(t.components))), null != t.role_subscription_data && (n = n.set("roleSubscriptionData", t.role_subscription_data)), null != t.reactions) {
     var i;
     n = n.set("reactions", M(null != (i = e.reactions) ? i : t.reactions))
   }
@@ -180,7 +180,7 @@ function D(e, t) {
   }))), n
 }
 
-function w(e) {
+function D(e) {
   return null == e.attachments ? [] : e.attachments.map(e => T(v({}, e), {
     spoiler: e.filename.startsWith(b._j)
   }))

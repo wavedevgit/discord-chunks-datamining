@@ -126,7 +126,7 @@ function P(e) {
   }), en = i.useContext(c.z), er = i.useRef(null), ei = i.useRef(null), ea = null != P ? P : "multiple" !== t, eo = Array.isArray(V) ? V.length > 0 : null != V, es = l || _, {
     measuredWidth: el,
     itemsForMeasurement: ec
-  } = D(ee, t), eu = i.useCallback(() => {
+  } = w(ee, t), eu = i.useCallback(() => {
     es || K(!W)
   }, [es, K, W]), ed = i.useCallback(() => {
     var e;
@@ -250,7 +250,7 @@ function P(e) {
         "aria-invalid": (null == en ? true : en.errorMessageId) != null,
         children: [(0, r.jsxs)(u.n, {
           children: [M, ", "]
-        }), (0, r.jsx)(w, {
+        }), (0, r.jsx)(D, {
           tagGroupRef: Y,
           placeholder: x,
           selectionMode: t,
@@ -291,7 +291,7 @@ function P(e) {
   })
 }
 
-function D(e, t) {
+function w(e, t) {
   let {
     ref: n,
     width: a
@@ -321,7 +321,7 @@ function D(e, t) {
   }
 }
 
-function w(e) {
+function D(e) {
   let {
     placeholder: t,
     selectionMode: n,

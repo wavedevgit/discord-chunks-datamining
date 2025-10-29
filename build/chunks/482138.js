@@ -29,8 +29,8 @@ var r, Chunk98405 = require("./98405.js"),
   N = Chunk127849.URL,
   R = Chunk127849.TypeError,
   P = Chunk127849.parseInt,
-  D = Math.floor,
-  w = Math.pow,
+  w = Math.floor,
+  D = Math.pow,
   L = Chunk46015("".charAt),
   x = Chunk46015(/./.exec),
   M = Chunk46015([].join),
@@ -73,9 +73,9 @@ var r, Chunk98405 = require("./98405.js"),
     }
     for (r = 0; r < t; r++)
       if (o = n[r], r === t - 1) {
-        if (o >= w(256, 5 - t)) return null
+        if (o >= D(256, 5 - t)) return null
       } else if (o > 255) return null;
-    for (r = 0, s = j(n); r < n.length; r++) s += n[r] * w(256, 3 - r);
+    for (r = 0, s = j(n); r < n.length; r++) s += n[r] * D(256, 3 - r);
     return s
   },
   el = function(e) {
@@ -136,7 +136,7 @@ var r, Chunk98405 = require("./98405.js"),
   eu = function(e) {
     var t, n, r, i;
     if ("number" == typeof e) {
-      for (n = 0, t = []; n < 4; n++) H(t, e % 256), e = D(e / 256);
+      for (n = 0, t = []; n < 4; n++) H(t, e % 256), e = w(e / 256);
       return M(t, ".")
     }
     if ("object" == typeof e) {
@@ -207,8 +207,8 @@ var r, Chunk98405 = require("./98405.js"),
   eN = {},
   eR = {},
   eP = {},
-  eD = {},
   ew = {},
+  eD = {},
   eL = {},
   ex = {},
   eM = {},
@@ -328,11 +328,11 @@ eF.prototype = {
             d = ""
           } else if (a === r || "/" === a || "?" === a || "#" === a || "\\" === a && l.isSpecial()) {
             if (f && "" === d) return Y;
-            u -= h(d).length + 1, d = "", c = eD
+            u -= h(d).length + 1, d = "", c = ew
           } else d += a;
           break;
-        case eD:
         case ew:
+        case eD:
           if (t && "file" === l.scheme) {
             c = ek;
             continue
@@ -348,7 +348,7 @@ eF.prototype = {
           else {
             if ("" === d) return K;
             if (s = l.parseHost(d)) return s;
-            if (d = "", c = eL, t === ew) return
+            if (d = "", c = eL, t === eD) return
           }
           break;
         case eL:
@@ -523,14 +523,14 @@ eF.prototype = {
     return null === module ? "" : null === exports ? eu(module) : eu(module) + ":" + exports
   },
   setHost: function(e) {
-    this.cannotBeABaseURL || this.parse(e, eD)
+    this.cannotBeABaseURL || this.parse(e, ew)
   },
   getHostname: function() {
     var e = this.host;
     return null === module ? "" : eu(module)
   },
   setHostname: function(e) {
-    this.cannotBeABaseURL || this.parse(e, ew)
+    this.cannotBeABaseURL || this.parse(e, eD)
   },
   getPort: function() {
     var e = this.port;

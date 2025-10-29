@@ -23,7 +23,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk361584 = require("./361584.js");
 
-function j(e) {
+function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -78,7 +78,7 @@ function E(e) {
     onTooltipShow: () => d(true),
     onTooltipHide: () => d(false),
     children: (0, r.jsx)(a.P3F, {
-      className: v.action,
+      className: j.action,
       onClick: e => {
         (0, g.Qz)({
           message: l,
@@ -88,7 +88,7 @@ function E(e) {
       },
       children: (0, r.jsx)(s, {
         size: u ? "sm" : "xs",
-        className: v.actionIcon
+        className: j.actionIcon
       })
     })
   })
@@ -135,7 +135,7 @@ function S(e) {
       onTooltipHide: () => h(false),
       children: (0, r.jsx)(a.P3F, {
         innerRef: O,
-        className: v.action,
+        className: j.action,
         onClick: e => {
           (0, g.Qz)({
             message: n,
@@ -145,10 +145,10 @@ function S(e) {
           let t = !m;
           _(t), t ? y(n.id, d) : C(n.id, d)
         },
-        children: (0, r.jsx)(s, x(j({}, e), {
+        children: (0, r.jsx)(s, x(v({}, e), {
           message: n,
           "aria-label": l,
-          className: v.actionIcon,
+          className: j.actionIcon,
           size: f ? "sm" : "xs"
         }))
       })
@@ -175,7 +175,7 @@ let I = {
   [Chunk982183.r0.BOOKMARK]: {
     type: "menu",
     label: Chunk388032.intl.string(Chunk388032.t["9p3D9p"]),
-    Icon: e => null != f.Z.getSavedMessage(e.message.channel_id, e.message.id) ? (0, r.jsx)(a.plf, j({}, e)) : (0, r.jsx)(a.gt9, j({}, e)),
+    Icon: e => null != f.Z.getSavedMessage(e.message.channel_id, e.message.id) ? (0, r.jsx)(a.plf, v({}, e)) : (0, r.jsx)(a.gt9, v({}, e)),
     interactionType: Chunk804932.s_.BOOKMARK,
     Menu: e => {
       let {
@@ -185,7 +185,7 @@ let I = {
         message: t,
         savedMessage: i
       });
-      return (0, r.jsxs)(a.v2r, x(j({}, n), {
+      return (0, r.jsxs)(a.v2r, x(v({}, n), {
         navId: "message-reminder-create",
         "aria-label": y.intl.string(y.t.mJ3P0N),
         onClose: n.closePopout,
@@ -223,11 +223,11 @@ let I = {
         channel: t,
         renderPopoutProps: n
       } = e;
-      return t.isThread() ? (0, r.jsx)(h.Z, x(j({}, n), {
+      return t.isThread() ? (0, r.jsx)(h.Z, x(v({}, n), {
         channel: t,
         navId: "thread-context",
         label: y.intl.string(y.t["1NBjqb"])
-      })) : (0, r.jsx)(u.Z, x(j({}, n), {
+      })) : (0, r.jsx)(u.Z, x(v({}, n), {
         channel: t,
         navId: "channel-context",
         label: y.intl.string(y.t.Xm41aV)
@@ -254,17 +254,17 @@ function P(e) {
     gap: 4,
     align: "center",
     justify: "center",
-    className: v.actions,
+    className: j.actions,
     children: o.map(e => {
       let i = I[e];
       switch (i.type) {
         case "standard":
-          return (0, r.jsx)(E, x(j({}, i), {
+          return (0, r.jsx)(E, x(v({}, i), {
             actionType: e,
             message: t
           }), e);
         case "menu":
-          return (0, r.jsx)(S, x(j({}, i), {
+          return (0, r.jsx)(S, x(v({}, i), {
             actionType: e,
             channel: n,
             message: t

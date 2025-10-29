@@ -181,8 +181,8 @@ class en extends Chunk98597.ZP {
       connectDragPreview: m,
       canReorderChannel: b,
       canMoveMembers: _,
-      showTutorial: v,
-      hasActiveEvent: j,
+      showTutorial: j,
+      hasActiveEvent: v,
       embeddedApps: x,
       isSubscriptionGated: C,
       isFavoriteSuggestion: E,
@@ -286,7 +286,7 @@ class en extends Chunk98597.ZP {
         shouldShowGuildVerificationPopout: true
       });
       let a = l && o > 0;
-      a && d.Z.updateChatOpen(n.id, true), j.Z.handleVoiceConnect({
+      a && d.Z.updateChatOpen(n.id, true), v.Z.handleVoiceConnect({
         channel: n,
         connected: t,
         needSubscriptionToAccess: i,
@@ -417,12 +417,12 @@ function ei(e) {
       bypassLimit: k.Z.can(q.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), f = (0, a.e7)([B.Z], () => B.Z.hasVideo(n.id)), h = (0, g.ZP)(n), m = (0, v.ZP)(n), O = (0, P.qY)(n.id), {
+  }), f = (0, a.e7)([B.Z], () => B.Z.hasVideo(n.id)), h = (0, g.ZP)(n), m = (0, j.ZP)(n), O = (0, P.qY)(n.id), {
     enabled: y
   } = b.W.useExperiment({
     guildId: t.id,
     location: "VoiceChannel"
-  }), j = (0, a.e7)([_.Z], () => !!y && null != _.Z.getStartTime(n), [n, y]), {
+  }), v = (0, a.e7)([_.Z], () => !!y && null != _.Z.getStartTime(n), [n, y]), {
     isSubscriptionGated: x,
     needSubscriptionToAccess: E
   } = (0, I.Z)(n.id), S = (0, C.Z)(), N = (0, a.e7)([U.ZP], () => U.ZP.isFavorite(t.id, n.id)), w = e.connected || (null == S ? true : S.channelId) === n.id, {
@@ -466,6 +466,6 @@ function ei(e) {
     showEmptyChannelTopic: R,
     enableOpenTIVForPing: L,
     hasChannelInfo: null != F,
-    hasStartTime: j
+    hasStartTime: v
   }))
 }

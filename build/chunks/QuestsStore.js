@@ -104,7 +104,7 @@ function et(e) {
   let {
     entitlements: n
   } = e, r = null == (t = n.items[0].tenantMetadata) ? true : t.questRewards.reward;
-  return (null == r ? true : r.tag) !== D.w.REWARD_CODE ? null : r.rewardCode
+  return (null == r ? true : r.tag) !== w.w.REWARD_CODE ? null : r.rewardCode
 }
 
 function en(e, t) {
@@ -326,14 +326,14 @@ function eP(e) {
   }), eN(t.questId)
 }
 
-function eD(e) {
+function ew(e) {
   let {
     questId: t
   } = e;
   eN(t)
 }
 
-function ew(e) {
+function eD(e) {
   let {
     streamKey: t
   } = e;
@@ -595,10 +595,10 @@ let eK = new eW(Chunk570140.Z, {
     QUESTS_CLAIM_REWARD_FAILURE: eC,
     QUESTS_DISMISS_CONTENT_BEGIN: eR,
     QUESTS_DISMISS_CONTENT_SUCCESS: eP,
-    QUESTS_DISMISS_CONTENT_FAILURE: eD,
+    QUESTS_DISMISS_CONTENT_FAILURE: ew,
     QUESTS_USER_STATUS_UPDATE: eL,
     STREAM_CLOSE: eg,
-    QUESTS_DISMISS_PROGRESS_TRACKING_FAILURE_NOTICE: ew,
+    QUESTS_DISMISS_PROGRESS_TRACKING_FAILURE_NOTICE: eD,
     QUESTS_PREVIEW_UPDATE_SUCCESS: ex,
     QUESTS_DELIVERY_OVERRIDE: eM,
     QUESTS_SELECT_TASK_PLATFORM: ek,

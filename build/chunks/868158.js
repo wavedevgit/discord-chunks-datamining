@@ -2,11 +2,11 @@
 /** chunk id: 868158, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Eb: () => w,
+  Eb: () => D,
   Fx: () => k,
   IM: () => L,
   J2: () => F,
-  r$: () => D
+  r$: () => w
 }), require("./539854.js"), require("./388685.js"), require("./415506.js");
 var Chunk512722 = require("./512722.js"),
   i = require.n(Chunk512722),
@@ -88,7 +88,7 @@ let C = new Chunk710845.Z("ReadyPayloadUtils"),
   R = null,
   P = {};
 
-function D(e, t) {
+function w(e, t) {
   var n, {
       guilds: r,
       merged_members: i,
@@ -119,7 +119,7 @@ function D(e, t) {
   })
 }
 
-function w() {
+function D() {
   let e = Chunk287328.Z.database(),
     t = (0, Chunk768433.O)() ? Chunk406966.Z.getCommittedVersions() : Promise.resolve({});
   return Promise.all([exports, (0, Chunk768433.O)() ? Chunk591526.Z.getGuildIds() : Promise.resolve(new Set), null != module ? Chunk795513.Z.okAsync(module) : Promise.resolve(false)]).then(e => {

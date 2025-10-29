@@ -30,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
 function S(e) {
   let {
     premiumSubscription: t
-  } = e, n = (0, a.e7)([h.Z], () => h.Z.boostSlots), S = i.useMemo(() => Object.values(n), [n]), A = (0, a.e7)([p.default], () => p.default.getCurrentUser()), C = m.ZP.isPremium(A, I.PremiumTypes.TIER_2), N = (0, a.e7)([f.Z], () => f.Z.affinities), R = (0, a.e7)([_.ZP], () => _.ZP.getFlattenedGuildIds()), P = N.length > 0 || R.length > 0, D = S.length > 0, w = i.useMemo(() => S.filter(e => null != e.premiumGuildSubscription), [S]), L = w.length > 0, x = S.length > w.length, M = (0, a.e7)([d.Z], () => d.Z.getCurrentUserAppliedBoosts()), {
+  } = e, n = (0, a.e7)([h.Z], () => h.Z.boostSlots), S = i.useMemo(() => Object.values(n), [n]), A = (0, a.e7)([p.default], () => p.default.getCurrentUser()), C = m.ZP.isPremium(A, I.PremiumTypes.TIER_2), N = (0, a.e7)([f.Z], () => f.Z.affinities), R = (0, a.e7)([_.ZP], () => _.ZP.getFlattenedGuildIds()), P = N.length > 0 || R.length > 0, w = S.length > 0, D = i.useMemo(() => S.filter(e => null != e.premiumGuildSubscription), [S]), L = D.length > 0, x = S.length > D.length, M = (0, a.e7)([d.Z], () => d.Z.getCurrentUserAppliedBoosts()), {
     fractionalState: k
   } = (0, o.Z)({
     forceFetch: true
@@ -39,7 +39,7 @@ function S(e) {
     children: [(0, r.jsx)(s.oQ, {
       className: T.blockedPaymentsWarning
     }), (0, r.jsx)(E.Z, {
-      hasGuildBoostSlots: D,
+      hasGuildBoostSlots: w,
       hasAppliedGuildBoosts: L,
       hasBoostPerk: G,
       canAddBoosts: U

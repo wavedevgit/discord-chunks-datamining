@@ -187,8 +187,8 @@ function ey(e) {
     entry: o,
     onVoiceChannelPreview: m
   }), {
-    embeddedActivity: D
-  } = (0, $.Z)(o), w = eA(D), L = null != P && 0 === s.length ? [P] : s, x = L.length > 0, M = L.length >= 2, [k, U] = i.useState(!x), B = K.ZP.getName(null == t ? true : t.guild_id, null == t ? true : t.id, n), Z = null != t && g ? ec.intl.formatToPlainString(ec.t["8lzR/R"], {
+    embeddedActivity: w
+  } = (0, $.Z)(o), D = eA(w), L = null != P && 0 === s.length ? [P] : s, x = L.length > 0, M = L.length >= 2, [k, U] = i.useState(!x), B = K.ZP.getName(null == t ? true : t.guild_id, null == t ? true : t.id, n), Z = null != t && g ? ec.intl.formatToPlainString(ec.t["8lzR/R"], {
     channel: "#".concat(t.name)
   }) : ec.intl.formatToPlainString(ec.t["4c+CAx"], {
     channel: "@".concat(B)
@@ -253,7 +253,7 @@ function ey(e) {
       doNotNotifyOnError: false,
       location: el.dy.CONTENT_INVENTORY_MEMBERLIST
     }), null == r || r(i, n)
-  }, z = null != f ? f : null != R ? R : null != w ? w : true, q = () => {
+  }, z = null != f ? f : null != R ? R : null != D ? D : true, q = () => {
     E(e => !e), k && (null == b || b.focus())
   }, X = e => {
     U(e), e && (null == b || b.focus())
@@ -579,13 +579,13 @@ function eS(e) {
     T = O ? I : true,
     {
       activity: S,
-      activityApplication: D,
-      fallbackApplication: w
+      activityApplication: w,
+      fallbackApplication: D
     } = (0, $.Z)(y),
     {
       largeImage: L,
       smallImage: x
-    } = (0, z.YC)(S, null != D ? D : w),
+    } = (0, z.YC)(S, null != w ? w : D),
     {
       largeImage: M
     } = (0, z.rv)({
@@ -666,9 +666,9 @@ function eA(e) {
         "aria-label": ec.intl.string(ec.t["W/A4Qp"]),
         onClick: () => (0, L.Kh)(n.id),
         className: eu.voiceChannelPopoutReactorChannel,
-        children: [(0, r.jsx)(D.Z, {
+        children: [(0, r.jsx)(w.Z, {
           guild: t,
-          size: D.Z.Sizes.SMOL,
+          size: w.Z.Sizes.SMOL,
           className: eu.voiceChannelGuildIcon,
           active: true
         }), (0, r.jsx)(p.Fbu, {
@@ -718,7 +718,7 @@ function eC(e) {
     channel: s
   } = (0, et.Z)(n), {
     needSubscriptionToAccess: l
-  } = (0, w.Z)(null == t ? true : t.id), u = (0, c.e7)([U.Z], () => null != s ? U.Z.getGuild(s.guild_id) : true), f = (0, c.Wu)([H.ZP], () => null != s ? H.ZP.getVoiceStatesForChannel(s) : [], [s]), h = (0, c.e7)([V.Z], () => V.Z.isInChannel(null == s ? true : s.id)), g = i.useMemo(() => {
+  } = (0, D.Z)(null == t ? true : t.id), u = (0, c.e7)([U.Z], () => null != s ? U.Z.getGuild(s.guild_id) : true), f = (0, c.Wu)([H.ZP], () => null != s ? H.ZP.getVoiceStatesForChannel(s) : [], [s]), h = (0, c.e7)([V.Z], () => V.Z.isInChannel(null == s ? true : s.id)), g = i.useMemo(() => {
     for (let e of f) {
       let t = j.Z.getDMFromUserId(e.user.id),
         n = null != t && Z.ZP.isChannelMuted(null, t),
@@ -774,9 +774,9 @@ function eC(e) {
             "aria-label": ec.intl.string(ec.t.WIVYqJ),
             onClick: b,
             className: eu.voiceChannelPopoutReactorChannel,
-            children: [(0, r.jsx)(D.Z, {
+            children: [(0, r.jsx)(w.Z, {
               guild: u,
-              size: D.Z.Sizes.SMOL,
+              size: w.Z.Sizes.SMOL,
               className: eu.voiceChannelGuildIcon,
               active: true
             }), (0, r.jsx)(p.Fbu, {

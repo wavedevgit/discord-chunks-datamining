@@ -65,16 +65,16 @@ let P = Object.freeze({
     [Chunk212819.xQ.GUILD]: Chunk212819.h8.GUILD,
     [Chunk212819.xQ.APPLICATION]: Chunk212819.h8.APPLICATION
   }),
-  D = new RegExp("^".concat(Chunk212819.xQ.USER, "|").concat(Chunk212819.xQ.TEXT_CHANNEL, "|").concat(Chunk212819.xQ.VOICE_CHANNEL, "|\\").concat(Chunk212819.xQ.GUILD, "|\\").concat(Chunk212819.xQ.APPLICATION));
+  w = new RegExp("^".concat(Chunk212819.xQ.USER, "|").concat(Chunk212819.xQ.TEXT_CHANNEL, "|").concat(Chunk212819.xQ.VOICE_CHANNEL, "|\\").concat(Chunk212819.xQ.GUILD, "|\\").concat(Chunk212819.xQ.APPLICATION));
 
-function w(e) {
+function D(e) {
   var t;
   let n = null != (t = P[e.charAt(0)]) ? t : null;
-  return [e.replace(D, ""), n]
+  return [e.replace(w, ""), n]
 }
 
 function L(e) {
-  let [t, n] = w(e);
+  let [t, n] = D(e);
   return {
     query: t,
     queryMode: n

@@ -85,14 +85,14 @@ function P(e) {
   return (null == (t = e.userStatus) ? true : t.claimedAt) != null ? "COMPLETED_CLAIMED" : (null == (n = e.userStatus) ? true : n.completedAt) != null ? "COMPLETED" : (null == (r = e.userStatus) ? true : r.enrolledAt) != null ? "ENROLLED" : "NONE"
 }
 
-function D(e) {
+function w(e) {
   var t, n;
   return E.T.getConfig({
     location: "quest_analytics"
   }).use_ad_session_id ? e : null != (n = null == (t = (0, s.Ai)()) ? true : t.uuid) ? n : null
 }
 
-function w(e, t, n) {
+function D(e, t, n) {
   var r, i;
   let a = y.r.build(e.config),
     s = (0, o.Gy)(n).uuid;
@@ -103,7 +103,7 @@ function w(e, t, n) {
     game_name: a.application.name,
     application_ids: null != (i = null == (r = a.applications) ? true : r.map(e => e.id)) ? i : [],
     client_ad_session_id: s,
-    billing_session_id: D(s)
+    billing_session_id: w(s)
   }, (0, h.qe)(e.id, t))
 }
 
@@ -128,7 +128,7 @@ function x(e) {
   if (null == s || (0, b.X)({
       location: O.dr.QUEST_PREVIEW_TOOL
     }) && d.Z.getLayers().includes(v.S9g.USER_SETTINGS)) return;
-  let c = T({}, w(s, o, a), r);
+  let c = T({}, D(s, o, a), r);
   if (u.default.isLoggingAnalyticsEvents && console.info("[Quest] AnalyticsUtils.track", n, c), s.preview) return;
   let _ = N.has(n);
   if (i) return l.ZP.trackWithMetadata(n, c, _);

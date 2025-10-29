@@ -66,8 +66,8 @@ let _ = "mp4",
   N = "",
   R = "",
   P = [],
-  D = [],
   w = [],
+  D = [],
   L = [];
 
 function x(e) {
@@ -75,7 +75,7 @@ function x(e) {
 }
 
 function M(e) {
-  "" === (N = e.query) && (R = "", P = [], w = [])
+  "" === (N = e.query) && (R = "", P = [], D = [])
 }
 
 function k(e) {
@@ -135,7 +135,7 @@ function G(e) {
 
 function B(e) {
   let t = e.trendingCategories;
-  D = [...null != e.trendingGIFPreview ? [{
+  w = [...null != e.trendingGIFPreview ? [{
     type: s.wI2.TRENDING_GIFS,
     name: l.intl.string(l.t.H6zNFz),
     src: j(e.trendingGIFPreview.src),
@@ -151,7 +151,7 @@ function Z(e) {
   let {
     items: t
   } = e;
-  w = t
+  D = t
 }
 
 function F(e) {
@@ -174,13 +174,13 @@ class V extends(r = Chunk442837.ZP.Store) {
     return P
   }
   getTrendingCategories() {
-    return D
+    return w
   }
   getSelectedFormat() {
     return S
   }
   getSuggestions() {
-    return w
+    return D
   }
   getTrendingSearchTerms() {
     return L

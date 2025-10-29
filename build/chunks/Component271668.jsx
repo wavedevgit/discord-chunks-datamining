@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk57507 = require("./57507.js"),
   Chunk239840 = require("./239840.js");
-let w = 512,
+let D = 512,
   L = 7,
   x = 56,
   M = 16,
@@ -91,7 +91,7 @@ let w = 512,
       scrollOffset: j,
       searchQuery: ""
     }), er = e => {
-      let t = q.length * (k + M) + (X.reduce((e, t) => e + t.data.length, 0) - (Q ? L : 0)) * x - w;
+      let t = q.length * (k + M) + (X.reduce((e, t) => e + t.data.length, 0) - (Q ? L : 0)) * x - D;
       Q && e + U > t && ee(), en(e), B(), l.current = e
     }, ei = i.useRef(er);
     i.useEffect(() => {
@@ -179,7 +179,7 @@ let w = 512,
             message: R.intl.format(R.t.WoQXT6, {
               applicationName: i.name
             }),
-            noResultsImageURL: D,
+            noResultsImageURL: w,
             className: P.noSearchResults
           })]
         }, e)

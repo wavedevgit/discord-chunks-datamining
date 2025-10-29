@@ -2,7 +2,7 @@
 /** chunk id: 974674, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Vq: () => w,
+  Vq: () => D,
   Xo: () => z,
   qE: () => V,
   qe: () => F
@@ -197,7 +197,7 @@ function P(e, t, n, r) {
   return null
 }
 
-function D(e, t, n, r) {
+function w(e, t, n, r) {
   if (null == e) return _.QS.AVATAR_DEFAULT;
   if (r) switch (t) {
     case g.EF.SIZE_16:
@@ -274,7 +274,7 @@ function D(e, t, n, r) {
   throw Error("getMaskId(): Unsupported type, size: ".concat(t, ", status: ").concat(e, ", isMobile: ").concat(n ? "true" : "false"))
 }
 
-function w(e, t, n) {
+function D(e, t, n) {
   let r = arguments.length > 3 && true !== arguments[3] && arguments[3],
     i = (0, u.W5)(e.status, t, n, r),
     a = (r ? e.size - (i.width / 2 + e.status / 2) : e.size - i.width) - e.offset;
@@ -301,7 +301,7 @@ function L(e, t, n) {
 }
 
 function x(e, t, n, i) {
-  let a = w(n, i, t, false),
+  let a = D(n, i, t, false),
     o = (0, u.lm)(i, e);
   if (!t) {
     let t = a.height / 2 + n.stroke,
@@ -506,7 +506,7 @@ function Z(e) {
   } = e, S = {
     width: (0, g.px)(n),
     height: (0, g.px)(n)
-  }, A = null == p || h ? true : R(p, E, y), C = T.size * m.hs, N = P(E, n, y, O), D = null != v && (0, r.jsx)("svg", {
+  }, A = null == p || h ? true : R(p, E, y), C = T.size * m.hs, N = P(E, n, y, O), w = null != v && (0, r.jsx)("svg", {
     width: C + I,
     height: C,
     viewBox: "0 0 ".concat(C + I, " ").concat(C),
@@ -541,7 +541,7 @@ function Z(e) {
     onMouseLeave: null != d ? d : true,
     "aria-label": A,
     "aria-hidden": h,
-    children: [t, D]
+    children: [t, w]
   }) : (0, r.jsxs)("div", {
     className: o()(b.wrapper, f),
     style: S,
@@ -551,7 +551,7 @@ function Z(e) {
     role: "img",
     "aria-label": A,
     "aria-hidden": h,
-    children: [t, D]
+    children: [t, w]
   })
 }
 let F = Chunk647438.forwardRef((e, t) => {
@@ -619,7 +619,7 @@ function V(e) {
         y: 0,
         width: B.size,
         height: B.size,
-        mask: null != P ? "url(#".concat(W, ")") : "url(#".concat(D(k, a, l, f), ")"),
+        mask: null != P ? "url(#".concat(W, ")") : "url(#".concat(w(k, a, l, f), ")"),
         children: (0, r.jsx)(F, {
           ref: m,
           src: t,
@@ -634,7 +634,7 @@ function V(e) {
         spacing: 5 + 1.5 * B.stroke,
         delay: v,
         children: e => (0, r.jsxs)(r.Fragment, {
-          children: [(0, r.jsx)("rect", I(O({}, e, w(B, k, l, f)), {
+          children: [(0, r.jsx)("rect", I(O({}, e, D(B, k, l, f)), {
             fill: Y,
             mask: "url(#".concat((0, u.rs)(k, l, f), ")"),
             className: b.pointerEvents
@@ -684,8 +684,8 @@ function W(e) {
     statusColor: S,
     statusTooltip: R = false,
     statusTooltipDelay: P,
-    statusBackdropColor: D,
-    "aria-hidden": w = false,
+    statusBackdropColor: w,
+    "aria-hidden": D = false,
     "aria-label": L,
     imageClassName: M,
     pulseStatusIcon: j,
@@ -737,7 +737,7 @@ function W(e) {
   }, C() ? "animate-always" : "animate-never", [j, v]);
   return (0, r.jsx)(Z, I(O({}, e), {
     ariaLabel: L,
-    ariaHidden: w,
+    ariaHidden: D,
     typingOffset: ef,
     specs: ec,
     children: (0, r.jsxs)("svg", {
@@ -776,7 +776,7 @@ function W(e) {
           isSpeaking: m,
           className: M
         })
-      }), null != D && x(D, f, ec, v), (0, r.jsx)(d.aM, {
+      }), null != w && x(w, f, ec, v), (0, r.jsx)(d.aM, {
         "data-migration-pending": true,
         text: R ? (0, p.u5)(v) : null,
         "aria-label": false,

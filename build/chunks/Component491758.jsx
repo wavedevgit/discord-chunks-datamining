@@ -73,8 +73,8 @@ function R() {
     decoupledClipsEnabled: n,
     clipsLength: a,
     clipsQuality: S
-  } = (0, Chunk442837.cj)([Chunk435064.Z], () => Chunk435064.Z.getSettings()), C = (0, Chunk442837.e7)([Chunk435064.Z], () => Chunk435064.Z.getHardwareClassification()), R = (0, Chunk442837.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_CLIP, true)), P = Chunk435064.Z.isDecoupledGameClippingEnabled(), D = (0, Chunk779618.Z)(Chunk131951.Z), {
-    showClipsHeaderEntrypoint: w
+  } = (0, Chunk442837.cj)([Chunk435064.Z], () => Chunk435064.Z.getSettings()), C = (0, Chunk442837.e7)([Chunk435064.Z], () => Chunk435064.Z.getHardwareClassification()), R = (0, Chunk442837.e7)([Chunk556296.ZP], () => Chunk556296.ZP.getKeybindForAction(Chunk981631.kg4.SAVE_CLIP, true)), P = Chunk435064.Z.isDecoupledGameClippingEnabled(), w = (0, Chunk779618.Z)(Chunk131951.Z), {
+    showClipsHeaderEntrypoint: D
   } = Chunk924557.NV.useExperiment({
     location: "clips_recording_settings"
   }, {
@@ -158,7 +158,7 @@ function R() {
       })
     }), (0, Chunk951288.jsx)(Chunk494620.Z, {
       children: Chunk388032.intl.string(Chunk388032.t["Z+MfqT"])
-    }), P && D && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+    }), P && w && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk481060.rsf, {
         label: Chunk388032.intl.string(Chunk388032.t.yXvykv),
         description: Chunk388032.intl.string(Chunk388032.t.YP3ujk),
@@ -168,7 +168,7 @@ function R() {
           trackAnalytics: true
         })
       })]
-    }), w && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+    }), D && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
       children: [(0, Chunk951288.jsx)(Chunk481060.izJ, {}), (0, Chunk951288.jsx)(Chunk481060.rsf, {
         label: Chunk388032.intl.string(Chunk388032.t["3zwNf6"]),
         description: Chunk388032.intl.string(Chunk388032.t.m4Cjj9),

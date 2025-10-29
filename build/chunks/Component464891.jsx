@@ -179,10 +179,10 @@ let $ = Chunk647438.memo(function(e) {
     }
   }, "role-icon-children") : 2 === N ? (0, r.jsx)(y.Z, q(K({}, c), {
     className: H.roleIcon
-  }), "role-icon-children") : null, [N, c, A]), D = (0, l.e7)([R.default], () => R.default.getCurrentUser()), w = i.useMemo(() => {
+  }), "role-icon-children") : null, [N, c, A]), w = (0, l.e7)([R.default], () => R.default.getCurrentUser()), D = i.useMemo(() => {
     let e = [],
       n = L.ZP.isPremium(t.author),
-      i = L.ZP.isPremium(D),
+      i = L.ZP.isPremium(w),
       o = null == a ? true : a.isPrivate();
     return (0, x.R)(null != c, "Message Username") && n && !s && !o && e.push((0, r.jsx)(ea, {
       currentUserIsPremium: i,
@@ -196,7 +196,7 @@ let $ = Chunk647438.memo(function(e) {
       userId: t.author.id,
       messageId: t.id
     }, "connections")), e
-  }, [t, a, c, s, P, A, D]);
+  }, [t, a, c, s, P, A, w]);
   return null == I ? null : (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(k.Z, {
       message: t,
@@ -211,7 +211,7 @@ let $ = Chunk647438.memo(function(e) {
       onPopoutRequestClose: E,
       decorations: {
         [k.a.SYSTEM_TAG]: T,
-        [k.a.BADGES]: w
+        [k.a.BADGES]: D
       },
       renderRemixTag: true,
       previewGuildId: o,
@@ -283,7 +283,7 @@ function et(e) {
     showAvatarPopout: v
   } = a, T = i.useRef(null), [C, N] = i.useState(false), {
     analyticsLocations: R
-  } = (0, f.ZP)(d.Z.AVATAR), w = (0, l.e7)([A.ZP], () => {
+  } = (0, f.ZP)(d.Z.AVATAR), D = (0, l.e7)([A.ZP], () => {
     var e;
     return null != (e = a.displayCompactAvatars) ? e : A.ZP.displayCompactAvatars
   }), L = (0, Z.Z)(p), x = m ? X : Q, {
@@ -311,8 +311,8 @@ function et(e) {
     }, false, x) : M
   }, [U, p.author.avatar, p.author.id, p.author.discriminator, null == (t = p.application) ? true : t.icon, null == (n = p.application) ? true : n.id, p.webhookId, M, x, h.guildMemberAvatar]);
   if (i.useEffect(() => {
-      if (null != g) return D.S.subscribeKeyed(F.LPv.ANIMATE_CHAT_AVATAR, "".concat(g, ":").concat(p.author.id), N), () => void D.S.unsubscribeKeyed(F.LPv.ANIMATE_CHAT_AVATAR, "".concat(g, ":").concat(p.author.id), N)
-    }, [p.author.id, g]), !m || w) return null != c && null != v ? (0, r.jsx)(f.Gt, {
+      if (null != g) return w.S.subscribeKeyed(F.LPv.ANIMATE_CHAT_AVATAR, "".concat(g, ":").concat(p.author.id), N), () => void w.S.unsubscribeKeyed(F.LPv.ANIMATE_CHAT_AVATAR, "".concat(g, ":").concat(p.author.id), N)
+    }, [p.author.id, g]), !m || D) return null != c && null != v ? (0, r.jsx)(f.Gt, {
     value: R,
     children: (0, r.jsx)(S.Z, {
       targetElementRef: T,
@@ -371,7 +371,7 @@ function en(e) {
     className: h,
     messageClassname: m,
     badges: g
-  } = e, E = (0, w.yE)(t.flags, F.iLy.SENT_BY_SOCIAL_LAYER_INTEGRATION) ? t.applicationId : null, b = (0, _.q)(E);
+  } = e, E = (0, D.yE)(t.flags, F.iLy.SENT_BY_SOCIAL_LAYER_INTEGRATION) ? t.applicationId : null, b = (0, _.q)(E);
   return (0, r.jsxs)(r.Fragment, {
     children: [!l && n, (0, r.jsxs)(u.H, {
       className: o()(H.header, h),
@@ -459,7 +459,7 @@ let ea = Chunk647438.memo(function(e) {
       guildId: e.guildId,
       handleRenderPopout: I,
       showCommunicationDisabledStyles: R
-    }), D = (0, l.e7)([A.ZP], () => {
+    }), w = (0, l.e7)([A.ZP], () => {
       var t;
       return null != (t = e.displayCompactAvatars) ? t : A.ZP.displayCompactAvatars
     }), L = i.useMemo(() => (0, B.b)({
@@ -468,9 +468,9 @@ let ea = Chunk647438.memo(function(e) {
       user: null == t ? true : t.author,
       compact: a,
       isRepliedMessage: false
-    }), [t, y, a]), x = (0, l.e7)([C.Z], () => ei(a, D, f, C.Z.getGuild(e.guildId)), [a, D, f, e.guildId]), M = i.useMemo(() => {
+    }), [t, y, a]), x = (0, l.e7)([C.Z], () => ei(a, w, f, C.Z.getGuild(e.guildId)), [a, w, f, e.guildId]), M = i.useMemo(() => {
       let e = [];
-      return (0, w.yE)(t.flags, F.iLy.SUPPRESS_NOTIFICATIONS) && e.push((0, r.jsx)(O.Z, {}, "suppress-notifications")), t.hasPotions() && e.push((0, r.jsx)(g.Z, {
+      return (0, D.yE)(t.flags, F.iLy.SUPPRESS_NOTIFICATIONS) && e.push((0, r.jsx)(O.Z, {}, "suppress-notifications")), t.hasPotions() && e.push((0, r.jsx)(g.Z, {
         message: t
       })), e
     }, [t]), k = (0, j.XX)(t, _), U = (0, j.Dv)(t), G = p ? "".concat(k) : "".concat(k, " ").concat(U), Z = (null == n ? true : n.state) === b.Y.LOADED ? (0, j.Gq)(t) : true, Y = true !== p;

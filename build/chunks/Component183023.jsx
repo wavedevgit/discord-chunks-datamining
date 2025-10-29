@@ -326,7 +326,7 @@ let J = 32,
           A(), j.default.track(V.rMx.PREMIUM_PROMOTION_OPENED, {
             location_page: $.page,
             location_section: $.section
-          }), (0, D.z)()
+          }), (0, w.z)()
         }
       }),
       eu = Q && er && !eo && (q && et || !q),
@@ -353,7 +353,7 @@ let J = 32,
           A(), (null == S ? true : S.id) != null && p.Z.transitionToGuildSync(S.id, {
             sourceLocationStack: [m.Z.GUILD_ROLE_SUBSCRIPTION_EMOJI_TEXT_POPOVER_UPSELL]
           }, H.oC.ROLE_SUBSCRIPTIONS)
-        }, n = !Q && J, i = () => ep ? (0, r.jsx)(w.Z, {
+        }, n = !Q && J, i = () => ep ? (0, r.jsx)(D.Z, {
           className: K.ctaButton,
           subscriptionTier: Y.Si.TIER_2,
           size: f.zx.Sizes.SMALL,
@@ -485,7 +485,7 @@ let J = 32,
       type: f,
       description: p
     } = o, m = () => f === Z.$.GET_PREMIUM ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(w.Z, {
+      children: [(0, r.jsx)(D.Z, {
         subscriptionTier: Y.Si.TIER_2,
         textOptions: {
           textOverride: o.text

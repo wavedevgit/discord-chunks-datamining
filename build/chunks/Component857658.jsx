@@ -119,12 +119,12 @@ function P(e) {
     }
     v >= o.length && S(0)
   }, [v, o, n]);
-  let D = e => {
+  let w = e => {
       let t = e.trim();
       return t.startsWith("#") ? t : t.length > 0 ? "#".concat(t) : t
     },
-    w = e => {
-      let t = D(e);
+    D = e => {
+      let t = w(e);
       if (P(t), (0, u.FX)(t) && ((0, E.zW)(), n(t), o.length > 0)) {
         let e = [...o];
         e[v] = t, s(e)
@@ -144,7 +144,7 @@ function P(e) {
         let {
           sRGBHex: e
         } = await c.open();
-        (0, E.J4)(), w(e)
+        (0, E.J4)(), D(e)
       } catch (e) {}
     }, k = () => {
       if (o.length === T) return;
@@ -179,7 +179,7 @@ function P(e) {
       }), (0, r.jsx)("input", {
         className: O.hexInput,
         value: A.toUpperCase(),
-        onChange: e => w(e.target.value),
+        onChange: e => D(e.target.value),
         maxLength: 7,
         placeholder: m.Dp,
         type: "text"

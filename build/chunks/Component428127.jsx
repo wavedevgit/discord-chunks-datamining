@@ -72,10 +72,10 @@ function O(e) {
     bottomBar: f,
     topBar: O
   } = (0, s.cj)([h.Z], () => h.Z.getUnreadStateForGuildId(n.id)), y = (0, s.e7)([p.Z], () => p.Z.isFocused()), {
-    mode: v,
-    mentionCount: j,
+    mode: j,
+    mentionCount: v,
     targetChannelId: x
-  } = "bottom" === t ? f : O, C = v === h.x.HIDDEN, E = (0, c.q_F)({
+  } = "bottom" === t ? f : O, C = j === h.x.HIDDEN, E = (0, c.q_F)({
     to: {
       transform: C ? "bottom" === t ? "translateY(180%)" : "translateY(-180%)" : "translateY(0%)"
     },
@@ -92,9 +92,9 @@ function O(e) {
       className: m.containerPadding,
       style: E,
       "aria-hidden": C,
-      children: v === h.x.HIDDEN ? (0, r.jsx)("div", {
+      children: j === h.x.HIDDEN ? (0, r.jsx)("div", {
         className: o()(m.bar, m.emptyBar)
-      }) : v === h.x.UNREAD ? (0, r.jsxs)(c.P3F, {
+      }) : j === h.x.UNREAD ? (0, r.jsxs)(c.P3F, {
         className: m.bar,
         onClick: S,
         children: ["bottom" === t ? (0, r.jsx)(c.CJ0, {
@@ -115,7 +115,7 @@ function O(e) {
           className: m.barText,
           children: g.intl.string(g.t.FCRiT3)
         })]
-      }) : v === h.x.MENTIONS ? (0, r.jsx)(c.P3F, {
+      }) : j === h.x.MENTIONS ? (0, r.jsx)(c.P3F, {
         className: o()(m.bar, m.mentionsBar),
         onClick: S,
         children: (0, r.jsx)(c.Text, {
@@ -123,10 +123,10 @@ function O(e) {
           color: "status-danger-text",
           className: m.barText,
           children: g.intl.format(g.t.EQcLyp, {
-            count: j
+            count: v
           })
         })
-      }) : v === h.x.VOICE_CHANNELS ? (0, r.jsx)(_, {
+      }) : j === h.x.VOICE_CHANNELS ? (0, r.jsx)(_, {
         jumpToVoiceChannels: u,
         guildChannels: n,
         guildChannelsVersion: l

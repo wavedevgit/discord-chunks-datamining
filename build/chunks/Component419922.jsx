@@ -86,7 +86,7 @@ let P = e => {
       })]
     })
   },
-  D = e => {
+  w = e => {
     let {
       shouldAnimate: t,
       size: a,
@@ -149,7 +149,7 @@ let P = e => {
       })
     })
   },
-  w = e => {
+  D = e => {
     let {
       shouldAnimate: t,
       sticker: n,
@@ -165,7 +165,7 @@ let P = e => {
       size: s
     }), C = i.useCallback(() => {
       g(false)
-    }, []), D = i.useCallback(() => {
+    }, []), w = i.useCallback(() => {
       y(true)
     }, []);
     return (i.useEffect(() => {
@@ -197,7 +197,7 @@ let P = e => {
             alt: R(n),
             src: A,
             draggable: false,
-            onError: D,
+            onError: w,
             onLoad: C,
             onContextMenu: v,
             ref: S
@@ -283,7 +283,7 @@ let P = e => {
       onError: h
     } = e, b = (0, m.n)(), y = (0, g.t$)(t) && !n, O = i.useRef(null);
     if (null == u) return null;
-    let v = u.format_type === E.u3.LOTTIE ? D : w;
+    let v = u.format_type === E.u3.LOTTIE ? w : D;
     return (0, r.jsxs)(i.Fragment, {
       children: [(0, r.jsx)(v, {
         shouldAnimate: y,

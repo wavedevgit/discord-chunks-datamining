@@ -70,8 +70,8 @@ let S = {},
     flags: 0
   },
   P = new Chunk798140.ZP,
-  D = new Chunk798140.ZP,
-  w = {
+  w = new Chunk798140.ZP,
+  D = {
     suppress_everyone: false,
     suppress_roles: false,
     mute_scheduled_events: false,
@@ -86,10 +86,10 @@ let S = {},
     mute_config: null
   },
   L = {
-    [Chunk981631.bL.ALL_MESSAGES]: T(v({}, w), {
+    [Chunk981631.bL.ALL_MESSAGES]: T(v({}, D), {
       message_notifications: Chunk981631.bL.ALL_MESSAGES
     }),
-    [Chunk981631.bL.ONLY_MENTIONS]: T(v({}, w), {
+    [Chunk981631.bL.ONLY_MENTIONS]: T(v({}, D), {
       message_notifications: Chunk981631.bL.ONLY_MENTIONS
     })
   },
@@ -110,7 +110,7 @@ function Z(e, t) {
       channel_overrides: o
     });
   P.clearTimer(e), a().forEach(i, e => {
-    D.clearTimer(e.channel_id)
+    w.clearTimer(e.channel_id)
   }), F(e, s), S[e] = s, x[e] = ed(S[e]);
   let l = a().filter(s.channel_overrides, e => {
     var t;
@@ -128,7 +128,7 @@ function F(e, t) {
       guildId: e
     })
   }) && (t.muted = false), a().forEach(t.channel_overrides, t => {
-    true === t.muted && D.setTimer(t.channel_id, t.mute_config, () => {
+    true === t.muted && w.setTimer(t.channel_id, t.mute_config, () => {
       Y(e, t.channel_id, {
         muted: false
       }), s.Z.dispatch({
@@ -229,7 +229,7 @@ function J(e) {
 }
 
 function $(e) {
-  en(e.notificationSettings), P.reset(), D.reset(), e.userGuildSettings.partial || (S = {}, x = {}, M = {});
+  en(e.notificationSettings), P.reset(), w.reset(), e.userGuildSettings.partial || (S = {}, x = {}, M = {});
   let t = new Set;
   for (let n in e.userGuildSettings.entries.forEach(e => {
       let n = e;

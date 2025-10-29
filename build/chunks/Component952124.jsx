@@ -69,7 +69,7 @@ function v(e) {
         analyticsLocations: S
       }), null == v || v()
     }
-  }), D = (0, p.Z)({
+  }), w = (0, p.Z)({
     user: t,
     guildId: n,
     location: A,
@@ -82,7 +82,7 @@ function v(e) {
       action: "UNBLOCK",
       analyticsLocations: S
     })
-  }), w = (0, h.Z)({
+  }), D = (0, h.Z)({
     user: t,
     guildId: n,
     location: A,
@@ -112,7 +112,7 @@ function v(e) {
     })
   }), M = [
     [y], C ? [P] : [],
-    [w, D, L],
+    [D, w, L],
     [(0, u.Z)({
       application: R,
       label: b.intl.string(b.t.WqhZss),

@@ -228,7 +228,7 @@ class G extends Chunk647438.Component {
       className: S,
       id: A,
       required: R,
-      maxCharacterCount: D,
+      maxCharacterCount: w,
       allowNewLines: L,
       isEditorIdle: M,
       currentAutocompleteType: j,
@@ -441,8 +441,8 @@ class G extends Chunk647438.Component {
         } = e;
         return "is_directory" === t
       })) && (0, h.openUploadError)({
-        title: D.intl.string(D.t.azO1Pe),
-        help: D.intl.string(D.t["Koklr/"])
+        title: w.intl.string(w.t.azO1Pe),
+        help: w.intl.string(w.t["Koklr/"])
       }), false) : (e.preventDefault(), e.stopPropagation(), this.saveCurrentText(), O(I), this.focus(), true)
     }), this._unsubscribe = S.p8.subscribe(e => {
       requestAnimationFrame(() => {

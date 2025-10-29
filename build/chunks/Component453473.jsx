@@ -132,7 +132,7 @@ function Y(e) {
       total_count: n.length,
       overdue_count: N.Z.getOverdueMessageReminderCount()
     }
-  }, {}, [n.length]), 0 === n.length) ? (0, r.jsx)(w.w, {}) : (0, r.jsx)(K, {
+  }, {}, [n.length]), 0 === n.length) ? (0, r.jsx)(D.w, {}) : (0, r.jsx)(K, {
     savedMessageKeys: n,
     closePopout: t
   })
@@ -236,7 +236,7 @@ function z(e) {
     }), null != t.saveData.dueAt ? (0, r.jsx)(L.Z, {
       reminder: t,
       throttledNow: a
-    }) : null, (0, r.jsx)(D.Z, {
+    }) : null, (0, r.jsx)(w.Z, {
       channel: s
     }), (0, r.jsx)(E.Z, {
       message: t.message,

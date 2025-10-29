@@ -2,7 +2,7 @@
 /** chunk id: 975978, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => w
+  Z: () => D
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -159,7 +159,7 @@ let C = e => {
       })]
     })
   },
-  D = e => {
+  w = e => {
     let {
       tier0Price: t,
       tier2Price: n,
@@ -194,7 +194,7 @@ let C = e => {
       })
     })
   },
-  w = e => {
+  D = e => {
     var t;
     let n, {
         className: a,
@@ -208,8 +208,8 @@ let C = e => {
       C = null == S || null == (t = S.subscription_trial) ? true : t.sku_id,
       N = (0, _.Ng)(),
       P = null != N && (0, _.Wp)(N, E.Si.TIER_2),
-      w = (0, h.Aq)(E.Xh.PREMIUM_MONTH_TIER_2),
-      L = "".concat(w, "/").concat((0, d.eP)(E.rV.MONTH)),
+      D = (0, h.Aq)(E.Xh.PREMIUM_MONTH_TIER_2),
+      L = "".concat(D, "/").concat((0, d.eP)(E.rV.MONTH)),
       x = (0, d.CY)(E.Xh.PREMIUM_MONTH_TIER_0),
       M = (0, d.CY)(E.Xh.PREMIUM_MONTH_TIER_2),
       k = (0, g.e)();
@@ -254,7 +254,7 @@ let C = e => {
             })]
           }), (0, r.jsxs)("table", {
             className: y.table,
-            children: [(0, r.jsx)(D, {
+            children: [(0, r.jsx)(w, {
               tier0Price: x,
               tier2Price: M,
               shouldUseDiscountPrice: P,

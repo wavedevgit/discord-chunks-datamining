@@ -46,9 +46,9 @@ function T(e) {
     })
   }
   let P = e => {
-      D(!e)
+      w(!e)
     },
-    D = e => {
+    w = e => {
       let t = () => {
           d.gR.updateSetting(e), d.h2.updateSetting(e ? s.Z.getGuildIds() : []), R(e, true)
         },
@@ -65,18 +65,18 @@ function T(e) {
         onCancel: t
       })
     },
-    w = A ? v.intl.string(v.t.PMsfcH) : v.intl.string(v.t.RAQUSN);
+    D = A ? v.intl.string(v.t.PMsfcH) : v.intl.string(v.t.RAQUSN);
   return (0, r.jsx)(p.U, {
     setting: b.s6.PRIVACY_SERVER_SPECIFIC_PRIVACY_DMS_V2,
     children: n === y.T ? (0, r.jsx)(h.ZP, {
-      title: w,
+      title: D,
       note: A ? v.intl.string(v.t.XXGmuB) : v.intl.string(v.t.wbYDfT),
       value: !S,
       onChange: P,
       disabled: C,
       tooltipText: C ? v.intl.string(I.default["6Af/cw"]) : true
     }) : (0, r.jsx)(h.ZP, {
-      title: w,
+      title: D,
       note: E ? v.intl.string(v.t.V0ka0Q) : A ? v.intl.string(v.t.F9WY3f) : v.intl.string(v.t.G7c3Xo),
       value: !T,
       onChange: N

@@ -36,7 +36,7 @@ function S(e) {
     showTutorial: Z,
     setSeenTutorial: T,
     closePopout: w
-  } = e, A = i.useRef(null), [R, D] = (0, j.ZP)(A), {
+  } = e, A = i.useRef(null), [R, D] = (0, v.ZP)(A), {
     loadState: L,
     channels: M
   } = R, {
@@ -140,11 +140,11 @@ function S(e) {
             A.current = e, i.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
           }
         }, l), n = n = {
-          onScroll: L === j.jd.Done ? true : k,
+          onScroll: L === v.jd.Done ? true : k,
           className: o()(E.scroller, "group-spacing-".concat(G)),
           children: [Z ? (0, r.jsx)(I, {
             setSeenTutorial: T
-          }) : null, (0, v.Z)(M, D, N), L === j.jd.Done ? null : (0, r.jsx)(d.$jN, {
+          }) : null, (0, j.Z)(M, D, N), L === v.jd.Done ? null : (0, r.jsx)(d.$jN, {
             className: E.spinner
           })]
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

@@ -60,7 +60,7 @@ function P(e) {
   return e
 }
 
-function D(e, t) {
+function w(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -71,8 +71,8 @@ function D(e, t) {
   return n
 }
 
-function w(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : D(Object(t)).forEach(function(n) {
+function D(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : w(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
@@ -123,7 +123,7 @@ function M(e) {
 }
 
 function k(e) {
-  return (0, r.jsx)(M, w(P({}, e), {
+  return (0, r.jsx)(M, D(P({}, e), {
     headerClassName: N.headerSuccess
   }))
 }
@@ -167,7 +167,7 @@ function j(e) {
     variant: "primary",
     text: C.intl.string(C.t["0cCDKP"]),
     onClick: f
-  })), (0, r.jsx)(S.j, w(P({}, a), {
+  })), (0, r.jsx)(S.j, D(P({}, a), {
     actions: N,
     children: (0, r.jsx)(U, P({
       guild: t,
@@ -221,7 +221,7 @@ function G(e) {
       application_id: t.id
     })
   }, [a, t.id]);
-  return (0, r.jsx)(S.j, w(P({}, n), {
+  return (0, r.jsx)(S.j, D(P({}, n), {
     actions: [{
       variant: "primary",
       text: C.intl.string(C.t["31Bci5"]),
@@ -260,7 +260,7 @@ function G(e) {
 }
 
 function B(e) {
-  return (0, r.jsx)(S.j, w(P({}, e), {
+  return (0, r.jsx)(S.j, D(P({}, e), {
     title: C.intl.string(C.t.j2d6Km),
     subtitle: C.intl.string(C.t["/B7kXy"]),
     actions: [{
@@ -271,7 +271,7 @@ function B(e) {
 }
 
 function Z(e) {
-  return (0, r.jsx)(M, w(P({}, e), {
+  return (0, r.jsx)(M, D(P({}, e), {
     headerClassName: N.headerFailure
   }))
 }

@@ -70,7 +70,7 @@ class i {
       returnfalse
     }
     for (let t = 0; t < this.set.length; t++)
-      if (D(this.set[t], e, this.options)) returntrue;
+      if (w(this.set[t], e, this.options)) returntrue;
     returnfalse
   }
 }
@@ -127,7 +127,7 @@ let a = new(require("./147567.js")),
   N = (e, t) => (l("replaceStars", e, t), e.trim().replace(u[d.STAR], "")),
   R = (e, t) => (l("replaceGTE0", e, t), e.trim().replace(u[t.includePrerelease ? d.GTE0PRE : d.GTE0], "")),
   P = e => (t, n, r, i, a, o, s, l, c, u, d, f) => (n = O(r) ? "" : O(i) ? `>=${r}.0.0${e?"-0":""}` : O(a) ? `>=${r}.${i}.0${e?"-0":""}` : o ? `>=${n}` : `>=${n}${e?"-0":""}`, l = O(c) ? "" : O(u) ? `<${+c+1}.0.0-0` : O(d) ? `<${c}.${+u+1}.0-0` : f ? `<=${c}.${u}.${d}-${f}` : e ? `<${c}.${u}.${+d+1}-0` : `<=${l}`, `${n} ${l}`.trim()),
-  D = (e, t, n) => {
+  w = (e, t, n) => {
     for (let n = 0; n < e.length; n++)
       if (!e[n].test(t)) returnfalse;
     if (t.prerelease.length && !n.includePrerelease) {

@@ -119,7 +119,7 @@ function Z(e) {
                 badgeState: Z,
                 closePopout: V
               }),
-              children: G === c.X.FOR_YOU ? (0, r.jsx)(v.ZP, {}) : G === c.X.MENTIONS ? (0, r.jsx)(j.Z, {
+              children: G === c.X.FOR_YOU ? (0, r.jsx)(j.ZP, {}) : G === c.X.MENTIONS ? (0, r.jsx)(v.Z, {
                 onJump: q
               }) : Y && G === c.X.GAME_INVITES ? (0, r.jsx)(S.Z, {}) : z && W && G === c.X.BOOKMARKS ? (0, r.jsx)(m.K, {
                 closePopout: V
