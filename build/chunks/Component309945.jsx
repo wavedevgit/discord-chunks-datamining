@@ -19,7 +19,7 @@ function m(e) {
   let {
     guildId: t,
     powerupNames: n,
-    warningText: m
+    warnings: m
   } = e, {
     spent: g
   } = (0, u.Z)(t), v = (0, a.e7)([c.Z], () => c.Z.getAppliedGuildBoostsForGuild(t), [t]), x = g - i.useMemo(() => {
@@ -40,11 +40,12 @@ function m(e) {
       children: [p.intl.formatToPlainString(d.default.iAaAiG, {
         boostCount: x,
         perksString: n.join(", ")
-      }), null != m && (0, r.jsx)(l.xvT, {
+      }), null == m ? true : m.map((e, t) => (0, r.jsx)(l.xvT, {
         variant: "text-sm/medium",
         color: "text-feedback-warning",
-        children: m
-      })]
+        className: f.warning,
+        children: e
+      }, "warning-".concat(t)))]
     })]
   })
 }

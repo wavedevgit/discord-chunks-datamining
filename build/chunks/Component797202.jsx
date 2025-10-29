@@ -73,9 +73,13 @@ function _(e) {
     offsetBottom: n = 0,
     children: i
   } = e, s = d(e, ["color", "offsetBottom", "children"]);
+  let c = "object" == typeof t && null != t;
   return (0, r.jsx)("div", u(l({}, s), {
-    className: a()(o.container, o[t], s.className),
-    style: u(l({}, s.style), {
+    className: a()(o.container, c ? true : o[t], s.className),
+    style: u(l({}, s.style, c ? {
+      "--custom-gradient-color-start": t.start.css,
+      "--custom-gradient-color-end": t.end.css
+    } : {}), {
       "--custom-gradient-offset-bottom": "".concat(100 * n, "%")
     }),
     children: i

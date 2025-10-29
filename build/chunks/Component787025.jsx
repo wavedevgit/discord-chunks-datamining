@@ -2,21 +2,23 @@
 /** chunk id: 787025, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  G: () => E,
-  j: () => b
+  G: () => y,
+  j: () => O
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
+  Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk252618 = require("./252618.js"),
+  Chunk906467 = require("./906467.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk697257 = require("./697257.js");
 
-function f(e, t, n) {
+function p(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -25,20 +27,20 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 
-function _(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      f(e, t, n[t])
+      p(e, t, n[t])
     })
   }
   return e
 }
 
-function p(e, t) {
+function m(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -49,15 +51,15 @@ function p(e, t) {
   return n
 }
 
-function h(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : p(Object(t)).forEach(function(n) {
+function g(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : m(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function m(e, t) {
+function E(e, t) {
   if (null == e) return {};
-  var n, r, i = g(e, t);
+  var n, r, i = b(e, t);
   if (Object.getOwnPropertySymbols) {
     var a = Object.getOwnPropertySymbols(e);
     for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
@@ -65,7 +67,7 @@ function m(e, t) {
   return i
 }
 
-function g(e, t) {
+function b(e, t) {
   if (null == e) return {};
   var n, r, i = {},
     a = Object.keys(e);
@@ -73,32 +75,37 @@ function g(e, t) {
   return i
 }
 
-function E(e) {
+function y(e) {
   let {
     children: t,
     removeChildWrapper: n,
     wrapperClassName: i
   } = e;
-  return (0, l.Tt)({
-    location: u.intl.string(u.t["3S2494"])
-  }), (0, r.jsx)(s.f6W, {
-    theme: c.BRd.DARK,
+  (0, c.Tt)({
+    location: f.intl.string(f.t["3S2494"])
+  });
+  let o = (0, s.e7)([u.Z], () => u.Z.isDeveloper) ? "92px" : true;
+  return (0, r.jsx)(l.f6W, {
+    theme: d.BRd.DARK,
     children: e => (0, r.jsx)("div", {
-      className: a()(e, d.oauth2PageWrapper, i),
+      className: a()(e, _.oauth2PageWrapper, i),
+      style: {
+        marginBottom: o
+      },
       children: true === n ? t : (0, r.jsx)("div", {
-        className: d.oauth2PageContent,
+        className: _.oauth2PageContent,
         children: t
       })
     })
   })
 }
 
-function b(e) {
+function O(e) {
   var t, n, {
       hideHeader: i
     } = e,
-    a = m(e, ["hideHeader"]);
-  return (0, r.jsxs)(o.IX, h(_({}, a), {
+    a = E(e, ["hideHeader"]);
+  return (0, r.jsxs)(o.IX, g(h({}, a), {
     onClose: () => {
       var e;
       return Promise.resolve(null == (e = a.onClose) ? true : e.call(a))

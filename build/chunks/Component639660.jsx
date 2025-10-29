@@ -49,11 +49,12 @@ function C(e) {
     let n = [];
     if (I) {
       let e = C.some(e => e.skuId === i.A$),
-        o = w.length > 0 ? b.intl.string(x.default["B3OfL/"]) : true;
-      n.push((0, r.jsx)(m.Z, {
+        o = w.length > 0 ? b.intl.string(x.default["B3OfL/"]) : true,
+        l = [];
+      e && l.push(b.intl.string(_.default.Sfr0Jw)), w.length > 0 && l.push(b.intl.string(x.default.wiungr)), n.push((0, r.jsx)(m.Z, {
         guildId: t,
         powerupNames: [...C.map(e => e.title), ...null != o ? [o] : []],
-        warningText: e ? b.intl.string(_.default.Sfr0Jw) : true
+        warnings: l
       }, "expiring-powerups"))
     }
     return N && n.push((0, r.jsx)(f.Z, {
