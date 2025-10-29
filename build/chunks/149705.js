@@ -37,7 +37,7 @@ function i(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let o = {
+let a = {
     skus: [],
     currentPage: 0,
     totalCount: 0,
@@ -45,7 +45,7 @@ let o = {
     searchError: null,
     isFetchingResults: false
   },
-  s = (0, Chunk191336.U)(e => i(l({}, o), {
+  s = (0, Chunk191336.U)(e => i(l({}, a), {
     onSetResponse: t => {
       let n = Math.floor(t.pageOffset / t.pageLimit) + 1;
       e(i(l({}, t), {
@@ -53,7 +53,7 @@ let o = {
       }))
     },
     setSearchError: t => {
-      e(i(l({}, o), {
+      e(i(l({}, a), {
         searchError: t
       }))
     },
@@ -68,6 +68,6 @@ let o = {
       })
     },
     clear: () => {
-      e(l({}, o))
+      e(l({}, a))
     }
   }))

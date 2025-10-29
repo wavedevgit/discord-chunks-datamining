@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Z: () => y
-}), require("./388685.js");
+});
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
   i = require.n(Chunk120356),
@@ -18,30 +18,30 @@ var Chunk951288 = require("./951288.js"),
   Chunk786040 = require("./786040.js"),
   Chunk508925 = require("./508925.jsx"),
   Chunk616066 = require("./616066.jsx"),
+  Chunk684263 = require("./684263.jsx"),
   Chunk396728 = require("./396728.jsx"),
   Chunk58201 = require("./58201.js"),
   Chunk201964 = require("./201964.js"),
   Chunk1327 = require("./1327.js");
-let E = new Set([Chunk979554.Z.BUNDLE, Chunk979554.Z.PROFILE_EFFECT]),
-  x = e => {
+let x = e => {
     let {
       product: t,
       isCardHovered: n
     } = e, l = (0, f.rC)(t), {
-      isPurchased: o,
-      isPartiallyOwnedBundle: s
-    } = (0, p.L)(t), a = null != l && E.has(l);
+      isPurchased: s,
+      isPartiallyOwnedBundle: o
+    } = (0, p.L)(t), c = l === a.Z.PROFILE_EFFECT;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)("div", {
-        className: i()(v.productPreview, {
-          [v.faded]: (o || s) && !n,
-          [v.fullPreview]: a
+        className: i()(E.productPreview, {
+          [E.faded]: (s || o) && !n,
+          [E.fullPreview]: c
         }),
         children: (0, r.jsx)(O, {
           product: t,
           isCardHovered: n
         })
-      }), o && (0, r.jsx)(S, {
+      }), s && (0, r.jsx)(S, {
         hidden: n
       })]
     })
@@ -50,34 +50,39 @@ let E = new Set([Chunk979554.Z.BUNDLE, Chunk979554.Z.PROFILE_EFFECT]),
     let {
       product: t,
       isCardHovered: n
-    } = e, l = (0, a.e7)([d.default], () => d.default.getCurrentUser()), i = (0, f.rC)(t), s = (0, b.o)(t);
+    } = e, l = (0, o.e7)([d.default], () => d.default.getCurrentUser()), i = (0, f.rC)(t), s = (0, v.o)(t);
     switch (i) {
-      case o.Z.PROFILE_EFFECT:
+      case a.Z.PROFILE_EFFECT:
         return (0, r.jsx)(u.Z, {
           skuId: s.skuId,
           isHighlighted: n,
           isPurchased: false,
           removeSetHeight: true
         });
-      case o.Z.AVATAR_DECORATION:
-        return (0, r.jsx)(h.R, {
+      case a.Z.AVATAR_DECORATION:
+        return (0, r.jsx)(C.R, {
           item: s,
           user: l,
           isHighlighted: n,
           isPurchased: false,
           avatarSize: c.EFr.SIZE_120
         });
-      case o.Z.NAMEPLATE:
-        return (0, r.jsx)(_.Z, {
+      case a.Z.NAMEPLATE:
+        return (0, r.jsx)(m.Z, {
           nameplate: s,
           user: l,
           isHighlighted: n,
           isPurchased: false
         });
-      case o.Z.BUNDLE:
-        return null;
-      case o.Z.EXTERNAL_SKU:
-        return (0, r.jsx)(C.b, {
+      case a.Z.BUNDLE:
+        return (0, r.jsx)(_.U, {
+          product: t,
+          user: l,
+          isHighlighted: n,
+          isPurchased: false
+        });
+      case a.Z.EXTERNAL_SKU:
+        return (0, r.jsx)(h.b, {
           product: t,
           animationState: n ? "on" : "off"
         });
@@ -94,8 +99,8 @@ let E = new Set([Chunk979554.Z.BUNDLE, Chunk979554.Z.PROFILE_EFFECT]),
       color: c.TVs.colors.INTERACTIVE_ACTIVE,
       width: 40,
       height: 40,
-      className: i()(v.productPreviewIconOverlay, {
-        [v.hidden]: t
+      className: i()(E.productPreviewIconOverlay, {
+        [E.hidden]: t
       })
     })
   },
@@ -105,9 +110,9 @@ let E = new Set([Chunk979554.Z.BUNDLE, Chunk979554.Z.PROFILE_EFFECT]),
       isCardHovered: n
     } = e, l = (0, f.LJ)(t), i = (0, g.o)(l);
     if (null == l) return null;
-    let o = (0, m.W)(l, i);
+    let a = (0, b.W)(l, i);
     return (0, r.jsx)(x, {
-      product: o,
+      product: a,
       isCardHovered: n
     })
   }

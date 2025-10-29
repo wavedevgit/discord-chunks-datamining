@@ -14,16 +14,16 @@ let c = (e, t, n, r) => {
     let {
       scrollTop: l = 0,
       scrollOffset: i = 0,
-      scrollHeight: o = 0,
-      scrollWidth: a = 0
+      scrollHeight: a = 0,
+      scrollWidth: o = 0
     } = r;
-    if (o > 0) {
-      let r = (l + i) / o;
+    if (a > 0) {
+      let r = (l + i) / a;
       r > 0 && s.default.track(e, {
         scroll_visible_percent: r,
         source: n,
-        page_height: Math.round(o),
-        page_width: Math.round(a),
+        page_height: Math.round(a),
+        page_width: Math.round(o),
         page_session_id: t
       })
     }
@@ -31,14 +31,14 @@ let c = (e, t, n, r) => {
   u = (e, t) => {
     let {
       analyticsSource: n
-    } = (0, o.MV)(t), s = (0, l.h)(c, 5e3, [], {
+    } = (0, a.MV)(t), s = (0, l.h)(c, 5e3, [], {
       trailing: true
     }), u = (0, i.sp)(), d = null == u ? true : u.sessionId;
     return {
       handleScroll: r.useCallback(() => {
         if (null != e.current) {
           let t = e.current.getScrollerNode();
-          null != t && s(a.rMx.COLLECTIBLES_SHOP_SCROLLED, null != d ? d : "", n, {
+          null != t && s(o.rMx.COLLECTIBLES_SHOP_SCROLLED, null != d ? d : "", n, {
             scrollTop: t.scrollTop,
             scrollOffset: t.offsetHeight,
             scrollHeight: t.scrollHeight,

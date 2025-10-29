@@ -3,8 +3,8 @@
 "use strict";
 require.d(exports, {
   NR: () => i,
-  Ob: () => a,
-  ZI: () => o,
+  Ob: () => o,
+  ZI: () => a,
   m1: () => c,
   uc: () => s
 });
@@ -26,7 +26,7 @@ let i = (0, Chunk987170.Z)({
       }
     }]
   }),
-  o = (0, Chunk987170.Z)({
+  a = (0, Chunk987170.Z)({
     kind: "user",
     id: "2024-07_ctp_collectibles_shop_open_filters",
     label: "CTP collectibles shop open - A/A test - Filters",
@@ -64,7 +64,7 @@ let i = (0, Chunk987170.Z)({
       }
     }]
   }),
-  a = (0, Chunk987170.Z)({
+  o = (0, Chunk987170.Z)({
     kind: "user",
     id: "2024-07_ctp_collectibles_shop_open_everyone",
     label: "CTP collectibles shop open - A/A test - Everyone",

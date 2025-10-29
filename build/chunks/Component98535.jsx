@@ -28,12 +28,12 @@ function E(e) {
     tab: t,
     sortedCategories: n,
     transitionToTab: s,
-    transitionState: a,
+    transitionState: o,
     updateAnalyticsState: c,
     refreshCategories: u
-  } = e, h = x();
-  O(h);
-  let E = (0, i.e7)([o.Z], () => o.Z.useReducedMotion),
+  } = e, C = x();
+  O(C);
+  let E = (0, i.e7)([a.Z], () => a.Z.useReducedMotion),
     [S, y] = l.useState(true),
     [j, k] = l.useState(true),
     T = l.useCallback(async (e, t, n, r) => {
@@ -42,18 +42,18 @@ function E(e) {
         i = (0, d.$2)(t) ? b.AW.ORBS : b.AW.CATALOG;
       y(t), k(!r), await s(i, l)
     }, [E, s, c]),
-    L = (0, g.FF)("CollectiblesContent"),
+    I = (0, g.FF)("CollectiblesContent"),
     {
-      searchError: I
+      searchError: L
     } = (0, p.a)();
-  return L && null != I ? (0, r.jsx)(m.Z, {}) : null != h ? (0, r.jsx)(C.Z, {
+  return I && null != L ? (0, r.jsx)(m.Z, {}) : null != C ? (0, r.jsx)(h.Z, {
     onRetry: u,
-    errorMessage: h,
-    errorOrigin: C.i.SHOP_PAGE
+    errorMessage: C,
+    errorOrigin: h.i.SHOP_PAGE
   }) : v.includes(t) ? (0, r.jsx)(_.Z, {
     handleTransition: T,
     tab: t,
-    transitionState: a
+    transitionState: o
   }) : (0, r.jsx)(f.Z, {
     tab: t,
     sortedCategories: n,
@@ -70,10 +70,10 @@ let x = () => (0, Chunk442837.e7)([Chunk597688.Z, Chunk1870.Z], () => null != Ch
       {
         noCache: n,
         includeUnpublished: r
-      } = (0, h.Z)();
+      } = (0, C.Z)();
     l.useEffect(() => {
       var l, i;
-      null != e && a.Z.captureMessage(e, {
+      null != e && o.Z.captureMessage(e, {
         tags: {
           isStaff: null != (i = null == t || null == (l = t.isStaff()) ? true : l.toString()) ? i : "unknown",
           disableCache: n.toString(),

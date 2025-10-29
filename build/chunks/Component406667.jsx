@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk91192 = require("./91192.jsx"),
   Chunk536895 = require("./536895.js"),
   Chunk979554 = require("./979554.js"),
@@ -75,9 +75,9 @@ let S = e => {
     let {
       product: i,
       isCollapsed: c
-    } = e, u = (0, C.o)(i), d = null != (n = null == (t = i.variants) ? true : t.length) ? n : 0, g = l.useCallback((e, t) => {
-      e.stopPropagation(), (0, C.$)(i, t)
-    }, [i]), f = (0, p.Z)("shop-variants-group-".concat(i.storeListingId), a.hy.HORIZONTAL);
+    } = e, u = (0, h.o)(i), d = null != (n = null == (t = i.variants) ? true : t.length) ? n : 0, g = l.useCallback((e, t) => {
+      e.stopPropagation(), (0, h.$)(i, t)
+    }, [i]), f = (0, p.Z)("shop-variants-group-".concat(i.storeListingId), o.hy.HORIZONTAL);
     return 0 === d ? null : (0, r.jsx)(s.bG, {
       navigator: f,
       children: (0, r.jsx)(s.SJ, {
@@ -87,7 +87,7 @@ let S = e => {
             } = e,
             l = O(e, ["ref"]);
           return (0, r.jsx)("div", x(E({
-            className: o()({
+            className: a()({
               [v.collapsed]: c,
               [v.expanded]: !c
             }, v.productVariantsContainer),
@@ -110,11 +110,11 @@ let S = e => {
       isSelected: n,
       onClick: l,
       zIndex: i
-    } = e, a = (0, s.JA)("shop-variants-group-".concat(t.storeListingId, "-").concat(t.variantLabel)), {
+    } = e, o = (0, s.JA)("shop-variants-group-".concat(t.storeListingId, "-").concat(t.variantLabel)), {
       onFocus: c
-    } = a, u = O(a, ["onFocus"]), {
+    } = o, u = O(o, ["onFocus"]), {
       isPurchased: p
-    } = (0, h.L)(t);
+    } = (0, C.L)(t);
     return (0, r.jsx)(g.u, {
       text: b.intl.string(b.t["6cfuDj"]),
       shouldShow: p,
@@ -123,7 +123,7 @@ let S = e => {
         onClick: e => {
           l(e), c()
         },
-        className: o()(v.productVariant, {
+        className: a()(v.productVariant, {
           [v.selected]: n
         }),
         style: {
@@ -155,16 +155,16 @@ let S = e => {
       isCollapsed: n = false,
       showLabel: l = false,
       className: i
-    } = e, s = (0, _.LJ)(t), a = (0, C.o)(s);
+    } = e, s = (0, _.LJ)(t), o = (0, h.o)(s);
     return null == s || s.type !== c.Z.VARIANTS_GROUP || null == s.variants || 0 === s.variants.length ? null : (0, r.jsxs)("div", {
-      className: o()(v.productVariantsOuterContainer, i),
+      className: a()(v.productVariantsOuterContainer, i),
       children: [(0, r.jsx)(S, {
         product: s,
         isCollapsed: n
       }), l && (0, r.jsx)(d.xvT, {
         variant: "text-xs/medium",
         color: "text-secondary",
-        children: s.variants[a].variantLabel
+        children: s.variants[o].variantLabel
       })]
     })
   }

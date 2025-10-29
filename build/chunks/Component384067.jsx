@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk622535 = require("./622535.js"),
   Chunk481060 = require("./481060.js"),
   Chunk63063 = require("./63063.js"),
@@ -50,55 +50,55 @@ let _ = e => {
     threshold: 0,
     children: (0, r.jsxs)("div", {
       ref: E,
-      className: o()(h.row, h.between, h.bannerBlockContainer, h.centeredSection, {
-        [h.extraRounded]: T
+      className: a()(C.row, C.between, C.bannerBlockContainer, C.centeredSection, {
+        [C.extraRounded]: T
       }),
       children: [(0, r.jsx)("div", {
-        className: o()(h.wideBannerBackgroundImg, {
-          [h.extraRounded]: T
+        className: a()(C.wideBannerBackgroundImg, {
+          [C.extraRounded]: T
         }),
         children: (0, r.jsx)("img", {
           ref: x,
           src: k,
           alt: _.title,
-          className: o()(h.wideBannerArt, {
-            [h.wideBannerArtOrbs]: T
+          className: a()(C.wideBannerArt, {
+            [C.wideBannerArtOrbs]: T
           }),
           style: {
             height: null != O ? "".concat(O, "px") : "auto"
           }
         })
       }), (0, r.jsx)("div", {
-        className: h.wideBannerContentContainer,
+        className: C.wideBannerContentContainer,
         style: {
           maxHeight: null != O ? "".concat(O, "px") : "auto"
         },
         children: (0, r.jsxs)("div", {
-          className: h.wideBannerTextContainer,
-          children: [(0, r.jsx)(a.Heading, {
+          className: C.wideBannerTextContainer,
+          children: [(0, r.jsx)(o.Heading, {
             style: {
               color: null != (n = _.bannerTextColor) ? n : "var(--header-primary)"
             },
-            className: T ? h.wideBannerOrbsHeading : true,
+            className: T ? C.wideBannerOrbsHeading : true,
             variant: T ? "heading-xl/bold" : "heading-lg/semibold",
             children: _.title
-          }), (0, r.jsx)(a.Text, {
+          }), (0, r.jsx)(o.Text, {
             style: {
               color: null != (i = _.bannerTextColor) ? i : "var(--text-muted)"
             },
             lineClamp: 2,
             variant: T ? "text-md/medium" : "text-sm/medium",
-            children: T ? C.intl.format(C.t.SFFP7K, {
+            children: T ? h.intl.format(h.t.SFFP7K, {
               helpdeskArticle: c.Z.getArticleURL(f.BhN.VIRTUAL_CURRENCY_LEARN_MORE)
             }) : _.body
           })]
         })
       }), true !== _.disableCta && (0, r.jsx)("div", {
-        className: h.wideBannerBlockButton,
-        children: (0, r.jsx)(a.Button, {
+        className: C.wideBannerBlockButton,
+        children: (0, r.jsx)(o.Button, {
           variant: "overlay-primary",
           onClick: () => m("shop wide banner", y, true, true),
-          text: C.intl.string(C.t.jVcuVY)
+          text: h.intl.string(h.t.jVcuVY)
         })
       })]
     })

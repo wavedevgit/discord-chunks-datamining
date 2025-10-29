@@ -2,7 +2,7 @@
 /** chunk id: 788822, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  q: () => C
+  q: () => h
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -16,28 +16,28 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk310582 = require("./310582.js");
-let C = e => {
-  var t, n, C;
-  let h, {
+let h = e => {
+  var t, n, h;
+  let C, {
     category: _,
     subblock: m,
     badgeText: b,
     handleTransition: v
   } = e;
-  null != m && (h = null == (t = c.Z.getCategoryByStoreListingId(null == m ? true : m.categoryStoreListingId)) ? true : t.skuId);
-  let E = null != (n = null != h ? h : null == _ ? true : _.skuId) ? n : "",
+  null != m && (C = null == (t = c.Z.getCategoryByStoreListingId(null == m ? true : m.categoryStoreListingId)) ? true : t.skuId);
+  let E = null != (n = null != C ? C : null == _ ? true : _.skuId) ? n : "",
     {
       handleCardVisibilityChange: x
     } = (0, u.E)(E, "home", "marketing featured block"),
     O = (0, d.YG)(_, m),
     S = l.useRef(null),
     y = null == m ? true : m.bodyText,
-    j = (0, a.sp)();
+    j = (0, o.sp)();
   return (0, r.jsx)(i.$, {
     innerRef: S,
     onChange: x,
     threshold: 0,
-    children: (0, r.jsxs)(o.P3F, {
+    children: (0, r.jsxs)(a.P3F, {
       className: f.featuredBlock,
       innerRef: S,
       style: function(e) {
@@ -72,24 +72,24 @@ let C = e => {
           cta_name: null
         })
       },
-      children: [null != b && (0, r.jsx)(o.IGR, {
+      children: [null != b && (0, r.jsx)(a.IGR, {
         disableColor: true,
         text: b,
         className: f.featuredBlockBadge
       }), (0, r.jsx)("div", {
         className: f.featuredBlockTextContainer,
-        children: null != y && (0, r.jsx)(o.Heading, {
+        children: null != y && (0, r.jsx)(a.Heading, {
           lineClamp: 4,
           className: f.featuredBlockBodyText,
           style: {
-            color: null != (C = null == m ? true : m.bannerTextColor) ? C : "white"
+            color: null != (h = null == m ? true : m.bannerTextColor) ? h : "white"
           },
           variant: "heading-md/medium",
           children: y
         })
       }), (0, r.jsx)("div", {
         className: f.featuredBlockButtonContainer,
-        children: (0, r.jsx)(o.Button, {
+        children: (0, r.jsx)(a.Button, {
           variant: "overlay-primary",
           text: p.intl.string(p.t.jVcuVY),
           onClick: e => {

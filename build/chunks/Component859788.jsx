@@ -21,12 +21,12 @@ let g = e => {
     bannerRive: l,
     isResponsive: g = false,
     eventTargetRef: p
-  } = e, f = (0, o.e7)([a.Z], () => a.Z.useReducedMotion), C = (0, o.e7)([u.Z], () => u.Z.isFocused()), h = null != n && !f && C;
+  } = e, f = (0, a.e7)([o.Z], () => o.Z.useReducedMotion), h = (0, a.e7)([u.Z], () => u.Z.isFocused()), C = null != n && !f && h;
   return null != l ? (0, r.jsx)(s.B, {
     src: l,
     fit: "fit-width",
     eventTargetRef: p
-  }) : h ? (0, r.jsx)(c.Z, {
+  }) : C ? (0, r.jsx)(c.Z, {
     className: i()({
       [d.responsive]: g
     }, d.bannerAsset, d.bannerVideoBackground),

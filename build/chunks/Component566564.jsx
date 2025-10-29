@@ -7,7 +7,7 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk685816 = require("./685816.js"),
   Chunk481060 = require("./481060.js"),
   Chunk702486 = require("./702486.js"),
@@ -31,34 +31,34 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk310582 = require("./310582.js");
-let I = e => {
+let L = e => {
     var t;
     let {
       handleTransition: n,
       numVisibleItems: i,
-      isFetchingCategories: a,
+      isFetchingCategories: o,
       tab: c
     } = e, {
       noCache: u,
-      includeUnpublished: h
-    } = (0, _.Z)(), [S, k] = l.useState(false), I = (0, d.sp)(), B = null != (t = null == I ? true : I.sessionId) ? t : "";
+      includeUnpublished: C
+    } = (0, _.Z)(), [S, k] = l.useState(false), L = (0, d.sp)(), B = null != (t = null == L ? true : L.sessionId) ? t : "";
     l.useEffect(() => {
       (0, f.n)({
         sessionId: B,
         checkpoint: f.a.SHOP_MOUNTED,
         tab: c,
-        unpublishedCategoriesShown: h,
+        unpublishedCategoriesShown: C,
         cacheDisabled: u
       })
     }, [c]);
     let {
-      isFetchingShopHome: A,
-      fetchShopHomeError: P,
+      isFetchingShopHome: P,
+      fetchShopHomeError: A,
       shopBlocks: N,
       refreshShopHome: R
     } = (0, p.E)(c, {
       noCache: u,
-      includeUnpublished: h,
+      includeUnpublished: C,
       includeBundles: true,
       logPerf: true
     }, {
@@ -68,29 +68,29 @@ let I = e => {
       R()
     }, [R]);
     return (l.useEffect(() => {
-      null != P || A || 0 === N.length || (0, f.n)({
+      null != A || P || 0 === N.length || (0, f.n)({
         sessionId: B,
         checkpoint: f.a.SHOP_RENDERED,
         tab: c,
-        unpublishedCategoriesShown: h,
+        unpublishedCategoriesShown: C,
         cacheDisabled: u
       })
-    }, [P, A, N.length, h, u, B, c]), null != P) ? (0, r.jsx)(C.Z, {
+    }, [A, P, N.length, C, u, B, c]), null != A) ? (0, r.jsx)(h.Z, {
       onRetry: Z,
-      errorOrigin: C.i.SHOP_PAGE,
-      errorMessage: P.message
-    }) : A || 0 === N.length ? (0, r.jsxs)("div", {
-      className: o()(L.loadingContainer, L.feedContent),
+      errorOrigin: h.i.SHOP_PAGE,
+      errorMessage: A.message
+    }) : P || 0 === N.length ? (0, r.jsxs)("div", {
+      className: a()(I.loadingContainer, I.feedContent),
       children: [(0, r.jsx)(E.Z, {
-        isLoading: A,
+        isLoading: P,
         handleTransition: n,
         tab: c
       }), (0, r.jsx)(b.Z, {
-        isLoading: A,
+        isLoading: P,
         handleTransition: n,
         categories: []
       }), (0, r.jsx)(v.Z, {
-        isLoading: A,
+        isLoading: P,
         title: c === j.AW.ORBS ? T.intl.string(T.t.dFgeuZ) : T.intl.string(T.t.NSv5KV),
         numVisibleItems: i,
         tab: c
@@ -103,7 +103,7 @@ let I = e => {
         switch (e.type) {
           case s.z.HERO:
             u = (0, r.jsx)(E.Z, {
-              isLoading: A,
+              isLoading: P,
               handleTransition: n,
               heroBlock: e,
               tab: c
@@ -111,7 +111,7 @@ let I = e => {
             break;
           case s.z.FEATURED:
             u = (0, r.jsx)(b.Z, {
-              isLoading: A,
+              isLoading: P,
               handleTransition: n,
               featuredBlockRecord: e
             }, l);
@@ -120,10 +120,10 @@ let I = e => {
             let p = e.sortedSkuIds;
             u = (0, r.jsx)(v.Z, {
               title: c === j.AW.ORBS ? T.intl.string(T.t.dFgeuZ) : T.intl.string(T.t.NSv5KV),
-              isLoading: A || a,
+              isLoading: P || o,
               numVisibleItems: i,
               sortedSkuIds: p,
-              buttonContainerClassName: (null == t ? true : t.type) === s.z.IMMERSIVE_BANNER ? L.feedblockInteractiveBackground : true,
+              buttonContainerClassName: (null == t ? true : t.type) === s.z.IMMERSIVE_BANNER ? I.feedblockInteractiveBackground : true,
               prioritizeUserDiscounts: c === j.AW.HOME,
               tab: c,
               orbsSupportedOnly: c === j.AW.ORBS
@@ -161,8 +161,8 @@ let I = e => {
         return (0, r.jsx)(g.g6, {
           blockType: e.type,
           children: (0, r.jsx)("div", {
-            className: o()(L.blockContainer, L.feedContent, {
-              [L.skipPadding]: 0 === l || d
+            className: a()(I.blockContainer, I.feedContent, {
+              [I.skipPadding]: 0 === l || d
             }),
             children: u
           }, l)
@@ -175,40 +175,40 @@ let I = e => {
       handleTransition: t,
       tab: n,
       transitionState: i
-    } = e, o = l.useRef(null), {
+    } = e, a = l.useRef(null), {
       handleScroll: s
-    } = (0, c.z)(o, n), g = (0, h.R)(), p = (0, d.sp)(), [f, C] = l.useState(j.IV), [_, m] = l.useState(false);
+    } = (0, c.z)(a, n), g = (0, C.R)(), p = (0, d.sp)(), [f, h] = l.useState(j.IV), [_, m] = l.useState(false);
     return l.useEffect(() => {
-      if (null != o.current) {
+      if (null != a.current) {
         let e = () => {
-            if (null == o.current) return;
-            let e = o.current.getDistanceFromBottom();
-            f >= 36 ? m(e < 20) : e <= 200 && C(e => e + j.IV)
+            if (null == a.current) return;
+            let e = a.current.getDistanceFromBottom();
+            f >= 36 ? m(e < 20) : e <= 200 && h(e => e + j.IV)
           },
-          t = o.current.getScrollerNode();
+          t = a.current.getScrollerNode();
         return null == t || t.addEventListener("scroll", e), () => {
           null == t || t.removeEventListener("scroll", e)
         }
       }
-    }, [o, f, C, m]), (0, r.jsx)(a.Den, {
-      className: L.shopScroll,
-      ref: o,
+    }, [a, f, h, m]), (0, r.jsx)(o.Den, {
+      className: I.shopScroll,
+      ref: a,
       onScroll: s,
       children: (0, r.jsxs)("div", {
-        className: L.shop,
+        className: I.shop,
         children: [(0, r.jsxs)("div", {
-          className: L.mainContent,
-          children: [(0, r.jsx)(I, {
+          className: I.mainContent,
+          children: [(0, r.jsx)(L, {
             handleTransition: t,
             numVisibleItems: f,
             isFetchingCategories: g,
             tab: n
           }), n !== j.AW.CATALOG && f >= 36 && (0, r.jsxs)("div", {
-            className: L.endOfFeed,
-            children: [(0, r.jsx)(a.Heading, {
+            className: I.endOfFeed,
+            children: [(0, r.jsx)(o.Heading, {
               variant: "heading-md/semibold",
               children: T.intl.string(T.t.Yr70c4)
-            }), (0, r.jsx)(a.Button, {
+            }), (0, r.jsx)(o.Button, {
               variant: "primary",
               text: T.intl.string(T.t.AfrvRD),
               onClick: () => {

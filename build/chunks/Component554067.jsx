@@ -2,7 +2,7 @@
 /** chunk id: 554067, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => C
+  Z: () => h
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,26 +17,26 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk535333 = require("./535333.js");
 
-function C(e) {
+function h(e) {
   let {
     handleTransition: t,
     selectedTab: n
   } = e, {
-    searchQuery: C,
-    onSetSearchQuery: h
+    searchQuery: h,
+    onSetSearchQuery: C
   } = (0, u.S)(), [_, m] = l.useState(""), b = (0, c.sp)(), v = (0, i.e7)([s.default], () => s.default.locale);
   return l.useEffect(() => {
     let e = setTimeout(() => {
-      h(_)
+      C(_)
     }, 250);
     return () => clearTimeout(e)
-  }, [_, h]), l.useEffect(() => {
-    m(C)
-  }, [C]), (0, r.jsx)(o.P3F, {
+  }, [_, C]), l.useEffect(() => {
+    m(h)
+  }, [h]), (0, r.jsx)(a.P3F, {
     ignoreKeyPress: true,
     className: f.searchBar,
     onClick: () => {
-      n !== d.AW.CATALOG && t(d.AW.CATALOG), a.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+      n !== d.AW.CATALOG && t(d.AW.CATALOG), o.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
         collectibles_shop_session_id: null == b ? true : b.sessionId,
         page_section: null == b ? true : b.pageSection,
         page_category: null == b ? true : b.pageCategory,
@@ -46,15 +46,15 @@ function C(e) {
         page_type: n
       })
     },
-    children: (0, r.jsx)(o.E1j, {
+    children: (0, r.jsx)(a.E1j, {
       size: "sm",
       onKeyDown: e => {
-        "Enter" === e.key && h(_)
+        "Enter" === e.key && C(_)
       },
       query: _,
       onChange: m,
       onClear: () => {
-        m(""), a.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
+        m(""), o.default.track(g.rMx.COLLECTIBLES_SHOP_ELEMENT_CLICKED, {
           collectibles_shop_session_id: null == b ? true : b.sessionId,
           page_section: null == b ? true : b.pageSection,
           page_category: null == b ? true : b.pageCategory,

@@ -22,31 +22,31 @@ let g = {
   p = e => {
     let {
       enabled: t
-    } = (0, o.WX)({
+    } = (0, a.WX)({
       location: "useShopViewTransition"
     }), n = (0, s.FF)("CollectiblesBrowse"), {
       setItemTypeFilter: i,
       reset: p,
       setCurrentTab: f
-    } = (0, a.S)(), C = r.useMemo(() => e !== u.AW.ORBS || t ? (0, u.RE)(e) && n ? u.AW.CATALOG : e : u.AW.HOME, [e, t, n]), [h, _] = r.useState(C), [m, b] = r.useState(u.f7.VISIBLE);
+    } = (0, o.S)(), h = r.useMemo(() => e !== u.AW.ORBS || t ? (0, u.RE)(e) && n ? u.AW.CATALOG : e : u.AW.HOME, [e, t, n]), [C, _] = r.useState(h), [m, b] = r.useState(u.f7.VISIBLE);
     r.useEffect(() => {
-      f(h)
-    }, [h, f]), r.useEffect(() => {
-      if (_(C), e === u.AW.CATALOG) p();
+      f(C)
+    }, [C, f]), r.useEffect(() => {
+      if (_(h), e === u.AW.CATALOG) p();
       else if ((0, u.RE)(e)) {
         let t = g[e];
         null != t ? i(t) : p()
       }
-    }, [C, e, i, p]);
+    }, [h, e, i, p]);
     let {
       clearError: v
     } = (0, c.a)(), E = (0, l.k6)(), x = r.useCallback(async (e, t) => {
       if (v(), e === u.AW.CATALOG) p();
-      else if ((0, u.RE)(e) && e !== h) {
+      else if ((0, u.RE)(e) && e !== C) {
         let t = g[e];
         null != t ? i(t) : p()
       }
-      if (h !== e) {
+      if (C !== e) {
         if (t) {
           let e;
           b(u.f7.OUT), await (e = 1.1 * u.lb, new Promise(t => setTimeout(t, e)))
@@ -55,9 +55,9 @@ let g = {
           shallow: true
         }), b(u.f7.VISIBLE)
       }
-    }, [E, i, n, p, h, v]);
+    }, [E, i, n, p, C, v]);
     return {
-      selectedTab: h,
+      selectedTab: C,
       transitionState: m,
       transitionToTab: x
     }

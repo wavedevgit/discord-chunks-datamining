@@ -24,7 +24,7 @@ let b = e => {
     let {
       product: t,
       prioritizedCurrency: n
-    } = e, p = (0, i.e7)([s.default], () => s.default.getCurrentUser()), b = a.ZP.canUseCollectibles(p), {
+    } = e, p = (0, i.e7)([s.default], () => s.default.getCurrentUser()), b = o.ZP.canUseCollectibles(p), {
       isDisabled: v
     } = (0, u.G)(t.skuId), {
       isPurchased: E,
@@ -32,26 +32,26 @@ let b = e => {
     } = (0, d.L)(t), O = (0, c.G1)(t), S = (0, c.rN)(t), y = l.useMemo(() => (0, c.BH)(t, b), [t, b]), j = (0, f.Iw)(t), {
       displayPrices: k,
       hasSufficientOrbs: T
-    } = (0, C.Ip)({
+    } = (0, h.Ip)({
       product: t,
       isPremiumUser: b,
       prioritizedCurrency: n,
       hasDiscountOffer: null != j
-    }), L = O && !b;
-    return v ? (0, r.jsx)(o.Text, {
+    }), I = O && !b;
+    return v ? (0, r.jsx)(a.Text, {
       variant: "text-md/semibold",
       color: "header-muted",
       children: _.intl.string(_.t.wu4gyV)
-    }) : x ? (0, r.jsx)(o.Text, {
+    }) : x ? (0, r.jsx)(a.Text, {
       variant: "text-md/semibold",
       children: _.intl.string(_.t.BEjTij)
-    }) : E && !L ? (0, r.jsx)(o.Text, {
+    }) : E && !I ? (0, r.jsx)(a.Text, {
       variant: "text-md/semibold",
       children: _.intl.string(_.t["6cfuDj"])
-    }) : S ? (0, r.jsx)(o.Text, {
+    }) : S ? (0, r.jsx)(a.Text, {
       variant: "text-md/semibold",
       children: _.intl.string(_.t.nBtvYB)
-    }) : O ? (0, r.jsx)(o.Text, {
+    }) : O ? (0, r.jsx)(a.Text, {
       variant: "text-md/semibold",
       children: _.intl.string(_.t.rt69oo)
     }) : 0 === k.length ? null : (0, r.jsx)(g.F, {
@@ -60,7 +60,7 @@ let b = e => {
       nitroIconType: b ? "default" : true,
       nitroIconSize: "sm",
       discountOfferAmount: j,
-      className: k[0].currency !== h.pK.DISCORD_ORB || T ? true : m.insufficientOrbs
+      className: k[0].currency !== C.pK.DISCORD_ORB || T ? true : m.insufficientOrbs
     })
   },
   v = e => {

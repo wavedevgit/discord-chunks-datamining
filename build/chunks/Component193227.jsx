@@ -2,12 +2,12 @@
 /** chunk id: 193227, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => I
+  Z: () => L
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk907331 = require("./907331.js"),
   Chunk399606 = require("./399606.js"),
   Chunk481060 = require("./481060.js"),
@@ -34,7 +34,7 @@ function k(e) {
     products: t,
     header: n,
     category: l
-  } = e, i = (0, a.e7)([u.default], () => u.default.getCurrentUser()), o = (0, S.St)(t), s = g.Z.useConfig({
+  } = e, i = (0, o.e7)([u.default], () => u.default.getCurrentUser()), a = (0, S.St)(t), s = g.Z.useConfig({
     location: "Products"
   }).showCardsV2, p = (0, d.sp)();
   return null == i || 0 === t.length ? null : (0, r.jsxs)("div", {
@@ -47,7 +47,7 @@ function k(e) {
       size: 24
     }), (0, r.jsx)("div", {
       className: j.cardsContainer,
-      children: o.map((e, t) => (0, r.jsx)(d.k0, {
+      children: a.map((e, t) => (0, r.jsx)(d.k0, {
         newValue: {
           tilePosition: t
         },
@@ -68,22 +68,22 @@ function k(e) {
 function T(e) {
   let {
     category: t
-  } = e, n = (0, C.l)(t.products), l = (0, f.a)()(n);
+  } = e, n = (0, h.l)(t.products), l = (0, f.a)()(n);
   return (0, r.jsx)(k, {
     products: l,
     category: t
   })
 }
 
-function L(e) {
+function I(e) {
   let {
     category: t
-  } = e, [n, i] = l.useState(false), o = (0, s.O)(e => {
+  } = e, [n, i] = l.useState(false), a = (0, s.O)(e => {
     i(e)
   }, .15);
   return (0, r.jsxs)("div", {
     className: j.categoryWrapper,
-    ref: o,
+    ref: a,
     children: [(0, r.jsx)(_.Z, {
       category: t
     }), (0, r.jsx)(T, {
@@ -92,15 +92,15 @@ function L(e) {
   })
 }
 
-function I(e) {
+function L(e) {
   var t;
   let {
     sortedCategories: n,
     setCategoryRef: i,
     currentPage: s,
-    handlePageChange: a
+    handlePageChange: o
   } = e, u = (0, d.sp)(), g = (0, x.R)(), f = null != (t = null == u ? true : u.sessionId) ? t : "", {
-    noCache: C,
+    noCache: h,
     includeUnpublished: _
   } = (0, O.Z)(), b = l.useMemo(() => n.filter(e => null == e.unpublishedAt || e.unpublishedAt > new Date).filter(e => {
     let {
@@ -112,25 +112,25 @@ function I(e) {
     return b.slice(e, e + y.kN)
   }, [b, s]);
   l.useEffect(() => {
-    (0, h.n)({
+    (0, C.n)({
       sessionId: f,
-      checkpoint: h.a.SHOP_MOUNTED,
+      checkpoint: C.a.SHOP_MOUNTED,
       tab: y.AW.CATALOG,
       unpublishedCategoriesShown: _,
-      cacheDisabled: C
+      cacheDisabled: h
     })
   }, []), l.useEffect(() => {
-    g || 0 === v.length || (0, h.n)({
+    g || 0 === v.length || (0, C.n)({
       sessionId: f,
-      checkpoint: h.a.SHOP_RENDERED,
+      checkpoint: C.a.SHOP_RENDERED,
       tab: y.AW.CATALOG,
       unpublishedCategoriesShown: _,
-      cacheDisabled: C
+      cacheDisabled: h
     })
-  }, [f, _, C, g, v.length]);
+  }, [f, _, h, g, v.length]);
   let E = (0, p.FF)("CollectiblesBrowse");
   return g ? (0, r.jsx)(m.Z, {}) : (0, r.jsxs)("div", {
-    className: o()(j.categories, {
+    className: a()(j.categories, {
       [j.categoriesNoFilter]: !E
     }),
     children: [v.map((e, t) => (0, r.jsx)("div", {
@@ -139,7 +139,7 @@ function I(e) {
         newValue: {
           categoryPosition: t
         },
-        children: (0, r.jsx)(L, {
+        children: (0, r.jsx)(I, {
           category: e
         })
       })
@@ -149,7 +149,7 @@ function I(e) {
         currentPage: s,
         totalCount: b.length,
         pageSize: y.kN,
-        onPageChange: a,
+        onPageChange: o,
         disablePaginationGap: true
       })
     })]

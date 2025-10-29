@@ -54,11 +54,11 @@ let f = {
     sortType: Chunk792091.E.RECENCY,
     sortDirection: Chunk497598.F.DESC
   },
-  C = {
+  h = {
     sortType: Chunk792091.E.POPULARITY,
     sortDirection: Chunk497598.F.DESC
   },
-  h = {
+  C = {
     sortType: Chunk792091.E.RELEVANCE,
     sortDirection: Chunk497598.F.DESC
   },
@@ -82,7 +82,7 @@ let f = {
       searchQuery: r,
       itemTypeFilters: l
     } = e;
-    return t.size > 0 || n.size > 0 || "" !== r.trim() ? h : l.size > 0 ? C : f
+    return t.size > 0 || n.size > 0 || "" !== r.trim() ? C : l.size > 0 ? h : f
   },
   b = (0, Chunk191336.U)((0, Chunk180059.XR)((e, t) => g(d({}, _), {
     hasDefaultFilters: () => !t().hasFilters() && t().sort.sortType === f.sortType && t().sort.sortDirection === f.sortDirection,
@@ -159,7 +159,7 @@ let f = {
           searchQuery: t,
           queryPageOffset: 0
         });
-        return "" !== t.trim() ? (n.sort = h, n.userHasSelectedSort = false) : e.userHasSelectedSort || (n.sort = m(n)), n
+        return "" !== t.trim() ? (n.sort = C, n.userHasSelectedSort = false) : e.userHasSelectedSort || (n.sort = m(n)), n
       })
     },
     setQueryPageSize: t => {
@@ -216,20 +216,20 @@ let f = {
       themeFilters: r,
       orbEligible: l,
       sort: i,
-      searchQuery: o,
+      searchQuery: a,
       queryPageSize: s,
-      queryPageOffset: a
+      queryPageOffset: o
     } = e;
     return {
       item_types: Array.from(t),
       colors: Array.from(n),
       themes: Array.from(r),
       orbs_eligible: !!l || true,
-      offset: a,
+      offset: o,
       limit: s,
       sort_type: i.sortType,
       sort_direction: i.sortDirection,
-      search: "" !== o ? o : true
+      search: "" !== a ? a : true
     }
   },
   E = () => {
@@ -243,7 +243,7 @@ let f = {
         let i = async () => {
           n(true);
           try {
-            let t = await (0, a.y)(r);
+            let t = await (0, o.y)(r);
             e((e => {
               let t = e.skus,
                 n = e.pagination.total,
@@ -270,7 +270,7 @@ let f = {
       let i = b.subscribe(v, Chunk647438, {
           equalityFn: (e, t) => JSON.stringify(e) === JSON.stringify(t)
         }),
-        o = b.subscribe(e => e.hasFilters(), (e, t) => {
+        a = b.subscribe(e => e.hasFilters(), (e, t) => {
           if (!e && t) {
             let e = b.getState();
             e.userHasSelectedSort || b.setState({
