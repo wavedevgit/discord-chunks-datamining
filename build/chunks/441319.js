@@ -35,7 +35,7 @@ var Chunk997945 = require("./997945.js"),
   Chunk563856 = require("./563856.js");
 let P = 60;
 
-function w() {
+function D() {
   return {
     id: Chunk997945.aH.DEFAULT,
     iconSource: Chunk63725,
@@ -44,7 +44,7 @@ function w() {
   }
 }
 
-function D() {
+function w() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
   return [...module ? [{
     id: Chunk997945.Ru.TRICK,
@@ -171,10 +171,10 @@ function D() {
 
 function L() {
   let e = arguments.length > 0 && true !== arguments[0] && arguments[0];
-  return [w(), ...D(module)]
+  return [D(), ...w(module)]
 }
 
 function x(e) {
   let t = L(true).find(t => t.id === e);
-  return null != t ? t : w()
+  return null != t ? t : D()
 }

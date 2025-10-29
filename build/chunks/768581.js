@@ -4,9 +4,9 @@
 let r;
 require.d(exports, {
   $k: () => O,
-  CA: () => D,
+  CA: () => w,
   F8: () => $,
-  JM: () => w,
+  JM: () => D,
   NZ: () => M,
   ZP: () => et,
   aN: () => x,
@@ -152,7 +152,7 @@ function P(e) {
   return null != (t = R(e, n, r, i, a)) ? t : N(e.id, e.discriminator, e.isProvisional)
 }
 
-function w(e) {
+function D(e) {
   let t, {
       guildId: n,
       userId: r,
@@ -172,13 +172,13 @@ function w(e) {
   return "webp" === u && a && X(i) && (_.animated = true), t += "?".concat(o.stringify(_))
 }
 
-function D(e) {
+function w(e) {
   let {
     userId: t,
     avatar: n,
     guildId: r
   } = e, i = arguments.length > 1 && true !== arguments[1] && arguments[1];
-  return null == n ? null : w({
+  return null == n ? null : D({
     userId: t,
     avatar: n,
     guildId: r,
@@ -188,7 +188,7 @@ function D(e) {
 
 function L(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2],
-    r = D(e, n);
+    r = w(e, n);
   return null != r ? ee(r) : t.getAvatarSource(e.guildId, n)
 }
 
@@ -473,8 +473,8 @@ function ee(e) {
 let et = {
   getUserAvatarURL: P,
   getDefaultAvatarURL: N,
-  getGuildMemberAvatarURL: D,
-  getGuildMemberAvatarURLSimple: w,
+  getGuildMemberAvatarURL: w,
+  getGuildMemberAvatarURLSimple: D,
   getGuildMemberAvatarSource: L,
   getGuildMemberBannerURL: k,
   getUserBannerURL: x,

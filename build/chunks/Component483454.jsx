@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   MM: () => x,
-  hn: () => D
+  hn: () => w
 }), require("./467055.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -167,7 +167,7 @@ let N = [Chunk409813.h8.PAYMENT_ELEMENT],
       children: u
     })
   }),
-  w = e => {
+  D = e => {
     let {
       step: t,
       billingAddressInfo: n,
@@ -203,7 +203,7 @@ let N = [Chunk409813.h8.PAYMENT_ELEMENT],
       })]
     })
   },
-  D = e => {
+  w = e => {
     var {
       onSetupError: t
     } = e, n = A(e, ["onSetupError"]);
@@ -224,7 +224,7 @@ let N = [Chunk409813.h8.PAYMENT_ELEMENT],
     }) : (0, r.jsx)(a.Elements, {
       stripe: l,
       options: I({}, i),
-      children: (0, r.jsx)(w, I({}, n))
+      children: (0, r.jsx)(D, I({}, n))
     })
   },
   L = ["link"],

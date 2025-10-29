@@ -2,7 +2,7 @@
 /** chunk id: 884338, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  ZP: () => w,
+  ZP: () => D,
   ag: () => T,
   u8: () => b
 }), require("./539854.js"), require("./388685.js");
@@ -278,4 +278,4 @@ h(P, "defaultProps", {
   showDefaultAvatarsForNullUsers: false,
   size: b.SIZE_24
 });
-let w = P
+let D = P

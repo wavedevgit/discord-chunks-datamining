@@ -1,40 +1,51 @@
 /** Chunk was on 1272 **/
 /** chunk id: 244989, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => o
+  Z: () => d
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   l = require.n(Chunk120356),
+  Chunk990547 = require("./990547.js"),
+  Chunk79766 = require("./79766.js"),
   Chunk481060 = require("./481060.js"),
+  Chunk213609 = require("./213609.js"),
   Chunk65538 = require("./65538.js");
 
-function o(e) {
+function d(e) {
   let {
-    badgeCopy: t,
-    acknowledgedBadgeCopy: n,
-    isDismissed: i
+    componentId: t,
+    badgeCopy: n,
+    acknowledgedBadgeCopy: i,
+    isDismissed: d
   } = e;
-  return i ? (0, r.jsxs)("div", {
-    className: l()(s.premiumBadge, s.premiumAcknowledgedBadge),
-    children: [(0, r.jsx)(a.T39, {
+  return ((0, c.Z)({
+    type: a.ImpressionTypes.VIEW,
+    name: a.ImpressionNames.PREMIUM_MARKETING_COMPONENT,
+    properties: {
+      component_type: s.I.PREMIUM_TAB,
+      component_id: t
+    }
+  }), d) ? (0, r.jsxs)("div", {
+    className: l()(u.premiumBadge, u.premiumAcknowledgedBadge),
+    children: [(0, r.jsx)(o.T39, {
       size: "custom",
       width: 10,
       height: 10,
       color: "currentColor",
-      className: s.BadgeClockIcon
-    }), (0, r.jsx)(a.Text, {
+      className: u.BadgeClockIcon
+    }), (0, r.jsx)(o.Text, {
       variant: "eyebrow",
       color: "text-secondary",
-      children: n
+      children: i
     })]
   }) : (0, r.jsx)("div", {
-    className: l()(s.premiumBadge, s.premiumUnacknowledgedBadge),
-    children: (0, r.jsx)(a.Text, {
+    className: l()(u.premiumBadge, u.premiumUnacknowledgedBadge),
+    children: (0, r.jsx)(o.Text, {
       variant: "eyebrow",
-      className: s.premiumUnacknowledgedBadgeCopy,
-      children: t
+      className: u.premiumUnacknowledgedBadgeCopy,
+      children: n
     })
   })
 }

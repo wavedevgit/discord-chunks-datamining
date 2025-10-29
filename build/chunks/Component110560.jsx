@@ -301,7 +301,7 @@ function Q(e) {
       sourceQuestContent: o
     });
     let e = O.ZP.getState().getVideoProgress(n.id);
-    null != e && e.timestampSec > 1 && ((0, E.lx)(n.id), p.default.track(w.rMx.QUEST_VIDEO_ENROLLMENT_RETRY_ATTEMPTED, {
+    null != e && e.timestampSec > 1 && ((0, E.lx)(n.id), p.default.track(D.rMx.QUEST_VIDEO_ENROLLMENT_RETRY_ATTEMPTED, {
       quest_id: n.id,
       source_quest_content: (0, m._b)(o),
       source_quest_content_cta: l,
@@ -349,13 +349,13 @@ function J(e) {
 function $(e) {
   let t = J(e),
     n = (0, a.zS)(t);
-  null != n && p.default.track(w.rMx.DEEP_LINK_CLICKED, {
+  null != n && p.default.track(D.rMx.DEEP_LINK_CLICKED, {
     fingerprint: (0, o.K)(n.fingerprint),
     attempt_id: n.attemptId,
     source: n.utmSource
   }), h.Z.launch(t, t => {
     t || (0, d.dL)({
-      pathname: w.Z5c.QUEST_HOME_V2,
+      pathname: D.Z5c.QUEST_HOME_V2,
       hash: e
     })
   })
@@ -381,13 +381,13 @@ function ee(e) {
 function et(e) {
   let t = ee(e),
     n = (0, a.zS)(t);
-  null != n && p.default.track(w.rMx.DEEP_LINK_CLICKED, {
+  null != n && p.default.track(D.rMx.DEEP_LINK_CLICKED, {
     fingerprint: (0, o.K)(n.fingerprint),
     attempt_id: n.attemptId,
     source: n.utmSource
   }), h.Z.launch(t, t => {
     t || (0, d.dL)({
-      pathname: w.Z5c.QUEST_HOME_V2,
+      pathname: D.Z5c.QUEST_HOME_V2,
       hash: e
     })
   })

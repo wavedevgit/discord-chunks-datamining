@@ -405,7 +405,7 @@ class q extends Chunk647438.Component {
         });
       return (0, r.jsxs)("div", {
         className: i,
-        children: [n && (0, r.jsx)(D.Z, {
+        children: [n && (0, r.jsx)(w.Z, {
           className: F.headerIcon
         }), null != e.giftStyle && (0, r.jsx)(y.Z, {
           defaultAnimationState: e.redeemed ? E.SR.LOOP : E.SR.IDLE,
@@ -422,7 +422,7 @@ let X = (0, Chunk112724.Z)((0, Chunk730749.Z)(q)),
       code: t,
       author: n,
       currentUser: r
-    } = e, i = C.Z.get(t), a = null != i ? w.Z.get(i.skuId) : null, o = null != i && null != i.userId ? R.default.getUser(i.userId) : null;
+    } = e, i = C.Z.get(t), a = null != i ? D.Z.get(i.skuId) : null, o = null != i && null != i.userId ? R.default.getUser(i.userId) : null;
     return {
       sku: a,
       giftCode: i,

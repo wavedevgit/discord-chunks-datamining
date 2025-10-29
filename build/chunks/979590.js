@@ -248,7 +248,7 @@
     return a
   }
 
-  function w(e, t) {
+  function D(e, t) {
     t = t || 6;
     for (var n = c(e).toHsv(), r = n.h, i = n.s, a = n.v, o = [], s = 1 / t; t--;) o.push(c({
       h: r,
@@ -411,7 +411,7 @@
       return this._applyCombination(A, arguments)
     },
     monochromatic: function() {
-      return this._applyCombination(w, arguments)
+      return this._applyCombination(D, arguments)
     },
     splitcomplement: function() {
       return this._applyCombination(R, arguments)
@@ -476,7 +476,7 @@
       size: o
     }) || !i ? s : (n.includeFallbackColors = false, c.mostReadable(e, ["#fff", "#000"], n))
   };
-  var D = c.names = {
+  var w = c.names = {
       aliceblue: "f0f8ff",
       antiquewhite: "faebd7",
       aqua: "0ff",
@@ -627,7 +627,7 @@
       yellow: "ff0",
       yellowgreen: "9acd32"
     },
-    L = c.hexNames = x(D);
+    L = c.hexNames = x(w);
 
   function x(e) {
     var t = {};
@@ -702,7 +702,7 @@
   function K(e) {
     e = e.replace(n, "").replace(r, "").toLowerCase();
     var t, i = false;
-    if (D[e]) e = D[e], i = true;
+    if (w[e]) e = w[e], i = true;
     else if ("transparent" == e) return {
       r: 0,
       g: 0,

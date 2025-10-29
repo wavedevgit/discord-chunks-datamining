@@ -91,13 +91,13 @@ function I(e) {
       rows: R = 3,
       inputRef: P
     } = e,
-    w = b(e, ["value", "placeholder", "autoFocus", "autosize", "minLength", "maxLength", "error", "defaultDirty", "showCharacterCount", "showRemainingCharacterCount", "rows", "inputRef"]);
+    D = b(e, ["value", "placeholder", "autoFocus", "autosize", "minLength", "maxLength", "error", "defaultDirty", "showCharacterCount", "showRemainingCharacterCount", "rows", "inputRef"]);
   let {
-    fieldProps: D,
+    fieldProps: w,
     props: L
-  } = (0, s.XF_)(w), {
+  } = (0, s.XF_)(D), {
     disabled: x
-  } = D, M = (0, d.U)("UserSettingsDesignSystems"), k = (0, u.m)({
+  } = w, M = (0, d.U)("UserSettingsDesignSystems"), k = (0, u.m)({
     validateOn: "change",
     error: y,
     value: n,
@@ -118,7 +118,7 @@ function I(e) {
     value: n,
     maxLength: N && null != g ? g : true
   }) : null;
-  return (0, r.jsx)(s.gNt, E(m({}, D), {
+  return (0, r.jsx)(s.gNt, E(m({}, w), {
     trailingContent: G,
     errorMessage: k.hasError && null != (t = k.errorMessage) ? t : true,
     children: (0, r.jsxs)(s.UPk, {

@@ -93,8 +93,8 @@ let A = Chunk647438.forwardRef((e, t) => {
     maxWidth: S = y,
     maxHeight: A = v,
     minWidth: P = 0,
-    minHeight: w = 0,
-    mediaLayoutType: D,
+    minHeight: D = 0,
+    mediaLayoutType: w,
     limitResponsiveWidth: L = true,
     accessory: x,
     zoomable: M = true,
@@ -130,7 +130,7 @@ let A = Chunk647438.forwardRef((e, t) => {
       maxWidth: S,
       maxHeight: A,
       minWidth: P,
-      minHeight: w
+      minHeight: D
     }),
     z = 0 !== K.width ? K.width / K.height : 1;
   "" !== f && c !== p.zo9.ERROR ? n = j({
@@ -138,17 +138,17 @@ let A = Chunk647438.forwardRef((e, t) => {
     size: K,
     alt: b,
     className: s,
-    mediaLayoutType: D
+    mediaLayoutType: w
   }) : c !== p.zo9.LOADING && (n = (0, r.jsx)(C, {
     size: K,
-    mediaLayoutType: D,
+    mediaLayoutType: w,
     alt: b
   })), n = (0, r.jsx)(_.N, {
     readyState: c,
     aspectRatio: z,
     placeholder: h,
     placeholderVersion: E,
-    placeholderStyle: R(K, D),
+    placeholderStyle: R(K, w),
     children: n
   });
   let q = null != U ? U() : null;
@@ -162,7 +162,7 @@ let A = Chunk647438.forwardRef((e, t) => {
         [g.imageWrapperBackground]: c !== p.zo9.READY,
         [g.clickable]: null != G
       }, a),
-      style: N(K, L, F, D)
+      style: N(K, L, F, w)
     }, H), {
       children: [null != k && (0, r.jsx)("a", {
         tabIndex: false,
@@ -230,7 +230,7 @@ function R(e, t) {
         display: "block", objectFit: "cover", minWidth: "100%", minHeight: "100%", maxWidth: 1 === (0, f.Z)() ? "calc(100% + 1px)" : "100%"
       };
     case h.hV.RESPONSIVE:
-      return w(e);
+      return D(e);
     default:
       return e
   }
@@ -243,7 +243,7 @@ function P(e, t) {
         width: "100%", height: "100%", aspectRatio: "".concat(e.width, " / ").concat(e.height), display: "flex", maxHeight: "inherit"
       };
     case h.hV.RESPONSIVE:
-      return I(O({}, w(e)), {
+      return I(O({}, D(e)), {
         display: "flex"
       });
     default:
@@ -251,7 +251,7 @@ function P(e, t) {
   }
 }
 
-function w(e) {
+function D(e) {
   let {
     width: t,
     height: n

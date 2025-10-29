@@ -95,7 +95,7 @@ function k(e) {
       } = e;
       return (0, r.jsx)(s.u, {
         asContainer: true,
-        text: D.intl.string(D.t.emnnEB),
+        text: w.intl.string(w.t.emnnEB),
         children: (0, r.jsx)(l.P3F, {
           className: c,
           focusProps: {
@@ -107,7 +107,7 @@ function k(e) {
             E(true), h.onMouseEnter()
           },
           onMouseLeave: h.onMouseLeave,
-          "aria-label": D.intl.string(D.t.emnnEB),
+          "aria-label": w.intl.string(w.t.emnnEB),
           children: (0, r.jsx)(p, {
             size: "custom",
             width: 20,
@@ -141,7 +141,7 @@ function j(e) {
     let n = [];
     j.forEach(e => {
       n.push(Number(e.command.id)), null != e.overrideSendCommand && n.push(Number(e.overrideSendCommand.id))
-    }), C.default.track(w.rMx.APP_IMAGE_RECS_MENU_VIEWED, {
+    }), C.default.track(D.rMx.APP_IMAGE_RECS_MENU_VIEWED, {
       guild_id: null != (e = null == o ? true : o.guild_id) ? e : "",
       channel_id: null != (t = null == o ? true : o.id) ? t : "",
       application_ids: [...j.map(e => Number(e.command.applicationId))],
@@ -197,7 +197,7 @@ function j(e) {
         command: e,
         location: n,
         sectionName: t.name
-      }), N.S.dispatch(w.CkL.FOCUS_CHANNEL_TEXT_AREA, {
+      }), N.S.dispatch(D.CkL.FOCUS_CHANNEL_TEXT_AREA, {
         channelId: o.id
       })
     }, [o.id, F, G, B, Z]),
@@ -242,14 +242,14 @@ function j(e) {
     onSelect: t,
     navId: "image-context-commands-popout",
     onClose: n,
-    "aria-label": D.intl.string(D.t["P3ShV+"]),
+    "aria-label": w.intl.string(w.t["P3ShV+"]),
     children: [(0, r.jsx)(l.sNh, {
       id: "menu-image-rec-header",
       render: () => (0, r.jsx)(l.Text, {
         className: L.title,
         variant: "text-md/bold",
         color: "header-primary",
-        children: D.intl.string(D.t.emnnEB)
+        children: w.intl.string(w.t.emnnEB)
       }),
       navigable: false,
       disabled: true
@@ -288,14 +288,14 @@ function j(e) {
           children: i ? (0, r.jsxs)(r.Fragment, {
             children: [(0, r.jsx)(l.sNh, {
               id: "".concat(e.command.id, "-send"),
-              label: D.intl.string(D.t["M+BhUW"]),
-              subtext: D.intl.string(D.t.zXFjJV),
+              label: w.intl.string(w.t["M+BhUW"]),
+              subtext: w.intl.string(w.t.zXFjJV),
               action: () => H(t, m.Vh.IMAGE_RECS_SUBMENU, n.imageOption),
               icon: l.Uuj
             }, "".concat(e.command.id, "-send")), (0, r.jsx)(l.sNh, {
               id: "".concat(e.command.id, "-edit"),
-              label: D.intl.string(D.t["wTaN+K"]),
-              subtext: D.intl.string(D.t.bIB3bs),
+              label: w.intl.string(w.t["wTaN+K"]),
+              subtext: w.intl.string(w.t.bIB3bs),
               action: () => {
                 V(e.command, e.section, m.Vh.IMAGE_RECS_SUBMENU, s)
               },

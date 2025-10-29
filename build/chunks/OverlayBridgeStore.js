@@ -200,7 +200,7 @@ function em() {
         for (let l of (el.log("transitionOverlayPIDStatus: Uploaded minidumps", e), e)) {
           var t, n, r, i, a, o, s;
           if (null == l) continue;
-          let e = null != l.processName ? D.Z.getGameByExecutable(l.processName) : null;
+          let e = null != l.processName ? w.Z.getGameByExecutable(l.processName) : null;
           x.default.track(B.rMx.OVERLAY_HOOK_CRASHED, {
             process_name: null == l ? true : l.processName,
             game_name: null != (t = null == e ? true : e.name) ? t : null,
@@ -364,7 +364,7 @@ function eA(e) {
 function eC(e, t, n) {
   var r;
   let i = null == (r = b.ZP.getGameForPID(e)) ? true : r.name,
-    a = D.Z.getGameByName(i),
+    a = w.Z.getGameByName(i),
     o = V({
       game_name: i,
       game_id: null == a ? null : a.id,
@@ -401,7 +401,7 @@ function eR(e) {
 function eP(e) {
   switch (es && el.info("[app data received]", e), e.type) {
     case B.BmY.CONNECT:
-      let t = w.default.getToken();
+      let t = D.default.getToken();
       if (null == t) break;
       (0, d.te)(U.OVERLAY_LAYOUT_ID, L.Z.getDefaultLayout(U.OVERLAY_LAYOUT_ID), Z.bv), Promise.all([(0, T.Z)(t, e.pid), o.ZP.PersistedStore.getAllStates()]).then(t => {
         let [n, r] = t, {
@@ -432,7 +432,7 @@ function eP(e) {
       (0, y.K)(e.payload)
   }
 }
-async function ew(e, t) {
+async function eD(e, t) {
   let n = await (0, G.K)();
   if (null == n) return void el.error("setInputLocked: overlay module failed loaded");
   let r = null != t ? t : $;
@@ -447,8 +447,8 @@ async function ew(e, t) {
   }
 }
 
-function eD(e, t) {
-  e ? setTimeout(() => ew(e, t), 200) : ew(e, t)
+function ew(e, t) {
+  e ? setTimeout(() => eD(e, t), 200) : eD(e, t)
 }
 let eL = null;
 
@@ -459,8 +459,8 @@ function ex(e) {
   } = e, r = q.get(n);
   if ((ee.has(n) && ev(true), null != r && null != K[n]) && (t || "READY" === r || "CRASHED" === r)) {
     if (t ? en.delete(n) : en.add(n), eo.clear(), null != eL && (clearTimeout(eL), eL = null, t)) return;
-    t ? eD(t, n) : eL = setTimeout(() => {
-      eD(t, n), eL = null
+    t ? ew(t, n) : eL = setTimeout(() => {
+      ew(t, n), eL = null
     }, 100)
   }
 }
@@ -469,11 +469,11 @@ function eM(e) {
   let {
     region: t
   } = e;
-  eo.add(t), eD(false, $)
+  eo.add(t), ew(false, $)
 }
 
 function ek() {
-  eo.clear(), eD(true, $)
+  eo.clear(), ew(true, $)
 }
 
 function ej(e) {
@@ -482,7 +482,7 @@ function ej(e) {
   } = e;
   et = btoa(String.fromCharCode(...crypto.getRandomValues(new Uint8Array(8))));
   let n = new URLSearchParams;
-  n.append("build_id", "641c26c613a579cf76cc4c330abd7d60c4e0b0a8"), n.append("rpc", String(t)), n.append("rpc_auth_token", et), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
+  n.append("build_id", "9f5ea1633b9465bda2ef0a6b4ee831058c91c356"), n.append("rpc", String(t)), n.append("rpc_auth_token", et), r = "".concat(location.protocol, "//").concat(location.host, "/overlay?").concat(n.toString())
 }
 
 function eU(e) {

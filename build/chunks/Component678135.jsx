@@ -39,8 +39,8 @@ function v(e) {
     pendingAvatarDecoration: N,
     pendingNickname: R,
     pendingGlobalName: P,
-    pendingThemeColors: w,
-    pendingProfileEffect: D,
+    pendingThemeColors: D,
+    pendingProfileEffect: w,
     pendingLegacyUsernameDisabled: L,
     pendingDisplayNameStyles: x,
     avatarClassName: M,
@@ -65,7 +65,7 @@ function v(e) {
     size: o.EFr.SIZE_80,
     showPending: true
   }), q = (0, _.IG)({
-    pendingProfileEffect: D,
+    pendingProfileEffect: w,
     displayProfile: W
   }), {
     theme: X,
@@ -73,13 +73,13 @@ function v(e) {
   } = (0, c.Z)({
     user: t,
     displayProfile: W,
-    pendingThemeColors: w,
+    pendingThemeColors: D,
     isPreview: i
   }), J = (0, r.jsxs)(d.Z, {
     user: t,
     displayProfile: W,
     themeType: b.l.POPOUT,
-    pendingThemeColors: w,
+    pendingThemeColors: D,
     className: a()(O.container, k),
     forceShowPremium: i,
     children: [(0, r.jsxs)("div", {

@@ -2,7 +2,7 @@
 /** chunk id: 665906, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $R: () => D,
+  $R: () => w,
   C7: () => C,
   Ek: () => T,
   Gu: () => B,
@@ -14,7 +14,7 @@ require.d(exports, {
   Y: () => G,
   cD: () => v,
   ki: () => y,
-  kn: () => w,
+  kn: () => D,
   tM: () => E,
   tc: () => P,
   xl: () => x,
@@ -124,13 +124,13 @@ function P(e) {
   return R(e, t, n)
 }
 
-function w(e) {
+function D(e) {
   let t = N(e, p.Z),
     n = j(e);
   return R(e, t, n)
 }
 
-function D(e) {
+function w(e) {
   var t;
   let n = (0, o.e7)([p.Z], () => null != e && p.Z.can(g.Plq.SEND_MESSAGES_IN_THREADS, e));
   return null != e && (!e.isThread() || e.isActiveThread() || e.isArchivedThread() && (null == (t = e.threadMetadata) ? true : t.locked) !== true && n)
@@ -172,7 +172,7 @@ function U(e) {
 function G(e) {
   let t = (0, c.Z)(),
     n = (0, o.e7)([p.Z], () => p.Z.can(g.Plq.CONNECT, e)),
-    r = D(e),
+    r = w(e),
     i = E.useExperiment({
       guildId: e.guild_id,
       location: "e791ea_1"

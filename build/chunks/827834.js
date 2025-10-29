@@ -10,9 +10,9 @@ exports.default = function() {
     var n, r = arguments.length > 1 ? arguments[1] : {},
       i = {},
       a = {
-        start: ew
+        start: eD
       },
-      o = ew,
+      o = eD,
       s = function(e) {
         return {
           type: "messageFormatPattern",
@@ -102,8 +102,8 @@ exports.default = function() {
           options: e.options
         }
       },
-      w = "selectordinal",
-      D = {
+      D = "selectordinal",
+      w = {
         type: "literal",
         value: "selectordinal",
         description: '"selectordinal"'
@@ -316,11 +316,11 @@ exports.default = function() {
       return null !== r && a(r), new e(null !== n ? n : o(r, l), r, l, i, s.line, s.column)
     }
 
-    function ew() {
-      return eD()
+    function eD() {
+      return ew()
     }
 
-    function eD() {
+    function ew() {
       var e, t, n;
       for (e = eO, t = [], n = eL(); n !== i;) t.push(n), n = eL();
       return t !== i && (ev = e, t = s(t)), e = t
@@ -377,7 +377,7 @@ exports.default = function() {
 
     function eZ() {
       var e, n, r, a;
-      return e = eO, t.substr(eO, 13) === w ? (n = w, eO += 13) : (n = i, 0 === eC && eR(D)), n !== i && ez() !== i ? (44 === t.charCodeAt(eO) ? (r = m, eO++) : (r = i, 0 === eC && eR(g)), r !== i && ez() !== i && (a = eW()) !== i ? (ev = e, e = n = L(a)) : (eO = e, e = l)) : (eO = e, e = l), e
+      return e = eO, t.substr(eO, 13) === D ? (n = D, eO += 13) : (n = i, 0 === eC && eR(w)), n !== i && ez() !== i ? (44 === t.charCodeAt(eO) ? (r = m, eO++) : (r = i, 0 === eC && eR(g)), r !== i && ez() !== i && (a = eW()) !== i ? (ev = e, e = n = L(a)) : (eO = e, e = l)) : (eO = e, e = l), e
     }
 
     function eF() {
@@ -404,7 +404,7 @@ exports.default = function() {
 
     function eH() {
       var e, n, r, a, o, s;
-      return e = eO, (n = ez()) !== i && (r = eV()) !== i && ez() !== i ? (123 === t.charCodeAt(eO) ? (a = _, eO++) : (a = i, 0 === eC && eR(p)), a !== i && ez() !== i && (o = eD()) !== i && ez() !== i ? (125 === t.charCodeAt(eO) ? (s = E, eO++) : (s = i, 0 === eC && eR(b)), s !== i ? (ev = e, e = n = G(r, o)) : (eO = e, e = l)) : (eO = e, e = l)) : (eO = e, e = l), e
+      return e = eO, (n = ez()) !== i && (r = eV()) !== i && ez() !== i ? (123 === t.charCodeAt(eO) ? (a = _, eO++) : (a = i, 0 === eC && eR(p)), a !== i && ez() !== i && (o = ew()) !== i && ez() !== i ? (125 === t.charCodeAt(eO) ? (s = E, eO++) : (s = i, 0 === eC && eR(b)), s !== i ? (ev = e, e = n = G(r, o)) : (eO = e, e = l)) : (eO = e, e = l)) : (eO = e, e = l), e
     }
 
     function eY() {

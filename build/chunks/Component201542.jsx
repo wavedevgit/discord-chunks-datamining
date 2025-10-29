@@ -87,8 +87,8 @@ let N = Chunk647438.memo(function(e) {
       onVolumeShow: N,
       onVolumeHide: R,
       onPlay: P,
-      onPause: w,
-      onError: D,
+      onPause: D,
+      onError: w,
       playbackCacheKey: L
     } = e,
     x = i.useRef(null),
@@ -133,8 +133,8 @@ let N = Chunk647438.memo(function(e) {
       let e = x.current;
       if (null == e) return;
       let t = e.error;
-      null == D || D(t)
-    }, [D]),
+      null == w || w(t)
+    }, [w]),
     eu = i.useCallback(e => {
       let t = (0, g.A)(e, 1);
       H(0 === t), ee(t), null == _ || _(t)
@@ -159,7 +159,7 @@ let N = Chunk647438.memo(function(e) {
     em = {
       played: q,
       currentTime: G,
-      onPause: w,
+      onPause: D,
       onPlay: P
     },
     eg = i.useRef(em);

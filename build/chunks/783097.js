@@ -2,8 +2,8 @@
 /** chunk id: 783097, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  $d: () => D,
-  BQ: () => w,
+  $d: () => w,
+  BQ: () => D,
   Cb: () => F,
   Hu: () => V,
   L1: () => z,
@@ -105,31 +105,31 @@ let P = {
   id: Chunk689079.bi.BUILT_IN
 };
 
-function w(e) {
+function D(e) {
   return e.id !== O.bi.BUILT_IN
 }
 
-function D(e) {
-  return w(e) ? e.name : I.intl.string(I.t.UB2gG2)
+function w(e) {
+  return D(e) ? e.name : I.intl.string(I.t.UB2gG2)
 }
 
 function L(e) {
-  return w(e) ? e.description : I.intl.string(I.t.X9fusn)
+  return D(e) ? e.description : I.intl.string(I.t.X9fusn)
 }
 
 function x(e) {
   var t;
-  return w(e) && (0, m.yE)(null != (t = e.flags) ? t : 0, y.udG.EMBEDDED)
+  return D(e) && (0, m.yE)(null != (t = e.flags) ? t : 0, y.udG.EMBEDDED)
 }
 
 function M(e) {
   var t;
-  return w(e) && (0, m.yE)(null != (t = e.flags) ? t : 0, y.udG.PARTNER)
+  return D(e) && (0, m.yE)(null != (t = e.flags) ? t : 0, y.udG.PARTNER)
 }
 
 function k(e) {
   var t;
-  return w(e) && (0, m.yE)(null != (t = e.flags) ? t : 0, y.udG.PROMOTED)
+  return D(e) && (0, m.yE)(null != (t = e.flags) ? t : 0, y.udG.PROMOTED)
 }
 
 function j(e) {
@@ -155,7 +155,7 @@ function U(e) {
 }
 
 function G(e) {
-  return w(e) && x(e) ? e instanceof p.ZP ? e.embeddedActivityConfig : e.embedded_activity_config : null
+  return D(e) && x(e) ? e instanceof p.ZP ? e.embeddedActivityConfig : e.embedded_activity_config : null
 }
 
 function B(e) {
@@ -206,7 +206,7 @@ function Z(e) {
       fakeAppIconURL: n
     } = t,
     r = N(t, ["fakeAppIconURL"]);
-  return w(e) ? {
+  return D(e) ? {
     iconURL: h.ZP.getApplicationIconURL(C(S({}, r), {
       id: e.id,
       icon: e.icon
@@ -221,7 +221,7 @@ function Z(e) {
 }
 
 function F(e) {
-  return !!w(e) && (e instanceof p.ZP ? e.isMonetized : e.is_monetized)
+  return !!D(e) && (e instanceof p.ZP ? e.isMonetized : e.is_monetized)
 }
 
 function V(e) {

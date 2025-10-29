@@ -413,7 +413,7 @@ let R = {
     WHITE: "#ebf0f7",
     PINK: "#fa6ef6"
   }),
-  w = [{
+  D = [{
     left: 29,
     top: 100,
     color: P.WHITE
@@ -438,7 +438,7 @@ let R = {
     top: 97,
     color: P.PINK
   }],
-  D = Object.freeze({
+  w = Object.freeze({
     SCALE_INITIAL: 0,
     SCALE_MIDDLE: 1,
     SCALE_END: 0,
@@ -459,13 +459,13 @@ let R = {
 function L(e) {
   let {
     animate: t
-  } = e, [n, r] = l.useState(0), i = (0, _.bYB)(w.length, w.map((e, i) => {
-    let a = i > 0 ? D.DELAY_STAGGER * i + Math.random() * (D.DELAY_MAX - D.DELAY_MIN) + D.DELAY_MIN : 0,
-      o = Math.random() * (D.SIZE_MAX - D.SIZE_MIN) + D.SIZE_MIN;
+  } = e, [n, r] = l.useState(0), i = (0, _.bYB)(D.length, D.map((e, i) => {
+    let a = i > 0 ? w.DELAY_STAGGER * i + Math.random() * (w.DELAY_MAX - w.DELAY_MIN) + w.DELAY_MIN : 0,
+      o = Math.random() * (w.SIZE_MAX - w.SIZE_MIN) + w.SIZE_MIN;
     return {
       from: {
-        scale: D.SCALE_INITIAL,
-        rotate: D.ROTATE_INITIAL,
+        scale: w.SCALE_INITIAL,
+        rotate: w.ROTATE_INITIAL,
         top: e.top,
         left: e.left,
         width: o,
@@ -473,34 +473,34 @@ function L(e) {
       },
       to: async e => {
         t ? (await e({
-          scale: D.SCALE_MIDDLE,
-          rotate: D.ROTATE_MIDDLE,
+          scale: w.SCALE_MIDDLE,
+          rotate: w.ROTATE_MIDDLE,
           delay: a,
           config: {
-            duration: D.DURATION_MIDDLE,
-            easing: D.EASING_MIDDLE
+            duration: w.DURATION_MIDDLE,
+            easing: w.EASING_MIDDLE
           }
         }), await e({
-          scale: D.SCALE_END,
-          rotate: D.ROTATE_END,
+          scale: w.SCALE_END,
+          rotate: w.ROTATE_END,
           config: {
-            duration: D.DURATION_END,
-            easing: D.EASING_END
+            duration: w.DURATION_END,
+            easing: w.EASING_END
           }
         }), await e({
-          scale: D.SCALE_INITIAL,
-          rotate: D.ROTATE_INITIAL,
+          scale: w.SCALE_INITIAL,
+          rotate: w.ROTATE_INITIAL,
           immediate: true
-        }), i === w.length - 1 && r(n + 1)) : await e({
-          scale: D.SCALE_INITIAL,
-          rotate: D.ROTATE_INITIAL
+        }), i === D.length - 1 && r(n + 1)) : await e({
+          scale: w.SCALE_INITIAL,
+          rotate: w.ROTATE_INITIAL
         })
       }
     }
   }));
   return (0, s.jsx)(s.Fragment, {
     children: i.map((e, t) => {
-      let n = w[t];
+      let n = D[t];
       return (0, s.jsx)(d.animated.svg, {
         style: e,
         className: p.guildStar,

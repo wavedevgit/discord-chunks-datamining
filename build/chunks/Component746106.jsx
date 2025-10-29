@@ -2,7 +2,7 @@
 /** chunk id: 746106, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  w: () => D
+  w: () => w
 }), require("./388685.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk982519 = require("./982519.js"),
   Chunk388032 = require("./388032.jsx");
 
-function w(e, t, n, r, o) {
+function D(e, t, n, r, o) {
   let s = i.useContext(_.Z),
     l = i.useCallback(() => ({
       i18n: {
@@ -96,7 +96,7 @@ function w(e, t, n, r, o) {
   }, [l]), u
 }
 
-function D(e) {
+function w(e) {
   let {
     windowKey: t,
     themeOverride: n,
@@ -106,7 +106,7 @@ function D(e) {
     theme: y,
     focused: R,
     currentWindow: P,
-    fontScale: D,
+    fontScale: w,
     fontScaleClass: L,
     keyboardModeEnabled: x,
     saturation: M,
@@ -154,7 +154,7 @@ function D(e) {
     $ = (0, h.On)({
       isPopoutWindow: o
     }),
-    ee = w(y, M, i.useMemo(() => {
+    ee = D(y, M, i.useMemo(() => {
       let e = [];
       return K && e.push("refresh-fast-follow-avatars"), z && e.push("refresh-fast-follow-guild-bg"), q && e.push("refresh-fast-follow-distinct-borders"), X && e.push("mana-text-inputs"), Q && e.push("mana-toggle-inputs"), e
     }, [K, z, q, X, Q]), R, _);
@@ -170,7 +170,7 @@ function D(e) {
         theme: y,
         density: W,
         focused: R,
-        fontScale: D,
+        fontScale: w,
         fontScaleClass: L,
         keyboardModeEnabled: x,
         mouseMode: H,

@@ -117,12 +117,12 @@ function S(e) {
       zoomed: R
     } = (0, p.Y)(),
     P = C(R, g, b, n.contentType, n.originalContentType),
-    w = null != d && 0 !== d && null != _ && 0 !== _;
-  if ("VIDEO" === I && w && null != b) {
-    var D;
+    D = null != d && 0 !== d && null != _ && 0 !== _;
+  if ("VIDEO" === I && D && null != b) {
+    var w;
     let e = T(b);
     if (null == e) return null;
-    let t = null != (D = n.renderLinkComponent) ? D : c.iT;
+    let t = null != (w = n.renderLinkComponent) ? w : c.iT;
     return (0, r.jsx)(s.Z, y(E({}, N), {
       src: P,
       width: d,
@@ -143,7 +143,7 @@ function S(e) {
       disableArrowKeySeek: true
     }))
   }
-  return "IMAGE" === I && (t = w ? (0, r.jsx)(o.ZP, y(E({}, N), {
+  return "IMAGE" === I && (t = D ? (0, r.jsx)(o.ZP, y(E({}, N), {
     src: P,
     width: d,
     height: _,

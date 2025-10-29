@@ -10,7 +10,7 @@ require.d(exports, {
   ae: () => ev,
   bL: () => ey,
   hJ: () => eS,
-  iV: () => ew,
+  iV: () => eD,
   jx: () => eC,
   oR: () => eR,
   qz: () => eN,
@@ -339,7 +339,7 @@ function eP(e, t, n, r) {
   }, s)
 }
 
-function ew(e, t) {
+function eD(e, t) {
   let [n, r] = (0, C.Iu)(e => [e.activeView, e.activeViewType], u.X), a = (0, _.e7)([O.Z], () => O.Z.shouldShowPopup() && O.Z.activeViewType() === e);
   i.useEffect(() => () => {
     (0, C._Q)(e)
@@ -356,7 +356,7 @@ function ew(e, t) {
   }
 }
 
-function eD(e, t, n) {
+function ew(e, t, n) {
   let r = i.useCallback(() => {
     var r, i;
     return !!(!n && (null == (r = t.current) ? true : r.onTabOrEnter(false))) || (null == (i = e.current) ? true : i.onTabOrEnter(false)) || false
@@ -388,7 +388,7 @@ let ex = e => {
     let {
       enabled: t,
       onlyExactMatch: n
-    } = (0, w.zM)("ChannelTextAreaContainer", {
+    } = (0, D.zM)("ChannelTextAreaContainer", {
       autoTrackExposure: false
     }), [r, a] = i.useState(true), o = i.useRef(null);
     return i.useLayoutEffect(() => {
@@ -421,7 +421,7 @@ function ek(e, t) {
     editorClassName: C,
     id: R,
     required: P,
-    disabled: w,
+    disabled: D,
     placeholder: x,
     accessibilityLabel: M,
     channel: k,
@@ -487,7 +487,7 @@ function ek(e, t) {
     canAttachFiles: e7,
     canCreateThreads: e9,
     canEveryoneSendMessages: te
-  } = eP(k, j, e2, w), tt = j.toolbarType === Q.OW.STATIC, tn = !G.dN.useSetting() && !(0, q.isAndroidWeb)() && null != window.ResizeObserver, tr = !tn || !(null == (n = j.commands) ? true : n.enabled) || !U || f !== ec.GI, ti = (0, D.Z)(), {
+  } = eP(k, j, e2, D), tt = j.toolbarType === Q.OW.STATIC, tn = !G.dN.useSetting() && !(0, q.isAndroidWeb)() && null != window.ResizeObserver, tr = !tn || !(null == (n = j.commands) ? true : n.enabled) || !U || f !== ec.GI, ti = (0, w.Z)(), {
     fontSize: ta
   } = (0, _.cj)([g.Z], () => ({
     fontSize: g.Z.fontSize
@@ -526,12 +526,12 @@ function ek(e, t) {
     handleTab: tT,
     handleEnter: tS,
     handleMoveSelection: tA
-  } = eD(tp, eX, tr), {
+  } = ew(tp, eX, tr), {
     expressionPickerView: tC,
     shouldHideExpressionPicker: tN,
     handleOuterClick: tR
-  } = ew(j, eQ), tP = eL(tc, eQ), tw = ex(f), {
-    currentAutocompleteType: tD,
+  } = eD(j, eQ), tP = eL(tc, eQ), tD = ex(f), {
+    currentAutocompleteType: tw,
     handleAutocompleteVisibilityChange: tL
   } = eM();
   (0, X.S)(tc, k.guild_id, k.id);
@@ -656,8 +656,8 @@ function ek(e, t) {
                 fontSize: ta,
                 spellcheckEnabled: to,
                 canOnlyUseTextCommands: tx,
-                isEditorIdle: tw,
-                currentAutocompleteType: tD,
+                isEditorIdle: tD,
+                currentAutocompleteType: tw,
                 className: o()({
                   [ed.textAreaThreadCreation]: j === Q.Ie.THREAD_CREATION,
                   [ed.profileBioInput]: j === Q.Ie.PROFILE_BIO_INPUT,
@@ -683,7 +683,7 @@ function ek(e, t) {
           canSendSoundmoji: null == (u = j.soundmoji) ? true : u.allowSending,
           textValue: f,
           focused: U,
-          isEditorIdle: tw,
+          isEditorIdle: tD,
           expressionPickerView: tC,
           type: j,
           targetRef: eq,

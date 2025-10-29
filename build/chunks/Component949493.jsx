@@ -43,20 +43,20 @@ let R = () => (0, Chunk951288.jsxs)(Chunk893996.Z, {
       children: (0, Chunk951288.jsx)(Chunk540204.Z, {})
     }), (0, Chunk951288.jsx)(Chunk988043.Z, {}), (0, Chunk951288.jsx)(Chunk919539.Z, {}), (0, Chunk951288.jsx)(Chunk301812.Z, {}), (0, Chunk951288.jsx)(Chunk190014.Z, {})]
   }),
-  w = () => (0, Chunk951288.jsxs)(Chunk893996.Z, {
+  D = () => (0, Chunk951288.jsxs)(Chunk893996.Z, {
     title: Chunk388032.intl.string(Chunk388032.t["1Qn8iV"]),
     webSetting: Chunk726985.s6.PRIVACY_AND_SAFETY_FRIEND_REQUESTS_CATEGORY,
     children: [(0, Chunk951288.jsx)(Chunk694569.Z, {}), (0, Chunk951288.jsx)(Chunk273927.ZP, {})]
   }),
-  D = () => (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
-    children: [(0, Chunk951288.jsx)(R, {}), (0, Chunk951288.jsx)(P, {}), (0, Chunk951288.jsx)(w, {})]
+  w = () => (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
+    children: [(0, Chunk951288.jsx)(R, {}), (0, Chunk951288.jsx)(P, {}), (0, Chunk951288.jsx)(D, {})]
   });
 
 function L() {
   let e = (0, Chunk442837.e7)([Chunk663389.Z], () => Chunk663389.Z.getSubsection()),
     t = [{
       title: Chunk388032.intl.string(Chunk388032.t["/7xJCF"]),
-      component: () => (0, Chunk951288.jsx)(D, {}),
+      component: () => (0, Chunk951288.jsx)(w, {}),
       setting: Chunk726985.s6.CONTENT_SOCIAL_DISCORD_TAB
     }, {
       title: Chunk388032.intl.string(Chunk388032.t.YpCiMt),

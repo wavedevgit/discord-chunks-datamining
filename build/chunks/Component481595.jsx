@@ -99,7 +99,7 @@ function U(e) {
     ec = (0, l.e7)([y.Z], () => y.Z.enabled),
     eu = s.M.EEA_COUNTRIES.has(O.Z.ipCountryCodeWithFallback),
     ed = G === P.A.PURCHASING || G === P.A.COMPLETED,
-    ef = (0, w.m)(B, Z),
+    ef = (0, D.m)(B, Z),
     e_ = null != ef ? ef.type : null;
   i.useEffect(() => {
     en && Z === et && et !== I.c && null == es && (0, u.x2)(er.applicationId, er.id, et, {
@@ -112,7 +112,7 @@ function U(e) {
   }, [et, en, Z, er.applicationId, er.id, es, X, J]);
   let ep = null != ei && ei.length > 0 && (Z === I.c || null === e_) && Q ? E.w.SELECT_PAYMENT_METHOD : true,
     eh = er.productLine === x.POd.SOCIAL_LAYER_GAME_ITEM,
-    em = ee || eh;
+    em = ee && !eh;
   return (0, r.jsxs)("div", {
     className: k.stepBody,
     children: [(0, r.jsx)(E.Y, {
@@ -133,7 +133,7 @@ function U(e) {
       application: U,
       sku: er,
       isEmbeddedIAP: W
-    }), em && (0, r.jsx)(D.Z, {
+    }), em && (0, r.jsx)(w.Z, {
       sku: er
     }), null != $ ? (0, r.jsx)(b.s, {
       giftRecipient: $
@@ -150,17 +150,6 @@ function U(e) {
         sku: er,
         value: ""
       })
-    }), eh && (0, r.jsxs)("div", {
-      className: k.socialLayerGameItemDisclaimer,
-      children: [(0, r.jsx)(c.aNP, {
-        size: "custom",
-        width: 16,
-        height: 16
-      }), (0, r.jsx)(c.Text, {
-        variant: "text-xs/normal",
-        color: "text-secondary",
-        children: M.intl.string(M.t["6fBC//"])
-      })]
     }), (0, r.jsx)(_.ZP, {
       label: M.intl.string(M.t["mmDvV+"]),
       paymentSources: Object.values(B),
@@ -169,10 +158,10 @@ function U(e) {
       onPaymentSourceAdd: m,
       hidePersonalInformation: ec,
       paymentGatewayRestrictions: ei
-    }), (0, r.jsx)(g.Z, {
+    }), (0, r.jsxs)(g.Z, {
       isActive: t,
       ref: n,
-      children: (0, r.jsx)(p.Z, {
+      children: [(0, r.jsx)(p.Z, {
         onChange: F,
         forceShow: true,
         showWithdrawalWaiver: eu,
@@ -192,7 +181,13 @@ function U(e) {
           isGift: J,
           applicationName: U.name
         })
-      })
+      }), eh && (0, r.jsx)("div", {
+        className: k.socialLayerGameItemDisclaimer,
+        children: (0, r.jsx)(c.M14, {
+          type: "warning",
+          children: M.intl.string(M.t["6fBC//"])
+        })
+      })]
     })]
   })
 }

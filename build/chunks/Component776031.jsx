@@ -85,7 +85,7 @@ function S(e, t) {
     return null == (t = f.Z.getGuild(null == e ? true : e.guildId)) ? true : t.premiumTier
   }), {
     location: R
-  } = (0, l.O)(), P = (0, a.e7)([p.Z, d.Z], () => d.Z.getChannel(p.Z.getVoiceChannelId())), w = i.useCallback((e, n, r, i) => {
+  } = (0, l.O)(), P = (0, a.e7)([p.Z, d.Z], () => d.Z.getChannel(p.Z.getVoiceChannelId())), D = i.useCallback((e, n, r, i) => {
     if (e) {
       if (null != A) {
         let e = {
@@ -110,7 +110,7 @@ function S(e, t) {
     }))
   }, [t, R, S, A]);
   if (null == e) return null;
-  let D = n === g.ApplicationStreamPresets.PRESET_DOCUMENTS ? g.ApplicationStreamFPS.FPS_30 : v,
+  let w = n === g.ApplicationStreamPresets.PRESET_DOCUMENTS ? g.ApplicationStreamFPS.FPS_30 : v,
     L = g.af.map(e => {
       let {
         value: t,
@@ -121,20 +121,20 @@ function S(e, t) {
         id: "stream-settings-fps-".concat(t),
         label: n,
         checked: t === v,
-        action: () => w(i, y, t, m.AnalyticsObjectTypes.RESOLUTION)
+        action: () => D(i, y, t, m.AnalyticsObjectTypes.RESOLUTION)
       }, "stream-settings-fps-".concat(t))
     }),
     x = g.km.map(e => {
       let {
         value: t,
         label: n
-      } = e, i = (0, c.Z)(g.ApplicationStreamPresets.PRESET_CUSTOM, t, D, C, N, P);
+      } = e, i = (0, c.Z)(g.ApplicationStreamPresets.PRESET_CUSTOM, t, w, C, N, P);
       return (0, r.jsx)(o.k5B, {
         group: "stream-settings-resolution",
         id: "stream-settings-resolution-".concat(t),
         label: n,
         checked: t === y,
-        action: () => w(i, t, D, m.AnalyticsObjectTypes.RESOLUTION)
+        action: () => D(i, t, w, m.AnalyticsObjectTypes.RESOLUTION)
       }, "stream-settings-resolution-".concat(t))
     });
   return (0, r.jsxs)(r.Fragment, {

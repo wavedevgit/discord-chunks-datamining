@@ -17,7 +17,7 @@
 
   function d(e, t, n, r) {
     var i = Object.create((t && t.prototype instanceof E ? t : E).prototype);
-    return i._invoke = C(e, n, new w(r || [])), i
+    return i._invoke = C(e, n, new D(r || [])), i
   }
 
   function f(e, t, n) {
@@ -49,7 +49,7 @@
     return this
   };
   var v = Object.getPrototypeOf,
-    I = v && v(v(D([])));
+    I = v && v(v(w([])));
   I && I !== r && i.call(I, o) && (O = I);
   var T = y.prototype = E.prototype = Object.create(O);
 
@@ -156,13 +156,13 @@
     t.type = "normal", delete t.arg, e.completion = t
   }
 
-  function w(e) {
+  function D(e) {
     this.tryEntries = [{
       tryLoc: "root"
     }], e.forEach(R, this), this.reset(true)
   }
 
-  function D(e) {
+  function w(e) {
     if (e) {
       var t = e[o];
       if (t) return t.call(e);
@@ -219,8 +219,8 @@
         }
         return n.done = true, n
       }
-  }, u.values = D, w.prototype = {
-    constructor: w,
+  }, u.values = w, D.prototype = {
+    constructor: D,
     reset: function(e) {
       if (this.prev = 0, this.next = 0, this.sent = this._sent = n, this.done = false, this.delegate = null, this.method = "next", this.arg = n, this.tryEntries.forEach(P), !e)
         for (var t in this) "t" === t.charAt(0) && i.call(this, t) && !isNaN(+t.slice(1)) && (this[t] = n)
@@ -294,7 +294,7 @@
     },
     delegateYield: function(e, t, r) {
       return this.delegate = {
-        iterator: D(e),
+        iterator: w(e),
         resultName: t,
         nextLoc: r
       }, "next" === this.method && (this.arg = n), g

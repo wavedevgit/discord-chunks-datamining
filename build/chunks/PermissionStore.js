@@ -40,7 +40,7 @@ let C = {},
   R = {},
   P = 0;
 
-function w(e) {
+function D(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
     n = C[e];
   if (null != n) return n;
@@ -54,7 +54,7 @@ function w(e) {
   })
 }
 
-function D(e) {
+function w(e) {
   var t;
   let n = !(arguments.length > 1) || true === arguments[1] || arguments[1],
     r = I.default.getCurrentUser();
@@ -63,7 +63,7 @@ function D(e) {
   if (null == i) return b.Hn;
   let o = i.getGuildId(),
     s = null != o && (u.Z.isLurking(o) || (null == (t = O.ZP.getMember(o, r.id)) ? true : t.isPending));
-  return !i.isScheduledForDeletion() && !s && a().isEmpty(i.permissionOverwrites) && null != o ? w(o) : b.uB({
+  return !i.isScheduledForDeletion() && !s && a().isEmpty(i.permissionOverwrites) && null != o ? D(o) : b.uB({
     user: r,
     context: i,
     checkElevated: n
@@ -73,7 +73,7 @@ function D(e) {
 function L(e) {
   let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
     n = N[e];
-  return null != n ? n : N[e] = D(e, t)
+  return null != n ? n : N[e] = w(e, t)
 }
 
 function x(e) {
@@ -229,7 +229,7 @@ function Q(e, t, n, r) {
       return null == i ? b.Hn : b.Og(e, Q(i, t, n, r), f.Z.hasJoined(e.id))
     }
     i = L(e.id)
-  } else(0, E.lM)(e) && (i = w(e.id));
+  } else(0, E.lM)(e) && (i = D(e.id));
   return true !== t || true !== n || true !== r ? b.uB({
     user: I.default.getCurrentUser(),
     context: e,
@@ -244,10 +244,10 @@ class J extends(r = Chunk442837.ZP.Store) {
     this.waitFor(Chunk592125.Z, Chunk271383.ZP, Chunk430824.Z, Chunk160404.Z, Chunk569471.Z, Chunk41776.Z, Chunk427679.Z, Chunk594174.default)
   }
   getChannelPermissions(e) {
-    return p.Ec.has(e.type) ? D(e.id) : L(e.id)
+    return p.Ec.has(e.type) ? w(e.id) : L(e.id)
   }
   getGuildPermissions(e) {
-    return w(e.id)
+    return D(e.id)
   }
   getGuildPermissionProps(e) {
     let t = I.default.getCurrentUser();
@@ -270,10 +270,10 @@ class J extends(r = Chunk442837.ZP.Store) {
     }
   }
   canAccessMemberSafetyPage(e) {
-    return o.Db(w(e.id), S.N)
+    return o.Db(D(e.id), S.N)
   }
   canAccessGuildSettings(e) {
-    return o.Db(w(e.id), b.ym)
+    return o.Db(D(e.id), b.ym)
   }
   canWithPartialContext(e, t) {
     return "channelId" in t && "string" == typeof t.channelId ? this.can(e, y.Z.getChannel(t.channelId)) : "guildId" in t && "string" == typeof t.guildId && this.can(e, v.Z.getGuild(t.guildId))

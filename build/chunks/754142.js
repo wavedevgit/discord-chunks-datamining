@@ -2,7 +2,7 @@
 /** chunk id: 754142, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  b: () => D
+  b: () => w
 }), require("./388685.js");
 var Chunk392711 = require("./392711.js"),
   i = require.n(Chunk392711),
@@ -78,13 +78,13 @@ function P(e) {
   return null != (n = null != (t = "channelId" in e ? e.channelId : true) ? t : r) ? n : null
 }
 
-function w(e, t, n) {
+function D(e, t, n) {
   var r, i, a, o;
   return e ? null != (i = null == (r = T(t)) ? true : r.frameRateEncode) ? i : null : null != (o = null == (a = S(t, n)) ? true : a.frameRateDecode) ? o : null
 }
 
-function D(e, t) {
-  var n, r, c, h, D;
+function w(e, t) {
+  var n, r, c, h, w;
   let L, x = (0, O.hp)(e),
     M = P(t),
     k = d.Z.getChannel(M),
@@ -121,8 +121,8 @@ function D(e, t) {
     ec = null != Q ? Q.ownerId : X,
     eu = null != J ? null == J ? true : J.getVoiceParticipantType() : es ? "sender" : "receiver",
     ed = null != (r = null == $ ? true : $.getMediaEngineConnectionId()) ? r : null;
-  L = null != j && null != Q ? es ? null == $ || null == (c = $.getOutboundStats()) ? true : c.find(e => e.quality === I.y7) : null == $ ? true : $.getInboundStats(Q.ownerId) : es ? null != (D = i().maxBy(null != (h = null == $ ? true : $.getOutboundStats()) ? h : [], e => e.num_frames)) ? D : null : null != ec ? null == $ ? true : $.getInboundStats(ec) : null, (0, g.q)().then(t => {
-    var n, r, i, s, l, c, u, d, h, m, g, O, P, D, j, X, ee, ef, e_, ep, eh, em, eg, eE, eb, ey, eO, ev, eI, eT, eS, eA, eC, eN, eR, eP, ew, eD, eL, ex, eM, ek, ej, eU, eG, eB, eZ, eF, eV;
+  L = null != j && null != Q ? es ? null == $ || null == (c = $.getOutboundStats()) ? true : c.find(e => e.quality === I.y7) : null == $ ? true : $.getInboundStats(Q.ownerId) : es ? null != (w = i().maxBy(null != (h = null == $ ? true : $.getOutboundStats()) ? h : [], e => e.num_frames)) ? w : null : null != ec ? null == $ ? true : $.getInboundStats(ec) : null, (0, g.q)().then(t => {
+    var n, r, i, s, l, c, u, d, h, m, g, O, P, w, j, X, ee, ef, e_, ep, eh, em, eg, eE, eb, ey, eO, ev, eI, eT, eS, eA, eC, eN, eR, eP, eD, ew, eL, ex, eM, ek, ej, eU, eG, eB, eZ, eF, eV;
     let eH = {
       error_name: e.valueOf(),
       error_code: x.errorCode,
@@ -130,7 +130,7 @@ function D(e, t) {
       error_category: x.category,
       underlying_error: null != G ? G : null,
       error_message: null != B ? B : null,
-      guild_id: null != (D = null == k ? true : k.guild_id) ? D : null,
+      guild_id: null != (w = null == k ? true : k.guild_id) ? w : null,
       channel_id: null != M ? M : null,
       channel_type: null != (j = null == k ? true : k.type) ? j : null,
       rtc_connection_id: null != F ? F : null,
@@ -154,7 +154,7 @@ function D(e, t) {
       incoming_video_stopped_for_occlusion: !o.w.isIncomingVideoEnabled(),
       bitrate: null != (eT = null == (u = A(es, ed, ec)) ? true : u.bitrate) ? eT : null,
       target_bitrate: es && null != (eS = null == (d = T(ed)) ? true : d.bitrateTarget) ? eS : null,
-      fps: null != (eA = w(es, el, ec)) ? eA : null,
+      fps: null != (eA = D(es, el, ec)) ? eA : null,
       target_fps: el === I.Yn.STREAM && es ? en : null,
       sender_user_id: null != (eC = null == Q ? true : Q.ownerId) ? eC : null,
       stream_region: null != (eN = null == J ? true : J.getRegion()) ? eN : null,
@@ -167,8 +167,8 @@ function D(e, t) {
       share_application_id: null != ei ? ei : null,
       share_application_executable: null != ea ? ea : null,
       share_application_distributor: null != eo ? eo : null,
-      cpu_brand: null != (ew = null == t ? true : t.cpu_brand) ? ew : null,
-      cpu_vendor: null != (eD = null == t ? true : t.cpu_vendor) ? eD : null,
+      cpu_brand: null != (eD = null == t ? true : t.cpu_brand) ? eD : null,
+      cpu_vendor: null != (ew = null == t ? true : t.cpu_vendor) ? ew : null,
       cpu_memory: null != (eL = null == t ? true : t.cpu_memory) ? eL : null,
       gpu_brand: null != (ex = null == t ? true : t.gpu_brand) ? ex : null,
       gpu_count: null != (eM = null == t ? true : t.gpu_count) ? eM : null,

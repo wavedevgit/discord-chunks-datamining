@@ -54,7 +54,7 @@ function P(e, t, n) {
     rejectWithError: false
   })
 }
-async function w(e, t) {
+async function D(e, t) {
   var n;
   let r = N[e];
   if (null != r) return r;
@@ -67,7 +67,7 @@ async function w(e, t) {
   }, t), a = null == (n = i[0]) ? true : n.name;
   return N[e] = a, a
 }
-class D {
+class w {
   start() {
     this._started || (this._started = true, Chunk553795.Z.isFetching() ? Chunk457330.Z.fetch() : this._check())
   }
@@ -97,7 +97,7 @@ class D {
         title: c
       } = o, f = {
         large_image: null != s && null != (r = (0, d.f)(h.ABu.TWITCH, s)) ? r : true
-      }, _ = await w(l, t), p = u.Z.get(h.ABu.TWITCH), m = null != (i = R(s)) ? i : e.name, g = null != c && "" !== c ? c.slice(0, I) : true, E = null != _ && "" !== _ ? _.slice(0, I) : true;
+      }, _ = await D(l, t), p = u.Z.get(h.ABu.TWITCH), m = null != (i = R(s)) ? i : e.name, g = null != c && "" !== c ? c.slice(0, I) : true, E = null != _ && "" !== _ ? _.slice(0, I) : true;
       return {
         url: null == (n = p.getPlatformUserUrl) ? true : n.call(p, {
           id: e.id,
@@ -182,7 +182,7 @@ class D {
     m(this, "_nextCheck", true), m(this, "_started", true), this._started = false
   }
 }
-let L = new D;
+let L = new w;
 
 function x() {
   Chunk246946.Z.enabled ? L.start() : L.stop()

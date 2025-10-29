@@ -96,9 +96,9 @@ let B = 80,
   };
 
 function z(e) {
-  T.default.track(w.rMx.PREMIUM_PROMOTION_OPENED, {
-    location_page: null != e.guild_id ? w.ZY5.GUILD_CHANNEL : w.ZY5.DM_CHANNEL,
-    location_section: w.jXE.STICKER_POPOUT
+  T.default.track(D.rMx.PREMIUM_PROMOTION_OPENED, {
+    location_page: null != e.guild_id ? D.ZY5.GUILD_CHANNEL : D.ZY5.DM_CHANNEL,
+    location_section: D.jXE.STICKER_POPOUT
   }), (0, y.z)()
 }
 
@@ -156,8 +156,8 @@ let X = e => {
         let {
           channel: e
         } = m.current;
-        T.default.track(w.rMx.OPEN_POPOUT, j({
-          type: w.jXE.STICKER_POPOUT,
+        T.default.track(D.rMx.OPEN_POPOUT, j({
+          type: D.jXE.STICKER_POPOUT,
           guild_id: e.getGuildId(),
           sticker_pack_id: n.pack_id
         }, (0, p.v_)(e)))
@@ -213,8 +213,8 @@ let X = e => {
       [H, W] = i.useState(false),
       [K, X] = i.useState(null),
       Q = i.useMemo(() => ({
-        page: null != a.guild_id ? w.ZY5.GUILD_CHANNEL : w.ZY5.DM_CHANNEL,
-        section: w.jXE.STICKER_POPOUT
+        page: null != a.guild_id ? D.ZY5.GUILD_CHANNEL : D.ZY5.DM_CHANNEL,
+        section: D.jXE.STICKER_POPOUT
       }), [a.guild_id]),
       {
         current: J
@@ -233,7 +233,7 @@ let X = e => {
         stickerSourceGuild: e
       } = ee.current;
       (async () => {
-        (null == e || e.features.has(w.GuildFeatures.DISCOVERABLE)) && C(await (0, g.Z)(n.id)), P(true)
+        (null == e || e.features.has(D.GuildFeatures.DISCOVERABLE)) && C(await (0, g.Z)(n.id)), P(true)
       })()
     }, [n.id, Z]);
     let et = n.guild_id === a.getGuildId(),
@@ -252,7 +252,7 @@ let X = e => {
         } = ee.current;
         e()
       }, [N, A]), (0, _.ZP)(() => {
-        T.default.track(w.rMx.OPEN_POPOUT, j({
+        T.default.track(D.rMx.OPEN_POPOUT, j({
           type: ei
         }, J))
       }), !N) return (0, r.jsx)(b.SE, {
@@ -275,7 +275,7 @@ let X = e => {
               sticker: n
             }), er && (0, r.jsx)(O.Z, {
               className: M.ctaButton,
-              subscriptionTier: D.Si.TIER_2,
+              subscriptionTier: w.Si.TIER_2,
               size: u.zx.Sizes.SMALL,
               fullWidth: true,
               textOptions: {

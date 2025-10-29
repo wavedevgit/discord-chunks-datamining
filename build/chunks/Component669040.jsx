@@ -98,19 +98,19 @@ let K = 0,
       let n = arguments.length > 1 && true !== arguments[1] ? arguments[1] : null,
         r = new Set(t),
         i = t.has(e);
-      i ? r.delete(e) : r.add(e), null != n && w.default.track(F.rMx.EXPRESSION_PICKER_CATEGORY_COLLAPSE_TOGGLED, {
+      i ? r.delete(e) : r.add(e), null != n && D.default.track(F.rMx.EXPRESSION_PICKER_CATEGORY_COLLAPSE_TOGGLED, {
         location: eo.location,
         tab: V.X1.EMOJI,
         collapsed: !i,
         guild_id: n.id
-      }), e === Z.UX.SOUNDMOJI && w.default.track(F.rMx.SOUNDMOJI_EMOJI_PICKER_SECTION_TOGGLED, {
+      }), e === Z.UX.SOUNDMOJI && D.default.track(F.rMx.SOUNDMOJI_EMOJI_PICKER_SECTION_TOGGLED, {
         collapsed: !i
       }), g(r)
     }, [eo, t, g]), ef = i.useCallback(e => {
       let {
         columnIndex: t,
         visibleRowIndex: n
-      } = e, r = e.type === G.ld.SOUNDMOJI ? null : e.type === G.ld.EMOJI ? (0, D.nY)(e.emoji) : e.name;
+      } = e, r = e.type === G.ld.SOUNDMOJI ? null : e.type === G.ld.EMOJI ? (0, w.nY)(e.emoji) : e.name;
       es.current !== F.xAR && window.cancelAnimationFrame(es.current), es.current = window.requestAnimationFrame(() => {
         E.kJ.setInspectedExpressionPosition(t, n, y.u.MOUSE_EVENT), E.kJ.setSearchPlaceholder(r), es.current = F.xAR
       })
@@ -180,7 +180,7 @@ let K = 0,
           g = s === Z.En.SOUNDMOJI ? (0, r.jsx)(_.P3F, {
             className: W.soundmojiViewMore,
             onClick: () => {
-              (0, b.hr)(V.X1.SOUNDBOARD), w.default.track(F.rMx.SOUNDMOJI_EMOJI_PICKER_VIEW_ALL_CLICK)
+              (0, b.hr)(V.X1.SOUNDBOARD), D.default.track(F.rMx.SOUNDMOJI_EMOJI_PICKER_VIEW_ALL_CLICK)
             },
             children: Y.intl.string(Y.t.rUEjBe)
           }) : true;
@@ -249,7 +249,7 @@ let K = 0,
       getEmojiRowProps: T,
       rowCount: S,
       isUsingKeyboardNavigation: N,
-      channelGuildId: D,
+      channelGuildId: w,
       channelId: M,
       messageId: k,
       isBurstReaction: j,
@@ -282,7 +282,7 @@ let K = 0,
       isScrolling: B,
       isUsingKeyboardNavigation: N,
       allowAnimatedEmoji: z,
-      channelGuildId: D,
+      channelGuildId: w,
       channelId: M,
       messageId: k,
       isBurstReaction: j,
@@ -341,7 +341,7 @@ let K = 0,
       return null != (e = (0, x.fr)(t, H.Si.TIER_2)) ? e : Y.intl.string(Y.t.BmJkbd)
     }
     return i.useEffect(() => {
-      et && w.default.track(F.rMx.PREMIUM_UPSELL_VIEWED, {
+      et && D.default.track(F.rMx.PREMIUM_UPSELL_VIEWED, {
         type: H.cd.EMOJI_PICKER_FLOATING_UPSELL,
         location: Q,
         location_stack: J

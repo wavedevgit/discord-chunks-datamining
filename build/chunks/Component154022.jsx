@@ -496,7 +496,7 @@ function ep() {
   let e = Chunk695346.Wp.useSetting(),
     t = (0, Chunk442837.e7)([Chunk263937.Z], () => Chunk263937.Z.getAppliedOverrideReasonKey("animateStickers")),
     n = Chunk647438.useCallback(e => {
-      D.Wp.updateSetting(e)
+      w.Wp.updateSetting(e)
     }, []);
   return (0, Chunk951288.jsx)(Chunk481060.FXm, {
     label: Chunk388032.intl.string(Chunk388032.t["6NtAuJ"]),
@@ -544,7 +544,7 @@ function eh() {
               location: {
                 section: B.jXE.SETTINGS_ACCESSIBILITY
               }
-            }), D.dN.updateSetting(e)
+            }), w.dN.updateSetting(e)
           }
         })
       })]

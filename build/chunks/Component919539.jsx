@@ -33,7 +33,7 @@ function C(e) {
   let {
     ingress: t,
     guildId: n
-  } = e, C = (0, m.c_)(), N = (0, p.q)(), R = h.h2.useSetting().includes(n), P = (0, l.LN)(), w = h.mX.useSetting(), D = h.zA.useSetting().includes(n), L = i.useCallback(e => {
+  } = e, C = (0, m.c_)(), N = (0, p.q)(), R = h.h2.useSetting().includes(n), P = (0, l.LN)(), D = h.mX.useSetting(), w = h.zA.useSetting().includes(n), L = i.useCallback(e => {
     let r = (0, f.gl)();
     e ? r.delete(n) : r.add(n), h.zA.updateSetting(Array.from(r)), u.default.track(T.rMx.USER_SERVER_PRIVACY_SETTINGS_ACTION, {
       action: y.Y.RESTRICT_GUILD_MESSAGE_REQUEST_TOGGLE,
@@ -78,7 +78,7 @@ function C(e) {
     scrollPosition: O.FY.MESSAGE_REQUESTS_V2,
     children: n === I.T ? (0, r.jsx)(E.ZP, {
       title: S.intl.string(S.t["3o2ojh"]),
-      value: !N && !w,
+      value: !N && !D,
       onChange: e => M(e, false),
       disabled: N || P,
       tooltipText: P ? S.intl.string(A.default["6Af/cw"]) : true,
@@ -87,7 +87,7 @@ function C(e) {
       })
     }) : (0, r.jsx)(E.ZP, {
       title: S.intl.string(S.t["3o2ojh"]),
-      value: !R && !D,
+      value: !R && !w,
       onChange: e => M(e, true),
       disabled: R,
       note: C ? S.intl.format(S.t.WpnWLc, {

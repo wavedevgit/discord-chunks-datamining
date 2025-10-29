@@ -102,7 +102,7 @@ let C = e => {
       })
     })
   },
-  N = () => Object.entries(D).map(e => {
+  N = () => Object.entries(w).map(e => {
     let [t, n] = e;
     return (0, r.jsx)("div", {
       className: y.promoCardContainer,
@@ -233,15 +233,15 @@ let C = e => {
       })]
     })
   },
-  w = "kontrolfreek",
-  D = {
+  D = "kontrolfreek",
+  w = {
     steelseries: {
       title: Chunk388032.intl.string(Chunk388032.t.sfGgOG),
       body: Chunk388032.intl.string(Chunk388032.t.igiSKe),
       redemptionURL: "https://steelseries.com/",
       asset: Chunk730440.Z
     },
-    [w]: {
+    [D]: {
       title: Chunk388032.intl.string(Chunk388032.t["9N8obd"]),
       body: Chunk388032.intl.string(Chunk388032.t["34g+Z3"]),
       redemptionURL: "https://www.kontrolfreek.com/",
@@ -253,7 +253,7 @@ let C = e => {
     let {
       promotion: n
     } = e;
-    return null != (t = D[n.outboundTitle.toLowerCase()]) ? t : null
+    return null != (t = w[n.outboundTitle.toLowerCase()]) ? t : null
   },
   x = e => {
     let {

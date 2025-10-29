@@ -7,7 +7,7 @@ require.d(exports, {
   K0: () => P,
   Pd: () => g,
   f$: () => Chunk343817.f$,
-  lg: () => D,
+  lg: () => w,
   sX: () => Chunk343817.Hx,
   tn: () => R,
   yZ: () => Chunk817109.H
@@ -105,7 +105,7 @@ function E(e, t, n, r, o) {
   let y = () => {
     t.backoff = null != t.backoff ? t.backoff : new a.Z, t.retried = (null != t.retried ? t.retried : 0) + 1, t.backoff.fail(() => L(t.url).then(() => E(e, t, n, r, o)))
   };
-  null == w || null == (d = w.prepareRequest) || d.call(w, b), b.ok(e => null != e.status), b.then(i => {
+  null == D || null == (d = D.prepareRequest) || d.call(D, b), b.ok(e => null != e.status), b.then(i => {
     var a, c, u;
     if (null != t.retries && t.retries-- > 0 && m.has(i.status)) return y();
     let d = {
@@ -131,7 +131,7 @@ function E(e, t, n, r, o) {
           err: e
         }))
       };
-    if ((null == t || null == (a = t.interceptResponse) ? true : a.call(t, i, h, b)) !== true && (null == w || null == (c = w.interceptResponse) ? true : c.call(w, i, h, b)) !== true) {
+    if ((null == t || null == (a = t.interceptResponse) ? true : a.call(t, i, h, b)) !== true && (null == D || null == (c = D.interceptResponse) ? true : c.call(D, i, h, b)) !== true) {
       if (i.ok) n(d);
       else {
         if (t.oldFormErrors && (null == d || null == (u = d.body) ? true : u.code) === s.f$) {
@@ -255,10 +255,10 @@ function P() {
   let e = !(arguments.length > 0) || true === arguments[0] || arguments[0];
   return "https:" + window.GLOBAL_ENV.API_ENDPOINT + (module ? "/v".concat(window.GLOBAL_ENV.API_VERSION) : "")
 }
-let w = null;
+let D = null;
 
-function D(e) {
-  w = e
+function w(e) {
+  D = e
 }
 let L = () => Promise.resolve();
 

@@ -60,10 +60,10 @@ function b(e, t, n) {
       onFocusWithinChange: e.onFocusChange
     }),
     P = (0, p.q)(h(r.Z), "@react-aria/datepicker"),
-    w = "hour" === t.maxGranularity ? "selectedTimeDescription" : "selectedDateDescription",
-    D = "hour" === t.maxGranularity ? "time" : "date",
-    L = t.value ? P.format(w, {
-      [D]: t.formatValue({
+    D = "hour" === t.maxGranularity ? "selectedTimeDescription" : "selectedDateDescription",
+    w = "hour" === t.maxGranularity ? "time" : "date",
+    L = t.value ? P.format(D, {
+      [w]: t.formatValue({
         month: "long"
       })
     }) : "",

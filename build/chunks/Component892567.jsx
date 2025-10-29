@@ -37,11 +37,11 @@ let I = [Chunk342905.C.CHERRY_BOMB, Chunk342905.C.CHICLE],
       shouldWrap: N = false,
       boldFontOpacity: R = 1,
       shouldUnderlineOnHover: P = false
-    } = e, w = (0, O.j)({
+    } = e, D = (0, O.j)({
       displayNameStyles: a,
       inProfile: T
     }), {
-      useReducedMotion: D,
+      useReducedMotion: w,
       saturation: L
     } = (0, d.cj)([p.Z], () => ({
       useReducedMotion: p.Z.useReducedMotion,
@@ -65,9 +65,9 @@ let I = [Chunk342905.C.CHERRY_BOMB, Chunk342905.C.CHICLE],
       }),
       V = S(j);
     return (0, r.jsxs)("div", {
-      className: l()(v.container, w, A, {
+      className: l()(v.container, D, A, {
         [v.showEffect]: s !== E.F.PLAIN,
-        [v.animated]: s === E.F.ANIMATED && !D,
+        [v.animated]: s === E.F.ANIMATED && !w,
         [v.loop]: C,
         [v.inProfile]: T
       }),

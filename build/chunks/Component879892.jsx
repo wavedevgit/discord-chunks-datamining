@@ -90,8 +90,8 @@ async function v(e) {
     handleSubscribeModalClose: N,
     disablePremiumUpsell: R,
     inPopout: P,
-    applicationId: w,
-    intent: D
+    applicationId: D,
+    intent: w
   } = e, L = P ? i.u1M : i.z1l, x = l.default.getCurrentUser();
   if (null == x) return;
   if (!x.verified) return void(0, i.ZDy)(async () => {
@@ -160,7 +160,7 @@ async function v(e) {
     onSubscriptionConfirmation: S,
     onSubscribeComplete: A,
     inPopout: P,
-    applicationId: w,
-    intent: D
+    applicationId: D,
+    intent: w
   })
 }

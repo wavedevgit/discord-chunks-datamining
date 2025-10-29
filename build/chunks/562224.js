@@ -84,10 +84,10 @@ async function C(e, t) {
   var n, p, E, O, I, S, C, N;
   let R = _.default.getCurrentUser(),
     P = f.Z.getVoiceChannelId(),
-    w = c.Z.getChannel(P),
-    D = null == w ? true : w.getGuildId(),
-    L = null == (n = u.Z.getGuild(D)) ? true : n.premiumTier;
-  if (null == R || null == w || null == P) return [false, "no user or channel"];
+    D = c.Z.getChannel(P),
+    w = null == D ? true : D.getGuildId(),
+    L = null == (n = u.Z.getGuild(w)) ? true : n.premiumTier;
+  if (null == R || null == D || null == P) return [false, "no user or channel"];
   let x = null;
   if (null == (x = "number" == typeof e ? a.ZP.getGameForPID(e) : e)) return [false, "no source"];
   if (!d.Z.getUseSystemScreensharePicker() && !await o.Z.hasPermission(y.Eu.SCREEN_RECORDING, {
@@ -110,12 +110,12 @@ async function C(e, t) {
     Y = null != (S = null != V ? V : null == t ? true : t.fps) ? S : j,
     W = null != (C = null == t ? true : t.previewDisabled) ? C : s.I0.getSetting(),
     K = null != (N = null == t ? true : t.soundshareEnabled) ? N : U;
-  return (0, m.Z)(Z, H, Y, R, L, w) || (G = b.ApplicationStreamPresets.PRESET_VIDEO, H = b.ApplicationStreamResolutions.RESOLUTION_720, Y = b.ApplicationStreamFPS.FPS_30), (0, i.Rc)({
+  return (0, m.Z)(Z, H, Y, R, L, D) || (G = b.ApplicationStreamPresets.PRESET_VIDEO, H = b.ApplicationStreamResolutions.RESOLUTION_720, Y = b.ApplicationStreamFPS.FPS_30), (0, i.Rc)({
     preset: G,
     resolution: H,
     frameRate: Y,
     soundshareEnabled: K
-  }), (0, i.WH)(D, P, T(v({}, A(x)), {
+  }), (0, i.WH)(w, P, T(v({}, A(x)), {
     audioSourceId: (null == (p = x.id) ? true : p.startsWith(r.vA.CAMERA)) ? null == t ? true : t.audioSourceId : true,
     sound: K,
     previewDisabled: W,

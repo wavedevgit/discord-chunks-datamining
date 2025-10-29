@@ -83,10 +83,10 @@ function P(e) {
   b = null, T = p.QZA.OPEN, S = {}, A = false
 }
 
-function w() {
+function D() {
   r = null, g = [], E = [], b = null, y = null, O = null, T = Chunk981631.QZA.CLOSED, A = false
 }
-let D = s().debounce(() => {
+let w = s().debounce(() => {
   A && (null != y ? s().isEqual(y, K(y.id)) && (A = false) : null != O && s().isEqual(O, z(O.id)) && (A = false), A || X.emitChange())
 }, 500);
 
@@ -95,7 +95,7 @@ function L(e) {
     settings: t
   } = e;
   if (null == y) returnfalse;
-  y = m({}, y), null != t.enableEmoticons && y.enable_emoticons !== t.enableEmoticons && (y.enable_emoticons = t.enableEmoticons, A = true), null != t.expireBehavior && y.expire_behavior !== t.expireBehavior && (y.expire_behavior = t.expireBehavior, A = true), null != t.expireGracePeriod && y.expire_grace_period !== t.expireGracePeriod && (y.expire_grace_period = t.expireGracePeriod, A = true), A && D()
+  y = m({}, y), null != t.enableEmoticons && y.enable_emoticons !== t.enableEmoticons && (y.enable_emoticons = t.enableEmoticons, A = true), null != t.expireBehavior && y.expire_behavior !== t.expireBehavior && (y.expire_behavior = t.expireBehavior, A = true), null != t.expireGracePeriod && y.expire_grace_period !== t.expireGracePeriod && (y.expire_grace_period = t.expireGracePeriod, A = true), A && w()
 }
 
 function x(e) {
@@ -103,7 +103,7 @@ function x(e) {
     settings: t
   } = e;
   if (null == O) returnfalse;
-  O = m({}, O), null != t.name && O.name !== t.name && (O.name = t.name, A = true), true !== t.avatar && O.avatar !== t.avatar && (O.avatar = t.avatar, A = true), null != t.channelId && O.channel_id !== t.channelId && (O.channel_id = t.channelId, A = true), A && D()
+  O = m({}, O), null != t.name && O.name !== t.name && (O.name = t.name, A = true), true !== t.avatar && O.avatar !== t.avatar && (O.avatar = t.avatar, A = true), null != t.channelId && O.channel_id !== t.channelId && (O.channel_id = t.channelId, A = true), A && w()
 }
 
 function M() {
@@ -144,7 +144,7 @@ function j(e) {
       (null == y ? true : y.id) === n.id && (false === n.enabled ? y = null : A || (y = n)), g[e] = n
     } else(null == y ? true : y.id) === t.id && (y = null), g.splice(e, 1)
   }
-  g = [...g], D()
+  g = [...g], w()
 }
 
 function U(e) {
@@ -174,7 +174,7 @@ function U(e) {
       } = t;
       if (n === e.id) returntrue
     }) && E.push(e);
-    E = [...E], D()
+    E = [...E], w()
   }
 }
 
@@ -314,7 +314,7 @@ let X = new q(Chunk570140.Z, __OVERLAY__ ? {} : {
     INTEGRATION_SETTINGS_UPDATE_WEBHOOK: x,
     INTEGRATION_SETTINGS_START_EDITING_WEBHOOK: V,
     INTEGRATION_SETTINGS_STOP_EDITING_WEBHOOK: H,
-    GUILD_SETTINGS_CLOSE: w,
+    GUILD_SETTINGS_CLOSE: D,
     GUILD_SETTINGS_LOADED_INTEGRATIONS: j,
     WEBHOOKS_UPDATE: U,
     INTEGRATION_SETTINGS_SUBMITTING: M,

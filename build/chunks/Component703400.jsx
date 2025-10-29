@@ -21,7 +21,7 @@ let s = 20,
         application: t,
         iconSize: n
       }), (0, r.jsx)(i.Text, {
-        variant: "text-xs/medium",
+        variant: "text-sm/medium",
         color: "text-muted",
         children: t.name
       })]

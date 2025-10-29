@@ -63,9 +63,9 @@ var Chunk46015 = require("./46015.js"),
           for (var S = _, A = a;;) {
             var P = A <= p ? o : A >= p + s ? s : A - p;
             if (S < P) break;
-            var w = S - P,
-              D = a - P;
-            I(r, y(N(P + w % D))), S = b(w / D), A += a
+            var D = S - P,
+              w = a - P;
+            I(r, y(N(P + D % w))), S = b(D / w), A += a
           }
           I(r, y(N(S))), p = R(_, T, E === m), _ = 0, E++
         }

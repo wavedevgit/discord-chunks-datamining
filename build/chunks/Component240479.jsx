@@ -68,18 +68,18 @@ function C(e) {
     refreshPosition: u
   } = e, E = t.guildId === I.X8, O = (0, s.e7)([g.Z], () => g.Z.getGuild(t.guildId)), v = !E && null != O, [C, N] = i.useState(), R = (0, b.V2)({
     location: "SoundmojiGuildInfo"
-  }), P = E || v || null != C || !R, [w, D] = i.useState(!P);
+  }), P = E || v || null != C || !R, [D, w] = i.useState(!P);
   i.useEffect(() => {
-    P || (D(true), (0, p.xU)(t.soundId, t.guildId).then(e => {
+    P || (w(true), (0, p.xU)(t.soundId, t.guildId).then(e => {
       N(e)
     }).finally(() => {
-      D(false), u()
+      w(false), u()
     }))
   }, [u, P, t.guildId, t.soundId]);
   let {
     buttonType: L,
     description: x
-  } = (0, y.Z)(t, n, v, C), M = L === y.y.JOIN_GUILD, k = !E && w, j = i.useMemo(() => v ? d.JO.createFromGuildRecord(O) : null != C ? d.JO.createFromDiscoverableGuild(C) : true, [O, v, C]);
+  } = (0, y.Z)(t, n, v, C), M = L === y.y.JOIN_GUILD, k = !E && D, j = i.useMemo(() => v ? d.JO.createFromGuildRecord(O) : null != C ? d.JO.createFromDiscoverableGuild(C) : true, [O, v, C]);
   return k ? (0, r.jsx)(_.SE, {}) : (0, r.jsxs)("div", {
     className: S.infoContainer,
     children: [(0, r.jsxs)(_.W_, {

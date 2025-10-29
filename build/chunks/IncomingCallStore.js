@@ -86,14 +86,14 @@ function P(e) {
   }).enabled && !!e.ringing.includes(f.default.getId())) && N(t)
 }
 
-function w(e) {
+function D(e) {
   let {
     channelId: t
   } = e;
   return N(t)
 }
 
-function D(e) {
+function w(e) {
   let {
     x: t,
     y: n
@@ -147,7 +147,7 @@ let j = new k(Chunk570140.Z, {
   CALL_DELETE: P,
   GUILD_RING_START: R,
   GUILD_RING_STOP: P,
-  VOICE_CHANNEL_SELECT: w,
-  INCOMING_CALL_MOVE: D,
+  VOICE_CHANNEL_SELECT: D,
+  INCOMING_CALL_MOVE: w,
   CHANNEL_DELETE: L
 })

@@ -55,7 +55,7 @@ let h = () => (0, Chunk951288.jsx)("img", {
       disabled: O,
       isInModalOverlay: v,
       className: I
-    } = e, [T, S] = (0, i.useState)(false), A = (0, i.useMemo)(() => g(_, T), [_, T]), [C, N] = (0, i.useState)(false), [R, P] = (0, i.useState)(false), [w, D] = (0, i.useState)(.9 * l.D2), L = null === a;
+    } = e, [T, S] = (0, i.useState)(false), A = (0, i.useMemo)(() => g(_, T), [_, T]), [C, N] = (0, i.useState)(false), [R, P] = (0, i.useState)(false), [D, w] = (0, i.useState)(.9 * l.D2), L = null === a;
     (0, i.useEffect)(() => {
       L && !C && (N(true), setTimeout(() => {
         P(true)
@@ -77,7 +77,7 @@ let h = () => (0, Chunk951288.jsx)("img", {
       Z = {
         currentAnimationType: k,
         animationTypeRef: U,
-        onSetAnimationDurationMS: D
+        onSetAnimationDurationMS: w
       };
     return (0, r.jsx)(s.P3F, {
       onClick: x ? true : b,
@@ -102,7 +102,7 @@ let h = () => (0, Chunk951288.jsx)("img", {
           value: M,
           onValueChange: B,
           onValueReached: G,
-          targetTotalCounterTime: w,
+          targetTotalCounterTime: D,
           className: x ? f.counterLoading : true
         }), E && (0, r.jsx)(h, {})]
       })

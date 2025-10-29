@@ -132,8 +132,8 @@ let eb = new Chunk710845.Z("AutocompleteUtils"),
   eN = 5,
   eR = 3,
   eP = 11,
-  ew = 6,
-  eD = 8,
+  eD = 6,
+  ew = 8,
   eL = 1,
   ex = 1e3,
   eM = .2,
@@ -283,12 +283,12 @@ function e$(e) {
     case R.MO.STICKER_NAME:
       return eP;
     case R.MO.CORRELATED_EMOJI:
-      return ew;
+      return eD;
     case R.MO.TAG:
       return eL;
     case R.MO.GUILD_NAME:
     case R.MO.PACK_NAME:
-      return eD;
+      return ew;
     default:
       return 1
   }
@@ -565,7 +565,7 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
             }
             c = Math.min(ev - eS, c)
           }
-          0 !== c && !(t.length > 1) && (1 !== t.length || t[0].isFullMatch || s) && (e3(l, e.type) && (c = Math.max(c - eA, eS / 2)), e.isThread() && (e.isActiveThread() || (c -= eC), w.Z.hasJoined(e.id) || (c -= eN)), c = Math.min(c + Math.min(null != (O = U.Z.getScoreWithoutFetchingLatest(e.id)) ? O : 0 / y, 1) * eR, c >= ev ? ey : ev), b.push({
+          0 !== c && !(t.length > 1) && (1 !== t.length || t[0].isFullMatch || s) && (e3(l, e.type) && (c = Math.max(c - eA, eS / 2)), e.isThread() && (e.isActiveThread() || (c -= eC), D.Z.hasJoined(e.id) || (c -= eN)), c = Math.min(c + Math.min(null != (O = U.Z.getScoreWithoutFetchingLatest(e.id)) ? O : 0 / y, 1) * eR, c >= ev ? ey : ev), b.push({
             type: (0, L.bw)(e.type) ? ec.h8.VOICE_CHANNEL : ec.h8.TEXT_CHANNEL,
             record: e,
             score: eY(c, d[e.id]),
@@ -1006,7 +1006,7 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
         maxCount: i = el.rnv,
         matchComparator: a
       } = e;
-      return D.DZ.loadIfNecessary(), {
+      return w.DZ.loadIfNecessary(), {
         emojis: m.ZP.searchWithoutFetchingLatest({
           channel: n,
           query: t,
@@ -1025,7 +1025,7 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
         a = X.default.getCurrentUser(),
         o = new Set,
         l = [];
-      for (let s of (D.DZ.loadIfNecessary(), e)) {
+      for (let s of (w.DZ.loadIfNecessary(), e)) {
         if ("" === s) continue;
         let e = s.toLocaleLowerCase(),
           c = (0, eo._I)(e),
@@ -1055,7 +1055,7 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
     },
     querySoundmoji(e, t) {
       let n = X.default.getCurrentUser();
-      T.Z.isFetching() || T.Z.hasFetchedAllSounds() || (0, I.w)(), D.DZ.loadIfNecessary();
+      T.Z.isFetching() || T.Z.hasFetchedAllSounds() || (0, I.w)(), w.DZ.loadIfNecessary();
       let r = Array.from(T.Z.getSounds().values()).reduce((e, n) => (n.forEach(n => {
         (0, v.Z)(n, null == t ? true : t.guild_id, null == t ? true : t.id) && e.push(n)
       }), e), []);

@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   ZP: () => es,
-  b2: () => D
+  b2: () => w
 }), require("./388685.js");
 var Chunk952639 = require("./952639.js"),
   i = require.n(Chunk952639),
@@ -34,7 +34,7 @@ var Chunk952639 = require("./952639.js"),
   Chunk981631 = require("./981631.js"),
   Chunk526761 = require("./526761.js");
 
-function w(e, t, n) {
+function D(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -42,7 +42,7 @@ function w(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let D = 3e3,
+let w = 3e3,
   L = 800,
   x = {};
 
@@ -142,7 +142,7 @@ function F(e, t) {
       setAt: Date.now(),
       timeout: setTimeout(() => {
         G(e)
-      }, D)
+      }, w)
     })
   });
   let a = n || new Set(i.map(e => e.channel_id)).size > 1;
@@ -446,7 +446,7 @@ function ea(e) {
 }
 class eo extends Chunk147913.Z {
   constructor(...e) {
-    super(...e), w(this, "actions", {
+    super(...e), D(this, "actions", {
       LOAD_MESSAGES_SUCCESS: X,
       LOAD_FORUM_POSTS: $,
       LOAD_THREADS_SUCCESS: ee,

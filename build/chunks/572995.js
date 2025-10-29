@@ -124,8 +124,8 @@ let ef = (e, t) => ec({
       assetUrl: e ? V.Z : Y.Z
     },
     emojis: {
-      thumbnail: D.Z,
-      assetUrl: e ? w.Z : L.Z
+      thumbnail: w.Z,
+      assetUrl: e ? D.Z : L.Z
     },
     noLimits: {
       thumbnail: M.Z,
@@ -196,7 +196,7 @@ let ef = (e, t) => ec({
       }),
       previewImage: Chunk184071.referralProgram.thumbnail,
       videoUrl: Chunk184071.referralProgram.assetUrl
-    }, w = {
+    }, D = {
       name: "customThemes",
       title: Chunk388032.intl.string(Chunk531421.default.XokIHM),
       description: Chunk388032.intl.string(Chunk531421.default["7esQMC"]),
@@ -206,7 +206,7 @@ let ef = (e, t) => ec({
         (0, Chunk550385.XO)(Chunk550385.wh.CUSTOM_THEME)
       },
       videoUrl: Chunk184071.customThemes.assetUrl
-    }, D = {
+    }, w = {
       name: "displayNameStyles",
       title: Chunk388032.intl.string(Chunk352609.default.ABtBDQ),
       description: Chunk388032.intl.string(Chunk352609.default.MFNXZh),

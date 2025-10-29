@@ -165,7 +165,7 @@ function eR(e, t) {
 function eP(e) {
   return null != e && e.isPrivate() && !Q.ZP.isGuildOrCategoryOrChannelMuted(e.guild_id, e.id)
 }
-async function ew(e) {
+async function eD(e) {
   if (0 === em.length) {
     eg = false, null == e || e();
     return
@@ -179,15 +179,15 @@ async function ew(e) {
     },
     oldFormErrors: true,
     rejectWithError: false
-  })), await (0, u.GR)(1e3 * ed), ew(e)
+  })), await (0, u.GR)(1e3 * ed), eD(e)
 }
-let eD = 3;
+let ew = 3;
 async function eL(e) {
   let t = B.default.getId();
-  for (let n = 0; n < eD; n++) try {
+  for (let n = 0; n < ew; n++) try {
     return await e()
   } catch (e) {
-    if (es.error("", e), n + 1 < eD && (await (0, u.GR)((n + 1) * 2e3), await U.Z.awaitOnline(), t !== B.default.getId())) return Promise.reject(Error("User changed."))
+    if (es.error("", e), n + 1 < ew && (await (0, u.GR)((n + 1) * 2e3), await U.Z.awaitOnline(), t !== B.default.getId())) return Promise.reject(Error("User changed."))
   }
 }
 
@@ -1022,7 +1022,7 @@ function te(e, t, n) {
   };
   if (Q.ZP.mentionOnAllMessages && null != r) {
     if (r.isThread()) {
-      if ((0, w.J)(r) === ea.iN.ALL_MESSAGES) return {
+      if ((0, D.J)(r) === ea.iN.ALL_MESSAGES) return {
         shouldMention: true,
         isMentionLowImportance: true
       }
@@ -1328,7 +1328,7 @@ function tP(e) {
   }, t)
 }
 
-function tw(e) {
+function tD(e) {
   let {
     channelId: t,
     messageId: n,
@@ -1348,7 +1348,7 @@ function tw(e) {
   return null != n ? (s.rebuildChannelState(), true) : l
 }
 
-function tD(e) {
+function tw(e) {
   let {
     channelId: t,
     timestamp: n
@@ -1475,7 +1475,7 @@ function tV(e, t, n) {
     channel_id: e.channelId,
     message_id: e.messageId,
     read_state_type: e.readStateType
-  }))), eg || ew(n))
+  }))), eg || eD(n))
 }
 
 function tH(e) {
@@ -1721,9 +1721,9 @@ let t0 = new t$(Chunk570140.Z, {
     MESSAGE_DELETE: e7,
     MESSAGE_DELETE_BULK: e7,
     MESSAGE_ACK: tL,
-    CHANNEL_ACK: tw,
+    CHANNEL_ACK: tD,
     CHANNEL_LOCAL_ACK: tx,
-    CHANNEL_PINS_ACK: tD,
+    CHANNEL_PINS_ACK: tw,
     CHANNEL_PINS_UPDATE: tU,
     CHANNEL_SELECT: tI,
     VOICE_CHANNEL_SELECT: tS,

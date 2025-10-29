@@ -91,7 +91,7 @@ function S(e) {
     gradientColor: A,
     onPositionChange: C,
     scrollBehavior: N = "sticky"
-  } = e, [R, P] = i.useState(p), [w, D] = i.useState(E), L = i.useRef(E), x = (0, c.e7)([d.Z], () => d.Z.getLayers()), M = null != (t = x[x.length - 1]) ? t : "base", k = i.useMemo(() => {
+  } = e, [R, P] = i.useState(p), [D, w] = i.useState(E), L = i.useRef(E), x = (0, c.e7)([d.Z], () => d.Z.getLayers()), M = null != (t = x[x.length - 1]) ? t : "base", k = i.useMemo(() => {
     var e, t;
     return null == a.current || (null != (t = null == (e = a.current.closest("[data-layer]")) ? true : e.getAttribute("data-layer")) ? t : "base") === M
   }, [a, M]);
@@ -103,7 +103,7 @@ function S(e) {
     },
     U = (0, _.i)({
       shouldShow: p,
-      caretPosition: (0, f.z)(w),
+      caretPosition: (0, f.z)(D),
       onExitComplete: j
     }),
     G = e => {
@@ -111,7 +111,7 @@ function S(e) {
         setPopoutRef: t,
         position: i
       } = e, a = y(e, ["setPopoutRef", "position"]);
-      return null != i && i !== L.current && (L.current = i, D(i), null == C || C(i)), U((e, i) => {
+      return null != i && i !== L.current && (L.current = i, w(i), null == C || C(i)), U((e, i) => {
         if (!i) return null;
         let c = (0, r.jsx)(l.VqE, b(g({}, a), {
           setDialogRef: t,
@@ -138,7 +138,7 @@ function S(e) {
     targetElementRef: a,
     shouldShow: R,
     onRequestClose: m,
-    position: w,
+    position: D,
     align: O,
     spacing: v + I,
     layerContext: true,
@@ -146,7 +146,7 @@ function S(e) {
     popoutKey: true,
     fixed: false,
     autoInvert: true,
-    nudgeAlignIntoViewport: "top" === w || "bottom" === w,
+    nudgeAlignIntoViewport: "top" === D || "bottom" === D,
     closeOnClickOutside: false,
     ignoreModalClicks: true,
     scrollBehavior: N,

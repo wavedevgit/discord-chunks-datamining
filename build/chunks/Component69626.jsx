@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   Wf: () => R,
-  ZP: () => w,
+  ZP: () => D,
   wz: () => P
 });
 var Chunk951288 = require("./951288.js"),
@@ -184,7 +184,7 @@ function P(e) {
   })
 }
 
-function w(e) {
+function D(e) {
   return {
     react: (e, t, n) => (0, r.jsx)(R, {
       node: e,

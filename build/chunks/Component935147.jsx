@@ -140,10 +140,10 @@ function W(e) {
     }) : B.intl.string(B.t.pj0XBN);
   return W ? (0, r.jsx)(c.Gt, {
     value: ea,
-    children: (0, r.jsxs)(D.Z, {
+    children: (0, r.jsxs)(w.Z, {
       ref: ei,
       className: Z.tryItOutSection,
-      type: D.Y.PREMIUM,
+      type: w.Y.PREMIUM,
       isShown: true,
       hasBackground: true,
       children: [(0, r.jsx)(N.Z, {
@@ -203,7 +203,7 @@ function W(e) {
             className: Z.customizationSection,
             user: F,
             sectionTitle: B.intl.string(B.t["7v0T9P"])
-          }, "decoration"), (0, r.jsx)(w.Z, {
+          }, "decoration"), (0, r.jsx)(D.Z, {
             user: F,
             className: Z.customizationSection
           }), (0, r.jsx)(x.Z, {
