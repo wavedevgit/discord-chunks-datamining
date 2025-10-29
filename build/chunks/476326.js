@@ -3,10 +3,10 @@
 "use strict";
 require.d(exports, {
   BS: () => f,
-  ZP: () => p,
+  ZP: () => _,
   ow: () => u,
   rG: () => d
-}), require("./35282.js"), require("./953529.js");
+}), require("./953529.js");
 var Chunk836560 = require("./836560.js"),
   Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
@@ -32,31 +32,7 @@ function d(e) {
 var f = function(e) {
   return e[e.FILE_ATTACHMENT = 0] = "FILE_ATTACHMENT", e[e.IMAGE_PICKER = 1] = "IMAGE_PICKER", e
 }({});
-
-function _(e) {
-  var t;
-  let n = e.toLowerCase().split(".").pop();
-  return null != (t = ({
-    png: "image/png",
-    jpg: "image/jpeg",
-    jpeg: "image/jpeg",
-    gif: "image/gif",
-    webp: "image/webp",
-    bmp: "image/bmp",
-    svg: "image/svg+xml",
-    ico: "image/x-icon",
-    mp4: "video/mp4",
-    webm: "video/webm",
-    mov: "video/quicktime",
-    avi: "video/x-msvideo",
-    mp3: "audio/mpeg",
-    wav: "audio/wav",
-    ogg: "audio/ogg",
-    pdf: "application/pdf",
-    txt: "text/plain"
-  })[null != n ? n : ""]) ? t : ""
-}
-class p extends Chunk836560.EventEmitter {
+class _ extends Chunk836560.EventEmitter {
   cancel() {}
   resetState() {
     return this
@@ -71,7 +47,7 @@ class p extends Chunk836560.EventEmitter {
         overrideType: e.mimeType
       });
       this.filename = t.filename, this.isImage = t.isImage, this.isVideo = t.isVideo, this.mimeType = t.type, this.origin = e.origin, this.durationSecs = e.durationSecs, this.waveform = e.waveform, this.isRemix = e.isRemix
-    } else this.id = null != (r = e.id) ? r : a().uniqueId("upload"), this.classification = s.f3(e.file), this.isImage = "image" === this.classification, this.isVideo = "video" === this.classification, this.filename = e.file.name, this.mimeType = "" !== e.file.type ? e.file.type : _(e.file.name), this.origin = e.origin;
+    } else this.id = null != (r = e.id) ? r : a().uniqueId("upload"), this.classification = s.f3(e.file), this.isImage = "image" === this.classification, this.isVideo = "video" === this.classification, this.filename = e.file.name, this.mimeType = e.file.type, this.origin = e.origin;
     this.isThumbnail = e.isThumbnail, this.clip = e.clip, this.uniqueId = (0, o.Z)(), this.showLargeMessageDialog = t, this.spoiler = false, this.description = null
   }
 }

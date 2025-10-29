@@ -12,7 +12,7 @@ var Chunk409813 = require("./409813.js"),
   Chunk622999 = require("./622999.js"),
   Chunk231338 = require("./231338.js"),
   Chunk388032 = require("./388032.jsx");
-let s = new Set([Chunk231338.He.CARD, Chunk231338.He.PAYPAL]),
+let s = new Set([Chunk231338.He.CARD, Chunk231338.He.PAYMENT_REQUEST, Chunk231338.He.PAYPAL]),
   l = new Set([Chunk231338.He.IDEAL, Chunk231338.He.GOPAY_WALLET, Chunk231338.He.KAKAOPAY, Chunk231338.He.VENMO, Chunk231338.He.CASH_APP]),
   c = {
     [Chunk231338.He.PAYPAL]: {
@@ -125,6 +125,7 @@ let E = (e, t) => h[(0, i.rI)()].filter(n => (!n.isStaffOnly || !!t) && (!n.isRe
   b = e => {
     if ("card" === e || "link_card_brand" === e) return a.He.CARD;
     if ("ideal" === e) return a.He.IDEAL;
+    if ("google_pay" === e || "apple_pay" === e) return a.He.PAYMENT_REQUEST;
     let t = _[(0, i.rI)()];
     return e in t ? t[e] : null
   };

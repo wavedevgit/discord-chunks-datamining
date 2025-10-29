@@ -3,7 +3,7 @@
 "use strict";
 require.d(exports, {
   G: () => T,
-  d: () => A
+  d: () => S
 }), require("./388685.js"), require("./415506.js");
 var Chunk475179 = require("./475179.js"),
   Chunk904245 = require("./904245.js"),
@@ -83,12 +83,7 @@ function T(e, t, n) {
     })
   })
 }
-async function S(e) {
-  await Promise.resolve(), e.forEach(e => {
-    e.type, e.size
-  })
-}
-async function A(e, t, n) {
+async function S(e, t, n) {
   let {
     filesMetadata: c,
     requireConfirm: _ = true,
@@ -99,9 +94,13 @@ async function A(e, t, n) {
   if (e.length < 1) return;
   if (null != c && c.length !== e.length) throw Error("Unexpected mismatch between files and file metadata");
   let v = t.getGuildId(),
-    A = Array.from(e);
-  if (await S(A), (0, g.Bf)(A, v)) return void T(t, A);
-  if (f.Z.getUploadCount(t.id, n) + A.length > E.dN1) {
+    S = Array.from(e),
+    A = S.map(e => ({
+      originalContentType: e.type,
+      preCompressionSize: e.size
+    }));
+  if (await Promise.resolve(), (0, g.Bf)(S, v)) return void T(t, S);
+  if (f.Z.getUploadCount(t.id, n) + S.length > E.dN1) {
     (0, o.openUploadError)({
       title: O.intl.string(O.t.wOr6hB),
       help: O.intl.formatToPlainString(O.t["qqyp/e"], {
@@ -109,16 +108,17 @@ async function A(e, t, n) {
       })
     }), p.default.track(E.rMx.UPLOAD_FILE_LIMIT_ERROR, {
       existing_count: f.Z.getUploadCount(t.id, n),
-      new_count: A.length
+      new_count: S.length
     });
     return
   }
   if (t.type !== E.d4z.GUILD_VOICE && t.type !== E.d4z.GUILD_STAGE_VOICE || u.Z.getChatOpen(t.id) || r.Z.updateChatOpen(t.id, true), _) {
-    let e = A.map((e, t) => I({
+    let e = S.map((e, t) => I({
       file: e,
       platform: l.ow.WEB,
       isThumbnail: m,
-      origin: y
+      origin: y,
+      compressionMetadata: A[t]
     }, null == c ? true : c[t]));
     a.Z.addFiles({
       files: e,
@@ -127,13 +127,14 @@ async function A(e, t, n) {
       draftType: n
     })
   } else {
-    let e = A.map((e, n) => {
+    let e = S.map((e, n) => {
       let r = null != c ? c[n] : {};
       return new s.nH(I({
         file: e,
         platform: l.ow.WEB,
         isThumbnail: m,
-        origin: y
+        origin: y,
+        compressionMetadata: A[n]
       }, r), t.id)
     });
     i.Z.sendMessage(t.id, {
