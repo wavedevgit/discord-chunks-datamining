@@ -69,7 +69,7 @@ let _ = {
   }];
 
 function S(e) {
-  var t, n, l, o, g, S, E;
+  var t, n, l, o, f, S, E;
   let {
     subscription: O,
     onUpdated: T
@@ -139,10 +139,10 @@ function S(e) {
   }), K && V.push({
     id: "active-discount",
     label: "Has Active Discount"
-  }), O.status !== f.O0b.ACTIVE && V.push({
+  }), O.status !== g.O0b.ACTIVE && V.push({
     id: "dates",
     label: "Dates: ".concat((0, m.vc)(O.createdAt, "LL"), " - ").concat((0, m.vc)(O.currentPeriodEnd, "LL"))
-  }), O.status === f.O0b.PAUSED && V.push({
+  }), O.status === g.O0b.PAUSED && V.push({
     id: "pause-reason",
     label: "Pause Reason: ".concat(O.pauseReason in y ? y[O.pauseReason] : "Unknown pause reason ".concat(O.pauseReason))
   }), (0, a.jsx)("div", {
@@ -222,7 +222,7 @@ function S(e) {
               children: "active_discount_expires_at"
             }), (0, a.jsx)(d.Text, {
               variant: "text-sm/normal",
-              children: (null == (g = O.metadata) ? true : g.active_discount_expires_at) != null ? (0, m.vc)(new Date(null == (S = O.metadata) ? true : S.active_discount_expires_at), "LL") : "N/A"
+              children: (null == (f = O.metadata) ? true : f.active_discount_expires_at) != null ? (0, m.vc)(new Date(null == (S = O.metadata) ? true : S.active_discount_expires_at), "LL") : "N/A"
             })]
           })]
         })]

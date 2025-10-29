@@ -18,7 +18,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk446094 = require("./446094.js"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx");
-let g = new Chunk710845.Z("GuildTagCoachmark");
+let f = new Chunk710845.Z("GuildTagCoachmark");
 
 function b(e) {
   function t(t) {
@@ -36,12 +36,12 @@ function b(e) {
     onAdoptTag: r,
     onEditProfile: l
   } = (0, h.Z)(e.guild.id, () => t(x.L.TAKE_ACTION)), c = [{
-    text: f.intl.string(f.t.jwEaiX),
+    text: g.intl.string(g.t.jwEaiX),
     loading: n,
     onClick: r,
     variant: "primary"
   }, {
-    text: f.intl.string(f.t.s5vZlQ),
+    text: g.intl.string(g.t.s5vZlQ),
     onClick: l,
     variant: "secondary"
   }];
@@ -58,10 +58,10 @@ function b(e) {
           guildProfile: e.guild.profile
         }
       },
-      title: f.intl.formatToPlainString(f.t["m/Tc3n"], {
+      title: g.intl.formatToPlainString(g.t["m/Tc3n"], {
         guildName: e.guild.name
       }),
-      body: f.intl.string(f.t.DrAXIr),
+      body: g.intl.string(g.t.DrAXIr),
       actions: c,
       size: "md",
       onRequestClose: () => t(x.L.USER_DISMISS)
@@ -85,12 +85,12 @@ function v(e) {
     onAdoptTag: r,
     onEditProfile: c
   } = (0, h.Z)(e.guild.id, () => t(x.L.TAKE_ACTION)), u = [{
-    text: f.intl.string(f.t.jwEaiX),
+    text: g.intl.string(g.t.jwEaiX),
     loading: n,
     onClick: r,
     variant: "primary"
   }, {
-    text: f.intl.string(f.t.s5vZlQ),
+    text: g.intl.string(g.t.s5vZlQ),
     onClick: c,
     variant: "secondary"
   }];
@@ -107,10 +107,10 @@ function v(e) {
           guildProfile: e.guild.profile
         }
       },
-      title: f.intl.formatToPlainString(f.t.VFqnyU, {
+      title: g.intl.formatToPlainString(g.t.VFqnyU, {
         guildName: e.guild.name
       }),
-      body: f.intl.string(f.t.DrAXIr),
+      body: g.intl.string(g.t.DrAXIr),
       actions: u,
       size: "md",
       onRequestClose: () => t(x.L.USER_DISMISS)
@@ -131,5 +131,5 @@ function j(e) {
     onDismiss: e.onDismiss,
     targetElementRef: e.targetElementRef,
     children: e.children
-  }) : (g.error("GuildTagCoachmark rendered without guildId or coachmark type."), e.children)
+  }) : (f.error("GuildTagCoachmark rendered without guildId or coachmark type."), e.children)
 }

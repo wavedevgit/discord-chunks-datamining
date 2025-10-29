@@ -1,7 +1,7 @@
 /** Chunk was on 96604 **/
 /** chunk id: 611565, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => g
+  Z: () => f
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
@@ -40,7 +40,7 @@ let x = [{
       })
     }
   }],
-  f = [{
+  g = [{
     key: "channelName",
     cellClassName: l()(Chunk326588.cell, Chunk326588.channelName),
     render(e) {
@@ -78,7 +78,7 @@ let x = [{
     }
   }];
 
-function g() {
+function f() {
   let {
     unreadRecentMentionsCount: e,
     unreadChannelIds: t
@@ -86,7 +86,7 @@ function g() {
     isLoading: n,
     hasLoadedEver: r,
     hasPreloaded: l,
-    hasMoreToLoad: g,
+    hasMoreToLoad: f,
     isLoadingComplete: b
   } = (0, Chunk399606.cj)([Chunk787879.Z], () => ({
     isLoading: Chunk787879.Z.isLoading,
@@ -169,7 +169,7 @@ function g() {
         }), (0, Chunk951288.jsxs)("div", {
           children: ["Has Loaded Ever: ", Chunk120356 ? "✅" : "❌"]
         }), (0, Chunk951288.jsxs)("div", {
-          children: ["Has More To Load: ", g ? "✅" : "❌"]
+          children: ["Has More To Load: ", f ? "✅" : "❌"]
         }), (0, Chunk951288.jsxs)("div", {
           children: ["Is Loading Complete: ", b ? "✅" : "❌"]
         }), (0, Chunk951288.jsxs)("div", {
@@ -182,7 +182,7 @@ function g() {
         }), (0, Chunk951288.jsxs)("div", {
           children: ["Total Channels: ", Object.keys(j).length]
         }), (0, Chunk951288.jsx)(Chunk681619.Z, {
-          columns: f,
+          columns: g,
           data: Object.entries(j).map(e => {
             var t, n;
             let [a, r] = e;

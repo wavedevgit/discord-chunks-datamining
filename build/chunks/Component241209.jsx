@@ -68,7 +68,7 @@ let C = j(v({}, d().defaultRules), {
     }),
     paragraph: j(v({}, d().defaultRules.paragraph), {
       react: (e, t, n) => (0, l.jsx)("div", {
-        className: f.paragraph,
+        className: g.paragraph,
         children: t(e.content, n)
       }, n.key)
     }),
@@ -91,7 +91,7 @@ let C = j(v({}, d().defaultRules), {
     }),
     blockQuote: j(v({}, d().defaultRules.blockQuote), {
       react: (e, t, n) => (0, l.jsx)("blockquote", {
-        className: f.blockquote,
+        className: g.blockquote,
         children: y(e)
       }, n.key)
     }),
@@ -111,7 +111,7 @@ let C = j(v({}, d().defaultRules), {
     inlineCode: j(v({}, Chunk428595.Z.RULES.inlineCode), {
       order: 6,
       react: (e, t, n) => (0, l.jsx)("code", {
-        className: f.codeInline,
+        className: g.codeInline,
         children: y(e)
       }, n.key)
     }),
@@ -119,7 +119,7 @@ let C = j(v({}, d().defaultRules), {
       react(e, t, a) {
         let r = () => (0, l.jsx)("pre", {
           children: (0, l.jsx)("code", {
-            className: s()(g.scrollbarGhostHairline, "hljs"),
+            className: s()(f.scrollbarGhostHairline, "hljs"),
             children: y(e)
           })
         }, a.key);
@@ -133,7 +133,7 @@ let C = j(v({}, d().defaultRules), {
               let n = t.highlight(e.lang, e.content, true);
               return null == n ? r() : (0, l.jsx)("pre", {
                 children: (0, l.jsx)("code", {
-                  className: s()(g.scrollbarGhostHairline, "hljs", n.language),
+                  className: s()(f.scrollbarGhostHairline, "hljs", n.language),
                   dangerouslySetInnerHTML: {
                     __html: n.value
                   }

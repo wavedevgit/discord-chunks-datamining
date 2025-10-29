@@ -86,7 +86,7 @@ function S(e) {
     wishlist: n,
     isFetching: i,
     error: a
-  } = O(t), s = r.useMemo(() => null != n && n.items.filter(m.Q).length >= b, [n]), {
+  } = O(t), s = r.useMemo(() => null != n && n.items.filter(m.Q).filter(e => true !== e.isOwned).length >= b, [n]), {
     shopBlocks: l,
     isFetchingShopHome: d,
     fetchShopHomeError: _
@@ -122,7 +122,7 @@ function A(e) {
       displayItems: [],
       wishlistLength: 0
     };
-    let r = (null != (e = null == t ? true : t.items) ? e : []).slice(0, b),
+    let r = (null != (e = null == t ? true : t.items) ? e : []).filter(e => true !== e.isOwned).slice(0, b),
       o = r.length,
       s = [];
     if (s.push(...r.map(e => ({
@@ -160,6 +160,6 @@ function C(e) {
   } = O(a && null != l && n && null != i ? l : null, null == i ? true : i.id);
   return r.useMemo(() => {
     var e;
-    returntrue === n && null != i && !!a && ((null != (e = null == c ? true : c.items.filter(m.Q)) ? e : []).length > 0 || s)
+    returntrue === n && null != i && !!a && ((null != (e = null == c ? true : c.items.filter(m.Q).filter(e => true !== e.isOwned)) ? e : []).length > 0 || s)
   }, [n, i, a, c, s])
 }

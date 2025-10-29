@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk246992 = require("./246992.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js");
-let g = [{
+let f = [{
   label: "1 Week",
   value: 0
 }, {
@@ -66,7 +66,7 @@ function b() {
     isDisabled: require,
     serialize: e => "".concat(e),
     isSelected: e => e === y,
-    options: g,
+    options: f,
     select: C,
     popoutLayerContext: Chunk246992.O$,
     popoutWidth: 200

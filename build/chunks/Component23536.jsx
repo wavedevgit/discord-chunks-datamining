@@ -12,10 +12,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk493773 = require("./493773.js"),
   Chunk198620 = require("./198620.js"),
   Chunk819514 = require("./819514.jsx"),
+  Chunk598999 = require("./598999.jsx"),
   Chunk210887 = require("./210887.js"),
   Chunk624453 = require("./624453.js"),
   Chunk306680 = require("./306680.js"),
-  Chunk494404 = require("./494404.jsx"),
   Chunk388032 = require("./388032.jsx");
 let b = [];
 
@@ -26,14 +26,14 @@ function _(e) {
   } = e, {
     items: y,
     state: x
-  } = (0, l.cj)([p.Z], () => {
+  } = (0, l.cj)([f.Z], () => {
     var e, n;
-    let r = p.Z.getPins(t.id);
+    let r = f.Z.getPins(t.id);
     return {
       items: null != (e = null == r ? true : r.items) ? e : b,
-      state: null != (n = null == r ? true : r.state) ? n : p.M.LOADING
+      state: null != (n = null == r ? true : r.state) ? n : f.M.LOADING
     }
-  }), j = i.useMemo(() => y.map(e => e.message), [y]), v = (0, l.e7)([f.ZP], () => f.ZP.hasUnreadPins(t.id));
+  }), j = i.useMemo(() => y.map(e => e.message), [y]), v = (0, l.e7)([g.ZP], () => g.ZP.hasUnreadPins(t.id));
   i.useEffect(() => {
     v && o.Z.ackPins(t.id)
   }, [v, t.id]), (0, c.ZP)(() => {
@@ -50,26 +50,26 @@ function _(e) {
         before: null == (e = y.at(false)) ? true : e.pinnedAt
       })
     }, [t.id, y]),
-    I = (0, l.e7)([h.Z], () => (0, a.ap)(h.Z.theme));
+    I = (0, l.e7)([p.Z], () => (0, a.ap)(p.Z.theme));
   return (0, r.jsx)(s.VqE, {
     "aria-label": m.intl.string(m.t["mp1N/2"]),
-    children: (0, r.jsx)(g.ZP, {
+    children: (0, r.jsx)(h.ZP, {
       channel: t,
       onFetch: O,
       messages: j,
-      loading: x === p.M.LOADING,
-      hasMore: x === p.M.LOADED_HAS_MORE,
+      loading: x === f.M.LOADING,
+      hasMore: x === f.M.LOADED_HAS_MORE,
       analyticsName: "Channel Pins",
       renderEmptyState: function() {
         if (y.length > 0) return;
         let e = m.intl.string(t.isPrivate() ? m.t.rhqcbJ : m.t.fmyaWJ),
           i = I ? n(306059) : n(281485);
-        return (0, r.jsx)(g.nH, {
+        return (0, r.jsx)(h.nH, {
           msg: e,
           image: i
         }, "emptystate")
       },
-      renderHeader: () => (0, r.jsx)(g.h4, {
+      renderHeader: () => (0, r.jsx)(h.h4, {
         icon: s.qQX,
         title: m.intl.string(m.t["mp1N/2"])
       }),

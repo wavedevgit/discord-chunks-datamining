@@ -7,8 +7,8 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk256638 = require("./256638.jsx"),
   Chunk594190 = require("./594190.js"),
+  Chunk369664 = require("./369664.jsx"),
   Chunk865066 = require("./865066.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
@@ -22,7 +22,7 @@ function f() {
     color: Chunk481060.DM8.DANGER,
     children: [(0, Chunk951288.jsx)(Chunk481060.RyX, {
       noticeType: Chunk981631.kVF.SYSTEM_SERVICE_WARNING,
-      onClick: () => (0, Chunk256638.c)()
+      onClick: () => (0, Chunk369664.c)()
     }), Chunk388032.intl.string(Chunk388032.t["5rPt+j"]), (0, Chunk951288.jsx)(Chunk481060.NoS, {
       onClick: d,
       noticeType: Chunk981631.kVF.SYSTEM_SERVICE_WARNING,

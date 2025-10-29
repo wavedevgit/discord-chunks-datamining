@@ -85,8 +85,8 @@ let O = [{
             name: "Timestamp (local)",
             children: (0, a.jsx)("time", {
               dateTime: o.toISOString(),
-              title: (0, f.vc)(u, "LLLL"),
-              children: (0, f.Y4)(u)
+              title: (0, g.vc)(u, "LLLL"),
+              children: (0, g.Y4)(u)
             })
           }), "guild" === n.type && (0, a.jsx)(v.Z9, {
             name: "Guild ID",
@@ -136,7 +136,7 @@ let O = [{
 
 function N() {
   let [e, t] = Chunk647438.useState(""), n = Chunk647438.useRef(null), l = (0, Chunk442837.Wu)([Chunk120816.Z], () => Chunk120816.Z.loggedTriggers), o = Chunk647438.useMemo(() => Chunk120356.filter(t => 0 === e.length || s()(e, t.experimentId)).sort((e, t) => t.timestamp.getTime() - e.timestamp.getTime()), [Chunk120356, module]), [c, d] = Chunk647438.useState(true), x = Chunk658722.find(e => e.key === c), {
-    TabBar: f,
+    TabBar: g,
     renderSelectedTab: v
   } = (0, Chunk621060.ZP)({
     tabs: T

@@ -9,7 +9,6 @@ var Chunk951288 = require("./951288.js"),
   Chunk481060 = require("./481060.js"),
   Chunk239091 = require("./239091.js"),
   Chunk561472 = require("./561472.jsx"),
-  Chunk36311 = require("./36311.jsx"),
   Chunk622822 = require("./622822.js"),
   Chunk367907 = require("./367907.js"),
   Chunk188471 = require("./188471.js"),
@@ -23,6 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk41776 = require("./41776.js"),
   Chunk703656 = require("./703656.js"),
   Chunk6025 = require("./6025.js"),
+  Chunk340501 = require("./340501.jsx"),
   Chunk592125 = require("./592125.js"),
   Chunk703558 = require("./703558.js"),
   Chunk430824 = require("./430824.js"),
@@ -71,35 +71,35 @@ function A(e) {
     baseChannelId: A,
     channelViewSource: R = "Split View",
     isResourceChannelView: k
-  } = e, D = (0, i.e7)([y.Z], () => y.Z.getChannel(n)), L = (0, i.e7)([N.Z], () => N.Z.getGuild(null == D ? true : D.getGuildId())), M = (0, I.ZP)(D), H = (0, i.e7)([b.Z], () => (null == L ? true : L.id) != null && b.Z.isLurking(L.id), [L]), U = (0, g.Z)(n), W = (0, i.e7)([f.Z], () => {
+  } = e, D = (0, i.e7)([y.Z], () => y.Z.getChannel(n)), L = (0, i.e7)([N.Z], () => N.Z.getGuild(null == D ? true : D.getGuildId())), M = (0, I.ZP)(D), H = (0, i.e7)([C.Z], () => (null == L ? true : L.id) != null && C.Z.isLurking(L.id), [L]), U = (0, f.Z)(n), W = (0, i.e7)([p.Z], () => {
     var e;
-    return null == (e = f.Z.getResourceForChannel(null == L ? true : L.id, n)) ? true : e.title
-  }), G = (0, d.$5)(D), F = r.useRef(false);
+    return null == (e = p.Z.getResourceForChannel(null == L ? true : L.id, n)) ? true : e.title
+  }), G = (0, c.$5)(D), F = r.useRef(false);
   if (r.useEffect(() => {
-      null == D || F.current || (F.current = true, (0, u.yw)(P.rMx.CHANNEL_OPENED, B(T({}, (0, u.$H)(D.id)), {
+      null == D || F.current || (F.current = true, (0, d.yw)(P.rMx.CHANNEL_OPENED, B(T({}, (0, d.$H)(D.id)), {
         channel_view: R
-      })), (0, m.a)(P.rMx.CHANNEL_OPENED_CLICKSTREAM, {
+      })), (0, u.a)(P.rMx.CHANNEL_OPENED_CLICKSTREAM, {
         channelId: D.id
       }))
     }, [D, R]), null == D || null == L) return null;
   let q = [];
-  return (H || q.push((0, l.jsx)(_.Z, {
+  return (H || q.push((0, l.jsx)(x.Z, {
     channel: D
-  }, "notifications")), q.push((0, l.jsx)(x.ZP.Icon, {
+  }, "notifications")), q.push((0, l.jsx)(g.ZP.Icon, {
     icon: a.Dio,
     tooltip: E.intl.string(E.t.cpT0Cq),
-    onClick: () => v.Z.closeChannelSidebar(A)
-  }, "close")), G) ? (0, l.jsx)(c.Z, {
+    onClick: () => j.Z.closeChannelSidebar(A)
+  }, "close")), G) ? (0, l.jsx)(v.Z, {
     guild: L,
     channelId: D.id
   }) : (0, l.jsxs)(l.Fragment, {
     children: [(0, l.jsx)(s.Z, {
       channel: D,
       draftType: O.d.ChannelMessage
-    }), (0, l.jsx)(x.ZP, {
+    }), (0, l.jsx)(g.ZP, {
       toolbar: q,
       "aria-label": E.intl.string(E.t.BIYAqa),
-      children: (0, C.ud)({
+      children: (0, _.ud)({
         channel: D,
         channelName: U ? W : M,
         guild: L,
@@ -118,9 +118,9 @@ function A(e) {
         handleClick: () => {
           let e = Z.Z.getMessages(D.id);
           if (k) {
-            (0, j.uL)(P.Z5c.CHANNEL(D.guild_id, D.id)), (0, p.C3)(D.guild_id, null);
+            (0, b.uL)(P.Z5c.CHANNEL(D.guild_id, D.id)), (0, h.C3)(D.guild_id, null);
             return
-          }(0, j.XU)(D.guild_id, D.id, e.jumpTargetId)
+          }(0, b.XU)(D.guild_id, D.id, e.jumpTargetId)
         }
       })
     }), (0, l.jsx)("div", {
@@ -128,7 +128,7 @@ function A(e) {
       children: (0, l.jsx)(w.Z, {
         channel: D,
         guild: L,
-        chatInputType: h.Ie.SIDEBAR
+        chatInputType: m.Ie.SIDEBAR
       }, n)
     })]
   })

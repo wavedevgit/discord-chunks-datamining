@@ -26,10 +26,10 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk906732 = require("./906732.jsx"),
   Chunk168551 = require("./168551.js"),
   Chunk260035 = require("./260035.jsx"),
-  Chunk628123 = require("./628123.jsx"),
   Chunk686546 = require("./686546.jsx"),
   Chunk950796 = require("./950796.jsx"),
   Chunk587061 = require("./587061.js"),
+  Chunk248687 = require("./248687.jsx"),
   Chunk280049 = require("./280049.js"),
   Chunk314910 = require("./314910.jsx"),
   Chunk728285 = require("./728285.jsx"),
@@ -162,7 +162,7 @@ class z extends(r = Chunk647438.Component) {
     } = this.props, g = K({
       withTitleBar: Chunk647438,
       isFullScreen: r
-    }), E = require === Chunk501787.$J ? Chunk22205.Z : Chunk628123.Z;
+    }), E = require === Chunk501787.$J ? Chunk22205.Z : Chunk248687.Z;
     return (0, Chunk951288.jsx)(Chunk799899.VK, {
       children: (0, Chunk951288.jsx)(Chunk746106.w, {
         windowKey: require,
@@ -257,7 +257,7 @@ let q = Chunk647438.forwardRef(function(e, t) {
       forcedColors: E.Z.useForcedColors ? "yes" : "no",
       connectedEmbeddedActivity: y.ZP.getCurrentEmbeddedActivity()
     }));
-    (0, N.Z)(n, false);
+    (0, C.Z)(n, false);
     let {
       analyticsLocations: s
     } = (0, v.ZP)(O.Z.POPOUT_WINDOW), {

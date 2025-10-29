@@ -36,7 +36,7 @@ let b = {
       onDelete: l
     } = e, o = e => null != e ? (0, u.vc)(e, "LLL") : "---";
     return (0, a.jsxs)("div", {
-      className: i()(x.card, r ? f.gradientWrapperTier2 : ""),
+      className: i()(x.card, r ? g.gradientWrapperTier2 : ""),
       children: [(0, a.jsxs)(c.Text, {
         variant: "text-md/normal",
         children: ["ID: ", n.id, " "]

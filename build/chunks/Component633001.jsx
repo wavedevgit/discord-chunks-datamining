@@ -411,7 +411,7 @@ let ei = Chunk647438.memo(function(e) {
       let a = null == (e = C.default.getTrackedGameByPid(t)) ? true : e.fullscreenType;
       if (null != a) return a;
       let r = v.ZP.getGameOrTransformedSubgameForPID(t);
-      return null != (n = null == r ? true : r.fullscreenType) ? n : f.Jx.UNKNOWN
+      return null != (n = null == r ? true : r.fullscreenType) ? n : g.Jx.UNKNOWN
     }, [t]);
     return (0, a.jsxs)(m.Text, {
       variant: "text-sm/normal",
@@ -751,7 +751,7 @@ function ex(e) {
       return "var(--gray-400)"
   }
 }
-let ef = [{
+let eg = [{
   key: "type",
   cellClassName: Chunk454741.tableBarColumn,
   renderHeader: () => null,
@@ -759,7 +759,7 @@ let ef = [{
     let {
       type: t,
       logType: n
-    } = e, r = eg(t);
+    } = e, r = ef(t);
     return (0, a.jsx)("div", {
       className: K.tableBar,
       style: {
@@ -814,7 +814,7 @@ let ef = [{
   }
 }];
 
-function eg(e) {
+function ef(e) {
   switch (e) {
     case _.C7.NativeLegacy:
       return m.GON;
@@ -852,10 +852,10 @@ let ev = ["__webpack_require__", "fn"],
         logType: p,
         nativeId: h,
         stack: x,
-        data: f,
-        timestamp: g,
+        data: g,
+        timestamp: f,
         pid: b
-      } = o, v = s()(g), _ = eg(u);
+      } = o, v = s()(f), _ = ef(u);
       return (0, a.jsxs)(m.w0Z, {
         className: K.subPanelScroller,
         children: [(0, a.jsxs)(j.Z, {
@@ -921,9 +921,9 @@ let ev = ["__webpack_require__", "fn"],
             })
           }), (0, a.jsx)(F.Z9, {
             name: "Data",
-            copyValue: eb(f),
+            copyValue: eb(g),
             children: (0, a.jsx)("code", {
-              children: eb(f)
+              children: eb(g)
             })
           }), null != x && (0, a.jsx)(F.Z9, {
             name: "Stack Trace",
@@ -974,7 +974,7 @@ function eC() {
   let {
     ref: e,
     height: t
-  } = (0, Chunk393238.ZP)(), n = (0, Chunk442837.e7)([Chunk338949.Z], () => Chunk338949.Z.isModuleLoggingEnabled()), [l, o] = Chunk647438.useState(require), [s, c] = Chunk647438.useState(false), [u, p] = Chunk647438.useState(null), [h, f] = Chunk647438.useState(Object.keys(eh)), [b, v] = (0, Chunk442837.e7)([Chunk338949.Z], () => Chunk338949.Z.getOverlayLoggingBreadcrumbs(), [], Chunk136015.Q), [j, _] = Chunk647438.useState(null), y = null != Chunk984370 ? Chunk984370 : Chunk600164, C = null != Chunk984370 ? false : Chunk594190;
+  } = (0, Chunk393238.ZP)(), n = (0, Chunk442837.e7)([Chunk338949.Z], () => Chunk338949.Z.isModuleLoggingEnabled()), [l, o] = Chunk647438.useState(require), [s, c] = Chunk647438.useState(false), [u, p] = Chunk647438.useState(null), [h, g] = Chunk647438.useState(Object.keys(eh)), [b, v] = (0, Chunk442837.e7)([Chunk338949.Z], () => Chunk338949.Z.getOverlayLoggingBreadcrumbs(), [], Chunk136015.Q), [j, _] = Chunk647438.useState(null), y = null != Chunk984370 ? Chunk984370 : Chunk600164, C = null != Chunk984370 ? false : Chunk594190;
   Chunk647438.useEffect(() => {
     0 !== Chunk371651 && (s ? Chunk570140(Chunk837268.reduce((e, t) => "game_tracking_starting" === t.name ? Math.max(e, t.timestamp) : e, 0)) : Chunk570140(null))
   }, [s, Chunk837268, Chunk371651]);
@@ -1077,7 +1077,7 @@ function eC() {
           return (0, a.jsx)(m.P3F, {
             className: i()(K.filter, h.includes(t) && K.activeFilter),
             onClick: () => {
-              f(e => e.includes(t) ? e.filter(e => e !== t) : [...e, t])
+              g(e => e.includes(t) ? e.filter(e => e !== t) : [...e, t])
             },
             children: (0, a.jsx)(m.Text, {
               variant: "text-sm/normal",
@@ -1098,7 +1098,7 @@ function eC() {
     }), (0, Chunk951288.jsx)("div", {
       className: i()(Chunk454741.panelGroup, Chunk454741.tableContainer),
       children: (0, Chunk951288.jsx)(Chunk681619.Z, {
-        columns: ef,
+        columns: eg,
         data: Chunk886118,
         selectedRowKey: null != Chunk355863 ? Chunk355863 : true,
         onClickRow: e => k(e.key)

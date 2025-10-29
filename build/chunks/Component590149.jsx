@@ -22,15 +22,15 @@ function d(e) {
     onExpandedChange: p,
     defaultExpanded: h = false,
     onOpen: x,
-    maxHeight: f
-  } = e, [g, b] = r.useState(h), v = true !== m, j = v ? m : g, _ = r.useCallback(() => {
+    maxHeight: g
+  } = e, [f, b] = r.useState(h), v = true !== m, j = v ? m : f, _ = r.useCallback(() => {
     let e = !j;
     v || b(e), null == p || p(e), e && null != x && x()
   }, [j, v, p, x]), y = r.useMemo(() => {
-    if (null != f && j) return {
-      maxHeight: "number" == typeof f ? "".concat(f, "px") : f
+    if (null != g && j) return {
+      maxHeight: "number" == typeof g ? "".concat(g, "px") : g
     }
-  }, [f, j]);
+  }, [g, j]);
   return (0, a.jsxs)("div", {
     className: i()(c.accordionContainer, u, {
       [c.opened]: j

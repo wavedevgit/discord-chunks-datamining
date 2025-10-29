@@ -8,10 +8,10 @@ require("./647438.js");
 var Chunk399606 = require("./399606.js"),
   Chunk524437 = require("./524437.js"),
   Chunk481060 = require("./481060.js"),
-  Chunk494404 = require("./494404.jsx"),
   Chunk377171 = require("./377171.js"),
   Chunk317632 = require("./317632.js"),
   Chunk602478 = require("./602478.js"),
+  Chunk598999 = require("./598999.jsx"),
   Chunk2818 = require("./2818.js"),
   Chunk768943 = require("./768943.js"),
   Chunk216789 = require("./216789.js"),
@@ -38,10 +38,10 @@ function j(e) {
     location: "RecentsHeader"
   }), {
     enabled: C
-  } = u.Z.useExperiment({
+  } = c.Z.useExperiment({
     location: "RecentsHeader"
-  }), x = (0, i.e7)([c.Z], () => c.Z.getUnseenInviteCount()), E = (0, i.e7)([p.Z], () => p.Z.getOverdueMessageReminderCount());
-  return (0, r.jsxs)(a.h4, {
+  }), x = (0, i.e7)([s.Z], () => s.Z.getUnseenInviteCount()), E = (0, i.e7)([p.Z], () => p.Z.getOverdueMessageReminderCount());
+  return (0, r.jsxs)(u.h4, {
     className: y.header,
     children: [(0, r.jsxs)("div", {
       className: y.headerTitle,
@@ -80,7 +80,7 @@ function j(e) {
           "aria-label": O.intl.string(O.t["En+D+u"]),
           className: y.tab,
           children: [O.intl.string(O.t["En+D+u"]), (null == h ? true : h.badgeForYou) ? (0, r.jsx)(o.fWl, {
-            color: s.Z.STATUS_DANGER,
+            color: a.Z.STATUS_DANGER,
             className: y.iconBadge
           }) : null]
         }), (0, r.jsx)(o.njP.Item, {
@@ -97,7 +97,7 @@ function j(e) {
           id: l.X.GAME_INVITES,
           className: y.tab,
           children: [O.intl.string(O.t.apq3cU), x > 0 ? (0, r.jsx)(o.fWl, {
-            color: s.Z.STATUS_DANGER,
+            color: a.Z.STATUS_DANGER,
             className: y.iconBadge
           }) : null]
         }) : null, b && _ ? (0, r.jsx)(o.njP.Item, {

@@ -9,8 +9,8 @@ require.d(exports, {
   Sg: () => m,
   TG: () => s,
   YX: () => u,
-  Z4: () => g,
-  nd: () => f,
+  Z4: () => f,
+  nd: () => g,
   tq: () => p,
   uz: () => x
 });
@@ -49,7 +49,7 @@ let o = {
   x = {
     [Chunk763600.Z.SHOCKBYTE]: window.GLOBAL_ENV.RELEASE_CHANNEL === Chunk48541.C.STAGING ? "https://purple-prod.shockbyte.dev/support" : "https://discord.shockbyte.com/support"
   },
-  f = {
+  g = {
     [Chunk763600.Z.SHOCKBYTE]: "https://shockbyte.com/legal/acceptable-use-policy"
   },
-  g = (e, t) => "https://discord.sjc1.qualtrics.com/jfe/form/SV_2h34PnQLPTCjTTM?user_id=".concat(e, "&guild_id=").concat(t)
+  f = (e, t) => "https://discord.sjc1.qualtrics.com/jfe/form/SV_2h34PnQLPTCjTTM?user_id=".concat(e, "&guild_id=").concat(t)

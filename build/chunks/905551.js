@@ -5,11 +5,11 @@ require.d(exports, {
   NE: () => j,
   UM: () => b,
   WX: () => S,
-  WY: () => g,
+  WY: () => f,
   _k: () => C,
   ce: () => h,
   hz: () => v,
-  iX: () => f,
+  iX: () => g,
   mF: () => x,
   s9: () => y
 }), require("./642613.js");
@@ -83,7 +83,7 @@ function x(e) {
   })
 }
 
-function f(e, t) {
+function g(e, t) {
   return a.tn.get({
     url: p.ANM.PRODUCT_FOR_SKU(t),
     rejectWithError: true,
@@ -102,7 +102,7 @@ function f(e, t) {
   })
 }
 
-function g(e, t) {
+function f(e, t) {
   if (e) {
     var n;
     i.default.track(p.rMx.GAME_SERVER_HOSTING_THIRD_PARTY_CONSENT_ACCEPTED, {

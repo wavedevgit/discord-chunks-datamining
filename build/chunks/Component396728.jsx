@@ -15,10 +15,10 @@ let s = Chunk647438.memo(function(e) {
     isHighlighted: r,
     isPurchased: s
   } = e;
-  return (0, a.jsxs)("div", {
-    className: o.nameplatePreviewList,
-    children: [(0, a.jsxs)("div", {
-      className: o.fadeIn,
+  return (0, a.jsx)("div", {
+    className: o.nameplatePreviewContainer,
+    children: (0, a.jsxs)("div", {
+      className: o.nameplatePreviewList,
       children: [(0, a.jsx)(l.G, {
         showStatus: true,
         width: 94,
@@ -27,18 +27,15 @@ let s = Chunk647438.memo(function(e) {
         showStatus: true,
         width: 110,
         opacity: .85
-      })]
-    }), (0, a.jsx)(i.Z, {
-      user: t,
-      nameplate: n,
-      className: o.nameplatePreviewSampleItem,
-      isHighlighted: r,
-      showPlaceholderUser: !r,
-      showStatus: true,
-      isPurchased: s
-    }), (0, a.jsxs)("div", {
-      className: o.fadeOut,
-      children: [(0, a.jsx)(l.G, {
+      }), (0, a.jsx)(i.Z, {
+        user: t,
+        nameplate: n,
+        className: o.nameplatePreviewSampleItem,
+        isHighlighted: r,
+        showPlaceholderUser: !r,
+        showStatus: true,
+        isPurchased: s
+      }), (0, a.jsx)(l.G, {
         showStatus: true,
         width: 110,
         opacity: .85
@@ -47,6 +44,6 @@ let s = Chunk647438.memo(function(e) {
         width: 94,
         opacity: .7
       })]
-    })]
+    })
   })
 })

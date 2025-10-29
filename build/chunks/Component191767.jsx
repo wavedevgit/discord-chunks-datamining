@@ -100,7 +100,7 @@ async function k(e) {
 }
 
 function R() {
-  let [e, t] = Chunk647438.useState(false), [n, l] = Chunk647438.useState(false), [i, o] = Chunk647438.useState(false), [c, h] = Chunk647438.useState(null), [x, f] = Chunk647438.useState(null), [g, b] = Chunk647438.useState(null), [v, _] = Chunk647438.useState(false), y = (0, Chunk442837.e7)([Chunk853872.Z], () => Chunk853872.Z.paymentSources), S = (0, Chunk442837.e7)([Chunk853872.Z], () => Chunk853872.Z.hasFetchedPaymentSources), O = (0, Chunk442837.e7)([Chunk853872.Z], () => Chunk853872.Z.defaultPaymentSourceId);
+  let [e, t] = Chunk647438.useState(false), [n, l] = Chunk647438.useState(false), [i, o] = Chunk647438.useState(false), [c, h] = Chunk647438.useState(null), [x, g] = Chunk647438.useState(null), [f, b] = Chunk647438.useState(null), [v, _] = Chunk647438.useState(false), y = (0, Chunk442837.e7)([Chunk853872.Z], () => Chunk853872.Z.paymentSources), S = (0, Chunk442837.e7)([Chunk853872.Z], () => Chunk853872.Z.hasFetchedPaymentSources), O = (0, Chunk442837.e7)([Chunk853872.Z], () => Chunk853872.Z.defaultPaymentSourceId);
   Chunk647438.useEffect(() => {
     Chunk981631 || (0, Chunk355467.tZ)()
   }, [Chunk981631]), Chunk647438.useEffect(() => {
@@ -506,7 +506,7 @@ let G = {
   W = e => true !== e ? JSON.stringify(e, null, 2) : "undefined";
 
 function K() {
-  let [e, t] = Chunk647438.useState(W(H)), [n, i] = Chunk647438.useState(H), [o, s] = Chunk647438.useState(W(V)), [c, m] = Chunk647438.useState(V), [p, h] = Chunk647438.useState(null), [x, g] = Chunk647438.useState((0, Chunk951288.jsx)(Chunk237012.DS, {
+  let [e, t] = Chunk647438.useState(W(H)), [n, i] = Chunk647438.useState(H), [o, s] = Chunk647438.useState(W(V)), [c, m] = Chunk647438.useState(V), [p, h] = Chunk647438.useState(null), [x, f] = Chunk647438.useState((0, Chunk951288.jsx)(Chunk237012.DS, {
     errorLabel: G.CONFIGURABLE,
     elementOptions: H,
     children: (0, Chunk951288.jsx)(Chunk289008.ExpressCheckoutElement, {
@@ -638,7 +638,7 @@ function q() {
             variant: "text-md/normal",
             className: T.labelSpacing,
             children: "expressCheckoutElement.options:"
-          }), (0, a.jsx)(f.Z, {
+          }), (0, a.jsx)(g.Z, {
             className: T.markdown,
             children: "".concat("``").concat(W(z[e]), " ").concat("``")
           }), (0, a.jsx)(C.DS, {

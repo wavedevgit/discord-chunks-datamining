@@ -144,7 +144,7 @@ function I() {
           label: T(t),
           checked: n.includes(t),
           onChange: n => {
-            n ? (0, p.Qd)(t, e, false) : ((0, f.Z1)(s.z.GUILD_POWERUP_NOTIFICATION), (0, p.c7)(t, e))
+            n ? (0, p.Qd)(t, e, false) : ((0, g.Z1)(s.z.GUILD_POWERUP_NOTIFICATION), (0, p.c7)(t, e))
           }
         }, t))
       })
@@ -156,7 +156,7 @@ function I() {
           label: T(t),
           checked: n.includes(t),
           onChange: n => {
-            n ? (0, p.Qd)(t, e, false) : ((0, f.Z1)(s.z.GUILD_POWERUP_NOTIFICATION), (0, p.c7)(t, e))
+            n ? (0, p.Qd)(t, e, false) : ((0, g.Z1)(s.z.GUILD_POWERUP_NOTIFICATION), (0, p.c7)(t, e))
           }
         }, t))
       })

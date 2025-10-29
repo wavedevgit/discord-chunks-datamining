@@ -35,7 +35,7 @@ function x(e) {
   return e
 }
 
-function f(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -47,7 +47,7 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let g = Object.keys(Chunk500949.jQ).map(e => ({
+let f = Object.keys(Chunk500949.jQ).map(e => ({
     value: e,
     label: e
   })),
@@ -84,7 +84,7 @@ function v(e) {
           easing: p.iw.LINEAR,
           easingStrength: 1,
           steps: 26
-        }, n(f(x({}, t), {
+        }, n(g(x({}, t), {
           scales: [...t.scales, a]
         })))
       },
@@ -99,20 +99,20 @@ function v(e) {
           },
           children: (0, a.jsx)(_, {
             scale: e,
-            onRemove: () => n(f(x({}, t), {
+            onRemove: () => n(g(x({}, t), {
               scales: t.scales.filter(t => t.name !== e.name)
             }))
           })
         })
       }, e.name))
     })]
-  }), u = l.find(e => e.name === i), g = null != u ? (0, a.jsx)(j, {
+  }), u = l.find(e => e.name === i), f = null != u ? (0, a.jsx)(j, {
     onClose: () => o(null),
     scale: u,
     setState: n
   }) : s;
   return (0, a.jsx)("div", {
-    children: g
+    children: f
   })
 }
 
@@ -124,7 +124,7 @@ function j(e) {
   } = e, {
     name: c,
     base: x,
-    lightness: f,
+    lightness: g,
     showColumnarPalettePreview: b,
     colorSpace: v,
     easingStrength: j = 1,
@@ -175,7 +175,7 @@ function j(e) {
     }), (0, a.jsx)(d.q4e, {
       label: "Color Space",
       description: "The color space used to generate the palette. Different color spaces will produce different results.",
-      options: g,
+      options: f,
       value: v,
       onChange: e => (0, p.t4)(c, e, n),
       popoutLayerContext: m.O$
@@ -183,7 +183,7 @@ function j(e) {
       label: "Lighten",
       description: "Decrease the darkness of the darkest color in the palette. Increasing this makes the darker colors in the palette lighter.",
       onValueRender: () => null,
-      initialValue: f,
+      initialValue: g,
       stickToMarkers: true,
       markers: Array.from({
         length: 21

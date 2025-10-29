@@ -233,17 +233,17 @@ function er(e) {
     outputSpace: s,
     space: s,
     progression: e => e ** o
-  }), f = [];
+  }), g = [];
   for (let e = 0; e < m; e++) {
     let t = h(e / m);
-    f.push(t)
+    g.push(t)
   }
-  f.push(c);
+  g.push(c);
   for (let e = 1; e < p; e++) {
     let t = x(1 - e / p);
-    f.push(t)
+    g.push(t)
   }
-  return Object.fromEntries(f.map((e, n) => ["".concat(t, "-").concat(n), e]))
+  return Object.fromEntries(g.map((e, n) => ["".concat(t, "-").concat(n), e]))
 }
 
 function el(e, t, n) {

@@ -50,27 +50,27 @@ function b(e) {
           type: "image",
           src: y.edit_profile_upsell_image
         },
-        title: g.intl.format(g.t.TXDztH, {
+        title: f.intl.format(f.t.TXDztH, {
           applicationName: C.name
         }),
-        body: l ? g.intl.string(g.t["63Kso0"]) : g.intl.string(g.t.HwXoeC),
+        body: l ? f.intl.string(f.t["63Kso0"]) : f.intl.string(f.t.HwXoeC),
         actions: [l ? {
-          text: g.intl.string(g.t.VSLDly),
+          text: f.intl.string(f.t.VSLDly),
           onClick: () => {
             j(true), (0, p.openUserProfileModal)({
               userId: _,
-              section: f.oh.WIDGETS
+              section: g.oh.WIDGETS
             }).then(() => {
               r(x.L.TAKE_ACTION), b()
             }).finally(() => j(false))
           },
           loading: v
         } : {
-          text: g.intl.string(g.t["DSJi3+"]),
+          text: f.intl.string(f.t["DSJi3+"]),
           onClick: () => {
             T(), j(true), (0, p.openUserProfileModal)({
               userId: _,
-              section: f.oh.WIDGETS
+              section: g.oh.WIDGETS
             }).then(() => {
               r(x.L.TAKE_ACTION), b()
             }).finally(() => j(false))

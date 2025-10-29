@@ -64,12 +64,12 @@ function p(e) {
     label: p,
     sublabel: h,
     trailing: x,
-    renderSubmenu: f,
-    ref: g
+    renderSubmenu: g,
+    ref: f
   } = e, b = null != n, v = (0, o.Q1)({
     action: t,
     onClick: n
-  }), [j, _] = r.useState(false), y = r.useRef(null), C = null != g ? g : y, S = null != f, E = S && b, O = {
+  }), [j, _] = r.useState(false), y = r.useRef(null), C = null != f ? f : y, S = null != g, E = S && b, O = {
     offset: {
       top: false,
       left: false,
@@ -155,7 +155,7 @@ function p(e) {
     children: (0, a.jsx)(i.yRy, {
       targetElementRef: C,
       spacing: 0,
-      renderPopout: f,
+      renderPopout: g,
       shouldShow: j,
       onRequestClose: N,
       children: I

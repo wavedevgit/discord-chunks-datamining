@@ -57,7 +57,7 @@ let E = function(e) {
       visibleContent: e
     }))
   }, []), r.useEffect(() => {
-    (0, f.lA)(A, f.d_.EXPRESSIVE_PRIMARY, n)
+    (0, g.lA)(A, g.d_.EXPRESSIVE_PRIMARY, n)
   }, [A, n]), (0, a.jsx)(i.ExpressiveModal, {
     transitionState: t,
     onClose: E,
@@ -70,14 +70,14 @@ let E = function(e) {
     title: y.intl.string(y.t.JHNunj),
     subtitle: Z ? y.intl.string(_.default["1/6wta"]) : y.intl.format(_.default.RpMIT0, {
       handleOnHelpUrlHook: () => {
-        x.Z.openUrl(h.Z.getArticleURL(v.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, f.x3)(A, f.d_.EXPRESSIVE_PRIMARY, f.sU.LEARN_MORE)
+        x.Z.openUrl(h.Z.getArticleURL(v.BhN.TIGGER_PAWTECT_LEARN_MORE)), (0, g.x3)(A, g.d_.EXPRESSIVE_PRIMARY, g.sU.LEARN_MORE)
       }
     }),
     actionBarInput: Z ? (0, a.jsx)(s.Text, {
       variant: "text-xs/medium",
       children: y.intl.format(_.default.htWh1G, {
         handleOnHelpUrlHook: () => {
-          x.Z.openUrl(j.sQ.LEARN_MORE_UU_APPEAL_LINK), (0, f.x3)(A, f.d_.EXPRESSIVE_PRIMARY, f.sU.LEARN_MORE)
+          x.Z.openUrl(j.sQ.LEARN_MORE_UU_APPEAL_LINK), (0, g.x3)(A, g.d_.EXPRESSIVE_PRIMARY, g.sU.LEARN_MORE)
         }
       })
     }) : (0, a.jsx)(s.Avr, {
@@ -85,7 +85,7 @@ let E = function(e) {
       textVariant: "text-sm/medium",
       text: y.intl.string(y.t["2jxGer"]),
       onClick: () => {
-        (0, f.x3)(A, f.d_.EXPRESSIVE_PRIMARY, f.sU.LOG_OUT), (0, u.R)("age_verification_get_started_modal")
+        (0, g.x3)(A, g.d_.EXPRESSIVE_PRIMARY, g.sU.LOG_OUT), (0, u.R)("age_verification_get_started_modal")
       }
     }),
     children: (0, a.jsxs)(s.Kqy, {
@@ -124,7 +124,7 @@ let E = function(e) {
           size: "sm",
           text: y.intl.string(_.default.hDvmYP),
           onClick: () => {
-            (0, g.Jh)()
+            (0, f.Jh)()
           }
         })]
       }) : (0, a.jsx)(s.Kqy, {

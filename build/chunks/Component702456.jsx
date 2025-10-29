@@ -10,10 +10,10 @@ var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk493683 = require("./493683.js"),
-  Chunk663701 = require("./663701.jsx"),
   Chunk393903 = require("./393903.js"),
   Chunk100527 = require("./100527.js"),
   Chunk367907 = require("./367907.js"),
+  Chunk791250 = require("./791250.jsx"),
   Chunk752048 = require("./752048.js"),
   Chunk518950 = require("./518950.js"),
   Chunk592125 = require("./592125.js"),
@@ -68,7 +68,7 @@ function P(e) {
     isCompetitive: a
   } = e, {
     status: u,
-    isMobile: d
+    isMobile: f
   } = (0, s.cj)([b.Z], () => ({
     status: b.Z.getStatus(i.id),
     isMobile: b.Z.isMobileOnline(i.id)
@@ -85,11 +85,11 @@ function P(e) {
   }), I = async () => {
     await c.Z.openPrivateChannel({
       recipientIds: [i.id],
-      location: p.Z.FREQUENT_FRIENDS_ROW
+      location: d.Z.FREQUENT_FRIENDS_ROW
     });
     let e = g.Z.getDMFromUserId(i.id);
-    null != e && (0, f.yw)(C.rMx.CHANNEL_OPENED, j(N({}, (0, f.$H)(e)), {
-      location: "".concat(p.Z.FREQUENT_FRIENDS_ROW, " ").concat(l + 1)
+    null != e && (0, p.yw)(C.rMx.CHANNEL_OPENED, j(N({}, (0, p.$H)(e)), {
+      location: "".concat(d.Z.FREQUENT_FRIENDS_ROW, " ").concat(l + 1)
     }))
   }, v = 0 === l, y = v ? o.YqE : a ? o.XcD : true, P = v ? S.intl.string(S.t.aI4VOL) : a ? S.intl.string(S.t.kABl2x) : true;
   return (0, r.jsx)(o.P3F, {
@@ -105,7 +105,7 @@ function P(e) {
       "aria-label": null != (t = i.globalName) ? t : i.username,
       status: u,
       isTyping: m,
-      isMobile: d && !m,
+      isMobile: f && !m,
       size: o.EFr.SIZE_32,
       CutoutIcon: y,
       avatarTooltipAsset: v ? "\uD83D\uDD25" : a ? "❄️" : true,
@@ -146,7 +146,7 @@ function x() {
     scrollLeft: 0,
     scrollWidth: 0,
     clientWidth: 0
-  }), p = Chunk647438.useRef(null), f = Chunk647438.useCallback(() => {
+  }), d = Chunk647438.useRef(null), p = Chunk647438.useCallback(() => {
     var e;
     let t = null == (e = Chunk100527.current) ? true : module.getScrollerNode();
     null != exports && Chunk493683({
@@ -190,7 +190,7 @@ function x() {
         })]
       }), (0, Chunk951288.jsx)(Chunk481060.xVE, {
         ref: e => {
-          p.current = e, h.current = (null == e ? true : e.getScrollerNode()) != null ? e.getScrollerNode() : null
+          d.current = e, h.current = (null == e ? true : e.getScrollerNode()) != null ? e.getScrollerNode() : null
         },
         className: a()(Chunk944658.frequentFriendsAvatars, {
           [Chunk944658.scrollMaskLeft]: x && A,
@@ -204,6 +204,6 @@ function x() {
           isCompetitive: t === b.length - 1 && O
         }, e.id))
       })]
-    }), (0, Chunk951288.jsx)(Chunk663701.d, {})]
+    }), (0, Chunk951288.jsx)(Chunk791250.d, {})]
   })
 }
