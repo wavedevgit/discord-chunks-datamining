@@ -83,40 +83,42 @@ function I(e) {
     children: u,
     onCopy: f,
     "aria-label": _,
-    delay: h = O
-  } = e, [E, I] = i.useState(0), [T, S] = i.useState(false), [A, C] = i.useState(false), [N] = i.useState(() => new o.V7), [R] = i.useState(() => new o.V7);
+    delay: h = O,
+    dataMeticulousIgnore: E
+  } = e, [I, T] = i.useState(0), [S, A] = i.useState(false), [C, N] = i.useState(false), [R] = i.useState(() => new o.V7), [P] = i.useState(() => new o.V7);
   if (i.useEffect(() => () => {
-      N.stop(), R.stop()
-    }, [N, R]), !c.wS) return (0, r.jsx)(r.Fragment, {
+      R.stop(), P.stop()
+    }, [R, P]), !c.wS) return (0, r.jsx)(r.Fragment, {
     children: u({})
   });
-  let P = E >= v.length - 1,
-    w = P ? s.r6K.RED : s.r6K.GREEN,
-    D = T ? w : s.r6K.PRIMARY,
-    L = () => {
+  let w = I >= v.length - 1,
+    D = w ? s.r6K.RED : s.r6K.GREEN,
+    L = S ? D : s.r6K.PRIMARY,
+    x = () => {
       var e;
-      if (!T) return t;
-      let n = (0, a.clamp)(E - 1, 0, v.length - 1),
+      if (!S) return t;
+      let n = (0, a.clamp)(I - 1, 0, v.length - 1),
         i = null != (e = v[n]) ? e : v[0];
       return (0, r.jsx)(s.UkV, {
-        isShaking: P,
+        isShaking: w,
         children: i()
       })
     },
-    x = (e, t) => {
-      !A && T && t.phase === d.UkZ.LEAVE && S(false)
+    M = (e, t) => {
+      !C && S && t.phase === d.UkZ.LEAVE && A(false)
     },
-    M = () => {
-      null == f || f(), (0, c.JG)(n), l.default.track(d.rMx.TEXT_COPIED), A || I(E + 1), C(true), S(true), N.start(b, () => C(false)), R.start(y, () => I(0))
+    k = () => {
+      null == f || f(), (0, c.JG)(n), l.default.track(d.rMx.TEXT_COPIED), C || T(I + 1), N(true), A(true), R.start(b, () => N(false)), P.start(y, () => T(0))
     };
   return (0, r.jsx)(s.aML, {
     "data-migration-pending": true,
-    text: L(),
+    text: x(),
     delay: h,
     "aria-label": _,
-    color: D,
-    forceOpen: A,
-    onAnimationRest: x,
+    dataMeticulousIgnore: E,
+    color: L,
+    forceOpen: C,
+    onAnimationRest: M,
     children: e => {
       var {
         onClick: t,
@@ -124,14 +126,14 @@ function I(e) {
       } = e;
       return u(m(p({}, g(e, ["onClick", "onMouseEnter"])), {
         onClick: () => {
-          null == t || t(), M()
+          null == t || t(), k()
         },
         onMouseEnter: () => {
-          if (!T) {
+          if (!S) {
             null == n || n();
             return
           }
-          N.stop(), C(false)
+          R.stop(), N(false)
         }
       }))
     }

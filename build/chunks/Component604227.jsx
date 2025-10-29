@@ -75,13 +75,13 @@ function O(e) {
   var t, n, i, o, s;
   let {
     compact: _ = false
-  } = e, m = (0, d.Dt)(), E = window.GLOBAL_ENV.RELEASE_CHANNEL, O = "462873", v = "b02bb41c54ab1e575227c9cdc2b81703bfc43599".substring(0, 7), I = null === c.Z || true === c.Z ? true : c.Z.remoteApp.getVersion(), T = null === c.Z || true === c.Z || null == (t = (n = c.Z.remoteApp).getBuildNumber) ? true : t.call(n), S = null === c.Z || true === c.Z || null == (i = (o = c.Z.remoteApp).getAppArch) ? true : i.call(o), A = null == (s = u.C.getCurrentBuildOverride().overrides) ? true : s.discord_web, C = y(), N = [E, O, "(".concat(v, ")")];
+  } = e, m = (0, d.Dt)(), E = window.GLOBAL_ENV.RELEASE_CHANNEL, O = "462907", v = "072b80caea181642c3910cb6778ac954230a4df3".substring(0, 7), I = null === c.Z || true === c.Z ? true : c.Z.remoteApp.getVersion(), T = null === c.Z || true === c.Z || null == (t = (n = c.Z.remoteApp).getBuildNumber) ? true : t.call(n), S = null === c.Z || true === c.Z || null == (i = (o = c.Z.remoteApp).getAppArch) ? true : i.call(o), A = null == (s = u.C.getCurrentBuildOverride().overrides) ? true : s.discord_web, C = y(), N = [E, O, "(".concat(v, ")")];
   return (null != I && (N.push("Host ".concat(I)), null != S && N.push(S.toLowerCase()), null != T && N.push("(".concat(T, ")"))), N.push("Build Override: ".concat(null != A ? A.id : "N/A")), null != C && N.push(C), _) ? (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(f.Z, {
       copyValue: N.join(" "),
       text: p.intl.string(p.t["9Al4Qd"]),
       "aria-label": false,
-      "data-mtctest-ignore": "true",
+      dataMeticulousIgnore: "true",
       children: e => (0, r.jsxs)(l.P3F, b(g({}, e), {
         "aria-describedby": m,
         className: a()(h.clickable, h.compact),
@@ -126,6 +126,7 @@ function O(e) {
       copyValue: N.join(" "),
       text: p.intl.string(p.t["9Al4Qd"]),
       "aria-label": false,
+      dataMeticulousIgnore: "true",
       children: e => (0, r.jsx)(l.P3F, b(g({}, e), {
         "aria-describedby": m,
         className: a()(h.clickable, h.compact),

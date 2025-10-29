@@ -127,15 +127,16 @@ let D = e => {
       disableTooltipPointerEvents: h = false,
       allowOverflow: m = false,
       tooltipPointerClassName: b,
-      positionKeyStemOverride: O
-    } = e, v = "".concat(null != O ? O : "string" == typeof o ? o : "", ":").concat(r);
+      positionKeyStemOverride: O,
+      dataMeticulousIgnore: v
+    } = e, I = "".concat(null != O ? O : "string" == typeof o ? o : "", ":").concat(r);
     return (0, i.jsx)(g.W5, {
       disablePointerEvents: h,
       targetRef: t,
       position: r,
       autoInvert: true,
       align: n,
-      positionKey: v,
+      positionKey: I,
       spacing: _,
       nudgeAlignIntoViewport: true,
       children: e => {
@@ -149,6 +150,7 @@ let D = e => {
             [E.tooltipDisablePointerEvents]: h
           }, u),
           style: y({}, p, d),
+          "data-mtctest-ignore": v,
           children: [(0, i.jsx)("div", {
             className: s()(E.tooltipPointer, E.tooltipPointerBg, b),
             style: w(null != t ? t : r, n, _)
@@ -270,10 +272,11 @@ class j extends(r = Chunk647438.Component) {
       allowOverflow: f,
       clickableOnMobile: _,
       hideOnClick: p,
-      tooltipPointerClassName: h
-    } = this.props, m = (Chunk873546.tq || Chunk873546.Em) && true === Chunk846519 && Chunk377527, g = false !== Chunk13941 && !Chunk607070 || true === Chunk13941, E = this.shouldShowTooltip(this.props, this.state) && this.hasDomElement, b = null;
-    return b = module instanceof Function ? Chunk855711 ? module() : null : module, (0, Chunk951288.jsx)(k, {
-      disableTooltipPointerEvents: Chunk314910,
+      tooltipPointerClassName: h,
+      dataMeticulousIgnore: m
+    } = this.props, g = (Chunk873546.tq || Chunk873546.Em) && true === Chunk846519 && Chunk377527, E = false !== Chunk13941 && !Chunk314910 || true === Chunk13941, b = this.shouldShowTooltip(this.props, this.state) && this.hasDomElement, y = null;
+    return y = module instanceof Function ? b ? module() : null : module, (0, Chunk951288.jsx)(k, {
+      disableTooltipPointerEvents: Chunk855711,
       targetElementRef: this.domElementRef,
       tooltipStyle: s,
       tooltipClassName: Chunk120356,
@@ -283,12 +286,13 @@ class j extends(r = Chunk647438.Component) {
       position: require,
       color: r,
       spacing: Chunk647438,
-      isVisible: Chunk855711,
+      isVisible: b,
       onAnimationRest: Chunk374470,
-      onNonAccessibleClick: Chunk607070 ? this.handleClick : true,
+      onNonAccessibleClick: Chunk314910 ? this.handleClick : true,
       allowOverflow: Chunk793030,
       positionKeyStemOverride: this.props.positionKeyStemOverride,
-      children: b
+      dataMeticulousIgnore: Chunk607070,
+      children: y
     })
   }
   show() {

@@ -189,7 +189,7 @@ function w(e, t) {
     tapShouldOpenVotersModal: V,
     showResults: H
   } = S, Y = (0, E.cZ)(B), W = T.intl.formatToPlainString(T.t.XRkuof, {
-    count: Y.toLocaleString()
+    count: Y
   }), K = Math.max(...v.map(e => {
     var t, n;
     let r = A(B, "".concat(e.answer_id));
@@ -228,7 +228,7 @@ function w(e, t) {
       shouldAnimateTransition: F && !p,
       votesPercentage: Math.round(100 * u),
       votes: (0, r.EQ)(I).with(i.C.IMAGE_ONLY_ANSWERS, () => "(".concat(c.toLocaleString(), ")")).otherwise(() => T.intl.formatToPlainString(T.t.XRkuof, {
-        count: c.toLocaleString()
+        count: c
       }))
     }
   }), q = (0, r.EQ)({

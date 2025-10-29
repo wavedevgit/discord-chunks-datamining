@@ -75,7 +75,7 @@ function P(e) {
   })
 }
 
-function L(e) {
+function A(e) {
   let {
     poll: t,
     reactionVoteCounts: n,
@@ -135,7 +135,7 @@ function L(e) {
   })
 }
 
-function A(e) {
+function E(e) {
   let {
     user: t,
     channel: n
@@ -170,7 +170,7 @@ function A(e) {
   })
 }
 
-function E(e) {
+function L(e) {
   let {
     message: t,
     reaction: n,
@@ -178,7 +178,7 @@ function E(e) {
   } = e, {
     reactors: r,
     hasMore: i
-  } = (0, S.Z)({
+  } = (0, T.Z)({
     channelId: s.id,
     messageId: t.id,
     reaction: n
@@ -189,7 +189,7 @@ function E(e) {
       channelId: s.id,
       messageId: t.id,
       emoji: n.emoji,
-      limit: T.pTL,
+      limit: S.pTL,
       after: e,
       type: k
     });
@@ -223,7 +223,7 @@ function E(e) {
         className: y.spinnerMore
       }, "hasMore") : null : 0 === r.length && u ? (0, l.jsx)(d.$jN, {
         className: y.spinner
-      }, "loadingMore") : null != a && (0, l.jsx)(A, {
+      }, "loadingMore") : null != a && (0, l.jsx)(E, {
         channel: s,
         user: a
       }, a.id)
@@ -285,7 +285,7 @@ function U(e) {
     children: [(0, l.jsx)(i.xBx, {
       title: n.poll.question.text,
       subtitle: Z.intl.format(Z.t.XRkuof, {
-        count: v.toLocaleString()
+        count: v
       })
     }), (0, l.jsx)(d.w0Z, {
       className: y.body,
@@ -294,7 +294,7 @@ function U(e) {
         children: [(0, l.jsx)(d.Ttm, {
           className: y.scroller,
           fade: true,
-          children: (0, l.jsx)(L, {
+          children: (0, l.jsx)(A, {
             poll: n.poll,
             selectedAnswerId: m,
             onSelectAnswer: h,
@@ -304,7 +304,7 @@ function U(e) {
           id: m,
           "aria-label": g,
           className: y.panel,
-          children: null != _ && p > 0 ? (0, l.jsx)(E, {
+          children: null != _ && p > 0 ? (0, l.jsx)(L, {
             message: n,
             reaction: _,
             channel: u
