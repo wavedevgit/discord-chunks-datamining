@@ -54,7 +54,7 @@ class u extends Chunk429091.d {
     return n
   }
   constructor(...e) {
-    super(...e), l(this, "getSortedRoles", this.memoizedPartition((e, t) => s.BL(Object.values(t)))), l(this, "getRolesSnapshot", this.memoizedPartition((e, t) => c({}, t)))
+    super(...e), l(this, "getSortedRoles", this.memoizedPartition(e => s.BL(Object.values(e)))), l(this, "getRolesSnapshot", this.memoizedPartition(e => c({}, e)))
   }
 }
 l(u, "displayName", "GuildRoleStore");

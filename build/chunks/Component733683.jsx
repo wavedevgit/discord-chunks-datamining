@@ -176,7 +176,7 @@ class E extends(r = Chunk647438.Component) {
           })
         })
       }
-    }, e.key)
+    })
   }
   renderProgressMask(e) {
     let {

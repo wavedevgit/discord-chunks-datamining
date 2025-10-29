@@ -1001,38 +1001,39 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
     queryStickers(e) {
       let t = !(arguments.length > 1) || true === arguments[1] || arguments[1],
         [n, r] = arguments.length > 2 && true !== arguments[2] ? arguments[2] : [null, eU],
-        i = X.default.getCurrentUser(),
-        a = new Set,
-        o = [];
+        {
+          stickerMetadata: i
+        } = N.Z,
+        a = X.default.getCurrentUser(),
+        o = new Set,
+        l = [];
       for (let s of (D.DZ.loadIfNecessary(), e)) {
         if ("" === s) continue;
         let e = s.toLocaleLowerCase(),
-          l = (0, eo._I)(e),
-          c = RegExp("^".concat(ei.Z.escape(l)), "i"),
-          u = RegExp("".concat(ei.Z.escape(l)), "i");
-        N.Z.getStickerMetadataArrays().forEach(s => {
-          s.forEach((s, l) => {
-            let d = 0,
-              f = null,
-              _ = N.Z.getStickerById(l);
-            if (null == _ || !r(_, (0, A.cO)(_, i, n))) return;
-            for (let n of s) {
-              let {
-                type: r,
-                value: i
-              } = n, a = e$(r), o = 0;
-              t ? i === e ? o = ey * a : c.test(i) ? o = ev * a : (r === R.MO.GUILD_NAME || r === R.MO.PACK_NAME || r === R.MO.STICKER_NAME) && u.test(i) && (o = eI * a) : i === e && (o = ey * a, f = i), o > d && (d = o, f = i)
-            }
-            let p = C.Z.stickerFrecencyWithoutFetchingLatest.getScore(l);
-            null != p && (d *= p / 100), d > 0 && null != f && !a.has(_.id) && (a.add(_.id), o.push({
-              sticker: _,
-              comparator: f,
-              score: d
-            }))
-          })
+          c = (0, eo._I)(e),
+          u = RegExp("^".concat(ei.Z.escape(c)), "i"),
+          d = RegExp("".concat(ei.Z.escape(c)), "i");
+        i.forEach((i, s) => {
+          let c = 0,
+            f = null,
+            _ = N.Z.getStickerById(s);
+          if (null == _ || !r(_, (0, A.cO)(_, a, n))) return;
+          for (let n of i) {
+            let {
+              type: r,
+              value: i
+            } = n, a = e$(r), o = 0;
+            t ? i === e ? o = ey * a : u.test(i) ? o = ev * a : (r === R.MO.GUILD_NAME || r === R.MO.PACK_NAME || r === R.MO.STICKER_NAME) && d.test(i) && (o = eI * a) : i === e && (o = ey * a, f = i), o > c && (c = o, f = i)
+          }
+          let p = C.Z.stickerFrecencyWithoutFetchingLatest.getScore(s);
+          null != p && (c *= p / 100), c > 0 && null != f && !o.has(_.id) && (o.add(_.id), l.push({
+            sticker: _,
+            comparator: f,
+            score: c
+          }))
         })
       }
-      return 0 === (o = s()(o).sortBy(e => false * e.score).value()).length && (o = eB), o
+      return 0 === (l = s()(l).sortBy(e => false * e.score).value()).length && (l = eB), l
     },
     querySoundmoji(e, t) {
       let n = X.default.getCurrentUser();
