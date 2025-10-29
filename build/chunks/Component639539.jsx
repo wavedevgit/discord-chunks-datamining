@@ -1,7 +1,7 @@
-/** Chunk was on 52344 **/
+/** Chunk was on 86863 **/
 /** chunk id: 639539, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  J: () => g
+  J: () => y
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -154,7 +154,7 @@ let f = e => {
       })]
     })
   },
-  y = e => {
+  g = e => {
     let {
       countdown: t
     } = e;
@@ -170,7 +170,7 @@ let f = e => {
     })
   };
 
-function g(e) {
+function y(e) {
   let {
     textVariant: t,
     className: n,
@@ -205,7 +205,7 @@ function g(e) {
       })]
     }), (0, r.jsx)("div", {
       className: p.digitsContainer,
-      children: (0, r.jsx)(y, {
+      children: (0, r.jsx)(g, {
         countdown: s
       })
     })]

@@ -2,12 +2,13 @@
 /** chunk id: 678135, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => v
+  Z: () => T
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
 var Chunk120356 = require("./120356.js"),
   a = require.n(Chunk120356),
+  Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk680295 = require("./680295.jsx"),
   Chunk687158 = require("./687158.js"),
@@ -15,6 +16,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk518950 = require("./518950.js"),
   Chunk502762 = require("./502762.jsx"),
   Chunk4517 = require("./4517.jsx"),
+  Chunk271383 = require("./271383.js"),
   Chunk150039 = require("./150039.js"),
   Chunk397689 = require("./397689.jsx"),
   Chunk656229 = require("./656229.jsx"),
@@ -25,125 +27,133 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk448239 = require("./448239.js");
 
-function v(e) {
+function T(e) {
+  var t, n;
   let {
-    user: t,
-    guild: n,
-    canUsePremiumCustomization: i,
-    onUpsellClick: v,
-    pendingBanner: I,
-    pendingAccentColor: T,
-    pendingBio: S,
-    pendingPronouns: A,
-    pendingAvatar: C,
-    pendingAvatarDecoration: N,
-    pendingNickname: R,
-    pendingGlobalName: P,
-    pendingThemeColors: w,
-    pendingProfileEffect: D,
-    pendingLegacyUsernameDisabled: L,
-    pendingDisplayNameStyles: x,
-    avatarClassName: M,
-    containerClassName: k,
-    isTryItOutFlow: j = false,
-    disabledInputs: U = false,
-    hideCustomStatus: G = false,
-    hideBioSection: B = false,
-    hideMessageInput: Z = true,
-    pendingBadges: F,
-    shouldOpenBadgeTooltip: V,
-    hideExampleButton: H = false,
-    interactive: Y = true
-  } = e, W = (0, l.ZP)(t.id, null == n ? true : n.id), {
-    avatarSrc: K,
-    avatarDecorationSrc: z
-  } = (0, u.Z)({
-    userId: null == t ? true : t.id,
-    guildId: null == n ? true : n.id,
-    avatarDecorationOverride: N,
-    avatarOverride: C,
-    size: o.EFr.SIZE_80,
-    showPending: true
-  }), q = (0, _.IG)({
-    pendingProfileEffect: D,
-    displayProfile: W
+    user: i,
+    guild: T,
+    canUsePremiumCustomization: S,
+    onUpsellClick: A,
+    pendingBanner: C,
+    pendingAccentColor: N,
+    pendingBio: R,
+    pendingPronouns: P,
+    pendingAvatar: w,
+    pendingAvatarDecoration: D,
+    pendingNickname: L,
+    pendingGlobalName: x,
+    pendingThemeColors: M,
+    pendingProfileEffect: k,
+    pendingLegacyUsernameDisabled: j,
+    pendingDisplayNameStyles: U,
+    avatarClassName: G,
+    containerClassName: B,
+    isTryItOutFlow: Z = false,
+    disabledInputs: F = false,
+    hideCustomStatus: V = false,
+    hideBioSection: H = false,
+    hideMessageInput: Y = true,
+    pendingBadges: W,
+    shouldOpenBadgeTooltip: K,
+    hideExampleButton: z = false,
+    interactive: q = true
+  } = e, X = (0, c.ZP)(i.id, null == T ? true : T.id), Q = (0, o.e7)([p.ZP], () => null != T ? p.ZP.getMember(T.id, i.id) : null), J = (0, h.Ys)({
+    pendingValue: D,
+    userValue: null == i ? true : i.avatarDecoration,
+    guildValue: null == Q ? true : Q.avatarDecoration,
+    guildId: null == T ? true : T.id
   }), {
-    theme: X,
-    primaryColor: Q
-  } = (0, c.Z)({
-    user: t,
-    displayProfile: W,
-    pendingThemeColors: w,
-    isPreview: i
-  }), J = (0, r.jsxs)(d.Z, {
-    user: t,
-    displayProfile: W,
-    themeType: b.l.POPOUT,
-    pendingThemeColors: w,
-    className: a()(O.container, k),
-    forceShowPremium: i,
+    avatarSrc: $,
+    avatarDecorationSrc: ee
+  } = (0, d.Z)({
+    userId: null == i ? true : i.id,
+    guildId: null == T ? true : T.id,
+    avatarDecorationOverride: J,
+    avatarOverride: w,
+    size: s.EFr.SIZE_80,
+    showPending: true
+  }), et = (0, h.Ys)({
+    pendingValue: k,
+    userValue: null == X || null == (t = X._userProfile) ? true : t.profileEffect,
+    guildValue: null == X || null == (n = X._guildMemberProfile) ? true : n.profileEffect,
+    guildId: null == T ? true : T.id
+  }), {
+    theme: en,
+    primaryColor: er
+  } = (0, u.Z)({
+    user: i,
+    displayProfile: X,
+    pendingThemeColors: M,
+    isPreview: S
+  }), ei = (0, r.jsxs)(f.Z, {
+    user: i,
+    displayProfile: X,
+    themeType: O.l.POPOUT,
+    pendingThemeColors: M,
+    className: a()(I.container, B),
+    forceShowPremium: S,
     children: [(0, r.jsxs)("div", {
-      className: O.header,
-      children: [(0, r.jsx)(h.Z, {
-        user: t,
-        displayProfile: W,
-        guildId: null == n ? true : n.id,
-        canUsePremiumCustomization: i,
-        pendingBanner: I,
-        pendingAccentColor: T,
-        isTryItOutFlow: j,
-        disabledInputs: U,
-        onUpsellClick: () => null == v ? true : v({
-          object: E.qAy.EDIT_PROFILE_BANNER
+      className: I.header,
+      children: [(0, r.jsx)(g.Z, {
+        user: i,
+        displayProfile: X,
+        guildId: null == T ? true : T.id,
+        canUsePremiumCustomization: S,
+        pendingBanner: C,
+        pendingAccentColor: N,
+        isTryItOutFlow: Z,
+        disabledInputs: F,
+        onUpsellClick: () => null == A ? true : A({
+          object: y.qAy.EDIT_PROFILE_BANNER
         })
-      }), (0, r.jsx)(p.Z, {
-        user: t,
-        guild: n,
-        displayProfile: W,
-        canUsePremiumCustomization: i,
-        previewAvatar: K,
-        previewAvatarDecoration: z,
-        previewTheme: X,
-        previewPrimaryColor: Q,
-        className: M,
-        disabledInputs: U,
-        isTryItOutFlow: j,
-        onUpsellClick: () => null == v ? true : v({
-          object: E.qAy.AVATAR
+      }), (0, r.jsx)(m.Z, {
+        user: i,
+        guild: T,
+        displayProfile: X,
+        canUsePremiumCustomization: S,
+        previewAvatar: $,
+        previewAvatarDecorationSrc: ee,
+        previewTheme: en,
+        previewPrimaryColor: er,
+        className: G,
+        disabledInputs: F,
+        isTryItOutFlow: Z,
+        onUpsellClick: () => null == A ? true : A({
+          object: y.qAy.AVATAR
         })
-      }), !G && (0, r.jsx)(f.Z, {
-        user: t,
-        themeType: b.l.POPOUT,
-        disableToolbar: U
+      }), !V && (0, r.jsx)(_.Z, {
+        user: i,
+        themeType: O.l.POPOUT,
+        disableToolbar: F
       })]
-    }), (0, r.jsx)(m.Z, {
-      user: t,
-      displayProfile: W,
-      guild: n,
-      pendingAvatar: C,
-      pendingNickname: R,
-      pendingGlobalName: P,
-      pendingBio: S,
-      pendingPronouns: A,
-      pendingLegacyUsernameDisabled: L,
-      pendingDisplayNameStyles: x,
-      isTryItOutFlow: j,
-      hideBioSection: B,
-      pendingBadges: F,
-      shouldOpenBadgeTooltip: V
-    }), (0, r.jsx)(g.Z, {
-      user: t,
-      hideMessageInput: Z,
-      hideExampleButton: H
-    }), null != q && (0, r.jsx)(s.Z, {
-      skuId: q.skuId
+    }), (0, r.jsx)(E.Z, {
+      user: i,
+      displayProfile: X,
+      guild: T,
+      pendingAvatar: w,
+      pendingNickname: L,
+      pendingGlobalName: x,
+      pendingBio: R,
+      pendingPronouns: P,
+      pendingLegacyUsernameDisabled: j,
+      pendingDisplayNameStyles: U,
+      isTryItOutFlow: Z,
+      hideBioSection: H,
+      pendingBadges: W,
+      shouldOpenBadgeTooltip: K
+    }), (0, r.jsx)(b.Z, {
+      user: i,
+      hideMessageInput: Y,
+      hideExampleButton: z
+    }), null != et && (0, r.jsx)(l.Z, {
+      skuId: et.skuId
     })]
   });
-  return Y ? J : (0, r.jsx)("div", {
+  return q ? ei : (0, r.jsx)("div", {
     role: "img",
-    "aria-label": y.intl.string(y.t.ayozFl),
-    children: (0, r.jsx)(o.Rny, {
-      children: J
+    "aria-label": v.intl.string(v.t.ayozFl),
+    children: (0, r.jsx)(s.Rny, {
+      children: ei
     })
   })
 }

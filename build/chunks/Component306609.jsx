@@ -1,4 +1,4 @@
-/** Chunk was on 52344 **/
+/** Chunk was on 86863 **/
 /** chunk id: 306609, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   l: () => z
@@ -84,10 +84,10 @@ function z(e) {
   } = e, [B, G] = i.useState(""), {
     analyticsLocations: W,
     newestAnalyticsLocation: q
-  } = (0, m.ZP)(p.Z.VOICE_FILTER_POPOUT), X = i.useRef(null), K = (0, d.Z)({
+  } = (0, m.ZP)(p.Z.VOICE_FILTER_POPOUT), K = i.useRef(null), X = (0, d.Z)({
     minDimension: 400,
     maxDimension: 600,
-    resizableDomNodeRef: X,
+    resizableDomNodeRef: K,
     onElementResize: (e, t) => {},
     onElementResizeEnd: e => {},
     orientation: d.y.VERTICAL_TOP
@@ -135,7 +135,7 @@ function z(e) {
     }),
     es = i.useRef(null);
   (0, u.ZP)(() => {
-    (0, I.r5)(), ei && (0, P.jG)(), x.default.track(M.rMx.VOICE_FILTER_PICKER_OPENED, {
+    (0, I.r5)(), ei && (0, _.jG)(), x.default.track(M.rMx.VOICE_FILTER_PICKER_OPENED, {
       active_voice_filter_id: null != er ? er : null
     })
   });
@@ -145,7 +145,7 @@ function z(e) {
   return (0, r.jsx)(m.Gt, {
     value: W,
     children: (0, r.jsxs)("div", {
-      ref: X,
+      ref: K,
       className: l()(U.voiceFiltersPopout, {
         [U.wide]: n,
         [U.notResizable]: !ed
@@ -155,7 +155,7 @@ function z(e) {
       },
       children: [ed && (0, r.jsx)("div", {
         className: U.resizeHandle,
-        onMouseDown: K,
+        onMouseDown: X,
         children: (0, r.jsx)("div", {
           className: U.resizePill
         })
@@ -165,7 +165,7 @@ function z(e) {
         onChange: G,
         query: B,
         onClear: ec
-      }), (0, r.jsx)(Z.w, {
+      }), (0, r.jsx)(k.w, {
         query: B,
         columns: n ? 5 : 4,
         handleScroll: e => {
@@ -185,7 +185,7 @@ function z(e) {
         className: U.upsellCountdownContainer,
         children: [null != J && (0, r.jsx)(a.animated.div, {
           style: eo,
-          children: (0, r.jsx)(k.J, {
+          children: (0, r.jsx)(Z.J, {
             catalogUpdateTime: J,
             isScrolled: $
           })
@@ -196,10 +196,10 @@ function z(e) {
               y: el.y,
               opacity: el.y.to(e => +(50 !== e))
             },
-            children: (0, r.jsx)(g.p, {
+            children: (0, r.jsx)(y.p, {
               showUpsell: true,
               text: F.intl.format(F.t.XMDm8z, {
-                nitroTierName: (0, _.Px)(L.PremiumTypes.TIER_2),
+                nitroTierName: (0, P.Px)(L.PremiumTypes.TIER_2),
                 onClick: () => (0, j.i)()
               }),
               button: F.intl.string(F.t.cRCCJ3),
@@ -219,7 +219,7 @@ function z(e) {
         className: l()(U.voiceFiltersFooter, {
           [U.hasActiveVoice]: null != er
         }),
-        children: [(0, r.jsx)(y.j, {
+        children: [(0, r.jsx)(g.j, {
           deviceType: R.h7.AUDIO_INPUT,
           location: "VoiceFiltersPopout",
           onOpen: () => {
@@ -229,7 +229,7 @@ function z(e) {
             })
           },
           popoutPosition: "top"
-        }), o && (0, r.jsx)(y.j, {
+        }), o && (0, r.jsx)(g.j, {
           deviceType: R.h7.AUDIO_OUTPUT,
           location: "VoiceFiltersPopout",
           popoutPosition: "top"

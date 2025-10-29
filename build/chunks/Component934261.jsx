@@ -127,7 +127,7 @@ let I = e => {
       pendingNickname: true,
       pendingGlobalName: true,
       pendingAccentColor: true
-    }, null != f ? u.Z.getAllPending() : j.Z.getAllPending())), k = _.ZP.isPremium(i), D = _.ZP.canUsePremiumProfileCustomization(i), T = (0, h.ZP)(i.id), U = !!(null == T ? true : T.getPreviewBio(v).value), B = {
+    }, null != f ? u.Z.getAllPending() : j.Z.getAllPending())), k = _.ZP.isPremium(i), D = _.ZP.canUsePremiumProfileCustomization(i), T = (0, h.ZP)(i.id), U = !!(null == T ? true : T.getPreviewBio(v)), B = {
       user: i,
       guild: f,
       pendingGlobalName: x,

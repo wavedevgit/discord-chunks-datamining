@@ -1,7 +1,7 @@
-/** Chunk was on 52344 **/
+/** Chunk was on 86863 **/
 /** chunk id: 365831, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  y: () => P
+  y: () => _
 }), require("./388685.js"), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -63,17 +63,17 @@ let h = e => 1 - Math.pow(1 - e, 4),
     friction: 64,
     tension: 1e3
   },
-  _ = {
+  P = {
     mass: 1,
     friction: 35,
     tension: 1e3
   };
 
-function P(e) {
+function _(e) {
   var t;
   let {} = e, {
     activeVoice: n
-  } = (0, v.o)(), o = (0, d.Z)(n), P = (0, b.z)(n), {
+  } = (0, v.o)(), o = (0, d.Z)(n), _ = (0, b.z)(n), {
     toggleLoopback: w,
     isLoopbackEnabled: C
   } = function() {
@@ -88,30 +88,30 @@ function P(e) {
       isLoopbackEnabled: t,
       toggleLoopback: n
     }
-  }(), S = C ? c.Iy5 : c.X_q, I = i.useCallback(() => (0, f.v6)(null), []), N = (0, c.dQu)(c.TVs.colors.BACKGROUND_BASE_LOWER).hex(), T = (0, c.dQu)(c.TVs.colors.WHITE).hex(), D = i.useRef(0), k = n !== o ? D.current + 1 : D.current;
+  }(), S = C ? c.Iy5 : c.X_q, I = i.useCallback(() => (0, f.v6)(null), []), N = (0, c.dQu)(c.TVs.colors.BACKGROUND_BASE_LOWER).hex(), T = (0, c.dQu)(c.TVs.colors.WHITE).hex(), D = i.useRef(0), Z = n !== o ? D.current + 1 : D.current;
   i.useEffect(() => {
-    D.current = k
-  }, [k]);
-  let Z = null != n,
-    M = !Z,
-    A = Z && null != o,
+    D.current = Z
+  }, [Z]);
+  let k = null != n,
+    M = !k,
+    A = k && null != o,
     L = null == n && null != o,
     R = (0, c.q_F)({
-      opacity: +!!Z,
-      height: 72 * !!Z,
-      pointerEvents: Z ? "auto" : "none",
-      backgroundColor: null != (t = null == P ? true : P.baseColor) ? t : N,
+      opacity: +!!k,
+      height: 72 * !!k,
+      pointerEvents: k ? "auto" : "none",
+      backgroundColor: null != (t = null == _ ? true : _.baseColor) ? t : N,
       config: e => "backgroundColor" === e ? {
         easing: h,
         duration: 200
       } : x,
       delay: 100 * !!A
     }, "respect-motion-settings"),
-    V = (0, c.Yzy)(null == P ? true : P.id, {
-      key: k,
+    V = (0, c.Yzy)(null == _ ? true : _.id, {
+      key: Z,
       from: {
         opacity: 0,
-        background: null == P ? true : P.splashGradient
+        background: null == _ ? true : _.splashGradient
       },
       enter: {
         opacity: 1,
@@ -147,8 +147,8 @@ function P(e) {
       } : E,
       delay: L ? 50 - 50 * e : 200 + 50 * e
     }), "respect-motion-settings", [n]),
-    U = (0, c.Yzy)(null == P ? true : P.iconURL, {
-      key: k,
+    U = (0, c.Yzy)(null == _ ? true : _.iconURL, {
+      key: Z,
       from: {
         opacity: 0,
         scale: 80 / 88,
@@ -162,17 +162,17 @@ function P(e) {
       },
       leave: {
         opacity: 0,
-        scale: Z ? 80 / 88 : 1,
-        translateX: 24 * !!Z,
+        scale: k ? 80 / 88 : 1,
+        translateX: 24 * !!k,
         delay: 150 * !A
       },
       config: e => "opacity" === e ? {
         easing: h,
         duration: 200
-      } : Z ? x : _
+      } : k ? x : P
     }, "respect-motion-settings"),
-    Y = (0, c.Yzy)(null == P ? true : P.name, {
-      key: k,
+    Y = (0, c.Yzy)(null == _ ? true : _.name, {
+      key: Z,
       from: {
         opacity: 0,
         scale: A ? .9 : 1,
@@ -200,72 +200,72 @@ function P(e) {
         } : A ? x : E
       }
     }, "respect-motion-settings"),
-    H = y.intl.string(C ? y.t.esVyo6 : y.t.UQqFCF);
+    H = g.intl.string(C ? g.t.esVyo6 : g.t.UQqFCF);
   return (0, r.jsxs)(a.animated.div, {
-    className: g.voiceFilterHero,
+    className: y.voiceFilterHero,
     "aria-hidden": M,
     style: R,
     children: [(0, r.jsx)("div", {
-      className: l()([g.bgGradient, g.bgGradientHighlight])
+      className: l()([y.bgGradient, y.bgGradientHighlight])
     }), V(e => (0, r.jsx)(a.animated.div, {
-      className: g.bgGradient,
+      className: y.bgGradient,
       style: e
     })), (0, r.jsx)("div", {
-      className: g.iconWrapper,
+      className: y.iconWrapper,
       children: U((e, t) => (0, r.jsx)(a.animated.img, {
-        className: g.activeVoiceIcon,
+        className: y.activeVoiceIcon,
         style: e,
         alt: "",
         src: t
       }, t))
     }), (0, r.jsx)("div", {
-      className: g.descriptionWrapper,
+      className: y.descriptionWrapper,
       children: Y((e, t) => (0, r.jsxs)(a.animated.div, {
-        className: g.description,
+        className: y.description,
         style: e,
         children: [(0, r.jsx)(c.Text, {
           variant: "text-xs/normal",
           color: "always-white",
-          className: g.offWhiteText,
-          children: y.intl.string(y.t.WW5DAC)
+          className: y.offWhiteText,
+          children: g.intl.string(g.t.WW5DAC)
         }), (0, r.jsx)(c.Text, {
           variant: "text-md/medium",
           color: "always-white",
-          children: null != t ? y.intl.string(t) : ""
+          children: null != t ? g.intl.string(t) : ""
         })]
       }))
     }), (0, r.jsxs)("div", {
-      className: g.buttonWrapper,
+      className: y.buttonWrapper,
       children: [(0, r.jsx)(c.aML, {
         "data-migration-pending": true,
         "aria-label": H,
-        tooltipClassName: g.tooltip,
-        tooltipContentClassName: g.tooltipContent,
-        shouldShow: Z,
+        tooltipClassName: y.tooltip,
+        tooltipContentClassName: y.tooltipContent,
+        shouldShow: k,
         text: (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(c.Heading, {
             variant: "heading-sm/normal",
             color: "header-primary",
-            className: g.tooltipHeader,
+            className: y.tooltipHeader,
             children: H
           }), (0, r.jsx)(c.Text, {
             variant: "text-xs/normal",
             color: "header-muted",
-            children: y.intl.string(C ? y.t.Sg6cfm : y.t.ZKhtw0)
+            children: g.intl.string(C ? g.t.Sg6cfm : g.t.ZKhtw0)
           })]
         }),
         children: e => (0, r.jsx)(a.animated.div, {
-          className: g.buttonWrapper,
+          className: y.buttonWrapper,
           style: F[0],
           children: (0, r.jsx)(c.P3F, O(j({
-            className: l()(g.button, {
-              [g.loopbackEnabled]: C
+            className: l()(y.button, {
+              [y.loopbackEnabled]: C
             }),
             "aria-hidden": M,
             focusProps: {
-              enabled: Z
+              enabled: k
             },
-            tabIndex: Z ? 0 : false
+            tabIndex: k ? 0 : false
           }, e), {
             onClick: () => w(),
             children: (0, r.jsx)(S, {
@@ -278,18 +278,18 @@ function P(e) {
         })
       }), (0, r.jsx)(c.aML, {
         "data-migration-pending": true,
-        shouldShow: Z,
-        text: y.intl.string(y.t.UvMx7F),
+        shouldShow: k,
+        text: g.intl.string(g.t.UvMx7F),
         children: e => (0, r.jsx)(a.animated.div, {
-          className: g.buttonWrapper,
+          className: y.buttonWrapper,
           style: F[1],
           children: (0, r.jsx)(c.P3F, O(j({
-            className: g.button,
+            className: y.button,
             "aria-hidden": M,
             focusProps: {
-              enabled: Z
+              enabled: k
             },
-            tabIndex: Z ? 0 : false
+            tabIndex: k ? 0 : false
           }, e), {
             onClick: I,
             children: (0, r.jsx)(c.k$p, {

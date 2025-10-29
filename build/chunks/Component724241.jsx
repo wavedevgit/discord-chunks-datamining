@@ -18,55 +18,54 @@ var Chunk442837 = require("./442837.js"),
   Chunk116649 = require("./116649.js");
 
 function p(e) {
-  var t;
   let {
-    user: n,
-    displayProfile: p,
-    guild: h,
-    pendingAvatar: m,
-    pendingNickname: g,
-    pendingGlobalName: E,
-    pendingBio: b,
-    pendingPronouns: y,
-    pendingLegacyUsernameDisabled: O,
-    pendingBadges: v,
-    pendingDisplayNameStyles: I,
-    isTryItOutFlow: T,
-    hideBioSection: S,
-    shouldOpenBadgeTooltip: A
-  } = e, C = (0, i.e7)([c.ZP], () => null == h ? null : c.ZP.getMember(h.id, n.id)), N = (0, i.e7)([u.Z], () => u.Z.hidePersonalInformation), R = null == p || null == (t = p.getPreviewBio(b)) ? true : t.value, P = null != y ? y : null == p ? true : p.pronouns, w = (0, d.Ly)({
-    pendingNickname: g,
-    pendingGlobalName: E,
-    user: n,
-    guildMember: C
-  }), D = () => {
-    if (null != C && null !== m && (null != C.avatar || null != m)) return (0, r.jsx)(l.Z, {
-      user: n,
-      nickname: w
+    user: t,
+    displayProfile: n,
+    guild: p,
+    pendingAvatar: h,
+    pendingNickname: m,
+    pendingGlobalName: g,
+    pendingBio: E,
+    pendingPronouns: b,
+    pendingLegacyUsernameDisabled: y,
+    pendingBadges: O,
+    pendingDisplayNameStyles: v,
+    isTryItOutFlow: I,
+    hideBioSection: T,
+    shouldOpenBadgeTooltip: S
+  } = e, A = (0, i.e7)([c.ZP], () => null == p ? null : c.ZP.getMember(p.id, t.id)), C = (0, i.e7)([u.Z], () => u.Z.hidePersonalInformation), N = null == n ? true : n.getPreviewBio(E), R = null != b ? b : null == n ? true : n.pronouns, P = (0, d.Ly)({
+    pendingNickname: m,
+    pendingGlobalName: g,
+    user: t,
+    guildMember: A
+  }), w = () => {
+    if (null != A && null !== h && (null != A.avatar || null != h)) return (0, r.jsx)(l.Z, {
+      user: t,
+      nickname: P
     })
   };
   return (0, r.jsxs)("div", {
     className: _.body,
     inert: true,
     children: [(0, r.jsx)(o.Z, {
-      user: n,
-      guildId: null == h ? true : h.id,
-      usernameIcon: D(),
-      nickname: w,
-      pendingDisplayNameStyles: I,
-      pronouns: P,
-      isTryItOut: T,
+      user: t,
+      guildId: null == p ? true : p.id,
+      usernameIcon: w(),
+      nickname: P,
+      pendingDisplayNameStyles: v,
+      pronouns: R,
+      isTryItOut: I,
       tags: (0, r.jsx)(a.Z, {
-        displayProfile: p,
+        displayProfile: n,
         themeType: f.l.POPOUT,
-        pendingLegacyUsernameDisabled: O,
-        pendingBadges: v,
-        shouldOpenBadgeTooltip: A
+        pendingLegacyUsernameDisabled: y,
+        pendingBadges: O,
+        shouldOpenBadgeTooltip: S
       })
-    }), !S && null != R && "" !== R && (0, r.jsx)(s.Z, {
-      user: n,
-      bio: R,
-      hidePersonalInformation: N,
+    }), !T && null != N && "" !== N && (0, r.jsx)(s.Z, {
+      user: t,
+      bio: N,
+      hidePersonalInformation: C,
       viewFullBioDisabled: true
     })]
   })

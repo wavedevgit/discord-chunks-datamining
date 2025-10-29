@@ -106,7 +106,12 @@ class u {
   }
   getPreviewBio(e) {
     var t;
-    return (0, r.Wx)(e, null == (t = this._guildMemberProfile) ? true : t.bio, this._userProfile.bio, null != this.guildId)
+    return (0, r.Ys)({
+      pendingValue: e,
+      userValue: this._userProfile.bio,
+      guildValue: null == (t = this._guildMemberProfile) ? true : t.bio,
+      guildId: this.guildId
+    })
   }
   getPreviewThemeColors(e) {
     return (null == e ? true : e[0]) != null && (null == e ? true : e[1]) != null ? e : true !== e ? this._userProfile.themeColors : this.themeColors

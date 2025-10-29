@@ -64,7 +64,7 @@ let b = Chunk647438.memo(function(e) {
         isPurchased: n,
         nameplatePreviewSize: "default",
         showPlaceholderUser: !a,
-        avatarDecorationOverride: null != S ? S : true
+        pendingAvatarDecoration: S
       })
     })]
   })

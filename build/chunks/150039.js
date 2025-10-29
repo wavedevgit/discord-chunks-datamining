@@ -3,17 +3,16 @@
 "use strict";
 require.d(exports, {
   $U: () => h,
-  IG: () => A,
   Jw: () => O,
   Kg: () => E,
   PO: () => I,
   UK: () => T,
-  Wx: () => S,
+  Ys: () => S,
   Zx: () => m,
   bd: () => b,
-  f$: () => N,
+  f$: () => C,
   gc: () => p,
-  gd: () => C,
+  gd: () => A,
   mD: () => g,
   xQ: () => y
 }), require("./539854.js");
@@ -158,36 +157,20 @@ function T(e, t, n) {
   null == n ? (0, a.Fu)(e) : (0, l.Fu)(e)
 }
 
-function S(e, t, n) {
-  let r = arguments.length > 3 && true !== arguments[3] && arguments[3];
-  return null != e ? "string" == typeof e && "" === e ? {
-    value: r ? n : null,
-    isUsingGuildValue: false
-  } : {
-    value: e,
-    isUsingGuildValue: r
-  } : null != t && ("string" != typeof t || "" !== t) ? {
-    value: t,
-    isUsingGuildValue: true
-  } : {
-    value: n,
-    isUsingGuildValue: false
-  }
-}
-
-function A(e) {
-  var t, n;
+function S(e) {
   let {
-    pendingProfileEffect: r,
-    displayProfile: i
-  } = e, a = null == i || null == (t = i._userProfile) ? true : t.profileEffect, o = null == i || null == (n = i._guildMemberProfile) ? true : n.profileEffect, s = null === r;
-  return s && null != o ? a : s ? null : null != r ? r : null == i ? true : i.profileEffect
+    userValue: t,
+    guildValue: n,
+    pendingValue: r,
+    guildId: i
+  } = e, a = "" === r || null === r, o = "" !== r && null != r, s = "" !== n && null != n;
+  return a ? null != i ? t : null : o ? r : null != i && s ? n : t
 }
 
-function C(e, t) {
+function A(e, t) {
   return true === e ? null != t : null != e
 }
 
-function N(e, t) {
+function C(e, t) {
   return true === e ? null != t : null != e
 }

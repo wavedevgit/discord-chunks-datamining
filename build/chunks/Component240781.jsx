@@ -82,12 +82,12 @@ let f = [{
     let {
       user: t,
       guildId: r,
-      avatarDecorationOverride: l,
+      avatarDecoration: l,
       className: h
     } = e, g = (0, o.e7)([x.Z], () => x.Z.getStatus(t.id)), {
       product: P,
       purchase: b
-    } = (0, d.Z)(null == l ? true : l.skuId), E = v.ZP.canUseCollectibles(t), I = (0, u.qS)(b), C = (0, u.G1)(P), A = !E && I, w = (0, p.M)(!C || E), T = (0, m.kd)(P), N = i.useMemo(() => A ? y.intl.string(y.t["7vkeu5"]) : (0, a.EQ)([C, E, w]).with([true, true, false], () => y.intl.string(y.t.hmyYK8)).with([true, false, true], () => y.intl.string(y.t.q0PlFn)).with([true, false, false], () => y.intl.string(y.t["0xs2sA"])).otherwise(() => y.intl.string(y.t.fEGjVQ)), [A, C, E, w]);
+    } = (0, d.Z)(null == l ? true : l.skuId), E = v.ZP.canUseCollectibles(t), I = (0, u.qS)(b), C = (0, u.G1)(P), A = !E && I, w = (0, p.M)(!C || E), T = (0, m.kd)(P), Z = i.useMemo(() => A ? y.intl.string(y.t["7vkeu5"]) : (0, a.EQ)([C, E, w]).with([true, true, false], () => y.intl.string(y.t.hmyYK8)).with([true, false, true], () => y.intl.string(y.t.q0PlFn)).with([true, false, false], () => y.intl.string(y.t["0xs2sA"])).otherwise(() => y.intl.string(y.t.fEGjVQ)), [A, C, E, w]);
     return null != P && (null == b || A) ? (0, n.jsxs)("div", {
       className: s()(O.modalPreview, O.shopPreviewContainer, h),
       children: [(0, n.jsx)("div", {
@@ -104,7 +104,7 @@ let f = [{
           children: T
         }), (0, n.jsx)(c.Text, {
           variant: "text-sm/normal",
-          children: N
+          children: Z
         })]
       })]
     }) : (0, n.jsxs)("div", {

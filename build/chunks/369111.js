@@ -2,40 +2,38 @@
 /** chunk id: 369111, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => f
+  Z: () => d
 });
 var Chunk647438 = require("./647438.js"),
   Chunk399606 = require("./399606.js"),
   Chunk311395 = require("./311395.js"),
   Chunk778825 = require("./778825.js"),
   Chunk150039 = require("./150039.js"),
-  Chunk271383 = require("./271383.js"),
   Chunk25990 = require("./25990.js"),
   Chunk594174 = require("./594174.js"),
   Chunk350327 = require("./350327.js");
 
-function f(e) {
+function d(e) {
   let {
     isTryItOut: t,
     analyticsLocations: n,
-    guildId: f
-  } = e, _ = (0, i.e7)([u.default], () => u.default.getCurrentUser()), p = (0, i.e7)([l.ZP], () => null != f && null != _ ? l.ZP.getMember(f, _.id) : null), h = null != p ? p.avatarDecoration : null == _ ? true : _.avatarDecoration, m = (0, a.Z)(n), {
-    pendingAvatar: g,
-    pendingAvatarDecoration: E,
-    pendingErrors: b
-  } = (0, i.cj)([c.Z, o.Z], () => ({
-    pendingAvatar: t ? c.Z.getTryItOutAvatar() : null != f ? o.Z.getPendingAvatar() : c.Z.getPendingAvatar(),
-    pendingAvatarDecoration: t ? c.Z.getTryItOutAvatarDecoration() : null != f ? o.Z.getPendingAvatarDecoration() : c.Z.getPendingAvatarDecoration(),
-    pendingErrors: null != f ? o.Z.getErrors().avatarDecoration : c.Z.getErrors().avatarDecoration
-  })), y = (0, r.useCallback)(e => (0, s.Jw)(e, null == _ ? true : _.avatar), [null == _ ? true : _.avatar]), O = (0, r.useCallback)(e => {
-    (0, s.PO)(f, e), null != e && m(e)
-  }, [m, f]);
+    guildId: d
+  } = e, f = (0, i.e7)([c.default], () => c.default.getCurrentUser()), _ = (0, a.Z)(n), {
+    pendingAvatar: p,
+    pendingAvatarDecoration: h,
+    pendingErrors: m
+  } = (0, i.cj)([l.Z, o.Z], () => ({
+    pendingAvatar: t ? l.Z.getTryItOutAvatar() : null != d ? o.Z.getPendingAvatar() : l.Z.getPendingAvatar(),
+    pendingAvatarDecoration: t ? l.Z.getTryItOutAvatarDecoration() : null != d ? o.Z.getPendingAvatarDecoration() : l.Z.getPendingAvatarDecoration(),
+    pendingErrors: null != d ? o.Z.getErrors().avatarDecoration : l.Z.getErrors().avatarDecoration
+  })), g = (0, r.useCallback)(e => (0, s.Jw)(e, null == f ? true : f.avatar), [null == f ? true : f.avatar]), E = (0, r.useCallback)(e => {
+    (0, s.PO)(d, e), null != e && _(e)
+  }, [_, d]);
   return {
-    pendingAvatar: g,
-    pendingAvatarDecoration: E,
-    setPendingAvatar: t ? d.c_ : y,
-    setPendingAvatarDecoration: t ? d.Xz : O,
-    savedAvatarDecoration: h,
-    pendingErrors: b
+    pendingAvatar: p,
+    pendingAvatarDecoration: h,
+    pendingErrors: m,
+    setPendingAvatar: t ? u.c_ : g,
+    setPendingAvatarDecoration: t ? u.Xz : E
   }
 }

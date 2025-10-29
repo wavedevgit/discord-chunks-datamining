@@ -95,11 +95,11 @@ let u = e => {
       };
       let f = null == e || null == (r = e.refTargetBackground) ? true : r.asset,
         h = null == f ? true : f.resting,
-        b = null == f ? true : f.hovered;
+        g = null == f ? true : f.hovered;
       return {
         hasPreviewAssets: v,
-        buttonBGHoverDark: null != (o = null != n ? n : t) ? o : null == b ? true : b.dark,
-        buttonBGHoverLight: null != (s = null != a ? a : t) ? s : null == b ? true : b.light,
+        buttonBGHoverDark: null != (o = null != n ? n : t) ? o : null == g ? true : g.dark,
+        buttonBGHoverLight: null != (s = null != a ? a : t) ? s : null == g ? true : g.light,
         buttonBGRestingDark: null != (m = null != c ? c : l) ? m : null == h ? true : h.dark,
         buttonBGRestingLight: null != (p = null != u ? u : l) ? p : null == h ? true : h.light,
         coachtipAvatar: null != d ? d : null == e ? true : e.avatar

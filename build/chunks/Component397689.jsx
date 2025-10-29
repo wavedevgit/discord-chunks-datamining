@@ -66,7 +66,7 @@ function v(e) {
     displayProfile: a,
     canUsePremiumCustomization: f,
     previewAvatar: g,
-    previewAvatarDecoration: b,
+    previewAvatarDecorationSrc: b,
     previewTheme: v,
     previewPrimaryColor: I,
     className: T,

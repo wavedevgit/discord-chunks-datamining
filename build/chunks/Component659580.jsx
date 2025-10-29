@@ -1,7 +1,7 @@
-/** Chunk was on 52344 **/
+/** Chunk was on 86863 **/
 /** chunk id: 659580, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => P
+  default: () => _
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -27,11 +27,11 @@ var Chunk990547 = require("./990547.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk895634 = require("./895634.js");
 
-function P(e) {
+function _(e) {
   let {
     onClose: t,
     renderOutputDevices: n = false,
-    renderInputDevices: P = false,
+    renderInputDevices: _ = false,
     renderInputProfiles: w = false,
     renderInputModes: C = false,
     renderInputVolume: S = false,
@@ -39,8 +39,8 @@ function P(e) {
     renderDeafen: N = false,
     minimal: T = false,
     onSelect: D,
-    appContext: k,
-    onInteraction: Z
+    appContext: Z,
+    onInteraction: k
   } = e, {
     analyticsLocations: M
   } = (0, u.ZP)();
@@ -51,7 +51,7 @@ function P(e) {
       location_stack: M
     }
   });
-  let A = (0, j.Z)(k),
+  let A = (0, j.Z)(Z),
     L = (0, p.M)({
       deviceType: x.h7.AUDIO_INPUT,
       analyticsLocations: M,
@@ -62,26 +62,26 @@ function P(e) {
       analyticsLocations: M,
       asSubmenu: T
     }),
-    V = (0, o.e7)([y.Z], () => y.Z.getActiveInputProfile()),
+    V = (0, o.e7)([g.Z], () => g.Z.getActiveInputProfile()),
     F = (0, b.Z)(M),
     U = (0, m.Z)(M),
     Y = (0, f.Z)(M),
     H = (0, v.Z)(M),
     z = l.Yn.DEFAULT,
-    B = y.Z.isSelfDeaf(z),
-    G = (0, o.e7)([y.Z], () => y.Z.getMode()),
+    B = g.Z.isSelfDeaf(z),
+    G = (0, o.e7)([g.Z], () => g.Z.getMode()),
     W = G === O.pM4.VOICE_ACTIVITY ? O.pM4.PUSH_TO_TALK : O.pM4.VOICE_ACTIVITY;
   return (0, r.jsx)(c.Z, {
     object: O.qAy.CONTEXT_MENU,
     children: (0, r.jsxs)(a.v2r, {
       onSelect: D,
-      onInteraction: Z,
-      className: _.menu,
+      onInteraction: k,
+      className: P.menu,
       onClose: t,
       navId: "audio-device-context",
       variant: "fixed",
       "aria-label": E.intl.string(E.t.ZR1Ss6),
-      children: [P && L, n && R, w && F, !T && C && V !== h._.STUDIO ? (0, r.jsx)(a.kSQ, {
+      children: [_ && L, n && R, w && F, !T && C && V !== h._.STUDIO ? (0, r.jsx)(a.kSQ, {
         label: E.intl.string(E.t["pS+K2L"]),
         children: U
       }) : null, (0, r.jsxs)(a.kSQ, {
@@ -93,7 +93,7 @@ function P(e) {
             location: "AudioDeviceMenu"
           }),
           checked: B
-        }, "self-deafen") : null, T && P && g.isPlatformEmbedded ? (0, r.jsx)(a.S89, {
+        }, "self-deafen") : null, T && _ && y.isPlatformEmbedded ? (0, r.jsx)(a.S89, {
           checked: G === O.pM4.PUSH_TO_TALK,
           id: "input-mode",
           label: E.intl.string(E.t.Q8gkVL),

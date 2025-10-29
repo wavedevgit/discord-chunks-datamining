@@ -63,7 +63,7 @@ let m = Chunk647438.memo(function(e) {
         isPurchased: n,
         nameplatePreviewSize: "default",
         showPlaceholderUser: !l,
-        avatarDecorationOverride: null != E ? E : true
+        pendingAvatarDecoration: E
       })
     })]
   })

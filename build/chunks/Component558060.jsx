@@ -24,13 +24,13 @@ function d(e) {
     discountOfferAmount: v,
     hideStrikethroughPrice: f = false,
     nitroIconType: h,
-    nitroIconSize: b = "md"
-  } = e, g = (0, l.ql)(i, c.tuJ.DEFAULT);
-  if (null == g) return null;
-  if (g.amount <= 0) return (0, r.jsx)("div", {
+    nitroIconSize: g = "md"
+  } = e, b = (0, l.ql)(i, c.tuJ.DEFAULT);
+  if (null == b) return null;
+  if (b.amount <= 0) return (0, r.jsx)("div", {
     className: a()(u.priceTagsContainer, p),
     children: (0, r.jsx)(s.F, {
-      price: g
+      price: b
     })
   });
   let _ = (0, l.ql)(i, c.tuJ.PREMIUM_TIER_2),
@@ -51,7 +51,7 @@ function d(e) {
         })
       }
       return e
-    }({}, g), n = n = {
+    }({}, b), n = n = {
       amount: m.original
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
@@ -62,7 +62,7 @@ function d(e) {
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
-    }), t) : g,
+    }), t) : b,
     P = d && null != _;
   return (0, r.jsxs)("div", {
     className: a()(u.priceTagsContainer, p),
@@ -76,7 +76,7 @@ function d(e) {
         [u.price]: null == v
       }),
       nitroIconType: P ? h : true,
-      nitroIconSize: b,
+      nitroIconSize: g,
       discountOfferAmount: v
     })]
   })
