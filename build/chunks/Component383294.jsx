@@ -1,12 +1,12 @@
-/** Chunk was on 13025 **/
+/** Chunk was on 20565 **/
 /** chunk id: 383294, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => L
+  default: () => T
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  c = require.n(Chunk120356),
+  a = require.n(Chunk120356),
   Chunk13941 = require("./13941.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
@@ -37,18 +37,18 @@ function Z() {
   let e = (0, Chunk442837.e7)([Chunk607070.Z], () => Chunk607070.Z.useReducedMotion),
     [t, n] = Chunk647438.useState(!module),
     [o, d] = Chunk647438.useState(false),
-    b = Chunk647438.useRef(null),
-    p = (0, Chunk410030.ZP)(),
-    m = (0, Chunk481060.apv)(Chunk335131),
-    _ = Chunk507808 ? Chunk345554.Z : Chunk582425.Z,
-    g = Chunk507808 ? Chunk466674.Z : Chunk88490.Z;
+    p = Chunk647438.useRef(null),
+    b = (0, Chunk410030.ZP)(),
+    y = (0, Chunk481060.apv)(Chunk335131),
+    h = Chunk507808 ? Chunk345554.Z : Chunk582425.Z,
+    O = Chunk507808 ? Chunk466674.Z : Chunk88490.Z;
   Chunk647438.useEffect(() => {
     if (!exports && !module) {
       var n;
       null == (n = Chunk100527.current) || require.play()
     }
   }, [exports, module]);
-  let h = (0, Chunk481060.q_F)({
+  let j = (0, Chunk481060.q_F)({
     from: {
       y: 50
     },
@@ -71,7 +71,7 @@ function Z() {
       loop: true,
       muted: true,
       playsInline: true,
-      className: c()(Chunk378658.videoAsset, {
+      className: a()(Chunk378658.videoAsset, {
         [Chunk378658.hidden]: exports
       }),
       controls: false,
@@ -83,7 +83,7 @@ function Z() {
       autoPlay: true,
       muted: true,
       playsInline: true,
-      className: c()(Chunk378658.videoAsset, {
+      className: a()(Chunk378658.videoAsset, {
         [Chunk378658.hidden]: !exports
       }),
       controls: false,
@@ -103,85 +103,85 @@ function I(e) {
   let {
     transitionState: t,
     balance: n,
-    onSubmit: a,
+    onSubmit: c,
     onClose: o,
-    state: c
+    state: a
   } = e;
   return (0, r.jsxs)(l.Y0X, {
     "data-migration-pending": true,
     transitionState: t,
     size: l.CgR.DYNAMIC,
-    className: R.modal,
+    className: x.modal,
     parentComponent: "QuestsOrbsRewardModal",
     children: [(0, r.jsx)("div", {
-      className: R.header,
+      className: x.header,
       children: (0, r.jsx)(l.olH, {
         "data-migration-pending": true,
-        className: R.closeBtn,
+        className: x.closeBtn,
         onClick: o
       })
-    }), "loading" === c ? (0, r.jsx)("div", {
-      className: R.spinnerContainer,
+    }), "loading" === a ? (0, r.jsx)("div", {
+      className: x.spinnerContainer,
       children: (0, r.jsx)(l.$jN, {
         type: l.RAz.SPINNING_CIRCLE
       })
-    }) : "success" === c ? (0, r.jsxs)(r.Fragment, {
+    }) : "success" === a ? (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsx)(Z, {}), (0, r.jsx)(l.Heading, {
         variant: "heading-lg/medium",
-        className: R.title,
-        children: x.intl.format(x.t["8l9H0s"], {
+        className: x.title,
+        children: R.intl.format(R.t["8l9H0s"], {
           balanceHook: () => (0, r.jsxs)("span", {
-            className: R.orbsBalance,
-            children: [(0, r.jsx)(h.Z, {
+            className: x.orbsBalance,
+            children: [(0, r.jsx)(j.Z, {
               shouldUseThemeColor: true,
-              className: R.orbsBalanceIcon
+              className: x.orbsBalanceIcon
             }), n]
           })
         })
       }), (0, r.jsx)(l.Text, {
         variant: "text-sm/normal",
-        className: R.subtext,
-        children: x.intl.string(x.t.EDUOIH)
+        className: x.subtext,
+        children: R.intl.string(R.t.EDUOIH)
       }), (0, r.jsxs)(l.ButtonGroup, {
-        className: R.buttonContainer,
+        className: x.buttonContainer,
         fullWidthContainer: true,
         fullWidth: true,
         direction: "vertical",
         children: [(0, r.jsx)(l.Button, {
           variant: "primary",
           fullWidth: true,
-          text: x.intl.string(x.t.WYchde),
-          onClick: a
+          text: R.intl.string(R.t.WYchde),
+          onClick: c
         }), (0, r.jsx)(l.Button, {
           variant: "secondary",
           fullWidth: true,
-          text: x.intl.string(x.t["7kTAgJ"]),
-          onClick: () => window.open(v.EYA.PAID_TERMS_ORBS)
+          text: R.intl.string(R.t["7kTAgJ"]),
+          onClick: () => window.open(C.EYA.PAID_TERMS_ORBS)
         })]
       })]
     }) : (0, r.jsxs)("div", {
-      className: R.errorContainer,
+      className: x.errorContainer,
       children: [(0, r.jsx)("img", {
         alt: "",
-        className: R.errorImage,
+        className: x.errorImage,
         src: S
       }), (0, r.jsxs)("div", {
-        className: R.errorContentContainer,
+        className: x.errorContentContainer,
         children: [(0, r.jsx)(l.Heading, {
           variant: "heading-xl/medium",
-          className: R.errorHeader,
-          children: x.intl.string(x.t["tWYWJ+"])
+          className: x.errorHeader,
+          children: R.intl.string(R.t["tWYWJ+"])
         }), (0, r.jsx)(l.Text, {
           variant: "text-md/normal",
           color: "text-muted",
-          children: x.intl.string(x.t.JNQRU4)
+          children: R.intl.string(R.t.JNQRU4)
         })]
       }), (0, r.jsx)("div", {
-        className: R.buttonContainer,
+        className: x.buttonContainer,
         children: (0, r.jsx)(l.Button, {
           variant: "primary",
           fullWidth: true,
-          text: x.intl.string(x.t.cpT0Cq),
+          text: R.intl.string(R.t.cpT0Cq),
           onClick: o
         })
       })]
@@ -189,62 +189,62 @@ function I(e) {
   })
 }
 
-function L(e) {
+function T(e) {
   var t, n, {
       quest: o,
-      onClose: c
+      onClose: a
     } = e,
     i = function(e, t) {
       if (null == e) return {};
-      var n, r, a = function(e, t) {
+      var n, r, c = function(e, t) {
         if (null == e) return {};
-        var n, r, a = {},
+        var n, r, c = {},
           o = Object.keys(e);
-        for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (a[n] = e[n]);
-        return a
+        for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (c[n] = e[n]);
+        return c
       }(e, t);
       if (Object.getOwnPropertySymbols) {
         var o = Object.getOwnPropertySymbols(e);
-        for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (a[n] = e[n])
+        for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (c[n] = e[n])
       }
-      return a
+      return c
     }(e, ["quest", "onClose"]);
   let {
     balance: s
-  } = (0, _.A)(), l = function(e, t, n) {
-    let [r, o] = a.useState("loading"), [c, i] = a.useState(false), {
+  } = (0, h.A)(), l = function(e, t, n) {
+    let [r, o] = c.useState("loading"), [a, i] = c.useState(false), {
       balance: s
-    } = (0, _.A)(), l = (0, d.Z)(s), [u, f] = a.useState(false);
-    return (a.useEffect(() => {
+    } = (0, h.A)(), l = (0, d.Z)(s), [u, f] = c.useState(false);
+    return (c.useEffect(() => {
       let e = null;
       return "success" === r && t && (e = setTimeout(() => {
         f(true)
       }, 1e3)), () => {
         null != e && clearTimeout(e)
       }
-    }, [r, t]), a.useEffect(() => {
-      !c && null != s && null != l && s > l && i(true)
-    }, [s, l, c]), a.useEffect(() => {
-      (0, O.QB)(e, j.y$.CROSS_PLATFORM, n).then(e => {
+    }, [r, t]), c.useEffect(() => {
+      !a && null != s && null != l && s > l && i(true)
+    }, [s, l, a]), c.useEffect(() => {
+      (0, g.QB)(e, _.y$.CROSS_PLATFORM, n).then(e => {
         if ((null == e ? true : e.claimedAt) != null) return void o("success");
         o("error")
       }).catch(() => {
         o("error")
       })
-    }, [e, n]), "error" === r) ? r : "success" === r && (c || u) ? "success" : "loading"
-  }(o.id, o.preview, i.location), u = a.useCallback(() => {
-    c(), (0, m.Y)({
-      pageType: v.ZY5.GLOBAL_DISCOVERY_QUESTS,
-      sectionType: v.jXE.ORBS_REWARD_MODAL,
-      ctaObject: v.qAy.CTA_TO_ORBS_SHOP
-    }), (0, p.mK)({
+    }, [e, n]), "error" === r) ? r : "success" === r && (a || u) ? "success" : "loading"
+  }(o.id, o.preview, i.location), u = c.useCallback(() => {
+    a(), (0, y.Y)({
+      pageType: C.ZY5.GLOBAL_DISCOVERY_QUESTS,
+      sectionType: C.jXE.ORBS_REWARD_MODAL,
+      ctaObject: C.qAy.CTA_TO_ORBS_SHOP
+    }), (0, b.mK)({
       tab: E.AW.ORBS,
       analyticsLocations: [],
-      analyticsSource: o.id === C.V6 ? b.Z.INTRO_TO_ORBS_QUEST : b.Z.QUEST_HOME_PAGE
+      analyticsSource: o.id === v.V6 ? p.Z.INTRO_TO_ORBS_QUEST : p.Z.QUEST_HOME_PAGE
     })
-  }, [c, o.id]);
+  }, [a, o.id]);
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(g.o, {}), (0, r.jsx)(I, (t = function(e) {
+    children: [(0, r.jsx)(O.o, {}), (0, r.jsx)(I, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
@@ -263,7 +263,7 @@ function L(e) {
       return e
     }({}, i), n = n = {
       balance: s,
-      onClose: c,
+      onClose: a,
       onSubmit: u,
       state: l
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

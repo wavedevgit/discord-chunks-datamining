@@ -1,4 +1,4 @@
-/** Chunk was on 36925 **/
+/** Chunk was on 30437 **/
 /** chunk id: 416568, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => ep
@@ -182,7 +182,7 @@ function ec(e) {
     hideDms: t,
     scrollToTop: n,
     lurkingGuildIds: i
-  } = e, l = (0, C.Z)(), {
+  } = e, l = (0, x.Z)(), {
     pathname: o
   } = (0, c.TH)(), a = o.startsWith(et.Z5c.GUILD_MEMBER_VERIFICATION_FOR_HUB("")), s = (0, p.Wu)([R.Z, A.ZP], () => R.Z.getGuildIds().filter(e => A.ZP.isCurrentUserGuest(e))), u = i.concat(s), {
     entrypoint: d
@@ -192,7 +192,7 @@ function ec(e) {
     location: "guildsbar"
   }).dmsTab;
   return (0, r.jsxs)(r.Fragment, {
-    children: [(0, r.jsx)(K.u, {}), f && (0, r.jsx)(H.Z, {}), d === I.u3.SERVER_RAIL_TOP && (0, r.jsx)(P.Z, {}), l ? (0, r.jsx)(x.Z, {}) : null, (0, r.jsx)(Y.Z, {
+    children: [(0, r.jsx)(K.u, {}), f && (0, r.jsx)(H.Z, {}), d === I.u3.SERVER_RAIL_TOP && (0, r.jsx)(P.Z, {}), l ? (0, r.jsx)(C.Z, {}) : null, (0, r.jsx)(Y.Z, {
       isOnHubVerificationRoute: a
     }), !t && (0, r.jsx)(B.Z, {}), u.map(e => (0, r.jsx)(ee.Z, {
       guildId: e
@@ -239,9 +239,9 @@ function ed(e) {
   } = e, [s] = (0, p.Wu)([D.ZP], () => {
     let e = D.ZP.getGuildsTree();
     return [e, e.version]
-  }), d = (0, p.e7)([S.Z], () => S.Z.lurkingGuildIds()), f = i.useMemo(() => n ? [] : d, [d, n]), b = (0, p.e7)([v.Z], () => v.Z.isFullscreenInContext()), {
+  }), d = (0, p.e7)([S.Z], () => S.Z.lurkingGuildIds()), f = i.useMemo(() => n ? [] : d, [d, n]), b = (0, p.e7)([j.Z], () => j.Z.isFullscreenInContext()), {
     isSorting: O,
-    startSorting: x,
+    startSorting: C,
     stopSorting: E
   } = (0, M.Z)(), N = i.useRef(false), [w] = i.useState(() => new h.V7), A = i.useRef(null), R = i.useRef(null), B = (0, u.OP)(), {
     ref: F
@@ -259,7 +259,7 @@ function ed(e) {
       for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
     return i
-  }(B, ["ref"]), H = (0, m.mFp)(), [z, K] = i.useState(false), Y = (0, m.dQu)(g.Z.modules.guildbar.AVATAR_SIZE), X = (0, m.dQu)(g.Z.space.SPACE_XS), $ = (0, C.Z)(), {
+  }(B, ["ref"]), H = (0, m.mFp)(), [z, K] = i.useState(false), Y = (0, m.dQu)(g.Z.modules.guildbar.AVATAR_SIZE), X = (0, m.dQu)(g.Z.space.SPACE_XS), $ = (0, x.Z)(), {
     pathname: ee
   } = (0, c.TH)(), ei = ee.startsWith(et.Z5c.GUILD_MEMBER_VERIFICATION_FOR_HUB("")), {
     entrypoint: ed
@@ -288,7 +288,7 @@ function ed(e) {
   }), [ef]);
   let {
     analyticsLocations: eh
-  } = (0, j.ZP)(y.Z.GUILDS_LIST), eg = ea(ee);
+  } = (0, v.ZP)(y.Z.GUILDS_LIST), eg = ea(ee);
   (0, _.Ng)(() => {
     if (!N.current && 0 !== s.size) {
       if (!eg) {
@@ -329,7 +329,7 @@ function ed(e) {
             setNodeRef: ef.setNodeRef,
             draggable: true,
             sorting: O,
-            onDragStart: x,
+            onDragStart: C,
             onDragEnd: E,
             renderChildNode: e,
             "aria-setsize": i,
@@ -341,7 +341,7 @@ function ed(e) {
             setRef: ef.setNodeRef,
             draggable: true,
             sorting: O,
-            onDragStart: x,
+            onDragStart: C,
             onDragEnd: E,
             "aria-setsize": i,
             "aria-posinset": true !== n ? n + 1 : true
@@ -349,13 +349,13 @@ function ed(e) {
         default:
           return null
       }
-    }, [x, E, O, ef.setNodeRef]),
+    }, [C, E, O, ef.setNodeRef]),
     e_ = (0, r.jsx)(W.Z, {
       selected: eg,
       className: er.discoveryIcon
     }),
     eO = ed === I.u3.SERVER_RAIL_BOTTOM;
-  return (0, r.jsx)(j.Gt, {
+  return (0, r.jsx)(v.Gt, {
     value: eh,
     children: (0, r.jsx)(m.f6W, {
       theme: a,

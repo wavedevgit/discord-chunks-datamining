@@ -2,9 +2,9 @@
 /** chunk id: 593481, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  QR: () => _,
-  Yj: () => y,
-  ZP: () => v
+  QR: () => y,
+  Yj: () => _,
+  ZP: () => b
 });
 var i, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -34,7 +34,7 @@ let f = e => e.stopPropagation(),
   m = () => (0, Chunk951288.jsx)("div", {
     className: Chunk866497.divider
   }),
-  _ = (e, t, n) => (0, r.jsx)("div", {
+  y = (e, t, n) => (0, r.jsx)("div", {
     className: u.keybindMessage,
     children: d.intl.format(n, {
       keybind: t,
@@ -44,11 +44,11 @@ let f = e => e.stopPropagation(),
       }, n)
     })
   }),
-  y = (e, t) => (0, r.jsx)("div", {
+  _ = (e, t) => (0, r.jsx)("div", {
     className: u.hintSubtleText,
     children: t
   });
-class b extends(i = Chunk647438.PureComponent) {
+class O extends(i = Chunk647438.PureComponent) {
   static getDerivedStateFromProps(e, t) {
     let {
       expand: n
@@ -114,7 +114,7 @@ class b extends(i = Chunk647438.PureComponent) {
         confirmText: t,
         onConfirmClick: n,
         onCancelClick: i,
-        hint: s
+        hint: o
       },
       state: {
         expanded: l
@@ -235,9 +235,9 @@ class b extends(i = Chunk647438.PureComponent) {
     }
   }
 }
-h(b, "defaultProps", {
+h(O, "defaultProps", {
   maxBodyLines: true,
   expand: false,
   disabled: false
 });
-let v = b
+let b = O

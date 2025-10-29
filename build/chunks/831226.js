@@ -1,10 +1,11 @@
-/** Chunk was on 33622 **/
-/** chunk id: 831226, original params: e,a,t (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 831226, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => u
+  Z: () => r
 });
-var u = {};
-u = {
+var r = {};
+r = {
   dateRange: e => `${e.startDate} do ${e.endDate}`,
   dateSelected: e => `${e.date} odabran`,
   finishRangeSelectionPrompt: `Kliknite da dovr\u{161}ite raspon odabranih datuma`,

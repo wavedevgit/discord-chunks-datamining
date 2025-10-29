@@ -1,4 +1,4 @@
-/** Chunk was on 96604 **/
+/** Chunk was on 28855 **/
 /** chunk id: 282003, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   k: () => b
@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk474936 = require("./474936.js"),
   Chunk231338 = require("./231338.js");
 
-function g(e) {
+function f(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       a = Object.keys(n);
@@ -36,7 +36,7 @@ function g(e) {
   return e
 }
 
-function f(e, t) {
+function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -126,7 +126,7 @@ let b = () => {
       })), require !== Chunk45474.R.PREVIEW && null !== N && P(null)
     }, [require, j, O, y, N]);
     let Z = Chunk647438.useCallback(async () => {
-      D(true), await (0, Chunk481060.ZDy)(async () => t => (0, a.jsx)(u.x, f(g({}, t), {
+      D(true), await (0, Chunk481060.ZDy)(async () => t => (0, a.jsx)(u.x, g(f({}, t), {
         onClose: () => {
           t.onClose(), D(false)
         },
@@ -285,12 +285,12 @@ let b = () => {
       {
         discount: t = {}
       } = module;
-    return f(g({
+    return g(f({
       id: "",
       discount_id: "",
       user_id: ""
     }, module), {
-      discount: g({
+      discount: f({
         id: "",
         plan_ids: [],
         user_usage_limit: 3,

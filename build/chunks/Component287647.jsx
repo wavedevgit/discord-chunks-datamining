@@ -1,4 +1,4 @@
-/** Chunk was on 96604 **/
+/** Chunk was on 28855 **/
 /** chunk id: 287647, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   e: () => v
@@ -56,15 +56,15 @@ function v(e) {
       graphic: {
         type: "video",
         ref: j,
-        src: f.Z,
+        src: g.Z,
         aspectRatio: "21/9",
         loop: true
       },
       size: "lg",
-      title: g.intl.string(x.default["1AE464"]),
-      body: [g.intl.string(x.default.cNc1g9), g.intl.string(g.t["4JNXHG"])],
+      title: f.intl.string(x.default["1AE464"]),
+      body: [f.intl.string(x.default.cNc1g9), f.intl.string(f.t["4JNXHG"])],
       actions: [{
-        text: g.intl.string(g.t.uw9zI7),
+        text: f.intl.string(f.t.uw9zI7),
         variant: "primary",
         onClick: y
       }]

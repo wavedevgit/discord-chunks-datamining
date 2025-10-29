@@ -2,7 +2,7 @@
 /** chunk id: 562511, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A2: () => v,
-  S3: () => _
+  S3: () => f
 });
 var Chunk647438 = require("./647438.js"),
   Chunk442837 = require("./442837.js"),
@@ -16,33 +16,33 @@ var Chunk647438 = require("./647438.js"),
   Chunk864133 = require("./864133.js"),
   Chunk981631 = require("./981631.js");
 
-function _(e) {
+function f(e) {
   let t = function(e) {
-    let t = (0, o.FT)(a.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : f.lds);
-    return (0, i.e7)([c.Z, d.default, s.ZP], () => {
+    let t = (0, l.FT)(i.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : p.lds);
+    return (0, a.e7)([c.Z, d.default, s.ZP], () => {
       var t, n;
       if (null === e) returnfalse;
       let r = c.Z.getGuild(e);
       if (true === r || !(0, u.up)(r) || null == r.profile || null === r.profile.tag) returnfalse;
-      let i = d.default.getCurrentUser();
-      if (true === i || (null == (t = i.primaryGuild) ? true : t.identityGuildId) === r.id && (null == (n = i.primaryGuild) ? true : n.tag) === r.profile.tag) returnfalse;
-      let a = s.ZP.getMember(e, i.id);
-      return null != a && !a.isPending
+      let a = d.default.getCurrentUser();
+      if (true === a || (null == (t = a.primaryGuild) ? true : t.identityGuildId) === r.id && (null == (n = a.primaryGuild) ? true : n.tag) === r.profile.tag) returnfalse;
+      let i = s.ZP.getMember(e, a.id);
+      return null != i && !i.isPending
     }, [e]) && !t
   }(e);
   return ! function(e) {
-    let t = (0, o.FT)(a.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : f.lds),
-      n = (0, i.e7)([p.Z], () => null === e ? null : p.Z.getGuildLastSeenInfo(e)),
-      s = (0, i.e7)([d.default], () => {
+    let t = (0, l.FT)(i.C.ADOPT_CLAN_IDENTITY_NOTICE, null != e ? e : p.lds),
+      n = (0, a.e7)([_.Z], () => null === e ? null : _.Z.getGuildLastSeenInfo(e)),
+      s = (0, a.e7)([d.default], () => {
         var e;
         return null == (e = d.default.getCurrentUser()) ? true : e.primaryGuild
       }),
-      u = (0, i.e7)([c.Z], () => {
+      u = (0, a.e7)([c.Z], () => {
         var t, n;
         return null == (n = c.Z.getGuild(e)) || null == (t = n.profile) ? true : t.tag
       });
     if (r.useEffect(() => {
-        t && null === n && null != e && null != u && l.Z.dispatch({
+        t && null === n && null != e && null != u && o.Z.dispatch({
           type: "GUILD_TAG_CHANGED_COACHMARK_SEEN",
           guildId: e,
           lastSeenInfo: {
@@ -50,12 +50,12 @@ function _(e) {
           }
         })
       }, [e, u, t, n]), null == u || (null == s ? true : s.identityGuildId) === e && (null == s ? true : s.tag) === u) returnfalse;
-    let _ = (null == s ? true : s.identityGuildId) === e && (null == s ? true : s.tag) === null,
+    let f = (null == s ? true : s.identityGuildId) === e && (null == s ? true : s.tag) === null,
       v = null === n || (null == n ? true : n.tag) === u;
-    return _ && !v && t
+    return f && !v && t
   }(e) ? t ? "available" : null : "changed"
 }
 
 function v(e) {
-  return null !== _(e)
+  return null !== f(e)
 }

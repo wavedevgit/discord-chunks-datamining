@@ -99,8 +99,8 @@ function g() {
           })
         },
         children: (t, n) => {
-          var o, l;
-          return (0, r.jsx)(a.Anchor, (o = function(e) {
+          var l, o;
+          return (0, r.jsx)(a.Anchor, (l = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
                 r = Object.keys(n);
@@ -117,7 +117,7 @@ function g() {
               })
             }
             return e
-          }({}, t), l = l = {
+          }({}, t), o = o = {
             ref: e,
             useDefaultUnderlineStyles: false,
             className: i()(m.moreButton, {
@@ -129,16 +129,16 @@ function g() {
               color: "currentColor",
               children: j.intl.string(j.t["UKOtz+"])
             })
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(o, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(o)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
               var r = Object.getOwnPropertySymbols(e);
               n.push.apply(n, r)
             }
             return n
-          })(Object(l)).forEach(function(e) {
-            Object.defineProperty(o, e, Object.getOwnPropertyDescriptor(l, e))
-          }), o))
+          })(Object(o)).forEach(function(e) {
+            Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(o, e))
+          }), l))
         }
       })]
     })]

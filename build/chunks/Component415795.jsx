@@ -573,58 +573,61 @@ class D extends Chunk647438.Component {
 }
 class L extends Chunk647438.Component {
   renderContent() {
-    let e, t, {
-        navigationRecord: n,
-        children: r
+    var e, t;
+    let n, r, {
+        navigationRecord: a,
+        children: c
       } = this.props,
       {
-        enabled: a
+        enabled: u
       } = Chunk456100.c.getCurrentConfig({
         location: "QuickSwitcherResults"
       }, {
         autoTrackExposure: true
       }),
-      c = Chunk647438 ? Chunk481060.iWm : Chunk481060.jje;
-    switch (require.type) {
+      d = Chunk933557 ? Chunk481060.iWm : Chunk481060.jje;
+    switch (Chunk647438.type) {
       case Chunk815372.Ky.SHOP:
-        e = Chunk388032.intl.string(Chunk388032.t.pWG4ze), t = (0, Chunk951288.jsx)(Chunk481060.EOn, {
+        n = Chunk388032.intl.string(Chunk388032.t.pWG4ze), r = (0, Chunk951288.jsx)(Chunk481060.EOn, {
           size: "xs",
           color: "currentColor"
         });
         break;
       case Chunk815372.Ky.NITRO_HOME:
-        e = Chunk388032.intl.string(Chunk388032.t.Ipxkog), t = (0, Chunk951288.jsx)(Chunk481060.SrA, {
+        n = Chunk388032.intl.string(Chunk388032.t.Ipxkog), r = (0, Chunk951288.jsx)(Chunk481060.SrA, {
           size: "xs",
           color: "currentColor"
         });
         break;
       case Chunk815372.Ky.QUEST_HOME:
-        e = Chunk388032.intl.string(Chunk388032.t.JALI2K), t = (0, Chunk951288.jsx)(Chunk481060.qDn, {
+        n = Chunk388032.intl.string(Chunk388032.t.JALI2K), r = (0, Chunk951288.jsx)(Chunk481060.qDn, {
           size: "xs",
           color: "currentColor"
         });
         break;
       case Chunk815372.Ky.APPS_HOME:
-        e = Chunk388032.intl.string(Chunk388032.t.PHjkRE), t = (0, Chunk951288.jsx)(Chunk43267, {
+        n = Chunk388032.intl.string(Chunk388032.t.PHjkRE), r = (0, Chunk951288.jsx)(Chunk471445, {
           size: "xs",
           color: "currentColor"
         });
         break;
       case Chunk815372.Ky.SETTINGS:
-        var u;
-        e = null != (u = require.label) ? Chunk933557 : Chunk388032.intl.string(Chunk388032.t["3D5yo/"]), t = (0, Chunk951288.jsx)(Chunk481060.ewm, {
+        n = null != (e = Chunk647438.label) ? module : Chunk388032.intl.string(Chunk388032.t["3D5yo/"]), r = (0, Chunk951288.jsx)(Chunk481060.ewm, {
           size: "xs",
           color: "currentColor"
         });
         break;
-      case Chunk815372.Ky.REVENUE_PLAYGROUND:
-        e = Chunk388032.intl.string(Chunk388032.t.OZJY67), t = (0, Chunk951288.jsx)(Chunk481060.uMN, {
+      case Chunk815372.Ky.PLAYGROUND:
+        n = null != (t = Chunk647438.label) ? exports : "".concat(Chunk647438.collectionId, " Playground"), r = "revenue" === Chunk647438.collectionId ? (0, Chunk951288.jsx)(Chunk481060.uMN, {
+          size: "xs",
+          color: "currentColor"
+        }) : (0, Chunk951288.jsx)(Chunk481060.hh5, {
           size: "xs",
           color: "currentColor"
         });
         break;
       default:
-        e = require.id, t = (0, Chunk951288.jsx)(Chunk481060.xPt, {
+        n = Chunk647438.id, r = (0, Chunk951288.jsx)(Chunk481060.xPt, {
           size: "xs",
           color: "currentColor"
         })
@@ -633,13 +636,13 @@ class L extends Chunk647438.Component {
       className: Chunk297762.contentDefault,
       children: [(0, Chunk951288.jsx)("div", {
         className: Chunk297762.iconContainer,
-        children: exports
+        children: r
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk297762.name,
-        children: module
+        children: require
       }), (0, Chunk951288.jsx)("div", {
         className: Chunk297762.misc,
-        children: r
+        children: Chunk43267
       })]
     })
   }

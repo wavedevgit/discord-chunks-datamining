@@ -17,8 +17,8 @@ function f(e) {
   var t;
   let {
     category: n,
-    onClick: o,
-    active: l
+    onClick: l,
+    active: o
   } = e, {
     useTitle: a,
     useNavigationTitle: u,
@@ -46,10 +46,10 @@ function f(e) {
         }
         return e
       }({
-        onClick: o,
+        onClick: l,
         tag: "li",
         className: i()({
-          [d.active]: l
+          [d.active]: o
         })
       }, e), n = n = {
         children: p
@@ -70,7 +70,7 @@ function f(e) {
 function b(e) {
   let {
     categories: t
-  } = e, [n, l] = o.useState(t[0].key), [i, c] = (0, s.q_F)(() => ({
+  } = e, [n, o] = l.useState(t[0].key), [i, c] = (0, s.q_F)(() => ({
     y: 0,
     config: {
       mass: .1,
@@ -78,7 +78,7 @@ function b(e) {
       tension: 300
     }
   }));
-  return o.useEffect(() => {
+  return l.useEffect(() => {
     c({
       y: 36 * Math.max(t.findIndex(e => e.key === n), 0)
     })
@@ -94,7 +94,7 @@ function b(e) {
       children: t.map(e => (0, r.jsx)(f, {
         onClick: () => {
           var t;
-          l(t = e.key), u.Z.setState({
+          o(t = e.key), u.Z.setState({
             targetKey: t,
             showNavigationMobile: false
           })

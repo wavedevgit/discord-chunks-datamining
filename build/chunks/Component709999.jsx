@@ -1,4 +1,4 @@
-/** Chunk was on 96604 **/
+/** Chunk was on 28855 **/
 /** chunk id: 709999, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => eb
@@ -167,7 +167,7 @@ let eu = e => {
       tab: t,
       selectedProduct: c,
       cardRef: d,
-      children: (0, a.jsx)(ef, function(e) {
+      children: (0, a.jsx)(eg, function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
             a = Object.keys(n);
@@ -199,7 +199,7 @@ let eu = e => {
     })
   });
 
-function eg(e) {
+function ef(e) {
   let {
     product: t,
     tab: n,
@@ -211,19 +211,19 @@ function eg(e) {
     isPremiumUser: m,
     isPremiumProduct: p,
     isPurchased: x,
-    isPartiallyOwnedBundle: f,
+    isPartiallyOwnedBundle: g,
     isDisabled: b,
     discount: _
   } = e, y = (0, P.sp)(), C = (0, k.rN)(t), [T, w] = (0, u.Wu)([I.Z], () => [I.Z.isClaiming === t.skuId, null != I.Z.isClaiming && I.Z.isClaiming !== t.skuId]), A = (0, k.XM)(r, m, false), D = (0, k.ne)({
     product: r,
-    isPartiallyOwnedBundle: f,
+    isPartiallyOwnedBundle: g,
     isPurchased: x
   }), Z = (0, $.J)(t, n === ei.AW.ORBS ? G.tA.ORBS : true), {
     handleUseNow: L,
     isApplying: B
   } = (0, R.W)({
     product: r
-  }), z = c(g.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON), H = (0, Q.Iw)(t), V = null != H, {
+  }), z = c(f.Z.COLLECTIBLES_SHOP_CARD_PREVIEW_BUTTON), H = (0, Q.Iw)(t), V = null != H, {
     displayPrices: W,
     checkoutEligiblePrices: K,
     shouldCheckoutWithOrbs: q,
@@ -253,9 +253,9 @@ function eg(e) {
         color: "header-muted",
         className: ed.priceTag,
         children: ec.intl.string(ec.t.wu4gyV)
-      }) : x || f ? (0, a.jsx)(M.U, {
+      }) : x || g ? (0, a.jsx)(M.U, {
         className: ed.priceTag,
-        isPartiallyPurchased: f
+        isPartiallyPurchased: g
       }) : p ? (0, a.jsx)(h.Text, {
         variant: "text-md/semibold",
         className: ed.priceTag,
@@ -439,7 +439,7 @@ function eg(e) {
     })]
   })
 }
-let ef = Chunk647438.memo(function(e) {
+let eg = Chunk647438.memo(function(e) {
     let {
       product: t,
       user: n,
@@ -456,7 +456,7 @@ let ef = Chunk647438.memo(function(e) {
       shopBlockType: w
     } = e, {
       analyticsLocations: R
-    } = (0, f.ZP)([g.Z.COLLECTIBLES_SHOP_CARD]), Z = (0, P.sp)(), M = (0, el.G)("CollectiblesShopTallCard"), U = null != w && w === c.z.HERO && M ? ei.Ch.THUMBNAIL : ei.Ch.DEFAULT, F = (0, y.Y)({
+    } = (0, g.ZP)([f.Z.COLLECTIBLES_SHOP_CARD]), Z = (0, P.sp)(), M = (0, el.G)("CollectiblesShopTallCard"), U = null != w && w === c.z.HERO && M ? ei.Ch.THUMBNAIL : ei.Ch.DEFAULT, F = (0, y.Y)({
       location: "CollectiblesShopTallCard"
     }), {
       isHoveringOrFocusing: G
@@ -465,7 +465,7 @@ let ef = Chunk647438.memo(function(e) {
       isPartiallyOwnedBundle: et
     } = (0, D.L)(v), {
       isDisabled: er
-    } = (0, A.G)(v.skuId), es = null !== N ? N : _, [eh, ex] = r.useState(false), ef = r.useCallback(function(e, t, r) {
+    } = (0, A.G)(v.skuId), es = null !== N ? N : _, [eh, ex] = r.useState(false), eg = r.useCallback(function(e, t, r) {
       let l = arguments.length > 3 && true !== arguments[3] && arguments[3];
       return (0, o.EQ)(e.type).with(s.Z.PROFILE_EFFECT, () => (0, a.jsx)(eu, {
         isHighlighted: t,
@@ -514,7 +514,7 @@ let ef = Chunk647438.memo(function(e) {
         tab: d,
         variantType: U
       })
-    }, [t, l, d, R, Z, U]), ey = e_(g.Z.COLLECTIBLES_SHOP_CARD);
+    }, [t, l, d, R, Z, U]), ey = e_(f.Z.COLLECTIBLES_SHOP_CARD);
     if (0 === ev.length || (0, k.x6)(t) && null != X && X.discountPercentage < 0) return null;
     let eC = i()(ed.badge, {
       [ed.badgeLeftAligned]: F
@@ -565,7 +565,7 @@ let ef = Chunk647438.memo(function(e) {
           className: i()(ed.preview, {
             [ed.previewThumbnailVariant]: U === ei.Ch.THUMBNAIL
           }),
-          children: (0, o.EQ)(t.type).with(s.Z.PROFILE_EFFECT, s.Z.AVATAR_DECORATION, s.Z.NAMEPLATE, () => ef(j, G, ee)).with(s.Z.BUNDLE, () => (0, a.jsx)(q.d, {
+          children: (0, o.EQ)(t.type).with(s.Z.PROFILE_EFFECT, s.Z.AVATAR_DECORATION, s.Z.NAMEPLATE, () => eg(j, G, ee)).with(s.Z.BUNDLE, () => (0, a.jsx)(q.d, {
             product: t,
             user: n,
             isPurchased: ee,
@@ -575,7 +575,7 @@ let ef = Chunk647438.memo(function(e) {
             let e = t.variants[es];
             if (null == e) return null;
             let [n] = e.items;
-            return ef(n, G, ee, eh)
+            return eg(n, G, ee, eh)
           }).with(s.Z.EXTERNAL_SKU, () => (0, a.jsx)(z.b, {
             product: t,
             animationState: G ? "on" : "off",
@@ -624,7 +624,7 @@ let ef = Chunk647438.memo(function(e) {
             },
             selectedVariantIndex: _,
             setIsHoveringOnSwitch: ex
-          }) : null, (0, a.jsx)(eg, {
+          }) : null, (0, a.jsx)(ef, {
             product: t,
             tab: d,
             buildHandlePreviewClick: e_,

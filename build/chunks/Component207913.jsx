@@ -1,4 +1,4 @@
-/** Chunk was on 36925 **/
+/** Chunk was on 30437 **/
 /** chunk id: 207913, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => K
@@ -86,14 +86,14 @@ function V(e) {
     nick: O,
     colorString: y
   } = (0, _.ZP)(t), {
-    avatarSrc: C,
-    eventHandlers: x
+    avatarSrc: x,
+    eventHandlers: C
   } = (0, E.Z)({
     userId: t.author.id,
     size: d.EFr.SIZE_32,
     guildId: null == b ? true : b.id,
     animateOnHover: true
-  }), S = n.type !== M.d4z.GUILD_ANNOUNCEMENT || null == b, P = (0, j.x)({
+  }), S = n.type !== M.d4z.GUILD_ANNOUNCEMENT || null == b, P = (0, v.x)({
     channel: n,
     message: t,
     user: t.author,
@@ -102,7 +102,7 @@ function V(e) {
   }), T = (0, r.jsx)("div", {
     className: U.usernameTagContainer,
     inert: true,
-    children: (0, r.jsx)(v.Z, {
+    children: (0, r.jsx)(j.Z, {
       channel: n,
       message: t,
       hideGuildTag: true,
@@ -114,8 +114,8 @@ function V(e) {
     null != b && N.Z.requestMember(b.id, t.author.id)
   }, [b, t.author.id]), (0, r.jsx)(d.tEY, F(B({}, l), {
     children: (0, r.jsxs)("div", {
-      onMouseLeave: x.onMouseLeave,
-      onMouseEnter: x.onMouseEnter,
+      onMouseLeave: C.onMouseLeave,
+      onMouseEnter: C.onMouseEnter,
       className: U.messageContainer,
       children: [s && !a && (0, r.jsx)("div", {
         className: U.unreadDot
@@ -127,7 +127,7 @@ function V(e) {
         },
         children: S ? (0, r.jsx)(L.q, {
           "aria-label": "User Avatar",
-          src: C,
+          src: x,
           size: d.EFr.SIZE_32,
           cornerIconUrl: null != b ? (0, I.EB)(b, 24) : true,
           cornerIconOffsetX: 4,
@@ -258,7 +258,7 @@ function H(e) {
 function z(e) {
   let {
     message: t
-  } = e, n = (0, x.a3)(t.timestamp.getTime());
+  } = e, n = (0, C.a3)(t.timestamp.getTime());
   return (0, r.jsx)(y.Z, {
     timestamp: t.timestamp,
     className: U.timestamp,
@@ -284,7 +284,7 @@ function W(e) {
       isSelected: l
     } = e, {
       content: a
-    } = (0, C.Z)(t, {
+    } = (0, x.Z)(t, {
       hideSimpleEmbedContent: true,
       allowList: false,
       allowHeading: true,
@@ -309,18 +309,18 @@ function W(e) {
         _ = null;
       1 === s ? _ = d.XBm : s > 1 ? _ = d.Ka2 : c ? _ = b.Z : p || f ? _ = d.QDj : u ? _ = d.SlE : h && (_ = d.gj8);
       let y = true,
-        j = null;
+        v = null;
       if (e)
-        if (c) j = G.intl.string(G.t["9ddYKt"]);
+        if (c) v = G.intl.string(G.t["9ddYKt"]);
         else if (p) {
-        var v;
-        y = false, j = null == (v = t.poll) ? true : v.question.text
-      } else j = f ? G.intl.string(G.t.sad2PH) : i ? G.intl.string(G.t.p0oZmy) : s > 1 ? G.intl.formatToPlainString(G.t.rtfTKp, {
+        var j;
+        y = false, v = null == (j = t.poll) ? true : j.question.text
+      } else v = f ? G.intl.string(G.t.sad2PH) : i ? G.intl.string(G.t.p0oZmy) : s > 1 ? G.intl.formatToPlainString(G.t.rtfTKp, {
         count: s
       }) : 1 === s ? G.intl.string(G.t.tCcq5p) : u ? G.intl.format(G.t.zY4v1B, {
         stickerName: t.stickerItems[0].name
       }) : h ? G.intl.string(G.t.slFYgi) : g ? G.intl.string(G.t.Yvvfw9) : G.intl.string(G.t.sDqZHL);
-      else y = false, j = (0, r.jsx)(O.ZP, {
+      else y = false, v = (0, r.jsx)(O.ZP, {
         content: a,
         message: t,
         compact: false,
@@ -329,15 +329,15 @@ function W(e) {
           [U.selected]: l
         })
       });
-      return e && (j = (0, r.jsx)("div", {
+      return e && (v = (0, r.jsx)("div", {
         className: o()(U.message, {
           [U.unread]: n,
           [U.selected]: l,
           [U.descriptionMessage]: y
         }),
-        children: j
+        children: v
       })), {
-        previewContent: j,
+        previewContent: v,
         Icon: _
       }
     }, [t, a, n, l])

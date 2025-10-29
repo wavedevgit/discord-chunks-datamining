@@ -334,7 +334,7 @@ let j = Chunk647438.forwardRef(function(e, t) {
     e0 = i.useRef(null),
     {
       focusPreviousItem: e1,
-      focusNextItem: e2
+      focusNextItem: e3
     } = Z(e0, ey, ex);
   return (0, r.jsxs)(u.bG, {
     navigator: eW,
@@ -507,7 +507,7 @@ let j = Chunk647438.forwardRef(function(e, t) {
           let t = !(arguments.length > 1) || true === arguments[1] || arguments[1];
           eq(e, t)
         },
-        focusNextItem: e2,
+        focusNextItem: e3,
         focusPreviousItem: e1,
         renderCustomPill: el,
         customPillContainerClassName: ec

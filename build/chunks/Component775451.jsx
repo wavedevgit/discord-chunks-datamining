@@ -1,8 +1,8 @@
-/** Chunk was on 96604 **/
+/** Chunk was on 28855 **/
 /** chunk id: 775451, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  V9: () => f,
-  ek: () => g
+  V9: () => g,
+  ek: () => f
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,38 +17,38 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk152935 = require("./152935.js");
-let g = {
+let f = {
     START: Chunk152935.alignLeft,
     END: Chunk152935.alignRight
   },
-  f = e => {
+  g = e => {
     let {
       showNotificationBadge: t,
       ctaText: n,
       ctaOnClick: l,
-      analyticsPage: f,
+      analyticsPage: g,
       linkText: b = h.intl.string(h.t.XRdyjz),
-      cardAlignment: v = g.START,
+      cardAlignment: v = f.START,
       className: j
     } = e, {
       balance: _
     } = (0, c.A)(), [y, C] = r.useState(d.b.DEFAULT), [S, E] = r.useState(false), [O, T] = r.useState(false), N = r.useRef(null), P = r.useCallback(() => {
       let e = !S;
-      e && null != f && (0, s.Y)({
-        pageType: f,
+      e && null != g && (0, s.Y)({
+        pageType: g,
         sectionType: p.jXE.ORBS_BALANCE_MENU,
         ctaObject: p.qAy.OPEN_ORB_BALANCE_MENU_FROM_PILL
       }), C(e ? d.b.SELECTED : d.b.DEFAULT), E(e)
-    }, [S, f]), I = r.useCallback(() => {
+    }, [S, g]), I = r.useCallback(() => {
       S && P()
     }, [S, P]), w = (0, o.Z)(null, I), k = r.useMemo(() => (0, a.jsx)(u.L, {
-      analyticsPage: f,
+      analyticsPage: g,
       ctaText: n,
       ctaOnClick: () => {
         P(), l()
       },
       linkText: b
-    }), [f, n, b, P, l]);
+    }), [g, n, b, P, l]);
     return (0, a.jsxs)("div", {
       className: i()(x.container, j, {
         [x.hidden]: O,
@@ -73,4 +73,4 @@ let g = {
       })]
     })
   };
-f.CardAlignment = g
+g.CardAlignment = f

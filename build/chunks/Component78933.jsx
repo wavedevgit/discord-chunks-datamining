@@ -1,4 +1,4 @@
-/** Chunk was on 96604 **/
+/** Chunk was on 28855 **/
 /** chunk id: 78933, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => ed
@@ -92,8 +92,8 @@ function ed(e) {
     openedAt: em,
     guildId: ep,
     guildProfileEnabled: eh
-  } = e, ex = __OVERLAY__, eg = (0, E.ZP)(t.id, ep), {
-    analyticsLocations: ef
+  } = e, ex = __OVERLAY__, ef = (0, E.ZP)(t.id, ep), {
+    analyticsLocations: eg
   } = (0, m.ZP)(u.Z.USER_PROFILE_ACCOUNT_POPOUT), eb = (0, y.ZB)({
     layout: "ACCOUNT_POPOUT",
     userId: t.id,
@@ -117,7 +117,7 @@ function ed(e) {
     eE = (0, ee.F)(eS),
     {
       expiringStatusProfileFeedback: eO
-    } = f.Y.useExperiment({
+    } = g.Y.useExperiment({
       location: "UserProfileAccountPopout"
     }, {
       autoTrackExposure: false
@@ -128,7 +128,7 @@ function ed(e) {
     eI = (0, ee.I)(eC),
     ew = (0, Y.g)(n),
     ek = (0, j.Z)({
-      analyticsLocations: ef
+      analyticsLocations: eg
     }),
     eR = (0, W.I5)(t),
     eA = (0, h.p)({
@@ -150,15 +150,15 @@ function ed(e) {
   let eG = e => {
       null == n || n(), (0, T.openUserProfileModal)(ec({
         customStatusPrompt: eU,
-        sourceAnalyticsLocations: ef
+        sourceAnalyticsLocations: eg
       }, eb, e))
     },
     ez = (0, O.Z)({
       location: "UserProfileAccountPopout"
     }),
-    eH = (null == eg ? true : eg.widgets) != null && eg.widgets.length > 0,
+    eH = (null == ef ? true : ef.widgets) != null && ef.widgets.length > 0,
     eV = eH ? [] : [s.z.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE],
-    [eW, eK] = (0, g.US)(eV),
+    [eW, eK] = (0, f.US)(eV),
     eq = eW === s.z.WIDGETS_USER_PROFILE_ACCOUNT_POPOUT_NEW_BADGE,
     eY = r.useCallback(() => {
       eK(ea.L.USER_DISMISS), n()
@@ -167,41 +167,41 @@ function ed(e) {
       eh && null != ep || (ek(), eY())
     }, [ek, eY, eh, ep]),
     eX = eh && null != ep,
-    eQ = (0, q.K)(ep, ef, eq, n, eY),
+    eQ = (0, q.K)(ep, eg, eq, n, eY),
     e$ = (0, C.k)({
       location: "UserProfileAccountPopout"
     });
   return (0, a.jsx)(m.Gt, {
-    value: ef,
+    value: eg,
     children: (0, a.jsx)(y.Mt, {
       value: eb,
       openedAt: em,
-      fetchStartedAt: null == eg ? true : eg.fetchStartedAt,
-      fetchEndedAt: null == eg ? true : eg.fetchEndedAt,
-      isLoaded: null == eg ? true : eg.isLoaded,
+      fetchStartedAt: null == ef ? true : ef.fetchStartedAt,
+      fetchEndedAt: null == ef ? true : ef.fetchEndedAt,
+      isLoaded: null == ef ? true : ef.isLoaded,
       children: (0, a.jsxs)(c.VqE, {
         ref: ev,
         "aria-label": t.username,
         className: eo.popoutContainer,
         "data-layer": "base",
         children: [(0, a.jsx)($.Z, {
-          displayProfile: eg,
+          displayProfile: ef,
           handleOpenUserProfileModal: eG,
           height: ej
         }), (0, a.jsxs)(D.Z, {
           className: eo.themeContainer,
           user: t,
-          displayProfile: eg,
+          displayProfile: ef,
           themeType: el.l.POPOUT,
           children: [(0, a.jsxs)("div", {
             className: es.header,
             children: [(0, a.jsx)(I.Z, {
               user: t,
-              displayProfile: eg,
+              displayProfile: ef,
               themeType: el.l.POPOUT
             }), (0, a.jsx)(N.Z, {
               user: t,
-              displayProfile: eg,
+              displayProfile: ef,
               themeType: el.l.POPOUT,
               onOpenProfile: ex ? true : eG
             }), (0, a.jsx)(L.Z, {
@@ -221,9 +221,9 @@ function ed(e) {
               className: eo.username,
               nickname: V.ZP.getName(ep, null, t),
               onOpenProfile: ex ? true : eG,
-              pronouns: null == eg ? true : eg.pronouns,
+              pronouns: null == ef ? true : ef.pronouns,
               tags: (0, a.jsx)(P.Z, {
-                displayProfile: eg,
+                displayProfile: ef,
                 themeType: el.l.POPOUT,
                 onClose: n,
                 shouldOpenBadgeTooltip: null != eu ? e => e === eu : true,
@@ -239,11 +239,11 @@ function ed(e) {
               })
             }), (0, a.jsx)(F.Z, {
               user: t,
-              bio: null == eg ? true : eg.bio,
+              bio: null == ef ? true : ef.bio,
               hidePersonalInformation: eT,
               onClose: n
             }), ez && eH && (0, a.jsx)(U.Z, {
-              widgets: eg.widgets,
+              widgets: ef.widgets,
               onClick: () => {
                 n(), eG({
                   section: er.oh.WIDGETS
@@ -390,8 +390,8 @@ function ed(e) {
                 })
               })]
             })]
-          }), (null == eg ? true : eg.profileEffect) != null && !eL.current && (0, a.jsx)(_.Z, {
-            skuId: eg.profileEffect.skuId,
+          }), (null == ef ? true : ef.profileEffect) != null && !eL.current && (0, a.jsx)(_.Z, {
+            skuId: ef.profileEffect.skuId,
             isHovering: ey
           }), !eX && e$ ? (0, a.jsx)(J.Z, {
             targetElementRef: eM,

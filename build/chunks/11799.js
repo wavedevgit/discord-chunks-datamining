@@ -1,4 +1,4 @@
-/** Chunk was on 36925 **/
+/** Chunk was on 30437 **/
 /** chunk id: 11799, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   y6: () => p
@@ -29,10 +29,10 @@ let p = () => {
     } = e, g = (0, i.e7)([u.Z], () => u.Z.shouldReload()), m = r.useRef(false), [b, _] = r.useState(false), {
       initialized: O,
       loading: y,
-      items: j,
-      hasMore: v,
-      cursor: C,
-      errored: x
+      items: v,
+      hasMore: j,
+      cursor: x,
+      errored: C
     } = (0, i.cj)([c.Z], () => ({
       initialized: c.Z.initialized,
       loading: c.Z.loading,
@@ -52,8 +52,8 @@ let p = () => {
     }, [t, O]);
     let I = (0, o.Z)();
     r.useEffect(() => () => {
-      p ? !I() && (x || j.length > 100) && (0, s.jF)() : n && j.length > 100 && (0, s.jF)()
-    }, [n, j, p, I, x]), r.useEffect(() => {
+      p ? !I() && (C || v.length > 100) && (0, s.jF)() : n && v.length > 100 && (0, s.jF)()
+    }, [n, v, p, I, C]), r.useEffect(() => {
       let e = g && t;
       (!O || e) && (0, s.jk)({
         limit: null != h ? h : f ? 8 : 20,
@@ -63,8 +63,8 @@ let p = () => {
       })
     }, [O, g, t, f, E, S, h]);
     let P = r.useCallback(async e => {
-      !m.current && O && v && null != C && (e || !x) && (m.current = true, _(true), await (0, s.jk)({
-        after: C,
+      !m.current && O && j && null != x && (e || !C) && (m.current = true, _(true), await (0, s.jk)({
+        after: x,
         with_mentions: f,
         roles_filter: E,
         everyone_filter: S,
@@ -72,18 +72,18 @@ let p = () => {
       }, () => {
         m.current = false
       }), _(false))
-    }, [O, v, C, x, f, E, S]);
+    }, [O, j, x, C, f, E, S]);
     return {
       initialized: O,
       loading: y,
-      items: j,
-      hasMore: v,
+      items: v,
+      hasMore: j,
       loadMore: P,
       loadingMore: b,
       setReadNotifItemToAcked: e => {
         e.acked || (e.acked = true)
       },
-      errored: x
+      errored: C
     }
   })({
     isFocused: true,

@@ -1,7 +1,8 @@
-/** Chunk was on 66548 **/
-/** chunk id: 575219, original params: e,l,t (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 575219, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  v: () => u
+  v: () => c
 }), require("./35282.js");
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -10,25 +11,25 @@ var Chunk442837 = require("./442837.js"),
   Chunk974674 = require("./974674.jsx"),
   Chunk231338 = require("./231338.js"),
   Chunk268685 = require("./268685.js");
-let u = {
+let c = {
   title: "Avatar",
   stories: [{
     id: "avatar",
     name: "Avatar",
     component: function(e) {
       let {
-        size: l = s.EF.SIZE_48,
-        status: t
+        size: t = l.EF.SIZE_48,
+        status: n
       } = e, {
-        user: r
-      } = (0, n.cj)([o.default], () => ({
-        user: o.default.getCurrentUser()
-      })), u = Number(l.split("_")[1]);
-      return (0, a.jsx)(i.qE, {
-        src: null == r ? true : r.getAvatarURL(true, u),
-        size: l,
+        user: s
+      } = (0, i.cj)([a.default], () => ({
+        user: a.default.getCurrentUser()
+      })), c = Number(t.split("_")[1]);
+      return (0, r.jsx)(o.qE, {
+        src: null == s ? true : s.getAvatarURL(true, c),
+        size: t,
         "aria-label": "Sample User",
-        status: t
+        status: n
       })
     },
     controls: {
@@ -38,7 +39,7 @@ let u = {
         defaultValue: Chunk268685.EF.SIZE_48,
         options: Object.keys(Chunk268685.EF).map(e => ({
           label: e,
-          value: s.EF[e]
+          value: l.EF[e]
         }))
       },
       status: {
@@ -50,7 +51,7 @@ let u = {
           value: null
         }].concat(Object.keys(Chunk231338.Sk).map(e => ({
           label: e,
-          value: r.Sk[e]
+          value: s.Sk[e]
         })))
       }
     }

@@ -1,36 +1,37 @@
-/** Chunk was on 66548 **/
-/** chunk id: 239090, original params: e,l,t (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 239090, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  R: () => i
+  R: () => o
 }), require("./953529.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk793030 = require("./793030.js");
-let i = {
+let o = {
   title: "Switch",
   stories: [{
     id: "baseSwitch",
     name: "BaseSwitch",
     component: function(e) {
       let {
-        disabled: l,
-        hasIcon: t,
-        label: i,
-        description: r,
-        helperText: s,
-        required: u,
-        errorMessage: d
-      } = e, [c, b] = n.useState(false);
-      return (0, a.jsx)(o.kcT, {
-        label: i,
-        description: r,
-        helperText: s,
-        required: u,
-        errorMessage: d,
-        hasIcon: t,
-        onChange: b,
-        disabled: l,
-        checked: c
+        disabled: t,
+        hasIcon: n,
+        label: o,
+        description: s,
+        helperText: l,
+        required: c,
+        errorMessage: u
+      } = e, [d, f] = i.useState(false);
+      return (0, r.jsx)(a.kcT, {
+        label: o,
+        description: s,
+        helperText: l,
+        required: c,
+        errorMessage: u,
+        hasIcon: n,
+        onChange: f,
+        disabled: t,
+        checked: d
       })
     },
     controls: {

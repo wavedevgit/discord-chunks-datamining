@@ -1,15 +1,15 @@
-/** Chunk was on 96604 **/
+/** Chunk was on 28855 **/
 /** chunk id: 905551, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   EY: () => _,
   NE: () => j,
   UM: () => b,
   WX: () => S,
-  WY: () => f,
+  WY: () => g,
   _k: () => C,
   ce: () => h,
   hz: () => v,
-  iX: () => g,
+  iX: () => f,
   mF: () => x,
   s9: () => y
 }), require("./642613.js");
@@ -83,7 +83,7 @@ function x(e) {
   })
 }
 
-function g(e, t) {
+function f(e, t) {
   return a.tn.get({
     url: p.ANM.PRODUCT_FOR_SKU(t),
     rejectWithError: true,
@@ -102,7 +102,7 @@ function g(e, t) {
   })
 }
 
-function f(e, t) {
+function g(e, t) {
   if (e) {
     var n;
     i.default.track(p.rMx.GAME_SERVER_HOSTING_THIRD_PARTY_CONSENT_ACCEPTED, {

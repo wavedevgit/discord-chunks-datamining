@@ -546,8 +546,8 @@ let eZ = Chunk647438.memo(function() {
     case Chunk981631.kVF.DETECTED_OFF_PLATFORM_PREMIUM_PERK:
       if (null == Chunk100527.metadata) return null;
       let {
-        skuId: e2, applicationId: e3
-      } = Chunk100527.metadata, e4 = Chunk55563.Z.get(e2), e8 = Chunk812206.Z.getApplication(e3);
+        skuId: e3, applicationId: e2
+      } = Chunk100527.metadata, e4 = Chunk55563.Z.get(e3), e8 = Chunk812206.Z.getApplication(e2);
       if (null == e4 || null == e8) return null;
       let e5 = {
         page: Chunk981631.ZY5.IN_APP

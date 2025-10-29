@@ -1,7 +1,8 @@
-/** Chunk was on 33622 **/
-/** chunk id: 86151, original params: e,a,t (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 86151, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Y: () => m
+  Y: () => f
 });
 var Chunk364226 = require("./364226.js"),
   Chunk566242 = require("./566242.js"),
@@ -13,20 +14,20 @@ var Chunk364226 = require("./364226.js"),
   Chunk828363 = require("./828363.js"),
   Chunk82163 = require("./82163.js");
 
-function m(e) {
+function f(e) {
   switch (e) {
     case "buddhist":
-      return new(0, u.M);
+      return new(0, r.M);
     case "ethiopic":
-      return new(0, n.Wt);
+      return new(0, i.Wt);
     case "ethioaa":
-      return new(0, n.zY);
+      return new(0, i.zY);
     case "coptic":
-      return new(0, n.Y0);
+      return new(0, i.Y0);
     case "hebrew":
-      return new(0, i.H);
+      return new(0, o.H);
     case "indian":
-      return new(0, o.t);
+      return new(0, s.t);
     case "islamic-civil":
       return new(0, l.$0);
     case "islamic-tbla":
@@ -34,12 +35,12 @@ function m(e) {
     case "islamic-umalqura":
       return new(0, l.lw);
     case "japanese":
-      return new(0, s.o);
+      return new(0, c.o);
     case "persian":
-      return new(0, d.r);
+      return new(0, u.r);
     case "roc":
-      return new(0, c.t);
+      return new(0, d.t);
     default:
-      return new(0, r.IQ)
+      return new(0, a.IQ)
   }
 }

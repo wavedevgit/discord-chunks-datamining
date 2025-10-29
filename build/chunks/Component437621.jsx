@@ -1,4 +1,4 @@
-/** Chunk was on 36925 **/
+/** Chunk was on 30437 **/
 /** chunk id: 437621, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => G
@@ -103,10 +103,10 @@ class M extends Chunk98597.ZP {
       isFavoriteSuggestion: _,
       subtitle: O,
       forceTopLevelThread: y,
-      embeddedApps: j,
-      resolvedUnreadSetting: v,
-      withGuildIcon: C,
-      enableActivities: x
+      embeddedApps: v,
+      resolvedUnreadSetting: j,
+      withGuildIcon: x,
+      enableActivities: C
     } = this.props, E = Chunk9156 && null != Chunk430824 && Chunk430824.length > 0, S = (0, Chunk873696.D)(Chunk665906), I = (0, Chunk951288.jsx)("li", {
       className: o()(this.getClassName(), {
         [Chunk55940.disabled]: this.isDisabled(),
@@ -243,7 +243,7 @@ class M extends Chunk98597.ZP {
           channel: t
         }))
       });
-      let i = j.Z.getGuild(t.getGuildId());
+      let i = v.Z.getGuild(t.getGuildId());
       null != i && (0, u.jW)(e, async () => {
         let {
           default: e
@@ -269,26 +269,26 @@ function G(e) {
   } = e, {
     hasActiveThreads: c,
     hasMoreActiveThreads: u
-  } = (0, O.JQ)(t), d = (0, a.cj)([C.ZP], () => ({
-    unread: C.ZP.hasUnread(t.id),
-    ackMessageId: C.ZP.ackMessageId(t.id),
-    isLowImportanceMention: C.ZP.getIsMentionLowImportance(t.id)
-  })), g = (0, a.e7)([x.ZP], () => x.ZP.resolveUnreadSetting(t)), m = (0, a.cj)([y.Z, v.Z], () => {
+  } = (0, O.JQ)(t), d = (0, a.cj)([x.ZP], () => ({
+    unread: x.ZP.hasUnread(t.id),
+    ackMessageId: x.ZP.ackMessageId(t.id),
+    isLowImportanceMention: x.ZP.getIsMentionLowImportance(t.id)
+  })), g = (0, a.e7)([C.ZP], () => C.ZP.resolveUnreadSetting(t)), m = (0, a.cj)([y.Z, j.Z], () => {
     let e = y.Z.getChannel(t.parent_id);
     return {
-      canManageChannel: v.Z.can(T.Plq.MANAGE_CHANNELS, t),
-      canReorderChannel: true !== i && (n.id === w._ || (null != e ? v.Z.can(T.Plq.MANAGE_CHANNELS, e) : v.Z.can(T.Plq.MANAGE_CHANNELS, n)))
+      canManageChannel: j.Z.can(T.Plq.MANAGE_CHANNELS, t),
+      canReorderChannel: true !== i && (n.id === w._ || (null != e ? j.Z.can(T.Plq.MANAGE_CHANNELS, e) : j.Z.can(T.Plq.MANAGE_CHANNELS, n)))
     }
-  }), j = (0, a.e7)([_.Z], () => _.Z.shouldIndicateNewChannel(n.id, t.id)), {
+  }), v = (0, a.e7)([_.Z], () => _.Z.shouldIndicateNewChannel(n.id, t.id)), {
     needSubscriptionToAccess: E,
     isSubscriptionGated: S
-  } = (0, b.Z)(t.id), I = (0, a.e7)([x.ZP], () => x.ZP.isFavorite(n.id, t.id)), N = (0, h.$5)(t), Z = (0, p.NX)(t.id), A = (0, P.Z)({
+  } = (0, b.Z)(t.id), I = (0, a.e7)([C.ZP], () => C.ZP.isFavorite(n.id, t.id)), N = (0, h.$5)(t), Z = (0, p.NX)(t.id), A = (0, P.Z)({
     channel: t,
     isChannelCollapsed: false,
     isChannelSelected: s,
     isSubscriptionGated: S,
     needSubscriptionToAccess: E,
-    isNewChannel: j,
+    isNewChannel: v,
     muted: o,
     enableActivities: Z,
     resolvedUnreadSetting: g
@@ -298,7 +298,7 @@ function G(e) {
     hasMoreActiveThreads: u,
     isSubscriptionGated: S,
     needSubscriptionToAccess: E,
-    isNewChannel: j && e.canBeNewChannel,
+    isNewChannel: v && e.canBeNewChannel,
     isFavoriteSuggestion: l && !I,
     channelIsContentGated: N,
     channelInfo: A,

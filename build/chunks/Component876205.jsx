@@ -24,7 +24,7 @@ function u(e) {
     value: t,
     action: n,
     shouldShow: a
-  } = e, u = (0, r.e7)([s.ZP], () => s.ZP.getKeybindForAction(n, false, true));
+  } = e, u = (0, r.e7)([o.ZP], () => o.ZP.getKeybindForAction(n, false, true));
   if (null == u || !a) return null;
   let p = l.BB(u.shortcut),
     h = d[n],
@@ -35,7 +35,7 @@ function u(e) {
       className: c.keybindIcon,
       size: "xs",
       color: "currentColor"
-    }), (0, i.jsx)(o.Text, {
+    }), (0, i.jsx)(s.Text, {
       variant: "text-xxs/semibold",
       className: c.keybindIndicatorText,
       children: p

@@ -1,7 +1,8 @@
-/** Chunk was on 66548 **/
-/** chunk id: 348000, original params: e,l,t (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 348000, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  D: () => b
+  D: () => h
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -10,54 +11,63 @@ var Chunk951288 = require("./951288.js"),
   Chunk28664 = require("./28664.jsx"),
   Chunk518797 = require("./518797.js");
 
+function c(e, t, n) {
+  return t in e ? Object.defineProperty(e, t, {
+    value: n,
+    enumerable: true,
+    configurable: true,
+    writable: true
+  }) : e[t] = n, e
+}
+
 function u(e) {
-  for (var l = 1; l < arguments.length; l++) {
-    var t = null != arguments[l] ? arguments[l] : {},
-      a = Object.keys(t);
-    "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(t).filter(function(e) {
-      return Object.getOwnPropertyDescriptor(t, e).enumerable
-    }))), a.forEach(function(l) {
-      var a;
-      a = t[l], l in e ? Object.defineProperty(e, l, {
-        value: a,
-        enumerable: true,
-        configurable: true,
-        writable: true
-      }) : e[l] = a
+  for (var t = 1; t < arguments.length; t++) {
+    var n = null != arguments[t] ? arguments[t] : {},
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      return Object.getOwnPropertyDescriptor(n, e).enumerable
+    }))), r.forEach(function(t) {
+      c(e, t, n[t])
     })
   }
   return e
 }
 
-function d(e, l) {
-  return l = null != l ? l : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(l)) : (function(e, l) {
-    var t = Object.keys(e);
-    if (Object.getOwnPropertySymbols) {
-      var a = Object.getOwnPropertySymbols(e);
-      t.push.apply(t, a)
-    }
-    return t
-  })(Object(l)).forEach(function(t) {
-    Object.defineProperty(e, t, Object.getOwnPropertyDescriptor(l, t))
-  }), e
-}
-
-function c(e, l) {
-  if (null == e) return {};
-  var t, a, n = function(e, l) {
-    if (null == e) return {};
-    var t, a, n = {},
-      o = Object.keys(e);
-    for (a = 0; a < o.length; a++) t = o[a], l.indexOf(t) >= 0 || (n[t] = e[t]);
-    return n
-  }(e, l);
+function d(e, t) {
+  var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
-    var o = Object.getOwnPropertySymbols(e);
-    for (a = 0; a < o.length; a++) t = o[a], !(l.indexOf(t) >= 0) && Object.prototype.propertyIsEnumerable.call(e, t) && (n[t] = e[t])
+    var r = Object.getOwnPropertySymbols(e);
+    t && (r = r.filter(function(t) {
+      return Object.getOwnPropertyDescriptor(e, t).enumerable
+    })), n.push.apply(n, r)
   }
   return n
 }
-let b = {
+
+function f(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : d(Object(t)).forEach(function(n) {
+    Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
+  }), e
+}
+
+function _(e, t) {
+  if (null == e) return {};
+  var n, r, i = p(e, t);
+  if (Object.getOwnPropertySymbols) {
+    var a = Object.getOwnPropertySymbols(e);
+    for (r = 0; r < a.length; r++) n = a[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
+  }
+  return i
+}
+
+function p(e, t) {
+  if (null == e) return {};
+  var n, r, i = {},
+    a = Object.keys(e);
+  for (r = 0; r < a.length; r++) n = a[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+  return i
+}
+let h = {
   title: "Tooltip",
   stories: [{
     name: "Tooltip",
@@ -65,31 +75,31 @@ let b = {
     docs: "https://design.discord.tools/components/web/tooltip",
     component: function(e) {
       var {
-        text: l,
-        position: t,
-        align: i,
-        caretAlign: s,
-        customOffset: b,
-        delay: p,
-        spacing: y
-      } = e, m = c(e, ["text", "position", "align", "caretAlign", "customOffset", "delay", "spacing"]);
-      let f = n.useMemo(() => {
-        if ("center" !== s && null != s) return "custom" === s ? {
-          align: s,
-          customOffset: b
+        text: t,
+        position: n,
+        align: o,
+        caretAlign: l,
+        customOffset: c,
+        delay: d,
+        spacing: p
+      } = e, h = _(e, ["text", "position", "align", "caretAlign", "customOffset", "delay", "spacing"]);
+      let m = i.useMemo(() => {
+        if ("center" !== l && null != l) return "custom" === l ? {
+          align: l,
+          customOffset: c
         } : {
-          align: s
+          align: l
         }
-      }, [s, b]);
-      return (0, a.jsx)(r.u, d(u({
-        text: l,
-        position: t,
-        align: i,
-        delay: p,
-        spacing: y,
-        caretConfig: f
-      }, m), {
-        children: (0, a.jsx)(o.Button, {
+      }, [l, c]);
+      return (0, r.jsx)(s.u, f(u({
+        text: t,
+        position: n,
+        align: o,
+        delay: d,
+        spacing: p,
+        caretConfig: m
+      }, h), {
+        children: (0, r.jsx)(a.Button, {
           variant: "primary",
           text: "Hover me"
         })
@@ -185,39 +195,39 @@ let b = {
     docs: "https://design.discord.tools/components/web/tooltip",
     component: function(e) {
       var {
-        title: l,
-        body: t,
-        showAsset: r,
-        position: b,
-        align: p,
-        caretAlign: y,
-        customOffset: m,
-        delay: f,
-        spacing: v
-      } = e, h = c(e, ["title", "body", "showAsset", "position", "align", "caretAlign", "customOffset", "delay", "spacing"]);
-      let x = n.useMemo(() => {
-          if ("center" !== y && null != y) return "custom" === y ? {
-            align: y,
-            customOffset: m
+        title: t,
+        body: n,
+        showAsset: s,
+        position: c,
+        align: d,
+        caretAlign: p,
+        customOffset: h,
+        delay: m,
+        spacing: g
+      } = e, E = _(e, ["title", "body", "showAsset", "position", "align", "caretAlign", "customOffset", "delay", "spacing"]);
+      let b = i.useMemo(() => {
+          if ("center" !== p && null != p) return "custom" === p ? {
+            align: p,
+            customOffset: h
           } : {
-            align: y
+            align: p
           }
-        }, [y, m]),
-        g = n.useMemo(() => r ? (0, a.jsx)("img", {
-          src: s.Z,
+        }, [p, h]),
+        y = i.useMemo(() => s ? (0, r.jsx)("img", {
+          src: l.Z,
           alt: "Graphic"
-        }) : true, [r]);
-      return (0, a.jsx)(i.i, d(u({
-        title: l,
-        body: t,
-        position: b,
-        align: p,
-        delay: f,
-        spacing: v,
-        caretConfig: x,
-        asset: g
-      }, h), {
-        children: (0, a.jsx)(o.Button, {
+        }) : true, [s]);
+      return (0, r.jsx)(o.i, f(u({
+        title: t,
+        body: n,
+        position: c,
+        align: d,
+        delay: m,
+        spacing: g,
+        caretConfig: b,
+        asset: y
+      }, E), {
+        children: (0, r.jsx)(a.Button, {
           variant: "primary",
           text: "Hover me (rich)"
         })

@@ -1,4 +1,4 @@
-/** Chunk was on 96604 **/
+/** Chunk was on 28855 **/
 /** chunk id: 176038, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   _Y: () => O,
@@ -95,7 +95,7 @@ function O() {
 function T() {
   Chunk647438.useEffect(() => {
     var e, t, n, a, r;
-    let f = Chunk594174.default.getCurrentUser(),
+    let g = Chunk594174.default.getCurrentUser(),
       b = Chunk695346.L1.getSetting(),
       v = Chunk1870.Z.purchases,
       j = (0, Chunk884697.Ad)(Chunk469115),

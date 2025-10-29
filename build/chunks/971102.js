@@ -1,9 +1,10 @@
-/** Chunk was on 33622 **/
-/** chunk id: 971102, original params: e,a,t (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 971102, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => u
+  Z: () => r
 });
-var u = {};
-u = {
+var r = {};
+r = {
   Empty: `\u{641}\u{627}\u{631}\u{63A}`
 }

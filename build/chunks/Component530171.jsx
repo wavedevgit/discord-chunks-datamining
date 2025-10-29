@@ -5,7 +5,7 @@ require.d(exports, {
 });
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk657707 = require("./657707.js"),
   Chunk206403 = require("./206403.jsx"),
   Chunk481446 = require("./481446.js");
@@ -14,7 +14,7 @@ function s(e) {
   let {
     title: t,
     subtitle: n,
-    isOpen: o,
+    isOpen: l,
     setIsOpen: s,
     compact: u = false,
     children: d
@@ -22,14 +22,14 @@ function s(e) {
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(a.x, {
       title: t,
-      description: o ? true : n,
+      description: l ? true : n,
       secondaryTrailingElement: (0, r.jsx)(i.sXD, {
-        className: l()(c.icon, {
-          [c.iconClosed]: !o
+        className: o()(c.icon, {
+          [c.iconClosed]: !l
         })
       }),
-      onClick: () => s(!o),
+      onClick: () => s(!l),
       compact: u
-    }), o && d]
+    }), l && d]
   })
 }

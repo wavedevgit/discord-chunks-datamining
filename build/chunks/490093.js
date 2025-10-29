@@ -1,19 +1,21 @@
-/** Chunk was on 75215 **/
-/** chunk id: 490093, original params: e,t,r (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 490093, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  D2: () => n,
-  nL: () => o
+  D2: () => r,
+  nL: () => a
 });
-let n = 3e3,
-  l = {
+let r = 3e3,
+  i = {
     EARN: .25,
     SPEND: .3
   },
-  o = (e, t) => {
-    let r = e > 0,
-      n = t * l[r ? "EARN" : "SPEND"];
+  a = (e, t) => {
+    let n = e > 0,
+      r = t * i[n ? "EARN" : "SPEND"],
+      a = n ? t - r : 0;
     return {
-      duration: n,
-      delay: r ? t - n : 0
+      duration: r,
+      delay: a
     }
   }

@@ -1,7 +1,8 @@
-/** Chunk was on 66548 **/
-/** chunk id: 778218, original params: e,l,t (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 778218, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  _: () => u
+  _: () => c
 }), require("./953529.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -9,61 +10,61 @@ var Chunk951288 = require("./951288.js"),
   Chunk793030 = require("./793030.js"),
   Chunk159691 = require("./159691.js"),
   Chunk481060 = require("./481060.js");
-let u = {
+let c = {
   title: "Checkbox",
   stories: [{
     id: "checkbox",
     name: "Checkbox",
     component: function(e) {
       let {
-        label: l,
-        description: t,
-        disabled: u,
-        labelType: d,
-        showIcons: c
-      } = e, [b, p] = n.useState(false), y = n.useCallback(() => {
-        p(true)
-      }, []), m = n.useCallback(() => {
-        p(false)
-      }, []), f = n.useCallback(() => {
-        p(e => !e)
+        label: t,
+        description: n,
+        disabled: c,
+        labelType: u,
+        showIcons: d
+      } = e, [f, _] = i.useState(false), p = i.useCallback(() => {
+        _(true)
+      }, []), h = i.useCallback(() => {
+        _(false)
+      }, []), m = i.useCallback(() => {
+        _(e => !e)
       }, []);
-      return (0, a.jsxs)(i.Kqy, {
+      return (0, r.jsxs)(o.Kqy, {
         direction: "vertical",
         gap: "md",
-        children: [(0, a.jsx)(s.Checkbox, {
-          checked: b,
-          onChange: e => p(e),
-          disabled: u,
-          label: l,
-          description: null != t || "" === t ? t : true,
+        children: [(0, r.jsx)(l.Checkbox, {
+          checked: f,
+          onChange: e => _(e),
+          disabled: c,
+          label: t,
+          description: null != n || "" === n ? n : true,
           value: "checkbox-value",
-          labelType: d,
-          leadingIcon: c ? o.d3s : true
-        }), (0, a.jsxs)(i.xvT, {
+          labelType: u,
+          leadingIcon: d ? a.d3s : true
+        }), (0, r.jsxs)(o.xvT, {
           variant: "text-sm/normal",
-          children: ["Current state: ", b ? "Checked" : "Unchecked"]
-        }), (0, a.jsxs)(i.Kqy, {
+          children: ["Current state: ", f ? "Checked" : "Unchecked"]
+        }), (0, r.jsxs)(o.Kqy, {
           direction: "horizontal",
           gap: "sm",
-          children: [(0, a.jsx)(r.zxk, {
+          children: [(0, r.jsx)(s.zxk, {
             variant: "secondary",
             size: "sm",
             text: "Check",
-            onClick: y,
-            disabled: u
-          }), (0, a.jsx)(r.zxk, {
+            onClick: p,
+            disabled: c
+          }), (0, r.jsx)(s.zxk, {
             variant: "secondary",
             size: "sm",
             text: "Uncheck",
-            onClick: m,
-            disabled: u
-          }), (0, a.jsx)(r.zxk, {
+            onClick: h,
+            disabled: c
+          }), (0, r.jsx)(s.zxk, {
             variant: "primary",
             size: "sm",
             text: "Toggle",
-            onClick: f,
-            disabled: u
+            onClick: m,
+            disabled: c
           })]
         })]
       })

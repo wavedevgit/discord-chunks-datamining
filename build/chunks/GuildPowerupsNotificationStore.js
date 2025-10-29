@@ -1,15 +1,16 @@
-/** Chunk was on 36925 **/
+/** Chunk was on 30437 **/
 /** chunk id: 608949, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => f
 }), require("./388685.js");
 var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk430824 = require("./430824.js"),
+  Chunk60482 = require("./60482.js"),
   Chunk905128 = require("./905128.js"),
   Chunk19394 = require("./19394.js");
 
-function c(e, t, n) {
+function u(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -17,56 +18,56 @@ function c(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let u = {};
-class d extends(r = Chunk442837.ZP.PersistedStore) {
+let d = {};
+class p extends(r = Chunk442837.ZP.PersistedStore) {
   getState() {
-    return u
+    return d
   }
   initialize(e) {
-    this.waitFor(a.Z, o.Z), null != e && (u = e)
+    this.waitFor(a.Z, s.Z, o.Z), null != e && (d = e)
   }
   getNotificationStateForGuild(e) {
-    return u[e]
+    return d[e]
   }
 }
-c(d, "displayName", "GuildPowerupsNotificationStore"), c(d, "persistKey", "GuildPowerupsNotificationStore"), c(d, "migrations", [e => (Object.entries(e).forEach(t => {
+u(p, "displayName", "GuildPowerupsNotificationStore"), u(p, "persistKey", "GuildPowerupsNotificationStore"), u(p, "migrations", [e => (Object.entries(e).forEach(t => {
   let [n, r] = t;
   e[n] = r
 }), e)]);
-let p = new d(Chunk570140.Z, {
+let f = new p(Chunk570140.Z, {
   GUILD_POWERUPS_ACK_NOTIFICATION: function(e) {
-    var t, n, r, i, l, d;
+    var t, n, r, i, l, p, f, h;
     let {
-      guildId: p
-    } = e, f = null != (n = null == (t = o.Z.getGuild(p)) ? true : t.premiumSubscriberCount) ? n : 0, h = a.Z.getStateForGuild(p), g = (0, s.h)(Object.values(null != (r = null == h ? true : h.unlockedPowerups) ? r : {}));
-    l = function(e) {
+      guildId: g
+    } = e, m = null != (r = null == (t = o.Z.getGuild(g)) ? true : t.premiumSubscriberCount) ? r : 0, b = s.Z.getStateForGuild(g), _ = a.Z.getStateForGuild(g), O = (0, c.h)([...Object.values(null != (i = null == b ? true : b.unlockedPowerups) ? i : {}), ...Object.values(null != (l = null == _ ? true : _.entitlements) ? l : {})]);
+    f = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);
         "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
         }))), r.forEach(function(t) {
-          c(e, t, n[t])
+          u(e, t, n[t])
         })
       }
       return e
-    }({}, u), d = d = {
-      [p]: {
-        lastSeenWarningNotification: null != (i = g[g.length - 1]) ? i : Date.now(),
-        lastBoostCount: f
+    }({}, d), h = h = {
+      [g]: {
+        lastSeenWarningNotification: new Date(null != (p = null == (n = O[O.length - 1]) ? true : n.ends_at) ? p : Date.now()).getTime(),
+        lastBoostCount: m
       }
-    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(l, Object.getOwnPropertyDescriptors(d)) : (function(e, t) {
+    }, Object.getOwnPropertyDescriptors ? Object.defineProperties(f, Object.getOwnPropertyDescriptors(h)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
         var r = Object.getOwnPropertySymbols(e);
         n.push.apply(n, r)
       }
       return n
-    })(Object(d)).forEach(function(e) {
-      Object.defineProperty(l, e, Object.getOwnPropertyDescriptor(d, e))
-    }), u = l
+    })(Object(h)).forEach(function(e) {
+      Object.defineProperty(f, e, Object.getOwnPropertyDescriptor(h, e))
+    }), d = f
   },
   GUILD_POWERUPS_RESET_NOTIFICATIONS: function() {
-    u = {}
+    d = {}
   }
 })

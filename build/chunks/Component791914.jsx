@@ -1,7 +1,7 @@
-/** Chunk was on 36925 **/
+/** Chunk was on 30437 **/
 /** chunk id: 791914, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => j
+  Z: () => v
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -23,7 +23,7 @@ var Chunk399606 = require("./399606.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk407067 = require("./407067.js");
 
-function j(e) {
+function v(e) {
   let {
     tab: t,
     setTab: n,
@@ -34,13 +34,13 @@ function j(e) {
     inInbox: _
   } = d.Z.useExperiment({
     location: "RecentsPopout"
-  }), j = (0, f.Us)({
+  }), v = (0, f.Us)({
     location: "RecentsHeader"
   }), {
-    enabled: C
+    enabled: x
   } = c.Z.useExperiment({
     location: "RecentsHeader"
-  }), x = (0, i.e7)([s.Z], () => s.Z.getUnseenInviteCount()), E = (0, i.e7)([p.Z], () => p.Z.getOverdueMessageReminderCount());
+  }), C = (0, i.e7)([s.Z], () => s.Z.getUnseenInviteCount()), E = (0, i.e7)([p.Z], () => p.Z.getOverdueMessageReminderCount());
   return (0, r.jsxs)(u.h4, {
     className: y.header,
     children: [(0, r.jsxs)("div", {
@@ -61,7 +61,7 @@ function j(e) {
           enabled: false
         },
         "aria-label": O.intl.string(O.t["8k+6QY"]),
-        children: [(0, r.jsx)(v, {
+        children: [(0, r.jsx)(j, {
           tab: t
         }), (0, r.jsx)(g.Z, {
           closePopout: m
@@ -92,11 +92,11 @@ function j(e) {
           id: l.X.MENTIONS,
           className: y.tab,
           children: O.intl.string(O.t.GRZF96)
-        }), C ? (0, r.jsxs)(o.njP.Item, {
+        }), x ? (0, r.jsxs)(o.njP.Item, {
           "aria-label": "game_invites",
           id: l.X.GAME_INVITES,
           className: y.tab,
-          children: [O.intl.string(O.t.apq3cU), x > 0 ? (0, r.jsx)(o.fWl, {
+          children: [O.intl.string(O.t.apq3cU), C > 0 ? (0, r.jsx)(o.fWl, {
             color: a.Z.STATUS_DANGER,
             className: y.iconBadge
           }) : null]
@@ -107,7 +107,7 @@ function j(e) {
           children: 0 === E ? O.intl.string(O.t["2pAkDA"]) : O.intl.formatToPlainString(O.t.I4fryG, {
             count: E
           })
-        }) : null, j ? (0, r.jsx)(o.njP.Item, {
+        }) : null, v ? (0, r.jsx)(o.njP.Item, {
           "aria-label": "scheduled",
           id: l.X.SCHEDULED,
           className: y.tab,
@@ -118,7 +118,7 @@ function j(e) {
   })
 }
 
-function v(e) {
+function j(e) {
   let {
     tab: t
   } = e;

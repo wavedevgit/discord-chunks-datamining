@@ -1,4 +1,4 @@
-/** Chunk was on 96604 **/
+/** Chunk was on 28855 **/
 /** chunk id: 220141, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -35,12 +35,12 @@ function p(e) {
       return r
     }(e, ["handleOpenUserProfileModal", "markAsDismissed"]);
   let {
-    trackUserProfileEditAction: g
-  } = (0, i.KZ)(), f = c.rR.filter(e => o.Ki.includes(e)), b = r.useCallback(() => {
-    h(d.L.TAKE_ACTION), g({
+    trackUserProfileEditAction: f
+  } = (0, i.KZ)(), g = c.rR.filter(e => o.Ki.includes(e)), b = r.useCallback(() => {
+    h(d.L.TAKE_ACTION), f({
       action: "PRESS_ADD_WIDGET"
     }), p()
-  }, [p, h, g]);
+  }, [p, h, f]);
   return (0, a.jsx)(l.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
@@ -66,11 +66,11 @@ function p(e) {
     children: (0, a.jsx)("ul", {
       "aria-label": u.intl.string(u.t["+EIBSA"]),
       className: m.options,
-      children: f.map(e => (0, a.jsx)(s.Z, {
+      children: g.map(e => (0, a.jsx)(s.Z, {
         widgetType: e,
         size: "medium",
         onAddWidget: b,
-        trackUserProfileEditAction: g
+        trackUserProfileEditAction: f
       }, e))
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {

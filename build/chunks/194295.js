@@ -23,7 +23,7 @@ function p(e, t, n, p) {
     g = t.getAvatarURL(e.guild_id, 80),
     {
       trackView: m,
-      trackClick: _
+      trackClick: y
     } = (0, a.R)(d.n0.ActivityInvite, {
       notif_type: d.n0.ActivityInvite,
       notif_user_id: t.id,
@@ -34,7 +34,7 @@ function p(e, t, n, p) {
     icon: g,
     title: h,
     body: f,
-    hint: e => (0, s.QR)(e, (0, a.P)(), u.t.Odi54y),
+    hint: e => (0, o.QR)(e, (0, a.P)(), u.t.Odi54y),
     confirmText: u.intl.string(u.t["fgP/wX"]),
     cancelText: u.intl.string(u.t["tpXzJ+"]),
     onNotificationShow: () => {
@@ -46,17 +46,17 @@ function p(e, t, n, p) {
         type: c.mFx.JOIN,
         activity: p,
         location: l.default.isInstanceLocked() ? c.Sbl.LOCKED_OVERLAY : c.Sbl.UNLOCKED_OVERLAY
-      }), _("join"), r.Z.updateNotificationStatus(n)
+      }), y("join"), r.Z.updateNotificationStatus(n)
     },
     onCancelClick: (t, n) => {
-      (0, o.ack)(e.id, {
+      (0, s.ack)(e.id, {
         section: c.jXE.OVERLAY,
         object: c.qAy.ACK_DECLINE_REQUEST_TO_JOIN,
         objectType: c.AnalyticsObjectTypes.ACK_SEMI_AUTOMATIC
-      }, true, true), r.Z.updateNotificationStatus(n), _("decline")
+      }, true, true), r.Z.updateNotificationStatus(n), y("decline")
     },
     onDismissClick: () => {
-      _("dismiss")
+      y("dismiss")
     }
   }
 }

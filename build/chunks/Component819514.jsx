@@ -1,4 +1,4 @@
-/** Chunk was on 36925 **/
+/** Chunk was on 30437 **/
 /** chunk id: 819514, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Z
@@ -221,14 +221,14 @@ let Z = {
   confirmPin: function(e, t) {
     (0, c.h7j)(n => {
       let i, l = (0, p.F6)(e, _.default, b.Z);
-      return i = e.isPrivate() ? C.intl.string(C.t.hMRngA) : C.intl.formatToPlainString(C.t["3IRluI"], {
+      return i = e.isPrivate() ? x.intl.string(x.t.hMRngA) : x.intl.formatToPlainString(x.t["3IRluI"], {
         channelName: l
       }), (0, r.jsx)(h.Z.Provider, {
         value: e.guild_id,
         children: (0, r.jsxs)(c.ConfirmModal, P(I({
-          header: C.intl.string(C.t.bKMaZX),
-          confirmText: C.intl.string(C.t.rOQ5BX),
-          cancelText: C.intl.string(C.t["ETE/oC"]),
+          header: x.intl.string(x.t.bKMaZX),
+          confirmText: x.intl.string(x.t.rOQ5BX),
+          cancelText: x.intl.string(x.t["ETE/oC"]),
           confirmButtonColor: s.zx.Colors.BRAND,
           onConfirm: () => u.Z.pinMessage(e, t.id)
         }, n), {
@@ -238,7 +238,7 @@ let Z = {
             children: i
           }), (0, r.jsx)("div", {
             className: E.message,
-            children: (0, r.jsx)(j.Z, {
+            children: (0, r.jsx)(v.Z, {
               channel: e,
               message: t,
               animateAvatar: false,
@@ -253,24 +253,24 @@ let Z = {
     (0, c.h7j)(n => (0, r.jsx)(h.Z.Provider, {
       value: e.guild_id,
       children: (0, r.jsxs)(c.ConfirmModal, P(I({
-        header: C.intl.string(C.t.CFF2vL),
-        confirmText: C.intl.string(C.t.lAU5jB),
-        cancelText: C.intl.string(C.t["ETE/oC"]),
+        header: x.intl.string(x.t.CFF2vL),
+        confirmText: x.intl.string(x.t.lAU5jB),
+        cancelText: x.intl.string(x.t["ETE/oC"]),
         onConfirm: () => u.Z.unpinMessage(e, t.id)
       }, n), {
         children: [(0, r.jsx)(c.Text, {
           variant: "text-md/normal",
           className: E.spacing,
-          children: C.intl.string(C.t.NjEPp7)
+          children: x.intl.string(x.t.NjEPp7)
         }), (0, r.jsx)("div", {
           className: o()(E.message, E.spacing),
-          children: (0, r.jsx)(j.Z, {
+          children: (0, r.jsx)(v.Z, {
             channel: e,
             message: t,
             disableInteraction: true
           })
         }), (0, r.jsx)(f.Z, {
-          children: C.intl.format(C.t.oCVB3Y, {})
+          children: x.intl.format(x.t.oCVB3Y, {})
         })]
       }))
     }))
@@ -287,16 +287,16 @@ let Z = {
   },
   confirmEdit: function(e, t, n) {
     (0, c.h7j)(i => (0, r.jsx)(c.ConfirmModal, P(I({
-      header: C.intl.string(C.t.aIz1oV),
-      confirmText: C.intl.string(C.t["cY+Oob"]),
-      cancelText: C.intl.string(C.t["ETE/oC"]),
+      header: x.intl.string(x.t.aIz1oV),
+      confirmText: x.intl.string(x.t["cY+Oob"]),
+      cancelText: x.intl.string(x.t["ETE/oC"]),
       confirmButtonColor: s.zx.Colors.BRAND,
       onConfirm: () => d.Z.editMessage(e, t, n)
     }, i), {
       children: (0, r.jsx)(c.Text, {
         variant: "text-md/normal",
         className: E.spacing,
-        children: C.intl.string(C.t.grBcM8)
+        children: x.intl.string(x.t.grBcM8)
       })
     })))
   }

@@ -1,4 +1,4 @@
-/** Chunk was on 36925 **/
+/** Chunk was on 30437 **/
 /** chunk id: 179809, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Z
@@ -96,14 +96,14 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
       config: {
         duration: P
       }
-    }), es = i.useCallback(e => null == n ? true : n(H, e), [n, H]), ec = (0, r.jsxs)(v.H, {
+    }), es = i.useCallback(e => null == n ? true : n(H, e), [n, H]), ec = (0, r.jsxs)(j.H, {
       children: [(0, r.jsx)(_.Z, {
         disabled: $ || s,
         hovered: K,
         selected: l,
         unread: T,
         className: I.pill
-      }), (0, r.jsx)(C.Z, {
+      }), (0, r.jsx)(x.Z, {
         text: er,
         disabled: R,
         selected: l,
@@ -117,7 +117,7 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
             [I.wobble]: !$ && q && !s
           }),
           "data-dnd-name": er,
-          children: $ ? (0, r.jsx)(j.Z, {
+          children: $ ? (0, r.jsx)(v.Z, {
             isFolder: true
           }) : (0, r.jsx)(O.Z, {
             folderNode: t,
@@ -143,7 +143,7 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
         targetNode: t,
         onDragOverChanged: et
       }) : null]
-    }), eu = null != t.color ? t.color : x.Wyy, ed = eu === x.Wyy ? true : (0, u.Rf)(eu);
+    }), eu = null != t.color ? t.color : C.Wyy, ed = eu === C.Wyy ? true : (0, u.Rf)(eu);
     return (0, r.jsxs)("div", {
       ref: es,
       className: o()(S.folderGroup, {

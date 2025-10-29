@@ -1,4 +1,4 @@
-/** Chunk was on 96604 **/
+/** Chunk was on 28855 **/
 /** chunk id: 260950, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -145,7 +145,7 @@ function S() {
           variant: "heading-lg/semibold",
           className: Chunk451429.header,
           children: "Previous Subscriptions"
-        }), T.map(e => (0, a.jsx)(f.Z, {
+        }), T.map(e => (0, a.jsx)(g.Z, {
           subscription: e,
           onUpdated: O
         }, e.id))]

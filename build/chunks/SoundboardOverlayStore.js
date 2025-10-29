@@ -3,16 +3,16 @@
 require.d(exports, {
   Z: () => d
 });
-var r, i, Chunk442837 = require("./442837.js"),
+var r, a, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js");
-let o = false,
+let l = false,
   s = false;
-class c extends(i = Chunk442837.ZP.Store) {
+class c extends(a = Chunk442837.ZP.Store) {
   get keepOpen() {
     return s
   }
   get enabled() {
-    return o
+    return l
   }
 }(r = "displayName") in c ? Object.defineProperty(c, r, {
   value: "SoundboardOverlayStore",
@@ -22,7 +22,7 @@ class c extends(i = Chunk442837.ZP.Store) {
 }) : c[r] = "SoundboardOverlayStore";
 let d = new c(Chunk570140.Z, {
   SOUNDBOARD_SET_OVERLAY_ENABLED: function(e) {
-    if (o = e.enabled, e.enabled) {
+    if (l = e.enabled, e.enabled) {
       var t;
       s = null != (t = e.keepOpen) && t
     }

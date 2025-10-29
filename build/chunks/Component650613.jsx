@@ -1,7 +1,7 @@
-/** Chunk was on 96604 **/
+/** Chunk was on 28855 **/
 /** chunk id: 650613, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => g
 }), require("./388685.js"), require("./361932.js"), require("./187205.js");
 var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk206583 = require("./206583.js"),
   Chunk281327 = require("./281327.js");
 
-function g(e) {
+function f(e) {
   let {
     id: t
   } = e, n = (0, r.e7)([s.default], () => s.default.getUser(t));
@@ -36,7 +36,7 @@ function g(e) {
   })
 }
 
-function f() {
+function g() {
   var e;
   let t = (0, Chunk442837.e7)([Chunk146282.Z], () => Chunk146282.Z.getFeed(Chunk206583.YN.GLOBAL_FEED)),
     n = (0, Chunk442837.e7)([Chunk146282.Z], () => Chunk146282.Z.getFilters()),
@@ -56,7 +56,7 @@ function f() {
     let r = i[(0, c.T)(t)];
     return (0, a.jsxs)("li", {
       className: x.locatorEntry,
-      children: [(0, a.jsx)(g, {
+      children: [(0, a.jsx)(f, {
         type: t.author_type,
         id: t.author_id
       }), !r && (0, a.jsx)(l.Text, {

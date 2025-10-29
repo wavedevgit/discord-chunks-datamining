@@ -1,4 +1,4 @@
-/** Chunk was on 36925 **/
+/** Chunk was on 30437 **/
 /** chunk id: 880419, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -26,11 +26,11 @@ function b(e) {
     compact: _,
     iconSize: O,
     size: y,
-    grow: j,
-    className: v,
-    onError: C
+    grow: v,
+    className: j,
+    onError: x
   } = e, {
-    onActivate: x,
+    onActivate: C,
     isLoading: E,
     error: S,
     onShowDeactivate: I
@@ -58,8 +58,8 @@ function b(e) {
     } : null
   }(P, b);
   return i.useEffect(() => {
-    null == C || C(S)
-  }, [S, C]), (0, r.jsx)(a.i_, {
+    null == x || x(S)
+  }, [S, x]), (0, r.jsx)(a.i_, {
     body: null != (t = null == w ? true : w.body) ? t : "",
     title: null != (n = null == w ? true : w.title) ? n : true,
     shouldShow: null != w,
@@ -67,9 +67,9 @@ function b(e) {
     "aria-label": null != T ? T : N ? g.intl.string(h.default.TZsu1U) : true,
     children: (0, r.jsx)("div", {
       className: o()(m.secondaryButton, {
-        [m.buttonWrapper]: j,
-        [m.noGrow]: !j
-      }, v),
+        [m.buttonWrapper]: v,
+        [m.noGrow]: !v
+      }, j),
       children: (() => {
         let {
           text: e,
@@ -125,9 +125,9 @@ function b(e) {
           variant: N ? "secondary" : "primary",
           "aria-label": g.intl.string(N ? h.default.TZsu1U : h.default.gSxlHf),
           disabled: Z,
-          onClick: N ? I : x,
+          onClick: N ? I : C,
           loading: E,
-          fullWidth: j,
+          fullWidth: v,
           size: null != y ? y : _ ? "md" : true,
           text: e,
           minWidth: 0

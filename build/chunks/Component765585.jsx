@@ -1,4 +1,4 @@
-/** Chunk was on 36925 **/
+/** Chunk was on 30437 **/
 /** chunk id: 765585, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -25,10 +25,10 @@ let b = Chunk647438.forwardRef(function(e, t) {
     headerClassName: _,
     contentClassName: O,
     tryItText: y,
-    dismissText: j,
-    onTryFeature: v,
-    onClose: C,
-    className: x,
+    dismissText: v,
+    onTryFeature: j,
+    onClose: x,
+    className: C,
     inlineArt: E = false,
     isPremiumFeature: S = false,
     shouldUseHorizontalButtons: I = false,
@@ -65,7 +65,7 @@ let b = Chunk647438.forwardRef(function(e, t) {
   }, [F, z, H, R]), i.useEffect(() => {
     (0, p.kk)(N)
   }, [N]), (0, r.jsx)("div", {
-    className: x,
+    className: C,
     ref: t,
     children: (0, r.jsxs)("div", {
       className: o()(m.content, O, {
@@ -112,12 +112,12 @@ let b = Chunk647438.forwardRef(function(e, t) {
       }), (0, r.jsx)("div", {
         ref: H,
         className: F || !I ? m.buttonContainerVertical : m.buttonContainerHorizontal,
-        children: null != v ? (0, r.jsxs)(r.Fragment, {
+        children: null != j ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(a.zx, {
             className: m.button,
             size: B,
             onClick: e => {
-              null == C || C(e), v(e), W(h.L.PRIMARY)
+              null == x || x(e), j(e), W(h.L.PRIMARY)
             },
             color: null != U ? U : S || A ? a.zx.Colors.BRAND_INVERTED : a.zx.Colors.WHITE,
             children: null != y ? y : g.intl.string(g.t.IHf1RN)
@@ -125,17 +125,17 @@ let b = Chunk647438.forwardRef(function(e, t) {
             className: m.button,
             size: B,
             onClick: e => {
-              null == C || C(e), W(h.L.DISMISS)
+              null == x || x(e), W(h.L.DISMISS)
             },
             color: S || A ? a.zx.Colors.WHITE : a.zx.Colors.BRAND,
             look: S || A ? a.zx.Looks.LINK : a.zx.Looks.FILLED,
-            children: null != j ? j : g.intl.string(g.t.om7Ovn)
+            children: null != v ? v : g.intl.string(g.t.om7Ovn)
           })]
         }) : (0, r.jsx)(a.zx, {
           className: m.button,
           size: a.zx.Sizes.MAX,
           onClick: e => {
-            null == C || C(e), W(h.L.PRIMARY)
+            null == x || x(e), W(h.L.PRIMARY)
           },
           color: a.zx.Colors.WHITE,
           children: g.intl.string(g.t.HU2IR5)

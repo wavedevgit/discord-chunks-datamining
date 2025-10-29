@@ -1,7 +1,8 @@
-/** Chunk was on 66548 **/
-/** chunk id: 379864, original params: e,l,t (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 379864, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  J: () => c
+  J: () => d
 }), require("./953529.js"), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -11,47 +12,47 @@ var Chunk951288 = require("./951288.js"),
   Chunk125455 = require("./125455.jsx"),
   Chunk966649 = require("./966649.jsx"),
   Chunk755721 = require("./755721.js");
-let c = {
+let d = {
   title: "VoidRadioGroup",
   stories: [{
     id: "voidradiogroup",
     name: "VoidRadioGroup",
     component: function(e) {
       let {
-        optionCount: l,
-        size: t,
-        disabled: c,
-        orientation: b,
-        radioPosition: p,
-        withTransparentBackground: y,
-        label: m,
-        description: f,
-        withDescriptions: v,
-        withIcons: h
-      } = e, [x, g] = n.useState("option1"), O = [o.d, i.A, r.x, s.e, u.U], j = Array.from({
-        length: l
-      }, (e, l) => ({
-        value: "option".concat(l + 1),
-        name: "Option ".concat(l + 1),
-        description: v ? "This is a description for option ".concat(l + 1) : true,
-        icon: h ? O[l % O.length] : true
+        optionCount: t,
+        size: n,
+        disabled: d,
+        orientation: f,
+        radioPosition: _,
+        withTransparentBackground: p,
+        label: h,
+        description: m,
+        withDescriptions: g,
+        withIcons: E
+      } = e, [b, y] = i.useState("option1"), O = [a.d, o.A, s.x, l.e, c.U], v = Array.from({
+        length: t
+      }, (e, t) => ({
+        value: "option".concat(t + 1),
+        name: "Option ".concat(t + 1),
+        description: g ? "This is a description for option ".concat(t + 1) : true,
+        icon: E ? O[t % O.length] : true
       }));
-      return (0, a.jsx)(d.Gu, {
-        value: x,
+      return (0, r.jsx)(u.Gu, {
+        value: b,
         onChange: e => {
           let {
-            value: l
+            value: t
           } = e;
-          return g(l)
+          return y(t)
         },
-        options: j,
-        size: t,
-        disabled: c,
-        orientation: b,
-        radioPosition: p,
-        withTransparentBackground: y,
-        label: m,
-        description: f
+        options: v,
+        size: n,
+        disabled: d,
+        orientation: f,
+        radioPosition: _,
+        withTransparentBackground: p,
+        label: h,
+        description: m
       })
     },
     controls: {

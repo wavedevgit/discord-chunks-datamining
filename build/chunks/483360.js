@@ -8,7 +8,7 @@ require.d(exports, {
   gF: () => eE,
   k1: () => eK,
   mB: () => eY
-}), require("./388685.js"), require("./35282.js"), require("./413496.js"), require("./433524.js"), require("./539854.js"), require("./642613.js"), require("./290780.js"), require("./704826.js"), require("./583741.js");
+}), require("./388685.js"), require("./35282.js"), require("./413496.js"), require("./433524.js"), require("./539854.js"), require("./642613.js"), require("./290780.js"), require("./704826.js"), require("./583741.js"), require("./361932.js"), require("./187205.js");
 var Chunk658722 = require("./658722.js"),
   a = require.n(Chunk658722),
   Chunk392711 = require("./392711.js"),
@@ -302,11 +302,11 @@ function e1(e, t, n) {
   return e === t || (!!n || !!(0, L.Km)(t)) && (e === B.sH ? (0, L.r8)(t) || (0, L.bw)(t) : e === B.Zb && (0, L.bw)(t))
 }
 
-function e2(e, t) {
+function e3(e, t) {
   return e === B.sH && (0, L.bw)(t)
 }
 
-function e3(e) {
+function e2(e) {
   let t = arguments.length > 1 && true !== arguments[1] && arguments[1],
     n = e.split(" ").filter(e => "" !== e || t).map(e => {
       let t = e.toLocaleLowerCase();
@@ -543,7 +543,7 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
           allowSnowflake: p,
           includeAllThreads: h
         } = e,
-        m = e3(n, c),
+        m = e2(n, c),
         g = e0(l);
       t = null != r ? s()(B.ZP.getChannels(r)[l]).map(e => e.channel).concat(g ? h ? j.Z.getAllThreadsForGuild(r) : P.Z.computeAllActiveJoinedThreads(r) : []).value() : s()(j.Z.loadAllGuildAndPrivateChannelsFromDisk()).values().concat(g ? P.Z.computeAllActiveJoinedThreads() : []).value();
       let E = {},
@@ -565,7 +565,7 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
             }
             c = Math.min(ev - eS, c)
           }
-          0 !== c && !(t.length > 1) && (1 !== t.length || t[0].isFullMatch || s) && (e2(l, e.type) && (c = Math.max(c - eA, eS / 2)), e.isThread() && (e.isActiveThread() || (c -= eC), w.Z.hasJoined(e.id) || (c -= eN)), c = Math.min(c + Math.min(null != (O = U.Z.getScoreWithoutFetchingLatest(e.id)) ? O : 0 / y, 1) * eR, c >= ev ? ey : ev), b.push({
+          0 !== c && !(t.length > 1) && (1 !== t.length || t[0].isFullMatch || s) && (e3(l, e.type) && (c = Math.max(c - eA, eS / 2)), e.isThread() && (e.isActiveThread() || (c -= eC), w.Z.hasJoined(e.id) || (c -= eN)), c = Math.min(c + Math.min(null != (O = U.Z.getScoreWithoutFetchingLatest(e.id)) ? O : 0 / y, 1) * eR, c >= ev ? ey : ev), b.push({
             type: (0, L.bw)(e.type) ? ec.h8.VOICE_CHANNEL : ec.h8.TEXT_CHANNEL,
             record: e,
             score: eY(c, d[e.id]),
@@ -700,48 +700,66 @@ let e7 = (0, Chunk251625.oH)((e, t, n) => {
     queryInAppNavigations(e) {
       let {
         query: t,
-        limit: n = 10,
-        fuzzy: r = true
-      } = e, i = t.toLocaleLowerCase(), a = {
-        exactQuery: RegExp("^".concat(ei.Z.escape(i)), "i"),
-        containQuery: RegExp(ei.Z.escape(i), "i"),
-        queryLower: i
-      }, s = es.ZP.getUserIsStaff(), l = {
+        limit: r = 10,
+        fuzzy: i = true
+      } = e, a = t.toLocaleLowerCase(), s = {
+        exactQuery: RegExp("^".concat(ei.Z.escape(a)), "i"),
+        containQuery: RegExp(ei.Z.escape(a), "i"),
+        queryLower: a
+      }, l = es.ZP.getUserIsStaff(), c = {
         [d.Ky.SHOP]: [ef.intl.string(ef.t.pWG4ze)],
         [d.Ky.NITRO_HOME]: [ef.intl.string(ef.t.Ipxkog)],
         [d.Ky.QUEST_HOME]: [ef.intl.string(ef.t.JALI2K)],
         [d.Ky.APPS_HOME]: [ef.intl.string(ef.t.PHjkRE), ef.intl.string(ef.t.AKcFUj)]
-      };
-      s && (l[d.Ky.REVENUE_PLAYGROUND] = [ef.intl.string(ef.t["4Y3g1V"]), ef.intl.string(ef.t.OZJY67)]);
-      let c = [];
-      for (let e in l) {
+      }, u = [];
+      for (let e in c) {
         let t = d.Ky[e],
-          n = l[t];
+          n = c[t];
         if (null != n)
           for (let e of n) {
             let n = e.toLocaleLowerCase(),
-              i = eq(n, a, r);
-            i > 0 && c.push({
+              r = eq(n, s, i);
+            r > 0 && u.push({
               type: ec.h8.IN_APP_NAVIGATION,
               record: d.FL.fromType(t),
-              score: eY(i),
+              score: eY(r),
               comparator: n,
               sortable: n
             })
           }
       }
+      if (l) {
+        let {
+          componentPlaygroundConfigs: e
+        } = n(653592);
+        for (let t of e.flatMap(e => e.collections))
+          for (let e of ["".concat(t.name, " Playground"), "".concat(t.name, " Components"), "".concat(t.name, " Design System"), t.name]) {
+            let n = e.toLocaleLowerCase(),
+              r = eq(n, s, i);
+            if (r > 0) {
+              u.push({
+                type: ec.h8.IN_APP_NAVIGATION,
+                record: d.FL.fromType(d.Ky.PLAYGROUND, true, "".concat(t.name, " Playground"), t.id),
+                score: eY(r),
+                comparator: n,
+                sortable: n
+              });
+              break
+            }
+          }
+      }
       return eg.getState().options.forEach(e => {
         var t;
         let n = [e.title].concat(e.searchableTitles),
-          i = null != (t = (0, o.max)(n.map(e => eY(eq(e.toLocaleLowerCase(), a, r))))) ? t : 0;
-        i > 0 && c.push({
+          r = null != (t = (0, o.max)(n.map(e => eY(eq(e.toLocaleLowerCase(), s, i))))) ? t : 0;
+        r > 0 && u.push({
           type: ec.h8.IN_APP_NAVIGATION,
           record: d.FL.fromType(d.Ky.SETTINGS, e.path, e.title),
-          score: i,
+          score: r,
           comparator: e.title.toLocaleLowerCase(),
           sortable: e.title.toLocaleLowerCase()
         })
-      }), c.sort(f.Z), c.length > n && (c.length = n), c
+      }), u.sort(f.Z), u.length > r && (u.length = r), u
     },
     querySKUs(e) {
       let {

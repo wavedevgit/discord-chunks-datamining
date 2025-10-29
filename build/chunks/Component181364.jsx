@@ -14,25 +14,25 @@ var Chunk13245 = require("./13245.js"),
   Chunk312839 = require("./312839.js"),
   Chunk987650 = require("./987650.js"),
   Chunk388032 = require("./388032.jsx");
-let p = e => (0, o.QR)(e, (0, c.P)(), u.t["z8/sgJ"]);
+let p = e => (0, s.QR)(e, (0, c.P)(), u.t["z8/sgJ"]);
 
 function h(e) {
   let {
     type: t
   } = e, {
-    icon: o,
+    icon: s,
     title: h,
     body: f,
     hint: g,
     notifType: m
   } = function(e, t) {
     if (t.type === d.nc.NEWS) {
-      var n, i, r, o, s, l, a, c;
+      var n, i, r, s, o, l, a, c;
       return {
-        icon: null != (s = null == (n = t.news) ? true : n.icon) ? s : e.icon,
+        icon: null != (o = null == (n = t.news) ? true : n.icon) ? o : e.icon,
         title: null != (l = null == (i = t.news) ? true : i.title) ? l : e.title,
         body: null != (a = null == (r = t.news) ? true : r.body) ? a : e.body,
-        hint: null != (c = null == (o = t.news) ? true : o.hint) ? c : e.hint,
+        hint: null != (c = null == (s = t.news) ? true : s.hint) ? c : e.hint,
         notifType: null != t.news ? d.n0.NewsNudge : e.notifType
       }
     }
@@ -44,13 +44,13 @@ function h(e) {
     hint: p,
     notifType: d.n0.WelcomeNudge
   }, e), {
-    trackView: _,
-    trackClick: y
+    trackView: y,
+    trackClick: _
   } = (0, c.R)(m, {
     notif_type: m
   });
   return {
-    icon: o,
+    icon: s,
     title: h,
     body: f,
     hint: g,
@@ -62,13 +62,13 @@ function h(e) {
       children: u.intl.string(u.t["9MyuT0"])
     }),
     onNotificationShow: () => {
-      _()
+      y()
     },
     onNotificationClick: (e, n) => {
-      y("unlock"), t === d.nc.NEWS && r.Z.updateNotificationStatus(n), s.default.isOverlayOOPEnabledForPid((0, a.getPID)()) ? r.Z.setInputLocked(false, (0, a.getPID)()) : l.default.isInstanceLocked() && r.Z.setInstanceLocked(false)
+      _("unlock"), t === d.nc.NEWS && r.Z.updateNotificationStatus(n), o.default.isOverlayOOPEnabledForPid((0, a.getPID)()) ? r.Z.setInputLocked(false, (0, a.getPID)()) : l.default.isInstanceLocked() && r.Z.setInstanceLocked(false)
     },
     onDismissClick: () => {
-      y("dismiss")
+      _("dismiss")
     }
   }
 }

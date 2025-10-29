@@ -1,4 +1,4 @@
-/** Chunk was on 36925 **/
+/** Chunk was on 30437 **/
 /** chunk id: 305248, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -36,7 +36,7 @@ function y(e) {
       id: t
     } = e;
     return h.Z.getChannel(t)
-  }).filter(g.lm).sort((e, t) => m.default.compare(e.id, t.id)).value(), [t.oldestReadMessageId, n.guild_id, n.id]), j = i.useCallback((e, t) => {
+  }).filter(g.lm).sort((e, t) => m.default.compare(e.id, t.id)).value(), [t.oldestReadMessageId, n.guild_id, n.id]), v = i.useCallback((e, t) => {
     (0, f.ok)(e, t, _.on.INBOX)
   }, []);
   return i.useEffect(() => {
@@ -54,7 +54,7 @@ function y(e) {
       children: (0, r.jsx)(u.ZP, {
         className: O.forumPost,
         threadId: e.id,
-        goToThread: j
+        goToThread: v
       })
     }, e.id))
   })

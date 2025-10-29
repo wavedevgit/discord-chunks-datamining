@@ -1,10 +1,11 @@
-/** Chunk was on 33622 **/
-/** chunk id: 815812, original params: e,a,t (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 815812, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => u
+  Z: () => r
 });
-var u = {};
-u = {
+var r = {};
+r = {
   calendar: `Kalend\u{101}rs`,
   day: "diena",
   dayPeriod: `priek\u{161}pusdien\u{101}/p\u{113}cpusdien\u{101}`,

@@ -2,7 +2,7 @@
 /** chunk id: 998033, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => y
+  Z: () => _
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -21,18 +21,18 @@ var Chunk13245 = require("./13245.js"),
   Chunk987650 = require("./987650.js"),
   Chunk388032 = require("./388032.jsx");
 
-function y(e, t, n, y) {
-  var b;
+function _(e, t, n, _) {
+  var O;
   let {
-    icon: v,
-    title: O,
-    body: x
-  } = (0, o.Xi)(e, t, n), {
-    trackView: E,
+    icon: b,
+    title: v,
+    body: E
+  } = (0, s.Xi)(e, t, n), {
+    trackView: x,
     trackClick: S
   } = (0, f.R)(m.n0.TextChat, {
     notif_type: m.n0.TextChat,
-    notif_user_id: null == (b = t.author) ? true : b.id,
+    notif_user_id: null == (O = t.author) ? true : O.id,
     message_id: t.id,
     message_type: t.type,
     guild_id: e.guild_id,
@@ -40,21 +40,21 @@ function y(e, t, n, y) {
     channel_type: e.type
   });
   return {
-    icon: v,
-    title: O,
-    body: x,
+    icon: b,
+    title: v,
+    body: E,
     renderFooter: e => e ? (0, i.jsx)("div", {
       style: {
         textAlign: "center"
       },
-      children: _.intl.string(_.t["+MJm3w"])
+      children: y.intl.string(y.t["+MJm3w"])
     }) : null,
     maxBodyLines: 2,
     onNotificationShow: () => {
-      y && (0, a.GN)(c.Ay, c.yk), E()
+      _ && (0, a.GN)(c.Ay, c.yk), x()
     },
     onNotificationClick: () => {
-      if (s.default.isOverlayOOPEnabledForPid((0, h.getPID)())) {
+      if (o.default.isOverlayOOPEnabledForPid((0, h.getPID)())) {
         let n = (0, h.getPID)();
         d.default.isInstanceLocked() ? (S("unlock"), r.Z.setInputLocked(false, n)) : (S("jump"), (0, l.uL)(g.Z5c.CHANNEL(e.guild_id, e.id, t.id)), u.isPlatformEmbedded && p.ZP.focus())
       } else(0, l.uL)(g.Z5c.CHANNEL(e.guild_id, e.id)), S("jump"), d.default.isInstanceLocked() && r.Z.setInstanceLocked(false)

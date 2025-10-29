@@ -18,12 +18,9 @@ let a = (e, t) => {
     case r.VU.PREMIUM_TENURE_24_MONTH:
     case r.VU.PREMIUM_TENURE_36_MONTH:
     case r.VU.PREMIUM_TENURE_60_MONTH:
-      return i.intl.formatToPlainString(i.t.IfYQVC, {
-        years: t / 12
-      });
     case r.VU.PREMIUM_TENURE_72_MONTH:
       return i.intl.formatToPlainString(i.t.IfYQVC, {
-        years: "6+"
+        years: t / 12
       });
     default:
       return null

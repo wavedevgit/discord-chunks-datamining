@@ -1,4 +1,4 @@
-/** Chunk was on 36925 **/
+/** Chunk was on 30437 **/
 /** chunk id: 603274, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => N
@@ -45,8 +45,8 @@ function S(e, t) {
 function I() {
   let e = (0, Chunk442837.Wu)([Chunk853856.Z, Chunk592125.Z], () => Chunk709054.default.keys(Chunk853856.Z.getFavoriteChannels()).map(e => b.Z.getChannel(e)).filter(Chunk823379.lm)),
     t = module.map(e => e.id),
-    n = module.filter(e => e.type === C.d4z.GUILD_VOICE),
-    i = module.filter(e => e.type === C.d4z.GUILD_STAGE_VOICE).map(e => e.id),
+    n = module.filter(e => e.type === x.d4z.GUILD_VOICE),
+    i = module.filter(e => e.type === x.d4z.GUILD_STAGE_VOICE).map(e => e.id),
     l = (0, Chunk442837.Wu)([Chunk938475.ZP], () => a().flatMap(require, e => O.ZP.getVoiceStatesForChannel(e).map(e => {
       let {
         user: t
@@ -64,7 +64,7 @@ function I() {
       for (let t of Chunk120356) e += Chunk565799.Z.getParticipantCount(exports, Chunk501655.pV.AUDIENCE);
       return module
     }),
-    x = (0, Chunk442837.Wu)([Chunk199902.Z], () => Chunk199902.Z.getAllApplicationStreams().filter(e => t.includes(e.channelId)).map(e => e.ownerId), [exports]),
+    C = (0, Chunk442837.Wu)([Chunk199902.Z], () => Chunk199902.Z.getAllApplicationStreams().filter(e => t.includes(e.channelId)).map(e => e.ownerId), [exports]),
     I = (0, Chunk442837.Wu)([Chunk317381.ZP], () => {
       let e = Chunk317381.ZP.getEmbeddedActivitiesByChannel(),
         n = [];
@@ -76,7 +76,7 @@ function I() {
     }, [exports]),
     P = (0, Chunk442837.Wu)([Chunk594174.default], () => I.map(e => _.default.getUser(e)), [I]),
     N = (0, Chunk442837.Wu)([Chunk594174.default], () => Chunk388032.map(e => _.default.getUser(e)), [Chunk388032]),
-    Z = S(Chunk481060.gj8, l.filter(e => !x.includes(e.id) && !I.includes(e.id))),
+    Z = S(Chunk481060.gj8, l.filter(e => !C.includes(e.id) && !I.includes(e.id))),
     T = 0 === Chunk392711.length ? null : (0, Chunk951288.jsxs)("div", {
       className: Chunk132789.row,
       children: [(0, Chunk951288.jsx)(Chunk481060.ewx, {

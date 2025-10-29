@@ -1,4 +1,4 @@
-/** Chunk was on 96604 **/
+/** Chunk was on 28855 **/
 /** chunk id: 789654, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => T,
@@ -292,10 +292,10 @@ function N(e) {
         semanticColorOverrides: r
       })
     })
-  }, [n]), g = Object.keys(C).map(e => ({
+  }, [n]), f = Object.keys(C).map(e => ({
     value: e,
     label: S(e)
-  })), f = Object.keys(u.b).map(e => ({
+  })), g = Object.keys(u.b).map(e => ({
     value: e,
     label: e
   }));
@@ -304,7 +304,7 @@ function N(e) {
       variant: "text-lg/semibold",
       children: "Semantic Tokens"
     }), (0, a.jsx)(p.VcW, {
-      options: g,
+      options: f,
       placeholder: "Search for a semantic token...",
       value: true,
       onChange: c,
@@ -411,7 +411,7 @@ function N(e) {
       variant: "text-lg/semibold",
       children: "Raw Tokens"
     }), (0, a.jsx)(p.VcW, {
-      options: f,
+      options: g,
       placeholder: "Search for a raw color...",
       value: true,
       onChange: d,

@@ -1,4 +1,4 @@
-/** Chunk was on 36925 **/
+/** Chunk was on 30437 **/
 /** chunk id: 222059, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   u: () => M
@@ -56,14 +56,14 @@ function L(e) {
     badge: f,
     link: g,
     showProgressBadge: _
-  } = e, [O, y] = i.useState(false), [j, v] = i.useState(false), [C, x] = i.useState(null), [E, T] = i.useState(0), L = (0, l.Ie)("home"), M = (0, p.oq)().activePanel === p.wh.APP_ICON, k = () => {
-    x(null), T(0), clearTimeout(C)
+  } = e, [O, y] = i.useState(false), [v, j] = i.useState(false), [x, C] = i.useState(null), [E, T] = i.useState(0), L = (0, l.Ie)("home"), M = (0, p.oq)().activePanel === p.wh.APP_ICON, k = () => {
+    C(null), T(0), clearTimeout(x)
   }, G = h.o.useConfig({
     location: "home button"
   }).dmsTab;
   if (null == d) return null;
   let U = G ? A.intl.string(A.t.Ym2Ri6) : A.intl.string(A.t.YUU0RF);
-  j && (U = a.K.get(Z.wli) ? A.intl.string(A.t["nkq1l+"]) : A.intl.string(A.t.Be8Q5E));
+  v && (U = a.K.get(Z.wli) ? A.intl.string(A.t["nkq1l+"]) : A.intl.string(A.t.Be8Q5E));
   let B = null;
   !o && _ && (B = (0, r.jsx)(c.Z, {
     className: R.downloadProgress,
@@ -98,11 +98,11 @@ function L(e) {
         onMouseEnter: () => y(true),
         onMouseLeave: () => y(false),
         onClick: () => {
-          if (!__OVERLAY__ && (null != C && clearTimeout(C), x(setTimeout(k, 500)), T(E + 1), 15 === E)) {
+          if (!__OVERLAY__ && (null != x && clearTimeout(x), C(setTimeout(k, 500)), T(E + 1), 15 === E)) {
             k();
             let e = !a.K.get(Z.wli);
-            a.K.set(Z.wli, e), e && a.K.set(w.O, true), e ? (0, m.GN)("discodo") : (0, m.GN)("user_leave"), v(true), setTimeout(() => {
-              v(false)
+            a.K.set(Z.wli, e), e && a.K.set(w.O, true), e ? (0, m.GN)("discodo") : (0, m.GN)("user_leave"), j(true), setTimeout(() => {
+              j(false)
             }, 1e3)
           }
         },

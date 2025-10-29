@@ -1,4 +1,4 @@
-/** Chunk was on 96604 **/
+/** Chunk was on 28855 **/
 /** chunk id: 297651, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   E: () => m
@@ -19,8 +19,8 @@ function m(e, t) {
     p = (0, r.e7)([s.Z], () => s.Z.getProduct(e)),
     h = (0, d.x)(),
     x = i.ZP.canUseCollectibles(h),
-    g = a.useRef(null),
-    f = a.useCallback(() => {
+    f = a.useRef(null),
+    g = a.useCallback(() => {
       let a = null != p ? (0, c.Vw)(p, x, false) : null,
         r = null != p ? (0, c.eu)(p, x, false) : true;
       l.default.track(u.rMx.COLLECTIBLES_TILE_IMPRESSION, {
@@ -38,12 +38,12 @@ function m(e, t) {
       })
     }, [null == m ? true : m.sessionId, null == m ? true : m.categoryPosition, null == m ? true : m.pageCategory, null == m ? true : m.pageSection, null == m ? true : m.tilePosition, x, t, p, e, n]),
     b = a.useCallback(e => {
-      e ? null === g.current && (g.current = setTimeout(() => {
-        f(), g.current = null
-      }, 1e3)) : null !== g.current && (clearTimeout(g.current), g.current = null)
-    }, [f]);
+      e ? null === f.current && (f.current = setTimeout(() => {
+        g(), f.current = null
+      }, 1e3)) : null !== f.current && (clearTimeout(f.current), f.current = null)
+    }, [g]);
   return a.useEffect(() => () => {
-    null !== g.current && (clearTimeout(g.current), g.current = null)
+    null !== f.current && (clearTimeout(f.current), f.current = null)
   }, []), {
     handleCardVisibilityChange: b
   }

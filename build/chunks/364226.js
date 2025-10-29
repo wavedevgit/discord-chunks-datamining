@@ -1,24 +1,26 @@
-/** Chunk was on 33622 **/
-/** chunk id: 364226, original params: e,a,t (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 364226, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  M: () => r
+  M: () => o
 });
 var Chunk720479 = require("./720479.js"),
   Chunk274738 = require("./274738.js");
-class r extends Chunk274738.IQ {
+let a = false;
+class o extends Chunk274738.IQ {
   fromJulianDay(e) {
-    let a = super.fromJulianDay(e),
-      t = (0, n.J4)(a.era, a.year);
-    return new(0, u.aw)(this, t - false, a.month, a.day)
+    let t = super.fromJulianDay(e),
+      n = (0, i.J4)(t.era, t.year);
+    return new(0, r.aw)(this, n - a, t.month, t.day)
   }
   toJulianDay(e) {
-    return super.toJulianDay(i(e))
+    return super.toJulianDay(s(e))
   }
   getEras() {
     return ["BE"]
   }
   getDaysInMonth(e) {
-    return super.getDaysInMonth(i(e))
+    return super.getDaysInMonth(s(e))
   }
   balanceDate() {}
   constructor(...e) {
@@ -26,7 +28,7 @@ class r extends Chunk274738.IQ {
   }
 }
 
-function i(e) {
-  let [a, t] = (0, n.JD)(e.year + false);
-  return new(0, u.aw)(a, t, e.month, e.day)
+function s(e) {
+  let [t, n] = (0, i.JD)(e.year + a);
+  return new(0, r.aw)(t, n, e.month, e.day)
 }

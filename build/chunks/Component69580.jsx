@@ -278,11 +278,11 @@ function ec(e) {
   let [eP, ew] = i.useState(null), [eD, eL] = i.useState(null), [ex, eM] = i.useState(null), [ek, ej] = i.useState(false), [eU, eG] = i.useState(false), eB = null == eP ? true : eP.guilds, [eZ, eF] = i.useState(null != e_ ? e_ : null), [eV, eH] = i.useState(null != ep ? ep : null), [eY, eW] = i.useState(x.Hn), [eK, ez] = i.useState(false), eq = i.useMemo(() => (null == eP ? true : eP.user) != null ? new w.Z(eP.user) : null, [null == eP ? true : eP.user]), eX = (0, T.Z)(null != (t = null == eP ? true : eP.application) ? t : null), eQ = i.useMemo(() => null == eB ? true : eB.find(e => e.id === eZ), [eB, eZ]), [eJ, e$] = i.useState(null), e0 = i.useMemo(() => {
     var e;
     return null == eC && null == eh && (null != (e = null == ed ? true : ed.length) ? e : 0) === 0 && null == er
-  }, [eC, null == ed ? true : ed.length, er, eh]), [e1, e2] = i.useState(null);
+  }, [eC, null == ed ? true : ed.length, er, eh]), [e1, e3] = i.useState(null);
   i.useEffect(() => {
-    e0 && v.ZP.fetchApplication($).then(e => e2(P.ZP.createFromServer(e)))
+    e0 && v.ZP.fetchApplication($).then(e => e3(P.ZP.createFromServer(e)))
   }, [$, e0]);
-  let e3 = i.useMemo(() => {
+  let e2 = i.useMemo(() => {
       var e, t;
       return null == eJ ? null : null == e1 || null == (t = e1.integrationTypesConfig) || null == (e = t[eJ]) ? true : e.oauth2InstallParams
     }, [null == e1 ? true : e1.integrationTypesConfig, eJ]),
@@ -293,19 +293,19 @@ function ec(e) {
       requestedScopes: e8,
       accountScopes: e5
     } = i.useMemo(() => {
-      let e = e0 ? null == e3 ? true : e3.scopes : ed,
+      let e = e0 ? null == e2 ? true : e2.scopes : ed,
         t = (0, k.K)(null != e ? e : []),
         n = B.Qe.filter(e => t.includes(e));
       return {
         requestedScopes: t,
         accountScopes: n
       }
-    }, [null == e3 ? true : e3.scopes, ed, e0]),
+    }, [null == e2 ? true : e2.scopes, ed, e0]),
     e6 = i.useMemo(() => {
       var e;
-      let t = e0 ? f.vB(null != (e = null == e3 ? true : e3.permissions) ? e : 0) : ef;
+      let t = e0 ? f.vB(null != (e = null == e2 ? true : e2.permissions) ? e : 0) : ef;
       return null != t ? t : x.Hn
-    }, [null == e3 ? true : e3.permissions, ef, e0]),
+    }, [null == e2 ? true : e2.permissions, ef, e0]),
     e7 = i.useRef(false),
     [e9, te] = i.useState(null != eT ? eT : []),
     [tt, tn] = i.useState(null != eT && eT.length > 0);

@@ -1,4 +1,4 @@
-/** Chunk was on 36925 **/
+/** Chunk was on 30437 **/
 /** chunk id: 900085, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => J
@@ -109,7 +109,7 @@ let z = Chunk442837.ZP.connectStores([Chunk306680.ZP, Chunk592125.Z], e => {
       unread: E.ZP.hasUnread(t.id),
       mentions: E.ZP.getMentionCount(t.id),
       isMentionLowImportance: E.ZP.getIsMentionLowImportance(t.id),
-      category: j.Z.getChannel(t.parent_id)
+      category: v.Z.getChannel(t.parent_id)
     }
   })(H),
   W = Chunk442837.ZP.connectStores([Chunk938475.ZP], e => {
@@ -126,14 +126,14 @@ let z = Chunk442837.ZP.connectStores([Chunk306680.ZP, Chunk592125.Z], e => {
       guild: t
     } = e;
     return {
-      unread: v.default.hasUnread(t.id)
+      unread: j.default.hasUnread(t.id)
     }
   })(Chunk415795.ic),
   Y = Chunk442837.ZP.connectStores([Chunk306680.ZP, Chunk158776.Z], e => {
     var t;
     let {
       channel: n
-    } = e, r = null, i = x.Z.getState().statuses;
+    } = e, r = null, i = C.Z.getState().statuses;
     return (null == (t = n.recipients) ? true : t.some(e => i[e] === M.Skl.ONLINE)) && (r = M.Skl.ONLINE), {
       mentions: E.ZP.getMentionCount(n.id),
       status: r
@@ -142,11 +142,11 @@ let z = Chunk442837.ZP.connectStores([Chunk306680.ZP, Chunk592125.Z], e => {
   q = Chunk442837.ZP.connectStores([Chunk592125.Z, Chunk306680.ZP, Chunk158776.Z], e => {
     let {
       user: t
-    } = e, n = j.Z.getDMFromUserId(t.id);
+    } = e, n = v.Z.getDMFromUserId(t.id);
     return {
       mentions: null != n ? E.ZP.getMentionCount(n) : 0,
-      status: x.Z.getStatus(t.id),
-      isMobile: x.Z.isMobileOnline(t.id)
+      status: C.Z.getStatus(t.id),
+      isMobile: C.Z.isMobileOnline(t.id)
     }
   })(Chunk415795.n5);
 
@@ -336,7 +336,7 @@ class Q extends Chunk647438.PureComponent {
         case g.h8.TEXT_CHANNEL:
         case g.h8.VOICE_CHANNEL:
           let r = t.record,
-            l = C.Z.getGuild(r.getGuildId());
+            l = x.Z.getGuild(r.getGuildId());
           if (null == l) return;
           switch (r.type) {
             case M.d4z.GUILD_TEXT:

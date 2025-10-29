@@ -20,9 +20,9 @@ function d(e) {
     showNotice: s,
     handleStoreUpdate: d
   } = (0, c.Cu)(), f = null == t ? true : t.stores;
-  o.useEffect(() => {
+  l.useEffect(() => {
     if (null != f) {
-      let e = new l.Fh(f, () => {
+      let e = new o.Fh(f, () => {
         d(f)
       });
       return e.attach("SettingPanelNotice"), d(f), () => {
@@ -30,7 +30,7 @@ function d(e) {
       }
     }
   }, [f, d]);
-  let b = o.useMemo(() => {
+  let b = l.useMemo(() => {
     if (null == t || !s) return null;
     let {
       element: e
@@ -51,7 +51,7 @@ function d(e) {
 function f(e) {
   let {
     node: t
-  } = e, n = o.useRef(null);
+  } = e, n = l.useRef(null);
   if (1 !== t.layout.length) throw Error("Panels do not currently support multiple panes");
   return (0, r.jsx)(d, {
     notice: t.notice,

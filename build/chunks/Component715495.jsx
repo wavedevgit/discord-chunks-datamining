@@ -1,4 +1,4 @@
-/** Chunk was on 96604 **/
+/** Chunk was on 28855 **/
 /** chunk id: 715495, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -54,18 +54,18 @@ function j(e, t) {
 
 function _() {
   var e, t;
-  let [n, l] = (0, Chunk647438.useState)(false), [o, d] = (0, Chunk647438.useState)(false), [h, g] = (0, Chunk647438.useState)(null), _ = (0, Chunk396821.ZP)(e => e.toolsCache), {
+  let [n, l] = (0, Chunk647438.useState)(false), [o, d] = (0, Chunk647438.useState)(false), [h, f] = (0, Chunk647438.useState)(null), _ = (0, Chunk396821.ZP)(e => e.toolsCache), {
     setToolsCache: O,
     removeToolsCache: T
   } = (0, Chunk396821.L3)(), {
     setImgCache: N
   } = (0, Chunk396821.W_)(), P = (0, Chunk647438.useCallback)(e => {
     let t = _[e];
-    null != t && g({
+    null != t && f({
       src: t.url,
       palette: t.palette,
       preview: true
-    }), g(t => null == t ? {
+    }), f(t => null == t ? {
       src: e,
       palette: m.jD,
       preview: true
@@ -74,7 +74,7 @@ function _() {
       preview: true
     }))
   }, [_]), I = (0, Chunk647438.useCallback)(e => {
-    g(t => null == t ? null : j(v({}, t), {
+    f(t => null == t ? null : j(v({}, t), {
       palette: e,
       preview: true
     }))
@@ -332,17 +332,17 @@ function T(e) {
         className: b.label,
         variant: "text-sm/semibold",
         children: "DEFAULT"
-      }), (0, a.jsx)(g.Z, {
+      }), (0, a.jsx)(f.Z, {
         nameplate: t
       }), (0, a.jsx)(i.Text, {
         className: b.label,
         variant: "text-sm/semibold",
         children: "FOCUSED"
       }), (0, a.jsxs)("div", {
-        children: [(0, a.jsx)(g.Z, {
+        children: [(0, a.jsx)(f.Z, {
           selected: true,
           nameplate: t
-        }), (0, a.jsx)(g.Z, {
+        }), (0, a.jsx)(f.Z, {
           selected: true
         })]
       })]

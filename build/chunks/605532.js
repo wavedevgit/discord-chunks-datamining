@@ -1,5 +1,6 @@
-/** Chunk was on 36182 **/
-/** chunk id: 605532, original params: e,t,n (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 605532, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 module.exports = {
   verticalContainer: "verticalContainer__6132c"
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 36925 **/
+/** Chunk was on 30437 **/
 /** chunk id: 175281, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => A
@@ -43,13 +43,13 @@ let S = {
 
 function I(e) {
   switch (e.keyCode) {
-    case v.yXg.ARROW_UP:
+    case j.yXg.ARROW_UP:
       return "UP";
-    case v.yXg.ARROW_DOWN:
+    case j.yXg.ARROW_DOWN:
       return "DOWN";
-    case v.yXg.ARROW_LEFT:
+    case j.yXg.ARROW_LEFT:
       return "LEFT";
-    case v.yXg.ARROW_RIGHT:
+    case j.yXg.ARROW_RIGHT:
       return "RIGHT";
     default:
       return null
@@ -62,8 +62,8 @@ function N(e) {
     showBackdrop: t
   } = e;
   return (0, r.jsx)("div", {
-    className: o()(x.backdrop, {
-      [x.show]: t
+    className: o()(C.backdrop, {
+      [C.show]: t
     })
   })
 }
@@ -77,29 +77,29 @@ function Z() {
         i = (0, g.UD)(t),
         l = (0, g.U6)(t);
       return (0, r.jsxs)("div", {
-        className: x.keyboardShortcutSection,
+        className: C.keyboardShortcutSection,
         children: [(0, r.jsxs)("div", {
           children: [(0, r.jsx)(h.Heading, {
             variant: "heading-lg/semibold",
             children: i
           }), null != l && (0, r.jsx)(h.Text, {
-            className: x.keybindGroupDescription,
+            className: C.keybindGroupDescription,
             variant: "text-sm/normal",
             children: l
           })]
         }), (0, r.jsx)("div", {
-          className: x.keyboardShortcutListGroup,
+          className: C.keyboardShortcutListGroup,
           children: n.map((e, t) => {
             var n;
             return (null == (n = e.predicate) ? true : n.call(e)) === false ? null : (0, r.jsxs)("div", {
-              className: x.keybindGroup,
+              className: C.keybindGroup,
               children: [(0, r.jsx)(h.Text, {
                 variant: "text-sm/normal",
                 children: e.description
               }), (0, r.jsx)("div", {
                 className: "keybind-shortcuts",
                 children: e.binds.map(e => (0, r.jsx)(h.M2$, {
-                  className: x.keybindKey,
+                  className: C.keybindKey,
                   shortcut: e
                 }, e))
               })]
@@ -239,7 +239,7 @@ class T extends Chunk647438.PureComponent {
         })
       }]
     })), E(this, "handleKeyDown", e => {
-      if (this.lastInputedKeys.push(e.keyCode), this.lastInputedKeys = this.lastInputedKeys.slice(false), this.lastInputedKeys[0] === v.yXg.H && this.lastInputedKeys[1] === v.yXg.H && this.lastInputedKeys[2] === v.yXg.ARROW_RIGHT && this.lastInputedKeys[3] === v.yXg.N && this.lastInputedKeys[4] === v.yXg.K && this.props.activateRagingDemon(), this.props.keyboardModeEnabled) return;
+      if (this.lastInputedKeys.push(e.keyCode), this.lastInputedKeys = this.lastInputedKeys.slice(false), this.lastInputedKeys[0] === j.yXg.H && this.lastInputedKeys[1] === j.yXg.H && this.lastInputedKeys[2] === j.yXg.ARROW_RIGHT && this.lastInputedKeys[3] === j.yXg.N && this.lastInputedKeys[4] === j.yXg.K && this.props.activateRagingDemon(), this.props.keyboardModeEnabled) return;
       let t = I(e);
       null !== t && (e.stopPropagation(), e.preventDefault(), this.arrowDown({
         direction: t
@@ -274,8 +274,8 @@ function w(e) {
     }
   }, [s]), (0, r.jsx)(h.P3F, {
     onClick: u,
-    className: o()(x.arrow, l, {
-      [x.active]: t || s
+    className: o()(C.arrow, l, {
+      [C.active]: t || s
     }),
     children: a
   })
@@ -296,16 +296,16 @@ function A(e) {
     children: [(0, r.jsx)(N, {
       showBackdrop: s
     }), (0, r.jsx)(h.Y0X, {
-      className: o()(x.noBackground, {
-        [x.noShadow]: l
+      className: o()(C.noBackground, {
+        [C.noShadow]: l
       }),
       size: h.CgR.DYNAMIC,
-      "aria-label": C.intl.string(C.t.T9DA2K),
+      "aria-label": x.intl.string(x.t.T9DA2K),
       transitionState: t,
       parentComponent: "KeyboardShortcutsModal",
       children: (0, r.jsx)(f.W, {
         component: "div",
-        children: l ? (0, r.jsx)(j.Z, {
+        children: l ? (0, r.jsx)(v.Z, {
           handleDemonClose: function() {
             c(false), setTimeout(n, 500)
           }

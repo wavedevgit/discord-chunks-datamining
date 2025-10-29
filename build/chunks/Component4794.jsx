@@ -16,10 +16,10 @@ let s = Chunk647438.memo(function(e) {
     useTitle: n,
     layout: s,
     useSubtitle: u
-  } = t, [d, f] = o.useState(false), {
+  } = t, [d, f] = l.useState(false), {
     navTransition: b
-  } = (0, l.t)();
-  o.useEffect(() => {
+  } = (0, o.t)();
+  l.useEffect(() => {
     (null == b ? true : b.targetAccordionKey) === t.key && f(true)
   }, [null == b ? true : b.targetAccordionKey, t.key]);
   let p = null == n ? true : n(d),

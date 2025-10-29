@@ -1,4 +1,4 @@
-/** Chunk was on 96604 **/
+/** Chunk was on 28855 **/
 /** chunk id: 958328, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -26,15 +26,15 @@ function v(e) {
     title: t,
     can: n
   } = e, r = n ? s.dz2 : s.Dio, i = (0, a.jsx)("div", {
-    className: l()(f.iconOuter, n ? f.iconCheck : f.iconCross),
+    className: l()(g.iconOuter, n ? g.iconCheck : g.iconCross),
     children: (0, a.jsx)(r, {
-      className: f.icon
+      className: g.icon
     })
   });
   return (0, a.jsxs)("div", {
-    className: f.scope,
+    className: g.scope,
     children: [i, (0, a.jsx)("div", {
-      className: f.scopeInner,
+      className: g.scopeInner,
       children: (0, a.jsx)(s.Text, {
         variant: "text-md/normal",
         children: t

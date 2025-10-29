@@ -7,19 +7,19 @@ require.d(exports, {
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  s = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk778234 = require("./778234.js");
 
 function a(e) {
   let {
     keybind: t,
     separator: n = "+",
-    className: o
+    className: s
   } = e;
   return (0, i.jsx)(i.Fragment, {
     children: t.map((e, a) => (0, i.jsxs)(r.Fragment, {
       children: [(0, i.jsx)("span", {
-        className: s()(l.key, o),
+        className: o()(l.key, s),
         children: e
       }), a === t.length - 1 ? true : n]
     }, a))

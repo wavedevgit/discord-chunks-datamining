@@ -1,4 +1,4 @@
-/** Chunk was on 96604 **/
+/** Chunk was on 28855 **/
 /** chunk id: 496025, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => T
@@ -39,7 +39,7 @@ function E() {
         let t = h.Z.getChannel(e.channelId);
         return {
           value: e.channelId,
-          label: null != t ? (0, m.F6)(t, g.default, x.Z) : e.channelId
+          label: null != t ? (0, m.F6)(t, f.default, x.Z) : e.channelId
         }
       })
     })),

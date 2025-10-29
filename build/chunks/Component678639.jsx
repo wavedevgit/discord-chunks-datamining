@@ -1,4 +1,4 @@
-/** Chunk was on 96604 **/
+/** Chunk was on 28855 **/
 /** chunk id: 678639, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -17,11 +17,11 @@ var Chunk951288 = require("./951288.js"),
   Chunk451429 = require("./451429.js"),
   Chunk104444 = require("./104444.js");
 
-function g(e, t) {
+function f(e, t) {
   return e.store.getName().localeCompare(t.store.getName())
 }
 
-function f(e) {
+function g(e) {
   let {
     store: t,
     dataGetter: n
@@ -61,7 +61,7 @@ let b = [{
         children: ["Store is missing ", (0, a.jsx)("code", {
           children: "__getLocalVars"
         }), " method."]
-      }) : (0, a.jsx)(f, {
+      }) : (0, a.jsx)(g, {
         store: t,
         dataGetter: e => e.__getLocalVars()
       })
@@ -74,7 +74,7 @@ let b = [{
       let {
         store: t
       } = e;
-      return (0, a.jsx)(f, {
+      return (0, a.jsx)(g, {
         store: t,
         dataGetter: e => e
       })
@@ -116,7 +116,7 @@ function _() {
     c = Chunk647438.useMemo(() => Chunk120356.map(e => ({
       key: e._dispatchToken,
       store: e
-    })).sort(g), [Chunk120356]).filter(e => (function(e, t) {
+    })).sort(f), [Chunk120356]).filter(e => (function(e, t) {
       let {
         store: n
       } = e;

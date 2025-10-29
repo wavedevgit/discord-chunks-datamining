@@ -1,4 +1,4 @@
-/** Chunk was on 36925 **/
+/** Chunk was on 30437 **/
 /** chunk id: 424785, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => X
@@ -144,10 +144,10 @@ class Y extends Chunk98597.ZP {
       unread: _,
       resolvedUnreadSetting: O,
       mentionCount: y,
-      isFavoriteSuggestion: j
+      isFavoriteSuggestion: v
     } = this.props, {
-      shouldShowGuildVerificationPopout: v
-    } = this.state, C = this.getVoiceStatesCount(), x = (0, Chunk951288.jsxs)("li", {
+      shouldShowGuildVerificationPopout: j
+    } = this.state, x = this.getVoiceStatesCount(), C = (0, Chunk951288.jsxs)("li", {
       className: o()(this.getModeClass(), {
         [Chunk55940.disabled]: this.isDisabled()
       }),
@@ -196,7 +196,7 @@ class Y extends Chunk98597.ZP {
         })
       }), this.renderVoiceUsers()]
     });
-    return Chunk146773 && (x = Chunk194983(Chunk427679)), Chunk239091 && (x = Chunk120356(Chunk442837(Chunk427679))), Chunk427679
+    return Chunk146773 && (C = Chunk194983(Chunk427679)), Chunk239091 && (C = Chunk120356(Chunk442837(Chunk427679))), Chunk427679
   }
   constructor(...e) {
     super(...e), z(this, "channelItemRef", i.createRef()), z(this, "state", {
@@ -214,7 +214,7 @@ class Y extends Chunk98597.ZP {
       } = this.props, i = e.getGuildId();
       null != i && (0, b.n)(i) && (0, m.hk)(i), r && this.setState({
         shouldShowGuildVerificationPopout: true
-      }), t || n || e.isRoleSubscriptionTemplatePreviewChannel() || (0, j.Cq)(e), __OVERLAY__ || (0, y.Kh)(e.id)
+      }), t || n || e.isRoleSubscriptionTemplatePreviewChannel() || (0, v.Cq)(e), __OVERLAY__ || (0, y.Kh)(e.id)
     }), z(this, "handleClickChat", () => {
       let {
         channel: e,
@@ -306,10 +306,10 @@ function X(e) {
       bypassLimit: T.Z.can(U.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), p = (0, a.e7)([I.Z], () => I.Z.isCollapsed(n.parent_id)), f = (0, S.ZP)(n.id), h = (0, a.e7)([x.Z], () => x.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, v.Rk)(n.id, C.pV.AUDIENCE), {
+  }), p = (0, a.e7)([I.Z], () => I.Z.isCollapsed(n.parent_id)), f = (0, S.ZP)(n.id), h = (0, a.e7)([C.Z], () => C.Z.getStageInstanceByChannel(n.id), [n.id]), g = (0, j.Rk)(n.id, x.pV.AUDIENCE), {
     isSubscriptionGated: m,
     needSubscriptionToAccess: b
-  } = (0, _.Z)(n.id), O = (0, a.e7)([A.ZP], () => A.ZP.isFavorite(t.id, n.id)), y = (0, E.xJ)(n.id), j = (0, M.Z)({
+  } = (0, _.Z)(n.id), O = (0, a.e7)([A.ZP], () => A.ZP.isFavorite(t.id, n.id)), y = (0, E.xJ)(n.id), v = (0, M.Z)({
     channel: n,
     isChannelSelected: false,
     isChannelCollapsed: o,
@@ -317,7 +317,7 @@ function X(e) {
     isSubscriptionGated: m,
     needSubscriptionToAccess: b,
     enableConnectedUserLimit: y || n.userLimit > 0 && n.userLimit < U.xGv
-  }), N = e.connected && null == j;
+  }), N = e.connected && null == v;
   return (0, r.jsx)(q, K(W({
     categoryCollapsed: p,
     connectAction: f,
@@ -328,7 +328,7 @@ function X(e) {
   }, c, d, e), {
     isFavoriteSuggestion: l && !O,
     forceShowButtons: N,
-    channelInfo: j,
+    channelInfo: v,
     resolvedUnreadSetting: u
   }))
 }

@@ -21,17 +21,17 @@ var Chunk442837 = require("./442837.js"),
 function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      a = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (a = a.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      l = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (l = l.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), a.forEach(function(t) {
-      var a;
-      a = n[t], t in e ? Object.defineProperty(e, t, {
-        value: a,
+    }))), l.forEach(function(t) {
+      var l;
+      l = n[t], t in e ? Object.defineProperty(e, t, {
+        value: l,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = a
+      }) : e[t] = l
     })
   }
   return e
@@ -41,8 +41,8 @@ function y(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var a = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, a)
+      var l = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, l)
     }
     return n
   })(Object(t)).forEach(function(n) {
@@ -63,8 +63,8 @@ function f() {
     isForcedCanary: j,
     isSourceMapsEnabled: A,
     isIdleStatusIndicatorEnabled: N,
-    isAxeEnabled: _,
-    preventPopoutClose: w,
+    isAxeEnabled: w,
+    preventPopoutClose: _,
     onlyShowPreviewAppCollections: D,
     disableAppCollectionsCache: x
   } = (0, Chunk442837.cj)([Chunk857192.default, Chunk594174.default, Chunk906467.Z], () => {
@@ -89,11 +89,11 @@ function f() {
   }), {
     horizontalSpacing: I,
     verticalSpacing: T,
-    maxHorizontalSpacing: R,
-    maxVerticalSpacing: C
+    maxHorizontalSpacing: C,
+    maxVerticalSpacing: m
   } = (0, Chunk482215.i)(), {
     setHorizontalSpacing: L,
-    setVerticalSpacing: m
+    setVerticalSpacing: R
   } = Chunk482215.i.getState(), Z = Chunk695346.zY.useSetting(), k = [];
   return exports && require && (k.push((0, Chunk951288.jsx)(Chunk481060.sNh, {
     id: "overrides",
@@ -168,19 +168,19 @@ function f() {
     }, "idle-status"), (0, Chunk951288.jsx)(Chunk481060.S89, {
       id: "accessibility-auditing",
       label: "Accessibility Auditing",
-      checked: _,
+      checked: w,
       action: () => {
         (0, Chunk179658.y)({
-          axeEnabled: !_
+          axeEnabled: !w
         })
       }
     }, "accessibility-auditing"), (0, Chunk951288.jsx)(Chunk481060.S89, {
       id: "prevent-popout-close",
       label: "Prevent Popouts From Closing",
-      checked: w,
+      checked: _,
       action: () => {
         (0, Chunk179658.y)({
-          preventPopoutClose: !w
+          preventPopoutClose: !_
         })
       }
     }, "prevent-popout-close"), (0, Chunk951288.jsx)(Chunk481060.S89, {
@@ -270,11 +270,11 @@ function f() {
   }, "design-tools")), module && (k.push((0, Chunk951288.jsx)(Chunk481060.II_, {
     id: "horizontal-spacing",
     label: "Horizontal Spacing",
-    control: (e, t) => (0, a.jsx)(l._wy, y(E({}, e), {
+    control: (e, t) => (0, l.jsx)(i._wy, y(E({}, e), {
       ref: t,
       value: I,
       minValue: 0,
-      maxValue: R,
+      maxValue: C,
       onChange: e => L(e),
       renderValue: e => "".concat(Math.round(e), "px"),
       "aria-label": "Horizontal Spacing"
@@ -282,12 +282,12 @@ function f() {
   }, "horizontal-spacing")), k.push((0, Chunk951288.jsx)(Chunk481060.II_, {
     id: "vertical-spacing",
     label: "Vertical Spacing",
-    control: (e, t) => (0, a.jsx)(l._wy, y(E({}, e), {
+    control: (e, t) => (0, l.jsx)(i._wy, y(E({}, e), {
       ref: t,
       value: T,
       minValue: 0,
-      maxValue: C,
-      onChange: e => m(e),
+      maxValue: m,
+      onChange: e => R(e),
       "aria-label": "Horizontal Spacing",
       renderValue: e => "".concat(Math.round(e), "px")
     }))

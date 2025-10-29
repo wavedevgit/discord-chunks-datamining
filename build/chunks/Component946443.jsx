@@ -1,4 +1,4 @@
-/** Chunk was on 36925 **/
+/** Chunk was on 30437 **/
 /** chunk id: 946443, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   QP: () => N,
@@ -36,7 +36,7 @@ function S(e) {
     showTutorial: Z,
     setSeenTutorial: T,
     closePopout: w
-  } = e, A = i.useRef(null), [R, D] = (0, v.ZP)(A), {
+  } = e, A = i.useRef(null), [R, D] = (0, j.ZP)(A), {
     loadState: L,
     channels: M
   } = R, {
@@ -68,8 +68,8 @@ function S(e) {
       let e = a.channels.find(e => !e.collapsed);
       null != e && O.markChannelRead(e)
     };
-    return b.S.subscribe(C.CkL.MARK_TOP_INBOX_CHANNEL_READ, e), () => {
-      b.S.unsubscribe(C.CkL.MARK_TOP_INBOX_CHANNEL_READ, e)
+    return b.S.subscribe(x.CkL.MARK_TOP_INBOX_CHANNEL_READ, e), () => {
+      b.S.unsubscribe(x.CkL.MARK_TOP_INBOX_CHANNEL_READ, e)
     }
   }, [O, a.channels]), S = D, i.useEffect(() => {
     let e = e => {
@@ -79,20 +79,20 @@ function S(e) {
       document.removeEventListener("keydown", e)
     }
   }, [S]), i.useEffect(() => {
-    m.default.track(C.rMx.OPEN_POPOUT, {
+    m.default.track(x.rMx.OPEN_POPOUT, {
       type: "Inbox"
     })
   }, []), i.useEffect(() => (p.Z.subscribe("CONNECTION_OPEN", w), () => {
     p.Z.unsubscribe("CONNECTION_OPEN", w)
-  }), [w]), (0, f.ZP)(() => (b.S.subscribe(C.CkL.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead), () => {
-    b.S.unsubscribe(C.CkL.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead)
+  }), [w]), (0, f.ZP)(() => (b.S.subscribe(x.CkL.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead), () => {
+    b.S.unsubscribe(x.CkL.INBOX_MARK_ALL_UNREADS_READ, D.markAllRead)
   }));
   let U = (0, g.Z)("unreads", A);
   if (0 === M.length) {
     return (0, r.jsx)(y.Z, {
       Icon: d.xx7,
-      header: x.intl.string(x.t["6XMM+D"]),
-      tip: (null == (P = s().os) ? true : P.family) === "OS X" ? x.intl.string(x.t.w9uDOW) : x.intl.string(x.t.BiUJC6)
+      header: C.intl.string(C.t["6XMM+D"]),
+      tip: (null == (P = s().os) ? true : P.family) === "OS X" ? C.intl.string(C.t.w9uDOW) : C.intl.string(C.t.BiUJC6)
     })
   }
   return (0, r.jsx)(c.bG, {
@@ -140,11 +140,11 @@ function S(e) {
             A.current = e, i.current = null != (t = null == e ? true : e.getScrollerNode()) ? t : null
           }
         }, l), n = n = {
-          onScroll: L === v.jd.Done ? true : k,
+          onScroll: L === j.jd.Done ? true : k,
           className: o()(E.scroller, "group-spacing-".concat(G)),
           children: [Z ? (0, r.jsx)(I, {
             setSeenTutorial: T
-          }) : null, (0, j.Z)(M, D, N), L === v.jd.Done ? null : (0, r.jsx)(d.$jN, {
+          }) : null, (0, v.Z)(M, D, N), L === j.jd.Done ? null : (0, r.jsx)(d.$jN, {
             className: E.spinner
           })]
         }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
@@ -178,18 +178,18 @@ function I(e) {
       children: [(0, r.jsx)(d.Heading, {
         className: E.__invalid_tutorialHeader,
         variant: "heading-md/semibold",
-        children: x.intl.string(x.t.vZPktJ)
+        children: C.intl.string(C.t.vZPktJ)
       }), (0, r.jsx)(d.Text, {
         color: "header-secondary",
         variant: "text-sm/normal",
-        children: x.intl.string(x.t.vWkIII)
+        children: C.intl.string(C.t.vWkIII)
       }), (0, r.jsx)("div", {
         "data-button-hoisted-classname-wrapper": true,
         className: E.tutorialButton,
         children: (0, r.jsx)(d.Button, {
           variant: "primary",
           size: "sm",
-          text: x.intl.string(x.t["+IrDzN"]),
+          text: C.intl.string(C.t["+IrDzN"]),
           onClick: t
         })
       })]

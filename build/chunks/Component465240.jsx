@@ -1,33 +1,34 @@
-/** Chunk was on 66548 **/
-/** chunk id: 465240, original params: e,l,t (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 465240, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  A: () => i
+  A: () => o
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk793030 = require("./793030.js");
-let i = {
+let o = {
   title: "TabBar",
   stories: [{
     id: "tabbar",
     name: "TabBar",
     component: function(e) {
       let {
-        look: l,
-        type: t,
-        tabCount: i
-      } = e, [r, s] = n.useState("tab1"), u = Array.from({
-        length: i
-      }, (e, l) => ({
-        id: "tab".concat(l + 1),
-        name: "Tab ".concat(l + 1)
+        look: t,
+        type: n,
+        tabCount: o
+      } = e, [s, l] = i.useState("tab1"), c = Array.from({
+        length: o
+      }, (e, t) => ({
+        id: "tab".concat(t + 1),
+        name: "Tab ".concat(t + 1)
       }));
-      return (0, a.jsx)(o.njP, {
-        type: t,
-        look: l,
-        selectedItem: r,
-        onItemSelect: s,
-        children: u.map(e => (0, a.jsx)(o.njP.Item, {
+      return (0, r.jsx)(a.njP, {
+        type: n,
+        look: t,
+        selectedItem: s,
+        onItemSelect: l,
+        children: c.map(e => (0, r.jsx)(a.njP.Item, {
           id: e.id,
           children: e.name
         }, e.id))

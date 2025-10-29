@@ -1,4 +1,4 @@
-/** Chunk was on 96604 **/
+/** Chunk was on 28855 **/
 /** chunk id: 442954, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -530,7 +530,7 @@ let j = {
     } = await Promise.resolve().then(require.bind(require, 590433)), c = await Promise.resolve().then(require.t.bind(require, 647438, 19)), d = "TestUser";
 
     function u(n) {
-      let [u, m] = c.useState(o.DURATION_60_SEC), [p, h] = c.useState(""), [x, g] = c.useState(false), [f, b] = c.useState(false), v = [{
+      let [u, m] = c.useState(o.DURATION_60_SEC), [p, h] = c.useState(""), [x, f] = c.useState(false), [g, b] = c.useState(false), v = [{
         value: o.DURATION_60_SEC,
         label: s(o.DURATION_60_SEC)
       }, {
@@ -549,13 +549,13 @@ let j = {
         value: o.DURATION_1_WEEK,
         label: s(o.DURATION_1_WEEK)
       }], j = c.useCallback(async () => {
-        g(true), console.log("GuildDisableCommunicationModal: Timing out user", {
+        f(true), console.log("GuildDisableCommunicationModal: Timing out user", {
           user: d,
           duration: s(u),
           reason: null != p ? p : "No reason provided",
-          resolveFlag: f
-        }), await new Promise(e => setTimeout(e, 1e3)), g(false), n.onClose()
-      }, [u, p, f, n]);
+          resolveFlag: g
+        }), await new Promise(e => setTimeout(e, 1e3)), f(false), n.onClose()
+      }, [u, p, g, n]);
       return (0, a.jsxs)("div", {
         style: {
           padding: "20px",
@@ -608,7 +608,7 @@ let j = {
         }), (0, a.jsx)("div", {
           className: "mb-4",
           children: (0, a.jsx)(l, {
-            checked: f,
+            checked: g,
             onChange: b,
             label: "Resolve associated mod report"
           })

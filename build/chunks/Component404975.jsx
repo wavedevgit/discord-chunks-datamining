@@ -23,10 +23,10 @@ function v(e) {
   let {
     root: t,
     header: n,
-    footer: l,
+    footer: o,
     onClose: y,
     emptyState: v
-  } = e, h = p.Z.useField("showNavigationMobile"), O = o.useRef(null), x = o.useMemo(() => {
+  } = e, h = p.Z.useField("showNavigationMobile"), O = l.useRef(null), x = l.useMemo(() => {
     let e = [];
     return t.layout.forEach(t => {
       let {
@@ -36,14 +36,14 @@ function v(e) {
         if (null != t.trailing) switch (t.trailing.type) {
           case b.PU.BADGE_NEW:
           case b.PU.STRONGLY_DISCOURAGED_CUSTOM:
-            var n, r, o;
-            null == (r = (o = t.trailing).getDismissibleContentTypes) || null == (n = r.call(o)) || n.forEach(t => {
+            var n, r, l;
+            null == (r = (l = t.trailing).getDismissibleContentTypes) || null == (n = r.call(l)) || n.forEach(t => {
               e.push(t)
             })
         }
       })
     }), e
-  }, [t.layout]), [P, S] = o.useMemo(() => {
+  }, [t.layout]), [P, S] = l.useMemo(() => {
     let e = [],
       n = [];
     return t.layout.forEach(t => {
@@ -56,7 +56,7 @@ function v(e) {
       contentTypes: x,
       children: t => {
         let {
-          visibleContent: o
+          visibleContent: l
         } = t;
         return (0, r.jsxs)("div", {
           className: i()(m.sidebar, e, {
@@ -77,7 +77,7 @@ function v(e) {
             }), (0, r.jsx)("div", {
               children: P.map(e => (0, r.jsx)(g, {
                 section: e,
-                visibleContent: o,
+                visibleContent: l,
                 hoisted: true
               }, e.key))
             }), null != n && (0, r.jsx)(n, {}), null != v && 0 === S.length && (0, r.jsx)(v, {})]
@@ -90,18 +90,18 @@ function v(e) {
                   } = e,
                   a = function(e, t) {
                     if (null == e) return {};
-                    var n, r, o = function(e, t) {
+                    var n, r, l = function(e, t) {
                       if (null == e) return {};
-                      var n, r, o = {},
-                        l = Object.keys(e);
-                      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (o[n] = e[n]);
-                      return o
+                      var n, r, l = {},
+                        o = Object.keys(e);
+                      for (r = 0; r < o.length; r++) n = o[r], t.indexOf(n) >= 0 || (l[n] = e[n]);
+                      return l
                     }(e, t);
                     if (Object.getOwnPropertySymbols) {
-                      var l = Object.getOwnPropertySymbols(e);
-                      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (o[n] = e[n])
+                      var o = Object.getOwnPropertySymbols(e);
+                      for (r = 0; r < o.length; r++) n = o[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (l[n] = e[n])
                     }
-                    return o
+                    return l
                   }(e, ["ref"]);
                 return (0, r.jsxs)(s.h21, (t = function(e) {
                   for (var t = 1; t < arguments.length; t++) {
@@ -132,9 +132,9 @@ function v(e) {
                     className: m.nav,
                     children: S.map(e => (0, r.jsx)(g, {
                       section: e,
-                      visibleContent: o
+                      visibleContent: l
                     }, e.key))
-                  }), null != l && (0, r.jsx)(l, {})]
+                  }), null != o && (0, r.jsx)(o, {})]
                 }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
                   var n = Object.keys(e);
                   if (Object.getOwnPropertySymbols) {
@@ -158,8 +158,8 @@ function g(e) {
   var t;
   let {
     section: n,
-    visibleContent: o,
-    hoisted: l = false
+    visibleContent: l,
+    hoisted: o = false
   } = e, i = null == (t = n.useLabel) ? true : t.call(n);
   return (0, r.jsxs)("ul", {
     className: m.section,
@@ -174,8 +174,8 @@ function g(e) {
       })
     }), n.layout.map(e => (0, r.jsx)(y.y, {
       node: e,
-      visibleContent: o,
-      hoisted: l
+      visibleContent: l,
+      hoisted: o
     }, e.key))]
   })
 }

@@ -5,7 +5,7 @@ require.d(exports, {
 }), require("./953529.js");
 var Chunk951288 = require("./951288.js"),
   Chunk120356 = require("./120356.js"),
-  l = require.n(Chunk120356),
+  o = require.n(Chunk120356),
   Chunk793030 = require("./793030.js"),
   Chunk481060 = require("./481060.js"),
   Chunk845442 = require("./845442.js");
@@ -14,7 +14,7 @@ function s(e) {
   let {
     leadingElement: t,
     primaryTrailingElement: n,
-    secondaryTrailingElement: o,
+    secondaryTrailingElement: l,
     title: s,
     secondaryTitle: u,
     description: d,
@@ -22,7 +22,7 @@ function s(e) {
     onClick: b
   } = e;
   return (0, r.jsxs)(a.P3F, {
-    className: l()(c.baseControlItem, {
+    className: o()(c.baseControlItem, {
       [c.compact]: f
     }),
     onClick: b,
@@ -48,9 +48,9 @@ function s(e) {
         color: "text-secondary",
         children: d
       })]
-    }), (null != n || null != o) && (0, r.jsxs)("div", {
+    }), (null != n || null != l) && (0, r.jsxs)("div", {
       className: c.baseControlItemTrailingElements,
-      children: [n, o]
+      children: [n, l]
     })]
   })
 }

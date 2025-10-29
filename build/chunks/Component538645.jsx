@@ -1,4 +1,4 @@
-/** Chunk was on 96604 **/
+/** Chunk was on 28855 **/
 /** chunk id: 538645, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -17,7 +17,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk373071 = require("./373071.js"),
   Chunk782691 = require("./782691.jsx"),
   Chunk558270 = require("./558270.js");
-let f = "Make sure you're only uploading text files!",
+let g = "Make sure you're only uploading text files!",
   b = e => {
     var t, n, r;
     let {
@@ -27,17 +27,17 @@ let f = "Make sure you're only uploading text files!",
       deleteConfig: o
     } = (0, h.n6)();
     return (0, a.jsxs)(c.P3F, {
-      className: g.previewCard,
+      className: f.previewCard,
       onClick: () => {
         i(l)
       },
       children: [(0, a.jsx)("div", {
-        className: g.previewCardImage,
+        className: f.previewCardImage,
         style: {
           backgroundImage: "url(".concat(null == (r = l.config) || null == (n = r.effects) || null == (t = n[0]) ? true : t.base64, ")")
         }
       }), (0, a.jsxs)("div", {
-        className: g.previewCardFooter,
+        className: f.previewCardFooter,
         children: [(0, a.jsx)(c.Text, {
           variant: "text-md/bold",
           children: l.name
@@ -68,9 +68,9 @@ function v() {
       return i.includes(l) || o.includes(l)
     }), [_, j]),
     S = Chunk647438.useCallback((e, n) => {
-      if (null == n || !e.type.startsWith("text/")) return (0, u.Eo)(f);
+      if (null == n || !e.type.startsWith("text/")) return (0, u.Eo)(g);
       let [a, r] = n.split(",");
-      if (!a.includes("text/plain")) return (0, u.Eo)(f);
+      if (!a.includes("text/plain")) return (0, u.Eo)(g);
       let l = JSON.parse(atob(r));
       l.skuId = (0, o.Z)(), t(l), (0, u.XA)("Profile Effect (maybe??) imported!")
     }, [exports]),
@@ -138,7 +138,7 @@ function v() {
         }), (0, Chunk951288.jsx)("div", {
           className: Chunk558270.pfxGrid,
           children: C.map(e => (0, a.jsx)(c.P3F, {
-            className: g.pfxListItem,
+            className: f.pfxListItem,
             style: {
               backgroundImage: "url(".concat(e.config.thumbnailPreviewSrc, ")")
             },
@@ -153,7 +153,7 @@ function v() {
               })
             },
             children: (0, a.jsx)("div", {
-              className: g.pfxListItemFooter,
+              className: f.pfxListItemFooter,
               children: (0, a.jsx)(c.Text, {
                 variant: "text-md/normal",
                 color: "always-white",

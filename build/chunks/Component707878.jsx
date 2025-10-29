@@ -2,7 +2,7 @@
 /** chunk id: 707878, original params: e,t,n (module,exports,require) **/
 "use strict";
 require.d(exports, {
-  Z: () => y
+  Z: () => _
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk264815 = require("./264815.js");
 let g = Object.values(Chunk987650.wF).map(e => 100 * e),
   m = (0, Chunk313201.hQ)();
-class _ extends Chunk647438.PureComponent {
+class y extends Chunk647438.PureComponent {
   handleUpdateBackgroundOpacity(e) {
     l.Z.setTextWidgetOpacity((0, d.Z)(e / 100)), l.Z.track(p.rMx.OVERLAY_SETTINGS_UPDATED, {
       text_opacity_slider: e
@@ -63,6 +63,6 @@ class _ extends Chunk647438.PureComponent {
       }(this, "initialValue", 100 * this.props.opacity)
   }
 }
-let y = Chunk442837.ZP.connectStores([Chunk237997.default], () => ({
+let _ = Chunk442837.ZP.connectStores([Chunk237997.default], () => ({
   opacity: Chunk237997.default.getTextWidgetOpacity()
-}))(_)
+}))(y)

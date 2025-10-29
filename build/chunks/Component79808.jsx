@@ -59,7 +59,7 @@ function y(e) {
     onPanelChange: x,
     emptyState: P
   } = e, S = null != m && (null == (t = j.entry(m)) ? true : t.targetPanelKey) != null ? m : v;
-  (0, l.ZP)(() => {
+  (0, o.ZP)(() => {
     let e = j.entry(S).targetPanelKey;
     return d.Z.setState({
       targetKey: S,
@@ -69,19 +69,19 @@ function y(e) {
   });
   let C = d.Z.useField("currentPanelKey"),
     _ = d.Z.useField("targetKey"),
-    [w, E] = o.useState(j),
-    N = o.useMemo(() => w.get(null != C ? C : S), [w, C, S]),
-    T = o.useCallback(() => Z(true), []),
-    [k, Z] = o.useState({
+    [w, E] = l.useState(j),
+    N = l.useMemo(() => w.get(null != C ? C : S), [w, C, S]),
+    k = l.useCallback(() => Z(true), []),
+    [T, Z] = l.useState({
       target: S,
       targetAccordionKey: null == (n = j.entry(S)) ? true : n.parentAccordionKey,
       animateScroll: false,
-      complete: T
+      complete: k
     }),
     {
       navigateWithValidation: D
     } = (0, s.Cu)();
-  o.useEffect(() => {
+  l.useEffect(() => {
     if (null == _) return;
     let e = j.entry(_);
     if (null == e) return void i.Z.setState({
@@ -93,7 +93,7 @@ function y(e) {
     let t = {
       target: _,
       targetAccordion: e.parentAccordionKey,
-      complete: T
+      complete: k
     };
     if (e.targetPanelKey !== C) {
       let n = e.targetPanelKey;
@@ -111,10 +111,10 @@ function y(e) {
     })), d.Z.setState({
       targetKey: true
     })
-  }, [C, _, T, j, D, x]);
-  let I = o.useMemo(() => ({
-      navTransition: k
-    }), [k]),
+  }, [C, _, k, j, D, x]);
+  let I = l.useMemo(() => ({
+      navTransition: T
+    }), [T]),
     A = () => D(g),
     R = null != C ? j.get(C) : true;
   return (0, r.jsx)(u.j.Provider, {

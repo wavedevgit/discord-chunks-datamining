@@ -1,5 +1,6 @@
-/** Chunk was on 33622 **/
-/** chunk id: 749468, original params: e,a,t (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 749468, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
   R: () => l
 });
@@ -9,32 +10,32 @@ var Chunk677061 = require("./677061.js"),
   Chunk647438 = require("./647438.js"),
   Chunk765772 = require("./765772.js");
 
-function l(e, a) {
+function l(e, t) {
   let {
-    role: t = "dialog"
-  } = e, l = (0, u.mp)();
+    role: n = "dialog"
+  } = e, l = (0, r.mp)();
   l = e["aria-label"] ? true : l;
-  let s = (0, i.useRef)(false);
-  return (0, i.useEffect)(() => {
-    if (a.current && !a.current.contains(document.activeElement)) {
-      (0, r.e)(a.current);
+  let c = (0, o.useRef)(false);
+  return (0, o.useEffect)(() => {
+    if (t.current && !t.current.contains(document.activeElement)) {
+      (0, a.e)(t.current);
       let e = setTimeout(() => {
-        (document.activeElement === a.current || document.activeElement === document.body) && (s.current = true, a.current && (a.current.blur(), (0, r.e)(a.current)), s.current = false)
+        (document.activeElement === t.current || document.activeElement === document.body) && (c.current = true, t.current && (t.current.blur(), (0, a.e)(t.current)), c.current = false)
       }, 500);
       return () => {
         clearTimeout(e)
       }
     }
-  }, [a]), (0, o.Bq)(), {
+  }, [t]), (0, s.Bq)(), {
     dialogProps: {
-      ...(0, n.z)(e, {
+      ...(0, i.z)(e, {
         labelable: true
       }),
-      role: t,
+      role: n,
       tabIndex: false,
       "aria-labelledby": e["aria-labelledby"] || l,
       onBlur: e => {
-        s.current && e.stopPropagation()
+        c.current && e.stopPropagation()
       }
     },
     titleProps: {

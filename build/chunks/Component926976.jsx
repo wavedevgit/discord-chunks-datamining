@@ -1,4 +1,4 @@
-/** Chunk was on 96604 **/
+/** Chunk was on 28855 **/
 /** chunk id: 926976, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => D
@@ -81,7 +81,7 @@ function I(e) {
     }), (0, a.jsx)(u.P3F, {
       tag: "span",
       className: O.copyPropertyButton,
-      onClick: () => (0, f.JG)(JSON.stringify(l), () => o(true)),
+      onClick: () => (0, g.JG)(JSON.stringify(l), () => o(true)),
       children: i ? (0, a.jsx)(u.kmB, {
         color: "currentColor",
         size: "sm"
@@ -107,7 +107,7 @@ let w = new Set(["client_performance_cpu", "client_performance_memory"]),
         },
         onClose: o,
         filteredEvents: c
-      } = e, d = g.default.getUser(l), h = s()(r);
+      } = e, d = f.default.getUser(l), h = s()(r);
       return (0, a.jsxs)("div", {
         "data-mtctest-ignore": "true",
         children: [(0, a.jsxs)(p.ZP, {
@@ -120,7 +120,7 @@ let w = new Set(["client_performance_cpu", "client_performance_memory"]),
             children: [t, (0, a.jsx)(u.P3F, {
               tag: "span",
               className: O.copyEventButton,
-              onClick: () => (0, f.JG)(t),
+              onClick: () => (0, g.JG)(t),
               children: (0, a.jsx)(u.TIy, {
                 color: "currentColor",
                 size: "sm"
@@ -130,7 +130,7 @@ let w = new Set(["client_performance_cpu", "client_performance_memory"]),
             icon: u.TIy,
             tooltip: "Copy all properties",
             onClick: () => {
-              (0, f.JG)(JSON.stringify(function(e) {
+              (0, g.JG)(JSON.stringify(function(e) {
                 for (var t = 1; t < arguments.length; t++) {
                   var n = null != arguments[t] ? arguments[t] : {},
                     a = Object.keys(n);
@@ -276,13 +276,13 @@ function D() {
       p(e)
     }, []);
   (0, Chunk301801.BO)(exports, Chunk120816.Z.loggedEvents, Chunk886118, A, [Chunk120356]);
-  let g = Chunk129861.filter(e => {
+  let f = Chunk129861.filter(e => {
       for (let t of o)
         if (R[t].filter(e)) returntrue;
       returnfalse
     }),
-    [f, b] = Chunk647438.useState(true),
-    _ = Chunk594174.find(e => e.key === f),
+    [g, b] = Chunk647438.useState(true),
+    _ = Chunk594174.find(e => e.key === g),
     {
       TabBar: P,
       renderSelectedTab: I

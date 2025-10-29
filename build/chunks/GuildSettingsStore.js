@@ -455,7 +455,7 @@ function e1(e) {
   null != s && t === s.id && (z = null != n ? n : {})
 }
 
-function e2(e) {
+function e3(e) {
   let {
     guildId: t,
     primaryCategoryId: n,
@@ -477,7 +477,7 @@ function e2(e) {
   }))
 }
 
-function e3(e) {
+function e2(e) {
   let {
     guildId: t,
     errors: n
@@ -667,8 +667,8 @@ let te = new e9(Chunk570140.Z, __OVERLAY__ ? {} : {
   GUILD_DISCOVERY_CATEGORY_ADD: e$,
   GUILD_DISCOVERY_CATEGORY_DELETE: e0,
   GUILD_DISCOVERY_CATEGORY_UPDATE_FAIL: e1,
-  GUILD_UPDATE_DISCOVERY_METADATA: e2,
-  GUILD_UPDATE_DISCOVERY_METADATA_FAIL: e3,
+  GUILD_UPDATE_DISCOVERY_METADATA: e3,
+  GUILD_UPDATE_DISCOVERY_METADATA_FAIL: e2,
   GUILD_DISCOVERY_SLUG_FETCH_SUCCESS: eQ,
   GUILD_DISCOVERY_SLUG_FETCH_FAIL: eJ,
   GUILD_SETTINGS_WIDGET_UPDATE: eV

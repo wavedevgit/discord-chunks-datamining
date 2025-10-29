@@ -1,4 +1,4 @@
-/** Chunk was on 36925 **/
+/** Chunk was on 30437 **/
 /** chunk id: 933104, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   $h: () => A,
@@ -78,7 +78,7 @@ function A(e) {
     onClick: () => i ? (0, b.Z)(t, u.Z.GUILD_POWERUPS_COACHMARK_NEW_PERKS) : (0, d.f)({
       guildId: t,
       location: {
-        section: j.jXE.GUILD_POWERUPS_NEW_PERKS_COACHMARK
+        section: v.jXE.GUILD_POWERUPS_NEW_PERKS_COACHMARK
       }
     }),
     markAsDismissed: n,
@@ -170,8 +170,8 @@ function L(e) {
       src: P.Z,
       className: l()(I.image, I.newPerksImage)
     }),
-    header: S.intl.string(n === g.J.GAME_SERVER_HOSTING_AVAILABLE ? x.default.wXLChx : x.default["8z8RpY"]),
-    content: n === g.J.GAME_SERVER_HOSTING_AVAILABLE ? S.intl.string(x.default.lZ6m7Q) : S.intl.format(x.default["IQ1E+d"], {
+    header: S.intl.string(n === g.J.GAME_SERVER_HOSTING_AVAILABLE ? C.default.wXLChx : C.default["8z8RpY"]),
+    content: n === g.J.GAME_SERVER_HOSTING_AVAILABLE ? S.intl.string(C.default.lZ6m7Q) : S.intl.format(C.default["IQ1E+d"], {
       boostCount: o
     }),
     buttonCTA: S.intl.string(S.t.RzWDqY),
@@ -191,10 +191,10 @@ function M(e) {
       src: P.Z,
       className: l()(I.image, I.newPerksImage)
     }),
-    header: S.intl.string(x.default["eX64+z"]),
-    content: S.intl.string(x.default.NpgfEB),
+    header: S.intl.string(C.default["eX64+z"]),
+    content: S.intl.string(C.default.NpgfEB),
     buttonCTA: S.intl.string(S.t.RzWDqY),
-    onClick: () => (0, p.uL)(j.Z5c.CHANNEL(t, v.oC.GAME_SERVERS)),
+    onClick: () => (0, p.uL)(v.Z5c.CHANNEL(t, j.oC.GAME_SERVERS)),
     markAsDismissed: n
   })
 }
@@ -247,7 +247,7 @@ function k(e) {
       children: [t, (0, r.jsx)(c.olH, {
         "data-migration-pending": true,
         className: I.close,
-        onClick: () => null == s ? true : s(C.L.USER_DISMISS)
+        onClick: () => null == s ? true : s(x.L.USER_DISMISS)
       })]
     }),
     header: (0, r.jsx)(a.xvT, {

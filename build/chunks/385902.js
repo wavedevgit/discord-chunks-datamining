@@ -1,4 +1,4 @@
-/** Chunk was on 36925 **/
+/** Chunk was on 30437 **/
 /** chunk id: 385902, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   K: () => O,
@@ -32,8 +32,8 @@ function _(e, t) {
     _ = (0, c.q8)(e, t),
     O = null == u ? true : u.storeRemovalDate,
     y = null != (n = null == r ? true : r.has(g.GuildFeatures.PARTNERED)) && n,
-    j = _ && null != O && !y && f.type === h.A3.POWERUP_ACTIVATED,
-    v = j ? {
+    v = _ && null != O && !y && f.type === h.A3.POWERUP_ACTIVATED,
+    j = v ? {
       title: b.intl.formatToPlainString(m.default.mgoPkU, {
         perkName: null == u ? true : u.title
       }),
@@ -42,17 +42,17 @@ function _(e, t) {
       })
     } : null;
   return {
-    shouldShow: j,
-    notificationConfig: v
+    shouldShow: v,
+    notificationConfig: j
   }
 }
 
 function O(e, t) {
   var n, _, O, y;
-  let j = (0, l.e7)([o.Z], () => o.Z.getGuild(e)),
-    v = (0, l.e7)([a.Z], () => a.Z.hasLayers()),
-    C = null != (O = (0, u.Z)(e)) && O,
-    x = (0, c.q8)(e, t),
+  let v = (0, l.e7)([o.Z], () => o.Z.getGuild(e)),
+    j = (0, l.e7)([a.Z], () => a.Z.hasLayers()),
+    x = null != (O = (0, u.Z)(e)) && O,
+    C = (0, c.q8)(e, t),
     E = (0, l.e7)([s.Z], () => s.Z.getStateForGuild(e)),
     S = null == E || null == (n = E.allPowerups) ? true : n[i.A$],
     I = (0, d.ZP)(e, S),
@@ -66,21 +66,21 @@ function O(e, t) {
     {
       onActivate: w
     } = (0, f._C)(e, N),
-    A = !v && C && x && null != S && !T && I.type === h.A3.POWERUP_ACTIVATED && null != P && null != N && null != j,
+    A = !j && x && C && null != S && !T && I.type === h.A3.POWERUP_ACTIVATED && null != P && null != N && null != v,
     R = r.useCallback(e => {
       w(e)
     }, [w]),
     D = r.useMemo(() => {
       if (!A) return null;
       let e = (0, p.Z)(P),
-        t = j.premiumTier === g.Eu4.TIER_2 ? b.intl.string(m.default["0uo/LD"]) : true;
+        t = v.premiumTier === g.Eu4.TIER_2 ? b.intl.string(m.default["0uo/LD"]) : true;
       return {
         firstHeader: S.title,
         secondHeader: b.intl.formatToPlainString(m.default["8imxAq"], {
           dateString: e
         }),
         firstBody: b.intl.formatToPlainString(m.default["/bW9tW"], {
-          serverName: j.name
+          serverName: v.name
         }),
         secondBody: b.intl.formatToPlainString(m.default.D09fdi, {
           dateString: e,
@@ -90,7 +90,7 @@ function O(e, t) {
         primaryButtonText: t,
         onPrimaryClick: null != t ? R : true
       }
-    }, [A, S, P, j, R]);
+    }, [A, S, P, v, R]);
   return {
     shouldShow: A,
     modalConfig: D

@@ -1,4 +1,4 @@
-/** Chunk was on 96604 **/
+/** Chunk was on 28855 **/
 /** chunk id: 905953, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -50,27 +50,27 @@ function b(e) {
           type: "image",
           src: y.edit_profile_upsell_image
         },
-        title: f.intl.format(f.t.TXDztH, {
+        title: g.intl.format(g.t.TXDztH, {
           applicationName: C.name
         }),
-        body: l ? f.intl.string(f.t["63Kso0"]) : f.intl.string(f.t.HwXoeC),
+        body: l ? g.intl.string(g.t["63Kso0"]) : g.intl.string(g.t.HwXoeC),
         actions: [l ? {
-          text: f.intl.string(f.t.VSLDly),
+          text: g.intl.string(g.t.VSLDly),
           onClick: () => {
             j(true), (0, p.openUserProfileModal)({
               userId: _,
-              section: g.oh.WIDGETS
+              section: f.oh.WIDGETS
             }).then(() => {
               r(x.L.TAKE_ACTION), b()
             }).finally(() => j(false))
           },
           loading: v
         } : {
-          text: f.intl.string(f.t["DSJi3+"]),
+          text: g.intl.string(g.t["DSJi3+"]),
           onClick: () => {
             T(), j(true), (0, p.openUserProfileModal)({
               userId: _,
-              section: g.oh.WIDGETS
+              section: f.oh.WIDGETS
             }).then(() => {
               r(x.L.TAKE_ACTION), b()
             }).finally(() => j(false))

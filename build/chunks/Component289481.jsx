@@ -1,4 +1,4 @@
-/** Chunk was on 36925 **/
+/** Chunk was on 30437 **/
 /** chunk id: 289481, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -95,22 +95,22 @@ let S = Chunk647438.memo(function(e) {
     if (i.useEffect(() => {
         null == a || !t.isFullyLoaded || t.hasError || t.collapsed || "messages" !== t.type || 0 !== t.messages.length || p.Z.wait(() => {
           (0, f.ack)(t.channelId, {
-            section: v.jXE.INBOX,
-            object: v.qAy.ACK_INBOX_CHANNEL_NO_MESSAGES,
-            objectType: v.AnalyticsObjectTypes.ACK_AUTOMATIC
+            section: j.jXE.INBOX,
+            object: j.qAy.ACK_INBOX_CHANNEL_NO_MESSAGES,
+            objectType: j.AnalyticsObjectTypes.ACK_AUTOMATIC
           }, true), l(t.channelId)
         })
       }), null == a || !t.hasLoadedAnything) return null;
     let s = (e, r) => {
-      (0, h.yw)(v.rMx.INBOX_CHANNEL_CLICKED, {
+      (0, h.yw)(j.rMx.INBOX_CHANNEL_CLICKED, {
         channel_id: t.channelId,
         guild_id: t.guildId
       });
       let i = null != r ? r : t.oldestUnreadMessageId;
-      (0, g.uL)(v.Z5c.CHANNEL(t.guildId, t.channelId, "forum" === t.type ? null : i)), n(e)
+      (0, g.uL)(j.Z5c.CHANNEL(t.guildId, t.channelId, "forum" === t.type ? null : i)), n(e)
     };
     return (0, r.jsx)("div", {
-      className: x.channel,
+      className: C.channel,
       children: (0, r.jsx)(d.y5t, {
         component: (0, r.jsxs)(O.Z, {
           channel: a,
@@ -122,7 +122,7 @@ let S = Chunk647438.memo(function(e) {
             channel: a
           }), (0, r.jsx)(P, E({}, e)), "nsfw" === t.type ? null : (0, r.jsx)(N, E({}, e))]
         }),
-        children: t.collapsed ? null : "messages" === t.type ? (0, r.jsx)(j.Z, {
+        children: t.collapsed ? null : "messages" === t.type ? (0, r.jsx)(v.Z, {
           channel: t,
           channelRecord: a,
           gotoChannel: s
@@ -143,8 +143,8 @@ function P(e) {
     getNumUnreadChannels: l
   } = e, o = (0, s.Z)() && null != t.guildId;
   return (0, r.jsx)(d.M0o, {
-    className: x.markReadButton,
-    tooltip: o ? C.intl.string(C.t["5lLMhM"]) : C.intl.string(C.t.e6RscS),
+    className: C.markReadButton,
+    tooltip: o ? x.intl.string(x.t["5lLMhM"]) : x.intl.string(x.t.e6RscS),
     color: d.YX$.TERTIARY,
     icon: o ? (0, r.jsx)(d.W6s, {
       size: "xs",
@@ -154,7 +154,7 @@ function P(e) {
       color: "currentColor"
     }),
     onClick: function() {
-      o && null != t.guildId ? i(t.guildId) : n(t), (0, h.yw)(v.rMx.INBOX_CHANNEL_ACKED, {
+      o && null != t.guildId ? i(t.guildId) : n(t), (0, h.yw)(j.rMx.INBOX_CHANNEL_ACKED, {
         channel_id: t.channelId,
         guild_id: t.guildId,
         marked_all_channels_as_read: false,
@@ -171,13 +171,13 @@ function N(e) {
     getNumUnreadChannels: i
   } = e;
   return (0, r.jsx)(u.u, {
-    text: C.intl.string(C.t.iTcuma),
+    text: x.intl.string(x.t.iTcuma),
     children: (0, r.jsx)(d.P3F, {
-      className: o()(x.collapseButton, {
-        [x.collapsed]: t.collapsed
+      className: o()(C.collapseButton, {
+        [C.collapsed]: t.collapsed
       }),
       onClick: function() {
-        n(t), (0, h.yw)(v.rMx.INBOX_CHANNEL_COLLAPSED, {
+        n(t), (0, h.yw)(j.rMx.INBOX_CHANNEL_COLLAPSED, {
           channel_id: t.channelId,
           guild_id: t.guildId,
           num_unread_channels_remaining: i(),

@@ -1,4 +1,4 @@
-/** Chunk was on 96604 **/
+/** Chunk was on 28855 **/
 /** chunk id: 572444, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -213,20 +213,20 @@ function y() {
         children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
           label: "Auto Threshold",
           checked: k,
-          onChange: e => d.Z.setMode(f.pM.VOICE_ACTIVITY, {
+          onChange: e => d.Z.setMode(g.pM.VOICE_ACTIVITY, {
             autoThreshold: e
           })
         }), k && (0, Chunk951288.jsxs)(Chunk951288.Fragment, {
           children: [(0, Chunk951288.jsx)(Chunk481060.rsf, {
             label: "Use Krisp VAD",
             checked: R,
-            onChange: e => d.Z.setMode(f.pM.VOICE_ACTIVITY, {
+            onChange: e => d.Z.setMode(g.pM.VOICE_ACTIVITY, {
               vadUseKrisp: e
             })
           }), R && (0, Chunk951288.jsx)(Chunk481060.iRW, {
             label: "Krisp VAD Activation Threshold",
             initialValue: A,
-            onValueChange: e => d.Z.setMode(f.pM.VOICE_ACTIVITY, {
+            onValueChange: e => d.Z.setMode(g.pM.VOICE_ACTIVITY, {
               vadKrispActivationThreshold: e
             }),
             minValue: 0,
@@ -235,7 +235,7 @@ function y() {
         }), (0, Chunk951288.jsx)(Chunk481060.rsf, {
           label: "Run Before Processing",
           checked: null != F && F,
-          onChange: e => d.Z.setMode(f.pM.VOICE_ACTIVITY, {
+          onChange: e => d.Z.setMode(g.pM.VOICE_ACTIVITY, {
             vadDuringPreProcess: e
           })
         })]

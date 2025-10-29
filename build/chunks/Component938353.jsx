@@ -143,13 +143,13 @@ function e1(e, t) {
   return n
 }
 
-function e2(e, t) {
+function e3(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : e1(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
 
-function e3(e, t) {
+function e2(e, t) {
   if (null == e) return {};
   var n, r, i = e4(e, t);
   if (Object.getOwnPropertySymbols) {
@@ -397,7 +397,7 @@ class tt extends(r = Chunk647438.Component) {
     if (0 === d.length) return null;
     let f = d.map(t => {
         var n;
-        return e2(e0({}, (0, W.JD)(t, e)), {
+        return e3(e0({}, (0, W.JD)(t, e)), {
           original: t.url,
           srcIsAnimated: (0, ey.yE)(null != (n = t.flags) ? n : 0, ez.J0y.IS_ANIMATED)
         })
@@ -806,7 +806,7 @@ function tn(e) {
     isActiveChannelOrUnarchivableThread: v,
     isAutomodQuarantined: y
   }), P = (0, H.A)((null != (t = r.editedTimestamp) ? t : r.timestamp).valueOf()), w = (0, z.Z)(null == n ? true : n.id), D = (0, Q.Z)(r), L = (0, R.v)(r), x = (0, eC._)(n), j = (0, eI.ro)(r.id, r.channel_id), U = (0, C.m8)();
-  return (0, i.jsx)(tt, e2(e0(e2(e0({
+  return (0, i.jsx)(tt, e3(e0(e3(e0({
     canSuppressEmbeds: I,
     canDeleteAttachments: T
   }, N), {
@@ -846,7 +846,7 @@ let tr = e => {
       disableComponentInteractivity: c = true,
       isSearchResult: u = false
     } = e,
-    d = e3(e, ["message", "channel", "disableReactionReads", "renderThreadAccessory", "disableReactionCreates", "disableReactionUpdates", "disableComponentInteractivity", "isSearchResult"]);
+    d = e2(e, ["message", "channel", "disableReactionReads", "renderThreadAccessory", "disableReactionCreates", "disableReactionUpdates", "disableComponentInteractivity", "isSearchResult"]);
   let f = ec.x4.useSetting(),
     _ = ec.RS.useSetting(),
     p = ec.NA.useSetting(),
@@ -856,7 +856,7 @@ let tr = e => {
     E = (0, R.v)(n),
     b = (0, eI.ro)(n.id, n.channel_id),
     y = (0, Q.Z)(n);
-  return (0, i.jsx)(tt, e2(e0({}, d), {
+  return (0, i.jsx)(tt, e3(e0({}, d), {
     message: n,
     channel: r,
     disableReactionReads: a,

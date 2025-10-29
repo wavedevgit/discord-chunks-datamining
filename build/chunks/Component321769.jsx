@@ -1,7 +1,8 @@
-/** Chunk was on 66548 **/
-/** chunk id: 321769, original params: e,l,t (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 321769, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  E: () => u
+  E: () => c
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -9,22 +10,22 @@ var Chunk951288 = require("./951288.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
   Chunk594174 = require("./594174.js");
-let u = {
+let c = {
   title: "TagGroup",
   stories: [{
     name: "TagGroup",
     id: "tag-group",
     component: function(e) {
       let {
-        selectionMode: l,
-        removeable: t,
-        layout: u
-      } = e, d = (0, i.e7)([s.default], () => s.default.getCurrentUser()), c = n.useMemo(() => {
+        selectionMode: t,
+        removeable: n,
+        layout: c
+      } = e, u = (0, o.e7)([l.default], () => l.default.getCurrentUser()), d = i.useMemo(() => {
         var e;
         return [{
           id: "strength",
           label: "Strength",
-          icon: r.z0B
+          icon: s.z0B
         }, {
           id: "dexterity",
           label: "Dexterity",
@@ -37,39 +38,39 @@ let u = {
           label: "Wisdom",
           icon: {
             type: "avatar",
-            src: null != (e = null == d ? true : d.getAvatarURL(true, 16)) ? e : ""
+            src: null != (e = null == u ? true : u.getAvatarURL(true, 16)) ? e : ""
           }
         }, {
           id: "charisma",
           label: "Charisma"
         }]
-      }, [d]), [b, p] = n.useState(c), y = n.useCallback(e => {
-        p(b.filter(l => !e.has(l.id)))
-      }, [b]), m = n.useCallback(() => {
-        p(c)
-      }, [c]), f = (0, a.jsx)(o.QSK, {
+      }, [u]), [f, _] = i.useState(d), p = i.useCallback(e => {
+        _(f.filter(t => !e.has(t.id)))
+      }, [f]), h = i.useCallback(() => {
+        _(d)
+      }, [d]), m = (0, r.jsx)(a.QSK, {
         label: "Categories",
-        selectionMode: l,
-        layout: u,
-        items: b,
-        onRemove: t ? y : true
-      }), v = t && (0, a.jsx)(r.Button, {
-        disabled: b.length === c.length,
+        selectionMode: t,
+        layout: c,
+        items: f,
+        onRemove: n ? p : true
+      }), g = n && (0, r.jsx)(s.Button, {
+        disabled: f.length === d.length,
         text: "Reset",
-        onClick: m
+        onClick: h
       });
-      return "inline" === u ? (0, a.jsxs)(r.Kqy, {
+      return "inline" === c ? (0, r.jsxs)(s.Kqy, {
         gap: 24,
-        children: [(0, a.jsx)("div", {
+        children: [(0, r.jsx)("div", {
           style: {
             display: "flex",
             gap: 4
           },
-          children: f
-        }), v]
-      }) : (0, a.jsxs)(r.Kqy, {
+          children: m
+        }), g]
+      }) : (0, r.jsxs)(s.Kqy, {
         gap: 24,
-        children: [f, v]
+        children: [m, g]
       })
     },
     controls: {

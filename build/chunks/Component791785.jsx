@@ -224,8 +224,8 @@ function J(e) {
       });
       eV && null != eH && null != a && n && (0, O.n)(a) && (0, y.Ni)(eH.id)
     }, [eQ, eW, eY, eH, eV, eK, eP.startTime, e$, a]),
-    e2 = i.useMemo(() => () => null == B ? true : B(eb === x.A.COMPLETED, eO), [B, eb, eO]),
-    e3 = (0, s.Z)(() => Date.now(), [eR]),
+    e3 = i.useMemo(() => () => null == B ? true : B(eb === x.A.COMPLETED, eO), [B, eb, eO]),
+    e2 = (0, s.Z)(() => Date.now(), [eR]),
     e4 = i.useCallback(function(e) {
       let t = arguments.length > 1 && true !== arguments[1] ? arguments[1] : {},
         {
@@ -235,7 +235,7 @@ function J(e) {
           emitPaymentFlowLoadedEvent: a
         } = t,
         o = Date.now();
-      if (e === L.h8.CONFIRM && (e1(), null == m || m(i), em)) return void e2();
+      if (e === L.h8.CONFIRM && (e1(), null == m || m(i), em)) return void e3();
       eA(e), null == eu || eu(e), eC(null), eS(null), e === L.h8.ADD_PAYMENT_STEPS && (u.Z.wait(f.fw), u.Z.wait(_.pB));
       let s = null != n ? n : eR;
       if (null === s || a) return void N.default.track(F.rMx.PAYMENT_FLOW_LOADED, q(K({}, eQ), {
@@ -246,16 +246,16 @@ function J(e) {
       N.default.track(F.rMx.PAYMENT_FLOW_STEP, q(K({}, eQ, r), {
         from_step: s,
         to_step: e === L.h8.ADD_PAYMENT_STEPS ? L.h8.PAYMENT_TYPE : e,
-        step_duration_ms: o - e3,
+        step_duration_ms: o - e2,
         flow_duration_ms: o - eP.startTime
       }))
-    }, [eA, eu, eC, eS, eR, eg, eQ, e3, eP.startTime, e1, m, em, e2, ex]);
-  (0, I.bp)(eR, eN, e4, ey), (0, L.dZ)(eR, eb, ey), (0, T.p)(eR, ew, e4), (0, E.Z)(e2), (0, S.w)(eD, () => B(false), eV), (0, I.D6)(eN);
+    }, [eA, eu, eC, eS, eR, eg, eQ, e2, eP.startTime, e1, m, em, e3, ex]);
+  (0, I.bp)(eR, eN, e4, ey), (0, L.dZ)(eR, eb, ey), (0, T.p)(eR, ew, e4), (0, E.Z)(e3), (0, S.w)(eD, () => B(false), eV), (0, I.D6)(eN);
   let e8 = {
       initialPlanId: k,
       subscriptionTier: j,
       handleStepChange: e4,
-      handleClose: e2,
+      handleClose: e3,
       analyticsData: eQ,
       setAnalyticsData: eJ,
       trialId: W,
@@ -275,7 +275,7 @@ function J(e) {
     e5 = (0, G.U)({
       renderHeader: ea,
       referralTrialOfferId: el,
-      handleClose: e2
+      handleClose: e3
     });
   return (0, r.jsx)(c.UkV, {
     className: Y.shaker,

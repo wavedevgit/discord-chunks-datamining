@@ -1,7 +1,8 @@
-/** Chunk was on 66548 **/
-/** chunk id: 51251, original params: e,l,t (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 51251, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  g: () => x
+  g: () => b
 });
 var Chunk653598 = require("./653598.js"),
   Chunk886031 = require("./886031.jsx"),
@@ -19,7 +20,7 @@ var Chunk653598 = require("./653598.js"),
   Chunk321769 = require("./321769.jsx"),
   Chunk322217 = require("./322217.jsx"),
   Chunk348000 = require("./348000.jsx");
-let x = {
+let b = {
   collections: [{
     id: "mana",
     name: "Mana",

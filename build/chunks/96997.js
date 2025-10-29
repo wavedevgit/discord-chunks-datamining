@@ -1,10 +1,11 @@
-/** Chunk was on 33622 **/
-/** chunk id: 96997, original params: e,a,t (module,exports,require) **/
+/** Chunk was on web.js **/
+/** chunk id: 96997, original params: e,t,n (module,exports,re quire) **/
+"use strict";
 require.d(exports, {
-  Z: () => u
+  Z: () => r
 });
-var u = {};
-u = {
+var r = {};
+r = {
   dateRange: e => `No ${e.startDate} l\u{12B}dz ${e.endDate}`,
   dateSelected: e => `Atlas\u{12B}ts: ${e.date}`,
   finishRangeSelectionPrompt: `Noklik\u{161}\u{137}iniet, lai pabeigtu datumu diapazona atlasi`,
