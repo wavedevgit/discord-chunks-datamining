@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk785717 = require("./785717.jsx"),
   Chunk221292 = require("./221292.js"),
   Chunk621853 = require("./621853.js"),
-  Chunk46841 = require("./46841.js"),
+  Chunk787309 = require("./787309.js"),
   Chunk687158 = require("./687158.js"),
   Chunk612600 = require("./612600.js"),
   Chunk510659 = require("./510659.jsx"),
@@ -87,7 +87,7 @@ function H(e) {
     }, Y, e))
   }, ee = (0, x.Z)({
     location: "UserProfileSidebar"
-  }), et = (null == B ? true : B.widgets) != null && B.widgets.length > 0, en = (0, _.S)({
+  }), et = (null == B ? true : B.widgets) != null && B.widgets.length > 0, en = (0, _.g)({
     location: "UserProfileSidebar"
   }), {
     defaultWishlistId: er
