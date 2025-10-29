@@ -81,7 +81,7 @@ function Y(e) {
     u.ZP.updatedUnsyncedSettings({
       activityPanelHeight: e
     })
-  }, []), ed = i.useRef(null), [eu, ep] = i.useState({
+  }, []), ed = i.useRef(null), [eu, eh] = i.useState({
     width: 0,
     height: 0
   });
@@ -89,27 +89,27 @@ function Y(e) {
     if (null == ed.current) return;
     let e = new ResizeObserver(() => {
       var e, t, n, r;
-      ep({
+      eh({
         width: null != (n = null == (e = ed.current) ? true : e.clientWidth) ? n : 0,
         height: null != (r = null == (t = ed.current) ? true : t.clientHeight) ? r : 0
       })
     });
     return e.observe(ed.current), () => e.disconnect()
   }, []);
-  let eh = eu.width / Math.max(eu.height, 1) < G.I0,
+  let ep = eu.width / Math.max(eu.height, 1) < G.I0,
     ef = 0,
     eg = 0,
     em = (0, T.Z)(null == X ? true : X.id);
   if (!em) {
     let e = eu.width,
       t = eu.height;
-    eh ? ((t = eu.width / G.I0) > eu.height && (e = (t = eu.height) * G.I0), eg = (eu.height - t) / 2) : ((e = Math.min(eu.height * G.I0)) > eu.width && (t = (e = eu.width) / G.I0), ef = (eu.width - e) / 2)
+    ep ? ((t = eu.width / G.I0) > eu.height && (e = (t = eu.height) * G.I0), eg = (eu.height - t) / 2) : ((e = Math.min(eu.height * G.I0)) > eu.width && (t = (e = eu.width) / G.I0), ef = (eu.width - e) / 2)
   }
   let eb = en.get(null != (Y = null == X ? true : X.id) ? Y : ""),
-    e_ = (0, s.e7)([j.Z], () => j.Z.getChannelId()),
-    ey = (0, s.Wu)([v.ZP], () => {
+    e_ = (0, s.e7)([v.Z], () => v.Z.getChannelId()),
+    ey = (0, s.Wu)([j.ZP], () => {
       var e;
-      return null == ee ? [] : Array.from(null != (e = null == eb ? true : eb.embeddedActivity.userIds) ? e : []).map(e => v.ZP.getMember(ee.guild_id, e))
+      return null == ee ? [] : Array.from(null != (e = null == eb ? true : eb.embeddedActivity.userIds) ? e : []).map(e => j.ZP.getMember(ee.guild_id, e))
     }, [eb, ee]),
     ex = i.useMemo(() => {
       let e = new Map;
@@ -117,8 +117,8 @@ function Y(e) {
         null != t && true !== t && e.set(t.userId, t)
       }), e
     }, [ey]),
-    ev = function(e, t, n) {
-      let r = (0, p.Z)(e),
+    ej = function(e, t, n) {
+      let r = (0, h.Z)(e),
         l = e !== r,
         [a, s] = i.useState(false);
       i.useEffect(() => {
@@ -126,7 +126,7 @@ function Y(e) {
         let e = setTimeout(() => s(false), 50);
         return () => clearTimeout(e)
       }, [e]);
-      let o = !h.Z.useReducedMotion && (l || a);
+      let o = !p.Z.useReducedMotion && (l || a);
       return i.useMemo(() => {
         var r, i;
         let l = o ? {
@@ -150,7 +150,7 @@ function Y(e) {
         }), r) : l
       }, [o, e, n, t])
     }(ea, es, q),
-    ej = (0, k.y)(),
+    ev = (0, k.y)(),
     {
       data: eO
     } = (0, R.K)(Z.B);
@@ -179,7 +179,7 @@ function Y(e) {
     children: e => (0, r.jsxs)("div", {
       className: a()(B.wrapper, W[el], e),
       ref: ei,
-      style: ev,
+      style: ej,
       children: [null == Q ? true : Q(), (0, r.jsxs)("div", {
         className: B.activityPanelContainer,
         children: [ea ? null : (0, r.jsx)("div", {
@@ -251,7 +251,7 @@ function Y(e) {
               text: F.intl.string(F.t["36gY4e"]),
               variant: "color-mix"
             })
-          }), ej ? (0, r.jsx)(y.Z, {
+          }), ev ? (0, r.jsx)(y.Z, {
             popoutOpen: false,
             onOpenPopout: () => {
               (0, f.yw)(H.rMx.ACTIVITY_POPOUT_POP_OUT_BUTTON_CLICKED), (0, L.Z)({

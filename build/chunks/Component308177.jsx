@@ -28,8 +28,8 @@ let x = (0, Chunk112724.Z)(e => {
   let {
     channel: a,
     width: x,
-    onScroll: v,
-    popoutType: j
+    onScroll: j,
+    popoutType: v
   } = e, {
     selectedParticipantId: O,
     largeStream: C,
@@ -53,7 +53,7 @@ let x = (0, Chunk112724.Z)(e => {
       speakerTileHeight: r
     }
   })(x, w), H = C ? x - 32 : Math.min(x - 64, 3 * U + 8), F = e => e === L.length - 1 || 0 === E && 1 === e, [B, V] = i.useState(false), [z, W] = i.useState(false);
-  return (0, r.jsx)(h.Z, {
+  return (0, r.jsx)(p.Z, {
     sections: k,
     renderSection: e => {
       let {
@@ -93,7 +93,7 @@ let x = (0, Chunk112724.Z)(e => {
               channel: a,
               participant: l[0],
               width: H,
-              popoutType: j
+              popoutType: v
             })
           }, "selected-participant");
         case 1:
@@ -104,12 +104,12 @@ let x = (0, Chunk112724.Z)(e => {
               channel: a,
               participants: l,
               selectedParticipant: Z,
-              popoutType: j
+              popoutType: v
             })
           }, "speakers-".concat(t, "-").concat(n));
         case 2:
           if (z) return null;
-          return (0, r.jsx)(p.Z, {
+          return (0, r.jsx)(h.Z, {
             channel: a,
             participants: l,
             maxTiles: R
@@ -130,6 +130,6 @@ let x = (0, Chunk112724.Z)(e => {
     footerHeight: e => 1 === e ? 8 : 0 === e ? 12 : 88 * !!F(e),
     className: _.scroller,
     chunkSize: 60,
-    onScroll: v
+    onScroll: j
   })
 })

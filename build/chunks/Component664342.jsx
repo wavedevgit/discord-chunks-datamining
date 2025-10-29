@@ -104,13 +104,13 @@ function N(e) {
     channel: t,
     closePopout: n,
     onSelect: i
-  } = e, y = (0, c.Z)(t, "Sidebar Overflow"), x = (0, u.Z)(t), O = (0, g.Z)(t), C = (0, m.Z)(t), I = (0, a.Z)(t), Z = (0, d.Z)(t), P = (0, f.Z)(t.id), T = (0, h.Z)(t), N = (0, o.Z)(t), R = (0, s.Z)(t), w = (0, _.Z)({
+  } = e, y = (0, c.Z)(t, "Sidebar Overflow"), x = (0, u.Z)(t), O = (0, g.Z)(t), C = (0, m.Z)(t), I = (0, a.Z)(t), Z = (0, d.Z)(t), P = (0, f.Z)(t.id), T = (0, p.Z)(t), N = (0, o.Z)(t), R = (0, s.Z)(t), w = (0, _.Z)({
     id: t.id,
     label: E.intl.string(E.t.DQ797g)
-  }), A = (0, b.Z)(t), D = (0, p.Z)(t);
+  }), A = (0, b.Z)(t), D = (0, h.Z)(t);
 
   function L() {
-    (0, v.Kh)(t.id)
+    (0, j.Kh)(t.id)
   }
   return (0, r.jsxs)(l.v2r, {
     navId: "thread-context",
@@ -134,7 +134,7 @@ function N(e) {
         icon: l.rgF,
         action: function() {
           L(), setTimeout(() => {
-            j.S.dispatch(S.CkL.FOCUS_SEARCH, {
+            v.S.dispatch(S.CkL.FOCUS_SEARCH, {
               prefillCurrentChannel: false
             })
           }, 2e3)
@@ -144,7 +144,7 @@ function N(e) {
         label: E.intl.string(E.t["2BSH7n"]),
         icon: l.rgF,
         action: function() {
-          L(), j.S.dispatch(S.CkL.TOGGLE_CHANNEL_PINS)
+          L(), v.S.dispatch(S.CkL.TOGGLE_CHANNEL_PINS)
         }
       })]
     }), (0, r.jsxs)(l.kSQ, {

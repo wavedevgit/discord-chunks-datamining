@@ -64,8 +64,8 @@ function E(e) {
     searchMode: l,
     onSearchModeChange: o,
     totalResults: c,
-    isIndexing: p,
-    isSearching: h,
+    isIndexing: h,
+    isSearching: p,
     documentsIndexed: _,
     selectedChannelId: x
   } = e, E = (0, m.nP)({
@@ -75,7 +75,7 @@ function E(e) {
   }), T = E || P, N = (0, y.I)(t), {
     totalFilters: R
   } = (0, b.p4)(N, t), D = i.useMemo(() => {
-    if (t.type === v.aib.DMS) {
+    if (t.type === j.aib.DMS) {
       var e, n;
       let t = null != (n = null == (e = (0, f.$G)(N).channel_id) ? true : e.length) ? n : 0;
       return t > 0 ? O.intl.format(O.t.A2dqWG, {
@@ -83,10 +83,10 @@ function E(e) {
       }) : O.intl.string(O.t.tc619d)
     }
     return null
-  }, [t.type, N]), [L, M] = i.useState(null), k = i.useMemo(() => h ? [] : [s.z.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER], [h]), [U, G] = (0, u.US)(k), H = U === s.z.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER, F = i.useCallback(e => {
-    null != e && G(j.L.USER_DISMISS), M(e)
+  }, [t.type, N]), [L, M] = i.useState(null), k = i.useMemo(() => p ? [] : [s.z.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER], [p]), [U, G] = (0, u.US)(k), H = U === s.z.CROSS_DM_SEARCH_SETTING_EDUCATION_POPOVER, F = i.useCallback(e => {
+    null != e && G(v.L.USER_DISMISS), M(e)
   }, [G]), B = i.useCallback(e => {
-    G("user:explicit" === e ? j.L.USER_DISMISS : j.L.AUTO_DISMISS)
+    G("user:explicit" === e ? v.L.USER_DISMISS : v.L.AUTO_DISMISS)
   }, [G]), V = i.useCallback(() => {
     F(null), (0, d.ZDy)(async () => {
       let {
@@ -100,7 +100,7 @@ function E(e) {
     filterCount: R
   }) : O.intl.string(O.t.UdhTtk), [R]), W = (0, g.u5)({
     location: "SearchHeader"
-  }), Y = t.type === v.aib.DMS || t.type === v.aib.CHANNEL, q = i.useMemo(() => T && W ? (0, r.jsxs)("div", {
+  }), Y = t.type === j.aib.DMS || t.type === j.aib.CHANNEL, q = i.useMemo(() => T && W ? (0, r.jsxs)("div", {
     className: C.searchModeAndFiltersContainer,
     children: [(0, r.jsx)(d.Button, {
       variant: "secondary",
@@ -157,15 +157,15 @@ function E(e) {
     onItemSelect: o,
     children: [(0, r.jsx)(d.njP.Item, {
       className: C.searchHeaderTab,
-      id: v.QIO.NEWEST,
+      id: j.QIO.NEWEST,
       children: O.intl.string(O.t.rLjqbS)
     }), (0, r.jsx)(d.njP.Item, {
       className: C.searchHeaderTab,
-      id: v.QIO.OLDEST,
+      id: j.QIO.OLDEST,
       children: O.intl.string(O.t.a1BaUr)
     }), (0, r.jsx)(d.njP.Item, {
       className: C.searchHeaderTab,
-      id: v.QIO.MOST_RELEVANT,
+      id: j.QIO.MOST_RELEVANT,
       children: O.intl.string(O.t.FtR97k)
     })]
   }), [z, V, T, L, W, Y, o, t, l, x, H, F, B]);
@@ -179,8 +179,8 @@ function E(e) {
       children: (0, r.jsx)(Z, {
         totalResults: c,
         subtitle: D,
-        isIndexing: p,
-        isSearching: h,
+        isIndexing: h,
+        isSearching: p,
         documentsIndexed: _
       })
     }), q]
@@ -230,7 +230,7 @@ function T(e) {
         color: "text-muted",
         children: (0, r.jsx)(d.Anchor, {
           className: C.helpdeskLink,
-          href: h.Z.getArticleURL(v.BhN.SEARCH_INDEXING),
+          href: p.Z.getArticleURL(j.BhN.SEARCH_INDEXING),
           children: O.intl.string(O.t["G3EA+4"])
         })
       }), (0, r.jsx)(P, {})]
@@ -278,11 +278,11 @@ function w(e) {
     setOpenPopout: s,
     onPopoverRequestClose: c,
     isPopoverVisible: u
-  } = e, h = i.useRef(null), f = null != (t = p.rR.useSetting()) ? t : x.K, g = i.useCallback(e => {
+  } = e, p = i.useRef(null), f = null != (t = h.rR.useSetting()) ? t : x.K, g = i.useCallback(e => {
     if (f !== e) {
       if (e) {
         let e = {
-          type: v.aib.DMS
+          type: j.aib.DMS
         };
         _.Z.transitionQueryStateToSearchContext(n, e, t => {
           _.Z.cleanUpPrivateChannelSearchState(), _.Z.fetchMessages({
@@ -293,7 +293,7 @@ function w(e) {
         })
       } else {
         let e = {
-          type: v.aib.CHANNEL,
+          type: j.aib.CHANNEL,
           channelId: l
         };
         _.Z.transitionQueryStateToSearchContext(n, e, t => {
@@ -304,14 +304,14 @@ function w(e) {
           })
         })
       }
-      p.rR.updateSetting(e)
+      h.rR.updateSetting(e)
     }
   }, [n, l, f]), m = i.useMemo(() => ({
     align: "end"
   }), []);
   return (0, r.jsxs)(r.Fragment, {
     children: [(0, r.jsx)(d.yRy, {
-      targetElementRef: h,
+      targetElementRef: p,
       shouldShow: a,
       animation: d.yRy.Animation.NONE,
       position: "bottom",
@@ -345,7 +345,7 @@ function w(e) {
         })
       },
       children: e => (0, r.jsx)(d.hU, S(I({}, e), {
-        buttonRef: h,
+        buttonRef: p,
         variant: "secondary",
         icon: d.ewm,
         onClick: () => {
@@ -355,7 +355,7 @@ function w(e) {
         size: "sm"
       }))
     }), (0, r.jsx)(o.J2, {
-      targetElementRef: h,
+      targetElementRef: p,
       shouldShow: u,
       onRequestClose: c,
       title: O.intl.string(O.t.qha2Zv),
@@ -373,13 +373,13 @@ function A(e) {
     setOpenPopout: a
   } = e, s = i.useRef(null), o = i.useMemo(() => [{
     label: O.intl.string(O.t.CbaapP),
-    value: v.QIO.NEWEST
+    value: j.QIO.NEWEST
   }, {
     label: O.intl.string(O.t.OukXZj),
-    value: v.QIO.OLDEST
+    value: j.QIO.OLDEST
   }, {
     label: O.intl.string(O.t.q8gB52),
-    value: v.QIO.MOST_RELEVANT
+    value: j.QIO.MOST_RELEVANT
   }], []);
   return (0, r.jsx)(d.yRy, {
     targetElementRef: s,

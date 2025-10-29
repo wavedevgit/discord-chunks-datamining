@@ -40,11 +40,11 @@ function y(e) {
     return i
   }(e, ["channelId", "className"]);
   let x = i.useRef(null),
-    v = (0, a.e7)([f.ZP], () => f.ZP.getFocusedLayout() === g.MI.RESIZABLE),
-    j = i.useCallback(() => {
-      let e = v ? g.MI.NO_CHAT : g.MI.RESIZABLE;
-      (0, h.gC)(e)
-    }, [v]),
+    j = (0, a.e7)([f.ZP], () => f.ZP.getFocusedLayout() === g.MI.RESIZABLE),
+    v = i.useCallback(() => {
+      let e = j ? g.MI.NO_CHAT : g.MI.RESIZABLE;
+      (0, p.gC)(e)
+    }, [j]),
     {
       unreadCount: O,
       mentionCount: C
@@ -67,11 +67,11 @@ function y(e) {
       var e;
       null == (e = x.current) || e.focus()
     }, []);
-  (0, p.yp)({
+  (0, h.yp)({
     event: m.CkL.FOCUS_CHAT_BUTTON,
     handler: I
   });
-  let S = v ? b.intl.string(b.t["5MstTl"]) : b.intl.string(b.t.kkKapG),
+  let S = j ? b.intl.string(b.t["5MstTl"]) : b.intl.string(b.t.kkKapG),
     E = [S];
   C > 0 && E.push(b.intl.formatToPlainString(b.t["3l1GOx"], {
     mentionCount: C
@@ -101,7 +101,7 @@ function y(e) {
     }({
       isTrayButton: true,
       buttonRef: x,
-      onClick: j,
+      onClick: v,
       label: S,
       "aria-label": E.join(", "),
       tooltipPosition: "top",

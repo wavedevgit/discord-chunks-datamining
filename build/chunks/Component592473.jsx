@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk6762 = require("./6762.js");
 
-function p(e) {
+function h(e) {
   let {
     width: t = 24,
     height: n = 24,
@@ -44,14 +44,14 @@ function p(e) {
   })
 }
 
-function h(e) {
+function p(e) {
   let {
     className: t,
     numRequestToSpeak: n
   } = e, i = n > 0;
   return (0, r.jsxs)("div", {
     className: a()(u.raisedHandIcon, t),
-    children: [(0, r.jsx)(p, {
+    children: [(0, r.jsx)(h, {
       isBadged: i
     }), i ? (0, r.jsx)(o.Text, {
       className: u.raisedHandCount,
@@ -107,7 +107,7 @@ function f(e) {
     onClick: u,
     label: n ? d.intl.string(d.t.gKGz7A) : d.intl.string(d.t.ImQ4dW),
     className: l,
-    iconComponent: () => (0, r.jsx)(h, {
+    iconComponent: () => (0, r.jsx)(p, {
       numRequestToSpeak: a,
       className: l
     })

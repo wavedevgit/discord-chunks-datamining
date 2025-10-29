@@ -122,14 +122,14 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
       isOwner: o,
       nick: c,
       user: d,
-      currentUser: p,
-      activities: h,
+      currentUser: h,
+      activities: p,
       applicationStream: g,
       status: _,
       channel: y,
       guildId: x,
-      isTyping: v,
-      isMobileOnline: j,
+      isTyping: j,
+      isMobileOnline: v,
       premiumSince: O,
       nameplate: C
     } = e, I = J(e, ["colorString", "colorStrings", "colorRoleName", "colorRoleId", "isOwner", "nick", "user", "currentUser", "activities", "applicationStream", "status", "channel", "guildId", "isTyping", "isMobileOnline", "premiumSince", "nameplate"]), S = i.useRef(null), [E, Z] = i.useState(false), T = null != O ? new Date(O) : null, N = i.useCallback(e => {
@@ -188,20 +188,20 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
           onContextMenu: N,
           shouldAnimateStatus: $,
           user: d,
-          currentUser: p,
+          currentUser: h,
           nick: c,
           status: _,
-          activities: h,
+          activities: p,
           applicationStream: g,
           isOwner: o,
           premiumSince: T,
           colorString: t,
           colorStrings: l,
           colorRoleName: a,
-          isTyping: v,
+          isTyping: j,
           channel: y,
           guildId: x,
-          isMobile: j,
+          isMobile: v,
           onClickPremiumGuildIcon: w,
           selected: E,
           itemProps: I,
@@ -223,10 +223,10 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
       channel: i,
       user: l,
       index: a
-    } = e, s = (0, c.JA)("".concat(a)), o = (0, p.e7)([U.Z], () => U.Z.isTyping(i.id, l.id)), d = (0, p.e7)([G.default], () => G.default.getCurrentUser()), u = (0, p.e7)([M.Z], () => {
+    } = e, s = (0, c.JA)("".concat(a)), o = (0, h.e7)([U.Z], () => U.Z.isTyping(i.id, l.id)), d = (0, h.e7)([G.default], () => G.default.getCurrentUser()), u = (0, h.e7)([M.Z], () => {
       var e;
       return null != t ? null == (e = M.Z.getRole(i.guild_id, t)) ? true : e.name : true
-    }, [i, t]), h = (0, N.K)({
+    }, [i, t]), p = (0, N.K)({
       user: l,
       guildId: i.guild_id,
       location: "ChannelMembers"
@@ -235,7 +235,7 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
       isTyping: o,
       currentUser: d,
       colorRoleName: u,
-      nameplate: h
+      nameplate: p
     }))
   }),
   er = Chunk647438.memo(function(e) {
@@ -248,7 +248,7 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
       roleId: t,
       guildId: l,
       size: 16
-    }), s = (0, p.e7)([D.default], () => new Intl.NumberFormat(D.default.locale).format(i), [i]);
+    }), s = (0, h.e7)([D.default], () => new Intl.NumberFormat(D.default.locale).format(i), [i]);
     return t === W.Skl.UNKNOWN ? (0, r.jsx)("div", {
       className: q.membersGroup,
       children: (0, r.jsx)("div", {
@@ -256,7 +256,7 @@ let $ = Chunk998502.ZP.getEnableHardwareAcceleration(),
       })
     }) : (0, r.jsxs)(E.Z, {
       className: q.membersGroup,
-      children: [(0, r.jsx)(h.nn4, {
+      children: [(0, r.jsx)(p.nn4, {
         children: Y.intl.format(Y.t.Uaqbke, {
           title: n,
           count: i
@@ -333,9 +333,9 @@ class el extends Chunk647438.Component {
         children: s => (0, r.jsx)("aside", {
           className: a()(q.membersWrap, q.hiddenMembers),
           "aria-labelledby": s,
-          children: (0, r.jsx)(h.y5t, {
-            component: (0, r.jsx)(h.nn4, {
-              children: (0, r.jsx)(h.H, {
+          children: (0, r.jsx)(p.y5t, {
+            component: (0, r.jsx)(p.nn4, {
+              children: (0, r.jsx)(p.H, {
                 id: s,
                 children: Y.intl.format(Y.t.JBQxV6, {
                   channel: n.name
@@ -348,7 +348,7 @@ class el extends Chunk647438.Component {
                   ref: s,
                   role: o
                 } = n, c = J(n, ["ref", "role"]);
-                return (0, r.jsx)(h.aVo, Q({
+                return (0, r.jsx)(p.aVo, Q({
                   innerRole: o,
                   innerAriaLabel: Y.intl.string(Y.t["9Oq93m"]),
                   ref: e => {
@@ -452,8 +452,8 @@ class el extends Chunk647438.Component {
             isOwner: c,
             isMobileOnline: d,
             nick: u,
-            activities: p,
-            applicationStream: h,
+            activities: h,
+            applicationStream: p,
             premiumSince: f
           } = a;
           return (0, r.jsx)(en, {
@@ -464,8 +464,8 @@ class el extends Chunk647438.Component {
             status: o,
             isOwner: c,
             nick: u,
-            activities: this._areActivitiesExperimentallyHidden ? [] : p,
-            applicationStream: h,
+            activities: this._areActivitiesExperimentallyHidden ? [] : h,
+            applicationStream: p,
             channel: l,
             guildId: l.guild_id,
             premiumSince: f,
@@ -571,7 +571,7 @@ function ea(e) {
     className: n
   } = e, {
     analyticsLocations: l
-  } = (0, v.ZP)(y.Z.MEMBER_LIST), s = (0, p.e7)([_.Z], () => _.Z.keyboardModeEnabled), o = (0, p.cj)([L.ZP], () => L.ZP.getProps(t.guild_id, t.id)), {
+  } = (0, j.ZP)(y.Z.MEMBER_LIST), s = (0, h.e7)([_.Z], () => _.Z.keyboardModeEnabled), o = (0, h.cj)([L.ZP], () => L.ZP.getProps(t.guild_id, t.id)), {
     rows: u,
     groups: f,
     version: g,
@@ -580,7 +580,7 @@ function ea(e) {
     memberStoreProps: o,
     channelId: t.id,
     guildId: t.guild_id
-  }), b = i.useRef(null), x = (0, h.UBm)("lg") + (0, h.UBm)("xxs"), j = i.useCallback((e, t) => {
+  }), b = i.useRef(null), x = (0, p.UBm)("lg") + (0, p.UBm)("xxs"), v = i.useCallback((e, t) => {
     let n = b.current;
     if (null == n) return;
     let r = parseInt(t, 10),
@@ -614,12 +614,12 @@ function ea(e) {
     })
   }), []), I = (0, d.ZP)({
     id: "members-".concat(t.id),
-    setFocus: j,
+    setFocus: v,
     isEnabled: s,
     scrollToStart: O,
     scrollToEnd: C
   });
-  return (0, r.jsx)(v.Gt, {
+  return (0, r.jsx)(j.Gt, {
     value: l,
     children: (0, r.jsx)("div", {
       className: a()(q.container, n),

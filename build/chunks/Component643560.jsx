@@ -13,7 +13,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk683818 = require("./683818.js"),
   Chunk388032 = require("./388032.jsx");
 
-function p(e) {
+function h(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
@@ -32,7 +32,7 @@ function p(e) {
   return e
 }
 
-function h(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -63,16 +63,16 @@ function f(e) {
   i.useEffect(() => {
     _ || y || null != x || (0, a.Zy)()
   });
-  let v = () => {
+  let j = () => {
     c.kx(t.channelId, t.guildId)
   };
 
-  function j() {
+  function v() {
     (0, a.Zy)(), null == g || g()
   }
   return (0, r.jsxs)(l.v2r, {
     navId: "guild-entry-context",
-    onClose: j,
+    onClose: v,
     "aria-label": u.intl.string(u.t.HpQykc),
     onSelect: f,
     children: [(0, r.jsxs)(l.kSQ, {
@@ -84,20 +84,20 @@ function f(e) {
             let {
               default: e
             } = await n.e("34191").then(n.bind(n, 303647));
-            return n => (0, r.jsx)(e, h(p({}, n), {
+            return n => (0, r.jsx)(e, p(h({}, n), {
               entry: t
             }))
-          }), j()
+          }), v()
         }
       }) : null, y ? (0, r.jsx)(l.sNh, {
         id: "remove-from-hub",
         label: u.intl.string(u.t.KUxYWH),
         action: function() {
-          (0, l.h7j)(e => (0, r.jsx)(l.ConfirmModal, h(p({
+          (0, l.h7j)(e => (0, r.jsx)(l.ConfirmModal, p(h({
             header: u.intl.string(u.t.KUxYWH),
             confirmText: u.intl.string(u.t.N86XcP),
             cancelText: u.intl.string(u.t["ETE/oC"]),
-            onConfirm: v
+            onConfirm: j
           }, e), {
             children: (0, r.jsx)(l.Text, {
               variant: "text-md/normal",
@@ -105,14 +105,14 @@ function f(e) {
                 guildName: t.name
               })
             })
-          }))), j()
+          }))), v()
         },
         color: "danger"
       }) : null, b ? null : (0, r.jsx)(l.sNh, {
         id: "report-server-listing",
         label: u.intl.string(u.t.Aen9eh),
         action: function() {
-          null != t && ((0, o.sq)(t), j())
+          null != t && ((0, o.sq)(t), v())
         },
         icon: l.U65,
         color: "danger"

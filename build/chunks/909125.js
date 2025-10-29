@@ -19,11 +19,11 @@ function c(e) {
     n || d(t)
   }, [t, n]);
   let u = c > i.vU + a.vpv,
-    p = (0, l.nd)({
+    h = (0, l.nd)({
       location: "useSearchResultsPagination"
     });
   return {
-    isPaginationTotalCountLimited: u && !p,
+    isPaginationTotalCountLimited: u && !h,
     paginationTotalCount: Math.min(c, s),
     paginationMaxIndex: o
   }

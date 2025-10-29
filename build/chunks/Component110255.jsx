@@ -1,7 +1,7 @@
 /** Chunk was on 91053 **/
 /** chunk id: 110255, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => p
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -15,26 +15,26 @@ var Chunk442837 = require("./442837.js"),
   Chunk131704 = require("./131704.js"),
   Chunk430824 = require("./430824.js");
 
-function h(e) {
+function p(e) {
   let {
     channel: t,
     closePopout: n,
-    onSelect: h,
+    onSelect: p,
     navId: f,
     label: g,
     location: m,
     includeGuildMute: b
-  } = e, _ = (0, s.c)(t), y = (0, o.EQ)(t), x = (0, i.e7)([p.Z], () => p.Z.getGuild(t.guild_id)), v = (0, c.Z)(x), j = (0, d.Mn)("ChannelNotificationSettingsPopoutMenu") && u.$N.has(t.type);
+  } = e, _ = (0, s.c)(t), y = (0, o.EQ)(t), x = (0, i.e7)([h.Z], () => h.Z.getGuild(t.guild_id)), j = (0, c.Z)(x), v = (0, d.Mn)("ChannelNotificationSettingsPopoutMenu") && u.$N.has(t.type);
   return (0, r.jsxs)(l.v2r, {
     navId: f,
     onClose: n,
     "aria-label": g,
-    onSelect: h,
+    onSelect: p,
     children: [(0, r.jsx)(l.kSQ, {
       children: (0, a.ZP)(t, m)
     }), b ? (0, r.jsx)(l.kSQ, {
-      children: v
-    }) : null, j ? y : (0, r.jsx)(l.kSQ, {
+      children: j
+    }) : null, v ? y : (0, r.jsx)(l.kSQ, {
       children: _
     })]
   })

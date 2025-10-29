@@ -58,7 +58,7 @@ function w(e) {
     channel: s,
     status: d,
     activities: u
-  } = e, p = (0, a.e7)([y.Z], () => null != y.Z.getTypingUsers(s.id)[t.id]), f = (0, a.e7)([x.default], () => x.default.getCurrentUser()), v = (0, a.e7)([b.Z], () => b.Z.isMobileOnline(t.id)), O = (0, a.e7)([_.Z], () => _.Z.getNickname(t.id)), I = (0, h.Z)(t.id), P = i.useRef(null), N = e => {
+  } = e, h = (0, a.e7)([y.Z], () => null != y.Z.getTypingUsers(s.id)[t.id]), f = (0, a.e7)([x.default], () => x.default.getCurrentUser()), j = (0, a.e7)([b.Z], () => b.Z.isMobileOnline(t.id)), O = (0, a.e7)([_.Z], () => _.Z.getNickname(t.id)), I = (0, p.Z)(t.id), P = i.useRef(null), N = e => {
     (0, o.jW)(e, async () => {
       let {
         default: e
@@ -85,9 +85,9 @@ function w(e) {
         decoration: "never"
       })),
       n = "<@".concat(t.id, ">");
-    j.S.dispatch(E.CkL.TEXTAREA_FOCUS, {
+    v.S.dispatch(E.CkL.TEXTAREA_FOCUS, {
       channelId: s.id
-    }), j.S.dispatchToLastSubscribed(E.CkL.INSERT_TEXT, {
+    }), v.S.dispatchToLastSubscribed(E.CkL.INSERT_TEXT, {
       plainText: e,
       rawText: n
     }), c.Z.startTyping(s.id)
@@ -129,14 +129,14 @@ function w(e) {
         isOwner: t.id === s.ownerId,
         ownerTooltipText: Z.intl.string(Z.t["MRXZ+x"]),
         shouldAnimateStatus: R,
-        isTyping: p,
+        isTyping: h,
         status: d,
         activities: u,
         applicationStream: I,
         channel: s,
         onContextMenu: N,
         selected: D,
-        isMobile: v,
+        isMobile: j,
         nick: O,
         nameplate: A,
         onClick: e => {
@@ -194,13 +194,13 @@ function D(e) {
     }
   }, [t], A);
   i.useEffect(() => {
-    v.default.track(E.rMx.MEMBER_LIST_VIEWED, {
+    j.default.track(E.rMx.MEMBER_LIST_VIEWED, {
       channel_id: t.id,
       channel_type: t.type,
       guild_id: t.guild_id
     })
   }, [t.guild_id, t.id, t.type]);
-  let h = l && c.every(e => e.user.isStaff());
+  let p = l && c.every(e => e.user.isStaff());
   return (0, r.jsx)(u.Gt, {
     value: o,
     children: (0, r.jsx)("div", {
@@ -212,8 +212,8 @@ function D(e) {
           fade: true,
           children: [(0, r.jsxs)(f.Z, {
             className: P.membersGroup,
-            children: ["".concat(Z.intl.string(Z.t["9Oq93m"]), "—").concat(c.length, " "), h && (0, r.jsx)(p.Z, {
-              type: p.Z.Types.STAFF_ONLY_DM
+            children: ["".concat(Z.intl.string(Z.t["9Oq93m"]), "—").concat(c.length, " "), p && (0, r.jsx)(h.Z, {
+              type: h.Z.Types.STAFF_ONLY_DM
             })]
           }), c.map(e => (0, r.jsx)(w, {
             user: e.user,

@@ -75,13 +75,13 @@ function H(e) {
   }), q = i.useRef(null), {
     isHoveringOrFocusing: K,
     isHovering: Q
-  } = (0, p.Z)(q), X = (0, v.$m)(), J = (0, o.q_F)({
+  } = (0, h.Z)(q), X = (0, j.$m)(), J = (0, o.q_F)({
     opacity: +(null != X.interactionType),
     config: {
       duration: 150
     }
   }), $ = e => {
-    (0, j.openUserProfileModal)(G({
+    (0, v.openUserProfileModal)(G({
       sourceAnalyticsLocations: W,
       hideRestrictedProfile: true
     }, Y, e))
@@ -104,7 +104,7 @@ function H(e) {
       fetchStartedAt: null == B ? true : B.fetchStartedAt,
       fetchEndedAt: null == B ? true : B.fetchEndedAt,
       isLoaded: null == B ? true : B.isLoaded,
-      children: (0, r.jsx)(v.NJ, {
+      children: (0, r.jsx)(j.NJ, {
         value: X,
         children: (0, r.jsxs)(S.Z, {
           ref: q,
@@ -184,7 +184,7 @@ function H(e) {
             handleOpenProfile: $,
             analyticsLocations: W,
             context: Y
-          }), (null == B ? true : B.profileEffect) != null && (0, r.jsx)(h.Z, {
+          }), (null == B ? true : B.profileEffect) != null && (0, r.jsx)(p.Z, {
             skuId: null == B || null == (t = B.profileEffect) ? true : t.skuId,
             isHovering: Q,
             urlQueryString: "dmView"

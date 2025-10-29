@@ -26,8 +26,8 @@ function x(e) {
     channel: t,
     appContext: n,
     popoutOpen: x,
-    popoutWindow: v,
-    currentWindow: j
+    popoutWindow: j,
+    currentWindow: v
   } = e, {
     parentAnalyticsLocation: O
   } = (0, c.ZP)(), C = n === y.IlC.POPOUT, I = i.useRef(null), {
@@ -51,14 +51,14 @@ function x(e) {
       currentDocument: T,
       rootNode: N
     } = i.useMemo(() => {
-      let e = null != v && C ? v.document : document,
-        t = j.document.getElementById("app-mount");
+      let e = null != j && C ? j.document : document,
+        t = v.document.getElementById("app-mount");
       return {
-        currentWindow: j,
+        currentWindow: v,
         currentDocument: e,
         rootNode: t
       }
-    }, [v, C, j]),
+    }, [j, C, v]),
     R = x && !C,
     w = E === y.WtW.VIDEO && Z && !R,
     A = i.useCallback((e, r) => {
@@ -117,11 +117,11 @@ function x(e) {
   }, [S, C]), i.useEffect(() => {
     null != N && I.current === y.WtW.VIDEO && E === y.WtW.VOICE && (0, _.Pr)(N, T)
   }, [T, E, I, N]), i.useEffect(() => {
-    !Z && C && a.Z.wait(() => p.xv(y.KJ3.CHANNEL_CALL_POPOUT))
-  }, [Z, C]), w) ? (0, r.jsx)(h.Z, {
+    !Z && C && a.Z.wait(() => h.xv(y.KJ3.CHANNEL_CALL_POPOUT))
+  }, [Z, C]), w) ? (0, r.jsx)(p.Z, {
     themeable: false,
     node: N,
-    guestWindow: v,
+    guestWindow: j,
     onClick: L(S)
   }) : null
 }

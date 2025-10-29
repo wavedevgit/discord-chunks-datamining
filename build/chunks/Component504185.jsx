@@ -80,7 +80,7 @@ function ei(e) {
 }
 let el = "HasBeenInStageChannel",
   ea = e => {
-    (0, j.v)(f.Z.VOICE_CONTROL_TRAY, j.d.STAY_ON_TOP, e), C.hY(ee.KJ3.CHANNEL_CALL_POPOUT, e)
+    (0, v.v)(f.Z.VOICE_CONTROL_TRAY, v.d.STAY_ON_TOP, e), C.hY(ee.KJ3.CHANNEL_CALL_POPOUT, e)
   };
 
 function es(e) {
@@ -93,10 +93,10 @@ function es(e) {
     selectedParticipant: c
   } = e, {
     parentAnalyticsLocation: d
-  } = (0, g.ZP)(), p = t.getGuildId(), h = (0, o.e7)([k.Z], () => k.Z.getMostRecentSelectedTextChannelId(p), [p]), f = A.default.getId(), _ = !(0, o.e7)([m.Z], () => m.Z.isFullscreenInContext(n)) && (!U.isPlatformEmbedded || U.isPlatformEmbedded && G.ZP.supportsFeature(ee.eRX.POPOUT_WINDOWS)), y = null != c && c.type !== et.fO.ACTIVITY && c.user.id !== f, x = i.useMemo(() => {
+  } = (0, g.ZP)(), h = t.getGuildId(), p = (0, o.e7)([k.Z], () => k.Z.getMostRecentSelectedTextChannelId(h), [h]), f = A.default.getId(), _ = !(0, o.e7)([m.Z], () => m.Z.isFullscreenInContext(n)) && (!U.isPlatformEmbedded || U.isPlatformEmbedded && G.ZP.supportsFeature(ee.eRX.POPOUT_WINDOWS)), y = null != c && c.type !== et.fO.ACTIVITY && c.user.id !== f, x = i.useMemo(() => {
     var e;
     return null != (e = null == a ? true : a.window) ? e : window
-  }, [a]), v = (0, J.Z)({
+  }, [a]), j = (0, J.Z)({
     channel: t,
     appContext: n,
     popoutOpen: l,
@@ -116,15 +116,15 @@ function es(e) {
     }) : null, _ ? (0, r.jsx)(N.Z, {
       popoutOpen: l,
       onOpenPopout: () => {
-        (0, j.v)(d, j.d.POPOUT, true), (() => {
+        (0, v.v)(d, v.d.POPOUT, true), (() => {
           let e = t.getGuildId();
-          null != e && null != h && (0, S.XU)(e, h), C.hP(t)
+          null != e && null != p && (0, S.XU)(e, p), C.hP(t)
         })()
       },
       onClosePopout: () => {
-        (0, j.v)(d, j.d.POPOUT, false), u.Z.wait(() => C.xv(ee.KJ3.CHANNEL_CALL_POPOUT))
+        (0, v.v)(d, v.d.POPOUT, false), u.Z.wait(() => C.xv(ee.KJ3.CHANNEL_CALL_POPOUT))
       }
-    }) : null, v]
+    }) : null, j]
   })
 }
 
@@ -146,15 +146,15 @@ function ec(e) {
       channel: c,
       toggleRequestToSpeakSidebar: d,
       showRequestToSpeakSidebar: u,
-      popoutWindow: p,
-      popoutWindowAlwaysOnTop: h,
+      popoutWindow: h,
+      popoutWindowAlwaysOnTop: p,
       popoutOpen: b,
       popoutType: y,
       chatOpen: x,
-      idleProps: v
+      idleProps: j
     } = e,
     {
-      analyticsLocations: j
+      analyticsLocations: v
     } = (0, g.ZP)(f.Z.VOICE_CONTROL_TRAY),
     C = (0, O.bp)(),
     I = (0, o.e7)([k.Z], () => k.Z.getVoiceChannelId() === c.id, [c.id]),
@@ -196,20 +196,20 @@ function ec(e) {
     },
     disableGradients: !I || 0 === R && T.e.TOP,
     renderBottomCenter: () => I ? (0, r.jsx)(g.Gt, {
-      value: j,
+      value: v,
       children: (0, r.jsx)(Q.Z, {
         channel: c,
         isOnStartStageScreen: A
       })
     }) : null,
     renderBottomRight: () => I ? (0, r.jsx)(g.Gt, {
-      value: j,
+      value: v,
       children: (0, r.jsx)(es, {
         channel: c,
         appContext: C,
         popoutOpen: b,
-        popoutWindow: p,
-        popoutWindowAlwaysOnTop: h,
+        popoutWindow: h,
+        popoutWindowAlwaysOnTop: p,
         selectedParticipant: Z
       })
     }) : null,
@@ -229,7 +229,7 @@ function ec(e) {
     screenMessage: N ? {
       mainText: en.intl.string(en.t.J5bXZU)
     } : null
-  }, v), n = n = {
+  }, j), n = n = {
     children: !N && l
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
@@ -250,12 +250,12 @@ function ed(e) {
   } = e, [s, u] = i.useState(false), b = i.useCallback(() => {
     u(!s)
   }, [s, u]), {
-    popoutWindow: j,
+    popoutWindow: v,
     popoutWindowAlwaysOnTop: C
   } = (0, o.cj)([I.Z], () => ({
     popoutWindow: I.Z.getWindow(ee.KJ3.CHANNEL_CALL_POPOUT),
     popoutWindowAlwaysOnTop: I.Z.getIsAlwaysOnTop(ee.KJ3.CHANNEL_CALL_POPOUT)
-  })), S = null != j && !j.closed, {
+  })), S = null != v && !v.closed, {
     analyticsLocations: E
   } = (0, g.ZP)(f.Z.STAGE_CHANNEL_CALL), P = (0, O.bp)(), {
     chatOpen: T,
@@ -265,10 +265,10 @@ function ed(e) {
     participantsListOpen: m.Z.getParticipantsListOpen(t.id)
   }), [t.id]), R = (0, o.e7)([L.Z], () => L.Z.getGuild(t.guild_id), [t.guild_id]), {
     hasParticipantsPanel: w
-  } = (0, v.Z)({
+  } = (0, j.Z)({
     location: "StageChannelCall"
   });
-  (0, h.ZP)(() => {
+  (0, p.ZP)(() => {
     null == c.K.get(el) && ((0, d.ZDy)(async () => {
       let {
         default: e
@@ -279,7 +279,7 @@ function ed(e) {
   let {
     width: A = 0,
     ref: D
-  } = (0, p.ZP)(), M = A - 550, k = !S || S && P === ee.IlC.POPOUT;
+  } = (0, h.ZP)(), M = A - 550, k = !S || S && P === ee.IlC.POPOUT;
   return (0, r.jsx)(g.Gt, {
     value: E,
     children: (0, r.jsxs)(_.B2, {
@@ -299,7 +299,7 @@ function ed(e) {
                 channel: t,
                 toggleRequestToSpeakSidebar: b,
                 showRequestToSpeakSidebar: s,
-                popoutWindow: j,
+                popoutWindow: v,
                 popoutWindowAlwaysOnTop: C,
                 popoutOpen: S,
                 popoutType: l,
