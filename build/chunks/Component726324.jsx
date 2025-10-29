@@ -19,11 +19,11 @@ function u(e) {
     guild: u,
     description: d,
     children: p
-  } = e, f = a.QK.useSetting(), h = (0, s.n)(), [m, g] = (0, o.Z)(t, h && f);
+  } = e, f = a.QK.useSetting(), m = (0, s.n)(), [h, g] = (0, o.Z)(t, m && f);
   return (0, r.jsxs)("div", {
     className: c.container,
     children: [(0, r.jsx)("div", {
-      ref: m,
+      ref: h,
       className: c.coverImageContainer,
       children: null != g && (0, r.jsx)("img", {
         src: g,

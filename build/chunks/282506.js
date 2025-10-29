@@ -43,7 +43,7 @@ function y() {
           let {
             userId: n
           } = t;
-          return !h.Z.isLocalVideoDisabled(n) && !o.Z.isParticipantPoppedOut(e, n)
+          return !m.Z.isLocalVideoDisabled(n) && !o.Z.isParticipantPoppedOut(e, n)
         }) || require)) returntrue;
       let r = Chunk819640.Z.hasLayers();
       return !(r && Chunk819640.Z.getLayers().includes(Chunk981631.S9g.RTC_DEBUG)) && (!!r || module === exports)

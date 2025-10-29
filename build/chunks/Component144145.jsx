@@ -74,7 +74,7 @@ function P(e) {
     });
     return n || !i ? null : (0, r.jsx)(a.sNh, {
       id: "xbox-connect",
-      action: () => (0, g.openUserSettings)(m.n.CONNECTIONS_PANEL, {
+      action: () => (0, g.openUserSettings)(h.n.CONNECTIONS_PANEL, {
         section: C.oAB.CONNECTIONS
       }),
       label: S.intl.formatToPlainString(S.t.XWSHTb, {
@@ -85,7 +85,7 @@ function P(e) {
     let {
       currentActivities: t
     } = e, n = i.useContext(I.AnalyticsContext);
-    return (0, l.Wu)([f.ZP, E.Z, h.Z, O.Z, b.Z], () => t.filter(e => !(0, d.Z)(e.activity)).map(e => {
+    return (0, l.Wu)([f.ZP, E.Z, m.Z, O.Z, b.Z], () => t.filter(e => !(0, d.Z)(e.activity)).map(e => {
       let {
         activity: t,
         game: r
@@ -95,13 +95,13 @@ function P(e) {
         canJoin: null != t && (0, u.Z)(t, C.xjy.JOIN) && t.type === C.IIU.PLAYING,
         canPlay: (0, v.t)({
           LibraryApplicationStore: E.Z,
-          LaunchableGameStore: h.Z,
+          LaunchableGameStore: m.Z,
           DispatchApplicationStore: O.Z,
           ConnectedAppsStore: b.Z,
           applicationId: r.id,
           branchId: null != i ? i.branchId : null
         }),
-        isLaunching: h.Z.launchingGames.has(r.id),
+        isLaunching: m.Z.launchingGames.has(r.id),
         isRunning: f.ZP.getRunningVerifiedApplicationIds().includes(r.id),
         location: n.location
       })

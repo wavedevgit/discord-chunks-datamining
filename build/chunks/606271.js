@@ -98,7 +98,7 @@ class j {
       if (0 === this.rpcServer.subscriptions.length) return;
       let t = 0 !== e.speakingFlags ? y.zMe.SPEAKING_START : y.zMe.SPEAKING_STOP;
       if (e.context === T.Yn.DEFAULT) {
-        let n = h.Z.getVoiceChannelId();
+        let n = m.Z.getVoiceChannelId();
         if (null != n) {
           let r = s.Z.getChannel(n);
           if (null == r) return;
@@ -205,9 +205,9 @@ class j {
         activity: l
       } = r;
       if (null == i || null == l || null == l.party_id) return;
-      let a = m.default.getUser(null == (t = r.author) ? true : t.id);
+      let a = h.default.getUser(null == (t = r.author) ? true : t.id);
       if (null == a) return;
-      let s = m.default.getCurrentUser();
+      let s = h.default.getCurrentUser();
       if (null == s || a.id === s.id) return;
       let o = l.type === y.mFx.JOIN_REQUEST ? d.Z.getApplicationActivity(s.id, i.id) : d.Z.getApplicationActivity(a.id, i.id);
       if (null == o || null == o.party || o.party.id !== l.party_id) return;
@@ -271,7 +271,7 @@ class j {
         }
       } = e;
       if (0 === this.rpcServer.subscriptions.length) return;
-      let r = m.default.getUser(t);
+      let r = h.default.getUser(t);
       if (null == r) return;
       let i = (0, O._J)(n, r);
       this.rpcServer.dispatchToSubscriptions(y.zMe.RELATIONSHIP_UPDATE, {}, e => (0, O.kb)(i, e.socket.application.id))
@@ -283,7 +283,7 @@ class j {
         }
       } = e;
       if (0 === this.rpcServer.subscriptions.length) return;
-      let r = m.default.getUser(t);
+      let r = h.default.getUser(t);
       if (null == r) return;
       let i = (0, O._J)(n, r);
       this.rpcServer.dispatchToSubscriptions(y.zMe.RELATIONSHIP_UPDATE, {}, e => (0, O.kb)(i, e.socket.application.id))
@@ -294,7 +294,7 @@ class j {
         }
       } = e;
       if (0 === this.rpcServer.subscriptions.length) return;
-      let n = m.default.getUser(t);
+      let n = h.default.getUser(t);
       if (null == n) return;
       let r = (0, O._J)(y.OGo.NONE, n);
       this.rpcServer.dispatchToSubscriptions(y.zMe.RELATIONSHIP_UPDATE, {}, e => (0, O.kb)(r, e.socket.application.id))
@@ -311,7 +311,7 @@ class j {
           })).values()) {
           let t = f.Z.getRelationshipType(e);
           if (t === y.OGo.NONE) continue;
-          let n = m.default.getUser(e);
+          let n = h.default.getUser(e);
           if (null == n) continue;
           let r = (0, O._J)(t, n);
           this.rpcServer.dispatchToSubscriptions(y.zMe.RELATIONSHIP_UPDATE, {}, e => (0, O.kb)(r, e.socket.application.id))
@@ -320,7 +320,7 @@ class j {
       if (0 !== this.rpcServer.subscriptions.length)
         for (let [e, t] of f.Z.getMutableRelationships().entries()) {
           if (t === y.OGo.NONE) continue;
-          let n = m.default.getUser(e);
+          let n = h.default.getUser(e);
           if (null == n) continue;
           let r = (0, O._J)(t, n);
           this.rpcServer.dispatchToSubscriptions(y.zMe.RELATIONSHIP_UPDATE, {}, e => (0, O.kb)(r, e.socket.application.id))
@@ -334,7 +334,7 @@ class j {
       if (0 === this.rpcServer.subscriptions.length) return;
       let n = f.Z.getRelationshipType(t);
       if (n === y.OGo.NONE) return;
-      let r = m.default.getUser(t);
+      let r = h.default.getUser(t);
       if (null == r) return;
       let i = (0, O._J)(n, r);
       this.rpcServer.dispatchToSubscriptions(y.zMe.RELATIONSHIP_UPDATE, {}, e => (0, O.kb)(i, e.socket.application.id))

@@ -266,8 +266,8 @@ let M = {
                   d = null != (i = c.searchParams.get("referrer_id")) ? i : true,
                   {
                     customId: p
-                  } = await (0, m.ur)(e, c.searchParams.get("link_id"), c.searchParams.get("custom_id"));
-                await (0, h.Z)({
+                  } = await (0, h.ur)(e, c.searchParams.get("link_id"), c.searchParams.get("custom_id"));
+                await (0, m.Z)({
                   targetApplicationId: e,
                   channelId: o,
                   analyticsLocations: [g.Z.DEEPLINK],

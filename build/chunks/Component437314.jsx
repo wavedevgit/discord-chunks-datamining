@@ -2,7 +2,7 @@
 /** chunk id: 437314, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b,
-  j: () => h
+  j: () => m
 }), require("./415506.js"), require("./388685.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,8 +22,8 @@ function f(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-var h = ((r = {}).SECTION_NO_RESULTS = "SECTION_NO_RESULTS", r);
-let m = Object.freeze({
+var m = ((r = {}).SECTION_NO_RESULTS = "SECTION_NO_RESULTS", r);
+let h = Object.freeze({
     SECTION_ALL: {
       lightSrc: require("./900933.js"),
       darkSrc: require("./67764.js"),
@@ -120,15 +120,15 @@ class _ extends Chunk647438.PureComponent {
       switch (e) {
         case u.pJs.ADD_FRIEND:
         case u.pJs.ALL:
-          return m.SECTION_ALL;
+          return h.SECTION_ALL;
         case u.pJs.ONLINE:
-          return m.SECTION_ONLINE;
+          return h.SECTION_ONLINE;
         case u.pJs.PENDING:
-          return m.SECTION_PENDING;
+          return h.SECTION_PENDING;
         case u.pJs.SUGGESTIONS:
-          return m.SECTION_SUGGESTIONS;
+          return h.SECTION_SUGGESTIONS;
         case "SECTION_NO_RESULTS":
-          return m.SECTION_NO_RESULTS;
+          return h.SECTION_NO_RESULTS;
         default:
           throw Error("FriendsEmptyState: Invalid empty state")
       }

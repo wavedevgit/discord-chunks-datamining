@@ -21,7 +21,7 @@ var r, Chunk951288 = require("./951288.js"),
   Chunk342687 = require("./342687.jsx"),
   Chunk933557 = require("./933557.js"),
   Chunk471445 = require("./471445.js"),
-  Chunk511618 = require("./511618.jsx"),
+  Chunk203247 = require("./203247.jsx"),
   Chunk884902 = require("./884902.js"),
   Chunk887120 = require("./887120.jsx"),
   Chunk926491 = require("./926491.js"),
@@ -530,7 +530,7 @@ class er extends H {
 }
 class ei extends H {
   renderContent() {
-    return (0, Chunk951288.jsx)(Chunk511618.Z, {
+    return (0, Chunk951288.jsx)(Chunk203247.Z, {
       emojis: this.props.emojis
     })
   }

@@ -47,13 +47,13 @@ let A = 15 * Chunk70956.Z.Millis.MINUTE,
       quest: a
     }), {
       partiedMembers: f,
-      applicationStreams: h,
-      currentActivities: m,
+      applicationStreams: m,
+      currentActivities: h,
       voiceChannels: g
-    } = t, _ = f.length, b = h.length, O = m.length, I = g.length > 0, T = p.o.useConfig({
+    } = t, _ = f.length, b = m.length, O = h.length, I = g.length > 0, T = p.o.useConfig({
       location: "itemcard"
     }).demureActivityCards, j = i.useCallback(() => {
-      let e = m.filter(e => {
+      let e = h.filter(e => {
         var t, n;
         return (null == (t = e.game) ? true : t.name) != null && (0, E.isGameApplicationType)(null == (n = e.game) ? true : n.type)
       }).map(e => e.game.name);
@@ -64,7 +64,7 @@ let A = 15 * Chunk70956.Z.Millis.MINUTE,
         in_voice_channel: I,
         games_detected: e
       })
-    }, [_, b, O, I, m]), P = o()(j, A);
+    }, [_, b, O, I, h]), P = o()(j, A);
     return null != c || null != d ? (0, r.jsx)(u.yRy, {
       targetElementRef: s,
       position: "left",

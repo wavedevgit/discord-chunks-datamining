@@ -17,14 +17,14 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk971108 = require("./971108.js");
 
-function m(e) {
+function h(e) {
   let {
     platform: t
   } = e;
   return t === p.YE.XBOX ? (0, r.jsx)(u.Z, {
-    className: h.icon
+    className: m.icon
   }) : t === p.YE.PLAYSTATION ? (0, r.jsx)(c.Z, {
-    className: h.icon
+    className: m.icon
   }) : null
 }
 
@@ -40,8 +40,8 @@ function g(e) {
   let g = null != n,
     _ = g ? u === p.YE.XBOX ? f.intl.string(f.t.UjA4HX) : f.intl.string(f.t.QCw1oW) : u === p.YE.XBOX ? f.intl.format(f.t["ynEs/Y"], {}) : f.intl.format(f.t.TZ17Bg, {});
   return (0, r.jsxs)("div", {
-    className: l()(h.root, g ? h.connecting : h.connected),
-    children: [(0, r.jsx)(m, {
+    className: l()(m.root, g ? m.connecting : m.connected),
+    children: [(0, r.jsx)(h, {
       platform: u
     }), (0, r.jsx)(s.Text, {
       color: g ? "header-primary" : "always-white",

@@ -61,7 +61,7 @@ let A = function(e) {
       section: Z,
       rows: w
     } = (0, o.cj)([I.ZP], () => I.ZP.getState()),
-    L = (0, o.e7)([m.Z], () => m.Z.getSuggestionCount()),
+    L = (0, o.e7)([h.Z], () => h.Z.getSuggestionCount()),
     R = i.useMemo(() => w.getRelationshipCounts(), [w]);
   i.useEffect(() => {
     null != t && p.Z.setInitialSection(t), 0 === R[T.OGo.FRIEND] && 0 === R[T.OGo.PENDING_INCOMING] && 0 === R[T.OGo.PENDING_OUTGOING] && 0 === R[T.OGo.BLOCKED] && p.Z.transitionToSection(T.pJs.ADD_FRIEND)
@@ -71,8 +71,8 @@ let A = function(e) {
         explicit: true
       })
     },
-    M = (0, h.Dt)(),
-    k = (0, h.Dt)(),
+    M = (0, m.Dt)(),
+    k = (0, m.Dt)(),
     U = [{
       id: T.pJs.ONLINE,
       show: w.filter(T.pJs.ONLINE).length > 0,

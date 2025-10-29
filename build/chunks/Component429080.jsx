@@ -60,16 +60,16 @@ let _ = function(e) {
     }), n))
   }, [t, O, E]);
   return (0, r.jsx)("div", {
-    className: m.previewBackground,
+    className: h.previewBackground,
     children: (0, r.jsxs)("div", {
-      className: m.previewCard,
+      className: h.previewCard,
       children: [(0, r.jsx)(o.Heading, {
         className: g.heading,
         variant: "heading-md/semibold",
-        children: h.intl.string(h.t.jY7Zxg)
+        children: m.intl.string(m.t.jY7Zxg)
       }), (0, r.jsx)("div", {
         className: g.previewDescription,
-        children: h.intl.string(h.t.q3hbne)
+        children: m.intl.string(m.t.q3hbne)
       }), (0, r.jsx)("div", {
         className: g.memberListContainer,
         children: (0, r.jsx)(o.yRy, {
@@ -108,7 +108,7 @@ let _ = function(e) {
                   }), (0, r.jsx)(o.Text, {
                     variant: "text-sm/normal",
                     color: "text-muted",
-                    children: h.intl.string(h.t.b9w3bO)
+                    children: m.intl.string(m.t.b9w3bO)
                   })]
                 })]
               })

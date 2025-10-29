@@ -201,7 +201,7 @@ class j extends Chunk647438.PureComponent {
       })];
       return b.default.locale.startsWith("en-") && e.push(S.intl.string(S.t.dQ9Wqk)), e[o().random(e.length - 1)]
     }()), N(this, "_eventLoadingText", function() {
-      let e = m.Z.getLoadingTips();
+      let e = h.Z.getLoadingTips();
       if (null != e && e.length > 0) return e[o().random(e.length - 1)]
     }()), N(this, "handleReady", () => {
       this.setState({

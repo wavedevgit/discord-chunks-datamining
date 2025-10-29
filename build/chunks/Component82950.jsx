@@ -60,7 +60,7 @@ let _ = a().debounce(Chunk367907.ZP.trackWithMetadata, 500),
     }, [t.id, d]);
     let C = null;
     "function" == typeof v ? C = v() : null != v && (C = (0, r.jsx)(s.zx, {
-      className: m.btn,
+      className: h.btn,
       size: s.zx.Sizes.SMALL,
       onClick: () => {
         null != d && u.default.track(f.rMx.CHANNEL_NOTICE_CTA_CLICKED, {
@@ -75,37 +75,37 @@ let _ = a().debounce(Chunk367907.ZP.trackWithMetadata, 500),
     }));
     let S = null != p ? "".concat(p, "px") : "16px";
     return (0, r.jsxs)("div", {
-      className: m.channelNotice,
+      className: h.channelNotice,
       children: [true === E ? null : (0, r.jsx)(o.P3F, {
         onClick: () => {
           c.ZP.trackWithMetadata(f.rMx.CHANNEL_NOTICE_CLOSED, {
             notice_type: d
           }), null == O || O()
         },
-        className: m.close,
-        "aria-label": h.intl.string(h.t.WAI6xu),
+        className: h.close,
+        "aria-label": m.intl.string(m.t.WAI6xu),
         children: (0, r.jsx)(o.Dio, {
           size: "md",
           color: "currentColor",
-          className: m.closeIcon
+          className: h.closeIcon
         })
       }), (0, r.jsx)("div", {
-        className: m.imageContainer,
+        className: h.imageContainer,
         style: {
           marginTop: "".concat(g, "px"),
           marginLeft: S,
           marginRight: S
         },
         children: (0, r.jsx)("img", {
-          className: m.image,
+          className: h.image,
           src: a,
           alt: ""
         })
       }), (0, r.jsxs)("div", {
-        className: m.message,
+        className: h.message,
         children: [null != n ? (0, r.jsx)(o.Heading, {
           variant: "heading-md/semibold",
-          className: m.title,
+          className: h.title,
           children: n
         }) : null, (0, r.jsx)(o.Text, {
           variant: "text-sm/normal",

@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 97375, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk24917 = require("./24917.js"),
   Chunk106351 = require("./106351.js"),
@@ -15,7 +15,7 @@ var Chunk24917 = require("./24917.js"),
   Chunk186901 = require("./186901.js"),
   Chunk981631 = require("./981631.js"),
   Chunk231338 = require("./231338.js");
-let m = {
+let h = {
   [Chunk231338.Et.INVITE_USER_EMBEDDED]: (0, Chunk45792.S)(Chunk231338.Et.INVITE_USER_EMBEDDED, {
     scope: {
       [Chunk186901.Gp.ANY]: [Chunk243814.x.RELATIONSHIPS_READ]
@@ -30,31 +30,31 @@ let m = {
         } = e,
         p = n.application.id;
       if (null == p) throw new r.O({
-        errorCode: h.lT.INVALID_COMMAND
+        errorCode: m.lT.INVALID_COMMAND
       }, "No application.");
-      let m = c.ZP.getConnectedActivityLocation();
-      if (null == m) throw new r.O({
-        errorCode: h.lT.NO_ELIGIBLE_ACTIVITY
+      let h = c.ZP.getConnectedActivityLocation();
+      if (null == h) throw new r.O({
+        errorCode: m.lT.NO_ELIGIBLE_ACTIVITY
       }, "No eligible activity for application. Ensure an activity was set using setActivity.");
-      switch (m.kind) {
+      switch (h.kind) {
         case l.E.GUILD_CHANNEL:
         case l.E.GUILD_CHANNEL_MESSAGE:
           t = (0, d.T)().channel;
           break;
         case l.E.PRIVATE_CHANNEL:
         case l.E.PRIVATE_CHANNEL_MESSAGE:
-          let g = u.Z.getChannel(m.channel_id);
+          let g = u.Z.getChannel(h.channel_id);
           if (null == g) throw new r.O({
-            errorCode: h.lT.INVALID_CHANNEL
+            errorCode: m.lT.INVALID_CHANNEL
           }, "Invalid channel");
           if (g.type === i.d.DM) throw new r.O({
-            errorCode: h.lT.INVALID_CHANNEL
+            errorCode: m.lT.INVALID_CHANNEL
           }, "Cannot send invite to a DM");
           t = g;
           break;
         default:
           throw new r.O({
-            errorCode: h.lT.NO_ELIGIBLE_ACTIVITY
+            errorCode: m.lT.NO_ELIGIBLE_ACTIVITY
           }, "Unsupported activity location")
       }
       try {
@@ -70,7 +70,7 @@ let m = {
         })
       } catch (e) {
         throw new r.O({
-          errorCode: h.lT.UNKNOWN_ERROR
+          errorCode: m.lT.UNKNOWN_ERROR
         }, "Failed to invite user")
       }
     }

@@ -71,7 +71,7 @@ function N(e) {
     status: b.Z.getStatus(e),
     isMobile: b.Z.isMobileOnline(e),
     activities: b.Z.getActivities(e),
-    applicationStream: m.Z.getAnyStreamForUser(e)
+    applicationStream: h.Z.getAnyStreamForUser(e)
   }
 }
 
@@ -107,7 +107,7 @@ class x {
         }, T(n), N(n), j(n)), {
           spam: E.Z.isSpam(n),
           ignoredUser: E.Z.isIgnored(n),
-          giftIntentType: r === I.OGo.FRIEND && h.Z.isTopAffinityFriendAnniversary({
+          giftIntentType: r === I.OGo.FRIEND && m.Z.isTopAffinityFriendAnniversary({
             userId: n
           }) ? v.hX.FRIEND_ANNIVERSARY : true,
           applicationId: E.Z.getOriginApplicationId(n)

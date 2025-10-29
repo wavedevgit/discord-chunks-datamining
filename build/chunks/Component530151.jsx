@@ -264,9 +264,9 @@ class W extends Chunk647438.PureComponent {
     } = e;
     return (0, r.jsxs)(y.Z, {
       direction: y.Z.Direction.VERTICAL,
-      children: [(0, r.jsx)(h.Exd, {
+      children: [(0, r.jsx)(m.Exd, {
         percent: t,
-        size: h.Exd.Sizes.SMALL,
+        size: m.Exd.Sizes.SMALL,
         foregroundColor: (0, v.Lq)(n),
         foregroundGradientColor: null != i ? [(0, v.Lq)(i[0]), (0, v.Lq)(i[1])] : true,
         animate: this.isFocused
@@ -283,9 +283,9 @@ class W extends Chunk647438.PureComponent {
     } = e;
     return (0, r.jsxs)(y.Z, {
       direction: y.Z.Direction.VERTICAL,
-      children: [(0, r.jsx)(h.yGy, {
+      children: [(0, r.jsx)(m.yGy, {
         percents: t,
-        size: h.yGy.Sizes.SMALL,
+        size: m.yGy.Sizes.SMALL,
         foregroundColors: B,
         animate: this.isFocused
       }), (0, r.jsx)("div", {
@@ -473,7 +473,7 @@ let q = () => (0, Chunk951288.jsx)(H, {
       item: t
     } = e;
     return (0, r.jsx)(H, {
-      icon: h.wj7,
+      icon: m.wj7,
       tooltip: M.intl.string(M.t["Eqb+LN"]),
       onClick: () => _.A1(t.applicationId, t.branchId)
     })
@@ -483,7 +483,7 @@ let q = () => (0, Chunk951288.jsx)(H, {
       item: t
     } = e;
     return (0, r.jsx)(H, {
-      icon: h.Dio,
+      icon: m.Dio,
       tooltip: M.intl.string(M.t["0lFmC9"]),
       onClick: () => _.al(t.applicationId, t.branchId)
     })
@@ -547,7 +547,7 @@ class $ extends Chunk647438.PureComponent {
       applications: e
     } = this.props;
     module.forEach(e => {
-      e.finished && m.Z.wait(() => {
+      e.finished && h.Z.wait(() => {
         _.wi(e.applicationId, e.branchId)
       })
     }), window.removeEventListener("resize", this.throttledUpdateHeight), this.isUnmounted = true

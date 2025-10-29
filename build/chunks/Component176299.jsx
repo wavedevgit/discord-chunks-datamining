@@ -175,9 +175,9 @@ let ek = (0, Chunk608787.Un)({
   eK = e => {
     let {
       match: t
-    } = e, n = (0, O.l)(), i = (0, p.e7)([eh.Z, eb.Z], () => {
+    } = e, n = (0, O.l)(), i = (0, p.e7)([em.Z, eb.Z], () => {
       let e = eb.Z.getChannelId();
-      return eh.Z.getChannel(e)
+      return em.Z.getChannel(e)
     }), {
       guildId: l,
       channelId: a,
@@ -187,7 +187,7 @@ let ek = (0, Chunk608787.Un)({
     null == u && null != t.params.gameShopPageIndex && (u = eZ.oC.GAME_SHOP);
     let d = (0, p.e7)([e_.Z], () => e_.Z.getGuild(l)),
       f = (0, p.e7)([eg.ZP], () => null == l ? null : eg.ZP.getSelfMember(l)),
-      h = (0, p.e7)([z.Z], () => {
+      m = (0, p.e7)([z.Z], () => {
         if (null == l) return;
         let e = z.Z.getData(l);
         if ((null == e ? true : e.type) === Y.z.SERVER_SHOP) switch (e.initialTab) {
@@ -200,10 +200,10 @@ let ek = (0, Chunk608787.Un)({
         }
       });
     (0, ea.WF)(u) && (0, ea.WF)(c) || (null != d && (0, ed.uL)(eA.Z5c.CHANNEL(d.id, (0, es.Z)(d))), (0, W.V)());
-    let m = (0, P.C4)(l, "channel_renderer");
+    let h = (0, P.C4)(l, "channel_renderer");
     if (null != l && null != u && (0, eZ.AB)(u)) switch (u) {
       case eZ.oC.ROLE_SUBSCRIPTIONS:
-        return m ? (0, r.jsx)(eG, {
+        return h ? (0, r.jsx)(eG, {
           guildId: l,
           initialTab: x.y.GUILD_ROLE_SUBSCRIPTIONS
         }) : (0, r.jsx)(G.Z, {
@@ -219,7 +219,7 @@ let ek = (0, Chunk608787.Un)({
         return (0, r.jsx)(eG, {
           guildId: l,
           productId: s,
-          initialTab: h
+          initialTab: m
         });
       case eZ.oC.MEMBER_APPLICATIONS:
         return (0, r.jsx)(o.l_, {
@@ -307,7 +307,7 @@ let ek = (0, Chunk608787.Un)({
       messageId: n
     } = e.match.params;
     return (i.useEffect(() => {
-      null != t && null != n && m.Z.jumpToMessage({
+      null != t && null != n && h.Z.jumpToMessage({
         channelId: t,
         messageId: n,
         flash: true,
@@ -460,13 +460,13 @@ function tl(e) {
     location: c
   });
   let u = (0, p.e7)([C.Z], () => C.Z.isFullscreenInContext()),
-    m = (0, A.T)("ChannelSidebar"),
-    g = (0, j.useAppSidebarState)(e => !e.isOpen) && m;
+    h = (0, A.T)("ChannelSidebar"),
+    g = (0, j.useAppSidebarState)(e => !e.isOpen) && h;
   i.useLayoutEffect(() => {
-    if (m) {
+    if (h) {
       var e;
       let t = parseInt(null != (e = f.K.get(ej.nT)) ? e : "");
-      Number.isNaN(t) && (t = ej.qO), t = Math.min(Math.max(t, ej.li), ej.zx), !m && t <= ej.p8 && (t = ej.qO), ti(t);
+      Number.isNaN(t) && (t = ej.qO), t = Math.min(Math.max(t, ej.li), ej.zx), !h && t <= ej.p8 && (t = ej.qO), ti(t);
       let n = e => {
         e.metaKey && "b" === e.key && j.useAppSidebarState.setState(e => ({
           isOpen: !e.isOpen
@@ -476,7 +476,7 @@ function tl(e) {
         document.removeEventListener("keydown", n)
       }
     }
-  }, [m]), i.useLayoutEffect(() => {
+  }, [h]), i.useLayoutEffect(() => {
     if (g) ti(ej.p8);
     else {
       var e;
@@ -491,10 +491,10 @@ function tl(e) {
       let r = t < ej.li / 3;
       t <= ej.li ? document.body.classList.add(eD.draggingMin) : document.body.classList.remove(eD.draggingMin), t >= ej.zx ? document.body.classList.add(eD.draggingMax) : document.body.classList.remove(eD.draggingMax);
       let i = t - e;
-      null == (n = O.current) || n.style.setProperty("--custom-overdrag", "".concat(1 + Math.min(Math.abs(i / ej.p8), .25))), m && (j.useAppSidebarState.setState({
+      null == (n = O.current) || n.style.setProperty("--custom-overdrag", "".concat(1 + Math.min(Math.abs(i / ej.p8), .25))), h && (j.useAppSidebarState.setState({
         isOpen: !r
       }), r && ti(ej.p8))
-    }, [m]),
+    }, [h]),
     v = i.useCallback(() => {
       document.body.classList.add(eD.dragging)
     }, []),
@@ -527,7 +527,7 @@ function tl(e) {
       [eD.sidebarListRounded]: !t
     })
   };
-  return (0, r.jsx)(h.f6W, {
+  return (0, r.jsx)(m.f6W, {
     theme: n,
     children: e => {
       var t, i;
@@ -554,7 +554,7 @@ function tl(e) {
             return n
           })(Object(i)).forEach(function(e) {
             Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(i, e))
-          }), t)), (0, r.jsx)(h.P3F, {
+          }), t)), (0, r.jsx)(m.P3F, {
             onClick: T,
             "aria-label": "Resize Sidebar",
             className: eD.sidebarResizeHandle,
@@ -593,10 +593,10 @@ function ta() {
     } = (0, Chunk821020.pN)({
       location: "Sidebar"
     }),
-    h = Chunk365113.o.useConfig({
+    m = Chunk365113.o.useConfig({
       location: "AppView"
     }).trackFirstPages,
-    m = (0, Chunk843611.TH)();
+    h = (0, Chunk843611.TH)();
   Chunk647438.useEffect(() => {
     Chunk481060 && Chunk166484.Z.trackPageView(Chunk904245.pathname)
   }, [Chunk481060, Chunk904245.pathname]);

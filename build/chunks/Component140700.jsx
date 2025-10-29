@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 140700, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -27,17 +27,17 @@ function f(e) {
   })
 }
 
-function h(e) {
+function m(e) {
   let {
     loadId: t
-  } = e, n = s.Z.useField("categoryId"), h = (0, c.q)(), m = (0, o.E)({
+  } = e, n = s.Z.useField("categoryId"), m = (0, c.q)(), h = (0, o.E)({
     categoryId: n
   }), g = i.useCallback(e => {
     (0, u.I)({
       loadId: t,
       categoryId: Number(e)
     })
-  }, [t]), _ = i.useMemo(() => null == h ? [] : h.map(e => {
+  }, [t]), _ = i.useMemo(() => null == m ? [] : m.map(e => {
     let [t, n] = e;
     return {
       id: "".concat(t),
@@ -46,8 +46,8 @@ function h(e) {
         count: n
       })
     }
-  }), [h]);
-  return null == h ? null : (0, r.jsxs)("div", {
+  }), [m]);
+  return null == m ? null : (0, r.jsxs)("div", {
     className: p.container,
     children: [(0, r.jsx)(l.Text, {
       variant: "text-sm/medium",
@@ -55,7 +55,7 @@ function h(e) {
       children: d.intl.string(d.t.f09BQJ)
     }), (0, r.jsx)(a.ZP, {
       items: _,
-      title: m,
+      title: h,
       onSelect: g,
       selected: "".concat(n),
       "aria-label": d.intl.string(d.t.Ng5cTK),

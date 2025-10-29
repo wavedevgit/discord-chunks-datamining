@@ -23,12 +23,12 @@ function f(e, t, n) {
   }) : e[t] = n, e
 }
 require("./966117.js");
-let h = (0, Chunk663993.Un)({
+let m = (0, Chunk663993.Un)({
     createPromise: () => require.e("80960").then(require.bind(require, 223455)),
     webpackId: 223455,
     name: "PopoutWindowChannelCall"
   }),
-  m = (0, Chunk663993.Un)({
+  h = (0, Chunk663993.Un)({
     createPromise: () => require.e("31688").then(require.bind(require, 205557)),
     webpackId: 205557,
     name: "PopoutWindowCallTile"
@@ -62,7 +62,7 @@ class E extends Chunk317770.Z {
     u.bA(d.KJ3.CHANNEL_CALL_POPOUT, e => t.isGuildStageVoice() ? (0, r.jsx)(g, {
       windowKey: e,
       channelId: t.id
-    }) : (0, r.jsx)(h, {
+    }) : (0, r.jsx)(m, {
       windowKey: e,
       channelId: t.id
     }), {
@@ -110,7 +110,7 @@ class E extends Chunk317770.Z {
         channelId: t,
         participantId: n
       } = e, i = (0, s.Z)(t, n);
-      u.bA(i, e => (0, r.jsx)(m, {
+      u.bA(i, e => (0, r.jsx)(h, {
         windowKey: e,
         channelId: t,
         participantId: n

@@ -41,7 +41,7 @@ function N(e) {
     setIsHovered: x,
     onMouseEnter: A,
     onMouseLeave: Z
-  } = (0, h.Z)(200, 300), {
+  } = (0, m.Z)(200, 300), {
     enableEmojiCTA: w
   } = b.w.useExperiment({
     location: "GiftIntentActionButton"
@@ -49,7 +49,7 @@ function N(e) {
     autoTrackExposure: false
   });
   i.useEffect(() => {
-    let e = m.Z.getUserAffinity(t.id);
+    let e = h.Z.getUserAffinity(t.id);
     (0, p.h)({
       name: o.ImpressionNames.GIFT_INTENT_ACTION_BUTTON,
       type: o.ImpressionTypes.VIEW,
@@ -64,7 +64,7 @@ function N(e) {
     }, [A]),
     R = e => {
       e.stopPropagation();
-      let r = m.Z.getUserAffinity(t.id);
+      let r = h.Z.getUserAffinity(t.id);
       g.default.track(y.rMx.GIFT_INTENT_ACTION_BUTTON_CLICKED, {
         gift_intent_type: n,
         affinity: null == r ? true : r.communicationProbability

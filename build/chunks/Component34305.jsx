@@ -200,15 +200,15 @@ class E extends Chunk647438.PureComponent {
         }
         return e
       }({}, e), {
-        header: m.intl.string(m.t.iBUzS5),
-        confirmText: m.intl.string(m.t.iBUzS5),
-        cancelText: m.intl.string(m.t["ETE/oC"]),
+        header: h.intl.string(h.t.iBUzS5),
+        confirmText: h.intl.string(h.t.iBUzS5),
+        cancelText: h.intl.string(h.t["ETE/oC"]),
         onConfirm: () => {
           this.handleStopEditing(), (0, s.iD)(this.props.path)
         },
         children: (0, r.jsx)(a.Text, {
           variant: "text-md/normal",
-          children: m.intl.string(m.t["1XqeW2"])
+          children: h.intl.string(h.t["1XqeW2"])
         })
       })))
     }), b(this, "handleSaveChanges", () => {
@@ -279,7 +279,7 @@ class O extends Chunk647438.PureComponent {
     super(...e), b(this, "state", {
       editingPath: null
     }), b(this, "handleAddInstallationLocation", () => {
-      h.ZP.showOpenDialog(["openDirectory"]).then(e => {
+      m.ZP.showOpenDialog(["openDirectory"]).then(e => {
         null != e && 0 !== e.length && null != e[0] && "undefined" !== e[0] && (0, s.RY)(e[0])
       })
     }), b(this, "handleToggleEditing", e => {

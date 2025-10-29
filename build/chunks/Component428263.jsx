@@ -1,7 +1,7 @@
-/** Chunk was on 9766 **/
-/** chunk id: 889684, original params: e,t,n (module,exports,require) **/
+/** Chunk was on 63227 **/
+/** chunk id: 428263, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => h
+  default: () => E
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,15 +13,15 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk474936 = require("./474936.js"),
   Chunk388032 = require("./388032.jsx"),
-  Chunk91717 = require("./91717.js");
-let h = e => {
+  Chunk438831 = require("./438831.js");
+let E = e => {
   let {
     transitionState: t,
     onClose: n
   } = e;
   return i.useEffect(() => {
     c.default.track(d.rMx.PREMIUM_UPSELL_VIEWED, {
-      type: p.cd.EMOJI_AUTOCOMPLETE_MODAL
+      type: _.cd.EMOJI_AUTOCOMPLETE_MODAL
     })
   }, []), (0, a.jsxs)(s.Y0X, {
     transitionState: t,
@@ -29,17 +29,17 @@ let h = e => {
     "aria-label": "",
     parentComponent: "ChannelAutocompleteEmojiUpsellModal",
     children: [(0, a.jsxs)(s.hzk, {
-      className: E.content,
+      className: m.content,
       children: [(0, a.jsx)("div", {
         role: "image",
-        className: E.image
+        className: m.image
       }), (0, a.jsx)(s.Heading, {
         variant: "heading-xl/semibold",
-        className: E.header,
-        children: m.intl.string(m.t.Uq1zJY)
+        className: m.header,
+        children: p.intl.string(p.t.Uq1zJY)
       }), (0, a.jsx)(s.Text, {
         variant: "text-md/normal",
-        children: m.intl.format(m.t.xPaO3o, {
+        children: p.intl.format(p.t.xPaO3o, {
           onLearnMore: () => {
             n(), (0, r.openUserSettings)(l.n.NITRO_PANEL, {
               section: d.oAB.PREMIUM
@@ -51,15 +51,15 @@ let h = e => {
       children: (0, a.jsx)(o.Z, {
         onClick: n,
         textOptions: {
-          textOverride: m.intl.string(m.t.pj0XBN)
+          textOverride: p.intl.string(p.t.pj0XBN)
         },
-        subscriptionTier: p.Si.TIER_2,
+        subscriptionTier: _.Si.TIER_2,
         premiumModalAnalyticsLocation: {
           page: d.ZY5.CHANNEL_AUTOCOMPLETE_EMOJI_UPSELL_MODAL
         }
       })
     }), (0, a.jsx)(s.olH, {
-      className: E.closeButton,
+      className: m.closeButton,
       onClick: n
     })]
   })

@@ -33,9 +33,9 @@ function p(e) {
   return e
 }
 let f = "premium_tier_gradient",
-  h = "smaller_sparkle_gradient";
+  m = "smaller_sparkle_gradient";
 
-function m(e) {
+function h(e) {
   var t, n, {
       width: i = 14,
       height: l = 15,
@@ -83,7 +83,7 @@ function m(e) {
         })]
       })
     }), (0, r.jsxs)("linearGradient", {
-      id: h,
+      id: m,
       x1: "-4.95474",
       y1: "5.44067",
       x2: "11.2384",
@@ -129,10 +129,10 @@ function g(e) {
   return "" === b ? null : (p && (b = b.toUpperCase()), (0, r.jsxs)("div", {
     className: l()(t, d.countDown),
     children: [g ? (0, r.jsxs)(r.Fragment, {
-      children: [(0, r.jsx)(m, {
+      children: [(0, r.jsx)(h, {
         foreground: d.sparkleStar1,
-        color: "url(#".concat(h, ")")
-      }), (0, r.jsx)(m, {
+        color: "url(#".concat(m, ")")
+      }), (0, r.jsx)(h, {
         foreground: d.sparkleStar2,
         color: "url(#".concat(f, ")")
       })]

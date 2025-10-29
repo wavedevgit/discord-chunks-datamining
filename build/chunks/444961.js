@@ -15,19 +15,19 @@ var Chunk846519 = require("./846519.js"),
   Chunk70956 = require("./70956.js"),
   Chunk358085 = require("./358085.js"),
   Chunk981631 = require("./981631.js");
-let m = new Chunk846519.V7,
+let h = new Chunk846519.V7,
   g = new Chunk846519.V7;
 class _ extends Chunk317770.Z {
   _initialize() {
     Chunk570140.Z.subscribe("IDLE", this.handleIdleUpdate)
   }
   _terminate() {
-    m.stop(), g.stop(), Chunk570140.Z.unsubscribe("IDLE", this.handleIdleUpdate)
+    h.stop(), g.stop(), Chunk570140.Z.unsubscribe("IDLE", this.handleIdleUpdate)
   }
   handleIdleUpdate() {
     let e = Chunk517100.Z.getIdleSince();
     if (!Chunk358085.isPlatformEmbedded) return;
-    for (let e of (m.stop(), g.stop(), Chunk199902.Z.getAllActiveStreams()))
+    for (let e of (h.stop(), g.stop(), Chunk199902.Z.getAllActiveStreams()))
       if (module.state !== Chunk981631.jm8.ENDED) return;
     if (null == module) return;
     let t = Chunk19780.Z.getChannelId();
@@ -38,7 +38,7 @@ class _ extends Chunk317770.Z {
     let n = Chunk430824.Z.getGuild(Chunk19780.Z.getGuildId());
     if (null == require || null == require.afkChannelId || require.afkChannelId === exports || null == require.afkTimeout) return;
     let r = Chunk592125.Z.getChannel(exports);
-    null != Chunk846519 && (Chunk846519.isGuildStageVoice() || m.start(module + require.afkTimeout * Chunk70956.Z.Millis.SECOND - Date.now(), () => {
+    null != Chunk846519 && (Chunk846519.isGuildStageVoice() || h.start(module + require.afkTimeout * Chunk70956.Z.Millis.SECOND - Date.now(), () => {
       null != (n = Chunk430824.Z.getGuild(Chunk19780.Z.getGuildId())) && null != require.afkChannelId && Chunk287734.default.selectVoiceChannel(require.afkChannelId)
     }))
   }

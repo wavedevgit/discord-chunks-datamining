@@ -23,7 +23,7 @@ function f(e, t) {
   let n = p[e];
   return !(null == n || n.has(t)) && (p[e] = new Set(n.add(t)), true)
 }
-class h extends(r = Chunk442837.ZP.PersistedStore) {
+class m extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     this.waitFor(a.default, s.Z, o.Z), p = {}, null != e && c.default.keys(e).forEach(t => {
       let n = e[t];
@@ -41,7 +41,7 @@ class h extends(r = Chunk442837.ZP.PersistedStore) {
     return p
   }
 }
-d(h, "displayName", "GuildProgressStore"), d(h, "persistKey", "GuildProgressStore"), new h(Chunk570140.Z, {
+d(m, "displayName", "GuildProgressStore"), d(m, "persistKey", "GuildProgressStore"), new m(Chunk570140.Z, {
   CONNECTION_OPEN: function() {
     let e = [];
     Chunk709054.default.keys(p).forEach(t => {

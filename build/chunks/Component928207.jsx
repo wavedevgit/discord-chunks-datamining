@@ -30,7 +30,7 @@ let b = Chunk442837.ZP.connectStores([Chunk594174.default], () => ({
   } = (0, u.ZP)(c.Z.HOME_PAGE_PREMIUM_TAB);
   return t ? (0, r.jsxs)("div", {
     className: _.homeWrapperNormal,
-    children: [null == n && (0, r.jsx)(h.Z, {}), (0, r.jsx)(u.Gt, {
+    children: [null == n && (0, r.jsx)(m.Z, {}), (0, r.jsx)(u.Gt, {
       value: l,
       children: null == n ? (0, r.jsx)(d.Z, {
         align: d.Z.Align.CENTER,
@@ -43,6 +43,6 @@ let b = Chunk442837.ZP.connectStores([Chunk594174.default], () => ({
       })
     })]
   }) : (0, r.jsx)(i.l_, {
-    to: m.Z5c.LOGIN
+    to: h.Z5c.LOGIN
   })
 })))

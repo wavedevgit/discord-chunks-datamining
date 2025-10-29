@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 710914, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => m
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -15,13 +15,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk334525 = require("./334525.js");
 
-function h(e) {
+function m(e) {
   let {
     quests: t,
     isFetching: n,
     hasFetched: l,
-    hasFiltersApplied: h = false,
-    onClearFilters: m
+    hasFiltersApplied: m = false,
+    onClearFilters: h
   } = e, g = i.useRef(false), _ = (0, o.TH)(), b = i.useMemo(() => {
     if (_.hash.length > 0) {
       let e = _.hash.slice(1);
@@ -57,12 +57,12 @@ function h(e) {
     className: f.emptyStateContainer,
     children: [(0, r.jsx)(c.Heading, {
       variant: "heading-xl/semibold",
-      children: p.intl.string(h ? p.t.PBfFnx : p.t.NqFP6z)
+      children: p.intl.string(m ? p.t.PBfFnx : p.t.NqFP6z)
     }), (0, r.jsx)(c.Text, {
       variant: "text-md/normal",
       color: "text-secondary",
-      children: h ? p.intl.format(p.t.LdYS1H, {
-        onClick: m
+      children: m ? p.intl.format(p.t.LdYS1H, {
+        onClick: h
       }) : p.intl.string(p.t.LhD4yH)
     })]
   }) : (0, r.jsx)("div", {

@@ -162,7 +162,7 @@ let tt = (0, Chunk951752.l)(e => {
         match: n,
         urlOrigin: "deeplink"
       })
-    }), (0, r.jsx)(h.Z, {
+    }), (0, r.jsx)(m.Z, {
       deepLinkType: e6.jE.USER_SETTINGS,
       path: t.pathname,
       search: t.search,
@@ -543,12 +543,12 @@ class tu extends Chunk647438.PureComponent {
         channelId: i,
         messageId: s,
         threadId: o
-      } = ta(n), c = (0, eI.Ss)(r), u = (0, eI.cq)(i), f = (0, eI.cq)(o), h = eQ.Z.getGuildId(), m = h !== r;
-      if (c && m && d.Z.selectGuild(r), c && u) {
-        let n = eK.Z.getChannelId(h),
+      } = ta(n), c = (0, eI.Ss)(r), u = (0, eI.cq)(i), f = (0, eI.cq)(o), m = eQ.Z.getGuildId(), h = m !== r;
+      if (c && h && d.Z.selectGuild(r), c && u) {
+        let n = eK.Z.getChannelId(m),
           a = n !== i,
           c = null != eV.ZP.getGuildSidebarState(r);
-        if (!te || m || a || null != s) {
+        if (!te || h || a || null != s) {
           te = true, p.default.selectChannel({
             guildId: r,
             channelId: i,
@@ -579,11 +579,11 @@ class tu extends Chunk647438.PureComponent {
         } else null == i || a || eS.Z.closeChannelSidebar(i);
         let u = eo.Z.getIsOpen();
         if (i === e5.oC.ROLE_SUBSCRIPTIONS) es.Z.closeSidebar();
-        else if (m && u) {
-          let t = null == h && r === e3.ME,
+        else if (h && u) {
+          let t = null == m && r === e3.ME,
             n = e === e3.Z5c.GUILD_DISCOVERY;
           t || n ? es.Z.closeSidebar() : es.Z.openSidebar()
-        } else(a && u || !m && !a) && es.Z.closeSidebar()
+        } else(a && u || !h && !a) && es.Z.closeSidebar()
       } else tl.some(t => {
         var n;
         return (null == (n = (0, a.LX)(e, t)) ? true : n.isExact) === true

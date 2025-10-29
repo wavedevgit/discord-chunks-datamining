@@ -493,7 +493,7 @@ let eR = (0, Chunk560997.KM)((0, Chunk560997.Zc)("appearance", "developerMode", 
       baseMix: e.customUserThemeSettings.baseMix
     } : true
   }), {
-    comparator: Chunk902704.Z
+    comparator: Chunk392711.isEqual
   }),
   ew = (0, Chunk560997.R2)((0, Chunk560997.KM)((0, Chunk560997.Zc)("textAndImages", "gifAutoPlay", e => {
     var t;

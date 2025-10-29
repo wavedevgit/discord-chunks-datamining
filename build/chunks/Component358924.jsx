@@ -132,7 +132,7 @@ let es = [14, 14, 12, 12, 10, 8, 6],
       })
     })
   },
-  eh = e => {
+  em = e => {
     let {
       activity: t,
       user: n
@@ -147,14 +147,14 @@ let es = [14, 14, 12, 12, 10, 8, 6],
       hasButton: i
     }
   },
-  em = e => {
+  eh = e => {
     let {
       activity: t,
       user: n
     } = e, {
       joinActivityButtonAction: r,
       isJoinActivityButtonShown: l
-    } = eh({
+    } = em({
       activity: t,
       user: n
     });
@@ -386,7 +386,7 @@ eO.Header = eE, eO.Body = e => {
     partySize: a,
     members: o,
     onChannelContextMenu: c
-  } = e, u = l.useRef(null), d = (0, A.ZP)(r, true), p = (0, q.EB)(n, 32), m = (0, q.gM)(n);
+  } = e, u = l.useRef(null), d = (0, A.ZP)(r, true), p = (0, q.EB)(n, 32), h = (0, q.gM)(n);
   return (0, i.jsx)(ed, {
     children: (0, i.jsxs)("div", {
       className: ea.voiceSection,
@@ -407,9 +407,9 @@ eO.Header = eE, eO.Body = e => {
             children: (0, i.jsx)("div", {
               className: ea.voiceSectionNoGuildImage,
               style: {
-                fontSize: null != (t = es[m.length]) ? t : es[es.length - 1]
+                fontSize: null != (t = es[h.length]) ? t : es[es.length - 1]
               },
-              children: m
+              children: h
             })
           }), (0, i.jsx)("div", {
             className: ea.voiceSectionIconWrapper,
@@ -422,7 +422,7 @@ eO.Header = eE, eO.Body = e => {
         })
       }), (0, i.jsx)(f.P3F, {
         onClick: () => {
-          h.default.selectVoiceChannel(r.id), (0, z.Kh)(r.id)
+          m.default.selectVoiceChannel(r.id), (0, z.Kh)(r.id)
         },
         focusProps: {
           ringTarget: u
@@ -480,12 +480,12 @@ eO.Header = eE, eO.Body = e => {
     data: p
   } = (0, P.IX)(o.application_id), {
     assets: f,
-    details: h,
-    state: m,
+    details: m,
+    state: h,
     application_id: g
   } = o, {
     hasButton: _
-  } = eh({
+  } = em({
     activity: o,
     user: u
   }), b = null != (r = null == (t = (0, L.T7)(p)) ? true : t.src) ? r : n(211827), E = (0, S.Z)({
@@ -519,7 +519,7 @@ eO.Header = eE, eO.Body = e => {
         })
       }), (0, i.jsxs)("div", {
         className: ea.activitySectionDetails,
-        children: [eo(null != h && "" !== h ? h : o.name), null != m ? ec(m) : null, (() => {
+        children: [eo(null != m && "" !== m ? m : o.name), null != h ? ec(h) : null, (() => {
           let {
             timestamps: e
           } = o;
@@ -532,7 +532,7 @@ eO.Header = eE, eO.Body = e => {
             className: ea.__invalid_playTime
           }))
         })()]
-      }), (0, i.jsx)(em, {
+      }), (0, i.jsx)(eh, {
         activity: o,
         user: u
       })]
@@ -608,7 +608,7 @@ eO.Header = eE, eO.Body = e => {
       application_id: p
     } = r;
   if (null != d && (0, y.Z)(r)) {
-    var h;
+    var m;
     t = (0, i.jsx)(R.Z, {
       className: ea.twitchSectionPreviewWrapper,
       aspectRatio: 16 / 9,
@@ -617,7 +617,7 @@ eO.Header = eE, eO.Body = e => {
         tag: "a",
         target: "_blank",
         children: [(0, i.jsx)("img", {
-          alt: null != (h = d.large_text) ? h : "",
+          alt: null != (m = d.large_text) ? m : "",
           src: a(p, d.large_image, [900, 500]),
           className: ea.twitchSectionPreview
         }), (0, i.jsx)("img", {
@@ -656,7 +656,7 @@ eO.Header = eE, eO.Body = e => {
     applicationStream: a,
     onPreviewClick: s,
     guildId: o
-  } = e, u = (0, c.e7)([Q.Z], () => Q.Z.getChannel(a.channelId)), [d, p] = (0, U.wq)(u), h = (0, i.jsxs)(f.P3F, {
+  } = e, u = (0, c.e7)([Q.Z], () => Q.Z.getChannel(a.channelId)), [d, p] = (0, U.wq)(u), m = (0, i.jsxs)(f.P3F, {
     onClick: d ? s : true,
     className: ea.applicationStreamingPreviewWrapper,
     children: [(0, i.jsx)(G.Z, {
@@ -668,7 +668,7 @@ eO.Header = eE, eO.Body = e => {
       color: "always-white",
       children: (0, U.P9)(p)
     })]
-  }), m = null != (n = null == (t = (0, C.Z)(r, a)) ? true : t.activityText) ? n : el.intl.string(el.t.eXan7B);
+  }), h = null != (n = null == (t = (0, C.Z)(r, a)) ? true : t.activityText) ? n : el.intl.string(el.t.eXan7B);
   return (0, i.jsxs)(ed, {
     children: [(0, i.jsxs)("div", {
       className: ea.applicationStreamingSection,
@@ -678,11 +678,11 @@ eO.Header = eE, eO.Body = e => {
         "aria-label": l.username,
         className: ea.applicationStreamingAvatar
       }), (0, i.jsxs)("div", {
-        children: [eo(en.ZP.getName(l)), ec(m)]
+        children: [eo(en.ZP.getName(l)), ec(h)]
       }), (0, i.jsx)(Z.ZP, {
         size: Z.ZP.Sizes.SMALL
       })]
-    }), h]
+    }), m]
   })
 }, eO.EmbeddedActivitySection = e => {
   let {
@@ -700,27 +700,27 @@ eO.Header = eE, eO.Body = e => {
   let d = (0, c.Wu)([J.default, K.default], () => Array.from(a).map(e => K.default.getId() === e ? null : J.default.getUser(e)).filter(et.lm)),
     p = (0, g.O)(),
     {
-      analyticsLocations: h
+      analyticsLocations: m
     } = (0, N.ZP)();
   if (null == u) return null;
-  let m = x.Z.getApplication(u);
-  if (null == m) return null;
+  let h = x.Z.getApplication(u);
+  if (null == h) return null;
   let _ = null != t.created_at && t.created_at > 0 ? {
       start: t.created_at
     } : true,
-    E = (0, ee.xF)(m.id, s, 300);
+    E = (0, ee.xF)(h.id, s, 300);
   return (0, i.jsxs)(ed, {
     children: [(0, i.jsxs)("div", {
       className: ea.embeddedActivityTopRow,
       children: [(0, i.jsx)(k.Z, {
-        game: m,
+        game: h,
         size: k.A.XSMALL,
         className: ea.embeddedActivityIcon
       }), (0, i.jsx)("div", {
         className: ea.embeddedActivityName,
         children: (0, i.jsx)(f.Text, {
           variant: "text-sm/semibold",
-          children: m.name
+          children: h.name
         })
       }), null != _ ? (0, i.jsx)("div", {
         className: ea.embeddedActivityTimeElapsed,
@@ -736,7 +736,7 @@ eO.Header = eE, eO.Body = e => {
       className: ea.embeddedActivityPlayerContainer,
       children: [null != E ? (0, i.jsx)("img", {
         src: E,
-        alt: m.name,
+        alt: h.name,
         className: ea.embeddedActivityImage
       }) : null, (0, i.jsxs)("div", {
         className: ea.embeddedActivityImageOverlay,
@@ -755,7 +755,7 @@ eO.Header = eE, eO.Body = e => {
                 applicationId: u,
                 activityChannelId: n.id,
                 locationObject: p.location,
-                analyticsLocations: h
+                analyticsLocations: m
               })
             }
           })

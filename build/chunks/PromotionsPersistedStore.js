@@ -115,7 +115,7 @@ function P() {
     [Chunk397047.$.MARKETING_MOMENT]: {},
     [Chunk397047.$.THIRD_PARTY_INBOUND]: {},
     [Chunk397047.$.THIRD_PARTY_OUTBOUND]: {}
-  }, _ = null
+  }, _ = null, y.clear()
 }
 
 function w() {

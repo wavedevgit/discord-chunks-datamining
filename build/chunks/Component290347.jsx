@@ -180,7 +180,7 @@ function P(e) {
       b.default.track(O.rMx.CHANGE_LOG_CLOSED, {
         change_log_id: D,
         seconds_open: Math.round((Date.now() - e) / 1e3)
-      }), null != P && (0, m.Q3)(P, {
+      }), null != P && (0, h.Q3)(P, {
         dismissAction: I.L.DISMISS
       })
     }
@@ -201,7 +201,7 @@ function P(e) {
       }), null == x ? true : x(), (0, r.jsxs)(c.hzk, {
         "data-migration-pending": true,
         className: y.content,
-        children: ["video" === l.type ? (0, r.jsx)(h.Z, {
+        children: ["video" === l.type ? (0, r.jsx)(m.Z, {
           className: a()(y.video, N),
           autoPlay: !V,
           loop: true,

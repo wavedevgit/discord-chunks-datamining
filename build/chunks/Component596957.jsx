@@ -98,12 +98,12 @@ let L = function(e) {
   } = (0, d.ZP)(u.Z.FRIENDS_LIST), {
     rows: s,
     section: A
-  } = (0, l.cj)([m.ZP], () => m.ZP.getState()), L = (0, l.e7)([g.Z], () => g.Z.isFocused()), {
+  } = (0, l.cj)([h.ZP], () => h.ZP.getState()), L = (0, l.e7)([g.Z], () => g.Z.isFocused()), {
     relationshipCount: R,
     hasBlockedOrIgnored: D
-  } = (0, l.cj)([h.Z], () => ({
-    relationshipCount: h.Z.getRelationshipCount(),
-    hasBlockedOrIgnored: h.Z.getBlockedOrIgnoredIDs().length > 0
+  } = (0, l.cj)([m.Z], () => ({
+    relationshipCount: m.Z.getRelationshipCount(),
+    hasBlockedOrIgnored: m.Z.getBlockedOrIgnoredIDs().length > 0
   })), [M, k] = i.useState(() => {
     let e = {};
     for (let t of Object.values(S.pJs)) e[t] = "";

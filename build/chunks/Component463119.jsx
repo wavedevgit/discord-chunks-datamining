@@ -115,10 +115,10 @@ let M = e => {
       children: f
     } = e, g = D(e, ["selected", "locationState", "icon", "onClick", "collectibleShopTab", "onMouseEnter", "onMouseLeave", "children"]);
     let _ = (0, l.JA)("shop"),
-      b = h.Z.HOME_PAGE_SHOP_TAB,
+      b = m.Z.HOME_PAGE_SHOP_TAB,
       {
         analyticsLocations: E
-      } = (0, m.ZP)(b),
+      } = (0, h.ZP)(b),
       [O, I] = i.useState(false),
       y = i.useCallback(() => {
         true !== s && s(), true !== o && (0, v.mK)({
@@ -182,7 +182,7 @@ let M = e => {
   }),
   H = e => {
     let t, n;
-    var l, s, u, d, h, m, g, _, b, E, O, v, {
+    var l, s, u, d, m, h, g, _, b, E, O, v, {
         displayOptions: y
       } = e,
       C = D(e, ["displayOptions"]);
@@ -191,7 +191,7 @@ let M = e => {
       [j, P] = i.useState(false),
       x = (0, p.ZP)(),
       A = (0, o.wj)(x);
-    j ? A ? (t = null == (l = y.entryPointBackgroundAssets) ? true : l.srcDarkHovered, n = null == (u = y.entrypointBackgroundStyle) || null == (s = u.hovered) ? true : s.dark) : (t = null == (d = y.entryPointBackgroundAssets) ? true : d.srcLightHovered, n = null == (m = y.entrypointBackgroundStyle) || null == (h = m.hovered) ? true : h.light) : A ? (t = null == (g = y.entryPointBackgroundAssets) ? true : g.srcDark, n = null == (b = y.entrypointBackgroundStyle) || null == (_ = b.resting) ? true : _.dark) : (t = null == (E = y.entryPointBackgroundAssets) ? true : E.srcLight, n = null == (v = y.entrypointBackgroundStyle) || null == (O = v.resting) ? true : O.light);
+    j ? A ? (t = null == (l = y.entryPointBackgroundAssets) ? true : l.srcDarkHovered, n = null == (u = y.entrypointBackgroundStyle) || null == (s = u.hovered) ? true : s.dark) : (t = null == (d = y.entryPointBackgroundAssets) ? true : d.srcLightHovered, n = null == (h = y.entrypointBackgroundStyle) || null == (m = h.hovered) ? true : m.light) : A ? (t = null == (g = y.entryPointBackgroundAssets) ? true : g.srcDark, n = null == (b = y.entrypointBackgroundStyle) || null == (_ = b.resting) ? true : _.dark) : (t = null == (E = y.entryPointBackgroundAssets) ? true : E.srcLight, n = null == (v = y.entrypointBackgroundStyle) || null == (O = v.resting) ? true : O.light);
     let k = i.useCallback(e => {
         y.assetIds.length > 0 && N(e => (e + 1) % y.assetIds.length), P(true), null == e || e()
       }, [y.assetIds.length]),
@@ -276,9 +276,9 @@ let M = e => {
       u = (0, p.ZP)(),
       d = (0, o.wj)(u),
       f = l.entryPointBackgroundAssets,
-      h = l.entrypointBackgroundStyle,
-      m = d ? null == f ? true : f.srcDarkHovered : null == f ? true : f.srcLightHovered,
-      g = d ? null == h || null == (t = h.hovered) ? true : t.dark : null == h || null == (n = h.hovered) ? true : n.light;
+      m = l.entrypointBackgroundStyle,
+      h = d ? null == f ? true : f.srcDarkHovered : null == f ? true : f.srcLightHovered,
+      g = d ? null == m || null == (t = m.hovered) ? true : t.dark : null == m || null == (n = m.hovered) ? true : n.light;
     return (0, r.jsxs)(r.Fragment, {
       children: [(0, r.jsxs)(U, R(L({}, s), {
         onClick: () => a(A.L.TAKE_ACTION),
@@ -288,8 +288,8 @@ let M = e => {
           style: null != g ? {
             background: g
           } : true,
-          children: null != m && (0, r.jsx)("img", {
-            src: m,
+          children: null != h && (0, r.jsx)("img", {
+            src: h,
             className: w.marketingButtonBackgroundImage,
             alt: "",
             "aria-hidden": true
@@ -330,7 +330,7 @@ let M = e => {
       dismissShopButtonDC: o
     } = (0, T.Z)(), u = (0, O.Y)({
       location: "CollectiblesShopButton"
-    }), d = !(0, c.$sL)() && u, [p, f] = (0, b.US)(d ? [s.z.WISHLIST_SHOP_BUTTON_POPOVER] : []), h = {
+    }), d = !(0, c.$sL)() && u, [p, f] = (0, b.US)(d ? [s.z.WISHLIST_SHOP_BUTTON_POPOVER] : []), m = {
       selected: t,
       locationState: i,
       onClick: () => {
@@ -340,23 +340,23 @@ let M = e => {
     };
     if (null != a) switch (a.type) {
       case j.k2.TOOLTIP:
-        return (0, r.jsx)(V, R(L({}, h), {
+        return (0, r.jsx)(V, R(L({}, m), {
           displayOptions: a
         }));
       case j.k2.COACHTIP:
-        return (0, r.jsx)(H, R(L({}, h), {
+        return (0, r.jsx)(H, R(L({}, m), {
           displayOptions: a
         }));
       case j.k2.BADGE:
-        return (0, r.jsx)(G, L({}, h));
+        return (0, r.jsx)(G, L({}, m));
       case j.k2.COACHMARK:
         return (0, r.jsx)(F, R(L({
           dismissContent: o
-        }, h), {
+        }, m), {
           displayOptions: a
         }))
     }
-    return p === s.z.WISHLIST_SHOP_BUTTON_POPOVER ? (0, r.jsx)(z, R(L({}, h), {
+    return p === s.z.WISHLIST_SHOP_BUTTON_POPOVER ? (0, r.jsx)(z, R(L({}, m), {
       dismissContent: f
-    })) : (0, r.jsx)(U, L({}, h))
+    })) : (0, r.jsx)(U, L({}, m))
   }

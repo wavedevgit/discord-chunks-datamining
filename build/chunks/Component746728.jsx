@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 746728, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  I: () => h,
+  I: () => m,
   Z: () => g
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
@@ -16,7 +16,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk112471 = require("./112471.js"),
   Chunk803638 = require("./803638.js");
 
-function h(e) {
+function m(e) {
   let {
     categoryId: t,
     loadId: n
@@ -31,17 +31,17 @@ function h(e) {
   })
 }
 
-function m(e) {
+function h(e) {
   let {
     loadId: t,
     categoryId: n,
     count: l
   } = e, c = i.useCallback(() => {
-    h({
+    m({
       categoryId: n,
       loadId: t
     })
-  }, [n, t]), p = u.Z.useField("categoryId") === n, m = l.toLocaleString(o.default.locale), g = (0, d.E)({
+  }, [n, t]), p = u.Z.useField("categoryId") === n, h = l.toLocaleString(o.default.locale), g = (0, d.E)({
     categoryId: n
   });
   return (0, r.jsxs)(s.P3F, {
@@ -58,7 +58,7 @@ function m(e) {
       className: f.count,
       variant: "text-sm/normal",
       color: "text-muted",
-      children: m
+      children: h
     })]
   })
 }
@@ -70,7 +70,7 @@ let g = function(e) {
     className: f.categories,
     children: n.map(e => {
       let [n, i] = e;
-      return (0, r.jsx)(m, {
+      return (0, r.jsx)(h, {
         loadId: t,
         categoryId: n,
         count: i

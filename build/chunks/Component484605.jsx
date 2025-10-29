@@ -1,7 +1,7 @@
 /** Chunk was on 1272 **/
 /** chunk id: 484605, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => m
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -16,16 +16,16 @@ var Chunk264418 = require("./264418.jsx"),
   Chunk921944 = require("./921944.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk288541 = require("./288541.js");
-let m = e => {
+let h = e => {
   let {
     targetElementRef: t,
-    discountOffer: m,
+    discountOffer: h,
     premiumSubscription: g,
     dismissCoachmark: _,
     children: b
   } = e, {
     analyticsLocations: E
-  } = (0, s.ZP)(a.Z.CHURN_DISCOUNT_POPOVER), O = (0, c.W7)(d.Xh.PREMIUM_MONTH_TIER_2, m, g), I = (0, r.jsx)(i.Z, {
+  } = (0, s.ZP)(a.Z.CHURN_DISCOUNT_POPOVER), O = (0, c.W7)(d.Xh.PREMIUM_MONTH_TIER_2, h, g), I = (0, r.jsx)(i.Z, {
     targetElementRef: t,
     position: "right",
     align: "top",
@@ -34,16 +34,16 @@ let m = e => {
       align: "start"
     },
     title: f.intl.format(f.t["3yZP0G"], {
-      percent: m.discount.amount
+      percent: h.discount.amount
     }).toString(),
     body: f.intl.format(f.t["3Q4wCy"], {
       discountedPrice: O,
-      billingPeriod: (0, o.JP)(m.discount.user_usage_limit_interval),
-      numMonths: m.discount.user_usage_limit
+      billingPeriod: (0, o.JP)(h.discount.user_usage_limit_interval),
+      numMonths: h.discount.user_usage_limit
     }),
     graphic: {
       type: "image",
-      src: h.Z
+      src: m.Z
     },
     gradientColor: "nitro-pink",
     actions: [{

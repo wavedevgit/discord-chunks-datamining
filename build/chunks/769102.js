@@ -108,29 +108,29 @@ function c() {
     }), true))
   }, [c]);
   let f = [],
-    h = [],
-    m = 0;
-  for (let t = 0; exports < require.length && !(m >= u); exports++) {
+    m = [],
+    h = 0;
+  for (let t = 0; exports < require.length && !(h >= u); exports++) {
     let r = require[exports];
-    if (m++, p[Chunk647438.id]) continue;
+    if (h++, p[Chunk647438.id]) continue;
     let i = d[Chunk647438.id];
     if (null == Chunk442837 && Chunk647438.type === Chunk797394.Ni.MESSAGE && (null == (e = Chunk647438.data.message_context) ? true : module.reference_message_id) != null && (i = d[Chunk647438.data.message_id]), null != Chunk442837) {
       let e = o(Chunk647438, Chunk442837, true);
       null != module && f.push(module)
     }
   }
-  for (let e = 0; module < c.length && !(m >= u); module++) {
+  for (let e = 0; module < c.length && !(h >= u); module++) {
     let n = c[module];
-    if (m++, p[require.id]) continue;
+    if (h++, p[require.id]) continue;
     let r = d[require.id];
     if (null == Chunk647438 && require.type === Chunk797394.Ni.MESSAGE && (null == (t = require.data.message_context) ? true : exports.reference_message_id) != null && (r = d[require.data.message_id]), null != Chunk647438) {
       let e = o(require, Chunk647438, false);
-      null != module && h.push(module)
+      null != module && m.push(module)
     }
   }
   return {
     unreadItems: f,
-    readItems: h,
+    readItems: m,
     allUnreadItemsHydrated: u >= require.length
   }
 }

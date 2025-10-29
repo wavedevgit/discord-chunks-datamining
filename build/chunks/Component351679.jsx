@@ -75,7 +75,7 @@ let N = Chunk647438.memo(function(e) {
   }(e, ["message", "className", "onContextMenu", "onClick", "hideSimpleEmbedContent", "channel", "isGroupStart", "animateAvatar", "subscribeToComponentDispatch", "renderThreadAccessory"]), k = N.type === y.uaV.POLL_RESULT || null != (t = e.disableInteraction) && t, U = N.isFirstMessageInForumPost(Z), G = (0, u.A)((null != (n = N.editedTimestamp) ? n : N.timestamp).valueOf()), {
     content: B,
     hasSpoilerEmbeds: H
-  } = (0, m.Z)(N, {
+  } = (0, h.Z)(N, {
     hideSimpleEmbedContent: A,
     allowList: U || G,
     allowHeading: U || G,
@@ -84,7 +84,7 @@ let N = Chunk647438.memo(function(e) {
   }), V = (0, s.JA)(N.id), F = (0, p.ZP)(N), z = (0, o.e7)([I.Z], () => N.hasFlag(y.iLy.HAS_THREAD) && I.Z.getChannel(v.default.castMessageIdAsChannelId(N.id))), Y = (0, c.p9)({
     guildId: Z.guild_id,
     roleId: F.iconRoleId
-  }), W = (0, h.iG)(N), q = (0, h.Gx)(N);
+  }), W = (0, m.iG)(N), q = (0, m.Gx)(N);
   return (0, r.jsx)(f.Z, T({
     compact: false,
     className: a()(j, C.icymiMessageWrapper, {

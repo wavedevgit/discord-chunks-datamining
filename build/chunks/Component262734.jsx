@@ -41,7 +41,7 @@ function j(e) {
   } = (0, s.cj)([b.Z], () => ({
     selectedChannelId: b.Z.getChannelId(),
     selectedVoiceChannelId: b.Z.getVoiceChannelId()
-  })), x = (0, s.e7)([h.Z], () => null != P && j === P && h.Z.getChatOpen(P), [j, P]), A = (0, s.e7)([m.ZP], () => m.ZP.callChatSidebarWidth), Z = (0, u.dQu)(o.Z.modules.chat.RESIZE_HANDLE_WIDTH), w = i.useRef(null), L = i.useRef(null), [R, D] = i.useState({
+  })), x = (0, s.e7)([m.Z], () => null != P && j === P && m.Z.getChatOpen(P), [j, P]), A = (0, s.e7)([h.ZP], () => h.ZP.callChatSidebarWidth), Z = (0, u.dQu)(o.Z.modules.chat.RESIZE_HANDLE_WIDTH), w = i.useRef(null), L = i.useRef(null), [R, D] = i.useState({
     width: 0,
     height: 0
   }), M = i.useCallback(() => {
