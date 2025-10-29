@@ -1,4 +1,4 @@
-/** Chunk was on 96861 **/
+/** Chunk was on 62006 **/
 /** chunk id: 804127, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   G$: () => c,
@@ -20,27 +20,27 @@ function s(e) {
     rewardCode: l,
     selectedPlatformType: c,
     preview: u
-  } = e, [d, m] = r.useState(false), [p, C] = r.useState(false), f = r.useCallback(async (e, t, n) => {
+  } = e, [d, p] = r.useState(false), [m, C] = r.useState(false), f = r.useCallback(async (e, t, n) => {
     try {
-      C(true), await (0, o.QB)(e, t, n), m(false), C(false)
+      C(true), await (0, o.QB)(e, t, n), p(false), C(false)
     } catch (e) {
-      m(true), C(false)
+      p(true), C(false)
     }
-  }, []), h = r.useCallback(e => {
+  }, []), b = r.useCallback(e => {
     try {
       (0, o.pf)(e)
     } catch (e) {
-      m(true)
+      p(true)
     }
   }, []);
   return r.useEffect(() => {
     var e, r;
-    true === u || null != l || d || t || p || n || s || (m(false), (null == (e = i.userStatus) ? true : e.claimedAt) == null && null != c ? f(i.id, c, a) : (null == (r = i.userStatus) ? true : r.claimedAt) != null && h(i.id))
-  }, [f, h, d, t, p, n, a, i, s, l, c, u]), {
+    true === u || null != l || d || t || m || n || s || (p(false), (null == (e = i.userStatus) ? true : e.claimedAt) == null && null != c ? f(i.id, c, a) : (null == (r = i.userStatus) ? true : r.claimedAt) != null && b(i.id))
+  }, [f, b, d, t, m, n, a, i, s, l, c, u]), {
     claimCode: f,
-    fetchCode: h,
+    fetchCode: b,
     hasError: d,
-    setHasError: m
+    setHasError: p
   }
 }
 
@@ -79,26 +79,26 @@ function c(e) {
     quest: c,
     questContent: u,
     questContentCTA: d = i.jZ.GET_REWARD_CODE,
-    questContentPosition: m,
-    requiresPlatformSelection: p,
+    questContentPosition: p,
+    requiresPlatformSelection: m,
     selectedPlatformType: C,
     redemptionLink: f,
-    sourceQuestContent: h
-  } = e, j = (0, i.O5)(), y = l(e);
+    sourceQuestContent: b
+  } = e, h = (0, i.O5)(), _ = l(e);
   return r.useCallback(() => {
     var e;
-    p && null != C ? (n(c.id, C, u), j({
+    m && null != C ? (n(c.id, C, u), h({
       questId: c.id,
       questContent: u,
       questContentCTA: d,
-      questContentPosition: m,
-      sourceQuestContent: h
-    })) : o ? (null == (e = c.userStatus) ? true : e.claimedAt) != null ? a(c.id) : null != C && (n(c.id, C, u), j({
+      questContentPosition: p,
+      sourceQuestContent: b
+    })) : o ? (null == (e = c.userStatus) ? true : e.claimedAt) != null ? a(c.id) : null != C && (n(c.id, C, u), h({
       questId: c.id,
       questContent: u,
       questContentCTA: d,
-      questContentPosition: m,
-      sourceQuestContent: h
-    })) : (null != f && y(), s())
-  }, [n, a, o, s, c.id, null == (t = c.userStatus) ? true : t.claimedAt, u, d, m, p, C, j, f, h, y])
+      questContentPosition: p,
+      sourceQuestContent: b
+    })) : (null != f && _(), s())
+  }, [n, a, o, s, c.id, null == (t = c.userStatus) ? true : t.claimedAt, u, d, p, m, C, h, f, b, _])
 }

@@ -3,7 +3,7 @@
 require.d(exports, {
   Lz: () => u,
   MQ: () => o,
-  TR: () => h,
+  TR: () => p,
   Th: () => d,
   _N: () => c
 }), require("./953529.js"), require("./388685.js");
@@ -43,6 +43,6 @@ function u(e) {
   return (t = e.filter(e => e.featurableInDirectory), a().orderBy(t, [e => e.createdAt], ["desc"])).slice(0, c)
 }
 
-function h(e) {
+function p(e) {
   return d(e)
 }

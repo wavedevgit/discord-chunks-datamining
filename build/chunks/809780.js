@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 56710 **/
 /** chunk id: 809780, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   As: () => F,
@@ -235,9 +235,9 @@ class z extends Chunk836560.EventEmitter {
         collapsedChannels: i,
         loadState: l
       } = this.state, o = u().findIndex(r, e => e.channelId === t), a = r[o], s = !a.collapsed;
-      i[t] = s, (0, x.BU)(n, t, e => {
+      i[t] = s, (0, C.BU)(n, t, e => {
         e.collapsedInInbox = s
-      }, x.fy.FREQUENT_USER_ACTION), this.setState({
+      }, C.fy.FREQUENT_USER_ACTION), this.setState({
         scrollToChannelIndex: o,
         collapsedChannels: i,
         loadState: "done" !== l || s || a.isFullyLoaded ? l : "loaded",
@@ -251,7 +251,7 @@ class z extends Chunk836560.EventEmitter {
         channels: e
       })
     }, this.handleJoinedThreadsStoreChange = () => {
-      let e = this.state.channels.filter(e => !j.Z.isMuted(e.channelId));
+      let e = this.state.channels.filter(e => !v.Z.isMuted(e.channelId));
       e.length !== this.state.channels.length && this.setState({
         channels: e
       })
@@ -333,7 +333,7 @@ function K() {
 function Y(e, t, n, r) {
   if (null == r) return;
   let i = S.Z.getChannel(r);
-  if (null == i || !E.Ec.has(i.type) && A.ZP.isGuildOrCategoryOrChannelMuted(n, i.id)) return;
+  if (null == i || !x.Ec.has(i.type) && A.ZP.isGuildOrCategoryOrChannelMuted(n, i.id)) return;
   if (i.isPrivate()) {
     if (0 === T.ZP.getMentionCount(r)) return
   } else if (!(0, _.d)(i) && 0 === T.ZP.getMentionCount(r)) return;
@@ -373,7 +373,7 @@ function Y(e, t, n, r) {
         if (Date.now() - e > q) return 6
       }
       if (r.isThread()) {
-        let e = (0, v.J)(r);
+        let e = (0, j.J)(r);
         return e === k.iN.ALL_MESSAGES ? 4 : e === k.iN.NO_MESSAGES ? 7 : 5
       } {
         let n = A.ZP.getChannelMessageNotifications(e, t),
@@ -413,5 +413,5 @@ function Q(e) {
     c.current = t
   }), l.useLayoutEffect(() => {
     null == a || a.channels, null == a || a.loadState, c.current.maybeLoadMore()
-  }, [null == a ? true : a.channels, null == a ? true : a.loadState]), l.useEffect(() => (N.Z.addChangeListener(t.reloadMessages), () => N.Z.removeChangeListener(t.reloadMessages)), [t.reloadMessages]), l.useEffect(() => (A.ZP.addChangeListener(t.handleUserGuildSettingsStoreChange), () => A.ZP.removeChangeListener(t.handleUserGuildSettingsStoreChange)), [t]), l.useEffect(() => (j.Z.addChangeListener(t.handleJoinedThreadsStoreChange), () => j.Z.removeChangeListener(t.handleJoinedThreadsStoreChange)), [t]), l.useEffect(() => (y.Z.addChangeListener(t.handleActiveThreadsStoreChange), () => y.Z.removeChangeListener(t.handleActiveThreadsStoreChange)), [t]), [a, t]
+  }, [null == a ? true : a.channels, null == a ? true : a.loadState]), l.useEffect(() => (N.Z.addChangeListener(t.reloadMessages), () => N.Z.removeChangeListener(t.reloadMessages)), [t.reloadMessages]), l.useEffect(() => (A.ZP.addChangeListener(t.handleUserGuildSettingsStoreChange), () => A.ZP.removeChangeListener(t.handleUserGuildSettingsStoreChange)), [t]), l.useEffect(() => (v.Z.addChangeListener(t.handleJoinedThreadsStoreChange), () => v.Z.removeChangeListener(t.handleJoinedThreadsStoreChange)), [t]), l.useEffect(() => (y.Z.addChangeListener(t.handleActiveThreadsStoreChange), () => y.Z.removeChangeListener(t.handleActiveThreadsStoreChange)), [t]), [a, t]
 }

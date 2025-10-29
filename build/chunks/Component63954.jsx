@@ -1,4 +1,4 @@
-/** Chunk was on 17013 **/
+/** Chunk was on 34297 **/
 /** chunk id: 63954, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => U,
@@ -488,10 +488,10 @@ function W() {
     }), ee.map((e, t) => (0, r.jsxs)("div", {
       children: [(0, r.jsxs)(p.Heading, {
         variant: "heading-md/semibold",
-        className: R.subheading,
+        className: A.subheading,
         children: ["Reward #", t + 1]
       }), (0, r.jsxs)("div", {
-        className: R.fields,
+        className: A.fields,
         children: [(0, r.jsx)(v.Z, {
           title: "Name",
           assetKey: "name",

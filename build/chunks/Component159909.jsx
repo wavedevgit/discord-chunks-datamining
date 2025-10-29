@@ -1,7 +1,7 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 159909, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => f
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -17,37 +17,37 @@ function p() {
   return (p = Object.assign || function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = arguments[t];
-      for (var i in n) Object.prototype.hasOwnProperty.call(n, i) && (e[i] = n[i])
+      for (var r in n) Object.prototype.hasOwnProperty.call(n, r) && (e[r] = n[r])
     }
     return e
   }).apply(this, arguments)
 }
 
-function h() {
+function f() {
   let e = (0, Chunk399606.e7)([Chunk673125.Z], () => !Chunk673125.Z.visibleOverlayCanvas),
     t = Chunk647438.useRef(null);
   return (0, Chunk951288.jsx)(Chunk304388.Z, {
     renderPopout: () => null,
     popoutTargetRef: exports,
     children: n => {
-      var r, l, s = p({}, function(e) {
+      var i, l, s = p({}, function(e) {
         if (null == e) throw TypeError("Cannot destructure " + e);
         return e
       }(n));
-      return (0, i.jsx)(c.Z, (r = function(e) {
+      return (0, r.jsx)(c.Z, (i = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
-            i = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            r = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), i.forEach(function(t) {
-            var i;
-            i = n[t], t in e ? Object.defineProperty(e, t, {
-              value: i,
+          }))), r.forEach(function(t) {
+            var r;
+            r = n[t], t in e ? Object.defineProperty(e, t, {
+              value: r,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = i
+            }) : e[t] = r
           })
         }
         return e
@@ -57,16 +57,16 @@ function h() {
         isActive: e,
         iconComponent: a.tEF,
         onClick: o.LT
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var i = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, i)
+          var r = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, r)
         }
         return n
       })(Object(l)).forEach(function(e) {
-        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(l, e))
-      }), r))
+        Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
+      }), i))
     }
   })
 }

@@ -1,4 +1,4 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 360328, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   s: () => p
@@ -13,13 +13,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk246364 = require("./246364.js"),
   Chunk388032 = require("./388032.jsx");
 
-function p(e, t, p, h) {
-  let [f, m] = r.useState(false), g = (0, l.e7)([s.Z], () => s.Z.getChannel(h)), b = r.useCallback(() => {
+function p(e, t, p, f) {
+  let [h, m] = i.useState(false), g = (0, l.e7)([s.Z], () => s.Z.getChannel(f)), b = i.useCallback(() => {
     (0, a.showToast)((0, a.createToast)(d.intl.string(d.t.R0RpRX), a.ToastType.FAILURE))
-  }, []), C = r.useCallback(async () => {
-    if (!f && null != e && null != t && null != p) {
+  }, []), _ = i.useCallback(async () => {
+    if (!h && null != e && null != t && null != p) {
       if (null != g) return void o.default.selectPrivateChannel(g.id);
-      if (!f) {
+      if (!h) {
         m(true);
         try {
           await c.Z.createOrEnterJoinRequestInterview(p)
@@ -30,10 +30,10 @@ function p(e, t, p, h) {
         }
       }
     }
-  }, [e, p, g, b, f, t]);
+  }, [e, p, g, b, h, t]);
   return {
     approveRequest: async () => {
-      if (!f && null != e && null != t && null != p) {
+      if (!h && null != e && null != t && null != p) {
         m(true);
         try {
           await c.Z.updateGuildJoinRequest(e, t, p, u.wB.APPROVED)
@@ -47,9 +47,9 @@ function p(e, t, p, h) {
     rejectRequest: () => {
       null != e && null != t && null != p && (0, a.ZDy)(async () => {
         let {
-          default: r
+          default: i
         } = await n.e("56496").then(n.bind(n, 113886));
-        return n => (0, i.jsx)(r, {
+        return n => (0, r.jsx)(i, {
           modalProps: n,
           guildId: e,
           userId: t,
@@ -58,7 +58,7 @@ function p(e, t, p, h) {
         })
       })
     },
-    submitting: f,
-    handleOpenInterview: C
+    submitting: h,
+    handleOpenInterview: _
   }
 }

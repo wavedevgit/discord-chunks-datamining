@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 56710 **/
 /** chunk id: 332538, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Wj: () => T,
@@ -39,7 +39,7 @@ function Z(e) {
       trailing: _,
       showUnread: N
     } = function(e, t, n) {
-      let l = (0, C.Z)(e).available,
+      let l = (0, E.Z)(e).available,
         {
           shouldShow: d
         } = (0, S._)(e, "useGuildPowerupsChannelListIndicators"),
@@ -54,7 +54,7 @@ function Z(e) {
         };
         let {
           unlockedPowerups: u
-        } = t, d = (0, E.h)([...Object.values(u), ...Object.values(null != (i = null == h ? true : h.entitlements) ? i : {})]), p = null != (o = null == n ? true : n.lastSeenWarningNotification) ? o : Date.now(), g = new Date(null == (e = d[d.length - 1]) ? true : e.ends_at).getTime(), m = null != (a = null == n ? true : n.lastBoostCount) ? a : 0;
+        } = t, d = (0, x.h)([...Object.values(u), ...Object.values(null != (i = null == h ? true : h.entitlements) ? i : {})]), p = null != (o = null == n ? true : n.lastSeenWarningNotification) ? o : Date.now(), g = new Date(null == (e = d[d.length - 1]) ? true : e.ends_at).getTime(), m = null != (a = null == n ? true : n.lastBoostCount) ? a : 0;
         return d.length > 0 && p < g || f ? {
           trailing: (0, r.jsx)(s.Mgn, {
             color: s.TVs.colors.STATUS_WARNING,
@@ -76,11 +76,11 @@ function Z(e) {
     Z = function(e, t) {
       let [n, r] = (0, d.US)(null != t ? [a.z.GUILD_POWERUP_PERKS_COACHMARK] : []), s = n === a.z.GUILD_POWERUP_PERKS_COACHMARK, {
         available: c
-      } = (0, C.Z)(e), u = (0, o.e7)([f.Z], () => {
+      } = (0, E.Z)(e), u = (0, o.e7)([f.Z], () => {
         var t, n;
         return null != (n = null == (t = f.Z.getGuild(e)) ? true : t.features.has(P.GuildFeatures.GAME_SERVERS)) && n
       }), _ = (0, o.e7)([b.Z], () => b.Z.getLowestGameCostForGuild(e)), O = function(e, t) {
-        let n = (0, v.qI)(e, "GuildPowerupsChannelRow"),
+        let n = (0, j.qI)(e, "GuildPowerupsChannelRow"),
           r = (0, m.BU)(e, "GuildPowerupsChannelRow"),
           a = (0, o.e7)([f.Z], () => {
             var t;
@@ -103,7 +103,7 @@ function Z(e) {
           }
           return 0
         }, [n, e, t, r, a])
-      }(e, t), [y, E] = (0, d.XR)(null != t && !s && O > 0 ? a.z.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK : null, O), S = y === a.z.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK, N = i.useMemo(() => {
+      }(e, t), [y, x] = (0, d.XR)(null != t && !s && O > 0 ? a.z.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK : null, O), S = y === a.z.GUILD_POWERUP_NEW_PERK_AVAILABLE_COACHMARK, N = i.useMemo(() => {
         if (null == t || s || S) return;
         let n = function(e, t) {
           let n = g.Oe.find(e => {
@@ -117,7 +117,7 @@ function Z(e) {
           let i = I.Cp[n],
             l = null != i ? t.allPowerups[i] : true;
           if (null != l) return {
-            type: j.J.LEVEL_REACHED,
+            type: v.J.LEVEL_REACHED,
             powerup: l,
             markAsDismissed: t => {
               (0, p.Qd)(r, e, true, t)
@@ -134,18 +134,18 @@ function Z(e) {
               return null != n && !!(l >= n)
             }) ? [] : r.map(r => {
               let i = t.allPowerups[r];
-              return null == i || n < i.cost || (0, x.e)(e, i, "maybeGetPerkPurchaseablePopoutDCF") ? null : i
+              return null == i || n < i.cost || (0, C.e)(e, i, "maybeGetPerkPurchaseablePopoutDCF") ? null : i
             })).filter(h.lm);
           if (0 !== o.length) {
             if (1 === o.length && !(0, p.OY)(a.C.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK, e)) return {
-              type: j.J.PERKS_PURCHASABLE,
+              type: v.J.PERKS_PURCHASABLE,
               powerups: o,
               markAsDismissed: t => {
                 (0, p.Qd)(a.C.GUILD_POWERUP_SINGLE_SKU_PURCHASE_COACHMARK, e, true, t)
               }
             };
             if (o.length > 1 && !(0, p.OY)(a.C.GUILD_POWERUP_CHOICE_SKU_PURCHASE_COACHMARK, e)) return {
-              type: j.J.PERKS_PURCHASABLE,
+              type: v.J.PERKS_PURCHASABLE,
               powerups: o,
               markAsDismissed: t => {
                 (0, p.Qd)(a.C.GUILD_POWERUP_CHOICE_SKU_PURCHASE_COACHMARK, e, true, t)
@@ -156,7 +156,7 @@ function Z(e) {
         if (null != r) return r;
         let i = function(e, t, n, r) {
           if ((0, m.v$)(e, "maybeGetGameServerHostingGuildEligiblePopoutDCF") && !t && null != r && n >= r && !(0, p.OY)(a.C.GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK, e)) return {
-            type: j.J.GAME_SERVER_HOSTING_GUILD_ELIGIBLE,
+            type: v.J.GAME_SERVER_HOSTING_GUILD_ELIGIBLE,
             markAsDismissed: t => {
               (0, p.Qd)(a.C.GAME_SERVER_HOSTING_GUILD_ELIGIBLE_COACHMARK, e, true, t)
             }
@@ -164,26 +164,26 @@ function Z(e) {
         }(e, u, c, _);
         if (null != i) return i
       }, [e, t, s, S, c, u, _]), [Z, T] = (0, d.bf)(null != N ? a.z.GUILD_POWERUP_NOTIFICATION : null, {
-        cooldownDurationMs: j.d
+        cooldownDurationMs: v.d
       });
       return i.useMemo(() => {
         if (null != t) {
           if (s) return {
-            type: j.J.PERKS_AVAILABLE,
+            type: v.J.PERKS_AVAILABLE,
             markAsDismissed: r
           };
           if (S) {
             if (O === I.Du.GAME_SERVER_HOSTING) return {
-              type: j.J.GAME_SERVER_HOSTING_AVAILABLE,
-              markAsDismissed: E
+              type: v.J.GAME_SERVER_HOSTING_AVAILABLE,
+              markAsDismissed: x
             };
             let e = I.os[O],
               n = Object.values(t.allPowerups).filter(t => e.has(t.skuId));
             if (0 === n.length) return;
             return {
               powerups: n,
-              type: j.J.NEW_PERK_AVAILABLE,
-              markAsDismissed: E
+              type: v.J.NEW_PERK_AVAILABLE,
+              markAsDismissed: x
             }
           }
           if (Z === a.z.GUILD_POWERUP_NOTIFICATION && null != N) {
@@ -221,7 +221,7 @@ function Z(e) {
             }), e
           }
         }
-      }, [t, s, r, N, Z, T, S, E, O])
+      }, [t, s, r, N, Z, T, S, x, O])
     }(e, n);
   if (null !== n && (null != _ || N || null != Z)) return {
     trailing: _,

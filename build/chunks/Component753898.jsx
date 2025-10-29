@@ -1,4 +1,4 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 753898, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => x
@@ -29,62 +29,62 @@ function x(e) {
     channel: n,
     children: x,
     user: O
-  } = e, j = (0, l.e7)([s.Z], () => s.Z.useReducedMotion), E = null != (t = (0, d.ZP)(n)) ? t : "", {
+  } = e, E = (0, l.e7)([s.Z], () => s.Z.useReducedMotion), j = null != (t = (0, d.ZP)(n)) ? t : "", {
     avatarDecorationSrc: S,
     eventHandlers: P,
     isAnimating: I
-  } = (0, C.Z)({
+  } = (0, _.Z)({
     userId: null == O ? true : O.id,
     size: o.EFr.SIZE_80,
     animateOnHover: true
-  }), [Z, T] = r.useState(false), N = r.useCallback(() => {
+  }), [Z, T] = i.useState(false), N = i.useCallback(() => {
     P.onMouseEnter(), T(true)
-  }, [P]), A = r.useCallback(() => {
+  }, [P]), A = i.useCallback(() => {
     P.onMouseLeave(), T(false)
   }, [P]), w = !n.isMultiUserDM() && (null == O ? true : O.displayNameStyles) != null;
-  return (0, i.jsxs)(y.ZP, {
+  return (0, r.jsxs)(y.ZP, {
     channelId: n.id,
     onMouseEnter: N,
     onMouseLeave: A,
     children: [(() => {
-      let e = !j && I;
-      return n.isMultiUserDM() ? (0, i.jsx)(m.v, {
+      let e = !E && I;
+      return n.isMultiUserDM() ? (0, r.jsx)(m.v, {
         channel: n,
         editable: true,
         location: c.Z.EMPTY_GROUP_DM,
-        children: (0, i.jsx)(f.Z, {
+        children: (0, r.jsx)(h.Z, {
           channel: n,
           size: o.EFr.SIZE_80,
           experimentLocation: "empty_messages",
           animated: e,
-          "aria-label": E
+          "aria-label": j
         })
-      }) : (0, i.jsx)(o.qEK, {
-        "aria-label": E,
+      }) : (0, r.jsx)(o.qEK, {
+        "aria-label": j,
         size: o.EFr.SIZE_80,
         src: (0, u.x)(n, 80, e),
         avatarDecoration: S
       })
-    })(), (0, i.jsx)(y.Ot, {
-      children: w ? (0, i.jsx)(h.Z, {
-        userName: E,
+    })(), (0, r.jsx)(y.Ot, {
+      children: w ? (0, r.jsx)(f.Z, {
+        userName: j,
         displayNameStyles: null == O ? true : O.displayNameStyles,
         effectDisplayType: Z ? p.F.ANIMATED : p.F.STATIC,
         loop: true
-      }) : E
-    }), (0, i.jsx)(y.jz, {
+      }) : j
+    }), (0, r.jsx)(y.jz, {
       children: x
-    }), n.isMultiUserDM() && (0, i.jsxs)(a.hE2, {
+    }), n.isMultiUserDM() && (0, r.jsxs)(a.hE2, {
       className: v.buttonContainer,
-      children: [(0, i.jsx)(b.l, {
+      children: [(0, r.jsx)(b.l, {
         channel: n,
-        text: _.intl.string(_.t["6Qgrev"]),
+        text: C.intl.string(C.t["6Qgrev"]),
         icon: o.ejJ
-      }), (0, i.jsx)(a.zxk, {
+      }), (0, r.jsx)(a.zxk, {
         icon: o.vdY,
         variant: "secondary",
-        text: _.intl.string(_.t["5Q9+/L"]),
-        "aria-label": _.intl.string(_.t["5Q9+/L"]),
+        text: C.intl.string(C.t["5Q9+/L"]),
+        "aria-label": C.intl.string(C.t["5Q9+/L"]),
         onClick: () => (0, g.B)(n.id, c.Z.EMPTY_GROUP_DM)
       })]
     })]

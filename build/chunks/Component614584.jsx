@@ -1,4 +1,4 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 614584, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => P
@@ -25,31 +25,31 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx");
 
-function j(e) {
+function E(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      i = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), i.forEach(function(t) {
-      var i;
-      i = n[t], t in e ? Object.defineProperty(e, t, {
-        value: i,
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = i
+      }) : e[t] = r
     })
   }
   return e
 }
 
-function E(e, t) {
+function j(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, i)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
     return n
   })(Object(t)).forEach(function(n) {
@@ -68,9 +68,9 @@ let S = Chunk647438.memo(function(e) {
     setPopout: N,
     isReplySpineClickable: A,
     showReplySpine: w
-  } = e, M = S.state === f.Y.LOADED ? S.message : true, R = (0, C.Uj)(M), L = (0, u.p)(), D = s.d.useExperiment({
+  } = e, M = S.state === h.Y.LOADED ? S.message : true, R = (0, _.Uj)(M), D = (0, u.p)(), L = s.d.useExperiment({
     location: "repliedMessage"
-  }).enabled, k = (0, d.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), U = r.useMemo(() => {
+  }).enabled, k = (0, d.A)((null != (t = n.editedTimestamp) ? t : n.timestamp).valueOf()), U = i.useMemo(() => {
     if (null == M) return null;
     let e = (0, o.Z)(M);
     if (e.type === x.uaV.USER_JOIN) return (0, a.Rp)(O.intl.formatToParts(g.Z.getSystemMessageUserJoin(e.id), {
@@ -86,11 +86,11 @@ let S = Chunk647438.memo(function(e) {
       application: null == e ? true : e.application,
       username: null == R ? true : R.nick
     }));
-    if (e.type === x.uaV.PRIVATE_CHANNEL_INTEGRATION_ADDED) return (0, a.Rp)((0, h.B2)({
+    if (e.type === x.uaV.PRIVATE_CHANNEL_INTEGRATION_ADDED) return (0, a.Rp)((0, f.B2)({
       application: null == e ? true : e.application,
       username: null == R ? true : R.nick
     }));
-    if (e.type === x.uaV.PRIVATE_CHANNEL_INTEGRATION_REMOVED) return (0, a.Rp)((0, h.hj)({
+    if (e.type === x.uaV.PRIVATE_CHANNEL_INTEGRATION_REMOVED) return (0, a.Rp)((0, f.hj)({
       application: null == e ? true : e.application,
       username: null == R ? true : R.nick
     }));
@@ -99,35 +99,35 @@ let S = Chunk647438.memo(function(e) {
       let t = {
           formatInline: true,
           allowLinks: true,
-          shouldFilterKeywords: L
+          shouldFilterKeywords: D
         },
-        n = e.isFirstMessageInForumPost(P) ? E(j({}, t), {
+        n = e.isFirstMessageInForumPost(P) ? j(E({}, t), {
           noStyleAndInteraction: true,
           allowHeading: true,
           allowList: true,
-          allowGameMentions: D
-        }) : E(j({}, t), {
+          allowGameMentions: L
+        }) : j(E({}, t), {
           formatInline: true,
           allowHeading: k,
           allowList: k,
-          allowGameMentions: D
+          allowGameMentions: L
         });
       return (0, b.ZP)(e, n).content
     }
     return null
-  }, [M, R, P, k, L, D]), {
+  }, [M, R, P, k, D, L]), {
     isReplyAuthorBlocked: B,
-    isReplyAuthorIgnored: H
+    isReplyAuthorIgnored: F
   } = (0, l.cj)([m.Z], () => ({
     isReplyAuthorBlocked: null != M && m.Z.isBlockedForMessage(M),
     isReplyAuthorIgnored: null != M && m.Z.isIgnoredForMessage(M)
-  }), [M]), F = (0, v.wq)(null == M ? true : M.author.id, P.id), V = (0, v.$3)(n, M), G = (0, v.Wl)(M, P, Z, N), z = (0, v.rY)(T, N), W = r.useCallback(() => {
+  }), [M]), V = (0, v.wq)(null == M ? true : M.author.id, P.id), H = (0, v.$3)(n, M), G = (0, v.Wl)(M, P, Z, N), W = (0, v.rY)(T, N), z = i.useCallback(() => {
     N({
       referencedUsernameProfile: false,
       referencedAvatarProfile: false
     })
-  }, [N]), q = (0, C.Uj)(n);
-  return (0, i.jsx)(y.Z, {
+  }, [N]), q = (0, _.Uj)(n);
+  return (0, r.jsx)(y.Z, {
     repliedAuthor: R,
     baseMessage: n,
     channel: P,
@@ -136,15 +136,15 @@ let S = Chunk647438.memo(function(e) {
     content: U,
     compact: I,
     isReplyAuthorBlocked: B,
-    isReplyAuthorIgnored: H,
+    isReplyAuthorIgnored: F,
     showAvatarPopout: T,
     showUsernamePopout: Z,
-    renderPopout: _.Z,
-    onClickAvatar: z,
+    renderPopout: C.Z,
+    onClickAvatar: W,
     onClickUsername: G,
-    onClickReply: V,
-    onContextMenu: F,
-    onPopoutRequestClose: W,
+    onClickReply: H,
+    onContextMenu: V,
+    onPopoutRequestClose: z,
     isReplySpineClickable: A,
     showReplySpine: w
   })
@@ -154,7 +154,7 @@ function P(e) {
   let {
     message: t,
     channel: n,
-    compact: r,
+    compact: i,
     setPopout: l,
     referencedUsernameProfile: a,
     referencedAvatarProfile: o,
@@ -163,12 +163,12 @@ function P(e) {
     isReplySpineClickable: u,
     showReplySpine: d = true
   } = e;
-  return null != s && (0, i.jsx)(S, {
+  return null != s && (0, r.jsx)(S, {
     baseMessage: t,
     replyReference: s,
     referencedMessage: c,
     channel: n,
-    compact: r,
+    compact: i,
     setPopout: l,
     referencedUsernameProfile: a,
     referencedAvatarProfile: o,

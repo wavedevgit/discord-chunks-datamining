@@ -108,7 +108,7 @@ function B(e) {
     if (e && !s) {
       let {
         default: e
-      } = await Promise.all([n.e("64838"), n.e("52407"), n.e("17013"), n.e("96861")]).then(n.bind(n, 188209));
+      } = await Promise.all([n.e("64838"), n.e("52407"), n.e("34297"), n.e("62006")]).then(n.bind(n, 188209));
       return n => (0, r.jsx)(e, j(M({}, n), {
         quest: t,
         preview: o,
@@ -118,7 +118,7 @@ function B(e) {
     }
     let {
       default: u
-    } = await Promise.all([n.e("64838"), n.e("52407"), n.e("17013"), n.e("61624")]).then(n.bind(n, 985866));
+    } = await Promise.all([n.e("64838"), n.e("52407"), n.e("34297"), n.e("6006")]).then(n.bind(n, 985866));
     return e => (0, r.jsx)(u, j(M({}, e), {
       questId: t.id,
       questContentPosition: a,

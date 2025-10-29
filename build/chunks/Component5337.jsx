@@ -34,10 +34,10 @@ function g(e, t) {
     analyticsLocations: a,
     onViewWishlist: s,
     isSingleCard: u = false
-  } = t, p = null != n && n > 0, g = p ? h.intl.string(h.t.TxBQzD) : h.intl.string(h.t.ilhtIa), m = e.collectiblesItem.type === i.Z.PROFILE_EFFECT;
+  } = t, h = null != n && n > 0, g = h ? p.intl.string(p.t.TxBQzD) : p.intl.string(p.t.ilhtIa), m = e.collectiblesItem.type === i.Z.PROFILE_EFFECT;
   return (0, r.jsx)(d.Z, {
     onCardClick: () => {
-      if (p) return void s();
+      if (h) return void s();
       f(e, l, a)
     },
     tooltipText: g,
@@ -64,15 +64,15 @@ function m(e, t) {
     isSingleCard: true
   });
   return (0, r.jsxs)("div", {
-    className: p.singleItemContainer,
+    className: h.singleItemContainer,
     children: [s, (0, r.jsxs)("div", {
-      className: p.singleItemInfo,
+      className: h.singleItemInfo,
       children: [(0, r.jsx)(a.P3F, {
         onClick: () => {
           f(e, n, l)
         },
-        className: p.singleItemName,
-        "aria-label": h.intl.string(h.t.ilhtIa),
+        className: h.singleItemName,
+        "aria-label": p.intl.string(p.t.ilhtIa),
         children: (0, r.jsx)(a.Text, {
           variant: "text-sm/semibold",
           color: "text-default",
@@ -85,11 +85,11 @@ function m(e, t) {
         children: function(e) {
           switch (e.collectiblesItem.type) {
             case i.Z.AVATAR_DECORATION:
-              return h.intl.string(h.t["7v0T9P"]);
+              return p.intl.string(p.t["7v0T9P"]);
             case i.Z.PROFILE_EFFECT:
-              return h.intl.string(h.t.wR5wOo);
+              return p.intl.string(p.t.wR5wOo);
             case i.Z.NAMEPLATE:
-              return h.intl.string(h.t.x5CoXR);
+              return p.intl.string(p.t.x5CoXR);
             default:
               return ""
           }

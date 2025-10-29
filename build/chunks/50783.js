@@ -1,5 +1,5 @@
-/** Chunk was on 60565 **/
-/** chunk id: 50783, original params: e,t,r (module,exports,require) **/
+/** Chunk was on 73726 **/
+/** chunk id: 50783, original params: e,t,n (module,exports,require) **/
 module.exports = {
   alignCenter: "alignCenter__9ecf6",
   clickableRow: "clickableRow__9ecf6",

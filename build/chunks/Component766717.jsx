@@ -16,13 +16,13 @@ function s(e) {
     renderPreview: o,
     moreCount: c,
     isSingleCard: d = false
-  } = e, u = s ? a.cardPreview : a.cardPreviewNoScale, h = d ? a.cardSingle : a.card;
+  } = e, u = s ? a.cardPreview : a.cardPreviewNoScale, p = d ? a.cardSingle : a.card;
   return (0, r.jsx)(i.u, {
     text: n,
     position: "top",
     children: (0, r.jsxs)(l.P3F, {
       onClick: t,
-      className: h,
+      className: p,
       "aria-label": n,
       children: [(0, r.jsx)("div", {
         className: u,

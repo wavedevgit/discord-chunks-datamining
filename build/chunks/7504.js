@@ -1,4 +1,4 @@
-/** Chunk was on 34271 **/
+/** Chunk was on 73726 **/
 /** chunk id: 7504, original params: e,t,n (module,exports,require) **/
 module.exports = {
   "outgoing-call-pulse": "outgoing-call-pulse__2f4f7",
@@ -14,6 +14,7 @@ module.exports = {
   noBorder: "noBorder__2f4f7",
   overlayContainer: "overlayContainer__2f4f7",
   compact: "compact__2f4f7",
+  noPointerEvents: "noPointerEvents__2f4f7",
   overlayTop: "overlayTop__2f4f7",
   overlayBottom: "overlayBottom__2f4f7",
   overlayTitle: "overlayTitle__2f4f7",

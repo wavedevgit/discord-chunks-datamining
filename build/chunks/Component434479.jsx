@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 56710 **/
 /** chunk id: 434479, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   m: () => h
@@ -57,9 +57,9 @@ function h(e) {
       trailing: _,
       background: O,
       showUnread: y = false,
-      ref: j
+      ref: v
     } = e,
-    v = function(e, t) {
+    j = function(e, t) {
       if (null == e) return {};
       var n, r, i = function(e, t) {
         if (null == e) return {};
@@ -74,17 +74,17 @@ function h(e) {
       }
       return i
     }(e, ["id", "className", "innerClassName", "renderIcon", "text", "selected", "trailing", "background", "showUnread", "ref"]);
-  let x = (0, o.JA)(n),
-    C = null != (t = (0, a.q)(m)) ? t : "";
+  let C = (0, o.JA)(n),
+    E = null != (t = (0, a.q)(m)) ? t : "";
   return (0, r.jsx)("li", {
-    ref: j,
-    children: (0, r.jsxs)(s.kL8, f(p({}, v), {
-      buttonProps: f(p({}, x), {
+    ref: v,
+    children: (0, r.jsxs)(s.kL8, f(p({}, j), {
+      buttonProps: f(p({}, C), {
         id: n,
         role: "button"
       }),
       tag: "div",
-      "aria-label": C,
+      "aria-label": E,
       focusProps: {
         offset: {
           top: 1,
@@ -92,7 +92,7 @@ function h(e) {
           right: 4
         }
       },
-      onContextMenu: null != v.onContextMenu ? v.onContextMenu : e => {
+      onContextMenu: null != j.onContextMenu ? j.onContextMenu : e => {
         e.stopPropagation()
       },
       className: l()(u.containerDefault, d.wrapper, {

@@ -75,13 +75,13 @@ function H(e) {
   }), q = i.useRef(null), {
     isHoveringOrFocusing: K,
     isHovering: Q
-  } = (0, h.Z)(q), X = (0, j.$m)(), J = (0, o.q_F)({
+  } = (0, p.Z)(q), X = (0, j.$m)(), J = (0, o.q_F)({
     opacity: +(null != X.interactionType),
     config: {
       duration: 150
     }
   }), $ = e => {
-    (0, v.openUserProfileModal)(G({
+    (0, O.openUserProfileModal)(G({
       sourceAnalyticsLocations: W,
       hideRestrictedProfile: true
     }, Y, e))
@@ -136,7 +136,7 @@ function H(e) {
               }), (0, r.jsx)(I.Z, {
                 userId: n.id,
                 className: U.toast
-              }), (0, r.jsx)(O.Z, {
+              }), (0, r.jsx)(v.Z, {
                 user: n,
                 displayProfile: B,
                 channelId: k.id,
@@ -184,7 +184,7 @@ function H(e) {
             handleOpenProfile: $,
             analyticsLocations: W,
             context: Y
-          }), (null == B ? true : B.profileEffect) != null && (0, r.jsx)(p.Z, {
+          }), (null == B ? true : B.profileEffect) != null && (0, r.jsx)(h.Z, {
             skuId: null == B || null == (t = B.profileEffect) ? true : t.skuId,
             isHovering: Q,
             urlQueryString: "dmView"

@@ -1,4 +1,4 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 698877, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   O: () => s
@@ -17,45 +17,45 @@ function s(e) {
     isSelfStream: u,
     centerButton: d,
     onMouseEnter: p,
-    onMouseLeave: h,
-    renderNUXHighlight: f,
+    onMouseLeave: f,
+    renderNUXHighlight: h,
     buttonRef: m
   } = e, g = function(e, t) {
     if (null == e) return {};
-    var n, i, r = function(e, t) {
+    var n, r, i = function(e, t) {
       if (null == e) return {};
-      var n, i, r = {},
+      var n, r, i = {},
         l = Object.keys(e);
-      for (i = 0; i < l.length; i++) n = l[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
-      return r
+      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+      return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
       var l = Object.getOwnPropertySymbols(e);
-      for (i = 0; i < l.length; i++) n = l[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
-    return r
+    return i
   }(e, ["hasPermission", "streamActive", "isSelfStream", "centerButton", "onMouseEnter", "onMouseLeave", "renderNUXHighlight", "buttonRef"]);
   let b = d ? a.d : a.Z;
   t = c ? u ? o.intl.string(o.t.S5anIc) : o.intl.string(o.t.q3O3J8) : s ? o.intl.string(o.t.fjBNo1) : o.intl.string(o.t.uQn9B8);
   let {
-    Component: C,
+    Component: _,
     events: y,
-    play: _
+    play: C
   } = (0, l.P)(c ? "disable" : "enable");
-  return r.useEffect(() => () => _(), [c, _]), (0, i.jsx)(b, function(e) {
+  return i.useEffect(() => () => C(), [c, C]), (0, r.jsx)(b, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
-        i = Object.keys(n);
-      "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        r = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
         return Object.getOwnPropertyDescriptor(n, e).enumerable
-      }))), i.forEach(function(t) {
-        var i;
-        i = n[t], t in e ? Object.defineProperty(e, t, {
-          value: i,
+      }))), r.forEach(function(t) {
+        var r;
+        r = n[t], t in e ? Object.defineProperty(e, t, {
+          value: r,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : e[t] = i
+        }) : e[t] = r
       })
     }
     return e
@@ -64,14 +64,14 @@ function s(e) {
     isTrayButton: true,
     label: t,
     disabled: !s,
-    iconComponent: C,
+    iconComponent: _,
     isActive: c,
-    color: (f ? n = "premiumGradient" : c && (n = "green"), n),
+    color: (h ? n = "premiumGradient" : c && (n = "green"), n),
     onMouseEnter: e => {
       null == p || p(e), y.onMouseEnter()
     },
     onMouseLeave: e => {
-      null == h || h(e), y.onMouseLeave()
+      null == f || f(e), y.onMouseLeave()
     }
   }, g))
 }

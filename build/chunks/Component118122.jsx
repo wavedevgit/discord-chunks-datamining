@@ -1,7 +1,7 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 56710 **/
 /** chunk id: 118122, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => C
+  Z: () => E
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk675999 = require("./675999.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk816827 = require("./816827.js");
-let v = {
+let j = {
   origin: {
     x: false,
     y: 0
@@ -35,7 +35,7 @@ let v = {
   }
 };
 
-function x(e) {
+function C(e) {
   (0, a.jW)(e, async () => {
     let {
       default: e
@@ -61,11 +61,11 @@ function x(e) {
   })
 }
 
-function C(e) {
+function E(e) {
   let {
     disableTooltip: t,
     lastTargetNode: n
-  } = e, a = (0, l.Wu)([h.Z], () => h.Z.getGuildsArray()), C = (0, l.e7)([g.default], () => g.default.getCurrentUser()), E = i.useMemo(() => a.some(e => (0, f.eM)(e, C)), [a, C]), S = (0, o.s9z)(e => (0, o.DEQ)(e, O.PU)), {
+  } = e, a = (0, l.Wu)([h.Z], () => h.Z.getGuildsArray()), E = (0, l.e7)([g.default], () => g.default.getCurrentUser()), x = i.useMemo(() => a.some(e => (0, f.eM)(e, E)), [a, E]), S = (0, o.s9z)(e => (0, o.DEQ)(e, O.PU)), {
     analyticsLocations: I
   } = (0, s.ZP)(), P = (0, r.jsx)(b.Z, {
     showPill: false,
@@ -85,15 +85,15 @@ function C(e) {
       })
     },
     selected: S,
-    onContextMenu: x,
+    onContextMenu: C,
     tooltip: y.intl.string(y.t.l5WIbf),
     icon: o.oFk
   });
   return t ? P : (0, r.jsx)("div", {
-    className: j.tutorialContainer,
+    className: v.tutorialContainer,
     children: (0, r.jsxs)(p.Z, {
-      tutorialId: E ? "create-more-servers" : "create-first-server",
-      inlineSpecs: v,
+      tutorialId: x ? "create-more-servers" : "create-first-server",
+      inlineSpecs: j,
       position: "right",
       children: [P, null != n && (0, r.jsx)(m.ZP, {
         name: y.intl.string(y.t["45xjM5"]),

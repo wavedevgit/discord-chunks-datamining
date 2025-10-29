@@ -1,4 +1,4 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 191062, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -15,7 +15,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk167207 = require("./167207.js");
 
-function f(e, t, n) {
+function h(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -30,11 +30,11 @@ let m = {
   g = e => {
     let {
       region: t,
-      className: n = h.regionSelectName
-    } = e, r = t.name.replace(/ \(VIP\)$/, "");
-    return (0, i.jsx)("div", {
+      className: n = f.regionSelectName
+    } = e, i = t.name.replace(/ \(VIP\)$/, "");
+    return (0, r.jsx)("div", {
       className: n,
-      children: r
+      children: i
     })
   };
 class b extends Chunk647438.PureComponent {
@@ -57,7 +57,7 @@ class b extends Chunk647438.PureComponent {
     })
   }
 }
-class C extends Chunk647438.PureComponent {
+class _ extends Chunk647438.PureComponent {
   componentDidMount() {
     null == this.props.regions && Chunk771340.Z.fetchRegions(null)
   }
@@ -71,7 +71,7 @@ class C extends Chunk647438.PureComponent {
         label: exports.name,
         value: exports
       },
-      r = module.filter(e => !e.deprecated && !e.hidden).map(e => ({
+      i = module.filter(e => !e.deprecated && !e.hidden).map(e => ({
         label: e.name,
         value: e,
         key: e.id
@@ -88,10 +88,10 @@ class C extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), f(this, "renderOption", (e, t) => (0, i.jsx)(b, {
+    super(...e), h(this, "renderOption", (e, t) => (0, r.jsx)(b, {
       region: e.value,
       selected: t
-    }, e.value.id)), f(this, "getSelectedRegion", () => {
+    }, e.value.id)), h(this, "getSelectedRegion", () => {
       var e;
       let {
         regions: t,
@@ -112,7 +112,7 @@ class C extends Chunk647438.PureComponent {
         deprecated: false,
         hidden: false
       }
-    }), f(this, "handleChangeVoiceRegion", e => {
+    }), h(this, "handleChangeVoiceRegion", e => {
       let {
         value: t
       } = e, {
@@ -124,4 +124,4 @@ class C extends Chunk647438.PureComponent {
 }
 let y = Chunk442837.ZP.connectStores([Chunk903223.Z], () => ({
   regions: Chunk903223.Z.getRegions(null)
-}))(C)
+}))(_)

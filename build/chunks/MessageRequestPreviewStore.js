@@ -1,9 +1,9 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 748902, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
 }), require("./388685.js");
-var i, Chunk442837 = require("./442837.js"),
+var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk786761 = require("./786761.js"),
   Chunk594174 = require("./594174.js"),
@@ -21,21 +21,21 @@ function u(e, t, n) {
 let d = {},
   p = new Set;
 
-function h(e) {
+function f(e) {
   return s.Z.isMessageRequest(e) || c.Z.isSpam(e)
 }
 
-function f(e, t) {
+function h(e, t) {
   let n = arguments.length > 2 && true !== arguments[2] && arguments[2];
-  if (!h(e) || null != t && e !== (null == t ? true : t.channel_id)) return;
-  let i = null == t ? null : (0, a.e5)(t);
+  if (!f(e) || null != t && e !== (null == t ? true : t.channel_id)) return;
+  let r = null == t ? null : (0, a.e5)(t);
   d[e] = {
     loaded: true,
     error: n,
-    message: i
+    message: r
   }
 }
-class m extends(i = Chunk442837.ZP.Store) {
+class m extends(r = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk355298.Z, Chunk333984.Z, Chunk594174.default)
   }
@@ -59,13 +59,13 @@ let g = new m(Chunk570140.Z, {
     let {
       channel: t
     } = e;
-    h(t.id) && p.add(t.id)
+    f(t.id) && p.add(t.id)
   },
   CHANNEL_UPDATES: function(e) {
     let {
       channels: t
     } = e;
-    for (let e of t) h(e.id) || (p.delete(e.id), delete d[e.id])
+    for (let e of t) f(e.id) || (p.delete(e.id), delete d[e.id])
   },
   CHANNEL_DELETE: function(e) {
     let {
@@ -75,32 +75,32 @@ let g = new m(Chunk570140.Z, {
   },
   MESSAGE_CREATE: function(e) {
     if (e.isPushNotification) returnfalse;
-    f(e.message.channel_id, e.message)
+    h(e.message.channel_id, e.message)
   },
   MESSAGE_UPDATE: function(e) {
     var t, n;
-    let i = e.message.channel_id;
-    if (null == i) returnfalse;
-    let r = d[i];
-    if (null == r || null == r.message) returnfalse;
-    d[i] = (t = function(e) {
+    let r = e.message.channel_id;
+    if (null == r) returnfalse;
+    let i = d[r];
+    if (null == i || null == i.message) returnfalse;
+    d[r] = (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
-          i = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), i.forEach(function(t) {
+        }))), r.forEach(function(t) {
           u(e, t, n[t])
         })
       }
       return e
-    }({}, r), n = n = {
-      message: (0, a.wi)(r.message, e.message)
+    }({}, i), n = n = {
+      message: (0, a.wi)(i.message, e.message)
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
-        var i = Object.getOwnPropertySymbols(e);
-        n.push.apply(n, i)
+        var r = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, r)
       }
       return n
     })(Object(n)).forEach(function(e) {
@@ -108,7 +108,7 @@ let g = new m(Chunk570140.Z, {
     }), t)
   },
   MESSAGE_DELETE: function(e) {
-    if (!h(e.channelId)) returnfalse;
+    if (!f(e.channelId)) returnfalse;
     d[e.channelId] = {
       loaded: true,
       error: false,
@@ -119,17 +119,17 @@ let g = new m(Chunk570140.Z, {
     let {
       requestedChannelIds: t,
       supplementalData: n
-    } = e, i = new Set([...t]);
+    } = e, r = new Set([...t]);
     for (let e of (n.forEach(e => {
-        f(e.channel_id, e.message_preview), i.delete(e.channel_id)
-      }), Array.from(i))) f(e, null)
+        h(e.channel_id, e.message_preview), r.delete(e.channel_id)
+      }), Array.from(r))) h(e, null)
   },
   LOAD_MESSAGE_REQUESTS_SUPPLEMENTAL_DATA_ERROR: function(e) {
     let {
       requestedChannelIds: t
     } = e;
     t.forEach(e => {
-      f(e, null, true)
+      h(e, null, true)
     })
   }
 })

@@ -1,4 +1,4 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 262746, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -22,13 +22,13 @@ function g(e) {
     channel: t,
     user: g,
     guild: b
-  } = e, C = (0, l.e7)([p.Z], () => null != g && p.Z.isUserBanned(g.id)), y = null != g && null == C, [_, v] = r.useState(y), x = (0, l.e7)([d.Z], () => null != g && null != b && (0, u.lD)(g, b, [d.Z]));
+  } = e, _ = (0, l.e7)([p.Z], () => null != g && p.Z.isUserBanned(g.id)), y = null != g && null == _, [C, v] = i.useState(y), x = (0, l.e7)([d.Z], () => null != g && null != b && (0, u.lD)(g, b, [d.Z]));
   if ((0, c.ZP)(() => {
       y && s.Z.searchGuildBans(t.guild_id, true, [null == g ? true : g.id]).finally(() => v(false))
     }), !x) return null;
-  let O = true === C ? m.intl.string(f.default.dpfwQ1) : m.intl.string(f.default.ASv23S),
-    j = "ban-user-".concat(null == g ? true : g.id);
-  return (0, i.jsx)(h.Z, {
+  let O = true === _ ? m.intl.string(h.default.dpfwQ1) : m.intl.string(h.default.ASv23S),
+    E = "ban-user-".concat(null == g ? true : g.id);
+  return (0, r.jsx)(f.Z, {
     text: O,
     icon: o.pgN,
     onClick: () => {
@@ -37,21 +37,21 @@ function g(e) {
           default: e
         } = await n.e("9125").then(n.bind(n, 98746));
         return n => {
-          var r, l;
-          return (0, i.jsx)(e, (r = function(e) {
+          var i, l;
+          return (0, r.jsx)(e, (i = function(e) {
             for (var t = 1; t < arguments.length; t++) {
               var n = null != arguments[t] ? arguments[t] : {},
-                i = Object.keys(n);
-              "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+                r = Object.keys(n);
+              "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
                 return Object.getOwnPropertyDescriptor(n, e).enumerable
-              }))), i.forEach(function(t) {
-                var i;
-                i = n[t], t in e ? Object.defineProperty(e, t, {
-                  value: i,
+              }))), r.forEach(function(t) {
+                var r;
+                r = n[t], t in e ? Object.defineProperty(e, t, {
+                  value: r,
                   enumerable: true,
                   configurable: true,
                   writable: true
-                }) : e[t] = i
+                }) : e[t] = r
               })
             }
             return e
@@ -59,21 +59,21 @@ function g(e) {
             guildId: t.guild_id,
             user: g,
             modReportId: t.id
-          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+          }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
             var n = Object.keys(e);
             if (Object.getOwnPropertySymbols) {
-              var i = Object.getOwnPropertySymbols(e);
-              n.push.apply(n, i)
+              var r = Object.getOwnPropertySymbols(e);
+              n.push.apply(n, r)
             }
             return n
           })(Object(l)).forEach(function(e) {
-            Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(l, e))
-          }), r))
+            Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
+          }), i))
         }
       })
     },
-    disabled: true === C || _,
-    submitting: _,
+    disabled: true === _ || C,
+    submitting: C,
     color: a.zx.Colors.RED
-  }, j)
+  }, E)
 }

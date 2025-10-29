@@ -140,13 +140,13 @@ class E extends Chunk47770.Z {
     return 1 === this.otherUsers.size
   }
   reset() {
-    this.pendingSSRC = false, this.currentSSRC = false, this.lastDowngradeChangeTime = true, this.switchState = 0, this.streamId = null, this.resolutionWidth = 0, this.resolutionHeight = 0
+    this.pendingSSRC = false, this.currentSSRC = false, this.lastDowngradeChangeTime = true, this.switchState = 0, this.streamId = null, this.resolutionWidth = 0, this.resolutionHeight = 0, this.zoom = 1
   }
   request(e, t) {
     if (true !== this.userId) {
       let n = e;
       t.forEach(e => {
-        null == n.pixelCounts && (n.pixelCounts = {}), n[e] > 0 && (n.pixelCounts[e] = this.resolutionWidth * this.resolutionHeight)
+        null == n.pixelCounts && (n.pixelCounts = {}), n[e] > 0 && (n.pixelCounts[e] = Math.floor(this.resolutionWidth * this.resolutionHeight * this.zoom * this.zoom))
       }), this.emit("requested-ssrcs-update", this.userId, this.audioSSRC, t), this.emit("requested-streams-update", n)
     }
   }
@@ -201,10 +201,13 @@ class E extends Chunk47770.Z {
     this.streamId === e && (this.resolutionWidth = t, this.resolutionHeight = n, this.delayedUpdate())
   }
   setStreamId(e) {
-    this.streamId !== e && (this.streamId = e, this.resolutionWidth = 0, this.resolutionHeight = 0, this.delayedUpdate())
+    this.streamId !== e && (this.streamId = e, this.resolutionWidth = 0, this.resolutionHeight = 0, this.zoom = 1, this.delayedUpdate())
+  }
+  setVideoZoom(e, t) {
+    this.streamId === e && this.zoom !== t && (this.zoom = t, this.delayedUpdate())
   }
   constructor(e) {
-    super(), f(this, "supportsSeamless", true), f(this, "logger", true), f(this, "userId", true), f(this, "streamId", true), f(this, "resolutionWidth", true), f(this, "resolutionHeight", true), f(this, "videoStreams", true), f(this, "audioSSRC", true), f(this, "hqSSRC", true), f(this, "lqSSRC", true), f(this, "switchState", true), f(this, "pendingSSRC", true), f(this, "currentSSRC", true), f(this, "downgraded", true), f(this, "throttleDowngradeChanges", true), f(this, "lastDowngradeChangeTime", true), f(this, "otherUsers", true), f(this, "debugQualityOverride", true), f(this, "incomingVideoEnabled", true), f(this, "delayedCall", true), f(this, "delayedUpdate", true), this.supportsSeamless = e, this.streamId = null, this.resolutionWidth = 0, this.resolutionHeight = 0, this.videoStreams = [], this.audioSSRC = 0, this.hqSSRC = 0, this.lqSSRC = 0, this.switchState = 0, this.pendingSSRC = false, this.currentSSRC = false, this.downgraded = false, this.throttleDowngradeChanges = true, this.lastDowngradeChangeTime = true, this.otherUsers = new Set, this.debugQualityOverride = d.Z.NO_OVERRIDE, this.incomingVideoEnabled = true, this.delayedUpdate = () => {
+    super(), f(this, "supportsSeamless", true), f(this, "logger", true), f(this, "userId", true), f(this, "streamId", true), f(this, "resolutionWidth", true), f(this, "resolutionHeight", true), f(this, "zoom", true), f(this, "videoStreams", true), f(this, "audioSSRC", true), f(this, "hqSSRC", true), f(this, "lqSSRC", true), f(this, "switchState", true), f(this, "pendingSSRC", true), f(this, "currentSSRC", true), f(this, "downgraded", true), f(this, "throttleDowngradeChanges", true), f(this, "lastDowngradeChangeTime", true), f(this, "otherUsers", true), f(this, "debugQualityOverride", true), f(this, "incomingVideoEnabled", true), f(this, "delayedCall", true), f(this, "delayedUpdate", true), this.supportsSeamless = e, this.streamId = null, this.resolutionWidth = 0, this.resolutionHeight = 0, this.zoom = 1, this.videoStreams = [], this.audioSSRC = 0, this.hqSSRC = 0, this.lqSSRC = 0, this.switchState = 0, this.pendingSSRC = false, this.currentSSRC = false, this.downgraded = false, this.throttleDowngradeChanges = true, this.lastDowngradeChangeTime = true, this.otherUsers = new Set, this.debugQualityOverride = d.Z.NO_OVERRIDE, this.incomingVideoEnabled = true, this.delayedUpdate = () => {
       this.delayedCall.delay()
     }, this.logger = new s.Z("GoLiveQualityManager"), this.delayedCall = new o.sW(h, () => {
       this.update()

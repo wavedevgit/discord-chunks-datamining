@@ -1,7 +1,7 @@
-/** Chunk was on 34271 **/
+/** Chunk was on 73726 **/
 /** chunk id: 512384, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => c
+  Z: () => s
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -10,19 +10,19 @@ var Chunk399606 = require("./399606.js"),
   Chunk351780 = require("./351780.js"),
   Chunk170248 = require("./170248.js");
 
-function c(e) {
+function s(e) {
   let {
     isShaking: t,
     shakeLocation: n,
-    children: c,
-    className: s
+    children: s,
+    className: c
   } = e, u = (0, o.Z)(n);
   return (0, i.e7)([a.Z], () => a.Z.isEnabled({
     shakeLocation: n
   })) ? (0, r.jsx)(l.UkV, {
     isShaking: t,
     intensity: u,
-    className: s,
-    children: c
-  }) : c
+    className: c,
+    children: s
+  }) : s
 }

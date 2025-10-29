@@ -23,7 +23,7 @@ function f(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let v = new Chunk710845.Z("UploadArea");
+let g = new Chunk710845.Z("UploadArea");
 
 function h() {
   return (0, Chunk951288.jsxs)("div", {
@@ -44,7 +44,7 @@ function h() {
     })]
   })
 }
-class g extends Chunk647438.Component {
+class v extends Chunk647438.Component {
   componentDidMount() {
     let e = this.elementDOMRef.current;
     null != module && (module.ownerDocument.body.addEventListener("dragover", this.handleDragOver, false), module.ownerDocument.body.addEventListener("drop", this.handleDragLeave, false), module.addEventListener("dragover", this.handleDragOverZone, false), module.addEventListener("dragleave", this.handleDragLeaveZone, false), module.addEventListener("drop", this.handleDrop, false))
@@ -98,7 +98,7 @@ class g extends Chunk647438.Component {
       for (let n = 0; n < e.length; n++) try {
         var t;
         let r = null != (t = e[n].webkitGetAsEntry()) ? t : e[n].getAsEntry();
-        if (null == r) return v.warn("Dropped item is null or undefined"), false;
+        if (null == r) return g.warn("Dropped item is null or undefined"), false;
         if (!r.isFile) returnfalse
       } catch (e) {}
       returntrue
@@ -157,4 +157,4 @@ class g extends Chunk647438.Component {
     })
   }
 }
-let b = g
+let b = v

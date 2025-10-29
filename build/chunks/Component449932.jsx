@@ -1,7 +1,7 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 56710 **/
 /** chunk id: 449932, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => C
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -23,7 +23,7 @@ var Chunk120356 = require("./120356.js"),
   Chunk754231 = require("./754231.jsx"),
   Chunk342273 = require("./342273.js");
 
-function j(e) {
+function v(e) {
   var t;
   let {
     guildId: n,
@@ -42,7 +42,7 @@ function j(e) {
   })
 }
 
-function v(e) {
+function j(e) {
   let {
     members: t,
     guildId: n
@@ -52,7 +52,7 @@ function v(e) {
     guildId: n,
     users: t,
     max: 6,
-    renderUser: (e, t, i) => (0, r.jsx)(j, {
+    renderUser: (e, t, i) => (0, r.jsx)(v, {
       guildId: n,
       member: e,
       className: t
@@ -63,7 +63,7 @@ function v(e) {
     }, n)
   })
 }
-let x = e => {
+let C = e => {
   let {
     channel: t,
     presenceActivity: n,
@@ -79,7 +79,7 @@ let x = e => {
   });
   if (null == b) return null;
   let _ = s || (0, u.Z)(n),
-    j = (0, h.vd)(t.type);
+    v = (0, h.vd)(t.type);
   return (0, r.jsxs)("div", {
     className: y.activity,
     children: [(0, r.jsx)("div", {
@@ -90,16 +90,16 @@ let x = e => {
         user: b,
         channel: t,
         sortedVoiceStates: i,
-        onOpenSpotifyTrack: j ? p.aG : true,
-        onOpenSpotifyArtist: j ? p.d$ : true,
-        onOpenSpotifyAlbum: j ? p.Z5 : true
+        onOpenSpotifyTrack: v ? p.aG : true,
+        onOpenSpotifyArtist: v ? p.d$ : true,
+        onOpenSpotifyAlbum: v ? p.Z5 : true
       }) : (0, r.jsx)(c.Z, {
         type: c.P.VOICE_CHANNEL,
         activity: n,
         user: b,
         guildId: t.getGuildId(),
         channelId: t.id,
-        renderHeaderAccessory: null != i ? () => (0, r.jsx)(v, {
+        renderHeaderAccessory: null != i ? () => (0, r.jsx)(j, {
           guildId: t.guild_id,
           members: i
         }) : true

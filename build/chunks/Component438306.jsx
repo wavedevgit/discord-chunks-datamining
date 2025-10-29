@@ -1,4 +1,4 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 438306, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -22,31 +22,31 @@ var Chunk442837 = require("./442837.js"),
 function b(e) {
   let {
     channel: t
-  } = e, n = (0, o.ZP)(t, true), b = (0, r.e7)([u.Z], () => u.Z.can(h.Plq.MANAGE_CHANNELS, t) && c.dF.has(t.type));
-  return (0, i.jsxs)(p.ZP, {
+  } = e, n = (0, o.ZP)(t, true), b = (0, i.e7)([u.Z], () => u.Z.can(f.Plq.MANAGE_CHANNELS, t) && c.dF.has(t.type));
+  return (0, r.jsxs)(p.ZP, {
     channelId: t.id,
-    children: [(0, i.jsx)(p.Kq, {
+    children: [(0, r.jsx)(p.Kq, {
       channelType: t.type
-    }), (0, i.jsx)(p.Ot, {
-      children: f.intl.format(f.t.I3R7Vn, {
+    }), (0, r.jsx)(p.Ot, {
+      children: h.intl.format(h.t.I3R7Vn, {
         channelName: n
       })
-    }), (0, i.jsx)(p.jz, {
+    }), (0, r.jsx)(p.jz, {
       className: g.markup,
-      children: f.intl.format(f.t.pYMVRT, {
+      children: h.intl.format(h.t.pYMVRT, {
         channelName: n,
         topicHook: () => s.Z.parseTopic(t.topic, true, {
           channelId: t.id
         })
       })
-    }), b ? (0, i.jsx)("div", {
+    }), b ? (0, r.jsx)("div", {
       className: m.buttonContainer,
-      children: (0, i.jsx)(d.Z, {
-        label: f.intl.string(f.t["3gUsJb"]),
+      children: (0, r.jsx)(d.Z, {
+        label: h.intl.string(h.t["3gUsJb"]),
         onClick: () => {
           a.ZP.open(t.id)
         },
-        icon: (0, i.jsx)(l.vdY, {
+        icon: (0, r.jsx)(l.vdY, {
           size: "xs",
           color: "currentColor"
         })

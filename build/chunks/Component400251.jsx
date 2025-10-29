@@ -89,10 +89,10 @@ function T(e) {
     className: a()(I.actionButtonsContainer, {
       [I.forceButtonsShow]: l
     }),
-    children: (0, r.jsxs)(p.ZP, {
+    children: (0, r.jsxs)(h.ZP, {
       children: [u ? (0, r.jsx)(o.u, {
         text: C.intl.string(C.t.XnuOvN),
-        children: (0, r.jsx)(p.zx, {
+        children: (0, r.jsx)(h.zx, {
           onClick: () => {
             (0, c.ZDy)(async () => {
               let {
@@ -110,7 +110,7 @@ function T(e) {
             className: I.overflowIcon
           })
         })
-      }) : null, (0, r.jsx)(v.Z, {
+      }) : null, (0, r.jsx)(O.Z, {
         targetElementRef: d,
         onRequestOpen: () => s(true),
         onRequestClose: () => s(false),
@@ -136,7 +136,7 @@ function T(e) {
           }(e, ["onClick"]);
           return (0, r.jsx)(o.u, {
             text: C.intl.string(C.t["UKOtz+"]),
-            children: (0, r.jsx)(p.zx, Z(E({}, n), {
+            children: (0, r.jsx)(h.zx, Z(E({}, n), {
               onClick: e => {
                 t(e)
               },
@@ -158,16 +158,16 @@ let N = e => {
   var t;
   let {
     entry: l
-  } = e, [a, o] = i.useState(false), p = null != (0, s.e7)([_.Z], () => _.Z.getGuild(l.guildId)), j = async () => {
+  } = e, [a, o] = i.useState(false), h = null != (0, s.e7)([_.Z], () => _.Z.getGuild(l.guildId)), j = async () => {
     o(true);
     try {
-      p ? (0, b.X)(l.guildId) : await u.Z.joinGuild(l.guildId, {
-        source: O.vtS.DIRECTORY_ENTRY
+      h ? (0, b.X)(l.guildId) : await u.Z.joinGuild(l.guildId, {
+        source: v.vtS.DIRECTORY_ENTRY
       })
     } finally {
       o(false)
     }
-  }, v = y.ZP.getGuildSplashURL({
+  }, O = y.ZP.getGuildSplashURL({
     id: l.guildId,
     splash: l.splash,
     size: 300 * (0, m.x_)()
@@ -176,7 +176,7 @@ let N = e => {
     icon: l.icon,
     size: 40
   })) ? t : true, P = C.intl.string(C.t.VJlc0S);
-  return p && (P = C.intl.string(C.t.cqWE2Z)), (0, r.jsxs)("div", {
+  return h && (P = C.intl.string(C.t.cqWE2Z)), (0, r.jsxs)("div", {
     className: I.card,
     onContextMenu: e => {
       (0, d.jW)(e, async () => {
@@ -192,15 +192,15 @@ let N = e => {
       className: I.cardHeader,
       children: [(0, r.jsx)("div", {
         className: I.splash,
-        children: null != v && (0, r.jsx)("img", {
-          src: v,
+        children: null != O && (0, r.jsx)("img", {
+          src: O,
           alt: "",
           className: I.splashImage
         })
       }), (0, r.jsx)("div", {
         className: I.guildIcon,
-        children: (0, r.jsx)(h.ZP, {
-          mask: h.ZP.Masks.SQUIRCLE,
+        children: (0, r.jsx)(p.ZP, {
+          mask: p.ZP.Masks.SQUIRCLE,
           width: 48,
           height: 48,
           children: (0, r.jsx)("div", {
@@ -262,7 +262,7 @@ let N = e => {
         className: I.joinButton,
         children: (0, r.jsx)(c.Button, {
           loading: a,
-          variant: p ? "secondary" : "active",
+          variant: h ? "secondary" : "active",
           onClick: j,
           text: P,
           fullWidth: true

@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 56710 **/
 /** chunk id: 770202, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk490897 = require("./490897.js"),
   Chunk55940 = require("./55940.js");
 
-function j(e, t, n) {
+function v(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -31,25 +31,25 @@ function j(e, t, n) {
   }) : e[t] = n, e
 }
 
-function v(e) {
+function j(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      j(e, t, n[t])
+      v(e, t, n[t])
     })
   }
   return e
 }
 
-function x(e, t) {
+function C(e, t) {
   let n = t.getGuildId();
   if (null == n) throw Error("TextChannel, preloadChannel: Channel does not have a guildId");
   s.Z.preload(n, t.id)
 }
-class C extends Chunk98597.ZP {
+class E extends Chunk98597.ZP {
   render() {
     let {
       channel: e,
@@ -68,7 +68,7 @@ class C extends Chunk98597.ZP {
         channel: module,
         selected: exports,
         onClick: this.handleClick,
-        onMouseDown: x,
+        onMouseDown: C,
         onContextMenu: this.handleContextMenu,
         connectDragPreview: Chunk442837 ? Chunk120356 : null,
         "aria-label": (0, Chunk201895.ZP)({
@@ -81,7 +81,7 @@ class C extends Chunk98597.ZP {
     return Chunk442837 ? require(Chunk647438(Chunk493683)) : Chunk493683
   }
   constructor(...e) {
-    super(...e), j(this, "handleContextMenu", e => {
+    super(...e), v(this, "handleContextMenu", e => {
       let {
         channel: t
       } = this.props, i = h.Z.getGuild(t.getGuildId());
@@ -100,12 +100,12 @@ class C extends Chunk98597.ZP {
           })(Object(t)).forEach(function(n) {
             Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
           }), e
-        }(v({}, n), {
+        }(j({}, n), {
           channel: t,
           guild: i
         }))
       })
-    }), j(this, "handleClick", e => {
+    }), v(this, "handleClick", e => {
       ! function(e) {
         let t = e.getGuildId();
         if (null == t) throw Error("TextChannel, transitionTo: Channel does not have a guildId");
@@ -122,7 +122,7 @@ class C extends Chunk98597.ZP {
     })
   }
 }
-let E = (0, Chunk146773.B)(C),
+let x = (0, Chunk146773.B)(E),
   S = Chunk647438.memo(function(e) {
     let {
       channel: t,
@@ -135,5 +135,5 @@ let E = (0, Chunk146773.B)(C),
         canReorderChannel: true !== i && null != e ? g.Z.can(_.Plq.MANAGE_CHANNELS, e) : g.Z.can(_.Plq.MANAGE_CHANNELS, n)
       }
     });
-    return (0, r.jsx)(E, v({}, l, e))
+    return (0, r.jsx)(x, j({}, l, e))
   })

@@ -1,8 +1,8 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 251564, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  d: () => i
+  d: () => r
 });
-let i = (0, require("./191336.js").U)(() => ({
+let r = (0, require("./191336.js").U)(() => ({
   dismissedActivityEntryPointTileChannel: null
 }))

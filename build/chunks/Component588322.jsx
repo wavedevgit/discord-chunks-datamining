@@ -25,10 +25,10 @@ var Chunk951288 = require("./951288.js"),
 function j(e) {
   let {
     channelId: t
-  } = e, j = (0, l.e7)([g.Z], () => g.Z.getChannel(t)), v = (0, l.e7)([g.Z], () => g.Z.getChannel(null == j ? true : j.parent_id)), O = (0, l.e7)([b.Z], () => b.Z.getGuild(null == j ? true : j.getGuildId())), C = (0, o.ZP)(j), I = i.useRef(false);
+  } = e, j = (0, l.e7)([g.Z], () => g.Z.getChannel(t)), O = (0, l.e7)([g.Z], () => g.Z.getChannel(null == j ? true : j.parent_id)), v = (0, l.e7)([b.Z], () => b.Z.getGuild(null == j ? true : j.getGuildId())), C = (0, o.ZP)(j), I = i.useRef(false);
   if (i.useEffect(() => {
       null == j || I.current || (I.current = true, (0, _.lN)(j))
-    }, [j]), null == j || null == O) return null;
+    }, [j]), null == j || null == v) return null;
   let S = (0, r.jsx)(f.Z, {
     channel: j
   });
@@ -39,11 +39,11 @@ function j(e) {
     }), (0, r.jsx)(u.ZP, {
       toolbar: S,
       "aria-label": y.intl.string(y.t.Pwe8tN),
-      children: (0, h.ud)({
+      children: (0, p.ud)({
         channel: j,
-        parentChannel: v,
+        parentChannel: O,
         channelName: C,
-        guild: O,
+        guild: v,
         inSidebar: true,
         handleContextMenu: function(e) {
           (0, a.jW)(e, async () => {
@@ -85,14 +85,14 @@ function j(e) {
           })
         },
         handleClick: function() {
-          null != j && (0, p.XU)(j.guild_id, j.id)
+          null != j && (0, h.XU)(j.guild_id, j.id)
         }
       })
     }), (0, r.jsx)("div", {
       className: x.chat,
       children: (0, r.jsx)(c.Z, {
         channel: j,
-        guild: O,
+        guild: v,
         chatInputType: d.Ie.SIDEBAR
       }, t)
     })]

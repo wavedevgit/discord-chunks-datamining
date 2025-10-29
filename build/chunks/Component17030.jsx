@@ -1,4 +1,4 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 17030, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   A: () => b
@@ -23,39 +23,39 @@ function b(e) {
     customStatusEmoji: t,
     setCustomStatusEmoji: n,
     selectedDefaultStatus: b,
-    setIsEmojiPickerOpen: C,
+    setIsEmojiPickerOpen: _,
     defaultStatusVariant: y
-  } = e, _ = r.useRef(null), v = (0, l.e7)([p.Z, d.Z], () => d.Z.getChannel(p.Z.getVoiceChannelId())), x = r.useCallback(() => null != t ? (0, i.jsx)(o.Z, {
+  } = e, C = i.useRef(null), v = (0, l.e7)([p.Z, d.Z], () => d.Z.getChannel(p.Z.getVoiceChannelId())), x = i.useCallback(() => null != t ? (0, r.jsx)(o.Z, {
     emojiId: t.id,
     emojiName: t.name,
     animated: !!t.animated
-  }) : null != b ? (0, i.jsx)(h.Z, {
+  }) : null != b ? (0, r.jsx)(f.Z, {
     className: g.icon,
     userId: u.default.getId(),
     size: 20,
     hangStatusActivity: {
-      type: f.IIU.HANG_STATUS,
+      type: h.IIU.HANG_STATUS,
       state: b
     },
     fallbackVariant: y
   }) : null, [t, y, b]);
-  return (0, i.jsx)(a.yRy, {
-    targetElementRef: _,
-    onRequestOpen: () => C(true),
-    onRequestClose: () => C(false),
+  return (0, r.jsx)(a.yRy, {
+    targetElementRef: C,
+    onRequestOpen: () => _(true),
+    onRequestClose: () => _(false),
     renderPopout: e => {
       var t;
       let {
-        closePopout: r
+        closePopout: i
       } = e;
-      return (0, i.jsx)(c.Z, {
+      return (0, r.jsx)(c.Z, {
         channel: v,
         guildId: null != (t = null == v ? true : v.guild_id) ? t : true,
-        closePopout: r,
+        closePopout: i,
         onSelectEmoji: e => {
           let {
             emoji: t,
-            willClose: i
+            willClose: r
           } = e;
           (e => {
             var t;
@@ -69,7 +69,7 @@ function b(e) {
               name: null != (t = e.optionallyDiverseSequence) ? t : "",
               animated: false
             })
-          })(t), i && r()
+          })(t), r && i()
         },
         pickerIntention: m.Hz.STATUS
       })
@@ -78,42 +78,42 @@ function b(e) {
     animation: a.yRy.Animation.NONE,
     align: "top",
     children: (e, n) => {
-      var r, l;
+      var i, l;
       let {
         isShown: a
       } = n;
-      return (0, i.jsx)(s.Z, (r = function(e) {
+      return (0, r.jsx)(s.Z, (i = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
-            i = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            r = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), i.forEach(function(t) {
-            var i;
-            i = n[t], t in e ? Object.defineProperty(e, t, {
-              value: i,
+          }))), r.forEach(function(t) {
+            var r;
+            r = n[t], t in e ? Object.defineProperty(e, t, {
+              value: r,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = i
+            }) : e[t] = r
           })
         }
         return e
       }({}, e), l = l = {
-        ref: _,
+        ref: C,
         active: a,
         tabIndex: 0,
         renderButtonContents: null == t && null == b ? null : x
-      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(r, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
+      }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var i = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, i)
+          var r = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, r)
         }
         return n
       })(Object(l)).forEach(function(e) {
-        Object.defineProperty(r, e, Object.getOwnPropertyDescriptor(l, e))
-      }), r))
+        Object.defineProperty(i, e, Object.getOwnPropertyDescriptor(l, e))
+      }), i))
     }
   })
 }

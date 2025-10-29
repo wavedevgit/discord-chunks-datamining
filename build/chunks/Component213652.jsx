@@ -1,4 +1,4 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 213652, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -25,7 +25,7 @@ function y(e) {
     channel: t
   } = e, {
     parentAnalyticsLocation: n
-  } = (0, o.ZP)(), y = (0, l.e7)([f.Z], () => f.Z.getSelectedParticipant(t.id)), _ = (null == y ? true : y.type) === g.fO.STREAM, v = (0, l.e7)([p.Z], () => _ ? p.Z.getActiveStreamForStreamKey(y.id) : null), {
+  } = (0, o.ZP)(), y = (0, l.e7)([h.Z], () => h.Z.getSelectedParticipant(t.id)), C = (null == y ? true : y.type) === g.fO.STREAM, v = (0, l.e7)([p.Z], () => C ? p.Z.getActiveStreamForStreamKey(y.id) : null), {
     ignoreSenderPreference: x
   } = u.Z.useExperiment({
     location: "ActionBarClipsButton"
@@ -33,26 +33,26 @@ function y(e) {
     autoTrackExposure: false
   }), {
     viewerClippingAllowed: O,
-    isAtMaxSavingClipOperations: j
+    isAtMaxSavingClipOperations: E
   } = (0, l.cj)([s.Z], () => ({
     viewerClippingAllowed: null != v && (s.Z.isViewerClippingAllowedForUser(v.ownerId) || x),
     isAtMaxSavingClipOperations: s.Z.getIsAtMaxSaveClipOperations()
-  })), E = s.Z.getSettings().clipsEnabled, S = (null == v ? true : v.ownerId) === h.default.getId(), P = !E || !(S || O) || j || null == y, I = r.useCallback(e => {
+  })), j = s.Z.getSettings().clipsEnabled, S = (null == v ? true : v.ownerId) === f.default.getId(), P = !j || !(S || O) || E || null == y, I = i.useCallback(e => {
     var t, n;
-    return (0, i.jsx)(a.xmR, (t = function(e) {
+    return (0, r.jsx)(a.xmR, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
-          i = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), i.forEach(function(t) {
-          var i;
-          i = n[t], t in e ? Object.defineProperty(e, t, {
-            value: i,
+        }))), r.forEach(function(t) {
+          var r;
+          r = n[t], t in e ? Object.defineProperty(e, t, {
+            value: r,
             enumerable: true,
             configurable: true,
             writable: true
-          }) : e[t] = i
+          }) : e[t] = r
         })
       }
       return e
@@ -61,22 +61,22 @@ function y(e) {
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
-        var i = Object.getOwnPropertySymbols(e);
-        n.push.apply(n, i)
+        var r = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, r)
       }
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t))
   }, []);
-  return (0, i.jsx)(d.Z, {
-    className: C.actionBarButton,
+  return (0, r.jsx)(d.Z, {
+    className: _.actionBarButton,
     onClick: () => {
       P || ((0, m.v)(n, m.d.CLIP), S ? (0, c.C1)() : (0, c.C1)(y.id))
     },
     disabled: P,
     iconComponent: I,
-    label: null == v ? b.intl.string(b.t.eg5qtV) : S || O ? E ? j ? true : b.intl.string(b.t.U4URzP) : b.intl.string(b.t.wSS1yN) : b.intl.string(b.t.aRifJX),
+    label: null == v ? b.intl.string(b.t.eg5qtV) : S || O ? j ? E ? true : b.intl.string(b.t.U4URzP) : b.intl.string(b.t.wSS1yN) : b.intl.string(b.t.aRifJX),
     grow: false
   })
 }

@@ -1,7 +1,7 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 737243, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,25 +13,25 @@ var Chunk951288 = require("./951288.js"),
   Chunk697451 = require("./697451.jsx"),
   Chunk348238 = require("./348238.jsx"),
   Chunk614584 = require("./614584.jsx");
-let h = Chunk647438.memo(function(e) {
+let f = Chunk647438.memo(function(e) {
   var t, n;
   let {
-    message: h,
-    channel: f,
+    message: f,
+    channel: h,
     compact: m = false,
     interactionUsernameProfile: g,
     interactionAvatarProfile: b,
-    interactionData: C,
+    interactionData: _,
     referencedUsernameProfile: y,
-    referencedAvatarProfile: _,
+    referencedAvatarProfile: C,
     setPopout: v
   } = e, {
     isInteractionUserBlocked: x,
     isInteractionUserIgnored: O
   } = (0, l.cj)([c.Z], () => ({
-    isInteractionUserBlocked: c.Z.isBlockedForMessage(h),
-    isInteractionUserIgnored: c.Z.isIgnoredForMessage(h)
-  }), [h]), j = (0, l.e7)([s.Z], () => s.Z.getMessageByReference(null == h ? true : h.messageReference)), E = (0, d.wq)(null == (t = h.interaction) ? true : t.user.id, f.id), S = (0, d.Nk)(h.interaction, f, g, v), P = (0, d.NU)(b, v), I = (0, o.t0)(h), Z = (null == I ? true : I.type) === a.B8.APPLICATION_COMMAND ? null == (n = I.target_user) ? true : n.id : true, T = (0, d.wq)(Z, f.id), N = (0, d.JC)(Z, f, y, v), A = (0, d.rY)(_, v), w = (0, d.Xn)(C, v), M = r.useCallback(() => {
+    isInteractionUserBlocked: c.Z.isBlockedForMessage(f),
+    isInteractionUserIgnored: c.Z.isIgnoredForMessage(f)
+  }), [f]), E = (0, l.e7)([s.Z], () => s.Z.getMessageByReference(null == f ? true : f.messageReference)), j = (0, d.wq)(null == (t = f.interaction) ? true : t.user.id, h.id), S = (0, d.Nk)(f.interaction, h, g, v), P = (0, d.NU)(b, v), I = (0, o.t0)(f), Z = (null == I ? true : I.type) === a.B8.APPLICATION_COMMAND ? null == (n = I.target_user) ? true : n.id : true, T = (0, d.wq)(Z, h.id), N = (0, d.JC)(Z, h, y, v), A = (0, d.rY)(C, v), w = (0, d.Xn)(_, v), M = i.useCallback(() => {
     v({
       interactionUsernameProfile: false,
       interactionAvatarProfile: false,
@@ -39,33 +39,33 @@ let h = Chunk647438.memo(function(e) {
       referencedUsernameProfile: false,
       referencedAvatarProfile: false
     })
-  }, [v]), R = r.useCallback(() => (0, p.Z)({
-    message: h,
-    channel: f,
+  }, [v]), R = i.useCallback(() => (0, p.Z)({
+    message: f,
+    channel: h,
     compact: m,
     setPopout: v,
-    referencedAvatarProfile: _,
+    referencedAvatarProfile: C,
     referencedUsernameProfile: y,
-    replyReference: h.messageReference,
-    replyMessage: j,
+    replyReference: f.messageReference,
+    replyMessage: E,
     isReplySpineClickable: false,
     showReplySpine: false
-  }), [f, m, h, _, j, y, v]);
-  return (0, i.jsx)(u.Z, {
-    message: h,
-    channel: f,
+  }), [h, m, f, C, E, y, v]);
+  return (0, r.jsx)(u.Z, {
+    message: f,
+    channel: h,
     compact: m,
     isInteractionUserBlocked: x,
     isInteractionUserIgnored: O,
     showAvatarPopout: b,
     showUsernamePopout: g,
-    showDataPopout: C,
-    showTargetAvatarPopout: _,
+    showDataPopout: _,
+    showTargetAvatarPopout: C,
     showTargetUsernamePopout: y,
     onClickAvatar: P,
     onClickUsername: S,
     onClickCommand: w,
-    onUserContextMenu: E,
+    onUserContextMenu: j,
     onClickTargetAvatar: A,
     onClickTargetUsername: N,
     onTargetUserContextMenu: T,
@@ -74,31 +74,31 @@ let h = Chunk647438.memo(function(e) {
   })
 });
 
-function f(e, t, n) {
+function h(e, t, n) {
   let {
-    message: r,
+    message: i,
     channel: l,
     compact: a
   } = e;
-  return null != r.interaction && "" !== r.interaction.displayName ? (0, i.jsx)(h, function(e) {
+  return null != i.interaction && "" !== i.interaction.displayName ? (0, r.jsx)(f, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
-        i = Object.keys(n);
-      "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        r = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
         return Object.getOwnPropertyDescriptor(n, e).enumerable
-      }))), i.forEach(function(t) {
-        var i;
-        i = n[t], t in e ? Object.defineProperty(e, t, {
-          value: i,
+      }))), r.forEach(function(t) {
+        var r;
+        r = n[t], t in e ? Object.defineProperty(e, t, {
+          value: r,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : e[t] = i
+        }) : e[t] = r
       })
     }
     return e
   }({
-    message: r,
+    message: i,
     channel: l,
     compact: a,
     setPopout: t

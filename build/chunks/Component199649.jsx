@@ -1,4 +1,4 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 199649, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -22,52 +22,52 @@ function g(e) {
   var t, g;
   let {
     channel: b,
-    children: C
-  } = e, y = (0, r.e7)([c.Z], () => c.Z.isBlocked(b.getRecipientId()));
+    children: _
+  } = e, y = (0, i.e7)([c.Z], () => c.Z.isBlocked(b.getRecipientId()));
   (0, o.Z)(b.id);
-  let _ = (0, s.Z)(b.id),
+  let C = (0, s.Z)(b.id),
     v = b.isSystemDM(),
     x = y && !v && !b.isMultiUserDM(),
     O = {};
   if (v) {
-    let e = _ ? m.intl.string(m.t["+KSnWX"]) : m.intl.string(m.t.hvVgAZ);
-    O.message = m.intl.string(m.t.Bt2N7D), O.subtitle = m.intl.string(m.t["n/Vzkw"]), O.buttonText = e, O.buttonIcon = _ ? l.rgF : true, O.onButtonClick = () => {
-      if (_) {
-        open(f.D2), u.default.track(h.rMx.CHANGE_LOG_CTA_CLICKED, {
+    let e = C ? m.intl.string(m.t["+KSnWX"]) : m.intl.string(m.t.hvVgAZ);
+    O.message = m.intl.string(m.t.Bt2N7D), O.subtitle = m.intl.string(m.t["n/Vzkw"]), O.buttonText = e, O.buttonIcon = C ? l.rgF : true, O.onButtonClick = () => {
+      if (C) {
+        open(h.D2), u.default.track(f.rMx.CHANGE_LOG_CTA_CLICKED, {
           cta_type: "chat_blocker",
-          target: f.D2
+          target: h.D2
         });
         return
       }
-      open(d.Z.getArticleURL(h.BhN.SYSTEM_DMS))
+      open(d.Z.getArticleURL(f.BhN.SYSTEM_DMS))
     }, O.imageSrc = n(780961)
   } else x && (O.message = m.intl.string(m.t["9T6N5/"]), O.buttonText = m.intl.string(m.t.XyHpKH), O.onButtonClick = () => {
     a.Z.unblockUser(b.getRecipientId())
   });
-  return (0, i.jsx)(p.Z, (t = function(e) {
+  return (0, r.jsx)(p.Z, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
-        i = Object.keys(n);
-      "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        r = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
         return Object.getOwnPropertyDescriptor(n, e).enumerable
-      }))), i.forEach(function(t) {
-        var i;
-        i = n[t], t in e ? Object.defineProperty(e, t, {
-          value: i,
+      }))), r.forEach(function(t) {
+        var r;
+        r = n[t], t in e ? Object.defineProperty(e, t, {
+          value: r,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : e[t] = i
+        }) : e[t] = r
       })
     }
     return e
   }({}, O), g = g = {
-    children: C
+    children: _
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(g)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, i)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
     return n
   })(Object(g)).forEach(function(e) {

@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 56710 **/
 /** chunk id: 178088, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   k: () => Z
@@ -113,19 +113,19 @@ function Z(e) {
               [N.widerInbox]: X
             }),
             children: (0, r.jsx)(u.y5t, {
-              component: (0, r.jsx)(x.Z, {
+              component: (0, r.jsx)(C.Z, {
                 tab: G,
                 setTab: U,
                 badgeState: Z,
                 closePopout: V
               }),
-              children: G === c.X.FOR_YOU ? (0, r.jsx)(j.ZP, {}) : G === c.X.MENTIONS ? (0, r.jsx)(v.Z, {
+              children: G === c.X.FOR_YOU ? (0, r.jsx)(v.ZP, {}) : G === c.X.MENTIONS ? (0, r.jsx)(j.Z, {
                 onJump: q
               }) : Y && G === c.X.GAME_INVITES ? (0, r.jsx)(S.Z, {}) : z && W && G === c.X.BOOKMARKS ? (0, r.jsx)(m.K, {
                 closePopout: V
-              }) : G === c.X.SCHEDULED ? (0, r.jsx)(C._, {}) : (0, r.jsx)(a.SV, {
-                fallback: (0, r.jsx)(E.h6, {}),
-                children: (0, r.jsx)(E.ZP, {
+              }) : G === c.X.SCHEDULED ? (0, r.jsx)(E._, {}) : (0, r.jsx)(a.SV, {
+                fallback: (0, r.jsx)(x.h6, {}),
+                children: (0, r.jsx)(x.ZP, {
                   onJump: q,
                   showTutorial: B,
                   setSeenTutorial: F,

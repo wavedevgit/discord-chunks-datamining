@@ -1,10 +1,10 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 868807, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  a: () => f
+  a: () => h
 }), require("./388685.js");
 var Chunk392711 = require("./392711.js"),
-  r = require.n(Chunk392711),
+  i = require.n(Chunk392711),
   Chunk442837 = require("./442837.js"),
   Chunk544891 = require("./544891.js"),
   Chunk570140 = require("./570140.js"),
@@ -13,15 +13,15 @@ var Chunk392711 = require("./392711.js"),
   Chunk748902 = require("./748902.js"),
   Chunk981631 = require("./981631.js");
 let p = new Set,
-  h = null;
+  f = null;
 
-function f(e) {
+function h(e) {
   var t;
   let {
     id: n
   } = e, {
-    loaded: i,
-    message: r,
+    loaded: r,
+    message: i,
     error: a
   } = (0, l.cj)([u.Z, s.Z, c.ZP], () => {
     let e = c.ZP.lastMessageId(n),
@@ -36,17 +36,17 @@ function f(e) {
     }
     return t
   }, [n]), o = (0, l.e7)([u.Z], () => u.Z.shouldLoadMessageRequestPreview(n), [n]);
-  return !i && null == r && o && (t = n, p.add(t), null == h && (h = setTimeout(m, 0))), {
-    loaded: i,
+  return !r && null == i && o && (t = n, p.add(t), null == f && (f = setTimeout(m, 0))), {
+    loaded: r,
     error: a,
-    message: r
+    message: i
   }
 }
 async function m() {
   try {
-    for (; !r().isEmpty(p);) await g()
+    for (; !i().isEmpty(p);) await g()
   } finally {
-    h = null
+    f = null
   }
 }
 async function g() {

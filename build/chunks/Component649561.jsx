@@ -1,13 +1,12 @@
 /** Chunk was on 63141 **/
 /** chunk id: 649561, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => L
 }), require("./388685.js"), require("./358797.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
-  o = require.n(Chunk120356),
+  l = require.n(Chunk120356),
   Chunk392711 = require("./392711.js"),
   a = require.n(Chunk392711),
   Chunk818405 = require("./818405.js"),
@@ -40,8 +39,8 @@ function w(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let T = 10 * Chunk70956.Z.Millis.SECOND,
-  N = new Chunk579092.Yd("LegacyOverlayErrorBoundary");
+let N = 10 * Chunk70956.Z.Millis.SECOND,
+  T = new Chunk579092.Yd("LegacyOverlayErrorBoundary");
 
 function D() {
   let e = (0, Chunk145597.getPID)(),
@@ -59,7 +58,7 @@ function D() {
 }
 class k extends Chunk647438.PureComponent {
   componentDidMount() {
-    this.notificationTimer = setTimeout(this.hideNotification, T), Chunk13245.Z.track(Chunk981631.rMx.NOTIFICATION_VIEWED, {
+    this.notificationTimer = setTimeout(this.hideNotification, N), Chunk13245.Z.track(Chunk981631.rMx.NOTIFICATION_VIEWED, {
       notif_type: Chunk987650.n0.OverlayCrashed
     })
   }
@@ -83,13 +82,13 @@ class k extends Chunk647438.PureComponent {
       observe: false,
       children: (0, Chunk951288.jsx)(Chunk481060.f6W, {
         theme: Chunk981631.BRd.DARK,
-        children: r => (0, i.jsxs)(h.P3F, {
+        children: r => (0, i.jsxs)(p.P3F, {
           innerRef: this.contentDomRef,
-          className: o()(r, P.container),
+          className: l()(r, P.container),
           onClick: e => e.stopPropagation(),
           children: [(0, i.jsx)(y.ZP, {
             expand: true,
-            icon: (0, i.jsx)(O.Z, {
+            icon: (0, i.jsx)(_.Z, {
               width: 40,
               height: 40,
               className: P.notificationIcon
@@ -131,8 +130,8 @@ class k extends Chunk647438.PureComponent {
     }), w(this, "handleReload", e => {
       this.setState({
         busy: true
-      }), D(), f.Z.track(j.rMx.NOTIFICATION_CLICKED, {
-        notif_type: C.n0.OverlayCrashed,
+      }), D(), f.Z.track(C.rMx.NOTIFICATION_CLICKED, {
+        notif_type: j.n0.OverlayCrashed,
         action_type: "reload"
       }, true), e.stopPropagation(), setTimeout(() => location.reload(true), 200)
     }), w(this, "handleNotificationClick", e => {
@@ -156,19 +155,19 @@ let R = a().throttle(() => {
 });
 class A extends Chunk647438.PureComponent {
   componentDidCatch(e, t) {
-    let n = (0, _.s1)().location;
+    let n = (0, O.s1)().location;
     this.setState({
       error: e,
       info: t
-    }), N.error("ErrorBoundary caught error: ".concat(e.message), {
+    }), T.error("ErrorBoundary caught error: ".concat(e.message), {
       error: e,
       info: t
     });
-    let i = (0, v.getPID)(),
-      r = (0, v.getRPCAuthToken)();
+    let i = (0, b.getPID)(),
+      r = (0, b.getRPCAuthToken)();
     (0, g.lW)({
-      type: j.BmY.DISPATCH,
-      pid: (0, v.getPID)(),
+      type: C.BmY.DISPATCH,
+      pid: (0, b.getPID)(),
       token: r,
       payloads: [{
         type: "OVERLAY_CRASHED",
@@ -180,15 +179,15 @@ class A extends Chunk647438.PureComponent {
         pid: i
       }]
     }), setImmediate(() => window.addEventListener("click", D));
-    let s = (0, E.V6)(e, x.gl.Hook, {
+    let o = (0, E.V6)(e, S.gl.Hook, {
       extra: t
     });
-    f.Z.track(j.rMx.APP_CRASHED, {
+    f.Z.track(C.rMx.APP_CRASHED, {
       path: n.pathname,
       extra: t,
       error_message: e.message,
       error_stack: e.stack,
-      sentry_issue_id: s,
+      sentry_issue_id: o,
       error_level: "fatal"
     }), R()
   }

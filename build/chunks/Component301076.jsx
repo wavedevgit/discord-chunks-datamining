@@ -1,4 +1,4 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 301076, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => a
@@ -16,38 +16,38 @@ function a(e) {
     onClick: o
   } = e, s = function(e, t) {
     if (null == e) return {};
-    var n, i, r = function(e, t) {
+    var n, r, i = function(e, t) {
       if (null == e) return {};
-      var n, i, r = {},
+      var n, r, i = {},
         l = Object.keys(e);
-      for (i = 0; i < l.length; i++) n = l[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
-      return r
+      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+      return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
       var l = Object.getOwnPropertySymbols(e);
-      for (i = 0; i < l.length; i++) n = l[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
-    return r
+    return i
   }(e, ["isActivityActive", "onMouseEnter", "onMouseLeave", "onClick"]);
   let {
     Component: c,
     events: u,
     play: d
-  } = (0, r.Z)("ActivityButton");
-  return (0, i.jsx)(l.d, function(e) {
+  } = (0, i.Z)("ActivityButton");
+  return (0, r.jsx)(l.d, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
-        i = Object.keys(n);
-      "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        r = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
         return Object.getOwnPropertyDescriptor(n, e).enumerable
-      }))), i.forEach(function(t) {
-        var i;
-        i = n[t], t in e ? Object.defineProperty(e, t, {
-          value: i,
+      }))), r.forEach(function(t) {
+        var r;
+        r = n[t], t in e ? Object.defineProperty(e, t, {
+          value: r,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : e[t] = i
+        }) : e[t] = r
       })
     }
     return e

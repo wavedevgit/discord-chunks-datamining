@@ -1,8 +1,8 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 56710 **/
 /** chunk id: 55185, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  I: () => C,
-  NK: () => x
+  I: () => E,
+  NK: () => C
 }), require("./388685.js");
 var r, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -107,7 +107,7 @@ function y(e) {
   })
 }
 
-function j(e) {
+function v(e) {
   let {
     closePopout: t
   } = e;
@@ -144,7 +144,7 @@ function j(e) {
   })
 }
 
-function v(e) {
+function j(e) {
   let {
     closePopout: t
   } = e, n = u.G6.useSetting();
@@ -163,9 +163,9 @@ function v(e) {
     })]
   })
 }
-var x = ((r = {})[r.ActivityNux = 0] = "ActivityNux", r[r.StatusNux = 1] = "StatusNux", r[r.ActivityAndStatusNux = 2] = "ActivityAndStatusNux", r[r.Activity = 3] = "Activity", r[r.Status = 4] = "Status", r[r.ActivityAndStatus = 5] = "ActivityAndStatus", r);
+var C = ((r = {})[r.ActivityNux = 0] = "ActivityNux", r[r.StatusNux = 1] = "StatusNux", r[r.ActivityAndStatusNux = 2] = "ActivityAndStatusNux", r[r.Activity = 3] = "Activity", r[r.Status = 4] = "Status", r[r.ActivityAndStatus = 5] = "ActivityAndStatus", r);
 
-function C(e) {
+function E(e) {
   let {
     showPopout: t,
     popoutState: n,
@@ -218,21 +218,21 @@ function C(e) {
         };
       case 4:
         return {
-          type: "popout", children: j
+          type: "popout", children: v
         };
       case 5:
         return {
-          type: "popout", children: v
+          type: "popout", children: j
         };
       default:
         return null
     }
-  }(g), x = (0, l.useRef)(t);
+  }(g), C = (0, l.useRef)(t);
   if ((0, l.useEffect)(() => {
-      t && !x.current && b(n), t !== x.current && (x.current = t)
+      t && !C.current && b(n), t !== C.current && (C.current = t)
     }, [n, t]), null == O || !t) return d;
   if ("popover" === O.type) {
-    var C, E;
+    var E, x;
     let {
       action: e,
       title: t,
@@ -254,7 +254,7 @@ function C(e) {
           type: "image",
           src: m.Z
         },
-        actions: [(C = function(e) {
+        actions: [(E = function(e) {
           for (var t = 1; t < arguments.length; t++) {
             var n = null != arguments[t] ? arguments[t] : {},
               r = Object.keys(n);
@@ -271,21 +271,21 @@ function C(e) {
             })
           }
           return e
-        }({}, e), E = E = {
+        }({}, e), x = x = {
           onClick: t => {
             var n;
             null == (n = e.onClick) || n.call(e, t), r()
           }
-        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(C, Object.getOwnPropertyDescriptors(E)) : (function(e, t) {
+        }, Object.getOwnPropertyDescriptors ? Object.defineProperties(E, Object.getOwnPropertyDescriptors(x)) : (function(e, t) {
           var n = Object.keys(e);
           if (Object.getOwnPropertySymbols) {
             var r = Object.getOwnPropertySymbols(e);
             n.push.apply(n, r)
           }
           return n
-        })(Object(E)).forEach(function(e) {
-          Object.defineProperty(C, e, Object.getOwnPropertyDescriptor(E, e))
-        }), C)]
+        })(Object(x)).forEach(function(e) {
+          Object.defineProperty(E, e, Object.getOwnPropertyDescriptor(x, e))
+        }), E)]
       }), d]
     })
   }

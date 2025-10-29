@@ -1,6 +1,5 @@
 /** Chunk was on 63141 **/
 /** chunk id: 438015, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => d
 }), require("./388685.js");
@@ -23,7 +22,7 @@ class c extends Chunk647438.Component {
     let e, t, n, i, {
       props: {
         position: r,
-        zIndex: s
+        zIndex: o
       }
     } = this;
     switch (Chunk647438) {
@@ -58,26 +57,26 @@ class c extends Chunk647438.Component {
         notification: {
           props: {
             renderFooter: r,
-            onNotificationShow: s,
-            onDismissClick: l,
+            onNotificationShow: o,
+            onDismissClick: s,
             onNotificationClick: c,
             onConfirmClick: d,
             onCancelClick: u
           }
         }
       }
-    } = this, p = function(e, t) {
+    } = this, h = function(e, t) {
       if (null == e) return {};
       var n, i, r = function(e, t) {
         if (null == e) return {};
         var n, i, r = {},
-          s = Object.keys(e);
-        for (i = 0; i < s.length; i++) n = s[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
+          o = Object.keys(e);
+        for (i = 0; i < o.length; i++) n = o[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
         return r
       }(e, t);
       if (Object.getOwnPropertySymbols) {
-        var s = Object.getOwnPropertySymbols(e);
-        for (i = 0; i < s.length; i++) n = s[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+        var o = Object.getOwnPropertySymbols(e);
+        for (i = 0; i < o.length; i++) n = o[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
       }
       return r
     }(this.props.notification.props, ["renderFooter", "onNotificationShow", "onDismissClick", "onNotificationClick", "onConfirmClick", "onCancelClick"]);
@@ -92,7 +91,7 @@ class c extends Chunk647438.Component {
         })
       }
       return e
-    }({}, p), t = t = {
+    }({}, h), t = t = {
       locked: require,
       onNotificationShow: this.handleNotificationShow,
       onDismissClick: null != Chunk981631 ? this.handleDismissClick : true,
@@ -128,7 +127,7 @@ class c extends Chunk647438.Component {
           onDismissClick: n
         }
       } = this.props.notification;
-      s.Z.updateNotificationStatus(t), null == n || n(e, t)
+      o.Z.updateNotificationStatus(t), null == n || n(e, t)
     }), a(this, "handleNotificationClick", e => {
       let {
         id: t,

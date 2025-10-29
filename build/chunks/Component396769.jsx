@@ -1,4 +1,4 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 396769, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => s
@@ -16,17 +16,17 @@ function s(e) {
     onClick: n,
     label: s
   } = e;
-  return (0, i.jsx)(r.zx, {
-    look: r.zx.Looks.BLANK,
-    size: r.zx.Sizes.MIN,
+  return (0, r.jsx)(i.zx, {
+    look: i.zx.Looks.BLANK,
+    size: i.zx.Sizes.MIN,
     className: o.button,
     onClick: n,
-    children: (0, i.jsxs)(a.Z, {
+    children: (0, r.jsxs)(a.Z, {
       align: a.Z.Align.CENTER,
-      children: [(0, i.jsx)("div", {
+      children: [(0, r.jsx)("div", {
         className: o.buttonIcon,
         children: t
-      }), (0, i.jsx)(l.Text, {
+      }), (0, r.jsx)(l.Text, {
         variant: "text-md/normal",
         color: "none",
         children: s

@@ -1,7 +1,7 @@
 /** Chunk was on 91053 **/
 /** chunk id: 874139, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h
+  Z: () => p
 }), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -13,13 +13,13 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk815743 = require("./815743.js");
 
-function h(e) {
+function p(e) {
   let {
     wishlistItems: t = [],
     profileOwner: n,
-    onClick: h
+    onClick: p
   } = e, {
-    analyticsLocations: p
+    analyticsLocations: h
   } = (0, a.ZP)(), {
     cards: f,
     singleCollectibleItem: g
@@ -32,19 +32,19 @@ function h(e) {
       !l.isOwned && (0, s.Q)(l) && (0 === e.length && (r = l), e.push((0, c.c)(l, {
         moreCount: a ? t.length - 4 : true,
         profileOwner: n,
-        analyticsLocations: p,
-        onViewWishlist: h
+        analyticsLocations: h,
+        onViewWishlist: p
       })))
     }
     return {
       cards: e,
       singleCollectibleItem: 1 === e.length ? r : null
     }
-  }, [t, n, p, h]);
+  }, [t, n, h, p]);
   if (0 === f.length) return null;
   let m = 1 === f.length && null != g ? (0, c.g)(g, {
     profileOwner: n,
-    analyticsLocations: p
+    analyticsLocations: h
   }) : f;
   return (0, r.jsxs)(o.Z.Overlay, {
     className: u.container,

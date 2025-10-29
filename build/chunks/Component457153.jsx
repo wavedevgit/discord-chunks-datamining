@@ -1,4 +1,4 @@
-/** Chunk was on 17013 **/
+/** Chunk was on 34297 **/
 /** chunk id: 457153, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => h
@@ -30,7 +30,7 @@ let h = Chunk647438.forwardRef(function(e, t) {
     onCtxMenuClose: E,
     onCtxMenuSelect: O,
     overlayRef: S
-  } = e, T = (null == (n = j.userStatus) ? true : n.completedAt) != null, w = (0, l.Jf)(j), P = s.useRef(null), N = (null == (a = j.userStatus) ? true : a.enrolledAt) != null, A = null != w ? w.percentComplete : v.percentComplete, [R, B] = s.useState(false);
+  } = e, T = (null == (n = j.userStatus) ? true : n.completedAt) != null, w = (0, l.Jf)(j), P = s.useRef(null), N = (null == (a = j.userStatus) ? true : a.enrolledAt) != null, R = null != w ? w.percentComplete : v.percentComplete, [A, B] = s.useState(false);
   return (0, r.jsxs)(r.Fragment, {
     children: [T && (0, r.jsx)(u.Z, {
       expansionSpring: x,
@@ -38,7 +38,7 @@ let h = Chunk647438.forwardRef(function(e, t) {
       progressBarRef: P,
       quest: j,
       isExpanded: _,
-      isHovered: R
+      isHovered: A
     }), (0, r.jsx)(i.animated.div, {
       ref: t,
       "aria-hidden": _ && b,
@@ -71,7 +71,7 @@ let h = Chunk647438.forwardRef(function(e, t) {
           quest: j,
           progressBarRef: P,
           isExpanded: false,
-          percentComplete: A
+          percentComplete: R
         }) : null, T && (0, r.jsx)(d.y, {
           quest: j,
           useReducedMotion: C,

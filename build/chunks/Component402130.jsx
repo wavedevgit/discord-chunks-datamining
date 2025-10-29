@@ -49,24 +49,24 @@ function b(e) {
         channelId: t.id
       })
     }, [b, n, t.id]), null == b || null == _ || !y) return null;
-  let v = "user-profile-sidebar-heading-".concat(b.id),
-    O = o.ZP.getName(null, t.id, b);
+  let O = "user-profile-sidebar-heading-".concat(b.id),
+    v = o.ZP.getName(null, t.id, b);
   return (0, r.jsx)("aside", {
-    "aria-labelledby": v,
+    "aria-labelledby": O,
     children: (0, r.jsx)(a.y5t, {
       component: (0, r.jsx)(a.nn4, {
         children: (0, r.jsx)(a.H, {
-          id: v,
+          id: O,
           children: g.intl.format(g.t.KRe1Fk, {
-            name: O
+            name: v
           })
         })
       }),
-      children: x ? (0, r.jsx)(p.Z, m({
+      children: x ? (0, r.jsx)(h.Z, m({
         user: b,
         currentUser: _,
         onHide: j
-      }, e)) : b.isNonUserBot() ? (0, r.jsx)(h.Z, m({
+      }, e)) : b.isNonUserBot() ? (0, r.jsx)(p.Z, m({
         user: b,
         currentUser: _
       }, e)) : (0, r.jsx)(f.Z, m({

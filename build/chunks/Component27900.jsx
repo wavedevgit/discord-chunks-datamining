@@ -1,7 +1,7 @@
 /** Chunk was on 6524 **/
 /** chunk id: 27900, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  default: () => C
+  default: () => M
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -59,7 +59,7 @@ function P(e, t) {
   }), e
 }
 
-function I(e) {
+function A(e) {
   let {
     user: t,
     guildId: n,
@@ -69,25 +69,25 @@ function I(e) {
     onShowProfile: S,
     onWatchStream: _,
     appContext: P
-  } = e, I = (0, v.Z)({
+  } = e, A = (0, y.Z)({
     onAction: () => {
       null == S || S()
     }
-  }), A = (0, y.Z)({
+  }), I = (0, Z.Z)({
     user: t,
     context: P
-  }), C = (0, b.Z)({
+  }), M = (0, b.Z)({
     user: t,
     appContext: P
-  }), M = (0, p.Z)(t.id, _), x = (0, j.Z)(t.id), D = (0, E.Z)(t.id, a), w = (0, m.Z)({
+  }), C = (0, p.Z)(t.id, _), x = (0, j.Z)(t.id), D = (0, v.Z)(t.id, a), T = (0, m.Z)({
     user: t
-  }), T = (0, u.Z)(null, t), N = (0, f.Z)({
+  }), N = (0, u.Z)(null, t), k = (0, f.Z)({
     user: t,
     appContext: P
-  }), k = (0, O.Z)({
+  }), w = (0, O.Z)({
     user: t,
     appContext: P
-  }), U = (0, Z.Z)({
+  }), U = (0, E.Z)({
     user: t,
     appContext: P
   }), L = (0, s.Z)({
@@ -103,13 +103,13 @@ function I(e) {
       children: [(0, l.jsx)(r.kSQ, {
         children: R
       }), (0, l.jsxs)(r.kSQ, {
-        children: [I, A, C, M]
+        children: [A, I, M, C]
       }), (0, l.jsx)(r.kSQ, {
         children: x
       }), (0, l.jsx)(r.kSQ, {
-        children: T
+        children: N
       }), (0, l.jsxs)(r.kSQ, {
-        children: [D, w, N, U, k]
+        children: [D, T, k, U, w]
       }), (0, l.jsx)(r.kSQ, {
         children: B
       })]
@@ -119,7 +119,7 @@ function I(e) {
   })
 }
 
-function A(e) {
+function I(e) {
   let {
     user: t,
     mediaEngineContext: n,
@@ -127,31 +127,31 @@ function A(e) {
     onShowProfile: a,
     onWatchStream: c,
     appContext: g
-  } = e, S = (0, v.Z)({
+  } = e, S = (0, y.Z)({
     onAction: () => {
       null == a || a()
     }
-  }), _ = (0, y.Z)({
+  }), _ = (0, Z.Z)({
     user: t,
     context: g
   }), P = (0, b.Z)({
     user: t,
     appContext: g
-  }), I = (0, p.Z)(t.id, c), A = (0, j.Z)(t.id), C = (0, E.Z)(t.id, n), M = (0, m.Z)({
+  }), A = (0, p.Z)(t.id, c), I = (0, j.Z)(t.id), M = (0, v.Z)(t.id, n), C = (0, m.Z)({
     user: t
   }), x = (0, u.Z)(null, t), D = (0, f.Z)({
     user: t,
     appContext: g
-  }), w = (0, O.Z)({
+  }), T = (0, O.Z)({
     user: t,
     appContext: g
-  }), T = (0, Z.Z)({
+  }), N = (0, E.Z)({
     user: t,
     appContext: g
-  }), N = (0, s.Z)({
+  }), k = (0, s.Z)({
     id: t.id,
     label: h.intl.string(h.t["/AXYnE"])
-  }), k = (0, d.Z)(t), U = t.isNonUserBot();
+  }), w = (0, d.Z)(t), U = t.isNonUserBot();
   return (0, l.jsxs)(r.v2r, {
     navId: "user-context",
     onClose: i.Zy,
@@ -159,22 +159,22 @@ function A(e) {
     onSelect: o,
     children: [!U && (0, l.jsxs)(l.Fragment, {
       children: [(0, l.jsx)(r.kSQ, {
-        children: k
+        children: w
       }), (0, l.jsxs)(r.kSQ, {
-        children: [S, _, P, I]
+        children: [S, _, P, A]
       }), (0, l.jsx)(r.kSQ, {
-        children: A
+        children: I
       }), (0, l.jsx)(r.kSQ, {
         children: x
       }), (0, l.jsxs)(r.kSQ, {
-        children: [C, M, D, T, w]
+        children: [M, C, D, N, T]
       })]
     }), (0, l.jsx)(r.kSQ, {
-      children: N
+      children: k
     })]
   })
 }
-let C = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
+let M = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
   var {
     guildId: t,
     channelId: n
@@ -193,10 +193,10 @@ let C = (0, Chunk108843.Z)((0, Chunk883385.Z)(function(e) {
     }
     return r
   }(e, ["guildId", "channelId"]);
-  return null != t && null != n ? (0, l.jsx)(I, P(_({}, r), {
+  return null != t && null != n ? (0, l.jsx)(A, P(_({}, r), {
     guildId: t,
     channelId: n
-  })) : (0, l.jsx)(A, P(_({}, r), {
+  })) : (0, l.jsx)(I, P(_({}, r), {
     guildId: t,
     channelId: n
   }))

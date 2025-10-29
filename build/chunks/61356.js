@@ -1,4 +1,4 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 61356, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => l
@@ -10,8 +10,8 @@ function l(e) {
   let {
     type: t
   } = e;
-  return (0, i.e7)([r.Z], () => {
-    let e = r.Z.activeViewType();
-    return null != e && e === t && r.Z.shouldShowPopup()
+  return (0, r.e7)([i.Z], () => {
+    let e = i.Z.activeViewType();
+    return null != e && e === t && i.Z.shouldShowPopup()
   }, [t])
 }

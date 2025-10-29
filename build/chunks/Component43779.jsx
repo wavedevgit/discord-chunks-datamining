@@ -1,4 +1,4 @@
-/** Chunk was on 17013 **/
+/** Chunk was on 34297 **/
 /** chunk id: 43779, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -32,8 +32,8 @@ function S(e) {
   let {
     quest: P,
     questContent: N,
-    isHovering: A,
-    contentPosition: R,
+    isHovering: R,
+    contentPosition: A,
     rowIndex: B,
     isVisibleInViewport: k,
     onReceiveErrorHints: I,
@@ -46,7 +46,7 @@ function S(e) {
   } = s.useContext(_.k), {
     expansionSpring: F
   } = (0, c.q_F)({
-    expansionSpring: +!!A,
+    expansionSpring: +!!R,
     config: (S = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
@@ -141,7 +141,7 @@ function S(e) {
               quest: P,
               size: 76,
               percentComplete: Y,
-              percentCompleteText: A && !(0, m.zi)(P) ? J : true,
+              percentCompleteText: R && !(0, m.zi)(P) ? J : true,
               children: (0, r.jsx)("div", {
                 className: E.circularRewardTileWrapper,
                 children: (0, r.jsx)(x.Z, {
@@ -149,7 +149,7 @@ function S(e) {
                   questContent: N,
                   className: E.circularQuestRewardTileAsset,
                   location: v.dr.QUEST_HOME_DESKTOP,
-                  autoplay: A,
+                  autoplay: R,
                   onLoadComplete: U,
                   lazyLoad: true,
                   sourceQuestContent: D
@@ -158,7 +158,7 @@ function S(e) {
             })]
           }) : (0, r.jsx)(x.Z, {
             quest: P,
-            autoplay: A,
+            autoplay: R,
             questContent: N,
             className: E.questRewardTileAsset,
             location: v.dr.QUEST_HOME_DESKTOP,
@@ -194,7 +194,7 @@ function S(e) {
     }), (0, r.jsx)(j.Z, {
       quest: P,
       questContent: N,
-      contentPosition: R,
+      contentPosition: A,
       rowIndex: B,
       onReceiveErrorHints: I,
       sourceQuestContent: D

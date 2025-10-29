@@ -18,14 +18,14 @@ function u(e) {
     r = (0, s.h)(e),
     u = (0, o.o)(e);
   if (null == n || u || (0, l.tX)(r)) return;
-  let h = r.some(e => e.type === i.pj.INAPPROPRIATE_CONVERSATION_TIER_1),
-    p = r.filter(e => null != e.dismiss_timestamp).sort((e, t) => t.dismiss_timestamp < e.dismiss_timestamp ? false : 1);
-  if (p.length < 1 || ! function(e) {
+  let p = r.some(e => e.type === i.pj.INAPPROPRIATE_CONVERSATION_TIER_1),
+    h = r.filter(e => null != e.dismiss_timestamp).sort((e, t) => t.dismiss_timestamp < e.dismiss_timestamp ? false : 1);
+  if (h.length < 1 || ! function(e) {
       let t = arguments.length > 1 && true !== arguments[1] && arguments[1];
       if (null == e) returntrue;
       let n = new Date(e).getTime() + (t ? c : d);
       return new Date().getTime() >= n
-    }(p[0].dismiss_timestamp, h)) return;
+    }(h[0].dismiss_timestamp, p)) return;
   let f = r.filter(e => null == e.dismiss_timestamp);
   return null != (t = f.findLast(e => e.type === i.pj.INAPPROPRIATE_CONVERSATION_TIER_1)) ? t : f.findLast(e => e.type === i.pj.INAPPROPRIATE_CONVERSATION_TIER_2)
 }

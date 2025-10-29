@@ -1,7 +1,7 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 955384, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,16 +22,16 @@ function p(e, t, n) {
   }) : e[t] = n, e
 }
 
-function h(e) {
+function f(e) {
   e.stopPropagation()
 }
-class f extends Chunk647438.PureComponent {
+class h extends Chunk647438.PureComponent {
   render() {
     let {
       className: e,
       textValue: t,
       richValue: n,
-      message: r,
+      message: i,
       channel: l,
       onCancel: a,
       children: o
@@ -45,7 +45,7 @@ class f extends Chunk647438.PureComponent {
     return (0, Chunk951288.jsxs)("div", {
       className: module,
       ref: this.node,
-      onContextMenu: h,
+      onContextMenu: f,
       children: [Chunk957730({
         textValue: exports,
         richValue: require,
@@ -59,7 +59,7 @@ class f extends Chunk647438.PureComponent {
     })
   }
   constructor(...e) {
-    super(...e), p(this, "node", r.createRef()), p(this, "onClickSave", () => {
+    super(...e), p(this, "node", i.createRef()), p(this, "onClickSave", () => {
       let {
         textValue: e
       } = this.props;
@@ -68,21 +68,21 @@ class f extends Chunk647438.PureComponent {
       let {
         message: t,
         channel: n,
-        onConfirmDelete: i,
-        onCancel: r,
+        onConfirmDelete: r,
+        onCancel: i,
         saveMessage: c,
         validateEdit: u
       } = this.props;
-      return 0 === e.length ? (i(n, t), r(n.id), Promise.resolve({
+      return 0 === e.length ? (r(n, t), i(n.id), Promise.resolve({
         shouldClear: false,
         shouldRefocus: false
       })) : u({
         value: e,
         channel: n
-      }).then(i => {
+      }).then(r => {
         let {
           valid: u
-        } = i;
+        } = r;
         if (!u) return Promise.resolve({
           shouldClear: false,
           shouldRefocus: false
@@ -95,24 +95,24 @@ class f extends Chunk647438.PureComponent {
           let t = o.ZP.parse(this.props.channel, e),
             n = this.props.message.components.filter(e => e.type === l.re.TEXT_DISPLAY);
           if (1 === n.length) {
-            let i = n[0];
-            e !== i.content && c(this.props.channel.id, this.props.message.id, t)
+            let r = n[0];
+            e !== r.content && c(this.props.channel.id, this.props.message.id, t)
           }
         } else {
           let t = o.ZP.parse(this.props.channel, e);
           t.content !== this.props.message.content && c(this.props.channel.id, this.props.message.id, t)
         }
-        return r(n.id), Promise.resolve({
+        return i(n.id), Promise.resolve({
           shouldClear: true,
           shouldRefocus: true
         })
       })
     }), p(this, "onChange", (e, t, n) => {
       let {
-        channel: i,
-        onChange: r
+        channel: r,
+        onChange: i
       } = this.props;
-      r(i.id, t, n)
+      i(r.id, t, n)
     }), p(this, "onKeyDown", e => {
       if (e.key === c.vn.ESCAPE && !e.shiftKey) {
         let {

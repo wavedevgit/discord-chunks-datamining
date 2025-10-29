@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 56710 **/
 /** chunk id: 590965, original params: e,t,n (module,exports,require) **/
 let r;
 require.d(exports, {
@@ -40,13 +40,13 @@ function y(e) {
   }
   return e
 }
-let j = Chunk981631.IlC.APP,
-  v = false,
-  x = false,
-  C = [];
+let v = Chunk981631.IlC.APP,
+  j = false,
+  C = false,
+  E = [];
 
-function E() {
-  v = true
+function x() {
+  j = true
 }
 class S extends(i = Chunk442837.ZP.Store) {
   initialize() {
@@ -54,22 +54,22 @@ class S extends(i = Chunk442837.ZP.Store) {
   }
   isOpen() {
     let e = __OVERLAY__ ? Chunk981631.IlC.OVERLAY : Chunk981631.IlC.APP;
-    return !!(v && C.length > 0 && j === module)
+    return !!(j && E.length > 0 && v === module)
   }
   getProps() {
     return {
-      invite: C.length > 0 ? C[0][0] : null,
+      invite: E.length > 0 ? E[0][0] : null,
       error: null != r && "" !== r ? r : null,
-      submitting: x
+      submitting: C
     }
   }
 }
 O(S, "displayName", "InviteModalStore");
 let I = new S(Chunk570140.Z, {
-  OVERLAY_INITIALIZE: E,
-  CONNECTION_OPEN: E,
+  OVERLAY_INITIALIZE: x,
+  CONNECTION_OPEN: x,
   CONNECTION_CLOSED: function() {
-    v = false
+    j = false
   },
   INVITE_MODAL_OPEN: function(e) {
     let t = e.invite;
@@ -100,11 +100,11 @@ let I = new S(Chunk570140.Z, {
         }
       }
     }
-    if (C.some(e => {
+    if (E.some(e => {
         let [n] = e;
         return n.code === t.code
       })) returnfalse;
-    j = e.context, x = false;
+    v = e.context, C = false;
     let n = function(e) {
       let {
         approximate_member_count: t,
@@ -131,21 +131,21 @@ let I = new S(Chunk570140.Z, {
       };
       return null != c && (p.channel = y({}, c)), null != u && (p.guild = (0, g.Qs)(u)), null != e.inviter && (p.inviter = y({}, e.inviter)), p
     }(t);
-    C.push([n, e.resolve])
+    E.push([n, e.resolve])
   },
   INVITE_MODAL_CLOSE: function() {
-    if (r = null, x = false, C.length > 0) {
-      let [, e] = C.shift();
+    if (r = null, C = false, E.length > 0) {
+      let [, e] = E.shift();
       null != module && module()
     }
   },
   INVITE_ACCEPT: function() {
-    x = true
+    C = true
   },
   INVITE_MODAL_ERROR: function(e) {
     let {
       message: t
     } = e;
-    r = t, x = false
+    r = t, C = false
   }
 })

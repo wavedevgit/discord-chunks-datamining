@@ -67,9 +67,9 @@ function N(e) {
     channelId: t,
     baseChannelId: l,
     channelViewSource: N = "Split View"
-  } = e, R = (0, s.e7)([x.Z], () => x.Z.getChannel(t)), w = (0, s.e7)([v.Z], () => v.Z.getGuild(null == R ? true : R.getGuildId())), A = (0, f.ZP)(R);
+  } = e, R = (0, s.e7)([x.Z], () => x.Z.getChannel(t)), w = (0, s.e7)([O.Z], () => O.Z.getGuild(null == R ? true : R.getGuildId())), A = (0, f.ZP)(R);
   var D = R;
-  let L = (0, s.e7)([O.Z], () => null != D && !a().isEmpty(O.Z.getVoiceStatesForChannel(D.id)));
+  let L = (0, s.e7)([v.Z], () => null != D && !a().isEmpty(v.Z.getVoiceStatesForChannel(D.id)));
   i.useEffect(() => {
     L && null != D && (o.Z.dispatch({
       type: "SIDEBAR_CLOSE",
@@ -82,10 +82,10 @@ function N(e) {
   if (i.useEffect(() => {
       if (null == R || M.current) return;
       M.current = true;
-      let e = (0, h.K)(x.Z.getChannel(R.id), true);
+      let e = (0, p.K)(x.Z.getChannel(R.id), true);
       (0, u.yw)(S.rMx.CHANNEL_OPENED, T(P({}, e, (0, u.$H)(R.id)), {
         channel_view: N
-      })), (0, p.a)(S.rMx.CHANNEL_OPENED_CLICKSTREAM, {
+      })), (0, h.a)(S.rMx.CHANNEL_OPENED_CLICKSTREAM, {
         channelId: R.id
       })
     }, [R, N]), null == R || null == w) return null;

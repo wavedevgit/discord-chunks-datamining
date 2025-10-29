@@ -1,4 +1,4 @@
-/** Chunk was on 34271 **/
+/** Chunk was on 73726 **/
 /** chunk id: 370663, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => o
@@ -10,24 +10,24 @@ let a = () => {};
 
 function o(e, t, n) {
   let o = r.useRef((0, i.Z)()),
-    c = r.useRef(Date.now()),
-    s = r.useCallback((r, i) => {
+    s = r.useRef(Date.now()),
+    c = r.useCallback((r, i) => {
       let a = {
         x: r,
         y: i,
-        deltaTime: Date.now() - c.current
+        deltaTime: Date.now() - s.current
       };
       (0, l.oW)(t, o.current, e, n, a), (0, l.cV)(o.current, e, n, [a])
     }, [t, n, e]),
     u = r.useCallback((e, t, n) => {
-      o.current = (0, i.Z)(), c.current = Date.now(), s(t, n)
-    }, [s]),
-    d = r.useCallback((e, t, n) => s(t, n), [s]),
-    f = r.useCallback((e, t, n) => u(e, t, n), [u]);
+      o.current = (0, i.Z)(), s.current = Date.now(), c(t, n)
+    }, [c]),
+    d = r.useCallback((e, t, n) => c(t, n), [c]),
+    p = r.useCallback((e, t, n) => u(e, t, n), [u]);
   return r.useMemo(() => ({
     handleMouseDown: u,
     handleMouseMove: d,
     handleMouseUp: a,
-    handleMouseEnter: f
-  }), [u, f, d])
+    handleMouseEnter: p
+  }), [u, p, d])
 }

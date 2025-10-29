@@ -1,7 +1,7 @@
-/** Chunk was on 34271 **/
+/** Chunk was on 73726 **/
 /** chunk id: 517525, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => L
+  Z: () => k
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -47,7 +47,7 @@ function P(e) {
   return e
 }
 
-function Z(e, t) {
+function I(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -59,172 +59,172 @@ function Z(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let j = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
+let Z = (0, Chunk468194.Mg)(Chunk477690.Z.LIVE_INDICATOR_BORDER_RADIUS),
   T = {
     opacity: 0,
     transform: "translate3d(100%, 0, 0)"
   },
-  A = {
+  N = {
     opacity: 1,
     transform: "translate3d(0%, 0, 0)"
   },
-  R = {
+  A = {
     opacity: 0
   },
-  x = {
+  w = {
     opacity: 1
   },
-  N = {
-    borderRadius: "".concat(j, "px ").concat(j, "px ").concat(j, "px ").concat(j, "px")
+  M = {
+    borderRadius: "".concat(Z, "px ").concat(Z, "px ").concat(Z, "px ").concat(Z, "px")
+  },
+  R = {
+    borderRadius: "0px ".concat(Z, "px ").concat(Z, "px 0px")
   },
   D = {
-    borderRadius: "0px ".concat(j, "px ").concat(j, "px 0px")
-  },
-  M = {
     mass: 1,
     tension: 500,
     friction: 18,
     clamp: true
   },
-  k = e => {
+  L = e => {
     let t, l, {
         participant: o,
-        isUpsellEnabled: c,
-        shape: f,
-        size: v,
-        didTrackUpsellViewed: j,
+        isUpsellEnabled: s,
+        shape: p,
+        size: b,
+        didTrackUpsellViewed: Z,
         setDidTrackUpsellViewed: T,
-        className: A,
-        premiumIndicator: R,
-        quality: x
+        className: N,
+        premiumIndicator: A,
+        quality: w
       } = e,
       {
-        analyticsLocations: N
+        analyticsLocations: M
       } = (0, m.ZP)(),
-      D = null != (0, y.Z)(o);
+      R = null != (0, x.Z)(o);
     try {
-      t = (0, S.nG)(x)
+      t = (0, v.nG)(w)
     } catch (e) {
       t = false
     }
     try {
-      l = (0, S.tR)(x)
+      l = (0, v.tR)(w)
     } catch (e) {
       l = false
     }
-    let M = t || l,
+    let D = t || l,
       {
-        location: k
-      } = (0, _.O)(),
-      L = (0, s.e7)([b.default], () => b.default.getCurrentUser()),
-      F = c && !h.ZP.isPremium(L, I.PremiumTypes.TIER_1) && !h.ZP.canStreamQuality(h.ZP.StreamQuality.MID, L),
-      V = i.useCallback(() => {
-        F && M && (0, p.ZDy)(async () => {
+        location: L
+      } = (0, h.O)(),
+      k = (0, c.e7)([_.default], () => _.default.getCurrentUser()),
+      U = s && !C.ZP.isPremium(k, E.PremiumTypes.TIER_1) && !C.ZP.canStreamQuality(C.ZP.StreamQuality.MID, k),
+      B = i.useCallback(() => {
+        U && D && (0, f.ZDy)(async () => {
           let {
             default: e
           } = await n.e("28479").then(n.bind(n, 78865));
-          return t => (0, r.jsx)(e, Z(P({}, t), {
-            analyticsSource: k
+          return t => (0, r.jsx)(e, I(P({}, t), {
+            analyticsSource: L
           }))
         })
-      }, [F, M, k]);
+      }, [U, D, L]);
     if (i.useEffect(() => {
-        !j && M && (E.default.track(O.rMx.PREMIUM_UPSELL_VIEWED, {
-          type: I.cd.STREAM_QUALITY_INDICATOR,
+        !Z && D && (y.default.track(O.rMx.PREMIUM_UPSELL_VIEWED, {
+          type: E.cd.STREAM_QUALITY_INDICATOR,
           has_premium_stream_fps: t,
           has_premium_stream_resolution: l,
-          location_stack: N
+          location_stack: M
         }), T(true))
-      }, [t, l, M, j, T, N]), null == x) return null;
-    let U = (0, r.jsx)(d.u, {
-      text: D ? C.intl.string(C.t.q8TiVt) : M ? C.intl.string(C.t.IHgpEn) : C.intl.string(C.t.vLb0VW),
+      }, [t, l, D, Z, T, M]), null == w) return null;
+    let F = (0, r.jsx)(d.u, {
+      text: R ? j.intl.string(j.t.q8TiVt) : D ? j.intl.string(j.t.IHgpEn) : j.intl.string(j.t.vLb0VW),
       position: "bottom",
-      children: (0, r.jsxs)(p.P3F, {
-        onClick: V,
-        className: a()(w.qualityIndicator, v, g.eE[f], D ? w.qualityIndicatorLowQuality : w.qualityIndicatorFullQuality, {
-          [w.clickable]: F && M
+      children: (0, r.jsxs)(f.P3F, {
+        onClick: B,
+        className: a()(S.qualityIndicator, b, g.eE[p], R ? S.qualityIndicatorLowQuality : S.qualityIndicatorFullQuality, {
+          [S.clickable]: U && D
         }),
-        children: [M ? (0, r.jsx)(p.SrA, {
+        children: [D ? (0, r.jsx)(f.SrA, {
           size: "md",
           color: "currentColor",
-          className: w.premiumStreamIcon
+          className: S.premiumStreamIcon
         }) : null, (0, r.jsx)("span", {
-          className: w.qualityResolution,
-          children: (0, S.ml)(x.maxResolution)
+          className: S.qualityResolution,
+          children: (0, v.ml)(w.maxResolution)
         }), (0, r.jsx)("span", {
-          children: (0, S.bp)(x.maxFrameRate)
+          children: (0, v.bp)(w.maxFrameRate)
         })]
       })
     });
-    return (0, r.jsx)(p.IGR, {
-      text: U,
-      className: a()(A, w.qualityIndicatorBadge, {
-        [w.qualityIndicatorBadgePremium]: M && R
+    return (0, r.jsx)(f.IGR, {
+      text: F,
+      className: a()(N, S.qualityIndicatorBadge, {
+        [S.qualityIndicatorBadgePremium]: D && A
       }),
       color: u.Z.unsafe_rawColors.PRIMARY_500.css,
-      shape: g.eE[f]
+      shape: g.eE[p]
     })
   },
-  L = e => {
+  k = e => {
     let {
       participant: t,
       showQuality: n,
       isUpsellEnabled: l = true,
-      size: c,
-      className: s,
+      size: s,
+      className: c,
       premiumIndicator: u
-    } = e, [d, f] = i.useState(false), _ = (0, S.W3)(t), {
+    } = e, [d, p] = i.useState(false), h = (0, v.W3)(t), {
       reducedMotion: m
-    } = i.useContext(p.Sfi), b = n && null != _;
+    } = i.useContext(f.Sfi), _ = n && null != h;
     i.useEffect(() => {
-      (0, v.Z)(t.stream.ownerId, t.user.getAvatarURL(t.stream.guildId, 80), {
+      (0, b.Z)(t.stream.ownerId, t.user.getAvatarURL(t.stream.guildId, 80), {
         dispatchWait: true
       })
     }, [t]);
-    let E = (0, p.Yzy)(b, {
+    let y = (0, f.Yzy)(_, {
         enter: {
-          from: m.enabled ? R : T,
-          to: m.enabled ? x : A
+          from: m.enabled ? A : T,
+          to: m.enabled ? w : N
         },
-        leave: m.enabled ? R : T,
-        config: M
+        leave: m.enabled ? A : T,
+        config: D
       }, "animate-always"),
-      h = (0, p.q_F)({
-        to: b ? D : N,
-        config: M
+      C = (0, f.q_F)({
+        to: _ ? R : M,
+        config: D
       }, "animate-always");
     return (e => {
       let {
         className: n,
         popoutProps: i
       } = e;
-      return (0, r.jsxs)("div", Z(P({
-        className: a()(w.streamQualityIndicator, n)
+      return (0, r.jsxs)("div", I(P({
+        className: a()(S.streamQualityIndicator, n)
       }, i), {
-        children: [E((e, n) => n ? (0, r.jsx)(o.animated.div, {
+        children: [y((e, n) => n ? (0, r.jsx)(o.animated.div, {
           style: e,
-          children: (0, r.jsx)(k, {
-            className: w.liveQualityIndicator,
+          children: (0, r.jsx)(L, {
+            className: S.liveQualityIndicator,
             participant: t,
-            size: c,
-            shape: p.Dv2.ROUND_LEFT,
+            size: s,
+            shape: f.Dv2.ROUND_LEFT,
             isUpsellEnabled: l,
             didTrackUpsellViewed: d,
-            setDidTrackUpsellViewed: f,
+            setDidTrackUpsellViewed: p,
             premiumIndicator: u,
-            quality: _
+            quality: h
           })
         }) : null), (0, r.jsx)(o.animated.div, {
-          style: h,
-          className: w.liveIndicator,
+          style: C,
+          className: S.liveIndicator,
           children: (0, r.jsx)(g.ZP, {
             look: g.jZ.RED,
-            size: c,
-            shape: b ? p.Dv2.ROUND_RIGHT : p.Dv2.ROUND
+            size: s,
+            shape: _ ? f.Dv2.ROUND_RIGHT : f.Dv2.ROUND
           })
         })]
       }))
     })({
-      className: s
+      className: c
     })
   }

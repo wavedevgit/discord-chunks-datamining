@@ -1,4 +1,4 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 575464, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -20,43 +20,43 @@ var Chunk120356 = require("./120356.js"),
 function m(e) {
   var t, n;
   let {
-    user: r,
+    user: i,
     row: m,
     hideDiscriminator: g,
     comparator: b,
-    selected: C,
+    selected: _,
     checked: y,
-    disabled: _ = false,
+    disabled: C = false,
     inlineUsername: v = true,
     onClick: x,
     onMouseEnter: O,
-    "aria-setsize": j,
-    "aria-posinset": E
-  } = e, S = (0, o.e7)([p.Z], () => p.Z.getStatus(r.id)), P = (0, a.JA)(String(r.id));
-  return (0, i.jsx)(s.P3F, (t = function(e) {
+    "aria-setsize": E,
+    "aria-posinset": j
+  } = e, S = (0, o.e7)([p.Z], () => p.Z.getStatus(i.id)), P = (0, a.JA)(String(i.id));
+  return (0, r.jsx)(s.P3F, (t = function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
-        i = Object.keys(n);
-      "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+        r = Object.keys(n);
+      "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
         return Object.getOwnPropertyDescriptor(n, e).enumerable
-      }))), i.forEach(function(t) {
-        var i;
-        i = n[t], t in e ? Object.defineProperty(e, t, {
-          value: i,
+      }))), r.forEach(function(t) {
+        var r;
+        r = n[t], t in e ? Object.defineProperty(e, t, {
+          value: r,
           enumerable: true,
           configurable: true,
           writable: true
-        }) : e[t] = i
+        }) : e[t] = r
       })
     }
     return e
   }({
     id: "user-row-".concat(m),
-    className: l()(f.friendWrapper, {
-      [f.disabled]: _
+    className: l()(h.friendWrapper, {
+      [h.disabled]: C
     }),
     onClick: () => {
-      null != x && x(r.id)
+      null != x && x(i.id)
     },
     onMouseEnter: () => {
       null != O && O(m)
@@ -64,51 +64,51 @@ function m(e) {
   }, P), n = n = {
     role: "option",
     "aria-selected": y,
-    "aria-disabled": _,
-    "aria-setsize": j,
-    "aria-posinset": E,
-    children: (0, i.jsxs)(d.Z, {
+    "aria-disabled": C,
+    "aria-setsize": E,
+    "aria-posinset": j,
+    children: (0, r.jsxs)(d.Z, {
       align: d.Z.Align.CENTER,
-      className: l()(f.friend, {
-        [f.friendSelected]: C,
-        [f.twoRows]: !v
+      className: l()(h.friend, {
+        [h.friendSelected]: _,
+        [h.twoRows]: !v
       }),
-      children: [(0, i.jsx)(u.Z, {
-        user: r,
+      children: [(0, r.jsx)(u.Z, {
+        user: i,
         status: S,
-        className: f.avatar
-      }), (0, i.jsxs)(d.Z, {
-        className: f.match,
+        className: h.avatar
+      }), (0, r.jsxs)(d.Z, {
+        className: h.match,
         align: d.Z.Align.BASELINE,
         direction: v ? d.Z.Direction.HORIZONTAL : d.Z.Direction.VERTICAL,
-        children: [(0, i.jsx)(s.Text, {
+        children: [(0, r.jsx)(s.Text, {
           tag: "strong",
-          className: f.nickname,
+          className: h.nickname,
           "aria-hidden": true,
           variant: "text-md/medium",
-          children: null != b && b === r.tag ? h.ZP.getName(r) : null != b && "" !== b ? b : h.ZP.getName(r)
-        }), (0, i.jsx)(s.Text, {
+          children: null != b && b === i.tag ? f.ZP.getName(i) : null != b && "" !== b ? b : f.ZP.getName(i)
+        }), (0, r.jsx)(s.Text, {
           variant: "text-xs/normal",
           color: "text-muted",
-          children: (0, i.jsx)(c.Z, {
-            user: r,
+          children: (0, r.jsx)(c.Z, {
+            user: i,
             hideDiscriminator: g,
-            className: f.discordTag,
-            usernameClass: f.__invalid_weightMedium,
-            discriminatorClass: f.__invalid_weightMedium,
+            className: h.discordTag,
+            usernameClass: h.__invalid_weightMedium,
+            discriminatorClass: h.__invalid_weightMedium,
             forceUsername: true
           })
         })]
-      }), (0, i.jsx)(s.FZ5, {
+      }), (0, r.jsx)(s.FZ5, {
         checked: y,
-        disabled: _
+        disabled: C
       })]
     })
   }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, i)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
     return n
   })(Object(n)).forEach(function(e) {

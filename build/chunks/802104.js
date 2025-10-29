@@ -2,7 +2,7 @@
 /** chunk id: 802104, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  Z: () => O
+  Z: () => y
 }), require("./388685.js"), require("./539854.js");
 var Chunk544891 = require("./544891.js"),
   Chunk433517 = require("./433517.js"),
@@ -13,10 +13,9 @@ var Chunk544891 = require("./544891.js"),
   Chunk70956 = require("./70956.js"),
   Chunk358085 = require("./358085.js"),
   Chunk960048 = require("./960048.js"),
-  Chunk998502 = require("./998502.js"),
-  Chunk956358 = require("./956358.js");
+  Chunk998502 = require("./998502.js");
 
-function p(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -24,12 +23,12 @@ function p(e, t, n) {
     writable: true
   }) : e[t] = n, e
 }
-let h = +Chunk70956.Z.Millis.HOUR,
-  m = 7 * Chunk70956.Z.Millis.DAY,
-  g = +Chunk70956.Z.Millis.DAY,
-  E = Chunk433517.K.get("lastNonRequiredUpdateShown", Date.now()),
-  b = new Chunk710845.Z("AutoUpdateManager");
-class y extends Chunk147913.Z {
+let p = +Chunk70956.Z.Millis.HOUR,
+  h = 7 * Chunk70956.Z.Millis.DAY,
+  m = +Chunk70956.Z.Millis.DAY,
+  g = Chunk433517.K.get("lastNonRequiredUpdateShown", Date.now()),
+  E = new Chunk710845.Z("AutoUpdateManager");
+class b extends Chunk147913.Z {
   _initialize() {
     Chunk358085.isPlatformEmbedded && (Chunk998502.ZP.on("CHECKING_FOR_UPDATES", this._handleCheckingForUpdates), Chunk998502.ZP.on("UPDATE_NOT_AVAILABLE", this._handleNativeUpdateNotAvailable), Chunk998502.ZP.on("UPDATE_AVAILABLE", () => this._handleUpdateAvailable(true)), Chunk998502.ZP.on("UPDATE_ERROR", this._handleUpdateError), Chunk998502.ZP.on("UPDATE_DOWNLOADED", () => this._handleUpdateDownloaded(true)), Chunk998502.ZP.on("UPDATE_MANUALLY", this._handleUpdateManually))
   }
@@ -43,14 +42,12 @@ class y extends Chunk147913.Z {
     return "win32" === (0, Chunk358085.getPlatformName)()
   }
   async handlePostConnectionOpen() {
-    let e = (0, Chunk956358.d)({
-      location: "post_connection_open"
-    }).allowOptionalDesktopUpdates;
-    this.isNewUpdater() && module !== await Chunk998502.ZP.getOptionalUpdates() && await Chunk998502.ZP.setOptionalUpdates(module), this.checkForUpdates(), this._checkInterval = setInterval(this.checkForUpdates, h)
+    let e = true;
+    this.isNewUpdater() && module !== await Chunk998502.ZP.getOptionalUpdates() && await Chunk998502.ZP.setOptionalUpdates(module), this.checkForUpdates(), this._checkInterval = setInterval(this.checkForUpdates, p)
   }
   async _requestNewUpdaterBootstrap() {
     let e;
-    b.log("Bootstrapping new updater host...");
+    E.log("Bootstrapping new updater host...");
     try {
       await Chunk998502.ZP.ensureModule("discord_updater_bootstrap"), e = Chunk998502.ZP.requireModule("discord_updater_bootstrap"), this._bootstrapper = module
     } catch (e) {
@@ -60,7 +57,7 @@ class y extends Chunk147913.Z {
     try {
       this._handleCheckingForUpdates(), await module.bootstrap(Chunk998502.ZP.releaseChannel, "win"), this.updateAvailable = true, this.nativeUpdateAvailable = true, this._handleUpdateDownloaded(true)
     } catch (e) {
-      b.log("Failed to bootstrap new updater:", module), this._handleNativeUpdateNotAvailable(), Chunk960048.Z.captureException(module)
+      E.log("Failed to bootstrap new updater:", module), this._handleNativeUpdateNotAvailable(), Chunk960048.Z.captureException(module)
     }
   }
   _emitCallbacks() {
@@ -68,10 +65,10 @@ class y extends Chunk147913.Z {
   }
   constructor(...e) {
     var t;
-    super(...e), t = this, p(this, "_checkInterval", null), p(this, "_callbacks", []), p(this, "_bootstrapper", null), p(this, "updateAvailable", false), p(this, "nativeUpdateAvailable", false), p(this, "nativeUpdatesDownloaded", 0), p(this, "nativeUpdateCountThreshold", 3), p(this, "actions", {
+    super(...e), t = this, _(this, "_checkInterval", null), _(this, "_callbacks", []), _(this, "_bootstrapper", null), _(this, "updateAvailable", false), _(this, "nativeUpdateAvailable", false), _(this, "nativeUpdatesDownloaded", 0), _(this, "nativeUpdateCountThreshold", 3), _(this, "actions", {
       POST_CONNECTION_OPEN: () => this.handlePostConnectionOpen(),
       AUTO_UPDATER_QUIT_AND_INSTALL: () => this.quitAndInstall()
-    }), p(this, "checkForUpdates", function() {
+    }), _(this, "checkForUpdates", function() {
       let e = arguments.length > 0 && true !== arguments[0] && arguments[0],
         n = t.isNewUpdater(),
         r = n && t.nativeUpdatesDownloaded < t.nativeUpdateCountThreshold;
@@ -80,11 +77,11 @@ class y extends Chunk147913.Z {
       }) : t._handleNativeUpdateNotAvailable()), new Promise(e => {
         t.updateAvailable ? e(true) : t._callbacks.push(e)
       })
-    }), p(this, "_handleCheckingForUpdates", () => {
+    }), _(this, "_handleCheckingForUpdates", () => {
       a.Z.dispatch({
         type: "CHECKING_FOR_UPDATES"
       })
-    }), p(this, "_handleNativeUpdateNotAvailable", () => {
+    }), _(this, "_handleNativeUpdateNotAvailable", () => {
       this._handleCheckingForUpdates(), r.tn.get({
         url: "".concat(location.protocol, "//").concat(location.host).concat("/assets/", "version.").concat(window.GLOBAL_ENV.RELEASE_CHANNEL, ".json"),
         query: {
@@ -93,29 +90,29 @@ class y extends Chunk147913.Z {
         oldFormErrors: true,
         rejectWithError: true
       }).then(e => {
-        if (null == e.body || "63339eaff6bde091a60c3b52e8f4667c8038c6ec" === e.body.hash) return this._handleUpdateNotAvailable();
+        if (null == e.body || "0983a93d864529584b8bed37d4ef46873b143709" === e.body.hash) return this._handleUpdateNotAvailable();
         if (e.body.required || (0, s.fD)()) return this._handleUpdateDownloaded(false);
-        let t = "stable" === window.GLOBAL_ENV.RELEASE_CHANNEL ? m : g;
-        if (Date.now() - E > t) return i.K.set("lastNonRequiredUpdateShown", Date.now()), this._handleUpdateDownloaded(false)
+        let t = "stable" === window.GLOBAL_ENV.RELEASE_CHANNEL ? h : m;
+        if (Date.now() - g > t) return i.K.set("lastNonRequiredUpdateShown", Date.now()), this._handleUpdateDownloaded(false)
       }, () => this._handleUpdateError())
-    }), p(this, "_handleUpdateNotAvailable", () => {
+    }), _(this, "_handleUpdateNotAvailable", () => {
       a.Z.dispatch({
         type: "UPDATE_NOT_AVAILABLE"
       }), this._emitCallbacks()
-    }), p(this, "_handleUpdateAvailable", e => {
+    }), _(this, "_handleUpdateAvailable", e => {
       this.updateAvailable = true, this.nativeUpdateAvailable = e, a.Z.dispatch({
         type: "UPDATE_AVAILABLE"
       })
-    }), p(this, "_handleUpdateManually", () => {
+    }), _(this, "_handleUpdateManually", () => {
       this.updateAvailable = true, this.nativeUpdateAvailable = true, a.Z.dispatch({
         type: "UPDATE_MANUALLY"
       })
-    }), p(this, "_handleUpdateError", e => {
+    }), _(this, "_handleUpdateError", e => {
       this.updateAvailable = false, a.Z.dispatch({
         type: "UPDATE_ERROR",
         message: e
       })
-    }), p(this, "_handleUpdateDownloaded", (e, t, n, r, i) => {
+    }), _(this, "_handleUpdateDownloaded", (e, t, n, r, i) => {
       e && (this.nativeUpdatesDownloaded += 1), this._handleUpdateAvailable(e), a.Z.dispatch({
         type: "UPDATE_DOWNLOADED",
         releaseNotes: t,
@@ -126,4 +123,4 @@ class y extends Chunk147913.Z {
     })
   }
 }
-let O = new y
+let y = new b

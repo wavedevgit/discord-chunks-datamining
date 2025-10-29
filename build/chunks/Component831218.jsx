@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 56710 **/
 /** chunk id: 831218, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => V
@@ -323,7 +323,7 @@ class F extends(r = Chunk647438.Component) {
       let o = Math.round((t.offsetHeight - 44 * i) / 44),
         a = o > n.length ? n.slice(0, o + 1) : n,
         s = a.map(e => null != r[e] ? r[e].getRecipientId() : null),
-        c = n.some(e => (0, j.Z)(e)),
+        c = n.some(e => (0, v.Z)(e)),
         u = {
           num_users_visible: a.length,
           num_users_visible_with_mobile_indicator: s.filter(e => null != e && w.Z.isMobileOnline(e)).length
@@ -383,7 +383,7 @@ class F extends(r = Chunk647438.Component) {
         showDMHeader: n,
         createDMCTAButtonVariant: r
       } = this.props;
-      return 0 !== t && n ? (0, i.jsxs)(v.Z, {
+      return 0 !== t && n ? (0, i.jsxs)(j.Z, {
         className: a()(M.privateChannelsHeaderContainer, {
           [M.tall]: "side" === r
         }),
@@ -439,14 +439,14 @@ let V = e => {
     listScrollerRef: s,
     createDMCTAButtonVariant: c,
     hideAllDMs: f
-  } = e, g = l.Children.count(o), _ = T.Z.getMutablePrivateChannels(), y = f ? {} : (0, P.k1)(_), j = (0, p.Wu)([A.Z, I.Z, N.Z], () => {
+  } = e, g = l.Children.count(o), _ = T.Z.getMutablePrivateChannels(), y = f ? {} : (0, P.k1)(_), v = (0, p.Wu)([A.Z, I.Z, N.Z], () => {
     let e = A.Z.getPrivateChannelIds(),
       t = (0, P.tU)(e, [I.Z, N.Z]);
     return f ? [] : t
   }, [f]);
-  (0, E.z)(C.R);
+  (0, x.z)(E.R);
   let {
-    analyticsLocations: v
+    analyticsLocations: j
   } = (0, O.ZP)(b.Z.CONTACTS_LIST), S = (0, Z.Ll)(), {
     keyboardModeEnabled: w,
     version: R
@@ -481,7 +481,7 @@ let V = e => {
         requestAnimationFrame(() => setTimeout(e, 100))
       }
     })
-  }), [L]), V = (0, x.Dt)(), H = (0, d.ZP)({
+  }), [L]), V = (0, C.Dt)(), H = (0, d.ZP)({
     id: "private-channels-".concat(V),
     isEnabled: w,
     scrollToStart: k,
@@ -490,13 +490,13 @@ let V = e => {
     setFocus: M
   });
   return (0, i.jsx)(O.Gt, {
-    value: v,
+    value: j,
     children: (0, i.jsx)(u.bG, {
       navigator: H,
       children: (0, i.jsx)(F, U(G({}, e), {
         density: t,
         channels: y,
-        privateChannelIds: j,
+        privateChannelIds: v,
         listRef: L,
         theme: null != S ? S : r,
         version: R,

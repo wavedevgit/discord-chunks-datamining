@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 56710 **/
 /** chunk id: 754231, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk506914 = require("./506914.js");
 let y = Chunk884338.u8.SIZE_24;
 
-function j(e) {
+function v(e) {
   var t, n;
   let {
     activity: i,
@@ -69,7 +69,7 @@ function j(e) {
   })) : _
 }
 
-function v(e) {
+function j(e) {
   let {
     activity: t,
     embeddedApp: n,
@@ -94,7 +94,7 @@ function v(e) {
   })
 }
 
-function x(e) {
+function C(e) {
   let {
     activity: t,
     user: n,
@@ -113,7 +113,7 @@ function x(e) {
   })
 }
 
-function C(e) {
+function E(e) {
   let {
     activity: t
   } = e, n = null == t ? true : t.state;
@@ -123,7 +123,7 @@ function C(e) {
   })
 }
 
-function E(e) {
+function x(e) {
   let {
     activity: t
   } = e;
@@ -170,22 +170,22 @@ function S(e) {
     className: O.flexColumn,
     children: [(0, r.jsxs)("div", {
       className: O.flexRow,
-      children: [(0, r.jsx)(j, {
+      children: [(0, r.jsx)(v, {
         activity: t,
         user: l,
         embeddedApp: n,
         onOpenSpotifyAlbum: g
       }), (0, r.jsxs)("div", {
         className: O.detailsAndAvatarsContainer,
-        children: [(0, r.jsx)(v, {
+        children: [(0, r.jsx)(j, {
           activity: t,
           embeddedApp: n,
           onOpenSpotifyTrack: d
-        }), (0, r.jsx)(x, {
+        }), (0, r.jsx)(C, {
           activity: t,
           user: l,
           onOpenSpotifyArtist: f
-        }), (0, r.jsx)(C, {
+        }), (0, r.jsx)(E, {
           activity: t
         }), m.length > 0 && (0, r.jsx)(p.ZP, {
           className: O.usersSummary,
@@ -211,7 +211,7 @@ function S(e) {
           }
         })]
       })]
-    }), (0, r.jsx)(E, {
+    }), (0, r.jsx)(x, {
       activity: t
     })]
   }) : null

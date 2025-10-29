@@ -1,4 +1,4 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 775685, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -26,41 +26,41 @@ let x = Chunk647438.forwardRef(function(e, t) {
     var n, l;
     let {
       type: u,
-      animateRef: f
+      animateRef: h
     } = e, m = (0, s.e7)([p.Z], () => p.Z.shouldShowPopup() && p.Z.activeViewType() === u), {
       Component: b,
-      events: C,
+      events: _,
       play: x
     } = (0, g.Z)("ChannelAppLauncherButton");
-    r.useImperativeHandle(f, () => ({
+    i.useImperativeHandle(h, () => ({
       animate: () => {
-        C.onMouseEnter()
+        _.onMouseEnter()
       }
-    }), [C]);
-    let O = r.useCallback(() => {
-        m ? d.yT(h.ti.DISMISSED) : (d.__(h._b.TEXT, u), c.ux()), x()
+    }), [_]);
+    let O = i.useCallback(() => {
+        m ? d.yT(f.ti.DISMISSED) : (d.__(f._b.TEXT, u), c.ux()), x()
       }, [m, u, x]),
-      j = (0, i.jsx)(b, {
+      E = (0, r.jsx)(b, {
         size: "refresh_sm",
         color: "currentColor"
       });
-    return (0, i.jsx)("div", {
+    return (0, r.jsx)("div", {
       className: a()(v.buttonContainer, y.t4),
       ref: t,
-      children: (0, i.jsx)(o.P3F, (n = function(e) {
+      children: (0, r.jsx)(o.P3F, (n = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
-            i = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            r = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), i.forEach(function(t) {
-            var i;
-            i = n[t], t in e ? Object.defineProperty(e, t, {
-              value: i,
+          }))), r.forEach(function(t) {
+            var r;
+            r = n[t], t in e ? Object.defineProperty(e, t, {
+              value: r,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = i
+            }) : e[t] = r
           })
         }
         return e
@@ -70,7 +70,7 @@ let x = Chunk647438.forwardRef(function(e, t) {
           [v.buttonActive]: m
         }),
         onClick: O,
-        "aria-label": _.intl.string(_.t.erHFxI),
+        "aria-label": C.intl.string(C.t.erHFxI),
         "aria-expanded": m,
         "aria-haspopup": "dialog",
         focusProps: {
@@ -81,13 +81,13 @@ let x = Chunk647438.forwardRef(function(e, t) {
             right: false
           }
         }
-      }, C), l = l = {
-        children: j
+      }, _), l = l = {
+        children: E
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(n, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var i = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, i)
+          var r = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, r)
         }
         return n
       })(Object(l)).forEach(function(e) {
@@ -101,22 +101,22 @@ let x = Chunk647438.forwardRef(function(e, t) {
       type: n,
       animateRef: l,
       entryPointCommandButtonRef: a
-    } = e, o = r.useRef(null), c = (0, m.R)({
+    } = e, o = i.useRef(null), c = (0, m.R)({
       channel: t,
       chatInputType: n
-    }), d = (0, C.Z)({
+    }), d = (0, _.Z)({
       type: n
-    }), h = (0, u.Z)(t), g = (0, s.e7)([p.Z], () => p.Z.appDMChannelsWithFailedLoads().has(t.id)), {
+    }), f = (0, u.Z)(t), g = (0, s.e7)([p.Z], () => p.Z.appDMChannelsWithFailedLoads().has(t.id)), {
       visible: y
     } = (0, b.xL)();
-    return c ? (0, i.jsxs)("div", {
+    return c ? (0, r.jsxs)("div", {
       className: v.channelAppLauncher,
-      children: [(0, i.jsx)(x, {
+      children: [(0, r.jsx)(x, {
         type: n,
         ref: o,
         animateRef: l
-      }), d ? (0, i.jsx)(f.Z, {
-        positionTargetRef: h && !g && y ? a : o,
+      }), d ? (0, r.jsx)(h.Z, {
+        positionTargetRef: f && !g && y ? a : o,
         channel: t
       }) : null]
     }) : null

@@ -1,8 +1,8 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 5560, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   V: () => O,
-  Z: () => j
+  Z: () => E
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,7 +22,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk10401 = require("./10401.js"),
   Chunk131257 = require("./131257.js");
 
-function _(e, t, n) {
+function C(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -34,11 +34,11 @@ function _(e, t, n) {
 function v(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      i = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), i.forEach(function(t) {
-      _(e, t, n[t])
+    }))), r.forEach(function(t) {
+      C(e, t, n[t])
     })
   }
   return e
@@ -48,8 +48,8 @@ function x(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, i)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
     return n
   })(Object(t)).forEach(function(n) {
@@ -65,22 +65,22 @@ class O extends Chunk647438.PureComponent {
       tutorialId: t,
       origin: {
         x: n,
-        y: i
+        y: r
       },
-      targetWidth: r,
+      targetWidth: i,
       targetHeight: l,
       position: a,
       offset: o
     } = e;
-    (this.props.tutorialId !== t || this.props.origin.x !== n || this.props.origin.y !== i || this.props.targetWidth !== r || this.props.targetHeight !== l || this.props.position !== a || this.props.offset.x !== o.x || this.props.offset.y !== o.y) && this.updateCache()
+    (this.props.tutorialId !== t || this.props.origin.x !== n || this.props.origin.y !== r || this.props.targetWidth !== i || this.props.targetHeight !== l || this.props.position !== a || this.props.offset.x !== o.x || this.props.offset.y !== o.y) && this.updateCache()
   }
   updateCache() {
     var e, t;
     let n = this.contentRef.current;
     if (null == require || !(0, Chunk374470.kK)(require, HTMLElement)) return;
     let {
-      offsetWidth: i,
-      offsetHeight: r
+      offsetWidth: r,
+      offsetHeight: i
     } = require, l = {
       offsetX: (this.props.targetWidth - Chunk951288) / 2,
       offsetY: (this.props.targetHeight - Chunk647438) / 2
@@ -114,7 +114,7 @@ class O extends Chunk647438.PureComponent {
       tutorialId: e,
       autoInvert: t,
       focused: n,
-      origin: r
+      origin: i
     } = this.props, l = (0, Chunk21825.S)(module);
     if (null == Chunk120356) return null;
     let {
@@ -123,12 +123,12 @@ class O extends Chunk647438.PureComponent {
       isLongText: c,
       highPriority: u,
       spacing: p,
-      arrowAlignment: h = Chunk350707.cy.TOP,
-      popoutPosition: f
+      arrowAlignment: f = Chunk350707.cy.TOP,
+      popoutPosition: h
     } = Chunk120356, {
       offsetX: b,
-      offsetY: C
-    } = this.state, _ = {
+      offsetY: _
+    } = this.state, C = {
       left: null != Chunk232495 ? Chunk647438.x + Chunk232495 : true,
       top: null != Chunk10401 ? Chunk647438.y + Chunk10401 : true
     }, O = e => {
@@ -138,7 +138,7 @@ class O extends Chunk647438.PureComponent {
         [y.notAnimating]: !t,
         [y.highPriority]: u
       }
-    }, j = this.getTutorialPopoutText();
+    }, E = this.getTutorialPopoutText();
     return (0, Chunk951288.jsx)(Chunk350707.ZP, x(v({
       innerRef: this.contentRef,
       position: Chunk451478,
@@ -151,36 +151,36 @@ class O extends Chunk647438.PureComponent {
       arrowAlignment: Chunk819640,
       onSkipAll: this.handleSkipTips,
       onComplete: this.handleDismiss
-    }, j), {
+    }, E), {
       children: (e, t) => {
         let {
-          isShown: r
+          isShown: i
         } = t;
-        return (0, i.jsx)(d.P3F, x(v({}, e), {
+        return (0, r.jsx)(d.P3F, x(v({}, e), {
           className: y.indicator,
-          style: _,
+          style: C,
           innerRef: this.contentRef,
-          children: (0, i.jsxs)("div", {
-            className: a()(y.animationContainer, O(r)),
+          children: (0, r.jsxs)("div", {
+            className: a()(y.animationContainer, O(i)),
             children: [(e => {
               let t = n && !e;
-              returntrue !== u ? null : (0, i.jsxs)("div", {
-                children: [(0, i.jsx)("div", {
+              returntrue !== u ? null : (0, r.jsxs)("div", {
+                children: [(0, r.jsx)("div", {
                   className: a()(y.top, {
                     [y.animating]: t,
                     [y.notAnimating]: !t
                   })
-                }), (0, i.jsx)("div", {
+                }), (0, r.jsx)("div", {
                   className: a()(y.bottom, {
                     [y.animating]: t,
                     [y.notAnimating]: !t
                   })
                 })]
               })
-            })(r), (0, i.jsx)("div", {
-              className: a()(y.innerCircle, O(r))
-            }), (0, i.jsx)("div", {
-              className: a()(y.outerCircle, O(r))
+            })(i), (0, r.jsx)("div", {
+              className: a()(y.innerCircle, O(i))
+            }), (0, r.jsx)("div", {
+              className: a()(y.outerCircle, O(i))
             })]
           })
         }))
@@ -188,20 +188,20 @@ class O extends Chunk647438.PureComponent {
     }))
   }
   constructor(...e) {
-    super(...e), _(this, "state", {
+    super(...e), C(this, "state", {
       offsetX: null,
       offsetY: null
-    }), _(this, "contentRef", r.createRef()), _(this, "handleDismiss", () => {
+    }), C(this, "contentRef", i.createRef()), C(this, "handleDismiss", () => {
       p.Z.dismiss(this.props.tutorialId)
     })
   }
 }
-let j = 12633 == require.j ? function() {
+let E = 12633 == require.j ? function() {
   let {
     indicators: e,
     tutorialData: t,
     windowFocused: n,
-    shouldShowAny: r
+    shouldShowAny: i
   } = (0, Chunk442837.cj)([Chunk10401.Z, Chunk451478.Z, Chunk819640.Z], () => ({
     indicators: Chunk10401.Z.getIndicators(),
     tutorialData: Chunk10401.Z.getData(),
@@ -210,12 +210,12 @@ let j = 12633 == require.j ? function() {
   }));
   return Chunk647438 ? (0, Chunk951288.jsx)(Chunk951288.Fragment, {
     children: Object.entries(module).map(e => {
-      let [r, l] = e, a = t[r];
-      return s()(null != a, "Missing tutorial definition for ".concat(r)), (0, i.jsx)(O, v({
-        tutorialId: r,
+      let [i, l] = e, a = t[i];
+      return s()(null != a, "Missing tutorial definition for ".concat(i)), (0, r.jsx)(O, v({
+        tutorialId: i,
         tutorialDefinition: a,
         focused: n
-      }, l), r)
+      }, l), i)
     })
   }) : null
 } : null

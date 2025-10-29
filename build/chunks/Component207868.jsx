@@ -22,9 +22,9 @@ var Chunk951288 = require("./951288.js"),
 let y = Chunk647438.memo(function(e) {
   let {
     channel: t
-  } = e, n = (0, d.Z)(), l = (0, s.e7)([f.Z], () => f.Z.isInChannel(t.id)), y = (0, s.e7)([f.Z], () => !a().isEmpty(f.Z.getVoiceStatesForChannel(t.id))), x = (0, s.e7)([p.Z], () => p.Z.can(b.Plq.CONNECT, t)), {
+  } = e, n = (0, d.Z)(), l = (0, s.e7)([f.Z], () => f.Z.isInChannel(t.id)), y = (0, s.e7)([f.Z], () => !a().isEmpty(f.Z.getVoiceStatesForChannel(t.id))), x = (0, s.e7)([h.Z], () => h.Z.can(b.Plq.CONNECT, t)), {
     needSubscriptionToAccess: j
-  } = (0, u.Z)(t.id), v = (0, h.$R)(t), O = i.useCallback(() => {
+  } = (0, u.Z)(t.id), O = (0, p.$R)(t), v = i.useCallback(() => {
     c.Z.handleVoiceConnect({
       channel: t,
       connected: l,
@@ -32,16 +32,16 @@ let y = Chunk647438.memo(function(e) {
       locked: false
     })
   }, [t, l, j]);
-  return (i.useEffect(() => (g.S.subscribe(b.CkL.CALL_START, O), () => {
-    g.S.unsubscribe(b.CkL.CALL_START, O)
-  }), [O]), h.tM.useExperiment({
+  return (i.useEffect(() => (g.S.subscribe(b.CkL.CALL_START, v), () => {
+    g.S.unsubscribe(b.CkL.CALL_START, v)
+  }), [v]), p.tM.useExperiment({
     guildId: t.guild_id,
     location: "63250c_1"
   }, {
     autoTrackExposure: false
-  }).enabled && !n && !l && x && v && t.isVocalThread()) ? (0, r.jsx)(m.ZP.Icon, {
+  }).enabled && !n && !l && x && O && t.isVocalThread()) ? (0, r.jsx)(m.ZP.Icon, {
     icon: o.Csw,
-    onClick: O,
+    onClick: v,
     tooltip: y ? _.intl.string(_.t.fdEeb5) : _.intl.string(_.t.focH1t)
   }) : null
 })

@@ -1,4 +1,4 @@
-/** Chunk was on 17013 **/
+/** Chunk was on 34297 **/
 /** chunk id: 439826, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => B
@@ -33,7 +33,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk518388 = require("./518388.js");
 
-function R(e) {
+function A(e) {
   var t;
   let {
     quest: n,
@@ -68,9 +68,9 @@ function R(e) {
     style: C,
     children: (0, r.jsxs)("div", {
       ref: p,
-      className: A.hints,
+      className: R.hints,
       children: [(0, r.jsxs)("div", {
-        className: A.hintsContainer,
+        className: R.hintsContainer,
         children: [(0, r.jsx)(y, {
           size: "xs",
           color: O
@@ -133,9 +133,9 @@ function B(e) {
     })))
   }, [Q, m, U, L]);
   return (0, r.jsxs)("div", {
-    className: A.container,
+    className: R.container,
     children: [(0, r.jsx)("div", {
-      className: A.heroAssetWrapper,
+      className: R.heroAssetWrapper,
       children: (0, r.jsx)(v.Z, {
         quest: m,
         isInteracting: j,
@@ -144,25 +144,25 @@ function B(e) {
           width: 1320,
           height: 370
         },
-        containerClassName: A.heroAssetCont
+        containerClassName: R.heroAssetCont
       })
     }), (0, r.jsx)("div", {
-      className: o()(A.overlay, {
-        [A.darkThemeGradient]: M,
-        [A.lightThemeGradient]: !M
+      className: o()(R.overlay, {
+        [R.darkThemeGradient]: M,
+        [R.lightThemeGradient]: !M
       })
     }), (0, r.jsxs)("div", {
-      className: A.positionContentOverBackground,
+      className: R.positionContentOverBackground,
       children: [(0, r.jsxs)("div", {
-        className: A.contents,
+        className: R.contents,
         children: [(0, r.jsxs)("div", {
-          className: A.topRow,
+          className: R.topRow,
           children: [m.preview && (0, r.jsx)("div", {
-            className: A.pill,
+            className: R.pill,
             children: (0, r.jsx)(d.Text, {
               variant: "eyebrow",
               color: "always-white",
-              className: A.eyebrowText,
+              className: R.eyebrowText,
               children: N.intl.string(N.t.SKNnqq)
             })
           }), Q && (0, r.jsx)(l.u, {
@@ -170,12 +170,12 @@ function B(e) {
             asContainer: true,
             tag: "span",
             children: (0, r.jsx)(d.P3F, {
-              className: A.utilButtonWrapper,
+              className: R.utilButtonWrapper,
               "aria-label": N.intl.string(N.t.RscU7I),
               onClick: K,
               children: (0, r.jsx)(d.o1U, {
                 color: "currentColor",
-                className: A.utilButtonIcon
+                className: R.utilButtonIcon
               })
             })
           }), (0, r.jsx)(E.r, {
@@ -208,12 +208,12 @@ function B(e) {
                 }
                 return e
               }({}, e), n = n = {
-                className: A.utilButtonWrapper,
+                className: R.utilButtonWrapper,
                 "aria-label": N.intl.string(N.t.DEoVWZ),
                 children: (0, r.jsx)(d.xhG, {
                   size: "md",
                   color: "currentColor",
-                  className: A.utilButtonIcon
+                  className: R.utilButtonIcon
                 })
               }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
                 var n = Object.keys(e);
@@ -231,17 +231,17 @@ function B(e) {
           showPlaceholder: !k,
           width: 100,
           height: 30,
-          className: A.partnerBranding,
+          className: R.partnerBranding,
           children: (0, r.jsx)(C.ZP, {
-            className: A.partnerBranding,
-            logotypeClassName: A.partnerLogotypes,
+            className: R.partnerBranding,
+            logotypeClassName: R.partnerLogotypes,
             quest: m,
             separatorSpacing: C.US.MEDIUM,
             withGameTile: false,
             onLoadComplete: z
           })
         }), (0, r.jsxs)("div", {
-          className: A.bottomRow,
+          className: R.bottomRow,
           children: [(0, r.jsx)(d.Text, {
             variant: "text-sm/medium",
             color: M ? "text-muted" : "always-white",
@@ -256,7 +256,7 @@ function B(e) {
             })
           })]
         })]
-      }), (0, r.jsx)(R, {
+      }), (0, r.jsx)(A, {
         quest: m,
         errorHints: w,
         warningHints: B,

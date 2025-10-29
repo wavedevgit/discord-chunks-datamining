@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 56710 **/
 /** chunk id: 233657, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => _
@@ -60,8 +60,8 @@ function _(e) {
   } = (0, i.cj)([u.ZP], () => ({
     hasUnread: u.ZP.hasUnread(t.id, f.W.GUILD_EVENT),
     mentionCount: u.ZP.getMentionCount(t.id, f.W.GUILD_EVENT)
-  }), [t.id]), j = (0, i.e7)([d.ZP], () => d.ZP.isMuteScheduledEventsEnabled(t.id));
-  async function v() {
+  }), [t.id]), v = (0, i.e7)([d.ZP], () => d.ZP.isMuteScheduledEventsEnabled(t.id));
+  async function j() {
     await (0, o.ZDy)(async () => {
       let {
         default: e
@@ -71,9 +71,9 @@ function _(e) {
       }))
     }), (0, s.Q3)(l.z.GUILD_HEADER_EVENT_UPSELL)
   }
-  let x = (0, c.ZP)(t.id),
-    C = x.length > 0 ? h.intl.formatToPlainString(h.t.IBdqSu, {
-      number: x.length
+  let C = (0, c.ZP)(t.id),
+    E = C.length > 0 ? h.intl.formatToPlainString(h.t.IBdqSu, {
+      number: C.length
     }) : h.intl.string(h.t.tlopTM);
   return (0, r.jsx)(p.m, {
     id: "upcoming-events-".concat(t.id),
@@ -82,9 +82,9 @@ function _(e) {
       color: "currentColor",
       className: e
     }),
-    text: C,
+    text: E,
     selected: _,
-    onClick: v,
+    onClick: j,
     onContextMenu: e => {
       (0, a.jW)(e, async () => {
         let {
@@ -95,8 +95,8 @@ function _(e) {
         }))
       })
     },
-    showUnread: O && !j,
-    trailing: !j && y > 0 ? (0, r.jsx)(o.mAB, {
+    showUnread: O && !v,
+    trailing: !v && y > 0 ? (0, r.jsx)(o.mAB, {
       className: g.numberBadge,
       disableColor: true,
       count: y

@@ -1,4 +1,4 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 111248, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -18,7 +18,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk354459 = require("./354459.js"),
   Chunk330831 = require("./330831.js"),
   Chunk315091 = require("./315091.js");
-let C = "CameraPreviewPosition";
+let _ = "CameraPreviewPosition";
 
 function y(e) {
   let {
@@ -26,52 +26,52 @@ function y(e) {
     onContextMenuParticipant: n,
     height: l,
     channel: y,
-    participants: _,
+    participants: C,
     onSelectParticipant: v
   } = e, [x, O] = function() {
-    let [e, t] = r.useState(() => s.K.get(C, f.VD2.BOTTOM_RIGHT));
-    return [e, r.useCallback(e => {
-      s.K.set(C, e), t(e)
+    let [e, t] = i.useState(() => s.K.get(_, h.VD2.BOTTOM_RIGHT));
+    return [e, i.useCallback(e => {
+      s.K.set(_, e), t(e)
     }, [])]
-  }(), j = r.useRef(null), E = null == y.getGuildId() ? 70 : 50, S = (0, o.e7)([p.Z], () => p.Z.pipWidth(m.cL.CAMERA_PREVIEW)), P = _.length, I = S * P + 8 * (P - 1), Z = r.useMemo(() => ({
+  }(), E = i.useRef(null), j = null == y.getGuildId() ? 70 : 50, S = (0, o.e7)([p.Z], () => p.Z.pipWidth(m.cL.CAMERA_PREVIEW)), P = C.length, I = S * P + 8 * (P - 1), Z = i.useMemo(() => ({
     minWidth: m.Rv[m.cL.CAMERA_PREVIEW] * P + 8 * (P - 1),
     maxWidth: m.$i[m.cL.CAMERA_PREVIEW] * P + 8 * (P - 1)
   }), [P]);
-  r.useLayoutEffect(() => {
+  i.useLayoutEffect(() => {
     var e;
-    null == (e = j.current) || e.ensureIsInPosition()
-  }, [_.length]);
-  let T = r.useCallback(e => {
+    null == (e = E.current) || e.ensureIsInPosition()
+  }, [C.length]);
+  let T = i.useCallback(e => {
       let t = 0 === P ? e : (e - 8 * (P - 1)) / P;
       c.d7(t, m.cL.CAMERA_PREVIEW)
     }, [P]),
-    N = r.useCallback((e, t) => {
+    N = i.useCallback((e, t) => {
       O(t)
     }, [O]);
-  return (0, i.jsx)("div", {
+  return (0, r.jsx)("div", {
     className: g.container,
-    children: (0, i.jsx)(d._, {
+    children: (0, r.jsx)(d._, {
       position: x,
       id: 0,
       width: I,
-      ref: j,
+      ref: E,
       onMove: N,
       onResize: T,
       maxX: t,
       maxY: l,
-      edgeOffsetTop: E,
+      edgeOffsetTop: j,
       edgeOffsetBottom: 70,
       edgeOffsetLeft: 16,
       edgeOffsetRight: 16,
       resizeConfig: Z,
-      children: (0, i.jsx)("div", {
+      children: (0, r.jsx)("div", {
         className: g.tileContainer,
-        children: _.map(e => (0, i.jsx)(h.ZP, {
+        children: C.map(e => (0, r.jsx)(f.ZP, {
           participant: e,
           channel: y,
           onContextMenu: n,
           className: a()(g.tile, b.elevationHigh),
-          fit: h.BP.COVER,
+          fit: f.BP.COVER,
           inCall: true,
           popoutType: u.P.NO_POPOUT,
           width: 160,

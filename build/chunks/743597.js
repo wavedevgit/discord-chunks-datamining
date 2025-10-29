@@ -1,7 +1,7 @@
-/** Chunk was on 34271 **/
+/** Chunk was on 73726 **/
 /** chunk id: 743597, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => _
+  Z: () => h
 });
 var Chunk647438 = require("./647438.js"),
   Chunk392711 = require("./392711.js"),
@@ -31,7 +31,7 @@ function d(e) {
   return e
 }
 
-function f(e, t) {
+function p(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
@@ -43,54 +43,54 @@ function f(e, t) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let p = l().debounce(Chunk125268.BR, Chunk813900.Fq, {
+let f = l().debounce(Chunk125268.BR, Chunk813900.Fq, {
   maxWait: Chunk813900.Fq
 });
 
-function _(e, t, n) {
+function h(e, t, n) {
   let i = r.useRef((0, a.Z)()),
     l = r.useRef(new o.Xp),
-    _ = r.useCallback(r => {
-      r.lastUpdatedAt = Date.now(), (0, c.gr)(r, e, n), (0, c.BR)(t, n, r)
+    h = r.useCallback(r => {
+      r.lastUpdatedAt = Date.now(), (0, s.gr)(r, e, n), (0, s.BR)(t, n, r)
     }, [t, n, e]),
-    m = r.useCallback((r, o, p) => {
+    m = r.useCallback((r, o, f) => {
       i.current = (0, a.Z)();
-      let m = f(d({}, r), {
+      let m = p(d({}, r), {
         id: i.current,
         x: o,
-        y: p,
+        y: f,
         userId: e,
-        state: s.f.START,
+        state: c.f.START,
         lastUpdatedAt: Date.now()
       });
-      (0, c.BR)(t, n, m), (0, c.gr)(m, e, n), l.current.start(u.FO, () => _(m))
-    }, [e, t, n, _]),
+      (0, s.BR)(t, n, m), (0, s.gr)(m, e, n), l.current.start(u.FO, () => h(m))
+    }, [e, t, n, h]),
     g = r.useCallback((r, a, o) => {
-      let m = f(d({}, r), {
+      let m = p(d({}, r), {
         id: i.current,
         x: a,
         y: o,
         userId: e,
-        state: s.f.START,
+        state: c.f.START,
         lastUpdatedAt: Date.now()
       });
-      p(t, n, m), (0, c.gr)(m, e, n), l.current.start(u.FO, () => _(m))
-    }, [e, t, n, _]),
-    v = r.useCallback((r, a, o) => {
-      p.cancel(), (0, c.Df)(t, n, i.current), (0, c.gr)(f(d({}, r), {
+      f(t, n, m), (0, s.gr)(m, e, n), l.current.start(u.FO, () => h(m))
+    }, [e, t, n, h]),
+    b = r.useCallback((r, a, o) => {
+      f.cancel(), (0, s.Df)(t, n, i.current), (0, s.gr)(p(d({}, r), {
         id: i.current,
         x: a,
         y: o,
         userId: e,
-        state: s.f.STOP,
+        state: c.f.STOP,
         lastUpdatedAt: Date.now()
       }), e, n), l.current.stop()
     }, [t, n, e]),
-    b = r.useCallback((e, t, n) => g(e, t, n), [g]);
+    _ = r.useCallback((e, t, n) => g(e, t, n), [g]);
   return r.useMemo(() => ({
     handleMouseDown: m,
     handleMouseMove: g,
-    handleMouseUp: v,
-    handleMouseEnter: b
-  }), [m, b, g, v])
+    handleMouseUp: b,
+    handleMouseEnter: _
+  }), [m, _, g, b])
 }

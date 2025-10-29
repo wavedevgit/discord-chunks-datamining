@@ -1,7 +1,7 @@
 /** Chunk was on 91053 **/
 /** chunk id: 605953, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => p
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -15,7 +15,7 @@ var Chunk442837 = require("./442837.js"),
   Chunk814249 = require("./814249.js"),
   Chunk388032 = require("./388032.jsx");
 
-function p(e) {
+function h(e) {
   let {
     channel: t
   } = e, n = (0, i.e7)([s.Z], () => s.Z.shouldShowTopicsBar());
@@ -30,7 +30,7 @@ function p(e) {
         channel_type: t.type
       }), (0, a.e7)()
     },
-    tooltip: n ? h.intl.string(h.t.nGs3kO) : h.intl.string(h.t.bIm2sF),
+    tooltip: n ? p.intl.string(p.t.nGs3kO) : p.intl.string(p.t.bIm2sF),
     selected: n,
     "aria-expanded": n
   })

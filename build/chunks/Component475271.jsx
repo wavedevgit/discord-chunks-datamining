@@ -1,4 +1,4 @@
-/** Chunk was on 96861 **/
+/** Chunk was on 62006 **/
 /** chunk id: 475271, original params: e,t,n (module,exports,require) **/
 require.r(exports), require.d(exports, {
   default: () => c
@@ -59,9 +59,9 @@ let c = {
         sitekey: c,
         captchaService: u,
         captchaSessionId: d,
-        options: m
+        options: p
       } = e;
-    return new Promise((e, p) => {
+    return new Promise((e, m) => {
       (0, a.ZDy)(async () => {
         let {
           default: a
@@ -75,9 +75,9 @@ let c = {
           captchaService: u,
           sitekey: c,
           onReject: e => {
-            e === o.CaptchaError.CANCEL ? p(new o.CaptchaCancelError) : p(Error("cancel captcha"))
+            e === o.CaptchaError.CANCEL ? m(new o.CaptchaCancelError) : m(Error("cancel captcha"))
           }
-        }, t, m, n))
+        }, t, p, n))
       }, {
         Layer: i.ZP,
         modalKey: s.A

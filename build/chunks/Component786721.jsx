@@ -1,4 +1,4 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 786721, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -16,24 +16,24 @@ function u(e) {
   let {
     className: t,
     roleColor: n,
-    roleName: r,
+    roleName: i,
     hasRemoveIcon: u = false,
     onClick: d,
     disabled: p = false,
-    verified: h = false
+    verified: f = false
   } = e;
-  return (0, i.jsx)(a.zx, {
+  return (0, r.jsx)(a.zx, {
     className: l()(t, c.button),
     look: a.zx.Looks.BLANK,
     size: a.zx.Sizes.NONE,
     onClick: d,
     disabled: p,
-    children: (0, i.jsx)(s.Z, {
+    children: (0, r.jsx)(s.Z, {
       className: c.role,
       roleColor: n,
-      roleName: r,
-      verified: h,
-      children: u && (0, i.jsx)(o.Dio, {
+      roleName: i,
+      verified: f,
+      children: u && (0, r.jsx)(o.Dio, {
         size: "custom",
         color: "currentColor",
         height: 6,

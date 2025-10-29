@@ -1,4 +1,4 @@
-/** Chunk was on 34271 **/
+/** Chunk was on 73726 **/
 /** chunk id: 936847, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => u
@@ -10,7 +10,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk112843 = require("./112843.js"),
   Chunk524484 = require("./524484.js");
 
-function s(e) {
+function c(e) {
   let {
     callTileRef: t,
     isFiring: n
@@ -24,8 +24,8 @@ function s(e) {
 
 function u(e) {
   return (0, r.jsx)(l.Z, {
-    confettiLocation: c.Hn.CALL_TILE,
-    children: (0, r.jsx)(s, function(e) {
+    confettiLocation: s.Hn.CALL_TILE,
+    children: (0, r.jsx)(c, function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
           r = Object.keys(n);

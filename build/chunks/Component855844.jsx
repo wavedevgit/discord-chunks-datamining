@@ -1,7 +1,7 @@
-/** Chunk was on 43342 **/
+/** Chunk was on 52344 **/
 /** chunk id: 855844, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => E
+  Z: () => C
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -29,70 +29,70 @@ var Chunk990547 = require("./990547.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk895634 = require("./895634.js");
 
-function E(e) {
+function C(e) {
   let {
     appContext: t,
     onInteraction: n,
-    onSelect: E,
-    onClose: I,
-    maybeRenderPTTCheckbox: T = false,
-    renderDeafenCheckbox: S = false,
-    renderInputProfiles: N = false,
-    renderOutputDevices: Z = false,
-    renderOutputVolume: D = false,
-    renderInputDevices: k = false,
+    onSelect: C,
+    onClose: S,
+    maybeRenderPTTCheckbox: I = false,
+    renderDeafenCheckbox: N = false,
+    renderInputProfiles: T = false,
+    renderOutputDevices: D = false,
+    renderOutputVolume: k = false,
+    renderInputDevices: Z = false,
     renderInputVolume: M = false,
     maybeRenderInputMeter: A = false,
-    renderSettingsButton: R = false
+    renderSettingsButton: L = false
   } = e, {
-    analyticsLocations: L
+    analyticsLocations: R
   } = (0, u.ZP)();
   (0, d.Z)({
     type: i.ImpressionTypes.MENU,
     name: i.ImpressionNames.AUDIO_DEVICE_MENU,
     properties: {
-      location_stack: L
+      location_stack: R
     }
   });
   let V = (0, h.Z)(t),
     F = (0, p.M)({
-      deviceType: P.h7.AUDIO_INPUT,
-      analyticsLocations: L,
+      deviceType: _.h7.AUDIO_INPUT,
+      analyticsLocations: R,
       asSubmenu: true
     }),
     U = (0, p.M)({
-      deviceType: P.h7.AUDIO_OUTPUT,
-      analyticsLocations: L,
+      deviceType: _.h7.AUDIO_OUTPUT,
+      analyticsLocations: R,
       asSubmenu: true
     }),
-    Y = (0, o.e7)([g.Z], () => g.Z.getActiveInputProfile()),
-    H = (0, f.Z)(L),
-    z = (0, m.Z)(L),
-    B = (0, b.Z)(L),
-    q = l.Yn.DEFAULT,
-    W = g.Z.isSelfDeaf(q),
-    X = (0, o.e7)([g.Z], () => g.Z.getMode()),
-    G = X === x.pM4.VOICE_ACTIVITY ? x.pM4.PUSH_TO_TALK : x.pM4.VOICE_ACTIVITY,
-    K = (0, o.e7)([g.Z, y.ZP], () => {
+    Y = (0, o.e7)([v.Z], () => v.Z.getActiveInputProfile()),
+    H = (0, f.Z)(R),
+    z = (0, m.Z)(R),
+    B = (0, b.Z)(R),
+    G = l.Yn.DEFAULT,
+    W = v.Z.isSelfDeaf(G),
+    q = (0, o.e7)([v.Z], () => v.Z.getMode()),
+    X = q === x.pM4.VOICE_ACTIVITY ? x.pM4.PUSH_TO_TALK : x.pM4.VOICE_ACTIVITY,
+    K = (0, o.e7)([v.Z, g.ZP], () => {
       var e;
-      let t = (null == (e = g.Z.getModeOptions().shortcut) ? true : e.length) > 0,
-        n = null != y.ZP.getKeybindForAction(x.kg4.PUSH_TO_TALK, false, true),
-        r = null != y.ZP.getKeybindForAction(x.kg4.PUSH_TO_TALK_PRIORITY, false, true);
+      let t = (null == (e = v.Z.getModeOptions().shortcut) ? true : e.length) > 0,
+        n = null != g.ZP.getKeybindForAction(x.kg4.PUSH_TO_TALK, false, true),
+        r = null != g.ZP.getKeybindForAction(x.kg4.PUSH_TO_TALK_PRIORITY, false, true);
       return t || n || r
     }),
-    Q = (0, o.e7)([v.Z], () => null != v.Z.getChannelId());
+    Q = (0, o.e7)([y.Z], () => null != y.Z.getChannelId());
   return (0, r.jsx)(c.Z, {
     object: x.qAy.CONTEXT_MENU,
     children: (0, r.jsxs)(a.v2r, {
-      onSelect: E,
+      onSelect: C,
       onInteraction: n,
-      onClose: I,
+      onClose: S,
       navId: "audio-device-context",
       variant: "fixed",
-      "aria-label": w.intl.string(w.t.ZR1Ss6),
-      className: C.menu,
+      "aria-label": P.intl.string(P.t.ZR1Ss6),
+      className: w.menu,
       children: [(0, r.jsxs)(a.kSQ, {
-        children: [k && F, N && H, Z && U]
+        children: [Z && F, T && H, D && U]
       }), (0, r.jsxs)(a.kSQ, {
         children: [M && z, A && Q && (0, r.jsx)(a.II_, {
           id: "input-device-meter",
@@ -102,28 +102,28 @@ function E(e) {
               section: x.jXE.CONTEXT_MENU
             },
             meterOnly: true,
-            containerClassName: C.customMenuItem,
-            notchClassName: C.customNotches
+            containerClassName: w.customMenuItem,
+            notchClassName: w.customNotches
           })
-        }), D && B]
+        }), k && B]
       }), (0, r.jsxs)(a.kSQ, {
-        children: [T && j.isPlatformEmbedded && K ? (0, r.jsx)(a.S89, {
-          checked: X === x.pM4.PUSH_TO_TALK,
+        children: [I && j.isPlatformEmbedded && K ? (0, r.jsx)(a.S89, {
+          checked: q === x.pM4.PUSH_TO_TALK,
           id: "input-mode",
-          label: w.intl.string(w.t.Q8gkVL),
-          action: () => s.Z.setMode(G, true, true, {
-            analyticsLocations: L
+          label: P.intl.string(P.t.Q8gkVL),
+          action: () => s.Z.setMode(X, true, true, {
+            analyticsLocations: R
           }),
-          disabled: Y === _._.STUDIO
-        }) : null, S && (0, r.jsx)(a.S89, {
+          disabled: Y === E._.STUDIO
+        }) : null, N && (0, r.jsx)(a.S89, {
           id: "deafen",
-          label: w.intl.string(w.t.wjcRFX),
+          label: P.intl.string(P.t.wjcRFX),
           action: () => s.Z.toggleSelfDeaf({
-            context: q,
+            context: G,
             location: "AudioDeviceMenu"
           }),
           checked: W
-        }, "self-deafen"), R && V]
+        }, "self-deafen"), L && V]
       })]
     })
   })

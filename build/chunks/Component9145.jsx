@@ -81,7 +81,7 @@ function Y(e) {
     u.ZP.updatedUnsyncedSettings({
       activityPanelHeight: e
     })
-  }, []), ed = i.useRef(null), [eu, eh] = i.useState({
+  }, []), ed = i.useRef(null), [eu, ep] = i.useState({
     width: 0,
     height: 0
   });
@@ -89,24 +89,24 @@ function Y(e) {
     if (null == ed.current) return;
     let e = new ResizeObserver(() => {
       var e, t, n, r;
-      eh({
+      ep({
         width: null != (n = null == (e = ed.current) ? true : e.clientWidth) ? n : 0,
         height: null != (r = null == (t = ed.current) ? true : t.clientHeight) ? r : 0
       })
     });
     return e.observe(ed.current), () => e.disconnect()
   }, []);
-  let ep = eu.width / Math.max(eu.height, 1) < G.I0,
+  let eh = eu.width / Math.max(eu.height, 1) < G.I0,
     ef = 0,
     eg = 0,
     em = (0, T.Z)(null == X ? true : X.id);
   if (!em) {
     let e = eu.width,
       t = eu.height;
-    ep ? ((t = eu.width / G.I0) > eu.height && (e = (t = eu.height) * G.I0), eg = (eu.height - t) / 2) : ((e = Math.min(eu.height * G.I0)) > eu.width && (t = (e = eu.width) / G.I0), ef = (eu.width - e) / 2)
+    eh ? ((t = eu.width / G.I0) > eu.height && (e = (t = eu.height) * G.I0), eg = (eu.height - t) / 2) : ((e = Math.min(eu.height * G.I0)) > eu.width && (t = (e = eu.width) / G.I0), ef = (eu.width - e) / 2)
   }
   let eb = en.get(null != (Y = null == X ? true : X.id) ? Y : ""),
-    e_ = (0, s.e7)([v.Z], () => v.Z.getChannelId()),
+    e_ = (0, s.e7)([O.Z], () => O.Z.getChannelId()),
     ey = (0, s.Wu)([j.ZP], () => {
       var e;
       return null == ee ? [] : Array.from(null != (e = null == eb ? true : eb.embeddedActivity.userIds) ? e : []).map(e => j.ZP.getMember(ee.guild_id, e))
@@ -118,7 +118,7 @@ function Y(e) {
       }), e
     }, [ey]),
     ej = function(e, t, n) {
-      let r = (0, h.Z)(e),
+      let r = (0, p.Z)(e),
         l = e !== r,
         [a, s] = i.useState(false);
       i.useEffect(() => {
@@ -126,7 +126,7 @@ function Y(e) {
         let e = setTimeout(() => s(false), 50);
         return () => clearTimeout(e)
       }, [e]);
-      let o = !p.Z.useReducedMotion && (l || a);
+      let o = !h.Z.useReducedMotion && (l || a);
       return i.useMemo(() => {
         var r, i;
         let l = o ? {
@@ -150,14 +150,14 @@ function Y(e) {
         }), r) : l
       }, [o, e, n, t])
     }(ea, es, q),
-    ev = (0, k.y)(),
+    eO = (0, k.y)(),
     {
-      data: eO
+      data: ev
     } = (0, R.K)(Z.B);
   if (null == X) return null;
-  let eC = null == eO ? true : eO.isFortniteActivity(X.id),
+  let eC = null == ev ? true : ev.isFortniteActivity(X.id),
     eI = [];
-  null != eb && (eI = Array.from(eb.embeddedActivity.userIds).map(e => O.default.getUser(e)).filter(e => null != e && true !== e));
+  null != eb && (eI = Array.from(eb.embeddedActivity.userIds).map(e => v.default.getUser(e)).filter(e => null != e && true !== e));
   let eS = e => {
     var t;
     if (null == e || true === e || e === D.ag) return null;
@@ -251,7 +251,7 @@ function Y(e) {
               text: F.intl.string(F.t["36gY4e"]),
               variant: "color-mix"
             })
-          }), ev ? (0, r.jsx)(y.Z, {
+          }), eO ? (0, r.jsx)(y.Z, {
             popoutOpen: false,
             onOpenPopout: () => {
               (0, f.yw)(H.rMx.ACTIVITY_POPOUT_POP_OUT_BUTTON_CLICKED), (0, L.Z)({

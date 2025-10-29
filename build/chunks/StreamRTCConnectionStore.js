@@ -3,7 +3,7 @@
 "use strict";
 let r;
 require.d(exports, {
-  Z: () => J
+  Z: () => $
 }), require("./388685.js");
 var i, Chunk512722 = require("./512722.js"),
   o = require.n(Chunk512722),
@@ -140,7 +140,7 @@ function G(e) {
     let e = new _.A({
       streamRegion: i,
       streamApplication: A[t],
-      streamSourceType: X(N[t]),
+      streamSourceType: Q(N[t]),
       actionContext: null == (l = S[t]) ? true : l.appContext,
       numViewers: null != a ? a.length : 0,
       goLiveModalDurationMs: R[t],
@@ -248,6 +248,16 @@ function q(e) {
 }
 
 function X(e) {
+  let {
+    streamId: t,
+    zoom: n
+  } = e;
+  l().forEach(D, e => {
+    null == e || e.setVideoZoom(t, n)
+  })
+}
+
+function Q(e) {
   var t, n, r;
   if (null == e) return "unknown";
   if (g.isPlatformEmbedded || (null == (t = platform) ? true : t.name) === "Chrome") {
@@ -260,7 +270,7 @@ function X(e) {
   else if ((null == (r = platform) ? true : r.name) === "Safari") return "window";
   return "unknown"
 }
-class Q extends(i = Chunk442837.ZP.Store) {
+class J extends(i = Chunk442837.ZP.Store) {
   initialize() {
     this.waitFor(Chunk314897.default, Chunk131951.Z, Chunk19780.Z, Chunk594190.ZP)
   }
@@ -331,8 +341,8 @@ class Q extends(i = Chunk442837.ZP.Store) {
     return null == r ? true : r.get(t)
   }
 }
-T(Q, "displayName", "StreamRTCConnectionStore");
-let J = new Q(Chunk570140.Z, !Chunk131951.Z.isSupported() || __OVERLAY__ ? {} : {
+T(J, "displayName", "StreamRTCConnectionStore");
+let $ = new J(Chunk570140.Z, !Chunk131951.Z.isSupported() || __OVERLAY__ ? {} : {
   CONNECTION_OPEN: M,
   CONNECTION_CLOSED: k,
   RTC_CONNECTION_STATE: Y,
@@ -350,5 +360,6 @@ let J = new Q(Chunk570140.Z, !Chunk131951.Z.isSupported() || __OVERLAY__ ? {} : 
   MEDIA_ENGINE_CONNECTION_STATS: Z,
   STREAM_LAYOUT_UPDATE: H,
   RTC_DEBUG_SET_SIMULCAST_OVERRIDE: z,
-  VIDEO_SIZE_UPDATE: q
+  VIDEO_SIZE_UPDATE: q,
+  VIDEO_ZOOM_UPDATE: X
 })

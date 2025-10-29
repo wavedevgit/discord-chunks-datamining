@@ -1,4 +1,4 @@
-/** Chunk was on 34271 **/
+/** Chunk was on 73726 **/
 /** chunk id: 582019, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   j: () => o
@@ -21,10 +21,10 @@ let a = {
       o = Chunk647438.useCallback(() => {
         null != module.current && module.current.play("all")
       }, []),
-      c = Chunk647438.useCallback(() => {
+      s = Chunk647438.useCallback(() => {
         null != module.current && module.current.stopIfPlaying("all")
       }, []),
-      s = Chunk647438.useCallback(t => {
+      c = Chunk647438.useCallback(t => {
         var i, o;
         return (0, r.jsx)(l.L, (i = function(e) {
           for (var t = 1; t < arguments.length; t++) {
@@ -62,7 +62,7 @@ let a = {
       events: {
         onClick: exports,
         onMouseEnter: o,
-        onMouseLeave: c
+        onMouseLeave: s
       },
       play: exports,
       getDuration: Chunk647438.useCallback(() => {
@@ -73,6 +73,6 @@ let a = {
         var t, n;
         return null != (n = null == (t = module.current) ? true : exports.getCurrentFrame()) ? require : null
       }, []),
-      Component: s
+      Component: c
     }
   }

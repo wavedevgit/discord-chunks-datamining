@@ -1,7 +1,7 @@
 /** Chunk was on 93886 **/
 /** chunk id: 562511, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  A2: () => v,
+  A2: () => g,
   S3: () => f
 });
 var Chunk647438 = require("./647438.js"),
@@ -51,11 +51,11 @@ function f(e) {
         })
       }, [e, u, t, n]), null == u || (null == s ? true : s.identityGuildId) === e && (null == s ? true : s.tag) === u) returnfalse;
     let f = (null == s ? true : s.identityGuildId) === e && (null == s ? true : s.tag) === null,
-      v = null === n || (null == n ? true : n.tag) === u;
-    return f && !v && t
+      g = null === n || (null == n ? true : n.tag) === u;
+    return f && !g && t
   }(e) ? t ? "available" : null : "changed"
 }
 
-function v(e) {
+function g(e) {
   return null !== f(e)
 }

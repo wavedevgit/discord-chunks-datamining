@@ -1,11 +1,11 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 534091, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  W: () => i,
-  p: () => r
+  W: () => r,
+  p: () => i
 });
-let i = "chat-messages";
+let r = "chat-messages";
 
-function r(e, t) {
-  return "".concat(i, "-").concat(e, "-").concat(t)
+function i(e, t) {
+  return "".concat(r, "-").concat(e, "-").concat(t)
 }

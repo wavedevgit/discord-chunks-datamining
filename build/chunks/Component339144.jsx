@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 56710 **/
 /** chunk id: 339144, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   J: () => Z,
@@ -70,11 +70,11 @@ let Z = Chunk647438.memo(function(e) {
       Y = N(F, B, G),
       q = i.useCallback(() => {
         var e;
-        o()(null != B, "Received null activity"), x.default.track(S.rMx.ACTIVITY_PANEL_BUTTON_CLICKED, {
+        o()(null != B, "Received null activity"), C.default.track(S.rMx.ACTIVITY_PANEL_BUTTON_CLICKED, {
           action_type: "invite_to_game",
           game_id: null != (e = null == k ? true : k.id) ? e : null,
           application_id: B.application_id
-        }), (0, m.v)(K, m.d.INVITE), x.default.track(S.rMx.OPEN_MODAL, {
+        }), (0, m.v)(K, m.d.INVITE), C.default.track(S.rMx.OPEN_MODAL, {
           type: "Send Join Invite",
           application_id: B.application_id,
           location: V.location
@@ -96,7 +96,7 @@ let Z = Chunk647438.memo(function(e) {
         (0, y.Z)(w)
       }, [w]),
       $ = i.useCallback(() => {
-        let e = null != L && (0, j.vd)(L.type) ? L : null,
+        let e = null != L && (0, v.vd)(L.type) ? L : null,
           t = null != e ? e.getGuildId() : R;
         (0, c.ZDy)(async () => {
           let {
@@ -123,7 +123,7 @@ let Z = Chunk647438.memo(function(e) {
               return e
             }({}, n), l = l = {
               sourcePID: null == k ? true : k.pid,
-              selectSource: !!W && null != v.Z.getVoiceChannelId(),
+              selectSource: !!W && null != j.Z.getVoiceChannelId(),
               guildId: t,
               analyticsLocation: S.Sbl.ACTIVITY_PANEL
             }, Object.getOwnPropertyDescriptors ? Object.defineProperties(i, Object.getOwnPropertyDescriptors(l)) : (function(e, t) {
@@ -147,7 +147,7 @@ let Z = Chunk647438.memo(function(e) {
       } = (0, g.F)(F, {
         allowedFlows: [g.r.RPC, g.r.WEB]
       }),
-      ei = C.Z.useConfig({
+      ei = E.Z.useConfig({
         location: "ActivityActions"
       }).enabled,
       el = i.useRef(null),
@@ -163,27 +163,27 @@ let Z = Chunk647438.memo(function(e) {
         $(), (0, m.v)(K, m.d.STREAM, true)
       }, p = c.hGI, Z = null != k ? I.intl.formatToPlainString(I.t.AB5gTy, {
         game: k.name
-      }) : I.intl.string(I.t.FeUKeA)) : (l = true, a = null, p = c.hGI, Z = null != L && (0, j.vd)(L.type) ? I.intl.string(I.t.uQn9B8) : null != R ? I.intl.string(I.t.fBXEoJ) : I.intl.string(I.t.n3feNG)), (0, r.jsx)("div", {
+      }) : I.intl.string(I.t.FeUKeA)) : (l = true, a = null, p = c.hGI, Z = null != L && (0, v.vd)(L.type) ? I.intl.string(I.t.uQn9B8) : null != R ? I.intl.string(I.t.fBXEoJ) : I.intl.string(I.t.n3feNG)), (0, r.jsx)("div", {
         className: P.panelButtonContainer,
-        children: (0, r.jsx)(E.Z, {
+        children: (0, r.jsx)(x.Z, {
           tooltipText: Z,
           disabled: l,
           onClick: a,
           icon: p
         })
       })) : null,
-      ec = Y && null == G ? (0, r.jsx)(E.Z, {
+      ec = Y && null == G ? (0, r.jsx)(x.Z, {
         ref: H,
         tooltipText: I.intl.string(I.t["hC/Zey"]),
         onClick: q,
         icon: c.ejJ
       }) : null,
-      eu = null == G ? null : (0, r.jsx)(E.Z, {
+      eu = null == G ? null : (0, r.jsx)(x.Z, {
         tooltipText: I.intl.string(I.t["R/FK4A"]),
         onClick: X(G.applicationId, G.location),
         icon: c.PBZ
       }),
-      ed = null == U ? null : (0, r.jsx)(E.Z, {
+      ed = null == U ? null : (0, r.jsx)(x.Z, {
         tooltipText: I.intl.string(I.t["R/FK4A"]),
         onClick: Q(U.applicationId),
         icon: c.PBZ
@@ -224,11 +224,11 @@ let Z = Chunk647438.memo(function(e) {
       startAuthorization: i,
       connectionApp: l
     } = e;
-    return (0, r.jsx)(E.Z, {
+    return (0, r.jsx)(x.Z, {
       ref: t,
       onClick: () => {
         var e, t;
-        x.default.track(S.rMx.ACTIVITY_PANEL_BUTTON_CLICKED, {
+        C.default.track(S.rMx.ACTIVITY_PANEL_BUTTON_CLICKED, {
           action_type: "link_account",
           game_id: null != (e = null == n ? true : n.id) ? e : null,
           application_id: null != (t = null == l ? true : l.id) ? t : null

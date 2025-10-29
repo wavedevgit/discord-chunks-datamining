@@ -1,4 +1,4 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 260300, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => a
@@ -8,23 +8,23 @@ var Chunk544891 = require("./544891.js"),
   Chunk981631 = require("./981631.js");
 let a = {
   show(e, t) {
-    r.Z.wait(() => r.Z.dispatch({
+    i.Z.wait(() => i.Z.dispatch({
       type: "TUTORIAL_INDICATOR_SHOW",
       tutorialId: e,
       renderData: t
     }))
   },
   hide(e) {
-    r.Z.wait(() => r.Z.dispatch({
+    i.Z.wait(() => i.Z.dispatch({
       type: "TUTORIAL_INDICATOR_HIDE",
       tutorialId: e
     }))
   },
   dismiss(e) {
-    r.Z.wait(() => r.Z.dispatch({
+    i.Z.wait(() => i.Z.dispatch({
       type: "TUTORIAL_INDICATOR_DISMISS",
       tutorialId: e
-    })), i.tn.put({
+    })), r.tn.put({
       url: l.ANM.TUTORIAL_INDICATOR(e),
       oldFormErrors: true,
       rejectWithError: true

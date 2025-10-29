@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 56710 **/
 /** chunk id: 179809, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => Z
@@ -78,7 +78,7 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
       X(e)
     }, []), en = i.useCallback(e => {
       ("ArrowRight" === e.key && !s || "ArrowLeft" === e.key && s) && M()
-    }, [M, s]), er = null != z && "" !== z ? z : null != w && "" !== w ? w : E.intl.string(E.t.xV9hVh), ei = (0, c.Ie)("".concat(H)), el = "folder-items-".concat(H), eo = function(e) {
+    }, [M, s]), er = null != z && "" !== z ? z : null != w && "" !== w ? w : x.intl.string(x.t.xV9hVh), ei = (0, c.Ie)("".concat(H)), el = "folder-items-".concat(H), eo = function(e) {
       let t = (0, p.dQu)(p.TVs.modules.guildbar.FOLDER_SIZE),
         n = (0, p.dQu)(p.TVs.modules.guildbar.AVATAR_SIZE),
         r = (0, p.dQu)(p.TVs.space.SPACE_XS);
@@ -96,14 +96,14 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
       config: {
         duration: P
       }
-    }), es = i.useCallback(e => null == n ? true : n(H, e), [n, H]), ec = (0, r.jsxs)(v.H, {
+    }), es = i.useCallback(e => null == n ? true : n(H, e), [n, H]), ec = (0, r.jsxs)(j.H, {
       children: [(0, r.jsx)(_.Z, {
         disabled: $ || s,
         hovered: K,
         selected: l,
         unread: T,
         className: I.pill
-      }), (0, r.jsx)(x.Z, {
+      }), (0, r.jsx)(C.Z, {
         text: er,
         disabled: R,
         selected: l,
@@ -117,7 +117,7 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
             [I.wobble]: !$ && q && !s
           }),
           "data-dnd-name": er,
-          children: $ ? (0, r.jsx)(j.Z, {
+          children: $ ? (0, r.jsx)(v.Z, {
             isFolder: true
           }) : (0, r.jsx)(O.Z, {
             folderNode: t,
@@ -143,7 +143,7 @@ let P = (0, Chunk624138.Mg)(Chunk477690.Z.FOLDER_ITEM_ANIMATION_DURATION),
         targetNode: t,
         onDragOverChanged: et
       }) : null]
-    }), eu = null != t.color ? t.color : C.Wyy, ed = eu === C.Wyy ? true : (0, u.Rf)(eu);
+    }), eu = null != t.color ? t.color : E.Wyy, ed = eu === E.Wyy ? true : (0, u.Rf)(eu);
     return (0, r.jsxs)("div", {
       ref: es,
       className: o()(S.folderGroup, {

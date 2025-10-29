@@ -1,4 +1,4 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 145010, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -19,25 +19,25 @@ var Chunk951288 = require("./951288.js"),
 function m(e) {
   let {
     channel: t
-  } = e, n = (0, l.e7)([s.Z], () => s.Z.getDrawMode()), m = (null == n ? true : n.type) === c.W.EMOJI_HOSE, g = r.useRef(null), b = (e, t) => {
+  } = e, n = (0, l.e7)([s.Z], () => s.Z.getDrawMode()), m = (null == n ? true : n.type) === c.W.EMOJI_HOSE, g = i.useRef(null), b = (e, t) => {
     null != e ? (0, o.Bo)({
       type: c.W.EMOJI_HOSE,
       emojiName: e.name,
       emojiId: e.id
     }) : m && (0, o.Bo)(null), null == t || t()
   };
-  return (0, i.jsx)(h.Z, {
+  return (0, r.jsx)(f.Z, {
     renderPopout: e => {
       let {
         closePopout: n,
-        onFocus: r
+        onFocus: i
       } = e;
-      return (0, i.jsx)(u.Z, {
-        children: (0, i.jsx)(p.Z, {
-          title: f.intl.string(f.t.XYLOyF),
+      return (0, r.jsx)(u.Z, {
+        children: (0, r.jsx)(p.Z, {
+          title: h.intl.string(h.t.XYLOyF),
           channel: t,
           closePopout: n,
-          onFocus: r,
+          onFocus: i,
           onSelectEmoji: e => b(e, n)
         })
       })
@@ -45,20 +45,20 @@ function m(e) {
     popoutTargetRef: g,
     children: e => {
       var t, n;
-      return (0, i.jsx)(d.Z, (t = function(e) {
+      return (0, r.jsx)(d.Z, (t = function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
-            i = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            r = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), i.forEach(function(t) {
-            var i;
-            i = n[t], t in e ? Object.defineProperty(e, t, {
-              value: i,
+          }))), r.forEach(function(t) {
+            var r;
+            r = n[t], t in e ? Object.defineProperty(e, t, {
+              value: r,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = i
+            }) : e[t] = r
           })
         }
         return e
@@ -72,8 +72,8 @@ function m(e) {
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
         if (Object.getOwnPropertySymbols) {
-          var i = Object.getOwnPropertySymbols(e);
-          n.push.apply(n, i)
+          var r = Object.getOwnPropertySymbols(e);
+          n.push.apply(n, r)
         }
         return n
       })(Object(n)).forEach(function(e) {

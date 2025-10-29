@@ -1,4 +1,4 @@
-/** Chunk was on 34271 **/
+/** Chunk was on 73726 **/
 /** chunk id: 655687, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => a
@@ -12,7 +12,7 @@ function a(e) {
     channel: t,
     isReadonly: n = false,
     isCreatingThread: a = false
-  } = e, o = (0, r.ZP)(t, true), c = (0, r.ZP)(t, false);
+  } = e, o = (0, r.ZP)(t, true), s = (0, r.ZP)(t, false);
   return null == t || null == o ? {
     placeholder: l.intl.string(l.t.MKDeyL),
     accessibilityLabel: l.intl.string(l.t.MKDeyL)
@@ -27,28 +27,28 @@ function a(e) {
       channel: o
     }),
     accessibilityLabel: l.intl.formatToPlainString(l.t.KffKoR, {
-      channel: c
+      channel: s
     })
   } : i.TPd.THREADS.has(t.type) ? {
     placeholder: l.intl.formatToPlainString(l.t["8lzR/R"], {
       channel: o
     }),
     accessibilityLabel: l.intl.formatToPlainString(l.t.UZIMWS, {
-      channel: c
+      channel: s
     })
   } : t.type === i.d4z.DM ? {
     placeholder: l.intl.formatToPlainString(l.t["4c+CAx"], {
       channel: o
     }),
     accessibilityLabel: l.intl.formatToPlainString(l.t.fqOxbV, {
-      channel: c
+      channel: s
     })
   } : {
     placeholder: l.intl.formatToPlainString(l.t["8lzR/R"], {
       channel: o
     }),
     accessibilityLabel: l.intl.formatToPlainString(l.t.ih7ZSA, {
-      channel: c
+      channel: s
     })
   }
 }

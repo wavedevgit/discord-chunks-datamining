@@ -1,7 +1,7 @@
-/** Chunk was on 34271 **/
+/** Chunk was on 73726 **/
 /** chunk id: 563218, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => v
+  Z: () => b
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -22,43 +22,43 @@ let g = (e, t) => {
   })
 };
 
-function v(e) {
+function b(e) {
   let t, {
       embedId: n,
       className: a,
       style: o
     } = e,
-    v = (0, l.e7)([c.Z], () => c.Z.getWindow(m.KJ3.CHANNEL_CALL_POPOUT)),
-    b = (0, p.Z)(),
-    E = (0, l.e7)([u.ZP], () => u.ZP.getActivityPanelMode());
-  if (null == b || (0, f.Z)((0, d.p)(b.location)) || E !== _.Ez.PANEL) {
-    var h;
-    t = null != (h = null == v ? true : v.window) ? h : window
+    b = (0, l.e7)([s.Z], () => s.Z.getWindow(m.KJ3.CHANNEL_CALL_POPOUT)),
+    _ = (0, f.Z)(),
+    y = (0, l.e7)([u.ZP], () => u.ZP.getActivityPanelMode());
+  if (null == _ || (0, p.Z)((0, d.p)(_.location)) || y !== h.Ez.PANEL) {
+    var C;
+    t = null != (C = null == b ? true : b.window) ? C : window
   } else t = window;
-  let S = i.useRef(null),
-    y = i.useMemo(() => {
+  let v = i.useRef(null),
+    x = i.useMemo(() => {
       let e = null;
       return () => {
         null == e && (e = t.requestAnimationFrame(() => {
           var t, r;
-          g(n, null != (r = null == (t = S.current) ? true : t.getBoundingClientRect()) ? r : null), e = null
+          g(n, null != (r = null == (t = v.current) ? true : t.getBoundingClientRect()) ? r : null), e = null
         }))
       }
     }, [n, t]);
-  return i.useEffect(() => (t.addEventListener("resize", y), s.S.subscribe(m.CkL.REMEASURE_TARGET, y), () => {
-    t.removeEventListener("resize", y), s.S.unsubscribe(m.CkL.REMEASURE_TARGET, y)
-  }), [y, t]), i.useLayoutEffect(() => {
-    let e = S.current;
+  return i.useEffect(() => (t.addEventListener("resize", x), c.S.subscribe(m.CkL.REMEASURE_TARGET, x), () => {
+    t.removeEventListener("resize", x), c.S.unsubscribe(m.CkL.REMEASURE_TARGET, x)
+  }), [x, t]), i.useLayoutEffect(() => {
+    let e = v.current;
     if (null == e) return;
     let t = e.ownerDocument.defaultView;
     if (null == t) return;
-    y();
-    let r = new t.ResizeObserver(y);
+    x();
+    let r = new t.ResizeObserver(x);
     return r.observe(e), () => {
       r.disconnect(), g(n, null)
     }
-  }, [n, y]), (0, r.jsx)("div", {
-    ref: S,
+  }, [n, x]), (0, r.jsx)("div", {
+    ref: v,
     style: o,
     className: a
   })

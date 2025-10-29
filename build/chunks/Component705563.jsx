@@ -1,4 +1,4 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 705563, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -26,13 +26,13 @@ function y(e) {
     channelId: t,
     showProfile: n = false,
     showTrailingDivider: y = false
-  } = e, _ = p.default.cast(t), {
+  } = e, C = p.default.cast(t), {
     joinRequest: v,
     isModmin: x,
     guildId: O,
-    maxMembers: j
-  } = (0, r.cj)([h.Z, u.Z, d.Z], () => {
-    let e = h.Z.getRequest(_),
+    maxMembers: E
+  } = (0, i.cj)([f.Z, u.Z, d.Z], () => {
+    let e = f.Z.getRequest(C),
       t = u.Z.getGuild(null == e ? true : e.guildId);
     return {
       joinRequest: e,
@@ -40,17 +40,17 @@ function y(e) {
       guildId: null == t ? true : t.id,
       maxMembers: null == t ? true : t.maxMembers
     }
-  }), E = (0, r.e7)([c.Z], () => null != O ? c.Z.getMemberCount(O) : 0), S = null != j && (null != E ? E : 0) >= j, {
+  }), j = (0, i.e7)([c.Z], () => null != O ? c.Z.getMemberCount(O) : 0), S = null != E && (null != j ? j : 0) >= E, {
     approveRequest: P,
     rejectRequest: I,
     submitting: Z
   } = (0, m.s)(null == v ? true : v.guildId, null == v ? true : v.userId, null == v ? true : v.joinRequestId);
-  return null != v && v.applicationStatus === f.wB.SUBMITTED && x ? (0, i.jsxs)("div", {
-    className: C.buttons,
-    children: [(0, i.jsx)(l.u, {
+  return null != v && v.applicationStatus === h.wB.SUBMITTED && x ? (0, r.jsxs)("div", {
+    className: _.buttons,
+    children: [(0, r.jsx)(l.u, {
       text: b.intl.string(b.t.cdPGbE),
       shouldShow: S,
-      children: (0, i.jsx)(a.Button, {
+      children: (0, r.jsx)(a.Button, {
         variant: "active",
         size: "sm",
         text: b.intl.string(b.t.BzjDQJ),
@@ -58,13 +58,13 @@ function y(e) {
         onClick: P,
         disabled: S
       })
-    }), (0, i.jsx)(a.Button, {
+    }), (0, r.jsx)(a.Button, {
       variant: "critical-primary",
       size: "sm",
       text: b.intl.string(b.t.hDtbsz),
       onClick: I,
-      disabled: Z || v.applicationStatus !== f.wB.SUBMITTED
-    }), n && (0, i.jsx)(a.Button, {
+      disabled: Z || v.applicationStatus !== h.wB.SUBMITTED
+    }), n && (0, r.jsx)(a.Button, {
       onClick: () => {
         (0, s.openUserProfileModal)({
           userId: v.userId,
@@ -74,6 +74,6 @@ function y(e) {
       variant: "secondary",
       size: "sm",
       text: b.intl.string(b.t.iXAna6)
-    }), y && (0, i.jsx)(o.ZP.Divider, {})]
+    }), y && (0, r.jsx)(o.ZP.Divider, {})]
   }) : null
 }

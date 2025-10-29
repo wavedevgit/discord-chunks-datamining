@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 56710 **/
 /** chunk id: 82409, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => B
@@ -77,9 +77,9 @@ function U(e) {
   var t, n;
   let {
     includePanelSpacing: l
-  } = e, a = (0, C.fJ)(), {
+  } = e, a = (0, E.fJ)(), {
     selectedFilter: f
-  } = (0, E.Z)(), P = (0, s.e7)([S.Z], () => S.Z.oldestDisplayedMessageId), N = (0, s.Wu)([S.Z], () => S.Z.getInboxMessages()), Z = (0, s.Wu)([y.ZP, _.Z, S.Z], () => N.filter(e => !(0, I.YH)({
+  } = (0, x.Z)(), P = (0, s.e7)([S.Z], () => S.Z.oldestDisplayedMessageId), N = (0, s.Wu)([S.Z], () => S.Z.getInboxMessages()), Z = (0, s.Wu)([y.ZP, _.Z, S.Z], () => N.filter(e => !(0, I.YH)({
     messageId: e.id,
     channelId: e.channelId,
     guildId: e.guildId,
@@ -92,7 +92,7 @@ function U(e) {
     ReadStateStore_: y.ZP,
     GuildStore_: _.Z
   }) || (0, I.Tj)(e, S.Z.selectedItemInfo))), U = i.useCallback(e => {
-    f !== A.V5.BOOKMARKS && x.Z.loadMoreInbox({
+    f !== A.V5.BOOKMARKS && C.Z.loadMoreInbox({
       viewId: a,
       loadingTrigger: e
     })
@@ -117,7 +117,7 @@ function U(e) {
             r = null == (t = n.last()) ? true : t.id,
             i = y.ZP.ackMessageId(e),
             l = n.hasPresent() && n.ready && !n.cached;
-          null != r && null != i && l && j.default.compare(i, r) >= 0 && d.ack(e, {
+          null != r && null != i && l && v.default.compare(i, r) >= 0 && d.ack(e, {
             section: R.jXE.NOTIFICATIONS_INBOX,
             object: R.qAy.ACK_INBOX_CHANNEL_NO_MESSAGES,
             objectType: R.AnalyticsObjectTypes.ACK_AUTOMATIC
@@ -146,11 +146,11 @@ function U(e) {
     u.Z.dispatch({
       type: "NOTIFICATIONS_INBOX_OPEN"
     });
-    let t = (0, v.Ag)({
+    let t = (0, j.Ag)({
         location: "NotificationsInboxSidebar"
       }).notificationCenterVariant,
       n = null == (e = S.Z.getDevOverrides().navOnClick) || e;
-    if (t !== v.jP.SIDEBAR || false === n) return;
+    if (t !== j.jP.SIDEBAR || false === n) return;
     let {
       message: r,
       isUnread: i
@@ -175,13 +175,13 @@ function U(e) {
         isUnread: false
       } : {
         message: {
-          id: j.default.atNextMillisecond(u),
+          id: v.default.atNextMillisecond(u),
           channel_id: c
         },
         isUnread: null != (i = y.ZP.hasUnread(c)) && i
       }
     }(q, X);
-    null != r && x.Z.inboxItemClick({
+    null != r && C.Z.inboxItemClick({
       message: r,
       channel: {
         id: r.channel_id
@@ -198,11 +198,11 @@ function U(e) {
   });
   let {
     filterStyle: Q
-  } = (0, v.pN)({
+  } = (0, j.pN)({
     location: "NotificationsInboxSidebar"
   }), J = (0, g._k)({
     location: "NotificationsInboxSidebar"
-  }), $ = Q === v.v8.DROPDOWN && f !== A.V5.ALL, ee = (0, A.H_)(f);
+  }), $ = Q === j.v8.DROPDOWN && f !== A.V5.ALL, ee = (0, A.H_)(f);
   return (0, r.jsx)("nav", {
     className: o()(L.container, {
       [L.panelSpacing]: l
@@ -219,7 +219,7 @@ function U(e) {
           style: {
             marginRight: false
           },
-          children: Q === v.v8.DROPDOWN && !J.isGuildEntrypointEnabled && (0, r.jsx)(T.p, {})
+          children: Q === j.v8.DROPDOWN && !J.isGuildEntrypointEnabled && (0, r.jsx)(T.p, {})
         })
       }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
         var n = Object.keys(e);
@@ -250,7 +250,7 @@ function U(e) {
 }
 
 function B(e) {
-  return (0, r.jsx)(C.HP, {
+  return (0, r.jsx)(E.HP, {
     children: (0, r.jsx)(U, M({}, e))
   })
 }
@@ -260,7 +260,7 @@ function F(e, t, n) {
     let {
       id: r
     } = e;
-    return !(j.default.age(r) > A.ib || null != n && 0 >= j.default.compare(r, n)) && t === A.V5.ALL
+    return !(v.default.age(r) > A.ib || null != n && 0 >= v.default.compare(r, n)) && t === A.V5.ALL
   }), [e, t, n])
 }
 

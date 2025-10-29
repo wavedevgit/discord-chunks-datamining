@@ -1,8 +1,8 @@
-/** Chunk was on 93886 **/
+/** Chunk was on 52344 **/
 /** chunk id: 986081, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Q: () => i,
-  Z: () => a
+  Q: () => o,
+  Z: () => i
 });
 let r = (0, require("./818083.js").B)({
     kind: "user",
@@ -25,9 +25,9 @@ let r = (0, require("./818083.js").B)({
       }
     }]
   }),
-  a = r;
+  i = r;
 
-function i() {
+function o() {
   return r.getCurrentConfig({
     location: "0a5674_1"
   }, {

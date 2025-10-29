@@ -1,7 +1,7 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 184279, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js");
 require("./647438.js");
@@ -14,7 +14,7 @@ var Chunk481060 = require("./481060.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk405005 = require("./405005.js"),
   Chunk191986 = require("./191986.js");
-let h = () => (0, Chunk951288.jsx)("svg", {
+let f = () => (0, Chunk951288.jsx)("svg", {
   width: "46",
   height: "34",
   viewBox: "0 0 46 34",
@@ -25,38 +25,38 @@ let h = () => (0, Chunk951288.jsx)("svg", {
   })
 });
 
-function f(e) {
+function h(e) {
   var t;
   let {
     channel: n
-  } = e, f = null != (t = (0, a.ZP)(n)) ? t : "";
-  return (0, i.jsxs)("div", {
+  } = e, h = null != (t = (0, a.ZP)(n)) ? t : "";
+  return (0, r.jsxs)("div", {
     id: (0, s.p)(n.id, n.id),
     className: d.headerContainer,
-    children: [(0, i.jsx)("img", {
+    children: [(0, r.jsx)("img", {
       src: p,
       className: d.wumpusImage,
       alt: ""
-    }), (0, i.jsxs)("div", {
+    }), (0, r.jsxs)("div", {
       className: d.chatBubbleContainer,
-      children: [(0, i.jsx)(h, {}), (0, i.jsxs)("div", {
+      children: [(0, r.jsx)(f, {}), (0, r.jsxs)("div", {
         className: d.chatBubble,
-        children: [(0, i.jsx)(r.qEK, {
-          "aria-label": f,
-          size: r.EFr.SIZE_80,
+        children: [(0, r.jsx)(i.qEK, {
+          "aria-label": h,
+          size: i.EFr.SIZE_80,
           src: (0, l.x)(n, 80, false)
-        }), (0, i.jsxs)(c.Ot, {
+        }), (0, r.jsxs)(c.Ot, {
           className: d.emptyMessageHeader,
-          children: [f, (0, i.jsx)(o.Z, {
+          children: [h, (0, r.jsx)(o.Z, {
             className: d.flowerStar,
             size: 24,
-            children: (0, i.jsx)(r.kmB, {
+            children: (0, r.jsx)(i.kmB, {
               size: "md",
               color: "currentColor",
               className: d.verified
             })
           })]
-        }), (0, i.jsx)(c.jz, {
+        }), (0, r.jsx)(c.jz, {
           children: u.intl.string(u.t.Rzvnig)
         })]
       })]

@@ -1,4 +1,4 @@
-/** Chunk was on 17013 **/
+/** Chunk was on 34297 **/
 /** chunk id: 415104, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => j
@@ -41,7 +41,7 @@ function b(e) {
       },
       sourceQuestContent: C
     }), w && (0, p.loadVideoQuestModal)()
-  }, [P, a.id, u, w, C, b]), A = s.useCallback(() => {
+  }, [P, a.id, u, w, C, b]), R = s.useCallback(() => {
     E(false), P({
       questId: a.id,
       event: x.rMx.QUEST_HOVER_OFF,
@@ -52,7 +52,7 @@ function b(e) {
       },
       sourceQuestContent: C
     })
-  }, [P, a.id, u, C, b]), R = s.useContext(g.t), {
+  }, [P, a.id, u, C, b]), A = s.useContext(g.t), {
     visibilityElementRef: B,
     almostVisibleInViewport: k
   } = function(e) {
@@ -67,7 +67,7 @@ function b(e) {
       }, true),
       almostVisibleInViewport: t
     }
-  }(null != (n = null == R || null == (t = R.current) ? true : t.getScrollerNode()) ? n : null);
+  }(null != (n = null == A || null == (t = A.current) ? true : t.getScrollerNode()) ? n : null);
   return (0, r.jsxs)("div", {
     id: "quest-tile-".concat(a.id),
     ref: e => {
@@ -75,9 +75,9 @@ function b(e) {
     },
     className: o()(_.container, d),
     onMouseEnter: N,
-    onMouseLeave: A,
+    onMouseLeave: R,
     onFocus: N,
-    onBlur: A,
+    onBlur: R,
     children: [(0, r.jsx)(f.Z, {
       quest: a,
       isHovering: y,

@@ -80,15 +80,16 @@ function E(e, t) {
     paused: a = false,
     onReady: s,
     onResize: l,
-    className: c
-  } = e, f = d(e, ["streamId", "paused", "onReady", "onResize", "className"]);
-  let p = i.useRef(null),
-    h = i.useRef(null),
-    E = i.useRef({
+    reportContainerResized: c = true,
+    className: f
+  } = e, p = d(e, ["streamId", "paused", "onReady", "onResize", "reportContainerResized", "className"]);
+  let h = i.useRef(null),
+    E = i.useRef(null),
+    b = i.useRef({
       width: 0,
       height: 0
     }),
-    b = i.useRef({
+    y = i.useRef({
       streamId: n,
       paused: a,
       onReady: s,
@@ -98,58 +99,59 @@ function E(e, t) {
   return i.useLayoutEffect(() => {
     let {
       current: e
-    } = p;
+    } = h;
 
     function t() {
       var e, t, n, r, i, a;
       let {
         width: o,
         height: s
-      } = E.current, l = null != (n = null == (e = h.current) ? true : e.videoWidth) ? n : 0, c = null != (r = null == (t = h.current) ? true : t.videoHeight) ? r : 0;
+      } = b.current, l = null != (n = null == (e = E.current) ? true : e.videoWidth) ? n : 0, c = null != (r = null == (t = E.current) ? true : t.videoHeight) ? r : 0;
       if (o !== l || s !== c) {
         let e = {
           width: l,
           height: c
         };
-        null == (i = (a = b.current).onResize) || i.call(a, e), E.current = e
+        null == (i = (a = y.current).onResize) || i.call(a, e), b.current = e
       }
     }
 
     function n() {
       var e, t;
-      _.info("handleReady for ".concat(b.current.streamId, ", have onReady callback = ").concat(null != b.current.onReady)), null == (e = (t = b.current).onReady) || e.call(t)
+      _.info("handleReady for ".concat(y.current.streamId, ", have onReady callback = ").concat(null != y.current.onReady)), null == (e = (t = y.current).onReady) || e.call(t)
     }
 
     function r() {
-      if (!b.current.paused) {
+      if (!y.current.paused) {
         var e;
-        null == (e = h.current) || e.play()
+        null == (e = E.current) || e.play()
       }
     }
     let i = new ResizeObserver(e => {
-      for (let r of e) {
-        var t, n;
-        if (r.target !== h.current) continue;
-        let e = window.devicePixelRatio * r.target.clientWidth,
-          i = window.devicePixelRatio * r.target.clientHeight;
-        null == (t = (n = b.current).onContainerResized) || t.call(n, b.current.streamId, e, i)
-      }
+      if (c)
+        for (let r of e) {
+          var t, n;
+          if (r.target !== E.current) continue;
+          let e = window.devicePixelRatio * r.target.clientWidth,
+            i = window.devicePixelRatio * r.target.clientHeight;
+          null == (t = (n = y.current).onContainerResized) || t.call(n, y.current.streamId, e, i)
+        }
     });
     if (null != e) {
       let a = document.createElement("video");
-      a.style.display = "block", a.style.width = "100%", a.style.height = "100%", a.autoplay = true, a.muted = true, a.addEventListener("pause", r), a.addEventListener("resize", t), a.addEventListener("canplaythrough", n), _.info("create video element for ".concat(b.current.streamId, ", readyState=").concat(a.readyState)), a.readyState > 3 && _.error("video element for ".concat(b.current.streamId, " was ready before attached")), e.appendChild(a), i.disconnect(), i.observe(a), h.current = a
+      a.style.display = "block", a.style.width = "100%", a.style.height = "100%", a.autoplay = true, a.muted = true, a.addEventListener("pause", r), a.addEventListener("resize", t), a.addEventListener("canplaythrough", n), _.info("create video element for ".concat(y.current.streamId, ", readyState=").concat(a.readyState)), a.readyState > 3 && _.error("video element for ".concat(y.current.streamId, " was ready before attached")), e.appendChild(a), i.disconnect(), i.observe(a), E.current = a
     }
-  }, []), i.useEffect(() => {
-    b.current.streamId = n, b.current.paused = a, b.current.onReady = s, b.current.onResize = l
+  }, [c]), i.useEffect(() => {
+    y.current.streamId = n, y.current.paused = a, y.current.onReady = s, y.current.onResize = l
   }), i.useEffect(() => {
-    let e = h.current;
+    let e = E.current;
     if (null != e)
       if (!a) return _.info("attaching srcObject for ".concat(n)), e.srcObject = m(n), () => {
         g(n), e.srcObject = null
       };
       else null != e.srcObject && (e.srcObject = null, g(n))
   }, [a, n]), (0, r.jsx)("div", u({
-    className: o()("media-engine-video", c),
-    ref: p
-  }, f))
+    className: o()("media-engine-video", f),
+    ref: h
+  }, p))
 }

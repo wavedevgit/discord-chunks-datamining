@@ -1,7 +1,7 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 987329, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => f
+  Z: () => h
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -14,25 +14,25 @@ var Chunk951288 = require("./951288.js"),
   Chunk871499 = require("./871499.jsx"),
   Chunk354459 = require("./354459.js"),
   Chunk388032 = require("./388032.jsx");
-let f = e => {
+let h = e => {
   let {
     channel: t,
     remoteMode: n = false
   } = e, {
-    parentAnalyticsLocation: f
-  } = (0, a.ZP)(), m = r.useRef(null);
-  return (0, i.jsx)(l.yRy, {
+    parentAnalyticsLocation: h
+  } = (0, a.ZP)(), m = i.useRef(null);
+  return (0, r.jsx)(l.yRy, {
     targetElementRef: m,
     renderPopout: e => {
       let {
-        closePopout: r
+        closePopout: i
       } = e;
-      return (0, i.jsx)(u.Z, {
-        children: (0, i.jsx)(o.Z, {
-          onClose: r,
+      return (0, r.jsx)(u.Z, {
+        children: (0, r.jsx)(o.Z, {
+          onClose: i,
           channel: t,
           remoteMode: n,
-          onInteraction: (0, c.u)("MoreSettingsMenu", f, {
+          onInteraction: (0, c.u)("MoreSettingsMenu", h, {
             entrypoint: p.A5.THREE_DOT
           })
         })
@@ -46,18 +46,18 @@ let f = e => {
       let {
         onClick: n
       } = e, {
-        isShown: r
+        isShown: i
       } = t;
-      return (0, i.jsx)(d.d, {
+      return (0, r.jsx)(d.d, {
         ref: m,
         isTrayButton: true,
         onClick: e => {
-          (0, s.v)(f, s.d.MORE), n(e)
+          (0, s.v)(h, s.d.MORE), n(e)
         },
-        label: h.intl.string(h.t.PdRCRg),
+        label: f.intl.string(f.t.PdRCRg),
         iconComponent: l.xhG,
         color: "primaryDark",
-        isActive: r
+        isActive: i
       })
     }
   })

@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 56710 **/
 /** chunk id: 37772, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => B
@@ -95,7 +95,7 @@ let B = Chunk647438.memo(function e(t) {
     et = (0, d.Z)(null == l ? true : l.id),
     {
       disableReactionCreates: en
-    } = (0, x.Z)(l),
+    } = (0, C.Z)(l),
     {
       content: er,
       hasSpoilerEmbeds: ei
@@ -106,7 +106,7 @@ let B = Chunk647438.memo(function e(t) {
       allowLinks: true,
       previewLinkTarget: true
     }),
-    el = (0, v.ZP)(s),
+    el = (0, j.ZP)(s),
     eo = (0, a.e7)([g.Z], () => s.hasFlag(D.iLy.HAS_THREAD) && g.Z.getChannel(b.default.castMessageIdAsChannelId(s.id))),
     ea = s.type === D.uaV.THREAD_STARTER_MESSAGE && Y.state === f.Y.LOADED && null != q,
     es = !ea && true === i,
@@ -118,7 +118,7 @@ let B = Chunk647438.memo(function e(t) {
     eu = (0, c.v)(s),
     ed = (0, _.ro)(s.id, s.channel_id),
     ep = (0, p.Z)(s),
-    ef = (0, E.iG)(s);
+    ef = (0, x.iG)(s);
   return ea ? (0, r.jsx)(e, U(G({}, t), {
     message: Y.message,
     channel: q,
@@ -128,7 +128,7 @@ let B = Chunk647438.memo(function e(t) {
     compact: R,
     count: 1,
     collapsedReason: i
-  }) : (0, r.jsx)(C.Z, {
+  }) : (0, r.jsx)(E.Z, {
     compact: R,
     className: o()(M, {
       [k.ephemeral]: (0, O.Pv)(s),
@@ -170,7 +170,7 @@ let B = Chunk647438.memo(function e(t) {
     onClick: V,
     hasThread: false !== z && null != eo && s.hasFlag(D.iLy.HAS_THREAD),
     hasReply: s.type === D.uaV.REPLY,
-    isSystemMessage: (0, j.Z)(s),
+    isSystemMessage: (0, v.Z)(s),
     messageRef: ec,
     author: el,
     "aria-labelledby": ef,
@@ -185,7 +185,7 @@ function F(e) {
     compact: i,
     collapsedReason: l
   } = e;
-  return (0, r.jsx)(C.Z, {
+  return (0, r.jsx)(E.Z, {
     className: t,
     compact: i,
     role: "group",

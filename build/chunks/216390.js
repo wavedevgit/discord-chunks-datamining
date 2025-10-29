@@ -1,4 +1,4 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 216390, original params: e,t,n (module,exports,require) **/
 module.exports = {
   bannerIcon: "bannerIcon__1d97f",

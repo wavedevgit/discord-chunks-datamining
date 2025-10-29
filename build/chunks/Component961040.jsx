@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 56710 **/
 /** chunk id: 961040, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -28,9 +28,9 @@ function b(e) {
   } = e, {
     isOpen: O,
     setIsOpen: y
-  } = (0, p.Z)(), j = i.useCallback(() => {
+  } = (0, p.Z)(), v = i.useCallback(() => {
     y(false)
-  }, [y]), v = i.useCallback(() => {
+  }, [y]), j = i.useCallback(() => {
     y(!O)
   }, [O, y]);
   (0, c.ZP)(() => {
@@ -38,9 +38,9 @@ function b(e) {
       y(false)
     };
     return s.Z.subscribe("USER_SETTINGS_MODAL_OPEN", e), () => s.Z.unsubscribe("USER_SETTINGS_MODAL_OPEN", e)
-  }), i.useEffect(() => (u.S.subscribe(h.CkL.TOGGLE_INBOX, v), () => void u.S.unsubscribe(h.CkL.TOGGLE_INBOX, v)), [v]);
+  }), i.useEffect(() => (u.S.subscribe(h.CkL.TOGGLE_INBOX, j), () => void u.S.unsubscribe(h.CkL.TOGGLE_INBOX, j)), [j]);
   let {
-    entrypoint: x
+    entrypoint: C
   } = (0, d.pN)({
     location: "NotificationsInboxPopout"
   });
@@ -48,16 +48,16 @@ function b(e) {
     targetElementRef: f,
     shouldShow: O,
     align: l,
-    animation: x === d.u3.TITLE_BAR_LEFT ? a.yRy.Animation.TRANSLATE : a.yRy.Animation.FADE,
-    animationPosition: x === d.u3.TITLE_BAR_LEFT ? "bottom" : "left",
+    animation: C === d.u3.TITLE_BAR_LEFT ? a.yRy.Animation.TRANSLATE : a.yRy.Animation.FADE,
+    animationPosition: C === d.u3.TITLE_BAR_LEFT ? "bottom" : "left",
     position: n,
-    onRequestClose: j,
+    onRequestClose: v,
     spacing: b,
     renderPopout: () => (0, r.jsx)(a.VqE, {
       "aria-label": g.intl.string(g.t.GSmTKJ),
       className: o()({
-        [m.repositionLayerTitlebarPopout]: x === d.u3.TITLE_BAR_LEFT,
-        [m.repositionLayerSidebarPopout]: x === d.u3.SERVER_RAIL_TOP
+        [m.repositionLayerTitlebarPopout]: C === d.u3.TITLE_BAR_LEFT,
+        [m.repositionLayerSidebarPopout]: C === d.u3.SERVER_RAIL_TOP
       }),
       children: (0, r.jsx)(_, {})
     }),
@@ -65,7 +65,7 @@ function b(e) {
       let {
         isShown: r
       } = n;
-      return t(v, r, e)
+      return t(j, r, e)
     }
   })
 }

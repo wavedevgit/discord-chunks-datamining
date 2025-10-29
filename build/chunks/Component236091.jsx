@@ -1,4 +1,4 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 236091, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => g
@@ -20,23 +20,23 @@ let g = e => {
   let {
     channelId: t
   } = e, n = (0, d.Go)(), g = p.Z.isDecoupledGameClippingEnabled();
-  return (0, r.e7)([u.Z, s.Z, p.Z, c.ZP], () => {
+  return (0, i.e7)([u.Z, s.Z, p.Z, c.ZP], () => {
     var e;
     if (null == t) returnfalse;
-    let i = u.Z.getCurrentUserActiveStream(),
-      r = null == (e = c.ZP.getVisibleGame()) ? true : e.windowHandle;
-    return null != i && !!p.Z.getSettings().clipsEnabled && !!n || null != r && !!p.Z.getSettings().decoupledClipsEnabled && !!g || s.Z.getParticipants(t).some(e => e.type === h.fO.USER && p.Z.isClipsEnabledForUser(e.user.id))
-  }) ? (0, i.jsx)(a.u, {
-    text: f.intl.string(f.t.DJXW3G),
-    children: (0, i.jsxs)("div", {
+    let r = u.Z.getCurrentUserActiveStream(),
+      i = null == (e = c.ZP.getVisibleGame()) ? true : e.windowHandle;
+    return null != r && !!p.Z.getSettings().clipsEnabled && !!n || null != i && !!p.Z.getSettings().decoupledClipsEnabled && !!g || s.Z.getParticipants(t).some(e => e.type === f.fO.USER && p.Z.isClipsEnabledForUser(e.user.id))
+  }) ? (0, r.jsx)(a.u, {
+    text: h.intl.string(h.t.DJXW3G),
+    children: (0, r.jsxs)("div", {
       className: m.clipsEnabledIndicator,
-      children: [(0, i.jsx)(o.G2e, {
+      children: [(0, r.jsx)(o.G2e, {
         icon: o.AlX,
         shape: o.Dv2.ROUND_LEFT,
         color: l.Z.unsafe_rawColors.PRIMARY_500.css,
         className: m.clipBadgeIcon
-      }), (0, i.jsx)(o.IGR, {
-        text: f.intl.string(f.t.pCMkDb),
+      }), (0, r.jsx)(o.IGR, {
+        text: h.intl.string(h.t.pCMkDb),
         shape: o.Dv2.ROUND_RIGHT,
         color: l.Z.unsafe_rawColors.PRIMARY_500.css,
         className: m.clipBadgeText

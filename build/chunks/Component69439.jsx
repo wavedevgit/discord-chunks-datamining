@@ -1,4 +1,4 @@
-/** Chunk was on 17013 **/
+/** Chunk was on 34297 **/
 /** chunk id: 69439, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -79,8 +79,8 @@ function O(e) {
     questContent: w,
     onReceiveErrorHints: P,
     contentPosition: N,
-    rowIndex: A,
-    sourceQuestContent: R
+    rowIndex: R,
+    sourceQuestContent: A
   } = e, B = (0, a.e7)([c.Z], () => c.Z.useReducedMotion), k = (0, _.g2)({
     useReducedMotion: B
   }), I = (0, u.O5)(), D = (0, m._s)({
@@ -107,11 +107,11 @@ function O(e) {
     questContent: w,
     isCollectibleQuest: K,
     questContentPosition: N,
-    questContentRowIndex: A,
+    questContentRowIndex: R,
     inGiftInventory: true,
     isVideoQuest: G,
     inGameQuest: Y,
-    sourceQuestContent: R
+    sourceQuestContent: A
   }), {
     startingConsoleQuest: el,
     startConsoleQuest: ec
@@ -123,8 +123,8 @@ function O(e) {
         questContent: w,
         questContentCTA: u.jZ.DEFIBRILLATOR,
         questContentPosition: N,
-        questContentRowIndex: A,
-        sourceQuestContent: R
+        questContentRowIndex: R,
+        sourceQuestContent: A
       })
     },
     afterRequest: e => {
@@ -156,7 +156,7 @@ function O(e) {
         (0, x.openVideoQuestModal)({
           quest: T,
           questContent: w,
-          sourceQuestContent: R,
+          sourceQuestContent: A,
           sourceQuestContentCTA: u.jZ.WATCH_VIDEO,
           skipEnrollmentCheck: true
         })
@@ -286,7 +286,7 @@ function O(e) {
       text: j.intl.string(j.t.V293qn)
     }), (0, r.jsx)(o.zxk, {
       variant: "primary",
-      onClick: () => (0, x.openQuestMinorEnrollmentBlockModal)(T, w, R),
+      onClick: () => (0, x.openQuestMinorEnrollmentBlockModal)(T, w, A),
       text: j.intl.string(j.t.vY9GgG)
     })]
   }) : (0, r.jsx)("div", {

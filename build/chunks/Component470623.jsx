@@ -83,7 +83,7 @@ class m {
     }, this.setFormOpen = e => {
       this.set({
         formOpen: e
-      }), p.Z.clearForumSearch(this.channelId)
+      }), h.Z.clearForumSearch(this.channelId)
     }, this.setOnboardingExpanded = e => {
       this.set({
         onboardingExpanded: e
@@ -105,7 +105,7 @@ class m {
     }, this.setTextAreaState = e => {
       this.set({
         textAreaState: e
-      }), c.Z.saveDraft(this.channelId, e.textValue, h.d.FirstThreadMessage)
+      }), c.Z.saveDraft(this.channelId, e.textValue, p.d.FirstThreadMessage)
     }, this.setHasClickedForm = e => {
       this.set({
         hasClickedForm: e
@@ -118,7 +118,7 @@ class m {
         textAreaState: (0, d.eK)(t),
         appliedTags: new Set,
         hasClickedForm: false
-      }), p.Z.clearForumSearch(this.channelId)
+      }), h.Z.clearForumSearch(this.channelId)
     }, this.setFormOpenFromUserAction = () => {
       if (this.hasClickedForm) return;
       let e = u.Z.getChannel(this.channelId);
@@ -128,13 +128,13 @@ class m {
       }), this.set({
         hasClickedForm: true,
         formOpen: true
-      }), p.Z.clearForumSearch(this.channelId)
+      }), h.Z.clearForumSearch(this.channelId)
     };
     let a = u.Z.getChannel(e);
     if (null == a) return;
-    let s = null != (r = h.Z.getThreadSettings(a.id)) ? r : {},
+    let s = null != (r = p.Z.getThreadSettings(a.id)) ? r : {},
       m = null == a.template ? "" : a.template.trim(),
-      b = h.Z.getDraft(a.id, h.d.FirstThreadMessage),
+      b = p.Z.getDraft(a.id, p.d.FirstThreadMessage),
       _ = (0, d.eK)(null != b && "" !== b.trim() ? b : m);
     this.name = null != (i = s.name) ? i : "", l = new Set(s.appliedTags), this.appliedTags = true !== l ? l : new Set, this.formOpen = this.name.length > 0 && _.textValue.length > 0, this.textAreaState = _
   }

@@ -1,12 +1,12 @@
-/** Chunk was on 34271 **/
+/** Chunk was on 73726 **/
 /** chunk id: 88315, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  P7: () => _,
-  RR: () => p,
+  P7: () => h,
+  RR: () => f,
   UN: () => u,
   bg: () => m,
   hn: () => d,
-  np: () => f
+  np: () => p
 });
 var Chunk979590 = require("./979590.js"),
   i = require.n(Chunk979590),
@@ -35,35 +35,35 @@ function d(e, t) {
   }
 }
 
-function f(e, t) {
+function p(e, t) {
   return Math.round(e * t * window.devicePixelRatio)
 }
 
-function p(e, t, n) {
+function f(e, t, n) {
   return {
-    x: f(e.x, t),
-    y: f(e.y, n),
+    x: p(e.x, t),
+    y: p(e.y, n),
     deltaTime: e.deltaTime
   }
 }
 
-function _(e) {
-  return e.type === c.W.LINE
+function h(e) {
+  return e.type === s.W.LINE
 }
 
 function m(e, t, n, r) {
-  var c;
+  var s;
   let u = o.default.getUser(e),
-    d = null == u ? true : u.getAvatarURL(null, s.Ks),
-    f = null != d ? null == (c = a.SR.getState().palette[d]) ? true : c[0] : null,
-    p = null != f ? "#".concat(i()({
-      r: f[0],
-      g: f[1],
-      b: f[2]
+    d = null == u ? true : u.getAvatarURL(null, c.Ks),
+    p = null != d ? null == (s = a.SR.getState().palette[d]) ? true : s[0] : null,
+    f = null != p ? "#".concat(i()({
+      r: p[0],
+      g: p[1],
+      b: p[2]
     }).toHex()) : r,
-    _ = (0, l.Bd)((0, l._i)(p)) > .5 ? n : t;
+    h = (0, l.Bd)((0, l._i)(f)) > .5 ? n : t;
   return {
-    fillColor: p,
-    outlineColor: _
+    fillColor: f,
+    outlineColor: h
   }
 }

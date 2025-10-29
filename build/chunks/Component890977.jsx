@@ -1,9 +1,9 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 890977, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   b: () => y
 }), require("./49124.js");
-var i, r, Chunk951288 = require("./951288.js"),
+var r, i, Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk120356 = require("./120356.js"),
   s = require.n(Chunk120356),
@@ -19,15 +19,15 @@ function g(e) {
   let t = (0, d.e7)([p.Z], () => p.Z.useReducedMotion),
     n = a.useRef(null);
   return a.useEffect(() => {
-    let i;
-    return null != n.current && (i = u().loadAnimation({
+    let r;
+    return null != n.current && (r = u().loadAnimation({
       container: n.current,
       renderer: "svg",
       loop: true,
       autoplay: !t,
       animationData: JSON.parse(JSON.stringify(e))
     })), () => {
-      null == i || i.destroy()
+      null == r || r.destroy()
     }
   }, [n, t, e]), n
 }
@@ -37,17 +37,17 @@ function b(e) {
     className: t
   } = e;
   return (0, l.jsx)("div", {
-    ref: g(i || (i = n.t(h, 2))),
+    ref: g(r || (r = n.t(f, 2))),
     className: s()(m.glow, t)
   })
 }
 
-function C(e) {
+function _(e) {
   let {
     className: t
   } = e;
   return (0, l.jsx)("div", {
-    ref: g(r || (r = n.t(f, 2))),
+    ref: g(i || (i = n.t(h, 2))),
     className: s()(m.trinkets, t)
   })
 }
@@ -55,8 +55,8 @@ let y = e => {
   let {
     children: t,
     animationContainerClassName: n,
-    glowClassName: i,
-    trinketsClassName: r,
+    glowClassName: r,
+    trinketsClassName: i,
     onMount: o
   } = e;
   return a.useEffect(() => {
@@ -64,14 +64,14 @@ let y = e => {
   }, [o]), (0, l.jsxs)("div", {
     className: n,
     children: [(0, l.jsx)(b, {
-      className: i
+      className: r
     }), (0, l.jsx)("div", {
       className: m.circleLayer
     }), (0, l.jsx)("div", {
       className: m.entrypoint,
       children: t
-    }), (0, l.jsx)(C, {
-      className: r
+    }), (0, l.jsx)(_, {
+      className: i
     })]
   })
 }

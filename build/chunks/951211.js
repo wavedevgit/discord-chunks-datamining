@@ -1,10 +1,10 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 951211, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => h,
+  Z: () => f,
   r: () => p
 }), require("./539854.js");
-var i, Chunk481060 = require("./481060.js"),
+var r, Chunk481060 = require("./481060.js"),
   Chunk620662 = require("./620662.js"),
   Chunk933557 = require("./933557.js"),
   Chunk377171 = require("./377171.js"),
@@ -12,87 +12,87 @@ var i, Chunk481060 = require("./481060.js"),
   Chunk594174 = require("./594174.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
-  p = ((i = {}).UPLOAD_A_FILE = "UPLOAD_A_FILE", i.UPLOAD_TEXT_AS_FILE = "UPLOAD_TEXT_AS_FILE", i.INVITE_TO_PLAY_GAME = "INVITE_TO_GAME", i.INVITE_TO_LISTEN = "INVITE_TO_LISTEN", i.INVITE_TO_WATCH = "INVITE_TO_WATCH", i.CREATE_THREAD = "CREATE_THREAD", i.SLASH_COMMAND = "SLASH_COMMAND", i.CLIPS = "CLIPS", i.POLL = "POLL", i.ACTIVITY = "ACTIVITY", i.SCHEDULED_MESSAGE = "SCHEDULED_MESSAGE", i.SUMMARIZE_THREAD = "SUMMARIZE_THREAD", i);
+  p = ((r = {}).UPLOAD_A_FILE = "UPLOAD_A_FILE", r.UPLOAD_TEXT_AS_FILE = "UPLOAD_TEXT_AS_FILE", r.INVITE_TO_PLAY_GAME = "INVITE_TO_GAME", r.INVITE_TO_LISTEN = "INVITE_TO_LISTEN", r.INVITE_TO_WATCH = "INVITE_TO_WATCH", r.CREATE_THREAD = "CREATE_THREAD", r.SLASH_COMMAND = "SLASH_COMMAND", r.CLIPS = "CLIPS", r.POLL = "POLL", r.ACTIVITY = "ACTIVITY", r.SCHEDULED_MESSAGE = "SCHEDULED_MESSAGE", r.SUMMARIZE_THREAD = "SUMMARIZE_THREAD", r);
 
-function h(e) {
+function f(e) {
   let {
     canAttachFiles: t,
     canStartThreads: n,
-    useSlate: i,
+    useSlate: r,
     canUseApplicationCommands: p,
-    hasClips: h,
-    channel: f,
+    hasClips: f,
+    channel: h,
     activities: m,
     newClipsCount: g,
     canPostPolls: b,
-    canLaunchActivities: C,
+    canLaunchActivities: _,
     appContext: y,
-    canSendScheduledMessages: _,
+    canSendScheduledMessages: C,
     canSummarizeThreads: v
   } = e, x = [];
   return t && (x.push({
     type: "UPLOAD_A_FILE",
-    icon: r.xD0,
+    icon: i.xD0,
     display: d.intl.string(d.t["d3+iYs"])
   }), x.push({
     type: "UPLOAD_TEXT_AS_FILE",
-    icon: r.xD0,
+    icon: i.xD0,
     display: d.intl.string(d.t["G9s+EM"])
-  })), h && t && y !== u.IlC.POPOUT && x.push({
+  })), f && t && y !== u.IlC.POPOUT && x.push({
     type: "CLIPS",
-    icon: r.AlX,
+    icon: i.AlX,
     display: d.intl.string(d.t.o034cv),
     badgeVal: g,
     badgeColor: o.Z.BG_BRAND
   }), n && x.push({
     type: "CREATE_THREAD",
-    icon: r.YPH,
+    icon: i.YPH,
     display: d.intl.string(d.t.rBIGBL)
   }), b && x.push({
     type: "POLL",
-    icon: r.QDj,
+    icon: i.QDj,
     display: d.intl.string(d.t.Flr51u)
-  }), i && p && x.push({
+  }), r && p && x.push({
     type: "SLASH_COMMAND",
-    icon: r.jje,
+    icon: i.jje,
     display: d.intl.string(d.t.Bbvp6G)
-  }), C && x.push({
+  }), _ && x.push({
     type: "ACTIVITY",
-    icon: r.nG3,
+    icon: i.nG3,
     display: d.intl.string(d.t["16Lfrb"])
   }), m.forEach(e => {
     !(0, l.Z)(e, u.xjy.EMBEDDED) && (e.type === u.IIU.PLAYING && (0, l.Z)(e, u.xjy.JOIN) && x.push({
       type: "INVITE_TO_GAME",
-      icon: r.xoD,
+      icon: i.xoD,
       display: d.intl.formatToPlainString(d.t["KHLo+F"], {
-        channel: (0, a.F6)(f, c.default, s.Z, true),
+        channel: (0, a.F6)(h, c.default, s.Z, true),
         game: null != e ? e.name : ""
       }),
       activity: e
     }), e.type === u.IIU.LISTENING && (0, l.Z)(e, u.xjy.SYNC) && x.push({
       type: "INVITE_TO_LISTEN",
-      icon: r.iOO,
+      icon: i.iOO,
       display: d.intl.formatToPlainString(d.t.I479px, {
-        channel: (0, a.F6)(f, c.default, s.Z, true),
+        channel: (0, a.F6)(h, c.default, s.Z, true),
         name: null != e ? e.name : ""
       }),
       activity: e
     }), e.type === u.IIU.WATCHING && (0, l.Z)(e, u.xjy.SYNC) && x.push({
       type: "INVITE_TO_WATCH",
-      icon: r.tEF,
+      icon: i.tEF,
       display: d.intl.formatToPlainString(d.t["EvCP/g"], {
-        channel: (0, a.F6)(f, c.default, s.Z, true),
+        channel: (0, a.F6)(h, c.default, s.Z, true),
         name: null != e ? e.name : ""
       }),
       activity: e
     }))
-  }), _ && x.push({
+  }), C && x.push({
     type: "SCHEDULED_MESSAGE",
-    icon: r.T39,
+    icon: i.T39,
     display: d.intl.string(d.t["3+ii4F"])
-  }), f.isThread() && v && x.push({
+  }), h.isThread() && v && x.push({
     type: "SUMMARIZE_THREAD",
-    icon: r.$2U,
+    icon: i.$2U,
     display: d.intl.string(d.t.EXfguE)
   }), x
 }

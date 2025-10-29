@@ -1,9 +1,9 @@
-/** Chunk was on 34271 **/
+/** Chunk was on 73726 **/
 /** chunk id: 456631, original params: e,t,n (module,exports,require) **/
 let r;
 require.d(exports, {
   H: () => g,
-  Z: () => S
+  Z: () => v
 }), require("./388685.js"), require("./290780.js");
 var i, l, Chunk392711 = require("./392711.js"),
   Chunk442837 = require("./442837.js"),
@@ -12,24 +12,24 @@ var i, l, Chunk392711 = require("./392711.js"),
   Chunk70956 = require("./70956.js"),
   Chunk963838 = require("./963838.js"),
   Chunk354459 = require("./354459.js");
-let p = [],
-  _ = {},
+let f = [],
+  h = {},
   m = [],
   g = e => {
-    null != e && s.Z.dispatch({
+    null != e && c.Z.dispatch({
       type: "VOICE_CHANNEL_EFFECT_CLEAR",
       userId: e
     })
   },
-  v = [],
-  b = 10 * Chunk70956.Z.Millis.SECOND,
-  E = (0, Chunk392711.debounce)(() => {
+  b = [],
+  _ = 10 * Chunk70956.Z.Millis.SECOND,
+  y = (0, Chunk392711.debounce)(() => {
     let e = (0, Chunk963838.cX)(m);
     Chunk780384.uv.announce(module, "polite"), m = []
   }, 500);
-class h extends(i = Chunk442837.ZP.Store) {
+class C extends(i = Chunk442837.ZP.Store) {
   get recentlyUsedEmojis() {
-    return p
+    return f
   }
   get isOnCooldown() {
     return null != r && new Date < r
@@ -38,26 +38,26 @@ class h extends(i = Chunk442837.ZP.Store) {
     return r
   }
   getEffectForUserId(e) {
-    return _[e]
+    return h[e]
   }
-}(l = "displayName") in h ? Object.defineProperty(h, l, {
+}(l = "displayName") in C ? Object.defineProperty(C, l, {
   value: "VoiceChannelEffectsStore",
   enumerable: true,
   configurable: true,
   writable: true
-}) : h[l] = "VoiceChannelEffectsStore";
-let S = new h(Chunk570140.Z, {
+}) : C[l] = "VoiceChannelEffectsStore";
+let v = new C(Chunk570140.Z, {
   VOICE_CHANNEL_EFFECT_CLEAR: e => {
     let {
       userId: t
     } = e;
-    null != _[t] && delete _[t]
+    null != h[t] && delete h[t]
   },
   VOICE_CHANNEL_EFFECT_RECENT_EMOJI: e => {
     let {
       emoji: t
     } = e;
-    null != t && (p.unshift(t), (p = (0, a.uniqBy)(p, "name")).length > f.e5 + 1 && p.pop())
+    null != t && (f.unshift(t), (f = (0, a.uniqBy)(f, "name")).length > p.e5 + 1 && f.pop())
   },
   VOICE_CHANNEL_EFFECT_SEND: e => {
     let {
@@ -65,21 +65,21 @@ let S = new h(Chunk570140.Z, {
       userId: n,
       animationType: r
     } = e;
-    null != t && null != r && (_[n] = {
+    null != t && null != r && (h[n] = {
       emoji: t,
       sentAt: Date.now(),
       animationType: r
     }, m = [...m, {
       emojiName: t.name,
       userId: n
-    }], E())
+    }], y())
   },
   VOICE_CHANNEL_EFFECT_SENT_LOCAL: () => {
     let e = new Date;
-    if ((v = [module, ...v].slice(0, 20)).length >= 20) {
-      let t = v[v.length - 1],
+    if ((b = [module, ...b].slice(0, 20)).length >= 20) {
+      let t = b[b.length - 1],
         n = module.getTime() - exports.getTime();
-      require < b && (r = new Date(module.getTime() + b - require))
+      require < _ && (r = new Date(module.getTime() + _ - require))
     }
   },
   VOICE_CHANNEL_EFFECT_UPDATE_TIME_STAMP: e => {

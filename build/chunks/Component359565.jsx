@@ -1,7 +1,7 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 359565, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  q: () => C,
+  q: () => _,
   s: () => b
 });
 var Chunk951288 = require("./951288.js"),
@@ -20,17 +20,17 @@ var Chunk951288 = require("./951288.js"),
 function m(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
-      i = Object.keys(n);
-    "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+      r = Object.keys(n);
+    "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
-    }))), i.forEach(function(t) {
-      var i;
-      i = n[t], t in e ? Object.defineProperty(e, t, {
-        value: i,
+    }))), r.forEach(function(t) {
+      var r;
+      r = n[t], t in e ? Object.defineProperty(e, t, {
+        value: r,
         enumerable: true,
         configurable: true,
         writable: true
-      }) : e[t] = i
+      }) : e[t] = r
     })
   }
   return e
@@ -40,8 +40,8 @@ function g(e, t) {
   return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : (function(e, t) {
     var n = Object.keys(e);
     if (Object.getOwnPropertySymbols) {
-      var i = Object.getOwnPropertySymbols(e);
-      n.push.apply(n, i)
+      var r = Object.getOwnPropertySymbols(e);
+      n.push.apply(n, r)
     }
     return n
   })(Object(t)).forEach(function(n) {
@@ -54,22 +54,22 @@ function b(e) {
     channel: t,
     narrow: n
   } = e, l = (0, d.tc)(t);
-  return r.useEffect(() => {
+  return i.useEffect(() => {
     c.default.track(p.rMx.CHANNEL_BANNER_VIEWED, g(m({}, (0, s.hH)(t.getGuildId()), (0, s.v_)(t)), {
       banner_type: "thread"
     }))
-  }, [t]), (0, i.jsxs)("div", {
-    className: a()(f.chatHeaderBar, {
-      [f.narrow]: n
+  }, [t]), (0, r.jsxs)("div", {
+    className: a()(h.chatHeaderBar, {
+      [h.narrow]: n
     }),
-    children: [(0, i.jsx)(o.Text, {
-      className: f.chatHeaderBarText,
+    children: [(0, r.jsx)(o.Text, {
+      className: h.chatHeaderBarText,
       variant: "text-sm/normal",
       color: "header-secondary",
-      children: t.isForumPost() ? h.intl.string(h.t["833FDn"]) : h.intl.string(h.t.rEeodK)
-    }), l ? (0, i.jsx)(o.Button, {
+      children: t.isForumPost() ? f.intl.string(f.t["833FDn"]) : f.intl.string(f.t.rEeodK)
+    }), l ? (0, r.jsx)(o.Button, {
       variant: "secondary",
-      text: h.intl.string(h.t["0dvvEi"]),
+      text: f.intl.string(f.t["0dvvEi"]),
       onClick: () => {
         c.default.track(p.rMx.CHANNEL_BANNER_CTA_CLICKED, g(m({}, (0, s.hH)(t.getGuildId()), (0, s.v_)(t)), {
           banner_type: "thread",
@@ -81,27 +81,27 @@ function b(e) {
   })
 }
 
-function C(e) {
+function _(e) {
   let {
     channel: t,
     narrow: n
   } = e, l = (0, d.Xb)(t);
-  return r.useEffect(() => {
+  return i.useEffect(() => {
     c.default.track(p.rMx.CHANNEL_BANNER_VIEWED, g(m({}, (0, s.hH)(t.getGuildId()), (0, s.v_)(t)), {
       banner_type: "thread"
     }))
-  }, [t]), (0, i.jsxs)("div", {
-    className: a()(f.chatHeaderBar, {
-      [f.narrow]: n
+  }, [t]), (0, r.jsxs)("div", {
+    className: a()(h.chatHeaderBar, {
+      [h.narrow]: n
     }),
-    children: [(0, i.jsx)(o.Text, {
-      className: f.chatHeaderBarText,
+    children: [(0, r.jsx)(o.Text, {
+      className: h.chatHeaderBarText,
       variant: "text-sm/normal",
       color: "header-secondary",
-      children: t.isForumPost() ? h.intl.string(h.t.E7oO8u) : h.intl.string(h.t["V/JF2N"])
-    }), l ? (0, i.jsx)(o.Button, {
+      children: t.isForumPost() ? f.intl.string(f.t.E7oO8u) : f.intl.string(f.t["V/JF2N"])
+    }), l ? (0, r.jsx)(o.Button, {
       variant: "secondary",
-      text: h.intl.string(h.t.zA9d1J),
+      text: f.intl.string(f.t.zA9d1J),
       onClick: () => {
         c.default.track(p.rMx.CHANNEL_BANNER_CTA_CLICKED, g(m({}, (0, s.hH)(t.getGuildId()), (0, s.v_)(t)), {
           banner_type: "thread",

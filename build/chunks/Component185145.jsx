@@ -1,4 +1,4 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 185145, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   T: () => g
@@ -22,26 +22,26 @@ function g(e) {
   let {
     guild: t,
     disabledUntil: n
-  } = e, [g, b] = (0, d.i)(t.id), C = (0, r.e7)([c.ZP, s.default], () => c.ZP.getMember(t.id, s.default.getId()), [t.id]);
-  return (0, u.$)(C), (0, i.jsxs)("div", {
-    children: [g ? (0, i.jsx)(p.Z, {
+  } = e, [g, b] = (0, d.i)(t.id), _ = (0, i.e7)([c.ZP, s.default], () => c.ZP.getMember(t.id, s.default.getId()), [t.id]);
+  return (0, u.$)(_), (0, r.jsxs)("div", {
+    children: [g ? (0, r.jsx)(p.Z, {
       onClose: () => b(t.id),
       guildName: t.name
-    }) : null, (0, i.jsx)(o.i, {
-      bannerIcon: (0, i.jsx)(l.YlB, {
+    }) : null, (0, r.jsx)(o.i, {
+      bannerIcon: (0, r.jsx)(l.YlB, {
         size: "md",
         color: "currentColor",
         className: m.bannerIcon
       }),
-      bannerHeader: f.intl.string(f.t["9UoK6Y"]),
-      bannerSubtext: f.intl.format(f.t["4ZwD5G"], {
-        link: h.cu
+      bannerHeader: h.intl.string(h.t["9UoK6Y"]),
+      bannerSubtext: h.intl.format(h.t["4ZwD5G"], {
+        link: f.cu
       }),
       textStyles: m.bannerContainer,
       headerStyles: m.bannerHeader,
-      children: (0, i.jsx)(l.Text, {
+      children: (0, r.jsx)(l.Text, {
         variant: "text-sm/semibold",
-        children: (0, i.jsx)(a.Z, {
+        children: (0, r.jsx)(a.Z, {
           deadline: new Date(n),
           showUnits: true,
           stopAtOneSec: true

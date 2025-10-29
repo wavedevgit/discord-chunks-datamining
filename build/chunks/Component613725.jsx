@@ -1,4 +1,4 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 613725, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -30,13 +30,13 @@ function m() {
       guildId: t,
       channelId: n
     }
-  }, Chunk574583.X), n = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(module)), m = (0, Chunk442837.e7)([Chunk592125.Z], () => null == require ? Chunk592125.Z.getChannel(exports) : null), g = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()), b = null != m ? (0, Chunk43267.x)(m) : null, C = null != g ? g.getAvatarURL(module, 80) : Chunk768581.pK["0"], y = (0, Chunk951288.jsx)(Chunk481060.qEK, {
-    src: C,
+  }, Chunk574583.X), n = (0, Chunk442837.e7)([Chunk430824.Z], () => Chunk430824.Z.getGuild(module)), m = (0, Chunk442837.e7)([Chunk592125.Z], () => null == require ? Chunk592125.Z.getChannel(exports) : null), g = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser()), b = null != m ? (0, Chunk43267.x)(m) : null, _ = null != g ? g.getAvatarURL(module, 80) : Chunk768581.pK["0"], y = (0, Chunk951288.jsx)(Chunk481060.qEK, {
+    src: _,
     "aria-hidden": true,
     size: Chunk481060.EFr.SIZE_80,
     className: Chunk870515.avatarSizeOverride
-  }), _ = null;
-  return _ = null != require ? (0, Chunk951288.jsx)(Chunk565138.Z, {
+  }), C = null;
+  return C = null != require ? (0, Chunk951288.jsx)(Chunk565138.Z, {
     guild: require
   }) : null != b ? (0, Chunk951288.jsx)(Chunk481060.qEK, {
     "aria-hidden": true,
@@ -50,7 +50,7 @@ function m() {
       children: y
     }), (0, Chunk951288.jsx)("div", {
       className: Chunk870515.guildAvatar,
-      children: _
+      children: C
     }), (0, Chunk951288.jsx)("svg", {
       className: Chunk870515.illustration,
       xmlns: "http://www.w3.org/2000/svg",

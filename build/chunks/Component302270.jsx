@@ -46,18 +46,18 @@ function M(e) {
   } = e, {
     analyticsLocations: l,
     newestAnalyticsLocation: o
-  } = (0, h.ZP)(u.Z.VOICE_CHANNEL_HEADER), {
+  } = (0, p.ZP)(u.Z.VOICE_CHANNEL_HEADER), {
     chatOpen: c,
     participantsListOpen: m
-  } = (0, s.cj)([p.Z], () => ({
-    chatOpen: p.Z.getChatOpen(t.id),
-    participantsListOpen: p.Z.getParticipantsListOpen(t.id)
+  } = (0, s.cj)([h.Z], () => ({
+    chatOpen: h.Z.getChatOpen(t.id),
+    participantsListOpen: h.Z.getParticipantsListOpen(t.id)
   }), [t.id]), _ = (0, Z.B)(t.id), y = (0, S.Rk)(t.id, E.pV.REQUESTED_TO_SPEAK_ONLY), {
     hasParticipantsPanel: x
   } = (0, f.Z)({
     location: "StageChannelCallHeader"
-  }), O = x && m;
-  return (0, r.jsxs)(h.Gt, {
+  }), v = x && m;
+  return (0, r.jsxs)(p.Gt, {
     value: l,
     children: [(0, r.jsx)(b.Z, {
       channelId: t.id
@@ -70,7 +70,7 @@ function M(e) {
         showRequestToSpeakSidebar: i,
         numRequestToSpeak: y
       })
-    }) : null, !m && x && (0, r.jsx)(v.Z, {
+    }) : null, !m && x && (0, r.jsx)(O.Z, {
       className: a()(L.button, {
         [L.sidebarOpen]: c
       }),
@@ -79,7 +79,7 @@ function M(e) {
       }
     }, "participants-list-button"), !c && (0, r.jsx)("div", {
       className: a()(L.button, {
-        [L.sidebarOpen]: O || i
+        [L.sidebarOpen]: v || i
       }),
       children: (0, r.jsx)(j.T, {
         channelId: t.id,
@@ -97,7 +97,7 @@ function k(e) {
     channel: n,
     toggleRequestToSpeakSidebar: l,
     showRequestToSpeakSidebar: u
-  } = e, h = (0, m.ZP)(n), p = (0, s.e7)([T.Z], () => T.Z.getStageInstanceByChannel(n.id)), f = (0, S.Io)(n.id), g = (0, S.Rk)(n.id, E.pV.AUDIENCE), b = (0, s.e7)([O.Z], () => O.Z.getGuild(n.guild_id), [n.guild_id]), j = null != (t = null == b ? true : b.maxStageVideoChannelUsers) ? t : 0, v = null != b && b.features.has(w.GuildFeatures.COMMUNITY) ? j < w.TU7 : (null == b ? true : b.premiumTier) !== w.Eu4.TIER_3 && j <= w.eez, Z = (0, R.Z)(n), N = (0, s.e7)([C.Z], () => C.Z.can(P.yP, n)), k = () => {
+  } = e, p = (0, m.ZP)(n), h = (0, s.e7)([T.Z], () => T.Z.getStageInstanceByChannel(n.id)), f = (0, S.Io)(n.id), g = (0, S.Rk)(n.id, E.pV.AUDIENCE), b = (0, s.e7)([v.Z], () => v.Z.getGuild(n.guild_id), [n.guild_id]), j = null != (t = null == b ? true : b.maxStageVideoChannelUsers) ? t : 0, O = null != b && b.features.has(w.GuildFeatures.COMMUNITY) ? j < w.TU7 : (null == b ? true : b.premiumTier) !== w.Eu4.TIER_3 && j <= w.eez, Z = (0, R.Z)(n), N = (0, s.e7)([C.Z], () => C.Z.can(P.yP, n)), k = () => {
     d.Z.updateStageVideoLimitBoostUpsellDismissed(n.id, true), I.default.track(w.rMx.BOOSTING_UPSELL_CLICKED, {
       guild_id: n.guild_id,
       type: A.cd.VIDEO_STAGE_LIMIT,
@@ -144,11 +144,11 @@ function k(e) {
           disabled: true,
           "aria-label": D.intl.string(D.t.EErMzA),
           className: L.icon,
-          color: null != p ? o.Z.colors.HEADER_MUTED.css : true
+          color: null != h ? o.Z.colors.HEADER_MUTED.css : true
         }), (0, r.jsx)(y.ZP.Title, {
           className: L.channelName,
           wrapperClassName: L.channelNameWrapper,
-          children: null != (t = null == p ? true : p.topic) ? t : h
+          children: null != (t = null == h ? true : h.topic) ? t : p
         }), (0, r.jsx)(y.ZP.Divider, {
           className: L.divider
         }), (0, r.jsxs)(y.ZP.Title, {
@@ -186,15 +186,15 @@ function k(e) {
         children: [(0, r.jsx)(c.Text, {
           variant: "text-md/medium",
           color: "header-primary",
-          children: v ? D.intl.string(D.t["T+zF9M"]) : D.intl.string(D.t["IZ+SVv"])
+          children: O ? D.intl.string(D.t["T+zF9M"]) : D.intl.string(D.t["IZ+SVv"])
         }), (0, r.jsx)(c.Text, {
           variant: "text-xs/medium",
           color: "text-default",
-          children: v ? D.intl.string(D.t.Izgpmv) : D.intl.string(D.t["7FHbPG"])
+          children: O ? D.intl.string(D.t.Izgpmv) : D.intl.string(D.t["7FHbPG"])
         })]
       }), (0, r.jsx)("div", {
         className: L.buttons,
-        children: v ? (0, r.jsxs)(r.Fragment, {
+        children: O ? (0, r.jsxs)(r.Fragment, {
           children: [(0, r.jsx)(c.Button, {
             onClick: k,
             size: "sm",

@@ -4,17 +4,17 @@ require.d(exports, {
   AR: () => f,
   C2: () => u,
   Pp: () => m,
-  VX: () => h,
+  VX: () => p,
   b7: () => g,
-  sE: () => p
+  sE: () => h
 });
 var r, i, l, a, Chunk149765 = require("./149765.js"),
   Chunk700785 = require("./700785.js"),
   Chunk981631 = require("./981631.js"),
   Chunk388032 = require("./388032.jsx"),
   u = ((r = {})[r.GUILD = 0] = "GUILD", r[r.GUILD_SCHEDULED_EVENT = 1] = "GUILD_SCHEDULED_EVENT", r),
-  h = ((i = {}).GUILD_TEMPLATES = "guild-templates", i.CUSTOMIZE_NEW_GUILD = "customize-new-guild", i.CHOOSE_GUILD = "choose-guild", i.CUSTOMIZE_EXISTING_GUILD = "customize-existing-guild", i.CONFIRMATION = "confirmation", i),
-  p = ((l = {}).CREATE = "CREATE", l.HUB_SCHOOL_CLUB = "HUB_SCHOOL_CLUB", l.HUB_STUDY = "HUB_STUDY", l.HUB_CLASS = "HUB_CLASS", l.HUB_SOCIAL = "HUB_SOCIAL", l.HUB_MAJOR = "HUB_MAJOR", l.HUB_DORM = "HUB_DORM", l),
+  p = ((i = {}).GUILD_TEMPLATES = "guild-templates", i.CUSTOMIZE_NEW_GUILD = "customize-new-guild", i.CHOOSE_GUILD = "choose-guild", i.CUSTOMIZE_EXISTING_GUILD = "customize-existing-guild", i.CONFIRMATION = "confirmation", i),
+  h = ((l = {}).CREATE = "CREATE", l.HUB_SCHOOL_CLUB = "HUB_SCHOOL_CLUB", l.HUB_STUDY = "HUB_STUDY", l.HUB_CLASS = "HUB_CLASS", l.HUB_SOCIAL = "HUB_SOCIAL", l.HUB_MAJOR = "HUB_MAJOR", l.HUB_DORM = "HUB_DORM", l),
   f = ((a = {})[a.ALL = false] = "ALL", a[a.UNCATEGORIZED = 0] = "UNCATEGORIZED", a[a.SCHOOL_CLUB = 1] = "SCHOOL_CLUB", a[a.CLASS = 2] = "CLASS", a[a.STUDY_SOCIAL = 3] = "STUDY_SOCIAL", a[a.MISC = 5] = "MISC", a);
 
 function g(e) {

@@ -19,7 +19,7 @@ require.d(exports, {
   rI: () => K,
   tp: () => k,
   xR: () => X
-}), require("./35282.js"), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js");
+}), require("./190126.js"), require("./368063.js"), require("./65234.js"), require("./111804.js"), require("./490233.js"), require("./97749.js"), require("./388685.js"), require("./35282.js");
 var Chunk654861 = require("./654861.js"),
   a = require.n(Chunk654861),
   Chunk664751 = require("./664751.js"),
@@ -106,9 +106,16 @@ function C(e) {
     id: t,
     animated: n,
     size: r,
-    forcePNG: i = false
-  } = e, a = O ? "webp" : "png", o = O ? "webp" : "gif", s = i ? "png" : n ? o : a, c = O && n ? "&animated=true" : "", u = "size=".concat((0, l.oO)(r * (0, l.x_)(), S));
-  return null != window.GLOBAL_ENV.CDN_HOST ? "".concat(location.protocol, "//").concat(window.GLOBAL_ENV.CDN_HOST, "/emojis/").concat(t, ".").concat(s) + "?".concat(u).concat(c) : location.protocol + window.GLOBAL_ENV.API_ENDPOINT + f.ANM.EMOJI(t, s)
+    forcePNG: i = false,
+    forceSDR: a = false
+  } = e, o = O ? "webp" : "png", s = O ? "webp" : "gif", c = i ? "png" : n ? s : o;
+  if (null != window.GLOBAL_ENV.CDN_HOST) {
+    let e = new URL("/emojis/".concat(t, ".").concat(c), "".concat(location.protocol, "//").concat(window.GLOBAL_ENV.CDN_HOST));
+    return e.searchParams.set("size", (0, l.oO)(r * (0, l.x_)(), S).toString()), O && n && e.searchParams.set("animated", "true"), a && e.searchParams.set("force_sdr", "true"), e.toString()
+  } {
+    let e = new URL(f.ANM.EMOJI(t, c), location.protocol + window.GLOBAL_ENV.API_ENDPOINT);
+    return a && e.searchParams.set("force_sdr", "true"), e.toString()
+  }
 }
 
 function N(e, t) {

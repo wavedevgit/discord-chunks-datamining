@@ -1,4 +1,4 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 688641, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -15,39 +15,39 @@ function c(e) {
   let {
     className: t,
     iconContainerClassName: n,
-    icon: r,
+    icon: i,
     title: c,
     description: u,
     userCount: d,
     onClick: p,
-    highlight: h
+    highlight: f
   } = e;
-  return (0, i.jsxs)(a.P3F, {
-    className: l()(s.container, t, null != h && {
-      [s.pulse]: h
+  return (0, r.jsxs)(a.P3F, {
+    className: l()(s.container, t, null != f && {
+      [s.pulse]: f
     }),
     onClick: p,
-    children: [(0, i.jsx)("div", {
+    children: [(0, r.jsx)("div", {
       className: l()(s.icon, n),
-      children: r
-    }), (0, i.jsxs)("div", {
+      children: i
+    }), (0, r.jsxs)("div", {
       className: s.textContainer,
-      children: [(0, i.jsx)(a.Heading, {
+      children: [(0, r.jsx)(a.Heading, {
         variant: "heading-md/semibold",
         color: "text-primary",
         children: c
-      }), (0, i.jsx)(a.Text, {
+      }), (0, r.jsx)(a.Text, {
         variant: "text-xs/normal",
         color: "text-primary",
         className: s.inline,
         children: u
-      }), null != d && d > 0 ? (0, i.jsxs)(i.Fragment, {
-        children: [(0, i.jsx)(a.Text, {
+      }), null != d && d > 0 ? (0, r.jsxs)(r.Fragment, {
+        children: [(0, r.jsx)(a.Text, {
           variant: "text-xs/normal",
           color: "text-primary",
           className: s.dot,
           children: "•"
-        }), (0, i.jsx)(a.Text, {
+        }), (0, r.jsx)(a.Text, {
           variant: "text-xs/normal",
           color: "text-primary",
           className: s.inline,
@@ -56,7 +56,7 @@ function c(e) {
           })
         })]
       }) : null]
-    }), (0, i.jsx)(a.Fbu, {
+    }), (0, r.jsx)(a.Fbu, {
       size: "xs",
       color: "currentColor",
       className: s.caret

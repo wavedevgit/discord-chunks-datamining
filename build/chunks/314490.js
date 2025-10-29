@@ -1,4 +1,4 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 314490, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   p: () => s
@@ -12,13 +12,13 @@ let s = e => {
   let {
     surface: t,
     skipFetchingShelf: n = true
-  } = e, s = (0, r.e7)([o.ZP], () => o.ZP.getState());
-  return (0, i.useEffect)(() => {
+  } = e, s = (0, i.e7)([o.ZP], () => o.ZP.getState());
+  return (0, r.useEffect)(() => {
     var e;
     (null == (e = s.lastCheckedForBadgeableActivities) || new Date(e).getTime() < Date.now() - 432e5) && !n && (0, a.w1)({
       guildId: null
     })
-  }, [s.lastCheckedForBadgeableActivities, n]), (0, i.useMemo)(() => (0, l.O)({
+  }, [s.lastCheckedForBadgeableActivities, n]), (0, r.useMemo)(() => (0, l.O)({
     storeState: s,
     surface: t
   }), [s, t])

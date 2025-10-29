@@ -1,9 +1,9 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 390289, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => M
 }), require("./388685.js"), require("./997841.js");
-var i, Chunk442837 = require("./442837.js"),
+var r, Chunk442837 = require("./442837.js"),
   Chunk570140 = require("./570140.js"),
   Chunk314897 = require("./314897.js"),
   Chunk592125 = require("./592125.js"),
@@ -18,7 +18,7 @@ var i, Chunk442837 = require("./442837.js"),
   Chunk490897 = require("./490897.js"),
   Chunk526761 = require("./526761.js");
 
-function C(e, t, n) {
+function _(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -43,22 +43,22 @@ let y = [{
     sends: 10,
     viewTime: 30 * Chunk70956.Z.Millis.MINUTE
   }],
-  _ = 5 * y[y.length - 1].viewTime,
+  C = 5 * y[y.length - 1].viewTime,
   v = Chunk70956.Z.Millis.WEEK,
   x = {
     channels: {}
   },
   O = new Set,
-  j = null,
-  E = 0,
+  E = null,
+  j = 0,
   S = 0;
 
 function P() {
-  if (null == j || !T(j)) returnfalse;
-  let e = Z(j);
-  if (module.lastActionTime > Date.now() - Chunk70956.Z.Millis.DAY && module.viewDuration > _) returnfalse;
+  if (null == E || !T(E)) returnfalse;
+  let e = Z(E);
+  if (module.lastActionTime > Date.now() - Chunk70956.Z.Millis.DAY && module.viewDuration > C) returnfalse;
   let t = Date.now();
-  module.lastActionTime = exports, module.viewDuration += exports - E, E = exports
+  module.lastActionTime = exports, module.viewDuration += exports - j, j = exports
 }
 
 function I() {
@@ -88,7 +88,7 @@ function N(e, t) {
   let n = u.ZP.getChannelOverrides(e)[t];
   return null != n && !!(null != n.message_notifications && n.message_notifications !== m.bL.NULL || null != n.flags && (0, p.EB)(n.flags, b.ic.UNREADS_ALL_MESSAGES | b.ic.UNREADS_ONLY_MENTIONS))
 }
-class A extends(i = Chunk442837.ZP.PersistedStore) {
+class A extends(r = Chunk442837.ZP.PersistedStore) {
   initialize(e) {
     null != e && (x.channels = e.channels), this.syncWith([u.ZP], I), this.waitFor(a.default, o.Z, s.Z, c.Z, u.ZP)
   }
@@ -105,30 +105,30 @@ class A extends(i = Chunk442837.ZP.PersistedStore) {
     return null != t && null != t.guild_id && !! function(e) {
       var t;
       let n = s.Z.getGuild(e.guild_id),
-        i = null != (t = null == n ? true : n.joinedAt) ? t : new Date,
-        r = Math.min(h.default.age(e.id), Date.now() - i.getTime()),
+        r = null != (t = null == n ? true : n.joinedAt) ? t : new Date,
+        i = Math.min(f.default.age(e.id), Date.now() - r.getTime()),
         l = x.channels[e.id];
       if (null == l || l.lastActionTime < Date.now() - v) returnfalse;
       for (let e of y)
-        if (r < e.timeSinceJoin && (l.numSends >= e.sends || l.viewDuration >= e.viewTime)) returntrue;
+        if (i < e.timeSinceJoin && (l.numSends >= e.sends || l.viewDuration >= e.viewTime)) returntrue;
       returnfalse
-    }(t) && (delete x.channels[e], O.add(e), (0, f.IG)(t.guild_id, t.id, g.i.ALL_MESSAGES), true)
+    }(t) && (delete x.channels[e], O.add(e), (0, h.IG)(t.guild_id, t.id, g.i.ALL_MESSAGES), true)
   }
 }
-C(A, "displayName", "UnreadSettingNoticeStore2"), C(A, "persistKey", "UnreadSettingNoticeStore2");
+_(A, "displayName", "UnreadSettingNoticeStore2"), _(A, "persistKey", "UnreadSettingNoticeStore2");
 let w = new A(Chunk570140.Z, {
     CHANNEL_SELECT: function() {
       let e = P();
-      return j = Chunk944486.Z.getChannelId(), E = Date.now(), module
+      return E = Chunk944486.Z.getChannelId(), j = Date.now(), module
     },
     CONNECTION_OPEN: function() {
-      j = Chunk944486.Z.getChannelId(), E = Date.now(), I();
+      E = Chunk944486.Z.getChannelId(), j = Date.now(), I();
       let e = Date.now() - v;
       Chunk709054.default.forEach(x.channels, (t, n) => {
         let {
-          lastActionTime: i
+          lastActionTime: r
         } = t;
-        i < e && delete x.channels[n]
+        r < e && delete x.channels[n]
       })
     },
     MESSAGE_CREATE: function(e) {

@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 56710 **/
 /** chunk id: 770858, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -25,19 +25,19 @@ var Chunk951288 = require("./951288.js"),
   Chunk490897 = require("./490897.js"),
   Chunk888158 = require("./888158.js");
 
-function C() {
+function E() {
   let e = (0, Chunk442837.e7)([Chunk594174.default], () => Chunk594174.default.getCurrentUser());
   return (0, Chunk442837.e7)([Chunk306680.ZP], () => (null == module ? true : module.id) != null && Chunk306680.ZP.getMentionCount(module.id, Chunk490897.W.NOTIFICATION_CENTER) > 0)
 }
 
-function E(e) {
+function x(e) {
   var t, n;
   let {
     onClick: d,
     selectedOverride: p = false,
     popoutProps: h,
     ref: _
-  } = e, v = (0, l.Ie)("notifications-inbox"), [E, S] = i.useState(false), I = (0, m.D)(), P = p || I, {
+  } = e, j = (0, l.Ie)("notifications-inbox"), [x, S] = i.useState(false), I = (0, m.D)(), P = p || I, {
     notificationCenterVariant: N
   } = (0, g.pN)({
     location: "NotificationsInboxButtonInner"
@@ -52,7 +52,7 @@ function E(e) {
       location: "NotificationsInboxButtonInner"
     }), {
       unreadChannelIds: n
-    } = (0, m.O4)(), i = C(), {
+    } = (0, m.O4)(), i = E(), {
       badge: l,
       dimensions: o
     } = (0, b.h6)({
@@ -78,19 +78,19 @@ function E(e) {
       badgeDimensions: o
     }
   }(P), A = N === g.jP.LEGACY ? a.xx7 : a.Dkj, R = (0, o.e7)([f.Z], () => f.Z.getChannelId()), D = i.useMemo(() => {
-    if (N === g.jP.SIDEBAR) return j.Z5c.CHANNEL(j.STv, R)
+    if (N === g.jP.SIDEBAR) return v.Z5c.CHANNEL(v.STv, R)
   }, [N, R]);
   return (0, r.jsxs)(u.H, {
     ref: _,
     children: [(0, r.jsx)(c.Z, {
       selected: P && N === g.jP.SIDEBAR,
-      hovered: E && N === g.jP.SIDEBAR,
+      hovered: x && N === g.jP.SIDEBAR,
       unread: w > 0,
-      className: x.pill,
+      className: C.pill,
       disabled: N === g.jP.LEGACY
     }), (0, r.jsx)(O.Z, {
       children: (0, r.jsx)(a.aRk, {
-        selected: P || E,
+        selected: P || x,
         lowerBadge: Z,
         lowerBadgeSize: T,
         children: (0, r.jsx)(a.LYs, (t = function(e) {
@@ -110,16 +110,16 @@ function E(e) {
             })
           }
           return e
-        }({}, v, h), n = n = {
+        }({}, j, h), n = n = {
           onClick: d,
           to: D,
-          selected: P || E,
+          selected: P || x,
           onMouseEnter: () => S(true),
           onMouseLeave: () => S(false),
           children: (0, r.jsx)(A, {
             size: "custom",
             color: "currentColor",
-            className: x.notificationsIcon,
+            className: C.notificationsIcon,
             width: 20,
             height: 20
           })
@@ -145,15 +145,15 @@ function S() {
     } = (0, Chunk821020.pN)({
       location: "NotificationsInboxButton"
     }),
-    n = C(),
+    n = E(),
     l = (0, Chunk128008.mv)();
-  return exports === Chunk821020.jP.SIDEBAR ? (0, Chunk951288.jsx)(E, {
+  return exports === Chunk821020.jP.SIDEBAR ? (0, Chunk951288.jsx)(x, {
     onClick: Chunk91192
   }) : exports === Chunk821020.jP.POPOUT ? (0, Chunk951288.jsx)(Chunk961040.Z, {
     targetElementRef: module,
     popoutPosition: "right",
     popoutAlign: "bottom",
-    children: (t, n, i) => (0, r.jsx)(E, {
+    children: (t, n, i) => (0, r.jsx)(x, {
       ref: e,
       selectedOverride: n,
       onClick: () => {
@@ -170,7 +170,7 @@ function S() {
     popoutPosition: "right",
     popoutAlign: "top",
     dialogClassName: Chunk888158.positionLayer,
-    children: (t, n, i) => (0, r.jsx)(E, {
+    children: (t, n, i) => (0, r.jsx)(x, {
       ref: e,
       selectedOverride: n,
       onClick: () => {

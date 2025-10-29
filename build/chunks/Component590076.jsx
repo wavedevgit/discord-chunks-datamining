@@ -1,4 +1,4 @@
-/** Chunk was on 34271 **/
+/** Chunk was on 73726 **/
 /** chunk id: 590076, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => m
@@ -15,37 +15,37 @@ var Chunk951288 = require("./951288.js"),
   Chunk90753 = require("./90753.js"),
   Chunk806777 = require("./806777.js");
 
-function _(e) {
+function h(e) {
   let {
     focused: t,
     channelId: n,
     streamerId: l,
     stream: u
-  } = e, _ = i.useRef(null), m = (0, o.e7)([s.default], () => s.default.getCurrentUser());
-  a()(null != m, "user cannot be null"), (0, f.Z)(_, m, l, n);
+  } = e, h = i.useRef(null), m = (0, o.e7)([c.default], () => c.default.getCurrentUser());
+  a()(null != m, "user cannot be null"), (0, p.Z)(h, m, l, n);
   let {
     handleClick: g,
-    handleMouseDown: v,
-    handleMouseEnter: b,
-    handleMouseMove: E,
-    handleMouseUp: h
+    handleMouseDown: b,
+    handleMouseEnter: _,
+    handleMouseMove: y,
+    handleMouseUp: C
   } = (0, d.Z)({
     user: m,
     channelId: n,
     streamerId: l,
     stream: u,
     focused: t,
-    canvas: _.current
+    canvas: h.current
   });
-  return (0, r.jsx)(c.Z, {
+  return (0, r.jsx)(s.Z, {
     children: (0, r.jsx)("canvas", {
-      ref: _,
+      ref: h,
       onClick: g,
-      onMouseDown: v,
-      onMouseEnter: b,
-      onMouseMove: E,
-      onMouseUp: h,
-      className: p.sharedCanvas
+      onMouseDown: b,
+      onMouseEnter: _,
+      onMouseMove: y,
+      onMouseUp: C,
+      className: f.sharedCanvas
     })
   })
 }
@@ -59,7 +59,7 @@ function m(e) {
   }, {
     autoTrackExposure: true
   });
-  return !t || e.hasScreenMessage ? null : (0, r.jsx)(_, function(e) {
+  return !t || e.hasScreenMessage ? null : (0, r.jsx)(h, function(e) {
     for (var t = 1; t < arguments.length; t++) {
       var n = null != arguments[t] ? arguments[t] : {},
         r = Object.keys(n);

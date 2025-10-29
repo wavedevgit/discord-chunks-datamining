@@ -51,9 +51,9 @@ function w(e) {
     originApplicationId: d.Z.getOriginApplicationId(t.id)
   })), U = (0, s.vh)(t.id), G = (0, o.Y)({
     userId: t.id
-  }), H = (0, l.e7)([u.Z], () => u.Z.hidePersonalInformation), F = (0, l.e7)([p.Z], () => {
+  }), H = (0, l.e7)([u.Z], () => u.Z.hidePersonalInformation), F = (0, l.e7)([h.Z], () => {
     var e;
-    return null == (e = p.Z.getUserProfile(t.id)) ? true : e.application
+    return null == (e = h.Z.getUserProfile(t.id)) ? true : e.application
   }), B = (0, f.b)({
     location: "UserProfileSidebarBody"
   });
@@ -62,7 +62,7 @@ function w(e) {
     children: [(0, r.jsx)(E.Z, {
       user: t,
       guildId: A.guild_id,
-      nickname: h.ZP.getName(null, A.id, t),
+      nickname: p.ZP.getName(null, A.id, t),
       pronouns: null == w ? true : w.pronouns,
       onOpenProfile: L,
       tags: (0, r.jsx)(m.Z, {
@@ -91,7 +91,7 @@ function w(e) {
         applicationId: e.applicationId,
         channelId: A.id
       })
-    }, e.applicationId)), (0, r.jsx)(O.Z, {
+    }, e.applicationId)), (0, r.jsx)(v.Z, {
       user: t,
       className: R.card
     }), t.isProvisional && (0, r.jsx)(S.Z.Overlay, {
@@ -139,7 +139,7 @@ function w(e) {
       }), (0, r.jsx)(C.Z, {
         heading: t.bot ? N.intl.string(N.t["A//N4k"]) : N.intl.string(N.t.a6XYD9),
         headingColor: "header-primary",
-        children: (0, r.jsx)(v.Z, {
+        children: (0, r.jsx)(O.Z, {
           userId: t.id
         })
       })]

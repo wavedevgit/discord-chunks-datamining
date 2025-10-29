@@ -1,4 +1,4 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 481363, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => c
@@ -22,18 +22,18 @@ function c(e) {
     isFocused: d,
     buttonProps: {
       message: p,
-      channel: h,
-      groupId: f,
+      channel: f,
+      groupId: h,
       compact: m = false
     },
     messageWindow: g
-  } = e, b = p.state === o.yb.SENDING, C = p.id === f, y = (0, r.yE)(p.flags, o.iLy.EPHEMERAL), _ = p.state === o.yb.SEND_FAILED;
-  return b || y && !_ ? null : (0, i.jsx)(a.Z, {
+  } = e, b = p.state === o.yb.SENDING, _ = p.id === h, y = (0, i.yE)(p.flags, o.iLy.EPHEMERAL), C = p.state === o.yb.SEND_FAILED;
+  return b || y && !C ? null : (0, r.jsx)(a.Z, {
     className: s.buttons,
     innerClassName: s.buttonsInner,
-    isHeader: !m && C && !(0, l.Z)(p),
+    isHeader: !m && _ && !(0, l.Z)(p),
     isReply: !m && p.type === o.uaV.REPLY && null != p.messageReference,
-    channel: h,
+    channel: f,
     message: p,
     messageWindow: g,
     setPopout: t,

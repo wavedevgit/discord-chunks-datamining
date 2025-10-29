@@ -1,4 +1,4 @@
-/** Chunk was on 17013 **/
+/** Chunk was on 34297 **/
 /** chunk id: 495722, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => J
@@ -187,7 +187,7 @@ function K(e) {
             loading: y,
             text: S,
             size: "sm",
-            icon: (0, A.getPrimaryCtaIcon)(t),
+            icon: (0, R.getPrimaryCtaIcon)(t),
             fullWidth: true
           })
         })]
@@ -239,7 +239,7 @@ function K(e) {
             opacity: a.to([0, 1], [1, 0])
           }
         })]
-      }), E.isAnimated ? (0, r.jsx)(R.Fl, {
+      }), E.isAnimated ? (0, r.jsx)(A.Fl, {
         id: "QuestBarV2ContentExpanded_heroAnimated",
         children: e => (0, r.jsx)(G, {
           ref: e,
@@ -247,7 +247,7 @@ function K(e) {
           isExpanded: h,
           reducedMotion: c
         })
-      }) : (0, r.jsx)(R.Fl, {
+      }) : (0, r.jsx)(A.Fl, {
         id: "QuestBarV2ContentExpanded_heroStatic",
         children: e => (0, r.jsx)("img", {
           ref: e,
@@ -306,10 +306,10 @@ function X(e) {
     onCtxMenuSelect: h,
     onGameSheetOpened: x,
     onGameSheetClosed: j
-  } = e, C = (null == (t = n.userStatus) ? true : t.completedAt) != null, E = a.percentComplete > 0, O = (0, v.z)(n), [S, T, w] = (0, v.me)(n, a), P = s.useRef(null), N = s.useRef(null), R = (0, v._s)({
+  } = e, C = (null == (t = n.userStatus) ? true : t.completedAt) != null, E = a.percentComplete > 0, O = (0, v.z)(n), [S, T, w] = (0, v.me)(n, a), P = s.useRef(null), N = s.useRef(null), A = (0, v._s)({
     quest: n
   }), W = (0, b.q8)(n), F = (0, v.Jf)(n), z = s.useCallback(() => {
-    (0, A.openVideoQuestModal)({
+    (0, R.openVideoQuestModal)({
       quest: n,
       questContent: y.jn.QUEST_BAR_V2,
       sourceQuestContent: y.jn.QUEST_BAR_V2,
@@ -375,7 +375,7 @@ function X(e) {
           quest: n,
           useReducedMotion: p,
           isExpanded: u,
-          awaitingConsoleConnections: R,
+          awaitingConsoleConnections: A,
           hasMadeProgress: E,
           isProgressing: O,
           activeScreen: S,
@@ -397,7 +397,7 @@ function X(e) {
 }
 async function Y(e, t, n, r) {
   let s = (0, b.q8)(e);
-  return s && (0, S.R)(M.dr.QUESTS_BAR) ? void await (0, A.enrollAndStartVideoQuestWithErrorHandling)(e, {
+  return s && (0, S.R)(M.dr.QUESTS_BAR) ? void await (0, R.enrollAndStartVideoQuestWithErrorHandling)(e, {
     questContent: t,
     questContentCTA: n,
     sourceQuestContent: r,
@@ -410,7 +410,7 @@ async function Y(e, t, n, r) {
     questContent: t,
     questContentCTA: n,
     sourceQuestContent: r
-  }), s && (0, A.openVideoQuestModal)({
+  }), s && (0, R.openVideoQuestModal)({
     quest: e,
     questContent: t,
     sourceQuestContent: r,

@@ -1,4 +1,4 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 779836, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -20,17 +20,17 @@ var Chunk120356 = require("./120356.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk363350 = require("./363350.js");
 
-function C(e) {
+function _(e) {
   let {
     summary: t,
     channel: n
-  } = e, r = (0, o.e7)([p.Z], () => p.Z.summaryFeedback(t)), l = (e, i) => {
-    e.stopPropagation(), (0, h.Z)({
+  } = e, i = (0, o.e7)([p.Z], () => p.Z.summaryFeedback(t)), l = (e, r) => {
+    e.stopPropagation(), (0, f.Z)({
       summary: t,
       channel: n,
-      rating: i
+      rating: r
     })
-  }, c = (0, s.Yzy)(null == r, {
+  }, c = (0, s.Yzy)(null == i, {
     enter: {
       from: {
         opacity: 0
@@ -49,26 +49,26 @@ function C(e) {
       clamp: true
     }
   }, "animate-always");
-  return (0, i.jsx)(i.Fragment, {
-    children: c((e, t) => t ? (0, i.jsx)("div", {
+  return (0, r.jsx)(r.Fragment, {
+    children: c((e, t) => t ? (0, r.jsx)("div", {
       className: b.summaryFeedbackWrapper,
-      children: (0, i.jsxs)(a.animated.div, {
+      children: (0, r.jsxs)(a.animated.div, {
         style: e,
         className: b.summaryFeedback,
-        children: [(0, i.jsx)(s.Text, {
+        children: [(0, r.jsx)(s.Text, {
           variant: "text-xs/medium",
           color: "interactive-normal",
           children: g.intl.string(g.t["5ZsiE9"])
-        }), (0, i.jsx)(s.P3F, {
-          onClick: e => l(e, f.aZ.GOOD),
-          children: (0, i.jsx)(d.Z, {
+        }), (0, r.jsx)(s.P3F, {
+          onClick: e => l(e, h.aZ.GOOD),
+          children: (0, r.jsx)(d.Z, {
             className: b.thumbIcon,
             width: 12,
             height: 12
           })
-        }), (0, i.jsx)(s.P3F, {
-          onClick: e => l(e, f.aZ.BAD),
-          children: (0, i.jsx)(u.Z, {
+        }), (0, r.jsx)(s.P3F, {
+          onClick: e => l(e, h.aZ.BAD),
+          children: (0, r.jsx)(u.Z, {
             className: b.thumbIcon,
             width: 12,
             height: 12
@@ -81,35 +81,35 @@ function C(e) {
 
 function y(e) {
   var t, n;
-  let r, {
+  let i, {
       item: a,
       channel: u,
       index: d
     } = e,
-    h = (0, o.e7)([p.Z], () => p.Z.selectedSummary(u.id));
-  if (null == h) return null;
-  let f = null != a.unreadId,
+    f = (0, o.e7)([p.Z], () => p.Z.selectedSummary(u.id));
+  if (null == f) return null;
+  let h = null != a.unreadId,
     g = null != a.content;
-  return r = g ? (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(s.sVe, {
+  return i = g ? (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(s.sVe, {
       size: "xs",
       color: "currentColor",
       className: b.summaryStartIcon
     }), a.content]
-  }) : (0, i.jsxs)(i.Fragment, {
-    children: [(0, i.jsx)(C, {
-      summary: h,
+  }) : (0, r.jsxs)(r.Fragment, {
+    children: [(0, r.jsx)(_, {
+      summary: f,
       channel: u
-    }), (0, i.jsx)(s.sVe, {
+    }), (0, r.jsx)(s.sVe, {
       size: "xs",
       color: "currentColor",
       className: b.summaryEndIcon
     })]
-  }), (0, i.jsx)(c.Z, {
+  }), (0, r.jsx)(c.Z, {
     className: l()(b.summaryDivider, g ? b.summaryDividerStart : b.summaryDividerEnd),
     contentClassName: g ? b.summaryStartContent : b.summaryEndContent,
-    isUnread: f,
-    id: f ? m.j1 : true,
-    children: r
+    isUnread: h,
+    id: h ? m.j1 : true,
+    children: i
   }, "divider-".concat(null != (n = null != (t = a.contentKey) ? t : a.unreadId) ? n : d))
 }

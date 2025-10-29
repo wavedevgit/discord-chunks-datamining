@@ -1,7 +1,7 @@
-/** Chunk was on 90995 **/
+/** Chunk was on 72651 **/
 /** chunk id: 252417, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => y
+  Z: () => j
 });
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -19,37 +19,37 @@ var Chunk951288 = require("./951288.js"),
   Chunk981631 = require("./981631.js"),
   Chunk671955 = require("./671955.js"),
   Chunk777267 = require("./777267.js");
-let _ = Chunk481060.EFr.SIZE_40,
-  v = (0, Chunk481060.pxk)(_);
+let v = Chunk481060.EFr.SIZE_40,
+  O = (0, Chunk481060.pxk)(v);
 
-function y(e) {
+function j(e) {
   let {
     user: t,
-    status: y,
+    status: j,
     guildId: x,
-    channelId: O,
+    channelId: _,
     onSelect: P
   } = e, {
-    theme: C,
-    themeType: k
-  } = (0, h.z)(), w = i.useMemo(() => t.isNonUserBot() || (0, b.W)(t, O), [t, O]), {
-    activities: Z,
-    isMobileOnline: S
-  } = (0, a.cj)([f.Z], () => ({
-    activities: f.Z.getActivities(t.id),
-    isMobileOnline: f.Z.isMobileOnline(t.id)
-  })), I = (0, p.Z)(t.id), {
-    voiceActivityStatusEnabled: N
-  } = (0, c.a)({
+    theme: I,
+    themeType: w
+  } = (0, m.z)(), S = i.useMemo(() => t.isNonUserBot() || (0, f.W)(t, _), [t, _]), {
+    activities: E,
+    isMobileOnline: T
+  } = (0, a.cj)([p.Z], () => ({
+    activities: p.Z.getActivities(t.id),
+    isMobileOnline: p.Z.isMobileOnline(t.id)
+  })), C = (0, g.Z)(t.id), {
+    voiceActivityStatusEnabled: D
+  } = (0, s.a)({
     location: "UserProfileMutualFriendRow"
   }), {
-    voiceChannel: T
-  } = (0, d.Z)({
-    userId: N ? t.id : true,
+    voiceChannel: k
+  } = (0, u.Z)({
+    userId: D ? t.id : true,
     guildId: x
   });
-  return (0, r.jsxs)(o.P3F, {
-    focusProps: k === g.l.MODAL_V2 ? {
+  return (0, r.jsxs)(l.P3F, {
+    focusProps: w === y.l.MODAL_V2 ? {
       offset: {
         top: 4,
         right: 4,
@@ -60,10 +60,10 @@ function y(e) {
         right: 8
       }
     },
-    className: j.row,
+    className: h.row,
     onClick: P,
     onContextMenu: e => {
-      (0, l.jW)(e, async () => {
+      (0, o.jW)(e, async () => {
         let {
           default: e
         } = await Promise.all([n.e("79695"), n.e("69220")]).then(n.bind(n, 881351));
@@ -101,25 +101,25 @@ function y(e) {
         }
       })
     },
-    children: [(0, r.jsx)(o.qEK, {
-      src: t.getAvatarURL(x, v),
+    children: [(0, r.jsx)(l.qEK, {
+      src: t.getAvatarURL(x, O),
       "aria-label": t.username,
-      size: _,
-      status: w ? m.Skl.UNKNOWN : y,
-      statusBackdropColor: w ? true : (0, o.QFD)(C),
-      isMobile: S,
-      className: j.avatar
+      size: v,
+      status: S ? b.Skl.UNKNOWN : j,
+      statusBackdropColor: S ? true : (0, l.QFD)(I),
+      isMobile: T,
+      className: h.avatar
     }), (0, r.jsxs)("div", {
-      className: j.details,
-      children: [(0, r.jsx)(s.Z, {
+      className: h.details,
+      children: [(0, r.jsx)(c.Z, {
         user: t,
-        className: j.tag,
-        discriminatorClass: j.discriminator
-      }), (0, r.jsx)(u.Z, {
+        className: h.tag,
+        discriminatorClass: h.discriminator
+      }), (0, r.jsx)(d.Z, {
         user: t,
-        activities: Z,
-        applicationStream: I,
-        voiceChannel: T
+        activities: E,
+        applicationStream: C,
+        voiceChannel: k
       })]
     })]
   })

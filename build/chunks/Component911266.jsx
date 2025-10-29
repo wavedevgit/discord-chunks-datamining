@@ -1,4 +1,4 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 911266, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => y
@@ -24,39 +24,39 @@ let y = e => {
     message: t,
     hovering: n,
     compact: l
-  } = e, y = r.useRef((0, o.random)(false, 24)).current, _ = (0, s.e7)([h.Z], () => h.Z.confettiMode), v = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), x = r.useRef(0), O = r.useRef(null), j = r.useRef(null), [E, S] = r.useState(false), P = r.useMemo(() => !n && !_ && !v, [_, n, v]);
-  if (r.useEffect(() => {
-      n || S(false), n && _ && S(true)
-    }, [n, _]), r.useEffect(() => {
-      !v && (E || (false === n && (x.current = 0, null != O.current && (clearTimeout(O.current), O.current = null)), x.current = Date.now(), O.current = setTimeout(() => {
+  } = e, y = i.useRef((0, o.random)(false, 24)).current, C = (0, s.e7)([f.Z], () => f.Z.confettiMode), v = (0, s.e7)([u.Z], () => u.Z.useReducedMotion), x = i.useRef(0), O = i.useRef(null), E = i.useRef(null), [j, S] = i.useState(false), P = i.useMemo(() => !n && !C && !v, [C, n, v]);
+  if (i.useEffect(() => {
+      n || S(false), n && C && S(true)
+    }, [n, C]), i.useEffect(() => {
+      !v && (j || (false === n && (x.current = 0, null != O.current && (clearTimeout(O.current), O.current = null)), x.current = Date.now(), O.current = setTimeout(() => {
         let e = x.current;
-        if (0 !== e && false !== n && !(Date.now() - e < 1e3) && !_) {
-          if (null != j.current) {
-            var i;
+        if (0 !== e && false !== n && !(Date.now() - e < 1e3) && !C) {
+          if (null != E.current) {
+            var r;
             let {
               x: e,
               y: n,
-              width: r,
+              width: i,
               height: l
-            } = null == (i = j.current) ? true : i.getBoundingClientRect();
+            } = null == (r = E.current) ? true : r.getBoundingClientRect();
             (0, g.Z)(t, {
               x: e,
               y: n - 20,
-              w: r,
+              w: i,
               h: l
-            }, true, f.LL.UserTriggered)
-          } else(0, g.Z)(t, true, true, f.LL.UserTriggered);
+            }, true, h.LL.UserTriggered)
+          } else(0, g.Z)(t, true, true, h.LL.UserTriggered);
           S(true), c.Z.dispatch({
             type: "POTIONS_SET_CONFETTI_MODE",
             enabled: true
           })
         }
       }, 1100)))
-    }, [_, E, n, t, v]), !(0, m.p7)("Message Confetti Peak") || !(0, b.Uw)(t)) return null;
+    }, [C, j, n, t, v]), !(0, m.p7)("Message Confetti Peak") || !(0, b.Uw)(t)) return null;
   let I = (0, b.Eq)(t);
   if (null == I) return null;
-  if (l) return (0, i.jsx)("span", {
-    className: C.hidden,
+  if (l) return (0, r.jsx)("span", {
+    className: _.hidden,
     "aria-hidden": "true"
   });
   let Z = I.emoji[0],
@@ -66,26 +66,26 @@ let y = e => {
       size: 32,
       forcePNG: true
     });
-  return (0, i.jsxs)("div", {
-    ref: j,
-    className: C.emojiWrapper,
+  return (0, r.jsxs)("div", {
+    ref: E,
+    className: _.emojiWrapper,
     style: {
       right: "".concat(256 + y, "px")
     },
-    children: [(0, i.jsx)("img", {
+    children: [(0, r.jsx)("img", {
       alt: "",
       src: T,
-      className: a()([C.emoji, C.left, P && C.shy, _ && C.confettiMode]),
+      className: a()([_.emoji, _.left, P && _.shy, C && _.confettiMode]),
       width: 28
-    }), (0, i.jsx)("img", {
+    }), (0, r.jsx)("img", {
       alt: "",
       src: T,
-      className: a()([C.emoji, C.right, P && C.shy, _ && C.confettiMode]),
+      className: a()([_.emoji, _.right, P && _.shy, C && _.confettiMode]),
       width: 26
-    }), (0, i.jsx)("img", {
+    }), (0, r.jsx)("img", {
       alt: "",
       src: T,
-      className: a()([C.emoji, C.center, P && C.shy, _ && C.confettiMode]),
+      className: a()([_.emoji, _.center, P && _.shy, C && _.confettiMode]),
       width: 32
     })]
   })

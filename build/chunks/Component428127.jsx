@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 56710 **/
 /** chunk id: 428127, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => O
@@ -72,17 +72,17 @@ function O(e) {
     bottomBar: f,
     topBar: O
   } = (0, s.cj)([h.Z], () => h.Z.getUnreadStateForGuildId(n.id)), y = (0, s.e7)([p.Z], () => p.Z.isFocused()), {
-    mode: j,
-    mentionCount: v,
-    targetChannelId: x
-  } = "bottom" === t ? f : O, C = j === h.x.HIDDEN, E = (0, c.q_F)({
+    mode: v,
+    mentionCount: j,
+    targetChannelId: C
+  } = "bottom" === t ? f : O, E = v === h.x.HIDDEN, x = (0, c.q_F)({
     to: {
-      transform: C ? "bottom" === t ? "translateY(180%)" : "translateY(-180%)" : "translateY(0%)"
+      transform: E ? "bottom" === t ? "translateY(180%)" : "translateY(-180%)" : "translateY(0%)"
     },
     config: b
   }, y ? "respect-motion-settings" : "animate-never"), S = i.useCallback(e => {
-    e.preventDefault(), e.stopPropagation(), null != x && d(x)
-  }, [d, x]);
+    e.preventDefault(), e.stopPropagation(), null != C && d(C)
+  }, [d, C]);
   return (0, r.jsx)("div", {
     className: o()(m.container, {
       [m.top]: "top" === t,
@@ -90,11 +90,11 @@ function O(e) {
     }),
     children: (0, r.jsx)(a.animated.div, {
       className: m.containerPadding,
-      style: E,
-      "aria-hidden": C,
-      children: j === h.x.HIDDEN ? (0, r.jsx)("div", {
+      style: x,
+      "aria-hidden": E,
+      children: v === h.x.HIDDEN ? (0, r.jsx)("div", {
         className: o()(m.bar, m.emptyBar)
-      }) : j === h.x.UNREAD ? (0, r.jsxs)(c.P3F, {
+      }) : v === h.x.UNREAD ? (0, r.jsxs)(c.P3F, {
         className: m.bar,
         onClick: S,
         children: ["bottom" === t ? (0, r.jsx)(c.CJ0, {
@@ -115,7 +115,7 @@ function O(e) {
           className: m.barText,
           children: g.intl.string(g.t.FCRiT3)
         })]
-      }) : j === h.x.MENTIONS ? (0, r.jsx)(c.P3F, {
+      }) : v === h.x.MENTIONS ? (0, r.jsx)(c.P3F, {
         className: o()(m.bar, m.mentionsBar),
         onClick: S,
         children: (0, r.jsx)(c.Text, {
@@ -123,10 +123,10 @@ function O(e) {
           color: "status-danger-text",
           className: m.barText,
           children: g.intl.format(g.t.EQcLyp, {
-            count: v
+            count: j
           })
         })
-      }) : j === h.x.VOICE_CHANNELS ? (0, r.jsx)(_, {
+      }) : v === h.x.VOICE_CHANNELS ? (0, r.jsx)(_, {
         jumpToVoiceChannels: u,
         guildChannels: n,
         guildChannelsVersion: l

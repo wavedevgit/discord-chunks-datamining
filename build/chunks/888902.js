@@ -1,4 +1,4 @@
-/** Chunk was on 35535 **/
+/** Chunk was on 95661 **/
 /** chunk id: 888902, original params: t (module,exports,require) **/
 module.exports = function() {
   "use strict";
@@ -7,26 +7,26 @@ module.exports = function() {
     this.dataPoints_ = [], this.color_ = "red", this.isVisible_ = true, this.cacheStartTime_ = null, this.cacheStepSize_ = 0, this.cacheValues_ = []
   }
 
-  function i(t, i) {
-    this.time = t, this.value = i
+  function e(t, e) {
+    this.time = t, this.value = e
   }
   return module.prototype = {
     toJSON: function() {
       if (this.dataPoints_.length < 1) return {};
-      for (var t = [], i = 0; i < this.dataPoints_.length; ++i) module.push(this.dataPoints_[i].value);
+      for (var t = [], e = 0; e < this.dataPoints_.length; ++e) module.push(this.dataPoints_[e].value);
       return {
         startTime: this.dataPoints_[0].time,
         endTime: this.dataPoints_[this.dataPoints_.length - 1].time,
         values: JSON.stringify(module)
       }
     },
-    addPoint: function(t, e) {
-      var s = new Date(t);
-      this.dataPoints_.push(new i(s, e)), this.dataPoints_.length > 1e3 && this.dataPoints_.shift()
+    addPoint: function(t, i) {
+      var n = new Date(t);
+      this.dataPoints_.push(new e(n, i)), this.dataPoints_.length > 1e3 && this.dataPoints_.shift()
     },
     setPoints: function(t) {
-      let i = Math.max(0, t.length - 1e3);
-      this.dataPoints_ = t.slice(i)
+      let e = Math.max(0, t.length - 1e3);
+      this.dataPoints_ = t.slice(e)
     },
     isVisible: function() {
       return this.isVisible_
@@ -43,15 +43,15 @@ module.exports = function() {
     getCount: function() {
       return this.dataPoints_.length
     },
-    getValues: function(t, i, e) {
-      return this.cacheStartTime_ == t && this.cacheStepSize_ == i && this.cacheValues_.length == e || (this.cacheValues_ = this.getValuesInternal_(t, i, e), this.cacheStartTime_ = t, this.cacheStepSize_ = i), this.cacheValues_
+    getValues: function(t, e, i) {
+      return this.cacheStartTime_ == t && this.cacheStepSize_ == e && this.cacheValues_.length == i || (this.cacheValues_ = this.getValuesInternal_(t, e, i), this.cacheStartTime_ = t, this.cacheStepSize_ = e), this.cacheValues_
     },
-    getValuesInternal_: function(t, i, e) {
-      for (var s = [], a = 0, h = 0, n = t, r = 0; r < e; ++r) {
-        for (; a < this.dataPoints_.length && this.dataPoints_[a].time < n;) h = this.dataPoints_[a].value, ++a;
-        s[r] = h, n += i
+    getValuesInternal_: function(t, e, i) {
+      for (var n = [], r = 0, a = 0, s = t, o = 0; o < i; ++o) {
+        for (; r < this.dataPoints_.length && this.dataPoints_[r].time < s;) a = this.dataPoints_[r].value, ++r;
+        n[o] = a, s += e
       }
-      return s
+      return n
     }
   }, module
 }()

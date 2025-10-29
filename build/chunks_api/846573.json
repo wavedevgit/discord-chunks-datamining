@@ -1,1 +1,0 @@
-{"id":"846573","type":"experiment","data":{"kind":"user","id":"2025-02_2025_client_platform_holdout","label":"Client Platform Holdout - H1 2025","defaultConfig":{"isInHoldout":false},"treatments":[{"id":1,"label":"Enables the holdout experiment","config":{"isInHoldout":true}}]},"fromModule":{"id":"web.js"}}

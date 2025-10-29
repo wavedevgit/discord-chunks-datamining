@@ -54,8 +54,8 @@ function b(e) {
   } = e, n = i.useRef(null), [b, _] = (0, l.Wu)([o.ZP], () => [o.ZP.isChannelMuted(t.getGuildId(), t.id), o.ZP.resolvedMessageNotifications(t)], [t]), [y, x] = i.useState(false);
   i.useEffect(() => {
     let e = () => x(true);
-    return c.S.subscribe(p.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e), () => {
-      c.S.unsubscribe(p.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
+    return c.S.subscribe(h.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e), () => {
+      c.S.unsubscribe(h.CkL.OPEN_THREAD_NOTIFICATION_SETTINGS, e)
     }
   }, []);
   let j = e => {
@@ -63,7 +63,7 @@ function b(e) {
         muted: !b
       }, d.UE.muted(!b)) : x(e => !e)
     },
-    v = f.intl.string(f.t.h850Ss);
+    O = f.intl.string(f.t.h850Ss);
   return (0, r.jsx)(a.yRy, {
     targetElementRef: n,
     shouldShow: y,
@@ -72,7 +72,7 @@ function b(e) {
     align: "right",
     autoInvert: false,
     onRequestClose: () => x(false),
-    renderPopout: e => (0, r.jsx)(h.Z, m(g({}, e), {
+    renderPopout: e => (0, r.jsx)(p.Z, m(g({}, e), {
       channel: t,
       navId: "channel-context",
       label: f.intl.string(f.t.Xm41aV)
@@ -85,9 +85,9 @@ function b(e) {
       return (0, r.jsx)(u.ZP.Icon, m(g({}, e), {
         ref: n,
         onClick: j,
-        tooltip: i ? null : v,
-        icon: b || _ !== p.bL.ALL_MESSAGES ? a.owu : a.Dkj,
-        "aria-label": v,
+        tooltip: i ? null : O,
+        icon: b || _ !== h.bL.ALL_MESSAGES ? a.owu : a.Dkj,
+        "aria-label": O,
         selected: i
       }))
     }

@@ -1,7 +1,7 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 56710 **/
 /** chunk id: 620304, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  Z: () => x
+  Z: () => C
 }), require("./388685.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
@@ -23,34 +23,34 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk931942 = require("./931942.js");
 
-function v(e) {
+function j(e) {
   let {
     guild: t,
     withMargin: l
-  } = e, v = (0, b.Z)(t), x = (0, m.Z)(t.id), C = i.useCallback(() => {
+  } = e, j = (0, b.Z)(t), C = (0, m.Z)(t.id), E = i.useCallback(() => {
     (0, _.Z)(t.id, p.Z.GUILD_BOOSTING_SIDEBAR_DISPLAY)
-  }, [t.id]), E = (0, c.e7)([h.Z], () => {
+  }, [t.id]), x = (0, c.e7)([h.Z], () => {
     var e;
     return null != (e = h.Z.getCountForGuild(t.id)) ? e : 0
   });
   i.useEffect(() => {
-    E !== t.premiumSubscriberCount && (0, f.v)(t.id, t.premiumSubscriberCount)
-  }, [t.id, E, t.premiumSubscriberCount]);
-  let S = Math.min(E / v * 100, 100),
+    x !== t.premiumSubscriberCount && (0, f.v)(t.id, t.premiumSubscriberCount)
+  }, [t.id, x, t.premiumSubscriberCount]);
+  let S = Math.min(x / j * 100, 100),
     [I, P] = (0, u.q_F)(() => ({
-      width: E === t.premiumSubscriberCount ? "calc(".concat(S, "% - 4px)") : "0%",
+      width: x === t.premiumSubscriberCount ? "calc(".concat(S, "% - 4px)") : "0%",
       config: {
         tension: 250,
         damping: 5,
         mass: 1
       }
-    }), "respect-motion-settings", [E, t.premiumSubscriberCount]);
+    }), "respect-motion-settings", [x, t.premiumSubscriberCount]);
   i.useEffect(() => {
     P({
       width: "calc(".concat(S, "% - 4px)")
     })
   }, [S, P]);
-  let N = E >= v;
+  let N = x >= j;
   return (0, r.jsx)(u.P3F, {
     "aria-label": true,
     role: "button",
@@ -61,13 +61,13 @@ function v(e) {
       }
     },
     onClick: () => {
-      C()
+      E()
     },
-    className: o()(j.container, {
-      [j.containerWithMargin]: l
+    className: o()(v.container, {
+      [v.containerWithMargin]: l
     }),
     onContextMenu: e => {
-      x && (0, d.jW)(e, async () => {
+      C && (0, d.jW)(e, async () => {
         let {
           default: e
         } = await n.e("8570").then(n.bind(n, 651138));
@@ -106,43 +106,43 @@ function v(e) {
       })
     },
     children: (0, r.jsxs)("div", {
-      className: j.contentContainer,
+      className: v.contentContainer,
       children: [(0, r.jsx)("div", {
-        className: j.progressContainer
+        className: v.progressContainer
       }), (0, r.jsx)(a.animated.div, {
-        className: o()(j.progress, {
-          [j.progressLow]: S <= 5
+        className: o()(v.progress, {
+          [v.progressLow]: S <= 5
         }),
         style: I
       }), (0, r.jsxs)("div", {
-        className: j.textContainer,
+        className: v.textContainer,
         children: [(0, r.jsxs)("div", {
-          className: j.textContentContainer,
+          className: v.textContentContainer,
           children: [(0, r.jsx)(s.xvT, {
-            className: j.text,
+            className: v.text,
             variant: "text-xs/semibold",
             children: y.intl.string(O.default.NI6Ihe)
-          }), t.premiumSubscriberCount >= v && (0, r.jsx)(s.xvT, {
-            className: j.text,
+          }), t.premiumSubscriberCount >= j && (0, r.jsx)(s.xvT, {
+            className: v.text,
             variant: "text-xs/semibold",
             children: "\uD83C\uDF89"
           })]
         }), (0, r.jsxs)("div", {
-          className: j.textContentContainer,
+          className: v.textContentContainer,
           children: [(0, r.jsx)(s.xvT, {
-            className: o()(j.text, j.boostCountText),
+            className: o()(v.text, v.boostCountText),
             variant: "text-xs/semibold",
             children: N ? y.intl.formatToPlainString(O.default["Ehpq+7"], {
-              appliedBoostCount: E
+              appliedBoostCount: x
             }) : y.intl.formatToPlainString(O.default["/rbPDs"], {
-              appliedBoostCount: E,
-              maxBoostCount: v
+              appliedBoostCount: x,
+              maxBoostCount: j
             })
           }), (0, r.jsx)(g.Z, {
             width: 12,
             height: 12,
             direction: g.Z.Directions.RIGHT,
-            className: o()(j.text, j.boostCountText)
+            className: o()(v.text, v.boostCountText)
           })]
         })]
       })]
@@ -150,12 +150,12 @@ function v(e) {
   })
 }
 
-function x(e) {
+function C(e) {
   let {
     guild: t,
     withMargin: n
   } = e;
-  return (0, r.jsx)(v, {
+  return (0, r.jsx)(j, {
     guild: t,
     withMargin: n
   })

@@ -1,4 +1,4 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 252032, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => S
@@ -38,7 +38,7 @@ function O(e) {
   })
 }
 
-function j(e) {
+function E(e) {
   let {
     channel: t,
     message: n
@@ -46,7 +46,7 @@ function j(e) {
     id: s
   } = t, {
     id: c
-  } = n, f = t.getGuildId(), g = (0, l.e7)([p.Z], () => p.Z.getGuild(f), [f]), C = t.type === _.d4z.GUILD_ANNOUNCEMENT, j = null != g && g.features.has(_.GuildFeatures.NEWS), S = C && j, {
+  } = n, h = t.getGuildId(), g = (0, l.e7)([p.Z], () => p.Z.getGuild(h), [h]), _ = t.type === C.d4z.GUILD_ANNOUNCEMENT, E = null != g && g.features.has(C.GuildFeatures.NEWS), S = _ && E, {
     editingMessage: P,
     editingTextValue: I,
     editingRichValue: Z
@@ -54,14 +54,14 @@ function j(e) {
     editingMessage: d.Z.getEditingMessage(s),
     editingTextValue: d.Z.getEditingTextValue(s),
     editingRichValue: d.Z.getEditingRichValue(s)
-  }), [s]), T = (0, l.e7)([u.default], () => u.default.getId()), N = r.useCallback((e, i, r) => {
+  }), [s]), T = (0, l.e7)([u.default], () => u.default.getId()), N = i.useCallback((e, r, i) => {
     let {
       content: l
-    } = r, s = h.Z.can(_.Plq.MANAGE_MESSAGES, t), c = null != P && null != P.author ? P.author.id : null, u = S && (c === T || s), d = {
+    } = i, s = f.Z.can(C.Plq.MANAGE_MESSAGES, t), c = null != P && null != P.author ? P.author.id : null, u = S && (c === T || s), d = {
       content: l,
       components: true
     };
-    if (n.hasFlag(_.iLy.IS_COMPONENTS_V2)) {
+    if (n.hasFlag(C.iLy.IS_COMPONENTS_V2)) {
       var p;
       let e = (null == (p = n.components[0]) ? true : p.type) === o.re.MEDIA_GALLERY,
         t = n.components.filter(e => e.type !== o.re.TEXT_DISPLAY);
@@ -71,23 +71,23 @@ function j(e) {
         id: "".concat(v.Kb)
       }), d.content = "", d.components = t
     }
-    return u && null != P && (0, m.yE)(P.flags, _.iLy.CROSSPOSTED) ? b.Z.confirmEdit(e, i, d) : a.Z.editMessage(e, i, d), Promise.resolve()
-  }, [P, S, T, t, n]), A = r.useCallback(e => {
+    return u && null != P && (0, m.yE)(P.flags, C.iLy.CROSSPOSTED) ? b.Z.confirmEdit(e, r, d) : a.Z.editMessage(e, r, d), Promise.resolve()
+  }, [P, S, T, t, n]), A = i.useCallback(e => {
     var t, n;
-    return (0, r.createElement)(E, (t = function(e) {
+    return (0, i.createElement)(j, (t = function(e) {
       for (var t = 1; t < arguments.length; t++) {
         var n = null != arguments[t] ? arguments[t] : {},
-          i = Object.keys(n);
-        "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+          r = Object.keys(n);
+        "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
           return Object.getOwnPropertyDescriptor(n, e).enumerable
-        }))), i.forEach(function(t) {
-          var i;
-          i = n[t], t in e ? Object.defineProperty(e, t, {
-            value: i,
+        }))), r.forEach(function(t) {
+          var r;
+          r = n[t], t in e ? Object.defineProperty(e, t, {
+            value: r,
             enumerable: true,
             configurable: true,
             writable: true
-          }) : e[t] = i
+          }) : e[t] = r
         })
       }
       return e
@@ -97,15 +97,15 @@ function j(e) {
     }, Object.getOwnPropertyDescriptors ? Object.defineProperties(t, Object.getOwnPropertyDescriptors(n)) : (function(e, t) {
       var n = Object.keys(e);
       if (Object.getOwnPropertySymbols) {
-        var i = Object.getOwnPropertySymbols(e);
-        n.push.apply(n, i)
+        var r = Object.getOwnPropertySymbols(e);
+        n.push.apply(n, r)
       }
       return n
     })(Object(n)).forEach(function(e) {
       Object.defineProperty(t, e, Object.getOwnPropertyDescriptor(n, e))
     }), t))
   }, [c]);
-  return null != I && null != Z ? (0, i.jsx)(y.Z, {
+  return null != I && null != Z ? (0, r.jsx)(y.Z, {
     ref: true,
     channel: t,
     message: n,
@@ -120,7 +120,7 @@ function j(e) {
   }) : null
 }
 
-function E(e) {
+function j(e) {
   let {
     textValue: t,
     richValue: n,
@@ -130,10 +130,10 @@ function E(e) {
     onSubmit: u,
     onKeyDown: d,
     renderLeftAccessories: p
-  } = e, [h, m] = r.useState(true), g = r.useCallback(() => m(true), []), b = r.useCallback(() => m(false), []);
-  return r.useEffect(() => (f.S.subscribe(_.CkL.TEXTAREA_FOCUS, g), f.S.subscribe(_.CkL.TEXTAREA_BLUR, b), () => {
-    f.S.unsubscribe(_.CkL.TEXTAREA_FOCUS, g), f.S.unsubscribe(_.CkL.TEXTAREA_BLUR, b)
-  }), [g, b]), (0, i.jsx)(c.ZP, {
+  } = e, [f, m] = i.useState(true), g = i.useCallback(() => m(true), []), b = i.useCallback(() => m(false), []);
+  return i.useEffect(() => (h.S.subscribe(C.CkL.TEXTAREA_FOCUS, g), h.S.subscribe(C.CkL.TEXTAREA_BLUR, b), () => {
+    h.S.unsubscribe(C.CkL.TEXTAREA_FOCUS, g), h.S.unsubscribe(C.CkL.TEXTAREA_BLUR, b)
+  }), [g, b]), (0, r.jsx)(c.ZP, {
     className: x.channelTextArea,
     textValue: t,
     richValue: n,
@@ -147,7 +147,7 @@ function E(e) {
       return u(t)
     },
     onKeyDown: d,
-    focused: h,
+    focused: f,
     onFocus: g,
     onBlur: b,
     renderLeftAccessories: p
@@ -156,15 +156,15 @@ function E(e) {
 
 function S(e, t, n) {
   let {
-    message: r,
+    message: i,
     channel: l,
     compact: a
   } = e;
-  return n ? (0, i.jsx)(j, {
+  return n ? (0, r.jsx)(E, {
     channel: l,
-    message: r
-  }) : (0, i.jsx)(C.ZP, {
-    message: r,
+    message: i
+  }) : (0, r.jsx)(_.ZP, {
+    message: i,
     content: t,
     compact: null != a && a
   })

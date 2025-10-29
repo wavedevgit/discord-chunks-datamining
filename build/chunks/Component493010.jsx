@@ -1,4 +1,4 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 493010, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => v
@@ -27,38 +27,38 @@ let v = function(e) {
     guild: n,
     maxWidth: v
   } = e;
-  r.useEffect(() => {
+  i.useEffect(() => {
     (0, p.Q3)(l.z.CALL_CHAT_BUTTON_TEXT_IN_VOICE_COACH_MARK, {
-      dismissAction: C.L.AUTO
+      dismissAction: _.L.AUTO
     })
   }, []);
-  let x = r.useCallback(() => {
+  let x = i.useCallback(() => {
       o.Z.updateChatOpen(t.id, false), m.S.safeDispatch(b.CkL.FOCUS_CHAT_BUTTON)
     }, [t.id]),
-    O = (0, i.jsx)(h.ZP.Icon, {
+    O = (0, r.jsx)(f.ZP.Icon, {
       icon: a.Dio,
       tooltip: y.intl.string(y.t.cpT0Cq),
       onClick: x
     });
-  return (0, i.jsxs)(u.Z, {
+  return (0, r.jsxs)(u.Z, {
     sidebarType: u.y.CallChatSidebar,
     maxWidth: v,
     floatingLayer: g.ZP,
-    children: [(0, i.jsx)(s.Z, {
+    children: [(0, r.jsx)(s.Z, {
       channel: t,
-      draftType: f.d.ChannelMessage
-    }), (0, i.jsxs)(h.ZP, {
+      draftType: h.d.ChannelMessage
+    }), (0, r.jsxs)(f.ZP, {
       toolbar: O,
       "aria-label": y.intl.string(y.t.BIYAqa),
-      children: [(0, i.jsx)(h.ZP.ChannelIcon, {
+      children: [(0, r.jsx)(f.ZP.ChannelIcon, {
         icon: a.kBi,
         "aria-label": y.intl.string(y.t.Kx5kCN)
-      }), (0, i.jsx)(h.ZP.Title, {
+      }), (0, r.jsx)(f.ZP.Title, {
         children: t.name
       })]
-    }), (0, i.jsx)("div", {
-      className: _.chat,
-      children: (0, i.jsx)(c.Z, {
+    }), (0, r.jsx)("div", {
+      className: C.chat,
+      children: (0, r.jsx)(c.Z, {
         channel: t,
         guild: n,
         chatInputType: d.Ie.SIDEBAR

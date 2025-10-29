@@ -1,6 +1,5 @@
 /** Chunk was on 63141 **/
 /** chunk id: 876205, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
   Z: () => u
 });
@@ -24,21 +23,21 @@ function u(e) {
     value: t,
     action: n,
     shouldShow: a
-  } = e, u = (0, r.e7)([o.ZP], () => o.ZP.getKeybindForAction(n, false, true));
+  } = e, u = (0, r.e7)([l.ZP], () => l.ZP.getKeybindForAction(n, false, true));
   if (null == u || !a) return null;
-  let p = l.BB(u.shortcut),
-    h = d[n],
-    f = t ? h.slash : h.default;
+  let h = s.BB(u.shortcut),
+    p = d[n],
+    f = t ? p.slash : p.default;
   return (0, i.jsxs)("div", {
     className: c.keybindIndicator,
     children: [(0, i.jsx)(f, {
       className: c.keybindIcon,
       size: "xs",
       color: "currentColor"
-    }), (0, i.jsx)(s.Text, {
+    }), (0, i.jsx)(o.Text, {
       variant: "text-xxs/semibold",
       className: c.keybindIndicatorText,
-      children: p
+      children: h
     })]
   })
 }

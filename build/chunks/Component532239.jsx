@@ -1,4 +1,4 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 532239, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -20,21 +20,21 @@ function d(e, t, n, d) {
       applicationId: d,
       appContext: (0, a.bp)()
     },
-    h = () => {
+    f = () => {
       null != t && e.type === c.d4z.GUILD_VOICE && (0, o.W)(function(e) {
         for (var t = 1; t < arguments.length; t++) {
           var n = null != arguments[t] ? arguments[t] : {},
-            i = Object.keys(n);
-          "function" == typeof Object.getOwnPropertySymbols && (i = i.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
+            r = Object.keys(n);
+          "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
             return Object.getOwnPropertyDescriptor(n, e).enumerable
-          }))), i.forEach(function(t) {
-            var i;
-            i = n[t], t in e ? Object.defineProperty(e, t, {
-              value: i,
+          }))), r.forEach(function(t) {
+            var r;
+            r = n[t], t in e ? Object.defineProperty(e, t, {
+              value: r,
               enumerable: true,
               configurable: true,
               writable: true
-            }) : e[t] = i
+            }) : e[t] = r
           })
         }
         return e
@@ -42,22 +42,22 @@ function d(e, t, n, d) {
         guild: t
       }, p))
     },
-    f = (0, l._k)({
+    h = (0, l._k)({
       location: "more_settings_invite_item"
     }),
-    m = f.isInCallEntrypointEnabled ? r.oLu : r.ejJ;
-  if (null != d) return (0, i.jsx)(r.sNh, {
+    m = h.isInCallEntrypointEnabled ? i.oLu : i.ejJ;
+  if (null != d) return (0, r.jsx)(i.sNh, {
     id: "invite-to-stream",
     label: u.intl.string(u.t["OzOM/q"]),
-    action: h,
-    icon: r.ejJ
+    action: f,
+    icon: i.ejJ
   });
   if (null == t || null == e || !s.Z.can(c.Plq.CREATE_INSTANT_INVITE, e)) return null;
-  let g = f.isInCallEntrypointEnabled ? u.intl.string(u.t["EE+P0H"]) : u.intl.string(u.t["6Qgrev"]);
-  return (0, i.jsx)(r.sNh, {
+  let g = h.isInCallEntrypointEnabled ? u.intl.string(u.t["EE+P0H"]) : u.intl.string(u.t["6Qgrev"]);
+  return (0, r.jsx)(i.sNh, {
     id: "invite-friends",
     label: g,
-    action: h,
+    action: f,
     icon: m
   })
 }

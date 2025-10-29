@@ -24,19 +24,19 @@ var Chunk951288 = require("./951288.js"),
   Chunk388032 = require("./388032.jsx"),
   Chunk196979 = require("./196979.js");
 
-function O(e) {
+function v(e) {
   let {
     onClick: t,
     className: n
   } = e, i = c.S6n;
   return (0, r.jsx)(u.Z, {
     iconContainerClassName: a()({
-      [v.continueIconContainer]: false
+      [O.continueIconContainer]: false
     }),
     icon: (0, r.jsx)(i, {
       size: "custom",
       color: "currentColor",
-      className: v.continueIcon,
+      className: O.continueIcon,
       height: 20,
       width: 20
     }),
@@ -56,9 +56,9 @@ function C(e) {
     usersInSummary: i
   } = (0, y.Z)(t.id);
   return (0, r.jsxs)("div", {
-    className: v.audienceSummary,
+    className: O.audienceSummary,
     children: [(0, r.jsx)(d.ZP, {
-      className: v.summaryItem,
+      className: O.summaryItem,
       guildId: t.guild_id,
       users: i,
       size: d.u8.SIZE_16
@@ -93,35 +93,35 @@ function I(e) {
     canCreateGuildEvent: d
   } = (0, g.XJ)(t), u = (0, x.Z)(t.id), y = i.useRef(null);
   return (0, r.jsxs)("div", {
-    className: v.container,
+    className: O.container,
     ref: y,
     children: [(0, r.jsx)(m.Z, {
       eventTargetRef: y
     }), (0, r.jsxs)("div", {
-      className: v.content,
+      className: O.content,
       children: [(0, r.jsxs)("div", {
-        className: v.headerContainer,
+        className: O.headerContainer,
         children: [(0, r.jsx)(c.Heading, {
-          className: v.__invalid_title,
+          className: O.__invalid_title,
           variant: "heading-xxl/normal",
           children: j.intl.string(j.t.QGnDLs)
         }), (0, r.jsx)(c.Text, {
           tag: "div",
-          className: v.subtitle,
+          className: O.subtitle,
           variant: "heading-lg/normal",
           children: j.intl.string(j.t.djfK36)
         })]
-      }), u ? null : (0, r.jsx)(p.Z, {
+      }), u ? null : (0, r.jsx)(h.Z, {
         channelId: t.id
       }), l ? (0, r.jsx)(f.Z, {
-        className: v.eventPrompt,
+        className: O.eventPrompt,
         channel: t
-      }) : null, d ? (0, r.jsx)(h.Z, {
-        className: v.eventPrompt,
+      }) : null, d ? (0, r.jsx)(p.Z, {
+        className: O.eventPrompt,
         guildId: o
-      }) : null, l ? (0, r.jsx)(O, {
+      }) : null, l ? (0, r.jsx)(v, {
         className: a()({
-          [v.eventPrompt]: true
+          [O.eventPrompt]: true
         }),
         onClick: n
       }) : null, (0, r.jsx)(C, {

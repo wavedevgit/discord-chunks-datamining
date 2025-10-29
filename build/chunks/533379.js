@@ -1,4 +1,4 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 533379, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   R: () => a
@@ -13,10 +13,10 @@ function a(e) {
     chatInputType: n
   } = e, a = (0, l.g)(t), {
     activeCommand: o
-  } = (0, i.cj)([r.Z], () => {
+  } = (0, r.cj)([i.Z], () => {
     var e;
     return {
-      activeCommand: (null == (e = n.commands) ? true : e.enabled) ? r.Z.getActiveCommand(t.id) : null
+      activeCommand: (null == (e = n.commands) ? true : e.enabled) ? i.Z.getActiveCommand(t.id) : null
     }
   });
   return null == o && a

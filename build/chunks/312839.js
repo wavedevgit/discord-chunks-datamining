@@ -1,8 +1,7 @@
 /** Chunk was on 63141 **/
 /** chunk id: 312839, original params: e,t,n (module,exports,require) **/
-"use strict";
 require.d(exports, {
-  P: () => p,
+  P: () => h,
   R: () => u
 }), require("./35282.js");
 var Chunk13245 = require("./13245.js"),
@@ -47,14 +46,14 @@ function d(e, t) {
 function u(e, t) {
   return {
     trackView() {
-      let n = s.default.isInstanceLocked() ? l.Sbl.LOCKED_OVERLAY : l.Sbl.UNLOCKED_OVERLAY;
-      i.Z.track(l.rMx.NOTIFICATION_VIEWED, d(c({}, t), {
+      let n = o.default.isInstanceLocked() ? s.Sbl.LOCKED_OVERLAY : s.Sbl.UNLOCKED_OVERLAY;
+      i.Z.track(s.rMx.NOTIFICATION_VIEWED, d(c({}, t), {
         location: n
       })), i.Z.notificationEvent(e, a.bv.Viewed)
     },
     trackClick(n) {
-      let r = s.default.isInstanceLocked() ? l.Sbl.LOCKED_OVERLAY : l.Sbl.UNLOCKED_OVERLAY;
-      i.Z.track(l.rMx.NOTIFICATION_CLICKED, d(c({}, t), {
+      let r = o.default.isInstanceLocked() ? s.Sbl.LOCKED_OVERLAY : s.Sbl.UNLOCKED_OVERLAY;
+      i.Z.track(s.rMx.NOTIFICATION_CLICKED, d(c({}, t), {
         location: r,
         action_type: n
       })), i.Z.notificationEvent(e, a.bv.Clicked)
@@ -62,7 +61,7 @@ function u(e, t) {
   }
 }
 
-function p() {
+function h() {
   let e = Chunk556296.ZP.getOverlayKeybind();
   return null != module ? (0, Chunk13140.BB)(module.shortcut, true).split(" + ") : ["???"]
 }

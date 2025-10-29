@@ -1,6 +1,6 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 226027, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
-  E: () => r
+  E: () => i
 });
-var i, r = ((i = {}).NEW_MESSAGES = "new_messages", i.OPT_IN_CHANNEL = "opt_in_channel", i.SUMMARIES = "summaries", i)
+var r, i = ((r = {}).NEW_MESSAGES = "new_messages", r.OPT_IN_CHANNEL = "opt_in_channel", r.SUMMARIES = "summaries", r)

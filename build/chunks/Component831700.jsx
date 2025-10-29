@@ -1,4 +1,4 @@
-/** Chunk was on 30437 **/
+/** Chunk was on 56710 **/
 /** chunk id: 831700, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => ei
@@ -181,11 +181,11 @@ class en extends Chunk98597.ZP {
       connectDragPreview: m,
       canReorderChannel: b,
       canMoveMembers: _,
-      showTutorial: j,
-      hasActiveEvent: v,
-      embeddedApps: x,
-      isSubscriptionGated: C,
-      isFavoriteSuggestion: E,
+      showTutorial: v,
+      hasActiveEvent: j,
+      embeddedApps: C,
+      isSubscriptionGated: E,
+      isFavoriteSuggestion: x,
       withGuildIcon: S,
       hasStartTime: I
     } = this.props, {
@@ -286,7 +286,7 @@ class en extends Chunk98597.ZP {
         shouldShowGuildVerificationPopout: true
       });
       let a = l && o > 0;
-      a && d.Z.updateChatOpen(n.id, true), v.Z.handleVoiceConnect({
+      a && d.Z.updateChatOpen(n.id, true), j.Z.handleVoiceConnect({
         channel: n,
         connected: t,
         needSubscriptionToAccess: i,
@@ -324,7 +324,7 @@ class en extends Chunk98597.ZP {
       let {
         channel: e
       } = this.props, t = e.getGuildId();
-      null != t && (0, S.n)(t) && (0, E.hk)(t), this.handleVoiceConnect()
+      null != t && (0, S.n)(t) && (0, x.hk)(t), this.handleVoiceConnect()
     }), $(this, "handleVoiceStatusClick", e => {
       let {
         connected: t,
@@ -417,15 +417,15 @@ function ei(e) {
       bypassLimit: k.Z.can(q.Plq.MOVE_MEMBERS, n),
       unverifiedAccount: !r.canChat
     }
-  }), f = (0, a.e7)([B.Z], () => B.Z.hasVideo(n.id)), h = (0, g.ZP)(n), m = (0, j.ZP)(n), O = (0, P.qY)(n.id), {
+  }), f = (0, a.e7)([B.Z], () => B.Z.hasVideo(n.id)), h = (0, g.ZP)(n), m = (0, v.ZP)(n), O = (0, P.qY)(n.id), {
     enabled: y
   } = b.W.useExperiment({
     guildId: t.id,
     location: "VoiceChannel"
-  }), v = (0, a.e7)([_.Z], () => !!y && null != _.Z.getStartTime(n), [n, y]), {
-    isSubscriptionGated: x,
-    needSubscriptionToAccess: E
-  } = (0, I.Z)(n.id), S = (0, C.Z)(), N = (0, a.e7)([U.ZP], () => U.ZP.isFavorite(t.id, n.id)), w = e.connected || (null == S ? true : S.channelId) === n.id, {
+  }), j = (0, a.e7)([_.Z], () => !!y && null != _.Z.getStartTime(n), [n, y]), {
+    isSubscriptionGated: C,
+    needSubscriptionToAccess: x
+  } = (0, I.Z)(n.id), S = (0, E.Z)(), N = (0, a.e7)([U.ZP], () => U.ZP.isFavorite(t.id, n.id)), w = e.connected || (null == S ? true : S.channelId) === n.id, {
     enableHangStatus: A,
     showEmptyChannelTopic: R
   } = (0, Z.bN)({
@@ -443,8 +443,8 @@ function ei(e) {
     isChannelSelected: o,
     isChannelCollapsed: s,
     voiceStates: c,
-    isSubscriptionGated: x,
-    needSubscriptionToAccess: E,
+    isSubscriptionGated: C,
+    needSubscriptionToAccess: x,
     enableConnectedUserLimit: true,
     enableActivities: true
   }), V = w && null == F;
@@ -454,8 +454,8 @@ function ei(e) {
     embeddedActivityType: q.IIU.PLAYING,
     video: f,
     hasActiveEvent: null != O,
-    isSubscriptionGated: x,
-    needSubscriptionToAccess: E
+    isSubscriptionGated: C,
+    needSubscriptionToAccess: x
   }, u, p, e), {
     connected: w,
     isFavoriteSuggestion: l && !N,
@@ -466,6 +466,6 @@ function ei(e) {
     showEmptyChannelTopic: R,
     enableOpenTIVForPing: L,
     hasChannelInfo: null != F,
-    hasStartTime: v
+    hasStartTime: j
   }))
 }

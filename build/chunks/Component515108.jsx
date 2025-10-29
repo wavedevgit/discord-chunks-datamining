@@ -1,4 +1,4 @@
-/** Chunk was on 96861 **/
+/** Chunk was on 76418 **/
 /** chunk id: 515108, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => p
@@ -20,18 +20,18 @@ function m(e) {
   } = e;
   return (0, r.jsx)(i.Modal, {
     size: "md",
-    title: u.intl.string(u.t.Hd3D8W),
+    title: d.intl.string(d.t.Hd3D8W),
     actions: [{
       variant: "primary",
-      text: u.intl.string(u.t.cpT0Cq),
+      text: d.intl.string(d.t.cpT0Cq),
       onClick: t
     }],
     onClose: t,
     transitionState: n,
-    children: (0, r.jsx)(o.Text, {
+    children: (0, r.jsx)(s.Text, {
       variant: "text-md/medium",
       color: "text-secondary",
-      children: u.intl.string(u.t.Ij97SL)
+      children: d.intl.string(d.t.Ij97SL)
     })
   })
 }
@@ -41,53 +41,53 @@ function p(e) {
     quest: t,
     sourceQuestContent: n,
     transitionState: i,
-    onClose: u,
+    onClose: d,
     rewardContent: p,
-    isRewardContentLoading: C,
-    rewardContentHasError: f,
-    location: h
-  } = e, j = s.jn.REWARD_MODAL, [y, x] = a.useState(true);
-  if (f) return (0, r.jsx)(m, {
-    onClose: u,
+    isRewardContentLoading: f,
+    rewardContentHasError: x,
+    location: C
+  } = e, g = o.jn.REWARD_MODAL, [h, _] = a.useState(true);
+  if (x) return (0, r.jsx)(m, {
+    onClose: d,
     transitionState: i
   });
-  let v = C || y;
+  let j = f || h;
   return (0, r.jsx)(l.A, {
     questOrQuests: t,
-    questContent: j,
+    questContent: g,
     sourceQuestContent: n,
     children: e => (0, r.jsxs)(r.Fragment, {
-      children: [v ? (0, r.jsx)(o.$jN, {
-        className: d.spinner,
-        type: o.$jN.Type.WANDERING_CUBES
+      children: [j ? (0, r.jsx)(s.$jN, {
+        className: u.spinner,
+        type: s.$jN.Type.WANDERING_CUBES
       }) : null, (0, r.jsx)("div", {
         ref: e,
         style: {
-          visibility: v ? "hidden" : "visible"
+          visibility: j ? "hidden" : "visible"
         },
-        children: (0, r.jsxs)(o.Y0X, {
+        children: (0, r.jsxs)(s.Y0X, {
           "data-migration-pending": true,
-          transitionState: v ? o.Dvm.HIDDEN : i,
-          size: o.CgR.DYNAMIC,
-          className: d.modal,
+          transitionState: j ? s.Dvm.HIDDEN : i,
+          size: s.CgR.DYNAMIC,
+          className: u.modal,
           parentComponent: "QuestRewardV2ModalBase",
-          children: [(0, r.jsx)(o.olH, {
+          children: [(0, r.jsx)(s.olH, {
             "data-migration-pending": true,
-            className: d.closeButton,
-            onClick: u,
+            className: u.closeButton,
+            onClick: d,
             withCircleBackground: true
           }), (0, r.jsxs)("div", {
-            className: d.modalContent,
+            className: u.modalContent,
             children: [(0, r.jsx)("div", {
-              className: d.leftPanel,
+              className: u.leftPanel,
               children: p
             }), (0, r.jsx)("div", {
-              className: d.rightPanel,
+              className: u.rightPanel,
               children: (0, r.jsx)(c.Z, {
                 quest: t,
                 sourceQuestContent: n,
-                onLoadComplete: () => x(false),
-                location: h
+                onLoadComplete: () => _(false),
+                location: C
               })
             })]
           })]

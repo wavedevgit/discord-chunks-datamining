@@ -1,4 +1,4 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 73274, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => d
@@ -17,18 +17,18 @@ function d(e) {
     scrollerRef: t
   } = e, n = function(e, t) {
     if (null == e) return {};
-    var n, i, r = function(e, t) {
+    var n, r, i = function(e, t) {
       if (null == e) return {};
-      var n, i, r = {},
+      var n, r, i = {},
         l = Object.keys(e);
-      for (i = 0; i < l.length; i++) n = l[i], t.indexOf(n) >= 0 || (r[n] = e[n]);
-      return r
+      for (r = 0; r < l.length; r++) n = l[r], t.indexOf(n) >= 0 || (i[n] = e[n]);
+      return i
     }(e, t);
     if (Object.getOwnPropertySymbols) {
       var l = Object.getOwnPropertySymbols(e);
-      for (i = 0; i < l.length; i++) n = l[i], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (r[n] = e[n])
+      for (r = 0; r < l.length; r++) n = l[r], !(t.indexOf(n) >= 0) && Object.prototype.propertyIsEnumerable.call(e, n) && (i[n] = e[n])
     }
-    return r
+    return i
   }(e, ["scrollerRef"]);
   let d = (0, l.Z)(() => {
       let e = t.current;
@@ -46,10 +46,10 @@ function d(e) {
         })
       })
     }),
-    h = i.useCallback(e => {
-      var i, r, l;
+    f = r.useCallback(e => {
+      var r, i, l;
       if (!n.keyboardModeEnabled) return;
-      let a = null == (r = t.current) || null == (i = r.getScrollerNode()) ? true : i.ownerDocument,
+      let a = null == (i = t.current) || null == (r = i.getScrollerNode()) ? true : r.ownerDocument,
         o = null == a ? true : a.querySelector(e);
       null != o && (null == (l = t.current) || l.scrollIntoViewNode({
         node: o,
@@ -57,19 +57,19 @@ function d(e) {
         callback: () => null == o ? true : o.focus()
       }))
     }, [n.keyboardModeEnabled, t]),
-    f = i.useCallback(() => {
+    h = r.useCallback(() => {
       n.hasMoreAfter || o.S.dispatchToLastSubscribed(u.CkL.TEXTAREA_FOCUS)
     }, [n.hasMoreAfter]),
-    m = (0, r.ZP)({
+    m = (0, i.ZP)({
       id: s.W,
       preserveFocusPosition: false,
-      setFocus: h,
+      setFocus: f,
       isEnabled: n.keyboardModeEnabled && !n.isEditing,
       scrollToStart: p,
       scrollToEnd: d,
-      onNavigateNextAtEnd: f
+      onNavigateNextAtEnd: h
     }),
-    g = i.useCallback(e => {
+    g = r.useCallback(e => {
       let {
         atEnd: t = false
       } = e;

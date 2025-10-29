@@ -1,4 +1,4 @@
-/** Chunk was on 47840 **/
+/** Chunk was on 73726 **/
 /** chunk id: 450936, original params: e,t,n (module,exports,require) **/
 require.d(exports, {
   Z: () => b
@@ -21,60 +21,60 @@ let g = [Chunk911969.yU.PRIMARY_ENTRY_POINT, Chunk911969.yU.CHAT, Chunk911969.yU
 function b(e) {
   var t, n, b;
   let {
-    context: C
-  } = e, y = C.channel, _ = i.useMemo(() => {
+    context: _
+  } = e, y = _.channel, C = r.useMemo(() => {
     if (true !== y.isDM()) return null;
-    let e = f.default.getUser(y.getRecipientId());
+    let e = h.default.getUser(y.getRecipientId());
     return true === e || true !== e.bot ? null : e
-  }, [y]), v = (0, r.e7)([d.Z], () => {
+  }, [y]), v = (0, i.e7)([d.Z], () => {
     var e;
-    return d.Z.isFetchingProfile(null != (e = null == _ ? true : _.id) ? e : m.lds)
-  }), x = (0, o.Z)(v), O = (0, r.e7)([c.Z], () => c.Z.getAppIdForBotUserId(null == _ ? true : _.id)), j = (0, r.e7)([d.Z], () => {
+    return d.Z.isFetchingProfile(null != (e = null == C ? true : C.id) ? e : m.lds)
+  }), x = (0, o.Z)(v), O = (0, i.e7)([c.Z], () => c.Z.getAppIdForBotUserId(null == C ? true : C.id)), E = (0, i.e7)([d.Z], () => {
     var e;
-    return null !== _ ? null == (e = d.Z.getUserProfile(null == _ ? true : _.id)) ? true : e.application : true
-  }), E = null != O ? O : null == j ? true : j.id;
-  i.useEffect(() => {
-    if (null == E) {
+    return null !== C ? null == (e = d.Z.getUserProfile(null == C ? true : C.id)) ? true : e.application : true
+  }), j = null != O ? O : null == E ? true : E.id;
+  r.useEffect(() => {
+    if (null == j) {
       var e;
-      (0, p.Z)(null != (e = null == _ ? true : _.id) ? e : m.lds, true, {
+      (0, p.Z)(null != (e = null == C ? true : C.id) ? e : m.lds, true, {
         withMutualGuilds: true
       })
     }
-  }, [_, E]), i.useEffect(() => {
-    (null == _ ? true : _.id) != null && l.Z.dispatch({
+  }, [C, j]), r.useEffect(() => {
+    (null == C ? true : C.id) != null && l.Z.dispatch({
       type: "APP_DM_OPEN",
-      botUserId: _.id
+      botUserId: C.id
     })
-  }, [null == _ ? true : _.id]);
+  }, [null == C ? true : C.id]);
   let S = (0, s.v1)({
       channel: y,
       type: "channel"
     }, {
       commandTypes: g
     }, {
-      applicationId: E,
-      allowFetch: (null == _ ? true : _.id) != null,
+      applicationId: j,
+      allowFetch: (null == C ? true : C.id) != null,
       allowApplicationState: true
     }),
-    P = S.commands.filter(e => e.type === a.yU.PRIMARY_ENTRY_POINT && e.applicationId === E)[0],
+    P = S.commands.filter(e => e.type === a.yU.PRIMARY_ENTRY_POINT && e.applicationId === j)[0],
     I = S.commands.filter(e => "0" !== e.id && !e.id.startsWith("-")),
     Z = S.loading,
     T = null == (t = S.descriptors.find(e => {
       var t;
-      return (null == (t = e.application) ? true : t.id) === E
+      return (null == (t = e.application) ? true : t.id) === j
     })) ? true : t.application,
-    N = i.useMemo(() => null != T ? h.ZP.createFromServer(T) : true, [T]),
-    A = (0, u.q)(null == N ? E : true),
+    N = r.useMemo(() => null != T ? f.ZP.createFromServer(T) : true, [T]),
+    A = (0, u.q)(null == N ? j : true),
     w = null != (n = null != N ? N : A) ? n : true,
     M = null == w || Z && 0 === I.length;
   return {
     application: w,
     isInitialLoading: M,
-    isAppDM: null != (b = null == _ ? true : _.bot) && b,
+    isAppDM: null != (b = null == C ? true : C.bot) && b,
     primaryEntryPointCommand: P,
     isProfileFetching: v,
     wasProfileFetching: null != x ? x : null,
-    applicationId: E,
+    applicationId: j,
     channelId: y.id,
     commands: I
   }

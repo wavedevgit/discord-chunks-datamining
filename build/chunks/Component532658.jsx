@@ -481,7 +481,7 @@ let K = Chunk647438.memo(function(e) {
         m || (0, u.jW)(e, async () => {
           let {
             default: e
-          } = await Promise.all([n.e("79695"), n.e("6524")]).then(n.bind(n, 27900));
+          } = await Promise.all([n.e("79695"), n.e("6524"), n.e("39834")]).then(n.bind(n, 27900));
           return (0, P.Ws)(w.Odu.VOICE_V3, {
             type: P.Qu.VOICE,
             value: P.bk.SETTINGS_OPENED,
