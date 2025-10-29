@@ -113,19 +113,19 @@ function J(e) {
               n = null != (i = A.Z.getChannel(e)) ? i : null;
             o()(null != n, "Send channel must be defined"), (0, N.uL)(H.Z5c.CHANNEL(n.guild_id, n.id)), (0, C.i)(H.IlC.OVERLAY, true), true === t.extra.fake_inventory_item ? await (0, j.k)({
               channel: n,
-              content: Y.intl.formatToPlainString(Y.t.UVBA9g, {
+              content: B.intl.formatToPlainString(B.t.UVBA9g, {
                 gameName: t.extra.game_name
               }),
               whenReady: true,
               doNotNotifyOnError: false,
-              location: B.dy.OVERLAY
+              location: Y.dy.OVERLAY
             }) : await (0, j.p)({
               channel: n,
-              content: Y.intl.string(Y.t.DwAcMz),
+              content: B.intl.string(B.t.DwAcMz),
               entry: t,
               whenReady: true,
               doNotNotifyOnError: false,
-              location: B.dy.OVERLAY
+              location: Y.dy.OVERLAY
             })
           }
           y.Z.track(H.rMx.OVERLAY_GAME_INVITE_SENT, {
@@ -151,7 +151,7 @@ function J(e) {
         value: G.bk.CHAT,
         userId: a.id
       })
-    }, x = E ? Y.intl.string(Y.t["3fRySx"]) : Y.intl.string(Y.t.XHxDIV), I = E ? (0, i.jsx)(h.ejJ, {
+    }, x = E ? B.intl.string(B.t["3fRySx"]) : B.intl.string(B.t.XHxDIV), I = E ? (0, i.jsx)(h.ejJ, {
       color: "currentColor",
       size: "sm"
     }) : (0, i.jsx)(h.Uuj, {
@@ -207,7 +207,7 @@ function q(e) {
         m("unsent")
       }
     }
-  }, y = Y.intl.string(Y.t.OKsSCR);
+  }, y = B.intl.string(B.t.OKsSCR);
   return (0, i.jsx)(d.u, {
     text: y,
     "aria-label": y,
@@ -324,7 +324,7 @@ function et(e) {
         variant: "text-xs/medium",
         color: "header-secondary",
         tag: "div",
-        children: Y.intl.string(Y.t.y9eo7a)
+        children: B.intl.string(B.t.y9eo7a)
       })
     }), t.map((e, t) => (0, i.jsx)($, {
       idx: t,
@@ -339,7 +339,7 @@ function en(e) {
     gamingId: t,
     maxUserShowCount: n,
     userAffinityThresholdV2: i = .0029
-  } = e, l = (0, I.Z)(t, "useLiveActivityRows");
+  } = e, l = (0, I.Z)(t);
   (0, E.ZP)(() => {
     (0, w._)()
   });
@@ -442,7 +442,7 @@ function er(e) {
       },
       size: p.Ph.SMALL,
       color: p.Tt.PRIMARY,
-      children: Y.intl.string(Y.t["6Qgrev"])
+      children: B.intl.string(B.t["6Qgrev"])
     }) : null]
   })
 }
@@ -450,7 +450,7 @@ function er(e) {
 function el(e) {
   let {
     locked: t
-  } = e, n = (0, F.II)(), r = null == n ? true : n.id, l = null == n ? true : n.altId, o = (0, I.Z)(r, "ActivityWidget"), a = (0, c.e7)([L.default], () => L.default.getCurrentUser()), s = null != l ? l : r, u = (0, c.e7)([D.Z], () => null == s ? null : D.Z.getApplicationActivity(s), [s]);
+  } = e, n = (0, F.II)(), r = null == n ? true : n.id, l = null == n ? true : n.altId, o = (0, I.Z)(r), a = (0, c.e7)([L.default], () => L.default.getCurrentUser()), s = null != l ? l : r, u = (0, c.e7)([D.Z], () => null == s ? null : D.Z.getApplicationActivity(s), [s]);
   (0, E.ZP)(() => (Z.L(), () => Z.v()));
   let d = en({
     gamingId: s,

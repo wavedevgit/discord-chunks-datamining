@@ -228,7 +228,7 @@ function eS() {
       gameId: i,
       lastSentTimestamp: Date.now()
     }), false;
-    let s = (0, B.Z)(e, i, r);
+    let s = (0, Y.Z)(e, i, r);
     return null != s && (ep(i, e, {
       userId: e,
       gameId: i,
@@ -357,7 +357,7 @@ let eC = new eI(Chunk570140.Z, {
             break;
           case q.mFx.JOIN_REQUEST:
             if (null == (r = Z.Z.getApplicationActivity(s)) || null == r.party || r.party.id !== t.activity.party_id) returnfalse;
-            o = (0, Y.Z)(e, n, a, r);
+            o = (0, B.Z)(e, n, a, r);
             break;
           case q.mFx.STREAM_REQUEST:
             let {
