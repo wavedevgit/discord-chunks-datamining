@@ -2,16 +2,17 @@
 /** chunk id: 469165, original params: e,t,n (module,exports,re quire) **/
 "use strict";
 require.d(exports, {
-  EA: () => L,
-  Recurring3PModal: () => M,
-  gu: () => P,
-  wQ: () => k
+  EA: () => k,
+  Recurring3PModal: () => U,
+  gu: () => L,
+  wQ: () => G
 }), require("./388685.js"), require("./642613.js"), require("./539854.js");
 var Chunk951288 = require("./951288.js"),
   Chunk647438 = require("./647438.js"),
   Chunk793030 = require("./793030.js"),
   Chunk442837 = require("./442837.js"),
   Chunk481060 = require("./481060.js"),
+  Chunk210887 = require("./210887.js"),
   Chunk594174 = require("./594174.js"),
   Chunk626135 = require("./626135.js"),
   Chunk63063 = require("./63063.js"),
@@ -20,6 +21,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk638212 = require("./638212.jsx"),
   Chunk518638 = require("./518638.js"),
   Chunk725727 = require("./725727.js"),
+  Chunk823581 = require("./823581.jsx"),
   Chunk902135 = require("./902135.jsx"),
   Chunk474936 = require("./474936.js"),
   Chunk981631 = require("./981631.js"),
@@ -28,7 +30,7 @@ var Chunk951288 = require("./951288.js"),
   Chunk180964 = require("./180964.js"),
   Chunk730440 = require("./730440.js");
 
-function I(e, t, n) {
+function S(e, t, n) {
   return t in e ? Object.defineProperty(e, t, {
     value: n,
     enumerable: true,
@@ -37,20 +39,20 @@ function I(e, t, n) {
   }) : e[t] = n, e
 }
 
-function T(e) {
+function A(e) {
   for (var t = 1; t < arguments.length; t++) {
     var n = null != arguments[t] ? arguments[t] : {},
       r = Object.keys(n);
     "function" == typeof Object.getOwnPropertySymbols && (r = r.concat(Object.getOwnPropertySymbols(n).filter(function(e) {
       return Object.getOwnPropertyDescriptor(n, e).enumerable
     }))), r.forEach(function(t) {
-      I(e, t, n[t])
+      S(e, t, n[t])
     })
   }
   return e
 }
 
-function S(e, t) {
+function C(e, t) {
   var n = Object.keys(e);
   if (Object.getOwnPropertySymbols) {
     var r = Object.getOwnPropertySymbols(e);
@@ -61,60 +63,66 @@ function S(e, t) {
   return n
 }
 
-function A(e, t) {
-  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : S(Object(t)).forEach(function(n) {
+function N(e, t) {
+  return t = null != t ? t : {}, Object.getOwnPropertyDescriptors ? Object.defineProperties(e, Object.getOwnPropertyDescriptors(t)) : C(Object(t)).forEach(function(n) {
     Object.defineProperty(e, n, Object.getOwnPropertyDescriptor(t, n))
   }), e
 }
-let C = e => {
+let R = e => (0, o.e7)([l.Z], () => (0, a.wjy)(l.Z.theme)) ? M[e].logos.dark : M[e].logos.light,
+  P = e => {
     let {
       recurrence: t
-    } = e;
+    } = e, n = (0, r.jsx)(a.sV5, {
+      color: s.TVs.colors.BUTTON_POSITIVE_BACKGROUND
+    }), o = (0, r.jsx)(a.hU, {
+      icon: a.TIy,
+      size: "sm",
+      variant: "secondary",
+      "aria-label": "",
+      color: "icon-feedback-positive",
+      onClick: () => {
+        navigator.clipboard.writeText(t.code), c(n)
+      }
+    }), [l, c] = i.useState(() => o);
     if (null != t.code) return (0, r.jsx)("div", {
-      className: y.claimedFooterContainer,
+      className: v.claimedFooterContainer,
       children: (0, r.jsxs)("div", {
-        className: y.claimedFooter,
+        className: v.claimedFooter,
         children: [(0, r.jsx)("div", {
-          className: y.claimedFooterCode,
+          className: v.claimedFooterCode,
           children: (0, r.jsx)(a.xvT, {
             variant: "text-md/medium",
             color: "text-primary",
             children: t.code
           })
-        }), (0, r.jsx)(a.hU, {
-          icon: a.TIy,
-          size: "sm",
-          variant: "secondary",
-          "aria-label": "",
-          onClick: () => {
-            navigator.clipboard.writeText(t.code)
-          }
-        }), (0, r.jsx)(a.zxk, {
+        }), l, (0, r.jsx)(a.zxk, {
           variant: "overlay-primary",
           size: "sm",
-          text: b.intl.formatToPlainString(b.t.DF68t7, {
+          text: O.intl.formatToPlainString(O.t.DF68t7, {
             redemptionURL: t.redemptionURL
           }),
           onClick: () => {
-            window.open(t.redemptionURL, "_blank"), c.default.track(E.rMx.RECURRING_PROMOTION_CLAIMED)
+            window.open(t.redemptionURL, "_blank"), u.default.track(y.rMx.RECURRING_PROMOTION_CLAIMED)
           }
         })]
       })
     })
   },
-  N = () => Object.entries(D).map(e => {
+  w = () => Object.entries(M).map(e => {
     let [t, n] = e;
     return (0, r.jsx)("div", {
-      className: y.promoCardContainer,
+      className: v.promoCardContainer,
       children: (0, r.jsxs)("div", {
-        className: y.wrap,
+        className: v.wrap,
         children: [(0, r.jsxs)("div", {
-          className: y.promoCardContent,
+          className: v.promoCardContent,
           children: [(0, r.jsx)("div", {
-            className: y.lockIconContainer,
-            children: (0, r.jsx)(a.mBM, {})
+            className: v.lockIconContainer,
+            children: (0, r.jsx)(a.mBM, {
+              size: "refresh_sm"
+            })
           }), (0, r.jsxs)("div", {
-            className: y.promoCardContentText,
+            className: v.promoCardContentText,
             children: [(0, r.jsx)(a.X6q, {
               variant: "heading-lg/semibold",
               color: "text-primary",
@@ -126,10 +134,10 @@ let C = e => {
             })]
           })]
         }), (0, r.jsx)("div", {
-          className: y.promoCardAssetContainer,
+          className: v.promoCardAssetContainer,
           children: (0, r.jsx)(s.Eep, {
             src: n.asset,
-            className: y.promoCardAsset,
+            className: v.promoCardAsset,
             width: 100,
             height: 100,
             zoomable: false
@@ -138,36 +146,30 @@ let C = e => {
       })
     }, t)
   }),
-  R = e => {
+  D = e => {
     let {
       promotionRecurrences: t
     } = e, [n, o] = i.useState(t.length > 1), [l, c] = i.useState([]);
     i.useEffect(() => {
       c([t.sort((e, t) => t.startDate > e.startDate ? 1 : false)[0]])
     }, [t]);
-    let u = t[0].asset,
+    let u = R(t[0].partnerId),
       d = (0, r.jsx)(s.Eep, {
-        src: u,
-        width: 24,
-        height: 24,
-        zoomable: false
-      }),
-      _ = (0, r.jsx)(s.Eep, {
-        src: u,
-        className: y.promoCardAsset,
+        src: t[0].asset,
+        className: v.promoCardAsset,
         width: 100,
         height: 100,
         zoomable: false
       });
     return (0, r.jsxs)("div", {
       children: [l.map((e, t) => (0, r.jsxs)("div", {
-        className: y.promoCardContainer,
+        className: v.promoCardContainer,
         children: [(0, r.jsxs)("div", {
-          className: y.wrap,
+          className: v.wrap,
           children: [(0, r.jsxs)("div", {
-            className: y.promoCardContent,
-            children: [d, (0, r.jsxs)("div", {
-              className: y.promoCardContentText,
+            className: v.promoCardContent,
+            children: [u, (0, r.jsxs)("div", {
+              className: v.promoCardContentText,
               children: [(0, r.jsx)(a.X6q, {
                 variant: "heading-lg/semibold",
                 color: "text-primary",
@@ -181,96 +183,105 @@ let C = e => {
               icon: a.mBM,
               variant: "overlay-primary",
               size: "sm",
-              text: b.intl.string(b.t.vwASIl),
+              text: O.intl.string(O.t.vwASIl),
               onClick: () => {
-                (0, p.A2)(e.id).then(n => {
-                  c([...l.slice(0, t), A(T({}, e), {
+                (0, h.A2)(e.id).then(n => {
+                  c([...l.slice(0, t), N(A({}, e), {
                     code: n.code
                   }), ...l.slice(t + 1)])
-                }).catch(e => f.Z.captureException(e))
+                }).catch(e => _.Z.captureException(e))
               }
             })]
           }), (0, r.jsx)("div", {
-            className: y.promoCardAssetContainer,
-            children: _
+            className: v.promoCardAssetContainer,
+            children: d
           })]
-        }), (0, r.jsx)(C, {
+        }), (0, r.jsx)(P, {
           recurrence: e
         })]
       }, e.id)), n && (0, r.jsx)(a.P3F, {
-        className: y.extraCodeButton,
+        className: v.extraCodeButton,
         onClick: () => {
           o(false), c([...l, ...t.slice(1)])
         },
         children: (0, r.jsx)(a.xvT, {
           variant: "text-sm/medium",
           color: "text-secondary",
-          children: b.intl.string(b.t.rjjZxV)
+          children: O.intl.string(O.t.rjjZxV)
         })
       })]
     })
   },
-  P = e => {
+  L = e => {
     let {
       percentage: t
     } = e, n = () => {
       let e = 1.8;
       return (0, r.jsx)("div", {
-        className: y.progressBarIndicator,
+        className: v.progressBarIndicator,
         style: {
           left: "".concat(t - e, "%")
         },
-        children: (0, r.jsx)(m.G, {})
+        children: (0, r.jsx)(E.G, {})
       })
     };
     return (0, r.jsxs)("div", {
-      className: y.progressBar,
+      className: v.progressBar,
       children: [t > 0 && t < 100 && (0, r.jsx)(n, {}), (0, r.jsx)("div", {
-        className: y.progressBarFill,
+        className: v.progressBarFill,
         style: {
           width: "".concat(t, "%")
         }
       })]
     })
   },
-  w = "kontrolfreek",
-  D = {
+  x = "kontrolfreek",
+  M = {
     steelseries: {
       title: Chunk388032.intl.string(Chunk388032.t.sfGgOG),
       body: Chunk388032.intl.string(Chunk388032.t.igiSKe),
       redemptionURL: "https://steelseries.com/",
+      logos: {
+        dark: (0, Chunk951288.jsx)(Chunk823581.U3, {}),
+        light: (0, Chunk951288.jsx)(Chunk823581.gf, {})
+      },
       asset: Chunk730440.Z
     },
-    [w]: {
+    [x]: {
       title: Chunk388032.intl.string(Chunk388032.t["9N8obd"]),
       body: Chunk388032.intl.string(Chunk388032.t["34g+Z3"]),
       redemptionURL: "https://www.kontrolfreek.com/",
+      logos: {
+        dark: (0, Chunk951288.jsx)(Chunk823581.dt, {}),
+        light: (0, Chunk951288.jsx)(Chunk823581.QD, {})
+      },
       asset: Chunk180964.Z
     }
   },
-  L = e => {
+  k = e => {
     var t;
     let {
       promotion: n
     } = e;
-    return null != (t = D[n.outboundTitle.toLowerCase()]) ? t : null
+    return null != (t = M[n.outboundTitle.toLowerCase()]) ? t : null
   },
-  x = e => {
+  j = e => {
     let {
       promotions: t,
       codesByPromotion: n
     } = e, r = {};
-    return t.filter(e => null !== L({
+    return t.filter(e => null !== k({
       promotion: e
     })).map(e => {
       var t;
-      let i = e.outboundTitle,
-        a = L({
+      let i = e.outboundTitle.toLowerCase(),
+        a = k({
           promotion: e
         });
       i in r || (r[i] = []);
-      let o = T({
+      let o = A({
         id: e.id,
+        partnerId: i,
         startDate: e.startDate,
         endDate: e.endDate,
         code: null != (t = n[e.id]) ? t : null
@@ -278,47 +289,47 @@ let C = e => {
       r[i].push(o)
     }), r
   },
-  M = e => {
+  U = e => {
     let {
       onClose: t
     } = e, {
       promotionsLoaded: n,
       activeOutboundPromotions: i,
       claimedOutboundPromotionCodeMap: s
-    } = (0, h.lG)(), c = false === (0, o.e7)([l.default], () => d.ZP.isPremiumExactly(l.default.getCurrentUser(), g.PremiumTypes.TIER_2));
+    } = (0, m.lG)(), l = false === (0, o.e7)([c.default], () => f.ZP.isPremiumExactly(c.default.getCurrentUser(), b.PremiumTypes.TIER_2));
     if (false === n) return (0, r.jsx)(a.$jN, {});
-    let f = x({
+    let u = j({
         promotions: i,
         codesByPromotion: s
       }),
-      p = () => {
-        if (true === c) return (0, r.jsx)(_.Z, {
-          subscriptionTier: g.Si.TIER_2,
+      _ = () => {
+        if (true === l) return (0, r.jsx)(p.Z, {
+          subscriptionTier: b.Si.TIER_2,
           fullWidth: true
         })
       },
-      m = () => {
+      h = () => {
         let e = new Date,
           t = new Date(e.getFullYear(), e.getMonth() + 1, 0).getDate(),
           n = e.getDate() / t * 100;
-        return c ? (0, r.jsx)(N, {}) : (0, r.jsxs)("div", {
-          className: y.container,
+        return l ? (0, r.jsx)(w, {}) : (0, r.jsxs)("div", {
+          className: v.container,
           children: [(0, r.jsx)("div", {
-            className: y.progressHeader,
+            className: v.progressHeader,
             children: (0, r.jsx)(a.xvT, {
               variant: "text-md/medium",
               color: "text-secondary",
-              children: b.intl.format(b.t["43kZKL"], {
+              children: O.intl.format(O.t["43kZKL"], {
                 days: t - e.getDate()
               })
             })
-          }), (0, r.jsx)(P, {
+          }), (0, r.jsx)(L, {
             percentage: n
           }), (0, r.jsx)("div", {
-            className: y.cards,
-            children: Object.entries(f).map(e => {
+            className: v.cards,
+            children: Object.entries(u).map(e => {
               let [t, n] = e;
-              return (0, r.jsx)(R, {
+              return (0, r.jsx)(D, {
                 promotionRecurrences: n
               }, t)
             })
@@ -326,27 +337,27 @@ let C = e => {
         })
       };
     return (0, r.jsx)(a.Modal, {
-      title: b.intl.string(b.t["7ioAjs"]),
-      subtitle: b.intl.format(b.t.LOYRxB, {
-        helpCenterLink: u.Z.getArticleURL(E.BhN.RECURRING_PROMOTION)
+      title: O.intl.string(O.t["7ioAjs"]),
+      subtitle: O.intl.format(O.t.LOYRxB, {
+        helpCenterLink: d.Z.getArticleURL(y.BhN.RECURRING_PROMOTION)
       }),
       actions: [],
-      preview: p(),
+      preview: _(),
       transitionState: a.Dvm.ENTERED,
       onClose: t,
-      children: m()
+      children: h()
     })
   },
-  k = e => {
+  G = e => {
     let {
       analyticsLocations: t
     } = e;
-    c.default.track(E.rMx.RECURRING_PROMOTION_MODAL_OPENED, {
+    u.default.track(y.rMx.RECURRING_PROMOTION_MODAL_OPENED, {
       location_stack: t
     }), (0, s.ZDy)(async () => {
       let {
         Recurring3PModal: e
       } = await Promise.resolve().then(n.bind(n, 469165));
-      return t => (0, r.jsx)(e, T({}, t))
+      return t => (0, r.jsx)(e, A({}, t))
     })
   }
